@@ -1,0 +1,43 @@
+---
+title: Microsoft マネージド デスクトップのサポート依頼
+description: ''
+keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+ms.service: m365-md
+author: jdeckerms
+ms.localizationpriority: normal
+ms.date: 09/24/2018
+ms.openlocfilehash: 9e7931458d9b322e7baf3ac01ed39391aeb09438
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26869168"
+---
+# <a name="getting-help-for-end-users"></a><span data-ttu-id="5b511-103">エンドユーザーのヘルプを表示します。</span><span class="sxs-lookup"><span data-stu-id="5b511-103">Getting help for end users</span></span>
+
+<span data-ttu-id="5b511-104">組織内のユーザーが、Microsoft 管理デスクトップ デバイスとヘルプを取得できます 2 つの方法があります: アプリケーションの**ヘルプを取得**、または電話サポートします。</span><span class="sxs-lookup"><span data-stu-id="5b511-104">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> 
+
+## <a name="get-help-app"></a><span data-ttu-id="5b511-105">アプリケーションのヘルプを取得します。</span><span class="sxs-lookup"><span data-stu-id="5b511-105">Get Help app</span></span>
+
+<span data-ttu-id="5b511-106">サポートをユーザーに提供する方法をお勧めは、**ヘルプを取得**します。</span><span class="sxs-lookup"><span data-stu-id="5b511-106">The preferred method for providing support to your users is **Get Help**.</span></span> 
+
+![ヘルプの取得](images/get-help.png)
+
+<span data-ttu-id="5b511-108">これは、マイクロソフトの管理されたデスクトップのすべてのデバイスにインストールされているし、タスク バーにピン設定されているアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="5b511-108">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
+
+- <span data-ttu-id="5b511-109">エンド ・ ユーザーでは、電話の呼び出しを要求したり、サービス担当者とオンラインでチャットすることができます。</span><span class="sxs-lookup"><span data-stu-id="5b511-109">End users can request a phone call, or chat online with a service rep.</span></span>
+- <span data-ttu-id="5b511-110">管理されたデスクトップのマイクロソフトのサポート範囲外の要求は、電話経由でローカルの IT ヘルプ デスクにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="5b511-110">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>  
+
+<span data-ttu-id="5b511-111">ヘルプを表示を使用するエンド ・ ユーザーの専門家を簡単に行えるよう設計されています。</span><span class="sxs-lookup"><span data-stu-id="5b511-111">Get Help is designed to be easy for end-user professionals to use.</span></span> 
+
+## <a name="phone-support"></a><span data-ttu-id="5b511-112">電話サポート</span><span class="sxs-lookup"><span data-stu-id="5b511-112">Phone support</span></span>
+
+<span data-ttu-id="5b511-p101">Microsoft 管理デスクトップ デバイスとエンド ・ ユーザーでは、それらを呼び出すことができますフリー ダイヤルの電話番号へのアクセスもあります。これは、ヘルプが使用できないときに使用します。たとえば、デバイス、またはデバイスにサインインできない場合は解除されます。電話サポートの電話番号を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="5b511-p101">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:</span></span>
+
+- <span data-ttu-id="5b511-117">米国: +1855-425-0216</span><span class="sxs-lookup"><span data-stu-id="5b511-117">United States: +1855-425-0216</span></span>
+- <span data-ttu-id="5b511-118">英国: +442076601135</span><span class="sxs-lookup"><span data-stu-id="5b511-118">United Kingdom: +442076601135</span></span> 
+
+
+## <a name="additional-resources"></a><span data-ttu-id="5b511-119">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="5b511-119">Additional resources</span></span>
+- <span data-ttu-id="5b511-120">[Microsoft 管理されたデスクトップの管理をサポート](admin-support.md)します。</span><span class="sxs-lookup"><span data-stu-id="5b511-120">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
+- <span data-ttu-id="5b511-121">[マイクロソフトのデスクトップ管理をサポート](../service-description/support.md)します。</span><span class="sxs-lookup"><span data-stu-id="5b511-121">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>

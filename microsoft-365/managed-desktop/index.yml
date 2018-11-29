@@ -1,0 +1,75 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 07a77c646f8aef2440f415fdf143373cd249a641
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26869318"
+documentType: LandingData
+title: 管理されたデスクトップの Microsoft のドキュメントとリソース
+metadata:
+  title: 管理されたデスクトップの Microsoft ドキュメント
+  description: 
+  keywords: デバイス、アプリケーション、管理
+  author: trudyha
+  ms.author: trudyha
+  ms.date: 11/1/2018
+  ms.topic: landing-page
+  ms.devlang: na
+  ms.service: m365-md
+sections:
+- items:
+  - type: markdown
+    text: 最も簡単なユーザーを魅了し、IT です。
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: intro/index.md
+      html: <p>マイクロソフトの管理されたデスクトップとそのしくみについてお読みください。</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
+      title: Microsoft マネージド デスクトップとは
+    - href: service-description/index.md
+      html: <p>Microsoft 管理されたデスクトップの内容を説明します。</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+      title: サービスの説明
+    - href: get-ready/index.md
+      html: <p>管理されたデスクトップを Microsoft に登録するための準備方法について説明します。</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
+      title: 準備をして
+    - href: get-started/index.md
+      html: <p>デバイスを注文し、連絡先を追加する方法について説明します。</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
+      title: 作業の開始
+    - href: working-with-managed-desktop/index.md
+      html: <p>アプリケーション管理について説明します。</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
+      title: Microsoft マネージド デスクトップの使用
+- title: 新しい記事およびブログの投稿
+  items:
+  - type: paragraph
+    text: 必要な最新かつ最高レベルの情報を参照してください。
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/
+      title: '[ブログ]現代のデスクトップを提供するには、顧客やパートナーとの共同作業'
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+    - href: https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html
+      title: '[記事]デスクトップのマイクロソフトの管理: すべての Windows 10 デバイス、Microsoft によって管理されています。'
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
+- title: ビデオ
+  items:
+  - type: markdown
+    text: '>[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]'
