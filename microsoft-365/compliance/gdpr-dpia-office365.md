@@ -3,18 +3,18 @@ title: データ コント ローラーが Office 365 を使用するための�
 description: このドキュメントでは、データについては、DPIA が必要になっているかどうかを判断する際に役立つプロフェッショナル ・ サービスは、何の詳細を含むようにコント ローラーを提供します。
 keywords: GDPR の DPIA、Office 365 では、Microsoft 365 マニュアル
 author: BrendaCarter
-ms.localizationpriority: high
+ms.localizationpriority: Priority
 audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: 4b96a80d0817a180d9a1400fa347d5345ecdec74
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ef2d1a91c00cbaa52282c27cf047e380dbf8249
+ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 12/12/2018
 ms.locfileid: "26869626"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Microsoft Office 365 を使用してデータのコント ローラーのデータ保護への影響の評価: ガイダンス 
