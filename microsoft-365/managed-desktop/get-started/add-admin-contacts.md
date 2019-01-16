@@ -3,14 +3,14 @@ title: Microsoft 管理されたデスクトップの管理者用ポータルの
 description: お知らせの各分野に関する問い合わせ先です。
 keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 65dd8709c469826e2696015c13823c58eb10e342
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 31984609681b6e3b1b6de9996eb8fb0fcf6f5624
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869178"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>マイクロソフト デスクトップ管理の管理ポータルの管理者の連絡先を追加します。
@@ -25,11 +25,11 @@ Microsoft デスクトップ管理の管理ポータルは、ポータルへの�
 - 支払い管理者
 - サービス サポート管理者
 
-Azure AD に適用することと、これらの役割の詳細については、 [Azure Active Directory の管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)を参照してください。 
+大域管理者は、管理されたデスクトップのマイクロソフトの顧客を登録するのには 1 つである必要があります。 5 つすべての役割では、開始し、タスクを表示する管理ポータル内で同じアクセス権を持ちます。 Azure AD でこれらの役割の割り当ての詳細については、 [Azure Active Directory の管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)を参照してください。 
 
 ## <a name="admin-contact-focus-areas"></a>管理者の連絡先の重点分野
 
-ベストの個人またはグループの質問に回答したり、さまざまな分野の意思を管理者の連絡先があります。これらの領域は次のとおりです。
+ベストの個人またはグループの質問に回答したり、さまざまな分野の意思を管理者の連絡先があります。 マイクロソフト デスクトップ操作の管理は、お客様から提出されたサポート ・ リクエストに関連する質問のこれらの管理者の連絡先をご連絡いたします。 要求の更新をサポートし、新しいメッセージの通知は、以下の管理者の連絡先が表示されます。 これらの領域は次のとおりです。
 
 重点分野 | に関するご質問
 --- | ---

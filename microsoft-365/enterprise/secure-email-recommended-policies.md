@@ -10,11 +10,11 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: dd1504ac11f0e2eefa56572af24de14b5f87830e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f3d3d72ddf9129997dd4232a578e1f101f113a53
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869009"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
@@ -34,20 +34,20 @@ ms.locfileid: "26869009"
 
 |保護レベル|[Policies]|詳細情報|
 |:---------------|:-------|:----------------|
-|**基準**|[サインインのリスクが*中*または*高*の場合は、MFA を必要とします。](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Exchange Online クラウド アプリケーションの割り当てに含まれます。|
-|        |[現代の認証をサポートしていないクライアントをブロック](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Exchange Online クラウド アプリケーションの割り当てに含まれます。|
-|        |[アプリケーション保護のポリシーを定義します。](identity-access-policies.md#high-risk-users-must-change-password)|アプリケーションの一覧で、Outlook が含まれていることを確認します。各プラットフォーム (iOS、Android、Windows) のポリシーを更新することを確認します。|
-|        |[承認済みのアプリケーションを必要とします。](identity-access-policies.md#require-approved-apps)|クラウド アプリケーションの一覧で、Exchange のオンラインが含まれます。|
-|        |[準拠の Pc を必要とします。](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|クラウド アプリケーションの一覧で Exchange のオンラインが含まれます。|
-|        |[ブロック ActiveSync クライアント](#block-activesync)|この新しいポリシーを追加します。 
-|**機密**|[サインインのリスクとは、*低*、*中*または*高*の場合は、MFA を必要とします。](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Exchange Online クラウド アプリケーションの割り当てに含まれます。|
-|         |[準拠の Pc*と*モバイル デバイスを必要とします。](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウド アプリケーションの一覧で、Exchange のオンラインが含まれます。|
-|**高度な規制**|[*常に*MFA を必要とします。](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド アプリケーションの割り当てに含める Exchange オンライン |
+|**基準**|[サインインのリスクが*中*または*高*の場合は、MFA を必要とします。](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Exchange Online クラウド アプリケーションの割り当てが含まれます|
+|        |[現代の認証をサポートしていないクライアントをブロック](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Exchange Online クラウド アプリケーションの割り当てが含まれます|
+|        |[アプリケーション保護のポリシーを定義します。](identity-access-policies.md#high-risk-users-must-change-password)|アプリケーションの一覧で、Outlook が含まれていることを確認します。各プラットフォーム (iOS、Android、Windows) のポリシーを更新してください。|
+|        |[承認済みのアプリケーションを必要とします。](identity-access-policies.md#require-approved-apps)|クラウド アプリケーションの一覧で、Exchange Online は、します。|
+|        |[準拠の Pc を必要とします。](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|クラウド アプリケーションの一覧に Exchange Online を含める|
+|        |[ブロック ActiveSync クライアント](#block-activesync-clients)|この新しいポリシーを追加します。| 
+|**機密**|[サインインのリスクとは、*低*、*中*または*高*の場合は、MFA を必要とします。](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Exchange Online クラウド アプリケーションの割り当てが含まれます|
+|         |[準拠の Pc*と*モバイル デバイスを必要とします。](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウド アプリケーションの一覧で、Exchange Online は、します。|
+|**高度な規制**|[*常に*MFA を必要とします。](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Exchange Online クラウド アプリケーションの割り当てが含まれます|
 
 ## <a name="block-activesync-clients"></a>ブロック ActiveSync クライアント
 このポリシーでは、ActiveSync クライアントが他の条件付きのアクセス ルールをバイパスできなくなります。ルールの構成は、ActiveSync クライアントにのみ適用されます。このポリシーは、**クライアント アプリケーションの承認を必要とする**ことを選択すると、ActiveSync クライアントをブロックします。このポリシーを構成するには。
 
-1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインします。 正常にサインインすると、Azure ダッシュボードが開きます。
+1. [Azure ポータル](https://portal.azure.com)に移動し、ユーザーの資格情報を使用してサインインします。正常にサインインして後、は、Azure のダッシュ ボードを参照してください。
 
 2. 左側のメニューから **[Azure Active Directory]** を選びます。
 
@@ -59,15 +59,17 @@ ms.locfileid: "26869009"
 
 6. **[クラウド アプリ]** を選びます。
 
-7. **アプリケーションの選択**を選択して、Office 365 Exchange Online を選択します。**選択**し、[**完了**] をクリックします。
+7. **アプリケーションの選択**を選択して、 **Office 365 Exchange Online**を選択します。**選択**し、**実行**を選択します。
+
 8. **条件**を選択し、**クライアント アプリケーション**を選択します。
-9. **構成**] の [**はい**] をクリックします。次の項目だけをチェックする:**モバイル アプリケーションとデスクトップのクライアント**と**Exchange ActiveSync クライアント**です。**完了**] をクリックします。
+
+9. **構成**] の [**はい**] をクリックします。次の項目だけをチェックする:**モバイル アプリケーションとデスクトップのクライアント**と**Exchange ActiveSync クライアント**です。**実行**を選択します。
 
 10. **[アクセス制御]** セクションから **[許可]** を選びます。
 
 11. **クライアント アプリケーションの承認を必要とする**を選択して、**アクセスを許可する**を選択します。 複数のコントロールでは、**選択したコントロールを必要と**するを選択し、**選択**を選択します。 
 
-12. [ **作成**] をクリックします。
+12. [ **Create**] を選びます。
 
 ## <a name="setup-office-365-message-encryption"></a>Office 365 のメッセージの暗号化を設定します。
 Azure の情報保護の保護機能を活用するには、新しい Office 365 メッセージの暗号化 (ホーム) 機能を備えた組織は、任意のデバイス上の他のユーザーと保護された電子メールを簡単に共有できます。ユーザーは、他の Office 365 の組織と同様に Outlook.com、Gmail、その他の電子メール サービスを使用して Office 365 以外のお客様で保護されたメッセージを送受信することができます。

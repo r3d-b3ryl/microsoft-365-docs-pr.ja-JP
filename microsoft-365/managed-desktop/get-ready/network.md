@@ -3,14 +3,14 @@ title: Microsoft 管理されたデスクトップのネットワーク構成
 description: ''
 keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3eab9237b177ea76faa1296fec2bfda739c78534
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869554"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 管理されたデスクトップのネットワーク構成
@@ -45,7 +45,7 @@ ms.locfileid: "26869554"
 ビジネス (WUfB) の Windows の更新プログラム | [ファイアウォールとプロキシのビジネス要件に応じて、Windows の更新プログラム](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 配信の最適化 | [Windows の更新プログラムのプロキシの要件](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 ビジネス向け Microsoft Store | [Microsoft ストア] ボックスの一覧を許可します。](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)を含む\*です apibasic.diagnostics.office.com。
 Azure Active Directory | [ポートおよびプロトコルにハイブリッドの id が必要です](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports)し、 [Active Directory と Active Directory ドメイン サービス ポートの要件](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)
 OneDrive for Business <br> | [Url および OneDrive 用のポートが必要です](https://docs.microsoft.com/onedrive/required-urls-and-ports)

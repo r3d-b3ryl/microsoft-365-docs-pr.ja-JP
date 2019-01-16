@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: その他の Office 365 のセキュリティ設定を有効にするのに Microsoft 365 エンタープライズ テスト環境に対応するこのテスト ラボ ガイド 』 を使用します。
-ms.openlocfilehash: 18e7b682d20c2212ae73783d668250d28b04075f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869266"
 ---
 # <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の強化された Office 365 セキュリティ
@@ -46,7 +46,7 @@ ms.locfileid: "26869266"
 
 現代の認証をサポートしていないアプリケーションの[id とデバイスのアクセスの構成](microsoft-365-policies-configurations.md)、Microsoft 365 サブスクリプションと、デジタル資産のセキュリティ保護の重要な要素である、それらを適用することはできません。 
 
-1. Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
+1. Office のポータルに移動 ([https://office.com](https://office.com)) し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
     
   - 軽量の Microsoft 365 テスト環境を使用する場合、ローカル コンピューターからサインインします。
     
@@ -55,10 +55,10 @@ ms.locfileid: "26869266"
 2. **Microsoft 365 管理者センター** ] タブで、[**管理**] をクリックします。
 3. [新しい**Microsoft 365 管理者センター** ] タブをクリックして**管理センター > SharePoint**。
 4. [新しい**SharePoint 管理者センター** ] タブで、**アクセス制御**をクリックします。
-5. **現代の認証をサポートしていないアプリケーション**では、下をクリックして**ブロック > OK**。
+5. **現代の認証をサポートしていないアプリケーション**では、[**ブロック**] をクリックし、[ **OK**] をクリックします。
 
 
-### <a name="enable-advanced-threat-protection-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、およびマイクロソフトのチームの脅威保護 (ATP) の詳細設定を有効にします。
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>脅威保護の詳細設定を有効にする) の SharePoint、ビジネス、およびマイクロソフトのチームの OneDrive
 
 Office 365 の高度な脅威保護 (ATP) は、機能の Exchange オンライン保護 (EOP) を支援するあなたの電子メールからのマルウェアのままです。分析ツールは、Exchange 管理センター (EAC) またはセキュリティ ポリシーを作成する & ユーザーを保証するためコンプライアンス センターでは、識別できない悪意のある電子メールの添付ファイルまたはリンクのみにアクセスします。詳細については、[高度な脅威保護](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)を参照してください。
 

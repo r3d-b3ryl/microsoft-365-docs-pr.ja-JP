@@ -14,10 +14,10 @@ ms.custom:
 - Ent_TLGs
 description: Azure AD Id 保護を構成し、Microsoft 365 エンタープライズ テスト環境の現在のアカウントを分析します。
 ms.openlocfilehash: 165667ad2122839336ef0790ab5661cff53ca32b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869083"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズ向けの azure の AD のアイデンティティ保護環境をテストします。

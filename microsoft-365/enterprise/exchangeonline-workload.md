@@ -11,11 +11,11 @@ ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 description: 計画、展開、および Exchange Online の値を Microsoft 365 エンタープライズで、組織全体で推進のプロセスをステップ実行します。
-ms.openlocfilehash: 36b24290acd4467400eab86b4c2760ccad65deab
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869621"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise 用 Exchange Online を展開する
@@ -29,7 +29,7 @@ Exchange Online を使用する場合は、 [Microsoft Exchange Online](https://
 次の段階と手順に従って、一連のプログレッシブの展開を Exchange Online 組織、組織では、契約時に Exchange Online のロールを予見し、Exchange Online の使用を促進するプロセスとは、エンド ・ ユーザの値です。
 
 >[!Note]
->展開手順は、Microsoft 365 エンタープライズの[基盤のインフラストラクチャ](deploy-foundation-infrastructure.md)を完了した後にのみ従う必要があります。
+>展開手順は、Microsoft 365 エンタープライズ基盤インフラストラクチャの[フェーズ 2-識別情報](identity-infrastructure.md)を完了した後にのみ従う必要があります。
 >
 
 ## <a name="phase-1-envision"></a>フェーズ 1: 想定
@@ -38,7 +38,7 @@ Exchange Online を使用する場合は、 [Microsoft Exchange Online](https://
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>手順 1: Exchange のオンライン展開メンバーを収集します。
 
-展開を成功させる Exchange のオンラインの Microsoft 365[基盤インフラストラクチャ](deploy-foundation-infrastructure.md)の上に、入力とフィードバックのための適切な担当者を取得する必要があります。主要な人物には、ビジネスの意思決定者、設計者と実装者、エンドユーザーの支持者などの IT スタッフが含まれています。 
+[フェーズ 2-識別情報](identity-infrastructure.md)を Microsoft 365 エンタープライズ基盤インフラストラクチャの上に Exchange Online の展開を成功させる、入力とフィードバックのための適切な担当者を取得する必要があります。主要な人物には、ビジネスの意思決定者、設計者と実装者、エンドユーザーの支持者などの IT スタッフが含まれています。 
 
 これら 3 つのグループは、オンラインの Exchange の展開にはでのビジネス ・ ニーズ、メールボックスの移行、セキュリティの技術的な側面と結果はである一般的なユーザーが使用するものに対応するための考慮事項が含まれていることを確認します。
 
@@ -58,7 +58,7 @@ Exchange Online を使用すると、Microsoft 365 Enterprise の次の戦略的
 - プロジェクト、タスク、期限を管理して、ビジネス目標を達成します
 - 業務の習慣を理解して、影響力を増します
 - チーム内でコミュニケーションを図って、最新の情報に精通し、意見を求め、団結力と考えの一致を高めます
-- 組織内外でファイルを保管および共有して、組織の境界を越えてシームレスに作業を行います
+- 組織内外でファイルを保存および共有して、組織の境界を越えてシームレスに作業を行います
 - 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
 - 情報を保護して、データ損失のリスクを軽減します
 - 検出し、外部の脅威から保護します。 
@@ -74,7 +74,7 @@ Exchange Online を使用すると、Microsoft 365 Enterprise の次の戦略的
 
 このフェーズでは、オンラインの Exchange 展開の技術的な側面の計画し、ユーザーの選択したグループにロールアウトを開始します。
 
-### <a name="prerequisites-identity-and-device-access-configuration"></a>前提条件: Id とデバイスのアクセスの構成
+### <a name="prerequisites-identity-and-device-access-configuration"></a>前提条件: ID とデバイスのアクセス構成
 
 Exchange Online のメールボックスへのアクセスを保護するには、 [id とデバイスのアクセス ポリシー](identity-access-policies.md)と[アクセス ポリシーが Exchange Online をお勧め](secure-email-recommended-policies.md)するを構成していることを確認します。
 
@@ -86,7 +86,7 @@ Exchange Online のメールボックスへのアクセスを保護するには�
 
 オンラインの Exchange の展開の技術的な側面を準備するには、これらのリソースを使用します。 
 
-- [複数のメール アカウントを Office 365 に移行する方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Office 365 のメール移行アドバイザー](https://portal.office.com/onboarding/mailsetupadvisor#/)(署名が必要、Office 365 サブスクリプションを)
 - [Exchange Online でのコラボレーション](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Exchange Online の受信者](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
@@ -165,7 +165,7 @@ IT パイロットを完了すると、ビジネス グループまたは組織�
 推奨されるアクティビティの一部を次に示します。
 
 - 「[Office 365 導入ガイド](https://aka.ms/successfactors)」を参照して、クラウド サービス導入の一般的なベスト プラクティスを理解します。 
-- 「[Office 365 アクティビティ レポート](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)」を参照して、組織全体での Office 365 サービスの使用について理解します。組織の Office 365 全体管理者ではない場合は、ユーザー アカウントに Reports Reader 権限を付与できるグローバル管理者に権限の付与を依頼し、アクティビティ レポートにアクセスできるようにしてください。
+- 「[Office 365 アクティビティ レポート](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)」を参照して、組織全体での Office 365 サービスの使用について理解します。組織の Office 365 全体管理者ではない場合は、ユーザー アカウントに Reports Reader 権限を付与できるグローバル管理者に権限の付与を依頼し、アクティビティ レポートにアクセスできるようにしてください。
 - フィードバックの会場 (中央チームのチームまたは Yammer にパブリック チャネル) の問題および Exchange のオンラインでの経験についてのユーザーからのフィードバックを監視します。個人の不満を防止し、展開のサポートを示すことができます速やかに疑問や問題に対処します。
 - 識別し、各ビジネス グループのエキスパートの進展しの実績とベスト ・ プラクティスが Exchange Online を使用して強調表示します。プロジェクトの成功と採用を表示するのには組織をその成功を反映します。裏書ビジネス グループ内の技術のリーダーでは、リーダーとのピアの上に大きな影響を与えることのできます。
 

@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
 ms.openlocfilehash: 21a4198c688e1865a029f18ff3ceeb2155d419e4
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869533"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>手順 1: Windows 10 Enterprise を組織で展開するための準備
@@ -42,9 +42,9 @@ Microsoft は診断データを使用してマルウェアの傾向やその他�
 | レベル | 収集されるデータ | 値 |
 |:--- |:--- |:--- |
 | セキュリティ | セキュリティ データのみ。 | 0 |
-| 基本 | セキュリティ データ、および基本的なシステムと品質のデータ。 | 1  |
-| 強化 | セキュリティ データ、基本的なシステムと品質のデータ、強化された分析および高度な信頼性データ。 | 2  |
-| 完全 | セキュリティ データ、基本的なシステムと品質のデータ、強化された分析および高度な信頼性データ、および完全な診断データ。 | 3  |
+| 基本 | セキュリティ データ、および基本的なシステムと品質のデータ。 | 1 |
+| 強化 | セキュリティ データ、基本的なシステムと品質のデータ、強化された分析および高度な信頼性データ。 | 2 |
+| 完全 | セキュリティ データ、基本的なシステムと品質のデータ、強化された分析および高度な信頼性データ、および完全な診断データ。 | 3 |
 
 次のいずれかの方法で診断データを有効にすることができます。
 

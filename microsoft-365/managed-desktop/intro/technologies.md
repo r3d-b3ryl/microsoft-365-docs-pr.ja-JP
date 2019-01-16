@@ -3,14 +3,14 @@ title: Microsoft 管理デスクトップ テクノロジ
 description: このトピックには、テクノロジと Microsoft の管理されたデスクトップで使用されているアプリケーションが一覧表示されます。
 keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: da0268c6b0eddbd44cf62de2a95b963a443c3278
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869204"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 管理デスクトップ テクノロジ
@@ -38,7 +38,7 @@ Web アプリケーション |  Yammer、Delve、Office オンラインのフロ
  |
  --- | ---
 資格情報の保護 |  Microsoft 管理されたデスクトップ、ガイダンスを用意し、この機能をクラウドの側面を管理
-デバイス保護 (Windows Defender のアプリケーションのコントロール)   | Microsoft 管理されたデスクトップでは、ポリシーを作成します。顧客では、署名を管理します。
+デバイス保護 (Windows Defender のアプリケーションのコントロール) | Microsoft 管理されたデスクトップでは、ポリシーを作成します。顧客では、署名を管理します。
 AppLocker の管理 |  Microsoft 管理されたデスクトップでは、ポリシーを作成します。顧客では、署名を管理します。
 アプリケーションの仮想化 (APP-V) |    Microsoft 管理デスクトップがこの種類の展開をサポートしていません Intune でサポートされていないようです。
 ユーザー エクスペリエンスの仮想化 (UE V) | 管理 Microsoft 管理デスクトップ デバイスとこれは、使用できません。

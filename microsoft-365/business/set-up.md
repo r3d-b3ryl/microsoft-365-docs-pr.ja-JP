@@ -21,10 +21,10 @@ search.appverid:
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 4 つの手順を実行して Microsoft 365 のビジネスを設定する方法について説明します。
 ms.openlocfilehash: f57239b884bd2e186c0bc01973130a10fa4cfe84
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869005"
 ---
 # <a name="set-up-microsoft-365-business-by-using-the-setup-wizard"></a>セットアップ ウィザードを使用して Microsoft 365 Business をセットアップする

@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Microsoft 365 ビジネスに付属しているセキュリティ機能について説明します。
-ms.openlocfilehash: bfddb419dbe5db441741a73ecb49e3d52649e382
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869311"
 ---
 # <a name="microsoft-365-business-security-features"></a>365 ビジネスのマイクロソフトのセキュリティ機能
@@ -130,11 +130,9 @@ Web 上の Outlook で電子メールを送信するときは、次の制限を�
 
 AIP がアクティブ化されていることを確認するには。
 
-1. [Azure Active Directory 管理センター](https://portal.azure.com/)にサインインします。
+1. [Azure ポータル](https://portal.azure.com/)にサインインします。
 
-    **管理センター**を検索しても歌いにことができます\> **Azure Active Directory**管理センターの左側のナビゲーションにします。
-
-2. **[検索] ボックス**で、 *Azure の情報保護*の**すべてのサービス**および tyoe を選択します。
+2. **[検索] ボックス**で、 *Azure の情報保護*の**すべてのサービス**との種類を選択します。
 
 3. 結果を表示すると、お気に入りに**Azure の情報の保護**] を後で見つけやすい開始をクリックします。
 
@@ -144,7 +142,7 @@ AIP がアクティブ化されていることを確認するには。
 
 表示、変更、既存のラベルを付けます。
 
-1. Azure の情報保護のダッシュ ボードには、**クラス**を選択して\>* * ラベルです。 <br/>![Azure の情報保護のための標準的なラベル。](media/AIPLabels.png)
+1. Azure の情報保護のダッシュ ボードには、**クラス**を選択して\>**ラベル**です。 <br/>![Azure の情報保護のための標準的なラベル。](media/AIPLabels.png)
 
 2. オプションを表示するのには任意のラベルを選択することができます、表示名、色などを変更することができます。
  
@@ -159,6 +157,16 @@ AIP クライアントを手動でインストールするには。
 2. Word ドキュメントを表示し、**保護する**] オプションが [**ホーム**] タブで利用可能であることを確認することによって、インストールが動作するかを確認できます。 <br/>![[保護] タブで Word 文書には、ドロップダウンします。](media/Word_Protect.png)
 
 詳細情報、「[クライアントのインストール](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+
+## <a name="go-to-intune-admin-center"></a>Intune 管理センターに移動します。
+
+1. [Azure ポータル](https://portal.azure.com/)にサインインします。
+
+2. *Intune*を、[**検索] ボックス**内の**すべてのサービス**との種類を選択します。
+
+3. 結果を表示する**Microsoft Intune**をお気に入りにすることを後で見つけやすい開始をクリックします。
+ 
+Intune を使用するには登録し、組織のデバイスを管理します。詳細については、 [Windows デバイスの登録方法で機能](https://docs.microsoft.com/intune/enrollment-method-capabs)し、 [Intune によって管理されるデバイスの登録オプション](https://docs.microsoft.com/intune/enrollment-options)を参照してください。
     
 ## <a name="faq"></a>FAQ
 
@@ -174,15 +182,4 @@ AIP クライアントを手動でインストールするには。
     
     ![Microsoft 365 管理センターの左側のナビゲーション、管理センターを選択します。](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. 選択**セキュリティ&amp;準拠**セキュリティに移動する&amp;コンプライアンス センターです。 
-    
- ### <a name="how-do-i-find-the-intune-admin-center"></a>Intune 管理中心を見つける方法
-  
-  
-1. 管理者の資格情報を使用して[Microsoft 365 ビジネスへのサインイン](https://portal.microsoft.com/)をします。 
-    
-2. 左側のナビゲーションでは、**管理センター**を見つけて展開します。 
-    
-3. Intune 管理センターにアクセスするのには**Intune**を選択します。 
-    
-
+3. 選択**セキュリティ&amp;準拠**セキュリティに移動する&amp;コンプライアンス センターです。

@@ -20,10 +20,10 @@ search.appverid:
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: ユーザーのデバイスの紛失または盗難にあった場合、作業ファイルを保護するために使用できる設定について説明します。
 ms.openlocfilehash: 4fafae2dfd25e44dce7083307b3432bcaa25c22b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869506"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>モバイル デバイスの紛失または盗難時の作業ファイルの保護

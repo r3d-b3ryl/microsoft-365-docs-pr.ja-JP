@@ -19,10 +19,10 @@ search.appverid:
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 作成、編集、または、アプリケーション管理のポリシーを削除および Android や iOS のデバイス上の作業ファイルを保護する方法について説明します。
 ms.openlocfilehash: ed03227496120369b94bf2396974eebfd7798678
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869569"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する

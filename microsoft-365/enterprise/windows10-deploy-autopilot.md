@@ -9,11 +9,11 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: b4ab30d09adf83d95f3bad0f46bcb0ae69f1663f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ed3d21091acd5b54dfdc2917fca85ed0535c3332
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869249"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>手順 3: Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する
@@ -103,7 +103,7 @@ Azure AD で、デバイスの同期状態を確認し、デバイス上で Micr
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Windows Analytics を使用してデバイスの正常性を監視する](windows10-enable-windows-analytics.md) |
+|![](./media/stepnumbers/Step4.png)| [デバイスの正常性とコンプライアンスを監視する](windows10-enable-windows-analytics.md) |
 
 
 

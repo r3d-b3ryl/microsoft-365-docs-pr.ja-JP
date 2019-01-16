@@ -3,7 +3,7 @@ title: Microsoft 365 企業のデータのクラス分けのテスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,16 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: ガイドを使用してこのテスト ラボを作成し、Microsoft 365 エンタープライズ テスト環境でドキュメントを Office 365 のラベルを使用します。
-ms.openlocfilehash: 718cf038d88f1431ec6ca6fce1554d4f44dc1cb7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 33ac1fa8e26c0037882e6c240cc04ec19e6a6a7b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869613"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業のデータのクラス分けのテスト環境
 
-この資料の手順についてで Microsoft 365 エンタープライズ テスト環境で Office 365 のラベルを使用してデータのクラス分けを構成します。
+この資料の手順についてで Microsoft 365 エンタープライズ テスト環境で Office 365 の保存期間のラベルを使用してデータのクラス分けを構成します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -39,17 +39,17 @@ ms.locfileid: "26869613"
 
 ## <a name="phase-2-create-office-365-labels"></a>フェーズ 2: Office 365 のラベルを作成する
 
-このフェーズでは、SharePoint Online のドキュメント フォルダーのセキュリティのさまざまなレベルのラベルを作成します。
+このフェーズでは、SharePoint Online のドキュメント フォルダーのアイテム保持ポリシーのさまざまなレベルのラベルを作成します。
   
-1. 必要な場合プライベート インターネット ブラウザーのインスタンスを使用し、グローバル管理者アカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、 [Office 365 にサインインするための場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)を参照してください。
+1. 必要な場合プライベート インターネット ブラウザーのインスタンスを使用し、グローバル管理者アカウントを使用して Office のポータルにサインインします。ヘルプについては、 [Office 365 にサインインするための場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)を参照してください。
     
 2. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
 3. ブラウザーの新しい **[Office 管理者センター]** タブで、**[管理センター] > [セキュリティとコンプライアンス]** をクリックします。
     
-4. ブラウザーの新しい **[ホーム – セキュリティとコンプライアンス]** タブをクリックして、**[分類] > [ラベル]** をクリックします。
+4. 新しいから**ホーム ・ セキュリティ&amp;準拠**タブ、ブラウザーのをクリックして**分類 > ラベル**。**ホーム > ラベル**ウィンドウで、[**保存**] タブをクリックします。
     
-5. **[ホーム] > [ラベル]** ウィンドウで、 **[ラベルの作成]** をクリックします。
+5. **ラベルの作成**] をクリックします。
     
 6. **[ラベルに名前をつける]** ウィンドウで、「 **内部パブリック**」と入力してから、 **[次へ]** をクリックします。
     
@@ -83,13 +83,13 @@ ms.locfileid: "26869613"
 
 メモを公開するのには、ラベルには数分をかかる場合があります。
 
-## <a name="phase-3-apply-office-365-labels-to-documents"></a>フェーズ 3: Office 365 のラベルをドキュメントに適用します。
+## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>フェーズ 3: Office 365 の保存期間のラベルをドキュメントに適用します。
 
 このフェーズでは、SharePoint Online サイトの [ドキュメント] フォルダー内のファイルの既定のラベルの動作を検出し、ドキュメントのラベルを手動で変更します。
 
 最初に、機密レベルの SharePoint Online チーム サイトを作成します。
   
-1. ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. ブラウザーを使用して、ローカル コンピューター上で、グローバル管理者アカウントを使用して Office のポータルにサインインします。ヘルプについては、 [Office 365 にサインインするための場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -125,13 +125,13 @@ ms.locfileid: "26869613"
     
 4. **Document.docx**ファイル名の横にある Word のアイコンをクリックします。
     
-5. [**プロパティ**] セクションの [**ラベルの適用**] の右側のペインでドキュメントが自動的に適用される**機密**ラベルにあったことを確認します。
+5. [**プロパティ**] セクションの [**保存期間のラベルを適用**] の右側のペインでドキュメントが自動的に適用される**機密**ラベルをあったことを確認します。
     
 6. **すべてを編集**] をクリックします。
     
 7. **Document.docx**ウィンドウで、[**ラベルの適用**] は、**機密度の高い**ラベルを選択し、し、[**保存**] をクリックします。
 
-情報と実稼働環境で Office 365 のラベルへのリンクの**情報の保護**の段階では、[環境内の分類を構成する](data-classification-microsoft-365-enterprise-dev-test-environment.md)手順を参照してください。
+情報と実稼働環境で Office 365 の保存のラベルへのリンクの**情報の保護**の段階では、[環境内の分類を構成する](infoprotect-configure-classification.md)手順を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

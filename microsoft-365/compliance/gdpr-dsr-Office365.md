@@ -240,9 +240,9 @@ pilar@contoso.com AND filetype="xlxs"
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>部分的にインデックスが作成されたアイテムをコンテンツ検索で使用する
 
-Exchange Online メールボックスのアイテムと、SharePoint Online および OneDrive for Business サイトのドキュメントは部分的にインデックスが作成されたアイテム (*インデックス未作成のアイテム*とも呼ばれる) であり、なんらかの理由で完全にはインデックスが作成されていません。つまり、コンテンツ検索を使用しても、これらは検索できません。ほとんどの電子メール メッセージとサイト ドキュメントは [Office 365 のインデックス作成の制限](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??)の範囲内に収まるため、正常にインデックスが作成されます。電子メール メッセージやファイルが検索用にインデックス作成されない理由は、次のとおりです。
+Exchange Online メールボックスのアイテムと、SharePoint Online および OneDrive for Business サイトのドキュメントは部分的にインデックスが作成されたアイテム (*インデックス未作成のアイテム*とも呼ばれる) であり、なんらかの理由で完全にはインデックスが作成されていません。つまり、コンテンツ検索を使用しても、これらは検索できません。ほとんどの電子メール メッセージとサイト ドキュメントは [Office 365 のインデックス作成の制限](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??d??)の範囲内に収まるため、正常にインデックスが作成されます。電子メール メッセージやファイルが検索用にインデックス作成されない理由は、次のとおりです。
 
--   ファイルの種類が[認識できないか、インデックス作成でサポートされていない](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)。ファイルの種類がインデックス作成でサポートされている場合でも、特定のファイルでインデックス作成のエラーが発生することがあります
+-   ファイルの種類が[認識できないか、インデックス作成でサポートされていない](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??)。ファイルの種類がインデックス作成でサポートされている場合でも、特定のファイルでインデックス作成のエラーが発生することがあります
 
 -   電子メール メッセージに画像ファイルなど、有効なハンドラがない添付ファイルがある (これは電子メール アイテムのインデックス作成が部分的になる最も一般的な原因です)
 
@@ -250,7 +250,7 @@ Exchange Online メールボックスのアイテムと、SharePoint Online お�
 
 DSR 要求に対応する際に部分的にインデックスが作成されたアイテムを使用するために、これらについて詳細を確認することをお勧めします。詳細については、次の項目を参照してください。
 
--   [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
+-   [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??)
 
 -   [Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 

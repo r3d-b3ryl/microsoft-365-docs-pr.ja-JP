@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 エンタープライズ テスト環境でスマート フォンに送信されるテキスト メッセージを使用して複数要素の認証を構成します。
-ms.openlocfilehash: aae493e79a197635b2e14fa7f238a3189ed695ae
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 353f09253794670e8107e084acb3a01cd309fd60
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869001"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズの複数要素の認証はテスト環境
@@ -50,7 +50,7 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
 
 次の手順を実行して、User 2 アカウントに対して多要素認証を有効にしてテストします。
   
-1. ブラウザーのインスタンスを個別に秘密を開き、Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com))、し、グローバル管理者アカウントでサインインします。
+1. ブラウザーのインスタンスを個別に秘密を開き、Office のポータルに移動 ([https://office.com](https://office.com))、し、グローバル管理者アカウントでサインインします。
     
 2. ポータルのメイン ページで、**[管理]** をクリックします。
     
@@ -74,7 +74,7 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
   
 1. お使いのブラウザーの新しい、プライベート インスタンスを開きます。
     
-2. Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) と 2 のユーザー アカウントでサインイン (user2 @\<組織名 >. onmicrosoft.com) とパスワードです。
+2. Office のポータルに移動 ([https://office.com](https://office.com)) と 2 のユーザー アカウントでサインイン (user2 @\<組織名 >. onmicrosoft.com) とパスワードです。
     
 3. サインイン後、詳細については、アカウントを設定するように求められます。[**次へ**] をクリックします。
     
@@ -94,7 +94,7 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
     
 8. User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。元のパスワードと、新しいパスワードを 2 回入力して、**[パスワードを更新してサインイン]** をクリックします。新しいパスワードを安全な場所に記録します。
     
-    お使いのブラウザーの [ **Microsoft Office のホーム**] タブで、Office 365 ポータルのユーザー 2 のはずです。
+    お使いのブラウザーの [ **Microsoft Office のホーム**] タブで、Office のポータルのユーザー 2 のはずです。
 
 
 情報と実稼働環境での複数要素の認証を展開するリンクの識別段階では、[多要素認証のセットアップ](identity-multi-factor-authentication.md)手順を参照してください。

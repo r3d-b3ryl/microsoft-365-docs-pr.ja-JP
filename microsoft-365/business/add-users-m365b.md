@@ -19,10 +19,10 @@ search.appverid:
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: 新しいユーザーを追加、デバイスをセキュリティで保護および Microsoft 365 ビジネスでロールを割り当てる方法について説明します。
 ms.openlocfilehash: 3bf718d2b42aa5220a6d746035568985c0df5251
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869163"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>Microsoft 365 Busines にその他のユーザーを追加する

@@ -10,10 +10,10 @@ audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
 ms.openlocfilehash: e5937b1436701e872898dc079ba892181772202f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869469"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 Business に関するよく寄せられる質問

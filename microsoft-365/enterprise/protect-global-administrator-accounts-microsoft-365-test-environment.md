@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 エンタープライズ テスト環境でのグローバル管理者アカウントを保護するためにこれらの手順を使用します。
-ms.openlocfilehash: 233e2178b060df4950c340e034d5f51216fac8fb
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4d444e217c5a232811701f6519c2eb3ebe86df70
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869022"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズ テスト環境でのグローバル管理者アカウントを保護します。
@@ -48,7 +48,7 @@ Microsoft 365 エンタープライズ テスト環境でのグローバル管�
 
 最初に、グローバル ・ アドミニストレータ ・ アカウント ・ アクティビティを監視し、グローバル ・ アドミニストレータ ・ アカウントの電子メール アドレスに通知を送信するのには、Office 365 のクラウド アプリケーションのセキュリティ ポリシーを作成します。 
 
-1. Office 365 ポータルにサインインするのに[http://portal.office.com](http://portal.office.com)のグローバル管理者アカウントを使用します。
+1. Office のポータルにサインインするのに[http://portal.office.com](http://portal.office.com)のグローバル管理者アカウントを使用します。
 2. **管理者**のタイルをクリックします。**Office 管理者センター** ] タブで、クリックして**管理センター > セキュリティおよびコンプライアンスに関する**。
 3. 左側のナビゲーション ウィンドウで、 **[アラート] > [高度な警告の管理]** をクリックします。
 4. **[高度な警告の管理]** ページで、 **[Office 365 Cloud App Security を有効にする]** をクリックし、 **[Office 365 Cloud App Security に移動]** をクリックします。
@@ -70,7 +70,7 @@ Microsoft 365 エンタープライズ テスト環境でのグローバル管�
 4. **そのユーザーが初めてサインインするときにパスワードの変更**をオフにします。
 5. **ロール**をクリックし、**グローバル ・ アドミニストレーター**] をクリックします。
 6. **製品のライセンス**をクリックしを [**エンタープライズ モビリティとセキュリティの E5**と**Office 365 のエンタープライズ E5 のライセンス**を有効にします。
-7. [ **追加**] をクリックします。
+7. [**追加**] をクリックします。
 8. **ユーザーがページに追加された**、[**パスワードを電子メールで送信する**をオフにし、[**閉じる**] をクリックします。
 
 次に、GlobalAdmins という名前の新しいグループを作成し、DedicatedAdmin のアカウントを追加します。

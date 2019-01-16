@@ -5,17 +5,17 @@ keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サー�
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 11/1/2018
-ms.openlocfilehash: 7e551e51c3ea972f69c24bcb1994e13f0f7342f0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 11/7/2018
+ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869390"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのサポート
 
-Microsoft 管理デスクトップ デバイスによって管理されるを修復または交換が必要な場合に、マイクロソフトで。事前と事後のインシデント管理は、マイクロソフトが提供されます。マイクロソフトでは、マイクロソフトの管理されたデスクトップ管理ポータルでのインシデントを追跡します。これらは、[重大度の定義](#severity-definitions)に従って分類されます。 
+Microsoft 管理デスクトップ デバイスによって管理されるを修復または交換マイクロソフトによって保証契約に基づく。事前と事後のインシデント管理は、マイクロソフトが提供されます。マイクロソフトでは、マイクロソフトの管理されたデスクトップ管理ポータルでのインシデントを追跡します。これらは、[重大度の定義](../working-with-managed-desktop/admin-support.md#sev)に従って分類されます。
 
 お客様は、マイクロソフトの管理されたデスクトップの操作のお問い合わせいただけます。
 - サービス テナントまたは構成として現代の職場での情報の要求
@@ -39,10 +39,10 @@ Microsoft 管理デスクトップ デバイスによって管理されるを修
 
 詳細情報をサポートしてください。
 
-- 電流: 北米と英国だけ (24 時間年中無休) 
+- 電流: 北アメリカ、英国、およびオーストラリアのみ (24 時間年中無休) 
 - 顧客との電話とチャットの会話でのみサポートされている言語が英語 
 - 協力を置き換えない場合、企業のヘルプデスクです。基幹業務 (LOB) アプリケーションやネットワーク リソースなどにも、ヘルプデスクでは 
-- 管理されたデスクトップの Microsoft 以外のデバイスでは扱いません 
+- テスト リングおよび以外の Microsoft 管理デスクトップ デバイス内に存在する Microsoft 管理されているデバイスでは扱いません 
 
 ## <a name="hardware-replacement"></a>ハードウェアの交換
 

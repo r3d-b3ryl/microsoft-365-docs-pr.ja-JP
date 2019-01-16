@@ -5,12 +5,12 @@ keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サー�
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 71952a8b073f002890cc95883e717aeb04c0cd68
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 01/08/2019
+ms.openlocfilehash: 6b6c6f6a2e719496578ac1d15c9b94a92a2ab492
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868983"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 管理されたデスクトップ アプリケーションの要件
@@ -33,14 +33,19 @@ Microsoft 管理されたデスクトップは、アプリケーションを配�
 
 Microsoft 管理デスクトップ デバイスでは、特定の種類のアプリケーションは使用できません。
 - サード パーティ製ウイルス対策、セキュリティ、または監査ソフトウェア
+- サード パーティ製の web ブラウザー
 - Office 365 Pro Plus より前の Microsoft Office のバージョン
 - アプリケーションをインストールするか、他のサード ・ パーティ製ソフトウェアをバンドル
 
 ## <a name="restricted-app-behaviors"></a>制限されたアプリケーションの動作
 
-特定のアプリケーションの動作、またはどちらかのユーザー エクスペリエンスに悪影響を及ぼす Microsoft 管理デスクトップ デバイスにセキュリティ リスクが存在します。アプリケーションは、次の動作または特性は発生しません。 
+特定のアプリケーションの動作するユーザー エクスペリエンスに悪影響を及ぼすか、Microsoft 管理デスクトップ デバイスにセキュリティ リスクが存在します。アプリケーションは、次の動作または特性は発生しません。 
+
+ユーザー エクスペリエンス。
 - バック グラウンド サービスをインストールするか、長時間実行されるバック グラウンド プロセスの生成
 - 自分自身を Windows のスタートアップ パスに追加します。
+
+セキュリティ:
 - Windows または Office の内部データ構造を文書化されていない、Windows または Office Api を呼び出すまたは依存関係
 - アプリケーション ストアとして機能または拡張機能マネージャー
 - エンド ・ ユーザーの権限を昇格させる

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Microsoft 365 テスト環境でデバイスを登録し、それらをリモートで管理するには、このテスト ラボ ガイド 』 を使用します。
-ms.openlocfilehash: 98696104ee8453adb7449980cf439eeb152aeea9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: a78db19099ccacd1b2f62e8438d1749f28d22f52
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869136"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境に iOS および Android デバイスを登録する
@@ -76,7 +76,7 @@ IOS または Android デバイスをリモートでロック。
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
   
-[Microsoft 365 Enterprise テスト環境の MAM のポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Microsoft 365 企業のコンプライアンス ポリシーをデバイスのテスト環境](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
 

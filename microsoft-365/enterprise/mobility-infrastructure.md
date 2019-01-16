@@ -13,11 +13,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 ms.custom: microsoft-intune
-ms.openlocfilehash: 8d048ec6628cb8f7cb9c5e0d4c7960481bc69de1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 3afc28f0d21918c027a6a1622a40318e333f7ab4
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869656"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Microsoft 365 エンタープライズのフェーズ 5: モバイル デバイスの管理
@@ -28,7 +28,7 @@ ms.locfileid: "26869656"
 
 Microsoft 365 エンタープライズには、デバイス、およびそれらのアプリケーションは、組織内での管理に役立つ機能が含まれています。Microsoft Intune を使用すると、iOS、Android、macOS、およびデータを含む、組織のリソースへのアクセスを保護するために Windows デバイスを管理できます。Intune は、Azure Active Directory (Azure AD) と統合 Microsoft 365 の次のビジネス シナリオを有効にします。
 
-- 組織内外でファイルを保管および共有して、組織の境界を越えてシームレスに作業を行います
+- 組織内外でファイルを保存および共有して、組織の境界を越えてシームレスに作業を行います
 - 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
 - 業界内で確証された世界標準のコンプライアンスに適合したコントロールと可視性により、安心感を提供します
 - 情報を保護して、データ損失のリスクを軽減します
@@ -110,7 +110,7 @@ Intune などのアプリケーションを管理できるアプリケーショ�
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [モバイル アプリケーション管理ポリシーのテスト ラボ ガイド:](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: デバイス ・ コンプライアンス ・ ポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>手順 6: は、コンプライアンスと条件付きのアクセスを有効にします。
@@ -153,7 +153,7 @@ Intune では、強力なサービスと多くの機能が含まれています�
 - モニター[アプリケーション](https://docs.microsoft.com/intune/apps-monitor)、[デバイスのコンプライアンス](https://docs.microsoft.com/intune/compliance-policy-monitor)を監視、モニター[構成のプロファイル](https://docs.microsoft.com/intune/compliance-policy-monitor)、および監査ログを使用して複数の遠隔測定します。[Intune データ ウェアハウス](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)に接続し、レポートのニーズをさらに多くの BI の電源を使用できます。
 
 
-## <a name="identity-and-device-access-recommendations"></a>Id とデバイスのアクセスに関する推奨事項
+## <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 
 マイクロソフトでは、一連の安全性と生産性の高い従業員を確保するのには[id とデバイスのアクセス](microsoft-365-policies-configurations.md)に関する推奨事項を提供します。デバイスへのアクセスの推奨事項と設定をこの段階では以下の手順の文書で使用します。
 
