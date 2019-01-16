@@ -11,10 +11,10 @@ ms.prod: microsoft-365-business
 title: Microsoft 365 ビジネス リソース
 description: 計画、展開、および Microsoft Office 365、Windows の 10、およびエンタープライズ モビリティ + セキュリティで同時に使用してビジネス チームワークを有効にし、創造性のロックを解除する統合された、セキュリティで保護されたインフラストラクチャの方法を説明します。
 ms.openlocfilehash: 386c829a6b635b1b23301e838f05b0b84bbfb3b4
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26869111"
 ---
 <div id="main" class="v2">
