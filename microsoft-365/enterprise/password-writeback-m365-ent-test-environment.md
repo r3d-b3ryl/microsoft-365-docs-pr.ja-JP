@@ -16,16 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用のパスワードの書き戻しを構成する。'
-ms.openlocfilehash: 748ccaf8601d9e9564d176f2368e3cc71f926208
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241980"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993228"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 
-ユーザーが Azure Active Directory (AD) からパスワードを更新できるようにします。更新されたパスワードはローカル Windows Server Active Directory (AD) にレプリケートされます。パスワードの書き戻しにより、ユーザーは元のユーザー アカウントが保存されているオンプレミス Windows Server AD でパスワードを更新する必要がなくなります。オンプレミス ネットワークにリモート アクセス接続できないローミング ユーザーやリモート ユーザーにとって便利な機能です。
+ユーザーが Azure Active Directory (Azure AD) からパスワードを更新できるようにします。更新されたパスワードはローカルの Active Directory Domain Services (AD DS) にレプリケートされます。パスワードの書き戻しにより、ユーザーは元のユーザー アカウントが保存されているオンプレミスの Windows Server AD でパスワードを更新する必要がなくなります。オンプレミス ネットワークにリモート アクセス接続できないローミング ユーザーやリモート ユーザーにとって便利な機能です。
 
 この記事では、Microsoft 365 テスト環境でのパスワード書き戻しを構成する方法について説明します。
 

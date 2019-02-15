@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基盤インフラストラクチャの各フェーズを展開するいくつかの方法を説明します。
-ms.openlocfilehash: 5ffe00c9eb975a0f8c2d193a71d8b613e827cc70
-ms.sourcegitcommit: f2eae6ec367f7b69043105d117a2a7e3da4153aa
+ms.openlocfilehash: 909526fb4938c8da142b4f667140f10dda660877
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29538958"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993238"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 Enterprise の基盤インフラストラクチャの展開戦略
 
@@ -53,7 +53,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
-ユーザー ロールアウトの図の網かけは、グループ、部門、地域などの構造化または系統的アプローチを使用して、組織全体で 0% から 100% に至るロールアウトを示します。
+ユーザー ロールアウトの図の網かけは、グループ、部門、地域などの構造化または系統的アプローチを使用する、組織全体におけるパーセンテージ (0% から 100%) を示します。
 
 ## <a name="deployment-strategies"></a>展開戦略
 
