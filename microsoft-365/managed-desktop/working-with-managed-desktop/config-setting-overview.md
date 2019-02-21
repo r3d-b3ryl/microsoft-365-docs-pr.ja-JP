@@ -6,12 +6,12 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 54d986f37b3981200bdead30a2c232143b9dd49d
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
+ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051088"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30122247"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>構成可能な設定-Microsoft マネージドデスクトップ
 
@@ -64,7 +64,7 @@ Microsoft Managed Desktop 管理ポータルで変更を構成し、ステージ
 - **進捗状況を追跡**する-変更を展開した後に状態を追跡します。状態は [**進行**中] に変わり、**完了**するか、**失敗**します。展開に失敗した場合は、Microsoft マネージドデスクトップ操作のサポート要求が自動的に開かれ、問題を調査します。  
 - 展開された**バージョンを参照**: 展開された変更ごとにバージョン番号があります。
 - **変更を元に戻す**-変更を元に戻す現在の展開を停止し、すべての呼び出しに展開された最後の変更にすべての呼び出しを戻します。前回正常起動時の設定値にロールバックしています。
-- **validcahnges** -展開が完了した後、変更が予想どおりに適用されたことを確認します。  
+- **変更を検証**する-展開が完了したら、変更が予想どおりに適用されたことを確認します。  
 
 展開が失敗した場合、または変更を元に戻すことができない場合は、Microsoft マネージドデスクトップ操作を使用して[サポート要求を開き](admin-support.md)ます。 
 
