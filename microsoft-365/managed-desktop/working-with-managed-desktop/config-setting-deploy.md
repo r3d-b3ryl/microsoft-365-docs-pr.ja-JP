@@ -5,13 +5,13 @@ keywords: microsoft マネージドデスクトップ、microsoft 365、サー�
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/12/2019
-ms.openlocfilehash: fd0e0750332fa8f650cfc4756f8eb108be2a71df
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.date: 2/17/2019
+ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
+ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051128"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175779"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ
 
@@ -24,9 +24,9 @@ ms.locfileid: "30051128"
 状態  | 説明 
 --- | --- 
 展開 | 変更は、このリングへの展開を待機しています。
-進行中 | このリングのデバイスに変更が適用されています。 
-完全 | このリングのデバイスに変更が適用されています。 
-Failed | この変更は、着信が停止されたため、リング内のデバイスの 10% で失敗しました。<br><br> 展開のトラブルシューティングを行うために、サポート要求が Microsoft マネージドデスクトップ操作を使用して自動的に開かれます。 
+進行中 | このリングのアクティブなデバイスに変更が適用されています。 
+完全 | このリングのすべてのアクティブなデバイスで変更が完了しました。 
+Failed | この変更は、呼び出しが停止されたために、リング内のアクティブなデバイスの 10% で失敗しました。<br><br> 展開のトラブルシューティングを行うために、サポート要求が Microsoft マネージドデスクトップ操作を使用して自動的に開かれます。 
 復帰 | 変更は、すべての展開リングに正常に展開された最後の変更に戻されました。
 
 ## <a name="deploy-changes"></a>変更を展開する
