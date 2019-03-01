@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用のパスワードの書き戻しを構成する。'
-ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
-ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
+ms.openlocfilehash: 7593da41d51d85c0f73d01450bb67306f82c7a1e
+ms.sourcegitcommit: 15c60addeaa51e0601c580665e8316ece75d3abc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29993228"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303642"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 
@@ -106,11 +106,11 @@ ms.locfileid: "29993228"
 
 4. [**追加のタスク**] ページで [**同期オプションのカスタマイズ**] をクリックし、[**次へ**] をクリックします。
 
-5. [**Azure AD に接続**] ページで User 1 の資格情報を入力し、[**次へ**] をクリックします。
+5. **[Azure AD に接続]** ページで、グローバル管理者の資格情報を入力して、**[次へ]** をクリックします。
 
 6. [**ディレクトリの接続**] ページと [**ドメインと OU のフィルタ リング**] ページで、[**次へ**] をクリックします。
 
-7. [**オプション機能**] ページで、[**パスワードの書き戻し**] を選択し、[次へ] をクリックします。 
+7. **[オプション機能]** ページで、**[パスワードの書き戻し]** を選択し、**[次へ]** をクリックします。 
 
 8. [**構成の準備完了**] ページで [**構成**] をクリックし、処理が完了するのを待ちます。
 
@@ -129,7 +129,7 @@ ms.locfileid: "29993228"
 - Azure AD Connect が APP1 上で実行され、Office 365 および EMS E5 サブスクリプションの Azure AD テナントから、アカウントおよびグループのリストが TESTLAB Windows Server AD ドメインに同期されます。 
 - パスワードの書き戻しが有効になっているため、ユーザーは簡略化されたイントラネットに接続せずに、Azure AD 経由でパスワードを変更できます。
 
-実稼働環境でのパスワードの書き戻しの構成に関する情報およびリンクについては、ID フェーズの手順、「[パスワードの更新を簡素化する](identity-password-writeback.md)」を参照してください。
+実稼働環境でのパスワードの書き戻しの構成に関する情報およびリンクについては、ID フェーズの手順、「[パスワードの更新を簡素化する](identity-password-reset.md#identity-pw-writeback)」を参照してください。
 
 ## <a name="next-step"></a>次の手順
 
