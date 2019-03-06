@@ -1,103 +1,104 @@
 ---
-title: Microsoft 管理デスクトップ デバイス用のアプリケーションを展開します。
-description: 追加および管理されたデスクトップのマイクロソフトのデバイスにアプリケーションを展開するための情報です。
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365、サービス、ドキュメント、アプリケーション、基幹業務アプリケーション、LOB アプリケーション
+title: Microsoft マネージドデスクトップデバイス用のアプリを展開する
+description: Microsoft マネージドデスクトップデバイスへのアプリの追加および展開に関する情報。
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント、アプリ、基幹業務アプリ、LOB アプリ
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 01/17/2019
-ms.openlocfilehash: 65d45be5ddb21d8f2cac876a1c8f93b2bbddf7b8
-ms.sourcegitcommit: 0fc00286d7dc8cafddf9d17a98a375503b9551e6
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: febb3198c434e638f83c412a3f8a3b688d9f5bd1
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29341612"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414172"
 ---
-# <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Microsoft 管理されたデスクトップのデバイスにアプリケーションを配備します。
-追加して、ユーザーのデバイスにアプリケーションを展開する、管理されたデスクトップのマイクロソフトに契約時の一部が含まれます。管理されたデスクトップの Microsoft のポータルを使用して後、は、追加し、アプリケーションを展開します。 
+# <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>アプリを Microsoft マネージドデスクトップデバイスに展開する
+Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft マネージドデスクトップポータルを使用している場合は、アプリを追加して展開することができます。 
 
-プロセス全体は、次のようになります。
-1. [管理されたデスクトップの Microsoft のポータルに追加のアプリケーション](#1)のこのことがでく既存の基幹業務 (LOB) アプリケーション、または Intune と同期しているビジネスのマイクロソフト ストアからのアプリです。 
-2. [アプリケーションの割り当てのグループを作成 Azure Active Directory (AD)](#2) - アプリケーションの割り当てを管理するためにこれらのグループを使用します。
-3. [アプリケーションをユーザーに割り当てる](#3)
+全体的なプロセスは次のようになります。
+1. [microsoft マネージドデスクトップポータルへのアプリの追加](#1)-既存の基幹業務 (LOB) アプリ、または Intune と同期したビジネス向け Microsoft Store のアプリにすることができます。 
+2. [アプリの割り当て用に Azure Active Directory (AD) グループを作成](#2)する-これらのグループを使用して、アプリの割り当てを管理します。
+3. [ユーザーにアプリを割り当てる](#3)
 
 <span id="1" />
 
-## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>手順 1: 管理されたデスクトップの Microsoft のポータルにアプリケーションを追加します。
-Microsoft 管理されたデスクトップでは、 [Win32 または Windows MSI ベースのアプリケーション](#lob-apps)、または[ビジネス アプリケーションのマイクロソフト ストア](#msfb-apps)に追加し、管理されたデスクトップのマイクロソフトのデバイスに配置できます。
+## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>手順 1: Microsoft マネージドデスクトップポータルにアプリを追加する
+microsoft マネージドデスクトップには、 [Win32、Windows MSI ベースのアプリ](#lob-apps)、または[microsoft Store for Business アプリ](#msfb-apps)を追加し、それを microsoft マネージドデスクトップデバイスに展開することができます。
 
 <span id="lob-apps">
 
-###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 や Windows MSI ベースのアプリケーションを Microsoft デスクトップの管理
+###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップへの Win32 または Windows MSI ベースのアプリ
 
-管理されたデスクトップの Microsoft のポータルには、基幹業務 (LOB) アプリケーションを追加できます。Microsoft 管理デスクトップ デバイスにインストールされているアプリケーションの要件については、[マイクロソフトの管理されたデスクトップ アプリケーションの要件](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)を参照してください。
+基幹業務 (LOB) アプリを Microsoft マネージドデスクトップポータルに追加できます。 microsoft マネージドデスクトップデバイスにインストールされているアプリの要件の詳細については、「 [microsoft managed desktop app の要件](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)」を参照してください。
 
-この手順では、どのようなアプリケーションの追加、および構成し、アプリケーションのソースをアップロードするを選択します。 
+この手順では、追加するアプリの種類を選択してから、アプリソースを構成およびアップロードします。 
 
-**管理されたデスクトップの Microsoft のポータルに、LOB アプリケーションや Windows アプリケーションを追加するのには**
+**LOB アプリまたは Windows アプリを Microsoft マネージドデスクトップポータルに追加するには**
 
-管理されたデスクトップの Microsoft のポータルにサインインまたは Intune にサインインし、Microsoft の管理されたデスクトップを検索できます。管理されたデスクトップの Microsoft のポータルへのサインインをご紹介します。 
+microsoft マネージドデスクトップポータルにサインインするか、Intune にサインインして、microsoft managed desktop を検索することができます。 Microsoft マネージドデスクトップポータルへのサインインを表示します。 
 
-1.  [マイクロソフト デスクトップ管理の管理ポータル](http://aka.ms/mmdportal)にサインインします。 
-2.  **在庫**の下には、**アプリケーション**を選択します。
-3.  アプリケーション ・ ワークロードの**追加**を] を選択します。
-4.  **追加のアプリケーション**では、**基幹業務アプリケーション**または**Windows アプリケーション (Win32) のプレビュー**を選択します。
-    - **基幹業務アプリケーション**を選択した場合の追加、および基幹業務アプリケーションを構成する方法について[Microsoft Intune に Windows の基幹業務アプリケーションの追加](https://docs.microsoft.com/intune/lob-apps-windows)を参照してください。
-    - **Windows アプリケーション (Win32) のプレビュー**を選択した場合を追加して、Windows アプリケーションを構成する手順の[Win32 アプリケーションの管理](https://docs.microsoft.com/intune/apps-win32-app-management)を参照してください。
+1.  [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。 
+2.  [**インベントリ**] で、[**アプリ**] を選択します。
+3.  [アプリのワークロード] で、[**追加**] を選択します。
+4.  [**アプリの追加**] で、[**基幹業務アプリ**] または [ **Windows アプリ (Win32)-プレビュー**] を選択します。
+    - 基幹**業務アプリ**を選択した場合は、基幹業務アプリを追加して構成する手順については、「 [Windows の基幹業務アプリを Microsoft Intune に追加](https://docs.microsoft.com/intune/lob-apps-windows)する」を参照してください。
+    - **windows アプリ (Win32) プレビュー**を選択した場合は、「 [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) 」を参照してください。 windows アプリを追加および構成する方法について説明します。
 
 <span id="msfb-apps">
 
-### <a name="microsoft-store-for-business-apps"></a>ビジネス アプリケーション用の Microsoft ストア
-ビジネス向けのマイクロソフト ストアにサインアップしていない場合は、アプリを買いに行くとき署名できます。アプリがある場合は後、は、Microsoft の管理されたデスクトップと同期できます。 
+### <a name="microsoft-store-for-business-apps"></a>ビジネス向け Microsoft Store アプリ
+Microsoft Store for Business にサインアップしていない場合は、アプリの購入時にサインアップできます。 アプリを用意したら、それらを Microsoft マネージドデスクトップと同期することができます。 
 
-**ビジネスのマイクロソフト ストアからアプリケーションを購入するには**
+**ビジネス向け Microsoft Store からアプリを購入するには**
 
-1. ビジネス管理者のアカウントに、マイクロソフトのストアを使用して[ビジネスのためのマイクロソフト ストア](https://businessstore.microsoft.com)にサインインします。
-2. **ショップ**を選択します。
-3. 検索を使用して、必要なアプリケーションを検索して、アプリケーションを選択します。
-4. 製品詳細については、**アプリケーションを取得する**を選択します。マイクロソフト ストアでは、組織の**製品の & サービス**にアプリケーションを追加します。
+1. business 管理者アカウントの microsoft store を使用して、 [microsoft store for business](https://businessstore.microsoft.com)にサインインします。
+2. [**自分のグループのショッピング**] を選択します。
+3. 検索を使用して目的のアプリを見つけ、アプリを選択します。
+4. [製品の詳細] で、[**アプリの取得**] を選択します。 Microsoft Store は、組織のためにアプリを**Products & サービス**に追加します。
 
-**Intune とビジネス向けのマイクロソフト ストア間で同期を強制するには**
-1. テナントの Intune 管理者またはグローバル管理者として[Azure ポータル](https://portal.azure.com/)にサインインします。
-2. **サービス _gt Intune のすべて**を選択します。Intune は、監視と管理のセクションです。
-3. Intune ウィンドウは、**クライアント アプリケーション**を選択し、**ビジネス向けのマイクロソフト ストア**を選択します。
-4. Intune でのビジネス アプリケーションで、Microsoft ストアを同期する**を有効にする**を選択します。
-    - いない場合、記号と関連付け、Microsoft の格納 Intune とビジネス アカウント
-    - Intune コンソールにビジネス向けのマイクロソフト ストアからのアプリが表示されます言語を選択します。
-    - Intune でのビジネス アプリケーションで、Microsoft ストアを同期する**同期**を選択します。
-    - ビジネス向けのマイクロソフト ストアと Intune の間で同期がアクティブであることを確認 (次の手順)。 
+**ビジネス向けに Intune と Microsoft Store 間の同期を強制するには**
+1. テナントのために Intune 管理者またはグローバル管理者として[Azure Portal](https://portal.azure.com/)にサインインします。
+2. [**すべてのサービス > Intune**] を選択します。 Intune は、[監視 + 管理] セクションにあります。
+3. [Intune] ウィンドウで、[**クライアントアプリ**] を選択し、[**ビジネス向け Microsoft Store**] を選択します。
+4. [**有効**] を選択して、Microsoft Store for Business アプリを Intune と同期します。
+    - まだ登録していない場合は、Microsoft Store for Business アカウントを Intune に関連付けます。
+    - Intune コンソールに Microsoft Store for Business のアプリが表示される言語を選択します
+    - Microsoft Store for Business アプリを Intune と同期するには、[**同期**] を選択します。
+    - Microsoft Store for Business と Intune の間の同期がアクティブであることを確認します (次の手順)。 
 
-**Intune とビジネス向けのマイクロソフト ストア間で同期がアクティブであることを確認するのには**
-1. ビジネス管理者のアカウントに、マイクロソフトのストアを使用して[ビジネスのためのマイクロソフト ストア](https://businessstore.microsoft.com)にサインインします。
-2. **管理**を選択します。
-3. **設定**を選択し、**整列**を選択します。
-4. [**管理ツール**] には、Intune が表示されていることと、状態が**アクティブ**であるを確認します。  
+**Intune と Microsoft Store for Business の同期がアクティブであることを確認するには**
+1. business 管理者アカウントの microsoft store を使用して、 [microsoft store for business](https://businessstore.microsoft.com)にサインインします。
+2. [**管理**] を選択します。
+3. [**設定**] を選択し、[**配布**] を選択します。
+4. [**管理ツール**] で、Intune が表示され、状態が [**アクティブ**] になっていることを確認します。  
 
 <span id="2" />
 
-## <a name="step-2-create-azure-ad-groups"></a>Azure AD グループを作成する手順 2。
+## <a name="step-2-create-azure-ad-groups"></a>手順 2: Azure AD グループを作成する
 
-各アプリケーションの 3 つの Azure AD グループを作成します。この表は、グループする必要があります (使用可能な必要な場合、およびアンインストール) します。 
+アプリごとに3つの Azure AD グループを作成します。 次の表に、必要なグループ (利用可能、必要、およびアンインストール) の概要を示します。 
 
-アプリケーションの割り当ての種類 |   グループの使用   | Azure AD の例の名前
+アプリの割り当ての種類 |   グループの使用   | Azure AD 名の例
 --- | --- | ---
-使用可能 |  アプリケーションは企業ポータル アプリケーションまたは web サイトから利用可能になります。 | MMD:*アプリケーション名*: 利用可能
-必須 |  アプリケーションは、選択したグループ内のデバイスにインストールされます。 | MMD:*アプリケーション名*: 必須
-[アンインストール] |  単位のアプリケーションは、選択したグループ内のデバイスからアンインストールされます。 | MMD:*アプリケーション名*: アンインストール
+Available |  アプリは、会社のポータルアプリまたは web サイトから入手できます。 | MMD –*アプリ名*–利用可能
+必須 |  アプリは、選択したグループのデバイスにインストールされます。 | MMD –*アプリ名*–必須
+Uninstall |  なアプリは、選択したグループのデバイスからアンインストールされます。 | MMD –*アプリ名*–アンインストール
 
-アプリケーションの利用を行う、アプリケーションをインストールするか、管理されたデスクトップの Microsoft デバイスからアプリケーションを削除するこれらのグループにユーザーを追加します。 
+これらのグループにユーザーを追加して、アプリを利用できるようにするか、アプリをインストールするか、Microsoft マネージドデスクトップデバイスからアプリを削除します。 
 
 <span id="3" />
 
-## <a name="step-3-assign-apps-to-your-users"></a>手順 3: アプリケーションをユーザーに割り当てる
+## <a name="step-3-assign-apps-to-your-users"></a>手順 3: ユーザーにアプリを割り当てる
 
-**ユーザーにアプリケーションを割り当てるには**
+**アプリをユーザーに割り当てるには**
 
-1. [マイクロソフト デスクトップ管理の管理ポータル](http://aka.ms/mmdportal)にサインインします。
-2. デスクトップの管理ウィンドウで、**アプリケーション**を選択します。
-3. アプリケーションの作業負荷でアプリケーションをユーザーに割り当てるし、**ユーザー グループの割り当て**を選択するを選択します。
-4. 特定のアプリケーションでは、割り当ての種類 (利用可能な必要な場合、アンインストール) を選択し、適切なグループを割り当てます。
-5. 割り当てるアプリケーション ウィンドウで、 **[ok]** を選択します。
+1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。
+2. [管理されたデスクトップ] ウィンドウで、[**アプリ**] を選択します。
+3. [アプリのワークロード] で、ユーザーの割り当て先となるアプリを選択し、[**ユーザーグループの割り当て**] を選択します。
+4. 特定のアプリについて、割り当ての種類 (利用可能、必須、アンインストール) を選択し、適切なグループを割り当てます。
+5. [アプリの割り当て] ウィンドウで、[ **OK]** を選択します。
 
 <!--# Preparing apps for Microsoft Managed Desktop
 

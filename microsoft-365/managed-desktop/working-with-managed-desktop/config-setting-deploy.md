@@ -6,32 +6,33 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
-ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
-ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175779"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414171"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ
 
-設定カテゴリを変更し、展開をステージすると、展開の状態に応じて展開の進行状況を展開し、追跡することができます。このページには、各構成可能な設定の概要が表示されます。[設定] カテゴリを開き、各展開とその詳細を表示して、変更を展開します。 
+設定カテゴリを変更し、展開をステージすると、展開の状態に応じて展開の進行状況を展開し、追跡することができます。 このページには、各構成可能な設定の概要が表示されます。 [設定] カテゴリを開き、各展開とその詳細を表示して、変更を展開します。 
 
 ## <a name="deployment-statuses"></a>展開の状態 
 
 これらの statues は、展開ごとに表示されます。
 
-状態  | 説明 
+Status  | 説明 
 --- | --- 
 展開 | 変更は、このリングへの展開を待機しています。
-進行中 | このリングのアクティブなデバイスに変更が適用されています。 
-完全 | このリングのすべてのアクティブなデバイスで変更が完了しました。 
+処理中 | このリングのアクティブなデバイスに変更が適用されています。 
+Complete | このリングのすべてのアクティブなデバイスで変更が完了しました。 
 Failed | この変更は、呼び出しが停止されたために、リング内のアクティブなデバイスの 10% で失敗しました。<br><br> 展開のトラブルシューティングを行うために、サポート要求が Microsoft マネージドデスクトップ操作を使用して自動的に開かれます。 
 復帰 | 変更は、すべての展開リングに正常に展開された最後の変更に戻されました。
 
 ## <a name="deploy-changes"></a>変更を展開する
 
-これらの手順にデスクトップの背景画像が表示されます。展開をステージングした後、展開状態から変更を展開します。 
+これらの手順にデスクトップの背景画像が表示されます。 展開をステージングした後、展開状態から変更を展開します。 
 
 **変更を展開するには**
 
@@ -52,7 +53,7 @@ Microsoft マネージドデスクトップでは、次の順序で展開リン�
 
 これらの手順にデスクトップの背景画像が表示されます。 
 
-変更を展開した後、**展開状態**から元に戻すことができます。**進行**中または**完了**した変更を元に戻すと、現在の展開は停止します。この設定は、すべてのリングに展開された最新のバージョンに戻ります。 
+変更を展開した後、**展開状態**から元に戻すことができます。 **進行**中または**完了**した変更を元に戻すと、現在の展開は停止します。 この設定は、すべてのリングに展開された最新のバージョンに戻ります。 
 
 **変更を元に戻すには**
 1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
@@ -62,6 +63,6 @@ Microsoft マネージドデスクトップでは、次の順序で展開リン�
 
 ![構成可能な設定の展開の復元](images/config-setting-revert.png) 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他の技術情報
 - [構成可能な設定の概要](config-setting-overview.md)
 - [構成可能な設定のリファレンス](config-setting-ref.md) 
