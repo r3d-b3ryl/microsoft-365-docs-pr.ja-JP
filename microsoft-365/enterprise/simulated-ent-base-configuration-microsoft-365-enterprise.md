@@ -151,7 +151,7 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
   
 次に、DC1 仮想マシンに接続します。
   
-1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] > **「新しいリソース グループの名前」** > [DC1] > [接続]** の順にクリックします。
+1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] >**「新しいリソース グループの名前」** > [DC1] > [接続]** の順にクリックします。
     
 2. 起動ウィンドウで **[RDP ファイルのダウンロード]** をクリックします。ダウンロードされる DC1.rdp ファイルを開いてから、**[接続]** をクリックします。
     
@@ -188,7 +188,7 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 の再起動後に、DC1 仮想マシンに再接続します。
   
-1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] > **「リソース グループ名」** > [DC1] > [接続]** をクリックします。
+1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] >**「リソース グループ名」** > [DC1] > [接続]** をクリックします。
     
 2. ダウンロードされる DC1.rdp ファイルを実行して、**[接続]** をクリックします。
     
