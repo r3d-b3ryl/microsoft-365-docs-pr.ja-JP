@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 004b6399bb7039c1e30fbc6a7b775b8c7f19d497
-ms.sourcegitcommit: 41b3dd9e38f56d0d4683ae6dc8e0e053ff57a3e7
+ms.openlocfilehash: 5c820e36b7b397fe770216ee229e38a1da5b034d
+ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30516332"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573421"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>microsoft Project または microsoft Visio を microsoft マネージドデスクトップデバイスにインストールする
 
@@ -51,4 +51,4 @@ it 管理者は、プロジェクトと Visio をインストールする方法�
 - これらのアプリケーションをポータルサイトからインストールする方法について説明します。
 
 >[!NOTE]
->ユーザーは、Mircosoft プロジェクトまたは会社のポータルから Microsoft Visio をインストールする前に、すべての Office アプリケーションを閉じる必要があります。 
+>ユーザーは、microsoft Project または会社のポータルから microsoft Visio をインストールする前に、すべての Office アプリケーションを閉じる必要があります。 
