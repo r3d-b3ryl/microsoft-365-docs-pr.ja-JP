@@ -1,5 +1,5 @@
 ---
-title: モダン デスクトップ展開のヘルプを検索する
+title: Windows 10 と Office 365 ProPlus の展開に関するヘルプを検索する
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: モダン デスクトップ展開に関するヘルプとサポートを検索する場所です。
-ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+description: Windows 10 と Office 365 ProPlus の展開に関するヘルプとサポートを検索する場所。
+ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241970"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900256"
 ---
-# <a name="find-help-for-your-modern-desktop-deployment"></a>モダン デスクトップ展開のヘルプを検索する 
+# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Windows 10 と Office 365 ProPlus の展開に関するヘルプを検索する 
 
 Office 365 ProPlus を使用して Windows 10 の展開を計画している場合は、いくつかのオプションを利用して、認定された Microsoft パートナーおよび [Microsoft FastTrack](https://www.microsoft.com/fasttrack) からさらなるサポートを得ることができます。
 
-以下は、既存のパートナーと FastTrack によって提供される、Windows 10、Office 365 ProPlus、および Enterprise Mobility + Security 用の[モダン デスクトップ展開](http://www.aka.ms/howtoshift)のプロセスに対応した、利用可能なサービスのマップです。多くの場合、これらのサービスは、Microsoft 365、Office 365、または Windows 10 Enterprise のそれぞれの条件を満たすサブスクリプションとともに含まれています。モダン デスクトップ評価のようなパートナー主導サービスについては、Microsoft は認定を与える組織として、パートナーが実施するサービスへの証書を提供します。各提供物の詳細は以下のリンクで確認することができます。
+以下は、既存のパートナーと FastTrack によって提供される、Windows 10、Office 365 ProPlus、および Enterprise Mobility + Security 用の[デスクトップ展開](http://www.aka.ms/howtoshift)のプロセスに対応した、利用可能なサービスのマップです。 多くの場合、これらのサービスは、Microsoft 365、Office 365、または Windows 10 Enterprise のそれぞれの条件を満たすサブスクリプションに付属しています。 Windows 10 や Office 365 ProPlus デスクトップ評価のようなパートナー主導サービスについては、Microsoft は認定を与える組織として、パートナーが実施するサービスへの証書を提供します。 各提供物の詳細は以下のリンクで確認することができます。
 
 <br>
 
@@ -104,8 +104,8 @@ Office 365 ProPlus を使用して Windows 10 の展開を計画している場�
 
 ## <a name="related-resources"></a>**関連リソース**
 
-  - [モダン デスクトップ展開センター](http://www.aka.ms/howtoshift)
+  - [デスクトップ展開センター](http://www.aka.ms/howtoshift)
 
-  - [Microsoft Mechanics による「モダン デスクトップの展開」シリーズのビデオ](http://www.aka.ms/watchhowtoshift)
+  - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](http://www.aka.ms/watchhowtoshift)
 
-  - [モダン デスクトップの展開と管理 Lab Kit](https://aka.ms/howtoshiftlabs)
+  - [デスクトップの展開と管理 Lab Kit](https://aka.ms/howtoshiftlabs)
