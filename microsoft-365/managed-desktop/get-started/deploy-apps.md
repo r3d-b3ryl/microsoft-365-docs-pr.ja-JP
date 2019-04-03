@@ -5,14 +5,13 @@ keywords: microsoft マネージドデスクトップ、microsoft 365、サー�
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 01/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: febb3198c434e638f83c412a3f8a3b688d9f5bd1
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
+ms.sourcegitcommit: 2211f57c268754d242d6331c188143f818f5a9f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414172"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31039596"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>アプリを Microsoft マネージドデスクトップデバイスに展開する
 Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft マネージドデスクトップポータルを使用している場合は、アプリを追加して展開することができます。 
