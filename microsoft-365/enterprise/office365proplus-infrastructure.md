@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の Office 365 ProPlus インフラストラクチャを展開する手順。
-ms.openlocfilehash: 3f6630d4c120609cbb1737ad96644d43eb2fda3c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290949"
 ---
 # <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
@@ -62,7 +62,7 @@ Office 365 ProPlus を展開する前に、「[Office 365 ProPlus を展開す�
 
 実際の環境の評価が完了したら、「[Office 365 ProPlus の展開を計画する](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)」のガイダンスに従って展開計画を策定します。この計画には次の内容が含まれます。 
 
-- 使用するツール (System Center Configuration Manger や Office 展開ツール (OTD) など) を含め Office を展開する方法と Office のインストールを実行する場所
+- 使用するツール (System Center Configuration Manger や Office 展開ツール (OTD) など) を含め、Office を展開する方法と Office のインストールを実行する場所
 - Office の更新の管理方法
 - 使用する更新チャネル (Office の更新チャネルにより、ユーザーが Office アプリケーションの機能更新を受け取る頻度が制御されます)
 - 使用する Office インストール パッケージと展開グループ (どのユーザーにどの Office アプリケーションと言語をインストールするかなど)
@@ -89,7 +89,6 @@ Office 365 ProPlus を展開する前に、「[Office 365 ProPlus を展開す�
 
 以下のリソースで、Microsoft の IT 担当者による Microsoft 365 Enterprise での Office 365 ProPlus の計画方法および展開方法を確認することができます。
 
-- [Office 365 ProPlus 2016 をシームレスに展開するための組織の準備](https://www.microsoft.com/itshowcase/Office365adoption)
 - [Microsoft Office 365 ProPlus の展開と更新](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft Office 365 ProPlus の展開を支援するオートメーションと更新プログラム チャネル](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (ビデオ)
 

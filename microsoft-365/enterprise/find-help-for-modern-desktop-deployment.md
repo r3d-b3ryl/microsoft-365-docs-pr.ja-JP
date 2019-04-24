@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 10 と Office 365 ProPlus の展開に関するヘルプとサポートを検索する場所。
-ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
-ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
+ms.openlocfilehash: b1700e5ff1ec6475f11120e036e01c056dd6a15c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281432"
 ---
 # <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Windows 10 と Office 365 ProPlus の展開に関するヘルプを検索する 
 

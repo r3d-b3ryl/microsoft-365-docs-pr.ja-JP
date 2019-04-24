@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のネットワーク インフラストラクチャと、Microsoft 365 Enterprise のクラウドベースのサービスに対する最高性能のネットワーク接続性を得るために SD-WAN テクノロジをどのように使用しているかについて説明します。
-ms.openlocfilehash: 0ef9c37755927444276c83a2c5952b5cb96f22ed
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 09da5f25a9c2cc49ade470fa8fa7fe98d9f7a20e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283768"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 

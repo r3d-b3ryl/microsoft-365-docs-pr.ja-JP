@@ -2,20 +2,20 @@
 title: GDPR に関する Azure アカウンタビリティ対応準備チェックリスト
 description: Microsoft Azure を使用する際に、GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。
 keywords: ARC Azure、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7fdc25c59db08f672debf6e55f54ff36370aefd3
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4fc15ea30e496167181b6e4d4278fa0fc287156a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285849"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Azure アカウンタビリティ対応準備チェックリスト
 
