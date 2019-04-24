@@ -1,42 +1,44 @@
 ---
-title: Microsoft マネージド デスクトップのサポート依頼
+title: Microsoft マネージドデスクトップのサポートを受ける
 description: ''
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/28/2018
-ms.openlocfilehash: fb92b7971a35e6fca093f9911fbf480f1b26e6e8
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 3e48fdfc9708f0a1eb3b1cb0e5deb64d1a5ca748
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278230"
 ---
-# <a name="getting-help-for-end-users"></a><span data-ttu-id="d6c4d-103">エンドユーザーのヘルプを表示します。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-103">Getting help for end users</span></span>
+# <a name="getting-help-for-end-users"></a><span data-ttu-id="e8965-103">エンドユーザーのヘルプを取得する</span><span class="sxs-lookup"><span data-stu-id="e8965-103">Getting help for end users</span></span>
 
-<span data-ttu-id="d6c4d-p101">組織内のユーザーが、Microsoft 管理デスクトップ デバイスとヘルプを取得できます 2 つの方法があります: アプリケーションの**ヘルプを取得**、または電話サポートします。テスト リング内に存在するデバイスは、これらのエンド ユーザー サポートのオプションのスコープの外に注意してください。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-p101">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Note that devices residing in the test ring are out of scope for these end user support options.</span></span> 
+<span data-ttu-id="e8965-104">組織内のユーザーが Microsoft マネージドデスクトップデバイスでヘルプを取得する方法は2つあります。ヘルプアプリまたは電話サポートを**取得**します。</span><span class="sxs-lookup"><span data-stu-id="e8965-104">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="e8965-105">テストグループ内に存在するデバイスは、これらのエンドユーザーサポートオプションの対象外であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e8965-105">Note that devices residing in the test group are out of scope for these end user support options.</span></span> 
 
-## <a name="get-help-app"></a><span data-ttu-id="d6c4d-106">アプリケーションのヘルプを取得します。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-106">Get Help app</span></span>
+## <a name="get-help-app"></a><span data-ttu-id="e8965-106">ヘルプアプリを取得する</span><span class="sxs-lookup"><span data-stu-id="e8965-106">Get Help app</span></span>
 
-<span data-ttu-id="d6c4d-107">サポートをユーザーに提供する方法をお勧め、**ヘルプ**エンド ・ ユーザーのデバイスに組み込まれている使いやすいインタ フェースです。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-107">The preferred method for providing support to your users is **Get Help**, an easy to use interface built into the end user device.</span></span>  
+<span data-ttu-id="e8965-107">ユーザーにサポートを提供するために推奨される方法は、エンドユーザーデバイスに組み込まれた使いやすいインターフェイスを備えた**ヘルプ**を利用することです。</span><span class="sxs-lookup"><span data-stu-id="e8965-107">The preferred method for providing support to your users is **Get Help**, an easy to use interface built into the end user device.</span></span>  
 
-![ヘルプの取得](images/get-help.png)
+![ヘルプを表示する](images/get-help.png)
 
-<span data-ttu-id="d6c4d-109">これは、マイクロソフトの管理されたデスクトップのすべてのデバイスにインストールされているし、タスク バーにピン設定されているアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-109">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
+<span data-ttu-id="e8965-109">これは、すべての Microsoft 管理デスクトップデバイスにインストールされているアプリケーションで、タスクバーにピン留めされています。</span><span class="sxs-lookup"><span data-stu-id="e8965-109">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
 
-- <span data-ttu-id="d6c4d-110">エンド ・ ユーザーは、指定された電話番号、またはサービス担当者とのオンライン チャットへのコールバックを要求できます。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-110">End users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
-- <span data-ttu-id="d6c4d-111">管理されたデスクトップのマイクロソフトのサポート範囲外の要求は、電話経由でローカルの IT ヘルプ デスクにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-111">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>  
+- <span data-ttu-id="e8965-110">エンドユーザーは、指定された電話番号へのコールバックまたはサービス担当者とのチャットオンラインを要求できます。</span><span class="sxs-lookup"><span data-stu-id="e8965-110">End users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
+- <span data-ttu-id="e8965-111">Microsoft マネージドデスクトップサポートの範囲外にある要求は、電話を使用して、ローカルの IT ヘルプデスクにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="e8965-111">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>  
 
-## <a name="phone-support"></a><span data-ttu-id="d6c4d-112">電話サポート</span><span class="sxs-lookup"><span data-stu-id="d6c4d-112">Phone support</span></span>
+## <a name="phone-support"></a><span data-ttu-id="e8965-112">電話サポート</span><span class="sxs-lookup"><span data-stu-id="e8965-112">Phone support</span></span>
 
-<span data-ttu-id="d6c4d-p102">Microsoft 管理デスクトップ デバイスとエンド ・ ユーザーでは、それらを呼び出すことができますフリー ダイヤルの電話番号へのアクセスもあります。これは、ヘルプが使用できないときに使用します。たとえば、デバイス、またはデバイスにサインインできない場合は解除されます。電話サポートの電話番号を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-p102">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:</span></span>
+<span data-ttu-id="e8965-113">Microsoft マネージドデスクトップデバイスを使用しているエンドユーザーも、通話可能な無料電話番号へのアクセス権を持っています。</span><span class="sxs-lookup"><span data-stu-id="e8965-113">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="e8965-114">これは、ヘルプが利用できない場合に使用することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="e8965-114">This is meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="e8965-115">たとえば、デバイスにサインインできない場合や、デバイスが壊れている場合などです。</span><span class="sxs-lookup"><span data-stu-id="e8965-115">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="e8965-116">電話サポートの電話番号は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="e8965-116">Here are the phone numbers for phone support:</span></span>
  
-- <span data-ttu-id="d6c4d-117">米国: +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="d6c4d-117">United States: +1 855 425 0216</span></span>
-- <span data-ttu-id="d6c4d-118">イギリス: +44 2076 601135</span><span class="sxs-lookup"><span data-stu-id="d6c4d-118">United Kingdom: +44 2076 601135</span></span>
-- <span data-ttu-id="d6c4d-119">オーストラリア: +61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="d6c4d-119">Australia: +61 180 037 0619</span></span>
+
+- <span data-ttu-id="e8965-117">米国 & カナダ (ケベックを除く): + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="e8965-117">United States & Canada (excluding Quebec): +1 855 425 0216</span></span>
+- <span data-ttu-id="e8965-118">英国: + 44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="e8965-118">United Kingdom: +44 800 026 0698</span></span>
+- <span data-ttu-id="e8965-119">オーストラリア: + 61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="e8965-119">Australia: +61 180 037 0619</span></span>
 
 
-## <a name="additional-resources"></a><span data-ttu-id="d6c4d-120">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="d6c4d-120">Additional resources</span></span>
-- <span data-ttu-id="d6c4d-121">[Microsoft 管理されたデスクトップの管理をサポート](admin-support.md)します。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-121">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
-- <span data-ttu-id="d6c4d-122">[マイクロソフトのデスクトップ管理をサポート](../service-description/support.md)します。</span><span class="sxs-lookup"><span data-stu-id="d6c4d-122">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="e8965-120">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="e8965-120">Additional resources</span></span>
+- <span data-ttu-id="e8965-121">[Microsoft マネージドデスクトップの管理者サポート](admin-support.md)。</span><span class="sxs-lookup"><span data-stu-id="e8965-121">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
+- <span data-ttu-id="e8965-122">[Microsoft マネージドデスクトップのサポート](../service-description/support.md)。</span><span class="sxs-lookup"><span data-stu-id="e8965-122">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>

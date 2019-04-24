@@ -10,17 +10,17 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Microsoft 365 Enterprise のドキュメントとリソース
-ms.openlocfilehash: 0e758884c063aaa82b5c7fc55051925376f8688b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 38d349fb17303ac9e9979ae9a58682e01578b70a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283479"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 Enterprise のドキュメントとリソース</h1>
-        <P>計画、展開、および組織内で Microsoft Office 365、Windows の 10 とエンタープライズ モビリティとセキュリティを組み合わせて使用する方法について説明します。これらのサービスでは、チームワークを有効にし、創造性のロックを解除する統合された、セキュリティで保護されたインフラストラクチャを提供します。</p>
+        <P>組織内で Microsoft Office 365、Windows 10、Enterprise Mobility + Security を一緒に計画、展開、および使用する方法について説明します。 これらのサービスは、チームワークとロック解除の創造性を実現する統合された安全なインフラストラクチャを提供します。</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -41,8 +41,8 @@ ms.locfileid: "26869004"
                                             <div class="cardText">
                                                 <h3>参照</h3>
                                                 <P><a href="microsoft-365-overview.md" target="_blank">概要</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">アーキテクチャ モデル</a></p>
-                                                <P><a href="http://Microsoft365.com/it" target="_blank">365 をマイクロソフトの IT</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">アーキテクチャモデル</a></p>
+                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@ ms.locfileid: "26869004"
                                                 <h3>展開</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">展開ガイド</a></p>
-                                                <P><a href="https://aka.ms/howtoshift" target="_blank">現代のデスクトップ展開</a></p>
+                                                <P><a href="https://aka.ms/howtoshift" target="_blank">モダンデスクトップ展開</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -77,10 +77,10 @@ ms.locfileid: "26869004"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>セキュリティを管理する&amp;コンプライアンス</h3>
+                                                <h3>セキュリティ&amp;コンプライアンスを管理する</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">コンプライアンス ソリューション</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 のセキュリティ&amp;コンプライアンス</a></p>
-                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">身元&amp;デバイスへのアクセス</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 セキュリティ&amp;コンプライアンス</a></p>
+                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">id &amp;デバイスのアクセス</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
                                         </div>
@@ -97,10 +97,11 @@ ms.locfileid: "26869004"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>ユーザーをトレーニングする</h3>
+                                                <h3>管理者の & ユーザーをトレーニングする</h3>
+                                                <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune&amp;会社のポータル ・ アプリケーション</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp;ポータルサイトアプリ</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -135,11 +136,11 @@ ms.locfileid: "26869004"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>エンタープライズ モビリティとセキュリティを管理します。</h3>
+                                                <h3>Enterprise Mobility + Security を管理する</h3>
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
-                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure の高度な脅威保護</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure Advanced Threat Protection</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -159,8 +160,8 @@ ms.locfileid: "26869004"
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>365 のマイクロソフトを開発します。</h3>
-                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 のデベロッパー センター</a></p>
+                                                        <h3>Microsoft 365 の開発</h3>
+                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 デベロッパーセンター</a></p>
                                                         <P><a href="https://developer.microsoft.com/windows/enterprise" target="_blank">Windows デベロッパー センター</a></p>
                                                         <P><a href="https://developer.microsoft.com/graph" target="_blank">Microsoft Graph</a></p>
                                                     </div>
@@ -196,7 +197,7 @@ ms.locfileid: "26869004"
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>サポートが必要ですか。</h3>
+                                                        <h3>サポートが必要な場合</h3>
                                                         <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
                                                         <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
                                                         <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>

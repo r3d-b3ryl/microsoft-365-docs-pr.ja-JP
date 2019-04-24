@@ -1,55 +1,52 @@
 ---
-title: Microsoft マネージド デスクトップのサポート
+title: Microsoft マネージドデスクトップのサポート
 description: ''
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
-ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278522"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a><span data-ttu-id="0e133-103">Microsoft マネージド デスクトップのサポート</span><span class="sxs-lookup"><span data-stu-id="0e133-103">Support for Microsoft Managed Desktop</span></span>
+# <a name="support-for-microsoft-managed-desktop"></a><span data-ttu-id="a63e4-103">Microsoft マネージドデスクトップのサポート</span><span class="sxs-lookup"><span data-stu-id="a63e4-103">Support for Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="0e133-p101">Microsoft 管理デスクトップ デバイスによって管理されるを修復または交換マイクロソフトによって保証契約に基づく。事前と事後のインシデント管理は、マイクロソフトが提供されます。マイクロソフトでは、マイクロソフトの管理されたデスクトップ管理ポータルでのインシデントを追跡します。これらは、[重大度の定義](../working-with-managed-desktop/admin-support.md#sev)に従って分類されます。</span><span class="sxs-lookup"><span data-stu-id="0e133-p101">Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).</span></span>
+<span data-ttu-id="a63e4-104">microsoft マネージドデスクトップデバイスは、によって管理され、microsoft によって保証期間ごとに修復または置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="a63e4-104">Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement.</span></span> <span data-ttu-id="a63e4-105">Microsoft は、予防的でリアクティブなインシデント管理を行います。</span><span class="sxs-lookup"><span data-stu-id="a63e4-105">Microsoft will provide proactive and reactive incident management.</span></span> <span data-ttu-id="a63e4-106">microsoft Managed Desktop 管理ポータルでインシデントを追跡します。</span><span class="sxs-lookup"><span data-stu-id="a63e4-106">Microsoft tracks incidents in the Microsoft Managed Desktop admin portal.</span></span> <span data-ttu-id="a63e4-107">[重要度の定義](../working-with-managed-desktop/admin-support.md#sev)に従って分類されます。</span><span class="sxs-lookup"><span data-stu-id="a63e4-107">They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).</span></span>
 
-<span data-ttu-id="0e133-108">お客様は、マイクロソフトの管理されたデスクトップの操作のお問い合わせいただけます。</span><span class="sxs-lookup"><span data-stu-id="0e133-108">Customers can contact Microsoft Managed Desktop operations for:</span></span>
-- <span data-ttu-id="0e133-109">サービス テナントまたは構成として現代の職場での情報の要求</span><span class="sxs-lookup"><span data-stu-id="0e133-109">Information requests on the Modern Workplace as a Service tenant or configuration</span></span>
-- <span data-ttu-id="0e133-110">デバイスをサービスとして最新のワークプ レースの構成を変更要求</span><span class="sxs-lookup"><span data-stu-id="0e133-110">Change requests to the configuration of Modern Workplace as a Service devices</span></span>
-- <span data-ttu-id="0e133-111">インシデントまたは障害の報告</span><span class="sxs-lookup"><span data-stu-id="0e133-111">Reporting an incident or outage</span></span>
+<span data-ttu-id="a63e4-108">お客様は、Microsoft の管理対象デスクトップ操作にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="a63e4-108">Customers can contact Microsoft Managed Desktop operations for:</span></span>
+- <span data-ttu-id="a63e4-109">Microsoft マネージドデスクトップのテナントまたは構成での情報要求</span><span class="sxs-lookup"><span data-stu-id="a63e4-109">Information requests on the Microsoft Managed Desktop tenant or configuration</span></span>
+- <span data-ttu-id="a63e4-110">Microsoft マネージドデスクトップデバイスの構成に対する要求の変更</span><span class="sxs-lookup"><span data-stu-id="a63e4-110">Change requests to the configuration of Microsoft Managed Desktop devices</span></span>
+- <span data-ttu-id="a63e4-111">インシデントまたは停止の報告</span><span class="sxs-lookup"><span data-stu-id="a63e4-111">Reporting an incident or outage</span></span>
 
-## <a name="whats-included"></a><span data-ttu-id="0e133-112">何が含まれますか。</span><span class="sxs-lookup"><span data-stu-id="0e133-112">What's included?</span></span>
+## <a name="whats-included"></a><span data-ttu-id="a63e4-112">含まれているもの</span><span class="sxs-lookup"><span data-stu-id="a63e4-112">What's included?</span></span>
 
-<span data-ttu-id="0e133-113">管理されたデスクトップのマイクロソフトのサポート:</span><span class="sxs-lookup"><span data-stu-id="0e133-113">Microsoft Managed Desktop support:</span></span>
+<span data-ttu-id="a63e4-113">Microsoft マネージドデスクトップのサポート:</span><span class="sxs-lookup"><span data-stu-id="a63e4-113">Microsoft Managed Desktop support:</span></span>
 
-- <span data-ttu-id="0e133-114">Microsoft 管理デスクトップ デバイスに専用のサポート ・ エンジニアのチームが用意されています</span><span class="sxs-lookup"><span data-stu-id="0e133-114">Provides a team of support engineers dedicated to Microsoft Managed Desktop devices</span></span>
-- <span data-ttu-id="0e133-115">Microsoft 管理デスクトップ デバイスとそれらのデバイスに割り当てられているエンド ・ ユーザーをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="0e133-115">Supports Microsoft Managed Desktop devices and end users assigned to those devices</span></span>
-- <span data-ttu-id="0e133-116">助成金サポート エンジニアがマイクロソフトの管理されたデスクトップのデバイスを管理する Microsoft 管理デスクトップ デバイスへの管理アクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="0e133-116">Grants limited administrative access to Microsoft Managed Desktop devices for support engineers managing Microsoft Managed Desktop devices</span></span> 
+- <span data-ttu-id="a63e4-114">Microsoft マネージドデスクトップデバイス専用のサポートエンジニアのチームを提供します。</span><span class="sxs-lookup"><span data-stu-id="a63e4-114">Provides a team of support engineers dedicated to Microsoft Managed Desktop devices</span></span>
+- <span data-ttu-id="a63e4-115">Microsoft マネージドデスクトップデバイスおよびそれらのデバイスに割り当てられているエンドユーザーをサポートします。</span><span class="sxs-lookup"><span data-stu-id="a63e4-115">Supports Microsoft Managed Desktop devices and end users assigned to those devices</span></span>
+- <span data-ttu-id="a63e4-116">microsoft マネージドデスクトップデバイスを管理するための microsoft マネージドデスクトップデバイスへの限定的な管理アクセス権を付与します。</span><span class="sxs-lookup"><span data-stu-id="a63e4-116">Grants limited administrative access to Microsoft Managed Desktop devices for support engineers managing Microsoft Managed Desktop devices</span></span> 
 
-<span data-ttu-id="0e133-117">サポートされている製品:</span><span class="sxs-lookup"><span data-stu-id="0e133-117">Supported products:</span></span>
+<span data-ttu-id="a63e4-117">サポートされる製品:</span><span class="sxs-lookup"><span data-stu-id="a63e4-117">Supported products:</span></span>
 
-- <span data-ttu-id="0e133-118">脅威保護 (WDATP) を高度な Windows Defender、Windows 10</span><span class="sxs-lookup"><span data-stu-id="0e133-118">Windows 10 with Windows Defender Advanced Threat Protection (WDATP)</span></span> 
-- <span data-ttu-id="0e133-119">365 E5 の Microsoft スイートのサブセット: Outlook、Word、PowerPoint、Excel、Skype のビジネスのクライアント、Microsoft のチーム</span><span class="sxs-lookup"><span data-stu-id="0e133-119">Subset of the Microsoft 365 E5 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams</span></span> 
-- <span data-ttu-id="0e133-120">ビジネス向け Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="0e133-120">Microsoft Store for Business</span></span> 
-- <span data-ttu-id="0e133-121">ビジネス クライアント用の OneDrive</span><span class="sxs-lookup"><span data-stu-id="0e133-121">OneDrive for Business client</span></span> 
+- <span data-ttu-id="a63e4-118">windows 10 と windows Defender Advanced Threat Protection (wdatp)</span><span class="sxs-lookup"><span data-stu-id="a63e4-118">Windows 10 with Windows Defender Advanced Threat Protection (WDATP)</span></span> 
+- <span data-ttu-id="a63e4-119">microsoft 365 E3 suite のサブセット: Outlook、Word、PowerPoint、Excel、Skype for business クライアント、microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="a63e4-119">Subset of the Microsoft 365 E3 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams</span></span> 
+- <span data-ttu-id="a63e4-120">ビジネス向け Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="a63e4-120">Microsoft Store for Business</span></span> 
+- <span data-ttu-id="a63e4-121">OneDrive for business クライアント</span><span class="sxs-lookup"><span data-stu-id="a63e4-121">OneDrive for Business client</span></span> 
 
-<span data-ttu-id="0e133-122">詳細情報をサポートしてください。</span><span class="sxs-lookup"><span data-stu-id="0e133-122">Support details:</span></span>
+<span data-ttu-id="a63e4-122">サポートの詳細情報:</span><span class="sxs-lookup"><span data-stu-id="a63e4-122">Support details:</span></span>
 
-- <span data-ttu-id="0e133-123">電流: 北アメリカ、英国、およびオーストラリアのみ (24 時間年中無休)</span><span class="sxs-lookup"><span data-stu-id="0e133-123">Current: North America, United Kingdom, and Australia only (24x7x365)</span></span> 
-- <span data-ttu-id="0e133-124">顧客との電話とチャットの会話でのみサポートされている言語が英語</span><span class="sxs-lookup"><span data-stu-id="0e133-124">English is the only supported language for phone and chat conversations with customers</span></span> 
-- <span data-ttu-id="0e133-125">協力を置き換えない場合、企業のヘルプデスクです。基幹業務 (LOB) アプリケーションやネットワーク リソースなどにも、ヘルプデスクでは</span><span class="sxs-lookup"><span data-stu-id="0e133-125">We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk</span></span> 
-- <span data-ttu-id="0e133-126">テスト リングおよび以外の Microsoft 管理デスクトップ デバイス内に存在する Microsoft 管理されているデバイスでは扱いません</span><span class="sxs-lookup"><span data-stu-id="0e133-126">Microsoft Managed Devices residing in the test ring and non-Microsoft Managed Desktop devices are out of scope</span></span> 
-
-## <a name="hardware-replacement"></a><span data-ttu-id="0e133-127">ハードウェアの交換</span><span class="sxs-lookup"><span data-stu-id="0e133-127">Hardware replacement</span></span>
-
-<span data-ttu-id="0e133-p102">ハードウェア デバイスを選択する保証の条項の下にある項目に置き換えられます。添付されている保証には、サービスとしてのデバイスの用語の最後にあるデバイスが更新されます。保証の範囲外の理由は、交換する必要があるデバイスでは、交換手数料、紛失または盗難に遭ったデバイスなどを評価します。保証の対象は何の完全なリストでは、[サーフェスの無償保守オプション](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0e133-p102">Hardware devices are replaced for items under the terms of the warranty you select. Devices are refreshed at the end of your Device-as-a-Service term, as is their attached warranty. Devices that need to be replaced for reasons outside of the warranty coverage will be assessed a replacement fee, e.g. lost or stolen devices. For a full list of what is covered under warranty, see [Surface warranty options](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty).</span></span>
+- <span data-ttu-id="a63e4-123">現行: 北アメリカ、カナダ (ケベックを除く)、英国、およびオーストラリアのみ (24 時間)</span><span class="sxs-lookup"><span data-stu-id="a63e4-123">Current: North America, Canada (excluding Quebec), United Kingdom, and Australia only (24x7x365)</span></span> 
+- <span data-ttu-id="a63e4-124">英語は、お客様との電話およびチャットの会話でサポートされている唯一の言語です。</span><span class="sxs-lookup"><span data-stu-id="a63e4-124">English is the only supported language for phone and chat conversations with customers</span></span> 
+- <span data-ttu-id="a63e4-125">弊社は、会社のヘルプデスクをリプレースするのではなく、提携しています。基幹業務 (LOB) アプリ、ネットワークリソースなどは、引き続きヘルプデスクで処理されます。</span><span class="sxs-lookup"><span data-stu-id="a63e4-125">We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk</span></span> 
+- <span data-ttu-id="a63e4-126">テストグループと microsoft が管理されていないデスクトップデバイスにある microsoft 管理デバイスが範囲外です</span><span class="sxs-lookup"><span data-stu-id="a63e4-126">Microsoft Managed Devices residing in the test group and non-Microsoft Managed Desktop devices are out of scope</span></span> 
 
 
-## <a name="related-topics"></a><span data-ttu-id="0e133-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="0e133-132">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="a63e4-127">関連トピック</span><span class="sxs-lookup"><span data-stu-id="a63e4-127">Related topics</span></span>
 
-- [<span data-ttu-id="0e133-133">IT 管理者がサポートを取得する方法を学習します。</span><span class="sxs-lookup"><span data-stu-id="0e133-133">Learn how IT administrators can get support</span></span>](../working-with-managed-desktop/admin-support.md)
-- [<span data-ttu-id="0e133-134">エンド ・ ユーザーがサポートを取得する方法を学習します。</span><span class="sxs-lookup"><span data-stu-id="0e133-134">Learn how end users can get support</span></span>](../working-with-managed-desktop/end-user-support.md)
+- [<span data-ttu-id="a63e4-128">IT 管理者がサポートを受ける方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="a63e4-128">Learn how IT administrators can get support</span></span>](../working-with-managed-desktop/admin-support.md)
+- [<span data-ttu-id="a63e4-129">エンドユーザーがサポートを受ける方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="a63e4-129">Learn how end users can get support</span></span>](../working-with-managed-desktop/end-user-support.md)

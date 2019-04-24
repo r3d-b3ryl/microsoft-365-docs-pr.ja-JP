@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -15,41 +16,29 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: 'Windows の 10 Pro 作成者更新プログラムに Windows のデバイスをアップグレードする方法について説明します。 '
-ms.openlocfilehash: 5a9d232ffa50b642bdeab2dea391895e759e118b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'windows デバイスを windows 10 Pro クリエーターの更新プログラムにアップグレードする方法について説明します。 '
+ms.openlocfilehash: ec1ef0462cc1ba1cd1ae01ee28795096097e01a9
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279867"
 ---
-# <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a><span data-ttu-id="d0723-103">Windows デバイスを Windows Pro Creators Update にアップグレードする</span><span class="sxs-lookup"><span data-stu-id="d0723-103">Upgrade Windows devices to Windows Pro Creators Update</span></span>
+# <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a><span data-ttu-id="2d288-103">Windows デバイスを Windows Pro Creators Update にアップグレードする</span><span class="sxs-lookup"><span data-stu-id="2d288-103">Upgrade Windows devices to Windows Pro Creators Update</span></span>
 
-## <a name="upgrade-to-windows-10-pro-creators-update"></a><span data-ttu-id="d0723-104">Pro 作成者の Windows 10 にアップグレード更新します。</span><span class="sxs-lookup"><span data-stu-id="d0723-104">Upgrade to Windows 10 Pro Creators update</span></span>
-
-1. <span data-ttu-id="d0723-105">[Microsoft 管理センター](https://portal.office.com/adminportal/home)にサインインし、 **Windows 10 へのアップグレード**のカードを探します。</span><span class="sxs-lookup"><span data-stu-id="d0723-105">Sign in to the [Microsoft admin center](https://portal.office.com/adminportal/home) and locate the **Windows 10 Upgrade** card.</span></span> 
-    
-    ![管理センターでカードを Windows 10 にアップグレードします。](media/066f47bf-7b88-4fea-8fd0-82798ea66716.png)
+## <a name="upgrade-to-windows-10-pro-creators-update"></a><span data-ttu-id="2d288-104">Windows 10 Pro クリエーターの更新プログラムへのアップグレード</span><span class="sxs-lookup"><span data-stu-id="2d288-104">Upgrade to Windows 10 Pro Creators update</span></span>
   
-2. <span data-ttu-id="d0723-p101">Windows 10 Pro の作成者の更新にアップグレードするには、いくつかのオプションがあります。できます：</span><span class="sxs-lookup"><span data-stu-id="d0723-p101">To upgrade to Windows 10 Pro Creators Update, you have several options. You can:</span></span>
+1. <span data-ttu-id="2d288-105">Windows 10 Pro クリエーターの更新プログラムにアップグレードするには、いくつかのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="2d288-105">To upgrade to Windows 10 Pro Creators Update, you have several options.</span></span> <span data-ttu-id="2d288-106">次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="2d288-106">You can:</span></span>
     
-- <span data-ttu-id="d0723-109">マイクロソフト ソフトウェアのダウンロード サイトからのアップグレードのインストール: デバイスにログオンしていることが、更新するものと同じデバイス上にある場合にこのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="d0723-109">Install the upgrade from the Microsoft Software Download site - Select this option if the device that you're logged in is on the same device as the one you want to update.</span></span>
+    - <span data-ttu-id="2d288-107">[Microsoft ソフトウェアダウンロードサイト](https://go.microsoft.com/fwlink/?LinkID=836951 )からアップグレードをインストールする-ログインしているデバイスが更新するデバイスと同じデバイス上にある場合は、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="2d288-107">Install the upgrade from the [Microsoft Software Download site](https://go.microsoft.com/fwlink/?LinkID=836951 ) - Select this option if the device that you're logged in is on the same device as the one you want to update.</span></span>
     
-  <span data-ttu-id="d0723-p102">a. では、**アップグレードのインストール**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d0723-p102">a. Select **Install upgrade**.</span></span>
+      <span data-ttu-id="2d288-108">a.</span><span class="sxs-lookup"><span data-stu-id="2d288-108">a.</span></span> <span data-ttu-id="2d288-109">ソフトウェアダウンロードサイトから、[**今すぐ更新**] をクリックして、デバイスを Windows 10 Pro クリエーター用更新プログラムにアップグレードを開始します。</span><span class="sxs-lookup"><span data-stu-id="2d288-109">From the software download site, click **Update now** to start upgrading the device to Windows 10 Pro Creators Update.</span></span> 
     
-  <span data-ttu-id="d0723-p103">b. ソフトウェアからのダウンロード サイト、**今すぐ更新**を Windows の 10 Pro 作成者更新プログラムをデバイスのアップグレードを開始する] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d0723-p103">b. From the software download site, click **Update now** to start upgrading the device to Windows 10 Pro Creators Update.</span></span> 
+     - <span data-ttu-id="2d288-110">[メディア作成ツール](https://go.microsoft.com/fwlink/?LinkID=836960)を使用してインストールメディアを作成する-このオプションを選択すると、windows 10 Pro クリエーターの更新プログラムのインストールメディア (USB フラッシュドライブまたは ISO ファイル) を作成して、使用している PC とは異なる PC に windows 10 をインストールします。</span><span class="sxs-lookup"><span data-stu-id="2d288-110">Create an installation media using the [Media Creation Tool](https://go.microsoft.com/fwlink/?LinkID=836960) - Select this option to create a Windows 10 Pro Creators Update installation media (USB flash drive or ISO file) to install Windows 10 on a PC that's different from the one you're using.</span></span>
     
-- <span data-ttu-id="d0723-114">ダウンロード リンクを共有する-単独で 10 Pro の Windows にアップグレードすることができますので、組織内のユーザーに電子メールを送信する場合にこのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="d0723-114">Share the download link - Select this option if you want to send an email to people in your organization so they can upgrade to Windows 10 Pro by themselves.</span></span>
- 
-   <span data-ttu-id="d0723-p104">a. 選択の**共有ダウンロード**リンクを開くには、Windows ソフトウェアへのリンクを含む電子メールは、サイトをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="d0723-p104">a. Select **Share the download** link to open an email that contains a link to the Windows software download site.</span></span> 
+        <span data-ttu-id="2d288-111">a.</span><span class="sxs-lookup"><span data-stu-id="2d288-111">a.</span></span> <span data-ttu-id="2d288-112">ツールの使用方法とインストールメディアの作成方法に関する指示を読んでください。</span><span class="sxs-lookup"><span data-stu-id="2d288-112">Read the instructions on how to use the tool and create your installation media.</span></span> 
     
- - <span data-ttu-id="d0723-117">メディア作成ツールを使用して、インストール メディアを作成する - Windows の 10 Pro 作成者更新プログラムのインストール メディア (USB フラッシュ ドライブまたは ISO ファイル) を使用しているものとは異なる PC で Windows の 10 をインストールするのにを作成するには、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="d0723-117">Create an installation media using the Media Creation Tool - Select this option to create a Windows 10 Pro Creators Update installation media (USB flash drive or ISO file) to install Windows 10 on a PC that's different from the one you're using.</span></span>
-    
-    <span data-ttu-id="d0723-p105">a. では、**インストール メディアの作成**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d0723-p105">a. Select **Create installation media**.</span></span>
-    
-    <span data-ttu-id="d0723-p106">b. は、ツールを使用し、インストール メディアを作成する方法の指示を読みます。</span><span class="sxs-lookup"><span data-stu-id="d0723-p106">b. Read the instructions on how to use the tool and create your installation media.</span></span> 
-    
-<span data-ttu-id="d0723-122">10 の Windows のデバイスの設定を完了するのには[Microsoft 365 ビジネス ユーザー向けの Windows デバイスの設定](set-up-windows-devices.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d0723-122">See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) to complete setting up Windows 10 devices.</span></span> 
+<span data-ttu-id="2d288-113">windows 10 デバイスのセットアップを完了するには、「 [Microsoft 365 Business ユーザーの windows デバイス](set-up-windows-devices.md)をセットアップする」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2d288-113">See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) to complete setting up Windows 10 devices.</span></span> 
   
-<span data-ttu-id="d0723-123">Android と iOS のデバイスを完全に設定する[Microsoft 365 ビジネス ユーザー向けのモバイル デバイスの設定](set-up-mobile-devices.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d0723-123">See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) to complete setting up Android and iOS devices.</span></span> 
+<span data-ttu-id="2d288-114">Android および iOS デバイスの設定を完了するには、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2d288-114">See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) to complete setting up Android and iOS devices.</span></span> 
   

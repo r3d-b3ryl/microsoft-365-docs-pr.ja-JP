@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,31 +16,31 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: 'Microsoft 365 のビジネスを使用して組織を設定するための前提条件を知っています。 '
-ms.openlocfilehash: caca6564d6706acd48538a2d33143ed27ed3bd25
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Microsoft 365 Business を使用して組織をセットアップするための前提条件について理解します。 '
+ms.openlocfilehash: 4789e72c3e6d1c7877b236279947f1a1b64d046f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278138"
 ---
-# <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a><span data-ttu-id="d1112-103">Microsoft 365 Business でデバイス上のデータを保護するための前提条件</span><span class="sxs-lookup"><span data-stu-id="d1112-103">Pre-requisites for protecting data on devices with Microsoft 365 Business</span></span>
+# <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a><span data-ttu-id="e6df7-103">Microsoft 365 Business でデバイス上のデータを保護するための前提条件</span><span class="sxs-lookup"><span data-stu-id="e6df7-103">Pre-requisites for protecting data on devices with Microsoft 365 Business</span></span>
 
-<span data-ttu-id="d1112-104">Microsoft 365 Business で組織をセットアップするには、まず前提条件を満たすことができるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="d1112-104">The first step in setting up your organization with Microsoft 365 Business is to make sure you are able to meet the pre-requisites.</span></span>
+<span data-ttu-id="e6df7-104">Microsoft 365 Business で組織をセットアップするには、まず前提条件を満たすことができるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6df7-104">The first step in setting up your organization with Microsoft 365 Business is to make sure you are able to meet the pre-requisites.</span></span>
   
-## <a name="pre-requisites"></a><span data-ttu-id="d1112-105">前提条件</span><span class="sxs-lookup"><span data-stu-id="d1112-105">Pre-requisites</span></span>
+## <a name="pre-requisites"></a><span data-ttu-id="e6df7-105">前提条件</span><span class="sxs-lookup"><span data-stu-id="e6df7-105">Pre-requisites</span></span>
 
-- <span data-ttu-id="d1112-106">Windows デバイスでは、Windows 7 Professional、Windows 8 Pro または Windows 8.1 Pro が実行されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1112-106">Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.</span></span>
+- <span data-ttu-id="e6df7-106">windows デバイスでは、windows 7 Professional、windows 8 pro、または windows 8.1 pro を実行している必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6df7-106">Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.</span></span>
     
-    [<span data-ttu-id="d1112-107">Windows デバイスを Windows Pro Creators Update にアップグレードする</span><span class="sxs-lookup"><span data-stu-id="d1112-107">Upgrade Windows devices to Windows Pro Creators Update</span></span>](upgrade-to-windows-pro-creators-update.md)
+    [<span data-ttu-id="e6df7-107">Windows デバイスを Windows Pro Creators Update にアップグレードする</span><span class="sxs-lookup"><span data-stu-id="e6df7-107">Upgrade Windows devices to Windows Pro Creators Update</span></span>](upgrade-to-windows-pro-creators-update.md)
     
-- <span data-ttu-id="d1112-p101">モバイル管理ソリューション (Mobile Iron、AirWatch など) からデバイスを削除します。組織のすべてのユーザーを Microsoft 365 Business モバイル管理に登録します。</span><span class="sxs-lookup"><span data-stu-id="d1112-p101">Remove devices from mobile management solutions (Mobile Iron, AirWatch, etc.). You will enroll all the people in your organization to Microsoft 365 Business mobile management.</span></span>
+- <span data-ttu-id="e6df7-p101">モバイル管理ソリューション (Mobile Iron、AirWatch など) からデバイスを削除します。組織のすべてのユーザーを Microsoft 365 Business モバイル管理に登録します。</span><span class="sxs-lookup"><span data-stu-id="e6df7-p101">Remove devices from mobile management solutions (Mobile Iron, AirWatch, etc.). You will enroll all the people in your organization to Microsoft 365 Business mobile management.</span></span>
     
-- <span data-ttu-id="d1112-110">Apple iOS 8.0 以降。</span><span class="sxs-lookup"><span data-stu-id="d1112-110">Apple iOS 8.0 and later.</span></span>
+- <span data-ttu-id="e6df7-110">Apple iOS 8.0 以降。</span><span class="sxs-lookup"><span data-stu-id="e6df7-110">Apple iOS 8.0 and later.</span></span>
     
-    <span data-ttu-id="d1112-p102">Google Android 4.0 以降 (Samsung KNOX Standard 4.0 以降を含む)。詳細については、「[サポートされるデバイスとブラウザー](https://go.microsoft.com/fwlink/p/?linkid=852307)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="d1112-p102">Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more details, see [Intune supported devices](https://go.microsoft.com/fwlink/p/?linkid=852307).</span></span>
+    <span data-ttu-id="e6df7-p102">Google Android 4.0 以降 (Samsung KNOX Standard 4.0 以降を含む)。詳細については、「[サポートされるデバイスとブラウザー](https://go.microsoft.com/fwlink/p/?linkid=852307)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="e6df7-p102">Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more details, see [Intune supported devices](https://go.microsoft.com/fwlink/p/?linkid=852307).</span></span>
     
-- <span data-ttu-id="d1112-113">ユーザーのコンピューターに既存の Office アプリケーションがある場合は、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」を参照し、必要な手順について理解してから、Microsoft 365 Business を設定して、Office 2016 をユーザーのコンピューターにインストールしてください。</span><span class="sxs-lookup"><span data-stu-id="d1112-113">If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might have to take before you can set up Microsoft 365 Business to install Office 2016 to user computers.</span></span> 
+- <span data-ttu-id="e6df7-113">ユーザーのコンピューターに既存の Office アプリケーションがある場合は、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」を参照し、必要な手順について理解してから、Microsoft 365 Business を設定して、Office 2016 をユーザーのコンピューターにインストールしてください。</span><span class="sxs-lookup"><span data-stu-id="e6df7-113">If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might have to take before you can set up Microsoft 365 Business to install Office 2016 to user computers.</span></span> 
     
 
 
