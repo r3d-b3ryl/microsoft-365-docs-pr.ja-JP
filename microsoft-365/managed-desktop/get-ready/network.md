@@ -1,57 +1,63 @@
 ---
-title: Microsoft 管理されたデスクトップのネットワーク構成
+title: Microsoft マネージドデスクトップのネットワーク構成
 description: ''
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289102"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 管理されたデスクトップのネットワーク構成
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのネットワーク構成
 
 <!--Proxy config -->
 
 
 ## <a name="proxy-configuration"></a>プロキシの構成
 
-管理されたデスクトップの Microsoft は、クラウド管理サービスです。管理されたデスクトップの Microsoft のサービスにアクセスできる必要があるエンドポイントのセットがあります。お客様は、プロキシまたはファイアウォールが設定されたとき、にのみを許可するセキュリティ上の理由から特定のドメインからのネットワーク トラフィック。このセクションでは、許可する必要があるエンドポイントを一覧表示します。 
+Microsoft マネージドデスクトップは、クラウドで管理されるサービスです。 Microsoft マネージドデスクトップサービスがアクセスできる必要があるエンドポイントのセットがあります。 このセクションでは、Microsoft マネージドデスクトップサービスのさまざまな側面に対して許可する必要があるエンドポイントの一覧を示します。 
 
-### <a name="proxy-requirement"></a>プロキシの要件
+お客様は、すべての信頼された Microsoft 365 ネットワーク要求をファイアウォール/プロキシ経由で直接送信することによって、ネットワークを最適化できます。認証をバイパスし、追加のすべてのパケットレベルの検査または処理を行います。 これにより、待機時間と境界の容量要件が削減されます。 
 
-プロキシまたはファイアウォールは、TLS 1.2 をサポートする必要があります。それ以外の場合、プロトコルの検出を無効にする必要があります。
+また、Microsoft マネージドデスクトップのクラウドベースのサービスのパフォーマンスを最適化するために、これらのエンドポイントには、顧客クライアントのブラウザーおよびエッジネットワーク内のデバイスによる特別な処理が必要です。 これらのデバイスには、ファイアウォール、SSL ブレークと調査、パケット検査デバイス、データ損失防止システムなどがあります。
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>エンドポイントに許可される - 特定の Microsoft 管理されたデスクトップの
+### <a name="proxy-requirement"></a>プロキシ要件
 
-これらの Url する必要があります Microsoft 管理デスクトップ デバイスが Microsoft サービスと通信できるように許可されている一覧に表示されます。
+プロキシまたはファイアウォールは、TLS 1.2 をサポートしている必要があります。 それ以外の場合、ユーザーはプロトコル検出を無効にする必要があります。
 
-マイクロソフトのサービス  | 必要な Url の一覧を許可します。 
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに対して許可されているエンドポイント
+
+Microsoft マネージドデスクトップでは、Azure Portal を使用して web コンソールをホストします。 次の表に示す url は、microsoft の管理対象デスクトップデバイスが microsoft サービスと通信できるように、プロキシとファイアウォールの許可リストに含まれている必要があります。  
+
+以下の Microsoft Managed Desktop の URL は、お客様の API でサービスが実行されているすべてのものに使用されることに注意してください。 お客様は、この URL が企業ネットワークで常にアクセス可能であることを確認する必要があります。
+
+Microsoft サービス  | 許可リストに必要な url 
 --- | --- | ---
-ヘルプの取得 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-サービス-customerapi.azurewebsites.net
-[クイック アシスト] | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
+Microsoft マネージドデスクトップ | prod-mwaas-services-customerapi.azurewebsites.net
+ヘルプを表示する | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+クイックアシスト | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
+office の Microsoft サポート/回復アシスタント365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>エンドポイントに許可される - その他のマイクロソフト製品
+### <a name="endpoints-allowed---other-microsoft-products"></a>エンドポイントが許可されているその他の Microsoft 製品
 
-許可されている一覧に表示される Microsoft 管理デスクトップ デバイスは、これらの Microsoft のサービスと通信できるようにする必要があるいくつかの Microsoft 製品からは、Url があります。リンクを使用してに各製品の完全な一覧を参照してください。 
+microsoft マネージドデスクトップデバイスが microsoft サービスと通信できるように、許可リストに含まれている必要があるいくつかの Microsoft 製品からの url があります。 各製品の完全な一覧を表示するには、リンクを使用します。 
 
-マイクロソフトのサービス | ドキュメントのソースに必要な Url を許可する] ボックスの一覧
+Microsoft サービス | ドキュメントソース-許可リストに必要な url
 --- | ---
-ビジネス (WUfB) の Windows の更新プログラム | [ファイアウォールとプロキシのビジネス要件に応じて、Windows の更新プログラム](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
-配信の最適化 | [Windows の更新プログラムのプロキシの要件](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
-ビジネス向け Microsoft Store | [Microsoft ストア] ボックスの一覧を許可します。](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)を含む\*です apibasic.diagnostics.office.com。
-Azure Active Directory | [ポートおよびプロトコルにハイブリッドの id が必要です](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports)し、 [Active Directory と Active Directory ドメイン サービス ポートの要件](https://aka.ms/AA26ygm) 
+windows 10 Enterprise (windows Update for Business) | [Windows 10 バージョン1803の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Windows 10 バージョン1809の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
+配信の最適化 | [Windows 10 更新プログラムの配信最適化を構成する](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Office 365 | [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、 [active directory および active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)
-OneDrive for Business <br> | [Url および OneDrive 用のポートが必要です](https://docs.microsoft.com/onedrive/required-urls-and-ports)
-Windows Defender の脅威保護 (ATP) の詳細 | [Windows Defender の ATP の端点](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
-SharePoint Online  | [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#bkmk_teams)
-Power BI | [OneNote](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Windows Defender Advanced Threat Protection (ATP) | [Windows Defender ATP エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
+)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

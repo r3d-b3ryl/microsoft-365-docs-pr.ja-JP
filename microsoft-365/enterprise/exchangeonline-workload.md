@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise 用 Exchange Online を展開する
+title: Microsoft 365 Enterprise の Exchange Online の展開
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
@@ -7,184 +7,185 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
-description: 計画、展開、および Exchange Online の値を Microsoft 365 エンタープライズで、組織全体で推進のプロセスをステップ実行します。
-ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 組織全体で Microsoft 365 Enterprise の Exchange Online の価値を計画、ロールアウト、および促進するプロセスについて順を追って説明します。
+ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281207"
 ---
-# <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise 用 Exchange Online を展開する
+# <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Exchange Online の展開
 
-Exchange Online は、電子メールの主要なクラウド サービスと、そのことを予定表作成、リアルタイム チャットを必要としない、またはドキュメントのストレージを集中管理するための方法で共同作業ユーザー。Exchange オンライン個々 および小さいグループの短時間通信とスケジュール設定の操作方法は、Microsoft 365 エンタープライズのチームワークの値の組み込みの重要な要素です。Exchange のオンラインより多くを達成し、どのようなデバイスであっても、よく知られている Outlook アプリケーションをより効率的に作業できます。
+*このワークロードは、Microsoft 365 Enterprise の E3 および E5 バージョンの両方に含まれています。*
 
-Exchange オンラインも、高度なメールボックスを保護するため、マルウェア対策とスパム対策フィルターを含むセキュリティ機能とデータ損失の防止の機能には、ユーザーが誤って許可されていないユーザーに機密情報を送信することを防ぐ。Exchange オンラインのセキュリティは、Microsoft 365 エンタープライズのインテリジェントなセキュリティ値の重要な要素です。
+Exchange Online は、電子メールと予定表のプライマリクラウドサービスで、リアルタイムのチャットやドキュメント保存の集中管理を必要としない方法でユーザーを共同作業するのに役立つ情報を備えています。 Exchange Online は、個人および小規模なグループの短時間のコミュニケーションとスケジューリングをどのようにしているのかを示すものであり、Microsoft 365 Enterprise のチームワークの価値を構築するための重要な要素です。 Exchange Online を使用すると、使用しているデバイスに関係なく、既知の Outlook アプリケーションでより効果的に作業を行うことができます。
 
-Exchange Online を使用する場合は、 [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online)を参照してください。
+Exchange Online には、マルウェア対策とスパム対策フィルターを含む高度なセキュリティ機能があり、メールボックスと、ユーザーが誤って機密情報を権限のないユーザーに送信しないようにするデータ損失防止機能を保護します。 Exchange Online のセキュリティは、Microsoft 365 Enterprise のインテリジェントセキュリティ価値の重要な要素です。
 
-次の段階と手順に従って、一連のプログレッシブの展開を Exchange Online 組織、組織では、契約時に Exchange Online のロールを予見し、Exchange Online の使用を促進するプロセスとは、エンド ・ ユーザの値です。
+exchange online を初めて使用する場合は、「 [Microsoft exchange online](https://products.office.com/exchange/exchange-online)」を参照してください。
+
+次のフェーズと手順に従って、組織内の exchange online の役割を構想し、組織を一連の段階的な展開によって exchange online にオンボードし、exchange online およびそのエンドユーザーへの値。
 
 >[!Note]
->展開手順は、Microsoft 365 エンタープライズ基盤インフラストラクチャの[フェーズ 2-識別情報](identity-infrastructure.md)を完了した後にのみ従う必要があります。
+>これらの展開手順は、Microsoft 365 Enterprise foundation インフラストラクチャの[フェーズ2の id](identity-infrastructure.md)を完了した後にのみ実行する必要があります。
 >
 
 ## <a name="phase-1-envision"></a>フェーズ 1: 想定
 
-このフェーズでは、「Exchange Online を展開するため人々 を収集し、、どのように組織が Exchange Online を使用、ビジネス ニーズに対応するを決定します。
+このフェーズでは、exchange online の展開に関するユーザーを収集し、組織が exchange online を使用してビジネスニーズに対処する方法を決定します。
 
-### <a name="step-1-gather-your-exchange-online-deployment-members"></a>手順 1: Exchange のオンライン展開メンバーを収集します。
+### <a name="step-1-gather-your-exchange-online-deployment-members"></a>手順 1: Exchange Online の展開メンバーを収集する
 
-[フェーズ 2-識別情報](identity-infrastructure.md)を Microsoft 365 エンタープライズ基盤インフラストラクチャの上に Exchange Online の展開を成功させる、入力とフィードバックのための適切な担当者を取得する必要があります。主要な人物には、ビジネスの意思決定者、設計者と実装者、エンドユーザーの支持者などの IT スタッフが含まれています。 
+Microsoft 365 Enterprise foundation インフラストラクチャの[フェーズ 2-id](identity-infrastructure.md)の上に Exchange Online を正常に展開するには、入力とフィードバックのための適切な人物を入手する必要があります。 主要な人物としては、ビジネス意思決定者、アーキテクトや実装者などの IT スタッフ、およびエンドユーザーの支持者が挙げられます。 
 
-これら 3 つのグループは、オンラインの Exchange の展開にはでのビジネス ・ ニーズ、メールボックスの移行、セキュリティの技術的な側面と結果はである一般的なユーザーが使用するものに対応するための考慮事項が含まれていることを確認します。
+これら3つのグループにより、Exchange Online の展開には、ビジネスニーズ、メールボックスの移行とセキュリティの技術的な側面についての考慮事項、および一般的なユーザーが使用するものになることが保証されます。
 
 #### <a name="result"></a>結果
 
 組織の事業、技術、エンドユーザーの各側面を代表する関係者のリスト。
 
-### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>手順 2: を確認し、Exchange のオンライン ビジネス シナリオでは、優先順位を
+### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>手順 2: Exchange Online のビジネスシナリオを決定し、優先順位を付ける
 
-Exchange Online はさまざまな目的で使用できます。目的のマップ、組織、ビジネス グループ、部門、または個々 の作業とプロジェクト チームの別のレベルでビジネス ニーズを把握する必要があります。個々 および小さいグループ、短時間通信とスケジューリング ニーズに対応する Exchange Online をターゲットする必要があります。 
+Exchange Online はさまざまな目的に使用できます。 組織のさまざまなレベル、ビジネスグループ、部門、または個別の作業およびプロジェクトチームについて、ビジネスニーズに対応する目的を判断する必要があります。 個人および小規模グループの短時間の通信およびスケジュールのニーズを解決するには、Exchange Online を対象にする必要があります。 
 
-Exchange オンラインのメリットを確認する方法の 1 つは、個人、チーム、または v チームが今日では、相互作用し、通信、会議のスケジュール作成、および共同作業を簡単な方法を提供する適切なシナリオを検索し、方法を調べることです。[マイクロソフトのチーム](teams-workload.md)での共同作業シナリオでは、いくつかの方が適して可能性があることに留意してください。
+Exchange Online の利点を確認する方法の1つは、個人、チーム、または v チームが現在どのように連携しているかを調べて、より簡単にコミュニケーションを行い、会議を計画し、共同作業を行うための適切なシナリオを見つけることです。 グループ作業のシナリオによっては、 [Microsoft Teams](teams-workload.md)が適している場合があることに注意してください。
 
-Exchange Online を使用すると、Microsoft 365 Enterprise の次の戦略的なビジネス シナリオを実現可能にします:
+Exchange Online では、Microsoft 365 Enterprise の次のような戦略的なビジネスシナリオが有効になります。
 
-- リアルタイムまたは好きな時間にドキュメント上で共同作業を行って、共同作成プロセスを簡略化します
+- リアルタイムまたは好きな時間にドキュメントで共同作業を行って、共同作成プロセスを簡略化します
 - プロジェクト、タスク、期限を管理して、ビジネス目標を達成します
 - 業務の習慣を理解して、影響力を増します
 - チーム内でコミュニケーションを図って、最新の情報に精通し、意見を求め、団結力と考えの一致を高めます
 - 組織内外でファイルを保存および共有して、組織の境界を越えてシームレスに作業を行います
 - 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
 - 情報を保護して、データ損失のリスクを軽減します
-- 検出し、外部の脅威から保護します。 
-- 監視、レポート、および組織のセキュリティを提供するのには迅速に対応する利用状況を分析
+- 外部の脅威を検出して保護する 
+- アクティビティを監視、報告、および分析して、組織のセキュリティを迅速に提供する
 - 一般データ保護規則 (GDPR) に適合するように、強化されたプライバシーと法令遵守によって組織をサポートします。
 
 詳細については、「[Microsoft 365 を使用したデジタル改革](http://transform.microsoft.com)」を参照してください。 
 
 #### <a name="result"></a>結果
-通信、スケジュール、および共同作業を短時間で、組織のニーズに対応する Exchange Online のシナリオの一覧です。
+コミュニケーション、スケジュール、および短時間のコラボレーションに関する組織のニーズに対応する Exchange Online のシナリオの一覧。
 
 ## <a name="phase-2-onboard"></a>フェーズ 2: 研修
 
-このフェーズでは、オンラインの Exchange 展開の技術的な側面の計画し、ユーザーの選択したグループにロールアウトを開始します。
+このフェーズでは、Exchange Online 展開の技術的な側面を計画し、選択したユーザーグループへのロールアウトを開始します。
 
 ### <a name="prerequisites-identity-and-device-access-configuration"></a>前提条件: ID とデバイスのアクセス構成
 
-Exchange Online のメールボックスへのアクセスを保護するには、 [id とデバイスのアクセス ポリシー](identity-access-policies.md)と[アクセス ポリシーが Exchange Online をお勧め](secure-email-recommended-policies.md)するを構成していることを確認します。
+exchange online メールボックスへのアクセスを保護するには、 [id とデバイスのアクセスポリシー](identity-access-policies.md)と、推奨される[exchange online アクセスポリシー](secure-email-recommended-policies.md)を構成していることを確認してください。
 
 ### <a name="step-1-complete-your-technical-planning"></a>手順 1: 技術計画を実施する
 
-技術的な計画を開始する前に、FastTrack を使用するかどうかを決定します。組織が接続クライアント数が 50 を超えるには、[対象となる計画](https://technet.microsoft.com/library/dn783224.aspx)に参加している場合は、 [Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)、計画、展開、およびサービスの導入を進めることは追加コストなしで利用可能なを使用できます。または、 [FastTrack](https://fasttrack.microsoft.com/)から利用可能なは、Office 365 アカウントでサインインする fasttrack という契約時のウィザードを使用して自分でこの作業を完了できます。
+技術的な計画を開始する前に、fasttrack を使用するかどうかを決定します。 組織が50を超える座席を持ち、対象となる[プラン](https://technet.microsoft.com/library/dn783224.aspx)に参加している場合は、計画、展開、およびサービスの導入に関する追加費用をかけずに、 [Microsoft 365 に fasttrack](https://fasttrack.microsoft.com/microsoft365)を使用できます。 または、Office 365 アカウントでサインインした後に[fasttrack](https://fasttrack.microsoft.com/)から利用できる、fasttrack のオンボードウィザードを使用して、この作業を自分で行うことができます。
 
-独自の計画を実行する場合または FastTrack と共に、ネットワークおよび組織は、Exchange オンラインの準備ができたかどうかを決定する必要があります。インターネットの帯域幅、スループット、およびその他のトラフィックには、Exchange のパフォーマンスを最大化するトラフィックの遅延に注意して、基盤インフラストラクチャのネットワークの終了基準を満たしていることが特に重要です。オンライン ベースの電子メールと添付ファイルです。
+独自の計画を行っている場合や、fasttrack と連携している場合は、ネットワークと組織が Exchange Online の準備ができているかどうかを判断する必要があります。 Exchange の追加のトラフィックに対するパフォーマンスを最大化するために、インターネット帯域幅、スループット、トラフィック遅延に特に注意を向けることで、基礎インフラストラクチャのネットワークの終了条件を満たすことは特に重要です。オンラインベースの電子メールと添付ファイル。
 
-オンラインの Exchange の展開の技術的な側面を準備するには、これらのリソースを使用します。 
+これらのリソースを使用して、Exchange Online ロールアウトの技術的な側面を準備します。 
 
 - [複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
-- [Office 365 のメール移行アドバイザー](https://portal.office.com/onboarding/mailsetupadvisor#/)(署名が必要、Office 365 サブスクリプションを)
 - [Exchange Online でのコラボレーション](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Exchange Online の受信者](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
 
-について理解を深める Exchange Online 内のセキュリティでは、次のリソースを確認します。
+Exchange Online のセキュリティをより深く理解するには、次のリソースを確認してください。
 
-- [Exchange Online のアクセス許可](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx) 
+- [Exchange Online でのアクセス許可](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx) 
 - [Exchange Online のセキュリティとコンプライアンス](https://technet.microsoft.com/library/jj200706(v=exchg.150).aspx) 
 - [スパム対策とマルウェア対策の保護](https://technet.microsoft.com/library/jj200731(v=exchg.150).aspx)
 
-次に、Exchange Online のメールボックスの管理を理解するのにはこれらのリソースを使用します。
+次に、これらのリソースを使用して Exchange Online メールボックス管理について理解します。
 
-- [Exchange Online でユーザーのメールボックスを作成します。](https://technet.microsoft.com/library/jj907304(v=exchg.150).aspx)
+- [Exchange Online でユーザーメールボックスを作成する](https://technet.microsoft.com/library/jj907304(v=exchg.150).aspx)
 - [ユーザー メールボックスの管理](https://technet.microsoft.com/library/bb123809(v=exchg.150).aspx) 
-- [配布グループの作成と管理](https://technet.microsoft.com/library/bb124513%28v=exchg.150%29.aspx)
+- [配布グループを作成および管理する](https://technet.microsoft.com/library/bb124513%28v=exchg.150%29.aspx)
 
 #### <a name="result"></a>結果
 
-メールボックスの移行、セキュリティ、および管理を理解し、組織内の選択したグループに Exchange Online を展開を開始する準備ができました。
+メールボックスの移行、セキュリティ、および管理について理解し、組織内の選択したグループへの Exchange Online のロールアウトを開始する準備ができました。
 
 ### <a name="step-2-run-an-it-pilot"></a>手順 2: IT パイロットを実施する
 
 中規模～大規模な組織のほとんどでは、フェーズ 1 の関係者、早期導入者、熱心な技術者を集めて IT パイロットを実施する必要があります。IT パイロットでは、次の作業を行います。
 
-- IT パイロット参加者の練習に使用できる Exchange オンラインのビジネス シナリオを選択します。
-- パイロット参加者の Office 365 のライセンスを付与し、オンプレミスのメールボックスを Exchange Online に移行します。
-- パイロット参加者の Exchange Online の電子メール、スケジュール、およびその他の機能をテストするための演習のセットを提供します。
-- 変更管理戦略の決定し、オンラインの Exchange の組織全体のユーザーの採用を推進する資料を作成します。変更管理の資料には、電子メールのお知らせのテキスト、内部のトレーニング ・ プラン、廊下のポスター、およびプレゼンテーションを含めることができます。これらの資料は、Exchange オンラインおよび発生の認識と推進の使用率の目標とそのメリットについて、組織に通知されます。[マイクロソフトのチームの管理戦略を変更する](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)この資料は、いくつかのアイデアを参照してください。
-- IT パイロット参加者の経験に基づく変更の管理に関する資料を参照があります。最適な Exchange のオンラインの利点を説明する方法と通信し、スケジュール設定に使用する方法で、ベスト ・ プラクティスに関するヒントやアドバイスを提供できます。
+- IT パイロットの参加者が実習できる Exchange Online ビジネスシナリオを選択します。
+- パイロット参加者に Office 365 のライセンスを付与し、オンプレミスのメールボックスを Exchange Online に移行します。
+- パイロット参加者に、Exchange Online の電子メール、スケジュール、およびその他の機能をテストするための一連の実習を用意します。
+- 変更管理戦略を決定し、組織全体にわたるユーザーの Exchange Online の導入を促進するための資料を作成します。 変更管理資料には、電子メールアナウンステキスト、内部トレーニングプラン、hallway ポスター、プレゼンテーションを含めることができます。 これらの資料は、組織に Exchange Online に関する情報を提供し、認識を向上させ、使用を推進することの目標を達成したものとします。 いくつかのアイデアについては、 [Microsoft Teams の変更管理戦略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)の記事を参照してください。
+- IT パイロット参加者に、エクスペリエンスに基づいて変更管理資料をレビューしてもらいます。 また、Exchange Online の利点について説明するためのヒントや、コミュニケーションやスケジュール設定に使用する方法についてのヒントを提供することができます。
 
 #### <a name="result"></a>結果
 
-Exchange のオンライン IT パイロットが完了し、最初の変更の管理資料が開発、検討、および調整します。
+Exchange Online IT パイロットは完成し、最初の変更管理資料が開発、レビュー、および調整されています。
 
 ### <a name="step-3-roll-out-to-a-business-group"></a>手順 3: ビジネス グループへロールアウトする
 
-IT パイロットを完了すると、ビジネス グループまたは組織内の部門 Exchange Online を展開します。組織は、Exchange Server などのオンプレミス電子メール サービスで使用されている場合はメールボックスの移行のこのロールアウトで構成されます。このロールアウトを含める必要があります。
+IT パイロットを完了した後、組織内のビジネスグループまたは部署に Exchange Online をロールアウトします。 組織が Exchange Server などの社内電子メールサービスを使用している場合、このロールアウトはメールボックスの移行で構成されます。 このロールアウトには、次のものが含まれます。
 
-- ビジネス グループ内で Exchange のオンラインの主要なビジネス シナリオの id です。
-- 期待し、部署やチームの作業やプロジェクトの Exchange Online を使用するためのタイムラインのユーザーに通知する活動をお知らせします。
-- Exchange Online には、ビジネス グループのメンバーのオンプレミスのメールボックスの移行。
-- Exchange Online とその使用方法を紹介するリソースを Exchange Online またはリンク上のユーザーのトレーニングを提供しています。
+- ビジネスグループ内の Exchange Online の主要なビジネスシナリオの識別。
+- 部署や作業またはプロジェクトチームのための、Exchange Online の使用状況についての要望とタイムラインをユーザーに通知するアナウンスアクティビティ。
+- ビジネスグループのメンバーの社内メールボックスを Exchange Online に移行します。
+- exchange online でユーザートレーニングを実施するか、exchange online を紹介するリソースへのリンクを提供し、その使用方法について説明します。
 - ビジネス グループのユーザーからコメントを収集し、問題点を指摘するフィードバック メカニズム (ビジネス グループのメンバー全員が含まれている中央の Microsoft Teams チームなど)。
 
 ロールアウト中には、組織全体でのロールアウトに備えて変更管理資料を調整できます。
 
 #### <a name="result"></a>結果
 
-ビジネス グループとは、Exchange オンラインで実行して、変更管理資料がテストされ洗練されています。
+ビジネスグループは Exchange Online で稼働しており、変更管理資料のテストと調整が行われています。
 
 ## <a name="phase-3-drive-value"></a>フェーズ 3: 価値を引き出す
 
-このフェーズでは、オンラインの Exchange の展開を完了し、そのメリットを実現するためにユーザーをサポートします。
+このフェーズでは、Exchange Online のロールアウトを完了し、ユーザーによるメリットの実現を支援するためにユーザーをサポートします。
 
-### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>手順 1: 展開 Exchange Online 組織の残りの部分に
+### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>手順 1: 組織の他の部分に Exchange Online をロールアウトする
 
 組織の残りの部分へのロールアウトには、以下を含める必要があります。
 
-- 個別のビジネス グループ内で Exchange のオンラインの主要なビジネス シナリオの id です。
-- 期待の組織に通知するお知らせの活動についての高度な変更管理の資料と Exchange Online を使用するためのタイムラインを使用します。
-- オンラインの Exchange 組織の残りのメールボックスの移行。
-- ユーザーのトレーニングを提供することをオンラインで交換するか Exchange Online とその使用方法を紹介するリソースへのリンクを提供します。
+- 個別のビジネスグループ内の Exchange Online の主要なビジネスシナリオの識別。
+- Exchange Online の使用状況に関する期待値とタイムラインを組織に通知するために、改訂の変更管理資料をアナウンス活動に使用します。
+- 組織の残りの部分のメールボックスを Exchange Online に移行します。
+- exchange online でユーザートレーニングを実施するか、exchange online を紹介するリソースへのリンクとその使用方法について説明します。
 - 組織のユーザーからのコメントや問題点を収集するフィードバック メカニズム (すべてのユーザーが含まれている中央チームなど)。組織の従業員数が 2500 人未満の場合は、Teams のパブリック チャネルを使用し、2500 人以上の場合は Yammer のパブリック グループを使用してください。
 
 #### <a name="result"></a>結果
 
-組織は、通知、トレーニング、および Exchange Online を使用するユーザーを有効にするのには、実行し、変更管理戦略です。
+組織が稼働しており、ユーザーが Exchange Online を使用できるようにするために、変更管理戦略が実施されています。
 
 ### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>手順 2: 使用状況を測定し、満足度を管理し、導入を促進する
 
-組織全体には、Exchange Online を展開後、に、変更管理の戦略を採用する続行する必要があります。
+Exchange Online を組織全体にロールアウトした後、次のことを行うために、変更管理戦略を引き続き採用する必要があります。
 
-- 個人および短時間の通信のための主要なツールとして Exchange Online を昇格させる、リーダーシップがあり、スケジュールを設定します。
-- プロジェクト チームのコミュニケーション、予定表機能、およびコラボレーションやビジネス グループ、部門、作業中、使用する個人を推奨します。
+- リーダーシップを発揮して、個々の、および短期間のコミュニケーションとスケジューリングのための主要なツールとして Exchange Online を促進します。
+- ビジネスグループ、部門、作業、およびプロジェクトチームのコミュニケーション、予定表作成、グループ作業に使用することをお勧めします。
 
 推奨されるアクティビティの一部を次に示します。
 
 - 「[Office 365 導入ガイド](https://aka.ms/successfactors)」を参照して、クラウド サービス導入の一般的なベスト プラクティスを理解します。 
 - 「[Office 365 アクティビティ レポート](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)」を参照して、組織全体での Office 365 サービスの使用について理解します。組織の Office 365 全体管理者ではない場合は、ユーザー アカウントに Reports Reader 権限を付与できるグローバル管理者に権限の付与を依頼し、アクティビティ レポートにアクセスできるようにしてください。
-- フィードバックの会場 (中央チームのチームまたは Yammer にパブリック チャネル) の問題および Exchange のオンラインでの経験についてのユーザーからのフィードバックを監視します。個人の不満を防止し、展開のサポートを示すことができます速やかに疑問や問題に対処します。
-- 識別し、各ビジネス グループのエキスパートの進展しの実績とベスト ・ プラクティスが Exchange Online を使用して強調表示します。プロジェクトの成功と採用を表示するのには組織をその成功を反映します。裏書ビジネス グループ内の技術のリーダーでは、リーダーとのピアの上に大きな影響を与えることのできます。
+- Exchange Online でのエクスペリエンスに関する問題とフィードバックについて、フィードバック会場 (中央チームのチームまたは Yammer のパブリックチャネル) を監視します。 問題の解決を防ぎ、ロールアウトのサポートをデモンストレーションできるように、質疑応答します。
+- 各ビジネスグループのチャンピオンを特定して育成し、Exchange Online を使用してその業績とベストプラクティスを強調します。 プロジェクトの成功と導入を示すために、その成功を組織に反映します。 ビジネスグループ内の技術リーダーによる裏書は、リーダーとピアに大きな影響を与える可能性があります。
 
 #### <a name="result"></a>結果
 
-組織は、個人および小グループの主な短時間の通信に、スケジュール作成ツールとして Exchange オンライン採用しています。
+組織は、プライマリ個人と小規模なグループの短時間のコミュニケーションとスケジューリングツールとして Exchange Online を採用しています。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-マイクロソフトの内部を見るし、会社が Exchange Online に移行し、サイバー攻撃から保護するために Exchange のオンライン保護を使用する方法を学ぶを参照してください。
+Microsoft の内部をピークし、exchange online に移行し、exchange online Protection を使用してサイバー攻撃から保護する方法については、以下を参照してください。
 
 - [Microsoft では 150,000 のメールボックスを Exchange Online に移行](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft は脅威からの保護、脅威の検出、脅威への対応に脅威インテリジェンスを使用する](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
 - [Microsoft の Office 365 を使用したフィッシング阻止の試み](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-Exchange オンラインの継続的なメンテナンスのため、これらのリソースを参照してください。
+Exchange Online の継続的なメンテナンスについては、次のリソースを参照してください。
 
 - [Exchange Online の Exchange 管理センター](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
 - [Exchange Online での監視、レポート、メッセージ追跡](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)
-- [Exchange Online での電子メールのバックアップ](https://technet.microsoft.com/library/dn440734(v=exchg.150).aspx) 
+- [Exchange Online の電子メールのバックアップ](https://technet.microsoft.com/library/dn440734(v=exchg.150).aspx) 

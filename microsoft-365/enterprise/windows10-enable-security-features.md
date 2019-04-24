@@ -1,33 +1,34 @@
 ---
 title: Windows 10 Enterprise のセキュリティ機能を展開する
 description: Microsoft 365 Enterprise の一部として Windows 10 Enterprise を PC に展開するために必要な手順の、詳しいガイダンスです。
-keywords: Microsoft 365、Microsoft 365 エンタープライズでは、Microsoft 365、10 企業の Windows のドキュメントのセキュリティ
+keywords: microsoft 365、microsoft 365 Enterprise、microsoft 365 ドキュメント、Windows 10 enterprise、security
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: d051f9e56d8e9986fbe0975c2bdc6c606b32a444
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 60145444a7fb2b4ddf2ea6a3606e04aa04a578af
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291624"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>手順 5: Windows 10 Enterprise のセキュリティ機能を展開する
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Windows 10 には、上の脅威、ヘルプから、デバイスをセキュリティで保護し、アクセス制御を支援するコンピューターを保護する機能が用意されています。 
+Windows 10 では、エンタープライズユーザーの保護、脅威の停止、データ損失の防止のためのセキュリティ機能が提供されています。 
 
-これらのテクノロジの詳細についてを参照してください。
-* [アクセスの保護](https://docs.microsoft.com/windows/access-protection/)についてはアクセス コントロールでは、S/MIME、デジタル証明書、資格情報の保護、ユーザー アカウント制御では、仮想スマート カード、Windows こんにちはビジネス、セキュリティが強化された Windows ファイアウォールなどの
-* [デバイスのセキュリティ](https://docs.microsoft.com/windows/device-security/)の AppLocker の含まれています、BitLocker、デバイスの監視、およびトラステッド プラットフォーム モジュール
-* [脅威の保護](https://docs.microsoft.com/windows/threat-protection/)- Windows Defender は、セキュリティ センター、Windows Defender の高度な脅威保護、Windows Defender のウイルス対策ソフトウェア、Windows Defender のアプリケーション保護、Windows Defender スマート画面、および Windows の情報保護
+これらのテクノロジの詳細については、以下を参照してください。
+* [id 保護](https://docs.microsoft.com/windows/security/identity-protection/)-Windows Hello for business、Credential Guard、およびアクセス制御について説明します。
+* [脅威保護](https://docs.microsoft.com/windows/threat-protection/)-Windows Defender Advanced Threat protection、予防的保護のための統合プラットフォーム、ブリーチ後の検出、自動調査、および応答について説明します。
+* [情報保護](https://docs.microsoft.com/windows/security/information-protection/)-windows 10 がエンタープライズデータを保護するために使用する BitLocker、windows 情報保護、およびその他の方法について説明します。 
 
-この手順は、どのようにすることができます展開、管理、構成、およびこれらのセキュリティ機能を使用してトラブルシューティングを示しています。
+この手順では、以下のセキュリティ機能を使用して、を展開、管理、構成、およびトラブルシューティングする方法を示します。
 
 * [Windows Defender ウイルス対策](#windows-defender-antivirus)
 * [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
@@ -35,97 +36,97 @@ Windows 10 には、上の脅威、ヘルプから、デバイスをセキュリ
 
 <a name="windows10-sec-av"></a>
 ## <a name="windows-defender-antivirus"></a>Windows Defender ウイルス対策
-Windows Defender ウイルス対策ソフトウェア (AV) とは、10 の Windows に組み込まれているウイルス対策ソリューションです。デスクトップ、ポータブル コンピューター、およびサーバーのセキュリティとウイルス対策の管理を提供します。Windows Defender の AV、最低限の要件では、この機能を管理する方法に関する詳細情報は、 [Windows Defender の 10 の Windows および Windows Server 2016 のウイルス対策ソフトウェア](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)を参照してください。
+windows Defender ウイルス対策 (AV) は、windows 10 に組み込まれているマルウェア対策ソリューションです。 デスクトップ、ポータブルコンピューター、およびサーバーのセキュリティとマルウェア対策の管理を提供します。 windows defender AV、最小要件、およびこの機能を管理する方法の詳細については、「windows [10 と windows Server 2016 の windows defender ウイルス対策](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)」を参照してください。
 
-主要なウイルス対策クライアントとして Windows Defender の AV を使用していない、またはいくつかの考慮事項がある場合、Windows Defender の分析ツールを使用する、考慮する必要があります。詳細については、 [Windows Defender の AV の互換性](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility)を参照してください。
+プライマリウイルス対策クライアントとして windows defender AV を使用していない場合、または windows defender ATP を使用している場合は、いくつかの考慮事項を考慮する必要があります。 詳細については、「 [Windows Defender AV 互換性](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility)」を参照してください。
 
 ### <a name="deployment-and-management"></a>展開と管理
-導入すると、Windows Defender の AV の管理、次のガイダンスは、ここを実行します。
+Windows Defender AV を展開および管理するには、次のガイダンスに従ってください。
 
-* [展開、管理、および Windows Defender のアクセス違反の報告](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
-* [管理/構成ツールのリファレンス トピック](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus)
+* [Windows Defender AV の展開、管理、およびレポート](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
+* [管理および構成ツールのリファレンストピック](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus)
 
 ### <a name="configuration"></a>構成
-ユーザーは、さまざまな機能を構成できます。詳細については、これらのリソースを参照してください。
+ユーザーは、いくつかの機能を構成できます。 詳細については、以下のリソースを参照してください。
 
-* [Windows Defender の AV 機能を構成します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
-* [管理/構成ツールのリファレンス トピック](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus)
+* [Windows Defender AV 機能を構成する](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
+* [管理および構成ツールのリファレンストピック](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus)
 
-構成オプションを理解するためを参照してくださいこのすべての設定の一覧で定義された、グループ ポリシーの構成):[グループ ポリシーを使用して設定を構成し、Windows Defender の AV を管理するには](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/use-group-policy-windows-defender-antivirus)
+構成オプションの詳細については、「グループポリシーの構成によって定義されたすべての設定の一覧を表示する」を参照してください。[グループポリシー設定を使用して Windows Defender AV を構成および管理する](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/use-group-policy-windows-defender-antivirus)
 
-[Windows Defender のウイルス対策保護評価ガイド](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus)を使用すると、保護レベルと、ネットワーク上の Windows Defender の AV の影響を評価します。これ初期構成を作成するか、クイック スタート ガイドとして役立つことができ、定期的に更新を構成して、最大限の保護を確保する機能を有効にするための最も役に立つ推奨事項を提供します。
+[windows defender av 保護評価ガイド](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus)を使用すると、ネットワーク上の windows defender av の保護レベルと影響を評価するのに役立ちます。 これは、初期構成を作成したり、' クイックスタートガイド ' として使用したりする場合にも役立ちます。また、機能を構成および有効にして最大限の保護を実現するための推奨事項を提示するように定期的に更新されています。
 
-### <a name="reporting"></a>レポート
-システム センター構成マネージャーまたは Microsoft Intune のような構成ツールを使用してレポートを取得できます。更新コンプライアンス (OMS) から、または、SIEM の Windows イベント ログを使用してのレポートを取得することもできます。Windows Defender の ATP のライセンスを所有する場合も Windows Defender のアクセス違反の検出にレポートを取得し、基本的な修復を実行します。詳細については、これらのリソースを参照してください。
-* [展開、管理、および Windows Defender のアクセス違反の報告](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
-* [Windows Defender のウイルス対策保護を報告します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
-* [Windows Defender の ATP のポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
+### <a name="reporting"></a>Reporting
+System Center configuration Manager、Microsoft Intune などの構成ツールを使用してレポートを取得できます。 また、更新プログラムのコンプライアンス (OMS) または SIEM で Windows イベントログを使用してレポートを取得することもできます。 windows defender ATP のライセンスを所有している場合は、windows defender AV 検出にレポートを取得し、基本的な修復を実行することもできます。 詳細については、以下のリソースを参照してください。
+* [Windows Defender AV の展開、管理、およびレポート](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
+* [Windows Defender AV protection に関するレポート](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
+* [Windows Defender ATP ポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
 
 ### <a name="troubleshooting"></a>トラブルシューティング
-エラーとイベントのコードの基本的なトラブルシューティングの情報は、[イベント ログを確認しエラー コードが Windows Defender の AV に関する問題のトラブルシューティング](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)を参照してください。
+エラーおよびイベントコードの基本的なトラブルシューティングの詳細については、「[イベントログとエラーコードを確認する」を参照して、Windows Defender AV の問題のトラブルシューティングを](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)行ってください。
 
-Windows Defender セキュリティ インテリジェンスの送信システムを使用して (誤) などの問題を送信することもできます。学習する方法については、[マイクロソフトに送信の問題](https://www.microsoft.com/wdsi/filesubmission)を参照してください。
+Windows Defender セキュリティインテリジェンス送信システムを使用して、問題 (誤検知など) を送信することもできます。 その方法については、「 [Microsoft に問題を提出](https://www.microsoft.com/wdsi/filesubmission)する」を参照してください。
 
 <a name="windows10-sec-eg"></a>
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard
-Windows Defender を悪用する可能性のガードは、Windows の 10 のホスト侵入防止の機能の新しいセットです。Windows Defender を悪用するガード、最低限の要件では、この機能を管理する方法に関する詳細情報は、 [Windows Defender を悪用するガード](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)を参照してください。
+windows Defender Exploit Guard は、windows 10 の一連の新しいホスト侵入防止機能です。 windows defender exploit guard の詳細、最小要件、およびこの機能を管理する方法については、「 [windows defender exploit guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)」を参照してください。
 
 ### <a name="deployment-management-and-configuration"></a>展開、管理、および構成
-展開、管理、および Windows Defender を悪用するガードを構成する、次のガイダンスは、ここを実行します。
-* [脆弱性の保護](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard)
-* [攻撃の表面の保護](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard?ocid=cx-docs-msa4053440)
-* [ネットワークの保護](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-* [フォルダーへのアクセスを制御](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+Windows Defender Exploit Guard を展開、管理、および構成するには、次のガイダンスに従ってください。
+* [Exploit protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard)
+* [アタック領域の保護](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard?ocid=cx-docs-msa4053440)
+* [ネットワーク保護](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+* [フォルダーアクセスの制御](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 
-一連のトピックの評価を使用すると、保護レベルと、ネットワーク上の Windows Defender を悪用するガードの影響を評価します。便利なは、初期構成を作成するか、クイック スタート ガイドとしてこのことができ、トピックとガイダンスが最も役に立つ推奨事項を提供するを構成して、最大限の保護を確保する機能を有効にするために定期的に更新します。詳細については、[ガードを悪用する Windows Defender を評価](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard)します。
+一連の評価トピックを使用して、ネットワークに対する Windows Defender Exploit Guard の保護レベルと影響を評価することができます。 これは、初期構成を作成したり、' クイックスタートガイド ' として使用したりする場合にも役立ちます。また、トピックとガイダンスは定期的に更新されており、最大限の保護を確保するために、機能を構成して有効にするための最も役立つ推奨事項を提供します。 詳細については、 [Windows Defender Exploit Guard を評価](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard)してください。
 
-### <a name="reporting"></a>レポート
-システム センター構成マネージャーまたは Intune のような構成ツールを使用してレポートを取得できます。SIEM の Windows イベント ログを使用してレポートを取得することもできます。Windows Defender の ATP のライセンスを所有する場合も Windows Defender のアクセス違反の検出にレポートを取得し、基本的な修復を実行します。詳細については、これらのリソースを参照してください。
-* [Windows Defender を悪用するガードのイベントを表示します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
-* [Windows Defender の ATP のポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
+### <a name="reporting"></a>Reporting
+System Center configuration Manager または Intune などの構成ツールを使用してレポートを取得することができます。 SIEM で Windows イベントログを使用してレポートを取得することもできます。 windows defender ATP のライセンスを所有している場合は、windows defender AV 検出にレポートを取得し、基本的な修復を実行することもできます。 詳細については、以下のリソースを参照してください。
+* [Windows Defender Exploit Guard イベントを表示する](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
+* [Windows Defender ATP ポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
 
 ### <a name="troubleshooting"></a>トラブルシューティング
-基本的なトラブルシューティングを実行または必要に応じての .cab ファイルを使用してマイクロソフトが提供して (誤) などの問題を Windows Defender セキュリティ インテリジェンスの送信システムを使用して送信します。学習する方法については、[マイクロソフトに送信の問題](https://www.microsoft.com/wdsi/filesubmission)を参照してください。
+基本的なトラブルシューティングを実行したり、必要に応じて Microsoft に .cab ファイルを提供したり、Windows Defender セキュリティインテリジェンス送信システムを使用して問題 (誤検知など) を送信したりすることができます。 その方法については、「 [Microsoft に問題を提出](https://www.microsoft.com/wdsi/filesubmission)する」を参照してください。
 
 
 <a name="windows10-sec-atp"></a>
 ## <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
-Windows Defender の ATP、マイクロソフト 365 エンタープライズ E5 プランでのみ利用可能とは、検出、調査、および、ネットワーク上の高度な脅威に対応する企業のお客様を有効にするセキュリティ サービスです。Windows Defender の ATP、最低限の要件では、この機能を管理する方法に関する詳細についてを参照してください。
+Windows Defender ATP は、Microsoft 365 Enterprise E5 プランでのみ利用できます。これは、企業のお客様が自社のネットワーク上の高度な脅威を検出、調査、および対応することを可能にするセキュリティサービスです。 Windows Defender ATP、最小要件、およびこの機能を管理する方法の詳細については、以下を参照してください。
 
 * [Windows Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [最小要件](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)
 
 ### <a name="deployment-management-and-configuration"></a>展開、管理、および構成
-Windows Defender の分析ツールを展開するには、右の Windows のライセンスがあることを確認する必要があります。右側のライセンスがあることを確認した後、データが格納される場所の地理位置情報を決定する必要があります。その後は、契約時のエンドポイントをサービスを開始できます。
+windows Defender ATP を展開するには、適切な windows ライセンスを持っていることを確認する必要があります。 適切なライセンスを持っていることを確認したら、データを格納する場所の地理位置情報を決定する必要があります。 その後、サービスのオンボードエンドポイントを開始できます。
 
-次の手順の詳細については、これらの主要なトピックを参照してください。 
+これらの手順の詳細については、次の主要なトピックを参照してください。 
 
-* [ライセンスのプロビジョニングを検証し、設定を完了](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/licensing-windows-defender-advanced-threat-protection)
-* [データ記憶域とプライバシー](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/data-storage-privacy-windows-defender-advanced-threat-protection)
-* [オンボードのエンドポイント、およびアクセスのセットアップ](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection)
+* [ライセンスのプロビジョニングを検証し、セットアップを完了する](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/licensing-windows-defender-advanced-threat-protection)
+* [データの保存とプライバシー](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/data-storage-privacy-windows-defender-advanced-threat-protection)
+* [オンボードエンドポイントとセットアップアクセス](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection)
 
-### <a name="detect-investigate-respond"></a>検出、調査、対応
-正常に契約時に、サービス、エンドポイントの後、さまざまなダッシュ ボードからのアラートを調査を開始できます。アラートを調査して後、は、警告の応答のアクションを実行できます。 
+### <a name="detect-investigate-respond"></a>検出、調査、応答
+エンドポイントがサービスに正常にオンボードされた後、さまざまなダッシュボードからの警告の調査を開始できます。 通知を調査した後は、通知に対する応答アクションを実行できます。 
 
-これらを行う方法の詳細についてを参照してください。
-* [Windows Defender の ATP のポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
-* [Windows Defender の ATP のポータルを使用します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/use-windows-defender-advanced-threat-protection)
-* [応答アクションを実行します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/response-actions-windows-defender-advanced-threat-protection)
+これらの方法の詳細については、以下を参照してください。
+* [Windows Defender ATP ポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
+* [Windows Defender ATP ポータルを使用する](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/use-windows-defender-advanced-threat-protection)
+* [応答アクションを実行する](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/response-actions-windows-defender-advanced-threat-protection)
 
-### <a name="integrate-with-other-products-and-tools"></a>他の製品やツールとの統合します。
-Windows Defender の分析ツールは、統合し、さまざまなその他の製品とそのセキュリティ機能を拡張するためのツールをサポートしています。 
+### <a name="integrate-with-other-products-and-tools"></a>他の製品とツールと統合する
+Windows Defender ATP は、セキュリティ機能を拡張するために、さまざまな他の製品とツールを統合し、サポートしています。 
 
-ツールおよびその他の製品の詳細についてを参照してください。
+ツールおよびその他の製品の詳細については、以下を参照してください。
 * [SIEM ツール](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection)
-* [カスタム通知を作成します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection)
-* [Api を使用します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection)
-* [電源の BI レポートを作成します。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection)
+* [カスタム通知を作成する](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection)
+* [api を使用する](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection)
+* [power BI レポートを作成する](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection)
 
 ### <a name="troubleshooting"></a>トラブルシューティング
-契約時または製品の使用中に問題が発生する可能性があります。問題に対処する方法の詳細についてを参照してください。
-* [契約時の問題のトラブルシューティング](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
-* [Windows Defender の分析ツールのトラブルシューティング](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection)
+オンボードまたは製品の使用中に問題が発生することがあります。 問題に対処する方法の詳細については、以下を参照してください。
+* [オンボード問題のトラブルシューティング](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
+* [Windows Defender ATP のトラブルシューティング](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection)
 
 ## <a name="next-step"></a>次の手順
 
-[Windows 10 Enterprise のインフラストラクチャ終了条件](windows10-exit-criteria.md)
+[Windows 10 Enterprise infrastructure の終了条件](windows10-exit-criteria.md)

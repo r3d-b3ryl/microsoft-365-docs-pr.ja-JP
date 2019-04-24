@@ -8,7 +8,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: Intune 設定する Microsoft 365 ビジネスの保護機能をマップする方法について説明します。サブスクリプションは、Intune の設定を変更するためのライセンスを提供します。
-ms.openlocfilehash: 5ee5a457fe3f265dd37f6806ca8c11fe096718b6
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 Business の保護機能が Intune 設定にマップされる方法について説明します。 サブスクリプションでは、Intune の設定を変更するためのライセンスが提供されます。
+ms.openlocfilehash: ddd520cd059c84e5d64e967fe5631fe2f6bce0d4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278557"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法
 
@@ -32,9 +35,9 @@ ms.locfileid: "26869269"
 
 次の表では、Android および iOS アプリケーションのポリシーの設定と Intune の設定の対応について詳しく説明します。
   
-設定を見つけて、Intune、Microsoft 365 ビジネス管理者の資格情報でサインイン中には、**管理センター**を、し、次に**Intune**に移動します。
+intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、[**管理センター**]、[ **intune**] の順に移動します。
   
- **重要な:** 365 ビジネスのマイクロソフトのサブスクリプションは、Intune のすべての設定を変更するためのライセンスを提供します。参照してください[Intune を開始するを紹介します](https://docs.microsoft.com/intune/introduction-intune)。
+ **重要:** Microsoft 365 Business サブスクリプションでは、すべての Intune 設定を変更するためのライセンスが提供されています。 [開始するには、「Intune の概要」を参照し](https://docs.microsoft.com/intune/introduction-intune)てください。
   
 選択するポリシーの名前をクリックし (たとえば、Android のアプリケーション ポリシー)、[ **ポリシー設定**] を選びます。
   
@@ -52,7 +55,7 @@ ms.locfileid: "26869269"
 |:-----|:-----|
 |アクティブでない状態が指定の日数続いたデバイスから作業ファイルを削除する  <br/> |アプリのデータがワイプされるまでのオフライン期間 (日数)  <br/> |
 |OneDrive for Business に作業ファイルを保存するように強制する  <br/> OneDrive for Business だけが許可されることに注意してください  <br/> |会社のデータを保存できるストレージ サービスの選択  <br/> |
-|作業ファイルを暗号化する  <br/> |アプリケーション データを暗号化する  <br/> |
+|作業ファイルの暗号化  <br/> |アプリケーション データを暗号化する  <br/> |
 |[ **ユーザーによるモバイル デバイスの Office ファイルのアクセス方法を管理する**] の設定 <br/> ||
 |Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> | アクセスのために PIN を要求する  <br/>  これにより、以下も設定されます。  <br/> **単純な PIN を許可する**: **はい** <br/> **PIN の長さ**: 4  <br/> **PIN の代わりに指紋認証を許可する**: **はい** <br/> **デバイス PIN が管理されている場合にアプリ PIN を無効にする**: **いいえ** <br/> |
 |ログインに指定の回数失敗した場合に PIN をリセットする (PIN が必要ない場合は無効)  <br/> |PIN をリセットするまでの試行回数  <br/> |
@@ -65,7 +68,7 @@ ms.locfileid: "26869269"
 
 次の表では、Windows 10 アプリケーションのポリシーの設定と Intune の設定の対応について詳しく説明します。
   
-Intune を検索するのには、Microsoft 365 業務管理者資格情報でサインイン中に、設定には[Azure ポータル](https://portal.azure.com)では、[**サービスの詳細**と入力**フィルター**、Intune **Intune アプリケーション保護**] を選択\> **アプリケーション ポリシー**。
+intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、 [Azure portal](https://portal.azure.com)に移動し、[**その他のサービス**] を選択して、**フィルター**に intune を入力し、[ **intune App Protection** \> **] を選択します。アプリポリシー**。
   
  **重要**: Microsoft 365 Business サブスクリプションで提供されるライセンスでは、Microsoft 365 Business で使用可能な設定に対応する Intune の設定のみを変更できます。 
   
@@ -73,11 +76,11 @@ Intune を検索するのには、Microsoft 365 業務管理者資格情報で�
   
 |**Windows 10 のアプリケーション ポリシーの設定**|**Intune の設定**|
 |:-----|:-----|
-|作業ファイルを暗号化する  <br/> |**詳細設定**\> **データ保護**: **unenroll の上のキーの暗号化を取り消す**し、**データが保護されているデバイスへのアクセスを失効は、MDM を登録**がどちらに設定**に**します。  <br/> |
-|ユーザーが個人用ファイルを会社のデータをコピーするを防ぐ。  <br/> |**必須の設定**\> **Windows 情報保護モード**。**で**Microsoft 365 ビジネスでマップ: にマップ**を**Microsoft 365 ビジネスで**上書きを非表示に**する:**オフ**します。<br/> |
-|Office ドキュメントのアクセスの制御  <br/> | Microsoft 365 Business でこれが [ **オン**] に設定されている場合  <br/> **詳細設定**\> **アクセス**、**使用 Windows こんにちは Windows へのサインイン方法としてビジネスのため**に設定**で**、次の追加設定をします。  <br/> **PIN に必要な最小文字数を設定します**: **4**  <br/> **Windows Hello for Business 用の PIN に大文字を使うことを構成します**: **PIN に大文字の使用を許可しない**  <br/> **Windows Hello for Business 用の PIN に小文字を使うことを構成します**: **PIN に小文字の使用を許可しない**  <br/> **Windows Hello for Business 用の PIN に特殊文字を使うことを構成します**: **PIN に特殊文字の使用を許可しない**  <br/> **PIN を変更するようにシステムからユーザーに要求が出されるまでの期間 (日数) を指定します**: **0**  <br/> **再利用できないユーザー アカウントに関連付けることができる以前の PIN の数を指定します**: **0**  <br/> **デバイスがワイプされるまでの認証失敗の回数**: Microsoft 365 Business と同じ (既定値は 5)  <br/> **デバイスが PIN またはパスワードでロックされるまでの最大のアイドル時間 (分)**: Microsoft 365 Business と同じ  <br/> |
-|保護されたデータの回復を有効にする  <br/> |**詳細設定**\> **データ保護**:**エンタープライズ データ保護のアイコンを表示して****仕掛品の Azure RMS の使用**が**オン**に設定します。  <br/> |
-|その他の会社のクラウドの場所を保護する  <br/> |**詳細設定**\> **保護されたドメイン**と**クラウドのリソース**は、ドメインおよび SharePoint サイトを表示します。  <br/> |
+|作業ファイルを暗号化する  <br/> |**Advanced settings** \> **Data protection**: **Revoke encryption keys on unenroll** and **Revoke access to protected data device enrolls to MDM** are both set to **On**.  <br/> |
+|ユーザーが会社のデータを個人用ファイルにコピーできないようにします。  <br/> |**Required settings** \> **Windows Information Protection mode**. **On** in Microsoft 365 Business maps to: **Hide Overrides**, **Off** in Microsoft 365 Business maps to : **Off**.  <br/> |
+|Office ドキュメントのアクセスの制御  <br/> | Microsoft 365 Business でこれが [ **オン**] に設定されている場合  <br/> **Advanced settings** \> **Access**, **Use Windows Hello for Business as a method for signing into Windows** is set to **On**, with the following additional settings:  <br/> **PIN に必要な最小文字数を設定します**: **4**  <br/> **Windows Hello for Business 用の PIN に大文字を使うことを構成します**: **PIN に大文字の使用を許可しない**  <br/> **Windows Hello for Business 用の PIN に小文字を使うことを構成します**: **PIN に小文字の使用を許可しない**  <br/> **Windows Hello for Business 用の PIN に特殊文字を使うことを構成します**: **PIN に特殊文字の使用を許可しない**  <br/> **PIN を変更するようにシステムからユーザーに要求が出されるまでの期間 (日数) を指定します**: **0**  <br/> **再利用できないユーザー アカウントに関連付けることができる以前の PIN の数を指定します**: **0**  <br/> **デバイスがワイプされるまでの認証失敗の回数**: Microsoft 365 Business と同じ (既定値は 5)  <br/> **デバイスが PIN またはパスワードでロックされるまでの最大のアイドル時間 (分)**: Microsoft 365 Business と同じ  <br/> |
+|保護されたデータの回復を有効にする  <br/> |**Advanced settings** \> **Data protection**: **Show the enterprise data protection icon** and **Use Azure RMS for WIP** are set to **On**.  <br/> |
+|その他の会社のクラウドの場所を保護する  <br/> |**Advanced settings** \> **Protected domains** and **Cloud resources** show domains and SharePoint sites.  <br/> |
 |これらのアプリで使用されるファイルを保護する  <br/> |保護されるアプリの一覧が、[ **許可されるアプリ**] に一覧表示されます。  <br/> |
 |||
    
@@ -85,7 +88,7 @@ Intune を検索するのには、Microsoft 365 業務管理者資格情報で�
 
 次の表では、Windows 10 デバイスの構成の設定と Intune の設定の対応について詳しく説明します。
   
-Intune を検索するのには Microsoft 365 業務管理者資格情報でサインイン中に、設定には[Azure ポータル](https://portal.azure.com)では、[選択] で、**サービスの詳細**、および Intune に**フィルター**の種類の選択**Intune** \> **デバイス構成** \> **プロファイル**です。**10 の Windows のデバイス ポリシー**を選択し、 \> **のプロパティ** \> **の設定**です。
+intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、 [Azure portal](https://portal.azure.com)に移動し、[**その他のサービス**] を選択して、**フィルター**に intune を入力し、[ **intune** \>デバイス] を選択します。 **構成** \> **プロファイル**。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Windows 10 のデバイス ポリシーの設定**|**Intune の設定**|
 |:-----|:-----|
@@ -93,9 +96,9 @@ Intune を検索するのには Microsoft 365 業務管理者資格情報でサ�
 |Microsoft Edge で Web ベースの脅威から PC を保護する  <br/> |[ **Microsoft Edge ブラウザーの設定**] の [ **SmartScreen**] が [ **必須**] に設定されます。  <br/> |
 |指定の時間アイドル状態が続いた場合にデバイスの画面をオフにする (分)  <br/> |画面がロックされるまでの非アクティブな最長時間 (分)  <br/> |
 |ユーザーが Microsoft Storeからアプリをダウンロードすることを許可する  <br/> |カスタム URI ポリシー  <br/> |
-|ユーザーが Cortana にアクセスすることを許可する  <br/> |**全般**\> **Cortana**は Intune の**オフ**マイクロソフト 365 のビジネスに設定されている場合に**ブロック**を設定します。  <br/> |
+|ユーザーが Cortana にアクセスすることを許可する  <br/> |**General** \> **Cortana** is set to **block** in Intune when set to **off** in Microsoft 365 Business.  <br/> |
 |ユーザーが Microsoft から Windows のヒントと広告を受け取ることを許可する  <br/> |Microsoft 365 Business でこれが [ **オフ**] に設定されている場合、[ **Windows スポットライト**] はすべてブロックされます。  <br/> |
-|Windows 10 デバイスを自動的に最新の状態に維持する  <br/> | **マイクロソフト Intune**では、この設定\>**サービスの更新プログラム - Windows 10 更新リング**、U の**10 の Windows のデバイス ポリシーを更新する**]、[**プロパティ**を選択して\>**の設定**。  <br/>  Microsoft 365 Business で [ **オン**] に設定されている場合、以下がすべて設定されます。  <br/> **サービス ブランチ**: **CB** (Microsoft 365 Business でこれがオフの場合は CBB)  <br/> **Microsoft 製品の更新プログラム**: **許可**  <br/> **Windows ドライバー**: **許可**  <br/> **自動更新の動作**: **メンテナンス時に自動的にインストールする**  <br/> **アクティブ時間の開始**: **6 AM**  <br/> **アクティブ時間の終了**: **10 PM**  <br/> **品質更新プログラムの延期期間 (日数)**: **0**  <br/> **機能更新プログラムの延期期間 (日数)**: **0**  <br/> **配信の最適化ダウンロード モード**: **HTTP と同じ NAT でのピアリングの組み合わせ**  <br/> |
+|Windows 10 デバイスを自動的に最新の状態に維持する  <br/> | This setting is in **Microsoft Intune** \> **Service updates - Windows 10 Update Rings**, choose U **pdate policy for Windows 10 devices**, and then **Properties** \> **Settings**.  <br/>  Microsoft 365 Business で [ **オン**] に設定されている場合、以下がすべて設定されます。  <br/> **サービス ブランチ**: **CB** (Microsoft 365 Business でこれがオフの場合は CBB)  <br/> **Microsoft 製品の更新プログラム**: **許可**  <br/> **Windows ドライバー**: **許可**  <br/> **自動更新の動作**: **メンテナンス時に自動的にインストールする**  <br/> **アクティブ時間の開始**: **6 AM**  <br/> **アクティブ時間の終了**: **10 PM**  <br/> **品質更新プログラムの延期期間 (日数)**: **0**  <br/> **機能更新プログラムの延期期間 (日数)**: **0**  <br/> **配信の最適化ダウンロード モード**: **HTTP と同じ NAT でのピアリングの組み合わせ**  <br/> |
 |||
    
 

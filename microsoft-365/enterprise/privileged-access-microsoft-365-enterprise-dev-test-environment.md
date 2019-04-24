@@ -3,106 +3,108 @@ title: Microsoft 365 Enterprise テスト環境の特権アクセスの管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 09/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+- M365-security-compliance
 ms.custom: Ent_TLGs
-description: アクセス権限の管理を有効にするのに Microsoft 365 エンタープライズ テスト環境に対応するこのテスト ラボ ガイド 』 を使用します。
-ms.openlocfilehash: 5f1a416a12171504af110ec62b9a7882143263e6
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: このテストラボガイドを使用して、Microsoft 365 Enterprise テスト環境で特権アクセス管理を有効にします。
+ms.openlocfilehash: 9cac4f941ba3eb45bfc2bf79075ba22515a589b9
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290772"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の特権アクセスの管理
 
-この資料の手順についてで Microsoft 365 エンタープライズ テスト環境でセキュリティを強化するのにはアクセス権限の管理を構成します。
+この記事の手順に従って、Microsoft 365 エンタープライズテスト環境のセキュリティを向上させるために、特権アクセス管理を構成します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: マイクロソフト 365 エンタープライズ テスト環境を構築します。
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
 
-最小要件で軽量な方法でアクセス権限の管理を構成する場合は、[軽量の基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)に指示します。
+最低限の要件を持つ軽量な方法で特権アクセス管理を構成する場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
-シミュレートされた企業内のアクセス権限の管理を構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)に指示します。
+シミュレートされたエンタープライズで特権アクセス管理を構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
 > [!NOTE]
-> アクセス権限管理のテストは、シミュレートされたエンタープライズ テスト環境には、シミュレートされたイントラネットをインターネットに接続されていると Windows サーバーの AD フォレストの場合、ディレクトリ同期します。ここで提供されている、オプションとしてテストすることができるように権限のアクセス管理と一般的な組織を表す環境で実験します。 
+> 権限のあるアクセス管理をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、一般的な組織を表す環境で、特権アクセス管理をテストしてテストできるようにするためのオプションとして提供されています。 
 
-## <a name="phase-2-configure-privileged-access-management"></a>フェーズ 2: アクセス権限の管理を構成します。
+## <a name="phase-2-configure-privileged-access-management"></a>フェーズ 2: 特権アクセス管理を構成する
 
-このフェーズでは、承認者グループの構成し、Microsoft 365 エンタープライズ テスト環境のアクセス権限の管理を有効にします。詳細および特権の概要の管理にアクセス、 [Office 365 にアクセス権限の管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)を参照してください。
+このフェーズでは、承認者グループを構成し、Microsoft 365 Enterprise テスト環境の特権アクセス管理を有効にします。 権限のあるアクセス管理の詳細と概要については、「 [Office 2010 での特権アクセス管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)」を参照してください。
 
-設定し、Office 365 の組織内のアクセス権限を使用してこれらの手順に従います。
+Office 365 組織で特権アクセスをセットアップして使用するには、次の手順を実行します。
 
-- [手順 1: 承認者のグループを作成します。](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
+- [手順 1: 承認者のグループを作成する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
 
-    特権アクセスの使用を開始する前に、管理者特権、特権を持つタスクにアクセスするための着信方向の要求の承認権限を持ってことを確認します。承認者グループの一部になっているユーザーはアクセス権の要求を承認することになります。これは、Office 365 のメールが有効なセキュリティ グループを作成することによって有効になります。テスト環境で「特権を持つアクセスの承認」をという名前の新しいセキュリティ グループを作成し、、追加の"3" 以前のテスト ラボ ガイドの手順で作成済みのユーザーです。
+    特権アクセスの使用を開始する前に、昇格されたタスクと特権タスクへのアクセスのための受信要求に対して、誰がだれに承認権限を付与するかを決定します。 承認者グループの一部であるユーザーは、アクセス要求を承認できます。 これは、Office 365 でメールが有効なセキュリティグループを作成することによって有効になります。 テスト環境に「特権アクセス承認者」という名前の新しいセキュリティグループを作成し、以前のテストラボガイドの手順で作成した「User 3」を追加します。
 
-- [手順 2: アクセス権限を有効にします。](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
+- [手順 2: 特権アクセスを有効にする](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
 
-    アクセス権限を明示的にオンにする Office 365 の既定の承認者グループとアクセス権限の管理アクセスの制御から除外することがシステム アカウントのセットを含む必要があります。このガイドの第 3 段階を開始する前に Office 365 の組織内のアクセス権限を有効にすることを確認します。
+    既定の承認者グループを使用して Office 365 で特権アクセスを明示的に有効にする必要があります。また、特権アクセス管理アクセス制御から除外する必要があるシステムアカウントのセットを含める必要があります。 このガイドのフェーズ3を開始する前に、必ず Office 365 組織で特権アクセスを有効にしてください。
 
-## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>フェーズ 3: は、承認が昇格した特権と特権を持つタスクに必要であることを確認します。
-このフェーズでは、アクセス権限ポリシーが機能して、そのユーザーが管理者特権、特権の定義済みのタスクを実行するために承認を必要とするを確認します。
+## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>フェーズ 3: 昇格された権限のあるタスクに承認が必要であることを確認する
+このフェーズでは、特権アクセスポリシーが機能していること、および定義された昇格した権限のあるタスクを実行する承認がユーザーに必要であることを確認します。
 
-### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>特権のアクセス ポリシーで定義されていないタスクを実行する機能をテストします。
+### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義されていないタスクを実行するためのテスト機能
 
-まず、テスト環境でグローバル ・ アドミニストレーターとして構成されたユーザーの資格情報を持つ Exchange 管理 PowerShell に接続し、新しいジャーナル ルールを作成しようとしてください。[新規 JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps)タスクは、組織の管理者のアクセス ポリシーで現在定義されていません。
+最初に、テスト環境で全体管理者として構成されているユーザーの資格情報を使用して Exchange 管理 PowerShell に接続し、新しいジャーナルルールを作成します。 [new-journalrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps)タスクは、現在、組織の特権アクセスポリシーでは定義されていません。
 
-1. ローカル コンピューターを開き、サインインを Exchange オンライン リモート PowerShell モジュールでは、**米国 Microsoft Corporation** > **Microsoft Exchange Online リモート PowerShell モジュール**のグローバル管理を使用するが、テスト環境を考慮します。
+1. ローカルコンピューターで、テスト環境のグローバル管理者アカウントを使用して、 **microsoft Corporation** > の exchange online リモート powershell モジュールにサインインし、microsoft**exchange online**リモート powershell モジュールを開きます。
 
-2. Exchange 管理 Powershell では、組織の新しいジャーナル ルールを作成します。
+2. Exchange 管理 Powershell で、組織の新しいジャーナルルールを作成します。
 
 ```
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
-4. ジャーナル ルールの新規作成されたこと正常に Exchange 管理 PowerShell を表示します。
+4. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>新規 JournalRule タスク用の新しいアクセス権限ポリシーを作成します。
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>new-journalrule タスクの新しい特権アクセスポリシーを作成する
 
 > [!NOTE]
-> 手順 1 と 2 からは、このガイドの第 2 フェーズが完了していない場合、は、「特権のアクセスの承認」という名前の承認者のグループを作成して、テスト環境でのアクセス権限有効にする手順を必ず次にあります。
+> このガイドのフェーズ2の手順1と2をまだ完了していない場合は、「権限アクセス承認者」という名前の承認者のグループを作成し、テスト環境で特権アクセスを有効にする手順に従ってください。
 
-1. テスト環境のグローバル管理者アカウントに資格情報を使用して[Microsoft 365 管理センター](https://portal.office.com)に署名します。
+1. 資格情報を使用して[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。テスト環境のグローバル管理者アカウントです。
 
-2. **設定**に移動し、管理センターで、 > **のセキュリティとプライバシー** > **のアクセス権限**。
+2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
-3. **アクセス ポリシーを管理し要求**を選択します。
+3. [**アクセスポリシーと要求の管理**] を選択します。
 
-4. **ポリシーを構成する**を選択し、[**ポリシーの追加**] を選択します。
+4. [**ポリシーの構成**] を選択し、[**ポリシーの追加**] を選択します。
 
-5. ドロップ ダウン フィールドから選択または次の値を入力してください。
+5. ドロップダウンフィールドで、次の値を選択または入力します。
     
     **ポリシーの種類**: タスク
 
-    **ポリシーのスコープ**: Exchange
+    **ポリシースコープ**: Exchange
 
-    **ポリシー名**: 新しいジャーナル ルール
+    **ポリシー名**: 新しいジャーナルルール
 
-    **承認タイプ**: 手動
+    **承認の種類**: 手動
 
-    **承認グループ**: アクセスの権限を持つ承認者
+    **承認グループ**: 特権アクセス承認者
 
-6. **作成**し、[**閉じる**を選択します。ポリシーを完全に構成し、有効にするのには数分かかる場合があります。承認要件を次の手順でテストする前に完全に有効にするポリシーの時間を確保することを確認します。
+6. [**作成**] を選択し、[**閉じる**] をクリックします。 ポリシーが完全に構成され、有効になるまでに数分かかる場合があります。 次の手順で承認の要件をテストする前に、ポリシーが完全に有効になるまでの時間を確保してください。
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>特権のアクセス ポリシーで定義されている新しい JournalRule タスクの承認要件をテストします。
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義された new-journalrule タスクのテスト承認要件
 
-1. ローカル コンピューターを開き、サインインを Exchange オンライン リモート PowerShell モジュールでは、**米国 Microsoft Corporation** > テスト用アカウントの**Microsoft Exchange Online リモート PowerShell モジュール**を使用してグローバル管理者を使用して環境です。
+1. ローカルコンピューターで、テストにグローバル管理者アカウントを使用して、 **microsoft Corporation** > の exchange online リモート powershell モジュールを開き、microsoft**exchange online リモート powershell モジュール**にサインインします。environment.
 
-2. Exchange 管理 Powershell では、組織の新しいジャーナル ルールを作成します。
+2. Exchange 管理 Powershell で、組織の新しいジャーナルルールを作成します。
 
 ```
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
-3. Exchange 管理 PowerShell の"「アクセス許可不十分です。 のエラーをを参照してください。
+3. Exchange 管理 PowerShell の "Insuffient permissions" エラーを表示する:
 
 ```
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -112,52 +114,52 @@ Insufficient permissions. Please raise an elevated access request for this task.
     + PSComputerName        : outlook.office365.com
 ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>新規 JournalRule タスクを使用して、新しいジャーナル ルールを作成するアクセス権の要求
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>new-journalrule タスクを使用して新しいジャーナルルールを作成するためのアクセス権を要求する
 
-1. テスト環境のグローバル管理者アカウントを使用して[Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. テスト環境のグローバル管理者アカウントを使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
-2. **設定**に移動し、管理センターで、 > **のセキュリティとプライバシー** > **のアクセス権限**。
+2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
-3. **アクセス ポリシーを管理し要求**を選択します。
+3. [**アクセスポリシーと要求の管理**] を選択します。
 
-4. **新しい要求**を選択します。ドロップ ダウン フィールドから、組織の適切な値を選択します。
+4. [**新しい要求**] を選択します。 ドロップダウンフィールドで、組織に適切な値を選択します。
 
     **要求の種類**: タスク
 
     **要求スコープ**: Exchange
 
-    **要求**: 新しいジャーナル ルール
+    **要求**: 新しいジャーナルルール
 
     **期間 (時間)**: 2
 
-    **コメント**: 新しいジャーナル ルールを作成するアクセス許可を要求します。
+    **コメント**: 新しいジャーナルルールを作成するためのアクセス許可を要求する
 
-5. **保存**し、**閉じる**を選択します。要求は、電子メールでの承認者のグループに送信されます。
+5. [**保存**] を選択し、[**閉じる**] をクリックします。 要求は、電子メールを介して承認者のグループに送信されます。
 
-### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>新しいジャーナル ルールを作成するためのアクセス権限の要求を承認します。
+### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>新しいジャーナルルールの作成に関する特権アクセス要求を承認する
 
-1. ユーザー 3 のテスト環境 (テスト環境で"特権を持つアクセスを承認者] セキュリティ グループのメンバー) の資格情報を使用して[Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. テスト環境のユーザー3の資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします (テスト環境の "特権アクセス承認者" セキュリティグループのメンバー)。
 
-2. **設定**に移動し、管理センターで、 > **のセキュリティとプライバシー** > **のアクセス権限**。
+2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
-3. **アクセス ポリシーを管理し要求**を選択します。
+3. [**アクセスポリシーと要求の管理**] を選択します。
 
-4. 保留中の要求を選択し、[新しい仕訳ルールを作成するのにはグローバル管理者アカウントへのアクセスを許可する**承認**を選択します。承認が与えられていることを確認通知メールは、グローバル管理者アカウント (要求元のユーザー) に送信されます。  
+4. 保留中の要求を選択し、[**承認**] を選択して、新しいジャーナルルールを作成するためのグローバル管理者アカウントへのアクセス権を付与します。 承認が付与されたことを確認する通知メールは、グローバル管理者アカウント (要求元ユーザー) に送信されます。  
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>新規 JournalRule タスクの承認のアクセス権限を持つ新しいジャーナル ルールを作成するテスト
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>new-journalrule タスクの特権アクセスが承認された新しいジャーナルルールを作成するテスト
 
-1. ローカル コンピューターを開き、サインインを Exchange オンライン リモート PowerShell モジュールでは、**米国 Microsoft Corporation** > **Microsoft Exchange Online リモート PowerShell モジュール**のグローバル管理を使用するが、テスト環境を考慮します。
+1. ローカルコンピューターで、テスト環境のグローバル管理者アカウントを使用して、 **microsoft Corporation** > の exchange online リモート powershell モジュールにサインインし、microsoft**exchange online**リモート powershell モジュールを開きます。
 
-2. Exchange 管理 Powershell では、組織の新しいジャーナル ルールを作成します。
+2. Exchange 管理 Powershell で、組織の新しいジャーナルルールを作成します。
 
 ```
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
-3. ジャーナル ルールの新規作成されたこと正常に Exchange 管理 PowerShell を表示します。
+3. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
 
 ## <a name="next-step"></a>次の手順
 
-追加[情報の保護](m365-enterprise-test-lab-guides.md#information-protection)機能と、テスト環境での機能について説明します。
+テスト環境でのその他の[情報保護](m365-enterprise-test-lab-guides.md#information-protection)機能と機能について説明します。
 
 ## <a name="see-also"></a>関連項目
 

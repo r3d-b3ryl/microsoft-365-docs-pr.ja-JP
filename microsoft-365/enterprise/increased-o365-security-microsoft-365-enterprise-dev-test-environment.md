@@ -1,121 +1,117 @@
 ---
-title: Microsoft 365 Enterprise テスト環境の強化された Office 365 セキュリティ
+title: microsoft 365 エンタープライズテスト環境の microsoft 365 セキュリティの強化
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: その他の Office 365 のセキュリティ設定を有効にするのに Microsoft 365 エンタープライズ テスト環境に対応するこのテスト ラボ ガイド 』 を使用します。
-ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の microsoft 365 セキュリティ設定を有効にします。
+ms.openlocfilehash: 54e05122dcbe5d4e24f092536897f2a8ad449e05
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283657"
 ---
-# <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の強化された Office 365 セキュリティ
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>microsoft 365 エンタープライズテスト環境の microsoft 365 セキュリティの強化
 
-この資料の手順についてで Microsoft 365 エンタープライズ テスト環境でセキュリティを強化する追加の Office 365 の設定を構成します。
+この記事の手順に従って、microsoft 365 エンタープライズテスト環境のセキュリティを強化するために、その他の microsoft 365 設定を構成します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: マイクロソフト 365 エンタープライズ テスト環境を構築します。
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
 
-最小要件で軽量な方法で Office 365 のセキュリティを強化を構成する場合は、[軽量の基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)に指示します。
+最小要件での軽量な方法で、強化された Microsoft 365 セキュリティを構成するだけの場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
-シミュレートされた企業で Office 365 のセキュリティを強化を構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)に指示します。
+シミュレートされたエンタープライズで、強化された Microsoft 365 セキュリティを構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従ってください。
   
 > [!NOTE]
-> Office 365 のセキュリティ強化のテストは、シミュレートされたエンタープライズ テスト環境には、シミュレートされたイントラネットをインターネットに接続されていると Windows サーバーの AD フォレストの場合、ディレクトリ同期します。自動化されたライセンスとグループのメンバーシップをテストし、一般的な組織を表す環境で実験するためのオプションとしてここで。 
+> Microsoft 365 セキュリティのテストでは、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズテスト環境を必要としません。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
 
 
-## <a name="phase-2-configure-increased-office-365-security"></a>フェーズ 2: Office 365 のセキュリティ強化の構成します。
+## <a name="phase-2-configure-increased-microsoft-365-security"></a>フェーズ 2: Microsoft 365 のセキュリティ強化を構成する
 
-このフェーズでは、Microsoft 365 エンタープライズ テスト環境を Office 365 のセキュリティを向上させるを有効にします。追加の詳細と設定、[セキュリティ強化のため、Office 365 のテナントの構成](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)を参照してください。
+このフェーズでは、microsoft 365 エンタープライズテスト環境に対して、強化された microsoft 365 セキュリティを有効にします。 その他の詳細と設定については、「 [Configure your Office 365 tenant for security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)」を参照してください。
 
-### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>現代の認証をサポートしていないアプリケーションをブロックするのには SharePoint Online を構成します。
+### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>先進認証をサポートしていないアプリをブロックするように SharePoint Online を構成する
 
-現代の認証をサポートしていないアプリケーションの[id とデバイスのアクセスの構成](microsoft-365-policies-configurations.md)、Microsoft 365 サブスクリプションと、デジタル資産のセキュリティ保護の重要な要素である、それらを適用することはできません。 
+モダン認証をサポートしていないアプリには、 [id とデバイスのアクセス構成](microsoft-365-policies-configurations.md)を適用できません。これは、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティ保護するための重要な要素です。 
 
-1. Office のポータルに移動 ([https://office.com](https://office.com)) し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
+1. office ポータル ([https://office.com](https://office.com)) に移動し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
     
-  - 軽量の Microsoft 365 テスト環境を使用する場合、ローカル コンピューターからサインインします。
+  - ライトウェイトの Microsoft 365 テスト環境を使用している場合は、ローカルコンピューターからサインインします。
     
-  - Microsoft 365 のシミュレートされたエンタープライズ テスト環境を使用する場合は、CLIENT1 バーチャル マシンに接続して、CLIENT1 からサインインし、 [Azure ポータル](https://portal.azure.com)を使用します。
+  - シミュレートされたエンタープライズ Microsoft 365 テスト環境を使用している場合は、 [Azure portal](https://portal.azure.com)を使用して client1 仮想マシンに接続し、client1 からサインインします。
  
-2. **Microsoft 365 管理者センター** ] タブで、[**管理**] をクリックします。
-3. [新しい**Microsoft 365 管理者センター** ] タブをクリックして**管理センター > SharePoint**。
-4. [新しい**SharePoint 管理者センター** ] タブで、**アクセス制御**をクリックします。
-5. **現代の認証をサポートしていないアプリケーション**では、[**ブロック**] をクリックし、[ **OK**] をクリックします。
+2. **Microsoft 365 管理センター**のタブで、[**管理者**] をクリックします。
+3. 新しい**Microsoft 365 管理センター**のタブで、[**管理センター > SharePoint**] をクリックします。
+4. [新しい**SharePoint 管理センター** ] タブで、[**アクセス制御**] をクリックします。
+5. **モダン認証をサポートしていないアプリ**の下で、[**ブロック**] をクリックし、[ **OK]** をクリックします。
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>脅威保護の詳細設定を有効にする) の SharePoint、ビジネス、およびマイクロソフトのチームの OneDrive
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>SharePoint、OneDrive for business、Microsoft Teams の Advanced Threat Protection を有効にする
 
-Office 365 の高度な脅威保護 (ATP) は、機能の Exchange オンライン保護 (EOP) を支援するあなたの電子メールからのマルウェアのままです。分析ツールは、Exchange 管理センター (EAC) またはセキュリティ ポリシーを作成する & ユーザーを保証するためコンプライアンス センターでは、識別できない悪意のある電子メールの添付ファイルまたはリンクのみにアクセスします。詳細については、[高度な脅威保護](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)を参照してください。
+Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsoft Teams は、悪意のあるファイルを誤って共有することから組織を保護します。
 
-1. [お使いのブラウザーの [ **Microsoft 365 管理センター** ] タブをクリックして**管理センター > セキュリティおよびコンプライアンスに関する**。
-2. 新しい**セキュリティおよびコンプライアンスに関する**タブをクリックして**脅威の管理 > ポリシー**。
-3. **ATP の安全な添付ファイル**をクリックします。
-4. **安全な添付ファイル**のウィンドウ**SharePoint、OneDrive、およびマイクロソフトのチームの分析ツールを有効にする**を選択し、[**保存**] をクリックします。
+1. [Office 365 Security & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
 
-### <a name="enable-anti-malware"></a>マルウェア対策を有効にします。
+2. 左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー > 安全な添付ファイル**] を選択します。 
 
-マルウェアは、ウイルスやスパイウェアで構成されます。その他のプログラムやデータをウイルスに感染し、感染するプログラムを探してコンピューター全体にレプリケートされます。スパイウェアは、個人情報、サインイン情報などの個人データを収集し、マルウェアの作成者に送信するマルウェアを意味します。 
+3. [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。
 
-Office 365 は、組み込みのマルウェアやスパムのフィルタ リング機能が悪意のあるソフトウェアからの受信メッセージと送信メッセージを保護するため、迷惑メールから保護するためです。詳細については、 [Office 365 でのスパム対策およびマルウェア対策保護](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)を参照してください。
+4. **[保存]** をクリックします。
 
-マルウェア対策のことを確認するには、一般的な添付ファイルの種類を持つファイルの処理を実行しています。
 
-1. **ポリシー**のページに戻るには、ブラウザーの [戻る] ボタンをクリックします。
+### <a name="enable-anti-malware"></a>マルウェア対策を有効にする
+
+マルウェアは、ウイルスとスパイウェアから構成されます。 ウイルスは、他のプログラムやデータに感染し、感染できるプログラムを探してコンピューター全体に蔓延します。 スパイウェアは、サインイン情報および個人データなどの個人情報を収集して作成者に送り返すマルウェアです。 
+
+Office 365 には、受信および送信メッセージを悪意のあるソフトウェアから保護し、スパムから保護するのに役立つ、組み込みのマルウェアおよびスパムフィルタリング機能が用意されています。 詳細については、「[スパム対策 & のマルウェア対策保護 (Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection) )」を参照してください。
+
+一般的な添付ファイルの種類を持つファイルに対してマルウェア対策処理が実行されることを確認するには、次のようにします。
+
+1. ブラウザーの [戻る] ボタンをクリックすると、[**ポリシー** ] ページに戻ります。
 2. [**マルウェア対策**] をクリックします。
-3. という名前の**既定**のポリシーをダブルクリックします。
-4. **マルウェア対策ポリシー** ] ウィンドウで、[**設定**] をクリックします。
-4. **一般的な添付ファイルの種類のフィルター**] の下をクリックして**の > 保存**。
+3. **Default**という名前のポリシーをダブルクリックします。
+4. [**マルウェア対策ポリシー** ] ウィンドウで、[**設定**] をクリックします。
+4. [**一般的な添付ファイルの種類のフィルター**] で、[ **> 保存**] をクリックします。
 
 
-## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>フェーズ 3: Office 365 のセキュリティ ツールとログを確認します。
+## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>フェーズ 3: Office 365 のセキュリティツールとログを検証する
 
-このフェーズでは、セキュリティ イベントを通知して、全体的なセキュリティ体制を評価するための組み込みのサービスを確認します。
+このフェーズでは、セキュリティイベントについての情報を伝える組み込みのサービスを見て、全体的なセキュリティ体制を測定します。
 
-### <a name="threat-management-dashboard"></a>脅威管理ダッシュ ボード
+### <a name="threat-management-dashboard"></a>脅威管理ダッシュボード
 
-Office 365 の脅威の管理制御し、管理を組織のデータへのモバイル デバイスへのアクセス、データの損失から組織を保護するため悪意のあるソフトウェアおよび迷惑メールからの受信メッセージと送信メッセージを保護するためにすることができます。ドメインからアカウントを管理ドメインの評判を保護するために、送信者がスプーフィング悪意を持っているかどうかを判断するのには脅威を使用します。詳細については、 [Office 365 のセキュリティとコンプライアンス センターでの脅威の管理](https://docs.microsoft.com/office365/securitycompliance/threat-management)を参照してください。
+Office 365 の脅威管理は、組織のデータへのモバイルデバイスアクセスの制御と管理、データ損失からの組織の保護、および悪意のあるソフトウェアとスパムからの受信および送信メッセージの保護に役立ちます。 また、脅威管理を使用して、ドメインの評価を保護し、送信者が悪意のあるドメインからのアカウントを偽装しているかどうかを判断します。 詳細については、「 [Microsoft 365 セキュリティセンターの脅威管理](https://docs.microsoft.com/office365/securitycompliance/threat-management)」を参照してください。
 
-Office 365 の脅威の管理ダッシュ ボードを表示するのには次の手順を使用します。
 
-1. [お使いのブラウザーの [ **Microsoft 365 管理センター** ] タブをクリックして**管理センター > セキュリティおよびコンプライアンスに関する**。
-2. 新しい**セキュリティおよびコンプライアンスに関する**タブをクリックして**脅威の管理 > ダッシュ ボード**。
-3. 新しい**ダッシュ ボード**] タブで、ブラウザーで、マルウェアの傾向、洞察、およびダッシュ ボードの他のセクションに注意してください。
+### <a name="office-365-cloud-app-security-dashboard"></a>Office 365 Cloud App Security dashboard
 
-### <a name="office-365-cloud-app-security-dashboard"></a>Office 365 のクラウド アプリケーションのセキュリティ ダッシュ ボード
+office 365 Cloud App Security (以前の office 365 Advanced Security Management) を使用すると、office 365 サブスクリプションでの疑わしいアクティビティを監視して通知するポリシーを作成して、そのことを調査して可能にすることができます。修復アクション。 詳細については、「 [Office 365 Cloud App Security の概要](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview)」を参照してください。
 
-、Office 365 高度なセキュリティの管理と呼ばれていたクラウドのアプリケーションのセキュリティを office 365 では、ポリシーで監視し、調査の結果、実行可能なことができますように、Office 365 サブスクリプションの場合、不審なアクティビティの通知を作成できます。修復アクションです。詳細については、[概要の Office 365 クラウド アプリケーションのセキュリティ](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview)を参照してください。
+<!--
+### Microsoft 365 Secure Score
 
-1. [お使いのブラウザーの [ **Microsoft 365 管理センター** ] タブをクリックして**管理センター > セキュリティおよびコンプライアンスに関する**。
-2. 新しい**セキュリティおよびコンプライアンスに関する**タブをクリックして**警告 > アラートを高度な管理 > には、Office 365 のクラウド アプリケーションのセキュリティ**。
-3. 新しい**クラウド アプリケーションのセキュリティ**] タブでは、ダッシュ ボード ビューと、Office 365 サブスクリプション内でさまざまな活動を監視する既定のポリシーのリストを注意してください。
-4. 追跡されているクラウド アプリケーションのセキュリティ活動の概要を表示するダッシュ ボードのアイコンをクリックします。
-5. **調査**(眼鏡のアイコン) と、**アクティビティ ・ ログ**を最近使用した記号] の一覧およびその他のアクティビティを参照してください] をクリックします。
+1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
+2. On the **Dashboard tab**, note your current Secure Score and the list of actions in the queue to increase your score.
+!-->
 
-### <a name="secure-score"></a>セキュリティで保護されたスコア
 
-1. お使いのブラウザーで新しいタブを作成し、 **securescore.office.com**に移動します。
-2. [**ダッシュ ボード] タブ**で、あなたのスコアを向上させるには、現在のセキュリティで保護されたスコアとキュー内のアクションのリストに注意してください。
+## <a name="next-steps"></a>次のステップ
 
-情報と実稼働環境でこれらの設定を構成するのにはリンクの**情報の保護**の段階では、[構成 Office 365 用にセキュリティを強化する](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)手順を参照してください。
+これらの設定を運用環境で構成する情報およびリンクについては、**情報保護**フェーズの「 [Microsoft のセキュリティを構成](infoprotect-configure-increased-security-office-365.md)する」の手順を参照してください。
 
-## <a name="next-step"></a>次の手順
-
-追加[情報の保護](m365-enterprise-test-lab-guides.md#information-protection)機能と、テスト環境での機能について説明します。
+テスト環境でのその他の[情報保護](m365-enterprise-test-lab-guides.md#information-protection)機能と機能について説明します。
 
 ## <a name="see-also"></a>関連項目
 

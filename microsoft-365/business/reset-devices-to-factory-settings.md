@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: 'Microsoft 365 のビジネスを使用する方法については工場出荷時の 10 の Windows デバイスをリセットします。 '
-ms.openlocfilehash: ed745ea792f755ada17b3b327032246dab16d94b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Microsoft 365 Business を使用して Windows 10 デバイスを出荷時にリセットする方法について説明します。 '
+ms.openlocfilehash: 8340bd6a24f3b4d875f6482c03a69275a9a48f33
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283725"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 
@@ -29,13 +32,11 @@ ms.locfileid: "26869532"
   
 1. グローバル管理者の資格情報を使用して、[管理センター](https://aka.ms/bcsportal)にサインインします。 
     
-2. 管理センターの [ **デバイス アクション**] カードで、[ **出荷時の設定にリセット**] を選びます。
+2. 管理センターの左側のナビゲーションで、[**デバイス** \> **管理**] を選択します。
+
+3. [**管理**] ページで、データを削除するデバイスの横にあるチェックボックスをオンにして、[**管理**] ドロップダウンで [**ファクトリのリセット**] を選択します。
     
-    ![On the Device actions card, choose Factory reset](media/7caddd12-207e-4c99-b61c-0495fc5f55e3.png)
-  
-3. [ **出荷時の設定にリセット**] ウィンドウで、データを削除するデバイスの横にあるチェック ボックスをオンにして、[ **選択**] を選びます。
-    
-4. **以下のデバイスをリセットは、工場出荷時にすることを確認する**ウィンドウで、**確認**を選択します\>**閉じる**。
+4. On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.
     
   
 

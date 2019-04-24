@@ -8,76 +8,76 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Microsoft 365 テスト環境でデバイスを登録し、それらをリモートで管理するには、このテスト ラボ ガイド 』 を使用します。
-ms.openlocfilehash: a78db19099ccacd1b2f62e8438d1749f28d22f52
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: このテストラボガイドを使用して、Microsoft 365 テスト環境にデバイスを登録し、リモートで管理します。
+ms.openlocfilehash: e653b3e6cafb6ee2eb492709a2d060c7b92a6904
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281252"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境に iOS および Android デバイスを登録する
 
-によって、この資料に記載されている手順に従うことができます登録し、iOS および Android デバイス用の基本的なモバイル デバイス管理機能を Microsoft 365 エンタープライズ テスト環境でテストします。
+この記事に記載されている手順に従って、Microsoft 365 エンタープライズテスト環境で iOS および Android デバイス用の基本的なモバイルデバイス管理機能を登録し、テストすることができます。
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: マイクロソフト 365 エンタープライズ テスト環境を構築します。
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
 
-最小要件で軽量な方法で iOS および Android のデバイスを登録する場合は、[軽量の基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)に指示します。
+最小要件を使用して iOS および Android デバイスを軽量な方法で登録する場合は、「軽量な[基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
-シミュレートされた企業であっを登録する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)に指示します。
+シミュレートされたエンタープライズに iOS および Android デバイスを登録する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の指示に従ってください。
   
 > [!NOTE]
-> ライセンス テストを自動化し、グループのメンバーシップには、シミュレートされたエンタープライズ テスト環境には、シミュレートされたイントラネットをインターネットに接続されている必要はありませんし、Windows サーバーの AD フォレストの場合、ディレクトリ同期します。自動化されたライセンスとグループのメンバーシップをテストし、一般的な組織を表す環境で実験するためのオプションとしてここで。 
+> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
 >  
 
-## <a name="phase-2-enroll-your-ios-and-android-devices"></a>フェーズ 2: iOS および Android デバイスを登録します。
+## <a name="phase-2-enroll-your-ios-and-android-devices"></a>フェーズ 2: iOS および Android デバイスを登録する
 
-指示を使用して、最初に、[をインストールし、会社のポータル アプリケーションにサインイン](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios)、テスト環境を Microsoft Intune 会社のポータル アプリケーションをカスタマイズするのには。
+最初に、インストールの手順を使用して、[ポータルサイトアプリにサインイン](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios)し、テスト環境用の Microsoft Intune ポータルサイトアプリをカスタマイズします。
 
-次に、手順を使用[、会社のリソースへのアクセス権を設定](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)iOS デバイスを登録します。
+次に、「[セットアップアクセス権を会社のリソースに](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)登録する」の手順を使用して、iOS デバイスを登録します。
 
-次に、手順を使用[Intune に Android デバイスの登録](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)Android のデバイスを登録します。
+次に、「 [Intune に android デバイスを登録](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)する」の手順を使用して android デバイスを登録します。
 
-## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>フェーズ 3: は、iOS および Android のデバイスをリモートで管理します。
+## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>フェーズ 3: iOS および Android デバイスをリモートで管理する
 
-Microsoft Intune では、リモート ロックとパスコードの両方のリセット機能を提供します。他のユーザーを失った場合、デバイス、デバイスをリモートでロックできます。パスコードを忘れてしまった人の場合リモートでリセットすることができます。
+Microsoft Intune には、リモート ロック機能とパスコードのリセット機能あります。 ユーザーがデバイスを紛失した場合は、デバイスをリモートからロックできます。 他のユーザーがパスコードを忘れた場合は、リモートでリセットできます。
   
-IOS または Android デバイスをリモートでロック。
+iOS または Android デバイスをリモートでロックするには、次の操作を行います。
 
-1. Azure ポータルにサインインするのに[https://portal.azure.com](https://portal.azure.com)のグローバル管理者アカウントの資格情報を使用します。
-2. **すべてのサービス**をクリックして、 **Intune**を入力し、 **Intune**] をクリックします。
-3. クリックして**デバイス > のすべてのデバイス**。
-4. デバイスの一覧で、iOS または Android デバイスをクリック**リモート ロック**の動作です。
+1. 全体管理者アカウントの資格情報[https://portal.azure.com](https://portal.azure.com)を使用して Azure portal にサインインします。
+2. [**すべてのサービス**] をクリックし、「 **intune**」と入力して、[ **intune**] をクリックします。
+3. [ **devices > All devices**] をクリックします。
+4. デバイスの一覧で、iOS または Android デバイスをクリックし、[**リモートロック**] アクションをクリックします。
 
     
 パスコードをリモートからリセットするには、
 
-1. 必要な場合がある Azure ポータルにサインイン[https://portal.azure.com](https://portal.azure.com)のグローバル管理者アカウントの資格情報を使用します。
-2. **すべてのサービス**をクリックして、 **Intune**を入力し、 **Intune**] をクリックします。
-3. クリックして**デバイス > のすべてのデバイス**。
-4. デバイスの一覧から管理、iOS または Android デバイスをクリックして**を選択.詳細**。**パスコードを削除する**デバイスのリモート操作を選択します。
+1. 必要に応じて、全体管理者アカウントの[https://portal.azure.com](https://portal.azure.com)資格情報を使用して Azure portal にサインインします。
+2. [**すべてのサービス**] をクリックし、「 **intune**」と入力して、[ **intune**] をクリックします。
+3. [ **devices > All devices**] をクリックします。
+4. 管理するデバイスのリストから、iOS または Android デバイスをクリックし、[...] を選択し**ます。詳細を参照**してください。 次に、[**パスコード**デバイスのリモートアクションの削除] を選択します。
 
-追加の実験を行うには、[利用可能なデバイスの操作](https://docs.microsoft.com/intune/device-management#available-device-actions)を参照してください。
+その他の実験については、「[使用可能なデバイスの操作](https://docs.microsoft.com/intune/device-management#available-device-actions)」を参照してください
 
     
 ## <a name="next-step"></a>次の手順
 
-[モバイル デバイスの管理](m365-enterprise-test-lab-guides.md#mobile-device-management)機能が追加し、テスト環境での機能について説明します。
+テスト環境での[モバイルデバイス管理](m365-enterprise-test-lab-guides.md#mobile-device-management)機能とその他の機能について説明します。
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
   
-[Microsoft 365 企業のコンプライアンス ポリシーをデバイスのテスト環境](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Microsoft 365 Enterprise テスト環境のデバイスコンプライアンスポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
 
-[エンタープライズ モビリティとセキュリティ (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

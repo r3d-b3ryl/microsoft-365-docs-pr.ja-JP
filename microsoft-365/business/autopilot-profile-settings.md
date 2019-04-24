@@ -4,14 +4,17 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -22,26 +25,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: 自動操縦装置のプロファイルを使用して、ユーザーのデバイス上の Windows のインストール方法を制御できます。プロファイルには、既定値が含まれているし、オプションの設定は、Cortana のインストールをスキップするように。
-ms.openlocfilehash: 5440286f1363780c87ab60514584c4addfeea0b2
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 自動操縦プロファイルは、ユーザーデバイスへの Windows のインストール方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなどの、既定の設定とオプションの設定が含まれています。
+ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276943"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 
 ## <a name="autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 
-Windows の自動操縦装置のプロファイルを使用してユーザー デバイス上インストール取得方法を制御できます。プロファイルには、次の設定が含まれています。
+自動操縦プロファイルを使用して、ユーザーのデバイスに Windows をインストールする方法を制御できます。 プロファイルには、次の設定が含まれています。
   
- **自動操縦既定の機能 (必須) に自動的に設定されています。**
+ **自動操縦既定の機能 (必須) は、自動的に設定されます。**
   
 |**設定**|**説明**|
 |:-----|:-----|
-|Cortana、OneDrive、OEM の登録のスキップ  <br/> |Cortana および個人の OneDrive のようなコンシューマー アプリケーションのインストールをスキップします。デバイス ユーザーは、彼または彼女は、デバイス上のローカル管理者として、後でインストールできます。元の製造元の登録は、マイクロソフトの 365 のビジネスが、デバイスを管理するためにスキップされます。  <br/> |
-|会社のブランドが表示されたサインイン画面  <br/> |会社は、 [Office 365 のサインイン ページを追加、会社のブランド](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)には、デバイスのユーザーは、サインイン時に、その経験を取得します。  <br/> |
+|Cortana、OneDrive、OEM の登録のスキップ  <br/> |Cortana や個人用 OneDrive のようなコンシューマーアプリのインストールをスキップします。 デバイスのユーザーがデバイスのローカル管理者である場合は、後でインストールできます。 デバイスは Microsoft 365 Business によって管理されるため、元の製造元の登録はスキップされます。  <br/> |
+|会社のブランドが表示されたサインイン画面  <br/> |会社に[Office 365 のサインインページに会社のブランドを追加](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)することがある場合、デバイスユーザーはサインインしたときにそのような操作を取得します。  <br/> |
 |構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー ID は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business 資格情報を使って Windows と Office 365 にサインインします。  <br/> |
    
  **オプションの設定:**

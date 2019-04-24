@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のビジネスを管理する Windows 10 のドメインに参加しているデバイスを有効にします。
+title: Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,39 +19,39 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: 保護するために Microsoft 365 を有効にする方法を学ぶ 10 の Windows デバイスがローカルの AD に参加しています。
-ms.openlocfilehash: 6e66a2c5417c9037232c1ada654d4cac3c520607
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 を有効にして、ローカルの AD に参加している Windows 10 デバイスを保護する方法について説明します。
+ms.openlocfilehash: d61b3bf6be50d6b21e7b883774567bb63995e60e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278079"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Microsoft 365 のビジネスを管理する Windows 10 のドメインに参加しているデバイスを有効にします。
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする
 
-組織は、Windows サーバーの Active Directory の設置型を使用している場合は、ローカルの認証を必要とする設置型のリソースへのアクセスを維持しながら、10 の Windows のデバイスを保護するために Microsoft 365 のビジネスを設定できます。Azure AD で 10 の Windows デバイスを登録して、Microsoft 365 のビジネスでのモバイル デバイス管理の登録に続いて、Azure Active directory、Active Directory を同期して設定することができます。
+組織がオンプレミスの windows Server Active Directory を使用している場合は、windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 これを設定するには、最初に active directory を azure active directory と同期し、次に、Windows 10 デバイスを azure AD に登録して、Microsoft 365 Business によるモバイルデバイス管理用に登録します。
   
-## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Microsoft 365 のビジネスを管理するドメインに参加しているデバイスの設定します。
+## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Microsoft 365 Business で管理するドメイン参加済みデバイスをセットアップする
 
-オンプレミスの Active Directory に加え、Azure Active Directory が提供する機能からメリットを享受するのには、組織のドメインに参加しているデバイスを設定するには、**ハイブリッド Azure AD には、デバイスが参加している**を実装できます。これらは、オンプレミスの Active Directory と、Azure Active Directory の両方に参加しているデバイスです。ハイブリッド Azure AD が参加しているデバイスの保護し、Microsoft 365 ビジネスによって管理されていることができます。 
+オンプレミスの active directory に加えて azure active directory によって提供される機能からメリットを得るために、組織のドメインに参加しているデバイスを設定するには、**ハイブリッド Azure AD に参加**しているデバイスを実装します。 これらは、オンプレミスの active directory と Azure active directory の両方に参加しているデバイスです。 ハイブリッド Azure AD に参加しているデバイスは、Microsoft 365 Business で保護および管理することができます。 
   
-ハイブリッド Azure の AD に参加して、Microsoft 365 ビジネスによって管理されている Windows 10 デバイスを作成するには、次の手順を完了します。
+Windows 10 デバイスをハイブリッド Azure AD に参加させ、Microsoft 365 Business で管理するには、以下の手順を実行します。
   
-1. Azure Active Directory に、ユーザー、グループ、およびローカルの Active Directory から連絡先を同期するには、ディレクトリ同期ウィザードと Azure Active ディレクトリの説明に従って接続[Office 365 のディレクトリ同期の設定](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)を実行します。
+1. ユーザー、グループ、および連絡先をローカルの active directory から azure active directory に同期するには、「 [Set up Directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の説明に従って、ディレクトリ同期ウィザードと azure active directory Connect を実行します。
     
     > [!NOTE]
-    > 手順は、正確にマイクロソフト 365 ビジネスでも同じです。 
+    > この手順は、Microsoft 365 Business の場合とまったく同じです。 
   
-2. Azure AD に参加しているハイブリッドにする 10 の Windows のデバイスを有効にする 3 の手順を完了する前に、次の前提条件を満たしているかどうかを確認する必要があります。
+2. 手順3を実行して、Windows 10 デバイスがハイブリッド Azure AD に参加できるようにするには、次の前提条件を満たしていることを確認する必要があります。
     
-   - Azure AD の最新バージョンを実行して接続します。
+   - Azure AD connect の最新バージョンを実行していること。
     
-   - Azure AD 接続 Azure AD に参加しているハイブリッドにデバイスのすべてのコンピューター オブジェクトが同期します。コンピューター オブジェクトが特定の組織単位 (OU) に属しているし、これらの Ou は、Azure AD での同期に設定されているかどうかを確認する場合も同様に接続します。
+   - azure ad connect は、ハイブリッド azure ad に参加させるデバイスのすべてのコンピューターオブジェクトを同期しています。 コンピューターオブジェクトが特定の組織単位 (OU) に属している場合は、それらの ou が Azure AD connect の同期にも設定されていることを確認してください。
     
-3. 既存ドメインに参加している Windows の 10、デバイスのハイブリッド Azure AD 参加 Intune (Microsoft 365 ビジネス) でモバイル デバイス管理のためを登録を登録します。
+3. 既存のドメインに参加している Windows 10 デバイスをハイブリッド Azure AD に登録し、Intune によるモバイルデバイス管理のために登録する (Microsoft 365 Business):
     
-4. [ハイブリッド Azure Active Directory が参加しているデバイスを構成する方法](https://go.microsoft.com/fwlink/p/?linkid=872870)のステップ バイ ステップの指示に従います。これは、オンプレミスの Active Directory の同期を有効にする 10 の Windows コンピューターを結合し、クラウドを可能にします。
+4. [ハイブリッド Azure Active Directory に参加しているデバイスを構成する方法](https://go.microsoft.com/fwlink/p/?linkid=872870)について、手順に従って操作します。 これにより、オンプレミスの Active Directory に参加している Windows 10 台のコンピューターの同期を有効にして、クラウドの準備を行うことができます。
     
-5. モバイル デバイス管理のための 10 の Windows デバイスを登録するために、手順については[10 の Windows Intune グループ ポリシーを使用してデバイスの登録](https://go.microsoft.com/fwlink/p/?linkid=872871)を参照してください。ポリシーを設定して、グループでは、ローカル コンピューター レベルまたは一括操作では、ドメイン コント ローラー サーバーで、このグループ ポリシー設定を作成できます。 
+5. モバイルデバイスの管理用に windows 10 デバイスを登録するには、「[グループポリシーを使用して windows 10 デバイスを Intune に登録](https://go.microsoft.com/fwlink/p/?linkid=872871)する (手順については)」を参照してください。 グループポリシーの設定は、ローカルコンピューターレベルまたは一括操作に対して行うことができ、ドメインコントローラーサーバー上でこのグループポリシー設定を作成することができます。 
     
 

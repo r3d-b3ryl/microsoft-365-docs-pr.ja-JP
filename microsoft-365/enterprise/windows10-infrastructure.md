@@ -1,41 +1,42 @@
 ---
-title: 365 企業の Microsoft Windows の 10 のエンタープライズ ・ インフラストラクチャ
+title: Microsoft 365 enterprise の Windows 10 enterprise インフラストラクチャ
 description: Microsoft 365 Enterprise の一部として Windows 10 Enterprise を PC に展開するために必要な手順の、詳しいガイダンスです。
 keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、Windows 10 Enterprise、展開
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/18/2018
 ms.author: greglin
-ms.openlocfilehash: 80d7c1b56434647387b9c428ca07effdff929abf
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 88517c6b8de95c54ee9a2e47d4545266eb198249
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289439"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
-Microsoft 365 エンタープライズには、複数の操作を行い、安全性を確保するためのツールを使用する、Windows 10 企業が含まれています。Windows 10 企業。
+Microsoft 365 enterprise には、Windows 10 enterprise が含まれています。これにより、より多くの機能を提供し、安全な状態を維持できます。 Windows 10 Enterprise:
 
-- サイズに関係なく、今日の IT デバイス環境の**簡略化のための統合は、** 今日の管理の複雑さを軽減するのには、クラウドの機能を利用します。
-- **インテリジェントなセキュリティに**、これまで最もセキュリティで保護された Windows のリリースは、インテリジェントなセキュリティ機能を適切に連携して動作するように設計された保護を実現します。
-- ロックを解除**により創造性とチームワーク**の創造性とチームワークを最も生産性の高い配信が発生する両方のユーザーと IT が大好きです。
+- **は、シンプル化のために統合されてい**ます-クラウドのパワーを活用して、今日の最新の IT デバイス環境の管理の複雑さを軽減します。サイズに関係なく使用できます。
+- **インテリジェントセキュリティがあり**ます。これは、Windows の最も安全なリリースです。これは、組織の保護を強化するために連携して機能するように設計されたインテリジェントなセキュリティ機能を備えています。
+- **創造性とチームワークを有効**にして、創造性とチームワークのロックを解除することで、ユーザーとユーザーの両方にとって最も生産性の高い操作性を実現できます。
 
-10 の Windows オペレーティング システムを展開して、組織にふさわしいものを選択するには、さまざまな方法を理解する必要があります。によって、Microsoft 365 エンタープライズ サブスクリプションの場合はまた 10 の Windows サービスとセキュリティ機能を Windows の 10 を最大限に活用するように構成する必要があります。
+Windows 10 オペレーティングシステムを展開するためのさまざまな方法を理解し、組織に適したものを選択する必要があります。 Microsoft 365 Enterprise のサブスクリプションによっては、windows 10 のサービスとセキュリティ機能も備えており、windows 10 を最大限に活用するために構成する必要があります。
 
-Windows 10 では、Microsoft 365 企業の戦略的なビジネス シナリオを有効にします。
+Windows 10 では、Microsoft 365 Enterprise の次の戦略的なビジネスシナリオが有効になります。
 
 - 集合知や専門知識を活用し、組織全体でファイル、情報、アイデアを発見、共有、発展させるよう人々を支援します
 - 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
 - 業界内で確証された世界標準のコンプライアンスに適合したコントロールと可視性により、安心感を提供します
 - 情報を保護して、データ損失のリスクを軽減します
-- 検出し外部の脅威--モニター レポートからの保護し、組織のセキュリティを提供するのには迅速に対応する利用状況を分析
-- ユーザーと自分のアカウントを保護します。
+- 外部の脅威を検出して保護する--監視、報告、および分析を行って、組織のセキュリティを迅速に提供する
+- ユーザーとそのアカウントを保護する
 - 一般データ保護規則 (GDPR) に適合するように、強化されたプライバシーと法令遵守によって組織をサポートします。
 - デスクトップ ソフトウェアやデバイスで最新情報を入手し、セキュリティ上のリスクの軽減と IT 効率の最大化を図ります
 
@@ -45,46 +46,46 @@ Windows 10 では、Microsoft 365 企業の戦略的なビジネス シナリオ
 >Windows 10 Enterprise と Office 365 ProPlus の両方を展開し、[モダン デスクトップ](https://www.microsoft.com/microsoft-365/modern-desktop)に移行するには、「[モダン デスクトップ展開センター](http://aka.ms/howtoshift)」を参照してください。
 >
 
-## <a name="windows-10-deployment"></a>10 の Windows の展開
+## <a name="windows-10-deployment"></a>Windows 10 の展開
 
-10 エンタープライズの Windows を展開するには、組織の複数の方法もあります。ここでは、構成し、これらの最近の展開シナリオを 10 企業の Windows イメージを展開する方法に注目しています。
+組織に Windows 10 Enterprise を展開する方法は複数あります。 ここでは、これらのモダン展開シナリオを使用して Windows 10 Enterprise イメージを構成および展開する方法について説明します。
 
-| 展開シナリオ | それを使用する場合 |
+| 展開シナリオ | 使用する状況 |
 |:--- |:--- |
-| [システム センター構成マネージャーを使用して、インプレース アップグレードとして](windows10-deploy-inplaceupgrade.md) | Windows 7 をアップグレードする必要があるか、10 企業の Windows の<a href="https://aka.ms/windows-10-release-information" target="_blank">現在のバージョン</a>の Windows 8.1 のコンピューターと、コンピューターが<a href="https://aka.ms/introtosccm" target="_blank">システム センター構成マネージャー (現在の分岐)</a>で現在管理は、このオプションを選択します。 |
-| [Windows の自動操縦を使用してください。](windows10-deploy-autopilot.md) | Windows 10 企業、1703 または後で、事前にインストールされたバージョンを持つ新規の Windows コンピューターを設定する場合は、このオプションを選択します。エンド ・ ユーザーは、作業時間を入力して、適切な構成を使用してセットアップの開始や、アカウントの資格情報の学校します。 |
+| [System Center Configuration Manager を一括アップグレードとして使用する](windows10-deploy-inplaceupgrade.md) | windows 7 または windows 8.1 コンピューターを windows 10 Enterprise の<a href="https://aka.ms/windows-10-release-information" target="_blank">現在のバージョン</a>にアップグレードする必要があり、コンピューターが現在<a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (current branch)</a>で管理されている場合は、このオプションを選択します。 |
+| [Windows 自動操縦の使用](windows10-deploy-autopilot.md) | windows 10 Enterprise、バージョン1703以降が事前インストールされている windows コンピューターを新たにセットアップする場合は、このオプションを選択します。 エンドユーザーは、職場または学校のアカウントの資格情報を入力することによって、目的の構成を使用してセットアップを開始します。 |
 
-これらの展開シナリオは、組織のニーズを格納できない場合は、他のシナリオについて説明し、機能と[10 の Windows 展開シナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)では、それぞれの制限事項を理解できます。独自の<a href="https://aka.ms/planforwin10deployment" target="_blank">10 の Windows の展開を計画</a>することもできます。
+これらの展開シナリオが組織のニーズに合わない場合は、他のシナリオについて学習し、 [Windows 10 の展開シナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)での各機能と制限事項について理解することができます。 また、 <a href="https://aka.ms/planforwin10deployment" target="_blank">Windows 10 の展開を</a>独自に計画することもできます。
 
-10 の Windows の詳細については、これらの資料とします。
+Windows 10 の詳細については、次の記事を参照してください。
 
 - [Microsoft 365 Enterprise 製品ページ](https://www.microsoft.com/microsoft-365/enterprise)
 - [Windows 10](https://docs.microsoft.com/windows/windows-10)
-- [配置および 10 の Windows を更新](https://docs.microsoft.com/windows/deployment/)
+- [Windows 10 を展開、更新する](https://docs.microsoft.com/windows/deployment/)
 
 
 ## <a name="additional-services-and-features"></a>その他のサービスと機能
-10 エンタープライズの Windows の展開の一部として、これらの他のサービスと機能を追加できます。
+Windows 10 Enterprise の展開の一環として、これらの追加のサービスと機能を追加することができます。
 
 ### <a name="windows-analytics"></a>Windows Analytics
 
-Windows では、診断データを使用して、運用効率の向上と、環境内の Windows 10 デバイスの状態の詳細な洞察を得るうえで役立つ機能が豊富で実践的な情報を提供します。
+windows は診断データを使用して、環境内の windows 10 デバイスの運用効率と正常性に関する詳細な洞察を得るために役立つ豊富で実用的な情報を提供します。
 
-* アップグレードの準備完了 - アップグレードの準備に役立つ Windows 10 に移動し、新しい Windows 10 の機能の更新と最新情報を入手します。 
-* 更新の対応の更新の対応は、10 の Windows デバイスをすべてせず、追加のインフラストラクチャ要件の全体像を得るために必要のある IT 管理者向けです。
-* デバイスの稼働状態をプロアクティブに検出し、エンド ・ ユーザーに影響を与えず問題を改善するデバイスの状態を使用できます。
+* アップグレードの準備状況-アップグレードの準備は、windows 10 に移行し、新しい windows 10 機能の更新プログラムを最新の状態に保つのに役立ちます。 
+* コンプライアンスの更新-更新プログラムのコンプライアンスは、追加のインフラストラクチャ要件を伴わずに、すべての Windows 10 デバイスの全体的なビューを取得する IT 管理者を対象としています。
+* デバイスの正常性-デバイスの正常性を使用して、問題に影響を与えるエンドユーザーを事前に検出して修復することができます。
 
-詳細については、 [Windows の分析の概要](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview)を参照してください。
+詳細については、「 [Windows Analytics の概要](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview)」を参照してください。
 
-### <a name="windows-security"></a>Windows のセキュリティ
+### <a name="windows-security"></a>Windows セキュリティ
 
-Windows 10 には、上の脅威、ヘルプから、デバイスをセキュリティで保護し、アクセス制御を支援するコンピューターを保護する機能が用意されています。Windows 10 では、最初からデバイスを保護する重要なセキュリティ機能を取得します。Microsoft 365 E3 では、ビジネス、Windows Defender のアプリケーションの制御、および情報保護の Windows の Windows こんにちはなどのセキュリティ機能を追加します。Microsoft 365 E5、365 E3 のマイクロソフトのセキュリティおよびクラウド ベースのセキュリティ機能と Windows Defender の高度な脅威保護からすべての保護を取得します。 
+Windows 10 では、脅威からの保護、デバイスのセキュリティ保護、およびアクセス制御のサポートに役立つ機能が提供されています。 Windows 10 では、デバイスを最初から保護する重要なセキュリティ機能を利用できます。 Microsoft 365 E3 は、windows Hello for business、windows Defender アプリケーションコントロール、および windows 情報保護などのセキュリティ機能を追加します。 microsoft 365 E5 を使用すると、microsoft 365 E3 セキュリティ、クラウドベースのセキュリティ機能、および Windows Defender Advanced Threat protection からのすべての保護を得ることができます。 
 
-10 エンタープライズの Windows と取得についてはどのようにすることができます展開、管理、構成、および 3 つのキーのセキュリティ機能のトラブルシューティングを行うことで得られるセキュリティ機能に関する詳細についてを参照してください[手順 5: Windows 10 企業の展開のセキュリティ機能](windows10-enable-security-features.md)です。
+windows 10 enterprise で利用できるセキュリティ機能の詳細については、「[手順 5: windows 10 enterprise のセキュリティ機能](windows10-enable-security-features.md)を展開、管理、構成、およびトラブルシューティングする」のガイダンスを参照してください。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-マイクロソフトの内部を見るし、学習の会社の計画、展開、および方法 10 の Windows の更新の管理が、参照してください。
+Microsoft の内部をピークし、Windows 10 の更新プログラムを展開し、管理する方法については、以下を参照してください。
 
 - [Windows 10 をシームレスに展開するための組織の準備](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
 - [Microsoft では、サービスとして Windows を使用](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
@@ -96,7 +97,7 @@ Windows 10 には、上の脅威、ヘルプから、デバイスをセキュリ
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 
-コントソ株式会社、架空であるが、代表的な多国籍のビジネス、 [10 企業の Windows を展開](contoso-win10.md)する方法を参照してください。
+架空の多国籍企業である Contoso Corporation が[Windows 10 Enterprise を展開](contoso-win10.md)した方法を参照してください。
 
 ![](./media/contoso-overview/contoso-icon.png)
 

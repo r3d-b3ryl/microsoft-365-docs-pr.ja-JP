@@ -11,6 +11,9 @@ f1_keywords:
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -20,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: アプリケーション管理ポリシーを作成し、10 の Windows デバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: acf19a72d994185a35b2e425f8334a73a121ee10
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Windows 10 デバイスでアプリ管理ポリシーを作成し、作業ファイルを保護する方法について説明します。
+ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278182"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Windows 10 デバイスのアプリケーション保護設定を設定する
 
@@ -34,23 +37,21 @@ ms.locfileid: "26869201"
 
 ユーザーが作業タスクを実行する個人の Windows 10 デバイスを持っている場合、それらのデバイスでもデータを保護することができます。
   
-1. グローバル管理者の資格情報を使用して、[Microsoft 365 Business](https://portal.office.com) にサインインします。[ **管理者** ] タイルを選び、管理センターに移動します。 
+1. グローバル管理者の資格情報を使用して、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)にサインインします。 [ **管理者**] タイルを選び、管理センターに移動します。 
     
-2. 管理ポータルの [ **デバイス ポリシー**] カードで、[ **ポリシーの追加**] を選びます。
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
-  
+2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
+
 3. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
     
 4. [ **ポリシーの種類**] で、[ **Windows 10 のアプリケーション管理**] を選びます。
     
-5. [* * デバイス ・ タイプ * *、または**会社が所有する****個人**のいずれかを選択します。
+5. Under ** Device type **, choose either **Personal** or **Company Owned**.
     
 6. [ **作業ファイルを暗号化する**] が自動的にオンになります。 
     
 7. 作業ファイルをユーザーの PC に保存させたくない場合は、[ **ユーザーが会社のデータを個人用のファイルにコピーすることを防止し、作業ファイルを OneDrive for Business に保存するようユーザーに強制します**] を **オン**に設定します。 
     
-8. **ユーザーがデバイス上の Office ファイルにアクセスする方法の管理**を展開し\>どのようにしたい設定を構成します。既定で**オフ**になって**ユーザーがモバイル デバイスでの Office のデバイスにアクセスする方法を管理**するが、有効**に**して既定値を受け入れることをお勧めします。詳細については、[利用可能な設定](protection-settings-for-windows-10-devices.md#bkmk_settings)を参照してください。 
+8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. 詳細については、「[利用可能な設定](#available-settings)」を参照してください。 
     
     [ **既定の設定に戻す**] リンクを使用すれば、既定の設定にいつでも戻すことができます。 
     
@@ -66,7 +67,7 @@ ms.locfileid: "26869201"
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
-11. 次に**にこれらの設定が表示されますか?****変更**を選択して、これらの設定が表示されますユーザー セキュリティ グループを選択の既定の**すべてのユーザー**セキュリティ グループを使用しない場合は、 \> **を選択**します。
+11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
     
 12. 最後に、[ **追加**] を選択してポリシーを保存し、それをデバイスに割り当てます。 
     

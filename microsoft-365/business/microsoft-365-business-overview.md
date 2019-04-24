@@ -5,10 +5,12 @@ author: Sirkkuw
 manager: scotv
 ms.date: 9/20/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Microsoft 365 のビジネスを設定するを説明します。
-ms.openlocfilehash: ee15ffa98de032d7936d950124cdf772335949bd
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 Business をセットアップする方法について説明します。
+ms.openlocfilehash: 80c6590a682af5fadeceac7a75e409adac897f6f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276731"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
@@ -32,23 +34,23 @@ ms.locfileid: "26869401"
 
 Microsoft 365 Business は、ビジネス生産性と共同作業ツールの包括的なセットです。これには、常に最新の状態に保たれた Outlook、Word、Excel、およびその他の Office 製品が含まれます。iOS、Android、Windows 10 のすべてのデバイス上の作業ファイルを、管理が容易なエンタープライズ レベルのセキュリティで保護することができます。
   
-Microsoft 365 のビジネスは、最大で 300 分のライセンスでは、多くのライセンスが必要な場合、詳細については[マイクロソフトの 365 の企業](https://go.microsoft.com/fwlink/p/?linkid=860986)内のドキュメントを参照してください。 
+microsoft 365 Business は最大300ライセンスを想定しており、さらにライセンスが必要な場合は、「 [microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。 
   
 ## <a name="get-microsoft-365-business"></a>Microsoft 365 Business を入手する
 
 - パートナーがいる場合、パートナーは Microsoft 365 Business を入手します: [Microsoft パートナー センターから Microsoft 365 Business を購入する](get-microsoft-365-business.md)。
     
-- しないしている場合、パートナー Microsoft 365 のビジネスを取得する、[ここでそれを購入](https://www.microsoft.com/en-us/microsoft-365/business)することができます。
+- パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/en-us/microsoft-365/business)できます。
     
 ## <a name="set-up-microsoft-365-business"></a>Microsoft 365 Business をセットアップする
 
- **365 ビジネス スイートの Microsoft の概要の設定**
+ **Microsoft 365 Business Suite のセットアップの概要**
   
-次の図では、管理者が Microsoft 365 のビジネスをどのように設定する方法について説明します。365 ビジネスのマイクロソフトの Windows Pc を準備する手順についても説明します。[Windows の自動操縦](add-autopilot-devices-and-profile.md)で Microsoft 365 ビジネス管理センターに新しいデバイスを追加することも。設定し、事前に構成する、新しいデバイスの準備をして生産性 Microsoft 365 のビジネス情報を使用してユーザーに署名するとすぐに自動操縦装置を使用できます。
+次の図では、管理者が Microsoft 365 Business をセットアップする方法について説明します。 また、Microsoft 365 Business 用に Windows pc を準備する手順についても説明します。 また、 [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、Microsoft 365 Business 管理センターで新しいデバイスを追加することもできます。 自動操縦を使用して、新しいデバイスをセットアップして事前構成し、ユーザーが Microsoft 365 のビジネス資格情報を使用してサインインするとすぐに生産性を向上させることができます。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
   
-### <a name="1-set-up-microsoft-365-business-admin"></a>1: マイクロソフト 365 ビジネス (管理者) を設定します
+### <a name="1-set-up-microsoft-365-business-admin"></a>1: Microsoft 365 Business をセットアップする (管理者)
 
 グローバル管理者の資格情報で [Microsoft 365 Business 管理センター](https://portal.office.com/adminportal/home)にサインインし、次の手順を完了して Microsoft 365 Business をセットアップします。 
   
@@ -58,27 +60,27 @@ Microsoft 365 のビジネスは、最大で 300 分のライセンスでは、�
     
 2. [セットアップ ウィザードを使用して Microsoft 365 Business をセットアップする](set-up.md)
     
-    か、ユーザーを追加できます、手動で Microsoft 365 ビジネス管理センターで、セットアップ ウィザードを使用して**クラウドに移行する場合は、ローカル Active Directory から完全に移動**する場合は、または、Azure AD 接続と 1 回だけの同期を行うことができます。これを行う 2 つの方法があります。 
+    **ローカルの Active Directory からクラウドに完全に移動**する場合は、セットアップウィザードを使用して、Microsoft 365 Business 管理センターで手動でユーザーを追加するか、Azure AD Connect との1回限りの同期を行うことができます。 これを行うには 2 つの方法があります。 
     
-  - Exchange 2010、Exchange 2013 年または 2016 の Exchange サーバーがあるも、[簡単に Office 365 に Exchange メールボックスを移行するのには最低限のハイブリッドを使用](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)することができます。ハイブリッドを最小限に抑える手順 Azure AD ユーザーの 1 回だけ同期を含めるだけではなく、電子メールのオンプレミスからクラウドへの移行。電子メールの移行が完了したら、ディレクトリ同期を自動的に無効になってこのメソッドを使用する場合。
+  - exchange 2010、exchange 2013、または exchange 2016 サーバーもある場合は、最小限の[ハイブリッドを使用して、exchange メールボックスを Office 365 にすばやく移行](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)できます。 最低限のハイブリッドの手順には、ユーザーの Azure AD への 1 回限りの同期と、オンプレミスからクラウドへのメールの移行が含まれます。 この方法を使用すると、メールの移行が完了すると、ディレクトリ同期が自動的にオフになります。
     
   - Office 365 のディレクトリ同期のウィザードを使用して、ユーザーをクラウドに同期させます。「[Office 365 のディレクトリ同期をセットアップする](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の手順に従って、このプロセスを完了します。ユーザーをクラウドに同期させた後で、[ディレクトリの同期をオフにする](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)必要があります。
     
-    Microsoft 365 のビジネスをこのように、ライセンスを追加した各ユーザーに提供する必要があります。これは、[セットアップ ウィザード](set-up.md)で、または[ビジネスのための Office 365 のユーザーにライセンスを割り当てる](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)で行うことができます。
+    また、このように追加された各ユーザーには、Microsoft 365 Business のライセンスを付与する必要があります。 これは[セットアップウィザード](set-up.md)、または[Office 365 for business のユーザーにライセンスを割り当てる](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)ことができます。
     
-### <a name="2-prepare-mobile-devices"></a>2: モバイル デバイスの準備
+### <a name="2-prepare-mobile-devices"></a>2: モバイルデバイスの準備
 
-デバイスと Microsoft 365 ビジネスによって保護されていることを確認する Office アプリケーションをインストールするのには[Microsoft 365 ビジネス ユーザー向けのモバイル デバイスの設定](set-up-mobile-devices.md)を手順を実行します。 
+「[microsoft 365 business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」の手順に従って、Office アプリをデバイスにインストールし、microsoft 365 business で保護されていることを確認します。 
   
-### <a name="3-prepare-pcs"></a>3: Pc を準備します。
+### <a name="3-prepare-pcs"></a>3: pc の準備
 
-管理者は、 [Windows の自動操縦](add-autopilot-devices-and-profile.md)を使用して新しいデバイス 10 の Pc を Windows の設定を事前選択できます。ユーザーは、このトピックの手順を実行して、既存または新規の Windows 10 デバイスを設定できます。 [Microsoft 365 ビジネス ユーザー向けの Windows Pc を設定](set-up-windows-devices.md)します。既存のデバイスのユーザーことも**[ビジネスの OneDrive にファイルを移動](move-files-to-onedrive.md)** できます。OneDrive に Windows のプロファイルに関連付けられているファイルを移動するのにはサードパーティ製のツールも使用できます。
+管理者は、 [windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、新しいデバイスの windows 10 pc の設定を事前に選択できます。 ユーザーは、このトピックの手順に従って、既存または新しい windows 10 デバイスをセットアップできます。 [Microsoft 365 Business ユーザーの windows pc をセットアップ](set-up-windows-devices.md)します。 既存のデバイスでは、ユーザーは**オプション**で[ファイルを OneDrive for business に移動](move-files-to-onedrive.md)することもできます。 サードパーティ製のツールを使用して、Windows プロファイルに関連付けられているファイルを OneDrive に移動することもできます。
   
-組織は、Windows サーバーの Active Directory の設置型を使用している場合は、ローカルの認証を必要とする設置型のリソースへのアクセスを維持しながら、10 の Windows のデバイスを保護するために Microsoft 365 のビジネスを設定できます。[Microsoft 365 のビジネスを管理する Windows 10 のドメインに参加しているデバイスを有効にする](manage-windows-devices.md)設定の手順に従います。これは推奨される方法であり、この状態のデバイスは、**ハイブリッド Azure AD には、デバイスが参加するいる**と呼ばれます。 
+組織がオンプレミスの windows Server Active Directory を使用している場合は、windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法は推奨されており、この状態のデバイスは**ハイブリッド Azure AD 参加デバイス**と呼ばれます。 
   
-ローカルに保持する場合は、いくつか含まれている Active Directory の設置型リソース (ファイル共有やプリンターなど)、以下の手順でのこれらのリソースに、 **Azure の AD に参加しているデバイス**のアクセスを与えることができます:[アクセス、オンプレミス リソースから、Microsoft 365 のビジネスで、azure の AD に参加しているデバイス](access-resources.md)。
+オンプレミスのリソース (ファイル共有やプリンターなど) が含まれているローカルの Active Directory を保持する場合は、以下の手順に従って、 **Azure AD に参加**しているデバイスにこれらのリソースへのアクセスを許可できます。 [Microsoft 365 Business の Azure AD に参加しているデバイス](access-resources.md)。
   
-10 Pc の Windows をセットアップした後、デバイスに[自動的に Office をインストール](auto-install-or-uninstall-office.md)することができます。 
+Windows 10 pc をセットアップした後、Office をデバイスに[自動的にインストール](auto-install-or-uninstall-office.md)することができます。 
   
 ## <a name="contact-support"></a>サポートに連絡
 
@@ -86,6 +88,6 @@ Microsoft 365 のビジネスは、最大で 300 分のライセンスでは、�
   
 - パートナーにお問い合わせください。
     
-- 、Microsoft 365 業務管理者として、カスタマー サポート チーム、**[のビジネス製品の管理のヘルプのお問い合わせ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)へのアクセスがあります。**
+- Microsoft 365 business 管理者は、カスタマーサポートチームへのアクセス権を持ち、 **[ビジネス製品のサポートに問い合わせる-管理者ヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
 

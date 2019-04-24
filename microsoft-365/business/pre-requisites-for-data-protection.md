@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +16,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: 'Microsoft 365 のビジネスを使用して組織を設定するための前提条件を知っています。 '
-ms.openlocfilehash: caca6564d6706acd48538a2d33143ed27ed3bd25
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Microsoft 365 Business を使用して組織をセットアップするための前提条件について理解します。 '
+ms.openlocfilehash: 4789e72c3e6d1c7877b236279947f1a1b64d046f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278138"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Microsoft 365 Business でデバイス上のデータを保護するための前提条件
 
@@ -29,7 +30,7 @@ Microsoft 365 Business で組織をセットアップするには、まず前提
   
 ## <a name="pre-requisites"></a>前提条件
 
-- Windows デバイスでは、Windows 7 Professional、Windows 8 Pro または Windows 8.1 Pro が実行されている必要があります。
+- windows デバイスでは、windows 7 Professional、windows 8 pro、または windows 8.1 pro を実行している必要があります。
     
     [Windows デバイスを Windows Pro Creators Update にアップグレードする](upgrade-to-windows-pro-creators-update.md)
     

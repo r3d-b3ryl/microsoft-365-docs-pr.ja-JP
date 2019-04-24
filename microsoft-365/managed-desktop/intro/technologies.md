@@ -1,54 +1,55 @@
 ---
-title: Microsoft 管理デスクトップ テクノロジ
-description: このトピックには、テクノロジと Microsoft の管理されたデスクトップで使用されているアプリケーションが一覧表示されます。
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+title: Microsoft マネージドデスクトップテクノロジ
+description: このトピックでは、Microsoft マネージドデスクトップで使用されるテクノロジとアプリの一覧を示します。
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 843a8cd066bbaf87a8b2b7cc74d8817207e47153
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283469"
 ---
-# <a name="microsoft-managed-desktop-technologies"></a>Microsoft 管理デスクトップ テクノロジ
+# <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージドデスクトップテクノロジ
 
-このトピックには、テクノロジと Microsoft の管理されたデスクトップで使用されているアプリケーションが一覧表示されます。
+このトピックでは、Microsoft マネージドデスクトップで使用されるテクノロジとアプリの一覧を示します。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Microsoft 365 E5 ライセンス (またはそれと同等) は、管理されたデスクトップの Microsoft のサービスに必要です。このライセンスおよび管理されたデスクトップのマイクロソフトがマイクロソフトの管理されたデスクトップ デバイスと各コンポーネントを使用する方法に含まれるすべてのコンポーネントを次に示します。 各領域の特定の役割と責任はマイクロソフトの管理されたデスクトップのトピックで詳しく説明します。 
+microsoft 365 Enterprise ライセンスは、microsoft が管理するすべてのデスクトップユーザーに必要です。 サービスのライセンス要件の詳細については、「 [Microsoft マネージドデスクトップの前提条件](../get-ready/prerequisites.md)」を参照してください。
 
-Microsoft 365 E5 は、3 つのコンポーネントで構成されています: Office 365 の E5、10 企業の Windows と E5、エンタープライズ モビリティ + セキュリティ E5 します。  
+必要なエンタープライズライセンスに含まれるすべてのコンポーネントと、サービスが Microsoft マネージドデスクトップデバイスで各コンポーネントを使用する方法を以下に示します。 各領域の特定の役割と責任は、「Microsoft Managed Desktop」のトピック全体で詳細に説明します。 
 
-## <a name="office-365-e5"></a>Office 365 E5
+## <a name="office-365-e3"></a>Office 365 E3
  |
  --- | ---
-Office 365 の標準的なスイート (64 ビット) * | デバイスとアプリケーションの標準的な Office スイートが出荷されます。 Word、Excel、PowerPoint、Outlook、Publisher、アクセス、ビジネス、OneNote の Skype です。<br><br>64 ビットの実行をクリックして Microsoft Project および Microsoft Visio の完全バージョンを (C2R) は、Office 365 の標準的なスイートでは含まれません。 ただし、これらのアプリケーションのインストールが標準の Office スイートのインストールに依存するため、Microsoft の管理されたデスクトップが作成既定 Intune 展開し、これらのアプリケーションを展開するお客様が使用するセキュリティ グループエンド ・ ユーザーのライセンスを取得します。  
-ストア アプリ |    マイクロソフト支配下に置いた、マイクロソフトのチーム、BI デスクトップの電源 (はない) に付属していないデバイスです。これらのアプリケーションは、Microsoft ストアからダウンロードできます。
-Win32 アプリケーション |    電源双 Pro、Azure 情報保護クライアント、および Microsoft の計画は、デバイスに付属していないと、お客様が配置のパッケージ化することができます。 
-Web アプリケーション |  Yammer、Delve、Office オンラインのフロー、StaffHub、PowerApps は、デバイスに付属していません。ユーザーは、web ブラウザーを使用してこれらのアプリケーションのバージョンにアクセスできます。
-ビジネス オンライン クラウド PBX の Skype | この機能は、Office 365 の E5 を使用します。Microsoft 管理されたデスクトップはこのサービスのすべての側面を構成していません。
+Office 365 Standard Suite (64 ビット) * | 標準の Office スイートアプリケーションは、デバイス (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for business、OneNote) に同梱されています。<br><br>C2R (64 ビット) をクリックして実行する () フルバージョンの microsoft Project と microsoft Visio は Office 365 Standard スイートに含まれていません。  ただし、これらのアプリケーションのインストールは標準の Office スイートのインストールに依存しているため、Microsoft マネージドデスクトップでは、これらのアプリケーションを展開するために使用する既定の Intune 展開およびセキュリティグループが作成されています。ライセンスされたエンドユーザー。  
+ストアアプリ |    Microsoft Sway、Power BI Desktop はデバイスと共には同梱されていません。 これらのアプリは Microsoft ストアからダウンロードできます。
+Win32 アプリケーション |    Power BI Pro、Azure Information Protection クライアント、および Microsoft Planner はデバイスに同梱されておらず、お客様が展開用にパッケージ化することもできます。 
+Web アプリケーション |  Yammer、Office Online、Delve、Flow、StaffHub、PowerApps は、デバイスに同梱されていません。 ユーザーは、ブラウザーを使用して、これらのアプリケーションの web バージョンにアクセスできます。
+Skype for business Online クラウド PBX | この機能は、Office 365 で利用できます。 Microsoft マネージドデスクトップでは、このサービスの一部は構成されません。
 
-## <a name="windows-10-enterprise-e5"></a>10 の Windows エンタープライズ E5
-
- |
- --- | ---
-資格情報の保護 |  Microsoft 管理されたデスクトップ、ガイダンスを用意し、この機能をクラウドの側面を管理
-デバイス保護 (Windows Defender のアプリケーションのコントロール) | Microsoft 管理されたデスクトップでは、ポリシーを作成します。顧客では、署名を管理します。
-AppLocker の管理 |  Microsoft 管理されたデスクトップでは、ポリシーを作成します。顧客では、署名を管理します。
-アプリケーションの仮想化 (APP-V) |    Microsoft 管理デスクトップがこの種類の展開をサポートしていません Intune でサポートされていないようです。
-ユーザー エクスペリエンスの仮想化 (UE V) | 管理 Microsoft 管理デスクトップ デバイスとこれは、使用できません。
-管理のユーザー エクスペリエンス  | これはデバイスの管理 Microsoft 管理されたデスクトップでは使用されません。MDM は、デバイス管理のソリューションとして使用します。
-Windows Defender Advanced Threat Protection |   デバイスのセキュリティ ポリシーを管理する Microsoft 管理されたデスクトップで使用されます。 
-
-## <a name="enterprise-mobility--security"></a>Enterprise Mobility + Security 
+## <a name="windows-10-enterprise-e5"></a>Windows 10 Enterprise E5
 
  |
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory プレミアム P2 |    MDM のデバイスを管理するエンタープライズ モビリティとセキュリティの E3 と AADP のすべての側面を使用することがあります。
-Microsoft Cloud App Security |  これは、管理されたデスクトップの Microsoft のサービスを顧客が使用できるオプション機能です。
-Azure の情報保護の P2  |これは、管理されたデスクトップの Microsoft のサービスを顧客が使用できるオプション機能です。
+Credential Guard |  Microsoft は、この機能のガイダンスを提供し、クラウドの側面を管理します。
+Device Guard (Windows Defender アプリケーションコントロール) | Microsoft マネージドデスクトップでは、ポリシーが作成されます。 <br><br>お客様は署名を管理します。
+AppLocker の管理 |  Microsoft がポリシーを作成します。 <br><br>お客様は署名を管理します。
+Application Virtualization (app-v) |    Microsoft マネージドデスクトップでは、この種類の展開は Intune ではサポートされていないため、サポートされていません。
+User Experience Virtualization (ue-v) | これは、Microsoft マネージドデスクトップで管理されているデバイスでは使用されません。
+管理対象ユーザーの環境  | これは、Microsoft マネージドデスクトップで管理されているデバイスでは使用されません。 MDM は、デバイス管理のソリューションとして使用されます。
+Windows Defender Advanced Threat Protection |   これは、デバイスのセキュリティポリシーを管理するために Microsoft マネージドデスクトップによって使用されます。 
+
+## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
+
+ |
+ --- | ---
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Enterprise Mobility + Security E3 および aadp のすべての側面を使用して MDM デバイスを管理できます。
+Microsoft Cloud App Security |  これは、お客様が Microsoft Managed Desktop service で使用できるオプションの機能です。
+Azure Information Protection P2  |これは、お客様が Microsoft Managed Desktop service で使用できるオプションの機能です。

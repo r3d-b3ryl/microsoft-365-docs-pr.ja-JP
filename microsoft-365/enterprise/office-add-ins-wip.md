@@ -1,6 +1,6 @@
 ---
-title: Microsoft Office アドイン - 365 企業の Microsoft を実行している企業のドキュメントを保護します。マイクロソフトのドキュメント
-description: WIP および Intune を使用して、Office アドインを実行しているドキュメントに企業データを保護する方法について説明します。
+title: microsoft Office アドインを実行しているエンタープライズドキュメントを保護する-microsoft 365 enterprise |Microsoft Docs
+description: Office アドインを実行しているドキュメントで、WIP および Intune を使用してエンタープライズデータを保護する方法について説明します。
 author: barlanmsft
 manager: angrobe
 ms.prod: microsoft-365-enterprise
@@ -10,11 +10,11 @@ ms.author: barlan
 ms.reviewer: jsnow
 ms.custom: it-pro
 ms.openlocfilehash: 6871f288a7e5849b147cbf0aedb056f84575f376
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290762"
 ---
 # <a name="use-wip-and-intune-to-protect-enterprise-data-in-documents-running-office-add-ins"></a>WIP と Intune を使用して、Office アドインを実行しているドキュメント内のエンタープライズ データを保護する
 組織内のユーザーが Office アドインを使用して組織のデータとやり取りする場合、それによってデータ漏えいの潜在的なリスクが発生します。 ユーザーが Office アドインを実行している場合は、Windows 情報保護 (WIP) と Microsoft Intune を使用することで、エンタープライズ データを保護することができます。
@@ -96,7 +96,7 @@ Office for iPad では現在、Word、Excel、PowerPoint に対して Office ア
 
 >**<sup>*</sup>** 管理者は「[Office 365 管理センターに Office アドインを展開する](https://support.office.com/article/Deploy-Office-add-ins-in-the-Office-365-admin-center-737e8c86-be63-44d7-bf02-492fa7cd9c3f)」を参照することで、Office 365 管理センターから直接、または PowerShell スクリプトを使用して、Word、Excel、および PowerPoint のアドインを個々のユーザー、グループ、または組織に展開することができます。 Windows、Mac、または Office Online でユーザーが Office アプリケーションを開くと、アドインが自動的にリボンにインストールされます。
 
-## <a name="summary"></a>[概要]
+## <a name="summary"></a>Summary
 
 Office アドインに関する原則を前提として、WIP と Intune を使用することにより、管理者はエンタープライズ データを管理し、エンドユーザーが作業を遂行するために必要なツールを提供することができます。 これにより、エンタープライズ データが組織外部に漏れるおそれが生じます。 Office JavaScript API では現在、Office ドキュメントとアドインとの間で送受信されるデータの種類を開発者が認識するための方法を提供していません。 このため、開発者は複数のプロンプトをユーザーに表示する必要があり、場合によっては、個人用ファイルがエンタープライズ ファイルとして誤ってマークされることがあります。これはユーザー エクスペリエンスに悪影響を及ぼし、データ保護の基本原則と一致しません。
 

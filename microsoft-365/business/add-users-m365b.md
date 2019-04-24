@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,21 +19,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: 新しいユーザーを追加、デバイスをセキュリティで保護および Microsoft 365 ビジネスでロールを割り当てる方法について説明します。
-ms.openlocfilehash: 3bf718d2b42aa5220a6d746035568985c0df5251
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 Business で新しいユーザーを追加し、デバイスをセキュリティで保護し、役割を割り当てる方法について説明します。
+ms.openlocfilehash: ab4e98a30b0cf7361e6d5dd6c307908b04133e2e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277347"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>Microsoft 365 Busines にその他のユーザーを追加する
 
-## <a name="add-new-users"></a>新規ユーザーを追加
+## <a name="add-new-users"></a>新しいユーザーを追加する
 
-管理センターで**ユーザー**のカードに移動\>**ユーザーを追加**します。
-  
-![Choose Add a user on the Users card in the admin center](media/55218f5b-899c-41cb-8486-8746fcef1748.png)
+管理センターで、[ユーザーの**管理**] カード\>に移動し、[**ユーザーの追加**] を選びます。
   
 [ **新しいユーザー**] ウィンドウで、必要な情報を入力します。 
   

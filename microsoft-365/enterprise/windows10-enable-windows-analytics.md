@@ -4,17 +4,18 @@ description: Windows Analytics を使用して Microsoft 365 Enterprise のデ�
 keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、Windows 10 Enterprise、Windows Analytics
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 45bf1b222501dd7564d6a619d992d6adfc03242f
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289401"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>手順 4: デバイスの正常性とコンプライアンスの監視
 

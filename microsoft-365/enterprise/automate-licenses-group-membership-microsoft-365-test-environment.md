@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 エンタープライズ テスト環境のライセンスとグループのメンバーシップを自動化します。
+title: Microsoft 365 Enterprise テスト環境のライセンスとグループメンバーシップを自動化する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,90 +8,90 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Microsoft 365 エンタープライズ テスト環境では、グループ ベースのライセンスと動的グループのメンバーシップを構成します。
-ms.openlocfilehash: 45a78af202f2d9ab029683aae4d95ed9a3370b08
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 Enterprise テスト環境で、グループベースのライセンスと動的なグループメンバーシップを構成します。
+ms.openlocfilehash: 8ced249ee56e15c057001af60d790a8a4315dd17
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277245"
 ---
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズ テスト環境のライセンスとグループのメンバーシップを自動化します。
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のライセンスとグループメンバーシップを自動化する
 
-グループ ベース ライセンスを自動的に割り当てるか、グループ メンバーシップに基づいてユーザー アカウントのライセンスを削除します。動的グループのメンバーシップを追加または部門や国などのユーザー アカウントのプロパティに基づいて、グループにメンバーを削除します。この資料は、Microsoft 365 エンタープライズ テスト環境の両方のデモンストレーションする手順を示します。
+グループベースのライセンスは、グループメンバーシップに基づいてユーザーアカウントのライセンスを自動的に割り当てるか削除します。 動的グループメンバーシップは、ユーザーアカウントのプロパティ (部署、国など) に基づいてグループにメンバーを追加または削除します。 この記事では、Microsoft 365 エンタープライズテスト環境の両方のデモを行います。
 
-Microsoft 365 エンタープライズ テスト環境での自動ライセンスおよび動的グループのメンバーシップを設定するのには 2 つのフェーズがあります。
+Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グループメンバーシップをセットアップするには、次の2つのフェーズがあります。
 
-1. Microsoft 365 エンタープライズ テスト環境を作成します。
-2. 構成し、動的グループのメンバーシップおよび自動ライセンスをテストします。
+1. Microsoft 365 Enterprise テスト環境を作成します。
+2. 動的なグループメンバーシップおよび自動ライセンスを構成してテストします。
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: マイクロソフト 365 エンタープライズ テスト環境を構築します。
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
 
-最小要件で軽量な方法で自動化されたライセンスとグループのメンバーシップをテストする場合は、[軽量の基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)に指示します。
+最小要件での軽量な方法で自動化されたライセンスとグループメンバーシップをテストする場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
-シミュレートされた企業で自動化されたライセンスとグループのメンバーシップをテストする場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)に指示します。
+シミュレートされたエンタープライズで自動ライセンスおよびグループメンバーシップをテストする場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順を実行します。
   
 > [!NOTE]
-> ライセンス テストを自動化し、グループのメンバーシップには、シミュレートされたエンタープライズ テスト環境には、シミュレートされたイントラネットをインターネットに接続されている必要はありませんし、Windows サーバーの AD フォレストの場合、ディレクトリ同期します。自動化されたライセンスとグループのメンバーシップをテストし、一般的な組織を表す環境で実験するためのオプションとしてここで。 
+> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
   
-## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>フェーズ 2: を構成して、動的グループのメンバーシップおよびライセンスの自動テスト
+## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>フェーズ 2: 動的なグループメンバーシップおよび自動ライセンスを構成してテストする
 
-最初に、新しいセールス ・ グループを作成し、部門の売り上げ高に設定を持つユーザー アカウントを Sales グループに自動的に追加できるように、動的グループのメンバーシップの規則を追加します。
+最初に、新しい sales グループを作成し、そのグループメンバーシップのルールを追加して、Department を sales に設定したユーザーアカウントが自動的に sales グループに追加されるようにします。
 
-1. Office のポータルにサインインして、インターネット ブラウザーのプライベート インスタンスを使用すると、 [https://office.com](https://office.com) 、Office 365 の E5 の試用版サブスクリプションのグローバル管理者アカウントを使用しています。
-2. Azure ポータルには、ブラウザーの別のタブ、[ [https://portal.azure.com](https://portal.azure.com)。
+1. インターネットブラウザーのプライベートインスタンスを使用して、office 365 E5 試用版サブスクリプション[https://office.com](https://office.com)のグローバル管理者アカウントを使用して office ポータルにサインインします。
+2. ブラウザーの別のタブで、Azure portal に移動[https://portal.azure.com](https://portal.azure.com)します。
 3. Azure portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
-4. **グループのすべて**のブレードでは、**新しいグループ**をクリックします。
-5. **グループの種類**では、 **Office 365**を選択します。
-6. **グループ名**、**売り上げ高**を入力します。
-7. **メンバーシップの種類**] では、**動的なユーザー**を選択します。
+4. [**すべてのグループ**] ブレードで、[**新しいグループ**] をクリックします。
+5. [**グループの種類**] で、[ **Office 365**] を選択します。
+6. [**グループ名**] に「 **Sales**」と入力します。
+7. [**メンバーシップの種類**] で、[**動的ユーザー** ] を選択します。
 8. **[動的クエリの追加]** をクリックします。
 9. **[ユーザーを追加する場所]** で、**[部署]** を選択します。
 10. 次のフィールドで、**[等しい]** を選択します。
-11. 次のフィールドでは、**売り上げ高**を入力します。
+11. 次のフィールドで、「 **Sales**」と入力します。
 12. **[クエリの追加]** をクリックしてから、**[作成]** をクリックします。
-13. **グループ**と**グループのすべてのグループ**のブレードを閉じます。
+13. [グループと**グループ-すべて**のグループ **]** ブレードを閉じます。
 
-次に、Office 365 の E5 とエンタープライズ モビリティとセキュリティ E5 ライセンスのメンバーが自動的に割り当てられるように、セールス ・ グループを構成します。
+次に、メンバーに Office 365 E5 および Enterprise Mobility + Security E5 ライセンスが自動的に割り当てられるように、Sales グループを構成します。
 
-1. Azure Active Directory の**概要**のブレードでをクリックして**ライセンス > すべての製品**。
+1. Azure Active Directory の**概要**ブレードで、[ **Licenses > All products**] をクリックします。
 2. 一覧で、 **[Enterprise Mobility + Security E5]** と **[Office 365 Enterprise E5]** を選択し、 **[割り当て]** をクリックします。
-3. **ライセンスの割り当て**のブレードでは、**ユーザーとグループ**をクリックします。
-4. グループの一覧では、 **Sales**グループを選択します。
+3. [**ライセンスの割り当て**] ブレードで、[**ユーザーとグループ**] をクリックします。
+4. グループの一覧で、[ **Sales** ] グループを選択します。
 5. **[選択]** をクリックし、 **[割り当て]** をクリックします。
 6. ブラウザーの [Azure Portal] タブを閉じます。
 
-次に、動的グループのメンバーシップと 4 のユーザー アカウントの自動ライセンスの取得をテストします。 
+次に、ユーザー4アカウントの動的グループメンバーシップと自動ライセンスをテストします。 
 
-1. **Microsoft Office ホーム**] タブからお使いのブラウザーで、[**管理**] をクリックします。
-2. **Office 管理者センター** ] タブで、**アクティブなユーザー**をクリックします。
-3. [**アクティブ ユーザ**] ページでは、 **4 のユーザー**アカウントをクリックします。
-4. **ユーザー 4**ウィンドウで、**製品のライセンス**の [**編集**] をクリックします。
-5. **製品ライセンス**] ウィンドウで、[**エンタープライズ モビリティ + E5 のセキュリティ**を有効にするクリックし、 **Office 365 エンタープライズ E5**ライセンス オフ、**を保存 > 閉じる**。
-6. 4 のユーザー アカウントのプロパティ] では、製品のライセンスが割り当てられていないと、グループ メンバーシップがないことを確認します。
-7. **連絡先情報**の**編集**] をクリックします。
-8. **については連絡先の編集**ウィンドウで、**連絡先情報**をクリックします。
-9. [**部門**] フィールドで、**販売**を入力し] をクリックし、**を保存 > 閉じる**。
-10. 、数分待ってから、定期的に 4 のユーザー アカウント] ウィンドウの右上の更新アイコンをクリックします. 
+1. ブラウザーの [ **Microsoft Office Home** ] タブで、[**管理者**] をクリックします。
+2. [ **Microsoft 365 管理センター** ] タブで、[**アクティブなユーザー**] をクリックします。
+3. [**アクティブなユーザー** ] ページで、[ **User 4** ] アカウントをクリックします。
+4. [ **User 4** ] ウィンドウで、[**製品ライセンス**] の [**編集**] をクリックします。
+5. [**製品ライセンス**] ウィンドウで、 **enterprise Mobility + Security e5**および**Office 365 Enterprise e5**ライセンスをオフにして、[ **Save > Close**] をクリックします。
+6. User 4 アカウントの [プロパティ] で、製品ライセンスが割り当てられておらず、グループメンバーシップもないことを確認します。
+7. [**連絡先情報**] の [**編集**] をクリックします。
+8. [**連絡先情報の編集**] ウィンドウで、[**連絡先情報**] をクリックします。
+9. [**部署**] フィールドに「 **Sales**」と入力し、[ **Save > Close**] をクリックします。
+10. 数分待ってから、ユーザー4のアカウントウィンドウの右上にある [更新] アイコンを定期的にクリックします。 
 
-時刻が表示します。
+時間内に、次のように表示されるはずです。
 
-- **グループ メンバーシップ**プロパティが、**セールス**・ グループを使用して更新します。
-- **エンタープライズ モビリティおよびセキュリティ E5**と**Office 365 のエンタープライズ E5**のライセンスを更新する**製品のライセンス**プロパティです。
+- **グループメンバーシップ**プロパティが**Sales** group で更新されました。
+- **enterprise Mobility + Security e5**および**Office 365 enterprise e5**ライセンスで更新された**製品ライセンス**のプロパティ。
 
-情報と動的グループのメンバーシップと実稼働環境での自動ライセンス展開へのリンクの識別段階では、次の手順を参照してください。
+動的グループメンバーシップと自動ライセンスを運用環境に展開するための情報とリンクについては、id フェーズの以下の手順を参照してください。
 
-- [自動ライセンスをセットアップする](identity-group-based-licensing.md)
-- [動的グループ メンバーシップをセットアップする](identity-automatic-group-membership.md)
+- [自動ライセンスをセットアップする](identity-self-service-group-management.md#identity-group-license)
+- [動的グループ メンバーシップをセットアップする](identity-self-service-group-management.md#identity-dyn-groups)
 
 ## <a name="next-step"></a>次の手順
 
@@ -103,6 +103,6 @@ Microsoft 365 エンタープライズ テスト環境での自動ライセン�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 エンタープライズ展開](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 Enterprise 展開](deploy-microsoft-365-enterprise.md)
 
 [Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)

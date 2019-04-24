@@ -8,6 +8,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -16,13 +17,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: 自動的に 10 の Windows コンピューターに 32 ビットの Office アプリケーションをインストールおよび更新されるようにする方法を説明します。
-ms.openlocfilehash: 16a8230d60157f1c6731ac639d89533b05aa3afe
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 32ビット版の Office アプリを Windows 10 コンピューターに自動的にインストールして、更新したままにする方法について説明します。
+ms.openlocfilehash: c8e93746b89925d6b6a928a474fe5736e2834987
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286655"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Microsoft 365 Business による Office クライアントの展開を準備する
 
@@ -38,7 +39,7 @@ Microsoft 365 Business を使用すると、32 ビット版の Office アプリ�
     
 - Office のクイック実行の既存バージョンがインストールされている。
     
-**ファイル**に移動するすべての Office アプリケーションを確認するかどうかは、クイック実行のバージョンの Office では、 \> **アカウント**(**アカウントの Office** Outlook で)。次の図に示すように、Office の更新プログラムが表示された場合、インストールは、クイック実行を使用して行われました。 
+To determine if you have the Click-to-Run version of Office, in any Office app go to **File** \> **Account** ( **Office Account** in Outlook). If you see Office Updates as shown in the following figure, then the installation was done by using Click-to-Run. 
   
 ![Screenshot of Office updates in Office app Account](media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   

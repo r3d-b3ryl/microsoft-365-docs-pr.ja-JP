@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 Business を購入してサインアップする方法について説明します。
 ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
-ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31504083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283594"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Microsoft 365 Business へのサインアップ
 
@@ -41,7 +41,7 @@ ms.locfileid: "31504083"
 
     - **Username**: 独自のビジネスメールに使用する名前 (エイリアスと呼ばれる) を入力します。 たとえば、Robert Young は roby または RobYoung を作業エイリアスとして使用することがあります。
     - **会社**: 固有の会社名を入力します。 これは、ビジネス web サイトが使用している場合に使用する名前で、ビジネスメールを受信するときに、@ 記号の後に含める名前です。 この名前はドメインと呼ばれます。 たとえば、会社が Contoso ski という名前の場合は、@ 記号の後に「ContosoSkis」と入力します。
-    - **ドメインの選択**: ドメイン名が既に所有している場合は、ドロップダウンリストから onmicrosoft.com を選択すると、後で設定するように求められます。 それ以外の場合は、ビジネスを表すドメイン名を簡単に購入できます。 これを行うには、ドロップダウンメニューから希望のドメインを選択します。 たとえば、完全な電子メールアドレスがで*Teresa@ContosoSkis.net*ある場合があります。 ドメイン名が使用可能な場合は、すぐに確認できます。 その場合は、Microsoft 365 Business サブスクリプションのコストにドメインのコストを追加します。 ここで購入した場合は、新しいドメインも設定され、Microsoft 365 で使用できるようになります。 ドメインの詳細については、「ドメインに関する[FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq)」を参照してください。
+    - **ドメインの選択**: ドメイン名が既に所有している場合は、ドロップダウンリストから onmicrosoft.com を選択すると、後で設定するように求められます。 それ以外の場合は、ビジネスを表すドメイン名を簡単に購入できます。 これを行うには、ドロップダウンメニューから希望のドメインを選択します。 たとえば、完全な電子メールアドレスが*Teresa@ContosoSkis.net*になることがあります。 ドメイン名が使用可能な場合は、すぐに確認できます。 その場合は、Microsoft 365 Business サブスクリプションのコストにドメインのコストを追加します。 ここで購入した場合は、新しいドメインも設定され、Microsoft 365 で使用できるようになります。 ドメインの詳細については、「ドメインに関する[FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq)」を参照してください。
     
     ![ユーザー ID の作成ページのスクリーンショット。](media/signinuserid.png)
 

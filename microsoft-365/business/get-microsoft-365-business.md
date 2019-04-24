@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business を入手する
+title: パートナーセンターから Microsoft 365 Business を取得する
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,19 +19,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: マイクロソフト ・ パートナー ・ センターから Microsoft 365 のビジネスを購入する方法について説明します。
-ms.openlocfilehash: 77c8e3af930db540c0fab665aceef850f82e219c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: microsoft パートナーセンターから microsoft 365 Business を購入する方法について説明します。
+ms.openlocfilehash: 1dcd9c21a598020447308970024a896b157bdae4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278376"
 ---
 # <a name="get-microsoft-365-business"></a>Microsoft 365 Business を入手する
 
 ## <a name="get-microsoft-365-business-from-microsoft"></a>Microsoft から Microsoft 365 Business を購入する
 
-しないしている場合、パートナー Microsoft 365 のビジネスを取得する、[ここでそれを購入](https://www.microsoft.com/en-US/microsoft-365/business)することができます。
+パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/en-US/microsoft-365/business)できます。
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Microsoft パートナー センターから Microsoft 365 Business を購入する
 
@@ -41,7 +43,7 @@ ms.locfileid: "26868984"
   
 3. 顧客の [ **サブスクリプション**] ページで、[サブスクリプションの追加] を選択し、[カタログ] の下で [小規模企業] オプションを選択して、[ **Microsoft 365 Business**] を選択します。
     
-    番号を選択します (最大 300) が必要なライセンスです。300 以上のユーザーがあれば、代わりに[Microsoft 365 エンタープライズ](https://go.microsoft.com/fwlink/p/?linkid=862316)参照してください。 
+    必要なライセンス数 (最大 300) を選びます。 300を超えるユーザーがいる場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 」を参照してください。 
     
     ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
   

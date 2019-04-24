@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: IPhone や Android の電話番号の場合、作業ファイルを Office アプリケーションで Office をインストールは、Microsoft 365 ビジネスによって保護されます。
-ms.openlocfilehash: 15dc9742cb9712bcbf21e7e3668adc572ee9eb2b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: iPhone または Android 電話機に office をインストールすると、office アプリの仕事ファイルは Microsoft 365 Business によって保護されます。
+ms.openlocfilehash: 4ffde6197104cfceb337a9d531032dacfd9efcf0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284691"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする
 
@@ -34,7 +37,7 @@ ms.locfileid: "26869131"
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-Microsoft 365 ビジネスに iOS デバイス上の Office アプリケーションを設定する方法に関するビデオを視聴するには。
+Microsoft 365 Business を使用して iOS デバイスで Office アプリをセットアップする方法に関するビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
@@ -50,7 +53,7 @@ Microsoft 365 ビジネスに iOS デバイス上の Office アプリケーシ�
   
 ![Screenshot of Outlook with Get Started button](media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-[**電子メール アカウントの追加**] 画面で作業電子メール アドレスを入力\>**アカウントの追加**、Microsoft 365 ビジネス資格情報を入力し、 \> **にサインイン**します。
+Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 Business credentials \> **Sign in**.
   
 ![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -64,7 +67,7 @@ iPhone で Outlook を見つけて、再起動します。求められたら、P
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
-Android の携帯電話のセットアップを開始するには、再生ストアに移動します。
+Android phone でのセットアップを開始するには、再生ストアに移動します。
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
@@ -72,7 +75,7 @@ Google Play の検索ボックスで「Microsoft Outlook」と入力し、[ **�
   
 ![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Outlook アプリケーション**を開始**する] をタップし、Microsoft 365 ビジネス電子メール アカウントを追加する\>**続行**、および、組織の資格情報でサインインします。
+In the Outlook app tap **Get Started**, then add your Microsoft 365 Business email account \> **Continue**, and sign in with your organization credentials.
   
 ![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   

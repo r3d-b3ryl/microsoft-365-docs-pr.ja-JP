@@ -1,5 +1,5 @@
 ---
-title: 365 ビジネスのマイクロソフトのセキュリティ機能
+title: Microsoft 365 Business セキュリティ機能
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-security-compliance
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,171 +18,171 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: Microsoft 365 ビジネスに付属しているセキュリティ機能について説明します。
-ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 Business に付属しているセキュリティ機能について説明します。
+ms.openlocfilehash: 24d4c4e79e7d8737beb82336796956774f127209
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286886"
 ---
-# <a name="microsoft-365-business-security-features"></a>365 ビジネスのマイクロソフトのセキュリティ機能
+# <a name="microsoft-365-business-security-features"></a>Microsoft 365 Business セキュリティ機能
 
-Microsoft 365 のビジネスには、Pc、電話、タブレット上のデータの保護のために簡素化されたセキュリティ機能が用意されています。
+Microsoft 365 Business では、pc、携帯電話、タブレットでデータを保護するための簡単なセキュリティ機能が提供されています。
     
-## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 ビジネス管理センターのセキュリティ機能
+## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business 管理センターのセキュリティ機能
 
-管理センターで、これらの機能を有効または無効にする簡単な方法を提供する Microsoft 365 ビジネス セキュリティ機能の多くを管理することができます。管理センターでは、次の操作を行うことができます。
+管理センターでは、Microsoft 365 Business セキュリティ機能の多くを管理することができます。これにより、これらの機能を簡単にオンまたはオフにすることができます。 管理センターでは、次の操作を実行できます。
   
 ![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
-- [Android や iOS のデバイスには、アプリケーション管理の設定](app-protection-settings-for-android-and-ios.md)をします。 
+- [Android または iOS デバイスのアプリケーション管理設定を設定](app-protection-settings-for-android-and-ios.md)します。 
     
-    これらの設定には、一定期間後に非アクティブなデバイスからファイルを削除、作業ファイルの暗号化、ユーザーが暗証番号 (pin) などを設定する必要が含まれます。
+    これらの設定には、設定期間後に非アクティブなデバイスからファイルを削除する、作業ファイルを暗号化する、ユーザーに PIN を設定することなどが含まれます。
     
-- [10 の Windows デバイス用のアプリケーション保護設定を設定](protection-settings-for-windows-10-devices.md)します。 
+- [Windows 10 デバイスのアプリケーション保護設定を設定](protection-settings-for-windows-10-devices.md)します。 
     
-    会社が所有する、両方の会社のデータや個人所有のデバイスには、これらの設定を適用できます。
+    これらの設定は、会社所有のデバイスまたは個人所有のデバイスの両方で会社のデータに適用できます。
     
-- [10 の Windows デバイスのデバイスの保護を設定](protection-settings-for-windows-10-pcs.md)します。 
+- [Windows 10 デバイスのデバイス保護設定を設定](protection-settings-for-windows-10-pcs.md)します。 
     
-    デバイスの紛失や盗難に備えてデータを保護するための[BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405)暗号化を有効にし、ransomware に対して高度な保護を提供する[Windows を悪用するガード](https://go.microsoft.com/fwlink/p/?linkid=871404)を有効にできます。 
+    デバイスが紛失または盗難にあった場合にデータを保護するために[BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405)暗号化を有効にし、 [Windows Exploit Guard](https://go.microsoft.com/fwlink/p/?linkid=871404)がランサムウェアに対する高度な保護を提供できるようにします。 
     
 - [デバイスから会社のデータを削除する](remove-company-data.md)
     
-    会社のデータは、デバイスが失われ、盗まれた場合、または従業員が会社を退職した場合は、リモートでワイプできます。
+    デバイスが紛失、盗難、または従業員が退職した場合、会社のデータをリモートでワイプできます。
     
-- [の工場出荷時設定にデバイスを Windows の 10 をリセット](reset-devices-to-factory-settings.md)します。 
+- [Windows 10 デバイスを出荷時の設定にリセット](reset-devices-to-factory-settings.md)します。 
     
-    適用されたデバイスの保護が設定されているすべての 10 の Windows デバイスをリセットすることができます。
+    デバイス保護設定が適用されているすべての Windows 10 デバイスをリセットできます。
     
-## <a name="additional-security-features"></a>追加のセキュリティ機能 
+## <a name="additional-security-features"></a>その他のセキュリティ機能 
 
-Microsoft 365 のビジネスでの高度な機能は、サイバー脅威からビジネスを保護し、機密情報を保護するために使用できます。
+Microsoft 365 business の高度な機能を使用すると、サイバー脅威からビジネスを保護し、機密情報を保護することができます。
   
 - **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
-    脅威保護 (ATP) を高度な支援は、高度なフィッシング詐欺および従業員や顧客の情報を侵害するように設計された ransomware 攻撃からビジネスを保護します。機能は次のとおりです。
+    Advanced Threat Protection (ATP) は、従業員または顧客の情報を侵害するように設計された高度なフィッシングおよびランサムウェア攻撃からビジネスを保護するのに役に立ちます。 以下の機能があります。
     
-  - 高度な添付ファイルをスキャンし、AI 駆動の分析を検出し、危険なメッセージを破棄します。
+  - 高度な添付ファイルスキャンと AI による分析により、危険なメッセージを検出して破棄します。
     
-  - 自動は、フィッシング詐欺の一部であるかどうかを評価するのには電子メールで web リンクをチェックします。こう安全でない web サイトへのアクセスから保護します。
+  - 電子メールの web リンクを自動チェックして、それらがフィッシング詐欺スキームの一部であるかどうかを評価します。 これにより、安全でない web サイトへのアクセスが安全に保たれます。
     
 - **[データ損失防止ポリシーの概要](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**(DLP)。 
     
-    DLP を設定するには、クレジット_カード番号、社会保障番号など、不注意を防ぐように、機密情報を自動的に検出するのには企業の外部で共有します。
+    DLP を設定して、クレジットカード番号、社会保障番号などの機密情報を自動的に検出し、会社外との偶発的な共有を防ぐことができます。
     
 - **[Exchange Online Archiving](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
     
-    Exchange Online Archiving のライセンスでは、継続的なデータのバックアップを簡単にアーカイブするメッセージを使用できます。すべての探索や復元の後で必要な場合に削除済みアイテムを含む、ユーザーの電子メールが格納されます。さらに、証拠保全、電子的証拠開示のメール ・ データを保持するために、またはコンプライアンスの要件を満たすためには、別の保存ポリシーを使用できます。
+    Exchange Online のアーカイブライセンスでは、継続的なデータバックアップを使用してメッセージを簡単にアーカイブできます。 削除済みアイテムを含むすべてのユーザーの電子メールを、後で検出または復元するときに必要に応じて保存します。 また、さまざまなアイテム保持ポリシーを使用して、訴訟ホールド、電子情報開示、またはコンプライアンス要件を満たすために電子メールデータを保持することができます。
     
 - **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
     
-    ようなコントロールで、電子メールやドキュメントの機密性の高い情報へのアクセスを制御する情報の保護に役立ちますが「?」および"コピーしません。「社外秘」としての機密情報を分類し、ビジネス内では、外部に機密情報を共有できる方法を指定できます。エンタープライズ レベルの暗号化は、電子メールとプライベートの情報を保持するドキュメントに適用する簡単です。Microsoft 365 のビジネスには、 [Azure の情報保護計画 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。Azure 情報保護クライアント アドインを Office アプリケーションにインストールすることもできます。詳細については、 [Azure の情報保護クライアントの管理者ガイド](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)を参照してください。
+    情報保護は、「転送不可」や「コピーしない」などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御するのに役に立ちます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Microsoft 365 Business には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection クライアントの admininstrator ガイド](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)」を参照してください。
     
-- **[Intune の Azure ポータル内のすべての機能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
+- **[Azure portal の Intune のすべての機能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    Azure ポータルの管理センターでは、MacOS デバイス、iPhone、Android のデバイスと、Windows の高度なデバイス管理の管理などの追加のセキュリティ機能を設定できます。 Intune へのアクセスはない Microsoft から入手365 のビジネス管理センターです。
+    Azure portal の Intune 管理センターにアクセスすることにより、Microsoft では提供されていない、Windows 用アドバンストデバイス管理と共に、MacOS デバイス、iPhone、Android デバイスの管理など、追加のセキュリティ機能を設定できます。365 Business 管理センター
     
-次のセクションでは、これらの機能のセキュリティを管理する方法について説明する&amp;コンプライアンスとセンター、Intune 管理します。時間の経過と共に簡略化されたコントロールは、Microsoft 365 ビジネス管理センターに追加されます。
+次のセクションでは、これらの機能をセキュリティ&amp;コンプライアンスセンターおよび Intune 管理センターで管理する方法について説明します。 時間の経過とともに、簡略化された統制は Microsoft 365 Business 管理センターに追加されます。
   
-## <a name="set-up-advanced-threat-protection-features"></a>脅威の高度な保護機能を設定します
+## <a name="set-up-advanced-threat-protection-features"></a>高度な脅威保護機能をセットアップする
 
-- **安全でない添付ファイルを保護する:** 分析ツールは、仮想環境で電子メールの添付ファイルを開くことで悪意のあるコンテンツを識別し、結果の動作の分析を実行します。(通常または悪意のある) かどうか、その目的を決定するのには、コンテンツが評価される、ATP はフィッシング詐欺や ransomware のウイルス感染から保護するため、安全でない添付ファイルの配信をブロックします。添付ファイルの保護を有効にするのには[Office 365 ATP の安全な添付ファイルのポリシー設定](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775)を参照してください。
+- **安全でない添付ファイルから保護する:** ATP は、仮想環境で電子メールの添付ファイルを開いて、結果の動作の分析を実行することで、悪意のあるコンテンツを特定します。 コンテンツを評価して、その意図 (通常または悪意) を判断し、ATP が安全でない添付ファイルの配信をブロックすることで、フィッシング詐欺やランサムウェアによる感染から保護します。 添付ファイル保護をアクティブにするには、「 [Office 365 ATP の安全な添付ファイルのポリシーを](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775)セットアップする」を参照してください。
     
-- ユーザーが悪意のあるリンクをクリックしたときに、環境を保護する: ATP がそれらをユーザーがクリックした時にも電子メール内のリンクを検証します。リンクが安全でない場合は、ユーザーがサイトにアクセスしないように警告またはサイトがブロックされたことを通知します。これにより、フィッシング詐欺から保護します。[Office 365 の ATP の安全なリンクのポリシーを設定](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc)または[ポリシーを Office 365 の ATP の安全なリンクを設定](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc)できます。
+- ユーザーが悪意のあるリンクをクリックしたときに環境を保護します。 ATP では、ユーザーがクリックしたときに電子メール内のリンクもチェックされます。 リンクが安全でない場合、ユーザーはサイトにアクセスしないように警告が出されるか、サイトがブロックされていることが通知されます。 これにより、フィッシングを防ぐことができます。 [office 365 atp safe links ポリシーを](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc)セットアップするか、 [office 365 atp safe links ポリシーを](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc)セットアップすることができます。
     
-## <a name="set-up-dlp-features"></a>DLP 機能を設定します。
+## <a name="set-up-dlp-features"></a>DLP 機能を設定する
 
-個人を特定できる情報 (PII) を保護するポリシーを設定する方法の例については、[テンプレートからの DLP ポリシーの作成](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369)を参照してください。 
+個人を特定できる情報 (PII) を保護するポリシーを設定する方法の例については、「[テンプレートからの DLP ポリシーの作成](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369)」を参照してください。 
   
-DLP では、多くの異なるロケールの多くのすぐに使用できるポリシー テンプレートが付属しています。例では、オーストラリアの財務データ、個人情報法のカナダ、米国の財務データなどです。完全なリスト[と、DLP ポリシー テンプレートに含まれて](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a)参照してください。これらのテンプレートをすべて有効にできますのような個人情報テンプレート。 
+DLP には、さまざまなロケールに対して、多くの使用可能なポリシーテンプレートが用意されています。 たとえば、オーストラリアの財務データ、カナダの個人情報法、米国金融データなど。完全なリストについては[、DLP ポリシーテンプレートに含まれるもの](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a)を参照してください。 これらのテンプレートはすべて、PII テンプレートの例と同様に有効にすることができます。 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Exchange Online Archiving の電子メールの保存期間を設定します
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Exchange Online アーカイブを使用したメールの保存期間の設定
 
- **Exchange Online Archiving の**ライセンスの機能では、維持するためにコンプライアンスや規制の標準メールを保持することによってコンテンツ電子的証拠開示のための機能を提供します。訴訟が発生した場合、リスクを軽減し、セキュリティ違反の後、または削除済みアイテムを復元する必要があるときにデータを回復する方法が用意されています。これらの機能を有効にするのには証拠保全をすべてのユーザーのコンテンツを保持するために使用したり、保存ポリシーを使用して、詳細にカスタマイズできます。 
+ **Exchange Online アーカイブ**ライセンス機能を使用すると、電子情報開示の目的で電子メールコンテンツを保持することで、コンプライアンスおよび規制基準を維持することができます。 また、訴訟が発生した場合のリスクを軽減し、セキュリティ違反が発生した後や、削除済みアイテムを復元する必要がある場合にも、データを回復することができます。 これらの機能を有効にするには、訴訟ホールドを使用して、すべてのユーザーのコンテンツを保持するか、アイテム保持ポリシーを使用してカスタマイズを強化できます。 
   
-**証拠保全:** 訴訟でユーザーのメールボックスの全体を配置することで削除済みアイテムを含む保持すべてのメールボックスの内容を保持できます。 
+**訴訟ホールド:** ユーザーのメールボックスを訴訟ホールドの対象にすることで、削除されたアイテムを含むすべてのメールボックスのコンテンツを保持できます。 
     
-証拠保全、管理センター内にメールボックスを配置します。
+メールボックスを訴訟ホールドの対象にするには、管理センターで次のようにします。
     
-1. 左側のナビゲーションでは、**ユーザー**に移動\>**アクティブなユーザー**です。
+1. 左側のナビゲーションで、[**ユーザー** \> ] [**アクティブなユーザー**] に移動します。
     
-2. 訴訟に配置するメールボックスを保持するユーザーを選択し、**メールの設定**を展開し、[ユーザー] ウィンドウで**詳細設定**の横にある [ **Exchange の編集のプロパティ**] をクリックします。
+2. 訴訟ホールドの対象とするメールボックスを持つユーザーを選択し、ユーザーウィンドウで [**メールの設定**] を展開し、[**その他の設定**] の横にある [ **Exchange プロパティの編集**] を選択します。
     
-3. [ユーザー メールボックス] ページで次のように選択します。 * * メールボックス機能 * * の左側のナビゲーションでは、し、**証拠保全**の下**を有効にする**リンクを選択します。
+3. ユーザーのメールボックスページで、左側のナビゲーションにある [* * メールボックスの機能] を選択し、[**訴訟ホールド**] の下の [**有効にする**] リンクを選択します。
     
-4. **証拠保全**を訴訟を指定するダイアログ ボックス**訴訟ホールドの継続時間**] フィールドで期間を押しながら、フィールドは無限の保留リストを配置する場合は空のままにします。ノートを追加し、訴訟の詳細を保持するかを説明する必要があります web サイトにメール ボックスの所有者を直接\>**を保存**します。
+4. [**訴訟**ホールド] ダイアログボックスで、[**訴訟ホールド期間**] フィールドに訴訟ホールド期間を指定することができます。無限に保持する場合は、フィールドを空のままにします。 また、メモを追加して、メールボックスの所有者を web サイトに誘導することもできます。 \>これにより、訴訟ホールドの**保存**について詳細に説明する必要があります。
     
-**保存期間:** カスタマイズされた保持ポリシーを有効にするには一定の時間を保持するか、保存期間の終了時にコンテンツを完全に削除します。詳細については、[保存ポリシーの概要](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)を参照してください。
-## <a name="set-up-azure-information-protection-features"></a>Azure の情報保護機能を設定します
+**保持:** 保持期間の終了時に、特定の時間だけ保持したり、コンテンツを完全に削除したりするために、カスタマイズされた保持ポリシーを有効にすることができます。 詳細については、「[アイテム保持ポリシーの概要](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)」を参照してください。
+## <a name="set-up-azure-information-protection-features"></a>Azure Information Protection 機能をセットアップする
 
-Azure の情報の保護 (AIP) は、分類し、必要に応じて、ラベルを適用することにより、ドキュメントと電子メールを保護するために組織を支援するクラウド ベースのソリューションです。ルールとユーザー、またはユーザーに推奨事項が与えられている組み合わせで手動での条件を定義する管理者が、ラベルを自動的に適用できます。
+Azure Information Protection (AIP) は、組織がラベルを適用することで、ドキュメントや電子メールを分類し、必要に応じて保護できる、クラウドベースのソリューションです。 ラベルは、ルールと条件を定義する管理者、ユーザーによって手動で、またはユーザーが推奨事項を与える組み合わせによって自動的に適用されます。
 
-Web 上の Outlook で電子メールを送信するときは、次の制限を適用する機能はすべてのユーザーに対して自動的に有効にします。
+web 上の Outlook でメールを送信するときに以下の制限を適用する機能は、すべてのユーザーに対して自動的に有効になります。
   
-- **転送不可**: 受信者がメッセージを読み取ることができますが、印刷、または、コンテンツをコピーすることはできませんが、
+- **転送不可**: 受信者はメッセージを読み取ることはできますが、コンテンツを転送、印刷、またはコピーすることはできません
     
-- **暗号化**: メッセージ全体を暗号化します。受信者は、暗号化されたコンテンツにアクセスする前に自分の身元を確認するのには追加の手順を実行する必要があり、暗号化を解除することはできません。
+- **Encrypt**: メッセージ全体が暗号化されます。 暗号化されたコンテンツにアクセスする前に、id を確認するために、受信者は特別な手順を実行する必要があります。
     
-- **社外秘**: e メールの内容と添付ファイルには、組織外のユーザー、組織内の従業員に完全なアクセス許可を提供します。データの所有者を追跡し、任意の時点でコンテンツを失効します。
+- **社外秘**: 組織内の従業員に電子メールのコンテンツと添付ファイルへの完全なアクセス許可は付与されますが、組織外のユーザーに対しては含まれません。 データ所有者は、任意の時点でコンテンツを追跡して取り消すことができます。
     
-- **機密性の高い**: 機密性の高いデータを表示、編集と返信するが、いない転送、印刷、またはデータをコピーする従業員を許可するのにはこの制限を適用できます。データの所有者を追跡し、任意の時点でコンテンツを失効します。
+- **高機密**: この制限は機密性の高いデータに適用できるため、従業員はデータの表示、編集、および返信を行うことはできませんが、転送、印刷、またはコピーはできません。 データ所有者は、任意の時点でコンテンツを追跡して取り消すことができます。
 
-### <a name="make-sure-azure-information-protection-is-activated"></a>Azure の情報の保護がアクティブ化されるかどうかを確認します。
+### <a name="make-sure-azure-information-protection-is-activated"></a>Azure Information Protection がアクティブ化されていることを確認する
 
-AIP がアクティブ化されていることを確認するには。
+AIP がアクティブ化されていることを確認するには
 
-1. [Azure ポータル](https://portal.azure.com/)にサインインします。
+1. [Azure portal](https://portal.azure.com/)にサインインします。
 
-2. **[検索] ボックス**で、 *Azure の情報保護*の**すべてのサービス**との種類を選択します。
+2. [**すべてのサービス**] を選択し、[**検索] ボックス**に「 *Azure Information Protection* 」と入力します。
 
-3. 結果を表示すると、お気に入りに**Azure の情報の保護**] を後で見つけやすい開始をクリックします。
+3. 結果が表示されたら、 **Azure Information Protection**の横にある [開始] をクリックして、お気に入りにし、後で見つけやすいようにします。
 
-4. **Azure の情報保護**を選択して\>**保護の有効化**し、確かに状態が設定されて有効にします。 
+4. [ **Azure Information protection** \> **protection activation** ] を選択し、状態が [アクティブ] に設定されていることを確認します。 
 
-### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>Azure の情報保護のポリシーと既定のラベルを表示します。 
+### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>Azure Information Protection ポリシーと既定のラベルを表示する 
 
-表示、変更、既存のラベルを付けます。
+既存のラベルを表示および変更するには、次のようにします。
 
-1. Azure の情報保護のダッシュ ボードには、**クラス**を選択して\>**ラベル**です。 <br/>![Azure の情報保護のための標準的なラベル。](media/AIPLabels.png)
+1. [Azure Information Protection] ダッシュボードで、[**分類** \> **ラベル**] を選択します。 <br/>![Azure Information Protection の標準ラベル。](media/AIPLabels.png)
 
-2. オプションを表示するのには任意のラベルを選択することができます、表示名、色などを変更することができます。
+2. 任意のラベルを選択してオプションを表示したり、表示名や色などを変更したりできます。
  
-3. 参照してください[変更し、新しいラベルを作成する](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2)を独自に作成する場合。 
+3. 独自のラベルを作成する場合は、「[変更して新しいラベルを作成](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2)する」を参照してください。 
 
-### <a name="install-the-azure-information-protection-client-manually"></a>Azure の情報保護のクライアントを手動でインストールします。
+### <a name="install-the-azure-information-protection-client-manually"></a>Azure Information Protection クライアントを手動でインストールする
 
-AIP クライアントを手動でインストールするには。
+AIP クライアントを手動でインストールするには、次のようにします。
 
-1. **AzInfoProtection.exe**をは、 [Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53018)からダウンロードします。
+1. [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=53018)から**azinfoprotection**をダウンロードします。
  
-2. Word ドキュメントを表示し、**保護する**] オプションが [**ホーム**] タブで利用可能であることを確認することによって、インストールが動作するかを確認できます。 <br/>![[保護] タブで Word 文書には、ドロップダウンします。](media/Word_Protect.png)
+2. Word 文書を表示し、[**ホーム**] タブで [**保護**] オプションが有効になっていることを確認することで、インストールが正常に行われたことを確認できます。 <br/>![Word 文書内の [保護] タブのドロップダウン](media/Word_Protect.png)
 
-詳細情報、「[クライアントのインストール](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+詳細については、「[クライアントをインストールする](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)」を参照してください。
 
 ## <a name="go-to-intune-admin-center"></a>Intune 管理センターに移動します。
 
-1. [Azure ポータル](https://portal.azure.com/)にサインインします。
+1. [Azure portal](https://portal.azure.com/)にサインインします。
 
-2. *Intune*を、[**検索] ボックス**内の**すべてのサービス**との種類を選択します。
+2. [**すべてのサービス**] を選択し、**検索ボックス**に「 *Intune* 」と入力します。
 
-3. 結果を表示する**Microsoft Intune**をお気に入りにすることを後で見つけやすい開始をクリックします。
+3. 結果が表示されたら、[ **Microsoft Intune** ] の横にある [開始] をクリックして、お気に入りにし、後で見つけやすいようにします。
  
-Intune を使用するには登録し、組織のデバイスを管理します。詳細については、 [Windows デバイスの登録方法で機能](https://docs.microsoft.com/intune/enrollment-method-capabs)し、 [Intune によって管理されるデバイスの登録オプション](https://docs.microsoft.com/intune/enrollment-options)を参照してください。
+Intune を使用して、組織のデバイスの登録と管理を行うことができます。 詳細については、「 [Windows デバイスの登録方法](https://docs.microsoft.com/intune/enrollment-method-capabs)」および「 [Intune によって管理されるデバイスの登録オプション](https://docs.microsoft.com/intune/enrollment-options)」を参照してください。
     
 ## <a name="faq"></a>FAQ
 
- ### <a name="are-these-security-features-available-in-all-markets"></a>これらのセキュリティ機能は、すべての市場で利用できるでしょうか。
+ ### <a name="are-these-security-features-available-in-all-markets"></a>これらのセキュリティ機能はすべての市場で利用できますか?
   
-はい、これらの機能は Microsoft 365 のビジネスを販売しているすべての市場で利用可能です。
+はい。これらの機能は、Microsoft 365 Business が販売されているすべての市場で利用できます。
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>セキュリティを見つける方法&amp;コンプライアンス センターでしょうか。
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>セキュリティ&amp;コンプライアンスセンターを見つけるには、どうすればよいですか。
   
-1. 管理者の資格情報を使用して[Microsoft 365 ビジネスへのサインイン](https://portal.microsoft.com/)をします。 
+1. 管理者の資格情報を使用して、 [Microsoft 365 Business にサインイン](https://portal.microsoft.com/)します。 
     
-2. 左側のナビゲーションでは、**管理センター**を見つけて展開します。 
+2. 左側のナビゲーションで、[**管理センター** ] を見つけて展開します。 
     
-    ![Microsoft 365 管理センターの左側のナビゲーション、管理センターを選択します。](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![Microsoft 365 管理センターの左側のナビゲーションで、[管理センター] を選択します。](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. 選択**セキュリティ&amp;準拠**セキュリティに移動する&amp;コンプライアンス センターです。
+3. [**セキュリティ&amp;コンプライアンス**] を選択し&amp;て、セキュリティ/コンプライアンスセンターに移動します。

@@ -1,47 +1,80 @@
 ---
-title: Microsoft マネージド デスクトップ デバイス
-description: このトピックでは、Microsoft の管理されたデスクトップで使用されているデバイスの仕様を示します。
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+title: Microsoft マネージドデスクトップデバイス
+description: このトピックでは、Microsoft マネージドデスクトップで使用されるデバイスの仕様を示します。
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 11/2/2018
-ms.openlocfilehash: 44175e9896dcbfb85aab9872cbadab0addbc7324
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: a6572a27f737e3467a7efd2a4aea8488b364a8a7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291531"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップ デバイス
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
-Microsoft 管理されたデスクトップは、サービスに含まれるデバイスを定期的に評価します。このトピックでは、デバイスが管理されたデスクトップを Microsoft に登録するための要件について説明します。
+Microsoft マネージドデスクトップは、サービスに含まれるデバイスを定期的に評価します。 このトピックでは、Microsoft マネージドデスクトップにデバイスを登録するための要件の概要を説明します。
 
-Microsoft 管理されたデスクトップの詳細については、[管理されたデスクトップの Microsoft のドキュメントとリソース](https://docs.microsoft.com/microsoft-365/managed-desktop/)を参照してください。 
+microsoft マネージドデスクトップの詳細については、「 [microsoft managed desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/)」を参照してください。 
 
 <!-- Microsoft 365 E5; Device as a Service -->
-<!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->Microsoft 管理されたデスクトップで登録します。
+<!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
+Microsoft マネージドデスクトップに登録するには、デバイスは次のモデルのいずれかである必要があります。 RAM、プロセッサファミリ、およびディスク space& # x00B9; の一覧に記載されている仕様を満たすか、それを超える必要があります。 その他のカスタマイズはサポートされていません。 
 
-- デバイスは、次のモデルおよび構成 & #x00B9; のいずれかである必要があります。
-    - 2 & #x00B2; の Surface Book: 512 GB/インテル i7 16 GB の RAM と 15 インチの表示/
-    - 移動 & #x00B2; の表面: 128 GB/インテル 4415Y/8 GB のメモリ
-    - & #X00B2; の Surface Laptop: 256 GB とインテル i5/8 GB のメモリ
-    - 2 & #x00B2; の Surface Laptop: 256 GB とインテル i5/8 GB のメモリ 
-    - & #X00B2; の Surface Pro: 256 GB とインテル i5/8 GB のメモリ
-    - 6 & #x00B2; の Surface Pro: 256 GB とインテル i5/8 GB のメモリ
-- デバイスは、イメージを持つ必要がありますが & #x00B3;。
-    - 最新 Windows 10 Pro、またはエンタープライズのリリースまたはイミディ エイトの以前のリリースです。
-    - 最新のバージョンの Microsoft Office 365 を実行またはイミディ エイトの以前のリリースです。
-    - OEM 提供の最新のドライバーがインストールされています。そして
-    - プリロードされたソフトウェアの追加がありません。
-- デバイスにする必要があります Windows の最初の実行経験が完了していません。
-- デバイスは Windows の自動操縦装置を登録する必要があり、Microsoft 管理デスクトップ自動操縦のプロファイルが割り当てられています。
+以下のデバイスへのリンクは参照のみを目的としており、商用チャネルの連絡先を通じて購入し、適切な構成が選択されていることを確認する必要があります。
 
-**脚注**
+<table>
+<tr><th colspan="6">Microsoft マネージドデスクトップデバイス</th></tr>
+<tr><th>モデル</th><th>最小仕様</th><th>その他の要件</th><th>&nbsp; &nbsp; Archive&nbsp; Date& # 178;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>定年 Date& # 178</th></tr>
+<tr><td><a href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297">Dell Latitude 5490</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>必要な赤外線カメラ</td><td>2020年1月9日</td><td>2023年1月9日</td></tr>
+<tr><td><a href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297">Dell Latitude 7390/<br/> 7390 2-1/7490</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>必要な赤外線カメラ</td><td>2020年1月9日</td><td>2023年1月9日</td></tr>
+<tr><td><a href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297">Dell Precision 3530</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>必要な赤外線カメラ</td><td>2020年5月22日</td><td>2023年5月22日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features">HP エリート x2 1013 G3</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>5vs03av の SKU <br />
+必要な赤外線カメラ
+</td><td>2020年5月14日</td><td>2023年5月14日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features">HP elitebook 830/840/850 G5</a></td><td>128 gb/Intel i5/8 gb RAM</td><td>5vs01av の SKU <br />
+IR カメラまたは指紋が必要</td><td>2020年2月15日</td><td>2023年2月15日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features">HP elitebook x360 1030 G3</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>5vs01av の SKU <br />
+必要な赤外線カメラ</td><td>2020年5月14日</td><td>2023年5月14日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features">HP elitebook x360 1040 G5</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>5vs01av の SKU <br />
+必要な赤外線カメラ</td><td>2020年10月23日</td><td>2023年10月23日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features">HP EliteDesk 800 G4 DM</a></td><td>128 gb/Intel i3/8 gb RAM</td><td>5vs04av の SKU</td><td>2020年7月18日</td><td>2023年7月18日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features">HP EliteDesk 800 G4 sff</a></td><td>128 gb/Intel i3/8 gb RAM</td><td>5vs04av の SKU</td><td>2020年7月18日</td><td>2023年7月18日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features">AIO の HP EliteOne 800 G4 23.8</a></td><td>128 gb/Intel i3/8 gb RAM</td><td>5vs04av の SKU</td><td>2020年7月18日</td><td>2023年7月18日</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features">HP probook x360 440 G1</a></td><td>128 gb/Intel i3/8 gb RAM</td><td>5vs04av の SKU <br />
+IR カメラまたは指紋リーダが必要</td><td>2020年6月6日</td><td>2023年6月6日</td></tr>
+<tr><td><a href="https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer">Surface Book 2</a></td><td>512 gb/Intel i7/16 GB RAM</td><td>15インチディスプレイ</td><td>2019年11月16時</td><td>2022年11月16時</td></tr>
+<tr><td><a href="https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab">Surface Go</a></td><td>128 GB/Intel 44 15y/8gb RAM</td><td>なし</td><td>2020年8月2時</td><td>2023年8月2時</td></tr>
+<tr><td><a href="https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab">Surface のノートブック</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>なし</td><td>2019年5月20時</td><td>2022年5月20時</td></tr>
+<tr><td><a href="https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer">Surface pc 2</a></td><td>256 gb/Intel i5/8 gb RAM </td><td>なし</td><td>10月 16 2020</td><td>10月 16 2023</td></tr>
+<tr><td><a href="https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer">Surface Pro (5 番目の Gen)</a></td><td> 256 gb/Intel i5/8 gb RAM</td><td>なし</td><td>2019年6月15日</td><td>2022年6月15日</td></tr>
+<tr><td><a href="https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab">Surface Pro 6</a></td><td>256 gb/Intel i5/8 gb RAM</td><td>なし</td><td>10月 16 2020</td><td>10月 16 2023</td></tr>
+</table>
 
-& #x00B9;追加は、いつでもこのリストを作成できます。削除は、それらのデバイスからの登録を許可する前に 90 日間このページに転記されます。
+また、デバイスは次のものも必要です。     
 
-& #x00B2;これらのデバイスの性能や機能の詳細については、[デバイスの画面の比較](https://www.microsoft.com/surface/devices/compare-devices)を参照してください。
+- ファクトリからイメージを作成するか、画像を再作成します。
+    - には、最新の Windows 10 Pro または Enterprise のリリースまたは以前のリリースがあります。
+    - 最新バージョンの Microsoft Office 365 が実行されているか、以前のリリースを実行しています。
+    - には、OEM が提供する最新のドライバーがインストールされています。そして
+    - 新たにプリロードされたソフトウェアはありません。
+    - 5vs04av を使用する HP デバイスには、Microsoft 管理対象デバイスの画像が必要
+- Windows 初回実行時の動作が完了していません。
+- [Windows 自動](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad)操縦に登録され、Microsoft Managed Desktop 自動自動操縦プロファイルが割り当てられている。
 
-& #x00B3;これは、新しいデバイスの購入または以前に取得したデバイスを再イメージングすることによって実装できます。Surface Laptop 2、Pro 6、および移動のデバイスでは、工場出荷時にこれらの要件を満たすし、のみが必要なイメージの再最初の実行要件ごとの MMD ではないデバイスとして既に使用されている場合。
+**その他のヘルプ**
+
+これらのリソースは、特定のデバイスに関して考えられる質問に回答するのに役立ちます。
+
+- 詳細については、Dell devices contact <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>を参照してください。
+
+- HP デバイスに関する詳細については、「北南米 (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>)」を参照してください。ヨーロッパ/中東/アフリカ (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>);アジア太平洋地域/日本 (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>);グローバル (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
+
+**Footnotes**
+
+& # x00B9;このリストには、いつでも追加できます。 これらのデバイスを登録しないようにする前に、このページに削除が90日に投稿されます。
+
+& # 178;アーカイブの日付は、これらのモデルがより短い管理期間の対象となる日付を示します。この日付以降に利用されているデバイスはすべて、3年の完全な用語を受け取ることはありません。 定年後の日付は、Microsoft マネージドデスクトップでこのモデルがサポートされなくなる日付を表します。
+
 

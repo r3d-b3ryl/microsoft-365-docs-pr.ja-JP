@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,41 +20,39 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
-description: 作成、編集、または、アプリケーション管理のポリシーを削除および Android や iOS のデバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: ed03227496120369b94bf2396974eebfd7798678
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: アプリの管理ポリシーを作成、編集、または削除する方法と、Android または iOS デバイスで作業ファイルを保護する方法について説明します。
+ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277455"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
 ## <a name="create-an-app-management-policy"></a>アプリの管理ポリシーを作成する
 
-1. グローバル管理者の資格情報を使用して、[Microsoft 365 Business](https://portal.office.com) にサインインします。 
+1. グローバル管理者の資格情報を使用して、 [Microsoft 365 Business 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)にサインインします。 
     
-2. 管理センターの [ **デバイス ポリシー**] カードで、[ **ポリシーの追加**] を選びます。
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. 管理センターで、[**デバイス** \> **ポリシー** \> ] [**ポリシーの追加**] を選択します。
   
 3. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
     
 4. [ **ポリシーの種類**] で、作成するポリシーのセットに応じて、[ **Android アプリケーション管理**] または [ **iOS アプリケーション管理**] を選びます。 
     
-5. **デバイスの紛失や盗難時の保護の作業ファイル**と**ユーザーがモバイル デバイス上の Office ファイルにアクセスする方法を管理**] を展開\>どのようにしたい設定を構成します。既定で**オフ**になって**ユーザーがモバイル デバイス上の Office ファイルにアクセスする方法を管理**するが、有効**に**して既定値を受け入れることをお勧めします。詳細については、[利用可能な設定](app-protection-settings-for-android-and-ios.md#bkmk_availablesettings)を参照してください。 
+5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. 詳細については、「[利用可能な設定](#available-settings)」を参照してください。 
     
     [ **既定の設定に戻す**] リンクを使用すれば、既定の設定にいつでも戻すことができます。 
     
     ![Screenshot of Create a policy with Application management for Android selected](media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. 次に**にこれらの設定が表示されますか?****変更**を選択して、これらの設定が表示されますユーザー セキュリティ グループを選択の既定の**すべてのユーザー**セキュリティ グループを使用しない場合は、 \> **を選択**します。
+6. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
     
 7. 最後に、[ **完了**] を選択してポリシーを保存し、それをデバイスに割り当てます。 
     
 ## <a name="edit-an-app-management-policy"></a>アプリの管理ポリシーを編集する
 
-1. **ポリシー**カード上には、**ポリシーの編集**をクリックします。
+1. [**ポリシー** ] カードで、[**ポリシーの編集**] を選択します。
     
 2. [ **ポリシーの編集**] ウィンドウで、変更するポリシーを選択します。 
     
@@ -63,7 +64,7 @@ ms.locfileid: "26869569"
 
 1. **ポリシー** カードで、[ **ポリシーの削除**] を選びます。
     
-2. [ウィンドウ]**のポリシーを削除**削除するポリシーを選択して\>**を選択**し、[**確認**または複数の選択したポリシーを削除するのには。 
+2. On the **Delete policy** pane, choose the policies you want to delete \> **Select**, then **Confirm** to delete the policy or policies you chose. 
     
 ## <a name="available-settings"></a>利用可能な設定
 
@@ -78,9 +79,9 @@ ms.locfileid: "26869569"
 |||
 |:-----|:-----|
 |設定  <br/> |説明  <br/> |
-|アクティブでない状態が指定の日数続いたデバイスから作業ファイルを削除する  <br/> |ここで指定した日数の間デバイスが使用されなかった場合、デバイスに保存されているすべての作業ファイルは自動的に削除されます。  <br/> |
-|OneDrive for Business へすべての作業ファイルを保存するようユーザーに強制する  <br/> |この設定を **オン**にすると、作業ファイルの使用可能な保存場所は OneDrive for Business のみになります。  <br/> |
-|作業ファイルを暗号化する  <br/> |作業ファイルが暗号化によって保護されるように、この設定は常に **オン**にします。デバイスが紛失したり盗難された場合でも、企業データが読まれることはありません。  <br/> |
+|この日数後、非アクティブなデバイスから作業ファイルを削除する  <br/> |ここで指定した日数の間デバイスが使用されなかった場合、デバイスに保存されているすべての作業ファイルは自動的に削除されます。  <br/> |
+|ユーザーにすべての作業ファイルを OneDrive for Business に強制的に保存させる  <br/> |この設定を **オン**にすると、作業ファイルの使用可能な保存場所は OneDrive for Business のみになります。  <br/> |
+|作業ファイルの暗号化  <br/> |作業ファイルが暗号化によって保護されるように、この設定は常に **オン**にします。デバイスが紛失したり盗難された場合でも、企業データが読まれることはありません。  <br/> |
    
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>ユーザーによるモバイル デバイスでの Office ファイルへのアクセスを制御する設定
 
@@ -92,8 +93,8 @@ ms.locfileid: "26869569"
 |Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> |この設定を **オン**にすると、ユーザーは、ユーザー名とパスワードの他に、別の認証フォームを提供しないと、モバイル デバイスで Office アプリを使用できません。  <br/> |
 |ログインに指定の回数失敗した場合に PIN をリセットする  <br/> |承認されていないユーザーが PIN をランダムに推測するのを防ぐため、指定した回数、エントリを間違うと、PIN がリセットされます。  <br/> |
 |次の時間 Office アプリのアイドル状態が続いた場合にユーザーはもう一度サインインする必要がある  <br/> |この設定は、もう一度サインインを求められるまで、どのくらいユーザーをアイドル状態にできるかを指定します。  <br/> |
-|脱獄またはルート化したデバイスでの作業ファイルへのアクセスを拒否する  <br/> |賢いユーザーは、脱獄またはルート化されたデバイスを持っている場合があります。これは、ユーザーがオペレーティング システムを変更できるため、デバイスがマルウェアの危険にさらされる可能性が高くなることを意味します。この設定を **オン** にすると、これらのデバイスはブロックされます。  <br/> |
-|Office アプリのコンテンツを個人のアプリにコピーすることをユーザーに許可する  <br/> |既定では、このできるように操作を行いますが、ユーザーが個人用ファイルに、作業ファイルの情報をコピー可能性があります**に**設定する場合は。設定が**オフ**の場合、ユーザーはアプリケーションの個人または個人のアカウントに、勤務先のアカウントから情報をコピーすることができません。<br/> |
+|脱獄またはルート化したデバイスでの作業ファイルへのアクセスを拒否する  <br/> |賢いユーザーは、脱獄またはルート化されたデバイスを持っている場合があります。これは、ユーザーがオペレーティング システムを変更できるため、デバイスがマルウェアの危険にさらされる可能性が高くなることを意味します。この設定を **オン**にすると、これらのデバイスはブロックされます。  <br/> |
+|Office アプリのコンテンツを個人のアプリにコピーすることをユーザーに許可する  <br/> |これは既定で許可していますが、設定が **オン**の場合、ユーザーは作業ファイル内の情報を個人のファイルにコピーできます。 この設定が **オフ** の場合、ユーザーは職場アカウントから個人用アプリまたは個人のアカウントに情報をコピーすることはできません。  <br/> |
    
 
   

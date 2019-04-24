@@ -1,86 +1,86 @@
 ---
-title: Microsoft マネージド デスクトップのセキュリティ
+title: Microsoft マネージドデスクトップのセキュリティ
 description: ''
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 928d01e7386bedc500e984b9c2a3240c6229bb43
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: b91b646b00869827dfb2131e9df9db38a770d9df
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278636"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのセキュリティ
+# <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 管理デスクトップでは、標準的な一連のポリシーが適用され、管理されたデスクトップのマイクロソフトのセキュリティで保護されたデバイス、ストアドの会社データ、ために多くのマイクロソフトのテクノロジを利用しています。以下に示す領域がさらに詳細については。  
+microsoft マネージドデスクトップは、標準のポリシーセットを適用し、microsoft の管理されたデスクトップデバイス、企業データの保存などをセキュリティで保護するために多くの microsoft テクノロジを利用します。 以下の領域について詳細に説明します。  
 
-- [データのセキュリティ](#data-security)- マイクロソフトの管理されたデスクトップとは、安全に保管によって収集されたデータの種類
-- [デバイスのセキュリティ](#device-security): セキュリティと管理されたデスクトップの Microsoft デバイスの保護
-- Azure Active Directory id のサービスを通じて、デバイスの[id およびアクセス管理](#identity-and-access-management): セキュリティで保護された管理を使用してください。
-- [ネットワーク セキュリティ](#network-security): VPN 情報と管理されたデスクトップのマイクロソフトの推奨ソリューションと設定
-- [情報セキュリティ](#information-security): さらに機密情報を保護するためのオプションの使用可能なサービス 
+- [データセキュリティ](#data-security)-Microsoft マネージドデスクトップによって収集され、セキュリティで保護されたデータの種類
+- [デバイスセキュリティ](#device-security)– Microsoft マネージドデスクトップデバイスのセキュリティと保護
+- [id およびアクセス管理](#identity-and-access-management): Azure Active Directory id サービスを使用して、デバイスの安全な使用を管理する
+- [ネットワークセキュリティ](#network-security)– VPN 情報と Microsoft Managed Desktop 推奨ソリューションと設定
+- [情報セキュリティ](#information-security)–機密情報をさらに保護するためのオプションの利用可能なサービス 
 
 ## <a name="data-security"></a>データ セキュリティ
 
-(これによって、Microsoft 管理デスクトップ IT サービスの操作)、テナントのお客様から収集されたデータは、アメリカ合衆国でホストされている Microsoft のテナントに Azure の SQL データベースに格納されます。
+顧客テナントから収集されたデータ (microsoft Managed Desktop IT サービスと運用を可能にする) は、米国でホストされている microsoft テナントの Azure SQL データベースに格納されます。
 
-詳細については、 [Microsoft Azure のセキュリティ](https://docs.microsoft.com/azure/security/azure-database-security-overview)を参照してください。
+詳細については、「 [Microsoft Azure セキュリティ](https://docs.microsoft.com/azure/security/azure-database-security-overview)」を参照してください。
 
-次のとおり、テナントから送信されるデータの種類。
+以下に、テナントから送信されるデータの種類を示します。
 
-- デバイスの更新プログラム、使用状況および信頼性データ
-- アプリケーションの展開と信頼性のデータ
-- 更新プログラムとセキュリティ ポリシーの配置のデータ
+- デバイスの更新、使用状況、および信頼性のデータ
+- アプリの展開と信頼性のデータ
+- 更新およびセキュリティポリシーの展開データ
 - デバイスに割り当てられているユーザー
 
 
 
 ## <a name="device-security"></a>デバイスのセキュリティ
 
-Microsoft 管理されたデスクトップは、すべての管理対象デバイスは、セキュリティで保護されてと保護され、次のサービスを使用してできるだけ早い段階で脅威を検出を保証します。
+Microsoft マネージドデスクトップは、すべての管理対象デバイスをセキュリティ保護して保護し、次のサービスを使用してできるだけ早く脅威を検出します。
 
 サービス | 説明
 --- | ---
-ウイルス対策 | Windows Defender のウイルス対策のインストールし、構成<br>Windows Defender のウイルス対策定義が最新の状態
-フル ボリューム暗号化 |    Windows BitLocker は、マイクロソフトの管理されたデスクトップのデバイスのボリューム暗号化ソリューションです。<br><br>組織がサービスに onboarded と、デバイスはデバイスがスリープ モードに切り替える場合は、ローカル データに不正アクセスを防止するのには Windows BitLocker と組み込み信頼プラットフォーム モジュール (TPM) を使用して暗号化されます。 
-"Monitoring/監視" |    Windows Defender 高度な脅威保護 (Windows Defender の ATP) は、マイクロソフトの管理されたデスクトップのすべてのデバイス間でセキュリティの脅威を監視するために使用されます。Windows Defender の分析ツールにより、企業を検出、調査、および企業ネットワーク内の高度な脅威に対応します。詳細についてを参照してください[の高度な脅威保護の Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 。 
-ソフトウェアの更新 |  管理されたデスクトップの Microsoft のデバイスは、常に最新のセキュリティ更新プログラムとセキュリティで保護されています。
-セキュリティで保護されたデバイスの構成 |   Microsoft 管理されたデスクトップでは、マイクロソフトのセキュリティ ベースラインを実装します。詳細についてを参照してください[Windows セキュリティ ベースライン](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)。
+ウイルス対策 | Windows Defender AV がインストールされ、構成されている<br>Windows Defender の AV 定義が最新のものである
+完全なボリューム暗号化 |    Windows BitLocker は、Microsoft マネージドデスクトップデバイス用のボリューム暗号化ソリューションです。<br><br>組織がサービスに利用されると、デバイスは Windows BitLocker を組み込み信頼プラットフォームモジュール (TPM) を使用して暗号化されます。これにより、デバイスがスリープモードまたはオフのときに、ローカルデータへの権限のないアクセスを防ぐことができます。 
+監視 |    windows defender Advanced threat Protection (windows defender ATP) は、Microsoft マネージドデスクトップデバイスすべてにわたるセキュリティ脅威監視に使用されます。 Windows Defender ATP を使用すると、エンタープライズのお客様が企業ネットワークの高度な脅威を検出、調査、および対応することができます。 詳細については、「 [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 」を参照してください。 
+オペレーティングシステムの更新プログラム |  Microsoft マネージドデスクトップデバイスは、常に最新のセキュリティ更新プログラムでセキュリティ保護されています。
+セキュリティで保護されたデバイス構成 |   microsoft マネージドデスクトップは、microsoft セキュリティベースラインを実装します。 詳細については、「 [Windows セキュリティベースライン](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)」を参照してください。
 
 
 
 ## <a name="identity-and-access-management"></a>ID およびアクセス管理
 
-アイデンティティおよびアクセス管理では、企業の資産とビジネス ・ クリティカルなデータを保護します。Microsoft 管理されたデスクトップでは、Azure Active Directory (AD の Azure) の使用をセキュリティで保護されたユーザーを管理することを確認するデバイスを構成します。Azure AD テナント内の正確な情報を維持するためにお客様の責任です。 
+id およびアクセス管理により、企業の資産とビジネス上の重要なデータが保護されます。 Microsoft マネージドデスクトップでは、azure Active Directory (azure AD) 管理 id との安全な使用を保証するようにデバイスが構成されています。 Azure AD テナントで正確な情報を維持することはお客様の責任です。 
 
 サービス | 説明
 --- | ---
-バイオ メトリック認証 |  Windows こんにちはでは、ユーザーが自分の顔や PIN、パスワードを忘れたり紛失したり、盗難が発生しにくくすることを使用してログインします。詳細についてを参照してください[Windows こんにちは](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)。
-多要素認証 | Azure の多要素認証より緊密にも、セルフ サービス パスワード リセットとして、携帯電話を使用する認証のレベルを提供することによって管理されるデスクトップの Microsoft のサービスの重要な機能へのアクセスを制御します。 
-標準ユーザーのアクセス許可 |  システムを保護し、セキュリティを強化、ユーザーが割り当てられます標準ユーザーのアクセス許可。これは、Windows の自動操縦装置の標準のエクスペリエンスの一部として割り当てられます。
+バイオメトリクス認証 |  Windows Hello を使用すると、ユーザーが顔または PIN を使用してログインできるようになり、パスワードを忘れることがなくなります。 詳細については、「 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 」を参照してください。
+多要素認証 | Azure 多要素認証では、携帯電話を使用して、セルフサービスのパスワードのリセットだけでなく、追加の認証レベルを提供することにより、Microsoft マネージドデスクトップサービスの機密機能へのアクセスをより厳密に制御できます。 
+標準ユーザーアクセス許可 |  システムを保護し、より安全なものにするために、ユーザーには標準のユーザーアクセス許可が割り当てられます。 これは、Windows 自動操縦機能の一部として割り当てられます。
 
 
 
-## <a name="network-security"></a>ネットワークのセキュリティ
+## <a name="network-security"></a>ネットワーク セキュリティ
 
-お客様は、ネットワークのセキュリティを担当します。 
+お客様はネットワークセキュリティを担当しています。 
 
 サービス | 説明
 --- | ---
-VPN | お客様は、イントラネットの外部企業の限られたリソースを公開することを確認するのには、VPN インフラストラクチャを所有します。<br><br>最低限の条件: Microsoft の管理されたデスクトップには、Windows 10 互換性があり、サポートされている VPN ソリューションが必要です。組織では、VPN ソリューションを必要とする場合は、10 の Windows をサポートしており、パッケージ、および Intune によって展開する必要があります。詳細については、ソフトウェアの発行元に問い合わせてください。<br><br>に関する推奨事項:<br>マイクロソフトは、Intune によってプッシュ VPN プロファイルを簡単に展開されている最新の VPN ソリューションをお勧めします。これは、企業ネットワークにアクセスするのには、常時、シームレスな信頼性、およびセキュリティで保護された方法を提供します。詳細については、 [[Intune での VPN 設定]](https://docs.microsoft.com/intune/vpn-settings-configure)を参照してください。<br>-厚みの VPN クライアント、または従来の VPN クライアントでは、推奨されませんマイクロソフトによってエンドユーザーの環境に影響を与えることができます、マイクロソフトの管理されたデスクトップを使用しているときに。<br>マイクロソフトでは、発信の web トラフィックのパフォーマンスの問題を回避するのには VPN を経由せずにインターネットに直接にはお勧めします。<br>-理想的には、Azure Active ディレクトリのアプリケーション プロキシ、VPN ではなくの使用を推奨します。
+VPN | お客様は VPN インフラストラクチャを所有しており、制限された企業リソースをイントラネットの外部に公開することができます。<br><br>最小要件: Microsoft Managed Desktop には、Windows 10 互換およびサポートされている VPN ソリューションが必要です。 組織に VPN ソリューションが必要な場合は、Windows 10 をサポートし、Intune 経由でパッケージ化して展開する必要があります。 詳細については、ソフトウェアの発行元にお問い合わせください。<br><br>勧告<br>-Microsoft では、Intune を使用して vpn プロファイルをプッシュして簡単に展開できる先進の vpn ソリューションをお勧めします。 これにより、常に、シームレスで信頼性が高く、企業ネットワークにアクセスするための安全な方法が提供されます。 詳細については、「 [Intune の VPN 設定](https://docs.microsoft.com/intune/vpn-settings-configure)」を参照してください。<br>-サードユーザー環境に影響を与える可能性があるため、microsoft マネージドデスクトップの使用時に microsoft は、太 vpn クライアントまたはレガシ vpn クライアントをお勧めしません。<br>-Microsoft では、パフォーマンスの問題を回避するために、送信 web トラフィックを VPN 経由で直接インターネットに移動することをお勧めします。<br>-Microsoft では、VPN の代わりに Azure Active Directory アプリプロキシを使用することをお勧めします。
 
 
 ## <a name="information-security"></a>情報セキュリティ
 
-お客様は、企業の付加価値の高い資産を保護するためにこれらのオプション サービスを構成することができます。 
+お客様は、企業の価値の高い資産を保護するために、これらのオプションのサービスを構成できます。 
 
 サービス | 説明
 --- | ---
-データ ・ リカバリ  | デバイス上のキーのフォルダーに格納された情報は、ビジネスの OneDrive にバックアップされます。Microsoft 管理されたデスクトップは、ビジネスのための OneDrive と同期されていないデータの責任ではありません。 
-Windows 情報保護 |    [Windows の情報保護](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)をお勧め高いレベルの情報セキュリティを必要とする企業と[Azure 情報保護します。](https://www.microsoft.com/cloud-platform/azure-information-protection)。 
+データの回復  | デバイス上の重要なフォルダーに格納されている情報は、OneDrive for business にバックアップされます。 Microsoft マネージドデスクトップは、OneDrive for business と同期されていないデータに対しては責任がありません。 
+Windows 情報保護 |    高度なレベルの情報セキュリティが必要な企業では、 [Windows 情報保護](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)と[Azure information protection](https://www.microsoft.com/cloud-platform/azure-information-protection)をお勧めします。 
 

@@ -1,5 +1,5 @@
 ---
-title: Android や iOS のデバイス上のアプリケーション保護設定を検証します。
+title: Android または iOS デバイスのアプリ保護設定を検証する
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 'Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.  '
-ms.openlocfilehash: 300f59e81a93cc3dfc03fd1d98891be1ac4f7795
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 5ab16d481bd11ec31a1387a7e94d8b08bb3e0abe
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287352"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android や iOS のデバイス上のアプリケーション保護設定を検証します。
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を検証する
 
-Android や iOS のデバイス上のアプリケーション保護の設定を検証するために、タブ内の指示に従います。
+タブの指示に従って、Android または iOS デバイスのアプリ保護設定を検証します。
   
 ## <a name="androidtab"></a>[Android](#tab/)
   
@@ -35,7 +38,7 @@ Android や iOS のデバイス上のアプリケーション保護の設定を�
   
 最初に、ポリシーが検証するアプリに適用されていることを確認します。
   
-1. Microsoft 365 のビジネス[管理センター](https://portal.office.com)には、**ポリシー** \> **のポリシーを編集**します。
+1. In the Microsoft 365 Business [admin center](https://portal.office.com) go to **Policies** \> **Edit policy**.
     
 2. セットアップ時に作成した設定の **Android 用のアプリケーション ポリシー**、または作成した別のポリシーを選び、Outlook などにそのポリシーが適用されていることを確認します。 
     
@@ -124,7 +127,7 @@ Android や iOS のデバイス上のアプリケーション保護の設定を�
   
 最初に、ポリシーが検証するアプリに適用されていることを確認します。
   
-1. Microsoft 365 ビジネス[管理センター](https://portal.office.com)では、[**ポリシー** ] に移動\>**のポリシーを編集**します。
+1. In the Microsoft 365 Business [admin center](https://portal.office.com), go to **Policies** \> **Edit policy**.
     
 2. セットアップ時に作成した設定に **iOS アプリケーション ポリシー**または独自に作成した別のポリシーを選び、Outlook などにそれが適用されていることを確認します。 
     

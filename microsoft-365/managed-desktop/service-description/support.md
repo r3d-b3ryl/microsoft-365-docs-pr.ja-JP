@@ -1,55 +1,52 @@
 ---
-title: Microsoft マネージド デスクトップのサポート
+title: Microsoft マネージドデスクトップのサポート
 description: ''
-keywords: 管理されたデスクトップの Microsoft、Microsoft 365 サービス マニュアル
+keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
-ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278522"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのサポート
+# <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのサポート
 
-Microsoft 管理デスクトップ デバイスによって管理されるを修復または交換マイクロソフトによって保証契約に基づく。事前と事後のインシデント管理は、マイクロソフトが提供されます。マイクロソフトでは、マイクロソフトの管理されたデスクトップ管理ポータルでのインシデントを追跡します。これらは、[重大度の定義](../working-with-managed-desktop/admin-support.md#sev)に従って分類されます。
+microsoft マネージドデスクトップデバイスは、によって管理され、microsoft によって保証期間ごとに修復または置き換えられます。 Microsoft は、予防的でリアクティブなインシデント管理を行います。 microsoft Managed Desktop 管理ポータルでインシデントを追跡します。 [重要度の定義](../working-with-managed-desktop/admin-support.md#sev)に従って分類されます。
 
-お客様は、マイクロソフトの管理されたデスクトップの操作のお問い合わせいただけます。
-- サービス テナントまたは構成として現代の職場での情報の要求
-- デバイスをサービスとして最新のワークプ レースの構成を変更要求
-- インシデントまたは障害の報告
+お客様は、Microsoft の管理対象デスクトップ操作にお問い合わせください。
+- Microsoft マネージドデスクトップのテナントまたは構成での情報要求
+- Microsoft マネージドデスクトップデバイスの構成に対する要求の変更
+- インシデントまたは停止の報告
 
-## <a name="whats-included"></a>何が含まれますか。
+## <a name="whats-included"></a>含まれているもの
 
-管理されたデスクトップのマイクロソフトのサポート:
+Microsoft マネージドデスクトップのサポート:
 
-- Microsoft 管理デスクトップ デバイスに専用のサポート ・ エンジニアのチームが用意されています
-- Microsoft 管理デスクトップ デバイスとそれらのデバイスに割り当てられているエンド ・ ユーザーをサポートしています。
-- 助成金サポート エンジニアがマイクロソフトの管理されたデスクトップのデバイスを管理する Microsoft 管理デスクトップ デバイスへの管理アクセスを制限します。 
+- Microsoft マネージドデスクトップデバイス専用のサポートエンジニアのチームを提供します。
+- Microsoft マネージドデスクトップデバイスおよびそれらのデバイスに割り当てられているエンドユーザーをサポートします。
+- microsoft マネージドデスクトップデバイスを管理するための microsoft マネージドデスクトップデバイスへの限定的な管理アクセス権を付与します。 
 
-サポートされている製品:
+サポートされる製品:
 
-- 脅威保護 (WDATP) を高度な Windows Defender、Windows 10 
-- 365 E5 の Microsoft スイートのサブセット: Outlook、Word、PowerPoint、Excel、Skype のビジネスのクライアント、Microsoft のチーム 
+- windows 10 と windows Defender Advanced Threat Protection (wdatp) 
+- microsoft 365 E3 suite のサブセット: Outlook、Word、PowerPoint、Excel、Skype for business クライアント、microsoft Teams 
 - ビジネス向け Microsoft Store 
-- ビジネス クライアント用の OneDrive 
+- OneDrive for business クライアント 
 
-詳細情報をサポートしてください。
+サポートの詳細情報:
 
-- 電流: 北アメリカ、英国、およびオーストラリアのみ (24 時間年中無休) 
-- 顧客との電話とチャットの会話でのみサポートされている言語が英語 
-- 協力を置き換えない場合、企業のヘルプデスクです。基幹業務 (LOB) アプリケーションやネットワーク リソースなどにも、ヘルプデスクでは 
-- テスト リングおよび以外の Microsoft 管理デスクトップ デバイス内に存在する Microsoft 管理されているデバイスでは扱いません 
-
-## <a name="hardware-replacement"></a>ハードウェアの交換
-
-ハードウェア デバイスを選択する保証の条項の下にある項目に置き換えられます。添付されている保証には、サービスとしてのデバイスの用語の最後にあるデバイスが更新されます。保証の範囲外の理由は、交換する必要があるデバイスでは、交換手数料、紛失または盗難に遭ったデバイスなどを評価します。保証の対象は何の完全なリストでは、[サーフェスの無償保守オプション](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty)を参照してください。
+- 現行: 北アメリカ、カナダ (ケベックを除く)、英国、およびオーストラリアのみ (24 時間) 
+- 英語は、お客様との電話およびチャットの会話でサポートされている唯一の言語です。 
+- 弊社は、会社のヘルプデスクをリプレースするのではなく、提携しています。基幹業務 (LOB) アプリ、ネットワークリソースなどは、引き続きヘルプデスクで処理されます。 
+- テストグループと microsoft が管理されていないデスクトップデバイスにある microsoft 管理デバイスが範囲外です 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-- [IT 管理者がサポートを取得する方法を学習します。](../working-with-managed-desktop/admin-support.md)
-- [エンド ・ ユーザーがサポートを取得する方法を学習します。](../working-with-managed-desktop/end-user-support.md)
+- [IT 管理者がサポートを受ける方法を説明します。](../working-with-managed-desktop/admin-support.md)
+- [エンドユーザーがサポートを受ける方法を説明します。](../working-with-managed-desktop/end-user-support.md)

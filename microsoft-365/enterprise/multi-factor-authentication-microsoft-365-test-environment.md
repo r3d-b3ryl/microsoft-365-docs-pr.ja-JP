@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 エンタープライズの複数要素の認証はテスト環境
+title: Microsoft 365 Enterprise テスト環境用の多要素認証
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,27 +8,27 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Microsoft 365 エンタープライズ テスト環境でスマート フォンに送信されるテキスト メッセージを使用して複数要素の認証を構成します。
-ms.openlocfilehash: 353f09253794670e8107e084acb3a01cd309fd60
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 エンタープライズテスト環境でスマートフォンに送信されるテキストメッセージを使用して、多要素認証を構成します。
+ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291142"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズの複数要素の認証はテスト環境
+# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境用の多要素認証
 
-Office 365 または組織の Azure AD テナントを使用するアプリケーションやサービスへのサインインのセキュリティのレベル、だけで複数のユーザー名とパスワードを確認する必要がありますが、Azure の多要素認証を有効にできます、アカウントです。多要素認証は、ユーザーは、確認の電話、テキスト メッセージで送信された確認コードを入力、または自分のパスワードを正しく入力した後、スマート フォンのアプリのパスワードを指定する必要があります。この 2 番目の認証要素が満たされた後にのみ、サインインできます。 
+Office 365 へのサインイン、または組織に対して azure AD テナントを使用するサービスまたはアプリケーションに対して追加のセキュリティレベルを設定するには、azure 多要素認証を有効にします。これには、ユーザー名とパスワードだけを使用して確認することができます。分割払. 多要素認証では、ユーザーは電話での通話を承認する必要があり、テキストメッセージで送信された検証コードを入力するか、またはパスワードを正しく入力した後にスマートフォンでアプリパスワードを指定する必要があります。 この第 2 の認証要素が満たされた後でのみ、ユーザーはサインインできます。 
   
-この資料では、有効にして、特定のアカウントのテキスト メッセージ ベースの認証をテストする方法について説明します。
+この記事では、特定のアカウントに対してテキストメッセージベースの認証を有効にし、テストする方法について説明します。
   
-Microsoft 365 エンタープライズ テスト環境でアカウントを複数要素の認証を設定するのには 2 つのフェーズがあります。
+Microsoft 365 エンタープライズテスト環境のアカウントに対して多要素認証をセットアップするには、次の2つのフェーズがあります。
   
-1. Microsoft 365 エンタープライズ テスト環境を作成します。
+1. Microsoft 365 Enterprise テスト環境を作成します。
     
 2. User 2 アカウントに対して、多要素認証を有効にしてテストします。
 
@@ -37,34 +37,34 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: マイクロソフト 365 エンタープライズ テスト環境を構築します。
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
 
-最小要件で軽量な方法で複数要素の認証をテストする場合は、[軽量の基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)に指示します。
+最小要件での軽量な方法で多要素認証をテストする場合は、「[ライトウェイトの基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
-シミュレートされた企業内の複数要素の認証をテストする場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)に指示します。
+シミュレートされたエンタープライズで多要素認証をテストする場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従ってください。
   
 > [!NOTE]
-> 多要素認証のテストは、シミュレートされたエンタープライズ テスト環境には、シミュレートされたイントラネットをインターネットに接続されていると Windows サーバーの AD フォレストの場合、ディレクトリ同期します。提供されてここでは、オプション多要素認証をテストし、一般的な組織を表す環境で試すことができるようにします。 
+> 多要素認証をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この指示は、一般的な組織と類似した環境で多要素認証をテストしてお試しいただけるようオプションとしてここで提供しています。 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>フェーズ 2:User 2 アカウントに対して、多要素認証を有効にしてテストする
 
 次の手順を実行して、User 2 アカウントに対して多要素認証を有効にしてテストします。
   
-1. ブラウザーのインスタンスを個別に秘密を開き、Office のポータルに移動 ([https://office.com](https://office.com))、し、グローバル管理者アカウントでサインインします。
+1. ブラウザーのプライベートインスタンスを個別に開き、Office ポータル ([https://office.com](https://office.com)) に移動して、全体管理者アカウントでサインインします。
     
 2. ポータルのメイン ページで、**[管理]** をクリックします。
     
 3. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
-4. ユーザーのアクティブなウィンドウをクリックして**より > 多要素認証の設定**。
+4. [アクティブなユーザー] ウィンドウで、[**その他の > 多要素認証のセットアップ**] をクリックします。
     
-5. の一覧では、 **2 のユーザー**アカウントを選択します。
+5. リストで、 **User 2**アカウントを選択します。
     
 6. **User 2** セクションで、**[クイック操作]** の **[有効にする]** をクリックします。
     
 7. **[多要素認証を有効にする方法の概要]** ダイアログ ボックスで、**[Multi-Factor Auth を有効にする]** をクリックします。
     
-8. **正常な更新**] ダイアログ ボックスで [**閉じる**] をクリックします。
+8. [**更新が成功しまし**た] ダイアログボックスで、[**閉じる**] をクリックします。
     
 9. **[Microsoft Office Home]** タブで、右上部分にあるユーザー アカウントのアイコンをクリックし、**[サインアウト]** をクリックします。
     
@@ -72,11 +72,11 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
    
 次の手順を実行して、User 2 アカウントで確認のためにテキスト メッセージを使用するように構成を完了し、それをテストします。
   
-1. お使いのブラウザーの新しい、プライベート インスタンスを開きます。
+1. ブラウザーの新しいプライベートインスタンスを開きます。
     
-2. Office のポータルに移動 ([https://office.com](https://office.com)) と 2 のユーザー アカウントでサインイン (user2 @\<組織名 >. onmicrosoft.com) とパスワードです。
+2. Office ポータル ([https://office.com](https://office.com)) に移動し、User 2 アカウント (user2 @\<organization name>) とパスワードを使用してサインインします。
     
-3. サインイン後、詳細については、アカウントを設定するように求められます。[**次へ**] をクリックします。
+3. サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。 **[次へ]** をクリックします。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -84,9 +84,9 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
     
    - テキスト メッセージを受信するスマート フォンの電話番号を入力します。
     
-   - **メソッド**では、**コード、テキスト メッセージを送信してもらう**をクリックします。
+   - [**メソッド**] の [**テキストメッセージでコードを送信する**] をクリックします。
     
-5. [ **次へ**] をクリックします。
+5. **[次へ]** をクリックします。
     
 6. スマート フォンで受信したテキスト メッセージに記載されている確認コードを入力して、**[確認]** をクリックします。
     
@@ -94,10 +94,10 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
     
 8. User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。元のパスワードと、新しいパスワードを 2 回入力して、**[パスワードを更新してサインイン]** をクリックします。新しいパスワードを安全な場所に記録します。
     
-    お使いのブラウザーの [ **Microsoft Office のホーム**] タブで、Office のポータルのユーザー 2 のはずです。
+    ブラウザーの [ **Microsoft office Home** ] タブに、ユーザー2の office ポータルが表示されます。
 
 
-情報と実稼働環境での複数要素の認証を展開するリンクの識別段階では、[多要素認証のセットアップ](identity-multi-factor-authentication.md)手順を参照してください。
+運用環境で多要素認証を展開するための情報とリンクについては、id フェーズで[多要素認証](identity-multi-factor-authentication.md#identity-mfa)手順を設定するを参照してください。
     
 ## <a name="next-step"></a>次の手順
 
@@ -109,6 +109,6 @@ Microsoft 365 エンタープライズ テスト環境でアカウントを複�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 エンタープライズ展開](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 Enterprise 展開](deploy-microsoft-365-enterprise.md)
 
 [Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)

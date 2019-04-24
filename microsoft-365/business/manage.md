@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,13 +17,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Microsoft 365 業務を管理する方法について説明管理タスク、モバイル デバイス、Windows 10PCs、およびそのような多くのタスクに関連します。
-ms.openlocfilehash: 280bff9f12a884e6a19e26feea5d8a339297a434
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 Business 関連の管理タスク、モバイルデバイス、Windows 10pcs、およびその他の多くのタスクを管理する方法について説明します。
+ms.openlocfilehash: 993db51ec487237395ca57290e37a6c5edbce8b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278577"
 ---
 # <a name="manage-microsoft-365-business"></a>Microsoft 365 Business の管理
 
@@ -32,7 +33,7 @@ ms.locfileid: "26869102"
     
 - [ポリシーとデバイスの表示](view-policies-and-devices.md)
     
-- [365 ビジネスのマイクロソフトのセキュリティ機能](security-features.md)
+- [Microsoft 365 Business セキュリティ機能](security-features.md)
     
 - [Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法](map-protection-features-to-intune-settings.md)
     
@@ -44,7 +45,7 @@ Microsoft 365 Business を使用して PC およびモバイル デバイス上�
     
 - [Android または iOS デバイスのアプリ保護設定を設定する](app-protection-settings-for-android-and-ios.md)
     
-    この方法を確認する[検証、Android や iOS デバイス上のアプリケーション保護の設定](validate-settings-on-android-or-ios.md)を参照してください。 
+    これが正常に動作することを確認するに[は、Android または iOS デバイスでアプリ保護設定を検証](validate-settings-on-android-or-ios.md)するを参照してください。 
     
 - [デバイスから会社のデータを削除する](remove-company-data.md)
     
@@ -92,9 +93,9 @@ Microsoft 365 Business を使用して PC およびモバイル デバイス上�
     
 - [Microsoft 365 Business への移行](migrate-to-microsoft-365-business.md)
     
-- [Microsoft 365 のビジネスを管理する Windows 10 のドメインに参加しているデバイスを有効にします。](manage-windows-devices.md)
+- [Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする](manage-windows-devices.md)
     
-[追加のセキュリティ機能](security-features.md#additional-security-features)
+[その他のセキュリティ機能](security-features.md#additional-security-features)
     
 
   

@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: '365 ビジネスユーザに 10 Pro の Windows を実行している Windows のデバイスを設定する方法について説明します。 '
-ms.openlocfilehash: 482199b175c568bfae420619aa02024303894789
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Microsoft 365 Business ユーザー用に windows 10 Pro を実行している windows デバイスをセットアップする方法について説明します。 '
+ms.openlocfilehash: f93257bd9a68385fca4f178a2e09c5c11506ee2c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284371"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーの Windows デバイスをセットアップする
 
@@ -33,7 +36,7 @@ Windows 7 Pro、Windows 8 Pro、Windows 8.1 Pro を実行している Windows �
   
 Windows デバイスを Windows 10 Pro Creators Update にアップグレードする方法については、「[Windows デバイスを Windows Pro Creators Update にアップグレードする](upgrade-to-windows-pro-creators-update.md)」の手順に従います。
   
-「[デバイスが Windows 10 Business にアップグレードしたことを確認する](set-up-windows-devices.md#bkmk_verifywin10)」を参照して、アップグレードされていることを確認するか、アップグレードが機能していることを確認します。 
+アップグレードが完了していることを確認するには、[[デバイスが Azure AD に接続されていること](#verify-the-device-is-connected-to-azure-ad)を確認する] を参照してください。 
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Windows 10 デバイスを組織の Azure AD に参加させる
 
@@ -51,7 +54,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
     
 3. Windows 10 デバイスのセットアップを完了します。
     
-   完了すると、組織の Azure AD に接続されます。「[デバイスが Azure AD に接続されていることを確認する](set-up-windows-devices.md#bkmk_verifyaad)」を参照して確認します。 
+   完了すると、組織の Azure AD に接続されます。「[デバイスが Azure AD に接続されていることを確認する](#verify-the-device-is-connected-to-azure-ad)」を参照して確認します。 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>既にセットアップして、Windows 10 Pro を実行しているデバイスの場合
 
@@ -65,7 +68,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
    ![In Windows Settings, go to Accounts](media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
-3. **情報]** ページでは、「**アクセスの職場または学校**の使用」をクリックしていますください。 \> **接続**します。
+3. On **Your info** page, click **Access work or school** \> **Connect**.
   
    ![Choose Connect under Access work or school](media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
@@ -73,13 +76,13 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
    ![Click Join this device to Azure Active Directory](media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. **取得署名する**] ページで、職場、学校のアカウントを入力してください\>**次**です。
+5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
-   [**パスワードの入力**] ページで、パスワードを入力します\>**にサインイン**します。
+   On the **Enter password** page, enter your password \> **Sign in**.
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. * * これは、組織になっていることを確認 * * ページ、情報が正しいことを確認し、[**参加**] をクリックします。
+6. [**組織が組織**であることを確認してください] ページで、情報が正しいことを確認し、[**参加**] をクリックします。
   
    [ **すべて完了しました。**] ページで、[ **完了**] をクリックします。
   
@@ -101,7 +104,7 @@ Microsoft 365 Business アカウントの使用を開始するには、Windows �
 
 Microsoft 365 Business サブスクリプションの一部として、Azure AD に参加した Windows 10 デバイスが Windows 10 Business にアップグレードしたことを確認します。
   
-1. **設定**に\>**システム** \> **について**です。
+1. Go to **Settings** \> **System** \> **About**.
     
 2. [ **エディション**] が **Windows 10 Business** であることを確認します。
     

@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: 365 ビジネスのマイクロソフトの自動操縦装置を使用してデバイスにアップロードする方法について説明します。プロファイルは、デバイスまたはデバイスのグループに割り当てることができます。
-ms.openlocfilehash: cc1f81e9efd9b16e27b8abfbb0927d241535077e
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Microsoft 365 Business の自動操縦を使用してデバイスをアップロードする方法について説明します。 プロファイルは、デバイスまたはデバイスのグループに割り当てることができます。
+ms.openlocfilehash: fff2dbc6af45ef9d4189f23849d638172c19dfb2
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26869248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277038"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスの作成と編集
 
@@ -37,16 +40,14 @@ ms.locfileid: "26869248"
 - Windows 10 バージョン 1703 以降。
     
 - Windows out-of-box experience を行っていない新しいデバイス。
-    
-1. Microsoft 365 Business 管理センターの [ **デバイス アクション**] カードで、[ **AutoPilot で Windows を展開する**] を選びます。 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+
+1. Microsoft 365 Business 管理センターで、[**デバイス** \> **自動操縦** \> ] [**追加**] を選択します。
   
-2. **Windows の準備**] ページで、[**デバイス**] タブを選択します\>**デバイスを追加**します。
+2. On the **Prepare Windows** page, choose the **Devices** tab \> **Add devices**.
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. 準備した[CSV ファイルのデバイス ・ リスト](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)に参照を [スタート] パネルの [**デバイスの追加** \> **保存** \> **閉じる**。
+3. **** \> ****[**デバイスの追加**] パネルで、準備が整っ\>た[デバイスリストの CSV ファイル](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)を参照します。
     
     この情報は、ハードウェアの製造元から、または csv ファイルを生成する [G-et-WindowsAutoPilotInfo PowerShell スクリプト](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)を使って、入手できます。 
     
