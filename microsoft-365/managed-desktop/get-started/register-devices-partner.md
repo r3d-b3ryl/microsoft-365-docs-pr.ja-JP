@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 23a2eae6435f5ce234cf6406f2753ec54f675bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d743092fdd309c1afd748afa7523f0cc0c6a2fd0
+ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291671"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33295883"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>パートナー用の Microsoft マネージドデスクトップのデバイスを登録する
 
@@ -25,7 +25,7 @@ ms.locfileid: "32291671"
 お客様のために登録を完了するには、まず CSV ファイルを作成します。
 
 >[!NOTE]
->便宜上、この*パートナーバージョン*の CSV ファイルの[テンプレート](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx)をダウンロードすることができます。
+>便宜上、この*パートナーバージョン*の CSV ファイルの[テンプレート](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx)をダウンロードすることができます。
 
 ファイルには、サンプル 1 (製造元、モデルなど) と**まったく同じ列見出し**を含める必要がありますが、その他の行については独自のデータを含める必要があります。 テンプレートを使用している場合は、メモ帳などのテキスト編集ツールでそのテンプレートを開き、行1のみにデータを入力し、2行以下にデータを入力することを検討します。 
     
