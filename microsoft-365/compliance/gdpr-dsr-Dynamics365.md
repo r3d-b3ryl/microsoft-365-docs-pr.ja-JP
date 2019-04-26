@@ -2,21 +2,21 @@
 title: GDPR のための Dynamics 365 データ対象要求
 description: コントローラーが DSR 要求に応じて個人データを検索して操作できるように Microsoft 製品、サービス、管理ツールを使用する方法について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.date: 04/10/2019
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e1c79ae466264e302b282244f477dafcc6b49afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285216"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>GDPR のための Dynamics 365 データ対象要求
 
@@ -78,7 +78,7 @@ EU データ保護規則 (GDPR) では、個人個人 (規則では*データ対
 
 Dynamics 365 は、サービスとしてのソフトウェア (SaaS) として複数のデータ処理機能を提供するオンライン サービスです。このため、Dynamics 365 には、性質や目的などの特性が異なる、売上データ、トランザクション、財務、人事情報などの多様なデータの処理を目的としたさまざまな機能が用意されています。これらの多様性を考慮して、Dynamics 365 では、顧客データを処理するのに必要となる複数のフォーム、フィールド、スキーマ、エンド ポイント、ロジックを提供しています。各アプリケーションで DSR 要求を処理できる複数の方法にも、この多様性が反映されています。Dynamics 365 アプリケーションで、特定の DSR 要求を処理する方法が複数用意されている場合、各アプリケーションによって提供されている技術的な説明の参照先がこのガイドに記載されています。
 
-### <a name="microsoft-dynamics-365"></a>Microsoft Dynamics 365
+### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>顧客データの検索
 
 データ対象の権利要求に対する対応の最初の段階として、要求の対象となっている顧客データを検索して特定します。
@@ -101,6 +101,8 @@ Dynamics 365 for Marketing には、次の追加機能が用意されていま�
 
 2.  顧客データを含む可能性のあるその他のデータ ポイントを特定するには、マーケティング実行の取引先担当者や対象についてインサイト ビューを使用します。
 
+Dynamics 365 Customer Service Insights では、個人データのコピー要求に応じたり、個人データを削除したり、データ主体の検出要求 (DSR) の対象となる個人データを検索したりする機能を提供します。 詳細については、「[Dynamics 365 Customer Service Insights の GDPR 準拠の概要](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary)」を参照してください。
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** には、顧客データを検索するための方法が複数用意されています。顧客データを検索するには、テナント管理者として次の操作を実行します。
 
 -   個人データをすばやく検出する目的にかなう方法で顧客データを整理します。この目的に関しては、「[データ インベントリの分類方法](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory)」をご覧ください。
@@ -114,6 +116,7 @@ Dynamics 365 for Marketing には、次の追加機能が用意されていま�
 -   個人データを検索してエクスポートするユーザー設定のフォームを作成します。
 
 -   認証済み顧客が当人の個人データを確認できる外部ポータルまたは Web サイトを作成します。
+
 
 ***Dynamics for Business Central*** は、顧客データを検索するためのいくつかの方法を提供します。詳細については、「[データの検索、フィルター処理、および並べ替え](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters)」を参照してください。
 

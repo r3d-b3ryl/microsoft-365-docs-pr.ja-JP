@@ -4,19 +4,21 @@ description: 一般データ保護規則 (GDPR) の要件を満たすための�
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/15/2018
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: e153edc2d3a2b4b1476ec62085328a031624be88
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 8bc038e067424d27f1032d99cfb169ac9b204385
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285066"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -30,7 +32,7 @@ GDPR では、欧州連合 (EU) 内の人々に商品やサービスを提供す
 |||
 |:-----|:-----|
 |**フェーズ**|**結果**|
-|30 日間|**GDPR 要件を理解して、Microsoft の GDPR アドバイザリ パートナーと連携することを検討します。**<br>• 準備状態をベンチマーク評価し、次の手順に関する推奨事項を確認します。<br>• Microsoft の GDPR アドバイザリ パートナーと協力して、データ サブジェクト要求 (DSR) への対応に関する社内ガイドラインを確立し、社内の GDPR コンプライアンスのギャップ分析を実施し、コンプライアンスへのロードマップを確立します。<br><br>**DSR に準拠するために、保持している個人データの種類や保管場所を把握します。**<br>• Office 365 セキュリティ/コンプライアンス センターのコンテンツ検索と電子情報開示を使用して、組織全体の個人データを検出します。<br>• 膨大な量のコンテンツを扱う場合は、機械学習テクノロジによる Office 365 Advanced eDiscovery を使用して、より効率的で正確なコンテンツ検索を実行します。<br>|
+|30 日間|**GDPR 要件を理解して、Microsoft の GDPR アドバイザリ パートナーと連携することを検討します。**<br>• 準備状態をベンチマーク評価し、次の手順に関する推奨事項を確認します。<br>• Microsoft の GDPR アドバイザリ パートナーと協力して、データ サブジェクト要求 (DSR) への対応に関する社内ガイドラインを確立し、社内の GDPR コンプライアンスのギャップ分析を実施し、コンプライアンスへのロードマップを確立します。<br><br>**DSR に準拠するために、保持している個人データの種類や保管場所を把握します。**<br>• セキュリティ/コンプライアンス センターのコンテンツ検索と電子情報開示を使用して、組織全体の個人データを検出します。<br>• 膨大な量のコンテンツを扱う場合は、機械学習テクノロジによる Office 365 Advanced eDiscovery を使用して、より効率的で正確なコンテンツ検索を実行します。<br>|
 |90 日間|**Microsoft 365 データ ガバナンスとコンプライアンスの機能を使用してコンプライアンス要件の実装を開始します。**<br>• Microsoft のコンプライアンス マネージャーを使用して、コンプライアンスのリスクを評価および管理します。<br>• GDPR で定義されたとおりに、ユーザーが個人データを識別し、分類できるようにします。<br><br>**Microsoft 365 のセキュリティ機能を使用して、データ侵害を防止し、個人データの保護を実装します。**<br>• 管理者とエンド ユーザーのアカウントを保護します。<br>• 悪意のあるコードから保護して、データ侵害の防止と対応を実装します。<br>• 監査ログを使用して、潜在的な悪意のあるアクティビティを監視し、データ侵害のフォレンジック分析を可能にします。<br>• データ損失防止 (DLP) ポリシーを使用して、機密データを特定および保護します。<br>• フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
 |90 日以降|**Microsoft 365 の高度なデータ ガバナンス ツールと情報保護を使用して、個人データの継続的な管理プログラムを実装します。**<br>• ドキュメントやメールの個人情報を自動的に識別します。<br>• 組織全体のデバイスに保存されている個人データを保護し、機密データにアクセスする際は必ず準拠した会社のデバイスを使用するようにします。<br>• 確実に企業ポリシーに従った形で、機密の個人情報が保存され、アクセスされるようにします。<br>• 必要な期間のみ個人データを保持できるようにするデータ保持ポリシーを導入します。<br><br>**Microsoft 365 やその他のクラウド アプリケーション間で継続的にコンプライアンスに合致しているか監視します。EU の個人データのデータ所在地要件に対処することを検討してください。**<br>• クラウド アプリケーションの組織の使用状況を監視し、高度な警告ポリシーを実装します。<br>• データ所在地要件に対処しつつ、1 つのグローバル組織として運用します。<br>|
 
@@ -40,8 +42,8 @@ GDPR では、欧州連合 (EU) 内の人々に商品やサービスを提供す
 |||
 |:-----|:-----|
 |**領域**|**タスク**|
-|GDPR 要件を理解して、Microsoft の GDPR アドバイザリ パートナーと連携することを検討します。|• [Microsoft GDPR 評価ツール](https://assessment.microsoft.com/gdpr-compliance)を使用して、準備状況を個人的にベンチマーク評価し、次のステップの推奨事項を確認してください。<br>• 組織の GDPR 評価を実施するために、[Microsoft コンプライアンス マネージャー](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)を [Microsoft Service Trust Portal](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 内で使用してコンプライアンス リスクを評価および管理します。<br>• Microsoft の [GDPR アドバイザリ パートナー](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/)と協力して、データ サブジェクト要求 (DSR) への対応および DSR からの除外に関する社内ガイドラインを確立します。<br>• Microsoft の GDPR アドバイザリ パートナーと協力して、組織の GDPR コンプライアンスのギャップ分析を実施し、GDPR コンプライアンスへの行程を図化するロードマップを作成します。<br>• Office 365 セキュリティ/コンプライアンス センターの[GDPR ダッシュボードとデータ サブジェクト要求機能](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c)の使用方法について確認します。 |
-|DSR に準拠するために、保持している個人データの種類や保管場所を把握します。|• メールボックス、パブリック フォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、One Drive for Business サイト、Skype for Business の会話を簡単に検索するには、Office 365 セキュリティ/コンプライアンス センターの[コンテンツ検索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)と[電子情報開示のケース](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c)を使用します。[機密情報の種類](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)を使用して EU 市民の個人データを検索する方法を確認してください<br>• 膨大な量のコンテンツを扱う場合は、機械学習テクノロジによる [Office 365 Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4) を使用して、特定のサブジェクトに関連するドキュメントを、従来のキーワード検索よりも正確かつ迅速に特定します (コンプライアンス調査など)。<br>• Office 365 セキュリティ/コンプライアンス センターを使用して、検索結果のプレビュー、1 つ以上の検索のキーワード統計情報の取得、コンテンツ検索の一括編集、[結果のエクスポート](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278)を行います。|
+|GDPR 要件を理解して、Microsoft の GDPR アドバイザリ パートナーと連携することを検討します。|• [Microsoft GDPR 評価ツール](https://assessment.microsoft.com/gdpr-compliance)を使用して、準備状況を個人的にベンチマーク評価し、次のステップの推奨事項を確認してください。<br>• 組織の GDPR 評価を実施するために、[Microsoft コンプライアンス マネージャー](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)を [Microsoft Service Trust Portal](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 内で使用してコンプライアンス リスクを評価および管理します。<br>• Microsoft の [GDPR アドバイザリ パートナー](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/)と協力して、データ サブジェクト要求 (DSR) への対応および DSR からの除外に関する社内ガイドラインを確立します。<br>• Microsoft の GDPR アドバイザリ パートナーと協力して、組織の GDPR コンプライアンスのギャップ分析を実施し、GDPR コンプライアンスへの行程を図化するロードマップを作成します。<br>• Microsoft 365 コンプライアンス センターの[GDPR ダッシュボードとデータ サブジェクト要求機能](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c)の使用方法について確認します。 |
+|DSR に準拠するために、保持している個人データの種類や保管場所を把握します。|• メールボックス、パブリック フォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、One Drive for Business サイト、Skype for Business の会話を簡単に検索するには、[コンテンツ検索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)と[電子情報開示のケース](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c)を使用します。 [機密情報の種類](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)を使用して EU 市民の個人データを検索する方法をご確認ください<br>• 膨大な量のコンテンツを扱う場合は、機械学習テクノロジによる [Office 365 Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4) を使用して、特定のサブジェクトに関連するドキュメントを、従来のキーワード検索よりも正確かつ迅速に特定します (コンプライアンス調査など)。<br>• Office 365 セキュリティ/コンプライアンス センターを使用して、検索結果のプレビュー、1 つ以上の検索のキーワード統計情報の取得、コンテンツ検索の一括編集、[結果のエクスポート](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278)を行います。|
 
 ## <a name="90-days--enhanced-protections"></a>90 日間 — 保護の強化 
 タスクの計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。 

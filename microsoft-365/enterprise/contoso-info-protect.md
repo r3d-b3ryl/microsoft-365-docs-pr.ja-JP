@@ -3,22 +3,22 @@ title: Contoso Corporation の情報保護
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise の情報保護機能を使用して、クラウドのデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 2f6619aa3c6051696644b055e6c766525ad3a26d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f0869dfd661ae4dbaed74fdfd660c863deb20175
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276118"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -44,9 +44,9 @@ Contoso 社では自社のデータの分析を行い、次に示すレベルを
 |||||
 |:-------|:-----|:-----|:-----|
 |  | **Access** | **データ保存期間** | **情報保護** |
-| レベル 1: 低いビジネス価値 (ベースライン) | すべてのユーザーに対してアクセスを許可  | 6 か月 | 暗号化を使用 |
-| レベル 2: 中程度のビジネス価値 (機密) | Contoso 社の従業員、下請業者、パートナーに対してアクセスを許可 <BR> <BR> 多要素認証 (MFA)、トランスポート層セキュリティ (TLS)、およびモバイル アプリケーション管理 (MAM) を使用 | 2 年  | データ整合性のためにハッシュ値を使用  |
-| レベル 3: 高度なビジネス価値 (厳しく規制) | エグゼクティブ、およびエンジニアリングと製造の潜在顧客に対してアクセスを許可 <BR> <BR> 管理されたネットワーク デバイスのみの Rights Management System (RMS)  | 7 年  | 否認防止のためにデジタル署名を使用  |
+| 低いビジネス価値 (レベル 1: ベースライン) | すべてのユーザーに対してアクセスを許可  | 6 か月 | 暗号化を使用 |
+| 中程度のビジネス価値 (レベル 2: 機密) | Contoso 社の従業員、下請業者、パートナーに対してアクセスを許可 <BR> <BR> 多要素認証 (MFA)、トランスポート層セキュリティ (TLS)、およびモバイル アプリケーション管理 (MAM) を使用 | 2 年  | データ整合性のためにハッシュ値を使用  |
+| 高度なビジネス価値 (レベル 3: 厳しく規制) | エグゼクティブ、およびエンジニアリングと製造の潜在顧客に対してアクセスを許可 <BR> <BR> 管理されたネットワーク デバイスのみの Rights Management System (RMS)  | 7 年  | 否認防止のためにデジタル署名を使用  |
 |||||
 
 ## <a name="contosos-path-to-information-protection-with-microsoft-365-enterprise"></a>Contoso 社の Microsoft 365 Enterprise を使用した情報保護への道のり
@@ -61,21 +61,21 @@ Contoso 社は、次の手順を使用して、自社の情報保護の要件に
 
    データ レベルに基づいて、Contoso 社は詳細なポリシー要件を決定しました。この要件は、クラウドへの移行時に既存のデジタル資産を保護するために使用されました。
 
-3. さまざまな情報のレベルに応じた Azure Information Protection のラベルとその設定を作成した
+3. さまざまな情報のレベルに応じた機密ラベルとその設定を作成した
 
-   Contoso 社は、既定の Azure Information Protection のラベルを自社のデータ レベルと一致するタイトルに変更して、「機密」と「厳しく規制」のラベルを Azure クラウド キーで暗号化するように構成しました。特定の種類の営業秘密データには「厳しく規制」のサブラベルを作成して、それらへのアクセスを特定の研究開発のグループに限定しました。さらに、Contoso 社は、すべての Windows PC とデバイスに Azure Information Protection クライアントを展開しました。
+   Contoso 社では、データのレベルに応じた機密ラベルを作成しました。「機密」や「厳しく規制」のラベルで、暗号化、アクセス許可、透かしなどが含まれます。
 
 4. アクセスをロックするアクセス許可を使用して機密データと厳しく規制されたデータに対応する保護された SharePoint Online サイトを作成した
 
-   機密サイトと厳しく規制されたサイトは、どちらも[分離したサイト](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)として構成されました。これらのサイトでは、既定の SharePoint Online チーム サイトのアクセス許可が Azure AD グループにカスタマイズされています。また、機密および厳しく規制された SharePoint Online サイトは、既定の Office 365 ラベルでも構成されています。厳しく規制された SharePoint Online サイトに格納されているファイルは、スコープ付きポリシーの Azure Information Protection (AIP) サブラベルで保護されます。詳細については、「[Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)」 (Microsoft Teams および SharePoint Online サイトで高度な規制データを扱うには) のシナリオを参照してください。
+   機密サイトと厳しく制限されたサイトは、どちらも[分離したサイト](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)として構成しました。これらのサイトでは、既定の SharePoint Online チーム サイトのアクセス許可が Azure Active Directory (Azure AD) グループにカスタマイズされています。 「機密」および「厳しく規制」の SharePoint Online サイトは、対応する保持ラベルを使用して構成されています。 「厳しく規制」の SharePoint Online サイトに保存されているファイルは、「厳しく規制」の機密ラベルで保護されています。 詳細については、「[Microsoft Teams および SharePoint Online サイトで高度な規制データを扱うには](teams-sharepoint-online-sites-highly-regulated-data.md)」のシナリオを参照してください。
 
 5.  オンプレミスの SharePoint サイトとファイル共有のデータを新しい SharePoint Online サイトに移動した
 
-    新しい SharePoint Online サイトに移行したファイルには、そのサイトに割り当てられた既定の Office 365 のラベルを継承させました。
+    新しい SharePoint Online サイトに移行したファイルには、そのサイトに割り当てられた既定の保持ラベルを継承させました。
 
-6.  新しいドキュメントに Azure Information Protection のラベルを使用する方法、新しい SharePoint Online サイトの作成時に Contoso 社の IT 部門と応対する方法、およびデジタル資産は必ず SharePoint Online サイトに保管することについて従業員を教育しました
+6.  新しいドキュメントに機密ラベルを使用する方法、新しい SharePoint Online サイトの作成時に Contoso 社の IT 部門と応対する方法、およびデジタル資産は必ず SharePoint Online サイトに保管することについて従業員を教育しました
 
-    クラウドに向けた情報保護の変化で最も難しい部分であると考えられることから、Contoso 社の IT 部門と経営陣は、デジタル資産には必ずラベルを付けて、オンプレミスのファイル共有は決して使用しないように、組織の従業員の情報保管に関する悪習慣を改めることが必要でした。
+    クラウドに向けた情報保護の変化で最も難しい部分であると考えられることから、Contoso 社の IT 部門と経営陣は、クラウド上のデジタル資産には必ずラベルを付けて保存し、オンプレミスのファイル共有を控え、サード パーティのクラウド ストレージ サービスや USB ドライブは決して使用しないように、組織の従業員の情報保管に関する悪習慣を改めることが必要でした。
 
 ## <a name="conditional-access-policies-for-information-protection"></a>情報保護のための条件付きアクセス ポリシー
 
@@ -97,7 +97,7 @@ ID とモバイル デバイスの管理インフラストラクチャと共に�
 
 これらのポリシーでは、次のことを確実にします。
 
-- アプリ保護ポリシーでは、許可されるアプリと、そのアプリで組織のデータに対して実行できる操作が定義されている。
+- 許可されるアプリと、そのアプリで組織のデータに対して実行できる操作は、アプリ保護ポリシーによって定義される。
 - PC とモバイル デバイスが必ず準拠している。
 - Exchange Online は、Exchange Online に対応した Office 365 メッセージ暗号化を使用する。
 - SharePoint Online は、アプリによって適用される制限を使用する。
@@ -110,9 +110,9 @@ ID とモバイル デバイスの管理インフラストラクチャと共に�
 |||||
 |:-------|:-----|:-----|:-----|
 | | **Office 365** | **Windows 10 および Office 365 ProPlus** | **EMS** |
-| レベル 1: ベースライン  | SharePoint Online および Exchange Online の条件付きアクセス ポリシー <BR> SharePoint Online サイトのアクセス許可 | Azure Information Protection クライアント <BR> BitLocker <BR> Windows 情報保護 | デバイスの条件付きアクセス ポリシーとモバイル アプリケーション管理ポリシー |
-| レベル 2: 高機密性 | レベル 1: ベースラインと次のもの <BR> <BR> Azure Information Protection のラベル <BR> SharePoint Online サイトの Office 365 ラベル <BR> SharePoint Online および Exchange Online 用の Office 365 データ損失防止 <BR> 分離した SharePoint Online サイト  | レベル 1: ベースラインと次のもの <BR> <BR> デジタル資産に対する Azure Information Protection のラベル <BR> Office 365 アドバンスト データ ガバナンス | レベル 1: ベースライン |
-| レベル 3: 厳しく規制 | レベル 2: 高機密性と次のもの <BR><BR> 営業秘密情報の BYOK (Bring Your Own Key) 暗号化と保護 <BR> Office 365 サービスと対話する基幹業務アプリケーションの Azure Key Vault | レベル 2: 高機密性 | レベル 1: ベースライン |
+| レベル 1: ベースライン  | SharePoint Online および Exchange Online の条件付きアクセス ポリシー <BR> SharePoint Online サイトのアクセス許可 | 機密ラベル <BR> BitLocker <BR> Windows 情報保護 | デバイスの条件付きアクセス ポリシーとモバイル アプリケーション管理ポリシー |
+| レベル 2: 機密 | レベル 1 プラス: <BR> <BR> 機密ラベル <BR> SharePoint Online サイトの Office 365 ラベル <BR> SharePoint Online および Exchange Online 用の Office 365 データ損失防止 <BR> 分離した SharePoint Online サイト  | レベル 1 プラス: <BR> <BR> デジタル資産の機密ラベル <BR> Office 365 アドバンスト データ ガバナンス | レベル 1 |
+| レベル 3: 厳しく規制 | レベル 2 プラス: <BR><BR> 営業秘密情報の BYOK (Bring Your Own Key) 暗号化と保護 <BR> Office 365 サービスと対話する基幹業務アプリケーションの Azure Key Vault | レベル 2 | レベル 1 |
 |||||
 
 

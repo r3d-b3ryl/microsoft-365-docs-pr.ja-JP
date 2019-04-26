@@ -9,7 +9,7 @@ Office 365 サブスクリプションと Intune サブスクリプション用�
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>省略可能: ユーザーが追加およびライセンス付与されている
 
-ユーザーに対応するアカウントは、Office 365 サブスクリプションと Intune サブスクリプション用の Azure AD テナントに直接追加されるか、またはオンプレミスの Windows Server AD のディレクトリ同期から直接追加されます。
+ユーザーに対応するアカウントは、Office 365 サブスクリプションと Intune サブスクリプション用の Azure AD テナントに直接追加されるか、またはオンプレミスの Active Directory Domain Services (AD DS) のディレクトリ同期から直接追加されます。
 
 ユーザーが追加されると、グローバル管理者またはユーザー管理者として直接、あるいはグループ メンバーシップを通して自動的に、Microsoft 365 Enterprise ライセンスをユーザーに割り当てることができます。
 
@@ -27,8 +27,8 @@ Office 365 サブスクリプションと Intune サブスクリプション用�
 Windows 7 または Windows 8.1 を実行しているデバイス上で一括アップグレードを行うために Configuration Manager のタスク シーケンスを開始するには、以下の条件を満たしている必要があります。
 
 - 適切な Windows 診断データ レベルを設定する
-- Windows のアップグレードの準備状況を確認する
-- Windows 10 OS イメージを使用したデバイス コレクションとオペレーティング システムの展開を含む Configuration Manager のタスク シーケンスを作成する
+- Windows のアップグレードの準備状況を確認している
+- Windows 10 OS イメージを使用したデバイス コレクションとオペレーティング システムの展開を含む Configuration Manager のタスク シーケンスを作成している
 
 条件が満たされると、Windows のアップグレードの準備ができているデバイス上で一括インストールを実行できます。Microsoft 365 Enterprise のメリットを最大限に得るには、Windows 7 と Windows 8.1 を実行しているデバイスをできるだけ多くアップグレードします。 
 
@@ -41,13 +41,13 @@ Windows 10 Enterprise を実行している各デバイスは、Microsoft 365 En
 
 Windows Autopilot を使用して、新しいデバイス上で Windows 10 Enterprise を展開してカスタマイズするには、以下の条件を満たしている必要があります。
 
-- 適切な Windows 診断データ レベルを設定する
-- Windows Autopilot の前提条件 (以下の条件を含む) を完了している。
-- デバイスの登録と OOBE のカスタマイズ
-- OOBE 向けの会社のブランド化
-- Microsoft Intune での MDM の自動登録
-- Windows Autopilot で使用するクラウド サービスへのネットワーク接続
-- デバイスに Windows 10 バージョン (1703 以降) を事前にインストールする必要がある
+- 適切な Windows 診断データ レベルを構成している
+- Windows Autopilot の前提条件 (以下の条件を含む) を構成している
+   - デバイスの登録と OOBE のカスタマイズ
+   - OOBE 向けの会社のブランド化
+   - Microsoft Intune での MDM の自動登録
+   - Windows Autopilot で使用するクラウド サービスへのネットワーク接続
+- Windows 10 バージョン 1703 以降を事前にインストールしたデバイス
 - 組織の Windows Autopilot Deployment を選択している
 
 Windows Autopilot の構成が完了したら、それを使用して Windows 10 Enterprise を構成およびカスタマイズし、以下の OOBE (Out-of-Box Experience) を実現できます。

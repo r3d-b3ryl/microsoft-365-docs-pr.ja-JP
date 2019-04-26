@@ -3,36 +3,35 @@ title: 'フェーズ 1: ネットワーク インフラストラクチャの終�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise のネットワーク インフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: 8161fa2b92ffb4c7c4713e9356c0bc1bfec39d07
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291369"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>フェーズ 1: ネットワーク インフラストラクチャの終了条件
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-ネットワーク インフラストラクチャが次の条件を満たしている場合は、フェーズ 2 に進むことができます。
+ネットワーク インフラストラクチャが次の必須基準を満たすとともに、オプションの基準も考慮済みであることをご確認ください。
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必須: Microsoft 365 Enterprise に必要なネットワーク環境が準備できていること
 
 - オフィスごとの、Office 365、Microsoft Intune、Windows 10 Enterprise のインストールと更新を含む、Microsoft 365 トラフィックに見合ったインターネット帯域幅の確保
-- 一般的なインターネット トラフィックすべてを処理する本社
-- 最適化カテゴリのエンドポイント トラフィックを処理する支店
 - Office 365 の参照アーキテクチャに関するネットワーク全体のマップ
+- ネットワークの変更のパイロット実行とテストが済んでおり、トラフィックの待機時間の要件が満たされていること 
 
 必要に応じて、[手順 1](networking-provide-bandwidth-cloud-services.md) がこの必須条件を満たす上で役立ちます。
 
@@ -76,10 +75,12 @@ ms.locfileid: "26868988"
 
 クライアント デバイスと、Exchange Online、Skype for Business Online、SharePoint Online、Project Online の各サービスの Transmssion Control Protocol (TCP) 設定を最適化している。
 
-必要に応じて、[手順 5](networking-optimize-tcp-performance.md) がこのオプション条件を満たす上で役立ちます。
+必要に応じて、[手順 5](networking-optimize-tcp-performance.md) がこのオプション条件を満たすのに役立ちます。
 
-## <a name="next-phase"></a>次のフェーズ
+## <a name="results-and-next-steps"></a>結果と次のステップ
+
+これで、イントラネット ユーザーは、効率的なネットワーク パスでインターネットに接続して、Microsoft 365 クラウド サービスを利用する準備が整いました。
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Microsoft 365 Enterprise のエンドツーエンド展開プロセスの次のフェーズは、[ID](identity-infrastructure.md)です。 |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は [ID](identity-infrastructure.md) です。 |

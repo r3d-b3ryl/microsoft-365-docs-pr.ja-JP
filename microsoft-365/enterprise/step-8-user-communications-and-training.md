@@ -12,17 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: モダン デスクトップについて、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
-ms.openlocfilehash: 7737828600a9708b0b422a1fada6e0296de67f0f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Windows 10 および Office 365 ProPlus について、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
+ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289923"
 ---
 # <a name="step-8-user-communications-and-training"></a>手順 8: ユーザーのコミュニケーションとトレーニング
-
-Office 365、Windows 10、および Azure Active Directory などの新しいセキュリティとコンプライアンス コントロールにわたる最新の作業環境について、ユーザーに通知し、準備します。
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
@@ -31,15 +29,15 @@ Office 365、Windows 10、および Azure Active Directory などの新しいセ
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>手順 8: ユーザーのコミュニケーションとトレーニング</strong></p>
 <p>PC を Windows 10 や Office 365 ProPlus に移行するにあたり、新しい作業環境と作業方法について、ユーザーに通知してください。Microsoft FastTrack によるユーザー採用支援、トレーニング資料とコミュニケーション テンプレートの利用方法、ならびに、ユーザー受け入れや使用状況を監視する新しい方法について説明します。</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->ユーザーのコミュニケーションとトレーニングは、推奨の展開プロセスの 8 番目の手順であり、ユーザーへの通知と準備のためのヒントと推奨事項をカバーしています。デスクトップ展開プロセス全体を確認するには、[モダン デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
+>ユーザーのコミュニケーションとトレーニングは、推奨の展開プロセスの 8 番目の手順であり、ユーザーへの通知と準備のためのヒントと推奨事項をカバーしています。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
-ここでは、生産性の低下やワークフローの変更、あるいは新しいことを学ばなければならないといったことに不安を覚えている一部のユーザーに、更新プログラムを紹介する方法のヒントについて説明します。
+Office 365、Windows 10、Azure Active Directory での新しいセキュリティとコンプライアンス コントロールなどの最新の作業環境について、ユーザーに通知し、準備することが、導入を推進するために不可欠です。 ここでは、生産性の低下やワークフローの変更、あるいは新しいことを学ばなければならないといったことに不安を覚えている一部のユーザーに、更新プログラムを紹介する方法のヒントについて説明します。
 
 幸いなことに、Windows 7 と Office 2010 または Office 2013 から移行する場合、個人のデバイスで Windows 10 および Office の新しいバージョンが普及しているため、変更による影響はそれほど大きくありません。
 
@@ -91,7 +89,7 @@ Windows 10 の場合、生体認証を使用して安全にログインするた
 
 最初のフェーズで満足できたら、2 番目のパイロット フェーズとしてさらにユーザー数を拡大します。これはユーザーの役割、各種デバイス、各種 Windows アプリや Office アドインなどの代表的な組み合わせで構成されます。このようなグループから返されるデータは、さらに展開を拡大するフェーズ 3 の第一弾のために Analytics で使用されます。
 
-これ以降のフェーズでは、すべての PC は Analytics サービスにログインするため、デバイスとアプリの正常性、配信の最適化による帯域幅の節約、および Windows Hello ログインの使用に関するテレメトリを収集することができます。
+これ以降のフェーズでは、すべての PC は Analytics サービスにログインするため、デバイスとアプリの正常性、配信の最適化による帯域幅の節約、および Windows Hello ログインの使用に関する診断データを収集することができます。
 
 このフェーズでは、特に変更についてコミュニケーションをとり、新しい機能をユーザーが利用できるように支援することが重要です。ユーザーは IT から送信されるメールやその他の通知を最優先とはみなさず、無視する場合もあります。そのため、経営層とミーティングを実施し、新しいツールやテクノロジへの変更や導入についてコミュニケーションをとれるように支援する必要があります。
 
@@ -123,14 +121,14 @@ Microsoft の IT ショーケース シリーズも、Windows 10 の展開に関
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>フェーズ 3 以降: さまざまな運用環境への展開 
 
-拡大展開フェーズに達するまでには、プロセス、コミュニケーション、トレーニング、セルフサービス ツールの微調整が完了しています。この時点で、テレメトリで収集したデータを使用して、さらに多くの PC を対象にできます。
+拡大展開フェーズに達するまでには、プロセス、コミュニケーション、トレーニング、セルフサービス ツールの微調整が完了しています。 この時点で、収集した診断データを使用して、さらに多くの PC を対象にできます。
 
 IT 部門、ヘルプデスク、ユーザー、およびネットワークの容量で管理できる速さで展開します。展開プロセスのサイクルでは、いつでも手順 2 に戻り、展開に関連するデータの高速転送が促進されるように、さらにピア ツー ピア キャッシュ、LEDBAT、その他の展開関連データの移送の高速化を容易にする手法を使用して、ネットワークを最適化することができます。
 
-また、分析ツールを使用して監視するテレメトリの他にも、管理センターでのワークロード別に、および Power BI から管理者ダッシュボードを使用して、Office 365 および Microsoft 365 サービスの使用をさらに詳しく監視する方法があります。これらは Microsoft Teams のように連携するための新しいツールをロールアウトするとき、または OneDrive のようにファイルを共有する新しい方法をロールアウトするときに、その目標を設定し、追跡するための優れたツールです。
+分析ツールを使用して監視する診断データに加えて、管理センターのワークロードや Power BI 経由の管理ダッシュボードによる詳しい使用状況レポートを使用して、Office 365 と Microsoft 365 サービスの使用状況を詳細に監視することもできます。 これらは、Microsoft Teams などの共同作業の新しいツールや、OneDrive などのファイル共有の新しい方法をロールアウトする場合に、目標の設定と追跡を支援する優れたツールです。
 
 新しいテクノロジの受け入れと採用は、組織内のすべての PC に Windows 10 と Office 365 ProPlus がインストールされた後も続きます。また、ユーザーは、業務遂行の方法を必ずしも変更する必要はなく、新しい機能の周知とトレーニングに時間をかける必要もありません。つまり、Windows で半期、Office で 1 か月 (オプション) を予定する、新機能を提供するための新しいサービス提供モデルによって、継続的にコミュニケーションがとられます。
 
 ## <a name="previous-step"></a>前の手順 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[手順 7 - サービスとしての Windows および Office](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[手順 7: Windows と Office サービス](https://aka.ms/mdd7)

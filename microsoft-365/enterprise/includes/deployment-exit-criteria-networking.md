@@ -2,9 +2,8 @@
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必須: Microsoft 365 Enterprise に必要なネットワーク環境が準備できていること
 
 - オフィスごとの、Office 365、Microsoft Intune、Windows 10 Enterprise のインストールと更新を含む、Microsoft 365 トラフィックに見合ったインターネット帯域幅の確保
-- 一般的なインターネット トラフィックすべてを処理する本社
-- 最適化カテゴリのエンドポイント トラフィックを処理する支店
 - Office 365 の参照アーキテクチャに関するネットワーク全体のマップ
+- パイロット版としてテストされた、トラフィックの待機時間の要件を満たすネットワーク変更
 
 必要に応じて、[手順 1](../networking-provide-bandwidth-cloud-services.md) がこの必須条件を満たす上で役立ちます。
 

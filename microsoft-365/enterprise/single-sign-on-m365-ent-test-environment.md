@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用の Azure AD のシームレスなシングル サインオンを構成してテストします。'
-ms.openlocfilehash: 10444b094e09705e93cb32c10cd0d41c19913985
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 210d59b0e578b807b9f9ee73e9bff11e7f2502a0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290131"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境用の Azure AD のシームレスなシングル サインオン
 
@@ -29,7 +29,7 @@ Azure AD のシームレスなシングル サインオンは、ユーザーが�
 
 この記事では、Azure AD シームレス SSO 用の Microsoft 365 テスト環境を構成する方法について説明します。
 
-このテスト環境は、次に示す 2 つのフェーズで設定します。
+設定は 2 つのフェーズで行います。
 
 1.  パスワード ハッシュ同期を実装するシミュレーションのエンタープライズ Microsoft 365 テスト環境を作成する。
 2.  Azure AD シームレス SSO 用に APP1 上で Azure AD Connect を構成する。
@@ -39,17 +39,17 @@ Azure AD のシームレスなシングル サインオンは、ユーザーが�
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-create-the-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を作成する
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を構成する
 
-「[Microsoft 365 でのパスワード ハッシュ同期](password-hash-sync-m365-ent-test-environment.md)」の手順に従います。以下が、作成された構成です。
+「[Microsoft 365 でのパスワード ハッシュ同期](password-hash-sync-m365-ent-test-environment.md)」の手順に従います。最終的な構成は次のとおりです。
   
 ![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-この構成は、次の内容で構成されます: 
+この構成は、次の内容で成立します。 
   
-- Office 365 E5 および EMS E5 試用版サブスクリプションまたは永続サブスクリプション。
+- Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 
-- Azure AD Connect が APP1 上で実行され、TESTLAB Windows Server AD ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに定期的に同期されます。
+- Azure AD Connect が APP1 上で実行され、TESTLAB Active Directory Domain Services (AD DS) ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに定期的に同期されます。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>フェーズ 2: Azure AD シームレス SSO 用に APP1 上で Azure AD Connect を構成する
 
@@ -61,11 +61,11 @@ Azure AD のシームレスなシングル サインオンは、ユーザーが�
 
 2. APP1 のデスクトップで、Azure AD Connect を実行します。
 
-3. **[ようこそ]** ページで、**[構成]** をクリックします。
+3. [**ようこそ**] ページで、[**構成**] をクリックします。
 
-4. [追加のタスク] ページで、[**ユーザー サインインの変更**]、[**次へ**] の順にクリックします。
+4. **[追加のタスク]** ページで、**[ユーザー サインインの変更]**、**[次へ]** の順にクリックします。
 
-5. **[Azure AD に接続]** ページで、全体管理者の資格情報を入力して、**[次へ]** をクリックします。
+5. **[Azure AD に接続]** ページで、グローバル管理者の資格情報を入力して、**[次へ]** をクリックします。
 
 6. **[ユーザー サインイン]** ページで、**[シングル サインオンを有効にする]** を選び、**[次へ]** をクリックします。
 
@@ -93,9 +93,9 @@ Azure AD のシームレスなシングル サインオンは、ユーザーが�
 
 6. Office 365 からサインアウトし、再度サインインします。その際に、別のアカウントを指定します。
 
-7. サインインを求められたら、<strong>user1@testlab.</strong>\<お客様のパブリック ドメイン > 名前を指定して、**[次へ]** をクリックします。パスワードの入力を求められることなく User1 としてサインインできるはずです。サインインできれば、シームレス SSO が正常に動作していることになります。
+7. サインインを求められたら、<strong>user1@testlab.</strong>\< お客様のパブリック ドメイン> という名前を指定して、**[次へ]** をクリックします。 パスワードの入力を求められることなく、User1 として正常にサインインできるはずです。 サインインできた場合、Azure AD シームレス SSO が機能していることになります。
 
-User1 には、TESTLAB Windows Server AD ドメインに対するドメイン管理者アクセス許可がありますが、Office 365 全体管理者ではない点に注意してください。そのため、[**管理者**] アイコンがオプションとして表示されません。
+User1 には TESTLAB AD DS ドメインに対するドメイン管理者のアクセス許可がありますが、Azure AD と Office 365 のグローバル管理者ではないことにご注意ください。 そのため、**[管理者]** アイコンはオプションとして表示されません。
 
 最終的な構成をここに示します。
 
@@ -104,12 +104,12 @@ User1 には、TESTLAB Windows Server AD ドメインに対するドメイン管
  
 この構成は、次の内容で成立します。
 
-- DNS ドメイン TESTLAB.\<ドメイン名> が登録されている Office 365 E5 および EMS E5 試用版サブスクリプションまたは永続サブスクリプション。
+- DNS ドメイン testlab.\<お客様のドメイン名> が登録されている Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 
-- Azure AD Connect が APP1 上で実行され、Office 365 および EMS E5 サブスクリプションの Azure AD テナントから、アカウントおよびグループのリストが TESTLAB Windows Server AD ドメインに同期されます。 
-- Azure AD シームレス SSO が有効になっており、シミュレートされたイントラネット上のコンピューターは、ユーザー アカウントのパスワードを指定せずに Microsoft 365 のクラウド リソースにサインオンできます。
+- Azure AD Connect が APP1 上で実行され、Office 365 および EMS E5 サブスクリプションの Azure AD テナントから、アカウントおよびグループのリストが TESTLAB AD DS ドメインに同期されます。 
+- Azure AD シームレス SSO が有効になっており、シミュレートされたイントラネット上のコンピューターは、ユーザー アカウントのパスワードを指定せずに Microsoft 365 のクラウド リソースにサインインできます。
 
-実稼働環境での Azure AD シームレス SSO の構成に関する情報およびリンクについては、ID フェーズの手順、「[ユーザー サインインを簡素化する](identity-single-sign-on.md)」を参照してください。
+実稼働環境での Azure AD シームレス SSO の構成に関する情報およびリンクについては、ID フェーズの手順、「[ユーザー サインインを簡素化する](identity-password-reset.md#identity-sso)」を参照してください。
 
 ## <a name="next-step"></a>次の手順
 
