@@ -9,23 +9,23 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: 3cee2b69ce34647627cb2b72f9e0f59a6fba17e9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290986"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
-多くの組織は、Azure AD Connect とパスワード ハッシュ同期を使用して、オンプレミスの Windows Server Active Directory (AD) フォレスト内のアカウントのセットを Office 365 と EMS E5 サブスクリプションの Azure AD テナント内のアカウントのセットに同期しています。この記事では、Microsoft 365 テスト環境にパスワード ハッシュ同期を追加する方法について説明します。最終的な構成は、次のとおりになります。
+多くの組織では、Azure AD Connect とパスワード ハッシュ同期を使用して、オンプレミスの Active Directory Domain Services (AD DS) フォレスト内のアカウント セットを、Office 365 サブスクリプションと EMS E5 サブスクリプションの Azure AD テナント内のアカウント セットに同期します。 この記事では、Microsoft 365 のテスト環境にパスワード ハッシュ同期を追加する方法について説明します。最終的な構成は、次のとおりになります。
   
 ![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -43,10 +43,10 @@ ms.locfileid: "26869573"
   
 ![シミュレートされたエンタープライズ基本構成](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
-この構成は、次の内容で構成されます: 
+この構成は、次の内容で成立します。 
   
-- Office 365 E5 および EMS E5 試用版または永続的なサブスクリプション。
-- インターネットに接続している組織の簡易型イントラネット。Azure 仮想ネットワーク内の 3 つの仮想マシン (DC1、APP1、および CLIENT1) で構成されます。DC1 は、testlab.\<パブリック ドメイン名> Windows Server AD のドメイン コントローラーです。
+- Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
+- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワーク内の仮想マシン DC1、APP1、CLIENT1 で構成されます。 DC1 は、testlab.\<パブリック ドメイン名> Active Directory Domain Services (AD DS) ドメインのドメイン コントローラーです。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>フェーズ 2: testlab ドメインを作成および登録する
 
@@ -54,22 +54,22 @@ ms.locfileid: "26869573"
 
 まず、パブリック DNS 登録プロバイダーと協力して、現在のドメイン名に基づいた新しいパブリック DNS ドメイン名を作成し、Office 365 サブスクリプションに追加します。**testlab.**\<パブリック ドメイン> という名前を使用することをお勧めします。たとえば、パブリック ドメイン名が <span>**contoso</span>.com** である場合は、パブリック ドメイン名 **<span>testlab</span>.contoso.com** を追加します。
   
-次に、ドメイン登録プロセスを通じて **testlab.**\<パブリック ドメイン> ドメインを Office 365 の試用版サブスクリプションまたは永続サブスクリプションに追加します。この内容は、**testlab.**\<パブリック ドメイン> ドメインに、さらに DNS レコードを追加することです。詳細については、「[ユーザーとドメインを Office 365 に追加する](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)」を参照してください。 
+次に、ドメイン登録プロセスの手順に従って、**testlab.**\<パブリック ドメイン> ドメインを Office 365 の試用版サブスクリプションまたは有料サブスクリプションに追加します。 この際、他の DNS レコードも **testlab.**\<パブリック ドメイン> ドメインに追加します。 詳細については、「[Office 365 にユーザーとドメインを追加する](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)」を参照してください。 
 
 最終的な構成をここに示します。
   
 ![testlab ドメイン名の登録](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
-この構成は、次の内容で構成されます:
+この構成は、次の内容で成立します。
 
-- DNS ドメイン testlab.\<パブリック ドメイン名> が登録されている Office 365 E5 および EMS E5 試用版サブスクリプションまたは永続サブスクリプション。
+- DNS ドメイン testlab.\<パブリック ドメイン名> が登録されている Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。
 
 この時点での testlab.\<パブリック ドメイン名> の状態に注目してください。
 
 - パブリック DNS レコードによるサポート。
 - Office 365 および EMS サブスクリプションでの登録。
-- シミュレートされたイントラネット上の Windows Server AD ドメイン。
+- シミュレートされたイントラネット上の AD DS ドメイン。
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>フェーズ 3: APP1 に Azure AD Connect をインストールする
 
@@ -103,13 +103,13 @@ ms.locfileid: "26869573"
     
 10. **[構成が完了しました]** ページで、**[終了]** をクリックします。
     
-11. Internet Explorer で、Office 365 ポータルに移動します ([https://portal.office.com](https://portal.office.com))。
+11. Internet Explorer で、Office ポータルに移動します ([https://office.com](https://office.com))。
     
 12. ポータルのメイン ページで、**[管理]** をクリックします。
     
 13. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
-    **User1** という名前のアカウントを記録します。これは TESTLAB Windows Server AD ドメインからのアカウントであり、ディレクトリ同期が機能していることを証明します。
+    **User1** という名前のアカウントを記録します。 これは TESTLAB AD DS ドメインからのアカウントであり、ディレクトリ同期が機能していることを証明します。
     
 14. **[User1]** アカウントをクリックします。製品ライセンスの **[編集]** をクリックします。
     
@@ -123,7 +123,7 @@ ms.locfileid: "26869573"
 
 2. ユーザー名とパスワードの入力を求めるダイアログが表示されたら、<strong>user1@testlab.</strong>\<お客様のドメイン名> と User1 のパスワードを指定します。User1 として正常にサインインできるはずです。 
  
-User1 には、TESTLAB Windows Server AD ドメインに対するドメイン管理者アクセス許可がありますが、Office 365 全体管理者ではない点に注意してください。そのため、[**管理者**] アイコンがオプションとして表示されません。 
+User1 は、TESTLAB AD DS ドメインに対するドメイン管理者のアクセス許可を持っていますが、Office 365 のグローバル管理者ではありません。 そのため、**[管理者]** アイコンはオプションとして表示されません。 
 
 最終的な構成をここに示します。
 
@@ -131,9 +131,9 @@ User1 には、TESTLAB Windows Server AD ドメインに対するドメイン管
 
 この構成は、次の内容で成立します。 
   
-- DNS ドメイン TESTLAB.\<ドメイン名> が登録されている Office 365 E5 および EMS E5 試用版サブスクリプションまたは永続サブスクリプション。
-- インターネットに接続している組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。Azure AD Connect は APP1 上で実行され、TESTLAB Windows Server AD ドメインを定期的に Office 365 および EMS E5 サブスクリプションの Azure AD テナントに同期します。
-- TESTLAB Windows Server AD ドメインの User1 アカウントは、Azure AD テナントと同期されています。
+- DNS ドメイン TESTLAB.\<ドメイン名> が登録されている Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
+- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 Azure AD Connect が APP1 上で実行され、TESTLAB AD DS ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに定期的に同期されます。
+- TESTLAB AD DS ドメインの User1 アカウントは、Azure AD テナントと同期されています。
 
 ## <a name="next-step"></a>次の手順
 

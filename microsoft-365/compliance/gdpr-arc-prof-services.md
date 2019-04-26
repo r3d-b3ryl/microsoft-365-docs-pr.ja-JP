@@ -2,20 +2,20 @@
 title: GDPR に関する Microsoft サポートおよびプロフェッショナル サービス アカウンタビリティ対応準備チェックリスト
 description: Microsoft プロフェッショナル サービスおよびサポート サービスを利用する際に、GDPR をサポートするために必要な情報にアクセスする便利な方法を提供します。
 keywords: ARC、アカウンタビリティ対応準備チェックリスト、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 95af57f0029fe22803179076bc05feaafa277fa5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bbdb806648c1f5a438e07b9092a7b432ab0ed81d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286498"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Microsoft サポートおよびプロフェッショナル サービス アカウンタビリティ対応準備チェックリスト
 
@@ -25,8 +25,6 @@ ms.locfileid: "26869672"
 このアカウンタビリティ対応準備チェックリストは、Microsoft プロフェッショナル サービスおよびサポート サービスを利用する際に、GDPR をサポートするために必要な情報にアクセスする便利な方法を提供します。チェックリストは、「*ISO/IEC CD 27552 Information technology &#x2014; Security techniques &#x2014; Enhancement to ISO/IEC 27001 for privacy management &#x2013; Requirements*」に基づいた個人データ プロセスに関する一連のプライバシーとセキュリティ コントロールのタイトルと参照番号 (各チェックリスト トピックに対してかっこで示す) を使用して編成されています。
 
 GDPR をサポートするために Microsoft プロフェッショナル サービスが実装する内部コントロールのプレゼンテーションを編成するためにもこのコントロール構造は使用されます (https://servicetrust.microsoft.com/ViewPage/TrustDocuments でダウンロードすることができます)。
-
-完全なドラフト ISO 標準のコピーを購入するには、*https://shop.bsigroup.com/ProductDetail?pid=000000000030372571* にアクセスしてください。
 
 <br>
 
@@ -152,24 +150,20 @@ GDPR をサポートするために Microsoft プロフェッショナル サー
 | **ID**                | **説明**                                                                                            | **URL**                                                                                                                                                                                                               |
 | 1 <a name="1"> </a>   | ***Microsoft プロフェッショナル サービス データ保護に関する補遺***                                             | (<http://aka.ms/professionalservicesdpa>)                                                                                                                                                                             |
 | 2 <a name="2"> </a>   | ***Microsoft Trust Center での Microsoft プロフェッショナル サービスのセキュリティに関するドキュメント***                     | <https://www.microsoft.com/TrustCenter/professional-services-security>                                                                                                                                                |
-| 3 <a name="3"> </a>   | ***トレーニングと認識プログラムの説明***                                                           | お客様のアカウント管理チームを介した要求で利用可能。<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                       |
-| 4 <a name="4"> </a>   | ***Microsoft Azure データ セキュリティ*** (データ クレンジングと漏洩)                                           | <https://blogs.msdn.microsoft.com/walterm/2014/09/04/microsoft-azure-data-security-data-cleansing-and-leakage/>                                                                                                       |
-| 5 <a name="5"> </a>   | ***5. Microsoft プロフェッショナル サービス GDPR コントロール セット***                                                 | <https://aka.ms/GDPRControls> またはコンプライアンス マネージャー https://servicetrust.microsoft.com/ComplianceManager で Microsoft Service Trust Portal コンプライアンス マネージャーを介してダウンロード可能                                |
-| 6 <a name="6"> </a>   | ***Microsoft Enterprise ビジネス継続性管理に関するドキュメント***                                    | お客様のアカウント管理チームを介した要求で利用可能。<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                       |
-| 7 <a name="7"> </a>   | ***誰がどのような条件でデータにアクセスできるか***                                                           | <https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>                                                                                                                            |
-| 8 <a name="8"> </a>   | ***GDPR のための Microsoft プロフェッショナル サービス データ主体要求***                                   | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services>                                                                                                                                          |
-| 9 <a name="9"> </a>   | ***Microsoft プロフェッショナル サービスと GDPR の下での違反の通知***                               | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services>                                                                                                             |
-| 10 <a name="10"> </a> | ***顧客データ保護影響評価に関する Microsoft プロフェッショナル サービスからの重要な情報*** | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services>                                                                                                                                         |
-| 11 <a name="11"> </a> | ***ISO 27001 監査レポート***<br>                                                                           |                                                                                                                                                                                                                       |
-|                       | 証明書レポート                                                                                       | <https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002> |
-|                       | 監査レポート                                                                                               | お客様のテクニカル アカウント管理チームを介した要求で利用可能。<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                             |
-| 12 <a name="12"> </a> | ***Microsoft プロフェッショナル サービス ISO/IEC 27001:2013 ISMS の適用性に関するステートメント***                   | お客様のアカウント管理チームを介した要求での SOA<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                              |
-| 13 <a name="13"> </a> | ***Microsoft Trust Center コンプライアンスの提供***                                                          | <https://www.microsoft.com/trustcenter/compliance/complianceofferings>                                                                                                                                                |
-| 14 <a name="14"> </a> | ***Microsoft DPO 情報***                                                                            | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer>                                                                                                                                    |
+| 3 <a name="3"> </a>   | ***トレーニングと認識プログラムの説明***                                                           | お客様のアカウント管理チームを介した要求で利用可能。|                                                                                                    |
+| 4 <a name="4"> </a>   | ***Microsoft プロフェッショナル サービス GDPR コントロール セット***                                                 | <https://aka.ms/GDPRControls> またはコンプライアンス マネージャー https://servicetrust.microsoft.com/ComplianceManager で Microsoft Service Trust Portal コンプライアンス マネージャーを介してダウンロード可能                                |
+| 5 <a name="5"> </a>   | ***Microsoft Enterprise ビジネス継続性管理に関するドキュメント***                                    | お客様のアカウント管理チームを介した要求で利用可能。                                                                     |
+| 6 <a name="6"> </a>   | ***誰がどのような条件でデータにアクセスできるか***                                                           | <https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>                                                                                                                            |
+| 7 <a name="7"> </a>   | ***GDPR のための Microsoft プロフェッショナル サービス データ主体要求***                                   | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services>                                                                                                                                          |
+| 8 <a name="8"> </a>   | ***Microsoft プロフェッショナル サービスと GDPR の下での違反の通知***                               | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services>                                                                                                             |
+|  9 <a name="9"> </a> | ***顧客データ保護影響評価に関する Microsoft プロフェッショナル サービスからの重要な情報*** | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services>                                                                                                                                         |
+| 10 <a name="10"> </a> | ***ISO 27001 監査レポート***                                                                              |   <https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>                                                                                                                                            |
+| 11 <a name="11"> </a> | ***Microsoft プロフェッショナル サービス ISO/IEC 27001:2013 ISMS の適用性に関するステートメント***                   | お客様のアカウント管理チームを介した要求での SOA。|
+| 12 <a name="12"> </a> | ***Microsoft Trust Center コンプライアンスの提供***                                                          | <https://www.microsoft.com/trustcenter/compliance/complianceofferings>                                                                                                                                                |
+| 13 <a name="13"> </a> | ***Microsoft DPO 情報***                                                                            | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer>                                                                                                                                    |
 |                       |                                                                                                            |                                                                                                                                                                                                                       |
 
 ## <a name="learn-more"></a>詳細情報
 
 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 
-[Secure Trust Portal](https://aka.ms/gdprgetstarted)

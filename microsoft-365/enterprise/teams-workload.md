@@ -8,18 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft 365 Enterprise の Microsoft Teams を計画、ロールアウトするプロセス、および Microsoft Teams の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: 25329c7024f267983a83c4e719f18df6ad613bf5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291661"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Microsoft Teams を展開する
+
+*このワークロードは、Microsoft 365 Enterprise の E3 および E5 の両バージョンに該当します*
 
 Microsoft Teams には、チャット、会議、ドキュメント共有、会話スレッド機能が組み込まれており、コンテンツの作成とグループ間でのコンテンツの共有を容易にします。Teams は、Microsoft 365 Enterprise でチーム作業とコラボレーションを行うためのコンポーネントであり、Microsoft 365 の Built for Teamwork の価値を構成する重要な要素です。Teams を初めて利用する場合は、「[Microsoft Teams の概要](https://docs.microsoft.com/MicrosoftTeams/teams-overview)」を参照してください。
  
@@ -27,9 +29,7 @@ Microsoft Teams には、チャット、会議、ドキュメント共有、会�
 
 次に示すフェーズと手順では、組織における Teams の役割を想定し、段階的な一連のロールアウトにより組織が Teams の研修を行い、Teams の用途とエンドユーザーに対する Teams の価値を促進するプロセスを説明します。 
 
->[!Note]
->この展開手順は、Microsoft 365 Enterprise の[基礎インフラストラクチャ](deploy-foundation-infrastructure.md)の完了後に実行してください。
->
+まず始める前に、チームに必要なセキュリティ機能が備わるように、適切な[基礎インフラストラクチャチャ](deploy-foundation-infrastructure.md)のフェーズが設定されていることを確認します。
 
 ## <a name="phase-1-envision"></a>フェーズ 1: 想定
 
@@ -45,7 +45,7 @@ Microsoft 365 [基礎インフラストラクチャ](deploy-foundation-infrastru
 組織の事業、技術、エンドユーザーの各側面を代表する関係者のリスト。
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>手順 2: Teams のビジネス シナリオを決定し優先順位を付ける
-Teams はさまざまな目的に使用できます。ビジネス グループ、部門、個々の作業チームとプロジェクト チームといった組織の各レベルのビジネス ニーズと目的の対応関係を特定する必要があります。Teams のシナリオの定義に役立つ例については、「[Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success)」を参照してください。 
+Teams はさまざまな目的に使用できます。ビジネス グループ、部門、個々の作業チームとプロジェクト チームといった組織の各レベルのビジネス ニーズと目的の対応関係を特定する必要があります。Teams のシナリオの定義に役立つ例については、「[Microsoft 365 Productivity Library](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1)」を参照してください。 
 
 機敏で極めてコラボレーティブであり、密接に連携し、Exchange Online のメールにとどまらずさまざまな機能 (履歴記録機能を備えたライブ グループ チャット、一般的で見つけやすいファイルとメモの保存場所など) を必要とするチームに対処することを、Teams の目標とします。 
 
