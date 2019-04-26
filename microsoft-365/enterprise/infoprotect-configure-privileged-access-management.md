@@ -1,5 +1,5 @@
 ---
-title: '手順 4: Office 365 の特権アクセス管理を構成する'
+title: '手順 6: Office 365 の特権アクセス管理を構成する'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: 297d8e042c2a22c93b4ea566081d258e7ca0a5ab
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 60b52825ead068cd0f068f78c1bbce263e8d7720
+ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286950"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33304157"
 ---
-# <a name="step-4-configure-privileged-access-management-for-office-365"></a>手順 4: Office 365 の特権アクセス管理を構成する
+# <a name="step-6-configure-privileged-access-management-for-office-365"></a>手順 6: Office 365 の特権アクセス管理を構成する
 
 *この手順はオプションであり、Microsoft 365 Enterprise の E5 および Advanced Compliance バージョンにのみ適用されます。*
 
@@ -43,7 +43,7 @@ Office 365 の特権アクセス管理を有効にするには、「[Office 365 
 
 この手順の結果、組織にとって重要なデータと構成設定に対する Just-In-Time アクセス制御が有効になり、Office 365 のセキュリティが向上しました。
 
-中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step5)を確認してください。
+中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step6)を確認してください。
 
 ## <a name="next-step"></a>次の手順
 
