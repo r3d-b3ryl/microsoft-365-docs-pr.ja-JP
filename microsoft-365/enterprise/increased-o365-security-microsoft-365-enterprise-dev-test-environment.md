@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: 54e05122dcbe5d4e24f092536897f2a8ad449e05
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 583d815d9f413df8aeb5ec7abaf68cf79a6cc8b9
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283657"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353119"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>microsoft 365 エンタープライズテスト環境の microsoft 365 セキュリティの強化
 
@@ -46,16 +46,15 @@ ms.locfileid: "32283657"
 
 モダン認証をサポートしていないアプリには、 [id とデバイスのアクセス構成](microsoft-365-policies-configurations.md)を適用できません。これは、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティ保護するための重要な要素です。 
 
-1. office ポータル ([https://office.com](https://office.com)) に移動し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
+1. Microsoft 365 管理センター ([https://portal.microsoft.com](https://portal.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 テストラボサブスクリプションにサインインします。
     
   - ライトウェイトの Microsoft 365 テスト環境を使用している場合は、ローカルコンピューターからサインインします。
     
   - シミュレートされたエンタープライズ Microsoft 365 テスト環境を使用している場合は、 [Azure portal](https://portal.azure.com)を使用して client1 仮想マシンに接続し、client1 からサインインします。
  
-2. **Microsoft 365 管理センター**のタブで、[**管理者**] をクリックします。
-3. 新しい**Microsoft 365 管理センター**のタブで、[**管理センター > SharePoint**] をクリックします。
-4. [新しい**SharePoint 管理センター** ] タブで、[**アクセス制御**] をクリックします。
-5. **モダン認証をサポートしていないアプリ**の下で、[**ブロック**] をクリックし、[ **OK]** をクリックします。
+2. 新しい**Microsoft 365 管理センター**のタブで、[**管理センター > SharePoint**] をクリックします。
+3. [新しい**SharePoint 管理センター** ] タブで、[**アクセス制御**] をクリックします。
+4. **モダン認証をサポートしていないアプリ**の下で、[**ブロック**] をクリックし、[ **OK]** をクリックします。
 
 
 ### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>SharePoint、OneDrive for business、Microsoft Teams の Advanced Threat Protection を有効にする
@@ -86,20 +85,15 @@ Office 365 には、受信および送信メッセージを悪意のあるソフ
 4. [**一般的な添付ファイルの種類のフィルター**] で、[ **> 保存**] をクリックします。
 
 
-## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>フェーズ 3: Office 365 のセキュリティツールとログを検証する
-
-このフェーズでは、セキュリティイベントについての情報を伝える組み込みのサービスを見て、全体的なセキュリティ体制を測定します。
-
-### <a name="threat-management-dashboard"></a>脅威管理ダッシュボード
+## <a name="phase-3-examine-the-threat-management-dashboard"></a>フェーズ 3: 脅威管理ダッシュボードを調べる
 
 Office 365 の脅威管理は、組織のデータへのモバイルデバイスアクセスの制御と管理、データ損失からの組織の保護、および悪意のあるソフトウェアとスパムからの受信および送信メッセージの保護に役立ちます。 また、脅威管理を使用して、ドメインの評価を保護し、送信者が悪意のあるドメインからのアカウントを偽装しているかどうかを判断します。 詳細については、「 [Microsoft 365 セキュリティセンターの脅威管理](https://docs.microsoft.com/office365/securitycompliance/threat-management)」を参照してください。
 
-
-### <a name="office-365-cloud-app-security-dashboard"></a>Office 365 Cloud App Security dashboard
-
-office 365 Cloud App Security (以前の office 365 Advanced Security Management) を使用すると、office 365 サブスクリプションでの疑わしいアクティビティを監視して通知するポリシーを作成して、そのことを調査して可能にすることができます。修復アクション。 詳細については、「 [Office 365 Cloud App Security の概要](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview)」を参照してください。
-
 <!--
+### Office 365 Cloud App Security dashboard
+
+Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
+
 ### Microsoft 365 Secure Score
 
 1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
@@ -107,7 +101,7 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
 !-->
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 これらの設定を運用環境で構成する情報およびリンクについては、**情報保護**フェーズの「 [Microsoft のセキュリティを構成](infoprotect-configure-increased-security-office-365.md)する」の手順を参照してください。
 

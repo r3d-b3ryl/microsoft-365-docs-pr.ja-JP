@@ -13,29 +13,26 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 次の手順を使用して、Microsoft 365 Enterprise テスト環境の全体管理者アカウントを保護します。
-ms.openlocfilehash: cded424188447f96e5614f31d3e207bb541d438e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290860"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353059"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保護する
 
-組織でのデジタル攻撃を防止するには、管理者アカウントのセキュリティを可能な限り確保することができます。 この記事では、Office 365 Cloud App Security および Azure AD 条件付きアクセスポリシーを使用して全体管理者アカウントを保護する方法について説明します。
+組織でのデジタル攻撃を防止するには、管理者アカウントのセキュリティを可能な限り確保することができます。 この記事では、azure Active Directory (azure AD) 条件付きアクセスポリシーを使用して全体管理者アカウントを保護する方法について説明します。
 
 Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保護するには、次の2つのフェーズがあります。
 
-1.  Microsoft 365 Enterprise テスト環境を作成します。
+1.  Microsoft 365 Enterprise のテスト環境を作成します。
 2.  専用のグローバル管理者アカウントを保護します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
-
-> [!NOTE]
-> Microsoft 365 Enterprise テスト環境では、Office 365 および Enterprise Management + Security (EMS) の E5 バージョンを使用します。 office 365 Cloud App Security 機能は、E5 バージョンの office 365 でのみ利用できます。 
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
 
@@ -47,24 +44,9 @@ Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保�
 > [!NOTE]
 > グローバル管理者アカウント保護のテストでは、シミュレートされたエンタープライズテスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) のディレクトリ同期が含まれます。 グローバル管理者アカウントの保護をテストして、一般的な組織を表す環境で試してみることができるようにするためのオプションとして、ここに記載されています。 
   
-## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>フェーズ 2: Cloud App Security と条件付きアクセスポリシーを構成する
+## <a name="phase-2-configure-conditional-access-policies"></a>フェーズ 2: 条件付きアクセスポリシーを構成する
 
-最初に、Office 365 Cloud App Security ポリシーを作成して、全体管理者アカウントアクティビティを監視し、グローバル管理者アカウントの電子メールアドレスに通知を送信します。 
-
-1. グローバル管理者アカウントを使用して、 [Office 365 Security & コンプライアンスポータル](https://protection.office.com/)にサインインします。
-2. 左側のナビゲーション ウィンドウで、 **[アラート] > [高度な警告の管理]** をクリックします。
-3. **[高度な警告の管理]** ページで、 **[Office 365 Cloud App Security を有効にする]** をクリックし、 **[Office 365 Cloud App Security に移動]** をクリックします。
-4. 新しい **[ダッシュボード]** タブから **[制御] > [ポリシー]** をクリックします。
-5. **[ポリシー]** ページで、 **[ポリシーの作成]** をクリックし、次に **[アクティビティ ポリシー]** をクリックします。
-6. **[ポリシー名]** に「 **管理アクティビティ**」と入力します。
-7. **[ポリシー重要度]** で、 **[高]** をクリックします。
-8. **[カテゴリ]** で、 **[特権アカウント]** をクリックします。
-9. **[ポリシーのフィルターの作成]** の **[以下のすべてに該当するアクティビティ]** で、 **[管理アクティビティ]** をクリックします。
-10. **[アラート]** で、 **[アラートを電子メールとして送信する]** をクリックします。 **[送信先]** に、全体管理者アカウントの電子メール アドレスを入力します。
-11. ページの下部にある **[作成]** をクリックします。
-12. [**ダッシュボード**] タブを閉じます。
-    
-次に、専用のグローバル管理者として新しいユーザーアカウントを作成します。
+最初に、専用のグローバル管理者として新しいユーザーアカウントを作成します。
 
 1. 別のタブで、 [Microsoft 365 管理センター](https://admin.microsoft.com/)を開きます。
 2. [**アクティブなユーザー**] で、[**ユーザーの追加**] をクリックします。

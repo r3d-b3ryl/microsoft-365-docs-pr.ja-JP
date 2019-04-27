@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: 24aacc1a992e2dfdc683e5e4c4405b105eea7bf5
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291310"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353206"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
 
@@ -35,7 +35,7 @@ Microsoft 365 Enterprise は次の要素で構成されています。
 | Enterprise Mobility + Security (EMS) | Microsoft Intune が含まれています。これは、クラウドベースの enterprise mobility management (EMM) サービスであり、企業データを保護したまま、従業員の生産性を向上させるのに役立てることができます。 |
 |||
 
-## <a name="plans"></a>計画
+## <a name="plans"></a>プラン
 
 Microsoft 365 Enterprise は、3つのプランで利用できます。
 
@@ -64,13 +64,17 @@ Microsoft 365 Enterprise は、3つのプランで利用できます。
 
 ## <a name="deploying"></a>配備
 
-Microsoft 365 Enterprise の製品、機能、およびコンポーネントを展開するには、次の2つの方法があります。
+Microsoft 365 Enterprise の製品、機能、およびコンポーネントを展開するには、次の3つの方法があります。
 
 1. fasttrack とのパートナーシップ
   
-   fasttrack では、Microsoft のエンジニアが自分のペースでクラウドに移行することができます。 「 [Microsoft 365 の fasttrack」を](https://fasttrack.microsoft.com/microsoft365)参照してください。
+   fasttrack では、Microsoft のエンジニアが自分のペースでクラウドに移行することができます。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
   
-2. 自分で行う
+2. microsoft コンサルティングサービスまたは[microsoft パートナー](https://partner.microsoft.com/)と協力して提供されます。
+
+   コンサルタントは、現在のインフラストラクチャを分析し、Microsoft 365 Enterprise のすべてのソフトウェアとサービスを組み込むための計画を策定する際に役立ちます。
+
+3. 自分で行う
 
    「 [Microsoft 365 Enterprise 展開ガイド」](deploy-microsoft-365-enterprise.md)では、インフラストラクチャと生産性のワークロードを構築する手順について手順を追って説明します。 
 
@@ -108,7 +112,7 @@ Microsoft 365 Enterprise の製品、機能、およびコンポーネントを�
 
 ## <a name="next-step"></a>次の手順
 
-[Microsoft 365 Enterprise 展開](deploy-microsoft-365-enterprise.md)の手順を開始します。
+自分で展開を行う場合は、 [Microsoft 365 Enterprise 展開](deploy-microsoft-365-enterprise.md)の手順を開始してください。
 
 ## <a name="see-also"></a>関連項目
 
