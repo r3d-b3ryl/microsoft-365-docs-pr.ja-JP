@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされるかについて説明します。
-ms.openlocfilehash: bd259f367cdf3417e32671457f248029c853b6f8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a4a86c56f956361e58730f328ef940a627370ea6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283681"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353135"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
 
@@ -127,7 +127,7 @@ Contoso 社の IT 部門は、展開に先立って次のビジネス ニーズ�
 | セキュリティ |  |  |
 |  | ID およびアクセス管理 | 多要素認証 (MFA) および Azure AD Privileged Identity Management (PIM) 付きの専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Office 365 脅威の調査および対応 <BR> |
-|  | 情報保護 | Azure Information Protection <BR> Office 365 データ損失防止 (DLP) <BR> Windows 情報保護 <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
+|  | 情報保護 | Azure Information Protection <BR> Office 365 データ損失防止 (DLP) <BR> Windows 情報保護 <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | セキュリティ管理 | Azure Security Center  <BR> Windows Defender セキュリティ センター |
 | リモート/モバイル アクセスおよびビジネス パートナー |  |  |
 |  | リモート ワーカーとモバイル ワーカーのセキュリティを強化する | Microsoft Intune |

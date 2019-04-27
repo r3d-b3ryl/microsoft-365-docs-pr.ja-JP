@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 管理者アカウントについて理解し、管理者アカウントが最大限に保護されるよう構成します。
-ms.openlocfilehash: 4b4a8d01cdf71e30139fa448813a3ff7c43855c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0be82fc6f431001c69e79a0a26007c54a87424c3
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285162"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353089"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>手順 2: 特権 ID をセキュリティで保護する
 
@@ -39,7 +39,6 @@ ms.locfileid: "32285162"
 1. テスト ユーザー アカウントを使用して、ユーザー アカウント別または条件付きアクセスに基づく多要素認証 (MFA) 設定をテストし、MFA が予期されているとおりに正しく機能することを確認します。MFA は、セカンダリ認証方式 (スマートフォンに送信される確認コードなど) を必要とします。
 2. 専用の Office 365 全体管理者アカウントごとに MFA を構成し、組織で使用可能なセカンダリ認証のうち最も強力な認証を使用します。詳細については、「[多要素認証をセットアップする](identity-multi-factor-authentication.md#identity-mfa)」を参照してください。
 2. 条件付きアクセス ポリシーを使用して、全体管理者アカウントに対して MFA を要求します。詳細については、「[Protecting administrator accounts](identity-access-prerequisites.md#protecting-administrator-accounts)」 (管理者アカウントの保護) を参照してください。
-4. Office 365 Cloud App Security ポリシーを使用して、全体管理者アカウントの活動を監視します。詳細については、[Office 365 のセキュリティ強化の構成](infoprotect-configure-increased-security-office-365.md)に関するページを参照してください。
 
 構成の詳細については、「[Office 365 グローバル管理者アカウントの保護](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)」を参照してください。
 
