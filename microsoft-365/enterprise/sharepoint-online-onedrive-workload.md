@@ -13,11 +13,11 @@ ms.collection:
 ms.custom: ''
 description: 組織全体で Microsoft 365 Enterprise の SharePoint Online を計画、ロールアウトするプロセス、および SharePoint Online の価値を引き出すプロセスについて、順を追って説明します。
 ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290901"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400181"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>SharePoint Online と OneDrive for Business を Microsoft 365 Enterprise 向けに展開する
 

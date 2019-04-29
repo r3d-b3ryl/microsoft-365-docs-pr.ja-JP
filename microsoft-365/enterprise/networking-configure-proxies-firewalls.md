@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Office 365 が稼働している信頼できる場所にトラフィックをバイパスするのに必要となる Web ブラウザーとエッジ デバイスについて理解し、構成します。
 ms.openlocfilehash: 8486b5c0da9e44ed0b9ee42feb7acbfd21445010
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291590"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400101"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>手順 4: トラフィック バイパスを構成する
 
