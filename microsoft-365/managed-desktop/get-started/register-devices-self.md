@@ -6,11 +6,11 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
-ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33296167"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400078"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでのデバイスの登録
 
@@ -95,12 +95,12 @@ Microsoft マネージドデスクトップの[Azure ポータル](https://aka.m
 
 メインの**Microsoft Managed Desktop-Devices**ページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
 
-| 状態 | 説明 |
+| State | 説明 |
 |---------------|-------------|
 | 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
 | 登録の失敗 | 登録を完了できませんでした。 詳細については、「[トラブルシューティング](register-devices-self.md#troubleshooting)」を参照してください。 |
 | ユーザーの準備完了 | 登録が成功し、デバイスをエンドユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| アクティブ | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
+| Active | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
 | 未使用 | デバイスはエンドユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  | 
 
 

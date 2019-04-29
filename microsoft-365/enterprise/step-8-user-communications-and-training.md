@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 10 および Office 365 ProPlus について、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
-ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: cd413ae0f7a85a65c41c2112a64e19b6ed68c987
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289923"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400191"
 ---
 # <a name="step-8-user-communications-and-training"></a>手順 8: ユーザーのコミュニケーションとトレーニング
 

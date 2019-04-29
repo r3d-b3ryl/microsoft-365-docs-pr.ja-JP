@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft 365 Enterprise の Microsoft Teams を計画、ロールアウトするプロセス、および Microsoft Teams の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291661"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400211"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Microsoft Teams を展開する
 
@@ -45,7 +45,7 @@ Microsoft 365 [基礎インフラストラクチャ](deploy-foundation-infrastru
 組織の事業、技術、エンドユーザーの各側面を代表する関係者のリスト。
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>手順 2: Teams のビジネス シナリオを決定し優先順位を付ける
-Teams はさまざまな目的に使用できます。ビジネス グループ、部門、個々の作業チームとプロジェクト チームといった組織の各レベルのビジネス ニーズと目的の対応関係を特定する必要があります。Teams のシナリオの定義に役立つ例については、「[Microsoft 365 Productivity Library](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1)」を参照してください。 
+Teams はさまざまな目的に使用できます。ビジネス グループ、部門、個々の作業チームとプロジェクト チームといった組織の各レベルのビジネス ニーズと目的の対応関係を特定する必要があります。Teams のシナリオの定義に役立つ例については、「[Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/?rtc=1)」を参照してください。 
 
 機敏で極めてコラボレーティブであり、密接に連携し、Exchange Online のメールにとどまらずさまざまな機能 (履歴記録機能を備えたライブ グループ チャット、一般的で見つけやすいファイルとメモの保存場所など) を必要とするチームに対処することを、Teams の目標とします。 
 
