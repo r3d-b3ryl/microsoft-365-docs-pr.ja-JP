@@ -2,22 +2,22 @@
 title: Microsoft 365 Enterprise への移行
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 8fc0e0b117ef55597efeb139e68b6dbdd03de2db
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f165e09b58b5208fa4d9aae24f7d5cdda385c639
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291265"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -31,6 +31,12 @@ ms.locfileid: "26869308"
 
 時経つうちにこれらすべての移行が完了すれば、組織内のチームワークと創造性を引き出す安全で統合された[最新の職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)環境に組織を近づけることができます。これはすべて Microsoft 365 Enterprise によって成し遂げることができます。 
 
+特定の Office 365 ワークロード向けのユーザーとデータの移行に関する情報:
+
+- ユーザーのメールボックスを Exchange Server から Exchange Online へ: [Exchange Online ワークロード](exchangeonline-workload.md)を参照してください。
+- SharePoint データを SharePoint Server から SharePoint Online へ: [SharePoint Online ワークロード](sharepoint-online-onedrive-workload.md)を参照してください。
+- Skype for Business Online から Microsoft Teams へ: [Microsoft Teams ワークロード](teams-workload.md)を参照してください。
+
 ## <a name="migration-for-microsoft-office-client-products"></a>Microsoft Office クライアント製品の移行
 
 大小問わず多くの組織では、Word、Excel、PowerPoint など、Office クライアント製品の古いバージョンの組み合わせを使っている可能性があります。これらの古いバージョンには以下の特徴があります。
@@ -42,7 +48,7 @@ Microsoft 365 Enterprise には、Microsoft 365 Enterprise ライセンスで利
 
 ### <a name="office-2007"></a>Office 2007
 
-Office 2007 リリースの Office のバージョンは、サポート期間が過ぎています。詳細については、「[Office 2007 のサポート終了ロードマップ](https://support.office.com/article/office-2007-end-of-support-roadmap-416c54d8-823c-4def-bb7a-6a9b14ef2745)」を参照してください。
+Office 2007 リリースの Office のバージョンは、サポート期間が過ぎています。詳細については、「[Office 2007 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap)」を参照してください。
 
 Office 2007 を実行しているコンピューターを Office 2010、Office 2013、または Office 2016 にアップグレードするのではなく、以下を行うことを検討してください。
 
@@ -54,7 +60,7 @@ Office 365 ProPlus は更新プログラムを自動的にインストールし�
 
 ### <a name="office-2010"></a>Office 2010
 
-Office 2010 リリースの Office のバージョンは、サポートが 2020 年 10 月 13 日に終了します。詳細については、「[Office 2010 のサポート終了ロードマップ](https://support.office.com/article/office-2010-end-of-support-roadmap-2a58999c-4d83-4e67-9fde-bc96d487105e)」を参照してください。
+Office 2010 リリースの Office のバージョンは、サポートが 2020 年 10 月 13 日に終了します。詳細については、「[Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)」を参照してください。
 
 Office 2010 を実行しているコンピューターを Office 2013 または Office 2016 (両方とも手動で更新する必要があります) にアップグレードするのではなく、以下を行うことを検討してください。 
 
@@ -89,11 +95,11 @@ Microsoft 365 Enterprise には、オンプレミス バージョン Office サ�
 
 Office 2007 リリースのサーバー製品については、サポート期間が過ぎています。詳細については、次の記事を参照してください。
 
-- [Exchange 2007 のサポート終了ロードマップ](https://support.office.com/article/exchange-2007-end-of-support-roadmap-c3024358-326b-404e-9fe6-b618e54d977d)
-- [SharePoint Server 2007 のサポート終了ロードマップ](https://support.office.com/article/sharepoint-server-2007-end-of-support-roadmap-ba124775-d5c0-4d68-b88d-8458ad4c3717)
-- [Project Server 2007 のサポート終了ロードマップ](https://support.office.com/article/project-server-2007-end-of-support-roadmap-d379018f-72b7-4284-b40a-6c23c8ae38fe)
-- [Office Communications Server のサポート終了ロードマップ](https://support.office.com/article/office-communications-server-end-of-support-roadmap-54f3d5ba-bdf9-4b37-a9e8-f1ab452d4f78)
-- [PerformancePoint Server 2007 のサポート終了ロードマップ](https://support.office.com/article/performancepoint-server-2007-end-of-support-roadmap-89d9feee-2285-419c-8c14-0f7f583536e0)
+- [Exchange 2007 のサポート終了ロードマップ](https://docs.microsoft.com/office365/enterprise/exchange-2007-end-of-support)
+- [SharePoint Server 2007 のサポート終了ロードマップ](https://docs.microsoft.com/office365/enterprise/sharepoint-2007-end-of-support)
+- [Project Server 2007 のサポート終了ロードマップ](https://docs.microsoft.com/office365/enterprise/project-server-2007-end-of-support)
+- [Office Communications Server のサポート終了ロードマップ](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+- [PerformancePoint Server 2007 のサポート終了ロードマップ](https://docs.microsoft.com/office365/enterprise/pps-2007-end-of-support)
 
 Office 2007 リリースのサーバー製品を Office 2010、Office 2013、または Office 2016 リリースのサーバー製品にアップグレードするのではなく、以下を行うことを検討してください。
 
@@ -105,8 +111,8 @@ Office 2007 リリースのサーバー製品を Office 2010、Office 2013、ま
 
 Office 2010 リリースのサーバー製品については、次のものに関してサポートの終了日が決まっています。
 
-- [Exchange Server 2010](https://support.office.com/article/exchange-2010-end-of-support-roadmap-e150e7b9-c432-4c8d-a0ae-c11847129a7d)
-- [SharePoint Server 2010](https://support.office.com/article/upgrading-from-sharepoint-2010-985a357f-6db7-401f-bf7a-1bafdf1f312c)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 Office 2010 リリースのこれらのサーバー製品を Office 2013 または Office 2016 リリースのサーバー製品にアップグレードするのではなく、以下を行うことを検討してください。
 

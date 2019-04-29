@@ -4,21 +4,21 @@ description: GDPR に関する Visual Studio ファミリ データ主体要求
 keywords: Visual Studio、Visual Studio Code、Visual Studio for Mac、Visual Studio ドキュメント、プライバシー、GDPR
 localization_priority: Priority
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bba28648cbee6dd32c2005bcb584e97a4c534e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286925"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>GDPR に関する Visual Studio ファミリ データ主体要求
 
@@ -101,7 +101,7 @@ Microsoft は、Visual Studio ファミリ製品を使用して報告された�
 
 フィードバック関連データを表示するには、次の手順に従います。
 
-1. [開発者コミュニティ](https://developercommunity.visualstudio.com)にサインインします。右上で、プロファイルをクリックして、**[プロファイルとユーザー設定]** を選択します。
+1. [開発者コミュニティ](https://developercommunity.visualstudio.com)にサインインします。 右上で、プロファイルをクリックして、**[プロファイルとユーザー設定]** を選択します。
 2. **[プロファイル]**、**[通知]**、**[アクティビティ]**、および **[添付ファイル]** タブのいずれかをクリックして、フィードバック システムに送信されたデータを表示します。
    1. **プロファイル**は、[開発者コミュニティ](https://developercommunity.visualstudio.com) プロファイルを意味し、ユーザー名、電子メール アドレス、自己紹介などが含まれます。
    2. **通知**は、受信した電子メール通知の管理方法です。
@@ -121,7 +121,7 @@ DSR の一部として、フィードバック データをエクスポートす
 
 エクスポートを開始するには、次の手順に従います。
 
-1. [開発者コミュニティ](https://developercommunity.visualstudio.com)にサインインします。右上で、プロファイルをクリックして、**[プロファイルとユーザー設定]** を選択します。
+1. [開発者コミュニティ](https://developercommunity.visualstudio.com)にサインインします。 右上で、プロファイルをクリックして、**[プロファイルとユーザー設定]** を選択します。
 2. **[プライバシー]** タブをクリックしてから、**[アーカイブの作成]** をクリックし、データのエクスポートを要求します。
 3. **[アーカイブ状態]** が、データの準備中であることを示すように更新されます。データが使用可能になるまでの時間の長さは、エクスポートする必要があるデータ量に依存します。
 4. データの準備ができると、電子メールが送信されます。

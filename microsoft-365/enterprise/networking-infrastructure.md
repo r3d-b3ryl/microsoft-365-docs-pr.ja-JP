@@ -9,22 +9,22 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: " Microsoft 365 Enterprise のネットワーク インフラストラクチャを展開する手順。"
-ms.openlocfilehash: d575d8c3156ac1fc1a8a2bca96c875d4587ebf05
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291187"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>フェーズ 1: Microsoft 365 Enterprise のネットワーク インフラストラクチャ
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 Enterprise には、Office 365 と、Enterprise Management + Security (EMS) の一部である Windows Intune が含まれています。この 2 つのクラウドベース サービスはいずれも、クライアント デバイスからインターネットまたは専用回線経由での接続のセキュリティ、パフォーマンス、信頼性に依存しています。これらのサービスをホストし、世界中のお客様が利用できるようにするため、Microsoft はパフォーマンスと統合を重視したネットワーク アーキテクチャを設計しました。 
+Microsoft 365 Enterprise には、エンタープライズ管理とセキュリティ (EMS) の一部として、Office 365 と Microsoft Intune が含まれています。 これらのクラウド ベースのサービスは両方とも、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
 
 このフェーズでは、Microsoft 365 Enterprise のクラウド サービスへの高パフォーマンス接続を作成するための主な検討事項について、順を追って説明します。概要については、「[Office 365 のネットワークの原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)」を参照してください。
 

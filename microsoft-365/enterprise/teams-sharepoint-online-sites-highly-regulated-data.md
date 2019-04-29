@@ -3,26 +3,26 @@ title: Microsoft Teams および SharePoint Online サイトで高度な規制�
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 04/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: セキュリティで保護された SharePoint Online チームサイトまたは Microsoft Teams のチームを作成し、最も重要で機密性の高いデジタル資産を保存します。
-ms.openlocfilehash: fa1a57d898e4822d0c96d6eb807d0a14a815e29a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4342ba5e5d1c83ed0c9d26100afd86afa1e62723
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289808"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Microsoft Teams および SharePoint Online サイトで高度な規制データを扱うには
 
-**概要:** セキュリティで保護された SharePoint Online チームサイトまたは Microsoft Teams のチームを作成し、最も重要で機密性の高いデジタル資産を保存します。
+*このシナリオは、Microsoft 365 Enterprise の E3 および E5 の両バージョンに適用されます*
 
 Microsoft 365 Enterprise には、高度な規制データを作成、保存、保護する一連のクラウドベースのサービスが用意されており、次のようなデータを扱います。
 
@@ -33,11 +33,11 @@ Microsoft 365 Enterprise には、高度な規制データを作成、保存、�
 
 - SharePoint Online チーム サイトまたは Microsoft Teams のチームの **[ファイル]** タブの、デジタル資産 (ドキュメント、スライド セット、スプレッドシートなど) を保存する。
 - サイトまたはチームをロックダウンし、以下を防止する。
-   - グループ メンバーシップ (これには、だれが SharePoint Online チームサイトにどんなアクセス許可のレベルでアクセスできるか、また、だれがそのアクセス許可を管理できるかが含まれる) によるユーザー アカウントの特定のセットを除くすべてのものへのアクセス。
+   - グループ メンバーシップ (これには、だれが SharePoint Online チームサイトにどんなアクセス許可のレベルでアクセスできるか、また、だれがそのアクセス許可を管理できるかが含まれる) によるユーザー アカウントの特定のセットのみへのアクセス。
    - サイトのメンバーから他のユーザーへのアクセス許可の付与。
    - サイトのメンバーでないユーザーからサイトへのアクセス要求。
-- サイトのデジタル資産を分類する既定の方法として、SharePoint Online サイトまたはチームの Office 365 ラベルを構成する。
-- ユーザーがファイルを組織外に送信できないようにする。
+- サイトまたはチーム内のドキュメントに保持ポリシーを定義する既定の方法として、SharePoint Online サイトやチーム用 Office 365 保持ラベルを構成します。
+- ユーザーがファイルを組織の外部に送信できないようにします。
 - サイトやチームの最も機密性の高いデジタル資産を暗号化する。
 - 最も機密性の高いデジタル資産がサイト外で共有されて、その資産を開く場合にも、アクセス許可のあるユーザー アカウントの有効な資格情報が必要となるように、デジタル資産にアクセス許可を追加する。
 
@@ -48,7 +48,7 @@ Microsoft 365 Enterprise には、高度な規制データを作成、保存、�
 | **要件** | **Microsoft 365 Enterprise の機能** |
 | デジタル資産の保存 | SharePoint Online チーム サイトと Office 365 のチーム |
 | サイトのロックダウン | Azure AD グループおよび SharePoint Online チーム サイトのアクセス許可 |
-| サイトのデジタル資産のラベル付け | Office 365 ラベル |
+| サイトのデジタル資産のラベル付け | Office 365 保持ラベル |
 | ユーザーがファイルを組織外に送信できないようにする | Office 365 のデータ損失防止 (DLP) ポリシー |
 | サイトのすべてのデジタル資産の暗号化 | Enterprise Mobility + Security (EMS) での Azure Information Protection サブラベル |
 | サイトのデジタル資産へのアクセス許可の追加 | 手順 3: EMS での Azure Information Protection サブラベル |
@@ -56,7 +56,7 @@ Microsoft 365 Enterprise には、高度な規制データを作成、保存、�
 
 このソリューションでは、以下のものを既に展開している必要があります。
 
-- [基盤インフラストラクチャ](deploy-foundation-infrastructure.md)。 
+- 基盤インフラストラクチャの [ID](identity-infrastructure.md) フェーズ、および[情報保護](infoprotect-infrastructure.md)フェーズの手順 1 と 2。 
 - [SharePoint Online](sharepoint-online-onedrive-workload.md) (SharePoint Online チームサイトで高度な規制データを扱う場合)。
 - [Microsoft Teams](teams-workload.md) (Microsoft Teams のチームで高度な規制データを扱う場合)。
 
@@ -80,7 +80,7 @@ Microsoft 365 Enterprise には、高度な規制データを作成、保存、�
 
 - SharePoint Online のアクセス許可一式と SharePoint グループのセット
 - アクセス グループ一式 (SharePoint グループに追加する Azure AD セキュリティ グループとそのグループのメンバー)
-- サイトに割り当てる Office 365 ラベルと、そのラベル用の一連の DLP ポリシー
+- サイトに割り当てる Office 365 保持ラベルと、そのラベル用の一連の DLP ポリシー
 - サイトに保存されている機密性の高いデジタル資産にユーザーが適用する Azure Information Protection サブラベルの設定
 
 上記の項目を決定したら、それらの設定に基づき、フェーズ 2 でサイトを構成します。 
@@ -98,17 +98,17 @@ Microsoft 365 Enterprise には、高度な規制データを作成、保存、�
 
 一連のアクセス許可レベル、SharePoint グループ、アクセス グループ、グループ メンバーのセットの決定方法の詳細については、「[独立した SharePoint Online チーム サイトの設計](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site)」を参照してください。
 
-### <a name="step-2-office-365-labels-and-dlp-policies"></a>手順 2: Office 365 ラベルと DLP ポリシー
+### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>手順 2: Office 365 保持ラベルと DLP ポリシー
 
-SharePoint Online チーム サイトに適用されると、Office 365 ラベルは、サイトに保存されているすべてのデジタル資産を分類する既定のメソッドを提供します。
+SharePoint Online チーム サイトに適用されると、Office 365 保持ラベルは、サイトに保存されているすべてのデジタル資産を分類する既定のメソッドを提供します。
  
-SharePoint Online サイトで高度な規制データを扱う場合は、どの Office 365 ラベルを使用するかを決定する必要があります。
+SharePoint Online サイトで高度な規制データを扱う場合は、どの Office 365 保持ラベルを使用するかを決定する必要があります。
 
-Office 365 ラベルの設計の考慮事項については、「[Office 365 の分類とラベル](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels)」を参照してください。
+Office 365 ラベルの設計の考慮事項については、「[Office 365 の分類とラベル](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)」を参照してください。
 
 機密性の高い情報を保護し、偶発的または意図的な開示を防止するためには、DLP ポリシーを使用します。詳細については、DLP ポリシーの[概要](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)を参照してください。
 
-SharePoint Online サイトで高度な規制データを扱うには、デジタル資産を外部のユーザーと共有しようとするユーザーをブロックするために、サイトに割り当てられた Office 365 ラベルの DLP ポリシーを構成する必要があります。 
+SharePoint Online サイトで高度な規制データを扱うには、デジタル資産を外部のユーザーと共有しようとするユーザーをブロックするために、サイトに割り当てられた Office 365 保持ラベルの DLP ポリシーを構成する必要があります。 
 
 ### <a name="step-3-your-azure-information-protection-sub-label"></a>手順 3: Azure Information Protection サブラベル
 
@@ -118,15 +118,13 @@ SharePoint Online サイトで高度な規制データを扱うには、デジ�
 
 適用したサブラベルの設定が行われると、サブラベルは資産と共に移動します。サブラベルをダウンロードしてサイト外で共有しても、アクセス許可を持つ認証済みのユーザー アカウントしか、サブラベルを開くことはできません。
 
-Azure Information Protection のラベルの設計の考慮事項については、「[Azure Information Protection](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#azure-information-protection)」を参照してください。
-
 ### <a name="design-results"></a>設計の結果
 
 以下を決定しました。
 
 - SharePoint グループとアクセス許可レベルのセット
 - アクセス グループと、そのグループのメンバーそれぞれのアクセス許可レベルのセット
-- 適切な Office 365 のラベルと、そのラベルに関連付けられている DLP ポリシー
+- 適切な Office 365 保持ラベルと、そのラベルに関連付けられている DLP ポリシー
 - 暗号化とアクセス許可を含む Azure Information Protection サブラベルの設定
 
 ## <a name="phase-2-configure"></a>フェーズ 2: 構成
@@ -140,11 +138,11 @@ Azure Information Protection のラベルの設計の考慮事項については
 - サイトで使用する SharePoint のアクセス許可レベルそれぞれのアクセス グループを作成してデータを設定する。
 - 独立したチーム サイトを作成して構成する。
 
-### <a name="step-2-configure-the-site-for-an-office-365-label-dlp-policy"></a>手順 2: Office 365 ラベルの DLP ポリシー向けにサイトを構成する
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>手順 2: Office 365 保持ラベルの DLP ポリシー向けにサイトを構成する
 
 「[Office 365 ラベルと DLP による SharePoint Online ファイルの保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)」の手順を参照しながら、以下を実行します。
 
-- Office 365 ラベルを特定または作成し、独立した SharePoint Online サイトに適用する。
+- Office 365 保持ラベルを特定または作成し、独立した SharePoint Online サイトに適用する。
 - ユーザーが組織外の SharePoint Online サイトでデジタル資産を共有しようとする場合にユーザーをブロックする DLP ポリシーを作成して構成する。
 
 ### <a name="step-3-create-an-azure-information-protection-sub-label-for-the-site"></a>手順 3: サイト用の Azure Information Protection サブレベルを作成する
@@ -173,8 +171,8 @@ Azure Information Protection のラベルの設計の考慮事項については
 以下を構成しました。
 
 - SharePoint Online の独立したサイト
-- 独立した SharePoint Online サイトに割り当てられている Office 365 ラベル
-- Office 365 ラベルの DLP ポリシー
+- 独立した SharePoint Online サイトに割り当てられている Office 365 保持ラベル
+- Office 365 保持ラベルの DLP ポリシー
 - スコープ指定されたポリシーの Azure Information Protection サブラベル。スコープ指定されたポリシーは、ユーザーがサイトに保存されている最も機密性の高いデジタル資産に適用できるポリシーで、保存先のサイトでは資産の暗号化とアクセス許可の付与が行われる
 - SharePoint Online サイトをベースとした高度な規制データを扱うチーム (必要な場合に作成)
 

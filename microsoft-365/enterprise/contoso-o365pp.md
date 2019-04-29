@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が System Center Configuration Manager を使用して Office 365 ProPlus を展開する方法について説明します。
-ms.openlocfilehash: 5b98f72561d7a431a4ca4a0b0241c6105c87026f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283550"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 社での Office 365 ProPlus の展開
 
@@ -71,7 +71,7 @@ Office の展開を完了するために、Contoso 社では Microsoft のベス
 7. Configuration Manager では、Windows と Office パッケージをネットワーク上の配布ポイントに展開し、Configuration Manager の展開タスク シーケンスを実行して、パイロットの Office 365 ProPlus パッケージをパイロット グループに展開しました。
 8. パイロット グループとの互換性問題を解決した後、Contoso 社ではタスク シーケンスを実行して、さまざまな Office 365 ProPlus パッケージを広範囲のグループに展開しました。
 
-Contoso 社ではクラウドからデバイスを自動的に更新するよう選択しているため、Configuration Manger でプロセスを管理する必要はありませんでした。デバイスは、最初の展開の一部として定義された更新チャネルに基づいて、直接クラウドから自動的に更新されます。 
+Contoso 社ではクラウドからデバイスを自動的に更新するよう選択しているため、Configuration Manger でプロセスを管理する必要はありませんでした。 デバイスは、最初の展開の一部として定義された更新チャネルに基づいて、直接クラウドから自動的に更新されます。 
 
 ## <a name="next-step"></a>次の手順
 

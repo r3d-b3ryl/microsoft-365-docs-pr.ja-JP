@@ -2,20 +2,20 @@
 title: GDP のための Microsoft サポート/プロフェッショナル サービス データ主体要求
 description: Microsoft サポート/プロフェッショナル サービスによるデータ主体要求の処理方法。
 keywords: プロフェッショナル サービス、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: dd86914c0b3931f0cddc762db3f5916a34853eff
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278250"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>GDPR のための Microsoft サポート/プロフェッショナル サービス データ サブジェクト要求
 
@@ -23,7 +23,7 @@ ms.locfileid: "26869280"
 
 Microsoft プロフェッショナル サービスは、技術設計者、エンジニア、コンサルタント、サポート プロフェッショナルで構成されています。この多様性に溢れるグループが、お客様により多くの可能性を提供し、より多くの成果を達成していただくという Microsoft のミッションを果たすために取り組んでいます。191 か国で働く合計 21,000 を超えるコンサルタント、デジタル アドバイザー、Premier サポート、エンジニア、販売担当者が所属する Microsoft プロフェッショナル サービス チームは、46 か国語で対応し、毎月数百万件のサポートを提供しています。お客様やパートナーとのやり取りには、オンプレミス、電話、Web、コミュニティ、自動化されたツールで対応します。この組織は、大規模なパートナー ネットワーク、技術コミュニティ、ツール、診断、そして企業のお客様と Microsoft をつなげるチャネルを利用して、Microsoft ポートフォリオ全体にわたる幅広い専門知識を提供します。
 
-Microsoft プロフェッショナル サービスの詳細はこちら (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) と Microsoft Trust Center (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>) の Microsoft プロフェッショナル サービス セクションで確認できます。Microsoft プロフェッショナル サービスは一般データ保護規則 (GDPR) の下で真摯に義務を果たします。このドキュメントに含まれる情報は GDPR におけるデータ主体要求 (DSR) の義務に対して Microsoft のサポートおよびコンサルティング オファリングがどのようにお客様の対応および支援を行うかに関するお客様の質問に回答するように意図されています。<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+Microsoft プロフェッショナル サービスの詳細を確認するには、Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>) で Microsoft プロフェッショナル サービスのセクションに移動してください。 Microsoft プロフェッショナル サービスでは、一般データ保護規則 (GDPR) の下での義務を重く受け止めています。 このドキュメント内の情報は、Microsoft のサポートおよびコンサルティング サービスが GDPR の下でのデータ主体の要求 (DSR) の義務にどのように対応し、お客様を支援するかに関するお客様の質問に回答するために用意されました。<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
 ### <a name="introduction-to-dsrs"></a>DSR について 
 
@@ -76,20 +76,21 @@ DSR の対応を策定する際に、Microsoft のお客様はサポートおよ
 このガイドでは、お客様が Microsoft プロフェッショナル サービスを使用した場合に遭遇する可能性がある 4 つのシナリオについて説明します。
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>Microsoft と連携するお客様連絡先の DSR
+- **Microsoft と連携するお客様連絡先の DSR**
+
 データ主体の権利行使を目的にしたお客様連絡先または IT 管理者からの要求に Microsoft がどのように対応するかについての説明です。
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Microsoft と連携するエンド ユーザーの DSR
+- **Microsoft と連携するエンド ユーザーの DSR**
 
 権利行使を目的にしたお客様の従業員またはその他のデータ主体からの要求に Microsoft がどのように対応するかについての説明です。
 
-## <a name="dsr-for-customer-provided-data-commercial-support"></a>お客様提供のデータの DSR: 商用サポート
+- **お客様提供のデータの DSR: 商用サポート**
 
 お客様が権利の行使を目的にした従業員その他のデータ主体からの要求を受け取り、そのデータ主体の個人データがサポート作業時に Microsoft サポートによって収集された場合、Microsoft からどのように支援を受けるかについての説明です。
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## <a name="dsr-for-customer-provided-data-consulting-services-including-fasttrack-migration-services"></a>お客様提供のデータの DSR: FastTrack 移行サービスを含むコンサルティング サービス 
+- **お客様提供のデータの DSR: FastTrack 移行サービスを含むコンサルティング サービス** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 

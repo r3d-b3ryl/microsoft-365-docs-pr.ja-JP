@@ -3,22 +3,22 @@ title: 'フェーズ 2: ID'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の ID インフラストラクチャを展開する手順。
-ms.openlocfilehash: 7b5d62f5c09a1ea6d46449b113bff59dbf07ebad
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 932b6fb2cfeb86edcf708bdfdea55cdd8b580838
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288740"
 ---
 # <a name="phase-2-identity"></a>フェーズ 2: ID
 
@@ -32,25 +32,20 @@ Microsoft 365 enterprise では、ID インフラストラクチャを入念に�
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>Microsoft 365 Enterprise の ID インフラストラクチャを計画および展開する 
 
+開始する前に、Microsoft 365 の ID モデルと認証の概要についてこのビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+
 クラウドで新しい ID インフラストラクチャを計画および展開するには、次の手順を使用します。また、これらの手順を使用して既存のオンプレミスまたはハイブリッド ID インフラストラクチャを導入し、Microsoft 365 Enterprise と連携することができます。 
 
 |||
 |:-------|:-----|
 |![](./media/stepnumbers/Step1.png)| [ユーザーおよびグループを計画する](identity-plan-users-groups.md) |
-|![](./media/stepnumbers/Step2.png)| [全体管理者アカウントを保護する](identity-designate-protect-admin-accounts.md) |
-|![](./media/stepnumbers/Step3.png)| [オンデマンド全体管理者をセットアップする](identity-privileged-identity-management.md) |
-|![](./media/stepnumbers/Step4.png)| [パスワードのリセットを簡素化する](identity-password-reset.md) |
-|![](./media/stepnumbers/Step5.png)| [多要素認証をセットアップする](identity-multi-factor-authentication.md) |
-|![](./media/stepnumbers/Step6.png)| [資格情報が侵害されないように保護する](identity-azure-ad-identity-protection.md) |
-|![](./media/stepnumbers/Step7.png)| [ディレクトリを同期する](identity-azure-ad-connect.md) |
-|![](./media/stepnumbers/Step8.png)| [同期の状態を監視する](identity-azure-ad-connect-health.md) |
-|![](./media/stepnumbers/Step9.png)| [パスワードの更新を簡素化する](identity-password-writeback.md) |
-|![](./media/stepnumbers/Step10.png)| [ユーザー サインインを簡素化する](identity-single-sign-on.md) |
-|![](./media/stepnumbers/Step11.png)| [Office 365 サインイン ページをカスタマイズする](identity-customize-office-365-sign-in.md) |
-|![](./media/stepnumbers/Step12.png)| [自動ライセンスをセットアップする](identity-group-based-licensing.md) |
-|![](./media/stepnumbers/Step13.png)| [テナントとサインイン アクティビティを監視する](identity-azure-ad-access-usage-reporting.md) |
-|![](./media/stepnumbers/Step14.png)| [ユーザーが各自のグループを作成および管理できるようにする](identity-self-service-group-management.md) |
-|![](./media/stepnumbers/Step15.png)| [動的グループ メンバーシップをセットアップする](identity-automatic-group-membership.md) |
+|![](./media/stepnumbers/Step2.png)| [特権 ID をセキュリティで保護する](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step3.png)| [ハイブリッド ID の構成](identity-azure-ad-connect.md) |
+|![](./media/stepnumbers/Step4.png)| [セキュリティで保護されたユーザー認証を構成する](identity-multi-factor-authentication.md) |
+|![](./media/stepnumbers/Step5.png)| [ユーザーのアクセスを簡素化する](identity-password-reset.md) |
+|![](./media/stepnumbers/Step6.png)| [管理を容易にするためのグループの使用](identity-self-service-group-management.md) |
 
 上記の手順が完了したら、このフェーズの[終了条件](identity-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。
 

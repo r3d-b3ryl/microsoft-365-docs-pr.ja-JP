@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows と Office の重要なセキュリティとコンプライアンスに関する考慮事項について説明します。
-ms.openlocfilehash: 3b0e9ae38f988b8c148fe67eeeb629a9fce23037
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cefab9cfd1b61f37559d88c5625c512d33595395
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869466"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400241"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>手順 5: セキュリティとコンプライアンスに関する考慮事項
-
-モダン デスクトップ展開の一環として、新しいセキュリティ機能とコンプライアンス機能を対象とするオプションと共に、以前のバージョンの Windows と Office から移行する際の考慮事項と共通の阻害要因について再確認します。
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
@@ -36,10 +34,10 @@ ms.locfileid: "26869466"
 </table>
 
 >[!NOTE]
->セキュリティとコンプライアンスは、推奨される展開プロセスの輪における 5 番目の手順であり、Windows 10 および Office 365 ProPlus のセキュリティとコンプライアンスに関する考慮事項をカバーします。完全なデスクトップ展開プロセスについては、「[モダン デスクトップ展開センター](https://aka.ms/HowToShift)」を参照してください。
+>セキュリティとコンプライアンスは、推奨される展開プロセスの輪における 5 番目の手順であり、Windows 10 および Office 365 ProPlus のセキュリティとコンプライアンスに関する考慮事項をカバーします。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
-Windows 10 単独のセキュリティ関連機能の多くが、新しいプラットフォームへの移行を促しています。また、Office 365 のクラウドサービスと Azure Active Directory を使用したアイデンティティ オプションとの統合により、データ、デバイス、およびユーザーに対する新しい継続的に更新される保護が利用できるようになります。
+Windows 10 および Office 365 ProPlus 展開の一環として、新しいセキュリティ機能とコンプライアンス機能を対象とするオプションと共に、以前のバージョンの Windows と Office から移行する際の考慮事項と共通の阻害要因について再確認します。 Windows 10 単独のセキュリティ関連機能の多くが、新しいプラットフォームへの移行を促しています。 また、Office 365 のクラウドサービスと Azure Active Directory を使用したアイデンティティ オプションとの統合により、データ、デバイス、およびユーザーに対する新しい継続的に更新される保護が利用できるようになります。
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>セキュリティに関連する潜在的な展開の阻害要因の解消
 

@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online for Business を Microsoft 365 Enterprise 向けに展開する
+title: SharePoint Online と OneDrive for Business を Microsoft 365 Enterprise 向けに展開する
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/19/2018
@@ -8,19 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft 365 Enterprise の SharePoint Online を計画、ロールアウトするプロセス、および SharePoint Online の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: 7a9fc1733c64b3f639d2de0b5b64e20df60e04a9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290901"
 ---
-# <a name="deploy-sharepoint-online-for-microsoft-365-enterprise"></a>SharePoint Online を Microsoft 365 Enterprise 向けに展開する
+# <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>SharePoint Online と OneDrive for Business を Microsoft 365 Enterprise 向けに展開する
 
+*このワークロードは、Microsoft 365 Enterprise の E3 および E5 の両バージョンに該当します*
 
 SharePoint Online と Microsoft Teams は、ファイルの保存と共有、コンテンツ管理、コラボレーションの方法を提供するもので、Microsoft 365 Enterprise のチームワーク用ビルドの価値を引き出す重要な要素です。 
 
@@ -28,11 +29,9 @@ SharePoint Online には、アクセスの制御、アクセス許可、移動�
 
 SharePoint Online を初めて使用する方は、「[SharePoint Online](https://products.office.com/sharepoint/sharepoint-online-collaboration-software)」と「[SharePoint を使い始める](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics)」を参照してください。
 
-次に示す各フェーズと手順では、組織における SharePoint Online の役割を想定し、段階的な一連のロールアウトにより組織の研修を行い、それらの使用とエンドユーザーに対する価値を促進するプロセスを説明します。これらの展開手順は、[基礎インフラストラクチャ](deploy-foundation-infrastructure.md)の完了後に実行してください。 
+次に示す各フェーズと手順では、組織における SharePoint Online の役割を想定し、段階的な一連のロールアウトにより組織の研修を行い、それらの使用とエンドユーザーに対する価値を促進するプロセスを説明します。 まず始める前に、SharePoint Online サイトに必要なセキュリティ機能が備わるように、適切な[基礎インフラストラクチャチャ](deploy-foundation-infrastructure.md)のフェーズが設定されていることを確認します。 
 
->[!Note]
->OneDrive for Business を Microsoft 365 Enterprise 向けに展開する方法については、[エンタープライズ向けの OneDrive ガイド](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise)を参照してください。
->
+OneDrive for Business を Microsoft 365 Enterprise 向けに展開する方法については、[エンタープライズ向けの OneDrive ガイド](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise)を参照してください。
 
 ## <a name="phase-1-envision"></a>フェーズ 1: 想定
 このフェーズでは、SharePoint Online の展開にあたって関係者を招集し、組織でビジネス ニーズに対応するため、どのようにそれらを利用するかを決定します。

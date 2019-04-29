@@ -4,18 +4,19 @@ description: 国際標準化機構 (ISO) の要件を満たすための取り組
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 1e0232759bd33fb2bcaf66f7afd5334eed43fbbf
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 3f81ad10d4549f9f28b5df4a0e090fb38a54bf6f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283459"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -47,7 +48,7 @@ ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装�
 |**領域**|**タスク**|
 |ISO 27001 のガバナンスおよびコンプライアンス要件を理解します。|• 組織の ISO 27001:2013 評価を実施するために、[Microsoft コンプライアンス マネージャー](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)を [Microsoft Service Trust Portal](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 内で使用してコンプライアンス リスクを評価および管理します。14 の ISO 27001 グループごとに標準業務手順書 (SOP) を作成してください。
 |機密データと資産を特定、分類、保護できるようにするための、情報分類、保持ポリシー、ツールの組織への展開を計画します。|• 分類ポリシーと [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) アプリケーションを展開することにより、ユーザーが情報保護ポリシーと標準業務手順書 (SOP) に従って機密データを簡単に識別および分類できるようにします。組織の情報分類スキーマ (ポリシー) と共に、教育および展開計画を作成します。<br>• [Office 365 ラベル](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)を組織に展開することで、ユーザーがレコードの保持および保護ポリシーをコンテンツに簡単に適用できるようにします。情報記録保持の法的要件に従って、組織のラベルを計画し、教育および展開計画も計画します。
-|標準業務手順書 (SOP) の一環として監査および責任ポリシーを作成することにより、情報セキュリティに関連する記録が紛失、削除、改ざん、または不正アクセスされないようにします。|• [Office 365 の監査ログ記録](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)と[メールボックス監査](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)を (すべての Exchange メールボックスに対して) 有効にして、潜在的な悪意のあるアクティビティがないか Office 365 を監視し、データ侵害のフォレンジック分析を可能にします。<br>• 通常のスケジュールで Office 365 テナントの監査ログを検索し、テナントの構成設定に加えられた変更を確認します。<br>• ユーザー アカウントの権限の昇格が発生した場合など、機密性の高いアクティビティに対して、Office 365 セキュリティ/コンプライアンス センターの [Office 365 アラート ポリシー](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264)を有効にします。<br>• Office 365 監査ログ データを長期間保存するには、[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用して、セキュリティ情報およびイベント管理 (SIEM) ツールと統合します。
+|標準業務手順書 (SOP) の一環として監査および責任ポリシーを作成することにより、情報セキュリティに関連する記録が紛失、削除、改ざん、または不正アクセスされないようにします。|• [Office 365 の監査ログ記録](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)と[メールボックス監査](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)を (すべての Exchange メールボックスに対して) 有効にして、潜在的な悪意のあるアクティビティがないか Office 365 を監視し、データ侵害のフォレンジック分析を可能にします。<br>• 通常のスケジュールで Office 365 テナントの監査ログを検索し、テナントの構成設定に加えられた変更を確認します。<br>• ユーザー アカウントの権限の昇格が発生した場合など、機密性の高いアクティビティに対して、Microsoft 365 セキュリティ/コンプライアンス センターの [Office 365 アラート ポリシー](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264)を有効にします。<br>• Office 365 監査ログ データを長期間保存するには、[Office 365 マネージメント アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用して、セキュリティ情報およびイベント管理 (SIEM) ツールと統合します。
 |組織のための管理者ロールおよびセキュリティ ロールと共に、業務の分離に関連する適切な方針を定義します。|• 管理業務の分離を可能にするために、[Office 365 の管理者ロール](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a)を活用します。メモ: Office 365 の多くの管理者ロールには、Exchange Online、SharePoint Online、Skype for Business Online で対応するロールがあります。<br>• 一人の管理者が必要以上に大きいアクセス権を持たないようにするため、アクセス許可を分割します。|
 
 

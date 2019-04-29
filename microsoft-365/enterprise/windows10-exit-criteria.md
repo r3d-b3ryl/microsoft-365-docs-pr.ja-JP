@@ -3,28 +3,28 @@ title: 'フェーズ 3: Windows 10 Enterprise のインフラストラクチャ�
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
-ms.date: 06/01/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の Windows 10 Enterprise の条件を満たしていることを確認します。
-ms.openlocfilehash: 7ac79fec93e4b4aae0b075891917e2f88432b80f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 1e8a2e748f42431465c027acbc468f4c5891d320
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289519"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>フェーズ 3: Windows 10 Enterprise のインフラストラクチャの終了条件
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Windows 10 Enterprise のインフラストラクチャが次の条件を満たしている場合は、フェーズ 4 に進むことができます。
+Windows 10 Enterprise インフラストラクチャが次の必須基準を満たすとともに、オプションの基準も考慮済みであることをご確認ください。
 
 <a name="crit-windows10-step1"></a>
 ## <a name="required-your-microsoft-365-domains-are-added-and-verified"></a>必須: Microsoft 365 のドメインが追加および検証されている
@@ -37,7 +37,7 @@ Office 365 サブスクリプションと Intune サブスクリプション用�
 
 ## <a name="optional-your-users-are-added-and-licensed"></a>省略可能: ユーザーが追加およびライセンス付与されている
 
-ユーザーに対応するアカウントは、Office 365 サブスクリプションと Intune サブスクリプション用の Azure AD テナントに直接追加されるか、またはオンプレミスの Windows Server AD のディレクトリ同期から直接追加されます。
+ユーザーに対応するアカウントは、Office 365 サブスクリプションと Intune サブスクリプション用の Azure AD テナントに直接追加されるか、またはオンプレミスの Active Directory Domain Services (AD DS) のディレクトリ同期から直接追加されます。
 
 ユーザーが追加されると、グローバル管理者またはユーザー管理者として直接、あるいはグループ メンバーシップを通して自動的に、Microsoft 365 Enterprise ライセンスをユーザーに割り当てることができます。
 
@@ -55,8 +55,8 @@ Office 365 サブスクリプションと Intune サブスクリプション用�
 Windows 7 または Windows 8.1 を実行しているデバイス上で一括アップグレードを行うために Configuration Manager のタスク シーケンスを開始するには、以下の条件を満たしている必要があります。
 
 - 適切な Windows 診断データ レベルを設定する
-- Windows のアップグレードの準備状況を確認する
-- Windows 10 OS イメージを使用したデバイス コレクションとオペレーティング システムの展開を含む Configuration Manager のタスク シーケンスを作成する
+- Windows のアップグレードの準備状況を確認している
+- Windows 10 OS イメージを使用したデバイス コレクションとオペレーティング システムの展開を含む Configuration Manager のタスク シーケンスを作成している
 
 条件が満たされると、Windows のアップグレードの準備ができているデバイス上で一括インストールを実行できます。Microsoft 365 Enterprise のメリットを最大限に得るには、Windows 7 と Windows 8.1 を実行しているデバイスをできるだけ多くアップグレードします。 
 
@@ -69,13 +69,13 @@ Windows 10 Enterprise を実行している各デバイスは、Microsoft 365 En
 
 Windows Autopilot を使用して、新しいデバイス上で Windows 10 Enterprise を展開してカスタマイズするには、以下の条件を満たしている必要があります。
 
-- 適切な Windows 診断データ レベルを設定する
-- Windows Autopilot の前提条件 (以下の条件を含む) を完了している。
-- デバイスの登録と OOBE のカスタマイズ
-- OOBE 向けの会社のブランド化
-- Microsoft Intune での MDM の自動登録
-- Windows Autopilot で使用するクラウド サービスへのネットワーク接続
-- デバイスに Windows 10 バージョン (1703 以降) を事前にインストールする必要がある
+- 適切な Windows 診断データ レベルを構成している
+- Windows Autopilot の前提条件 (以下の条件を含む) を構成している
+   - デバイスの登録と OOBE のカスタマイズ
+   - OOBE 向けの会社のブランド化
+   - Microsoft Intune での MDM の自動登録
+   - Windows Autopilot で使用するクラウド サービスへのネットワーク接続
+- Windows 10 バージョン 1703 以降を事前にインストールしたデバイス
 - 組織の Windows Autopilot Deployment を選択している
 
 Windows Autopilot の構成が完了したら、それを使用して Windows 10 Enterprise を構成およびカスタマイズし、以下の OOBE (Out-of-Box Experience) を実現できます。
@@ -119,9 +119,10 @@ Windows 10 Enterprise を実行しているデバイスを侵入から保護す�
 
 必要に応じて、[手順 5](windows10-enable-security-features.md#windows10-sec-atp) がこの必須条件を満たす上で役立ちます。
 
+## <a name="results-and-next-steps"></a>結果と次のステップ
 
-## <a name="next-phase"></a>次のフェーズ
+Windows 10 Enterprise インフラストラクチャは、新しいデバイスでのインストールと以前のバージョンの Windows を実行しているデバイスでの一括アップグレードを開始する準備ができており、Windows 10 Enterprise の重要なセキュリティ機能を使用しています。
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Microsoft 365 Enterprise のエンドツーエンド展開プロセスの次のフェーズは、[Office 365 ProPlus](office365proplus-infrastructure.md) です。 |
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は [Office 365 ProPlus](office365proplus-infrastructure.md) です。 |

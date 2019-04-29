@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザーのファイルと設定を移行する方法について説明します。
-ms.openlocfilehash: 51811cf972328cc26687b45fb65e2bdd6d58af1f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 99cc252181627d5f0cf07fdf46f63b3ba526e20a
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869453"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400121"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>手順 4: ユーザーのファイルと設定の移行
 
-ユーザーのファイルと設定を新しい PC や更新した PC に移動することは、重要なプロセスであり、失敗するという選択肢はありません。それぞれの PC を手動で移行することも、複数のプロセスを自動化する方法から 1 つを選択することもできます。どの移行方法を選択したとしても、ユーザーのファイルおよび設定の転送と、Windows 10 の [スタート] およびタスクバーのレイアウトの移行といった 3 つの項目を取り扱うことになります。
+ユーザーのファイルと設定を新しい PC や更新した PC に移動することは、重要なプロセスであり、失敗するという選択肢はありません。 それぞれの PC を手動で移行することも、プロセスを自動化する複数の方法から 1 つを選択することもできます。 どの移行方法を選択したとしても 3 つの大きな考慮事項があります。つまり、ユーザーのファイルの転送、それらの設定、および Windows 10 の [スタート] およびタスクバーのレイアウトの管理です。
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
@@ -36,7 +36,7 @@ ms.locfileid: "26869453"
 </table>
 
 >[!NOTE]
->これまでに使用していた移行プロセスは引き続き使用できますが、Office 365 ProPlus への移行には OneDrive の「Known Folder Move」(下記参照) の使用をお勧めします。完全なデスクトップ展開プロセスについては、「[モダン デスクトップ展開センター](https://aka.ms/HowToShift)」を参照してください。
+>これまでに使用していた移行プロセスは引き続き使用できますが、Office 365 ProPlus への移行には OneDrive の「Known Folder Move」(下記参照) の使用をお勧めします。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
 大規模な展開で、最も扱いにくい、ほとんどが手動によることが多いタスクの 1 は、ユーザーのファイルと設定の転送です。この記事では、新しい PC、更新した PC および再イメージ化した PC にユーザーを移行する際に選択可能なオプションについて説明します。

@@ -3,22 +3,22 @@ title: '手順 1: ユーザーおよびグループを計画する'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 02/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織に最適なユーザーとグループのセットを計画します。
-ms.openlocfilehash: 8062cc2b681f0ae45a8114a6d827f5d1ece2fe3e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283798"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>手順 1: ユーザーおよびグループを計画する
 
@@ -39,10 +39,10 @@ ID インフラストラクチャを作成するには、プライマリ ID プ�
 
 組織が Microsoft 365 Enterprise を導入する場合、プライマリ ID プロバイダーは次のいずれかです。
 
-- **Windows Server Active Directory (AD)**: Windows Server を実行しているコンピューターでホストされているイントラネット ID プロバイダーです。これは通常、既存のオンプレミス ID プロバイダーを使用する組織で使用されます。
-- **Azure Active Directory (Azure AD)**: 環境の管理および保護のためのさまざまな機能を提供するクラウド ベースの Identity as a Service (IDaaS) です。これは通常、既存のオンプレミス インフラストラクチャを持たない組織で使用されます。
+- **Active Directory Domain Services (AD DS)**: Windows Server を実行しているコンピューターでホストされているイントラネット ID プロバイダーです。 これは通常、既存のオンプレミス ID プロバイダーを持つ組織で使用されます。
+- **Azure Active Directory (Azure AD)**: 環境の管理および保護のためのさまざまな機能を提供するクラウドベースの Identity as a Service (IDaaS) です。 これは通常、既存のオンプレミス インフラストラクチャを持たない組織で使用されます。
 
-組織に既存のオンプレミス ID プロバイダーがある場合、Windows Server AD のユーザー アカウントとグループを Azure AD と同期し、Microsoft 365 Enterprise のクラウドベース サービスによりシームレスにアクセスできるようにします。また、Azure AD を使用して、Microsoft クラウドにのみ存在するグループを作成および管理することもできます。
+組織に既存のオンプレミス ID プロバイダーがある場合、Active Directory Domain Services (AD DS) のユーザー アカウントとグループを Azure AD と同期し、Microsoft 365 Enterprise のクラウドベース サービスによりシームレスにアクセスできるようにします。 また、Azure AD を使用して、Microsoft クラウドにのみ存在するグループを作成および管理することもできます。
 
 Azure AD でユーザーとグループを作成した後には、次の操作を実行できます。
 
@@ -63,11 +63,11 @@ Azure AD でユーザーとグループを作成した後には、次の操作�
 
 また、一部のクラウド サービスを、ユーザー アカウントを持たない組織外のユーザーと共有できます。この場合、このような外部ユーザーのグループも指定する必要があります。
 
-## <a name="plan-for-windows-server-ad-and-azure-ad-groups"></a>Windows Server AD と Azure AD のグループを計画する
+## <a name="plan-for-ad-ds-and-azure-ad-groups"></a>AD DS と Azure AD グループの計画
 
 Azure AD では、クラウド環境の管理を簡素化するさまざまな目的のためにグループを使用できます。たとえば、Azure AD グループでは次の操作を実行できます。
 
-- グループベースのライセンスを使用して、ユーザー アカウントが Azure AD に追加された時点または Windows Server AD から同期された時点で、Office 365 と Enterprise Mobility + Security (EMS) のライセンスをアカウントに自動的に割り当てる。 
+- グループベースのライセンスを使用して、ユーザー アカウントが Azure AD に追加された時点または AD DS から同期された時点で、Office 365 と Enterprise Mobility + Security (EMS) のライセンスをアカウントに自動的に割り当てる。 
 - ユーザー アカウントの属性 (部門など) に基づいて、ユーザー アカウントを特定のグループに動的に追加する。  
 - Software as a Service (SaaS) アプリケーションのユーザーを自動的にプロビジョニングし、多要素認証やその他の条件付きアクセス ルールでこれらのアプリケーションへのアクセスを保護する。
 - SharePoint Online チーム サイトのアクセス許可とアクセス レベルをプロビジョニングする。Azure AD グループを Azure Information Protection スコープ ポリシーと組み合わせて使用し、暗号化とアクセス許可でファイルを保護できる。 
@@ -81,10 +81,11 @@ Azure AD では、クラウド環境の管理を簡素化するさまざまな�
 
 中間チェックポイントとして、この手順の[終了条件](identity-exit-criteria.md#crit-identity-user-groups)を確認できます。
 
+Azure AD のユーザーとグループが作成されると、ライセンスを割り当てて、Exchange Online の使用を開始できます。 Exchange Online をユーザーにロールアウトするには、[Microsoft 365 Enterprise 用 Exchange Online を展開する](exchangeonline-workload.md)を参照してください。
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [全体管理者アカウントを保護する](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step2.png)| [特権 ID をセキュリティで保護する](identity-designate-protect-admin-accounts.md) |
 

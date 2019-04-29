@@ -3,22 +3,22 @@ title: Office 365 ProPlus の展開の終了条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2018
+ms.date: 03/06/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が、Office 365 ProPlus インフラストラクチャの Microsoft 365 Enterprise の終了条件を満たしていることを確認します。
-ms.openlocfilehash: c38539d85e1c826667b7a8a177a15ab75350aa5f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c9a2afeae8d28170f4e8a15531a08e6b94cb48c2
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868986"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399991"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Office 365 ProPlus の展開の終了条件
 
@@ -26,7 +26,7 @@ ms.locfileid: "26868986"
 
 *これは Microsoft 365 Enterprise および Microsoft 365 Education のバージョン E3 および E5 に適用されます。*
 
-展開プロセスの次のフェーズに移行する前に、構成が Office 365 ProPlus インフラストラクチャの次の必須条件を満たしていることを確認します。
+構成が、Office 365 ProPlus インフラストラクチャの次の必要条件を満たしていることを確認します。
 
 - インフラストラクチャと環境の評価が完了している。これには次のものが含まれる。
 
@@ -52,9 +52,12 @@ ms.locfileid: "26868986"
     - すべてのクライアント デバイスが適切な更新チャネルにあり、更新プログラムを受信している
     - すべてのクライアント デバイスに適切な言語がインストールされているか、適切な言語が使用可能である
 
-## <a name="next-phase"></a>次のフェーズ 
 
+
+## <a name="results-and-next-steps"></a>結果と次のステップ
+
+クライアント デバイスに最新バージョンの Office 365 ProPlus がインストールされ、継続的な更新プログラムを受け取るようになりました。
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Microsoft 365 Enterprise のエンドツーエンド展開プロセスの次のフェーズは、[モバイル デバイス管理](mobility-infrastructure.md)です。 |
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は[モバイル デバイス管理](mobility-infrastructure.md)です。 |
