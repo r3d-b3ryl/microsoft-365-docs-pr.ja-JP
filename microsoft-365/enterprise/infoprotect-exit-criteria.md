@@ -3,28 +3,28 @@ title: 情報保護インフラストラクチャの終了条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 情報保護ベースのサービスとインフラストラクチャの条件を調べ、構成が Microsoft 365 Enterprise の要件を満たしていることを確認します。
-ms.openlocfilehash: 10d7b3b888999b65e5faff81e9a2d32e595294cf
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9c74a3994a1a404583326f65f1cec579fccbe659
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869527"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400041"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>情報保護インフラストラクチャの終了条件
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-基礎インフラストラクチャを完了する前に、情報保護インフラストラクチャが次の条件を満たしていることを確認します。 
+情報保護インフラストラクチャが次の必須基準を満たすとともに、オプションの基準も考慮されていることをご確認ください。
 
 <a name="crit-infoprotect-step1"></a>
 ## <a name="required-security-and-information-protection-levels-for-your-organization-are-defined"></a>必須: 組織のセキュリティおよび情報の保護レベルが定義されている
@@ -39,38 +39,65 @@ ms.locfileid: "26869527"
 
 必要に応じて、[手順 1](infoprotect-define-sec-infoprotect-levels.md) がこの必須条件を満たす上で役立ちます。 
 
-<a name="crit-infoprotect-step4"></a>
-## <a name="required-increased-security-for-office-365-is-configured"></a>必須: Office 365 のセキュリティ強化が構成されている
+<a name="crit-infoprotect-step3"></a>
+## <a name="required-increased-security-for-microsoft-365-is-configured"></a>必須: Microsoft 365 のセキュリティ強化が構成済み
 
-「[セキュリティ強化のために Office 365 テナントを構成する](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)」の内容に基づいて、セキュリティの強化のために次の設定を構成している。
+次の [Office 365 セキュリティの強化](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)の設定が構成されています:
 
-- Office 365 セキュリティ/コンプライアンス センターの脅威管理ポリシー
+- Microsoft 365 セキュリティセンターの脅威管理ポリシー
 - その他の Exchange Online テナント レベルの設定
-- SharePoint 管理センターでのテナント レベルでの共有ポリシー
-- Azure Active Directory の設定
+- SharePoint Online 管理センターでのテナント レベルでの共有ポリシー
+- Azure Active Directory (Azure AD) の設定
 
-[Office 365 Advanced Threat Protection (ATP)](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607#turniton) も有効にしている。
+[SharePoint、OneDrive、Microsoft Teams 用の Office 365 Advanced Threat Protection (ATP) を有効にする](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)ことも行いました。
 
 必要に応じて、[手順 3](infoprotect-configure-increased-security-office-365.md) がこの必須条件を満たす上で役立ちます。 
 
-<a name="crit-infoprotect-step3"></a>
+<a name="crit-infoprotect-step2"></a>
 ## <a name="optional-classification-is-configured-across-your-environment"></a>省略可能: 環境全体で分類方法が構成されている
 
-法務/コンプライアンス チームと協力して、次のような、組織のデータの適切な分類方法とラベリング方法を策定している。
+法務/コンプライアンス チームと協力して、組織のデータのガバナンスとセキュリティ ポリシーの適切な分類方法とラベリング方法を策定しています。 
+
+これらのポリシーは、次の構成および展開に対応しています: 
 
 - 機密性の高いデータ タイプ
-- Office 365 のラベル
+- 保持ラベル
+- 機密ラベル
 - Azure Information Protection のラベル
 
 必要に応じて、[手順 2](infoprotect-configure-classification.md) がこの必須条件を満たすのに役立ちます。 
 
+
+<a name="crit-infoprotect-step4"></a>
+## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a>オプション: 使用環境での Windows Information Protection の展開
+
+登録済みの Windows 10 Enterprise デバイスでは、Intune ポリシーが展開および適用され、次のことを定義しています:
+
+- 保護するアプリについて。
+- 保護のレベル。
+- 保護の拡張。
+
+必要に応じて、[手順 4](infoprotect-deploy-windows-information-protection.md) がこの必須条件を満たす上で役立ちます。 
+
 <a name="crit-infoprotect-step5"></a>
+## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>オプション: Office 365 Data Loss Prevention (DLP) の展開
+
+ポリシーを分析、テストした後、お客様とその他の個人データを保護して、業界と地域の規制に準拠することが要求される企業の DLP ポリシー (ロケーションおよびルール条件とアクションを含む) のセットを展開します。
+
+データ コンプライアンスとセキュリティ スタッフは、Office 365 Security & Compliance ダッシュボードを使って DLP インシデントをモニターします。
+
+必要に応じて、[手順 5](infoprotect-data-loss-prevention.md) がこの必須条件を満たす上で役立ちます。 
+
+
+<a name="crit-infoprotect-step6"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>省略可能: Office 365 での特権アクセス管理の構成。
 
-お客様は、トピック「[Office 365 での特権アクセス管理の構成](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)」での説明を使用して、Office 365 をお使いの組織で特権アクセスの有効化と特権アクセスポリシーの作成を行いました。こうしたポリシーを構成し、機密データへのアクセスまたは重要な構成設定へのアクセスのためにジャスト イン タイムアクセスを有効化しました。
+[Office 365 での特権アクセス管理を設定する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)トピックにある情報を使用して、特権アクセスを有効にし、組織内に 1 つまたは複数の特権アクセス ポリシーを作成しました。 これらのポリシーを構成して、機密データへのアクセスや重要な構成設定へのアクセスのために just-in-time アクセスが有効にされました。
 
-必要に応じて、[手順 4](infoprotect-configure-privileged-access-management.md) がこの必須条件を満たす上で役立ちます。 
+必要に応じて、[手順 6](infoprotect-configure-privileged-access-management.md) がこの必須条件を満たすのに役立ちます。 
 
-## <a name="next-step"></a>次の手順
+## <a name="results-and-next-steps"></a>結果と次のステップ
 
-これで、Microsoft Teams や Exchange Online など、Microsoft 365 Enterprise の基礎インフラストラクチャで稼働する[ワークロードとシナリオ](deploy-workloads.md)を展開する準備ができました。
+Microsoft 365 Enterprise の情報保護インフラストラクチャでは、定義されたセキュリティ レベル、Office 365 のセキュリティ強化、機密データの種類とラベルを使用した分類、Windows Information Protection、Data Loss Prevention、および特権アクセスの管理が使用されます。
+
+Microsoft 365 Enterprise のエンド ツー エンドの展開に従っている場合、[ワークロードとシナリオ](deploy-workloads.md)で基盤インフラストラクチャのすべての機能と構成を活用することができます。
