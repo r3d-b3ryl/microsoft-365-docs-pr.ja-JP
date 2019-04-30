@@ -3,24 +3,24 @@ title: Microsoft 365 Enterprise のテスト ラボ ガイド
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise のデモ、概念実証、開発/テスト環境を設定します。
-ms.openlocfilehash: df723647748532936e40bbdb4e34ff698b9fa650
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869499"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353142"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -41,7 +41,7 @@ TLG はモジュラーとして機能するように設計されています。T
 
 - オンプレミスのコンポーネントを含まないクラウド専用の環境で、Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合は、[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)を使用します。
 
-- Windows Server Active Directory (AD) ドメインなどのオンプレミスのコンポーネントを使用するハイブリッド クラウド環境で、Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合は、[シミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)を使用します。
+- Active Directory Domain Services (AD DS) ドメインなどのオンプレミスのコンポーネントを使用するハイブリッド クラウド環境で、Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合は、[シミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)を使用します。
     
 ## <a name="identity"></a>ID
 
@@ -49,15 +49,15 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [パスワード ハッシュ同期](password-hash-sync-m365-ent-test-environment.md)
   
-   Windows Server AD ドメイン コントローラーからのパスワード ハッシュによるディレクトリ同期を有効にしてテストします。
+   Active Directory Domain Services (AD DS) ドメイン コントローラーからのパスワード ハッシュによるディレクトリ同期を有効にしてテストします。
 
 - [パススルー認証](pass-through-auth-m365-ent-test-environment.md)
   
-   Windows Server AD ドメイン コントローラーへのパススルー認証を有効にしてテストします。
+   AD DS ドメイン コントローラーへのパススルー認証を有効にしてテストします。
 
 - [Azure AD シームレス シングル サインオン](single-sign-on-m365-ent-test-environment.md)
   
-   Azure AD シームレス シングル サインオン (SSO) をWindows Server AD ドメイン コントローラーで有効にし、テストします。
+   Azure AD シームレス シングル サインオン (SSO) を AD DS ドメイン コントローラーで有効にし、テストします。
 
 - [多要素認証](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -65,7 +65,11 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [全体管理者アカウントを保護する](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Office 365 Cloud App Security と条件付きアクセス ポリシーを使用して、全体管理者アカウントをロックします。
+   条件付きアクセス ポリシーを使用してグローバル管理者アカウントをロックする。
+
+- [パスワード ライトバック](password-writeback-m365-ent-test-environment.md)
+
+   パスワードの書き戻しは、Azure AD から AD DS ユーザー アカウントのパスワードを変更する場合に使用します。
 
 - [パスワードのリセット](password-reset-m365-ent-test-environment.md)
 
@@ -79,13 +83,18 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
    現在のユーザー アカウントの脆弱性を確認します。
 
+- [ID と デバイス アクセス](identity-device-access-m365-test-environment.md)
+
+   お勧めする ID、デバイス アクセスの構成、および条件付きアクセス ポリシーをテストするための環境を作成します。
+
+
 ## <a name="mobile-device-management"></a>モバイル デバイス管理
 
 モバイル デバイス管理に関連する機能や能力のデモンストレーションは、以下を参照してください。
 
-- [MAM ポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [デバイス コンプライアンス ポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   iOS および Android デバイスのユーザー グループとモバイル アプリケーション管理 (MAM) のポリシーを作成します。
+   Windows 10 デバイスのユーザー グループおよびデバイス コンプライアンス ポリシーを作成します。
     
 - [iOS および Android デバイスの登録](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
@@ -104,12 +113,10 @@ ID に関連する機能や能力のデモンストレーションは、以下�
     
    Office 365 ラベルを構成し、SharePoint Online チーム サイトのドキュメントに適用します。
     
-- [Microsoft 365 Enterprise テスト環境の特権アクセスの管理](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+- [特権アクセスの管理](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    Office 365 組織の昇格されたタスクと特権タスクへの Just-In-Time アクセスを可能にするため、特権アクセス管理を構成します。
 
 ## <a name="see-also"></a>関連項目
 
-[クラウド導入のテスト ラボ ガイドを使用して Microsoft Cloud を体験する](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
-    
-[One Microsoft Cloud テスト ラボ ガイド一式](http://aka.ms/catlgstack)
+[クラウド導入 TLG を使用した Office 365 のテスト](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

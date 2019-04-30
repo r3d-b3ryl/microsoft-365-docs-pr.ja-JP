@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: 2cbabb04c79816684f4c566b92003bb64471d22b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 1aade29c8a4f9348b749025818e433981ec19091
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869391"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353106"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
 
@@ -40,7 +40,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 1. クラウドの管理者アカウントを制限する
 
-   Contoso 社では、既存の Windows Server AD 管理者アカウントの広範なレビューを行い、一連のクラウド管理者アカウントおよびグループを設定しました。
+   Contoso 社では、既存の Active Directory Domain Services (AD DS) 管理者アカウントの広範なレビューを行い、一連のクラウド管理者アカウントおよびグループを設定しました。
 
 2. データ分析を行い 3 つのレベルに分類する
 
@@ -56,13 +56,13 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - MFA および PIM を設定した全体管理者専用アカウント
 
-  Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、非常に強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成し、それらを多要素認証 (MFA) と Azure AD Privileged Identity Management (PIM) で保護しました。 
+  Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、非常に強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成し、それらを多要素認証 (MFA) と Azure AD Privileged Identity Management (PIM) で保護しました。  PIM は、Microsoft 365 Enterprise E5 でのみ利用可能です。
 
   全体管理者アカウントでサインインするのは特定の管理タスクを実行するときのみで、パスワードは指定されたスタッフにのみ知らされています。パスワードは Azure AD PIM で設定された時間内にのみ使用できます。 
 
   Contoso 社のセキュリティ管理者は、IT 担当者の職務と責任に従って、各アカウントに一部の管理者ロールを割り当てました。
 
-  詳細については、「[Office 365 の管理者の役割](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)」を参照してください。
+  詳細については、「[Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。
 
 - すべてのユーザー アカウントの MFA
 
@@ -81,7 +81,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Windows Defender Credential Guard
 
-  管理者特権を使用してオペレーティング システムで実行されている標的型の攻撃やマルウェアをブロックするために、Contoso 社では Windows Server AD グループ ポリシーを通じて [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) を有効にしています。
+  管理者特権を使用してオペレーティング システムで実行されている標的型の攻撃やマルウェアをブロックするために、Contoso 社では AD DS グループ ポリシーを通じて [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) を有効にしています。
 
 ## <a name="threat-protection"></a>脅威保護
 
@@ -95,9 +95,9 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
   Contoso 社では、メールボックス監査ログを有効にして、ユーザーのメールボックスにログインしてメッセージを送信したのはだれかや、メールボックス所有者、委任ユーザー、管理者が実行した他の操作を判別しています。
 
-- Office 365 脅威インテリジェンスを使用した攻撃の監視と防止
+- Office 365 脅威の調査および対応を使用した攻撃の監視と防止
 
-  Contoso 社では、[Office 365 脅威インテリジェンス](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)を使用して攻撃の特定と対処を容易にし、将来の攻撃を防ぐことで、Office 365 ユーザーを保護します。
+  Contoso 社では、[Office 365 脅威の調査および対応](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)を使用して攻撃の特定と対処を容易にし、将来の攻撃を防ぐことで、Office 365 ユーザーを保護します。
 
 - Advanced Threat Analytics を使用した高度な攻撃からの保護
 
@@ -105,7 +105,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 ## <a name="information-protection"></a>情報保護
 
-- Azure Information Protection を使用した機密性の高い厳しく規制されたデジタル資産の保護
+- Azure Information Protection ラベルを使用した機密性の高い厳しく規制されたデジタル資産の保護
 
   Contoso 社では 3 レベルのデータ保護を決定し、ユーザーがデジタル資産に適用する [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) ラベルを展開しました。企業秘密やその他の知的財産について、Contoso 社では、コンテンツを暗号化し特定のセキュリティグループへのアクセスを制限する厳しく規制されたデータに対して、範囲を限定したポリシーで Azure Information Protection サブラベルを使用します。
 
@@ -119,11 +119,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Microsoft Cloud App Security を使用したクラウドの監視
 
-  Contoso 社では [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して、自社のクラウド環境のマップ、使用状況を監視、セキュリティ イベントとインシデントの検出を行っています。 
-
-- Office 365 Cloud App Security を使用した Office 365 のセキュリティの監視
-
-  Contoso 社のセキュリティ管理者は [Office 365 Cloud App Security (CAS)](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview) を使用して警告をセットアップし、SharePoint Online や OneDrive for Business からの大量のデータのダウンロード、サインインしようとして繰り返される失敗、不明なまたは危険な IP アドレスからのサインインなど、通常とは異なるユーザー動作や危険なユーザー動作があると通知が行われるようにします。
+  Contoso 社では [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して、自社のクラウド環境のマップ、使用状況を監視、セキュリティ イベントとインシデントの検出を行っています。 Microsoft Cloud App Security は、Microsoft 365 Enterprise E5 でのみ利用可能です。
 
 - Microsoft Intune を使用したデバイス管理
 
