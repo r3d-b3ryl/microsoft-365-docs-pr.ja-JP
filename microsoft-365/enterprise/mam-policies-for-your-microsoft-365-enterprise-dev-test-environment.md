@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Intune デバイスコンプライアンスポリシーを Microsoft 365 Enterprise テスト環境に追加します。
-ms.openlocfilehash: d20b050bfc56776656bf1d485b2e107a9debe2f7
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
+ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353189"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33467735"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデバイスコンプライアンスポリシー
 
@@ -54,7 +54,7 @@ ms.locfileid: "33353189"
     
 6. [**グループ-すべてのグループ**] ブレードで、[ **+ 新しいグループ**] をクリックします。
     
-7. **グループ**ブレードで、[**グループの種類]** として [ **Office 365** ] を選択し、[管理さ**れた** **Windows 10 デバイスのユーザー** **名**] を入力し、[**メンバーシップの種類**] で [割り当て済み] を選択して、[**作成**] をクリックします。 
+7. **グループ**ブレードで、[ **Office 365** ] または [グループの種類に対して**セキュリティ**を**設定しますか?**] で、[管理された**Windows 10 デバイスのユーザー** **名**] を入力し、[**メンバーシップの種類**] で [**割り当て済み**] を選択し、[**作成**] をクリック 
     
 8. **[グループ]** ブレードを閉じます。
     
@@ -90,7 +90,7 @@ ms.locfileid: "33353189"
 
 26. [**アプリの追加**] ブレードで、[**追加**] をクリックします。
 
-これで、選択したアプリを**windows 10**デバイスコンプライアンスポリシーと、管理された**windows 10 デバイスユーザー**グループのメンバーに対してテストするためのデバイスコンプライアンスポリシーが作成されました。 
+これで、選択したアプリを**windows 10**デバイスコンプライアンスポリシーと、管理された**windows 10 デバイスユーザー**グループのメンバーに対してテストするためのデバイスコンプライアンスポリシーが作成されました。 グループの種類として Office 365 を選択すると、追加のリソースが作成されることに注意してください。 
   
 ## <a name="next-step"></a>次の手順
 
