@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の情報保護インフラストラクチャの展開手順。
-ms.openlocfilehash: 821c32eea09cde87155d0ee1ccdd81077d051d38
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a0d2c485b05e0969fe45cfd79c86e4e7dcb1d5ff
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287647"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400001"
 ---
 # <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
 
@@ -41,7 +41,9 @@ ms.locfileid: "32287647"
 |![](./media/stepnumbers/Step1.png)|[セキュリティおよび情報保護のレベルを定義する](infoprotect-define-sec-infoprotect-levels.md)|
 |![](./media/stepnumbers/Step2.png)|[環境のデータ分類方法を構成する](infoprotect-configure-classification.md)|
 |![](./media/stepnumbers/Step3.png)|[Microsoft 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step4.png)|[Windows 情報保護を構成する](infoprotect-deploy-windows-information-protection.md)|
+|![](./media/stepnumbers/Step5.png)|[Office 365 データ損失防止を構成する](infoprotect-data-loss-prevention.md)|
+|![](./media/stepnumbers/Step6.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
 
 
 上記の手順が完了したら、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。

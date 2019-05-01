@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: 3112589a023a563ff599535e1e9045a3d3db3bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289193"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400063"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
@@ -41,13 +41,13 @@ Microsoft 365 Enterprise を展開するには、主に 3 つの方法があり�
 
 FastTrack は、お客様のペースに合わせたクラウドへの移行を手伝うために、Microsoft のエンジニアが配信する継続的かつ反復的なサービスです（サブスクリプションの一部として使用できます）。 必要に応じて、追加サービスを提供する認定パートナーにアクセスできます。 FastTrack はこれまで 40,000 を超えるお客様に対応し、ROI を最大化し、展開を迅速化し、組織全体での導入を支援してきました。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
 
-FastTrack を利用して Microsoft 365 Enterprise を展開する場合は、基礎インフラストラクチャを展開および設定する方法のガイダンスとして FastTrack『[Microsoft 365 展開アドバイザー](https://aka.ms/microsoft365setupguide)』を使用できます。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのグローバル管理者としてサインオンしなければなりません。
+FastTrack を利用して Microsoft 365 Enterprise を展開する場合は、基礎インフラストラクチャを展開および設定する方法のガイダンスとして FastTrack『[Microsoft 365 展開アドバイザー](https://aka.ms/microsoft365setupguide)』を使用できます。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのグローバル管理者としてサインインする必要があります。
 
 [ここ](https://fasttrack.microsoft.com/microsoft365) をクリックして、FastTrackを使ってエンド ツー エンドの展開を始めましょう。
 
 ## <a name="microsoft-365-enterprise-deployment-guide"></a>Microsoft 365 Enterprise の展開ガイド
 
-『Microsoft 365 Enterprise Deployment Guide』は、Microsoft 365 Enterprise の製品と機能に必要な設定をするための手順を示します。
+「Microsoft 365 Enterprise の展開ガイド」は、Microsoft 365 Enterprise の製品と機能に必要な設定をするための手順を示します。
 
 Microsoft 365 Enterprise を自分で展開するには: 
 

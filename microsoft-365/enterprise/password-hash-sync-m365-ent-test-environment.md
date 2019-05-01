@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290986"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353151"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
@@ -103,19 +103,17 @@ ms.locfileid: "32290986"
     
 10. **[構成が完了しました]** ページで、**[終了]** をクリックします。
     
-11. Internet Explorer で、Office ポータルに移動します ([https://office.com](https://office.com))。
+11. Internet Explorer で Microsoft 365 管理センター ([https://portal.microsoft.com](https://portal.microsoft.com)) に移動します。
     
-12. ポータルのメイン ページで、**[管理]** をクリックします。
-    
-13. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
+12. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
     **User1** という名前のアカウントを記録します。 これは TESTLAB AD DS ドメインからのアカウントであり、ディレクトリ同期が機能していることを証明します。
     
-14. **[User1]** アカウントをクリックします。製品ライセンスの **[編集]** をクリックします。
+13. **[User1]** アカウントをクリックします。製品ライセンスの **[編集]** をクリックします。
     
-15. **[製品ライセンス]** で、国を選択してから、**[Office 365 Enterprise E5]** の **[オフ]** コントロールをクリックします (**[オン]** に切り替わります)。**[Enterprise Mobility + Security E5]** ライセンスに対しても同じ操作を実行します。 
+14. **[製品ライセンス]** で、国を選択してから、**[Office 365 Enterprise E5]** の **[オフ]** コントロールをクリックします (**[オン]** に切り替わります)。**[Enterprise Mobility + Security E5]** ライセンスに対しても同じ操作を実行します。 
 
-16. ページの下側にある **[保存]** をクリックしてから **[閉じる]** をクリックします。
+15. ページの下側にある **[保存]** をクリックしてから **[閉じる]** をクリックします。
     
 次に、User1 アカウントのユーザー名である <strong>user1@testlab.</strong>\<お客様のドメイン名> で Office 365 サブスクリプションにサインインできることをテストします。
 
