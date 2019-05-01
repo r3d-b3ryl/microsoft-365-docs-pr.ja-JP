@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: 1e277aed366d82e524ef99c43ab0401b5d35e5b0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
+ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286130"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497754"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 Business に関するよく寄せられる質問
 
@@ -116,7 +116,7 @@ Microsoft 365 Business のすべての機能を利用する場合は、既存の
 Microsoft 365 Business の展開を成功させる一番の近道は、Microsoft パートナーと連携することです。 パートナーは幅広いトレーニングを受け、さまざまな顧客のシナリオに対応した経験があり、お客様の環境とニーズを把握するのに最適な知識を持っています。 お客様の組織に経験が豊富な IT 担当者がいる場合は、「<a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 Business を使い始める</a>」を使用して Microsoft 365 Business の展開を支援できます。 
 
 ### <a name="does-microsoft-365-business-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 Business には、Microsoft Intune のすべての機能が含まれていますか。 
-はい、Microsoft 365 Business サブスクライバーは、iOS、Android、MacOS、その他のクロスプラットフォームデバイス管理のための完全な Intune 機能を使用するライセンスを持っています。 サードパーティのアプリ管理、wi-fi プロファイル、VPN 証明書などの構成を完全な Intune コンソールで管理できる、Microsoft 365 Business の簡略化された管理コンソールでは利用できない機能。   
+はい、Microsoft 365 Business サブスクライバーは、iOS、Android、MacOS、その他のクロスプラットフォームデバイス管理のための完全な Intune 機能を使用するライセンスを持っています。 サードパーティのアプリ管理、wi-fi プロファイルの構成、VPN 証明書など、Microsoft 365 Business の簡略化された管理コンソールで利用できない機能は、完全な Intune コンソールで管理できます。 構成マネージャーを使用して EMS ライセンスでカバーされているクライアントを管理する権限を持っている。 sccm 関連のクエリについては、「 <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">sccm faq</a> 」を参照してください。
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory Premium P1 は Microsoft 365 Business に付属していますか? 
