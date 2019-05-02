@@ -1,5 +1,5 @@
 ---
-title: 手順 7 - サービスとしての Windows および Office
+title: ステップ7  -  WindowsとOfficeのサービス
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,40 +12,38 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: サービスとしての Windows および Office をお使いの環境で準備する方法について説明します。
-ms.openlocfilehash: 5c3eb54e07b1cc5492a6d938e97286283fc47ca7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: ご自身の環境でWindowsおよびOfficeのサービスを準備する方法を学びます。
+ms.openlocfilehash: 68598f92b5b29f1c0bc20ecb402b60b45128ca6a
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869393"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400251"
 ---
-# <a name="step-7-windows-and-office-as-a-service"></a>手順 7: サービスとしての Windows および Office
-
-System Center Configuration Manager の Current Branch の管理ツールに対応する更新とともに、Windows 10 および Office 365 ProPlus の新機能を備えた半期チャネルの更新を行う準備をします。
+# <a name="step-7-windows-and-office-servicing"></a>ステップ7： WindowsとOfficeのサービス
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-1.png)
 
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
-<td><p><strong>手順 7: サービスとしての Windows および Office の準備</strong></p>
+<td><p><strong>ステップ7：WindowsとOfficeのサービス</strong></p>
 <p>Windows 10 と Office 365 ProPlus には、最新の技術革新によりユーザー エクスペリエンスとセキュリティを継続的に維持するための新しい機能が継続的に追加されます。更新プログラムを半期ごと、および毎月適用して最新の状態を維持する方法について説明します。また、新しいサービス モデルがどのように機能し、どういったツールやオプションを利用できるのかについても紹介します。</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->サービスとしての Windows および Office は、半期ごとの機能の更新のための準備の計画局面をカバーする、推奨される展開プロセス全体の中で 7 つ目の手順です。完全なデスクトップの展開プロセスを確認するには、「[モダン デスクトップ展開センター](https://aka.ms/HowToShift)」を参照してください。
+>WindowsおよびOfficeサービスは、半年ごとの機能更新に備えるための計画サイクルを統括する、推奨展開プロセスの第7段階です。 完全なデスクトップ展開プロセスを確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)にアクセスしてください。
 >
 
-Windows 10 と Office 365 ProPlus には、新しいサービス オプション、モデルのサポート、更新タイムラインが導入されています。これらのサポートにより、最新機能の状態を維持するプロセスが簡素化されます。また、これらの更新機能に加えて、お客様のニーズに即したサービス計画を実現させる新しい設定オプションも用意されています。
+Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプション、サポートモデル、および更新スケジュールが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 System Center Configuration Manager Current Branchの新機能を活用しながら、Windows 10およびOffice 365 ProPlusの新機能を提供する半期ごとのチャンネル更新の準備方法を学びましょう。
 
-[ユーザーのモダン デスクトップへの移行のサポート](https://www.microsoft.com/ja-JP/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Windows 10およびOffice 365 ProPlusへの移行を支援します](https://www.microsoft.com/ja-JP/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>更新プログラムの種類
 
-更新プログラムは主に 2 つのカテゴリに分類されます。機能の更新プログラムと、品質およびセキュリティの更新プログラムで、後者には累積的なセキュリティ、信頼性、バグの修正プログラムが含まれます。半期チャネルの具体的な時期は 3 月と 9 月の年 2 回で、Windows と Office の両方に新機能が提供されます。品質とセキュリティの更新は毎月行われます。ただし、Office 365 アプリの場合は例外で、機能の更新プログラムと品質の更新プログラムの両方が完全にサポートされている月次チャネルが配信されます。
+アップデートには2つの主なカテゴリがあり、機能のアップデート、そして累積されたセキュリティ、信頼性、そしてバグ修正を含んだ品質とセキュリティのアップデートに分けられます。 更新頻度では、WindowsとOffice双方で年2回、3月と9月に新機能を提供する半期ごとのチャンネルを渡しており、品質とセキュリティの更新は毎月行われます。 また、Office 365アプリケーションのみ、更新プログラムに新しい機能と品質更新プログラムの両方が含まれる、月ごとの完全サポートチャンネルオプションを提供します。
 
 デスクトップ OS の更新プログラムとアプリの更新プログラムの長いサイクルをご存知であれば、以下のような疑問点が出てくるかと思います。
 
@@ -71,11 +69,9 @@ Windows 10 と Office 365 ProPlus には、新しいサービス オプション
 
 累積モデルでは、常に最新のものから 1 つの更新が行われます。そのため、導入する必要がある毎月の更新プログラムの数が減ります。それぞれの更新プログラムは、過去数か月の更新に基づいて構成されており、最新の状態に保つために必要なすべての修正プログラムが含まれています。特に、数か月間 PC の電源が切られている場合は、PC が別のユーザーに再割り当てされるのを待機している保存状態にあるため、累積的な更新プログラムが特に役立ちます。
 
-[サービスとしての Windows の概要](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-overview)
-
 ### <a name="expanded-validation-of-updates"></a>更新プログラムの検証の範囲が拡大
 
-他にも利点があります。広範囲な展開を行う更新プログラムを公開する前に、[Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) と [Windows](https://insider.windows.com/ja-JP/) の Insider Program を介して最初にビルドをリリースすることにより、広範囲に更新プログラムをリリースする前に、テレメトリとフィードバックの収集ができます。Insider Program は一般公開されているので、更新プログラムよりも先に内容を確認することができます。更新プログラムをリリースする時までに何百万もの構成からテレメトリを取得しているため、更新プログラムの公開時に、品質を本質的に予測できるようになりました。
+もう1つの利点は、広範環境への更新を展開する前に、まず[Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop)および[Windows ](https://insider.windows.com/ja-JP/)用のInsiderプログラムを介してビルドを配信します。これにより、広くアップデートを配信する前に、私達が統計データやフィードバックを集計することが可能になります。 Insiderプログラムはどなたにも開かれており、アップデートを先立って確認することができます。 アップデートを配信するときには、何百万もの設定から統計データを受け取ることになるので、実際のアップデートを展開時には、より本質的に品質が予測しやすくなります。
 
 もう 1 つの点として、Office 365 ProPlus の Insider ビルドに月次チャネルの更新が反映されるため、Windows に準じて、Office に半期チャネルを適用して機能の更新プログラムを年に 2 回配信する場合は、半期チャネル対象のリリースによる半期ごとの検証を早期に行うことができます。
 
@@ -86,6 +82,26 @@ Windows 10 と Office 365 ProPlus には、新しいサービス オプション
 [System Center Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-manage-updates-configuration-manager)
 
 [Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/ja-JP/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+
+## <a name="overview-of-windows-and-office-channels"></a>WindowsとOfficeチャンネルの概要
+
+Windows 10は3つのサービスチャンネルを提供します。
+
+- [** Windows Insiderプログラム**](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-overview#windows-insider)、組織が次回の機能アップデートで出荷される機能についてテスト、フィードバックを行えるようにする
+- **Semi-Annualチャンネル**、Feature Updateの配信で年2回、新機能を提供
+- **長期保守チャネル**、長期保守オプションを必要とする専用機に特化して設計
+
+Office 365は3つのサービスチャンネルを提供します。
+
+- [**Office Insiderプログラム**](https://support.office.com/ja-JP/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)、開発中の最新のOffice性能および機能についてテストし、フィードバックを行えるようにする
+- **マンスリーチャンネル**、利用可能になり次第、ユーザーに最新のOffice機能を提供する
+- **Semi-Annualチャンネル**、年2回限定で、新しい機能の実装を提供
+- **Semi-Annualチャンネル（特定）**、パイロットユーザーとアプリケーション互換性テスト担当者が次回のSemi-Annualチャンネルをテスト、検証できる、完全にサポートされたOfficeビルド
+
+WindowsとOfficeのサービスチャネルの詳細については、以下のドキュメントを参照してください。
+
+- [サービスとしてのWindowsの概要](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-overview#servicing-channels)
+- [ Office 365 ProPlusの更新チャンネルの概要](https://docs.microsoft.com/ja-JP/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>更新プログラムの段階的な展開
 
