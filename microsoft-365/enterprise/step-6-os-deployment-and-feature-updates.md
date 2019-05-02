@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: OS の展開と機能更新プログラムのオプションについて説明します。
-ms.openlocfilehash: 6aae2fb39937bec1eebfdc11e403f3835cb895cd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: d5053219750b056c9f72e94524f334a42e2aaa06
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869294"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400201"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>手順 6: OS の展開と機能更新プログラム
-
-オペレーティング システムの展開オプションと、System Center Configuration Manager または Microsoft Deployment Toolkit によるアップグレードおよびイメージングのアプローチを使用したオペレーティング システムの展開準備について説明します。
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
@@ -36,7 +34,7 @@ ms.locfileid: "26869294"
 </table>
 
 >[!NOTE]
->「OS の展開と機能更新プログラム」は、推奨される展開プロセスの輪における 6 番目の手順であり、Windows 10 OS の展開、アップグレードおよび機能更新プログラムをカバーします。完全なデスクトップの展開プロセスを確認するには、「[モダン デスクトップ展開センター](https://aka.ms/HowToShift)」を参照してください。
+>OSの展開と機能の更新は、Windows 10 OSの展開、アップグレード、機能の更新を統括する、推奨展開プロセスの6番目のステップです。 完全なデスクトップ展開プロセスを確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)にアクセスしてください。
 >
 
 ここまでの展開プロセスの輪に従っていれば、デバイスとアプリの準備、インフラストラクチャの準備、アプリ パッケージの構成と収集が少なくとも部分的には完了していて、ユーザー ファイルの移行と既定の設定の構成のため実施計画があり、既存のセキュリティ制御の保持と新しいセキュリティ制御の展開 (必要な場合) の計画もあるはずです。
@@ -109,7 +107,7 @@ ms.locfileid: "26869294"
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows 10 の新しいオプションは、ハードウェア更新サイクルの一環として Windows Autopilot を使用して新しい PC を構成することです。このオプションでは、サポートするハードウェア ベンダーと協力して、既定の Windows セットアップ エクスペリエンスをカスタマイズできます。たとえば、ユーザーに提示されるオプション (ライセンス契約やテレメトリ設定など) を除外するようにカスタマイズできます。
+Windows 10の新しいオプションとして、Windows Autopilotを使用してハードウェアの更新サイクルの一部として新しいPCを構成することができるようになります。 ここでは、サポート契約を結んでいるハードウェア会社と同期して、規定のWindowsセットアップ環境をカスタマイズすることができます。たとえば、ライセンス契約や診断データ設定など、ユーザーに提示されるオプションを排除することができます。
 
 その後で、ユーザーがセットアップ時に Azure AD 資格情報を使用して PC にサインインすると、デバイスは Microsoft Intune に登録されます。展開プロセスは、これが引き継いで、アプリケーション、ソフトウェアの更新プログラム、構成およびコンプライアンス ポリシーを適用します。Windows Autopilot は、必要に応じて、プロビジョニングが完了するまで、ユーザーが最初のセッションにアクセスできないようにすることもできます。
 
@@ -117,9 +115,21 @@ Windows 10 の新しいオプションは、ハードウェア更新サイクル
 
 [Windows Autopilot Prerequisites](https://docs.microsoft.com/ja-JP/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
+## <a name="windows-update-for-business-for-feature-updates"></a>機能更新のためのWindows Update for Business
+
+Windows Update for Businessは、ITの専門化がデバイスをWindows Updateサービスに直接接続することによって、Windows 10デバイスを常に最新の状態に保つことを可能にする無料サービスです。 Windows Update for Businessは、グループポリシーまたはMicrosoft IntuneなどのMDMソリューションを介して構成でき、ITの専門化は新しいビルドを検証するために[展開リング](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-deployment-rings-windows-10-updates)を作成することができます。 これはWindows Server Update Services（WSUS）、System Center Configuration Manager（最新のブランチ）、およびMicrosoft Intuneなどの既存の管理ツールに統合されています。 さらに、Windows Update for Businessはピアツーピア配信をサポートし、帯域幅効率を最適化し、ネットワークの輻輳を軽減します。
+
+Windows Update for Businessの詳細については、以下の資料を参照してください。
+
+- [Windows Update for Businessで更新を展開する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-manage-updates-wufb)
+- [Windows Update for Businessを構成する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-configure-wufb)
+- [Windows Update for Businessを既存の管理ツールと統合する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-integrate-wufb)
+- [グループポリシーを使用してWindows Update for Businessを構成する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-wufb-group-policy)
+- [Microsoft Intuneを使用してWindows Update for Businessを構成する](https://docs.microsoft.com/ja-JP/intune/windows-update-for-business-configure)
+
 ## <a name="next-step"></a>次の手順 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[手順 7: サービスとしての Windows および Office](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[ステップ7：WindowsとOfficeのサービス](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>前の手順
 
