@@ -3,32 +3,32 @@ title: Contoso 社の ID
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 01/17/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: 7571aa455cac4da9e56d7d2001ae4421c3769c94
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bcd83eaafb5df86d9a660aeb74b2e97f7bdc6b7b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26869468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277592"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
 **概要:** Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
 
-Microsoft は、Azure Active Directory (AD) により、クラウド製品全体に IDaaS (Identity as a Service) を提供します。Microsoft 365 Enterprise を採用するため、Contoso 社の IDaaS ソリューションでは、オンプレミスの ID プロバイダーを活用しつつ、信頼できる既存のサードパーティ ID プロバイダーを使用したフェデレーション認証も含める必要がありました。
+Microsoftは、Azure Active Directory（Azure AD）を使用して、自社のクラウド製品にIDaaS (Identity as a Service)を提供します。 Microsoft 365 EnterpriseEnterprise導入のため、ContosoのIDaaSソリューションは、自社運用のIDプロバイダーを利用しながら、既存の信頼できるサードパーティのIDプロバイダーと連携した認証方法を一体化させる必要がありました。
 
-## <a name="contosos-windows-server-ad-forest"></a>Contoso 社の Windows Server AD フォレスト
+## <a name="contosos-active-directory-domain-services-forest"></a>ContosoのActive Directoryドメイン　サービス フォレスト
 
-Contoso 社では contoso.com に対して、7 つのサブドメイン (世界の地域ごとに 1 つのサブドメイン) を持つ単一の Windows Server Active Directory (AD) フォレストを使用します。本社、地域ハブ オフィス、およびサテライト オフィスには、ローカルの認証と承認のためのドメイン コントローラーが含まれています。
+Contosoは、contoso.comに1つのActive Directoryドメインサービス（AD DS）フォレストを使用し、7つのサブドメイン（世界中の各地域に1つ）を使用します。 本社、地域ハブ オフィス、サテライト オフィスには、ローカルの認証と承認のためのドメイン コントローラーが含まれています。
 
 図 1 では、地域ハブを含む世界各地の地域ドメインを持つ Contoso 社のフォレストを示しています。
 
@@ -36,7 +36,7 @@ Contoso 社では contoso.com に対して、7 つのサブドメイン (世界�
  
 **図 1: Contoso 社の世界的なフォレストとドメイン**
 
-Contoso 社では、クラウドベースのアプリおよびワークロードの認証と承認のために、contoso.com フォレストのアカウントとグループを使用することを望んでいます。
+Contosoは、contoso.comフォレストのアカウントとグループをMicrosoft 365の作業とサービスの認証・承認に使用したいと考えていました。
 
 ## <a name="contosos-federated-authentication-infrastructure"></a>Contoso 社のフェデレーション認証インフラストラクチャ
 
@@ -55,41 +55,32 @@ DMZ の AD FS サーバーは、パブリック Web サイトにアクセスす�
 
 Contoso 社は、このインフラストラクチャを維持し、顧客とパートナーの認証専用で使用することに決定しました。Contoso 社の ID エンジニアは、このインフラストラクチャから Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) および [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) ソリューションへの変換を調査中です。
 
-## <a name="hybrid-identity-with-pass-through-authentication-for-cloud-based-authentication"></a>クラウドベース認証にパススルー認証を使用したハイブリッド ID
+## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>クラウドベース認証のためのパスワードハッシュ同期によるハイブリッドID
 
-Contoso 社は、Microsoft 365 のクラウド リソースへの認証にオンプレミスの Windows Server AD フォレストを活用したいと考えており、パスワード ハッシュ同期 (PHS) によるパススルー認証 (PTA) を採用することに決定しました。
+Contosoは、自社運用のAD DSフォレストをMicrosoft 365クラウドリソースへの認証に活用したいと考えていました。 ここから、パスワードハッシュ同期（PHS）が誕生しました。
 
-### <a name="pta-authentication"></a>PTA 認証
+PHSは、自社運用のAD DSフォレストをMicrosoft 365 Enterpriseの登録のあるAzure ADテナントと同期し、ユーザーアカウントとグループアカウント、およびハッシュ化されたバージョンのユーザーアカウントパスワードをコピーします。 
 
-ユーザー資格情報の認証については、Contoso 社は PTA を使用しています。Contoso 社のユーザーがクラウドベースのリソースにアクセスすると、送信された資格情報は Azure AD によって Contoso 社の本社データ センターでの認証エージェントを実行するサーバーに渡されます。これらの認証エージェント サーバーの 1 つが、Azure AD に代わってユーザー資格情報を検証します。
-
-図 3 は、Contoso 社の本社で認証エージェントを実行するサーバー群を図示したもので、Azure AD から渡される認証要求をこれらが処理します。 
-
-![](./media/contoso-identity/contoso-identity-fig3.png)
- 
-**図 3: Contoso 社のパススルー認証インフラストラクチャ**
-
-Contoso 社では、認証のためのすべての試行が、ユーザー アカウント状態、パスワード ポリシー、サインイン時間に関して、オンプレミスの Windows Server AD フォレストに加えられた直近の変更に照らして評価されることがセキュリティ要件となっており、これを満たす目的で PTA を選択しました。
-
-### <a name="phs"></a>PHS
-
-PHS は、ユーザー アカウントとグループ アカウント、およびハッシュされたバージョンのユーザー アカウント パスワードをコピーして、オンプレミスの Windows Server AD フォレストを Microsoft 365 Enterprise サブスクリプションの Azure AD テナントと同期します。Contoso 社は、PTA が使用できない場合に Azure AD テナントを使った認証の代替手段を直接提供できるように、PHS を採用することに決定しました。
-
-ディレクトリ同期を継続的に実行するため、Contoso 社は、パリにある自社のデータ センターのサーバー上に Azure AD Connect ツールを展開しました。図 4 は、変更に関して Contoso 社の Windows Server AD フォレストをポーリングし、それらの変更を Azure AD テナントと同期する、Azure AD Connect を実行中のサーバーを図示したものです。
+継続的なディレクトリ同期を実行するために、ContosoはAzure AD 連携ツールをパリのデータセンター内のサーバーに展開しました。 図3は、Azure AD Connectを実行しているサーバーがContoso AD DSフォレストに変更をポーリングし、それらの変更をAzure ADテナントと同期することを示しています。
 
 ![](./media/contoso-identity/contoso-identity-fig4.png)
  
-**図 4: Contoso 社の PHH ディレクトリ同期インフラストラクチャ**
+**図3：ContosoのPHSディレクトリ同期インフラストラクチャ**
 
-## <a name="conditional-access-policies-for-identity"></a>ID 用の条件付きアクセスポリシー
 
-Contoso 社では、ある認証要求に関連して Azure AD がサインイン リスクがあると判断した場合に、多要素認証とパスワード変更が確実に適用されるようにするために、一連の Azure AD [条件付きアクセス ポリシー](identity-access-policies.md)を作成しています。
+## <a name="conditional-access-policies-for-identity-and-device-access"></a>IDおよび機器のアクセスに対する条件付きアクセスポリシー
 
-図 5 は、ID 用の条件付きアクセスポリシーの結果セットを図示したものです。
+Contosoは、3つの保護レベルに対して、Azure ADとIntuneの[条件付きアクセスポリシー](identity-access-policies.md)を作成しました。
+
+- **ベースライン**保護はすべてのユーザーアカウントに適用されます。
+- **選定**保護が上級幹部および幹部職員に適用されます。
+- **高規制**保護は、高度に規制されたデータにアクセスできる財務、法務、および研究部門の特定のユーザーに適用されます。
+
+図4は、この結果得られるIDと機器の条件付きアクセスポリシーのセットを示しています。
 
 ![](./media/contoso-identity/contoso-identity-fig5.png)
  
-**図 5: Contoso 社の ID ベース条件付きアクセスポリシー**
+**図4：ContosoのIDと機器の条件付きアクセスポリシー**
 
 ## <a name="next-step"></a>次の手順
 
