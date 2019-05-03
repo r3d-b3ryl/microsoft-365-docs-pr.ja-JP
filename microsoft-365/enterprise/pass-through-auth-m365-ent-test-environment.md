@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '要約: Microsoft 365 テスト環境でパススルー認証を構成します。'
-ms.openlocfilehash: e925f0b48194c94993e7bf3e08f1f18650b19a23
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b92700d28a758842d3754bb2b359181b9ee59d2e
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400111"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553356"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境でのパススルー認証
 
@@ -48,7 +48,7 @@ Microsoft のクラウド ベースのサービスとアプリケーションへ
 この構成は、次の内容で成立します。 
   
 - Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
-- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 Azure AD Connect が APP1 上で実行され、TESTLAB Active Directory Domain Services (AD DS) ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに定期的に同期されます。
+- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 Azure AD Connect が APP1 上で実行され、TESTLAB AD DS ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに定期的に同期されます。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>フェーズ 2: APP1 で、パススルー認証用の Azure AD Connect を構成します。
 
