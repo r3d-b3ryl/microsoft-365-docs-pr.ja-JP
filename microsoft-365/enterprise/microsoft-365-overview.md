@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353206"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553336"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise は次の要素で構成されています。
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | office 365 ProPlus、PC と Mac 用の最新の office アプリ (Word、Excel、PowerPoint、Outlook など)、および電子メール、ファイルの保存とコラボレーション、会議などに使用できるオンラインサービスの完全なスイートが含まれています。 |
+| Office 365 Enterprise | Office 365 ProPlus、PC と Mac 用の最新の Office アプリ (Word、Excel、PowerPoint、Outlook など)、および電子メール、ファイルの保存とコラボレーション、会議などに使用できるオンラインサービスの完全なスイートが含まれています。 |
 | Windows 10 Enterprise | 大規模および中規模の組織のニーズに対応しており、包括的な展開、デバイス、およびアプリの管理を使用して、最も生産性の高い、セキュリティで保護されたバージョンの Windows および IT プロフェッショナルをユーザーに提供します。 |
 | Enterprise Mobility + Security (EMS) | Microsoft Intune が含まれています。これは、クラウドベースの enterprise mobility management (EMM) サービスであり、企業データを保護したまま、従業員の生産性を向上させるのに役立てることができます。 |
 |||
@@ -41,9 +41,9 @@ Microsoft 365 Enterprise は、3つのプランで利用できます。
 
 |||
 |:-------|:-----|
-| E3 | Office 365 enterprise、Windows 10 enterprise、enterprise Mobility + Security (EMS) が含まれています。 |
+| E3 | Office 365 Enterprise、Windows 10 Enterprise、Enterprise Mobility + Security (EMS) が含まれています。 |
 | E5 | E3's のすべての機能に加え、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。 |
-| F1 | この目的は、第一線ワーカーを最高の作業を行うために必要なツールやリソースに接続するために作成されています。 firstline ワーカーは、お客様と協力して会社のブランドと価値を表す最初の行です。 |
+| F1 | この目的は、第一線ワーカーを最高の作業を行うために必要なツールやリソースに接続するために作成されています。 Firstline ワーカーは、お客様と協力して会社のブランドと価値を表す最初の行です。 |
 |||
 
 詳細については、「[各プランの特徴と機能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
@@ -66,11 +66,11 @@ Microsoft 365 Enterprise は、3つのプランで利用できます。
 
 Microsoft 365 Enterprise の製品、機能、およびコンポーネントを展開するには、次の3つの方法があります。
 
-1. fasttrack とのパートナーシップ
+1. FastTrack とのパートナーシップ
   
-   fasttrack では、Microsoft のエンジニアが自分のペースでクラウドに移行することができます。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
+   FastTrack では、Microsoft のエンジニアが自分のペースでクラウドに移行することができます。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
   
-2. microsoft コンサルティングサービスまたは[microsoft パートナー](https://partner.microsoft.com/)と協力して提供されます。
+2. Microsoft コンサルティングサービスまたは[microsoft パートナー](https://partner.microsoft.com/)と協力して提供されます。
 
    コンサルタントは、現在のインフラストラクチャを分析し、Microsoft 365 Enterprise のすべてのソフトウェアとサービスを組み込むための計画を策定する際に役立ちます。
 
@@ -81,7 +81,7 @@ Microsoft 365 Enterprise の製品、機能、およびコンポーネントを�
 展開の詳細については、「how to:」を参照してください。
 
 - [お客様](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)は、Microsoft 365 Enterprise を使用します。
-- [](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) microsoft では、microsoft 365 Enterprise を使用しています。
+- [](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) Microsoft では、Microsoft 365 Enterprise を使用しています。
 - 架空の多国籍企業である[Contoso Corporation](contoso-overview.md)は、Microsoft 365 Enterprise を展開しました。
 
 ## <a name="additional-microsoft-365-solutions"></a>その他の Microsoft 365 ソリューション
@@ -98,16 +98,11 @@ Microsoft 365 Enterprise の製品、機能、およびコンポーネントを�
  
   米国の公的部門の従業員が安全に共同作業できるようにします。
 
-
-
 ## <a name="microsoft-365-training"></a>Microsoft 365 トレーニング
 
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| ご自分のトレーニングを受けて、Microsoft 365 認定に向けて作業を行います。 <BR> 最初に、 [Microsoft 365 の基本事項](https://docs.microsoft.com/learn/paths/m365-fundamentals/)についてご解説します。
-
-
-
 
 
 ## <a name="next-step"></a>次の手順
