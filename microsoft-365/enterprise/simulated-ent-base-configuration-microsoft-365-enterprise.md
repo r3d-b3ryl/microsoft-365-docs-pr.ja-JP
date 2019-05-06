@@ -3,7 +3,7 @@ title: Microsoft 365 用のシミュレートされたエンタープライズ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 05/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 用にシミュレートされたエンタープライズ テスト環境を作成します。
-ms.openlocfilehash: 7c16f6fee480e883f7bf87d3b03441cf18e8f73f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 173622666420976199709d311ef67a7f0be3d867
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290838"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553373"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
 この記事では、次のものを含む Microsoft 365 Enterprise のシンプルな環境を作成するための詳しい手順について説明します。
 
-- Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
+- Microsoft 365 E5 の試用版または有料サブスクリプション。
 - インターネットに接続している組織の簡易型イントラネット。Azure 仮想ネットワーク上に配置された 3 つの仮想マシン (DC1、APP1、および CLIENT1) で構成されます。
  
 ![シミュレートされたエンタープライズ基本構成](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
@@ -125,7 +125,7 @@ $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
 ```
 
-次に、DC1 仮想マシンを作成し、TestLab 仮想ネットワークの仮想マシン用の **testlab.**\<パブリック ドメイン> Active Directory Domain Services (AD DS) と DNS サーバーのドメイン コントローラーとして構成します。たとえば、パブリック ドメイン名が **<span>contoso</span>.com** の場合、DC1 仮想マシンは **<span>testlab</span>.contoso.com** ドメインのドメイン コントローラーになります。
+次に、DC1 仮想マシンを作成し、Testlab 仮想ネットワークの仮想マシン用の **testlab.**\<パブリック ドメイン> AD DS ドメインと DNS サーバーのドメイン コントローラーとして構成します。たとえば、パブリック ドメイン名が **<span>contoso</span>.com** の場合、DC1 仮想マシンは **<span>testlab</span>.contoso.com** ドメインのドメイン コントローラーになります。
   
 DC1 用の Azure 仮想マシンを作成するには、リソース グループの名前を入力して、次に示すコマンドをローカル コンピューターの PowerShell コマンド プロンプトから実行します。
   
@@ -349,54 +349,63 @@ CLIENT1 の再起動後に、TESTLAB\\User1 のアカウント名とパスワー
 ![シミュレートされたエンタープライズ基本構成のステップ 3](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## <a name="phase-2-create-your-office-365-e5-and-ems-e5-subscriptions"></a>フェーズ 2: Office 365 E5 および EMS E5 のサブスクリプションを作成する
+## <a name="phase-2-create-your-microsoft-365-e5-subscriptions"></a>フェーズ 2: Microsoft 365 E5 サブスクリプションを作成する
 
-このフェーズでは、新しい共通の Azure AD テナントを使用する Office 365 E5 および EMS E5 サブスクリプション (運用サブスクリプションとは別のもの) を作成します。これは、次の 2 つの方法で作成できます。
+このフェーズでは、新しい Azure AD テナントを使用する Microsoft 365 E5 サブスクリプション (運用サブスクリプションとは別のもの) を作成します。これは、次の 2 つの方法で作成できます。
 
-- Office 365 E5 および EMS E5 の試用版サブスクリプションを使用する。 
+- Microsoft 365 E5 の試用版サブスクリプションを使用する。 
 
-  Office 365 E5 の試用版サブスクリプションは 30 日間有効です。この有効期間は、簡単に 60 日間延長できます。EMS E5 試用版サブスクリプションは 90 日間有効です。試用版サブスクリプションの有効期限が切れたときには、有料版のサブスクリプションに切り替えるか、新しい試用版サブスクリプションを作成する必要があります。新しい試用版サブスクリプションを作成すると、複雑なシナリオが含まれていることもある構成を放置することになります。  
-- ライセンス数の少ない Microsoft 365 Enterprise の個別の運用サブスクリプションを使用する。
+  Microsoft 365 E5 の試用版サブスクリプションは 30 日間有効です。この有効期間は、簡単に 60 日間延長できます。試用版サブスクリプションの有効期限が切れたときには、有料版のサブスクリプションに切り替えるか、新しい試用版サブスクリプションを作成する必要があります。新しい試用版サブスクリプションを作成すると、複雑なシナリオが含まれていることもある構成を放置することになります。  
+- ライセンス数の少ない Microsoft 365 E5 の個別の運用サブスクリプションを使用する。
 
   これには追加のコストが発生しますが、機能、構成、およびシナリオをテストするための期限切れのない実働テスト環境を確実に保持できます。この 1 つのテスト環境は、概念実証、同僚や経営者に向けたデモンストレーション、およびアプリケーションの開発とテストのために長期にわたって使用できます。この方法をお勧めします。
 
 ### <a name="use-trial-subscriptions"></a>試用版サブスクリプションの使用
 
-試用版サブスクリプションを使用する必要がある場合は、「[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)」のフェーズ 2 とフェーズ 3 の手順を実行します。
-  
-次に、EMS E5 試用版サブスクリプションにサインアップして、Office 365 E5 サブスクリプションと同じ組織に追加します。
-  
-最初に、EMS E5 試用版サブスクリプションを追加して、EMS ライセンスを全体管理者アカウントに割り当てます。
-  
-1. インターネット ブラウザーのプライベート インスタンスで、全体管理者アカウントの資格情報を使用して、Office ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+まず最初に、「[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)」のフェーズ 2 とフェーズ 3 の手順に従って、Office 365 の軽量な開発/テスト環境を作成します。
+
+>[!Note]
+>開発/テスト環境に現在お持ちの有料サブスクリプションとは別の Azure AD テナントが存在するように、Office 365 の試用版サブスクリプションを作成します。 このように分離することにより、運用サブスクリプションに影響を与えることなく、テスト テナントでのユーザーとグループの追加と削除が可能になります。
+>
+
+次に、Microsoft 365 E5 試用版サブスクリプションを追加して、Microsoft 365 ライセンスを全体管理者アカウントに割り当てます。
+
+1. インターネット ブラウザーのプライベート インスタンスで、全体管理者アカウントの資格情報を使用して、Microsoft 365 管理センター ([http://admin.microsoft.com](http://admin.microsoft.com)) にサインインします。
     
-2. **[管理者]** タイルをクリックします。
+2. **[Microsoft 365 管理センター]** ページの左側のナビゲーションで **[請求]、[サービスを購入する]** の順にクリックします。
     
-3. ブラウザーの **[Microsoft 365 管理センター]** タブの、左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
-    
-4. **[サービスを購入]** ページで、 **[Enterprise Mobility + Security E5]** 項目を探します。その項目の上にマウス ポインターを移動させ、 **[無料試用版を起動する]** をクリックします。
-    
+3. **[サービスを購入する]** ページで、**Microsoft 365 E5** 項目を見つけます。 その項目の上にマウス ポインターを移動させ、**[無料試用版を起動する]** をクリックします。
+
+4. **[Microsoft 365 E5 試用版]** ページで、テキスト メッセージを受信するか電話を受けるかを選択し、電話番号を入力して、**[テキスト メッセージを送信する]** または **[電話する]** をクリックします。
+
 5. **[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。
-    
+
 6. **[注文の受領書]** ページで、**[続行]** をクリックします。
-    
-7. ブラウザーの **[Office 365 管理センター]** タブの左側のナビゲーションで **[ユーザー] > [アクティブなユーザー]** の順にクリックします。
-    
-8. 全体管理者アカウントをクリックしてから、 **[製品ライセンス]** で **[編集]** をクリックします。
-    
-9. **[製品ライセンス]** ウィンドウで、 **Enterprise Mobility + Security E5** の製品ライセンスを **[オン]** にして、 **[保存]** をクリックしてから、 **[閉じる]** を 2 回クリックします。
-    
+
+7. Microsoft 365 管理センターで、**[アクティブ ユーザー]** をクリックしてから、管理者アカウントをクリックします。
+
+8. **[製品ライセンス]** の **[編集]** をクリックします。
+
+9. Office 365 Enterprise E5 のライセンスをオフにして、Microsoft 365 E5 のライセンスをオンにします。
+
+10. **[保存]、[閉じる]、[閉じる]** の順にクリックします。
+
+ 次に、「[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)」の***フェーズ 3 を完了している場合***は、その他のすべてのアカウント (User 2、User 3、User 4、および User 5) に前述の手順 8 から手順 11 を繰り返します。
+  
 > [!NOTE]
->  永続的なテスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。 
+> Microsoft 365 E5 の試用版サブスクリプションは 30 日間有効です。 永続的なテスト環境では、少数のライセンスを使用して、この試用版のサブスクリプションを有料サブスクリプションに変換します。
   
-次に、その他のすべてのアカウント (User 2、User 3、User 4、および User 5) に前述の手順 8 と手順 9 を繰り返します。
+テスト環境は、次のようになっています。
   
+- Microsoft 365 E5 の試用版サブスクリプション。
+- すべての適切なユーザー アカウント (全体管理者のみまたは 5 つすべてのユーザー アカウントのどちらか) が、Microsoft 365 E5 を使用できるようになっている。
+    
 ### <a name="results"></a>結果
 
 テスト環境は、次のようになっています。
   
-- Office 365 E5 Enterprise と EMS E5 の試用版サブスクリプションが、ユーザー アカウントの一覧と同じ Azure AD テナントを共有している。
-- すべての適切なアカウント (全体管理者のみまたは 5 つすべてのユーザー アカウントのどちらか) が、Office 365 E5 と EMS E5 を使用できるようになっている。
+- Microsoft 365 E5 の試用版サブスクリプション。
+- すべての適切なユーザー アカウント (全体管理者のみまたは 5 つすべてのユーザー アカウントのどちらか) が、Microsoft 365 E5 を使用できるようになっている。
     
 これは、最終的な構成です。
   

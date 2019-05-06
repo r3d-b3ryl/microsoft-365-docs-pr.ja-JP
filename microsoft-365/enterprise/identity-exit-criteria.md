@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の ID ベースのサービスとインフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: e36f6e88c41454a951f6c6da4253c4bac07f2fb8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0f2d1cbeef87301729b23a6290277b28466c9770
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285553"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553306"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>フェーズ 2: ID インフラストラクチャの終了条件
 
@@ -73,9 +73,9 @@ Office 365 サブスクリプションの侵害の原因となる資格情報の
 
 
 <a name="crit-identity-sync"></a>
-## <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>必須: ユーザーとグループが Azure AD と同期されている
+## <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>必須: ユーザーとグループが Azure AD と同期される
 
-Active Directory Domain Services (AD DS) など既存のオンプレミス ID プロバイダーがある場合は、Azure AD Connect を使用して、ユーザー アカウントとグループをオンプレミス ID プロバイダーから Azure AD テナントへ同期しました。
+既存のオンプレミス ID プロバイダー ( Active Directory Domain Services (AD DS) など) がある場合は、Azure AD Connect を使用して、オンプレミス ID プロバイダーから Azure AD テナントへユーザー アカウントとグループを同期します。
 
 ディレクトリ同期により、ユーザーは各自のコンピューターやオンプレミス リソースにサインインするときに使用する資格情報で、Office 365 やその他の Microsoft クラウド サービスにもサインインできます。
 
@@ -93,7 +93,7 @@ Active Directory Domain Services (AD DS) など既存のオンプレミス ID �
 
 ディレクトリ同期が正しく動作していることを確認するには、次の手順に従います。
 
-1.  Active Directory Domain Services (AD DS) で、新しいテスト グループを作成します。
+1.  AD DS で新しいテスト グループを作成します。
 2.  同期時刻まで待ちます。
 3.  Azure AD テナントを調べ、新しいテスト グループ名があることを確認します。
 
@@ -179,10 +179,10 @@ Azure AD Connect Health ポータルには、オンプレミス ID サーバー�
 2. オンプレミスの AD DS ドメインに参加しているリモート コンピューターから、テスト ユーザー アカウントの資格情報を使用してコンピューターと Office ポータルにサインインします。
 3. **[設定] > [Office 365 の設定] > [パスワード] > [パスワードの設定]** を選択します。
 4. 現在のパスワードを入力し、新しいパスワードを入力し、確認のため新しいパスワードをもう一度入力します。
-5. Office ポータルとリモート コンピューターからサインアウトし、テスト ユーザー アカウントと新しいパスワードを使用してコンピューターにサインインします。 これにより、Azure AD テナントを使用してオンプレミスの AD DS のユーザー アカウントパスワードを変更することができたことが確認されます。
+5. Office ポータルとリモート コンピューターからサインアウトし、テスト ユーザー アカウントと新しいパスワードを使用してコンピューターにサインインします。 Azure AD テナントを使用したオンプレミスの AD DS のユーザー アカウントパスワードを変更することができたことが、これで証明されます。
 
 <a name="crit-identity-sso"></a>
-## <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>オプション: ユーザーは Azure AD シームレス シングル サインオンを使用してサインインできる
+## <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>オプション: ユーザーは Azure AD シームレス シングル サインオンを使用してサインインできます
 
 クラウドベースのアプリケーション (Office 365 など) へのユーザーのサインイン方法を組織が簡素化できるように、[Azure AD Connect: シームレス シングル サインオン](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)を有効にしています。
 
@@ -210,7 +210,7 @@ Azure AD Connect Health ポータルには、オンプレミス ID サーバー�
 
 このオプション条件を省略した場合、IT 管理者がすべての Azure AD グループ管理タスクを手動で実行する必要があります。
 
-必要に応じて、[手順 6](identity-self-service-group-management.md#identity-self-service-groups) がこのオプション条件を満たすのに役立ちます。
+必要に応じて、[手順 6](identity-self-service-group-management.md#identity-self-service-groups)がこのオプション条件を満たすのに役立ちます。
 
 ### <a name="how-to-test"></a>テスト方法
 1.  Azure Portal で Azure AD にテスト ユーザー アカウントを作成します。
@@ -234,7 +234,7 @@ Azure AD の動的グループを決定し、「[Azure Active Directory で動�
 
 Sales グループと Accounting グループが動的グループである場合は、必要な操作はユーザー アカウントの Department の値の変更だけです。
 
-必要に応じて、[手順 6](identity-self-service-group-management.md#identity-dyn-groups) がこのオプション条件を満たすのに役立ちます。
+必要に応じて、[手順 6](identity-self-service-group-management.md#identity-dyn-groups)がこのオプション条件を満たすのに役立ちます。
 
 ### <a name="how-to-test"></a>テスト方法
 
@@ -255,7 +255,7 @@ Office 365 と EMS の両方のライセンスの割り当てと削除が自動�
 - Office 365 および EMS へのアクセス権を付与する予定の新しいユーザーにライセンスを割り当てる。
 - 組織に所属していないユーザーや、Office 365 および EMS へのアクセス権がないユーザーからライセンスを削除する。
 
-必要に応じて、[手順 6](identity-self-service-group-management.md#identity-group-license) がこのオプション条件を満たすのに役立ちます。
+必要に応じて、[手順 6](identity-self-service-group-management.md#identity-group-license)がこのオプション条件を満たすのに役立ちます。
 
 ### <a name="how-to-test"></a>テスト方法
 

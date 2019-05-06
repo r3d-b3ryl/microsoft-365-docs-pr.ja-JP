@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織に最適なユーザーとグループのセットを計画します。
-ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c74ff672ce84a5609c11eb4fa7a0405d350349ab
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283798"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553296"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>手順 1: ユーザーおよびグループを計画する
 
@@ -42,7 +42,7 @@ ID インフラストラクチャを作成するには、プライマリ ID プ�
 - **Active Directory Domain Services (AD DS)**: Windows Server を実行しているコンピューターでホストされているイントラネット ID プロバイダーです。 これは通常、既存のオンプレミス ID プロバイダーを持つ組織で使用されます。
 - **Azure Active Directory (Azure AD)**: 環境の管理および保護のためのさまざまな機能を提供するクラウドベースの Identity as a Service (IDaaS) です。 これは通常、既存のオンプレミス インフラストラクチャを持たない組織で使用されます。
 
-組織に既存のオンプレミス ID プロバイダーがある場合、Active Directory Domain Services (AD DS) のユーザー アカウントとグループを Azure AD と同期し、Microsoft 365 Enterprise のクラウドベース サービスによりシームレスにアクセスできるようにします。 また、Azure AD を使用して、Microsoft クラウドにのみ存在するグループを作成および管理することもできます。
+組織に既存のオンプレミス ID プロバイダーがある場合、AD DS のユーザー アカウントとグループを Azure AD と同期し、Microsoft 365 Enterprise のクラウドベース サービスによりシームレスにアクセスできるようにします。 また、Azure AD を使用して、Microsoft クラウドにのみ存在するグループを作成および管理することもできます。
 
 Azure AD でユーザーとグループを作成した後には、次の操作を実行できます。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の Office 365 ProPlus インフラストラクチャを展開する手順。
-ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290949"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400231"
 ---
 # <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
@@ -51,7 +51,7 @@ Office 365 ProPlus を使用すると、Microsoft 365 Enterprise の次の戦略
 既に Office 365 ProPlus を展開している場合は、このフェーズの[終了条件](office365proplus-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件を満たしていることを確認してください。
 
 >[!Note]
->Windows 10 Enterprise と Office 365 ProPlus の両方を展開し、[モダン デスクトップ](https://www.microsoft.com/microsoft-365/modern-desktop)に移行するには、「[モダン デスクトップ展開センター](http://aka.ms/howtoshift)」を参照してください。
+>Windows 10 Enterprise と Office 365 ProPlus の両方を展開するには、[デスクトップ展開センター](desktop-deployment-center-home.md)を参照してください。
 >
 
 ## <a name="step-1-assess-your-environment"></a>手順 1: 環境を評価する

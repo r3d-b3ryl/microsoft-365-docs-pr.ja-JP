@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise のデモ、概念実証、開発/テスト環境を設定します。
-ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: e45a4c903932116a54f0660f08b394d8d2f91307
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353142"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553286"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -49,7 +49,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [パスワード ハッシュ同期](password-hash-sync-m365-ent-test-environment.md)
   
-   Active Directory Domain Services (AD DS) ドメイン コントローラーからのパスワード ハッシュによるディレクトリ同期を有効にしてテストします。
+   AD DS ドメイン コントローラーからのパスワード ハッシュによるディレクトリ同期を有効にしてテストします。
 
 - [パススルー認証](pass-through-auth-m365-ent-test-environment.md)
   
