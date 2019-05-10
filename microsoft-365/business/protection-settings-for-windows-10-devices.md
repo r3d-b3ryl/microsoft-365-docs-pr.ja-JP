@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Windows 10 デバイスでアプリ管理ポリシーを作成し、作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f649454417dceae05255df6b37760af99c0b8d4f
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660388"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Windows 10 デバイスのアプリケーション保護設定を設定する
 
@@ -37,7 +37,7 @@ ms.locfileid: "32278182"
 
 ユーザーが作業タスクを実行する個人の Windows 10 デバイスを持っている場合、それらのデバイスでもデータを保護することができます。
   
-1. グローバル管理者の資格情報を使用して、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)にサインインします。 [ **管理者**] タイルを選び、管理センターに移動します。 
+1. の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。 
     
 2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
 
@@ -45,15 +45,11 @@ ms.locfileid: "32278182"
     
 4. [ **ポリシーの種類**] で、[ **Windows 10 のアプリケーション管理**] を選びます。
     
-5. Under ** Device type **, choose either **Personal** or **Company Owned**.
+5. [**デバイスの種類**] で、[**個人**] または [**会社所有**] のどちらかを選択します。
     
 6. [ **作業ファイルを暗号化する**] が自動的にオンになります。 
     
 7. 作業ファイルをユーザーの PC に保存させたくない場合は、[ **ユーザーが会社のデータを個人用のファイルにコピーすることを防止し、作業ファイルを OneDrive for Business に保存するようユーザーに強制します**] を **オン**に設定します。 
-    
-8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. 詳細については、「[利用可能な設定](#available-settings)」を参照してください。 
-    
-    [ **既定の設定に戻す**] リンクを使用すれば、既定の設定にいつでも戻すことができます。 
     
 9. [ **Windows デバイスでデータを回復します**] を展開し、 **オン**にすることをお勧めします。
     
@@ -63,24 +59,10 @@ ms.locfileid: "32278182"
     
     ![Browse to Data Recovery Agent certificate.](media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. その他のドメインまたは SharePoint Online の場所を追加してリストに表示されているアプリ内のすべてのファイルが確実に保護されるようにする場合は、[ **その他のネットワークとクラウドの場所の保護**] を展開します。いずれかのフィールドに複数の項目を入力する必要がある場合は、項目間にセミコロン (;) を使用します。 
+10. その他のドメインまたは SharePoint Online の場所を追加してリストに表示されているアプリ内のすべてのファイルが確実に保護されるようにする場合は、[ **その他のネットワークとクラウドの場所の保護**] を展開します。いずれかのフィールドに複数の項目を入力する必要がある場合は、項目間にセミコロン (;) を使用します。
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
     
 12. 最後に、[ **追加**] を選択してポリシーを保存し、それをデバイスに割り当てます。 
-    
-## <a name="available-settings"></a>利用可能な設定
-
-次の設定は、ユーザーが Office 作業ファイルにアクセスする方法を管理するために使用できます。
-  
-詳細については、「[Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法](map-protection-features-to-intune-settings.md)」をご覧ください。
-  
-|**設定**|**説明**|
-|:-----|:-----|
-|Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> |この設定を **オン**にすると、ユーザーは、ユーザー名とパスワードの他に、別の認証フォームを提供しないと、モバイル デバイスで Office アプリを使用できません。  <br/> |
-|ログインに指定の回数失敗した場合に PIN をリセットする  <br/> |承認されていないユーザーが PIN をランダムに推測するのを防ぐため、指定した回数、エントリを間違うと、PIN がリセットされます。  <br/> |
-|次の時間 Office アプリのアイドル状態が続いた場合にユーザーはもう一度サインインする必要がある  <br/> |この設定は、もう一度サインインを求められるまで、どのくらいユーザーをアイドル状態にできるかを指定します。  <br/> |
-   
-

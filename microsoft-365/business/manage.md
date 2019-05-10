@@ -17,17 +17,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Microsoft 365 Business 関連の管理タスク、モバイルデバイス、Windows 10pcs、およびその他の多くのタスクを管理する方法について説明します。
-ms.openlocfilehash: 993db51ec487237395ca57290e37a6c5edbce8b8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Microsoft 365 Business 関連の管理タスク、モバイルデバイス、Windows 10PCs、およびその他の多くのタスクを管理する方法について説明します。
+ms.openlocfilehash: 0d0f9292307144314d25f712867cf1caa7cdd0ff
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278577"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660512"
 ---
 # <a name="manage-microsoft-365-business"></a>Microsoft 365 Business の管理
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Microsoft 365 Business の一般的な管理タスク
+
+Office 365 for business の[管理者向けコンテンツ](/Office365/Admin/admin-home.md)のほとんどは、Microsoft 365 business にも適用されます。
 
 - [Microsoft 365 Business にその他のユーザーを追加する](add-users-m365b.md)
     

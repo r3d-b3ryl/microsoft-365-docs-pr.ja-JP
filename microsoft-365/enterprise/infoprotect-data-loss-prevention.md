@@ -12,7 +12,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Microsoft 365 で Office 365 データ損失防止を理解して展開します。
+description: Microsoft 365 の Office 365 データ損失防止を理解して展開する。
 ms.openlocfilehash: d0a8beae3797e59eb1eb130afb9fd123be57d909
 ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
 ms.translationtype: HT
@@ -22,35 +22,35 @@ ms.locfileid: "33308353"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>ステップ 5: Office 365 データ損失防止を構成する
 
-*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
+*この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Office 365 セキュリティ & コンプライアンス センターのデータ損失防止 (DLP) ポリシーにより、Microsoft 365 全体の機密情報の識別、監視、自動保護ができます。 DLP ポリシーを用いて次が行えます:
+Office 365 セキュリティ/コンプライアンス センターのデータ損失防止 (DLP) ポリシーを使用することにより、Microsoft 365 全体で機密情報の識別、監視、自動保護を行えます。 DLP ポリシーを使用すると、以下を行えます:
 
-- Exchange Online、SharePoint Online、OneDrive for Business、Microsoft Teams などの複数の保管場所のまたがる機密情報を識別します。 
-- ドキュメントへのアクセスをブロックしたり、機密情報を含むメールをブロックしたりすることで、意図しない機密情報の共有を防ぎます。
-- デスクトップ バージョンの Excel、PowerPoint、Word 内の機密情報を監視し、保護します。
-- メール通知とポリシー ヒントを用いて、ワークフローを中断することなく準拠した状態を保つ方法をユーザーが理解するのを助けます。 
-- 組織の DLP ポリシーと一致するコンテンツを示す DLP レポートを表示します。
+- Exchange Online、SharePoint Online、OneDrive for Business、Microsoft Teams などの複数の保管場所での機密情報の識別。 
+- ドキュメントへのアクセスのブロックや機密情報を含むメールのブロックによる、意図しない機密情報の共有の防止。
+- デスクトップ バージョンの Excel、PowerPoint、Word 内の機密情報の監視と保護。
+- ワークフローを中断することなく遵守を維持する方法をユーザーが理解できるようにするための、メール通知とポリシー ヒントによるサポート。 
+- 組織の DLP ポリシーと一致するコンテンツを示す DLP レポートの表示。
 
-DLP ポリシーでは次を指定します:
+DLP ポリシーは、以下を指定します:
 
-- **場所:** Microsoft Teams のチャットおよびチャネルと、Exchange Online、SharePoint Online、OneDrive for Business、Microsoft Teamsなどの保管場所。
-- **日時:** 特定のポリシー ルールの範囲内でコンテンツが一致する必要のある条件。　
-- **方法:** ポリシー ルールに一致している範囲内での一致条件に対応する自動的なアクション。
+- **場所:** Exchange Online、SharePoint Online、OneDrive for Business のサイトの他、Microsoft Teams のチャットおよびチャネルなどの保管場所。
+- **日時:** コンテンツが一致する必要のある特定のポリシー ルール内の条件。　
+- **方法:** 一致する条件に対して自動的に実行される、一致するポリシー ルールが指定するアクション。
 
 つまり、次のとおりです。
 
-- 上記の保管場所内 (場所) のドキュメントの場合、ルール (日時) の条件がコンテンツと一致していれば、ルールで指定されたアクション (方法) を自動的に実行します。
+- 条件に一致する保管場所にあるドキュメントに対して (場所)、そのコンテンツがルールの条件に一致する場合 (日時)、そのルールが指定するアクションが自動的に実行されます (方法)。
 
-必要な DLP ポリシー セットを決定するには、データ損失からの保護を必要とする範囲内のドキュメントとデータの種類を解析する必要があります。 たとえば、米国の金融機関の場合は、社会保障番号と共にドキュメントが組織の外で共有されたり、組織の外の保管場所にメールで送信されたりするのを防ぐ DLP ポリシーを作成します。
+必要な DLP ポリシー セットの決定に際しては、データ損失からの保護を必要とするドキュメントおよびそれらに含まれるデータの種類を分析する必要があります。 たとえば、米国の金融機関の場合が、社会保障番号を含むドキュメントが組織外部と共有されたり組織外部の場所にメールで送信されたりすることを防止する DLP を作成するとします。
 
-次に、正しい DLP の動作を保証して誤検知を最小化するところの保管場所のテストと共にポリシーの設定とテストを行います。
+次に、DLP の正常な動作を確認して誤検知を最小化するために、テスト用の保管場所を使用してポリシーの構成とテストを行います。
 
-最後に、従業員の新しいポリシーと従業員として望ましい行動の通知と、保管場所の適用範囲の拡張を行うことにより、組織へとそのポリシーを展開します。
+最後に、新しいポリシーおよびそれらが指定する動作を従業員に告知し、保管場所の適用範囲を広げます。このようにしてポリシーを組織で展開します。
 
-詳細については、[DLP のポリシー勧告を見る](https://docs.microsoft.com/office365/securitycompliance/get-started-with-dlp-policy-recommendations)を参照してください。
+詳細については、「[DLP ポリシーの推奨事項について](https://docs.microsoft.com/office365/securitycompliance/get-started-with-dlp-policy-recommendations)」を参照してください。
 
 中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step5)を確認できます。
 

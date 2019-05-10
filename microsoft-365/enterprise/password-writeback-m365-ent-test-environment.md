@@ -16,16 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用のパスワードの書き戻しを構成する。'
-ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 13fffb595595269b627a1cc499558796c6306205
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291452"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553346"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 
-ユーザーが Azure Active Directory (Azure AD) からパスワードを更新できるようにします。更新されたパスワードはローカルの Active Directory Domain Services (AD DS) にレプリケートされます。パスワードの書き戻しにより、ユーザーは元のユーザー アカウントが保存されているオンプレミスの Active Directory Domain Services (AD DS) でパスワードを更新する必要がなくなります。オンプレミス ネットワークにリモート アクセス接続できないローミング ユーザーやリモート ユーザーにとって便利な機能です。
+ユーザーが Azure Active Directory (Azure AD) からパスワードを更新できるようにします。更新されたパスワードはローカルの Active Directory Domain Services (AD DS) にレプリケートされます。パスワードの書き戻しにより、ユーザーは元のユーザー アカウントが保存されているオンプレミスの AD DS でパスワードを更新する必要がなくなります。オンプレミス ネットワークにリモート アクセス接続できないローミング ユーザーやリモート ユーザーにとって便利な機能です。
 
 この記事では、Microsoft 365 テスト環境でのパスワード書き戻しを構成する方法について説明します。
 
@@ -55,9 +55,9 @@ ms.locfileid: "32291452"
 
 まずはじめに、User 1 をグローバル管理者ロールとして構成します。
 
-1. 「[Office ポータル](https://office.com)」で、グローバル管理者アカウントでサインインします。
+1. [Microsoft 365 管理センター](https://portal.microsoft.com)から、全体管理者アカウントでサインインします。
 
-2. [**管理**] タイルをクリックします。ブラウザーの新しい [**Microsoft 365 管理センター**] タブで、[**アクティブなユーザー**] をクリックします。
+2. **[アクティブなユーザー]** をクリックします。
  
 3. [**アクティブなユーザー**] ページで、[**user1**] アカウントをクリックします。
 

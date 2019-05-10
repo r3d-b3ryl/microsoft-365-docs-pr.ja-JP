@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Windows 10 デバイスをセキュリティで保護するために Microsoft 365 Business で利用可能な既定の設定とその他の設定について説明します。
-ms.openlocfilehash: f9e890cde7a8290a9a8e81720d32a6a2889c312f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5dc6ede8f31f5837d59c200e0b76083dcf419e05
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285924"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660377"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Windows 10 の PC のデバイス保護設定を設定する
 
@@ -34,7 +34,7 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. グローバル管理者の資格情報を使用して、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)にサインインします。 
+1. の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。 
     
 2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
   
@@ -60,7 +60,7 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
   
 |||
 |:-----|:-----|
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
 |デバイスに対する攻撃を回避するルールを使用する  <br/> |オンにすると、攻撃の回避により、デバイス感染のためにマルウェアが通常使用するアクションやアプリをブロックすることができます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[攻撃の回避](https://go.microsoft.com/fwlink/?linkid=870417)」を参照してください。  <br/> |

@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: windows 自動操縦を使用して、ビジネス用に新しい windows 10 デバイスをセットアップする方法について説明します。
-ms.openlocfilehash: e0802ddcc0964d0b8d102f7dbdb9116b33cdcf58
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Windows 自動操縦を使用して、ビジネス用に新しい Windows 10 デバイスをセットアップする方法について説明します。
+ms.openlocfilehash: 8c4a14b4b9dcbf7a30c1e6e0bdd53418a1ab8a03
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277132"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660681"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
-従業員にデバイスを渡すとすぐに生産的に使用できるように、Windows AutoPilot を使ってビジネス用に新しい Windows 10 デバイスを設定することができます。
+Windows 自動操縦を使用して、従業員に提供されるとすぐに生産性を高めることができるように、自社の**新しい**windows 10 デバイスをセットアップすることができます。
   
 ## <a name="device-requirements"></a>デバイスの要件
 
@@ -41,13 +41,17 @@ ms.locfileid: "32277132"
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>セットアップ ガイドを使用して、デバイスとプロファイルを作成する
 
+![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
+
 まだ作成したデバイス グループまたはプロファイルがない場合は、ステップ バイ ステップ ガイドを使用して開始するのが最適な方法ですが、ガイドを使用せずに、[デバイスを追加](create-and-edit-autopilot-devices.md)して[プロファイルを割り当てる](create-and-edit-autopilot-profiles.md)こともできます。 
   
-1. Microsoft 365 Business 管理センターで [ **デバイス アクション**] カードを見つけて、[ **AutoPilot で Windows を展開する**] を選びます。
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。
+
+2. 左側のナビゲーションで、[**デバイス** \>の**自動操縦**] を選択します。
+
+    ![管理センターで、[デバイス] を選択し、[自動操縦] をクリックします。](media/AutoPilot.png)
   
-2. [ **Windows の準備**] ページで、[ **スタート ガイド**] をクリックまたはタップします。
+2. [**自動操縦**] ページで、[**スタートガイド**] をクリックまたはタップします。
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   

@@ -6,7 +6,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
-- 'O365E_BCSSetup4OfficeMobile '
+- O365E_BCSSetup4OfficeMobile
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: モバイルデバイスから Office アプリへのアクセスを保護するのに役立つ保護ポリシーについて説明します。
-ms.openlocfilehash: b77d30686b26f95de684238d1b9afd57550a7c7f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b49ec33f4899a25f92ffd9d7a25d3e435016749e
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660340"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>ユーザーによるモバイル デバイスの Office ドキュメントのアクセス方法を管理する
 
@@ -40,11 +40,11 @@ ms.locfileid: "32278611"
   
 |||
 |:-----|:-----|
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> |この設定を **オン**にすると、ユーザーは、ユーザー名とパスワードの他に、別の認証フォームを提供しないと、モバイル デバイスで Office アプリを使用できません。  <br/> |
 |ログインに指定の回数失敗した場合に PIN をリセットする  <br/> |承認されていないユーザーが PIN をランダムに推測するのを防ぐため、指定した回数、エントリを間違うと、PIN がリセットされます。  <br/> |
 |次の時間 Office アプリのアイドル状態が続いた場合にユーザーはもう一度サインインする必要がある  <br/> |この設定は、もう一度サインインを求められるまで、どのくらいユーザーをアイドル状態にできるかを指定します。  <br/> |
 |脱獄またはルート化したデバイスでの作業ファイルへのアクセスを拒否する  <br/> |賢いユーザーは、脱獄またはルート化されたデバイスを持っている場合があります。これは、ユーザーがオペレーティング システムを変更できるため、デバイスがマルウェアの危険にさらされる可能性が高くなることを意味します。この設定を **オン**にすると、これらのデバイスはブロックされます。  <br/> |
-|Office アプリのコンテンツを個人のアプリにコピーすることをユーザーに許可する  <br/> |これは既定で許可していますが、設定を **オン**にすると、ユーザーは作業ファイル内の情報を個人のファイルにコピーできます。この設定を **オフ**にした場合、ユーザーは作業ファイルから個人用アプリまたは個人のアカウントに情報をコピーすることはできません。  <br/> |
+|ユーザーが Office アプリから個人用アプリにコンテンツをコピーすることを許可しない  <br/> |この設定が**オン**の場合、ユーザーは作業ファイル内の情報を個人用ファイルにコピーすることはできません。 この設定が**オフ**の場合、ユーザーは作業ファイルから個人のアプリまたは個人のアカウントに情報をコピーできます。  <br/> |
    
 

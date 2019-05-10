@@ -4,19 +4,19 @@ hide_bc: true
 ms.topic: hub-page
 ms.author: robmazz
 author: robmazz
-keywords: microsoft 365 Business、microsoft 365、Business、SMB、中小企業、microsoft 365 ビジネスドキュメント、ドキュメント、技術情報
+keywords: Microsoft 365 Business、Microsoft 365、Business、SMB、中小企業、Microsoft 365 ビジネスドキュメント、ドキュメント、技術情報
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 title: Microsoft 365 ビジネスリソース
 description: Microsoft Office 365、Windows 10、Enterprise Mobility + Security をビジネスで一緒に計画、展開、および使用する方法について説明します。これにより、チームワークとロック解除を可能にする統合された安全なインフラストラクチャが実現されます。
-ms.openlocfilehash: fc3a702f76426f3b7ffcb0f45996b097d0d17e94
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 3c5cc341734896cb9a42565c8647f3f5ac37fc5b
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660293"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -41,8 +41,10 @@ ms.locfileid: "32278499"
                                             </div>
                                             <div class="cardText">
                                                 <h3>参照</h3>
-                                                <P><a href="https://support.office.com/article/what-is-microsoft-365-business-901e2522-c2cf-4b8c-894e-f482cda3347a" target="_blank">概要</a></p>
-                                                <P><a href="microsoft-365-business-overview.md" target="_blank">Microsoft 365 Business を使い始める</a></p> <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">FAQ</a></p>
+                                                <P><a href="https://support.office.com/article/what-is-microsoft-365-business-901e2522-c2cf-4b8c-894e-f482cda3347a" target="_blank">ビデオの概要</a></p>
+                                                <P><a href="microsoft-365-business-overview.md" target="_blank">Microsoft 365 Business とは</a></p>
+                                                <P><a href="https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description" target="_blank">サービスの説明</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">FAQ</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -58,8 +60,12 @@ ms.locfileid: "32278499"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Microsoft 365 Business をセットアップする</h3>
-                                                <P><a href="set-up.md" target="_blank">設定</a></p>
+                                                <h3>設定</h3>
+                                              <P><a href="get-microsoft-365-business.md" target="_blank">Microsoft 365 Business を取得する</a></p>
+                                               <P><a href="set-up.md" target="_blank">Microsoft 365 Business をセットアップする</a></p>
+                                                <P><a href="set-up-windows-devices.md" target="_blank">Windows 10 デバイスをセットアップする</a></p>
+                                                <P><a href="set-up-mobile-devices.md" target="_blank">IPhone および Android デバイスをセットアップする</a></p>
+                                                <P><a href="auto-install-or-uninstall-office.md" target="_blank">Windows 10 に Office をインストールする</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -93,9 +99,10 @@ ms.locfileid: "32278499"
                                             </div>
                                             <div class="cardText">
                                                 <h3>ビジネスデータとデバイスを保護する</h3>
-                                                <P><a href="manage.md" target="_blank">デバイスを管理する</a></p> <P><a href="app-protection-settings-for-android-and-ios.md" target="_blank">iPhone および Android デバイスを保護する</a></p>
-                                                 <P><a href="https://support.office.com/article/top-10-ways-to-secure-office-365-and-microsoft-365-business-plans-from-cyber-threats-de2da300-dbb6-4725-bb12-b85a9d296e75" target="_blank">Microsoft 365 Business をセキュリティで保護するための10位の方法</a></p>
+                                                 <P><a href="https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data"target="_blank">Microsoft 365 Business をセキュリティで保護するための10位の方法</a></p>
                                                 <P><a href="security-features.md" target="_blank">セキュリティ機能の詳細情報</a></p>
+                                                <P><a href="remove-company-data.md" target="_blank">デバイスからデータを削除する</a></p>
+                                                <P><a href="reset-devices-to-factory-settings.md" target="_blank">デバイスをリセットする</a></p>
                                                 </div>
                                         </div>
                                     </div>
@@ -112,7 +119,6 @@ ms.locfileid: "32278499"
                                             </div>
                                             <div class="cardText">
                                                 <h3>使用項目</h3>
-                                                <P><a href="set-up-mobile-devices.md" target="_blank">モバイルデバイスをセットアップする</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">すべてのユーザーが Office を使用して実行できるようにする</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10 へのユーザーの切り替えを支援する</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune トレーニング</a></p>
@@ -127,14 +133,14 @@ ms.locfileid: "32278499"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Windows logo" />
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/success-blue.svg" alt="Success logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Windows 10</h3>
-                                                <P><a href="set-up-windows-devices.md" target="_blank">Windows 10 デバイスをセットアップする</a></p>
-                                                <P><a href="remove-company-data.md" target="_blank">デバイスからデータを削除する</a></p>
-                                                <P><a href="reset-devices-to-factory-settings.md" target="_blank">デバイスをリセットする</a></p>
+                                                <h3>パートナー向けのリソース</h3>
+                                                <P><a href="get-microsoft-365-business.md" target="_blank">パートナーセンターから Microsoft 365 Business を取得する</a></p>
+                                                <P><a href="https://www.microsoft.com/microsoft-365/partners/business" target="_blank">Microsoft 365 パートナーページ</a></p>
+                                                <P><a href="https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck" target="_blank">Microsoft 365 Business ライセンスデッキ</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -154,9 +160,10 @@ ms.locfileid: "32278499"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft パートナーからヘルプを取得する</h3>
+                                                    <h3>サポートが必要な場合</h3>
                                                     <P><a href="https://www.microsoft.com/solution-providers/search" target="_blank">パートナーを検索する</a></p>
-                                                    <P><a href="https://www.microsoft.com/microsoft-365/partners/business" target="_blank">パートナーリソース</a></p>
+                                                    <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365 のサポートに問い合わせる</a></p>
+                                                    <P><a href="https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB" target="_blank">中小企業の技術コミュニティ</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,10 +179,9 @@ ms.locfileid: "32278499"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>サポートが必要な場合</h3>
-                                                     <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
-                                                     <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
-                                                     <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
+                                                    <h3>ヘルプドキュメント</h3>
+                                                     <P><a href="https://docs.microsoft.com/office/admins-itprofessionals" target="_blank">Office 管理ドキュメント</a></p>
+                                                     <P><a href="https://docs.microsoft.com/intune/index">Microsoft Intune ドキュメント</a></p>
                                                 </div>
                                             </div>
                                         </div>

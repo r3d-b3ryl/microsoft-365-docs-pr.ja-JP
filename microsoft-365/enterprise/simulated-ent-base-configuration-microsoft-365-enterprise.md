@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 用にシミュレートされたエンタープライズ テスト環境を作成します。
-ms.openlocfilehash: 173622666420976199709d311ef67a7f0be3d867
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: 907bec83ac4ad820ec1cb710209614636a4f54e8
+ms.sourcegitcommit: 1b77b699b8e23df8b98530dfad3a29b4aaa0753c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553373"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867987"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
@@ -123,6 +123,7 @@ New-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $l
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name TestLab
 $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 次に、DC1 仮想マシンを作成し、Testlab 仮想ネットワークの仮想マシン用の **testlab.**\<パブリック ドメイン> AD DS ドメインと DNS サーバーのドメイン コントローラーとして構成します。たとえば、パブリック ドメイン名が **<span>contoso</span>.com** の場合、DC1 仮想マシンは **<span>testlab</span>.contoso.com** ドメインのドメイン コントローラーになります。

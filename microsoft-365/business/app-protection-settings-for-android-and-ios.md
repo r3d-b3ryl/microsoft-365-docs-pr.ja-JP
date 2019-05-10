@@ -21,20 +21,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリの管理ポリシーを作成、編集、または削除する方法と、Android または iOS デバイスで作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 04479360bf13a8ff685a91ed95440c08f8cf80b4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277455"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660566"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
+![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
+
 ## <a name="create-an-app-management-policy"></a>アプリの管理ポリシーを作成する
 
-1. グローバル管理者の資格情報を使用して、 [Microsoft 365 Business 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)にサインインします。 
+1. の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。 
     
-2. 管理センターで、[**デバイス** \> **ポリシー** \> ] [**ポリシーの追加**] を選択します。
+2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
   
 3. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
     
@@ -62,9 +64,9 @@ ms.locfileid: "32277455"
     
 ## <a name="delete-an-app-management-policy"></a>アプリの管理ポリシーを削除する
 
-1. **ポリシー** カードで、[ **ポリシーの削除**] を選びます。
+1. [**ポリシー** ] ページで、ポリシーを選択してから**削除**します。
     
-2. On the **Delete policy** pane, choose the policies you want to delete \> **Select**, then **Confirm** to delete the policy or policies you chose. 
+2. [**ポリシーの削除**] ウィンドウで、[**確認**] を選択して、選択したポリシーまたはポリシーを削除します。 
     
 ## <a name="available-settings"></a>利用可能な設定
 
@@ -78,7 +80,7 @@ ms.locfileid: "32277455"
   
 |||
 |:-----|:-----|
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |この日数後、非アクティブなデバイスから作業ファイルを削除する  <br/> |ここで指定した日数の間デバイスが使用されなかった場合、デバイスに保存されているすべての作業ファイルは自動的に削除されます。  <br/> |
 |ユーザーにすべての作業ファイルを OneDrive for Business に強制的に保存させる  <br/> |この設定を **オン**にすると、作業ファイルの使用可能な保存場所は OneDrive for Business のみになります。  <br/> |
 |作業ファイルの暗号化  <br/> |作業ファイルが暗号化によって保護されるように、この設定は常に **オン**にします。デバイスが紛失したり盗難された場合でも、企業データが読まれることはありません。  <br/> |
@@ -89,7 +91,7 @@ ms.locfileid: "32277455"
   
 |||
 |:-----|:-----|
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> |この設定を **オン**にすると、ユーザーは、ユーザー名とパスワードの他に、別の認証フォームを提供しないと、モバイル デバイスで Office アプリを使用できません。  <br/> |
 |ログインに指定の回数失敗した場合に PIN をリセットする  <br/> |承認されていないユーザーが PIN をランダムに推測するのを防ぐため、指定した回数、エントリを間違うと、PIN がリセットされます。  <br/> |
 |次の時間 Office アプリのアイドル状態が続いた場合にユーザーはもう一度サインインする必要がある  <br/> |この設定は、もう一度サインインを求められるまで、どのくらいユーザーをアイドル状態にできるかを指定します。  <br/> |
