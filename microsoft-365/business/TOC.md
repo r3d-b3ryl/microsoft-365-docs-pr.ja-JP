@@ -1,8 +1,11 @@
-# [Microsoft 365 Business](index.md)
-## [概要](microsoft-365-business-overview.md)
+# Microsoft 365 Business
+## [Microsoft 365](index.md)
+## [Microsoft 365 Business とは](microsoft-365-business-overview.md)
 ## [Microsoft 365 Business を取得する](sign-up.md)
 ## [データ保護の前提条件](pre-requisites-for-data-protection.md)
-## [設定](set-up.md)
+## 設定
+### [セットアップの概要](set-up-overview.md)
+### [Microsoft 365 Business をセットアップする](set-up.md)
 ### [Windows Pro クリエーターの更新プログラムへのアップグレード](upgrade-to-windows-pro-creators-update.md)
 ### [モバイルデバイスをセットアップする](set-up-mobile-devices.md)
 ### [Windows デバイスをセットアップする](set-up-windows-devices.md)
@@ -14,8 +17,10 @@
 ## [セキュリティ保護](security-features.md)
 ### [ビジネスをセキュリティで保護する](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [高度なセキュリティ機能をセットアップする](set-up-advanced-security.md)
-## [管理](manage.md)
+## ユーザー
 ### [ユーザーを追加する](add-users-m365b.md)
+### [従業員を削除する](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## デバイスの管理
 ### [ポリシーとデバイスの表示と編集](view-policies-and-devices.md)
 ### [会社データを削除する](remove-company-data.md)
 ### [デバイスを出荷時の設定にリセットする](reset-devices-to-factory-settings.md)
@@ -26,7 +31,12 @@
 #### [Windows 10 Pc で設定を検証する](validate-settings-on-windows-10-pcs.md)
 ### [Windows 10 デバイスの保護設定](protection-settings-for-windows-10-devices.md)
 ## [Microsoft 365 Business への移行](migrate-to-microsoft-365-business.md)
-## [自動操縦デバイスとプロファイルを追加する](add-autopilot-devices-and-profile.md)
+## 請求
+### [請求内容](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [給与](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [キャンセル](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## パイロット
+### [自動操縦デバイスとプロファイルを追加する](add-autopilot-devices-and-profile.md)
 ### [AutoPilot プロファイルの作成と編集](create-and-edit-autopilot-profiles.md)
 ### [AutoPilot デバイスの作成と編集](create-and-edit-autopilot-devices.md)
 ### [自動操縦プロファイルの設定](autopilot-profile-settings.md)
