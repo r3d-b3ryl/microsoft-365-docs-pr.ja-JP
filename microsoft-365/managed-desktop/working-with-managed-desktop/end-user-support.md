@@ -1,22 +1,24 @@
 ---
 title: Microsoft マネージドデスクトップのサポートを受ける
 description: ''
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e48fdfc9708f0a1eb3b1cb0e5deb64d1a5ca748
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a073a5dfe61b036cbdc3bf9b0be08bc559acb548
+ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278230"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970474"
 ---
 # <a name="getting-help-for-end-users"></a>エンドユーザーのヘルプを取得する
 
-組織内のユーザーが Microsoft マネージドデスクトップデバイスでヘルプを取得する方法は2つあります。ヘルプアプリまたは電話サポートを**取得**します。 テストグループ内に存在するデバイスは、これらのエンドユーザーサポートオプションの対象外であることに注意してください。 
+組織内のユーザーが Microsoft マネージドデスクトップデバイスでヘルプを取得する方法は2つあります。ヘルプアプリまたは電話サポートを**取得**します。 これら両方のサポートオプションは、ユーザーが1日24時間、週7日利用できます。 
+>[!NOTE]
+>テストグループ内に存在するデバイスは、これらのエンドユーザーサポートオプションの対象外です。 
 
 ## <a name="get-help-app"></a>ヘルプアプリを取得する
 
@@ -32,13 +34,15 @@ ms.locfileid: "32278230"
 ## <a name="phone-support"></a>電話サポート
 
 Microsoft マネージドデスクトップデバイスを使用しているエンドユーザーも、通話可能な無料電話番号へのアクセス権を持っています。 これは、ヘルプが利用できない場合に使用することを目的としています。 たとえば、デバイスにサインインできない場合や、デバイスが壊れている場合などです。 電話サポートの電話番号は次のとおりです。
- 
 
-- 米国 & カナダ (ケベックを除く): + 1 855 425 0216
+- 米国: + 1 855 425 0216
+- カナダ (ケベックを除く): + 1 855 425 0216
 - 英国: + 44 800 026 0698
 - オーストラリア: + 61 180 037 0619
 
+>[!NOTE]
+>を呼び出すときに、デバイスのシリアル番号を準備しておいてください。 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他の技術情報
 - [Microsoft マネージドデスクトップの管理者サポート](admin-support.md)。 
 - [Microsoft マネージドデスクトップのサポート](../service-description/support.md)。
