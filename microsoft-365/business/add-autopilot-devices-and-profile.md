@@ -3,7 +3,7 @@ title: ステップ バイ ステップ ガイドを使用して、Autopilot デ
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.collection:
@@ -20,72 +20,72 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Windows 自動操縦を使用して、ビジネス用に新しい Windows 10 デバイスをセットアップする方法について説明します。
-ms.openlocfilehash: 8c4a14b4b9dcbf7a30c1e6e0bdd53418a1ab8a03
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 9a70978156fb26ac3aad08f1758b7ee125067d38
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072152"
 ---
-# <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a><span data-ttu-id="10937-103">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="10937-103">Use the step-by-step guide to add Autopilot devices and profile</span></span>
+# <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a><span data-ttu-id="b35c4-103">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="b35c4-103">Use the step-by-step guide to add Autopilot devices and profile</span></span>
 
-<span data-ttu-id="10937-104">Windows 自動操縦を使用して、従業員に提供されるとすぐに生産性を高めることができるように、自社の**新しい**windows 10 デバイスをセットアップすることができます。</span><span class="sxs-lookup"><span data-stu-id="10937-104">You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they are ready for productive use as soon as you give them to your employees.</span></span>
+<span data-ttu-id="b35c4-104">Windows 自動操縦を使用して、従業員に提供されるとすぐに生産性を高めることができるように、自社の**新しい**windows 10 デバイスをセットアップすることができます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-104">You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they are ready for productive use as soon as you give them to your employees.</span></span>
   
-## <a name="device-requirements"></a><span data-ttu-id="10937-105">デバイスの要件</span><span class="sxs-lookup"><span data-stu-id="10937-105">Device requirements</span></span>
+## <a name="device-requirements"></a><span data-ttu-id="b35c4-105">デバイスの要件</span><span class="sxs-lookup"><span data-stu-id="b35c4-105">Device requirements</span></span>
 
-<span data-ttu-id="10937-106">デバイスは次の要件を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="10937-106">Devices need to meet these requirements:</span></span>
+<span data-ttu-id="b35c4-106">デバイスは次の要件を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b35c4-106">Devices need to meet these requirements:</span></span>
   
-- <span data-ttu-id="10937-107">Windows 10 バージョン 1703 以降。</span><span class="sxs-lookup"><span data-stu-id="10937-107">Windows 10, version 1703 or later.</span></span>
+- <span data-ttu-id="b35c4-107">Windows 10 バージョン 1703 以降。</span><span class="sxs-lookup"><span data-stu-id="b35c4-107">Windows 10, version 1703 or later.</span></span>
     
-- <span data-ttu-id="10937-108">Windows out-of-box experience を行っていない新しいデバイス。</span><span class="sxs-lookup"><span data-stu-id="10937-108">New devices that have not been through Windows out-of-box experience.</span></span>
+- <span data-ttu-id="b35c4-108">Windows out-of-box experience を行っていない新しいデバイス。</span><span class="sxs-lookup"><span data-stu-id="b35c4-108">New devices that have not been through Windows out-of-box experience.</span></span>
     
-## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a><span data-ttu-id="10937-109">セットアップ ガイドを使用して、デバイスとプロファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="10937-109">Use the setup guide to create devices and profiles</span></span>
+## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a><span data-ttu-id="b35c4-109">セットアップ ガイドを使用して、デバイスとプロファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="b35c4-109">Use the setup guide to create devices and profiles</span></span>
 
 ![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
 
-<span data-ttu-id="10937-111">まだ作成したデバイス グループまたはプロファイルがない場合は、ステップ バイ ステップ ガイドを使用して開始するのが最適な方法ですが、ガイドを使用せずに、[デバイスを追加](create-and-edit-autopilot-devices.md)して[プロファイルを割り当てる](create-and-edit-autopilot-profiles.md)こともできます。</span><span class="sxs-lookup"><span data-stu-id="10937-111">If you have no device groups or profiles created yet, the best way to get started is by using the step-by-step guide, but you can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide.</span></span> 
+<span data-ttu-id="b35c4-111">まだ作成したデバイス グループまたはプロファイルがない場合は、ステップ バイ ステップ ガイドを使用して開始するのが最適な方法ですが、ガイドを使用せずに、[デバイスを追加](create-and-edit-autopilot-devices.md)して[プロファイルを割り当てる](create-and-edit-autopilot-profiles.md)こともできます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-111">If you have no device groups or profiles created yet, the best way to get started is by using the step-by-step guide, but you can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide.</span></span> 
   
-1. <span data-ttu-id="10937-112">の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。</span><span class="sxs-lookup"><span data-stu-id="10937-112">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
+1. <span data-ttu-id="b35c4-112">の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。</span><span class="sxs-lookup"><span data-stu-id="b35c4-112">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
 
-2. <span data-ttu-id="10937-113">左側のナビゲーションで、[**デバイス** \>の**自動操縦**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="10937-113">On the left nav choose **Devices** \> **AutoPilot**.</span></span>
+2. <span data-ttu-id="b35c4-113">左側のナビゲーションで、[**デバイス** \>の**自動操縦**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b35c4-113">On the left nav choose **Devices** \> **AutoPilot**.</span></span>
 
     ![管理センターで、[デバイス] を選択し、[自動操縦] をクリックします。](media/AutoPilot.png)
   
-2. <span data-ttu-id="10937-115">[**自動操縦**] ページで、[**スタートガイド**] をクリックまたはタップします。</span><span class="sxs-lookup"><span data-stu-id="10937-115">On the **AutoPilot** page, click or tap **Start guide**.</span></span>
+2. <span data-ttu-id="b35c4-115">[**自動操縦**] ページで、[**スタートガイド**] をクリックまたはタップします。</span><span class="sxs-lookup"><span data-stu-id="b35c4-115">On the **AutoPilot** page, click or tap **Start guide**.</span></span>
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. <span data-ttu-id="10937-p101">On the **Upload .csv file with list of devices** page, browse to a locations where you have the prepared .CSV file, then **Open** \> **Next**. The file should have three headers:</span><span class="sxs-lookup"><span data-stu-id="10937-p101">On the **Upload .csv file with list of devices** page, browse to a locations where you have the prepared .CSV file, then **Open** \> **Next**. The file should have three headers:</span></span>
+3. <span data-ttu-id="b35c4-p101">On the **Upload .csv file with list of devices** page, browse to a locations where you have the prepared .CSV file, then **Open** \> **Next**. The file should have three headers:</span><span class="sxs-lookup"><span data-stu-id="b35c4-p101">On the **Upload .csv file with list of devices** page, browse to a locations where you have the prepared .CSV file, then **Open** \> **Next**. The file should have three headers:</span></span>
     
-  - <span data-ttu-id="10937-119">列 A:デバイスのシリアル番号</span><span class="sxs-lookup"><span data-stu-id="10937-119">Column A: Device Serial Number</span></span>
+  - <span data-ttu-id="b35c4-119">列 A:デバイスのシリアル番号</span><span class="sxs-lookup"><span data-stu-id="b35c4-119">Column A: Device Serial Number</span></span>
     
-  - <span data-ttu-id="10937-120">列 B:Windows 製品 ID</span><span class="sxs-lookup"><span data-stu-id="10937-120">Column B: Windows Product ID</span></span>
+  - <span data-ttu-id="b35c4-120">列 B:Windows 製品 ID</span><span class="sxs-lookup"><span data-stu-id="b35c4-120">Column B: Windows Product ID</span></span>
     
-  - <span data-ttu-id="10937-121">列 C:ハードウェア ハッシュ</span><span class="sxs-lookup"><span data-stu-id="10937-121">Column C: Hardware Hash</span></span>
+  - <span data-ttu-id="b35c4-121">列 C:ハードウェア ハッシュ</span><span class="sxs-lookup"><span data-stu-id="b35c4-121">Column C: Hardware Hash</span></span>
     
-    <span data-ttu-id="10937-122">この情報は、ハードウェアの製造元から、または CSV ファイルを生成する [G-et-WindowsAutoPilotInfo PowerShell スクリプト](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)を使って、入手できます。</span><span class="sxs-lookup"><span data-stu-id="10937-122">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a CSV file.</span></span> 
+    <span data-ttu-id="b35c4-122">この情報は、ハードウェアの製造元から、または CSV ファイルを生成する [G-et-WindowsAutoPilotInfo PowerShell スクリプト](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)を使って、入手できます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-122">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a CSV file.</span></span> 
     
-    <span data-ttu-id="10937-p102">詳細については、[デバイスの一覧の CSV ファイル](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)を参照してください。また、[ **デバイスの一覧を含む .csv ファイルのアップロード**] ページでサンプル ファイルをダウンロードすることもできます。</span><span class="sxs-lookup"><span data-stu-id="10937-p102">For more information, see [Device list CSV-file](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e). You can also download a sample file on the **Upload .csv file with list of devices** page.</span></span> 
+    <span data-ttu-id="b35c4-p102">詳細については、[デバイスの一覧の CSV ファイル](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)を参照してください。また、[ **デバイスの一覧を含む .csv ファイルのアップロード**] ページでサンプル ファイルをダウンロードすることもできます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-p102">For more information, see [Device list CSV-file](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e). You can also download a sample file on the **Upload .csv file with list of devices** page.</span></span> 
     
-4. <span data-ttu-id="10937-p103">[ **プロファイルの割り当て**] ページで、既存のプロファイルを選択するか、新しいプロファイルを作成します。まだプロファイルがない場合は、新しく作成するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="10937-p103">On the **Assign a profile** page, you can either pick an existing profile, or create a new one. If you don't have one yet, you will be prompted to create a new one.</span></span> 
+4. <span data-ttu-id="b35c4-p103">[ **プロファイルの割り当て**] ページで、既存のプロファイルを選択するか、新しいプロファイルを作成します。まだプロファイルがない場合は、新しく作成するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-p103">On the **Assign a profile** page, you can either pick an existing profile, or create a new one. If you don't have one yet, you will be prompted to create a new one.</span></span> 
     
-    <span data-ttu-id="10937-127">プロファイルは、1 つのデバイスまたはデバイスのグループに適用できる設定のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="10937-127">A profile is a collection of settings that can be applied to a single device or to a group of devices.</span></span>
+    <span data-ttu-id="b35c4-127">プロファイルは、1 つのデバイスまたはデバイスのグループに適用できる設定のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="b35c4-127">A profile is a collection of settings that can be applied to a single device or to a group of devices.</span></span>
     
-    <span data-ttu-id="10937-p104">既定の機能は必須であり、自動的に設定されます。既定の機能は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="10937-p104">The default features are required and will be set automatically. The default features are:</span></span>
+    <span data-ttu-id="b35c4-p104">既定の機能は必須であり、自動的に設定されます。既定の機能は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="b35c4-p104">The default features are required and will be set automatically. The default features are:</span></span>
     
-  - <span data-ttu-id="10937-130">Cortana、OneDrive、および OEM の登録はスキップされます。</span><span class="sxs-lookup"><span data-stu-id="10937-130">Cortana, OneDrive and OEM registration is skipped.</span></span>
+  - <span data-ttu-id="b35c4-130">Cortana、OneDrive、および OEM の登録はスキップされます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-130">Cortana, OneDrive and OEM registration is skipped.</span></span>
     
-  - <span data-ttu-id="10937-131">会社のブランドを含む、サインイン エクスペリエンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="10937-131">Create sign-in experience with your company brand.</span></span>
+  - <span data-ttu-id="b35c4-131">会社のブランドを含む、サインイン エクスペリエンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="b35c4-131">Create sign-in experience with your company brand.</span></span>
     
-  - <span data-ttu-id="10937-132">使用しているデバイスは、Azure Active Directory アカウントに接続され、Microsoft 365 Business で管理されるように自動的に登録されます。</span><span class="sxs-lookup"><span data-stu-id="10937-132">Your devices are going to be connected to Azure Active Directory accounts and automatically enrolled to be managed by Microsoft 365 Business.</span></span>
+  - <span data-ttu-id="b35c4-132">使用しているデバイスは、Azure Active Directory アカウントに接続され、Microsoft 365 Business で管理されるように自動的に登録されます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-132">Your devices are going to be connected to Azure Active Directory accounts and automatically enrolled to be managed by Microsoft 365 Business.</span></span>
     
-    <span data-ttu-id="10937-133">詳しくは、</span><span class="sxs-lookup"><span data-stu-id="10937-133">For more information, see</span></span>
+    <span data-ttu-id="b35c4-133">詳しくは、</span><span class="sxs-lookup"><span data-stu-id="b35c4-133">For more information, see</span></span>
     
-    <span data-ttu-id="10937-134">「[AutoPilot プロファイルの設定について](autopilot-profile-settings.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="10937-134">[About AutoPilot Profile settings](autopilot-profile-settings.md) .</span></span> 
+    <span data-ttu-id="b35c4-134">「[AutoPilot プロファイルの設定について](autopilot-profile-settings.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="b35c4-134">[About AutoPilot Profile settings](autopilot-profile-settings.md) .</span></span> 
     
-5. <span data-ttu-id="10937-135">他の設定には、[ **プライバシーの設定をスキップする**] や [ **ユーザーがローカルの管理者になることを許可しない**] があります。既定では、両方が [ **オフ**] に設定されます。</span><span class="sxs-lookup"><span data-stu-id="10937-135">The other settings are **Skip privacy settings** and **Don't allow user to become the local admin**. These are both set to **Off** by default.</span></span> 
+5. <span data-ttu-id="b35c4-135">他の設定には、[ **プライバシーの設定をスキップする**] や [ **ユーザーがローカルの管理者になることを許可しない**] があります。既定では、両方が [ **オフ**] に設定されます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-135">The other settings are **Skip privacy settings** and **Don't allow user to become the local admin**. These are both set to **Off** by default.</span></span> 
     
-    <span data-ttu-id="10937-136">[ **次へ**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="10937-136">Choose **Next**.</span></span>
+    <span data-ttu-id="b35c4-136">[ **次へ**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-136">Choose **Next**.</span></span>
     
-6. <span data-ttu-id="10937-p105">[ **完了しました**] ページでは、作成 (または選択) したプロファイルが、デバイスの一覧をアップロードして作成したデバイス グループに適用されることを示しています。デバイスのユーザーが次にサインインすると、これらの設定が有効になります。[ **閉じる**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="10937-p105">**You're done** page indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. These settings will be in effect when the device users sign in next. Choose **Close**.</span></span>
+6. <span data-ttu-id="b35c4-p105">[ **完了しました**] ページでは、作成 (または選択) したプロファイルが、デバイスの一覧をアップロードして作成したデバイス グループに適用されることを示しています。デバイスのユーザーが次にサインインすると、これらの設定が有効になります。[ **閉じる**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="b35c4-p105">**You're done** page indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. These settings will be in effect when the device users sign in next. Choose **Close**.</span></span>
     
