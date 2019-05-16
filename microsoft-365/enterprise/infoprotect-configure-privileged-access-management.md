@@ -3,7 +3,7 @@ title: '手順 6: Office 365 の特権アクセス管理を構成する'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: 60b52825ead068cd0f068f78c1bbce263e8d7720
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33399951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072097"
 ---
 # <a name="step-6-configure-privileged-access-management-for-office-365"></a>手順 6: Office 365 の特権アクセス管理を構成する
 

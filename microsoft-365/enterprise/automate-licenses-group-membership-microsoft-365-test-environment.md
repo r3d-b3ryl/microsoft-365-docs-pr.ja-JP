@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 Enterprise テスト環境で、グループベースのライセンスと動的なグループメンバーシップを構成します。
-ms.openlocfilehash: 4ee929b345469d9cab05968a4a4c7f7399635b32
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 179284dce271c69939a560703561a32648af93b1
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353079"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072627"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のライセンスとグループメンバーシップを自動化する
 
@@ -41,11 +41,11 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 シミュレートされたエンタープライズで自動ライセンスおよびグループメンバーシップをテストする場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順を実行します。
   
 > [!NOTE]
-> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
+> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>フェーズ 2: 動的なグループメンバーシップおよび自動ライセンスを構成してテストする
 
-最初に、新しい sales グループを作成し、そのグループメンバーシップのルールを追加して、Department を sales に設定したユーザーアカウントが自動的に sales グループに追加されるようにします。
+最初に、新しい Sales グループを作成し、そのグループメンバーシップのルールを追加して、Department を Sales に設定したユーザーアカウントが自動的に Sales グループに追加されるようにします。
 
 1. インターネットブラウザーのプライベートインスタンスを使用して、office 365 のポータルに office 365 [https://portal.office.com](https://portal.office.com) E5 テストラボサブスクリプションの全体管理者アカウントでサインインします。
 2. ブラウザーの別のタブで、Azure portal に移動[https://portal.azure.com](https://portal.azure.com)します。
@@ -76,7 +76,7 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 2. [ **Microsoft 365 管理センター** ] タブで、[**アクティブなユーザー**] をクリックします。
 3. [**アクティブなユーザー** ] ページで、[ **User 4** ] アカウントをクリックします。
 4. [ **User 4** ] ウィンドウで、[**製品ライセンス**] の [**編集**] をクリックします。
-5. [**製品ライセンス**] ウィンドウで、 **enterprise Mobility + Security e5**および**Office 365 Enterprise e5**ライセンスをオフにして、[ **Save > Close**] をクリックします。
+5. [**製品ライセンス**] ウィンドウで、 **Enterprise Mobility + Security e5**および**Office 365 Enterprise e5**ライセンスをオフにして、[ **Save > Close**] をクリックします。
 6. User 4 アカウントの [プロパティ] で、製品ライセンスが割り当てられておらず、グループメンバーシップもないことを確認します。
 7. [**連絡先情報**] の [**編集**] をクリックします。
 8. [**連絡先情報の編集**] ウィンドウで、[**連絡先情報**] をクリックします。
@@ -86,9 +86,9 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 時間内に、次のように表示されるはずです。
 
 - **グループメンバーシップ**プロパティが**Sales** group で更新されました。
-- **enterprise Mobility + Security e5**および**Office 365 enterprise e5**ライセンスで更新された**製品ライセンス**のプロパティ。
+- **Enterprise Mobility + Security e5**および**Office 365 enterprise e5**ライセンスで更新された**製品ライセンス**のプロパティ。
 
-動的グループメンバーシップと自動ライセンスを運用環境に展開するための情報とリンクについては、id フェーズの以下の手順を参照してください。
+動的グループメンバーシップと自動ライセンスを運用環境に展開するための情報とリンクについては、Id フェーズの以下の手順を参照してください。
 
 - [自動ライセンスをセットアップする](identity-self-service-group-management.md#identity-group-license)
 - [動的グループ メンバーシップをセットアップする](identity-self-service-group-management.md#identity-dyn-groups)
@@ -103,6 +103,6 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise 展開](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
 
 [Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)

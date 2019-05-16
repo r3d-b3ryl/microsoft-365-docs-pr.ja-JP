@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントに対して Office 365 保持ラベルを作成して使用します。
-ms.openlocfilehash: 3d64cd245e117813cb4c81a6e9099cd1a0120317
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072417"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデータ分類
 
@@ -35,7 +35,7 @@ ms.locfileid: "32283540"
 シミュレートされたエンタープライズで Office 365 の保持ラベルを構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
 > [!NOTE]
-> Office 365 の保持ラベルのテストでは、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
+> Office 365 の保持ラベルのテストでは、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
 
 ## <a name="phase-2-create-office-365-retention-labels"></a>フェーズ 2: Office 365 の保持ラベルを作成する
 
@@ -55,7 +55,7 @@ ms.locfileid: "32283540"
     
 7. **[設定の確認]** ウィンドウで、**[ラベルを作成する]** をクリックします。
     
-8. 次の名前のラベルについて、手順3-7 を繰り返します。
+8. 次の名前の追加ラベルについて、手順 3 から 7 を繰り返します。
     
   - プライベート
     
@@ -93,21 +93,21 @@ ms.locfileid: "32283540"
     
 3. ブラウザーの新しい [ **SharePoint** ] タブで、[**サイトの作成**] をクリックします。
     
-4. **[サイトの作成]** ページで、 **[チーム サイト]** をクリックします。
+4. **[サイトの作成]** ページで、**[チーム サイト]** をクリックします。
     
 5. [**チームサイト名**] に、「 **SensitiveFiles**」と入力します。
     
 6. [**チームサイトの説明**] に、「**機密ファイル用の SharePoint サイト**」と入力します。
     
-7.  **[プライバシー設定]** で、 **[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。
+7.  **[プライバシー設定]** で、**[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。
     
-8. **[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。
+8. **[誰を追加しますか]** ウィンドウで、**[完了]** をクリックします。
     
 次に、機密保持ラベル用に SensitiveFiles チームサイトのドキュメントフォルダーを構成します。
   
 1. ブラウザーの [ **SensitiveFiles** ] タブで、[**ドキュメント**] をクリックします。
     
-2. [設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。
+2. [設定] アイコンをクリックしてから、**[ライブラリの設定]** をクリックします。
     
 3. **[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。
     
@@ -115,7 +115,7 @@ ms.locfileid: "32283540"
 
 次に、SensitiveFiles サイトで新しいドキュメントを作成し、そのアイテム保持ラベルを変更します。
     
-1. documents フォルダーで、[ **New > Word document**] をクリックします。
+1. Documents フォルダーで、[ **New _GT_ Word document**] をクリックします。
     
 2. 空白のドキュメントにテキストを入力します。 テキストが保存されるまで待機します。
     

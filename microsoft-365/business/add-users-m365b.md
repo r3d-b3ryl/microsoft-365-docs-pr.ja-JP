@@ -3,7 +3,7 @@ title: Microsoft 365 Busines にその他のユーザーを追加する
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Microsoft 365 Business で新しいユーザーを追加し、デバイスをセキュリティで保護し、役割を割り当てる方法について説明します。
-ms.openlocfilehash: e27e9e2b67e187bbca3c2f1b2c9d21196effa77f
-ms.sourcegitcommit: 0feaebc1c5ea2636b5c9fa96eef648a1e37635c1
+ms.openlocfilehash: 844245f5740d1e90ca1a7c9f372a8ab5a8225dd7
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33864825"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072912"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>Microsoft 365 Busines にその他のユーザーを追加する
 

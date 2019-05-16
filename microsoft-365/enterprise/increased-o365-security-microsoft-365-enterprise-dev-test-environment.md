@@ -1,27 +1,27 @@
 ---
-title: microsoft 365 エンタープライズテスト環境の microsoft 365 セキュリティの強化
+title: Microsoft 365 エンタープライズテスト環境の Microsoft 365 セキュリティの強化
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: 583d815d9f413df8aeb5ec7abaf68cf79a6cc8b9
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の Microsoft 365 セキュリティ設定を有効にします。
+ms.openlocfilehash: d51f9ada68969823eadbb4fad55392358a6ddee8
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353119"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072137"
 ---
-# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>microsoft 365 エンタープライズテスト環境の microsoft 365 セキュリティの強化
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズテスト環境の Microsoft 365 セキュリティの強化
 
-この記事の手順に従って、microsoft 365 エンタープライズテスト環境のセキュリティを強化するために、その他の microsoft 365 設定を構成します。
+この記事の手順に従って、Microsoft 365 エンタープライズテスト環境のセキュリティを強化するために、その他の Microsoft 365 設定を構成します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -35,12 +35,12 @@ ms.locfileid: "33353119"
 シミュレートされたエンタープライズで、強化された Microsoft 365 セキュリティを構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従ってください。
   
 > [!NOTE]
-> Microsoft 365 セキュリティのテストでは、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズテスト環境を必要としません。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
+> Microsoft 365 セキュリティのテストでは、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズテスト環境を必要としません。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
 
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>フェーズ 2: Microsoft 365 のセキュリティ強化を構成する
 
-このフェーズでは、microsoft 365 エンタープライズテスト環境に対して、強化された microsoft 365 セキュリティを有効にします。 その他の詳細と設定については、「 [Configure your Office 365 tenant for security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)」を参照してください。
+このフェーズでは、Microsoft 365 エンタープライズテスト環境に対して、強化された Microsoft 365 セキュリティを有効にします。 その他の詳細と設定については、「 [Configure Your Office 365 tenant for security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)」を参照してください。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>先進認証をサポートしていないアプリをブロックするように SharePoint Online を構成する
 
@@ -57,13 +57,13 @@ ms.locfileid: "33353119"
 4. **モダン認証をサポートしていないアプリ**の下で、[**ブロック**] をクリックし、[ **OK]** をクリックします。
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>SharePoint、OneDrive for business、Microsoft Teams の Advanced Threat Protection を有効にする
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>SharePoint、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にする
 
 Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsoft Teams は、悪意のあるファイルを誤って共有することから組織を保護します。
 
-1. [Office 365 Security & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
+1. [Office 365 Security _AMP_ コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
 
-2. 左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー > 安全な添付ファイル**] を選択します。 
+2. 左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー _GT_ 安全な添付ファイル**] を選択します。 
 
 3. [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。
 
@@ -101,9 +101,9 @@ Office 365 Cloud App Security, previously known as Office 365 Advanced Security 
 !-->
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-これらの設定を運用環境で構成する情報およびリンクについては、**情報保護**フェーズの「 [Microsoft のセキュリティを構成](infoprotect-configure-increased-security-office-365.md)する」の手順を参照してください。
+これらの設定を運用環境で構成する情報およびリンクについては、情報保護フェーズの「365 Microsoft のセキュリティを構成する」の手順を参照してください。
 
 テスト環境でのその他の[情報保護](m365-enterprise-test-lab-guides.md#information-protection)機能と機能について説明します。
 

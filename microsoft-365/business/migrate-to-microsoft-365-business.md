@@ -1,9 +1,9 @@
 ---
-title: office 365 business Premium からの Microsoft 365 business への移行
+title: Office 365 Business Premium からの Microsoft 365 Business への移行
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,24 +18,24 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Microsoft 365 business にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 3e45ba13e4cfe772829f545219bf86a9a3317d59
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Microsoft 365 Business にビジネスを移行する方法について説明します。
+ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285682"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072742"
 ---
-# <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>office 365 business Premium からの Microsoft 365 business への移行
+# <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business への移行
 
-一般法人向け office 365 サブスクリプション (office 365 business Premium など) が既にインストールされている場合は、ライセンスを Microsoft 365 business に簡単に追加して、それらを一部またはすべてのユーザーに割り当てることができます。
+一般法人向け Office 365 サブスクリプション (Office 365 Business Premium など) が既にインストールされている場合は、ライセンスを Microsoft 365 Business に簡単に追加して、それらを一部またはすべてのユーザーに割り当てることができます。
   
 > [!NOTE]
 > [[プランの切り替え](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton)] ボタンを使用して、Microsoft 365 Business へのアップグレードを完了することはできません。 
   
 ## <a name="add-microsoft-365-business-licenses"></a>Microsoft 365 Business のライセンスを追加する
 
-Microsoft 365 Business を入手する方法は2つあります。 パートナーがいる場合は、microsoft[パートナーセンター](get-microsoft-365-business.md)から microsoft 365 Business を購入することができます。 パートナーは、Microsoft 365 Business への移行を支援することもできます。
+Microsoft 365 Business を入手する方法は2つあります。 パートナーがいる場合は、microsoft[パートナーセンター](get-microsoft-365-business.md)から Microsoft 365 Business を購入することができます。 パートナーは、Microsoft 365 Business への移行を支援することもできます。
   
 独自のサブスクリプションを管理する場合は、Microsoft 365 Business ライセンスを購入するために[sales に連絡](https://www.microsoft.com/microsoft-365/business)することができます。 
   
@@ -60,7 +60,7 @@ Microsoft 365 Business を入手する方法は2つあります。 パートナ�
     
     既にドメインを設定している場合は、2番目のフィールドには、**メールの**_ドメイン名_\> **を使用し続けて** \<サインインするように指示します。   サブスクリプションを使用してドメインをセットアップしていない場合は **、引き続き** \<_会社の name.onmicrosoft.com_ \>を使用して**電子メールを送信**し、サインインしてください。  
     
-    **[次へ]** を選択します。
+    **次へ**を選択します。
     
     ![[サインインとメールのカスタマイズ] ページで、ドメインを追加するか、使用しているドメインを使用するかを選択します。](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
   
@@ -68,7 +68,7 @@ Microsoft 365 Business を入手する方法は2つあります。 パートナ�
     
     新しい従業員を追加して、既存のユーザーにライセンスを割り当てる場合は、[**次へ**] を選択します。
     
-4. [* * 電子メールメッセージの移行 * *] ページで、手順3で追加した新しいユーザーのいずれかについて電子メールを移行することを選択できます。 この手順は省略することもできます。 **[次へ]** を選択します。
+4. [* * 電子メールメッセージの移行 * *] ページで、手順3で追加した新しいユーザーのいずれかについて電子メールを移行することを選択できます。 この手順は省略することもできます。 **次へ**を選択します。
     
 5. 最後のページで [**管理センターに移動**します] を選択して、セットアップを続行します。
     
@@ -92,25 +92,25 @@ Microsoft 365 Business にライセンスを割り当てたら、ユーザーの
     
 3. [**ポリシーの追加**] ウィンドウで、ポリシーの名前を指定し、ドロップダウンから**ポリシーの種類**を選択します。 
     
-    Android および iPhone デバイス上のファイルを保護するためのアプリケーションポリシーおよび windows 10 を設定し、会社が所有する windows 10 デバイスのデバイス構成ポリシーを設定できます。 詳細については、次のリンクを参照してください。
+    Android および iPhone デバイス上のファイルを保護するためのアプリケーションポリシーおよび Windows 10 を設定し、会社が所有する Windows 10 デバイスのデバイス構成ポリシーを設定できます。 詳細については、次のリンクを参照してください。
     
   - [Android または iOS デバイスのアプリ保護設定を設定する](app-protection-settings-for-android-and-ios.md)
     
   - [Windows 10 デバイスのアプリケーション保護設定を設定する](protection-settings-for-windows-10-devices.md)
     
-  - [Windows 10 pc のデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)
+  - [Windows 10 Pc のデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)
     
    ![[ポリシーの追加] ウィンドウで、名前を入力し、ドロップダウンメニューからポリシーの種類を選択します。](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   
 4. ポリシーを設定すると、従業員はデバイスをセットアップできるようになります。
     
-  - windows pro Creator の更新プログラムを適用していない場合は、windows pro Creator update に[アップグレード](upgrade-to-windows-pro-creators-update.md)する必要があります。
+  - Windows Pro Creator の更新プログラムを適用していない場合は、windows pro Creator update に[アップグレード](upgrade-to-windows-pro-creators-update.md)する必要があります。
     
-  - windows デバイスの手順については、「 [Microsoft 365 Business ユーザーの windows デバイスをセットアップ](set-up-windows-devices.md)する」を参照してください。 
+  - Windows デバイスの手順については、「 [Microsoft 365 Business ユーザーの windows デバイスをセットアップ](set-up-windows-devices.md)する」を参照してください。 
     
-  - Android フォンおよび iphones の手順については、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
+  - Android フォンおよび iPhones の手順については、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
     
-5. office クライアントアプリを自動的にインストールするには、「 [Microsoft 365 Business による office クライアントの展開を準備](prepare-for-office-client-deployment.md)する」および「 [Windows 10 デバイスで office を自動的にインストールまたはアンインストール](auto-install-or-uninstall-office.md)する」を参照してください。
+5. Office クライアントアプリを自動的にインストールするには、「 [Microsoft 365 Business による office クライアントの展開を準備](prepare-for-office-client-deployment.md)する」および「 [Windows 10 デバイスで Office を自動的にインストールまたはアンインストール](auto-install-or-uninstall-office.md)する」を参照してください。
     
 
 

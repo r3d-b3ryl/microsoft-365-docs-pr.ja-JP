@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社が SharePoint Online サイトを非常に規制されたデータ用に実装し、研究チーム間のコラボレーションを容易にする方法について説明します。'
-ms.openlocfilehash: c20e3a1c4ad0b862e81b897acc1462e3a1d1f776
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289227"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072784"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation の非常に機密性の高いデジタル資産向けの SharePoint Online サイト
 
@@ -32,7 +32,7 @@ Contoso 社の最も重要な資産は、独自の製造手法、開発中の製
 - データ損失防止 (DLP) を使用して保護することで、ユーザーがサイト外に配布するのを防ぐことができます。
 - 権限のないユーザーがサイト外に配布されている場合でも、そのコンテンツへのアクセスを許可しないように、アクセス制御リストで暗号化および保護します。
 
-Contoso 社の IT 部門のセキュリティおよび sharepoint 管理者は、厳しく規制された[データ用に sharepoint Online サイト](teams-sharepoint-online-sites-highly-regulated-data.md)を使用することを決定しました。
+Contoso 社の IT 部門のセキュリティおよび SharePoint 管理者は、厳しく規制された[データ用に Sharepoint Online サイト](teams-sharepoint-online-sites-highly-regulated-data.md)を使用することを決定しました。
   
 Contoso 社は、これらの手順を使用して、調査チームのために SharePoint Online チームサイトを作成してセキュリティ保護しています。
 
@@ -51,10 +51,10 @@ Contoso IT 管理者は、研究チームの一連のセキュリティグルー
 Contoso 社の SharePoint 管理者は、最初に**Research**という名前の新しいチームサイトを作成しました。 その後、次のように構成します。
 
 - リサーチの所有者の SharePoint グループを使用して、**研究管理者**のセキュリティグループをメンバーとして持つ、フルコントロールアクセス許可レベル。
-- research メンバーのセキュリティグループをメンバーとして持つ research メンバーの SharePoint **** グループを使用するための編集アクセス許可レベル。
+- Research メンバーのセキュリティグループをメンバーとして持つ Research メンバーの SharePoint **** グループを使用するための編集アクセス許可レベル。
 - リサーチ閲覧者の SharePoint グループを使用してリサーチ閲覧者のセキュリティ**** グループをメンバーとして持つ、読み取りアクセス許可レベル
 
-その結果、sharepoint アクセス許可レベル、sharepoint グループ、およびそれらのメンバーが表示されます。
+その結果、SharePoint アクセス許可レベル、SharePoint グループ、およびそれらのメンバーが表示されます。
 
 ![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
 
@@ -66,13 +66,13 @@ Contoso 社の SharePoint 管理者は、最初に**Research**という名前の
 
 最初に、Contoso 管理者は**高機密**Office 365 保持ラベルを**Research**サイトに適用しました。
 
-次に、 **Research**という名前の新しい Office 365 DLP ポリシーを作成しました。
+次に、 **Research**という名前の新しい OFFICE 365 DLP ポリシーを作成しました。
 
 - 非常に**機密性の高い**Office 365 保持ラベルを使用します。 
 - **リサーチ**サイトに適用されます。
-- ユーザーがドキュメントを共有できないようにします。
+- ユーザーが Contoso 外の**Research**サイトでデジタルアセットを共有しようとすると、ユーザーをブロックします。
 
-構成の詳細については、「 [Office 365 のラベルと DLP で SharePoint Online のファイルを保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)する」を参照してください。
+構成の詳細については、「[保持ラベルおよび DLP を使用して SharePoint Online ファイルを保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)する」を参照してください。
 
 ## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>手順 4: サイトの Azure Information Protection サブラベルを作成する
 
@@ -92,13 +92,13 @@ Contoso 管理者は、次のようなスコープ付きポリシーで、既定
 
 **リサーチ**サイトのフォルダー内のファイルは、次の方法で保護されます。
 
-- **research** Azure Information Protection sublabel は、**リサーチ**サイトから移動またはコピーされたときに、ファイルと共に移動する各ファイルに暗号化と permssions を適用します。
-- **リサーチ**DLP ポリシー。非常に機密性の**高い**保持ラベルと設定を使用して、ファイルがサイトから離脱しないようにします。
+- **Research** Azure Information Protection sublabel は、**リサーチ**サイトから移動またはコピーされたときに、ファイルと共に移動する各ファイルに暗号化と permssions を適用します。
+- **リサーチ**DLP ポリシー。非常に機密性の**高い**保持ラベルと、ファイルを外部ユーザーと共有できないようにする設定を使用します。
 - サイトのアクセス許可のセット。 research-Admins セキュリティグループのメンバーには、リサーチ**メンバー**およびリサーチ**閲覧****者**のセキュリティグループのメンバーへのアクセスのみが許可されます。
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>手順 5: オンプレミスの SharePoint リサーチデータを移行する
 
-Contoso admins は、オンプレミスの sharepoint Server 2016 サイト内のすべてのオンプレミスの研究ファイルを新しい**research** sharepoint Online サイト内のフォルダーに移動しました。
+Contoso admins は、オンプレミスの SharePoint Server 2016 サイト内のすべてのオンプレミスの研究ファイルを新しい**research** sharepoint Online サイト内のフォルダーに移動しました。
 
 ## <a name="step-6-trained-their-users"></a>手順 6: ユーザーをトレーニングする 
 
@@ -112,7 +112,7 @@ Contoso のセキュリティスタッフは、次の手順を実行する必須
 
 最終的には、セキュリティで保護された環境で研究者が組織全体で共同作業を行える安全な環境が得られます。 
 
-research サブラベルを持つ research **** ドキュメントが**research**サイトから漏洩した場合、そのドキュメントは暗号化され、有効な資格情報**** を持つ research および**research**のセキュリティグループのメンバーのみがアクセスできます。
+Research サブラベルを持つ research **** ドキュメントが**research**サイトから漏洩した場合、そのドキュメントは暗号化され、有効な資格情報**** を持つ research および**research**のセキュリティグループのメンバーのみがアクセスできます。
 
 ## <a name="next-step"></a>次の手順
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Intune デバイスコンプライアンスポリシーを Microsoft 365 Enterprise テスト環境に追加します。
-ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
-ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
+ms.openlocfilehash: eb140844eba4bc5cf5eba7fe452345f251ced0ff
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33467735"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072117"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデバイスコンプライアンスポリシー
 
@@ -35,14 +35,14 @@ ms.locfileid: "33467735"
 シミュレートされたエンタープライズで MAM ポリシーを構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
 > [!NOTE]
-> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
+> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
 >  
 
 ## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>フェーズ 2: Windows 10 デバイスのデバイスコンプライアンスポリシーを作成する
 
 このフェーズでは、Windows 10 デバイスのデバイスコンプライアンスポリシーを作成します。
   
-1. office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、全体管理者アカウントを使用して office 365 テストラボサブスクリプションにサインインします。
+1. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、全体管理者アカウントを使用して office 365 テストラボサブスクリプションにサインインします。
     
 2. ブラウザーの新しいタブで、Azure portal を開き[https://portal.azure.com](https://portal.azure.com)ます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "33467735"
     
 8. **[グループ]** ブレードを閉じます。
     
-11. [ **groups-すべてのグループ**] ブレードを閉じます。
+11. [ **Groups-すべてのグループ**] ブレードを閉じます。
     
 12. **Microsoft Intune**ブレードの [**クイックタスク**] リストで、[**コンプライアンスポリシーの作成**] をクリックします。
     
@@ -84,7 +84,7 @@ ms.locfileid: "33467735"
 
 23. [**アプリスイートの構成**] をクリックし、[ **OK**] をクリックします。
 
-24. [**アプリスイートの情報**] をクリックし、[**スイート名**] に「 **windows 10 用 office**アプリ」、「 **suite Description**の**windows 10 用 office アプリ**」と入力して、[ **OK**] をクリックします。
+24. [**アプリスイートの情報**] をクリックし、[**スイート名**] に「 **windows 10 用 Office**アプリ」、「 **Suite Description**の**windows 10 用 Office アプリ**」と入力して、[ **OK**] をクリックします。
 
 25. [**アプリスイートの設定**] をクリックし、 **[更新チャネル**の**半期**] を選択して、[ **OK]** をクリックします。
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise の Exchange Online の展開
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -11,24 +11,24 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 組織全体で Microsoft 365 Enterprise の Exchange Online の価値を計画、ロールアウト、および促進するプロセスについて順を追って説明します。
-ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281207"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072287"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Exchange Online の展開
 
-*このワークロードは、Microsoft 365 Enterprise の E3 および E5 バージョンの両方に含まれています。*
+*このワークロードは、Microsoft 365 Enterprise の E3 および E5 の両バージョンに該当します*
 
 Exchange Online は、電子メールと予定表のプライマリクラウドサービスで、リアルタイムのチャットやドキュメント保存の集中管理を必要としない方法でユーザーを共同作業するのに役立つ情報を備えています。 Exchange Online は、個人および小規模なグループの短時間のコミュニケーションとスケジューリングをどのようにしているのかを示すものであり、Microsoft 365 Enterprise のチームワークの価値を構築するための重要な要素です。 Exchange Online を使用すると、使用しているデバイスに関係なく、既知の Outlook アプリケーションでより効果的に作業を行うことができます。
 
 Exchange Online には、マルウェア対策とスパム対策フィルターを含む高度なセキュリティ機能があり、メールボックスと、ユーザーが誤って機密情報を権限のないユーザーに送信しないようにするデータ損失防止機能を保護します。 Exchange Online のセキュリティは、Microsoft 365 Enterprise のインテリジェントセキュリティ価値の重要な要素です。
 
-exchange online を初めて使用する場合は、「 [Microsoft exchange online](https://products.office.com/exchange/exchange-online)」を参照してください。
+Exchange Online を初めて使用する場合は、「 [Microsoft Exchange online](https://products.office.com/exchange/exchange-online)」を参照してください。
 
-次のフェーズと手順に従って、組織内の exchange online の役割を構想し、組織を一連の段階的な展開によって exchange online にオンボードし、exchange online およびそのエンドユーザーへの値。
+次のフェーズと手順に従って、組織内の Exchange Online の役割を構想し、組織を一連の段階的な展開によって Exchange Online にオンボードし、Exchange Online およびそのエンドユーザーへの値。
 
 >[!Note]
 >これらの展開手順は、Microsoft 365 Enterprise foundation インフラストラクチャの[フェーズ2の id](identity-infrastructure.md)を完了した後にのみ実行する必要があります。
@@ -36,7 +36,7 @@ exchange online を初めて使用する場合は、「 [Microsoft exchange onli
 
 ## <a name="phase-1-envision"></a>フェーズ 1: 想定
 
-このフェーズでは、exchange online の展開に関するユーザーを収集し、組織が exchange online を使用してビジネスニーズに対処する方法を決定します。
+このフェーズでは、Exchange Online の展開に関するユーザーを収集し、組織が Exchange Online を使用してビジネスニーズに対処する方法を決定します。
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>手順 1: Exchange Online の展開メンバーを収集する
 
@@ -60,7 +60,7 @@ Exchange Online では、Microsoft 365 Enterprise の次のような戦略的な
 - プロジェクト、タスク、期限を管理して、ビジネス目標を達成します
 - 業務の習慣を理解して、影響力を増します
 - チーム内でコミュニケーションを図って、最新の情報に精通し、意見を求め、団結力と考えの一致を高めます
-- 組織内外でファイルを保存および共有して、組織の境界を越えてシームレスに作業を行います
+- 組織内外でファイルを保管および共有して、組織の境界を越えてシームレスに作業を行います
 - 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
 - 情報を保護して、データ損失のリスクを軽減します
 - 外部の脅威を検出して保護する 
@@ -78,13 +78,13 @@ Exchange Online では、Microsoft 365 Enterprise の次のような戦略的な
 
 ### <a name="prerequisites-identity-and-device-access-configuration"></a>前提条件: ID とデバイスのアクセス構成
 
-exchange online メールボックスへのアクセスを保護するには、 [id とデバイスのアクセスポリシー](identity-access-policies.md)と、推奨される[exchange online アクセスポリシー](secure-email-recommended-policies.md)を構成していることを確認してください。
+Exchange Online メールボックスへのアクセスを保護するには、 [id とデバイスのアクセスポリシー](identity-access-policies.md)と、推奨される[exchange online アクセスポリシー](secure-email-recommended-policies.md)を構成していることを確認してください。
 
 ### <a name="step-1-complete-your-technical-planning"></a>手順 1: 技術計画を実施する
 
-技術的な計画を開始する前に、fasttrack を使用するかどうかを決定します。 組織が50を超える座席を持ち、対象となる[プラン](https://technet.microsoft.com/library/dn783224.aspx)に参加している場合は、計画、展開、およびサービスの導入に関する追加費用をかけずに、 [Microsoft 365 に fasttrack](https://fasttrack.microsoft.com/microsoft365)を使用できます。 または、Office 365 アカウントでサインインした後に[fasttrack](https://fasttrack.microsoft.com/)から利用できる、fasttrack のオンボードウィザードを使用して、この作業を自分で行うことができます。
+技術的な計画を開始する前に、FastTrack を使用するかどうかを決定します。 組織が50を超える座席を持ち、対象となる[プラン](https://technet.microsoft.com/library/dn783224.aspx)に参加している場合は、計画、展開、およびサービスの導入に関する追加費用をかけずに、 [Microsoft 365 に fasttrack](https://fasttrack.microsoft.com/microsoft365)を使用できます。 または、Office 365 アカウントでサインインした後に[fasttrack](https://fasttrack.microsoft.com/)から利用できる、Fasttrack のオンボードウィザードを使用して、この作業を自分で行うことができます。
 
-独自の計画を行っている場合や、fasttrack と連携している場合は、ネットワークと組織が Exchange Online の準備ができているかどうかを判断する必要があります。 Exchange の追加のトラフィックに対するパフォーマンスを最大化するために、インターネット帯域幅、スループット、トラフィック遅延に特に注意を向けることで、基礎インフラストラクチャのネットワークの終了条件を満たすことは特に重要です。オンラインベースの電子メールと添付ファイル。
+独自の計画を行っている場合や、FastTrack と連携している場合は、ネットワークと組織が Exchange Online の準備ができているかどうかを判断する必要があります。 Exchange の追加のトラフィックに対するパフォーマンスを最大化するために、インターネット帯域幅、スループット、トラフィック遅延に特に注意を向けることで、基礎インフラストラクチャのネットワークの終了条件を満たすことは特に重要です。オンラインベースの電子メールと添付ファイル。
 
 これらのリソースを使用して、Exchange Online ロールアウトの技術的な側面を準備します。 
 
@@ -129,7 +129,7 @@ IT パイロットを完了した後、組織内のビジネスグループま�
 - ビジネスグループ内の Exchange Online の主要なビジネスシナリオの識別。
 - 部署や作業またはプロジェクトチームのための、Exchange Online の使用状況についての要望とタイムラインをユーザーに通知するアナウンスアクティビティ。
 - ビジネスグループのメンバーの社内メールボックスを Exchange Online に移行します。
-- exchange online でユーザートレーニングを実施するか、exchange online を紹介するリソースへのリンクを提供し、その使用方法について説明します。
+- Exchange Online でユーザートレーニングを実施するか、Exchange Online を紹介するリソースへのリンクを提供し、その使用方法について説明します。
 - ビジネス グループのユーザーからコメントを収集し、問題点を指摘するフィードバック メカニズム (ビジネス グループのメンバー全員が含まれている中央の Microsoft Teams チームなど)。
 
 ロールアウト中には、組織全体でのロールアウトに備えて変更管理資料を調整できます。
@@ -149,7 +149,7 @@ IT パイロットを完了した後、組織内のビジネスグループま�
 - 個別のビジネスグループ内の Exchange Online の主要なビジネスシナリオの識別。
 - Exchange Online の使用状況に関する期待値とタイムラインを組織に通知するために、改訂の変更管理資料をアナウンス活動に使用します。
 - 組織の残りの部分のメールボックスを Exchange Online に移行します。
-- exchange online でユーザートレーニングを実施するか、exchange online を紹介するリソースへのリンクとその使用方法について説明します。
+- Exchange Online でユーザートレーニングを実施するか、Exchange Online を紹介するリソースへのリンクとその使用方法について説明します。
 - 組織のユーザーからのコメントや問題点を収集するフィードバック メカニズム (すべてのユーザーが含まれている中央チームなど)。組織の従業員数が 2500 人未満の場合は、Teams のパブリック チャネルを使用し、2500 人以上の場合は Yammer のパブリック グループを使用してください。
 
 #### <a name="result"></a>結果
@@ -176,7 +176,7 @@ Exchange Online を組織全体にロールアウトした後、次のことを�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の内部をピークし、exchange online に移行し、exchange online Protection を使用してサイバー攻撃から保護する方法については、以下を参照してください。
+Microsoft の内部をピークし、exchange Online に移行し、Exchange Online Protection を使用してサイバー攻撃から保護する方法については、以下を参照してください。
 
 - [Microsoft では 150,000 のメールボックスを Exchange Online に移行](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft は脅威からの保護、脅威の検出、脅威への対応に脅威インテリジェンスを使用する](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
