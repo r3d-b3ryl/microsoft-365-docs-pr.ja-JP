@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Azure AD のセルフ サービスによるグループ管理について理解し、構成します。
-ms.openlocfilehash: 9400e99ced45370600d1d5dcee4388ddef4250fe
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 67c3a0e45fa253bdaedead03ac1137422ee0f8de
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283527"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073607"
 ---
 # <a name="step-6-use-groups-for-easier-management"></a>手順 6: 管理を容易にするためのグループの使用
 

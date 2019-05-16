@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400063"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072497"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
@@ -136,60 +136,23 @@ TLGs を使用すると、自己学習、実例説明、カスタマイズする
   
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft IT の内側を垣間見て、どのように Microsoft 365 Enterprise を展開して、どのように Microsoft の従業員が日常業務に使用しているかを確認してください。
+デジタル企業文化を定義することは、最新の職場を促進するよう努めているすべてのリーダーにとって最優先です。　 Microsoft 365 は、このような文化的なシフトをサポートするように設計されており、リーダーが、会社にいるすべての人の創造性と共同作業を解き放てるよう役立てています。 Microsoft では、基本となるインフラストラクチャを確立することは、このようなデジタル文化へシフトするまさに火付け役となりました。 Microsoft 365 Enterprise を実装すると、Microsoft Teams や Exchange Online などの共同作業のテクノロジを展開し、セキュリティで保護された SharePoint イントラネット サイトのオンライン間での機密データを共有できるようになります。
 
-#### <a name="networking"></a>ネットワーク
+同時に、高度なセキュリティ機能と製品との統合は管理のニーズを効率化し、IT ライフ サイクル全体で総保有コストを最小限に抑えるのに役立ちます。 
 
-- [Microsoft Office 365 のネットワーク パフォーマンスの最適化](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
+セキュリティで保護された環境で、創造性とチームワークの促進を解き放つサービスとアプリケーションをサポートするには、コア サービス エンジニア リングとオペレーション (旧称 Microsoft IT) [計画と基盤の展開](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365)で詳細を確認します。
 
-#### <a name="identity"></a>ID
-
-- [Microsoft でのユーザー ID の管理とアクセスの保護](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [アクセス許可を昇格するために、Azure AD Privileged Identity Management を使用する](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
-
-#### <a name="windows-10-enterprise"></a>Windows 10 Enterprise
-
-- [Windows 10 をシームレスに展開するための組織の準備](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [Microsoft では、サービスとして Windows を使用](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [Microsoft における、Windows 10 のインプレース アップグレードとしての展開方法](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Windows Hello for Business を使用した、強力なユーザー認証の実装](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 の展開: Microsoft の IT 担当者からのヒント](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (ビデオ)
-- [Windows Defender ATP により高度な脅威の検出が可能](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [Windows Defender および Windows Defender ATP を使用した、現代の企業のセキュリティ保護](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (ビデオ)
-
-#### <a name="office-365-proplus"></a>Office 365 ProPlus
-
-- [Microsoft Office 365 ProPlus の展開と更新](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [Microsoft Office 365 ProPlus の展開を支援するオートメーションと更新プログラム チャネル](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (ビデオ)
-
-#### <a name="mobility-and-device-management"></a>モビリティおよびデバイスの管理
-
-- [Enterprise Mobility + Security による最新のモバイル生産性の管理](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [Microsoft Intune を使用して Windows 10 デバイスでの作業につながる](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [Microsoft での iOS、OS X、Android デバイスによる業務効率化を可能にする](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
-
-#### <a name="security-and-information-protection"></a>セキュリティおよび情報保護
-
-- [Azure Information Protection でクラウドのファイルを保護する](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft は脅威からの保護、脅威の検出、脅威への対応に脅威インテリジェンスを使用する](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft の Office 365 を使用したフィッシング阻止の試み](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
-
-#### <a name="microsoft-teams"></a>Microsoft Teams
-
-- [Microsoft Teams の展開により、コラボレーションが効率化し、チームワークが向上する](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
-- [Microsoft Teams は Microsoft の最新の職場でのコラボレーションを向上させる](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
-
-#### <a name="data-migration"></a>データ移行
-
-- [Microsoft では 150,000 のメールボックスを Exchange Online に移行](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
-- [SharePoint からクラウドへ: Microsoft が実施した移行方法](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
+> [!Note]
+> この web ページは、英語でのみ利用できます。
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation の Microsoft 365 Enterprise 展開方法
 
 架空の企業、Contoso Corporation は、フランスのパリに本社を置く、代表的な世界規模の製造業の複合企業です。 [Contoso 社が Microsoft 365 Enterprise を展開](contoso-case-study.md)して、ネットワーク、ID、Windows 10 Enterprise、Office 365 ProPlus、モバイル デバイス管理、情報保護そしてセキュリティに関する主な設計上の決定と実装の詳細に、どのように対処したか参照してください。 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>次に、Microsoft 365 Enterprise を展開する
 
 Microsoft サポートをご希望の場合は、[FastTrack](https://fasttrack.microsoft.com/microsoft365)をご利用下さい。
+
+コンサルタントをご希望の場合は、Microsoft Consulting Services または [Microsoft partner](https://partner.microsoft.com/) へご連絡ください。
 
 自分で操作する場合は、[基礎インフラストラクチャー](deploy-foundation-infrastructure.md)を参照してください。

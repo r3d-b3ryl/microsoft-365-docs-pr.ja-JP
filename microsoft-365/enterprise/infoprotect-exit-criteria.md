@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 情報保護ベースのサービスとインフラストラクチャの条件を調べ、構成が Microsoft 365 Enterprise の要件を満たしていることを確認します。
-ms.openlocfilehash: 9c74a3994a1a404583326f65f1cec579fccbe659
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400041"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071947"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>情報保護インフラストラクチャの終了条件
 
@@ -46,7 +46,7 @@ ms.locfileid: "33400041"
 
 - Microsoft 365 セキュリティセンターの脅威管理ポリシー
 - その他の Exchange Online テナント レベルの設定
-- SharePoint Online 管理センターでのテナント レベルでの共有ポリシー
+- SharePoint Online 管理センターでのテナント全体の共有ポリシー
 - Azure Active Directory (Azure AD) の設定
 
 [SharePoint、OneDrive、Microsoft Teams 用の Office 365 Advanced Threat Protection (ATP) を有効にする](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)ことも行いました。
@@ -69,22 +69,22 @@ ms.locfileid: "33400041"
 
 
 <a name="crit-infoprotect-step4"></a>
-## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a>オプション: 使用環境での Windows Information Protection の展開
+## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a>オプション: 環境全体に Windows Information Protection が展開されている
 
-登録済みの Windows 10 Enterprise デバイスでは、Intune ポリシーが展開および適用され、次のことを定義しています:
+登録されている Windows 10 Enterprise デバイスには、次の項目を定義する Intune ポリシーが展開および適用されています。
 
-- 保護するアプリについて。
-- 保護のレベル。
-- 保護の拡張。
+- 保護するアプリ。
+- 保護レベル。
+- 保護の範囲。
 
 必要に応じて、[手順 4](infoprotect-deploy-windows-information-protection.md) がこの必須条件を満たす上で役立ちます。 
 
 <a name="crit-infoprotect-step5"></a>
-## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>オプション: Office 365 Data Loss Prevention (DLP) の展開
+## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>オプション: Office 365 データ損失防止 (DLP) が展開されている
 
-ポリシーを分析、テストした後、お客様とその他の個人データを保護して、業界と地域の規制に準拠することが要求される企業の DLP ポリシー (ロケーションおよびルール条件とアクションを含む) のセットを展開します。
+顧客やその他の種類の非公開データを保護し、業界や地域の規制や要件を順守するために組織が必要とする一連の DLP ポリシー (場所や規則、条件やアクションを含む) を分析し、テストしてから展開しました。
 
-データ コンプライアンスとセキュリティ スタッフは、Office 365 Security & Compliance ダッシュボードを使って DLP インシデントをモニターします。
+データ コンプライアンスとセキュリティ スタッフは、Office 365 のセキュリティとコンプライアンスのダッシュボードを使用して DLP インシデントを監視しています。
 
 必要に応じて、[手順 5](infoprotect-data-loss-prevention.md) がこの必須条件を満たす上で役立ちます。 
 

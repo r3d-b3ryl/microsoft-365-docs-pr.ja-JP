@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 10 および Office 365 ProPlus について、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
-ms.openlocfilehash: cd413ae0f7a85a65c41c2112a64e19b6ed68c987
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 60207ad991acdee2c5378b331ce85aa762722e40
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400191"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073047"
 ---
 # <a name="step-8-user-communications-and-training"></a>手順 8: ユーザーのコミュニケーションとトレーニング
 
@@ -55,11 +55,12 @@ Windows 10 の場合、生体認証を使用して安全にログインするた
 
 また、ユーザーが Enterprise Mobility + Security に公開できるセキュリティやコンプライアンス コントロールもあります。Azure AD と Microsoft Intune で構成される Enterprise Mobility + Security は、デスクトップ アップグレードの対象になる Windows 10 および Office 365 に追加機能を統合します。
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/ja-JP/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security)
 
 たとえば多要素認証を有効にした場合などに、これは Azure AD を使用し、携帯電話アプリや PIN などを利用してユーザーのリソースへのサインインを保護し、サービスに安全にアクセスできるようにします。また、Azure Information Protection により、ユーザーはドキュメントを簡単に分類し、ラベル付けすることができます。
 
-[Office 365 の多要素認証を設定する](https://support.office.com/ja-JP/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+
+  [Office 365 の多要素認証を設定する](https://support.office.com/ja-JP/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 ユーザーにとっては新しい機能がいくつかありますが、その中には、肯定的にしろ、そうでないにしろ、意外なものと捉えられるものがあります。こういった意外性によって、特に通常の業務フローを変更しなければならない場合には、開発者やヘルプデスクへの電話やチケットが増加することがあります。
 
