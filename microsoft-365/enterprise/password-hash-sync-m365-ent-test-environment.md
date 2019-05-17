@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0c6f7ec4afdfaaca0c84ed33ea0c1b1f248a82f5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353151"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073177"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
@@ -46,7 +46,7 @@ ms.locfileid: "33353151"
 この構成は、次の内容で成立します。 
   
 - Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
-- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワーク内の仮想マシン DC1、APP1、CLIENT1 で構成されます。 DC1 は、testlab.\<パブリック ドメイン名> Active Directory Domain Services (AD DS) ドメインのドメイン コントローラーです。
+- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワーク内の仮想マシン DC1、APP1、CLIENT1 で構成されます。 DC1 は、testlab.\<パブリック ドメイン名> AD DS ドメインのドメイン コントローラーです。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>フェーズ 2: testlab ドメインを作成および登録する
 
