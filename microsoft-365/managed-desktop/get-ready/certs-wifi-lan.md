@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b8d41e3747ad1e844e8d8f51412366d1c58efbe4
-ms.sourcegitcommit: 82a5c9a1f0f9627264f6f488dedb03f9092451fd
+ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
+ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34163449"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34391268"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの証明書とネットワークプロファイルを準備する  
  
@@ -71,7 +71,7 @@ LAN プロファイルをエクスポートしたら、次の手順に従って 
     - OMA URI (大文字と小文字を区別): */Device/Vendor/MSFT/WiredNetwork/LanXML*
     - データ型: 選択**文字列 (XML ファイル)**。 
     - カスタム XML: エクスポートされた XML ファイルをアップロードします。
-2. Microsoft マネージドデスクトップ管理ポータルを使用して、サービス要求を Microsoft マネージドデスクトップの操作に提出し、構成プロファイルを確認して "モダン Workplace Devices – Test" に展開します。 Microsoft マネージドデスクトップ操作では、管理ポータルを使用して要求が完了したときに通知を受けることができます。
+2. Microsoft managed desktop Admin portal を使用して Microsoft managed Desktop IT 操作に対するサポート要求を送信し、構成プロファイルを確認して "モダン Workplace Devices – Test" に展開します。 Microsoft マネージドデスクトップ IT 操作では、管理ポータルのサポート要求によって要求が完了したことが通知されます。
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>証明書と Wi-fi/VPN プロファイルを展開する 
  
@@ -82,6 +82,6 @@ LAN プロファイルをエクスポートしたら、次の手順に従って 
 2. 各 SCEP または PKCS 証明書のプロファイルを作成する (「 [scep 証明書プロファイルを作成する](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile)」または「 [pkcs 証明書プロファイルを作成](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)する」を参照) これらの各プロファイルには、有効期限が DD/MM/YYYY 形式で記述されている必要があります。 **有効期限のない証明書プロファイルは展開されません。**
 3. 各企業の WiFi ネットワークのプロファイルを作成します ( [Windows 10 以降のデバイスの wi-fi 設定を](https://docs.microsoft.com/intune/wi-fi-settings-windows)参照してください)。
 4. 企業 VPN ごとにプロファイルを作成します ( [Intune を使用した VPN 接続を追加するには、「windows 10 および Windows Holographic デバイスの設定」を](https://docs.microsoft.com/intune/vpn-settings-windows-10)参照してください)。
-5. 「証明書の展開」または「Wi-fi Profile Deployment」というタイトルのサービス要求を、microsoft マネージドデスクトップ管理ポータルを使用して Microsoft マネージドデスクトップ操作に送信し、構成プロファイルを確認して "モダン Workplace Devices – Test" に展開します。 Microsoft マネージドデスクトップ操作では、管理ポータルを使用して要求が完了したことが通知されます。 
+5. 「証明書の展開」または「Wi-fi Profile Deployment」というタイトルのサポート要求を、microsoft managed desktop 管理ポータルを使用して、構成プロファイルを確認して「モダン Workplace Devices – Test」に展開することによって、Microsoft Managed Desktop IT 運用に送信します。". Microsoft マネージドデスクトップ IT 操作では、管理ポータルのサポート要求によって要求が完了したことが通知されます。 
  
  

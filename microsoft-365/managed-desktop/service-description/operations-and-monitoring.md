@@ -1,18 +1,17 @@
 ---
 title: Microsoft マネージドデスクトップの操作と監視
 description: ''
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 12/18/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 391c5cca9f1d440a806fa094633b50c3256c2a26
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c618c5bf2acf50d84aca354975670ed84b581601
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291462"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431918"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft マネージドデスクトップの操作と監視
 
@@ -73,7 +72,7 @@ ms.locfileid: "32291462"
 
 ## <a name="standard-operating-procedures"></a>標準的な運用手順
 
-microsoft Managed Desktop service は、microsoft クラウドインスタンスで microsoft によって実装および運用されており、他の管理作業を行うことができます。 microsoft は、管理されたデスクトップ固有のセットアップ、構成、および操作についてのみ責任を担います。 
+Microsoft Managed Desktop service は、microsoft クラウドインスタンスで Microsoft によって実装および運用されており、他の管理作業を行うことができます。 Microsoft は、管理されたデスクトップ固有のセットアップ、構成、および操作についてのみ責任を担います。 
 
 オンプレミスの製品の場合、組織では、セットアップを管理する責任と、構成および運用のアクティビティを行います。
 
@@ -81,11 +80,11 @@ microsoft Managed Desktop service は、microsoft クラウドインスタンス
 --- | --- | ---
 ネットワーク (プロキシ、パケット検査、VPN)  | お客様との間で、ビジネスユーザーに対するリスクを最小限に抑えるためのアドバイスと計画を行います。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。
 サービス アカウント |-資格情報を実装し、安全に保存および管理します。<br> -許可されていないアクセスまたはこれらの資格情報の使用をセキュリティ運用チームに通知します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-ポリシー、多要素認証、条件付きアクセス、またはアプリケーション展開を Microsoft 管理されたデスクトップサービスアカウントに割り当てません。<br>-パスワードをリセットしたり、資格情報を使用したりしません。<br>-これらのサービスアカウントに関連する、不審なアクティビティが Intune または Azure の監査ログで検出された場合は、Microsoft マネージドデスクトップ操作に対する重大度 C サポート要求を開きます。
-デバイスグループ | -Microsoft マネージドデスクトップグループ内のデバイスのメンバーシップを実装および管理します。<br>-Microsoft マネージドデスクトップグループを使用して、構成の割り当てとリリースおよびデバイスに対する更新を管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft マネージドデスクトップグループのメンバーシップを変更しません。<br>-VPN、Windows Hello for business または電子メールの暗号化、または企業の wi-fi プロファイルの構成などのサービスの企業証明書を割り当てるには、グループを使用します。<br>-共同管理が存在する場合は、構成マネージャークライアントを展開するときに、すべての Microsoft 管理対象デスクトップグループを明示的に除外します。
-ポリシー |  -サービス内のデバイスの構成状態を制御する Microsoft マネージドデスクトップポリシーを実装および管理します。<br>-更新プログラムをポリシーまたは Windows に展開し、デバイスグループを徐々に使用します。<br> -Microsoft 以外の管理対象ではないデスクトップグループを明示的に除外します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-microsoft managed desktop service で管理されていないデバイスまたはユーザーに対して、microsoft 管理対象のデスクトップポリシーを編集または割り当てないようにします。
+デバイスグループ | -Microsoft マネージドデスクトップグループ内のデバイスのメンバーシップを実装および管理します。<br>-Microsoft マネージドデスクトップグループを使用して、構成の割り当てとリリースおよびデバイスに対する更新を管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft マネージドデスクトップグループのメンバーシップを変更しません。<br>-VPN、Windows Hello for Business または電子メールの暗号化、または企業の Wi-fi プロファイルの構成などのサービスの企業証明書を割り当てるには、グループを使用します。<br>-共同管理が存在する場合は、構成マネージャークライアントを展開するときに、すべての Microsoft 管理対象デスクトップグループを明示的に除外します。
+ポリシー |  -サービス内のデバイスの構成状態を制御する Microsoft マネージドデスクトップポリシーを実装および管理します。<br>-更新プログラムをポリシーまたは Windows に展開し、デバイスグループを徐々に使用します。<br> -Microsoft 以外の管理対象ではないデスクトップグループを明示的に除外します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft managed Desktop service で管理されていないデバイスまたはユーザーに対して、Microsoft 管理対象のデスクトップポリシーを編集または割り当てないようにします。
 Windows Defender Advanced Threat Protection | Microsoft Managed Desktop service の範囲内のデバイスを監視および調査します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用する
 ビジネス向け Microsoft Store |  Microsoft マネージドデスクトップサービスの Windows 自動操縦プロファイルを構成して管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft Managed Desktop Windows 自動操縦プロファイルの構成を変更したり、割り当てられたデバイスを追加または削除したりしません。
-証明書 | | -証明書が期限切れになるまでのサポート要求を作成し、計画された構成の変更に関する情報を要求します。これには、構成の詳細、スコープ、タイムライン、および Microsoft が確認するためのその他の関連情報が含まれます。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-証明書プロファイル、VPN プロファイル、および wi-fi プロファイルを構成するために必要なすべての証明書を更新します。
+証明書 | | -証明書が期限切れになるまでのサポート60要求を作成し、計画された構成の変更に関する情報を要求します。これには、構成の詳細、スコープ、タイムライン、および Microsoft が確認するためのその他の関連情報が含まれます。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-証明書プロファイル、VPN プロファイル、および Wi-fi プロファイルを構成するために必要なすべての証明書を更新します。
 
 
 
