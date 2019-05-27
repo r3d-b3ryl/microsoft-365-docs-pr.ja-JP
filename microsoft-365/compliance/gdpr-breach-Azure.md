@@ -2,21 +2,21 @@
 title: Azure と GDPR の下での違反の通知
 description: Azure による個人データ漏洩からの保護と、違反が発生した場合の Microsoft による対応とユーザーへの通知
 keywords: Azure、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 287175d6f78efa1052e446b230f39c33fc4d5fc6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5e8c04bcd20f56580e939bc4a2685eb232d5e589
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286432"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431498"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>Azure と GDPR の下での違反の通知
 
@@ -137,7 +137,7 @@ CRSI として宣言するには、顧客データへの無許可アクセスが
 
 Microsoft はお客様にとってのリスクと業務上のリスクが適切に抑止され、是正措置が実施されていることを検証します。必要に応じて、イベントに関連する当座のセキュリティ リスクを解決するための緊急軽減ステップを実施します。
 
-さらに Microsoft は、データ侵害に関する社内の事後分析を完了します。その一環として、対応/運用手順が十分であったかどうか評価し、セキュリティ インシデント対応 SOP または関連するプロセスに改善すべき点があればそれを実施します。データ侵害に関する社内事後分析の記録は高度な機密情報であり、お客様には開示できません。ただし、その要約がお客様への他のイベント通知に含まれることがあります。これらの報告は Azure の通常の監査サイクルで外部監査者にレビュー用として提供されます。
+Microsoft では、データ侵害に関する社内向けの事後分析も行います。 この検証の一環として、対応および運用手順が充分であったかどうかを評価し、セキュリティインシデント対応の SOP または関連するプロセスに必要な更新プログラムを特定し、実装します。 データ侵害の内部事後分析は、非常に機密性の高い社外秘の記録であり、顧客には公開されません。 ただし、事後分析は要約の上、他の顧客のイベント通知に含めることができます。 これらのレポートは、Azure の日常的な監査サイクルの一部として外部監査者に提供されます。
 
 #### <a name="customer-notification"></a>お客様への通知
 ---------------------
@@ -146,13 +146,13 @@ Microsoft Azure では必要に応じてデータ侵害についてお客様や�
 
 CRSI として宣言した後、できるだけ素早く通知プロセスを開始すると同時に、迅速に進めることのセキュリティ リスクについても考慮し続けます。一般的に、インシデント調査の進捗に合わせて通知のドラフトが作成されます。以下の場合を*除き*、侵害発生の宣言後 72 時間以内にお客様に通知をお送りします。
 
--   通知を行うことで他のお客様にとってリスクが増大すると Microsoft が判断した場合。たとえば、通知行為によって敵対者にヒントを与えてしまい、結果として修正不能になることがあります。
+-   Microsoft では、通知を実行すると他のユーザーにとってリスクが増大すると考えています。 たとえば、通知をすることにより悪意のある相手にも情報を与え、修正不能になる可能性があります。
 
 -   Microsoft の法務部である Corporate External and Legal Affairs (CELA) およびエグゼクティブ インシデント マネージャーによって精査される、他の異常な状況または極端な状況。
 
 Microsoft Azure は、お客様が内部調査を行ってエンド ユーザーへの責務を果たせるよう、詳細な情報をお客様に提供すると同時に、通知プロセスを不必要に遅らせないようにします。
 
-個人データ侵害の通知は、Microsoft が選択する任意の方法 (電子メールなど) でお客様に送られます。データ侵害の通知は Azure Security Center にあるセキュリティ連絡先一覧に向けて配信されます ([実装ガイドライン](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)に従ってこれを構成できます)。連絡先情報が Azure Security Center に提供されていない場合、Azure サブスクリプションの 1 人以上の管理者に通知が送られます。通知を確実に受け取るには、お客様に該当する各サブスクリプションおよびオンライン サービス ポータルで管理者の連絡先情報を正しく指定していただく必要があります。
+個人データの侵害についての通知は、メールなど Microsoft が選択した方法で、お客様に送信されます。 データが侵害されたことを示す通知は、Azure security center で提供されているセキュリティ連絡先のリストに配信されます。これは、[実装ガイドライン](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)に従って構成できます。 Azure Security Center に連絡先情報が提供されていない場合は、一人または複数のAzure サブスクリプションの管理者に通知が送信されます。 通知が正常に配信されるようにするには、該当する各サブスクリプションおよびオンラインサービスポータルの管理連絡先情報が正しいことを確認する必要があります。
 
 さらに Microsoft Azure または Azure Government チームは、カスタマー サービス (CSS) などの追加的な Microsoft スタッフ、およびお客様のアカウント マネージャー (AM) やテクニカル アカウント マネージャー (TAM) にも通知することを選択する場合があります。多くの場合、このような個人はお客様との関係が深く、迅速な修復をお手伝いできます。<span id="_Appendix_A" class="anchor"></span>
 
@@ -161,7 +161,7 @@ Microsoft Azure は、お客様が内部調査を行ってエンド ユーザー
 
 Microsoft Intune は Microsoft Enterprise Mobility + Security スイート クラウド サービスの主要なコンポーネントです。データ ガバナンス戦略をサポートするために、すべての Microsoft クラウド サービスは Microsoft の「プライバシー/セキュリティ バイ デザイン」および「プライバシー/セキュリティ バイ デフォルト」の方法論に従って開発されます。
 
-このため Microsoft Intune のクラウド サービスは、データ侵害に対する保護プロセスに関して Microsoft Azure サービス チームと同じ技術上および組織上の手法に従います。したがって、この「Microsoft Azure のデータ侵害」通知ドキュメントに示されているすべての情報が Microsoft Intune サービスにも同様に当てはまります。たとえば Microsoft Intune には同じセキュリティ インシデント対応プロセスとライフサイクル (ステージ 1: 検出からステージ 5<strong>:</strong> クローズと事後分析) および同じお客様セキュリティ インシデント通知プロセスが存在します。さらに、Microsoft Intune は Microsoft O365 チームと直接協力することで、Intune をご使用の Microsoft O365 のすべてのお客様に対する侵害通知の責務を果たします。
+これにより、Microsoft Intune のクラウドサービスは、データ侵害プロセスに対するセキュリティを確保するため、1つ以上の Microsoft Azure サービスチームが採用している同じ技術的および組織的対策に従います。 したがって、ここに記載されている "Microsoft Azure データ侵害" 通知ドキュメント上の情報は、Microsoft Intune サービスに類似したものとなります。 たとえば、Microsoft Intune のセキュリティインシデント対応プロセスとライフサイクル (ステージ 1: 検出からステージ 5<strong>:</strong> 終了と事後分析)、顧客セキュリティインシデント通知プロセスは同じものです。 さらに Microsoft Intune は、Microsoft O365 チームと直接協力して、Intune を使用している Microsoft O365 ユーザーへの侵害通知に関する義務を果たします。
 
 マイクロソフトが個人データの侵害を検出して対応する方法の詳細については、Service Trust Portal の [GDPR の下でのデータ侵害の通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach)を参照してください。
 

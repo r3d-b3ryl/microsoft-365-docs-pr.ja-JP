@@ -1,23 +1,24 @@
 ---
 title: GDPR に関する Intune データ主体要求
-description: ''
+description: コントローラーが DSR 要求に応じて個人データを検索して操作できるように Microsoft 製品、サービス、管理ツールを使用する方法について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: dougeby
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: dougeby
+author: dougeby
 manager: angrobe
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fa65d33795108a16759fa87d476bb5a4dc94a281
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 868bdf151f853168e7de69669b67e5686089ce72
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285199"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431448"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr"></a>GDPR に関する Intune データ主体要求
+
 EU データ保護規則 (GDPR) では、ユーザー (規則では*データ サブジェクト*と呼ばれる) に対して、雇用主やその他の会社または組織 (*データ コントローラー*または単に*コントローラー*と呼ばれる) が収集した個人データを管理する権利を与えます。GDPR の下で個人データは広範な定義がなされ、識別された、または識別可能な自然人と関連するあらゆるデータのことです。GDPR は個人データに対するデータ サブジェクト固有の権利を与えます。この権利には、個人データのコピーの取得、修正の要求、処理の制限、削除、または、別のコントローラーに移動できるようにするための電子形式での受信が含まれます。データ サブジェクトからコントローラーに個人データへのアクション実行を求める正式な要求は、*データ サブジェクト要求* (DSR) と呼ばれます。
 
 このガイドでは、DSR への対応として個人データを見つけて処理するコントローラーのお客様を支援する目的で、Microsoft の製品、サービス、管理ツールをどのように使用できるかを説明します。特に、Microsoft クラウドにある個人データを検出、アクセス、処理する方法を示します。このガイドで説明するプロセスの概要は次のとおりです:

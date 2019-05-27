@@ -11,18 +11,18 @@ ms.author: mohitku
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: ae4c088ce16b2b415ffa79a6fadd3f1c2a0426c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0ef1a23d69ae91b9d94c4587f1912c4171fe84d3
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286816"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431418"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>削除要求を送信するための FastTrack 移行ツールセット
 
 ## <a name="toolset-purpose"></a>ツールセットの目的
 
-FastTrack 移行に関与しているお客様の場合は、Office 365 ユーザー アカウントを削除しても、Microsoft FastTrack チームが保持しているデータ コピーは削除されません。このデータ コピーは移行を完了する目的でのみ保持されるものです。移行時に Microsoft FastTrack チームにデータ コピーの削除も依頼する場合は、このツールセットを介して要求を送信してください。通常の業務において、移行が完了した時点で、Microsoft FastTrack がすべてのデータ コピーを削除します。 
+FastTrack 移行に関与しているお客様の場合は、Office 365 ユーザー アカウントを削除しても、Microsoft FastTrack チームが保持しているデータ コピーは削除されません。このデータ コピーは移行を完了する目的でのみ保持されるものです。移行時に Microsoft FastTrack チームにデータ コピーの削除も依頼する場合は、このツールセットを介して要求を送信してください。通常の業務において、移行が完了した時点で、Microsoft FastTrack がすべてのデータ コピーを削除します。
 
 ### <a name="supported-platforms"></a>サポートされるプラットフォーム
 Microsoft は、Windows プラットフォームと PowerShell コンソールでこのツールセットの初期リリースをサポートしています。以下の既知のプラットフォームがこのツールセットでサポートされています。
@@ -48,7 +48,7 @@ Microsoft は、Windows プラットフォームと PowerShell コンソール�
 
 ![PowerShell - アプリケーションに変更を許可する](media/fasttrack-run-powershell_image.png)
 
-これで、コンソールが開いたため、スクリプト実行のアクセス許可を設定する必要があります。次のコマンドを入力して、スクリプトの実行を許可します。‘Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope:Process’
+これでコンソールが開きましたので、スクリプト実行のアクセス許可を設定する必要があります。次のコマンドを入力して、スクリプトの実行を許可します。‘Set-ExecutionPolicy — ExecutionPolicy: Bypass — Scope: Process’
 
 この操作の確認が要求されます。これは、管理者が自分の判断で範囲を変更できるためです。
 
@@ -66,7 +66,7 @@ Microsoft は、Windows プラットフォームと PowerShell コンソール�
 ### <a name="prerequisites-for-module"></a>モジュールの前提条件
 このモジュールが正常に動作するためには、まだインストールされていない依存モジュールをインストールする必要があります。PowerShell を再起動しなければならない場合があります。  
 
-DSR を送信するには、まず、Office 365 資格情報を使用してログインする必要があります。適切な資格情報を入力すれば、全体管理者の状態が検証され、テナント情報が収集されます。 
+DSR を送信するには、まず、Office 365 認証情報を使用してログインする必要があります。適切な認証情報を入力すれば、全体管理者の状態が検証され、テナント情報が収集されます。 
 
 **Login-FastTrackAccount -ApiKey: \<FastTrack MVM から提供される API キー\>**
 
