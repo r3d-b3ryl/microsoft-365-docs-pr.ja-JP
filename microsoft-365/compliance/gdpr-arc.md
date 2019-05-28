@@ -2,21 +2,21 @@
 title: GDPR に関するアカウンタビリティ対応準備チェックリスト
 description: Microsoft サービスによる個人データ漏洩からの保護と、違反が発生した場合の Microsoft による対応とユーザーへの通知
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 9ae75e55a64d0e94fefd34668b9be9d6e76aadcf
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 557dbb9efcc2ded1716f85aab2ba505fa6f97d2b
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286559"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431888"
 ---
 # <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR に関するアカウンタビリティ対応準備チェックリスト
 
@@ -27,11 +27,6 @@ ms.locfileid: "32286559"
 - [Dynamics 365](gdpr-arc-Dynamics365.md)
 - [Microsoft サポート/プロフェッショナル サービス](gdpr-arc-prof-services.md)
 
-
-
-
 ## <a name="learn-more"></a>詳細情報
 
 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
