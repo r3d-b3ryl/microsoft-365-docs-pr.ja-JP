@@ -2,21 +2,20 @@
 title: Microsoft のデータ保護責任者
 description: GDPR の Microsoft の EU データ保護責任者 (DPO) に関する情報
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: ''
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2401613de3c57bc02af67ed527eb37c314528930
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 3e7950872a1af8abaa34725756f157f8645da637
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286597"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431827"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft のデータ保護責任者
 
@@ -44,7 +43,7 @@ D18 P521<br>
 アイルランド<br>
 電話番号: +353 (0) 1 295-3826<br>
 
-データ保護責任者の連絡先の詳細が Microsoft の監督機関に通知されています。   
+データ保護責任者の連絡先の詳細が Microsoft の監督機関に通知されています。
 
 ## <a name="learn-more"></a>詳細情報
 

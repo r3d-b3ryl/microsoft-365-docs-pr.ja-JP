@@ -13,12 +13,12 @@ manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286925"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431548"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>GDPR に関する Visual Studio ファミリ データ主体要求
 
@@ -26,7 +26,7 @@ EU の[一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-pro
 
 ## <a name="products-covered-by-this-guide"></a>このガイドの対象製品
 
-このガイドでは、Microsoft ツールを使用して、Visual Studio、Visual Studio for Mac、およびそれらと Visual Studio Code に対する Microsoft 拡張機能の認証済み (サインイン済み) セッション使用時に収集された個人データをエクスポートまたは削除する方法について説明します。また、Visual Studio 開発者コミュニティ、NuGet.org、および ASP.NET Web サイトの使用時に収集された個人データに対するデータ主体要求の発行方法についても説明します。これらの製品を使用すれば、Microsoft 以外のツールと拡張機能の使用が可能になりますが、Microsoft はこれらのツールと拡張機能のデータ プロセッサまたはコントローラーではありません。ユーザーは、これらのツールまたは拡張機能のプロバイダーに問い合わせて、個人データと収集に関するポリシーを確認する必要があります。
+このガイドでは、Microsoft ツールを使用して、Visual Studio、Visual Studio for Mac、およびそれらと Visual Studio Code に対する Microsoft 拡張機能の認証済み (サインイン済み) セッション使用時に収集された個人データをエクスポートまたは削除する方法について説明します。また、Visual Studio 開発者コミュニティ、NuGet.org、および ASP.NET Web サイトの使用時に収集された個人データに対するデータ主体要求の発行方法についても説明します。これらの製品を使用すれば、Microsoft 以外のツールと拡張機能の使用が可能になりますが、Microsoft はこれらのツールと拡張機能のデータ プロセッサまたはコントローラーではありません。これらのツールまたは拡張機能については、それぞれのプロバイダーに問い合わせて個人データと収集に関するポリシーを確認する必要があります。
 
 ## <a name="additional-privacy-information"></a>その他のプライバシー情報
 
@@ -72,8 +72,8 @@ Visual Studio 2015 以降、Visual Studio for Mac、および Visual Studio Code
 
 コントローラーは、Visual Studio ファミリ製品または Microsoft 拡張機能が登録された方法に応じて、2 つの方法のどちらかでデータ主体から収集された顧客データとシステム生成ログを管理できます。両方の方法を使用しなければならない場合もあります。両方の方法を使用すれば、コントローラーは、その方法によって管理されているアクティビティ履歴のコピーをダウンロードすることができます。AAD または MSA アカウントを閉鎖すると、関連する Visual Studio 顧客データが削除され、これらの製品に関するシステム生成ログ内の個人を特定できるデータが匿名化されます。匿名化されたシステム生成ログは少なくとも 18 か月間保持されます。
 
-- &mdash;Azure サブスクリプションに関連付けられた AAD アカウントや MSA アカウントなどの&mdash; Azure テナントによって裏付けられたアカウントを使用して、Visual Studio ファミリ製品を登録したユーザーは、「[GDPR のための Azure データ サブジェクト要求](gdpr-dsr-azure.md)」の手順に従うことができます。
-- &mdash;Microsoft アカウント (MSA) を使用した複数のアカウントなどの&mdash; Azure テナントによって裏付けられたアカウントを使用せずに Visual Studio ファミリ製品を登録したユーザーは、Microsoft アカウント経由で使用可能な [Ｗeb ベースの Microsoft Privacy Response Center](https://aka.ms/userprivacysite) を使用して、複数の Microsoft サービス全体で Microsoft アカウントに対応付けられたアクティビティ データを表示、管理、および削除できます。このシナリオでは、ユーザーは自分の個人データのコントローラーです。
+- Azure サブスクリプションに関連付けられた AAD アカウントや MSA アカウントなどの Azure テナントにより裏付けられるアカウントを使用して、Visual Studio ファミリ製品を登録したユーザーは、「[GDPR のための Azure データ サブジェクト要求](gdpr-dsr-azure.md)」の手順に従うことができます。
+- Microsoft アカウント (MSA) を使用した複数のアカウントなどの Azure テナントによって裏付けられたアカウントを使用せずに Visual Studio ファミリ製品を登録したユーザーは、Microsoft アカウント経由で使用可能な [Ｗeb ベースの Microsoft Privacy Response Center](https://aka.ms/userprivacysite) を使用して、複数の Microsoft サービス 全体で Microsoft アカウントに紐づけられたアクティビティ データを表示、管理、および削除できます。このシナリオでは、ユーザーは自分の個人データのコントローラーです。
 
 > [!NOTE]
 > MSA アカウント所有者がアカウントを削除すると、アカウントが Azure テナントによって裏付けされているかどうかに関係なく、これらの製品に関するすべての個人を特定できるデータが削除され、システム生成ログが匿名化されます。
@@ -104,7 +104,7 @@ Microsoft は、Visual Studio ファミリ製品を使用して報告された�
 1. [開発者コミュニティ](https://developercommunity.visualstudio.com)にサインインします。 右上で、プロファイルをクリックして、**[プロファイルとユーザー設定]** を選択します。
 2. **[プロファイル]**、**[通知]**、**[アクティビティ]**、および **[添付ファイル]** タブのいずれかをクリックして、フィードバック システムに送信されたデータを表示します。
    1. **プロファイル**は、[開発者コミュニティ](https://developercommunity.visualstudio.com) プロファイルを意味し、ユーザー名、電子メール アドレス、自己紹介などが含まれます。
-   2. **通知**は、受信した電子メール通知の管理方法です。
+   2. **通知は、受信する電子メール通知の管理方法です。
    3. **アクティビティ**は、アクティブだったフィードバック項目 (投稿済み、コメント済みなど) と実行されたアクティビティを表示します。
    4. **添付ファイル**は、`FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM` のような形式の添付ファイル履歴のリストです。
 
