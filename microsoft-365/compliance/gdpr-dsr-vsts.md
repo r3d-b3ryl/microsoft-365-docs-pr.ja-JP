@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: b3711e0a68600152750d85e6287be735e204a92d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285095"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431778"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>GDPR のための Azure DevOps Services データ サブジェクト要求
 
@@ -33,11 +33,11 @@ GDPR の一般的な情報については、[Service Trust Portal の GDPR セ�
 
 ## <a name="personal-data-we-collect"></a>Microsoft が収集する個人データ
 
-Microsoft は、Azure DevOps Services を運用および改善するためにユーザーからデータを収集します。Azure DevOps Services は 2 種類のデータを収集します&mdash;顧客データとシステム生成ログです。顧客データには、Azure DevOps Services がサービスを実行するために必要な、ユーザーを特定できるトランザクション データおよび対話データが含まれます。システム生成ログには、各製品の領域と機能ごとに集計されたサービス使用状況のデータが含まれます。
+Microsoft は、Azure DevOps Services を運用および改善するためにユーザーから 2 種類のデータを収集します。顧客データとシステムが作り出すログです。顧客データには、Azure DevOps Services がサービスを実行するために必要な、ユーザーを確認するためのトランザクション データおよび対話データが含まれます。システムが作り出すログには、製品分野と機能ごとに集計されたサービス使用状況のデータが含まれます。
 
 ## <a name="delete-azure-devops-data"></a>Azure DevOps データの削除
 
-関連する Azure DevOps Services の顧客データを削除し、システム生成ログ内で見つかる、個人を特定できるデータを匿名化するための最初の手順は、Azure Active Directory (AAD) の ID アカウントまたは Microsoft アカウント (MSA) を削除することです。Azure DevOps Services は、厳密な整合性、追跡可能性、および監査規則を持つレコードのシステムとして信頼されています。これらの既存の義務は、GDPR に関する弊社の削除および保持の義務に影響します。ID アカウントを削除しても、Azure DevOps 組織の個々の ID に関連付けられた成果物とレコードは、修正、削除または変更されません。Azure DevOps 組織全体が削除されたときは、その組織で見つかった個人を特定できるすべての関連データとシステム生成ログは、(Azure DevOps 組織の論理的な削除の必須期間である 30 日を経た後で) 弊社のシステムから削除されることを保証します。
+関連する Azure DevOps Services の顧客データを削除し、システムが作り出すログの中で見つかる、個人を特定できるデータを匿名化するための最初の手順は、Azure Active Directory (AAD) の ID アカウントまたは Microsoft アカウント (MSA) を削除する事です。Azure DevOps Services は、厳密な整合性、追跡可能性、および監査規則を持つ記録システムとして信頼されています。これらの義務は、GDPR に定められた削除および保持の義務に影響します。ID アカウントを削除しても、Azure DevOps 組織内の個々の ID に関連付けられたアーチファクトや記録は、修正、削除、変更されません。Azure DevOps 組織全体が削除されたときは、その組織内の個人を特定できるすべての関連データとシステムが作り出すログは、(Azure DevOps 組織の削除の必須期間である 30 日を経た後で) 弊社のシステムから削除されることを保証します。
 
 ## <a name="export-azure-devops-data"></a>Azure DevOps データのエクスポート
 
