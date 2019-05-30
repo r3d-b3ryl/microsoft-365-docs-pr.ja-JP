@@ -1,0 +1,413 @@
+---
+title: 非エンタープライズ向け Microsoft 365 Enterprise の基礎インフラストラクチャ
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: laurawi
+ms.date: 05/22/2019
+audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- M365-subscription-management
+- Strat_O365_Enterprise
+ms.custom: ''
+description: エンタープライズ以外の組織を対象として、Microsoft 365 Enterprise の基礎インフラストラクチャの単純化されたフェーズを順番に説明します。
+ms.openlocfilehash: 64d911a9d59d5b9b1a450a9a122463699ec8eab8
+ms.sourcegitcommit: 2cf0d57b1771b37db773c3eaabac8456a6fa9195
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34419816"
+---
+# <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a><span data-ttu-id="eddf7-103">非エンタープライズ向け Microsoft 365 Enterprise の基礎インフラストラクチャ</span><span class="sxs-lookup"><span data-stu-id="eddf7-103">Microsoft 365 Enterprise foundation infrastructure</span></span>
+
+<span data-ttu-id="eddf7-104">エンタープライズ以外の組織でも、Microsoft 365 Enterprise を展開することで、チームワークを可能にして創造性を解き放つ、統合された安全なインフラストラクチャがもたらすビジネス価値を実現することができます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-104">Non-enterprise organizations can also deploy Microsoft 365 Enterprise and realize the business value of an integrated and secure infrastructure that enables teamwork and unlocks creativity.</span></span> <span data-ttu-id="eddf7-105">通常、エンタープライズ以外の組織では以下が一般的です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-105">A non-enterprise typically has:</span></span>
+
+- <span data-ttu-id="eddf7-106">メール サーバー、ファイル サーバー、Active Directory Domain Services (AD DS) ドメインなど、小規模のオンプレミスの IT インフラストラクチャを装備している。または IT インフラストラクチャがまったく装備されていない。</span><span class="sxs-lookup"><span data-stu-id="eddf7-106">A small amount of on-premises IT infrastructure, such as email and file servers and an Active Directory Domain Services (AD DS) domain, or none at all.</span></span>
+- <span data-ttu-id="eddf7-107">IT スタッフは少人数であり、そのほとんどが IT ゼネラリストであって、ネットワークや電子メールなどの特定のテクノロジやワークロードのスペシャリストではない。</span><span class="sxs-lookup"><span data-stu-id="eddf7-107">A small IT staff, most of whom are IT generalists, rather than specialists in a specific technology or workload such as networking or email.</span></span>
+
+<span data-ttu-id="eddf7-108">小規模な非エンタープライズ組織向けに、Microsoft は [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) を提供しています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-108">For your smaller, non-enterprise organization, Microsoft offers [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business).</span></span> <span data-ttu-id="eddf7-109">しかし、次のような理由で Microsoft 365 Enterprise が必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-109">However, there are reasons why you might need Microsoft 365 Enterprise, such as:</span></span>
+
+- <span data-ttu-id="eddf7-110">組織が現時点で、または将来的に、Microsoft 365 Business ライセンスの最大数である 300 を超える Microsoft 365 ライセンスを必要としている。</span><span class="sxs-lookup"><span data-stu-id="eddf7-110">Your organization needs more or will need more than 300 Microsoft 365 licenses, which is the maximum for Microsoft 365 Business.</span></span>
+- <span data-ttu-id="eddf7-111">組織が、Microsoft 365 Business では利用できない高度な生産性、音声、セキュリティ、分析を必要としている。</span><span class="sxs-lookup"><span data-stu-id="eddf7-111">Your organization needs the advanced productivity, voice, security, and analytics that are not available with Microsoft 365 Business.</span></span>
+
+<span data-ttu-id="eddf7-112">この記事では、非エンタープライズに適した Microsoft 365 Enterprise の基礎インフラストラクチャの単純な展開について説明します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-112">This article steps you through a simplified deployment of the foundation infrastructure of Microsoft 365 Enterprise suitable for your non-enterprise.</span></span>
+
+## <a name="first-set-up-your-subscription"></a><span data-ttu-id="eddf7-113">最初の手順: サブスクリプションのセットアップ</span><span class="sxs-lookup"><span data-stu-id="eddf7-113">First, set up your subscription</span></span>
+
+<span data-ttu-id="eddf7-114">サブスクリプションのドメイン ネーム システム (DNS) ドメインをセットアップする必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-114">You must set up the Domain Name System (DNS) domains for your subscription.</span></span> <span data-ttu-id="eddf7-115">Office 365 サブスクリプションが既にある場合、この手順は完了しています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-115">If you already have an Office 365 subscription, this should have been done.</span></span> <span data-ttu-id="eddf7-116">ない場合は、「[Office 365 にドメインを追加する](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-116">If not, follow the instructions in [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).</span></span>
+
+<span data-ttu-id="eddf7-117">次に、Microsoft 365 に対して追加のセキュリティを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-117">Next, you need to configure additional security for Microsoft 365.</span></span> <span data-ttu-id="eddf7-118">「[セキュリティ強化を構成する](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-118">Follow the instructions in [Configure increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).</span></span>
+
+## <a name="phase-1-networking"></a><span data-ttu-id="eddf7-119">フェーズ 1: ネットワーク</span><span class="sxs-lookup"><span data-stu-id="eddf7-119">Phase 1: Networking</span></span>
+
+<span data-ttu-id="eddf7-120">通常、エンタープライズ以外の組織の場合、各オフィスでローカル インターネット接続を使用しており、プロキシ サーバー、ファイアウォール、パケット検査デバイスは使用していません。</span><span class="sxs-lookup"><span data-stu-id="eddf7-120">Non-enterprise organizations typically have local Internet connections in each office and do not use proxy servers, firewalls, or packet inspection devices.</span></span> <span data-ttu-id="eddf7-121">各オフィスのインターネット サービス プロバイダー (ISP) は地域のローカル DNS サーバーを用意しているので、トラフィックは各自のオフィスとそのオフィスのオンプレミス ユーザーに最も近い Microsoft 365 クラウドサーバーに直接送信されます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-121">The Internet service provider (ISP) at each office has a regionally local DNS server so that traffic is directed to the Microsoft 365 cloud servers that are closest to your offices and their on-premises users.</span></span>
+
+<span data-ttu-id="eddf7-122">したがって、各オフィスの所在地の接続について ISP に確認が必要なのは、以下の事項のみです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-122">Therefore, you only need to verify with your ISP that the connection at each of your office locations:</span></span>
+
+- <span data-ttu-id="eddf7-123">地域のローカル DNS サーバーを使用している。</span><span class="sxs-lookup"><span data-stu-id="eddf7-123">Uses a regionally local DNS server.</span></span>
+- <span data-ttu-id="eddf7-124">ユーザーがより多くの Microsoft 365 クラウドサービスを使い始めても、現在および将来のニーズを十分に満たす能力がある。</span><span class="sxs-lookup"><span data-stu-id="eddf7-124">Is adequate for current and future needs as your users begin using more Microsoft 365 cloud services.</span></span>
+
+### <a name="your-configuration-so-far"></a><span data-ttu-id="eddf7-125">これまでの構成</span><span class="sxs-lookup"><span data-stu-id="eddf7-125">Your configuration so far</span></span>
+
+<span data-ttu-id="eddf7-126">以下は、フェーズ 1 の要素に注目して概要を視覚的に示したものです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-126">Here is a visual summary with the Phase 1 element highlighted.</span></span> <span data-ttu-id="eddf7-127">**組織**には複数のオフィスがある場合があり、各オフィスには地域のローカル DNS サーバーを使用している ISP 経由のローカル インターネット接続があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-127">**Your organization** can be multiple offices, each of which has a local Internet connection with an ISP that uses a regionally local DNS server.</span></span> <span data-ttu-id="eddf7-128">ISP を介して、各オフィスのユーザーは、最も近い Microsoft ネットワークの場所にアクセスして Microsoft 365 サブスクリプションのリソースを使用できます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-128">Through the ISP, users in each office can reach the nearest Microsoft network location and the resources of your Microsoft 365 subscription.</span></span>
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
+
+## <a name="phase-2-identity"></a><span data-ttu-id="eddf7-129">フェーズ 2: ID</span><span class="sxs-lookup"><span data-stu-id="eddf7-129">Phase 2: Identity</span></span>
+
+<span data-ttu-id="eddf7-130">組織の各従業員がサインインできる必要があります。そのためには、Microsoft 365 Enterprise サブスクリプションの Azure Active Directory (Azure AD) テナントのユーザー アカウントが必要です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-130">Each of the employees of your organization must be able to sign in, which requires a user account in the Azure Active Directory (Azure AD) tenant of your Microsoft 365 Enterprise subscription.</span></span> <span data-ttu-id="eddf7-131">次にグループが、SharePoint Online サイトやチームなどのアクセス許可が付与されたリソースと通信したり、それらにアクセスしたりするために、ユーザー アカウントやその他のグループをまとめるために使用されます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-131">Groups are then used to contain user accounts and other groups to communicate or gain access to permissioned resources, such as a SharePoint Online site or a team.</span></span> 
+
+### <a name="administrator-accounts"></a><span data-ttu-id="eddf7-132">管理者アカウント</span><span class="sxs-lookup"><span data-stu-id="eddf7-132">Administrator accounts</span></span>
+
+<span data-ttu-id="eddf7-133">非常に強力なパスワードや多要素認証 (MFA) を要求することで、グローバル管理者ユーザー アカウントを保護します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-133">Protect your global administrator user accounts by requiring very strong passwords and multi-factor authentication (MFA).</span></span> <span data-ttu-id="eddf7-134">詳細については、「[グローバル管理者アカウントを保護する](identity-designate-protect-admin-accounts.md#protect-global-administrator-accounts)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-134">See [Protect your Office 365 global administrator accounts](identity-designate-protect-admin-accounts.md#protect-global-administrator-accounts) for more information about configuration.</span></span>
+
+<span data-ttu-id="eddf7-135">組織が高度なセキュリティを必要としていて、Microsoft 365 Enterprise E5 を使用している場合は、Azure AD Privileged Identity Management を使用して、ジャストインタイムの管理者アクセスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="eddf7-135">If your organization requires high security and you have Microsoft 365 Enterprise E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access.</span></span> <span data-ttu-id="eddf7-136">詳細については、「[オンデマンド グローバル管理者をセットアップする](identity-designate-protect-admin-accounts.md#set-up-on-demand-global-administrators)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-136">See [Set up on-demand global administrators](identity-designate-protect-admin-accounts.md#set-up-on-demand-global-administrators) for more information.</span></span>
+
+### <a name="recommendations-for-groups"></a><span data-ttu-id="eddf7-137">グループに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="eddf7-137">Recommendations for groups</span></span>
+
+<span data-ttu-id="eddf7-138">オンプレミスの AD DS ドメインがある場合は、Microsoft 365 Enterprise のグループを Azure AD のグループとして引き続き使用します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-138">If you have an on-premises AD DS domain, continue to use those groups in Microsoft 365 Enterprise as groups in Azure AD.</span></span>
+
+<span data-ttu-id="eddf7-139">オンプレミスの AD DS ドメインがない場合は、以下のレベルのセキュリティを使用して、Azure AD でセキュリティ グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-139">If you don’t have an on-premises AD DS domain, create security groups in Azure AD using these levels of security.</span></span>
+
+| <span data-ttu-id="eddf7-140">セキュリティ レベル</span><span class="sxs-lookup"><span data-stu-id="eddf7-140">Security Level</span></span> | <span data-ttu-id="eddf7-141">説明</span><span class="sxs-lookup"><span data-stu-id="eddf7-141">Description</span></span> | <span data-ttu-id="eddf7-142">例</span><span class="sxs-lookup"><span data-stu-id="eddf7-142">Examples</span></span> |
+|:-------|:-----|:-----|
+| <span data-ttu-id="eddf7-143">ベースライン</span><span class="sxs-lookup"><span data-stu-id="eddf7-143">Baseline</span></span> | <span data-ttu-id="eddf7-144">これは、データ、データにアクセスする ID とデバイスを保護するための最低限の既定の基準です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-144">This is a minimum and default  standard for protecting data and the identities and devices that access your data.</span></span> <BR><BR> <span data-ttu-id="eddf7-145">通常、ほとんどのユーザーによって管理されている組織の大部分のデータが対象になります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-145">This is typically most of your organization’s data managed by most of your users.</span></span> | <span data-ttu-id="eddf7-146">営業、マーケティング、サポート、管理、製造など、現場担当者を対象にしたグループ。</span><span class="sxs-lookup"><span data-stu-id="eddf7-146">Groups for first line workers, such as sales, marketing, support, administration, and manufacturing.</span></span> |
+| <span data-ttu-id="eddf7-147">機密</span><span class="sxs-lookup"><span data-stu-id="eddf7-147">Sensitive</span></span> | <span data-ttu-id="eddf7-148">これは、ベースライン レベルを越えて保護する必要があるデータのサブセットに対する追加の保護です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-148">This is additional protection for a subset of your data that must be protected beyond the baseline level.</span></span> <span data-ttu-id="eddf7-149">これらのグループには、すべてのユーザーが利用できるようには意図されていない、部署やプロジェクトに固有の機密性の高いデータを使用および作成するユーザーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-149">These groups contain users that use and create sensitive data that is specific to departments and projects that are not meant to be available to everyone.</span></span> | <span data-ttu-id="eddf7-150">今後導入予定の製品を開発している製品チームまたはマーケティング チーム</span><span class="sxs-lookup"><span data-stu-id="eddf7-150">Product or marketing teams that are developing future products</span></span> |
+| <span data-ttu-id="eddf7-151">厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-151">Highly regulated</span></span> | <span data-ttu-id="eddf7-152">これは、高度に分類され、知的財産または営業秘密と見なされる、通常は少量のデータ、またはセキュリティ規制に準拠する必要があるデータに対する最高レベルの保護です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-152">Highly regulated: This is the highest level of protection for organizations that typically have a very small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to strict security regulations. Microsoft 365 Enterprise has capabilities to help organizations meet these high security requirements, including equivalent protection for identities and devices.</span></span> |  <span data-ttu-id="eddf7-153">調査、法務、財務の各チーム。</span><span class="sxs-lookup"><span data-stu-id="eddf7-153">Research, legal, and financial teams.</span></span> <BR><BR> <span data-ttu-id="eddf7-154">顧客やパートナーのデータを保存または使用しているチーム。</span><span class="sxs-lookup"><span data-stu-id="eddf7-154">Teams storing or using customer or partner data.</span></span> |
+
+### <a name="hybrid-identity"></a><span data-ttu-id="eddf7-155">ハイブリッド ID</span><span class="sxs-lookup"><span data-stu-id="eddf7-155">Hybrid identity</span></span>
+
+<span data-ttu-id="eddf7-156">オンプレミスの AD DS ドメインがある場合は、パスワード ハッシュ同期 (PHS) を使用してサーバー上に Azure AD Connect を構成します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-156">If you have an on-premises AD DS domain, configure Azure AD Connect on a server with password hash synchronization (PHS).</span></span> <span data-ttu-id="eddf7-157">詳細については、「[ID を同期する](identity-azure-ad-connect.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-157">See [Synchronize identities](identity-azure-ad-connect.md) for more information.</span></span>
+
+### <a name="more-secure-user-access-with-conditional-access-policies"></a><span data-ttu-id="eddf7-158">条件付きアクセスポリシーを使用したユーザー アクセスのセキュリティ強化</span><span class="sxs-lookup"><span data-stu-id="eddf7-158">More secure user access with conditional access policies</span></span>
+
+<span data-ttu-id="eddf7-159">Azure AD では、ユーザーのサインインの条件が評価されます。また、条件付きアクセス ポリシーを使用して、アクセスを許可または拒否したり、サインインを完了するために必要なその他のアクションを適用したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-159">Azure AD evaluates the conditions of user sign-ins and can use conditional access policies to grant or deny access and impose further actions that must be taken to complete the sign-in.</span></span> <span data-ttu-id="eddf7-160">たとえば、Azure AD によってサインインが中リスクまたは高リスクの条件下で行われていると判断された場合、ユーザーはサインインを完了するために MFA を実行するよう求められます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-160">For example, if Azure AD determines that the sign-in is happening under medium or high-risk conditions, it can require the user to perform MFA to complete the sign-in.</span></span>
+
+<span data-ttu-id="eddf7-161">条件付きアクセス ポリシーをユーザー アカウントまたはグループに適用します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-161">You apply conditional access policies to user accounts or groups.</span></span> <span data-ttu-id="eddf7-162">条件付きアクセス ポリシーの割り当てを容易にするには、組織内に次の Azure AD セキュリティ グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-162">To facilitate an easier assignment of conditional access policies, create these Azure AD security groups in your organization:</span></span>
+
+- <span data-ttu-id="eddf7-163">ベースライン</span><span class="sxs-lookup"><span data-stu-id="eddf7-163">Baseline</span></span>
+
+  <span data-ttu-id="eddf7-164">ベースライン データにアクセスできるユーザーのグループまたはユーザー アカウントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-164">Contains the groups or user accounts for users with access to baseline data.</span></span>
+
+- <span data-ttu-id="eddf7-165">機密</span><span class="sxs-lookup"><span data-stu-id="eddf7-165">Sensitive</span></span>
+
+  <span data-ttu-id="eddf7-166">機密性の高いデータにアクセスできるユーザーのグループまたはユーザー アカウントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-166">Contains the groups or user accounts for users with access to sensitive data.</span></span>
+
+- <span data-ttu-id="eddf7-167">厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-167">HIGHLY-REGULATED</span></span>
+
+  <span data-ttu-id="eddf7-168">厳しく規制されているデータにアクセスできるユーザーのグループまたはユーザー アカウントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-168">Contains the groups or user accounts for users with access to highly regulated data.</span></span>
+
+- <span data-ttu-id="eddf7-169">条件付きアクセスの除外</span><span class="sxs-lookup"><span data-stu-id="eddf7-169">COND-ACCESS-EXCLUDE</span></span>
+
+  <span data-ttu-id="eddf7-170">条件付きアクセス ポリシーから一時的にユーザーを除外するために使用できる空のグループ。</span><span class="sxs-lookup"><span data-stu-id="eddf7-170">An empty group that you can use to temporarily exclude a user from conditional access policies.</span></span>
+
+<span data-ttu-id="eddf7-171">以下は、有効にする、または作成する Azure AD 条件付きアクセス ポリシーの一覧です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-171">Here is the list of Azure AD conditional access policies to enable or create.</span></span>
+
+| <span data-ttu-id="eddf7-172">Azure AD 条件付きアクセス ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-172">Azure AD conditional access policy</span></span> | <span data-ttu-id="eddf7-173">適用対象のグループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-173">Groups to which it applies</span></span> |
+|:------|:-----|
+| <span data-ttu-id="eddf7-174">ベースライン ポリシー: 管理者に MFA を要求する</span><span class="sxs-lookup"><span data-stu-id="eddf7-174">Baseline policy: Require MFA for admins</span></span> | <span data-ttu-id="eddf7-175">このポリシーは管理者の役割に適用されるため、グループを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="eddf7-175">This policy applies to admin roles, so no groups need to be specified.</span></span> <span data-ttu-id="eddf7-176">このポリシーは有効にするだけで済みます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-176">This policy just needs to be enabled.</span></span> <span data-ttu-id="eddf7-177">以降のすべてのポリシーは、作成して有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-177">All subsequent policies need to be created and enabled.</span></span> |
+| <span data-ttu-id="eddf7-178">先進認証をサポートしないクライアントはブロックする</span><span class="sxs-lookup"><span data-stu-id="eddf7-178">Block clients that don't support modern authentication</span></span> | <span data-ttu-id="eddf7-179">ポリシー設定で [すべてのユーザー] を選択します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-179">Select “All users” in the policy settings.</span></span> |
+| <span data-ttu-id="eddf7-180">サインインのリスクが中または高のときに MFA が必要 (Microsoft 365 Enterprise E5 が必要)</span><span class="sxs-lookup"><span data-stu-id="eddf7-180">Require MFA when sign-in risk is medium or high (requires Microsoft 365 Enterprise E5)</span></span> | <span data-ttu-id="eddf7-181">ベースライン</span><span class="sxs-lookup"><span data-stu-id="eddf7-181">Baseline</span></span> |
+| <span data-ttu-id="eddf7-182">サインインのリスクが低、中、または高のときに MFA が必要 (Microsoft 365 Enterprise E5 が必要)</span><span class="sxs-lookup"><span data-stu-id="eddf7-182">Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 Enterprise E5)</span></span> | <span data-ttu-id="eddf7-183">機密</span><span class="sxs-lookup"><span data-stu-id="eddf7-183">Sensitive</span></span> |
+| <span data-ttu-id="eddf7-184">常に MFA が必要</span><span class="sxs-lookup"><span data-stu-id="eddf7-184">Always require MFA</span></span> | <span data-ttu-id="eddf7-185">厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-185">HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-186">iOS と Android のデバイスで承認済みアプリが必要</span><span class="sxs-lookup"><span data-stu-id="eddf7-186">Require approved apps on iOS and Android devices</span></span> | <span data-ttu-id="eddf7-187">ベースライン、機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-187">BASELINE, SENSITIVE, HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-188">準拠 PC が必要</span><span class="sxs-lookup"><span data-stu-id="eddf7-188">Require compliant PCs</span></span> | <span data-ttu-id="eddf7-189">ベースライン</span><span class="sxs-lookup"><span data-stu-id="eddf7-189">Baseline</span></span> |
+| <span data-ttu-id="eddf7-190">準拠している PC、および iOS と Android のデバイスが必要</span><span class="sxs-lookup"><span data-stu-id="eddf7-190">Require compliant PCs and iOS and Android devices</span></span> | <span data-ttu-id="eddf7-191">機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-191">SENSITIVE, HIGHLY-REGULATED</span></span> |
+|||
+
+<span data-ttu-id="eddf7-192">以下は、作成して有効にする Azure AD Identity Protection (Microsoft 365 Enterprise E5 が必要) ユーザーのリスク ポリシーです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-192">Here is the Azure AD Identity Protection (requires Microsoft 365 Enterprise E5) user risk policy to create and enable.</span></span>
+
+| <span data-ttu-id="eddf7-193">Azure AD Identity Protection ユーザーのリスク ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-193">Azure AD Identity Protection user risk policy</span></span> | <span data-ttu-id="eddf7-194">適用対象のグループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-194">Groups to which it applies</span></span> |
+|:------|:-----|
+| <span data-ttu-id="eddf7-195">高リスク ユーザーはパスワードを変更する必要がある</span><span class="sxs-lookup"><span data-stu-id="eddf7-195">High risk users must change passwords</span></span> | <span data-ttu-id="eddf7-196">ポリシー設定で [すべてのユーザー] を選択します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-196">Select “All users” in the policy settings.</span></span> |
+|||
+
+<span data-ttu-id="eddf7-197">手順については、「[共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-197">See [Common identity and device access policies](identity-access-policies.md) for the instructions.</span></span>
+
+### <a name="groups-for-easier-management"></a><span data-ttu-id="eddf7-198">管理を容易にするためのグループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-198">Groups for easier management</span></span>
+
+<span data-ttu-id="eddf7-199">以下は、グループとライセンスの管理をより簡単にするための機能の一部です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-199">Here are some features that can make group and licensing management easier for you.</span></span>
+
+| <span data-ttu-id="eddf7-200">機能</span><span class="sxs-lookup"><span data-stu-id="eddf7-200">Feature</span></span> | <span data-ttu-id="eddf7-201">使用法</span><span class="sxs-lookup"><span data-stu-id="eddf7-201">Use</span></span> |
+|:------|:-----|
+| <span data-ttu-id="eddf7-202">セルフサービスによるグループの管理</span><span class="sxs-lookup"><span data-stu-id="eddf7-202">Self-service group management</span></span> | <span data-ttu-id="eddf7-203">IT スタッフではなく、グループの所有者が Azure AD グループを管理できるようにします。</span><span class="sxs-lookup"><span data-stu-id="eddf7-203">Allow management of Azure AD groups by group owners instead of IT staff.</span></span> <span data-ttu-id="eddf7-204">詳細については、「[セルフサービスによるグループの管理](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-204">See [Self-service group management](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups) for more information.</span></span> |
+| <span data-ttu-id="eddf7-205">動的グループ メンバーシップ</span><span class="sxs-lookup"><span data-stu-id="eddf7-205">Dynamic group membership</span></span> | <span data-ttu-id="eddf7-206">部署や国などのユーザー アカウントの属性に基づいて、Azure AD グループに対するユーザー アカウントの自動追加または自動削除を構成します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-206">Configure automatic addition or removal of user accounts from Azure AD groups based on user account attributes, such as Department or Country.</span></span> <span data-ttu-id="eddf7-207">詳細については、「[動的グループ メンバーシップ](identity-self-service-group-management.md#set-up-dynamic-group-membership)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-207">See [Dynamic group membership](identity-self-service-group-management.md#set-up-dynamic-group-membership) for more information.</span></span> |
+| <span data-ttu-id="eddf7-208">グループベースのライセンス</span><span class="sxs-lookup"><span data-stu-id="eddf7-208">Group-based licensing</span></span> | <span data-ttu-id="eddf7-209">グループ メンバーシップを使用して、ユーザー アカウントに対して自動的にライセンスの割り当てまたは割り当て解除を行います。</span><span class="sxs-lookup"><span data-stu-id="eddf7-209">Use group membership to automatically assign or unassign licenses to user accounts.</span></span> <span data-ttu-id="eddf7-210">詳細については、「[グループベースのライセンス](identity-self-service-group-management.md#set-up-automatic-licensing)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-210">See [Group-based licensing](identity-self-service-group-management.md#set-up-automatic-licensing) for more information.</span></span> |
+|  |  |
+
+<span data-ttu-id="eddf7-211">グループベースのライセンスを使用している場合は、LICENSED という名前のグループを作成して、Microsoft 365 Enterprise ライセンスが割り当てられているユーザー アカウント名を含めます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-211">If you are using group-based licensing, create a group named LICENSED to contain user account names that are assigned a Microsoft 365 Enterprise license.</span></span>
+
+### <a name="monitor-user-access"></a><span data-ttu-id="eddf7-212">ユーザー アクセスの監視</span><span class="sxs-lookup"><span data-stu-id="eddf7-212">Monitor user access</span></span>
+
+<span data-ttu-id="eddf7-213">Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity Protection を使用して、資格情報の侵害についてユーザーのサインインを監視および分析できます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-213">If you have Microsoft 365 Enterprise E5, you can use Azure AD Identity Protection to monitor and analyze user sign-ins for credential compromise.</span></span> <span data-ttu-id="eddf7-214">詳細については、「[資格情報が侵害されないように保護する](identity-multi-factor-authentication.md#protect-against-credential-compromise)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-214">See [Protect against credential compromise](identity-multi-factor-authentication.md#protect-against-credential-compromise) for more information.</span></span>
+
+### <a name="your-configuration-so-far"></a><span data-ttu-id="eddf7-215">これまでの構成</span><span class="sxs-lookup"><span data-stu-id="eddf7-215">Your configuration so far</span></span>
+
+<span data-ttu-id="eddf7-216">以下は、新しい要素に注目して、ハイブリッド ID の ID フェーズの概要を視覚的に示したものです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-216">Here is a visual summary of the Identity phase for hybrid identity, with the new elements highlighted.</span></span>
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
+ 
+<span data-ttu-id="eddf7-217">新しく取り上げた ID 要素には次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-217">The new and highlighted identity elements include:</span></span>
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | <span data-ttu-id="eddf7-218">ユーザーのアカウントとグループを含むオンプレミスの AD DS ドメイン。</span><span class="sxs-lookup"><span data-stu-id="eddf7-218">An on-premises AD DS domain with user accounts and groups.</span></span> |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | <span data-ttu-id="eddf7-219">Azure AD Connect を実行している Windows ベースのサーバー。</span><span class="sxs-lookup"><span data-stu-id="eddf7-219">A Windows-based server running Azure AD Connect.</span></span> |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | <span data-ttu-id="eddf7-220">Azure AD 内の AD DS のアカウントとグループの同期セット。</span><span class="sxs-lookup"><span data-stu-id="eddf7-220">The synchronized set of AD DS accounts and groups in Azure AD.</span></span> |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | <span data-ttu-id="eddf7-221">認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定。</span><span class="sxs-lookup"><span data-stu-id="eddf7-221">Azure AD settings for authentication, securing global accounts, and making it easier to manage groups and licenses.</span></span> |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | <span data-ttu-id="eddf7-222">Azure AD 条件付きアクセス ポリシー。</span><span class="sxs-lookup"><span data-stu-id="eddf7-222">Azure AD conditional access policies.</span></span> |
+|||
+
+## <a name="phase-3-windows-10-enterprise"></a><span data-ttu-id="eddf7-223">フェーズ 3: Windows 10 Enterprise</span><span class="sxs-lookup"><span data-stu-id="eddf7-223">Phase 3: Windows 10 Enterprise</span></span>
+
+<span data-ttu-id="eddf7-224">お使いの Windows 10 Enterprise デバイスを Microsoft 365 の ID とセキュリティ インフラストラクチャに確実に統合するには、次のオプションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-224">To ensure that your Windows 10 Enterprise devices are integrated into the identity and security infrastructure of Microsoft 365, here are your options:</span></span>
+
+- <span data-ttu-id="eddf7-225">クラウド専用 (オンプレミスの AD DS ドメインがない場合)</span><span class="sxs-lookup"><span data-stu-id="eddf7-225">Cloud-only (you do not have on-premises AD DS domain)</span></span>
+
+  <span data-ttu-id="eddf7-226">Windows 10 Enterprise の各デバイスをサブスクリプションの Azure AD テナントに参加させます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-226">Join each Windows 10 Enterprise device to the Azure AD tenant of your subscription.</span></span>
+
+  <span data-ttu-id="eddf7-227">詳細については、「[職場のデバイスを組織のネットワークに参加させる](https://docs.microsoft.com/ja-JP/azure/active-directory/user-help/user-help-join-device-on-network)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-227">See [Join your work device to your organization's network](https://docs.microsoft.com/en-us/azure/active-directory/user-help/user-help-join-device-on-network) for more information.</span></span>
+
+- <span data-ttu-id="eddf7-228">ハイブリッド (オンプレミスの AD DS ドメインがある場合)</span><span class="sxs-lookup"><span data-stu-id="eddf7-228">Hybrid (you have on-premises AD DS domain)</span></span>
+
+  <span data-ttu-id="eddf7-229">既に AD DS ドメインに参加している既存の Windows 10 Enterprise デバイスの場合は、各デバイスを Azure AD テナントに参加させます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-229">For each existing Windows 10 Enterprise device already joined to your AD DS domain, join them to the Azure AD tenant.</span></span> <span data-ttu-id="eddf7-230">詳細については、「[ハイブリッド Azure Active Directory 参加済みデバイスの構成方法](https://go.microsoft.com/fwlink/p/?linkid=872870)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-230">See [How to configure hybrid Azure Active Directory joined devices](https://go.microsoft.com/fwlink/p/?linkid=872870) for the instructions.</span></span>
+
+  <span data-ttu-id="eddf7-231">Windows 10 Enterprise の新しいデバイスの場合は、各デバイスを AD DS ドメインに参加させてから、Azure AD テナントに参加させます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-231">For each new Windows 10 Enterprise device, join them to your AD DS domain, and then join them to the Azure AD tenant.</span></span>
+
+  <span data-ttu-id="eddf7-232">Windows 10 Enterprise デバイスは、各デバイスをモバイル デバイスの管理用に登録します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-232">For each Windows 10 Enterprise device, enroll them for mobile device management.</span></span> <span data-ttu-id="eddf7-233">手順については、「[グループ ポリシーを使用して Intune に Windows 10 デバイスを登録する](https://go.microsoft.com/fwlink/p/?linkid=872871)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-233">See [Enroll a Windows 10 device with Intune by using a Group Policy](https://go.microsoft.com/fwlink/p/?linkid=872871) for the instructions.</span></span>
+
+<span data-ttu-id="eddf7-234">インストールして参加させると、Windows 10 Enterprise の各デバイスには、Windows Update for Business クラウド サービスから更新プログラムが自動的にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-234">Once installed and joined, each Windows 10 Enterprise device automatically installs updates from the Windows Update for Business cloud service.</span></span> <span data-ttu-id="eddf7-235">通常、エンタープライズ以外の組織では、更新プログラムの配布やインストール用にインフラストラクチャをセットアップする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="eddf7-235">There is typically no need in a non-enterprise organization to set up an infrastructure to distribute and install updates.</span></span>
+
+### <a name="your-configuration-so-far"></a><span data-ttu-id="eddf7-236">これまでの構成</span><span class="sxs-lookup"><span data-stu-id="eddf7-236">Your configuration so far</span></span>
+
+<span data-ttu-id="eddf7-237">以下は、新しい要素に注目して、Windows 10 Enterprise フェーズの概要を視覚的に示したものです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-237">Here is a visual summary of the Windows 10 Enterprise phase with the new elements highlighted.</span></span>
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
+ 
+<span data-ttu-id="eddf7-238">新しく取り上げた Windows 10 Enterprise の要素には次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-238">The new and highlighted Windows 10 Enterprise elements include:</span></span>
+
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | <span data-ttu-id="eddf7-239">Windows デバイスにインストールされている Windows 10 Enterprise (例として、オンプレミスのノート PC を表示)。</span><span class="sxs-lookup"><span data-stu-id="eddf7-239">Windows 10 Enterprise installed on Windows devices, with the on-premises laptop as an example.</span></span> |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | <span data-ttu-id="eddf7-240">Windows 10 Enterprise の新規インストール用のイメージが用意されているボリューム ライセンス サービス センター、および最新の更新プログラムを提供する Windows Update for Business サービス。</span><span class="sxs-lookup"><span data-stu-id="eddf7-240">The Volume Licensing Service Center, which provides images for new installations of Windows 10 Enterprise, and the Windows Update for Business service, which provides the latest updates.</span></span> |
+|||
+
+## <a name="phase-4-office-365-proplus"></a><span data-ttu-id="eddf7-241">フェーズ 4: Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="eddf7-241">Phase 4: Office 365 ProPlus</span></span>
+
+<span data-ttu-id="eddf7-242">Microsoft 365 Enterprise には、Microsoft Office のサブスクリプション版である Office 365 ProPlus が含まれています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-242">Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version of Microsoft Office.</span></span> <span data-ttu-id="eddf7-243">Office 2016 または Office 2019 と同様に、Office 365 ProPlus はクライアント デバイスに直接インストールされます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-243">Like Office 2016 or Office 2019, Office 365 ProPlus is installed directly on your client devices.</span></span> <span data-ttu-id="eddf7-244">ただし、Office 365 ProPlus には定期的に新機能が提供されます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-244">However, Office 365 ProPlus receives new features on a regular basis.</span></span> <span data-ttu-id="eddf7-245">詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-245">See [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.</span></span>
+
+<span data-ttu-id="eddf7-246">エンタープライズ以外の組織の場合は、手動で Office 365 ProPlus をデバイスにインストールします。</span><span class="sxs-lookup"><span data-stu-id="eddf7-246">For your non-enterprise organization, manually install Office 365 ProPlus on devices.</span></span> <span data-ttu-id="eddf7-247">これは、新しいデバイスを使用する準備の一環として実行することも、ユーザーがオンボーディング プロセスの一環として実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-247">This can be done as part of preparing a new device for use, or it can be done by the user as part of their onboarding process.</span></span>
+
+<span data-ttu-id="eddf7-248">いずれの場合でも、管理者またはユーザーは https://portal.office.com で Office 365 ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="eddf7-248">In either case, the administrator or the user signs in to the Office 365 portal at https://portal.office.com.</span></span> <span data-ttu-id="eddf7-249">**[Microsoft Office Home]** タブで、**[Office のインストール]** をクリックして、インストール プロセスを進めます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-249">On the **Microsoft Office Home** tab, click **Install Office** and step through the installation process.</span></span>
+
+<span data-ttu-id="eddf7-250">Office 365 ProPlus に対する機能更新プログラムは、インストールされているコンピューターごとに毎月ダウンロードされます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-250">Feature updates to Office 365 ProPlus are downloaded monthly by each computer on which it is installed.</span></span> <span data-ttu-id="eddf7-251">通常、エンタープライズ以外の組織では、Office 365 ProPlus 更新プログラムの配布用にインフラストラクチャをセットアップする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="eddf7-251">There is typically no need in a non-enterprise organization to set up an infrastructure to distribute Office 365 ProPlus updates.</span></span> 
+
+### <a name="your-configuration-so-far"></a><span data-ttu-id="eddf7-252">これまでの構成</span><span class="sxs-lookup"><span data-stu-id="eddf7-252">Your configuration so far</span></span>
+
+<span data-ttu-id="eddf7-253">以下は、新しい要素に注目して、Office 365 ProPlus フェーズの概要を視覚的に示したものです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-253">Here is a visual summary of the Office 365 ProPlus phase with the new elements highlighted.</span></span>
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+ 
+<span data-ttu-id="eddf7-254">新しく取り上げた Office 365 ProPlus の要素には次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-254">The new and highlighted Office 365 ProPlus elements include:</span></span>
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | <span data-ttu-id="eddf7-255">デバイスにインストールされている Office 365 ProPlus (例として、オンプレミスのノート PC を表示)。</span><span class="sxs-lookup"><span data-stu-id="eddf7-255">Office 365 ProPlus installed on devices, with the on-premises laptop as an example.</span></span> |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | <span data-ttu-id="eddf7-256">Office 365 ProPlus の更新プログラムのためにデバイスがアクセスする、Office 365 ProPlus 用の Office コンテンツ配信ネットワーク (CDN)。</span><span class="sxs-lookup"><span data-stu-id="eddf7-256">The Office Content Delivery Network (CDN) for Office 365 ProPlus, which devices access for Office 365 ProPlus updates.</span></span> |
+|||
+
+## <a name="phase-5-mobile-device-management"></a><span data-ttu-id="eddf7-257">フェーズ 5: モバイル デバイス管理</span><span class="sxs-lookup"><span data-stu-id="eddf7-257">Phase 5: Mobile device management</span></span>
+
+<span data-ttu-id="eddf7-258">Microsoft 365 Enterprise には、モバイル デバイス管理用の Microsoft Intune が含まれています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-258">Microsoft 365 Enterprise includes Microsoft Intune for mobile device management.</span></span> <span data-ttu-id="eddf7-259">Intune を使用すると、iOS、Android、macOS、Windows の各デバイスを管理して、自分のデータを含む、組織のリソースへのアクセスを保護することができます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-259">With Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data.</span></span> <span data-ttu-id="eddf7-260">Intune は Azure AD のユーザー、グループ、コンピューター アカウントと統合されています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-260">Intune integrates with the users, groups, and computer accounts of Azure AD.</span></span>
+
+<span data-ttu-id="eddf7-261">Intune には、次の 2 種類のモバイル デバイス管理が用意されています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-261">Intune provides two types of mobile device management:</span></span>
+
+- <span data-ttu-id="eddf7-262">モバイル デバイス管理 (MDM) は、デバイスが Intune に登録された時点から行われます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-262">Mobile device management (MDM) is when devices get enrolled in Intune.</span></span> <span data-ttu-id="eddf7-263">登録されると、デバイスはマネージド デバイスとなり、組織で使用されているポリシー、ルール、設定を受信できます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-263">Once enrolled, they are managed devices and can receive the policies, rules, and settings used by your organization.</span></span> <span data-ttu-id="eddf7-264">これらの種類のデバイスは、通常、組織が所有し、従業員に支給されます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-264">These types of devices are typically owned by your organization and issued to your employees.</span></span>
+
+- <span data-ttu-id="eddf7-265">自分の個人用デバイスを使用しているユーザーの中には、自分のデバイスを登録したり、ポリシーや設定を使用して Intune で管理したりすることを望まないユーザーもいます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-265">Users with their own personal devices may not want to enroll their devices or be managed by Intune with your policies and settings.</span></span> <span data-ttu-id="eddf7-266">しかし、そうであっても、組織のリソースとデータを保護する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-266">However, you still need to protect your organization's resources and data.</span></span> <span data-ttu-id="eddf7-267">このような場合は、モバイル アプリケーション管理 (MAM) を使用して、アプリを保護することができます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-267">For this scenario, you can protect your apps using mobile application management (MAM).</span></span> <span data-ttu-id="eddf7-268">これらの種類のデバイスは、私物機器の業務利用 (BYOD) と呼ばれ、通常は従業員が所有しています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-268">These types of devices are referred to as bring your own devices (BYOD) and are typically owned by your employees.</span></span> 
+
+<span data-ttu-id="eddf7-269">Intune ポリシーでは、デバイス コンプライアンスとアプリ保護を適用できます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-269">Intune policies can enforce device compliance and app protection.</span></span> <span data-ttu-id="eddf7-270">以下は、作成する Intune ポリシーの一覧です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-270">Here is the list of Intune policies to create.</span></span>
+
+| <span data-ttu-id="eddf7-271">Intune ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-271">Intune policies</span></span> | <span data-ttu-id="eddf7-272">適用対象のグループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-272">Groups to which it applies</span></span> |
+|:------|:-----|
+| <span data-ttu-id="eddf7-273">Windows 用のデバイス コンプライアンス ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-273">Device compliance policy for Windows</span></span> | <span data-ttu-id="eddf7-274">ベースライン、機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-274">BASELINE, SENSITIVE, HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-275">iOS 用のデバイス コンプライアンス ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-275">Device compliance policy for iOS</span></span> | <span data-ttu-id="eddf7-276">機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-276">SENSITIVE, HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-277">macOS 用のデバイス コンプライアンス ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-277">Device compliance for macOS</span></span> | <span data-ttu-id="eddf7-278">機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-278">SENSITIVE, HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-279">Android と Android Enterprise 用のデバイス コンプライアンス ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-279">Device compliance policy for Android and Android Enterprise</span></span> | <span data-ttu-id="eddf7-280">機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-280">SENSITIVE, HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-281">iOS 用のアプリ保護ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-281">App protection policy for iOS</span></span> | <span data-ttu-id="eddf7-282">ベースライン、機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-282">BASELINE, SENSITIVE, HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-283">macOS 用のアプリ保護ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-283">App protection policy for macOS</span></span> | <span data-ttu-id="eddf7-284">ベースライン、機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-284">BASELINE, SENSITIVE, HIGHLY-REGULATED</span></span> |
+| <span data-ttu-id="eddf7-285">Android と Android Enterprise 用のアプリ保護ポリシー</span><span class="sxs-lookup"><span data-stu-id="eddf7-285">App protection policy for Android and Android Enterprise</span></span> | <span data-ttu-id="eddf7-286">ベースライン、機密、厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-286">BASELINE, SENSITIVE, HIGHLY-REGULATED</span></span> |
+|||
+    
+<span data-ttu-id="eddf7-287">手順については、「[共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-287">See [Common identity and device access policies](identity-access-policies.md) for the instructions.</span></span>
+
+### <a name="your-configuration-so-far"></a><span data-ttu-id="eddf7-288">これまでの構成</span><span class="sxs-lookup"><span data-stu-id="eddf7-288">Your configuration so far</span></span>
+
+<span data-ttu-id="eddf7-289">以下は、新しい要素に注目して、モバイル デバイス管理フェーズの概要を視覚的に示したものです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-289">Here is a visual summary of the Mobile Device Management phase with the new elements highlighted.</span></span>
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
+ 
+<span data-ttu-id="eddf7-290">新しく取り上げたモバイル デバイス管理の要素には次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-290">The new and highlighted mobile device management elements include:</span></span>
+
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | <span data-ttu-id="eddf7-291">Intune に登録されているデバイス (例として、Windows 10 Enterprise を実行しているオンプレミスのノート PC を表示)。</span><span class="sxs-lookup"><span data-stu-id="eddf7-291">Devices that are enrolled in Intune, showing the on-premises laptop running Windows 10 Enterprise as an example.</span></span> |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | <span data-ttu-id="eddf7-292">デバイス コンプライアンスとアプリ保護のための Intune ポリシー。</span><span class="sxs-lookup"><span data-stu-id="eddf7-292">Intune policies for device compliance and app protection.</span></span> |
+|||
+
+## <a name="phase-6-information-protection"></a><span data-ttu-id="eddf7-293">フェーズ 6: 情報保護</span><span class="sxs-lookup"><span data-stu-id="eddf7-293">Phase 6: Information protection</span></span>
+
+<span data-ttu-id="eddf7-294">Microsoft 365 Enterprise には情報保護機能が用意されており、さまざまなレベルのガバナンス、セキュリティ、保護を適用することによって、データの分類を異なる方法で処理することが可能です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-294">Microsoft 365 Enterprise has a host of information protection features that allow you treat classifications of data differently by applying different levels of governance, security, and protection.</span></span> 
+
+<span data-ttu-id="eddf7-295">たとえば、ほとんどの従業員とその従業員が作業しているドキュメント間における通常の通信には、一定のベースライン レベルの保護が必要です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-295">For example, normal correspondence between most employees and the documents that they work on need a certain baseline level of protection.</span></span> <span data-ttu-id="eddf7-296">財務レコード、顧客データ、知的財産には、より高いレベルの保護が必要です。</span><span class="sxs-lookup"><span data-stu-id="eddf7-296">Financial records, customer data, and your intellectual property need a higher level of protection.</span></span>
+
+<span data-ttu-id="eddf7-297">情報保護戦略の第一歩は、保護レベルを決定することです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-297">The first step to an information protection strategy is to determine the levels of protection.</span></span> <span data-ttu-id="eddf7-298">多くの組織では以下のレベルが使用されています。これらは既に条件付きアクセス ポリシーに使用されています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-298">Many organizations use these levels, which are already being used for conditional access policies:</span></span>
+
+- <span data-ttu-id="eddf7-299">ベースライン</span><span class="sxs-lookup"><span data-stu-id="eddf7-299">Baseline</span></span>
+
+  <span data-ttu-id="eddf7-300">通常のビジネス通信 (電子メール) や、管理、営業、サポートの各担当者用のファイルなどがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-300">Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers.</span></span>
+
+- <span data-ttu-id="eddf7-301">機密</span><span class="sxs-lookup"><span data-stu-id="eddf7-301">Sensitive</span></span>
+
+  <span data-ttu-id="eddf7-302">財務情報や法的情報、新しい製品やサービスに関する研究開発データなどがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-302">Examples of Level 2 data are financial and legal information and research and development data for new products.</span></span>
+
+- <span data-ttu-id="eddf7-303">厳しく規制</span><span class="sxs-lookup"><span data-stu-id="eddf7-303">Highly regulated</span></span>
+
+  <span data-ttu-id="eddf7-304">顧客やパートナーの個人を特定できる情報、組織の知的財産などがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-304">Examples include customer and partner personally identifiable information and your organization’s intellectual property.</span></span>
+
+<span data-ttu-id="eddf7-305">次の手順では、これらのレベルのデータ セキュリティに基づいて、以下を特定して実装します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-305">Based on these levels of data security, the next step is to identify and implement:</span></span>
+
+- <span data-ttu-id="eddf7-306">カスタムの機密情報の種類</span><span class="sxs-lookup"><span data-stu-id="eddf7-306">Custom sensitive information types</span></span>
+
+  <span data-ttu-id="eddf7-307">Microsoft 365 では、医療サービスやクレジット カード番号など、さまざまな機密情報の種類を提供しています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-307">Microsoft 365 supplies a wide selection of sensitive information types, such as health service and credit card numbers.</span></span> <span data-ttu-id="eddf7-308">Microsoft 365 によって提供される項目の一覧に必要なものが見つからない場合は、独自に作成することができます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-308">If you do not find one that you need in the Microsoft 365-supplied list, you can create your own.</span></span>
+
+- <span data-ttu-id="eddf7-309">保持ラベル</span><span class="sxs-lookup"><span data-stu-id="eddf7-309">Retention labels</span></span>
+
+  <span data-ttu-id="eddf7-310">組織のポリシーと地域の規制に準拠するには、必要に応じて、特定の種類のドキュメントまたは特定のコンテンツを含むドキュメントを保持する期間を決定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-310">To comply with organization policies and regional regulations, you might have to specify how long specific types of documents or documents with specific contents should be retained.</span></span> <span data-ttu-id="eddf7-311">これは、保存ラベルを使用して電子メールとドキュメントに実装できます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-311">You can implement this for email and document using retention labels.</span></span>
+
+- <span data-ttu-id="eddf7-312">機密度ラベル</span><span class="sxs-lookup"><span data-stu-id="eddf7-312">Sensitivity labels</span></span>
+
+  <span data-ttu-id="eddf7-313">追加のセキュリティ レベルを適用できるように、名前付きの機密度ラベルを使用して、電子メールやドキュメントにラベルを付けることができます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-313">You can label email or documents with a named sensitivity label so that the additional levels of security can be applied.</span></span> <span data-ttu-id="eddf7-314">例としては、透かし、暗号化、アクセス許可などがあります。これらを使用して、電子メールまたはドキュメントへのアクセスを許可されているユーザーとそのユーザーの許可されている操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-314">Examples are watermarks, encryption, and permissions, which specify who is allowed to access the email or document and what they are allowed to do.</span></span>
+
+<span data-ttu-id="eddf7-315">詳細については、「[Microsoft 365 の分類の種類](infoprotect-configure-classification.md#microsoft-365-classification-types)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-315">See [Microsoft 365 classification types](infoprotect-configure-classification.md#microsoft-365-classification-types) for more information.</span></span>
+
+<span data-ttu-id="eddf7-316">アクセス許可の機密度ラベルを使用する場合は、追加の Azure AD セキュリティ グループを作成して、電子メールとドキュメントに対してどのような操作を誰に許可するのかを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-316">If you use sensitivity labels with permissions, you might have to create additional Azure AD security groups to define who is allowed to do what with email and documents.</span></span> 
+
+<span data-ttu-id="eddf7-317">たとえば、リサーチ チームの電子メールとドキュメントを保護するには、"リサーチ" という機密度ラベルを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-317">For example, you need to create a RESEARCH sensitivity label to protect the email and documents of your research team.</span></span> <span data-ttu-id="eddf7-318">リサーチ チームのメンバーの一部には、リサーチ機密度ラベルが付けられているドキュメントを変更できる権限が必要であり、またリサーチ チーム以外の他の従業員には、リサーチ機密度ラベルが付いているドキュメントの表示だけをできる権限が必要であると決定します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-318">You determine that some researchers must have the ability to change documents marked with the RESEARCH sensitivity label and other non-research employees need have the ability to only view documents marked with the RESEARCH sensitivity label.</span></span> <span data-ttu-id="eddf7-319">つまり、次の 2 つのグループを追加で作成して管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-319">This means you need to create and manage two additional groups:</span></span>
+
+- <span data-ttu-id="eddf7-320">リサーチ-すべて</span><span class="sxs-lookup"><span data-stu-id="eddf7-320">RESEARCH-ALL</span></span>
+- <span data-ttu-id="eddf7-321">リサーチ-表示</span><span class="sxs-lookup"><span data-stu-id="eddf7-321">RESEARCH-VIEW</span></span>
+
+<span data-ttu-id="eddf7-322">これらのグループとそのアクセス許可は、リサーチ機密度ラベルの構成の一部になります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-322">These groups and their permissions become part of the RESEARCH sensitivity label's configuration.</span></span>
+
+<span data-ttu-id="eddf7-323">グループベースのアクセス許可で構成された機密度ラベルの場合、これらのグループのメンバーシップを管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-323">For sensitivity labels configured with group-based permissions, you must manage the membership of these groups.</span></span>
+
+### <a name="your-configuration-so-far"></a><span data-ttu-id="eddf7-324">これまでの構成</span><span class="sxs-lookup"><span data-stu-id="eddf7-324">Your configuration so far</span></span>
+
+<span data-ttu-id="eddf7-325">以下は、新しい要素に注目して、情報保護フェーズの概要を視覚的に示したものです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-325">Here is a visual summary of the Information Protection phase with the new elements highlighted.</span></span>
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
+ 
+<span data-ttu-id="eddf7-326">新しく取り上げた情報保護の要素には次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-326">The new and highlighted information protection elements include:</span></span>
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | <span data-ttu-id="eddf7-327">ユーザーがドキュメントに適用できる 3 つのセキュリティ レベルの機密度ラベル。</span><span class="sxs-lookup"><span data-stu-id="eddf7-327">Sensitivity labels for the three levels of security that users can apply to documents.</span></span> |
+|||
+
+<span data-ttu-id="eddf7-328">保持ラベルとカスタム情報の種類は表示されません。</span><span class="sxs-lookup"><span data-stu-id="eddf7-328">Retention labels and custom information types are not shown.</span></span>
+
+## <a name="onboarding"></a><span data-ttu-id="eddf7-329">オンボード</span><span class="sxs-lookup"><span data-stu-id="eddf7-329">Onboarding</span></span>
+
+<span data-ttu-id="eddf7-330">このインフラストラクチャでは、これらのプロセスを使用して、従業員に Microsoft 365 Enterprise 向けのオンボードを実施することができます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-330">With this infrastructure, you can onboard an employee for Microsoft 365 Enterprise with these processes.</span></span>
+
+### <a name="a-new-windows-10-enterprise-device"></a><span data-ttu-id="eddf7-331">新しい Windows 10 Enterprise デバイス</span><span class="sxs-lookup"><span data-stu-id="eddf7-331">A new Windows 10 Enterprise device</span></span>
+
+<span data-ttu-id="eddf7-332">従業員に新しい Windows 10 Enterprise デバイスを提供する前に、以下を実行します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-332">Before giving an employee a new Windows 10 Enterprise device:</span></span>
+
+- <span data-ttu-id="eddf7-333">クラウド専用 ID の場合</span><span class="sxs-lookup"><span data-stu-id="eddf7-333">For cloud-only identity</span></span>
+
+  <span data-ttu-id="eddf7-334">デバイスを Microsoft 365 Enterprise サブスクリプションの Azure AD テナントに参加させます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-334">Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 subscription.</span></span>
+
+- <span data-ttu-id="eddf7-335">ハイブリッド ID </span><span class="sxs-lookup"><span data-stu-id="eddf7-335">For hybrid identity</span></span>
+
+  <span data-ttu-id="eddf7-336">デバイスを AD DS、Azure AD テナントの順に参加させてから、Intune に登録します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-336">Join the device to your AD DS, join the device to your Azure AD tenant, and then enroll the device in Intune.</span></span>
+
+### <a name="existing-employee-with-an-ad-ds-user-account"></a><span data-ttu-id="eddf7-337">AD DS ユーザー アカウントを持っている既存の従業員</span><span class="sxs-lookup"><span data-stu-id="eddf7-337">Existing employee with an AD DS user account</span></span>
+
+<span data-ttu-id="eddf7-338">ハイブリッド ID を使用する場合には、組織の初期のオンボードの一環として、次の Azure AD グループに AD DS ユーザー アカウントを追加します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-338">As part of the initial onboarding for your organization when using hybrid identity, add the AD DS user account to these Azure AD groups:</span></span>
+
+- <span data-ttu-id="eddf7-339">ライセンス付与済み</span><span class="sxs-lookup"><span data-stu-id="eddf7-339">LICENSED</span></span>
+- <span data-ttu-id="eddf7-340">ベースライン、機密、厳しく規制の各 Azure AD グループのメンバーである、適切な AD DS または Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-340">The appropriate AD DS or Azure AD security groups that are members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups</span></span>
+- <span data-ttu-id="eddf7-341">機密度ラベル グループ (必要な場合)</span><span class="sxs-lookup"><span data-stu-id="eddf7-341">Sensitivity label groups (as needed)</span></span>
+
+<span data-ttu-id="eddf7-342">既存の従業員は、適切なワークグループ、部署、地域の AD DS グループに既に追加されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-342">The existing employee should already be added to the appropriate workgroup, departmental, and regional AD DS groups.</span></span>
+
+### <a name="new-employee-with-cloud-only-user-account"></a><span data-ttu-id="eddf7-343">クラウド専用ユーザー アカウントを持っている新しい従業員</span><span class="sxs-lookup"><span data-stu-id="eddf7-343">New employee with cloud-only user account</span></span>
+
+<span data-ttu-id="eddf7-344">クラウド専用 ID を使用する場合には、組織の初期のオンボードの一環として、次のグループに新しいユーザー アカウントを追加します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-344">As part of the initial onboarding for your organization when using cloud-only identity, add the new user account to these groups:</span></span>
+
+- <span data-ttu-id="eddf7-345">ライセンス付与済み</span><span class="sxs-lookup"><span data-stu-id="eddf7-345">LICENSED</span></span>
+- <span data-ttu-id="eddf7-346">ベースライン、機密、厳しく規制の各 Azure AD グループのメンバーである、適切な Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-346">The appropriate Azure AD security groups that are members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups</span></span>
+- <span data-ttu-id="eddf7-347">ワークグループ、部署、地域の各グループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-347">Workgroup, departmental, and regional groups</span></span>
+- <span data-ttu-id="eddf7-348">機密度ラベル グループ (必要な場合)</span><span class="sxs-lookup"><span data-stu-id="eddf7-348">Sensitivity label groups (as needed)</span></span>
+
+### <a name="initial-sign-in-to-microsoft-365"></a><span data-ttu-id="eddf7-349">Microsoft 365 への最初のサインイン</span><span class="sxs-lookup"><span data-stu-id="eddf7-349">Initial sign-in to Microsoft 365</span></span>
+
+<span data-ttu-id="eddf7-350">AD DS ユーザー アカウントを持つ新しい従業員または既存の従業員が初めて Microsoft 365 にサインインする場合は、次を行うように従業員に指示してください。</span><span class="sxs-lookup"><span data-stu-id="eddf7-350">For the first time new employees or existing employees with an AD DS user account sign in to Microsoft 365, instruct them to:</span></span>
+
+1. <span data-ttu-id="eddf7-351">ユーザー アカウントの資格情報を使用して、デバイスにサインインする。</span><span class="sxs-lookup"><span data-stu-id="eddf7-351">Sign into their devices with their user account credentials.</span></span>
+2. <span data-ttu-id="eddf7-352">ブラウザーを使用して、https://portal.office.com で Office 365 ポータルにサインインする。</span><span class="sxs-lookup"><span data-stu-id="eddf7-352">Using a browser on your local computer, sign in to the Office 365 portal using your global administrator account.</span></span>
+3. <span data-ttu-id="eddf7-353">**[Office 365 Home]** タブから、**[Office のインストール]** をクリックして、デバイスに Office 365 ProPlus をインストールします。</span><span class="sxs-lookup"><span data-stu-id="eddf7-353">From the **Office 365 Home** tab, click **Install Office** to install Office 365 ProPlus on their device.</span></span>
+
+## <a name="end-results"></a><span data-ttu-id="eddf7-354">最終的な結果</span><span class="sxs-lookup"><span data-stu-id="eddf7-354">End results</span></span>
+
+<span data-ttu-id="eddf7-355">エンタープライズ以外の組織向けに Microsoft 365 Enterprise の基礎インフラストラクチャを構成すると、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-355">Here are the results of configuring the Microsoft 365 Enterprise foundation infrastructure for your non-enterprise organization.</span></span>
+
+### <a name="infrastructure-results"></a><span data-ttu-id="eddf7-356">インフラストラクチャの結果</span><span class="sxs-lookup"><span data-stu-id="eddf7-356">Infrastructure results</span></span>
+
+<span data-ttu-id="eddf7-357">Microsoft 365 Enterprise インフラストラクチャの構築および構成を行うと、以下が装備されます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-357">After the build-out and configuration of your Microsoft 365 Enterprise infrastructure, you should have:</span></span>
+
+- <span data-ttu-id="eddf7-358">地域のローカル DNS サーバーを使用している ISP によって提供される十分な帯域幅を備えた、各オフィス用のローカル インターネット接続。</span><span class="sxs-lookup"><span data-stu-id="eddf7-358">A local Internet connection for each of your offices with sufficient bandwidth supplied by an ISP that uses a regionally local DNS server.</span></span>
+- <span data-ttu-id="eddf7-359">ハイブリッド ID の場合は、オンプレミス AD DS ドメインと Azure AD テナントを同期するサーバーで実行される Azure AD Connect。</span><span class="sxs-lookup"><span data-stu-id="eddf7-359">For hybrid identity, Azure AD Connect running on a server that synchronizes your on-premises AD DS domain with your Azure AD tenant.</span></span>
+- <span data-ttu-id="eddf7-360">グループは以下の通りです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-360">These universal groups include:</span></span>
+  - <span data-ttu-id="eddf7-361">ライセンス付与済み</span><span class="sxs-lookup"><span data-stu-id="eddf7-361">LICENSED</span></span>
+  - <span data-ttu-id="eddf7-362">条件付きアクセスの除外</span><span class="sxs-lookup"><span data-stu-id="eddf7-362">COND-ACCESS-EXCLUDE</span></span>
+  - <span data-ttu-id="eddf7-363">ベースライン、機密、厳しく規制の各 Azure AD グループのメンバーでもある、適切な AD DS または Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-363">The appropriate AD DS or Azure AD security groups that are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups</span></span> 
+  - <span data-ttu-id="eddf7-364">ワークグループ、部署、地域の各グループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-364">Workgroup, departmental, and regional groups</span></span>
+  - <span data-ttu-id="eddf7-365">機密度ラベル グループ (必要な場合)</span><span class="sxs-lookup"><span data-stu-id="eddf7-365">Sensitivity label groups (as needed)</span></span>
+- <span data-ttu-id="eddf7-366">ベースライン、機密、厳しく規制、条件付きアクセスの除外の各 Azure AD グループを使用する Azure AD サインイン条件付きアクセス ポリシー。</span><span class="sxs-lookup"><span data-stu-id="eddf7-366">Azure AD sign-in conditional access policies that use the BASELINE, SENSITIVE, and HIGHLY-REGULATED, and COND-ACCESS-EXCLUDE Azure AD groups.</span></span>
+- <span data-ttu-id="eddf7-367">Intune アプリケーションとデバイスのコンプライアンス ポリシー。</span><span class="sxs-lookup"><span data-stu-id="eddf7-367">Intune application and device compliance policies.</span></span>
+- <span data-ttu-id="eddf7-368">カスタムの機密情報の種類 (必要な場合)。</span><span class="sxs-lookup"><span data-stu-id="eddf7-368">Custom sensitive information types (as needed).</span></span>
+- <span data-ttu-id="eddf7-369">保持ラベル (必要な場合)。</span><span class="sxs-lookup"><span data-stu-id="eddf7-369">Retention labels (as needed).</span></span>
+- <span data-ttu-id="eddf7-370">機密度ラベル (必要な場合)。</span><span class="sxs-lookup"><span data-stu-id="eddf7-370">Sensitivity labels (as needed).</span></span>
+
+<span data-ttu-id="eddf7-371">以下は、組織がハイブリッド ID を使用している場合のインフラストラクチャの概要を視覚的に示したものです。これには、AD DS ドメイン、Azure AD Connect サーバー、同期された AD DS のユーザーとグループが含まれています。</span><span class="sxs-lookup"><span data-stu-id="eddf7-371">Here is a visual summary of the infrastructure if your organization uses hybrid identity, which includes your AD DS domain, an Azure AD Connect server, and synchronized AD DS users and groups.</span></span>
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
+ 
+<span data-ttu-id="eddf7-372">以下は、組織がクラウド専用の ID を使用している場合のインフラストラクチャの概要を視覚的に示したものです。</span><span class="sxs-lookup"><span data-stu-id="eddf7-372">Here is a visual summary of the infrastructure if your organization uses cloud-only identity.</span></span>
+ 
+![](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
+
+### <a name="employee-results"></a><span data-ttu-id="eddf7-373">従業員の結果</span><span class="sxs-lookup"><span data-stu-id="eddf7-373">Employee results</span></span>
+
+<span data-ttu-id="eddf7-374">オンボード後、各従業員には次のものが提供されます。</span><span class="sxs-lookup"><span data-stu-id="eddf7-374">After their onboarding, each employee should have:</span></span>
+
+- <span data-ttu-id="eddf7-375">自分のデバイスから自分の地域の Microsoft 365 クラウド サービスへのパフォーマンスの高いオンプレミスのネットワーク パス。</span><span class="sxs-lookup"><span data-stu-id="eddf7-375">A performant, on-premises network path from their device to the Microsoft 365 cloud services in their region.</span></span>
+- <span data-ttu-id="eddf7-376">以下のメンバーシップを持つユーザー アカウント。</span><span class="sxs-lookup"><span data-stu-id="eddf7-376">A user account with these group memberships:</span></span>
+   - <span data-ttu-id="eddf7-377">ライセンス付与済み</span><span class="sxs-lookup"><span data-stu-id="eddf7-377">LICENSED</span></span>
+   - <span data-ttu-id="eddf7-378">条件付きアクセス ポリシー用のベースライン、機密、厳しく規制の各 Azure AD グループのメンバーでもある、適切な AD DS または Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-378">The appropriate AD DS or Azure AD security groups, which are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups for conditional access policies</span></span> 
+   - <span data-ttu-id="eddf7-379">適切なワークグループ、部署、地域の各グループ</span><span class="sxs-lookup"><span data-stu-id="eddf7-379">The appropriate workgroup, departmental, and regional groups</span></span>
+   - <span data-ttu-id="eddf7-380">機密度ラベル グループ (必要な場合)</span><span class="sxs-lookup"><span data-stu-id="eddf7-380">Sensitivity label groups (as needed)</span></span>
+- <span data-ttu-id="eddf7-381">Windows 10 Enterprise デバイスは、以下のようになります。</span><span class="sxs-lookup"><span data-stu-id="eddf7-381">A Windows 10 Enterprise device that:</span></span>
+   - <span data-ttu-id="eddf7-382">Azure AD テナント (クラウド専用) に参加している、または Azure AD テナントと AD DS ドメイン (ハイブリッド) の両方に参加している。</span><span class="sxs-lookup"><span data-stu-id="eddf7-382">Is joined to the Azure AD tenant (cloud-only) or to both the Azure AD tenant and your AD DS domain (hybrid).</span></span>
+   - <span data-ttu-id="eddf7-383">Windows 10 Enterprise の最新の製品の品質向上とセキュリティ強化と共に自動的に更新される。</span><span class="sxs-lookup"><span data-stu-id="eddf7-383">Automatically updates itself with the latest Windows 10 Enterprise product improvements and security enhancements.</span></span>
+   - <span data-ttu-id="eddf7-384">Office 365 ProPlus がインストールされ、これにより、最新の Office 製品の品質向上とセキュリティ強化と共に自動的に更新される。</span><span class="sxs-lookup"><span data-stu-id="eddf7-384">Has Office 365 ProPlus installed, which automatically updates itself with the latest Office product improvements and security enhancements.</span></span>
+   - <span data-ttu-id="eddf7-385">Intune に登録され、Intune デバイス コンプライアンス ポリシーおよびアプリ保護ポリシーの対象となる。</span><span class="sxs-lookup"><span data-stu-id="eddf7-385">Is enrolled in Intune and subject to Intune device compliance policies and app protection policies.</span></span>
+
+## <a name="next-step"></a><span data-ttu-id="eddf7-386">次の手順</span><span class="sxs-lookup"><span data-stu-id="eddf7-386">Next step</span></span>
+
+<span data-ttu-id="eddf7-387">[ワークロードとシナリオ](deploy-workloads.md)を展開して、基礎インフラストラクチャの機能と構成を活用します。</span><span class="sxs-lookup"><span data-stu-id="eddf7-387">If you're following the end-to-end deployment of Microsoft 365 Enterprise, you're now ready to have your [workloads and scenarios](deploy-workloads.md) take advantage of all the features and configuration of your foundation infrastructure.</span></span>
