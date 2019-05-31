@@ -3,21 +3,22 @@
 ## [Microsoft 365 Business とは](microsoft-365-business-overview.md)
 ## [Microsoft 365 Business を取得する](sign-up.md)
 ## [データ保護の前提条件](pre-requisites-for-data-protection.md)
-## 設定
+## セットアップ
 ### [セットアップの概要](set-up-overview.md)
 ### [Microsoft 365 Business をセットアップする](set-up.md)
 ### [Windows Pro クリエーターの更新プログラムへのアップグレード](upgrade-to-windows-pro-creators-update.md)
-### [モバイルデバイスをセットアップする](set-up-mobile-devices.md)
-### [Windows デバイスをセットアップする](set-up-windows-devices.md)
 ### [Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)
 ### [Office の自動インストールまたはアンインストール](auto-install-or-uninstall-office.md)
 ### [オンプレミスのリソースにアクセスする]()
 #### [ドメインに参加している Windows 10 デバイスを管理できるようにする](manage-windows-devices.md)
 #### [Azure AD に参加しているデバイスからリソースにアクセスする](access-resources.md)
+## ユーザーデバイスのセットアップ
+### [モバイルデバイスをセットアップする](set-up-mobile-devices.md)
+### [Windows デバイスをセットアップする](set-up-windows-devices.md)
 ## [セキュリティ保護](security-features.md)
 ### [ビジネスをセキュリティで保護する](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [高度なセキュリティ機能をセットアップする](set-up-advanced-security.md)
-## ユーザー
+## ユーザーを管理する
 ### [ユーザーを追加する](add-users-m365b.md)
 ### [従業員を削除する](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ## デバイスの管理
