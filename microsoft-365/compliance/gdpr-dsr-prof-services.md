@@ -2,20 +2,20 @@
 title: GDP のための Microsoft サポート/プロフェッショナル サービス データ主体要求
 description: Microsoft サポート/プロフェッショナル サービスによるデータ主体要求の処理方法。
 keywords: プロフェッショナル サービス、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
-author: herviicban
+author: robmazz
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
+ms.author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 9328bba6a0ca616b98b4da32cab372b9b546c848
-ms.sourcegitcommit: dc5c297ee7bca212b8a902daebe4907254c4315f
+ms.openlocfilehash: bc0b8d5b6d2a2a1590829a710d8aa51627d9afd0
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34589743"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698029"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>GDPR のための Microsoft サポート/プロフェッショナル サービス データ サブジェクト要求
 

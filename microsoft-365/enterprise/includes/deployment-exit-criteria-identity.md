@@ -23,7 +23,7 @@ Office 365 サブスクリプションの侵害の原因となる資格情報の
 
 全体管理者アカウントを保護していることを確認するには、次の手順を使用します。
 
-1. PowerShell コマンド プロンプトで次の Azure AD V2 コマンドを実行します。専用の全体管理者アカウントだけが表示されます。
+1. PowerShell コマンド プロンプトで次の Graph 用 Azure Active Directory PowerShell コマンドを実行します。専用の全体管理者アカウントだけが表示されます。
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```

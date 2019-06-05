@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の ID ベースのサービスとインフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: aabd9f5db223b4b1aba0173dcfb739fe27553555
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 19eefe3cd153668239d9cf15f71c90e8ac9571e1
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072127"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681044"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>フェーズ 2: ID インフラストラクチャの終了条件
 
@@ -51,7 +51,7 @@ Office 365 サブスクリプションの侵害の原因となる資格情報の
 
 全体管理者アカウントを保護していることを確認するには、次の手順を使用します。
 
-1. PowerShell コマンド プロンプトで次の Azure AD V2 コマンドを実行します。専用の全体管理者アカウントだけが表示されます。
+1. PowerShell コマンド プロンプトで次の Graph 用 Azure Active Directory PowerShell コマンドを実行します。専用の全体管理者アカウントだけが表示されます。
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
