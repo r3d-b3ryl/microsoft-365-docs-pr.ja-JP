@@ -5,31 +5,31 @@ keywords: データ保護影響評価、DPIA、Dynamics 365、Microsoft プロ�
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 5d61c98290387563762c75d10c32476c35b9e9a4
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: 52436050d95935833dbfbeb1655c57ed9cfdad68
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544904"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698209"
 ---
-# <a name="data-protection-impact-assessments"></a><span data-ttu-id="4c900-104">データ保護影響評価</span><span class="sxs-lookup"><span data-stu-id="4c900-104">Data Protection Impact Assessments</span></span>
+# <a name="data-protection-impact-assessments"></a><span data-ttu-id="55710-104">データ保護影響評価</span><span class="sxs-lookup"><span data-stu-id="55710-104">Data Protection Impact Assessments</span></span>
 
-<span data-ttu-id="4c900-p101">一般データ保護規則 (GDPR) に基づき、データ管理者は「自然人の権利や自由に高リスクを生じさせる可能性のある」処理作業に関するデータ保護影響評価 (DPIA) を準備する必要があります。Microsoft Azure または Dynamics 365 自体には、Microsoft Azure または Dynamics 365 を使用するデータ管理者が DPIA を作成する必要が生じる特性はありません。ただし DPIA が必要であるかどうかは、データ管理者が各製品を*どのように*展開、構成、使用しているかに関する状況と詳細に応じて決定します。</span><span class="sxs-lookup"><span data-stu-id="4c900-p101">Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Azure or Dynamics 365 that would necessarily require the creation of a DPIA by a Data Controller using it. Rather, whether a DPIA is required will be dependent on the details and context of *how* the data controller deploys, configures each product.</span></span>
+<span data-ttu-id="55710-p101">一般データ保護規則 (GDPR) に基づき、データ管理者は「自然人の権利や自由に高リスクを生じさせる可能性のある」処理作業に関するデータ保護影響評価 (DPIA) を準備する必要があります。Microsoft Azure または Dynamics 365 自体には、Microsoft Azure または Dynamics 365 を使用するデータ管理者が DPIA を作成する必要が生じる特性はありません。ただし DPIA が必要であるかどうかは、データ管理者が各製品を*どのように*展開、構成、使用しているかに関する状況と詳細に応じて決定します。</span><span class="sxs-lookup"><span data-stu-id="55710-p101">Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Azure or Dynamics 365 that would necessarily require the creation of a DPIA by a Data Controller using it. Rather, whether a DPIA is required will be dependent on the details and context of *how* the data controller deploys, configures each product.</span></span>
 
-<span data-ttu-id="4c900-108">このドキュメントは、データ管理者に対し、DPIA が必要であるかどうかを判断し、必要な場合には DPIA に含める詳細情報を決定する上で役立つ情報を提供することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="4c900-108">The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.</span></span>
+<span data-ttu-id="55710-108">このドキュメントは、データ管理者に対し、DPIA が必要であるかどうかを判断し、必要な場合には DPIA に含める詳細情報を決定する上で役立つ情報を提供することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="55710-108">The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.</span></span>
 
-- [<span data-ttu-id="4c900-109">Office 365</span><span class="sxs-lookup"><span data-stu-id="4c900-109">Office 365</span></span>](gdpr-dpia-office365.md)
-- [<span data-ttu-id="4c900-110">Azure</span><span class="sxs-lookup"><span data-stu-id="4c900-110">Azure</span></span>](gdpr-dpia-azure.md)
-- [<span data-ttu-id="4c900-111">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="4c900-111">Dynamics 365</span></span>](gdpr-dpia-dynamics.md)
-- [<span data-ttu-id="4c900-112">Microsoft サポート/プロフェッショナル サービス</span><span class="sxs-lookup"><span data-stu-id="4c900-112">Microsoft Support and Professional Services</span></span>](gdpr-dpia-prof-services.md)
+- [<span data-ttu-id="55710-109">Office 365</span><span class="sxs-lookup"><span data-stu-id="55710-109">Office 365</span></span>](gdpr-dpia-office365.md)
+- [<span data-ttu-id="55710-110">Azure</span><span class="sxs-lookup"><span data-stu-id="55710-110">Azure</span></span>](gdpr-dpia-azure.md)
+- [<span data-ttu-id="55710-111">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="55710-111">Dynamics 365</span></span>](gdpr-dpia-dynamics.md)
+- [<span data-ttu-id="55710-112">Microsoft サポート/プロフェッショナル サービス</span><span class="sxs-lookup"><span data-stu-id="55710-112">Microsoft Support and Professional Services</span></span>](gdpr-dpia-prof-services.md)
 
-<span data-ttu-id="4c900-113">GDPR に準拠した Microsoft のデータ保護の詳細については、***Service Trust Portal*** の[コンプライアンス](https://servicetrust.microsoft.com/ComplianceManager)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4c900-113">For more information about GDPR compliance Microsoft data protection, see [Compliance](https://servicetrust.microsoft.com/ComplianceManager) in the ***Service Trust Portal***.</span></span>
+<span data-ttu-id="55710-113">GDPR に準拠した Microsoft のデータ保護の詳細については、***Service Trust Portal*** の[コンプライアンス](https://servicetrust.microsoft.com/ComplianceManager)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="55710-113">For more information about GDPR compliance Microsoft data protection, see [Compliance](https://servicetrust.microsoft.com/ComplianceManager) in the ***Service Trust Portal***.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="4c900-114">詳細情報</span><span class="sxs-lookup"><span data-stu-id="4c900-114">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="55710-114">詳細情報</span><span class="sxs-lookup"><span data-stu-id="55710-114">Learn more</span></span>
 
-- [<span data-ttu-id="4c900-115">Microsoft Trust Center</span><span class="sxs-lookup"><span data-stu-id="4c900-115">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [<span data-ttu-id="55710-115">Microsoft Trust Center</span><span class="sxs-lookup"><span data-stu-id="55710-115">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
