@@ -3,7 +3,7 @@ title: Windows と Office 展開ラボ キット
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 10/31/2018
+ms.date: 06/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 213d53b323cd5a5ca6f803320cf09e168beb1114
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400077"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814548"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -127,7 +127,8 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www
 
   - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](http://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager の OS の展開](https://docs.microsoft.com/ja-JP/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - 
+  [System Center Configuration Manager の OS の展開](https://docs.microsoft.com/ja-JP/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 の展開計画</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
