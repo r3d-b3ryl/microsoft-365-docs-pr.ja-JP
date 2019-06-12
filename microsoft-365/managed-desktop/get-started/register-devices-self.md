@@ -5,17 +5,17 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400078"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857300"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでのデバイスの登録
 
 >[!NOTE]
->このトピックでは、自分でデバイスを登録する手順について説明します。 パートナー向けのプロセスについては、「 [Register devices in Microsoft Managed Desktop in a パートナー](register-devices-partner.md)」で説明されています。
+>このトピックでは、自分でデバイスを登録する手順について説明します。 パートナー向けのプロセスについては、「 [Register devices In Microsoft Managed Desktop in a パートナー](register-devices-partner.md)」で説明されています。
 
 Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Azure Portal で Microsoft Managed Desktop を使用してデバイスを登録するか、API を使用して柔軟性を高めることができます。
 
@@ -39,20 +39,20 @@ Microsoft マネージドデスクトップをブランド化されたデバイ�
 ハードウェアハッシュを取得するには、OEM またはパートナーからサポートを依頼するか、デバイスごとに次の手順を実行します。
 
 1.  管理者権限を持つ PowerShell プロンプトを開きます。
-2.  `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
-3.  `powershell -ExecutionPolicy Unrestricted Get-WindowsAutopilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
+2.  `Install-Script -Name Get-MMDRegistrationInfo` を実行します。
+3.  `powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 
 
 または、次の手順を新しいデバイスで実行することもできます (OOBE を初めて実行する前に)。
 
 1. 別のデバイスで、USB ドライブを挿入します。
 2. 管理者権限を持つ PowerShell プロンプトを開きます。
-3. `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>` を実行します。
+3. `Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>` を実行します。
 4. ターゲットデバイスをオンにします。ただし、セットアップの操作は開始しません。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
 5. USB ドライブを挿入して、SHIFT + F10 キーを押します。
 6. 管理者権限で PowerShell プロンプトを開き、を実行`cd <pathToUsb>`します。
 7. `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` を実行します。
-8. `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
+8. `.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 3. USB ドライブを取り外し、次のようにしてデバイスをシャットダウンします。`shutdown -s -t 0`
 
 >[!IMPORTANT]

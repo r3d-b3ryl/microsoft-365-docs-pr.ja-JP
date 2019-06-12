@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0eabd3c90e0aae2812b2ee9fd6fb4d1768e90c1e
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: c3674df0bfd797b9076bbf52379444665b1ce4d8
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34104219"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857310"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
@@ -32,15 +32,15 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 | モデル  | 最小仕様  | 追加要件   | 定年後の日付 |
 |---------|---------|---------|---------|
-|[Surface のノートブック](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |
-|[Surface Pro](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | なし | **2022年6月15日** |
+|[Surface のノートブック](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | None | **2022年5月20時** |
+|[Surface Pro](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | None | **2022年6月15日** |
 
 
 また、デバイスは次のものも必要です。
 
 - Microsoft マネージドデスクトップによって承認されたイメージがあること。 デバイスを注文するときは、Microsoft マネージドデスクトップで使用されていることを確認してください。
 - Windows 初回実行時の動作が完了していません。
-- [Windows 自動](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad)操縦に登録され、Microsoft Managed Desktop 自動自動操縦プロファイルが割り当てられている。
+- [デバイス登録](https://aka.ms/mmddrhelp)機能を使用して Microsoft Managed Destkop に登録されている
 
 #### <a name="additional-help"></a>その他のヘルプ
 

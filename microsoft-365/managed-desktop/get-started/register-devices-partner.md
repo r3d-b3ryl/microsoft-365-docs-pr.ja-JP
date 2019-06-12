@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: d743092fdd309c1afd748afa7523f0cc0c6a2fd0
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400011"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857330"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>パートナー用の Microsoft マネージドデスクトップのデバイスを登録する
 
@@ -30,8 +30,8 @@ ms.locfileid: "33400011"
 ファイルには、サンプル 1 (製造元、モデルなど) と**まったく同じ列見出し**を含める必要がありますが、その他の行については独自のデータを含める必要があります。 テンプレートを使用している場合は、メモ帳などのテキスト編集ツールでそのテンプレートを開き、行1のみにデータを入力し、2行以下にデータを入力することを検討します。 
     
   ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,
+ Manufacturer,Model,Serial Number
+  SpiralOrbit,ContosoABC,000000000000
   
   
   ```
@@ -49,7 +49,7 @@ ms.locfileid: "33400011"
 
 ## <a name="register-devices-by-using-the-azure-portal"></a>Azure ポータルを使用してデバイスを登録する
 
-Azure portal を使用して登録することは、セルフサービスの場合と同じですが、ポータルには別の方法でアクセスする点が異なります。 次の手順を実行します。
+Azure Portal を使用して登録することは、セルフサービスの場合と同じですが、ポータルには別の方法でアクセスする点が異なります。 次の手順を実行します。
 
 1. [パートナーセンター](https://partner.microsoft.com/dashboard)への移動
 2. [**顧客**] を選択します。

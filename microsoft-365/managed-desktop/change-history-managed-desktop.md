@@ -4,27 +4,48 @@ description: このトピックでは、Microsoft マネージドデスクトッ
 keywords: 変更履歴
 ms.prod: m365-md
 ms.sitesec: library
-author: trudyha
-ms.author: jdecker
+author: jaimeo
+ms.author: jaimeo
 ms.topic: article
-ms.date: 03/11/2019
 ms.localizationpriority: normal
-ms.openlocfilehash: 9bbcbe99e3dc08d4201d4a80323b17647309f433
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 3cf7e948e5bf963ae9239656881c181d90f23a6e
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277972"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857325"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージドデスクトップドキュメントの変更履歴
 
 このトピックでは、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新されたトピックを一覧表示します。
 
+
+## <a name="may-2019"></a>2019 年 5 月
+新規または変更されたトピック | 説明
+--- | ---
+[Microsoft Managed Desktop サポートされている地域と言語](service-description/regions-languages.md) | 更新されたトピック
+[Microsoft マネージドデスクトップデバイス](service-description/device-list.md) | 更新されたトピック
+[Microsoft マネージドデスクトップのアーカイブされたデバイス](service-description/archived-device-list.md) | 新しいトピック
+[Microsoft マネージドデスクトップのマップされたドライブの準備](get-ready/mapped-drives.md) | 新しいトピック
+[Microsoft マネージドデスクトップの証明書とネットワークプロファイルを準備する](get-ready/certs-wifi-lan.md) | 新しいトピック
+[Microsoft マネージドデスクトップデバイスの注文](get-started/devices.md) | 更新されたトピック
+
+
+## <a name="april-2019"></a>2019 年 4 月
+新規または変更されたトピック | 説明
+--- | ---
+[Microsoft マネージドデスクトップデバイスに Intune Company Portal をインストールする](get-started/company-portal.md) | 新しいトピック
+[Microsoft Project および microsoft Visio を Microsoft マネージドデスクトップデバイスにインストールする](get-started/project-visio.md) | 新しいトピック 
+[Microsoft マネージドデスクトップへのオンプレミスリソースアクセスの準備](get-ready/authentication.md) | 新しいトピック
+[Microsoft マネージドデスクトップでのデバイスの登録](get-started/register-devices-self.md) | 新しいトピック
+[パートナー用の Microsoft マネージドデスクトップのデバイスを登録する](get-started/register-devices-partner.md) | 新しいトピック
+[アプリを Microsoft マネージドデスクトップデバイスに展開する](get-started/deploy-apps.md) | 更新されたトピック
+
 ## <a name="march-2019"></a>2019 年 3 月
 新規または変更されたトピック | 説明
 --- | ---
 [Microsoft マネージドデスクトップデバイスに Intune Company Portal をインストールする](get-started/company-portal.md) | 新しいトピック
-[microsoft Project および microsoft Visio を microsoft マネージドデスクトップデバイスにインストールする](get-started/project-visio.md) | 新しいトピック
+[Microsoft Project および microsoft Visio を Microsoft マネージドデスクトップデバイスにインストールする](get-started/project-visio.md) | 新しいトピック
 
 ## <a name="february-2019"></a>2019 年 2 月
 新規または変更されたトピック | 説明
@@ -39,7 +60,7 @@ ms.locfileid: "32277972"
 新規または変更されたトピック | 説明
 --- | ---
 [Microsoft マネージドデスクトップデバイス用のアプリを展開する](get-started/deploy-apps.md) | 新しいトピック。
-[Microsoft マネージドデスクトップのアプリを管理する](working-with-managed-desktop/manage-apps.md) | previoius バージョンの基幹業務アプリを更新またはロールバックする方法に関する情報を更新しました。 
+[Microsoft マネージドデスクトップのアプリを管理する](working-with-managed-desktop/manage-apps.md) | Previoius バージョンの基幹業務アプリを更新またはロールバックする方法に関する情報を更新しました。 
 
 ## <a name="december-2018"></a>2018 年 12 月
 新規または変更されたトピック | 説明
