@@ -1,91 +1,80 @@
 ---
-title: Microsoft マネージドデスクトップのアプリの準備
+title: Microsoft マネージドデスクトップのアプリ
 description: ''
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: be28760fc3facdb21643943ace11deda378d437c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289069"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913048"
 ---
-# <a name="preparing-apps-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのアプリの準備
+# <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのアプリ
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
 <!--Applications: supported/onboard/deployment -->
  
-microsoft および microsoft の管理されたデスクトップのお客様は、microsoft マネージドデスクトップで使用されるアプリケーションに関して、同じように重要な責任を持っています。
+## <a name="apps-generally"></a>通常、アプリ
 
-## <a name="microsoft-responsibilities"></a>Microsoft の責任
-**Office 365 アプリ**Microsoft は、特定の Office 365 アプリの展開、更新、およびサポートに対して完全なサービスを提供します。 すべてのユーザーは、ユーザーがすぐに生産性を向上させることができるように、デバイスの画像に含まれているアプリケーションの64ビットバージョンの Office 365 を実行するための基本セットを受信します。 Office 365 スイートのプロジェクトと Visio アプリケーションは個別にライセンスされています。  Microsoft マネージドデスクトップは、IT 管理者がライセンスを管理して、組織に適したアプリケーションを展開できるようにする展開グループを提供します。 microsoft は、microsoft マネージドデスクトップサポートチャネルを使用して、これらのアプリケーションのエンドユーザーをサポートします。
+Microsoft では、microsoft マネージドデスクトップに参加するために必要な Microsoft 365 E3 または E5 ライセンスと共に、特定の主要なアプリが含まれています。 ただし、これらのアプリが提供されている場合でも、一部の責任とアクションを完了することができます。
 
-**基幹業務アプリ**Microsoft は、IT 管理者が、基幹業務 (LOB) アプリケーションを管理し、Intune 製品の一部としてエンドユーザーに展開するためのツールを提供しています。 Microsoft は、[基幹業務アプリケーション](#line-of-business-applications)で詳細なアプリケーション展開の問題をサポートします。 
-
-**Intune を使用して展開**するintune は、microsoft**の**管理デスクトップオンボードにリンクされており、intune を使用して、調達アプリを展開できます。 また、microsoft Store からエンドユーザーに会社のポータルアプリケーションを展開することで、IT 管理者がエンドユーザーに対してセルフサービスを提供できるようにします。
-
-**アプリ管理**Microsoft は、システムに影響を与えるため、モダンワークプレースに適さない制限付きアプリケーションを特定することができます。 このようなアプリケーションが検出されると、お客様に通知され、そのアプリケーションをテナントから削除する必要があります。 
-
-制限されたアプリの動作とアプリの要件の詳細については、「 [Microsoft Managed Desktop app の要件](../service-description/mmd-app-requirements.md)」を参照してください。
-
-## <a name="customer-responsibilities"></a>お客様の責任
-Office 365 スイートは、microsoft の生産性向上のための中核であり、microsoft のすべての管理対象デスクトップユーザーの microsoft 365 ライセンスに含まれています。 microsoft が管理するデスクトップデバイスに対して office アプリケーションを展開、更新、サポートする一方で、お客様が責任を持ついくつかの分野があります。
-- **ライセンスの割り当て**-お客様は、Office 365 のエンドユーザーに適切なライセンスを割り当てる必要があります。 
-- **ユーザーをセキュリティグループに追加する**-プロジェクトまたは Visio を必要とするユーザーを持つ顧客の場合、IT 管理者は、それらのユーザーを適切な展開グループに追加する必要があります。 IT 管理者は、これらのユーザーの有効期限の管理も担当します。 
-- **office 365 アドオンを展開**する-お客様は必要と思われる office 365 スイートにプラグインを展開する責任があります。 
-
-基幹業務 (LOB) アプリは顧客ごとに一意であるため、お客様は Microsoft によって展開されていない組織内のすべてのアプリケーションを管理する責任があります。 これには以下が含まれます。
-- 必要なアプリとそれらを必要とするアプリを決定する
-- これらのユーザーにアプリを割り当てる
-- アプリの割り当てを管理するための Azure Active Directory (AD) グループを作成して管理する 
-
-お客様は LOB アプリを Intune にアップロードする必要があります。 その後、それらのアプリケーションをそれぞれのライフサイクルを通じて展開、更新、および使用停止し、ユーザー用のこれらのアプリのサポートを管理する責任があります。
-
-## <a name="office-applications"></a>Office アプリケーション
-microsoft 365 E5 ライセンスの一部として、Office 365 Standard Suite (64 ビット) は microsoft によって展開されています。 
-
-詳細については、「 [Microsoft Managed Desktop technologies](../intro/technologies.md) 」を参照してください。 <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
-
-## <a name="line-of-business-applications"></a>基幹業務アプリケーション
-この表は、基幹業務 (LOB) アプリケーションのさまざまなフェーズにおける責任を要約しています。 
-
-アプリケーション作業項目 |    顧客    | Microsoft
---- | --- | ---
-**オンボードアプリ** |  |
-対象ユーザーグループに必要なアプリケーションを特定する   | ![はい](images/checkmark.png)  |
-アプリ展開用の Azure AD グループを作成および管理する | ![はい](images/checkmark.png) |   
-**アプリのパッケージ化** |  |
-Intune の展開基準を満たすようにアプリをパッケージ化する |  ![はい](images/checkmark.png) |  
-アプリを Intune にアップロードする | ![はい](images/checkmark.png)     |
-Microsoft マネージドデスクトップ環境でアプリをテストする |    ![はい](images/checkmark.png) |  
-エンドユーザーとのアプリのテスト    | ![はい](images/checkmark.png) |    
-**展開** | |
-アプリケーションに対するユーザーの管理と割り当て  | ![はい](images/checkmark.png)  |
-Intune 展開ツールがリモートクライアントにアプリケーションを提供する| |   ![はい](images/checkmark.png)
-Intune を使用してアプリケーションの更新を識別して展開する | ![はい](images/checkmark.png)    |
-Unistall が廃止されたときにアプリケーションを削除する    | ![はい](images/checkmark.png) |    
-**管理** | |
-ライセンスの調達と割り当て |   ![はい](images/checkmark.png)     |
-基幹業務アプリのエンドユーザーサポートを提供する  | ![はい](images/checkmark.png) |
-アプリの設定をリモートで管理する    | ![はい](images/checkmark.png) |
-
-LOB アプリケーションの要件の詳細については、「 [Microsoft Managed Desktop application の要件](../service-description/mmd-app-requirements.md)」を参照してください。
+また、Microsoft Intune の展開パイプラインを使用して、会社のポータルまたは必要なバックグラウンドインストールを通じて、Microsoft 以外の追加のアプリをエンドユーザーに展開することもできます。 専門知識があれば、必要なアプリを自分で移行できます。Microsoft コンサルティングサービス (MCS) または Microsoft 以外のベンダーのいずれかが、パッケージ化および移行プロジェクトを支援するのに役立ちます。 MCS の使用の詳細については、「 [Microsoft コンサルティングサービスを使用](apps-MCS.md)する」を参照してください。
 
 
-## <a name="intune-application-deployment"></a>Intune アプリケーションの展開
-アプリケーション管理は、Microsoft Managed Desktop Admin portal または Intune ポータルを使用して処理できます。 Intune のアプリ管理ポータルには、Windows、Android、iOS 用に展開されたアプリケーションが表示されます。 Microsoft Managed Desktop 管理ポータルでは、ビューが Windows 10 アプリケーションに制限されます。 どちらも Azure ポータルから利用できます。 
-* [Intune アプリ管理の基本](https://docs.microsoft.com/intune/app-management)
-* [Intune にアプリを追加する](https://docs.microsoft.com/intune/app-management)
-   * [基幹業務アプリを追加する](https://docs.microsoft.com/intune/lob-apps-windows)
-   * [Win32 アプリを Intune に追加する](https://docs.microsoft.com/intune/apps-win32-app-management)
-   * [web アプリケーションを追加する](https://docs.microsoft.com/intune/web-app)
-* [アプリを展開する](https://docs.microsoft.com/intune/apps-deploy)
-   * [Windows 10 にアプリを展開する](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
-* 会社のポータル
-   * [会社のポータルを展開する](https://docs.microsoft.com/intune/store-apps-company-portal-app)
-   * [ポータルサイトアプリを構成する](https://docs.microsoft.com/intune/company-portal-app)
+## <a name="apps-provided-by-microsoft"></a>Microsoft によって提供されるアプリ
+
+Microsoft Managed Desktop license には、Office 365 ProPlus Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、および OneNote) のアプリの64ビットバージョンが含まれています。クイック実行バージョンの Microsoft Project と Visio は既定では含まれて*いません*が、追加するように要求することができます。 これらのアプリの詳細については、「microsoft [Project または Microsoft Visio を Microsoft マネージドデスクトップデバイスにインストール](../get-started/project-visio.md)する」を参照してください。
+
+### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft が提供するアプリのサポート内容
+
+Microsoft は、含まれている Office 365 ProPlus アプリの展開、更新、およびサポートに対して完全なサービスを提供します。 既定では、クイック実行バージョンの Microsoft Project と Visio は含まれて*いません*が、Microsoft Managed Desktop では展開グループが提供されます。これにより、IT 管理者はライセンスを管理し、これらのアプリケーションを適切に展開することができます。機関. Microsoft は、Microsoft マネージドデスクトップサポートチャネルを使用して、これらのアプリケーションのエンドユーザーをサポートします。
+
+### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>提供するアプリをサポートするために必要な作業
+
+これらのアプリで実行する必要があるいくつかの事柄があります。
+
+- **ライセンスの割り当て**-Office 365 ProPlus のエンドユーザーに対して適切なライセンスを取得して割り当てる責任があります。
+- **セキュリティグループにユーザーを追加する**-Microsoft Project または Visio を使用している場合は、IT 管理者が該当する展開グループにユーザーを追加する必要があります。 IT 管理者は、そのユーザーが会社を去る場合に、そのユーザーからライセンスを再利用する責任も担います。
+- **Office 365 アドオンを展開**する-Office 365 ProPlus アプリのいずれかにアドオンが必要な場合は、他の Windows 32 アプリと同じように展開します。 
+
+## <a name="apps-you-provide"></a>提供するアプリ
+
+もちろん、ビジネス運用に必要なその他のアプリが多数存在する可能性があります。 これらは microsoft Intune の展開パイプラインを使用して、Microsoft マネージドデスクトップデバイスにのみ展開できます。 アプリで必要になるのは、ベンダーによってパッケージ化されている場合 (Microsoft 以外のベンダーまたは Microsoft コンサルティングサービス (MCS) である場合もあります)、または手段を持っている場合は自分でパッケージ化することができます。 次に、これらのパッケージを Microsoft マネージドデスクトップポータルに追加して、展開を開始するように Azure Active Directory グループに割り当てます。 
+
+現在、System Center Configuration Manager を使用してアプリを展開している場合は、Microsoft Managed Desktop を使用してアプリを評価し、どのユーザーが Microsoft Intune に移行する準備ができているかを検出して、何らかの調整が必要な場合があります。.
+
+
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに含める独自のアプリの準備
+アプリを確認し、次の点を確認します。
+
+- 「 [Microsoft Managed Desktop app の要件](https://aka.ms/app-req)」で説明されているように、禁止されている、または制限された動作を持つアプリはありません。
+- アプリは、Microsoft Intune による管理の準備が整っている必要があります。 詳細については、「 [Microsoft intune を使用した Windows 10 アプリの展開](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)」および「 [microsoft intune にアプリを追加する](https://docs.microsoft.com/intune/apps-add)」を参照してください。
+- ライセンスキーの提供、ライセンス条項に同意する、事前設定のサーバー接続など、その他のプレパッケージング要件。
+
+### <a name="decide-how-to-package-apps"></a>アプリをパッケージ化する方法を決定する
+
+一部の独立系ソフトウェアベンダーは、中央に展開する前に、アプリをパッケージ化する必要がある場合があります。 "パッケージング" とは、アプリのインストーラーが、バックグラウンドでアプリをインストールできるように、ライセンスキー、リモートサーバーの場所、またはデスクトップショートカットなどの設定で構成されることを意味します。
+
+アプリをパッケージ化するには、次の3つのオプションがあります。 
+
+
+- アプリを自分でパッケージ化することができます。
+- Microsoft 以外のベンダーと協力して作業することができます。
+- アプリケーションをパッケージ化するために MCS と連携することができます。 Microsoft アカウントの担当者と協力してください。 詳細については、「 [Microsoft コンサルティングサービスを使用](apps-MCS.md)する」を参照してください。
+
+
+
+
+
+
+
+## <a name="deploying-apps"></a>アプリの展開
+
+パッケージをパッケージ化するためにどのような方法を使用する場合でも、「 [Microsoft マネージドデスクトップデバイスへのアプリの展開](../get-started/deploy-apps.md)」の手順を実行する準備ができています。
+
+

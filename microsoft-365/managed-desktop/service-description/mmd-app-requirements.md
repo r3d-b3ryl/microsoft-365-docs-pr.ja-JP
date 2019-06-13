@@ -1,18 +1,17 @@
 ---
 title: Microsoft マネージドデスクトップアプリの要件
 description: ''
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 01/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 07e4719d87cb11910a90665ce9beb95edf6641a4
-ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
+ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33467745"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913018"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft マネージドデスクトップアプリの要件
 
@@ -24,22 +23,22 @@ Microsoft マネージドデスクトップデバイスのパフォーマンス�
 
 ## <a name="application-condition"></a>アプリケーションの条件
 
-アプリケーションが Microsoft マネージドデスクトップ環境に悪影響を与えることは重要ではありません。 アプリケーションを展開するためにアプリケーションが満たす必要がある要件を次に示します。 特定のアプリケーションまたはドライバーについては、ここに記載されているすべての要件を Microsoft が免除することがあります。 microsoft は、microsoft マネージドデスクトップデバイスのパフォーマンスと信頼性に悪影響を及ぼすアプリケーションまたはドライバーを削除することを決定する場合があります。
+アプリケーションが Microsoft マネージドデスクトップ環境に悪影響を与えることは重要ではありません。 アプリケーションを展開するためにアプリケーションが満たす必要がある要件を次に示します。 特定のアプリケーションまたはドライバーについては、ここに記載されているすべての要件を Microsoft が免除することがあります。 Microsoft は、Microsoft マネージドデスクトップデバイスのパフォーマンスと信頼性に悪影響を及ぼすアプリケーションまたはドライバーを削除することを決定する場合があります。
 
 ## <a name="centrally-managed-apps"></a>一元管理されたアプリ
 
-microsoft 管理対象デバイスにインストールされているすべてのアプリケーションとドライバーは、Intune、microsoft store、または microsoft store for Business を使用して展開する必要があります。可能であれば、Windows Update サービスを使用してドライバーを展開することもできます。 
+Microsoft 管理デバイスにインストールされているすべてのアプリケーションとドライバーは、Microsoft Intune、Microsoft Store、または Microsoft Store for Business を使用して展開する必要があります。可能であれば、Windows Update サービスを使用してドライバーを展開することもできます。 
 
 ## <a name="prohibited-app-classes"></a>禁止されたアプリクラス
 
 Microsoft マネージドデスクトップデバイスでは、特定の種類のアプリケーションが許可されていません。
 - サードパーティ製のウイルス対策、セキュリティ、または監査ソフトウェア
-- office 365 Pro Plus より前のバージョンの Microsoft office
+- Office 365 Pro Plus より前のバージョンの Microsoft Office
 - 他のサードパーティ製ソフトウェアをインストールまたはバンドルするアプリケーション
 
 ## <a name="restricted-app-behaviors"></a>制限されたアプリの動作
 
-アプリの動作によっては、ユーザーの環境に悪影響を及ぼす場合や、Microsoft マネージドデスクトップデバイスにセキュリティリスクをもたらす場合があります。 次の動作を持つアプリは、microsoft の特定の除外を使用せずに microsoft マネージドデスクトップ環境で実行することを許可されていません。
+アプリの動作によっては、ユーザーの環境に悪影響を及ぼす場合や、Microsoft マネージドデスクトップデバイスにセキュリティリスクをもたらす場合があります。 次の動作を持つアプリは、Microsoft の特定の除外を使用せずに Microsoft マネージドデスクトップ環境で実行することを許可されていません。
 
 ユーザーの作業状況:
 - バックグラウンドサービスをインストールする
@@ -57,7 +56,7 @@ Microsoft マネージドデスクトップデバイスでは、特定の種類�
 
 ## <a name="driver-deployment"></a>ドライバーの展開
 
-microsoft マネージドデスクトップは、microsoft の管理されたデバイスを使用して Windows Update または受信トレイで利用可能なデバイスドライバーのみをサポートしています。 
+Microsoft マネージドデスクトップは、Microsoft の管理されたデバイスを使用して Windows Update または受信トレイで利用可能なデバイスドライバーのみをサポートしています。 
 
 アプリケーションで特定のドライバーを実行する必要がある場合は、制限付きアプリケーションと見なされ、Microsoft マネージドデスクトップに展開するための除外が必要になります。 
 

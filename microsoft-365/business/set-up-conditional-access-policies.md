@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business の条件付きアクセスポリシーをセットアップする方法について説明します。
-ms.openlocfilehash: 6ca3995113f090ccf2b119abde059a68ce562970
-ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
+ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34806826"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913008"
 ---
 # <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Microsoft 365 Business の条件付きアクセスポリシーを設定する
 
@@ -52,9 +52,9 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
     ![条件付きアクセスのベースラインポリシーを一覧表示するページ。](media/baslinepolicies.png)
 1. 各ポリシーについて、次の具体的な手順を参照してください。
 
-    - [管理者に MFA を要求する](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-    -   [ユーザーに MFA を要求する](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [従来の認証をブロックする](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [管理者に MFA を要求する](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [ユーザーの re を再構築する](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [従来の認証をブロックする](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [サービス管理に MFA を必要とする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 承認済みのクライアントアプリの要求など、多くの追加のポリシーを設定できます。 詳細については、[条件付きアクセスのドキュメント](https://docs.microsoft.com/azure/active-directory/conditional-access/)を参照してください。
