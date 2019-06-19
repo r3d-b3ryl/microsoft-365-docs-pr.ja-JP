@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 4b69047c2c595b899fd29593c9c02a3531ffbd53
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814548"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017499"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
-ダウンロード可能なこれらのハンズオン ラボでは、Windows 10 や Office 365 の展開と、展開後の構成や管理に関する考慮事項を主に扱います。このトレーニングは、Windows 7 のサポート終了に備えようとしている組織に特にお勧めしますが、Windows 10 と Office 365 Plus または Office 2019 を現在使用中のユーザーにも適用されます。このトレーニングには、Windows 10、Office 365 ProPlus、Enterprise Mobility + Security、および関連する製品やサービスのガイドが含まれます。
+ダウンロード可能なこれらの実践ラボでは、Windows 10 や Office 365 の展開と、展開後の構成や管理に関する考慮事項を主に扱います。このトレーニングは、Windows 7 のサポート終了に備えようとしている組織に特にお勧めしますが、Windows 10 と Office 365 Plus または Office 2019 を現在使用中のユーザーにも適用されます。このトレーニングには、Windows 10、Office 365 ProPlus、Enterprise Mobility + Security、および関連する製品やサービスのガイドが含まれます。
 
 これらのラボは、Windows 10 Enterprise および Office 365 ProPlus を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、System Center Configuration Manager、Windows Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
 
@@ -36,18 +36,17 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www
 
 このラボでは、自動的にプロビジョニングされた仮想ラボ環境が提供されます。これには、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、および完全に構成された ConfigMgr インスタンスが含まれます。ラボには、次の製品の評価版が含まれています。
 
-  - Windows 10 Enterprise、バージョン 1809
-  - Windows 7
-  - Office 365 ProPlus、バージョン 1901
-  - System Center Configuration Manager、バージョン 1802
-  - Windows 10 用 Windows アセスメント & デプロイメント キット、バージョン 1809
+  - Windows 10 Enterprise、バージョン 1903
+  - Windows 7 Enterprise
+  - System Center Configuration Manager、バージョン 1902
+  - Windows 10 用 Windows アセスメント & デプロイメント キット、バージョン 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
-  - Windows Server 2016
-  - Microsoft SQL Server 2014
+  - Windows Server 2019
+  - Microsoft SQL Server 2017
 
-さらに、このラボは次の試用版に接続するように設計されています。
+さらに、このラボは次の試用版に接続するように設計されています。 
 
   - Microsoft 365 Enterprise E5
 
@@ -119,7 +118,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**Windows と Office 展開ラボ キットのダウンロード**](https://aka.ms/mddlabs_evalcenter)
 
-*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2019 年 5 月 13 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
+*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2019 年 8 月 27 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
 
 ## <a name="additional-guidance"></a>**追加のガイダンス**
 
