@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 302f6b3b993a62cdd2d934ac9acd43ad57540cd1
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: a51738b993a8a3683769d10882877b3b42d34ddf
+ms.sourcegitcommit: 7edeea1311ebb79a8c72418d2c6451b94fb788cb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913058"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35061850"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft マネージドデスクトップの役割と責任
 
@@ -45,7 +45,7 @@ Microsoft Managed Desktop service サポート | Microsoft は、Microsoft Manag
 ID 管理 | お客様は、ユーザーアカウントを作成し、ユーザーをグループに割り当て、メタデータを最新の状態に維持する責任があります。 
 Office 365 の構成と管理 | Microsoft は、Office アプリケーションがエンドユーザーに展開されることを保証する責任を担います。これらのアプリケーションは、最新の状態に保たれます。 <br><br> お客様は、Exchange Online 管理の責任を含む Office 365 のサービスとポリシーを管理する責任があります。<br>-電子メール管理<br>-メールボックスとルールの構成<br>-オンプレミスの Exchange 管理<br><br>お客様は、Office 365 管理ポータルで設定されているコラボレーションツール、SharePoint server 管理、ドメイン管理、セキュリティおよび情報ポリシーにも責任を担います。 
 エンドユーザーサポート | お客様は、以下のことをエンドユーザーにサポートする責任を負います。 <br>-サイトインフラストラクチャ: ネットワークとインターネットのすべての接続、VPN インフラストラクチャとクライアントの構成、ローカルの会議室装置、プリンター、プロキシサーバーと構成、ファイアウォール。<br><br>-企業全体にわたるクラウドリソース: 電子メール、SharePoint、コラボレーションサービス、およびその他のクラウドインフラストラクチャは、企業全体にわたるテクノロジのフットプリントに関連しています。<br><br>-基幹業務およびその他の会社固有のアプリケーション。
-アプリ | 役割と責任は、Microsoft マネージドデスクトップの一部として提供されているアプリと、提供するアプリによって多少異なります。 <br><br>Microsoft によって提供されるアプリ (Office 365 ProPlus Standard Suite、Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business {true、または Teams に置き換えられる) は、 **microsoft**が完全にサービスを提供する予定です。展開、更新、およびサポート。 **** これらのアプリのライセンスを取得して割り当てる必要があり、セキュリティグループにユーザーを追加し、ライフサイクルを管理して、必要な Office 365 のアドオンを展開する必要があります。<br><br>提供するアプリ (基幹業務アプリなど) については、自分でパッケージ化するのか、Microsoft 以外のベンダーに依頼するのかにかかわらず、次の操作を行う**必要**があります。 <br><br>-対象ユーザーグループに必要なアプリケーションを識別する<br>-アプリ展開用の Azure AD グループの作成と管理<br>-Microsoft Intune の展開基準を満たすようにアプリをパッケージ化する<br>-Microsoft Intune へのアプリのアップロード<br>-Microsoft マネージドデスクトップ環境でのアプリのテスト<br>-エンドユーザーによるアプリのテスト<br>-アプリケーションに対するユーザーの管理と割り当て<br>-Microsoft Intune を使用してアプリケーションの更新プログラムを識別して展開する<br>-Unistalling したアプリケーションの削除<br>-調達および割り当てライセンス<br>-基幹業務アプリのエンドユーザーサポートを提供する<br>-アプリの設定をリモートで管理する<br><br>**Microsoft**は、アプリケーションをリモートクライアントに配信するための microsoft Intune 展開ツールを提供します。<br><br>詳細については、「[アプリ](../get-ready/apps.md)」を参照してください。
+アプリ | 役割と責任は、Microsoft マネージドデスクトップの一部として提供されているアプリと、提供するアプリによって多少異なります。 <br><br>Microsoft が提供するアプリ (Office 365 ProPlus Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、Teams、OneNote) は、 **microsoft**が展開、更新、およびサポートのための完全なサービスを提供する予定です。 **** これらのアプリのライセンスを取得して割り当てる必要があり、セキュリティグループにユーザーを追加し、ライフサイクルを管理して、必要な Office 365 のアドオンを展開する必要があります。<br><br>提供するアプリ (基幹業務アプリなど) については、自分でパッケージ化するのか、Microsoft 以外のベンダーに依頼するのかにかかわらず、次の操作を行う**必要**があります。 <br><br>-対象ユーザーグループに必要なアプリケーションを識別する<br>-アプリ展開用の Azure AD グループの作成と管理<br>-Microsoft Intune の展開基準を満たすようにアプリをパッケージ化する<br>-Microsoft Intune へのアプリのアップロード<br>-Microsoft マネージドデスクトップ環境でのアプリのテスト<br>-エンドユーザーによるアプリのテスト<br>-アプリケーションに対するユーザーの管理と割り当て<br>-Microsoft Intune を使用してアプリケーションの更新プログラムを識別して展開する<br>-廃止されたアプリケーションをアンインストールおよび削除する<br>-調達および割り当てライセンス<br>-基幹業務アプリのエンドユーザーサポートを提供する<br>-アプリの設定をリモートで管理する<br><br>**Microsoft**は、アプリケーションをリモートクライアントに配信するための microsoft Intune 展開ツールを提供します。<br><br>詳細については、「[アプリ](../get-ready/apps.md)」を参照してください。
 セキュリティの監視と応答 | お客様は、Microsoft が管理していないデスクトップデバイスのインシデントを調査および解決し、そのサービスに影響を与える可能性のある問題があるかどうかを Microsoft Managed Desktop Operations Team に通知する責任を負います。
 運用のサポート | お客様は、お客様に推奨されるお客様の連絡先と該当分野の専門家のリストを提供する責任を担います。 Microsoft では、管理されていないデスクトップの運用インシデントがある場合には、これらの機能が必要です。 <br><br>お客様は、Microsoft が管理していないデスクトップデバイスおよびサービスのインシデントを調査および解決し、Microsoft の管理対象デスクトップ運用チームに常に通知されるようにする責任もあります。
 ネットワークインフラストラクチャ (VPN を含む) | お客様は、インターネット接続、ネットワーク制御、プロキシ構成、およびリモートを含む、すべてのネットワーク関連のインフラストラクチャとサービスのセットアップ、構成、および管理 (トラブルシューティングおよびデバッグ) を担当しています。接続インフラストラクチャ。<br><br>プロキシが (ハードウェアまたはソフトウェアで) 構成されている場合は、プロキシが許可する必要がある Url のコレクションがあります。 お客様は、複数のプロキシによって競合または非互換性のトラブルシューティングを行う必要があります。 構成可能な設定を使用して、組織に固有のネットワークプロキシを追加することができます。 詳細については、「[構成可能な設定](../working-with-managed-desktop/config-setting-ref.md#proxy)」を参照してください。<br><br>詳細については、「[プロキシの構成](../get-ready/network.md)」を参照してください。
