@@ -18,18 +18,24 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business を購入してサインアップする方法について説明します。
-ms.openlocfilehash: ecbf316f63e11ed07dc775f6659f650112cc8cb4
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 0f92bf35d2a7898d530fd509d8d13c91f32ccab3
+ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017509"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35114924"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Microsoft 365 Business へのサインアップ
 
 パートナーの場合は、「microsoft[パートナーセンターから microsoft 365 Business を取得](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)する」を参照してください。
 
-[Microsoft 365 のビジネス上の利点を見つけ](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)、「Microsoft 365 Business で**購入**」を選択します。
+Microsoft 365 Business online を購入するには、microsoft [365 のビジネス上の長所を見つけ](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)て、「Microsoft 365 Business で**購入**する」を選択してください。
+
+Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)にアクセスすることもできます。
+
+## <a name="complete-the-sign-up-steps"></a>サインアップの手順を完了する
+
+Microsoft 365 Business を購入したら、次の手順を実行します。
 
 1. [**ようこそ]** ページで、必要な情報を入力します。 次の点に注意してください。
  
@@ -43,7 +49,7 @@ ms.locfileid: "35017509"
     - **会社**: 固有の会社名を入力します。 これは、ビジネス web サイトが使用している場合に使用する名前で、ビジネスメールを受信するときに、@ 記号の後に含める名前です。 この名前はドメインと呼ばれます。 たとえば、会社が Contoso Ski という名前の場合は、@ 記号の後に「ContosoSkis」と入力します。
     - **ドメインの選択**: ドメイン名が既に所有している場合は、ドロップダウンメニューから onmicrosoft.com を選択し、後でセットアップするように求められます。 それ以外の場合は、ビジネスを表すドメイン名を簡単に購入できます。 これを行うには、ドロップダウンメニューから希望のドメインを選択します。 たとえば、完全な電子メールアドレスが*Teresa@ContosoSkis.net*になることがあります。 ドメイン名が使用可能な場合は、すぐに確認できます。 その場合は、Microsoft 365 Business サブスクリプションのコストにドメインのコストを追加します。 ここで購入した場合は、新しいドメインも設定され、Microsoft 365 で使用できるようになります。 ドメインの詳細については、「ドメインに関する[FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq)」を参照してください。
     
-    ![ユーザー ID の作成ページのスクリーンショット。](media/signinuserid.png)
+        ![ユーザー ID の作成ページのスクリーンショット。](media/signinuserid.png)
 
 3. 残りのフィールドに入力して、[**アカウントの作成**] を選択します。
 4. [証明します **。いいえ。ロボット。** [ページ] テキストまたは通話でコードを受信するための電話番号を入力し、[**テキスト**の選択] または [**呼び出し**] を選択し、 \> **次**に確認コードを入力します。

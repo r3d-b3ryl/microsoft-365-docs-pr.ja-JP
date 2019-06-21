@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: eb3d611d2be0480fdd0ff897ec5ba69b17695041
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 6fd328ebd4a8d3fbcde836c4aa87b56b9775c3cd
+ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660471"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35114964"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 
@@ -36,7 +36,7 @@ Microsoft 365 Business は、ビジネス生産性と共同作業ツールの包
   
 Microsoft 365 Business は最大300ライセンスを想定しており、さらにライセンスが必要な場合は、「 [microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。
 
-すべての機能の一覧については、「 [Microsoft 365 Business service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description) 」を参照してください。
+すべての機能の一覧については、「 [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description) 」を参照してください。
   
 ## <a name="small-business-security-needs"></a>小規模企業のセキュリティニーズ
 
@@ -60,3 +60,5 @@ Microsoft 365 Business は、これらの各インスタンスのデータを保
 - パートナーがいる場合、パートナーは Microsoft 365 Business を入手します: [Microsoft パートナー センターから Microsoft 365 Business を購入する](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)。
 
 - パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)して、[サインアップ](sign-up.md)の手順に従うことができます。
+
+- Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)にアクセスすることもできます。
