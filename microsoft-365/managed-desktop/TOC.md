@@ -4,6 +4,7 @@
 ### [Microsoft マネージドデスクトップのテクノロジ](intro/technologies.md)
 ## [Microsoft マネージドデスクトップサービスの説明](service-description/index.md)
 ### [サポートされている地域と言語](service-description/regions-languages.md)
+### [製品ライフサイクル](service-description/device-lifecycle.md)
 ### [プログラムデバイス](service-description/device-list.md)
 #### [アーカイブされたプログラムデバイス](service-description/archived-device-list.md)
 ### [デバイスサービス](service-description/device-services.md)
