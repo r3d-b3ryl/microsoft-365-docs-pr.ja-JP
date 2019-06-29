@@ -1,18 +1,18 @@
 ---
 title: Microsoft マネージドデスクトップで構成可能な設定を展開する
 description: Microsoft マネージドデスクトップで構成の構成変更を展開し、追跡します。
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント、展開、段階的展開、構成可能な設定
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント、展開、段階的展開、構成可能な設定
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278430"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390514"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ
 
@@ -63,6 +63,6 @@ Microsoft マネージドデスクトップでは、次の順序で展開グル�
 
 ![構成可能な設定の展開の復元](images/config-setting-revert.png) 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他の技術情報
 - [構成可能な設定の概要](config-setting-overview.md)
 - [構成可能な設定のリファレンス](config-setting-ref.md) 

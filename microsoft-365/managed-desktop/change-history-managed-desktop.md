@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4cd61e333773ddeddc866481be7e1cfa283e4386
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913028"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390364"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージドデスクトップドキュメントの変更履歴
 
@@ -25,6 +25,8 @@ ms.locfileid: "34913028"
 [Microsoft マネージドデスクトップのアプリ](get-ready/apps.md) | 更新されたトピック
 [Microsoft コンサルティングサービスを使用する](get-ready/apps-mcs.md) | 新しいトピック
 [Microsoft マネージドデスクトップの役割と責任](intro/roles-and-responsibilities.md) | 更新されたトピック
+[Microsoft マネージドデスクトップ製品のライフサイクル](service-description/device-lifecycle.md) | 新しいトピック
+
 
 
 ## <a name="may-2019"></a>2019 年 5 月

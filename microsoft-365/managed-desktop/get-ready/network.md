@@ -1,18 +1,18 @@
 ---
 title: Microsoft マネージドデスクトップのネットワーク構成
 description: ''
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 333fb51fe9d7df7c5ec47c2e7a812cd489c36d23
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289102"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390494"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのネットワーク構成
 
@@ -33,28 +33,28 @@ Microsoft マネージドデスクトップは、クラウドで管理される�
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに対して許可されているエンドポイント
 
-Microsoft マネージドデスクトップでは、Azure Portal を使用して web コンソールをホストします。 次の表に示す url は、microsoft の管理対象デスクトップデバイスが microsoft サービスと通信できるように、プロキシとファイアウォールの許可リストに含まれている必要があります。  
+Microsoft マネージドデスクトップでは、Azure Portal を使用して web コンソールをホストします。 次の表に示す Url は、Microsoft の管理対象デスクトップデバイスが Microsoft サービスと通信できるように、プロキシとファイアウォールの許可リストに含まれている必要があります。  
 
 以下の Microsoft Managed Desktop の URL は、お客様の API でサービスが実行されているすべてのものに使用されることに注意してください。 お客様は、この URL が企業ネットワークで常にアクセス可能であることを確認する必要があります。
 
-Microsoft サービス  | 許可リストに必要な url 
+Microsoft サービス  | 許可リストに必要な Url 
 --- | --- | ---
 Microsoft マネージドデスクトップ | prod-mwaas-services-customerapi.azurewebsites.net
 ヘルプを表示する | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 クイックアシスト | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
-office の Microsoft サポート/回復アシスタント365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
+Office の Microsoft サポート/回復アシスタント365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
 ### <a name="endpoints-allowed---other-microsoft-products"></a>エンドポイントが許可されているその他の Microsoft 製品
 
-microsoft マネージドデスクトップデバイスが microsoft サービスと通信できるように、許可リストに含まれている必要があるいくつかの Microsoft 製品からの url があります。 各製品の完全な一覧を表示するには、リンクを使用します。 
+Microsoft マネージドデスクトップデバイスが microsoft サービスと通信できるように、許可リストに含まれている必要があるいくつかの Microsoft 製品からの Url があります。 各製品の完全な一覧を表示するには、リンクを使用します。 
 
-Microsoft サービス | ドキュメントソース-許可リストに必要な url
+Microsoft サービス | ドキュメントソース-許可リストに必要な Url
 --- | ---
-windows 10 Enterprise (windows Update for Business) | [Windows 10 バージョン1803の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Windows 10 バージョン1809の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
+Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョン1803の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Windows 10 バージョン1809の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
 配信の最適化 | [Windows 10 更新プログラムの配信最適化を構成する](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、 [active directory および active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 
+Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、 [Active directory および Active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)
 Windows Defender Advanced Threat Protection (ATP) | [Windows Defender ATP エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
 )

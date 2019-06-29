@@ -1,18 +1,18 @@
 ---
 title: Microsoft マネージドデスクトップの構成可能な設定のリファレンス
 description: Microsoft マネージドデスクトップで構成可能な設定のカテゴリを設定する
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278320"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390414"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>構成可能な設定のリファレンス-Microsoft マネージドデスクトップ
 
@@ -59,7 +59,7 @@ ms.locfileid: "32278320"
 
 Microsoft Edge との互換性の問題があることがわかっている特定の web サイトとアプリがある場合は、エンタープライズモードサイトリストを使用して、Internet Explorer 11 を使用して web サイトを自動的に開くことができます。 また、イントラネットサイトが Microsoft Edge で正常に動作しないことがわかっている場合は、Internet Explorer 11 を使用してすべてのイントラネットサイトを開くように設定できます。 エンタープライズモードを使用することは、Microsoft Edge を既定のブラウザーとして引き続き使用でき、アプリが Internet Explorer 11 で引き続き動作することを保証することを意味します。 エンタープライズモードのサイトリストの詳細については、「[エンタープライズモードおよびエンタープライズモードのサイトリスト](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode)」を参照してください。 
 
-https://の場所、またはエンタープライズモードサイトリストをホストしている内部共有の場所を指定できます。 
+Https://の場所、またはエンタープライズモードサイトリストをホストしている内部共有の場所を指定できます。 
 
 ### <a name="requirements"></a>要件
 
@@ -71,7 +71,7 @@ https://の場所、またはエンタープライズモードサイトリスト
 ### <a name="best-practices"></a>ベスト プラクティス
 
 これらのベストプラクティスは、お客様が IT インフラストラクチャを近代化するための意思決定を支援するために提供されています。
-- **限られた数のサイトを選択**する-microsoft Managed Desktop は、microsoft Edge を優先ブラウザーとして使用して、組織の全体的なセキュリティを向上させ、ユーザーにとっての利便性を向上させます。 このリストに含まれるほとんどのサイトは、多くのセキュリティ機能を含まない古いバージョンのブラウザーを必要とする従来の web アプリに対して使用されます。 
+- **限られた数のサイトを選択**する-Microsoft Managed Desktop は、microsoft Edge を優先ブラウザーとして使用して、組織の全体的なセキュリティを向上させ、ユーザーにとっての利便性を向上させます。 このリストに含まれるほとんどのサイトは、多くのセキュリティ機能を含まない古いバージョンのブラウザーを必要とする従来の web アプリに対して使用されます。 
 - **** 別のサイト、または古いブラウザーを必要としない web アプリを検討してください。 または、新しいブラウザーを使用できるようにサイトを更新することを検討してください。 新しいブラウザーは最新のテクノロジを使用して、セキュリティを向上させます。
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>エンタープライズサイトモードリストの場所をカスタマイズおよび展開する
@@ -119,7 +119,7 @@ https://の場所、またはエンタープライズモードサイトリスト
 ## <a name="proxy"></a>プロキシ
 組織のネットワークプロキシ設定を管理できます。 プロキシサーバーとポート番号を追加して、プロキシサイトの例外を追加します。 Microsoft マネージドデスクトップには、サービスの動作に必要な既定のプロキシ例外のセットが含まれています。 既定の除外リストは、Microsoft Managed Desktop service によってのみ変更される場合があります。  詳細については、「 [Microsoft マネージドデスクトップのネットワーク構成](../get-ready/network.md)」を参照してください。 
 
-microsoft マネージドデスクトップポータルで追加するプロキシサイトの例外は、microsoft managed desktop service に含まれている既定のプロキシ例外に追加されます。 
+Microsoft マネージドデスクトップポータルで追加するプロキシサイトの例外は、Microsoft Managed Desktop service に含まれている既定のプロキシ例外に追加されます。 
 
 > [!NOTE]
 > 既定のプロキシ例外リストの更新は、常に顧客展開より優先されます。 これは、既定のプロキシ例外リストの展開が存在する場合に、段階的な展開が一時停止することを意味します。  
@@ -128,7 +128,7 @@ microsoft マネージドデスクトップポータルで追加するプロキ�
 
 プロキシサーバーおよびプロキシサイトの例外については、これらの要件を満たす必要があります。
 - 有効なサーバーアドレスとポート番号である必要があります。
-- url は有効な http サイトである必要があります 
+- Url は有効な http サイトである必要があります 
 
 ### <a name="customize-and-deploy-proxies"></a>プロキシをカスタマイズおよび展開する
 
@@ -142,6 +142,6 @@ microsoft マネージドデスクトップポータルで追加するプロキ�
 6. 追加する各信頼済みサイトについて、手順1-5 を繰り返します。 
 7. 変更を保存してテストグループに展開するには、[**ステージ展開**] を選択します。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他の技術情報
 - [構成可能な設定の概要](config-setting-overview.md) 
 - [構成可能な設定を展開する](config-setting-deploy.md)
