@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
+ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857330"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447529"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>パートナー用の Microsoft マネージドデスクトップのデバイスを登録する
 
@@ -20,7 +20,7 @@ ms.locfileid: "34857330"
 
 
 ## <a name="prepare-for-registration"></a>登録の準備 
-お客様の登録を完了する前に、[パートナーセンター](https://partner.microsoft.com/dashboard)で、お客様との関係を確立する必要があります。 詳細については、[パートナーセンターのヘルプ](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)を参照してください。
+お客様の登録を完了する前に、[パートナーセンター](https://partner.microsoft.com/dashboard)で、お客様との関係を確立する必要があります。 [ **Azure Active Directory および Office 365 の委任管理者特権を含める**] チェックボックスをオンにします。 詳細については、[パートナーセンターのヘルプ](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)を参照してください。
 
 お客様のために登録を完了するには、まず CSV ファイルを作成します。
 
