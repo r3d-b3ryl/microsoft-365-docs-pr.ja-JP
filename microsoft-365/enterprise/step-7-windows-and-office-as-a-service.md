@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ご自身の環境でWindowsおよびOfficeのサービスを準備する方法を学びます。
-ms.openlocfilehash: 9cc550ca87c1c71ef4a01030ce93b6300fcc019d
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814598"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584563"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>ステップ7： WindowsとOfficeのサービス
 
@@ -37,7 +37,7 @@ ms.locfileid: "34814598"
 >WindowsおよびOfficeサービスは、半年ごとの機能更新に備えるための計画サイクルを統括する、推奨展開プロセスの第7段階です。 完全なデスクトップ展開プロセスを確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)にアクセスしてください。
 >
 
-Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプション、サポートモデル、および更新スケジュールが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 System Center Configuration Manager Current Branchの新機能を活用しながら、Windows 10およびOffice 365 ProPlusの新機能を提供する半期ごとのチャンネル更新の準備方法を学びましょう。
+Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプション、サポートモデル、および更新スケジュールが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 System Center Configuration Manager (Current Branch) の新機能を活用しながら、Windows 10 および Office 365 ProPlus の新機能を提供する半期チャンネルの更新を準備する方法について説明します。
 
 [Windows 10およびOffice 365 ProPlusへの移行を支援します](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
@@ -79,7 +79,7 @@ Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプショ�
 
 ### <a name="supporting-management-tools"></a>管理ツールをサポート
 
-更新プログラムの展開をどのようにシームレスに行うかについても検討を重ねました。Windows、Office、その他の新しい機能に対する更新プログラムの公開をサポートするために、System Center Configuration Manager の Current Branch は頻繁に更新されています。
+更新プログラムの展開をどのようにシームレスに行うかについても検討を重ねました。Windows、Office、その他の新しい機能に対する更新プログラムの公開をサポートするために、System Center Configuration Manager (Current Branch) は頻繁に更新されています。
 
 
   [System Center Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-manage-updates-configuration-manager)
@@ -127,7 +127,7 @@ Windows の「簡易更新プログラム」と、Office のバイナリ差分�
 
 [Windows 10 の品質の更新プログラムの説明と、差分更新プログラムの終了](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-Windows Update for Business および Windows Server Update Services では簡易更新プログラムを長期間サポートしてきましたが、System Center Configuration Manager でも簡易更新プログラムを利用できるようにサポートを拡張しました。
+Windows Update for Business および Windows Server Update Services では簡易更新プログラムを長期間サポートしてきましたが、System Center Configuration Manager (Current Branch) でも簡易更新プログラムを利用できるようにサポートを拡張しました。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
@@ -143,7 +143,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 デバイスとアプリの準備で網羅したように、展開プロセス全体の手順 1 でセットアップしたのと同じ準備ツールを使用して、この大規模な更新プログラムの準備を開始します。
 
-ツールに関しては、Windows Update for Business でのポリシー設定、System Center Configuration Manager によるソフトウェアの更新管理、Windows Server Update Services (WSUS)、または Microsoft Intune で設定された更新ポリシーを使用できます。ネットワーク帯域幅に関して懸念がある場合は、「手順 2: ディレクトリとネットワークの準備」を参照してください。配信の最適化や他のピアツーピアのキャッシング技術によるネットワーク トラフィック削減に関するオプションの詳細を確認できます。
+ツールに関しては、Windows Update for Business でのポリシー設定、System Center Configuration Manager (Current Branch) によるソフトウェアの更新管理、Windows Server Update Services (WSUS)、または Microsoft Intune で設定された更新ポリシーを使用できます。ネットワーク帯域幅に関して懸念がある場合は、「手順 2: ディレクトリとネットワークの準備」を参照してください。配信の最適化や他のピアツーピアのキャッシング技術によるネットワーク トラフィック削減に関するオプションの詳細を確認できます。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -155,7 +155,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 #### <a name="upgrade-task-sequences"></a>タスク シーケンスのアップグレード
 
-標準レベルのソフトウェア更新管理のルーチンによる大きな機能の更新プログラムのインストールもサポートされていますが、多くの組織では System Center Configuration Manager でのアップグレードのタスク シーケンス、または Microsoft Deployment Toolkit を使用することを選びます。
+標準レベルのソフトウェア更新管理のルーチンによる大きな機能の更新プログラムのインストールもサポートされていますが、多くの組織では System Center Configuration Manager (Current Branch) でのアップグレードのタスク シーケンス、または Microsoft Deployment Toolkit を使用することを選びます。
 
 タスク シーケンスを使用すると、機能の更新プログラムをインストールする前にカスタム チェックやタスクを作成でき、更新プログラムのインストール自体が完了した後にカスタム タスクを実行できます。更新、ドライバーのインストールと置き換え、アプリケーションのアップグレード、タスクバーおよび Windows 10 のスタート画面の個人用設定などで、必要に応じてサービスを一時停止することも、更新後のタスクに含まれます。
 

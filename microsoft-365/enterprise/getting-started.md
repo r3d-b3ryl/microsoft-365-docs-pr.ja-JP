@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップの展開プロセスの概要です。
-ms.openlocfilehash: b9264f8d9232bf1b88372694d43e2d2c70c8cb70
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814658"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584523"
 ---
 # <a name="getting-started---desktop-deployment"></a>概要 - デスクトップの展開
 
@@ -86,7 +86,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 開始する前に、高レベルの計画と、その実現を支援するスポンサーを得ることが重要になります。 ここでは、Microsoft の展開プロセス全体における重要な手順の概要を説明しています。手順を参照すれば、以下の展開分野におけるコア チーム メンバーと管理するリソースを特定しやすくなります。
 
-**[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)** 展開を成功させるには、まず自分が所有しているものを把握する必要があります。 つまり、デバイスやアプリのインベントリを作成し、互換性を確認することが重要になります。 クラウドベースのサービスである Windows Analytics で利用できるツールを活用すると、インベントリの作成や互換性の確認がしやすくなります。 Windows Analytics を使用すれば、何億台もの PC から収集された互換性のインテリジェンスと診断データを基に、デバイス上で実行されているアプリやドライバーを評価し、デスクトップ資産を整備することができます。 「展開可能な PC」の一覧を Windows Analytics から System Center Configuration Manager にエクスポートすることもできます。エクスポート後、対象となる PC のデータ ドリブン コレクションを作成できるようになります。
+**[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)** 展開を成功させるには、まず自分が所有しているものを把握する必要があります。 つまり、デバイスやアプリのインベントリを作成し、互換性を確認することが重要になります。 クラウドベースのサービスである Desktop Analytics で利用できるツールを活用すると、インベントリの作成や互換性の確認がしやすくなります。 Desktop Analytics を使用すれば、何億台もの PC から収集された互換性のインテリジェンスと診断データを基に、デバイス上で実行されているアプリやドライバーを評価し、デスクトップ資産を整備することができます。 「展開可能な PC」の一覧を Desktop Analytics から System Center Configuration Manager にエクスポートすることもできます。エクスポート後、対象となる PC のデータに基づくコレクションを作成できるようになります。
 
 
   [アップグレードの準備を開始する](https://docs.microsoft.com/ja-JP/windows/deployment/upgrade/upgrade-readiness-get-started)

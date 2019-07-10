@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のディレクトリとネットワークの準備状況を評価する方法について説明します。
-ms.openlocfilehash: d9ab05c9ff7d0b926f147ee4f924d95f01ccffd1
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814618"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584573"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>手順 2: ディレクトリとネットワークの準備
 
@@ -80,7 +80,7 @@ Azure Active Directory を配置したら、対象ユーザーは Office 365 Pro
 
   [BITS について](https://docs.microsoft.com/ja-JP/windows/desktop/bits/about-bits)
 
-System Center Configuration Manager を使用している場合は、BITS 対応の配布ポイントを構成することも、WDS でマルチキャストを有効にすることもできます。
+System Center Configuration Manager (Current Branch) を使用している場合は、BITS 対応の配布ポイントを構成することも、WDS でマルチキャストを有効にすることもできます。
 
 特定のトラフィックを調整すると、通常のネットワーク トラフィックは、更新プログラムやアプリケーションをダウンロードしている PC の影響を受けにくくなります。しかし、これらのタスクのために帯域幅の特定の割合を切り分けると、生産性は Windows または Office の展開による影響を受けず、プロセスが必要に応じて実行を続けるようになります。そのため、展開に関連するダウンタイムが悪化し、展開が実行される間、ユーザーが PC からロックアウトされる可能性があります。
 
@@ -90,7 +90,7 @@ System Center Configuration Manager を使用している場合は、BITS 対応
 
 ## <a name="scavenging-bandwidth"></a>**帯域幅の清掃**
 
-Windows Server 2019 および System Center Configuration Manager バージョン 1806 でサポートされている低遅延バックグラウンド トランスポート (LEDBAT) は、Windows クライアントへのネットワーク トラフィックを最適化するよう設計されています。
+Windows Server 2019 および System Center Configuration Manager (Current Branch) でサポートされている低遅延バックグラウンド トランスポート (LEDBAT) は、Windows クライアントへのネットワーク トラフィックを最適化するよう設計されています。
 
 [Windows Server 2019 のネットワーク機能のトップ テン: \#9 LEDBAT – 遅延に最適化されたバックグラウンド トランスポート](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -110,7 +110,7 @@ System Center Configuration Manager でサポートされている**ピア キ�
 
 [BranchCache 対ピア キャッシュ](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**配信の最適化** 配信の最適化は、もう 1 つのピア ツー ピア キャッシング テクノロジであり、展開用のネットワークベースのコントロールを提供します。 Windows 10 の配信の最適化は組み込み UWP アプリの更新、Microsoft Store からのアプリケーションのインストール、および高速インストール ファイルを使用したソフトウェア更新にも使用されます。 これは初期のバージョンの Windows 10 から使用できましたが、System Center Configuration Manager と統合されたのは最近のことです。 Windows 10 バージョン 1803 以降の新しい構成オプションでは、バックグラウンド更新やフォアグラウンド ジョブ (Microsoft Store からのアプリのインストールなど) の帯域幅制限を個別に設定できるようになりました。 Windows の配信の最適化はクライアント更新時の Office 365 ProPlus もサポートするようになりました。サポートされているすべての Office 365 クライアント更新チャネルで利用可能です。 Office 365 クライアント初期インストール時に対する Windows の配信の最適化のサポートは近日対応予定です。  
+**配信の最適化** 配信の最適化は、もう 1 つのピア ツー ピア キャッシング テクノロジであり、展開用のネットワークベースのコントロールを提供します。 Windows 10 の配信の最適化は組み込み UWP アプリの更新、Microsoft Store からのアプリケーションのインストール、および高速インストール ファイルを使用したソフトウェア更新にも使用されます。 これは初期のバージョンの Windows 10 から使用できましたが、System Center Configuration Manager (Current Branch) と統合されたのは最近のことです。 Windows 10 バージョン 1803 以降の新しい構成オプションでは、バックグラウンド更新やフォアグラウンド ジョブ (Microsoft Store からのアプリのインストールなど) の帯域幅制限を個別に設定できるようになりました。 Windows の配信の最適化はクライアント更新時の Office 365 ProPlus もサポートするようになりました。サポートされているすべての Office 365 クライアント更新チャネルで利用可能です。 Office 365 クライアント初期インストール時に対する Windows の配信の最適化のサポートは近日対応予定です。  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
