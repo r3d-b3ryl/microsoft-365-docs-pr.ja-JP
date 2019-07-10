@@ -8,16 +8,21 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
+ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390364"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605966"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージドデスクトップドキュメントの変更履歴
 
 このトピックでは、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新されたトピックを一覧表示します。
+
+## <a name="july-2019"></a>2019年7月
+新規または変更されたトピック | 説明
+--- | ---
+[Microsoft コンサルティングサービスを使用する](get-ready/apps-mcs.md) | 更新されたトピック
 
 ## <a name="june-2019"></a>2019年6月
 新規または変更されたトピック | 説明
