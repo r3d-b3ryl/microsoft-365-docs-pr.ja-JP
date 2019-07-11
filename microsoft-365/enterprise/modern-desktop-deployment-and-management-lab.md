@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
-ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
+ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576507"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584533"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
 ダウンロード可能なこれらの実践ラボでは、Windows 10 や Office 365 の展開と、展開後の構成や管理に関する考慮事項を主に扱います。このトレーニングは、Windows 7 のサポート終了に備えようとしている組織に特にお勧めしますが、Windows 10 と Office 365 Plus または Office 2019 を現在使用中のユーザーにも適用されます。このトレーニングには、Windows 10、Office 365 ProPlus、Enterprise Mobility + Security、および関連する製品やサービスのガイドが含まれます。
 
-これらのラボは、Windows 10 Enterprise および Office 365 ProPlus を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、System Center Configuration Manager、Windows Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
+これらのラボは、Windows 10 Enterprise および Office 365 ProPlus を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、System Center Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
 
 Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www.aka.ms/howtoshift)」プロセスの一部として、展開ツールの更新プログラムの確認や展開関連の自動化をテストするとき、まず、セキュリティで保護されるか隔離されているラボ環境を構築するようにお勧めします。
 
@@ -60,7 +60,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www
 
 ### <a name="device-and-app-readiness"></a>**デバイスとアプリの準備**
 
-  - Windows Analytics
+  - Desktop Analytics
   - Internet Explorer のエンタープライズ モード、およびエンタープライズ モードのサイト リスト
 
 ### <a name="directory-and-network-readiness"></a>**ディレクトリとネットワークの準備**
