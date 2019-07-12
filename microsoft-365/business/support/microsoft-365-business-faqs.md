@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
-ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
+ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
+ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34276225"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630591"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 Business に関するよく寄せられる質問
 
@@ -27,14 +27,14 @@ Microsoft 365 は、小規模から中規模企業向けに、クラス最高の
 **包括的な一連のビジネスの生産性ツールとコラボレーション ツール** 
 * Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access 
 * Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint 
-* Office のビジネス アプリ (Bookings、Outlook Customer Manager、MileIQ<sup>[1](#footnote1)</sup>、Microsoft Listings<sup>[1](#footnote1)</sup>、Microsoft Connections<sup>[1](#footnote1)</sup>、Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
+* Office のビジネスアプリ (予約、Outlook Customer Manager、ミル Eiq<sup>[1](#footnote1)</sup>、Microsoft 請求書<sup>[1](#footnote1)</sup>) 
  
 **エンタープライズ レベルのデバイス管理およびセキュリティ** 
-- Office 365 Advanced Threat Protection および Windows Defender Exploit Guard を使用した、フィッシング & 高度マルウェアなどの外部の脅威からの保護を提供します。 
--  Office 365 データ損失防止ポリシーを使用して機密情報へのアクセスと転送を管理するための & (夏、2018) と Azure Information Protection プラン1 
+- Office 365 Advanced Threat Protection および Windows Defender Exploit Guard を使用して、フィッシング & 高度なマルウェアなどの外部の脅威からの保護を提供します。 
+-  Office 365 データ損失防止ポリシーを使用して機密情報へのアクセスと転送を制御 & 管理する (夏、2018) と Azure Information Protection プラン1 
 -  Exchange Online アーカイブを使用してデータを保護、保持、およびバックアップするために役に立ちます。  
--   Office & のアプリ保護その他のモバイルアプリと Intune アプリの保護 
--  Windows 10 Pc のデバイス管理、MacOS & Mobiles デバイスと Intune デバイスの管理 
+-   Office & Intune アプリ保護を使用するその他のモバイルアプリのアプリ保護 
+-  Windows 10 Pc、MacOS & Mobiles デバイスの Intune デバイス管理のデバイス管理 
 -  デバイス間での一貫したセキュリティ構成-デバイス間での企業データの保護-Windows Defender、常時オン、最新 
  
  
@@ -82,7 +82,7 @@ Microsoft 365 Business は、お客様に対して、従業員が個人のデバ
   
 * **Windows 10 PC 向けのデバイス管理**により、企業は、Windows Defender によるマルウェア対策、自動更新、一定時間後の画面のオフなどの機能を設定して適用できます。 さらに、Windows 10 デバイスを紛失したり盗まれたりした場合は、管理センターを使用して業務アプリケーションとデータの完全にワイプすることができます。 
 
-* **Ios、Android _AMP_ MacOS の各機能のデバイス管理**は、企業が Ios、Android、Windows、および MacOS デバイスを含む多様なデバイスエコシステムを安全に管理するのに役に立ちます。 
+* **Ios、android & MacOS の各機能のデバイス管理に**より、企業は Ios、Android、Windows、および MacOS デバイスを含む多様なデバイスエコシステムを安全に管理することができます。 
 
 ### <a name="how-does-microsoft-365-business-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 Business は、組織内の PC を悪意のある攻撃から保護するのにどのように役立ちますか。 
 Microsoft 365 Business で管理されている PC は Windows Defender で保護されています。 これは、Windows 10 で最も使用されているウイルス対策機能であり、他のソリューションよりも多くのコンピューターを、ウイルス、マルウェア、スパイウェア、その他の脅威から保護しています。  Microsoft 365 Business を使用すると、企業は Windows Defender の保護が実行され、常に Windows 10 デバイスすべてを最新の状態に保つことができます。  
