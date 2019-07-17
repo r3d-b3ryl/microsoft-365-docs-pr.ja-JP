@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c991dd20dcab50c824784c233e03ecc8cdc25f94
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: f16989960d999e65ad904fd11894d5fe8bca98f0
+ms.sourcegitcommit: 1bd18fb00aad37bad8d1411a916f444e1d1a38cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857290"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756899"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -47,7 +47,6 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 | [Surface Book 2](https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 512 GB/Intel i7/16 GB RAM | 15インチディスプレイ | 2019年11月16時 | 2022年11月16時 |
 | [Surface Go](https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 44 15Y/8GB RAM | None | 2020年8月2時 | 2023年8月2時 |
 | [Surface Pc 2](https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | None | 10月 16 2020 | 10月 16 2023 |
-|[Surface Pro (5 番目の Gen)](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | None | **2019年6月15日** | 2022年6月15日 |
 | [Surface Pro 6](https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | None | 10月 16 2020 | 10月 16 2023 |
 
 また、デバイスは次のものも必要です。     
