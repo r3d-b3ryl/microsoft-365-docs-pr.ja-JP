@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: キャンペーン用のコミュニケーションサイトを作成します。
-ms.openlocfilehash: 123269d462ddbb7a3c91f23be8031d9a2850c186
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 339f6e0de27975a8c768a6752d7fd367e12dd8f6
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35081037"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772534"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>キャンペーン用のコミュニケーションサイトを作成する
 
-優先度を連絡し、戦略ドキュメントを共有し、今後のイベントを強調表示する方法として、SharePoint で通信サイトを使用する方法が適しています。 コミュニケーションサイトは、キャンペーン全体で幅広く情報を共有するためのものです。これは内部キャンペーンサイトです。
+優先度を連絡し、戦略ドキュメントを共有し、今後のイベントを強調表示するための最適な方法は、SharePoint のコミュニケーションサイトを使用することです。 コミュニケーションサイトは、キャンペーン全体で幅広く情報を共有するためのものです。内部キャンペーンサイトです。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -45,7 +45,7 @@ ms.locfileid: "35081037"
 ![キャンペーンに必要な共通要素のスペースを含む SharePoint の通信ページの図](media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>インフォグラフィック: コミュニケーションサイトの情報を作成する図 
-次の PowerPoint および PDF のリンクは、タブロイド形式 (元帳、11 x 17、または A3 とも呼ばれます) でダウンロードおよび印刷できます。
+PowerPoint と PDF の次のリンクは、タブロイド形式 (台帳、11 x 17、または A3 とも呼ばれます) でダウンロードおよび印刷できます。
 
 [![コミュニケーションサイトのインフォグラフィックの画像](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
@@ -54,7 +54,7 @@ ms.locfileid: "35081037"
 
 ## <a name="set-it-up"></a>設定する
 
-1. にhttp://Office.comサインインします。
+1. にhttps://Office.comサインインします。
 2. ページの左上隅で、アプリ起動ツールのアイコンを選択し、 **SharePoint**タイルを選択します。 [ **SharePoint**] タイルが表示されない場合は [ **サイト**] タイルを、[ **SharePoint**] が表示されない場合は [ すべて] をクリックします。
 3. SharePoint ホームページの上部で、[ **+ サイトの作成**] をクリックし、[**コミュニケーションサイト**] オプションを選択します。
 
@@ -63,5 +63,5 @@ ms.locfileid: "35081037"
 
 ## <a name="admin-settings"></a>管理設定
 
-[+ サイトの**作成**] リンクが表示されない場合は、セルフサービスサイト作成を Microsoft 365 で利用できない場合があります。 チームサイトを作成するには、組織の Microsoft 365 を管理している担当者にお問い合わせください。 Microsoft 365 admin を使用している場合は、「 [Sharepoint online でサイト作成を管理](https://docs.microsoft.com/sharepoint/manage-site-creation)する」を参照して、組織でセルフサービスサイトの作成を有効にするか[、新しい sharepoint 管理センター](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center)のサイトを管理して、sharepoint online 管理センターからサイトを作成します。
+[+ サイトの**作成**] リンクが表示されない場合は、セルフサービスサイト作成を Microsoft 365 で利用できない場合があります。 チームサイトを作成するには、組織で Microsoft 365 を管理している担当者にお問い合わせください。 Microsoft 365 admin を使用している場合は、「 [Sharepoint online でサイト作成を管理](https://docs.microsoft.com/sharepoint/manage-site-creation)する」を参照して、組織でセルフサービスサイトの作成を有効にするか[、新しい sharepoint 管理センター](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center)のサイトを管理して、sharepoint online 管理センターからサイトを作成します。
   

@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: a0e5876d0b1a3b454a00df79f3d0808b26ef8e1e
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 4902a2273eef110ced9ae16c3b91f39ac990a736
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35081001"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772484"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から保護する
 
-Microsoft 365 には、攻撃から保護するための保護が多数含まれていますが、オンライン攻撃のリスクを制限し、最小限に抑えることができます。
+Microsoft 365 には、攻撃に対して防御するためのさまざまな保護が含まれていますが、オンライン攻撃のリスクを制限し、最小限に抑えることができる点があります。
 
 - **スパムまたは迷惑メール**迷惑メールを受信する理由は多くありますが、すべての迷惑メールは同じではありません。 ただし、迷惑メールをフィルターで除外することで、攻撃のリスクを軽減することができます。
 - **フィッシング**フィッシング詐欺とは、正当なように見えても、個人情報を取得したり、お客様の金銭を盗み出したりすることを目的とした電子メールのことです。
@@ -46,7 +46,7 @@ Microsoft 365 には、攻撃から保護するための保護が多数含まれ
 
 **レポート!**
 
-受信したフィッシングまたはその他の詐欺メールを報告します。 メッセージを選択し、リボンの [**メッセージを報告**] を選択してメッセージ送信者を報告し、メッセージをブロックします。
+受信したフィッシングまたはその他の詐欺メールを報告します。 メッセージを選択し、リボンの [**メッセージを報告**する] を選択します。
 [迷惑メールの報告](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)の詳細については、以下を参照してください。
 
 **フィッシングを回避する**
@@ -60,13 +60,13 @@ Microsoft 365 には、攻撃から保護するための保護が多数含まれ
 
 **メールが他のユーザーに対して適切であることを確認する**
 
-お客様がコミュニケーションを信頼することを支援します-デジタル署名を追加して、自分が本人であることを証明します。 「[デジタル署名を使用してセキュリティで保護されたメッセージ](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6)」を参照してください。
+お客様が自分のものであることを証明するためのデジタル署名を追加することで、お客様がコミュニケーションを信頼できるよう支援します。 「[デジタル署名を使用してセキュリティで保護されたメッセージ](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6)」を参照してください。
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>オンラインの脅威からキャンペーンを保護する
 
 このインフォグラフィックを、お客様のためのヒントと、キャンペーンチームのメンバーにダウンロードしてください。
 
-[![キャンペーン情報画像を保護するための画像](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[!「キャンペーン情報画像を保護する](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)」 (ダウンロード/M365CampaignsWhatCanUsersDoToSecure)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントをセットアップして保護する方法について説明します。
-ms.openlocfilehash: 857c24ac0ec134e119b3de083afe8dc3269bdbe2
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183354"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772474"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
@@ -38,7 +38,7 @@ Microsoft 365 Business にサインアップして、情報を入力すると、
 
 ## <a name="create-additional-admin-accounts"></a>追加の管理者アカウントを作成する
 
-管理用にのみ管理者アカウントを使用します。 管理者は、Office アプリを定期的に使用するための個別のユーザーアカウントを持ち、他の管理者機能の管理に必要な場合にのみ管理者アカウントを使用する必要があります。  また、管理者アカウントから Microsoft 365 Business license を削除して、料金を支払う必要がないようにすることをお勧めします。
+管理用にのみ管理者アカウントを使用します。 管理者は、Office アプリを定期的に使用するための個別のユーザーアカウントを持ち、他の管理者機能の管理に必要な場合にのみ管理者アカウントを使用する必要があります。 また、管理者アカウントから Microsoft 365 Business license を削除して、料金を支払う必要がないようにすることをお勧めします。
 
 他の信頼された従業員に対する管理者アクセス権を与えるには、少なくとも1つのグローバル管理者アカウントを設定する必要があります。 また、ユーザー管理用に別の管理者アカウントを作成することもできます (この役割は、**ユーザー管理の管理者**と呼ばれます)。 詳細については、「[管理者ロールについ](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
 
@@ -61,7 +61,7 @@ Microsoft 365 Business にサインアップして、情報を入力すると、
 
 ## <a name="create-an-emergency-admin-account"></a>緊急管理者アカウントを作成する
 
-また、多要素認証 (MFA) で設定されていないバックアップアカウントを作成して、誤ってロックしないようにする必要があります (たとえば、検証から第2秒として使用している電話が失われた場合など)。 このアカウントのパスワードが、語句であるか、16文字以上の長さであることを確認してください。 これは、"ブレイクガラスアカウント" と呼ばれることがよくあります。
+また、多要素認証 (MFA) で設定されていないバックアップアカウントを作成して、誤ってロックしないようにする必要があります (たとえば、検証から第2秒として使用している電話が失われた場合など)。 このアカウントのパスワードが、語句または16文字以上の長さであることを確認してください。 これは、"ブレイクガラスアカウント" と呼ばれることがよくあります。
 
 ## <a name="create-a-user-account-for-yourself"></a>自分のユーザーアカウントを作成する
 

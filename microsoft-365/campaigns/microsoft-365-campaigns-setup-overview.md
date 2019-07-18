@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 キャンペーンのセットアップの概要
-ms.openlocfilehash: 40894a15efd486ec1e5052725acc46f63cd811b1
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 882ca516d0e06658e24f675d5a1fe2b21a3c98b3
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183355"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772334"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Microsoft 365 for キャンペーンのセットアップ
 
@@ -38,7 +38,7 @@ ms.locfileid: "35183355"
 
 ![Microsoft 365 をキャンペーンに設定するための手順](media/M365-democracy-SetUpProcess.png)
 
-特別価格に該当するキャンペーンの場合は、 [microsoft からの招待を要求](https://m365forcampaigns.microsoft.com/)することによって開始し、[キャンペーンに microsoft 365 に](m365-campaigns-sign-up.md)サインアップします。 セットアップを完了するには[、セットアップウィザードを実行](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)して、コア設定を構成します。
+特別価格に該当するキャンペーンの場合は、 [microsoft からの招待を要求](https://m365forcampaigns.microsoft.com/)することによって開始し、[キャンペーンに microsoft 365 に](m365-campaigns-sign-up.md)サインアップします。 セットアップを完了するには、[セットアップウィザードを実行](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)して、コア設定を構成します。
 
 他のすべての組織については、 [Microsoft 365 Business に](../business/sign-up.md)サインアップした後、[セットアップウィザードを実行](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)してセットアップを完了し、コア設定を構成します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "35183355"
   
 ユーザーデバイスをセットアップするには、次のようにします。 
 1. 各ユーザーが[モバイルデバイスを設定](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)します。 
-2. 管理されていないデバイスの場合、ユーザーは[pc と mac](m365-campaigns-protect-pcs-macs.md)をセットアップします。 重要なスタッフの場合は、管理された[デバイス](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)を使用してより高度な保護を行うことをお勧めします。 すべてのデバイスに対して、[多要素認証](m365-campaigns-multifactor-authenication.md)を設定する必要があります。 
+2. 管理されていないデバイスの場合、ユーザーは[pc と mac](m365-campaigns-protect-pcs-macs.md)をセットアップします。 重要なスタッフの場合は、管理された[デバイス](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)を使用してさらに保護を強化することをお勧めします。 すべてのデバイスに対して、[多要素認証](m365-campaigns-multifactor-authenication.md)を設定する必要があります。 
 3. すべてのユーザーは、[フィッシングやその他の攻撃](m365-campaigns-phishing-and-attacks.md)について学習することで、自分自身とキャンペーンを保護する方法について学習する必要があります。 この[インフォグラフィック](m365-campaigns-protect-campaign-infographic.md)は、ユーザーがオンラインの脅威からキャンペーンを保護する方法についても理解するのに役立ちます。
 
 ## <a name="contact-support"></a>サポートに連絡

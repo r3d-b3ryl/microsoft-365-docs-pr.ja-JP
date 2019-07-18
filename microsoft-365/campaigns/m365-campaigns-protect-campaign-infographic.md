@@ -21,15 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 description: キャンペーンをデジタル攻撃から保護するためにできること。
-ms.openlocfilehash: 819be1c526b2daf5fa69a732d3cee6a4e54624d3
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 8e1c958b7434019067c5f85ea534811611a0d037
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080995"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772504"
 ---
 ## <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infographic: 自分とキャンペーンをデジタルの脅威から保護するのに役立ちます。 
-次の PowerPoint および PDF のリンクは、タブロイド形式 (元帳、11 x 17、または A3 とも呼ばれます) でダウンロードおよび印刷できます。
+PowerPoint と PDF の次のリンクは、タブロイド形式 (台帳、11 x 17、または A3 とも呼ばれます) でダウンロードおよび印刷できます。
 
 [![セキュリティ保護されたヘルプの画像キャンペーン情報の保護に関する図](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 

@@ -20,18 +20,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 にサインインしてキャンペーンを行います。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
-ms.openlocfilehash: 2bf147f1d062ecbccabade355e50cff16bf30089
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: be24db2a7614e312bff96e5689f58a439de224a6
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183348"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772444"
 ---
 # <a name="sign-in-to-microsoft-365-for-campaigns"></a>Microsoft 365 にサインインしてキャンペーンを申し込む
 
 ## <a name="for-campaign-admins"></a>キャンペーン管理者の場合
 Microsoft 365 にサインアップしたキャンペーンは、Microsoft 365 の管理者です。サインインする方法は次のとおりです。 
-1. 手順2に記載した電子メールアドレスに送信したユーザー名とパスワードを検索[](m365-campaigns-sign-up.md#steps-to-sign-up)します。
+1. 手順2で[サインアップ](m365-campaigns-sign-up.md#steps-to-sign-up)した電子メールアドレスに送信したユーザー名とパスワードを検索します。
 2. ブラウザーで、Microsoft 365 管理センター () に移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。 
 3. ユーザー名とパスワードを入力します。 [**サインイン**] を選択します。
 4. ページの右上にある **[プレビュー** ] コントロールを探します。 「[キャンペーンのバンプアップ保護](m365-campaigns-security-overview.md)」で説明されているすべてのコントロールを使用できるように、[**プレビュー** ] を選択します。

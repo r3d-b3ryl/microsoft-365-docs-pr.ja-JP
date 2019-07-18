@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化された電子メールを送信する方法について説明します。
-ms.openlocfilehash: 16e6a6977d7cd8ec4d6bf59adbcd196b14995752
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183347"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772324"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密メールを暗号化またはラベル付けする
 
@@ -54,7 +54,7 @@ ms.locfileid: "35183347"
 
 ### <a name="automatically-encrypt-email-messages"></a>電子メールメッセージを自動的に暗号化する
 
-管理者は、メールフロールールを作成して、キャンペーンから送受信される電子メールメッセージを自動的に保護することができます。 送信電子メールメッセージを暗号化し、組織内から送信される暗号化されたメッセージの暗号化、または組織から送信された暗号化メッセージへの返信を削除するためのルールを設定します。 
+管理者は、メールフロールールを作成して、キャンペーンから送受信される電子メールメッセージを自動的に保護することができます。 送信電子メールメッセージを暗号化するルールを設定し、組織内から送信される暗号化されたメッセージ、または組織から送信された暗号化メッセージへの返信から暗号化を削除します。 
 
 メールフロールールを作成して、新しい Office 365 Message Encryption (OME) 機能を使用して電子メールメッセージを暗号化します。 Exchange 管理センター (EAC) を使用して、新しい OME 機能でメッセージの暗号化をトリガーするためのメールフロールールを定義します。 
 

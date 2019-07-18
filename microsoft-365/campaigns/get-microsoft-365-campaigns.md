@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンを cybersecurity の脅威から電子メール、データ、コミュニケーションに保護できるように、Microsoft 365 をキャンペーンに対して取得します。
-ms.openlocfilehash: 21131707d88168f8886472f3ef0b42603229d8c5
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 0e038f3b33db957d3503ee091b075b767c30eeda
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183353"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772514"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>キャンペーンに Microsoft 365 を入手する
 
@@ -53,7 +53,7 @@ Microsoft 365 Business を使用している人は誰でもこのガイダンス
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>特別価格の資格を得るにはどうすればよいですか?
 
-1. にhttps://m365forcampaigns.microsoft.com/移動して、組織に関するいくつかの詳細を入力します。 ここで提供する詳細情報は、米国の国内レベルの政治的なキャンペーンまたは関係者を表していることを確認するのに役立ちます。 このフォームを完成させるには、次のようなコミットメントはありません。 
+1. にhttps://m365forcampaigns.microsoft.com/移動して、組織に関するいくつかの詳細を入力します。 ここで提供する詳細情報は、米国で国内レベルの政治的なキャンペーンまたは関係者を表していることを確認するために役立ちます。 このフォームを完成させるには、次のようなコミットメントはありません。 
 2. フォームを完成した後、情報を確認するには数日かかります。 
 3. 国内レベルの政治的なキャンペーンまたは関係者を表していることを確認した後、Microsoft からの電子メールによる招待を受け取ります。 招待には、組織に固有のサインアップリンクが含まれています。 
 

@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 多元的認証を設定します。
-ms.openlocfilehash: 0538709f6052a82e04652f0c7676afe8c429b44b
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: cd14bb0d0f24215c64579851fe6982c5bf1ddc3e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35081007"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772494"
 ---
 # <a name="set-up-multifactor-authentication"></a>多元的認証を設定する
 
-多要素認証では、ビジネスのセキュリティが強化されます。  管理者が MFA を使用するように求められた後、Microsoft Authenticator アプリをセットアップして、キーアプリに安全にサインインできるようにします。 
+多要素認証では、ビジネスのセキュリティが強化されます。 管理者が MFA を使用するように求められた後、Microsoft Authenticator アプリをセットアップして、キーアプリに安全にサインインできるようにします。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
@@ -38,4 +38,4 @@ ms.locfileid: "35081007"
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>デバイスで Outlook アプリを使用する
 
-管理者が MFA を使用するように求められ、認証の2番目の形式としてオーセンティケータアプリを設定した場合は、Outlook アプリをインストールして使用することをお勧めします。キャンペーンの電子メールについては、Microsoft 365 にアクセスするために使用することをお勧めします。 「Outlook を含む Office アプリを電話にインストールする方法」の「[モバイルデバイスをセットアップ](../business/set-up-mobile-devices.md)する」を参照してください。
+管理者が MFA を使用するように求められ、認証の2番目の形式としてオーセンティケータアプリを設定した後は、Outlook アプリをインストールして使用することをお勧めします。キャンペーンの電子メールについては、Microsoft 365 にアクセスするために使用することをお勧めします。 「Outlook を含む Office アプリを電話にインストールする方法」の「[モバイルデバイスをセットアップ](../business/set-up-mobile-devices.md)する」を参照してください。

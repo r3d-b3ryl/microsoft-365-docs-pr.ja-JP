@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのための Microsoft 365 のステップバイステップのサインアップ。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
-ms.openlocfilehash: b1af4138da6f935fc2745444eea4ad82f9f128d6
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183351"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772464"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンのための Microsoft 365 へのサインアップ 
 
@@ -47,7 +47,7 @@ ms.locfileid: "35183351"
     > 既存の Office 365 for business サブスクリプションを既に所有しており、Microsoft 365 for キャンペーンのサービスを追加する場合は、「 [microsoft 365 for The キャンペーンを既存のサブスクリプションに追加](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)する」に進んでください。
 1. **[Microsoft 365 business] ページ**で、ビジネスの詳細を入力します。 **ビジネスメールアドレス**の場合は、現在の電子メールアドレスを使用します。 このアドレスは、セットアップ処理中にお客様に連絡するためにのみ必要です。 **[次へ]** を選択します。
 1. **[ユーザー ID の作成] ページで、** 次のようにします。
-    1. [**ユーザー名**] に、電子メールアドレスに使用する名前またはエイリアスを入力します。 たとえば、Alice または渡として知られているだけの場合もあります。 大規模なキャンペーンでは、AliceC または AliceChavez の方がより有意義な場合があります。
+    1. [**ユーザー名**] に、電子メールアドレスに使用する名前またはエイリアスを入力します。 たとえば、Alice だけと呼ばれることもあれば、渡のような場合もあります。 大規模なキャンペーンでは、AliceC または AliceChavez の方がより有意義な場合があります。
     2. **会社**で、作業するキャンペーンの名前を入力します。 たとえば、ContosoCampaign のようになります。 既にドメインを所有している場合は、ここでその名前を使用します。 
     3. [**ドメインの選択**] で、[onmicrosoft.com] を選択します **。** 後でドメインを設定することも、既に所有しているドメインに Microsoft 365 を接続することもできます。
     4. パスワードを作成し、[**アカウントの作成**] を選択します。 
