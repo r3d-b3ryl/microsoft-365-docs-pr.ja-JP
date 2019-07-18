@@ -3,16 +3,16 @@ title: Microsoft マネージドデスクトップテクノロジ
 description: このトピックでは、Microsoft マネージドデスクトップで使用されるテクノロジとアプリの一覧を示します。
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9c0e6481d0dc80e7cf03de2b748935c2f59f132a
-ms.sourcegitcommit: e54ec86310a18101f4688890cd5a9fc16bbe6f55
+ms.openlocfilehash: 914a90b4267132c9cb942740ceb974b084bcdf82
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35257820"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778092"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージドデスクトップテクノロジ
 
@@ -31,7 +31,7 @@ Microsoft 365 Enterprise ライセンスは、Microsoft が管理するすべて
 Office 365 Standard Suite (64 ビット) * | 標準の Office スイートアプリケーションは、デバイス (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote) に同梱されています。<br><br>C2R (64 ビット) をクリックして実行する () フルバージョンの Microsoft Project と Microsoft Visio は Office 365 Standard スイートに含まれていません。  ただし、これらのアプリケーションのインストールは標準の Office スイートのインストールに依存しているため、Microsoft マネージドデスクトップでは、これらのアプリケーションを展開するために使用する既定の Intune 展開およびセキュリティグループが作成されています。ライセンスされたエンドユーザー。  
 ストアアプリ |    Microsoft Sway、Power BI Desktop はデバイスと共には同梱されていません。 これらのアプリは Microsoft ストアからダウンロードできます。
 Win32 アプリケーション |    Power BI Pro、Azure Information Protection クライアント、および Microsoft Planner はデバイスに同梱されておらず、お客様が展開用にパッケージ化することもできます。 
-Web アプリケーション |  Yammer、Office Online、Delve、Flow、StaffHub、PowerApps は、デバイスに同梱されていません。 ユーザーは、ブラウザーを使用して、これらのアプリケーションの web バージョンにアクセスできます。
+Web アプリケーション |  Yammer、browser 内の Office、Delve、Flow、StaffHub、PowerApps は、デバイスに同梱されていません。 ユーザーは、ブラウザーを使用して、これらのアプリケーションの web バージョンにアクセスできます。
 Skype for Business Online クラウド PBX | この機能は、Office 365 で利用できます。 Microsoft マネージドデスクトップでは、このサービスの一部は構成されません。
 
 ## <a name="windows-10-enterprise-e5"></a>Windows 10 Enterprise E5
@@ -42,7 +42,7 @@ Credential Guard |  Microsoft は、この機能のガイダンスを提供し�
 Application Virtualization (App-v) |    Microsoft マネージドデスクトップでは、この種類の展開は Intune ではサポートされていないため、サポートされていません。
 User Experience Virtualization (UE-V) | これは、Microsoft マネージドデスクトップで管理されているデバイスでは使用されません。
 管理対象ユーザーの環境  | これは、Microsoft マネージドデスクトップで管理されているデバイスでは使用されません。 MDM は、デバイス管理のソリューションとして使用されます。
-Windows Defender Advanced Threat Protection |   これは、デバイスのセキュリティポリシーを管理するために Microsoft マネージドデスクトップによって使用されます。 
+Microsoft Defender Advanced Threat Protection | これは、デバイスのセキュリティポリシーを管理するために Microsoft マネージドデスクトップによって使用されます。 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 

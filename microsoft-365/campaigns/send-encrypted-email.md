@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化された電子メールを送信する方法について説明します。
-ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772324"
+ms.locfileid: "35778142"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密メールを暗号化またはラベル付けする
 
@@ -60,7 +60,7 @@ ms.locfileid: "35772324"
 
 1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、Office 365 にサインインします。 
 2. [管理] タイルを選択します。 
-3. Office 365 管理センターで、[ **Exchange > 管理センター**] を選択します。 
+3. 管理センターで、[ **Exchange > 管理センター**] を選択します。 
 
 詳細については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)」を参照してください。
 
