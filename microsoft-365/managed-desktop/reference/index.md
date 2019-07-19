@@ -1,4 +1,0 @@
-<span data-ttu-id="94ecd-101">--title: Microsoft Managed Desktop reference description: microsoft managed desktop、Microsoft 365、service、documentation m365 の特定の Microsoft managed desktop 機能のキーワードに関する詳細情報: jaimeoマックス izationpriority: normal</span><span class="sxs-lookup"><span data-stu-id="94ecd-101">-- title: Microsoft Managed Desktop reference description: Detailed information on certain Microsoft Managed Desktop features keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation ms.service: m365-md author: jaimeo ms.localizationpriority: normal</span></span>
----
-
-# <a name="microsoft-managed-desktop-reference"></a><span data-ttu-id="94ecd-102">Microsoft マネージドデスクトップリファレンス</span><span class="sxs-lookup"><span data-stu-id="94ecd-102">Microsoft Managed Desktop reference</span></span>
