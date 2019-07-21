@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 468a8c7f1151443d001efb89639c5cdad204b1c2
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698239"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778132"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>GDPR のための Dynamics 365 データ対象要求
 
@@ -224,7 +224,7 @@ Microsoft Social Engagement は、顧客データやソーシャル コンテン
 
 検索方法
 
-- ユーザー プロファイルを検索するには、[Office 365 管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、[**ユーザー**] を選択します。 [**アクティブなユーザー**] ページで、ユーザーを一覧から検索します。 Social Engagement で、**[設定] \> [ユーザー管理]** の順に移動し、Office 365 から自動的に同期されている情報を表示します。
+- ユーザー プロファイルを検索するには、[管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、[**ユーザー**] を選択します。 [**アクティブなユーザー**] ページで、ユーザーを一覧から検索します。 Social Engagement で、**[設定] \> [ユーザー管理]** の順に移動し、Office 365 から自動的に同期されている情報を表示します。
 - アラートの受信者を検索するには、「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」にある最初の 2 つのステップに従います。
 - 従業員が入力したソーシャル プロファイル データを検索するには、**[設定] \> [ソーシャル プロファイル]** の順に移動します。(詳細については「[ソーシャル プロファイルの管理](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles)」をご覧ください)。
 - Power BI のユーザー名を検索するには、Social Engagement Power BI ダッシュボードを開き、従業員名でフィルター処理します。
@@ -242,7 +242,7 @@ GDPR では、要求に応じて個人データのコピーを取得する権利
 
 エクスポート方法
 
-- ユーザー プロファイルから顧客データをエクスポートするには、[Office 365 管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、**[ユーザー]** を選択します。 **[アクティブなユーザー]** ページで、データをエクスポートするユーザーを検索します。 対象ユーザー以外のユーザーをすべて削除してから、**[エクスポート]** を選択してデータを .csv ファイルにエクスポートします。Excel を使用すると、このファイルの情報を表示できます。
+- ユーザー プロファイルから顧客データをエクスポートするには、[管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、**[ユーザー]** を選択します。 **[アクティブなユーザー]** ページで、データをエクスポートするユーザーを検索します。 対象ユーザー以外のユーザーをすべて削除してから、**[エクスポート]** を選択してデータを .csv ファイルにエクスポートします。Excel を使用すると、このファイルの情報を表示できます。
 - アラートの受信者のメール アドレス (アラートに含まれる唯一の顧客データ) をエクスポートするには、 「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」の手順に従います。 それから、**[エクスポート]** を選択して、この受信者を含むアラートの Excel リストをダウンロードします。
 - Power BI からユーザー名をエクスポートする場合。[[Engagement レポート]](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) に、ソーシャル メディア上のチーム パフォーマンスのレポートに含まれるユーザー名が表示されます。このデータをエクスポートするには、PowerBI ダッシュボード内のユーザーでフィルター処理するか、[[レポート]](https://docs.microsoft.com/power-bi/power-bi-report-add-filter) を選択し、[[データのエクスポート]](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data) を選択します。
 
@@ -317,7 +317,7 @@ Social Engagement は、さまざまなソーシャル プラットフォーム 
 
 エクスポート方法
 
-- ユーザー プロファイルから顧客データをエクスポートするには、[Office 365 管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、**[ユーザー]** を選択します。 **[アクティブなユーザー]** ページで、データをエクスポートするユーザーを検索します。 対象ユーザー以外のユーザーをすべて削除してから、**[エクスポート]** を選択してデータを .csv ファイルにエクスポートします。Excel を使用すると、このファイルの情報を表示できます。
+- ユーザー プロファイルから顧客データをエクスポートするには、[管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、**[ユーザー]** を選択します。 **[アクティブなユーザー]** ページで、データをエクスポートするユーザーを検索します。 対象ユーザー以外のユーザーをすべて削除してから、**[エクスポート]** を選択してデータを .csv ファイルにエクスポートします。Excel を使用すると、このファイルの情報を表示できます。
 - アラートの受信者のメール アドレス (アラートに含まれる唯一の個人データ) をエクスポートするには、「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」の手順に従います。それから、**[エクスポート]** を選択して、この受信者を含むアラートの Excel リストをダウンロードします。
 - Power BI からユーザー名をエクスポートする場合。[[Engagement レポート]](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) に、ソーシャル メディア上のチーム パフォーマンスのレポートに含まれるユーザー名が表示されます。このデータをエクスポートするには、PowerBI ダッシュボード内のユーザーでフィルター処理するか、[[レポート]](https://docs.microsoft.com/power-bi/power-bi-report-add-filter) を選択し、[[データのエクスポート]](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data) を選択します。
 
