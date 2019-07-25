@@ -13,14 +13,72 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップ展開センターの概要。
-ms.openlocfilehash: 659ea39fc4ccd1c06d79c8a5c39ff2c4e85ba9ce
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: b19c2f5df6368fd6066b6506a17ed81ddf57f8c6
+ms.sourcegitcommit: 275d5c2d74e55ef6488594165367b02e735dc540
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814648"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834030"
 ---
-# <a name="desktop-deployment-center"></a>デスクトップ展開センター
+# <a name="desktop-deployment-center"></a>最新デスクトップ展開センターをご覧いただき
+
+<table border="0">
+ <tr>
+ <td>
+  <strong>Windows 7 から Windows 10 にアップグレードする</strong><p>2020 年 1 月 14 日に Windows 7 の延長サポートが終了します。 Windows 7 から Windows 10 へのインプレース アップグレードが、最速の展開方法です。 ユーザーは<a href="https://docs.microsoft.com/ja-JP/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">単一の PC をアップグレードしたり</a>、System Center Configuration Manager を使用して<a href="https://docs.microsoft.com/ja-JP/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">数千の PC をアップグレードしたりできます</a>。 インプレース アップグレードを使用するアプリの配信、ファイルの移行、カスタム イメージング、またはクラウドベースのサービスの有効化だけにこだわる必要はありません。 既存の PC をアップグレードする既存のツールを使用して、次のアップグレード用の展開手順に頼ることができます。 </td>
+ </tr>
+ <tr>
+ <td>
+    <table border="0">
+     <tr>
+     <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="144" width="144" />
+              </td>
+              <td>
+              <strong>ConfigMgr を Current Branch にアップグレードする</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
+              </td>
+              <td>
+              <strong>デバイスとアプリの準備を確認する</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
+              </td>
+              <td>
+              <strong>Windows 7 PC を Windows 10 にアップグレードする</strong>
+                  </td>
+                 </tr>
+                </table>
+        </td>
+        </tr>
+    </td>
+    </tr>
+    <tr>
+    <td>
+SCCM を使用して組織のディレクトリとネットワークの一部を準備する手順 </td>
+    <td>
+デバイスとアプリの一部を準備する手順。Desktop App Assure を介してヘルプを入手できます </td>
+    <td>
+ユーザーにより保持されている PC の OS の展開および機能の更新プログラムの手順 </td>
+    </tr>
+</table>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
