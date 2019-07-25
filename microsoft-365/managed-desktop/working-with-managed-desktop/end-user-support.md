@@ -3,16 +3,16 @@ title: Microsoft マネージドデスクトップのサポートを受ける
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a073a5dfe61b036cbdc3bf9b0be08bc559acb548
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 1e98ef5a7c800ed3fb7fe1b7355e535ed3576c1e
+ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970474"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853166"
 ---
 # <a name="getting-help-for-end-users"></a>エンドユーザーのヘルプを取得する
 
@@ -41,7 +41,7 @@ Microsoft マネージドデスクトップデバイスを使用しているエ�
 - オーストラリア: + 61 180 037 0619
 
 >[!NOTE]
->を呼び出すときに、デバイスのシリアル番号を準備しておいてください。 
+>お客様の id を確認するために、を呼び出したときに、組織のメールアドレスを準備してください。 
 
 ## <a name="additional-resources"></a>その他の技術情報
 - [Microsoft マネージドデスクトップの管理者サポート](admin-support.md)。 
