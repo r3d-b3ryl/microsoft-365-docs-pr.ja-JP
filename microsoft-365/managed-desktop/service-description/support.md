@@ -3,16 +3,16 @@ title: Microsoft マネージドデスクトップのサポート
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 83f4d8b6fb9f2938151db8dfea37b3c9f18124c9
+ms.sourcegitcommit: 8f57be80955cd374d418c7e1a78849ff3e1d630f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970464"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907548"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのサポート
 
@@ -25,15 +25,15 @@ Microsoft は、予防的でリアクティブなインシデント管理を行�
 
 ## <a name="whats-included"></a>含まれているもの
 
-Microsoft マネージドデスクトップのサポート:
+Microsoft マネージドデスクトップのサポートは次のとおりです。
 
-- Microsoft マネージドデスクトップデバイス専用のサポートエンジニアのチームを提供します。
-- Microsoft マネージドデスクトップデバイスおよびそれらのデバイスに割り当てられているエンドユーザーをサポートします。
-- Microsoft マネージドデスクトップデバイスを管理するための Microsoft マネージドデスクトップデバイスへの限定的な管理アクセス権を付与します。 
+- Microsoft マネージドデスクトップデバイス専用のエンジニアチーム
+- Microsoft マネージドデスクトップデバイスを使用するエンドユーザー向けのサポートオプション
+- Microsoft マネージドデスクトップデバイスを管理するエンジニアに対して、Microsoft マネージドデスクトップデバイスへの限定的な管理アクセス権を付与します。 
 
 サポートされる製品:
 
-- Windows 10 と Windows Defender Advanced Threat Protection (WDATP) 
+- Microsoft Defender Advanced Threat Protection を使用した Windows 10 
 - Office 365 スイートのサブセット: Outlook、Word、PowerPoint、Excel、Skype for Business クライアント、Microsoft Teams 
 - ビジネス向け Microsoft Store 
 - OneDrive for Business クライアント 
@@ -43,7 +43,7 @@ Microsoft マネージドデスクトップのサポート:
 - 現行: 北アメリカ、カナダ (ケベックを除く)、英国、およびオーストラリアのみ (24 時間) 
 - 英語は、お客様との電話およびチャットの会話でサポートされている唯一の言語です。 
 - 弊社は、会社のヘルプデスクをリプレースするのではなく、提携しています。基幹業務 (LOB) アプリ、ネットワークリソースなどは、引き続きヘルプデスクで処理されます。 
-- テストグループと Microsoft が管理されていないデスクトップデバイスにある Microsoft 管理デバイスが範囲外です 
+- テストグループと Microsoft が管理されていないデスクトップデバイスにある microsoft 管理デバイスが範囲外です 
 
 
 ## <a name="related-topics"></a>関連項目
