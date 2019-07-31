@@ -3,20 +3,20 @@ title: Microsoft 365 Enterprise の概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2019
-ms.audience: ITPro
+ms.date: 07/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553336"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937425"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
 
@@ -30,9 +30,9 @@ Microsoft 365 Enterprise は次の要素で構成されています。
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | Office 365 ProPlus、PC と Mac 用の最新の Office アプリ (Word、Excel、PowerPoint、Outlook など)、および電子メール、ファイルの保存とコラボレーション、会議などに使用できるオンラインサービスの完全なスイートが含まれています。 |
+| ローカルおよびクラウドベースのアプリと生産性サービス | Office 365 ProPlus、PC と Mac 用の最新の Office アプリ (Word、Excel、PowerPoint、Outlook など)、および電子メール、ファイルの保存とコラボレーション、会議などに使用できるオンラインサービスの完全なスイートが含まれています。 |
 | Windows 10 Enterprise | 大規模および中規模の組織のニーズに対応しており、包括的な展開、デバイス、およびアプリの管理を使用して、最も生産性の高い、セキュリティで保護されたバージョンの Windows および IT プロフェッショナルをユーザーに提供します。 |
-| Enterprise Mobility + Security (EMS) | Microsoft Intune が含まれています。これは、クラウドベースの enterprise mobility management (EMM) サービスであり、企業データを保護したまま、従業員の生産性を向上させるのに役立てることができます。 |
+| デバイス管理と高度なセキュリティサービス | Microsoft Intune が含まれています。これは、クラウドベースの enterprise mobility management (EMM) サービスであり、企業データを保護したまま、従業員の生産性を向上させるのに役立てることができます。 |
 |||
 
 ## <a name="plans"></a>プラン
@@ -41,10 +41,17 @@ Microsoft 365 Enterprise は、3つのプランで利用できます。
 
 |||
 |:-------|:-----|
-| E3 | Office 365 Enterprise、Windows 10 Enterprise、Enterprise Mobility + Security (EMS) が含まれています。 |
-| E5 | E3's のすべての機能に加え、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。 |
-| F1 | この目的は、第一線ワーカーを最高の作業を行うために必要なツールやリソースに接続するために作成されています。 Firstline ワーカーは、お客様と協力して会社のブランドと価値を表す最初の行です。 |
+| E3 | Microsoft 365 内のコア製品と機能にアクセスして、職場の生産性を向上させ、技術革新を促進します。 |
+| E5 | 高度な脅威保護、セキュリティ、コラボレーションツールなど、Microsoft 365 内の最新の製品と機能にアクセスします。 E3's のすべての機能に加え、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。 |
+| F1 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
 |||
+
+Microsoft 365 Enteprise E3 を使用している場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。
+
+- Identity & 脅威保護
+- 情報保護 & コンプライアンス
+
+これらのオファーリングには、Microsoft 365 Enterprise E5 に含まれている追加機能が含まれています。
 
 詳細については、「[各プランの特徴と機能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
 
@@ -52,7 +59,7 @@ Microsoft 365 Enterprise は、3つのプランで利用できます。
 
 [Microsoft 365 Enterprise ポスター](http://aka.ms/m365eposter)は、次のものを一元的に表示する場所です。
 
-- Microsoft 365 Enterprise の製品と機能、およびその価値の柱へのマッピング方法
+- Microsoft 365 Enterprise の利点とその価値の柱へのマッピング方法
 - Microsoft 365 Enterprise プランと、それらに含まれるコンポーネント 
 - Microsoft 365 Enterprise が有効になっているモダンワークプレースの主要なコンポーネント
 - Microsoft 365 Enterprise の主要なビジネス価値シナリオと、それらのサービスおよび製品が発生すること
@@ -103,6 +110,7 @@ Microsoft 365 Enterprise の製品、機能、およびコンポーネントを�
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| ご自分のトレーニングを受けて、Microsoft 365 認定に向けて作業を行います。 <BR> 最初に、 [Microsoft 365 の基本事項](https://docs.microsoft.com/learn/paths/m365-fundamentals/)についてご解説します。
+|||
 
 
 ## <a name="next-step"></a>次の手順
