@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5e842849afbedd506689caa9ffc0953a58e18fed
+ms.sourcegitcommit: f5c9aff5700f7824bf71f4a7e8c7236f7d91043e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390424"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36059587"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>アプリを Microsoft マネージドデスクトップデバイスに展開する
 Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft マネージドデスクトップポータルを使用している場合は、アプリを追加して展開することができます。 
@@ -41,9 +41,9 @@ Microsoft マネージドデスクトップポータルにサインインする�
 1.  [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。 
 2.  [**インベントリ**] で、[**アプリ**] を選択します。
 3.  [アプリのワークロード] で、[**追加**] を選択します。
-4.  [**アプリの追加**] で、[**基幹業務アプリ**] または [ **Windows アプリ (Win32)-プレビュー**] を選択します。
+4.  [**アプリの追加**] で、[**基幹業務アプリ**] または [ **Windows アプリ (Win32)**] を選択します。
     - 基幹**業務アプリ**を選択した場合は、基幹業務アプリを追加して構成する手順については、「 [Windows の基幹業務アプリを Microsoft Intune に追加](https://docs.microsoft.com/intune/lob-apps-windows)する」を参照してください。
-    - **Windows アプリ (Win32) プレビュー**を選択した場合は、「 [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) 」を参照してください。 windows アプリを追加および構成する方法について説明します。
+    - **Windows アプリ (win32)** を選択した場合は、「 [win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) 」を参照してください。 windows アプリの追加および構成に関する指示については、を参照してください。
 
 <span id="msfb-apps">
 
