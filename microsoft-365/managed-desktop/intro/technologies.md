@@ -5,14 +5,13 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 914a90b4267132c9cb942740ceb974b084bcdf82
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 9f3094b1a1272b0c200271b8d5703fe7173683a6
+ms.sourcegitcommit: 6b5370cded5d8259c9ed561eed324227f74c410b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778092"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36171737"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージドデスクトップテクノロジ
 
@@ -23,31 +22,28 @@ ms.locfileid: "35778092"
 
 Microsoft 365 Enterprise ライセンスは、Microsoft が管理するすべてのデスクトップユーザーに必要です。 サービスのライセンス要件の詳細については、「 [Microsoft マネージドデスクトップの前提条件](../get-ready/prerequisites.md)」を参照してください。
 
-必要なエンタープライズライセンスに含まれるすべてのコンポーネントと、サービスが Microsoft マネージドデスクトップデバイスで各コンポーネントを使用する方法を以下に示します。 各領域の特定の役割と責任は、「Microsoft Managed Desktop」のトピック全体で詳細に説明します。 
+このトピックでは、必要なエンタープライズライセンスに含まれるコンポーネントの概要と、サービスが Microsoft マネージドデスクトップデバイスで各コンポーネントを使用する方法について説明します。 各分野の特定の役割と責任は、Microsoft マネージドデスクトップドキュメント全体で詳細に説明されています。 
 
 ## <a name="office-365-e3"></a>Office 365 E3
  |
  --- | ---
-Office 365 Standard Suite (64 ビット) * | 標準の Office スイートアプリケーションは、デバイス (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote) に同梱されています。<br><br>C2R (64 ビット) をクリックして実行する () フルバージョンの Microsoft Project と Microsoft Visio は Office 365 Standard スイートに含まれていません。  ただし、これらのアプリケーションのインストールは標準の Office スイートのインストールに依存しているため、Microsoft マネージドデスクトップでは、これらのアプリケーションを展開するために使用する既定の Intune 展開およびセキュリティグループが作成されています。ライセンスされたエンドユーザー。  
-ストアアプリ |    Microsoft Sway、Power BI Desktop はデバイスと共には同梱されていません。 これらのアプリは Microsoft ストアからダウンロードできます。
-Win32 アプリケーション |    Power BI Pro、Azure Information Protection クライアント、および Microsoft Planner はデバイスに同梱されておらず、お客様が展開用にパッケージ化することもできます。 
-Web アプリケーション |  Yammer、browser 内の Office、Delve、Flow、StaffHub、PowerApps は、デバイスに同梱されていません。 ユーザーは、ブラウザーを使用して、これらのアプリケーションの web バージョンにアクセスできます。
-Skype for Business Online クラウド PBX | この機能は、Office 365 で利用できます。 Microsoft マネージドデスクトップでは、このサービスの一部は構成されません。
+Office 365 standard suite (64 ビット) | 標準の Office スイートアプリケーションは、デバイス (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote) に同梱されています。<br><br>C2R (Microsoft Project の完全バージョン) および Microsoft Visio が Office 365 に含まれていない場合は、64ビット版をクリックして実行します。 ただし、これらのアプリケーションのインストールは標準の Office スイートのインストールに依存しているため、Microsoft マネージドデスクトップでは、これらのアプリケーションを展開するために使用できる既定の Microsoft Intune 展開およびセキュリティグループが作成されています。ライセンスされたエンドユーザー。 詳細については、「microsoft [Project または Microsoft Visio を Microsoft マネージドデスクトップデバイスにインストール](../get-started/project-visio.md)する」を参照してください。  
+ストアアプリ |    Microsoft Sway と Power BI は、デバイスに同梱されていません。 これらのアプリは Microsoft ストアからダウンロードできます。
+Win32 アプリケーション |    Teams はデバイスに同梱されていませんが、microsoft マネージドデスクトップデバイス用にパッケージ化され、Microsoft によって提供されています。 Azure Information Protection クライアントはデバイスに同梱されていませんが、展開用にパッケージ化することができます。 
+Web アプリケーション |  Yammer、browser 内の Office、Delve、Flow、StaffHub、PowerApps、および Planner は、デバイスに同梱されていません。 ユーザーは、ブラウザーを使用して、これらのアプリケーションの web バージョンにアクセスできます。
+
 
 ## <a name="windows-10-enterprise-e5"></a>Windows 10 Enterprise E5
 
  |
  --- | ---
-Credential Guard |  Microsoft は、この機能のガイダンスを提供し、クラウドの側面を管理します。
-Application Virtualization (App-v) |    Microsoft マネージドデスクトップでは、この種類の展開は Intune ではサポートされていないため、サポートされていません。
-User Experience Virtualization (UE-V) | これは、Microsoft マネージドデスクトップで管理されているデバイスでは使用されません。
-管理対象ユーザーの環境  | これは、Microsoft マネージドデスクトップで管理されているデバイスでは使用されません。 MDM は、デバイス管理のソリューションとして使用されます。
-Microsoft Defender Advanced Threat Protection | これは、デバイスのセキュリティポリシーを管理するために Microsoft マネージドデスクトップによって使用されます。 
+Application Virtualization (App-v) |    Microsoft マネージドデスクトップでは、Microsoft Intune でサポートされていないため、この種類の展開はサポートされていません。
+Microsoft Defender Advanced Threat Protection |  Microsoft マネージドデスクトップは、これを使用してデバイスのセキュリティを監視します。 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
  |
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Enterprise Mobility + Security E3 および AADP のすべての側面を使用して MDM デバイスを管理できます。
-Microsoft Cloud App Security |  これは、お客様が Microsoft Managed Desktop service で使用できるオプションの機能です。
-Azure Information Protection P2  |これは、お客様が Microsoft Managed Desktop service で使用できるオプションの機能です。
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Enterprise Mobility + Security E3 および Azure Active Directory Premium P2 のすべての機能を使用して、MDM デバイスを管理できます。
+Microsoft Cloud App Security |  このオプション機能は、Microsoft マネージドデスクトップで使用できます。
+Azure Information Protection P2  | このオプション機能は、Microsoft マネージドデスクトップで使用できます。
