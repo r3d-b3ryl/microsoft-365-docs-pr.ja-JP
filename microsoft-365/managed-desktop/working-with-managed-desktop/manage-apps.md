@@ -1,69 +1,69 @@
 ---
 title: Microsoft マネージドデスクトップでのアプリの管理
 description: Microsoft マネージドデスクトップデバイスに展開されている基幹業務アプリを更新する方法に関する情報
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285947"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390734"
 ---
-# <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a><span data-ttu-id="e49e1-104">Microsoft マネージドデスクトップで基幹業務アプリを管理する</span><span class="sxs-lookup"><span data-stu-id="e49e1-104">Manage line-of-business apps in Microsoft Managed Desktop</span></span>
+# <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a><span data-ttu-id="e9230-104">Microsoft マネージドデスクトップで基幹業務アプリを管理する</span><span class="sxs-lookup"><span data-stu-id="e9230-104">Manage line-of-business apps in Microsoft Managed Desktop</span></span>
 
 <!--Application management -->
 
-<span data-ttu-id="e49e1-105">microsoft マネージドデスクトップに利用したアプリのアプリの更新を管理するには、いくつかの方法があります。また、microsoft マネージドデスクトップデバイスに展開されています。</span><span class="sxs-lookup"><span data-stu-id="e49e1-105">There are a couple of ways to manage app updates for apps that you've onboarded to Microsoft Managed Desktop and deployed to your Microsoft Managed Desktop devices.</span></span> <span data-ttu-id="e49e1-106">Microsoft 管理デスクトップポータルまたは Intune でアプリの更新を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="e49e1-106">You can make app updates in Microsoft Managed Desktop portal, or Intune.</span></span> 
+<span data-ttu-id="e9230-105">Microsoft マネージドデスクトップに利用したアプリのアプリの更新を管理するには、いくつかの方法があります。また、Microsoft マネージドデスクトップデバイスに展開されています。</span><span class="sxs-lookup"><span data-stu-id="e9230-105">There are a couple of ways to manage app updates for apps that you've onboarded to Microsoft Managed Desktop and deployed to your Microsoft Managed Desktop devices.</span></span> <span data-ttu-id="e9230-106">Microsoft 管理デスクトップポータルまたは Intune でアプリの更新を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="e9230-106">You can make app updates in Microsoft Managed Desktop portal, or Intune.</span></span> 
 
 <span id="update-app-mmd" />
 
-## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a><span data-ttu-id="e49e1-107">Microsoft マネージドデスクトップで基幹業務アプリを更新する</span><span class="sxs-lookup"><span data-stu-id="e49e1-107">Update line-of-business apps in Microsoft Managed Desktop</span></span>
+## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a><span data-ttu-id="e9230-107">Microsoft マネージドデスクトップで基幹業務アプリを更新する</span><span class="sxs-lookup"><span data-stu-id="e9230-107">Update line-of-business apps in Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="e49e1-108">**Microsoft マネージドデスクトップポータルで基幹業務アプリを更新するには**</span><span class="sxs-lookup"><span data-stu-id="e49e1-108">**To update your line-of-business apps in Microsoft Managed Desktop portal**</span></span>
-1. <span data-ttu-id="e49e1-109">[Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="e49e1-109">Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).</span></span>
-2. <span data-ttu-id="e49e1-110">[**インベントリ**] で、[**アプリ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-110">Under **Inventory**, select **Apps**.</span></span>  
-3. <span data-ttu-id="e49e1-111">更新するアプリを選択し、[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-111">Select the app you want to updates, and then select **Edit**.</span></span>
-4. <span data-ttu-id="e49e1-112">[**管理**] で、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-112">Under **Manage**, select **Properties**.</span></span> 
-5. <span data-ttu-id="e49e1-113">[**アプリパッケージファイル**] をクリックし、新しいアプリパッケージファイルを参照してアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e49e1-113">Click **App package file**, and then browse to upload a new app package file.</span></span>
-6. <span data-ttu-id="e49e1-114">[**アプリパッケージファイル**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-114">Select **App package file**.</span></span>
-7. <span data-ttu-id="e49e1-115">フォルダーアイコンを選択し、更新されたアプリファイルの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-115">Select the folder icon and browse to the location of your updated app file.</span></span> <span data-ttu-id="e49e1-116">[**開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-116">Select **Open**.</span></span> <span data-ttu-id="e49e1-117">アプリ情報がパッケージ情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="e49e1-117">The app information is updated with the package information.</span></span>
-8. <span data-ttu-id="e49e1-118">アプリの**バージョン**が更新されたアプリパッケージを反映していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-118">Verify that **App version** reflects the updated app package.</span></span> 
+<span data-ttu-id="e9230-108">**Microsoft マネージドデスクトップポータルで基幹業務アプリを更新するには**</span><span class="sxs-lookup"><span data-stu-id="e9230-108">**To update your line-of-business apps in Microsoft Managed Desktop portal**</span></span>
+1. <span data-ttu-id="e9230-109">[Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="e9230-109">Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).</span></span>
+2. <span data-ttu-id="e9230-110">[**インベントリ**] で、[**アプリ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-110">Under **Inventory**, select **Apps**.</span></span>  
+3. <span data-ttu-id="e9230-111">更新するアプリを選択し、[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-111">Select the app you want to updates, and then select **Edit**.</span></span>
+4. <span data-ttu-id="e9230-112">[**管理**] で、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-112">Under **Manage**, select **Properties**.</span></span> 
+5. <span data-ttu-id="e9230-113">[**アプリパッケージファイル**] をクリックし、新しいアプリパッケージファイルを参照してアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e9230-113">Click **App package file**, and then browse to upload a new app package file.</span></span>
+6. <span data-ttu-id="e9230-114">[**アプリパッケージファイル**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-114">Select **App package file**.</span></span>
+7. <span data-ttu-id="e9230-115">フォルダーアイコンを選択し、更新されたアプリファイルの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="e9230-115">Select the folder icon and browse to the location of your updated app file.</span></span> <span data-ttu-id="e9230-116">[**開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-116">Select **Open**.</span></span> <span data-ttu-id="e9230-117">アプリ情報がパッケージ情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="e9230-117">The app information is updated with the package information.</span></span>
+8. <span data-ttu-id="e9230-118">アプリの**バージョン**が更新されたアプリパッケージを反映していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e9230-118">Verify that **App version** reflects the updated app package.</span></span> 
 
-<span data-ttu-id="e49e1-119">更新したアプリは、ユーザーのデバイスに展開されます。</span><span class="sxs-lookup"><span data-stu-id="e49e1-119">The updated app will be deployed to your user's devices.</span></span>
+<span data-ttu-id="e9230-119">更新したアプリは、ユーザーのデバイスに展開されます。</span><span class="sxs-lookup"><span data-stu-id="e9230-119">The updated app will be deployed to your user's devices.</span></span>
 
 <span id="update-app-intune" />
 
-## <a name="update-line-of-business-apps-in-intune"></a><span data-ttu-id="e49e1-120">Intune で基幹業務アプリを更新する</span><span class="sxs-lookup"><span data-stu-id="e49e1-120">Update line-of-business apps in Intune</span></span>
+## <a name="update-line-of-business-apps-in-intune"></a><span data-ttu-id="e9230-120">Intune で基幹業務アプリを更新する</span><span class="sxs-lookup"><span data-stu-id="e9230-120">Update line-of-business apps in Intune</span></span>
 
-<span data-ttu-id="e49e1-121">**Intune で基幹業務アプリを更新するには**</span><span class="sxs-lookup"><span data-stu-id="e49e1-121">**To update your line-of-business apps in Intune**</span></span>
-1. <span data-ttu-id="e49e1-122">[Azure portal](https://azure.portal.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="e49e1-122">Sign in to [Azure portal](https://azure.portal.com).</span></span>
-2. <span data-ttu-id="e49e1-123">[**すべてのサービス** > ]**Intune**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-123">Select **All Services** > **Intune**.</span></span> <span data-ttu-id="e49e1-124">Intune は、[**監視 + 管理**] セクションにあります。</span><span class="sxs-lookup"><span data-stu-id="e49e1-124">Intune is in the **Monitoring + Management** section.</span></span>
-3. <span data-ttu-id="e49e1-125">[**クライアントアプリ > アプリ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-125">Select **Client Apps > Apps**.</span></span>
-4. <span data-ttu-id="e49e1-126">アプリの一覧でアプリを見つけて選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-126">Find and select your app in the list of apps.</span></span>
-5. <span data-ttu-id="e49e1-127">**概要**ブレードで、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-127">In the **Overview** blade, select **Properties**.</span></span>
-6. <span data-ttu-id="e49e1-128">[**アプリパッケージファイル**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-128">Select **App package file**.</span></span>
-7. <span data-ttu-id="e49e1-129">フォルダーアイコンを選択し、更新されたアプリファイルの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-129">Select the folder icon and browse to the location of your updated app file.</span></span> <span data-ttu-id="e49e1-130">[**開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-130">Select **Open**.</span></span> <span data-ttu-id="e49e1-131">アプリ情報がパッケージ情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="e49e1-131">The app information is updated with the package information.</span></span>
-8. <span data-ttu-id="e49e1-132">アプリの**バージョン**が更新されたアプリパッケージを反映していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-132">Verify that **App version** reflects the updated app package.</span></span>
+<span data-ttu-id="e9230-121">**Intune で基幹業務アプリを更新するには**</span><span class="sxs-lookup"><span data-stu-id="e9230-121">**To update your line-of-business apps in Intune**</span></span>
+1. <span data-ttu-id="e9230-122">[Azure portal](https://azure.portal.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="e9230-122">Sign in to [Azure portal](https://azure.portal.com).</span></span>
+2. <span data-ttu-id="e9230-123">[**すべてのサービス** > ]**Intune**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-123">Select **All Services** > **Intune**.</span></span> <span data-ttu-id="e9230-124">Intune は、[**監視 + 管理**] セクションにあります。</span><span class="sxs-lookup"><span data-stu-id="e9230-124">Intune is in the **Monitoring + Management** section.</span></span>
+3. <span data-ttu-id="e9230-125">[**クライアントアプリ > アプリ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-125">Select **Client Apps > Apps**.</span></span>
+4. <span data-ttu-id="e9230-126">アプリの一覧でアプリを見つけて選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-126">Find and select your app in the list of apps.</span></span>
+5. <span data-ttu-id="e9230-127">**概要**ブレードで、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-127">In the **Overview** blade, select **Properties**.</span></span>
+6. <span data-ttu-id="e9230-128">[**アプリパッケージファイル**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-128">Select **App package file**.</span></span>
+7. <span data-ttu-id="e9230-129">フォルダーアイコンを選択し、更新されたアプリファイルの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="e9230-129">Select the folder icon and browse to the location of your updated app file.</span></span> <span data-ttu-id="e9230-130">[**開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-130">Select **Open**.</span></span> <span data-ttu-id="e9230-131">アプリ情報がパッケージ情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="e9230-131">The app information is updated with the package information.</span></span>
+8. <span data-ttu-id="e9230-132">アプリの**バージョン**が更新されたアプリパッケージを反映していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e9230-132">Verify that **App version** reflects the updated app package.</span></span>
 
 <span id="roll-back-app-mmd" />
 
-## <a name="roll-back-an-app-to-a-previous-version"></a><span data-ttu-id="e49e1-133">アプリを以前のバージョンにロールバックする</span><span class="sxs-lookup"><span data-stu-id="e49e1-133">Roll back an app to a previous version</span></span>
+## <a name="roll-back-an-app-to-a-previous-version"></a><span data-ttu-id="e9230-133">アプリを以前のバージョンにロールバックする</span><span class="sxs-lookup"><span data-stu-id="e9230-133">Roll back an app to a previous version</span></span>
 
-<span data-ttu-id="e49e1-134">新しいバージョンのアプリを展開したときにエラーが検出された場合は、以前のバージョンにロールバックできます。</span><span class="sxs-lookup"><span data-stu-id="e49e1-134">If there's an error found when a new version of an app is deployed, you can roll back to a previous version.</span></span> <span data-ttu-id="e49e1-135">ここで説明するプロセスは、種類が**windows MSI 基幹業務アプリ**または windows アプリとしてリストされているアプリ **(Win 32) です。**</span><span class="sxs-lookup"><span data-stu-id="e49e1-135">The process outlined here is for apps where type is listed as **Windows MSI line-of-business app** or **Windows app (Win 32) - preview**</span></span>
+<span data-ttu-id="e9230-134">新しいバージョンのアプリを展開したときにエラーが検出された場合は、以前のバージョンにロールバックできます。</span><span class="sxs-lookup"><span data-stu-id="e9230-134">If there's an error found when a new version of an app is deployed, you can roll back to a previous version.</span></span> <span data-ttu-id="e9230-135">ここで説明するプロセスは、種類が**WINDOWS MSI 基幹業務アプリ**または windows アプリとしてリストされているアプリ **(Win 32) です。**</span><span class="sxs-lookup"><span data-stu-id="e9230-135">The process outlined here is for apps where type is listed as **Windows MSI line-of-business app** or **Windows app (Win 32) - preview**</span></span>
 
-<span data-ttu-id="e49e1-136">**基幹業務アプリを以前のバージョンにロールバックするには**</span><span class="sxs-lookup"><span data-stu-id="e49e1-136">**To roll back a line-of-business app to a previous version**</span></span>
+<span data-ttu-id="e9230-136">**基幹業務アプリを以前のバージョンにロールバックするには**</span><span class="sxs-lookup"><span data-stu-id="e9230-136">**To roll back a line-of-business app to a previous version**</span></span>
 
-1. <span data-ttu-id="e49e1-137">[Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="e49e1-137">Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).</span></span>
-2. <span data-ttu-id="e49e1-138">[**インベントリ**] で、[**アプリ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-138">Under **Inventory**, select **Apps**.</span></span>  
-3. <span data-ttu-id="e49e1-139">ロールバックする必要のあるアプリを選択し、[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-139">Select the app you need to roll back, and then select **Edit**.</span></span>
-4. <span data-ttu-id="e49e1-140">[**管理**] で、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-140">Under **Manage**, select **Properties**.</span></span> 
-    - <span data-ttu-id="e49e1-141">**Windows MSI 基幹業務アプリ**アプリの場合は、[**アプリ情報**] を選択し、[**アプリのバージョンを無視**する] で [**はい**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-141">For **Windows MSI line-of-business app** apps, select **App information**, and then under **Ignore app version**, select **Yes**.</span></span>
-    - <span data-ttu-id="e49e1-142">**Windows アプリの場合 (Win 32)-** アプリのプレビューを表示するには、[**アプリ情報**] を選択し、[**検出ルール**] を選択してから [**追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-142">For **Windows app (Win 32) - preview** apps, select **App information**, select **Detection rules**, and then select **Add**.</span></span> 
-    <span data-ttu-id="e49e1-143">msi ルールがある場合は、[ **msi 製品バージョン] チェック**が [**いいえ**] に設定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e49e1-143">If there is an MSI rule, verify that **MSI product version check** is set to **No**.</span></span>
-5. <span data-ttu-id="e49e1-144">[以前のバージョンのアプリソースファイル](../get-started/deploy-apps.md)を Microsoft Managed Desktop 管理ポータルにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e49e1-144">[Upload a previous version of the app source file](../get-started/deploy-apps.md) to Microsoft Managed Desktop Admin portal.</span></span>  
+1. <span data-ttu-id="e9230-137">[Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="e9230-137">Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).</span></span>
+2. <span data-ttu-id="e9230-138">[**インベントリ**] で、[**アプリ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-138">Under **Inventory**, select **Apps**.</span></span>  
+3. <span data-ttu-id="e9230-139">ロールバックする必要のあるアプリを選択し、[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-139">Select the app you need to roll back, and then select **Edit**.</span></span>
+4. <span data-ttu-id="e9230-140">[**管理**] で、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-140">Under **Manage**, select **Properties**.</span></span> 
+    - <span data-ttu-id="e9230-141">**WINDOWS MSI 基幹業務アプリ**アプリの場合は、[**アプリ情報**] を選択し、[**アプリのバージョンを無視**する] で [**はい**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-141">For **Windows MSI line-of-business app** apps, select **App information**, and then under **Ignore app version**, select **Yes**.</span></span>
+    - <span data-ttu-id="e9230-142">**Windows アプリの場合 (Win 32)-** アプリのプレビューを表示するには、[**アプリ情報**] を選択し、[**検出ルール**] を選択してから [**追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9230-142">For **Windows app (Win 32) - preview** apps, select **App information**, select **Detection rules**, and then select **Add**.</span></span> 
+    <span data-ttu-id="e9230-143">MSI ルールがある場合は、[ **msi 製品バージョン] チェック**が [**いいえ**] に設定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e9230-143">If there is an MSI rule, verify that **MSI product version check** is set to **No**.</span></span>
+5. <span data-ttu-id="e9230-144">[以前のバージョンのアプリソースファイル](../get-started/deploy-apps.md)を Microsoft Managed Desktop 管理ポータルにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e9230-144">[Upload a previous version of the app source file](../get-started/deploy-apps.md) to Microsoft Managed Desktop Admin portal.</span></span>  
 

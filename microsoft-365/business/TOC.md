@@ -15,9 +15,10 @@
 ## ユーザーデバイスのセットアップ
 ### [モバイルデバイスをセットアップする](set-up-mobile-devices.md)
 ### [Windows デバイスをセットアップする](set-up-windows-devices.md)
-## [セキュリティ保護](security-features.md)
-### [ビジネスをセキュリティで保護する](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
-### [高度なセキュリティ機能をセットアップする](set-up-advanced-security.md)
+## [ビジネスをセキュリティで保護する](security-features.md)
+### [脅威保護を強化する](increase-threat-protection.md)
+### [条件付きアクセスの概要](set-up-conditional-access-policies.md)
+### [コンプライアンス機能を設定する](set-up-compliance.md)
 ## ユーザーを管理する
 ### [ユーザーを追加する](add-users-m365b.md)
 ### [従業員を削除する](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

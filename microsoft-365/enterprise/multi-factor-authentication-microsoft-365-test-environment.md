@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,100 +13,100 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 エンタープライズテスト環境でスマートフォンに送信されるテキストメッセージを使用して、多要素認証を構成します。
-ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353179"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074217"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="52568-103">Microsoft 365 Enterprise テスト環境用の多要素認証</span><span class="sxs-lookup"><span data-stu-id="52568-103">Multi-factor authentication for your Microsoft 365 Enterprise test environment</span></span>
+# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="40b28-103">Microsoft 365 Enterprise テスト環境用の多要素認証</span><span class="sxs-lookup"><span data-stu-id="40b28-103">Multi-factor authentication for your Microsoft 365 Enterprise test environment</span></span>
 
-<span data-ttu-id="52568-104">Office 365 へのサインイン、または組織に対して azure AD テナントを使用するサービスまたはアプリケーションに対して追加のセキュリティレベルを設定するには、azure 多要素認証を有効にします。これには、ユーザー名とパスワードだけを使用して確認することができます。分割払.</span><span class="sxs-lookup"><span data-stu-id="52568-104">For an additional level of security for signing in to Office 365 or any service or application that uses the Azure AD tenant for your organization, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account.</span></span> <span data-ttu-id="52568-105">多要素認証では、ユーザーは電話での通話を承認する必要があり、テキストメッセージで送信された検証コードを入力するか、またはパスワードを正しく入力した後にスマートフォンでアプリパスワードを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="52568-105">With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords.</span></span> <span data-ttu-id="52568-106">この第 2 の認証要素が満たされた後でのみ、ユーザーはサインインできます。</span><span class="sxs-lookup"><span data-stu-id="52568-106">They can sign in only after this second authentication factor has been satisfied.</span></span> 
+<span data-ttu-id="40b28-104">Office 365 へのサインイン、または組織に対して Azure AD テナントを使用するサービスまたはアプリケーションに対して追加のセキュリティレベルを設定するには、Azure 多要素認証を有効にします。これには、ユーザー名とパスワードだけを使用して確認することができます。分割払.</span><span class="sxs-lookup"><span data-stu-id="40b28-104">For an additional level of security for signing in to Office 365 or any service or application that uses the Azure AD tenant for your organization, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account.</span></span> <span data-ttu-id="40b28-105">多要素認証では、ユーザーは電話での通話を承認する必要があり、テキストメッセージで送信された検証コードを入力するか、またはパスワードを正しく入力した後にスマートフォンでアプリパスワードを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="40b28-105">With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords.</span></span> <span data-ttu-id="40b28-106">この第 2 の認証要素が満たされた後でのみ、ユーザーはサインインできます。</span><span class="sxs-lookup"><span data-stu-id="40b28-106">They can sign in only after this second authentication factor has been satisfied.</span></span> 
   
-<span data-ttu-id="52568-107">この記事では、特定のアカウントに対してテキストメッセージベースの認証を有効にし、テストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="52568-107">This article describes how to enable and test text message-based authentication for a specific account.</span></span>
+<span data-ttu-id="40b28-107">この記事では、特定のアカウントに対してテキストメッセージベースの認証を有効にし、テストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="40b28-107">This article describes how to enable and test text message-based authentication for a specific account.</span></span>
   
-<span data-ttu-id="52568-108">Microsoft 365 エンタープライズテスト環境のアカウントに対して多要素認証をセットアップするには、次の2つのフェーズがあります。</span><span class="sxs-lookup"><span data-stu-id="52568-108">There are two phases to setting up multi-factor authentication for an account in your Microsoft 365 Enterprise test environment:</span></span>
+<span data-ttu-id="40b28-108">Microsoft 365 エンタープライズテスト環境のアカウントに対して多要素認証をセットアップするには、次の2つのフェーズがあります。</span><span class="sxs-lookup"><span data-stu-id="40b28-108">There are two phases to setting up multi-factor authentication for an account in your Microsoft 365 Enterprise test environment:</span></span>
   
-1. <span data-ttu-id="52568-109">Microsoft 365 Enterprise のテスト環境を作成します。</span><span class="sxs-lookup"><span data-stu-id="52568-109">Create the Microsoft 365 Enterprise test environment.</span></span>
+1. <span data-ttu-id="40b28-109">Microsoft 365 Enterprise のテスト環境を作成します。</span><span class="sxs-lookup"><span data-stu-id="40b28-109">Create the Microsoft 365 Enterprise test environment.</span></span>
     
-2. <span data-ttu-id="52568-110">User 2 アカウントに対して、多要素認証を有効にしてテストします。</span><span class="sxs-lookup"><span data-stu-id="52568-110">Enable and test multi-factor authentication for the User 2 account.</span></span>
+2. <span data-ttu-id="40b28-110">User 2 アカウントに対して、多要素認証を有効にしてテストします。</span><span class="sxs-lookup"><span data-stu-id="40b28-110">Enable and test multi-factor authentication for the User 2 account.</span></span>
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> <span data-ttu-id="52568-112">[ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。</span><span class="sxs-lookup"><span data-stu-id="52568-112">Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
+> <span data-ttu-id="40b28-112">[ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。</span><span class="sxs-lookup"><span data-stu-id="40b28-112">Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="52568-113">フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="52568-113">Phase 1: Build out your Microsoft 365 Enterprise test environment</span></span>
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="40b28-113">フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="40b28-113">Phase 1: Build out your Microsoft 365 Enterprise test environment</span></span>
 
-<span data-ttu-id="52568-114">最小要件での軽量な方法で多要素認証をテストする場合は、「[ライトウェイトの基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="52568-114">If you just want to test multi-factor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
+<span data-ttu-id="40b28-114">最小要件での軽量な方法で多要素認証をテストする場合は、「[ライトウェイトの基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="40b28-114">If you just want to test multi-factor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
   
-<span data-ttu-id="52568-115">シミュレートされたエンタープライズで多要素認証をテストする場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="52568-115">If you want to test multi-factor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).</span></span>
+<span data-ttu-id="40b28-115">シミュレートされたエンタープライズで多要素認証をテストする場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="40b28-115">If you want to test multi-factor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="52568-116">多要素認証をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。</span><span class="sxs-lookup"><span data-stu-id="52568-116">Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="52568-117">この指示は、一般的な組織と類似した環境で多要素認証をテストしてお試しいただけるようオプションとしてここで提供しています。</span><span class="sxs-lookup"><span data-stu-id="52568-117">It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization.</span></span> 
+> <span data-ttu-id="40b28-116">多要素認証をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。</span><span class="sxs-lookup"><span data-stu-id="40b28-116">Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="40b28-117">この指示は、一般的な組織と類似した環境で多要素認証をテストしてお試しいただけるようオプションとしてここで提供しています。</span><span class="sxs-lookup"><span data-stu-id="40b28-117">It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization.</span></span> 
   
-## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a><span data-ttu-id="52568-118">フェーズ 2:User 2 アカウントに対して、多要素認証を有効にしてテストする</span><span class="sxs-lookup"><span data-stu-id="52568-118">Phase 2: Enable and test multi-factor authentication for the User 2 account</span></span>
+## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a><span data-ttu-id="40b28-118">フェーズ 2:User 2 アカウントに対して、多要素認証を有効にしてテストする</span><span class="sxs-lookup"><span data-stu-id="40b28-118">Phase 2: Enable and test multi-factor authentication for the User 2 account</span></span>
 
-<span data-ttu-id="52568-119">次の手順を実行して、User 2 アカウントに対して多要素認証を有効にしてテストします。</span><span class="sxs-lookup"><span data-stu-id="52568-119">Enable multi-factor authentication for the User 2 account with these steps:</span></span>
+<span data-ttu-id="40b28-119">次の手順を実行して、User 2 アカウントに対して多要素認証を有効にしてテストします。</span><span class="sxs-lookup"><span data-stu-id="40b28-119">Enable multi-factor authentication for the User 2 account with these steps:</span></span>
   
-1. <span data-ttu-id="52568-120">ブラウザーのプライベートインスタンスを個別に開き、Microsoft 365 管理センター ([https://portal.microsoft.com](https://portal.microsoft.com)) に移動して、全体管理者アカウントでサインインします。</span><span class="sxs-lookup"><span data-stu-id="52568-120">Open a separate, private instance of your browser, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)), and then sign in with your global administrator account.</span></span>
+1. <span data-ttu-id="40b28-120">ブラウザーのプライベートインスタンスを個別に開き、Microsoft 365 管理センター ([https://portal.microsoft.com](https://portal.microsoft.com)) に移動して、全体管理者アカウントでサインインします。</span><span class="sxs-lookup"><span data-stu-id="40b28-120">Open a separate, private instance of your browser, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)), and then sign in with your global administrator account.</span></span>
     
-2. <span data-ttu-id="52568-121">左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-121">In the left navigation, click **Users > Active users**.</span></span>
+2. <span data-ttu-id="40b28-121">左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-121">In the left navigation, click **Users > Active users**.</span></span>
     
-3. <span data-ttu-id="52568-122">[アクティブなユーザー] ウィンドウで、[**その他の > 多要素認証のセットアップ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-122">In the Active users pane, click **More > Multi-factor authentication setup**.</span></span>
+3. <span data-ttu-id="40b28-122">[アクティブなユーザー] ウィンドウで、[ **More > 多要素認証のセットアップ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-122">In the Active users pane, click **More > Multi-factor authentication setup**.</span></span>
     
-4. <span data-ttu-id="52568-123">リストで、 **User 2**アカウントを選択します。</span><span class="sxs-lookup"><span data-stu-id="52568-123">In the list, select the **User 2** account.</span></span>
+4. <span data-ttu-id="40b28-123">リストで、 **User 2**アカウントを選択します。</span><span class="sxs-lookup"><span data-stu-id="40b28-123">In the list, select the **User 2** account.</span></span>
     
-5. <span data-ttu-id="52568-124">**User 2** セクションで、**[クイック操作]** の **[有効にする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-124">In the **User 2** section, under **Quick steps**, click **Enable**.</span></span>
+5. <span data-ttu-id="40b28-124">**User 2** セクションで、**[クイック操作]** の **[有効にする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-124">In the **User 2** section, under **Quick steps**, click **Enable**.</span></span>
     
-6. <span data-ttu-id="52568-125">**[多要素認証を有効にする方法の概要]** ダイアログ ボックスで、**[Multi-Factor Auth を有効にする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-125">In the **About enabling multi-factor auth** dialog box, click **Enable multi-factor auth**.</span></span>
+6. <span data-ttu-id="40b28-125">**[多要素認証を有効にする方法の概要]** ダイアログ ボックスで、**[Multi-Factor Auth を有効にする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-125">In the **About enabling multi-factor auth** dialog box, click **Enable multi-factor auth**.</span></span>
     
-7. <span data-ttu-id="52568-126">[**更新が成功しまし**た] ダイアログボックスで、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-126">In the **Updates successful** dialog box, click **Close**.</span></span>
+7. <span data-ttu-id="40b28-126">[**更新が成功しまし**た] ダイアログボックスで、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-126">In the **Updates successful** dialog box, click **Close**.</span></span>
     
-8. <span data-ttu-id="52568-127">[ **Microsoft 365 管理センター** ] タブで、右上の [ユーザーアカウント] アイコンをクリックし、[**サインアウト**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-127">On the **Microsoft 365 admin center** tab, click the user account icon in the upper right, and then click **Sign out**.</span></span>
+8. <span data-ttu-id="40b28-127">[ **Microsoft 365 管理センター** ] タブで、右上の [ユーザーアカウント] アイコンをクリックし、[**サインアウト**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-127">On the **Microsoft 365 admin center** tab, click the user account icon in the upper right, and then click **Sign out**.</span></span>
     
-9. <span data-ttu-id="52568-128">ブラウザー インスタンスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="52568-128">Close your browser instance.</span></span>
+9. <span data-ttu-id="40b28-128">ブラウザー インスタンスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="40b28-128">Close your browser instance.</span></span>
    
-<span data-ttu-id="52568-129">次の手順を実行して、User 2 アカウントで確認のためにテキスト メッセージを使用するように構成を完了し、それをテストします。</span><span class="sxs-lookup"><span data-stu-id="52568-129">Complete the configuration for the User 2 account to use a text message for validation and test it with these steps:</span></span>
+<span data-ttu-id="40b28-129">次の手順を実行して、User 2 アカウントで確認のためにテキスト メッセージを使用するように構成を完了し、それをテストします。</span><span class="sxs-lookup"><span data-stu-id="40b28-129">Complete the configuration for the User 2 account to use a text message for validation and test it with these steps:</span></span>
   
-1. <span data-ttu-id="52568-130">ブラウザーの新しいプライベートインスタンスを開きます。</span><span class="sxs-lookup"><span data-stu-id="52568-130">Open a new, private instance of your browser.</span></span>
+1. <span data-ttu-id="40b28-130">ブラウザーの新しいプライベートインスタンスを開きます。</span><span class="sxs-lookup"><span data-stu-id="40b28-130">Open a new, private instance of your browser.</span></span>
     
-2. <span data-ttu-id="52568-131">Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、User 2 のアカウント名とパスワードを使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="52568-131">Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in with the User 2 account name and password.</span></span>
+2. <span data-ttu-id="40b28-131">Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、User 2 のアカウント名とパスワードを使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="40b28-131">Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in with the User 2 account name and password.</span></span>
     
-3. <span data-ttu-id="52568-132">サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="52568-132">After signing in, you are prompted to set up the account for more information.</span></span> <span data-ttu-id="52568-133">[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-133">Click **Next**.</span></span>
+3. <span data-ttu-id="40b28-132">サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="40b28-132">After signing in, you are prompted to set up the account for more information.</span></span> <span data-ttu-id="40b28-133">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-133">Click **Next**.</span></span>
     
-4. <span data-ttu-id="52568-134">**[追加のセキュリティ確認]** ページで、次の手順を実行します。 </span><span class="sxs-lookup"><span data-stu-id="52568-134">On the **Additional security verification** page:</span></span>
+4. <span data-ttu-id="40b28-134">**[追加のセキュリティ確認]** ページで、次の手順を実行します。 </span><span class="sxs-lookup"><span data-stu-id="40b28-134">On the **Additional security verification** page:</span></span>
     
-   - <span data-ttu-id="52568-135">国または地域を選択します。</span><span class="sxs-lookup"><span data-stu-id="52568-135">Select your country or region.</span></span>
+   - <span data-ttu-id="40b28-135">国または地域を選択します。</span><span class="sxs-lookup"><span data-stu-id="40b28-135">Select your country or region.</span></span>
     
-   - <span data-ttu-id="52568-136">テキスト メッセージを受信するスマート フォンの電話番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="52568-136">Type phone number of the smart phone that will receive text messages.</span></span>
+   - <span data-ttu-id="40b28-136">テキスト メッセージを受信するスマート フォンの電話番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="40b28-136">Type phone number of the smart phone that will receive text messages.</span></span>
     
-   - <span data-ttu-id="52568-137">[**メソッド**] の [**テキストメッセージでコードを送信する**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-137">In **Method**, click **Send me a code by text message**.</span></span>
+   - <span data-ttu-id="40b28-137">[**メソッド**] の [**テキストメッセージでコードを送信する**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-137">In **Method**, click **Send me a code by text message**.</span></span>
     
-5. <span data-ttu-id="52568-138">[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-138">Click **Next**.</span></span>
+5. <span data-ttu-id="40b28-138">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-138">Click **Next**.</span></span>
     
-6. <span data-ttu-id="52568-139">スマート フォンで受信したテキスト メッセージに記載されている確認コードを入力して、**[確認]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-139">Enter the verification code from the text message received on your smart phone, and then click **Verify**.</span></span>
+6. <span data-ttu-id="40b28-139">スマート フォンで受信したテキスト メッセージに記載されている確認コードを入力して、**[確認]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-139">Enter the verification code from the text message received on your smart phone, and then click **Verify**.</span></span>
     
-7. <span data-ttu-id="52568-140">**[手順 3: 既存のアプリケーションを使用し続ける]** ページで、User 2 アカウント用に表示されているアプリ パスワードを安全な場所に記録してから、**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52568-140">On the **Step 3: Keep your existing applications** page, record the displayed app password for the User 2 account in a secure location, and then click **Done**.</span></span>
+7. <span data-ttu-id="40b28-140">**[手順 3: 既存のアプリケーションを使用し続ける]** ページで、User 2 アカウント用に表示されているアプリ パスワードを安全な場所に記録してから、**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40b28-140">On the **Step 3: Keep your existing applications** page, record the displayed app password for the User 2 account in a secure location, and then click **Done**.</span></span>
     
-8. <span data-ttu-id="52568-p104">User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。元のパスワードと、新しいパスワードを 2 回入力して、**[パスワードを更新してサインイン]** をクリックします。新しいパスワードを安全な場所に記録します。</span><span class="sxs-lookup"><span data-stu-id="52568-p104">If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.</span></span>
+8. <span data-ttu-id="40b28-p104">User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。元のパスワードと、新しいパスワードを 2 回入力して、**[パスワードを更新してサインイン]** をクリックします。新しいパスワードを安全な場所に記録します。</span><span class="sxs-lookup"><span data-stu-id="40b28-p104">If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.</span></span>
     
-    <span data-ttu-id="52568-144">ブラウザーの [ **Microsoft office Home** ] タブに、ユーザー2の office ポータルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="52568-144">You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.</span></span>
+    <span data-ttu-id="40b28-144">ブラウザーの [ **Microsoft Office Home** ] タブに、ユーザー2の office ポータルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="40b28-144">You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.</span></span>
 
 
-<span data-ttu-id="52568-145">運用環境で多要素認証を展開するための情報とリンクについては、id フェーズで[多要素認証](identity-multi-factor-authentication.md#identity-mfa)手順を設定するを参照してください。</span><span class="sxs-lookup"><span data-stu-id="52568-145">See the [Set up multi-factor authentication](identity-multi-factor-authentication.md#identity-mfa) step in the Identity phase for information and links to deploy multi-factor authentication in production.</span></span>
+<span data-ttu-id="40b28-145">運用環境で多要素認証を展開するための情報とリンクについては、Id フェーズで[多要素認証](identity-multi-factor-authentication.md#identity-mfa)手順を設定するを参照してください。</span><span class="sxs-lookup"><span data-stu-id="40b28-145">See the [Set up multi-factor authentication](identity-multi-factor-authentication.md#identity-mfa) step in the Identity phase for information and links to deploy multi-factor authentication in production.</span></span>
     
-## <a name="next-step"></a><span data-ttu-id="52568-146">次の手順</span><span class="sxs-lookup"><span data-stu-id="52568-146">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="40b28-146">次の手順</span><span class="sxs-lookup"><span data-stu-id="40b28-146">Next step</span></span>
 
-<span data-ttu-id="52568-147">テスト環境の追加の [ID](m365-enterprise-test-lab-guides.md#identity) 機能について調べます。</span><span class="sxs-lookup"><span data-stu-id="52568-147">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
+<span data-ttu-id="40b28-147">テスト環境の追加の [ID](m365-enterprise-test-lab-guides.md#identity) 機能について調べます。</span><span class="sxs-lookup"><span data-stu-id="40b28-147">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="52568-148">関連項目</span><span class="sxs-lookup"><span data-stu-id="52568-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="40b28-148">関連項目</span><span class="sxs-lookup"><span data-stu-id="40b28-148">See also</span></span>
 
-[<span data-ttu-id="52568-149">フェーズ 2: ID</span><span class="sxs-lookup"><span data-stu-id="52568-149">Phase 2: Identity</span></span>](identity-infrastructure.md)
+[<span data-ttu-id="40b28-149">フェーズ 2: ID</span><span class="sxs-lookup"><span data-stu-id="40b28-149">Phase 2: Identity</span></span>](identity-infrastructure.md)
 
-[<span data-ttu-id="52568-150">Microsoft 365 Enterprise のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="52568-150">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="40b28-150">Microsoft 365 Enterprise のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="40b28-150">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
 
-[<span data-ttu-id="52568-151">Microsoft 365 Enterprise 展開</span><span class="sxs-lookup"><span data-stu-id="52568-151">Microsoft 365 Enterprise deployment</span></span>](deploy-microsoft-365-enterprise.md)
+[<span data-ttu-id="40b28-151">Microsoft 365 Enterprise を展開する</span><span class="sxs-lookup"><span data-stu-id="40b28-151">Microsoft 365 Enterprise deployment</span></span>](deploy-microsoft-365-enterprise.md)
 
-[<span data-ttu-id="52568-152">Microsoft 365 Enterprise のドキュメントとリソース</span><span class="sxs-lookup"><span data-stu-id="52568-152">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
+[<span data-ttu-id="40b28-152">Microsoft 365 Enterprise のドキュメントとリソース</span><span class="sxs-lookup"><span data-stu-id="40b28-152">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
