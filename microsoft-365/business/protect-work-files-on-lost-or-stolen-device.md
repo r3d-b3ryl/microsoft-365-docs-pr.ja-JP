@@ -3,7 +3,7 @@ title: モバイル デバイスの紛失または盗難時の作業ファイル
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4StolenDevice
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: ユーザーのデバイスが紛失したり盗難にあった場合に、作業ファイルを保護するために使用できる設定について説明します。
-ms.openlocfilehash: 1256f54b2ff626ea7b85d91020e355c8b611a8c0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 505b85dabfdd27a9da8b7bcfdf7741dbb22b0ba3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285352"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074452"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>モバイル デバイスの紛失または盗難時の作業ファイルの保護
 
@@ -39,7 +39,7 @@ ms.locfileid: "32285352"
   
 |||
 |:-----|:-----|
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |この日数後、非アクティブなデバイスから作業ファイルを削除する  <br/> |ここで指定した日数の間デバイスが使用されなかった場合、デバイスに保存されているすべての作業ファイルは自動的に削除されます。  <br/> |
 |ユーザーにすべての作業ファイルを OneDrive for Business に強制的に保存させる  <br/> |この設定を **オン**にすると、作業ファイルの使用可能な保存場所は OneDrive for Business のみになります。  <br/> |
 |作業ファイルの暗号化  <br/> |作業ファイルが暗号化によって保護されるように、この設定は常に **オン**にします。デバイスが紛失したり盗難された場合でも、企業データが読まれることはありません。  <br/> |

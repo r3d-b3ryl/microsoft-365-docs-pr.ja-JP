@@ -1,5 +1,5 @@
 ---
-title: 条件付きアクセスポリシーを設定する
+title: Microsoft 365 キャンペーンの条件付きアクセスポリシーを設定する
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,15 +19,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 Business の条件付きアクセスポリシーをセットアップする方法について説明します。
-ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+description: Microsoft 365 キャンペーンの条件付きアクセスポリシーを設定する方法について説明します。
+ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
+ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913008"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35076311"
 ---
-# <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Microsoft 365 Business の条件付きアクセスポリシーを設定する
+# <a name="set-up-conditional-access-policies"></a>条件付きアクセスポリシーを設定する
 
 [条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)ポリシー substancial 追加のセキュリティを追加します。 Microsoft は、すべてのお客様に推奨される基準条件付きアクセスポリシーのセットを提供しています。 ベースラインポリシーは、多くの一般的な攻撃から組織を保護するのに役立つ、定義済みのポリシーのセットです。 これらの一般的な攻撃には、パスワードのスプレー、リプレイ、フィッシングを含めることができます。
 

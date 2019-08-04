@@ -5,17 +5,18 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 59344a338e051b32225574c18609ffde09716c8c
-ms.sourcegitcommit: 83338be246ae104724d7f38af12fe7f6546fec27
+ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34933546"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830495"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft マネージドデスクトップサービスの説明
 
 Microsoft マネージドデスクトップは、セキュリティで保護された最新の機能をユーザーに提供するサービスで、次のように、常に最新バージョンの Windows 10 Enterprise edition、Office 365 ProPlus、および Microsoft セキュリティサービスを使用してデバイスを常に最新の状態に保ちます。
 
+- 新しいデバイスの簡単な登録
 - デバイスの構成
 - Microsoft のベストプラクティスに従って、Windows Hello、BitLocker、セキュア、および仮想化ベースのセキュリティを含む、ユーザーとデバイスのセキュリティを確保する機能
 - デバイスセキュリティの監視および修復サービス

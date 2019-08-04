@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 01/23/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基盤インフラストラクチャの各フェーズを展開するいくつかの方法を説明します。
-ms.openlocfilehash: fb4cf301f1e450cd5db9b392c0ca2d8e3767242a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2c30420390be97d33f66888eac533b89c907b3b2
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289564"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073887"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 Enterprise の基盤インフラストラクチャの展開戦略
 
@@ -87,7 +87,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 パイロット ユーザー エクスペリエンスの簡単な例:
 
 - 12 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
-- 3 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。 (Windows 10 Enterprise)
+- 3 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
 - 6 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
 - 9 月に、デバイス登録とアプリを取得し、条件付きアクセス ポリシーが適用されます。(モバイル デバイス管理)
 - 12 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
@@ -119,7 +119,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 パイロット ユーザー エクスペリエンスの簡単な例: 
 
 - 12 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
-- 2 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。 (Windows 10 Enterprise)
+- 2 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
 - 4 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
 - 6 月に、デバイス登録とアプリを取得し、条件付きアクセス ポリシーが適用されます。(モバイル デバイス管理)
 - 8 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)

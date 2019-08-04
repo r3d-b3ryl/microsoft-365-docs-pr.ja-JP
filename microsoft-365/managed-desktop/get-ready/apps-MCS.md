@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39a5102d045d9ed79b631a3b477bd1c72dea76de
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34918732"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425740"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Microsoft コンサルティングサービスを使用する
 
@@ -22,7 +22,7 @@ Microsoft コンサルティングサービス (MCS) と協力して、Microsoft
 MCS アプリパッケージを使用するには、**次の要素を提供する必要があり**ます。
 
 - ソースインストーラファイル (例: setup.exe または .msi)。
-- インストール手順で、最終的なインストール方法の詳細を指定します。 たとえば、アプリにデスクトップショートカットがあるかどうかを確認します。 アプリの可視性をどのようにする必要がありますか? アプリをサーバーに接続し、その場合はどうすればよいですか。 <!--For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). -->
+- インストール手順で、最終的なインストール方法の詳細を指定します。 たとえば、アプリにデスクトップショートカットがあるかどうかを確認します。 アプリの可視性をどのようにする必要がありますか? アプリをサーバーに接続し、その場合はどうすればよいですか。 詳細については、「[アプリケーションパッケージ要求テンプレート](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)」を参照してください。
 - アプリが環境内で必要なときに動作することを確認するために、独自の受け入れテストを実行する必要があります。
 
 **MCS は、次の操作を行います。**

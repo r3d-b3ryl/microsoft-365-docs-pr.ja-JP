@@ -1,18 +1,18 @@
 ---
 title: Microsoft マネージドデスクトップデバイスサービス
 description: このトピックでは、Microsoft マネージドデスクトップのデバイスサービスと制限の一覧を示します。
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 01e6edf99ff1aa59517f4f5c7d106cd8724fa04b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286174"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390654"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージドデスクトップデバイスサービス
 
@@ -20,12 +20,12 @@ ms.locfileid: "32286174"
 
 ## <a name="device-services"></a>デバイスサービス
 
-microsoft は、microsoft マネージドデスクトップデバイスにこれらのサービスを提供します。 microsoft マネージドデスクトッププログラムデバイスの詳細については、「 [microsoft managed desktop devices](device-list.md)」を参照してください。
+Microsoft は、Microsoft マネージドデスクトップデバイスにこれらのサービスを提供します。 Microsoft マネージドデスクトッププログラムデバイスの詳細については、「 [Microsoft Managed desktop devices](device-list.md)」を参照してください。
 
  | 
  --- | ---
 サポート | サポートエージェントは、デバイス機能に直接関連する質問に回答し、デバイスの問題を診断します。
-Inventory | すべてのデバイスは、Microsoft Managed Desktop Admin portal でインベントリおよび状態追跡用に追跡されます。
+インベントリ | すべてのデバイスは、Microsoft Managed Desktop Admin portal でインベントリおよび状態追跡用に追跡されます。
 ファームウェア/ドライバーの更新プログラム | ファームウェア/ドライバーの更新プログラムは、Microsoft による互換性を確保するために展開および監視されます。 
 備品 | デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条項は異なる場合があります。 デバイスを選択する際に選択した保証条件を参照してください。 
 デバイスのセットアップ    | デバイスは、現在のバージョンの Windows で事前構成され、クラウド経由でアプリと構成を受け取ります。 
@@ -44,5 +44,5 @@ Microsoft は、これらのアイテムにサービスを提供しません。
  | 
  --- | ---
 パーソナル | サービスで提供されているデバイスとアクセサリをカスタマイズすることはできません。 すべてのデバイスとアクセサリには、標準のブランド化、仕様、および色の組み合わせが用意されています。 アプリケーションの展開とポリシーの構成は、サービスとして処理されます。
-データの回復 | ユーザーおよびチームのデータ (個人用設定を含む) は、OneDrive for business に保存されます。これには、キャッシュデータのみがローカルに存在します。 データがデバイスの内部ストレージシステムに意図的に格納されている場合は、デバイスを Microsoft に返す前に、データの回復を実行して完了する必要があります。
+データの回復 | ユーザーおよびチームのデータ (個人用設定を含む) は、OneDrive for Business に保存されます。これには、キャッシュデータのみがローカルに存在します。 データがデバイスの内部ストレージシステムに意図的に格納されている場合は、デバイスを Microsoft に返す前に、データの回復を実行して完了する必要があります。
 デバイスのセットアップ | デバイスは顧客のアドレスに配信され、顧客が電源をオンにして設定する必要があります。

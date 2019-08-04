@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
+ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34079273"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100713"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのマップされたドライブの準備
 
@@ -25,7 +25,7 @@ ms.locfileid: "34079273"
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでのマップされたドライブ
  
-一部のユースケースでマップされたドライブを削除または置換できない場合は、microsoft マネージドデスクトップポータルでサポート要求を送信して、Microsoft Managed Desktop ユーザーに展開する必要があります。
+一部のユースケースでマップされたドライブを削除または置換できない場合は、microsoft Managed Desktop 管理ポータルでサポート要求を送信して、Microsoft Managed Desktop ユーザーに展開する必要があります。
     
 このような要求では、サポート要求に次の詳細情報を提供する必要があります。 
 
@@ -46,7 +46,7 @@ ms.locfileid: "34079273"
 マップされたドライブを使用しないようにして、サービスリクエストを提出する前に要件を慎重に確認してください。 その後、次の手順を実行します。
 
 1. [Microsoft マネージドデスクトップポータル](https://aka.ms/mmdportal)に移動します。  
-2. 「 **Support _GT_ support requests** 」セクションに「マップされたドライブの展開」というタイトルのサポート要求を送信し、必要なファイル共有の詳細をすべて提供します。  
-3. Microsoft マネージドデスクトップ操作では、要求が完了したときに、サポート要求の更新を使用してアドバイスします。 最初は、この構成はテスト展開グループのデバイスにのみ展開されます。  
-4. Microsoft Managed Desktop Operations team が展開した構成が期待どおりに動作するかどうかをテストし、確認する必要があります。 テストが完了したら、サポート要求を使用して Microsoft マネージドデスクトップの操作を更新します。  
-5. Microsoft Managed Desktop Operations team は、その構成を他の展開グループに展開します。 
+2. 「Support **> support requests** 」セクションから「マップされたドライブの展開」というタイトルのサポート要求を送信し、必要なファイル共有の詳細をすべて提供します。  
+3. Microsoft マネージドデスクトップ IT 操作は、要求が完了したときに、サポート要求の更新を使用してアドバイスします。 最初は、この構成はテスト展開グループのデバイスにのみ展開されます。  
+4. Microsoft マネージドデスクトップの IT 運用によって展開された構成が期待どおりに動作するかどうかをテストし、確認する必要があります。 テストが完了したら、サポート要求の [ディスカッション] タブを使用して、Microsoft Managed Desktop IT Operations に通知します。  
+5. Microsoft Managed Desktop IT 運用チームは、その構成を他の展開グループに展開します。 

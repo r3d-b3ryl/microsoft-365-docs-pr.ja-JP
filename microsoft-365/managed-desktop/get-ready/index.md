@@ -1,17 +1,17 @@
 ---
 title: Microsoft マネージドデスクトップでの登録準備をする
 description: ''
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 06/06/2018
-ms.openlocfilehash: 3de3621d8b2f132201af352756d9d2b63f7a2f51
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 68cf55e5528affef352f144384888c0cb01cfc88
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277484"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390544"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでの登録準備をする
 

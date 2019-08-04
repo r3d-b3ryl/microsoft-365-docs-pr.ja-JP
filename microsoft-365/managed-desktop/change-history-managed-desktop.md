@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
-ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
+ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
+ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605966"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795623"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージドデスクトップドキュメントの変更履歴
 
@@ -23,6 +23,9 @@ ms.locfileid: "35605966"
 新規または変更されたトピック | 説明
 --- | ---
 [Microsoft コンサルティングサービスを使用する](get-ready/apps-mcs.md) | 更新されたトピック
+[Microsoft マネージドデスクトップと ITIL](MMD-and-ITSM.md) | 新しいトピック
+[デバイス構成](service-description/device-policies.md) | 更新されたトピック
+
 
 ## <a name="june-2019"></a>2019年6月
 新規または変更されたトピック | 説明

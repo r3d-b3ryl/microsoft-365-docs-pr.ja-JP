@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 8/13/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Microsoft 365 Business の保護機能が Intune 設定にマップされる方法について説明します。 サブスクリプションでは、Intune の設定を変更するためのライセンスが提供されます。
-ms.openlocfilehash: ddd520cd059c84e5d64e967fe5631fe2f6bce0d4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a6aaf6cc06c31b870eb85582f5aa47699919d75d
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074262"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法
 
@@ -35,7 +35,7 @@ ms.locfileid: "32278557"
 
 次の表では、Android および iOS アプリケーションのポリシーの設定と Intune の設定の対応について詳しく説明します。
   
-intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、[**管理センター**]、[ **intune**] の順に移動します。
+Intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、[**管理センター**]、[ **intune**] の順に移動します。
   
  **重要:** Microsoft 365 Business サブスクリプションでは、すべての Intune 設定を変更するためのライセンスが提供されています。 [開始するには、「Intune の概要」を参照し](https://docs.microsoft.com/intune/introduction-intune)てください。
   
@@ -68,7 +68,7 @@ intune 設定を検索するには、Microsoft 365 Business 管理者の資格�
 
 次の表では、Windows 10 アプリケーションのポリシーの設定と Intune の設定の対応について詳しく説明します。
   
-intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、 [Azure portal](https://portal.azure.com)に移動し、[**その他のサービス**] を選択して、**フィルター**に intune を入力し、[ **intune App Protection** \> **] を選択します。アプリポリシー**。
+Intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、 [Azure portal](https://portal.azure.com)に移動し、[**その他のサービス**] を選択して、**フィルター**に Intune を入力し、[ **intune App Protection** \> **] を選択します。アプリポリシー**。
   
  **重要**: Microsoft 365 Business サブスクリプションで提供されるライセンスでは、Microsoft 365 Business で使用可能な設定に対応する Intune の設定のみを変更できます。 
   
@@ -88,7 +88,7 @@ intune 設定を検索するには、Microsoft 365 Business 管理者の資格�
 
 次の表では、Windows 10 デバイスの構成の設定と Intune の設定の対応について詳しく説明します。
   
-intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、 [Azure portal](https://portal.azure.com)に移動し、[**その他のサービス**] を選択して、**フィルター**に intune を入力し、[ **intune** \>デバイス] を選択します。 **構成** \> **プロファイル**。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Intune 設定を検索するには、Microsoft 365 Business 管理者の資格情報を使用してサインインしている間に、 [Azure portal](https://portal.azure.com)に移動し、[**その他のサービス**] を選択して、**フィルター**に intune を入力し、[ **intune** \>デバイス] を選択します。 **構成** \> **プロファイル**。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Windows 10 のデバイス ポリシーの設定**|**Intune の設定**|
 |:-----|:-----|

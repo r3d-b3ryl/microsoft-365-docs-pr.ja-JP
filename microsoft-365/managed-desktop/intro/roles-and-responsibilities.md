@@ -3,16 +3,16 @@ title: Microsoft マネージドデスクトップの役割と責任
 description: このトピックでは、microsoft が Microsoft マネージドデスクトップで提供する役割と責任について説明します。
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a51738b993a8a3683769d10882877b3b42d34ddf
-ms.sourcegitcommit: 7edeea1311ebb79a8c72418d2c6451b94fb788cb
+ms.openlocfilehash: 9eedd9b6ca9995595c75044b7877ed6eaca21127
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35061850"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425693"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft マネージドデスクトップの役割と責任
 
@@ -31,7 +31,7 @@ Microsoft によって提供される主な役割と責任は、以下のとお�
 MDM ポリシーの管理 | Microsoft は、ベストプラクティスに従って MDM ポリシーを適用し、ポリシーの変更に対する要求を検討します。 また、[デバイスポリシー](../service-description/device-policies.md)で規定されているように、テナントに変更を加えます。
 エンドユーザーサポート | Microsoft は、すべての登録ユーザーのために、Microsoft のすべての管理対象デスクトップデバイスにプレインストールされている Get Help アプリを使用して、デバイス、Windows、および Office 製品スイートのエンドユーザーサポートを提供します。 
 Microsoft Managed Desktop service サポート | Microsoft は、Microsoft Managed Desktop Operations Team を使用して、お客様の IT 部門にサポートを提供します。 このチームは、お客様の Microsoft Managed Desktop environment の技術的なトラブルシューティング、変更要求、インシデント管理をサポートします。 詳細については、「 [Microsoft マネージドデスクトップの管理者サポート](../working-with-managed-desktop/admin-support.md)」を参照してください。
-セキュリティの監視 | Microsoft は、Windows Defender ATP を使用して、お客様の Microsoft Managed Desktop デバイスを監視します。 Microsoft Managed Desktop Security Operations Center (SOC) によって脅威が検出された場合、Microsoft はお客様に通知し、デバイスを分離して、問題をリモートで修正します。 詳細については、「 [Security](../service-description/security.md)」を参照してください。
+セキュリティの監視 | Microsoft は、microsoft Defender ATP を使用して、microsoft の管理されたデスクトップデバイスを監視します。 Microsoft Managed Desktop Security Operations Center (SOC) によって脅威が検出された場合、Microsoft はお客様に通知し、デバイスを分離して、問題をリモートで修正します。 詳細については、「 [Security](../service-description/security.md)」を参照してください。
 更新の監視と管理 | Microsoft は、お客様の microsoft Managed Desktop デバイスを積極的に監視し、Microsoft Windows および Microsoft Office の最新の品質および機能の更新プログラムがインストールされていることを確認します。 詳細については、「[更新プログラムの処理方法](../service-description/updates.md)」を参照してください。
 ユーザーとデバイスのグループ化 | Microsoft Managed Desktop operations team は、IT 運用の一部として必要なデバイスとユーザーグループを作成し、管理します。 これらのグループへのメンバーシップまたは構成の変更は許可されていません。 これらのグループを変更すると、予期しないデバイス構成が発生し、機能が失われる可能性があります。 これらのグループに関する問題または質問が一度確立されると、IT 管理者は Microsoft マネージドデスクトップ操作に問い合わせることができます。 詳細については、「 [Microsoft マネージドデスクトップの管理者サポート](../working-with-managed-desktop/admin-support.md)」を参照してください。
 

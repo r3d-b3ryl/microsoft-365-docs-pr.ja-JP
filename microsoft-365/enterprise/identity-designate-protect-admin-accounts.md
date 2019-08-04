@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 管理者アカウントについて理解し、管理者アカウントが最大限に保護されるよう構成します。
-ms.openlocfilehash: 0be82fc6f431001c69e79a0a26007c54a87424c3
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 8a1d232ffc0242766d79b2e4884582f3b5524d22
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074057"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>手順 2: 特権 ID をセキュリティで保護する
 

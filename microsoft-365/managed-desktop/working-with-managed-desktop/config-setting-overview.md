@@ -1,22 +1,22 @@
 ---
 title: Microsoft マネージドデスクトップの構成可能な設定
 description: Microsoft マネージドデスクトップの構成可能な設定に関する情報
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント、設定、構成可能な設定
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント、設定、構成可能な設定
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0d30e92eb9747079a7edc5a8fd198298508f342e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278215"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390724"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>構成可能な設定-Microsoft マネージドデスクトップ
 
-microsoft マネージドデスクトップは、microsoft マネージドデスクトップによって管理されるすべてのデバイスに適用される設定とポリシーを展開します。 詳細については、「[デバイスの構成](../service-description/device-policies.md)」を参照してください。
+Microsoft マネージドデスクトップは、Microsoft マネージドデスクトップによって管理されるすべてのデバイスに適用される設定とポリシーを展開します。 詳細については、「[デバイスの構成](../service-description/device-policies.md)」を参照してください。
 
 Microsoft マネージドデスクトップの構成可能な設定を使用すると、組織およびビジネスのニーズに固有の設定をカスタマイズおよび展開することができるようになります。 これらの設定は、Microsoft マネージドデスクトップで管理されるデバイスの構成設定とポリシーに加えています。  
 
@@ -59,7 +59,7 @@ Microsoft Managed Desktop 管理ポータルで変更を構成し、ステージ
 
 **手順 4-変更の展開**-テストグループから始めて変更を展開します。 テストグループを使用すると、より多くのデバイスのグループへの変更を展開する前に、より少ないデバイスでグループ内の問題を検証し、トラブルシューティングを行うことができます。 問題が発生した場合は、変更を元に戻し、設定を更新して、新しい展開をステージングすることができます。 Microsoft マネージドデスクトップでは、構造化された手法を使用して、次の順序でグループに展開することをお勧めします。テスト、ファースト、Fast、および広範。   
 
-構成可能なすべての設定は、Microsoft managed Desktop 管理ポータルを使用して管理されます。 詳細については、「[変更を展開](config-setting-deploy.md)する」を参照してください。 
+構成可能なすべての設定は、Microsoft Managed Desktop 管理ポータルを使用して管理されます。 詳細については、「[変更を展開](config-setting-deploy.md)する」を参照してください。 
 
 **ステップ 5-変更の追跡**-展開状態に対する変更の進行状況を追跡します。 各設定に対して、次のことを行うことができます。
 - **進捗状況を追跡**する-変更を展開した後に状態を追跡します。 状態は [**進行**中] に変わり、**完了**するか、**失敗**します。 展開に失敗した場合は、Microsoft マネージドデスクトップ操作のサポート要求が自動的に開かれ、問題を調査します。  
@@ -71,6 +71,6 @@ Microsoft Managed Desktop 管理ポータルで変更を構成し、ステージ
 
 詳細については、「[構成可能な設定を展開および追跡](config-setting-deploy.md)する」を参照してください。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他の技術情報
 - [構成可能な設定のリファレンス](config-setting-ref.md) 
 - [構成可能な設定を展開する](config-setting-deploy.md) 

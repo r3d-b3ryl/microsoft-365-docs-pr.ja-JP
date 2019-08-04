@@ -1,7 +1,7 @@
 ---
 title: インプレース アップグレードによる Windows 10 Enterprise の既存デバイスへの展開
 description: System Center Configuration Manager を使用して、一括アップグレードとして Windows 10 Enterprise イメージを構成および展開するためのガイダンスを提供します。
-keywords: microsoft 365、microsoft 365 Enterprise、microsoft 365 ドキュメント、Windows 10 Enterprise、deployment、一括アップグレード、構成マネージャー、System Center Configuration manager
+keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、Windows 10 Enterprise、deployment、一括アップグレード、構成マネージャー、System Center Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
+ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291614"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35595303"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>手順 2: 既存のデバイス用に Windows 10 Enterprise を一括アップグレードとして展開する
 
@@ -23,9 +23,9 @@ ms.locfileid: "32291614"
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-現在 windows 7 または windows 8.1 を実行している pc をアップグレードするための最も単純なパスは、一括アップグレードを使用しています。 System Center configuration manager (構成マネージャー) のタスクシーケンスを使用して、プロセスを完全に自動化することができます。 
+現在 Windows 7 または Windows 8.1 を実行している Pc をアップグレードするための最も単純なパスは、一括アップグレードを使用しています。 System Center Configuration Manager (構成マネージャー) のタスクシーケンスを使用して、プロセスを完全に自動化することができます。 
 
-windows 7 または windows 8.1 を実行している既存のコンピューターがある場合は、組織で windows 10 を展開している場合はこのパスを使用することをお勧めします。 Windows インストールプログラム (setup.exe) を活用して一括アップグレードを実行すると、既存のオペレーティングシステムのバージョンからすべてのデータ、設定、アプリケーション、およびドライバーが自動的に保持されます。 複雑な展開インフラストラクチャは必要ないため、これには最小限の IT 作業が必要になります。
+Windows 7 または Windows 8.1 を実行している既存のコンピューターがある場合は、組織で Windows 10 を展開している場合はこのパスを使用することをお勧めします。 Windows インストールプログラム (Setup.exe) を活用して一括アップグレードを実行すると、既存のオペレーティングシステムのバージョンからすべてのデータ、設定、アプリケーション、およびドライバーが自動的に保持されます。 複雑な展開インフラストラクチャは必要ないため、これには最小限の IT 作業が必要になります。
 
 構成マネージャーを一括アップグレードとして使用して Windows 10 Enterprise のイメージを構成および展開するには、次の手順を実行します。
 
@@ -35,22 +35,22 @@ windows 7 または windows 8.1 を実行している既存のコンピュータ
 
 詳細については、「[アップグレードの準備をして Windows アップグレードを管理](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)する」を参照してください。詳細については、「アップグレードの準備状況」をご覧ください。
 
-次に、ガイドに従って System Center Configuration Manager (Current Branch) を使用し、windows 7 以降のオペレーティングシステムを windows 10 にアップグレードします。 高リスク展開の場合と同様に、先に進む前にユーザーデータをバックアップすることをお勧めします。 OneDrive クラウドストレージは、Microsoft 365 ユーザーのライセンスを使用する準備が整っており、そのファイルを安全に保存するために使用できます。 詳細については、「 [OneDrive クイックスタートガイド](https://aka.ms/ODfBquickstartguide)」を参照してください。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのテナント管理者またはグローバル管理者としてサインインする必要があります。
+次に、ガイドに従って System Center Configuration Manager (Current Branch) を使用し、windows 7 以降のオペレーティングシステムを Windows 10 にアップグレードします。 高リスク展開の場合と同様に、先に進む前にユーザーデータをバックアップすることをお勧めします。 OneDrive クラウドストレージは、Microsoft 365 ユーザーのライセンスを使用する準備が整っており、そのファイルを安全に保存するために使用できます。 詳細については、「 [OneDrive クイックスタートガイド](https://aka.ms/ODfBquickstartguide)」を参照してください。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのテナント管理者またはグローバル管理者としてサインインする必要があります。
 
-Configuration manager のバージョンと、対応する windows 10 クライアントのバージョンの一覧については、「 [System Center Configuration manager での windows 10 のサポート](https://aka.ms/supportforwin10sccm)」を参照してください。
+Configuration Manager のバージョンと、対応する Windows 10 クライアントのバージョンの一覧については、「 [System Center Configuration manager での windows 10 のサポート](https://aka.ms/supportforwin10sccm)」を参照してください。
 
 **Windows のアップグレードの準備状況を確認するには**
 
 Windows 10 の展開を開始する前に、これらの要件を確認します。
 
-- **アップグレード対象となる windows エディション**-デバイスでは、windows 7 または windows 8.1 のエディションを実行している必要があります。これは、windows 10 Enterprise へのアップグレードに適しています。 サポートされているエディションの一覧については、「 [Windows 10 のアップグレードパス](https://aka.ms/win10upgradepaths)」を参照してください。 
+- **アップグレード対象となる windows エディション**-デバイスでは、windows 7 または windows 8.1 のエディションを実行している必要があります。これは、Windows 10 Enterprise へのアップグレードに適しています。 サポートされているエディションの一覧については、「 [Windows 10 のアップグレードパス](https://aka.ms/win10upgradepaths)」を参照してください。 
 - **サポート**されるデバイス-windows 8.1 と互換性のあるほとんどのコンピューターは、windows 10 と互換性があります。 デバイスが適切に機能するには、更新されたドライバーを Windows 10 にインストールする必要がある場合があります。 詳細については、「 [Windows 10 の仕様](https://aka.ms/windows10specifications)」を参照してください。
 - **展開の準備**-展開の構成を開始する前に、次のことを確認してください。
     - Windows 10 インストールメディア-インストールメディアは、ISO が既にマウントされている別のドライブに配置する必要があります。 ISO は、 [MSDN サブスクライバーダウンロード](https://aka.ms/msdn-subscriber-downloads)から入手することも、[ボリュームライセンスサービスセンター](https://aka.ms/mvlsc)から入手することもできます。
     - ユーザーデータのバックアップ-ユーザーデータはアップグレードに移行されますが、バックアップシナリオを構成することをお勧めします。 たとえば、すべてのユーザーデータを OneDrive アカウントにエクスポートし、BitLocker から Go に暗号化された USB フラッシュドライブ、またはネットワークファイルサーバーをエクスポートします。 詳細については、「 [Windows でデータをバックアップまたは転送](https://aka.ms/backuptransferdatawindows)する」を参照してください。
 - **環境の準備**-既存の Configuration Manager サーバー構造を使用して、オペレーティングシステムの展開を準備します。 構成マネージャー環境では、基本設定に加えて、次の構成を行う必要があります。
     1. [Active Directory スキーマを拡張](https://aka.ms/extendadschema)し、 [System Management コンテナーを作成](https://aka.ms/createsysmancontainer)します。
-    2. active directory フォレストの探索と active directory システムの検出を有効にします。 詳細については、「 [Configure discovery メソッド for System Center Configuration Manager](https://aka.ms/configurediscoverymethods)」を参照してください。
+    2. Active Directory フォレストの探索と Active Directory システムの検出を有効にします。 詳細については、「 [Configure discovery メソッド For System Center Configuration Manager](https://aka.ms/configurediscoverymethods)」を参照してください。
     3. コンテンツおよびサイト割り当ての IP 範囲の境界と境界グループを作成します。 詳細については、「 [System Center Configuration Manager のサイト境界と境界グループを定義する](https://aka.ms/definesiteboundaries)」を参照してください。
     4. Configuration Manager reporting services ポイントの役割を追加して構成します。 詳細については、「 [Configuration Manager でレポートを構成する](https://aka.ms/configurereporting)」を参照してください。
     5. パッケージ用のファイルシステムフォルダー構造を作成します。
@@ -66,7 +66,7 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 2. [**データソース**] ページで、Windows 10 Enterprise x64 メディアへの UNC パスを指定し、[**次へ**] を選択します。
 3. [**全般**] ページで、 **Windows 10 Enterprise x64 Upgrade**を指定し、[**次へ**] を選択します。 
 4. [**概要**] ページで、[**次へ**] を選択し、[**閉じる**] を選択します。 
-5. 作成した**Windows 10 Enterprise x64 更新プログラム**パッケージを右クリックして、[**コンテンツの配布**] を選択します。 
+5. 作成した**Windows 10 Enterprise X64 更新プログラム**パッケージを右クリックして、[**コンテンツの配布**] を選択します。 
 6. 配布ポイントを選択します。
 
 ## <a name="part-3-configure-deployment-settings"></a>パート 3: 展開設定を構成する
@@ -79,7 +79,7 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 2. [**タスク**シーケンス] ノードを右クリックし、[**タスクシーケンスの作成**] を選択します。
 3. [**タスクシーケンスの新規作成**] ページで、[**アップグレードパッケージからのオペレーティングシステムのアップグレード**] を選択し、[**次へ**] を選択します。
 4. [**タスクシーケンス情報**] ページで、 **Windows 10 Enterprise x64 Upgrade**を指定し、[**次へ**] を選択します。
-5. [ **windows オペレーティングシステムのアップグレード**] ページで、 **[参照**] を選択して、 **windows 10 Enterprise x64 アップグレードオペレーティングシステムアップグレードパッケージ**を選択し、[ **OK**] を選択して、[**次へ**] を選択します。
+5. [ **Windows オペレーティングシステムのアップグレード**] ページで、 **[参照**] を選択して、 **windows 10 Enterprise x64 アップグレードオペレーティングシステムアップグレードパッケージ**を選択し、[ **OK**] を選択して、[**次へ**] を選択します。
 6. 残りのウィザードページを続けて、[**閉じる**] を選択します。
 
 ### <a name="create-a-device-collection"></a>デバイスコレクションを作成する
@@ -96,7 +96,7 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 4. [ダイレクトメンバーシップルールの作成] ウィザードの [**ようこそ**] ページで、[**次へ**] を選択します。
 5. [**リソースの検索**] ページで、次の設定を入力します。プレースホルダーの**値**のテキストは、アップグレードするデバイスの名前に置き換えます。 
     - リソースクラス: システムリソース
-    - 属性名: name
+    - 属性名: Name
     - 値: *PC0003*
 6. [**リソースの選択**] ページで、デバイスを選択し、[**次へ**] を選択します。
 7. [ダイレクトメンバーシップの規則の作成] ウィザードと [デバイスコレクションの作成] ウィザードを完了します。  
@@ -121,19 +121,19 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 7. [**通知**] ページで、既定の設定をそのまま使用し、[**次へ**] を選択します。
 8. [**概要**] ページで、[**次へ**] を選択し、[**閉じる**] を選択します。
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>パート 5: Windows 10 のアップグレードタスクシーケンスを開始する
+## <a name="part-4-start-the-windows-10-upgrade-task-sequence"></a>パート 4: Windows 10 のアップグレードタスクシーケンスを開始する
 アップグレードするデバイスで Windows 10 のアップグレードタスクシーケンスを開始するには、次の手順を実行します。
  
 1. Windows コンピューターにログオンし、**ソフトウェアセンター**を起動します。
 2. 前の手順で作成したタスクシーケンスを選択し、[**インストール**] を選択します。
-3. タスクシーケンスが開始されると、必要なコマンドラインパラメーターを指定して Windows セットアッププログラム (setup.exe) を起動することによって、一括アップグレードプロセスが自動的に開始されます。これにより、すべてのデータ、設定、アプリ、およびドライバ.
+3. タスクシーケンスが開始されると、必要なコマンドラインパラメーターを指定して Windows セットアッププログラム (Setup.exe) を起動することによって、一括アップグレードプロセスが自動的に開始されます。これにより、すべてのデータ、設定、アプリ、およびドライバ.
 4. タスクシーケンスが正常に完了すると、コンピューターは Windows 10 に完全にアップグレードされます。
 
 エンタープライズ環境で Windows 10 を使用するときに問題が発生した場合、「[最も一般的な問題に対する上位の Microsoft サポート ソリューション](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)」 を参照してください。これらのリソースには、サポート技術情報の記事、更新情報、およびライブラリの記事が含まれます。
 
-組織全体で更新プログラムをロールアウトする際には、windows Analytics の更新プログラムのコンプライアンス機能を使用して、windows 10 デバイスの OS 更新プログラムのコンプライアンス、展開の進行状況、およびエラーのトラブルシューティングの全体的なビューを提供します。 この新しいサービスは、インストールの進行状況、Windows 更新プログラムの構成、その他の情報を含む診断データを使用して、そのような洞察を追加のコストや追加のインフラストラクチャ要件を伴わずに提供します。 Business またはその他の管理ツール用の Windows Update で使用されているかどうかにかかわらず、デバイスが適切に更新されることを保証できます。
+組織全体で更新プログラムをロールアウトする際には、Windows Analytics の更新プログラムのコンプライアンス機能を使用して、Windows 10 デバイスの OS 更新プログラムのコンプライアンス、展開の進行状況、およびエラーのトラブルシューティングの全体的なビューを提供します。 この新しいサービスは、インストールの進行状況、Windows 更新プログラムの構成、その他の情報を含む診断データを使用して、そのような洞察を追加のコストや追加のインフラストラクチャ要件を伴わずに提供します。 Business またはその他の管理ツール用の Windows Update で使用されているかどうかにかかわらず、デバイスが適切に更新されることを保証できます。
 
-詳細については、「 [windows の更新プログラムの監視」および「更新プログラムのコンプライアンスを使用した windows Defender ウイルス対策](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)」を参照し、更新プログラムのコンプライアンスをご確認ください。
+詳細については、「 [windows の更新プログラムの監視」および「更新プログラムのコンプライアンスを使用した Windows Defender ウイルス対策](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)」を参照し、更新プログラムのコンプライアンスをご確認ください。
 
 中間チェックポイントとして、この手順に対応する[終了条件](windows10-exit-criteria.md#crit-windows10-step2)を確認できます。
 

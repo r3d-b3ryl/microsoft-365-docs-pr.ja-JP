@@ -2,8 +2,8 @@
 layout: HubPage
 hide_bc: true
 ms.topic: hub-page
-ms.author: robmazz
-author: robmazz
+ms.author: sirkkuw
+author: sirkkuw
 keywords: Microsoft 365 Business、Microsoft 365、Business、SMB、中小企業、Microsoft 365 ビジネスドキュメント、ドキュメント、技術情報
 localization_priority: Normal
 audience: microsoft-business
@@ -11,12 +11,12 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 title: Microsoft 365 ビジネスリソース
 description: Microsoft Office 365、Windows 10、Enterprise Mobility + Security をビジネスで一緒に計画、展開、および使用する方法について説明します。これにより、チームワークとロック解除を可能にする統合された安全なインフラストラクチャが実現されます。
-ms.openlocfilehash: 3c5cc341734896cb9a42565c8647f3f5ac37fc5b
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: a7b6ef6b3c86868ffd9dd2ab912c427911075911
+ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660293"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34653048"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -61,7 +61,7 @@ ms.locfileid: "33660293"
                                             </div>
                                             <div class="cardText">
                                                 <h3>設定</h3>
-                                              <P><a href="get-microsoft-365-business.md" target="_blank">Microsoft 365 Business を取得する</a></p>
+                                              <P><a href="sign-up.md" target="_blank">Microsoft 365 Business を取得する</a></p>
                                                <P><a href="set-up.md" target="_blank">Microsoft 365 Business をセットアップする</a></p>
                                                 <P><a href="set-up-windows-devices.md" target="_blank">Windows 10 デバイスをセットアップする</a></p>
                                                 <P><a href="set-up-mobile-devices.md" target="_blank">IPhone および Android デバイスをセットアップする</a></p>
@@ -99,7 +99,6 @@ ms.locfileid: "33660293"
                                             </div>
                                             <div class="cardText">
                                                 <h3>ビジネスデータとデバイスを保護する</h3>
-                                                 <P><a href="https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data"target="_blank">Microsoft 365 Business をセキュリティで保護するための10位の方法</a></p>
                                                 <P><a href="security-features.md" target="_blank">セキュリティ機能の詳細情報</a></p>
                                                 <P><a href="remove-company-data.md" target="_blank">デバイスからデータを削除する</a></p>
                                                 <P><a href="reset-devices-to-factory-settings.md" target="_blank">デバイスをリセットする</a></p>

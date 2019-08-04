@@ -1,18 +1,18 @@
 ---
 title: Microsoft Managed Desktop 管理ポータルで管理者の連絡先を追加する
 description: フォーカスされている領域ごとに、連絡先の情報をお伝えください。
-keywords: microsoft マネージドデスクトップ、microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 014404ab38ff5871289be186dec150115c3be6ec
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277546"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390534"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Microsoft Managed Desktop 管理ポータルで管理者の連絡先を追加する
 
@@ -26,18 +26,19 @@ Microsoft Managed Desktop 管理ポータルでは、ポータルにアクセス
 - 課金管理者
 - サービスサポート管理者
 
-グローバル管理者は、Microsoft マネージドデスクトップにお客様を登録する必要があります。  すべての5つの役割は、タスクを開始して表示するために、管理ポータル内で同じアクセス権を持ちます。  これらの役割を azure AD に割り当てる方法の詳細については、「 [azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)」を参照してください。 
+グローバル管理者は、Microsoft マネージドデスクトップにお客様を登録する必要があります。 すべての5つの役割は、タスクを開始して表示するために、管理ポータル内で同じアクセス権を持ちます。 これらの役割を Azure AD に割り当てる方法の詳細については、「 [Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)」を参照してください。 
 
 ## <a name="admin-contact-focus-areas"></a>管理者の連絡先のフォーカス領域
 
-管理者の連絡先は、質問に回答したり、さまざまなフォーカスエリアの意思決定を行ったりできるベストのユーザーまたはグループである必要があります。  Microsoft マネージドデスクトップの操作は、お客様が提出したサポート要求に関する質問について、これらの管理者の連絡先に連絡します。  これらの管理者の連絡先は、サポート要求の更新と新しいメッセージに関する通知を受け取ります。  次のような領域があります。
+管理者の連絡先は、質問に回答したり、さまざまなフォーカスエリアの意思決定を行ったりできるベストのユーザーまたはグループである必要があります。 Microsoft マネージドデスクトップの操作は、お客様が提出したサポート要求に関する質問について、これらの管理者の連絡先に連絡します。 これらの管理者の連絡先は、サポート要求の更新と新しいメッセージに関する通知を受け取ります。 次のような領域があります。
 
 フォーカスエリア | に関する質問
 --- | ---
 アプリ | アプリのパッケージ化のトラブルシューティング
 デバイス | デバイスの正常性、Microsoft マネージドデスクトップデバイスのトラブルシューティング
 セキュリティ | Microsoft マネージドデスクトップデバイスに関するセキュリティ上の問題のトラブルシューティング
-その他 | 他の領域でカバーされない問題の場合
+IT ヘルプデスク | Microsoft Managed Desktop が MMD サポートエリア外のエンドユーザーチケットをサポートしている場合は、 
+Other | 他の領域でカバーされない問題の場合
 
 これらの連絡先に対して選択するユーザーは、Microsoft マネージドデスクトップ環境を決定するための知識と権限を持っている必要があります。 Microsoft マネージドデスクトップ環境をオンにすると、ローカルのヘルプデスクおよびセキュリティのための連絡先を追加するように求められます。 
 

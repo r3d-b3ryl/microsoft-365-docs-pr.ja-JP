@@ -2,6 +2,7 @@
 ## [Microsoft マネージドデスクトップとは](intro/index.md)
 ### [役割と責任](intro/roles-and-responsibilities.md)
 ### [Microsoft マネージドデスクトップのテクノロジ](intro/technologies.md)
+### [Microsoft マネージドデスクトップと ITIL](MMD-and-ITSM.md)
 ## [Microsoft マネージドデスクトップサービスの説明](service-description/index.md)
 ### [サポートされている地域と言語](service-description/regions-languages.md)
 ### [製品ライフサイクル](service-description/device-lifecycle.md)
