@@ -9,12 +9,12 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: 04b46917931fa6fb9fd352c9a73ae38ce2971982
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: c1d671e125eca07f1d559fdeded7ae590c5b8b38
+ms.sourcegitcommit: aace6acb94c3a944fe5863b3a52d74f9054dcd23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698379"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "35921128"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>Microsoft Office 365 に関するアカウンタビリティ対応準備チェックリスト
 
@@ -127,7 +127,7 @@ ms.locfileid: "34698379"
 |||
 |:-----|:-----|
 |**ID**|**説明/リンク**|
-| 1 <a name="1"> </a> | [オンライン サービスの使用条件](http://www.microsoftvolumelicensing.com/Downloader.aspx?DocumentId=13754) |
+| 1 <a name="1"> </a> | [オンライン サービスの使用条件](http://aka.ms/ost) |
 | 2 <a name="2"> </a> | [Office 365 のセキュリティに関するドキュメント](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
 | 3 <a name="3"> </a> | [FedRAMP Moderate FedRAMP システム セキュリティ プラン (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft Cloud のセキュリティ ポリシー](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
