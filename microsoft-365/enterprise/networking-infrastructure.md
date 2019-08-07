@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,52 +13,52 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: " Microsoft 365 Enterprise のネットワーク インフラストラクチャを展開する手順。"
-ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33399961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074317"
 ---
-# <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a><span data-ttu-id="35678-103">フェーズ 1: Microsoft 365 Enterprise のネットワーク インフラストラクチャ</span><span class="sxs-lookup"><span data-stu-id="35678-103">Phase 1: Networking infrastructure for Microsoft 365 Enterprise</span></span>
+# <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a><span data-ttu-id="7a774-103">フェーズ 1: Microsoft 365 Enterprise のネットワーク インフラストラクチャ</span><span class="sxs-lookup"><span data-stu-id="7a774-103">Phase 1: Networking infrastructure for Microsoft 365 Enterprise</span></span>
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-<span data-ttu-id="35678-104">Microsoft 365 Enterprise には、エンタープライズ管理とセキュリティ (EMS) の一部として、Office 365 と Microsoft Intune が含まれています。</span><span class="sxs-lookup"><span data-stu-id="35678-104">Microsoft 365 Enterprise includes Office 365 and Microsoft Intune as part of Enterprise Management + Security (EMS).</span></span> <span data-ttu-id="35678-105">これらのクラウド ベースのサービスは両方とも、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。</span><span class="sxs-lookup"><span data-stu-id="35678-105">Both of these cloud-based services rely on the security, performance, and reliability of connections from client devices over the Internet or dedicated circuits.</span></span> <span data-ttu-id="35678-106">これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。</span><span class="sxs-lookup"><span data-stu-id="35678-106">To host these services and make them available to customers all over the world, Microsoft has designed a networking infrastructure that emphasizes performance and integration.</span></span> 
+<span data-ttu-id="7a774-104">Microsoft 365 Enterprise には、エンタープライズ管理とセキュリティ (EMS) の一部として、Office 365 と Microsoft Intune が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7a774-104">Microsoft 365 Enterprise includes Office 365 and Microsoft Intune as part of Enterprise Management + Security (EMS).</span></span> <span data-ttu-id="7a774-105">これらのクラウド ベースのサービスは両方とも、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。</span><span class="sxs-lookup"><span data-stu-id="7a774-105">Both of these cloud-based services rely on the security, performance, and reliability of connections from client devices over the Internet or dedicated circuits.</span></span> <span data-ttu-id="7a774-106">これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。</span><span class="sxs-lookup"><span data-stu-id="7a774-106">To host these services and make them available to customers all over the world, Microsoft has designed a networking infrastructure that emphasizes performance and integration.</span></span> 
 
-<span data-ttu-id="35678-p102">このフェーズでは、Microsoft 365 Enterprise のクラウド サービスへの高パフォーマンス接続を作成するための主な検討事項について、順を追って説明します。概要については、「[Office 365 のネットワークの原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35678-p102">In this phase, you step through the key considerations for creating a performant connection to the cloud services of Microsoft 365 Enterprise. For an overview, see [Office 365 networking principles](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).</span></span>
+<span data-ttu-id="7a774-p102">このフェーズでは、Microsoft 365 Enterprise のクラウド サービスへの高パフォーマンス接続を作成するための主な検討事項について、順を追って説明します。概要については、「[Office 365 のネットワークの原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7a774-p102">In this phase, you step through the key considerations for creating a performant connection to the cloud services of Microsoft 365 Enterprise. For an overview, see [Office 365 networking principles](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).</span></span>
 
 >[!Note]
-><span data-ttu-id="35678-109">既にネットワーク インフラストラクチャを展開している場合は、このフェーズの[終了条件](networking-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="35678-109">If you already have a networking infrastructure deployed, please see the [exit criteria](networking-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+><span data-ttu-id="7a774-109">既にネットワーク インフラストラクチャを展開している場合は、このフェーズの[終了条件](networking-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="7a774-109">If you already have a networking infrastructure deployed, please see the [exit criteria](networking-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
 
-## <a name="plan-and-deploy-your-microsoft-365-enterprise-networking-infrastructure"></a><span data-ttu-id="35678-110">Microsoft 365 Enterprise のネットワーク インフラストラクチャを計画および展開する</span><span class="sxs-lookup"><span data-stu-id="35678-110">Plan and deploy your Microsoft 365 Enterprise networking infrastructure</span></span> 
+## <a name="plan-and-deploy-your-microsoft-365-enterprise-networking-infrastructure"></a><span data-ttu-id="7a774-110">Microsoft 365 Enterprise のネットワーク インフラストラクチャを計画および展開する</span><span class="sxs-lookup"><span data-stu-id="7a774-110">Plan and deploy your Microsoft 365 Enterprise networking infrastructure</span></span> 
 
-<span data-ttu-id="35678-111">Microsoft 365 Enterprise の要件と機能に対応したネットワーク インフラストラクチャを構築するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="35678-111">Use the following steps to build out your networking infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.</span></span>
+<span data-ttu-id="7a774-111">Microsoft 365 Enterprise の要件と機能に対応したネットワーク インフラストラクチャを構築するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="7a774-111">Use the following steps to build out your networking infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[<span data-ttu-id="35678-112">Microsoft 365 のネットワークを準備する</span><span class="sxs-lookup"><span data-stu-id="35678-112">Prepare your network for Microsoft 365</span></span>](networking-provide-bandwidth-cloud-services.md)|
-|![](./media/stepnumbers/Step2.png)|[<span data-ttu-id="35678-113">オフィスごとにローカルのインターネット接続を構成する</span><span class="sxs-lookup"><span data-stu-id="35678-113">Configure local Internet connections for each office</span></span>](networking-dns-resolution-same-location.md)|
-|![](./media/stepnumbers/Step3.png)|[<span data-ttu-id="35678-114">ネットワーク ヘアピンを回避する</span><span class="sxs-lookup"><span data-stu-id="35678-114">Avoid network hairpins</span></span>](networking-avoid-network-hairpins.md)|
-|![](./media/stepnumbers/Step4.png)|[<span data-ttu-id="35678-115">トラフィック バイパスを構成する</span><span class="sxs-lookup"><span data-stu-id="35678-115">Configure traffic bypass</span></span>](networking-configure-proxies-firewalls.md)|
-|![](./media/stepnumbers/Step5.png)|[<span data-ttu-id="35678-116">クライアントと Office 365 サービスのパフォーマンスを最適化する</span><span class="sxs-lookup"><span data-stu-id="35678-116">Optimize client and Office 365 service performance</span></span>](networking-optimize-tcp-performance.md)|
+|![](./media/stepnumbers/Step1.png)|[<span data-ttu-id="7a774-112">Microsoft 365 のネットワークを準備する</span><span class="sxs-lookup"><span data-stu-id="7a774-112">Prepare your network for Microsoft 365</span></span>](networking-provide-bandwidth-cloud-services.md)|
+|![](./media/stepnumbers/Step2.png)|[<span data-ttu-id="7a774-113">オフィスごとにローカルのインターネット接続を構成する</span><span class="sxs-lookup"><span data-stu-id="7a774-113">Configure local Internet connections for each office</span></span>](networking-dns-resolution-same-location.md)|
+|![](./media/stepnumbers/Step3.png)|[<span data-ttu-id="7a774-114">ネットワーク ヘアピンを回避する</span><span class="sxs-lookup"><span data-stu-id="7a774-114">Avoid network hairpins</span></span>](networking-avoid-network-hairpins.md)|
+|![](./media/stepnumbers/Step4.png)|[<span data-ttu-id="7a774-115">トラフィック バイパスを構成する</span><span class="sxs-lookup"><span data-stu-id="7a774-115">Configure traffic bypass</span></span>](networking-configure-proxies-firewalls.md)|
+|![](./media/stepnumbers/Step5.png)|[<span data-ttu-id="7a774-116">クライアントと Office 365 サービスのパフォーマンスを最適化する</span><span class="sxs-lookup"><span data-stu-id="7a774-116">Optimize client and Office 365 service performance</span></span>](networking-optimize-tcp-performance.md)|
 
 
-<span data-ttu-id="35678-117">上記の手順が完了したら、このフェーズの[終了条件](networking-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="35678-117">When you've completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+<span data-ttu-id="7a774-117">上記の手順が完了したら、このフェーズの[終了条件](networking-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="7a774-117">When you've completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="35678-118">Microsoft での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="35678-118">How Microsoft does Microsoft 365 Enterprise</span></span>
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="7a774-118">Microsoft での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="7a774-118">How Microsoft does Microsoft 365 Enterprise</span></span>
 
-<span data-ttu-id="35678-119">「[Microsoft Office 365 のネットワーク パフォーマンスを最適化する](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)」を参照すると、Microsoft が会社として、内部的にどのように Office 365 クラウド サービス用に Microsoft ネットワークを最適化しているかを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="35678-119">Peek inside Microsoft and learn how the company prepared for and optimized the Microsoft network for the Office 365 cloud services with [Optimizing network performance for Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).</span></span>
+<span data-ttu-id="7a774-119">Microsoft の内部を見て、[クラウド サービス向けに Microsoft ネットワークを最適化](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4)している方法をご紹介します。</span><span class="sxs-lookup"><span data-stu-id="7a774-119">Peek inside Microsoft and learn how the company prepared for and optimized the Microsoft network for the Office 365 cloud services with [Optimizing network performance for Microsoft Office 365](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4).</span></span>
 
-## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="35678-120">Contoso 社での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="35678-120">How Contoso did Microsoft 365 Enterprise</span></span>
+## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="7a774-120">Contoso 社での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="7a774-120">How Contoso did Microsoft 365 Enterprise</span></span>
 
-<span data-ttu-id="35678-121">架空の典型的な多国籍企業である Contoso Corporation が、Microsoft 365 のクラウド サービス向けに[ネットワークを最適化](contoso-networking.md)している方法をご紹介します。</span><span class="sxs-lookup"><span data-stu-id="35678-121">See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network](contoso-networking.md) for Microsoft 365 cloud services.</span></span>
+<span data-ttu-id="7a774-121">架空の典型的な多国籍企業である Contoso Corporation が、Microsoft 365 のクラウド サービス向けに[ネットワーク デバイスとインターネットの接続を最適化](contoso-networking.md)している方法をご紹介します。</span><span class="sxs-lookup"><span data-stu-id="7a774-121">See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network](contoso-networking.md) for Microsoft 365 cloud services.</span></span>
 
 ![](./media/contoso-overview/contoso-icon.png)
 
-## <a name="next-step"></a><span data-ttu-id="35678-122">次の手順</span><span class="sxs-lookup"><span data-stu-id="35678-122">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="7a774-122">次の手順</span><span class="sxs-lookup"><span data-stu-id="7a774-122">Next step</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[<span data-ttu-id="35678-123">Microsoft 365 のネットワークを準備する</span><span class="sxs-lookup"><span data-stu-id="35678-123">Prepare your network for Microsoft 365</span></span>](networking-provide-bandwidth-cloud-services.md)|
+|![](./media/stepnumbers/Step1.png)|[<span data-ttu-id="7a774-123">Microsoft 365 のネットワークを準備する</span><span class="sxs-lookup"><span data-stu-id="7a774-123">Prepare your network for Microsoft 365</span></span>](networking-provide-bandwidth-cloud-services.md)|
 
