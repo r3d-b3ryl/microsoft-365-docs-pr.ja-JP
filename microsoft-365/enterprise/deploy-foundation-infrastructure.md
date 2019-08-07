@@ -3,8 +3,8 @@ title: Microsoft 365 Enterprise の基礎インフラストラクチャチャ
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 03/05/2019
-ms.audience: ITPro
+ms.date: 05/22/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基礎インフラストラクチャを組織に展開するための主要フェーズ (別名、コア展開) について理解します。
-ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400051"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36055025"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise の基礎インフラストラクチャチャ
 
-Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行っている場合は、まずアプリケーションとサービスによる創造性とチームワークが安全な環境で発揮される強固な基盤を構築する必要があります。 この機能は、コア展開と呼ばれることもあります。
+Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行っている場合は、まずアプリケーションとサービスによる創造性とチームワークが安全な環境で発揮される強固な基盤を構築する必要があります。 この基盤は、*コア展開*と呼ばれることもあります。
 
 展開に関して定義されたエンド ツー エンドのパスの次のフェーズを使用して Microsoft 365 Enterprise の基礎インフラストラクチャを計画して展開することができます。
 
@@ -38,7 +38,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 フェーズは最も基本的なもの (ネットワークと ID) から始めます。その後に、インフラストラクチャの設定とグループのレイヤーを作成し以下を実施します。
 
 - 最新かつセキュリティで保護されたバージョンの Windows をデバイスにインストールします。
-- デバイスに最新バージョンの Office をインストールします。
+- デバイスに最新バージョンの Microsoft Office をインストールします。
 - 組織のデバイスを管理します。
 - デバイス上およびクラウド内の情報を保護します。
 
@@ -58,6 +58,22 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
+## <a name="at-a-glance"></a>概要
+
+[Microsoft 365 Enterprise の基盤インフラストラクチャのポスター](http://aka.ms/m365efoundinfraposter)は、各フェーズで参照できる中心的な場所です。
+
+- 管理者とユーザーのフェーズの全体的な目標
+- サービス、機能、およびツール
+- 計画の主な設計の決定
+- 構成の結果
+- 新しいユーザーのオンボード プロセス
+- モニターと更新の方法
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+
+ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)をクリックします。
+
+
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>インフラストラクチャの構成とユーザー ロールアウト
 
 構成されたソフトウェアとサービス一式が、基礎インフラストラクチャになります。これらのソフトウェアやサービスをユーザー向けに組み合わせることで、安全な環境で Microsoft 365 Enterprise が提供するすべての機能を利用することができます。 エンド ツー エンドの展開の最終目的は、お客様の全ユーザーとそのユーザーの Windows ベースのデバイスに基礎インフラストラクチャを適用することです。 
@@ -74,7 +90,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 | Windows 10 Enterprise | Windows 7 または Windows 8.1 を実行しているコンピューターを Windows 10 Enterprise に自動的にアップグレードするためのグループ。 |
 | Office 365 ProPlus | Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Office 365 ProPlus を自動的に展開するためのグループ。 |
 | モバイル デバイス管理 | デバイス登録とデバイス ベースの条件付きアクセス ポリシーのグループ。 |
-| 情報保護 | Office 365 と Azure Information Protection のラベルとグループ。 |
+| 情報保護 | Office 365 秘密度および Azure Information Protection のラベルとグループ。 |
 
 基礎インフラストラクチャの要素をユーザーにロールアウトする準備ができたら、以下を実施します。
 
@@ -92,10 +108,16 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 パイロット ユーザーおよび他の組織の基礎インフラストラクチャのさまざまなフェーズにおけるプロジェクト管理への取り組み方については、「[展開戦略](deployment-strategies-microsoft-365-enterprise.md)」を参照してください。
 
+## <a name="deployment-for-non-enterprises"></a>非エンタープライズの展開
+
+組織の規模が小さく、Microsoft 365 Business が適していない場合は、「[非エンタープライズの展開](deploy-foundation-infrastructure-non-enterprises.md)」を参照してください。
+
 
 ## <a name="next-step"></a>次の手順
 
-- Office 365、Enterprise Mobility + Security (EMS)、または Windows 10 Enterprise の既存のインフラストラクチャがある場合:
-  - 「[既存のインフラストラクチャで展開する](deploy-with-existing-infrastructure.md)」を参照してください。 この記事では、各フェーズの終了条件について説明しています。
-- 最初から始める場合: 
-   - 「[フェーズ 1: ネットワーク](networking-infrastructure.md)」を参照して、エンド ツー エンドの展開を始めてください。
+
+| 現在地 | 行く必要がある場所 |
+|:-------|:-----|
+| Office 365、Enterprise Mobility + Security (EMS)、または Windows 10 Enterprise の既存のインフラストラクチャがある場合 | [[既存のインフラストラクチャで展開する](deploy-with-existing-infrastructure.md)] から開始し、各フェーズの終了基準に進みます。 |
+| エンタープライズとして最初から始めている | 「[フェーズ 1: ネットワーク](networking-infrastructure.md)」を参照して、エンド ツー エンドの展開を開始します。 |
+| 非エンタープライズとして最初から始めている | 「[非エンタープライズの展開](deploy-foundation-infrastructure-non-enterprises.md)」を参照して、エンド ツー エンドの展開を開始します。 |

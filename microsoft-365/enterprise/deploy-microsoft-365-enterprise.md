@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937409"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054949"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
-Microsoft 365 Enterprise は、Office 365、Enterprise Mobility + Security (EMS)、Windows 10 Enterprise の組み合わせであり、次の特長があります。 
+Microsoft 365 Enterprise は、ローカルおよびクラウドベースの生産性アプリとサービスを Windows 10 Enterprise と組み合わせたもので、次のような特徴があります。  
 
 - インテリジェントなセキュリティを備えている。
 - 簡素化のため統合されている。

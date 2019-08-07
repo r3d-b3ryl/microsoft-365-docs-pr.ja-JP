@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise のワークロードとシナリオ
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: 06dc8683c471de9de7067a3d84673687cddc76c6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072407"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054929"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -39,6 +39,10 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオを次に示します。
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+
+その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://www.microsoft.com/microsoft-365/success/)」を参照してください。 この Web ページで、検索文字列を入力するか、[**フィルター**] をクリックして、Microsoft 365 内の業界、役割 (部署)、および製品を指定します。
+
+結果からカードをクリックすると、開始するための手順を確認できます。
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基盤インフラストラクチャの前提条件
 

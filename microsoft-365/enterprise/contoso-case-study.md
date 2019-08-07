@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,18 +13,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
-ms.openlocfilehash: 559e1af8a344fea2863c528eeaa99de718d2eeed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e587a2c6588faf32aa6882ef1659472365611517
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276674"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054919"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise
 
 **概要:** 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
 
-Microsoft 365 Enterprise は、Microsoft のプレミア クラウド製品であり、Office 365、Windows 10 Enterprise、Enterprise Mobility + Security (EMS) を組み合わせることで、あらゆる人がクリエイティブに、共同で作業できるようにし、かつセキュリティも確保するという包括的でインテリジェントなソリューションを提供します。 
+Microsoft 365 Enterprise は、Microsoft のプレミア クラウド製品であり、ローカルおよびクラウドベースの生産性アプリとサービスを Windows 10 Enterprise および高度なセキュリティ機能と組み合わせることで、あらゆるユーザーがクリエイティブで安全に共同作業ができるようにする包括的でインテリジェントなソリューションを提供します。 
 
 架空の企業、Contoso Corporation は、フランスのパリに本社を置く代表的な世界規模の製造業の複合企業です。Contoso 社は Microsoft 365 Enterprise を展開して、ネットワーク、ID、Windows 10 Enterprise、Office 365 ProPlus、モバイル デバイス管理、情報の保護、セキュリティに関する主な設計上の決定と実装の詳細に対応しました。 
 
