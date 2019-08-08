@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425670"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243938"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft マネージドデスクトップは、標準のポリシーセットを適用し、Microsoft の管理されたデスクトップデバイス、企業データの保存などをセキュリティで保護するために多くの Microsoft テクノロジを利用します。 以下の領域について詳細に説明します。  
+Microsoft マネージドデスクトップでは、管理されたデバイスとデータを保護するために、いくつかの Microsoft テクノロジを使用しています。 具体的には次のとおりです。 
 
 - [データセキュリティ](#data-security)-Microsoft マネージドデスクトップによって収集され、セキュリティで保護されたデータの種類
 - [デバイスセキュリティ](#device-security)– Microsoft マネージドデスクトップデバイスのセキュリティと保護
@@ -37,6 +37,7 @@ Microsoft マネージドデスクトップは、標準のポリシーセット�
 - アプリの展開と信頼性のデータ
 - 更新およびセキュリティポリシーの展開データ
 - デバイスに割り当てられているユーザー
+- Microsoft マネージドデスクトップがサービスを管理するために使用するアカウントに関連するテナントからのセキュリティログ
 
 
 
@@ -60,8 +61,7 @@ Id およびアクセス管理により、企業の資産とビジネス上の�
 
 サービス | 説明
 --- | ---
-バイオメトリクス認証 |  Windows Hello を使用すると、ユーザーが顔または PIN を使用してログインできるようになり、パスワードを忘れることがなくなります。 詳細については、「 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 」を参照してください。
-多要素認証 | Azure 多要素認証では、携帯電話を使用して、セルフサービスのパスワードのリセットだけでなく、追加の認証レベルを提供することにより、Microsoft マネージドデスクトップサービスの機密機能へのアクセスをより厳密に制御できます。 
+バイオメトリクス認証 |  Windows Hello を使用すると、ユーザーが顔または PIN を使用してログインできるようになり、パスワードを忘れることがなくなります。 お客様は、ハイブリッド構成でこのサービスを使用するために、オンプレミスの Active Directory に必要な前提条件を実装する責任があります。 詳細については、「 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 」を参照してください。 
 標準ユーザーアクセス許可 |  システムを保護し、より安全なものにするために、ユーザーには標準のユーザーアクセス許可が割り当てられます。 これは、Windows 自動操縦機能の一部として割り当てられます。
 
 
