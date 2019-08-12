@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のデバイスとアプリの準備を評価する方法について説明します。
-ms.openlocfilehash: eb619cf807c2bd4ad3644dbb26e72b62e30320c7
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584553"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830545"
 ---
 # <a name="step-1-device-and-app-readiness"></a>手順 1: デバイスとアプリの準備
 
@@ -41,7 +41,7 @@ ms.locfileid: "35584553"
 
 そのため、組織の規模と歴史によっては、アプリケーションとハードウェアの互換性を検証することが、推奨される 8 フェーズの展開プロセスにおける重要な最初の手順になることがあります。
 
-この記事では、最初のフェーズであるデバイスとアプリの準備に、新しい Desktop Analytics の Upgrade Readiness ツールなどの Microsoft の準備状況評価ツールを使用する方法について説明します。このツールは、インテリジェントなクラウド ベースのソリューションであり、Windows ライセンスで使用できます。
+この記事では、最初のフェーズであるデバイスとアプリの準備に、Desktop Analytics などの Microsoft の準備状況評価ツールを使用する方法について説明します。このツールは、インテリジェントなクラウド ベースのソリューションであり、Windows ライセンスで使用できます。
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10 互換性スキャン
 
@@ -53,11 +53,11 @@ Windows 10 を展開する前に、Windows 7、8、8.1 のいずれかを実行�
 
 ScanOnly やその他の Windows セットアップ コマンド スイッチの詳細については、「[Windows セットアップ コマンドライン オプション](https://aka.ms/setupswitches)」を参照してください。
 
-## <a name="recommended-tool-desktop-analytics-upgrade-readiness"></a>推奨されるツール: Desktop Analytics の Upgrade Readiness
+## <a name="recommended-tool-desktop-analytics"></a>推奨されるツール: Desktop Analytics
 
-Desktop Analytics の Upgrade Readiness は、従来のデスクトップ管理システムよりも利点が多く、お勧めのツールです。 エージェントレスであり、何億ものコンシューマー PC のアップグレードにより収集されたアプリケーションとドライバーの互換性情報を利用して、実行する必要がある手順をガイドします。 その情報を使用して詳細な評価を行い、アップグレードをブロックする可能性のある互換性の問題を特定し、Microsoft が把握している修正プログラムへのリンクを提供してサポートします。
+Desktop Analytics は、従来のデスクトップ管理システムよりも利点が多く、お勧めのツールです。 エージェントレスであり、何億ものコンシューマー PC のアップグレードにより収集されたアプリケーションとドライバーの互換性情報を利用して、実行する必要がある手順をガイドします。 その情報を使用して詳細な評価を行い、アップグレードをブロックする可能性のある互換性の問題を特定し、Microsoft が把握している修正プログラムへのリンクを提供してサポートします。
 
-Window Analytics の Upgrade Readiness を設定するには、まず Azure サブスクリプションを設定し、それに Azure Log Analytics ワークスペースを含める必要があります。 Desktop Analytics の Upgrade Readiness サービスが起動したことを確認したら、グループ ポリシー設定を使用してインターネットに接続された Windows 7 SP1 以降のデバイスを登録できます。とても簡単です。 エージェントを展開する必要はありません。Desktop Analytics の Upgrade Readiness の視覚的なワークフローにより、パイロットから運用環境への展開をガイドします。 必要に応じて、Desktop Analytics の Upgrade Readiness から System Center Configuration Manager (Current Branch) などのソフトウェア展開ツールにデータをエクスポートしたり、ターゲット PC に直接データをエクスポートしたりして、展開の準備が整い次第コレクションを作成できます。
+Desktop Analytics を設定するには、まず Azure サブスクリプションを設定し、それに Azure Log Analytics ワークスペースを含める必要があります。 Desktop Analytics のサービスが起動したことを確認したら、グループ ポリシー設定を使用してインターネットに接続された Windows 7 SP1 以降のデバイスを登録できます。とても簡単です。 エージェントを展開する必要はありません。Desktop Analytics の視覚的なワークフローを参考にしながら、パイロットから運用環境への展開を実施できます。 必要に応じて、Desktop Analytics から System Center Configuration Manager (Current Branch) などのソフトウェア展開ツールにデータをエクスポートしたり、ターゲット PC に直接データをエクスポートしたりして、展開の準備が整い次第コレクションを作成できます。
 
 現時点で目的の環境に Desktop Analytics をセットアップしていない場合や、試用のためにサインアップしようとしている場合は、Desktop Analytics ページ] (http://www.aka.ms/desktopanalytics) に移動して開始してください。
 
@@ -67,17 +67,15 @@ Window Analytics の Upgrade Readiness を設定するには、まず Azure サ�
 
 ### <a name="1-inventory"></a>1\. インベントリ
 
-Desktop Analytics の Upgrade Readiness サービスは、エージェントレス型のプロセスを使用して、デスクトップ資産全体にわたるコンピューター、アプリケーションをインベントリに登録します。
+Desktop Analytics は、エージェントレス型のプロセスを使用して、デスクトップ資産全体にわたるコンピューターとアプリケーションをインベントリに登録します。 さらに、頻繁にアクセスされるインターネット サイト、アプリおよびイントラネットの場所に関するレポートを示します。これは、この後の互換性テストの役に立ちます。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
-
-さらに、頻繁にアクセスされるインターネット サイト、アプリおよびイントラネットの場所に関するレポートを示します。これは、この後の互換性テストの役に立ちます。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. 優先度設定
 
-インベントリの作成により、Desktop Analytics の Upgrade Readiness は、優先度を設定するときに役立つ、組織で最も一般的に使用されているアプリとハードウェアを特定します。また、できるだけ多くの PC の展開のために排除する障害に注目するときにも役立ちます。
+インベントリを作成すると、Desktop Analytics を使用して、組織で最も一般的に使用されているアプリとハードウェアを特定し優先度を設定することができます。また、できるだけ多くの PC に展開するために注意すべき障害物を特定するのにも役立ちます。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -85,9 +83,9 @@ Desktop Analytics の Upgrade Readiness サービスは、エージェントレ�
 
 ### <a name="3-testing"></a>3\. テスト
 
-インベントリに登録されたアプリケーション、ドライバー、アドインのほとんどは、そのままで動作することがわかります。 Desktop Analytics の Upgrade Readiness で問題ありと評価された項目については、互換性の問題を解決するためのバージョン更新の入手先など、既知の情報が提供されます。 わずかしか展開されていない重要性の低いアプリケーションや古いデバイスに関する複雑な問題を解決するために時間とリソースを割くのではなく、ユーザーと協力してこれらの項目をインベントリから削除し置き換えることができます。
+インベントリに登録されたアプリケーション、ドライバー、アドインのほとんどは、そのままで動作することがわかります。 Desktop Analytics で問題ありと評価された項目については、互換性の問題を解決するためのバージョン更新の入手先など、既知の情報が提供されます。 わずかしか展開されていない重要性の低いアプリケーションや古いデバイスに関する複雑な問題を解決するために時間とリソースを割くのではなく、ユーザーと協力してこれらの項目をインベントリから削除し置き換えることができます。
 
-Desktop Analytics の Upgrade Readiness を使用して、ユーザーがアクセスした Web サイトと Web アプリのうち Microsoft Edge ブラウザーでサポートされなくなったレガシ テクノロジ (ActiveX コントロール、ブラウザー ヘルパー オブジェクト、VBScript など) を依然として使用しているものを識別することで、ブラウザー ベースの互換性問題についても評価できます。ユーザーは、そうしたサイトに対して引き続き Internet Explorer 11 を使用する必要があるため、これに該当するサイトは Enterprise Mode Site List Manager を使用して[エンタープライズ モード サイト一覧](https://docs.microsoft.com/ja-JP/microsoft-edge/deploy/emie-to-improve-compatibility)に追加してください。
+Desktop Analytics を使用して、ブラウザーベースの互換性の問題を評価することもできます。ユーザーがアクセスする Web サイトおよび Web アプリのうち、Active X コントロール、Browser Helper Objects、VBScript、または Microsoft Edge ブラウザーでサポートされていないその他の従来のテクノロジを依然として使用しているものを特定します。 ユーザーは、そのようなサイトに対しては引き続き Internet Explorer 11 を使用する必要があります。また、Enterprise Mode Site List Manager を使用し、[エンタープライズ モード サイト リスト](https://docs.microsoft.com/ja-JP/microsoft-edge/deploy/emie-to-improve-compatibility)にサイトを追加することができます。
 
 さらに、Office 365 ProPlus への移行を円滑に進めるために、[Readiness Toolkit for Office](https://docs.microsoft.com/ja-JP/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) を利用して、アドインと Microsoft Visual Basic for Applications (VBA) マクロの互換性をテストすることもできます。
 
@@ -114,7 +112,7 @@ Windows 10 と Office 365 ProPlus アプリの互換性を支援する別のツ�
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>診断データ ツールの継続的な使用
 
-Desktop Analytics の Upgrade Readiness は、Windows 10 および Office 365 ProPlus への移行に役立つだけのツールではありません。デスクトップで Windows 10 と Office 365 を実行している場合、このツールは、半期ごとに機能の更新プログラムの展開と管理を維持して最新の状態に保つために利用できます。
+Desktop Analytics は、Windows 10 および Office 365 ProPlus への移行に役立つだけのツールではありません。 デスクトップで Windows 10 と Office 365 を実行するようになれば、Desktop Analytics を用いて、半期ごとの機能更新プログラムの展開と管理を行って最新の状態を保つことができます。
 
 ## <a name="next-step"></a>次の手順 
 

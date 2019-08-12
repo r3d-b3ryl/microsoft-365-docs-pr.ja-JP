@@ -3,7 +3,7 @@ title: 非エンタープライズ向け Microsoft 365 Enterprise の基礎イ�
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: エンタープライズ以外の組織を対象として、Microsoft 365 Enterprise の基礎インフラストラクチャの単純化されたフェーズを順番に説明します。
-ms.openlocfilehash: 64d911a9d59d5b9b1a450a9a122463699ec8eab8
-ms.sourcegitcommit: 2cf0d57b1771b37db773c3eaabac8456a6fa9195
+ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
+ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34419816"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35624635"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ向け Microsoft 365 Enterprise の基礎インフラストラクチャ
 
@@ -42,16 +42,18 @@ ms.locfileid: "34419816"
 
 ## <a name="phase-1-networking"></a>フェーズ 1: ネットワーク
 
-通常、エンタープライズ以外の組織の場合、各オフィスでローカル インターネット接続を使用しており、プロキシ サーバー、ファイアウォール、パケット検査デバイスは使用していません。 各オフィスのインターネット サービス プロバイダー (ISP) は地域のローカル DNS サーバーを用意しているので、トラフィックは各自のオフィスとそのオフィスのオンプレミス ユーザーに最も近い Microsoft 365 クラウドサーバーに直接送信されます。
+通常、エンタープライズ以外の組織の場合、各オフィスでローカル インターネット接続を使用しており、プロキシ サーバー、ファイアウォール、パケット検査デバイスは使用していません。 各オフィスのインターネット サービス プロバイダー (ISP) は地域のローカル DNS サーバーを用意しているので、トラフィックは各自のオフィスとそのオフィスのオンプレミス ユーザーに最も近い Microsoft 365 のネットワークの場所に直接送信されます。
 
 したがって、各オフィスの所在地の接続について ISP に確認が必要なのは、以下の事項のみです。
 
 - 地域のローカル DNS サーバーを使用している。
 - ユーザーがより多くの Microsoft 365 クラウドサービスを使い始めても、現在および将来のニーズを十分に満たす能力がある。
 
+プロキシ サーバー、ファイアウォール、またはパケット インスペクション デバイスを使用する場合の詳細については、「[Microsoft 365 Enterprise のネットワーク インフラストラクチャ](networking-infrastructure.md)」を参照してください。
+
 ### <a name="your-configuration-so-far"></a>これまでの構成
 
-以下は、フェーズ 1 の要素に注目して概要を視覚的に示したものです。 **組織**には複数のオフィスがある場合があり、各オフィスには地域のローカル DNS サーバーを使用している ISP 経由のローカル インターネット接続があります。 ISP を介して、各オフィスのユーザーは、最も近い Microsoft ネットワークの場所にアクセスして Microsoft 365 サブスクリプションのリソースを使用できます。
+以下は、フェーズ 1 の要素に注目して概要を視覚的に示したものです。 **組織**には複数のオフィスがある場合があり、各オフィスには地域のローカル DNS サーバーを使用している ISP 経由のローカル インターネット接続があります。 ISP を介して、各オフィスのユーザーは、最も近い Microsoft 365 のネットワークの場所にアクセスして Microsoft 365 サブスクリプションのリソースを使用できます。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
@@ -75,11 +77,12 @@ ms.locfileid: "34419816"
 |:-------|:-----|:-----|
 | ベースライン | これは、データ、データにアクセスする ID とデバイスを保護するための最低限の既定の基準です。 <BR><BR> 通常、ほとんどのユーザーによって管理されている組織の大部分のデータが対象になります。 | 営業、マーケティング、サポート、管理、製造など、現場担当者を対象にしたグループ。 |
 | 機密 | これは、ベースライン レベルを越えて保護する必要があるデータのサブセットに対する追加の保護です。 これらのグループには、すべてのユーザーが利用できるようには意図されていない、部署やプロジェクトに固有の機密性の高いデータを使用および作成するユーザーが含まれています。 | 今後導入予定の製品を開発している製品チームまたはマーケティング チーム |
-| 厳しく規制 | これは、高度に分類され、知的財産または営業秘密と見なされる、通常は少量のデータ、またはセキュリティ規制に準拠する必要があるデータに対する最高レベルの保護です。 |  調査、法務、財務の各チーム。 <BR><BR> 顧客やパートナーのデータを保存または使用しているチーム。 |
+| 厳しく規制 | これは、高度に分類され、知的財産または営業秘密と見なされる、通常は少量のデータ、またはセキュリティ規制に準拠する必要があるデータに対する最高レベルの保護です。 |  研究チーム、法務チーム、財務チーム、あるいは顧客やパートナーのデータを保存または使用するチーム。 |
+||||
 
 ### <a name="hybrid-identity"></a>ハイブリッド ID
 
-オンプレミスの AD DS ドメインがある場合は、パスワード ハッシュ同期 (PHS) を使用してサーバー上に Azure AD Connect を構成します。 詳細については、「[ID を同期する](identity-azure-ad-connect.md)」を参照してください。
+オンプレミスの AD DS ドメインがある場合は、ドメインのユーザー アカウント、グループ、連絡先一式を Microsoft 365 Enterprise サブスクリプションの Azure AD テナントと同期する必要があります。 エンタープライズ以外の場合は、パスワード ハッシュ同期 (PHS) を使用してサーバー上に Azure AD Connect を構成します。 詳細については、「[ID を同期する](identity-azure-ad-connect.md)」を参照してください。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>条件付きアクセスポリシーを使用したユーザー アクセスのセキュリティ強化
 
@@ -149,7 +152,7 @@ Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity P
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
-新しく取り上げた ID 要素には次のものがあります。
+新しく取り上げたハイブリッド ID の要素には次のものがあります。
  
 |||
 |:------:|:-----|
@@ -160,15 +163,23 @@ Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity P
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件付きアクセス ポリシー。 |
 |||
 
+以下は、新しい要素に注目して、クラウド専用 ID の ID フェーズの概要を視覚的に示したものです。
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+ 
+新しく取り上げたクラウド専用 ID の要素には次のものがあります。
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件付きアクセス ポリシー。 |
+|||
+
+
+
 ## <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
 お使いの Windows 10 Enterprise デバイスを Microsoft 365 の ID とセキュリティ インフラストラクチャに確実に統合するには、次のオプションを使用できます。
-
-- クラウド専用 (オンプレミスの AD DS ドメインがない場合)
-
-  Windows 10 Enterprise の各デバイスをサブスクリプションの Azure AD テナントに参加させます。
-
-  詳細については、「[職場のデバイスを組織のネットワークに参加させる](https://docs.microsoft.com/ja-JP/azure/active-directory/user-help/user-help-join-device-on-network)」を参照してください。
 
 - ハイブリッド (オンプレミスの AD DS ドメインがある場合)
 
@@ -178,7 +189,14 @@ Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity P
 
   Windows 10 Enterprise デバイスは、各デバイスをモバイル デバイスの管理用に登録します。 手順については、「[グループ ポリシーを使用して Intune に Windows 10 デバイスを登録する](https://go.microsoft.com/fwlink/p/?linkid=872871)」を参照してください。
 
-インストールして参加させると、Windows 10 Enterprise の各デバイスには、Windows Update for Business クラウド サービスから更新プログラムが自動的にインストールされます。 通常、エンタープライズ以外の組織では、更新プログラムの配布やインストール用にインフラストラクチャをセットアップする必要はありません。
+- クラウド専用 (オンプレミスの AD DS ドメインがない場合)
+
+  Windows 10 Enterprise の各デバイスをサブスクリプションの Azure AD テナントに参加させます。
+
+  詳細については、「[職場のデバイスを組織のネットワークに参加させる](https://docs.microsoft.com/ja-JP/azure/active-directory/user-help/user-help-join-device-on-network)」を参照してください。
+
+
+インストールして参加させると、Windows 10 Enterprise の各デバイスには、Windows Update for Business クラウド サービスから更新プログラムが自動的にインストールされます。 通常、エンタープライズ以外の組織では、Windows 10 更新プログラムの配布やインストール用にインフラストラクチャをセットアップする必要はありません。
 
 ### <a name="your-configuration-so-far"></a>これまでの構成
 
@@ -196,9 +214,9 @@ Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity P
 
 ## <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
-Microsoft 365 Enterprise には、Microsoft Office のサブスクリプション版である Office 365 ProPlus が含まれています。 Office 2016 または Office 2019 と同様に、Office 365 ProPlus はクライアント デバイスに直接インストールされます。 ただし、Office 365 ProPlus には定期的に新機能が提供されます。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
+Microsoft 365 Enterprise には、Microsoft Office のサブスクリプション版である Office 365 ProPlus が含まれています。 Office 2016 または Office 2019 と同様に、Office 365 ProPlus はクライアント デバイスに直接インストールされます。 ただし、Office 365 ProPlus には、新機能を含む更新プログラムが定期的に提供されます。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
 
-エンタープライズ以外の組織の場合は、手動で Office 365 ProPlus をデバイスにインストールします。 これは、新しいデバイスを使用する準備の一環として実行することも、ユーザーがオンボーディング プロセスの一環として実行することもできます。
+エンタープライズ以外の組織の場合は、手動で Office 365 ProPlus をデバイスにインストールします。 これは、新しいデバイスを使用する準備の一環として実行することも、ユーザーがオンボード プロセスの一環として実行することもできます。
 
 いずれの場合でも、管理者またはユーザーは https://portal.office.com で Office 365 ポータルにサインインします。 **[Microsoft Office Home]** タブで、**[Office のインストール]** をクリックして、インストール プロセスを進めます。
 
@@ -220,13 +238,13 @@ Office 365 ProPlus に対する機能更新プログラムは、インストー�
 
 ## <a name="phase-5-mobile-device-management"></a>フェーズ 5: モバイル デバイス管理
 
-Microsoft 365 Enterprise には、モバイル デバイス管理用の Microsoft Intune が含まれています。 Intune を使用すると、iOS、Android、macOS、Windows の各デバイスを管理して、自分のデータを含む、組織のリソースへのアクセスを保護することができます。 Intune は Azure AD のユーザー、グループ、コンピューター アカウントと統合されています。
+Microsoft 365 Enterprise には、モバイル デバイス管理用の Microsoft Intune が含まれています。 Intune を使用すると、Windows、iOS、Android、macOS の各デバイスを管理して、自分のデータを含む、組織のリソースへのアクセスを保護することができます。 Intune では、Azure AD のユーザー、グループ、コンピューター アカウントを使用します。
 
 Intune には、次の 2 種類のモバイル デバイス管理が用意されています。
 
 - モバイル デバイス管理 (MDM) は、デバイスが Intune に登録された時点から行われます。 登録されると、デバイスはマネージド デバイスとなり、組織で使用されているポリシー、ルール、設定を受信できます。 これらの種類のデバイスは、通常、組織が所有し、従業員に支給されます。
 
-- 自分の個人用デバイスを使用しているユーザーの中には、自分のデバイスを登録したり、ポリシーや設定を使用して Intune で管理したりすることを望まないユーザーもいます。 しかし、そうであっても、組織のリソースとデータを保護する必要があります。 このような場合は、モバイル アプリケーション管理 (MAM) を使用して、アプリを保護することができます。 これらの種類のデバイスは、私物機器の業務利用 (BYOD) と呼ばれ、通常は従業員が所有しています。 
+- 自分の個人用デバイスを使用しているユーザーの中には、自分のデバイスを登録したり、ポリシーや設定を使用して Intune で管理したりすることを望まないユーザーもいます。 しかし、そうであっても、組織のリソースとデータを保護する必要があります。 このような場合は、モバイル アプリケーション管理 (MAM) を使用して、アプリを保護することができます。  
 
 Intune ポリシーでは、デバイス コンプライアンスとアプリ保護を適用できます。 以下は、作成する Intune ポリシーの一覧です。
 
@@ -275,13 +293,13 @@ Microsoft 365 Enterprise には情報保護機能が用意されており、さ�
 
 - 厳しく規制
 
-  顧客やパートナーの個人を特定できる情報、組織の知的財産などがあります。
+  顧客やパートナーの個人を特定できる情報、組織の財務情報や知的財産などが例として挙げられます。
 
 次の手順では、これらのレベルのデータ セキュリティに基づいて、以下を特定して実装します。
 
 - カスタムの機密情報の種類
 
-  Microsoft 365 では、医療サービスやクレジット カード番号など、さまざまな機密情報の種類を提供しています。 Microsoft 365 によって提供される項目の一覧に必要なものが見つからない場合は、独自に作成することができます。
+  Microsoft 365 では、医療サービスやクレジット カード番号など、さまざまな機密情報の種類を提供しています。 提供される項目の一覧に必要なものが見つからない場合は、独自に作成することができます。
 
 - 保持ラベル
 
@@ -295,7 +313,12 @@ Microsoft 365 Enterprise には情報保護機能が用意されており、さ�
 
 アクセス許可の機密度ラベルを使用する場合は、追加の Azure AD セキュリティ グループを作成して、電子メールとドキュメントに対してどのような操作を誰に許可するのかを定義する必要があります。 
 
-たとえば、リサーチ チームの電子メールとドキュメントを保護するには、"リサーチ" という機密度ラベルを作成する必要があります。 リサーチ チームのメンバーの一部には、リサーチ機密度ラベルが付けられているドキュメントを変更できる権限が必要であり、またリサーチ チーム以外の他の従業員には、リサーチ機密度ラベルが付いているドキュメントの表示だけをできる権限が必要であると決定します。 つまり、次の 2 つのグループを追加で作成して管理する必要があります。
+たとえば、リサーチ チームの電子メールとドキュメントを保護するには、"リサーチ" という機密度ラベルを作成する必要があります。 以下を決定する必要があります。
+
+- リサーチを行う従業員は、機密度ラベル "リサーチ" が付けられたドキュメントを変更できなければならない。
+- リサーチを行わない従業員に必要なのは、機密度ラベル "リサーチ" が付けられたドキュメントを表示する機能のみ。 
+
+つまり、次の 2 つのグループを追加で作成して管理する必要があります。
 
 - リサーチ-すべて
 - リサーチ-表示
@@ -317,23 +340,23 @@ Microsoft 365 Enterprise には情報保護機能が用意されており、さ�
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | ユーザーがドキュメントに適用できる 3 つのセキュリティ レベルの機密度ラベル。 |
 |||
 
-保持ラベルとカスタム情報の種類は表示されません。
+カスタム情報の種類と保持ラベルは表示されません。
 
 ## <a name="onboarding"></a>オンボード
 
-このインフラストラクチャでは、これらのプロセスを使用して、従業員に Microsoft 365 Enterprise 向けのオンボードを実施することができます。
+Microsoft 365 Enterprise のインフラストラクチャがあれば、組織の従業員を簡単にオンボードすることができます。
 
 ### <a name="a-new-windows-10-enterprise-device"></a>新しい Windows 10 Enterprise デバイス
 
 従業員に新しい Windows 10 Enterprise デバイスを提供する前に、以下を実行します。
 
+- ハイブリッド ID の場合
+
+  デバイスを AD DS ドメイン、Azure AD テナントの順に参加させてから、Intune に登録します。
+
 - クラウド専用 ID の場合
 
   デバイスを Microsoft 365 Enterprise サブスクリプションの Azure AD テナントに参加させます。
-
-- ハイブリッド ID 
-
-  デバイスを AD DS、Azure AD テナントの順に参加させてから、Intune に登録します。
 
 ### <a name="existing-employee-with-an-ad-ds-user-account"></a>AD DS ユーザー アカウントを持っている既存の従業員
 
@@ -345,7 +368,11 @@ Microsoft 365 Enterprise には情報保護機能が用意されており、さ�
 
 既存の従業員は、適切なワークグループ、部署、地域の AD DS グループに既に追加されている必要があります。
 
-### <a name="new-employee-with-cloud-only-user-account"></a>クラウド専用ユーザー アカウントを持っている新しい従業員
+Microsoft 365 管理センターで、複数の Azure AD グループにユーザー アカウントを追加できます。 ユーザー アカウントのプロパティで、**[グループの管理] > [メンバーシップの追加]** の順にクリックします。
+
+Powershell を使用する場合は、この[ダウンロード可能な Excel ブック](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)を参照してください。指定したユーザー アカウントと選択したグループ名に基づいて PowerShell コマンドが生成されます。
+
+### <a name="new-employee-with-a-cloud-only-user-account"></a>クラウド専用ユーザー アカウントを持っている新入社員
 
 クラウド専用 ID を使用する場合には、組織の初期のオンボードの一環として、次のグループに新しいユーザー アカウントを追加します。
 
@@ -356,7 +383,7 @@ Microsoft 365 Enterprise には情報保護機能が用意されており、さ�
 
 ### <a name="initial-sign-in-to-microsoft-365"></a>Microsoft 365 への最初のサインイン
 
-AD DS ユーザー アカウントを持つ新しい従業員または既存の従業員が初めて Microsoft 365 にサインインする場合は、次を行うように従業員に指示してください。
+従業員が初めて Microsoft 365 にサインインする場合は、以下を実施します。
 
 1. ユーザー アカウントの資格情報を使用して、デバイスにサインインする。
 2. ブラウザーを使用して、https://portal.office.com で Office 365 ポータルにサインインする。
@@ -410,4 +437,4 @@ Microsoft 365 Enterprise インフラストラクチャの構築および構成�
 
 ## <a name="next-step"></a>次の手順
 
-[ワークロードとシナリオ](deploy-workloads.md)を展開して、基礎インフラストラクチャの機能と構成を活用します。
+[ワークロードとシナリオ](deploy-workloads.md)を展開して、Microsoft 365 Enterprise の基礎インフラストラクチャの機能と構成を活用します。
