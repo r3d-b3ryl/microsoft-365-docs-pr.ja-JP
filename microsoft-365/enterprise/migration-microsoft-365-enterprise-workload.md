@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise への移行
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 171a0d1b9db5c6dad89d091e81413fbdd785b3b4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f82e65cdff674884466fe70a299250c92f356186
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073297"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297883"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -28,6 +28,10 @@ ms.locfileid: "34073297"
 - コンピューターにインストールされている Office クライアントから Office 365 ProPlus
 - サーバーにインストールされている Office サーバーから Office 365 の同等のサービス
 - デバイス上の Windows 7 および Windows 8.1 から Windows 10 Enterprise
+
+>[!Note]
+>Windows 7 は、2020 年 1 月 14 日にサポート終了になります。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
+>
 
 時経つうちにこれらすべての移行が完了すれば、組織内のチームワークと創造性を引き出す安全で統合された[最新の職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)環境に組織を近づけることができます。これはすべて Microsoft 365 Enterprise によって成し遂げることができます。 
 
@@ -151,6 +155,16 @@ Microsoft の IT 担当者がどのように会社のデータを Microsoft 365 
 - [SharePoint からクラウドへ: Microsoft が実施した移行方法](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Microsoft における、Windows 10 のインプレース アップグレードとしての展開方法](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Windows 10 の展開: Microsoft の IT 担当者からのヒント](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (ビデオ)
+
+## <a name="transition-your-entire-organization"></a>組織全体の移行
+
+組織全体を Microsoft 365 Enterprise に移行する方法をより良く理解するためには、[移行のポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)をダウンロードしてください。
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 この記事に記載されている製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
+
+このポスターは、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷できます。
 
 ## <a name="result"></a>結果
 

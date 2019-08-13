@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise を展開する
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054949"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297907"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
@@ -29,13 +29,13 @@ Microsoft 365 Enterprise は、ローカルおよびクラウドベースの生�
 - 創造性を引き出す。
 - 共同作業向けに構築されている。
 
-これらのメリットは、3つの製品のライセンスを取得するだけで実現するのではなく、統合および最新のセキュリティを含む特定の方法で、製品と製品の機能を展開する事で実現できます。
+ユーザーは、最先端のセキュリティ サービスと機能が含まれる統合的な手法で、インフラストラクチャと生産性ワークロードを展開することにより、これらの利点を得ることができます。
 
 Microsoft 365 Enterprise を展開するには、主に 3 つの方法があります。
 
-- Microsoft 365 FastTrack を使用して Microsoft のエンジニアと操作する方法。
+- [Microsoft 365 の FastTrack](#fasttrack-for-microsoft-365) を使用して、Microsoft のエンジニアと一緒に操作する方法。
 - Microsoft Consulting Services または [Microsoft partner](https://partner.microsoft.com/) を使う方法。
-- Microsoft 365 Enterprise の展開ガイドを使って自分で操作する方法。
+- [Microsoft 365 Enterprise の展開ガイド](#microsoft-365-enterprise-deployment-guide) を使って自分で操作する方法。
 
 ## <a name="fasttrack-for-microsoft-365"></a>Microsoft 365 の FastTrack
 
@@ -57,7 +57,7 @@ Microsoft 365 Enterprise を自分で展開するには:
 
   **小規模または新しい組織の場合**、次のフェーズにそってインフラストラクチャーを構築します。
 
-  必要に応じて、任意の順番でインフラストラクチャーのフェーズまたはフェーズの一部を展開することができます[交互または同時](deployment-strategies-microsoft-365-enterprise.md)。現在のインフラストラクチャーと統合するには、IT プランおよびリソースが適切で、ビジネスニーズを満たさなければなりません。 
+  必要に応じて、任意の順番でインフラストラクチャーのフェーズまたはフェーズの一部を展開することができます[交互または同時](deployment-strategies-microsoft-365-enterprise.md)。現在のインフラストラクチャーと統合するには、IT プランおよびリソースが適切で、ビジネスニーズを満たさなければなりません。 非エンタープライズの簡略化された展開については、[ここ](deploy-foundation-infrastructure-non-enterprises.md) をクリックしてください。
 
   **企業組織の場合**、フェーズをパスではなく IT インフラストラクチャーのレイヤーとして表示し、組織全体のレイヤーに必要な条件に対して最終的に一番いい方法を決定します。
 
@@ -85,6 +85,16 @@ TLGs を使用すると、自己学習、実例説明、カスタマイズする
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+## <a name="transition-your-entire-organization"></a>組織全体の移行
+
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)をダウンロードしてください。
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows および Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
+
+このポスターは、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷できます。
+
 ## <a name="how-did-others-do-it"></a>他のユーザーはどのように活用しましたか？
 
 他のユーザーがどのように Microsoft 365 Enterprise を展開し、活用しているか知りたい場合は、これらのリソースを使います。
@@ -98,11 +108,10 @@ TLGs を使用すると、自己学習、実例説明、カスタマイズする
 3. [**業種**] で組織の業種を選択します。
 4. [**製品**] で [**Microsoft 365**] を選択します。
 5. お客様の導入事例を見るには、カードの上をクリックします。
-  
 
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-デジタル企業文化を定義することは、最新の職場を促進するよう努めているすべてのリーダーにとって最優先です。　 Microsoft 365 は、このような文化的なシフトをサポートするように設計されており、リーダーが、会社にいるすべての人の創造性と共同作業を解き放てるよう役立てています。 Microsoft では、基本となるインフラストラクチャを確立することは、このようなデジタル文化へシフトするまさに火付け役となりました。 Microsoft 365 Enterprise を実装すると、Microsoft Teams や Exchange Online などの共同作業のテクノロジを展開し、セキュリティで保護された SharePoint イントラネット サイトのオンライン間での機密データを共有できるようになります。
+デジタル企業文化を定義することは、近代的な職場づくりに努めているすべてのリーダーにとって優先すべき重要課題です。　 この種の文化的なシフトをサポートするために設計された Microsoft 365 では、会社のすべての人々の力となり、自由な創造性と共同作業を育むリーダーを支援しています。 Microsoft の基本となるインフラストラクチャを確立することが、まさにこの種のデジタル文化へのシフトを引き起こしてきました。 Microsoft 365 Enterprise を実装することで、Microsoft Teams や Exchange Online のような共同作業のテクノロジを展開し、セキュリティで保護された SharePoint イントラネット サイト間でオンラインの機密データを共有できるようになりました。
 
 同時に、高度なセキュリティ機能と製品との統合は管理のニーズを効率化し、IT ライフ サイクル全体で総保有コストを最小限に抑えるのに役立ちます。 
 
@@ -115,7 +124,7 @@ TLGs を使用すると、自己学習、実例説明、カスタマイズする
 
 架空の企業、Contoso Corporation は、フランスのパリに本社を置く、代表的な世界規模の製造業の複合企業です。 [Contoso 社が Microsoft 365 Enterprise を展開](contoso-case-study.md)して、ネットワーク、ID、Windows 10 Enterprise、Office 365 ProPlus、モバイル デバイス管理、情報保護そしてセキュリティに関する主な設計上の決定と実装の詳細に、どのように対処したか参照してください。 
 
-## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>次に、Microsoft 365 Enterprise を展開する
+## <a name="next-step"></a>次の手順
 
 Microsoft サポートをご希望の場合は、[FastTrack](https://fasttrack.microsoft.com/microsoft365)をご利用下さい。
 
