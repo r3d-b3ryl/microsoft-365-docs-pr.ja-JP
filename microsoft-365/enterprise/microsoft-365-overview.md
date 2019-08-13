@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise の概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: de67f9e99fbb7a3a6e85001ec675f16672f4ef22
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937425"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297897"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
 
@@ -59,15 +59,26 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 
 [Microsoft 365 Enterprise ポスター](http://aka.ms/m365eposter)は、次のものを一元的に表示する場所です。
 
-- Microsoft 365 Enterprise の利点とその価値の柱へのマッピング方法
+- Microsoft 365 Enterprise の利点と、アプリとサービスがその価値の柱にマップされる方法
 - Microsoft 365 Enterprise プランと、それらに含まれるコンポーネント 
 - Microsoft 365 Enterprise が有効になっているモダンワークプレースの主要なコンポーネント
-- Microsoft 365 Enterprise の主要なビジネス価値シナリオと、それらのサービスおよび製品が発生すること
+- 一般的な組織部門のための[Microsoft 365 プロダクティビティライブラリ](https://www.microsoft.com/microsoft-365/success/)と代表的なシナリオ
 - Microsoft 365 Enterprise[展開ガイド](deploy-microsoft-365-enterprise.md)を強調した導入ロードマップ
 
 ![](./media/m365-poster/m365e-poster.png)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)をクリックしてください。
+
+
+## <a name="transition-your-entire-organization"></a>組織全体を移行する
+
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)をダウンロードしてください。
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+この2ページのポスターを使用すると、既存のインフラストラクチャをすばやく把握し、Microsoft 365 Enterprise の対応する製品またはサービスに移行するためのガイダンスを得ることができます。 これには、Windows および Office 製品と、デバイスの管理、id、情報や脅威の保護などのセキュリティ要素が含まれています。
+
+このポスターは、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
 
 ## <a name="deploying"></a>配備
 
