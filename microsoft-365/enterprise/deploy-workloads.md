@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054929"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297867"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -66,7 +66,7 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
   - [Exchange Online](exchangeonline-workload.md)。ユーザーはクラウド ベースのメールの使用できるようになります。
 - 厳しく規制されたデジタル資産をすぐにクラウドで使用する必要がない場合は、**情報保護**レイヤーの前に [Microsoft Teams](teams-workload.md) と [SharePoint Online](sharepoint-online-onedrive-workload.md) をユーザー向けに展開します。
 
-ビジネス ニーズの達成が最高になるように、基盤インフラストラクチャの前提となるフェーズの設定について最適な順序と展開を決定する必要があります。
+ビジネス ニーズを満たすように、基盤インフラストラクチャの前提となるフェーズの設定について最適な順序と展開を決定する必要があります。
 
 ### <a name="best-practice"></a>ベスト プラクティス
 
@@ -77,3 +77,4 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
 全体的なパフォーマンスにとって基本的で非常に重要ですが、Microsoft 365 のアプリケーションとサービスのパフォーマンスは時間の経過とともに向上することを考慮すると、使用するネットワークにおける**ネットワーキング** フェーズのロールアウトはユーザーをワークロードに参加させながら進めることができます。
 
 これは特に複数の場所とエッジ デバイスとインターネット接続が混在する企業にあてはまります。
+
