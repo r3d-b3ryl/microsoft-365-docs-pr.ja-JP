@@ -23,7 +23,7 @@ ms.locfileid: "35853176"
 # <a name="desktop-deployment-center"></a>最新デスクトップ展開センターをご覧いただき
 
 <strong>Windows 7 から Windows 10 にアップグレードする</strong>
-<p>2020 年 1 月 14 日に Windows 7 の延長サポートが終了します。 Windows 7 から Windows 10 へのインプレース アップグレードが、最速の展開方法です。 ユーザーは<a href="https://docs.microsoft.com/ja-JP/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">単一の PC をアップグレードしたり</a>、System Center Configuration Manager を使用して<a href="https://docs.microsoft.com/ja-JP/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">数千の PC をアップグレードしたりできます</a>。 インプレース アップグレードを使用するアプリの配信、ファイルの移行、カスタム イメージング、またはクラウドベースのサービスの有効化だけにこだわる必要はありません。 既存の PC をアップグレードする既存のツールを使用して、次のアップグレード用の展開手順に頼ることができます。 </p>
+<p>2020 年 1 月 14 日に Windows 7 の延長サポートが終了します。 Windows 7 から Windows 10 へのインプレース アップグレードが、最速の展開方法です。 ユーザーは<a href="https://docs.microsoft.com/ja-JP/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">単一の PC をアップグレードしたり</a>、System Center Configuration Manager を使用して<a href="https://docs.microsoft.com/ja-JP/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">数千の PC をアップグレードしたりできます</a>。 インプレース アップグレードを使用するアプリの配信、ファイルの移行、カスタム イメージング、またはクラウドベースのサービスの有効化だけにこだわる必要はありません。 既存の PC をアップグレードするには既存のツールを使用でき、次のアップグレード用の展開手順に重点を置きます。 </p>
 
 <p>
 <table>
@@ -47,7 +47,7 @@ ms.locfileid: "35853176"
                   <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="100" width="100" />
               </td>
               <td>
-              <strong>デバイスとアプリの準備を確認する</strong>
+              <strong>デバイスとアプリの準備状況を確認する</strong>
                   </td>
                  </tr>
                 </table>
@@ -67,9 +67,9 @@ ms.locfileid: "35853176"
     </tr>
     <tr>
     <td>
-System Center Configuration Manager を使用する組織のディレクトリとネットワークの一部を準備する手順 </td>
+System Center Configuration Manager を使用する組織のディレクトリとネットワークの準備手順の一部 </td>
     <td>
-デバイスとアプリの一部を準備する手順。Desktop App Assure を介してヘルプを入手できます </td>
+デバイスとアプリの準備手順の一部。Desktop App Assure 経由でヘルプが提供されます </td>
     <td>
 ユーザーにより保持されている PC の OS の展開および機能の更新プログラムの手順 </td>
     </tr>
