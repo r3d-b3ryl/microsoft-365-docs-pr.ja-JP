@@ -77,8 +77,7 @@ Azure Active Directory を配置したら、対象ユーザーは Office 365 Pro
 
 ネットワーク上の展開に関連するトラフィックの影響を制限する 1 つの方法は、クライアント上の BITS (バックグラウンド インテリジェント転送サービス) 設定を使用して調整することです。BITS は、アダプティブ ビット レート (ABR) を使用して、展開のために使用可能な帯域幅を調整します。これは、グループ ポリシーを使用してクライアント上で構成できます。
 
-
-  [BITS について](https://docs.microsoft.com/ja-JP/windows/desktop/bits/about-bits)
+[BITS について](https://docs.microsoft.com/ja-JP/windows/desktop/bits/about-bits)
 
 System Center Configuration Manager (Current Branch) を使用している場合は、BITS 対応の配布ポイントを構成することも、WDS でマルチキャストを有効にすることもできます。
 
@@ -120,8 +119,7 @@ System Center Configuration Manager でサポートされている**ピア キ�
 
 **バイナリ デルタ圧縮**: Office 365 ProPlus では、バイナリ デルタ圧縮を使用して、Office 365 ProPlus の最新リリースから次のリリースに更新するときにソフトウェアの更新によって消費される帯域幅を削減します。前のリリースからのバイナリ レベルの変更のみを引き出すことで、累積的な更新プログラムによる毎月のサイズ膨張の影響を最小限に抑えることができます。これにより、PC ごとに、毎月数百 MB のデータを節減できる可能性があります。ただし、この機能を使用する場合、リリースをスキップすることはできません。スキップしたい場合は、完全な累積的更新プログラムをダウンロードする必要があります。
 
-
-  [Office 365 ProPlus の更新プログラムをダウンロードする](https://docs.microsoft.com/ja-JP/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Office 365 ProPlus の更新プログラムをダウンロードする](https://docs.microsoft.com/ja-JP/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
 **Outlook データ ファイル** 多くの場合、Outlook はユーザーのメール ボックス全体をローカルにキャッシュし、オフラインで使用するように構成されています。 インプレース アップグレード以外の Windows の展開では、アップグレード後にユーザーの Outlook データ ファイルを再構築する必要があります。 これは自動化されたプロセスですが、Outlook メールボックスの制限値を通常どおり最大 100 GB に設定した場合、すべてのユーザーのローカルのメールボックス全体を再キャッシュすると大量のデータ転送が発生します。 ネットワーク負荷を軽減するには、グループ ポリシーを使用して [オフラインにしておくメール] の設定値を小さくすることを検討してください。 Office 365 ProPlus または Outlook 2016 の Outlook では、既定値は 12 か月に設定されています。 オフライン キャッシュを直近 1 ～ 6 か月の間に設定することを検討してください。 この設定を変更してもオンライン メールボックスのサイズには影響しませんし、オンラインの時に Outlook 経由でメールボックス全体を検索することもできます。
 
@@ -133,7 +131,7 @@ System Center Configuration Manager でサポートされている**ピア キ�
 
 [既知のフォルダー移動のセットアップ](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 
-[OneDrive ファイル オンデマンド](https://www.microsoft.com/en-us/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
+[OneDrive ファイル オンデマンド](https://www.microsoft.com/ja-JP/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
 OneDrive をまだロールアウトしていない場合は、Windows 7 から Windows 10 への移行時が OneDrive を有効にする絶好の機会であり、そうすることにより Office 365 ProPlus をシームレスに統合できます。 アプリとデバイスの準備作業中に、このロールアウトを開始することを検討してください。 これにより、Windows イメージを移動し、ネットワーク経由でアプリを展開する前に、ファイルの同期が開始されます。
 

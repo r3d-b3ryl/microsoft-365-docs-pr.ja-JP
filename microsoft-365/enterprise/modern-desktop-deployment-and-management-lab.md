@@ -126,8 +126,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www
 
   - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](http://www.aka.ms/watchhowtoshift)
 
-  - 
-  [System Center Configuration Manager の OS の展開](https://docs.microsoft.com/ja-JP/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager の OS の展開](https://docs.microsoft.com/ja-JP/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 の展開計画</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

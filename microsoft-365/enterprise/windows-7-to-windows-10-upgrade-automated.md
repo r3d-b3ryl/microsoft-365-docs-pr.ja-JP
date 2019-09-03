@@ -78,8 +78,7 @@ Azure Active Directory、Office およびビジネスアプリの配送とパッ
 
   - 低レベル コード ソリューション (マルウェア対策、VPN、仮想化など)
 
-
-  [アップグレード タスク シーケンス](https://docs.microsoft.com/ja-JP/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)テンプレートは、System Center Configuration Manager の現在のブランチに組み込まれており、いくつかのリリースで使用できます。 最近のリリースでは、System Center Configuration Manager のテクノロジーが強化され、プロセスをより効率的にして、デバイスや Office の互換性の評価を行い、ネットワーク トラフィックを削減し、OneDrive バックアップなどの新規オプションの構成を行うことができるようになりました。 System Center Configuration Manager OS の展開に関する最新の更新プログラムの詳細については、[Microsoft の発表](https://youtu.be/CYRnAmCD7ls) をご覧ください。
+[アップグレード タスク シーケンス](https://docs.microsoft.com/ja-JP/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)テンプレートは、System Center Configuration Manager の現在のブランチに組み込まれており、いくつかのリリースで使用できます。 最近のリリースでは、System Center Configuration Manager のテクノロジーが強化され、プロセスをより効率的にして、デバイスや Office の互換性の評価を行い、ネットワーク トラフィックを削減し、OneDrive バックアップなどの新規オプションの構成を行うことができるようになりました。 System Center Configuration Manager OS の展開に関する最新の更新プログラムの詳細については、[Microsoft の発表](https://youtu.be/CYRnAmCD7ls) をご覧ください。
 
 System Center Configuration Manager を使用していない場合は、Microsoft 展開ツールキットを使用して、アップグレード展開タスク シーケンスを作成して実行できます。
 
