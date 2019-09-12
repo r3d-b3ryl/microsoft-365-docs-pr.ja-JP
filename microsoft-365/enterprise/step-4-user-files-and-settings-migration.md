@@ -59,15 +59,13 @@ USMT は、ユーザー アカウント、オペレーティング システム�
 
 PC の更新を実行するときにプライマリ Windows パーティションを再フォーマットしない場合は、USMT にハードリンク移行ストアを使用するというオプションも選択できます。このプロセスでは、PC のユーザー状態は保持されますが、古いオペレーティング システムとアプリケーションは削除され更新されます。同じローカル パーティションからの復元プロセスを使用することで、このオプションは、パフォーマンスの大幅な向上と、ネットワーク トラフィックの削減を実現します。
 
-
-  [ユーザー状態移行ツール (USMT) の概要](https://docs.microsoft.com/ja-JP/windows/deployment/usmt/usmt-overview)
+[ユーザー状態移行ツール (USMT) の概要](https://docs.microsoft.com/ja-JP/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>OneDrive の Known Folder Move
 
 ユーザーが OneDrive ユーザーの場合や、今回の展開の一環として OneDrive を追加する場合は、新しいオプションを選択できます。ユーザーのファイルの同期にクラウドを使用することで、OneDrive の「Known Folder Move (既知のフォルダーの移動)」機能は、ローカル ネットワーク ベースのオプションでは不可能なレベルの柔軟性を提供します。この機能を移行前に有効にしておくと、新しい PC または更新した PC に安全にアクセスできるようになります。また、自分のサーバーに一時的な移行ストアを作成する必要もなくなります。さらに、ユーザーにとって完全に透過的になる潜在力もあります。
 
-
-  [Windows の既知のフォルダーを OneDrive にリダイレクトして移動する](https://docs.microsoft.com/ja-JP/onedrive/redirect-known-folders)
+[Windows の既知のフォルダーを OneDrive にリダイレクトして移動する](https://docs.microsoft.com/ja-JP/onedrive/redirect-known-folders)
 
 既に OneDrive を使用している場合は、ユーザーが OneDrive または SharePoint から自分のデバイスに同期するフォルダーと場所を選択できることがわかるようになりますが、実際には、そのような設定作業がエンド ユーザーに負担をかけることになります。Known Folder Move では、ユーザー プロファイル内の [ドキュメント]、[デスクトップ] および [ピクチャ] フォルダーを対象にして、そのすべてを OneDrive で保護できます。この操作はユーザーが自分で実行することもできますが、このシナリオにとって重要なのは、[グループ ポリシー設定を使用して強制適用](https://docs.microsoft.com/ja-JP/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)することもできるということです。
 

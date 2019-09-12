@@ -43,8 +43,7 @@ ms.locfileid: "34814608"
 
 Windows にアプリをインストールするための方法とモデルは多数あります。次に、選択可能な配信のオプションについて説明します。
 
-
-  [Windows 10 アプリケーションの管理](https://docs.microsoft.com/ja-JP/windows/application-management/)
+[Windows 10 アプリケーションの管理](https://docs.microsoft.com/ja-JP/windows/application-management/)
 
 ## <a name="msi-based-deployments"></a>MSI ベースの展開
 
@@ -62,11 +61,9 @@ System Center Configuration Manager や Microsoft Intune などのソフトウ�
 
 イメージに Office 365 ProPlus を含める必要がある場合は、ユーザー ベースのライセンス認証を使用することになります。システム管理者が事前にライセンス認証することはできません。Office 展開ツールを使用して、イメージングするデバイスに Office をプレインストールして、ユーザー サインインをスキップします。 イメージが展開されれば、エンドユーザーは自分の Office 365 の資格情報でサインインし、Office 365 ProPlus をアクティブ化することができます。
 
+[オペレーティング システムをインストールするタスク シーケンスの作成](https://docs.microsoft.com/ja-JP/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-  [オペレーティング システムをインストールするタスク シーケンスの作成](https://docs.microsoft.com/ja-JP/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
-
-
-  [オペレーティング システム イメージの一部としての Office 365 ProPlus の展開](https://docs.microsoft.com/ja-JP/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[オペレーティング システム イメージの一部としての Office 365 ProPlus の展開](https://docs.microsoft.com/ja-JP/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office クイック実行 
 
@@ -82,17 +79,13 @@ System Center Configuration Manager は、引き続き Office 365 ProPlus の広
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
+[Office 365 ProPlus の展開ガイド](https://docs.microsoft.com/ja-JP/deployoffice/deployment-guide-for-office-365-proplus)
 
-  [Office 365 ProPlus の展開ガイド](https://docs.microsoft.com/ja-JP/deployoffice/deployment-guide-for-office-365-proplus)
+[Office 365 ProPlus にアップグレードする際に Office の既存の MSI バージョンを削除する](https://docs.microsoft.com/ja-JP/deployoffice/upgrade-from-msi-version)
 
+[Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/ja-JP/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-  [Office 365 ProPlus にアップグレードする際に Office の既存の MSI バージョンを削除する](https://docs.microsoft.com/ja-JP/deployoffice/upgrade-from-msi-version)
-
-
-  [Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/ja-JP/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-
-
-  [Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる](https://docs.microsoft.com/ja-JP/intune/apps-add-office365)
+[Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる](https://docs.microsoft.com/ja-JP/intune/apps-add-office365)
 
 ## <a name="browser-based-apps"></a>ブラウザー ベースのアプリ
 
@@ -100,8 +93,7 @@ System Center Configuration Manager は、引き続き Office 365 ProPlus の広
 
 さらに、イントラネット サイトが Microsoft Edge では正常に動作しなくなることがわかっている場合は、すべてのイントラネット サイトが自動的に Internet Explorer 11 で開かれるように設定することもできます。このプロセスでは、それぞれのサイトに IE11 を使用するかどうかを制御するために XML ファイルを使用します (設定の適用にはグループ ポリシーを使用します)。
 
-
-  [エンタープライズ モードとは](https://docs.microsoft.com/ja-JP/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+[エンタープライズ モードとは](https://docs.microsoft.com/ja-JP/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 ここまでは、よく知られている展開方法を見てきました。 これら以外にも、アプリの新しい展開方法が 2 つありますので、ぜひ検討してみてください。
 
