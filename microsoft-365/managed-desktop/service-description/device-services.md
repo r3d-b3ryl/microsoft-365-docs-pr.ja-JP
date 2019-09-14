@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390654"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982488"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージドデスクトップデバイスサービス
 
@@ -26,7 +26,7 @@ Microsoft は、Microsoft マネージドデスクトップデバイスにこれ
  --- | ---
 サポート | サポートエージェントは、デバイス機能に直接関連する質問に回答し、デバイスの問題を診断します。
 インベントリ | すべてのデバイスは、Microsoft Managed Desktop Admin portal でインベントリおよび状態追跡用に追跡されます。
-ファームウェア/ドライバーの更新プログラム | ファームウェア/ドライバーの更新プログラムは、Microsoft による互換性を確保するために展開および監視されます。 
+ファームウェア/ドライバーの更新プログラム | 既定では、Microsoft マネージドデスクトップデバイスは Windows Update からのファームウェアとドライバーの更新プログラムを受け取ります。 すべてのハードウェアパートナーが Windows Update 経由で更新プログラムを展開するわけではありません。これらの更新プログラムは、別途要求できます。
 備品 | デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条項は異なる場合があります。 デバイスを選択する際に選択した保証条件を参照してください。 
 デバイスのセットアップ    | デバイスは、現在のバージョンの Windows で事前構成され、クラウド経由でアプリと構成を受け取ります。 
 

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913018"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982458"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft マネージドデスクトップアプリの要件
 
@@ -33,7 +33,7 @@ Microsoft 管理デバイスにインストールされているすべてのア�
 
 Microsoft マネージドデスクトップデバイスでは、特定の種類のアプリケーションが許可されていません。
 - サードパーティ製のウイルス対策、セキュリティ、または監査ソフトウェア
-- Office 365 Pro Plus より前のバージョンの Microsoft Office
+- Office 365 ProPlus より前のバージョンの Microsoft Office
 - 他のサードパーティ製ソフトウェアをインストールまたはバンドルするアプリケーション
 
 ## <a name="restricted-app-behaviors"></a>制限されたアプリの動作

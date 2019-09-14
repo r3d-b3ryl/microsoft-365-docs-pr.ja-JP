@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9f3094b1a1272b0c200271b8d5703fe7173683a6
-ms.sourcegitcommit: 6b5370cded5d8259c9ed561eed324227f74c410b
+ms.openlocfilehash: 57c0be2e8aff09024f84c58bb895aab98324964d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36171737"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982538"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージドデスクトップテクノロジ
 
@@ -27,7 +27,8 @@ Microsoft 365 Enterprise ライセンスは、Microsoft が管理するすべて
 ## <a name="office-365-e3"></a>Office 365 E3
  |
  --- | ---
-Office 365 standard suite (64 ビット) | 標準の Office スイートアプリケーションは、デバイス (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote) に同梱されています。<br><br>C2R (Microsoft Project の完全バージョン) および Microsoft Visio が Office 365 に含まれていない場合は、64ビット版をクリックして実行します。 ただし、これらのアプリケーションのインストールは標準の Office スイートのインストールに依存しているため、Microsoft マネージドデスクトップでは、これらのアプリケーションを展開するために使用できる既定の Microsoft Intune 展開およびセキュリティグループが作成されています。ライセンスされたエンドユーザー。 詳細については、「microsoft [Project または Microsoft Visio を Microsoft マネージドデスクトップデバイスにインストール](../get-started/project-visio.md)する」を参照してください。  
+Office 365 ProPlus (64 ビット) | これらの Office アプリケーションは、Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote などのデバイスと共に出荷されます。<br><br>64ビット版の Microsoft Project と Microsoft Visio は含まれていません。 ただし、これらのアプリケーションのインストールは Office 365 ProPlus のインストールに依存しているため、Microsoft Managed Desktop では既定の Microsoft Intune 展開およびセキュリティグループが作成されており、これらのアプリケーションをライセンスに展開することができます。エンドユーザー。 詳細については、「microsoft [Project または Microsoft Visio を Microsoft マネージドデスクトップデバイスにインストール](../get-started/project-visio.md)する」を参照してください。
+OneDrive for Business | Azure Active Directory シングルサインオン <br><br>「デスクトップ」、「ドキュメント」、「画像」フォルダーの既知のフォルダーのリダイレクトが含まれています。Microsoft マネージドデスクトップで有効化および構成されている。 
 ストアアプリ |    Microsoft Sway と Power BI は、デバイスに同梱されていません。 これらのアプリは Microsoft ストアからダウンロードできます。
 Win32 アプリケーション |    Teams はデバイスに同梱されていませんが、microsoft マネージドデスクトップデバイス用にパッケージ化され、Microsoft によって提供されています。 Azure Information Protection クライアントはデバイスに同梱されていませんが、展開用にパッケージ化することができます。 
 Web アプリケーション |  Yammer、browser 内の Office、Delve、Flow、StaffHub、PowerApps、および Planner は、デバイスに同梱されていません。 ユーザーは、ブラウザーを使用して、これらのアプリケーションの web バージョンにアクセスできます。
@@ -37,7 +38,7 @@ Web アプリケーション |  Yammer、browser 内の Office、Delve、Flow、
 
  |
  --- | ---
-Application Virtualization (App-v) |    Microsoft マネージドデスクトップでは、Microsoft Intune でサポートされていないため、この種類の展開はサポートされていません。
+Application Virtualization (App-v) |    ユーザーは、Intune Win32 app management クライアントを使用して App-v パッケージを展開できます。
 Microsoft Defender Advanced Threat Protection |  Microsoft マネージドデスクトップは、これを使用してデバイスのセキュリティを監視します。 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5

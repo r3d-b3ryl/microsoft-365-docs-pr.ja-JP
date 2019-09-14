@@ -5,14 +5,13 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 12/18/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 08c0ee15869ac47d889f9575e8eaeff63fa64fd7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 40f26f83e8b3001d2010d3197020f067fc51aaae
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390630"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982478"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの管理者サポート
 
@@ -56,3 +55,4 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 ## <a name="additional-resources"></a>その他の技術情報
 - [Microsoft マネージドデスクトップのエンドユーザーサポート](end-user-support.md)。 
 - [Microsoft マネージドデスクトップのサポート](../service-description/support.md)。 
+- Microsoft マネージドデスクトップを既に購読している場合は、microsoft managed desktop admin の「 **Online resources** 」セクションの「Microsoft Managed Desktop admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を見つけることができます。 [ポータル](https://aka.ms/mwaasportal)。

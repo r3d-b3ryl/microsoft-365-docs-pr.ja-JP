@@ -8,16 +8,36 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
-ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
+ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35795623"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982608"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージドデスクトップドキュメントの変更履歴
 
 このトピックでは、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新されたトピックを一覧表示します。
+
+## <a name="september-2019"></a>2019年9月
+新規または変更されたトピック | 説明
+--- | ---
+[Microsoft マネージドデスクトップの前提条件](get-ready/prerequisites.md) | 更新されたトピック
+[Microsoft マネージドデスクトップデバイスをセットアップする](get-started/set-up-devices.md) | 新しいトピック
+[新しいデバイスを自分で登録する](get-started/register-devices-self.md) | 更新されたトピック
+[既存のデバイスを自分で登録する](get-started/register-reused-devices-self.md) | 新しいトピック
+[Microsoft マネージドデスクトップでの更新プログラムの処理方法](service-description/updates.md) | 更新されたトピック
+
+## <a name="august-2019"></a>2019年8月
+新規または変更されたトピック | 説明
+--- | ---
+[Microsoft コンサルティングサービスを使用する](get-ready/apps-mcs.md) | 更新されたトピック
+[Microsoft マネージドデスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新されたトピック
+[エンドユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新されたトピック
+[Microsoft マネージドデスクトップの前提条件](get-ready/prerequisites.md) | 更新されたトピック
+[Microsoft マネージドデスクトップテクノロジ](intro/technologies.md) | 更新されたトピック
+
+
 
 ## <a name="july-2019"></a>2019年7月
 新規または変更されたトピック | 説明
@@ -46,7 +66,7 @@ ms.locfileid: "35795623"
 [Microsoft マネージドデスクトップのマップされたドライブの準備](get-ready/mapped-drives.md) | 新しいトピック
 [Microsoft マネージドデスクトップの証明書とネットワークプロファイルを準備する](get-ready/certs-wifi-lan.md) | 新しいトピック
 [Microsoft マネージドデスクトップデバイスの注文](get-started/devices.md) | 更新されたトピック
-
+[エンドユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md)
 
 ## <a name="april-2019"></a>2019 年 4 月
 新規または変更されたトピック | 説明

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business にビジネスを移行する方法について説明します。
-ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a3f77bd18b9b900151c50f923b705e4ff0150519
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072742"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982443"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business への移行
 
@@ -35,7 +35,7 @@ ms.locfileid: "34072742"
   
 ## <a name="add-microsoft-365-business-licenses"></a>Microsoft 365 Business のライセンスを追加する
 
-Microsoft 365 Business を入手する方法は2つあります。 パートナーがいる場合は、microsoft[パートナーセンター](get-microsoft-365-business.md)から Microsoft 365 Business を購入することができます。 パートナーは、Microsoft 365 Business への移行を支援することもできます。
+Microsoft 365 Business を入手する方法は2つあります。 パートナーは、microsoft[パートナーセンター](get-microsoft-365-business.md)から Microsoft 365 Business を購入することができます。 パートナーは、Microsoft 365 Business への移行を支援することもできます。
   
 独自のサブスクリプションを管理する場合は、Microsoft 365 Business ライセンスを購入するために[sales に連絡](https://www.microsoft.com/microsoft-365/business)することができます。 
   

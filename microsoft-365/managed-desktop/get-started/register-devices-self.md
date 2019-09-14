@@ -1,62 +1,74 @@
 ---
-title: Microsoft マネージドデスクトップのデバイスを自分で登録する
+title: 新しいデバイスを自分で登録する
 description: Microsoft マネージドデスクトップで管理できるようにデバイスを自分で登録する
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 1e42ebe38cea87b3fedc7ebd7bdb52ceb2f1b2c5
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857300"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981728"
 ---
-# <a name="register-devices-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでのデバイスの登録
+# <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
->[!NOTE]
->このトピックでは、自分でデバイスを登録する手順について説明します。 パートナー向けのプロセスについては、「 [Register devices In Microsoft Managed Desktop in a パートナー](register-devices-partner.md)」で説明されています。
+Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Azure Portal で Microsoft Managed Desktop を使用してデバイスを登録できます。
 
-Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Azure Portal で Microsoft Managed Desktop を使用してデバイスを登録するか、API を使用して柔軟性を高めることができます。
+> [!NOTE]
+> パートナーと協力してデバイスを入手する方法 その場合は、ハードウェアハッシュの取得について心配する必要はありません。そのようにします。 パートナーが [パートナーセンター](https://partner.microsoft.com/dashboard)でお客様との関係を確立していること、および Azure Active Directory および Office 365 の委任された管理権限がパートナーに付与されていることを確認します。 パートナーが詳細については、 [パートナーセンターのヘルプ](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)を参照してください。 この関係が確立されると、パートナーは単にデバイスを登録するだけで済みます。これ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「[パートナーがデバイスを登録する手順](register-devices-partner.md)」を参照してください。 デバイスが登録されたら、[画像の確認](#check-the-image)とユーザーへ[のデバイスの配信](#deliver-the-device)を続行できます。
 
-## <a name="prepare-to-register-devices"></a>デバイスを登録するための準備
+## <a name="prepare-to-register-brand-new-devices"></a>ブランドを登録するために準備する-新しいデバイス
 
-使用するデバイスをまだ入手していない場合は、 [Microsoft Managed Desktop devices](../service-description/device-list.md)をチェックし、デバイスパートナーと連携して、サポートされているデバイスを調達してください。
 
-完全に新しいデバイスで作業しているか、または既存のデバイスを再利用しているかにかかわらず、Microsoft マネージドデスクトップに登録するには、**コンマ区切り (CSV) ファイル**を準備する必要があります。 このファイルには、各デバイスの以下の情報を含める必要があります。
+新しいデバイスを用意したら、次の手順を実行します。
 
->[!NOTE]
->この形式は、セルフサービスの登録にのみ使用されます。 パートナーを使用するための形式は、「 [Microsoft Managed Desktop の Register devices](register-devices-partner.md)」に記載されています。
+1. [各デバイスのハードウェアハッシュを取得します。](#obtain-the-hardware-hash)
+2. [ハッシュデータを結合する](#merge-hash-data)
+3. [Microsoft マネージドデスクトップにデバイスを登録](#register-devices)します。
+4. [画像が正しいことをもう一度確認してください。](#check-the-image)
+5. [デバイスを配信する](#deliver-the-device)
 
-これらの値は表示のために使用され、デバイスのプロパティを正確に照合する必要はありません。
-- デバイスの製造元 (例: SpiralOrbit) 
-- デバイスモデル (例: ContosoABC)
-- デバイスのシリアル番号
+### <a name="obtain-the-hardware-hash"></a>ハードウェアハッシュを取得する
 
-ハードウェアハッシュは、完全に一致している必要があります。
-- ハードウェアハッシュ
+Microsoft マネージドデスクトップは、ハードウェアハッシュを参照して各デバイスを一意に識別します。 この情報を取得するには、次の3つのオプションがあります。
 
-ハードウェアハッシュを取得するには、OEM またはパートナーからサポートを依頼するか、デバイスごとに次の手順を実行します。
+- ハードウェアハッシュを含む自動操縦登録ファイルについては、OEM サプライヤーにお問い合わせください。
+- 各デバイスで[Windows PowerShell スクリプト](#powershell-script-method)を実行し、ファイルに結果を収集します。
+- 各デバイスを開始しますが、Windows セットアップの動作を完了せず[に、リムーバブルフラッシュドライブでハッシュを収集](#flash-drive-method)します。
+
+#### <a name="powershell-script-method"></a>PowerShell スクリプトメソッド
 
 1.  管理者権限を持つ PowerShell プロンプトを開きます。
 2.  `Install-Script -Name Get-MMDRegistrationInfo` を実行します。
 3.  `powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 
+#### <a name="flash-drive-method"></a>Flash drive メソッド
 
-または、次の手順を新しいデバイスで実行することもできます (OOBE を初めて実行する前に)。
-
-1. 別のデバイスで、USB ドライブを挿入します。
+1. 登録している以外のデバイスに USB ドライブを挿入します。
 2. 管理者権限を持つ PowerShell プロンプトを開きます。
 3. `Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>` を実行します。
-4. ターゲットデバイスをオンにします。ただし、セットアップの操作は開始しません。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
+4. 登録するデバイスを有効にしますが、*セットアップの操作は開始*しないでください。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
 5. USB ドライブを挿入して、SHIFT + F10 キーを押します。
 6. 管理者権限で PowerShell プロンプトを開き、を実行`cd <pathToUsb>`します。
 7. `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` を実行します。
 8. `.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv` を実行します。
-3. USB ドライブを取り外し、次のようにしてデバイスをシャットダウンします。`shutdown -s -t 0`
+9. USB ドライブを取り外し、次のようにしてデバイスをシャットダウンします。`shutdown -s -t 0`
 
 >[!IMPORTANT]
->ターゲットデバイスの登録が完了するまで、もう一度電源を入れないでください。 
+>登録が完了するまでは、デバイスの電源を入れないでください。 
+
+
+### <a name="merge-hash-data"></a>ハッシュデータを結合する
+
+登録を完了するには、CSV ファイル内のデータを1つのファイルに結合する必要があります。 これを簡単にするためのサンプル PowerShell スクリプトを次に示します。
+
+`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+
+### <a name="register-devices"></a>デバイスの登録
+
+CSV ファイルは、登録用に特定の形式である必要があります。 前の手順でデータを自分で収集した場合は、ファイルが正しい形式になっている必要があります。業者からファイルを取得する場合は、形式を調整する必要があります。
 
 >[!NOTE]
 >便宜上、この CSV ファイルの[テンプレート](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx)をダウンロードすることができます。
@@ -71,10 +83,9 @@ Microsoft マネージドデスクトップをブランド化されたデバイ�
   ```
 
 >[!NOTE]
->サンプルデータの変更を忘れると、登録は失敗します。   
+>サンプルデータの変更を忘れると、登録は失敗します。
 
-
-## <a name="register-devices-by-using-the-azure-portal"></a>Azure ポータルを使用してデバイスを登録する
+#### <a name="register-devices-by-using-the-azure-portal"></a>Azure ポータルを使用してデバイスを登録する
 
 Microsoft マネージドデスクトップの[Azure ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
 
@@ -98,28 +109,35 @@ Microsoft マネージドデスクトップの[Azure ポータル](https://aka.m
 | State | 説明 |
 |---------------|-------------|
 | 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
-| 登録の失敗 | 登録を完了できませんでした。 詳細については、「[トラブルシューティング](register-devices-self.md#troubleshooting)」を参照してください。 |
+| 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](#troubleshooting-device-registration)」を参照してください。 |
 | ユーザーの準備完了 | 登録が成功し、デバイスをエンドユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| Active | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
+| アクティブ | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
 | 未使用 | デバイスはエンドユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  | 
 
-
-## <a name="register-devices-by-using-an-api"></a>API を使用してデバイスを登録する
-
-REST API を使用すると、頻繁に独立したデバイスの登録により柔軟性と再現性を高めることができます。 現時点では、この API を使用するには、Microsoft 連絡先からサポートを依頼して、この機能のプレビューに参加してください。
-
-
-
-## <a name="troubleshooting"></a>トラブルシューティング
+#### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
 
 | エラー メッセージ | 詳細 |
 |---------------|-------------|
 | デバイスが見つかりません | 提供された製造元、モデル、またはシリアル番号に一致するものが見つからなかったため、このデバイスを登録できませんでした。 これらの値は、デバイスの提供元に確認してください。 |
-| デバイスが見つかりません | このデバイスは組織内に存在しないため、登録を解除できませんでした。 その他のアクションは必要ありません。 |
 | ハードウェアハッシュが無効です | このデバイスに対して提供されたハードウェアハッシュが正しくフォーマットされていませんでした。 ハードウェアハッシュをもう一度確認してから再送信します。 |
 | デバイスは既に登録されています | このデバイスは既に組織に登録されています。 その他のアクションは必要ありません。 |
 | 別の組織によって要求されるデバイス | このデバイスは、既に別の組織によって要求されています。 デバイスサプライヤーに確認します。 |
 | 予期しないエラーです | 要求は自動的に処理されませんでした。 サポートに連絡して、要求 ID を提供します。<requestId> |
+
+### <a name="check-the-image"></a>画像を確認する
+
+デバイスが Microsoft マネージドデスクトップパートナーのサプライヤーからのものである場合は、イメージが正しいことを確認してください。
+
+また、必要に応じて、自分で画像を適用することも歓迎しています。 開始するには、作業している Microsoft の担当者に連絡して、イメージを適用するための場所と手順を提供します。
+
+### <a name="deliver-the-device"></a>デバイスを配信する
+
+> [!IMPORTANT]
+> ユーザーにデバイスを渡す前に、そのユーザーの[適切なライセンス](../get-ready/prerequisites.md)を取得して適用していることを確認してください。
+
+すべてのライセンスが適用されている場合は、[デバイスを使用する準備](get-started-devices.md)ができたら、ユーザーはデバイスを起動して、Windows セットアップ操作を続行することができます。
+
+
 
 
 

@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
-ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
+ms.openlocfilehash: 3ab99b402bf440cd0c113a87dc453ff388a5befb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630591"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982323"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 Business に関するよく寄せられる質問
 
@@ -72,7 +72,9 @@ IT 環境を標準化することは、長い目で見ると、メンテナン�
 Windows 10 でも、既存のデスクトップ (Win32) アプリケーションの互換性は高く、ほとんどの既存のアプリケーションは変更せずに動作します。 お客様は、Microsoft 365 Business にスムーズに移行するために、信頼できる IT アドバイザーと共に、<a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10 の互換性</a>について推奨されているアプリケーションのテスト プロセスの説明を参照し、<a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office のシステム要件</a>を確認してください。 
 
 ### <a name="what-is-windows-10-business"></a>Windows 10 Business とは何ですか。 
-Windows 10 Business は、Windows 10 Pro を補完するクラウド サービスとデバイス管理機能のセットであり、Microsoft 365 Business の集中管理とセキュリティ制御を有効にします。 Windows 10 Business には、新しい Windows 10 PC の展開を合理化するサービスである Windows AutoPilot も付属しています。 Windows 7、8、8.1 Professional のライセンスがあるデバイスを使用している場合、Microsoft 365 Business は、Windows 10 Business を展開するための前提条件である Windows 10 Pro へのアップグレードを提供します。 
+Windows 10 Business は、Windows 10 Pro を補完するクラウド サービスとデバイス管理機能のセットであり、Microsoft 365 Business の集中管理とセキュリティ制御を有効にします。 Windows 10 Business には、新しい Windows 10 PC の展開を合理化するサービスである Windows AutoPilot も付属しています。 Windows 7、8、8.1 Professional のライセンスがあるデバイスを使用している場合、Microsoft 365 Business は、Windows 10 Business を展開するための前提条件である Windows 10 Pro へのアップグレードを提供します。
+> [!IMPORTANT]
+> アップグレード時に元のプロダクトキーを入力する必要があります。それ以外の場合は、アップグレードが機能しません。 
 
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>Microsoft 365 Business は会社の Bring Your Own Device (BYOD) ポリシーのサポートをどのように役立つのですか。 
 多くの従業員は、各自の携帯電話やタブレットを使用して個人用の情報と仕事用の情報にアクセスしており、それぞれの目的のために複数のデバイスを使い分けることはしていません。 個人のデバイスを業務に使用することは一般的ですが、ビジネス情報が悪意を持つ者の手に渡るリスクが高まります。 競合他社の多くのモバイル データ保護ソリューションでは、ユーザーのデバイスで特定のモードに切り替えたり、他の複雑なメカニズムを使用したりする必要があり、ユーザーはそれを煩わしいと感じて、使用しなくなる可能性があります。 

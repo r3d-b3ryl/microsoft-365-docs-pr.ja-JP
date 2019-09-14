@@ -5,14 +5,13 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 69e8463ce6bfffcd2ee5e8dd0f7f724910b13802
-ms.sourcegitcommit: d137cb1bd67a79d8af84357dc156824830d35aa7
+ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "35924880"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982508"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのサポート
 
@@ -34,7 +33,7 @@ Microsoft マネージドデスクトップのサポートは次のとおりで�
 サポートされる製品:
 
 - Microsoft Defender Advanced Threat Protection を使用した Windows 10 
-- Office 365 スイートのサブセット: Outlook、Word、PowerPoint、Excel、Skype for Business クライアント、Microsoft Teams 
+- これらの Office 365 ProPlus アプリ: Outlook、Word、PowerPoint、Excel、Skype for Business クライアント、Microsoft Teams 
 - ビジネス向け Microsoft Store 
 - OneDrive for Business クライアント 
 
@@ -43,7 +42,7 @@ Microsoft マネージドデスクトップのサポートは次のとおりで�
 - 現行: 北アメリカ、カナダ (ケベック州を除く)、英国、オーストラリア、ニュージーランドのみ (24 時間365日) 
 - 英語は、お客様との電話およびチャットの会話でサポートされている唯一の言語です。 
 - 弊社は、会社のヘルプデスクをリプレースするのではなく、提携しています。基幹業務 (LOB) アプリ、ネットワークリソースなどは、引き続きヘルプデスクで処理されます。 
-- テストグループと Microsoft が管理されていないデスクトップデバイスにある microsoft 管理デバイスが範囲外です 
+- Microsoft マネージドデスクトップに含まれていない "テスト" グループとデバイスの microsoft マネージドデスクトップデバイスがスコープ外 
 
 
 ## <a name="related-topics"></a>関連項目

@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise の概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: de67f9e99fbb7a3a6e85001ec675f16672f4ef22
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: b1750e1810556b8dadd4a16481c9ada3195f6c3c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297897"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982838"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
 
@@ -55,9 +55,9 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 
 詳細については、「[各プランの特徴と機能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
 
-## <a name="at-a-glance"></a>概要
+## <a name="get-the-big-picture"></a>大きな画像を取得する
 
-[Microsoft 365 Enterprise ポスター](http://aka.ms/m365eposter)は、次のものを一元的に表示する場所です。
+[Microsoft 365 Enterprise ポスター](media/Microsoft365Enterprise.pdf)は、次のものを一元的に表示する場所です。
 
 - Microsoft 365 Enterprise の利点と、アプリとサービスがその価値の柱にマップされる方法
 - Microsoft 365 Enterprise プランと、それらに含まれるコンポーネント 
@@ -65,22 +65,42 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 - 一般的な組織部門のための[Microsoft 365 プロダクティビティライブラリ](https://www.microsoft.com/microsoft-365/success/)と代表的なシナリオ
 - Microsoft 365 Enterprise[展開ガイド](deploy-microsoft-365-enterprise.md)を強調した導入ロードマップ
 
-![](./media/m365-poster/m365e-poster.png)
+[![Microsoft 365 Enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)をクリックしてください。
 
 
 ## <a name="transition-your-entire-organization"></a>組織全体を移行する
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)をダウンロードしてください。
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Microsoft 365 ポスターへの移行の画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 この2ページのポスターを使用すると、既存のインフラストラクチャをすばやく把握し、Microsoft 365 Enterprise の対応する製品またはサービスに移行するためのガイダンスを得ることができます。 これには、Windows および Office 製品と、デバイスの管理、id、情報や脅威の保護などのセキュリティ要素が含まれています。
 
-このポスターは、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することができます。
 
-## <a name="deploying"></a>配備
+## <a name="avoid-end-of-support-for-office-2010-clients-and-servers-and-windows-7"></a>Office 2010 のクライアントおよびサーバーと Windows 7 のサポート終了を回避する
+
+次の製品は、 **2010 年1月14日**のサポート終了に到達します。
+
+- [Windows 7](https://aka.ms/win7upgrade)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+
+次の製品は、 **2020 年10月 13**日のサポート終了に到達します。
+
+- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+これらの製品のアップグレード、移行、クラウド移行の各オプションの視覚的な概要については、「[サポート終了ポスター](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)」を参照してください。
+
+[![Office 2010 クライアントおよびサーバーおよび Windows 7 ポスターのサポート終了の画像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+
+この1ページのポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポートが終了しないようにするために実行できるさまざまなパスを簡単に理解する方法です。 Microsoft 365 Enterprise では、優先パスとオプションのサポートが強調表示されています。
+
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することができます。
+
+## <a name="deploy"></a>展開
 
 Microsoft 365 Enterprise の製品、機能、およびコンポーネントを展開するには、次の3つの方法があります。
 
@@ -99,7 +119,7 @@ Microsoft 365 Enterprise の製品、機能、およびコンポーネントを�
 展開の詳細については、「how to:」を参照してください。
 
 - [お客様](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)は、Microsoft 365 Enterprise を使用します。
-- [](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) Microsoft では、Microsoft 365 Enterprise を使用しています。
+- [Microsoft では](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise)、Microsoft 365 Enterprise を使用しています。
 - 架空の多国籍企業である[Contoso Corporation](contoso-overview.md)は、Microsoft 365 Enterprise を展開しました。
 
 ## <a name="additional-microsoft-365-solutions"></a>その他の Microsoft 365 ソリューション

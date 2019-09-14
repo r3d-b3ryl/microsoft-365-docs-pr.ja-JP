@@ -5,7 +5,7 @@ keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメ�
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 0ee9696d441d61fb41359f6502e6f73988749156
-ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
+ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33623151"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982808"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>フェーズ 5: Microsoft 365 Enterprise のモバイルデバイス管理
 
@@ -26,17 +26,7 @@ ms.locfileid: "33623151"
 
 *この機能は、Microsoft 365 Enterprise の E3 および E5 バージョンに適用されます。*
 
-Microsoft 365 Enterprise では、組織内のデバイスとアプリを管理するのに役立つ機能が含まれています。 Microsoft Intune を使用すると、iOS、Android、macOS、および Windows デバイスを管理して、組織のリソース (データなど) へのアクセスを保護することができます。 Intune は Azure Active Directory (Azure AD) と統合され、次のビジネスシナリオを Microsoft 365 に対して有効にします。
-
-- 組織内外でファイルを保管および共有して、組織の境界を越えてシームレスに作業を行います
-- 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
-- 業界内で確証された世界標準のコンプライアンスに適合したコントロールと可視性により、安心感を提供します
-- 情報を保護して、データ損失のリスクを軽減します
-- 外部の脅威を検出して保護する
-- 組織のセキュリティを迅速に提供するために、アクティビティを監視、報告、および分析する
-- ユーザーとそのアカウントを保護する
-
-詳細については、「[Microsoft 365 を使用したデジタル改革](http://transform.microsoft.com)」を参照してください。 
+Microsoft 365 Enterprise では、組織内のデバイスとアプリを管理するのに役立つ機能が含まれています。 Microsoft Intune を使用すると、iOS、Android、macOS、および Windows デバイスを管理して、組織のリソース (データなど) へのアクセスを保護することができます。 
 
 このフェーズでは、デバイスを Intune に登録し、ポリシーを作成して適用し、データのセキュリティ保護と保護を強化します。 Intune ドキュメントのライブラリ全体が[オンラインで提供](https://docs.microsoft.com/intune)されています。 また、開始する前に、 [「Intune 展開の計画、設計、実装ガイド」](https://docs.microsoft.com/intune/planning-guide)を確認することをお勧めします。
 
@@ -146,7 +136,7 @@ Intune では、アプリの追加、他のユーザーまたはグループへ�
 Intune は強力なサービスで、多くの機能を備えています。 Intune を使用して実行できるその他のタスクを次に示します。
 
 - Windows[デバイス](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [pc](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)、 [iOS](https://docs.microsoft.com/intune/software-updates-ios)デバイスのソフトウェアと更新プログラムを管理する
-- Windows 10 デバイスで[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)を有効にし、コンプライアンスおよび条件付きアクセスを使用して、SharePoint や Exchange Online などの企業リソースへのアクセスを保護します。
+- Windows 10 デバイスで[Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)をオンにし、コンプライアンスおよび条件付きアクセスを使用して、SharePoint や Exchange Online などの企業リソースへのアクセスを保護します。
 - [見張り](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector)、 [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)、その他のモバイル防御の脅威パートナーを使用する
 - [パートナー証明機関 (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview)を追加して証明書を発行および更新する
 - 企業ポータルアプリの[エンドユーザーにガイダンスを提供](https://docs.microsoft.com/intune/end-user-educate)し、アプリを取得する

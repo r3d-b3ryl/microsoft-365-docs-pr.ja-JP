@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 キャンペーンの条件付きアクセスポリシーを設定する方法について説明します。
-ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 614e3a6e13a14114f40ecf87bf936d4165744503
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35076311"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982383"
 ---
 # <a name="set-up-conditional-access-policies"></a>条件付きアクセスポリシーを設定する
 
@@ -53,7 +53,7 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
 1. 各ポリシーについて、次の具体的な手順を参照してください。
 
   - [管理者に MFA を要求する](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [ユーザーの re を再構築する](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+- [ユーザーに MFA を要求する](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
  - [従来の認証をブロックする](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [サービス管理に MFA を必要とする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 

@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 322da1ccfbd0cf8b5070894580b06fb5b0283f40
-ms.sourcegitcommit: 1d5fc181036b673c4f0b9e161e19395dbfe5a304
+ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35411651"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982018"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -62,7 +62,7 @@ ms.locfileid: "35411651"
 
 ![MFA ルールのユーザー割り当てと除外の例](../images/identity-access-policies-assignment.png)
 
-図では、"Top secret プロジェクト X teams" には、MFA を必要とする条件** 付きアクセスポリシーが割り当てられています。 ユーザーにより高度な保護を適用する場合は、慎重に行います。 このプロジェクトチームのメンバーは、厳しく規制されたコンテンツを表示していない場合でも、ログオンするたびに2つの形式の認証を提供する必要があります。  
+図では、"Top secret プロジェクト X teams *" には、MFA を*必要とする条件付きアクセスポリシーが割り当てられています。 ユーザーにより高度な保護を適用する場合は、慎重に行います。 このプロジェクトチームのメンバーは、厳しく規制されたコンテンツを表示していない場合でも、ログオンするたびに2つの形式の認証を提供する必要があります。  
 
 これらの推奨事項の一部として作成されたすべての Azure AD グループは、Office 365 グループとして作成する必要があります。 これは、SharePoint Online のドキュメントをセキュリティで保護する場合の Azure Information Protection (AIP) の展開で特に重要です。
 
@@ -322,11 +322,11 @@ Windows 10 では、次の設定をお勧めします。
 ||Windows Defender マルウェア対策の署名が最新の状態になっています|必須||
 ||リアルタイム保護|必須|Windows 10 デスクトップでのみサポートされています。|
 
-**Windows Defender ATP**
+**Microsoft Defender ATP**
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|Windows Defender Advanced Threat Protection ルール|デバイスがコンピューターのリスクスコアの下または下にある必要があります。|中||
+|Microsoft Defender Advanced Threat Protection ルール|デバイスがコンピューターのリスクスコアの下または下にある必要があります。|中||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>準拠 Pc を必要とする (ただし、準拠する電話やタブレットではない)
 準拠している Pc を必要とするポリシーを追加する前に、管理するデバイスを Intune に登録してください。 デバイスが目的のユーザーを所有していることを保証するために、デバイスを Intune に登録する前に、多要素認証を使用することをお勧めします。 
@@ -384,6 +384,6 @@ Windows 10 では、次の設定をお勧めします。
 このポリシーを作成するときは、プラットフォームを選択しないでください。 これにより、準拠しているデバイスが強制できます。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [電子メールをセキュリティで保護するためのポリシーの推奨事項について学びます](secure-email-recommended-policies.md)

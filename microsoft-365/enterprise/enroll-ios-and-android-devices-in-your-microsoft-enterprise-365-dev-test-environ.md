@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: このテストラボガイドを使用して、Microsoft 365 テスト環境にデバイスを登録し、リモートで管理します。
-ms.openlocfilehash: b72298df3dbc470358f8cd87e5ca249999812516
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 0dde7acd10ad78327adb4862346639e05a276b4e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073717"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981998"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境に iOS および Android デバイスを登録する
 
@@ -52,9 +52,9 @@ Microsoft Intune には、リモート ロック機能とパスコードのリ�
   
 IOS または Android デバイスをリモートでロックするには、次の操作を行います。
 
-1. 全体管理者アカウントの資格情報[https://portal.azure.com](https://portal.azure.com)を使用して Azure Portal にサインインします。
+1. 全体管理者アカウントの資格情報[https://portal.azure.com](https://portal.azure.com)を使用して Azure portal にサインインします。
 2. [**すべてのサービス**] をクリックし、「 **intune**」と入力して、[ **intune**] をクリックします。
-3. [ **Devices _GT_ All Devices**] をクリックします。
+3. [**デバイス > すべてのデバイス**] をクリックします。
 4. デバイスの一覧で、iOS または Android デバイスをクリックし、[**リモートロック**] アクションをクリックします。
 
     
@@ -62,7 +62,7 @@ IOS または Android デバイスをリモートでロックするには、次�
 
 1. 必要に応じて、全体管理者アカウントの[https://portal.azure.com](https://portal.azure.com)資格情報を使用して Azure portal にサインインします。
 2. [**すべてのサービス**] をクリックし、「 **intune**」と入力して、[ **intune**] をクリックします。
-3. [ **Devices _GT_ All Devices**] をクリックします。
+3. [**デバイス > すべてのデバイス**] をクリックします。
 4. 管理するデバイスのリストから、iOS または Android デバイスをクリックし、[...] を選択し**ます。詳細を参照**してください。 次に、[**パスコード**デバイスのリモートアクションの削除] を選択します。
 
 その他の実験については、「[使用可能なデバイスの操作](https://docs.microsoft.com/intune/device-management#available-device-actions)」を参照してください
@@ -80,4 +80,3 @@ IOS または Android デバイスをリモートでロックするには、次�
   
 [Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
 
-[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

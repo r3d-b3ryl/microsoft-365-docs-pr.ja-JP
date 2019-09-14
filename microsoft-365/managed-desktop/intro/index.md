@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: c0866dc4ff4a768bbae2488cdea2655470978f94
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 1cde7cda7cf6bb42508aa52460ff2ee254f62967
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390694"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982588"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップとは
 
@@ -23,8 +23,8 @@ Microsoft マネージドデスクトップでは、最新のデバイスに Mic
 
 
 <table>
-<tr><th>最適な環境</th><th>最新テクノロジ</th><th>Microsoft によるバックアップ</th></tr>
-<tr><td><p>Windows 10</p><p>Office 365 ProPlus</p><p></p><p>Windows Autopilot</p><p>モダンデバイス</p></td><td><p>常に最新の状態</p><p>半期の機能の更新 </p><p>2年間または3年間のデバイス更新</p></td><td><p>デバイス構成</p><p>セキュリティの監視と修復</p><p>アプリの展開</p><p>更新管理</p><p>デスクトップ分析</p><p>24時間365日のエンドユーザーサポート</p></td></tr>
+<tr><th>成功エンドユーザー</th><th>IT を強化する</th><th>Microsoft によるバックアップ</th></tr>
+<tr><td><p>モダンデバイス</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>セキュリティ組み込み</p><p>顔認識でログインする</p><p>常に最新の状態</p></td><td><p>組み込みのセキュリティ</p><p>実践的な洞察</p><p>運用のサポート</p><p>Microsoft の専門家からのガイダンス</p></td><td><p>セキュリティ運用チーム</p><p>正常性の監視</p><p>データのクラウドバックアップ</p><p>ステートレスの原則</p><p>24時間365日のエンドユーザーサポート</p></td></tr>
 </table>
 
 Microsoft マネージドデスクトップは、ユーザーを delights し、IT リソースを解放してより重要なタスクを行うための包括的な IT ソリューションをお客様に提供します。 このサービスは、よく耳にするフィードバックに基づいて開発されています。

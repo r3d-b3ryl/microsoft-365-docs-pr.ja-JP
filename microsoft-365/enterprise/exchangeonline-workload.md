@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise の Exchange Online の展開
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 08/29/2018
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 組織全体で Microsoft 365 Enterprise の Exchange Online の価値を計画、ロールアウト、および促進するプロセスについて順を追って説明します。
-ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a13cb36dd313ef3e6763c6c48720bb2b3e935880
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072287"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981878"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Exchange Online の展開
 
@@ -53,21 +53,6 @@ Microsoft 365 Enterprise foundation インフラストラクチャの[フェー�
 Exchange Online はさまざまな目的に使用できます。 組織のさまざまなレベル、ビジネスグループ、部門、または個別の作業およびプロジェクトチームについて、ビジネスニーズに対応する目的を判断する必要があります。 個人および小規模グループの短時間の通信およびスケジュールのニーズを解決するには、Exchange Online を対象にする必要があります。 
 
 Exchange Online の利点を確認する方法の1つは、個人、チーム、または v チームが現在どのように連携しているかを調べて、より簡単にコミュニケーションを行い、会議を計画し、共同作業を行うための適切なシナリオを見つけることです。 グループ作業のシナリオによっては、 [Microsoft Teams](teams-workload.md)が適している場合があることに注意してください。
-
-Exchange Online では、Microsoft 365 Enterprise の次のような戦略的なビジネスシナリオが有効になります。
-
-- リアルタイムまたは好きな時間にドキュメントで共同作業を行って、共同作成プロセスを簡略化します
-- プロジェクト、タスク、期限を管理して、ビジネス目標を達成します
-- 業務の習慣を理解して、影響力を増します
-- チーム内でコミュニケーションを図って、最新の情報に精通し、意見を求め、団結力と考えの一致を高めます
-- 組織内外でファイルを保管および共有して、組織の境界を越えてシームレスに作業を行います
-- 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
-- 情報を保護して、データ損失のリスクを軽減します
-- 外部の脅威を検出して保護する 
-- アクティビティを監視、報告、および分析して、組織のセキュリティを迅速に提供する
-- 一般データ保護規則 (GDPR) に適合するように、強化されたプライバシーと法令遵守によって組織をサポートします。
-
-詳細については、「[Microsoft 365 を使用したデジタル改革](http://transform.microsoft.com)」を参照してください。 
 
 #### <a name="result"></a>結果
 コミュニケーション、スケジュール、および短時間のコラボレーションに関する組織のニーズに対応する Exchange Online のシナリオの一覧。
@@ -182,7 +167,7 @@ Microsoft の内部をピークし、exchange Online に移行し、Exchange Onl
 - [Microsoft は脅威からの保護、脅威の検出、脅威への対応に脅威インテリジェンスを使用する](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
 - [Microsoft の Office 365 を使用したフィッシング阻止の試み](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Exchange Online の継続的なメンテナンスについては、次のリソースを参照してください。
 
