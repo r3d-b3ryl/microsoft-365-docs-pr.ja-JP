@@ -3,7 +3,7 @@ title: 'フェーズ 4: Office 365 ProPlus'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の Office 365 ProPlus インフラストラクチャを展開する手順。
-ms.openlocfilehash: cf698e4dbee17a811a4d2bc01d08d4d97d1961c1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074177"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982768"
 ---
 # <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
@@ -29,24 +29,6 @@ ms.locfileid: "34074177"
 Microsoft 365 Enterprise に含まれている Office 365 ProPlus は、Office のサブスクリプション版です。Office 2016 と同様に、Office 365 ProPlus にはすべての Office アプリケーションが含まれており、これらのアプリケーションはクライアント デバイスに直接インストールされます。Office 2016 とは異なり、Office 365 ProPlus は定期的に更新され新機能が導入されます。また、ユーザーベースのライセンス モデルを採用しており、Office を最大 5 台のデバイスにインストールできます。詳細については、「[企業内での Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
 
 このフェーズでは、Microsoft 365 Enterprise の一部である Office 365 ProPlus をクライアント デバイスに展開します。このガイダンスの他に、展開の際に役立つ [Microsoft Fastrack](https://fasttrack.microsoft.com/office) を使用することをお勧めします。 
-
-Office 365 ProPlus を使用すると、Microsoft 365 Enterprise の次の戦略的なビジネス シナリオが実現可能になります:
-
-- リアルタイムまたは好きな時間にドキュメントで共同作業を行って、共同作成プロセスを簡略化します
-- 集合知や専門知識を活用し、組織全体でファイル、情報、アイデアを発見、共有、発展させるよう人々を支援します
-- ユーザーがビジネス プロセスを変換し、効率を向上できるよう支援します
-- プロジェクト、タスク、期限を管理して、ビジネス目標を達成します
-- デザイン、文書作成、コンテンツの探索などに関するインテリジェント アシスタンスを使用して、洗練された仕上がりにします
-- 洞察を得、データを分析し、情報を共有することによって、皆が十分な情報を得たうえで決定を下せるようにします
-- チーム内でコミュニケーションを図って、最新の情報に精通し、意見を求め、団結力と考えの一致を高めます
-- 世界中のパートナー、同僚、顧客とのコミュニケーションを図り、あらゆるサイズのグループと計画的および臨時の通話やオンライン会議を実施します
-- 組織内外でファイルを保管および共有して、組織の境界を越えてシームレスに作業を行います
-- 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
-- 業界内で確証された世界標準のコンプライアンスに適合したコントロールと可視性により、安心感を提供します
-- 情報を保護して、データ損失のリスクを軽減します
-- デスクトップ ソフトウェアやデバイスで最新情報を入手し、セキュリティ上のリスクの軽減と IT 効率の最大化を図ります
-
-詳細については、「[Microsoft 365 を使用したデジタル改革](http://transform.microsoft.com)」を参照してください。 
 
 既に Office 365 ProPlus を展開している場合は、このフェーズの[終了条件](office365proplus-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件を満たしていることを確認してください。
 
@@ -87,7 +69,7 @@ Office 365 ProPlus を展開する前に、「[Office 365 ProPlus を展開す�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft のエキスパートが [Office 365 ProPlus の更新プログラムを展開および管理](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7)する方法について説明します。
+Microsoft のエキスパートが [Office 365 ProPlus の更新プログラムを展開および管理](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR7)する方法について説明します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 

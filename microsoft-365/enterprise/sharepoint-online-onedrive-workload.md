@@ -2,7 +2,7 @@
 title: SharePoint Online と OneDrive for Business を Microsoft 365 Enterprise 向けに展開する
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft 365 Enterprise の SharePoint Online を計画、ロールアウトするプロセス、および SharePoint Online の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: fab2a368a936fc3ffb4a56a9dc81ba6b3e0b0910
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9ceadbb0268d3a2aa82309d01933a8bd05429188
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074117"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981768"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>SharePoint Online と OneDrive for Business を Microsoft 365 Enterprise 向けに展開する
 
@@ -67,23 +67,6 @@ SharePoint Online はさまざまな目的で使用できます。どの目的�
 各自のニーズに合わせて SharePoint Online を構成する方法に関するリソースについては、「[SharePoint Online の管理](https://docs.microsoft.com/sharepoint/sharepoint-online)」を参照してください。
 
 SharePoint Online の利点を調べる 1 つの方法は、個人、チーム、部門、または組織全体が現在、どのようにやり取りしているかを調べたうえで、ファイルの保存と共有の共同作業をより簡単に行う適切なシナリオを探すことです。シナリオによっては、[Microsoft Teams](teams-workload.md) がより良い選択になり得ることを念頭においてください。
-
-SharePoint Online を使用すると、Microsoft 365 Enterprise の次の戦略的なビジネス シナリオが実現可能になります:
-
-- チーム内でコミュニケーションを図って、最新の情報に精通し、意見を求め、団結力と考えの一致を高めます
-- 集合的な知識の利用
-- ユーザーがビジネス プロセスを変換するよう支援します
-- 企業文化を形作る
-- プロジェクト、タスク、期限を管理して、ビジネス目標を達成します
-- 現場担当者を連携させて、デジタル改革を可能にします
-- 業務の習慣を理解して、影響力を増します
-- パートナー、同僚、顧客とコミュニケーションをとります。
-- 組織内外でファイルを保存および共有して、組織の境界を越えてシームレスに作業を行います
-- 柔軟なワーク スタイルを維持しながら、いつでもどこでもデバイスを使って多くのことを安全に成し遂げることができます
-- 情報を保護して、データ損失のリスクを軽減します
-- 一般データ保護規則 (GDPR) に適合するように、強化されたプライバシーと法令遵守によって組織をサポートします。
-
-詳細については、「[Microsoft 365 を使用したデジタル改革](http://transform.microsoft.com)」を参照してください。 
 
 #### <a name="sharepoint-online-site-for-highly-regulated-data"></a>厳しく規制されたデータに対応した SharePoint Online サイト
 

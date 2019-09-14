@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise の Microsoft Teams を展開する
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft 365 Enterprise の Microsoft Teams を計画、ロールアウトするプロセス、および Microsoft Teams の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072857"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982618"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Microsoft Teams を展開する
 
@@ -50,14 +50,6 @@ Teams はさまざまな目的に使用できます。ビジネス グループ�
 機敏で極めてコラボレーティブであり、密接に連携し、Exchange Online のメールにとどまらずさまざまな機能 (履歴記録機能を備えたライブ グループ チャット、一般的で見つけやすいファイルとメモの保存場所など) を必要とするチームに対処することを、Teams の目標とします。 
 
 Teams のメリットを確認できる方法の 1 つとして、現在のチーム間のコミュニケーション方法を調べ、そのコミュニケーションを置き換えて共同作業を容易にする方法を提示する適切な Teams のシナリオを見つけ、追加機能を提供する方法があります。
-
-Teams を使用すると、Microsoft 365 Enterprise の次の戦略的なビジネス シナリオを実現可能にします:
-
-- チーム内でコミュニケーションを図って、最新の情報に精通し、意見を求め、団結力と考えの一致を高めます
-- 現場担当者を連携させて、デジタル改革を可能にします
-- 業務の習慣を理解して、影響力を増します
-
-詳細については、「[Microsoft 365 を使用したデジタル改革](http://transform.microsoft.com)」を参照してください。 
 
 #### <a name="microsoft-teams-for-highly-regulated-data"></a>厳しく規制されたデータに対応した Microsoft Teams
 
@@ -99,7 +91,7 @@ Teams のセキュリティについての理解を深めるには、次の追�
 - [Microsoft Teams へのユーザー アクセスを管理する](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [Microsoft Teams のクライアントを取得する](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [Office 365 の組織で Microsoft Teams を有効にする](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [Office 365 の組織で Microsoft Teams の機能を管理する](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
+- [Office 365 の組織で Microsoft Teams の機能を管理する](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 #### <a name="result"></a>結果
 
