@@ -16,6 +16,7 @@
 #### [手順 4: セキュリティで保護されたユーザー認証を構成する](identity-multi-factor-authentication.md)
 #### [手順 5: ユーザーのアクセスを簡素化する](identity-password-reset.md)
 #### [手順 6: 管理を容易にするためのグループの使用](identity-self-service-group-management.md)
+#### [手順 7: id ガバナンスを構成する](identity-governance.md)
 #### [Id の終了条件](identity-exit-criteria.md)
 ### [フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [手順 1: 組織を準備する](windows10-prepare-your-org.md)
@@ -96,7 +97,6 @@
 ## [Windows 7 から Windows 10 への自動アップグレード](windows-7-to-windows-10-upgrade-automated.md)
 ## [Windows と Office の展開およびラボキット](modern-desktop-deployment-and-management-lab.md)
 ## [展開のヘルプを検索する](find-help-for-modern-desktop-deployment.md)
-## [リーダーシップを発揮する: 価値の発見と活用事例](https://transform.microsoft.com)
 
 # [ID とデバイスのアクセス構成](microsoft-365-policies-configurations.md)
 ##[前提条件となる作業](identity-access-prerequisites.md)
