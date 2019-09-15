@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のディレクトリとネットワークの準備状況を評価する方法について説明します。
-ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584573"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982728"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>手順 2: ディレクトリとネットワークの準備
 
@@ -73,7 +73,7 @@ Azure Active Directory を配置したら、対象ユーザーは Office 365 Pro
 
 考慮すべき 3 番目のコンポーネントは、ユーザーの個人用設定です。ここでは、PC のリフレッシュまたは交換プロセスの一部として、ユーザーのファイル、設定、アプリケーションの復元に対応するために、ネットワーク帯域幅を計画する必要があります。これらのアイテムは合計で PC ごとに 20 GB を超えることがよくあります。ユーザーによっては、100 GB を超える場合もあります。
 
-## <a name="limiting-bandwidth"></a>**帯域幅の制限**
+## <a name="limiting-bandwidth"></a>帯域幅の制限
 
 ネットワーク上の展開に関連するトラフィックの影響を制限する 1 つの方法は、クライアント上の BITS (バックグラウンド インテリジェント転送サービス) 設定を使用して調整することです。BITS は、アダプティブ ビット レート (ABR) を使用して、展開のために使用可能な帯域幅を調整します。これは、グループ ポリシーを使用してクライアント上で構成できます。
 
@@ -87,9 +87,9 @@ System Center Configuration Manager (Current Branch) を使用している場合
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## <a name="scavenging-bandwidth"></a>**帯域幅の清掃**
+## <a name="scavenging-bandwidth"></a>帯域幅の清掃
 
-Windows Server 2019 および System Center Configuration Manager (Current Branch) でサポートされている低遅延バックグラウンド トランスポート (LEDBAT) は、Windows クライアントへのネットワーク トラフィックを最適化するよう設計されています。
+Windows Server 2019 および System Center Configuration Manager (Current Branch) でサポートされている Low Extra Delay Background Transport (LEDBAT) は、Windows クライアントへのネットワーク トラフィックを最適化するよう設計されています。
 
 [Windows Server 2019 のネットワーク機能のトップ テン: \#9 LEDBAT – 遅延に最適化されたバックグラウンド トランスポート](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -97,7 +97,7 @@ Windows Server 2019 および System Center Configuration Manager (Current Branc
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## <a name="peer-to-peer-options"></a>**ピアツーピア オプション**
+## <a name="peer-to-peer-options"></a>ピアツーピア オプション
 
 Windows 10 の移行では、PC イメージング、ソフトウェアの更新、ユーザーの個人用設定のために、ピアツーピア オプションがますます使用されるようになっています。それは、Windows 10 の初期展開後にビルド間のアップグレードを容易にするうえでも役に立ちます。ここでは、Windows 10 および Office 関連のトラフィックをネットワークの中心から離すためのいくつかの例を取り上げます。従来の調整方法の必要性を低減し、配布ポイントまたはインターネットからダウンロードするのではなく、ローカル ネットワークのピア上で必要な更新ファイルを PC から検索できるようにします。
 

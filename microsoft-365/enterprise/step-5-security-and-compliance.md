@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows と Office の重要なセキュリティとコンプライアンスに関する考慮事項について説明します。
-ms.openlocfilehash: 791006a6a836f28adb8d71b20e0e887b903752ba
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814588"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981758"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>手順 5: セキュリティとコンプライアンスに関する考慮事項
 
@@ -111,7 +111,7 @@ Microsoft インテリジェント セキュリティ グラフとの併用に�
 
 **[Windows Defender アプリケーション制御](https://docs.microsoft.com/ja-JP/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** (Windows 10) は、Microsoft が安全性について確認したアプリケーションの承認済みの許可リストと拒否リストによって動作します。そのすべては、Microsoft Intune を使用するエンドポイント保護ポリシーによって管理されます。
 
-**[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/ja-JP/windows/security/threat-protection/windows-defender-atp/overview)** は、予防的な保護、侵害後の検出、自動調査、および対応のための統一されたプラットフォームです。これにより、エンドポイントがサイバー脅威から保護されます。高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化して、セキュリティ体制を強化します。
+**[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/ja-JP/windows/security/threat-protection/windows-defender-atp/overview)** は、予防的な保護、侵害後の検出、自動調査、および対応のための統一されたプラットフォームです。これにより、エンドポイントがサイバー脅威から保護されます。高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化して、セキュリティ体制を強化します。
 
 **[Exploit Guard](https://docs.microsoft.com/ja-JP/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** は、Windows へのマルウェアの侵入を阻止し、信頼されていないプロセスによる保護されたフォルダーへのアクセスを禁止することで、実行中のアプリケーションの攻撃対象になる部分を減らすために役立ちます。
 

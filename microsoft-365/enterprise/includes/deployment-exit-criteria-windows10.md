@@ -83,10 +83,10 @@ Windows 10 Enterprise を実行しているデバイスを侵入から保護す�
 必要に応じて、[手順 5](../windows10-enable-security-features.md#windows10-sec-eg) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必須: Windows Defender Advanced Threat Protection を使用している (Microsoft 365 Enterprise E5 のみ)
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必須: Microsoft Defender Advanced Threat Protection を使用している (Microsoft 365 Enterprise E5 のみ)
 
-ネットワークと Windows 10 Enterprise を実行しているデバイスに対する高度な脅威を検出し、調査し、対応するために Windows Defender Advanced Threat Protection (ATP) を展開しました。 
+ネットワークと Windows 10 Enterprise を実行しているデバイスに対する高度な脅威を検出し、調査し、対応するために Microsoft Defender Advanced Threat Protection (ATP) を展開しました。 
 
-オプションとして、Windows Defender ATP を他のツールと統合し、その機能を拡張しました。
+オプションとして、Microsoft Defender ATP を他のツールと統合し、その機能を拡張しました。
 
 必要に応じて、[手順 5](../windows10-enable-security-features.md#windows10-sec-atp) がこの必須条件を満たす上で役立ちます。
