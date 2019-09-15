@@ -3,7 +3,7 @@ title: '手順 4: セキュリティで保護されたユーザー認証を構�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザー アカウントの多要素認証について理解し、構成します。
-ms.openlocfilehash: 73e884802329765fd6a89cfb7d0e04116c17968c
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 2a4a0926a08ae8279523219a2d7a2386ea0c6742
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072087"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981848"
 ---
 # <a name="step-4-configure-secure-user-authentication"></a>手順 4: セキュリティで保護されたユーザー認証を構成する
 
@@ -36,7 +36,7 @@ MFA での 2 番目のセキュリティ層には次のものがあります。
 - 容易になりすましたり複製することができない信頼性のあるパーソナル デバイス (スマートフォンなど)。
 - 指紋認証などの生体認証属性。
 
-MFA を有効にして、ユーザー アカウントごとにセカンダリ認証方式を構成します。MFA が有効になっていることをユーザーに知らせ、その要件 (サインインにスマートフォンを使用することを義務付けるなど) をユーザーが理解し、正常にログインできるようにしてください。
+ユーザーは、[条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)で MFA を有効にして、第 2 の認証方法を構成することができます。これにより、Azure Active Directory (Azure AD) グループを使用して、パイロット ユーザー、地理的地域、部門などのユーザーの指定されたセットに MFA を展開できるようになります。 MFA が有効になっていることをユーザーに知らせ、その要件 (サインインにスマートフォンを使用することを義務付けるなど) をユーザーが理解し、正常にログインできることを確認します。 
 
 詳細については、[多要素認証の計画](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)を参照してください。
 
@@ -51,7 +51,22 @@ MFA を有効にして、ユーザー アカウントごとにセカンダリ認
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-mfa)を確認できます。
 
+<a name="identity-password-prot"></a>
+## <a name="prevent-bad-passwords"></a>脆弱なパスワードを防止する
 
+*この手順は省略可能であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+
+ユーザーが容易に決定されたパスワードを作成するのを防ぐには、Azure AD のパスワード保護を使用します。その機能では、指定のグローバル禁止パスワード リストとカスタムの禁止パスワード リスト (省略可能) を使用します。 たとえば、次のような組織固有の用語を指定できます。
+
+- ブランド名
+- 製品名
+- 場所 (たとえば、会社の本部など)
+- 会社固有の内部用語
+- 会社固有の意味を持つ略語。
+
+[クラウド内](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)および[オンプレミスの Active Directory Domain Services (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)に対する脆弱なパスワードを禁止できます。
+
+中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-password-prot)を確認できます。
 
 <a name="identity-ident-prot"></a>
 ## <a name="protect-against-credential-compromise"></a>資格情報が侵害されないように保護する
@@ -64,8 +79,8 @@ Azure AD Identity Protection では次の作業を実行できます。
 
 |||
 |:---------|:---------|
-|組織の ID における潜在的な脆弱性の洗い出しと対処|Azure AD では、機械学習を使用して異常や不審なアクティビティ (サインインとサインイン後の活動など) を検出します。Identity Protection はこのデータを使用して、問題の評価と対処の実施に役立つレポートとアラートを生成します。|
-|組織の ID に関連する不審なアクションの検出と自動対応|指定されているリスク レベルに達した時点で、検出された問題に対し自動的に対応するリスクベースのポリシーを構成できます。このリスクベースのポリシーと、Azure Active Directory および Enterprise Mobility + Security (EMS) の他の条件付きアクセス制御との組み合わせにより、自動的にアクセスをブロックするか、または修正処置 (パスワード リセットと後続のサインインでの多要素認証の義務付けなど) を実行することができます。|
+|組織の ID における潜在的な脆弱性の洗い出しと対処|Azure AD では機械学習を使用して、サインインやサインイン後のアクティビティなどの異常や不審なアクティビティを検出します。 このデータを使用して、Azure AD Identity Protection でレポートとアラートを生成すると、ユーザーによる問題の評価と措置に役立ちます。|
+|組織の ID に関連する不審なアクションの検出と自動対応|特定のリスク レベルに到達すると自動的に検出された問題に対処するよう、リスク ベースのポリシーを構成できます。 Azure AD および Microsoft Intune で提供されている他の条件付きアクセス コントロールにこれらのポリシーが加わると、その次のサインイン用のパスワードのリセットや多要素認証要求を含め、自動的にアクセスをブロックしたり、修正処置を取ったりすることができます。|
 |不審なインシデントを調査し、管理操作によって解決する|セキュリティ インシデントに関する情報を使用して、リスク イベントを調査できます。調査の追跡と修復処理 (パスワードのリセットなど) の開始のための基本的なワークフローを利用できます。|
 
 [Azure AD Identity Protection の詳細情報](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)を参照してください。
@@ -106,8 +121,6 @@ Azure AD Identity Protection では次の作業を実行できます。
 レポートとレポートへのアクセス方法の詳細については、「[Azure Active Directory レポート](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal)」を参照してください。
 
 この手順を実行すると、これらのレポートを認識でき、また計画とセキュリティの目的でレポートを使用して Azure AD のイベントとアクティビティに関する情報を把握する方法を理解できます。
-
-
 
 ## <a name="next-step"></a>次の手順
 
