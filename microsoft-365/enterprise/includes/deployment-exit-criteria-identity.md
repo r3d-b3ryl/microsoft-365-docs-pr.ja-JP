@@ -1,7 +1,7 @@
 ID インフラストラクチャに関する追加の推奨事項については、[前提条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)も参照してください。
 
 <a name="crit-identity-user-groups"></a>
-### <a name="required-all-users-groups-and-group-memberships-have-been-created"></a>必須: すべてのユーザー、グループ、およびグループ メンバーシップが作成されている
+### <a name="required-your-users-groups-and-group-memberships-have-been-created"></a>必須: ユーザー、グループ、およびグループ メンバーシップが作成されている
 
 次の目的でユーザー アカウントとグループを作成しています。
 
@@ -13,7 +13,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必須: 全体管理者アカウントが保護されている 
 
-Office 365 サブスクリプションの侵害の原因となる資格情報の侵害を防ぐため、[Office 365 全体管理者アカウントを保護しています](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)。
+[Office 365 全体管理者アカウントが保護される](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)ことで、Microsoft 365 サブスクリプションの侵害につながる可能性がある攻撃者による資格情報の侵害を阻止します。
 
 この必須条件を省略した場合、全体管理者アカウントが攻撃および侵害を受けやすくなり、攻撃者は獲得攻撃、破壊、または身代金要求の目的で、システム全体でデータにアクセスできるようになります。
 
@@ -35,7 +35,7 @@ Office 365 サブスクリプションの侵害の原因となる資格情報の
 <a name="crit-identity-pim"></a>
 ### <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a>オプション: 全体管理者ロールをオンデマンドで割り当てることができるように、Privileged Identity Management をセットアップしている
 
-「[Azure AD Privileged Identity Management とは](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)」の手順に従い Azure AD テナントで PIM を有効にしており、全体管理者アカウントを適格な管理者として構成しています。
+「[Azure AD Privileged Identity Management (PIM) とは](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)」の手順を実行して、Azure AD テナントで PIM を有効にし、全体管理者アカウントを適格な管理者として構成しています。
 
 また、「[Azure AD でのハイブリッドおよびクラウド デプロイ用の特権アクセスをセキュリティで保護する](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)」の推奨事項に従って、サイバー攻撃者から特権アクセスを保護するロードマップを策定しています。
 
@@ -47,7 +47,7 @@ Office 365 サブスクリプションの侵害の原因となる資格情報の
 <a name="crit-identity-sync"></a>
 ### <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>必須: ユーザーとグループが Azure AD と同期される
 
-既存のオンプレミス ID プロバイダー ( Active Directory Domain Services (AD DS) など) がある場合は、Azure AD Connect を使用して、オンプレミス ID プロバイダーから Azure AD テナントへユーザー アカウントとグループを同期します。
+既存のオンプレミス Active Directory Domain Services (AD DS) がある場合は、Azure AD Connect を使用して、オンプレミス AD DS から Azure AD テナントへユーザー アカウントとグループを同期しています。
 
 ディレクトリ同期により、ユーザーは各自のコンピューターやオンプレミス リソースにサインインするときに使用する資格情報で、Office 365 やその他の Microsoft クラウド サービスにもサインインできます。
 
@@ -55,7 +55,7 @@ Office 365 サブスクリプションの侵害の原因となる資格情報の
 
 この必須条件を省略した場合、ユーザー アカウントとグループの 2 つのセットが作成されています。
 
-- オンプレミス ID プロバイダーに存在するユーザー アカウントとグループ
+- オンプレミス AD DS に存在するユーザー アカウントとグループ
 - Azure AD テナントに存在するユーザー アカウントとグループ
 
 この状態では、IT 管理者とユーザーが、ユーザー アカウントとグループの 2 つのセットを手動で保守する必要があります。このため、アカウント、パスワード、グループが同期されていない状況が必然的に発生します。
@@ -82,12 +82,12 @@ Office 365 サブスクリプションの侵害の原因となる資格情報の
 必要に応じて、[手順 3](../identity-azure-ad-connect.md#identity-sync-health) がこのオプション条件を満たす上で役立ちます。
 
 #### <a name="how-to-test"></a>テスト方法
-Azure AD Connect Health ポータルには、オンプレミス ID サーバーと継続的な同期の正確な最新の状態が表示されます。
+Azure AD Connect Health ポータルには、オンプレミス ドメイン コントローラーと継続中の同期の正確な現在の状態が表示されます。
 
 <a name="crit-identity-mfa"></a>
 ### <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a>オプション: ユーザーに対して多要素認証が有効になっている
 
-「[Office 365 展開用の多要素認証の計画](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)」と「[Office 365 ユーザー用の多要素認証を設定する](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)」に従い、ユーザー アカウントに対して多要素認証 (MFA) を有効にしています。
+[多要素認証の計画](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) と [条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access) を使用して、ユーザー アカウントの多要素認証 (MFA) を有効にしています。
 
 このオプション条件を省略した場合、ユーザー アカウントはサイバー攻撃による資格情報の侵害に対して脆弱になります。ユーザー アカウントのパスワードが侵害されると、そのアカウントのすべてのリソースと機能 (管理者ロールなど) を攻撃者が利用できるようになります。これにより、攻撃者は内部資料やその他のデータを複製、破壊、または身代金要求目的で保持することが可能になります。
 
@@ -95,14 +95,21 @@ Azure AD Connect Health ポータルには、オンプレミス ID サーバー�
 
 #### <a name="how-to-test"></a>テスト方法
 
-1.  Office 365 Admin ポータルでテスト ユーザー アカウントを作成し、ライセンスを割り当てます。 
-2.  実際のユーザー アカウントに使用している追加の検証方式 (電話へのメッセージの送信など) を使用して、テスト ユーザー アカウントの多要素認証を構成します。 
-3.  テスト ユーザー アカウントを使用して Office 365 または Azure Portal にサインインします。
+1.  テスト ユーザー アカウントを作成して、それらにライセンスを割り当てます。 
+2.  実際のユーザー アカウントに使用している (電話へのテキスト メッセージの送信など) 追加の検証方式を使用して、テスト ユーザー アカウントの多要素認証を構成します。 
+3.  テスト ユーザー アカウントを使用して Office 36 ポータルにサインインします。
 4.  MFA により、追加の確認情報を入力するように求められ、その結果認証が正常に完了することを確認します。 
 5.  テスト ユーザー アカウントを削除します。
 
+<a name="crit-password-prot"></a>
+### <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>省略可能: Azure AD パスワード保護で、脆弱なパスワードの使用を禁止する
+
+グローバル禁止パスワードとカスタムの用語 (省略可能) に対応する形で、[クラウド内](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)、および [オンプレミス Active Directory Domain Services (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) に対する脆弱なパスワードの禁止を有効にしています。
+
+必要に応じて、[手順 4](../identity-multi-factor-authentication.md#identity-password-prot) がこのオプション条件を満たす上で役立ちます。
+
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise"></a>オプション: 資格情報を侵害から保護するため、Azure AD Identity Protection が有効になっている
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>省略可能: 資格情報を侵害から保護するための Azure AD Identity Protection の有効化 (Microsoft 365 Enterprise E5 のみ)
 
 次の目的で Azure AD Identity Protection を有効にしています。
 
@@ -147,7 +154,7 @@ Azure AD Connect Health ポータルには、オンプレミス ID サーバー�
 
 パスワードの書き戻しをテストするには、Office 365 でパスワードを変更します。 オンプレミス AD DS リソースにアクセスするには、自分のアカウントと新しいパスワードを使用できるようする必要があります。
 
-1. オンプレミスの AD DS にテスト ユーザー アカウントを作成し、ディレクトリ同期を許可し、Microsoft 365 管理センターで Office 365 ライセンスをこのテスト ユーザー アカウントに付与します。
+1. オンプレミスの AD DS にテスト ユーザー アカウントを作成し、ディレクトリ同期を実行して、Microsoft 365 管理センターで Microsoft 365 Enterprise ライセンスをそのテスト ユーザー アカウントに付与します。
 2. オンプレミスの AD DS ドメインに参加しているリモート コンピューターから、テスト ユーザー アカウントの資格情報を使用してコンピューターと Office ポータルにサインインします。
 3. **[設定] > [Office 365 の設定] > [パスワード] > [パスワードの設定]** を選択します。
 4. 現在のパスワードを入力し、新しいパスワードを入力し、確認のため新しいパスワードをもう一度入力します。
@@ -158,7 +165,7 @@ Azure AD Connect Health ポータルには、オンプレミス ID サーバー�
 
 クラウドベースのアプリケーション (Office 365 など) へのユーザーのサインイン方法を組織が簡素化できるように、[Azure AD Connect: シームレス シングル サインオン](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)を有効にしています。
 
-このオプション条件を省略した場合、Azure AD を使用するその他のアプリケーションにユーザーがアクセスすると、ユーザーに対して資格情報の入力が求められることがあります。
+このオプション条件を省略した場合、Azure AD テナントを使用する追加のアプリケーションにユーザーがアクセスすると、ユーザーに対して資格情報の入力が求められることがあります。
 
 必要に応じて、[手順 5](../identity-password-reset.md#identity-sso) がこのオプション条件を満たすのに役立ちます。
 
@@ -220,21 +227,31 @@ Sales グループと Accounting グループが動的グループである場�
 <a name="crit-identity-group-license"></a>
 ### <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a>オプション: グループ メンバーシップに基づいてユーザー アカウントに対しライセンスを自動的に割り当てるか削除するグループベースのライセンス
 
-Office 365 と EMS の両方のライセンスの割り当てと削除が自動的に実行されるようにするため、適切な Azure AD セキュリティ グループに対して[グループベースのライセンスを有効にしています](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)。
+Microsoft 365 Enterprise ライセンスを自動的に割り当てたり、未割り当てにしたりするため、適切な Azure AD セキュリティ グループの[グループベースのライセンスを有効にしています](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)。
 
 このオプション条件を省略した場合、次の操作を手動で行う必要があります。
 
-- Office 365 および EMS へのアクセス権を付与する予定の新しいユーザーにライセンスを割り当てる。
-- 組織に所属していないユーザーや、Office 365 および EMS へのアクセス権がないユーザーからライセンスを削除する。
+- アクセス権を付与する予定の新しいユーザーにライセンスを割り当てます。
+- 組織に所属していないユーザーや、アクセス権がないユーザーのライセンスを削除します。
 
 必要に応じて、[手順 6](../identity-self-service-group-management.md#identity-group-license)がこのオプション条件を満たすのに役立ちます。
 
 #### <a name="how-to-test"></a>テスト方法
 
-1. Azure Portal を使用して Azure AD にテスト セキュリティ グループを作成し、Office 365 と EMS のライセンスを割り当てるグループベースのライセンスを構成します。
-2. Azure AD にテスト ユーザー アカウントを作成し、テスト セキュリティ グループに追加します。
-3. Microsoft 365 管理センターでこのユーザー アカウントのプロパティを調べ、このアカウントに Office 365 と EMS のライセンスが割り当てられていることを確認します。
+1. Azure ポータルを使用して、Azure AD にテスト セキュリティ グループを作成し、Microsoft 265 Enterprise ライセンスを割り当てるグループベースのライセンスを構成します。
+2. Azure AD にテスト ユーザー アカウントを作成して、テスト セキュリティ グループに追加します。
+3. Microsoft 365 管理センターでユーザー アカウントのプロパティを調べて、そのアカウントに Microsoft 265 Enterprise ライセンスが割り当てられていることを確認します。
 4. テスト セキュリティ グループからテスト ユーザー アカウントを削除します。
-5. このユーザー アカウントのプロパティを調べ、このアカウントに Office 365 と EMS のライセンスが割り当てられていないことを確認します。
+5. ユーザー アカウントのプロパティを調べて、そのアカウントに Microsoft 265 Enterprise ライセンスが割り当てられていないことを確認します。
 6. テスト セキュリティ グループとテスト ユーザー アカウントを削除します。
 
+<a name="crit-identity-access-reviews"></a>
+### <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a>省略可能: アクセスを監視するために構成して使用されるアクセス ビュー
+
+グループ メンバーシップ、エンタープライズ アプリケーションへのアクセス、ロールの割り当てを監視するためのさまざまな種類のアクセス レビューを構成するために、これらの記事を使用しました。
+
+- [グループとアプリ](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+- [Azure AD ロール](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Azure リソース ロール](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+
+必要に応じて、[手順 7](../identity-governance.md#identity-access-reviews) がこのオプション条件を満たす上で役立ちます。
