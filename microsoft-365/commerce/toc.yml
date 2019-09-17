@@ -19,19 +19,9 @@
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: 請求書と支払い
       items:
-        - name: 請求書を理解する
-          href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
-        - name: 支払い方法を管理する
-          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
-        - name: 課金プロファイルを管理する
-          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
-        - name: オーダー履歴
-          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: 課金アカウント
-      items:
         - name: 課金アカウントの情報を管理する
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
         - name: テナントを課金アカウントに関連付ける
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: パートナーとの関係を管理する
-      href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
+      href: manage-partners.md
