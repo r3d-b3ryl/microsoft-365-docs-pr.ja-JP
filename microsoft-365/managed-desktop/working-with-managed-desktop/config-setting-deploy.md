@@ -5,14 +5,13 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390514"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040807"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ
 
@@ -20,7 +19,7 @@ ms.locfileid: "35390514"
 
 ## <a name="deployment-statuses"></a>展開の状態 
 
-これらの statues は、展開ごとに表示されます。
+展開ごとに表示される状態を次に示します。
 
 状態  | 説明 
 --- | --- 
@@ -41,13 +40,11 @@ Failed | グループ内のアクティブなデバイスの 10% で変更が失
 3. [**展開状態**] ワークスペースで、展開する設定を選択し、展開する段階的展開を選択します。
 4. 展開グループのいずれかに変更を展開するには、[**展開**] を選択します。
 
-![構成可能な設定の展開状態の概要](images/deploy-cs-overview.png)
-
-Microsoft マネージドデスクトップでは、次の順序で展開グループへの展開が推奨されます。テスト、ファースト、Fast、および広範。 
+![構成可能な設定の](images/1deployedit.png)展開状態の概要 Microsoft Managed Desktop では、展開グループへの展開をこの順序で実行することをお勧めします。テスト、ファースト、Fast、および広範。 
 
 各グループで変更が完了すると、状態が [**完了**] に変わります。
 
-![構成可能な設定の展開の完了](images/config-setting-complete.png)
+![構成可能な設定の展開の完了](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>展開を元に戻す
 
@@ -61,7 +58,7 @@ Microsoft マネージドデスクトップでは、次の順序で展開グル�
 3. [**展開状態**] ワークスペースで、元に戻す設定を選択してから、元に戻す段階的な展開を選択します。
 4. **この変更を元に戻す必要がある**場合は、[**展開を元に戻す**] を選択します。
 
-![構成可能な設定の展開の復元](images/config-setting-revert.png) 
+![構成可能な設定の展開の復元](images/3revert.png) 
 
 ## <a name="additional-resources"></a>その他の技術情報
 - [構成可能な設定の概要](config-setting-overview.md)
