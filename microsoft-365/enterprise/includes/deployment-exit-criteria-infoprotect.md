@@ -12,23 +12,23 @@
 必要に応じて、[手順 1](../infoprotect-define-sec-infoprotect-levels.md) がこの必須条件を満たす上で役立ちます。 
 
 <a name="crit-infoprotect-step3"></a>
-### <a name="required-increased-security-for-microsoft-365-is-configured"></a>必須: Microsoft 365 のセキュリティ強化を構成する
+### <a name="required-increased-security-for-microsoft-365-is-configured"></a>必須: Microsoft 365 のセキュリティ強化が構成済み
 
-次の [Office 365 セキュリティの強化](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)の設定が構成されました:
+次の [Office 365 セキュリティの強化](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)の設定が構成されています:
 
 - Microsoft 365 セキュリティセンターの脅威管理ポリシー
 - その他の Exchange Online テナント レベルの設定
 - SharePoint Online 管理センターでのテナント全体の共有ポリシー
 - Azure Active Directory (Azure AD) の設定
 
-[SharePoint、OneDrive、Microsoft Teams 用の Office 365 Advanced Threat Protection (ATP) も有効にする](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)。
+[SharePoint、OneDrive、Microsoft Teams 用の Office 365 Advanced Threat Protection (ATP) を有効にする](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)ことも行いました。
 
 必要に応じて、[手順 3](../infoprotect-configure-increased-security-office-365.md) がこの必須条件を満たす上で役立ちます。 
 
 <a name="crit-infoprotect-step2"></a>
 ### <a name="optional-classification-is-configured-across-your-environment"></a>省略可能: 環境全体で分類方法が構成されている
 
-法務/コンプライアンス チームと協力して、組織のデータのガバナンスとセキュリティ ポリシーの適切な分類方法とラベリング方法を策定する。 
+法務/コンプライアンス チームと協力して、組織のデータのガバナンスとセキュリティ ポリシーの適切な分類方法とラベリング方法を策定しています。 
 
 これらのポリシーは、次の構成および展開に対応しています: 
 
@@ -60,10 +60,24 @@
 
 必要に応じて、[手順 5](../infoprotect-data-loss-prevention.md) がこの必須条件を満たす上で役立ちます。 
 
-
 <a name="crit-infoprotect-step6"></a>
+### <a name="optional-email-encryption-is-configured"></a>省略可能: 電子メールの暗号化が構成されている
+
+必要に応じて、組織に次の電子メールの暗号化を構成しています。
+
+|||
+|:-------|:-----|
+| **暗号化方法** | **送信した電子メール関連** |
+| [Office 365 Message Encryption (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | 暗号化を使用する組織外 |
+| [Information Rights Management (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | 暗号化とアクセス許可の両方とも |
+| [Secure/Multipurpose Internet Mail Extensions (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | 公開キー暗号を使用する暗号化とデジタル署名の両方とも |
+|||
+
+必要な場合、[手順 6](../infoprotect-email-encryption.md) がこの必須条件を満たす上で役立ちます。
+
+<a name="crit-infoprotect-step7"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>省略可能: Office 365 での特権アクセス管理の構成。
 
-[Office 365 での特権アクセス管理を設定する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)トピックにある情報を使用し、トピックへのアクセス権限を有効にして、組織内に 1 つまたは複数の権限のあるアクセス ポリシーを作成します。 これらのポリシーを構成して、機密データへのアクセスや重要な構成設定へのアクセスのために just-in-time アクセスが有効にされました。
+[Office 365 での特権アクセス管理を設定する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)トピックにある情報を使用して、特権アクセスを有効にし、組織内に 1 つまたは複数の特権アクセス ポリシーを作成しました。 これらのポリシーを構成して、機密データへのアクセスや重要な構成設定へのアクセスのために just-in-time アクセスが有効にされました。
 
-必要な場合、[手順 6](../infoprotect-configure-privileged-access-management.md) がこの必須条件を満たす上で役立ちます。 
+必要に応じて、[手順 7](../infoprotect-configure-privileged-access-management.md) がこの必須条件を満たすのに役立ちます。 
