@@ -1,5 +1,5 @@
 ---
-title: '手順 6: Office 365 の特権アクセス管理を構成する'
+title: '手順 7: Office 365 の特権アクセス管理を構成する365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072097"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047290"
 ---
-# <a name="step-6-configure-privileged-access-management-for-office-365"></a>手順 6: Office 365 の特権アクセス管理を構成する
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>手順 7: Office 365 の特権アクセス管理を構成する365
 
 *この手順はオプションであり、Microsoft 365 Enterprise の E5 および Advanced Compliance バージョンにのみ適用されます。*
 
@@ -39,11 +39,13 @@ Office 365 の特権アクセス管理を有効にするには、「[Office 365 
 
 詳細については、「[Office 365 の特権アクセス管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)」のトピックを参照してください。
 
-## <a name="results"></a>結果
 
-この手順の結果、組織にとって重要なデータと構成設定に対する Just-In-Time アクセス制御が有効になり、Office 365 のセキュリティが向上しました。
+|||
+|:-------|:-----|
+|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  テストラボ環境でこの構成を実践するには、「[特権アクセス管理のテストラボガイド](privileged-access-microsoft-365-enterprise-dev-test-environment.md)」を参照してください。 |
+|||
 
-中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step6)を確認してください。
+中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step7)を確認してください。
 
 ## <a name="next-step"></a>次の手順
 
