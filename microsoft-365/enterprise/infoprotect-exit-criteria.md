@@ -3,7 +3,7 @@ title: 情報保護インフラストラクチャの終了条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 情報保護ベースのサービスとインフラストラクチャの条件を調べ、構成が Microsoft 365 Enterprise の要件を満たしていることを確認します。
-ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071947"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047240"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>情報保護インフラストラクチャの終了条件
 
@@ -88,16 +88,30 @@ ms.locfileid: "34071947"
 
 必要に応じて、[手順 5](infoprotect-data-loss-prevention.md) がこの必須条件を満たす上で役立ちます。 
 
-
 <a name="crit-infoprotect-step6"></a>
+## <a name="optional-email-encryption-is-configured"></a>省略可能: 電子メールの暗号化が構成されている
+
+必要に応じて、組織に次の電子メールの暗号化を構成しています。
+
+|||
+|:-------|:-----|
+| **暗号化方法** | **送信した電子メール関連** |
+| [Office 365 Message Encryption (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | 暗号化を使用する組織外 |
+| [Information Rights Management (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | 暗号化とアクセス許可の両方とも |
+| [Secure/Multipurpose Internet Mail Extensions (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | 公開キー暗号を使用する暗号化とデジタル署名の両方とも |
+|||
+
+必要な場合、[手順 6](infoprotect-email-encryption.md) がこの必須条件を満たす上で役立ちます。
+
+<a name="crit-infoprotect-step7"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>省略可能: Office 365 での特権アクセス管理の構成。
 
 [Office 365 での特権アクセス管理を設定する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)トピックにある情報を使用して、特権アクセスを有効にし、組織内に 1 つまたは複数の特権アクセス ポリシーを作成しました。 これらのポリシーを構成して、機密データへのアクセスや重要な構成設定へのアクセスのために just-in-time アクセスが有効にされました。
 
-必要に応じて、[手順 6](infoprotect-configure-privileged-access-management.md) がこの必須条件を満たすのに役立ちます。 
+必要に応じて、[手順 7](infoprotect-configure-privileged-access-management.md) がこの必須条件を満たすのに役立ちます。 
 
-## <a name="results-and-next-steps"></a>結果と次のステップ
+## <a name="results-and-next-steps"></a>結果と次の手順
 
-Microsoft 365 Enterprise の情報保護インフラストラクチャでは、定義されたセキュリティ レベル、Office 365 のセキュリティ強化、機密データの種類とラベルを使用した分類、Windows Information Protection、Data Loss Prevention、および特権アクセスの管理が使用されます。
+Microsoft 365 Enterprise の情報保護インフラストラクチャでは、定義されたセキュリティ レベル、Office 365 のセキュリティ強化、機密データの種類とラベルを使用した分類、Windows 情報保護、データ損失防止、電子メールの暗号化、および特権アクセスの管理が使用されます。
 
 Microsoft 365 Enterprise のエンド ツー エンドの展開に従っている場合、[ワークロードとシナリオ](deploy-workloads.md)で基盤インフラストラクチャのすべての機能と構成を活用することができます。
