@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 9b09f21c71f578c45a71149cedfd67a8ea9104e6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5deae85ae614079c23a373d4ecae7ce81aeb3fcd
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289408"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071776"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>手順 1: Windows 10 Enterprise を組織で展開するための準備
 
@@ -26,13 +26,13 @@ ms.locfileid: "32289408"
 デバイスを Windows 10 Enterprise にアップグレードする前に、以下のことを検討してください:
 
 - **ドメインの追加と確認が必要** <br>Microsoft 365 のサブスクリプションでは、末尾が onmicrosoft.com の既定のドメイン名が発行されます (例: contoso.onmicrosoft.com)。多くの組織は、所有するドメインを 1 つまたは複数使用して、メール アドレスの末尾に独自のドメイン名を使うことを希望します (username@contoso.com など)。独自のドメインを使うには Microsoft 365 へのドメインの追加と、所有確認が必要です。メールや Skype for Business などの Microsoft 365 サービスの設定を行うときに独自ドメインが利用できる状態にしておくために、すぐにドメインを追加して確認することをお勧めします。
-- **この時点でユーザーを追加する必要はありません** <br>Microsoft 365 サービスの使用または Microsoft 365 製品をインストールするには、ユーザーが Microsoft 365 のアカウントと製品ライセンスを持っている必要があります。Microsoft 365 にユーザーを追加する方法は、ユーザーの数とオンプレミスの Active Directory を現在所有しているかどうかにより異なります。Active Directory を持っていない (または Active Directory を持っているが Microsoft 365 と同期させたくない) 場合は、ユーザーを Microsoft 365 に直接追加し、個別または一括でライセンスの割り当てを行うことができます。<br>オンプレミスの Active Directory を持っている場合は、それを [Microsoft 365 と同期](identity-azure-ad-connect.md#identity-sync)して、Microsoft 365 が利用するクラウド ディレクトリの Azure AD にユーザー アカウントを作成できます。この方法を使い、(SharePoint Online サイト コ レクションやドキュメントなどの) リソースへのアクセス許可の管理に使用するユーザーのアカウントとセキュリティ グループを作成できます。Active Directory を Microsoft 365 と同期してもユーザーにライセンスは割り当てられません。
-- **この時点でユーザーにライセンスを割り当てる必要はありません** <br>Microsoft 365 サービスの使用または Microsoft 365 ポータルからソフトウェアをインストールするには、ユーザーは製品のライセンスを持っている必要があります。グローバル管理またはユーザー管理の管理者は、Microsoft 365 の製品ライセンスを個別または一括で直接割り当てることができます。また、[グループベースのライセンス割り当て](identity-self-service-group-management.md#identity-group-license)を使い、ユーザーが特定のグループに追加されたときにライセンスが自動的に割り当てられるように設定できます。 
+- **この時点でユーザーを追加する必要はありません** <br>Microsoft 365 サービスの使用または Microsoft 365 製品をインストールするには、ユーザーが Microsoft 365 のアカウントと製品ライセンスを持っている必要があります。Microsoft 365 にユーザーを追加する方法は、ユーザーの数とオンプレミスの Active Directory を現在所有しているかどうかにより異なります。Active Directory を持っていない (または Active Directory を持っているが Microsoft 365 と同期させたくない) 場合は、ユーザーを Microsoft 365 に直接追加し、個別または一括でライセンスの割り当てを行うことができます。<br>オンプレミスの Active Directory を持っている場合は、それを [Microsoft 365 と同期](identity-add-user-accounts.md#identity-sync)して、Microsoft 365 が利用するクラウド ディレクトリの Azure AD にユーザー アカウントを作成できます。この方法を使い、(SharePoint Online サイト コ レクションやドキュメントなどの) リソースへのアクセス許可の管理に使用するユーザーのアカウントとセキュリティ グループを作成できます。Active Directory を Microsoft 365 と同期してもユーザーにライセンスは割り当てられません。
+- **この時点でユーザーにライセンスを割り当てる必要はありません** <br>Microsoft 365 サービスの使用または Microsoft 365 ポータルからソフトウェアをインストールするには、ユーザーは製品のライセンスを持っている必要があります。グローバル管理またはユーザー管理の管理者は、Microsoft 365 の製品ライセンスを個別または一括で直接割り当てることができます。また、[グループベースのライセンス割り当て](identity-use-group-management.md#identity-group-license)を使い、ユーザーが特定のグループに追加されたときにライセンスが自動的に割り当てられるように設定できます。 
 - **Office 365 ProPlus は別にインストール** <br>Microsoft 365 のライセンスを入手しても、Office 365 ProPlus はクライアント コンピューターに自動的にインストールされません。詳細は「[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)」参照してください。 
 
 ## <a name="set-windows-diagnostics-data-level"></a>Windows 診断データレベルを設定する
 
-Microsoft では、診断データを使用して、マルウェアの傾向やその他の脅威を特定し、windows や Microsoft サービスの品質を向上するために、windows デバイスのセキュリティを確保しています。 組織内のすべてのエンドポイントで、診断サービスが最小限の基本レベルで有効になっていることを確認する必要があります。 *既定では、このサービスは有効になっており、Enhanced レベルに設定されています。* ただし、センサーデータを受信していることを確認して確認することをお勧めします。 ポリシーによるレベルの設定は、デバイスレベルの設定より優先されます。 
+Microsoft では、診断データを使用して、マルウェアの傾向やその他の脅威を特定し、windows や Microsoft サービスの品質を向上するために、Windows デバイスのセキュリティを確保しています。 組織内のすべてのエンドポイントで、診断サービスが最小限の基本レベルで有効になっていることを確認する必要があります。 *既定では、このサービスは有効になっており、Enhanced レベルに設定されています。* ただし、センサーデータを受信していることを確認して確認することをお勧めします。 ポリシーによるレベルの設定は、デバイスレベルの設定より優先されます。 
 
 **Windows 10 オペレーティングシステム診断データレベル**
 
@@ -54,7 +54,7 @@ Microsoft では、診断データを使用して、マルウェアの傾向や�
 * **グループポリシー** -Intune にデバイスを登録する予定がない場合は、グループポリシーオブジェクトを使用して、組織の診断データレベルを設定できます。
 * **コマンドプロンプト**-Windows 10 診断データおよびサービスを、コマンドプロンプトで自動的に開始するように設定できます。 この方法は、サービスを少数のデバイスでのみテストする場合に最適です。 このコマンドを使用してサービスを自動的に開始できるようにする場合は、診断データレベルを構成しません。 管理ツールを使用して診断データレベルを構成していない場合、サービスは既定の拡張レベルで動作します。
 
-windows 診断データの詳細と、選択した方法に基づいて有効にする方法については、「[組織で windows 診断データを構成](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)する」を参照してください。
+Windows 診断データの詳細と、選択した方法に基づいて有効にする方法については、「[組織で windows 診断データを構成](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)する」を参照してください。
 
 中間チェックポイントとして、この手順に対応する[終了条件](windows10-exit-criteria.md#crit-windows10-step1)を確認できます。
 
