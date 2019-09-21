@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 次の手順を使用して、Microsoft 365 Enterprise テスト環境の全体管理者アカウントを保護します。
-ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 457ac33aa2242dc4b25cd662bf233bb1599a6fec
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074147"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071556"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保護する
 
@@ -93,7 +93,7 @@ Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保�
 
 最初のポリシーをテストするには、DedicatedAdmin アカウントでサインアウトし、サインインします。 ユーザーアカウントで MFA を構成するように求めるメッセージが表示されます。 これは、最初のポリシーが適用されていることを示しています。
 
-運用の全体管理者アカウントを保護するための情報とリンクについては、Id フェーズの[グローバル管理者アカウントの保護](identity-designate-protect-admin-accounts.md#identity-global-admin)の手順を参照してください。
+運用の全体管理者アカウントを保護するための情報とリンクについては、Id フェーズの[グローバル管理者アカウントの保護](identity-create-protect-global-admins.md#identity-global-admin)の手順を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

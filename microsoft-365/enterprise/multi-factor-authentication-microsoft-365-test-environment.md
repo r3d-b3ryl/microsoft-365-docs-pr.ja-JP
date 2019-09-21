@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 エンタープライズテスト環境でスマートフォンに送信されるテキストメッセージを使用して、多要素認証を構成します。
-ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f209c3cebaefd8b4bddafb68471c35e5c37905be
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074217"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071576"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境用の多要素認証
 
@@ -95,7 +95,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     ブラウザーの [ **Microsoft Office Home** ] タブに、ユーザー2の office ポータルが表示されます。
 
 
-運用環境で多要素認証を展開するための情報とリンクについては、Id フェーズで[多要素認証](identity-multi-factor-authentication.md#identity-mfa)手順を設定するを参照してください。
+運用環境で多要素認証を展開するための情報とリンクについては、Id フェーズで[多要素認証](identity-secure-user-sign-ins.md#identity-mfa)手順を設定するを参照してください。
     
 ## <a name="next-step"></a>次の手順
 

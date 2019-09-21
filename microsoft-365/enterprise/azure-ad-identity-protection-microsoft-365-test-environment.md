@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Azure AD Identity Protection を構成し、Microsoft 365 Enterprise テスト環境で現在のアカウントを分析します。
-ms.openlocfilehash: d267bb9dff94acfec46fa1275887f9cade2a7285
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97530dcec9c32882bbe3b66eb53eaa6d4668a838
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074087"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071716"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の Azure AD Id 保護
 
@@ -48,7 +48,7 @@ Microsoft 365 エンタープライズテスト環境で Azure AD Id 保護を�
 1. ブラウザーのプライベートインスタンスを開き、Microsoft 365 Enterprise テスト環境のグローバル管理[https://portal.azure.com](https://portal.azure.com)者アカウントを使用して Azure portal にサインインします。
 2. Azure portal で、[**すべてのサービス > Marketplace**] をクリックします。
 3. 「 **AZURE AD Identity Protection** 」と入力し、それをクリックします。
-4. [スタート**** ] ブレードで、[**設定**] の下の [**オン**] をクリックし、[**ダッシュボードに Pin**] をクリックしてから、[**作成**] をクリックします。
+4. [スタート **] ブレードで**、[**設定**] の下の [**オン**] をクリックし、[**ダッシュボードに Pin**] をクリックしてから、[**作成**] をクリックします。
 5. Azure portal で、ダッシュボードの [ **AZURE AD Id 保護**] をクリックします。 
 
    **AZURE AD Identity Protection-概要**ブレードとダッシュボードが表示されているはずです。 [**脆弱性**] で、多要素認証が登録されていないユーザーアカウントの数が決まっていることを確認します。 この数値は、以前に実行した Microsoft 365 Enterprise のテストラボガイドによって異なります。
@@ -57,7 +57,7 @@ Microsoft 365 エンタープライズテスト環境で Azure AD Id 保護を�
 
 テストと実験の詳細については、「[リスクイベントをシミュレート](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook)する」を参照してください。
 
-Azure AD Id 保護を運用環境に展開するための情報とリンクについては、Id フェーズの「[資格情報が侵害](identity-multi-factor-authentication.md#identity-ident-prot)されないように保護する」の手順を参照してください。
+Azure AD Id 保護を運用環境に展開するための情報とリンクについては、Id フェーズの「[資格情報が侵害](identity-secure-user-sign-ins.md#identity-ident-prot)されないように保護する」の手順を参照してください。
 
 ## <a name="next-step"></a>次の手順
 
