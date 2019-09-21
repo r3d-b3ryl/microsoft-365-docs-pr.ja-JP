@@ -1,20 +1,19 @@
 ---
 layout: HubPage
 hide_bc: true
-author: CelesteDG
+author: robmazz
 localization_priority: Normal
-ms.author: celested
+ms.author: robmazz
 ms.topic: hub-page
-keywords: microsoft 365、microsoft 365 ドキュメント、microsoft 365 for business、microsoft 365 for enterprise、教育機関、企業、ビジネス、教育、ドキュメント、ドキュメントに関する microsoft 365
+keywords: Microsoft 365、Microsoft 365 ドキュメント、Microsoft 365 for business、microsoft 365 for enterprise、教育機関、企業、ビジネス、教育、ドキュメント、ドキュメントに関する Microsoft 365
 title: Microsoft 365 ドキュメント
 description: Microsoft 365 のドキュメントとリソースを参照してください。 Office 365、Windows 10、Enterprise Mobility + Security を含む完全なインテリジェントソリューションにより、すべてのユーザーがクリエイティブに共同作業し、安全に共同作業を行うことができます。
-ms.date: 07/01/2018
-ms.openlocfilehash: 255d60ba415b6af7435aeadbb0ee74c8bc760908
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 6026926ad2dd8638a3a9165e99a36b454eeac6bc
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289018"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071766"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -41,7 +40,7 @@ ms.locfileid: "32289018"
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Enterprise</h3>
-                                                    <p>Microsoft 365 enterprise は大規模な組織向けに設計されており、Office 365 Enterprise、Windows 10 enterprise、enterprise Mobility + Security を統合しています。</p>
+                                                    <p>Microsoft 365 Enterprise は大規模な組織向けに設計されており、Office 365 Enterprise、Windows 10 Enterprise、Enterprise Mobility + Security を統合しています。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,6 +81,46 @@ ms.locfileid: "32289018"
                                                     <br />
                                                     <h3>Microsoft 365 Education</h3>
                                                     <p>Microsoft 365 の教育機関は、教育機関向けの1つの低価格ソリューションで、創造性のロックを解除し、チームワークを促進し、シンプルで安全な環境を提供します。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/compliance/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Compliance-400x140.svg" alt="Microsoft 365 compliance documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 コンプライアンス</h3>
+                                                    <p>Microsoft 365 コンプライアンスソリューションは、組織が法律または規制標準に準拠していることを支援します。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/security/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Security-400x140.svg" alt="Microsoft 365 security documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 セキュリティ</h3>
+                                                    <p>Microsoft 365 のセキュリティソリューションは、攻撃の範囲内で企業を保護するのに役立ちます。</p>
                                                 </div>
                                             </div>
                                         </div>
