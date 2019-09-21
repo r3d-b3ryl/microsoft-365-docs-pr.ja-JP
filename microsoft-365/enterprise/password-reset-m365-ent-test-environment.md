@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワードのリセットを構成してテストします。'
-ms.openlocfilehash: de025d6b54b3cc1b69c8e50fec428f58d7754dcb
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8be1e898d0b995ddbed7b63c2f0ce07c969592c8
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073117"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071596"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
 
@@ -85,7 +85,7 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
 9. **[アカウントに戻る]** で、User 2 アカウントの新しいパスワードを入力し、**[終了]** をクリックします。User 2 アカウントの変更したパスワードのメモを取り、安全な場所に保存します。
 10. 同じブラウザーの別のタブで [https://portal.office.com](https://portal.office.com) に移動し、User 2 アカウント名と新しいパスワードでサインインします。 **[Microsoft Office Home]** ページが表示されます。
 
-実稼働環境でのパスワードのリセットの構成に関する情報およびリンクについては、ID フェーズの手順、「[パスワードのリセットを簡素化する](identity-password-reset.md#identity-pw-reset)」を参照してください。
+実稼働環境でのパスワードのリセットの構成に関する情報およびリンクについては、ID フェーズの手順、「[パスワードのリセットを簡素化する](identity-secure-your-passwords.md#identity-pw-reset)」を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

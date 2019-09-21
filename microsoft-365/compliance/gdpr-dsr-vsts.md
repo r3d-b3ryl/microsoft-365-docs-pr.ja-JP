@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431778"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071486"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>GDPR のための Azure DevOps Services データ サブジェクト要求
 
@@ -43,7 +43,7 @@ Microsoft は、Azure DevOps Services を運用および改善するためにユ
 
 コントローラーは、Azure DevOps サービスへのサインインに使用される ID プロバイダー (MSA または AAD) に応じて、2 つの方法のいずれかで、データ サブジェクトから収集された顧客データとシステム生成ログをエクスポートできます。
 
-- Azure サブスクリプションに関連付けられた AAD アカウントや MSA アカウントなど、Azure テナントに裏付けられたアカウントを使用して認証を行うユーザーは、「[GDPR のための Azure データ サブジェクト要求](../compliance/gdpr-dsr-azure.md)」の手順を実行できます。
+- Azure サブスクリプションに関連付けられた AAD アカウントや MSA アカウントなど、Azure テナントに裏付けられたアカウントを使用して認証を行うユーザーは、「[GDPR のための Azure データ サブジェクト要求](gdpr-dsr-azure.md)」の手順を実行できます。
 
 - MSA ID を使用して認証を行うユーザーは、この[プライバシー要求サイト](https://www.microsoft.com/concern/privacyrequest-msa)を使用して、複数の Microsoft サービス間で MSA ID に関連付けられたアクティビティ データを表示できます。このシナリオでは、ユーザーは自分の個人データのコントローラーです。
 
