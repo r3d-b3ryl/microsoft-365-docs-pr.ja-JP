@@ -3,7 +3,7 @@ title: 'フェーズ 6: 情報保護'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の情報保護インフラストラクチャの展開手順。
-ms.openlocfilehash: a00f61cbf2f8d00929a67dae6d401fd99014ec26
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 3174790d1ee6c9ed05605dd1c3c75405e3eac42b
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073687"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047310"
 ---
 # <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
 
@@ -43,14 +43,15 @@ ms.locfileid: "34073687"
 |![](./media/stepnumbers/Step3.png)|[Microsoft 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
 |![](./media/stepnumbers/Step4.png)|[Windows 情報保護を構成する](infoprotect-deploy-windows-information-protection.md)|
 |![](./media/stepnumbers/Step5.png)|[Office 365 データ損失防止を構成する](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
-
+|![](./media/stepnumbers/Step6.png)|[電子メールの暗号化を構成する](infoprotect-email-encryption.md)|
+|![](./media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
+|||
 
 上記の手順が完了したら、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の IT エキスパートが [Azure Information Protection を使用してデータを保護](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9)する方法について説明します。
+Microsoft の IT エキスパートが [Azure Information Protection を使用してデータを保護](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR9)する方法について説明します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 

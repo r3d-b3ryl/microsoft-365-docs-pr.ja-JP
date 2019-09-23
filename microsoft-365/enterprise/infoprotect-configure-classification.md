@@ -3,7 +3,7 @@ title: '手順 2: 環境の分類を構成する'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内のデータを分類するさまざまな方法について理解し、構成します。
-ms.openlocfilehash: 483549e7eaa7f6b77b775cf35bda7b0f42834ad2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072257"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047300"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>手順 2: 環境の分類を構成する
 
@@ -63,16 +63,17 @@ SharePoint Online サイトを設定することにより保持ラベルをフ�
 特定の種類のドキュメントまたは特定のコンテンツのドキュメントに対するセキュリティの保護と実装の一部は、追加のセキュリティを適用できるようにラベルを使用してマークすることです。 Microsoft 365 の機密ラベルを使用して次のことができます。
 
 - 暗号化、アクセス許可、または透かしの追加といった保護設定を強制適用する。
-- Microsoft Intune の Endpoint Protection を使用して、機密性の高いコンテンツが Windows を実行している組織のデバイス上に放置されないようにする。 
 - Windows Information Protection (WIP) Endpoint Protection を使用して、そのコンテンツがサード パーティ製アプリ (Twitter や Gmail など)、またはリムーバブル記憶域 (USB ドライブなど) にコピーされることを防止する。
-- Microsoft Cloud App Security を使用してサード パーティ製アプリおよびサービスのコンテンツを保護する。 
+- Microsoft Cloud App Security (CAS) を使用してサード パーティ製アプリおよびサービスのコンテンツを保護する。 
 - 保護設定を使わずにコンテンツを分類する。
 
 機密ラベルを使用する場合、セキュリティと情報保護レベルごとにラベルを構成する必要があります。 たとえばの以下の 3 つの機密ラベルを作成します。
 
 - 基準
 - 機密
-- 高度な規制
+- 厳しく規制
+
+SharePoint Online サイトに高度に規制されたデータを含むファイルを保存し、ファイルがサイトから離れる際にそれらのファイルにサイトと同じ権限を持たせるには、サイトと同じ権限を持つ追加の機密ラベルを作成する必要があります。
 
 詳細については、こちらの「[機密ラベルの概要](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels)」をご覧ください。
 
