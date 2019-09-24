@@ -104,43 +104,11 @@
 ## [推奨される Exchange Online アクセスポリシー](secure-email-recommended-policies.md)
 ## [推奨される SharePoint Online アクセスポリシー](sharepoint-file-access-policies.md)
 
-# [コンプライアンス ソリューション](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
-## [ISO-推奨されるアクションプラン](../compliance/iso-action-plan.md)
-## [NIST-推奨されるアクションプラン](../compliance/nist-action-plan.md) 
-## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
+# [Microsoft 365 コンプライアンス](../compliance/index.yml)
+# [Microsoft 365 セキュリティ](../security/index.yml)
 
-### [GDPR の推奨されるアクションプラン](../compliance/gdpr-action-plan.md)
-
-### [アカウンタビリティの準備チェックリスト](../compliance/gdpr-arc.md)
-#### [Office 365](../compliance/gdpr-arc-Office365.md)
-#### [Azure](../compliance/gdpr-arc-Azure.md)
-#### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
-#### [Microsoft サポート/プロフェッショナル サービス](../compliance/gdpr-arc-prof-services.md)
-
-
-### [情報保護](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [データ サブジェクト要求](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Visual Studio ファミリ](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure DevOps Services](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft サポート/プロフェッショナル サービス](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [違反の通知](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft サポート/プロフェッショナル サービス](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [データ保護影響評価](../compliance/gdpr-data-protection-impact-assessments.md)
-#### [Office 365](../compliance/gdpr-dpia-office365.md)
-#### [Azure](../compliance/gdpr-dpia-azure.md)
-#### [Dynamics](../compliance/gdpr-dpia-dynamics.md)
-#### [Microsoft サポート/プロフェッショナル サービス](../compliance/gdpr-dpia-prof-services.md)
-
-### [Microsoft のデータ保護責任者](../compliance/gdpr-data-protection-officer.md)
-
-# [セキュリティ ソリューション](../security/index.yml)
+# [クラウドサービスを使用したエンタープライズビジネス継続性管理 (EBCM)](ebcm-understanding-ebcm-with-cloud-services.md)
+## [顧客およびクラウドパートナーの EBCM の責任](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+## [Microsoft 365 クラウドサービスの復元](ebcm-m365-service-resiliency.md)
+## [ビジネス継続性計画の策定](ebcm-developing-your-ebcm-plan.md)
+## [サービスインシデントの軽減シナリオ](ebcm-microsoft-365-mitigations.md)
