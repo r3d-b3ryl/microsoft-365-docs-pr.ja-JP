@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: エンタープライズ以外の組織を対象として、Microsoft 365 Enterprise の基礎インフラストラクチャの単純化されたフェーズを順番に説明します。
-ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
-ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
+ms.openlocfilehash: 37bbf04eafeb3adc63d9dd01d052376f98856df4
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35624635"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071736"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ向け Microsoft 365 Enterprise の基礎インフラストラクチャ
 
@@ -63,9 +63,9 @@ ms.locfileid: "35624635"
 
 ### <a name="administrator-accounts"></a>管理者アカウント
 
-非常に強力なパスワードや多要素認証 (MFA) を要求することで、グローバル管理者ユーザー アカウントを保護します。 詳細については、「[グローバル管理者アカウントを保護する](identity-designate-protect-admin-accounts.md#protect-global-administrator-accounts)」を参照してください。
+強力なパスワードや多要素認証 (MFA) を要求することで、グローバル管理者ユーザー アカウントを保護します。 詳細については、「[グローバル管理者アカウントを保護する](identity-create-protect-global-admins.md#protect-global-administrator-accounts)」を参照してください。
 
-組織が高度なセキュリティを必要としていて、Microsoft 365 Enterprise E5 を使用している場合は、Azure AD Privileged Identity Management を使用して、ジャストインタイムの管理者アクセスを有効にします。 詳細については、「[オンデマンド グローバル管理者をセットアップする](identity-designate-protect-admin-accounts.md#set-up-on-demand-global-administrators)」を参照してください。
+組織が高度なセキュリティを必要としていて、Microsoft 365 Enterprise E5 を使用している場合は、Azure AD Privileged Identity Management を使用して、ジャストインタイムの管理者アクセスを有効にします。 詳細については、「[オンデマンド グローバル管理者をセットアップする](identity-create-protect-global-admins.md#identity-pim)」を参照してください。
 
 ### <a name="recommendations-for-groups"></a>グループに関する推奨事項
 
@@ -82,7 +82,7 @@ ms.locfileid: "35624635"
 
 ### <a name="hybrid-identity"></a>ハイブリッド ID
 
-オンプレミスの AD DS ドメインがある場合は、ドメインのユーザー アカウント、グループ、連絡先一式を Microsoft 365 Enterprise サブスクリプションの Azure AD テナントと同期する必要があります。 エンタープライズ以外の場合は、パスワード ハッシュ同期 (PHS) を使用してサーバー上に Azure AD Connect を構成します。 詳細については、「[ID を同期する](identity-azure-ad-connect.md)」を参照してください。
+オンプレミスの AD DS ドメインがある場合は、ドメインのユーザー アカウント、グループ、連絡先一式を Microsoft 365 Enterprise サブスクリプションの Azure AD テナントと同期する必要があります。 エンタープライズ以外の場合は、パスワード ハッシュ同期 (PHS) を使用してサーバー上に Azure AD Connect を構成します。 詳細については、「[ID を同期する](identity-add-user-accounts.md)」を参照してください。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>条件付きアクセスポリシーを使用したユーザー アクセスのセキュリティ強化
 
@@ -135,16 +135,16 @@ Azure AD では、ユーザーのサインインの条件が評価されます�
 
 | 機能 | 使用法 |
 |:------|:-----|
-| セルフサービスによるグループの管理 | IT スタッフではなく、グループの所有者が Azure AD グループを管理できるようにします。 詳細については、「[セルフサービスによるグループの管理](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups)」を参照してください。 |
-| 動的グループ メンバーシップ | 部署や国などのユーザー アカウントの属性に基づいて、Azure AD グループに対するユーザー アカウントの自動追加または自動削除を構成します。 詳細については、「[動的グループ メンバーシップ](identity-self-service-group-management.md#set-up-dynamic-group-membership)」を参照してください。 |
-| グループベースのライセンス | グループ メンバーシップを使用して、ユーザー アカウントに対して自動的にライセンスの割り当てまたは割り当て解除を行います。 詳細については、「[グループベースのライセンス](identity-self-service-group-management.md#set-up-automatic-licensing)」を参照してください。 |
+| セルフサービスによるグループの管理 | IT スタッフではなく、グループの所有者が Azure AD グループを管理できるようにします。 詳細については、「[セルフサービスによるグループの管理](identity-use-group-management.md#allow-users-to-create-and-manage-their-own-groups)」を参照してください。 |
+| 動的グループ メンバーシップ | 部署や国などのユーザー アカウントの属性に基づいて、Azure AD グループに対するユーザー アカウントの自動追加または自動削除を構成します。 詳細については、「[動的グループ メンバーシップ](identity-use-group-management.md#set-up-dynamic-group-membership)」を参照してください。 |
+| グループベースのライセンス | グループ メンバーシップを使用して、ユーザー アカウントに対して自動的にライセンスの割り当てまたは割り当て解除を行います。 詳細については、「[グループベースのライセンス](identity-use-group-management.md#set-up-automatic-licensing)」を参照してください。 |
 |  |  |
 
 グループベースのライセンスを使用している場合は、LICENSED という名前のグループを作成して、Microsoft 365 Enterprise ライセンスが割り当てられているユーザー アカウント名を含めます。
 
 ### <a name="monitor-user-access"></a>ユーザー アクセスの監視
 
-Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity Protection を使用して、資格情報の侵害についてユーザーのサインインを監視および分析できます。 詳細については、「[資格情報が侵害されないように保護する](identity-multi-factor-authentication.md#protect-against-credential-compromise)」を参照してください。
+Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity Protection を使用して、資格情報の侵害についてユーザーのサインインを監視および分析できます。 詳細については、「[資格情報が侵害されないように保護する](identity-secure-user-sign-ins.md#protect-against-credential-compromise)」を参照してください。
 
 ### <a name="your-configuration-so-far"></a>これまでの構成
 
