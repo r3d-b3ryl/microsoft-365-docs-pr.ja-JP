@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 'Microsoft 365 Business を使用して Windows 10 デバイスを出荷時にリセットする方法について説明します。 '
-ms.openlocfilehash: 7cb7afdc947766598ef5385078a1b2cab87601dd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 12e0bdbab430654fb80baa0313e63b2493e5077e
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074472"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121180"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 
-![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
+[![[ラベル] 管理センターが変更されたことを知らせるために、aka.ms/aboutM365preview で詳細を確認できます。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 出荷時の設定にリセットは、デバイスを購入したときの元の設定にデバイスを戻します。購入後にインストールしたデバイス上のすべてのアプリとデータが削除されます。Microsoft 365 Business を使って、管理する Windows 10 デバイスを出荷時の設定にリセットできます。
   

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Microsoft 365 Business に付属しているセキュリティ機能について説明します。
-ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 6b8fc215b95913e1beef3a3715119b947a7af406
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017524"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121160"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business security and コンプライアンス機能
 
@@ -32,7 +32,7 @@ Microsoft 365 Business では、Pc、携帯電話、タブレットでデータ�
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business 管理センターのセキュリティ機能
 
-![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
+[![[ラベル] 管理センターが変更されたことを知らせるために、aka.ms/aboutM365preview で詳細を確認できます。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 管理センターでは、Microsoft 365 Business セキュリティ機能の多くを管理することができます。これにより、これらの機能を簡単にオンまたはオフにすることができます。 管理センターでは、次の操作を実行できます。
   

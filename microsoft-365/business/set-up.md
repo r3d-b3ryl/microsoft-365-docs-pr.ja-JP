@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: 1efb7379930f639cf10875cf5aa6731001bb41c8
-ms.sourcegitcommit: 2e5ae52bb641ee1f72c077260b5d0f35622935fe
+ms.openlocfilehash: dbd2e740c85f52d3f43e6cd3d6ce45c478a9b1a9
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37005200"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121320"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>セットアップウィザードで Microsoft 365 Business をセットアップする
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザーを追加し、ポリシーをセットアップする
 
-![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
+[![[ラベル] 管理センターが変更されたことを知らせるために、aka.ms/aboutM365preview で詳細を確認できます。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Microsoft 365 Business を購入する場合は、所有しているドメインを使用するか、[サインアップ](sign-up.md)中に購入するかを選択できます。
 
