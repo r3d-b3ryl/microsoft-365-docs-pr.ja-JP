@@ -1,16 +1,16 @@
 <a name="crit-networking-step1"></a>
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必須: Microsoft 365 Enterprise に必要なネットワーク環境が準備できていること
 
-- オフィスごとの、Office 365、Microsoft Intune、Windows 10 Enterprise のインストールと更新を含む、Microsoft 365 トラフィックに見合ったインターネット帯域幅の確保
-- Office 365 の参照アーキテクチャに関するネットワーク全体のマップ
-- ネットワークの変更のパイロット実行とテストが済んでおり、トラフィックの待機時間の要件が満たされていること
+- オフィスごとに、Office 365、Microsoft Intune、Windows 10 Enterprise のインストールと更新を含む、Microsoft 365 トラフィックに十分なインターネット帯域幅があります。
+- ネットワーク全体が [Office 365 の参照アーキテクチャ](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)にマッピングされます。
+- ネットワークの変更はパイロットおよびテストされ、トラフィックの待機時間の要件を満たしています。
 
 必要に応じて、[手順 1](../networking-provide-bandwidth-cloud-services.md) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-networking-step2"></a>
 ### <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>必須: 支店のローカル インターネット接続と名前解決機能
 
-各支店に、ローカル ISP を使用したインターネット アクセスが構成され、そのローカル ISP の DNS サーバーがローカル パブリック IP を使用してインターネット上での自身の位置を識別するようになっていること。これにより、Office 365 と Intune にアクセスするユーザーのパフォーマンスを最大限に引き出すことができます。
+DNS サーバーがインターネット上の場所を識別するローカル パブリック IP アドレスを使用するローカル ISP を使用して、各支店にインターネット アクセスを構成しました。これにより、Microsoft 365 クラウド サービスにアクセスするユーザーに最高のパフォーマンスが保証されます。
 
 各支店でローカル ISP を使用していない場合、ネットワーク トラフィックが組織のバックボーンを通過する必要があるか、またはデータ リクエストがリモートのフロントエンド サーバーにより処理されるため、パフォーマンスが低下する可能性があります。
 
@@ -20,7 +20,7 @@
 必要に応じて、[手順 2](../networking-dns-resolution-same-location.md) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneeded-network-hairpins-are-removed"></a>オプション: 不要なネットワーク ヘアピンの削除
+### <a name="optional-unneccessary-network-hairpins-are-removed"></a>オプション: 不要なネットワーク ヘアピンの削除
 
 ネットワーク ヘアピンの調査と、オフィス全体のパフォーマンスに与える影響の確認がなされていること。削除できるヘアピンを削除するか、サード パーティのネットワーク プロバイダーやセキュリティ プロバイダーと協力し、ネットワークに最適な Microsoft 365 ピアリングが実装されていること。
 
