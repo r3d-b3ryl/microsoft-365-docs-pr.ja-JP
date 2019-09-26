@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツに暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: f6239c9378b540dd1e3b512711a7184dc4f45774
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d732303db1c2b138349a88fde45bd2aefb745c89
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086769"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148521"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -38,13 +38,13 @@ ms.locfileid: "37086769"
 
 - Microsoft Cloud App Security を使用して**サード パーティ製アプリおよびサービスのコンテンツを保護します**。 Cloud App Security を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます (サード パーティ製のアプリやサービスが機密ラベルを認識しない場合やサポートしない場合でも可能です)。
 
-- **サード パーティ製アプリおよびサービスに機密ラベルを拡張します。** Microsoft Information Protection SDK を使用すると、Windows、Mac、および Linux 上のサード パーティ製アプリは、機密ラベルを認識して、保護設定を適用できるようになります。近日中には、iOS および Android もサポートされます。
+- **サード パーティ製アプリおよびサービスに機密ラベルを拡張します。** Microsoft Information Protection SDK を使用すると、[これらのプラットフォーム](https://docs.microsoft.com/ja-JP/information-protection/develop/overview#microsoft-information-protection-sdk)上のサード パーティ製アプリは、機密ラベルを認識して、保護設定を適用できるようになります。
 
 - **保護設定を使用することなくコンテンツを分類します。** コンテンツに分類のみを (ステッカーのように) 割り当てることもできます。この分類は、コンテンツの使用時や共有時にコンテンツに永続してローミングされます。この分類を使用することで、機密コンテンツの使用レポートを生成して、アクティビティ データを確認できます。この情報に基づいて、後からいつでも保護設定を適用することができます。
     
 いずれの場合も、Office 365 の機密ラベルは、そのコンテンツに相応しい措置を講じる際に役立ちます。機密ラベルを使用すると、組織全体のデータを分類して、その分類に応じた保護設定を強制適用できます。
   
-機密ラベルは、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、Office 365 セキュリティ/コンプライアンス センターの **[分類]**  >  **[機密ラベル]** で作成します。作成した機密ラベルは、Azure Information Protection、Office アプリ、および Office 365 サービスで使用できます。
+機密ラベルの作成は、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターの [**分類**]  >  [**機密ラベル**] で行います。 これらの機密情報のラベルは、Azure Information Protection、Office アプリ、および Office 365 サービスで使用できます。
 
 Azure Information Protection のお客様は、それ以外の管理センターで Azure Information Protection のラベルを使用できます。また、追加の構成や高度な構成を実施することで、ラベルは Azure portal と同期されるようになります。 **Azure Information Protection のラベルと Office 365 の機密ラベルは、相互に完全な互換性があります。** そのため、たとえば、Azure Information Protection でラベル付けされたコンテンツがある場合、そのコンテンツの分類やラベル付けをやり直す必要はありません。
 
@@ -68,7 +68,7 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 電子メールやドキュメントに機密ラベルが適用されると、そのラベルに応じた保護設定がコンテンツに強制適用されます。機密ラベルを使用すると、次のことができます。
 
-- 電子メールとドキュメントのどちらかまたは両方を**暗号化**します。どのユーザーまたはグループに、どれだけの期間、どのアクションを実行するためのアクセス許可を付与するかを選択できます。たとえば、組織外の特定のドメイン内のユーザーに、コンテンツにラベルを付けてから 7 日間のみコンテンツをレビューするためのアクセス許可を付与することができます。または、自分でアクセス許可を割り当てる代わりに、ラベルを適用するときにユーザーがコンテンツにアクセス許可を割り当てることを許可できます。詳細については、「[機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)」を参照してください。
+- 電子メールのみ、または電子メールとドキュメントの両方の**暗号化**。 どのユーザーまたはグループがどのアクションを実行する権限を持つかを選択でき、権限を持つ期間も選択できます。 たとえば、組織外の特定のドメインのユーザーに、コンテンツを確認する権限を、コンテンツにラベルが付けられてから 7 日間のみ与えることができます。 または、アクセス許可を管理者が割り当てるのではなく、ユーザーがラベルを適用する際に、コンテンツへのアクセス許可の割り当てをユーザーが行えるようにもできます。 詳細については、「[機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)」を参照してください。
 
 - ラベルが適用された電子メールまたはドキュメントに、ユーザー設定の透かし、ヘッダー、またはフッターを追加して、**コンテンツにマークを付けます**。透かしを適用できるのはドキュメントのみで、電子メールには使用できません。透かしで使用できる文字数は、255 文字までです。また、ヘッダーとフッターに使用できる文字数は 1024 文字までとなります (Excel で使用できるのは 255 文字までとなり、ドキュメントにヘッダーやフッター、あるいは他の要因が含まれているかによって、使用できる文字数が異なります)。
 
@@ -259,7 +259,7 @@ Cloud App Security (CAS) を使用してサード パーティ製アプリおよ
 
 機密ラベルはクリア テキストとしてドキュメントのメタデータ内に存在するため、そうしたラベルを含むコンテンツの識別と保護をサード パーティ製アプリとサービスでサポートすることもできます。その他のアプリとサービスでのサポートは常に拡張中です。
 
-[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/) を使用すると、サード パーティ製アプリおよびサービスで機密ラベルの読み取りおよび適用が可能になり、ドキュメントを保護できるようになります。近日中には、iOS および Android もサポートされます。
+[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/) を使用すると、サード パーティ製のアプリやサービスは、ドキュメントの機密ラベルを認識して、ドキュメントに対して保護を適用することができます。  [これらのプラットフォーム](https://docs.microsoft.com/ja-JP/information-protection/develop/overview#microsoft-information-protection-sdk)上のアプリが SDK でサポートされています。
 
 この SDK を使用することで、その他の Microsoft 情報保護アプリおよびサービス (Office アプリ、Office 365 サービス、Azure Information Protection スキャナー、Microsoft Cloud App Security などと、その他いくつかのパートナーのソリューション) での操作方法でコンテンツのラベル付けと保護が可能になります。その例として、[Adobe Acrobat での機密ラベルのサポート](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)について調べてください。
 
