@@ -7,15 +7,17 @@
 ## [無料の Azure Active Directory サブスクリプションを使用する](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 でセキュリティとコンプライアンスを計画する](plan-for-security-and-compliance.md)
 
-# Insider のリスクを管理する
+# 内部リスクを管理する
 ## [ユーザーとデバイス アクセスの保護](protect-access-to-data-and-services.md)
-## [特権アクセス管理](privileged-access-management-overview.md)
-## [特権アクセス管理を構成する](privileged-access-management-configuration.md)
 ## [カスタマー ロックボックス](customer-lockbox-requests.md)
+## [特権アクセス管理]()
+### [特権アクセス管理について](privileged-access-management-overview.md)
+### [特権アクセス管理を構成する](privileged-access-management-configuration.md)
 ## カスタマー キー
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
 ### [Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化](service-encryption-with-customer-key-faq.md)
-## [通信を監督する](supervision-policies.md)
+## [通信の監督]()
+### [通信の監督について](supervision-policies.md)
 ### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
 ## [情報の障壁](information-barriers.md)
 ### [情報バリアポリシーの定義](information-barriers-policies.md)
@@ -285,6 +287,7 @@
 ## [電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)
 ## [Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](set-up-compliance-boundaries.md)
 ## [電子情報開示ソリューション シリーズ - データー流出のシナリオ - 検索と消去](data-spillage-scenariosearch-and-purge.md)
+## [電子情報開示に関する一般的な問題のトラブルシューティング](ediscovery-troubleshooting-common-issues.md)
 
 ## 保留リストを管理する
 ### [電子情報開示保持を作成する](ediscovery-cases.md#step-4-place-content-locations-on-hold)
