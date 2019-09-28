@@ -10,19 +10,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、機密データを保護します。
-ms.openlocfilehash: b6e9941eee9de4f295b0f8056c1c91b7076e530c
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+ms.openlocfilehash: 81197a8baf1c4d0cbfd898c41a305c1a99bab57c
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668396"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288117"
 ---
 # <a name="increase-threat-protection"></a>脅威保護を強化する
 
@@ -44,7 +42,7 @@ Office 365 または Microsoft 365 環境にはマルウェアからの保護が
     
 4. [**設定**] をクリックします。
     
-5. [**一般的な添付ファイル**の種類**** のフィルター] で、[オン] を選択します。 ブロックされているファイルの種類は、このコントロールのすぐ下のウィンドウに一覧表示されます。  次の filetypes を追加してください。
+5. [**一般的な添付ファイルの種類のフィルター**] で、 **[オン] を選択し**ます。 ブロックされているファイルの種類は、このコントロールのすぐ下のウィンドウに一覧表示されます。  次の filetypes を追加してください。
    - ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、ht、hta、inf、ins、isp、ジョブ、js、jse、lnk、pcd、[mdb]、[mde]、[]、[reg]、[shs]、[mst]、[]、[url]、[wsh]、[]、[wsc  <br/> 必要に応じて、後でファイルの種類を追加または削除できます。
     
 6. [ **保存**] をクリックします。
@@ -81,7 +79,7 @@ Office 365 または Microsoft 365 環境にはマルウェアからの保護が
 |次の手順を実行します。 . .  <br/> |受信者にメッセージで通知します。  <br/> |
 |メッセージテキストを指定する  <br/> |これらの種類のファイルは、悪意のあるコードを含むマクロを含んでいる可能性があるため、知られていないユーザーから開かないでください。  <br/> |
    
-詳細については、以下を参照してください。
+詳細については、次のトピックを参照してください。
   
 - [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     

@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: SharePoint、OneDrive、Teams で検出された悪意のあるファイルに関する情報を表示する方法と、それらのファイルに対してアクションを実行する方法について説明します。
-ms.openlocfilehash: b16ba88cd4984754f92fac2917f0f2b393600692
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2271ec7822efd442474aa322535da26d42788db
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086929"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306111"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する
 
@@ -43,21 +43,21 @@ Office 365 ATP によって検出されたファイルの状態と詳細情報�
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>検疫内のファイルを表示し、処理を実行する
 
-1. &amp; Office 365 セキュリティコンプライアンスセンターで、[**脅威管理** \> **レビュー** \>の**検疫**] を選択します。
+1. &amp; Office 365 セキュリティコンプライアンスセンターで、[**脅威管理** \> **レビュー** \>の**検疫**] を選択します。 (に[https://protection.office.com/quarantine](https://protection.office.com/quarantine)直接移動することもできます。)
     
-2. 左上隅で、フィルターを [**電子メール**] から [**コンテンツ**] に変更します。
+2. 左上隅で、ドロップダウンメニューの [**電子メール**] を [**ファイル**] に変更します。 結果のリストに含まれるアイテムが多すぎる場合は、**フィルター**機能を使用して選択範囲を絞り込みます。
     
 3. リストで項目を選択すると、ファイルの URL などの詳細情報が表示されます。
     
 4. 使用可能なアクションを選択します。
     
-  - ファイルのブロックを解除するには、[**レポートの解放&amp; ** ] を選択します。 
+  - ファイルのブロックを解除するには、[**ファイルの解放**] を選択します。 
     
     Microsoft への誤検知としてファイルを報告するには、[ **microsoft にレポートを送信**する] を選択します。 
     
   - [**ファイルのダウンロード**] を選択して、ファイルをさらに調査します。 
     
-  - [**削除**] を選択して、検疫されたアイテムのリストからファイルを削除します。 このオプションを選択する場合は、SharePoint Online、OneDrive for Business、または Microsoft Teams の対応するライブラリからもファイルを削除する必要があります。 このオプションでは、ファイルが開かれたり共有されたりすることはブロックされません。 
+  - 検疫されたアイテムのリストからファイルを削除するには、[**検疫から削除**] を選択します。 このオプションを選択する場合は、SharePoint Online、OneDrive for Business、または Microsoft Teams の対応するライブラリからもファイルを削除する必要があります。 このオプションでは、ファイルが開かれたり共有されたりすることはブロックされません。 
     
 5. [**閉じる**] を選択して、選択したアイテムの詳細を閉じます。 
   

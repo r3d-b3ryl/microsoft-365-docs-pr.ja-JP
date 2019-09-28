@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Office 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
-ms.openlocfilehash: c64991fa4ad847381cb00e38473aefc848015ff0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f9688662714a4a33f2c6e3483cf902e0f61def9
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085666"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305951"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>ユーザーに Office 365 セキュリティ センターとコンプライアンス センターへのアクセス権を付与する
 
-ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Office 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。 セキュリティ & コンプライアンスセンターで、Office 365 グローバル管理者または組織の組織の管理役割グループのメンバーとして、これらのアクセス許可をユーザーに与えることができます。 ユーザーが管理できるのは、アクセス権が付与されたセキュリティまたはコンプライアンスの機能のみです。 
-  
+ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Office 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。 セキュリティ & コンプライアンスセンターで、Office 365 グローバル管理者または組織の組織の管理役割グループのメンバーとして、これらのアクセス許可をユーザーに与えることができます。 ユーザーが管理できるのは、アクセス権が付与されたセキュリティまたはコンプライアンスの機能のみです。
+
 セキュリティ & コンプライアンスセンターでユーザーに付与できるさまざまなアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - この記事に記載されている手順を完了するには、Office 365 グローバル管理者であるか、またはセキュリティ & コンプライアンスセンターの組織の組織の管理役割グループのメンバーである必要があります。
@@ -65,27 +65,27 @@ ms.locfileid: "37085666"
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>PowerShell を使用して、別のユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する
 
-1. [Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。
+1. [Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)します。
 
 2. 次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。
 
-   ```
+   ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
    **パラメーター**:
-  
+
    - _Identity_は、メンバーを追加する役割グループです。
 
    - _Member_は、役割グループに追加するメールボックス、ユニバーサルセキュリティグループ (USG)、またはコンピューターです。 一度に 1 メンバーしか指定できません。
 
 構文とパラメーターの詳細については、「 [add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)」を参照してください。
-  
+
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
 ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権が与えられたことを確認するには、次の例に示すように、 **add-rolegroupmember**コマンドレットを使用して組織の管理役割グループのメンバーを表示します。
-  
-```
+
+```PowerShell
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 

@@ -10,20 +10,17 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business を購入してサインアップする方法について説明します。
-ms.openlocfilehash: 0f92bf35d2a7898d530fd509d8d13c91f32ccab3
-ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
+ms.openlocfilehash: bcdf0adc60c597a5eca485415f33662402d12cf4
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35114924"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288237"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Microsoft 365 Business へのサインアップ
 

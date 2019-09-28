@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: 管理者は、Exchange Online で S/MIME 証明書の検証に使用する仮想証明書コレクションを作成する方法について説明します。
-ms.openlocfilehash: 51649c6e41c6171896e04d213b73f2e51cb6c6de
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0848fc974c48b442f9106125b847db5f8ec0d0c3
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087055"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306101"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>S/MIME を検証するために Exchange Online で仮想証明書コレクションをセットアップする
 
@@ -29,13 +29,13 @@ ms.locfileid: "37087055"
 
 SST 証明書ストアファイルを取得したら、Exchange Online PowerShell で次の構文を使用して、Exchange Online 仮想証明書ストアに SST ファイルの内容を保存します。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
 
-```
+```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)
 ```
 
 この例では、SST ファイル C:\My Documents\Exported 証明書ストア SST をインポートします。
 
-```
+```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 

@@ -10,26 +10,22 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 'Microsoft 365 Business 管理センターから Windows 10 デバイスに Office をインストールまたはアンインストールします。 '
-ms.openlocfilehash: 1e962f51882ddfd97da566858a0a1e6fb56ecbb8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: d82ab8292211d1adacba732922bf693dd2157ad6
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071962"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287537"
 ---
 # <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a>Windows 10 デバイスで Office を自動的にインストールまたはアンインストールする
 
-![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
+[![[ラベル] 管理センターが変更されたことを知らせるために、aka.ms/aboutM365preview で詳細を確認できます。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Microsoft 365 Business 管理センターから Office を Windows 10 PC に迅速かつ簡単にインストールできます。
   

@@ -11,22 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: 64cfa460311af6cdafb637ceb3415511e003e394
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 8568232eb65485f1e016342bb13de9a07f706c00
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853151"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288537"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 

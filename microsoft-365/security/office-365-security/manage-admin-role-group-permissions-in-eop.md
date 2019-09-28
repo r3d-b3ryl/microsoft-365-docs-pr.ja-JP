@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理者は、exchange Online Protection の Exchange 管理センター (EAC) でアクセス許可を割り当てる、または削除する方法を学習できます。
-ms.openlocfilehash: 589d979b9a2ed3f262eb8171fe08622c225548ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b82836b5f9f28c3055e540890771def28382d2b
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086928"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306131"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>EOP で管理役割グループのアクセス許可を管理する
-  
+
 Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター (EAC) を使用して、特定の管理タスクを実行するアクセス許可を割り当てるために、ユーザーを役割グループのメンバーにすることができます。また、EAC を使用して、ユーザーを役割グループから削除することもできます。
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - 予想所要時間 : 5 ～ 10 分
@@ -33,7 +33,7 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
 
 > [!TIP]
 > 問題がある場合は、 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラムでヘルプを要求します。
-  
+
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>EAC を使用してメンバーを管理役割グループに割り当てる
 
 1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを追加する役割グループをクリックしてから、[**編集]** ![編集](../media/ITPro-EAC-EditIcon.gif)アイコンをクリックします。
@@ -47,8 +47,8 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
 5. ユーザーが **[メンバー]** ウィンドウに追加された状態になります。 **[保存]** をクリックします。
 
    > [!NOTE]
-   > 役割グループに対してメンバーを追加または削除した後、ユーザーは自身の管理者権限の変更を確認するためにサインアウトしてから、再度サインインしなければならない場合があります。 
-  
+   > 役割グループに対してメンバーを追加または削除した後、ユーザーは自身の管理者権限の変更を確認するためにサインアウトしてから、再度サインインしなければならない場合があります。
+
 ## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>EAC を使用して管理役割グループからメンバーを削除する
 
 1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを削除する役割グループをクリックしてから、[ **** ![編集アイコン](../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。
@@ -59,7 +59,7 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
 
    > [!NOTE]
    > 役割グループに対してメンバーを追加または削除した後、ユーザーは自身の管理者権限の変更を確認するためにサインアウトしてから、再度サインインしなければならない場合があります。
-  
+
 ## <a name="for-more-information"></a>詳細情報
 
 [EOP の機能アクセス許可](feature-permissions-in-eop.md)

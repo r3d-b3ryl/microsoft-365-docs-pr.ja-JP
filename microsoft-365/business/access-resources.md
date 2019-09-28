@@ -8,27 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management
 localization_priority: Normal
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: ab9049e78617372463b8446dc8f8bc0089d8c117
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 26ba0ffb64ddce32369002120657456e47ac0c7f
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981663"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287357"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Microsoft 365 Business で Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
 
-Azure Active Directory に参加している Windows 10 デバイスはすべて、Office 365 アプリなどのクラウドベースのすべてのリソースへのアクセス権を持ち、Microsoft 365 Business で保護することができます。 基幹業務 (LOB) アプリ、ファイル共有、およびプリンターなどのオンプレミスのリソースへのアクセスも許可するには、 [AZURE AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)を使用して、オンプレミスの active Directory を Azure active directory と同期する必要があります。 次のビデオでは、最も一般的なシナリオに対してこの設定を行う手順を詳しく説明します。
- 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+Azure Active Directory に参加している Windows 10 デバイスはすべて、Office 365 アプリなどのクラウドベースのすべてのリソースへのアクセス権を持ち、Microsoft 365 Business で保護することができます。 基幹業務 (LOB) アプリ、ファイル共有、およびプリンターなどのオンプレミスのリソースへのアクセスも許可するには、 [AZURE AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)を使用して、オンプレミスの active Directory を Azure active directory と同期する必要があります。 
 
 詳細については、「 [Azure Active Directory でのデバイス管理の概要](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)」を参照してください。
 手順の概要についても、以下のセクションで説明します。

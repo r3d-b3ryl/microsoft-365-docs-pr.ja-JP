@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントレポートについて学習できます。
-ms.openlocfilehash: 7d3977293b0456b9ab3d383c1a41be9858a66028
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a273da9e0ebe7987a22669c54f3ebfe103e5933c
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086853"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306031"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP Auth クライアントのレポート
 

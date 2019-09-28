@@ -10,22 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: d309700761ee48ef66a8cd3886fd416c79463ed5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 52e3167986bb7ed835762540e8076a3b9b2a0b56
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074302"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287637"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
@@ -77,7 +73,7 @@ Microsoft 365 Business は最大300ライセンスを想定しており、さら
   
 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法は推奨されており、この状態のデバイスは**ハイブリッド AZURE AD 参加デバイス**と呼ばれます。 
   
-オンプレミスのリソース (ファイル共有やプリンターなど) が含まれているローカルの Active Directory を保持する場合は、以下の手順に従って、 **AZURE AD に参加**しているデバイスにこれらのリソースへのアクセスを許可できます。 [Microsoft 365 Business の Azure AD に参加しているデバイス](access-resources.md)。
+オンプレミスのリソース (ファイル共有やプリンターなど) が含まれているローカルの Active Directory を保持する場合は、以下の手順に従って、 **AZURE AD に参加**しているデバイスにこれらのリソースへのアクセスを許可でき[ます。Microsoft 365 Business の Azure AD に参加しているデバイス](access-resources.md)。
   
 Windows 10 Pc をセットアップした後、Office をデバイスに[自動的にインストール](auto-install-or-uninstall-office.md)することができます。 
   
@@ -92,6 +88,6 @@ Windows 10 Pc をセットアップした後、Office をデバイスに[自動�
 ## <a name="related-topics"></a>関連項目
 [Microsoft 365 Business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Microsoft 365 Business を管理](manage.md)する[Microsoft 365 Business への移行](migrate-to-microsoft-365-business.md)
+Microsoft [365 business](manage.md)[移行を microsoft 365 business に管理する](migrate-to-microsoft-365-business.md)
   
 

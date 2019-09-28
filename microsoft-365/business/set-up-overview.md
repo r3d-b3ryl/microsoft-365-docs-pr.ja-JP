@@ -13,21 +13,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business のセットアップ手順の概要について説明します。
-ms.openlocfilehash: ae7ed0aab36a6e759e0f0c1fbc3d3183273a284e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074407"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288577"
 ---
 # <a name="overview-of-setup"></a>セットアップの概要
 
@@ -36,7 +33,7 @@ ms.locfileid: "34074407"
 
 ## <a name="step-1-add-your-domain-and-users"></a>手順 1: ドメインとユーザーを追加する
 
-   - **[ドメインを追加する](set-up.md#add-your-domain-to-personalize-sign-in)**([サインアップ](sign-up.md)中にドメインを購入した場合、この手順は既に完了しています。)
+   - **[ドメインを追加](set-up.md#add-your-domain-to-personalize-sign-in)** します ([サインアップ](sign-up.md)中にドメインを購入した場合、この手順は既に完了しています)。
 
     - **ユーザーを追加**します。 これは、次の3つの方法のいずれかで行うことができます。
         - [ウィザード](set-up.md#add-users-in-the-wizard)で。
@@ -81,6 +78,6 @@ ms.locfileid: "34074407"
 
      - 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法は推奨されており、この状態のデバイスはハイブリッド Azure AD 参加デバイスと呼ばれます。
 
-    - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、次の手順に従って、Azure AD に参加しているデバイスにこれらのリソースへのアクセス権を付与できます。 [Microsoft 365 Business の Azure AD に参加しているデバイス](access-resources.md)。
+    - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、次の手順に従って、Azure AD に参加しているデバイスにこれらのリソースへのアクセス権を付与でき[ます。Microsoft 365 Business の Azure AD に参加しているデバイス](access-resources.md)。
 
   

@@ -45,6 +45,7 @@
 ### [Exchange Online](exchangeonline-workload.md)
 ### [Sharepoint Online と OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [移行](migration-microsoft-365-enterprise-workload.md)
+### [リモートワーカーを支援する](empower-people-to-work-remotely.md)
 ### [高度な規制データを持つ Teams およびサイト](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 ### [基本構成]()

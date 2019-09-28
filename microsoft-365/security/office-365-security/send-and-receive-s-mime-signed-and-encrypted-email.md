@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Microsoft Outlook で S/MIME 暗号化メッセージを送信または返信する場合の操作感は、非暗号化メッセージを使用した場合とよく似ています。
-ms.openlocfilehash: 9b7ba86039fe774570c38d58a15591b7f1521302
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 63f45688946f1946f0b0a63cec748d0f0c6a50ee
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086338"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305931"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Exchange Online で S/MIME 署名および暗号化された電子メールを送受信する
 

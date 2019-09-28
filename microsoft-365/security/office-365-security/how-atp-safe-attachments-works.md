@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: 14db6bc51f2017388639eb4270d7c5fc67b4ff7d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78abf4aed7999e891907c981cddfea4e659d4285
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085653"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305921"
 ---
-# <a name="how-ffice-365-atp-safe-attachments-works"></a>Ffice> office 365 の ATP の安全な添付ファイルの動作方法
+# <a name="how-office-365-atp-safe-attachments-works"></a>Office 365 の ATP の安全な添付ファイルの動作
 
 ## <a name="how-it-works"></a>メカニズム
 
