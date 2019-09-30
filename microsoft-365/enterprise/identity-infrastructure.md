@@ -3,7 +3,7 @@ title: 'フェーズ 2: ID'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の ID インフラストラクチャを展開する手順。
-ms.openlocfilehash: 6acd462a0fcd4169a42a0b1d0e1738ffcba597f5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 07f95a249912826b80e0654cac4063b3d5763267
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073897"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981954"
 ---
 # <a name="phase-2-identity"></a>フェーズ 2: ID
 
@@ -26,15 +26,23 @@ ms.locfileid: "34073897"
 
 Microsoft 365 enterprise では、ID インフラストラクチャを入念に計画および実施することで、セキュリティを強化し、認証されたユーザーとデバイスだけが生産性ワークロードとそのデータにアクセスできるようにする準備が整います。
 
+Microsoft 365 Enterprise の ID モデルと認証の概要については、このビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+
 >[!Note]
 >既に ID インフラストラクチャを展開している場合は、[ID インフラストラクチャの終了条件](identity-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認してください。
 >
 
+各 Microsoft 365 Enterprise プランの ID 機能、Azure Active Directory (Azure AD) の役割、オンプレミスおよびクラウドベースのコンポーネント、および最も一般的な認証構成については、[ID インフラストラクチャのポスター](media/identity-infrastructure/M365E-ID-Infra.pdf) を参照してください。
+
+[![ID インフラストラクチャ ポスター](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
+
+この 2 ページのポスターで、Microsoft 365 Enterprise の ID の概念と構成をすばやく把握できます。
+
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
+
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>Microsoft 365 Enterprise の ID インフラストラクチャを計画および展開する 
-
-開始する前に、Microsoft 365 の ID モデルと認証の概要についてこのビデオをご覧ください。
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
 クラウドで新しい ID インフラストラクチャを計画および展開するには、次の手順を使用します。また、これらの手順を使用して既存のオンプレミスまたはハイブリッド ID インフラストラクチャを導入し、Microsoft 365 Enterprise と連携することができます。 
 
@@ -46,8 +54,9 @@ Microsoft 365 enterprise では、ID インフラストラクチャを入念に�
 |![](./media/stepnumbers/Step4.png)| [セキュリティで保護されたユーザー認証を構成する](identity-multi-factor-authentication.md) |
 |![](./media/stepnumbers/Step5.png)| [ユーザーのアクセスを簡素化する](identity-password-reset.md) |
 |![](./media/stepnumbers/Step6.png)| [管理を容易にするためのグループの使用](identity-self-service-group-management.md) |
+|![](./media/stepnumbers/Step7.png)| [identity governance を設定する](identity-governance.md) |
 
-上記の手順が完了したら、このフェーズの[終了条件](identity-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。
+上記の手順が完了したら、このフェーズの[終了条件](identity-exit-criteria.md)を参照し、Microsoft 365 Enterprise ID の必須条件とオプションの条件を満たしていることを確認します。
 
 ## <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 
@@ -58,7 +67,7 @@ Microsoft では、セキュアで生産性の高い要員を確保するため�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の IT エキスパートが [ID を管理し、アクセスをセキュリティで保護](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR5)する方法について説明します。
+Microsoft の IT エキスパートが [ID を管理し、アクセスをセキュリティで保護](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR5)する方法について説明します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 

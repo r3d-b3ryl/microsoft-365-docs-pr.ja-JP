@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基礎インフラストラクチャを組織に展開するための主要フェーズ (別名、コア展開) について理解します。
-ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297917"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982098"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise の基礎インフラストラクチャチャ
 
@@ -60,7 +60,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 ## <a name="at-a-glance"></a>概要
 
-[Microsoft 365 Enterprise の基盤インフラストラクチャのポスター](http://aka.ms/m365efoundinfraposter)は、各フェーズで参照できる中心的な場所です。
+[Microsoft 365 Enterprise の基盤インフラストラクチャのポスター](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)は、各フェーズで参照できる中心的な場所です。
 
 - 管理者とユーザーのフェーズの全体的な目標
 - サービス、機能、およびツール
@@ -69,7 +69,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 - 新しいユーザーのオンボード プロセス
 - モニターと更新の方法
 
-![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+[![Microsoft 365 Enterprise の基盤インフラストラクチャ ポスターの画像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)をクリックします。
 

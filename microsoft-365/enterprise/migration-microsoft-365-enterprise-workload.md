@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise への移行
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: f82e65cdff674884466fe70a299250c92f356186
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 0def2f90a016c6d81f2c05bb3571646d97edf4ca
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297883"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982824"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -64,7 +64,7 @@ Office 365 ProPlus は更新プログラムを自動的にインストールし�
 
 ### <a name="office-2010"></a>Office 2010
 
-Office 2010 リリースの Office のバージョンは、サポートが 2020 年 10 月 13 日に終了します。詳細については、「[Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)」を参照してください。
+Office 2010 でリリースした Office バージョンの場合、サポートの終了は**2020 年 10 月 13 日**です。 詳細については、[Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)を参照してください。
 
 Office 2010 を実行しているコンピューターを Office 2013 または Office 2016 (両方とも手動で更新する必要があります) にアップグレードするのではなく、以下を行うことを検討してください。 
 
@@ -115,8 +115,8 @@ Office 2007 リリースのサーバー製品を Office 2010、Office 2013、ま
 
 Office 2010 リリースのサーバー製品については、次のものに関してサポートの終了日が決まっています。
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)は、**2010 年 1 月 14 日**です。
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)は、** 2020 年 10 月 13 日**です。
 
 Office 2010 リリースのこれらのサーバー製品を Office 2013 または Office 2016 リリースのサーバー製品にアップグレードするのではなく、以下を行うことを検討してください。
 
@@ -140,11 +140,21 @@ Office 2016 リリースのサーバー製品については、サポートの�
 2. 新しい機能と作業プロセスをユーザーに展開する。
 3. Office 2016 サーバー製品を実行しているオンプレミス サーバーが必要なくなった場合は使用を停止する。
 
-## <a name="migration-for-microsoft-windows"></a>Microsoft Windows の移行
+## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 および 8.1 の移行
 
-Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
+Windows 7 は、**2010 年 1 月 14 日**にサポート終了になります。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
 
-その他の方法については、「[Windows 10 展開シナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)」を参照してください。[Windows 10 の展開を計画](https://aka.ms/planforwin10deployment)することもできます。
+その他の方法については、「[Windows 10 展開のシナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)」をご覧ください。 自分で[Windows 10 の展開を計画](https://aka.ms/planforwin10deployment)することもできます。
+
+## <a name="summary-of-options-for-office-2010-clients-and-servers-and-windows-7"></a>Office 2010 クライアントとサーバー、および Windows 7 のオプションの概要
+
+これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)をご覧ください。
+
+[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+
+この 1 ページのポスターで、Office 2010 クライアントおよびサーバー製品と Windows 7 がサポート終了に達してしまうことを防ぐさまざまな手段をすばやく理解できます。ここには、特に推奨される手段と、Microsoft365 Enterprise のオプション サポートが含まれます。
+
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することができます。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
@@ -158,13 +168,13 @@ Microsoft の IT 担当者がどのように会社のデータを Microsoft 365 
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise に移行する方法をより良く理解するためには、[移行のポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)をダウンロードしてください。
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![「Microsoft 365への移行」ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 この記事に記載されている製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
+この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows および Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
-このポスターは、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷できます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することができます。
 
 ## <a name="result"></a>結果
 

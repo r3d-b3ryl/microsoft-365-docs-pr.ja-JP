@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: " Microsoft 365 Enterprise のネットワーク インフラストラクチャを展開する手順。"
-ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 35c65515854bb0c47a45e48d8e3c6af6a80d907c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074317"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982798"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>フェーズ 1: Microsoft 365 Enterprise のネットワーク インフラストラクチャ
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 Enterprise には、エンタープライズ管理とセキュリティ (EMS) の一部として、Office 365 と Microsoft Intune が含まれています。 これらのクラウド ベースのサービスは両方とも、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
+Microsoft 365 Enterprise には、Office 365、Microsoft Intune、および Microsoft Azure の多くの ID やセキュリティ サービスが含まれます。 これらのクラウド ベースのサービスはすべて、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
 
 このフェーズでは、Microsoft 365 Enterprise のクラウド サービスへの高パフォーマンス接続を作成するための主な検討事項について、順を追って説明します。概要については、「[Office 365 のネットワークの原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)」を参照してください。
 
@@ -48,7 +48,7 @@ Microsoft 365 Enterprise の要件と機能に対応したネットワーク イ
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の内部を見て、[クラウド サービス向けに Microsoft ネットワークを最適化](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4)している方法をご紹介します。
+Microsoft の内部を見て、[クラウド サービス向けに Microsoft ネットワークを最適化](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR4)している方法をご紹介します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 

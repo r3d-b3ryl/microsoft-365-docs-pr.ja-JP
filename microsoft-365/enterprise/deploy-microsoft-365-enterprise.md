@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297907"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982074"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
@@ -87,13 +87,13 @@ TLGs を使用すると、自己学習、実例説明、カスタマイズする
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)をダウンロードしてください。
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[組織を Microsoft 365 へ移行する](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)を参照してください。
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![ポスター [組織を Microsoft 365 へ移行する]](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows および Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
-このポスターは、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷できます。
+[移行ポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷できます。
 
 ## <a name="how-did-others-do-it"></a>他のユーザーはどのように活用しましたか？
 
@@ -115,7 +115,7 @@ TLGs を使用すると、自己学習、実例説明、カスタマイズする
 
 同時に、高度なセキュリティ機能と製品との統合は管理のニーズを効率化し、IT ライフ サイクル全体で総保有コストを最小限に抑えるのに役立ちます。 
 
-セキュリティで保護された環境で、創造性とチームワークの促進を解き放つサービスとアプリケーションをサポートするには、コア サービス エンジニア リングとオペレーション (旧称 Microsoft IT) [計画と基盤の展開](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365)で詳細を確認します。
+セキュリティで保護された環境で、創造性とチームワークの促進を解き放つサービスとアプリケーションをサポートするには、コア サービス エンジニア リングとオペレーション (旧称 Microsoft IT) [計画と基盤の展開](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365)で詳細を確認します。
 
 > [!Note]
 > この web ページは、英語でのみ利用できます。

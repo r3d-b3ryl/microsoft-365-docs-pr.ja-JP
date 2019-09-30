@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise のワークロードとシナリオ
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297867"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981938"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -34,19 +34,20 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 - 地域の規制を遵守しているデータ。
 - 企業秘密、財務情報、人事情報、組織戦略など、組織にとって最も重要なデータ。
 
-こうしたデータを内外の脅威から保護するには、「[Microsoft Teams および SharePoint Online サイトで高度な規制データを扱うには](teams-sharepoint-online-sites-highly-regulated-data.md)」の手順を参照してください。 このシナリオは段階を追って SharePoint Online サイトまたは Microsoft Teams チームを設定し、最も重要なデータを安全に保管します。
+こうしたデータを内外の脅威から保護するには、「[Microsoft Teams および SharePoint Online サイトで高度な規制データを扱うには](teams-sharepoint-online-sites-highly-regulated-data.md)」を参照してください。 このシナリオは段階を追って SharePoint Online サイトまたは Microsoft Teams チームを設定し、最も重要なデータを安全に保管します。
 
 Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオを次に示します。
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://www.microsoft.com/microsoft-365/success/)」を参照してください。 この Web ページで、検索文字列を入力するか、[**フィルター**] をクリックして、Microsoft 365 内の業界、役割 (部署)、および製品を指定します。
+その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://www.microsoft.com/microsoft-365/success/)」を参照してください。 
 
-結果からカードをクリックすると、開始するための手順を確認できます。
+1. この Web ページで、検索文字列を入力するか、[**フィルター**] をクリックして、Microsoft 365 内の業界、役割 (部署)、および製品を指定します。
+2. 結果からカードをクリックすると、開始するための手順を確認できます。
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基盤インフラストラクチャの前提条件
 
-*理想的には*、[基盤インフラストラクチャ](deploy-foundation-infrastructure.md)のすべてのフェーズを設定した後で、ワークロードとシナリオを展開する必要があります。 これにより、基になるすべてのレイヤーがユーザーとそのデバイスに対して統合、セキュリティ、および最適な操作性を提供できるようになります。
+*理想的には*、[基盤インフラストラクチャ](deploy-foundation-infrastructure.md)のすべてのフェーズを設定した後で、ワークロードとシナリオを展開する必要があります。 これにより、基になるすべての基盤レイヤーがユーザーとそのデバイスに対して統合、セキュリティ、および最適な操作性を提供できるようになります。
 
 | フェーズ | 結果 |
 |:-------|:-----|
@@ -57,14 +58,14 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
 | モバイル デバイス管理 | デバイスを登録し、管理することができます。 |
 | 情報保護 | Office 365 のセキュリティ機能が有効で、機密または Azure Information Protection ラベルはドキュメントを保護する準備ができています。 |
 
-これは理想的であり、計画、構成、テスト、およびパイロットのために時間がかかる場合があることに注意してください。特に既存のインフラストラクチャで複数の場所が対象になる大規模な組織が該当します。 こうしたレイヤーのすべてをあらゆる場所に配置することは、Microsoft 365 Enterprise からビジネス上の価値をより迅速に得るためには必要ありません。 
+これは理想的であり、計画、構成、テスト、およびパイロットのために時間がかかる場合があることに注意してください。特に既存のインフラストラクチャで複数の場所が対象になる大規模な組織が該当します。 あらゆる場所でこうしたフェーズを完了させることは、Microsoft 365 Enterprise からビジネス上の価値をより迅速に得るためには必要ありません。 
 
 すぐに展開するための一般的なワークロードを以下に示します。 
 
-- 基盤インフラストラクチャの **ID** レイヤーがユーザーにロールアウトされた後で、多くの組織は以下を展開します。
+- 基盤インフラストラクチャの **ID** フェーズがユーザーにロールアウトされた後で、多くの組織は以下を展開します。
   - [Office 365 ProPlus](office365proplus-infrastructure.md)。[OneDrive for Business](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise) を組み合わせます。 Office 365 ProPlus は先進的な認証のセキュリティと最新の Microsoft Office クライアントのユーザー エクスペリエンスを提供します。 ユーザーの個人用ファイルを OneDrive for Business に移行するとインフラストラクチャが削減され、ホーム フォルダーとドライブをサポートする必要性も少なくなります。
   - [Exchange Online](exchangeonline-workload.md)。ユーザーはクラウド ベースのメールの使用できるようになります。
-- 厳しく規制されたデジタル資産をすぐにクラウドで使用する必要がない場合は、**情報保護**レイヤーの前に [Microsoft Teams](teams-workload.md) と [SharePoint Online](sharepoint-online-onedrive-workload.md) をユーザー向けに展開します。
+- 厳しく規制されたデジタル資産をすぐにクラウドで使用する必要がない場合は、**情報保護**フェーズの前に [Microsoft Teams](teams-workload.md) と [SharePoint Online](sharepoint-online-onedrive-workload.md) をユーザー向けに展開します。
 
 ビジネス ニーズを満たすように、基盤インフラストラクチャの前提となるフェーズの設定について最適な順序と展開を決定する必要があります。
 
@@ -74,7 +75,5 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
 
 **ID** フェーズでは、クラウド ベースの ID は、クラウド専用であるかオンプレミスの Active Directory Domain Services (AD DS) と同期されているかにかかわらず、認証とアクセスの管理のためにユーザーおよびコンピューター アカウントとグループを含むようになります。 Microsoft 365 クラウドに組織のデジタル資産を配置する前に、すべてのユーザーの強力な認証のほか管理者アカウントの強力な保護が必要です。
 
-全体的なパフォーマンスにとって基本的で非常に重要ですが、Microsoft 365 のアプリケーションとサービスのパフォーマンスは時間の経過とともに向上することを考慮すると、使用するネットワークにおける**ネットワーキング** フェーズのロールアウトはユーザーをワークロードに参加させながら進めることができます。
-
-これは特に複数の場所とエッジ デバイスとインターネット接続が混在する企業にあてはまります。
+全体的なパフォーマンスにとって基本的で非常に重要ですが、Microsoft 365 のアプリケーションとサービスのパフォーマンスは時間の経過とともに向上することを考慮すると、**ネットワーキング** フェーズのロールアウトはユーザーをワークロードに参加させながら進めることができます。 これは特に複数の場所とエッジ デバイスとインターネット接続が混在する企業にあてはまります。
 

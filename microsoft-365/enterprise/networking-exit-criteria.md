@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise のネットワーク インフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: 533707eec17483c8291b232821035752c9d09e43
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9d818a97e79465d639c52f96901bd1cbaa31144a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074207"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982778"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>フェーズ 1: ネットワーク インフラストラクチャの終了条件
 
@@ -30,8 +30,8 @@ ms.locfileid: "34074207"
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必須: Microsoft 365 Enterprise に必要なネットワーク環境が準備できていること
 
 - オフィスごとの、Office 365、Microsoft Intune、Windows 10 Enterprise のインストールと更新を含む、Microsoft 365 トラフィックに見合ったインターネット帯域幅の確保
-- Office 365 の参照アーキテクチャに関するネットワーク全体のマップ
-- ネットワークの変更のパイロット実行とテストが済んでおり、トラフィックの待機時間の要件が満たされていること 
+- ネットワーク全体が [Office 365 の参照アーキテクチャ](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)にマッピングされます。
+- パイロット版としてテストされた、トラフィックの待機時間の要件を満たすネットワーク変更 
 
 必要に応じて、[手順 1](networking-provide-bandwidth-cloud-services.md) がこの必須条件を満たす上で役立ちます。
 
