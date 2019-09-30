@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise の基礎インフラストラクチャチャ
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基礎インフラストラクチャを組織に展開するための主要フェーズ (別名、コア展開) について理解します。
-ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982098"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050308"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise の基礎インフラストラクチャチャ
 
@@ -33,7 +33,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 |![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md)| 既存の Windows ベースのコンピューターは Windows 10 Enterprise にアップグレードすることができ、新しいデバイスは Windows 10 Enterprise と共にインストールされます。 |
 |![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Microsoft Office の既存のユーザーは Office 365 ProPlus にアップグレードすることができます。 |
 |![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[フェーズ 5: モバイル デバイス管理](mobility-infrastructure.md)| デバイスを登録し、管理することができます。 |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[フェーズ 6: 情報保護](infoprotect-infrastructure.md)| ラベルを使用してドキュメントを保護する準備が整い、Office 365 のセキュリティ機能が有効になります。 |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[フェーズ 6: 情報保護](infoprotect-infrastructure.md)| Office 365 のセキュリティ機能が有効になると、ラベルとポリシーを使用して、ドキュメントとメールを保護する準備が整います。 |
 
 フェーズは最も基本的なもの (ネットワークと ID) から始めます。その後に、インフラストラクチャの設定とグループのレイヤーを作成し以下を実施します。
 
@@ -48,7 +48,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 -  **企業組織の場合**、フェーズを定義されたパスではなく IT インフラストラクチャのレイヤーとして表示し、組織全体の各レイヤーに必要な条件に対して最終的に一番最適な方法を決定します。
 
-各フェーズの最後に終了条件がありますので、この条件を確認するようにしてください。満たさなければならない必須条件、検討する必要があるオプションの条件を確認できます。 各フェーズの終了条件は、オンプレミスとクラウドのインフラストラクチャ、およびそのフェーズから得られるエンド ツー エンドの構成が、Microsoft 365 Enterprise 展開の要件を満たしているかどうかの判断基準となります。
+各フェーズの最後には*終了条件*がありますので、その条件を確認するようにしてください。満たさなければならない必須条件、検討する必要があるオプションの条件を確認できます。 各フェーズの終了条件は、オンプレミスとクラウドのインフラストラクチャ、およびそのフェーズから得られるエンド ツー エンドの構成が、Microsoft 365 Enterprise 展開の要件を満たしているかどうかの判断基準となります。
 
 以下の短時間のビデオでコンテンツの構造を確認できます。
 
@@ -90,7 +90,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 | Windows 10 Enterprise | Windows 7 または Windows 8.1 を実行しているコンピューターを Windows 10 Enterprise に自動的にアップグレードするためのグループ。 |
 | Office 365 ProPlus | Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Office 365 ProPlus を自動的に展開するためのグループ。 |
 | モバイル デバイス管理 | デバイス登録とデバイス ベースの条件付きアクセス ポリシーのグループ。 |
-| 情報保護 | Office 365 秘密度および Azure Information Protection のラベルとグループ。 |
+| 情報保護 | Office 365 の機密ラベルのグループ。 |
 
 基礎インフラストラクチャの要素をユーザーにロールアウトする準備ができたら、以下を実施します。
 
@@ -100,9 +100,9 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 | Windows 10 Enterprise | グループにアカウントを追加して、Windows 7 または Windows 8.1 を使用しているユーザーに Windows 10 Enterprise を自動的に展開します。 |
 | Office 365 ProPlus | ユーザー アカウントをグループに追加して、Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Office 365 ProPlus を自動的に展開します。 |
 | モバイル デバイス管理 | デバイス登録とデバイス ベースの条件付きアクセス ポリシーのグループにアカウントを追加します。 |
-| 情報保護 | 情報保護ラベルのグループにユーザー アカウントを追加します。 |
+| 情報保護 | 機密ラベルのグループにユーザー アカウントを追加します。 |
 
-基礎インフラストラクチャのフェーズと要素が完成し、テストおよび試験運用が完了したら、Windows 10 Enterprise や Office 365 ProPlus などのインストール済みソフトウェアをロールアウトすることができます。デバイス登録や条件付きアクセス ポリシーなどのクラウドベースのサービスの運用も安全な環境で行えます。ビジネス目標と IT リソースに最も適した方法で、ユーザーに提供することができます。
+基礎インフラストラクチャのフェーズと要素が完成し、テストおよび試験運用が行われると、ユーザーのビジネス目標と IT リソースに最も適した方法で、Windows 10 Enterprise および Office 365 ProPlus などのインストール済みソフトウェアと、デバイス登録および条件付きアクセス ポリシーなどのクラウドベースのサービスと保護をロールアウトすることができます。
 
 ## <a name="deployment-and-project-management-strategies"></a>展開およびプロジェクト管理の戦略
 
@@ -110,13 +110,13 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 ## <a name="deployment-for-non-enterprises"></a>非エンタープライズの展開
 
-組織の規模が小さく、Microsoft 365 Business が適していない場合は、「[非エンタープライズの展開](deploy-foundation-infrastructure-non-enterprises.md)」を参照してください。
+組織の規模が小さく、Microsoft 365 Business が適していない場合は、「[非エンタープライズの展開](deploy-foundation-infrastructure-non-enterprises.md)」に記載されている簡略化された展開方法を参照してください。
 
 
 ## <a name="next-step"></a>次の手順
 
 | 現在地 | 行く必要がある場所 |
 |:-------|:-----|
-| Office 365、Enterprise Mobility + Security (EMS)、または Windows 10 Enterprise の既存のインフラストラクチャがある場合 | [[既存のインフラストラクチャで展開する](deploy-with-existing-infrastructure.md)] から開始し、各フェーズの終了基準に進みます。 |
+| Office 365、Enterprise Mobility + Security (EMS)、または Windows 10 Enterprise の既存のインフラストラクチャがある場合 | 「[既存のインフラストラクチャを使用して展開する](deploy-with-existing-infrastructure.md)」から開始し、各フェーズの終了条件に進みます。 |
 | エンタープライズとして最初から始めている | 「[フェーズ 1: ネットワーク](networking-infrastructure.md)」を参照して、エンド ツー エンドの展開を開始します。 |
 | 非エンタープライズとして最初から始めている | 「[非エンタープライズの展開](deploy-foundation-infrastructure-non-enterprises.md)」を参照して、エンド ツー エンドの展開を開始します。 |
