@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e8608bd18e493aeb0b0b1200a3b9e9aa6083b641
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981938"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306011"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -29,7 +29,11 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 
 組織全体を Microsoft 365 Enterprise に移行するための一般的なロードマップについては、[移行](migration-microsoft-365-enterprise-workload.md)ワークロードを参照してください。Microsoft 365 Enterprise には Microsoft Office クライアント製品、オンプレミス Office サーバー製品、および Microsoft Windows ベースのデバイスが含まれます。
 
-シナリオは Microsoft 365 Enterprise 全体から機能およびサービスを統合された方法で使用し、ビジネスニーズに対応します。 そうしたニーズの 1 つは Microsoft 365 に格納されている規制の厳しいデータを保護することです。 規制の厳しいデータには次に示すデジタル資産が含まれています。
+シナリオは Microsoft 365 Enterprise 全体から機能およびサービスを統合された方法で使用し、ビジネスニーズに対応します。 
+
+こうした必要性の 1 つは、従業員がイントラネットに直接接続していない場合に、従業員が生産的かつ安全に作業できることを保証することです。 インフラストラクチャ要素を展開して、Teams や Exchange Online などの主要なワークロードの導入をリモート ユーザーに促すためのロードマップについては、「[リモート ワーカーの強化](empower-people-to-work-remotely.md)」のシナリオを参照してください。
+
+こうした必要性のもう 1 つは、Microsoft 365 に格納されている規制の厳しいデータを保護することです。 規制の厳しいデータには次に示すデジタル資産が含まれています。
 
 - 地域の規制を遵守しているデータ。
 - 企業秘密、財務情報、人事情報、組織戦略など、組織にとって最も重要なデータ。

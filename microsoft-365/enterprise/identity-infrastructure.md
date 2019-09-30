@@ -3,7 +3,7 @@ title: 'フェーズ 2: ID'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の ID インフラストラクチャを展開する手順。
-ms.openlocfilehash: 07f95a249912826b80e0654cac4063b3d5763267
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 2d9ffcc5122b5a5dfc94fb007167655e879d6799
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981954"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071696"
 ---
 # <a name="phase-2-identity"></a>フェーズ 2: ID
 
@@ -27,6 +27,8 @@ ms.locfileid: "36981954"
 Microsoft 365 enterprise では、ID インフラストラクチャを入念に計画および実施することで、セキュリティを強化し、認証されたユーザーとデバイスだけが生産性ワークロードとそのデータにアクセスできるようにする準備が整います。
 
 Microsoft 365 Enterprise の ID モデルと認証の概要については、このビデオをご覧ください。
+
+<p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -48,13 +50,12 @@ Microsoft 365 Enterprise の ID モデルと認証の概要については、こ
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [ユーザーおよびグループを計画する](identity-plan-users-groups.md) |
-|![](./media/stepnumbers/Step2.png)| [特権 ID をセキュリティで保護する](identity-designate-protect-admin-accounts.md) |
-|![](./media/stepnumbers/Step3.png)| [ハイブリッド ID の構成](identity-azure-ad-connect.md) |
-|![](./media/stepnumbers/Step4.png)| [セキュリティで保護されたユーザー認証を構成する](identity-multi-factor-authentication.md) |
-|![](./media/stepnumbers/Step5.png)| [ユーザーのアクセスを簡素化する](identity-password-reset.md) |
-|![](./media/stepnumbers/Step6.png)| [管理を容易にするためのグループの使用](identity-self-service-group-management.md) |
-|![](./media/stepnumbers/Step7.png)| [identity governance を設定する](identity-governance.md) |
+|![](./media/stepnumbers/Step1.png)| [グローバル管理者アカウントを作成して保護する](identity-create-protect-global-admins.md) |
+|![](./media/stepnumbers/Step2.png)| [パスワードをセキュリティで保護する](identity-secure-your-passwords.md) |
+|![](./media/stepnumbers/Step3.png)| [ユーザーのサインインをセキュリティで保護して管理する](identity-secure-user-sign-ins.md) |
+|![](./media/stepnumbers/Step4.png)| [ユーザー アカウントを追加する](identity-add-user-accounts.md) |
+|![](./media/stepnumbers/Step5.png)| [管理にグループを使用する](identity-use-group-management.md) |
+|![](./media/stepnumbers/Step6.png)| [identity governance を設定する](identity-configure-identity-governance.md) |
 
 上記の手順が完了したら、このフェーズの[終了条件](identity-exit-criteria.md)を参照し、Microsoft 365 Enterprise ID の必須条件とオプションの条件を満たしていることを確認します。
 
@@ -80,4 +81,4 @@ Microsoft の IT エキスパートが [ID を管理し、アクセスをセキ�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [ユーザーおよびグループを計画する](identity-plan-users-groups.md) |
+|![](./media/stepnumbers/Step1.png)| [グローバル管理者アカウントを作成して保護する](identity-create-protect-global-admins.md) |

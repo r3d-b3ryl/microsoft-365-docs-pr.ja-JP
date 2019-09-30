@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Office 365 が稼働している信頼できる場所にトラフィックをバイパスするのに必要となる Web ブラウザーとエッジ デバイスについて理解し、構成します。
-ms.openlocfilehash: c7d4391d3274fd36a3f6fbf208cd94ce7b0f9339
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
+ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074227"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36999041"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>手順 4: トラフィック バイパスを構成する
 
-*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
@@ -40,10 +40,11 @@ DNS ドメイン名と IP アドレスの範囲については、「[https://aka
 
 Microsoft では、次の方法を推奨しています。
 
-- オンプレミスで使用するコンピューターのインターネット ブラウザー上で、プロキシ自動構成 (PAC) スクリプトを使用して、Microsoft 365 クラウドベース サービスの DNS ドメイン名用プロキシ サーバーをバイパスします。最新の Microsoft 365 PAC スクリプトについては、「Get-Pacfile PowerShell スクリプト」を参照してください。
+- オンプレミスで使用するコンピューターのインターネット ブラウザー上で、プロキシ自動構成 (PAC) スクリプトを使用して、Microsoft 365 クラウドベース サービスの DNS ドメイン名用プロキシ サーバーをバイパスします。最新の Microsoft 365 PAC スクリプトについては、「[Get-Pacfile PowerShell スクリプト](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic)」を参照してください。
+- 
 - エッジ デバイスを分析して重複する処理を特定したら、それらのエッジ デバイスが "最適化" および "許可" エンドポイントにトラフィックを処理せずに転送するように構成します。これは、トラフィック バイパスと呼ばれます。 
 
-エッジ デバイスには、ファイアウォール、SSL 中断/検査、パケット検査デバイス、およびデータ損失防止システムが含まれます。エッジ デバイスの構成と更新には、スクリプトや REST 呼び出しを使用して、Office 365 エンドポイント Web サービスから構造化されたエンドポイントのリストを使用できます。詳細については、「[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)」を参照してください。
+エッジ デバイスには、ファイアウォール、SSL 中断/検査、パケット検査デバイス、およびデータ損失防止システムが含まれます。エッジ デバイスの構成と更新には、スクリプトや REST 呼び出しを使用して、Office 365 エンドポイント Web サービスから構造化されたエンドポイントのリストを使用できます。詳細については、「[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/ja-JP/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file)」を参照してください。
 
 なお、バイパスするのは、Microsoft 365 で "最適化" および "許可" カテゴリに含まれるエンドポイントに対するトラフィックのための通常のプロキシとネットワーク セキュリティ処理のみです。他のすべての一般的なインターネット トラフィックは、プロキシ処理され、既存のネットワーク セキュリティ処理の対象になります。
 
