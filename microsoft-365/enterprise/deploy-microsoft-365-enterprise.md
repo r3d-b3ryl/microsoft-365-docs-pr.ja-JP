@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise を展開する
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982074"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050278"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
@@ -39,7 +39,7 @@ Microsoft 365 Enterprise を展開するには、主に 3 つの方法があり�
 
 ## <a name="fasttrack-for-microsoft-365"></a>Microsoft 365 の FastTrack
 
-FastTrack は、お客様のペースに合わせたクラウドへの移行を手伝うために、Microsoft のエンジニアが配信する継続的かつ反復的なサービスです（サブスクリプションの一部として使用できます）。 必要に応じて、追加サービスを提供する認定パートナーにアクセスできます。 FastTrack はこれまで 40,000 を超えるお客様に対応し、ROI を最大化し、展開を迅速化し、組織全体での導入を支援してきました。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
+FastTrack は、自分のペースでクラウドへと移行できるよう、Microsoft のエンジニアによって提供される継続的かつ反復的なサービスです（*サブスクリプションの一部として無料で利用できます*）。 必要に応じて、追加サービスを提供する認定パートナーにアクセスできます。 FastTrack はこれまで 40,000 を超えるお客様に対応し、ROI を最大化し、展開を迅速化し、組織全体での導入を支援してきました。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
 
 FastTrack を利用して Microsoft 365 Enterprise を展開する場合は、基礎インフラストラクチャを展開および設定する方法のガイダンスとして FastTrack『[Microsoft 365 展開アドバイザー](https://aka.ms/microsoft365setupguide)』を使用できます。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのグローバル管理者としてサインインする必要があります。
 
@@ -77,9 +77,9 @@ Microsoft 365 Enterprise を自分で展開するには:
 
 初めての方は、まずご自分で操作してみるのが Microsoft 365 Enterprise や特定の製品、機能を理解する最善の方法の一つです。
 
-テスト ラボ ガイド (TLGs) を活用すれば、試用版や有料サブスクリプションを使って、分かりやすくインフラストラクチャーの設定や機能について知ることができます。
+テスト ラボ ガイド (TLGs) を活用すると、試用版や有料サブスクリプションを使用して、簡潔であるが代表的なテスト環境のインフラストラクチャーの設定や機能についてより簡単に学べます。
 
-TLGs を使用すると、自己学習、実例説明、カスタマイズすることができ、また複雑な設定のコンセプトの証明、ワークロード、またはエンド ツー エンドのシナリオをビルドできます。
+TLGs を使用すると、複雑な構成、ワークロード、またはエンド ツー エンドのシナリオの概念実証 (PoC) の自己学習、実行、カスタマイズ、または構築を行うことができます。
 
 詳細については、「[Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)」を参照してください。 
 
@@ -87,13 +87,13 @@ TLGs を使用すると、自己学習、実例説明、カスタマイズする
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[組織を Microsoft 365 へ移行する](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)を参照してください。
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[組織を Microsoft 365 に移行する](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)を参照してください。
 
-[![ポスター [組織を Microsoft 365 へ移行する]](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![組織を Microsoft 365 に移行するためのポスター](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows および Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
+この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
-[移行ポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷できます。
+[移行ポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="how-did-others-do-it"></a>他のユーザーはどのように活用しましたか？
 
