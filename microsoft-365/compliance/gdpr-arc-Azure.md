@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 86254d388bc5134b7913ab5e93cde96a7bc4cc66
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: b605bfa3d549b3359f8bb780cfffa7306db44d2d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698409"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982416"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Azure アカウンタビリティ対応準備チェックリスト
 
@@ -23,12 +23,12 @@ ms.locfileid: "34698409"
 
 このアカウンタビリティ対応準備チェックリストは、Microsoft Azure を使用する際に EU 一般データ保護規則 (GDPR) をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。チェックリストは、以下に基づいた個人データ プロセスに関する一連のプライバシーとセキュリティ コントロールのタイトルと参照番号 (各チェックリスト トピックに対してかっこで示す) を使用して編成されています。
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) セキュリティ テクニックの要件。
-- プライバシー管理要件に関連する [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472)。 
+- [ISO/IEC CD 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) セキュリティ技術の要件。
+- プライバシー管理要件に関連する [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472)。
 
 コンプライアンス マネージャー [16] で、GDPR タイル内の顧客管理のコントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。 GDPR をサポートするために Microsoft Azure が実装する内部コントロールのプレゼンテーションを編成するためにもこのコントロール構造は使用されます ([Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) でダウンロードすることができます)。
 
-[GDPR をサポートするために Microsoft Dynamics 365 が実装する内部コントロール](https://aka.ms/gdprcontrols)のプレゼンテーションを編成するためにもこのコントロール構造は使用されます。
+[GDPR をサポートするために Microsoft Dynamics 365 が実装する内部コントロール](https://aka.ms/GDPRControls)のプレゼンテーションを編成するためにもこのコントロール構造は使用されます。
 
 GDPR 関連のドキュメントの詳細については、「[https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted)」を参照してください。
 

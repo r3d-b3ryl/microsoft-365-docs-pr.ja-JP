@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: ccbc5897ef8c6fb6018793ff7e3fe7731ee14710
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dae8969598f5a71814c1b61db83341f30c0cb9d7
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085415"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317619"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織の監督ポリシーを設定する
 
@@ -52,10 +52,6 @@ Office 365 組織の監督をセットアップして使用するには、次の
 - **手順 5 (オプション)**:[監督ポリシーをテストする](#step-5-test-your-supervision-policy-optional)
 
     監督ポリシーをテストし、必要に応じて機能していることを確認します。 コンプライアンス戦略によって標準が達成されていることを確認することが重要です。
-
-- **手順 6 (オプション)**: [Office 365 監督ダッシュボードを使用して、監視対象の通信を確認しないように Outlook を構成](#step-6-configure-outlook-for-reviewers-optional)する
-
-    Outlook を構成して、レビューアーが Outlook クライアント内の監督機能にアクセスできるようにして、各アイテムを評価および分類できるようにします。
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>手順 1: 監督のグループをセットアップする (オプション)
 
@@ -181,70 +177,10 @@ Office 365 組織の監督をセットアップして使用するには、次の
 1. テストするポリシーで定義された、監視対象のユーザーとしてログインした電子メールクライアントまたは Microsoft Teams を開きます。
 2. 監督ポリシーで定義した条件を満たすメールまたは Microsoft Teams のチャットを送信します。 これには、キーワード、添付ファイルのサイズ、ドメインなどを指定できます。ポリシーに構成された条件設定が制限を超えているか、厳しすぎるかを確認してください。
 
-    > [!Note]
+    > [!NOTE]
     > 定義されたポリシーの対象となるメールは、ほぼリアルタイムで処理され、ポリシーの構成後すぐにテストできます。 Microsoft Teams でのチャットは、ポリシー内で完全に処理されるまでに最大24時間かかる場合があります。 
 
 3. 監督ポリシーに指定されたレビュー担当者として Office 365 テナントにログインします。 [*カスタムポリシー* > **** の**監視** > ] に移動して、ポリシーのレポートを表示します。
-
-## <a name="step-6-configure-outlook-for-reviewers-optional"></a>手順 6: レビューアー用に Outlook を構成する (オプション)
-
-Office 365 の監督ダッシュボードではなく Outlook を使用して通信を確認するためには、Outlook クライアントを構成する必要があります。
-
-### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>手順 1: 監督メールボックスのアドレスをコピーする
-
-Outlook デスクトップのレビューを構成するには、監督ポリシーのセットアップの一部として作成された監督メールボックスのアドレスが必要です。
-  
-> [!NOTE]
-> 他のユーザーがポリシーを作成した場合は、そのポリシーからこのアドレスを取得してアドインをインストールする必要があります。
-
-**監督メールボックスのアドレスを検索するには**
-  
-1. 組織内の管理者アカウントの資格情報を使用して、[コンプライアンスセンター](https://compliance.microsoft.com)にサインインします。
-
-2. [**監督**] に移動します。
-
-3. 確認する通信の監督ポリシーを選択します。
-
-4. [ポリシーの詳細] ポップアップの [**監督メールボックス**] で、アドレスをコピーします。<br/>![強調表示されている監督ポリシーの詳細ポップアップの [監督メールボックス] セクション](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
-  
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>手順 2: Outlook アクセス用に監督メールボックスを構成する
-
-次に、レビューアーが Outlook を監督メールボックスに接続できるように、Exchange Online の PowerShell コマンドをいくつか実行する必要があります。
-  
-1. Exchange Online PowerShell への接続。 [タスクの実行方法](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
-
-2. 次のコマンドを実行し*ます。ここで、SupervisoryReview {GUID} @domain*は上記の手順1でコピーしたアドレスで、 *User*は、手順3で監督メールボックスに接続するレビュー担当者の名前になります。
-
-    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
-
-    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
-
-3. 手順3に進む前に、少なくとも1時間待機してください。
-
-### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>手順 3: 監督メールボックスに接続するための Outlook プロファイルを作成する
-
-最後の手順として、レビュー担当者は、監督メールボックスに接続するための Outlook プロファイルを作成する必要があります。
-
-> [!NOTE]
-> 新しい Outlook プロファイルを作成するには、Windows のコントロールパネルの [メール] 設定を使用します。 これらの設定にアクセスするために必要なパスは、使用している Windows オペレーティングシステム (Windows 7、Windows 8、または Windows 10)、およびインストールされている Outlook のバージョンによって異なる場合があります。
-  
-1. コントロールパネルを開きます。 ウィンドウの上部にある**検索**ボックスに、「 **Mail**」と入力します。<br/>(コントロールパネルへのアクセス方法がわからない場合はどうすればよいですか? [[コントロールパネルの場所] を](https://support.microsoft.com/help/13764/windows-where-is-control-panel)参照)
-  
-2. **メール**アプリを開きます。
-
-3. [**メールの設定-Outlook**] で、[**プロファイルの表示**] をクリックします。<br/>![[プロファイルの表示] ボタンが強調表示されている [メールの設定-Outlook] ダイアログボックス](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
-  
-4. [**メール**] で、[**追加**] をクリックします。 次に、[**新しいプロファイル**] で、監督メールボックスの名前 (「**監督**」など) を入力します。<br/>![[プロファイル名] ボックスに "監督" という名前が表示されている [新しいプロファイル] ダイアログ](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
-  
-5. [ **Outlook を Office 365 に接続**する] で、[**別のアカウントに接続する**] をクリックします。<br/>![[別のアカウントへの接続] リンクが強調表示されている [Outlook から Office への接続 365] メッセージ](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
-  
-6. [**自動アカウントセットアップ**] で、[**手動セットアップ] または [サーバーの種類の追加**] を選択し、[**次へ**] をクリックします。
-
-7. [**アカウントの種類を選択して**ください] で、[ **Office 365**] を選択します。 その後、[**電子メールアドレス**] ボックスに、先ほどコピーした監督メールボックスのアドレスを入力します。<br/>![Outlook の [アカウントの種類の追加] ページで、[メールアドレス] ボックスが強調表示されています。](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)
-  
-8. メッセージが表示されたら、Office 365 資格情報を入力します。
-
-9. 成功した場合、[**監督\<]\> —ポリシー名**フォルダーは、Outlook のフォルダー一覧ビューに表示されます。
 
 ## <a name="powershell-reference"></a>PowerShell リファレンス
 

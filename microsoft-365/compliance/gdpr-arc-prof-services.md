@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: db0cb3ed472d0f50808339624550f0e98082b737
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698369"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982308"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Microsoft サポートおよびプロフェッショナル サービス アカウンタビリティ対応準備チェックリスト
 
@@ -23,8 +23,8 @@ ms.locfileid: "34698369"
 
 このアカウンタビリティ対応準備チェックリストは、Microsoft Professional Services およびサポート サービスを使用しているときに GDPR のサポートが必要になる可能性のある情報にアクセスする便利な方法を提供します。チェックリストは、次の資料に基づいた個人データ プロセスに関する一連のプライバシー コントロールとセキュリティ コントロールのタイトルと参照番号 (各チェックリスト トピックに対してかっこで示す) を使用して編成されています。
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) セキュリティ技術の要件。
-- プライバシー管理要件に関連する [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472)。
+- [ISO / IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) プライバシー情報管理の手法と要件。
+- [ISO / IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 情報セキュリティ管理要件全般。
 
 このコントロール構造は、GDPR をサポートするために Microsoft Professional Services が実装する内部コントロールのプレゼンテーションを編成するためにも使用されます ([Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) でダウンロードできます)。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のネットワーク インフラストラクチャと、Microsoft 365 Enterprise のクラウドベースのサービスに対する最高性能のネットワーク接続性を得るために SD-WAN テクノロジをどのように使用しているかについて説明します。
-ms.openlocfilehash: 4a2b9f2172def2c62821536e456b2194795158c4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8eb6f17ffd7974169c0131fa81f05939a54854e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072557"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982108"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 
@@ -50,7 +50,7 @@ ms.locfileid: "34072557"
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Microsoft への最適なネットワーク接続のための SD-WAN の使用
 
-Contoso 社は [Office 365 ネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)に従いました。
+Contoso 社は次の [Office 365 ネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)に従いました。
 
 1. Office 365 ネットワーク トラフィックを識別して区別する
 2. ネットワーク接続のローカルの出口を提供する

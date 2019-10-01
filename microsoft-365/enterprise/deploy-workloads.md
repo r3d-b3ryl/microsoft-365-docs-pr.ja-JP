@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise のワークロードとシナリオ
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/15/2019
+ms.date: 09/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: e8608bd18e493aeb0b0b1200a3b9e9aa6083b641
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 6446e73f79a3dd92d60fa3299e6007e1a5a3fdeb
+ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306011"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37329214"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -25,9 +25,9 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
-- [SharePoint Online](sharepoint-online-onedrive-workload.md)
+- [SharePoint および OneDrive](sharepoint-online-onedrive-workload.md)
 
-組織全体を Microsoft 365 Enterprise に移行するための一般的なロードマップについては、[移行](migration-microsoft-365-enterprise-workload.md)ワークロードを参照してください。Microsoft 365 Enterprise には Microsoft Office クライアント製品、オンプレミス Office サーバー製品、および Microsoft Windows ベースのデバイスが含まれます。
+組織全体を Microsoft 365 Enterprise に移行するための一般的なロードマップについては、[移行](migration-microsoft-365-enterprise-workload.md)に関する記事を参照してください。それには、Microsoft Office クライアント製品、オンプレミス Office サーバー製品、および Microsoft Windows ベースのデバイスが含まれています。
 
 シナリオは Microsoft 365 Enterprise 全体から機能およびサービスを統合された方法で使用し、ビジネスニーズに対応します。 
 
@@ -38,7 +38,7 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 - 地域の規制を遵守しているデータ。
 - 企業秘密、財務情報、人事情報、組織戦略など、組織にとって最も重要なデータ。
 
-こうしたデータを内外の脅威から保護するには、「[Microsoft Teams および SharePoint Online サイトで高度な規制データを扱うには](teams-sharepoint-online-sites-highly-regulated-data.md)」を参照してください。 このシナリオは段階を追って SharePoint Online サイトまたは Microsoft Teams チームを設定し、最も重要なデータを安全に保管します。
+こうしたデータを内外の脅威から保護するには、[高度に規制されたデータ用の Microsoft Teams および SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md) を参照してください。 このシナリオでは、段階を追って SharePoint サイトまたは Microsoft Teams チームを構成して、最も重要なデータを安全に保管します。
 
 Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオを次に示します。
 
@@ -60,16 +60,16 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
 | Windows 10 Enterprise | Windows 7 または Windows 8.1 を実行しているコンピューターは Windows 10 Enterprise にアップグレードすることができ、新しいデバイスは Windows 10 Enterprise と共にインストールされます。 |
 | Office 365 ProPlus | Microsoft Office の既存のユーザーは Office 365 ProPlus にアップグレードすることができます。 |
 | モバイル デバイス管理 | デバイスを登録し、管理することができます。 |
-| 情報保護 | Office 365 のセキュリティ機能が有効で、機密または Azure Information Protection ラベルはドキュメントを保護する準備ができています。 |
+| 情報保護 | Office 365 の情報保護機能が構成されると、機密ラベルまたは Azure Information Protection ラベルでドキュメントを保護する準備が整います。 |
 
 これは理想的であり、計画、構成、テスト、およびパイロットのために時間がかかる場合があることに注意してください。特に既存のインフラストラクチャで複数の場所が対象になる大規模な組織が該当します。 あらゆる場所でこうしたフェーズを完了させることは、Microsoft 365 Enterprise からビジネス上の価値をより迅速に得るためには必要ありません。 
 
 すぐに展開するための一般的なワークロードを以下に示します。 
 
 - 基盤インフラストラクチャの **ID** フェーズがユーザーにロールアウトされた後で、多くの組織は以下を展開します。
-  - [Office 365 ProPlus](office365proplus-infrastructure.md)。[OneDrive for Business](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise) を組み合わせます。 Office 365 ProPlus は先進的な認証のセキュリティと最新の Microsoft Office クライアントのユーザー エクスペリエンスを提供します。 ユーザーの個人用ファイルを OneDrive for Business に移行するとインフラストラクチャが削減され、ホーム フォルダーとドライブをサポートする必要性も少なくなります。
+  - [Office 365 ProPlus](office365proplus-infrastructure.md) と [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise) の組み合わせ。 Office 365 ProPlus は先進的な認証のセキュリティと最新の Microsoft Office クライアントのユーザー エクスペリエンスを提供します。 ユーザーの個人用ファイルを OneDrive に移行すると、インフラストラクチャが削減され、ホーム フォルダーとドライブをサポートする必要性が少なくなります。
   - [Exchange Online](exchangeonline-workload.md)。ユーザーはクラウド ベースのメールの使用できるようになります。
-- 厳しく規制されたデジタル資産をすぐにクラウドで使用する必要がない場合は、**情報保護**フェーズの前に [Microsoft Teams](teams-workload.md) と [SharePoint Online](sharepoint-online-onedrive-workload.md) をユーザー向けに展開します。
+- 厳しく規制されたデジタル資産をすぐにクラウドに保存する必要がない場合は、**情報保護**フェーズの前に [Microsoft Teams](teams-workload.md) と [SharePoint](sharepoint-online-onedrive-workload.md) をユーザー向けに展開します。
 
 ビジネス ニーズを満たすように、基盤インフラストラクチャの前提となるフェーズの設定について最適な順序と展開を決定する必要があります。
 
@@ -79,5 +79,4 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
 
 **ID** フェーズでは、クラウド ベースの ID は、クラウド専用であるかオンプレミスの Active Directory Domain Services (AD DS) と同期されているかにかかわらず、認証とアクセスの管理のためにユーザーおよびコンピューター アカウントとグループを含むようになります。 Microsoft 365 クラウドに組織のデジタル資産を配置する前に、すべてのユーザーの強力な認証のほか管理者アカウントの強力な保護が必要です。
 
-全体的なパフォーマンスにとって基本的で非常に重要ですが、Microsoft 365 のアプリケーションとサービスのパフォーマンスは時間の経過とともに向上することを考慮すると、**ネットワーキング** フェーズのロールアウトはユーザーをワークロードに参加させながら進めることができます。 これは特に複数の場所とエッジ デバイスとインターネット接続が混在する企業にあてはまります。
-
+全体的なパフォーマンスにとって基本的かつ非常に重要なことですが、Microsoft 365 のワークロードとサービスのパフォーマンスが時間と共に向上することを考慮すると、ユーザーをワークロードに参加させながら **ネットワーキング** フェーズのロールアウトを進行させることができます。 これは特に複数の場所とエッジ デバイスとインターネット接続が混在する企業にあてはまります。
