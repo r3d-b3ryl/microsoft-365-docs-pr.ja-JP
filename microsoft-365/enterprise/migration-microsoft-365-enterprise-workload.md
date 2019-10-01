@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise への移行
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 0def2f90a016c6d81f2c05bb3571646d97edf4ca
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 2f5b1b077346e3225252ef25a4e9e685c4892a7c
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982824"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148491"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -30,7 +30,7 @@ ms.locfileid: "36982824"
 - デバイス上の Windows 7 および Windows 8.1 から Windows 10 Enterprise
 
 >[!Note]
->Windows 7 は、2020 年 1 月 14 日にサポート終了になります。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
+>Windows 7 は、**2020 年 1 月 14 日**にサポート終了になります。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
 >
 
 時経つうちにこれらすべての移行が完了すれば、組織内のチームワークと創造性を引き出す安全で統合された[最新の職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)環境に組織を近づけることができます。これはすべて Microsoft 365 Enterprise によって成し遂げることができます。 
@@ -47,8 +47,9 @@ ms.locfileid: "36982824"
 
 - 最新のセキュリティ更新プログラムおよびサポート修正プログラムで[更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)できますが、プロセスを手動で行う必要があったり、組織全体にまで行き渡らなかったりする可能性があります。
 - Microsoft クラウド テクノロジを活用しビジネスをデジタルに変換するうえで、最適ではありません。
+- 新機能は含まれません。
  
-Microsoft 365 Enterprise には、Microsoft 365 Enterprise ライセンスで利用でき、Microsoft クラウドからインストールおよび更新される Office クライアント製品のバージョンである Office 365 ProPlus が含まれています。詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
+Microsoft 365 Enterprise には、Microsoft 365 Enterprise ライセンスで利用でき、Microsoft クラウドからインストールおよび更新される Office クライアント製品のバージョンである Office 365 ProPlus が含まれています。 Office 365 ProPlus には、セキュリティ更新プログラムと最新機能が含まれています。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -72,17 +73,19 @@ Office 2010 を実行しているコンピューターを Office 2013 または 
 2. ユーザーのコンピューターから Office 2010 をアンインストールする。
 3. Office 365 ProPlus を個別にまたは IT ロールアウトと合わせてインストールする。詳細については、「[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)」を参照してください。
 
-Office 365 ProPlus は更新プログラムを自動的にインストールし、Office 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
+Office 365 ProPlus はセキュリティと新機能の両方の更新プログラムを自動的にインストールし、Microsoft 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 および Office 2016
 
-Office の Office 2013 および Office 2016 バージョンのサポート終了ロードマップはまだ決まっていません。ただし、Office 2010 のように、[更新プログラムをインストールする](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)必要があるため、組織の規模によっては全体に行き渡らない可能性があります。Office 2013 または Office 2016 の最新の更新プログラムでコンピューターを更新し続けたり、Office 2013 から Office 2016 にコンピューターを更新したりするのではなく、以下を行うことを検討してください。
+Office の Office 2013 および Office 2016 バージョンのサポート ロードマップの終了はまだ決定されていません。 ただし、Office 2010 と同様に、[セキュリティ更新プログラムをインストール](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)する必要があります。これは、組織の規模によっては適切に拡大されない場合があります。
+
+Office 2013 または Office 2016 の最新のセキュリティ更新プログラムでコンピューターを更新し続けるか、Office 2013 から Office 2016 にコンピューターを更新するのではなく、以下を検討してください。
 
 1. ユーザー用に Microsoft 365 ライセンスを取得して割り当てる。
 2. ユーザーのコンピューターから Office 2013 または Office 2016 をアンインストールする。
 3. Office 365 ProPlus を個別にまたは IT ロールアウトと合わせてインストールする。詳細については、「[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)」を参照してください。
 
-Office 365 ProPlus は更新プログラムを自動的にインストールし、Office 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
+Office 365 ProPlus はセキュリティと新機能の両方の更新プログラムを自動的にインストールし、Microsoft 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Microsoft Office サーバー製品の移行
 
@@ -93,7 +96,7 @@ Office 365 ProPlus は更新プログラムを自動的にインストールし�
 - Microsoft Teams などの新しい生産性向上アプリケーションは含まれません。
 - Exchange Advanced Threat Protection などの最新のセキュリティ機能は含まれません。
 
-Microsoft 365 Enterprise には、オンプレミス バージョン Office サーバー ソフトウェアと同じいくつかのツール (Web ブラウザーや Outlook クライアントなど) を使用する、クラウドベース バージョンの Office サーバー サービスを含む Office 365 が含まれます。これらのサービスは IT 部門の手を煩わさずに継続的に更新されるため、オンプレミス サーバーを維持および更新するためにかかる時間を節約できます。これらのサービスには、Office サーバー ソフトウェアにはない拡張機能もあります。 
+Microsoft 365 Enterprise には Office 365 が含まれています。これには、Web ブラウザーや Outlook クライアントなど、オンプレミス バージョンの Office サーバー ソフトウェアと同じツールの一部を使用するクラウドベース バージョンの Office サーバー サービスが含まれます。 これらのサービスは、IT を関与させることなくセキュリティのために継続的に更新されるため、オンプレミス サーバーの管理と更新にかかる時間を短縮できます。 これらのサービスには、Office サーバー ソフトウェアにはない新しい拡張機能も含まれています。 
 
 ### <a name="office-server-2007"></a>Office Server 2007
 
@@ -113,14 +116,14 @@ Office 2007 リリースのサーバー製品を Office 2010、Office 2013、ま
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-Office 2010 リリースのサーバー製品については、次のものに関してサポートの終了日が決まっています。
+次の Office 2010 リリースのサーバー製品については、サポートの終了は **2020 年 10 月 13 日**になります。
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)は、**2010 年 1 月 14 日**です。
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)は、** 2020 年 10 月 13 日**です。
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 Office 2010 リリースのこれらのサーバー製品を Office 2013 または Office 2016 リリースのサーバー製品にアップグレードするのではなく、以下を行うことを検討してください。
 
-1. Office 2010 サーバー上のデータを Office 365 に移行する。これをサポートするために、「[FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)」を参照するか、Microsoft パートナーを採用してください。
+1. Office 2010 サーバー上のデータを Microsoft 365 に移行します。 これを行うには、「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照するか、Microsoft パートナーを採用する必要があります。
 2. 新しい機能と作業プロセスをユーザーに展開する。
 3. Office 2010 サーバー製品を実行しているオンプレミス サーバーが必要なくなった場合は使用を停止する。
 
@@ -142,7 +145,7 @@ Office 2016 リリースのサーバー製品については、サポートの�
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 および 8.1 の移行
 
-Windows 7 は、**2010 年 1 月 14 日**にサポート終了になります。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
+Windows 7 は、**2020 年 1 月 14 日**にサポート終了になります。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
 
 その他の方法については、「[Windows 10 展開のシナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)」をご覧ください。 自分で[Windows 10 の展開を計画](https://aka.ms/planforwin10deployment)することもできます。
 
@@ -152,7 +155,7 @@ Windows 7 は、**2010 年 1 月 14 日**にサポート終了になります。
 
 [![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-この 1 ページのポスターで、Office 2010 クライアントおよびサーバー製品と Windows 7 がサポート終了に達してしまうことを防ぐさまざまな手段をすばやく理解できます。ここには、特に推奨される手段と、Microsoft365 Enterprise のオプション サポートが含まれます。
+この 1 ページのポスターで、Office 2010 クライアントおよびサーバー製品と Windows 7 がサポート終了に達してしまうことを防ぐさまざまなパスをすばやく理解できます。ここには、強調表示された Microsoft 365 Enterprise で推奨されるパスとそれによる宛先サポートが含まれます。
 
 [このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することができます。
 
