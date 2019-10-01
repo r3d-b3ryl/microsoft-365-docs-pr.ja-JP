@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: セキュリティ & コンプライアンスセンターでは、監査ログ検索機能を有効にすることができます。 変更した場合は、いつでもオフにすることができます。 監査ログ検索がオフになっている場合、管理者は、組織内のユーザーおよび管理者のアクティビティに対して Office 365 監査ログを検索することはできません。
-ms.openlocfilehash: c5e1106617aa4828ec2db5afcc44ac55e91f2383
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 83ef355c4acd5e0af4fd7ffbf13157307bcac930
+ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086949"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37334247"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Office 365 監査ログの検索を有効または無効にする
 
@@ -35,7 +35,7 @@ Office 365 監査ログの検索を開始する前に、自分 (または別の�
     > [!IMPORTANT]
     > 監査ログの検索を有効または無効にするには、Exchange Online のアクセス許可をユーザーに割り当てる必要があります。 セキュリティ & コンプライアンスセンターの [**アクセス許可**] ページで監査ログの役割をユーザーに割り当てると、監査ログの検索をオンまたはオフにすることができなくなります。 これは、基礎となるコマンドレットが Exchange Online のコマンドレットであるためです。 
   
-- Office 365 で監査ログの検索を無効にすると、Office 365 Management Activity API を使用して組織の監査データにアクセスできなくなります。 この記事の手順に従って監査ログの検索を無効にすると、セキュリティ & コンプライアンスセンターを使用して監査ログを検索したとき、または Exchange Online PowerShell で**search-unifiedauditlog**コマンドレットを実行したときに結果が返されないことを意味します。. これは、Office 365 Management Activity API を介して監査ログを利用できないことも意味します。  
+- Office 365 で監査ログの検索を無効にした場合、Office 365 Management Activity API を使用して組織の監査データにアクセスすることはできません。 この記事の手順に従って監査ログの検索を無効にすると、セキュリティ & コンプライアンスセンターを使用して監査ログを検索したとき、または Exchange Online PowerShell で**search-unifiedauditlog**コマンドレットを実行したときに結果が返されないことを意味します。. これは、Office 365 Management Activity API を介して監査ログを利用できないことも意味します。  
     
 - Office 365 監査ログの検索の詳細な手順については、「[セキュリティ & のコンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
     
@@ -47,15 +47,13 @@ Office 365 監査ログの検索を開始する前に、自分 (または別の�
 
 1. [セキュリティ & コンプライアンスセンター] で、[**検索** \> **監査ログの検索**] に移動します。
     
-2. [**ユーザーと管理者のアクティビティの記録を開始**する] をクリックします。
+   ユーザーおよび管理者のアクティビティを記録するために、監査を有効にする必要があるというバナーが表示されます。
+
+2. [**監査を有効にする] を**クリックします。
     
-    ![[ユーザーと管理者のアクティビティの記録を開始する] をクリックして、監査を有効にします。](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![[監査を有効にする] をクリックします。](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    組織内のユーザーおよび管理者のアクティビティが Office 365 の監査ログに記録され、レポートで表示できることを示すダイアログボックスが表示されます。 
-    
-3. 監査ログ検索の下で、 **[ユーザーと管理者のアクティビティの記録を開始する]** リンクを選択します (既にこの操作を実行済みの場合は、リンクは表示されません)。
-    
-    監査ログが準備されていて、準備が完了してから数時間で検索を実行できることを示すメッセージが表示されます。
+    バナーが更新され、監査ログの準備が完了し、ユーザーと管理者のアクティビティを数時間で検索できるようになります。
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>PowerShell を使用して監査ログの検索を有効にする
 
@@ -85,14 +83,12 @@ Office 365 監査ログの検索を開始する前に、自分 (または別の�
     
     - PowerShell で、次のコマンドを実行します。
 
-        ```
-        Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-        ```
+            ```
+            Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+            ```
 
-        UnifiedAuditLogIngestionEnabled プロパティの`False`の値__ は、監査ログの検索がオフになっていることを示します。 
+           The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
     
-    - [セキュリティ & コンプライアンスセンター] で、[**監査ログ****の検索] に移動** \>し、[**検索**] をクリックします。
+    - [セキュリティ & コンプライアンスセンター] で、[**検索** \> **監査ログの検索**] に移動します。
     
-      監査ログの検索が有効になっていないことを示すメッセージが表示されます。 
-    
-      ![監査がオフになっている場合は、メッセージが表示されます。](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)
+           A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.
