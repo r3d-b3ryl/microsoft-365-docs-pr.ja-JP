@@ -340,7 +340,9 @@
 ### [ドキュメントのメタデータ フィールド](document-metadata-fields.md)
 ### [ジョブを管理する](manage-jobs.md)
 
-# [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
+# 監査と通知ポリシーを管理する
+## [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
+## [通知ポリシーを管理する](alert-policies.md)
 ## [監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)
 ## [メールボックスの監査を管理する](enable-mailbox-auditing.md)
 ## [監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)
