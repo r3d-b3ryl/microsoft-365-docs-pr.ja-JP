@@ -1,7 +1,7 @@
 # [Microsoft 365 コンプライアンス](index.yml)
 
-# はじめに
-## [コンプライアンスセンターの新機能](whats-new.md)
+# 作業の開始
+## [コンプライアンス センターの新機能](whats-new.md)
 ## [Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)
 ## [セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
 ## [無料の Azure Active Directory サブスクリプションを使用する](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -11,21 +11,21 @@
 ## [ユーザーとデバイス アクセスの保護](protect-access-to-data-and-services.md)
 ## [カスタマー ロックボックス](customer-lockbox-requests.md)
 ## [特権アクセス管理]()
-### [特権アクセス管理について](privileged-access-management-overview.md)
+### [特権アクセス管理の詳細情報](privileged-access-management-overview.md)
 ### [特権アクセス管理を構成する](privileged-access-management-configuration.md)
 ## カスタマー キー
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
 ### [Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化](service-encryption-with-customer-key-faq.md)
-## [通信の監督]()
-### [通信の監督について](supervision-policies.md)
+## [通信監督]()
+### [通信監督の詳細情報](supervision-policies.md)
 ### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
-## [情報の障壁](information-barriers.md)
-### [情報バリアポリシーの定義](information-barriers-policies.md)
-### [情報バリアポリシーの属性](information-barriers-attributes.md)
-### [情報の障壁をトラブルシューティングする](information-barriers-troubleshooting.md)
-### [情報バリアポリシーの編集](information-barriers-edit-segments-policies.md.md)
+## [情報障壁](information-barriers.md)
+### [情報障壁ポリシーの定義](information-barriers-policies.md)
+### [情報障壁ポリシーの属性](information-barriers-attributes.md)
+### [情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)
+### [情報障壁ポリシーの編集](information-barriers-edit-segments-policies.md.md)
 
-# [情報保護を管理する](protect-information.md)
+# [情報保護の管理](protect-information.md)
 ## [機密ラベル](sensitivity-labels.md)
 ### [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)
 ### [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)
@@ -52,7 +52,7 @@
 ### [DLP のカスタマイズの概要の詳しい説明を見る](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)
 ### [カスタムの機密情報の種類:](custom-sensitive-info-types.md)
-### [正確なデータ一致に基づく分類を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+### [完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 ### [セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
 ### [PowerShell を使用してカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [キーワード辞書を作成する](create-a-keyword-dictionary.md)
@@ -60,7 +60,7 @@
 ### [ 機密情報のDLP 関数](what-the-dlp-functions-look-for.md)
 ### [DLP のカスタマイズの概要の詳しい説明を見る](https://go.microsoft.com/fwlink/?linkid=852306)
 
-## [電子メールの暗号化](email-encryption.md)
+## [メールの暗号化](email-encryption.md)
 ### [Office 365 Message Encryption (OME)](ome.md)
 ### [新しい Office 365 Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)
 ### [Office 365 でメールを暗号化するためにメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)
@@ -80,7 +80,7 @@
 #### [Office 365 Message Encryption の旧来の情報](legacy-information-for-message-encryption.md)
 #### [Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# 情報ガバナンスを管理する
+# 情報ガバナンスの管理
 ## [データをインポートする](importing-pst-files-to-office-365.md)
 ### [ネットワーク アップロードを使用して PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
 ### [ドライブ送付を使用して PST ファイルをインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -89,10 +89,10 @@
 ### [ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
 ### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
-#### [サンプルコネクタを使用して Facebook データをアーカイブする](archive-facebook-data-with-sample-connector.md)
-#### [サンプルコネクタを使用して Twitter データをアーカイブする](archive-twitter-data-with-sample-connector.md)
-#### [LinkedIn データをアーカイブするためのコネクタの設定](archive-linkedin-data.md)
-#### [インスタント Bloomberg データをアーカイブするためのコネクタの設定](archive-instant-bloomberg-data.md)
+#### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
+#### [サンプル コネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
+#### [コネクタをセットアップして LinkedIn データをアーカイブする](archive-linkedin-data.md)
+#### [コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする](archive-instant-bloomberg-data.md)
 #### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
 ## データを格納する
 ### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
@@ -104,7 +104,7 @@
 ### [ファイル計画マネージャー](file-plan-manager.md)
 ### [保持ラベル](labels.md)
 ### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [イベント ベースの保持](event-driven-retention.md)
 ### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
 ## [データを破棄する](disposition-reviews.md)
@@ -121,11 +121,11 @@
 ## データ ガバナンスの詳細情報
 ### [Microsoft Data Governance チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
 ## レコード管理
-### [レコードの管理](records-management.md)
+### [レコード管理](records-management.md)
 ### ファイル計画
 #### [ファイル計画マネージャー](file-plan-manager.md)
 #### [保持ラベル](labels.md)
-#### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [ラベル分析によるラベル使用状況を表示する](label-analytics.md)
 #### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
 #### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
@@ -191,7 +191,7 @@
 #### [データ処理中のエラー修復](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 ### [ケースのデータの収集](collecting-data-for-ediscovery.md)
-#### [Create a search](create-search-to-collect-data.md)
+#### [検索を作成する](create-search-to-collect-data.md)
 #### [検索クエリのビルド](building-search-queries.md)
 #### [検索の統計](search-statistics.md)
 #### [検索結果をレビュー セットに追加する](add-data-to-review-set.md)
@@ -205,7 +205,7 @@
 #### [レビュー セット内のドキュメントを表示する](view-documents-in-review-set.md)
 #### [レビュー セット内のデータをクエリする](review-set-search.md)
 #### [レビュー セット内のドキュメントをタグ付けする](tagging-documents.md)
-#### [弁護士クライアント特権の検出を設定する](attorney-privilege-detection.md)
+#### [弁護士/依頼人特権の検出を設定する](attorney-privilege-detection.md)
 
 ### [ケース データを分析する](analyzing-data-in-review-set.md)
 #### [準重複の検出](near-duplicate-detection-in-advanced-ediscovery.md)
@@ -219,7 +219,7 @@
 
 ### [ジョブを管理する](managing-jobs-ediscovery20.md)
 
-### ケース設定を構成する
+### ケースの設定を構成する
 #### [ケースを閉じるか、削除する](close-or-delete-case.md)
 #### [ケースでメンバーを追加または削除する](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 #### [検索と分析の設定を構成する](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
@@ -229,7 +229,7 @@
 #### [Advanced eDiscovery を制限する](limits-ediscovery20.md)
 #### [サポートされているファイルの種類](supported-filetypes-ediscovery20.md)
 #### [ドキュメントのメタデータ フィールド](document-metadata-fields-in-advanced-ediscovery.md)
-#### [会話レビューセット](conversation-review-sets.md)
+#### [会話レビュー セット](conversation-review-sets.md)
 #### [AzCopy のトラブルシューティング](troubleshooting-azcopy.md)
 
 ## [eDiscovery ケースを管理する](ediscovery-cases.md)
@@ -312,7 +312,7 @@
 ### [ドキュメントに注釈づけや墨消しをおこないます](annotate-and-redact-documents.md)
 ### [Office 365由来でないデータをロードします](load-non-office365-data.md)
 ### [データ処理中のエラー修復](error-remediation.md)
-### [元の場所からアイテムを削除する](delete-items-from-original-locations.md)
+### [アイテムを元の場所から削除する](delete-items-from-original-locations.md)
 
 ## [アナリティクスを使って、調査をより速く行います](run-analytics-to-investigate-faster.md)
 ### [電子メールのスレッド化](email-threading.md)
@@ -344,12 +344,12 @@
 ## [監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)
 ## [メールボックスの監査を管理する](enable-mailbox-auditing.md)
 ## [監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)
-## [監査ログレコードをエクスポート、構成、および表示する](export-view-audit-log-records.md)
+## [監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)
 ## [監査ログを使用して一般的なシナリオのトラブルシューティングを行う](auditing-troubleshooting-scenarios.md)
 ## [監査ログで共有監査を使用する](use-sharing-auditing.md)
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# コンプライアンスリスクを管理する
+# コンプライアンス リスクの管理
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [コンプライアンス マネージャー (クラシック)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [コンプライアンス マネージャー (プレビュー)](compliance-manager-overview.md)
@@ -374,19 +374,19 @@
 ### [Office Web Apps Server および Office Online Server の GDPR](gdpr-for-office-online-server.md)
 ### [オンプレミスの Windows Server ファイル共有における GDPR への対応](gdpr-for-on-premises-file-shares.md)
 
-# [法令遵守のアクションプラン](compliance-solutions-overview.md)
+# [法令遵守アクション プラン](compliance-solutions-overview.md)
 
-## [ISO-推奨されるアクションプラン](iso-action-plan.md)
-## [NIST-推奨されるアクションプラン](nist-action-plan.md) 
+## [ISO — 推奨アクション プラン](iso-action-plan.md)
+## [NIST — 推奨アクション プラン](nist-action-plan.md) 
 
 ## [GDPR](gdpr.md)
-### [GDPR の推奨されるアクションプラン](gdpr-action-plan.md)
+### [GDPR の推奨アクション プラン](gdpr-action-plan.md)
 
-### [アカウンタビリティの準備チェックリスト]()
-#### [アカウンタビリティの準備チェックリスト](gdpr-arc.md)
+### [アカウンタビリティ対応準備チェックリスト]()
+#### [アカウンタビリティ対応準備チェックリスト](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
-#### [Microsoft サポート & プロフェッショナルサービス](gdpr-arc-prof-services.md)
+#### [Microsoft サポート/プロフェッショナル サービス](gdpr-arc-prof-services.md)
 #### [Office 365](gdpr-arc-office365.md)
 
 ### [情報保護](gdpr-information-protection.md)
@@ -397,27 +397,27 @@
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
 #### [Dynamics 365](gdpr-dsr-dynamics365.md)
 #### [Intune](gdpr-dsr-intune.md)
-#### [Microsoft サポート & プロフェッショナルサービス](gdpr-dsr-prof-services.md)
+#### [Microsoft サポート/プロフェッショナル サービス](gdpr-dsr-prof-services.md)
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Visual Studio ファミリ](gdpr-dsr-visual-studio-family.md)
 
-### [違反の通知]()
-#### [違反の通知](gdpr-breach-notification.md)
+### [侵害の通知]()
+#### [侵害の通知](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
-#### [Microsoft サポート & プロフェッショナルサービス](gdpr-breach-microsoft-support-professional-services.md)
+#### [Microsoft サポート/プロフェッショナル サービス](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
 ### [データ保護影響評価]()
 #### [データ保護影響評価](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
-#### [Microsoft サポート & プロフェッショナルサービス](gdpr-dpia-prof-services.md)
+#### [Microsoft サポート/プロフェッショナル サービス](gdpr-dpia-prof-services.md)
 #### [Office 365](gdpr-dpia-office365.md)
 
 ### [Microsoft のデータ保護責任者](gdpr-data-protection-officer.md)
 
-# ハイブリッドコンプライアンス機能
+# ハイブリッド コンプライアンス機能
 ## [AD RMS による Exchange Online のメールの暗号化 ](information-rights-management-in-exchange-online.md)
 ### [IRM を設定してオンプレミスの AD RMS サーバーを使用する ](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
