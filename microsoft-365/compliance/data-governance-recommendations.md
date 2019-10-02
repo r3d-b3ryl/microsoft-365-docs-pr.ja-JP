@@ -1,7 +1,7 @@
 ---
 title: データ ガバナンスの推奨事項のためのコンテンツの識別方法
 ms.author: brendonb
-author: stephow-MSFT
+author: laurawi
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 セキュリティ/コンプライアンス センターは、組織の現在の設定に基づきデータ ガバナンスのための推奨事項を提供し、ユーザーによる設定作業を簡略化します。これらの推奨事項の一部は組織で特定のコンテンツを検出し、そのコンテンツを管理するための推奨手順を提供します。たとえば、重要な業務コンテンツ (弁護士依頼人間の秘匿特権や秘密保持契約書に関わる情報など) を含むアイテムが推奨事項によって検出された際に、ユーザーは保持ラベルを自動適用し、必要に応じてアイテムを機密扱いにして保持することができます。このトピックでは、ユーザーに表示される可能性があるデータ ガバナンスの推奨事項を一覧表示し、それぞれの推奨事項をトリガーするコンテンツについて説明します。
-ms.openlocfilehash: 3d96b7c15d5b6a0f6ec3bbf467bd8a1099af559a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10752afb97fd0ae2993d88b4e3af9159d61de708
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085204"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342940"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>データ ガバナンスの推奨事項のためのコンテンツの識別方法
 
@@ -28,7 +28,7 @@ Office 365 セキュリティ/コンプライアンス センターは、組織�
 
 ## <a name="clean-up-voicemail"></a>ボイスメールのクリーンアップ
 
-この推奨事項は、メッセージの種類が “ボイスメール” と識別されるメール メッセージがユーザーのメールボックスで検出されたときに表示されます。詳細については、「[Exchange でのメッセージのプロパティ](https://docs.microsoft.com/ja-JP/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange)」を参照してください。
+この推奨事項は、メッセージの種類が “ボイスメール” と識別されるメール メッセージがユーザーのメールボックスで検出されたときに表示されます。詳細については、「[Exchange でのメッセージのプロパティ](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange)」を参照してください。
 
 ## <a name="label-attorney-client-privilege-content"></a>弁護士/依頼人特権関連コンテンツのラベル付け 
 

@@ -14,18 +14,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: 7747f5a0905a9477e9d3fd17b00eae740d76f640
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050298"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370434"
 ---
 # <a name="step-6-configure-email-encryption"></a>手順 6: 電子メールの暗号化を構成する
 
 *この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Microsoft 365 には、3種類の電子メール暗号化があります。
 
@@ -79,4 +79,4 @@ S/MIME を使用するには、各受信者の公開キーを持っている必�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
+|![手順7](./media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|

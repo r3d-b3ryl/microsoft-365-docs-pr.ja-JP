@@ -1,7 +1,7 @@
 ---
 title: イベント ベースの保持を自動化する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: このトピックでは、Microsoft 365 REST API を使用して、イベントによってビジネス プロセス フローの自動化の保持をセットアップする方法について説明します。
-ms.openlocfilehash: 3a5dc3efb88eaa4eabe1b01731d17f5ac418f99d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b687ab89e0d29910c9c0781540b6f9113e53ed6
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085476"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342970"
 ---
 # <a name="automate-event-based-retention"></a>イベント ベースの保持を自動化する
 

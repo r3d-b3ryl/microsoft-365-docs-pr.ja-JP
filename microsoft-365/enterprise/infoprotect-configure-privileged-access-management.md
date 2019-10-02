@@ -1,5 +1,5 @@
 ---
-title: '手順 7: Office 365 の特権アクセス管理を構成する365'
+title: '手順 7: Office 365 の特権アクセス管理を構成する'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,18 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e9c68e4fafb1e9537b403965b4360806938c6a6f
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047290"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370424"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>手順 7: Office 365 の特権アクセス管理を構成する365
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>手順 7: Office 365 の特権アクセス管理を構成する
 
 *この手順はオプションであり、Microsoft 365 Enterprise の E5 および Advanced Compliance バージョンにのみ適用されます。*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 特権アクセス管理は、Office 365 テナントでのタスクベースのアクティビティに対して Just-In-Time アクセスを指定するポリシーを構成することで有効になります。これは、機密性の高いデータへの継続的なアクセスや重要な構成設定へのアクセスに、既存の特権管理者アカウントが使用される可能性のある侵害から組織を保護するために役立ちます。たとえば、Office 365 テナント内の組織のメールボックス設定にアクセスして変更する際には、明示的な承認が必要になる特権アクセス管理ポリシーを構成できます。
 

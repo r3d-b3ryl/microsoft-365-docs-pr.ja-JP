@@ -1,7 +1,7 @@
 ---
 title: 機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148481"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369448"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
 
@@ -135,7 +135,7 @@ Rights Management 発行者には、常に、ドキュメントや電子メー�
 
 これらのオプションを使用すると、ユーザーがコンテンツに機密度ラベルを手動で適用するときにアクセス許可を割り当てることができます。
 
-- Outlook では、ユーザーは [**転送不可**] オプションと同等の制限を適用することができます。 このオプションは Windows での Outlook でネイティブにサポートされており、Azure Information Protection 統合ラベル付けクライアントをインストールする必要はありません。
+- Outlook では、ユーザーは [[転送不可](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)] オプションと同等の制限を適用することができます。 このオプションは Windows での Outlook でネイティブにサポートされており、Azure Information Protection 統合ラベル付けクライアントをインストールする必要はありません。
 - Word、PowerPoint、Excel で、ユーザーは特定のユーザー、グループ、または組織のアクセス許可レベルを選択するよう求められます。 このオプションはこれらの Office アプリではネイティブにサポートされていないため、ユーザーは Azure Information Protection 統合ラベル付けクライアントをインストールする必要があります。
 
 これらのオプションは、機密度ラベルが表示されるアプリを決定します。
