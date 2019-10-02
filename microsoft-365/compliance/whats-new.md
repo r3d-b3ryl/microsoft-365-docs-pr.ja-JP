@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 コンプライアンスセンターに新機能を継続的に追加し、学習した問題を修正し、フィードバックに基づいて変更を加えています。 今月の内容を確認してください。
-ms.openlocfilehash: 558a35d255171ffa09f5e8610cdfc0d6ba63c9fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086437"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369638"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの新機能
 
@@ -29,9 +29,23 @@ ms.locfileid: "37086437"
 > [!TIP]
 > 他の管理センターでは何が起こっているのでしょうか。 次の記事をご覧ください。<br>[Microsoft 365 管理センターの新機能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
-## <a name="august-2019"></a>2019年8月
+## <a name="september-2019"></a>2019 年 9 月
 
 今月リリースのリリース前に静かになる理由をご確認ください。 マイクロソフトは、11月に[Microsoft Ignite](https://www.microsoft.com/ignite)で最近される新しい革新的なコンプライアンスソリューションの構築に取り組んでいます。 引き続きご調整ください。
+
+### <a name="new-encryption-options-for-sensitivity-labels"></a>機密ラベルの新しい暗号化オプション 
+
+機密ラベルの暗号化を構成する場合、次の2つのオプションがあるので、ユーザーはラベルを電子メールやドキュメントに手動で適用するときにアクセス許可を割り当てることができます。<br>
+- **Outlook 電子メール**にラベルを適用する場合、ユーザーは [転送不可] オプションに相当する制限を適用できます。 受信者はメッセージを読み取ることはできますが、コンテンツを転送、印刷、またはコピーすることはできません。
+- **Word、PowerPoint、Excel**の各ファイルにラベルを適用すると、ユーザーは特定のユーザーやグループにアクセス許可を割り当てるように求められます。
+
+[詳細情報](encryption-sensitivity-labels.md#let-users-assign-permissions)
+
+## <a name="august-2019"></a>2019年8月
+
+### <a name="update-to-data-investigations"></a>データ調査への更新
+
+データの調査を実行すると、元の場所からアイテムを削除できるようになります。 これは、組織全体の Exchange メールボックス、SharePoint サイト、および OneDrive アカウントからアイテムを削除できることを意味します。 アイテムを証拠として収集したため、証拠セットに保存されたアイテムのコピーが、さらに参考になるか、参照として保持することができます。 [詳細情報](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>2019年7月
 
@@ -49,34 +63,3 @@ ms.locfileid: "37086437"
 必要なレポートを見つけるために、大量のレポートをスクロールする必要はありません。 これで、(タイトルに基づいて) レポートを検索し、「ラベル」や「コンプライアンス」、「Office 365」や「Microsoft Cloud App Security」などのソースのカテゴリにフィルターを適用することができます。
 
 ![適用されたフィルターを使用したレポートの検索とフィルターのボタンの画面キャプチャ](media/mcc_report_filtering.png)
-
-### <a name="help-content"></a>ヘルプコンテンツ
-
-椅子を引き上げ、コーヒーをつかんで、最新のコンプライアンスに関するドキュメントをすぐに使用できるようにします。
-
-**Advanced eDiscovery**
-- [高度な電子情報開示で会話を確認](conversation-review-sets.md)する新規
-- [Advanced eDiscovery での AzCopy のトラブルシューティング](troubleshooting-azcopy.md)
-- [レビュー セットに Office 365 以外のデータを読み込む](load-non-office365-data.md)
-- [データ処理中のエラー修復](error-remediation.md)
-
-**サードパーティのデータをアーカイブする**
-- [Office 365 でインスタント Bloomberg データをアーカイブするためのコネクタを設定する](archive-instant-bloomberg-data.md)
-
-**監査**
-- [共有を監査して外部ユーザーと共有されているリソースを見つける](use-sharing-auditing.md)
-- [Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
-- [Office 365 管理アクティビティ API のトラブルシューティング](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [セキュリティ & コンプライアンスセンターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
-
-**暗号化**
-- [Office 365 Message Encryption の旧来の情報](legacy-information-for-message-encryption.md)
-
-**部門**
-- [正確なデータ一致に基づく分類を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
-**データガバナンス**
-- [アイテム保持ポリシーの概要](retention-policies.md)
-
-**マネージ**
-- [Office 365 の監督ポリシー](supervision-policies.md)

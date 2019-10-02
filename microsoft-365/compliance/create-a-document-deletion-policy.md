@@ -1,7 +1,7 @@
 ---
 title: ドキュメント削除ポリシーを作成する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 組織は多くの場合、コンプライアンス、法律、その他の規制により、ドキュメントを一定期間保持する必要があります。しかし、必要以上にドキュメントを長く保持すると、組織が法的なリスクにさらされる場合があります。
-ms.openlocfilehash: e8f85f4cc9ae541d8a962dfb270e5216c912ac7d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 00b10e1c86160917c96ed1062f0638acf56ef56e
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085346"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342980"
 ---
 # <a name="create-a-document-deletion-policy"></a>ドキュメント削除ポリシーを作成する
 

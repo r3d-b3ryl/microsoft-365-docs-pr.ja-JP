@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社が SharePoint Online サイトを非常に規制されたデータ用に実装し、研究チーム間のコラボレーションを容易にする方法について説明します。'
-ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 6c61d02c802a77afeb93a58b59114741c6630f9e
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072784"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369528"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation の非常に機密性の高いデジタル資産向けの SharePoint Online サイト
 
@@ -51,12 +51,12 @@ Contoso IT 管理者は、研究チームの一連のセキュリティグルー
 Contoso 社の SharePoint 管理者は、最初に**Research**という名前の新しいチームサイトを作成しました。 その後、次のように構成します。
 
 - リサーチの所有者の SharePoint グループを使用して、**研究管理者**のセキュリティグループをメンバーとして持つ、フルコントロールアクセス許可レベル。
-- Research メンバーのセキュリティグループをメンバーとして持つ Research メンバーの SharePoint **** グループを使用するための編集アクセス許可レベル。
-- リサーチ閲覧者の SharePoint グループを使用してリサーチ閲覧者のセキュリティ**** グループをメンバーとして持つ、読み取りアクセス許可レベル
+- **Research メンバーのセキュリティグループ**をメンバーとして持つ research メンバーの SharePoint グループを使用するための編集アクセス許可レベル。
+- リサーチ閲覧者の SharePoint グループを使用してリサーチ閲覧者**のセキュリティグループ**をメンバーとして持つ、読み取りアクセス許可レベル
 
 その結果、SharePoint アクセス許可レベル、SharePoint グループ、およびそれらのメンバーが表示されます。
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
+![SharePoint アクセス許可レベル、SharePoint グループ、およびそれらのメンバー](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
 
 次に、サイトに対する追加の制限を構成しました。
 
@@ -88,7 +88,7 @@ Contoso 管理者は、次のようなスコープ付きポリシーで、既定
 
 非常に機密性の高い資産に対する**調査**サイトの構成を次に示します。
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![非常に機密性の高い資産に対して、* * Research * * サイトの構成の結果として得られる構成](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 **リサーチ**サイトのフォルダー内のファイルは、次の方法で保護されます。
 
@@ -107,12 +107,12 @@ Contoso のセキュリティスタッフは、次の手順を実行する必須
 - 新しい**Research** SharePoint Online サイトと既存のファイルにアクセスする方法について説明します。
 - サイトに新しいファイルを作成し、ローカルに保存された新しいファイルをアップロードする方法。
 - DLP ポリシーによって、ファイルが外部で共有されることをブロックする方法のデモ。
-- Azure Information Protection クライアントを使用してリサーチファイルにリサーチサブラベル**** を付ける方法について説明します。
+- Azure Information Protection クライアントを使用し**てリサーチファイルにリサーチサブラベル**を付ける方法について説明します。
 - サイトからリークが生じた場合でも、**リサーチ**サブラベルがファイルを保護する方法についてのデモ。
 
 最終的には、セキュリティで保護された環境で研究者が組織全体で共同作業を行える安全な環境が得られます。 
 
-Research サブラベルを持つ research **** ドキュメントが**research**サイトから漏洩した場合、そのドキュメントは暗号化され、有効な資格情報**** を持つ research および**research**のセキュリティグループのメンバーのみがアクセスできます。
+**Research サブラベル**を持つ research ドキュメントが**research**サイトから**漏洩した**場合、そのドキュメントは暗号化され、有効な資格情報を持つ research および**research**のセキュリティグループのメンバーのみがアクセスできます。
 
 ## <a name="next-step"></a>次の手順
 

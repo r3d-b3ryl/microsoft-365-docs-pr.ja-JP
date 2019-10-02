@@ -2,6 +2,7 @@
 
 # 作業の開始
 ## [コンプライアンス センターの新機能](whats-new.md)
+## [コンプライアンスコンテンツに対する最新の更新プログラム](recently-updated-topics-mcc.md)
 ## [Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)
 ## [セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
 ## [無料の Azure Active Directory サブスクリプションを使用する](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -104,7 +105,7 @@
 ### [ファイル計画マネージャー](file-plan-manager.md)
 ### [保持ラベル](labels.md)
 ### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [イベント ベースの保持](event-driven-retention.md)
 ### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
 ## [データを破棄する](disposition-reviews.md)
@@ -125,7 +126,7 @@
 ### ファイル計画
 #### [ファイル計画マネージャー](file-plan-manager.md)
 #### [保持ラベル](labels.md)
-#### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [ラベル分析によるラベル使用状況を表示する](label-analytics.md)
 #### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
 #### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)

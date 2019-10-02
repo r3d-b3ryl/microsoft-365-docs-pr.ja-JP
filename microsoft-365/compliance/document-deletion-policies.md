@@ -1,7 +1,7 @@
 ---
 title: ドキュメント削除ポリシーの概要
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 組織では、コンプライアンス、法律、またはその他のビジネス要件のために長期間ドキュメントを保持する必要がある場合があります。 ただし、組織でドキュメントを必要以上に長期に保持している場合は、不要な法的リスクを作成します。 ドキュメント削除ポリシーを使用すると、特定の期間が経過した後にサイト内のドキュメントを削除することによって、積極的にリスクを軽減できます。たとえば、ドキュメントが作成された後に、ユーザーの OneDrive for Business サイトのドキュメントを5年後に削除することができます。
-ms.openlocfilehash: 59bc100a19f3597aa1bf16506bf6c7049a35af3b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 87d79f6b8f4381693bf043bc0e04fcfe4359fa90
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085118"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342950"
 ---
 # <a name="overview-of-document-deletion-policies"></a>ドキュメント削除ポリシーの概要
 
@@ -44,7 +44,7 @@ ms.locfileid: "37085118"
 
 Office 365 には、ドキュメント削除ポリシーに加えて、サイトコンテンツに対する以下のアイテム保持ポリシーが用意されています。
   
-- [レコードの管理](https://go.microsoft.com/fwlink/p/?LinkID=404250)
+- [レコード管理](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     
 - [コンテンツタイプ、リスト、およびライブラリの情報管理ポリシー](https://go.microsoft.com/fwlink/p/?LinkID=404239)
     

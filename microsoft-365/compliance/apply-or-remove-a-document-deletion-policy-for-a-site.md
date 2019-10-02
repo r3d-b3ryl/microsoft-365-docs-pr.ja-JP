@@ -1,7 +1,7 @@
 ---
 title: サイトのドキュメント削除ポリシーを適用または削除する
-ms.author: stephow
-author: stephow-msft
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 多くの場合、組織は一定期間、ドキュメントの保持が要求されるコンプライアンス、法的要件、その他の規制を受けます。しかし、必要以上にドキュメントを長く保持すると、組織が法的なリスクにさらされる場合があります。このため、組織は、例えば一般的なビジネス文書は作成の 5 年後に削除する必要があるといった、ドキュメント削除ポリシーをサイトに作成する場合があります。
-ms.openlocfilehash: c826d6c9e163e79c4e72510e3362328ae902c80c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3f5228c26cc4e12c129a57e2141e3eea50d029a2
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085542"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342960"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>サイトのドキュメント削除ポリシーを適用または削除する
 
