@@ -31,6 +31,7 @@
 ### [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)
 ### [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)
 ### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
+### [Office アプリの機密ラベル](sensitivity-labels-office-apps.md)
 
 ## [データ損失防止 (DLP)](data-loss-prevention-policies.md)
 ### [DLP と Microsoft Teams](dlp-microsoft-teams.md)
