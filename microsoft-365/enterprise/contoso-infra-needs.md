@@ -3,7 +3,7 @@ title: Contoso 社の IT インフラストラクチャおよびビジネス ニ
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされるかについて説明します。
-ms.openlocfilehash: e50a2b17544c1a551d25dffd751d12aec1c15ecd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
+ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072617"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369588"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
 
-**概要:** Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされるかについて説明します。
-
+**概要:** Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
 
 Contoso 社は、集中管理されたオンプレミスの IT インフラストラクチャから、クラウド包括型の IT インフラストラクチャへと移行しています。後者には、クラウドベースの個人生産性のワークロードとアプリケーションが組み込まれています。
 
@@ -33,7 +32,7 @@ Contoso 社では、ほとんど集中管理されたオンプレミスの IT �
 
 図 1 は、本社とアプリケーション データセンター、境界ネットワーク、およびインターネットを示しています。
 
-![](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contoso 社の既存の IT インフラストラクチャ](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **図 1: Contoso 社の既存の IT インフラストラクチャ**
  
@@ -43,15 +42,15 @@ Contoso 社では、ほとんど集中管理されたオンプレミスの IT �
 - 従来の SharePoint サーバーのセット。
 - ファイル記憶域用の組織およびチームレベルのサーバー。
 
-さらには、同様のアプリケーション セットを持つサーバー セットをサポートする各地域ハブ オフィスです。これらのサーバーは地域の IT 部門の管理下にあります。
+さらに、各地域のハブ オフィスは、同様のアプリケーション セットを持つサーバー セットをサポートしています。 これらのサーバーは、地域の IT 部門が管理します。
 
 こうした地理的に離れた複数のデータセンターのアプリケーションとデータに対する検索性については引き続き課題です。
 
 Contoso 社の本社の境界ネットワークでは、サーバーのさまざまなセットが次のことを実現します。
 
-- パリ本社の従業員のための Contoso 社イントラネットおよび Web プロキシへの VPN ベースのリモート アクセス。
 - 顧客が製品、部品、備品、またはサービスを発注できる Contoso 社のパブリック Web サイトのホスティング。
 - パートナーの通信およびコラボレーションのための Contoso 社のパートナー エクストラネットのホスティング。
+- パリ本社の従業員のための Contoso 社イントラネットおよび Web プロキシへの仮想プライベート ネットワーク (VPN) ベースのリモート アクセス。
 
 ## <a name="contosos-business-needs"></a>Contoso 社のビジネス ニーズ
 
@@ -81,7 +80,7 @@ Contoso 社のビジネス ニーズは、5 つの主なカテゴリに分類さ
 
 - 情報保護
 
-  顧客データ、設計仕様、従業員情報などの重要なデジタル資産へのアクセスを制限し、暗号化します。
+  顧客データ、設計および製造仕様、従業員情報などの重要なデジタル資産へのアクセスを制限し、暗号化します。
 
 - セキュリティ管理
 
@@ -111,7 +110,7 @@ Contoso 社のビジネス ニーズは、5 つの主なカテゴリに分類さ
 
 - クライアント PC とデバイスで実行されているソフトウェアを管理するために、IT オーバーヘッドを削減します。
 
-  組織全体で Windows オペレーティング システムと Microsoft Office の更新プログラムのインストールを自動化します。
+  組織全体で Windows オペレーティング システムと Microsoft Office ProPlus への更新プログラムのインストールを自動化します。
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Contoso 社のビジネス ニーズを Microsoft 365 Enterprise にマッピングする
 
@@ -121,27 +120,27 @@ Contoso 社の IT 部門は、展開に先立って次のビジネス ニーズ�
 |:-------|:-----|:-----|
 | **カテゴリ** | **ビジネス ニーズ** | **Microsoft 365 Enterprise の製品または機能** |
 | 生産性 |  |  |
-|  | グループ作業を容易にする | Teams、SharePoint Online、Skype for Business Online |
-|  | リモート ワーカーとモバイル ワーカーの生産性を向上させる | Office 365 のワークロードとクラウドベースのデータ |
+|  | グループ作業を容易にする | Microsoft Teams、SharePoint、OneDrive |
+|  | リモート ワーカーとモバイル ワーカーの生産性を向上させる | Microsoft 365 のワークロードとクラウドベースのデータ |
 |  | 独創性と革新性を向上させる | Windows Ink、職場の Cortana、PowerPoint |
 | セキュリティ |  |  |
-|  | ID およびアクセス管理 | 多要素認証 (MFA) および Azure AD Privileged Identity Management (PIM) 付きの専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
+|  | ID およびアクセス管理 | Azure 多要素認証 (MFA) および Azure AD Privileged Identity Management (PIM) 付きの専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Office 365 脅威の調査および対応 <BR> |
-|  | 情報保護 | Azure Information Protection <BR> Office 365 データ損失防止 (DLP) <BR> Windows 情報保護 <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | 情報保護 | Azure Information Protection <BR> Office 365 データ損失防止 (DLP) <BR> Windows 情報保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | セキュリティ管理 | Azure Security Center  <BR> Windows Defender セキュリティ センター |
 | リモート/モバイル アクセスおよびビジネス パートナー |  |  |
 |  | リモート ワーカーとモバイル ワーカーのセキュリティを強化する | Microsoft Intune |
-|  | 従業員のリモート アクセス インフラストラクチャを縮小する | Office 365 のワークロードとクラウドベースのデータ |
+|  | 従業員のリモート アクセス インフラストラクチャを縮小する | Microsoft 365 のワークロードとクラウドベースのデータ |
 |  | B2B のトランザクションにおける接続性を向上し、オーバーヘッドを削減する | フェデレーション認証とクラウドベースのリソース |
 | コンプライアンス |  |  |
 |  | 地域の規制要件に準拠する | Office 365 の GDPR 機能 |
 | 管理 |  |  |
-|  | クライアントの更新プログラムをインストールするため、IT オーバーヘッドを削減する | 展開リング <BR> 適切な Windows 10 のアップグレードと Autopilot <BR> Office 365 ProPlus |
+|  | クライアントの更新プログラムをインストールするため、IT オーバーヘッドを削減する | 展開リング <BR> Windows 10 Enterprise の更新プログラム <BR> Office 365 ProPlus の更新プログラム |
 ||||
 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社のオンプレミス ネットワークと、組織全体の Microsoft 365 のクラウドベースのリソースへのアクセスと待ち時間を最適化した方法について[確認](contoso-networking.md)します。
+Contoso 社のオンプレミス ネットワークと、Microsoft 365 のクラウドベースのリソースへのアクセスと待ち時間を最適化した方法について[確認](contoso-networking.md)します。
 
 ## <a name="see-also"></a>関連項目
 

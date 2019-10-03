@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise の情報保護機能を使用して、クラウドのデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: c11636d6fcdb1de634988e85238ce39a703d520d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 66ae8f4d3ddd71db593daa7b375348e71afeb2f8
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074077"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369598"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -87,7 +87,7 @@ ID とモバイル デバイスの管理インフラストラクチャと共に�
 
 図 1 は、Contoso 社の情報保護に応じた結果としてのポリシーのセットです。
 
-![](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![デバイス、Exchange Online、および SharePoint Online の条件付きアクセス ポリシー](./media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 **図 1: デバイス、Exchange Online、および SharePoint Online の条件付きアクセス ポリシー**
  

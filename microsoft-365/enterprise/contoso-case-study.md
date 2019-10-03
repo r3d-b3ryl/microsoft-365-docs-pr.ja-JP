@@ -3,7 +3,7 @@ title: Contoso Corporation 向けの Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
-ms.openlocfilehash: e587a2c6588faf32aa6882ef1659472365611517
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054919"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369618"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise
 
@@ -42,15 +42,15 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
 - [ネットワーク](contoso-networking.md)
 
-  Contoso 社のネットワーク エンジニアは、イントラネットのエッジとインターネット上の最も近い Microsoft ネットワークの場所へのトラフィックを最適化しています。
+  Contoso 社のネットワーク エンジニアは、オンプレミス ユーザーのイントラネットのエッジとインターネット上の最も近い Microsoft ネットワークの場所へのトラフィックを最適化しています。
 
 - [ID](contoso-identity.md)
 
-  Contoso 社のクラウド ソリューションにおけるアイデンティティはオンプレミスの ID プロバイダーを活用し、信頼できる既存のサードパーティ ID プロバイダーでのフェデレーション認証が含まれています。
+  Contoso 社のクラウド ソリューションにおけるアイデンティティはオンプレミスの Active Directory ドメイン サービス (AD DS) フォレストを活用し、信頼できる既存のサードパーティ ID プロバイダーでのフェデレーション認証が含まれています。
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  Contoso 社の Windows 10 Enterprise インフラストラクチャは、プライマリ PC およびデバイス オペレーティング システム用の更新プログラムを展開し、自動インストールを行います。
+  Contoso 社の Windows 10 Enterprise インフラストラクチャは、プライマリ PC およびデバイス オペレーティング システムを実行しているデバイスの更新プログラムを展開し、自動インストールを行います。
 
 - [Office 365 ProPlus](contoso-o365pp.md)
 
@@ -58,7 +58,7 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
 - [モバイル デバイス管理](contoso-mdm.md)
 
-  オフィス外で働く従業員が多く、会社所有と個人所有のスマートフォンとタブレットも多数あるため、Contoso 社は、デバイスを登録して、デバイスとそのデータをセキュリティで保護するモバイル デバイス管理を使用しています。
+  オフィス外で働く従業員が多く、会社所有と個人所有のスマートフォンとタブレットも多数あるため、Contoso 社は、デバイスを登録してデバイスとそのデータをセキュリティで保護し、アプリを管理するモバイル デバイス管理を使用しています。
 
 - [情報保護](contoso-info-protect.md)
 
@@ -70,7 +70,7 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
 - [高機密のデジタル資産向けの SharePoint Online サイト](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 
-  知的財産を保護し、研究チーム間で簡単に共同作業できるようにするため、Contoso 社では厳密に規制されたデータ用サイト向けの SharePoint Online サイトを使用しています。
+  知的財産を保護し、研究チーム間で簡単に共同作業できるようにするため、Contoso 社では厳密に規制されたデータ向けの SharePoint Online サイトを使用しています。
 
 
 ## <a name="next-step"></a>次の手順

@@ -3,7 +3,7 @@ title: Contoso 社の Windows 10 Enterprise 展開
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が System Center Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
-ms.openlocfilehash: 03ee4d9efcedf42eb976e001411299d2080abf83
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073857"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370474"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 社の Windows 10 Enterprise 展開
 
 **概要:** Contoso 社が System Center Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
 
-Microsoft 365 Enterprise の広範なロールアウトに先立ち、Contoso 社には、Windows 7 (10%)、Windows 8.1 (65%)、Windows 10 (25%) が混在する Windows 互換の PC とデバイスがありました。Contoso 社は、Windows 10 Enterprise 用の PC をアップグレードして、強化したセキュリティを利用したいと考え、更新プログラムの自動展開により IT 部門の負荷を削減しました。 
+Microsoft 365 Enterprise の広範なロールアウトに先立ち、Contoso 社には、Windows 7 (10%)、Windows 8.1 (65%)、Windows 10 (25%) が混在する Windows 互換の PC とデバイスがありました。Contoso 社は、Windows 10 Enterprise 用の PC をアップグレードして、高度なセキュリティを利用したいと考え、更新プログラムの自動展開により IT 部門の負荷を削減しました。 
 
 インフラストラクチャとビジネス ニーズを評価した後、Contoso 社は展開に向けて、以下の重要な要件を特定しました。
 
@@ -45,11 +45,11 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの前お�
 
 - Update Compliance  
 
-  更新プログラムのインストールの進行状況、Windows Update for Business (WUfB) 構成データ、Windows Defender ウイルス対策のデータ、その他の更新プログラム固有の情報を含むシステム データおよび診断データを収集し、クラウドの分析と使用のためにそのデータを保管します。
+  Windows 更新に関するデバイスの状態が表示されるため、必要に応じて最新の更新プログラムが適用されていることを確認できます。
 
 - デバイスの正常性  
 
-  更新プログラムのインストールの進行状況、Windows Update for Business (WUfB) 構成データ、Windows Defender ウイルス対策データ、その他の更新プログラム固有の情報を含む Windows 10 のシステム データおよび診断データを収集し、クラウドを分析しおよび使用するためにこのデータを保管します。
+  頻繁にクラッシュするデバイスを特定します。そのため、再構築または交換が必要になる可能性があり、デバイス クラッシュの原因となるデバイス ドライバーと、クラッシュの数を減らす可能性のあるドライバーの代替バージョンを提案します。 エンド ユーザーにプロンプ​​トを送信する Windows 情報保護の構成の誤りを通知します。
  
 Contoso 社には、既存の System Center Configuration Manager (Current Branch) インフラストラクチャがあります。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Windows 10 Enterprise の展開と管理をより簡単で効率的にするための機能も組み込まれています。
 
@@ -75,20 +75,18 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの展開�
 4. Windows Analytics のデバイスの正常性および Update Compliance ソリューションを使用して、3 つの検証および展開ステージング リングで PC およびデバイスに対して成功の評価を実施しました。
 5. Contoso 社は、Windows Analytics の情報に基づいて、広範な展開リングに展開する Windows 10 Enterprise のバージョンを決定しました。
 6. 構成マネージャーの展開タスク シーケンスを実行して、選択した Windows パッケージを広範な展開リングに展開しました。
-7. 問題に対応するために、Windows Analytics が提供するデバイスの正常性および Update Compliance ソリューションを使用して、広範な展開リング内の PC とデバイスを監視しました。
+7. 問題に対応するために、デバイスの正常性および更新プログラムの適用状況 ソリューションを使用して、広範な展開リング内の PC とデバイスを監視しました。
 
-図 1 は、一括アップグレード、および進行中の更新プログラムの展開アーキテクチャを示しています。
+次に一括アップグレード、および進行中の更新プログラムの展開アーキテクチャを示します。
 
-![](./media/contoso-win10/contoso-win10-fig1.png)
- 
-**図 1: Contoso 社の Windows 10 Enterprise の展開インフラストラクチャ**
+![Contoso 社の Windows 10 Enterprise の展開インフラストラクチャ](./media/contoso-win10/contoso-win10-fig1.png)
 
 このインフラストラクチャは以下で構成されます。
 
 - System Center Configuration Manager
   - Microsoft Network の Microsoft ボリューム ライセンス センターから Windows 10 Enterprise パッケージのイメージを取得します。
   - 展開パッケージに対する中央の管理ポイントです。
-- 地域配布ポイント。通常は Contoso 社のサテライト オフィスにあります。
+- 通常は Contoso 社の地域ハブ オフィスにある地域配布ポイント。
 - リング メンバーシップに基づいた一括アップグレードまたは進行中の更新プログラムの展開パッケージを受信してインストールする、さまざまな場所にある Windows PC およびデバイス。
 
 ## <a name="next-step"></a>次の手順

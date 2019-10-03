@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: f40be4ad7d93781ff2ac980228ae5271a8e844c4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c78e8cc9235eb2ca5de091c05d1883ed6cca1b4
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982128"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369608"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
@@ -32,7 +32,7 @@ Contosoは、contoso.comに1つのActive Directoryドメインサービス（AD 
 
 図 1 では、地域ハブを含む世界各地の地域ドメインを持つ Contoso 社のフォレストを示しています。
 
-![](./media/contoso-identity/contoso-identity-fig1.png)
+![Contoso 社の世界的なフォレストとドメイン](./media/contoso-identity/contoso-identity-fig1.png)
  
 **図 1: Contoso 社の世界的なフォレストとドメイン**
 
@@ -47,13 +47,13 @@ Contoso 社では次のことが可能です。
 
 図 2 は、公開 Web サイト、パートナーのエクストラネット、および Active Directory フェデレーション サービス (AD FS) サーバーのセットを含む Contoso 社の DMZ を示しています。DMZ は、顧客、パートナー、およびインターネット サービスを含むインターネットに接続されています。
 
-![](./media/contoso-identity/contoso-identity-fig2.png)
+![Contoso 社の顧客とパートナーのフェデレーション認証のサポート](./media/contoso-identity/contoso-identity-fig2.png)
 
 **図 2: Contoso 社の顧客とパートナーのフェデレーション認証のサポート**
  
 DMZ の AD FS サーバーは、ID のプロバイダーが提供しパブリック Web サイトにアクセスするための顧客資格情報、およびパートナー エクストラネットにアクセスするためのパートナー資格情報の認証を容易にします。
 
-Contoso 社は、このインフラストラクチャを維持し、顧客とパートナーの認証専用で使用することに決定しました。Contoso 社の ID 設計者は、このインフラストラクチャから Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) および [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) ソリューションへの変換を調査中です。
+Contoso 社は、このインフラストラクチャを維持し、顧客とパートナーの認証専用にすることを決定しました。 Contoso 社の ID アーキテクトは、このインフラストラクチャから Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) および [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) ソリューションへの変換を調査しています。
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>クラウドベース認証のためのパスワードハッシュ同期によるハイブリッドID
 
@@ -63,7 +63,7 @@ PHSは、自社運用のAD DSフォレストをMicrosoft 365 Enterpriseの登録
 
 継続的なディレクトリ同期を実行するために、ContosoはAzure AD 連携ツールをパリのデータセンター内のサーバーに展開しました。 図3は、Azure AD Connectを実行しているサーバーがContoso AD DSフォレストに変更をポーリングし、それらの変更をAzure ADテナントと同期することを示しています。
 
-![](./media/contoso-identity/contoso-identity-fig4.png)
+![Contoso 社の PHS ディレクトリ同期インフラストラクチャ](./media/contoso-identity/contoso-identity-fig4.png)
  
 **図3：ContosoのPHSディレクトリ同期インフラストラクチャ**
 
@@ -78,7 +78,7 @@ Contosoは、3つの保護レベルに対して、Azure ADとIntuneの[条件付
 
 図4は、この結果得られるIDと機器の条件付きアクセスポリシーのセットを示しています。
 
-![](./media/contoso-identity/contoso-identity-fig5.png)
+![Contoso 社の ID とデバイスの条件付きアクセスポリシー](./media/contoso-identity/contoso-identity-fig5.png)
  
 **図4：ContosoのIDと機器の条件付きアクセスポリシー**
 

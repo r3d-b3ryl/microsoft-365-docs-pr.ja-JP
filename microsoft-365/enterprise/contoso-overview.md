@@ -3,7 +3,7 @@ title: Contoso Corporation の概要
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: 2610cad2db4f5621759578b29e6a6e48c07b3654
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072527"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369558"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
 
 **概要:** ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
 
-Contoso Corporation は、フランスのパリに本社を持つ多国籍企業であり、100,000 を超える製品を製造、販売、およびサポートする複合組織です。
+![Contoso 社](./media/contoso-overview/contoso-icon.png)
 
-![](./media/contoso-overview/contoso-icon.png)
+Contoso Corporation は、フランスのパリに本社を持つ多国籍企業であり、100,000 を超える製品を製造、販売、およびサポートする複合組織です。
 
 ## <a name="contoso-around-the-world"></a>世界の Contoso
 
 図 1 は、パリにある本社と、さまざまな大陸にある地域ハブおよびサテライト オフィスを示しています。
 
-![](./media/contoso-overview/contoso-overview-fig1.png)
+![世界各国の Contoso 社のオフィス](./media/contoso-overview/contoso-overview-fig1.png)
 
 **図 1:世界各国の Contoso 社のオフィス**
  
@@ -60,7 +60,7 @@ Contoso 社の要員の 25% はモバイル専門であり、地域ハブ オフ
 
 ## <a name="design-considerations-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の設計上の考慮事項
 
-Contoso 社の IT アーキテクトは、Microsoft 365 Enterprise を展開する際の、次の設計上の考慮事項を特定しました。 
+Contoso 社の IT アーキテクトは、Microsoft 365 Enterprise を展開する際の、次の設計上の要件と考慮事項を特定しました。 
 
 - 地理的に複数の場所にあり、地域に応じた規制とコンプライアンスの要件がある
 - 本社オフィスに中央イントラネット データセンターがあり、地域のアプリケーション サーバーで内部の基幹業務アプリケーションをホストしている
@@ -69,12 +69,12 @@ Contoso 社の IT アーキテクトは、Microsoft 365 Enterprise を展開す�
 - iOS (iPhone と iPad) や Android のスマートフォンやタブレットを含め、個人および会社が所有するモバイル デバイスは各種混合
 - リモートおよびモバイルのワーカーが多数
 - ビジネス パートナーが多数
-- 顧客データと個人情報データの量が多い
+- 顧客情報と個人を特定できる情報の量が多い
 - 製品の設計仕様、および製造上の機密情報の形式で、重要な知的財産の量が多い
 
 ## <a name="next-step"></a>次の手順
 
-Contoso Corporation のオンプレミスの IT インフラストラクチャについて、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされるかについて[説明](contoso-infra-needs.md)します。
+Contoso 社のオンプレミスの IT インフラストラクチャについて、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて[説明](contoso-infra-needs.md)します。
 
 ## <a name="see-also"></a>関連項目
 
