@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
-ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
+ms.openlocfilehash: 3e37cebc1721a1bdcce0a30223a8beeb38868e82
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35595303"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370084"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>手順 2: 既存のデバイス用に Windows 10 Enterprise を一括アップグレードとして展開する
 
 *この記事は、Microsoft 365 Enterprise の E3 および E5 の両バージョンに適用されます*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 現在 Windows 7 または Windows 8.1 を実行している Pc をアップグレードするための最も単純なパスは、一括アップグレードを使用しています。 System Center Configuration Manager (構成マネージャー) のタスクシーケンスを使用して、プロセスを完全に自動化することができます。 
 
@@ -141,7 +141,7 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する](windows10-deploy-autopilot.md) |
+|![手順 3](./media/stepnumbers/Step3.png)| [Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する](windows10-deploy-autopilot.md) |
 
 
 

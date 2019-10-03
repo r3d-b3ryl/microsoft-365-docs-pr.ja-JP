@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: セキュリティで保護された SharePoint Online チームサイトまたは Microsoft Teams のチームを作成し、最も重要で機密性の高いデジタル資産を保存します。
-ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
-ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
+ms.openlocfilehash: 1243a88e6553b1d58370a60b5e2fec38d3dbcaf6
+ms.sourcegitcommit: 681ae93ca1d07532944665cf5d99ff1f08c0b46a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34681068"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37210053"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Microsoft Teams および SharePoint Online サイトで高度な規制データを扱うには
 
@@ -67,7 +67,6 @@ Microsoft 365 Enterprise には、高度な規制データを作成、保存、�
 以下のフェーズでは、高度な規制データを扱う SharePoint Online サイトおよびチームの設計、構成、導入方法について、順を追って説明します。
 
 架空の多国籍組織を表す Contoso 社が研究チーム向けに SharePoint Online サイトを設計した方法について確認するには、こちらの[構成例](contoso-sharepoint-online-site-for-highly-confidential-assets.md)をご覧ください。
-
 
 チームで高度な規制データを扱う場合、高度な規制データを扱う SharePoint Online チーム サイトを最初に作成する必要があります。次に、SharePoint Online チーム サイトの Office 365 グループを使用する新しいチームを作成します。詳細については、フェーズ 2 の手順 4 を参照してください。
 
@@ -146,7 +145,7 @@ SharePoint Online サイトで高度な規制データを扱うには、デジ�
 - サイトで使用する SharePoint のアクセス許可レベルそれぞれのアクセス グループを作成してデータを設定する。
 - 独立したチーム サイトを作成して構成する。
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>手順 2: Office 365 保持ラベルの DLP ポリシー向けにサイトを構成する
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>手順 2: Office 365 保持ラベル向けにサイトを構成する
 
 「[Office 365 ラベルと DLP による SharePoint Online ファイルの保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)」の手順を参照しながら、以下を実行します。
 

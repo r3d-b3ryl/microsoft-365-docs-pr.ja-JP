@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
-ms.openlocfilehash: 744c1822331c71e718007105f58d1bc64b3c70df
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369654"
+ms.locfileid: "37376132"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -34,9 +34,9 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 
 ### <a name="ediscovery"></a>電子情報開示
 
-[一般的な電子情報開示の問題を調査、トラブルシューティング、および解決](ediscovery-troubleshooting-common-issues.md)する (新)<br> 電子情報開示の検索中に発生する可能性のある問題を特定して解決するために実行できる基本的なトラブルシューティング手順と、電子情報開示プロセスの他の場所について説明します。
+[一般的な電子情報開示の問題を調査、トラブルシューティング、および解決](ediscovery-troubleshooting-common-issues.md)する (新)<br> 電子情報開示の検索中に発生する可能性のある問題を特定して解決するために実行できる基本的なトラブルシューティングの手順について説明します。
 
-###<a name="supervision"></a>マネージ
+### <a name="supervision"></a>マネージ
 
 [組織の監督ポリシーを構成する](configure-supervision-policies.md)(更新)<br>Outlook を使用してレビューを実行することに関する詳細を削除しました。 代わりに、監督ユーザーインターフェイスで使用可能なレビューとタグのオプションを使用します。
 

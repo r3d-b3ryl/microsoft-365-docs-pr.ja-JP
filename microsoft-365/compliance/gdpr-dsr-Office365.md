@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2559734241a8b30ec43b26fb0b096faba18138b9
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778152"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071496"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr"></a>GDPR のための Office 365 データ主体要求
 
@@ -97,7 +97,7 @@ DSR 要求への対応時には、DSR 要求の対象であるデータが Micro
 | ![Excel アイコン](media/o365-excel-64x64.png) <br> Excel | ![Skype for Business アイコン](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
 | ![Office Lens アイコン](media/o365-lens-64x64.png) <br> Office Lens | ![タスク アイコン](media/O365-DSR-Doc-Final_image8.png) <br> タスク |
 | ![OneDrive アイコン](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams アイコン](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote アイコン](media/o365-onenote-64x64.png) <br> OneNote| ![To Do アイコン](media/o365-todo-64x64.png) <br> To Do |
+| ![OneNote アイコン](media/o365-onenote-64x64.png) <br> OneNote| ![To do アイコン](media/o365-todo-64x64.png) <br> やるべきこと |
 | ![Outlook アイコン](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![ビデオ アイコン](media/O365-DSR-Doc-Final_image14.png) <br> ビデオ |
 | ![People アイコン](media/O365-DSR-Doc-Final_image15.png) <br> People | ![Visio アイコン](media/o365-visio-64x64.png) <br> Visio |
 | ![PowerPoint アイコン](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word アイコン](media/o365-word-64x64.png) <br> Word
@@ -112,7 +112,7 @@ DSR に対応するための最初のステップは、DSR の対象となる個
 
 前述したように、Microsoft では組織のデータの 90% 以上が Word や Excel などの Office アプリケーションで作成されていると推定しています。これは、ほとんどの DSR 関連データをセキュリティ/コンプライアンス センターのコンテンツ検索を使用して検索できることを意味します。
 
-このガイドは、DSR 要求に対応する可能性がある個人データを検索するユーザーがセキュリティ/コンプライアンス センターのコンテンツ検索ツールに精通していることを前提としています。コンテンツ検索の使用に関する一般的なガイダンスについては、「[Office 365 でのコンテンツの検索](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)」を参照してください。検索を実行しているユーザーにセキュリティ/コンプライアンス センターで必要なアクセス許可が割り当てられていることを確認してください。このユーザーは、セキュリティ/コンプライアンス センターで電子情報開示マネージャー役割グループのメンバーとして追加する必要があります。「[Office 365 セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)」を参照してください。DSR の調査に携わっている組織内の他のユーザーを、電子情報開示マネージャー役割グループに追加することを検討してください。そうすることにより、検索結果のプレビューやエクスポートなど、コンテンツ検索ツールで必要な操作を実行できます。ただし、コンプライアンスの境界 ([ここ](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)を参照) を設定しない限り、電子情報開示マネージャーは組織内のすべてのコンテンツの場所を検索できます。これには DSR の調査に関連しない可能性があるコンテンツも含まれます。
+このガイドは、DSR 要求に対応する可能性がある個人データを検索するユーザーがセキュリティ/コンプライアンス センターのコンテンツ検索ツールに精通していることを前提としています。コンテンツ検索の使用に関する一般的なガイダンスについては、「[Office 365 でのコンテンツの検索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)」を参照してください。検索を実行しているユーザーにセキュリティ/コンプライアンス センターで必要なアクセス許可が割り当てられていることを確認してください。このユーザーは、セキュリティ/コンプライアンス センターで電子情報開示マネージャー役割グループのメンバーとして追加する必要があります。「[Office 365 セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)」を参照してください。DSR の調査に携わっている組織内の他のユーザーを、電子情報開示マネージャー役割グループに追加することを検討してください。そうすることにより、検索結果のプレビューやエクスポートなど、コンテンツ検索ツールで必要な操作を実行できます。ただし、コンプライアンスの境界 ([ここ](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)を参照) を設定しない限り、電子情報開示マネージャーは組織内のすべてのコンテンツの場所を検索できます。これには DSR の調査に関連しない可能性があるコンテンツも含まれます。
 
 データが見つかったら、データ主体の要求に対応するために特定の操作を実行できます。
 
@@ -159,7 +159,7 @@ DSR に対応するための最初のステップは、DSR の対象となる個
 | :--- | :--- |:--- |
 |**条件**|**説明** |**条件値の例**|
 | ファイルの種類 | ドキュメントまたはファイルの拡張子。 Office 365 アプリケーションで作成された Office ドキュメントとファイルを検索する場合は、この条件を使用します。 この条件は、SharePoint Online サイトと OneDrive for Business アカウントにあるドキュメントを検索する場合にも使用します。<br/>対応するドキュメントのプロパティはファイルの種類です。 <br/>検索可能なファイル拡張子の完全なリストについては、「SharePoint での既定のクロール対象ファイル名拡張子および解析対象ファイルの種類」(https://technet.microsoft.com/library/jj219530.aspx)) を参照してください。|&nbsp;&bull;&nbsp;&nbsp;csv – コンマ区切り値 (CSV) ファイルを検索。Excel ファイルは CSV 形式で保存できます。CSV ファイルは簡単に Excel にインポートできます<br><br>&bull;&nbsp;&nbsp;docx – Word ファイルを検索 <br><br>&bull;&nbsp;&nbsp;mpp – Project ファイルを検索<br/><br>&bull;&nbsp;&nbsp;one – OneNote ファイルを検索 <br><br>&bull;&nbsp;&nbsp;pdf – PDF 形式で保存されたファイルを検索 <br><br>&bull;&nbsp;&nbsp;pptx – PowerPoint ファイルを検索 <br><br>&bull;&nbsp;&nbsp;xlxs – Excel ファイルを検索 <br><br>&bull;&nbsp;&nbsp;vsd – Visio ファイルを検索 <br><br>&bull;&nbsp;&nbsp;wmv – Windows Media ビデオ ファイルを検索 <br>|
-| メッセージの種類 | 検索するメール メッセージの種類。 検索する電子メールメッセージの種類。連絡先 (People)、会議 (予定表) タスク、または Skype for Business の会話をメールボックスで検索するには、この条件を使用します。 対応する電子メールのプロパティは "*種類*" です。|&bull;&nbsp;&nbsp;*contacts – メールボックスの [個人用の連絡先] リスト (People) を検索 <br><br>&bull;&nbsp;&nbsp;* email - メール メッセージを検索 <br><br>&bull;&nbsp;&nbsp;*im - Skype for Business の会話を検索 <br><br>&bull;&nbsp;&nbsp;* meetings - 予定や会議出席依頼 (予定表) を検索 <br><br>&bull;&nbsp;&nbsp;*tasks – [マイ タスク] リスト (タスク) を検索。この値を使用すると、Microsoft To-Do で作成されたタスクも返されます。<br>|
+| メッセージの種類 | 検索するメール メッセージの種類。 検索する電子メールメッセージの種類。連絡先 (People)、会議 (予定表) タスク、または Skype for Business の会話をメールボックスで検索するには、この条件を使用します。 対応する電子メールのプロパティは "*種類*" です。|&bull;&nbsp;&nbsp;*contacts – メールボックスの [個人用の連絡先] リスト (People) を検索 <br><br>&bull;&nbsp;&nbsp;* email - メール メッセージを検索 <br><br>&bull;&nbsp;&nbsp;*im - Skype for Business の会話を検索 <br><br>&bull;&nbsp;&nbsp;* meetings - 予定や会議出席依頼 (予定表) を検索 <br><br>&bull;&nbsp;&nbsp;*tasks – [マイ タスク] リスト (タスク) を検索。この値を使用すると、Microsoft To Do で作成されたタスクも返されます。<br>|
 | コンプライアンス タグ |電子メール メッセージまたはドキュメントに割り当てられたラベル。ラベルは、データ ガバナンスのために電子メールとドキュメントを分類し、ラベルで定義された分類に基づいて保持ルールを適用するために使用されます。この条件を使用して、自動または手動でラベルが割り当てられた項目を検索します。<br/>これは DSR 調査に役立つ条件です。組織がラベルを使用してデータのプライバシーに関連するコンテンツを分類したり、そのコンテンツに個人データや機密情報が含まれていたりする場合があるからです。「[ラベルの概要](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)」の「[コンテンツ検索] を使用して、特定のラベルが適用されているすべてのコンテンツを検索する」を参照してください。|compliancetag="personal data"|
 ||||
 
@@ -215,15 +215,15 @@ pilar@contoso.com AND filetype="xlxs"
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>部分的にインデックスが作成されたアイテムをコンテンツ検索で使用する
 
-部分的にインデックスが作成されたアイテム (*インデックス未作成のアイテム*とも呼ばれます) とは、なんらかの理由で検索用にインデックスが作成されなかった Exchange Online メールボックスのアイテムと SharePoint Online および OneDrive for Business サイトのドキュメントのことです。コンテンツ検索を使用して検索できないコンテンツであることを意味します。 ほとんどの電子メール メッセージとサイト ドキュメントは [Office 365 のインデックス作成の制限](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d?)の範囲内に収まるため、正常にインデックスが作成されます。 電子メール メッセージやファイルが検索用にインデックス作成されない理由には、次が含まれます。
+部分的にインデックスが作成されたアイテム (*インデックス未作成のアイテム*とも呼ばれます) とは、なんらかの理由で検索用にインデックスが作成されなかった Exchange Online メールボックスのアイテムと SharePoint Online および OneDrive for Business サイトのドキュメントのことです。コンテンツ検索を使用して検索できないコンテンツであることを意味します。 ほとんどの電子メール メッセージとサイト ドキュメントは [Office 365 のインデックス作成の制限](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??)の範囲内に収まるため、正常にインデックスが作成されます。 電子メール メッセージやファイルが検索用にインデックス作成されない理由には、次が含まれます。
 
-- ファイルの種類が[認識できないか、インデックス作成でサポートされていない](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)。 ファイルの種類がインデックス作成でサポートされている場合でも、特定のファイルでインデックス作成のエラーが発生することがあります
+- ファイルの種類が[認識できないか、インデックス作成でサポートされていない](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)。 ファイルの種類がインデックス作成でサポートされている場合でも、特定のファイルでインデックス作成のエラーが発生することがあります
 - 電子メール メッセージに画像ファイルなど、有効なハンドラがない添付ファイルがある (これは電子メール アイテムのインデックス作成が部分的になる最も一般的な原因です)
 - 電子メール メッセージに添付されたファイルが大きすぎるか、添付ファイルが多すぎる
 
 DSR 要求に対応する際に部分的にインデックスが作成されたアイテムを使用するために、これらについて詳細を確認することをお勧めします。詳細については、次の項目を参照してください。
 
-- [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)
+- [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
 - [Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 - [インデックス未作成のアイテムをエクスポートする](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
 
@@ -256,7 +256,7 @@ DSR に関連する個人データを見つけたら、そのデータを見つ�
 - [Office Lens](#office-lens)
 - [OneDrive for Business および SharePoint エクスペリエンスの設定](#onedrive-for-business-and-sharepoint-online-experience-settings)
 - [Microsoft Teams for Education](#microsoft-teams-for-education)
-- [Microsoft To-Do](#microsoft-to-do)
+- [Microsoft To Do](#microsoft-to-do)
 - [Skype for Business](#skype-for-business)
 
 #### <a name="office-lens"></a>Office Lens
@@ -362,9 +362,9 @@ OneNote Class Notebook は、クラス チームの SharePoint Online サイト�
    ```
 6.  コンテンツ検索を再実行します。 検索結果には、クラス チームの Class Notebook のすべての OneNote ファイルが含まれるようになります。
 
-#### <a name="microsoft-to-do"></a>Microsoft To-Do
+#### <a name="microsoft-to-do"></a>Microsoft To Do
 
-Microsoft To-Do のタスク (*To Do* と呼ばれ、*To Do リスト*に保存されます) は、ユーザーの Exchange Online メールボックスにタスクとして保存されます。そのため、To Do の検索、アクセス、削除、およびエクスポートには、コンテンツ検索ツールを使用できます。詳細については、「[Microsoft To-Do のセットアップ](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)」を参照してください。
+Microsoft To Do のタスク（別名 *To Do*、*やるべきことリスト*に保存）は、ユーザーの Exchange Online メールボックスにタスクとして保存されます。 つまり、コンテンツ検索ツールを使用して、To Do を検索、アクセス、削除、およびエクスポートできます。 詳細については「[Microsoft To Do のセットアップ](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)」を参照してください。
 
 #### <a name="skype-for-business"></a>Skype for Business
 
@@ -456,11 +456,11 @@ SharePoint Online および OneDrive for Business からデータをエクスポ
 
 ## <a name="deleting-personal-data"></a>個人データの削除
 
-組織の顧客データからの個人データの削除による「消去の権利」は GDPR における重要な保護の 1 つです。個人データの削除には、ドキュメントやファイル全体の削除、またはドキュメント内やファイル内の特定のデータの削除 (操作と手順は、このガイドの「修正」セクションで説明したものと同様です) が含まれます。
+組織のサポート データからの個人データの削除による「削除する権利」は GDPR における主要な保護の 1 つです。 個人データの削除には、ドキュメントやファイル全体の削除、またはドキュメント内やファイル内の特定のデータの削除 (操作と手順は、このガイドの「修正」セクションで説明したものと同様です) が含まれます。
 
 DSR に対応する個人データの削除の調査または準備を実行する際には、いくつかの重要な事項を理解しておく必要があります。ここでは、Office 365 でのデータの削除 (および保持) がどのように動作するかについて説明します。
 
-- **論理的な削除と物理的な削除 — Office 365 のサービス (Exchange Online、SharePoint Online、OneDrive for Business など) では、*論理的な削除*と*物理的な削除*という概念があります。これらの概念は、削除済みアイテムの回復性 (通常は期限付き) に関係しています。Microsoft のクラウドから完全に削除されると回復の可能性がなくなります。 このコンテキストでは、論理的に削除されたアイテムは、物理的に削除されるまでの一定期間、ユーザーや管理者が回復できます。 アイテムが物理的に削除されると、完全な削除のマークが付けられ、対応する Office 365 サービスによる処理が行われると消去されます。 次に、メールボックス内およびサイト内のアイテムに対して論理的な削除と物理的な削除がどのように作用するかについて説明します (データ所有者と管理者のどちらがアイテムを削除したかは関係ありません)。
+- **論理的な削除と物理的な削除:** Office 365 のサービス (Exchange Online、SharePoint Online、OneDrive for Business など) では、*論理的な削除*と*物理的な削除*という概念があります。これらの概念は、削除済みアイテムの回復性 (通常は期限付き) に関係しています。Microsoft のクラウドから完全に削除されると回復の可能性がなくなります。 このコンテキストでは、論理的に削除されたアイテムは、物理的に削除されるまでの一定期間、ユーザーや管理者が回復できます。 アイテムが物理的に削除されると、完全な削除のマークが付けられ、対応する Office 365 サービスによる処理が行われると消去されます。 次に、メールボックス内およびサイト内のアイテムに対して論理的な削除と物理的な削除がどのように作用するかについて説明します (データ所有者と管理者のどちらがアイテムを削除したかは関係ありません)。
 
     - **メールボックス:** アイテムが [削除済みアイテム] フォルダーから削除されたとき、またはユーザーが **Shift + Delete** キーを押してアイテムを削除したときに、アイテムは論理的に削除されます。 アイテムが論理的に削除されると、そのアイテムはメールボックス内の [回復可能なアイテム] フォルダーに移動されます。 この段階では、削除されたアイテムの保持期間が経過するまで、ユーザーによるアイテムの回復が可能です (Office 365 の場合、削除されたアイテムの保持期間は 14 日間ですが、管理者が 30 日間にまで延長できます)。 保持期間が経過すると、アイテムは物理的に削除され、非表示フォルダー (*[Purges]* フォルダー) に移動されます。 このアイテムは、次回のメールボックスの処理時に Office 365 から完全に削除 (消去) されます (メールボックスは 7 日ごとに処理されます)。
 
@@ -469,7 +469,7 @@ DSR に対応する個人データの削除の調査または準備を実行す�
 > [!NOTE]
 > 論理的または物理的にアイテムが削除される処理を理解することは、削除要求に対応するときに GDPR 要件を満たすようにデータを削除する方法の判断に役立ちます。
 
-- 訴訟ホールドと保持ポリシー — Office 365 では、メールボックスとサイトに対して「ホールド」を実施できます。 簡単に言うと、メールボックスやサイトがホールド状態の場合は、アイテムの保持期間が経過するかホールドが削除されるまで、一切のものが完全に削除 (物理的に削除) されなくなることを意味します。 これは、DSR への対応で顧客コンテンツを削除するというコンテキストで重要な点です。ホールド状態のコンテンツの場所からアイテムが物理的に削除されても、そのアイテムが Office 365 から完全に削除されることはありません。 つまり、IT 管理者によって回復される可能性があることを意味します。DSR への対応で Office 365 のデータを完全に削除して回復不可能にするという要件またはポリシーが組織にある場合は、メールボックスまたはサイトからホールドを削除して、Office 365 のデータを完全に削除する必要があります。 ほとんどの場合、組織が DSR に対応する際のガイドラインには、特定の DSR 削除要求と訴訟ホールドのどちらが優先されるかを判断するためのプロセスがあります。 アイテムの削除のためにホールドを削除した場合、そのホールドはアイテムの削除後に再実施できます。
+- **訴訟ホールドと保持ポリシー:** Office 365 では、メールボックスとサイトに対して「ホールド」を実施できます。 簡単に言うと、メールボックスやサイトがホールド状態の場合は、アイテムの保持期間が経過するかホールドが削除されるまで、一切のものが完全に削除 (物理的に削除) されなくなることを意味します。 これは、DSR への対応で顧客コンテンツを削除するというコンテキストで重要な点です。ホールド状態のコンテンツの場所からアイテムが物理的に削除されても、そのアイテムが Office 365 から完全に削除されることはありません。 つまり、IT 管理者によって回復される可能性があることを意味します。DSR への対応で Office 365 のデータを完全に削除して回復不可能にするという要件またはポリシーが組織にある場合は、メールボックスまたはサイトからホールドを削除して、Office 365 のデータを完全に削除する必要があります。 ほとんどの場合、組織が DSR に対応する際のガイドラインには、特定の DSR 削除要求と訴訟ホールドのどちらが優先されるかを判断するためのプロセスがあります。 アイテムの削除のためにホールドを削除した場合、そのホールドはアイテムの削除後に再実施できます。
 
 ### <a name="deleting-documents-in-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online および OneDrive for Business のドキュメントを削除する
 
@@ -1023,7 +1023,7 @@ Kaizala 管理者は、Kaizala 管理ポータルで Kaizala ユーザーのア�
 
 #### <a name="discover"></a>検索
 
-Planner の計画は、Office 365 グループに関連付けられ、Office 365 グループのファイルはグループに関連付けられた SharePoint Online サイトに保存されます。 そのため、Planner のファイルはコンテンツ検索を使用して、Office 365 グループのサイトを検索することで見つけることができます。 これを実行するには、Office 365 グループの URL が必要になります。 Office 365 グループに関する情報の取得に関するヒントについては、ヘルプ トピック「Office 365 のコンテンツ検索」の「[Microsoft Teams および Office 365 グループの検索](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)」を参照してください。これは、対応する SharePoint Online サイト内の Planner ファイルを検索する際に役立ちます。
+Planner の計画は、Office 365 グループに関連付けられ、Office 365 グループのファイルはグループに関連付けられた SharePoint Online サイトに保存されます。 そのため、Planner のファイルはコンテンツ検索を使用して、Office 365 グループのサイトを検索することで見つけることができます。 これを実行するには、Office 365 グループの URL が必要になります。 Office 365 グループに関する情報の取得に関するヒントについては、ヘルプ トピック「Office 365 のコンテンツ検索」の「[Microsoft Teams および Office 365 グループの検索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)」を参照してください。これは、対応する SharePoint Online サイト内の Planner ファイルを検索する際に役立ちます。
 
 #### <a name="access"></a>Access
 
@@ -1767,7 +1767,7 @@ IT 管理者は、セキュリティ/コンプライアンス センターで監
 - ファイルを移動した
 - ファイルをアップロードまたはダウンロードした
 
-特定のアクティビティ、アクティビティの種類、特定のユーザーが実行したアクティビティ、およびその他の検索基準で監査ログの検索が可能です。 SharePoint Online および OneDrive for Business のアクティビティに加えて、Flow、Power BI、および Microsoft Teams でのアクティビティについても検索できます。 監査レコードは 90 日間保持されます。 そのため、90 日より以前に発生したユーザーのアクティビティは検索できません。 監査対象のアクティビティの完全なリストと監査ログの検索方法については、「[Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)」を参照してください。
+特定のアクティビティ、アクティビティの種類、特定のユーザーが実行したアクティビティ、およびその他の検索基準で監査ログの検索が可能です。 SharePoint Online および OneDrive for Business のアクティビティに加えて、Flow、Power BI、および Microsoft Teams でのアクティビティについても検索できます。 監査レコードは 90 日間保持されます。 そのため、90 日より以前に発生したユーザーのアクティビティは検索できません。 監査対象のアクティビティの完全なリストと監査ログの検索方法については、「[Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 
 > [!TIP]
 > 上記の 90 日間の制限を回避して、組織の監査レコードの実行履歴を維持するには、定期的なスケジュールで (たとえば、30 日ごとに) すべてのアクティビティをエクスポートして、組織の監査レコードの継続的な記録を保持するようにします。

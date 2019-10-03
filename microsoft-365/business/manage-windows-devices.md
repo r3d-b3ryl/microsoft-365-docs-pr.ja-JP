@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Microsoft 365 を有効にして、ローカルの AD に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: d1dbfc6a35d54db653ae0f911fad05ac2ce0a993
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 452e884f952a4b2c2e87148bb7203ed48a48d944
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288037"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37376097"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする
 
@@ -37,9 +37,9 @@ ms.locfileid: "37288037"
 
 ローカル Active Directory ドメインからユーザーとコンピューターを同期する前に、「 [Office 365 へのディレクトリ同期の準備](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)」を参照してください。 特に次のようになります。
 
-   - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail**、 **ProxyAddresses**、および**userPrincipalName**。 これらの値は一意である必要があります。また、重複を削除する必要があります。
+   - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail**、 **ProxyAddresses**、および**userPrincipalName**。 これらの値は一意である必要があり、重複がある場合は削除する必要があります。
    
-   - 各ローカルユーザーアカウントの**userPrincipalName** (UPN) 属性は、ライセンスが付与された Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 たとえば、 *shelley @<span>contoso というよう<span>にします。* *mary @ contoso*ではなく、com
+   - 各ローカルユーザーアカウントの**userPrincipalName** (UPN) 属性は、ライセンスが付与された Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 たとえば、 *mary @ contoso*という*mary.shelley@contoso.com*ではなく、
    
    - Active Directory ドメインが、 *.com*または *.org*などのインターネットでルーティング可能なサフィックスではなく、*ローカル*のサフィックスまたは*lan*などのルーティングできないサフィックスで終わっている場合は、まず、次に示すように、最初にローカルユーザーアカウントの UPN サフィックスを調整する必要があります。[ルーティング不能なドメインをディレクトリ同期用に準備](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)します。 
 

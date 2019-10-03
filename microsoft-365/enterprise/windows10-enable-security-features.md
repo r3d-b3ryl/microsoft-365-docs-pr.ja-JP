@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 5f1b505238a6a508753fc6a89957310c31001301
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 0f7b4ddec9c52861b4ecf4a7e86831efcce402d6
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982628"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370264"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>手順 5: Windows 10 Enterprise のセキュリティ機能を展開する
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 では、エンタープライズユーザーの保護、脅威の停止、データ損失の防止のためのセキュリティ機能が提供されています。 
 

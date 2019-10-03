@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 5deae85ae614079c23a373d4ecae7ce81aeb3fcd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071776"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370244"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>手順 1: Windows 10 Enterprise を組織で展開するための準備
 
 *この記事は、Microsoft 365 Enterprise の E3 および E5 の両バージョンに適用されます*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 デバイスを Windows 10 Enterprise にアップグレードする前に、以下のことを検討してください:
 
@@ -62,7 +62,7 @@ Windows 診断データの詳細と、選択した方法に基づいて有効に
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [インプレース アップグレードによる Windows 10 Enterprise の既存デバイスへの展開](windows10-deploy-inplaceupgrade.md) |
+|![リスト 1 のテキスト](./media/stepnumbers/Step2.png)| [インプレース アップグレードによる Windows 10 Enterprise の既存デバイスへの展開](windows10-deploy-inplaceupgrade.md) |
 
 
 

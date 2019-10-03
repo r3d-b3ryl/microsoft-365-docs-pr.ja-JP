@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289401"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370094"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>手順 4: デバイスの正常性とコンプライアンスの監視
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics は、診断データを使用して高度で実践的な情報を提供し、環境内の Windows 10 デバイスの運用効率と正常性の詳細な分析情報を把握するのに役立ちます。
 
@@ -33,4 +33,4 @@ Windows Analytics のデバイスの正常性の機能は、エンド ユーザ�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Windows 10 Enterprise のセキュリティ機能を展開する](windows10-enable-security-features.md) |
+|![ステップ 5](./media/stepnumbers/Step5.png)| [Windows 10 Enterprise のセキュリティ機能を展開する](windows10-enable-security-features.md) |

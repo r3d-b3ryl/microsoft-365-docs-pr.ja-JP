@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289257"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370284"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>手順 3: Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する
 
 *この記事は、Microsoft 365 Enterprise の E3 および E5 の両バージョンに適用されます*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 新しい Windows 10 PC では、Windows Autopilot を使用して、組織の OOBE (out-of-box-experience) をカスタマイズし、すでに構成されているアプリや設定を使用して新しいシステムを展開できます。イメージの展開や挿入するドライバー、管理するインフラストラクチャはありません。各ユーザーは IT 管理者に問い合わせる必要なく、展開プロセスを個別に実行することができます。
 
@@ -104,7 +104,7 @@ Azure AD で、デバイスの同期状態を確認し、デバイス上で Micr
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [デバイスの正常性とコンプライアンスを監視する](windows10-enable-windows-analytics.md) |
+|![手順 4](./media/stepnumbers/Step4.png)| [デバイスの正常性とコンプライアンスを監視する](windows10-enable-windows-analytics.md) |
 
 
 
