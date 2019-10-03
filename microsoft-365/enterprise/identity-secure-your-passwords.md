@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体でパスワードを強力かつ管理しやすいものにする必要があります。
-ms.openlocfilehash: 06d936a68432b55912b1c10839336dc94e698f51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086410"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370404"
 ---
 # <a name="step-2-secure-your-passwords"></a>手順 2: パスワードをセキュリティで保護する
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>脆弱なパスワードを防止する
@@ -98,4 +98,4 @@ Microsoft 365 Enterprise では、サイン ページと [アクセス パネル
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [ユーザーのサインインをセキュリティで保護して管理する](identity-secure-user-sign-ins.md) |
+|![手順 3](./media/stepnumbers/Step3.png)| [ユーザーのサインインをセキュリティで保護して管理する](identity-secure-user-sign-ins.md) |

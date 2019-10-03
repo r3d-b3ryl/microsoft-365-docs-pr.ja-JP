@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の ID インフラストラクチャを展開する手順。
-ms.openlocfilehash: 2d9ffcc5122b5a5dfc94fb007167655e879d6799
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb5b714afcacd1e21951ec9f83fd7f09cbd88662
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071696"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370444"
 ---
 # <a name="phase-2-identity"></a>フェーズ 2: ID
 
-![](./media/deploy-foundation-infrastructure/identity_icon.png)
+![フェーズ 2: ID](./media/deploy-foundation-infrastructure/identity_icon.png)
 
 Microsoft 365 enterprise では、ID インフラストラクチャを入念に計画および実施することで、セキュリティを強化し、認証されたユーザーとデバイスだけが生産性ワークロードとそのデータにアクセスできるようにする準備が整います。
 
@@ -50,12 +50,12 @@ Microsoft 365 Enterprise の ID モデルと認証の概要については、こ
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [グローバル管理者アカウントを作成して保護する](identity-create-protect-global-admins.md) |
-|![](./media/stepnumbers/Step2.png)| [パスワードをセキュリティで保護する](identity-secure-your-passwords.md) |
-|![](./media/stepnumbers/Step3.png)| [ユーザーのサインインをセキュリティで保護して管理する](identity-secure-user-sign-ins.md) |
-|![](./media/stepnumbers/Step4.png)| [ユーザー アカウントを追加する](identity-add-user-accounts.md) |
-|![](./media/stepnumbers/Step5.png)| [管理にグループを使用する](identity-use-group-management.md) |
-|![](./media/stepnumbers/Step6.png)| [identity governance を設定する](identity-configure-identity-governance.md) |
+|![手順 1](./media/stepnumbers/Step1.png)| [グローバル管理者アカウントを作成して保護する](identity-create-protect-global-admins.md) |
+|![手順 2](./media/stepnumbers/Step2.png)| [パスワードをセキュリティで保護する](identity-secure-your-passwords.md) |
+|![手順 3](./media/stepnumbers/Step3.png)| [ユーザーのサインインをセキュリティで保護して管理する](identity-secure-user-sign-ins.md) |
+|![手順 4](./media/stepnumbers/Step4.png)| [ユーザー アカウントを追加する](identity-add-user-accounts.md) |
+|![手順 5](./media/stepnumbers/Step5.png)| [管理にグループを使用する](identity-use-group-management.md) |
+|![手順 6](./media/stepnumbers/Step6.png)| [Identity Governance を構成する](identity-configure-identity-governance.md) |
 
 上記の手順が完了したら、このフェーズの[終了条件](identity-exit-criteria.md)を参照し、Microsoft 365 Enterprise ID の必須条件とオプションの条件を満たしていることを確認します。
 
@@ -74,11 +74,11 @@ Microsoft の IT エキスパートが [ID を管理し、アクセスをセキ�
 
 架空の典型的な多国籍企業である Contoso Corporation が、Microsoft 365 のクラウド サービス向けに[ハイブリッド ID インフラストラクチャを展開](contoso-identity.md)した方法をご紹介します。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](./media/contoso-overview/contoso-icon.png)
 
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [グローバル管理者アカウントを作成して保護する](identity-create-protect-global-admins.md) |
+|![手順 1](./media/stepnumbers/Step1.png)| [グローバル管理者アカウントを作成して保護する](identity-create-protect-global-admins.md) |

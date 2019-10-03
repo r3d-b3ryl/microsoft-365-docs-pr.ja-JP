@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: 6446e73f79a3dd92d60fa3299e6007e1a5a3fdeb
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329214"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369428"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -42,12 +42,9 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 
 Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオを次に示します。
 
-![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオ](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://www.microsoft.com/microsoft-365/success/)」を参照してください。 
-
-1. この Web ページで、検索文字列を入力するか、[**フィルター**] をクリックして、Microsoft 365 内の業界、役割 (部署)、および製品を指定します。
-2. 結果からカードをクリックすると、開始するための手順を確認できます。
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基盤インフラストラクチャの前提条件
 

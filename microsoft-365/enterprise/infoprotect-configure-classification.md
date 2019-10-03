@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内のデータを分類するさまざまな方法について理解し、構成します。
-ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047300"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370414"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>手順 2: 環境の分類を構成する
 
-*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 この手順では、法務/コンプライアンス チームと連携して組織のデータの分類方法を定義します。
 
@@ -109,5 +109,5 @@ GDPR の個人データを含む分類スキーマの例については、「[�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[Office 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
+|![手順 3](./media/stepnumbers/Step3.png)|[Office 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
 

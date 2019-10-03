@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Azure AD テナントの Identity Governance を理解し、構成します。
-ms.openlocfilehash: 7ba54db29335f4f8f6eefff0cafbdefe3c522d7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3bc0872eefa71288d25ce83ebb8f3c51d8959678
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086413"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370384"
 ---
 # <a name="step-7-configure-identity-governance"></a>手順 7: Identity Governance を構成する
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 Identity Governance とは、従業員の生産性を確保するのに重要な資産へのアクセスを保護、監視、監査することです。 たとえば、Identity Governance を使用すると、適切なユーザーが正しいリソースにアクセスできるようになり、時間の経過と共にアクセス権が変更されたかどうかを判断できます。
 

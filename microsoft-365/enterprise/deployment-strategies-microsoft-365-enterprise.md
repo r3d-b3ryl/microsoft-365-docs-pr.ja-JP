@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基盤インフラストラクチャの各フェーズを展開するいくつかの方法を説明します。
-ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148501"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369438"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 Enterprise の基盤インフラストラクチャの展開戦略
 
@@ -51,7 +51,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 この資料では、次の図を使用して、これらの定義を示します。 
 
-![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![パイロットおよびユーザー ロールアウトの定義を示すグラフィックス](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 ユーザー ロールアウトの図の網かけは、グループ、部門、地域などの構造化または系統的アプローチを使用する、組織全体におけるパーセンテージ (0% から 100%) を示します。
 
@@ -76,7 +76,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 次のガント チャートでは、Microsoft 365 Enterprise の基盤インフラストラクチャのフェーズ 2 から 6 の簡略化された順次展開を示しています。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![基盤インフラストラクチャのフェーズ 2 から 6 のシリアル展開](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 説明と例を簡単にするために、各フェーズと、各フェーズ内の展開セグメントは、同じ時間がかかると想定しています。
 
@@ -86,20 +86,20 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 例として、簡素化されたパイロット ユーザー エクスペリエンスを次に示します。
 
-- 12 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
+- 12 月に、MFA 用にスマート フォンを使用する必要があります。 (ユーザー情報)
 - 3 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
 - 6 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
-- 9 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。(モバイル デバイス管理)
+- 9 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 12 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
 結果は、連続するパイロット ロールアウトの間で 90 日間の間隔になります。
 
 例として、簡素化されたエンドユーザー エクスペリエンスを次に示します。
 
-- 1 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
+- 1 月に、MFA 用にスマート フォンを使用する必要があります。 (ユーザー情報)
 - 4 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
 - 7 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
-- 10 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。(モバイル デバイス管理)
+- 10 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 翌年の 1 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
 結果は、連続するユーザー ロールアウトの間で 90 日間の間隔になります。
@@ -110,7 +110,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 この展開戦略では、ユーザー ロールアウトの現在のフェーズの最後の部分の間に、次のフェーズのパイロット ロールアウトを開始します。前のフェーズのユーザー ロールアウトと重なる形でパイロット ロールアウトが発生する場合の、フェーズ 2 から 6 の展開を以下に示します。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![ユーザー ロールアウトが重複しないフェーズ 2 から 6 の並列展開](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 最終結果としては、次のフェーズが始まる前に、組織全体で現在のフェーズのユーザー ロールアウトが完了します。パイロット ロールアウトに含まれないユーザーは、同時に複数のフェーズのロールアウトで処理されることはありませんが、パイロット ロールアウトはユーザー ロールアウトと並行して処理されます。
 
@@ -145,7 +145,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 各種の展開戦略の簡単な比較を示します。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![ユーザー ロールアウトが重複するフェーズ 2 から 6 の並列展開](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 最終結果は次のようになります。
 
@@ -172,13 +172,13 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 結果は、連続するユーザー ロールアウトの間で 30 日間の間隔になります。
 
-この展開戦略の利点は、Microsoft 365 Enterprise の基盤インフラストラクチャを完全に展開するのにかかる時間がさらに短くなることです。ユーザーが同時に複数のロールアウトに対処することも求められません。 ただし、ユーザーは連続するフェーズ間で休みを取ることはできません。
+この展開戦略の利点は、Microsoft 365 Enterprise の基盤インフラストラクチャを完全に展開するのにかかる時間がさらに短くなることです。ユーザーが同時に複数のロールアウトに対処することも求められません。 ただし、ユーザーは連続するフェーズ間で休憩を取ることはできません。
 
-### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>事前のインフラストラクチャとエンド ツー エンド構成のロールアウト
+### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>事前のインフラストラクチャとエンド ツー エンド構成のロールアウト
 
-フェーズ 2 から 6 を 1 つの展開セグメントに圧縮することができる、小規模な組織の場合には、結果の展開は次のようになります。
+フェーズ 2 から 6 を 1 つの展開セグメントに圧縮することができる、小規模な組織の場合、結果の展開は次のようになります。
  
-![](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![事前のインフラストラクチャとエンド ツー エンド構成のロールアウト](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 IT 部門はフェーズ 2 から 6 のインフラストラクチャを構成してから、エンド ツー エンド機能を確認するためにパイロット ユーザーにロールアウトします。たとえば、パイロット ユーザーは以下のすべての機能を同時に取得します。
 

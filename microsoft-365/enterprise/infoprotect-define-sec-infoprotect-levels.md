@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のセキュリティおよび情報保護のレベルについて理解し、構成します。
-ms.openlocfilehash: a216079e38b173a8b35c49317a072975b0c7f36e
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047260"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370394"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>手順 1: セキュリティおよび情報保護のレベルを定義する
 
 *この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 この手順では、組織のセキュリティと保護のレベルを定義します。 たとえば、営業部門には必要なセキュリティ レベルは低い可能性があります。 一方で研究部門とその貴重な知的財産には、ファイルを暗号化し研究員だけにアクセスを制限する高いセキュリティ レベルが必要かもしれません。
 
@@ -42,4 +42,4 @@ ms.locfileid: "37047260"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[環境のデータ分類方法を構成する](infoprotect-configure-classification.md)|
+|![手順 2](./media/stepnumbers/Step2.png)|[環境のデータ分類方法を構成する](infoprotect-configure-classification.md)|
