@@ -13,55 +13,55 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の情報保護インフラストラクチャの展開手順。
-ms.openlocfilehash: 3174790d1ee6c9ed05605dd1c3c75405e3eac42b
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047310"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370454"
 ---
-# <a name="phase-6-information-protection"></a><span data-ttu-id="1e14f-103">フェーズ 6: 情報保護</span><span class="sxs-lookup"><span data-stu-id="1e14f-103">Phase 6: Information protection</span></span>
+# <a name="phase-6-information-protection"></a><span data-ttu-id="75f83-103">フェーズ 6: 情報保護</span><span class="sxs-lookup"><span data-stu-id="75f83-103">Phase 6: Information protection</span></span>
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-<span data-ttu-id="1e14f-p101">情報保護は、機密情報を送信、保存、処理する方法を定義するポリシーとテクノロジの集合です。フェーズ 6 では、クラウドベースのワークロードとシナリオのデータの保護に役立つ Microsoft 365 Enterprise の情報保護の設定と機能について、順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="1e14f-p101">Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads and scenarios.</span></span>
+<span data-ttu-id="75f83-p101">情報保護は、機密情報を送信、保存、処理する方法を定義するポリシーとテクノロジの集合です。フェーズ 6 では、クラウドベースのワークロードとシナリオのデータの保護に役立つ Microsoft 365 Enterprise の情報保護の設定と機能について、順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="75f83-p101">Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads and scenarios.</span></span>
 
 >[!Note]
-><span data-ttu-id="1e14f-106">既に情報保護を展開している場合は、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="1e14f-106">If you already have already deployed information protection, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+><span data-ttu-id="75f83-107">既に情報保護を展開している場合は、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="75f83-107">If you already have already deployed information protection, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
 >
 
-## <a name="plan-and-deploy-your-microsoft-365-enterprise-information-protection-infrastructure"></a><span data-ttu-id="1e14f-107">Microsoft 365 Enterprise の情報保護インフラストラクチャを計画および展開する</span><span class="sxs-lookup"><span data-stu-id="1e14f-107">Plan and deploy your Microsoft 365 Enterprise information protection infrastructure</span></span> 
+## <a name="plan-and-deploy-your-microsoft-365-enterprise-information-protection-infrastructure"></a><span data-ttu-id="75f83-108">Microsoft 365 Enterprise の情報保護インフラストラクチャを計画および展開する</span><span class="sxs-lookup"><span data-stu-id="75f83-108">Plan and deploy your Microsoft 365 Enterprise information protection infrastructure</span></span> 
 
-<span data-ttu-id="1e14f-p102">法務/コンプライアンス チームと連携して、組織がコンプライアンス標準 (HIPPA、CJIS、GDPR など) に準拠する必要があるかどうかを判別することが重要です。また、セキュリティ グループと連携して、組織の情報保護の目標、およびセキュリティを強化する必要がある部門やグループの情報保護目標を決定する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="1e14f-p102">It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.</span></span>
+<span data-ttu-id="75f83-p102">法務/コンプライアンス チームと連携して、組織がコンプライアンス標準 (HIPPA、CJIS、GDPR など) に準拠する必要があるかどうかを判別することが重要です。また、セキュリティ グループと連携して、組織の情報保護の目標、およびセキュリティを強化する必要がある部門やグループの情報保護目標を決定する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="75f83-p102">It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.</span></span>
 
-<span data-ttu-id="1e14f-110">次に、以下の手順に従って Microsoft 365 Enterprise の情報保護を形成します。</span><span class="sxs-lookup"><span data-stu-id="1e14f-110">Next, use the following steps to build out information protection for Microsoft 365 Enterprise.</span></span>
-
-|||
-|:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[<span data-ttu-id="1e14f-111">セキュリティおよび情報保護のレベルを定義する</span><span class="sxs-lookup"><span data-stu-id="1e14f-111">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
-|![](./media/stepnumbers/Step2.png)|[<span data-ttu-id="1e14f-112">環境のデータ分類方法を構成する</span><span class="sxs-lookup"><span data-stu-id="1e14f-112">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
-|![](./media/stepnumbers/Step3.png)|[<span data-ttu-id="1e14f-113">Microsoft 365 のセキュリティ強化を構成する</span><span class="sxs-lookup"><span data-stu-id="1e14f-113">Configure increased security for Microsoft 365</span></span>](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[<span data-ttu-id="1e14f-114">Windows 情報保護を構成する</span><span class="sxs-lookup"><span data-stu-id="1e14f-114">Configure Windows Information Protection</span></span>](infoprotect-deploy-windows-information-protection.md)|
-|![](./media/stepnumbers/Step5.png)|[<span data-ttu-id="1e14f-115">Office 365 データ損失防止を構成する</span><span class="sxs-lookup"><span data-stu-id="1e14f-115">Configure Office 365 Data Loss Prevention</span></span>](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[<span data-ttu-id="1e14f-116">電子メールの暗号化を構成する</span><span class="sxs-lookup"><span data-stu-id="1e14f-116">Configure email encryption</span></span>](infoprotect-email-encryption.md)|
-|![](./media/stepnumbers/Step7.png)|[<span data-ttu-id="1e14f-117">Office 365 の特権アクセス管理を構成する</span><span class="sxs-lookup"><span data-stu-id="1e14f-117">Configure privileged access management for Office 365</span></span>](infoprotect-configure-privileged-access-management.md)|
-|||
-
-<span data-ttu-id="1e14f-118">上記の手順が完了したら、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="1e14f-118">When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
-
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="1e14f-119">Microsoft での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="1e14f-119">How Microsoft does Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="1e14f-120">Microsoft の IT エキスパートが [Azure Information Protection を使用してデータを保護](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR9)する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1e14f-120">Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span></span>
-
-## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="1e14f-121">Contoso 社での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="1e14f-121">How Contoso did Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="1e14f-122">架空の典型的な多国籍企業である Contoso Corporation での、Microsoft 365 クラウド サービスによる[情報保護の実装](contoso-info-protect.md)方法を確認します。</span><span class="sxs-lookup"><span data-stu-id="1e14f-122">See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.</span></span>
-
-![](./media/contoso-overview/contoso-icon.png)
-
-## <a name="next-step"></a><span data-ttu-id="1e14f-123">次の手順</span><span class="sxs-lookup"><span data-stu-id="1e14f-123">Next step</span></span>
+<span data-ttu-id="75f83-111">次に、以下の手順に従って Microsoft 365 Enterprise の情報保護を形成します。</span><span class="sxs-lookup"><span data-stu-id="75f83-111">Next, use the following steps to build out information protection for Microsoft 365 Enterprise.</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[<span data-ttu-id="1e14f-124">セキュリティおよび情報保護のレベルを定義する</span><span class="sxs-lookup"><span data-stu-id="1e14f-124">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
+|![手順 1](./media/stepnumbers/Step1.png)|[<span data-ttu-id="75f83-113">セキュリティおよび情報保護のレベルを定義する</span><span class="sxs-lookup"><span data-stu-id="75f83-113">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
+|![手順 2](./media/stepnumbers/Step2.png)|[<span data-ttu-id="75f83-115">環境のデータ分類を構成する</span><span class="sxs-lookup"><span data-stu-id="75f83-115">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
+|![手順 3](./media/stepnumbers/Step3.png)|[<span data-ttu-id="75f83-117">Microsoft 365 のセキュリティ強化を構成する</span><span class="sxs-lookup"><span data-stu-id="75f83-117">Configure increased security for Microsoft 365</span></span>](infoprotect-configure-increased-security-office-365.md)|
+|![手順 4](./media/stepnumbers/Step4.png)|[<span data-ttu-id="75f83-119">Windows 情報保護を構成する</span><span class="sxs-lookup"><span data-stu-id="75f83-119">Configure Windows Information Protection</span></span>](infoprotect-deploy-windows-information-protection.md)|
+|![手順 5](./media/stepnumbers/Step5.png)|[<span data-ttu-id="75f83-121">Office 365 データ損失防止を構成する</span><span class="sxs-lookup"><span data-stu-id="75f83-121">Configure Office 365 Data Loss Prevention</span></span>](infoprotect-data-loss-prevention.md)|
+|![手順 6](./media/stepnumbers/Step6.png)|[<span data-ttu-id="75f83-123">電子メールの暗号化を構成する</span><span class="sxs-lookup"><span data-stu-id="75f83-123">Step 6: Configure email encryption</span></span>](infoprotect-email-encryption.md)|
+|![手順 7](./media/stepnumbers/Step7.png)|[<span data-ttu-id="75f83-125">Office 365 の特権アクセス管理を構成する</span><span class="sxs-lookup"><span data-stu-id="75f83-125">Configure privileged access management for Office 365</span></span>](infoprotect-configure-privileged-access-management.md)|
+|||
+
+<span data-ttu-id="75f83-126">上記の手順が完了したら、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="75f83-126">When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="75f83-127">Microsoft での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="75f83-127">How Microsoft does Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="75f83-128">Microsoft の IT エキスパートが [Azure Information Protection を使用してデータを保護](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR9)する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="75f83-128">Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span></span>
+
+## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="75f83-129">Contoso 社での Microsoft 365 Enterprise の活用方法</span><span class="sxs-lookup"><span data-stu-id="75f83-129">How Contoso did Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="75f83-130">架空の典型的な多国籍企業である Contoso Corporation での、Microsoft 365 クラウド サービスによる[情報保護の実装](contoso-info-protect.md)方法を確認します。</span><span class="sxs-lookup"><span data-stu-id="75f83-130">See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.</span></span>
+
+![Contoso 社](./media/contoso-overview/contoso-icon.png)
+
+## <a name="next-step"></a><span data-ttu-id="75f83-132">次の手順</span><span class="sxs-lookup"><span data-stu-id="75f83-132">Next step</span></span>
+
+|||
+|:-------|:-----|
+|![手順 1](./media/stepnumbers/Step1.png)|[<span data-ttu-id="75f83-134">セキュリティおよび情報保護のレベルを定義する</span><span class="sxs-lookup"><span data-stu-id="75f83-134">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
 
