@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050278"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369538"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
@@ -65,7 +65,7 @@ Microsoft 365 Enterprise を自分で展開するには:
 
 ここに、基礎インフラストラクチャーとワークロードとシナリオの関係性を示します。
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![基礎インフラストラクチャーとワークロードとシナリオの関係性](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 ワークロードとシナリオは、基礎インフラストラクチャー上で運用します。 ただし、生産性と共同作業の向上のためにワークロードを使用するのにすべての基礎インフラストラクチャー フェーズを満たす必要はありません。
 
