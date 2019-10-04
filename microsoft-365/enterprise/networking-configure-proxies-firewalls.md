@@ -3,7 +3,7 @@ title: '手順 4: トラフィック バイパスを構成する'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Office 365 が稼働している信頼できる場所にトラフィックをバイパスするのに必要となる Web ブラウザーとエッジ デバイスについて理解し、構成します。
-ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
-ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
+ms.openlocfilehash: 32aa2216856d5a519fddb55701be745a9dacbd87
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36999041"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370144"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>手順 4: トラフィック バイパスを構成する
 
 *この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-一般的なインターネット トラフィックにはリスクがあるため、組織のネットワークでは、通常、プロキシ サーバー、SSL 中断/検査、パケット検査デバイス、およびデータ損失防止システムのようなエッジ デバイスを使用して、セキュリティを適用します。ネットワーク傍受デバイスに関する問題については、「Office 365 トラフィックにサードパーティのネットワーク デバイスまたはソリューションを使用する」を参照してください。
+一般的なインターネット トラフィックにはリスクがあるため、標準的な組織のネットワークでは、プロキシ サーバー、SSL 中断/検査、パケット検査デバイス、およびデータ損失防止システムのようなエッジ デバイスを使用して、セキュリティを強化します。 ネットワーク傍受デバイスに関する問題については、「[Office 365 トラフィックにサードパーティのネットワーク デバイスまたはソリューションを使用する](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)」を参照してください。
 
 ただし、Microsoft 365 のクラウドベース サービスで使用する DNS ドメイン名と IP アドレスはよく知られている上に、トラフィックとサービスは多くのセキュリティ機能で保護されています。この種のセキュリティと保護は既に適用されているので、エッジ デバイスで同じことを行う必要はありません。Microsoft 365 のトラフィックが、中間地点や重複するセキュリティ処理を経由する設定では、パフォーマンスが大幅に低下します。
 
@@ -40,11 +40,15 @@ DNS ドメイン名と IP アドレスの範囲については、「[https://aka
 
 Microsoft では、次の方法を推奨しています。
 
-- オンプレミスで使用するコンピューターのインターネット ブラウザー上で、プロキシ自動構成 (PAC) スクリプトを使用して、Microsoft 365 クラウドベース サービスの DNS ドメイン名用プロキシ サーバーをバイパスします。最新の Microsoft 365 PAC スクリプトについては、「[Get-Pacfile PowerShell スクリプト](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic)」を参照してください。
-- 
+- オンプレミスのコンピューターのインターネット ブラウザーで、プロキシ自動構成 (PAC) スクリプトを使用し、Microsoft 365 クラウドベース サービスの DNS ドメイン名用のプロキシ サーバーをバイパスします。 最新の Microsoft 365 PAC スクリプトについては、[Get-Pacfile の PowerShell スクリプト](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic) を参照してください。
+
 - エッジ デバイスを分析して重複する処理を特定したら、それらのエッジ デバイスが "最適化" および "許可" エンドポイントにトラフィックを処理せずに転送するように構成します。これは、トラフィック バイパスと呼ばれます。 
 
-エッジ デバイスには、ファイアウォール、SSL 中断/検査、パケット検査デバイス、およびデータ損失防止システムが含まれます。エッジ デバイスの構成と更新には、スクリプトや REST 呼び出しを使用して、Office 365 エンドポイント Web サービスから構造化されたエンドポイントのリストを使用できます。詳細については、「[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/ja-JP/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file)」を参照してください。
+ネットワーク インフラストラクチャでのそれらの推奨事項は次の通りです。
+
+![オンプレミスのトラフィックを最適化するための推奨事項](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
+
+エッジ デバイスには、ファイアウォール、SSL 中断/検査、パケット検査デバイス、およびデータ損失防止システムが含まれます。 エッジ デバイスの構成を構成したり更新したりするには、スクリプトまたは REST 呼び出しを使用して、Office 365 エンドポイントの Web サービスからエンドポイントの構造化リストを利用します。 詳細については、「[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)」を参照してください。
 
 なお、バイパスするのは、Microsoft 365 で "最適化" および "許可" カテゴリに含まれるエンドポイントに対するトラフィックのための通常のプロキシとネットワーク セキュリティ処理のみです。他のすべての一般的なインターネット トラフィックは、プロキシ処理され、既存のネットワーク セキュリティ処理の対象になります。
 
@@ -55,7 +59,7 @@ Microsoft では、次の方法を推奨しています。
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)|[クライアントと Office 365 サービスのパフォーマンスを最適化する](networking-optimize-tcp-performance.md) |
+|![手順 5](./media/stepnumbers/Step5.png)|[クライアントと Office 365 サービスのパフォーマンスを最適化する](networking-optimize-tcp-performance.md) |
 
 
 
