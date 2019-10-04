@@ -1,10 +1,10 @@
 ---
-title: Office 365 で脅威に自動的に調査して応答する
+title: Office 365 の脅威を自動的に調査し対応する
 keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動インシデント対応機能の使用を開始します。
-ms.openlocfilehash: 5def4ab38c14629f2840e4b833fa9430d234e75c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086826"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37385734"
 ---
-# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 で脅威に自動的に調査して応答する
+# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 の脅威を自動的に調査し対応する
 
 ## <a name="overview"></a>概要
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)Plan 2 には、警告や脅威に対処するためのセキュリティ運用チームの時間と労力を節約できる自動インシデント対応 (エア) 機能が含まれています。 
+サブスクリプションによっては、 [Office 365 Advanced Threat Protection](office-365-atp.md)には、セキュリティ運用チームの時間と、アラートと脅威を処理するための労力を節約できる自動化されたインシデント対応 (航空) 機能が含まれることがあります。
+
 - Office 365 の AIR 機能の使用を開始するには、この記事をご利用ください。 
 - 空気のしくみの概要については、「Office 2010 の[自動インシデント対応 (AIR) 365](automated-investigation-response-office.md)」を参照してください。
 
@@ -37,6 +38,12 @@ AIR を使用すると、特定のアラートがトリガーされ、1つ以上
 
 > [!NOTE]
 > この記事で説明されているタスクを実行するには、全体管理者、セキュリティ管理者、セキュリティオペレーター、またはセキュリティリーダーである必要があります。 詳細については、「 [Microsoft 365 セキュリティセンター: 役割とアクセス許可](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)」を参照してください。
+
+AIR は次のサブスクリプションに含まれています。
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection プラン2
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 

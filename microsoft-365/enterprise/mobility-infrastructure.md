@@ -2,10 +2,10 @@
 title: フェーズ 5-モバイルデバイス管理
 description: Microsoft 365 Enterprise には、Microsoft Intune を使用したモバイルデバイス管理が含まれます。 要件と前提条件を確認し、Azure Active Directory リソースを使用して Intune を設定し、iOS、macOS、Android、および Windows デバイスを登録し、アプリを展開し、構成プロファイルを作成し、コンプライアンスポリシーを使用して、モバイルの条件付きアクセスを有効にします。Microsoft 365 Enterprise を使用したデバイス管理。
 keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、モバイルデバイス管理、Intune
-author: MandiOhlinger
-ms.author: mandia
-manager: dougeby
-ms.date: 08/28/2019
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: laurawi
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982808"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386144"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>フェーズ 5: Microsoft 365 Enterprise のモバイルデバイス管理
 
-![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![フェーズ 5: モバイルデバイスの管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *この機能は、Microsoft 365 Enterprise の E3 および E5 バージョンに適用されます。*
 
@@ -34,11 +34,11 @@ Microsoft 365 Enterprise では、組織内のデバイスとアプリを管理�
 
 モバイルデバイスを管理する主な理由の1つとして、組織のリソースを保護して保護することが挙げられます。 [Microsoft Intune の一般的な使用方法](https://docs.microsoft.com/intune/common-scenarios)Office 365 の電子メールとデータをセキュリティで保護するなど、いくつかの現実の例を示します。
 
-Intune[は、モバイルデバイス管理 (MDM) またはモバイルアプリケーション管理 (MAM)](https://docs.microsoft.com/intune/byod-technology-decisions)を使用して、組織へのアクセスを管理するためのオプションを提供します。 MDM は、ユーザーが Intune にデバイスを登録するときに行います。 登録されると、管理対象デバイスであり、組織で使用されているすべてのポリシー、ルール、および設定を受け取ることができます。 たとえば、具体的なアプリをインストールしたり、パスワードポリシーを作成したり、VPN 接続をインストールしたりできます。
+Intune は、モバイルデバイス管理 (MDM) またはモバイルアプリケーション管理 (MAM) を使用して、組織へのアクセスを管理するためのオプションを提供します。 MDM は、ユーザーが Intune にデバイスを登録するときに行います。 登録されると、管理対象デバイスであり、組織で使用されているすべてのポリシー、ルール、および設定を受け取ることができます。 たとえば、具体的なアプリをインストールしたり、パスワードポリシーを作成したり、VPN 接続をインストールしたりできます。
 
-独自の個人用デバイスを使用しているユーザーは、デバイスを登録したり、Intune およびポリシーで管理したりすることはできません。 ただし、組織のリソースとデータを保護する必要がある場合もあります。 このシナリオでは、MAM を使用してアプリを保護することができます。 たとえば、ユーザーがデバイス上の SharePoint にアクセスするときに PIN を入力する必要がある MAM ポリシーを使用できます。
+独自の個人用デバイスを使用しているユーザーは、デバイスの登録や、Intune およびポリシーによる管理を行わないようにすることができます。 ただし、組織のリソースとデータを保護する必要がある場合もあります。 このシナリオでは、MAM を使用してアプリを保護することができます。 たとえば、ユーザーがデバイス上の SharePoint にアクセスするときに PIN を入力する必要がある MAM ポリシーを使用できます。
 
-また、個人または組織所有のデバイスを管理する方法も決定します。 使用方法に応じて、デバイスを異なる方法で扱うことができます。 たとえば、人事 (HR) のユーザーや Sales のユーザーには、さまざまなプランが必要になることがあります。 [モバイルデバイス管理の使用状況を特定する-ケースシナリオ](https://docs.microsoft.com/intune/planning-guide-scenarios)では、開始することができ、これらのさまざまなシナリオについていくつかのガイダンスが含まれています。
+また、個人または組織所有のデバイスを管理する方法も決定します。 使用方法に応じて、デバイスを異なる方法で扱うことができます。 たとえば、人事 (HR) のユーザーや Sales のユーザーには、さまざまなプランが必要になることがあります。 [モバイルデバイス管理の使用状況を特定する-ケースシナリオ](https://docs.microsoft.com/intune/planning-guide-scenarios)を開始して、これらのさまざまなシナリオに関するガイダンスを含めることができます。
 
 ## <a name="step-2-get-your-prerequisites"></a>手順 2: 前提条件を取得する
 
@@ -66,13 +66,13 @@ Intune では、ドメイン、ユーザー、グループなど、Azure AD の�
 
 5. **[ユーザーを追加](https://docs.microsoft.com/intune/users-add)** し、**[グループを追加](https://docs.microsoft.com/intune/groups-add)** します。 
 
-   ユーザーを手動で追加したり、Azure AD に接続してユーザーを Intune と同期させることができます。 特定のユーザーに管理者ロールを付与することもできます。 ユーザーは、デバイスがキオスクデバイスなどの "userless" デバイスでない限り、必要になります。
+   ユーザーを手動で追加するか、ハイブリッド id と Azure AD Connect を使用して、オンプレミスのユーザーアカウントと Intune を同期することができます。 特定のユーザーに管理者ロールを付与することもできます。 ユーザーは、デバイスがキオスクデバイスなどの "userless" デバイスでない限り、必要になります。
 
-   Azure AD グループは、Intune でのデバイスとユーザーの管理を簡素化するために使用されます。 グループを使用すると、さまざまなタスクを実行できます。 たとえば、組織が Android デバイスで特定のアプリを必要とするとします。 Android デバイスグループを作成して、このアプリを使用したポリシーをグループに展開することができます。
+   Azure AD グループは、Intune でのデバイスとユーザーの管理を簡素化するために使用されます。 グループを使用すると、さまざまなタスクを実行できます。 たとえば、組織が Android デバイスで特定のアプリを必要とするとします。 Android デバイスグループを作成して、このアプリを含むポリシーをグループに展開することができます。
 
     Intune では、「[フェーズ 2: id](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) 」で作成したユーザーまたはグループを追加できます。
 
-6. **[ライセンスを割り当て](https://docs.microsoft.com/intune/licenses-assign)** ます。 ユーザーまたはデバイスが Intune に登録するには、デバイスのライセンスが必要です。 ユーザーまたはユーザーが少ないデバイスでは、intune サービスにアクセスするために Intune ライセンスが必要です。 これらのライセンスは、Microsoft 365 に含まれており、Intune で割り当てられている必要があります。
+6. **[ライセンスを割り当て](https://docs.microsoft.com/intune/licenses-assign)** ます。 ユーザーまたはデバイスが Intune に登録するには、intune サービスを有効にした Microsoft 365 ライセンスが必要です。 intune サービスにアクセスできます。 Microsoft 365 ライセンスは、microsoft 365 管理センターまたは PowerShell を使用して、microsoft Intune サービスが既定で有効になっている microsoft ライセンスを割り当てます。
 
 ## <a name="step-4-enroll-devices"></a>手順 4: デバイスの登録
 
@@ -96,7 +96,7 @@ Intune では、アプリの追加、他のユーザーまたはグループへ�
 
 ユーザーがモバイルデバイスを取得する場合、最初のタスクの1つとして、組織の電子メールとドキュメントへのアクセスがあります。 Intune を使用すると、デバイスに事前にインストールされている電子メールアプリを使用して[電子メール設定を作成して展開](https://docs.microsoft.com/intune/email-settings-configure)できます。 
 
-[[アプリの追加](https://docs.microsoft.com/intune/app-management)] には、組織内のデバイス上のアプリを追加、展開、監視、構成、保護する手順が一覧表示されます。
+「[アプリの追加](https://docs.microsoft.com/intune/apps/apps-add)」の記事では、組織内のデバイス上のアプリを追加、展開、監視、構成、保護する手順を示します。
 
 |||
 |:-------|:-----|
@@ -107,13 +107,13 @@ Intune では、アプリの追加、他のユーザーまたはグループへ�
 
 前の手順では、環境を設定し、Intune を有効にします。 これで、コンプライアンスと条件付きアクセスを使用して、いくつかのポリシーを作成する準備が整いました。
 
-デバイスを管理するには、コンプライアンスおよび条件付きアクセスが重要です。 組織のリソースを保護するために、**[コンプライアンスポリシー](https://docs.microsoft.com/intune/device-compliance-get-started)** が作成されます。 コンプライアンスポリシーを作成する場合、デバイスに必要な標準または "ベースライン" を定義しています。 たとえば、許容できる (または許容されない) 脅威レベルを選択したり、脱獄デバイスをブロックしたり、パスワードの長さを要求したりできます。 これらのデバイスが規制に準拠していない場合は、リソースへのアクセスをブロックすることができます。
+デバイスを管理するには、コンプライアンスおよび条件付きアクセスが重要です。 組織のリソースを保護するために、[コンプライアンスポリシー](https://docs.microsoft.com/intune/device-compliance-get-started)が作成されます。 コンプライアンスポリシーを作成する場合、デバイスに必要な標準または "ベースライン" を定義しています。 たとえば、許容できる (または許容されない) 脅威レベルを選択したり、脱獄デバイスをブロックしたり、パスワードの長さを要求したりできます。 これらのデバイスが規制に準拠していない場合は、リソースへのアクセスをブロックすることができます。
 
-この "ブロック" は、**[条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)** を導入します。 デバイスが準拠していないと見なされた場合は、電子メール、SharePoint などへのアクセスをブロックすることができます。
+この "ブロック" は、[条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)を導入します。 デバイスが準拠していないと見なされた場合は、電子メール、SharePoint などへのアクセスをブロックすることができます。
 
 [Azure portal](https://portal.azure.com)の Intune を使用すると、これらのポリシーを作成し、ユーザーとデバイスに適用できます。 ベストプラクティスとして、少し開始し、段階的なアプローチを使用します。 たとえば、脱獄デバイスをブロックする iOS ポリシーを作成します。 パイロットまたはテストグループへのポリシーの適用 (Intune での「割り当て」と呼ばれます)。 初期テストの後、パイロットグループにユーザーを追加します。 段階的な手法を使用すると、さまざまなユーザーの種類からフィードバックを得ることができます。
 
-[デバイスコンプライアンスポリシー](https://docs.microsoft.com/intune/device-compliance-get-started)と[条件付きアクセスの](https://docs.microsoft.com/intune/conditional-access)概要については、開始する際に役立ちます。
+開始するには、「[デバイスコンプライアンスポリシーの](https://docs.microsoft.com/intune/device-compliance-get-started)概要」と「[条件付きアクセスと Intune につい](https://docs.microsoft.com/intune/conditional-access)て」を参照してください。
 
 ## <a name="step-7-apply-features-and-settings"></a>手順 7: 機能と設定を適用する
 
@@ -125,9 +125,8 @@ Intune では、アプリの追加、他のユーザーまたはグループへ�
 - IOS デバイスで制限付きアプリ機能を使用して、インストール可能な承認済みアプリの一覧を作成します。 または、禁止されているアプリのリストを作成します。
 - キオスクの設定を使用して、キオスクモードで実行されている Android デバイスで使用できるアプリを選択します。
 - MacOS を実行しているデバイスに、Wi-fi 接続とその設定 (セキュリティの種類を含む) を適用します。
-- その他
 
-[Microsoft Intune デバイスプロファイルとは](https://docs.microsoft.com/intune/device-profiles)プロファイルについての情報を読んで、プロファイルを作成する方法などを確認するのに最適な場所です。
+[デバイスプロファイルを使用してデバイスの機能と設定を適用](https://docs.microsoft.com/intune/device-profiles)すると、プロファイルについての情報がわかります。「プロファイルを作成する方法」を参照してください。
 
 少し開始して、段階的なアプローチを使用してください。 パイロットまたはテストグループにプロファイルを割り当てます。 その後、プロファイルをパイロットグループに割り当てます。
 
@@ -140,7 +139,7 @@ Intune は強力なサービスで、多くの機能を備えています。 Int
 - [見張り](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector)、 [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)、その他のモバイル防御の脅威パートナーを使用する
 - [パートナー証明機関 (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview)を追加して証明書を発行および更新する
 - 企業ポータルアプリの[エンドユーザーにガイダンスを提供](https://docs.microsoft.com/intune/end-user-educate)し、アプリを取得する
-- 監査ログを使用して、[アプリ](https://docs.microsoft.com/intune/apps-monitor)の監視、[デバイスのコンプライアンス](https://docs.microsoft.com/intune/compliance-policy-monitor)の監視、[構成プロファイル](https://docs.microsoft.com/intune/compliance-policy-monitor)の監視、およびその他のテレメトリを行います。 また、 [Intune データウェアハウス](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)に接続して、さらにレポートを必要とする power BI を使用することもできます。
+- 監査ログを使用して、[アプリ](https://docs.microsoft.com/intune/apps-monitor)と[デバイスのコンプライアンスおよび構成プロファイル](https://docs.microsoft.com/intune/compliance-policy-monitor)、およびその他のテレメトリを監視します。 また、 [Intune データウェアハウス](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)に接続して、さらにレポートを必要とする power BI を使用することもできます。
 
 
 ## <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
@@ -158,7 +157,7 @@ Microsoft の IT 専門家[が EMS を使用してデバイスを管理](https:/
 
 架空の多国籍企業である Contoso Corporation が、Microsoft 365 cloud services を使用して[モバイルデバイス管理インフラストラクチャを展開](contoso-mdm.md)した方法について説明します。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 

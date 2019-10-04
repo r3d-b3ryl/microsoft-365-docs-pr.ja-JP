@@ -3,7 +3,7 @@ title: Office 365 の自動調査と応答 (AIR)
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection の自動化された調査と応答機能について説明します。
-ms.openlocfilehash: 1e600a7a392acc34fac2547a3daa17c0058322b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086084"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386204"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 の自動調査と応答 (AIR)
 
-自動化された調査と応答 (AIR) 機能 ( [Office 365 Advanced Threat Protection](office-365-atp.md)プラン2に含まれています) を使用すると、現在存在している既知の脅威への対応として、自動化された調査プロセスを実行することができます。 航空は、セキュリティ運用チームがより効率的かつ効果的に操作するのに役立ちます。
+自動調査と応答 (AIR) 機能を使用すると、現在存在している既知の脅威への対応として、自動化された調査プロセスを実行できます。 航空は、セキュリティ運用チームがより効率的かつ効果的に操作するのに役立ちます。
 - 空気のしくみを理解するには、この記事をご利用ください。
 - 空中で作業を開始するには、「 [Office 365 で脅威に自動的に調査して応答する](office-365-air.md)」を参照してください。
 
 > [!NOTE]
 > AIR 機能にアクセスするには、全体管理者、セキュリティ管理者、セキュリティオペレーター、またはセキュリティリーダである必要があります。 これらのアクセス許可の詳細については、「 [Microsoft 365 セキュリティセンター: 役割とアクセス許可](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)」を参照してください。
+
+AIR は次のサブスクリプションに含まれています。
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection プラン2
 
 ## <a name="the-overall-flow-of-air"></a>空気の全体的な流れ
 
@@ -57,8 +63,12 @@ ms.locfileid: "37086084"
 
 - 配信後に削除されたフィッシング Url を含む電子メールメッセージ *
 
+- 疑わしい電子メール送信パターンが検出された#
+
+- ユーザーが電子メールの送信を制限されている#
+
 > [!NOTE]
-> アスタリスクでマークされたアラートには、セキュリティ & コンプライアンスセンター内の各アラートポリシーで、電子メール通知がオフになっていることを示す*情報*重要度が割り当てられます。 [通知ポリシー構成](../../compliance/alert-policies.md#alert-policy-settings)を使用して電子メール通知を有効にすることができます。
+> アスタリスク (*) のマークが付いたアラートには、セキュリティ & コンプライアンスセンター内の各アラートポリシーの*情報*重要度が割り当てられ、電子メール通知はオフになります。 [通知ポリシー構成](../../compliance/alert-policies.md#alert-policy-settings)を使用して電子メール通知を有効にすることができます。 ハッシュ (#) でマークされた通知は、一般に、パブリックプレビュープレイブックに関連付けられている通知を使用できます。
 
 通知を表示するには、セキュリティ & コンプライアンスセンターで、 **[警告の** > **表示**] を選択します。 通知を選択して詳細を表示します。そこから、[**調査の表示**] リンクを使用して、対応する[調査](#investigation-graph)に移動します。 情報通知は、既定では通知ビューに表示されないことに注意してください。 それらを表示するには、通知フィルターを変更して情報通知を含める必要があります。
 
@@ -74,15 +84,18 @@ ms.locfileid: "37086084"
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>セキュリティプレイブックは段階的に展開されています。
 
-航空の一環として、セキュリティプレイブックはフェーズに段階的に展開されています。 フェーズ1では (2019 年4月にプレビューが開始されました)、セキュリティ管理者が確認および承認するアクションに関する推奨事項を含む、いくつかのプレイブックがリリースされました。
+航空の一環として、セキュリティプレイブックはフェーズに段階的に展開されています。 フェーズ1は一般公開されており、セキュリティ管理者が確認および承認できるアクションに関する推奨事項を提供する複数のプレイブックが含まれています。
 - ユーザーによって報告されるフィッシングメッセージ
-- URL [verdict change] をクリックします。 
+- URL [verdict change] をクリックします。
 - 配信後のマルウェア検出 (マルウェア ZAP)
 - フィッシングは、配信後の ZAP (フィッシング ZAP) を検出しました
 
-フェーズ1には、手動による電子メール調査 ([脅威エクスプローラー](threat-explorer.md)を使用) も含まれます。
+フェーズ1には、手動による電子メール調査のサポート ([脅威エクスプローラー](threat-explorer.md)を使用) も含まれています。
 
-フェーズ2が現在進行中です。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照して、計画済みで、近日中に提供されているものを確認します。
+フェーズ2は、**パブリックプレビュー**の次のプレイブックを使用して進行するようになり、アクションに関する推奨事項と、問題を調査するセキュリティ管理者を支援します。
+- 侵害として報告されたユーザー (パブリックプレビュー)
+
+これ以上のプレイブックは、完了するとリリースされます。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照して、計画済みで、近日中に提供されているものを確認します。
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>プレイブックには、調査と推奨事項が含まれます。
 
@@ -99,7 +112,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![エアのメイン調査ページ](../media/air-maininvestigationpage.png) 
   
-次の操作を実行できます。
+次の操作を実行できます:
 - 調査に直接ナビゲートします (**調査 ID**を選択します)。
 - フィルターを適用します。 調査の**種類**、**時間の範囲**、**状態**、またはこれらの組み合わせから選択します。
 - データを .csv ファイルにエクスポートします。
@@ -124,7 +137,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![AIR 調査グラフページ](../media/air-investigationgraphpage.png)
 
-次の操作を実行できます。
+次の操作を実行できます:
 - 現在の調査の視覚的な概要を説明します。
 - 調査期間の概要を表示します。
 - ビジュアル化内のノードを選択して、そのノードの詳細を表示します。
@@ -136,7 +149,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![AIR alerts ページ](../media/air-investigationalertspage.png)
 
-次の操作を実行できます。
+次の操作を実行できます:
 - 現在のトリガー警告と関連付けられている警告の視覚的な概要を取得します。
 - リストから通知を選択して、完全な通知の詳細を表示するフライアウトページを開きます。
 
@@ -169,7 +182,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![航空電子メールの調査ページ](../media/air-investigationemailpage.png)
 
-次の操作を実行できます。
+次の操作を実行できます:
 - 現在のクラスター化の結果と脅威の視覚的な概要を取得します。
 - クラスターエンティティまたは脅威リストをクリックして、完全なアラート詳細を示すフライアウトページを開きます。
 - [電子メールクラスターの詳細] タブの上部にある [エクスプローラーで開く] リンクをクリックして、電子メールクラスターをさらに調査します。
@@ -186,7 +199,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![AIR 調査ユーザーページ](../media/air-investigationuserspage.png)
 
-次の操作を実行できます。
+次の操作を実行できます:
 - 検出されたユーザーの結果とリスクの視覚的な概要を取得します。
 - 通知の詳細をすべて表示するユーザーを選択して、フライアウトページを開きます。
 
@@ -199,7 +212,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 調査の一環として、空気は電子メールの脅威をデバイスに関連付けます。 たとえば、調査では、 [Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 )に対して悪意のあるファイルハッシュを渡して調査を行います。 これにより、ユーザーにとって関連するコンピューターの自動調査が可能になり、クラウドとエンドポイントの両方で脅威に対処できるようになります。 
 
-次の操作を実行できます。
+次の操作を実行できます:
 - 現在のコンピューターと脅威の視覚的な概要を取得します。
 - Microsoft Defender セキュリティセンターの関連する[Microsoft DEFENDER ATP 調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)に含まれるビューを開くコンピューターを選択します。
 
@@ -211,7 +224,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![AIR 調査エンティティページ](../media/air-investigationentitiespage.png)
 
-次の操作を実行できます。
+次の操作を実行できます:
 - 検出されたエンティティと脅威の視覚的な概要について説明します。
 - エンティティを選択して、関連するエンティティの詳細を示すフライアウトページを開きます。
 
@@ -223,7 +236,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![AIR 調査ログページ](../media/air-investigationlogpage.png)
 
-次の操作を実行できます。
+次の操作を実行できます:
 - 「」では、実行されるプレイブックの手順の概要を示します。
 - 結果を CSV ファイルにエクスポートします。
 - ビューをフィルター処理します。
@@ -236,7 +249,7 @@ AIR では、各セキュリティのプレイブックには次のものが含�
 
 ![AIR 調査アクションページ](../media/air-investigationactionspage.png)
 
-次の操作を実行できます。
+次の操作を実行できます:
 - プレイブックの概要を表示します。推奨されるアクション。
 - 1つまたは複数のアクションを選択します。
 - コメントを含む推奨アクションを承認または拒否します。
