@@ -3,7 +3,7 @@ title: '手順 3: ネットワーク ヘアピンを回避する'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,35 +13,43 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ネットワーク ヘアピンについて理解して削除することにより、パフォーマンスの向上を図ります。
-ms.openlocfilehash: eb233c02d1d4c0198c11d520acca1d680df78a82
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073287"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370334"
 ---
-# <a name="step-3-avoid-network-hairpins"></a><span data-ttu-id="cdc18-103">手順 3: ネットワーク ヘアピンを回避する</span><span class="sxs-lookup"><span data-stu-id="cdc18-103">Step 3: Avoid network hairpins</span></span>
+# <a name="step-3-avoid-network-hairpins"></a><span data-ttu-id="9669d-103">手順 3: ネットワーク ヘアピンを回避する</span><span class="sxs-lookup"><span data-stu-id="9669d-103">Step 3: Avoid network hairpins</span></span>
 
-<span data-ttu-id="cdc18-104">*この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="cdc18-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="9669d-104">*この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="9669d-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-<span data-ttu-id="cdc18-p101">[ネットワーク ヘアピン](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3)は、ある宛先に送信されたトラフィックが、オンプレミスのセキュリティ スタックや、クラウド アクセス ブローカー、クラウドベースの Web ゲートウェイなど、宛先以外の中間の場所に最初に差し向けられると発生します。ネットワーク ヘアピンは、ネットワーク サービス プロバイダーが原因のインターネット上の不適切なルーティングによっても発生する可能性があります。ヘアピンが発生すると、待機時間が増え、地理的に離れた場所にトラフィックがリダイレクトされる場合もあります。</span><span class="sxs-lookup"><span data-stu-id="cdc18-p101">A [network hairpin](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) happens when traffic bound for a destination is first directed to another intermediate location, such as an on-premises security stack, cloud access broker, or cloud-based web gateway. A network hairpin could also be caused by poor routing on the Internet due to network service providers. A hairpin adds latency and can potentially redirect traffic to a geographically distant location.</span></span>
+<span data-ttu-id="9669d-106">[ネットワーク ヘアピン](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3)は、宛先に向けられたトラフィックが最初にオンプレミス セキュリティ スタック、クラウド アクセス ブローカー、クラウドベースの Web ゲートウェイなどの別の中間場所に向けられたときに発生します。</span><span class="sxs-lookup"><span data-stu-id="9669d-106">A [network hairpin](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) happens when traffic bound for a destination is first directed to another intermediate location, such as an on-premises security stack, cloud access broker, or cloud-based web gateway. A network hairpin could also be caused by poor routing on the Internet due to network service providers. A hairpin adds latency and can potentially redirect traffic to a geographically distant location.</span></span> <span data-ttu-id="9669d-107">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="9669d-107">Here is an example.</span></span>
 
-<span data-ttu-id="cdc18-p102">Microsoft 365 のクラウドベース サービスに対するトラフィックのパフォーマンスを最適化するには、ローカルのインターネット接続を提供する ISP と、その場所と近接した Microsoft のグローバル ネットワークの間に直接のピアリング関係があるかを確認します。そのような接続では、ヘアピンは生じません。</span><span class="sxs-lookup"><span data-stu-id="cdc18-p102">To optimize performance for traffic to Microsoft 365 cloud-based services, check whether the ISP providing the local Internet connection has a direct peering relationship with the Microsoft Global Network in close proximity to that location. These connections do not have hairpins.</span></span>
+![ネットワーク ヘアピンの例](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
 
-<span data-ttu-id="cdc18-p103">Microsoft 365 のトラフィックにクラウドベースのネットワークやセキュリティ サービスを使用している場合は、ヘアピンの影響を評価し、パフォーマンスに与える影響を理解する必要があります。次の点を確認します。</span><span class="sxs-lookup"><span data-stu-id="cdc18-p103">If you use cloud-based network or security services for your Microsoft 365 traffic, ensure that the hairpinning effect is evaluated and its impact on performance is understood. Examine the following:</span></span>
+<span data-ttu-id="9669d-109">ネットワーク ヘアピンは、ネットワーク サービス プロバイダーが原因でインターネット上のルーティングが不十分な場合にも発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="9669d-109">A network hairpin could also be caused by poor routing on the Internet due to network service providers.</span></span> 
 
-- <span data-ttu-id="cdc18-112">支店や Microsoft グローバル ネットワークのピアリング ポイントとの関係においてトラフィックの転送経路となるサービス プロバイダーの数および場所。</span><span class="sxs-lookup"><span data-stu-id="cdc18-112">The number and locations of your service providers through which the traffic is forwarded in relationship to your branch offices and Microsoft Global Network peering points</span></span> 
-- <span data-ttu-id="cdc18-113">サービス プロバイダーと ISP や Microsoft とのネットワーク ピアリング関係の品質。</span><span class="sxs-lookup"><span data-stu-id="cdc18-113">The quality of the network peering relationship of the service provider with your ISP and Microsoft</span></span> 
-- <span data-ttu-id="cdc18-114">サービス プロバイダーのインフラストラクチャ内で生じるバックホーリングがパフォーマンスに与える影響。</span><span class="sxs-lookup"><span data-stu-id="cdc18-114">The performance impact of backhauling in the service provider infrastructure</span></span>
+<span data-ttu-id="9669d-110">ヘアピンは待機時間を追加し、潜在的にトラフィックを地理的に離れた場所にリダイレクトできます。</span><span class="sxs-lookup"><span data-stu-id="9669d-110">A hairpin adds latency and can potentially redirect traffic to a geographically distant location.</span></span>
 
-<span data-ttu-id="cdc18-115">可能であれば、インターネット トラフィックを処理するサード パーティのクラウドやクラウドベース ネットワーク セキュリティ ベンダーを介したプロキシ処理やトンネリング処理を行うのではなく、信頼済みの Microsoft 365 トラフィックを直接送信するようにエッジ ルーターを構成します。</span><span class="sxs-lookup"><span data-stu-id="cdc18-115">Whenever possible, configure your edge routers to send trusted Microsoft 365 traffic directly, instead of proxying or tunneling through a third-party cloud or cloud-based network security vendor that processes your Internet traffic.</span></span> 
+<span data-ttu-id="9669d-p102">Microsoft 365 のクラウドベース サービスに対するトラフィックのパフォーマンスを最適化するには、ローカルのインターネット接続を提供する ISP と、その場所と近接した Microsoft のグローバル ネットワークの間に直接のピアリング関係があるかを確認します。そのような接続では、ヘアピンは生じません。</span><span class="sxs-lookup"><span data-stu-id="9669d-p102">To optimize performance for traffic to Microsoft 365 cloud-based services, check whether the ISP providing the local Internet connection has a direct peering relationship with the Microsoft Global Network in close proximity to that location. These connections do not have hairpins.</span></span>
 
-<span data-ttu-id="cdc18-116">中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step3)を確認できます。</span><span class="sxs-lookup"><span data-stu-id="cdc18-116">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step3) for this step.</span></span>
+<span data-ttu-id="9669d-p103">Microsoft 365 のトラフィックにクラウドベースのネットワークやセキュリティ サービスを使用している場合は、ヘアピンの影響を評価し、パフォーマンスに与える影響を理解する必要があります。次の点を確認します。</span><span class="sxs-lookup"><span data-stu-id="9669d-p103">If you use cloud-based network or security services for your Microsoft 365 traffic, ensure that the hairpinning effect is evaluated and its impact on performance is understood. Examine the following:</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="cdc18-117">次の手順</span><span class="sxs-lookup"><span data-stu-id="cdc18-117">Next step</span></span>
+- <span data-ttu-id="9669d-115">支店や Microsoft グローバル ネットワークのピアリング ポイントとの関係においてトラフィックの転送経路となるサービス プロバイダーの数および場所。</span><span class="sxs-lookup"><span data-stu-id="9669d-115">The number and locations of your service providers through which the traffic is forwarded in relationship to your branch offices and Microsoft Global Network peering points</span></span> 
+- <span data-ttu-id="9669d-116">サービス プロバイダーと ISP や Microsoft とのネットワーク ピアリング関係の品質。</span><span class="sxs-lookup"><span data-stu-id="9669d-116">The quality of the network peering relationship of the service provider with your ISP and Microsoft</span></span> 
+- <span data-ttu-id="9669d-117">サービス プロバイダーのインフラストラクチャ内で生じるバックホーリングがパフォーマンスに与える影響。</span><span class="sxs-lookup"><span data-stu-id="9669d-117">The performance impact of backhauling in the service provider infrastructure</span></span>
+
+<span data-ttu-id="9669d-118">可能であれば、インターネット トラフィックを処理するサード パーティのクラウドやクラウドベース ネットワーク セキュリティ ベンダーを介したプロキシ処理やトンネリング処理を行うのではなく、信頼済みの Microsoft 365 トラフィックを直接送信するようにエッジ ルーターを構成します。</span><span class="sxs-lookup"><span data-stu-id="9669d-118">Whenever possible, configure your edge routers to send trusted Microsoft 365 traffic directly, instead of proxying or tunneling through a third-party cloud or cloud-based network security vendor that processes your Internet traffic.</span></span> 
+
+![ネットワーク ヘアピンをバイパスする例](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
+<span data-ttu-id="9669d-120">中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step3)を確認できます。</span><span class="sxs-lookup"><span data-stu-id="9669d-120">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step3) for this step.</span></span>
+
+## <a name="next-step"></a><span data-ttu-id="9669d-121">次の手順</span><span class="sxs-lookup"><span data-stu-id="9669d-121">Next step</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[<span data-ttu-id="cdc18-118">トラフィック バイパスを構成する</span><span class="sxs-lookup"><span data-stu-id="cdc18-118">Configure traffic bypass</span></span>](networking-configure-proxies-firewalls.md)|
+|![手順 4](./media/stepnumbers/Step4.png)|[<span data-ttu-id="9669d-123">トラフィック バイパスを構成する</span><span class="sxs-lookup"><span data-stu-id="9669d-123">Configure traffic bypass</span></span>](networking-configure-proxies-firewalls.md)|
