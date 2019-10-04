@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: グループを使って、管理タスクの一部を自動的に管理することができます。
-ms.openlocfilehash: 01bbce00457362ed0eb089e126f0d17f31237eb4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 769fc0dd69b13978dbb9cf91d890ad271a7d9bb5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086409"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370184"
 ---
 # <a name="step-5-use-groups-for-management"></a>手順 5: 管理にグループを使用する
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>ユーザーが各自のグループを作成および管理できるようにする
@@ -76,9 +76,9 @@ ms.locfileid: "37086409"
 
 *この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
 
-このセクションでは、一連のサブスクリプションのライセンスをグループのすべてのメンバーに自動的に割り当てるため、Azure AD でセキュリティ グループを構成します。 これは*グループベースのライセンス*と呼ばれます。 グループでユーザー アカウントを追加または削除すると、そのグループのサブスクリプションのライセンスが自動的にユーザー アカウントに割り当てられるか割り当て解除されます。
+このセクションでは、一連のサブスクリプションのライセンスをグループのすべてのメンバーに自動的に割り当てるため、Azure AD でセキュリティ グループを構成します。 これは*グループベースのライセンス*と呼ばれます。 グループでユーザー アカウントを追加または削除すると、そのグループのサブスクリプションのライセンスが自動的にユーザー アカウントに追加または削除されます。
 
-Microsoft 365 Enterprise では、適切な Microsoft 365 Enterprise ライセンスを割り当てる Azure AD セキュリティ グループを構成します。
+Microsoft 365 Enterprise では、適切な MIcrosoft 365 Enterprise ライセンスを割り当てる Azure AD セキュリティ グループを構成します。
 
 すべてのグループ メンバーに十分なライセンスがあることを確認します。 ライセンスが不足している場合、ライセンスが使用可能になるまで、新しいユーザーにはライセンスが割り当てられません。
 
@@ -104,4 +104,4 @@ Microsoft 365 Enterprise では、適切な Microsoft 365 Enterprise ライセ�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Identity Governance を構成する](identity-configure-identity-governance.md) |
+|![手順 6](./media/stepnumbers/Step6.png)| [Identity Governance を設定する](identity-configure-identity-governance.md) |

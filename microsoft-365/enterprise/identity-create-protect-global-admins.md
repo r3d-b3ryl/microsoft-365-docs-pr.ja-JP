@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: グローバル管理者アカウントには、資格情報の侵害から保護できるように特別な対処が必要です。
-ms.openlocfilehash: a32781686cd972ca96f6bb08f31c15ede016c4cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086412"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370214"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>手順 1: グローバル管理者アカウントを作成して保護する
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>グローバル管理者アカウントを保護する
@@ -110,5 +110,5 @@ Office 365 の特権アクセス管理を有効にするには、「[Office 365 
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [パスワードをセキュリティで保護する](identity-secure-your-passwords.md) |
+|![手順 2](./media/stepnumbers/Step2.png)| [パスワードをセキュリティで保護する](identity-secure-your-passwords.md) |
 

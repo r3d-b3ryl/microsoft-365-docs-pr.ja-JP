@@ -3,7 +3,7 @@ title: '手順 3: ネットワーク ヘアピンを回避する'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ネットワーク ヘアピンについて理解して削除することにより、パフォーマンスの向上を図ります。
-ms.openlocfilehash: eb233c02d1d4c0198c11d520acca1d680df78a82
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073287"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370334"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>手順 3: ネットワーク ヘアピンを回避する
 
 *この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-[ネットワーク ヘアピン](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3)は、ある宛先に送信されたトラフィックが、オンプレミスのセキュリティ スタックや、クラウド アクセス ブローカー、クラウドベースの Web ゲートウェイなど、宛先以外の中間の場所に最初に差し向けられると発生します。ネットワーク ヘアピンは、ネットワーク サービス プロバイダーが原因のインターネット上の不適切なルーティングによっても発生する可能性があります。ヘアピンが発生すると、待機時間が増え、地理的に離れた場所にトラフィックがリダイレクトされる場合もあります。
+[ネットワーク ヘアピン](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3)は、宛先に向けられたトラフィックが最初にオンプレミス セキュリティ スタック、クラウド アクセス ブローカー、クラウドベースの Web ゲートウェイなどの別の中間場所に向けられたときに発生します。 次に例を示します。
+
+![ネットワーク ヘアピンの例](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+
+ネットワーク ヘアピンは、ネットワーク サービス プロバイダーが原因でインターネット上のルーティングが不十分な場合にも発生する可能性があります。 
+
+ヘアピンは待機時間を追加し、潜在的にトラフィックを地理的に離れた場所にリダイレクトできます。
 
 Microsoft 365 のクラウドベース サービスに対するトラフィックのパフォーマンスを最適化するには、ローカルのインターネット接続を提供する ISP と、その場所と近接した Microsoft のグローバル ネットワークの間に直接のピアリング関係があるかを確認します。そのような接続では、ヘアピンは生じません。
 
@@ -38,10 +44,12 @@ Microsoft 365 のトラフィックにクラウドベースのネットワーク
 
 可能であれば、インターネット トラフィックを処理するサード パーティのクラウドやクラウドベース ネットワーク セキュリティ ベンダーを介したプロキシ処理やトンネリング処理を行うのではなく、信頼済みの Microsoft 365 トラフィックを直接送信するようにエッジ ルーターを構成します。 
 
+![ネットワーク ヘアピンをバイパスする例](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
 中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step3)を確認できます。
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[トラフィック バイパスを構成する](networking-configure-proxies-firewalls.md)|
+|![手順 4](./media/stepnumbers/Step4.png)|[トラフィック バイパスを構成する](networking-configure-proxies-firewalls.md)|

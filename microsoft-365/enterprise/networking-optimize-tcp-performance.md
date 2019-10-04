@@ -3,7 +3,7 @@ title: '手順 5: クライアントと Office 365 サービスのパフォー�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: パフォーマンス向上のために TCP 設定と Office 365 サービスを構成します。
-ms.openlocfilehash: 9e786b36d7a2afccc3b9112b815cd42a40317c15
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f89ae816780101c31971c8e3e60df803f82f1e55
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073187"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370074"
 ---
 # <a name="step-5-optimize-client-and-office-365-service-performance"></a>手順 5: クライアントと Office 365 サービスのパフォーマンスを最適化する
 
-*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 クライアント デバイスと Office 365 の間での伝送制御プロトコル (TCP) の動作を細かく調整することで、パフォーマンスを向上させることができます。
 
@@ -37,10 +37,10 @@ ms.locfileid: "34073187"
 
 Office 365 サービスの場合は、パフォーマンスの最適化については次のリソースを参照してください。
 
-- [Exchange Online](https://support.office.com/article/Tune-Exchange-Online-performance-026e83cb-a945-4543-97b0-a8af6e80ac61)
-- [Skype for Business Online](https://support.office.com/article/Tune-Skype-for-Business-Online-performance-beec23c2-c5d6-4e84-a8af-e82aefca7802)
-- [SharePoint Online](https://support.office.com/article/Tune-SharePoint-Online-performance-f0522d4a-fbf4-41f9-854e-c9b59555091d)
-- [Project Online](https://support.office.com/article/Tune-Project-Online-performance-12ba0ebd-c616-42e5-b9b6-cad570e8409c)
+- [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
+- [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/tune-skype-for-business-online-performance)
+- [SharePoint Online](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)
+- [Project Online の Project Web App](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 
 中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step5)を確認できます。
 

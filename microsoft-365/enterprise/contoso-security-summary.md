@@ -3,7 +3,7 @@ title: Contoso Corporation 向けの Microsoft 365 Enterprise の概要
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: 3de3b748659d713d4db8375d4bcc51ce89573d79
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 394120f811057258afe1bd29e60733e42bf5191a
+ms.sourcegitcommit: 4acd6fc368f547eb7a25d04799cb1a77003b143d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054969"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37372718"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
 
@@ -31,8 +31,8 @@ IT セキュリティ部門による Microsoft 365 Enterprise の展開の承認
 - PC と電子メールをマルウェアから保護します
 - クラウド ベースのデジタル資産のアクセス許可は、アクセス可能なユーザー、アクセスの対象、ユーザーが実行できること、最小限の特権アクセス用にデザインされていることを定義します
 - 機密性の高い、厳しく規制されたデジタル資産にはラベルが付けられ、暗号化され、安全な場所に保管されます
-- 厳しく規制されたデジタル資産をアクセス許可で保護します
-- IT のセキュリティは、中心となるダッシュボードからセキュリティの状況を監視できます。迅速な対応とリスク軽減のために、セキュリティ イベントの通知を受け取ることができます
+- 厳しく規制されたデジタル資産は、追加の暗号化とアクセス許可で保護されます
+- IT セキュリティの担当者は、中心となるダッシュボードから現在のセキュリティの状況を監視できます。迅速な対応とリスク軽減のために、セキュリティ イベントの通知を受け取ることができます
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contoso 社の Microsoft 365 準備完了までのプロセス
 
@@ -40,7 +40,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 1. クラウドの管理者アカウントを制限する
 
-   Contoso 社では、既存の Active Directory Domain Services (AD DS) 管理者アカウントの広範なレビューを行い、一連のクラウド管理者アカウントおよびグループを設定しました。
+   Contoso 社では、既存の Active Directory Domain Services (AD DS) 管理者アカウントの広範なレビューを行い、一連の専用クラウド管理者アカウントおよびグループを設定しました。
 
 2. データ分析を行い 3 つのレベルに分類する
 
@@ -56,7 +56,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - MFA および PIM を設定した全体管理者専用アカウント
 
-  Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、非常に強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成し、それらを多要素認証 (MFA) と Azure AD Privileged Identity Management (PIM) で保護しました。  PIM は、Microsoft 365 Enterprise E5 でのみ利用可能です。
+  Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成し、それらをAzure 多要素認証 (MFA) と Azure Active Directory (Azure AD) Privileged Identity Management (PIM) で保護しました。 PIM は、Microsoft 365 Enterprise E5 でのみ利用可能です。
 
   全体管理者アカウントでサインインするのは特定の管理タスクを実行するときのみで、パスワードは指定されたスタッフにのみ知らされています。パスワードは Azure AD PIM で設定された時間内にのみ使用できます。 
 
@@ -73,7 +73,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - 条件付きアクセス ポリシーを使用したデバイスとアプリケーションへの安全なアクセス
 
-  Contoso 社では、ID、デバイス、Exchange Online、および SharePoint Online に[条件付きアクセス ポリシー](microsoft-365-policies-configurations.md)を使用しています。ID の条件付きアクセス ポリシーには、リスクの高いユーザーに対するパスワード変更の要求や、クライアントに対する最新の認証をサポートしていないアプリの使用禁止が含まれます。デバイスの条件付きポリシーには、承認されたアプリを定義することや、準拠している PC とモバイル デバイスが必要になることが含まれます。Exchange Online の条件付きアクセス ポリシーには、ActiveSync クライアントのブロックと、Office 365 のメッセージ暗号化の設定が含まれます。SharePoint Online の条件付きアクセス ポリシーには、機密性の高い厳しく規制されたサイトに対する追加の保護が含まれます。
+  Contoso 社では、ID、デバイス、Exchange Online、および SharePoint に[条件付きアクセス ポリシー](microsoft-365-policies-configurations.md)を使用しています。ID の条件付きアクセス ポリシーには、リスクの高いユーザーに対するパスワード変更の要求や、クライアントに対する最新の認証をサポートしていないアプリの使用禁止が含まれます。デバイスのポリシーには、承認されたアプリを定義することや、準拠している PC とモバイル デバイスが必要になることが含まれます。Exchange Online の条件付きアクセス ポリシーには、ActiveSync クライアントのブロックと、Office 365 のメッセージ暗号化の設定が含まれます。SharePoint の条件付きアクセス ポリシーには、機密性の高い厳しく規制されたサイトに対する追加の保護が含まれます。
 
 - Windows Hello for Business
 
@@ -107,11 +107,11 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Azure Information Protection ラベルを使用した機密性の高い厳しく規制されたデジタル資産の保護
 
-  Contoso 社では 3 レベルのデータ保護を決定し、ユーザーがデジタル資産に適用する [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) ラベルを展開しました。企業秘密やその他の知的財産について、Contoso 社では、コンテンツを暗号化し特定のセキュリティグループへのアクセスを制限する厳しく規制されたデータに対して、範囲を限定したポリシーで Azure Information Protection サブラベルを使用します。
+  Contoso 社では 3 レベルのデータ保護を決定し、ユーザーがデジタル資産に適用する [Office 365 機密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)を展開しました。企業秘密やその他の知的財産について、Contoso 社では、コンテンツを暗号化し特定のユーザー アカウントとグループへのアクセスを制限する厳しく規制されたデータに対して、機密度サブラベルを使用します。
 
 - Office 365 データ損失防止機能を使用したイントラネット データの漏洩防止
 
-  Contoso 社では、Exchange Online、SharePoint Online、および OneDrive for Business 用に[データ損失防止](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)ポリシーを構成し、故意か偶然かを問わずユーザーが機密データを共有することがないようにしています。
+  Contoso 社では、Exchange Online、SharePoint、および OneDrive for Business 用に[データ損失防止](https://docs.microsoft.com/ja-JP/microsoft-365/compliance/data-loss-prevention-policies)ポリシーを構成し、故意か偶然かを問わずユーザーが機密データを共有することがないようにしています。
 
 - デバイスのデータ漏洩を防止する Windows 情報保護
 
@@ -129,14 +129,14 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Azure Security Center を使用した中心となる IT 用のセキュリティ ダッシュボード
 
-  Contoso 社では [Azure Security Center](https://docs.microsoft.com/intune/introduction-intune) を使用して、セキュリティと脅威の保護を一元的に把握し、ワークロード全体でセキュリティ ポリシーを管理して、サイバー攻撃に対処しています。
+  Contoso 社では [Azure Security Center](https://azure.microsoft.com/services/security-center/) を使用して、セキュリティと脅威の保護を一元的に把握し、ワークロード全体でセキュリティ ポリシーを管理して、サイバー攻撃に対処しています。
 
 - Windows Defender セキュリティ センターを使用したユーザー向けの中心となるセキュリティ ダッシュボード
 
-  Contoso 社では [Windows Defender セキュリティ センターのアプリ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)を、Windows 10 Enterprise を実行する自社の PC およびデバイスに展開しました。これにより、ユーザーはセキュリティの状況を一目で把握し、対応策を講じることができます。
+  Contoso 社では [Windows セキュリティ アプリ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)を、Windows 10 Enterprise を実行する自社の PC およびデバイスに展開しました。これにより、ユーザーはセキュリティの状況を一目で把握し、対応策を講じることができます。
 
 
 ## <a name="next-step"></a>次の手順
 
-Cotoso 社が社内の研究チーム間で共同作業を行えるようにするために、厳しく規制されたデータに対応した SharePoint Online サイトを作成した方法について[学習](contoso-sharepoint-online-site-for-highly-confidential-assets.md)します。
+Cotoso 社が社内の研究チーム間で共同作業を行えるようにするために、厳しく規制されたデータに対応した SharePoint サイトを作成した方法について[学習](contoso-sharepoint-online-site-for-highly-confidential-assets.md)します。
 
