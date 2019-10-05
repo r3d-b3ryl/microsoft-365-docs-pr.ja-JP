@@ -17,6 +17,8 @@
 #### [デバイスの監視とレポート](./mtp/monitor-devices.md)
 #### [アプリの監視とレポート](./mtp/monitor-apps.md)
 
+### [ServiceNow を介してチケットを管理する](./mtp/tickets.md)
+
 ## [Office 365 セキュリティ]()
 ### [概要]()
 #### [Office 365 のセキュリティ ロードマップ](./office-365-security/security-roadmap.md)
