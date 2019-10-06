@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/28/2019
+ms.date: 10/03/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 3981d2bb37b1c9b91ed2b0a93f57a33940a25186
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9f2bedaa436aa5f38d8929e6bc8eda2e34896575
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086825"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386154"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -87,7 +87,14 @@ Office 365 ATP プラン 2 には、組織のセキュリティ チームが悪�
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>自動化された調査と対応で時間を節約する
 
-(**新機能!**) 潜在的なサイバー攻撃を調査している場合は、期限厳守です。 より早く脅威を特定して軽減するほど、組織はより良くなります。 Office 365 ATP プラン 2 には、 [自動調査および対応 (AIR)](automated-investigation-response-office.md) 機能が含まれます。 (これらの機能をまだ持っていない場合は、ATP プラン 2 ですぐに使用できるようになります。)
+(**新機能!**) 潜在的なサイバー攻撃を調査している場合は、期限厳守です。 脅威をより早く特定して軽減できれば、組織はより良くなります。 以下にリストされているサブスクリプションには、[自動調査および対応 (AIR)](automated-investigation-response-office.md) 機能が含まれます。 (これらの機能がまだ利用できない場合は、これらのサブスクリプションの 1 つがあればすぐに利用できます。)
+
+Office 365 AIR は次のサブスクリプションに含まれています。
+
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection プラン 2
 
 AIR には、アラートがトリガーされたときなどには自動的に、またはエクスプローラーのビューから手動で起動できるセキュリティ プレイブックのセットが含まれています。 AIR は、セキュリティ運用チームの脅威を軽減するための時間と労力を効果的かつ効率的に節約できます。 詳細については、「[Office 365 による自動調査と応答 (AIR)](automated-investigation-response-office.md)」を参照してください。
 
