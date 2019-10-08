@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 侵害された Office 365 電子メール アカウントを認識して対処する方法について説明します
-ms.openlocfilehash: 98a254ad6e356cecd44dac57bbe9f83171ddad73
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 239e880bbdd1b2ef7cbbde7e42fb8392777563a5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086981"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417576"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントへの対応
 
@@ -93,7 +93,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 ### <a name="step-4-unblock-the-user-from-sending-mail"></a>ステップ 4 ユーザーのメールの送信をブロック解除する
 
 侵害が疑われるメールボックスがスパム メールを送信するために不正に使用された場合は、メールボックスのメールの送信がブロックされている可能性があります。
-1. メールボックスのメールの送信をブロック解除するには、「[ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email )」の手順に従います。
+1. メールボックスのメールの送信をブロック解除するには、「[ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)」の手順に従います。
 
 ### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>ステップ 5 オプション: ユーザー アカウントのサインインをブロックする
 
