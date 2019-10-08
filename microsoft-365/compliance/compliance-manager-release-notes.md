@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 815862616e1bdbf4b3be1d77de2a541ad703149f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085429"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417506"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>コンプライアンスマネージャーのリリースノート (プレビュー)
 
@@ -26,6 +26,8 @@ ms.locfileid: "37085429"
 [Service Trust Portal](https://servicetrust.microsoft.com)の更新された[コンプライアンスマネージャー](https://servicetrust.microsoft.com/ComplianceManager)ツールを使用して、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>コンプライアンスマネージャーの新機能 (プレビュー)
+
+- **コンプライアンスマネージャーへの役割ベースのアクセス:** 既定の**推測アクセス**の役割が削除されました。 ユーザーがコンプライアンスマネージャーにアクセスするためには、グローバル管理者が[各ユーザーにアクセス許可を割り当てる](compliance-manager-overview#permissions.md)必要があります。
 
 - **Microsoft のセキュリティで保護されたスコアとの統合:** コンプライアンスマネージャーは、カスタマーが管理するアクションを50以上のセキュリティで保護されたスコアアクションにマッピングすることで、 [Microsoft のセキュリティスコア](../security/mtp/microsoft-secure-score.md)との統合をサポートします。 [Secure Score] でマップされたアクションを完了すると、対応するコンプライアンスマネージャーアクションが自動的に更新されます。
 
@@ -38,7 +40,7 @@ ms.locfileid: "37085429"
     - **所有者:** 各アクションアイテムの所有者を指定します。
     - **お客様のアクション:** コンプライアンスマネージャー (プレビュー) に含まれるアクションアイテムの完全なリストを管理し、セキュリティで保護されたスコアと統合されたアクションアイテムのセキュリティで保護されたスコア監視を有効/無効にします。
 
-- **更新されたコンプライアンススコア**: 手法は、Microsoft セキュリティスコアとの同期をサポートするように変更されました。 スコアリングシステムは、Microsoft が管理する統制クレジットを削除し、お客様が管理する統制の完了のみに焦点を当てます。
+- **更新されたコンプライアンススコア**: 手法は、Microsoft セキュリティスコアとの同期をサポートするように変更されました。 スコアは、Microsoft が管理するアクションスコアと、顧客が管理するアクションスコアに基づいて計算されます。
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>コンプライアンスマネージャーの既知の問題 (プレビュー)
 
