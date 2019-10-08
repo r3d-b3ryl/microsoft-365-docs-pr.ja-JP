@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツに暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: 1de7eadfcf95a54917c1d5e2cc0d42cc1ad486a5
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378655"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417566"
 ---
 # <a name="how-sensitivity-labels-work-in-office-apps"></a>Office アプリにおける機密ラベルの機能
 
@@ -131,7 +131,8 @@ PowerPoint
 <td><font size="-1">近日公開<sup>3</sup>
 <td><font size="-1">近日公開<sup>3</sup>
 
-<tr><td><font size="-1">定義済みのアクセス許可を割り当てる
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">定義済みのアクセス許可を割り当てる</a>
 <td><font size="-1"><b>はい</b><br><font size="-1">1910以上</font>
 
 <td><font size="-1"><b>はい</b><br><font size="-1">16.21.0以上</font>
@@ -167,7 +168,8 @@ PowerPoint
 <td><font size="-1">TBD
 <td><font size="-1">TBD
 
-<tr><td><font size="-1">ユーザーがメールとドキュメントにラベルを適用することを必須にする
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">ユーザーがメールとドキュメントにラベルを適用することを必須にする</a>
 <td><font size="-1">TBD
 
 <td><font size="-1">TBD
@@ -202,7 +204,7 @@ PowerPoint
 | --- | --- | --- |
 | すべてのプラットフォームの Word、Excel、PowerPoint | 直ちに | 直ちに |
 | Outlook for PC と Outlook for Mac | Exchange Online でメールが送信された後 | 直ちに |
-| すべてのプラットフォームの Word、Excel、PowerPoint | Exchange Online でメールが送信された後 | Exchange Online でメールが送信された後 |
+| Outlook on the web、iOS、および Android | Exchange Online でメールが送信された後 | Exchange Online でメールが送信された後 |
 
 ## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>機密ラベルは Office for Windows で Azure Information Protection クライアントと一緒に実行できますか?
 
@@ -228,11 +230,7 @@ Azure Information Protection クライアントがインストールされてい
 
 ## <a name="can-a-file-or-email-have-more-than-one-classification"></a>ファイルまたはメールに複数の分類を含めることはできますか?
 
-ユーザーは、ドキュメントまたはメールごとに一度に 1 つずつラベルを選ぶことができます。多くの場合、分類は 1 つになります。 ただし、ユーザーがサブラベルを選択すると、実際にプライマリ ラベルとセカンダリ ラベルの 2 つのラベルが同時に適用されます。 サブラベルを使用すると、ファイルには、追加の制御レベルに対して親子関係を表す 2 つの分類を含めることができます。 
-
-たとえば、 **秘密** ラベルは **法務** や **財務**などのサブラベルが含まれる場合があります。 このサブラベルには、さまざまな分類の視覚的なマーキングと、多種多様な Rights Management テンプレートを適用できます。 ユーザーは **秘密** ラベルを単独では選択できません (たとえば、 **法務**などのサブラベルのうちの 1 つのみなど)。 結果として表示されるラベルは、 **秘密** / **法務**です。 ファイルのメタデータには、 **秘密**のカスタム テキスト プロパティ、 **法務**のカスタム テキスト プロパティ、両方の値 (**秘密ラベル**) を含む別のカスタム テキスト プロパティがあります。 
-
-サブラベルを使用する場合は、プライマリ ラベルに視覚的なマーキング、保護、条件を構成しないでください。 サブレベルを使用する場合は、サブラベルでのみこれらの設定を構成します。 プライマリ ラベルとサブラベルでこれらの設定を構成すると、サブラベルの設定が優先されます。
+いいえ。 ユーザーは、ドキュメントまたはメールごとに一度に 1 つだけラベルを選択することができます。
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>メールにラベルが付けられている場合は、添付ファイルに同じラベルを自動的に付けますか?
 
