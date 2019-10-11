@@ -1,9 +1,9 @@
 ---
 title: 検疫
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 06/16/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,25 +14,22 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Exchange Online Protection のホストされた検疫について説明します。
-ms.openlocfilehash: 266ae080cbd87780fc8767293d8642d443157214
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86d2589ce16354e453486d1e8a635887329b1b08
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086797"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441484"
 ---
-# <a name="quarantine"></a><span data-ttu-id="c387d-103">検疫</span><span class="sxs-lookup"><span data-stu-id="c387d-103">Quarantine</span></span>
+# <a name="quarantine"></a><span data-ttu-id="59821-103">検疫</span><span class="sxs-lookup"><span data-stu-id="59821-103">Quarantine</span></span>
 
-<span data-ttu-id="c387d-104">次のトピックでは、Exchange Online と Exchange Online Protection (EOP) の管理者およびエンド ユーザーの両方のためにホストされる検疫について説明します</span><span class="sxs-lookup"><span data-stu-id="c387d-104">The following topics provide information about the hosted quarantine for both Exchange Online and Exchange Online Protection (EOP) admins and end users:</span></span>
-  
-- <span data-ttu-id="c387d-105">[検疫に関する FAQ](quarantine-faq.md) - 管理者およびエンド ユーザーの両方のための検疫に関する一般的な質問と回答を提供します。</span><span class="sxs-lookup"><span data-stu-id="c387d-105">[Quarantine FAQ](quarantine-faq.md) - Provides general questions and answers about the quarantine for both admins and end users</span></span> 
-    
-- <span data-ttu-id="c387d-106">[管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md) - 管理者が、Exchange 管理センター (EAC) の検疫にあるメッセージを検出して解放するための方法を説明します。さらにオプションとして、偽陽性 (迷惑メールではない) メッセージとして Microsoft に報告することができます。</span><span class="sxs-lookup"><span data-stu-id="c387d-106">[Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md) - Describes how admins can find and release any message that resides in the quarantine in the Exchange admin center (EAC), and optionally report it as a false positive (not junk) message to Microsoft.</span></span> 
-    
-- <span data-ttu-id="c387d-107">[検疫済みメッセージを検索して解放する (エンドユーザー)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) -エンドユーザーがスパム検疫ユーザーインターフェイスで自分のスパム検疫メッセージを検索して解放し、それらを迷惑メールではないとして Microsoft に報告する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="c387d-107">[Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) - Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and report them as not junk to Microsoft.</span></span> 
-    
-    > [!IMPORTANT]
-    > <span data-ttu-id="c387d-108">エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="c387d-108">In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password.</span></span> <span data-ttu-id="c387d-109">社内メールボックスを保護している EOP のお客様は、ディレクトリ同期または EAC を使用して作成された有効な電子メールユーザーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="c387d-109">EOP customers protecting on-premises mailboxes must be valid email users created via directory synchronization or the EAC.</span></span> <span data-ttu-id="c387d-110">ユーザーの管理の詳細については、EOP 管理者が[EOP でメールユーザーを管理](manage-mail-users-in-eop.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c387d-110">For more information about managing users, EOP admins can refer to [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span> <span data-ttu-id="c387d-111">EOP スタンドアロンのお客様の場合は、ディレクトリ同期を使用し、ディレクトリベースのエッジブロックを有効にすることをお勧めします。詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c387d-111">For EOP standalone customers, we recommend using directory synchronization and enabling Directory Based Edge Blocking; for more information, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).</span></span> 
-  
-    
+<span data-ttu-id="59821-104">次のトピックでは、Exchange Online と Exchange Online Protection (EOP) の管理者およびエンド ユーザーの両方のためにホストされる検疫について説明します</span><span class="sxs-lookup"><span data-stu-id="59821-104">The following topics provide information about the hosted quarantine for both Exchange Online and Exchange Online Protection (EOP) admins and end users:</span></span>
 
+- <span data-ttu-id="59821-105">[検疫に関する FAQ](quarantine-faq.md) - 管理者およびエンド ユーザーの両方のための検疫に関する一般的な質問と回答を提供します。</span><span class="sxs-lookup"><span data-stu-id="59821-105">[Quarantine FAQ](quarantine-faq.md) - Provides general questions and answers about the quarantine for both admins and end users</span></span>
+
+- <span data-ttu-id="59821-106">[管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md) - 管理者が、Exchange 管理センター (EAC) の検疫にあるメッセージを検出して解放するための方法を説明します。さらにオプションとして、偽陽性 (迷惑メールではない) メッセージとして Microsoft に報告することができます。</span><span class="sxs-lookup"><span data-stu-id="59821-106">[Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md) - Describes how admins can find and release any message that resides in the quarantine in the Exchange admin center (EAC), and optionally report it as a false positive (not junk) message to Microsoft.</span></span>
+
+- <span data-ttu-id="59821-107">[検疫済みメッセージを検索して解放する (エンドユーザー)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) -エンドユーザーがスパム検疫ユーザーインターフェイスで自分のスパム検疫メッセージを検索して解放し、それらを迷惑メールではないとして Microsoft に報告する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="59821-107">[Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) - Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and report them as not junk to Microsoft.</span></span>
+
+  > [!IMPORTANT]
+  > <span data-ttu-id="59821-108">エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="59821-108">In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password.</span></span> <span data-ttu-id="59821-109">社内メールボックスを保護している EOP のお客様は、ディレクトリ同期または EAC を使用して作成された有効な電子メールユーザーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="59821-109">EOP customers protecting on-premises mailboxes must be valid email users created via directory synchronization or the EAC.</span></span> <span data-ttu-id="59821-110">ユーザーの管理の詳細については、EOP 管理者が[EOP でメールユーザーを管理](manage-mail-users-in-eop.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="59821-110">For more information about managing users, EOP admins can refer to [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span> <span data-ttu-id="59821-111">EOP スタンドアロンのお客様の場合は、ディレクトリ同期を使用し、ディレクトリベースのエッジブロックを有効にすることをお勧めします。詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="59821-111">For EOP standalone customers, we recommend using directory synchronization and enabling Directory Based Edge Blocking; for more information, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).</span></span>

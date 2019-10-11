@@ -1,31 +1,31 @@
 ---
 title: EOP で受信者と管理役割グループを管理する
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 3/9/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) には、メールの受信者を管理するためのいくつかの方法が備わっています。以下のトピックと関連するサブトピックでは、受信者の管理と管理役割グループ アクセス許可の割り当てに関する情報と構成手順を提供します。
-ms.openlocfilehash: 74b1cf273aa2f4f97515c2295ffa42d9d3b211c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d69183c009f12dd33aec28d6ee353bf4177601f5
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086915"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441444"
 ---
-# <a name="manage-recipients-and-admin-role-groups-in-eop"></a><span data-ttu-id="00adc-104">EOP で受信者と管理役割グループを管理する</span><span class="sxs-lookup"><span data-stu-id="00adc-104">Manage recipients and admin role groups in EOP</span></span>
+# <a name="manage-recipients-and-admin-role-groups-in-eop"></a><span data-ttu-id="f4ce7-104">EOP で受信者と管理役割グループを管理する</span><span class="sxs-lookup"><span data-stu-id="f4ce7-104">Manage recipients and admin role groups in EOP</span></span>
 
-<span data-ttu-id="00adc-p102">Microsoft Exchange Online Protection (EOP) には、メールの受信者を管理するためのいくつかの方法が備わっています。以下のトピックと関連するサブトピックでは、受信者の管理と管理役割グループ アクセス許可の割り当てに関する情報と構成手順を提供します。</span><span class="sxs-lookup"><span data-stu-id="00adc-p102">Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions.</span></span>
-  
-|<span data-ttu-id="00adc-107">**トピック**</span><span class="sxs-lookup"><span data-stu-id="00adc-107">**Topic**</span></span>|<span data-ttu-id="00adc-108">**説明**</span><span class="sxs-lookup"><span data-stu-id="00adc-108">**Description**</span></span>|
+<span data-ttu-id="f4ce7-p102">Microsoft Exchange Online Protection (EOP) には、メールの受信者を管理するためのいくつかの方法が備わっています。以下のトピックと関連するサブトピックでは、受信者の管理と管理役割グループ アクセス許可の割り当てに関する情報と構成手順を提供します。</span><span class="sxs-lookup"><span data-stu-id="f4ce7-p102">Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions.</span></span>
+
+|<span data-ttu-id="f4ce7-107">**トピック**</span><span class="sxs-lookup"><span data-stu-id="f4ce7-107">**Topic**</span></span>|<span data-ttu-id="f4ce7-108">**説明**</span><span class="sxs-lookup"><span data-stu-id="f4ce7-108">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="00adc-109">EOP で受信者を管理する</span><span class="sxs-lookup"><span data-stu-id="00adc-109">Manage recipients in EOP</span></span>](manage-recipients-in-eop.md)|<span data-ttu-id="00adc-110">EOP での受信者の種類 (メール ユーザーとグループ)、受信者の追加、削除、編集方法、EAC での受信者の検索場所といった、受信者の管理に関する様々な事柄について説明します。</span><span class="sxs-lookup"><span data-stu-id="00adc-110">Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.</span></span>|
-|[<span data-ttu-id="00adc-111">EOP で管理役割グループのアクセス許可を管理する</span><span class="sxs-lookup"><span data-stu-id="00adc-111">Manage admin role group permissions in EOP</span></span>](manage-admin-role-group-permissions-in-eop.md)|<span data-ttu-id="00adc-112">EAC 内の管理役割リストの検索場所、既存の管理役割グループに対するユーザーの追加または削除方法、および特定の EOP 機能の管理に必要なアクセス許可について説明します。</span><span class="sxs-lookup"><span data-stu-id="00adc-112">Describes where to locate a list of admin roles in the EAC, how to add or remove users from an existing admin role group, and what permissions you need in order to manage specific EOP features.</span></span>|
+|[<span data-ttu-id="f4ce7-109">EOP で受信者を管理する</span><span class="sxs-lookup"><span data-stu-id="f4ce7-109">Manage recipients in EOP</span></span>](manage-recipients-in-eop.md)|<span data-ttu-id="f4ce7-110">EOP での受信者の種類 (メール ユーザーとグループ)、受信者の追加、削除、編集方法、EAC での受信者の検索場所といった、受信者の管理に関する様々な事柄について説明します。</span><span class="sxs-lookup"><span data-stu-id="f4ce7-110">Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.</span></span>|
+|[<span data-ttu-id="f4ce7-111">EOP で管理役割グループのアクセス許可を管理する</span><span class="sxs-lookup"><span data-stu-id="f4ce7-111">Manage admin role group permissions in EOP</span></span>](manage-admin-role-group-permissions-in-eop.md)|<span data-ttu-id="f4ce7-112">EAC 内の管理役割リストの検索場所、既存の管理役割グループに対するユーザーの追加または削除方法、および特定の EOP 機能の管理に必要なアクセス許可について説明します。</span><span class="sxs-lookup"><span data-stu-id="f4ce7-112">Describes where to locate a list of admin roles in the EAC, how to add or remove users from an existing admin role group, and what permissions you need in order to manage specific EOP features.</span></span>|
 
-## <a name="for-more-information"></a><span data-ttu-id="00adc-113">詳細情報</span><span class="sxs-lookup"><span data-stu-id="00adc-113">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="f4ce7-113">詳細情報</span><span class="sxs-lookup"><span data-stu-id="f4ce7-113">For more information</span></span>
 
-[<span data-ttu-id="00adc-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span><span class="sxs-lookup"><span data-stu-id="00adc-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span></span>](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)
+[<span data-ttu-id="f4ce7-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span><span class="sxs-lookup"><span data-stu-id="f4ce7-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span></span>](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)
