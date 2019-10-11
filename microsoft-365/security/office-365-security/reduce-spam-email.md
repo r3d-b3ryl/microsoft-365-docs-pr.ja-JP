@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 でスパム メールや迷惑メールを減らすための最も一般的な方法について説明します。
-ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086798"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428428"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Office 365 で迷惑メールを減らす方法
 
@@ -35,7 +35,7 @@ ms.locfileid: "37086798"
 
 ## <a name="fixing-allowed-spam"></a>許可されている迷惑メールを解決する
 
-多くの場合、構成が正しくないために迷惑メールがお客様の受信トレイに入ってしまっているようです。最も一般的なのは、フィルターをバイパスするようにメール フロー ルール (別名: トランスポート ルール) でドメインを構成すること、または許可/安全送信者リストにドメインを一覧表示することです。この方法では、本来検出されるはずのこれらのメッセージが迷惑メール フィルターをスキップしてしまうため、正しくありません。  
+多くの場合、構成が正しくないために迷惑メールがお客様の受信トレイに入ってしまっているようです。最も一般的なのは、フィルターをバイパスするようにメール フロー ルール (別名: トランスポート ルール) でドメインを構成すること、または許可/安全送信者リストにドメインを一覧表示することです。この方法では、本来検出されるはずのこれらのメッセージが迷惑メール フィルターをスキップしてしまうため、正しくありません。そのため、[差出人セーフ リスト](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365)の作成を一時的なソリューションとして見なす必要があります。  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>大量の迷惑メールを受け取る他の一般的な原因の解決方法
 

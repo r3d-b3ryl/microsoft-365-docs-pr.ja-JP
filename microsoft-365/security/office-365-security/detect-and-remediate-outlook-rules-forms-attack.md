@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
-ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085746"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440654"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う
 
@@ -144,8 +144,8 @@ Exchange Online のメールボックスの手順
     <li>ユーザーアカウントがどのようにアクセスされ、<a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">使用されるかを</a>監視します。 最初の違反を防ぐことはできませんが、期間を短縮して、違反が早く検出された場合の影響を短縮することができます。 次のものを使用できます。 <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">Office 365 Cloud App Security ポリシー</a>を使用して、アカウントを監視し、異常なアクティビティについての警告を表示することができます。 
         <ol type="a">
             <li><b>複数のログイン試行失敗</b>このポリシーによって、環境がプロファイルされ、ユーザーが1回のセッションで失敗したログインアクティビティを、学習したベースラインに関して複数回実行したときに、違反が発生したことを示すアラートがトリガーされます。</li>
-            <li><b>不可能出張</b>-このポリシーでは、環境をプロファイルし、2つの場所間の予定時間よりも短い期間に異なる場所にある同じユーザーからアクティビティが検出されたときにアラートをトリガーします。 これは、別のユーザーが同じ資格情報を使用していることを示している可能性があります。 このような異常動作を検出するには、新しいユーザーのアクティビティパターンを学習させる7日間の最初の学習期間が必要です。</li>
-            <li><b>通常は偽装されるアクティビティ (ユーザー別)</b>-このポリシーでは、環境をプロファイルし、ユーザーが学んだ基準に関して1つのセッションで複数の偽装されたアクティビティを実行したときに、違反が発生したことを示すアラートをトリガーします。</li>
+            <li><b>不可能な出張</b> -このポリシーでは、環境をプロファイルし、2つの場所間で予想される出張時間より短い期間に異なる場所にある同じユーザーからアクティビティが検出されたときにアラートをトリガーします。 これは、別のユーザーが同じ資格情報を使用していることを示している可能性があります。 このような異常動作を検出するには、新しいユーザーのアクティビティパターンを学習させる7日間の最初の学習期間が必要です。</li>
+            <li>通常は偽装された<b>アクティビティ (ユーザー別)</b> -このポリシーは、環境をプロファイルし、ユーザーが1つのセッションで複数の偽装されたアクティビティを実行すると、通知をトリガーします。ブリーチが行われました。</li>
         </ol>
     </li>
     <li><a href="https://securescore.office.com/">Office 365 のセキュリティで保護さ</a>れたスコアのようなツールを活用して、アカウントのセキュリティの構成と動作を管理します。 

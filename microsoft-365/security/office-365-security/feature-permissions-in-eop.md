@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Microsoft Exchange Online Protection (EOP) を管理するタスクを実行するために必要なアクセス許可は、管理している機能に応じて異なります。
-ms.openlocfilehash: 411132bf009f7eb76556d64a8c887b94d92b36f4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 06223b0ec11df0b5a7bedc538913a55ca5998a01
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085691"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441554"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP の機能アクセス許可
 
 Exchange Online Protection (EOP) を管理するタスクを実行するために必要なアクセス許可は、管理している機能によって異なります。
-  
+
 EOP をセットアップするには、Office 365 グローバル管理者、または Exchange 社内管理者 (Organization Management 役割グループ) であることが必要です。
-  
+
 ## <a name="exchange-online-protection-permissions"></a>Exchange Online Protection アクセス許可
 
 EOP 機能を管理するために必要なアクセス許可は、次の表で確認してください。機能が複数の役割グループを示している場合、その機能を使用する役割グループを 1 つだけが割り当てる必要があります。
-  
+
 |**機能**|**必要なアクセス許可**|
 |:-----|:-----|
 |マルウェア対策|[組織の管理](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [検疫管理](http://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|

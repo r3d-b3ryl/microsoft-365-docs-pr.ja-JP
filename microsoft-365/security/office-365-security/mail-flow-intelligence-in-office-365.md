@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、Office 365 のコネクタを使用したメッセージ配信に関連付けられているエラーコード (メールフローインテリジェンスとも呼ばれます) について学ぶことができます。
-ms.openlocfilehash: 718634f17ad5dd54773f2dc00595d5651cd27b51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085597"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441544"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 でのメール フロー インテリジェンス
 
@@ -130,6 +130,6 @@ ms.locfileid: "37085597"
 
 ## <a name="other-error-codes"></a>その他のエラー コード
 
-Office 365 は、オンプレミスまたはパートナーの電子メールサーバーにメッセージを配信する際に問題が発生しています。 エラーに含まれる **宛先サーバー**の情報を確認して、ご使用の環境の問題を調べるか、構成エラーがあった場合はコネクタを変更します。 
+Office 365 は、オンプレミスまたはパートナーの電子メールサーバーにメッセージを配信する際に問題が発生しています。 エラーに含まれる **宛先サーバー**の情報を確認して、ご使用の環境の問題を調べるか、構成エラーがあった場合はコネクタを変更します。
 
 エラーがパートナー組織 (たとえば、サード パーティのクラウド サービス プロバイダー) によるものである場合、そのパートナーに連絡して問題を解決する必要があります。

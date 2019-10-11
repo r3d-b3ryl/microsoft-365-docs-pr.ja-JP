@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369428"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403246"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -44,7 +44,7 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
 
 ![Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオ](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://www.microsoft.com/microsoft-365/success/)」を参照してください。 
+その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)」を参照してください。 
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基盤インフラストラクチャの前提条件
 

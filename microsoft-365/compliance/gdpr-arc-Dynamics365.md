@@ -10,12 +10,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7583ded65033b172ecba05f315c7487bd4f9d0de
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+hideEdit: true
+ms.openlocfilehash: 5b41775a4ab68f1738748f6726842472288ce8f1
+ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698389"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37422394"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Dynamics 365 アカウンタビリティ対応準備チェックリスト
 
@@ -137,7 +138,7 @@ GDPR 関連のドキュメントの詳細については、「https://aka.ms/gdp
 | 8 <a name="8"> </a> | [Dynamics 365 SOC 2 タイプ 2 監査レポートとブリッジ レター](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 9 <a name="9"> </a> | [Dynamics 365 - 組み込みのセキュリティ機能の探索](https://www.microsoft.com/trustcenter/security/dynamics365-security) |
 | 10 <a name="10"> </a> | [誰がどのような条件でデータにアクセスできるか](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 11 <a name="11"> </a> | [サブプロセッサの契約: Microsoft との契約](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 11 <a name="11"> </a> | [サブプロセッサの契約: Microsoft との契約](https://www.microsoft.com/ja-JP/procurement/supplier-contracting.aspx#SSPA) |
 | 12<a name="12"> </a>  | [GDRP の下での Dynamics 365 違反の通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) |
 | 13 <a name="13"> </a> | [Microsoft Trust Center コンプライアンスの提供](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
 | 14 <a name="14"> </a> | [Dynamics 365 の侵入テストとセキュリティ評価レポート](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments) |

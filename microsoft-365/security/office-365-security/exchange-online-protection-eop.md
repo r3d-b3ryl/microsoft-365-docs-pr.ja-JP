@@ -1,5 +1,5 @@
 ---
-title: 'Exchange Online Protection '
+title: Exchange Online Protection
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
-ms.openlocfilehash: 36eaf667f2d38d27a8ef6a350817c5faf078a5d5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085694"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441564"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 Microsoft Exchange Online Protection (EOP) でホストされる電子メール フィルタリング サービスへようこそ。ここでは、EOP で作業を開始する前に注意すべき点をいくつか取り上げ、以下のコンテンツを使用します。
-  
+
 - EOP の詳細については、「[Exchange Online Protection サービスの説明](https://go.microsoft.com/fwlink/p/?LinkId=320619)」を参照してください。その他の有益なリソースとして、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」、「[EOP の一般的な FAQ](eop-general-faq.md)」、および「[EOP の機能](eop-features.md)」、および「[Exchange Online Protection ホームページ](https://go.microsoft.com/fwlink/?LinkId=279912)」があります。
 
 - EOP を初めて使うお客様は、まず「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照してください。 このトピックには、EOP を使い始める際に役立つ手順が記載されています。
@@ -30,7 +30,7 @@ Microsoft Exchange Online Protection (EOP) でホストされる電子メール 
 ## <a name="eop-help-for-administrators"></a>管理者向けの EOP ヘルプ
 
 EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリで構成されます。
-  
+
 - [Exchange Online Protection の概要](exchange-online-protection-overview.md): EOP のしくみについて説明し、追加情報へのリンクを提供します。
 
 - [EOP features](eop-features.md): EOP で使用できる機能の一覧を示します。
@@ -51,7 +51,7 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
 
 - [Exchange Online Protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md): 使用可能なレポートとトラブルシューティングツールについて説明します。
 
-- 「Exchange [Online Protection の exchange 管理センター」 ](exchange-admin-center-in-exchange-online-protection-eop.md): EOP サービスを管理するために、exchange 管理センター (EAC) 管理インターフェイスを介してアクセスおよびナビゲートする方法について説明します。
+- 「Exchange [Online Protection の exchange 管理センター」](exchange-admin-center-in-exchange-online-protection-eop.md): EOP サービスを管理するために、exchange 管理センター (EAC) 管理インターフェイスを介してアクセスおよびナビゲートする方法について説明します。
 
 - [Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): リモート PowerShell に関する情報を提供します。これにより、EOP サービスをコマンドラインから管理できます。
 
@@ -60,7 +60,7 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
 ## <a name="eop-help-for-end-users"></a>エンド ユーザー向けの EOP ヘルプ
 
 EOP エンド ユーザーによるスパム管理を支援するためのヘルプ コンテンツは、次のトピックで構成されます。
-  
+
 - [ユーザーとして検疫済みメッセージを検索して解放](find-and-release-quarantined-messages-as-a-user.md)する: エンドユーザーがスパム検疫ユーザーインターフェイスで自分のスパム検疫メッセージを見つけてリリースする方法を説明し、オプションで、それらを迷惑メールではないとして Microsoft に報告する方法について説明します。
 
 - [スパム、非スパム、フィッシング詐欺メッセージを分析のために microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): エンドユーザーがスパム (迷惑メール) メッセージと非スパム (迷惑メールではない) メッセージを microsoft に送信するさまざまな方法について説明します。 このトピックには、Microsoft Outlook および web 上の Outlook (旧称 Outlook Web App) で使用可能なレポートツールへのリンクが含まれています。

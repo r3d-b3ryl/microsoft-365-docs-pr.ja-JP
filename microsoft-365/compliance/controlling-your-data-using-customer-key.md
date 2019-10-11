@@ -14,12 +14,12 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for business で Office 365 の顧客キーを設定する方法について説明します。 顧客キーを使用して、組織の暗号化キーを制御し、Office 365 を使用して Microsoft のデータセンターで保存されているデータを暗号化するように構成します。
-ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d3e10a32aeedc90dc06257a29b63df8657157a0b
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085393"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435531"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>顧客キーを使用して Office 365 でデータを制御する
 
@@ -504,7 +504,7 @@ SharePoint Online と OneDrive for business の顧客キーを設定するには
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>SharePoint Online と OneDrive for business の各 geo にデータ暗号化ポリシー (DEP) を作成する
 <a name="CreateDEP4SPOODfB"> </a>
 
-DEP は、Azure Key Vault に格納されているキーのセットに関連付けられています。 1つの地理的な場所 (geo とも呼ばれます) 内のすべてのデータに DEP を適用します。 Office 365 の複数地域機能を使用している場合 (現在プレビュー中)、geo ごとに1つの DEP を作成できます。 複数地域を使用していない場合は、SharePoint Online と OneDrive for business で使用するために、1つの DEP を Office 365 で作成できます。 Office 365 は、DEP で識別されたキーを使用して、その地域のデータを暗号化します。 DEP を作成するには、前の手順で取得したキーの資格情報 Uri が必要です。 手順については[、「Azure Key Vault キーごとに URI を取得](controlling-your-data-using-customer-key.md#GetKeyURI)する」を参照してください。 
+DEP は、Azure Key Vault に格納されているキーのセットに関連付けられています。 1つの地理的な場所 (geo とも呼ばれます) 内のすべてのデータに DEP を適用します。 Office 365 の複数地域機能を使用する場合は、geo ごとに1つの DEP を作成できます。 複数地域を使用していない場合は、SharePoint Online と OneDrive for business で使用するために、1つの DEP を Office 365 で作成できます。 Office 365 は、DEP で識別されたキーを使用して、その地域のデータを暗号化します。 DEP を作成するには、前の手順で取得したキーの資格情報 Uri が必要です。 手順については[、「Azure Key Vault キーごとに URI を取得](controlling-your-data-using-customer-key.md#GetKeyURI)する」を参照してください。 
   
 念頭! DEP を作成するときには、2つの異なる Azure キーボルトに存在する2つのキーを指定します。 これらのキーが、地理的冗長性を確保するために2つの独立した Azure 領域に配置されていることを確認します。
   

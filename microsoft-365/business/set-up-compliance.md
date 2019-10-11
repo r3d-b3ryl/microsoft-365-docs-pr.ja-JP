@@ -10,21 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
-description: Office 365 Advanced Threat Protection を設定し、機密データを保護します。
-ms.openlocfilehash: 53741a7726222bb32329a401953be72257df95cc
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+description: コンプライアンス機能を設定して、データ損失を防ぎ、機密データにラベルを付けます。
+ms.openlocfilehash: a0ba2fa6dbe7c786d577ad7098c1790f569f5acc
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668395"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453920"
 ---
-# <a name="set-up-compliance-features"></a>コンプライアンス機能を設定する
+# <a name="set-up-compliance-features"></a>コンプライアンス機能のセットアップ
 
 Microsoft 365 Business には、データとデバイスを保護するための機能が用意されており、お客様の機密情報を安全に保つために役立ちます。
 
@@ -52,48 +50,21 @@ DLP には、さまざまなロケールに対して、多くの使用可能な�
     
 **保持:** 保持期間の終了時に、特定の時間だけ保持したり、コンテンツを完全に削除したりするために、カスタマイズされた保持ポリシーを有効にすることができます。 詳細については、「[アイテム保持ポリシーの概要](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)」を参照してください。
 
-## <a name="set-up-azure-information-protection-features"></a>Azure Information Protection 機能をセットアップする
+## <a name="set-up-sensitivity-labels"></a>機密ラベルを設定する
 
-Azure Information Protection (AIP) は、ラベルを適用することにより、ドキュメントや電子メールを分類し、必要に応じて保護します。 ラベルは、ルールと条件を定義する管理者、またはユーザーによって手動で、またはユーザーに推奨事項を与える組み合わせを使用して、自動的に適用できます。
+機密ラベルには、Azure Information Protection (AIP) プラン1が付属しており、ラベルを適用することにより、ドキュメントや電子メールを分類し、必要に応じて保護するのに役立ちます。 ラベルは、ルールと条件を定義する管理者、またはユーザーによって手動で、またはユーザーに推奨事項を与える組み合わせを使用して、自動的に適用できます。
 
-Web 上の Outlook では、次の組み込みのラベルと制限を電子メールに適用できます。
-  
-- **転送不可**: 受信者はメッセージを読み取ることはできますが、コンテンツを転送、印刷、またはコピーすることはできません
-    
-- **Encrypt**: メッセージ全体が暗号化されます。 暗号化されたコンテンツにアクセスする前に自分の id を確認する必要があり、暗号化を削除することはできません。
-    
-- **社外秘**: 組織内の従業員に電子メールのコンテンツと添付ファイルへの完全なアクセス許可は付与されますが、組織外のユーザーに対しては含まれません。 データ所有者は、任意の時点でコンテンツを追跡して取り消すことができます。
-    
-- **高機密**: この制限は機密性の高いデータに適用できるため、従業員はデータの表示、編集、および返信を行うことはできませんが、転送、印刷、またはコピーはできません。 データ所有者は、任意の時点でコンテンツを追跡して取り消すことができます。
+機密ラベルを設定するには、「[感度ラベルを作成して管理](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)する」のビデオを参照してください。
 
-### <a name="make-sure-azure-information-protection-is-activated"></a>Azure Information Protection がアクティブ化されていることを確認する
 
-AIP がアクティブ化されていることを確認するには
-
-1. [Azure portal](https://portal.azure.com/)にサインインします。
-
-2. [**すべてのサービス**] を選択し、[**検索] ボックス**に「 *Azure Information Protection* 」と入力します。
-
-3. 結果が表示されたら、 **Azure Information Protection**の横にある [開始] をクリックして、お気に入りにし、後で見つけやすいようにします。
-
-4. [ **Azure Information protection** \> **protection activation** ] を選択し、状態が [アクティブ] に設定されていることを確認します。 
-
-### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>Azure Information Protection ポリシーと既定のラベルを表示する 
-
-既存のラベルを表示および変更するには、次のようにします。
-
-1. [Azure Information Protection] ダッシュボードで、[**分類** \> **ラベル**] を選択します。 <br/>![Azure Information Protection の標準ラベル。](media/AIPLabels.png)
-
-2. 任意のラベルを選択してオプションを表示したり、表示名や色などを変更したりできます。
- 
-3. 独自のラベルを作成する場合は、「[変更して新しいラベルを作成](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2)する」を参照してください。 
 
 ### <a name="install-the-azure-information-protection-client-manually"></a>Azure Information Protection クライアントを手動でインストールする
 
 AIP クライアントを手動でインストールするには、次のようにします。
 
-1. [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=53018)から**azinfoprotection**をダウンロードします。
+1. **AzinfoProtection_UL**を[Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=53018)からダウンロードします。
  
-2. Word 文書を表示し、[**ホーム**] タブで [**保護**] オプションが有効になっていることを確認することで、インストールが正常に行われたことを確認できます。 <br/>![Word 文書内の [保護] タブのドロップダウン](media/Word_Protect.png)
+2. Word 文書を表示し、[**ホーム**] タブで [**秘密度**] オプションが有効になっていることを確認することで、インストールが正常に行われたことを確認できます。
+<br/>![Word 文書内の [保護] タブのドロップダウン](media/word-sensitivity.png)
 
 詳細については、「[クライアントをインストールする](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)」を参照してください。

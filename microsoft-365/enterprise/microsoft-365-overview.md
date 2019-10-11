@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: b5629edbdbd660a8548fc30809c408d88b18111b
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370464"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437843"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise は次の要素で構成されています。
 
 |||
 |:-------|:-----|
-| ローカルおよびクラウドベースのアプリと生産性サービス | Office 365 ProPlus、PC と Mac 用の最新の Office アプリ (Word、Excel、PowerPoint、Outlook など)、および電子メール、ファイルの保存とコラボレーション、会議などに使用できるオンラインサービスの完全なスイートが含まれています。 |
+| ローカルおよびクラウドベースのアプリと生産性サービス | Office 365 ProPlus、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。 |
 | Windows 10 Enterprise | 大規模および中規模の組織のニーズに対応しており、包括的な展開、デバイス、およびアプリの管理を使用して、最も生産性の高い、セキュリティで保護されたバージョンの Windows および IT プロフェッショナルをユーザーに提供します。 |
 | デバイス管理と高度なセキュリティサービス | Microsoft Intune が含まれています。これは、クラウドベースの enterprise mobility management (EMM) サービスであり、企業データを保護したまま、従業員の生産性を向上させるのに役立てることができます。 |
 |||
@@ -57,7 +57,7 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 
 ## <a name="get-the-big-picture"></a>大きな画像を取得する
 
-[Microsoft 365 Enterprise ポスター](media/Microsoft365Enterprise.pdf)は、次のものを一元的に表示する場所です。
+[Microsoft 365 Enterprise ポスター](media/m365-poster/Microsoft365Enterprise.pdf)は、次のものを一元的に表示する場所です。
 
 - Microsoft 365 Enterprise の利点と、アプリとサービスがその価値の柱にマップされる方法
 - Microsoft 365 Enterprise プランと、それらに含まれるコンポーネント 
@@ -65,20 +65,20 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 - 一般的な組織部門のための[Microsoft 365 プロダクティビティライブラリ](https://www.microsoft.com/microsoft-365/success/)と代表的なシナリオ
 - Microsoft 365 Enterprise[展開ガイド](deploy-microsoft-365-enterprise.md)を強調した導入ロードマップ
 
-[![Microsoft 365 Enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
+[![Microsoft 365 Enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
-ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)をクリックしてください。
+ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)をクリックします。
 
 
-## <a name="transition-your-entire-organization"></a>組織全体を移行する
+## <a name="transition-your-entire-organization"></a>組織全体の移行
 
 組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
 [![Microsoft 365 ポスターへの移行の画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-この2ページのポスターを使用すると、既存のインフラストラクチャをすばやく把握し、Microsoft 365 Enterprise の対応する製品またはサービスに移行するためのガイダンスを得ることができます。 これには、Windows および Office 製品と、デバイスの管理、id、情報や脅威の保護などのセキュリティ要素が含まれています。
+この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 および Office 2010 のクライアントとサーバーのサポート終了を回避する
 
@@ -98,7 +98,7 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 
 この1ページのポスターは、Windows 7 および Office 2010 のクライアントおよびサーバー製品がサポート終了を受けられないようにするための簡単な方法で、Microsoft 365 Enterprise で推奨されるパスとサポートが強調表示されています。
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="deploy"></a>展開
 

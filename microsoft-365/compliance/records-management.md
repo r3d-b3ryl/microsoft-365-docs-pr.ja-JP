@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 のレコードの管理
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のレコード管理を使用すると、組織の特定の保持スケジュールをファイル計画に適用し、コンテンツの完全なライフサイクルをサポートするために、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: b860c807fd936865c7a5a646096e212f138a2e79
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b5c1981cf2596554571e8b53059aa718aa561c
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086601"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440674"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 のレコードの管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "37086601"
 
 - **ファイル計画を使用して保持計画を移行および管理**し、[ファイル計画マネージャー](file-plan-manager.md)を使用して既存の保持計画を取り込むか、ファイル記述子と階層を展開して新しい計画を構築します。
 
-- **レコード ラベル内で保持と削除ポリシーを確立します**。 [保持](retention-policies.md#retaining-content-for-a-specific-period-of-time)と[廃棄](retention-policies.md#deleting-content-thats-older-than-a-specific-age)の期間は、最終更新日や作成日などのさまざまな要因に基づいて定義します。
+- **レコード ラベル内で保持と削除のポリシーを規定します**。 データの最終更新日または作成日を含むさまざまな要因に基づき、[保持](retention-policies.md#retaining-content-for-a-specific-period-of-time) および [廃棄](retention-policies.md#deleting-content-thats-older-than-a-specific-age) の期間を定義します。
 
 - [イベント ベースの保持](event-driven-retention.md)を使用して**イベント ベースの保持をトリガーします**。
 
@@ -38,6 +38,6 @@ ms.locfileid: "37086601"
 
 - **廃棄されたアイテムを廃棄確認で確認**し、 [廃棄レポートをエクスポート](disposition-reviews.md#export-the-disposition-items)し、さらに詳しく検証および報告します。
 
-- [適切なアクセス権を取得する](/security/office-365-security/protect-against-threats.md)ために、組織内のレコード管理機能に**特定のアクセス許可**を設定します。
+- [適切なアクセス権を取得する](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)ために、組織内のレコード管理機能に**特定のアクセス許可**を設定します。
 
 Microsoft 365 のレコード管理ソリューションを使用すると、組織の保持スケジュールをファイル計画に反映し、コンテンツの完全なライフサイクルをサポートするために、保持、レコード宣言、廃棄を管理することができます。

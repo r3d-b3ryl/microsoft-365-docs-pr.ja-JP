@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: d33839693001f36fbb56541775015f739300b043
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4f31af3fa63416d3b1bd7281f7712313252ad437
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288497"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440601"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>セットアップウィザードで Microsoft 365 Business をセットアップする
 
@@ -44,7 +44,7 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
     > [!IMPORTANT]
     > サインアップ中にドメインを購入した場合は、ここに [**ドメインの追加**] 手順は表示されません。 代わりに、[[ユーザーの追加](#add-users-and-assign-licenses)] に移動します。
 
-    ![[ドメインの追加] を選択します。](media/addadomainadmincenter.png)
+    ![[セットアップに移動] を選択します。](media/gotosetupinadmincenter.png)
     
 3. ウィザードで、使用するドメイン名 (contoso.com など) を入力します。
 
@@ -70,7 +70,9 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 
 1. Microsoft 365 Business サブスクリプションに既存のユーザーが存在する場合 (たとえば、Azure AD Connect を使用した場合)、すぐにライセンスを割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
 
-3. ユーザーを追加すると、追加した新しいユーザーと資格情報を共有するためのオプションも表示されます。 それらを印刷、メール、またはダウンロードできます。
+2. ユーザーを追加すると、追加した新しいユーザーと資格情報を共有するためのオプションも表示されます。 それらを印刷、メール、またはダウンロードできます。
+
+3. [組織のチームの作成] で、Teams を追加してユーザーを追加することを選択できます。 これは後で行うこともできます。 詳細については、「[会社全体のチームを作成する](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3)」を参照してください。
 
 4. 移行のメール メッセージをスキップして、[ **メール メッセージの移行**] ページで [ **次へ**] を選びます。 
 
@@ -86,14 +88,14 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
   
 1. セットアップ ウィザードでは通常、ユーザーのレジストラーが検出され、レジストラーの Web サイトで NS レコードを更新するための詳しい操作手順へのリンクが表示されます。 含まれていない場合は、ネームサーバーを[変更して、任意のドメインレジストラーで Office 365](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2)をセットアップします。 
 
-    - 既存の DNS レコード (既存の web サイトなど) があるが、DNS ホストが[ドメイン接続](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)に対して有効になっている場合は、[**レコードの追加**] を選択します。 
+    - 既存の DNS レコード (既存の web サイトなど) があるが、DNS ホストが[ドメイン接続](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)に対して有効になっている場合は、[**レコードの追加**] を選択します。 [**オンラインサービスの選択**] ページで、すべての既定値をそのまま使用し、[**次へ**] を選択して、DNS ホストのページで [**承認**] を選択します。
     - 他の DNS ホスト (ドメイン接続に対して有効になっていません) に既存の dns レコードがある場合は、自分の DNS レコードを管理して、既存のサービスが常に接続していることを確認してください。 詳細については、「[ドメインの基礎](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)」を参照してください。
 
         ![自分の DNS レコードを管理するドメインページに接続します。](media/connectyourdomainpage.png)
 
 2. ウィザードの手順を実行すると、電子メールとその他のサービスが設定されます。
 
-### <a name="set-up-security-policies-and-device-configurations"></a>セキュリティポリシーとデバイス構成を設定する 
+### <a name="protect-data-and-devices"></a>データとデバイスを保護する 
 
 ウィザードで設定したポリシーは、*すべてのユーザー*と呼ばれる[セキュリティグループ](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups)に自動的に適用されます。 管理センターで、ポリシーを割り当てるための追加のグループを作成することもできます。
 
@@ -113,7 +115,6 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 3. Windows 10 デバイスで[Office を自動的にインストール](install-office-on-windows-10-during-setup.md)するように選択することもできます。
 
     ![Windows 10 デバイス構成ページの設定のスクリーンショット。](media/setwin10config.png)
-
 
 
 ## <a name="deploy-office-365-client-apps"></a>Office 365 クライアントアプリを展開する

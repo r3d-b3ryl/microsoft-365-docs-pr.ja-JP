@@ -29,9 +29,9 @@
 ### [保護機能を Intune の設定にマップする](map-protection-features-to-intune-settings.md)
 ### [Android および iOS のアプリ保護の設定](app-protection-settings-for-android-and-ios.md)
 #### [Android または iOS の設定の検証](validate-settings-on-android-or-ios.md)
-### [Windows 10 PC の保護の設定](protection-settings-for-windows-10-pcs.md)
-#### [Windows 10 PC の設定の検証](validate-settings-on-windows-10-pcs.md)
-### [Windows 10 デバイスの保護の設定](protection-settings-for-windows-10-devices.md)
+### [Windows 10 の PC のデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)
+#### [Windows 10 PC の設定を検証する](validate-settings-on-windows-10-pcs.md)
+### [Windows 10 PC のアプリの保護設定](protection-settings-for-windows-10-devices.md)
 ## [Microsoft 365 Business への移行](migrate-to-microsoft-365-business.md)
 ## 請求
 ### [請求内容](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

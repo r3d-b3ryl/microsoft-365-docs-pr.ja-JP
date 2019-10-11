@@ -1,5 +1,5 @@
 ---
-title: Outlook on the web で迷惑メール報告機能をオフにする
+title: Outlook on the web で迷惑メール レポートを無効にする
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -11,18 +11,18 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: Office 365 管理者は、ユーザーが迷惑メールとして電子メールを報告する機能をオフにできます。
-ms.openlocfilehash: a2a8c2f9120ff4b1d2efab4d7ae63294ce7f923b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: de0e5d1aa51ececafc0d344b9907f6751a613370
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087063"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441174"
 ---
-# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Outlook on the web で迷惑メール報告機能をオフにする
+# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Outlook on the web で迷惑メール レポートを無効にする
 
 Web 上の outlook on the web (以前の outlook Web App) の迷惑メール報告オプションを使用して、outlook on the web[上](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)の outlook on the web を使用して分析することができます。 これらのオプションを使用しない場合は、管理者[は、次のコマンドレット](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx)を使用してオフにすることができます。 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 <a name="sectionSection0"> </a>
 
 - 予想所要時間 : 5 分

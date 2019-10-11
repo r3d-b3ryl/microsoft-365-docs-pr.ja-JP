@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business のセットアップ手順の概要について説明します。
-ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4be0a8aa1b050ee3e20a045eb2c07666765118ed
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288577"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440539"
 ---
-# <a name="overview-of-setup"></a>セットアップの概要
+# <a name="overview-of-setup"></a>手順の概要
 
 セットアップ手順のほとんどはセットアップウィザードで行うことができますが、その他のオプションも表示されます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "37288577"
         - 後で管理センターで[ユーザーを追加](add-users-m365b.md)することもできます。
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>手順 2: セキュリティポリシーを設定し、デバイスを構成する 
 
-  - [セットアップウィザード](set-up.md#set-up-security-policies-and-device-configurations)を使用して、デバイスとセキュリティのポリシーを構成します。 
+  - [セットアップウィザード](set-up.md#protect-data-and-devices)を使用して、デバイスとセキュリティのポリシーを構成します。 
   - また、後で[管理センター](view-policies-and-devices.md)および[Intune ポータル](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)で追加または編集することもできます。
   - セットアップウィザードのセキュリティ設定に加えて、次の設定を追加することによって、セキュリティを向上させることができます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "37288577"
    Windows 10 デバイスを Azure AD に参加させると、[手順 2](#step-2-set-up-security-policies-and-configure-devices)で設定したポリシーが適用されます。
 
    - Windows 10 Pro は Microsoft 365 Business の[前提条件](pre-requisites-for-data-protection.md)ですが、Windows 7 Pro、Windows 8 pro、または Windows 8.1 Pro を使用している場合は、サブスクリプションによって[windows 10 pro へのアップグレード](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)ができます。
-    - [セットアップウィザード](set-up.md#set-up-security-policies-and-device-configurations)を使用して、Windows 10 デバイスのポリシーを構成します。
+    - [セットアップウィザード](set-up.md#protect-data-and-devices)を使用して、Windows 10 デバイスのポリシーを構成します。
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4: Office 365 Business をインストールする
 - [セットアップウィザード](set-up.md#deploy-office-365-client-apps)を使用して、Windows デバイスに Office を自動的にインストールすることができます。
@@ -74,7 +74,7 @@ ms.locfileid: "37288577"
             
      [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、ユーザーに対して**新しい**windows 10 デバイスを自動的に事前構成することができますが、これを実行できる[パートナー](https://www.microsoft.com/solution-providers/search)を取得する方が簡単な場合があります。 [Microsoft ストア](https://go.microsoft.com/fwlink/?linkid=874598)に移動して、クラウドテクノロジエキスパートに購入した新しいデバイスのセットアップを依頼することもできます。
 
-- **オンプレミスのリソースにアクセスする**
+- **オンプレミス リソースへのアクセス**
 
      - 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法は推奨されており、この状態のデバイスはハイブリッド Azure AD 参加デバイスと呼ばれます。
 

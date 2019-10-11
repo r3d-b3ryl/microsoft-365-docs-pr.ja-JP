@@ -96,8 +96,8 @@
 ##### [Outlook on the web で迷惑メールとフィッシング詐欺を報告する](./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)
 ##### [Exchange Online Protection を使用して社内のメールボックスを保護する](./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md)
 ##### [Microsoft Outlook 用迷惑メール報告アドインのインストール](./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md)
-#####[Outlook on the web で迷惑メール レポートを無効にする](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
-#####[迷惑メールとバルク メールの違い](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
+##### [Outlook on the web で迷惑メール レポートを無効にする](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
+##### [迷惑メールとバルク メールの違い](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 #### [Office 365 でメール メッセージを検疫する](./office-365-security/quarantine-email-messages.md)
 ##### [管理者として検疫済みメッセージとファイルを管理する](./office-365-security/manage-quarantined-messages-and-files.md)
@@ -127,13 +127,14 @@
 
 
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
+#### [新着情報]()
+##### [Office 365 ATP の新機能](office-365-security/whats-new-in-office-365-atp.md)
 #### [管理者の ATP セットアップ タスク]()
 ##### [グローバル管理者のセットアップ タスク]()
 ###### [ATP の安全なリンク機能のポリシーを設定する](./office-365-security/set-up-atp-safe-links-policies.md)
 ###### [ATP の安全な添付ファイル機能のポリシーを設定する](./office-365-security/set-up-atp-safe-attachments-policies.md)
 ###### [「書き換えない」URL のカスタム リストを設定する](./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
 ###### [ブロックする URL のカスタム リストを設定する](./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
 ##### [役割管理者のセットアップ タスク]()
 ###### [SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする](./office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
 #### [脅威の分析によって最新の攻撃行動を理解する](./mtp/latest-attack-campaigns.md)

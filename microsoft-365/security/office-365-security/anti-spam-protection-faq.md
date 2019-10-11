@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: d36499815979fb0b5ac805a98f0c9320fc07a538
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086134"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441094"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
@@ -79,7 +79,7 @@ Exchange Online Protection のお客様: [Exchange Online protection でのレ�
   
  **Q. 誰かが私にメッセージを送りましたが、そのメッセージを見つけられません。 スパムとして検出された可能性があります。 調べるためのツールはありますか?**
   
-A. はい。メッセージ追跡機能を使用して、サービスを通過するメール メッセージを追跡し、メール メッセージがどのように処理されたのかを確認できます。 メッセージ追跡ツールを使用して、スパムとしてメッセージが設定された理由を調べる方法の詳細については、「[メッセージはスパムとしてマークされましたか?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)」を参照してください
+A. はい、メッセージ追跡ツールを使用すると、電子メールメッセージがサービスを通過するときに追跡して、どのような問題が発生しているかを確認することができます。 メッセージ追跡ツールを使用して、メッセージがスパムとしてマークされた理由を確認する方法の詳細については、「[メッセージがスパムとしてマークされましたか?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam) 」を参照してください。
   
  **Q. ユーザーがスパムを送信した場合、サービスはメールを調整 (速度制限) しますか?**
   

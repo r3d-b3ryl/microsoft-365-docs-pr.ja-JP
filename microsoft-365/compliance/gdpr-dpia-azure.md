@@ -10,12 +10,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: f0c96459a0ec99821f64aaf41cc888f54aa84bd8
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+hideEdit: true
+ms.openlocfilehash: 3269eb851ab21e98126bff6fbbf92a230450fdb2
+ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698169"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37422414"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>データ保護影響評価: Microsoft Azure を利用するデータ管理者向けガイダンス
 

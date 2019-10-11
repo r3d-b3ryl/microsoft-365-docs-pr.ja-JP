@@ -1,9 +1,9 @@
 ---
 title: トラブルシューティングとサポート情報
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,84 +14,78 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-ms.openlocfilehash: 2a8019ed58bfb88183d20a8292bd5a30d9b43f13
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c87744608930603f70e6be1132a0b405e9646b57
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086997"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441194"
 ---
 # <a name="troubleshooting-and-support-information"></a>トラブルシューティングとサポート情報
 
 このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-  
+
 ## <a name="troubleshooting-for-users"></a>ユーザー向けのトラブルシューティング
 
-迷惑メール報告アドインの追加後に、Microsoft Office Outlook で問題が発生することがあります。発生する可能性のある問題とそれらの問題を解決するためのヒントを以下に示します。 
-  
-- **[迷惑メールの報告]** をクリックしても何も起こらない
-    
-- 電子メール メッセージを選択した後に Outlook が応答しなくなった
-    
-- "配信不能" と返され、報告された迷惑メールを配信できない
-    
-### <a name="troubleshooting-tip"></a>トラブルシューティングのヒント
+迷惑メール報告アドインを追加した後、Microsoft Outlook で問題が発生することがあります。 発生する可能性のある問題とそれらの問題を解決するためのヒントを以下に示します。
 
-1. Microsoft Office Outlook を終了して再起動します。
-    
+- **[迷惑メールの報告]** をクリックしても何も起こらない
+
+- 電子メール メッセージを選択した後に Outlook が応答しなくなった
+
+- "配信不能" と返され、報告された迷惑メールを配信できない
+
+この問題を解決するには、次の手順を実行します。
+
+1. Outlook を閉じて、再起動します。
+
 2. テスト メッセージを作成して、送信できることを確認します。これを実行するには、テスト メッセージを自分が管理する別の電子メール アカウントに送信し、電子メール メッセージが受信されることを確認します。
-    
-問題が引き続き発生する場合は、IT 管理者に問い合わせてください。
-  
+
+問題が解決しない場合は、管理者に問い合わせてください。
+
 > [!TIP]
-> また [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) 宛てにレポートを送信し、Microsoft に直接スパム メッセージを報告することもできます。さらに、誤検知のメッセージについては [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) の電子メール アドレスに報告できます。詳細については、「 [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。 
-  
+> また [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) 宛てにレポートを送信し、Microsoft に直接スパム メッセージを報告することもできます。さらに、誤検知のメッセージについては [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) の電子メール アドレスに報告できます。詳細については、「 [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。
+
 ## <a name="troubleshooting-for-administrators"></a>管理者向けのトラブルシューティング
 
-管理者は、Microsoft Office Outlook 用迷惑メール報告アドインを使用しているユーザーの問題に対処する場合があります。以下に、発生する可能性のある問題を解決するためのヒントを示します。 
-  
- **問題:** ユーザーにシステム管理者に問い合わせるよう要求するエラー メッセージが連続して表示される。 
-  
-### <a name="troubleshooting-tip"></a>トラブルシューティングのヒント
+管理者は、Outlook 用迷惑メール報告アドインを使用しているユーザーに問題が発生することがあります。 以下に、発生する可能性のある問題を解決するためのヒントを示します。
+
+### <a name="problem-an-error-message-asking-users-to-contact-their-system-administrator-continually-appears"></a>問題: ユーザーにシステム管理者に問い合わせるよう要求するエラーメッセージが継続的に表示される
 
 1. 次のレジストリ キーの値を "Verbose" に設定します。
-    
-  - **32 ビット オペレーティング システムにインストールされている 32 ビット Outlook:**
-    
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel
-    
-  - **64 ビット オペレーティング システムにインストールされている 32 ビット Outlook:**
-    
-    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Junk Email Reporting\Addins\LoggingLevel
-    
-  - **64 ビット Outlook (必ず 64 ビット オペレーティング システムにインストールされる):**
-    
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel
-    
-2. Microsoft Office Outlook を再起動し、エラー メッセージが表示されたら報告するようユーザーに依頼します。
-    
-3. 次の場所にあるログ情報を収集します。 
-    
-    %LOCALAPPDATA%\Microsoft\Junk Email Reporting Add-in\SpamReporterAddinLog.txt
-    
-4. Exchange Online Protection テクニカル サポートに問い合わせ、ログ情報を提供します。 
-    
- **問題:** ユーザーが迷惑メールとして電子メールを送信したときに確認を受信しないよう選択したが、現在、そのオプションを元に戻すことを希望している。 
-  
-### <a name="troubleshooting-tip"></a>トラブルシューティングのヒント
 
-1. 次のレジストリ キーの値を "True" に設定します。HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk
-    
-2. Microsoft Office Outlook を再起動します。
-    
+   - **32 ビットオペレーティングシステムにインストールされ32た Outlook**:
+
+     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel`
+
+   - **32 ビットオペレーティングシステムにインストールされ64た Outlook**:
+
+     `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Junk Email Reporting\Addins\LoggingLevel`
+
+   - **64 ビット Outlook (常に64ビットオペレーティングシステムにインストールされます)**:
+
+     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel`
+
+2. Outlook を再起動し、エラーメッセージが表示された場合にユーザーに報告するように依頼します。
+
+3. 次の場所にあるログ情報を収集します。
+
+   `%LOCALAPPDATA%\Microsoft\Junk Email Reporting Add-in\SpamReporterAddinLog.txt`
+
+4. Exchange Online Protection テクニカル サポートに問い合わせ、ログ情報を提供します。
+
+### <a name="problem-users-choose-not-to-receive-a-confirmation-when-they-submit-an-email-as-junk-and-now-they-want-the-option-back"></a>問題: ユーザーがメールを迷惑メールとして送信したときに、確認メッセージを表示しないように選択した
+
+1. 次のレジストリキーの値を "True" に`HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk`設定します。
+
+2. Outlook を再起動します。
+
 ## <a name="support-information"></a>サポート情報
 
 アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Microsoft 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。 電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support FOR EOP](help-and-support-for-eop.md)」を参照してください。
-  
+
 ## <a name="for-more-information"></a>関連情報
 
 [レポート メッセージ アドインを有効にする](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
-  
-[迷惑メール メッセージを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)
-  
 
+[迷惑メール メッセージを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)
