@@ -13,21 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: セキュリティで保護された SharePoint チーム サイトを作成して、最も重要な機密ファイルを保存します。
-ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403188"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437827"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>厳しく規制されたデータ用の SharePoint サイト
 
 *このシナリオは、Microsoft 365 Enterprise の E3 および E5 の両バージョンに適用されます*
 
-Microsoft 365 Enterprise には、一連のクラウドベースのサービスが含まれており、ファイルに保存された厳しく規制されたデータを作成、保存、保護できます。データには次のようなものが含まれます。
+Microsoft 365 Enterprise には、一連のクラウドベースのサービスが含まれており、ファイルに保存された厳しく規制されたデータを作成、保存、保護、管理できます。これには次のようなデータが含まれます。
 
 - 地域の規制を遵守しているデータ。
 - 企業秘密、財務情報、人事情報、組織戦略など、組織にとって最も重要なデータ。
+
+>[!Note]
+> Microsoft Teams を使用する場合の同じシナリオは、開発中です。
+>
 
 上記のビジネス ニーズを満たす Microsoft 365 Enterprise のクラウドベースのシナリオは次のとおりです:
 
