@@ -99,11 +99,6 @@
 ## [Windows と Office の展開と Lab キット](modern-desktop-deployment-and-management-lab.md)
 ## [展開に関するヘルプを検索する](find-help-for-modern-desktop-deployment.md)
 
-# [ID とデバイスのアクセス構成](microsoft-365-policies-configurations.md)
-##[必須の作業](identity-access-prerequisites.md)
-## [共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)
-## [推奨される Exchange Online のアクセス ポリシー](secure-email-recommended-policies.md)
-## [推奨される SharePoint Online のアクセス ポリシー](sharepoint-file-access-policies.md)
 
 # [Microsoft 365 コンプライアンス](../compliance/index.yml)
 # [Microsoft 365 セキュリティ](../security/index.yml)
