@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 組織全体で Microsoft 365 Enterprise の Exchange Online の価値を計画、ロールアウト、および促進するプロセスについて順を追って説明します。
-ms.openlocfilehash: c11a4ca0216d42f039005616c5d414759b8c0bad
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437817"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453863"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Exchange Online の展開
 
@@ -74,8 +74,11 @@ Exchange Online メールボックスへのアクセスを保護するには、 
 これらのリソースを使用して、Exchange Online ロールアウトの技術的な側面を準備します。 
 
 - [複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
+- [Exchange Server のパブリックフォルダーを Exchange Online に移行する](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
+- [Exchange Server のパブリックフォルダーを Office 365 グループに移行する](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Exchange Online でのコラボレーション](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Exchange Online の受信者](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
+- [iOS 版および Android 版 Outlook](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
 
 Exchange Online のセキュリティをより深く理解するには、次のリソースを確認してください。
 
