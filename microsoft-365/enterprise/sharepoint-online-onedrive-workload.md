@@ -2,7 +2,7 @@
 title: SharePoint と OneDrive を Microsoft 365 Enterprise 向けに展開する
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で SharePoint を計画、ロールアウトするプロセス、および SharePoint Online の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: d8a61a6bc6b4dae431d94e7ccfb9fb0ea8019427
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329209"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37469149"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>SharePoint と OneDrive を Microsoft 365 Enterprise 向けに展開する
 
@@ -27,7 +27,7 @@ SharePoint と Microsoft Teams は、ファイルの保存と共有、コンテ�
 
 SharePoint には、アクセスの制御、アクセス許可、移動中および静的データの暗号化を含む、高度なセキュリティ機能も備わっています。SharePoint のセキュリティは、Microsoft 365 Enterprise のインテリジェント セキュリティの価値を引き出す重要な要素です。
 
-SharePoint を初めて使用する方は、「[SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software)」と「[SharePoint を使い始める](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics)」を参照してください。
+SharePoint を初めて使用する方は、「[SharePoint](https://products.office.com/sharepoint/collaboration)」と「[SharePoint を使い始める](https://support.office.com/article/video-what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121)」を参照してください。
 
 次に示す各フェーズと手順では、組織における SharePoint の役割を想定し、段階的な一連のロールアウトにより組織の研修を行い、それらの使用とエンドユーザーに対する価値を促進するプロセスを説明します。 まず始める前に、SharePoint サイトに必要なセキュリティ機能が備わるように、適切な[基礎インフラストラクチャチャ](deploy-workloads.md#foundation-infrastructure-prerequisites)のフェーズが設定されていることを確認します。 
 
@@ -50,18 +50,17 @@ OneDrive を Microsoft 365 Enterprise 向けに展開する方法については
 
 SharePoint はさまざまな目的で使用できます。どの目的がビジネス ニーズに当てはまるかを確認する必要があります。SharePoint のターゲットとして、チーム、事業部、または組織全体のコラボレーションのニーズに対応する、ドキュメントの保存と共有、コンテンツ管理、コラボレーションを対象とする必要があります。 
 
-[SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) のシナリオと機能のリストを参照してください。
+[SharePoint](https://products.office.com/sharepoint/collaboration ) のシナリオと機能のリストを参照してください。
 
 ビジネスの柱となる次の要素を、組織のニーズに対応させることができます。
 
 |||
 |:-----|:-----|
-| 共有と共同作業 | チーム サイトの活用、コラボレーション サイト、および同期。 |
+| 共有と共同作業 | チーム サイト、コミュニケーション サイト、および同期を活用します。 |
 | 情報伝達と連携 | 今後入ってくる情報。 |
-| 変換 | フローを使って、ストアまたはワークフローを作成します。 |
+| 変換 | Flow を使用して、アプリとサービス間の自動化されたワークフローを作成します。 |
 | 集合的な知識の利用 | 検索を使用して、組織内で目的とする結果が得られます。 |
 | 保護 | 組織がセキュリティで保護されており、適切なコンプライアンスを達成していることを確認します。 |
-| 外部/開発 | 組織の開発部門は、SharePoint Framework を使用してソリューションやアプリをカスタマイズできます。 |
 |||
 
 各自のニーズに合わせて SharePoint を構成する方法に関するリソースについては、「[SharePoint の管理](https://docs.microsoft.com/sharepoint/sharepoint-online)」を参照してください。
@@ -85,14 +84,11 @@ SharePoint サイトへのアクセスを保護するには、[ID とデバイ�
 
 ### <a name="step-1-complete-your-technical-planning"></a>手順 1: 技術計画を実施する
 
-技術計画を始める前に、FastTrack を使用するかどうかを決定します。 所属する組織が所有しているライセンスが 50 シートを超えていて、[対象となるプラン](https://technet.microsoft.com/library/dn783224.aspx) に参加している場合は、FastTrack の特典を利用することができます。この特典は、追加で費用がかからずに、計画、移行、展開、サービス導入にいたるまでのガイドとして利用できます。 また、この作業をお客様自身で完了することもできます。その場合は、Microsoft 365 アカウントでサインインすると [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) から利用できるようになる FastTrack オンボーディング ウィザードを使用します。
+技術計画を始める前に、FastTrack を使用するかどうかを決定します。 所属する組織が所有しているライセンスが 50 シートを超えていて、[対象となるプラン](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)に参加している場合は、FastTrack の特典を利用することができます。この特典は、追加で費用がかからずに、計画、展開、サービス導入にいたるまでのガイドとして利用できます。 また、この作業をお客様自身で完了することもできます。その場合は、Microsoft 365 アカウントでサインインすると [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) から利用できるようになる FastTrack オンボーディング ウィザードを使用します。
 
-各自で計画を策定している場合、または FastTrack を使用している場合には、ネットワークと組織が SharePoint を導入できる状態にあるかどうかを判断する必要があります。 特に、基礎インフラストラクチャのネットワークの終了条件を満たしており、SharePoint ベースのドキュメントのための追加トラフィックのパフォーマンスを最大限に引き出すため、インターネット帯域幅、スループット、トラフィック遅延に特別な注意を払うことが重要です。
+各自で計画を策定している場合、または FastTrack を使用している場合には、ネットワークと組織が SharePoint を導入できる状態にあるかどうかを判断する必要があります。 特に、基礎インフラストラクチャの[ネットワークの終了条件](networking-exit-criteria.md)を満たしており、SharePoint ベースのドキュメントのための追加トラフィックのパフォーマンスを最大限に引き出すため、インターネット帯域幅、スループット、トラフィック遅延に特別な注意を払うことが重要です。
 
-SharePoint の展開の技術的な側面に備えるには、以下のリソースを使用します。 
-
-- [SharePoint の計画ガイド](https://docs.microsoft.com/sharepoint/planning-guide)
-- [SharePoint に移行する](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 
+[[SharePoint に移行する](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)] を使用して、SharePoint ロールアウトを準備します。 
 
 SharePoint でのセキュリティの詳細については、次のリソースを参照してください。
 
@@ -108,8 +104,8 @@ SharePoint サイトとオンプレミス フォルダーおよびドキュメ�
 中規模～大規模な組織のほとんどでは、フェーズ 1 の関係者、早期導入者、熱心な技術者を集めて IT パイロットを実施する必要があります。 IT パイロットでは、次の作業を行います。
 
 - IT パイロット参加者の練習に使用できる SharePoint のビジネス シナリオを選択します。
-- パイロット参加者に、SharePoint ドキュメントの保存、共有、コラボレーション、チーム ベースのスケジューリング、その他の能力をテストするための一連の演習を実施します。
-- 変更管理戦略を決定し、資料を作成して、組織全体のユーザーによる SharePoint の導入を推進します。 変更管理に関する資料には、メールによる発表テキスト、社内トレーニング プラン、廊下のポスター、プレゼンテーションを入れることができます。 この資料で、SharePoint と意識を高めて使用を推進するという目標によるメリットについて組織に伝えます。 アイデアを得るには、[Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) の記事の変更管理戦略を参照してください。
+- パイロット参加者に、SharePoint ドキュメントの保存、共有、共同作業、その他の能力をテストするための一連の演習を実施します。
+- 変更管理戦略を決定し、資料を作成して、組織全体のユーザーによる SharePoint の導入を推進します。 変更管理に関する資料には、メールによる発表テキスト、社内トレーニング プラン、廊下のポスター、プレゼンテーションを入れることができます。 この資料で、SharePoint と意識を高めて使用を推進するという目標によるメリットについて組織に伝えます。 開始するには、「[SharePoint 導入のためのリソース](https://resources.techcommunity.microsoft.com/resources/SharePoint-adoption/)」を参照してください。
 - IT パイロットの参加者には、自信の体験に基づいて変更管理の資料をレビューしてもらいます。 その資料にはベスト プラクティスに関するヒントが記載されており、SharePoint の利点とその使用方法についての最適な説明がされています。
 
 #### <a name="result"></a>結果
