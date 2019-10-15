@@ -2,7 +2,7 @@
 
 # 作業の開始
 ## [コンプライアンス センターの新機能](whats-new.md)
-## [コンプライアンスコンテンツに対する最新の更新プログラム](recently-updated-topics-mcc.md)
+## [コンプライアンス コンテンツの最近の更新プログラム](recently-updated-topics-mcc.md)
 ## [Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)
 ## [セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
 ## [無料の Azure Active Directory サブスクリプションを使用する](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -17,8 +17,8 @@
 ## カスタマー キー
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
 ### [Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化](service-encryption-with-customer-key-faq.md)
-## [通信監督]()
-### [通信監督の詳細情報](supervision-policies.md)
+## [監督]()
+### [監督ポリシーの詳細情報](supervision-policies.md)
 ### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
 ## [情報障壁](information-barriers.md)
 ### [情報障壁ポリシーの定義](information-barriers-policies.md)
@@ -106,7 +106,7 @@
 ### [ファイル計画マネージャー](file-plan-manager.md)
 ### [保持ラベル](labels.md)
 ### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [イベント ベースの保持](event-driven-retention.md)
 ### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
 ## [データを破棄する](disposition-reviews.md)
@@ -127,7 +127,7 @@
 ### ファイル計画
 #### [ファイル計画マネージャー](file-plan-manager.md)
 #### [保持ラベル](labels.md)
-#### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [ラベル分析によるラベル使用状況を表示する](label-analytics.md)
 #### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
 #### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
@@ -328,9 +328,9 @@
 
 ## [調査データをエクスポートします](export-data.md)
 ### [エビデンスから文書をエクスポートします](export-documents-from-incident.md)
-### [エクスポート ジョブのダウンロード](download-export-jobs-from-a-data-investigation.md)
+### [エクスポート ジョブをダウンロードする](download-export-jobs-from-a-data-investigation.md)
 
-## [データ調査の設定を行います](configure-settings-datainvestigations.md)
+## 調査の設定を構成する
 ### [調査のメンバーを追加または削除します](add-remove-members.md)
 ### [検索と分析の設定を構成する](configure-search-analytics-settings.md)
 ### [調査を完了するか削除します](close-or-delete-investigation.md)
