@@ -1,8 +1,8 @@
 ---
 title: 'チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 1: Microsoft Cybersecurity ブリーフィング'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 5a4c2cf41ea7af809ba74fe5a4a59f52051850b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fa572e24a549be2f8f9a56d3f83e53d43a6c5294
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086065"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517516"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO ワークショップモジュール 1: Microsoft Cybersecurity ブリーフィング
 
 このモジュールでは、重要なセキュリティ対策、Microsoft cybersecurity reference architecture、cybersecurity の復元、インターネット機能 (IoT)、運用技術の概要について説明します。
 
 - PDF の概要をダウンロードする:[モジュール 1: Microsoft Cybersecurity ブリーフィング](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
-- PowerPoint の概要:[モジュール 1: Microsoft Cybersecurity ブリーフィング](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)をダウンロードする
+- PowerPoint の概要:[モジュール 1: Microsoft Cybersecurity ブリーフィング](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)をダウンロードする
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>パート 1: コースの概要と概要 (9:13)
 

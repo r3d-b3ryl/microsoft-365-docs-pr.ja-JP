@@ -1,8 +1,8 @@
 ---
 title: 'チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 4a: 脅威保護戦略'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 0bbc9cf6cb102067aadcacdb416f6f538bb2555b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086059"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517576"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO ワークショップモジュール 4a: 脅威保護戦略
 
 脅威保護、セキュリティの進化、戦略、およびセキュリティのロードマップに関する重要なな学習事項について説明します。
 
 - PDF の概要をダウンロードする:[モジュール 4a: 脅威保護戦略](../media/ciso-workshop-4a-threat-protection.pdf)
-- PowerPoint の概要をダウンロードする:[モジュール 4a: 脅威保護戦略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
+- PowerPoint の概要をダウンロードする:[モジュール 4a: 脅威保護戦略](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>概要: 脅威保護戦略 (4:37)
 

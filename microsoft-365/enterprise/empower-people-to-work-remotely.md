@@ -3,7 +3,7 @@ title: リモート ワーカーを支援する
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 10/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするインフラストラクチャとセキュリティを構成します。
-ms.openlocfilehash: b73e16a52741a6587e9ed903cab6ddfedf896973
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 9a9520f5246ec70a2b9947536c259c661a5bd44f
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403256"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37469159"
 ---
 # <a name="empower-remote-workers"></a>リモート ワーカーを支援する
 
@@ -69,6 +69,13 @@ ms.locfileid: "37403256"
   - ハイブリッド ID を持つ組織は、仮想プライベート ネットワーク (VPN) 接続の代わりに Azure AD アプリケーション プロキシを使用可能
 
 次のフェーズでは、リモート アクセスを可能にする Microsoft 365 Enterprise の機能を展開し、リモート ワーカーの採用を推進する手順について説明します。 これらのフェーズの要素がすでに展開されている場合は、次の要素に進む前に、それらの要素が上記の要件を満たしていることを確認してください。
+
+<a name="poster"></a> このシナリオを 1 ページにまとめた「[リモート ワーカーを支援するポスター](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)」を参照してください。
+
+[![リモート ワーカーを支援するポスター](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)して、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
+
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>フェーズ 1: リモート ワーカーに Microsoft 365 の機能を展開する
 

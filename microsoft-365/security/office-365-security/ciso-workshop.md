@@ -1,8 +1,8 @@
 ---
 title: チーフ情報セキュリティ責任者 (CISO) ワークショップ
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 95bfc90211b90e129e6b208ab09b6123c61ccaae
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086054"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523622"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>チーフ情報セキュリティ責任者 (CISO) ワークショップのトレーニング
 
@@ -32,7 +32,7 @@ CISO ワークショップのビデオおよび PDF/PowerPoint のダウンロ�
 
 - [モジュール 2: セキュリティ管理](ciso-workshop-module-2.md): 統合されたガイダンス、ポリシーの自動適用、監視を使用して、ハイブリッドエンタープライズ領域の可視性と制御を向上させる方法について説明します。
 
-- [モジュール 3: id およびアクセス管理](ciso-workshop-module-3.md): 最新の攻撃の多くはユーザー id を侵害するため、新しい id セキュリティ境界を構築して企業ネットワーク外のアセットを保護する方法について説明します。
+- [モジュール 3: モジュール 3-identity と Zero Trust ユーザーアクセス](ciso-workshop-module-3.md): ネットワーク境界の内部および外部で企業データを保護するための id とユーザーアクセス戦略にゼロの信頼概念を含める方法について説明します。
 
 - [モジュール 4a: 脅威保護戦略、パート I](ciso-workshop-module-4a.md): 脅威保護、セキュリティの進化、戦略、およびセキュリティのロードマップに関する重要なな学習事項について説明します。
 

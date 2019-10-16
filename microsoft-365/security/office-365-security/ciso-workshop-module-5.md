@@ -1,8 +1,8 @@
 ---
 title: 'チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 5: 情報保護'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: dc47a6eb6a7ff05afed86845699a459529de6dfc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 766993729b416b360d559a2d8cacf29a2a29c183
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086056"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517566"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>CISO ワークショップモジュール 5: 情報保護
 
 デバイス間での自動分類および永続的な暗号化によって機密情報を保護する方法について説明します。 モバイルデバイス、クラウドサービス、およびその他の企業資産間でのデータの継続的な監視に関する情報が含まれています。
 
 - PDF の概要をダウンロードする:[モジュール 5: 情報保護](../media/ciso-workshop-5-information-protection-strategy.pdf)
-- PowerPoint の概要:[モジュール 5: 情報保護](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx)をダウンロードする
+- PowerPoint の概要:[モジュール 5: 情報保護](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-5-information-protection-strategy.pptx)をダウンロードする
 
 ## <a name="introduction-information-protection-304"></a>概要: 情報保護 (3:04)
 

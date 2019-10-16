@@ -1,14 +1,31 @@
 # [Microsoft 365 セキュリティ](index.yml)
 
+## はじめに
+### [BDM のための Microsoft 365 セキュリティ](Microsoft-365-security-for-bdm.md)
+### [セキュリティ スコア](./mtp/microsoft-secure-score.md)
+### [最高情報セキュリティ責任者 (CISO) のワークショップ トレーニング](./office-365-security/ciso-workshop.md)
+#### [モジュール 1: Microsoft のサイバー セキュリティ ブリーフィング](./office-365-security/ciso-workshop-module-1.md)
+#### [モジュール 2: セキュリティ管理](./office-365-security/ciso-workshop-module-2.md)
+#### [モジュール 3: ID およびアクセス管理](./office-365-security/ciso-workshop-module-3.md)
+#### [モジュール 4 a: 脅威保護戦略、第 1 部](./office-365-security/ciso-workshop-module-4a.md)
+#### [モジュール 4 b: 脅威保護戦略、第 2 部](./office-365-security/ciso-workshop-module-4b.md)
+#### [モジュール 5: 情報保護](./office-365-security/ciso-workshop-module-5.md)
+
+
+## [ID とデバイスのアクセス構成](../enterprise/microsoft-365-policies-configurations.md)
+### [必須の作業](../enterprise/identity-access-prerequisites.md)
+### [共通 ID とデバイスのアクセス ポリシー](../enterprise/identity-access-policies.md)
+### [推奨される Exchange Online のアクセス ポリシー](../enterprise/secure-email-recommended-policies.md)
+### [推奨される SharePoint Online のアクセス ポリシー](../enterprise/sharepoint-file-access-policies.md)
+
+
 ## Microsoft Threat Protection
 ### [概要]()
 #### [Microsoft Threat Protection とは](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 セキュリティ センター](mtp/overview-security-center.md)
 
-
 ### [Microsoft 365 での検出](./mtp/hunting.md)
 
-### [セキュリティ スコア](./mtp/microsoft-secure-score.md)
 
 ### [レポート]()
 #### [レポートを監視し、表示する](./mtp/monitoring-and-reporting.md)
@@ -19,6 +36,7 @@
 
 ### [ServiceNow を介してチケットを管理する](./mtp/tickets.md)
 
+
 ## [Office 365 セキュリティ]()
 ### [概要]()
 #### [Office 365 のセキュリティ ロードマップ](./office-365-security/security-roadmap.md)
@@ -27,13 +45,8 @@
 #### [セキュリティ/コンプライアンス センターのアクセス許可](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 #### [ユーザーにセキュリティ センターへのアクセス権を付与する](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
-#### [最高情報セキュリティ責任者 (CISO) のワークショップ トレーニング](./office-365-security/ciso-workshop.md)
-##### [モジュール 1: Microsoft のサイバー セキュリティ ブリーフィング](./office-365-security/ciso-workshop-module-1.md)
-##### [モジュール 2: セキュリティ管理](./office-365-security/ciso-workshop-module-2.md)
-##### [モジュール 3: ID およびアクセス管理](./office-365-security/ciso-workshop-module-3.md)
-##### [モジュール 4 a: 脅威保護戦略、第 1 部](./office-365-security/ciso-workshop-module-4a.md)
-##### [モジュール 4 b: 脅威保護戦略、第 2 部](./office-365-security/ciso-workshop-module-4b.md)
-##### [モジュール 5: 情報保護](./office-365-security/ciso-workshop-module-5.md)
+
+
 
 
 ### [脅威からの保護](./office-365-security/protect-against-threats.md)
@@ -43,7 +56,6 @@
 ##### [マルウェア対策保護のよく寄せられる質問](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Office 365 のスパム対策とマルウェア対策の保護](./office-365-security/anti-malware-protection.md)
 ##### [スパム対策保護に関してよく寄せられる質問](./office-365-security/anti-spam-protection-faq.md)
-##### [Office 365 で送信スパムを制御する](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [スパム フィルターのルールとスパム フィルター ポリシーで無効な文字の使用を避ける](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Exchange Online の差出人セーフ リストと受信拒否リスト](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Office 365 でのメール メッセージの安全性に関するヒント](./office-365-security/safety-tips-in-office-365.md)
@@ -253,4 +265,8 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
+
+
+
+
 ## [Microsoft 365 コンプライアンス](https://docs.microsoft.com/microsoft-365/compliance/)

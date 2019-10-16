@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510544"
+ms.locfileid: "37523632"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
@@ -33,6 +33,15 @@ ms.locfileid: "37510544"
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>受信トレイ内の疑わしいメッセージを特定するには、どうすればよいですか。
 
 Web 上の Outlook.com および Outlook on the メッセージの送信者が識別できない場合、または送信者アドレスに表示されているものとは異なる場合のインジケーターを表示します。
+
+## <a name="you-see-a--in-the-sender-image"></a>送信者の画像に '? ' が表示される
+
+Outlook.com と web 上の Outlook が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者の写真に '? ' が表示されます。 
+
+![メッセージが検証に合格しませんでした](../media/message-did-not-pass-verification.jpg)
+
+認証に失敗したすべてのメッセージが悪意のあるものであるとは限りません。 ただし、送信者を認識しない場合は、認証されないメッセージの操作について注意する必要があります。 または、通常は送信者の画像に '? ' が含まれていない送信者を認識したが、突然表示を開始した場合は、送信者がスプーフィングされているという署名になることがあります。
+
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>未確認の送信者の処理を受信するメッセージを管理する方法 
 
@@ -49,14 +58,6 @@ Office 365 をご利用のお客様の場合は、セキュリティ & コンプ
     - Get-phishfilterpolicy コマンドレットを使用して、ドメインペアを追加します。 詳細については、「Get-phishfilterpolicy」および「Office のスプーフィング対策保護」を参照してください365
 
 また、電子メールトランスポートルール (Etr)、安全なドメインリスト (スパム対策ポリシー)、安全な送信者リスト、またはユーザーがこのユーザーを自分のドメイン内の "安全な送信者" として設定している場合にも、未検証の送信者の処理は適用されません。ボックス.
-
-### <a name="you-see-a--in-the-sender-image"></a>送信者の画像に '? ' が表示される
-
-Outlook.com と web 上の Outlook が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者の写真に '? ' が表示されます。 
-
-![メッセージが検証に合格しませんでした](../media/message-did-not-pass-verification.jpg)
-
-認証に失敗したすべてのメッセージが悪意のあるものであるとは限りません。 ただし、送信者を認識しない場合は、認証されないメッセージの操作について注意する必要があります。 または、通常は送信者の画像に '? ' が含まれていない送信者を認識したが、突然表示を開始した場合は、送信者がスプーフィングされているという署名になることがあります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -76,7 +77,7 @@ Via タグ: 送信者としての場合は、DKIM 署名のドメインまたは
 
 必ずしもそうではありません。 Outlook.com および web 上の Outlook は、メッセージ内に送信者を認証するためのその他のプロパティがある場合があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Outlook.com メールアカウントを保護する](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
