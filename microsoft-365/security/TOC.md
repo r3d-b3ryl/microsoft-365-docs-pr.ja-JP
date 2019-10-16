@@ -6,7 +6,7 @@
 ### [最高情報セキュリティ責任者 (CISO) のワークショップ トレーニング](./office-365-security/ciso-workshop.md)
 #### [モジュール 1: Microsoft のサイバー セキュリティ ブリーフィング](./office-365-security/ciso-workshop-module-1.md)
 #### [モジュール 2: セキュリティ管理](./office-365-security/ciso-workshop-module-2.md)
-#### [モジュール 3: ID およびアクセス管理](./office-365-security/ciso-workshop-module-3.md)
+#### [モジュール 3: ID とゼロ トラスト ユーザー アクセス](./office-365-security/ciso-workshop-module-3.md)
 #### [モジュール 4 a: 脅威保護戦略、第 1 部](./office-365-security/ciso-workshop-module-4a.md)
 #### [モジュール 4 b: 脅威保護戦略、第 2 部](./office-365-security/ciso-workshop-module-4b.md)
 #### [モジュール 5: 情報保護](./office-365-security/ciso-workshop-module-5.md)
@@ -99,6 +99,7 @@
 #### [Office 365 でのスプーフィング対策保護](./office-365-security/anti-spoofing-protection.md)
 ##### [スプーフィング インテリジェンスの詳細情報](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [スプーフィング インテリジェンス分析のチュートリアル](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [Outlook.com および Outlook on the web での不審なメッセージを特定する](./office-365-security/unverified-sender-feature.md)
 
 #### [EOP とは](./office-365-security/what-is-eop.md)
 ##### [IPv6 経由の匿名受信電子メール メッセージのサポート](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -160,7 +161,7 @@
 
 #### [脅威エクスプローラー (およびリアルタイムの検出)](./office-365-security/threat-explorer.md)
 ##### [脅威エクスプローラーのビュー](./office-365-security/threat-explorer-views.md)
-##### [Outlook.com および Outlook on the web での不審なメッセージを特定する](./office-365-security/unverified-sender-feature.md)
+
 
 #### [セキュリティを強化するための統合]()
 ##### [Office 365 の ATP と Microsoft Defender ATP の統合](./office-365-security/integrate-office-365-ti-with-wdatp.md)
