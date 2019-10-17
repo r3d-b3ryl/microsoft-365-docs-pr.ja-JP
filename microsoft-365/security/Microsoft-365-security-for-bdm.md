@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 環境の組織が現在直面している最も一般的な脅威と攻撃のシナリオ、およびこれらのリスクを軽減するために推奨される処置。
-ms.openlocfilehash: 16108f71702e2464721fa09fee4c6c298496a2c4
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: c847e11d141dd6b3b4ce7601631259ba73e1703f
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481368"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37556822"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 セキュリティ (ビジネス意思決定者向け) (Bdm)
 
-この記事では、Microsoft 365 環境の組織が現在直面している最も一般的な脅威と攻撃のシナリオ、およびこれらのリスクを軽減するために推奨される処置について説明します。 Microsoft 365 には、さまざまな構成済みセキュリティ機能が用意されていますが、お客様は、クラウドサービスへのアクセスに使用する独自の id、データ、デバイスをセキュリティで保護する責任を負う必要もあります。 
+この記事では、Microsoft 365 環境の組織が現在直面している最も一般的な脅威と攻撃のシナリオ、およびこれらのリスクを軽減するために推奨される処置について説明します。 Microsoft 365 には、さまざまな構成済みセキュリティ機能が用意されていますが、お客様は、クラウドサービスへのアクセスに使用する独自の id、データ、デバイスをセキュリティで保護する責任を負う必要もあります。 このガイダンスは、Thiagaraj (Microsoft Cloud Security アーキテクト) および Sundararajan (Microsoft シニアコンサルタント) によって開発されました。
 
 この記事は、作業の優先度別に編成されており、テナント、電子メール、SharePoint などの最も重要なサービスと資産を管理するために使用されるアカウントの保護から始まります。 これは、組織全体にわたって関係者と teams で進行状況を追跡できるように、次のスプレッドシートと連携するための系統的な方法を提供します。 [Microsoft 365 security For bdm スプレッドシート](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)。 
 
