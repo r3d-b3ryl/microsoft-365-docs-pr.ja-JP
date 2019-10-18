@@ -42,42 +42,42 @@ Office 365 ProPlus を使用して Windows 10 の展開を計画している場�
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
 <td><p><strong>ディレクトリとネットワークの準備</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/ja-JP/fasttrack/o365-onboarding-and-migration#core">コア オンボード</a>: Microsoft の FastTrack のスペシャリストが、現在のディレクトリ サービスと Azure Active Directory との間の ID の統合を行います。これはデスクトップ展開の一環として、Office 365 ProPlus、Microsoft Intune、OneDrive、他の Office 365 および EMS クラウド サービスに必要となります。</p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#core">コア オンボード</a>: Microsoft の FastTrack のスペシャリストが、現在のディレクトリ サービスと Azure Active Directory との間の ID の統合を行います。これはデスクトップ展開の一環として、Office 365 ProPlus、Microsoft Intune、OneDrive、他の Office 365 および EMS クラウド サービスに必要となります。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Office と LOB アプリの配信</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/ja-JP/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> の構成と展開: Microsoft の FastTrack のスペシャリストが、ユーザー ライセンスのプロビジョニング、クイック実行のためのインストール構成と更新設定、組織が System Center Configuration Manager を使用している場合のパッケージ作成のサポートを行います。</p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> の構成と展開: Microsoft の FastTrack のスペシャリストが、ユーザー ライセンスのプロビジョニング、クイック実行のためのインストール構成と更新設定、組織が System Center Configuration Manager を使用している場合のパッケージ作成のサポートを行います。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="step 4" height="144" width="144" /></td>
 <td><p><strong>ユーザー ファイルと設定の移行</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/ja-JP/fasttrack/o365-onboarding-and-migration#onedrive-for-business">OneDrive</a> の構成と実装: Microsoft の FastTrack のスペシャリストが、ユーザーライセンスのプロビジョニングと OneDrive 同期クライアントの設定のサポートを行います。組織のサブスクリプションが条件を満たしている場合、<a href="https://docs.microsoft.com/ja-JP/fasttrack/data-migration">FastTrack によってデータが OneDrive に移行されます</a>。</p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#onedrive-for-business">OneDrive</a> の構成と実装: Microsoft の FastTrack のスペシャリストが、ユーザーライセンスのプロビジョニングと OneDrive 同期クライアントの設定のサポートを行います。組織のサブスクリプションが条件を満たしている場合、<a href="https://docs.microsoft.com/en-us/fasttrack/data-migration">FastTrack によってデータが OneDrive に移行されます</a>。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="step 5" height="144" width="144" /></td>
 <td><p><strong>セキュリティとコンプライアンスに関する考慮事項</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/ja-JP/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Azure AD Premium</a>: Microsoft の FastTrack のスペシャリストが、Microsoft 365 を導入する際のセキュリティと情報保護レベルを向上させるためのサービスを提供します。Azure Multi-Factor Authentication、セルフサービスによるパスワードのリセット、Azure Active Directory 条件付きアクセスなどがサービスに含まれます。デバイスとエンドポイントのセキュリティに関しては、<a href="https://docs.microsoft.com/ja-JP/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a> のプロビジョニングとポリシーを使った Microsoft FastTrack によるサポートを利用することができます。</p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Azure AD Premium</a>: Microsoft の FastTrack のスペシャリストが、Microsoft 365 を導入する際のセキュリティと情報保護レベルを向上させるためのサービスを提供します。Azure Multi-Factor Authentication、セルフサービスによるパスワードのリセット、Azure Active Directory 条件付きアクセスなどがサービスに含まれます。デバイスとエンドポイントのセキュリティに関しては、<a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a> のプロビジョニングとポリシーを使った Microsoft FastTrack によるサポートを利用することができます。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>OS の展開と機能の更新</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/ja-JP/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>: Microsoft の FastTrack のスペシャリストが、ユーザーライセンスのプロビジョニング、新規デバイス用の Windows Autopilot の構成、Windows 10 や他のモバイル デバイス用の MDM ポリシーの構成を、アプリの展開を含めてサポートします。Wi-Fi プロファイルおよび VPN プロファイル、System Center Configuration Manager との共同管理などもサポート対象です。</p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>: Microsoft の FastTrack のスペシャリストが、ユーザーライセンスのプロビジョニング、新規デバイス用の Windows Autopilot の構成、Windows 10 や他のモバイル デバイス用の MDM ポリシーの構成を、アプリの展開を含めてサポートします。Wi-Fi プロファイルおよび VPN プロファイル、System Center Configuration Manager との共同管理などもサポート対象です。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="step 7" height="144" width="144" /></td>
 <td><p><strong>サービスとしての Office と Windows</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/ja-JP/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: Microsoft の FastTrack のスペシャリストが、Windows 10 および Office 365 ProPlus の更新ポリシーの構成のサポートを行います。<a href="https://docs.microsoft.com/ja-JP/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> についても、展開リングを設定して最新の状態を保てるように、Microsoft FastTrack のガイダンスを活用することができます。</p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: Microsoft の FastTrack のスペシャリストが、Windows 10 および Office 365 ProPlus の更新ポリシーの構成のサポートを行います。<a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> についても、展開リングを設定して最新の状態を保てるように、Microsoft FastTrack のガイダンスを活用することができます。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

@@ -67,23 +67,23 @@ PC の更新を実行するときにプライマリ Windows パーティショ�
 
 [Windows の既知のフォルダーを OneDrive にリダイレクトして移動する](https://docs.microsoft.com/ja-JP/onedrive/redirect-known-folders)
 
-既に OneDrive を使用している場合は、ユーザーが OneDrive または SharePoint から自分のデバイスに同期するフォルダーと場所を選択できることがわかるようになりますが、実際には、そのような設定作業がエンド ユーザーに負担をかけることになります。Known Folder Move では、ユーザー プロファイル内の [ドキュメント]、[デスクトップ] および [ピクチャ] フォルダーを対象にして、そのすべてを OneDrive で保護できます。この操作はユーザーが自分で実行することもできますが、このシナリオにとって重要なのは、[グループ ポリシー設定を使用して強制適用](https://docs.microsoft.com/ja-JP/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)することもできるということです。
+既に OneDrive を使用している場合は、ユーザーが OneDrive または SharePoint から自分のデバイスに同期するフォルダーと場所を選択できることがわかるようになりますが、実際には、そのような設定作業がエンド ユーザーに負担をかけることになります。Known Folder Move では、ユーザー プロファイル内の [ドキュメント]、[デスクトップ] および [ピクチャ] フォルダーを対象にして、そのすべてを OneDrive で保護できます。この操作はユーザーが自分で実行することもできますが、このシナリオにとって重要なのは、[グループ ポリシー設定を使用して強制適用](https://docs.microsoft.com/en-us/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)することもできるということです。
 
 Known Folder Move では、ユーザーは自分のワークフローを変更することはありません。OneDrive との同期前、同期中、同期の完了後のいずれの時点でも、まったく変化を感じません。グループ ポリシーを使用することで、ユーザーの [ドキュメント]、[ピクチャ] および [デスクトップ] が OneDrive で保護されていることを、そのユーザーに通知するかどうかも選択できます。通知しないことを選択すると、ダイアログなどの表示なしにバックグラウンドで実行されます。ユーザーは、新しい PC の納品時または PC の更新時にのみ意識することになります。ユーザーが自分の OneDrive アカウントにサインインするとすぐに、該当するファイルが再び使用できるようになり、ユーザーの新しい PC に復元されます。当然のことながら、OneDrive を使用することで、電話などのデバイスからのファイルの安全性をいつでも維持できます。
 
 セキュリティのさらなる強化のために、Azure Active Directory を利用した OneDrive の認証は、簡単に多要素認証の使用を有効化できます。また、ネットワーク アクティビティを制限するために、OneDrive で使用するアップロードおよびダウンロードの帯域幅を制御するポリシーを設定できます。
 
-すべてのユーザーを同時に移行する必要はありません。グループ ポリシー設定のロールアウトを段階化するか、[ドメインに参加している PC にファイルの同期を制限する](https://docs.microsoft.com/ja-JP/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps)ことが必要になる場合があります。
+すべてのユーザーを同時に移行する必要はありません。グループ ポリシー設定のロールアウトを段階化するか、[ドメインに参加している PC にファイルの同期を制限する](https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps)ことが必要になる場合があります。
 
 ## <a name="start-menu-and-task-bar-customization"></a>[スタート] メニューとタスク バーのカスタマイズ
 
 OneDrive は、ファイルとフォルダーを同期して保護することを目的としてます。アプリケーションや Windows の設定を同期するものではありません。そのために、これまではプロファイルをコピーする方法を使用して、ユーザーの [スタート] メニューとタスクバー設定の標準レイアウトを構成していました。Windows 10 Pro、Enterprise、および Education では、グループ ポリシー、MDM、PowerShell またはプロビジョニング パッケージを使用して、[カスタマイズされた [スタート] とタスクバーのレイアウト](https://docs.microsoft.com/ja-JP/windows/configuration/windows-10-start-layout-options-and-policies)を展開できます。再イメージングは不要です。また、レイアウトは、そのレイアウトを含んでいる .xml ファイルを上書きすることで簡単に更新できます。
 
-新しいレイアウトを簡単に作成するには、サンプルのシステムを構成して、PowerShell の [Export-StartLayout](https://docs.microsoft.com/ja-JP/powershell/module/startlayout/export-startlayout?view=win10-ps) コマンドレットを使用して XML ファイルを生成します。このファイルをネットワーク共有に配置するか、展開シーケンスの一環としてローカルにキャッシュします。つまり、ユーザーがサインインした後で、読み取り専用ファイルとしてアクセスできることのみが必要ということです。その後で、ポリシーまたは [Import-StartLayout](https://docs.microsoft.com/ja-JP/powershell/module/startlayout/import-startlayout?view=win10-ps) コマンドレットを使用すると、このファイルを参照できます。
+新しいレイアウトを簡単に作成するには、サンプルのシステムを構成して、PowerShell の [Export-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/export-startlayout?view=win10-ps) コマンドレットを使用して XML ファイルを生成します。このファイルをネットワーク共有に配置するか、展開シーケンスの一環としてローカルにキャッシュします。つまり、ユーザーがサインインした後で、読み取り専用ファイルとしてアクセスできることのみが必要ということです。その後で、ポリシーまたは [Import-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/import-startlayout?view=win10-ps) コマンドレットを使用すると、このファイルを参照できます。
 
 ## <a name="removing-unwanted-in-box-apps"></a>不要な付属アプリの削除
 
-Windows 10 には、標準インストールの一部として多数の便利な組み込みアプリが含まれていますが、これらの一部は管理対象の PC から削除できます。さらに、そうしたアプリ (XBOX や Zune Music など) が元に戻せなくなるようにインストールを構成することもできます。そのようなアプリの一覧は、[PowerShell Get-AppxPackage](https://technet.microsoft.com/ja-JP/library/hh856044.aspx) コマンドを使用して取得できます。それらのうちの不要なものは、[Remove-AppxPackage](https://technet.microsoft.com/ja-JP/library/hh856038.aspx) コマンドを使用して削除できます。また、展開前に Windows イメージ (.img) ファイルをオフラインでマウントし、[Deployment Image Servicing and Management (DISM)](https://docs.microsoft.com/ja-JP/windows-hardware/manufacture/desktop/what-is-dism) コマンド ライン ツールと [Remove-AppxProvisionedPackage](https://docs.microsoft.com/ja-JP/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) コマンドを使用して、不要なパッケージを抜き取っておくこともできます。
+Windows 10 には、標準インストールの一部として多数の便利な組み込みアプリが含まれていますが、これらの一部は管理対象の PC から削除できます。さらに、そうしたアプリ (XBOX や Zune Music など) が元に戻せなくなるようにインストールを構成することもできます。そのようなアプリの一覧は、[PowerShell Get-AppxPackage](https://technet.microsoft.com/ja-JP/library/hh856044.aspx) コマンドを使用して取得できます。それらのうちの不要なものは、[Remove-AppxPackage](https://technet.microsoft.com/ja-JP/library/hh856038.aspx) コマンドを使用して削除できます。また、展開前に Windows イメージ (.img) ファイルをオフラインでマウントし、[Deployment Image Servicing and Management (DISM)](https://docs.microsoft.com/ja-JP/windows-hardware/manufacture/desktop/what-is-dism) コマンド ライン ツールと [Remove-AppxProvisionedPackage](https://docs.microsoft.com/en-us/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) コマンドを使用して、不要なパッケージを抜き取っておくこともできます。
 
 ## <a name="next-step"></a>次の手順
 
