@@ -425,6 +425,165 @@
 ## [AD RMS による Exchange Online のメールの暗号化 ](information-rights-management-in-exchange-online.md)
 ### [IRM を設定してオンプレミスの AD RMS サーバーを使用する ](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
+# コンプライアンス認証
+## [Microsoft  コンプライアンスのサービス](offering-home.md)
+
+## グローバル
+### [CIS ベンチマーク](offering-cis-benchmark.md)
+### [CSA-STAR 構成証明](offering-csa-star-attestation.md)
+### [CSA-STAR 認定資格](offering-csa-star-certification.md)
+### [CSA-STAR 自己診断](offering-csa-star-self-assessment.md)
+### [ISO 20000-1:2011](offering-iso-20000-1-2011.md)
+### [ISO 22301](offering-iso-22301.md)
+### [ISO 27001](offering-iso-27001.md)
+### [ISO 27017](offering-iso-27017.md)
+### [ISO 27018](offering-iso-27018.md)
+### [ISO 27701](offering-iso-27701.md)
+### [ISO-9001](offering-iso-9001.md)
+### [SOC](offering-soc.md)
+### [WCAG 2.1](offering-wcag-2-1.md)
+
+## 政府機関
+### [CJIS](offering-cjis.md)
+### [CNSSI 1253](offering-cnssi-1253.md)
+### [DFARS](offering-dfars.md)
+### [DoD DISA L2,L4,L5](offering-dod-disa-l2-l4-l5.md)
+### [DoE 10 CFR Part 810](offering-doe-10-cfr-part-810.md)
+### [EAR (米国輸出管理者登録)](offering-ear.md)
+### [FedRAMP](offering-fedramp.md)
+### [FIPS 140-2](offering-fips-140-2.md)
+### [IRS 1075](offering-irs-1075.md)
+### [ITAR](offering-itar.md)
+### [NIST 800-171](offering-nist-sp-800-171.md)
+### [NIST CSF](offering-nist-csf.md)
+### [VPATS 第 508](offering-section-508-vpats.md)
+
+## 業種
+### 教育
+#### [FERPA](offering-ferpa.md)
+
+### エネルギー
+#### [NERC](offering-nerc-cip.md)
+
+### 財務
+#### [23 NYCRR Part 500](offering-23-nycrr-part-500.md)
+#### [AFM + DNB (オランダ)](offering-afm-dnb-netherlands.md)
+#### [APRA (オーストラリア)](offering-apra-australia.md)
+#### [AMF と ACPR (フランス)](offering-amf-acpr-france.md)
+#### [EBA (EU)](offering-eba-eu.md)
+#### [FCA (英国)](offering-fca-uk.md)
+#### [FFIEC (米国)](offering-ffiec-us.md)
+#### [FINMA (スイス)](offering-finma-switzerland.md)
+#### [FINRA 4511](offering-finra-4511.md)
+#### [FISC (日本)](offering-fisc-japan.md)
+#### [FSA (デンマーク)](offering-fsa-denmark.md)
+#### [GLBA](offering-glba.md)
+#### [KNF (ポーランド)](offering-knf-poland.md)
+#### [MA + ABS (シンガポール)](offering-mas-abs-singapore.md)
+#### [NBB + FSMA (ベルギー)](offering-nbb-fsma-belgium.md)
+#### [OSFI (カナダ)](offering-osfi-canada.md)
+#### [PCI DSS](offering-pci-dss.md)
+#### [RBI + IRDAI (インド)](offering-rbi-irdai-india.md)
+#### [SEC 17a-4](offering-sec-17a-4.md)
+#### [SOC](offering-soc.md)
+#### [SOX](offering-sox.md)
+#### [TruSight](offering-trusight.md)
+
+### 正常性
+#### [HDS (フランス)](offering-hds-france.md)
+#### [HIPAA/HITECH](offering-hipaa-hitech.md)
+#### [HITRUST](offering-hitrust.md)
+#### [MARS-E](offering-mars-e.md)
+#### [NEN-7510 (オランダ)](offering-nen-7510-netherlands.md)
+#### [NHS IG ツールキット (英国)](offering-nhs-ig-toolkit-uk.md)
+
+### 製造
+#### [FDA CFR Title 21 Part 11](offering-fda-cfr-title-21-part-11.md)
+#### [GxP](offering-gxp.md)
+#### [TISAX (ドイツ)](offering-tisax-germany.md)
+
+### メディア
+#### [CDSA](offering-cdsa.md)
+#### [DPP (英国)](offering-dpp-uk.md)
+#### [FACT (英国)](offering-fact-uk.md)
+#### [MPAA](offering-mpaa.md)
+
+### 小売
+#### [23 NYCRR Part 500](offering-23-nycrr-part-500.md)
+#### [AFM + DNB (オランダ)](offering-afm-dnb-netherlands.md)
+#### [AMF と ACPR (フランス)](offering-amf-acpr-france.md)
+#### [CDSA](offering-cdsa.md)
+#### [CIS ベンチマーク](offering-cis-benchmark.md)
+#### [CSA-STAR 構成証明](offering-csa-star-attestation.md)
+#### [DoE 10 CFR Part 810](offering-doe-10-cfr-part-810.md)
+#### [DPP (英国)](offering-dpp-uk.md)
+#### [EAR (米国輸出管理者登録)](offering-ear.md)
+#### [ENISA IAF (EU)](https://aka.ms/ENISA)
+#### [EU モデル条項](offering-eu-model-clauses.md)
+#### [EBA (EU)](offering-eba-eu.md)
+#### [EU 米国プライバシー シールド](offering-eu-us-privacy-shield.md)
+#### [FACT (英国)](offering-fact-uk.md)
+#### [FCA (英国)](offering-fca-uk.md)
+#### [FFIEC (米国)](offering-ffiec-us.md)
+#### [FINMA (スイス)](offering-finma-switzerland.md)
+#### [GDPR (EU)](offering-gdpr-eu.md)
+#### [GLBA](offering-glba.md)
+#### [HITRUST](offering-hitrust.md)
+#### [IRS 1075](offering-irs-1075.md)
+#### [ISO 27018](offering-iso-27018.md)
+#### [ISO-9001](offering-iso-9001.md)
+#### [ITAR](offering-itar.md)
+#### [KNF (ポーランド)](offering-knf-poland.md)
+#### [MARS-E](offering-mars-e.md)
+#### [MPAA](offering-mpaa.md)
+#### [NBB + FSMA (ベルギー)](offering-nbb-fsma-belgium.md)
+#### [NHS IG ツールキット (英国)](offering-nhs-ig-toolkit-uk.md)
+#### [NIST CSF](offering-nist-csf.md)
+#### [PCI DSS](offering-pci-dss.md)
+#### [VPATS 第 508](offering-section-508-vpats.md)
+#### [共有評価](offering-shared-assessments.md)
+#### [SOC](offering-soc.md)
+#### [LOPD (スペイン)](offering-lopd-spain.md)
+#### [Cyber Essentials Plus (英国)](offering-cyber-essentials-plus-uk.md)
+#### [G-Cloud (英国)](offering-g-cloud-uk.md)
+
+## 地域
+### アジア
+#### [CS マーク (日本)](offering-cs-mark-gold-japan.md)
+#### [DJCP (中国)](https://www.trustcenter.cn/compliance/default.html#DJCP)
+#### [GB 18030 (中国)](https://www.trustcenter.cn/compliance/default.html#GB18030)
+#### [ISMS (韓国)](offering-ISMS-korea.md)
+#### [MeitY (インド)](offering-meity-india.md)
+#### [MTCS (シンガポール)](offering-mtcs-singapore.md)
+#### [マイナンバー (日本)](offering-my-number-act-japan.md)
+#### [TRUCS (中国)](https://aka.ms/TRUCS-Compliance)
+
+### オーストラリア/パシフィック
+#### [CCSL/IRAP (オーストラリア)](offering-CCSL-IRAP-Australia.md)
+#### [NZ CC Framework (ニュージーランド)](offering-nz-cc-framework-nz.md)
+
+### ヨーロッパ
+#### [BIR 2012 (オランダ)](offering-bir-2012-netherlands.md)
+#### [C5 (ドイツ)](offering-c5-germany.md)
+#### [Cyber Essentials Plus (英国)](offering-cyber-essentials-plus-uk.md)
+#### [EN 301 549 (EU)](offering-en-301-549-eu.md)
+#### [ENS (スペイン)](offering-ens-spain.md)
+#### [ENISA IAF (EU)](https://aka.ms/ENISA)
+#### [EU モデル条項](offering-eu-model-clauses.md)
+#### [EU 米国プライバシー シールド](offering-eu-us-privacy-shield.md)
+#### [GDPR (EU)](offering-gdpr-eu.md)
+#### [G-Cloud (英国)](offering-g-cloud-uk.md)
+#### [IDW PS 951 (ドイツ)]()
+#### [IT Grundschutz Workbook (ドイツ)](offering-it-grundschutz-workbook-germany.md)
+#### [LOPD (スペイン)](offering-lopd-spain.md)
+#### [PASF (英国)](offering-pasf-uk.md)
+
+### 北アメリカ
+#### [カナダのプライバシーに関する法律](offering-canadian-privacy-laws.md)
+
+### 南アメリカ
+#### [PDPA (アルゼンチン)](offering-pdpa-argentina.md)
+
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
 # [Microsoft 365 セキュリティ](https://docs.microsoft.com/microsoft-365/security/)
