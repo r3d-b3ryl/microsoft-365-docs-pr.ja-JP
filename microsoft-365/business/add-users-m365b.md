@@ -10,24 +10,29 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Microsoft 365 Business で新しいユーザーを追加し、デバイスをセキュリティで保護し、役割を割り当てる方法について説明します。
-ms.openlocfilehash: 9451be8a13c78230d0314e6d4ac74a6c9d7564ae
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 0ea3a4845e46ed1d13abf966eea895aa394aebca
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287437"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574760"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>Microsoft 365 Busines にその他のユーザーを追加する
 
 ## <a name="add-new-users"></a>新しいユーザーを追加する
 
-1. の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
 2. 左側のナビゲーションで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。
 1. [**アクティブなユーザー** ] ページで、[**ユーザーの追加**] を選択します。
  4. [ **新しいユーザー**] ウィンドウで、必要な情報を入力します。 

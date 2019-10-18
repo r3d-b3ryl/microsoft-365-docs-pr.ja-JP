@@ -1,18 +1,18 @@
 ---
-title: 新しいデバイスを自分で登録する
+title: 新しいデバイスをユーザー自身が登録する
 description: Microsoft マネージドデスクトップで管理できるようにデバイスを自分で登録する
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1e42ebe38cea87b3fedc7ebd7bdb52ceb2f1b2c5
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 952fac18db8ecc31fcd041dbfdf45e6ee8edee75
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981728"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577763"
 ---
-# <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
+# <a name="register-new-devices-yourself"></a>新しいデバイスをユーザー自身が登録する
 
 Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Azure Portal で Microsoft Managed Desktop を使用してデバイスを登録できます。
 
@@ -64,9 +64,9 @@ Microsoft マネージドデスクトップは、ハードウェアハッシュ�
 
 登録を完了するには、CSV ファイル内のデータを1つのファイルに結合する必要があります。 これを簡単にするためのサンプル PowerShell スクリプトを次に示します。
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
-### <a name="register-devices"></a>デバイスの登録
+### <a name="register-devices"></a>デバイスを登録する
 
 CSV ファイルは、登録用に特定の形式である必要があります。 前の手順でデータを自分で収集した場合は、ファイルが正しい形式になっている必要があります。業者からファイルを取得する場合は、形式を調整する必要があります。
 
@@ -111,7 +111,7 @@ Microsoft マネージドデスクトップの[Azure ポータル](https://aka.m
 | 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
 | 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](#troubleshooting-device-registration)」を参照してください。 |
 | ユーザーの準備完了 | 登録が成功し、デバイスをエンドユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| アクティブ | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
+| Active | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
 | 未使用 | デバイスはエンドユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング

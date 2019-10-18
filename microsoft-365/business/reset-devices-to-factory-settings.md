@@ -14,17 +14,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 'Microsoft 365 Business を使用して Windows 10 デバイスを出荷時にリセットする方法について説明します。 '
-ms.openlocfilehash: 12e0bdbab430654fb80baa0313e63b2493e5077e
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 70e4fac2112db177587c04f58fbe8f8d0247ffa9
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37121180"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575720"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 

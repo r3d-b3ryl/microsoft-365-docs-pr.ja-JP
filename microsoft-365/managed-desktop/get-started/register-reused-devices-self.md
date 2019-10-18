@@ -1,18 +1,18 @@
 ---
-title: 既存のデバイスを自分で登録する
+title: 既存のデバイスをユーザー自身が登録する
 description: 再利用されたデバイスを登録します。これにより、Microsoft マネージドデスクトップで管理できるようになります。
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: c2527b18c422d53060398f90b7470db8b4959afa
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982950"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577773"
 ---
-# <a name="register-existing-devices-yourself"></a>既存のデバイスを自分で登録する
+# <a name="register-existing-devices-yourself"></a>既存のデバイスをユーザー自身が登録する
 
 >[!NOTE]
 >このトピックでは、既に所有しているデバイスを再利用して、Microsoft マネージドデスクトップで登録する手順について説明します。 新しいデバイスを使用している場合は、代わりに「 [Microsoft Managed Desktop で新しいデバイスを登録](register-devices-self.md)する」の手順に従います。
@@ -91,7 +91,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
     - モデル 
     - 求め 
     - ハードウェアハッシュ
-7. **[OK]** を選択します。
+7. **[OK]** をクリックします。
 
 **次に、** 次の手順に従ってレポートの表示を定義し、レポートを作成します。
 
@@ -176,11 +176,11 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 
 手動の PowerShell または flash drive メソッドによってハードウェアハッシュデータを収集した場合は、CSV ファイル内のデータを1つのファイルにまとめて登録を完了する必要があります。 これを簡単にするためのサンプル PowerShell スクリプトを次に示します。
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 ハッシュデータを1つの CSV ファイルに結合すると、[デバイスの登録](#register-devices)に進むことができるようになります。
 
-### <a name="register-devices"></a>デバイスの登録
+### <a name="register-devices"></a>デバイスを登録する
 
 CSV ファイルは、登録用に特定の形式である必要があります。 前の手順でデータを自分で収集した場合は、ファイルが正しい形式になっている必要があります。業者からファイルを取得する場合は、形式を調整する必要があります。
 
@@ -225,7 +225,7 @@ Microsoft マネージドデスクトップの[Azure ポータル](https://aka.m
 | 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
 | 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](#troubleshooting-device-registration)」を参照してください。 |
 | ユーザーの準備完了 | 登録が成功し、デバイスをエンドユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| アクティブ | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
+| Active | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
 | 未使用 | デバイスはエンドユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング

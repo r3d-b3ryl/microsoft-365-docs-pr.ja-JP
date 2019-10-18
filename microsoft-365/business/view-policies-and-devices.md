@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: グローバル管理者の資格情報を使用して Microsoft 365 business にサインインして、デバイスのポリシーとアクションを表示します。
-ms.openlocfilehash: 26cb0d4ebe819b6131aaa4d2e18ef3b2ad588a7c
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c961630f0698ed864bfb94b4672f92825089ea4c
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287577"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575450"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>ポリシーとデバイスの表示と管理
 
@@ -29,7 +33,7 @@ ms.locfileid: "37287577"
 
 ## <a name="view-and-edit-device-policies"></a>デバイスポリシーを表示および編集する
 
-1.  の管理センターに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>します。
+1.  <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 2. 左側のナビゲーションで、[**デバイス** \> **ポリシー**] を選択します。
 
     このページでは、ターゲット グループの作成、編集、変更、ポリシーの削除ができます。

@@ -11,18 +11,22 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 キャンペーンの条件付きアクセスポリシーを設定する方法について説明します。
-ms.openlocfilehash: dbb5231032d2faef0a7ecb2734226b34290c70bf
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 31f3b7f3678671af3b5ca3947dec37041b226fac
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288617"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575640"
 ---
 # <a name="set-up-conditional-access-policies"></a>条件付きアクセスポリシーを設定する
 

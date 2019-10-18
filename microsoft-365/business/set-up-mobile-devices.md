@@ -14,17 +14,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: IPhone または Android 電話機に Office をインストールすると、Office アプリの仕事ファイルは Microsoft 365 Business によって保護されます。
-ms.openlocfilehash: 81ec7eb980cbe35ced37ab3b25d87d77d9e4390a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 6dd18569f0d4b3c71f00004706c2430eb7c5ae43
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074692"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575610"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする
 
@@ -33,7 +34,7 @@ ms.locfileid: "34074692"
   
 この例は Outlook 用ですが、インストールするその他の Office アプリにも適用されます。
   
-## <a name="set-up-mobile-devices"></a>モバイル デバイスをセットアップする
+## <a name="set-up-mobile-devices"></a>モバイル デバイスのセットアップ
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   

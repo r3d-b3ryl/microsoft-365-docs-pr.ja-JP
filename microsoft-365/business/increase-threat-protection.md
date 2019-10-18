@@ -10,19 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、機密データを保護します。
-ms.openlocfilehash: 81197a8baf1c4d0cbfd898c41a305c1a99bab57c
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288117"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576020"
 ---
-# <a name="increase-threat-protection"></a>脅威保護を強化する
+# <a name="increase-threat-protection"></a>驚異の保護を強化する
 
 この記事は、Microsoft 365 サブスクリプションの保護を強化して、フィッシング、マルウェア、およびその他の脅威から保護するのに役立つ情報を示しています。 これらの推奨事項は、法律事務所や健康保険クリニックなど、セキュリティの必要性が増大する組織に適しています。
 
@@ -79,7 +82,7 @@ Office 365 または Microsoft 365 環境にはマルウェアからの保護が
 |次の手順を実行します。 . .  <br/> |受信者にメッセージで通知します。  <br/> |
 |メッセージテキストを指定する  <br/> |これらの種類のファイルは、悪意のあるコードを含むマクロを含んでいる可能性があるため、知られていないユーザーから開かないでください。  <br/> |
    
-詳細については、次のトピックを参照してください。
+詳しくは、次のトピックを参照してください。
   
 - [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -146,8 +149,6 @@ ATP のフィッシング対策ポリシーを作成するには、[この短い
 |メールボックスインテリジェンス  <br/> |既定では、新しいフィッシング対策ポリシーを作成すると、メールボックスインテリジェンスが選択されます。 最良の結果を得るために、この設定**をオンのままにして**おきます。  <br/> |
 |信頼できる差出人とドメインを追加する  <br/> |ここでは、独自のドメインまたは他の信頼されたドメインを追加できます。  <br/> |
 |適用対象  <br/> |[**受信者ドメイン**] を選択します。 **これらのいずれかの**下で、[**選択**] を選択します。 [ **+ 追加**] を選択します。 ドメインの名前の横にあるチェックボックスをオンにします (例: *contoso)。<span>[ <span>com*] の一覧で、[**追加**] を選択します。 [ **Done**] を選びます。  <br/> |
-   
-詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)セットアップする」を参照してください。
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>ATP の安全な添付ファイルを使用して悪意のある添付ファイルやファイルを保護する
 
