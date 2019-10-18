@@ -12,28 +12,33 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: ビジネスクラウドスイートのセットアップが完了した後に期待することについて説明します。
-ms.openlocfilehash: 62a1a64bea0db3793e903469d8898a789cbc4242
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: b11c247e8d857f8c7a4d41f633267038b3dd86c6
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288057"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574700"
 ---
-# <a name="help-users-connect-to-microsoft-365-business"></a><span data-ttu-id="a230d-103">ユーザーが Microsoft 365 Business に接続できるようにする</span><span class="sxs-lookup"><span data-stu-id="a230d-103">Help users connect to Microsoft 365 Business</span></span>
+# <a name="help-users-connect-to-microsoft-365-business"></a><span data-ttu-id="ae314-103">ユーザーが Microsoft 365 Business に接続できるようにする</span><span class="sxs-lookup"><span data-stu-id="ae314-103">Help users connect to Microsoft 365 Business</span></span>
 
-<span data-ttu-id="a230d-p101">セットアップが完了したら、既定のデバイス ポリシーが配置され、適用する準備ができます。モバイル デバイスで、ユーザーが Office アプリをダウンロードすると、ユーザーが職場または学校のアカウントを使用してサインインしたときに、ポリシーが適用されます。一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。ユーザーがセットアップして接続できるように、次のトピックを参照および共有してください。</span><span class="sxs-lookup"><span data-stu-id="a230d-p101">After completing setup, your default device policies are in place and ready to apply. On mobile devices, users will download Office apps and then policies are applied when the user signs in with their work or school account. There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade. Please reference and share the following topics to help users get setup and connected.</span></span>
+<span data-ttu-id="ae314-p101">セットアップが完了したら、既定のデバイス ポリシーが配置され、適用する準備ができます。モバイル デバイスで、ユーザーが Office アプリをダウンロードすると、ユーザーが職場または学校のアカウントを使用してサインインしたときに、ポリシーが適用されます。一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。ユーザーがセットアップして接続できるように、次のトピックを参照および共有してください。</span><span class="sxs-lookup"><span data-stu-id="ae314-p101">After completing setup, your default device policies are in place and ready to apply. On mobile devices, users will download Office apps and then policies are applied when the user signs in with their work or school account. There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade. Please reference and share the following topics to help users get setup and connected.</span></span>
   
-[<span data-ttu-id="a230d-108">Microsoft 365 Business ユーザーの Windows デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="a230d-108">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
+[<span data-ttu-id="ae314-108">Microsoft 365 Business ユーザーの Windows デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="ae314-108">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
   
-[<span data-ttu-id="a230d-109">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="a230d-109">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+[<span data-ttu-id="ae314-109">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="ae314-109">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
   
-[<span data-ttu-id="a230d-110">Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="a230d-110">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
+[<span data-ttu-id="ae314-110">Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="ae314-110">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
   
 
