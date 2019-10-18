@@ -87,9 +87,9 @@ Microsoft 管理アクティビティ API を使用して統一監査ログを�
 
 -   [Office 365 監査ログの検索を有効または無効にする](https://support.office.com/ja-JP/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [監査ログを検索する](https://support.office.com/ja-JP/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [監査ログを検索する](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/ja-JP//library/mt238501(v=exchg.160).aspx) (コマンドレット) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (コマンドレット) 
 
 -   [Office 365 監査ログの詳細なプロパティ](https://support.office.com/ja-JP/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
