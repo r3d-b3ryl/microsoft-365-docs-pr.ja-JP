@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982018"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590501"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -42,12 +42,12 @@ ms.locfileid: "36982018"
 |保護レベル|ポリシー|詳細情報|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](#require-mfa-based-on-sign-in-risk)| |
-|        |[モダン認証をサポートしていないクライアントをブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスルールをバイパスすることができます。そのため、これらをブロックすることが重要です。|
+|        |[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスルールをバイパスすることができます。そのため、これらをブロックすることが重要です。|
 |        |[リスクの高いユーザーがパスワードを変更する必要がある](#high-risk-users-must-change-password)|アカウントに対して高リスクのアクティビティが検出された場合に、サインイン時にユーザーにパスワードを変更することを強制します。|
 |        |[アプリ保護ポリシーを定義する](#define-app-protection-policies)|プラットフォームごとに1つのポリシー (iOS、Android、Windows)。|
 |        |[承認済みアプリの要求](#require-approved-apps)|携帯電話とタブレットにモバイルアプリの保護を適用する|
 |        |[デバイスコンプライアンスポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに1つのポリシー|
-|        |[準拠している Pc が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Pc の Intune 管理を強制する|
+|        |[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Pc の Intune 管理を強制する|
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](#require-mfa-based-on-sign-in-risk)| |
 |         |[準拠*して*いる pc とモバイルデバイスが必要](#require-compliant-pcs-and-mobile-devices)|Pc と携帯電話/タブレットに Intune 管理を強制する|
 |**高度な規制**|[*常に*MFA が必要](#require-mfa-based-on-sign-in-risk)|
@@ -110,7 +110,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|許可|アクセスの許可|はい|選択|
+|許可|アクセスの許可|正解|選択|
 ||MFA を要求|True|Check|
 ||デバイスを準拠としてマークする必要がある|False||
 ||ハイブリッドの Azure AD に参加しているデバイスが必要|False||
@@ -122,7 +122,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>モダン認証をサポートしていないクライアントをブロックする
+## <a name="block-clients-that-dont-support-modern-authentication"></a>先進認証をサポートしないクライアントはブロックする
 1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインします。 サインインに成功すると、Azure ダッシュボードが表示されます。
 
 2. 左側のメニューから **[Azure Active Directory]** を選びます。
@@ -141,13 +141,13 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 ||除外|例外セキュリティ グループ、サービス アカウント (アプリ ID)|必要に応じて一時的にメンバーシップを変更します|
 |クラウド アプリ|含める|このルールを適用するアプリを選択します。 たとえば、[Office 365 Exchange Online] を選択します。||
 |条件|構成済み|はい|クライアントアプリを構成する|
-|クライアントアプリ|構成済み|はい|モバイルアプリとデスクトップクライアント、その他のクライアント (両方を選択する)|
+|クライアント アプリ|構成済み|はい|モバイルアプリとデスクトップクライアント、その他のクライアント (両方を選択する)|
 
 **アクセス制御**
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|許可|アクセスをブロックする|はい|選択|
+|許可|アクセスをブロックする|正解|選択|
 ||MFA を要求|False||
 ||デバイスを準拠としてマークする必要がある|False||
 ||ハイブリッドの Azure AD に参加しているデバイスが必要|False||
@@ -176,7 +176,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 | 型 | [プロパティ] | 値                  | 注 |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | SSL 経由でのみ            | はい  |
+|      | Access     | SSL 経由でのみ            | 正解  |
 |      | Access     | パスワードの変更を必須とする | True  |
 
 **レビュー:** 該当なし
@@ -192,7 +192,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 - Android
 - Windows 10
 
-新しいアプリ保護ポリシーを作成するには、管理者の資格情報を使用して Microsoft Azure portal にログインしてから、[**モバイルアプリ] > [アプリ保護ポリシー**] に移動します。 [**ポリシーの追加**] を選択します。
+新しいアプリ保護ポリシーを作成するには、管理者の資格情報を使用して Microsoft Azure portal にサインインしてから、[**クライアントアプリ** > の**アプリ保護ポリシー**] に移動します。 [**ポリシーの作成**] を選択します。
 
 iOS と Android では、アプリ保護ポリシーのオプションが若干異なります。 以下のポリシーは Android 専用です。 他のポリシーのガイドとして使用します。
 
@@ -305,7 +305,7 @@ Windows 10 では、次の設定をお勧めします。
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|パスワード|モバイルデバイスのロックを解除するためのパスワードを要求する|必須||
+|Password|モバイルデバイスのロックを解除するためのパスワードを要求する|必須||
 ||単純なパスワード|Block||
 ||パスワードの種類|既定のデバイス||
 ||パスワードの最小文字数|シックス||

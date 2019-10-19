@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 4902a2273eef110ced9ae16c3b91f39ac990a736
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 66708fe214815640baf08adace292dee683e382b
+ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772484"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37593862"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から保護する
 
@@ -66,7 +66,7 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 
 このインフォグラフィックを、お客様のためのヒントと、キャンペーンチームのメンバーにダウンロードしてください。
 
-[!「キャンペーン情報画像を保護する](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)」 (ダウンロード/M365CampaignsWhatCanUsersDoToSecure)
+[![「キャンペーン情報を保護する」の図](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

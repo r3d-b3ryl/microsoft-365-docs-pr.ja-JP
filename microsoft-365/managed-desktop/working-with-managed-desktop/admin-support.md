@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40f26f83e8b3001d2010d3197020f067fc51aaae
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982478"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37159685"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの管理者サポート
 
@@ -50,7 +50,14 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 - **営業時間**-ほとんどの国では、勤務時間は 9:00 AM から 5:00 PM、太平洋標準時までです。
 - **アプリケーション互換性**-アプリケーション互換性の問題について考慮する場合は、Windows または Office の以前のバージョンと現在のバージョンの間で、同じバージョンのアプリケーションの reproduceable エラーが発生している必要があります。 アプリケーションの互換性の問題を解決するには、Microsoft がお客様の連絡ポイントを使用する必要があります。 個人は、Fast Track teams を直接操作して問題を調査および解決する必要があります。
 - **顧客の応答時間**お客様が予想される応答要件を満たすことができない場合、Microsoft は、少なくとも1つの重要度レベル (重大度 C) に対して要求をダウングレードします。お客様がアクションの要求に応答しない場合、Microsoft は最終要求の48時間以内にサポートリクエストを軽減し、終了します。
- 
+
+
+## <a name="providing-administrator-rights-to-specific-users"></a>特定のユーザーに管理者権限を提供する
+
+サポート担当者と協力して作業する際には、トラブルシューティングを支援するためにデバイス上のユーザーにローカル管理者権限を付与する必要があるかもしれません。 これを行うには、自分のアカウントに対して、Microsoft Intune でのグローバル管理者またはデバイス管理者の権限を持っている必要があります。 状況に応じて、次のいずれかの手順を実行します。
+
+- ユーザーがオンプレミスの Active Directory アカウントから同期されている場合は、管理者特権でのコマンドプロンプトから**net localgroup administrators/add "Contoso\username"** を実行します。
+- ユーザーが Azure Active Directory で作成されている場合は、管理者特権でのコマンドプロンプトから**net localgroup administrators/add "AzureAD\UserUpn"** を実行します。
 
 ## <a name="additional-resources"></a>その他の技術情報
 - [Microsoft マネージドデスクトップのエンドユーザーサポート](end-user-support.md)。 

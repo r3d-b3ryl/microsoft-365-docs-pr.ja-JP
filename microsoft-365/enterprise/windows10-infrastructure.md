@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 0b98e48b128eeaea0e0dd5cb9613ece95e991861
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7253ea698613a38988bd7a6942a4908e9c797e2a
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982748"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37372768"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise には、Windows 10 Enterprise が含まれています。これにより、より多くの機能を提供し、安全な状態を維持できます。 Windows 10 Enterprise:
 
@@ -42,7 +42,7 @@ Windows 10 オペレーティングシステムを展開するためのさまざ
 | [System Center Configuration Manager を一括アップグレードとして使用する](windows10-deploy-inplaceupgrade.md) | Windows 7 または Windows 8.1 コンピューターを Windows 10 Enterprise の<a href="https://aka.ms/windows-10-release-information" target="_blank">現在のバージョン</a>にアップグレードする必要があり、コンピューターが現在<a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (current branch)</a>で管理されている場合は、このオプションを選択します。 |
 | [Windows 自動操縦の使用](windows10-deploy-autopilot.md) | Windows 10 Enterprise、バージョン1703以降が事前インストールされている Windows コンピューターを新たにセットアップする場合は、このオプションを選択します。 エンドユーザーは、職場または学校のアカウントの資格情報を入力することによって、目的の構成を使用してセットアップを開始します。 |
 
-これらの展開シナリオが組織のニーズに合わない場合は、他のシナリオについて学習し、 [Windows 10 の展開シナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)での各機能と制限事項について理解することができます。 また、 <a href="https://aka.ms/planforwin10deployment" target="_blank">Windows 10 の展開を</a>独自に計画することもできます。
+これらの展開シナリオが組織のニーズに合わない場合は、他のシナリオについて学習し、 [Windows 10 の展開シナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)での各機能と制限事項について理解することができます。 自分で<a href="https://aka.ms/planforwin10deployment" target="_blank">Windows 10 の展開を計画</a>することもできます。
 
 Windows 10 の詳細については、次の記事を参照してください。
 
@@ -78,10 +78,10 @@ Microsoft の内部を見ることで、会社が[Windows 10 Enterprise を展�
 
 架空の多国籍企業である Contoso Corporation が[Windows 10 Enterprise を展開](contoso-win10.md)した方法を参照してください。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Windows 10 Enterprise を組織で展開するための準備](windows10-prepare-your-org.md) |
+|![手順 1](./media/stepnumbers/Step1.png)| [Windows 10 Enterprise を組織で展開するための準備](windows10-prepare-your-org.md) |

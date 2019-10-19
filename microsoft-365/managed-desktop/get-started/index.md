@@ -1,23 +1,21 @@
 ---
-title: Microsoft マネージドデスクトップの使用を開始する
+title: Microsoft マネージド デスクトップの使用を開始する
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: a79b71a836444ff745e2e9c64fce023db81c1d17
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390504"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595583"
 ---
-# <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの使用を開始する
+# <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの使用を開始する
 
-Microsoft マネージドデスクトップでは、デスクトップデバイスの管理がエンタープライズクラウドインフラストラクチャに移行されます。 
+このセクションでは、サービスに登録する準備が整ったら、サービスに参加するための手順、デバイスの取得と設定、エンドユーザーの準備、およびアプリの展開について説明します。
 
-## <a name="in-this-section"></a>このセクションの内容
-
-- [管理者の連絡先を追加する](add-admin-contacts.md)
-- [デバイスの注文](devices.md)
+- [Microsoft Managed Desktop 管理ポータルで管理者の連絡先を追加する](add-admin-contacts.md)
+- [Microsoft マネージドデスクトップデバイスをセットアップする](set-up-devices.md)
+- [アプリを Microsoft マネージドデスクトップデバイスに展開する](deploy-apps.md)
