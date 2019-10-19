@@ -3,7 +3,7 @@ title: EOP および Office 365 の構成のベストプラクティス-ATP の�
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 推奨事項 積極的に使用する必要があるもの Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: fb6a39756c54e46f5ac8208c9c92af30bc144a57
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: b40b4189ed996e1b2f671b77602630f2a98966a5
+ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37387156"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598301"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティを構成するためのベストプラクティス
 
@@ -32,14 +32,14 @@ EOP で推奨およびアグレッシブと呼ばれる2つのセキュリティ
 
 SPF、DKIM、DMARC は、Sender Policy Framework、DomainKeys で識別されたメール、ドメインベースのメッセージ認証、レポート、および適合性 (非常に高い) の略語で、電子メールの認証と検証の基盤となります。
 
-これらのメソッドは、Office 365 からの送信電子メールを処理し、ドメインからの電子メールが有効であることを宛先システムが信頼することをサポートします。 これは、Office 365 の*外部*に構成することについて説明する唯一のベストプラクティスであり、DNS に含まれています。 特定の構成手順については、「セキュリティとコンプライアンスの目次」の「[電子メールの検証と認証](https://docs.microsoft.com/en-us/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing)」セクションを参照してください。
+これらのメソッドは、Office 365 からの送信電子メールを処理し、ドメインからの電子メールが有効であることを宛先システムが信頼することをサポートします。 これは、Office 365 の*外部*に構成することについて説明する唯一のベストプラクティスであり、DNS に含まれています。 特定の構成手順については、「セキュリティとコンプライアンスの目次」の「[電子メールの検証と認証](https://docs.microsoft.com/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing)」セクションを参照してください。
 
 
 |セキュリティ機能の名前  |推奨 |性  |Comment  |
 |---------|---------|---------|---------|
-|[SPF レコードを作成する](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Y        |    Y     |   -      |
-|[ドメインの DKIM 署名を構成する](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Y       |    Y     |  -       |
-|[Reject または quarantine アクションを使用して DMARC を実装する](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Y      |     Y    |   推奨される場合は action = none、アグレッシブの場合は action = reject を使用します。     |
+|[SPF レコードを作成する](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | はい        |    はい     |   -      |
+|[ドメインの DKIM 署名を構成する](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  はい       |    はい     |  -       |
+|[Reject または quarantine アクションを使用して DMARC を実装する](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)     |   はい      |     はい    |   推奨される場合は action = none、アグレッシブの場合は action = reject を使用します。     |
 
 > [!IMPORTANT]
 > セキュリティロールとアクセス許可を操作するには、Office 365 またはセキュリティ/コンプライアンスセンターに適切な役割を持っていることを確認してください。 Azure Active Directory の*セキュリティ管理者*、Office 365 の*全体管理者*、または Exchange Online/Exchange Online Powershell の*exchange online 組織マネージャー*の場合は、準備が整っています。
@@ -56,12 +56,12 @@ Phising フィルターは、Office 365 では既定で有効になっていま�
 
 |セキュリティ機能の名前  |推奨 |性  |Comment  |
 |---------|---------|---------|---------|
-|検疫の保存期間    |   Y      |     Y    |   30 日間   |
-|エンドユーザーのスパム通知の頻度   |   Y      |     Y    |   3 日間   |
-|ゼロ時間自動削除を有効にする   |   Y      |     Y    |   はい  |
-|スパム検出アクションをに送信する必要があります。 | JMF | 検疫 | - |
-|信頼度の高いスパム検出アクションを送信する必要がある | 検疫 | 検疫| - |
-|一括検出アクションをに設定する必要があります | JMF | 検疫 | - |
+|検疫の保存期間    |   はい      |     はい    |   30 日   |
+|エンドユーザーのスパム通知の頻度   |   はい      |     はい    |   3 日間   |
+|ゼロ時間自動削除を有効にする   |   はい      |     はい    |   True  |
+|スパム検出アクションをに送信する必要があります。 | JMF | Quarantine | - |
+|信頼度の高いスパム検出アクションを送信する必要がある | Quarantine | Quarantine| - |
+|一括検出アクションをに設定する必要があります | JMF | Quarantine | - |
 |バルクメールしきい値をに設定する | シックス | 2/4 | - |
 |安全のヒントを有効にする必要がある| True | True | - |
 |エンドユーザーのスパム通知を有効にする| True | False | - |
@@ -121,7 +121,7 @@ Phising フィルターは、Office 365 では既定で有効になっていま�
 |され |NoAction |Block | - |
 |MailboxIntelligenceProtectionAction |NoAction |Block | - |
 |TargetedDomainProtectionAction |NoAction |Block | - |
-|AuthenticationFailAction |MoveToJmf |検疫 | - |
+|AuthenticationFailAction |MoveToJmf |Quarantine | - |
 |AntiSpoofEnforcementType |高 |高 | - |
 |Enableauthenticationsaf Etytip |False |True | - |
 |EnableAntiSpoofEnforcement |True |True | - |
@@ -135,7 +135,7 @@ Phising フィルターは、Office 365 では既定で有効になっていま�
 前述したように、E3 サブスクリプションで Office 365 ATP プラン1を追加するか、完全に実現された ATP プラン2を追加することをお勧めします。 高度なフィッシング対策は、その理由の1つです。 [有効] 既定では、運用のためのポリシーを使用して、フィッシング対策を構成***する必要があり***ます。 フィッシング対策ポリシーの構成を忘れると、ユーザーはリスクにさらされることになります。そのためには、ATP のサブスクリプションを追加した後に、手順2を実行してください。
 
 > [!IMPORTANT]
->  E5 サブスクリプションを使用している場合は、現在、 [ATP プラン 2](https://products.office.com/en-us/exchange/advance-threat-protection)があります。 [ATP の新機能](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff)を確認するには、このリンクをクリックしてください。
+>  E5 サブスクリプションを使用している場合は、現在、 [ATP プラン 2](https://products.office.com/exchange/advance-threat-protection)があります。 [ATP の新機能](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff)を確認するには、このリンクをクリックしてください。
 
 ### <a name="advanced-anti-phishing"></a>高度なフィッシング対策
 
@@ -153,7 +153,7 @@ EOP に Office 365 ATP サブスクリプションを追加した場合は、次
 |偽装防止保護を有効にする | はい | はい | - |
 |スパム対策ポリシーでメールボックスインテリジェンスを有効にする | はい | はい | - |
 |メールボックスインテリジェンスベースの偽装保護を有効にする | はい | はい | - |
-|ドメイン偽装アクション | JMF | 検疫 | - |
+|ドメイン偽装アクション | JMF | Quarantine | - |
 |ユーザー偽装アクション | JMF | Qurantine | - |
 |メールボックスインテリジェンスベースの偽装保護アクション |部  |JMF | - |
 
@@ -178,7 +178,7 @@ EOP に Office 365 ATP サブスクリプションを追加した場合は、次
 
 |セキュリティ機能の名前  |推奨 |性  |Comment  |
 |---------|---------|---------|---------|
-|ATP の安全な添付ファイルポリシーアクションは、 |検疫 |検疫 |- |
+|ATP の安全な添付ファイルポリシーアクションは、 |Quarantine |Quarantine |- |
 |OneDrive、SharePoint、および Teams に対して ATP 保護を有効にする必要がある |はい |はい |- |
 <!--
 |Allowed file hashes | | | |

@@ -37,4 +37,4 @@
 ## [デバイスを工場出荷時の設定にリセットする](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # セキュリティ インシデントの管理
-## [侵害された電子メール アカウントへ対応する](/office365/securitycompliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json)
+## [侵害された電子メール アカウントへ対応する](../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json)
