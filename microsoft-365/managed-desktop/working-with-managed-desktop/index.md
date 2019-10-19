@@ -1,25 +1,22 @@
 ---
-title: Microsoft マネージドデスクトップの使用
+title: Microsoft マネージド デスクトップの使用
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ec402077eb20cfa39192e099de2d35e4e79399e
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2ee1b38497819f547b0dcf91ecd88249d0d2d704
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390374"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595413"
 ---
-# <a name="working-with-microsoft-managed-desktop"></a><span data-ttu-id="fd424-103">Microsoft マネージドデスクトップの使用</span><span class="sxs-lookup"><span data-stu-id="fd424-103">Working with Microsoft Managed Desktop</span></span>
+# <a name="working-with-microsoft-managed-desktop"></a><span data-ttu-id="c1798-103">Microsoft マネージド デスクトップの使用</span><span class="sxs-lookup"><span data-stu-id="c1798-103">Working with Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="fd424-104">Microsoft の管理されたデスクトップに向けて Microsoft アカウントチームを使用して作業を進めた後、管理[ポータル](https://aka.ms/mmdportal)を使用して環境を管理することができます。</span><span class="sxs-lookup"><span data-stu-id="fd424-104">After working with your Microsoft Account team to onboard to Microsoft Managed Desktop, you can use the [Admin portal](https://aka.ms/mmdportal) to manage your environment.</span></span> 
+<span data-ttu-id="c1798-104">このセクションには、IT 管理者が必要に応じてサポートを受ける方法、エンドユーザーがサポートを受ける方法、展開したアプリを管理する方法、デバイスでカスタマイズ可能な設定を操作する方法など、サービスの日常のライフサイクルに関する情報が記載されています。</span><span class="sxs-lookup"><span data-stu-id="c1798-104">This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="fd424-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="fd424-105">In this section</span></span>
-
-- [<span data-ttu-id="fd424-106">Microsoft マネージドデスクトップのエンドユーザーサポート</span><span class="sxs-lookup"><span data-stu-id="fd424-106">End user support for Microsoft Managed Desktop</span></span>](end-user-support.md)
-- [<span data-ttu-id="fd424-107">Microsoft マネージドデスクトップの管理者サポート</span><span class="sxs-lookup"><span data-stu-id="fd424-107">Admin support for Microsoft Managed Desktop</span></span>](admin-support.md)
-- [<span data-ttu-id="fd424-108">Microsoft マネージドデスクトップでのアプリの管理</span><span class="sxs-lookup"><span data-stu-id="fd424-108">Manage apps in Microsoft Managed Desktop</span></span>](manage-apps.md)
+- [<span data-ttu-id="c1798-105">Microsoft マネージドデスクトップの管理者サポート</span><span class="sxs-lookup"><span data-stu-id="c1798-105">Admin support for Microsoft Managed Desktop</span></span>](admin-support.md)
+- [<span data-ttu-id="c1798-106">エンドユーザーのヘルプを取得する</span><span class="sxs-lookup"><span data-stu-id="c1798-106">Getting help for end users</span></span>](end-user-support.md)
+- [<span data-ttu-id="c1798-107">構成可能な設定-Microsoft マネージドデスクトップ</span><span class="sxs-lookup"><span data-stu-id="c1798-107">Configurable settings - Microsoft Managed Desktop</span></span>](config-setting-overview.md)

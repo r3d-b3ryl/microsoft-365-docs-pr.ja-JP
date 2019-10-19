@@ -5,16 +5,15 @@ metadata:
   title: Microsoft マネージドデスクトップドキュメント
   description: null
   keywords: デバイス、アプリ、管理
-  author: trudyha
-  ms.author: trudyha
-  ms.date: 11/1/2018
+  author: jaimeo
+  ms.author: jaimeo
   ms.topic: landing-page
   ms.devlang: na
   ms.service: m365-md
 sections:
   - items:
       - type: markdown
-        text: 最も簡単な方法は、ユーザーを成功して、それを解放することです。
+        text: Microsoft マネージドデスクトップでは、microsoft 365 Enterprise、クラウドベースのデバイス管理、およびセキュリティの監視が統合されており、IT チームを解放してコアビジネスのニーズに集中できるようになります。
   - items:
       - type: list
         style: cards
@@ -22,30 +21,30 @@ sections:
         columns: 2
         items:
           - href: intro/index.md
-            html: <p>Microsoft Managed Desktop とは何か、どのように動作するかについてお読みください。</p>
+            html: <p>意思決定者向けの Microsoft マネージドデスクトップの概要--それがどのように機能するか、どのように役立つか</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
-            title: Microsoft マネージドデスクトップとは
+            title: Microsoft マネージド デスクトップとは
           - href: service-description/index.md
-            html: <p>Microsoft マネージドデスクトップに含まれるものについて説明します。</p>
+            html: <p>Microsoft マネージドデスクトップのすべての部分の詳細な説明</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
             title: サービスの説明
           - href: get-ready/index.md
-            html: <p>Microsoft マネージドデスクトップに登録するための準備方法について説明します。</p>
+            html: <p>環境と組織でサービスを使用できるようにするためのすべての手順</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
-            title: 準備をして
+            title: 準備する
           - href: get-started/index.md
-            html: <p>デバイスを注文し、連絡先を追加する方法について説明します。</p>
+            html: <p>デバイスのセットアップやアプリの展開など、Microsoft マネージドデスクトップを使用して組織をオンボードで利用する</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
             title: 作業の開始
           - href: working-with-managed-desktop/index.md
-            html: <p>アプリの管理について説明します。</p>
+            html: <p>サービスを使用した日常的な操作について</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
-            title: Microsoft マネージドデスクトップの使用
+            title: Microsoft マネージド デスクトップの使用
   - title: 新しい記事とブログ投稿
     items:
       - type: paragraph
@@ -60,7 +59,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
           - href: 'https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html'
-            title: 'アーティクルmicrosoft マネージドデスクトップ: microsoft によって管理されているすべての Windows 10 デバイス'
+            title: 'アーティクルMicrosoft マネージドデスクトップ: Microsoft によって管理されているすべての Windows 10 デバイス'
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
   - title: ビデオ
