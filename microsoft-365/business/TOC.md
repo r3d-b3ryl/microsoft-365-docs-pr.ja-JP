@@ -8,7 +8,7 @@
 ### [Microsoft 365 Business をセットアップする](set-up.md)
 ### [Windows Pro Creators Update にアップグレードする](upgrade-to-windows-pro-creators-update.md)
 ### [Office クライアントの展開の準備](prepare-for-office-client-deployment.md)
-### [Office の自動インストールまたはアンインストール](auto-install-or-uninstall-office.md)
+### [ユーザーの環境に Office をインストールする](help-users-install-office.md)
 ### [オンプレミス リソースへのアクセス]()
 #### [ドメインに参加している Windows 10 デバイスを管理できるようにする](manage-windows-devices.md)
 #### [Azure AD 参加済みデバイスからリソースにアクセスする](access-resources.md)
@@ -16,8 +16,8 @@
 ### [モバイル デバイスのセットアップ](set-up-mobile-devices.md)
 ### [Windows デバイスのセットアップ](set-up-windows-devices.md)
 ## [ビジネスをセキュリティで保護する](security-features.md)
+### [セットアップ MFA](set-up-mfa.md)
 ### [驚異の保護を強化する](increase-threat-protection.md)
-### [条件付きアクセスの概要](set-up-conditional-access-policies.md)
 ### [コンプライアンス機能のセットアップ](set-up-compliance.md)
 ## ユーザーの管理
 ### [ユーザーを追加する](add-users-m365b.md)
