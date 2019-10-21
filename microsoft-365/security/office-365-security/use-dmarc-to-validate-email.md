@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、Office 365 の組織から送信されたメッセージを検証する方法について説明します。
-ms.openlocfilehash: 24196139d46df8de7813e827e57d04c4bf9146b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 677b46f970edab98e950c9db49f264afc8d5dd73
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086788"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590491"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 で電子メールを検証する
 
@@ -209,6 +209,13 @@ DMARC 拒否ポリシー (p=reject) を発行すると、どの顧客も Office 
 - ユーザーが、自分のメール クライアントを使用して、個別に安全な送信者を追加する
     
 - 管理者が、該当する送信者のメッセージを許可するすべてのユーザーに向けて Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) を作成します。 
+
+## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>Office 365 でオーセンティケーテッド レシーブド チェーン (ARC) を活用する方法
+<a name="ARC"> </a>
+
+Office 365 でホストされているすべてのメール ボックスでは、向上したメッセージの配信率と強化されたスプーフィング対策保護と共に、 ARC の利点を得ることになります。 ARC では、元のサーバーから受信者のメールボックスへと電子メールがルーティングされると、すべての関与する仲介役、つまりホップからの電子メール認証の結果が保持されます。 ARC 以前、転送ルールまたは自動署名などの電子メール ルーティングの仲介役によって実行される変更は、受信者のメールボックスで電子メールが受信される時間によって DMARC の失敗を引き起こす場合があります。 ARC を使用すると、認証の結果の暗号化保存により、Office 365 では電子メールの送信者の真正性を検証することができます。 
+
+Microsoft が ARC Sealer の場合、現在、Office 365 では ARC を使用して認証の結果を検証します。しかし、将来的にはサードパーティーの ARC Sealer のサポートを追加する予定です。 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>DMARC 実装のトラブルシューティング
 <a name="dmarctroubleshoot"> </a>
