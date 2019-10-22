@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: 研究チーム間の共同作業を容易にするために、Contoso 社が非常に規制されたデータに対して SharePoint サイトを実装した方法を示します。'
-ms.openlocfilehash: bb3c178ee64d5925f82aef9887c06ceafe51f4ee
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403228"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617255"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation の非常に機密性の高いデジタル資産向けの SharePoint サイト
 
@@ -96,7 +96,7 @@ Contoso のセキュリティスタッフは、 **Research** Office 365 グル�
 
 最終的には、研究情報が含まれるファイルのセキュリティで保護された環境で、研究者が Contoso を越えて共同作業を行うことのできる安全な環境が得られます。 
 
-Research **Teams**を使用した research ドキュメントが**research**サイトを離れた場合、その sublabel は暗号化され、有効なユーザーアカウントの資格情報を持つ**research** Office 365 グループのメンバーのみがアクセスできます。
+Research **Teams**を使用した research ドキュメントが**research**サイトを離れた場合、sublabel は暗号化され、有効なユーザーアカウントの資格情報を持つ**research** Office 365 グループのメンバーのみがアクセスできます。
 
 ## <a name="next-step"></a>次の手順
 
@@ -104,4 +104,4 @@ Research **Teams**を使用した research ドキュメントが**research**サ�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 プロダクティビティライブラリ](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary)
+[Microsoft 365 生産性向上ライブラリ](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)

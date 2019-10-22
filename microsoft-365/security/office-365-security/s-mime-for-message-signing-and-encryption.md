@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理者は、Exchange Online で S/MIME を使用する方法について説明します。
-ms.openlocfilehash: ddb244e9e0cb189dbeb78af49e34ed90f64e77cc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b7ad73f1a7dd55abdc5a88a2f86344f5a2f0f5b
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086224"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608588"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online でのメッセージの署名と暗号化の S/MIME
 
@@ -46,6 +46,9 @@ Exchange Online 管理者は、組織内のメールボックスに対して S/M
 - S/MIME を検証するためには、仮想の証明書のコレクションを設定します。この情報は、電子メールの署名を検証する際に Web 上の Outlook により使用され、そのメールが信頼される証明書により署名されたことが確認されます。
 
 - S/MIME を使用する Outlook エンド ポイントまたは EAS エンド ポイントを設定します。
+
+> [!NOTE]
+> Mac、iOS、Android、その他の非 Windows デバイスでは、Outlook on the web に S/MIME コントロールをインストールすることはできません。 詳細については、「 [web 上の Outlook で S/MIME を使用してメッセージを暗号化する](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)」を参照してください。
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>Outlook on the web で S/MIME をセットアップする
 
