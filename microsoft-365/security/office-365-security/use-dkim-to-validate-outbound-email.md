@@ -3,6 +3,7 @@ title: Office 365 のカスタム ドメインで DKIM をメールに使用す�
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
+ms.date: 09/27/2019, 10/8/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,24 +14,24 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
-ms.openlocfilehash: e672556448774798f5746207ff578ff18059573c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bebbc355e6d16d5571733295ce0e48b91332f863
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084988"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37424233"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
  **概要:** この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。
   
-ドメインから送信されたように見えるメッセージをなりすまし者が送信できないようにするためには、SPF と DMARC に加え、DKIM を使用する必要があります。DKIM では、電子メール メッセージのメッセージ ヘッダー内にデジタル署名を追加することができます。複雑そうに思えますが、まったく複雑ではありません。DKIM の構成時に、関連付けるドメインを承認するか、暗号化認証を使用して電子メール メッセージにその名前を署名します。ドメインから電子メールを受信する電子メール システムでは、このデジタル署名を使用して、受け取った受信メールが正当であるかどうかを判断することができます。
+ドメインから送信されたように見えるメッセージをなりすまし者が送信できないようにするためには、SPF と DMARC に加え、DKIM を使用する必要があります。 DKIM を使用すると、送信電子メールのメッセージ ヘッダー内にデジタル署名を追加できるようになります。 複雑そうですが、実際には複雑ではありません。 DKIM の構成時に、関連付けるドメインを承認するか、または暗号化認証を使用して電子メール メッセージにその名前を署名します。 ドメインから電子メールを受信する電子メール システムでは、このデジタル署名を使用して、受け取った受信メールが正当であるかどうかを判断することができます。
   
-基本的には、秘密キーを使用してドメインの送信メールのヘッダーを暗号化します。受信側サーバーが署名のデコードに使用できるドメインの DNS レコードに、公開キーを発行します。公開キーを使用することで、そのメッセージが送信者本人からのものであり、ドメイン偽装をしている他人からのものでないことを確認します。
+基本的には、秘密キーを使用してドメインの送信メールのヘッダーを暗号化します。 受信側サーバーが署名のデコードに使用できるドメインの DNS レコードに、公開キーを発行します。 公開キーを使用することで、そのメッセージが送信者本人からのものであり、ドメインを*偽装*している他人からのものでないことを確認します。
   
-Office 365 は初期ドメインに DKIM を自動的にセットアップします。初期ドメインは、ユーザーが contoso.onmicrosoft.com などのサービスにサインアップしたときに、Office 365 が自動的に作成したドメインです。ユーザーは、初期ドメインに対する DKIM のセットアップに関して何も行う必要はありません。ドメインの詳細については、「[ドメインに関する FAQ](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)」を参照してください。
-  
-カスタム ドメインの DKIM に関しても、何も操作しなくて構いません。カスタム ドメインに対して DKIM を設定しない場合、Office 365 が秘密キーと公開キーのペアを作成して、DKIM 署名を有効にし、カスタム ドメインに対して Office 365 の既定ポリシーを構成します。ほとんどの Office 365 ユーザーの場合はこれで十分ですが、次の状況ではカスタム ドメインの DKIM を手動で構成する必要があります。
+Office 365 では、初期ドメインの 'onmicrosoft.com' に対応する DKIM が自動的にセットアップされます。 つまり、初期ドメイン名に対応する DKIM のセットアップに関して、ユーザーは何もする必要がないということです (例:  litware.onmicrosoft.com)。 ドメインの詳細については、「[ドメインに関する FAQ](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)」を参照してください。
+
+カスタム ドメインの DKIM に関しても、何も操作しなくて構いません。 カスタム ドメインに対応する DKIM をセットアップしていないと、Office 365 が秘密キーと公開キーのペアを作成して、DKIM 署名を有効にし、カスタム ドメインに対応する Office 365 の既定ポリシーを構成します。 ほとんどの Office 365 ユーザーの場合はこれで十分ですが、次の状況ではカスタム ドメインの DKIM を手動で構成する必要があります。
   
 - Office 365 に複数のカスタム ドメインがある場合
 
@@ -46,7 +47,9 @@ Office 365 は初期ドメインに DKIM を自動的にセットアップしま
   
 - [Office 365 での悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
-- [Office 365 で DKIM を手動でセットアップする方法](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+- [手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+
+- [Office 365 で DKIM を手動でセットアップする手順](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
 - [Office 365 で DKIM の複数のドメインを構成するには](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
@@ -58,6 +61,9 @@ Office 365 は初期ドメインに DKIM を自動的にセットアップしま
 
 - [次の手順:Office 365 に DKIM をセットアップした後](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
+> [!NOTE]
+> Microsoft 365 では、1024 ビットまたは 2048 ビットの DKIM の使用をサポートしています。 現在 1024 ビットを使用していて 2048 ビットの DKIM を構成しようとしている場合は、この記事で後述する DKIM 署名構成の転換の手順を参照してください。 2019 年末までに、Microsoft は、すべてのお客様に対して既定で 2048 ビット キーをサポートする予定です。 
+
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>Office 365 での悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由
 <a name="HowDKIMWorks"> </a>
 
@@ -68,8 +74,36 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 この例で、ドメインに対して SPF TXT レコードしか発行しなかったとしたら、受信者のメール サーバーによってメールがスパムとしてマークされ、誤検知の結果になる可能性があります。このシナリオでは DKIM を追加することによって、誤検知のスパム報告が減少しています。DKIM は、IP アドレスだけではなく、公開キー暗号化を使って認証を行うので、SPF よりもはるかに強力な認証形態といえます。展開では DMARC だけでなく、SPF と DKIM の両方を使うことをお勧めします。
   
 基本事項:DKIM では秘密キーを使用して、暗号化された署名をメッセージ ヘッダーに挿入します。署名ドメイン、つまり送信ドメインは、**d=** フィールドの値としてヘッダーに挿入されます。確認ドメイン、つまり受信者のドメインは、**d=** フィールドを使用して、DNS から公開キーを検索し、メッセージを認証します。メッセージが確認されれば、DKIM チェックは合格です。 
-  
-## <a name="what-you-need-to-do-to-manually-set-up-dkim-in-office-365"></a>Office 365 で DKIM を手動でセットアップする方法
+
+## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする
+<a name="1024to2048DKIM"> </a>
+
+DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされています。次の手順では、1024 ビット キーを 2048 ビットにアップグレードする方法について説明します。 次の手順は、2 つのユース ケースに向けたものです。目的の構成に最適なものを選択してください。
+
+1. **DKIM の構成が済んでいる**場合は、次のようにしてビットを転換します。
+    1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/ja-JP/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです)。
+    1. その後で、次のコマンドレットを実行します。
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
+
+1. **DKIM の新規実装**の場合は、次のようにします。
+    1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/ja-JP/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (これは、Exchange Online コマンドレットです)。
+    1. 次のコマンドレットを実行します。
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True`
+
+Office 365 への接続状態を維持して、構成を*検証*します。
+
+2. コマンドレットを実行します。
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Get-DkimSigningConfig | fl`
+
+> [!TIP]
+>この新しい 2048 ビット キーは RotateOnDate の時点で有効になります。それまでの間は、1024 ビット キーの電子メールが送信されます。 4 日後に、2048 ビット キーで再度テストしてください (つまり、2 番目のセレクターへの転換が有効になってからテストします)。 
+
+2 番目のセレクターに転換する場合は、a) Office 365 にセレクターの転換を任せて、6 か月以内に 2048 ビットへのアップグレードを実行するか、b) 4 日後に 2048 ビットが使用されていることを確認して、前述の該当するコマンドレットを使用して 2 番目のセレクター キーを手動で転換します。
+
+## <a name="steps-you-need-to-do-to-manually-set-up-dkim-in-office-365"></a>Office 365 で DKIM を手動でセットアップする手順
 <a name="SetUpDKIMO365"> </a>
 
 DKIM を構成するには、次の手順を完了します。
