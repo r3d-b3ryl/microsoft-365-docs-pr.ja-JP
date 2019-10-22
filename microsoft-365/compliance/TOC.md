@@ -17,7 +17,7 @@
 ## カスタマー キー
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
 ### [Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化](service-encryption-with-customer-key-faq.md)
-## [監督]()
+## [通信を監督する]()
 ### [監督ポリシーの詳細情報](supervision-policies.md)
 ### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
 ## [情報障壁](information-barriers.md)
@@ -124,6 +124,7 @@
 ### [Microsoft Data Governance チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
 ## レコード管理
 ### [レコード管理](records-management.md)
+### [レコード](records.md)
 ### ファイル計画
 #### [ファイル計画マネージャー](file-plan-manager.md)
 #### [保持ラベル](labels.md)
@@ -349,7 +350,7 @@
 ## [メールボックスの監査を管理する](enable-mailbox-auditing.md)
 ## [監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)
 ## [監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)
-## [監査ログを使用して一般的なシナリオのトラブルシューティングを行う](auditing-troubleshooting-scenarios.md)
+## [監査ログを使用して一般的な問題を調査する](auditing-troubleshooting-scenarios.md)
 ## [監査ログで共有監査を使用する](use-sharing-auditing.md)
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
 
