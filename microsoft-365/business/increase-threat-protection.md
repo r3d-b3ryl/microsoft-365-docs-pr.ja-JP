@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、機密データを保護します。
-ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576020"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636754"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -82,7 +82,7 @@ Office 365 または Microsoft 365 環境にはマルウェアからの保護が
 |次の手順を実行します。 . .  <br/> |受信者にメッセージで通知します。  <br/> |
 |メッセージテキストを指定する  <br/> |これらの種類のファイルは、悪意のあるコードを含むマクロを含んでいる可能性があるため、知られていないユーザーから開かないでください。  <br/> |
    
-詳しくは、次のトピックを参照してください。
+詳細については、次のトピックを参照してください。
   
 - [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -134,7 +134,7 @@ ATP のフィッシング対策ポリシーを作成するには、[この短い
     
 4. [**フィッシング対策**] ページで、[ **+ 作成**] を選択します。 ウィザードが起動して、フィッシング対策ポリシーを定義する手順を実行します。
     
-5. 下の表に示す推奨事項に従って、ポリシーの名前、説明、および設定を指定します。 詳細については、「 [ATP のフィッシング対策ポリシーのオプションについ](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)て」を参照してください。 
+5. 下の表に示す推奨事項に従って、ポリシーの名前、説明、および設定を指定します。 詳細については、「 [ATP のフィッシング対策ポリシーのオプションについ](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options)て」を参照してください。 
     
 6. 設定を確認した後、必要に応じて [**このポリシーを作成**する] または [**保存**] を選択します。
     
