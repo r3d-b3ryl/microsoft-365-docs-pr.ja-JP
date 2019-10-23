@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise のワークロードとシナリオ
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403246"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608598"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
 
@@ -38,7 +38,12 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 - 地域の規制を遵守しているデータ。
 - 企業秘密、財務情報、人事情報、組織戦略など、組織にとって最も重要なデータ。
 
-こうしたデータを内外の脅威から保護するには、[高度に規制されたデータ用の Microsoft Teams および SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md) を参照してください。 このシナリオでは、段階を追って SharePoint サイトまたは Microsoft Teams チームを構成して、最も重要なデータを安全に保管します。
+このデータを内部および外部の脅威から保護するには、次を参照してください。
+
+- [厳しく規制されたデータ用の Teams](secure-teams-highly-regulated-data-scenario.md)
+- [厳しく規制されたデータ用の SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md) 
+
+これらのシナリオでは、段階を追って Microsoft Teams チームまたは SharePoint サイトを構成して、最も重要なデータを安全に保管します。
 
 Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオを次に示します。
 

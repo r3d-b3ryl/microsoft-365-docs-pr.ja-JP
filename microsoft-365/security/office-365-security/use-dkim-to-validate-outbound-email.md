@@ -1,9 +1,9 @@
 ---
-title: Office 365 のカスタム ドメインで DKIM をメールに使用する
+title: Office 365、2048 ビット、1024 ビット、手順、仕組み、SPF、DMARC のカスタム ドメインで DKIM をメールに使用する
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/27/2019, 10/8/2019
+ms.date: 10/8/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
-ms.openlocfilehash: bebbc355e6d16d5571733295ce0e48b91332f863
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 4d9228301a4cafd3728a349ad710496ba8f9d379
+ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37424233"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598291"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 

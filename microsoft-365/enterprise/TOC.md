@@ -46,6 +46,7 @@
 ### [SharePoint および OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [移行](migration-microsoft-365-enterprise-workload.md)
 ### [リモート ワーカーの能力を強化する](empower-people-to-work-remotely.md)
+### [厳しく規制されたデータ用の Teams](secure-teams-highly-regulated-data-scenario.md)
 ### [厳しく規制されたデータ用の SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 ### [基本構成]()

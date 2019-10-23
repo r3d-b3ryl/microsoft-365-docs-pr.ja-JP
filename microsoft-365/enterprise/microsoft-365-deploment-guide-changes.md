@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise 展開コンテンツの変更
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の展開ガイドの新しいコンテンツおよびコンテンツの変更を参照してください。
-ms.openlocfilehash: 67d0f51dd1f2602a21d199da1ed7ca6ba6e41c09
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: e872b0c289a002b4a0e0459a9ee19aa78b039b31
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453993"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617245"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
 
 ## <a name="october-2019"></a>2019 年 10 月
 
 ### <a name="new-content"></a>新しいコンテンツ 
+
+- [厳しく規制されたデータ シナリオ用の Teams](secure-teams-highly-regulated-data-scenario.md)
+
+  [![厳しく規制されたデータ シナリオ用の Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
 - [リモート ワーカーを支援するポスター](empower-people-to-work-remotely.md#poster)
 
@@ -34,7 +38,7 @@ ms.locfileid: "37453993"
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび機能強化
 
 - [Contoso 社の導入実例](contoso-case-study.md) の更新
-- [Exchange Online](exchangeonline-workload.md) ワークロードの更新
+- [Microsoft Teams](teams-workload.md)、[Exchange Online](exchangeonline-workload.md)、および [SharePoint Online](sharepoint-online-onedrive-workload.md) ワークロードの更新
 - [厳しく規制されたデータに適した SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md) のシナリオの更新
  
   [![厳しく規制されたデータに適した SharePoint サイトのシナリオ](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)
