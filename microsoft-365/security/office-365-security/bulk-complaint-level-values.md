@@ -14,12 +14,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Office 365 での、バルク文句レベル (BCL) の値について説明します。
-ms.openlocfilehash: 6f9314a5b96dbd641e461dfb564ed8605372a949
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: 822c84ea9b36cfdae1d8faccf7e0c7d9f747c917
+ms.sourcegitcommit: 7830969c8fa41724359657910716f3ce312cc2cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451099"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37650119"
 ---
 # <a name="bulk-complaint-level-values"></a>バルク苦情レベルの値
 
@@ -39,4 +39,4 @@ BCL 値を使用して組織に必要なバルク フィルタリング レベ�
 |.0|バルク送信者からのメッセージではありません。|
 |1, 2, 3|苦情がほとんどないバルク送信者からのメッセージです。|
 |4, 5, 6, 7|苦情の件数がさまざまなバルク送信者からのメッセージです。|
-|8, 9|苦情の件数が最も多いバルク送信者からのメッセージです。|
+|8, 9|メッセージは、多くの苦情を生成するバルク送信者から送信されます。|
