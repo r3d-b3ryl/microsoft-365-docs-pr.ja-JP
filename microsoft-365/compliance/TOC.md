@@ -11,13 +11,13 @@
 # 内部リスクを管理する
 ## [ユーザーとデバイス アクセスの保護](protect-access-to-data-and-services.md)
 ## [カスタマー ロックボックス](customer-lockbox-requests.md)
-## [特権アクセス管理]()
+## 特権アクセスの管理
 ### [特権アクセス管理の詳細情報](privileged-access-management-overview.md)
 ### [特権アクセス管理を構成する](privileged-access-management-configuration.md)
 ## カスタマー キー
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
 ### [Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化](service-encryption-with-customer-key-faq.md)
-## [通信を監督する]()
+## 通信を監督する
 ### [監督ポリシーの詳細情報](supervision-policies.md)
 ### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
 ## [情報障壁](information-barriers.md)
@@ -387,7 +387,7 @@
 ## [GDPR](gdpr.md)
 ### [GDPR の推奨アクション プラン](gdpr-action-plan.md)
 
-### [アカウンタビリティ対応準備チェックリスト]()
+### アカウンタビリティ対応準備チェックリスト
 #### [アカウンタビリティ対応準備チェックリスト](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
@@ -396,7 +396,7 @@
 
 ### [情報保護](gdpr-information-protection.md)
 
-### [データ サブジェクト要求]()
+### データ主体要求
 #### [データ サブジェクト要求](gdpr-data-subject-requests.md)
 #### [Azure](gdpr-dsr-azure.md)
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
@@ -406,14 +406,14 @@
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Visual Studio ファミリ](gdpr-dsr-visual-studio-family.md)
 
-### [侵害の通知]()
+### 侵害の通知
 #### [侵害の通知](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
 #### [Microsoft サポート/プロフェッショナル サービス](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
-### [データ保護影響評価]()
+### データ保護影響評価
 #### [データ保護影響評価](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
@@ -574,7 +574,7 @@
 #### [EU 米国プライバシー シールド](offering-eu-us-privacy-shield.md)
 #### [GDPR (EU)](offering-gdpr-eu.md)
 #### [G-Cloud (英国)](offering-g-cloud-uk.md)
-#### [IDW PS 951 (ドイツ)]()
+#### IDW PS 951 (ドイツ)
 #### [IT Grundschutz Workbook (ドイツ)](offering-it-grundschutz-workbook-germany.md)
 #### [LOPD (スペイン)](offering-lopd-spain.md)
 #### [PASF (英国)](offering-pasf-uk.md)
