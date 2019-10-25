@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の Office 365 ProPlus インフラストラクチャを展開する手順。
-ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c32257fb9066f170da1f1a3cfe4b865e383cfcb
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982768"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646402"
 ---
 # <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![フェーズ 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *これは Microsoft 365 Enterprise および Microsoft 365 Education のバージョン E3 および E5 に適用されます。*
 
-Microsoft 365 Enterprise に含まれている Office 365 ProPlus は、Office のサブスクリプション版です。Office 2016 と同様に、Office 365 ProPlus にはすべての Office アプリケーションが含まれており、これらのアプリケーションはクライアント デバイスに直接インストールされます。Office 2016 とは異なり、Office 365 ProPlus は定期的に更新され新機能が導入されます。また、ユーザーベースのライセンス モデルを採用しており、Office を最大 5 台のデバイスにインストールできます。詳細については、「[企業内での Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
+Microsoft 365 Enterprise には、Office のサブスクリプション版である Office 365 ProPlus が含まれています。 Office 2019 と同様に、Office 365 ProPlus にはすべての Office アプリケーションが含まれており、それらのアプリケーションはクライアント デバイスに直接インストールされます。 Office 2019とは異なり、Office 365 ProPlus は定期的に新機能が更新され、複数のデバイスに Office をインストールできるユーザーベースのライセンス モデルを採用しています。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
 
 このフェーズでは、Microsoft 365 Enterprise の一部である Office 365 ProPlus をクライアント デバイスに展開します。このガイダンスの他に、展開の際に役立つ [Microsoft Fastrack](https://fasttrack.microsoft.com/office) を使用することをお勧めします。 
 
@@ -44,7 +44,7 @@ Office 365 ProPlus を展開する前に、「[Office 365 ProPlus を展開す�
 
 実際の環境の評価が完了したら、「[Office 365 ProPlus の展開を計画する](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)」のガイダンスに従って展開計画を策定します。この計画には次の内容が含まれます。 
 
-- 使用するツール (System Center Configuration Manger や Office 展開ツール (OTD) など) を含め、Office を展開する方法と Office のインストールを実行する場所
+- 使用するツール (System Center Configuration Manger や Office 展開ツールなど) を含め、Office を展開する方法と Office のインストールを実行する場所
 - Office の更新の管理方法
 - 使用する更新チャネル (Office の更新チャネルにより、ユーザーが Office アプリケーションの機能更新を受け取る頻度が制御されます)
 - 使用する Office インストール パッケージと展開グループ (どのユーザーにどの Office アプリケーションと言語をインストールするかなど)
@@ -53,14 +53,12 @@ Office 365 ProPlus を展開する前に、「[Office 365 ProPlus を展開す�
 
 ## <a name="step-3-deploy"></a>手順 3: 展開する
 
-手順 2 で策定した展開計画に基づき、展開方法を選択します。
+展開計画に基づき、展開方法を選択します。
 
 - **[System Center Configuration Manager を使用して Office 365 ProPlus を展開する](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** Configuration Manager を使用して展開を管理し、ネットワーク内の配布ポイントから Office をダウンロードして展開します。
 
 - **[ODT を使用してクラウドから Office 365 ProPlus を展開する](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** ODT を使用して展開を管理し、Office CDN からクライアント デバイスに Office を直接インストールします。
  
-- **[ODT を使用してローカル ソースから Office 365 ProPlus を展開する](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source):** ODT を使用して展開を管理し、ネットワーク内のローカル ソースから Office をダウンロードして展開します。 
-
 - **[Office ポータルから Office 365 ProPlus をセルフインストールする](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658):** Office ポータルから展開を管理し、ユーザーがポータルから各自のクライアント デバイスに Office インストールします。
 
 多くの組織では、ユーザーに応じて前述のオプションを組み合わせて使用します。たとえば、ほとんどのユーザーに対しては Configuration Manager を使用して Office を展開しますが、社内ネットワークに頻繁に接続しない少数の作業員のグループにはセルフ インストールを有効にします。 
@@ -75,7 +73,7 @@ Microsoft のエキスパートが [Office 365 ProPlus の更新プログラム�
 
 架空の代表的な多国籍企業である Contoso Corporation の [Office 365 ProPlus の展開](contoso-o365pp.md)方法をご覧ください。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 
