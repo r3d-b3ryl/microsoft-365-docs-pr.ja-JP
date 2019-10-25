@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 最重要ファイルおよび機密ファイルを保存するためのセキュリティで保護されたチームを作成します。
-ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: d917e14719744dad8a681e15a8547655c3a0457f
+ms.sourcegitcommit: d95aab99d7827dbb9248280044748ca05ebec786
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628351"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37657804"
 ---
 # <a name="teams-for-highly-regulated-data"></a>厳しく規制されたデータに Teams で対応する
 
@@ -124,7 +124,7 @@ ms.locfileid: "37628351"
 
 チーム サイトに保存されているファイルに対してこの追加レベルのセキュリティ保護を行うには、サイト独自の新しい秘密度ラベルまたは厳しく規制されたファイルの一般的なラベルのサブラベルのいずれかを構成する必要があります。 ラベルの一覧にこれが表示されるのは、チーム グループのメンバーのみです。
 
-全体での使用と個別のプライベート チームのいずれにおいても必要なラベルの数が少ない場合は、秘密度ラベルを使用します。 ラベルを多数使用している場合、またはプライベート チーム用のラベルを厳しく規制されたラベルの下でまとめる場合は、秘密度サブラベルを使用します。
+全体での使用と個別のプライベート チームの両方に対して少ない数のラベルが必要な場合は、秘密度ラベルを使用します。 ラベルを多数使用している場合、またはプライベート チーム用のラベルを厳しく規制されたラベルの下でまとめる場合は、秘密度サブラベルを使用します。
 
 [こちらの手順を使用して](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)、別のラベルまたはサブラベルを次の設定で構成します。
 
