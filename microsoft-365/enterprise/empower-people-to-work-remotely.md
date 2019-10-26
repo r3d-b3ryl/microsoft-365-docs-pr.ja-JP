@@ -3,7 +3,7 @@ title: リモート ワーカーを支援する
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするインフラストラクチャとセキュリティを構成します。
-ms.openlocfilehash: 9a9520f5246ec70a2b9947536c259c661a5bd44f
-ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
+ms.openlocfilehash: bc36343d1bdce0f01ff91a5d3cece2b111c22dcb
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37469159"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733478"
 ---
 # <a name="empower-remote-workers"></a>リモート ワーカーを支援する
 
@@ -74,7 +74,7 @@ ms.locfileid: "37469159"
 
 [![リモート ワーカーを支援するポスター](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)して、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 形式でダウンロードして、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>フェーズ 1: リモート ワーカーに Microsoft 365 の機能を展開する
