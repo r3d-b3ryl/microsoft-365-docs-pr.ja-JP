@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 131c48e89a5bb82381347e766b3f00451a852410
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370284"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733458"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>手順 3: Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する
 
@@ -26,6 +26,18 @@ ms.locfileid: "37370284"
 新しい Windows 10 PC では、Windows Autopilot を使用して、組織の OOBE (out-of-box-experience) をカスタマイズし、すでに構成されているアプリや設定を使用して新しいシステムを展開できます。イメージの展開や挿入するドライバー、管理するインフラストラクチャはありません。各ユーザーは IT 管理者に問い合わせる必要なく、展開プロセスを個別に実行することができます。
 
 Windows Autopilot を使用して、新しい Windows 10 デバイスをセットアップして事前構成し、使用準備を整えることができます。Windows Autopilot の利点やシナリオについての詳細情報は、「[Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)」を参照してください。準備が完了したら、次のパートに従って設定を開始します。
+
+## <a name="the-windows-autopilot-deployment-process-poster"></a>Windows 自動操縦の展開プロセスのポスター
+
+Windows 自動操縦ポスターは、縦置きモード (11x17) の2ページです。 ブラウザーに PDF を表示するには、以下の画像をクリックします。 
+
+[![自動操縦ポスターを使用して Windows 10 を展開する](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+
+<!--
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
+
+-->
 
 ## <a name="part-1-start-windows-autopilot-deployment"></a>パート 1: Windows Autopilot 展開を開始する
 「[Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)」を参照して、次のようにします。

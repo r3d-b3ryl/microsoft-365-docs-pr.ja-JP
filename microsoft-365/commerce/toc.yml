@@ -24,8 +24,6 @@
           href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
         - name: 課金プロファイルを管理する
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: オーダー履歴
-          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
         - name: 支払いサービスディレクティブ2と強力な顧客認証
           href: /microsoft-365/commerce/billing-and-payments/psd2.md
     - name: 課金アカウント
