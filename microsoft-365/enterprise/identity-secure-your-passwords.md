@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体でパスワードを強力かつ管理しやすいものにする必要があります。
-ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370404"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662553"
 ---
 # <a name="step-2-secure-your-passwords"></a>手順 2: パスワードをセキュリティで保護する
 
@@ -27,7 +27,7 @@ ms.locfileid: "37370404"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>脆弱なパスワードを防止する
 
-*この手順は省略可能であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
 
 すべてのユーザーが [Microsoft のパスワードのガイダンス](https://www.microsoft.com/research/publication/password-guidance/)を使用してユーザー アカウントのパスワードを作成する必要があります。
 
