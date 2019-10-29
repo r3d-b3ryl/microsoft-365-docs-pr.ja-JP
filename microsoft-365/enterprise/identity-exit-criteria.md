@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の ID ベースのサービスとインフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: 4a93d0a9fb497daccba4fd2641fd5faf9c4fb384
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 84c2b97e064d3dba8a97767a31cc9fe7ccc6dd8c
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370204"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746523"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>フェーズ 2: ID インフラストラクチャの終了条件
 
@@ -96,7 +96,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 <a name="crit-identity-custom-sign-in"></a>
 ## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>オプション: Office 365 のサインイン画面を組織に合わせてカスタマイズしている
 
-「[クイック スタート: Azure AD のサインイン ページに会社のブランドを追加する](http://aka.ms/aadpaddbranding)」に従って組織のブランドを Office 365 サインイン ページに追加しています。
+「[クイック スタート: Azure AD のサインイン ページに会社のブランドを追加する](https://aka.ms/aadpaddbranding)」に従って組織のブランドを Office 365 サインイン ページに追加しています。
 
 このオプション条件を省略した場合、ユーザーに対して汎用 Office 365 サインイン画面が表示され、ユーザーが当該組織のサイトにサインインすることを確信できない可能性があります。
 

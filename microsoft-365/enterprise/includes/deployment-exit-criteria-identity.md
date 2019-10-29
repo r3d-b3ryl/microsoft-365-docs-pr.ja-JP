@@ -68,7 +68,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 <a name="crit-identity-custom-sign-in"></a>
 ### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>オプション: Office 365 のサインイン画面を組織に合わせてカスタマイズしている
 
-「[クイック スタート: Azure AD のサインイン ページに会社のブランドを追加する](http://aka.ms/aadpaddbranding)」に従って組織のブランドを Office 365 サインイン ページに追加しています。
+「[クイック スタート: Azure AD のサインイン ページに会社のブランドを追加する](https://aka.ms/aadpaddbranding)」に従って組織のブランドを Office 365 サインイン ページに追加しています。
 
 このオプション条件を省略した場合、ユーザーに対して汎用 Office 365 サインイン画面が表示され、ユーザーが当該組織のサイトにサインインすることを確信できない可能性があります。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体でパスワードを強力かつ管理しやすいものにする必要があります。
-ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
-ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
+ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37662553"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746513"
 ---
 # <a name="step-2-secure-your-passwords"></a>手順 2: パスワードをセキュリティで保護する
 
@@ -90,7 +90,7 @@ Microsoft 365 Enterprise では、サイン ページと [アクセス パネル
 
 詳細については、「[会社のブランドを Office 365 サインイン ページに追加する](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)」を参照してください。
 
-構成手順については、「[サインイン ページと [アクセス パネル ページ] に会社のブランドを追加する](http://aka.ms/aadpaddbranding)」を参照してください。
+構成手順については、「[サインイン ページと [アクセス パネル ページ] に会社のブランドを追加する](https://aka.ms/aadpaddbranding)」を参照してください。
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-custom-sign-in)を確認できます。
 
