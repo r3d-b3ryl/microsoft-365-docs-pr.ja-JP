@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 7253ea698613a38988bd7a6942a4908e9c797e2a
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b1f655e5befd16058870542f2e595d36599006fd
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37372768"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746709"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise には、Windows 10 Enterprise が含まれています
 Windows 10 オペレーティングシステムを展開するためのさまざまな方法を理解し、組織に適したものを選択する必要があります。 Microsoft 365 Enterprise のサブスクリプションによっては、windows 10 のサービスとセキュリティ機能も備えており、Windows 10 を最大限に活用するために構成する必要があります。
 
 >[!Note]
->Windows 10 Enterprise と Office 365 ProPlus の両方を展開し、[モダン デスクトップ](https://www.microsoft.com/microsoft-365/modern-desktop)に移行するには、「[モダン デスクトップ展開センター](http://aka.ms/howtoshift)」を参照してください。
+>Windows 10 Enterprise と Office 365 ProPlus の両方を展開し、[モダン デスクトップ](https://www.microsoft.com/microsoft-365/modern-desktop)に移行するには、「[モダン デスクトップ展開センター](https://aka.ms/howtoshift)」を参照してください。
 >
 
 ## <a name="windows-10-deployment"></a>Windows 10 の展開

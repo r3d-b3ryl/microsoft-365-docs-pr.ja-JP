@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'フィッシングを防止するために、Office 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
-ms.openlocfilehash: 39c9898a31c715487f3bc934ad0986e9a7b3679d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
+ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085645"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749159"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 
@@ -35,7 +35,7 @@ Microsoft は、2017年11月9日にこの記事に記載されているポリシ
   
 ## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a>Office 365 がフィッシング攻撃を防止するために有効な From: アドレスの使用を強制する方法
 
-Office 365 は、フィッシング攻撃からの保護を強化するために、受信したメッセージ内の From: アドレスの使用を強制する方法に変更を加えています。 この記事の内容
+Office 365 は、フィッシング攻撃からの保護を強化するために、受信したメッセージ内の From: アドレスの使用を強制する方法に変更を加えています。 この記事の内容:
   
 - [すべてのメッセージに有効な差出人: アドレスを含める必要があります。](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
@@ -223,7 +223,7 @@ Office 365 で送信する送信メールに対してこのポリシーを上書
 ### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Office 365 で cybercrimes を防止し、保護するためのその他の方法
 <a name="OtherProtection"> </a>
 
-フィッシング、スパム、データ侵害、その他の脅威などの cybercrimes に対して組織を強化する方法の詳細については、「 [Office 365 のセキュリティのベストプラクティス](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3)」を参照してください。
+フィッシング、スパム、データ侵害、その他の脅威などの cybercrimes に対して組織を強化する方法の詳細については、「 [Office 365 のセキュリティのベストプラクティス](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)」を参照してください。
   
 ## <a name="related-topics"></a>関連項目
 
