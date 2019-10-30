@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection によってメッセージに追加されるヘッダー フィールドと値について学習します。
-ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451119"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772261"
 ---
 # <a name="anti-spam-message-headers"></a>スパム対策メッセージ ヘッダー
 
@@ -39,7 +39,6 @@ Exchange Online Protection では、受信電子メール メッセージをス�
 |CTRY|サービスに接続されたメッセージの発信国。これは、接続先 IP アドレスから特定されます。そのため、発信元の送信先 IP アドレスとは異なる可能性があります。|
 |LANG|メッセージが作成された言語であり、国番号 (たとえば、ロシア語は ru_RU) で指定されます。|
 |SCL|メッセージの Spam Confidence Level (SCL) 値。これらの値の解釈方法については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。  |
-|PCL|メッセージの Phishing Confidence Level (PCL) 値。|
 |SRV:BULK|メッセージが一括電子メール メッセージとして識別されました。**[バルクメール メッセージをすべてブロックする]** 詳細スパム フィルター オプションが有効になっている場合、このメッセージがスパムとしてマークされます。このオプションが有効になっていない場合は、残りのフィルター処理ルールでそのメッセージがスパンであると判断された場合にのみスパムとしてマークされます。|
 |SFV:SFE|メッセージが個人の差出人セーフ リスト上のアドレスから送信されているため、フィルター処理が省略され、メッセージはそのまま配信されました。|
 |SFV:BLK|メッセージが個人の受信拒否リスト上のアドレスから送信されているため、フィルター処理が省略され、メッセージはブロックされました。  <br/> **ヒント**: エンド ユーザーが安全な送信者リストと受信拒否リストを作成する方法については、「[ブロックまたは許可 (迷惑メール設定) ](https://go.microsoft.com/fwlink/p/?LinkId=294862)」 (Outlook on the web) と「[迷惑メール フィルターの概要](https://go.microsoft.com/fwlink/p/?LinkId=270065)」(Outlook) を参照してください。|
@@ -66,8 +65,7 @@ Exchange Online Protection では、受信電子メール メッセージをス�
 
 |**ヘッダー フィールド**|**説明**|
 |:-----|:-----|
-|PCL|メッセージの Phishing Confidence Level (PCL)。これは、そのメッセージがフィッシング メッセージかどうかを示します。     この状態は、次のいずれかの数値として返されます。 <br/>**0-3**: メッセージの内容がフィッシングである可能性が低いことを示します。 <br/>**4-8**: メッセージの内容がフィッシングである可能性が高いことを示します。 <br/>**-9990**: メッセージの内容がフィッシングである可能性が高いことを示します (Exchange Online Protection のみ)。  <br/>  これらの値は、メール クライアントがメッセージに対して実行するアクションを決めるために使用されます。 たとえば、Outlook は PCL スタンプを使用し、疑わしいメッセージの内容をブロックします。 フィッシングおよび Outlook がフィッシング メッセージを処理する方法の詳細については、[「メール メッセージのリンクを設定する」](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8) を参照してください。|
-|
+|BCL|メッセージのバルク苦情レベル (BCL) は、バルク メーラーの異なる種類を区別するのに役立ちます。 これは、0 から 9 の値として表されます。 BCL に関する値とその他の情報については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
 
 ## <a name="authentication-results-message-header"></a>Authentication-results メッセージ ヘッダー
 

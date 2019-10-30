@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
-ms.openlocfilehash: 4d9228301a4cafd3728a349ad710496ba8f9d379
-ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
+ms.openlocfilehash: 07cb90684bbbba4851697020ceac4756381f8b55
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "37598291"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772241"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
@@ -129,7 +129,7 @@ Get-DkimSigningConfig 出力で参照されている CNAME を作成する
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-DNS の CNAME レコードは、Office 365 の Microsoft DNS サーバー上の DNS に存在する、既に作成されている A レコードを指します。
+DNS の CNAME レコードは、Office 365 の Microsoft DNS サーバー上の DNS に存在する、既に作成されている DKIM TXT レコードを指します。
   
 Office 365 は、発行された 2 つのレコードを使用して自動的にキーの交換を実行します。Office 365 の初期ドメインに加えてプロビジョニングされたカスタム ドメインがある場合には、追加の各ドメインに対して 2 つの CNAME レコードを発行する必要があります。したがって、2 つのドメインがある場合は、さらに 2 つの CNAME レコードを発行するなどの操作が必要になります。
   
