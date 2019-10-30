@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 において、Sender Policy Framework (SPF) TXT レコードを DNS で使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。 これは、Office 365 から送信された送信メールに適用されます。 Office 365 から Office 365 内の受信者に送信されたメッセージは、常に SPF チェックに合格します。'
-ms.openlocfilehash: 7db1259f4ec15fffe46955ba2166b244c5737d43
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 9a0cbbe29a43a223a006b1a8495d2522ca2386c4
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510554"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772221"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
 
@@ -104,7 +104,7 @@ SPF の欠点の1つは、メールが転送されたときに機能しないこ
 IP アドレスに加えて、送信者としてドメインを含めるように SPF TXT レコードを構成することもできます。 これらは、"include" ステートメントとして SPF TXT レコードに追加されます。 たとえば、contoso.com には、所有する contoso.net と contoso.org からメール サーバーのすべての IP アドレスを含めることもできます。 これを行うには、contoso.com は次のような SPF TXT レコードを発行します。
   
 ```
-IN TXT "v=spf1 include:contoso.net include:contoso.org -all"
+v=spf1 include:contoso.net include:contoso.org -all
 ```
 
 受信側のサーバーは、このレコードを DNS に表示するときに、contoso.net の SPF TXT レコードに対する DNS 参照も行い、contoso.org に対しても実行します。Contoso.net または contoso.org のレコード内に追加の include ステートメントが見つかった場合は、それに従っていることになります。 サービス拒否攻撃を防止するための、1 つの電子メール メッセージに対する DNS 参照の最大数は 10 です。 各 include ステートメントは追加の DNS 参照を表します。 メッセージが上限 10 を超えると、メッセージは SPF チェックに失敗します。 メッセージがこの制限に達すると、受信側サーバーの構成方法によっては、メッセージが "参照が多すぎます" または "メッセージの最大ホップ数を超えています" というメッセージが表示されることがあります (照合は、DNS のタイムアウトをループします。 この問題を回避する方法のヒントについては、「[トラブルシューティング:Office 365 における SPF のベスト プラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」を参照してください。

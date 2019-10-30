@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: マイクロソフト Exchange Online Protection (EOP) は、クラウドベースの電子メール フィルタリング サービスであり、スパムやマルウェアから組織を保護するのに役立ち、メッセージング ポリシー違反から組織を保護する機能が含まれています。
-ms.openlocfilehash: e091946792e78f47f5c0ab5a001bf45ca4de6b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440454"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772271"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -56,13 +56,13 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 ## <a name="eop-plans-and-features"></a>EOP のプランと機能
 
-EOP のサブスクリプション プランを次に示します。
+利用可能な EOP サブスクリプションプランは次のとおりです。
 
-- **EOP スタンドアロン**: EOP は社内メールボックスを保護します。
+- **EOP スタンドアロン**: 社内の電子メール組織を保護するために EOP に登録します。
 
-- **Exchange online の EOP 機能**: EOP は、exchange online のクラウドホスト型メールボックスを保護します。
+- **Exchange online の EOP 機能**: exchange online (スタンドアロンまたは Office 365 の一部) を含むサブスクリプションは、EOP を使用して exchange online メールボックスを保護します。
 
-- **Exchange ENTERPRISE CAL With Services**: EOP は、EOP スタンドアロンのようにオンプレミスのメールボックスを保護し、データ損失防止 (DLP) と web サービスを使用したレポートを含めます。
+- **Exchange ENTERPRISE cal With services**: 追加の EXCHANGE enterprise Cal をサービスライセンスと共に購入したオンプレミスの exchange 組織がある場合、EOP は含まれているサービスの一部です。
 
 すべての EOP サブスクリプション プランについての要件、重要な制限および機能の可用性の詳細については、「[Exchange Online Protection サービスの説明](https://go.microsoft.com/fwlink/p/?LinkId=320619)」を参照してください。
 

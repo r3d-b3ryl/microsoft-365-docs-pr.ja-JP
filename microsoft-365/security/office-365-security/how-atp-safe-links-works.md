@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 ATP の安全なリンクのしくみについては、この記事をお読みください。'
-ms.openlocfilehash: 45053b51bb5a91698d90f61567aa7f5577518587
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bb60d57a422d908b013caf7267f21f390769cfb4
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085651"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772201"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 の ATP の安全なリンクのしくみ
          
@@ -49,11 +49,11 @@ ms.locfileid: "37085651"
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Office ドキュメントの Url で ATP の安全なリンクが機能するしくみ
 
-詳細[について](atp-safe-links.md)は、「Office 365 ProPlus アプリケーション (windows または Mac 上の現在のバージョンの Word、Excel、PowerPoint)、iOS または Android デバイス上の Office アプリ、ブラウザーの OneNote、Visio on windows、およびブラウザー内の Office):
+大まか[に説明する](atp-safe-links.md)と、Office 365 ProPlus またはビジネスプレミアムアプリケーション (Windows、Mac、またはブラウザーでの現在のバージョンの Word、Excel、PowerPoint の場合)、またはブラウザー、iOS または Android デバイスの Office アプリ、Visio onWindows、ブラウザーの OneNote):
   
-1. ユーザーは、コンピューター、スマートフォン、またはタブレットに Office 365 ProPlus をインストールしています。 (または、ユーザーがブラウザーで Office を使用している場合)。
+1. ユーザーは、コンピューター、スマートフォン、またはタブレットに Office 365 ProPlus または Business Premium をインストールしています。 (または、ユーザーがブラウザーで Office を使用している場合)。
     
-2. ユーザーが Word、Excel、PowerPoint、または Visio を開き、職場または学校のアカウントを使用して Office 365 Enterprise にサインインします。 ドキュメントに Url が含まれている。
+2. ユーザーが Word、Excel、PowerPoint、OneNote (web)、または Visio (デスクトップ) を開き、職場または学校のアカウントを使用して Office 365 Enterprise にサインインします。 ドキュメントに Url が含まれている。
     
 3. ユーザーがドキュメント内の URL をクリックすると、そのリンクは ATP の安全なリンクサービスによってチェックされます。
     
@@ -66,4 +66,6 @@ ms.locfileid: "37085651"
       - URL がダウンロード可能なファイルに送られ、そのようなダウンロードをスキャンするように[ATP の安全なリンクポリシー](set-up-atp-safe-links-policies.md)が構成されている場合は、ダウンロード可能なファイルがチェックされます。 
     
       - URL が安全であると判断された場合は、ユーザーが web サイトに移動します。
+      
+      - URL チェックに失敗すると、安全なリンクの保護はトリガーされません。 デスクトップクライアントでは、ユーザーはサイトに進む前に警告が表示されます。
 
