@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
-ms.openlocfilehash: 7cf1fa1b12ab11e777754cba8f75cc4bead95279
-ms.sourcegitcommit: 29d85279c76ffaaa3f45e7ea3bdb590f54847fd6
+ms.openlocfilehash: 9faa573ea2062af2fe49e2810eaecc75ce90c84c
+ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37885581"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37911388"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入に関する FAQ
 
@@ -29,7 +29,12 @@ ms.locfileid: "37885581"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>電源プラットフォーム製品のセルフサービス購入に関して Microsoft が発表した変更点は何ですか?
 
-2019年11月19日以降、電力プラットフォーム製品 (Power BI、PowerApps、およびフロー) のセルフサービス購入、サブスクリプション、およびライセンス管理の機能は、米国のほとんどの商用クラウドのお客様が利用できます。 セルフサービス購入により、ユーザーは新しいテクノロジを試す機会を得ることができ、それにより大規模な組織に最終的にメリットをもたらすソリューションを開発することができます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。 中央の調達および IT チームは、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を使用して、セルフサービス購入ソリューションを購入および展開するすべてのユーザーに対して表示されます。
+2019年10月31日の時点での更新: 過去1週間で、電力プラットフォーム製品のセルフサービス購入機能の展開に関するお客様からのフィードバックをお待ちしています。 フィードバックに基づいて、次のような変更をプランに加えています。
+
+- 11月19日に、IT 管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にする方法を提供します。 詳細については、後で説明します。
+- この変更の準備により多くの時間を提供するために、microsoft は、すべての商用クラウドのお客様に対して、電源プラットフォーム製品のサービスを、2月14日に Power BI で開始するためのサービスの購入機能を更新しています。  
+
+2020年1月14日以降、電力プラットフォーム製品 (Power BI、PowerApps、およびフロー) のセルフサービス購入、サブスクリプション、およびライセンス管理機能は、米国のコマーシャルクラウドのお客様が利用できます。 セルフサービス購入により、ユーザーは新しいテクノロジを試す機会を得ることができ、それにより大規模な組織に最終的にメリットをもたらすソリューションを開発することができます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。 中央の調達および IT チームは、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を介してセルフサービス購入ソリューションを購入および展開するすべてのユーザーに対して可視性を持ち、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Microsoft が電源プラットフォーム製品のセルフサービス購入オプションを追加するのはなぜですか?
 
@@ -37,7 +42,7 @@ ms.locfileid: "37885581"
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>電源プラットフォーム製品のセルフサービス購入を利用できるようになるのはいつですか?
 
-Microsoft は、2019年11月19日に Power BI のセルフサービス購入を米国のお客様に向けて開始しています。これにより、今後数か月に追加のマーケットが利用できるようになります。 PowerApps と Microsoft Flow は、2019年12月4日に追加されます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。
+Microsoft は、2020年1月14日に Power BI のセルフサービス購入を米国のお客様に向けて開始しています。これにより、今後数か月に追加のマーケットが利用できるようになります。 PowerApps と Microsoft Flow は、次の週に追加されます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>電源プラットフォーム製品を超えたサービスに対してセルフサービス購入が有効になりますか?
 
@@ -91,13 +96,7 @@ Microsoft は、2019年11月19日に Power BI のセルフサービス購入を�
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>管理者はセルフサービス購入についてどのような機能を持っていますか?
 
-管理者は、組織内で行われたすべてのセルフサービスの購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。
-
-対象となる組織内のすべての Azure AD ユーザーは、セルフサービス購入が許可されており、サブスクリプションを完全に制御することができますが、管理者はセルフサービス購入を通じて購入した製品に対して、同じデータ管理およびアクセスポリシーを持つことができます。一元的.
-
-### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>セルフサービスによる購入が管理者の承認の対象にならない理由
-
-サービスに対して管理者の制御を要請しつつ、セルフサービス購入を依頼したお客様に対応しています。 管理者は、セルフサービス購入を行ったユーザーと、自分のテナントのユーザーがセルフサービス購入時にライセンスを割り当てられていることを完全に把握できます。 組織は、セルフサービス購入を行う個人が会社のポリシーに準拠していることを確認するために、内部のポリシー、手順、およびコミュニケーションを利用することもできます。  サービスへのアクセスを制御する方法の例として、 [new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0)を使用して、テナント全体で製品を使用できないようにすることができます。
+管理者は、組織内で行われたすべてのセルフサービスの購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。 組織に必要な場合、管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入または集中的に購入した製品に対して、同じデータ管理とアクセスポリシーを使用できます。
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>セルフサービス購入を有効にすることによって、Microsoft はデータガバナンスとコンプライアンスをどのように重視していますか?
 
@@ -122,6 +121,11 @@ Microsoft は、2019年11月19日に Power BI のセルフサービス購入を�
 ### <a name="are-customers-it-departments-or-partners-expected-to-support-products-bought-through-self-service-purchase"></a>お客様の IT 部門やパートナーは、セルフサービス購入によって購入された製品をサポートすることを期待していますか。
 
 IT 部門およびパートナーは、セルフサービス購入を通じて購入された製品に対するサポートを提供することを期待していません。 Microsoft は、セルフサービス purchasers の標準サポートを提供します。
+
+### <a name="if-a-self-service-purchaser-calls-support-will-they-use-the-customers-premier-support-incidents"></a>セルフサービスの購入者がサポートに電話をかける場合、お客様のプレミアサポートインシデントを使用しますか?
+
+セルフサービス purchasers では、お客様のプレミアサポートインシデントを使用してセルフサービス購入のサポートを受けることはできません。
+
 
 ### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>セルフサービス購入で購入した製品について、ユーザーはどのようにトレーニングを受けられるようになりますか?
 

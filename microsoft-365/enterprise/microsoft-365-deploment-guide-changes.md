@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise 展開コンテンツの変更
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/25/2019
+ms.date: 10/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の展開ガイドの新しいコンテンツおよびコンテンツの変更を参照してください。
-ms.openlocfilehash: 7c0ce7abed78f305bb3dc71e92628b25d48a040d
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: 6c965efcbbfebe4fd80ac983674a7d183793e946
+ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733488"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37889936"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
 
@@ -30,13 +30,20 @@ ms.locfileid: "37733488"
 
   [![Autopilot ポスターを使用した Windows 10 の展開](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
 
+  このポスターを [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) または [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) 形式でダウンロードすることもできます。
+
 - [System Center Configuration Manager ポスターを使用した Windows 10 の展開](windows10-deploy-inplaceupgrade.md)
 
   [![System Center Configuration Manager ポスターを使用した Windows 10 の展開](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=tKD38RgLAoOCAWJ5ppEbLevBAHk7KHtWrXldy2Jl6mY%3D&st=2019-10-24T22%3A16%3A08Z&se=2019-10-25T22%3A26%3A08Z&sp=r)
 
+  このポスターを [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) または [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) 形式でダウンロードすることもできます。
+
 - [厳しく規制されたデータ シナリオ用の Teams](secure-teams-highly-regulated-data-scenario.md)
 
   [![厳しく規制されたデータ シナリオ用の Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
+
+  お知らせ: [Microsoft 365 テクニカル コミュニティ ブログ](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Protect-your-highly-regulated-files-in-Teams-with-Microsoft-365/ba-p/962985)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-lock-down-team-sensitive-top-secret-joe-davies/?published=t)
+
 
 - [リモート ワーカーを支援するポスター](empower-people-to-work-remotely.md#poster)
 
@@ -45,6 +52,7 @@ ms.locfileid: "37733488"
 
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび機能強化
 
+- [フェーズ 4 の更新: Office 365 ProPlus](office365proplus-infrastructure.md)
 - [Contoso 社の導入実例](contoso-case-study.md) の更新
 - [Microsoft Teams](teams-workload.md)、[Exchange Online](exchangeonline-workload.md)、および [SharePoint Online](sharepoint-online-onedrive-workload.md) ワークロードの更新
 - [厳しく規制されたデータに適した SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md) のシナリオの更新
@@ -63,6 +71,8 @@ ms.locfileid: "37733488"
 
   [![ハイブリッド ID を持つ組織のリモート ワーカーの構成](./media/empower-people-to-work-remotely/remote-workers-hybrid.png)](empower-people-to-work-remotely.md) 
  
+  お知らせ: [Microsoft 365 テクニカル コミュニティ ブログ](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Empower-your-remote-workers-with-Microsoft-365-Enterprise/ba-p/935196#M236)  |  [LinkedIn](https://www.linkedin.com/pulse/how-do-i-configure-microsoft-365-enterprise-empower-my-joe-davies/)
+
 - [フェーズ 6: 情報保護](infoprotect-infrastructure.md) 用の[メールの暗号化の手順](infoprotect-email-encryption.md)
 
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび拡張機能
