@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business から Microsoft 365 Enterprise E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: efdf4030a2a638a3fd56d1c415fcc6e6ac261c1a
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772722"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931855"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Microsoft 365 Business から Microsoft 365 Enterprise E3 への移行
 
@@ -34,10 +34,10 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 
 また、ビジネスには、Office 365 ProPlus、Windows 10 Enterprise E3、エンタープライズクライアントアクセスライセンス (Cal) などのエンタープライズ機能が必要です。
 
-移行は簡単です。ライセンスの切り替えだけです。 現在のサブスクリプションのすべてのデータと構成が保持されます。 移行を準備するために実行する必要はありません。その後は、新しい機能を利用する以外に何もする必要はありません。 
+アップグレードは簡単です。[管理センターから](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)アップグレードを開始できます。 現在のサブスクリプションのすべてのデータと構成が保持されます。 移行を準備するために実行する必要はありません。その後は、新しい機能を利用する以外に何もする必要はありません。 
 
 >[!Note]
->また、Microsoft 365 Business のサブスクリプションを最大300の席で使用することもできます。また、Microsoft 365 Enterprise E3 サブスクリプションを使用して、より300多くのユーザーを対象にすることもできます。 ただし、Office 365 ATP は Microsoft 365 Enterprise E3 には含まれていません。 Microsoft 365 Enterprise E3 サブスクリプションのユーザーには、追加の Office 365 ATP ライセンスを追加する必要があります。
+>また、Microsoft 365 Business のサブスクリプションを最大300の席で使用することもできます。また、Microsoft 365 Enterprise E3 サブスクリプションを使用して、より300多くのユーザーを対象にすることもできます。 ただし、Office 365 ATP は Microsoft 365 Enterprise E3 には含まれていません。 引き続き脅威を保護するには、office 365 ATP のライセンスを追加して、Office 365 ATP ポリシーの範囲内のすべてのユーザーがライセンスを持つようにする必要があります。
 >
 
 ## <a name="differences-between-microsoft-365-business-and-microsoft-365-enterprise"></a>Microsoft 365 Business と Microsoft 365 Enterprise の相違点
@@ -104,7 +104,7 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 最大10個のアプリに対して、クラウドアプリの検出、Azure AD Connect の正常性、および SSO の使用を開始できます。
 
 >[!Note]
->Microsoft 365 Enterprise E3 に移行した後は、Outlook カスタマーマネージャーおよびミル Eiq ではなくなりました。
+>Microsoft 365 Enterprise E3 に移行されたユーザーは、Outlook カスタマーマネージャーおよびミル Eiq を使用できなくなります。
 >
 
 <a name="threat-protection"></a>
@@ -127,7 +127,7 @@ Windows 10 Business には次のような保護が含まれています。
 Windows 10 Enterprise E3 には、Microsoft Edge のハードウェアベースの分離のエンタープライズ管理も含まれています。
 
 >[!Note]
->Microsoft 365 Enterprise E3 に移行した後は、Office 365 ATP を使用できなくなりました。 Microsoft 365 Enterprise E3 サブスクリプションの追加の Office 365 ATP ライセンスを購入して、ユーザーアカウントに割り当てることができます。
+>Microsoft 365 Enterprise E3 に移行されるユーザーには、継続的な脅威保護のために Office 365 ATP ライセンスが必要になります。 Office 365 ATP ポリシーの範囲内のすべてのユーザーがライセンスを受けられるように、追加の Office 365 ATP ライセンスを購入してください。 
 >
 
 ### <a name="device-management-with-intune"></a>Intune を使用したデバイス管理

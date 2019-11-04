@@ -15,6 +15,8 @@
 ## [ID とデバイスのアクセス構成](../enterprise/microsoft-365-policies-configurations.md)
 ### [必須の作業](../enterprise/identity-access-prerequisites.md)
 ### [共通 ID とデバイスのアクセス ポリシー](../enterprise/identity-access-policies.md)
+### [ゲスト ユーザーと外部ユーザーのポリシー](../enterprise/identity-access-policies-guest-access.md)
+### [おすすめのチーム アクセス ポリシー](../enterprise/teams-access-policies.md)
 ### [推奨される Exchange Online のアクセス ポリシー](../enterprise/secure-email-recommended-policies.md)
 ### [推奨される SharePoint Online のアクセス ポリシー](../enterprise/sharepoint-file-access-policies.md)
 
@@ -201,16 +203,16 @@
 ##### [選挙運動の開発/テスト環境用にグループとユーザーを構成する](./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ##### [選挙運動用の開発/テスト環境でチーム サイトを作成する](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
+#### [Microsoft Teams のファイルを保護する](./office-365-security/secure-files-in-teams.md)
+##### [ファイルの 3 層の保護用にチームを展開する](./office-365-security/deploy-teams-three-tiers.md)
+##### [保持ラベルと DLP を使用してチーム内のファイルを保護する](./office-365-security/deploy-teams-retention-DLP.md)
+##### [秘密度ラベルを使用してチーム内のファイルを保護する](./office-365-security/deploy-teams-sensitivity-labels.md)
+##### [開発/テスト環境でファイルの Teams を保護する](./office-365-security/secure-team-for-files-in-a-dev-test-environment.md)
+
 #### [SharePoint Online サイトとファイルをセキュリティで保護する](./office-365-security/secure-sharepoint-online-sites-and-files.md)
 ##### [開発/テスト環境の SharePoint Online サイトをセキュリティで保護する](./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
-#### [分離した SharePoint Online チーム サイト](./office-365-security/isolated-sharepoint-online-team-sites.md)
-##### [分離した SharePoint Online チーム サイトの設計](./office-365-security/design-an-isolated-sharepoint-online-team-site.md)
-##### [分離した SharePoint Online チーム サイトの展開](./office-365-security/deploy-an-isolated-sharepoint-online-team-site.md)
-##### [分離した SharePoint Online チーム サイトの管理](./office-365-security/manage-an-isolated-sharepoint-online-team-site.md)
-##### [開発/テスト環境での分離した SharePoint Online チーム サイト](./office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md)
 #### [SIEM サーバー統合](./office-365-security/siem-server-integration.md)
-
 
 #### [Exchange Online Protection](./office-365-security/exchange-online-protection-overview.md)
 ##### [EOP の機能](./office-365-security/eop-features.md)

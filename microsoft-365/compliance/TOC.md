@@ -4,6 +4,7 @@
 ## [コンプライアンス センターの新機能](whats-new.md)
 ## [コンプライアンス コンテンツの最近の更新プログラム](recently-updated-topics-mcc.md)
 ## [Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)
+## [Microsoft 365 ソリューション カタログ (プレビュー)](microsoft-365-solution-catalog.md)
 ## [セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
 ## [無料の Azure Active Directory サブスクリプションを使用する](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 でセキュリティとコンプライアンスを計画する](plan-for-security-and-compliance.md)
@@ -17,9 +18,13 @@
 ## カスタマー キー
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
 ### [Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化](service-encryption-with-customer-key-faq.md)
-## 通信を監督する
-### [監督ポリシーの詳細情報](supervision-policies.md)
-### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
+## 通信コンプライアンス
+### [通信コンプライアンスの詳細 (プレビュー)](communication-compliance.md)
+### [Microsoft 365 で通信コンプライアンスを構成する (プレビュー)](communication-compliance-configure.md)
+### [通信コンプライアンスのアラートを調査して修復する (プレビュー)](communication-compliance-investigate-remediate.md)
+### [通信コンプライアンスの機能のリファレンス (プレビュー)](communication-compliance-feature-reference.md)
+### [Office 365 の監視ポリシー](supervision-policies.md)
+### [Office 365 の監視ポリシーを構成する](configure-supervision-policies.md)
 ## [情報障壁](information-barriers.md)
 ### [情報障壁ポリシーの定義](information-barriers-policies.md)
 ### [情報障壁ポリシーの属性](information-barriers-attributes.md)
@@ -30,7 +35,9 @@
 ## [機密ラベル](sensitivity-labels.md)
 ### [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)
 ### [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)
-### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
+### [ラベル分析によるラベル使用状況を表示する](label-analytics.md)
+### [チーム、グループ、およびサイトで機密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)
+### [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Office アプリの機密ラベル](sensitivity-labels-office-apps.md)
 
 ## [データ損失防止 (DLP)](data-loss-prevention-policies.md)
@@ -82,7 +89,14 @@
 #### [Office 365 Message Encryption の旧来の情報](legacy-information-for-message-encryption.md)
 #### [Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [データの分類を理解する (プレビュー)](data-classification-overview.md)
+### [ラベル アクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)
+### [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)
+### [すぐに使用できる分類子を使用する (プレビュー)](classifier-using-a-ready-to-use-classifier.md)
+### [分類子の作成とトレーニング (プレビュー)](classifier-creating-a-trainable-classifier.md)
+
 # 情報ガバナンスの管理
+## [情報ガバナンスの管理](manage-information-governance.md)
 ## [データをインポートする](importing-pst-files-to-office-365.md)
 ### [ネットワーク アップロードを使用して PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
 ### [ドライブ送付を使用して PST ファイルをインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -357,11 +371,16 @@
 
 # コンプライアンス リスクの管理
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [コンプライアンス マネージャー (クラシック)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [コンプライアンス マネージャー (プレビュー)](compliance-manager-overview.md)
-### [コンプライアンス マネージャー (プレビュー) の新機能](compliance-manager-release-notes.md)
-### [コンプライアンス マネージャー (プレビュー) と共同作業する](working-with-compliance-manager.md)
-### [コンプライアンス スコアの手法 (プレビュー)](compliance-score-methodology.md)
+## コンプライアンス スコアとコンプライアンス マネージャー
+### [コンプライアンス スコア (プレビュー)](compliance-score.md)
+### [コンプライアンス スコアを設定する (プレビュー)](compliance-score-setup.md)
+### [コンプライアンス スコアを使用する (プレビュー)](working-with-compliance-score.md)
+### [コンプライアンス スコアの計算 (プレビュー)](compliance-score-methodology.md)
+### [コンプライアンス スコアのリリース ノート (プレビュー)](compliance-score-release-notes.md)
+### [コンプライアンス マネージャー (プレビュー)](compliance-manager-overview.md)
+#### [コンプライアンス マネージャー (プレビュー) の新機能](compliance-manager-release-notes.md)
+#### [コンプライアンス マネージャー (プレビュー) と共同作業する](working-with-compliance-manager.md)
+#### [コンプライアンス マネージャー (クラシック)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR データ主体の要求ツール](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [GDPR のための Office 365 の情報保護](office-365-information-protection-for-gdpr.md)
@@ -382,9 +401,9 @@
 
 # [法令遵守アクション プラン](compliance-solutions-overview.md)
 
-## [ISO — 推奨アクション プラン](iso-action-plan.md)
-## [NIST — 推奨アクション プラン](nist-action-plan.md) 
-
+## [ISO - 推奨アクション プラン](iso-action-plan.md)
+## [NIST - 推奨アクション プラン](nist-action-plan.md)
+## [CCPA - その他のよく寄せられる質問](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [GDPR の推奨アクション プラン](gdpr-action-plan.md)
 
@@ -581,6 +600,7 @@
 #### [PASF (英国)](offering-pasf-uk.md)
 
 ### 北アメリカ
+#### [カリフォルニア州消費者プライバシー法 (CCPA)](offering-ccpa.md)
 #### [カナダのプライバシーに関する法律](offering-canadian-privacy-laws.md)
 
 ### 南アメリカ
