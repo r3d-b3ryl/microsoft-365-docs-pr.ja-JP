@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 特定の送信者からのメールを確実に受信できるようにする場合は、Exchange 管理センターでスパムフィルターポリシーの許可リストを調整できます。このようなメッセージを受信します。
-ms.openlocfilehash: b01abc327dd19a2d3098d3c49deed1edb1c07b68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8651b09d891a57cd5239311026af701064c9a4e1
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086742"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964453"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Office 365 で差出人セーフリストを作成する
 
@@ -59,7 +59,7 @@ ms.locfileid: "37086742"
 
 1. スパム信頼レベル (SCL) を-1 (スパムフィルタリングをバイパスする) に設定します。
 
-2. ルールの動作を言うために、X ヘッダーを追加します。 次の例では、簡単なヘッダー「X-ETR: 認証された送信者`contoso.com`のスパムフィルタリングをバイパスする」を追加できます。 このルールに複数のドメインがある場合は、ヘッダーテキストを必要に応じて変更できます。**メッセージが ETR によりフィルタリングをスキップすると、スパム対策ヘッダーの [fv: SKN] がスタンプされます。**(**IP 許可一覧にある場合は、IPV: CAL もスタンプ**します)。 これはトラブルシューティングに役立ちます。
+2. ルールの動作を言うために、X ヘッダーを追加します。 次の例では、簡単なヘッダー「X-ETR: 認証された送信者`contoso.com`のスパムフィルタリングをバイパスする」を追加できます。 このルールに複数のドメインがある場合は、ヘッダーテキストを必要に応じて変更できます。 **ETR によってフィルタリングがスキップされた場合は、スパム対策ヘッダーの「fv: SKN」をスタンプ**します (**IP 許可一覧に含まれている場合は、IPV: CAL もスタンプ**します)。 これはトラブルシューティングに役立ちます。
 
 ![スパムフィルターをバイパスするための GUI。](../media/1-AllowList-SkipFilteringFromContoso.png)
 

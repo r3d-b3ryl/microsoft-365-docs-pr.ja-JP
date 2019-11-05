@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 用迷惑メール報告アドインでは、次のような複数の方法で迷惑メール メッセージを報告できます。
-ms.openlocfilehash: 622463be7aea51b0912965ff713c76e8961c51d3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b53f6df11f2b0ee8fe6b20d3797d6e317c9a73e
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086595"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964443"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>迷惑メール メッセージを Microsoft に報告する
 
@@ -34,7 +34,7 @@ Microsoft Office Outlook 用迷惑メール報告アドインでは、次のよ�
 迷惑メール報告アドインは、Microsoft Exchange Online Protection (EOP) サービスにレポートを送信するために役立ちます。メールボックスがサービスによって保護されていない場合、迷惑メールのレポートを送信しても、スパム フィルターは影響を受けません。管理者は、組織全体に適用されるスパム設定についての詳細を、「[メッセージがスパムとしてマークされないようにする方法](https://go.microsoft.com/fwlink/p/?LinkId=534224)」や「[検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする (Block email spam with the Office 365 spam filter to prevent false negative issues)](https://go.microsoft.com/fwlink/p/?LinkId=534225)」で知ることができます。これらは、管理者レベルの制御権を持っている場合に、誤検知や検出漏れを防止する上で役立ちます。
   
 > [!TIP]
-> また、 [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com)電子メールアドレスを使用して、 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)の電子メールアドレスと誤検知 (非スパム) メッセージを使用して、スパムメッセージを Microsoft に直接送信することもできます。 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。 
+> また、 [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)電子メールアドレスを使用して、 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)の電子メールアドレスと誤検知 (非スパム) メッセージを使用して、スパムメッセージを Microsoft に直接送信することもできます。 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。 
   
 ### <a name="to-report-junk-email-messages-from-outlook"></a>Outlook から迷惑メールメッセージを報告するには
 
