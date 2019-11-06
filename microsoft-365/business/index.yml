@@ -1,0 +1,185 @@
+### YamlMime:Hub
+title: Microsoft 365 ビジネスリソース
+summary: Microsoft 365 Business には、Excel や Outlook のような最新バージョンの Windows および Office アプリが含まれています。 すべてのビジネスデバイスにまで拡張されたデータ保護とセキュリティを実現し、利用します。
+brand: m365
+metadata:
+  title: Microsoft 365 ビジネスリソース
+  description: 説明
+  ms.service: o365-administration
+  ms.topic: hub-page
+  ms.collection: collection
+  author: samanro
+  ms.author: samanro
+  ms.date: 10/01/2019
+  ms.openlocfilehash: 88c08b430fa67d81435b7b6a4eb079a216b228d7
+  ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/06/2019
+  ms.locfileid: "38002437"
+conceptualContent:
+  items:
+  - title: Microsoft 365 Business とは
+    links:
+    - url: microsoft-365-business-overview.md
+      itemType: overview
+      text: 概要
+    - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+      itemType: video
+      text: Microsoft 365 Business のトレーニング
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
+      itemType: overview
+      text: プランを比較する (英語のみ)
+    - url: https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+      itemType: reference
+      text: サービスの説明
+    - url: support/microsoft-365-business-faqs.md
+      itemType: reference
+      text: FAQ
+  - title: Microsoft 365 Business をセットアップする
+    links:
+    - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
+      itemType: video
+      text: 1. セットアップウィザードを実行する
+    - url: protection-settings-for-windows-10-pcs.md
+      itemType: how-to-guide
+      text: 2. Pc をセキュリティで保護する
+    - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+      itemType: video
+      text: 3. Teams をセットアップする
+    - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+      itemType: get-started
+      text: 4. Office をインストールする
+  - title: パートナー向けのリソース (英語のみ)
+    links:
+    - url: https://www.microsoft.com/microsoft-365/partners/business
+      itemType: overview
+      text: パートナーページ
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
+      itemType: download
+      text: ピッチデッキ (顧客のフォーカス)
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-partner-pitch-deck
+      itemType: download
+      text: ピッチデッキ (パートナーフォーカス)
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+      itemType: download
+      text: 技術の基礎知識
+  - title: ユーザーを管理します
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
+      itemType: how-to-guide
+      text: ユーザーを追加する
+    - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
+      itemType: how-to-guide
+      text: ユーザーを削除する
+    - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
+      itemType: how-to-guide
+      text: 他のユーザーのパスワードをリセットする
+    footerLink:
+      url: https://docs.microsoft.com/office365/admin/admin-home
+      text: 詳細を表示
+  - title: 脅威を管理する
+    links:
+    - url: https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp
+      itemType: overview
+      text: Office 365 Advanced Threat Protection
+    - url: set-up-mfa.md
+      itemType: how-to-guide
+      text: セットアップ MFA
+    - url: https://docs.microsoft.com/en-us/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+      itemType: how-to-guide
+      text: ランサムウェアから保護する
+    - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+      itemType: overview
+      text: 条件付きアクセス
+    footerLink:
+      url: https://docs.microsoft.com/office365/admin/admin-home
+      text: 詳細を表示
+  - title: データ管理
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+      itemType: overview
+      text: データ損失防止
+    - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+      itemType: how-to-guide
+      text: 暗号化された電子メールを送信する
+    - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+      itemType: how-to-guide
+      text: メールの保存期間を設定する
+    - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+      itemType: video
+      text: 機密ラベルを作成して使用する
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+      text: 詳細を表示
+  - title: デバイスを管理する
+    links:
+    - url: view-policies-and-devices.md
+      itemType: how-to-guide
+      text: PC & モバイルデバイス
+    - url: remove-company-data.md
+      itemType: how-to-guide
+      text: 会社のデータを削除する
+    - url: reset-devices-to-factory-settings.md
+      itemType: how-to-guide
+      text: ワイプとリセット
+    - url: https://docs.microsoft.com/en-us/intune/index
+      itemType: overview
+      text: Intune
+    - url: manage-windows-devices.md
+      itemType: how-to-guide
+      text: ハイブリッド Azure AD join のセットアップ
+    - url: access-resources.md
+      itemType: how-to-guide
+      text: Azure AD join のセットアップ
+    - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+      text: Windows Autopilot
+      itemType: overview
+    footerLink:
+      url: manage-windows-devices.md
+      text: 詳細を表示
+  - title: セキュリティを監視する
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+      itemType: how-to-guide
+      text: セキュリティで保護されたスコア
+    - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+      itemType: overview
+      text: Intune アプリ保護ポリシーレポート
+    - url: https://docs.microsoft.com/office365/enterprise/view-service-health
+      itemType: how-to-guide
+      text: 正常性の監視の警告
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/security/
+      text: 詳細を表示
+  - title: サポートとコミュニティ
+    links:
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
+      itemType: whats-new
+      text: Announcements
+    - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+      itemType: video
+      text: ヘルプを参照する
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
+      itemType: overview
+      text: フィードバックの送信
+    - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
+      itemType: overview
+      text: 中小企業の技術コミュニティ
+  - title: 方法
+    links:
+    - url: sign-up.md
+      itemType: get-started
+      text: Microsoft 365 Business へのサインアップ
+    - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
+      itemType: video
+      text: クラウドにファイルを保存する
+    - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+      itemType: video
+      text: Microsoft Teams を使用して共同作業を行う
+    - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+      itemType: how-to-guide
+      text: 課金内容の表示
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/security/
+      text: 詳細を表示
