@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリの管理ポリシーを作成、編集、または削除する方法と、Android または iOS デバイスで作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: a829cfbcb3209313a53e0a1406f5252d3d5580d8
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 914e6848ac46eb334516aadff2827da2b83a38c4
+ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574740"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38002087"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
@@ -71,9 +71,9 @@ ms.locfileid: "37574740"
     
 ## <a name="available-settings"></a>利用可能な設定
 
-次の表は、デバイス上の作業ファイルを保護するために利用可能な設定と、ユーザーが自分のモバイル デバイスから Office ファイルにアクセスする方法を制御する設定に関する詳細情報を示しています。
+次の表では、デバイス上の作業ファイルを保護するために使用できる設定に関する詳細情報と、ユーザーがモバイルデバイスから Office ファイルにアクセスする方法を制御する設定について詳しく説明します。
   
- 詳細については、「 [Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法](map-protection-features-to-intune-settings.md)」をご覧ください。 
+ 詳細については、「[Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法](map-protection-features-to-intune-settings.md)」をご覧ください。 
   
 ### <a name="settings-that-protect-work-files"></a>作業ファイルを保護する設定
 

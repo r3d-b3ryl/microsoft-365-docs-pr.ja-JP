@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
+ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968527"
+ms.locfileid: "37993732"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -63,7 +63,7 @@ ms.locfileid: "37968527"
 - **ユーザーへ**: このフィールドをクリックして、組織内の1人または複数の受信者を選択します。
 
 > [!NOTE]
-> 外部の送信者と受信者の電子メールアドレスを入力することもできます。 ワイルドカードはサポートされて`*@contoso.com`いますが、同じフィールドで複数のワイルドカードエントリを同時に使用することはできません。<br/>複数の送信者または受信者リストをセミコロン (`;`) で区切って貼り付けることができます。 スペース (`\s`)、キャリッジリターン (`\r`)、または次`\n`の行 () 記号を使用できます。
+> 外部の送信者と受信者の電子メールアドレスを入力することもできます。 ワイルドカードはサポートされて`*@contoso.com`いますが、同じフィールドで複数のワイルドカードエントリを同時に使用することはできません。<br/>複数の送信者または受信者の一覧を、セミコロン (`;`) で区切って貼り付けることができます。 スペース (`\s`)、キャリッジリターン (`\r`)、または次の`\n`行 ()。
 
 ### <a name="time-range"></a>時間の範囲
 

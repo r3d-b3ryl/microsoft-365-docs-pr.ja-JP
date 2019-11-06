@@ -1,5 +1,5 @@
 ---
-title: Office 365 Business Premium からの Microsoft 365 Business への移行
+title: Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,34 +19,24 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Microsoft 365 Business にビジネスを移行する方法について説明します。
-ms.openlocfilehash: ae9ca0fe97916fdae6104a6edbb04efba5d9299e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Office 365 Business Premium から Microsoft 365 Business にビジネスをアップグレードする手順。
+ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
+ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575880"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38002129"
 ---
-# <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business への移行
+# <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
 
-一般法人向け Office 365 サブスクリプション (Office 365 Business Premium など) が既にインストールされている場合は、ライセンスを Microsoft 365 Business に簡単に追加して、それらを一部またはすべてのユーザーに割り当てることができます。
-  
-> [!NOTE]
-> [[プランの切り替え](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton)] ボタンを使用して、Microsoft 365 Business へのアップグレードを完了することはできません。 
-  
-## <a name="add-microsoft-365-business-licenses"></a>Microsoft 365 Business のライセンスを追加する
+Office [365 for business のサブスクリプション](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)(たとえば、Office 365 business Premium) をご利用の場合は、Microsoft 365 business へのアップグレードが容易にできます。 次のものを追加する場合は、Microsoft 365 Business にアップグレードします。 
+- Windows 10 Pro (Windows 8 以降を実行している Pc に対して)
+- デバイス上のビジネスデータを管理する単純なコントロール
+- 高度なセキュリティ機能。
+Microsoft 365 Business の詳細については、「 [Microsoft.com](https://www.microsoft.com/microsoft-365/business) 」を参照してください。
 
-Microsoft 365 Business を入手する方法は2つあります。 パートナーは、microsoft[パートナーセンター](get-microsoft-365-business.md)から Microsoft 365 Business を購入することができます。 パートナーは、Microsoft 365 Business への移行を支援することもできます。
-  
-独自のサブスクリプションを管理する場合は、Microsoft 365 Business ライセンスを購入するために[sales に連絡](https://www.microsoft.com/microsoft-365/business)することができます。 
-  
-パートナーとの作業を開始する方法については、「[サブスクリプションアドバイザーパートナーを追加、変更、または削除](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff)する」を参照してください。 
-  
-ライセンスを購入するためのリンクが提供されている場合は、次のようなウィザードを順を追って説明します。 [**はい、アカウントに追加**します] を選択します。 ライセンスの数と支払方法を選択することもできます。
-  
-![Microsoft 365 Business の直接購入リンクで、現在のアカウントに追加するか、新しいアカウントにサインアップします。](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
-  
-## <a name="assign-microsoft-365-licenses"></a>Microsoft 365 ライセンスを割り当てる
+## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 Business Premium と Microsoft 365 Business の違いは何ですか。
+これらの2つのプランを[Microsoft 365 Business service の説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)に並べて比較しました。 
 
 1. 新しいライセンスを購入すると、これが初めての場合は、Microsoft 365 Business のセットアップバナーが管理センターの一番上に表示されます。
     
@@ -69,7 +59,7 @@ Microsoft 365 Business を入手する方法は2つあります。 パートナ�
     
     新しい従業員を追加して、既存のユーザーにライセンスを割り当てる場合は、[**次へ**] を選択します。
     
-4. [* * 電子メールメッセージの移行 * *] ページで、手順3で追加した新しいユーザーのいずれかについて電子メールを移行することを選択できます。 この手順は省略することもできます。 **次へ**を選択します。
+4. [**メールメッセージの移行**] ページで、手順3で追加した新しいユーザーのいずれかに対して電子メールを移行することを選択できます。 この手順は省略することもできます。 **次へ**を選択します。
     
 5. 最後のページで [**管理センターに移動**します] を選択して、セットアップを続行します。
     
@@ -79,19 +69,47 @@ Microsoft 365 Business を入手する方法は2つあります。 パートナ�
     
     ![ユーザーカードで、[製品ライセンス] の横にある [編集] を選択します。](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. [**製品ライセンス**] で、 **Microsoft 365 Business**を **[** \> **保存**] にスライドし、を**閉じ**ます。
-    
-Microsoft 365 Business の初期ライセンスを購入すると、**請求** \> **書購入サービス**でさらに追加できるようになります。 [**サービスを購入**する] ページで、 **Microsoft 365 の名刺**の省略記号をクリックし、[ライセンスの数量の**変更**] を選択してさらに購入することができます。 
+## <a name="before-you-get-started"></a>開始する前に
+
+- **いつアップグレードを選択する必要がありますか。** アップグレードは、1つのプランに割り当てられた**すべてのユーザー**をアップグレードする場合に最適です。 [アップグレード] を選択すると、すべてのプランユーザーが同時に別のプランに切り替えられます。 1つのプランに割り当てられたすべてのユーザーをアップグレードしない場合は、新しいプラン (この場合は Microsoft 365 Business) のライセンスを購入し、アップグレードするユーザーごとに[これらのライセンスを個別に割り当て](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)ます。 
+- **一部のアドオンはアップグレードを妨げる可能性があります**アップグレードを開始しようとしていて、続行できないアドオンがある場合は、最初にアドオンを削除してから、後で必要に応じて追加することができます。 
+- **プランを前払いした場合**プリペイドプランには、簡単なアップグレードパスはありません。 お客様は、ストアで購入したプロダクト ID を使用してプランを設定することにより、プリペイドプランを所有しているかどうかを確認できます。 パートナーに連絡するか、Microsoft ストアに移動するか、プリペイドプランの期限が切れて新しいプランに切り替えるまで待機します。
+
+## <a name="upgrade-to-microsoft-365-business"></a>Microsoft 365 Business へのアップグレード
+[新しい管理センター](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)で、次の手順を実行してライセンスを購入します。
+1. で<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>管理センターにサインインします。
+2. ナビゲーションウィンドウに移動して、[ **Billing** \> **Products & Services**] を選択します。 Office 365 サブスクリプションを検索し、それを選択して詳細を表示します。 
+
+    ![スクリーンショットは、管理センターでサブスクリプションを検索して選択する方法を示しています。](media/FindYourSubscription.png)
+
+3. 次のページで、[**アップグレード**] を選択します。 
+
+      ![管理センターで、[アップグレード] を選択する場所がスクリーンショットに示されています。](media/SelectUpgrade.png)
+
+  > [!NOTE]
+  > 「Azure Active Directory でのサブスクリプションのアップグレードは、グループベースのライセンスでサポートされていません」というメッセージが表示される場合は、非常に大規模な組織でない限り、これは無視しても問題ありません。 このオプションを選択した組織では、グループベースのライセンスを使用していることに注意してください。
+
+4. 次に、アップグレード可能な Office プランの一覧を表示できます。 この場合は、Microsoft 365 のビジネスプランを検索してください。 このプランに含まれているすべての Office アプリとサービスを表示するには、下にスクロールします。 [ **Microsoft 365 business**] で、[**アップグレード**] を選択して、カートに microsoft 365 Business を追加します。
+5. カート内:
+    1. すべての現在のユーザーのライセンスがカートに自動的に追加されます。 より多くのライセンスが必要な場合は、[これらのライセンスを個別に購入して割り当てる](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)必要があります。  
+    2. 月々または年間の支払方法を調整できます。 ドロップダウンメニューから選択します。
+6. [**チェックアウトへ移動**] を選択すると、このアカウントの支払い方法など、購入の概要が表示されます。 また、プロモーションコードを用意している場合は、ここで追加することもできます。
+7. [**注文**] を選択して購入を完了します。
+新しいサービスプランを設定するには、Microsoft に数分かかります。 進行状況を確認するには、[**アップグレード状態の確認**] を選択します。 
+1. プランの準備が整ったら、管理センターで追加のセットアップ手順を完了する必要がある場合があります。 ナビゲーションウィンドウで、[**ホーム**] を選択して、追加のセットアップ手順を完了します。
+
+> [!NOTE]
+> 不要になった Ofifce 365 ライセンスに対して、日割り計算が行われます。 銀行口座またはクレジットカードは、新しいプランを設定してから2日後に課金されます。
   
 ## <a name="protect-user-devices-and-files"></a>ユーザーのデバイスとファイルを保護する
 
-Microsoft 365 Business にライセンスを割り当てたら、ユーザーのデバイスとファイルの保護を開始できます。
+これで、Microsoft 365 Business のライセンスが割り当てられました。次に、デバイスとファイルの保護を開始するための手順を完了します。 管理センターのナビゲーションウィンドウには、新しいオプションがいくつか用意されています。
   
-1. 管理センターの左側のナビゲーションで、[**デバイス** \> **ポリシー**] に移動します。
+1. 管理センターのナビゲーションウィンドウで、[**デバイス** \> **ポリシー**] に移動します。
     
 2. [**デバイスポリシー** ] ページで、[**追加**] を選択します。
     
-3. [**ポリシーの追加**] ウィンドウで、ポリシーの名前を指定し、ドロップダウンから**ポリシーの種類**を選択します。 
+3. [**ポリシーの追加**] ウィンドウで、ポリシーに名前 (たとえば、作業ファイルを保護する) を指定し、ドロップダウンから**ポリシーの種類**を選択します。 
     
     Android および iPhone デバイス上のファイルを保護するためのアプリケーションポリシーおよび Windows 10 を設定し、会社が所有する Windows 10 デバイスのデバイス構成ポリシーを設定できます。 詳細については、次のリンクを参照してください。
     
@@ -101,17 +119,14 @@ Microsoft 365 Business にライセンスを割り当てたら、ユーザーの
     
   - [Windows 10 Pc のデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)
     
-   ![[ポリシーの追加] ウィンドウで、名前を入力し、ドロップダウンメニューからポリシーの種類を選択します。](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   
-4. ポリシーを設定すると、従業員はデバイスをセットアップできるようになります。
+4. ポリシーを設定すると、ユーザーはデバイスをセットアップできるようになります。
     
-  - Windows Pro Creator の更新プログラムを適用していない場合は、windows pro Creator update に[アップグレード](upgrade-to-windows-pro-creators-update.md)する必要があります。
+  - Windows デバイスが Windows Pro Creator の更新プログラムを使用していない場合は、[それらを Windows Pro Creator update にアップグレード](upgrade-to-windows-pro-creators-update.md)する必要があります。
     
   - Windows デバイスの手順については、「 [Microsoft 365 Business ユーザーの windows デバイスをセットアップ](set-up-windows-devices.md)する」を参照してください。 
     
   - Android フォンおよび iPhones の手順については、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
-    
-5. Office クライアントアプリを自動的にインストールするには、「 [Microsoft 365 Business による office クライアントの展開を準備](prepare-for-office-client-deployment.md)する」および「 [Windows 10 デバイスで Office を自動的にインストールまたはアンインストール](auto-install-or-uninstall-office.md)する」を参照してください。
-    
+
 
 
