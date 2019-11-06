@@ -90,6 +90,7 @@
 #### [Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 ## [データの分類を理解する (プレビュー)](data-classification-overview.md)
+### [ラベル付きコンテンツの表示 (プレビュー)](data-classification-content-explorer.md)
 ### [ラベル アクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)
 ### [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)
 ### [すぐに使用できる分類子を使用する (プレビュー)](classifier-using-a-ready-to-use-classifier.md)
