@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 6b5f1d7cf8070808aecb57c7f5b2c16ec84b37d6
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982458"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38020370"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft マネージドデスクトップアプリの要件
 
@@ -38,7 +38,7 @@ Microsoft マネージドデスクトップデバイスでは、特定の種類�
 
 ## <a name="restricted-app-behaviors"></a>制限されたアプリの動作
 
-アプリの動作によっては、ユーザーの環境に悪影響を及ぼす場合や、Microsoft マネージドデスクトップデバイスにセキュリティリスクをもたらす場合があります。 次の動作を持つアプリは、Microsoft の特定の除外を使用せずに Microsoft マネージドデスクトップ環境で実行することを許可されていません。
+アプリの動作によっては、ユーザーの環境に悪影響を及ぼす場合や、Microsoft マネージドデスクトップデバイスにセキュリティリスクをもたらす場合があります。 次の動作を持つアプリは、Microsoft に固有のものではなく、Microsoft マネージドデスクトップ環境での実行が許可されていません。
 
 ユーザーの作業状況:
 - バックグラウンドサービスをインストールする
@@ -58,5 +58,5 @@ Microsoft マネージドデスクトップデバイスでは、特定の種類�
 
 Microsoft マネージドデスクトップは、Microsoft の管理されたデバイスを使用して Windows Update または受信トレイで利用可能なデバイスドライバーのみをサポートしています。 
 
-アプリケーションで特定のドライバーを実行する必要がある場合は、制限付きアプリケーションと見なされ、Microsoft マネージドデスクトップに展開するための除外が必要になります。 
+アプリケーションで特定のドライバーを実行する必要がある場合は、制限付きアプリケーションと見なされ、Microsoft マネージドデスクトップにを展開する必要があります。 
 

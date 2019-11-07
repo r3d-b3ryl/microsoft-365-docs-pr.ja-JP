@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390734"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012412"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップで基幹業務アプリを管理する
 
@@ -25,7 +25,7 @@ Microsoft マネージドデスクトップに利用したアプリのアプリ�
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップで基幹業務アプリを更新する
 
 **Microsoft マネージドデスクトップポータルで基幹業務アプリを更新するには**
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mmdportal)にサインインします。
 2. [**インベントリ**] で、[**アプリ**] を選択します。  
 3. 更新するアプリを選択し、[**編集**] を選択します。
 4. [**管理**] で、[**プロパティ**] を選択します。 
@@ -58,7 +58,7 @@ Microsoft マネージドデスクトップに利用したアプリのアプリ�
 
 **基幹業務アプリを以前のバージョンにロールバックするには**
 
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mmdportal)にサインインします。
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mmdportal)にサインインします。
 2. [**インベントリ**] で、[**アプリ**] を選択します。  
 3. ロールバックする必要のあるアプリを選択し、[**編集**] を選択します。
 4. [**管理**] で、[**プロパティ**] を選択します。 

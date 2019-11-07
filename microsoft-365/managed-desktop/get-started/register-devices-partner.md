@@ -1,18 +1,18 @@
 ---
-title: パートナーがデバイスを登録するための手順
+title: デバイスを登録するためのパートナー向け手順
 description: パートナーが Microsoft マネージドデスクトップで管理できるようにデバイスを登録する方法
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 971b17d3f9fad15d5c254d47af9b6eb30b66633c
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982718"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011948"
 ---
-# <a name="steps-for-partners-to-register-devices"></a>パートナーがデバイスを登録するための手順
+# <a name="steps-for-partners-to-register-devices"></a>デバイスを登録するためのパートナー向け手順
 
 
 このトピックでは、パートナーがデバイスを登録するために従う必要のある手順について説明します。 自分でデバイスを登録するプロセスについては、「 [Microsoft マネージドデスクトップの登録デバイス](register-devices-self.md)」に記載されています。
@@ -20,7 +20,7 @@ ms.locfileid: "36982718"
 
 
 ## <a name="prepare-for-registration"></a>登録の準備 
-お客様の登録を完了する前に、[パートナーセンター](https://partner.microsoft.com/dashboard)で、お客様との関係を確立する必要があります。 [ **Azure Active Directory および Office 365 の委任管理者特権を含める**] チェックボックスをオンにします。 詳細については、[パートナーセンターのヘルプ](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)を参照してください。
+お客様の登録を完了する前に、[パートナーセンター](https://partner.microsoft.com/dashboard)で、お客様との関係を確立する必要があります。 [ **Azure Active Directory および Office 365 の委任管理者特権を含める**] チェックボックスをオンにします。 詳細については、[パートナーセンターのヘルプ](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)を参照してください。
 
 お客様のために登録を完了するには、まず CSV ファイルを作成します。
 
@@ -70,7 +70,7 @@ Azure Portal を使用して登録することは、セルフサービスの場�
 | 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
 | 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](register-devices-self.md#troubleshooting-device-registration)」を参照してください。 |
 | ユーザーの準備完了 | 登録が成功し、デバイスをエンドユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| アクティブ | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
+| Active | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
 | 未使用 | デバイスはエンドユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  |
 
 

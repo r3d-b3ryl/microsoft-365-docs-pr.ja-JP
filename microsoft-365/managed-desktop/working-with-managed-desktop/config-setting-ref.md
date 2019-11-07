@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390414"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012262"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>構成可能な設定のリファレンス-Microsoft マネージドデスクトップ
 
@@ -31,7 +31,7 @@ ms.locfileid: "35390414"
 ### <a name="customize-and-deploy-desktop-background-picture"></a>デスクトップの背景画像をカスタマイズおよび展開する
 
 **カスタムデスクトップの背景画像を追加するには**
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**構成可能**なワークスペース] で、[**デスクトップの背景画像**] を選択します。 
 4. 使用する画像の場所を入力します。 
@@ -47,7 +47,7 @@ ms.locfileid: "35390414"
 ### <a name="customize-and-deploy-browser-start-pages"></a>ブラウザーのスタートページをカスタマイズおよび展開する
 
 **ブラウザーの開始ページを追加するには**
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**構成可能**なワークスペース] で、[**ブラウザーの開始ページ**] を選択します。 
 4. [ **Add start page**] を選びます。
@@ -66,19 +66,19 @@ Https://の場所、またはエンタープライズモードサイトリスト
 エンタープライズモードのサイトリストファイルでは、これらの要件を満たす必要があります。
 - ファイル形式-[ファイルの要件](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)を満たす XML ファイル
 - ファイルの場所-内部の https の場所にあるホストファイル。 
-- 許可されていません-内部ファイル共有**(たとえば、/) をホストすることは許可されていません。
+- 許可されていません-内部ファイル共有 *(たとえば、*/) をホストすることは許可されていません。
 
 ### <a name="best-practices"></a>ベスト プラクティス
 
 これらのベストプラクティスは、お客様が IT インフラストラクチャを近代化するための意思決定を支援するために提供されています。
 - **限られた数のサイトを選択**する-Microsoft Managed Desktop は、microsoft Edge を優先ブラウザーとして使用して、組織の全体的なセキュリティを向上させ、ユーザーにとっての利便性を向上させます。 このリストに含まれるほとんどのサイトは、多くのセキュリティ機能を含まない古いバージョンのブラウザーを必要とする従来の web アプリに対して使用されます。 
-- **** 別のサイト、または古いブラウザーを必要としない web アプリを検討してください。 または、新しいブラウザーを使用できるようにサイトを更新することを検討してください。 新しいブラウザーは最新のテクノロジを使用して、セキュリティを向上させます。
+- 別のサイト、または古いブラウザーを必要としない web アプリを検討**してください**。 または、新しいブラウザーを使用できるようにサイトを更新することを検討してください。 新しいブラウザーは最新のテクノロジを使用して、セキュリティを向上させます。
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>エンタープライズサイトモードリストの場所をカスタマイズおよび展開する
 
 **エンタープライズサイトモードリストの場所を追加するには**
 
-1.  [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1.  [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2.  [**設定**] で、[**構成可能**] を選択します。
 3.  [**構成可能**なワークスペース] で、[**エンタープライズモードのサイトリストの場所**] を選択します。 
 4.  サイトリストの https の場所を入力します。 
@@ -100,7 +100,7 @@ Https://の場所、またはエンタープライズモードサイトリスト
 
 **信頼済みサイトを追加するには**
 
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**構成可能**なワークスペース] で、[**信頼済みサイト**] を選択し、[**信頼済みサイトの追加**] を選択します。 
 4. [**信頼済みサイトの追加**] で、URL を入力し、セキュリティゾーンを選択して、[**信頼済みサイトの追加**] を選択します。 
@@ -109,7 +109,7 @@ Https://の場所、またはエンタープライズモードサイトリスト
 
 **信頼済みサイトを削除するには**
 
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**構成可能**なワークスペース] で、[**信頼済みサイト**] を選択します。 
 4. 削除するサイトを選択し、[**削除**] を選択します。 
@@ -134,7 +134,7 @@ Microsoft マネージドデスクトップポータルで追加するプロキ�
 
 **個別のプロキシサイトの例外を追加するには**
 
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**構成可能**なワークスペース] で、[**プロキシ**] を選択します。 
 4. プロキシサーバーの**アドレス**と**ポート番号**を入力し、[**プロキシ例外の追加**] を選択します。 

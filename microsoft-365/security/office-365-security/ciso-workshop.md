@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: b00d18e9d14d369716f9c37fb9975f55d3c0eece
-ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
+ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37554124"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012422"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>チーフ情報セキュリティ責任者 (CISO) ワークショップのトレーニング
 
@@ -32,7 +32,7 @@ CISO ワークショップのビデオおよび PDF/PowerPoint のダウンロ�
 
 - [モジュール 2: セキュリティ管理](ciso-workshop-module-2.md): 統合されたガイダンス、ポリシーの自動適用、監視を使用して、ハイブリッドエンタープライズ領域の可視性と制御を向上させる方法について説明します。
 
-- [モジュール 3: id および信頼](ciso-workshop-module-3.md)度の高いユーザーアクセス: id とユーザーアクセス戦略を使用してゼロの信頼を作成し、ネットワーク境界の内部および外部で企業データを保護する方法について説明します。
+- [モジュール 3: identity And Zero Trust User access](ciso-workshop-module-3.md): id とユーザーアクセス戦略を使用してゼロの信頼を強化し、ネットワーク境界の内部および外部で企業データを保護する方法について説明します。
 
 - [モジュール 4a: 脅威保護戦略、パート I](ciso-workshop-module-4a.md): 脅威保護、セキュリティの進化、戦略、およびセキュリティのロードマップに関する重要なな学習事項について説明します。
 

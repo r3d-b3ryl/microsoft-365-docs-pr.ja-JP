@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
-ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
+ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37040807"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012302"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ
 
@@ -26,7 +26,7 @@ ms.locfileid: "37040807"
 展開 | 変更は、このグループへの展開を待機しています。
 処理中 | このグループ内のアクティブなデバイスに変更が適用されています。 
 完了 | このグループ内のすべてのアクティブなデバイスで変更が完了しました。 
-Failed | グループ内のアクティブなデバイスの 10% で変更が失敗したため、展開が停止されました。<br><br> 展開のトラブルシューティングを行うために、サポート要求が Microsoft マネージドデスクトップ操作を使用して自動的に開かれます。 
+失敗 | グループ内のアクティブなデバイスの10% で変更が失敗したため、展開が停止されました。<br><br> 展開のトラブルシューティングを行うために、サポート要求が Microsoft マネージドデスクトップ操作を使用して自動的に開かれます。 
 復帰 | 変更は、すべての展開グループに正常に展開された最後の変更に戻されました。
 
 ## <a name="deploy-changes"></a>変更を展開する
@@ -35,7 +35,7 @@ Failed | グループ内のアクティブなデバイスの 10% で変更が失
 
 **変更を展開するには**
 
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**展開状態**] ワークスペースで、展開する設定を選択し、展開する段階的展開を選択します。
 4. 展開グループのいずれかに変更を展開するには、[**展開**] を選択します。
@@ -53,7 +53,7 @@ Failed | グループ内のアクティブなデバイスの 10% で変更が失
 デスクトップの背景画像を使用して変更を元に戻す手順を示します。 
 
 **変更を元に戻すには**
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインする
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**展開状態**] ワークスペースで、元に戻す設定を選択してから、元に戻す段階的な展開を選択します。
 4. **この変更を元に戻す必要がある**場合は、[**展開を元に戻す**] を選択します。

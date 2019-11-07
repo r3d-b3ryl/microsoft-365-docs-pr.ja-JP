@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37159685"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011998"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの管理者サポート
 
@@ -21,7 +21,7 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 >アプリパッケージ、デバイス、セキュリティ、およびその他の管理者の[連絡先が設定](../get-started/add-admin-contacts.md)されていることを確認してください。 管理者の連絡先が構成されていない場合、これらの領域のいずれにもサポート要求を送信することはできません。
 
 **サポートリクエストを送信するには**
-1. [Microsoft Managed Desktop 管理ポータル](http://aka.ms/mwaasportal)にサインインします。 
+1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインします。 
 2. [**サポート要求**] で、[ **+ 新しいサポートチケット**] を選択します。
 3. 必要なヘルプに一致する**サポート要求の種類**を選択します。 次の表は、オプションの概要を示しています。 
 4. **重大度レベル**を選択します。 詳細については、「 [Support request severity definitions](#sev)」を参照してください。 

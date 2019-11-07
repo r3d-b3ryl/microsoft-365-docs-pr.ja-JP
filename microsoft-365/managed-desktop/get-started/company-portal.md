@@ -1,20 +1,19 @@
 ---
-title: Intune ポータルサイトの Microsoft 管理デスクトップデバイスをインストールする
+title: デバイスに Intune Company Portal をインストールする
 description: Microsoft マネージドデスクトップデバイスへのポータルサイトアプリのインストールに関する情報
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、ポータルサイト
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 03/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a9ce2b2455b6036170636ac564c450676473ac48
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 121771dd2474d58e7bd6a0d56218563c8785d4bf
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390704"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011958"
 ---
-# <a name="install-intune-company-portal-on-microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイスに Intune Company Portal をインストールする
+# <a name="install-intune-company-portal-on-on-devices"></a>デバイスに Intune ポータルサイトをインストールする
 
 Microsoft マネージドデスクトップでは、IT 管理者が Microsoft マネージドデスクトップデバイスを使用してユーザーに Intune ポータルサイトをインストールする必要があります。 組織にとって次のような利点があります。
 - ユーザーは、利用可能なアプリケーションを参照してインストールする場所が1つあります。 
@@ -44,3 +43,14 @@ Microsoft マネージドデスクトップでのサポート要求の送信の�
 組織の IT 管理者として、組織内の会社のポータルの使用方法をユーザーに知らせることが重要です。 Microsoft マネージドデスクトップの推奨事項:
 - 会社のポータルからアプリケーションをインストールする手順について説明します。 詳細については、「[デバイスにアプリをインストールして共有](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)する」を参照してください。
 - 現在利用できないアプリケーションについて、IT 管理者に要求を送信する方法。
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの使用を開始する手順
+
+1. [管理ポータルで管理者の連絡先を追加して確認する](add-admin-contacts.md)
+2. [条件付きアクセスを調整する](conditional-access.md)
+3. [ライセンスを割り当てる](assign-licenses.md)
+4. Intune ポータルサイトを展開する (このトピック)
+5. [エンタープライズ状態の移動を有効にする](enterprise-state-roaming.md)
+6. [デバイスをセットアップする](set-up-devices.md)
+7. [ユーザーがデバイスを使えるようにする](get-started-devices.md)
+8. [アプリを展開する](deploy-apps.md)
