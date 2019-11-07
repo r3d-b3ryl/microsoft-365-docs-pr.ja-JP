@@ -3,7 +3,7 @@ title: 厳しく規制されたデータ用の SharePoint サイト
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: セキュリティで保護された SharePoint チーム サイトを作成して、最も重要な機密ファイルを保存します。
-ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: cfa1f7d85f7dd4d20b293c73b0b8f7d8e2577d02
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628341"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929246"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>厳しく規制されたデータ用の SharePoint サイト
 
@@ -68,7 +68,11 @@ Microsoft 365 Enterprise には、一連のクラウドベースのサービス�
 
 以下のフェーズでは、厳しく規制されたデータを扱う SharePoint サイトの設計、構成、導入方法について、順を追って説明します。
 
-架空の多国籍組織を表す Contoso 社が、研究チーム向けに SharePoint サイトを設計した方法について確認するには、[構成例](contoso-sharepoint-online-site-for-highly-confidential-assets.md) をご覧ください。
+<a name="poster"></a> このシナリオを 1 ページにまとめた概要については、「[厳しく規制されたデータ用の SharePoint サイトのポスター](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)」を参照してください。
+
+[![厳しく規制されたデータ用の SharePoint サイトのポスター](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) でダウンロードして、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="identity-and-device-access-prerequisites"></a>ID とデバイス アクセスの前提条件
 
