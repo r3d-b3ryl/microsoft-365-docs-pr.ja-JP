@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Teams について学習し、展開していきます。
-ms.openlocfilehash: e6a4ccc1b7ec5989707e2195b66fa1cf987cd091
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889926"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033602"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Microsoft Teams を展開する
 
@@ -63,8 +63,8 @@ Skype for Business Online から Teams にアップグレードする場合で�
 
 Microsoft がどのように Teams を展開し、共同作業に使用しているかについては下記を参照してください。
 
-- [Microsoft Teams の導入戦略により、従業員は新しい仕事文化に備えることができる](https://www.microsoft.com/ja-JP/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
-- [Microsoft Teams ミーティングにより、グローバルにスケーラブルな最新の会議体験が実現できる](https://www.microsoft.com/ja-JP/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
+- [Microsoft Teams の導入戦略により、従業員は新しい仕事文化に備えることができる](https://www.microsoft.com/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [Microsoft Teams ミーティングにより、グローバルにスケーラブルな最新の会議体験が実現できる](https://www.microsoft.com/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## <a name="next-steps"></a>次の手順
 

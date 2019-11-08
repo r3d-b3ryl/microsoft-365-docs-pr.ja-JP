@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーがスパムとして分類されている Office 365 からメッセージを送り続ける場合、メッセージを送信しないよう制限されます。 '
-ms.openlocfilehash: d0409a16a8584e7561f04a30fcc4184bfa41d87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4abb37bbda20d17b19144d6f62b4ef1a4fc8fb4c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086543"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032162"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 
@@ -34,7 +34,7 @@ ms.locfileid: "37086543"
 
 予想所要時間 : 5 分
   
-この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」の「スパム対策」のエントリを参照してください。
+この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」の「スパム対策」のエントリを参照してください。
 
 以下の手順はリモート PowerShell 経由でも実行することができます。 Get-BlockedSenderAddress コマンドレットを使用して制限付きユーザーのリストを取得し、Remove-BlockedSenderAddress を使用して制限を削除します。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
 
@@ -81,10 +81,10 @@ ms.locfileid: "37086543"
 
 [侵害された電子メール アカウントへの対応](../../compliance/responding-to-a-compromised-email-account.md)
 
-[メールアラートの送信が制限されているユーザーを把握する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies)
+[メールアラートの送信が制限されているユーザーを把握する](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 
 [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
 
-[セキュリティ/コンプライアンス センターのアラート ポリシー](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies)
+[セキュリティ/コンプライアンス センターのアラート ポリシー](https://docs.microsoft.com/office365/securitycompliance/alert-policies)

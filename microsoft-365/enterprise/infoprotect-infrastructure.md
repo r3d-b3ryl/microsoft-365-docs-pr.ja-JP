@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の情報保護インフラストラクチャの展開手順。
-ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370454"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030852"
 ---
 # <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
 
@@ -51,7 +51,7 @@ ms.locfileid: "37370454"
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の IT エキスパートが [Azure Information Protection を使用してデータを保護](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR9)する方法について説明します。
+Microsoft の IT エキスパートが [Azure Information Protection を使用してデータを保護](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9)する方法について説明します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 

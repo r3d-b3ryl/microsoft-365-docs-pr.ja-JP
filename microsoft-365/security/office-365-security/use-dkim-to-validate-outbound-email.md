@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
-ms.openlocfilehash: 07cb90684bbbba4851697020ceac4756381f8b55
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 0a65c5c02d9361efd65a7b3c58eb8a0e516033c3
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772241"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038986"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
@@ -81,13 +81,13 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされています。次の手順では、1024 ビット キーを 2048 ビットにアップグレードする方法について説明します。 次の手順は、2 つのユース ケースに向けたものです。目的の構成に最適なものを選択してください。
 
 1. **DKIM の構成が済んでいる**場合は、次のようにしてビットを転換します。
-    1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/ja-JP/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです)。
+    1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです)。
     1. その後で、次のコマンドレットを実行します。
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
 
 1. **DKIM の新規実装**の場合は、次のようにします。
-    1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/ja-JP/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (これは、Exchange Online コマンドレットです)。
+    1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (これは、Exchange Online コマンドレットです)。
     1. 次のコマンドレットを実行します。
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True`
@@ -115,7 +115,7 @@ DKIM を構成するには、次の手順を完了します。
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>DNS でカスタム ドメインに対して 2 つの CNAME レコードを発行する
 <a name="Publish2CNAME"> </a>
 
-DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。 
+DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。
 
 次のコマンドを実行します。
 
@@ -129,6 +129,7 @@ Get-DkimSigningConfig 出力で参照されている CNAME を作成する
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
+
 DNS の CNAME レコードは、Office 365 の Microsoft DNS サーバー上の DNS に存在する、既に作成されている DKIM TXT レコードを指します。
   
 Office 365 は、発行された 2 つのレコードを使用して自動的にキーの交換を実行します。Office 365 の初期ドメインに加えてプロビジョニングされたカスタム ドメインがある場合には、追加の各ドメインに対して 2 つの CNAME レコードを発行する必要があります。したがって、2 つのドメインがある場合は、さらに 2 つの CNAME レコードを発行するなどの操作が必要になります。
@@ -210,8 +211,8 @@ DNS に CNAME レコードを発行したら、Office 365 で DKIM 署名を有�
    ここで、 _domain_ は DKIM 署名を有効にするカスタム ドメインの名前です。 
 
    たとえば、ドメイン名 contoso.com の場合は次のようになります。
-   
-   ```powershell
+
+    ```powershell
     Set-DkimSigningConfig -Identity contoso.com -Enabled $true
     ```
 
@@ -226,15 +227,15 @@ DNS に CNAME レコードを発行したら、Office 365 で DKIM 署名を有�
 - メッセージを開き、ヘッダーを確認します。メッセージのヘッダーを表示する方法は、メッセージング クライアントによって異なります。Outlook でメッセージ ヘッダーを表示する方法については、「[電子メール メッセージ ヘッダーを表示する](https://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C)」をご覧ください。
 
   DKIM 署名されたメッセージには、CNAME エントリの発行時に定義したホスト名とドメインが含まれます。メッセージは、次の例のようになります。
-    
-    ```text
+
+  ```text
     From: Example User <example@contoso.com>
     DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
         s=selector1; d=contoso.com; t=1429912795;
         h=From:To:Message-ID:Subject:MIME-Version:Content-Type;
         bh=<body hash>;
         b=<signed field>;
-    ```
+  ```
 
 - 認証結果のヘッダーを確認します。各受信側のサービスでは受信メールのスタンプに若干異なる形式が使用されますが、結果には **DKIM=pass** や **DKIM=OK** などが含まれている必要があります。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: 0dcbe9e39f33cab65dff6033f0b78ceb7e1c42cc
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 35f5c789d4e8db13cb46a568fc58f49bce4d3c96
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437867"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031962"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Microsoft 365 Enterprise を展開する
 
@@ -115,7 +115,7 @@ TLGs を使用すると、複雑な構成、ワークロード、またはエン
 
 同時に、高度なセキュリティ機能と製品との統合は管理のニーズを効率化し、IT ライフ サイクル全体で総保有コストを最小限に抑えるのに役立ちます。 
 
-セキュリティで保護された環境で、創造性とチームワークの促進を解き放つサービスとアプリケーションをサポートするには、コア サービス エンジニア リングとオペレーション (旧称 Microsoft IT) [計画と基盤の展開](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365)で詳細を確認します。
+セキュリティで保護された環境で、創造性とチームワークの促進を解き放つサービスとアプリケーションをサポートするには、コア サービス エンジニア リングとオペレーション (旧称 Microsoft IT) [計画と基盤の展開](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365)で詳細を確認します。
 
 > [!Note]
 > この web ページは、英語でのみ利用できます。

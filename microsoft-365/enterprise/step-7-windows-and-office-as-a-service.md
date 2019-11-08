@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ご自身の環境でWindowsおよびOfficeのサービスを準備する方法を学びます。
-ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: a1cc9cb66754ed86f982d90db0ccbcce16b5ffb1
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584563"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031502"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>ステップ7： WindowsとOfficeのサービス
 
@@ -39,7 +39,7 @@ ms.locfileid: "35584563"
 
 Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプション、サポートモデル、および更新スケジュールが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 System Center Configuration Manager (Current Branch) の新機能を活用しながら、Windows 10 および Office 365 ProPlus の新機能を提供する半期チャンネルの更新を準備する方法について説明します。
 
-[Windows 10およびOffice 365 ProPlusへの移行を支援します](https://www.microsoft.com/ja-JP/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Windows 10およびOffice 365 ProPlusへの移行を支援します](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>更新プログラムの種類
 
@@ -59,9 +59,9 @@ Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプショ�
 
 まず、3 年ごとに大規模な変更を加える過去のモデルから、年に 2 回の機能更新を行う小規模な変化へと移行しました。テクノロジの動向は急速に変化し、セキュリティ上の脅威も増え続けており、頻繁な機能更新を行えばエクスペリエンスと保護を最新の状態に保てるというのが主な理由です。たとえば、セキュリティに関連する更新プログラムの一部は、毎月のセキュリティ更新プログラムやウイルス対策シグネチャ ファイルだけでは配信できません。仮想化ベースのセキュリティのような低レベルの変更のプラットフォームなどがこの例に該当します。
 
-[サービスとしての Windows のクイック ガイド](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-quick-start)
+[サービスとしての Windows のクイック ガイド](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
-[Windows 10 のセキュリティ機能を使用して脅威を軽減する](https://docs.microsoft.com/ja-JP/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
+[Windows 10 のセキュリティ機能を使用して脅威を軽減する](https://docs.microsoft.com/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
 
 ### <a name="cumulative-update-model-benefits"></a>累積的な更新モデルの利点
 
@@ -71,7 +71,7 @@ Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプショ�
 
 ### <a name="expanded-validation-of-updates"></a>更新プログラムの検証の範囲が拡大
 
-もう1つの利点は、広範環境への更新を展開する前に、まず[Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop)および[Windows ](https://insider.windows.com/ja-JP/)用のInsiderプログラムを介してビルドを配信します。これにより、広くアップデートを配信する前に、私達が統計データやフィードバックを集計することが可能になります。 Insiderプログラムはどなたにも開かれており、アップデートを先立って確認することができます。 アップデートを配信するときには、何百万もの設定から統計データを受け取ることになるので、実際のアップデートを展開時には、より本質的に品質が予測しやすくなります。
+もう1つの利点は、広範環境への更新を展開する前に、まず[Office](https://products.office.com/office-insider?tab=Windows-Desktop)および[Windows ](https://insider.windows.com/)用のInsiderプログラムを介してビルドを配信します。これにより、広くアップデートを配信する前に、私達が統計データやフィードバックを集計することが可能になります。 Insiderプログラムはどなたにも開かれており、アップデートを先立って確認することができます。 アップデートを配信するときには、何百万もの設定から統計データを受け取ることになるので、実際のアップデートを展開時には、より本質的に品質が予測しやすくなります。
 
 もう 1 つの点として、Office 365 ProPlus の Insider ビルドに月次チャネルの更新が反映されるため、Windows に準じて、Office に半期チャネルを適用して機能の更新プログラムを年に 2 回配信する場合は、半期チャネル対象のリリースによる半期ごとの検証を早期に行うことができます。
 
@@ -79,29 +79,29 @@ Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプショ�
 
 更新プログラムの展開をどのようにシームレスに行うかについても検討を重ねました。Windows、Office、その他の新しい機能に対する更新プログラムの公開をサポートするために、System Center Configuration Manager (Current Branch) は頻繁に更新されています。
 
-[System Center Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-manage-updates-configuration-manager)
+[System Center Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/ja-JP/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>WindowsとOfficeチャンネルの概要
 
 Windows 10は3つのサービスチャンネルを提供します。
 
-- [** Windows Insiderプログラム**](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-overview#windows-insider)、組織が次回の機能アップデートで出荷される機能についてテスト、フィードバックを行えるようにする
+- [** Windows Insiderプログラム**](https://docs.microsoft.com/windows/deployment/update/waas-overview#windows-insider)、組織が次回の機能アップデートで出荷される機能についてテスト、フィードバックを行えるようにする
 - **Semi-Annualチャンネル**、Feature Updateの配信で年2回、新機能を提供
 - **長期保守チャネル**、長期保守オプションを必要とする専用機に特化して設計
 
 Office 365は3つのサービスチャンネルを提供します。
 
-- [**Office Insiderプログラム**](https://support.office.com/ja-JP/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)、開発中の最新のOffice性能および機能についてテストし、フィードバックを行えるようにする
+- [**Office Insiderプログラム**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)、開発中の最新のOffice性能および機能についてテストし、フィードバックを行えるようにする
 - **マンスリーチャンネル**、利用可能になり次第、ユーザーに最新のOffice機能を提供する
 - **Semi-Annualチャンネル**、年2回限定で、新しい機能の実装を提供
 - **Semi-Annualチャンネル（特定）**、パイロットユーザーとアプリケーション互換性テスト担当者が次回のSemi-Annualチャンネルをテスト、検証できる、完全にサポートされたOfficeビルド
 
 WindowsとOfficeのサービスチャネルの詳細については、以下のドキュメントを参照してください。
 
-- [サービスとしてのWindowsの概要](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-overview#servicing-channels)
-- [ Office 365 ProPlusの更新チャンネルの概要](https://docs.microsoft.com/ja-JP/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [サービスとしてのWindowsの概要](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
+- [ Office 365 ProPlusの更新チャンネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>更新プログラムの段階的な展開
 
@@ -137,9 +137,9 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
-[Windows の半期チャネル](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-overview#semi-annual-channel)
+[Windows の半期チャネル](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Office 365 ProPlus の半期チャネル](https://docs.microsoft.com/ja-JP/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Office 365 ProPlus の半期チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>タスク シーケンスのアップグレード
 
@@ -151,11 +151,11 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 Windows 7 のコンピューターを Windows 10 に移行するために既にタスク シーケンスを使用していて、それらのツールに精通している場合は、移行を開始することをお勧めします。移行後は操作性も格段に向上します。アップグレード全体で 1 つのみのタスク シーケンスを使用することはできますが、組織では 2 つのタスク シーケンスを使用するのが一般的です。1 つのタスク シーケンスは、コンピューターがアップグレードの準備ができていることを確認し、対象のコンピューター上に必要なセットアップ ファイルすべてを、ダイアログを表示せずに事前にステージングします。もう 1 つのタスク シーケンスは実際のアップグレードを行います。このアプローチにより、ユーザーの生産性の低下を防ぐことができます。
 
-[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/ja-JP/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>機能の更新プログラム向けの半期チャネルのサポート
 
-[2018 年 9 月の発表](https://www.microsoft.com/ja-JP/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)にもあるように、半期チャネルの更新プログラムでサポートされているタイムラインには、次のモデルが使用されます。
+[2018 年 9 月の発表](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)にもあるように、半期チャネルの更新プログラムでサポートされているタイムラインには、次のモデルが使用されます。
 
   - Windows 10 Enterprise および Windows 10 Education でサポートされている機能のすべての更新プログラムは、バージョン 1607 以降、元のリリース日から 30 か月間サポート。
 
@@ -169,7 +169,7 @@ Windows 7 のコンピューターを Windows 10 に移行するために既に�
 
 アップグレード タスク シーケンスを使用しない場合、現在はカスタム アクションの実行やドライバー ファイルの適用ができます。この操作は、プレインストールでの機能の更新中 (セットアップによる互換性のチェック前)、またはコミット前の段階 (アップグレードの適用前) に実施します。
 
-[Windows 10 のセットアップの新機能 (バージョン 1803)](https://docs.microsoft.com/ja-JP/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
+[Windows 10 のセットアップの新機能 (バージョン 1803)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
 
 ## <a name="next-step"></a>次の手順 
 

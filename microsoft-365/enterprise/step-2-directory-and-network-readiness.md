@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のディレクトリとネットワークの準備状況を評価する方法について説明します。
-ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982728"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031562"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>手順 2: ディレクトリとネットワークの準備
 
@@ -49,7 +49,7 @@ Windows 10 および Office 365 ProPlus への移行に伴い、クラウドベ�
 
 組織が既に Office 365、Exchange Online、Microsoft Intune、またはその他の Microsoft オンライン サービスを使用している場合は、既に Azure Active Directory を使用しています。 その場合に必要なことは、デスクトップ展開の対象としているユーザーが Azure Active Directory に存在していて、ライセンスが割り当てられていることを確認することだけです。
 
-現在 Azure Active Directory を使用していない場合、セットアップに役立つ[多数のリソース](https://docs.microsoft.com/ja-JP/azure/active-directory/)を利用できます。 Office 365 ライセンスの一部として、Microsoft FastTrack 経由で個人向けのサポートも利用できる場合があります。 Microsoft Fastrack の詳細は[こちら](https://fasttrack.microsoft.com)で確認できます。
+現在 Azure Active Directory を使用していない場合、セットアップに役立つ[多数のリソース](https://docs.microsoft.com/azure/active-directory/)を利用できます。 Office 365 ライセンスの一部として、Microsoft FastTrack 経由で個人向けのサポートも利用できる場合があります。 Microsoft Fastrack の詳細は[こちら](https://fasttrack.microsoft.com)で確認できます。
 
 Azure Active Directory を配置したら、対象ユーザーは Office 365 ProPlus アプリにサインインしてライセンス認証を行うことができます。また、Microsoft Intune や Windows AutoPilot Deployment を使用して、アプリとポリシーを自動展開できます。
 
@@ -65,7 +65,7 @@ Azure Active Directory を配置したら、対象ユーザーは Office 365 Pro
 
 ### <a name="software-updates"></a>ソフトウェアの更新
 
-ソフトウェアの更新のためのネットワーク帯域幅を計画する必要があります。 Windows 10 と Office 365 ProPlus では、毎月、および半年ごとに更新プログラムを提供する新しいサービス モデルを採用しています。 このモデルを初めて利用する場合は、この機能の詳細を[こちら](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-overview)でご覧ください。
+ソフトウェアの更新のためのネットワーク帯域幅を計画する必要があります。 Windows 10 と Office 365 ProPlus では、毎月、および半年ごとに更新プログラムを提供する新しいサービス モデルを採用しています。 このモデルを初めて利用する場合は、この機能の詳細を[こちら](https://docs.microsoft.com/windows/deployment/update/waas-overview)でご覧ください。
 
 新しいサービス モデルには、年 2 回の Windows 機能更新プログラム、Office の半期ごとのチャネル更新プログラム、毎月の品質更新プログラムが含まれています。機能更新プログラムのサイズは通常 2 - 4 GB で、Office の半期ごとのチャネル更新プログラムは更新ごとに 300 - 400 MB です。さらに、毎月の品質更新プログラムがあります。これらは数百 MB から 1 GB 以上になることがあります。毎月の更新は累積的で、Windows 10 の各バージョンのサービス有効期間にわたってサイズが増えていくためです。そうは言っても、更新を実装するためにネットワークを通過するデータ量を減らすのに役立つツールがあります。これについては、以下で詳しく説明します。
 
@@ -77,7 +77,7 @@ Azure Active Directory を配置したら、対象ユーザーは Office 365 Pro
 
 ネットワーク上の展開に関連するトラフィックの影響を制限する 1 つの方法は、クライアント上の BITS (バックグラウンド インテリジェント転送サービス) 設定を使用して調整することです。BITS は、アダプティブ ビット レート (ABR) を使用して、展開のために使用可能な帯域幅を調整します。これは、グループ ポリシーを使用してクライアント上で構成できます。
 
-[BITS について](https://docs.microsoft.com/ja-JP/windows/desktop/bits/about-bits)
+[BITS について](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
 System Center Configuration Manager (Current Branch) を使用している場合は、BITS 対応の配布ポイントを構成することも、WDS でマルチキャストを有効にすることもできます。
 
@@ -119,7 +119,7 @@ System Center Configuration Manager でサポートされている**ピア キ�
 
 **バイナリ デルタ圧縮**: Office 365 ProPlus では、バイナリ デルタ圧縮を使用して、Office 365 ProPlus の最新リリースから次のリリースに更新するときにソフトウェアの更新によって消費される帯域幅を削減します。前のリリースからのバイナリ レベルの変更のみを引き出すことで、累積的な更新プログラムによる毎月のサイズ膨張の影響を最小限に抑えることができます。これにより、PC ごとに、毎月数百 MB のデータを節減できる可能性があります。ただし、この機能を使用する場合、リリースをスキップすることはできません。スキップしたい場合は、完全な累積的更新プログラムをダウンロードする必要があります。
 
-[Office 365 ProPlus の更新プログラムをダウンロードする](https://docs.microsoft.com/ja-JP/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Office 365 ProPlus の更新プログラムをダウンロードする](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
 **Outlook データ ファイル** 多くの場合、Outlook はユーザーのメール ボックス全体をローカルにキャッシュし、オフラインで使用するように構成されています。 インプレース アップグレード以外の Windows の展開では、アップグレード後にユーザーの Outlook データ ファイルを再構築する必要があります。 これは自動化されたプロセスですが、Outlook メールボックスの制限値を通常どおり最大 100 GB に設定した場合、すべてのユーザーのローカルのメールボックス全体を再キャッシュすると大量のデータ転送が発生します。 ネットワーク負荷を軽減するには、グループ ポリシーを使用して [オフラインにしておくメール] の設定値を小さくすることを検討してください。 Office 365 ProPlus または Outlook 2016 の Outlook では、既定値は 12 か月に設定されています。 オフライン キャッシュを直近 1 ～ 6 か月の間に設定することを検討してください。 この設定を変更してもオンライン メールボックスのサイズには影響しませんし、オンラインの時に Outlook 経由でメールボックス全体を検索することもできます。
 
@@ -131,7 +131,7 @@ System Center Configuration Manager でサポートされている**ピア キ�
 
 [既知のフォルダー移動のセットアップ](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 
-[OneDrive ファイル オンデマンド](https://www.microsoft.com/ja-JP/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
+[OneDrive ファイル オンデマンド](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
 OneDrive をまだロールアウトしていない場合は、Windows 7 から Windows 10 への移行時が OneDrive を有効にする絶好の機会であり、そうすることにより Office 365 ProPlus をシームレスに統合できます。 アプリとデバイスの準備作業中に、このロールアウトを開始することを検討してください。 これにより、Windows イメージを移動し、ネットワーク経由でアプリを展開する前に、ファイルの同期が開始されます。
 

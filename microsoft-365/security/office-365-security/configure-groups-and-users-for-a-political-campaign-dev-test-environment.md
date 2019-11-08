@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: 6cf9fb03c66f1cf4d1f20287f5dc121474898d5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ca72ee800287bf8a90fe45f4aaa1de3400cb71e1
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086404"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038886"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -134,7 +134,7 @@ ms.locfileid: "37086404"
   
 次に、組織名、場所、および共通のパスワードを入力し、PowerShell コマンド プロンプトまたは Integrated Scripting Environment (ISE) からこれらのコマンドを実行します。
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -169,31 +169,31 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 動的グループのメンバーシップとグループ ベースのライセンスが正常に機能していることを確認するには、次の手順を使用します。
   
 1. ブラウザーの **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
-    
+
 2. ブラウザーの新しい **Microsoft 365 管理センター**のタブで、**[ユーザー]** をクリックします。
-    
+
 3. ユーザーの一覧で **[候補]** をクリックします。
-    
+
 4. **[候補]** ユーザー アカウントのプロパティを一覧表示するウィンドウで、次を確認します。
-    
+
   - **[戦略的シニア スタッフ]** グループのメンバーである (**[グループ メンバーシップ]** 内)。
-    
+
   - **[Enterprise Mobility + Security E5]** と **[Office 365 Enterprise E5]** のライセンスが割り当てられている (**[製品ライセンス]** 内)。
-    
+
 5. **[候補]** ユーザー アカウントのウィンドウを閉じます。
-    
+
 ## <a name="record-values-for-future-reference"></a>将来の参考のために値を記録する
 
 この開発/テスト環境で Office 365 と EMS の試用版サブスクリプションを使用するために、これらの値を記録します。
   
 - 試用版サブスクリプションの組織名: ![](../media/Common-Images/TableLine.png) 
-    
+
     たとえば、試用版サブスクリプションのドメイン名 contoso.onmicrosoft.com の場合、組織名は "contoso" です。
-    
+
 - Office 365 グローバル管理者名: ![](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     このアカウントのパスワードや、その他のユーザー アカウントの共通のパスワードを安全な場所に記録します。
-    
+
 ## <a name="next-step"></a>次の手順
 
 [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md) を使用して、この開発/テスト環境で 4 つの異なる種類の SharePoint Online チーム サイトを作成します。
@@ -207,7 +207,3 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 [クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

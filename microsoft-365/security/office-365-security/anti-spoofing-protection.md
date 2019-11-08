@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: e863a7fe580bdd6c60ba6f28d3fbf2df010e9384
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b793d3244343111f1894ff8aae77c2d6ea8f4f3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086140"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034288"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -115,7 +115,7 @@ Microsoft では、2 種類のスプーフィング メッセージを区別し�
   
  **組織内スプーフィング**
   
-自己完結型スプーフィングとも呼ばれます。これは、From: アドレスのドメインが受信者のドメインと同じまたは一致する (受信者のドメインが組織の[承認済みドメイン](https://technet.microsoft.com/ja-JP/library/jj945194%28v=exchg.150%29.aspx)のいずれかに含まれる) 場合、または From: アドレスのドメインが同じ組織の一部である場合に発生します。
+自己完結型スプーフィングとも呼ばれます。これは、From: アドレスのドメインが受信者のドメインと同じまたは一致する (受信者のドメインが組織の[承認済みドメイン](https://technet.microsoft.com/library/jj945194%28v=exchg.150%29.aspx)のいずれかに含まれる) 場合、または From: アドレスのドメインが同じ組織の一部である場合に発生します。
   
 たとえば、次に示す送信者と受信者のドメインは同じドメイン (contoso.com) です。 このページでのスパムボットの収集活動を阻止するために、電子メール アドレスにはスペースが挿入されています。
   
@@ -654,7 +654,7 @@ Microsoft のスプーフィング対策テクノロジは、最初に Office 36
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>スパムまたは非スパムのメッセージについて、どのように Microsoft に報告すればよいですか
 
-[Outlook 用の迷惑メール報告アドイン](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できます。このアドインをインストールしていない場合は、[スパム、非スパム、およびフィッシング詐欺メッセージを分析のために Microsoft に送信する](https://technet.microsoft.com/ja-JP/library/jj200769%28v=exchg.150%29.aspx)こともできます。
+[Outlook 用の迷惑メール報告アドイン](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できます。このアドインをインストールしていない場合は、[スパム、非スパム、およびフィッシング詐欺メッセージを分析のために Microsoft に送信する](https://technet.microsoft.com/library/jj200769%28v=exchg.150%29.aspx)こともできます。
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>ドメイン管理者ですが、把握できていない送信者がいます
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: 394120f811057258afe1bd29e60733e42bf5191a
-ms.sourcegitcommit: 4acd6fc368f547eb7a25d04799cb1a77003b143d
+ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37372718"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031102"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
 
@@ -111,7 +111,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Office 365 データ損失防止機能を使用したイントラネット データの漏洩防止
 
-  Contoso 社では、Exchange Online、SharePoint、および OneDrive for Business 用に[データ損失防止](https://docs.microsoft.com/ja-JP/microsoft-365/compliance/data-loss-prevention-policies)ポリシーを構成し、故意か偶然かを問わずユーザーが機密データを共有することがないようにしています。
+  Contoso 社では、Exchange Online、SharePoint、および OneDrive for Business 用に[データ損失防止](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)ポリシーを構成し、故意か偶然かを問わずユーザーが機密データを共有することがないようにしています。
 
 - デバイスのデータ漏洩を防止する Windows 情報保護
 

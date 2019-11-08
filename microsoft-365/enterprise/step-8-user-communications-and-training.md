@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 10 および Office 365 ProPlus について、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
-ms.openlocfilehash: 6592734c89ea280a658007f53020641a0bc956b8
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814558"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033662"
 ---
 # <a name="step-8-user-communications-and-training"></a>手順 8: ユーザーのコミュニケーションとトレーニング
 
@@ -55,11 +55,11 @@ Windows 10 の場合、生体認証を使用して安全にログインするた
 
 また、ユーザーが Enterprise Mobility + Security に公開できるセキュリティやコンプライアンス コントロールもあります。Azure AD と Microsoft Intune で構成される Enterprise Mobility + Security は、デスクトップ アップグレードの対象になる Windows 10 および Office 365 に追加機能を統合します。
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/ja-JP/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 たとえば多要素認証を有効にした場合などに、これは Azure AD を使用し、携帯電話アプリや PIN などを利用してユーザーのリソースへのサインインを保護し、サービスに安全にアクセスできるようにします。また、Azure Information Protection により、ユーザーはドキュメントを簡単に分類し、ラベル付けすることができます。
 
-[Office 365 の多要素認証を設定する](https://support.office.com/ja-JP/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Office 365 の多要素認証を設定する](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 ユーザーにとっては新しい機能がいくつかありますが、その中には、肯定的にしろ、そうでないにしろ、意外なものと捉えられるものがあります。こういった意外性によって、特に通常の業務フローを変更しなければならない場合には、開発者やヘルプデスクへの電話やチケットが増加することがあります。
 
@@ -101,7 +101,7 @@ Windows 10 の場合、生体認証を使用して安全にログインするた
 
 トレーニング用コンテンツを充実させるために、Microsoft FastTrack 生産性向上ライブラリには、動画ベースのトレーニングを段階的なガイドを付けてまとめた一連の短いビデオが用意されています。
 
-[Microsoft FastTrack 生産性向上ライブラリ](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=2)
+[Microsoft FastTrack 生産性向上ライブラリ](https://www.microsoft.com/microsoft-365/success/?rtc=2)
 
 組織が必要とするものに応じて、説得力のあるコンテンツの作成、サイトとコンテンツの共有、チームワークの変革、最新のデバイスによる生産性の向上など、数百ものトピックが用意されています。
 

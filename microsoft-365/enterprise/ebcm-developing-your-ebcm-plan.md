@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド対応のビジネス継続性計画を立てる際の考慮事項。
-ms.openlocfilehash: 4a133c65f6a5a2de44e871995886a01c2ce8e9a9
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122337"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031072"
 ---
 # <a name="developing-your-continuity-plan"></a>継続性計画を立てる
 
@@ -61,7 +61,7 @@ ms.locfileid: "37122337"
 
 次に、ビジネス プロセス全体を調べ、何らかの連鎖的依存関係が存在する箇所を特定します。 その結果に応じて復旧計画の優先順位付けと策定を行い、それらの計画を支援する標準業務手順書を作成します。
 
-[Microsoft Service Map](https://docs.microsoft.com/ja-JP/azure/azure-monitor/insights/service-map) を使用すると、このマッピング作業に役立ちます。 Microsoft Service Map では、Windows および Linux システムのアプリケーション コンポーネントが自動的に検出され、すべての TCP 依存関係がマッピングされ、アプリが依存する接続およびリモートのサード パーティ システムが特定されます。 また、ネットワーク内の、これまでは依存関係のマッピングがされてこなかった場所 (Active Directory など) に対する依存関係もマッピングされます。
+[Microsoft Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) を使用すると、このマッピング作業に役立ちます。 Microsoft Service Map では、Windows および Linux システムのアプリケーション コンポーネントが自動的に検出され、すべての TCP 依存関係がマッピングされ、アプリが依存する接続およびリモートのサード パーティ システムが特定されます。 また、ネットワーク内の、これまでは依存関係のマッピングがされてこなかった場所 (Active Directory など) に対する依存関係もマッピングされます。
 
 土台として使用できる依存関係解析 (DA) のサンプルを下に示します。 依存関係解析 (DA) では、プロセスの依存関係を特定し、確認します。 従業員、サプライヤー、顧客、パートナーシップ、施設を必ず含めます。 この分析のデータは、プロセスの回復要件とそれをサポートする依存関係の回復機能との間の隔たりを特定するために使用されます。
 

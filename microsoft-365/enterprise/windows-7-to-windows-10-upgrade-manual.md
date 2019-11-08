@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 から Windows 10 への手動アップグレード ガイド。
-ms.openlocfilehash: f148815a72c9315db2a6d55f7b8433cc9dddf448
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 13cdb56b52655ed81932601dd3ff97c90c1daad8
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395354"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033682"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Windows 7 から Windows 10 への手動アップグレードの手順ガイド
 
@@ -26,7 +26,7 @@ ms.locfileid: "35395354"
 
 ## <a name="windows-10-upgrades-using-the-media-creation-tool-or-iso-files"></a>メディア作成ツールまたは ISO ファイルを使用した Windows 10 へのアップグレード
 
-[メディア作成ツール](https://www.microsoft.com/en-us/software-download/windows10ISO)を使用すると、Windows 10 に直接アップグレードすることができます。このツールを使用して Windows 10 を ISO ファイルとしてダウンロードすることもできます。 現在のシステムが 32 と 64 ビットのどちらであるか、システムの既定の言語、および Windows 7 のエディション (例: Home、Professional、Enterprise) を確認する必要があります。 Windows 7 の場合、この情報は [コントロールパネル] \> [システムとセキュリティ] \> [システム] にあります。 メディア作成ツールは、アップグレード、インストール メディアの作成、または ISO ファイルのダウンロードについて Windows 10 Enterprise をサポートしていません。 Windows 7 Enterprise からアップグレードする場合は、Windows 10 Enterprise が必要です。
+[メディア作成ツール](https://www.microsoft.com/software-download/windows10ISO)を使用すると、Windows 10 に直接アップグレードすることができます。このツールを使用して Windows 10 を ISO ファイルとしてダウンロードすることもできます。 現在のシステムが 32 と 64 ビットのどちらであるか、システムの既定の言語、および Windows 7 のエディション (例: Home、Professional、Enterprise) を確認する必要があります。 Windows 7 の場合、この情報は [コントロールパネル] \> [システムとセキュリティ] \> [システム] にあります。 メディア作成ツールは、アップグレード、インストール メディアの作成、または ISO ファイルのダウンロードについて Windows 10 Enterprise をサポートしていません。 Windows 7 Enterprise からアップグレードする場合は、Windows 10 Enterprise が必要です。
 
 ![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-1.png)
 
@@ -108,6 +108,6 @@ Windows 7 に戻すプロセスをこの画面から開始できます。 PC は
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>新しい PC での Windows 10 への移行
 
-推奨される別の方法として、新しい PC で Windows 10 に移行する方法があります。 この方法を選択する場合は、古いコンピューターからファイルを移動させるのに、[OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) のバックアップ、[Windows に組み込みのバックアップと復元機能](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、[外部記憶装置](https://support.microsoft.com/en-us/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)を使用した手動による移動、または [Laplink の PCmover Express](https://www.microsoft.com/en-us/windows/transfer-your-data) などのツールを使用できます。 これらのいずれのオプションを使用した場合でも、Windows 10 に含まれていない必要なアプリケーションを再インストールする必要があります。 Windows 7 を実行している既存の PC から Windows 10 を実行する新しい PC に手動で移行するためのオプションの詳細については、「[Windows 10 PC への移行](https://support.microsoft.com/en-us/help/4229823?ocid=MoveToWindows10)」を参照してください。
+推奨される別の方法として、新しい PC で Windows 10 に移行する方法があります。 この方法を選択する場合は、古いコンピューターからファイルを移動させるのに、[OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) のバックアップ、[Windows に組み込みのバックアップと復元機能](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、[外部記憶装置](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)を使用した手動による移動、または [Laplink の PCmover Express](https://www.microsoft.com/windows/transfer-your-data) などのツールを使用できます。 これらのいずれのオプションを使用した場合でも、Windows 10 に含まれていない必要なアプリケーションを再インストールする必要があります。 Windows 7 を実行している既存の PC から Windows 10 を実行する新しい PC に手動で移行するためのオプションの詳細については、「[Windows 10 PC への移行](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)」を参照してください。
 
 ## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[デスクトップ展開センター](https://aka.ms/howtoshift)

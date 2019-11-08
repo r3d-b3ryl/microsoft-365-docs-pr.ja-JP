@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: OS の展開と機能更新プログラムのオプションについて説明します。
-ms.openlocfilehash: 16af9a57623ffbdd73d97d44993c36ce57889eaf
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: c789ac0d62fd0b8c915f21174cae2b81e49e0c97
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584543"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031672"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>手順 6: OS の展開と機能更新プログラム
 
@@ -53,9 +53,9 @@ ms.locfileid: "35584543"
 
 キャプチャされたイメージは、標準の Windows インストール メディアのような Windows イメージ (WIM) 形式になります。カスタムの WIM ファイルがあれば、OS 展開の一環として別のタスク シーケンスを使用して、System Center Configuration Manager または Microsoft Deployment Toolkit で展開関連のタスクを実行することや、イメージを適用することや、Windows イメージの適用前後にタスクを実行することができます。
 
-[Windows 10 参照イメージの作成](https://docs.microsoft.com/ja-JP/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
+[Windows 10 参照イメージの作成](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[オペレーティング システムをインストールするタスク シーケンスの作成](https://docs.microsoft.com/ja-JP/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[オペレーティング システムをインストールするタスク シーケンスの作成](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>展開の種類
 
@@ -69,7 +69,7 @@ ms.locfileid: "35584543"
 
 上記の 3 つのシナリオすべてに共通点があります。これらは、タスク シーケンスを使用して実行し、カスタム イメージを毎回適用できます。
 
-[Windows 10 展開シナリオ](https://docs.microsoft.com/ja-JP/windows/deployment/windows-10-deployment-scenarios)
+[Windows 10 展開シナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>タスク シーケンスの自動化を使用した一括アップグレード
 
@@ -85,9 +85,9 @@ ms.locfileid: "35584543"
 
 一括アップグレード シナリオは、前バージョンの Windows 10 からのアップグレードだけでなく、レガシ バージョンの Windows から Windows 10 への移行にも使用できます。Windows セットアップによるアップグレードの完了後、タスク シーケンスは実行を継続して、Office などのアプリケーションをアップグレードし、ドライバーを置き換えて、個人用設定を適用できます。同様に、アップグレード タスク シーケンスを使用して、インストール前タスクや、アップグレードの実施前チェックを実行できます。
 
-[Configuration Manager を使用して Windows 10 への一括アップグレードを実行する](https://docs.microsoft.com/ja-JP/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
+[Configuration Manager を使用して Windows 10 への一括アップグレードを実行する](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/ja-JP/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>段階的な展開
 
@@ -99,9 +99,9 @@ ms.locfileid: "35584543"
 
 どの展開の種類を選択したかに関係なく、予測可能性と再現性をできるだけ自動化する必要があります。Microsoft は、自動化されたタスク シーケンスを使用して OS の展開を自動化するためのソリューションを 2 つ用意しています。
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/ja-JP/sccm/core/understand/introduction)** (ConfigMgr) には、ソフトウェア配布とソフトウェア更新の管理機能を補完する組み込みのオペレーティング システム展開機能が用意されています。ConfigMgr は、あらゆる規模の組織で広く使用されていて、4 つの Windows の展開の種類をすべてサポートしています。ConfigMgr は、必要に応じて Microsoft Intune と統合できます。これにより、展開とデバイス管理に関する追加の機能が加わります。
+  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction)** (ConfigMgr) には、ソフトウェア配布とソフトウェア更新の管理機能を補完する組み込みのオペレーティング システム展開機能が用意されています。ConfigMgr は、あらゆる規模の組織で広く使用されていて、4 つの Windows の展開の種類をすべてサポートしています。ConfigMgr は、必要に応じて Microsoft Intune と統合できます。これにより、展開とデバイス管理に関する追加の機能が加わります。
 
-  - もう 1 つの一般的な展開オプションは、無料の **[Microsoft Deployment Toolkit](https://docs.microsoft.com/ja-JP/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) です。通常、このツールキットは、中小規模の組織が OS の展開に使用します。インフラストラクチャは、ほとんど必要とされません。MDT は、ネットワーク ブートのために Windows 展開サービスと統合されます。4 つの展開の種類をすべてサポートし、アプリケーション、ドライバー、および設定のインストールもサポートしています。当然のことながら、MDT は Configuration Manager とも統合できます。
+  - もう 1 つの一般的な展開オプションは、無料の **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) です。通常、このツールキットは、中小規模の組織が OS の展開に使用します。インフラストラクチャは、ほとんど必要とされません。MDT は、ネットワーク ブートのために Windows 展開サービスと統合されます。4 つの展開の種類をすべてサポートし、アプリケーション、ドライバー、および設定のインストールもサポートしています。当然のことながら、MDT は Configuration Manager とも統合できます。
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
@@ -111,21 +111,21 @@ Windows 10の新しいオプションとして、Windows Autopilotを使用し�
 
 その後で、ユーザーがセットアップ時に Azure AD 資格情報を使用して PC にサインインすると、デバイスは Microsoft Intune に登録されます。展開プロセスは、これが引き継いで、アプリケーション、ソフトウェアの更新プログラム、構成およびコンプライアンス ポリシーを適用します。Windows Autopilot は、必要に応じて、プロビジョニングが完了するまで、ユーザーが最初のセッションにアクセスできないようにすることもできます。
 
-[Windows Autopilot の概要](https://docs.microsoft.com/ja-JP/windows/deployment/windows-autopilot/windows-10-autopilot)
+[Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 
-[Windows Autopilot Prerequisites](https://docs.microsoft.com/ja-JP/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
+[Windows Autopilot Prerequisites](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>機能更新のためのWindows Update for Business
 
-Windows Update for Businessは、ITの専門化がデバイスをWindows Updateサービスに直接接続することによって、Windows 10デバイスを常に最新の状態に保つことを可能にする無料サービスです。 Windows Update for Businessは、グループポリシーまたはMicrosoft IntuneなどのMDMソリューションを介して構成でき、ITの専門化は新しいビルドを検証するために[展開リング](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-deployment-rings-windows-10-updates)を作成することができます。 これはWindows Server Update Services（WSUS）、System Center Configuration Manager (Current Branch)、および Microsoft Intune などの既存の管理ツールに統合されています。 さらに、Windows Update for Businessはピアツーピア配信をサポートし、帯域幅効率を最適化し、ネットワークの輻輳を軽減します。
+Windows Update for Businessは、ITの専門化がデバイスをWindows Updateサービスに直接接続することによって、Windows 10デバイスを常に最新の状態に保つことを可能にする無料サービスです。 Windows Update for Businessは、グループポリシーまたはMicrosoft IntuneなどのMDMソリューションを介して構成でき、ITの専門化は新しいビルドを検証するために[展開リング](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)を作成することができます。 これはWindows Server Update Services（WSUS）、System Center Configuration Manager (Current Branch)、および Microsoft Intune などの既存の管理ツールに統合されています。 さらに、Windows Update for Businessはピアツーピア配信をサポートし、帯域幅効率を最適化し、ネットワークの輻輳を軽減します。
 
 Windows Update for Businessの詳細については、以下の資料を参照してください。
 
-- [Windows Update for Businessで更新を展開する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-manage-updates-wufb)
-- [Windows Update for Businessを構成する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-configure-wufb)
-- [Windows Update for Businessを既存の管理ツールと統合する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-integrate-wufb)
-- [グループポリシーを使用してWindows Update for Businessを構成する](https://docs.microsoft.com/ja-JP/windows/deployment/update/waas-wufb-group-policy)
-- [Microsoft Intuneを使用してWindows Update for Businessを構成する](https://docs.microsoft.com/ja-JP/intune/windows-update-for-business-configure)
+- [Windows Update for Businessで更新を展開する](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- [Windows Update for Businessを構成する](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb)
+- [Windows Update for Businessを既存の管理ツールと統合する](https://docs.microsoft.com/windows/deployment/update/waas-integrate-wufb)
+- [グループポリシーを使用してWindows Update for Businessを構成する](https://docs.microsoft.com/windows/deployment/update/waas-wufb-group-policy)
+- [Microsoft Intuneを使用してWindows Update for Businessを構成する](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 
 ## <a name="next-step"></a>次の手順 
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981698"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031112"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -26,7 +26,7 @@ ms.locfileid: "36981698"
 
 これらのラボは、Windows 10 Enterprise および Office 365 ProPlus を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、System Center Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
 
-Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www.aka.ms/howtoshift)」プロセスの一部として、展開ツールの更新プログラムの確認や展開関連の自動化をテストするとき、まず、セキュリティで保護されるか隔離されているラボ環境を構築するようにお勧めします。
+Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://www.aka.ms/howtoshift)」プロセスの一部として、展開ツールの更新プログラムの確認や展開関連の自動化をテストするとき、まず、セキュリティで保護されるか隔離されているラボ環境を構築するようにお勧めします。
 
 ラボ キットは無料でダウンロードでき、試用版ソフトウェアを使用します。
 
@@ -122,11 +122,11 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](http://www
 
 ## <a name="additional-guidance"></a>**追加のガイダンス**
 
-  - [デスクトップ展開センター](http://www.aka.ms/howtoshift)
+  - [デスクトップ展開センター](https://www.aka.ms/howtoshift)
 
-  - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](http://www.aka.ms/watchhowtoshift)
+  - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager の OS の展開](https://docs.microsoft.com/ja-JP/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager の OS の展開](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 の展開計画</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

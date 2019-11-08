@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のデバイスとアプリの準備を評価する方法について説明します。
-ms.openlocfilehash: dda8291e8f57e4855e582614573d6971fa3919f1
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37422564"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031632"
 ---
 # <a name="step-1-device-and-app-readiness"></a>手順 1: デバイスとアプリの準備
 
@@ -59,7 +59,7 @@ Desktop Analytics は、従来のデスクトップ管理システムよりも�
 
 Desktop Analytics を設定するには、まず Azure サブスクリプションを設定し、それに Azure Log Analytics ワークスペースを含める必要があります。 Desktop Analytics のサービスが起動したことを確認したら、グループ ポリシー設定を使用してインターネットに接続された Windows 7 SP1 以降のデバイスを登録できます。とても簡単です。 エージェントを展開する必要はありません。Desktop Analytics の視覚的なワークフローを参考にしながら、パイロットから運用環境への展開を実施できます。 必要に応じて、Desktop Analytics から System Center Configuration Manager (Current Branch) などのソフトウェア展開ツールにデータをエクスポートしたり、ターゲット PC に直接データをエクスポートしたりして、展開の準備が整い次第コレクションを作成できます。
 
-現時点で目的の環境に Desktop Analytics をセットアップしていない場合や、試用のためにサインアップしようとしている場合は、Desktop Analytics ページ] (http://www.aka.ms/desktopanalytics) に移動して開始してください。
+現時点で目的の環境に Desktop Analytics をセットアップしていない場合や、試用のためにサインアップしようとしている場合は、Desktop Analytics ページ] (https://www.aka.ms/desktopanalytics) に移動して開始してください。
 
 ## <a name="device-and-app-readiness-process"></a>デバイスとアプリの準備プロセス
 
@@ -85,9 +85,9 @@ Desktop Analytics は、エージェントレス型のプロセスを使用し�
 
 インベントリに登録されたアプリケーション、ドライバー、アドインのほとんどは、そのままで動作することがわかります。 Desktop Analytics で問題ありと評価された項目については、互換性の問題を解決するためのバージョン更新の入手先など、既知の情報が提供されます。 わずかしか展開されていない重要性の低いアプリケーションや古いデバイスに関する複雑な問題を解決するために時間とリソースを割くのではなく、ユーザーと協力してこれらの項目をインベントリから削除し置き換えることができます。
 
-Desktop Analytics を使用して、ブラウザーベースの互換性の問題を評価することもできます。ユーザーがアクセスする Web サイトおよび Web アプリのうち、Active X コントロール、Browser Helper Objects、VBScript、または Microsoft Edge ブラウザーでサポートされていないその他の従来のテクノロジを依然として使用しているものを特定します。 ユーザーは、そのようなサイトに対しては引き続き Internet Explorer 11 を使用する必要があります。また、Enterprise Mode Site List Manager を使用し、[エンタープライズ モード サイト リスト](https://docs.microsoft.com/ja-JP/microsoft-edge/deploy/emie-to-improve-compatibility)にサイトを追加することができます。
+Desktop Analytics を使用して、ブラウザーベースの互換性の問題を評価することもできます。ユーザーがアクセスする Web サイトおよび Web アプリのうち、Active X コントロール、Browser Helper Objects、VBScript、または Microsoft Edge ブラウザーでサポートされていないその他の従来のテクノロジを依然として使用しているものを特定します。 ユーザーは、そのようなサイトに対しては引き続き Internet Explorer 11 を使用する必要があります。また、Enterprise Mode Site List Manager を使用し、[エンタープライズ モード サイト リスト](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)にサイトを追加することができます。
 
-さらに、Office 365 ProPlus への移行を円滑に進めるために、[Readiness Toolkit for Office](https://docs.microsoft.com/ja-JP/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) を利用して、アドインと Microsoft Visual Basic for Applications (VBA) マクロの互換性をテストすることもできます。
+さらに、Office 365 ProPlus への移行を円滑に進めるために、[Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) を利用して、アドインと Microsoft Visual Basic for Applications (VBA) マクロの互換性をテストすることもできます。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -103,7 +103,7 @@ Desktop Analytics を使用して、ブラウザーベースの互換性の問�
 
 Configuration Manager ソフトウェア インベントリは、クラウドベースの分析ソリューションを使ってデバイスとアプリの準備を整える方法に代わる手段です。 インストール数を使用したり、特定のコンピューターを詳細に調査したりして、互換性のテストと検証の優先順位を定め、パッケージ設定を使用してアプリケーション パッケージを Windows 10 互換として設定できます。 このオプションでは既知の互換性情報と Microsoft の分析サービスとを比較することはできませんが、優先度の高いアプリのより小さなセットを対象に手動テストを行うための効果的なソリューションになり得ます。 
 
-詳細については、「[System Center Configuration Manager のソフトウェア インベントリの概要](https://docs.microsoft.com/ja-JP/sccm/core/clients/manage/inventory/introduction-to-software-inventory)」を参照してください。アプリケーション パッケージのプラットフォーム設定の要件については、「[System Center Configuration Manager のパッケージとプログラム](https://docs.microsoft.com/ja-JP/sccm/apps/deploy-use/packages-and-programs)」を参照してください。
+詳細については、「[System Center Configuration Manager のソフトウェア インベントリの概要](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory)」を参照してください。アプリケーション パッケージのプラットフォーム設定の要件については、「[System Center Configuration Manager のパッケージとプログラム](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)」を参照してください。
 
 
 ## <a name="desktop-app-assure"></a>Desktop App Assure

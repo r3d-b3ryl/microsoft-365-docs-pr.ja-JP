@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本のスパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。
-ms.openlocfilehash: fb46e735c4fae73565b6fe008d47a3e7ffd3f4cb
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: dd9385139e869fde094249d2dce014aa19056418
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510564"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032422"
 ---
 # <a name="configure-your-spam-filter-policies"></a>スパム フィルター ポリシーの設定
 スパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。 スパム フィルター ポリシー設定は、受信メッセージのみに適用され、次の 2 つの種類があります。
@@ -32,7 +32,7 @@ ms.locfileid: "37510564"
 
 予想所要時間 : 30 分
   
-この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」の「スパム対策」のエントリを参照してください。
+この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」の「スパム対策」のエントリを参照してください。
 
 スパム フィルターポリシー設定はすべて、セキュリティ/コンプライアンス センター (SCC) にあります。 詳細については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス](../../compliance/go-to-the-securitycompliance-center.md)」を参照してください。 スパム対策の設定ページは、SCC \> **[脅威の管理]** \> **[ポリシー]** \> **[スパム対策]** セクションにあります。
 
@@ -104,15 +104,15 @@ ms.locfileid: "37510564"
 
 PowerShell でスパム フィルター ポリシーを構成して適用することもできます。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell に接続する](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)」を参照してください。
   
-- [Get-HostedContentFilterPolicy](http://technet.microsoft.com/library/d510471a-dda5-4df7-b3f8-2ee7a1948436.aspx) スパム フィルター設定を表示します。 
+- [Get-HostedContentFilterPolicy](https://technet.microsoft.com/library/d510471a-dda5-4df7-b3f8-2ee7a1948436.aspx) スパム フィルター設定を表示します。 
     
-- [Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) スパム フィルター設定を編集します。 
+- [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) スパム フィルター設定を編集します。 
     
-- [New-HostedContentFilterPolicy](http://technet.microsoft.com/library/4d15128d-9e16-42a1-8ac5-36f07d4bbbf0.aspx) カスタム スパム フィルター ポリシーを新規作成します。 
+- [New-HostedContentFilterPolicy](https://technet.microsoft.com/library/4d15128d-9e16-42a1-8ac5-36f07d4bbbf0.aspx) カスタム スパム フィルター ポリシーを新規作成します。 
     
-- [Remove-HostedContentFilterPolicy](http://technet.microsoft.com/library/9fe1fe03-8f83-41e3-9bf5-084a392784d6.aspx) カスタム スパム フィルター ポリシーを削除します。 
+- [Remove-HostedContentFilterPolicy](https://technet.microsoft.com/library/9fe1fe03-8f83-41e3-9bf5-084a392784d6.aspx) カスタム スパム フィルター ポリシーを削除します。 
     
-カスタム スパム フィルター ポリシーをユーザー、グループ、ドメインに適用するには、[New-HostedContentFilterRule](http://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) コマンドレット (カスタム ポリシーに適用可能な新しいフィルター ルールを作成する場合) または [Set-HostedContentFilterRule](http://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) コマンドレット (カスタム ポリシーに適用可能な既存のフィルター ルールを編集する場合) を使用します。ポリシーに適用するルールを有効または無効にするには、 [Enable-HostedContentFilterRule](http://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) コマンドレットまたは [Disable-HostedContentFilterRule](http://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) コマンドレットを使用します。 
+カスタム スパム フィルター ポリシーをユーザー、グループ、ドメインに適用するには、[New-HostedContentFilterRule](https://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) コマンドレット (カスタム ポリシーに適用可能な新しいフィルター ルールを作成する場合) または [Set-HostedContentFilterRule](https://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) コマンドレット (カスタム ポリシーに適用可能な既存のフィルター ルールを編集する場合) を使用します。ポリシーに適用するルールを有効または無効にするには、 [Enable-HostedContentFilterRule](https://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) コマンドレットまたは [Disable-HostedContentFilterRule](https://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) コマンドレットを使用します。 
   
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
-ms.openlocfilehash: 51e681d751e9d36872a47fcde1390c3dda8a2184
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b4ca34f3446a0067c6497d844e5b79a78d0eb35e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086830"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032242"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -59,7 +59,7 @@ DLP レポートを使用すると、以下のことを行えます。
 
 DLP レポートは、セキュリティ/コンプライアンス センターにあります。 [レポート] \> [レポートの表示] に移動します。 [データ損失防止 (DLP)] の下で、[DLP ポリシーおよびルールの一致] または [DLP の誤検知と上書き] に移動します。
 
-詳細については、「[データ損失防止のレポートの表示](https://support.office.com/ja-JP/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)」を参照してください。
+詳細については、「[データ損失防止のレポートの表示](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)」を参照してください。
 
 ![DLP ポリシーと一致することを示すレポート](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -77,21 +77,21 @@ Office 365 監査ログには、Exchange Online、SharePoint Online、OneDrive f
 
 情報セキュリティ チームは、監査ログを検索して疑いのあるデータ侵害を調査し、根本原因と違反の程度の両方を判断することもできます。この組み込み機能は、GDPR の第 33 条および第 34 条の遵守を円滑にします。これらの条項では、データ違反について GDPR 監督当局およびデータ主体に、特定期間内に通知することが要求されています。監査ログ エントリは、サービス内で 90 日間のみ保持されます。多くの場合、これらのログをより長期間保持することが推奨され、多くの企業もそれを必要としていました。
 
-Microsoft 管理アクティビティ API を使用して統一監査ログを購読し、必要に応じてログ エントリを保存し、高度なダッシュボードとアラートを提供することができるソリューションを活用できます。たとえば、[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/ja-JP/azure/operations-management-suite/oms-solution-office-365) などです。
+Microsoft 管理アクティビティ API を使用して統一監査ログを購読し、必要に応じてログ エントリを保存し、高度なダッシュボードとアラートを提供することができるソリューションを活用できます。たとえば、[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365) などです。
 
 アラート ポリシーと監査ログの検索については、以下を参照してください。
 
--   [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://support.office.com/ja-JP/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://support.office.com/ja-JP/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (概要)
+-   [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (概要)
 
--   [Office 365 監査ログの検索を有効または無効にする](https://support.office.com/ja-JP/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [Office 365 監査ログの検索を有効または無効にする](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [監査ログを検索する](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [監査ログを検索する](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (コマンドレット) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501(v=exchg.160).aspx) (コマンドレット) 
 
--   [Office 365 監査ログの詳細なプロパティ](https://support.office.com/ja-JP/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Office 365 監査ログの詳細なプロパティ](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -125,11 +125,11 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 詳しくは、以下の資料を参照してください。
 
--   [Cloud App Security を展開する](https://docs.microsoft.com/ja-JP/cloud-app-security/getting-started-with-cloud-app-security)
+-   [Cloud App Security を展開する](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/ja-JP/cloud-platform/cloud-app-security)
+-   [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](https://docs.microsoft.com/ja-JP/cloud-app-security/use-case-proxy-block-session-aad)
+-   [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>個人データの共有を検出するためのファイル ポリシーとアクティビティ ポリシーの例
 
@@ -141,7 +141,7 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 <thead>
 <tr class="header">
 <th align="left"><strong>コントロール</strong></th>
-<th align="left">[<strong>設定</strong>]</th>
+<th align="left"><strong>設定</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -216,7 +216,7 @@ OneDrive for Business または Box for Business に Customer Data (顧客デー
 <thead>
 <tr class="header">
 <th align="left"><strong>コントロール</strong></th>
-<th align="left">[<strong>設定</strong>]</th>
+<th align="left"><strong>設定</strong></th>
 </tr>
 </thead>
 <tbody>

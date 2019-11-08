@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: サービス インシデントの発生時に Microsoft が何を行っているかを理解し、ビジネス継続性プランをより適切に準備できるようにします。
-ms.openlocfilehash: 9bbf73c736a4391a51edd451db7d23869aa36603
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122347"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031082"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>エンタープライズ ビジネス継続性管理の顧客とクラウド パートナーの責任
 
@@ -39,8 +39,8 @@ Microsoft は、顧客が使用できるサービス状態通信用の複数の�
 
 - 管理センターまたは管理センター内のサービス正常性ダッシュボードが使用できない場合、[バックアップ サイト](https://status.office365.com/)を使用してサービス状態を監視できます。
 - Twitter アカウント [@MSFT365Status](https://twitter.com/msft365status?lang=en) を維持し、SHD の影響に関する報告と投稿の更新に対応します。
-- Microsoft 365 テナント管理者向けの管理アプリには、外出先で組織の Microsoft 365 サービスの状態に接続する機能が設けられています。 テナントの管理者は、モバイル デバイスにサービス正常性の情報とメンテナンス状態の更新情報を表示できます。 詳細については、「[管理アプリ FAQ](https://docs.microsoft.com/ja-JP/office365/admin/admin-overview/admin-mobile-app?view=o365-worldwide)」を参照してください。
-- [Microsoft 365 サービス通信 API](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity#office-365-service-communications-api) を使用すると、サービス通信にアクセスできるため、環境をより簡単に監視できます。 API に接続し、リアルタイムのサービス正常性データを受信し、内部ダッシュボードで情報を公開して、エンタープライズ ユーザーにインシデントを通知できます。 内部に情報を配信すると、停止中のヘルプデスクのトラフィックを減らすことができます。
+- Microsoft 365 テナント管理者向けの管理アプリには、外出先で組織の Microsoft 365 サービスの状態に接続する機能が設けられています。 テナントの管理者は、モバイル デバイスにサービス正常性の情報とメンテナンス状態の更新情報を表示できます。 詳細については、「[管理アプリ FAQ](https://docs.microsoft.com/office365/admin/admin-overview/admin-mobile-app?view=o365-worldwide)」を参照してください。
+- [Microsoft 365 サービス通信 API](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity#office-365-service-communications-api) を使用すると、サービス通信にアクセスできるため、環境をより簡単に監視できます。 API に接続し、リアルタイムのサービス正常性データを受信し、内部ダッシュボードで情報を公開して、エンタープライズ ユーザーにインシデントを通知できます。 内部に情報を配信すると、停止中のヘルプデスクのトラフィックを減らすことができます。
 - 重大なインシデントについては、Microsoft は管理センター内の SHD にインシデントの事後レビュー (PIR) を公開します。 PIR には、停止の性質を理解できる重要なインシデント情報が含まれています。 通常、次のセクションが含まれます。
     - ユーザーへの影響
     - 影響の範囲
@@ -49,11 +49,11 @@ Microsoft は、顧客が使用できるサービス状態通信用の複数の�
     - 実行された処理
     - 次の手順
 - Microsoft 365 メッセージ センターでは、今後の変更、新機能、計画的なメンテナンスの通知などの補助的な通信を利用できます。
-- 詳細については、「[サービス正常性と継続性ガイド](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」を参照し、さまざまな通信チャネルとサービス正常性を監視する方法の詳細について確認してください。
+- 詳細については、「[サービス正常性と継続性ガイド](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」を参照し、さまざまな通信チャネルとサービス正常性を監視する方法の詳細について確認してください。
  
 Microsoft 365 オンライン サービスへのアクセスを提供することは、組織と Microsoft とのパートナーシップです。 次の図は、サービス インシデントの発生時および通常の運用時の Microsoft と顧客の両方の責任のバランスについてまとめたものです。
 
-![顧客と Microsoft の責任のバランス](media\ebcm\responsibilities.png)
+![顧客と Microsoft の責任のバランス](media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>環境 - サービス継続性
 継続計画について考えるときは、組織に影響を与える可能性のあるイベントと、全体的な通信の能力に注意してください。 高レベルでは、ビジネスに影響を与える可能性のある 3 つの要因があります。
@@ -63,12 +63,12 @@ Microsoft 365 オンライン サービスへのアクセスを提供するこ�
 
 ### <a name="location"></a>場所
 多くの組織では、エンタープライズ システムとクラウド サービスに接続するために、従業員が特定の物理的またはネットワークの場所にいる必要があります。  
-Microsoft は、クラウド リソースへのネットワーク接続を設定するためのベスト プラクティスを企業に説明する「[ネットワーク接続の原則](https://docs.microsoft.com/ja-JP/office365/enterprise/office-365-network-connectivity-principles)」を公開しています。 最適化の例には、スプリット トンネル VPN の実装が含まれ、VPN トンネル経由ではなくユーザーのネットワークから直接接続できるようになります。  これらの接続の原則は、接続の遅延を低く維持するために重要ですが、サービスの復元力には、一般的なコラボレーションのために企業リソースに接続する代替方法が必要です。
+Microsoft は、クラウド リソースへのネットワーク接続を設定するためのベスト プラクティスを企業に説明する「[ネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)」を公開しています。 最適化の例には、スプリット トンネル VPN の実装が含まれ、VPN トンネル経由ではなくユーザーのネットワークから直接接続できるようになります。  これらの接続の原則は、接続の遅延を低く維持するために重要ですが、サービスの復元力には、一般的なコラボレーションのために企業リソースに接続する代替方法が必要です。
 
 ### <a name="systems"></a>システム
 多くのコラボレーション ソリューションは、企業のワイド エリア ネットワーク (WAN) などのシステムに依存しています。 これらのシステムが利用できない場合、組織はどのように対応しますか?
 この図は、複数の領域に影響を与える可能性のある問題を表しています。 添付の表は、考慮すべき例を示す
 
-![ベン図](media\ebcm\venn-diagram.png)
+![ベン図](media/ebcm/venn-diagram.png)
 
 継続計画では、これらの各領域を考慮する必要があります。 例: ユーザーを企業ネットワークに接続する必要があり、吹雪の場合、それらのユーザーはどのようにして主要なリソースにアクセスできますか? 雪がオフィスへの移動を妨げ、サービス エンジニアが企業ネットワークに接続する必要がある場合、自宅に会社のノートパソコンを持ち込むことを義務付けるポリシーがありますか?

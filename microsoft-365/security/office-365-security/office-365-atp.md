@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 9f2bedaa436aa5f38d8929e6bc8eda2e34896575
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: dbfff642563117a479db1ac36e76700cca71dd75
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386154"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032202"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -41,7 +41,7 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン 1 およびプラン 2
 
-ATP は Office 365 E5 に含まれています。ただし、ATP プラン 1 および ATP プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして使用できます。 詳細については、「[ATP プランで利用できる機能](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+ATP は Office 365 E5 に含まれています。ただし、ATP プラン 1 および ATP プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして使用できます。 詳細については、「[ATP プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
 ## <a name="configure-atp-policies"></a>ATP ポリシーを構成する
 
@@ -53,7 +53,7 @@ Office 365 ATP には、組織に適切なレベルの保護を設定する多�
 
 - [ATP の安全な添付ファイル機能](atp-safe-attachments.md): 悪意のあるコンテンツのメールの添付ファイルを確認して、メッセージング システムを保護できるゼロデイ保護機能を提供します。 ウイルス/マルウェアの署名を持たないすべてのメッセージと添付ファイルを特別な環境にルートし、機械学習と分析技術を使用して悪意を検出します。 疑わしいアクティビティが見つからない場合、メッセージはメールボックスに転送されます。 詳細については、「[Office 365 ATP の安全な添付ファイル ポリシーを設定する](set-up-atp-safe-attachments-policies.md)」を参照してください。
 
-- [ATP の安全なリンク](atp-safe-links.md): メール メッセージや Office ファイル内など、URL をクリック時に検証を行います。 保護は継続的に行われ、メッセージおよび Office 環境全体に適用されます。 クリックごとにリンクがスキャンされます。安全なリンクは常にアクセスでき、悪意のあるリンクは動的にブロックされます。 詳細については、「[Office 365 ATP の安全なリンク ポリシーを設定する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/set-up-atp-safe-links-policies)」をご覧ください。 
+- [ATP の安全なリンク](atp-safe-links.md): メール メッセージや Office ファイル内など、URL をクリック時に検証を行います。 保護は継続的に行われ、メッセージおよび Office 環境全体に適用されます。 クリックごとにリンクがスキャンされます。安全なリンクは常にアクセスでき、悪意のあるリンクは動的にブロックされます。 詳細については、「[Office 365 ATP の安全なリンク ポリシーを設定する](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)」をご覧ください。 
 
 - [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md): チーム サイトやドキュメント ライブラリ内の悪意のあるファイルを特定してブロックすることで、ユーザーが共同作業し、ファイルを共有するときに組織を保護します。 詳細については、「[SharePoint、OneDrive、Microsoft の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)」を参照してください。 
 
@@ -105,8 +105,8 @@ AIR には、アラートがトリガーされたときなどには自動的に�
 |役割または役割グループ  |追加情報  |
 |---------|---------|
 |Office 365 グローバル管理者 |[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|セキュリティ管理者 |[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online 組織の管理 |[Exchange Online のアクセス許可](https://docs.microsoft.com/ja-JP/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|セキュリティ管理者 |[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online 組織の管理 |[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 詳しくは、次のトピックを参照してください。
 
@@ -130,4 +130,4 @@ Office 365 ATP プラン 2 は、Office 365 Enterprise E5、Office 365 Education
 
 - [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)は、開発およびロール アウトの新機能の一覧を提供します。
 
-- [Office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)では、ATP プラン全体の機能と可用性について説明します。
+- [Office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)では、ATP プラン全体の機能と可用性について説明します。

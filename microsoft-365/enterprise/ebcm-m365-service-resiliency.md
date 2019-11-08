@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 回復性に関するトピックの説明
-ms.openlocfilehash: 4c718674a70186b004d8fefc5381074dba81c164
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122287"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031052"
 ---
 # <a name="built-in-resiliency"></a>回復力の向上
 
@@ -26,7 +26,7 @@ Microsoft は、クラウド コラボレーション プロバイダーとし�
 
 **"Sharepoint online のダウンタイム**: 適切なアクセス許可が与えられている SharePoint Online サイト コレクションのいずれかで、ユーザーが読み取り/書き込みできない時間帯"。
 
-各サービスごとのダウンタイムの定義については、[サービスレベル契約](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) を参照してください。
+各サービスごとのダウンタイムの定義については、[サービスレベル契約](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) を参照してください。
 
 ダウンタイムを予期できるできないに関わらず、ダウンタイムを最小限に抑えるために、Microsoft 365 のサービスは、次の 4 つの領域に重点を置き、問題回復を実現するよう設計、展開されています。
 
