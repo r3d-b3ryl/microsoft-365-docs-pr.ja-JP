@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
-ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 56882ca53852d33a642f6031c6a3fa6c68eb667d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440654"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033898"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う
 
@@ -124,18 +124,18 @@ Exchange サーバー上のメールボックスの手順
 
 1. リモート PowerShell を使用して Exchange サーバーに接続します。 [「リモート PowerShell を使用して Exchange サーバーに接続する](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps)」の手順を実行します。
 2. 1つのルール、複数のルール、またはメールボックスからのすべてのルールを完全に削除する場合は、[受信トレイルールコマンドレット](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)を使用します。これを使用して、メールボックスから1つ、複数、またはすべてのルールを完全に削除します。
-3. 詳細な調査のためにルールとその内容を保持する場合は、[コマンドレット](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx)を使用します。 
+3. 詳細な調査のためにルールとその内容を保持する場合は、[コマンドレット](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx)を使用します。 
 
 Exchange Online のメールボックスの手順
 1. [「PowerShell を使用して Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)」の手順を実行します。
 2.  1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除するには、 [[受信トレイルールの削除] コマンドレット](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)を使用します。
-3.  詳細な調査のためにルールとその内容を保持する場合は、[コマンドレット](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx)を使用します。 
+3.  詳細な調査のためにルールとその内容を保持する場合は、[コマンドレット](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx)を使用します。 
 
 ## <a name="how-to-minimize-future-attacks"></a>今後の攻撃を最小限に抑える方法
 
 ### <a name="first-protect-your-accounts"></a>最初: アカウントを保護する
 
-ルールとフォームのエクスプロイトは、攻撃者がユーザーのアカウントのいずれかを盗んだ後、または侵害した後にのみ使用されます。 そのため、これらの悪用を組織に対して使用できないようにするための最初の手順として、ユーザーアカウントを積極的に保護することが挙げられます。  アカウントが侵害される最も一般的な方法には、フィッシングまたは[パスワード spraying](http://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻撃があります。
+ルールとフォームのエクスプロイトは、攻撃者がユーザーのアカウントのいずれかを盗んだ後、または侵害した後にのみ使用されます。 そのため、これらの悪用を組織に対して使用できないようにするための最初の手順として、ユーザーアカウントを積極的に保護することが挙げられます。  アカウントが侵害される最も一般的な方法には、フィッシングまたは[パスワード spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻撃があります。
 
 
 
@@ -145,7 +145,7 @@ Exchange Online のメールボックスの手順
         <ol type="a">
             <li><b>複数のログイン試行失敗</b>このポリシーによって、環境がプロファイルされ、ユーザーが1回のセッションで失敗したログインアクティビティを、学習したベースラインに関して複数回実行したときに、違反が発生したことを示すアラートがトリガーされます。</li>
             <li><b>不可能な出張</b> -このポリシーでは、環境をプロファイルし、2つの場所間で予想される出張時間より短い期間に異なる場所にある同じユーザーからアクティビティが検出されたときにアラートをトリガーします。 これは、別のユーザーが同じ資格情報を使用していることを示している可能性があります。 このような異常動作を検出するには、新しいユーザーのアクティビティパターンを学習させる7日間の最初の学習期間が必要です。</li>
-            <li>通常は偽装された<b>アクティビティ (ユーザー別)</b> -このポリシーは、環境をプロファイルし、ユーザーが1つのセッションで複数の偽装されたアクティビティを実行すると、通知をトリガーします。ブリーチが行われました。</li>
+            <li>通常は偽装されていない<b>アクティビティ (ユーザー別)</b> -このポリシーは、環境をプロファイルし、ユーザーが1つのセッションで複数の偽装されたアクティビティを実行したときに、違反が発生したことを示す通知をトリガーします。</li>
         </ol>
     </li>
     <li><a href="https://securescore.office.com/">Office 365 のセキュリティで保護さ</a>れたスコアのようなツールを活用して、アカウントのセキュリティの構成と動作を管理します。 
@@ -161,19 +161,19 @@ Outlook 2013 および2016クライアントのパッチバージョンは次の
 
 個別のセキュリティ修正プログラムの詳細については、以下を参照してください。
 
-- [Outlook 2013 セキュリティパッチ](https://support.microsoft.com/en-us/help/3191938) 
-- [Outlook 2016 セキュリティパッチ](https://support.microsoft.com/en-us/help/3191883)
+- [Outlook 2013 セキュリティパッチ](https://support.microsoft.com/help/3191938) 
+- [Outlook 2016 セキュリティパッチ](https://support.microsoft.com/help/3191883)
 
 ### <a name="third-monitor-your-outlook-clients"></a>3番目: Outlook クライアントを監視する
 なお、パッチと更新プログラムがインストールされている場合でも、攻撃者がローカルコンピューターの構成を変更して "アプリケーションを起動する" 動作を再度有効にすることができます。 [高度なグループポリシー管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)を使用して、クライアントのローカルコンピューターポリシーを監視し、適用することができます。  
-[64 ビットバージョンの Windows を使用してシステムレジストリを表示する方法](https://support.microsoft.com/en-us/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)についての情報を使用して、"Start Application" がレジストリ内の上書きによって再度有効になっているかどうかを確認できます。  次のサブキーをチェックします。 
+[64 ビットバージョンの Windows を使用してシステムレジストリを表示する方法](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)についての情報を使用して、"Start Application" がレジストリ内の上書きによって再度有効になっているかどうかを確認できます。  次のサブキーをチェックします。 
 
-- Outlook 2016: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\
-- Outlook 2013: HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\
+- Outlook 2016: HKEY_CURRENT_USER \Software\Microsoft\Office\16.0\Outlook\Security\
+- Outlook 2013: HKEY_CURRENT_USER \Software\Microsoft\Office\15.0\Outlook\Security\
 
 キー EnableUnsafeClientMailRules を探します。 これが存在し、1に設定されている場合は、Outlook セキュリティパッチが上書きされ、コンピューターはフォーム/ルールの攻撃に対して脆弱になります。 値が0の場合、"アプリケーションを起動します" アクションは無効になります。  更新され、パッチされたバージョンの Outlook がインストールされていて、このレジストリキーが存在しない場合、システムはこれらの攻撃に対して脆弱ではありません。
 
-オンプレミスの Exchange インストールを使用しているお客様は、利用可能なパッチを持たない古いバージョンの Outlook をブロックすることを検討する必要があります。 このプロセスの詳細については、記事「 [Outlook クライアントのブロックを構成](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx)する」を参照してください。
+オンプレミスの Exchange インストールを使用しているお客様は、利用可能なパッチを持たない古いバージョンの Outlook をブロックすることを検討する必要があります。 このプロセスの詳細については、記事「 [Outlook クライアントのブロックを構成](https://technet.microsoft.com/library/dd335207(v=exchg.150).aspx)する」を参照してください。
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
 Office 365 サブスクリプションには、データとユーザーを保護するために使用可能な強力なセキュリティ機能のセットが付属しています。「[Office 365 のセキュリティ ロードマップ: 最初の 30 日間、90 日間、およびそれ以後の優先事項](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)」を使用して、Office 365 テナントをセキュリティで保護するためのマイクロソフト推奨ベスト プラクティスを実践します。

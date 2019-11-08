@@ -14,18 +14,19 @@ search.appverid:
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
-ms.openlocfilehash: 11e1fee6268c029e02f0432654c54f8adeb44e10
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1f14a6a6017218b2e0689f7224cf95cb640856cb
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086996"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035677"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする
 
 > [!IMPORTANT]
-> この記事は、 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用しているビジネスのお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 [Office 365 ATP For SharePoint、OneDrive、Microsoft Teams では](atp-for-spo-odb-and-teams.md)、組織が悪意のあるファイルを誤って共有することを防止します。 悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。 この記事では、SharePoint、OneDrive、Teams の ATP を有効にし、検出されたファイルについて通知する通知を設定し、次の手順を実行します。 
   
@@ -45,7 +46,7 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
     
 2. Office 365 &amp;セキュリティ/コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー** \>の**安全な添付ファイル**] を選択します。 <br/>![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>ポリシー] を選択します。](../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。<br/>![SharePoint Online、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にします。](../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. **[SharePoint、OneDrive、および Microsoft Teams に対して ATP を有効にする]** をオンにします。<br/>![SharePoint Online、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にします。](../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
 4. **[保存]** をクリックします。
     
@@ -77,9 +78,9 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
     
 5. [**この通知を送信するタイミング**] セクションで、次の操作を行います。 
     
-    a. [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
+    a.  [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
     
-    b. [**ユーザー** ] フィールドは空のままにします。 
+    b.  [**ユーザー** ] フィールドは空のままにします。 
     
 6. [**この通知を送信する**ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。 
     

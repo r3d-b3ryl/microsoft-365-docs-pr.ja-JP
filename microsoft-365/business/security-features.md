@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Microsoft 365 Business に付属しているセキュリティ機能について説明します。
-ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636774"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031447"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business security and コンプライアンス機能
 
@@ -33,7 +33,7 @@ Microsoft 365 Business では、Pc、携帯電話、タブレットでデータ�
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business 管理センターのセキュリティ機能
 
-[![[ラベル] 管理センターが変更されたことを知らせるために、aka.ms/aboutM365preview で詳細を確認できます。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 管理センターでは、Microsoft 365 Business セキュリティ機能の多くを管理することができます。これにより、これらの機能を簡単にオンまたはオフにすることができます。 管理センターでは、次の操作を実行できます。
   
@@ -73,7 +73,7 @@ Microsoft 365 Business の高度な機能を使用すると、サイバー脅威
 - **[Azure portal の Intune のすべての機能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     Azure portal の Intune 管理センターにアクセスすることにより、Microsoft では提供されていない、Windows 用アドバンストデバイス管理と共に、MacOS デバイス、iPhone、Android デバイスの管理など、追加のセキュリティ機能を設定できます。365 Business 管理センター
-- **Azure AD P1 プランと同じ[条件付きアクセス](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)**
+- **Azure AD P1 プランと同じ[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
     条件付きアクセスでは、サインインリスクから組織を保護したり、予期しないネットワークまたはロケールからのアクセス試行、アクセス試行が危険なデバイスの種類などになったりすることを防止できます。 条件付きアクセスポリシーは、最初の認証が完了した後に適用され、最初の認証イベントからの信号を使用して、試行されたアクセスを承認、拒否、またはその他の証明 (2 番目の形式など) があるかどうかを判断します。必須。
 
@@ -104,12 +104,12 @@ Microsoft 365 Business サブスクリプションには、コンプライアン
     
 - **[機密ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 このプランを使用すると、機密**ラベル**を作成できます。これを使用すると、"転送不可" や "コピーしない" などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御することができます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 機密ラベルについては、 **AzInfoProtection_UL**をインストールしてください。
+   Microsoft 365 Business には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 このプランを使用すると、機密**ラベル**を作成できます。これを使用すると、"転送不可" や "コピーしない" などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御することができます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 機密ラベルについては、 **AzInfoProtection_UL**をインストールします。
 
 これらの機能は、セキュリティ&amp;コンプライアンスセンターおよび Intune 管理センターで管理できます。 時間の経過とともに、簡略化された統制は Microsoft 365 Business 管理センターに追加されます。
   
     
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>これらのセキュリティ機能はすべての市場で利用できますか?
   

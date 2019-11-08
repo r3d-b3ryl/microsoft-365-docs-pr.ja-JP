@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: このテストラボガイドを使用して、Microsoft 365 Enterprise テスト環境で特権アクセス管理を有効にします。
-ms.openlocfilehash: df3a2138de105b45f472ff0a862af2afe6dd2a34
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: f701f3f8f74036966de2c516d662ef77341f4842
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733424"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033612"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の特権アクセスの管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "37733424"
 > [!TIP]
 > [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
 最低限の要件を持つ軽量な方法で特権アクセス管理を構成する場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
@@ -44,15 +44,16 @@ ms.locfileid: "37733424"
 
 Office 365 組織で特権アクセスをセットアップして使用するには、次の手順を実行します。
 
-- [手順 1: 承認者のグループを作成する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
+- [手順 1: 承認者のグループを作成する](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
     特権アクセスの使用を開始する前に、昇格されたタスクと特権タスクへのアクセスのための受信要求に対して、誰がだれに承認権限を付与するかを決定します。 承認者グループの一部であるユーザーは、アクセス要求を承認できます。 これは、Office 365 でメールが有効なセキュリティグループを作成することによって有効になります。 テスト環境に「特権アクセス承認者」という名前の新しいセキュリティグループを作成し、以前のテストラボガイドの手順で作成した「User 3」を追加します。
 
-- [手順 2: 特権アクセスを有効にする](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
+- [手順 2: 特権アクセスを有効にする](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
     既定の承認者グループを使用して Office 365 で特権アクセスを明示的に有効にする必要があります。また、特権アクセス管理アクセス制御から除外する必要があるシステムアカウントのセットを含める必要があります。 このガイドのフェーズ3を開始する前に、必ず Office 365 組織で特権アクセスを有効にしてください。
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>フェーズ 3: 昇格された権限のあるタスクに承認が必要であることを確認する
+
 このフェーズでは、特権アクセスポリシーが機能していること、および定義された昇格した権限のあるタスクを実行する承認がユーザーに必要であることを確認します。
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義されていないタスクを実行するためのテスト機能
@@ -63,9 +64,10 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 
 2. Exchange 管理 Powershell で、組織の新しいジャーナルルールを作成します。
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
+
 4. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>New-journalrule タスクの新しい特権アクセスポリシーを作成する
@@ -82,7 +84,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 4. [**ポリシーの構成**] を選択し、[**ポリシーの追加**] を選択します。
 
 5. ドロップダウンフィールドで、次の値を選択または入力します。
-    
+
     **ポリシーの種類**: タスク
 
     **ポリシースコープ**: Exchange
@@ -97,16 +99,17 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義された New-journalrule タスクのテスト承認要件
 
-1. ローカルコンピューターで、テストにグローバル管理者アカウントを使用して、 **microsoft Corporation** > の exchange online リモート powershell モジュールを開き、microsoft**exchange online リモート powershell モジュール**にサインインします。environment.
+1. ローカルコンピューターで、テスト環境のグローバル管理者アカウントを使用して、 **microsoft Corporation** > の exchange online リモート powershell モジュールを開き、microsoft**exchange online リモート**powershell モジュールにサインインします。
 
 2. Exchange 管理 Powershell で、組織の新しいジャーナルルールを作成します。
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. Exchange 管理 PowerShell の "Insuffient permissions" エラーを表示する:
 
-```
+```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
     + CategoryInfo          : NotSpecified: (:) [], LocalizedException
     + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
@@ -152,9 +155,10 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 2. Exchange 管理 Powershell で、組織の新しいジャーナルルールを作成します。
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
 
 ## <a name="next-step"></a>次の手順

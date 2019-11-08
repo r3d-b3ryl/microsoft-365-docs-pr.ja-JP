@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: 92e8ccb99dfece7687c25db84b81fc7bc7158d71
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 2af5d4b4f84f39f5b157313e5b38ef030da7263d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574680"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030536"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Microsoft 365 Business で Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
 
-Azure Active Directory に参加している Windows 10 デバイスはすべて、Office 365 アプリなどのクラウドベースのすべてのリソースへのアクセス権を持ち、Microsoft 365 Business で保護することができます。 基幹業務 (LOB) アプリ、ファイル共有、およびプリンターなどのオンプレミスのリソースへのアクセスも許可するには、 [AZURE AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)を使用して、オンプレミスの active Directory を Azure active directory と同期する必要があります。 
+Azure Active Directory に参加している Windows 10 デバイスはすべて、Office 365 アプリなどのクラウドベースのすべてのリソースへのアクセス権を持ち、Microsoft 365 Business で保護することができます。 基幹業務 (LOB) アプリ、ファイル共有、およびプリンターなどのオンプレミスのリソースへのアクセスも許可するには、 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)を使用して、オンプレミスの active Directory を Azure active directory と同期する必要があります。 
 
-詳細については、「 [Azure Active Directory でのデバイス管理の概要](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)」を参照してください。
+詳細については、「 [Azure Active Directory でのデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」を参照してください。
 手順の概要についても、以下のセクションで説明します。
 
 ## <a name="run-azure-ad-connect"></a>Azure AD Connect を実行する

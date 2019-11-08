@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441094"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034188"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
@@ -33,7 +33,7 @@ ms.locfileid: "37441094"
 A. **着信メッセージの場合、** スパムの大部分は、送信者の IP アドレスに基づき、接続フィルタを介して削除されます。 次に、このサービスはメッセージのコンテンツを検査します。 既定では、コンテンツ フィルターで処理されたスパムは受信者の迷惑メール フォルダーに送信されます。 既定のアクションを変更できます。 たとえば、コンテンツ フィルター ポリシーで構成することにより、スパム メッセージを検疫に送信できます。 
   
 > [!IMPORTANT]
-> EOP スタンドアロンのお客様の場合: [**迷惑メールフォルダーにメッセージを移動**します] アクションがオンプレミスのメールボックスと連携するようにするには、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を設定して検出する必要があります。EOP によって追加されたスパムヘッダー。 詳細については、「 [スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 
+> EOP スタンドアロンのお客様の場合: [**迷惑メールフォルダーにメッセージを移動**する] アクションがオンプレミスのメールボックスと連携するようにするには、EOP によって追加されたスパムヘッダーを検出するようにオンプレミスサーバーの2つの Exchange メールフロールール (トランスポートルールとも呼ばれる) を構成する必要があります 詳細については、「 [スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 
   
  **送信メッセージの場合、** メッセージは、より危険度の高い配信プール経由でルーティングされるか、戻ってきて配信されないかのいずれかです。後者の場合は、送信者がメッセージを配信できなかったことを知らせる配信状態通知 (DSN) メッセージを受け取るはずです。 
   
@@ -73,13 +73,13 @@ A. スパムとスパムではないメッセージを分析のために Microso
   
 A. はい。たとえば、Microsoft 365 管理センターでスパム検出レポートを取得できます。 このレポートでは、スパムボリュームが一意のメッセージ数として表示されます。 レポートの詳細については、次のリンクを参照してください。
   
-Exchange Online のお客様: [Exchange online での監視、レポート、メッセージ追跡](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online のお客様: [Exchange online での監視、レポート、メッセージ追跡](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Exchange Online Protection のお客様: [Exchange Online protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md)
   
  **Q. 誰かが私にメッセージを送りましたが、そのメッセージを見つけられません。 スパムとして検出された可能性があります。 調べるためのツールはありますか?**
   
-A. はい、メッセージ追跡ツールを使用すると、電子メールメッセージがサービスを通過するときに追跡して、どのような問題が発生しているかを確認することができます。 メッセージ追跡ツールを使用して、メッセージがスパムとしてマークされた理由を確認する方法の詳細については、「[メッセージがスパムとしてマークされましたか?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam) 」を参照してください。
+A. はい、メッセージ追跡ツールを使用すると、電子メールメッセージがサービスを通過するときに追跡して、どのような問題が発生しているかを確認することができます。 メッセージ追跡ツールを使用して、メッセージがスパムとしてマークされた理由を確認する方法の詳細については、「[メッセージがスパムとしてマークされましたか?](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam) 」を参照してください。
   
  **Q. ユーザーがスパムを送信した場合、サービスはメールを調整 (速度制限) しますか?**
   
@@ -89,15 +89,15 @@ A.特定の時間枠 (たとえば、1 時間ごと) 内でサービスを使用
   
  **Q. サードパーティのスパム対策およびマルウェア対策プロバイダーを Exchange Online と併用できますか。**
   
-A. できます。Exchange Online のメールボックスを保護するために、別のスパムおよびマルウェア フィルタリング サービスを構成できます。 着信メールに対してこれを構成するには、MX レコードをサードパーティ プロバイダーを指すように変更して電子メール メッセージをサードパーティ プロバイダーにリダイレクトし、その後そのメッセージを EOP にリダイレクトしてさらに処理を行う必要があります。 送信メールに対して構成するには、[Scenario: Outbound Smart Hosting](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx) に示すように、メッセージの配信先をサードパーティ プロバイダー (スマート ホスト) に設定してください。
+A. できます。Exchange Online のメールボックスを保護するために、別のスパムおよびマルウェア フィルタリング サービスを構成できます。 着信メールに対してこれを構成するには、MX レコードをサードパーティ プロバイダーを指すように変更して電子メール メッセージをサードパーティ プロバイダーにリダイレクトし、その後そのメッセージを EOP にリダイレクトしてさらに処理を行う必要があります。 送信メールに対して構成するには、[Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx) に示すように、メッセージの配信先をサードパーティ プロバイダー (スマート ホスト) に設定してください。
   
  **Q。 マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。**
   
 A. はいあります。次の資料を参照してください。
   
-[フィッシング詐欺、宝くじ詐欺、その他の詐欺に関するヘルプを取得する](http://go.microsoft.com/fwlink/p/?LinkId=325606)
+[フィッシング詐欺、宝くじ詐欺、その他の詐欺に関するヘルプを取得する](https://go.microsoft.com/fwlink/p/?LinkId=325606)
   
-[電子メールおよび Web 詐欺: 自分を守る方法](http://go.microsoft.com/fwlink/p/?LinkID=325607)
+[電子メールおよび Web 詐欺: 自分を守る方法](https://go.microsoft.com/fwlink/p/?LinkID=325607)
   
  **Q. スパム メッセージおよびマルウェア メッセージの送信元に関する調査や、法執行機関への転送は行っていますか?**
   

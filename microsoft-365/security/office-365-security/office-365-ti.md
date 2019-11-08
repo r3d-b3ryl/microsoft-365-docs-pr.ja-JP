@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: 18350245036a39ccda32c6a09ba97fb9c9449d41
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 749ddef383839043141027ace4a2d906932b7e91
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086818"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031872"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
@@ -38,7 +38,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>脅威の調査と応答のツールについて理解する
 
-脅威の調査と応答の機能は、 &amp;セキュリティコンプライアンスセンターにおいて、[脅威ダッシュボード](#threat-dashboard)、[エクスプローラー](#threat-explorer)、[インシデント](#incidents)、[アタックシミュレータ](#attack-simulator)を含む、一連のツールと応答のワークフローとして表示されます。[応答の自動調査 &](automated-investigation-response-office.md)。
+脅威の調査と応答の機能は、 &amp;セキュリティコンプライアンスセンターにおいて、[脅威ダッシュボード](#threat-dashboard)、[エクスプローラー](#threat-explorer)、[インシデント](#incidents)、[アタックシミュレータ](#attack-simulator)、および[自動調査 & 応答](automated-investigation-response-office.md)を含む一連のツールおよび応答ワークフローとして公開されています。
   
 ### <a name="threat-dashboard"></a>脅威ダッシュボード
 
@@ -87,7 +87,7 @@ Office 365 Advanced Threat Protection プラン2のサービスの一部とし�
 Office 365 の脅威の調査と応答の機能は、Office 365 Advanced Threat Protection プラン2および Enterprise E5 に含まれています。 
 
 > [!TIP]
-> これらの脅威の調査および応答機能を備えていない Office 365 サブスクリプションが組織にある場合、Office 365 Advanced Threat Protection プラン2をアドオンとして購入する可能性があります。 プランオプションの詳細については、「 [office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」および「[購入または編集 (office 365 for business)](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)」を参照してください。
+> これらの脅威の調査および応答機能を備えていない Office 365 サブスクリプションが組織にある場合、Office 365 Advanced Threat Protection プラン2をアドオンとして購入する可能性があります。 プランオプションの詳細については、「 [office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」および「[購入または編集 (office 365 for business)](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)」を参照してください。
   
 1. Office 365 の全体管理者として[https://admin.microsoft.com](https://admin.microsoft.com) 、に移動して、office 365 の職場または学校のアカウントを使用してサインインします。 
     

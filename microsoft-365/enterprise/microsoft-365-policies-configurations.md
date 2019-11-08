@@ -14,24 +14,24 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 1fae59706a77663090d4f29cc6a34b339c11e92c
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: eba186233efa5bebb980c4e16aafb0fe854910c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481305"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031322"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
 このシリーズの記事では、推奨されている環境と構成 (条件付きアクセスポリシーの規定されたセットを含む) を実装することにより、Enterprise Mobility + Security (EMS) 製品を使用してクラウドサービスへのセキュリティで保護されたアクセスを構成する方法について説明します。関連する機能。 EMS は、Microsoft 365 のコアコンポーネントです。 このガイダンスを使用して、azure Active Directory と統合されたすべてのサービスへのアクセスを保護できます。これには、Office 365 サービス、その他の SaaS サービス、および Azure AD アプリケーションプロキシで公開されたオンプレミスアプリケーションが含まれます。 
 
-これらの推奨事項は、Microsoft セキュリティスコアと[AZURE AD の id スコア](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score)に沿っており、組織にとってこれらのスコアが増加します。 これらの推奨事項は[、id インフラストラクチャをセキュリティで保護するための5つの手順を](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps)実装するのにも役立ちます。 
+これらの推奨事項は、Microsoft セキュリティスコアと[AZURE AD の id スコア](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)に沿っており、組織にとってこれらのスコアが増加します。 これらの推奨事項は[、id インフラストラクチャをセキュリティで保護するための5つの手順を](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)実装するのにも役立ちます。 
 
 Microsoft は、組織によっては独自の環境要件や複雑さがあることを認識しています。 これらの組織のいずれかである場合は、これらの推奨事項を出発点として使用します。 ただし、ほとんどの組織では、これらの推奨事項を定められたとおりに実装できます。 
 
 ## <a name="intended-audience"></a>対象ユーザー
 
-これらの推奨事項は、 [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)と[microsoft Enterprise Mobility + Security](http://microsoft.com/ems)(その他の、Microsoft の Azure Active Directory (identity) を含む) に精通しているエンタープライズアーキテクトおよび IT 担当者を対象としています。Intune (デバイス管理)、および Azure Information Protection (データ保護)。
+これらの推奨事項は、 [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)と[microsoft Enterprise Mobility + Security](https://microsoft.com/ems)に精通している企業のアーキテクトおよび IT 担当者を対象としています。これには、azure Active Directory (Identity)、microsoft Intune (デバイス管理)、azure Information protection (データ保護) などが含まれます。
 
 ### <a name="customer-environment"></a>お客様の環境
 
@@ -69,7 +69,7 @@ Enterprise Mobility + Security E5 ライセンスを持っていない組織で�
 
 **Office 365 のファイル保護ソリューション**<br/>
 ![ポスターのサムネイル「Office のファイル保護ソリューション」 (365)](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>セキュリティと生産性の折り合い
 

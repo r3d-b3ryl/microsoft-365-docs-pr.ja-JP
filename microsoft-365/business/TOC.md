@@ -1,5 +1,5 @@
 # Microsoft 365 Business
-## [Microsoft 365](index.md)
+## [Microsoft 365](index.yml)
 ## [Microsoft 365 Business とは](microsoft-365-business-overview.md)
 ## [Microsoft 365 Business を入手する](sign-up.md)
 ## [データ保護の前提条件](pre-requisites-for-data-protection.md)
@@ -32,7 +32,10 @@
 ### [Windows 10 の PC のデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)
 #### [Windows 10 PC の設定を検証する](validate-settings-on-windows-10-pcs.md)
 ### [Windows 10 PC のアプリの保護設定](protection-settings-for-windows-10-devices.md)
-## [Microsoft 365 Business への移行](migrate-to-microsoft-365-business.md)
+## Microsoft 365 Business への移行
+### [Office 365 Business Premium からの移行](migrate-to-microsoft-365-business.md)
+### [Office 365 E3 からの移行](migrate-from-e3.md)
+### [Microsoft 365 Enterprise への移行](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
 ## 請求
 ### [請求内容](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [給与](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

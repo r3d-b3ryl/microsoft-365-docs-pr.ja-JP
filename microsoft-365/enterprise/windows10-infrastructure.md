@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: b1f655e5befd16058870542f2e595d36599006fd
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: d704f6392f5f0510478073299fcfe60569560105
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746709"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033642"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
@@ -72,7 +72,7 @@ Windows 10 Enterprise で利用できるセキュリティ機能の詳細につ�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の内部を見ることで、会社が[Windows 10 Enterprise を展開し、強力な認証、Intune、Microsoft DEFENDER ATP を使用して](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6)いる方法について説明します。
+Microsoft の内部を見ることで、会社が[Windows 10 Enterprise を展開し、強力な認証、Intune、Microsoft DEFENDER ATP を使用して](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR6)いる方法について説明します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 

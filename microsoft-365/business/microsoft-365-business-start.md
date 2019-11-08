@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: ed302a79d125ffc9c6203d902f437749a5b0f8d4
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 4c744d6a900dba3c11ee51e75602a430268e15bb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575900"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029106"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
@@ -40,7 +40,7 @@ Microsoft 365 Business は最大300ライセンスを想定しており、さら
 
 - パートナーがいる場合、パートナーは Microsoft 365 Business を入手します: [Microsoft パートナー センターから Microsoft 365 Business を購入する](get-microsoft-365-business.md)。
     
-- パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/en-us/microsoft-365/business)できます。
+- パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)できます。
     
 ## <a name="set-up-microsoft-365-business"></a>Microsoft 365 Business をセットアップする
 
@@ -78,11 +78,11 @@ Microsoft 365 Business は最大300ライセンスを想定しており、さら
   
 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法は推奨されており、この状態のデバイスは**ハイブリッド AZURE AD 参加デバイス**と呼ばれます。 
   
-オンプレミスのリソース (ファイル共有やプリンターなど) が含まれているローカルの Active Directory を保持する場合は、以下の手順に従って、 **AZURE AD に参加**しているデバイスにこれらのリソースへのアクセスを許可でき[ます。Microsoft 365 Business の Azure AD に参加しているデバイス](access-resources.md)。
+オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルの Active Directory を保持する場合は、「 [Microsoft 365 Business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、 **azure ad に参加**しているデバイスにこれらのリソースへのアクセス権を与えることができます。
   
 Windows 10 Pc をセットアップした後、Office をデバイスに[自動的にインストール](auto-install-or-uninstall-office.md)することができます。 
   
-## <a name="contact-support"></a>サポートに連絡
+## <a name="contact-support"></a>サポートへのお問い合わせ
 
  **サポートに連絡する場合:**
   

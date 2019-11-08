@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: ATP の安全なリンクポリシーを設定するときに、組織内の一部のユーザーがリストに含まれているサイトにアクセスできるようにするために、Url の書き換え不可のリストを含めることができます。
-ms.openlocfilehash: 512d4ce507c191b00bc2d21f61d5efbf2dffcb57
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1068f7e2ac75f9c4403475e1fa9bc4da57fabe51
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772141"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032052"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクを使用して、リライトしないカスタムの Url リストを設定する
 
@@ -69,19 +69,19 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 
 - [書き換えない] ボックスの一覧で指定したすべての Url は、指定した受信者の ATP の安全なリンクスキャンから除外されます。
  
-- 「書き換えない」リスト内に既に Url のリストがある場合は、そのリストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、既存のリストにそのよう`http://contoso.com/a`なエントリがあり、ポリシーにそのような`http://contoso.com/a/b`サブパスを含める場合は、エントリにワイルドカードを追加`http://contoso.com/a/*`して、次のようにします。
+- 「書き換えない」リスト内に既に Url のリストがある場合は、そのリストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、既存のリストにそのよう`https://contoso.com/a`なエントリがあり、ポリシーにそのような`https://contoso.com/a/b`サブパスを含める場合は、エントリにワイルドカードを追加`https://contoso.com/a/*`して、次のようにします。
     
 - 「書き換えない」の一覧で指定した Url にスラッシュ (/) を含めないでください。 たとえば、「リライトしない`contoso.com/` 」の一覧で入力するのではなく`contoso.com`、を入力します。
 
-- ATP の安全なリンクポリシーの "書き込み不可" リストを指定する場合は、最大3つのワイルドカードのアスタリスク\*() を含めることができます。 ワイルドカード\*() を使用して、または`http://` `https://`などのプレフィックスまたはサブドメインを明示的に含めます。 などのエントリ`contoso.com`は、"リライトしない" `*.contoso.com/*`リストの場合と同じではありません。 ドメインおよびその`*.contoso.com/*`サブドメインおよびパスへのアクセスをユーザーに許可する場合は、必要があります。
+- ATP の安全なリンクポリシーの "書き込み不可" リストを指定する場合は、最大3つのワイルドカードのアスタリスク\*() を含めることができます。 ワイルドカード\*() を使用して、または`https://` `https://`などのプレフィックスまたはサブドメインを明示的に含めます。 などのエントリ`contoso.com`は、"リライトしない" `*.contoso.com/*`リストの場合と同じではありません。 ドメインおよびその`*.contoso.com/*`サブドメインおよびパスへのアクセスをユーザーに許可する場合は、必要があります。
     
 次の表に、入力できる内容と、それらのエントリの影響についての例を示します。
     
 |**エントリの例**|**機能**|
 |:-----|:-----|
-|`contoso.com`|受信者がサブドメインやパス`http://contoso.com`ではなく、サイトにアクセスできるようにします。|
-|`*.contoso.com/*`  <br/> |受信者が`http://www.contoso.com`、 `https://www.contoso.com` `https://maps.contoso.com`、、などのドメイン、サブドメイン、およびパスにアクセスできるようにします。`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |特定の受信者が、次`http://contoso.com/a`のようなサブパスではなく、サイトにアクセスできるようにします。`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a/*`  <br/> |特定の受信者が、次`http://contoso.com/a`のようなサブパスでサイトにアクセスできるようにします。`http://contoso.com/a/b`  <br/> |
+|`contoso.com`|受信者がサブドメインやパス`https://contoso.com`ではなく、サイトにアクセスできるようにします。|
+|`*.contoso.com/*`  <br/> |受信者が`https://www.contoso.com`、 `https://www.contoso.com` `https://maps.contoso.com`、、などのドメイン、サブドメイン、およびパスにアクセスできるようにします。`https://www.contoso.com/a`  <br/> |
+|`https://contoso.com/a`  <br/> |特定の受信者が、次`https://contoso.com/a`のようなサブパスではなく、サイトにアクセスできるようにします。`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a/*`  <br/> |特定の受信者が、次`https://contoso.com/a`のようなサブパスでサイトにアクセスできるようにします。`https://contoso.com/a/b`  <br/> |
    
  

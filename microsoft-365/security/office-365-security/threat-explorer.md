@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: ee14e4a1309bcf1077a8901ce874dc2872b694be
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70073197091e75ae7ca2740b9be53edce87e1d8a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086179"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030711"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
-組織で[office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) を使用していて、[必要なアクセス許可](#required-licenses-and-permissions)がある場合は、 **Explorer**または**リアルタイムの検出**(以前の*リアルタイムのレポート*) を使用します。 [新機能](#new-features-in-real-time-detections))。 [セキュリティ & コンプライアンスセンター] で、[**脅威の管理**] に移動してから、[**エクスプローラー** ] または [**リアルタイムの検出**] を選択します。 
+組織で[office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) を使用しており、[必要なアクセス許可](#required-licenses-and-permissions)がある場合は、 **Explorer**または**リアルタイムの検出**(以前の*リアルタイムのレポート*-[新機能を参照](#new-features-in-real-time-detections)) があります。 [セキュリティ & コンプライアンスセンター] で、[**脅威の管理**] に移動してから、[**エクスプローラー** ] または [**リアルタイムの検出**] を選択します。 
 
 |ATP プラン2を使用すると、次のように表示されることになります。  |ATP プラン1では、次のように表示されることがあります。  |
 |---------|---------|
@@ -37,7 +37,7 @@ ms.locfileid: "37086179"
 このレポートでは、次のことができます。
 - [Office 365 のセキュリティ機能によって検出されたマルウェアを参照](#see-malware-detected-in-email-by-technology)
 - [フィッシング Url に関するデータを表示し、[verdict] をクリックします。](#view-data-about-phishing-urls-and-click-verdict)
-- [エクスプローラーのビューから自動化された調査と応答プロセスを開始](#start-automated-investigation-and-response)する(ATP プラン2のみ)
+- [エクスプローラーのビューから自動化された調査と応答プロセスを開始](#start-automated-investigation-and-response)する (ATP プラン2のみ)
 - ...[悪意のある電子メールの調査など](#more-ways-to-use-explorer-or-real-time-detections)
 
 ## <a name="new-features-in-real-time-detections"></a>リアルタイム検出の新機能
@@ -78,7 +78,7 @@ ms.locfileid: "37086179"
 
 **電子メールのタイムライン**は、管理者にとって、探しやすさを向上させるための別の新しいエクスプローラー機能です。 イベントを理解するためにさまざまな場所をチェックするのにかかる時間が短くなるため、ランダム化が減少します。 複数のイベントが電子メールで同時に発生するか、または同じ時刻に終了すると、これらのイベントがタイムラインビューに表示されます。 実際、メールへの配信の後に発生する一部のイベントは、[特殊な操作] 列に記録されます。 メールのタイムラインからの情報をメールの送信後の特別なアクションと組み合わせることにより、管理者は、ポリシーがどのように機能するか、メールが最後にルーティングされたか、場合によっては最終的な評価がどのようなものかを把握できるようになります。
 
-悪意のあるメールの調査の詳細については[、「Office 365 で配信された悪意のある電子メールの検索と調査](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered)」を参照してください。
+悪意のあるメールの調査の詳細については[、「Office 365 で配信された悪意のある電子メールの検索と調査](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered)」を参照してください。
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
 

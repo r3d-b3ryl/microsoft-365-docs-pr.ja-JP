@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 66708fe214815640baf08adace292dee683e382b
-ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
+ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37593862"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029061"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から保護する
 
@@ -42,12 +42,12 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 
 **スパムメールを減らす**
 
-[スパムを減らす方法については、次の10のヒントを参照して](https://support.office.com/en-us/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6)ください。
+[スパムを減らす方法については、次の10のヒントを参照して](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6)ください。
 
 **レポート!**
 
 受信したフィッシングまたはその他の詐欺メールを報告します。 メッセージを選択し、リボンの [**メッセージを報告**する] を選択します。
-[迷惑メールの報告](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)の詳細については、以下を参照してください。
+[迷惑メールの報告](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)の詳細については、以下を参照してください。
 
 **フィッシングを回避する**
 - 個人またはアカウントの情報を送信するように求める電子メールには返信しないでください。
@@ -56,11 +56,11 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 - 電子メールが会社から送られているように見える場合は、電話または web ブラウザーを使用して会社のカスタマーサービスに連絡し、電子メールが正当であるかどうかを確認します。
 - Web で電子メールの件名行を検索し、その後に hoax という単語を続けて、他のユーザーがこの詐欺を報告したかどうかを確認します。
 
-[乱用、フィッシング、またはスプーフィングに対処](https://support.office.com/en-us/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3)するには、5つの一般的な種類の詐欺についてお読みください。
+[乱用、フィッシング、またはスプーフィングに対処](https://support.office.com/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3)するには、5つの一般的な種類の詐欺についてお読みください。
 
 **メールが他のユーザーに対して適切であることを確認する**
 
-お客様が自分のものであることを証明するためのデジタル署名を追加することで、お客様がコミュニケーションを信頼できるよう支援します。 「[デジタル署名を使用してセキュリティで保護されたメッセージ](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6)」を参照してください。
+お客様が自分のものであることを証明するためのデジタル署名を追加することで、お客様がコミュニケーションを信頼できるよう支援します。 「[デジタル署名を使用してセキュリティで保護されたメッセージ](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6)」を参照してください。
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>オンラインの脅威からキャンペーンを保護する
 
@@ -75,6 +75,6 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 ## <a name="set-it-up"></a>設定する
 
 詳細については、以下を参照してください。
-- [Office を使用してファイルと通信を安全に保つ](https://support.office.com/en-us/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [仕事での安全性と秘密を維持する](https://support.office.com/en-us/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Office を使用してファイルと通信を安全に保つ](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
+- [仕事での安全性と秘密を維持する](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
   

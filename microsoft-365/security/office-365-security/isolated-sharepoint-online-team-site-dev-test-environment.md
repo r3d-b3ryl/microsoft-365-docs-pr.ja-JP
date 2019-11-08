@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
-ms.openlocfilehash: a540cd616fb39c2da7afc603786243c0d383c352
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0f91bcce140fd1ad00c51b27e8b1e134e5f2a283
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085616"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032342"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
@@ -50,7 +50,7 @@ Office 365 開発/テスト環境での分離した SharePoint Online チーム 
 3. 新しい ProjectX SharePoint Online チーム サイトを作成して分離させる。
     
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](https://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
@@ -171,7 +171,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 11. リストの **[ProjectX のメンバー]** をクリックします。
     
-12. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
+12. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
     
 13. **[共有]** ダイアログ ボックスに「 **ProjectX-Members**」と入力し、それを選択して、 **[共有]** をクリックします。
     
@@ -179,7 +179,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 15. リストの **[ProjectX の所有者]** をクリックします。
     
-16. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
+16. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
     
 17. **[共有]** ダイアログ ボックスに「 **ProjectX-Admins**」と入力し、それを選択して、 **[共有]** をクリックします。
     

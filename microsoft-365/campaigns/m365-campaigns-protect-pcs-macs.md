@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 686a69a7e712e80c4f58cade24a69465fb4e7d33
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772454"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031292"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>管理されていない Windows 10 Pc および Mac を保護する
 
@@ -48,9 +48,9 @@ Windows 10 PC または Mac が組織で管理されていない場合は、必�
 ## <a name="windows-10tabwindows10"></a>[Windows 10](#tab/Windows10)
 **デバイスの暗号化を有効にする**<p>
 
-デバイスの暗号化は、さまざまな Windows デバイスで使用でき、暗号化によってデータを保護します。 デバイスの暗号化を有効にすると、承認されたユーザーのみがデバイスとデータにアクセスできるようになります。 手順については、「 [turn on device encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) 」を参照してください。
+デバイスの暗号化は、さまざまな Windows デバイスで使用でき、暗号化によってデータを保護します。 デバイスの暗号化を有効にすると、承認されたユーザーのみがデバイスとデータにアクセスできるようになります。 手順については、「 [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 」を参照してください。
 
- デバイスの暗号化がデバイスで使用できない場合は、代わりに標準の[BitLocker 暗号化](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption)を有効にすることができます。 (Windows 10 Home edition で BitLocker は使用できません。) 
+ デバイスの暗号化がデバイスで使用できない場合は、代わりに標準の[BitLocker 暗号化](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)を有効にすることができます。 (Windows 10 Home edition で BitLocker は使用できません。) 
 
 
 
@@ -59,10 +59,10 @@ Windows 10 を使用している場合は、Windows セキュリティによる�
 
 Windows Update は、PC の安全性を確保して脅威から保護するために、Windows セキュリティの更新プログラムを自動的にダウンロードします。
 
-以前のバージョンの Windows を使用していて、Microsoft Security Essentials を使用している場合は、Windows セキュリティに移行することをお勧めします。 詳細については、「 [Windows セキュリティでデバイスを保護](https://support.microsoft.com/en-us/help/17464/windows-10-help-protect-my-device-with-windows-security)する」を参照してください。
+以前のバージョンの Windows を使用していて、Microsoft Security Essentials を使用している場合は、Windows セキュリティに移行することをお勧めします。 詳細については、「 [Windows セキュリティでデバイスを保護](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)する」を参照してください。
 
 **Windows ファイアウォールを有効にする**<p>
-別のファイアウォールが有効になっている場合でも、Windows ファイアウォールを常に実行する必要があります。 Windows ファイアウォールを無効にすると、デバイス (とネットワークがある場合は、そのデバイスが許可されていないアクセスに対して脆弱になることがあります。 手順について[は、「Windows ファイアウォールの有効化または無効化](https://support.microsoft.com/en-us/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)」を参照してください。
+別のファイアウォールが有効になっている場合でも、Windows ファイアウォールを常に実行する必要があります。 Windows ファイアウォールを無効にすると、デバイス (とネットワークがある場合は、そのデバイスが許可されていないアクセスに対して脆弱になることがあります。 手順について[は、「Windows ファイアウォールの有効化または無効化](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)」を参照してください。
 
 ## <a name="mactabmac"></a>[Mac](#tab/Mac)
 **FileVault を使用して Mac ディスクを暗号化する**<p>

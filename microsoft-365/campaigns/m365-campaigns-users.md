@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for キャンペーンがユーザーに与える影響について説明します。
-ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772424"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031242"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 for キャンペーンがユーザーに与える影響
 
@@ -66,7 +66,7 @@ Microsoft 365 for キャンペーンでは、ハッカーが自分の環境に�
 ||**Windows 10**|**Mac**|
 |セキュリティ機能|BitLocker デバイス保護を有効にする<p><p> Windows Defender をオンのままにしておく <p>Windows ファイアウォールを有効にする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼できるウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
 
-これらの推奨事項の詳細については、「[ハッカーやマルウェアからのアカウントとデバイスの保護](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)」を参照してください。
+これらの推奨事項の詳細については、「[ハッカーやマルウェアからのアカウントとデバイスの保護](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)」を参照してください。
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Microsoft Teams、OneDrive、SharePoint Online、その他の Office 365 ツールを使用して共同作業を行う
 ユーザーは、Microsoft 365 以外の場所に組織のファイルを共有し、保存しようとする場合があります。 Microsoft 365 を使用すると、簡単に共同作業し、安全に共有できます。 ファイル[とビデオ](share-files-and-videos.md)は、Microsoft Teams、OneDrive、Stream、またはファイル内からも直接共有できます。 これらのツール内から共有することで、データがリークしないようにすることができます。 機密データに保護を追加して、組織外での共有を防ぐことができます。 

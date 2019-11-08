@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft パートナーセンターから Microsoft 365 Business を購入する方法について説明します。
-ms.openlocfilehash: cd13db200292f84ea736bbd27af69608e576e586
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 09d2f24fba1725278b663d5c3159163a56dcdc59
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574910"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038921"
 ---
 # <a name="get-microsoft-365-business"></a>Microsoft 365 Business を入手する
 
@@ -36,7 +36,7 @@ ms.locfileid: "37574910"
 
 詳細な手順については、「 [Microsoft 365 Business のサインアップ](sign-up.md)」を参照してください。
 
-Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)にアクセスすることもできます。
+Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)にアクセスすることもできます。
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Microsoft パートナー センターから Microsoft 365 Business を購入する
 
@@ -46,7 +46,7 @@ Microsoft 365 Business を購入し、セットアップヘルプを取得する
     
     ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. 顧客の [ **サブスクリプション**] ページで、[サブスクリプションの追加] を選択し、[カタログ] の下で [小規模企業] オプションを選択して、[ **Microsoft 365 Business**] を選択します。
+3. 顧客の [**サブスクリプション**] ページで、[**サブスクリプションの追加**] を選択し、[カタログ] の下の [Small business] オプションを選択してから、[ **Microsoft 365 business**] を選択します。
     
     必要なライセンス数 (最大 300) を選びます。 300を超えるユーザーがいる場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 」を参照してください。 
     

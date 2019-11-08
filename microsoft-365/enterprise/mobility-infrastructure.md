@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386144"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031152"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>フェーズ 5: Microsoft 365 Enterprise のモバイルデバイス管理
 
-![フェーズ 5: モバイルデバイスの管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![フェーズ 5: モバイル デバイス管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *この機能は、Microsoft 365 Enterprise の E3 および E5 バージョンに適用されます。*
 
@@ -119,7 +119,7 @@ Intune では、アプリの追加、他のユーザーまたはグループへ�
 
 これらの機能と設定は、多くの場合、Intune の "クールな" 部分と見なされ、非常に強力です。 条件付きアクセスを使用してコンプライアンスポリシーを正常に適用すると、**デバイスプロファイル**を作成する準備が整います。
 
-[Azure portal](https://portal.azure.com)の Intune を使用すると、デバイスプラットフォーム (IOS、MacOS、Android、Windows) に基づいて、さまざまなプロファイルを作成できます。 たとえば、次のように操作できます。
+[Azure portal](https://portal.azure.com)の Intune を使用すると、デバイスプラットフォーム (IOS、MacOS、Android、Windows) に基づいて、さまざまなプロファイルを作成できます。 たとえば、次のようなことが可能です。
 
 - Windows 10 デバイスで Endpoint protection を使用して、暗号化などのさまざまな BitLocker オプションを有効にします。
 - IOS デバイスで制限付きアプリ機能を使用して、インストール可能な承認済みアプリの一覧を作成します。 または、禁止されているアプリのリストを作成します。
@@ -151,7 +151,7 @@ Microsoft では、セキュアで生産性の高い労働力を確保するた�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の IT 専門家[が EMS を使用してデバイスを管理](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8)する方法について説明します。
+Microsoft の IT 専門家[が EMS を使用してデバイスを管理](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8)する方法について説明します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 

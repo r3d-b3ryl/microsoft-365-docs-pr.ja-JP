@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5dcdce4b86356d514317967188ef07ebaeecbf16
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087135"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034208"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターの概要
 
@@ -27,7 +27,7 @@ Microsoft 365 セキュリティセンター--Microsoft の id、データ、デ
 
 新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターは、セキュリティチームおよびコンプライアンスチームのニーズを満たすために設計された専用のワークスペースです。 これらのソリューションは、Microsoft 365 サービス間で統合されており、リスクを軽減し、デジタルスペースを保護するのに役立つ、実践的な洞察を提供します。
 
-[詳細について](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-security-and-compliance)は、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターの準備をしてください。
+[詳細について](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance)は、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターの準備をしてください。
 
 Microsoft 365 セキュリティセンターの security.microsoft.com にアクセスします。  
 
@@ -39,16 +39,16 @@ Microsoft 365 セキュリティセンターの security.microsoft.com にアク
 
 ![Microsoft 365 セキュリティホームページ](../media/security-docs/home.jpg)
 
-Microsoft 365 セキュリティセンターには次のものが含まれます。
+Microsoft 365 セキュリティ センターには以下のものが含まれます。
 
 * **自宅**–組織の全体的なセキュリティの健全性を一目で確認できます。
 * **アラート**– Microsoft Cloud App Security、OFFICE 365 ATP、Azure AD、MICROSOFT Defender ATP からのアラートを含む、microsoft 356 環境全体のすべての通知をより詳細に把握できます。 E3 および E5 のお客様が使用できます。  
 * **レポート**–ユーザー、デバイス、アプリなどをより適切に保護するために必要な詳細情報と情報を取得します。
-* **セキュリティで保護**されたスコア: Microsoft のセキュリティスコアを使用して、全体的なセキュリティ姿勢を改善します。 このページには、有効にしたさまざまなセキュリティ機能の概要と、改善するための推奨事項が記載されています。
-* 検索 **: Microsoft** 365 組織のマルウェア、疑わしいファイル、アクティビティを事前に検索します。
-* **分類**–ドキュメント、電子メールメッセージ、ドキュメント、サイトなどを分類するラベルを追加することで、データ損失を保護します。 ラベルを適用すると (自動またはユーザーによって)、選択した設定に基づいてコンテンツまたはサイトが保護されます。 たとえば、ファイルを暗号化し、コンテンツマーキングを追加し、特定のサイトへのユーザーアクセスを制御するラベルを作成できます。
-* **ポリシー** -デバイスの管理、脅威からの保護、組織内のさまざまな活動に関する通知の受信を行うポリシーを設定します。
-* **アクセス許可**-組織内の誰が Microsoft 365 セキュリティセンターにアクセスして、コンテンツを表示し、タスクを実行するかを管理します。 また、Microsoft 365 のアクセス許可を Azure AD ポータルに割り当てることもできます。
+* **セキュア スコア** - Microsoft セキュア スコアを使用して、全体的なセキュリティ体制を改善します。 このページには、有効にしたさまざまなセキュリティ機能の概要と、改善するための推奨事項が記載されています。
+* **ハンティング** - マルウェア、不審なファイル、および Microsoft 365 組織内のアクティビティを積極的に検索します。
+* **分類** - ラベルを追加してドキュメント、メール メッセージ、ドキュメント、サイトなどを分類することにより、データ損失を防ぎます。 ラベルを適用すると (自動またはユーザーによって)、選択した設定に基づいてコンテンツまたはサイトが保護されます。 たとえば、ファイルを暗号化し、コンテンツ マーキングを追加し、特定のサイトへのユーザー アクセスを制御するラベルを作成できます。
+* **ポリシー** - デバイスを管理し、脅威から保護し、組織内のさまざまなアクティビティに関するアラートを受信するためのポリシーを設定します。
+* **アクセス許可** - 組織内の誰が Microsoft 365 セキュリティ センターにアクセスしてコンテンツを表示し、タスクを実行できるかを管理します。 Azure AD ポータルで Microsoft 365 のアクセス許可を割り当てることもできます。
 
 ## <a name="learn-more"></a>詳細情報
 

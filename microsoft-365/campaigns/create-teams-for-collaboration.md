@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams を使用してチームのコラボレーションスペースを作成します。
-ms.openlocfilehash: 18a28364b02b15af9d7d4c69c432ecd26d61b802
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 9b501daa61998b0b2daedd84c333552b42e5338f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772524"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031352"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Microsoft Teams での共同作業のためのチームの作成
 
@@ -46,9 +46,9 @@ Microsoft Teams は、任意のデバイスから、スタッフが開催し、�
 
 チームを作成する場合は、次のように作成します。
 
-- 新しい[Office 365 グループ](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-groups)
-- チームファイルを保存するための[SharePoint Online](https://docs.microsoft.com/en-us/MicrosoftTeams/sharepoint-onedrive-interact)サイトとドキュメントライブラリ
-- [Exchange Online](https://docs.microsoft.com/en-us/MicrosoftTeams/exchange-teams-interact)の共有メールボックスと予定表
+- 新しい[Office 365 グループ](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- チームファイルを保存するための[SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)サイトとドキュメントライブラリ
+- [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)の共有メールボックスと予定表
 - OneNote ノートブック
 - Planner や Power BI などの他の Office 365 アプリに結びつける
 
@@ -79,9 +79,9 @@ Microsoft Teams の内部では、次のことを確認できます。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Microsoft teams の[技術ドキュメント](https://docs.microsoft.com/en-us/microsoftteams/microsoft-teams)に関する microsoft teams の詳細情報
+Microsoft teams の[技術ドキュメント](https://docs.microsoft.com/microsoftteams/microsoft-teams)に関する microsoft teams の詳細情報
 
 ## <a name="admin-settings"></a>管理設定
 
-組織全体のチームを作成するには、管理者である必要があります。 詳細については、「 [Office 365 の管理者とは](https://support.office.com/en-us/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)」を参照してください。
+組織全体のチームを作成するには、管理者である必要があります。 詳細については、「 [Office 365 の管理者とは](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)」を参照してください。
   

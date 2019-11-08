@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 89b275c621ef0d4d7fe1f95625c34a51ee4c506f
-ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
+ms.openlocfilehash: 44a870263a832e2d130e0404c5e2ad0736a5fae5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37911398"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034379"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>CISO ワークショップモジュール 3: Id とゼロ信頼ユーザーアクセス
 
@@ -26,15 +26,15 @@ ms.locfileid: "37911398"
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>パート 1: Id とゼロの信頼の履歴 (9:33)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhs]
 
 ## <a name="part-2-zero-trust-definition-and-models-1537"></a>パート 2: 信頼定義およびモデルをゼロにする (15:37)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YaUL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YaUL]
 
 ## <a name="part-3-strategy-and-priorities-954"></a>パート 3: 戦略と優先度 (9:54)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YvHy]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YvHy]
 
 ## <a name="part-4-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a>パート 4: アカウントのセキュリティ: 攻撃のコストを測定する認証のコストを削減する (13:11)
 
@@ -42,7 +42,7 @@ ms.locfileid: "37911398"
 
 ##  <a name="part-5-zero-trust-user-access-reference-architecture-842"></a>パート 5: 信頼度の高いユーザーアクセスの参照アーキテクチャ (8:42)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhx]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhx]
 
 ##  <a name="part-6-build-an-identity-perimeter-1357"></a>パート 6: Id の境界を作成する (13:57)
 

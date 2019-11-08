@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 請求プロファイルが請求書をサポートする方法について説明します。
 keywords: 課金プロファイル、請求書、料金、管理された費用
-ms.openlocfilehash: bd963ff993a064615f0f7ad06c8f2cc5c3401ad2
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646443"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029051"
 ---
 # <a name="manage-billing-profiles"></a>課金プロファイルを管理する
 Microsoft の製品やサービスを購入している商用のお客様の場合、課金プロファイルを使用して、請求書に含めるアイテムをカスタマイズしたり、請求書に支払いを行ったりすることができます。
@@ -70,4 +70,4 @@ Microsoft の製品やサービスを購入している商用のお客様の場�
 
 ご質問がある場合や Azure の料金についてサポートが必要な場合は、 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">azure サポートを使用してサポート要求を作成して</a>ください。
 
-ご質問がある場合や、Microsoft 365 管理センターの課金プロファイルについてのヘルプが必要な場合は、[ビジネス製品のサポートにお問い合わせください](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products)。
+ご質問がある場合や、Microsoft 365 管理センターの課金プロファイルについてのヘルプが必要な場合は、[ビジネス製品のサポートにお問い合わせください](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。

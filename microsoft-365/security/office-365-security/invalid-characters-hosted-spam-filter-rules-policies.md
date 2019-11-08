@@ -1,5 +1,5 @@
 ---
-title: スパムフィルタールールおよびスパムフィルターポリシーに無効な文字を使用しない
+title: スパム フィルターのルールとスパム フィルター ポリシーで無効な文字の使用を避ける
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: スパム対策構成に無効な文字が含まれていて、セキュリティ&amp; /コンプライアンスセンターを使用しようとしたときに問題が発生する管理者向けのヘルプを提供します。
-ms.openlocfilehash: 286a96814e0be5857499d7c54839d20142d0dd60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085621"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039106"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>スパムフィルタールールおよびスパムフィルターポリシーに無効な文字を使用しない 
 
@@ -41,18 +41,18 @@ ms.locfileid: "37085621"
     
 2. スパムフィルターポリシーの名前を変更するには、次のように Set-hostedcontentfilterpolicy コマンドレットを実行します。
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
 3. スパムフィルタールールの名前を変更するには、次のように Disable-hostedcontentfilterrule コマンドレットを実行します。
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 
   
- ## <a name="for-more-information"></a>関連情報
+ ## <a name="for-more-information"></a>詳細情報
 
 [セキュリティ&amp; /コンプライアンスセンターでの脅威管理](protect-against-threats.md)
   

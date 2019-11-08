@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: '[スパム対策設定] ページ&amp;のセキュリティコンプライアンスセンターのスプーフィングインテリジェンスを使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。 スプーフィングインテリジェンスは、Office 365 Enterprise E5 の一部として、または Advanced Threat Protection と Exchange Online Protection の一部として別途利用できます。'
-ms.openlocfilehash: 3e3e858c8ecd363d62adc33473af2eea239fbaef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2b426679818832d95b93d7795aaed7b5316ea5fc
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085606"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032332"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスをもっとよく知る
 
@@ -63,7 +63,7 @@ ms.locfileid: "37085606"
 |偽装ユーザー  <br/> |送信者によってスプーフィングされているユーザーアカウント。  <br/> [**内部**] タブのみ このフィールドには1つの電子メールアドレスが含まれているか、または送信者が複数のユーザーアカウントを偽装している場合は、複数のユーザーアカウントが含まれて**います。**  <br/> **外部**タブのみ 外部ドメインには、送信ドメインのみが含まれ、完全な電子メールアドレスは含まれません。  <br/> **部!上級管理者向け。** スプーフィングされたユーザーは、メールクライアントによって From アドレスとして表示されるアドレスでもある、From (5322.from) アドレスです。 これは、ヘッダーアドレスと呼ばれることがあります。 このアドレスの有効性は、SPF によってチェックされません。           |
 |メッセージ数  <br/> |過去30日間の特定のスプーフィングされた送信者または送信者に代わって組織に送信者が送信したメールメッセージの数。  <br/> |
 |ユーザーの苦情の数  <br/> |過去30日間のユーザーによってこの送信者に対してユーザーが苦情を提出します。 通常、苦情は Microsoft への迷惑メール送信の形式です。  <br/> |
-|認証の結果  <br/> |この値は、送信者が Exchange Online Protection (EOP) sender 認証チェック (SPF、DKIM など) を通過した場合、送信者が EOP sender 認証チェックの失敗時に**失敗**した場合、またはこれらのチェックの結果が**不明**な場合に**渡さ**れます。一般的.  <br/> |
+|認証の結果  <br/> |この値は、送信者が Exchange Online Protection (EOP) の送信者認証チェック (SPF、DKIM など) を通過した場合に、送信者が EOP sender 認証チェックに失敗した場合に**失敗した**場合、またはこれらのチェックの結果が**不明な**場合に**渡さ**れます。  <br/> |
 |判断セットの条件  <br/> |Office 365 管理者またはスプーフィングインテリジェンスポリシーが、送信者がユーザーになりすますことが許可されているかどうかを判断したかどうかを示します。  <br/> |
 |最終表示日時  <br/> |このスプーフィングされたユーザーに代わって、この送信者がメッセージを受信した最後の日付。  <br/> |
 |スプーフィングが許可されますか?  <br/> | この送信者が、偽装されたユーザーの代わりに電子メールを送信することを許可されているかどうかを表示します。 次の値を指定できます。  <br/> **はい**このスプーフィング送信者からのすべてのスプーフィングされたアドレスは、組織になりすますことが許可されます。  <br/> **いいえ**このスプーフィング送信者からのスプーフィングされたアドレスは、組織になりすますことは許可されません。 代わりに、この送信者からのメッセージは、Office 365 によってスパムとしてマークされます。  <br/> **一部のユーザー**送信者が複数のユーザーをスプーフィングしている場合、この送信者からのスプーフィングされたアドレスの一部は、組織になりすますことが許可され、残りはスパムとしてマークされます。 特定のアドレスを表示するには、[**詳細**] タブを使用します。  <br/> |
@@ -99,7 +99,7 @@ ms.locfileid: "37085606"
   
 6. [**保存**] を選択して変更を保存します。 
 
-Office 365 Enterprise E5 サブスクリプションを使用している場合、または Advanced Threat Protection をアドオンとして別途購入している場合は、[スプーフィングインテリジェンスの洞察](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)を通じてドメインをスプーフィングしている送信者を管理することもできます。
+Office 365 Enterprise E5 サブスクリプションを使用している場合、または Advanced Threat Protection をアドオンとして別途購入している場合は、[スプーフィングインテリジェンスの洞察](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight)を通じてドメインをスプーフィングしている送信者を管理することもできます。
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>スプーフィング対策ポリシーの構成
 <a name="Managespooflist"> </a>
@@ -110,7 +110,7 @@ Office 365 組織の外部にあるドメインからの送信者からの電子
   
 Office 365 には、常に実行している既定のスプーフィング防止保護が含まれています。 この既定の保護は、セキュリティ&amp;コンプライアンスセンターでは表示されません。また、Windows PowerShell コマンドレットから取得することもできません。 既定のスプーフィング防止保護を変更することはできません。 その代わりに、Office 365 で、作成した各フィッシング対策ポリシーのスプーフィング対策保護を強制的に適用する方法を構成できます。 
   
-セキュリティ&amp; /コンプライアンスセンターのフィッシング対策ポリシーの下には、スプーフィング対策ポリシーが表示されていても、スパム対策構成の下にある既存のフィッシング設定から既定の動作を継承しません。 スプーフィング対策のためにレプリケートする**スパム** \>対策**フィッシング**の下に設定がある場合は、フィッシング対策ポリシーを作成してから、スプーフィングの設定を反映するようにフィッシング対策ポリシーのスプーフィング部分を編集する必要があります。次のセクションでは、バックグラウンドで実行される既定の設定を受け入れずに説明します。 
+セキュリティ&amp; /コンプライアンスセンターのフィッシング対策ポリシーの下には、スプーフィング対策ポリシーが表示されていても、スパム対策構成の下にある既存のフィッシング設定から既定の動作を継承しません。 スプーフィング対策のためにレプリケートする**スパム** \>対策**フィッシング**の下に設定がある場合、フィッシング対策ポリシーを作成してから、次のセクションで説明するようにスプーフィングの設定を反映するように、フィッシング対策ポリシーのスプーフィング部分を編集する必要があります。これは、バックグラウンドで実行される既定の設定をそのまま使用します。 
   
  **セキュリティ&amp; /コンプライアンスセンターを使用してフィッシング対策ポリシー内のスプーフィング対策保護を構成するには**
   
@@ -140,12 +140,12 @@ Office 365 には、常に実行している既定のスプーフィング防止
 より高度な Office 365 管理者の場合は、次のチェックを実行することもできます。
     
     
-- Sender Policy Framework (SPF) 構成を確認します。 SPF の概要と簡単な構成方法を確認するには、「[Set up SPF in Office 365 to help prevent spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)」をご確認ください。
+- Sender Policy Framework (SPF) 構成を確認します。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Office 365 で SPF を設定する](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)」をご確認ください。
     
 - DomainKeys が識別されたメール (DKIM) 構成を確認します。 ドメインから送信されたように見えるメッセージをなりすまし者が送信できないようにするためには、SPF と DMARC に加え、DKIM を使用する必要があります。 DKIM では、電子メール メッセージのメッセージ ヘッダー内にデジタル署名を追加することができます。 詳細については、「 [DKIM を使用して、Office 365 のドメインから送信される送信電子メールを検証する](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)」を参照してください。
     
 - ドメインベースのメッセージ認証、レポート、および準拠 (DMARC) 構成を確認します。 SPF および DKIM と共に DMARC を実装すると、メールのスプーフィングやフィッシングに対抗する追加の保護が得られます。 DMARC は、電子メールを受信するシステムが、ドメインから送信された SPF チェックまたは DKIM チェックに失敗したメッセージに対して、どのように対応するかを判断する際に役に立ちます。 詳細については、「 [USE DMARC to validate email In Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)」を参照してください。
     
-- [Get-phishfilterpolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell コマンドレットを使用して、スプーフィングされた送信者の詳細データを収集し、許可リストとブロックリストを生成します。さらに、より包括的な SPF、dkim、および DMARC DNS レコードを作成する方法を決定するのに役立ちます。正当な電子メールは、外部スパムフィルターでキャッチされます。 詳細については、「 [Office 365 でのスプーフィング対策保護のしくみ](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/)」を参照してください。
+- [Get-phishfilterpolicy](https://technet.microsoft.com/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell コマンドレットを使用して、スプーフィングされた送信者の詳細データを収集し、許可リストとブロックリストを生成します。また、正当な電子メールを外部スパムフィルターでキャッチせずに、より包括的な SPF、dkim、および DMARC DNS レコードを生成する方法を決定するのに役立ちます。 詳細については、「 [Office 365 でのスプーフィング対策保護のしくみ](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/)」を参照してください。
     
 

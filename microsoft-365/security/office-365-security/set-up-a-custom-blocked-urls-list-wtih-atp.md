@@ -15,17 +15,17 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection を使用して、組織のブロック URL リストを設定する方法について説明します。ブロックされた URL は、ATP の安全なリンクに関するポリシーに従って、メール メッセージと Office ドキュメントに適用されます。
-ms.openlocfilehash: 738509978bfafb44cd289113ef77c3d12fb79a78
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ab79f86646ffd195b31d46980c3bd3bd3bb8f444
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086333"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032062"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 ATP の安全なリンク機能を使用して、ユーザー設定のブロック URL リストを設定する
 
 > [!IMPORTANT]
-> この記事は、 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用しているビジネスのお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用すると、組織はブロックされている Web サイト アドレスのユーザー設定リストを所有することができます。URL がブロックされると、ブロックされた URL へのリンクをクリックしたユーザーは次の画像のような[警告ページ](atp-safe-links-warning-pages.md)に移動します。 
   
@@ -66,7 +66,7 @@ ATP ポリシーを編集 (または定義) するには、次の表に示す役
 
 URL をリストに追加するときは、次の点に注意してください。 
 
-- URL の最後にスラッシュ (**/**) を含めないでください。たとえば、「`http://www.contoso.com/`」と入力する代わりに、「`http://www.contoso.com`」と入力します。
+- URL の最後にスラッシュ (**/**) を含めないでください。たとえば、「`https://www.contoso.com/`」と入力する代わりに、「`https://www.contoso.com`」と入力します。
     
 - ドメイン専用の URL (`contoso.com` または `tailspintoys.com` など) を指定することができます。これにより、ドメインを含む URL のクリックがブロックされます。
 
@@ -76,10 +76,10 @@ URL をリストに追加するときは、次の点に注意してください�
     
 |**エントリの例**|**機能**|
 |:-----|:-----|
-|`contoso.com` または `*contoso.com*`  <br/> |ドメイン、サブドメイン、パス (`https://www.contoso.com`、`http://sub.contoso.com`、`http://contoso.com/abc` など) をブロックします  <br/> |
-|`http://contoso.com/a`  <br/> |サイト `http://contoso.com/a` をブロックしますが、`http://contoso.com/a/b` のような追加のサブパスはブロックしません  <br/> |
-|`http://contoso.com/a*`  <br/> |サイト `http://contoso.com/a`、`http://contoso.com/a/b` のような追加のサブパスをブロックします  <br/> |
-|`http://toys.contoso.com*`  <br/> |サブドメイン (この場合は「toys」) をブロックしますが、他のドメイン URL (`http://contoso.com` や `http://home.contoso.com` など) のクリックを許可します。  <br/> |
+|`contoso.com` または `*contoso.com*`  <br/> |ドメイン、サブドメイン、パス (`https://www.contoso.com`、`https://sub.contoso.com`、`https://contoso.com/abc` など) をブロックします  <br/> |
+|`https://contoso.com/a`  <br/> |サイト `https://contoso.com/a` をブロックしますが、`https://contoso.com/a/b` のような追加のサブパスはブロックしません  <br/> |
+|`https://contoso.com/a*`  <br/> |サイト `https://contoso.com/a`、`https://contoso.com/a/b` のような追加のサブパスをブロックします  <br/> |
+|`https://toys.contoso.com*`  <br/> |サブドメイン (この場合は「toys」) をブロックしますが、他のドメイン URL (`https://contoso.com` や `https://home.contoso.com` など) のクリックを許可します。  <br/> |
    
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>組織の特定のユーザーに対して例外を定義する方法

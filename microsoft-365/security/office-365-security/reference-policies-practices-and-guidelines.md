@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft は、さまざまなポリシー、手順を開発し、業界のベストプラクティスをいくつか採用して、ユーザーを不適切な迷惑メールや悪意のあるメールから保護しています。
-ms.openlocfilehash: e897b5ecf7fb31581c22e2a6e3cc80f927f43454
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 0957e34008f4e05693218970c458656d73d9c0fe
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441424"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031812"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 
@@ -83,7 +83,7 @@ Microsoft は、インターネットと電子メールのエコシステムを�
 
 - [オンラインの信頼アライアンス](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
+- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>迷惑行為とスパムの報告
 

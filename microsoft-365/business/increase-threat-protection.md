@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、機密データを保護します。
-ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 1827b70f1e4d78a072753390c1a99d7cb4bd5cfd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636754"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030766"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -31,7 +31,7 @@ ms.locfileid: "37636754"
 
 開始する前に、Office 365 のセキュリティスコアを確認してください。 Office 365 のセキュリティで保護されたスコアは、通常のアクティビティとセキュリティ設定に基づいて Office 365 組織のセキュリティを分析し、スコアを割り当てます。 最初に、現在のスコアをメモしておきます。 この記事で推奨されている操作を行うと、スコアが向上します。 目標は最大スコアを達成することではなく、ユーザーの生産性に悪影響を及ぼすことがない環境を保護する機会に注意してください。 
 
-詳細については、「 [Microsoft Secure Score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score)」を参照してください。
+詳細については、「 [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)」を参照してください。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>メールのマルウェアに対する保護レベルを上げる
 
@@ -56,7 +56,7 @@ Office 365 または Microsoft 365 環境にはマルウェアからの保護が
 
 ランサムウェアは、ファイルの暗号化またはコンピューター画面のロックによってデータへのアクセスを制限します。 その後、データにアクセスするために exchange では、通常、ビットコインのような cryptocurrencies のような形式で "ransom" を要求することによって、被害からのデータを組み込みます。 
   
-ランサムウェアから保護するには、1つまたは複数のメールフロールールを作成して、ランサムウェアに対してよく使用されるファイル拡張子をブロックするか (「[メールでマルウェアに対する保護レベルを高める](#raise-the-level-of-protection-against-malware-in-mail)」で追加されたもの)、またはこれらを受信するユーザーに警告を出すことができます。電子メールの添付ファイル。
+ランサムウェアから保護するには、1つまたは複数のメールフロールールを作成して、ランサムウェアに対してよく使用されるファイル拡張子をブロックするか (「[メールでマルウェアに対する保護レベルを高める](#raise-the-level-of-protection-against-malware-in-mail)」を参照)、または電子メールでこれらの添付ファイルを受信するユーザーに警告します。
 
 前の手順でブロックしたファイルに加えて、マクロを含む Office ファイル添付ファイルを開く前に、ユーザーに警告するルールを作成することをお勧めします。 ランサムウェアは、マクロ内で非表示にすることができます。そうしないと、ユーザーが知らないユーザーからこれらのファイルを開かないように警告されます。
 

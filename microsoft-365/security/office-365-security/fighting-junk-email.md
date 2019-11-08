@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Microsoft のメールの安全性ロードマップには、他に例を見ない製品間のアプローチが含まれます。Exchange Online Protection (EOP) のスパム対策とフィッシング対策のフィルタリング テクノロジは、Microsoft のメール プラットフォーム全体に適用され、最新のスパム対策とフィッシング策のツール、およびネットワーク全体にわたる技術革新をユーザーに提供しています。 EOP の目標は、包括的で使用可能なメール サービスを提供し、迷惑メール、詐欺目的のメールの脅威 (フィッシング)、マルウェアを検出し、それらからユーザーを保護することです。
-ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085690"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032372"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Office 365 に送信される迷惑メールへの対処
 
@@ -66,9 +66,9 @@ Microsoft では、フィッシング対策テクノロジについて次の 2 �
   
 EOP では、Sender Protection Framework (SPF)、DomainKeys Identified Mail (DKIM)、Domain-based Message Authentication, Reporting, and Conformance (DMARC)、その他の暗黙的な認証を使って、送信元であると主張するドメインからメッセージが送信されたことを確認します。迷惑メールやフィッシング詐欺から受信者を保護するため、すべての送信者が SPF と DKIM を使うことをお勧めします。送信者には、承認されていない送信者から送信されたメールを拒否するか検疫するために DMARC の発行を検討することをお勧めします。
   
-- SPF について詳しくは、「[RFC 7208](https://tools.ietf.org/html/rfc7208)」と「[Sender Policy Framework](http://www.openspf.org/)」をご覧ください。
+- SPF について詳しくは、「[RFC 7208](https://tools.ietf.org/html/rfc7208)」と「[Sender Policy Framework](https://www.openspf.org/)」をご覧ください。
     
-- DKIM について詳しくは、「[RFC 6376](https://tools.ietf.org/html/rfc6376)」と「[DKIM.org](http://dkim.org/)」をご覧ください。
+- DKIM について詳しくは、「[RFC 6376](https://tools.ietf.org/html/rfc6376)」と「[DKIM.org](https://dkim.org/)」をご覧ください。
     
 - DMARC について詳しくは、「[DMARC.org](https://dmarc.org/)」をご覧ください。
     

@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'フィッシングを防止するために、Office 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
-ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
-ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.openlocfilehash: ca3ec0ca6e9a2267c84549f26498b46479f74401
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749159"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032352"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 
@@ -121,7 +121,7 @@ From: "Office 365" <sender@contoso.com> (Sent by a process)
 
 From: 表示名の値を含むアドレスでは、次のルールが適用されます。
   
-- 送信者のアドレスに表示名が含まれており、表示名にコンマが含まれている場合は、表示名を引用符で囲む必要があります。 次に例を示します。
+- 送信者のアドレスに表示名が含まれており、表示名にコンマが含まれている場合は、表示名を引用符で囲む必要があります。 例:
     
     次の例は有効です。
     
@@ -227,6 +227,6 @@ Office 365 で送信する送信メールに対してこのポリシーを上書
   
 ## <a name="related-topics"></a>関連項目
 
-[バックスキャター メッセージと EOP](https://technet.microsoft.com/en-us/library/dn499795%28v=exchg.150%29.aspx)
+[バックスキャター メッセージと EOP](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
   
 

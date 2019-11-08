@@ -11,12 +11,12 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: 72ef33199f3cde42ec86b4d64d13828116510d8f
-ms.sourcegitcommit: a263fc5a598363ca809a3cb990d41393bf38d3b7
+ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34592348"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029031"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサードパーティ製アプリのサブスクリプションを管理する
 
@@ -24,7 +24,7 @@ Microsoft 365 管理センターでサードパーティ製アプリのライセ
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>サービスとしてのソフトウェアアプリを入手する方法
 サードパーティ製アプリを購入するには、いくつかの方法があります。
-- **直接購入**–お客様は、 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)または[appsource](http://www.appsource.com/)からサブスクリプションを直接購入できます。 
+- **直接購入**–お客様は、 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)または[appsource](https://www.appsource.com/)からサブスクリプションを直接購入できます。 
 - **パートナー購入**–パートナーと協力してサブスクリプションを購入します。 
 - **Microsoft 提案**: サードパーティ製アプリを含む microsoft Sales からの提案に対応します。 
 
@@ -54,8 +54,8 @@ Microsoft 365 管理センターでサードパーティ製アプリのライセ
 
 **サードパーティ製アプリをアクティブ化するには**
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
-2. [ **Billing** > **Products & services** > **アプリ**] を選択します。
-3. 管理するアプリを見つけて選択します。 
+2. [ **Billing** > **Products & services** > **Apps**] を選択します。
+3. 管理するアプリを検索して選択します。 
 4. [**設定 & アクション**] で、[**パブリッシャーのポータルで管理**] を選択します。 
 
 アプリをアクティブ化できるアプリの発行元のサイトが表示されます。 
@@ -76,8 +76,8 @@ Microsoft 365 管理センターでサードパーティ製アプリのライセ
 **サードパーティ製アプリを割り当てるには**
 
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
-2. [ **Billing** > **Products & services** > **アプリ**] を選択します。
-3. 管理するアプリを見つけて選択します。 
+2. [ **Billing** > **Products & services** > **Apps**] を選択します。
+3. 管理するアプリを検索して選択します。 
 4. [**設定 & アクション**] の下で、 **publisher のポータルで管理**するリンクを選択します。 
  
 ## <a name="change-license-quantity"></a>ライセンス数を変更する
@@ -86,8 +86,8 @@ Microsoft 365 管理センターでサードパーティ製アプリのライセ
 **ライセンスの数量を変更するには**
 
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
-2. [ **Billing** > **Products & services** > **アプリ**] を選択します。
-3. 管理するアプリを見つけて選択します。 
+2. [ **Billing** > **Products & services** > **Apps**] を選択します。
+3. 管理するアプリを検索して選択します。 
 4. [**ライセンス数量の変更**] を選択します。 
 
 ## <a name="manage-payment-methods"></a>支払い方法を管理する
@@ -102,8 +102,8 @@ Microsoft 365 管理センターでサードパーティ製アプリのライセ
 **サービスとしてのソフトウェアのアプリサブスクリプションの課金プロファイルを変更するには**
 
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
-2. [ **Billing** > **Products & services** > **アプリ**] を選択します。
-3. 管理するアプリを見つけて選択します。 
+2. [ **Billing** > **Products & services** > **Apps**] を選択します。
+3. 管理するアプリを検索して選択します。 
 4. [**課金プロファイル**] の横にある [**編集**] を選択します。
 
 請求書の詳細については、「 [Microsoft カスタマーアグリーメントの請求書](https://docs.microsoft.com/microsoft-store/billing-understand-your-invoice-msfb)について」を参照してください。
@@ -114,6 +114,6 @@ Microsoft 365 管理センターでサードパーティ製アプリのライセ
 **サービスとしてのソフトウェアアプリのサブスクリプションを取り消すには**
 
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
-2. [ **Billing** > **Products & services** > **アプリ**] を選択します。
-3. 管理するアプリを見つけて選択します。 
+2. [ **Billing** > **Products & services** > **Apps**] を選択します。
+3. 管理するアプリを検索して選択します。 
 4. [**設定 & アクション**] で、[**サブスクリプションのキャンセル**] を選択します。

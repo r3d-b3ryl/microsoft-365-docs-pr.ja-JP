@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: 0c717271da17ff4bf28d8d3546df3a9da427dba5
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697767"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038951"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 
 ## <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは
 
-Microsoft 365 Business は、ビジネス生産性と共同作業ツールの包括的なセットです。これには、常に最新の状態に保たれた Outlook、Word、Excel、およびその他の Office 製品が含まれます。iOS、Android、Windows 10 のすべてのデバイス上の作業ファイルを、管理が容易なエンタープライズ レベルのセキュリティで保護することができます。
+Microsoft 365 Business は、Office 365 の生産性向上ツールに加えて、ビジネスを脅威から保護し、データを保護し、デバイスを管理するための高度な機能を備えたサブスクリプションサービスです。
   
 Microsoft 365 Business は最大300ライセンスを想定しており、さらにライセンスが必要な場合は、「 [microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。
 
@@ -98,4 +98,4 @@ Microsoft 365 Business は、次のような**脅威からの保護**に貢献�
 
 - パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)して、[サインアップ](sign-up.md)の手順に従うことができます。
 
-- Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)にアクセスすることもできます。
+- Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS)にアクセスすることもできます。

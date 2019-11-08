@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 2067badcb78b48bac59770993de25c0ebbeaa829
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646387"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031367"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 Business に関するよく寄せられる質問
 
@@ -92,7 +92,7 @@ Windows 7、8、8.1 Professional のライセンスがあるデバイスを使�
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>Microsoft 365 Business は会社の Bring Your Own Device (BYOD) ポリシーのサポートをどのように役立つのですか。 
 多くの従業員は、各自の携帯電話やタブレットを使用して個人用の情報と仕事用の情報にアクセスしており、それぞれの目的のために複数のデバイスを使い分けることはしていません。 個人のデバイスを業務に使用することは一般的ですが、ビジネス情報が悪意を持つ者の手に渡るリスクが高まります。 競合他社の多くのモバイル データ保護ソリューションでは、ユーザーのデバイスで特定のモードに切り替えたり、他の複雑なメカニズムを使用したりする必要があり、ユーザーはそれを煩わしいと感じて、使用しなくなる可能性があります。 
  
-Microsoft 365 Business は、お客様に対して、従業員が個人のデバイスを作業に使用できるようにするとともに、ビジネス情報へのアクセス、保存、または共有を行うことができないようにする機能を備えた、お客様にとってはシンプルですが、強力な手段を提供します。. 具体的な機能は次のとおりです。 
+Microsoft 365 Business は、お客様がビジネス情報にアクセスしたり、保持したり、共有したりすることを防ぐことができるようにする一方で、従業員が自分の個人用デバイスを使用できるようにすることができます。 具体的な機能は次のとおりです。 
 * **Office モバイル用のアプリ保護**により、アプリで iOS および Android モバイル デバイス上の Office データ (メール、カレンダー、連絡先、ドキュメントなど) を保護できます。そのために、一定期間サービスに接続しなかった場合のビジネス データの自動削除、OneDrive for Business のみへの情報の保存の要求、Office アプリへのアクセス時の暗証番号 (PIN)/指紋検証の要求、Office アプリから個人アプリへの会社のデータのコピーの防止などのポリシーを適用します。 Intune を介した他のモバイルアプリのモバイルアプリケーション管理も、Microsoft 365 Business サブスクライバーで利用できます。 
   
 * **Windows 10 PC 向けのデバイス管理**により、企業は、Windows Defender によるマルウェア対策、自動更新、一定時間後の画面のオフなどの機能を設定して適用できます。 さらに、Windows 10 デバイスを紛失したり盗まれたりした場合は、管理センターを使用して業務アプリケーションとデータの完全にワイプすることができます。 
@@ -161,7 +161,7 @@ Office 365 Business Premium に追加できるすべてのアドオンは、Micr
 Microsoft パートナーではない IT サービス プロバイダーの詳細については、Microsoft クラウド ソリューション プロバイダー プログラム ([https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business)) で詳細を参照できます。
 
 ### <a name="where-can-i-learn-how-to-sell-microsoft-365-business"></a>Microsoft 365 Business を販売する方法はどこで学習できますか。 
-現在 Office 365 を販売しているパートナーは、同様のコンサルティング形式の販売方法で Microsoft 365 Business を販売できます。 さらに、営業チームが、顧客の既存のデスクトップ環境、Active Directory の依存、モビリティとセキュリティのニーズを理解して、Microsoft 365 Business のすべての価値を、顧客に関連性の高い方法で、効果的に伝えることができるようにするためのリソースとトレーニングを導入しています。 これらのリソースについては、Office パートナー ポータル ([http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business)) を参照してください。 
+現在 Office 365 を販売しているパートナーは、同様のコンサルティング形式の販売方法で Microsoft 365 Business を販売できます。 さらに、営業チームが、顧客の既存のデスクトップ環境、Active Directory の依存、モビリティとセキュリティのニーズを理解して、Microsoft 365 Business のすべての価値を、顧客に関連性の高い方法で、効果的に伝えることができるようにするためのリソースとトレーニングを導入しています。 これらのリソースについては、Office パートナー ポータル ([https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business)) を参照してください。 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Microsoft 365 Business はパートナーの収益性の向上にどのように役立ちますか。 
 Microsoft 365 Business によって、パートナーは運用効率の向上によりコストを削減し、追加のサービスの販売により収益を増加させることができます。 Forrester Research による、2017 年 6 月の Microsoft 365 Business に関する Total Economic Impact (TEI) 調査 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI) では、Microsoft 365 Business がパートナーの収益性に良い影響を与えることが示されています。 

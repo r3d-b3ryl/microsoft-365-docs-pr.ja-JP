@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: ここでは、Microsoft Exchange Online Protection (EOP) のクラウド ホスト型電子メール フィルター サービスについてよく寄せられる質問を紹介します。その他のよく寄せられる質問 (FAQ) については、以下のリンクを参照してください。
-ms.openlocfilehash: b49bb92cea781dc2c2120f1c0512a9de5182f16a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 838e69ad52dbb7f2012c5d8605e41c91ba4c6b7e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441504"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033868"
 ---
 # <a name="eop-general-faq"></a>EOP の一般的な FAQ
 
@@ -33,7 +33,7 @@ ms.locfileid: "37441504"
 
 - [マルウェア対策保護のよく寄せられる質問](anti-malware-protection-faq-eop.md)
 
-- [メッセージ追跡の FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
+- [メッセージ追跡の FAQ](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
 
 **Q. EOP とは何ですか?**
   
@@ -63,7 +63,7 @@ A. Office 365 というのは、Office 365 テナントを通じてアクセス�
   
 A. Microsoft 365 管理センターには、この情報がいくつか含まれています。 サービスレベルイベントの影響を受けている場合は、Microsoft 365 管理センターにサインインした後に、通信警告 (通常はベルアイコンが付属) が表示されます。 その項目を参照して、適切に対応することをお勧めします。
   
-EOP の新機能については、「[ビジネス向けの Office 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)」を参照してください。 また、 [Microsoft 365 ブログ](https://www.microsoft.com/en-us/microsoft-365/blog/)web サイトに新機能に関するブログ記事を投稿します。
+EOP の新機能については、「[ビジネス向けの Office 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)」を参照してください。 また、 [Microsoft 365 ブログ](https://www.microsoft.com/microsoft-365/blog/)web サイトに新機能に関するブログ記事を投稿します。
   
 **Q. このサービスは Exchange の旧バージョン (Exchange Server 2010 など) や Exchange 以外の環境で使用できますか?**
   

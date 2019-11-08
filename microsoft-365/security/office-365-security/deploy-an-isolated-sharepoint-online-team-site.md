@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: '概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。'
-ms.openlocfilehash: bd5915f43c6ff70477077f0047e0f2dfc97a874b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 67c6a5304e067ac847c9f8158d48a588ca118220
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086737"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039116"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -70,7 +70,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
 4. [**新しいグループ]** ブレードで、次のようにします。
     
-  - [グループの**種類**] で [**セキュリティ**] を選択します。
+  - **[グループの種類]** で **[セキュリティ]** を選択します。
     
   - **[名前]** にグループ名を入力します。
     
@@ -109,7 +109,7 @@ PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph �
   
 次に、以下のコマンド ブロックを使用して、個々のユーザー アカウントをアクセス グループに追加します。
   
-```
+```powershell
 $userUPN="<UPN of the user account>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -120,7 +120,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
   
 いずれかのアクセス グループのユーザー アカウントの UPN をテキスト ファイルに格納した場合は、次の PowerShell コマンド ブロックを使用して、それらすべてのユーザー アカウントを一度に追加します。
   
-```
+```powershell
 $grpName="<display name of the access group>"
 $fileName="<path and name of the file containing the list of account UPNs>"
 $grpID=(Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -129,7 +129,7 @@ Get-Content $fileName | ForEach { $userUPN=$_; Add-AzureADGroupMember -RefObject
 
 PowerShell の場合、次のコマンド ブロックを使用して、個々のグループをアクセス グループに追加します。
   
-```
+```powershell
 $nestedGrpName="<display name of the group to add to the access group>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $nestedGrpName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -146,7 +146,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
     
 Microsoft 365 管理センターまたは次の PowerShell コマンドブロックを使用して、各アクセスグループのグループメンバーの一覧を検証します。
   
-```
+```powershell
 $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
@@ -173,9 +173,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 6. **[チーム サイトの説明]** に、サイトの目的の説明 (オプション) を入力します。
     
-7. **[プライバシー設定]** で、**[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。
+7. **[プライバシー設定]** で、 **[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。
     
-8. **[誰を追加しますか]** ウィンドウで、**[完了]** をクリックします。
+8. **[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。
     
 次に、新しい SharePoint Online チーム サイトから、アクセス許可を構成します。
   
@@ -183,7 +183,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 2. **[サイトの権限]** ウィンドウで、 **[高度な権限の設定]** をクリックします。
     
-3. ブラウザーの新しい **[権限]** タブで、**[アクセス要求の設定]** をクリックします。
+3. ブラウザーの新しい **[権限]** タブで、 **[アクセス要求の設定]** をクリックします。
     
 4. **[アクセス要求の設定]** ダイアログ ボックスの **[サイトと個別のファイルおよびフォルダーの共有をメンバーに許可します]** と **[アクセス要求の許可]** をクリアし (これによって、3 つのチェック ボックスがすべてクリアされる)、 **[OK]** をクリックします。
     

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: Microsoft business 製品の請求書を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: e0af9ec0808de97e55ef550c6feb51a146dbb5f6
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 79d652f56617837019322b7329d918488283659a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646444"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029041"
 ---
 # <a name="understand-your-invoice"></a>請求書を把握する
 
 請求書には、お客様の請求書の概要と支払い方法が記載されています。 [オンライン請求書](#view-your-online-invoice)は、Microsoft 365 管理センターで確認できます。 また、電子メールで送信するために、ポータブルドキュメント形式 (.pdf) でダウンロードすることもできます。
 
-Office 365 サブスクリプションのみを使用している場合は、「 [View your invoice For office 365 for business](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice)」を参照してください。
+Office 365 サブスクリプションのみを使用している場合は、「 [View your invoice For office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice)」を参照してください。
 
 ## <a name="understand-the-invoice-header"></a>請求書ヘッダーについて
 
@@ -50,13 +50,13 @@ Office 365 サブスクリプションのみを使用している場合は、「
 | --- | --- |
 | 料金|この請求期間に購入された製品の合計数と、それに関連する料金および税。 購入を集計して、請求書の簡潔なビューを提供します。 |
 | 開発者情報 |返品から受け取ったクレジット |
-| 適用された Azure クレジット |Azure に自動的に適用される Azure クレジットは、各請求期間に請求されます。 Azure クレジットがない場合、このフィールドは表示されません。 Azure クレジットの詳細については、「 [Microsoft カスタマーアグリーメントの azure クレジットバランスを追跡](https://docs.microsoft.com/en-us/azure/billing/billing-mca-check-azure-credits-balance)する」を参照してください。 |
+| 適用された Azure クレジット |Azure に自動的に適用される Azure クレジットは、各請求期間に請求されます。 Azure クレジットがない場合、このフィールドは表示されません。 Azure クレジットの詳細については、「 [Microsoft カスタマーアグリーメントの azure クレジットバランスを追跡](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)する」を参照してください。 |
 | Subtotal |課税前金額 |
 | 税 |請求プロファイルの国に応じて、支払う税額の種類と金額。 税金を支払う必要がない場合は、請求書に税金は表示されません。 |
 
 ### <a name="understand-your-charges"></a>課金内容を理解する
 
-雑費ページには、製品別に細分化されたコストが表示されます。 Azure のお客様の場合は、請求書のセクションごとに料金が発生する場合があります。 Azure 製品での請求書セクションの使用方法の詳細については、「 [Microsoft カスタマーアグリーメントの課金アカウントで作業を開始](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview)する」の「[請求書」セクション](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview#invoice-sections)を参照してください。 各製品オーダー内では、コストはサービスファミリごとに分類されています。
+雑費ページには、製品別に細分化されたコストが表示されます。 Azure のお客様の場合は、請求書のセクションごとに料金が発生する場合があります。 Azure 製品での請求書セクションの使用方法の詳細については、「 [Microsoft カスタマーアグリーメントの課金アカウントで作業を開始](https://docs.microsoft.com/azure/billing/billing-mca-overview)する」の「[請求書」セクション](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)を参照してください。 各製品オーダー内では、コストはサービスファミリごとに分類されています。
 
 | 用語 |説明 |
 | --- | --- |
@@ -76,7 +76,7 @@ Office 365 サブスクリプションのみを使用している場合は、「
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-請求書に詳細情報を必要とする Azure の請求書がある場合は、「 [Microsoft カスタマーアグリーメント請求書の料金を理解](https://docs.microsoft.com/en-us/azure/billing/billing-mca-understand-your-bill)する」を参照してください。
+請求書に詳細情報を必要とする Azure の請求書がある場合は、「 [Microsoft カスタマーアグリーメント請求書の料金を理解](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill)する」を参照してください。
 
 ## <a name="understand-the-last-invoice-page"></a>[最終請求書] ページについて
 
@@ -110,4 +110,4 @@ Office 365 サブスクリプションのみを使用している場合は、「
 
 ご質問がある場合や Azure クレジットについてサポートが必要な場合は、 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">azure サポートを使用してサポートリクエストを作成</a>してください。
 
-Microsoft 365 管理センターで、請求書に関する質問がある場合や、サポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products)。
+Microsoft 365 管理センターで、請求書に関する質問がある場合や、サポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
