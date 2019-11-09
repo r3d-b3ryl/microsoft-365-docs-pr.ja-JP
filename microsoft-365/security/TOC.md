@@ -3,6 +3,7 @@
 ## はじめに
 ### [BDM のための Microsoft 365 セキュリティ](Microsoft-365-security-for-bdm.md)
 ### [セキュリティ スコア](./mtp/microsoft-secure-score.md)
+### [セキュア スコア (プレビュー)](./mtp/microsoft-secure-score-preview.md)
 ### [最高情報セキュリティ責任者 (CISO) のワークショップ トレーニング](./office-365-security/ciso-workshop.md)
 #### [モジュール 1: Microsoft のサイバー セキュリティ ブリーフィング](./office-365-security/ciso-workshop-module-1.md)
 #### [モジュール 2: セキュリティ管理](./office-365-security/ciso-workshop-module-2.md)
