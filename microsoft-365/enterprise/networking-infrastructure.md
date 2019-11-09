@@ -3,7 +3,7 @@ title: 'フェーズ 1: Microsoft 365 Enterprise のネットワーク インフ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: " Microsoft 365 Enterprise のネットワーク インフラストラクチャを展開する手順。"
-ms.openlocfilehash: 35c65515854bb0c47a45e48d8e3c6af6a80d907c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 9fe7f16aef8b9c82ded2c17ce562dffb2194eaa2
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982798"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033672"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>フェーズ 1: Microsoft 365 Enterprise のネットワーク インフラストラクチャ
 
-![](./media/deploy-foundation-infrastructure/networking_icon.png)
+![フェーズ 1: ネットワーク](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 Enterprise には、Office 365、Microsoft Intune、および Microsoft Azure の多くの ID やセキュリティ サービスが含まれます。 これらのクラウド ベースのサービスはすべて、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
+Microsoft 365 Enterprise には、Office 365、Microsoft Intune、および Microsoft Azure の多くの ID およびセキュリティ サービスが含まれます。 これらのクラウド ベースのサービスはすべて、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
 
 このフェーズでは、Microsoft 365 Enterprise のクラウド サービスへの高パフォーマンス接続を作成するための主な検討事項について、順を追って説明します。概要については、「[Office 365 のネットワークの原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)」を参照してください。
 
@@ -37,28 +37,28 @@ Microsoft 365 Enterprise の要件と機能に対応したネットワーク イ
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Microsoft 365 のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
-|![](./media/stepnumbers/Step2.png)|[オフィスごとにローカルのインターネット接続を構成する](networking-dns-resolution-same-location.md)|
-|![](./media/stepnumbers/Step3.png)|[ネットワーク ヘアピンを回避する](networking-avoid-network-hairpins.md)|
-|![](./media/stepnumbers/Step4.png)|[トラフィック バイパスを構成する](networking-configure-proxies-firewalls.md)|
-|![](./media/stepnumbers/Step5.png)|[クライアントと Office 365 サービスのパフォーマンスを最適化する](networking-optimize-tcp-performance.md)|
+|![手順 1](./media/stepnumbers/Step1.png)|[Microsoft 365 用のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
+|![手順 2](./media/stepnumbers/Step2.png)|[オフィスごとにローカルのインターネット接続を構成する](networking-dns-resolution-same-location.md)|
+|![手順 3](./media/stepnumbers/Step3.png)|[ネットワーク ヘアピンを回避する](networking-avoid-network-hairpins.md)|
+|![手順 4](./media/stepnumbers/Step4.png)|[トラフィック バイパスを構成する](networking-configure-proxies-firewalls.md)|
+|![手順 5](./media/stepnumbers/Step5.png)|[クライアントと Office 365 サービスのパフォーマンスを最適化する](networking-optimize-tcp-performance.md)|
 
 
 上記の手順が完了したら、このフェーズの[終了条件](networking-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の内部を見て、[クラウド サービス向けに Microsoft ネットワークを最適化](https://www.microsoft.com/ja-JP/itshowcase/deploying-and-managing-microsoft-365#primaryR4)している方法をご紹介します。
+Microsoft の内部を見て、[クラウド サービス向けに Microsoft ネットワークを最適化](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR4)している方法をご紹介します。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 
-架空の典型的な多国籍企業である Contoso Corporation が、Microsoft 365 のクラウド サービス向けに[ネットワーク デバイスとインターネットの接続を最適化](contoso-networking.md)している方法をご紹介します。
+架空ではあるものの代表的な多国籍企業である Contoso Corporation が Microsoft 365 クラウド サービス用に[ネットワーク デバイスおよびインターネット接続を最適化](contoso-networking.md)した方法をご覧ください。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Microsoft 365 のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
+|![手順 1](./media/stepnumbers/Step1.png)|[Microsoft 365 のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
 
