@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 から Windows 10 に大規模な組織向けの自動アップグレード
-ms.openlocfilehash: 4d1601c23d160d5618d491cd168583c78b54181c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033632"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078086"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Windows 7 から Windows 10 に大規模な組織向けの自動インプレース アップグレード
 
@@ -44,7 +44,7 @@ Windows 7 を実行している PC のセキュリティ更新プログラムや
 
 ## <a name="upgrading-a-small-number-of-computers"></a>少数のコンピューターをアップグレードする
 
-1 台または少数のコンピューターの場合は、通常、自動化よりも手動によるアップグレードが最適な方法です。 必要なソフトウェアとライセンスは、[Microsoft ストア](https://go.microsoft.com/fwlink/p/?LinkId=808282) または他のソフトウェア販売店で確認できます。ボリューム ライセンスをお持ちの場合は、[ボリューム ライセンス サービスセンター](https://www.microsoft.com/licensing/servicecenter/default.aspx) で確認できます。 1 台の PC を Windows 10 にアップグレードするには、またアップグレード後の復元オプションを使用するには、[「Windows 7 から Windows 10 への手動アップグレードの手順ガイド ](https://docs.microsoft.com/ja-JP/microsoft-365/enterprise/windows-7-to-windows-10-upgrade)を参照してください。
+1 台または少数のコンピューターの場合は、通常、自動化よりも手動によるアップグレードが最適な方法です。 必要なソフトウェアとライセンスは、[Microsoft ストア](https://go.microsoft.com/fwlink/p/?LinkId=808282) または他のソフトウェア販売店で確認できます。ボリューム ライセンスをお持ちの場合は、[ボリューム ライセンス サービスセンター](https://www.microsoft.com/licensing/servicecenter/default.aspx) で確認できます。 1 台の PC を Windows 10 にアップグレードするには、またアップグレード後の復元オプションを使用するには、[「Windows 7 から Windows 10 への手動アップグレードの手順ガイド ](https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade)を参照してください。
 
 ## <a name="how-to-upgrade-many-computers"></a>複数のコンピューターをアップグレードする方法
 

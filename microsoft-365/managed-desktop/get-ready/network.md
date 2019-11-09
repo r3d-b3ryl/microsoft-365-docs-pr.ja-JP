@@ -4,15 +4,15 @@ description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b2b1a147659bf58c9b8ded26d6774994a3c1682
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012212"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074694"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのネットワーク構成
 
@@ -23,19 +23,19 @@ ms.locfileid: "38012212"
 
 Microsoft マネージドデスクトップは、クラウドで管理されるサービスです。 Microsoft マネージドデスクトップサービスがアクセスできる必要があるエンドポイントのセットがあります。 このセクションでは、Microsoft マネージドデスクトップサービスのさまざまな側面に対して許可する必要があるエンドポイントの一覧を示します。 
 
-お客様は、すべての信頼された Microsoft 365 ネットワーク要求をファイアウォール/プロキシ経由で直接送信することによって、ネットワークを最適化できます。認証をバイパスし、追加のすべてのパケットレベルの検査または処理を行います。 これにより、待機時間と境界の容量要件が削減されます。 
+お客様は、すべての信頼された Microsoft 365 ネットワーク要求をファイアウォールまたはプロキシ経由で直接送信することにより、ネットワークを最適化することができます。認証をバイパスし、追加のパケットレベルの検査または処理を行います。 これにより、待機時間と境界の容量要件が削減されます。 
 
 また、Microsoft マネージドデスクトップのクラウドベースのサービスのパフォーマンスを最適化するために、これらのエンドポイントには、顧客クライアントのブラウザーおよびエッジネットワーク内のデバイスによる特別な処理が必要です。 これらのデバイスには、ファイアウォール、SSL ブレークと調査、パケット検査デバイス、データ損失防止システムなどがあります。
 
 ### <a name="proxy-requirement"></a>プロキシ要件
 
-プロキシまたはファイアウォールは、TLS 1.2 をサポートしている必要があります。 それ以外の場合、ユーザーはプロトコル検出を無効にする必要があります。
+プロキシまたはファイアウォールは、TLS 1.2 をサポートしている必要があります。 それ以外の場合は、プロトコル検出を無効にする必要があります。
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに対して許可されているエンドポイント
 
 Microsoft マネージドデスクトップでは、Azure Portal を使用して web コンソールをホストします。 次の表に示す Url は、Microsoft の管理対象デスクトップデバイスが Microsoft サービスと通信できるように、プロキシとファイアウォールの許可リストに含まれている必要があります。  
 
-以下の Microsoft Managed Desktop の URL は、お客様の API でサービスが実行されているすべてのものに使用されることに注意してください。 お客様は、この URL が企業ネットワークで常にアクセス可能であることを確認する必要があります。
+以下の Microsoft Managed Desktop の URL は、お客様の API でサービスが実行されているすべてのものに使用されることに注意してください。 この URL が企業ネットワークで常にアクセス可能であることを確認する必要があります。
 
 Microsoft サービス  | 許可リストに必要な Url 
 --- | --- | ---
@@ -56,8 +56,7 @@ Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョ�
 Office 365 | [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、 [Active directory および Active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)
-Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
-)
+Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

@@ -4,14 +4,15 @@ description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c618c5bf2acf50d84aca354975670ed84b581601
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 9f0d1889e625ceba52f3e91ee950041f82e9750e
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431918"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074769"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft マネージドデスクトップの操作と監視
 
@@ -82,7 +83,7 @@ Microsoft Managed Desktop service は、microsoft クラウドインスタンス
 サービス アカウント |-資格情報を実装し、安全に保存および管理します。<br> -許可されていないアクセスまたはこれらの資格情報の使用をセキュリティ運用チームに通知します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-ポリシー、多要素認証、条件付きアクセス、またはアプリケーション展開を Microsoft 管理されたデスクトップサービスアカウントに割り当てません。<br>-パスワードをリセットしたり、資格情報を使用したりしません。<br>-これらのサービスアカウントに関連する、不審なアクティビティが Intune または Azure の監査ログで検出された場合は、Microsoft マネージドデスクトップ操作に対する重大度 C サポート要求を開きます。
 デバイスグループ | -Microsoft マネージドデスクトップグループ内のデバイスのメンバーシップを実装および管理します。<br>-Microsoft マネージドデスクトップグループを使用して、構成の割り当てとリリースおよびデバイスに対する更新を管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft マネージドデスクトップグループのメンバーシップを変更しません。<br>-VPN、Windows Hello for Business または電子メールの暗号化、または企業の Wi-fi プロファイルの構成などのサービスの企業証明書を割り当てるには、グループを使用します。<br>-共同管理が存在する場合は、構成マネージャークライアントを展開するときに、すべての Microsoft 管理対象デスクトップグループを明示的に除外します。
 ポリシー |  -サービス内のデバイスの構成状態を制御する Microsoft マネージドデスクトップポリシーを実装および管理します。<br>-更新プログラムをポリシーまたは Windows に展開し、デバイスグループを徐々に使用します。<br> -Microsoft 以外の管理対象ではないデスクトップグループを明示的に除外します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft managed Desktop service で管理されていないデバイスまたはユーザーに対して、Microsoft 管理対象のデスクトップポリシーを編集または割り当てないようにします。
-Windows Defender Advanced Threat Protection | Microsoft Managed Desktop service の範囲内のデバイスを監視および調査します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用する
+Microsoft Defender Advanced Threat Protection   | Microsoft Managed Desktop service の範囲内のデバイスを監視および調査します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用する
 ビジネス向け Microsoft Store |  Microsoft マネージドデスクトップサービスの Windows 自動操縦プロファイルを構成して管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft Managed Desktop Windows 自動操縦プロファイルの構成を変更したり、割り当てられたデバイスを追加または削除したりしません。
 証明書 | | -証明書が期限切れになるまでのサポート60要求を作成し、計画された構成の変更に関する情報を要求します。これには、構成の詳細、スコープ、タイムライン、および Microsoft が確認するためのその他の関連情報が含まれます。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-証明書プロファイル、VPN プロファイル、および Wi-fi プロファイルを構成するために必要なすべての証明書を更新します。
 
@@ -91,7 +92,7 @@ Windows Defender Advanced Threat Protection | Microsoft Managed Desktop service 
 
 ## <a name="device-wipe-with-factory-reset"></a>出荷時のリセットを使用したデバイスワイプ
 
-管理されたデスクトップ運用チームは、再イメージを必要とする Microsoft マネージデスクトップ管理のデバイスで、工場出荷時のリセットを行うことができます。 これは、別の従業員にデバイスを提供する必要がある場合や、従業員が退職した場合に役立ちます。 
+Microsoft Managed Desktop Operations Team は、必要に応じてサービスに登録されたデバイスの出荷時のリセットを実行できます。 これは、別の従業員にデバイスを提供する必要がある場合や、従業員が退職した場合に役立ちます。 
 
 いくつかの要件があります。
 
@@ -113,4 +114,4 @@ Windows Defender Advanced Threat Protection | Microsoft Managed Desktop service 
 
 BitLocker は、このプロセスにおけるデータセキュリティの主要なコンポーネントです。 Microsoft マネージドデスクトップデバイス上の BitLocker 暗号化では、出荷時のリセットがデバイスに適用された後も、ドライブ上のデータは安全なままになります。 ドライブ上のデータは、デバイスの次のユーザーが使用できなくなります。 詳細については、「 [BitLocker の概要](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)」を参照してください。
 
-詳細については、「[デバイスの出荷時のリセット](https://docs.microsoft.com/intune/devices-wipe#factory-reset-a-device)」を参照してください。 
+詳細については、「[デバイスの出荷時のリセット](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)」を参照してください。 

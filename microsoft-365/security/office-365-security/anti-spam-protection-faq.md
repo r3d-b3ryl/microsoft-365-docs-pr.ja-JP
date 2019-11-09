@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d858706a80cf66772ea3a422e07d4f773935446c
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034188"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076321"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
@@ -89,7 +89,7 @@ A.特定の時間枠 (たとえば、1 時間ごと) 内でサービスを使用
   
  **Q. サードパーティのスパム対策およびマルウェア対策プロバイダーを Exchange Online と併用できますか。**
   
-A. できます。Exchange Online のメールボックスを保護するために、別のスパムおよびマルウェア フィルタリング サービスを構成できます。 着信メールに対してこれを構成するには、MX レコードをサードパーティ プロバイダーを指すように変更して電子メール メッセージをサードパーティ プロバイダーにリダイレクトし、その後そのメッセージを EOP にリダイレクトしてさらに処理を行う必要があります。 送信メールに対して構成するには、[Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx) に示すように、メッセージの配信先をサードパーティ プロバイダー (スマート ホスト) に設定してください。
+A. はい。 Exchange Online メールボックスを保護するために別のスパムおよびマルウェアフィルターサービスを構成することができます。 受信メールに対してこの操作を行うには、サードパーティプロバイダーをポイントするように MX レコードを変更し、メッセージを EOP にリダイレクトして追加の処理を行うことにより、電子メールメッセージをサードパーティプロバイダーにリダイレクトする必要があります。 送信メールに対してこの操作を行うには、メッセージ配信先をサードパーティプロバイダー (スマートホスト) に構成してください。
   
  **Q。 マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。**
   
@@ -125,7 +125,7 @@ A. 以下に示すガイドラインは、送信メール メッセージを送�
     
     [スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    「[Office 365 の DNS レコードを作成する](https://go.microsoft.com/fwlink/?LinkID=275414)」
+    [ドメイン FAQ](/office365/admin/setup/domains-faq)
     
 5. **DKIM で電子メールを署名する場合、relaxed 正規化で署名します。**
     

@@ -4,14 +4,15 @@ description: Microsoft Managed Desktop を最新の状態に保つことは、�
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ed95d7d854422fe0cd2379e21b5de36a0c680c4b
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: 89ebb1bf9787ae90eac1b62078157f1338ce5dcd
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523582"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074759"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでの更新プログラムの処理方法
 

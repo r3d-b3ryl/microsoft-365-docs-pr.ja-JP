@@ -1,19 +1,20 @@
 ---
-title: Microsoft マネージドデスクトップの証明書とネットワークプロファイルを準備する
+title: Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する
 description: 証明書/wifi/lan
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
-ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
+ms.openlocfilehash: eadaa3ab7e381081be4e47054e70d7b8d1924385
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34391268"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074679"
 ---
-# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの証明書とネットワークプロファイルを準備する  
+# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する  
  
 Microsoft マネージドデスクトップを使用しているお客様にとって、証明書ベースの認証は一般的な要件です。 Wi-fi または LAN にアクセスしたり、VPN ソリューションに接続したり、組織内の内部リソースにアクセスしたりするには、証明書が必要になることがあります。   
  
@@ -49,8 +50,8 @@ Wi-fi 構成を Microsoft マネージドデスクトップデバイスに展開
 1. 既存の 802.1 x プロファイルが構成されており、LAN ネットワークに接続されているデバイスにサインオンします。  
 2. 管理者の資格情報を使用してコマンドプロンプトを開きます。 
 3. **Netsh インターフェイス表示インターフェイス**を実行して、LAN インターフェイス名を検索します。 
-4. Netsh lan エクスポートプロファイルフォルダー = を実行して、LAN プロファイル XML をエクスポートし**ます。 Interface = "interface_name"**。 
-5. エクスポートされたプロファイルを Microsoft マネージドデスクトップデバイスでテストする必要がある場合は、 **netsh lan add profile filename = "PATH_AND_FILENAME" interface = "INTERFACE_NAME"** を実行します。 
+4. Netsh lan エクスポートプロファイルフォルダー = を実行して、LAN プロファイル XML をエクスポートし**ます。 Interface = "interface_name"** です。 
+5. エクスポートされたプロファイルを Microsoft マネージドデスクトップデバイスでテストする必要がある場合は、 **netsh lan add profile filename = "PATH_AND_FILENAME .xml" interface = "INTERFACE_NAME"** を実行します。 
  
  
 ## <a name="deploy-certificate-infrastructure"></a>証明書インフラストラクチャを展開する  
@@ -78,8 +79,8 @@ LAN プロファイルをエクスポートしたら、次の手順に従って 
  
 証明書とプロファイルを展開するには、次の手順を実行します。
 
-1. ルート証明書と中間証明書のそれぞれのプロファイルを作成します (「[信頼された証明書プロファイルを作成する](https://docs.microsoft.com/intune/certificates-configure#step-3-create-trusted-certificate-profiles)」を参照してください)。 これらの各プロファイルには、有効期限が DD/MM/YYYY 形式で記述されている必要があります。 **有効期限のない証明書プロファイルは展開されません。**
-2. 各 SCEP または PKCS 証明書のプロファイルを作成する (「 [scep 証明書プロファイルを作成する](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile)」または「 [pkcs 証明書プロファイルを作成](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)する」を参照) これらの各プロファイルには、有効期限が DD/MM/YYYY 形式で記述されている必要があります。 **有効期限のない証明書プロファイルは展開されません。**
+1. ルート証明書と中間証明書のそれぞれのプロファイルを作成します (「[信頼された証明書プロファイルを作成する](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles)」を参照してください。 これらの各プロファイルには、有効期限が DD/MM/YYYY 形式で記述されている必要があります。 **有効期限のない証明書プロファイルは展開されません。**
+2. 各 SCEP または PKCS 証明書のプロファイルを作成する (「 [scep 証明書プロファイルを作成する](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile)」または「 [pkcs 証明書プロファイルを作成](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)する」を参照) これらの各プロファイルには、有効期限が DD/MM/YYYY 形式で記述されている必要があります。 **有効期限のない証明書プロファイルは展開されません。**
 3. 各企業の WiFi ネットワークのプロファイルを作成します ( [Windows 10 以降のデバイスの wi-fi 設定を](https://docs.microsoft.com/intune/wi-fi-settings-windows)参照してください)。
 4. 企業 VPN ごとにプロファイルを作成します ( [Intune を使用した VPN 接続を追加するには、「windows 10 および Windows Holographic デバイスの設定」を](https://docs.microsoft.com/intune/vpn-settings-windows-10)参照してください)。
 5. 「証明書の展開」または「Wi-fi Profile Deployment」というタイトルのサポート要求を、microsoft managed desktop 管理ポータルを使用して、構成プロファイルを確認して「モダン Workplace Devices – Test」に展開することによって、Microsoft Managed Desktop IT 運用に送信します。". Microsoft マネージドデスクトップ IT 操作では、管理ポータルのサポート要求によって要求が完了したことが通知されます。 
