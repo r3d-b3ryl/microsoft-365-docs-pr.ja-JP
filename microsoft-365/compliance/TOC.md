@@ -465,7 +465,7 @@
 ### [SOC](offering-soc.md)
 ### [WCAG 2.1](offering-wcag-2-1.md)
 
-## 政府機関
+## 米国政府機関
 ### [CJIS](offering-cjis.md)
 ### [CNSSI 1253](offering-cnssi-1253.md)
 ### [DFARS](offering-dfars.md)
