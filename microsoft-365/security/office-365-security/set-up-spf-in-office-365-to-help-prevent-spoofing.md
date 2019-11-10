@@ -3,7 +3,7 @@ title: Office 365 で SPF を設定して、スプーフィングを防止する
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 2/19/2018
+ms.date: 11/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,16 +14,16 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。'
-ms.openlocfilehash: 15472900986a367e084c6126580cef85d286a94b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4861799695b28b0f096000ddee6e20d7a187a5aa
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087056"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038866"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Office 365 で SPF を設定して、スプーフィングを防止する
 
- **概要:** この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。 
+ **概要:** この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。
   
 カスタム ドメインを使用するには、Office 365 では、Sender Policy Framework (SPF) TXT レコードを DNS レコードに追加してスプーフィングを防止する必要があります。SPF は、ユーザーに代わってメールを送信できるメール サーバーを識別します。基本的には、SPF を DKIM、DMARC、その他の Office 365 でサポートされているテクノロジと併用することによって、スプーフィングとフィッシング詐欺を防止できます。SPF は TXT レコードとして追加され、DNS はこのレコードを使って、カスタム ドメインの代わりにメールを送信できるメール サーバーを識別します。受信側のメール システムは、この SPF TXT レコードを参照して、カスタム ドメインからのメッセージが、承認されたメッセージング サーバーからのものであるかどうかを判別します。
   
@@ -34,29 +34,29 @@ ms.locfileid: "37087056"
 既に Office 365 のメールを設定している場合、SPF TXT レコードとして Microsoft のメッセージング サーバーが DNS に含まれています。ただし、場合によっては DNS で SPF TXT レコードを更新する必要があります。たとえば、次のような場合です。
   
 - 以前は、SharePoint Online を使用している場合、カスタム ドメインに別の SPF TXT レコードを追加する必要がありました。この作業を行う必要はなくなりました。この変更により、SharePoint Online の通知メッセージが [迷惑メール] フォルダーに振り分けられるリスクが軽減されます。参照の制限数である 10 に達し、"参照制限を超えました"、"ホップが多すぎます" などのメッセージを示すエラーが表示される場合は、SPF TXT レコードを更新します。
-    
+
 - Office 365 とオンプレミスの Exchange を使用したハイブリッド環境の場合。
-    
+
 - DKIM と DMARC をセットアップする場合 (推奨)。
-    
+
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>Office 365 の SPF TXT レコードを更新する
 
 DNS で TXT レコードを更新する前に、情報を収集し、レコード形式を判別する必要があります。これによって、DNS エラーの発生を防止できます。サポートされている SPF 構文の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
   
 次の情報を収集します。
   
-- カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://support.office.microsoft.com/ja-JP/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)」をご覧ください。
-    
+- カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)」をご覧ください。
+
 - すべてのオンプレミス メッセージ サーバーの IP アドレス。たとえば、**192.168.0.1** などです。
-    
+
 - SPF TXT レコードに含める必要があるサードパーティ製のすべてのドメインに使用するドメイン名。一部のバルク メール プロバイダーは、顧客用のサブドメインを設定しています。たとえば、会社 MailChimp に **servers.mcsv.net** を設定するなどです。
-    
+
 - SPF TXT レコードで使う強制ルールを決定します。**-all** をお勧めします。その他の構文オプションについて詳しくは、「[Office 365 用の SPF TXT レコードの構文](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)」をご覧ください。
-    
+
 ### <a name="to-add-or-update-your-spf-txt-record"></a>SPF TXT レコードを追加または更新するには
 
-1. まだ行っていなければ、次の表の構文を使って、SPF TXT レコードを形成します。
-    
+1. 以下の表の SFP 構文について、十分に理解しておいてください。
+
 ||**使用対象**|**Office 365 ユーザーとの共通性**|**追加対象**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |いずれかの電子メール システム (必須)  <br/> |共通。この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
@@ -66,27 +66,26 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 |5  <br/> |サード パーティ製の電子メール システム  <br/> |共通ではない  <br/> |include:\<domain name\>  <br/> domain name は、サード パーティ製の電子メール システムのドメイン名です。  <br/> |
 |6  <br/> |オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム  <br/> |共通ではない  <br/> | 各追加メール システムで次のいずれかを使用します。  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  \<  _IP address_\> の値は他のメール システムの IP アドレスで、\< _domain name_\> はユーザーのドメインのためにメールを送信する他のメール システムのドメイン名です。  <br/> |
 |7  <br/> |いずれかの電子メール システム (必須)  <br/> |共通。この値で終わるすべての SPF レコード  <br/> |\< _enforcement rule_\>  <br/> 可能な値はいくつかあります。**-all** を使用することをお勧めします。  <br/> |
-   
-1.1 たとえば、Office 365 で完全にホストされている場合、つまり、オンプレミスのメール サーバーを使っていない場合は、SPF TXT レコードには、次のように 1 行目、2 行目、7 行目が含まれます。
-    
-  ```
-   v=spf1 include:spf.protection.outlook.com -all
-  ```
+|
 
-1.2 これは、最も一般的な Office 365 SPF TXT レコードです。 このレコードは、Office 365 データセンターが米国、ヨーロッパ (ドイツを含む)、または他の場所にあっても、ほぼすべてのユーザーに対して機能します。
-    
-1.3 ただし、Microsoft Cloud Germany の一部である Office 365 Germany を購入している場合は、2 行目ではなく 4 行目から含めるステートメントを使用してください。 たとえば、Office 365 Germany で完全にホストされている場合、つまり、オンプレミスのメール サーバーを使っていない場合は、SPF TXT レコードには、次のように 1 行目、4 行目、7 行目が含まれます。
-    
-  ```
-   v=spf1 include:spf.protection.outlook.de -all
-  ```
+2. まだ行っていない場合は、表の構文を使用して SPF TXT レコードを作成します。
 
-1.4 Office 365 で既に展開し、カスタム ドメインの SPF TXT レコードをセットアップしている状態で Office 365 Germany に移行する場合は、SPF TXT レコードを更新する必要があります。 これを行うには、**include:spf.protection.outlook.com** を **include.spf.protection.outlook.de** に変更します。
-    
-2. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。 ドメインに配置できる SPF TXT レコードは 1 つのみです。 SPF TXT レコードが存在する場合、新しいレコードを追加するのではなく、既存のレコードを更新しなければなりません。 「[Office 365 の DNS レコードを作成する](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)」に移動し、DNS ホストのリンクをクリックします。 
-    
+   たとえば、Office 365 で完全にホストされている場合、つまり、オンプレミスのメール サーバーを使っていない場合は、SPF TXT レコードには、次のように 1 行目、2 行目、7 行目が含まれます。
+
+   `v=spf1 include:spf.protection.outlook.com -all`
+
+   これは、最も一般的な Office 365 SPF TXT レコードです。 このレコードは、Office 365 データセンターが米国、ヨーロッパ (ドイツを含む)、または他の場所にあっても、ほぼすべてのユーザーに対して機能します。
+
+   ただし、Microsoft Cloud Germany の一部である Office 365 Germany を購入している場合は、2 行目ではなく 4 行目から include ステートメントを使用してください。たとえば、Office 365 Germany で完全にホストされている場合、つまり、オンプレミスのメール サーバーを使っていない場合は、SPF TXT レコードには、次のように 1 行目、4 行目、7 行目が含まれます。
+
+   `v=spf1 include:spf.protection.outlook.de -all`
+
+   Office 365 で既に展開し、カスタム ドメインの SPF TXT レコードをセットアップしている状態で Office 365 Germany に移行する場合は、SPF TXT レコードを更新する必要があります。 これを行うには、**include:spf.protection.outlook.com** を **include.spf.protection.outlook.de** に変更します。
+
+2. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。 ドメインに配置できる SPF TXT レコードは 1 つのみです。 SPF TXT レコードが存在する場合、新しいレコードを追加するのではなく、既存のレコードを更新しなければなりません。 「[Office 365 の DNS レコードを作成する](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)」に移動し、DNS ホストのリンクをクリックします。
+
 3. SPF TXT レコードをテストします。
-    
+
 ## <a name="more-information-about-spf"></a>SPF の詳細情報
 
 サポートされている SPF 構文、スプーフィング、トラブルシューティング、Office 365 が SPF をサポートする方法の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
