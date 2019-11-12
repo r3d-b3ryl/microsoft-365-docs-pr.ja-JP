@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Office 365 Business Premium から Microsoft 365 Business にビジネスをアップグレードする手順。
-ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002129"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231413"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
 
@@ -38,37 +38,6 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 Business Premium と Microsoft 365 Business の違いは何ですか。
 これらの2つのプランを[Microsoft 365 Business service の説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)に並べて比較しました。 
 
-1. 新しいライセンスを購入すると、これが初めての場合は、Microsoft 365 Business のセットアップバナーが管理センターの一番上に表示されます。
-    
-    > [!NOTE]
-    > セットアップバナーは新しいユーザーを追加し、新しいドメインを追加して、新しいユーザーのメールを移行する機会です。 この操作を行わない場合でも、ウィザードを使用して [既定のオプション] を選択し、管理者のホームページから非表示にすることをお勧めします。 
-  
-   ![Microsoft 365 Business で [セットアップの開始] を選択して、バナーをセットアップする準備ができました。](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    [ **セットアップの開始**] を選びます。
-    
-2. [**サインインとメールのカスタマイズ**] ページで、この機会を使用してサブスクリプションに別のドメインを追加する場合は、[**既に所有し**ているドメインの接続] を選択してドメインを追加します。 
-    
-    既にドメインを設定している場合は、2番目のフィールドには、**メールの**_ドメイン名_\> **を使用し続けて** \<サインインするように指示します。   サブスクリプションを使用してドメインをセットアップしていない場合は **、引き続き** \<_会社の name.onmicrosoft.com_ \>を使用して**電子メールを送信**し、サインインしてください。  
-    
-    **次へ**を選択します。
-    
-    ![[サインインとメールのカスタマイズ] ページで、ドメインを追加するか、使用しているドメインを使用するかを選択します。](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. [新しい**ユーザーの追加**] ページで、新しいユーザーを追加することができます。これには、Microsoft 365 Business のライセンスを割り当てる必要があります。 
-    
-    新しい従業員を追加して、既存のユーザーにライセンスを割り当てる場合は、[**次へ**] を選択します。
-    
-4. [**メールメッセージの移行**] ページで、手順3で追加した新しいユーザーのいずれかに対して電子メールを移行することを選択できます。 この手順は省略することもできます。 **次へ**を選択します。
-    
-5. 最後のページで [**管理センターに移動**します] を選択して、セットアップを続行します。
-    
-6. 管理センターで、[**ユーザー** \> ] [**アクティブなユーザー**] に移動します。
-    
-7. **Microsoft 365 Business** license を割り当てるユーザーを選択し、[**製品ライセンス**] の横にある [**編集**] を選択します。
-    
-    ![ユーザーカードで、[製品ライセンス] の横にある [編集] を選択します。](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## <a name="before-you-get-started"></a>開始する前に
 
 - **いつアップグレードを選択する必要がありますか。** アップグレードは、1つのプランに割り当てられた**すべてのユーザー**をアップグレードする場合に最適です。 [アップグレード] を選択すると、すべてのプランユーザーが同時に別のプランに切り替えられます。 1つのプランに割り当てられたすべてのユーザーをアップグレードしない場合は、新しいプラン (この場合は Microsoft 365 Business) のライセンスを購入し、アップグレードするユーザーごとに[これらのライセンスを個別に割り当て](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)ます。 
