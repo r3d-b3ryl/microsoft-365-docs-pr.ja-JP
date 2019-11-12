@@ -208,6 +208,7 @@
 ### [処理中のエラーの操作](processing-data-for-case.md)
 #### [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 #### [データ処理中のエラー修復](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+#### [単一アイテムのエラーの修復](single-item-error-remediation.md)
 
 ### [ケースのデータの収集](collecting-data-for-ediscovery.md)
 #### [検索を作成する](create-search-to-collect-data.md)
@@ -429,8 +430,7 @@
 
 ### 侵害の通知
 #### [侵害の通知](gdpr-breach-notification.md)
-#### [Azure](gdpr-breach-azure.md)
-#### [Dynamics 365](gdpr-breach-dynamics365.md)
+#### [Azure および Dynamics 365](gdpr-breach-azure-dynamics.md)
 #### [Microsoft サポート/プロフェッショナル サービス](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
