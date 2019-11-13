@@ -3,7 +3,7 @@ title: 厳しく規制されたデータに Teams で対応する
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 最重要ファイルおよび機密ファイルを保存するためのセキュリティで保護されたチームを作成します。
-ms.openlocfilehash: d917e14719744dad8a681e15a8547655c3a0457f
-ms.sourcegitcommit: d95aab99d7827dbb9248280044748ca05ebec786
+ms.openlocfilehash: 97cc19b0b0067dc0eaca845dd16621be823f1334
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37657804"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302954"
 ---
 # <a name="teams-for-highly-regulated-data"></a>厳しく規制されたデータに Teams で対応する
 
 この記事では、Microsoft Teams 内のプライベート チームを構成して、チャット、会議、ファイルなどの Teams の機能へのアクセスをチームの Office 365 グループのメンバーおよび所有者のみに制限するための推奨事項および手順を説明します。 
 
 この記事では、Office 365 グループに基づくプライベート アクセスの他にも、それの基となっている、チーム チャネルの [**ファイル**] セクションからアクセスできるプライベート SharePoint チーム サイトを構成して厳しく規制されたデータの保存で必要な追加のセキュリティを提供する方法について説明します。 この SharePoint チーム サイトでは、ファイル、ページ、共有予定表、タスク、ノートブック、およびリストを保存して共同作業を行えます。
+
+>[!Note]
+> SharePoint を使用する場合の類似のシナリオが[こちら](teams-sharepoint-online-sites-highly-regulated-data.md)にあります。
+>
 
 規制の厳しいデータ用にチームを構成する場合の要素は次のとおりです。
 
@@ -39,7 +43,13 @@ ms.locfileid: "37657804"
 この結果、秘密度ラベルが適用された構成は次のようになります。
 
 ![セキュリティで保護されたチーム シナリオの構成](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
- 
+
+<a name="poster"></a> このシナリオを 1 ページにまとめた概要については、「[厳しく規制されたデータ用の Teams のポスター](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)」を参照してください。
+
+[![厳しく規制されたデータ用の Teams のポスター](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) でダウンロードして、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
+
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>フェーズ 1: 厳しく規制されたデータ用のチームを構成する
 
 エンド ツー エンド構成には次の手順が含まれます。
@@ -105,7 +115,7 @@ ms.locfileid: "37657804"
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>手順 4: 保持ラベルおよび DLP ポリシーを作成する
 
-[こちらの手順](https://docs.microsoft.com/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp)を使用して、次のことを行います。
+[こちらの手順](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp)を使用して、次のことを行います。
 
 1. (必要な場合は) 厳しく規制されたデータの保持ラベルを作成して公開します。
 2. 手順 1 で作成した保持ラベル用にチーム サイトを構成します。
