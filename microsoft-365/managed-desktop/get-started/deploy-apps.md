@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5f1e2bd2440b5c38c958d3182684e87643f2e853
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012028"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302914"
 ---
 # <a name="deploy-apps-to-devices"></a>アプリをデバイスに展開する
 Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft マネージドデスクトップポータルを使用している場合は、アプリを追加して展開することができます。 
@@ -83,7 +83,7 @@ Microsoft Store for Business にサインアップしていない場合は、ア
 --- | --- | ---
 Available |  アプリは、会社のポータルアプリまたは web サイトから入手できます。 | MMD –*アプリ名*–利用可能
 必須 |  アプリは、選択したグループのデバイスにインストールされます。 | MMD –*アプリ名*–必須
-Uninstall |  なアプリは、選択したグループのデバイスからアンインストールされます。 | MMD –*アプリ名*–アンインストール
+Uninstall |  選択したグループのデバイスからアプリがアンインストールされます。 | MMD –*アプリ名*–アンインストール
 
 これらのグループにユーザーを追加して、アプリを利用できるようにするか、アプリをインストールするか、Microsoft マネージドデスクトップデバイスからアプリを削除します。 
 
@@ -102,11 +102,11 @@ Uninstall |  なアプリは、選択したグループのデバイスからア�
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの使用を開始する手順
 
-1. [管理ポータルで管理者の連絡先を追加して確認する](add-admin-contacts.md)
+1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
 2. [条件付きアクセスを調整する](conditional-access.md)
 3. [ライセンスを割り当てる](assign-licenses.md)
-4. [Intune ポータルサイトを展開する](company-portal.md)
-5. [エンタープライズ状態の移動を有効にする](enterprise-state-roaming.md)
+4. [Intune 会社ポータルを展開する](company-portal.md)
+5. [Enterprise State Roaming を有効にする](enterprise-state-roaming.md)
 6. [デバイスをセットアップする](set-up-devices.md)
 7. [ユーザーがデバイスを使えるようにする](get-started-devices.md)
 8. アプリを展開する (このトピック)

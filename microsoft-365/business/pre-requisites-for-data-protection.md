@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: 'Microsoft 365 Business を使用して組織をセットアップするための前提条件について理解します。 '
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575840"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290532"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Microsoft 365 Business でデバイス上のデータを保護するための前提条件
 
@@ -34,6 +34,8 @@ Microsoft 365 Business で組織をセットアップするには、まず前提
 - Windows デバイスでは、Windows 7 Professional、Windows 8 Pro、または Windows 8.1 Pro を実行している必要があります。
     
     [Windows デバイスを Windows Pro Creators Update にアップグレードする](upgrade-to-windows-pro-creators-update.md)
+    
+    Windows 10 Home を実行している場合は、windows 10 Pro を**購入**する必要があります。 手順については[、「windows 10 Home から windows 10 Pro へのアップグレード」を](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US)参照してください。 
     
 - モバイル管理ソリューション (Mobile Iron、AirWatch など) からデバイスを削除します。組織のすべてのユーザーを Microsoft 365 Business モバイル管理に登録します。
     
