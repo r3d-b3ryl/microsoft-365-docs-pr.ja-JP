@@ -24,19 +24,19 @@ search.appverid:
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: 組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーについて説明します。
-ms.openlocfilehash: 11c8f75f56a86895d7f81fc242490303c10ac24e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: ad092d2b2760a55e16c44a66350626c90c9ac7c5
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575430"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38321366"
 ---
-# <a name="configure-windows-10-devices"></a><span data-ttu-id="21534-103">Windows 10 デバイスを構成する</span><span class="sxs-lookup"><span data-stu-id="21534-103">Configure Windows 10 devices</span></span>
+# <a name="configure-windows-10-devices"></a><span data-ttu-id="0fa40-103">Windows 10 デバイスを構成する</span><span class="sxs-lookup"><span data-stu-id="0fa40-103">Configure Windows 10 devices</span></span>
 
-<span data-ttu-id="21534-p101">セットアップ時に、Microsoft は組織のすべてのユーザーに適用する Windows 10 のデバイス ポリシーを作成します。ユーザーが職場または学校のアカウントを使って Windows 10 デバイス上の Office アプリにサインインすると、セキュリティで保護された方法で接続していることを確認するために、構成した設定が自動的に適用されます。</span><span class="sxs-lookup"><span data-stu-id="21534-p101">During setup, we'll create a device policy for Windows 10 that applies to all users in your organization. When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings that you configure are automatically applied to make sure that the user is connecting in a secure way.</span></span>
+<span data-ttu-id="0fa40-104">セットアップ時に、組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="0fa40-104">During setup, you create a device policy for Windows 10 that applies to all users in your organization.</span></span> <span data-ttu-id="0fa40-105">ユーザーが職場または学校のアカウントを使用して Windows 10 デバイス上の Office アプリにサインインすると、構成した設定が自動的に適用され、ユーザーが安全な方法で接続されるようになります。</span><span class="sxs-lookup"><span data-stu-id="0fa40-105">When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings you configure are automatically applied to make sure that the user is connecting in a secure way.</span></span>
   
-<span data-ttu-id="21534-p102">セットアップ時は既定の構成を受け入れることをお勧めします。セットアップ後に、追加のポリシーを作成して、特定のユーザーのグループを対象にします。</span><span class="sxs-lookup"><span data-stu-id="21534-p102">We recommend that you accept the default configuration during setup. After setup, you can create additional policies and target them to specific groups of users.</span></span>
+<span data-ttu-id="0fa40-106">セットアップ時は既定の構成を受け入れることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0fa40-106">We recommend that you accept the default configuration during setup.</span></span> <span data-ttu-id="0fa40-107">セットアップ後に、追加のポリシーを作成して、特定のユーザーグループに適用することができます。</span><span class="sxs-lookup"><span data-stu-id="0fa40-107">After setup, you can create more policies and target them to specific groups of users.</span></span>
   
-<span data-ttu-id="21534-108">Windows 10 デバイスの構成を管理するポリシーを追加するには、「[Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)」 (Windows 10 PC にデバイス構成を設定する) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="21534-108">To add a policy to manage Windows 10 device configurations, see [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).</span></span>
+<span data-ttu-id="0fa40-108">Windows 10 デバイスの構成を管理するポリシーを追加するには、「[Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)」 (Windows 10 PC にデバイス構成を設定する) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0fa40-108">To add a policy to manage Windows 10 device configurations, see [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).</span></span>
   
 
