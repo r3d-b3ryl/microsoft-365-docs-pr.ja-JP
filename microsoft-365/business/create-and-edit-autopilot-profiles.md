@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 自動操縦プロファイルを作成、編集、削除、または削除する方法について説明します。
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574720"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320240"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>AutoPilot プロファイルの作成と編集
 
@@ -40,17 +40,17 @@ ms.locfileid: "37574720"
   
 2. [**自動操縦**] ページで、 **[プロファイル] タブ** \>を選択してプロファイルを**作成**します。
     
-3. [ **プロファイルの作成**] ページで、識別に役立つプロファイルの名前を入力します。たとえば、マーケティングでは、必要な設定をオンにして (詳細については、「[AutoPilot プロファイルの設定について](autopilot-profile-settings.md)」を参照)、[ **保存**] を選びます。
+3. [**プロファイルの作成**] ページで、「Marketing」などの特定に役立つプロファイルの名前を入力します。 目的の設定を有効にして、[**保存**] を選択します。 自動操縦プロファイル設定の詳細については、「[自動操縦プロファイル設定につい](autopilot-profile-settings.md)て」を参照してください。
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>プロファイルをデバイスに適用する
 
-プロファイルを作成した後、デバイスまたはデバイスのグループに適用することができます。[ステップ バイ ステップ ガイド](add-autopilot-devices-and-profile.md)で既存のプロファイルを選んだり、プロファイルを新しいデバイスに適用したり、デバイスまたはデバイスのグループの既存のプロファイルを置き換えたりすることができます。 
+プロファイルを作成したら、それをデバイスまたはデバイスのグループに適用できます。 [ステップバイステップガイド](add-autopilot-devices-and-profile.md)で既存のプロファイルを選択して新しいデバイスに適用したり、デバイスまたはデバイスのグループの既存のプロファイルを置き換えたりすることができます。 
   
 1. [ **Windows の準備**] ページで、[ **デバイス**] タブを選びます。 
     
-2. Click the check-box next to a device name and in the **Device** panel, choose a profile from the **Assigned profile** drop-down \> **Save**.
+2. デバイス名の横にあるチェックボックスをオンにし、[**デバイス**] パネルで、[**割り当てられたプロファイル**] ドロップ\> **ダウンリストから**プロファイルを選択します。
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -62,7 +62,7 @@ ms.locfileid: "37574720"
 
 1. [ **Windows の準備**] ページで、[ **プロファイル**] タブを選びます。 
     
-2. Click the check-box next to a device name and in the **Profile** panel update any of the available settings \> **Save**.
+2. デバイス名の横にあるチェックボックスをオンにし、[**プロファイル**] パネルで、利用可能な\>設定の**保存**を更新します。
     
     ユーザーがデバイスをインターネットに接続する前にこの操作を行った場合、プロファイルはセットアップ プロセスに適用されます。
     
@@ -70,7 +70,7 @@ ms.locfileid: "37574720"
 
 1. [ **Windows の準備**] ページで、[ **プロファイル**] タブを選びます。 
     
-2. Click the check-box next to a device name and in the **Profile** panel click **Delete profile** \> **Save**.
+2. デバイス名の横にあるチェックボックスをオンにし、[**プロファイル**] パネルで [**プロファイル** \>の**保存**の削除] を選択します。
     
     プロファイルを削除すると、プロファイルが割り当てられていたデバイスまたはデバイスのグループから削除されます。
     
@@ -78,5 +78,5 @@ ms.locfileid: "37574720"
 
 1. [ **Windows の準備**] ページで、[ **デバイス**] タブを選びます。 
     
-2. Click the check-box next to a device name and in the **Device** panel, choose a **None** from the **Assigned profile** drop-down \> **Save**.
+2. デバイス名の横にあるチェックボックスをオンにし、 **[デバイス**] パネルで、[**割り当てられたプロファイル**] \>ドロップダウン**リストから [** **保存**] を選択します。
     

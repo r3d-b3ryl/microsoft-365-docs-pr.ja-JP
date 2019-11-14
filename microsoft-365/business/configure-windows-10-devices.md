@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: 組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーについて説明します。
-ms.openlocfilehash: 11c8f75f56a86895d7f81fc242490303c10ac24e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: ad092d2b2760a55e16c44a66350626c90c9ac7c5
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575430"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38321366"
 ---
 # <a name="configure-windows-10-devices"></a>Windows 10 デバイスを構成する
 
-セットアップ時に、Microsoft は組織のすべてのユーザーに適用する Windows 10 のデバイス ポリシーを作成します。ユーザーが職場または学校のアカウントを使って Windows 10 デバイス上の Office アプリにサインインすると、セキュリティで保護された方法で接続していることを確認するために、構成した設定が自動的に適用されます。
+セットアップ時に、組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーを作成します。 ユーザーが職場または学校のアカウントを使用して Windows 10 デバイス上の Office アプリにサインインすると、構成した設定が自動的に適用され、ユーザーが安全な方法で接続されるようになります。
   
-セットアップ時は既定の構成を受け入れることをお勧めします。セットアップ後に、追加のポリシーを作成して、特定のユーザーのグループを対象にします。
+セットアップ時は既定の構成を受け入れることをお勧めします。 セットアップ後に、追加のポリシーを作成して、特定のユーザーグループに適用することができます。
   
 Windows 10 デバイスの構成を管理するポリシーを追加するには、「[Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)」 (Windows 10 PC にデバイス構成を設定する) を参照してください。
   

@@ -27,31 +27,31 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: 自動操縦プロファイルは、ユーザーデバイスへの Windows のインストール方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなどの、既定の設定とオプションの設定が含まれています。
-ms.openlocfilehash: eb0d9a95c796909d024db1d061aaeace7d07ed1b
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 912a24e3d458986a4bcf7dcf903f80211996aca2
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574580"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38321787"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 
 ## <a name="autopilot-profile-settings"></a>自動操縦プロファイルの設定
 
-自動操縦プロファイルを使用して、ユーザーのデバイスに Windows をインストールする方法を制御できます。 プロファイルには、次の設定が含まれています。
+自動操縦プロファイルを使用して、ユーザーデバイスへの Windows のインストール方法を制御できます。 プロファイルには、次の設定が含まれています。
   
  **自動操縦既定の機能 (必須) は、自動的に設定されます。**
   
 |**設定**|**説明**|
 |:-----|:-----|
-|Cortana、OneDrive、OEM の登録のスキップ  <br/> |Cortana や個人用 OneDrive のようなコンシューマーアプリのインストールをスキップします。 デバイスのユーザーがデバイスのローカル管理者である場合は、後でインストールできます。 デバイスは Microsoft 365 Business によって管理されるため、元の製造元の登録はスキップされます。  <br/> |
+|Cortana、OneDrive、OEM 登録をスキップする  <br/> |Cortana や個人用 OneDrive のようなコンシューマーアプリのインストールをスキップします。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、これらを後でインストールすることができます。 デバイスは Microsoft 365 Business によって管理されるため、元の製造元の登録はスキップされます。  <br/> |
 |会社のブランドが表示されたサインイン画面  <br/> |会社に[Office 365 のサインインページに会社のブランドを追加](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)することがある場合、デバイスユーザーはサインインしたときにそのような操作を取得します。  <br/> |
-|構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー ID は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business 資格情報を使って Windows と Office 365 にサインインします。  <br/> |
+|構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー id は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business 資格情報を使用して Windows および Office 365 にサインインします。  <br/> |
    
  **オプションの設定:**
   
 |**設定**|**説明**|
 |:-----|:-----|
 |プライバシーの設定のスキップ (既定ではオフ)  <br/> |このオプションが [ **オン**] に設定されている場合は、デバイス ユーザーが最初にサインインしたときに、デバイスと Windows の使用許諾契約書が表示されません。  <br/> |
-|ユーザーがローカル管理者になることを許可しない  <br/> |このオプションが [ **オン**] に設定されている場合、デバイス ユーザーは Cortana などの個人用アプリをインストールできません。  <br/> |
+|ユーザーがローカル管理者になることを許可しない  <br/> |このオプションが [ **オン**] に設定されている場合、デバイス ユーザーは Cortana などの個人用アプリをインストールできません。<br/> |
    

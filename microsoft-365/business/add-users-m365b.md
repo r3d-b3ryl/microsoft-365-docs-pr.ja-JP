@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Busines にその他のユーザーを追加する
+title: Microsoft 365 Business にさらにユーザーを追加する
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,29 +21,29 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Microsoft 365 Business で新しいユーザーを追加し、デバイスをセキュリティで保護し、役割を割り当てる方法について説明します。
-ms.openlocfilehash: 0ea3a4845e46ed1d13abf966eea895aa394aebca
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 25f19873400dad1c57445a63dd354bbb5d1fce49
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574760"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38322537"
 ---
-# <a name="add-additional-users-to-microsoft-365-business"></a>Microsoft 365 Busines にその他のユーザーを追加する
+# <a name="add-more-users-to-microsoft-365-business"></a>Microsoft 365 Business にさらにユーザーを追加する
 
 ## <a name="add-new-users"></a>新しいユーザーを追加する
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
-2. 左側のナビゲーションで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。
-1. [**アクティブなユーザー** ] ページで、[**ユーザーの追加**] を選択します。
- 4. [ **新しいユーザー**] ウィンドウで、必要な情報を入力します。 
+2. 左側のナビゲーションウィンドウで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。
+3. [**アクティブなユーザー** ] ページで、[**ユーザーの追加**] を選択します。
+4. [**新しいユーザー** ] パネルで、必要な情報を入力します。 
   
-    [ **連絡先情報**] に追加情報を入力し、[ **パスワード**] でパスワードの設定方法を選択し、[ **役割**] で役割を割り当てることができます。
+    [**連絡先情報**] の下に詳細情報を入力し、[**パスワード**の設定] でパスワードを設定する方法と、[**役割**] で役割を割り当てることができます。
       
     ![Enter user information in the New user card](media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    [製品のライセンス] セクションで、 **Microsoft 365 Business** 製品ライセンスの設定を **オン**に設定します。
+    [製品ライセンス] セクションで、[ **Microsoft 365 Business** Product license] 設定を **[オン**] に設定します。
       
     ![Set the license setting to On position](media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
-[ユーザーを個別にまたは一括](https://docs.microsoft.com/office365/admin/add-users/add-users)して追加することも参照してください。
+ユーザーの追加の詳細について[は、「ユーザーを個別にまたは一括](https://docs.microsoft.com/office365/admin/add-users/add-users)して追加する」を参照してください。
   
