@@ -20,21 +20,22 @@ search.appverid:
 - MET150
 - MOE150
 description: モバイルデバイスの管理とモバイルアプリの管理、または MDM と MAM の違いについて説明します。
-ms.openlocfilehash: 338390f7e824d5fbff1bf25e1291aa9803e8dcd6
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: fff9fc40f9dbead58b456fb3449133c3eb8523d4
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697900"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38319975"
 ---
 # <a name="difference-between-mdm-and-mam"></a>MDM と MAM の相違点
 
-Microsoft 365 Business には、ビジネスデータを保護する方法がいくつか用意されています。 [「Microsoft 365 business の概要](../microsoft-365-business-overview.md)」では、自動的に設定されるさまざまな保護について、さらにお客様のビジネスをさらに保護するために自分で設定できるものについて説明します。 Windows 10 デバイスを保護するポリシー、およびモバイルデバイスのデータを設定することもできます。
-[Windows 10 デバイスのアプリケーション保護設定を設定する](../protection-settings-for-windows-10-devices.md)
+Microsoft 365 Business には、ビジネスデータを保護するためのいくつかの方法が用意されています。 自動的に設定される各種の保護の詳細については、「 [Microsoft 365 business の概要](../microsoft-365-business-overview.md)」および「ビジネスをさらに保護するために自分でセットアップできること」を参照してください。 Windows 10 デバイスとモバイルデバイスのデータを保護するポリシーを設定することもできます。
+[Windows 10 デバイスのアプリケーション保護設定を設定](../protection-settings-for-windows-10-devices.md)します。
+
 ## <a name="mobile-device-management-or-mdm"></a>モバイルデバイス管理または MDM
 
-Microsoft 365 Business では、Windows 10 デバイス上のデータを保護するポリシーをセットアップすることができます。 デバイスが [モバイルデバイス管理] の下にある場合は、デバイス全体を制御し、そのデバイスからデータを消去して、出荷時の設定にリセットすることもできます。 詳細については、「 [Windows 10 pc のデバイス保護設定を設定](../protection-settings-for-windows-10-pcs.md)する」を参照してください。
+Microsoft 365 Business では、Windows 10 デバイス上のデータを保護するポリシーをセットアップできます。 デバイスが [モバイルデバイス管理] の下にある場合は、デバイス全体を制御し、そのデバイスからデータを消去して、工場設定にリセットすることもできます。 詳細については、「 [Windows 10 pc のデバイス保護設定を設定する](../protection-settings-for-windows-10-pcs.md)」を参照してください。
 
 ## <a name="mobile-application-management-or-mam"></a>モバイルアプリケーション管理または MAM
 
-モバイルアプリケーション管理では、ユーザーの個人用デバイス (iPhones、Androids など) や個人の Win 10 コンピューターのビジネスデータを制御することができます。 設定したアプリケーション管理ポリシーを使用すると、ユーザーがビジネスデータを Office アプリから個人用アプリにコピーすることができます。また、個人用デバイスで Office アプリのすべてのデータを削除することもできます。 詳細については、「 [Android または iOS デバイスのアプリ保護設定を設定](../app-protection-settings-for-android-and-ios.md)する」および「 [Windows 10 デバイスのアプリケーション保護設定を設定](../protection-settings-for-windows-10-devices.md)する」を参照してください。
+モバイルアプリケーション管理では、ユーザーの個人用デバイス (iPhones、Androids、個人の Win 10 コンピューターなど) でビジネスデータを制御できます。 アプリケーション管理ポリシーを使用して、ユーザーが Office アプリから個人用アプリにビジネスデータをコピーできないようにすることができます。 個人用デバイスで Office アプリのすべてのデータを削除することもできます。 詳細については、「 [Android または iOS デバイスのアプリ保護設定を設定](../app-protection-settings-for-android-and-ios.md)する」および「 [Windows 10 デバイスのアプリケーション保護設定を設定](../protection-settings-for-windows-10-devices.md)する」を参照してください。

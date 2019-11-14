@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Azure AD テナントの Identity Governance を理解し、構成します。
-ms.openlocfilehash: 3bc0872eefa71288d25ce83ebb8f3c51d8959678
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370384"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302924"
 ---
-# <a name="step-7-configure-identity-governance"></a>手順 7: Identity Governance を構成する
+# <a name="step-6-configure-identity-governance"></a>手順 6: Identity Governance を構成する
 
 ![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 

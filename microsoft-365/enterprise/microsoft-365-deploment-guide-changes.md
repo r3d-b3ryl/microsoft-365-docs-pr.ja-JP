@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise 展開コンテンツの変更
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/31/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,19 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の展開ガイドの新しいコンテンツおよびコンテンツの変更を参照してください。
-ms.openlocfilehash: 605805d715243c9ef00f681616976be0f4b6b705
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 59f40ad2870be8d1b74b03123a7c161b132e565d
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929280"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302964"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
 
 ## <a name="october-2019"></a>2019 年 10 月
 
 ### <a name="new-content"></a>新しいコンテンツ 
-
 
 - [厳しく規制されたデータ用の Teams のポスター](secure-teams-highly-regulated-data-scenario.md#poster)
 
@@ -41,13 +40,13 @@ ms.locfileid: "37929280"
 
 - [Autopilot ポスターを使用した Windows 10 の展開](windows10-deploy-autopilot.md) 
 
-  [![Autopilot ポスターを使用した Windows 10 の展開](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+  [![Autopilot ポスターを使用した Windows 10 の展開](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=RWOcP%2BhJZYpYcGKMhuTUEL6lcuWdBFefqR%2BQQfmj6IM%3D&st=2019-11-12T23%3A48%3A59Z&se=2019-11-13T23%3A58%3A59Z&sp=r)
 
   このポスターを [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) または [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) 形式でダウンロードすることもできます。
 
 - [System Center Configuration Manager ポスターを使用した Windows 10 の展開](windows10-deploy-inplaceupgrade.md)
 
-  [![System Center Configuration Manager ポスターを使用した Windows 10 の展開](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=tKD38RgLAoOCAWJ5ppEbLevBAHk7KHtWrXldy2Jl6mY%3D&st=2019-10-24T22%3A16%3A08Z&se=2019-10-25T22%3A26%3A08Z&sp=r)
+  [![System Center Configuration Manager ポスターを使用した Windows 10 の展開](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=jjP0k8Y9ClANZptzS5IPwxs61kocwCg6bLUBdjZp6lY%3D&st=2019-11-12T23%3A51%3A28Z&se=2019-11-14T00%3A01%3A28Z&sp=r)
 
   このポスターを [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) または [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) 形式でダウンロードすることもできます。
 
@@ -57,13 +56,13 @@ ms.locfileid: "37929280"
 
   お知らせ: [Microsoft 365 テクニカル コミュニティ ブログ](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Protect-your-highly-regulated-files-in-Teams-with-Microsoft-365/ba-p/962985)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-lock-down-team-sensitive-top-secret-joe-davies/?published=t)
 
-
 - [リモート ワーカーを支援するポスター](empower-people-to-work-remotely.md#poster)
 
   [![リモート ワーカーを支援するポスター](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
- 
 
-### <a name="updates-and-enhancements"></a>更新プログラムおよび機能強化
+- [Microsoft 365 Business から Microsoft 365 Enterprise E3 への移行](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+
+### <a name="updates-and-enhancements"></a>更新プログラムおよび拡張機能
 
 - [フェーズ 4 の更新: Office 365 ProPlus](office365proplus-infrastructure.md)
 - [Contoso 社の導入実例](contoso-case-study.md) の更新
