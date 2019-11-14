@@ -22,19 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: セットアップ時に Office を Windows 10 デバイスに自動的に展開する方法について説明します。
-ms.openlocfilehash: 64585d0a34e409822959939d5ae40fac57ff943b
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fbc11553452ae5068ad7013a409901dee5b3570d
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576000"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320050"
 ---
-# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="db2a7-103">セットアップ時に Windows 10 に Office をインストールする</span><span class="sxs-lookup"><span data-stu-id="db2a7-103">Install Office on Windows 10 during setup</span></span>
+# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="2cf54-103">セットアップ時に Windows 10 に Office をインストールする</span><span class="sxs-lookup"><span data-stu-id="2cf54-103">Install Office on Windows 10 during setup</span></span>
 
 ![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
 
-<span data-ttu-id="db2a7-p101">この設定は、既定でオフになっています。オンにすると、ユーザーは自分のすべての Windows 10 デバイスで最新版の Office を実行できます。ただし、すべての前提条件が満たされていることを最初に確認する必要があります。この設定でデバイスにソフトウェアをプッシュするには、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」にあるその他の要件に加え、Microsoft 365 Business のライセンスをユーザーに付与する必要があります。</span><span class="sxs-lookup"><span data-stu-id="db2a7-p101">This setting is off by default. You can turn it on to ensure that users have the latest version of Office running on all their Windows 10 devices, but should first verify that all prerequisites are met. Users have to be licensed for Microsoft 365 Business for this setting to push the software to the device in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).</span></span> 
+<span data-ttu-id="2cf54-105">既定では、この設定はオフになっています。</span><span class="sxs-lookup"><span data-stu-id="2cf54-105">This setting is off by default.</span></span> <span data-ttu-id="2cf54-106">この機能をオンにして、ユーザーが Windows 10 デバイスすべてに最新バージョンの Office を所有していることを確認できますが、最初にすべての前提条件が満たされていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="2cf54-106">You can turn it on to make sure users have the latest version of Office on all their Windows 10 devices, but first verify that all prerequisites are met.</span></span> <span data-ttu-id="2cf54-107">この設定では、「 [microsoft 365 business による Office クライアントの展開の準備](prepare-for-office-client-deployment.md)」で説明されているその他の要件に加えて、ユーザーが Microsoft 365 business のライセンスを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="2cf54-107">Users must be licensed for Microsoft 365 Business for this setting to push the software to the device, in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).</span></span> 
   
-<span data-ttu-id="db2a7-p102">We recommend you accept the default setting during setup. If you want to have different settings for different groups of users, you can manage Office deployment on a group-by-group basis after setup. Go to **Devices** \> **Manage Office deployment** from the Admin center home. For step-by-step directions, see [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).</span><span class="sxs-lookup"><span data-stu-id="db2a7-p102">We recommend you accept the default setting during setup. If you want to have different settings for different groups of users, you can manage Office deployment on a group-by-group basis after setup. Go to **Devices** \> **Manage Office deployment** from the Admin center home. For step-by-step directions, see [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).</span></span>
-  
-
+<span data-ttu-id="2cf54-108">セットアップ時に既定の設定をそのまま使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2cf54-108">We recommend that you accept the default setting during setup.</span></span> <span data-ttu-id="2cf54-109">If you want to have different settings for different groups of users, you can manage Office deployment on a group-by-group basis after setup.</span><span class="sxs-lookup"><span data-stu-id="2cf54-109">If you want to have different settings for different groups of users, you can manage Office deployment on a group-by-group basis after setup.</span></span> <span data-ttu-id="2cf54-110">Go to **Devices** \> **Manage Office deployment** from the Admin center home.</span><span class="sxs-lookup"><span data-stu-id="2cf54-110">Go to **Devices** \> **Manage Office deployment** from the Admin center home.</span></span> <span data-ttu-id="2cf54-111">For step-by-step directions, see [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).</span><span class="sxs-lookup"><span data-stu-id="2cf54-111">For step-by-step directions, see [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).</span></span>
