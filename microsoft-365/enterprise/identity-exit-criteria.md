@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の ID ベースのサービスとインフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: 84c2b97e064d3dba8a97767a31cc9fe7ccc6dd8c
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 94343400482083b2e793ff218816f06cb982187e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746523"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627393"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>フェーズ 2: ID インフラストラクチャの終了条件
 
@@ -42,7 +42,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 全体管理者アカウントを保護していることを確認するには、次の手順を使用します。
 
 1. PowerShell コマンドプロンプトで、次の Azure Active Directory PowerShell for Graph コマンドを実行します。 専用のグローバル管理者アカウントのリストのみが表示されます。
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. 手順 1 の各アカウントを使用して、Office 365 にサインインします。 それぞれのサインインでは、Azure 多要素認証および組織で使用できる最も強力な2 次認証が必要です。

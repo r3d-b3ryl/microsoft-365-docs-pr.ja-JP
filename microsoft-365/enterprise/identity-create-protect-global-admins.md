@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: グローバル管理者アカウントには、資格情報の侵害から保護できるように特別な対処が必要です。
-ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370214"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627083"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>手順 1: グローバル管理者アカウントを作成して保護する
 
@@ -47,7 +47,7 @@ ms.locfileid: "37370214"
 このセクションの結果は次のとおりです。
 
 - グローバル管理者ロールを持つ、サブスクリプションのユーザー アカウントのみが、専用のグローバル管理者アカウントとなります。 これを確認するには、次の Azure Active Directory PowerShell for Graph コマンドを使用します。 
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - サブスクリプションサービスを管理するその他のユーザー アカウントには、各自の職務に関連する管理ロールが割り当てられています。
