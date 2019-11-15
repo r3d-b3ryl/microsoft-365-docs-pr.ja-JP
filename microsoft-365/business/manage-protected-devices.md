@@ -24,19 +24,21 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 保護ポリシーによって管理されているデバイスをリセットまたはワイプする方法について説明します。
-ms.openlocfilehash: 78eff4b4d29ee5de6f773841cc77239f6acf0634
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ef3b8ed0e3b3f8b9136d3929bce1b835309498c7
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074672"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633331"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business"></a><span data-ttu-id="12bd1-103">Microsoft 365 Business で保護されたデバイスを管理する</span><span class="sxs-lookup"><span data-stu-id="12bd1-103">Manage protected devices with Microsoft 365 Business</span></span>
+# <a name="manage-protected-devices-with-microsoft-365-business"></a><span data-ttu-id="2968b-103">Microsoft 365 Business で保護されたデバイスを管理する</span><span class="sxs-lookup"><span data-stu-id="2968b-103">Manage protected devices with Microsoft 365 Business</span></span>
 
-<span data-ttu-id="12bd1-p101">職場アカウントを使ってデバイスまたはデバイス上の Office アプリにサインインして、ユーザーがデバイスを組織に接続した後、Microsoft ではお客様が設定したポリシーを使ってデバイスを保護することができます。そのデバイスは [ **デバイス**] ページに一覧されます。デバイスの紛失または盗難時に、このページからデバイスを管理して、会社のデータを削除できます。また、Windows 10 デバイスを出荷時の設定にリセットして、カスタム設定を消去することもできます。デバイスを管理するために実行できるタスクの詳細については、次の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="12bd1-p101">After a user connects their device to your organization, by signing in with their work account to the device or to Office apps on the device, we're able to protect the device with the policies that you set up and it will be listed on the **Devices** page. If a device is lost or stolen, you can manage it from this page to remove any company data. You can also reset Windows 10 devices to their factory settings to wipe out any custom settings. For more information on the tasks you can perform to manage devices, please see these articles:</span></span> 
+<span data-ttu-id="2968b-104">ユーザーが自分のデバイスを組織に接続した後、デバイス上のデバイスまたは Office アプリにサインインすることによって、設定したポリシーでデバイスを保護することができます。</span><span class="sxs-lookup"><span data-stu-id="2968b-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="2968b-105">[**デバイス**] ページに、接続されているデバイスが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="2968b-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="2968b-106">デバイスが紛失または盗難にあった場合、このページから管理して、会社のデータを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="2968b-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="2968b-107">また、Windows 10 デバイスを出荷時の設定にリセットして、カスタム設定を消去することもできます。</span><span class="sxs-lookup"><span data-stu-id="2968b-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
+
+<span data-ttu-id="2968b-108">デバイスの管理に使用できるタスクの詳細については、次の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2968b-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
   
-[<span data-ttu-id="12bd1-108">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="12bd1-108">Remove company data from devices</span></span>](remove-company-data.md)
+[<span data-ttu-id="2968b-109">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="2968b-109">Remove company data from devices</span></span>](remove-company-data.md)
   
-[<span data-ttu-id="12bd1-109">Windows 10 デバイスを出荷時の設定にリセットする</span><span class="sxs-lookup"><span data-stu-id="12bd1-109">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
+[<span data-ttu-id="2968b-110">Windows 10 デバイスを出荷時の設定にリセットする</span><span class="sxs-lookup"><span data-stu-id="2968b-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
   
 
