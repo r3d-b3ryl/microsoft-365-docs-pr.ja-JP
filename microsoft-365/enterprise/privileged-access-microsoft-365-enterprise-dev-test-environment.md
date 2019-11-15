@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: このテストラボガイドを使用して、Microsoft 365 Enterprise テスト環境で特権アクセス管理を有効にします。
-ms.openlocfilehash: f701f3f8f74036966de2c516d662ef77341f4842
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: cd90aadd2e473668d8c7f634d3edc777c3380dfb
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033612"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639767"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の特権アクセスの管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "38033612"
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 

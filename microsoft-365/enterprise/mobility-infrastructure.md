@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c507db0d2867b006772f5aca83d8b5342e55113d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031152"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627431"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>フェーズ 5: Microsoft 365 Enterprise のモバイルデバイス管理
 
@@ -62,7 +62,7 @@ Intune では、ドメイン、ユーザー、グループなど、Azure AD の�
 
 3. **[Intune にサインイン](https://docs.microsoft.com/intune/account-sign-up)** します。 サインインするときに、組織に関する情報の入力を求められることがあります。 Intune は Microsoft 365 に含まれており、 [microsoft 365 管理センター](https://admin.microsoft.com)から直接開くことができます。 [Azure ポータル](https://portal.azure.com)から直接 Intune を開くこともできます。
 
-4. **[モバイルデバイス管理の構成を選択](https://docs.microsoft.com/intune/mdm-authority-set)** します。 初めて Intune を使用するときは、デバイスの管理を有効にする必要があります。 Intune は、クラウドのみのサービスとして、Intune および System Center Configuration Manager を使用したハイブリッドとして、または Office 365 用のモバイルデバイス管理を使用して使用できます。 組織に最も適したセットアップを選択できます。
+4. **[モバイルデバイス管理の構成を選択](https://docs.microsoft.com/intune/mdm-authority-set)** します。 初めて Intune を使用するときは、デバイスの管理を有効にする必要があります。 Intune は、クラウドのみのサービス、Intune と Microsoft エンドポイント構成マネージャーを使用したハイブリッド、または Office 365 用のモバイルデバイス管理を使用することができます。 組織に最も適したセットアップを選択できます。
 
 5. **[ユーザーを追加](https://docs.microsoft.com/intune/users-add)** し、**[グループを追加](https://docs.microsoft.com/intune/groups-add)** します。 
 

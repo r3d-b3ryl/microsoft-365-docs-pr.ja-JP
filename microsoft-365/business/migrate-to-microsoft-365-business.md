@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Office 365 Business Premium から Microsoft 365 Business にビジネスをアップグレードする手順。
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231413"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640563"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
 
@@ -36,12 +36,12 @@ Office [365 for business のサブスクリプション](https://products.office
 Microsoft 365 Business の詳細については、「 [Microsoft.com](https://www.microsoft.com/microsoft-365/business) 」を参照してください。
 
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 Business Premium と Microsoft 365 Business の違いは何ですか。
-これらの2つのプランを[Microsoft 365 Business service の説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)に並べて比較しました。 
+これらの2つのプランを[Microsoft 365 Business Service の説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)に並べて比較しました。 
 
 ## <a name="before-you-get-started"></a>開始する前に
 
 - **いつアップグレードを選択する必要がありますか。** アップグレードは、1つのプランに割り当てられた**すべてのユーザー**をアップグレードする場合に最適です。 [アップグレード] を選択すると、すべてのプランユーザーが同時に別のプランに切り替えられます。 1つのプランに割り当てられたすべてのユーザーをアップグレードしない場合は、新しいプラン (この場合は Microsoft 365 Business) のライセンスを購入し、アップグレードするユーザーごとに[これらのライセンスを個別に割り当て](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)ます。 
-- **一部のアドオンはアップグレードを妨げる可能性があります**アップグレードを開始しようとしていて、続行できないアドオンがある場合は、最初にアドオンを削除してから、後で必要に応じて追加することができます。 
+- **一部のアドオンでアップグレードができない場合がある**アップグレードを開始しようとしていて、続行できないアドオンがある場合は、最初にアドオンを削除してから、後で必要になったときに追加することができます。 
 - **プランを前払いした場合**プリペイドプランには、簡単なアップグレードパスはありません。 お客様は、ストアで購入したプロダクト ID を使用してプランを設定することにより、プリペイドプランを所有しているかどうかを確認できます。 パートナーに連絡するか、Microsoft ストアに移動するか、プリペイドプランの期限が切れて新しいプランに切り替えるまで待機します。
 
 ## <a name="upgrade-to-microsoft-365-business"></a>Microsoft 365 Business へのアップグレード
@@ -56,12 +56,12 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
       ![管理センターで、[アップグレード] を選択する場所がスクリーンショットに示されています。](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > 「Azure Active Directory でのサブスクリプションのアップグレードは、グループベースのライセンスでサポートされていません」というメッセージが表示される場合は、非常に大規模な組織でない限り、これは無視しても問題ありません。 このオプションを選択した組織では、グループベースのライセンスを使用していることに注意してください。
+  > **Azure Active Directory でのグループベースのライセンスでサブスクリプションのアップグレードがサポート**されていないというメッセージが表示された場合は、非常に大規模な組織でない限り、これは無視しても問題ありません。 このオプションを選択した組織では、グループベースのライセンスを使用していることに注意してください。
 
 4. 次に、アップグレード可能な Office プランの一覧を表示できます。 この場合は、Microsoft 365 のビジネスプランを検索してください。 このプランに含まれているすべての Office アプリとサービスを表示するには、下にスクロールします。 [ **Microsoft 365 business**] で、[**アップグレード**] を選択して、カートに microsoft 365 Business を追加します。
 5. カート内:
-    1. すべての現在のユーザーのライセンスがカートに自動的に追加されます。 より多くのライセンスが必要な場合は、[これらのライセンスを個別に購入して割り当てる](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)必要があります。  
-    2. 月々または年間の支払方法を調整できます。 ドロップダウンメニューから選択します。
+    1. すべての現在のユーザーのライセンスが自動的に追加されます。 ライセンスの数が増える場合は、[それらのライセンスを個別に購入して割り当てる](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)必要があります。  
+    2. 支払い方法は、月単位または年単位で調整できます。 ドロップダウンメニューから選択します。
 6. [**チェックアウトへ移動**] を選択すると、このアカウントの支払い方法など、購入の概要が表示されます。 また、プロモーションコードを用意している場合は、ここで追加することもできます。
 7. [**注文**] を選択して購入を完了します。
 新しいサービスプランを設定するには、Microsoft に数分かかります。 進行状況を確認するには、[**アップグレード状態の確認**] を選択します。 
@@ -72,13 +72,13 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
   
 ## <a name="protect-user-devices-and-files"></a>ユーザーのデバイスとファイルを保護する
 
-これで、Microsoft 365 Business のライセンスが割り当てられました。次に、デバイスとファイルの保護を開始するための手順を完了します。 管理センターのナビゲーションウィンドウには、新しいオプションがいくつか用意されています。
+これで、Microsoft 365 Business のライセンスが割り当てられました。次に、デバイスとファイルの保護を開始するための手順を完了します。 管理センターのナビゲーションウィンドウには、いくつかの新しいオプションを追加します。
   
 1. 管理センターのナビゲーションウィンドウで、[**デバイス** \> **ポリシー**] に移動します。
     
 2. [**デバイスポリシー** ] ページで、[**追加**] を選択します。
     
-3. [**ポリシーの追加**] ウィンドウで、ポリシーに名前 (たとえば、作業ファイルを保護する) を指定し、ドロップダウンから**ポリシーの種類**を選択します。 
+3. [**ポリシーの追加**] ウィンドウで、ポリシーに名前 (たとえば、作業ファイルを保護する) を指定し、ドロップダウンリストから**ポリシーの種類**を選択します。 
     
     Android および iPhone デバイス上のファイルを保護するためのアプリケーションポリシーおよび Windows 10 を設定し、会社が所有する Windows 10 デバイスのデバイス構成ポリシーを設定できます。 詳細については、次のリンクを参照してください。
     
@@ -96,6 +96,3 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
   - Windows デバイスの手順については、「 [Microsoft 365 Business ユーザーの windows デバイスをセットアップ](set-up-windows-devices.md)する」を参照してください。 
     
   - Android フォンおよび iPhones の手順については、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
-
-
-

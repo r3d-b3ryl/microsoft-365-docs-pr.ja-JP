@@ -24,16 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 保護ポリシーによって管理されているデバイスをリセットまたはワイプする方法について説明します。
-ms.openlocfilehash: 78eff4b4d29ee5de6f773841cc77239f6acf0634
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ef3b8ed0e3b3f8b9136d3929bce1b835309498c7
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074672"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633331"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>Microsoft 365 Business で保護されたデバイスを管理する
 
-職場アカウントを使ってデバイスまたはデバイス上の Office アプリにサインインして、ユーザーがデバイスを組織に接続した後、Microsoft ではお客様が設定したポリシーを使ってデバイスを保護することができます。そのデバイスは [ **デバイス**] ページに一覧されます。デバイスの紛失または盗難時に、このページからデバイスを管理して、会社のデータを削除できます。また、Windows 10 デバイスを出荷時の設定にリセットして、カスタム設定を消去することもできます。デバイスを管理するために実行できるタスクの詳細については、次の記事を参照してください。 
+ユーザーが自分のデバイスを組織に接続した後、デバイス上のデバイスまたは Office アプリにサインインすることによって、設定したポリシーでデバイスを保護することができます。 [**デバイス**] ページに、接続されているデバイスが一覧表示されます。 デバイスが紛失または盗難にあった場合、このページから管理して、会社のデータを削除することができます。 また、Windows 10 デバイスを出荷時の設定にリセットして、カスタム設定を消去することもできます。 
+
+デバイスの管理に使用できるタスクの詳細については、次の記事を参照してください。 
   
 [デバイスから会社のデータを削除する](remove-company-data.md)
   

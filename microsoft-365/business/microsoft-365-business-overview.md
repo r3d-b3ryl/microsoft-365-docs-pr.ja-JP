@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+description: Microsoft 365 Business の詳細については、こちらを参照してください。
+ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038951"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633401"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 
 ## <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは
 
-Microsoft 365 Business は、Office 365 の生産性向上ツールに加えて、ビジネスを脅威から保護し、データを保護し、デバイスを管理するための高度な機能を備えたサブスクリプションサービスです。
+Microsoft 365 Business は、Office 365 プロダクティビティツールに加えて、ビジネスを脅威から保護し、データを保護し、デバイスを管理するための高度な機能を備えたサブスクリプションサービスです。
   
-Microsoft 365 Business は最大300ライセンスを想定しており、さらにライセンスが必要な場合は、「 [microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。
+Microsoft 365 Business は、最大300のライセンスを想定しています。 その他のライセンスが必要な場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。
 
 すべての機能の一覧については、「 [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) 」を参照してください。
   
@@ -43,12 +43,12 @@ Microsoft 365 Business は最大300ライセンスを想定しており、さら
 
 ビジネスデータはさまざまな方法で侵害される可能性があります。 侵害された資格情報を使用してサインインしたり、さまざまなデバイスやアプリケーションの組織データを表示したりすると、ユーザーは組織のセキュリティを侵害することができます。 具体的には、組織のリスクは次のとおりです。
 
-1. 侵害された、または脆弱なサインイン資格情報。
-2. 脆弱なピン、またはユーザーが所有するデバイスを使用して、侵害されたデバイス。
-3. 組織のデータを個人用アプリにコピー/貼り付けまたは保存できるユーザー。
-4. セキュリティが脆弱な3つの<sup>rd</sup>パーティアプリをインストールして使用するユーザー。
-5. 機密データの共有、フィッシングの試行、マルウェアなどを含む電子メールの脆弱性
-6. それ以外のユーザーは、機密情報を含むドキュメントにアクセスできます。
+- 侵害された、または脆弱なサインイン資格情報。
+- 脆弱なピン、またはユーザーが所有するデバイスを使用して、侵害されたデバイス。
+- 組織のデータを個人用アプリにコピー/貼り付けまたは保存できるユーザー。
+- セキュリティが脆弱なサードパーティ製アプリをインストールして使用するユーザー。
+- 電子メールの脆弱性 (機密データの共有、フィッシングの試行、マルウェアなど)。
+- それ以外のユーザーは、機密情報を含むドキュメントにアクセスできます。
 
 Microsoft 365 Business は、これらの各インスタンスのデータを保護するのに役に立ちます。 ビジネスデータを保護するセキュリティ機能については、次の図で説明します。
 
@@ -58,7 +58,7 @@ Microsoft 365 Business は、これらの各インスタンスのデータを保
 
 Microsoft 365 Business は、次のような**脅威からの保護**に貢献します。
 
-安全でない web サイト (ATP の安全なリンク) をブロックするために、電子メールとドキュメントのリンクをリアルタイムでスキャンします。
+- 安全でない web サイト (ATP の安全なリンク) をブロックするために、電子メールとドキュメントのリンクをリアルタイムでスキャンします。
 
 - 新たに開発されたマルウェア (ATP の安全な添付ファイル) を検出するためにサンドボックス環境の電子メール添付ファイルの高度な分析を実行する。 
 
@@ -66,23 +66,23 @@ Microsoft 365 Business は、次のような**脅威からの保護**に貢献�
 
 - 信頼できない場所からのアクセスを無効にしたり、office ネットワークなどの信頼できる場所 (信頼された Ip や条件付きアクセスなど) から多要素認証をバイパスしたりする高度なポリシーを設定します。 
 
-- 会社のすべての Windows 10 デバイスでマルウェア保護を適用し、ランサムウェアによって行われた変更から重要なシステムフォルダー内のファイルを保護します (Windows Defender)
+- 組織のすべての Windows 10 デバイスでマルウェア保護を適用し、ランサムウェアによって行われた変更から重要なシステムフォルダー内のファイルを保護します (Windows Defender)
 
 **ビジネスデータは次の**方法で保護されます。
 
 - 自動検出を使用して、社会保障番号やクレジットカードなどの機密情報がビジネス外で漏洩しないようにします (データ損失防止)。 
 
-- 機密性の高い電子メールを暗号化することで、社外の顧客やその他の人と安全に通信できるようにし、目的の受信者のみがメッセージを読むことができるようにします (Office 365 Message Encryption)。
+- 機密メールを暗号化することで、組織外の顧客やその他の人と安全に通信できるようになります。 これにより、目的の受信者のみがメッセージを読むことができます (Office 365 Message Encryption)。
 
 - 「**コピー**しない」、「メールとドキュメントに**転送**しない」 (Azure information Protection、Plan 1) などの制限を適用して、会社の情報にアクセスできるユーザーを制御します。
 
-- 元従業員のメールボックス (Exchange Online アーカイブ) を含む、すべての企業の電子メールを保持できるように、無制限のクラウドアーカイブを有効にします。
+- 元従業員のメールボックス (Exchange Online アーカイブ) を含む、組織のすべての電子メールを保持できるように、無制限のクラウドアーカイブを有効にします。
 
 デバイスは、次の方法で**セキュリティ保護され**ます。
 
-- Office 365 データにアクセスできるデバイスとユーザーを制御します。ユーザーが自宅のコンピューターから、承認されていないアプリ、または勤務時間外にログオンするのをブロックするオプションがあります (条件付きアクセス)。
+- Office 365 データにアクセスできるデバイスとユーザーを制御します。このオプションを使用すると、ユーザーが自宅のコンピューターからのサインイン、未承認のアプリ、または就業時間外 (条件付きアクセス) をブロックすることができます。
 
-- IOS および Android デバイスのビジネスデータを保護するためのセキュリティポリシーの適用。  たとえば、PIN または指紋を提供して、ビジネスデータにアクセスしたり、モバイルデバイス (Office モバイルアプリのアプリ保護) でデータを暗号化したりするようユーザーに要求することができます。
+- IOS および Android デバイスのビジネスデータを保護するためのセキュリティポリシーの適用。 たとえば、PIN または指紋を提供して、ビジネスデータにアクセスしたり、モバイルデバイス (Office モバイルアプリのアプリ保護) でデータを暗号化したりするようユーザーに要求することができます。
 
 - 承認された Office モバイルアプリ内にビジネスドキュメント、電子メール、その他のデータを保持し、従業員がそれらを承認されていないアプリや場所に保存するのを防ぎます (Office mobile アプリのアプリ保護)。
 
@@ -90,11 +90,11 @@ Microsoft 365 Business は、次のような**脅威からの保護**に貢献�
 
 - 簡素化された制御を使用して、企業内のすべての Windows 10 Pc のポリシーを管理し、BitLocker 暗号化を適用し、重要な Windows 更新プログラムを自動的にインストールします (Windows update ポリシーを適用します)。
 
-セキュリティ機能の完全な一覧については、「 [Microsoft 365 Business security features](security-features.md)」を参照してください。 [Microsoft 365 Business](set-up.md)のセットアップ後に、ガイド付きセットアップの一部として含まれていないセキュリティ機能を使用して作業を開始するには、「 [advanced Security policies をセットアップ](set-up-advanced-security.md)する」を参照してください。 また、 [Office 365 および Microsoft 365 のビジネスプランを保護する](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)ための10の方法についても説明します。これは、サイバー犯罪およびハッカーに対する保護を設定する方法の概要を示しています。
+セキュリティ機能の完全な一覧については、「 [Microsoft 365 Business security features](security-features.md)」を参照してください。 [Microsoft 365 Business](set-up.md)をセットアップした後、ガイド付きセットアップの一部として含まれていないセキュリティ機能を使用して作業を開始するには、「 [advanced Security policies をセットアップ](set-up-advanced-security.md)する」を参照してください。 また、 [Office 365 および Microsoft 365 のビジネスプランを保護する](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)ための10の方法についても説明します。これは、サイバー犯罪およびハッカーに対する保護を設定する方法の概要を示しています。
 
 ## <a name="get-microsoft-365-business"></a>Microsoft 365 Business を入手する
 
-- パートナーがいる場合、パートナーは Microsoft 365 Business を入手します: [Microsoft パートナー センターから Microsoft 365 Business を購入する](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)。
+- パートナーがいる場合は、microsoft 365 Business: microsoft[パートナーセンターから microsoft 365 business を取得](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)することになります。
 
 - パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)して、[サインアップ](sign-up.md)の手順に従うことができます。
 

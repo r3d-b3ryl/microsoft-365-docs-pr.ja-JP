@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントに対して Office 365 保持ラベルを作成して使用します。
-ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1bcd3ab2d8069ad85d48ecf682d3b7d49e7cf739
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072417"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639787"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデータ分類
 
@@ -26,9 +26,9 @@ ms.locfileid: "34072417"
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
 最小要件での軽量な方法で Office 365 の保持ラベルを構成する場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
@@ -93,21 +93,21 @@ ms.locfileid: "34072417"
     
 3. ブラウザーの新しい [ **SharePoint** ] タブで、[**サイトの作成**] をクリックします。
     
-4. **[サイトの作成]** ページで、**[チーム サイト]** をクリックします。
+4. **[サイトの作成]** ページで、 **[チーム サイト]** をクリックします。
     
 5. [**チームサイト名**] に、「 **SensitiveFiles**」と入力します。
     
 6. [**チームサイトの説明**] に、「**機密ファイル用の SharePoint サイト**」と入力します。
     
-7.  **[プライバシー設定]** で、**[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。
+7.  **[プライバシー設定]** で、 **[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。
     
-8. **[誰を追加しますか]** ウィンドウで、**[完了]** をクリックします。
+8. **[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。
     
 次に、機密保持ラベル用に SensitiveFiles チームサイトのドキュメントフォルダーを構成します。
   
 1. ブラウザーの [ **SensitiveFiles** ] タブで、[**ドキュメント**] をクリックします。
     
-2. [設定] アイコンをクリックしてから、**[ライブラリの設定]** をクリックします。
+2. [設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。
     
 3. **[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。
     
@@ -115,7 +115,7 @@ ms.locfileid: "34072417"
 
 次に、SensitiveFiles サイトで新しいドキュメントを作成し、そのアイテム保持ラベルを変更します。
     
-1. Documents フォルダーで、[ **New _GT_ Word document**] をクリックします。
+1. Documents フォルダーで、[**新しい > Word 文書**] をクリックします。
     
 2. 空白のドキュメントにテキストを入力します。 テキストが保存されるまで待機します。
     

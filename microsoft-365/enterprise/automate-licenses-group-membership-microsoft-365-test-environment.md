@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 Enterprise テスト環境で、グループベースのライセンスと動的なグループメンバーシップを構成します。
-ms.openlocfilehash: cb01e1a405e7cff1f9965e34751b3ce638dd8018
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c3b515a9b453275f9b79ba2b90d5a4c14611c2aa
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071726"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639797"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のライセンスとグループメンバーシップを自動化する
 
@@ -32,9 +32,9 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
 最小要件での軽量な方法で自動化されたライセンスとグループメンバーシップをテストする場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
@@ -67,7 +67,7 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 2. 一覧で、 **[Enterprise Mobility + Security E5]** と **[Office 365 Enterprise E5]** を選択し、 **[割り当て]** をクリックします。
 3. [**ライセンスの割り当て**] ブレードで、[**ユーザーとグループ**] をクリックします。
 4. グループの一覧で、[ **Sales** ] グループを選択します。
-5. **[選択]** をクリックし、 **[割り当て]** をクリックします。
+5. **[選択]** をクリックし、**[割り当て]** をクリックします。
 6. ブラウザーの [Azure Portal] タブを閉じます。
 
 次に、ユーザー4アカウントの動的グループメンバーシップと自動ライセンスをテストします。 

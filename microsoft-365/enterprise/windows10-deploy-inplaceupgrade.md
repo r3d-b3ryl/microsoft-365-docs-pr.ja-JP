@@ -1,7 +1,7 @@
 ---
 title: インプレース アップグレードによる Windows 10 Enterprise の既存デバイスへの展開
-description: System Center Configuration Manager を使用して、一括アップグレードとして Windows 10 Enterprise イメージを構成および展開するためのガイダンスを提供します。
-keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、Windows 10 Enterprise、deployment、一括アップグレード、構成マネージャー、System Center Configuration Manager
+description: Microsoft エンドポイント構成マネージャーを一括アップグレードとして使用して Windows 10 Enterprise イメージを構成および展開する方法についてのガイダンスを提供します。
+keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、Windows 10 Enterprise、deployment、一括アップグレード、構成マネージャー、構成マネージャー
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7dfa5c72a98dacc7a772ea034df6696621a8ef6
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f3a518ca448bf56c4328bbc34fe29a41d5f16488
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302934"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627471"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>手順 2: 既存のデバイス用に Windows 10 Enterprise を一括アップグレードとして展開する
 
@@ -23,13 +23,13 @@ ms.locfileid: "38302934"
 
 ![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-現在 Windows 7 または Windows 8.1 を実行している Pc をアップグレードするための最も単純なパスは、一括アップグレードを使用しています。 System Center Configuration Manager (構成マネージャー) のタスクシーケンスを使用して、プロセスを完全に自動化することができます。 
+現在 Windows 7 または Windows 8.1 を実行している Pc をアップグレードするための最も単純なパスは、一括アップグレードを使用しています。 構成マネージャー (構成マネージャー) のタスクシーケンスを使用して、プロセスを完全に自動化することができます。 
 
 Windows 7 または Windows 8.1 を実行している既存のコンピューターがある場合は、組織で Windows 10 を展開している場合はこのパスを使用することをお勧めします。 Windows インストールプログラム (Setup.exe) を活用して一括アップグレードを実行すると、既存のオペレーティングシステムのバージョンからすべてのデータ、設定、アプリケーション、およびドライバーが自動的に保持されます。 複雑な展開インフラストラクチャは必要ないため、これには最小限の IT 作業が必要になります。
 
 構成マネージャーを一括アップグレードとして使用して Windows 10 Enterprise のイメージを構成および展開するには、次の手順を実行します。
 
-## <a name="the-windows-10-deployment-with-system-center-configuration-manager-poster"></a>System Center Configuration Manager ポスターを使用した Windows 10 の展開
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>構成マネージャーポスターを使用した Windows 10 展開
 
 構成マネージャーのポスターは、横モード (17x11) の1つのページです。 ブラウザーに PDF を表示するには、以下の画像をクリックします。 
 
@@ -43,9 +43,9 @@ Windows 7 または Windows 8.1 を実行している既存のコンピュータ
 
 詳細については、「[アップグレードの準備をして Windows アップグレードを管理](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)する」を参照してください。詳細については、「アップグレードの準備状況」をご覧ください。
 
-次に、ガイドに従って System Center Configuration Manager (Current Branch) を使用し、windows 7 以降のオペレーティングシステムを Windows 10 にアップグレードします。 高リスク展開の場合と同様に、先に進む前にユーザーデータをバックアップすることをお勧めします。 OneDrive クラウドストレージは、Microsoft 365 ユーザーのライセンスを使用する準備が整っており、そのファイルを安全に保存するために使用できます。 詳細については、「 [OneDrive クイックスタートガイド](https://aka.ms/ODfBquickstartguide)」を参照してください。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのテナント管理者またはグローバル管理者としてサインインする必要があります。
+次に、ガイドに従って構成マネージャー (Current Branch) を使用して、Windows 7 以降のオペレーティングシステムを Windows 10 にアップグレードします。 高リスク展開の場合と同様に、先に進む前にユーザーデータをバックアップすることをお勧めします。 OneDrive クラウドストレージは、Microsoft 365 ユーザーのライセンスを使用する準備が整っており、そのファイルを安全に保存するために使用できます。 詳細については、「 [OneDrive クイックスタートガイド](https://aka.ms/ODfBquickstartguide)」を参照してください。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのテナント管理者またはグローバル管理者としてサインインする必要があります。
 
-Configuration Manager のバージョンと、対応する Windows 10 クライアントのバージョンの一覧については、「 [System Center Configuration manager での windows 10 のサポート](https://aka.ms/supportforwin10sccm)」を参照してください。
+Configuration Manager のバージョンと、対応する Windows 10 クライアントのバージョンの一覧については、「 [Configuration manager の windows 10 のサポート](https://aka.ms/supportforwin10sccm)」を参照してください。
 
 **Windows のアップグレードの準備状況を確認するには**
 
@@ -58,12 +58,12 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
     - ユーザーデータのバックアップ-ユーザーデータはアップグレードに移行されますが、バックアップシナリオを構成することをお勧めします。 たとえば、すべてのユーザーデータを OneDrive アカウントにエクスポートし、BitLocker から Go に暗号化された USB フラッシュドライブ、またはネットワークファイルサーバーをエクスポートします。 詳細については、「 [Windows でデータをバックアップまたは転送](https://aka.ms/backuptransferdatawindows)する」を参照してください。
 - **環境の準備**-既存の Configuration Manager サーバー構造を使用して、オペレーティングシステムの展開を準備します。 構成マネージャー環境では、基本設定に加えて、次の構成を行う必要があります。
     1. [Active Directory スキーマを拡張](https://aka.ms/extendadschema)し、 [System Management コンテナーを作成](https://aka.ms/createsysmancontainer)します。
-    2. Active Directory フォレストの探索と Active Directory システムの検出を有効にします。 詳細については、「 [Configure discovery メソッド For System Center Configuration Manager](https://aka.ms/configurediscoverymethods)」を参照してください。
-    3. コンテンツおよびサイト割り当ての IP 範囲の境界と境界グループを作成します。 詳細については、「 [System Center Configuration Manager のサイト境界と境界グループを定義する](https://aka.ms/definesiteboundaries)」を参照してください。
+    2. Active Directory フォレストの探索と Active Directory システムの検出を有効にします。 詳細については、「 [Configure discovery メソッド For Configuration Manager](https://aka.ms/configurediscoverymethods)」を参照してください。
+    3. コンテンツおよびサイト割り当ての IP 範囲の境界と境界グループを作成します。 詳細については、「 [Configuration Manager のサイト境界と境界グループを定義する](https://aka.ms/definesiteboundaries)」を参照してください。
     4. Configuration Manager reporting services ポイントの役割を追加して構成します。 詳細については、「 [Configuration Manager でレポートを構成する](https://aka.ms/configurereporting)」を参照してください。
     5. パッケージ用のファイルシステムフォルダー構造を作成します。
     6. パッケージ用の Configuration Manager コンソールフォルダー構造を作成します。
-    7. System Center Configuration Manager (現在のブランチ) 更新プログラムおよび追加の Windows 10 前提条件をインストールします。
+    7. 構成マネージャー (現在のブランチ) 更新プログラムと追加の Windows 10 前提条件をインストールします。
 
 ## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>パート 2: 構成マネージャーを使用して Windows 10 OS イメージを追加する
 ここで、完全な Windows 10 インストールメディアを含むオペレーティングシステムアップグレードパッケージを作成する必要があります。 次の手順では、Configuration Manager を使用して Windows 10 Enterprise x64 のアップグレードパッケージを作成します。
@@ -94,7 +94,7 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 アップグレードタスクシーケンスを作成した後、アップグレードするデバイスを含むコレクションを作成する必要があります。
 
 > [!NOTE]
-> 次の設定を使用して、単一のデバイスで展開をテストします。 準備が整ったら、さまざまなメンバーシップルールを使用してデバイスのグループを含めることができます。 詳細については、「 [System Center Configuration Manager でコレクションを作成する方法](https://aka.ms/sccm-create-collections)」を参照してください。
+> 次の設定を使用して、単一のデバイスで展開をテストします。 準備が整ったら、さまざまなメンバーシップルールを使用してデバイスのグループを含めることができます。 詳細については、「 [Configuration Manager でコレクションを作成する方法](https://aka.ms/sccm-create-collections)」を参照してください。
 
 1. 構成マネージャーコンソールの [**アセットとコンプライアンス**] ワークスペースで、[**デバイスコレクション**] を右クリックし、[**デバイスコレクションの作成**] を選択します。 
 2. [デバイスコレクションの作成] ウィザードの **[全般**] ページで、次の設定を入力し、[**次へ**] を選択します。

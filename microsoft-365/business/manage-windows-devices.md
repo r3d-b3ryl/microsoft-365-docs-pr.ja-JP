@@ -20,20 +20,20 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Microsoft 365 を有効にして、ローカルの AD に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: 392c57a7350a901c1481be632e880cc9fcaa6140
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Microsoft 365 を有効にして、ローカルの Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
+ms.openlocfilehash: 93e3364fc94f3878bec13d0a87b17a7d3678a4cc
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575980"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633271"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする
 
 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。
-これを設定するために、 **AZURE AD に参加**しているハイブリッドデバイスを実装することができます。 これらは、オンプレミスの Active Directory と Azure Active Directory の両方に参加しているデバイスです。
+この保護をセットアップするには、**ハイブリッド AZURE AD に参加**しているデバイスを実装します。 これらのデバイスは、オンプレミスの Active Directory と Azure Active Directory の両方に参加します。
 
-次のビデオでは、次の手順でも説明する最も一般的なシナリオに対して、この設定を行うための手順を説明します。
+このビデオでは、最も一般的なシナリオに対してこれを設定する手順について説明します。これについては、以下の手順でも詳細に説明します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
@@ -42,11 +42,11 @@ ms.locfileid: "37575980"
 
 ローカル Active Directory ドメインからユーザーとコンピューターを同期する前に、「 [Office 365 へのディレクトリ同期の準備](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)」を参照してください。 特に次のようになります。
 
-   - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail**、 **ProxyAddresses**、および**userPrincipalName**。 これらの値は一意である必要があり、重複がある場合は削除する必要があります。
+   - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail**、 **ProxyAddresses**、および**userPrincipalName**。 これらの値は一意である必要があり、重複して削除する必要があります。
    
-   - 各ローカルユーザーアカウントの**userPrincipalName** (UPN) 属性は、ライセンスが付与された Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 たとえば、 *mary @ contoso*という*mary.shelley@contoso.com*ではなく、
+   - 各ローカルユーザーアカウントの**userPrincipalName** (UPN) 属性を、ライセンスされた Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 例: mary.shelley@contoso.com ではなく*mary@contoso* 、 **
    
-   - Active Directory ドメインが、 *.com*または *.org*などのインターネットでルーティング可能なサフィックスではなく、*ローカル*のサフィックスまたは*lan*などのルーティングできないサフィックスで終わっている場合は、まず、次に示すように、最初にローカルユーザーアカウントの UPN サフィックスを調整する必要があります。[ルーティング不能なドメインをディレクトリ同期用に準備](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)します。 
+   - Active Directory ドメインが、 *.com*または *.org*などのインターネットでルーティング可能なサフィックスの代わりに、*ローカル*ユーザーアカウントの UPN サフィックスではなく、ルーティング可能*ではない*サフィックスで終わっている場合は、「[ディレクトリ同期のために非ルーティングドメインを準備する](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)」で説明されているように、まずローカルユーザーアカウントの UPN サフィックスを調整します。 
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. Azure AD Connect をインストールして構成します。
 
@@ -55,28 +55,28 @@ ms.locfileid: "37575980"
 > [!NOTE]
 > この手順は、Microsoft 365 Business の場合とまったく同じです。 
 
-Azure AD Connect のオプションを構成する際には、**パスワード同期**と**シームレスなシングルサインオン**、および Microsoft 365 Business でもサポートされている**パスワード書き戻し**機能を有効にすることをお勧めします。
+Azure AD Connect のオプションを構成する際には、**パスワード同期**、**シームレスシングルサインオン**、**パスワード書き戻し**機能を有効にすることをお勧めします。これは、Microsoft 365 Business でもサポートされています。
 
 > [!NOTE]
 > Azure AD Connect のチェックボックスを超えてパスワードを書き戻しするには、いくつかの追加の手順があります。 詳細については、「[方法: パスワードの書き戻しを構成](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)する」を参照してください。 
 
 ## <a name="3-configure-hybrid-azure-ad-join"></a>3. ハイブリッド Azure AD Join を構成する
 
-ハイブリッド Azure AD に参加するように Windows 10 デバイスを有効にする前に、次の前提条件を満たしていることを確認する必要があります。
+ハイブリッド Azure AD に参加するように Windows 10 デバイスを有効にする前に、次の前提条件を満たしていることを確認してください。
 
-   - Azure AD connect の最新バージョンを実行していること。
+   - Azure AD Connect の最新バージョンを実行していること。
 
    - Azure AD connect は、ハイブリッド Azure AD に参加させるデバイスのすべてのコンピューターオブジェクトを同期しています。 コンピューターオブジェクトが特定の組織単位 (OU) に属している場合は、それらの Ou が Azure AD connect の同期にも設定されていることを確認してください。
 
-ハイブリッド Azure AD に参加している既存のドメインに参加している Windows 10 デバイスを登録するには、[チュートリアル「管理ドメインのハイブリッド Azure Active Directory の参加を構成](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)する」の手順を実行します。 これにより、既存のオンプレミスの Active Directory に参加している Windows 10 台のコンピューターをハイブリッドにして、クラウドの準備を行うことができます。
+ハイブリッド Azure AD に参加している既存のドメインに参加している Windows 10 デバイスを登録するには、[チュートリアル「管理ドメインのハイブリッド Azure Active Directory の参加を構成](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)する」の手順を実行します。 このハイブリッドにより、既存のオンプレミスの Active Directory が Windows 10 台のコンピューターに参加し、クラウドを準備できるようになります。
     
 ## <a name="4-enable-automatic-enrollment-for-windows-10"></a>4. Windows 10 の自動登録を有効にする
 
- Intune でモバイルデバイス管理用に Windows 10 デバイスを自動的に登録するには、「[グループポリシーを使用して windows 10 デバイスを自動的に登録](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)する」を参照してください。 グループポリシーをローカルコンピューターレベルで設定したり、一括操作に使用したりすることができます。このグループポリシー設定は、グループポリシー管理コンソールと ADMX テンプレートを使用してドメインコントローラー上に作成できます。
+ Intune でモバイルデバイス管理用に Windows 10 デバイスを自動的に登録するには、「[グループポリシーを使用して windows 10 デバイスを自動的に登録](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)する」を参照してください。 グループポリシーをローカルコンピューターレベルで設定することも、一括操作の場合は、グループポリシー管理コンソールおよび ADMX テンプレートを使用して、ドメインコントローラーにこのグループポリシー設定を作成することもできます。
 
 ## <a name="5-configure-seamless-single-sign-on"></a>5. シームレスなシングルサインオンを構成する
 
-  ユーザーが企業のコンピューターを使用すると、シームレスな SSO によって自動的に Microsoft 365 クラウドリソースに署名されます。 「 [Azure Active Directory シームレスシングルサインオン: クイックスタート](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature)」に記載されている2つのグループポリシーオプションのいずれかを展開するだけです。 [**グループポリシー** ] オプションでは、ユーザーが設定を変更することはできませんが、**グループポリシーの優先順位**オプションで値が設定されていても、ユーザーが構成可能なままになります。
+  シームレスな SSO は、企業のコンピューターを使用している場合に、ユーザーの Microsoft 365 クラウドリソースに自動的に署名します。 「 [Azure Active Directory シームレスシングルサインオン: クイックスタート](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature)」に記載されている2つのグループポリシーオプションのいずれかを展開するだけです。 [**グループポリシー] オプション**では、ユーザーが設定を変更することはできませんが、**グループポリシーの優先順位**オプションで値が設定されていて、ユーザーが構成可能なままになります。
 
 ## <a name="6-set-up-windows-hello-for-business"></a>6. Windows Hello for Business のセットアップ
 

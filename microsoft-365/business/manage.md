@@ -18,21 +18,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Microsoft 365 Business 関連の管理タスク、モバイルデバイス、Windows 10PCs、およびその他の多くのタスクを管理する方法について説明します。
-ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Microsoft 365 Business 関連の管理タスク、モバイルデバイス、Windows 10 Pc、その他の多くのタスクを管理する方法について説明します。
+ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575960"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633311"
 ---
 # <a name="manage-microsoft-365-business"></a>Microsoft 365 Business の管理
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Microsoft 365 Business の一般的な管理タスク
 
-Office 365 for business の[管理者向けコンテンツ](/Office365/Admin/admin-home.md)のほとんどは、Microsoft 365 business にも適用されます。
+一般法人向け Office 365 の[管理者向けコンテンツ](/Office365/Admin/admin-home.md)のほとんどは、Microsoft 365 business にも適用されます。
 
-- [Microsoft 365 Business にその他のユーザーを追加する](add-users-m365b.md)
+- [Microsoft 365 Business にさらにユーザーを追加する](add-users-m365b.md)
     
 - [ポリシーとデバイスの表示](view-policies-and-devices.md)
     
@@ -40,7 +40,7 @@ Office 365 for business の[管理者向けコンテンツ](/Office365/Admin/adm
     
 - [Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法](map-protection-features-to-intune-settings.md)
     
-Microsoft 365 Business を使用して PC およびモバイル デバイス上の組織のデータを保護する方法については、次のセクションを参照してください。
+Microsoft 365 Business を使用して、組織のデータを Pc やモバイルデバイスで保護する方法については、以下のセクションを参照してください。
   
 ## <a name="manage-mobile-devices"></a>モバイル デバイスの管理
 
@@ -48,7 +48,7 @@ Microsoft 365 Business を使用して PC およびモバイル デバイス上�
     
 - [Android または iOS デバイスのアプリ保護設定を設定する](app-protection-settings-for-android-and-ios.md)
     
-    これが正常に動作することを確認するに[は、Android または iOS デバイスでアプリ保護設定を検証](validate-settings-on-android-or-ios.md)するを参照してください。 
+    この動作を確認するには、「 [Android または iOS デバイスのアプリ保護設定を検証](validate-settings-on-android-or-ios.md)する」を参照してください。 
     
 - [デバイスから会社のデータを削除する](remove-company-data.md)
     
@@ -62,11 +62,11 @@ Microsoft 365 Business を使用して PC およびモバイル デバイス上�
     
 - [Windows 10 デバイスのデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)
     
-    「[Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md)」 (Windows 10 デバイスでデバイス保護設定を検証する) で、方法を確認します。 
+    この動作を確認するには、「 [Windows 10 デバイスでデバイス保護設定を検証](validate-settings-on-windows-10-pcs.md)する」を参照してください。 
     
 - [Windows 10 デバイスのアプリケーション保護設定を設定する](protection-settings-for-windows-10-devices.md)
     
-    「 [Windows 10 デバイスでアプリの保護設定を検証する](validate-protection-settings-on-windows-10-pcs.md)」で、方法を確認します。 
+    この動作を確認するには、「 [Windows 10 pc でアプリ保護設定を検証](validate-protection-settings-on-windows-10-pcs.md)する」を参照してください。 
     
 - [デバイスから会社のデータを削除する](remove-company-data.md)
     
@@ -88,9 +88,9 @@ Microsoft 365 Business を使用して PC およびモバイル デバイス上�
     
 - [AutoPilot プロファイルの設定について](autopilot-profile-settings.md)
     
-## <a name="set-up-and-pre-requisite-information"></a>セットアップと前提条件に関する情報
+## <a name="set-up-and-prerequisite-information"></a>セットアップと前提条件に関する情報
 
-- [Microsoft 365 Business でデバイス上のデータを保護するための前提条件](pre-requisites-for-data-protection.md)
+- [Microsoft 365 Business を使用してデバイス上のデータを保護するための前提条件](pre-requisites-for-data-protection.md)
     
 - [セットアップ ウィザードを使用して Microsoft 365 Business をセットアップする](set-up.md)
     
@@ -98,8 +98,4 @@ Microsoft 365 Business を使用して PC およびモバイル デバイス上�
     
 - [Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする](manage-windows-devices.md)
     
-[その他のセキュリティ機能](security-features.md#additional-security-features)
-    
-
-  
-
+- [その他のセキュリティ機能](security-features.md#additional-security-features)

@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の Microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: d51f9ada68969823eadbb4fad55392358a6ddee8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f430acb4a7fd1842a4ae26025ad5a63cccf8392f
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072137"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640369"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズテスト環境の Microsoft 365 セキュリティの強化
 
@@ -26,9 +26,9 @@ ms.locfileid: "34072137"
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
 最小要件での軽量な方法で、強化された Microsoft 365 セキュリティを構成するだけの場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
@@ -61,11 +61,11 @@ ms.locfileid: "34072137"
 
 Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsoft Teams は、悪意のあるファイルを誤って共有することから組織を保護します。
 
-1. [Office 365 Security _AMP_ コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
+1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
 
-2. 左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー _GT_ 安全な添付ファイル**] を選択します。 
+2. 左側のナビゲーションウィンドウで、[**脅威の管理**] の下の [**ポリシー > 安全な添付ファイル**] を選択します。 
 
-3. [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。
+3. **[SharePoint、OneDrive、および Microsoft Teams に対して ATP を有効にする]** をオンにします。
 
 4. **[保存]** をクリックします。
 
@@ -74,7 +74,7 @@ Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsof
 
 マルウェアは、ウイルスとスパイウェアから構成されます。 ウイルスは、他のプログラムやデータに感染し、感染できるプログラムを探してコンピューター全体に蔓延します。 スパイウェアは、サインイン情報および個人データなどの個人情報を収集して作成者に送り返すマルウェアです。 
 
-Office 365 には、受信および送信メッセージを悪意のあるソフトウェアから保護し、スパムから保護するのに役立つ、組み込みのマルウェアおよびスパムフィルタリング機能が用意されています。 詳細については、「[スパム対策 & のマルウェア対策保護 (Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection) )」を参照してください。
+Office 365 には、受信および送信メッセージを悪意のあるソフトウェアから保護し、スパムから保護するのに役立つ、組み込みのマルウェアおよびスパムフィルタリング機能が用意されています。 詳細については、「 [Office のスパム対策 & マルウェア対策保護](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)」を参照してください365
 
 一般的な添付ファイルの種類を持つファイルに対してマルウェア対策処理が実行されることを確認するには、次のようにします。
 
@@ -101,9 +101,9 @@ Office 365 Cloud App Security, previously known as Office 365 Advanced Security 
 !-->
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-これらの設定を運用環境で構成する情報およびリンクについては、情報保護フェーズの「365 Microsoft のセキュリティを構成する」の手順を参照してください。
+これらの設定を運用環境で構成する情報およびリンクについては、**情報保護**フェーズの「 [365 Microsoft のセキュリティを構成](infoprotect-configure-increased-security-office-365.md)する」の手順を参照してください。
 
 テスト環境でのその他の[情報保護](m365-enterprise-test-lab-guides.md#information-protection)機能と機能について説明します。
 

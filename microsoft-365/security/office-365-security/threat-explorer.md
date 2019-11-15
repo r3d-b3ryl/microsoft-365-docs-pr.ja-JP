@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: 70073197091e75ae7ca2740b9be53edce87e1d8a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 01985c69d1d89536d16b166eafc23df37ee53d0a
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030711"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639893"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -79,6 +79,18 @@ ms.locfileid: "38030711"
 **電子メールのタイムライン**は、管理者にとって、探しやすさを向上させるための別の新しいエクスプローラー機能です。 イベントを理解するためにさまざまな場所をチェックするのにかかる時間が短くなるため、ランダム化が減少します。 複数のイベントが電子メールで同時に発生するか、または同じ時刻に終了すると、これらのイベントがタイムラインビューに表示されます。 実際、メールへの配信の後に発生する一部のイベントは、[特殊な操作] 列に記録されます。 メールのタイムラインからの情報をメールの送信後の特別なアクションと組み合わせることにより、管理者は、ポリシーがどのように機能するか、メールが最後にルーティングされたか、場合によっては最終的な評価がどのようなものかを把握できるようになります。
 
 悪意のあるメールの調査の詳細については[、「Office 365 で配信された悪意のある電子メールの検索と調査](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered)」を参照してください。
+
+
+また、Microsoft Excel に**レポートをエクスポート**して、ネットワークメッセージ ID とその両方のクリック Verdict を表示することができるようになり、トラフィックがより簡単になる場所を理解することができます。 そのしくみは次のとおりです。 Office 365 のクイック起動での脅威管理の開始で、次のチェーンをクリックします。
+
+**エクスプローラー > 表示フィッシング > クリック > トップの Url**
+
+一覧の URL をクリックすると、フライアウトパネルに新しい [エクスポート] ボタンが表示されます。 このボタンを使用して、レポートを容易にするために、データを Excel スプレッドシートに移動します。
+
+> [!TIP]
+> ネットワークメッセージ ID エクスプローラーまたは関連するサードパーティ製のツールでネットワークメッセージ ID を使用して検索したときに、[クリック戻る] を特定のメールにマップします。 ネットワークのメッセージ ID を検索すると、クリックの結果に関連付けられた特定の電子メールが管理者に付与されます。 エクスポートが行われると、ネットワークメッセージ ID の相関 id があるため、より迅速かつ強力な分析が可能になります。
+
+![tp_ExportClickResultAndNetworkID .png](../../images/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
 

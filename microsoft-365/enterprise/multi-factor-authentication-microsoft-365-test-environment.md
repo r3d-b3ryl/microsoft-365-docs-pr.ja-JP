@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 エンタープライズテスト環境でスマートフォンに送信されるテキストメッセージを使用して、多要素認証を構成します。
-ms.openlocfilehash: f209c3cebaefd8b4bddafb68471c35e5c37905be
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6c004f1ac093a997c263162ab8c945366f6361bd
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071576"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639907"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境用の多要素認証
 
@@ -35,9 +35,9 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> [ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise テスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
 最小要件での軽量な方法で多要素認証をテストする場合は、「[ライトウェイトの基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
@@ -74,7 +74,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     
 2. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、User 2 のアカウント名とパスワードを使用してサインインします。
     
-3. サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。 **[次へ]** をクリックします。
+3. サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。 [**次へ**] をクリックします。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -84,7 +84,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     
    - [**メソッド**] の [**テキストメッセージでコードを送信する**] をクリックします。
     
-5. **[次へ]** をクリックします。
+5. [**次へ**] をクリックします。
     
 6. スマート フォンで受信したテキスト メッセージに記載されている確認コードを入力して、**[確認]** をクリックします。
     

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business から Microsoft 365 Enterprise E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 77760aa8ea5b79f39d4c069d86e79a3cec6844e9
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931855"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640786"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Microsoft 365 Business から Microsoft 365 Enterprise E3 への移行
 
@@ -87,13 +87,13 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 
 ## <a name="migration"></a>移行
 
-移行するには、パートナーと協力して microsoft 365 Business のサブスクリプションとライセンスを Microsoft 365 Enterprise E3 サブスクリプションに適切なライセンスで移行してください。
+移行するには、パートナーと協力して、Microsoft 365 Business のサブスクリプションとライセンスを、そのライセンスを使用して適切な Microsoft 365 Enterprise E3 サブスクリプションに移行します。
 
 次のセクションでは、移行後に行う必要のある変更点と、その変更について説明します。
 
 ### <a name="microsoft-365-subscription-configuration-and-data"></a>Microsoft 365 サブスクリプションの構成とデータ
 
-移行する前に、現在のサブスクリプションまたはデータを変更する必要はありません。これには、以下が含まれます。
+移行する前に、現在のサブスクリプションまたはデータを変更する必要はありません。次のようなものがあります。
 
 - サブスクリプションの構成 (DNS ドメイン名など)。
 - ユーザーおよびグループのアカウントと、複数要素の認証や条件付きアクセスポリシーなどの認証設定。
@@ -132,7 +132,7 @@ Windows 10 Enterprise E3 には、Microsoft Edge のハードウェアベース�
 
 ### <a name="device-management-with-intune"></a>Intune を使用したデバイス管理
 
-移行前に現在の Intune 構成を変更する必要はありません。これには、登録済みのデバイスとデバイスおよびアプリの設定が含まれます。
+移行前に現在の Intune 構成を変更する必要はありません。これには、登録されたデバイスとデバイスおよびアプリの設定が含まれます。
 
 ### <a name="windows-10"></a>Windows 10
 

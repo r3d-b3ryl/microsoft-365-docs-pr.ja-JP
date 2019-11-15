@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 0f7b4ddec9c52861b4ecf4a7e86831efcce402d6
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370264"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627461"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>手順 5: Windows 10 Enterprise のセキュリティ機能を展開する
 
@@ -58,7 +58,7 @@ Windows Defender AV を展開および管理するには、次のガイダンス
 [Windows DEFENDER av 保護評価ガイド](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus)を使用すると、ネットワーク上の WINDOWS defender av の保護レベルと影響を評価するのに役立ちます。 これは、初期構成を作成したり、' クイックスタートガイド ' として使用したりする場合にも役立ちます。また、機能を構成および有効にして最大限の保護を実現するための推奨事項を提示するように定期的に更新されています。
 
 ### <a name="reporting"></a>Reporting
-System Center Configuration Manager、Microsoft Intune などの構成ツールを使用してレポートを取得できます。 また、更新プログラムのコンプライアンス (OMS) または SIEM で Windows イベントログを使用してレポートを取得することもできます。 Microsoft Defender ATP のライセンスを所有している場合は、Windows Defender AV 検出にレポートを取得し、基本的な修復を実行することもできます。 詳細については、以下のリソースを参照してください。
+レポートは、Microsoft エンドポイント構成マネージャーや Microsoft Intune などの構成ツールを使用して取得できます。 また、更新プログラムのコンプライアンス (OMS) または SIEM で Windows イベントログを使用してレポートを取得することもできます。 Microsoft Defender ATP のライセンスを所有している場合は、Windows Defender AV 検出にレポートを取得し、基本的な修復を実行することもできます。 詳細については、以下のリソースを参照してください。
 * [Windows Defender AV の展開、管理、およびレポート](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
 * [Windows Defender AV protection に関するレポート](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
 * [Microsoft Defender ATP ポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
@@ -82,7 +82,7 @@ Windows Defender Exploit Guard を展開、管理、および構成するには�
 一連の評価トピックを使用して、ネットワークに対する Windows Defender Exploit Guard の保護レベルと影響を評価することができます。 これは、初期構成を作成したり、' クイックスタートガイド ' として使用したりする場合にも役立ちます。また、トピックとガイダンスは定期的に更新されており、最大限の保護を確保するために、機能を構成して有効にするための最も役立つ推奨事項を提供します。 詳細については、 [Windows Defender Exploit Guard を評価](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard)してください。
 
 ### <a name="reporting"></a>Reporting
-System Center Configuration Manager または Intune などの構成ツールを使用してレポートを取得することができます。 SIEM で Windows イベントログを使用してレポートを取得することもできます。 Microsoft Defender ATP のライセンスを所有している場合は、Windows Defender AV 検出にレポートを取得し、基本的な修復を実行することもできます。 詳細については、以下のリソースを参照してください。
+構成マネージャーまたは Intune などの構成ツールを使用して、レポートを取得できます。 SIEM で Windows イベントログを使用してレポートを取得することもできます。 Microsoft Defender ATP のライセンスを所有している場合は、Windows Defender AV 検出にレポートを取得し、基本的な修復を実行することもできます。 詳細については、以下のリソースを参照してください。
 * [Windows Defender Exploit Guard イベントを表示する](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
 * [Microsoft Defender ATP ポータルの概要](https://go.microsoft.com/fwlink/?linkid=861596)
 

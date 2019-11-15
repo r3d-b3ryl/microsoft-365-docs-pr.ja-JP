@@ -16,14 +16,17 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Office 365 では、ユーザーが SharePoint Online にアップロードするファイルのウイルスが検出されるため、お客様の環境をマルウェアから保護できます。ファイルをアップロードすると、そのファイルがスキャンされてウイルスが検出されます。ファイルで感染が見つかると、プロパティが設定されて、そのファイルをダウンロードしたり、同期したりできなくなります。
-ms.openlocfilehash: 60dc2cbd1b2d248f13c2b8c32738c4f195d6a7a0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9776dd7791d8543e0fd401a3c21c95d9fbf60f09
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086554"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639827"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online のウイルス検出
+
+> [!IMPORTANT]
+> この機能を使用するには、Office 365 Advanced Threat Protection (ATP) が必要です。 詳細については、「[SharePoint、OneDrive、Microsoft の Office 365 ATP を有効にする](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams)」を参照してください。
 
 Office 365 では、ユーザーが SharePoint Online にアップロードするファイルのウイルスが検出されるため、お客様の環境をマルウェアから保護できます。ファイルをアップロードすると、そのファイルがスキャンされてウイルスが検出されます。ファイルで感染が見つかると、プロパティが設定されて、そのファイルをダウンロードしたり、同期したりできなくなります。
   
