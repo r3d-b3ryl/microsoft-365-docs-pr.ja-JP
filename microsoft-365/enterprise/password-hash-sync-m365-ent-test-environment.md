@@ -16,133 +16,133 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: 0c6f7ec4afdfaaca0c84ed33ea0c1b1f248a82f5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ad48a11684903c65fb6d8e07a4e7a3c2523a153f
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073177"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639817"
 ---
-# <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a><span data-ttu-id="ba1fa-103">Microsoft 365 テスト環境のパスワード ハッシュ同期</span><span class="sxs-lookup"><span data-stu-id="ba1fa-103">Password hash synchronization for your Microsoft 365 test environment</span></span>
+# <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a><span data-ttu-id="eb656-103">Microsoft 365 テスト環境のパスワード ハッシュ同期</span><span class="sxs-lookup"><span data-stu-id="eb656-103">Password hash synchronization for your Microsoft 365 test environment</span></span>
 
-<span data-ttu-id="ba1fa-104">多くの組織では、Azure AD Connect とパスワード ハッシュ同期を使用して、オンプレミスの Active Directory Domain Services (AD DS) フォレスト内のアカウント セットを、Office 365 サブスクリプションと EMS E5 サブスクリプションの Azure AD テナント内のアカウント セットに同期します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-104">Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Office 365 and EMS E5 subscriptions.</span></span> <span data-ttu-id="ba1fa-105">この記事では、Microsoft 365 のテスト環境にパスワード ハッシュ同期を追加する方法について説明します。最終的な構成は、次のとおりになります。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-105">This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:</span></span>
+<span data-ttu-id="eb656-104">多くの組織では、Azure AD Connect とパスワード ハッシュ同期を使用して、オンプレミスの Active Directory Domain Services (AD DS) フォレスト内のアカウント セットを、Office 365 サブスクリプションと EMS E5 サブスクリプションの Azure AD テナント内のアカウント セットに同期します。</span><span class="sxs-lookup"><span data-stu-id="eb656-104">Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Office 365 and EMS E5 subscriptions.</span></span> <span data-ttu-id="eb656-105">この記事では、Microsoft 365 のテスト環境にパスワード ハッシュ同期を追加する方法について説明します。最終的な構成は、次のとおりになります。</span><span class="sxs-lookup"><span data-stu-id="eb656-105">This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:</span></span>
   
 ![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
-<span data-ttu-id="ba1fa-107">このテスト環境は、次に示す 2 つのフェーズで設定します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-107">There are two phases to setting up this test environment:</span></span>
+<span data-ttu-id="eb656-107">このテスト環境は、次に示す 2 つのフェーズで設定します。</span><span class="sxs-lookup"><span data-stu-id="eb656-107">There are two phases to setting up this test environment:</span></span>
   
-1. <span data-ttu-id="ba1fa-108">Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-108">Create the Microsoft 365 simulated enterprise test environment.</span></span>
-2. <span data-ttu-id="ba1fa-109">APP1 に Azure AD Connect をインストールして構成する。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-109">Install and configure Azure AD Connect on APP1.</span></span>
+1. <span data-ttu-id="eb656-108">Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する。</span><span class="sxs-lookup"><span data-stu-id="eb656-108">Create the Microsoft 365 simulated enterprise test environment.</span></span>
+2. <span data-ttu-id="eb656-109">APP1 に Azure AD Connect をインストールして構成する。</span><span class="sxs-lookup"><span data-stu-id="eb656-109">Install and configure Azure AD Connect on APP1.</span></span>
     
 > [!TIP]
-> <span data-ttu-id="ba1fa-110">[ここ](https://aka.ms/m365etlgstack)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-110">Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
+> <span data-ttu-id="eb656-110">[ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。</span><span class="sxs-lookup"><span data-stu-id="eb656-110">Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a><span data-ttu-id="ba1fa-111">フェーズ 1: Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する</span><span class="sxs-lookup"><span data-stu-id="ba1fa-111">Phase 1: Create the Microsoft 365 simulated enterprise test environment</span></span>
+## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a><span data-ttu-id="eb656-111">フェーズ 1: Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する</span><span class="sxs-lookup"><span data-stu-id="eb656-111">Phase 1: Create the Microsoft 365 simulated enterprise test environment</span></span>
 
-<span data-ttu-id="ba1fa-p102">「[Microsoft 365 用のシミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)」の手順を実行します。次に、最終的な構成を示します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-p102">Follow the instructions in [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is your resulting configuration.</span></span>
+<span data-ttu-id="eb656-p102">「[Microsoft 365 用のシミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)」の手順を実行します。次に、最終的な構成を示します。</span><span class="sxs-lookup"><span data-stu-id="eb656-p102">Follow the instructions in [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is your resulting configuration.</span></span>
   
 ![シミュレートされたエンタープライズ基本構成](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
-<span data-ttu-id="ba1fa-115">この構成は、次の内容で成立します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-115">This configuration consists of:</span></span> 
+<span data-ttu-id="eb656-115">この構成は、次の内容で成立します。</span><span class="sxs-lookup"><span data-stu-id="eb656-115">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="ba1fa-116">Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-116">Office 365 E5 and EMS E5 trial or paid subscriptions.</span></span>
-- <span data-ttu-id="ba1fa-117">インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワーク内の仮想マシン DC1、APP1、CLIENT1 で構成されます。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-117">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network.</span></span> <span data-ttu-id="ba1fa-118">DC1 は、testlab.\<パブリック ドメイン名> AD DS ドメインのドメイン コントローラーです。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-118">DC1 is a domain controller for the testlab.\<your public domain name> Active Directory Domain Services (AD DS) domain.</span></span>
+- <span data-ttu-id="eb656-116">Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="eb656-116">Office 365 E5 and EMS E5 trial or paid subscriptions.</span></span>
+- <span data-ttu-id="eb656-117">インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワーク内の仮想マシン DC1、APP1、CLIENT1 で構成されます。</span><span class="sxs-lookup"><span data-stu-id="eb656-117">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network.</span></span> <span data-ttu-id="eb656-118">DC1 は、testlab.\<パブリック ドメイン名> AD DS ドメインのドメイン コントローラーです。</span><span class="sxs-lookup"><span data-stu-id="eb656-118">DC1 is a domain controller for the testlab.\<your public domain name> AD DS domain.</span></span>
 
-## <a name="phase-2-create-and-register-the-testlab-domain"></a><span data-ttu-id="ba1fa-119">フェーズ 2: testlab ドメインを作成および登録する</span><span class="sxs-lookup"><span data-stu-id="ba1fa-119">Phase 2: Create and register the testlab domain</span></span>
+## <a name="phase-2-create-and-register-the-testlab-domain"></a><span data-ttu-id="eb656-119">フェーズ 2: testlab ドメインを作成および登録する</span><span class="sxs-lookup"><span data-stu-id="eb656-119">Phase 2: Create and register the testlab domain</span></span>
 
-<span data-ttu-id="ba1fa-120">このフェーズでは、パブリック DNS ドメインを追加して、そのドメインをサブスクリプションに追加します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-120">In this phase you add a public DNS domain and add it to your subscription.</span></span>
+<span data-ttu-id="eb656-120">このフェーズでは、パブリック DNS ドメインを追加して、そのドメインをサブスクリプションに追加します。</span><span class="sxs-lookup"><span data-stu-id="eb656-120">In this phase you add a public DNS domain and add it to your subscription.</span></span>
 
-<span data-ttu-id="ba1fa-p104">まず、パブリック DNS 登録プロバイダーと協力して、現在のドメイン名に基づいた新しいパブリック DNS ドメイン名を作成し、Office 365 サブスクリプションに追加します。**testlab.**\<パブリック ドメイン> という名前を使用することをお勧めします。たとえば、パブリック ドメイン名が <span>**contoso</span>.com** である場合は、パブリック ドメイン名 **<span>testlab</span>.contoso.com** を追加します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-p104">First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your Office 365 subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is <span>**contoso</span>.com**, add the public domain name **<span>testlab</span>.contoso.com**.</span></span>
+<span data-ttu-id="eb656-p104">まず、パブリック DNS 登録プロバイダーと協力して、現在のドメイン名に基づいた新しいパブリック DNS ドメイン名を作成し、Office 365 サブスクリプションに追加します。**testlab.**\<パブリック ドメイン> という名前を使用することをお勧めします。たとえば、パブリック ドメイン名が <span>**contoso</span>.com** である場合は、パブリック ドメイン名 **<span>testlab</span>.contoso.com** を追加します。</span><span class="sxs-lookup"><span data-stu-id="eb656-p104">First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your Office 365 subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is <span>**contoso</span>.com**, add the public domain name **<span>testlab</span>.contoso.com**.</span></span>
   
-<span data-ttu-id="ba1fa-124">次に、ドメイン登録プロセスの手順に従って、**testlab.**\<パブリック ドメイン> ドメインを Office 365 の試用版サブスクリプションまたは有料サブスクリプションに追加します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-124">Next, you add the **testlab.**\<your public domain> domain to your Office 365 trial or paid subscription by going through the domain registration process.</span></span> <span data-ttu-id="ba1fa-125">この際、他の DNS レコードも **testlab.**\<パブリック ドメイン> ドメインに追加します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-125">This consists of adding additional DNS records to the **testlab.**\<your public domain> domain.</span></span> <span data-ttu-id="ba1fa-126">詳細については、「[Office 365 にユーザーとドメインを追加する](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-126">For more information, see [Add users and domain to Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).</span></span> 
+<span data-ttu-id="eb656-124">次に、ドメイン登録プロセスの手順に従って、**testlab.**\<パブリック ドメイン> ドメインを Office 365 の試用版サブスクリプションまたは有料サブスクリプションに追加します。</span><span class="sxs-lookup"><span data-stu-id="eb656-124">Next, you add the **testlab.**\<your public domain> domain to your Office 365 trial or paid subscription by going through the domain registration process.</span></span> <span data-ttu-id="eb656-125">この際、他の DNS レコードも **testlab.**\<パブリック ドメイン> ドメインに追加します。</span><span class="sxs-lookup"><span data-stu-id="eb656-125">This consists of adding additional DNS records to the **testlab.**\<your public domain> domain.</span></span> <span data-ttu-id="eb656-126">詳細については、「[Office 365 にユーザーとドメインを追加する](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb656-126">For more information, see [Add users and domain to Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).</span></span> 
 
-<span data-ttu-id="ba1fa-127">最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-127">Here is your resulting configuration.</span></span>
+<span data-ttu-id="eb656-127">最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="eb656-127">Here is your resulting configuration.</span></span>
   
 ![testlab ドメイン名の登録](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
-<span data-ttu-id="ba1fa-129">この構成は、次の内容で成立します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-129">This configuration consists of:</span></span>
+<span data-ttu-id="eb656-129">この構成は、次の内容で成立します。</span><span class="sxs-lookup"><span data-stu-id="eb656-129">This configuration consists of:</span></span>
 
-- <span data-ttu-id="ba1fa-130">DNS ドメイン testlab.\<パブリック ドメイン名> が登録されている Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-130">Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.</span></span>
-- <span data-ttu-id="ba1fa-131">インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-131">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
+- <span data-ttu-id="eb656-130">DNS ドメイン testlab.\<パブリック ドメイン名> が登録されている Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="eb656-130">Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.</span></span>
+- <span data-ttu-id="eb656-131">インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。</span><span class="sxs-lookup"><span data-stu-id="eb656-131">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
 
-<span data-ttu-id="ba1fa-132">この時点での testlab.\<パブリック ドメイン名> の状態に注目してください。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-132">Notice how the testlab.\<your public domain name> is now:</span></span>
+<span data-ttu-id="eb656-132">この時点での testlab.\<パブリック ドメイン名> の状態に注目してください。</span><span class="sxs-lookup"><span data-stu-id="eb656-132">Notice how the testlab.\<your public domain name> is now:</span></span>
 
-- <span data-ttu-id="ba1fa-133">パブリック DNS レコードによるサポート。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-133">Supported by public DNS records.</span></span>
-- <span data-ttu-id="ba1fa-134">Office 365 および EMS サブスクリプションでの登録。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-134">Registered in your Office 365 and EMS subscriptions.</span></span>
-- <span data-ttu-id="ba1fa-135">シミュレートされたイントラネット上の AD DS ドメイン。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-135">The AD DS domain on your simulated intranet.</span></span>
+- <span data-ttu-id="eb656-133">パブリック DNS レコードによるサポート。</span><span class="sxs-lookup"><span data-stu-id="eb656-133">Supported by public DNS records.</span></span>
+- <span data-ttu-id="eb656-134">Office 365 および EMS サブスクリプションでの登録。</span><span class="sxs-lookup"><span data-stu-id="eb656-134">Registered in your Office 365 and EMS subscriptions.</span></span>
+- <span data-ttu-id="eb656-135">シミュレートされたイントラネット上の AD DS ドメイン。</span><span class="sxs-lookup"><span data-stu-id="eb656-135">The AD DS domain on your simulated intranet.</span></span>
      
-## <a name="phase-3-install-azure-ad-connect-on-app1"></a><span data-ttu-id="ba1fa-136">フェーズ 3: APP1 に Azure AD Connect をインストールする</span><span class="sxs-lookup"><span data-stu-id="ba1fa-136">Phase 3: Install Azure AD Connect on APP1</span></span>
+## <a name="phase-3-install-azure-ad-connect-on-app1"></a><span data-ttu-id="eb656-136">フェーズ 3: APP1 に Azure AD Connect をインストールする</span><span class="sxs-lookup"><span data-stu-id="eb656-136">Phase 3: Install Azure AD Connect on APP1</span></span>
 
-<span data-ttu-id="ba1fa-137">このフェーズでは、Azure AD Connect を APP1 にインストールして構成します。その後で、動作を確認します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-137">In this phase, you install and configure the Azure AD Connect tool on APP1, and then verify that it works.</span></span>
+<span data-ttu-id="eb656-137">このフェーズでは、Azure AD Connect を APP1 にインストールして構成します。その後で、動作を確認します。</span><span class="sxs-lookup"><span data-stu-id="eb656-137">In this phase, you install and configure the Azure AD Connect tool on APP1, and then verify that it works.</span></span>
   
-<span data-ttu-id="ba1fa-138">まず、APP1 上に Azure AD Connect をインストールして構成します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-138">First, you install and configure Azure AD Connect on APP1.</span></span>
+<span data-ttu-id="eb656-138">まず、APP1 上に Azure AD Connect をインストールして構成します。</span><span class="sxs-lookup"><span data-stu-id="eb656-138">First, you install and configure Azure AD Connect on APP1.</span></span>
 
-1. <span data-ttu-id="ba1fa-139">[Azure portal](https://portal.azure.com) から、全体管理者アカウントでサインインします。その後、TESTLAB\\User1 アカウントで APP1 に接続します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-139">From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\\User1 account.</span></span>
+1. <span data-ttu-id="eb656-139">[Azure portal](https://portal.azure.com) から、全体管理者アカウントでサインインします。その後、TESTLAB\\User1 アカウントで APP1 に接続します。</span><span class="sxs-lookup"><span data-stu-id="eb656-139">From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\\User1 account.</span></span>
     
-2. <span data-ttu-id="ba1fa-140">APP1 のデスクトップから、管理者レベルの Windows PowerShell コマンド プロンプトを起動して、次に示すコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-140">From the desktop of APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:</span></span>
+2. <span data-ttu-id="eb656-140">APP1 のデスクトップから、管理者レベルの Windows PowerShell コマンド プロンプトを起動して、次に示すコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="eb656-140">From the desktop of APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:</span></span>
     
-   ```
+   ```powershell
    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
    Stop-Process -Name Explorer -Force
    ```
 
-3. <span data-ttu-id="ba1fa-141">タスク バーで **[Internet Explorer]** をクリックし、[https://aka.ms/aadconnect](https://aka.ms/aadconnect)に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-141">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
+3. <span data-ttu-id="eb656-141">タスク バーで **[Internet Explorer]** をクリックし、[https://aka.ms/aadconnect](https://aka.ms/aadconnect)に移動します。</span><span class="sxs-lookup"><span data-stu-id="eb656-141">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
     
-4. <span data-ttu-id="ba1fa-142">[Microsoft Azure Active Directory Connect] ページで、**[ダウンロード]** をクリックして、**[実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-142">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
+4. <span data-ttu-id="eb656-142">[Microsoft Azure Active Directory Connect] ページで、**[ダウンロード]** をクリックして、**[実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-142">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
     
-5. <span data-ttu-id="ba1fa-143">**[Azure AD Connect へようこそ]** ページで、**[同意する]** をクリックして、**[続行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-143">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue**.</span></span>
+5. <span data-ttu-id="eb656-143">**[Azure AD Connect へようこそ]** ページで、**[同意する]** をクリックして、**[続行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-143">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue**.</span></span>
     
-6. <span data-ttu-id="ba1fa-144">**[簡単設定]** ページで、**[簡単設定を使う]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-144">On the **Express Settings** page, click **Use express settings**.</span></span>
+6. <span data-ttu-id="eb656-144">**[簡単設定]** ページで、**[簡単設定を使う]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-144">On the **Express Settings** page, click **Use express settings**.</span></span>
     
-7. <span data-ttu-id="ba1fa-145">**[Azure AD に接続]** ページで、**[ユーザー名]** に Office 365 全体管理者のアカウント名、**[パスワード]** にそのパスワードを入力して、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-145">On the **Connect to Azure AD** page, type your Office 365 global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
+7. <span data-ttu-id="eb656-145">**[Azure AD に接続]** ページで、**[ユーザー名]** に Office 365 全体管理者のアカウント名、**[パスワード]** にそのパスワードを入力して、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-145">On the **Connect to Azure AD** page, type your Office 365 global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
     
-8. <span data-ttu-id="ba1fa-146">**[AD DS に接続]** ページで、**[ユーザー名]** に「**TESTLAB\\User1**」と入力し、**[パスワード]** にそのパスワードを入力して、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-146">On the **Connect to AD DS** page, type **TESTLAB\\User1** in **Username,** type its password in **Password**, and then click **Next**.</span></span>
+8. <span data-ttu-id="eb656-146">**[AD DS に接続]** ページで、**[ユーザー名]** に「**TESTLAB\\User1**」と入力し、**[パスワード]** にそのパスワードを入力して、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-146">On the **Connect to AD DS** page, type **TESTLAB\\User1** in **Username,** type its password in **Password**, and then click **Next**.</span></span>
     
-9. <span data-ttu-id="ba1fa-147">**[構成の準備完了]** ページで、**[インストール]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-147">On the **Ready to configure** page, click **Install**.</span></span>
+9. <span data-ttu-id="eb656-147">**[構成の準備完了]** ページで、**[インストール]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-147">On the **Ready to configure** page, click **Install**.</span></span>
     
-10. <span data-ttu-id="ba1fa-148">**[構成が完了しました]** ページで、**[終了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-148">On the **Configuration complete** page, click **Exit**.</span></span>
+10. <span data-ttu-id="eb656-148">**[構成が完了しました]** ページで、**[終了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-148">On the **Configuration complete** page, click **Exit**.</span></span>
     
-11. <span data-ttu-id="ba1fa-149">Internet Explorer で Microsoft 365 管理センター ([https://portal.microsoft.com](https://portal.microsoft.com)) に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-149">In Internet Explorer, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)).</span></span>
+11. <span data-ttu-id="eb656-149">Internet Explorer で Microsoft 365 管理センター ([https://portal.microsoft.com](https://portal.microsoft.com)) に移動します。</span><span class="sxs-lookup"><span data-stu-id="eb656-149">In Internet Explorer, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)).</span></span>
     
-12. <span data-ttu-id="ba1fa-150">左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-150">In the left navigation, click **Users > Active users**.</span></span>
+12. <span data-ttu-id="eb656-150">左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-150">In the left navigation, click **Users > Active users**.</span></span>
     
-    <span data-ttu-id="ba1fa-151">**User1** という名前のアカウントを記録します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-151">Note the account named **User1**.</span></span> <span data-ttu-id="ba1fa-152">これは TESTLAB AD DS ドメインからのアカウントであり、ディレクトリ同期が機能していることを証明します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-152">This account is from the TESTLAB AD DS domain and is proof that directory synchronization has worked.</span></span>
+    <span data-ttu-id="eb656-151">**User1** という名前のアカウントを記録します。</span><span class="sxs-lookup"><span data-stu-id="eb656-151">Note the account named **User1**.</span></span> <span data-ttu-id="eb656-152">これは TESTLAB AD DS ドメインからのアカウントであり、ディレクトリ同期が機能していることを証明します。</span><span class="sxs-lookup"><span data-stu-id="eb656-152">This account is from the TESTLAB AD DS domain and is proof that directory synchronization has worked.</span></span>
     
-13. <span data-ttu-id="ba1fa-p107">**[User1]** アカウントをクリックします。製品ライセンスの **[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-p107">Click the **User1** account. For product licenses, click **Edit**.</span></span>
+13. <span data-ttu-id="eb656-p107">**[User1]** アカウントをクリックします。製品ライセンスの **[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-p107">Click the **User1** account. For product licenses, click **Edit**.</span></span>
     
-14. <span data-ttu-id="ba1fa-p108">**[製品ライセンス]** で、国を選択してから、**[Office 365 Enterprise E5]** の **[オフ]** コントロールをクリックします (**[オン]** に切り替わります)。**[Enterprise Mobility + Security E5]** ライセンスに対しても同じ操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-p108">In **Product licenses**, select your scountry, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license.</span></span> 
+14. <span data-ttu-id="eb656-p108">**[製品ライセンス]** で、国を選択してから、**[Office 365 Enterprise E5]** の **[オフ]** コントロールをクリックします (**[オン]** に切り替わります)。**[Enterprise Mobility + Security E5]** ライセンスに対しても同じ操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="eb656-p108">In **Product licenses**, select your scountry, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license.</span></span> 
 
-15. <span data-ttu-id="ba1fa-157">ページの下側にある **[保存]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-157">Click **Save** at the bottom of the page, and then click **Close**.</span></span>
+15. <span data-ttu-id="eb656-157">ページの下側にある **[保存]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb656-157">Click **Save** at the bottom of the page, and then click **Close**.</span></span>
     
-<span data-ttu-id="ba1fa-158">次に、User1 アカウントのユーザー名である <strong>user1@testlab.</strong>\<お客様のドメイン名> で Office 365 サブスクリプションにサインインできることをテストします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-158">Next, you test the ability to sign in to your Office 365 subscription with the <strong>user1@testlab.</strong>\<your domain name> user name of the User1 account.</span></span>
+<span data-ttu-id="eb656-158">次に、User1 アカウントのユーザー名である <strong>user1@testlab.</strong>\<お客様のドメイン名> で Office 365 サブスクリプションにサインインできることをテストします。</span><span class="sxs-lookup"><span data-stu-id="eb656-158">Next, you test the ability to sign in to your Office 365 subscription with the <strong>user1@testlab.</strong>\<your domain name> user name of the User1 account.</span></span>
 
-1. <span data-ttu-id="ba1fa-159">APP1 から、Office 365 のサインアウトを実行します。その後で、別のアカウントを指定して再度サインインします。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-159">From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.</span></span>
+1. <span data-ttu-id="eb656-159">APP1 から、Office 365 のサインアウトを実行します。その後で、別のアカウントを指定して再度サインインします。</span><span class="sxs-lookup"><span data-stu-id="eb656-159">From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.</span></span>
 
-2. <span data-ttu-id="ba1fa-p109">ユーザー名とパスワードの入力を求めるダイアログが表示されたら、<strong>user1@testlab.</strong>\<お客様のドメイン名> と User1 のパスワードを指定します。User1 として正常にサインインできるはずです。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-p109">When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password. You should successfully sign in as User1.</span></span> 
+2. <span data-ttu-id="eb656-p109">ユーザー名とパスワードの入力を求めるダイアログが表示されたら、<strong>user1@testlab.</strong>\<お客様のドメイン名> と User1 のパスワードを指定します。User1 として正常にサインインできるはずです。</span><span class="sxs-lookup"><span data-stu-id="eb656-p109">When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password. You should successfully sign in as User1.</span></span> 
  
-<span data-ttu-id="ba1fa-162">User1 は、TESTLAB AD DS ドメインに対するドメイン管理者のアクセス許可を持っていますが、Office 365 のグローバル管理者ではありません。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-162">Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not an Office 365 global administrator.</span></span> <span data-ttu-id="ba1fa-163">そのため、**[管理者]** アイコンはオプションとして表示されません。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-163">Therefore, you will not see the **Admin** icon as an option.</span></span> 
+<span data-ttu-id="eb656-162">User1 は、TESTLAB AD DS ドメインに対するドメイン管理者のアクセス許可を持っていますが、Office 365 のグローバル管理者ではありません。</span><span class="sxs-lookup"><span data-stu-id="eb656-162">Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not an Office 365 global administrator.</span></span> <span data-ttu-id="eb656-163">そのため、**[管理者]** アイコンはオプションとして表示されません。</span><span class="sxs-lookup"><span data-stu-id="eb656-163">Therefore, you will not see the **Admin** icon as an option.</span></span> 
 
-<span data-ttu-id="ba1fa-164">最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-164">Here is your resulting configuration.</span></span>
+<span data-ttu-id="eb656-164">最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="eb656-164">Here is your resulting configuration.</span></span>
 
 ![パスワード ハッシュ同期テスト環境があるシミュレートされたエンタープライズ](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
-<span data-ttu-id="ba1fa-166">この構成は、次の内容で成立します。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-166">This configuration consists of:</span></span> 
+<span data-ttu-id="eb656-166">この構成は、次の内容で成立します。</span><span class="sxs-lookup"><span data-stu-id="eb656-166">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="ba1fa-167">DNS ドメイン TESTLAB.\<ドメイン名> が登録されている Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-167">Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.</span></span>
-- <span data-ttu-id="ba1fa-168">インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-168">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span> <span data-ttu-id="ba1fa-169">Azure AD Connect が APP1 上で実行され、TESTLAB AD DS ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに定期的に同期されます。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-169">Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.</span></span>
-- <span data-ttu-id="ba1fa-170">TESTLAB AD DS ドメインの User1 アカウントは、Azure AD テナントと同期されています。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-170">The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.</span></span>
+- <span data-ttu-id="eb656-167">DNS ドメイン TESTLAB.\<ドメイン名> が登録されている Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="eb656-167">Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.</span></span>
+- <span data-ttu-id="eb656-168">インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。</span><span class="sxs-lookup"><span data-stu-id="eb656-168">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span> <span data-ttu-id="eb656-169">Azure AD Connect が APP1 上で実行され、TESTLAB AD DS ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに定期的に同期されます。</span><span class="sxs-lookup"><span data-stu-id="eb656-169">Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.</span></span>
+- <span data-ttu-id="eb656-170">TESTLAB AD DS ドメインの User1 アカウントは、Azure AD テナントと同期されています。</span><span class="sxs-lookup"><span data-stu-id="eb656-170">The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="ba1fa-171">次の手順</span><span class="sxs-lookup"><span data-stu-id="ba1fa-171">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="eb656-171">次の手順</span><span class="sxs-lookup"><span data-stu-id="eb656-171">Next step</span></span>
 
-<span data-ttu-id="ba1fa-172">テスト環境の追加の [ID](m365-enterprise-test-lab-guides.md#identity) 機能について調べます。</span><span class="sxs-lookup"><span data-stu-id="ba1fa-172">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
+<span data-ttu-id="eb656-172">テスト環境の追加の [ID](m365-enterprise-test-lab-guides.md#identity) 機能について調べます。</span><span class="sxs-lookup"><span data-stu-id="eb656-172">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ba1fa-173">関連項目</span><span class="sxs-lookup"><span data-stu-id="ba1fa-173">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eb656-173">関連項目</span><span class="sxs-lookup"><span data-stu-id="eb656-173">See also</span></span>
 
-[<span data-ttu-id="ba1fa-174">Microsoft 365 Enterprise のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="ba1fa-174">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="eb656-174">Microsoft 365 Enterprise のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="eb656-174">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
 
-[<span data-ttu-id="ba1fa-175">Microsoft 365 Enterprise を展開する</span><span class="sxs-lookup"><span data-stu-id="ba1fa-175">Deploy Microsoft 365 Enterprise</span></span>](deploy-microsoft-365-enterprise.md)
+[<span data-ttu-id="eb656-175">Microsoft 365 Enterprise を展開する</span><span class="sxs-lookup"><span data-stu-id="eb656-175">Deploy Microsoft 365 Enterprise</span></span>](deploy-microsoft-365-enterprise.md)
 
-[<span data-ttu-id="ba1fa-176">Microsoft 365 Enterprise のドキュメントとリソース</span><span class="sxs-lookup"><span data-stu-id="ba1fa-176">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
+[<span data-ttu-id="eb656-176">Microsoft 365 Enterprise のドキュメントとリソース</span><span class="sxs-lookup"><span data-stu-id="eb656-176">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 
