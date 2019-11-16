@@ -12,14 +12,16 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントに対して Office 365 保持ラベルを作成して使用します。
-ms.openlocfilehash: 1bcd3ab2d8069ad85d48ecf682d3b7d49e7cf739
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: e0186bcfc786356b34aff45b1b1e67f54dd40001
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639787"
+ms.locfileid: "38672663"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデータ分類
+
+*このテストラボガイドは、Microsoft 365 Enterprise と Office 365 のエンタープライズテスト環境の両方で使用できます。*
 
 この記事の手順を使用して、Microsoft 365 エンタープライズテスト環境で Office 365 の保持ラベルを使用してデータ分類を構成します。
 

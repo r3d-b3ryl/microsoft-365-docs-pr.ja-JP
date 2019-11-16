@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 244aa9a2749c41471760c5263a6df6d745e5ade6
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 98585f744b9aeabe84cdb31c6f7e3c2f9ddf0a05
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302944"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38669685"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>手順 3: Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する
 
@@ -31,7 +31,7 @@ Windows Autopilot を使用して、新しい Windows 10 デバイスをセッ�
 
 Windows 自動操縦ポスターは、縦置きモード (11x17) の2ページです。 ブラウザーに PDF を表示するには、以下の画像をクリックします。 
 
-[![Autopilot ポスターを使用した Windows 10 の展開](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=RWOcP%2BhJZYpYcGKMhuTUEL6lcuWdBFefqR%2BQQfmj6IM%3D&st=2019-11-12T23%3A48%3A59Z&se=2019-11-13T23%3A58%3A59Z&sp=r)
+[![Autopilot ポスターを使用した Windows 10 の展開](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) または [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) 形式でダウンロードすることもできます。
 

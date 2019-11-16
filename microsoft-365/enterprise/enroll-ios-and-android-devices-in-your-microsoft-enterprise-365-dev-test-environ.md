@@ -12,14 +12,16 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: このテストラボガイドを使用して、Microsoft 365 テスト環境にデバイスを登録し、リモートで管理します。
-ms.openlocfilehash: 0d7e03d1dcc6e8f401258587c1dbc083b1237d49
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: ea583a5f14acb2162d22da6d53d533246cbb035e
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640379"
+ms.locfileid: "38672653"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境に iOS および Android デバイスを登録する
+
+*このテストラボガイドは、Microsoft 365 エンタープライズテスト環境でのみ使用できます。*
 
 この記事に記載されている手順に従って、Microsoft 365 エンタープライズテスト環境で iOS および Android デバイス用の基本的なモバイルデバイス管理機能を登録し、テストすることができます。
 

@@ -13,14 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 次の手順を使用して、Microsoft 365 Enterprise テスト環境の全体管理者アカウントを保護します。
-ms.openlocfilehash: c7ee5bca3f5841ac7751e497ca88391daf965301
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 89985f99f5471aab87189e78035062add2c6bad9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640359"
+ms.locfileid: "38673333"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保護する
+
+*このテストラボガイドは、Microsoft 365 エンタープライズテスト環境にのみ使用できます。*
 
 組織でのデジタル攻撃を防止するには、管理者アカウントのセキュリティを可能な限り確保することができます。 この記事では、Azure Active Directory (Azure AD) 条件付きアクセスポリシーを使用して全体管理者アカウントを保護する方法について説明します。
 

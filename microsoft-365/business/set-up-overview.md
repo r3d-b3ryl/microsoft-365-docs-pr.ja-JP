@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business のセットアップ手順の概要について説明します。
-ms.openlocfilehash: 50f172c235aa06aa78fec60fc119ac7f568df308
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3e1cf240db673a7b961ec8aa574f3e09efee476b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575590"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676030"
 ---
 # <a name="overview-of-setup"></a>手順の概要
 
@@ -70,7 +70,6 @@ ms.locfileid: "37575590"
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4: Office 365 Business をインストールする
 - [セットアップウィザード](set-up.md#deploy-office-365-client-apps)を使用して、Windows デバイスに Office を自動的にインストールすることができます。
-- 管理センターから Office を自動的に[インストール](auto-install-or-uninstall-office.md)します。
 - ユーザーが Windows およびデバイス用の[Office アプリをインストール](https://docs.microsoft.com/office365/admin/setup/install-applications)できるようにします。
      
 ## <a name="advanced"></a>詳細情報
@@ -82,6 +81,6 @@ ms.locfileid: "37575590"
 
      - 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法は推奨されており、この状態のデバイスはハイブリッド Azure AD 参加デバイスと呼ばれます。
 
-    - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、次の手順に従って、Azure AD に参加しているデバイスにこれらのリソースへのアクセス権を付与でき[ます。Microsoft 365 Business の Azure AD に参加しているデバイス](access-resources.md)。
+    - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、「 [Microsoft 365 business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、azure ad に参加しているデバイスにこれらのリソースへのアクセス権を付与できます。
 
   

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Microsoft 365 Business 関連の管理タスク、モバイルデバイス、Windows 10 Pc、その他の多くのタスクを管理する方法について説明します。
-ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: 77b8757d9e6ab644b16e97ff20f50c0ce3123088
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633311"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675970"
 ---
 # <a name="manage-microsoft-365-business"></a>Microsoft 365 Business の管理
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Microsoft 365 Business の一般的な管理タスク
 
-一般法人向け Office 365 の[管理者向けコンテンツ](/Office365/Admin/admin-home.md)のほとんどは、Microsoft 365 business にも適用されます。
+一般法人向け Office 365 の[管理者向けコンテンツ](https://docs.microsoft.com/office365/admin/admin-home)のほとんどは、Microsoft 365 business にも適用されます。
 
 - [Microsoft 365 Business にさらにユーザーを追加する](add-users-m365b.md)
     
@@ -55,9 +55,7 @@ Microsoft 365 Business を使用して、組織のデータを Pc やモバイ�
 ## <a name="manage-windows-10-pcs"></a>Windows 10 PC の管理
 
 - [Microsoft 365 Business ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)
-    
-- [Windows 10 デバイスで Office を自動的にインストールまたはアンインストールする](auto-install-or-uninstall-office.md)
-    
+
     Office を自動的にインストールする前に、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」をご覧ください。 
     
 - [Windows 10 デバイスのデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)

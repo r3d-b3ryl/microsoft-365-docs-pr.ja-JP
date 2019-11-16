@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Windows 10 デバイスをセキュリティで保護するために Microsoft 365 Business で利用可能な既定の設定とその他の設定について説明します。
-ms.openlocfilehash: ab306e3d5a6011a0e7d537c98ecca6ef49ff82d9
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5d4bce02df1276dc9b284c7b0709c7dc26b0dbce
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575760"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676050"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Windows 10 の PC のデバイス保護設定を設定する
 
@@ -64,9 +64,9 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
 |Setting  <br/> |説明  <br/> |
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
-|デバイスに対する攻撃を回避するルールを使用する  <br/> |オンにすると、攻撃の回避により、デバイス感染のためにマルウェアが通常使用するアクションやアプリをブロックすることができます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[攻撃の回避](https://go.microsoft.com/fwlink/?linkid=870417)」を参照してください。  <br/> |
-|ランサムウェアなどの脅威からフォルダーを保護する  <br/> |この設定は、フォルダーへのアクセスを制御することによって、ランサムウェアなどの不審なまたは悪意のあるアプリケーションによる書き換えから会社のデータを保護します。こうした種類のアプリケーションは、保護されているフォルダーで変更を行うことができないようにブロックされます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[フォルダーへのアクセス制御でフォルダーを保護する](https://go.microsoft.com/fwlink/?linkid=870418)」を参照してください。  <br/> |
-|インターネット上の悪意がある可能性のあるコンテンツに対するネットワーク アクセスを防止する  <br/> |この設定を使用すると、フィッシング詐欺、攻撃、またはその他の悪意のあるコンテンツをホストしている可能性がある低評価のインターネット上の場所へのユーザーの外部接続をブロックします。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[ネットワークを保護する](https://go.microsoft.com/fwlink/?linkid=870419)」を参照してください。  <br/> |
+|デバイスに対する攻撃を回避するルールを使用する  <br/> |オンにすると、攻撃の回避により、デバイス感染のためにマルウェアが通常使用するアクションやアプリをブロックすることができます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[攻撃の回避](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)」を参照してください。  <br/> |
+|ランサムウェアなどの脅威からフォルダーを保護する  <br/> |この設定は、フォルダーへのアクセスを制御することによって、ランサムウェアなどの不審なまたは悪意のあるアプリケーションによる書き換えから会社のデータを保護します。 こうした種類のアプリケーションは、保護されているフォルダーで変更を行うことができないようにブロックされます。 Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。 詳細については、「[フォルダーを制限付きフォルダーアクセスで保護](https://docs.microsoft.com/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA)する」を参照してください。  <br/> |
+|インターネット上の悪意がある可能性のあるコンテンツに対するネットワーク アクセスを防止する  <br/> |この設定を使用すると、フィッシング詐欺、攻撃、またはその他の悪意のあるコンテンツをホストしている可能性がある低評価のインターネット上の場所へのユーザーの外部接続をブロックします。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[ネットワークを保護する](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)」を参照してください。  <br/> |
 |不正なアクセスから PC のファイルとフォルダーを保護するために BitLocker を使用する  <br/> |BitLocker は、コンピューターのハード ドライブを暗号化することによってデータを保護し、コンピューターの紛失や盗難時にデータの漏えいを防ぎます。詳細については、「[Bitlocker についてよく寄せられる質問](https://go.microsoft.com/fwlink/?linkid=871000)」を参照してください。  <br/> |
 |ユーザーが Microsoft Storeからアプリをダウンロードすることを許可する  <br/> |ユーザーが Microsoft Storeからアプリをダウンロードしてインストールできるようにします。アプリにはゲームから生産性向上ツールまであらゆるものが含まれるため、この設定を **オン**のままにしていますが、セキュリティを強化するためにオフにすることもできます。  <br/> |
 |ユーザーが Cortana にアクセスすることを許可する  <br/> |Cortana は非常に役に立つ場合があります。Cortana によって設定をオンまたはオフにしたり、手順を示したり、ユーザーが予定に間に合うようにしたりすることができるため、既定では、Microsoft はこの設定を **オン**にしています。  <br/> |

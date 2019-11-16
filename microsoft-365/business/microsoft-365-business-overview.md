@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business の詳細については、こちらを参照してください。
-ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: abd1e8374ef7530a879de71ab7ad0125f1ca4616
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633401"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676081"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 
@@ -98,4 +98,7 @@ Microsoft 365 Business は、次のような**脅威からの保護**に貢献�
 
 - パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)して、[サインアップ](sign-up.md)の手順に従うことができます。
 
-- Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS)にアクセスすることもできます。
+- Microsoft 365 Business を購入し、セットアップヘルプを取得するために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer)にアクセスすることもできます。
+
+    > [!NOTE]
+    > このリンクは米国のみのストア用です

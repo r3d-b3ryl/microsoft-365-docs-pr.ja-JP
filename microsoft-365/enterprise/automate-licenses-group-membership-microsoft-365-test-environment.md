@@ -13,14 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 Enterprise テスト環境で、グループベースのライセンスと動的なグループメンバーシップを構成します。
-ms.openlocfilehash: c3b515a9b453275f9b79ba2b90d5a4c14611c2aa
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: fe6380d94919556904a1fb1ac0624fac3496fe30
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639797"
+ms.locfileid: "38673253"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のライセンスとグループメンバーシップを自動化する
+
+*このテストラボガイドは、Microsoft 365 エンタープライズテスト環境にのみ使用できます。*
 
 グループベースのライセンスは、グループメンバーシップに基づいてユーザーアカウントのライセンスを自動的に割り当てるか削除します。 動的グループメンバーシップは、ユーザーアカウントのプロパティ (部署、国など) に基づいてグループにメンバーを追加または削除します。 この記事では、Microsoft 365 エンタープライズテスト環境の両方のデモを行います。
 

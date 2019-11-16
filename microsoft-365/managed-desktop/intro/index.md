@@ -7,10 +7,10 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
 ms.openlocfilehash: 45baa63fc475917a10c87cc66d1346af48479645
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38012038"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
@@ -24,7 +24,7 @@ Microsoft マネージドデスクトップでは、最新のデバイスに Mic
 
 <table>
 <tr><th>成功エンドユーザー</th><th>IT を強化する</th><th>Microsoft によるバックアップ</th></tr>
-<tr><td><p>モダンデバイス</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>セキュリティ組み込み</p><p>顔認識でログインする</p><p>常に最新の状態</p></td><td><p>組み込みのセキュリティ</p><p>実践的な洞察</p><p>運用のサポート</p><p>Microsoft の専門家からのガイダンス</p></td><td><p>セキュリティ運用チーム</p><p>正常性の監視</p><p>データのクラウドバックアップ</p><p>24時間365日のエンドユーザーサポート</p></td></tr>
+<tr><td><p>モダンデバイス</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>セキュリティ組み込み</p><p>顔認識でログインする</p><p>常に最新の状態</p></td><td><p>組み込みのセキュリティ</p><p>対応につながるインサイト</p><p>運用のサポート</p><p>Microsoft の専門家からのガイダンス</p></td><td><p>セキュリティ運用チーム</p><p>正常性の監視</p><p>データのクラウドバックアップ</p><p>24時間365日のエンドユーザーサポート</p></td></tr>
 </table>
 
 Microsoft マネージドデスクトップは、ユーザーを delights し、IT リソースを解放してより重要なタスクを行うための包括的な IT ソリューションをお客様に提供します。 このサービスは、よく耳にするフィードバックに基づいて開発されています。

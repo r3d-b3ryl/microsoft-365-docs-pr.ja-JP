@@ -13,14 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Azure AD Identity Protection を構成し、Microsoft 365 Enterprise テスト環境で現在のアカウントを分析します。
-ms.openlocfilehash: a21b20f4ca774ad38990e44abc18d666426e74d5
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: bc98ebbdd45e06481e2d95687fb4eb8c986533a3
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640406"
+ms.locfileid: "38673243"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の Azure AD Id 保護
+
+*このテストラボガイドは、Microsoft 365 エンタープライズテスト環境にのみ使用できます。*
 
 Azure AD Id 保護を使用すると、組織の id に影響を及ぼす可能性のある脆弱性を検出し、自動化された応答を構成し、インシデントを調査できます。 この記事では、Azure AD Id 保護を有効にし、テスト環境アカウントの分析を表示する方法について説明します。
 

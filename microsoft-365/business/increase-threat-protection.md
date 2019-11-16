@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、機密データを保護します。
-ms.openlocfilehash: 00a40ceb6d51add2ebe8cc7ca4c299fe07a10b89
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320110"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676010"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -86,7 +86,7 @@ Office 365 または Microsoft 365 環境には、マルウェアからの保護
    
 詳しくは、次のトピックを参照してください。
   
-- [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501)
     
 - [OneDrive を復元する](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
@@ -178,7 +178,7 @@ ATP の安全な添付ファイルポリシーを作成するには、[この短
 |検出時に添付ファイルをリダイレクトする  <br/> |リダイレクトを有効にする (このボックスをオンにする) 管理者アカウントまたは検疫用のメールボックスのセットアップを入力します。          マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合は、上記の選択を適用します (このチェックボックスをオンにします)。  <br/> |
 |適用先  <br/> |受信者のドメインはです。 . . ドメインを選びます。  <br/> |
    
-詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)セットアップする」を参照してください。
+詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)セットアップする」を参照してください。
   
 
 

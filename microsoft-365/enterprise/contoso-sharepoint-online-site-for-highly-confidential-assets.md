@@ -13,17 +13,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: 研究チーム間の共同作業を容易にするために、Contoso 社が非常に規制されたデータに対して SharePoint サイトを実装した方法を示します。'
-ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617255"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672713"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation の非常に機密性の高いデジタル資産向けの SharePoint サイト
 
- **概要:** 研究チーム間のコラボレーションを容易にするために、Contoso 社が高度な規制データ用の SharePoint サイトを実装しています。
-  
 Contoso 社の最も重要な資産は、独自の製造手法、開発中の製品の設計仕様など、企業秘密の形式での知的財産です。 これらのアセットはデジタル形式で、もともとは SharePoint Server 2016 サイトにファイルとして保存されていました。 Contoso 社では、Microsoft 365 Enterprise を展開したときに、オンプレミスのデジタルアセットをクラウドに移行して、パリ、モスクワ、ニューヨーク、北京、Bangalore の研究チーム間で簡単にアクセスできるようにしたいと考えています。 
   
 ただし、機密性の高い性質上、これらのファイルへのアクセスは次のようにする必要があります。

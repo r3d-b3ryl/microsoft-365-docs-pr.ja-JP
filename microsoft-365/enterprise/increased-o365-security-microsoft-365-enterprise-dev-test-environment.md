@@ -12,14 +12,16 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の Microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: f430acb4a7fd1842a4ae26025ad5a63cccf8392f
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 3173796167a0a9fb59e23ee2dc6eebf5000ed3d7
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640369"
+ms.locfileid: "38672693"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズテスト環境の Microsoft 365 セキュリティの強化
+
+*このテストラボガイドは、Microsoft 365 エンタープライズテスト環境にのみ使用できます。*
 
 この記事の手順に従って、Microsoft 365 エンタープライズテスト環境のセキュリティを強化するために、その他の Microsoft 365 設定を構成します。
 
