@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b49312b94aef35afc5febeae0fd4dc71b7c642af
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031102"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672683"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
-
-**概要:** Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
 
 IT セキュリティ部門による Microsoft 365 Enterprise の展開の承認を得るために、徹底的なセキュリティ レビューが実施されました。Contoso 社でのクラウドに対するセキュリティ要件を次に示します。
 

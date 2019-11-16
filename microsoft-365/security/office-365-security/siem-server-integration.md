@@ -1,11 +1,11 @@
 ---
-title: SIEM server と Microsoft 365 の統合
+title: SIEM server と Microsoft 365 のサービスおよびアプリケーションの統合
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 06/17/2019
+ms.date: 11/15/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -13,35 +13,45 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - SIEM
-description: '概要: この記事では、SIEM server と Microsoft 365 の統合の概要について説明します。'
-ms.openlocfilehash: 97f1c1d1f1862d140e014b4460ac9f40cb1934bb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: この記事では、SIEM server と Microsoft 365 との統合の概要について説明します。
+ms.openlocfilehash: bea6141022fef1275a7e291217f698f52613f170
+ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087045"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38677510"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server と Microsoft 365 のサービスおよびアプリケーションの統合
 
-## <a name="overview"></a>概要
+## <a name="summary"></a>Summary
 
-組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合、または SIEM サーバーを近いうちに購入する予定の場合は、Office 365 E5 を含む Microsoft 365 との統合方法について不思議に思うかもしれません。 SIEM サーバーが必要かどうかは、組織のセキュリティ要件など、さまざまな要因によって異なります。 Microsoft 365 はさまざまなセキュリティ機能を提供しています。ただし、組織のコンテンツとアプリケーションがオンプレミスとクラウド (ハイブリッドクラウドの展開の場合など) にある場合は、追加の保護のために SIEM サーバーを追加することを検討してください。 または、組織が特に厳しいセキュリティ要件を満たしている場合は、SIEM サーバーを環境に追加することを検討する必要があります。
+組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合、または SIEM サーバーを近いうちに購入する予定の場合は、Microsoft 365 または Office 365 との統合について不思議に思うかもしれません。 この記事では、Microsoft 365 サービスとアプリケーションとの SIEM サーバー統合のセットアップに使用できるリソースの一覧を示します。
 
-## <a name="siem-server-integration-microsoft-365"></a>SIEM server 統合 Microsoft 365
+> [!TIP]
+> SIEM サーバーがまだなく、オプションを調査している場合は、 **[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)** を検討してください。
 
-SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプリケーションからのデータを受信できます。 次の表は、SIEM サーバーの入力と、SIEM サーバーの統合の詳細について説明するいくつかの Microsoft 365 サービスとアプリケーションを示しています。 
+## <a name="do-i-need-a-siem-server"></a>SIEM サーバーは必要ですか?
 
-| Microsoft 365 サービスまたはアプリケーション | SIEM サーバーの入力 | 詳細については、リソースを参照してください |
+SIEM サーバーが必要かどうかは、組織のセキュリティ要件やデータの格納場所など、さまざまな要因によって異なります。 Microsoft 365 には、SIEM サーバーのような追加のサーバーを使用せずに、多くの組織のセキュリティニーズに合ったさまざまなセキュリティ機能が含まれています。 組織によっては、SIEM サーバーの使用を必要とする特別な状況があります。 次に例を示します。
+
+- *Fabrikam*には、オンプレミスのコンテンツとアプリケーションがあります。クラウドには、ハイブリッドクラウド展開があります。 すべてのコンテンツとアプリケーションでセキュリティレポートを取得するために、Fabrikam は SIEM サーバーを実装しています。 
+
+- *Contoso 社*は、特に厳しいセキュリティ要件を持つ金融サービス組織です。 SIEM サーバーを環境に追加して、必要な追加のセキュリティ保護を利用しています。
+
+## <a name="siem-server-integration-with-microsoft-365"></a>SIEM server と Microsoft 365 の統合
+
+SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプリケーションからのデータを受信できます。 次の表に、SIEM サーバーの入力と共に Microsoft 365 サービスとアプリケーションをいくつかと、SIEM サーバー統合の詳細を理解するためのリソースを示します。 
+
+| Microsoft 365 サービスまたはアプリケーション | SIEM サーバーの入力 | 追加情報 |
 | --- | --- | --- |
-| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>または<br/>[Office 365 脅威インテリジェンス](office-365-ti.md) | 監査ログ | [Office 365 Advanced Threat Protection との SIEM の統合](siem-integration-with-office-365-ti.md) |
+| [Office 365 Advanced Threat Protection](office-365-atp.md)  | 監査ログ | [Office 365 Advanced Threat Protection との SIEM の統合](siem-integration-with-office-365-ti.md) |
+| [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Azure でホストされている HTTPS エンドポイント <br/>REST API| [SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | ログの統合 | [SIEM と Microsoft Cloud App Security との統合](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Microsoft Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | ログの統合 | [SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
-| [Azure セキュリティセンター](https://docs.microsoft.com/azure/security-center/security-center-intro)(脅威の保護と脅威の検出) | アラート | [SIEM への Azure セキュリティデータのエクスポート-パイプライン構成-プレビュー](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-|[Azure Advanced Threat Analytics](https://docs.microsoft.com/azure/security/azure-threat-detection) | Azure モニター | [発行Azure Monitor を使用して SIEM ツールと統合する](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
-|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |ログの統合 |[Microsoft Graph Security API の警告と SIEM の統合](https://docs.microsoft.com/graph/security-siemintegration) |
 
+> [!TIP]
+> 「 [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)」に目を通してください。これには、microsoft のソリューションのためのさまざまなコネクタが用意されており、Microsoft の脅威保護ソリューションや microsoft の365ソース (Office 365、azure AD、azure ATP、Microsoft Cloud App Security など) を含むリアルタイム統合が提供されています。
 
-## <a name="audit-logging-must-be-turned-on"></a>監査ログを有効にする必要がある
+### <a name="audit-logging-must-be-turned-on"></a>監査ログを有効にする必要がある
 
 SIEM サーバーの統合を構成する前に、監査ログが有効になっていることを確認してください。 
 
@@ -49,10 +59,8 @@ SIEM サーバーの統合を構成する前に、監査ログが有効になっ
 
 - Exchange Online で[は、Windows PowerShell を使用して監査ログを有効に](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)します。
  
-## <a name="see-also"></a>関連項目
+## <a name="additional-resources"></a>その他の技術情報
 
-[クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-  
-[クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Azure セキュリティセンターでのセキュリティソリューションの統合](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
-
+[Microsoft Graph Security API の警告と SIEM の統合](https://docs.microsoft.com/graph/security-integration)

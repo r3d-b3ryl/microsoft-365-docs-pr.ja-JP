@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のネットワーク インフラストラクチャと、Microsoft 365 Enterprise のクラウド サービスに対する最高のネットワーク性能を得るために SD-WAN テクノロジをどのように使用しているかについて説明します。
-ms.openlocfilehash: f448296828f350560451727efdd96097862da8dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 87584660805608c45b36e13804ca1dab6b8e7d17
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369548"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673173"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
-
-**概要:** Contoso 社のネットワーク インフラストラクチャと、Microsoft 365 Enterprise のクラウド サービスに対する最高のネットワーク性能を得るために SD-WAN テクノロジをどのように使用しているかについて説明します。
 
 クラウドを組み込んだインフラストラクチャを導入するために、Contoso 社のネットワーク エンジニアは、ネットワーク トラフィックがクラウド サービスへ移動する際の根本的な変化を認識しました。Contoso オフィス階層の次のレベルのネットワーク接続とトラフィックに焦点を当てた内部ハブおよびスポーク モデルの代わりに、ユーザーの場所をローカルのインターネット出口と、インターネット上の最も近い Microsoft 365 ネットワークの場所へのローカル接続にマッピングしました。
 

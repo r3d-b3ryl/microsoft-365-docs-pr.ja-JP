@@ -13,16 +13,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
-ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: e7c79612b18bdd21d8fd137abe11f8f26cfd6eff
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369618"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673223"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise
-
-**概要:** 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
 
 Microsoft 365 Enterprise は、Microsoft のプレミア クラウド製品であり、ローカルおよびクラウドベースの生産性アプリとサービスを Windows 10 Enterprise および高度なセキュリティ機能と組み合わせることで、あらゆるユーザーがクリエイティブで安全に共同作業ができるようにする包括的でインテリジェントなソリューションを提供します。 
 

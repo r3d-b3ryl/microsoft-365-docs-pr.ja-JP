@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
-ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 157aa17e6ea5c345c1c1c5bdc9a2588f6384277d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369588"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673193"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
-
-**概要:** Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
 
 Contoso 社は、集中管理されたオンプレミスの IT インフラストラクチャから、クラウド包括型の IT インフラストラクチャへと移行しています。後者には、クラウドベースの個人生産性のワークロードとアプリケーションが組み込まれています。
 
