@@ -15,14 +15,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise のデモ、概念実証、開発/テスト環境を設定します。
-ms.openlocfilehash: dadde9d6366e2d5d12bf632d0b77bf60ba9cdbab
-ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
+ms.openlocfilehash: 2f6fd8c17096c9c25a0f1af886894e68d33e939d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37964429"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672573"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
+
+*これは、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 テスト ラボ ガイド (TLG) を活用すれば、Microsoft 製品の概要をいち早く把握することができます。テスト ラボ ガイドは、簡単ではあるものの代表的なテスト環境を構成する方法を説明しています。これらの環境は、試用期間または有料サブスクリプションの期間内に、デモ、カスタマイズ、概念の複合的な証拠の作成に使用できます。 
 
@@ -43,6 +45,8 @@ TLG はモジュラーとして機能するように設計されています。T
 - オンプレミスのコンポーネントを含まないクラウド専用の環境で、Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合は、[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)を使用します。
 
 - Active Directory Domain Services (AD DS) ドメインなどのオンプレミスのコンポーネントを使用するハイブリッド クラウド環境で、Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合は、[シミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)を使用します。
+
+試用版または運用テスト環境に Microsoft 365 E5 ライセンスを追加することなく、Office 365 E5 のテスト環境を作成することもできます。
     
 ## <a name="identity"></a>ID
 
