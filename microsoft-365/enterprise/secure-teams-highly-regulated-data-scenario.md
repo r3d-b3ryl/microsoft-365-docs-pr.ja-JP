@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 最重要ファイルおよび機密ファイルを保存するためのセキュリティで保護されたチームを作成します。
-ms.openlocfilehash: 97cc19b0b0067dc0eaca845dd16621be823f1334
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302954"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627501"
 ---
 # <a name="teams-for-highly-regulated-data"></a>厳しく規制されたデータに Teams で対応する
 
@@ -125,7 +125,7 @@ ms.locfileid: "38302954"
 
 ![セキュリティで保護されたチーム シナリオの構成の手順 4](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
-### <a name="step-5-create-the-label-or-a-sublabel-of-the-highly-regulated-label"></a>手順 5: 厳しく規制されたラベル用のラベルまたはサブラベルを作成する
+### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>手順 5: 厳しく規制された機密度ラベル用の機密度ラベルまたはサブラベルを作成する
 
 すべてのユーザーが任意のファイルに適用できる、厳しく規制されたデータの秘密度ラベルとは異なり、セキュリティで保護されたチーム サイトでは独自のラベルまたはサブラベルが必要です。ラベルまたはサブラベルが割り当てられたファイルは次のようになります。
 

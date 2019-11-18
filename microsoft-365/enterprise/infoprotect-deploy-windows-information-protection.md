@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の Windows Information Protection について理解し、展開します。
-ms.openlocfilehash: 5d327ea97a24d4b1015940688b7702dc761e826d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370124"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627383"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>手順 4: Windows Information Protection の構成する
 
@@ -39,7 +39,7 @@ Microsoft 365 Enterprise を使用して組織に WIP を展開するには、�
   - 保護アプリのリストに記入してください。
   - WIP の保護レベルを選択します。
 
-[System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm)と共に WIP を使用することもできます。 
+[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm) で WIPを使用することもできます。 
 
 詳細については、「[WIP のベスト プラクティス]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)」を参照してください。
 
