@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
-ms.openlocfilehash: c9013e8334a4ef891885c7bc53b746b2db42b156
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085832"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686836"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -46,7 +47,7 @@ ms.locfileid: "37085832"
   
 #### <a name="confidence-range"></a>信頼範囲
 
-最後に、信頼範囲とは、検出された機密情報の種類が実際に一致するという信頼度のレベルです。 信頼範囲の値は、カウント範囲と同様に動作します。 カウント範囲を含めずにクエリを作成できます。 たとえば、信頼範囲が 85% 以上である限り、任意の数のクレジットカード番号を含むドキュメントを検索するには、次`SensitiveType:"Credit Card Number|*|85.."`のクエリを使用します。 
+最後に、信頼範囲とは、検出された機密情報の種類が実際に一致するという信頼度のレベルです。 信頼範囲の値は、カウント範囲と同様に動作します。 カウント範囲を含めずにクエリを作成できます。 たとえば、信頼範囲が85% 以上である限り、任意の数のクレジットカード番号を含むドキュメントを検索するには、次`SensitiveType:"Credit Card Number|*|85.."`のクエリを使用します。 
   
 > [!IMPORTANT]
 > アスタリスク ( `*`) はワイルドカード文字で、任意の値を意味します。 ワイルドカード文字 ( `*`) は、count の範囲または信頼範囲に指定できますが、機密型では使用できません。 

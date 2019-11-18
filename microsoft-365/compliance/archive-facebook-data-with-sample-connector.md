@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ネイティブコネクタをセットアップして、Facebook のビジネスページ、Twitter、LinkedIn 会社のページ、インスタント Bloomberg などのデータソースからサードパーティのデータをインポートできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085513"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686764"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>サンプルコネクタを使用して Office 365 で Facebook データをアーカイブする (プレビュー)
 
@@ -23,7 +23,7 @@ Office 365 で Facebook データをアーカイブするためのサンプル�
 
 Office 365 のセキュリティ & コンプライアンスセンターのサンプルコネクタを使用して、Facebook のビジネスページから Office 365 にデータをインポートしてアーカイブすることができます。 サンプルコネクタをセットアップして構成すると、Facebook のビジネスページに接続され (スケジュールに従って)、Facebook のアイテムのコンテンツが電子メールメッセージの形式に変換され、それらのアイテムを Office 365 のメールボックスにインポートします。
 
-Facebook データがインポートされた後、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、監督、Office 365 保持ポリシーなどの Office 365 コンプライアンス機能を Facebook データに適用することができます。 たとえば、メールボックスが訴訟ホールドの対象となっている場合、またはアイテム保持ポリシーに割り当てられている場合、Facebook データは保持されます。 高度な電子情報開示ケースでは、コンテンツ検索を使用してサードパーティのデータを検索するか、または保管担当者に Facebook データが格納されているメールボックスを関連付けることができます。 コネクタを使用して Office 365 で Facebook のデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
+Facebook データがインポートされたら、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、[通信コンプライアンス](communication-compliance.md)、office 365 保持ポリシーなどの office 365 コンプライアンス機能を facebook データに適用することができます。 たとえば、メールボックスが訴訟ホールドの対象となっている場合、またはアイテム保持ポリシーに割り当てられている場合、Facebook データは保持されます。 高度な電子情報開示ケースでは、コンテンツ検索を使用してサードパーティのデータを検索するか、または保管担当者に Facebook データが格納されているメールボックスを関連付けることができます。 コネクタを使用して Office 365 で Facebook のデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
 > [!NOTE]
 > 現時点では、Facebook のビジネスページと[Twitter](archive-twitter-data-with-sample-connector.md)のサンプルコネクタのみをプレビューで利用できます。 その他のサンプルコネクタは近日中に公開されます。
@@ -85,9 +85,9 @@ Facebook データがインポートされた後、訴訟ホールド、コン�
 
 この手順が完了すると (手順に従って)、次の情報が提供されます (前の手順を完了した後、テキストファイルにコピーしたもの) web app リソースを作成します。
 
-- APISecretKey —この手順の完了時にこのシークレットを作成します。手順7で使用されます。
-- StorageAccountConnectionString –手順3で Azure storage アカウントを作成した後にコピーした接続文字列 Uri。
-- tenantId –手順2で Azure Active Directory で Facebook connector アプリを作成した後にコピーした Office 365 組織のテナント ID。
+- APISecretKey: この手順の完了時にこのシークレットを作成します。手順7で使用されます。
+- StorageAccountConnectionString: 手順3で Azure storage アカウントを作成した後にコピーした接続文字列 Uri。
+- tenantId: 手順2で Azure Active Directory で Facebook connector アプリを作成した後にコピーした Office 365 組織のテナント ID。
 
 さらに、この手順の手順1でダウンロードした SampleConnector ファイルをアップロードして、Facebook connector アプリのソースコードを展開します。
 
@@ -118,7 +118,7 @@ Facebook データがインポートされた後、訴訟ホールド、コン�
 - Facebook webhook でトークンを確認する (手順5で取得)
 - Azure Active Directory アプリケーション ID (手順2で取得した AAD アプリケーション ID)
 - Azure Active Directory アプリケーションシークレット (手順2で取得した AAD アプリケーションシークレット)
-- Azure Active Directory アプリケーション Uri (手順2で取得した AAD アプリケーション Uri、たとえば、https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- Azure Active Directory アプリケーション Uri (手順2で取得した AAD アプリケーション Uri、たとえば、`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>手順 7: セキュリティ & コンプライアンスセンターでカスタムコネクタをセットアップする
 

@@ -12,24 +12,24 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 社が System Center Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
-ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
+ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370474"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627333"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 社の Windows 10 Enterprise 展開
 
-**概要:** Contoso 社が System Center Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
+**概要:** Contoso 社が Microsoft Endpoint Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
 
 Microsoft 365 Enterprise の広範なロールアウトに先立ち、Contoso 社には、Windows 7 (10%)、Windows 8.1 (65%)、Windows 10 (25%) が混在する Windows 互換の PC とデバイスがありました。Contoso 社は、Windows 10 Enterprise 用の PC をアップグレードして、高度なセキュリティを利用したいと考え、更新プログラムの自動展開により IT 部門の負荷を削減しました。 
 
 インフラストラクチャとビジネス ニーズを評価した後、Contoso 社は展開に向けて、以下の重要な要件を特定しました。
 
 - できるだけ多くの PC やデバイスで Windows 10 Enterprise を実行する必要がある
-- 一括アップグレードのロールアウトには、既存の System Center Configuration Manager インフラストラクチャを活用する
+- 一括アップグレードのロールアウトには、既存の Configuration Manager インフラストラクチャを活用する
 - Windows 10 Enterprise のどのバージョンを展開するかを制御し、更新プログラムはリングを介して行う
 - PC やデバイスは、IT 管理コストとエンドユーザーに与える影響を最小限に抑えつつ、最新の状態に保つ必要がある
 
@@ -51,7 +51,7 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの前お�
 
   頻繁にクラッシュするデバイスを特定します。そのため、再構築または交換が必要になる可能性があり、デバイス クラッシュの原因となるデバイス ドライバーと、クラッシュの数を減らす可能性のあるドライバーの代替バージョンを提案します。 エンド ユーザーにプロンプ​​トを送信する Windows 情報保護の構成の誤りを通知します。
  
-Contoso 社には、既存の System Center Configuration Manager (Current Branch) インフラストラクチャがあります。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Windows 10 Enterprise の展開と管理をより簡単で効率的にするための機能も組み込まれています。
+Contoso 社には、既存の Configuration Manager (Current Branch) インフラストラクチャがあります。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Windows 10 Enterprise の展開と管理をより簡単で効率的にするための機能も組み込まれています。
 
 ## <a name="planning-process"></a>計画プロセス
 
@@ -83,7 +83,7 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの展開�
 
 このインフラストラクチャは以下で構成されます。
 
-- System Center Configuration Manager
+- Configuration Manager は、以下を行います:
   - Microsoft Network の Microsoft ボリューム ライセンス センターから Windows 10 Enterprise パッケージのイメージを取得します。
   - 展開パッケージに対する中央の管理ポイントです。
 - 通常は Contoso 社の地域ハブ オフィスにある地域配布ポイント。
@@ -91,7 +91,7 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの展開�
 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社が System Center Configuration Manager インフラストラクチャを利用して、現在の Office 365 ProPlus を組織全体に展開し、維持する方法について[説明](contoso-o365pp.md)します。 
+Contoso 社が Configuration Manager インフラストラクチャを利用して、現在の Office 365 ProPlus を組織全体に展開し、維持する方法について[説明](contoso-o365pp.md)します。 
 
 ## <a name="see-also"></a>関連項目
 

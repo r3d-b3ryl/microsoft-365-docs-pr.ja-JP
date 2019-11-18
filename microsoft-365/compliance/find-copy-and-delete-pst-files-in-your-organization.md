@@ -11,12 +11,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Microsoft PST コレクションツールを使用して、組織のネットワークを検索し、組織全体に散在している PST ファイルのインベントリを取得します。 PST ファイルを検索したら、pst コレクションツールを使用して、それらを Office 365 にインポートできるように、1つの場所にコピーすることができます。
-ms.openlocfilehash: 000da8aec988e85f935a96aabe9faa48932aaeaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 703208b574a723eb4f91aad0a892d6ea4abf427b
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085940"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686883"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>PST コレクションツールを使用して、組織内の PST ファイルを検索、コピー、および削除する
 
@@ -41,7 +41,7 @@ PST コレクションツールを使用して、組織内の PST ファイル�
     
 4. **[手順 4: pst ファイルを Office 365 にインポート](#step-4-import-the-pst-files-to-office-365)** します。 pst ファイルを1つの場所にコピーしたら、それらを Exchange Online メールボックスにインポートする準備ができました。 
     
-5. **[手順 5: ネットワーク上の pst ファイルを削除](#step-5-delete-the-pst-files-found-on-your-network)** する-見つかって収集された pst ファイルを Office 365 の Exchange Online メールボックスにインポートした後、pst コレクションツールを使用して、pst ファイルを元の場所から削除することができます。が手順1で見つかりました。 
+5. **[手順 5: ネットワーク上の pst ファイルを削除](#step-5-delete-the-pst-files-found-on-your-network)** する-見つけて収集した pst ファイルを Office 365 の Exchange Online メールボックスにインポートした後、pst コレクションツールを使用して、手順1で見つかった pst ファイルを元の場所から削除できます。 
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -78,7 +78,7 @@ PST コレクションツールを使用して、組織内の PST ファイル�
     
 4. 指定した場所に PST ファイルを検索するには、次のコマンドを実行します。
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName <Name> -Locations <Locations to search for PSTs> -LogLocation <Location to store log files> -ConfigurationLocation <Location to store configuration files>
     ```
 
@@ -97,7 +97,7 @@ PST コレクションツールを使用して、組織内の PST ファイル�
    
     各パラメーターに実際の値を使用して、DataCollectorMaster コマンドの構文の例を次に示します。
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -LogLocation "c:\users\admin\desktop\PSTCollection" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"
     ```
 
@@ -138,7 +138,7 @@ PST ファイルへのアクセスをブロックするには、次のように�
     
 3. 手順1で見つかった PST ファイルへのアクセスをブロックするには、次のコマンドを実行します。
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -BlockChangesToFiles -BlockNewFiles
     ```
 
@@ -156,10 +156,10 @@ PST ファイルへのアクセスをブロックするには、次のように�
    
     各パラメーターに実際の値を使用して、DataCollectorMaster コマンドの構文の例を次に示します。
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection" -BlockChangesToFiles -BlockNewFiles
     ```
-    
+
     新しい PST ファイルまたは既存の PST ファイルへの変更をブロックするかどうかを確認するメッセージが表示されます。 続行することを確認し、コマンドが正常に実行されると、"PST Usage Controls" という名前の新しい GPO が作成されたことを示すメッセージが表示されます。
     
 ## <a name="step-3-copy-the-pst-files-to-a-collection-location"></a>手順 3: PST ファイルをコレクションの場所にコピーする
@@ -175,7 +175,7 @@ PST ファイルへのアクセスをブロックするには、次のように�
     
 3. 次のコマンドを実行して、PST ファイルを指定した場所にコピーします。
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName <Name of job from Step 1> -Locations <same locations from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
@@ -190,11 +190,11 @@ PST ファイルへのアクセスをブロックするには、次のように�
     | `ConfigurationLocation` <br/> |検索モードでツールを実行したときに作成された .xml 構成ファイルが格納されているフォルダーを指定します。 手順1でこのパラメーターに使用したのと同じ値を使用します。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop \PSTCollection\Configuration"` <br/> |
     | `CopyLocation` <br/> |PST ファイルのコピー先となるコレクションの場所を指定します。 ファイルをファイルサーバー、ネットワークファイル共有、またはハードドライブにコピーすることができます。 この場所は、収集モードでツールを実行する前に存在している必要があります。 このツールは場所を作成せず、存在しないというエラーが返されます。  <br/> また、このパラメーターで指定されたコレクションの場所にアクセス許可を書き込む必要があります。  <br/> | `-CopyLocation "\\FILESERVER03\PSTs"` <br/> |
     | `LogLocation` <br/> |収集モードのログファイルがコピーされるフォルダーを指定します。 このパラメーターは省略可能です。 このファイルを含めない場合、ログファイルは PST コレクションツールをダウンロードしたフォルダーにコピーされます。 手順1の検索モードでツールを実行したときに使用したのと同じログの場所を使用して、すべてのログファイルが同じフォルダーに保存されるようにしてください。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |このオプションのスイッチを使用すると、既存の PST コレクションジョブのコレクションモードでツールを再実行できます。 以前に Collect モードでツールを実行していて、PST ファイルの場所を再スキャンする`ForceRestart`スイッチを使用して、このツールを検索モードで再び実行した場合は、このスイッチを使用して、コレクションモードでツールを再実行し、場所を再スキャンします。 コレクションモードで`ForceRestart`スイッチを使用する場合、このツールは以前のすべてのコレクション操作を無視し、PST ファイルを最初からコピーしようとします。  <br/> | `-ForceRestart` <br/> |
+    | `ForceRestart` <br/> |このオプションのスイッチを使用すると、既存の PST コレクションジョブのコレクションモードでツールを再実行できます。 以前に Collect モードでツールを実行していて、PST ファイルの場所を再スキャンする`ForceRestart`スイッチを使用して、このツールを検索モードで再度実行した場合は、このスイッチを使用して、コレクションモードでツールを再実行し、場所を再スキャンしたときに見つかった PST ファイルを再コピーできます。 コレクションモードで`ForceRestart`スイッチを使用する場合、このツールは以前のすべてのコレクション操作を無視し、PST ファイルを最初からコピーしようとします。  <br/> | `-ForceRestart` <br/> |
    
     各パラメーターに実際の値を使用して、DataCollectorMaster ツールの構文の例を次に示します。
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -CopyLocation "\\FILESERVER03\PSTs" -LogLocation "c:\users\admin\desktop\PSTCollection"
     ```
 
@@ -230,7 +230,7 @@ PST ファイルを Office 365 にインポートするための詳細な手順�
     
 3. PST ファイルを削除するには、次のコマンドを実行します。
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
@@ -243,14 +243,14 @@ PST ファイルを Office 365 にインポートするための詳細な手順�
     | `JobName` <br/> |既存の PST コレクションジョブの名前を指定します。 この同じジョブ名を使用する必要があります。この名前は、このツールを検索モードで実行したときと、手順1および手順3で使用したものと同じです。 このジョブ名は、ツールを削除モードで実行するときに作成されるログファイルの名前にも追加されます。  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |収集モードでツールを実行したときに作成された .xml 構成ファイルが格納されているフォルダーを指定します。 手順3でこのパラメーターに使用したのと同じ値を使用します。  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |
     | `LogLocation` <br/> |削除モードのログファイルがコピーされるフォルダーを指定します。 このパラメーターは省略可能です。 このファイルを含めない場合、ログファイルは PST コレクションツールをダウンロードしたフォルダーにコピーされます。 手順1と手順3でツールを実行したときと同じログの場所を使用して、すべてのログファイルが同じフォルダーに保存されるようにしてください。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |このオプションスイッチを使用すると、既存の PST コレクションジョブの削除モードでツールを再実行できます。 以前に削除モードでツールを実行していて、PST ファイルの場所を再スキャンする`ForceRestart`スイッチを使用して、このツールを検索モードで再び実行した場合は、このスイッチを使用して削除モードでツールを再実行し、再 sca で検出された pst ファイルを削除できます。この場所を代入します。 `ForceRestart`スイッチを削除モードで使用すると、以前の削除操作は無視され、PST ファイルの削除が再試行されます。  <br/> | `-ForceRestart` <br/> 
+    | `ForceRestart` <br/> |このオプションスイッチを使用すると、既存の PST コレクションジョブの削除モードでツールを再実行できます。 以前に削除モードでツールを実行していて、PST ファイルの場所を再スキャンするために`ForceRestart`スイッチを使用してツールを再度検索モードで実行した場合は、このスイッチを使用して削除モードでツールを再実行し、場所を再スキャンしたときに検出された PST ファイルを削除できます。 `ForceRestart`スイッチを削除モードで使用すると、以前の削除操作は無視され、PST ファイルの削除が再試行されます。  <br/> | `-ForceRestart` <br/> 
 
     各パラメーターに実際の値を使用して、DataCollectorMaster ツールの構文の例を次に示します。
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection"
     ```
-   
+
     コマンドを実行すると、手順1で検出され、手順3で収集された PST ファイルの削除の進行状況を示す詳細な状態メッセージが表示されます。 しばらくすると、最後の状態メッセージにエラーがあるかどうかと、ログのコピー先が表示されます。 同じ状態メッセージが .log ファイルにコピーされます。
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>削除モードで DataCollectorMaster を実行した結果

@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、インスタント Bloomberg チャットツールから Office 365 にデータをインポートするためのネイティブコネクタをセットアップできます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: eda68a0fdc887a2042a78683eaef0693264d0684
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085508"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38686690"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Office 365 でインスタント Bloomberg データをアーカイブするためのコネクタを設定する
 
 Office 365 のセキュリティ & コンプライアンスセンターのネイティブコネクタを使用して、[インスタント Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)コラボレーションツールから金融サービスチャットデータをインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の Bloomberg secure FTP サイト (SFTP) に毎日接続して、チャットメッセージの内容を電子メールメッセージの形式に変換した後、それらのアイテムを Office 365 のメールボックスにインポートします。
 
-ユーザーのメールボックスにインスタント Bloomberg データが格納された後、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、Office 365 アイテム保持ポリシーなどの Office 365 コンプライアンス機能をインスタント Bloomberg データに適用することができます。 たとえば、コンテンツ検索を使用してインスタント Bloomberg チャットメッセージを検索したり、インスタント Bloomberg データを含むメールボックスを高度な電子情報開示ケースの保管担当者に関連付けることができます。 Office 365 でインスタント Bloomberg コネクタを使用してデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
+ユーザーのメールボックスにインスタント Bloomberg データが格納された後、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、[通信コンプライアンス](communication-compliance.md)、office 365 アイテム保持ポリシーなどの office 365 コンプライアンス機能をインスタント Bloomberg データに適用することができます。 たとえば、コンテンツ検索を使用してインスタント Bloomberg チャットメッセージを検索したり、インスタント Bloomberg データを含むメールボックスを高度な電子情報開示ケースの保管担当者に関連付けることができます。 Office 365 でインスタント Bloomberg コネクタを使用してデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>インスタント Bloomberg データのアーカイブの概要
 
@@ -119,7 +119,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのネイ
 5. [**代替メールボックス**] ページで、組織内のユーザーメールボックスに関連付けられていないインスタント Bloomberg からのチャットメッセージを格納するために使用されるメールボックスの電子メールアドレスを入力します。
 
    > [!NOTE]
-   > インスタント Bloomberg のすべての会話のすべてのチャットメッセージには、 *CorporateEmailAddress*という名前のプロパティが含まれています。このプロパティには、チャットの参加者の組織の電子メールアドレスが含まれています。 インポート処理中に、コネクタは、 *CorporateEmailAddress*プロパティのものと一致する電子メールアドレスを持つ Office 365 のユーザーメールボックスにチャットメッセージをインポートしようとします。 *CorporateEmailAddress*プロパティのものと同じアドレスを持つ Office 365 メールボックスがない場合、コネクタはこのページで指定した代替メールボックスにチャットメッセージをインポートします。 現時点では、代替メールボックスにアーカイブされたインスタント Bloomberg チャットメッセージは、Office 365 の監督ポリシーでは監視されません。
+   > インスタント Bloomberg のすべての会話のすべてのチャットメッセージには、 *CorporateEmailAddress*という名前のプロパティが含まれています。このプロパティには、チャットの参加者の組織の電子メールアドレスが含まれています。 インポート処理中に、コネクタは、 *CorporateEmailAddress*プロパティのものと一致する電子メールアドレスを持つ Office 365 のユーザーメールボックスにチャットメッセージをインポートしようとします。 *CorporateEmailAddress*プロパティのものと同じアドレスを持つ Office 365 メールボックスがない場合、コネクタはこのページで指定した代替メールボックスにチャットメッセージをインポートします。
 
 6. [**次へ**] をクリックして設定を確認し、[**準備**] をクリックしてコネクタを作成します。
 

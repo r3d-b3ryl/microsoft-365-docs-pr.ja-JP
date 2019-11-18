@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a19b8f7933cfae06c462d204148f53b441126f58
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085226"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38686814"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
@@ -114,7 +114,7 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 カスタマーロックボックス要求に対応する監査レコードは、Office 365 監査ログに記録され、Office 365 セキュリティ & コンプライアンスセンターの[監査ログ検索ツール](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)を使用してアクセスできます。 顧客に関連するアクション (アクセス要求が承認された場合に、Microsoft のエンジニアによって実行された操作) を承諾または拒否すると、Office 365 監査ログに記録されます。 これらの監査レコードを検索して確認することができます。
 
 > [!NOTE]
-> Office 365 監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。 詳細については、「[Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)」を参照してください。
+> Office 365 監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。 詳細については、「[Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)」を参照してください。
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>カスタマーロックボックス要求に関連するアクティビティの監査ログを検索する
 
@@ -136,9 +136,9 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 
     b. **開始**日と**終了日**-その期間内に発生したイベントを表示する日付と時刻の範囲を選択します。
 
-    c. **ユーザー** -このフィールドは空白のままにします。
+    c.  **ユーザー** -このフィールドは空白のままにします。
 
-    d. **ファイル、フォルダー、またはサイト** - このフィールドは空白のままにします。
+    d.  **ファイル、フォルダー、またはサイト** - このフィールドは空白のままにします。
 
 5. [**検索**] をクリックして、設定した検索条件で検索を実行します。 
 
@@ -162,7 +162,7 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 |:---------- |:----------|
 | 日付       | 顧客のロックボックス要求が承認または拒否された日時。
 | IP アドレス | 承認者が要求を承認または拒否するために使用したコンピューターの IP アドレス。 |
-| ユーザー       | サービスアカウント BOXServiceAccount @\[\]prod.outlook.com。            |
+| ユーザー       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
 | アクティビティ   | AccessToCustomerDataRequest;これは、顧客のロックボックス要求を承認または拒否するときに記録される監査アクティビティです。                                |
 | 項目       | 顧客のロックボックス要求の Guid                             |
 
@@ -216,7 +216,7 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 
 - お客様のコンテンツが残っている場合の推論、以降のすべての推論
 
-Office 365 の顧客コンテンツの詳細については、「 [office 365 のセキュリティセンター](https://products.office.com/en-US/business/office-365-trust-center-privacy/)」を参照してください。
+Office 365 の顧客コンテンツの詳細については、「 [office 365 のセキュリティセンター](https://products.office.com/business/office-365-trust-center-privacy/)」を参照してください。
 
 #### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>自分のコンテンツへのアクセスを要求された場合、だれに通知されますか。
 
@@ -270,9 +270,9 @@ Office 365 の顧客コンテンツの詳細については、「 [office 365 �
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>カスタマーロックボックスは、法律執行機関または他のサードパーティからのデータ要求に対して保護されるものですか?
 
-いいえ。 Microsoft は、お客様のデータに関するサードパーティの要求を真剣に引き受けます。 クラウドサービスプロバイダーとして、Microsoft はお客様のデータのプライバシーを常に重視しています。 召喚を受け取った場合、Microsoft は常にお客様に情報を取得するためにサードパーティのリダイレクトを試行します。 (行政スミスのブログ:[政府からのお客様データの保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 Microsoft が受け取る法的執行機関の要求に関する[詳細情報](https://www.microsoft.com/en-us/corporate-responsibility/lerr)を定期的に公開しています。
+いいえ。 Microsoft は、お客様のデータに関するサードパーティの要求を真剣に引き受けます。 クラウドサービスプロバイダーとして、Microsoft はお客様のデータのプライバシーを常に重視しています。 召喚を受け取った場合、Microsoft は常にお客様に情報を取得するためにサードパーティのリダイレクトを試行します。 (行政スミスのブログ:[政府からのお客様データの保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 Microsoft が受け取る法的執行機関の要求に関する[詳細情報](https://www.microsoft.com/corporate-responsibility/lerr)を定期的に公開しています。
 
-詳細については、「[オンラインサービス用語](https://www.microsoft.com/Licensing/product-licensing/products.aspx)」の「サードパーティのデータ要求に関する[Microsoft セキュリティセンター](https://www.microsoft.com/en-us/trustcenter/default.aspx) 」と「顧客データの開示」を参照してください。
+詳細については、「[オンラインサービス用語](https://www.microsoft.com/Licensing/product-licensing/products.aspx)」の「サードパーティのデータ要求に関する[Microsoft セキュリティセンター](https://www.microsoft.com/trustcenter/default.aspx) 」と「顧客データの開示」を参照してください。
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Microsoft では、Office 365 アプリケーションの顧客コンテンツへの継続的なアクセス権を、スタッフのメンバーが持っているかどうかを確認する方法を教えてください。
 

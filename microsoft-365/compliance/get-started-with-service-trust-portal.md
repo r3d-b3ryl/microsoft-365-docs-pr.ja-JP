@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Office 365、Azure、および Dynamics 365 Online の規制コンプライアンスレポートでは、サードパーティの監査を確認するために、Microsoft がお客様のデータを安全に保持する方法と、これらのオンラインサービスを使用する場合に ISO、HIPAA、NIST、FINRA、GDPR、および FedRAMP に準拠する方法を確認します。
-ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 22968c23b1d521b8fd48e9eccd4679e0a6dd2ed2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085086"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686878"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal を使い始める
 
@@ -76,7 +76,7 @@ Service Trust Portal には、クラウドサービスおよびお客様のデ�
 
   監査レポートと、[**監査レポート**] ページへのリンクに関する情報も、サービス信頼ポータルのホームページに表示されます。 
   
-- **コンプライアンスマネージャー** -コンプライアンスマネージャーは、office 365、Dynamics 365 などの Microsoft クラウドサービスに関連する組織のコンプライアンスアクティビティを追跡、割り当て、および検証するために役立つ、ワークフローベースのリスク評価ツールです。Azure. コンプライアンスマネージャーを使用して、クラウドの共有責任モデルで法令遵守を管理します。 詳細については、「[コンプライアンスマネージャーを使用して、Microsoft クラウドサービスを使用する際のデータ保護と規制要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)」を参照してください。
+- **コンプライアンスマネージャー** -コンプライアンスマネージャーは、office 365、Dynamics 365、Azure などの Microsoft クラウドサービスに関連する組織のコンプライアンスアクティビティを追跡、割り当て、および検証するために役立つ、ワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用して、クラウドの共有責任モデルで法令遵守を管理します。 詳細については、「[コンプライアンスマネージャーを使用して、Microsoft クラウドサービスを使用する際のデータ保護と規制要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)」を参照してください。
 
 ### <a name="industries--regions"></a>業界 & 地域
 
@@ -84,9 +84,9 @@ Microsoft クラウドサービスに関する業界固有または地域固有�
 
 - **業界**: Microsoft クラウドサービスがこれらの業界の標準および規制に準拠できるようにするための情報と、お客様のための業界固有のランディングページが提供されています。
 
-    - Education
+    - 教育
     - 金融サービス
-    - 合衆国
+    - 政府機関
     - 正常性
     - 製造
     - 小売
@@ -112,7 +112,7 @@ Microsoft セキュリティ[センター](https://www.microsoft.com/trustcenter
 
 この新機能を使用すると、ドキュメントを保存 (または*pin*) して、自分のライブラリページにすばやくアクセスできるようにすることができます。 また、個人用ライブラリのドキュメントが更新されたときに Microsoft が電子メールメッセージを送信するように通知を設定することもできます。 詳細については、この記事の「 [My Library](#my-library-1) 」セクションを参照してください。
 
-### <a name="admin"></a>管理者
+### <a name="admin"></a>Admin
 
 グローバル管理者アカウントのみが使用できる管理機能。 このオプションは、全体管理者としてサインインしている場合にのみ表示されます。
   
@@ -169,4 +169,4 @@ Service Trust Portal では、ページコンテンツを異なる言語で表�
   
 フィードバックは我々にとって非常に重要です。 ページの下部にある [フィードバック] ボタンをクリックして、お客様や製品の機能を向上させるためのご意見やご提案をお寄せください。
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![フィードバックの種類](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

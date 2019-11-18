@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: b13dab63514dc8658479dbd68d5a014dc7347bb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085260"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686728"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -107,7 +107,7 @@ Blunt のように、TFN の検出をデモンストレーションするため�
 
 ![チェックサムを渡さないオーストラリアの税ファイル番号](media/DLP-create-test-tune-email-test1.png)
 
-これに対して、"税ファイル番号" という語句を持つ電子メールと、チェックサムを渡す有効な TFN がポリシーをトリガーします。 ここでは、を使用している TFN I を使用しているのは、有効な (正規の) TFNs を生成する web サイトから取得されたものです。 [有効だが、偽装されたクレジットカード番号](http://www.fakecreditcardgenerator.net/)を生成する類似のサイトがあります。 DLP ポリシーをテストする際の最も一般的な間違いの1つは、無効で、チェックサムを渡さない (したがってポリシーをトリガーしない) ため、このようなサイトが非常に役立ちます。
+これに対して、"税ファイル番号" という語句を持つ電子メールと、チェックサムを渡す有効な TFN がポリシーをトリガーします。 ここでは、を使用している TFN I を使用しているのは、有効な (正規の) TFNs を生成する web サイトから取得されたものです。 [有効だが、偽装されたクレジットカード番号](https://www.fakecreditcardgenerator.net/)を生成する類似のサイトがあります。 DLP ポリシーをテストする際の最も一般的な間違いの1つは、無効で、チェックサムを渡さない (したがってポリシーをトリガーしない) ため、このようなサイトが非常に役立ちます。
 
 ![チェックサムに合格するオーストラリアの税ファイル番号](media/DLP-create-test-tune-email-test2.png)
 
@@ -203,7 +203,7 @@ DLP ポリシーが正確かつ効果的に機密情報の種類を検出して�
 
 ![ポリシーを有効にするオプション](media/DLP-create-test-tune-turn-on-policy.png)
  
-ポリシーが有効になるかどうかを確認するには、「 [Security & コンプライアンスセンターの PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)し、 [DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)を実行して、ランの状態を確認します。
+ポリシーが有効になるかどうかを確認するには、「 [Security & コンプライアンスセンターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)し、 [DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)を実行して、ランの状態を確認します。
 
 ![PowerShell でのコマンドレットの実行](media/DLP-create-test-tune-PowerShell.png)
 

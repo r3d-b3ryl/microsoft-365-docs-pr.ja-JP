@@ -3,7 +3,7 @@ title: Office 365 の&amp;セキュリティコンプライアンスを計画す
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 3/15/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: セキュリティとコンプライアンスを計画するためのランディングページ
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3619a5e22a5bc957b001dd4f42a9569a7543e6b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86eef432f30ea9a437f0857f693d62eb23f4ba8d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086356"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686792"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Office 365 の&amp;セキュリティコンプライアンスを計画する
 
@@ -51,7 +51,7 @@ Office 365 データおよびサービスへのアクセスを保護すること
 
 3つのレベルの保護によって編成されたファイル保護機能を確認し、計画します。
   
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: Microsoft 365 セキュリティ&amp;コンプライアンスセンターを活用する
 
@@ -59,9 +59,9 @@ Office 365 データおよびサービスへのアクセスを保護すること
   
 - [Office 365 セキュリティ&amp;コンプライアンスセンターに移動する](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>手順 6: エンドツーエンドのセキュリティシナリオを出発点として使用する
 
@@ -69,16 +69,14 @@ Office 365 データおよびサービスへのアクセスを保護すること
   
 - [セキュリティで保護された電子メールポリシーと構成](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Microsoft Cloud の Contoso](http://aka.ms/cloudarchcontoso)
+- [Microsoft Cloud の Contoso](https://aka.ms/cloudarchcontoso)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理センターとダッシュボード
 
 Office 365 環境を保護するために、これらの管理センターおよびダッシュボードでセキュリティとコンプライアンスの設定を構成します。
   
-|**サブスクリプション**|**管理 URL**|**ダッシュボードと管理センター**|
+|**Subscription**|**管理 URL**|**ダッシュボードと管理センター**|
 |:-----|:-----|:-----|
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターと OneDrive for Business 管理センター  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft モバイルアプリケーション管理  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
-   
-

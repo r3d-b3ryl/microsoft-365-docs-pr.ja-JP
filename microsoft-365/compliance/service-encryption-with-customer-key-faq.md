@@ -7,23 +7,25 @@ ms.date: 7/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: BitLocker および Distributed Key Manager (DKM) によって有効になるベースライン、ボリュームレベルの暗号化に加えて、Office 365 では、Exchange からのデータを含む、Office 365 の顧客コンテンツのための暗号化のレイヤーが追加されています。Online、Skype for Business、SharePoint Online、OneDrive for business。 これをサービス暗号化と呼びます。
-ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086211"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686818"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 のFAQための、顧客キーによるサービスの暗号化
 
 BitLocker および Distributed Key Manager (DKM) によって有効になるベースライン、ボリュームレベルの暗号化に加えて、Office 365 では、Exchange からのデータを含む、Office 365 の顧客コンテンツのための暗号化のレイヤーが追加されています。Online、Skype for Business、SharePoint Online、OneDrive for business。 これをサービス暗号化と呼びます。
   
-顧客キーはサービス暗号化に基づいて構築されており、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)で説明されているように、Office 365 でデータを暗号化するために使用されるキーを提供および制御することができます。 カスタマー キーを使用すれば、Office 365 がデータの暗号化解除に使用する暗号化キーを制御できるので、法令遵守の義務を満たすことができます。
+顧客キーはサービス暗号化に基づいて構築されており、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx)で説明されているように、Office 365 でデータを暗号化するために使用されるキーを提供および制御することができます。 カスタマー キーを使用すれば、Office 365 がデータの暗号化解除に使用する暗号化キーを制御できるので、法令遵守の義務を満たすことができます。
   
 ドキュメントなど、顧客キーに関するフィードバックを提供するために、アイデア、提案、および展望を customerkeyfeedback@microsoft.com に送信します。
   
@@ -46,16 +48,16 @@ BYOK Exchange Online の Azure Information Protection は、Office 365 メッセ
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Office 365 Message Encryption および Azure Information Protection を使用して独自のキーを取り込む subpoenas などのサードパーティのデータ要求に対する Microsoft のアプローチを変更する
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-いいえ。 Office 365 メッセージの暗号化、および Azure Information Protection 用の独自のキー (BYOK) を使用して独自の暗号化キーを提供および制御するオプションは、法的執行 subpoenas への対応を目的としたものではありませんでした。 Office 365 AIP の BYOK によるメッセージの暗号化は、内部または外部のコンプライアンス義務を満たす必要があるコンプライアンスに重点を置いたお客様向けに設計されています。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 [ここで](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)受信する要求の詳細情報を定期的に公開しています。
+いいえ。 Office 365 メッセージの暗号化、および Azure Information Protection 用の独自のキー (BYOK) を使用して独自の暗号化キーを提供および制御するオプションは、法的執行 subpoenas への対応を目的としたものではありませんでした。 Office 365 AIP の BYOK によるメッセージの暗号化は、内部または外部のコンプライアンス義務を満たす必要があるコンプライアンスに重点を置いたお客様向けに設計されています。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 [ここで](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data)受信する要求の詳細情報を定期的に公開しています。
   
-詳細については、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)にあるサードパーティのデータ要求と "顧客データの開示" に関する[Microsoft のセキュリティセンター](https://www.microsoft.com/en-us/trustcenter/default.aspx)を参照してください。
+詳細については、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx)にあるサードパーティのデータ要求と "顧客データの開示" に関する[Microsoft のセキュリティセンター](https://www.microsoft.com/trustcenter/default.aspx)を参照してください。
   
 ## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>顧客キーによるサービスの暗号化 Microsoft の subpoenas などのサードパーティのデータ要求に対するアプローチを変更しますか?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-いいえ。 顧客キーは、法的執行 subpoenas に対応するように設計されていません。 これは、規制を利用しているお客様が、内部または外部のコンプライアンス義務に対応するように設計されました。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 [ここで](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)受信する要求の詳細情報を定期的に公開しています。
+いいえ。 顧客キーは、法的執行 subpoenas に対応するように設計されていません。 これは、規制を利用しているお客様が、内部または外部のコンプライアンス義務に対応するように設計されました。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 [ここで](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)受信する要求の詳細情報を定期的に公開しています。
   
-詳細については、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)にあるサードパーティのデータ要求と "顧客データの開示" に関する[Microsoft のセキュリティセンター](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)を参照してください。 
+詳細については、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx)にあるサードパーティのデータ要求と "顧客データの開示" に関する[Microsoft のセキュリティセンター](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data)を参照してください。 
   
 ## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>カスタマーキーを実装するために FastTrack サポートは利用できますか?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -89,15 +91,15 @@ BYOK Exchange Online の Azure Information Protection は、Office 365 メッセ
 ## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>顧客キーによる暗号化がライセンス認証されており、Office 365 が顧客キーでの暗号化を完了したことを確認するには、どうすればよいですか?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online と Skype For business:**[リモート PowerShell を使用して Exchange Online に接続](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx)してから、確認する各メールボックスに対して **[get-mailboxstatistics]** コマンドレットを使用することができます。 Get-mailboxstatistics コマンドレットの出力では、メールボックスが暗号化されている場合は、 _IsEncrypted_プロパティは**true**の値を返し、そうでない場合は**false**に値を返します。 メールボックスが暗号化されている場合、 _Dataencryptionpolicyid_プロパティに対して返される値は、メールボックスが暗号化されている DEP の GUID です。 このコマンドレットの実行の詳細については、「 [get-mailboxstatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) 」および「using PowerShell With Exchange Online」を参照してください。 
+ **Exchange Online と Skype For business:**[リモート PowerShell を使用して Exchange Online に接続](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)してから、確認する各メールボックスに対して **[get-mailboxstatistics]** コマンドレットを使用することができます。 Get-mailboxstatistics コマンドレットの出力では、メールボックスが暗号化されている場合は、 _IsEncrypted_プロパティは**true**の値を返し、そうでない場合は**false**に値を返します。 メールボックスが暗号化されている場合、 _Dataencryptionpolicyid_プロパティに対して返される値は、メールボックスが暗号化されている DEP の GUID です。 このコマンドレットの実行の詳細については、「 [get-mailboxstatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx) 」および「using PowerShell With Exchange Online」を参照してください。 
   
-DEP を割り当てた時点から72時間が経過した後にメールボックスが暗号化されていない場合は、メールボックスの移動を開始します。 これを行うには、[リモート PowerShell を使用して Exchange Online に接続](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx)してから、new-moverequest コマンドレットを使用して、次のようにメールボックスのエイリアスを指定します。 
+DEP を割り当てた時点から72時間が経過した後にメールボックスが暗号化されていない場合は、メールボックスの移動を開始します。 これを行うには、[リモート PowerShell を使用して Exchange Online に接続](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)してから、new-moverequest コマンドレットを使用して、次のようにメールボックスのエイリアスを指定します。 
   
-```
+```powershell
 New-MoveRequest <alias>
 ```
 
- **SharePoint Online と OneDrive For business:**[SharePoint Online PowerShell に接続](https://technet.microsoft.com/en-us/library/fp161372.aspx)してから、 **[get-spodataencryptionpolicy]** コマンドレットを使用してテナントの状態を確認できます。 顧客キーの暗号化が有効になっており、すべてのサイトのすべてのファイルが暗号化されている場合、* * _State_* * プロパティは**登録さ**れた値を返します。 暗号化がまだ実行中の場合、このコマンドレットは、完了したサイトの割合に関する情報を提供します。 
+ **SharePoint Online と OneDrive For business:**[SharePoint Online PowerShell に接続](https://technet.microsoft.com/library/fp161372.aspx)してから、 **[get-spodataencryptionpolicy]** コマンドレットを使用してテナントの状態を確認できます。 顧客キーの暗号化が有効になっており、すべてのサイトのすべてのファイルが暗号化されている場合、* * _State_* * プロパティは**登録さ**れた値を返します。 暗号化がまだ実行中の場合、このコマンドレットは、完了したサイトの割合に関する情報を提供します。 
   
 ## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>別のキーセットに切り替える場合、新しいキーセットがデータを保護するのにどのくらいの時間がかかりますか?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -140,7 +142,7 @@ Exchange Online で可用性キーを使用するには、次の3つの方法が
   
 Office 365 では、Exchange Online の問題のある顧客のキー状態からサービスの可用性と回復を行うために、可用性キーを使用しています。 顧客キーによって使用されるキーの階層があります。 この階層を次の図に示します。
   
-![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
+![顧客キーのキーの階層を示す図](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
 単一のデータ暗号化ポリシー (DEP) の両方の Azure キーヴォールトキーが使用できない場合、Office 365 は可用性キーを使用して新しい DEP に変更することができます。 Office 365 は、ユーザーが開始したアクティビティ (ユーザーが Outlook クライアントに電子メールをダウンロードした場合など)、またはインデックス処理のようなシステムで開始されたアクティビティであるかどうかによって、サービスの可用性に可用性キーを使用するかどうかを決定します。メールボックスの内容、または電子情報開示検索の場合は、プロセスがトリガーされます。
   
@@ -206,11 +208,11 @@ SharePoint Online では、顧客キーを構成する Office 365 管理者が�
   
 Exchange Online の場合、"ユーザー" メールボックスおよび "メールユーザー" メールボックスがライセンスである必要があります。 共有メールボックスなど、他のすべてのユーザーが顧客キーのライセンスを持っている必要はありません。 Exchange Online メールボックスのライセンスが適切に付与されているかどうかを確認するには、次のコマンドレットを実行します。
   
-```
+```powershell
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
-文字列 BPOS_S_EquivioAnalytics が存在する場合、メールボックスは適切にライセンスされています。 それ以外の場合は、このメールボックスの顧客キー機能を使用するために、適切なライセンスを適用する必要があります。
+文字列 BPOS_S_EquivioAnalytics 存在する場合は、メールボックスのライセンスが適切に付与されます。 それ以外の場合は、このメールボックスの顧客キー機能を使用するために、適切なライセンスを適用する必要があります。
   
 ## <a name="can-i-enable-customer-key-for-a-trial-subscription"></a>試用版サブスクリプションのカスタマーキーを有効にすることはできますか?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -220,7 +222,7 @@ Exchange Online の場合、"ユーザー" メールボックスおよび "メ�
 ## <a name="how-much-will-using-customer-key-cost"></a>顧客キーのコストをどの程度使用するか。
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-顧客キーに必要なライセンスに加えて、お客様は重要な資格情報を使用するためのコストを発生させることができます。 [Azure Key Vault の価格の詳細](https://azure.microsoft.com/en-us/pricing/details/key-vault/)は、コストモデルを説明し、見積もりを支援します。 利用状況のパターンは変化するため、顧客が受ける正確なコストを予測する方法はありません。 コストが非常に低く、一般に、月ごとに $0.002 ~ $0.005 の範囲で、HSM によってバックアップされたキーのコストがあることが示されています。 コストは、お客様が選択したログ構成や、Azure Key Vault ログに使用される Azure ストレージの量によっても異なります。 
+顧客キーに必要なライセンスに加えて、お客様は重要な資格情報を使用するためのコストを発生させることができます。 [Azure Key Vault の価格の詳細](https://azure.microsoft.com/pricing/details/key-vault/)は、コストモデルを説明し、見積もりを支援します。 利用状況のパターンは変化するため、顧客が受ける正確なコストを予測する方法はありません。 コストが非常に低く、一般に、月ごとに $0.002 ~ $0.005 の範囲で、HSM によってバックアップされたキーのコストがあることが示されています。 コストは、お客様が選択したログ構成や、Azure Key Vault ログに使用される Azure ストレージの量によっても異なります。 
   
 ## <a name="for-more-information"></a>関連情報
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>

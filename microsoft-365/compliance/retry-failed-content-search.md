@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: コンテンツの場所にエラーがあるコンテンツ検索を解決するには、[再試行] ボタンを使用します。
-ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b35c2985efeafa3192a2404047fe62e28e04157e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086977"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686933"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 
 セキュリティ/コンプライアンスセンターでコンテンツ検索を使用して多数のメールボックスを検索すると、次のような検索エラーが表示されることがあります。
 
-```
+```text
 Error
 
 The search on the following locations failed:

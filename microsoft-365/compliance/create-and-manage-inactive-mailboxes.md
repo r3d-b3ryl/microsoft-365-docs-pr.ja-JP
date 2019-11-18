@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Office 365 で非アクティブなメールボックスを作成するには、ホールドまたは Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 ユーザーアカウントを削除します。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
-ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf2484dad9e9fda105985e9291a16a5f8a83f5c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085296"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686858"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Office 365 で非アクティブなメールボックスを作成および管理する
 
@@ -73,7 +73,7 @@ Office 365 により、削除済みメールボックスの内容を保持する
   
 1. に[https://protection.office.com](https://protection.office.com)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
     
-2. [**データガバナンス** > の**保持**] をクリックします。
+2. [**情報ガバナンス** > の**保持**] をクリックします。
     
 3. [**保持**] ページで、[**その他**![の](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)ナビゲーションバーの省略記号] をクリックし、[**非アクティブなメールボックス**] をクリックします。
     
@@ -85,7 +85,7 @@ Office 365 により、削除済みメールボックスの内容を保持する
   
 または、Exchange Online PowerShell で次のコマンドを実行して、非アクティブなメールボックスの一覧を表示することもできます。
 
-```
+```powershell
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
@@ -93,10 +93,10 @@ Office 365 により、削除済みメールボックスの内容を保持する
   
 また、次のコマンドを実行して、非アクティブなメールボックスとその他の情報の一覧を CSV ファイルにエクスポートすることもできます。 この例では、CSV ファイルが現在のディレクトリに作成されます。
 
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoType
 ```
-   
+
 > [!NOTE]
 > 非アクティブなメールボックスは、アクティブなユーザーメールボックスと同じ SMTP アドレスを持つことができます。 この場合は、 **DistinguishedName**または**exchangeguid**プロパティの値を使用して、非アクティブなメールボックスを一意に識別することができます。 
   
@@ -114,7 +114,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
     
 - 場合によっては、ユーザーは同じ SMTP アドレスを持つアクティブなメールボックスおよび非アクティブなメールボックスを所有している可能性があります。この場合、コンテンツ検索の場所として選択した特定のメールボックスのみが検索されます。つまり、検索にユーザーのメールボックスを追加する場合に、アクティブなメールボックスと非アクティブなメールボックスの両方が検索されることは想定できません。検索に明示的に追加したメールボックスのみが検索されます。
     
-- 同じ SMTP アドレスを持つアクティブなメールボックスと非アクティブなメールボックスを使用しないことを強くお勧めします。 非アクティブなメールボックスに現在割り当てられている SMTP アドレスを再利用する必要がある場合は、非アクティブなメールボックスを回復するか、非アクティブなメールボックスのコンテンツをアクティブなメールボックス (またはアクティブなメールボックスのアーカイブ) に復元することをお勧めします。非アクティブなメールボックス。
+- 同じ SMTP アドレスを持つアクティブなメールボックスと非アクティブなメールボックスを所有しないようにすることを強くお勧めします。 非アクティブなメールボックスに現在割り当てられている SMTP アドレスを再利用する必要がある場合は、非アクティブなメールボックスを回復するか、非アクティブなメールボックスのコンテンツをアクティブなメールボックス (またはアクティブなメールボックスのアーカイブ) に復元することをお勧めします。非アクティブなメールボックス。
     
 ## <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
 

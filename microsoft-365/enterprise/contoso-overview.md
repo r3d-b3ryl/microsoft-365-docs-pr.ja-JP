@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 429d74c66198c1b4a3dea735127a4fb569aa7bb0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369558"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627343"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
 
@@ -64,7 +64,7 @@ Contoso 社の IT アーキテクトは、Microsoft 365 Enterprise を展開す�
 
 - 地理的に複数の場所にあり、地域に応じた規制とコンプライアンスの要件がある
 - 本社オフィスに中央イントラネット データセンターがあり、地域のアプリケーション サーバーで内部の基幹業務アプリケーションをホストしている
-- 既存の System Center Configuration Manager インフラストラクチャ
+- 既存の Microsoft Endpoint Configuration Manager インフラストラクチャ
 - クライアント コンピューティング デバイスは Windows、Mac、Linux など各種混合
 - iOS (iPhone と iPad) や Android のスマートフォンやタブレットを含め、個人および会社が所有するモバイル デバイスは各種混合
 - リモートおよびモバイルのワーカーが多数

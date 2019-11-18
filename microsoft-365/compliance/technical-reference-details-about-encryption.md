@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 の encyption に関する技術的な詳細情報を表示します。
-ms.openlocfilehash: 0ae26aa6a534f0de0923f869acb94d7ee8529f31
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b21409007b82490730aa48f403c30e542ead0316
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086284"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686743"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Office 365 の暗号化についてのテクニカル リファレンスの詳細
 
@@ -63,12 +63,12 @@ TLS 1.0 と TLS 1.1 は、次の日付では非推奨となります。
 - 全世界および GCC 環境のお客様の場合、2020年6月1日。
 - 2020年1月15日、GCC High および DoD 独立環境のお客様向けです。 
 
-Office 365 サービスへの接続を維持するために、すべてのクライアントサーバーとブラウザーサーバーの組み合わせが TLS 1.2 (またはそれ以降のバージョン) を使用していることを確認する必要があります。 特定のクライアントサーバーとブラウザーサーバーの組み合わせを更新する必要がある場合があります。 この影響の詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
+Office 365 サービスへの接続を維持するために、すべてのクライアントサーバーとブラウザーサーバーの組み合わせが TLS 1.2 (またはそれ以降のバージョン) を使用していることを確認する必要があります。 特定のクライアントサーバーとブラウザーサーバーの組み合わせを更新する必要がある場合があります。 この影響の詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
   
 ## <a name="deprecating-support-for-3des"></a>3DES の廃止サポート
 <a name="TLS11and12deprecation"> </a>
 
-2018年10月31日以降、Office 365 は office 365 への通信に3DES 暗号化スイートの使用をサポートしなくなりました。 具体的には、Office 365 は TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher スイートをサポートしなくなりました。 2019年2月28日以降、この暗号スイートは Office 365 で無効になっています。 この日付の後に O365 と通信するクライアントおよびサーバーは、このトピックに記載されている、より安全な暗号の少なくとも1つをサポートする必要があります (「 [Office 365 でサポートされている TLS 暗号スイート](technical-reference-details-about-encryption.md#TLSCipherSuites)」を参照してください)。
+2018年10月31日以降、Office 365 は office 365 への通信に3DES 暗号化スイートの使用をサポートしなくなりました。 具体的には、Office 365 は TLS_RSA_WITH_3DES_EDE_CBC_SHA 暗号スイートをサポートしなくなりました。 2019年2月28日以降、この暗号スイートは Office 365 で無効になっています。 この日付の後に O365 と通信するクライアントおよびサーバーは、このトピックに記載されている、より安全な暗号の少なくとも1つをサポートする必要があります (「 [Office 365 でサポートされている TLS 暗号スイート](technical-reference-details-about-encryption.md#TLSCipherSuites)」を参照してください)。
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Office 365 における SHA-1 証明書サポートの廃止
 <a name="TLS11and12deprecation"> </a>
@@ -91,10 +91,10 @@ Cipher suite は、セキュリティで保護された接続を確立するた�
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |不要  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |不要  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |不要  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |不要  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
 ## <a name="related-topics"></a>関連項目
 [Windows 10 v1607 の TLS 暗号スイート](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
@@ -105,6 +105,6 @@ Cipher suite は、セキュリティで保護された接続を確立するた�
   
 [Windows セキュリティ状態更新プログラムでの TLS 1.0 の Schannel 実装:11 月24日、2015](https://support.microsoft.com/kb/3117336)
   
-[TLS/SSL 暗号化の強化 (Windows IT センター)](https://technet.microsoft.com/en-us/library/cc766285%28v=ws.10%29.aspx)
+[TLS/SSL 暗号化の強化 (Windows IT センター)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
 

@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Office 365 のセキュリティ & コンプライアンスセンターおよび Advanced eDiscovery から検索結果をダウンロードするとき、データのスループットを向上させるように Windows レジストリを構成する方法について説明します。
-ms.openlocfilehash: 44f595e6beffcc3d6789ad7b6f70ad77a48381cb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085795"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686879"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Office 365 から電子情報開示検索の結果をエクスポートするときにダウンロード速度を上げる
 
-Office 365 eDiscovery エクスポートツールを使用して、セキュリティ & コンプライアンスセンターのコンテンツ検索の結果をダウンロードするか、Office 365 Advanced eDiscovery からデータをダウンロードすると、ツールによって特定の数の同時エクスポート操作が開始され、データをローカルコンピューターに作成します。 既定では、同時操作の数は、データのダウンロードに使用しているコンピューターのコア数の8倍に設定されます。 たとえば、デュアルコアコンピューター (1 つのチップ上に2台の中央処理装置があることを意味します) では、既定の同時エクスポート操作数は16です。 データ転送のスループットとダウンロード処理の速度を向上させるために、検索結果のダウンロードに使用するコンピューターで Windows レジストリ設定を構成することによって、同時操作の数を増やすことができます。 ダウンロードプロセスを高速化するには、24回の同時操作の設定から始めることをお勧めします。
+Office 365 eDiscovery エクスポートツールを使用して、セキュリティ & コンプライアンスセンターのコンテンツ検索の結果をダウンロードするか、Office 365 Advanced eDiscovery からのデータをダウンロードすると、ツールによって特定の数の同時エクスポート操作が開始され、データがローカルコンピューターにダウンロードされます。 既定では、同時操作の数は、データのダウンロードに使用しているコンピューターのコア数の8倍に設定されます。 たとえば、デュアルコアコンピューター (1 つのチップ上に2台の中央処理装置があることを意味します) では、既定の同時エクスポート操作数は16です。 データ転送のスループットとダウンロード処理の速度を向上させるために、検索結果のダウンロードに使用するコンピューターで Windows レジストリ設定を構成することによって、同時操作の数を増やすことができます。 ダウンロードプロセスを高速化するには、24回の同時操作の設定から始めることをお勧めします。
   
 低帯域幅ネットワーク経由で検索結果をダウンロードする場合は、この設定値を大きくすると、悪影響を及ぼす可能性があります。 または、高帯域幅ネットワーク (同時操作の最大数は 48) で、24を超える同時操作の設定値を増やすことができる場合もあります。 このレジストリ設定を構成した後で、環境に最適な同時操作数を見つけるために、この設定を変更する必要がある場合があります。
   
@@ -33,7 +33,7 @@ Office 365 eDiscovery エクスポートツールを使用して、セキュリ�
     
 2. ファイル名サフィックス .reg を使用して、次のテキストをウィンドウのレジストリファイルに保存します。たとえば、ConcurrentOperations のようにします。 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "DownloadConcurrency"="24"

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Office 365 のメールボックスの回復可能なアイテムフォルダーのサイズを大きくするには、アーカイブメールボックスを有効にして、自動拡張アーカイブをオンにします。 '
-ms.openlocfilehash: 4c2e36dae3c8677579569d55a9c5b88efb5c54e5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085067"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686884"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 
@@ -36,16 +36,16 @@ ms.locfileid: "37085067"
 |**[回復可能なアイテム] フォルダーの記憶域クォータの合計** <br/> |無制限  <br/> |無制限  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Exchange Online (Plan 2) ライセンスを持つユーザーの場合、アーカイブメールボックスの初期格納域のクォータは 100 GB です。 ただし、保留中のメールボックスに対して自動拡張アーカイブが有効になっている場合、アーカイブメールボックスと回復可能なアイテムフォルダーの両方の記憶域クォータは 110 GB に増加します。 必要に応じて、アーカイブストレージの容量が無制限にプロビジョニングされます。 自動拡張アーカイブの詳細については、「 [Office 365 の無制限アーカイブの概要](unlimited-archiving.md)」を参照してください。 
+> <sup>\*</sup>Exchange Online (Plan 2) ライセンスを持つユーザーの場合、アーカイブメールボックスの初期格納域のクォータは 100 GB です。 ただし、保留中のメールボックスに対して自動拡張アーカイブが有効になっている場合、アーカイブメールボックスと回復可能なアイテムフォルダーの両方の記憶域クォータは 110 GB に増加します。 必要に応じて、アーカイブストレージの容量が無制限にプロビジョニングされます。 自動拡張アーカイブの詳細については、「[Office 365 での無制限アーカイブの概要](unlimited-archiving.md)」を参照してください。 
   
 保持中のメールボックスのプライマリ メールボックスに含まれる [回復可能なアイテム] フォルダーの記憶域クォータが上限に近づいたら、次の対策を講じることができます。
   
-- アーカイブ**メールボックスを有効にして自動拡張アーカイブを**有効にする-アーカイブメールボックスを有効にし、Exchange の自動拡張アーカイブ機能をオンにして、回復可能なアイテムフォルダーの記憶域の容量を無制限に有効にすることができます。オンライン。 この結果、プライマリメールボックスの回復可能なアイテムフォルダーでは 110 GB、ユーザーのアーカイブ内の回復可能なアイテムフォルダーの記憶域の容量に制限はありません。 「方法:[セキュリティ & コンプライアンスセンターでアーカイブメールボックスを有効](enable-archive-mailboxes.md)にする」および「 [Office 365 で無制限のアーカイブを有効](enable-unlimited-archiving.md)にする」を参照してください。
+- **アーカイブメールボックスを有効にして、自動拡張アーカイブを**有効にする-アーカイブメールボックスを有効にし、Exchange Online の自動拡張アーカイブ機能をオンにして、回復可能なアイテムフォルダーの記憶域の容量を無制限に有効にすることができます。 この結果、プライマリメールボックスの回復可能なアイテムフォルダーでは 110 GB、ユーザーのアーカイブ内の回復可能なアイテムフォルダーの記憶域の容量に制限はありません。 「方法:[セキュリティ & コンプライアンスセンターでアーカイブメールボックスを有効](enable-archive-mailboxes.md)にする」および「 [Office 365 で無制限のアーカイブを有効](enable-unlimited-archiving.md)にする」を参照してください。
     
     > [!NOTE]
     > [回復可能なアイテム] フォルダーの記憶域クォータの上限に近づいているメールボックスのアーカイブを有効にした後、管理フォルダー アシスタントを手動でトリガーしてメールボックスの処理を実行すると、期限切れのアイテムがアーカイブ メールボックス内の [回復可能なアイテム] フォルダーに移動されます。 この手順については、[手順 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) を参照してください。 ユーザーのメールボックス内のその他のアイテムも新しいアーカイブ メールボックスに移動される可能性があることに注意してください。 アーカイブメールボックスを有効にした後にこれが発生する可能性があることをユーザーに通知することを検討してください。 
   
-- メール**ボックスのカスタムアイテム保持ポリシーを作成**する。アーカイブメールボックスとメールボックスの自動拡張アーカイブを訴訟ホールドまたはインプレースホールドで有効にすることに加えて、メールボックス用にカスタムアイテム保持ポリシーを作成することもできます。収める. これにより、ホールドしていないメールボックスに適用される既定の MRM ポリシーとは異なるメールボックスにアイテム保持ポリシーを適用することができます。 これにより、メールボックス専用に設計された保持タグを保持することができます。 これには、回復可能なアイテムフォルダーの新しい保持タグの作成が含まれます。 
+- メール**ボックスのカスタムアイテム保持ポリシーを作成**する。アーカイブメールボックスとメールボックスの自動拡張アーカイブを訴訟ホールドまたはインプレース保持で有効にすることに加えて、メールボックスの保持時にカスタムアイテム保持ポリシーを作成することもできます。 これにより、ホールドしていないメールボックスに適用される既定の MRM ポリシーとは異なるメールボックスにアイテム保持ポリシーを適用することができます。 これにより、メールボックス専用に設計された保持タグを保持することができます。 これには、回復可能なアイテムフォルダーの新しい保持タグの作成が含まれます。 
     
 このトピックの残りの部分では、保持中のメールボックスのカスタム保存ポリシーを作成する手順について説明します。
   
@@ -65,13 +65,13 @@ ms.locfileid: "37085067"
     
 2. [回復可能なアイテム] フォルダーの新しい RPT を作成するには、次のコマンドを実行します。  
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
     ```
 
     たとえば、次のコマンドを実行すると、[回復可能なアイテム] フォルダー用に "Recoverable Items 30 days for mailboxes on hold" という名前の RPT が作成され、保持期間が 30 日間に設定されます。これは、アイテムが [回復可能なアイテム] フォルダーに移動されてから 30 日後に、そのアイテムがユーザーのアーカイブ メールボックス内の [回復可能なアイテム] フォルダーに移動されるということです。
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
     ```
 
@@ -118,17 +118,17 @@ EAC または Exchange Online の PowerShell を使用して、アイテム保�
   
 保持中のメールボックスの新しいアイテム保持ポリシーを作成するには、次のコマンドを実行します。  
   
-```
+```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
 
 ```
 
 たとえば次のコマンドを実行すると、前の図に示されているアイテム保持ポリシーとそれにリンクされている保持タグが作成されます。
   
-```
+```powershell
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
-  
+
 ## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>手順 3:保持中のメールボックスに新しいアイテム保持ポリシーを適用する
 
 最後のステップでは、手順 2 で作成した新しいアイテム保持ポリシーを、組織内の保持中のメールボックスに適用します。 EAC または Exchange Online の PowerShell を使用して、1つのメールボックスまたは複数のメールボックスにアイテム保持ポリシーを適用することができます。 
@@ -161,27 +161,27 @@ Exchange Online PowerShell を使用して、単一のメールボックスに�
   
 この例では、Pilar Pinilla のメールボックスに新しいアイテム保持ポリシーを適用します。
   
-```
+```powershell
 Set-Mailbox "Pilar Pinilla" -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 この例では、組織内の訴訟ホールド中のすべてのメールボックスに新しいアイテム保持ポリシーを適用します。
   
-```
+```powershell
 $LitigationHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'}
 ```
 
-```
+```powershell
 $LitigationHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 この例では、組織内のインプレース ホールド中のすべてのメールボックスに新しいアイテム保持ポリシーを適用します。
   
-```
+```powershell
 $InPlaceHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null}
 ```
 
-```
+```powershell
 $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
@@ -189,35 +189,35 @@ $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for M
   
 以下は、前の例で実行したコマンドを使用して、"MRM Policy for Mailboxes on Hold" というアイテム保持ポリシーが、訴訟ホールド中のメールボックスとインプレース ホールド中のメールボックスに適用されたことを確認する例です。
   
-```
+```powershell
 Get-Mailbox "Pilar Pinilla" | Select RetentionPolicy
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'} | FT DisplayName,RetentionPolicy -Auto
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | FT DisplayName,RetentionPolicy -Auto
 ```
-  
+
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>(省略可能) 手順 4:管理フォルダー アシスタントを実行して、新しい保持設定を適用する
 
 保留中のメールボックスに新しいアイテム保持ポリシーを適用した後、管理フォルダーアシスタントが新しいアイテム保持ポリシーの設定を使用してこれらのメールボックスを処理するには、Exchange Online で最大7日かかることがあります。 管理フォルダー アシスタントが実行されるのを待つ代わりに、**Start-ManagedFolderAssistant** コマンドレットを使用して、アシスタントを手動でトリガーし、新しいアイテム保持ポリシーを適用したメールボックスを処理することができます。 
   
 Pilar Pinilla のメールボックスに対して管理フォルダー アシスタントを開始するには、次のコマンドを実行します。
   
-```
+```powershell
 Start-ManagedFolderAssistant "Pilar Pinilla"
 ```
 
 保持中のすべてのメールボックスに対して管理フォルダー アシスタントを開始するには、次のコマンドを実行します。
   
-```
+```powershell
 $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlaceHolds -ne $null) -or ($_.LitigationHoldEnabled -eq "True")}
 ```
 
-```
+```powershell
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 

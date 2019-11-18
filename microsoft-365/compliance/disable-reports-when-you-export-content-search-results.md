@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Office 365 のセキュリティ & コンプライアンスセンターからコンテンツ検索の結果をエクスポートするときにレポートを無効にするには、ローカルコンピューターの Windows レジストリを編集します。 これらのレポートを無効にすると、ダウンロード時間が短縮され、ディスク容量が節約されます。
-ms.openlocfilehash: f6abcf8afe70bc6ce04f0f9343e28879f7fed885
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f9b999eaf3f1924012c9d4899b0e234f0893fc2c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085133"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686899"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>コンテンツ検索の結果をエクスポートするときにレポートを無効にする
 
@@ -34,7 +34,7 @@ Office 365 eDiscovery エクスポートツールを使用して、セキュリ�
     
       ファイル名サフィックス .reg を使用して、次のテキストを Windows レジストリファイルに保存します。たとえば、DisableResultsCsv のようにします。
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
@@ -43,7 +43,7 @@ Office 365 eDiscovery エクスポートツールを使用して、セキュリ�
     
       ファイル名サフィックス .reg を使用して、次のテキストを Windows レジストリファイルに保存します。たとえば、DisableManifestXml のようにします。
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
@@ -68,7 +68,7 @@ Office 365 eDiscovery エクスポートツールを使用して、セキュリ�
     
         DisableResultsCsv ファイルをメモ帳で開き、の値`False`をに`True`変更して、ファイルを保存します。 たとえば、ファイルを編集した後、次のように表示されます。
     
-        ```
+        ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
@@ -77,7 +77,7 @@ Office 365 eDiscovery エクスポートツールを使用して、セキュリ�
     
         DisableManifestXml ファイルをメモ帳で開き、の値`False`をに`True`変更して、ファイルを保存します。 たとえば、ファイルを編集した後、次のように表示されます。
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
@@ -91,7 +91,6 @@ Office 365 eDiscovery エクスポートツールを使用して、セキュリ�
     レジストリエディターに、設定が正常にレジストリに追加されたことを示すメッセージが表示されます。
   
 ## <a name="frequently-asked-questions-about-disabling-export-reports"></a>エクスポートレポートを無効にする方法についてよく寄せられる質問
-<a name="faqs"> </a>
 
  **結果の .csv レポートと Manifest.xml レポートとは何ですか。**
   

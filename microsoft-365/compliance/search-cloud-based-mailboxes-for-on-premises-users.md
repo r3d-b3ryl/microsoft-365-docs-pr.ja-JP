@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Exchange ハイブリッド展開の社内ユーザーのために、Microsoft Teams のチャットデータ (1xN チャット) を検索してエクスポートするには、セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用します。
-ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b849e682c0902b6a2d48919c2f2cd1257d8691
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086940"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686931"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Office 365 でオンプレミスのユーザーのクラウドベースのメールボックスを検索する
 
@@ -38,7 +38,7 @@ ms.locfileid: "37086940"
     
  **注:** Teams チャネルの会話は、チームに関連付けられたクラウドベースのメールボックスに常に格納されます。 これは、コンテンツ検索を使用して、サポート要求をファイルしなくてもチャネル会話を検索できることを意味します。 Teams チャネル会話の検索の詳細については、「 [Microsoft teams および Office 365 グループの検索](content-search.md#searching-microsoft-teams-and-office-365-groups)」を参照してください。
   
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 Microsoft Teams が有効なユーザーがオンプレミスのメールボックスを持ち、そのユーザーアカウントまたは id がクラウドに同期されている場合、Microsoft は、1xN Teams のチャットデータを格納するためのクラウドベースのメールボックスを作成します。 Teams のチャットデータは、クラウドベースのメールボックスに格納された後、検索用にインデックスが付けられます。 これにより、コンテンツ検索 (および電子情報開示ケースに関連付けられた検索) を使用して、オンプレミスユーザーの Teams チャットデータの検索、プレビュー、エクスポートを行うことができます。 セキュリティ & コンプライアンスセンターの PowerShell で** \*new-compliancesearch**コマンドレットを使用して、オンプレミスユーザーの Teams チャットデータを検索することもできます。 
   
@@ -86,7 +86,7 @@ Microsoft サポートに要求を送信するときに、次の情報を含め�
     
 3. キーワードクエリを作成し、必要に応じて検索クエリに条件を追加します。 チームのチャットデータのみを検索するには、[**キーワード**] ボックスに次のクエリを追加します。 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -96,7 +96,7 @@ Microsoft サポートに要求を送信するときに、次の情報を含め�
     
     - **特定の場所:** このオプションを選択し、[**変更** \> ] をクリックして、特定のメールボックスを検索するユーザー、グループ、またはチームを選択します。 前述したように、場所の選択ウィンドウを使用すると、オンプレミスのユーザーを検索できます。 
     
-5. 検索を保存して実行します。 オンプレミスのユーザーのクラウドベースのメールボックスからの検索結果は、他の検索結果と同様にプレビューできます。 検索結果 (Teams のチャットデータを含む) を PST ファイルにエクスポートすることもできます。 詳細については、次のトピックを参照してください。 
+5. 検索を保存して実行します。 オンプレミスのユーザーのクラウドベースのメールボックスからの検索結果は、他の検索結果と同様にプレビューできます。 検索結果 (Teams のチャットデータを含む) を PST ファイルにエクスポートすることもできます。 詳しくは、次のトピックを参照してください。 
     
     - [Create a search](content-search.md#create-a-search)
     
@@ -108,19 +108,19 @@ Microsoft サポートに要求を送信するときに、次の情報を含め�
 
 セキュリティ & コンプライアンスセンターの PowerShell で**new-compliancesearch**および**new-compliancesearch**コマンドレットを使用して、オンプレミスのユーザーのクラウドベースのメールボックスを検索できます。 前述のように、PowerShell を使用してオンプレミスユーザーの Teams チャットデータを検索するためのサポート要求を送信する必要はありません。 
   
-1. [セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)します。
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
 2. 次の PowerShell コマンドを実行して、オンプレミスユーザーのクラウドベースのメールボックスを検索するコンテンツ検索を作成します。
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     *Includeuserappcontent*パラメーターは、 *exchangelocation*パラメーターで指定されたユーザーまたはユーザーのクラウドベースのメールボックスを指定するために使用されます。 *AllowNotFoundExchangeLocationsEnabled*では、クラウドベースのメールボックスがオンプレミスのユーザーに対して許可されています。 このパラメーターの`$true`値を使用する場合、検索では、メールボックスが実行される前に、存在しているかどうかの検証は試行されません。 この種類のメールボックスは通常のメールボックスとして解決されないため、オンプレミスのユーザーのクラウドベースのメールボックスを検索するには、これが必要になります。 
     
     次の例では、Contoso 組織のオンプレミスのユーザーである Sara Davis のクラウドベースのメールボックスに、キーワード "redstone" を含む Teams チャット (インスタントメッセージ) を検索します。
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
@@ -153,11 +153,11 @@ Microsoft サポートに要求を送信するときに、次の情報を含め�
   
  **ユーザーのオンプレミスのメールボックスがクラウドに移行された場合、Teams のチャットデータを失う危険性がありますか。**
   
-いいえ。 オンプレミスのユーザーのプライマリメールボックスをクラウドに移行すると、そのユーザーの Teams チャットデータが新しいクラウドベースのプライマリメールボックスに移行されます。
+不正解です。 オンプレミスのユーザーのプライマリメールボックスをクラウドに移行すると、そのユーザーの Teams チャットデータが新しいクラウドベースのプライマリメールボックスに移行されます。
   
  **社内ユーザーに電子情報開示の保持ポリシーまたは Office 365 のアイテム保持ポリシーを適用できますか。**
   
-いいえ。
+不正解です。
   
  **コンテンツ検索は、組織がこの機能を有効にする要求を送信した時間前に、オンプレミスのユーザーのために古い Teams のチャットを見つけることができますか?**
   
@@ -165,4 +165,4 @@ Microsoft は、2018年1月31日に社内ユーザーの Teams チャットデ�
 
  **オンプレミスのユーザーは、クラウドベースのメールボックスに Teams のチャットデータを格納するためのライセンスが必要ですか。**
   
-はい。 社内ユーザーのチームチャットデータをクラウドベースのメールボックスに格納するには、Office 365 (または Microsoft 365) で Microsoft Teams ライセンスと Exchange Online プランライセンスが割り当てられている必要があります。
+正解です。 社内ユーザーのチームチャットデータをクラウドベースのメールボックスに格納するには、Office 365 (または Microsoft 365) で Microsoft Teams ライセンスと Exchange Online プランライセンスが割り当てられている必要があります。

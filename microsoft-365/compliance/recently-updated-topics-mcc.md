@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- M365-security-compliance
+- m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
-ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
-ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
+ms.openlocfilehash: 497088cf5ad9da848879cf2c7197059917be6b07
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37376132"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686721"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -30,17 +30,108 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 > [!TIP]
 > Microsoft 365 コンプライアンスセンターで最新の機能の更新プログラムを最新の状態に保つには、「 [microsoft 365 コンプライアンスセンターの新](whats-new.md)機能」をご覧ください。
 
-## <a name="september"></a>9 月
+## <a name="october-2019"></a>2019 年 10 月
 
-### <a name="ediscovery"></a>電子情報開示
+### <a name="auditing"></a>監査
 
-[一般的な電子情報開示の問題を調査、トラブルシューティング、および解決](ediscovery-troubleshooting-common-issues.md)する (新)<br> 電子情報開示の検索中に発生する可能性のある問題を特定して解決するために実行できる基本的なトラブルシューティングの手順について説明します。
+[セキュリティ & コンプライアンスセンターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#microsoft-teams-healthcare-activities)(更新)<br>患者アプリの使用に関連する Microsoft Teams の医療活動についてのセクションを追加しました。
 
-### <a name="supervision"></a>マネージ
+### <a name="communication-compliance-formerly-supervision"></a>通信コンプライアンス (以前の監督)
+
+[Microsoft 365 (プレビュー) の通信コンプライアンス](communication-compliance.md)(新機能)<br>新しい通信コンプライアンスソリューションの概要 (旧称監督と呼ばれます)。
+
+[Microsoft 365 の通信コンプライアンスを構成する (プレビュー)](communication-compliance-configure.md) (新機能)<br>組織での通信コンプライアンスの設定と使用方法についての詳細。
+
+[通信コンプライアンスアラート (プレビュー) の調査と修復](communication-compliance-investigate-remediate.md)(新機能)<br>コミュニケーションコンプライアンスアラートの調査と修復についての詳細。
+
+[コミュニケーションコンプライアンス機能リファレンス (プレビュー)](communication-compliance-feature-reference.md) (新機能)<br>通信のコンプライアンスに関連するさまざまな機能とコンポーネントについての詳細。
+
+### <a name="compliance-offerings"></a>コンプライアンス認証
+
+[コンプライアンスオファリング: カリフォルニアコンシューマ Privacy Act (CCPA)](offering-ccpa.md) (新)<br>Microsoft サービスと CCPA に関連する概要とガイダンス。
+
+[カリフォルニアのコンシューマ Privacy Act (CCPA) よく寄せられる質問](ccpa-faq.md)(新)<br>Microsoft サービスと CCPA に関してよく寄せられる質問。
+
+### <a name="data-classification"></a>データの分類
+
+[Trainable 分類子を作成する (プレビュー)](classifier-creating-a-trainable-classifier.md) (新機能)<br>新しい Microsoft 365 trainable 分類子をセットアップおよびテストする方法についてのガイダンスです。
+
+[データ分類の概要 (プレビュー)](data-classification-overview.md) (新機能)<br>Microsoft 365 コンプライアンスセンターの新しいデータ分類機能の概要について説明します。
+
+[Trainable 分類子 (プレビュー) の概要](classifier-getting-started-with.md)(新機能)<br>新しい Microsoft 365 trainable 分類子の概要。
+
+[準備完了] を使用し[た分類子の使用 (プレビュー)](classifier-using-a-ready-to-use-classifier.md) (新機能)<br>Detals の事前にトレーニングされた分類子の準備と使用について説明します。
+
+[データ分類コンテンツエクスプローラー (プレビュー) を使用する](data-classification-content-explorer.md)(新規)<br>[データ分類] ページのコンテンツエクスプローラーの概要。機密情報の種類が含まれているアイテムを確認したり、感度または保持ラベルを適用したりすることができます。
+
+[ラベル付けされたコンテンツ (プレビュー) でアクティビティを表示する](data-classification-activity-explorer.md)(新規)<br>[データ分類] ページのアクティビティエクスプローラーの概要。これにより、組織でのラベルの使用状況を監視できます。
+
+### <a name="email-encryption"></a>メールの暗号化
+
+Office 365 Advanced Message Encryption を使用するために必要な Office 365 Sku および Microsoft 365 Sku に関する以下の記事に詳細を追加しました。<br>
+[Office 365 の高度なメッセージの暗号化](ome-advanced-message-encryption.md)(更新)<br>
+[Office 365 で暗号化された電子メールの有効期限日を設定する詳細なメッセージの暗号化](ome-advanced-expiration.md)(更新)<br>
+[Office 365 で暗号化された電子メールの取り消し高度なメッセージ暗号化](revoke-ome-encrypted-mail.md)(更新)
+
+[Office 365 メッセージ暗号化](ome-faq.md)に関する FAQ (更新)<br>OME が共有メールボックスを使用する方法、委任されたアクセスをサポートする方法、受信メールと送信メールの暗号化を解除する方法、PDF 添付ファイルを暗号化する方法については、QAs を追加しました。
+
+[組織のブランドを暗号化されたメッセージに追加する](add-your-organization-brand-to-encrypted-messages.md)(更新)<br>複数ブランド化テンプレート、特に高度なメッセージ暗号化の要件を明確にしました。 Rewrote コンテンツを使用して、ほとんどのお客様が最初に作業するケースを特定します (既存のテンプレートの変更)。 新しい既定のテンプレートのサイズ要件と動作に関する情報を追加しました。
+
+### <a name="general-data-protection-act-gdpr"></a>一般的なデータ保護法 (GDPR)
+
+カリフォルニアコンシューマ Privacy Act (CCPA) に関する以下の記事に新しいガイダンスを追加しました。<br>
+[GDPR および CCPA のための Azure データ主体要求](gdpr-dsr-Azure.md)(更新) <br>
+[GDPR および CCPA の Azure DevOps Services データ主体要求](gdpr-dsr-vsts.md)(更新)<br>
+[GDPR および CCPA のための Dynamics 365 データ主体要求](gdpr-dsr-Dynamics365.md)(更新)<br>
+[データ主体要求と GDPR および CCPA](gdpr-data-subject-requests.md) (更新されたもの) <br>
+[GDPR および CCPA の Intune データ主体要求](gdpr-dsr-Intune.md)(更新)<br>
+[GDPR および CCPA に関する Microsoft サポートおよびプロフェッショナルサービスデータ主体要求](gdpr-dsr-prof-services.md)(更新)<br>
+[GDPR および CCPA の Office 365 データ主体要求](gdpr-dsr-Office365.md)(更新)<br>
+[GDPR および CCPA のための Visual Studio ファミリのデータ主体要求](gdpr-dsr-visual-studio-family.md)(更新)
+
+### <a name="information-governance"></a>情報ガバナンス
+
+[情報ガバナンスを管理](manage-Information-governance.md)する (新)<br>Microsoft 365 コンプライアンスセンターの情報ガバナンスソリューションの新しいランディングページ。 関連する機能へのリンクが含まれています。
+
+[保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)(新)<br>Sharepoint 管理プロパティ、保持ラベル、自動適用ラベル、およびイベントドリブンの保持を使用して SharePoint Online のドキュメントライフサイクルを管理する、エンドツーエンドのシナリオ。
+
+[ファイル計画マネージャーの概要](file-plan-manager.md#import-retention-labels-into-your-file-plan)(更新)<br>新しい保持ラベルのインポートに使用されるテンプレートで、プロパティの詳細な説明を追加しました。
+
+[レコードの概要](records.md)(新)<br>保持ラベルを使用してコンテンツをレコードとして宣言することについての詳細。 また、新しいレコードバージョン管理機能についての情報も含まれています。
+
+[アイテム保持ポリシーの概要](retention-policies.md#teams-locations)(更新)<br>Teams のチャットおよびチャネルメッセージの保持動作に関する新しい詳細を追加しました。 また、Teams の保持ライフサイクルを示す図も追加しました。
+
+### <a name="microsoft-365-management"></a>Microsoft 365 管理
+
+[Microsoft 365 コンプライアンスセンターの概要](microsoft-365-compliance-center.md)(新)<br>新しい Microsoft 365 コンプライアンスセンターの概要-入手方法、Faq、および次の手順を説明します。
+
+[Microsoft 365 solution catalog (プレビュー) の概要](microsoft-365-solution-catalog.md)(新機能)<br>Microsoft 365 コンプライアンスセンターの新しいソリューションカタログの概要。これにより、組織で使用可能なコンプライアンスおよびリスク管理ソリューションの検出、学習、および概要作成のためのワンストップショップが提供されます。
+
+### <a name="microsoft-compliance-score"></a>Microsoft コンプライアンススコア
+
+[Microsoft コンプライアンススコア (プレビュー)](compliance-score.md) (新機能)<br>コンプライアンススコアの概要 (Microsoft 365 コンプライアンスセンター)-コンプライアンスのニーズを管理する方法、および使用を開始する方法を説明します。
+
+[Microsoft コンプライアンススコアの計算 (プレビュー)](compliance-score-methodology.md) (更新)<br>コンプライアンススコアの計算方法に関するコンテキストを追加しました。これには、スコアに関連する新しい Microsoft 365 データ保護基準の詳細が含まれます。
+
+### <a name="sensitivity-labels"></a>機密ラベル
+
+[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)(更新)<br>Outlook で推奨されるラベル付けの今後のサポートに関する情報を削除しました。 重複するライセンス情報を削除しました。 [Office アプリの機密ラベル](sensitivity-labels-office-apps.md)で権限のある情報を指すようになりました。
+
+[SharePoint と OneDrive で Office ファイルの機密ラベルを有効にする (パブリックプレビュー)](sensitivity-labels-sharepoint-onedrive-files.md) (新)<br>これらの場所に格納されているコンテンツへの機密ラベルのアプリケーション用に SharePoint および OneDrive を準備する方法に関するガイダンス。
+
+[機密ラベルの概要](sensitivity-labels.md)(更新)<br>Web 上の Office アプリ、Microsoft Teams、Office 365 グループ、SharePoint サイト、および SharePoint と OneDrive の office ファイルのサポートに関する詳細が追加されました。
+
+[Office アプリの機密ラベル](sensitivity-labels-office-apps.md)(更新されたもの)<br>新たにサポートされているアプリ、サブスクリプションとライセンスの要件、および管理者が定義したテンプレート (Office 365 のメッセージの暗号化と機密情報のラベルなど) の相互作用に関する詳細を含むいくつかの更新プログラム。
+
+[Microsoft Teams、Office 365 グループ、および SharePoint サイト (パブリックプレビュー) で機密ラベルを使用する](sensitivity-labels-teams-groups-sites.md)(新)<br>Microsoft Teams、Office 365 グループ、および SharePoint サイトでの機密ラベルの設定と適用についての詳細。
+
+## <a name="september-2019"></a>2019 年 9 月
+
+### <a name="supervision"></a>監督
 
 [組織の監督ポリシーを構成する](configure-supervision-policies.md)(更新)<br>Outlook を使用してレビューを実行することに関する詳細を削除しました。 代わりに、監督ユーザーインターフェイスで使用可能なレビューとタグのオプションを使用します。
 
-## <a name="august-2019"></a>2019年8月
+## <a name="august-2019"></a>2019 年 8 月
 
 ### <a name="auditing"></a>監査
 
@@ -61,7 +152,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 
 [Office 365 での無制限アーカイブの概要](unlimited-archiving.md#how-auto-expanding-archiving-works)(更新)<br>合計 1 TB の追加のストレージに対して、Office 365 が最大20個の補助アーカイブを追加する方法に関する詳細を追加しました。
 
-### <a name="data-investigations"></a>データ調査
+### <a name="data-investigations"></a>データの調査
 
 [元の場所からアイテムを削除する (プレビュー)](delete-items-from-original-locations.md) (新規)<br>プレビューで利用できるようになったので、証拠セット内の項目を選択してから、Exchange、SharePoint、OneDrive の元の場所からそれらを削除することができます。
 
@@ -75,7 +166,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 
 [ファイル計画マネージャーの概要 (更新)](file-plan-manager.md#export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews)<br>Excel テンプレートで使用される有効な値を一覧表示する表を追加しました。
 
-### <a name="supervision"></a>マネージ
+### <a name="supervision"></a>監督
 
 [Office 365 の監督ポリシー](supervision-policies.md) (更新)<br>Office 365 のグループと配布リストのサポートを明確化し、電子メールと添付ファイルの両方にキーワード一致のガイダンスを追加し、Teams チャネル内での Outlook サポートを明確化しました。
 

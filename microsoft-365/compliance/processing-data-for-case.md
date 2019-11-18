@@ -14,22 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4631a60554f463cf6403807ec04b40690e591ecb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d16343328e4d4ff0a67d2d3a1a9fac4219588746
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086626"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38686816"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>高度な電子情報開示で処理エラーを処理する
 
 処理とは、ファイルの識別、埋め込まれた文書と添付ファイルの拡張、画像ファイルのテキスト抽出、OCR (光学式文字認識)、およびそのコンテンツのインデックス作成のプロセスです。  
 
-保管担当者が**保管担当者**タブのケースに追加されると、完全に検索可能になるように、Office 365 からのすべてのインデックスアイテムが処理されます。  同様に、Office 365 データソースまたは Office 以外の365データソースからのレビューセットにコンテンツが追加されると、コンテンツも処理されます。
+保管担当者を [**保管担当者**] タブのケースに追加すると、Office 365 のすべてのインデックス付きアイテムが処理されて、完全に検索できるようになります。 同様に、Office 365 と Office 以外の365のデータソースの両方からのレビューセットにコンテンツを追加すると、このコンテンツも処理されます。
 
-Advanced 電子情報開示の [**処理**] タブでは、これらすべてのシナリオの*詳細なインデックス作成*の状態が透明になります。
+Advanced eDiscovery の [**処理**] タブでは、さまざまな処理シナリオの詳細なインデックス作成の状態についての洞察が得られます。
 
-詳細については、次の記事を参照してください。
+詳細については、以下の記事を参照してください。
 
 - [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 - [データ処理中のエラー修復](error-remediation.md)
+- [単一アイテムのエラーの修復](single-item-error-remediation.md)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の DLP レポートを使用すると、DLP ポリシーの一致、オーバーライド、誤検知の数をすばやく表示できます。時間の経過と共に、傾向の上下が変化するかどうかを確認します。レポートをさまざまな方法でフィルター処理します。そして、グラフ上の線上の点を選択して詳細を表示します。
-ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 94569ef24814204263820fb5fdb7a8cb72da20e4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086455"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686731"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
@@ -85,18 +85,18 @@ DLP ポリシーでユーザーによる上書きを許可する場合は、誤�
 
 セキュリティ&amp; /コンプライアンスセンターのほとんどのコマンドレットを使用するには、次のことを行う必要があります。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 次のいずれかの[Office 365 &amp;セキュリティコンプライアンスセンターコマンドレット](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)を使用する
+2. 次のいずれかの[Office 365 &amp;セキュリティコンプライアンスセンターコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)を使用する
     
 ただし、DLP レポートには、Exchange Online などの Office 365 間でデータをプルする必要があります。 このため、DLP レポートのコマンドレットは、セキュリティ&amp;コンプライアンスセンターの powershell ではなく、Exchange Online の powershell で利用できます。 そのため、DLP レポートのコマンドレットを使用するには、次のことを行う必要があります。
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. 次のいずれかのコマンドレットを DLP レポートに使用します。
     
-      - [Get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-dlpdetectionsreport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [取得-Dlpのレポート](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [取得-Dlpのレポート](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Office 365 の Advanced eDiscovery で Analyze および Process モジュールを使用するときに、特定のテキストを無視するルールを定義する方法について説明します。  '
-ms.openlocfilehash: 70d9879f1cb6b3def06ff978fc2f7fa8f20a92f0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb40ebe946b65f08de9ffc27ff830fbf76d4f8a7
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086574"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686745"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Office 365 で分析の [テキストを無視] オプションを設定する Advanced eDiscovery
 
@@ -96,7 +96,7 @@ ms.locfileid: "37086574"
   - 通常の eExpression フィールドの長さに制限はありません。
     
 > [!TIP]
-> 正規表現の説明と詳細な構文については、「[正規表現言語-クイックリファレンス](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx)」を参照してください。 
+> 正規表現の説明と詳細な構文については、「[正規表現言語-クイックリファレンス](https://msdn.microsoft.com/library/az24scfc%28v=vs.110%29.aspx)」を参照してください。 
   
 ## <a name="define-ignore-text-rule"></a>無視するテキストルールを定義する
 

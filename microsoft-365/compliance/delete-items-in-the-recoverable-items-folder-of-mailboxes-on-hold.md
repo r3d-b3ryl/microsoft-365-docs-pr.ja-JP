@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '管理者の場合: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除します (法的情報保留に設定されている場合も含む)。 これは、Office 365 に誤ってこぼれたデータを削除する効果的な方法です。'
-ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070736"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686902"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
@@ -71,7 +71,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
     
 2. 単一アイテムの回復と削除済みアイテムの保存期間に関する情報を取得するには、次のコマンドを実行します。
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
@@ -79,7 +79,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
     
 3. 次のコマンドを実行して、メールボックスのメールボックスアクセス設定を取得します。 
     
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
@@ -87,7 +87,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
     
 4. 次のコマンドを実行して、メールボックスに適用されている保留リストと Office 365 アイテム保持ポリシーに関する情報を取得します。
     
-    ```
+    ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
@@ -97,9 +97,10 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
   
 5. 組織全体の Office 365 保持ポリシーに関する情報を取得するには、次のコマンドを実行します。 
 
-    ```
+    ```powershell
     Get-OrganizationConfig | FL InPlaceHolds
     ```
+   
    組織全体で Office 365 のアイテム保持ポリシーを使用している場合は、手順3でこれらのポリシーからメールボックスを除外する必要があります。
 
    > [!TIP]
@@ -107,7 +108,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
   
 6. 次のコマンドを実行して、ユーザーのプライマリメールボックスの [回復可能なアイテム] フォルダー内のフォルダーとサブフォルダー内のアイテムの現在のサイズと合計数を取得します。 
 
-    ```
+    ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -138,19 +139,19 @@ Exchange Online PowerShell で次の手順を実行します。
     ```   
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
-   
+
    > [!NOTE]
     > メールボックスへのすべてのクライアントアクセス方法を無効にするには、最大60分かかる場合があります。 これらのアクセス方法を無効にしても、現在サインインしているメールボックスの所有者が切断されることに注意してください。 所有者がサインインしていない場合、これらのアクセス方法を無効にした後はメールボックスにアクセスできなくなります。 
   
 2. 次のコマンドを実行して、削除済みアイテムの保存期間を最大で30日に増やします。 これは、現在の設定が30日未満であることを前提としています。 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
 3. 次のコマンドを実行して、単一アイテムの回復を無効にします。
     
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
@@ -159,7 +160,7 @@ Exchange Online PowerShell で次の手順を実行します。
   
 4. 管理フォルダーアシスタントがメールボックスを処理できないようにするには、次のコマンドを実行します。 前述したように、保持ロックが設定された Office 365 アイテム保持ポリシーがメールボックスに適用されていない場合にのみ、管理フォルダーアシスタントを無効にすることができます。 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
     ```
 
@@ -174,7 +175,7 @@ Exchange Online PowerShell で次の手順を実行します。
   
 Exchange Online PowerShell で次のコマンドを実行して、メールボックスから訴訟ホールドを削除します。
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
@@ -186,31 +187,31 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
   
 Exchange Online PowerShell で次のコマンドを実行して、メールボックスに配置されているインプレースホールドを識別します。 手順1で特定したインプレースホールドの GUID を使用します。 
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
-   
+
 インプレースホールドを識別した後、Exchange 管理センター (EAC) または Exchange Online PowerShell を使用して、保留リストからメールボックスを削除できます。 詳細については、「[インプレース保持を作成または削除する](https://go.microsoft.com/fwlink/?linkid=852668)」を参照してください。
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>特定のメールボックスに適用される Office 365 アイテム保持ポリシー
   
 [セキュリティ & コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、メールボックスに適用されている Office 365 アイテム保持ポリシーを特定します。 手順1で特定したアイテム`mbx`保持`skp`ポリシーの GUID (またはプレフィックスを含まない) を使用します。 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
-   
-アイテム保持ポリシーを識別した後、セキュリティ & コンプライアンスセンターの [**ガバナンス** \>の日付を**管理**する] ページに移動し、前の手順で識別したアイテム保持ポリシーを編集します。また、リストからメールボックスを削除するには、アイテム保持ポリシーに含まれている受信者。 
+
+アイテム保持ポリシーを特定した後、セキュリティ & コンプライアンスセンターの [**ガバナンス** \>の日付による**保持**] ページに移動し、前の手順で確認したアイテム保持ポリシーを編集して、アイテム保持ポリシーに含まれる受信者のリストからメールボックスを削除します。 
   
  ### <a name="organization-wide-office-365-retention-policies"></a>組織全体の Office 365 のアイテム保持ポリシー
   
 組織全体および Exchange 全体の Office 365 保持ポリシーは、組織内のすべてのメールボックスに適用されます。 これらは、(メールボックスレベルではなく) 組織レベルで適用され、手順1で取得した組織レベルの**config**コマンドレットを実行したときに返されます。 [セキュリティ & コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、組織全体の Office 365 保持ポリシーを特定します。 手順1で特定した組織`mbx`全体のアイテム保持ポリシーの GUID (プレフィックスを含まない) を使用します。 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-組織全体の Office 365 アイテム保持ポリシーを特定した後、セキュリティ & コンプライアンスセンターの [**ガバナンス** \>の日付] ページに移動して、組織全体の**アイテム保持ポリシー**を編集します。前の手順を実行し、除外された受信者のリストにメールボックスを追加します。 この操作を行うと、ユーザーのメールボックスがアイテム保持ポリシーから削除されます。 
+組織全体の Office 365 アイテム保持ポリシーを特定した後、セキュリティ & コンプライアンスセンターの [**ガバナンス** \>の日付] ページに移動し、前の手順で特定した組織全体**のアイテム保持**ポリシーを編集して、除外された受信者のリストにメールボックスを追加します。 この操作を行うと、ユーザーのメールボックスがアイテム保持ポリシーから削除されます。 
 
 ### <a name="office-365-retention-labels"></a>Office 365 保持ラベル
 
@@ -218,7 +219,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 
 *ComplianceTagHoldApplied*プロパティの値を表示するには、Exchange Online PowerShell で次のコマンドを実行します。
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -230,15 +231,15 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
   
 [セキュリティ & コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、メールボックスに適用される電子情報開示ケースに関連付けられている保留リストを識別します。 手順1で特定した電子`UniH`情報開示ホールドの GUID (プレフィックスを含まない) を使用します。 2番目のコマンドには、保留が関連付けられている電子情報開示ケースの名前が表示されることに注意してください。3番目のコマンドは、保留の名前を表示します。 
   
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold.Name
 ```
 
@@ -250,7 +251,7 @@ $CaseHold.Name
 
 手順5でアイテムを削除する前に、メールボックスから遅延ホールドを削除する必要があります。 最初に、Exchange Online PowerShell で次のコマンドを実行して、遅延保持がメールボックスに適用されているかどうかを判断します。
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
@@ -258,9 +259,10 @@ Get-Mailbox <username> | FL DelayHoldApplied
 
 *DelayHoldApplied*プロパティの値が**True**に設定されている場合は、次のコマンドを実行して遅延保持を削除します。
 
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 *RemoveDelayHoldApplied*パラメーターを使用するには、Exchange Online で法的情報保留の役割が割り当てられている必要があることに注意してください。
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>手順 5: 回復可能なアイテムフォルダーのアイテムを削除する
@@ -284,7 +286,7 @@ Set-Mailbox <username> -RemoveDelayHoldApplied
 
 この例では、ユーザーの回復可能なアイテムフォルダー内のすべてのアイテムを組織の探索検索メールボックス内のフォルダーにコピーします。 これにより、アイテムを完全に削除する前に確認することができます。
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
 ```
 
@@ -294,15 +296,15 @@ Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox
 
 この例では、ユーザーの回復可能なアイテムフォルダー内のすべてのアイテムを組織の探索検索メールボックス内のフォルダーにコピーし、ユーザーの回復可能なアイテムフォルダーからアイテムを削除します。
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
 ```
- 
+
 ### <a name="example-3"></a>例 3
 
 この例では、ユーザーの回復可能なアイテムフォルダー内のすべてのアイテムをターゲットメールボックスにコピーせずに削除します。 
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
 ```
 
@@ -312,41 +314,41 @@ Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
   
 この例では、[件名] フィールドに特定の語句が含まれるメッセージを返します。
   
-```
+```powershell
 SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
 ```
 
 この例では、指定した日付範囲内に送信されたメッセージを返します。
   
-```
+```powershell
 SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
 ```
- 
+
 この例では、指定したユーザーに送信されたメッセージを返します。
 
-```
+```powershell
 SearchQuery 'to:garthf@alpinehouse.com'
 ```
-   
+
 ### <a name="verify-that-items-were-deleted"></a>アイテムが削除されたことを確認する
 
 メールボックスの [回復可能なアイテム] フォルダーからアイテムが正常に削除されたことを確認するには、Exchange Online PowerShell で**get-mailboxfolderstatistics**コマンドレットを使用して、回復可能なアイテムフォルダー内のアイテムのサイズと数を確認します。 これらの統計情報は、手順1で収集したものと比較できます。 
   
 で次のコマンドを実行して、ユーザーのプライマリメールボックスの [回復可能なアイテム] フォルダー内のフォルダーとサブフォルダー内のアイテムの現在のサイズと合計数を取得します。 
   
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-   
+
 次のコマンドを実行して、ユーザーのアーカイブメールボックスの [回復可能なアイテム] フォルダー内のフォルダーとサブフォルダー内のアイテムのサイズと合計数を取得します。 
 
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-  
+
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>手順 6: メールボックスを以前の状態に戻す
 
-最後の手順では、メールボックスを以前の構成に戻します。 これは、手順2で変更したプロパティをリセットし、手順3で削除した保留リストを再適用することを意味します。 これには以下が含まれます。
+最後の手順では、メールボックスを以前の構成に戻します。 これは、手順2で変更したプロパティをリセットし、手順3で削除した保留リストを再適用することを意味します。 これには、次の内容が含まれます。
   
 - 削除済みアイテムの保存期間を以前の値に戻します。 または、Exchange Online の最大値の30日間に設定しておくこともできます。
     
@@ -365,29 +367,29 @@ Exchange Online PowerShell で次の手順を実行します (指定された順
   
 1. 削除済みアイテムの保存期間を元の値に戻すには、次のコマンドを実行します。 これは、前の設定が30日未満であることを前提としています。たとえば、14日間。 
     
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
-   
+
 2. 単一アイテムの回復を再び有効にするには、次のコマンドを実行します。
    
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
     ```
 
 3. 次のコマンドを実行して、すべてのクライアントアクセス方法をメールボックスに再び有効にします。
     
-    ```
+    ```powershell
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
-   
+
 4. 手順3で削除した保留を再度適用します。 保留の種類に応じて、次のいずれかの手順を使用します。
     
     **訴訟ホールド**
     
     メールボックスの訴訟ホールドを再び有効にするには、次のコマンドを実行します。
     
-    ```
+    ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
@@ -409,20 +411,20 @@ Exchange Online PowerShell で次の手順を実行します (指定された順
     
 5. 管理フォルダーアシスタントがメールボックスを再度処理できるようにするには、次のコマンドを実行します。 前述したように、管理フォルダーアシスタントを再度有効にする前に、保留リストまたは Office 365 アイテム保持ポリシーを再適用してから24時間待ってから再開することをお勧めします。 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
     ```
-   
+
 6. メールボックスが以前の構成に戻されたことを確認するには、次のコマンドを実行し、設定を手順1で収集したものと比較します。
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL ElcProcessingDisabled,InPlaceHolds,LitigationHoldEnabled,RetainDeletedItemsFor,SingleItemRecoveryEnabled
     ```
 
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
-  
+
 ## <a name="more-information"></a>詳細情報
 
 次の表は、 *InPlaceHolds*プロパティの値に基づいて、**メールボックスの取得**または取得、または**取得-組織の構成**のコマンドレットを実行した場合に、さまざまな種類の保留を識別する方法を示しています。 詳細については、「 [Exchange Online メールボックスに配置されたホールドの種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)」を参照してください。

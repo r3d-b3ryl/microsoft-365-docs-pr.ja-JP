@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417536"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38686668"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
@@ -105,22 +105,22 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 
 [アクションアイテム](working-with-compliance-manager.md#controls-and-actions)は、組み込みのワークフロー管理機能の一部として、お客様が管理するコントロールに含まれています。これを使用すると、評価完了までの進捗状況を管理および追跡できます。
 
-組織内のユーザーは、コンプライアンスマネージャーを使用して、割り当てられているすべての評価からお客様が管理するコントロールを確認できます。 ユーザーがコンプライアンスマネージャーにサインインし、**アクションアイテム**ダッシュボードを開くと、それらに割り当てられているアクションアイテムのリストが表示されます。 ユーザーに割り当てられたコンプライアンスマネージャーの役割に応じて、実装またはテストの詳細を提供したり、状態を更新したり、アクションアイテムを割り当てたりすることができます。
+組織内のユーザーは、コンプライアンスマネージャーを使用して、割り当てられているすべての評価からお客様が管理するコントロールを確認できます。 ユーザーがコンプライアンス マネージャーにサインインし、**[アクション アイテム]** ダッシュボードを開くと、割り当てられているアクション アイテムのリストが表示されます。 ユーザーに割り当てられているコンプライアンス マネージャー ロールによっては、実装またはテストの詳細の入力、ステータスの更新、アクション アイテムの割り当てを行うことができます。
 
 通常、証明書コントロールは、ある人物によって実装され、別のユーザーによってテストされます。 たとえば、実装のために1人のユーザーに対して最初に割り当てられたアクションアイテムが完了すると、次の担当者にアクションアイテムが割り当てられ、証拠をテストしてアップロードできます。 コントロール割り当てに十分な権限を持つユーザーは、アクションアイテムを割り当てて再割り当てすることができます。 これにより、コントロールの割り当ての集中管理が可能になり、実装とテスト担当者との間のアクションアイテムのルーティングが分散化されます。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
-コンプライアンスマネージャーは、役割ベースのアクセス制御のアクセス許可モデルを使用します。 ユーザーの役割が割り当てられているユーザーのみがコンプライアンスマネージャーにアクセスでき、各ユーザーが許可する操作は、役割の種類によって制限されます。 各アクセス許可に対して許可されるアクションを示す[表を表示](working-with-compliance-manager.md#permissions)します。
+コンプライアンス マネージャーでは、役割に基づくアクセス許可モデルが使用されています。 コンプライアンス マネージャーにはユーザー ロールが割り当てられているユーザーのみがアクセスでき、各ユーザーに許可される操作は役割の種類によって制限されます。 各アクセス許可に対して許可されるアクションを示す[表を表示](working-with-compliance-manager.md#permissions)します。
 
 コンプライアンスマネージャーのポータル管理者は、次の手順に従って、コンプライアンスマネージャー内の他のユーザーに対するアクセス許可を設定できます。
 
 1. [上側の**追加**] ドロップダウンメニューで、[**管理者**]、[**設定**] の順に選択します。
 2. ここから、割り当てる役割を選択し、その役割に割り当てる従業員を追加します。 これで、ユーザーは特定のアクションを実行できるようになります。
 
-さらに、 [Azure Active Directory (AZURE AD) でグローバルリーダーロール](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)が割り当てられているユーザーには、コンプライアンスマネージャーにアクセスするための読み取り専用のアクセス許可があります。ただし、コンプライアンスマネージャー内でデータを編集したり、アクションを実行したりすることはできません。
+さらに、 [Azure Active Directory (AZURE AD) でグローバルリーダーロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)が割り当てられているユーザーには、コンプライアンスマネージャーにアクセスするための読み取り専用のアクセス許可があります。ただし、コンプライアンスマネージャー内でデータを編集したり、アクションを実行したりすることはできません。
 
-既定の**ゲストアクセス**の役割がなくなったことに注意してください。 コンプライアンスマネージャーにアクセスして作業するには、各ユーザーに役割が割り当てられている必要があります。
+なお、既定の**ゲスト アクセス** ロールはなくなりました。 コンプライアン スマネージャーにアクセスして操作するには、各ユーザーは役割を割り当てられている必要があります。
   
 ## <a name="manage-evidence"></a>証拠を管理する
 
@@ -131,28 +131,30 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 コンプライアンスマネージャーには、評価用に事前に構成された[テンプレート](working-with-compliance-manager.md#templates)が用意されており、コンプライアンスのニーズに合わせて顧客管理のコントロール用のカスタマイズされたテンプレートを作成できます。 新しいテンプレートは、Excel ファイルからコントロールの情報をインポートして作成するか、既存のテンプレートのコピーからテンプレートを作成することができます。
 
 コンプライアンスマネージャーに含まれる事前構成済みテンプレートは次のとおりです。
- 
-- [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
-- [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
-- [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
-- [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
-- [Cloud Security アライアンス (CSA) Cloud Control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [HIPAA](https://www.hhs.gov/hipaa/for-professionals/index.html) / の[ヒット](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)
-- [FedRAMP モデレート](https://www.fedramp.gov/documents/)
-- [欧州連合 GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
+
+1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018: 2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075)
+4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+6. [Cloud Security アライアンス (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://go.microsoft.com/fwlink/?linkid=2109077) 
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / の[ヒット](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [FedRAMP モデレート](https://go.microsoft.com/fwlink/?linkid=2108869)
+10. [欧州連合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+11. [カリフォルニアコンシューマ Privacy Act (CCPA)-プレビュー](https://go.microsoft.com/fwlink/?linkid=2108871)
+12. [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>コンプライアンススコア
 
-コンプライアンス[スコア](compliance-score-methodology.md)は、組織がコンプライアンスを理解し管理するのに役立つコンプライアンスマネージャーのコアコンポーネントです。 Microsoft の[セキュリティで保護さ](../security/mtp/microsoft-secure-score.md)れたスコアと同様に、コンプライアンススコアは、組織内のデータ保護、プライバシー、およびセキュリティに関連するアクティビティの動作ベースのスコアリングシステムです。 評価のコンプライアンススコアは、特定の標準または規制に準拠したものです。 数値スコアが大きいほど、評価のコンプライアンス状況が改善されます。 コンプライアンススコアの方法論を理解することは、必要な顧客管理の制御アクションに優先順位を指定する上で重要です。
+[Microsoft コンプライアンススコア (プレビュー)](compliance-score.md)は、組織の法令遵守状況を理解するのに役立つ microsoft 365 コンプライアンスセンターの機能です。 データ保護および規制標準に関するリスクを軽減するために、進行状況を測定するリスクベースのスコアを計算します。 総合的なコンプライアンススコアを把握することで、組織はコンプライアンスを理解し管理することができます。 [コンプライアンススコアの計算方法](compliance-score-methodology.md)について理解します。
   
 > [!IMPORTANT]
-> 組織が特定の標準や規制を遵守しているかの絶対的測定値は、コンプライアンス スコアでは表せません。ユーザーが設定した、個人のデータやプライバシーに関するリスクを軽減できるコントロールをどの程度採用したかがコンプライアンス スコアによって表されます。標準や規制に準じていることを保証するサービスは提供されておらず、コンプライアンス スコアも何かを保証するものではありませんので、ご注意ください。
+> コンプライアンススコアは、特定の標準または規制に対する組織のコンプライアンスの絶対的な測定基準を表しているわけではありません。 このことは、個人データや個人のプライバシーに対するリスクを軽減するために、制御を採用した範囲を表しています。 標準または規制に準拠しているサービスはありません。また、コンプライアンススコアは何らかの保証として解釈されないようにする必要があります。
 
 ## <a name="secure-score-integration"></a>セキュリティで保護されたスコアの統合
 
-コンプライアンスマネージャーは[Microsoft セキュリティスコア](../security/mtp/microsoft-secure-score.md)と統合されており、同期されたアクションアイテムのコンプライアンススコアに、安全スコアクレジットを自動的に適用します。 これは個別のアクションアイテムに対して構成でき、アイテム間の継続的な更新が提供されます。
+コンプライアンスマネージャーは[Microsoft セキュリティスコア](../security/mtp/microsoft-secure-score.md)と統合されており、同期されたアクションアイテムのコンプライアンススコアに、安全スコアクレジットを自動的に適用します。 これは、個々のアクションアイテムまたはすべてのアクションに対して構成でき、セキュリティで保護されたスコアからの更新を提供します。
 
 たとえば、組織内の Azure Rights Management をアクティブ化するためのセキュリティ関連の要件があります。これは、コンプライアンス関連のアクションアイテムにも適用されます。 Secure Score によって Azure Rights Management がアクティブ化されて処理されると、コンプライアンスマネージャーは更新の通知を受け取り、アクションアイテムのスコアは完了クレジットで自動的に更新されます。
 

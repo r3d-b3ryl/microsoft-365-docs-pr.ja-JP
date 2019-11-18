@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '元従業員が組織に戻った場合、または新しい従業員が退職した従業員の職務を受けた場合は、Office 365 の非アクティブなメールボックスの内容を復元できます。 非アクティブなメールボックスを復元すると、非アクティブなメールボックスのコンテンツが含まれる新しいメールボックスに変換されます。 '
-ms.openlocfilehash: be7935472363e406a978c09f926776e69c3024fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9caa5d8f8c44ee5a916129e7f181532c8c0dd1a2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086953"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686937"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Office 365 で非アクティブなメールボックスを回復する
 
@@ -40,7 +40,7 @@ ms.locfileid: "37086953"
     
 - 組織内の非アクティブなメールボックスの識別情報を取得するには、次のコマンドを実行します。 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly | FL Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
     ```
 
@@ -54,16 +54,16 @@ ms.locfileid: "37086953"
   
 1. 非アクティブなメールボックスのプロパティを含む変数を作成します。 
     
-    ```
+    ```powershell
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
-   
+
     > [!IMPORTANT]
     > 上記のコマンドでは、 **DistinguishedName** または **ExchangeGUID** プロパティの値を使用して非アクティブなメールボックスを識別します。これらのプロパティは組織内の各メールボックスに対して一意ですが、アクティブなメールボックスと非アクティブなメールボックスとでプライマリ SMTP アドレスが等しい可能性があります。 
   
 2. 次の例では、上記のコマンドで取得したプロパティを使用して、ユーザー Ann Beebe のために非アクティブなメールボックスをアクティブなメールボックスに回復します。 *Name*および*MicrosoftOnlineServicesID*パラメーターに指定する値が組織内で一意であることを確認してください。 
 
-    ```
+    ```powershell
     New-Mailbox -InactiveMailbox $InactiveMailbox.DistinguishedName -Name annbeebe -FirstName Ann -LastName Beebe -DisplayName "Ann Beebe" -MicrosoftOnlineServicesID Ann.Beebe@contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
     ```
 
@@ -95,7 +95,7 @@ ms.locfileid: "37086953"
     
 - **回復可能な削除によって削除された非アクティブなメールボックスの、メールボックス保持期間が期限切れかどうかを判別する方法。** 次のコマンドを実行します。 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL ExternalDirectoryObjectId
   ```
 

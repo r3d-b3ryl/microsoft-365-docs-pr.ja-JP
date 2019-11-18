@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Office 365 でアーカイブと削除のポリシーを作成します。これにより、アイテムは自動的にユーザーのアーカイブメールボックスに移動されます。
-ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086203"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686932"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Office 365 組織のメールボックスのアーカイブおよび削除ポリシーを設定する
 
@@ -125,7 +125,7 @@ ms.locfileid: "37086203"
     
 3. **保持期間****アイテムが次の期間 (日数) に達したときに**選択し、保存期間の期間を入力します。 このシナリオでは、アイテムは1095日 (3 年) 後にアーカイブメールボックスに移動されます。
     
-4. **コメント**オプションカスタム保持タグの目的を説明するコメントを入力します。 
+4. **Comment** (省略可能) カスタム保持タグの目的を説明するコメントを入力します。 
     
 3. [**保存**] をクリックして、カスタムアーカイブ DPT を作成します。 
     
@@ -147,7 +147,7 @@ ms.locfileid: "37086203"
     
 3. **保持期間****アイテムが次の期間 (日数) に達したときに**選択し、保存期間の期間を入力します。 このシナリオでは、アイテムは2555日 (7 年) 後に削除されます。
     
-4. **コメント**オプションカスタム保持タグの目的を説明するコメントを入力します。 
+4. **Comment** (省略可能) カスタム保持タグの目的を説明するコメントを入力します。 
     
 3. [**保存**] をクリックして、カスタム削除 DPT を作成します。 
     
@@ -171,7 +171,7 @@ ms.locfileid: "37086203"
     
 4. **保持期間****アイテムが次の期間 (日数) に達したときに**選択し、保存期間の期間を入力します。 このシナリオでは、1825日 (5 年) 後にアイテムが削除されます。
     
-5. **コメント**オプションカスタム保持タグの目的を説明するコメントを入力します。 
+5. **Comment** (省略可能) カスタム保持タグの目的を説明するコメントを入力します。 
     
 3. [**保存**] をクリックして、削除済みアイテムフォルダーのカスタム RPT を作成します。 
     
@@ -242,7 +242,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
   
 1. ローカル コンピューターで、Windows PowerShell を開き、次のコマンドを実行します。
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     ```
 
@@ -250,19 +250,19 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     
 2. 次のコマンドを実行します。
     
-    ```
+    ```powershell
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
 3. 次のコマンドを実行します。
     
-    ```
+    ```powershell
     Import-PSSession $Session
     ```
 
 4. Exchange Online 組織に接続されたことを検証するために、次のコマンドを実行して、組織内のすべてのメールボックスのリストを取得します。
     
-    ```
+    ```powershell
     Get-Mailbox
     ```
 
@@ -271,11 +271,11 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
   
 5. 組織内のすべてのユーザーメールボックスに対して管理フォルダーアシスタントを開始するには、次の2つのコマンドを実行します。
     
-    ```
+    ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
     ```
 
-    ```
+    ```powershell
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
@@ -289,16 +289,18 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
 
 2. 組織内のメールボックスプランに関する情報を表示するには、次のコマンドを実行します。
 
-    ```
+    ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
+    
     既定として設定されているメールボックスプランをメモします。
 
 3. 次のコマンドを実行して、手順3で作成した新しいアイテム保持ポリシー (たとえば、 **Alpine House Archive And Retention policy**) を既定のメールボックス計画に割り当てます。 この例では、既定のメールボックスプランの名前が**Exchangeonline enterprise**であると仮定しています。
 
-    ```
+    ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
+
 4. 手順2のコマンドを再実行して、既定のメールボックス計画に割り当てられているアイテム保持ポリシーが変更されたことを確認できます。
 
 ## <a name="more-information"></a>詳細情報
@@ -307,7 +309,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     
 - 次の表では、このトピックの手順に従って作成されたカスタムアイテム保持ポリシーに追加される各保持タグの詳細について説明します。
     
-    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**Type**|
+    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**種類**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 年間のアーカイブへの移動  <br/> |過去1095日 (3 年) のアイテムをアーカイブメールボックスに移動します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (アーカイブ)、このタグは、メールボックス全体に自動的に適用されます。  <br/> |
     |Alpine House 7 年間完全に削除  <br/> |7年前の時点でプライマリメールボックスまたはアーカイブメールボックスのアイテムを完全に削除します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (削除)。このタグは、メールボックス全体に自動的に適用されます。  <br/> |

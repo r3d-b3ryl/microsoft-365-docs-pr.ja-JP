@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムも呼び出します) は、何らかの理由でコンテンツ検索のインデックスが完全に作成されなかった SharePoint および OneDrive サイト上の Exchange メールボックスアイテムとドキュメントです。 この記事では、検索用にインデックスを作成できず、部分的にインデックスが作成されたアイテムとして返され、部分的にインデックス付けされたアイテムの検索エラーを特定し、PowerShell スクリプトを使用して、部分的にインデックス付けされた電子メールに対する組織の公開を判断する方法について説明します。アイテム.
-ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085032"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686880"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する
 
@@ -33,7 +33,7 @@ ms.locfileid: "37085032"
     
 - このファイルの種類はインデックス作成に対してサポートされていますが、特定のファイルに対してインデックス作成エラーが発生しました
     
-ほとんどの Office 365 組織のお客様は、ボリュームによってコンテンツの 1% 未満、および部分的なインデックスが作成されたサイズではコンテンツの 12% 未満になっています。 ボリュームとサイズの違いがあるのは、コンテンツを完全にインデックス処理できない可能性が高いファイルの方が大きいためです。
+ほとんどの Office 365 組織のお客様は、ボリュームによってコンテンツの1% 未満、および部分的なインデックスが作成されたサイズではコンテンツの12% 未満になっています。 ボリュームとサイズの違いがあるのは、コンテンツを完全にインデックス処理できない可能性が高いファイルの方が大きいためです。
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>検索によって、部分的にインデックス付けされたアイテム数が変化するのはなぜですか?
 
@@ -60,7 +60,7 @@ ms.locfileid: "37085032"
 
 `(470/56,208) x 100 = 0.84%`
  
-前の例からの検索結果を使用して、すべてのメールボックスアイテムの 84% が部分的にインデックス処理されます。
+前の例からの検索結果を使用して、すべてのメールボックスアイテムの84% が部分的にインデックス処理されます。
   
  **組織内で部分的にインデックス付けされたアイテムのサイズの割合を計算するには、次のようにします。**
 
@@ -68,7 +68,7 @@ ms.locfileid: "37085032"
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-そのため、前の例では、メールボックスアイテムの合計サイズの 6.54% が、部分的にインデックス付けされたアイテムからのものです。 前述したように、ほとんどの Office 365 組織のお客様は、ボリュームによってコンテンツの 1% 未満、および部分的なインデックスが作成されたサイズによるコンテンツの 12% 未満です。
+そのため、前の例では、メールボックスアイテムの合計サイズの6.54% が、部分的にインデックス付けされたアイテムからのものです。 前述したように、ほとんどの Office 365 組織のお客様は、ボリュームによってコンテンツの1% 未満、および部分的なインデックスが作成されたサイズによるコンテンツの12% 未満です。
 
 ## <a name="working-with-partially-indexed-items"></a>部分的にインデックスが作成されたアイテムを処理する
 
@@ -84,7 +84,7 @@ ms.locfileid: "37085032"
 
 エラータグは、エラーとファイルの種類の2つの情報で構成されています。 たとえば、このエラー/filetype ペアの場合は、次のようになります。
 
-```
+```text
  parseroutputsize_xls
 ```
 
@@ -120,7 +120,7 @@ ms.locfileid: "37085032"
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `PartiallyIndexedItems.ps1`のようになります。
 
-```
+```powershell
   write-host "**************************************************"
   write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
@@ -163,15 +163,15 @@ ms.locfileid: "37085032"
   }
   
 ```
-   
-2. [セキュリティ & コンプライアンスセンター PowerShell に接続](https://go.microsoft.com/fwlink/p/?linkid=627084)します。
+
+2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://go.microsoft.com/fwlink/p/?linkid=627084)。
     
 3. [セキュリティ & コンプライアンスセンター] PowerShell で、手順1でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 
-    ```
+    ```powershell
     .\PartiallyIndexedItems.ps1
     ```
-   
+
 このスクリプトによって返される出力の例を次に示します。
   
 ![部分的にインデックスが作成された電子メールアイテムに対する組織の公開に関するレポートを生成するスクリプトからの出力の例](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)

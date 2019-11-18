@@ -11,21 +11,22 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: コンテンツ検索アクセス許可のフィルター処理を使用して、電子情報開示管理者が Office 365 組織内のメールボックスとサイトのサブセットのみを検索できるようにします。
-ms.openlocfilehash: a5dcdd450a974cab476a1b31fc82c78bdda84b2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97f01a7d0c91359251b4af2a26fe9c48aab7122e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086357"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686939"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>コンテンツ検索用にアクセス許可フィルターを設定する
 
-検索アクセス許可のフィルター処理を使用して、電子情報開示管理者が Office 365 組織内のメールボックスとサイトのサブセットのみを検索できるようにします。 また、アクセス許可のフィルター処理を使用して、同じ電子情報開示管理者に特定の検索条件を満たすメールボックスやサイトのコンテンツのみを検索させることができます。 たとえば、電子情報開示管理者に特定の場所または部門のユーザーのメールボックスのみを検索させるようにすることができます。 これを行うには、サポートされている受信者フィルターを使用して、特定のユーザーまたはユーザーグループが検索できるメールボックスを制限するフィルターを作成します。 検索可能なメールボックスのコンテンツを指定するフィルターを作成することもできます。 これは、検索可能なメッセージ プロパティを使用するフィルターを作成することで行います。 同様に、電子情報開示マネージャーが組織内の特定の SharePoint サイトのみを検索できるようにすることもできます。 これは、検索可能なサイトを限定するフィルターを作成することで行います。 検索可能なサイトのコンテンツを指定するフィルターを作成することもできます。 これは、検索可能なサイト プロパティを使用するフィルターを作成することで行います。
+検索アクセス許可のフィルター処理を使用して、電子情報開示管理者が Office 365 組織内のメールボックスとサイトのサブセットのみを検索できるようにします。 また、アクセス許可のフィルター処理を使用して、同じ電子情報開示管理者に特定の検索条件を満たすメールボックスやサイトのコンテンツのみを検索させることができます。 たとえば、電子情報開示管理者に特定の場所または部門のユーザーのメールボックスのみを検索させるようにすることができます。 これを行うには、サポートされている受信者フィルターを使用して、特定のユーザーまたはユーザーグループが検索できるメールボックスを制限するフィルターを作成します。 また、ユーザーが検索できるメールボックスの内容を指定するフィルターを作成することもできます。 これは、検索可能なメッセージ プロパティを使用するフィルターを作成することで行います。 同様に、電子情報開示マネージャーが組織内の特定の SharePoint サイトのみを検索できるようにすることもできます。 これは、検索可能なサイトを限定するフィルターを作成することで行います。 検索可能なサイトのコンテンツを指定するフィルターを作成することもできます。 これは、検索可能なサイト プロパティを使用するフィルターを作成することで行います。
 
 検索アクセス許可のフィルター処理を使用して、Office 365 の組織内で (*コンプライアンスの境界*と呼ばれる) 論理的境界を作成することもでき、特定の電子情報開示管理者が検索できるユーザー コンテンツの場所 (メールボックス、SharePoint サイト、OneDrive アカウントなど) を管理できます。 詳細については、「[Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](tagging-and-assessment-in-advanced-ediscovery.md)」を参照してください。
   
@@ -41,7 +42,7 @@ ms.locfileid: "37086357"
 
 ## <a name="before-you-begin"></a>始める前に
 
-- コンプライアンス セキュリティ フィルターのコマンドレットを実行するには、セキュリティ/コンプライアンス センターの組織管理の役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](/security/office-365-security/protect-against-threats.md)」を参照してください。
+- コンプライアンス セキュリティ フィルターのコマンドレットを実行するには、セキュリティ/コンプライアンス センターの組織管理の役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください。
     
 - コンプライアンス セキュリティ フィルターのコマンドレットを使用するには、Windows PowerShell をセキュリティ/コンプライアンス センターとお客様の Exchange Online 組織の両方に接続する必要があります。 これらのコマンドレットはメールボックスのプロパティへのアクセスを必要とするため、Exchange Online に接続する必要があります。 手順については、次のセクションを参照してください。 
     
@@ -57,7 +58,7 @@ ms.locfileid: "37086357"
 
 1. ファイル名サフィックス **. ps1**を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。 たとえば、これを**ConnectEXO-CC**という名前のファイルに保存することができます。
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -68,25 +69,26 @@ ms.locfileid: "37086357"
 
 2. ローカル コンピューター上で、Windows PowerShell を開き、前の手順で作成したスクリプトが配置されているフォルダーに移動し、スクリプトを実行します。例:
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
- 
+
 これが機能したかどうかを知る方法 スクリプトの実行後に、セキュリティ/コンプライアンス センターと Exchange Online からのコマンドレットは、ローカルの Windows PowerShell セッションにインポートされます。 何もエラーが表示されなければ、正常に接続されています。 クイックテストでは、セキュリティ & コンプライアンスセンターのコマンドレットと Exchange Online コマンドレットを実行します。 たとえば、 **UnifiedCompliancePrerequisite**を実行して、**メールボックスを取得**することができます。 
   
 エラーが表示された場合は、次の要件を確認します。
   
 - よく起きる問題がパスワードの入力ミスです。もう一度 2 つのステップを実行します。特に、ステップ 1 ではユーザー名とパスワードを慎重に入力します。
     
-- 使用するアカウントに、セキュリティ/コンプライアンス センターにアクセスする権限があることを確認してください。 詳細については、｢[セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+- 使用するアカウントに、セキュリティ/コンプライアンス センターにアクセスする権限があることを確認してください。 詳細については、｢[セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
     
 - サービス拒否 (DoS) 攻撃を防止するため、セキュリティ/コンプライアンス センターに対して開かれるリモート PowerShell 接続は 3 つまでに制限されます。
     
 - スクリプトを実行するには、Windows PowerShell が構成されている必要があります。 これは、接続するたびにではなく、一度だけ実行する必要があります。 Windows PowerShell で署名されたスクリプトの実行を有効にするには、管理者特権の Windows PowerShell ウィンドウ ( **[管理者として実行]** を選択すると開く Windows PowerShell ウィンドウ) で次のコマンドを実行します。
 
-    ```
+    ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
+
 - ローカル コンピューターと Office 365 の間に TCP ポート 80 のトラフィックを開く必要があります。 このポートは多くの場合開いているはずですが、組織で厳格なインターネット アクセス ポリシーが使用されている場合は、念のために確認する必要があります。
 
   
@@ -105,7 +107,7 @@ ms.locfileid: "37086357"
 
 *フィルターリスト*は、メールボックスフィルターと、コンマで区切られたサイトフィルターを含むフィルターです。 フィルターリストの使用は、さまざまな種類のフィルターを組み合わせるためにサポートされている唯一の方法です。 次の例では、コンマが**メールボックス**フィルターと**サイト**フィルターを分割している点に注意してください。
 
-```
+```powershell
 -Filters "Mailbox_CustomAttribute10 -eq 'OttawaUsers'", "Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"
 ```
 
@@ -119,13 +121,13 @@ ms.locfileid: "37086357"
 
 - 前述したように、1つの検索権限フィルターに**サイト**と**sitecontent**内容フィルターを含めるために、フィルタリストを使用する必要はありません。 たとえば、 **-or**演算子を使用して**サイト**と**sitecontent**各フィルターを組み合わせることができます。
 
-   ```
+   ```powershell
    -Filters "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"
    ```
 
 - フィルターリストの各コンポーネントには、複雑なフィルター構文を含めることができます。 たとえば、メールボックスフィルターとサイトフィルターに**は、-or**演算子で区切られた複数のフィルターを含めることができます。
 
-   ```
+   ```powershell
    -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
    ```
 
@@ -135,77 +137,78 @@ ms.locfileid: "37086357"
   
 この例では、annb@contoso.com のユーザーはカナダでのメールボックスにのみ、すべてのコンテンツ検索アクションを実行できます。 このフィルターには、ISO 3166 1 からカナダの 3 桁の数値の国コードが含まれています。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
 この例では、ユーザーの donh および suzanf が、CustomAttribute1 mailbox プロパティの値が ' Marketing ' であるメールボックスのみを検索できるようにします。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
-   
+
 この例では、"US Discovery Managers" 役割グループのメンバーが、米国内のメールボックスにのみ、すべてのコンテンツ検索アクションを実行できます。このフィルターには、ISO 3166-1 で米国を表す 3 桁の数値の国コードが含まれています。
   
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All
 ```
 
 この例では、電子情報開示マネージャーの役割グループのメンバーが、Ottawa Users 配布グループのメンバーのメールボックスのみを検索できるようにします。 
   
-```
+```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
+
 この例では、すべてのユーザーが Executive Team 配布グループのメンバーのメールボックスからコンテンツを削除することを禁止します。
 
-```
+```powershell
 $DG = Get-DistributionGroup "Executive Team"
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoExecutivesPreview  -Users All -Filters "Mailbox_MemberOfGroup -ne '$($DG.DistinguishedName)'" -Action Purge
 ```
-   
+
 この例では、OneDrive 電子情報開示管理者のカスタム役割グループのメンバーは、組織内の OneDrive for Business の場所にあるコンテンツのみを検索できます。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName OneDriveOnly  -Users "OneDrive eDiscovery Managers" -Filters "Site_Path -like 'https://contoso-my.sharepoint.com/personal*'" -Action Search
 ```
-   
+
 > [!NOTE]
 > ユーザーが検索できるサイトを特定のサイトに制限する場合、上記の例で示すように、フィルター `Site_Path` を使用します。 `Site_Site` を使用することはできません。 
   
 この例では、2015 年中に送信されるメール メッセージに対してのみ、すべてのコンテンツ検索アクションを実行するようにユーザーを制限します。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName EmailDateRestrictionFilter -Users donh@contoso.com -Filters "MailboxContent_Received -ge '01-01-2015' -and MailboxContent_Received -le '12-31-2015'" -Action All
 ```
-   
+
 前の例と同様に、この例では、ユーザーがすべてのコンテンツ検索の操作を行うことを、2015 年中のいずれかの時点で最後に変更されたドキュメントに制限しています。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users donh@contoso.com -Filters "SiteContent_LastModifiedTime -ge '01-01-2015' -and SiteContent_LastModifiedTime -le '12-31-2015'" -Action All
 ```
-   
+
 この例では、"OneDrive Discovery Managers" 役割グループのメンバーが組織のメールボックスでコンテンツ検索アクションを実施できないようにしています。 
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"  -Action All
 ```
 
 この例では、janets または sarad で送受信された電子メールメッセージを組織内のすべてのユーザーが検索できないようにします。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoSaraJanet -Users All -Filters "MailboxContent_Participants -notlike 'janets@contoso.onmicrosoft.com' -and MailboxContent_Participants -notlike 'sarad@contoso.onmicrosoft.com'" -Action Search
 ```
 
 この例では、フィルターリストを使用して、メールボックスフィルターとサイトフィルターを結合します。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
@@ -230,31 +233,32 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 この例では、フィルターにユーザーを追加します。
 
-```
+```powershell
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
-```
+
+```powershell
 $filterusers.users.add("pilarp@contoso.com")
 ```
 
-```
+```powershell
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-   
+
 以下の例では、フィルターからユーザーを削除します。
 
-```
+```powershell
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
 
-```
+```powershell
 $filterusers.users.remove("annb@contoso.com")
 ```
 
-```
+```powershell
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-  
+
 ## <a name="remove-compliancesecurityfilter"></a>Remove-ComplianceSecurityFilter
 
 **Remove-ComplianceSecurityFilter** は検索フィルターを削除する場合に使用します。 _FilterName_ パラメーターを使用して、削除するフィルターを指定します。 

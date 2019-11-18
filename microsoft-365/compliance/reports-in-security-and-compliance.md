@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'セキュリティ & コンプライアンスセンターを使用して、SharePoint Online および Exchange Online 組織のさまざまなレポートと、Azure Active Directory レポートを取得します。  '
-ms.openlocfilehash: 979eb59ed0adf115b9cdda4cd99f97845e9b4b4c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: af0fbe34d24853a5c6aa3afff664477ce93c2a03
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086982"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686732"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターのレポート
 
@@ -54,8 +54,8 @@ ms.locfileid: "37086982"
 |**レポート**|**説明**|
 |:-----|:-----|
 |**Office 365 監査ログレポート** <br/> |Office 365 組織のユーザーおよび管理者のアクティビティについては、Office 365 監査ログを検索することができます。 このレポートには、Office 365 のディレクトリサービスである Exchange Online、SharePoint Online、OneDrive for Business、および Azure Active Directory のユーザーと管理者のアクティビティのエントリが含まれています。 詳細については、「 [Office 365 での監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。  <br/> |
-|**Azure AD レポート** <br/> |Office 365 組織での通常の、または不審なサインインアクティビティを検索するには、Microsoft Azure でサインインとアクティビティレポートを使用できます。 Azure AD 監査ログのイベントを表示することもできます。 Azure でレポートを表示するには、[ **AZURE AD レポートの表示**] のみをクリックします。 詳細については、次のトピックを参照してください。 <br/><br/>[Office 365 で無料の Azure Active Directory サブスクリプションを使用](use-your-free-azure-ad-subscription-in-office-365.md)します。 <br/> [アクセスと使用状況レポートを表示](http://go.microsoft.com/fwlink/p/?LinkId=506902)します。  <br/> |
-|**Exchange 監査レポート** <br/> | Office 365 の監査機能を使用して、組織の管理者によって Exchange Online の構成に加えられた変更を追跡できます。 Microsoft データセンター管理者または代理管理者によって Exchange Online 組織に加えられた変更も記録されます。 Exchange Online では、管理者監査ログは既定で有効になっているので、これを有効にするために何もする必要はありません。 Exchange Online ではメールボックス監査ログも提供されており、メールボックスの所有者以外のユーザーによるメールボックスへのアクセスを追跡できます。 所有者以外のアクセスを追跡する各メールボックスでメールボックス監査ログを有効にする必要があります。  <br/>  管理者監査ログとメールボックス監査ログの両方で、監査ログ エントリを表示する監査レポートを実行することができます。 また、メールボックス監査ログおよび管理者監査ログをエクスポートし、24 時間以内にメールに添付された XML ファイル形式で受信することができます。 <br/><br/>監査ログのエクスポートについては、以下を参照してください。  <br/><br/> [メールボックス監査ログのエクスポート](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [データセンター管理者監査ログの表示とエクスポート](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [役割グループの変更または管理者監査ログを検索する](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Exchange 監査レポート](http://go.microsoft.com/fwlink/p/?LinkID=395232)。  <br/> |
+|**Azure AD レポート** <br/> |Office 365 組織での通常の、または不審なサインインアクティビティを検索するには、Microsoft Azure でサインインとアクティビティレポートを使用できます。 Azure AD 監査ログのイベントを表示することもできます。 Azure でレポートを表示するには、[ **AZURE AD レポートの表示**] のみをクリックします。 詳しくは、次のトピックを参照してください。 <br/><br/>[Office 365 で無料の Azure Active Directory サブスクリプションを使用](use-your-free-azure-ad-subscription-in-office-365.md)します。 <br/> [アクセスと使用状況レポートを表示](https://go.microsoft.com/fwlink/p/?LinkId=506902)します。  <br/> |
+|**Exchange 監査レポート** <br/> | Office 365 の監査機能を使用して、組織の管理者によって Exchange Online の構成に加えられた変更を追跡できます。 Microsoft データセンター管理者または代理管理者によって Exchange Online 組織に加えられた変更も記録されます。 Exchange Online では、管理者監査ログは既定で有効になっているので、これを有効にするために何もする必要はありません。 Exchange Online ではメールボックス監査ログも提供されており、メールボックスの所有者以外のユーザーによるメールボックスへのアクセスを追跡できます。 所有者以外のアクセスを追跡する各メールボックスでメールボックス監査ログを有効にする必要があります。  <br/>  管理者監査ログとメールボックス監査ログの両方で、監査ログ エントリを表示する監査レポートを実行することができます。 また、メールボックス監査ログおよび管理者監査ログをエクスポートし、24 時間以内にメールに添付された XML ファイル形式で受信することができます。 <br/><br/>監査ログのエクスポートについては、以下を参照してください。  <br/><br/> [メールボックス監査ログのエクスポート](https://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [データセンター管理者監査ログの表示とエクスポート](https://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [役割グループの変更または管理者監査ログを検索する](https://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Exchange 監査レポート](https://go.microsoft.com/fwlink/p/?LinkID=395232)。  <br/> |
    
 ## <a name="supervisory-review-report"></a>監督レビューレポート
 

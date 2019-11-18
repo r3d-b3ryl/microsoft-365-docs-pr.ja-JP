@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の Windows 10 Enterprise の条件を満たしていることを確認します。
-ms.openlocfilehash: 268423de91309947381509017d386c62a5ef23da
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 98dd4b71f1c2af6d72580066d73e75dfd4aa60ff
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37372808"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627531"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>フェーズ 3: Windows 10 Enterprise のインフラストラクチャの終了条件
 
@@ -99,14 +99,14 @@ Windows Autopilot を使用しない場合、Azure AD への接続を含む、�
 <a name="crit-windows10-step5a"></a>
 ## <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>必須: Windows Defender ウイルス対策または独自のマルウェア対策ソリューションを使用している
 
-Windows 10 Enterprise を実行しているデバイスを悪意のあるソフトウェアから保護するために、Windows Defender ウイルス対策または独自のウイルス対策ソリューションを展開しました。Windows Defender ウイルス対策を展開した場合は、System Center Configuration Manager または Microsoft Intune などのレポートの方法を実装して、ウイルス対策のイベントとアクティビティを監視します。
+Windows 10 Enterprise を実行しているデバイスを悪意のあるソフトウェアから保護するために、Windows Defender ウイルス対策または独自のウイルス対策ソリューションを展開しました。Windows Defender ウイルス対策を展開した場合は、Microsoft Endpoint Configuration Manager または Microsoft Intune などのレポートの方法を実装して、ウイルス対策のイベントとアクティビティを監視します。
 
 必要に応じて、[手順 5](windows10-enable-security-features.md#windows10-sec-av) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-windows10-step5b"></a>
 ## <a name="required-you-are-using-windows-defender-exploit-guard"></a>必須: Windows Defender Exploit Guard を使用している
 
-Windows 10 Enterprise を実行しているデバイスを侵入から保護するために、Windows Defender Exploit Guard を展開し、System Center Configuration Manager または Microsoft Intune などのレポートの方法を実装しました。
+Windows 10 Enterprise を実行しているデバイスを侵入から保護するために、Windows Defender Exploit Guard を展開し、Configuration Manager または Microsoft Intune などのレポートの方法を実装しました。
 
 必要に応じて、[手順 5](windows10-enable-security-features.md#windows10-sec-eg) がこの必須条件を満たす上で役立ちます。
 

@@ -7,17 +7,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: 525e2daf5b9dc8268e2b5db2eaab17099bf5bc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086252"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686919"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 のコンテンツ検索を使用した対象コレクション
 
@@ -34,7 +36,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
     
 - 手順1でスクリプトを実行するたびに、新しいリモート PowerShell セッションが作成されます。 そのため、使用可能なすべてのリモート PowerShell セッションを使用できます。 この問題が発生しないようにするには、次のコマンドを実行して、アクティブなリモート PowerShell セッションを切断します。
     
-  ```
+  ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
@@ -62,7 +64,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `GetFolderSearchParameters.ps1`のようになります。
     
-  ```
+  ```powershell
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
@@ -177,7 +179,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
     
 3. スクリプトを実行します。例えば：
     
-      ```
+      ```powershell
       .\GetFolderSearchParameters.ps1
       ```
 
@@ -203,7 +205,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   
 ### <a name="script-output-for-site-folders"></a>サイトフォルダーのスクリプト出力
 
-SharePoint または OneDrive for Business サイトから**documentlink**プロパティのパスを取得している場合、スクリプトはリモート PowerShell を使用してセキュリティ & コンプライアンスセンターに接続し、サイトを検索する新しいコンテンツ検索を作成します。指定したサイトにあるフォルダーの一覧を表示します。 このスクリプトは、各フォルダーの名前を表示し、" **documentlink of ドキュメント**" というプレフィックスをフォルダーの URL に追加します。 **Documentlink**プロパティは検索可能なプロパティであるため、手順`documentlink:<path>` 2 の検索クエリで [プロパティ: 値のペア] を使用して、そのフォルダーを検索します。 スクリプトには、最大200のサイトフォルダーが表示されます。 200を超えるサイトフォルダーがある場合は、最新のフォルダーが表示されます。
+SharePoint または OneDrive for Business サイトから**documentlink**プロパティのパスを取得している場合、スクリプトはリモート PowerShell を使用してセキュリティ & コンプライアンスセンターに接続し、サイトを検索する新しいコンテンツ検索を作成し、指定されたサイトにあるフォルダーの一覧を表示します。 このスクリプトは、各フォルダーの名前を表示し、" **documentlink of ドキュメント**" というプレフィックスをフォルダーの URL に追加します。 **Documentlink**プロパティは検索可能なプロパティであるため、手順`documentlink:<path>` 2 の検索クエリで [プロパティ: 値のペア] を使用して、そのフォルダーを検索します。 スクリプトには、最大200のサイトフォルダーが表示されます。 200を超えるサイトフォルダーがある場合は、最新のフォルダーが表示されます。
   
 サイトフォルダーのスクリプトによって返される出力の例を次に示します。
   
@@ -245,28 +247,28 @@ SharePoint または OneDrive for Business サイトから**documentlink**プロ
   
 - この例では、3つの異なるメールボックスフォルダーを検索します。 同じようなクエリ構文を使用して、ユーザーの回復可能なアイテムフォルダー内の隠しフォルダーを検索することができます。
     
-  ```
+  ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - この例では、完全に一致する語句を含むアイテムをメールボックスフォルダーから検索します。
     
-  ```
+  ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - 次の使用例は、タイトルに "NDA" という文字が含まれるドキュメントのサイトフォルダー (およびすべてのサブフォルダー) を検索します。
     
-  ```
+  ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - この例では、日付の範囲内で変更されたドキュメントのサイトフォルダー (およびすべてのサブフォルダー) を検索します。
     
-  ```
+  ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-  
+
 ## <a name="more-information"></a>詳細情報
 
 この記事に記載されているスクリプトを使用して対象のコレクションを実行する場合は、次の点に注意してください。

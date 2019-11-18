@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Azure ストレージエクスプローラーをインストールして使用すると、アドバンスト eDiscovery のレビューセットからエクスポートされたドキュメントをダウンロードできます。
-ms.openlocfilehash: 4846a77d26079303f85778e71e6bdf2804ccea5e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 412ec48865c6cb7e511e3f6068fe02d87a99f831
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085111"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686894"
 ---
 # <a name="download-export-jobs"></a>エクスポート ジョブのダウンロード
 
 高度な電子情報開示ケースのレビューセットからドキュメントをエクスポートすると、Microsoft が提供する Azure ストレージの場所または組織によって管理される Azure ストレージの場所にドキュメントがアップロードされます。 使用される Azure ストレージの場所の種類は、ドキュメントのエクスポート時に選択されたオプションによって異なります。 
 
-この記事では、Microsoft Azure ストレージエクスプローラーを使用して、エクスポートされたドキュメントを参照およびダウンロードするために Azure ストレージの場所に接続する方法について説明します。 Azure ストレージエクスプローラーの詳細については、「[クイックスタート: Azure ストレージエクスプローラーを使用する](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)」を参照してください。
+この記事では、Microsoft Azure ストレージエクスプローラーを使用して、エクスポートされたドキュメントを参照およびダウンロードするために Azure ストレージの場所に接続する方法について説明します。 Azure ストレージエクスプローラーの詳細については、「[クイックスタート: Azure ストレージエクスプローラーを使用する](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)」を参照してください。
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>手順 1: Azure ストレージエクスプローラーをインストールする
 
@@ -73,7 +73,7 @@ ms.locfileid: "37085111"
 
     **Blob コンテナ**ノード (**ストレージアカウント** > **(接続されたコンテナー)** \>が開きます。 
 
-    ![](./media/AzureStorageConnect5.png)
+    ![Blob コンテナノードのジョブをエクスポートする](./media/AzureStorageConnect5.png)
 
     これには、手順4の表示名を持つという名前のコンテナーが含まれています。 このコンテナーには、作成した各エクスポートジョブのフォルダーが含まれています。 これらのフォルダーには、エクスポートジョブの ID に対応する ID を使用して名前が付けられます。 これらのエクスポート Id (およびエクスポートの名前) は、[**ジョブ**] タブに表示されている**エクスポートジョブのデータを準備**するためのフライアウトページの [**サポート情報**] にあります。
 
@@ -85,7 +85,7 @@ ms.locfileid: "37085111"
 
    [エクスポートジョブ] フォルダーには以下のアイテムが含まれています。 エクスポートフォルダー内の実際のアイテムは、エクスポートジョブの作成時に構成されたエクスポートオプションによって決まります。 詳細については、「[レビューセットからドキュメントをエクスポートする](export-documents-from-review-set.md)」を参照してください。
 
-    - Export_load_file: この CSV ファイルは、エクスポートされた各ドキュメントに関する情報を含む詳細エクスポートレポートです。 ファイルは、ドキュメントのメタデータプロパティごとに1つの列で構成されます。 このレポートに含まれているメタデータの一覧と説明については、「 [Advanced eDiscovery」の「ドキュメントメタデータフィールド](document-metadata-fields.md)の表」の「エクスポートされた**フィールド名**」列を参照してください。
+    - Export_load_file csv: この CSV ファイルは、エクスポートされた各ドキュメントに関する情報を含む詳細エクスポートレポートです。 ファイルは、ドキュメントのメタデータプロパティごとに1つの列で構成されます。 このレポートに含まれているメタデータの一覧と説明については、「 [Advanced eDiscovery」の「ドキュメントメタデータフィールド](document-metadata-fields.md)の表」の「エクスポートされた**フィールド名**」列を参照してください。
     
     - Summary.txt: エクスポート統計情報を含むエクスポートの概要を含むテキストファイル。
     

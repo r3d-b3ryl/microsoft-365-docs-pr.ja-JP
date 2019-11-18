@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Office 365 監査ログ検索ツールを使用すると、危険にさらされているアカウントの調査、メールボックスのメール転送を設定したユーザーの検出、外部ユーザーが正常にログインできた理由を特定するなどの一般的な問題のトラブルシューティングに役立ちます。機関.
-ms.openlocfilehash: 255fd323ca08dd4ea759648fbe0673f5e5254c22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085497"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686859"
 ---
-# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Office 365 監査ログを検索して一般的なシナリオのトラブルシューティングを行う
+# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Office 365 監査ログを検索して一般的なサポートの問題を調査する
 
-この記事では、一般的なサポート シナリオのトラブルシューティングに役立つ Office 365 監査ログ検索ツールの使用方法をご紹介します。監査ログを使用して、以下のことが可能です。
+この記事では、Office 365 監査ログ検索ツールを使用して一般的なサポートの問題を調査する方法について説明します。 監査ログを使用すると、次のことができます。
 
 - 侵害されたアカウントにアクセスするために使用されたコンピューターの IP アドレスを見つける
 - 誰がメールボックスの電子メール転送を設定したかを判別する
@@ -55,9 +55,9 @@ Office 365 監査ログを検索するには、Exchange Online で [表示のみ
     
     b. **開始日**と**終了日:** その期間内に発生したイベントを表示する日付と時刻の範囲を選択します。 既定では、過去7日間が選択されています。 日付と時刻は、世界協定時刻 (UTC) 形式で表示されます。 指定できる最大日付範囲は90日です。
 
-    c. **ユーザー:** このボックスをクリックし、検索結果を表示するユーザーを1人以上選択します。 このボックスで選択したユーザーが実行した選択されたアクティビティの監査レコードは、結果の一覧に表示されます。 組織内のすべてのユーザー (およびサービスアカウント) のエントリを返すには、このボックスを空白のままにします。
+    c.  **ユーザー:** このボックスをクリックし、検索結果を表示するユーザーを1人以上選択します。 このボックスで選択したユーザーが実行した選択されたアクティビティの監査レコードは、結果の一覧に表示されます。 組織内のすべてのユーザー (およびサービスアカウント) のエントリを返すには、このボックスを空白のままにします。
     
-    d. **ファイル、フォルダー、またはサイト:** 指定したキーワードを含むフォルダーのファイルに関連するアクティビティを検索するために、ファイル名またはフォルダー名の一部またはすべてを入力します。 ファイルまたはフォルダーの URL を指定することもできます。 URL を使用する場合は、url の完全パスを入力するか、URL の一部のみを入力して、特殊文字やスペースを含めないようにしてください。 組織内のすべてのファイルおよびフォルダーのエントリを返すには、このボックスを空白のままにします。 この記事に記載されているすべてのトラブルシューティングのシナリオでは、このフィールドは空白のままになります。
+    d.  **ファイル、フォルダー、またはサイト:** 指定したキーワードを含むフォルダーのファイルに関連するアクティビティを検索するために、ファイル名またはフォルダー名の一部またはすべてを入力します。 ファイルまたはフォルダーの URL を指定することもできます。 URL を使用する場合は、url の完全パスを入力するか、URL の一部のみを入力して、特殊文字やスペースを含めないようにしてください。 組織内のすべてのファイルおよびフォルダーのエントリを返すには、このボックスを空白のままにします。 この記事に記載されているすべてのトラブルシューティングのシナリオでは、このフィールドは空白のままになります。
     
 5. [**検索**] をクリックして、設定した検索条件で検索を実行します。 
     
@@ -116,11 +116,11 @@ b. [**パラメーター** ] フィールドの値*ForwardingSmtpAddress*は、�
 
 c. *DeliverToMailboxAndForward* パラメーターの値 *True* は、メッセージのコピーが sarad@alpinehouse.onmicrosoft.com に送信され、*しかも* *ForwardingSmtpAddress* パラメーターの電子メール アドレス (この例では mike@contoso.com) に転送されたことを示しています。*DeliverToMailboxAndForward* パラメーターの値が *False* に設定されている場合は、*ForwardingSmtpAddress* パラメーターのアドレスだけに電子メールが転送されます。つまり [**ObjectId**] フィールドで指定されたメールボックスには送信されません。
 
-d. **UserId**フィールドは、 **ObjectId**フィールドで指定されたメールボックスで電子メール転送を設定したユーザーを示します。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。 この例では、メールボックスのメール転送がメールボックスの所有者に設定されているように見えます。
+d.  **UserId**フィールドは、 **ObjectId**フィールドで指定されたメールボックスで電子メール転送を設定したユーザーを示します。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。 この例では、メールボックスのメール転送がメールボックスの所有者に設定されているように見えます。
 
 メールボックスのメール転送を設定すべきでないと判断される場合は、Exchange Online PowerShell で次のコマンドを実行して、この設定を削除できます:
 
-```
+```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
@@ -182,7 +182,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **ファイル、フォルダー、またはサイト:** このフィールドは空白のままにします。
 
-検索を実行すると、このアクティビティの監査レコードが検索結果に表示されます。 監査レコードをクリックして**詳細**のフライアウトページを表示し、[**詳細情報**] をクリックします。 受信トレイルールの設定に関する情報は、[**パラメーター** ] フィールドに表示されます。 次のスクリーンショットと説明は、受信トレイルールについての情報を強調して示しています。
+検索を実行すると、このアクティビティの監査レコードが検索結果に表示されます。 監査レコードをクリックして**詳細**のフライアウトページを表示し、[**詳細情報**] をクリックします。 受信トレイのルール設定に関する情報は、[**パラメーター**] フィールドに表示されます。 次のスクリーンショットと説明は、受信トレイルールについての情報を強調して示しています。
 
 ![新しい受信トレイ ルールに関する監査レコード](media/NewInboxRuleRecord.png)
 
@@ -190,9 +190,9 @@ a. [**ObjectId**] フィールドに受信トレイ ルールの完全な名前�
 
 b. [**パラメーター**] フィールドには受信トレイ ルールの条件が表示されます。この例では、[*送信者*] パラメーターによって条件が指定されます。[*送信者*] パラメーターに定義された値は、admin@alpinehouse.onmicrosoft.com から送られた電子メールを受信トレイ ルールで処理することを示しています。受信トレイ ルールの条件の定義に使用できるパラメーターの完全なリストについては、「[New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)」の記事を参照してください。
 
-c. *Movetofolder*パラメーターは、受信トレイルールのアクションを指定します。 この例では、admin@alpinehouse.onmicrosoft.com から受信したメッセージは、 *Adminsearch*という名前のフォルダーに移動されます。 また、受信トレイルールのアクションを定義するために使用できるパラメーターの完全な一覧については、新しい受信トレイ[ルール](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)の記事も参照してください。
+c.  *Movetofolder*パラメーターは、受信トレイルールのアクションを指定します。 この例では、admin@alpinehouse.onmicrosoft.com から受信したメッセージは、 *Adminsearch*という名前のフォルダーに移動されます。 また、受信トレイルールのアクションを定義するために使用できるパラメーターの完全な一覧については、新しい受信トレイ[ルール](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)の記事も参照してください。
 
-d. [ **UserId** ] フィールドには、 **ObjectId**フィールドに指定されている受信トレイルールを作成したユーザーが表示されます。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。
+d.  [ **UserId** ] フィールドには、 **ObjectId**フィールドに指定されている受信トレイルールを作成したユーザーが表示されます。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>組織外のユーザーによるログインが成功した理由を調べる
 
@@ -211,19 +211,19 @@ Office 365 監査ログで監査レコードを確認するときに、外部ユ
 
    b. このフィールドには、組織内のリソースにアクセスしようとした外部ユーザーの UPN が表示されます。 このユーザー ID は、監査レコードの**user**プロパティと**UserId**プロパティでも識別されます。
 
-   c. **ApplicationId**プロパティは、ログオン要求をトリガーしたアプリケーションを識別します。 この監査レコードの ApplicationId プロパティに表示される 00000003-0000-0ff1-ce00-000000000000 の値は、SharePoint Online を示しています。 OneDrive for Business にも同じ ApplicationId があります。
+   c.  **ApplicationId**プロパティは、ログオン要求をトリガーしたアプリケーションを識別します。 この監査レコードの ApplicationId プロパティに表示される 00000003-0000-0ff1-ce00-000000000000 の値は、SharePoint Online を示しています。 OneDrive for Business にも同じ ApplicationId があります。
 
-   d. これは、パススルー認証が成功したことを示します。 言い換えると、ユーザーは Azure AD によって正常に認証されています。 
+   d.  これは、パススルー認証が成功したことを示します。 言い換えると、ユーザーは Azure AD によって正常に認証されています。 
 
-   e. **RecordType**値が**15**の場合は、監査されたアクティビティ (USERLOGGEDIN) が Azure AD でセキュリティで保護されたトークンサービス (STS) ログオンイベントであることを示します。
+   e.  **RecordType**値が**15**の場合は、監査されたアクティビティ (USERLOGGEDIN) が Azure AD でセキュリティで保護されたトークンサービス (STS) ログオンイベントであることを示します。
 
 UserLoggedIn 監査レコードに表示されるその他のプロパティの詳細については、「 [Office 365 Management ACTIVITY API スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)の Azure AD 関連スキーマ情報」を参照してください。
 
 次の2つの例では、パススルー認証のためにユーザーが監査アクティビティ**にログイン**することになります。 
 
-  - Microsoft アカウント (SaraD@outlook.com など) を使用しているユーザーが fourthcoffee.onmicrosoft.com の OneDrive for Business アカウントのドキュメントにアクセスしようとしており、それらのユーザーが SaraD@outlook.com の対応するゲストユーザーアカウントではありませんfourthcoffee.onmicrosoft.com。
+  - Microsoft アカウント (SaraD@outlook.com など) を使用しているユーザーが fourthcoffee.onmicrosoft.com の OneDrive for Business アカウントのドキュメントにアクセスしようとし、それらが fourthcoffee.onmicrosoft.com の SaraD@outlook.com の対応するゲストユーザーアカウントではありません。
 
-  - Office 365 組織内の職場または学校のアカウントを持つユーザー (pilarp@fabrikam.onmicrosoft.com など) が contoso.onmicrosoft.com の SharePoint サイトにアクセスしようとし、それらが pilarp@fabrikam.com の対応するゲストユーザーアカウントではありませんcontoso.onmicrosoft.com。
+  - Office 365 組織の職場または学校のアカウントを持つユーザー (pilarp@fabrikam.onmicrosoft.com など) が contoso.onmicrosoft.com の SharePoint サイトにアクセスしようとしており、それらのユーザーが contoso.onmicrosoft.com の pilarp@fabrikam.com の対応するゲストユーザーアカウントではありません。
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>パススルー認証の結果として成功したログインを調査するためのヒント
@@ -232,7 +232,7 @@ UserLoggedIn 監査レコードに表示されるその他のプロパティの�
 
    ![外部ユーザーによって実行されたすべてのアクティビティを検索する](media/PassThroughAuth2.png)
 
-    **ユーザーがログイン**しているユーザーとは別の監査レコードが返されることがあります。これには、組織内のユーザーが外部ユーザーと共有しているリソース、外部ユーザーがアクセスしたドキュメント、変更された、またはダウンロードしたドキュメントがあるかどうかを示すものがあります。は、それらと一緒に共有されています。
+    **ユーザーがログイン**しているユーザーとは別の監査レコードが返されることがあります。これには、組織内のユーザーに外部ユーザーとの共有リソースがあるかどうか、外部ユーザーがアクセスした、変更された、またはダウンロードしたドキュメントが外部ユーザーによって共有されているかどうかが示されます。
 
 - 監査レコード**にログイン**しているユーザーによって識別された外部ユーザーとファイルが共有されたことを示す SharePoint 共有アクティビティを検索します。 詳細については、「 [Office 365 監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。
 

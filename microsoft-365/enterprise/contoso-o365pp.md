@@ -3,7 +3,7 @@ title: Contoso 社での Office 365 ProPlus の展開
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,17 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 社が System Center Configuration Manager を使用して Office 365 ProPlus を展開する方法について説明します。
-ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Office 365 ProPlus を展開する方法について説明します。
+ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054999"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627353"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 社での Office 365 ProPlus の展開
 
-**概要:** Contoso 社が System Center Configuration Manager を使用して Office 365 ProPlus を展開する方法について説明します。
+**概要:** Contoso 社が Microsoft Endpoint Configuration Manager を使用して Office 365 ProPlus を展開する方法について説明します。
 
 Contoso 社では自社の PC を Windows 10 Enterprise と Office 365 ProPlus にアップグレードして、これまで以上に効果的な共同作業、セキュリティの向上、および最新のデスクトップ エクスペリエンスを実現しました。インフラストラクチャとビジネス ニーズを評価した後、Contoso 社は展開に向けて、以下の重要な要件を特定しました。
 
@@ -33,7 +33,7 @@ Contoso 社では自社の PC を Windows 10 Enterprise と Office 365 ProPlus �
 
 ## <a name="deployment-tools"></a>展開ツール
 
-Contoso 社では自社の要件に基づいて、System Center Configuration Manager (Current Branch) を使用した Windows と Office の展開を選択しました。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Office の展開と管理をより簡単で効率的にするために、以下の機能も組み込まれています。
+Contoso 社では自社の要件に基づいて、Configuration Manager (Current Branch) を使用した Windows 10 Enterprise と Office 365 ProPlus の展開を選択しました。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Office の展開と管理をより簡単で効率的にするために、以下の機能も組み込まれています。
 
 - ピア キャッシュ。遠隔地のデバイスに展開する際にネットワーク キャパシティが限られている場合に役立ちます
 - Office クライアント管理ダッシュボード。Office の展開と更新の監視を容易にし、管理者が最新の展開と管理機能にアクセスできるようにします
@@ -73,9 +73,13 @@ Office の展開を完了するために、Contoso 社では Microsoft のベス
 
 Contoso 社ではクラウドからデバイスを自動的に更新するよう選択しているため、Configuration Manger でプロセスを管理する必要はありませんでした。 デバイスは、最初の展開の一部として定義された更新チャネルに基づいて、直接クラウドから自動的に更新されます。 
 
+次に Contoso 社の Office 365 ProPlus のインストール、および進行中の更新プログラムの展開アーキテクチャを示します。
+
+![Contoso 社の Office 365 ProPlus の展開インフラストラクチャ](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+ 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社が Microsoft 365 Enterprise で Intune を使用して、組織全体で実行されるデバイスとアプリを管理する方法について[説明](contoso-mdm.md)します。
+Contoso 社が Microsoft 365 Enterprise で Microsoft Intune を使用して、組織全体で実行されるデバイスとアプリを管理する方法について[説明](contoso-mdm.md)します。
 
 ## <a name="see-also"></a>関連項目
 

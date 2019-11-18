@@ -2,8 +2,8 @@
 title: メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: 'ポリシー ヒントは、誰かがコンテンツを使用していて、それが DLP ポリシーと競合している場合に表示される通知または警告です。メール通知とポリシー ヒントを使用して、組織のポリシーに関する認識を高め、ユーザーの教育に役立てることができます。また、業務上の正当な理由がある場合や、ポリシーが誤検知した場合にブロックされないように、ユーザーにポリシーを上書きするオプションを提供することもできます。 '
-ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087076"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686830"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -214,16 +215,6 @@ Outlook on the web および Outlook 2013 以降で新しいメールを作成�
 - コンテンツが含まれている
 - コンテンツが共有されている
 
-現在、以下の追加条件のポリシー ヒント表示のサポートに取り組んでいます。
-
-- メールの添付ファイルのコンテンツをスキャンできなかった
-- メールの添付ファイルのコンテンツのスキャンが完了しなかった
-- 添付ファイル拡張子が
-- 添付ファイルがパスワードで保護されている
-- 文書のプロパティが
-- 受信者ドメインが
-- 送信者の IP アドレスが
-
 これらのすべての条件は、条件がコンテンツに一致し、コンテンツに関して保護アクションが適用される Outlook で機能しますが、ユーザーへのポリシー ヒントの表示はまだサポートされていないことに注意してください。
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Exchange 管理センターと Office 365 セキュリティ/コンプライアンス センターでのポリシー ヒント
@@ -295,5 +286,3 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
 - [機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
-    
-

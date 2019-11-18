@@ -10,17 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する、Office 365 組織内の論理的な境界を作成します。 コンプライアンス境界では、検索アクセス許可フィルター (コンプライアンスセキュリティフィルターとも呼ばれます) を使用して、特定のユーザーが検索できるメールボックス、SharePoint サイト、および OneDrive アカウントを制御します。
-ms.openlocfilehash: 1e87926910ad7dd356696368ad6759bfacfe37c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 13f45ce55f23d91a81068031691436383ec87ba3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086194"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686929"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -106,10 +107,10 @@ Contoso 社のコンプライアンス境界シナリオを使用して、4つ�
   
 以下は、コンプライアンスの境界に使用される検索アクセス許可フィルターを作成するために使用される構文です。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
-  
+
 コマンドの各パラメーターの説明を次に示します。
   
 -  `FilterName`: フィルターの名前を指定します。 フィルターが使用されているエージェンシーを説明または特定する名前を使用します。 
@@ -125,7 +126,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     -  `Site_Path`: `Users`パラメーターで定義されている役割グループが検索できる SharePoint サイトを指定します。 *SharePointURL*は、役割グループのメンバーが検索できる機関内のサイトを指定します。 例: `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 とフィルターは、 **-または**演算子によって接続されていることに注意してください。 `Site_Path` `Site`
     
      > [!NOTE]
-     > `Filters`パラメーターの構文には、*フィルターリスト*が含まれています。 フィルターリストは、メールボックスフィルターと、コンマで区切られたサイトフィルターを含むフィルターです。 前の例では、 **Mailbox_ComplianceAttribute**と**Site_ComplianceAttribute**を区切るコンマを使用`-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`していることに注意してください。 コンテンツ検索の実行中にこのフィルターが処理されると、フィルターリストから1つのメールボックスフィルターと1つのサイトフィルターという2つの検索アクセス許可のフィルターが作成されます。 フィルターリストを使用する代わりに、各エージェンシーに対して2つの異なる検索アクセス許可フィルターを作成することもできます。1つは、メールボックス属性に対する検索アクセス許可フィルターと、サイト属性用の1つのフィルターです。 どちらの場合も、結果は同じになります。 フィルターリストを使用するか、別の検索アクセス許可のフィルターを作成することは、優先度の高いものです。
+     > `Filters`パラメーターの構文には、*フィルターリスト*が含まれています。 フィルターリストは、メールボックスフィルターと、コンマで区切られたサイトフィルターを含むフィルターです。 前の例では、コンマが**Mailbox_ComplianceAttribute**と**Site_ComplianceAttribute**であること`-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`に注意してください。 コンテンツ検索の実行中にこのフィルターが処理されると、フィルターリストから1つのメールボックスフィルターと1つのサイトフィルターという2つの検索アクセス許可のフィルターが作成されます。 フィルターリストを使用する代わりに、各エージェンシーに対して2つの異なる検索アクセス許可フィルターを作成することもできます。1つは、メールボックス属性に対する検索アクセス許可フィルターと、サイト属性用の1つのフィルターです。 どちらの場合も、結果は同じになります。 フィルターリストを使用するか、別の検索アクセス許可のフィルターを作成することは、優先度の高いものです。
 
 -  `Action`: フィルターが適用されるコンプライアンス検索アクションの種類を指定します。 たとえば、は`-Action Search` 、 `Users`パラメーターで定義された役割グループのメンバーがコンテンツ検索を実行するときにのみフィルターを適用します。 この場合、検索結果をエクスポートするときに、フィルターは適用されません。 コンプライアンスの境界の場合`-Action All`は、を使用して、すべての検索操作にフィルターが適用されるようにします。 
     
@@ -135,13 +136,13 @@ Contoso 社のコンプライアンス境界シナリオをサポートするた
   
  **4番目のコーヒー**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
-   
+
  **コーホーワイナリー**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
@@ -220,30 +221,30 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ここでは、コンプライアンスの境界に対して検索アクセス許可のフィルターを作成するときに**Region**パラメーターを使用する例を示します。 この場合は、4つ目のコーヒー子会社が北米に配置されており、Coho がヨーロッパにあることを前提としています。 
   
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
-   
+
 複数地域環境でコンテンツを検索してエクスポートする場合は、次の点に注意してください。
   
-- **Region**パラメーターは、Exchange メールボックスの検索を制御しません。 メールボックスを検索すると、すべてのデータセンターが検索されます。 検索アクセス許可フィルターを作成または変更するときに、Exchange メールボックスの検索対象となる範囲を制限するには、 **Filters**パラメーターを使用します。 
+- Exchange メールボックスの検索は、**Region** パラメーターにより制御されません。 メールボックスを検索すると、すべてのデータセンターが検索されます。 検索アクセス許可フィルターを作成または変更するときに、Exchange メールボックスの検索対象となる範囲を制限するには、 **Filters**パラメーターを使用します。 
     
 - 電子情報開示マネージャーが複数の SharePoint 地域を検索する必要がある場合は、SharePoint サイトまたは OneDrive の場所を指定するために、その電子情報開示マネージャーに対して検索アクセス許可フィルターで使用する別のユーザーアカウントを作成する必要があります。アカウントが配置されている。 この設定の詳細については、「 [Office 365 のコンテンツ検索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)」の「SharePoint の複数地域環境でコンテンツを検索する」を参照してください。
     
 - SharePoint および OneDrive でコンテンツを検索する場合、 **Region**パラメーターは、電子情報開示マネージャーが電子情報開示の調査を行うメインまたはサテライトの場所を検索します。 電子情報開示マネージャーが、検索アクセス許可フィルターで指定されている地域外の SharePoint および OneDrive サイトを検索すると、検索結果は返されません。 
     
-- 検索結果をエクスポートすると、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できる他の Office 365 サービスを含む) からのコンテンツが、**Region**パラメーターで指定されたデータセンター。 これにより、管理された境界を越えてコンテンツをエクスポートすることを許可しないことで、組織のコンプライアンスを実現できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織の既定の地域にアップロードされます。 
+- 検索結果をエクスポートすると、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できるその他の Office 365 サービスを含む) からのコンテンツが、 **Region**パラメーターで指定されたデータセンター内の Azure ストレージの場所にアップロードされます。 これにより、管理された境界を越えてコンテンツをエクスポートすることを許可しないことで、組織のコンプライアンスを実現できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織の既定の地域にアップロードされます。 
     
 - 既存の検索アクセス許可フィルターを編集して、次のコマンドを実行し、地域を追加または変更することができます。
 
-    ```
+    ```powershell
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
- 
+
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
  **検索アクセス許可フィルターを作成および管理できるユーザー (New-compliancesecurityfilter および New-compliancesecurityfilter コマンドレットを使用)**

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 必要に応じて、社内の Active Directory Rights Management サービス (AD RMS) を使用するように Exchange Online IRM を構成し、組織の要件を満たすようにすることができます。 これは一般的ではありません。 AD RMS を使用するための要件がない場合は、代わりに Office メッセージの暗号化を使用します。
-ms.openlocfilehash: f5611ca7efeae0ab60ef90ebf4f8a225ea1332e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1c3bdf02f31f57f1328f0244d539d0dc88e7ba89
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085031"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686741"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>AD RMS による Exchange Online のメールの暗号化 
 
@@ -43,6 +43,6 @@ Windows Server 2008 以降を実行している AD RMS サーバーを使用す�
     
 - **管理者がトランスポート保護ルールを使用して Outlook と Outlook on the web の両方に IRM 保護を自動的に適用する** 管理者は、メッセージを IRM で保護するためのトランスポート保護ルールを作成できます。ルール条件を満たすメッセージに AD RMS 権利ポリシー テンプレートを適用するように、トランスポート保護ルールの処理を構成します。IRM を有効にすると、 **メッセージに権利保護を適用する**というトランスポート保護ルールの処理で組織の AD RMS 権利ポリシー テンプレートを使用できるようになります。
     
-- **管理者が Outlook 保護ルールを作成する** Outlook 保護ルールは、送信者の部署、メッセージの送信先、受信者が組織内か組織外かなどのメッセージの条件に基づいて、IRM 保護を Outlook 2010 (Outlook on the web ではない) のメッセージに自動的に適用します。詳細については、「 [Create an Outlook Protection Rule](http://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx)」を参照してください。
+- **管理者が Outlook 保護ルールを作成する** Outlook 保護ルールは、送信者の部署、メッセージの送信先、受信者が組織内か組織外かなどのメッセージの条件に基づいて、IRM 保護を Outlook 2010 (Outlook on the web ではない) のメッセージに自動的に適用します。詳細については、「 [Create an Outlook Protection Rule](https://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx)」を参照してください。
     
 

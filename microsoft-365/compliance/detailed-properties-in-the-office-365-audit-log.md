@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 監査ログレコードに含まれるその他のプロパティについて説明します。
-ms.openlocfilehash: 04b2c0bf5d4a3a534e166e82b0261f71e7788294
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: a08c958df43905ea84f7a241f9f0fbf48502d164
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437797"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38686658"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 監査ログの詳細なプロパティ
 
@@ -44,8 +44,7 @@ ms.locfileid: "37437797"
 |ChannelName|Microsoft Teams のチャネルの名前。チャネルが置かれているチームは、**TeamName** プロパティと **TeamGuid** プロパティによって識別されます。|Microsoft Teams|
 |Client|ログイン イベントに使用されたクライアント デバイスと、そのデバイスの OS およびブラウザー (例: Nokia Lumia 920、Windows Phone 8、IE Mobile 11)。|Azure Active Directory|
 |ClientInfoString|操作を実行するために使用されたメール クライアントに関する情報 (ブラウザーのバージョン、Outlook のバージョン、およびモバイル デバイスの情報など)。|Exchange (メールボックス アクティビティ)|
-|ClientIP|アクティビティがログに記録されたときに使用されたデバイスの IP アドレス。IP アドレスは、IPv4 または IPv6 アドレスの形式で表示されます。<br/><br/>Azure Active Directory に関連するイベントの管理者アクティビティでは、IP アドレスが記録されず、ClientIP プロパティの値`null`がであることに注意してください。 |Exchange と Azure Active Directory|
-|ClientIPAddress|ClientIP と同じ。|SharePoint|
+|ClientIP|アクティビティがログに記録されたときに使用されたデバイスの IP アドレス。IP アドレスは、IPv4 または IPv6 アドレスの形式で表示されます。<br/><br/> 一部のサービスでは、このプロパティに表示される値は、ユーザーに代わってサービスを呼び出す信頼できるアプリケーション (Office on the web アプリなど) の IP アドレスであり、アクティビティを実行したユーザーが使用するデバイスの IP アドレスではない場合があります。 <br/><br/>また、Azure Active Directory 関連イベントの管理者アクティビティ (またはシステムアカウントによって実行されるアクティビティ) については、IP アドレスがログに記録され`null`ず、ClientIP プロパティの値がになります。 |Azure Active Directory、Exchange、SharePoint|
 |CreationTime|ユーザーがアクティビティを実行した、世界協定時刻 (UTC) での日時。|すべて|
 |DestinationFileExtension|コピーまたは移動されたファイルのファイル拡張子。このプロパティは、FileCopied および FileMoved ユーザー アクティビティに対してのみ表示されます。|SharePoint|
 |DestinationFileName|コピーまたは移動されたファイルの名前。このプロパティは、FileCopied および FileMoved アクションに対してのみ表示されます。|SharePoint|
@@ -67,7 +66,7 @@ ms.locfileid: "37437797"
 |OrganizationID|Office 365 組織の GUID。|すべて|
 |Path|アクセスされたメッセージが置かれているメールボックス フォルダーの名前。このプロパティは、メッセージの作成先、コピー先、移動先のフォルダーも識別します。|Exchange (メールボックス アクティビティ)|
 |Parameters|Exchange 管理者のアクティビティの場合、Operation プロパティで識別されたコマンドレットで使用された、すべてのパラメーターの名前と値。|Exchange (管理者のアクティビティ)|
-|RecordType|レコードで示されている操作の種類。次の値によって、レコードの種類が示されます。<br/><br/> **1** - Exchange 管理者監査ログのレコードを意味します。 <br/>**2** - Exchange メールボックス監査ログの、単一のメールボックス アイテムに対して行われた操作に関するレコードを意味します。 <br/>**3** - この値も Exchange 管理者監査ログのレコードを意味します。ただし、このレコードの種類は、ソース メールボックス内の複数のアイテムに対して操作が行われたこと (複数のアイテムを削除済みアイテム フォルダーに移動する操作や、複数のアイテムを完全に削除する操作など) を意味します。<br/>**4** - SharePoint でのサイト管理者の操作 (管理者またはユーザーがサイトに対するアクセス許可を割り当てるなど) を意味します。 <br/>**6** - SharePoint でのファイルまたはフォルダーに関連する操作 (ユーザーの表示、ファイルの変更など) を意味します。 <br/>**8** - Azure Active Directory で行われた管理者の操作を意味します。 <br/>**9** - Azure Active Directory での OrgId ログオン イベントを意味します。このレコードの種類は非推奨となっています。<br/>**10** - データ センターで Microsoft 担当者が行ったセキュリティ コマンドレット イベントを意味します。 <br/>**11** - SharePoint でのデータ損失防止 (DLP) イベントを意味します。<br/> **12** - Sway のイベントを意味します。 <br/>**13** -統合された dlp ポリシーを使用して構成した場合、EXCHANGE の dlp イベントを示します。 Exchange メールフロールール (トランスポートルールとも呼ばれる) に基づく DLP イベントはサポートされていません。<br>**14** - SharePoint の共有イベントを意味します。<br/> **15** - Azure Active Directory の Secure Token Service (STS) ログオン イベントを意味します。 <br/>**18** -コンプライアンスセンターのイベント & セキュリティを示します。 <br/>**20** - Power BI のイベントを意味します。 <br/>**21**- Dynamics 365 のイベントを意味します。<br/>**22** - Yammer のイベントを意味します。 <br/>**23** - Skype for Business のイベントを意味します。 <br/>**24** -電子情報開示イベントを示します。 このレコードの種類は、セキュリティ/コンプライアンスセンターでコンテンツ検索を実行し、電子情報開示ケースを管理することによって実行されたアクティビティを示します。 詳細については、「 [Office 365 監査ログで電子情報開示アクティビティを検索](search-for-ediscovery-activities-in-the-audit-log.md)する」を参照してください。<br/>**25、26、27** - Microsoft Teams のイベントを意味します。 <br/>**28** - Exchange Online Protection イベントと Office 365 Advanced Threat Protection イベントからのフィッシングとマルウェアのイベントを意味します。<br/> **30** - Microsoft Flow のイベントを意味します。<br/> **31** -高度な電子情報開示イベントを示します。<br/> **32** -Microsoft Stream イベントを示します。<br/> **35** - Microsoft Project のイベントを意味します。 <br/> **36** - Sharepoint リストのイベントを意味します。<br/> **38** -セキュリティ/コンプライアンスセンターのアイテム保持ポリシーと保持ラベルに関連するイベントを示します。  <br/>**40** - セキュリティ/コンプライアンス アラートのシグナルに起因するイベントを意味します。<br/> **41** - Office 365 Advanced Threat Protection でのブロック時の安全なリンクと上書きのブロック イベントを意味します。<br/>**44** - Workplace Analytics のイベントを意味します。 <br/>**45** -PowerApps アプリイベントを示します。 <br/> **47** - SharePoint、OneDrive、Microsoft Teams 内のファイルに対する、Office 365 Advanced Threat Protection からのフィッシングとマルウェアのイベントを意味します。 <br/> **52** -データ INSIGHTS REST API に関連するイベントを示します。<br/>**54** -SharePoint リストアイテムのイベントを示します。<br/>**55** -SharePoint コンテンツタイプのイベントを示します。
+|RecordType|レコードで示されている操作の種類。次の値によって、レコードの種類が示されます。<br/><br/> **1** - Exchange 管理者監査ログのレコードを意味します。 <br/>**2** - Exchange メールボックス監査ログの、単一のメールボックス アイテムに対して行われた操作に関するレコードを意味します。 <br/>**3** -Exchange メールボックス監査ログからのレコードも示します。 このレコードの種類は、移動元のメールボックス内の複数のアイテムに対して操作が実行されたことを示します (複数のアイテムを削除済みアイテムフォルダーに移動したり、複数のアイテムを完全に削除したりするなど)。 <br/>**4** - SharePoint でのサイト管理者の操作 (管理者またはユーザーがサイトに対するアクセス許可を割り当てるなど) を意味します。 <br/>**6** - SharePoint でのファイルまたはフォルダーに関連する操作 (ユーザーの表示、ファイルの変更など) を意味します。 <br/>**8** - Azure Active Directory で行われた管理者の操作を意味します。 <br/>**9** - Azure Active Directory での OrgId ログオン イベントを意味します。このレコードの種類は非推奨となっています。<br/>**10** - データ センターで Microsoft 担当者が行ったセキュリティ コマンドレット イベントを意味します。 <br/>**11** - SharePoint でのデータ損失防止 (DLP) イベントを意味します。<br/> **12** - Sway のイベントを意味します。 <br/>**13** -統合された dlp ポリシーを使用して構成した場合、EXCHANGE の dlp イベントを示します。 Exchange メールフロールール (トランスポートルールとも呼ばれる) に基づく DLP イベントはサポートされていません。<br>**14** - SharePoint の共有イベントを意味します。<br/> **15** - Azure Active Directory の Secure Token Service (STS) ログオン イベントを意味します。 <br/>**18** -コンプライアンスセンターのイベント & セキュリティを示します。 <br/>**20** - Power BI のイベントを意味します。 <br/>**21**- Dynamics 365 のイベントを意味します。<br/>**22** - Yammer のイベントを意味します。 <br/>**23** - Skype for Business のイベントを意味します。 <br/>**24** -電子情報開示イベントを示します。 このレコードの種類は、セキュリティ/コンプライアンスセンターでコンテンツ検索を実行し、電子情報開示ケースを管理することによって実行されたアクティビティを示します。 詳細については、「 [Office 365 監査ログで電子情報開示アクティビティを検索](search-for-ediscovery-activities-in-the-audit-log.md)する」を参照してください。<br/>**25、26、27** - Microsoft Teams のイベントを意味します。 <br/>**28** - Exchange Online Protection イベントと Office 365 Advanced Threat Protection イベントからのフィッシングとマルウェアのイベントを意味します。<br/> **30** - Microsoft Flow のイベントを意味します。<br/> **31** -高度な電子情報開示イベントを示します。<br/> **32** -Microsoft Stream イベントを示します。<br/> **35** - Microsoft Project のイベントを意味します。 <br/> **36** - Sharepoint リストのイベントを意味します。<br/> **38** -セキュリティ/コンプライアンスセンターのアイテム保持ポリシーと保持ラベルに関連するイベントを示します。  <br/>**40** - セキュリティ/コンプライアンス アラートのシグナルに起因するイベントを意味します。<br/> **41** - Office 365 Advanced Threat Protection でのブロック時の安全なリンクと上書きのブロック イベントを意味します。<br/>**44** - Workplace Analytics のイベントを意味します。 <br/>**45** -PowerApps アプリイベントを示します。 <br/> **47** - SharePoint、OneDrive、Microsoft Teams 内のファイルに対する、Office 365 Advanced Threat Protection からのフィッシングとマルウェアのイベントを意味します。 <br/> **52** -データ INSIGHTS REST API に関連するイベントを示します。<br/>**54** -SharePoint リストアイテムのイベントを示します。<br/>**55** -SharePoint コンテンツタイプのイベントを示します。
 |ResultStatus|(**Operation** プロパティで指定された) アクションが正常に終了したかどうかを示します。  <br/> Exchange 管理者アクティビティでは、値は **True** (成功) または **False** (失敗) のいずれかになります。|すべて  <br/>|
 |SecurityComplianceCenterEventType|アクティビティがセキュリティ & コンプライアンスセンターイベントであったことを示します。 このプロパティでは、すべてのセキュリティ & コンプライアンスセンターのアクティビティの値は**0**になります。|セキュリティ/コンプライアンス センター|
 |SharingType|リソースが共有されたユーザーに割り当てられているアクセス許可の種類。このユーザーは、**UserSharedWith** プロパティによって識別されます。|SharePoint|
@@ -83,7 +82,7 @@ ms.locfileid: "37437797"
 |TeamName|Microsoft Teams のチームの名前。|Microsoft Teams|
 |UserAgent|ユーザーのブラウザーに関する情報。この情報は、ブラウザーによって提供されます。|SharePoint|
 |UserDomain|アクションを実行したユーザー (アクター) のテナント組織に関する情報を示します。|Azure Active Directory|
-|UserID|レコードがログに記録される原因となった、(**Operation** プロパティで指定された) アクションを実行したユーザー。監査ログには、システム アカウント (SHAREPOINT\system または NT AUTHORITY\SYSTEM など) で実行されたアクティビティのレコードも含まれることに注意してください。|すべて|
+|UserID|レコードが記録されるようになった ( **Operation**プロパティで指定された) 操作を実行したユーザー。 システムアカウントによって実行されたアクティビティのレコード (SHAREPOINT\system、NT AUTHORITY\SYSTEM など) も、監査ログに含まれています。|すべて|
 |UserKey|**UserID** プロパティで識別されたユーザーの別の ID。このプロパティには、たとえば SharePoint でユーザーによって発生したイベントの Passport 固有 ID (PUID) が格納されます。このプロパティは、他のサービスで発生したイベントや、システム アカウントによって発生したイベントの **UserID** プロパティと同じ値を示す場合もあります。|すべて|
 |UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
 |UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** -Office 365 組織の管理者。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|

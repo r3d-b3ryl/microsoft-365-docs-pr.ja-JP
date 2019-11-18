@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、標準コネクタをセットアップして、LinkedIn Company ページから Office 365 にデータをインポートすることができます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのコンプライアンスを管理することができます。
-ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085509"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686855"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Office 365 で LinkedIn データをアーカイブするためのコネクタの設定 (プレビュー)
 
@@ -71,14 +71,10 @@ LinkedIn 会社のページデータがメールボックスに保存された�
 
 - 以前の動作により、Microsoft eDiscovery ツールを`from`使用`subject`して Office 365 にアーカイブされている LinkedIn アイテムを検索するときに、またはメールのプロパティを検索できます。 たとえば、会社のページの名前が "Contoso Company Page" の場合は、次のいずれかのプロパティを使用でき*ます。値*のペアは、キーワード検索クエリで使用できます。
    
-   ```
-   from:"Contoso Company Page"
-   ```
+   > from: "Contoso Company Page"
 
     または
 
-   ```
-   subject:"Contoso Company Page"
-   ```
+   > 件名: "Contoso Company Page"
 
 - Office 365 にインポートされた LinkedIn アイテムを簡単に検索または管理できるようにするために、ストレージメールボックスの所有者 (または FullAccess アクセス許可を割り当てられているユーザー) は、LinkedIn Company ページから特定のフォルダーにアイテムを移動する受信トレイルールを設定することができます。 これは、ストレージメールボックスを使用して、さまざまなサードパーティのデータソースからインポートされたアイテムをアーカイブする場合に役立ちます。 たとえば、[件名] フィールドに特定の LinkedIn Company ページの名前を含むすべてのアイテムを特定のフォルダーに移動する受信トレイルールを作成できます。

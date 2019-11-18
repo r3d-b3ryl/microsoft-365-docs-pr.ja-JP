@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバルアドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 272223d9ab61b2c5ae17043cf4523d49da306de9
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085453"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686854"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を Exchange Online に一括インポートする
 
@@ -47,10 +47,10 @@ ms.locfileid: "37085453"
     > [!TIP]
     > 言語に特殊文字 ( **å**、 **ä**、 **ö**など) が含まれている場合は、メモ帳でファイルを保存するときに、CSV ファイルを Utf-8 またはその他の Unicode エンコードで保存します。 
   
-    ```
+    ```text
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
     danp@fabrikam.com,Dan Park,Dan,Park,1234 23rd Ave,Golden,CO,80215,206-111-1234,303-900-1234,555-1212,123-456-7890,Fabrikam,Shipping clerk,555-5555,Shipping,US,123-4567,R.,Good worker,31/1663,Dan Park
-    pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park 
+    pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park
     ```
 
     CSV ファイルの最初の行、つまりヘッダー行には、Exchange Online にインポートするときに使用できる連絡先のプロパティが一覧表示されます。 各プロパティ名はコンマで区切ります。 ヘッダー行の下の各行は、1つの外部連絡先をインポートするためのプロパティ値を表します。 
@@ -75,7 +75,7 @@ ms.locfileid: "37085453"
     
 3. 外部連絡先を作成するには、次のコマンドを実行します。
 
-    ```
+    ```powershell
     Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
     ```
 
@@ -86,7 +86,7 @@ ms.locfileid: "37085453"
     > [!TIP]
     > EAC への接続手順については、「exchange [Online の exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=328197)」を参照してください。 
   
-5. 必要に応じて **、[最新** ![の情報に更新] アイコン](media/O365-MDM-Policy-RefreshIcon.gif)をクリックしてリストを更新し、インポートされた外部連絡先を表示します。 
+5. 必要に応じて、[**更新**] をクリックしてリストを更新し、インポートされた外部連絡先を表示します。 
     
     インポートされた連絡先は、Outlook および web 上の Outlook の共有アドレス帳に表示されます。
     
@@ -103,12 +103,12 @@ ms.locfileid: "37085453"
     
 3. 次の2つのコマンドを実行して、CSV ファイルの他のプロパティを手順2で作成した外部連絡先に追加します。
     
-    ```
+    ```powershell
     $Contacts = Import-CSV .\ExternalContacts.csv
   
     ```
 
-    ```
+    ```powershell
     $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
@@ -140,19 +140,19 @@ ms.locfileid: "37085453"
     
 2. 単一の外部連絡先を非表示にするには、次のコマンドを実行します。
     
-    ```
+    ```powershell
     Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true 
     ```
- 
+
     たとえば、共有アドレス帳から Pilar Pinilla を非表示にするには、次のコマンドを実行します。
 
-    ```
+    ```powershell
     Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
     ```
-   
+
 3. 共有アドレス帳からすべての外部連絡先を非表示にするには、次のコマンドを実行します。
 
-    ```
+    ```powershell
     Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true  
     ```
 

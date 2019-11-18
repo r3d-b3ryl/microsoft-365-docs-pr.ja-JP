@@ -13,15 +13,17 @@ search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、Office 365 監査ログで共有監査を使用して、組織外のユーザーと共有しているリソースを識別できるようになりました。 '
-ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8d473a3e3fb1c8e5e8753265c3982b27271ed39c
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087068"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686832"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>共有を監査して外部ユーザーと共有されているリソースを見つける
 
@@ -77,7 +79,7 @@ ms.locfileid: "37087068"
    
       - **AddedToSecureLink** 
 
-      - **SharingInvitationCreated**(このイベントは、共有リソースがサイトである場合にのみ記録されます)
+      - **SharingInvitationCreated** (このイベントは、共有リソースがサイトである場合にのみ記録されます)
     
    - ターゲットユーザーが (招待のリンクをクリックすることによって) 送信された共有の招待を承諾すると、SharePoint は**SharingInvitationAccepted**イベントをログに記録し、リソースにアクセスするためのアクセス許可をターゲットユーザーに割り当てます。 ターゲットユーザーが匿名リンクを送信している場合、ターゲットユーザーがリンクを使用してリソースにアクセスした後、 **AnonymousLinkUsed**イベントがログに記録されます。 セキュリティで保護されたリンクの場合、外部ユーザーがリンクを使用してリソースにアクセスするときに、 **fileaccessed**イベントが記録されます。
 

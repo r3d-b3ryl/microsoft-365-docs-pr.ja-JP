@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'セキュリティ & コンプライアンスセンターで作成された検索に基づいて、Exchange Online でインプレース電子情報開示検索を作成するには、PowerShell スクリプトを使用します。 '
-ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a16bf747da2d2eb8219ac4c13f4ff8c34d37b2c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086262"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686923"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>電子情報開示ワークフローでコンテンツ検索を使用する
 
@@ -48,7 +48,7 @@ ms.locfileid: "37086262"
     
 4. [**どこを調べますか?**] で、[**すべてのメールボックスを検索**する] をクリックし、[**次へ**] をクリックします。
     
-5. **[何をお探しですか?]** の下にあるボックスに、検索クエリを入力します。 キーワード、メッセージ プロパティ (送信日付や受信日付など)、ドキュメント プロパティ (ファイル名や、ドキュメントの最終変更日など) を指定できます。 AND、OR、NOT、NEAR などのブール演算子を使用するより複雑なクエリを使用することも、メッセージで機密情報 (社会保障番号など) を検索することもできます。 検索クエリの作成方法の詳細については、「[コンテンツ検索のキーワードクエリ](keyword-queries-and-search-conditions.md)」を参照してください。
+5. **[何をお探しですか?]** の下にあるボックスに、検索クエリを入力します。 キーワード、送信日や受信日などのメッセージ プロパティ、またはファイル名や文書の最終更新日などのドキュメント プロパティを指定できます。 AND、OR、NOT、NEAR などのブール演算子を使用するより複雑なクエリを使用することも、メッセージで機密情報 (社会保障番号など) を検索することもできます。 検索クエリの作成方法の詳細については、「[コンテンツ検索のキーワードクエリ](keyword-queries-and-search-conditions.md)」を参照してください。
     
 6. **[検索]** をクリックして、検索設定を保存して検索を開始します。 
     
@@ -62,11 +62,11 @@ ms.locfileid: "37086262"
   
 ここでは、PowerShell を使用して組織内のすべてのメールボックスを検索する例を示します。 検索クエリは、2015年1月1日から2015年6月30日までの間に送信されたすべてのメッセージを返します。これには件名行に「財務報告」という語句が含まれています。 1 番目のコマンドは検索を作成し、2 番目のコマンドは検索を実行します。 
   
-```
+```powershell
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
 ```
 
-```
+```powershell
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
@@ -80,7 +80,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   
 1. 次のテキストを、ファイル名サフィックス. ps1 を使用して PowerShell スクリプトファイルに保存します。 たとえば、という名前`SourceMailboxes.ps1`のファイルに保存することができます。
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -112,7 +112,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
 
 2. [セキュリティ & コンプライアンスセンター] PowerShell で、前の手順で作成したスクリプトが置かれているフォルダーに移動し、スクリプトを実行します。例えば：
     
-    ```
+    ```powershell
     .\SourceMailboxes.ps1
     ```
 
@@ -128,7 +128,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   
 1. ファイル名のサフィックスに .ps1 を使って、次のテキストを Windows PowerShell スクリプト ファイルに保存します。 たとえば、という名前`ConnectEXO-CC.ps1`のファイルに保存することができます。
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -139,7 +139,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
 
 2. ローカル コンピューター上で、Windows PowerShell を開き、前の手順で作成したスクリプトが配置されているフォルダーに移動し、スクリプトを実行します。例:
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
 
@@ -157,7 +157,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
     
 - 以下のプロパティが設定されたインプレースの電子情報開示検索を新たに作成します。 新しい検索が開始されていないことに注目してください。 手順 4 で開始します。
     
-  - **Name** -新しい検索の名前は、次\<の形式を使用します。\>コンテンツ検索 _MBSearch1 の名前です。 スクリプトをもう一度実行して同じソースコンテンツ検索を使用した場合、検索に\<は「Content search\>_MBSearch2」という名前が付けられます。
+  - **Name** -新しい検索の名前は、次\<の形式を使用します。\>コンテンツ検索 _MBSearch1 の名前です。 スクリプトをもう一度実行して同じソースコンテンツ検索を使用した場合は、[ \<コンテンツ検索\>_MBSearch2] という名前の検索が行われます。
     
   - **ソースメールボックス**-検索結果が含まれるコンテンツ検索からのすべてのメールボックス。 
     
@@ -167,7 +167,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
     
 1. ファイル拡張子 ps1 の Windows PowerShell スクリプト ファイルに以下のテキストを保存します。 たとえば、という名前`CreateMBSearchFromComplianceSearch.ps1`のファイルに保存することができます。
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -231,12 +231,11 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   {
     New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
   }
-  
   ```
 
 2. 手順2で作成した Windows PowerShell セッションで、前の手順で作成したスクリプトが置かれているフォルダーに移動して、スクリプトを実行します。例えば：
     
-    ```
+    ```powershell
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 

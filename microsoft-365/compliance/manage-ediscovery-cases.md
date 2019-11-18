@@ -7,15 +7,17 @@ ms.date: 10/12/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: セキュリティ & コンプライアンスセンターを使用して、電子情報開示の保持を作成し、組織内の電子情報開示ケースにアクセスして管理します。
-ms.openlocfilehash: 026bd31145dc73261012a9cde1b6befd19ddba4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a2c276b80f5f713ad8c044aa8f1339413bb3f0bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086021"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686876"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターの電子情報開示のケースを管理する
 
@@ -258,7 +260,7 @@ ms.locfileid: "37086021"
     
 8. [**新しい検索**] ページで、キーワードと条件を追加して検索クエリを作成できます。 <br/>![検索条件と条件](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-9. **[何をお探しですか?]** の下にあるボックスに、検索クエリを入力します。 キーワード、メッセージ プロパティ (送信日付や受信日付など)、ドキュメント プロパティ (ファイル名や、ドキュメントの最終変更日など) を指定できます。 **AND**、 **or**、 **NOT**、 **NEAR**、 **onear**などのブール演算子を使用するより複雑なクエリを使用できます。 また、ドキュメント内の機密情報 (社会保障番号など) を検索したり、外部で共有されているドキュメントを検索したりすることもできます。 [キーワード] ボックスを空のままにすると、指定したコンテンツの場所にあるすべてのコンテンツが検索結果に含まれます。 
+9. **[何をお探しですか?]** の下にあるボックスに、検索クエリを入力します。 キーワード、送信日や受信日などのメッセージ プロパティ、またはファイル名や文書の最終更新日などのドキュメント プロパティを指定できます。 **AND**、 **or**、 **NOT**、 **NEAR**、 **onear**などのブール演算子を使用するより複雑なクエリを使用できます。 また、ドキュメント内の機密情報 (社会保障番号など) を検索したり、外部共有されているドキュメントを検索したりできます。 [キーワード] ボックスを空のままにすると、指定したコンテンツの場所にあるすべてのコンテンツが検索結果に含まれます。 
     
 10. [**キーワードリストを表示**する] チェックボックスをオンにして、各行にキーワードを入力できます。 このようにすると、各行のキーワードは、作成された検索クエリの**or**演算子によって接続されます。 
     
@@ -268,7 +270,7 @@ ms.locfileid: "37086021"
     
     キーワードリストの使用の詳細については、「[詳細情報](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)」を参照してください。
     
-11. [**クエリのスペルチェック**] をクリックして、サポートされていない文字や、大文字にならないブール演算子についてクエリを確認します。 サポートされていない文字は通常は非表示になり、通常は検索エラーが発生するか、予期しない結果が返されます。 チェックされているサポートされていない文字の詳細については、「[コンテンツ検索クエリでエラーをチェック](check-your-content-search-query-for-errors.md)する」を参照してください。
+11. [**クエリのスペルチェック**] をクリックして、サポートされていない文字や、大文字にならないブール演算子についてクエリを確認します。 サポートされていない文字は非表示になっていることがよくあり、通常、検索エラーを発生させたり、意図しない結果を返したりする原因になります。 確認されているサポートされていない文字の詳細については、「[[コンテンツ検索] クエリでエラーを確認する](check-your-content-search-query-for-errors.md)」を参照してください。
     
 12. [**条件**] で、検索クエリに条件を追加し、検索を絞り込み、より絞り込まれた結果セットが返されるようにします。各条件によって、句が KQL 検索クエリに追加されます。KQL 検索クエリは、検索の開始時に作成され、実行されます。条件は **AND** 演算子によってキーワード クエリ (キーワード ボックスで指定) に論理的に接続されます。つまり、アイテムは、キーワード クエリと、結果に含める条件の両方を満たす必要があります。このように、条件は結果を絞り込むのに役立ちます。 
     
@@ -307,7 +309,7 @@ ms.locfileid: "37086021"
     
     ![エクスポートジョブの一覧を表示するには、[エクスポート] をクリックします。](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
   
-    作成したエクスポートジョブを表示する](media/O365-MDM-Policy-RefreshIcon.gif)ようにエクスポートジョブの一覧を更新するには **、[更新**![] アイコンをクリックする必要がある場合があります。 エクスポートジョブには、検索名の末尾に**export**が追加された対応するコンテンツ検索と同じ名前が付いていることに注意してください。 
+    作成したエクスポートジョブを表示する](media/O365-MDM-Policy-RefreshIcon.gif)ようにエクスポートジョブの一覧を更新するには **、[更新**![] アイコンをクリックする必要がある場合があります。 エクスポートジョブには、検索名の末尾に **_Export**が追加された対応するコンテンツ検索と同じ名前が付いていることに注意してください。 
     
 6. 先ほど作成したエクスポート ジョブをクリックすると、詳細ウィンドウに状態の情報が表示されます。この情報には、Microsoft クラウド内の Azure ストレージ領域に転送されたアイテムの割合が含まれます。
     
@@ -535,7 +537,7 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
     
   - Exchange Online で **Get-UnifiedGroup** コマンドレットを実行し、Office 365 グループまたは Microsoft チームのプロパティを表示します。これは、Office 365 グループまたは Microsoft チームに関連付けられているサイトの URL を取得するのに適した方法です。たとえば、次のコマンドを実行すると、Senior Leadership Team という Office 365 グループの選択したプロパティが表示されます。 
     
-  ```
+  ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
@@ -549,11 +551,11 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
   
   - ユーザーのメールボックスを検索すると、ユーザーが属している Office 365 グループまたは Microsoft チームは検索されません。同様に、Office 365 グループまたは Microsoft チームを保留にすると、そのグループ メールボックスとグループ サイトのみが保留にされます。保留リストに明示的に追加しない限り、グループ メンバーのメールボックスと OneDrive for Business サイトは保留にされません。そのため、法的な理由から Office 365 グループまたは Microsoft チームを保留にする必要がある場合は、同じ保留リストにグループとチーム メンバーのメールボックスと OneDrive for Business サイトを追加することを検討してください。
     
-  - Office 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、Microsoft 365 管理センターの [**ホーム\>グループ**] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。 
+  - Office 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、Microsoft 365 管理センターの [**ホーム\>グループ**] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行できます。 
     
-  ```
-  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
-  ```
+    ```powershell
+    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
+    ```
 
     > [!NOTE]
     > **Get-UnifiedGroupLinks** コマンドレットを実行するには、Exchange Online で View-Only Recipients という役割が割り当てられているか、View-Only Recipients という役割が割り当てられている役割グループに属している必要があります。 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: 7b793d3244343111f1894ff8aae77c2d6ea8f4f3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d435df901bf460c58a5b49e82458be1d6cf39eaf
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034288"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640806"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -59,7 +59,7 @@ Microsoft のスプーフィング対策テクノロジは、最初に Office 36
   
 上記のメッセージは Microsoft から発信されたものですが、その一方で、ユーザーは今までにフィッシング メッセージを何度も受け取っています。そのメッセージは、リンクをクリックするように誘導して、認証情報を提出させたり、マルウェアをダウンロードさせたり、機密コンテンツを含めてメッセージに返信させたりしようとします。 本物と偽物のパスワード リセットを見分けることが難しいため、多くのユーザーは、こうしたメッセージを無視したり、スパムとして報告したり、間違ったフィッシング詐欺として Microsoft に不要な報告を返したりします。
 
-スプーフィングを阻止するために、電子メールのフィルター処理分野の業界は、電子メール認証のプロトコル ([SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、[DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、[DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) など) を開発しました。 DMARC は、ユーザーのメール クライアントに表示されるメッセージの送信者 (前述の例では、service.outlook.com、outlook.com、および accountprotection.microsoft.com) を SPF または DKIM をパスしたドメインで検査することでスプーフィングを防止します。 つまり、ユーザーに表示されるドメインは認証されているため、スプーフィングされていないことになります。 詳細な説明については、この記事で後述するセクション「*電子メール認証がスプーフィングの阻止には不十分なことがある理由*」を参照してください。
+スプーフィングを阻止するために、電子メールのフィルター処理分野の業界は、電子メール認証のプロトコル ([SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、[DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、[DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) など) を開発しました。 DMARC は、スプーフィングがメッセージの送信者を調べることを防ぎます。 つまり、ユーザーがメール クライアントで見る送信者です (上記の例ではservice.outlook.com、outlook.com、および accountprotection.microsoft.com です)。 さらに、ユーザーは、ドメインが SPF または DKIM を通過したことも確認できます。これは、ドメインが認証されたため、スプーフィングされていないことを意味します。 詳細な説明については、この記事で後述するセクション「*電子メール認証がスプーフィングの阻止には不十分なことがある理由*」を参照してください。
   
 ただし、電子メール認証レコードはオプションであり、必須ではないという問題があります。 そのため、microsoft.com や skype.com などの強力な認証ポリシーを公開しているドメインはスプーフィングから保護されますが、公開している認証ポリシーが弱いドメインや認証ポリシーがまったく存在しないドメインはスプーフィングの対象になります。2018 年 3 月の時点で、Fortune 500 の企業のうち強力な電子メール認証ポリシーを公開しているドメインは 9% のみです。 残りの 91% はフィッシャーによってスプーフィングされる可能性があり、その他のポリシーを使用する電子メール フィルターで検出されないと、エンド ユーザーとデバイスに配信されてしまいます。
   

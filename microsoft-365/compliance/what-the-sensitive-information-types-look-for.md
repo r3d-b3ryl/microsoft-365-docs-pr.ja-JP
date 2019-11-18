@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 820bab0a128f952cf5d96208f5d561f4994bd859
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086442"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686958"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
@@ -42,9 +42,9 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのデー�
 
 書式なし: 0、1、2、3、6、7、または8で始まる9桁の連続した数字 
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -100,14 +100,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ピリオド 1 つ 
 - 3 桁の数字 
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_argentina_national_id は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_argentina_national_id は、このパターンに一致するコンテンツを検索します。
 - Keyword_argentina_national_id からのキーワードが見つかりました。
 
 ```xml
@@ -148,9 +148,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 
 - 3 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -211,18 +211,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 桁の数字 
 - 5 つの数字または文字 (大文字小文字を区別しない)
 
-OR
+または
 
 - 1 ～ 2 桁の省略可能な文字 (大文字小文字の区別なし)  
 - 4 ～ 9 桁の数字
 
-OR
+または
 
 - 9 桁の数字または文字 (大文字小文字の区別なし)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -362,9 +362,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 10 桁目は発行桁
 - 11 桁目 (省略可能) は個人番号
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -420,9 +420,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1 桁の文字 (大文字小文字の区別なし) の後に 7 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -496,9 +496,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 省略可能なスペース 
 - 2 ～ 3 桁の数字。最後の桁はチェック ディジット用です
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -580,14 +580,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 86の小文字または小文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
 - 2つの等号 (=)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_AzureDocumentDBAuthKey は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_AzureDocumentDBAuthKey は、このパターンに一致するコンテンツを検索します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
 ```xml
@@ -640,14 +640,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - セミコロンではない1つ以上の文字 (;)、引用符 (")、またはアポストロフィ (')
 - セミコロン (;)、引用符 (")、またはアポストロフィ (')
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_AzureConnectionString は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_AzureConnectionString は、このパターンに一致するコンテンツを検索します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
 ```xml
@@ -700,14 +700,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 43の小文字または小文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
 - 等号 (=)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_AzureIoTConnectionString は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_AzureIoTConnectionString は、このパターンに一致するコンテンツを検索します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
 ```xml
@@ -750,14 +750,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 60小文字または数字の任意の組み合わせ
 - 二重引用符 (")
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_AzurePublishSettingPasswords は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_AzurePublishSettingPasswords は、このパターンに一致するコンテンツを検索します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
 
@@ -806,9 +806,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 43文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
 - 等号 (=)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -860,14 +860,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 文字列 "% 3d"
 - 小文字または大文字、数字、パーセント記号 (%) 以外の文字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_AzureSAS は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_AzureSAS は、このパターンに一致するコンテンツを検索します。
 
 ```xml
 <!--Azure SAS-->
@@ -900,9 +900,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 43文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
 - 等号 (=)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -958,14 +958,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 86文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
 - 2つの等号 (=)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_AzureStorageAccountKey は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_AzureStorageAccountKey は、このパターンに一致するコンテンツを検索します。
 - 正規表現 CEP_AzureEmulatorStorageAccountFilter は、このパターンに一致するコンテンツを検出し**ません**。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
@@ -1017,14 +1017,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2つの等号 (=)
 
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_AzureStorageAccountKeyGeneric は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_AzureStorageAccountKeyGeneric は、このパターンに一致するコンテンツを検索します。
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1050,9 +1050,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ピリオド 1 つ 
 - チェック ディジットとして機能する 2 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -1118,9 +1118,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 なし
 - 11 桁の数字 (最後の 2 桁はチェック ディジット)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -1178,9 +1178,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 2 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -1254,9 +1254,9 @@ Registro de 識別子 Dade (RIC) (新しい形式):
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 1 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -1305,9 +1305,9 @@ Cédula de 識別子 dade id カード national id número de rregistro registro
 - 1 桁のゼロ (0)  
 - 8 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -1371,9 +1371,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 アルバータ州、ブリティッシュ コロンビア州、マニトバ州、ニュー ブランズウィック州、ニューファンドランド・ラブラドール州、ノバスコシア州、オンタリオ州、プリンス エドワード アイランド州、ケベック州、およびサスカチュワン州の各種パターン
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -1440,7 +1440,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
 
 - 州の略号、AB など
 - 州名 (Alberta など)
@@ -1588,9 +1588,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 10 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -1634,9 +1634,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の大文字の後に 6 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -1701,14 +1701,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_canada_phin は、このパターンに一致するコンテンツを検出します。
-Keyword_canada_phin または Keyword_canada_provinces から、少なくとも2つのキーワードが見つかります。
+DLP ポリシーは75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_canada_phin は、このパターンに一致するコンテンツを検出します。
+Keyword_canada_phin または Keyword_canada_provinces から少なくとも2つのキーワードが見つかります。
 
 ```xml
 <!-- Canada PHIN -->
@@ -1777,9 +1777,9 @@ Keyword_canada_phin または Keyword_canada_provinces から、少なくとも2
 
 書式なし: 9 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -1860,9 +1860,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 1 桁の数字または文字 (大文字小文字の区別なし)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -1919,9 +1919,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 順序コードを表す 3 桁の数字  
 - チェック ディジットとして機能する 1 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -1972,7 +1972,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 世界規模の主要ブランドのカード (Visa、MasterCard、Discover Card、JCB、American Express、ギフト カード、Dinars Club Card など) を検出する非常に複雑で信頼性の高いパターンです。
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 あり (Luhn のチェックサム)
 
@@ -2216,9 +2216,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -2256,9 +2256,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 10 桁の数字 
 - 最終桁は、国際的なデータ交換のためのチェックディジットです。 HR は11桁の数字の前に追加されます。
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -2304,7 +2304,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 9桁の数字 (古い形式):
 - 9 桁の数字
 
-OR
+または
 
 - 生年月日を表す6桁の数字
 - スラッシュ 1 つ 
@@ -2313,19 +2313,19 @@ OR
 10桁の数字 (新しい形式):
 - 10 桁の数字
 
-OR
+または
 
 - 生年月日を表す6桁の数字
 - スラッシュ 1 つ  
 - 4桁の数字 (最後の桁はチェックディジット)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_czech_id_card は、このパターンに一致するコンテンツを検出します。
+DLP ポリシーは85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_czech_id_card は、このパターンに一致するコンテンツを検出します。
 Keyword_czech_id_card からのキーワードが見つかりました。
 チェックサムが渡される。
 
@@ -2356,13 +2356,13 @@ Keyword_czech_id_card からのキーワードが見つかりました。
 - ハイフン 1 つ  
 - 4 桁の数字 (最後の桁はチェック ディジット)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_denmark_id は、このパターンに一致するコンテンツを検出します。
+DLP ポリシーは75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_denmark_id は、このパターンに一致するコンテンツを検出します。
 Keyword_denmark_id からのキーワードが見つかりました。
 チェックサムが渡される。
 
@@ -2398,9 +2398,9 @@ Keyword_denmark_id からのキーワードが見つかりました。
 - 1 文字 (大文字小文字を区別しない)。登録者の姓の最初の文字 
 - 7 桁の数字。最後の桁はチェック ディジット用です
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -2432,9 +2432,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 非常に複雑で信頼性の高いパターン
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -2805,9 +2805,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 3 桁の個人識別番号 
 - チェック ディジットとして機能する 1 桁の数字または文字 (大文字小文字の区別あり)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -2836,7 +2836,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="finland-passport-number"></a>フィンランドのパスポート番号
 
-次の9つの文字と数字のパターンの組み合わせを書式設定します。9桁の文字 (大文字小文字を区別しない)、7桁のチェックサムを定義しません。 DLP ポリシーは 75% で、この種類の機密情報がある場合に、300文字の近接性: 正規表現 Regex_finland_passport_number は、このパターンに一致するコンテンツを検出します。
+次の9つの文字と数字のパターンの組み合わせを書式設定します。9桁の文字 (大文字小文字を区別しない)、7桁のチェックサムを定義しません。 DLP ポリシーは75% で、この種類の機密情報がある場合に、300文字の近接: 正規表現 Regex_finland_passport_number は、このパターンに一致するコンテンツを検出します。
 Keyword_finland_passport_number からのキーワードが見つかりました。
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
@@ -2853,9 +2853,9 @@ Keyword_finland_passport_number からのキーワードが見つかりました
 
 フランスの電話番号などの同様のパターンと区別するための検証付きの 12 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -2902,9 +2902,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 12 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -2937,9 +2937,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 つの文字 (大文字小文字を区別しない) 
 - 5 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -2994,9 +2994,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 または
 - 15 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -3071,9 +3071,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1 桁の数字 
 - 1 つの数字または文字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -3212,9 +3212,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 数字またはこの文字セット (C、H、J から N、P、R、T、V から Z) から 5 個 
 - 1 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -3299,14 +3299,14 @@ bnationalit
 1987年4月1日から2010年10月31日まで。
 - 10 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_germany_id_card は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_germany_id_card は、このパターンに一致するコンテンツを検索します。
 - Keyword_germany_id_card からのキーワードが見つかりました。
 
 ```xml
@@ -3349,14 +3349,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - 6 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_greece_id_card は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_greece_id_card は、このパターンに一致するコンテンツを検索します。
 - Keyword_greece_id_card からのキーワードが見つかりました。
 
 ```xml
@@ -3391,9 +3391,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6 桁の数字 
 - チェック ディジットとして機能する最後の文字 (任意の数字か文字 A) はかっこで囲むことも可能。
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -3473,14 +3473,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 4 桁の数字 
 - チェック ディジットとして機能する 1 桁のアルファベット文字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_india_permanent_account_number は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_india_permanent_account_number は、このパターンに一致するコンテンツを検索します。
 - Keyword_india_permanent_account_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
@@ -3516,16 +3516,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペースまたはハイフン 1 つ (省略可能)  
 - 最後の数字はチェック ディジット
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。
+DLP ポリシーは85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。
 Keyword_india_aadhar からのキーワードが見つかりました。
 チェックサムが渡される。
-DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。
+DLP ポリシーは75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。
 チェックサムが渡される。
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
@@ -3565,18 +3565,18 @@ DLP ポリシーは 75% です。この種類の機密情報は、近接する30
 - ピリオド 1 つ (省略可能)  
 - 4 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検索します。
 - Keyword_indonesia_id_card からのキーワードが見つかりました。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検索します。
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -3618,9 +3618,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、hu、gl、gr、hr、、ie、il、、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -3653,9 +3653,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -3715,9 +3715,9 @@ Dictionary
 
 キーワード
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -3726,7 +3726,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Dictionary_icd_10_codes からのキーワードが見つかりました。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- Dictionary_icd_10_ からのキーワードが見つかりました。
+- Dictionary_icd_10_ 更新されたキーワードが見つかりました。
 
 ```xml
       <!-- ICD-10 CM -->
@@ -3743,9 +3743,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 キーワード
 
-Dictionary_icd_10_updated キーワードディクショナリの用語。 [Diseases、10リビジョン、臨床修正 (icd-10-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852604)に基づいています。 この型は、保険コードではなく、用語に対してのみ表示されます。
+Dictionary_icd_10_updated キーワードディクショナリからの任意の用語。 [Diseases、10リビジョン、臨床修正 (icd-10-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852604)に基づいています。 この型は、保険コードではなく、用語に対してのみ表示されます。
 
-Dictionary_icd_10_codes キーワードディクショナリの用語。 [Diseases、10リビジョン、臨床修正 (icd-10-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852604)に基づいています。 この型は、説明ではなく、保険コードに対してのみ表示されます。
+Dictionary_icd_10_codes キーワードディクショナリからの任意の用語。 [Diseases、10リビジョン、臨床修正 (icd-10-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852604)に基づいています。 この型は、説明ではなく、保険コードに対してのみ表示されます。
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Diseases の国際分類 (ICD-9-CM)
 
@@ -3757,9 +3757,9 @@ Dictionary
 
 キーワード
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -3784,9 +3784,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-Dictionary_icd_9_updated キーワードディクショナリの用語。 [Diseases、9リビジョン、臨床修正 (icd-9-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852605)に基づいています。 この型は、保険コードではなく、用語に対してのみ表示されます。
+Dictionary_icd_9_updated キーワードディクショナリの任意の用語。 [Diseases、9リビジョン、臨床修正 (icd-9-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852605)に基づいています。 この型は、保険コードではなく、用語に対してのみ表示されます。
 
-Dictionary_icd_9_codes キーワードディクショナリの用語。 [Diseases、9リビジョン、臨床修正 (icd-9-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852605)に基づいています。 この型は、説明ではなく、保険コードに対してのみ表示されます。
+Dictionary_icd_9_codes キーワードディクショナリの任意の用語。 [Diseases、9リビジョン、臨床修正 (icd-9-CM) の国際分類](https://go.microsoft.com/fwlink/?linkid=852605)に基づいています。 この型は、説明ではなく、保険コードに対してのみ表示されます。
 
 ## <a name="ireland-personal-public-service-pps-number"></a>アイルランドの個人公共サービス (PPS) 番号
 
@@ -3809,9 +3809,9 @@ Dictionary_icd_9_codes キーワードディクショナリの用語。 [Disease
 - チェック ディジットとして機能する 1 桁のアルファベット文字 (大文字小文字の区別なし)  
 - 文字「A」または「H」 (大文字小文字の区別なし)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -3876,9 +3876,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 なし
 - 	13 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -3917,9 +3917,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -3961,9 +3961,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7 つの文字 (大文字小文字を区別しない)、数字、またはアンダースコア文字 
 - 1 文字 (大文字小文字を区別しない)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -4005,9 +4005,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペースまたはダッシュ (省略可能) 
 - 3 桁の数字
 
-チェックサム
+Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -4115,9 +4115,9 @@ Otemachi
 
 12 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -4175,9 +4175,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字 (大文字小文字の区別なし) の後に 7 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -4214,9 +4214,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -4265,9 +4265,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6桁の数字または
 - 7 ～ 12 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -4316,14 +4316,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 8 桁の数字 
 - 2 桁の文字 (大文字小文字の区別なし) 
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_jp_residence_card_number は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_jp_residence_card_number は、このパターンに一致するコンテンツを検索します。
 - Keyword_jp_residence_card_number からのキーワードが見つかりました。
 
 ```xml
@@ -4361,14 +4361,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 3 桁のランダムな数字  
 - 1 桁の性別コード
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_malaysia_id_card_number は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_malaysia_id_card_number は、このパターンに一致するコンテンツを検索します。
 - Keyword_malaysia_id_card_number からのキーワードが見つかりました。
 
 ```xml
@@ -4426,9 +4426,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペース 1 つ (省略可能)  
 - 2 ～ 3 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -4471,9 +4471,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 3文字 (大文字小文字を区別しない) スペース (省略可能)、4桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -4516,9 +4516,9 @@ Keyword_nz_terms
 - 3 桁の個人番号  
 - 2 桁のチェック ディジット
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -4570,14 +4570,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - 1 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_philippines_unified_id は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_philippines_unified_id は、このパターンに一致するコンテンツを検索します。
 - Keyword_philippines_id からのキーワードが見つかりました。
 
 ```xml
@@ -4609,13 +4609,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 3 桁の文字 (大文字小文字の区別なし) の後に 6 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_polish_national_id は、このパターンに一致するコンテンツを検出します。
+DLP ポリシーは75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_polish_national_id は、このパターンに一致するコンテンツを検出します。
 Keyword_polish_national_id_passport_number のキーワードを検出した。
 チェックサムが渡される。
 
@@ -4652,9 +4652,9 @@ Keyword_polish_national_id_passport_number のキーワードを検出した。
 
 11 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -4691,9 +4691,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字 (大文字小文字の区別なし) の後に 7 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -4732,14 +4732,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_portugal_citizen_card は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_portugal_citizen_card は、このパターンに一致するコンテンツを検索します。
 - Keyword_portugal_citizen_card からのキーワードが見つかりました。
 
 ```xml
@@ -4772,9 +4772,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 10 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -4817,19 +4817,19 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7 桁の数字  
 - 1 桁のアルファベットのチェック ディジット
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_singapore_nric は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_singapore_nric は、このパターンに一致するコンテンツを検索します。
 - Keyword_singapore_nric からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_singapore_nric は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_singapore_nric は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -4873,9 +4873,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 数字「8」または「9」  
 - チェックサム ディジットとして機能する 1 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -4918,9 +4918,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 先頭の番号が同一である人々を区別するための 1 桁の数字  
 - 1 桁のチェック ディジット
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -4971,9 +4971,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スラッシュ (省略可能) 
 - 2 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -5010,14 +5010,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - セミコロンではない7-128 文字の任意の組み合わせ (;)、スラッシュ (/)、または引用符 (")
 - セミコロン (;)または二重引用符 (")
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 CEP_Regex_SQLServerConnectionString は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_Regex_SQLServerConnectionString は、このパターンに一致するコンテンツを検索します。
 - CEP_GlobalFilter からのキーワードが見つかり**ません**。
 - 正規表現 CEP_PasswordPlaceHolder は、このパターンに一致するコンテンツを検出し**ません**。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
@@ -5084,9 +5084,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 区切り文字「-」または「+」(省略可能)、および
 - 4 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -5105,7 +5105,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-いいえ
+不要
    
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 
@@ -5117,9 +5117,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -5192,9 +5192,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 省略可能なスペース 
 - 1 ～ 3 個の文字または数字 (BBAN の残りの部分)
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -5260,9 +5260,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 数字の「1」または「2」 
 - 8 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -5315,14 +5315,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 バイオメトリクスではないパスポート番号:
 - 9 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_taiwan_passport は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_taiwan_passport は、このパターンに一致するコンテンツを検索します。
 - Keyword_taiwan_passport からのキーワードが見つかりました。
 
 ```xml
@@ -5360,14 +5360,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 桁の文字 (大文字小文字の区別なし)  
 - 8 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_taiwan_resident_certificate は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_taiwan_resident_certificate は、このパターンに一致するコンテンツを検索します。
 - Keyword_taiwan_resident_certificate からのキーワードが見つかりました。
 
 ```xml
@@ -5408,9 +5408,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 最初の桁が0または9ではない 
 - 12 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -5455,9 +5455,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -5501,13 +5501,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 18 個の文字と数字:
 - 5 文字 (大文字小文字を区別しない) または数字「9」(1 文字の代わり) 
 - 1 桁の数字 
-- 誕生日を示す DDMMY という日付形式の 5 桁の数字 
+- 誕生日の日付形式 MMDDY の5桁の数字 (7 文字目は、driver が女性の場合は50にインクリメントされます。つまり、01から12の代わりに51から 62)
 - 2 文字 (大文字小文字を区別しない) または数字「9」(1 文字の代わり) 
 - 5 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -5556,9 +5556,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字 (大文字小文字の区別なし) の後に 1 ～ 4 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -5603,9 +5603,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペース 
 - 4 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-はい
+あり
 
 ### <a name="definition"></a>定義
 
@@ -5669,7 +5669,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6 桁の数字
 - 「A」、「B」、「C」、または「d」 (プレフィックスと同様に、サフィックスには特定の文字のみ指定できます。大文字と小文字は区別されません)
 
-OR
+または
 
 - 2文字
 - スペースまたはダッシュ
@@ -5681,9 +5681,9 @@ OR
 - スペースまたはダッシュ
 - ' A '、' B '、' C '、または ' d ' のどちらか
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -5740,9 +5740,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -5792,14 +5792,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 ～ 17 桁の連続する数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_usa_bank_account_number は、このパターンに一致するコンテンツを検出します。
+- 正規表現 Regex_usa_bank_account_number は、このパターンに一致するコンテンツを検索します。
 - Keyword_usa_Bank_Account のキーワードを検出した。
 
 ```xml
@@ -5856,9 +5856,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Ddd ddd ddd のような形式の9桁の数字は一致します。
 - Ddddddddd のように9桁の数字は一致しません。
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -5989,7 +5989,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - identification cards# 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
 - 州の略号 (たとえば、"NY") 
 - 州の名前 (たとえば、"New York")    
@@ -6017,9 +6017,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 「7」または「8」 
 - 5 桁の数字
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -6104,9 +6104,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Func_randomized_formatted_ssn は、2011 年以降の SSN を検索します。これはダッシュまたはスペース (ddd-dd-dddd または ddd dd dddd) の形式になっています。
 - Func_randomized_unformatted_ssn は、2011 年以降の SSN を検索します。これは 9 桁の連続した数字 (ddddddddd) の形式になっています。
 
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-いいえ
+不要
 
 
 ### <a name="definition"></a>定義
@@ -6135,7 +6135,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_us_date が適切な日付形式の日付を検出した。
 - 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
-DLP ポリシーの信頼度は 40% で、この種類の機密情報は、近接する300文字内で検出されます。
+DLP ポリシーの信頼度は40% で、この種類の機密情報は、近接する300文字内で検出されます。
 - 関数 Func_ssn がパターンに一致するコンテンツを検出した。
 - 関数 Func_unformatted_ssn がパターンに一致するコンテンツを検出しなかった。
 - 関数 Func_randomized_unformatted_ssn は、このパターンに一致するコンテンツを検出しません。

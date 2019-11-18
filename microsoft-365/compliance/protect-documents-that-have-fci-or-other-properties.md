@@ -3,7 +3,7 @@ title: FCI または他のプロパティが使用されているドキュメン
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (FCI) の分類プロパティ、SharePoint のドキュメントプロパティ、またはドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既に存在します。サードパーティ製のシステムによって適用されます。 これが組織を説明している場合は、Office 365 で、Windows Server FCI または他のシステムによってドキュメントに適用されたプロパティを認識する DLP ポリシーを作成して、特定の FCI またはその他の Office ドキュメントに DLP ポリシーを適用できるようにすることができます。プロパティの値。
-ms.openlocfilehash: 5f464c2918d7ea91fa5c65b28bc477ee7cc768e3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 286a66968727737c906ba24ac900eacd7732276e
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086613"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686791"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
@@ -42,7 +42,7 @@ DLP ポリシーで Windows Server FCI プロパティまたは他のプロパ�
   
 このマッピングは重要になります。Office 365 の DLP は検索クローラーを使用して、サイト上の機密情報を識別および分類し、その機密情報を検索インデックスのセキュリティで保護された部分に格納するからです。ドキュメントを Office 365 にアップロードすると、ドキュメント プロパティに基づいて、クロールされたプロパティが SharePoint によって自動作成されます。しかし DLP ポリシーで FCI または他のプロパティを使用するには、クロールされたプロパティを管理プロパティにマッピングし、そのプロパティが含まれるコンテンツをインデックスで保持できるようにする必要があります。
   
-検索および管理プロパティの詳細については、「 [SharePoint Online で検索スキーマを管理する](http://go.microsoft.com/fwlink/p/?LinkID=627454)」を参照してください。
+検索および管理プロパティの詳細については、「 [SharePoint Online で検索スキーマを管理する](https://go.microsoft.com/fwlink/p/?LinkID=627454)」を参照してください。
   
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>手順 1: 必要なプロパティが含まれるドキュメントを Office 365 にアップロードする
 
@@ -92,29 +92,29 @@ DLP ポリシーで Windows Server FCI プロパティまたは他のプロパ�
 
 Condition**ドキュメントプロパティにこれらの値のいずれかが含ま**れていることに注意してください&amp; 。これらの値は、セキュリティコンプライアンスセンターの UI では一時的に使用できませんが、PowerShell を使用してこの条件を引き続き使用することができます。 コマンドレットを使用して DLP ポリシーを操作`ContentPropertyContainsWords`し、パラメーターを指定`New\Set\Get-DlpComplianceRule`したコマンドレットを使用して、条件**ドキュメントプロパティにこれらの値のいずれかを含める**ことができます。 `New\Set\Get-DlpCompliancePolicy`
   
-これらのコマンドレットの詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのコマンドレット](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
+これらのコマンドレットの詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. を使用`New-DlpCompliancePolicy`してポリシーを作成します。
-    
-    すべての場所に適用する DLP ポリシーを作成する PowerShell の例を次に示します。
-    
-      ```
-      New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
-      ```
+
+すべての場所に適用する DLP ポリシーを作成する PowerShell の例を次に示します。
+
+```powershell
+New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
+```
 
 3. 上記の2つのルールを使用`New-DlpComplianceRule`して、1つのルールを**低**値に、もう1つは**高**および中**程度**のルールを作成します。 
     
     これら2つのルールを作成する PowerShell の例を次に示します。 プロパティ名と値のペアは二重引用符で囲まれており、プロパティ名でコンマで区切って複数の値を指定する場合は、次のようにスペースを含めません。`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
-    
-      ```
-      New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
-      ```
 
-    Windows Server FCI には、この例で使用されている**個人を特定できる情報**を含む、多くの組み込みのプロパティが含まれていることに注意してください。 各プロパティに指定できる値は、すべての組織によって異なる場合があります。 ここで使用されているの**は、次**に示すように、**高**、中、**低**の値だけです。 組織では、windows server FCI 分類プロパティを、Windows Server ベースのファイルサーバー上のファイルサーバーリソースマネージャーで指定可能な値で表示できます。 詳細については、「[分類プロパティを作成する](http://go.microsoft.com/fwlink/p/?LinkID=627456)」を参照してください。
+```powershell
+New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
+```
+
+    Note that Windows Server FCI includes many built-in properties, including **Personally Identifiable Information** used in this example. The possible values for each property can be different for every organization. The **High**, **Moderate**, and **Low** values used here are only an example. For your organization, you can view the Windows Server FCI classification properties with their possible values in the file Server Resource Manager on the Windows Server-based file server. For more information, see [Create a classification property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
     
-完了したら、ドキュメントプロパティを使用する2つの新しいルールに**これらの値の条件が含まれ**ている必要があります。 この条件は UI には表示されませんが、他の条件、アクション、設定が表示されることに注意してください。 
+完了したら、ドキュメントプロパティを使用する2つの新しいルールに**これらの値の条件が含まれ**ている必要があります。 この条件は UI には表示されませんが、他の条件、アクション、設定が表示されることに注意してください。
   
 1 つのルールは、[**個人情報**] プロパティが [**高**] または [**中**] の場合にコンテンツへのアクセスをブロックします。 2 番目のルールは、[**個人情報**] プロパティが [**低**] の場合にコンテンツについて通知を送信します。
   
@@ -129,7 +129,7 @@ Condition**ドキュメントプロパティにこれらの値のいずれかが
 > [!CAUTION]
 > サイトを再インデックス付けすると、検索システムで多大な負荷が発生することがあります。 シナリオで絶対に必要でない限り、サイトを再インデックス化しないでください。 
   
-詳細については、「[サイト、ライブラリ、またはリストのクロールとインデックス再作成を手動で要求](http://go.microsoft.com/fwlink/p/?LinkID=627457)する」を参照してください。
+詳細については、「[サイト、ライブラリ、またはリストのクロールとインデックス再作成を手動で要求](https://go.microsoft.com/fwlink/p/?LinkID=627457)する」を参照してください。
   
 ### <a name="re-index-a-site-optional"></a>サイトを再インデックス付けする (省略可能)
 
@@ -148,5 +148,3 @@ Condition**ドキュメントプロパティにこれらの値のいずれかが
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
 - [機密情報の種類インベントリ](what-the-sensitive-information-types-look-for.md)
-    
-

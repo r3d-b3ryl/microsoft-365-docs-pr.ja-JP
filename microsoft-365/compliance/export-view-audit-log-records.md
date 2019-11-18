@@ -1,5 +1,5 @@
 ---
-title: 監査ログレコードをエクスポート、構成、および表示する
+title: 監査ログ レコードをエクスポート、構成、表示する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 監査ログ検索の結果をエクスポートして CSV ファイルにダウンロードした後、Excel の Power Query エディターの JSON 変換機能を使用して、AuditData 列の JSON オブジェクトの各プロパティをそれぞれの列に分割できます。 これは、探している特定の監査データをすばやく見つけるのに役立ちます。
-ms.openlocfilehash: 7dac373e8f25ead38dddbe2663e521b35b3153ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b422877c10f086553a695e43c50f02d389dd2b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085835"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686886"
 ---
-# <a name="export-configure-and-view-audit-log-records"></a>監査ログレコードをエクスポート、構成、および表示する
+# <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
 Office 365 監査ログを検索し、検索結果を CSV ファイルにダウンロードした後、ファイルには、各イベントに関する追加情報を含む**Auditdata**という名前の列が含まれます。 この列のデータは、JSON オブジェクトとして書式設定されています。これには、*プロパティと値*のペアとして構成され、コンマで区切られた複数のプロパティが含まれています。 Excel の Power Query エディターで JSON 変換機能を使用して、 **Auditdata**列の json オブジェクトの各プロパティを複数の列に分割し、各プロパティがそれぞれの列を持つようにすることができます。 これにより、これらのプロパティの1つ以上に対して並べ替えとフィルター処理を行うことができます。これにより、探している特定の監査データをすばやく見つけることができます。
 
@@ -108,11 +108,11 @@ CSV ファイルが**クエリエディター**で開かれます。 **CreationD
 
    この例では、次のコマンドを実行して、SharePoint 共有操作に関連するすべてのレコードを返します。 
    
-   ```
+   ```powershell
    $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
    ```
 
-   ```
+   ```powershell
    $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
    ```
 
@@ -122,10 +122,10 @@ CSV ファイルが**クエリエディター**で開かれます。 **CreationD
    
    - このパラメーターには、1つの値のみを含めることができます。 他のレコードの種類の監査レコードを検索するには、2つの前のコマンドを再度実行して、別のレコードの種類を指定し、それらの結果を元の CSV ファイルに追加します。 たとえば、次の2つのコマンドを実行して、同じ日付範囲の SharePoint ファイルアクティビティを PowerShellAuditlog ファイルに追加します。
 
-       ```
+       ```powershell
       $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
       ```
 
-      ```
+      ```powershell
       $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```
+      ```powershell

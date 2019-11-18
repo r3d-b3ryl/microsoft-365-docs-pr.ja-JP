@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: db32748b25296ef82c56160e95535ac488eb65a5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
+ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085360"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "38686663"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
@@ -168,7 +168,7 @@ DLP ポリシーを作成して有効にした後、SharePoint Online サイト�
 |**オン** <br/> |ポリシーはアクティブであり、適用されています。ポリシーは、すべてのコンテンツ ソースに正常に展開されました。  <br/> |
 |**オフにしています...** <br/> |ポリシーは、それに含まれるコンテンツ ソースから削除されています。一部のソースでは、ポリシーがまだアクティブで適用されている可能性があります。ポリシーをオフにするには、最高 45 分かかる場合があります。  <br/> |
 |**オフ** <br/> |ポリシーはアクティブではなく、適用されていません。ポリシーの設定 (ソース、キーワード、期間など) は保存されています。  <br/> |
-|**削除しています...** <br/> |ポリシーは削除処理中です。ポリシーはアクティブではなく、適用されていません。  <br/> |
+|**削除しています...** <br/> |ポリシーを削除中です。 ポリシーは有効ではなく、適用されていません。 通常、ポリシーが delet になるまでに1時間かかります。 <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>DLP ポリシーをオフにする
 

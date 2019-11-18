@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1e457ffa05670e6a8b48692bbb382ebd8f2b404e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1cea83ffec8af8b22b5a27e9d760946e71ba7f68
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085976"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686912"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>詳細な電子情報開示で保留リストを管理する
 
@@ -27,7 +29,7 @@ ms.locfileid: "37085976"
 
 ## <a name="manage-custodian-based-holds"></a>保管担当者ベースの保持を管理する
 
-場合によっては、特定して保持するように設定した一連のデータ保管担当者が存在することがあります。 上級電子情報開示では、これらの保管担当者が保留になっていると、ユーザーと選択されたデータソースが保管担当者保留ポリシーに自動的に追加されます。 
+場合によっては、保管担当者のセットを特定し、ケース時にデータを保持することを決定している場合があります。 上級電子情報開示では、これらの保管担当者が保留になっていると、ユーザーと選択されたデータソースが保管担当者保留ポリシーに自動的に追加されます。 
 
 保管担当者ホールドポリシーを表示するには、次のようにします。
 
@@ -76,7 +78,7 @@ ms.locfileid: "37085976"
     > [!NOTE]
     > ユーザープリンシパル名 (UPN) が変更された場合、そのユーザーの OneDrive アカウントの URL も新しい UPN を組み込むように変更されます。 このような場合は、ユーザーの新しい OneDrive URL を追加して古いバージョンを削除することによって、保留リストを変更する必要があります。
 
-     c. **Exchange パブリックフォルダー** -切り替えスイッチをすべての位置に移動して、Exchange Online 組織内のすべてのパブリックフォルダーを保持します。 特定のパブリックフォルダーを保持の対象にすることはできないことに注意してください。 パブリックフォルダーを保持しない場合は、トグルスイッチを **[なし**] のままにします。
+     c.  **Exchange パブリックフォルダー** -切り替えスイッチをすべての位置に移動して、Exchange Online 組織内のすべてのパブリックフォルダーを保持します。 特定のパブリックフォルダーを保持の対象にすることはできないことに注意してください。 パブリックフォルダーを保持しない場合は、トグルスイッチを **[なし**] のままにします。
 
 9. 保留リストにコンテンツの場所を追加し終わったら、[**次へ**] をクリックします。
   
@@ -86,7 +88,7 @@ ms.locfileid: "37085976"
 
     - [条件の**追加**] をクリックして、1つまたは複数の条件を追加して、保留リストの検索クエリを絞り込みます。 各条件は、保留を作成するときに作成および実行される KQL 検索クエリに句を追加します。 たとえば、日付範囲を指定して、指定した期間内に作成された電子メールまたはサイトのドキュメントが保留リストに配置されるようにすることができます。 条件は、AND 演算子によって (キーワード ボックスで指定された) キーワード クエリに論理的に結合されます。 これは、アイテムがキーワードクエリと条件の両方に一致する必要があることを意味します。
 
-     検索クエリの作成と条件の使用の詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions)」を参照してください。
+     検索クエリの作成と条件の使用の詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions)」を参照してください。
 
 12. クエリ ベースの保留リストを構成した後、[**次へ**] をクリックします。
  
@@ -119,7 +121,7 @@ ms.locfileid: "37085976"
   - Exchange Online で **Get-UnifiedGroup** コマンドレットを実行し、Office 365 グループまたは Microsoft チームのプロパティを表示します。これは、Office 365 グループまたは Microsoft チームに関連付けられているサイトの URL を取得するのに適した方法です。たとえば、次のコマンドを実行すると、Senior Leadership Team という Office 365 グループの選択したプロパティが表示されます。
 
 
-    ```
+    ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam
@@ -132,16 +134,16 @@ ms.locfileid: "37085976"
 
  - ユーザーのメールボックスを検索すると、そのユーザーがメンバーになっているすべての Office 365 グループまたは Microsoft チームは検索されません。 同様に、Office 365 グループまたは Microsoft teams ホールドを配置すると、グループメールボックスとグループサイトのみが保持されます。グループメンバーのメールボックスと OneDrive for Business サイトは、保管担当者として明示的に追加したり、データソースを保持したりしない限り、保留リストには置かれません。 そのため、特定の保管担当者に対して Office 365 グループまたは Microsoft teams を保持する必要がある場合は、グループメールボックスとグループメールボックスを保管担当者にマッピングすることを検討してください (「Advanced eDiscovery での保管担当者の管理」を参照してください)。 Office 365 グループまたは Microsoft teams が1つの保管担当者に属さない場合は、そのソースを非 custodial ホールドに追加することを検討してください。 
  
- - Office 365 グループまたは Microsoft teams のメンバーの一覧を取得するには、Microsoft 365 管理センターの [ホーム > グループ] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。
+ - Office 365 グループまたは Microsoft teams のメンバーの一覧を取得するには、Microsoft 365 管理センターの [ホーム > グループ] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行できます。
 
-   ``` 
+   ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
    ```
 
     > [!NOTE]
     > **Get-UnifiedGroupLinks** コマンドレットを実行するには、Exchange Online で View-Only Recipients という役割が割り当てられているか、View-Only Recipients という役割が割り当てられている役割グループに属している必要があります。
 
-- Microsoft Teams チャネルの一部であるチャネル会話は、チームに関連付けられているメールボックスに格納されます。 同様に、チームメンバーがチャネルで共有するファイルは、チームの SharePoint サイトに格納されます。 そのため、チャネル内の会話やファイルを保持するには、Microsoft teams メールボックスと SharePoint サイトを保留にする必要があります。
+- Microsoft Teams チャネルの一部であるチャネル会話は、チームに関連付けられているメールボックスに格納されます。 同様に、メンバーがチャネルで共有するファイルは、チームの SharePoint サイトに保存されます。 そのため、チャネル内の会話やファイルを保持するには、Microsoft teams メールボックスと SharePoint サイトを保留にする必要があります。
   
 - または、Microsoft Teams のチャットリストに含まれる会話が、チャットに参加しているユーザーのメールボックスに保存されます。  ユーザーがチャット会話で共有しているファイルは、そのファイルを共有しているユーザーの OneDrive for Business サイトに保存されます。 そのため、会話やファイルをチャットリストに保持するには、個々のユーザーメールボックスと OneDrive for Business サイトを保持する必要があります。 
   

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Office 365 の電子情報開示および検索ツールを使用して、組織内のデータ流出インシデントを管理および応答します。
-ms.openlocfilehash: bf6c22a593a2611b86012cd51e3e2932a13dfe4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085187"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686904"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューションシリーズ: Data 流出 scenario-検索と削除
 
@@ -82,7 +82,7 @@ Contoso 社のリード情報セキュリティ責任者であること。 従�
 
 コンテンツ検索を作成した後、検索結果を確認して検証し、削除する必要がある電子メールメッセージのみが含まれていることを確認する必要があります。 コンテンツ検索では、その他のデータ流出を回避するために、検索結果をエクスポートせずに、1000メールメッセージのランダムなサンプリングをプレビューできます。 プレビュー制限の詳細については、「[コンテンツ検索の制限](limits-for-content-search.md)」を参照してください。
   
-メールボックスごとに1000個を超えるメールボックスを使用している場合や、確認するメールボックスごとの電子メールメッセージ数が100を超える場合は、日付範囲や送信者/受信者などの追加のキーワードや条件を使用して、最初の検索を複数の検索に分割し、各検索の結果を確認することができます。1. [手順 7](#step-7-permanently-delete-the-spilled-data)でメッセージを削除するときに使用するすべての検索クエリを書き留めておいてください。
+メールボックスごとに1000を超えるメールボックスを使用している場合や、確認するメールボックスごとの電子メールメッセージ数が100を超える場合は、日付範囲や送信者/受信者などの追加のキーワードや条件を使用して、最初の検索を複数の検索に分割し、各検索結果を個別に確認することができます。 [手順 7](#step-7-permanently-delete-the-spilled-data)でメッセージを削除するときに使用するすべての検索クエリを書き留めておいてください。
 
 保管担当者またはエンドユーザーに Office 36 E5 ライセンスが割り当てられている場合は、Office 365 Advanced eDiscovery を使用して、最大1万の検索結果を一度に調べることができます。 レビュー対象の電子メールメッセージが1万を超える場合は、検索結果が日付で並べ替えられるように、検索クエリを日付範囲で分割し、各結果を個別に確認できます。 高度な電子情報開示では、プレビューパネルの [**ラベル**] 機能を使用して検索結果にタグを付け、ラベルの付いたタグで検索結果をフィルター処理することができます。 これは、第2のレビュー担当者と共同で作業する場合に役立ちます。 高度な電子情報開示の追加分析ツール (光学式文字認識、電子メールスレッド、予測コーディングなど) を使用すると、数千のメッセージをすばやく処理して確認し、さらにレビューすることができます。 「 [Office 365 Advanced eDiscovery のクイックセットアップ」を](quick-setup-for-advanced-ediscovery.md)参照してください。
 
@@ -154,7 +154,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
 
 単一アイテムの回復が有効になっている場合、またはメールボックスが保持されている場合、完全に削除された (パージされた) メッセージは、回復可能なアイテムフォルダーに保持されます。 こぼれたデータを削除する前に、既存のメールボックスの構成を確認し、単一アイテムの回復を無効にして、ホールドまたは Office 365 アイテム保持ポリシーを削除する必要があります。 一度に1つのメールボックスを準備してから、別のメールボックスで同じコマンドを実行することも、複数のメールボックスを同時に準備するための PowerShell スクリプトを作成することもできます。
 
-- 単一アイテムの回復が有効になっているかどうか、またはメールボックスが保留になっているかどうかを確認する方法、またはメールボックスが保持されているかどうかを確認する方法については、「手順 1: メールボックスに関する情報を収集する[」を参照](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox)してください。アイテム保持ポリシー。 
+- 単一アイテムの回復が有効になっているかどうか、またはメールボックスが保持されているかどうか、またはアイテム保持ポリシーに割り当てられているかどうかを確認する方法について[は、「](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox)手順 1: メールボックスに関する情報を収集する 
     
 - 単一アイテムの回復を無効にする手順については[、「クラウドベースのメールボックスの回復可能なアイテムフォルダーのアイテムを削除する](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)」の「手順 2: メールボックスを準備する」を参照してください。 
     
@@ -170,28 +170,28 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
 
 手順6で収集して準備したメールボックスの場所と、手順3で作成して調整した検索クエリを使用して、こぼれたデータが含まれている電子メールメッセージを検索することで、そのデータを完全に削除できます。 前述したように、次の手順を使用してメッセージを削除するには、Exchange Online のメールボックスのインポートの役割が割り当てられている必要があります。
   
-1. [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)。
+1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=396554)。
     
 2. 次のコマンドを実行します。
     
-    ```
+    ```powershell
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
-  
+
 3. Id パラメーターの値を置換して、こぼれたデータを含む各メールボックスに対して前のコマンドを再度実行します。例えば：
 
-    ```
+    ```powershell
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-    ```
+    ```powershell
     Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-   ```
+   ```powershell
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
-  
+
 前述したように、 [powershell スクリプト](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6)を作成し、メールボックスの一覧に対して実行することで、スクリプトによって各メールボックス内のこぼれたデータが削除されるようにすることもできます。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>手順 8: 確認し、削除の証明を提供し、監査を行う
@@ -214,7 +214,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>データ流出調査プロセスの監査
 
-調査中に実行された電子情報開示アクティビティについては、Office 365 監査ログを検索することができます。 また、監査ログを検索して、 **DeleteContent**コマンドを実行して、こぼれたデータを削除したときに作成された監査レコードを取得することもできます。 詳細については、次のトピックを参照してください。
+調査中に実行された電子情報開示アクティビティについては、Office 365 監査ログを検索することができます。 また、監査ログを検索して、 **DeleteContent**コマンドを実行して、こぼれたデータを削除したときに作成された監査レコードを取得することもできます。 詳しくは、次のトピックを参照してください。
 
 - [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 
