@@ -11,18 +11,18 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Microsoft Office 365 のデータ復元性について理解します。'
-ms.openlocfilehash: 385bb936de2c0cfcb478f0b20d2f7367d5b55ff4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7fec40db9ce12b52d37f2003d7ee8db68739aa41
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086651"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690662"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 でのサービスの暗号化
 
 ボリュームレベルの暗号化に加えて、Exchange Online、Skype for Business、SharePoint Online、および OneDrive for business では、顧客データを暗号化するためにサービス暗号化も使用されます。 サービス暗号化では、2つの主要な管理オプションを使用できます。
 - Microsoft は、すべての暗号化キーを管理します。 (このオプションは現在、SharePoint Online、OneDrive for Business、Skype for business で利用できます。 現在、Exchange Online のロードマップになっています。)
-- お客様は、サービスの暗号化に使用されるルートキーを提供し、お客様は Azure Key Vault を使用してこれらのキーを管理します。 Microsoft は、その他のすべてのキーを管理します。 このオプションは顧客キーと呼ばれ、現在、Exchange Online、SharePoint Online、OneDrive for business で使用できます。 (以前は BYOK で高度な暗号化と呼ばれています)。 元のアナウンスについては、「 [Office 365 のお客様の透明性と統制の強化](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)」を参照してください)。
+- お客様は、サービスの暗号化に使用されるルートキーを提供し、お客様は Azure Key Vault を使用してこれらのキーを管理します。 Microsoft は、その他のすべてのキーを管理します。 このオプションは顧客キーと呼ばれ、現在、Exchange Online、SharePoint Online、OneDrive for business で使用できます。 (以前は BYOK で高度な暗号化と呼ばれています)。 元のアナウンスについては、「 [Office 365 のお客様の透明性と統制の強化](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)」を参照してください)。
 
 サービス暗号化には複数の利点があります。 たとえば、次のようになります。
 - 強力な暗号化保護の上に、権限の保護と管理の機能を提供します。

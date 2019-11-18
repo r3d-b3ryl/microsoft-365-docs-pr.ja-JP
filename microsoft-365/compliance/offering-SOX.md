@@ -1,0 +1,76 @@
+---
+title: 米国企業改革法 (SOX 法)
+description: 金融サービス企業は、Microsoft のコンプライアンスレポートを使用して、サーベンスオクスリー法への準拠に対応できます。
+keywords: Microsoft 365、コンプライアンス、オファーリング
+localization_priority: None
+ms.prod: Microsoft-365-enterprise
+ms.topic: article
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+audience: itpro
+ms.collection: M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 2f496db53cde8779dd45f7d15cc9d6bd7789a75c
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38690725"
+---
+# <a name="compliance-offering-sarbanes-oxley-act-of-2002-sox"></a>コンプライアンスオファリング: サーベンス・オクスリー法 2002 (SOX)
+
+## <a name="sox-overview"></a>SOX の概要
+
+2002のサーベンス・オクスリー法は、米国証券取引委員会 (SEC) によって管理される米国連邦法です。 SOX では、SOX では、財務諸表が正確に財務結果を反映していることを検証するための適切な内部統制構造を得るために、SOX が必要です。
+
+SEC は、SOX 証明プロセスを定義したり、設定したりすることはありません。 その代わりに、SOX 報告要件への準拠方法を決定するために、規制対象となる企業の幅広いガイドラインを提供します。
+
+## <a name="microsoft-and-sox"></a>Microsoft および SOX
+
+サーベンスオクスリー法 (SOX) に準拠することになる microsoft クラウドサービスのお客様は、個人の SOX 準拠の義務に対応するために、Microsoft が独立した監査会社から受け取った SOC 1 タイプ2の構成を使用できます。 この構成証明は、財務報告に関する内部統制のレポートに適しています。
+
+Microsoft は、クラウドサービスプロバイダーに対して SOX の認証や検証を行っていない場合でも、お客様が SOX の義務を満たすことを支援します。 たとえば、SOX では、財務報告書の準備とレビューのための内部統制が必要です。特に、財務報告に関連する材料変更の精度、完全性、有効性、公開情報の開示に影響を与える制御を行います。 企業を支援するために、Microsoft は、さまざまなアプリケーションの構築に使用できる広範なサービスポートフォリオ全体にわたって、このような統制に関する報告に適した SOC 1 タイプ2の構成を維持しています。 これは、構成証明契約 18 (SSAE 18) の標準と、保証契約に関する国際標準に基づいた米国規格の認定済みの公認会計士 (AICPA) ステートメントに基づいています。 3402 (ISAE 3402) (この構成の置き換えられた SAS 70。)
+
+サードパーティの監査会社によって作成された監査レポートでは、Microsoft コントロールが適切に設計されており、指定した日付に操作が行われ、指定された期間にわたって効率的に稼働していることが attests ます。 お客様は、レポートを確認して、Microsoft control の目標とその制御の有効性を把握し、補完的なコントロールにアクセスできます。
+
+Azure クライアントが SOX の義務に対処できるようにするために、Microsoft は[サーベンスオクスリー法向けの Azure ガイダンス](https://aka.ms/Azure-SOX-Guide)を公開しています。 このホワイトペーパーでは、SOX 準拠の影響など、移行のベストプラクティスについて説明し、SOX 関連アプリケーション (Microsoft Finance および Microsoft Finance) を Azure に移行する際の社内での操作について説明します。
+
+Microsoft では、お客様とのコンプライアンス責任を共有しています。 コンプライアンスプログラムに関する詳細情報を提供しています。これは、証明サードパーティから詳細な監査結果を要求することで確認できます。 しかし、最終的には、お客様がビジネスに適用される特定の法律や規制に準拠しているかどうかを判断することができます。 たとえば、ユーザーがクラウドリソースにアクセスするなどの SOX 関連のセキュリティコントロールがあり、責任を負っています。組織は、SOX 準拠の一環としてこれらのコントロールの適切な監査を開発する必要があります。
+
+SOX 準拠の義務に対応する際に Microsoft Azure コンプライアンスレポートを使用する方法については[、「サーベンス・オクスリー法」の「Azure ガイダンスをダウンロード](https://aka.ms/Azure-SOX-Guide)する」を参照してください。
+
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+
+- [Azure](https://aka.ms/AzureCompliance)
+- [Dynamics 365](https://aka.ms/d365-compliance-list)
+- Intune
+- [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+
+## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+
+[SOC 1 タイプ 2](offering-SOC.md)レポート:
+
+- Azure と Power BI
+- Dynamics 365
+- Office 365
+
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
+**Microsoft SOX 準拠を使用して組織のコンプライアンスプロセスを促進するには、どうすればよいですか?**
+
+アプリケーションとデータを対象となる Microsoft cloud services に移行する場合は、Microsoft が保持する attestations と証明書に基づいて構築できます。 独立監査者は、データのセキュリティとプライバシーを維持するために Microsoft が実装したコントロールの有効性を証明します。 ただし、組織が適用されているすべての法律および規制に準拠していることを保証するのは、完全に責任があります。
+
+## <a name="resources"></a>リソース
+
+- [サーベンス・オクスリー法向けの Azure ガイダンス](https://aka.ms/Azure-SOX-Guide)
+- [Microsoft 金融サービスコンプライアンスプログラム](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure での金融サービスコンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft business cloud services および金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [クラウドコンピューティングの共有責任](https://aka.ms/sharedresponsibility)
+- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+
+このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf)をダウンロードします。

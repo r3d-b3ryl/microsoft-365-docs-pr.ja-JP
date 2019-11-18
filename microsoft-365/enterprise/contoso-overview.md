@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: 429d74c66198c1b4a3dea735127a4fb569aa7bb0
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: f1c758b92915845a0786c24aec611cb221c70186
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627343"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673153"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
-
-**概要:** ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
 
 ![Contoso 社](./media/contoso-overview/contoso-icon.png)
 

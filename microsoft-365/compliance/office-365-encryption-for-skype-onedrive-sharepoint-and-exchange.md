@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: '概要: Skype、OneDrive、SharePoint、および Exchange Online の暗号化について説明します。'
-ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 220f3060bd9581b22183bbb56e68c3ec930d0c24
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086669"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38690748"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for business、OneDrive for Business、SharePoint Online、Exchange Online の Office 365 暗号化
 
@@ -63,7 +64,7 @@ Azure ストレージコンテナーへのアクセスに使用される資格�
 > [!NOTE]
 > Office 365 米国政府機関のお客様の場合、データ blob は米国政府機関のストレージに格納されます。 さらに、Office 365 での SharePoint Online キーへのアクセスについては、米国政府機関に365限定されています。 Azure の米国政府運用スタッフには、データ blob の暗号化に使用される SharePoint Online キーストアへのアクセス権がありません。
 
-SharePoint Online と OneDrive for Business のデータ暗号化の詳細については、「 [onedrive for business および Sharepoint Online のデータ暗号化](https://technet.microsoft.com/en-us/library/dn905447.aspx)」を参照してください。
+SharePoint Online と OneDrive for Business のデータ暗号化の詳細については、「 [onedrive for business および Sharepoint Online のデータ暗号化](https://technet.microsoft.com/library/dn905447.aspx)」を参照してください。
 
 ### <a name="list-items-in-sharepoint-online"></a>SharePoint Online のリストアイテム
 

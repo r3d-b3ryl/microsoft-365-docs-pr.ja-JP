@@ -1,5 +1,5 @@
 ---
-title: 情報バリアポリシーの定義
+title: 情報障壁ポリシーの定義
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: 8ad6dd5e098438de0904fb511c631afbc761ff5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085939"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38690753"
 ---
 # <a name="define-policies-for-information-barriers"></a>情報バリアのポリシーを定義する
 
@@ -45,7 +45,7 @@ ms.locfileid: "37085939"
 
 ## <a name="the-work-flow-at-a-glance"></a>作業フローの概要
 
-|フェーズ    |関係するもの  |
+|フェーズ    |内容  |
 |---------|---------|
 |[前提条件が満たされていることを確認する](#prerequisites)     |-[必要なライセンスとアクセス許可](information-barriers.md#required-licenses-and-permissions)を持っていることを確認する<br/>-ディレクトリにユーザーをセグメント化するためのデータが含まれていることを確認する<br/>-Microsoft Teams のスコープ付きディレクトリ検索を有効にする<br/>-監査ログが有効になっていることを確認します。<br/>-Exchange アドレス帳ポリシーが適切に設定されていないことを確認します。<br/>-PowerShell の使用 (例は提供されています)<br/>-Microsoft Teams に対する管理者の同意を提供する (手順は含まれています)          |
 |[パート 1: 組織内のユーザーのセグメント化](#part-1-segment-users)     |-必要なポリシーを決定する<br/>-定義するセグメントの一覧を作成する<br/>-使用する属性を識別する<br/>-ポリシーフィルターの観点からセグメントを定義する        |
@@ -58,8 +58,8 @@ ms.locfileid: "37085939"
 
 [必要なライセンスとアクセス許可](information-barriers.md#required-licenses-and-permissions)に加えて、次の要件が満たされていることを確認してください。 
      
-- **ディレクトリデータ**。 組織の構造がディレクトリデータに反映されていることを確認します。 これを行うには、Azure Active Directory (または Exchange Online) に、グループメンバーシップ、部署名などのユーザーアカウント属性が正しく設定されていることを確認してください。 詳細については、以下のリソースを参照してください。
-  - [情報バリアポリシーの属性](information-barriers-attributes.md)
+- **ディレクトリデータ**。 組織の構造がディレクトリデータに反映されていることを確認します。 これを行うには、Azure Active Directory (または Exchange Online) に、グループメンバーシップ、部署名などのユーザーアカウント属性が正しく設定されていることを確認してください。 詳細については、次のリソースを参照してください。
+  - [情報障壁ポリシーの属性](information-barriers-attributes.md)
   - [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Office 365 PowerShell でユーザー アカウント プロパティを構成する](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -77,7 +77,7 @@ ms.locfileid: "37085939"
 
    1. 次の PowerShell コマンドレットを実行します。
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
@@ -108,7 +108,10 @@ ms.locfileid: "37085939"
 
 ### <a name="identify-segments"></a>セグメントを識別する
 
-ポリシーの初期リストに加えて、組織のセグメントの一覧を作成します。 情報バリアポリシーに含まれるユーザーは、セグメントに属する必要があり、ユーザーは2つ以上のセグメントに属することはできません。 各セグメントには、1つの情報バリアポリシーのみを適用できます。 
+ポリシーの初期リストに加えて、組織のセグメントの一覧を作成します。 情報バリアポリシーに含まれるユーザーは、セグメントに属している必要があります。 ユーザーが1つのセグメントのみに含まれるように、セグメントを慎重に計画します。 各セグメントには、1つの情報バリアポリシーのみを適用できます。
+
+> [!IMPORTANT]
+> ユーザーは1つのセグメントのみに配置できます。
 
 セグメントを定義するために使用する組織のディレクトリデータの属性を決定します。 *Department*、 *MemberOf*、またはサポートされている属性のいずれかを使用できます。 ユーザー用に選択した属性の値があることを確認してください。 [情報バリアに対してサポートされている属性の一覧を参照してください](information-barriers-attributes.md)。
 
@@ -243,7 +246,7 @@ ms.locfileid: "37085939"
 
 PowerShell を使用すると、次の表に示すように、ユーザーアカウント、セグメント、ポリシー、およびポリシーアプリケーションの状態を表示できます。
 
-|これを表示するには  |説明  |
+|これを表示するには  |操作  |
 |---------|---------|
 |ユーザー アカウント     |Identity パラメーターを使用して**InformationBarrierRecipientStatus**コマンドレットを使用します。 <p>文`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p>例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。 <p>(1 人のユーザーに対してこのコマンドレットを`Get-InformationBarrierRecipientStatus -Identity <value>`使用することもできます。) <p>このコマンドレットは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。|
 |多角形     |**コマンドレットを使用**します。<p>文`Get-OrganizationSegment` <p>これにより、組織に定義されているすべてのセグメントの一覧が表示されます。         |

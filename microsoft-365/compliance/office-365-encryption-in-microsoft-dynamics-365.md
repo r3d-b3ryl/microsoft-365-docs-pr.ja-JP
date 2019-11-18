@@ -11,18 +11,18 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Microsoft Dynamics 365 での暗号化について説明します。'
-ms.openlocfilehash: 7c2a352dd712b0db9d2ad623745f854b863dd2e0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 58afc2d35ece4b5bfd7594aad483606e6f867823
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086662"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690664"
 ---
 # <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 の Office 365 暗号化
 
-Microsoft では、暗号化テクノロジを使用して、Microsoft データベースの保存期間中に、また、ユーザーのデバイスとデータセンター間で転送中の Dynamics 365 で顧客データを保護しています。 お客様と Microsoft データセンターの間で確立された接続は暗号化され、業界標準の TLS を使用してすべてのパブリックエンドポイントがセキュリティ保護されます。 TLS は、デスクトップとデータセンター間のデータの機密性と整合性を確保するために、セキュリティが強化されたブラウザーからサーバーへの接続を効果的に確立します。 データ暗号化がアクティブ化された後は、無効にすることはできません。 詳細については、「[フィールドレベルのデータ暗号化](https://msdn.microsoft.com/en-us/library/dn481562.aspx)」を参照してください。
+Microsoft では、暗号化テクノロジを使用して、Microsoft データベースの保存期間中に、また、ユーザーのデバイスとデータセンター間で転送中の Dynamics 365 で顧客データを保護しています。 お客様と Microsoft データセンターの間で確立された接続は暗号化され、業界標準の TLS を使用してすべてのパブリックエンドポイントがセキュリティ保護されます。 TLS は、デスクトップとデータセンター間のデータの機密性と整合性を確保するために、セキュリティが強化されたブラウザーからサーバーへの接続を効果的に確立します。 データ暗号化がアクティブ化された後は、無効にすることはできません。 詳細については、「[フィールドレベルのデータ暗号化](https://msdn.microsoft.com/library/dn481562.aspx)」を参照してください。
 
-Dynamics 365 は、ユーザー名や電子メールのパスワードなどの機密情報を含む既定のエンティティ属性のセットに対して、Microsoft SQL Server の標準のセルレベルの暗号化を使用します。 この機能は、組織が FIPS 140-2 に関連するコンプライアンス要件を満たすのに役立ちます。 フィールドレベルのデータ暗号化は、 [Microsoft DYNAMICS CRM 電子メールルーター](https://technet.microsoft.com/en-us/library/hh699800.aspx)を活用するシナリオで特に重要です。これには、dynamics 365 インスタンスと電子メールサービスの統合を可能にするためにユーザー名とパスワードを格納する必要があります。 
+Dynamics 365 は、ユーザー名や電子メールのパスワードなどの機密情報を含む既定のエンティティ属性のセットに対して、Microsoft SQL Server の標準のセルレベルの暗号化を使用します。 この機能は、組織が FIPS 140-2 に関連するコンプライアンス要件を満たすのに役立ちます。 フィールドレベルのデータ暗号化は、 [Microsoft DYNAMICS CRM 電子メールルーター](https://technet.microsoft.com/library/hh699800.aspx)を活用するシナリオで特に重要です。これには、dynamics 365 インスタンスと電子メールサービスの統合を可能にするためにユーザー名とパスワードを格納する必要があります。 
 
 Dynamics 365 のすべてのインスタンスは、 [MICROSOFT SQL Server 透過的データ暗号化](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)(tde) を使用して、ディスクへの書き込み時にデータのリアルタイム暗号化 (rest) を実行します。 TDE は、SQL Server、Azure SQL Database、および Azure SQL Data Warehouse のデータファイルを暗号化します。 既定では、Microsoft は Dynamics 365 のインスタンスのデータベース暗号化キーを格納して管理します。 (Dynamics 365 で財務用に使用されるキーは、.NET Framework データ保護 API によって生成されます)。 
 

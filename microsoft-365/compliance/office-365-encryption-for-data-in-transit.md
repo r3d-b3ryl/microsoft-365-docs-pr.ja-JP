@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: '概要: 転送中に Microsoft がデータを暗号化する方法を簡単に説明します。'
-ms.openlocfilehash: ba1317a0a2a685d0f3ac2216939d04e402503e49
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 571a0e28386539058a9998f703d7b4537e1a155a
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086670"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38690742"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>転送中のデータの Office 365 暗号化
 
@@ -33,9 +33,9 @@ ms.locfileid: "37086670"
 
 Office 365 サーバー間のデータセンター間通信は TLS または IPsec 経由で行われ、すべてのお客様向けのサーバーは、クライアントマシンとの TLS を使用してセキュリティで保護されたセッションをネゴシエートします (例: Exchange Online では、256ビットの暗号強度で TLS 1.2 が使用されます) (FIPS140-2 レベル 2-検証)。 (Office 365 でサポートされている TLS 暗号スイートの一覧については、「 [office 365 の暗号化に関する技術リファレンスの詳細](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221)」を参照してください)。これは、Outlook、Skype for Business、web 上の Outlook などのクライアントによって使用されるプロトコル (例: HTTP、POP3 など) に適用されます。
 
-公開証明書は、microsoft IT SSL によって発行された microsoft IT SSL で、送信された情報の機密性を保護するための内部 Microsoft ツールです。 Microsoft によって発行されるすべての証明書の長さは2048ビットです。また、 [Webtrust](http://www.webtrust.org/homepage-documents/item70372.pdf)コンプライアンスでは、証明書が microsoft によって所有されるパブリック IP アドレスにのみ発行されるようにするために、ssladmin が必要になります。 この条件を満たすことができない IP アドレスは、例外プロセスを経由してルーティングされます。
+公開証明書は、microsoft IT SSL によって発行された microsoft IT SSL で、送信された情報の機密性を保護するための内部 Microsoft ツールです。 Microsoft によって発行されるすべての証明書の長さは2048ビットです。また、Webtrust コンプライアンスでは、証明書が Microsoft によって所有されるパブリック IP アドレスにのみ発行されるようにするために、SSLAdmin が必要になります。 この条件を満たすことができない IP アドレスは、例外プロセスを経由してルーティングされます。
 
-使用されている TLS のバージョン、転送機密性 (FS) が有効になっているかどうか、暗号スイートの順番など、すべての実装の詳細を公開できます。 これらの詳細を確認する方法の1つは、Qualys SSL Labs (www.ssllabs.com) などのサードパーティの web サイトを使用することです。 次のサービスの情報を表示する Qualys からの自動テストページへのリンクを以下に示します。
+使用されている TLS のバージョン、転送機密性 (FS) が有効になっているかどうか、暗号スイートの順番など、すべての実装の詳細を公開できます。 これらの詳細を確認する1つの方法は、 [QUALYS SSL Labs](https://www.ssllabs.com)などのサードパーティの web サイトを使用することです。 次のサービスの情報を表示する Qualys からの自動テストページへのリンクを以下に示します。
 
 - [Office 365 ポータル](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)
 - [Exchange Online](https://www.ssllabs.com/ssltest/analyze.html?d=outlook.office365.com&hideResults=on)
