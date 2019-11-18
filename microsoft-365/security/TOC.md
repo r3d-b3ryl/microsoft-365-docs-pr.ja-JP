@@ -222,6 +222,7 @@
 
 ##### [EOP サービスを設定する](./office-365-security/set-up-your-eop-service.md)
 ###### [EOP を構成するためのベスト プラクティス](./office-365-security/best-practices-for-configuring-eop.md)
+###### [EOP および Office365 ATP セキュリティを構成するためのベスト プラクティス](./office-365-security/best-practices-for-eop-office365-atp.md)
 ###### [EOP 設定を複数のテナントに適用するスクリプトのサンプル](./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 ###### [ドメインと設定を 1 つの EOP 組織から別の EOP 組織に移動する](./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
 ###### [Google Postini、Barracuda Spam & Virus Firewall、または Cisco IronPort から EOP に切り替える](./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)
