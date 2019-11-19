@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for Business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
-ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686875"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699687"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -145,7 +145,7 @@ ms.locfileid: "38686875"
 |**演算子**|**用途**|**説明**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|指定されたすべてのキーワードまたは`property:value`式を含むアイテムを返します。 たとえば、は`from:"Ann Beebe" AND subject:northwind` 、件名行に "northwind" が含まれている、彩 Beebe が送信したすべてのメッセージを返します。 <sup>2</sup>|
-|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> クエリ`keyword1 + keyword2` (記号の**+** 後にスペースを含む) は、* * 演算子と * * 演算子を使用した場合と同じではありません。 This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
+|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> クエリ`keyword1 + keyword2` (記号の**+** 後にスペースを含む) は、 **and**演算子を使用した場合と同じではありません。 This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|指定した1つ以上のキーワードまた`property:value`は式を含むアイテムを返します。 <sup>2</sup>|
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT kind: im|キーワードまたは`property:value`式で指定された項目を除外します。 2番目の例では、彩 Beebe によって送信されたメッセージを除外します。 3番目の例では、会話履歴メールボックスフォルダーに保存されている Skype for Business の会話など、インスタントメッセージングの会話を除外します。 <sup>2</sup>|
 |-|keyword1 -keyword2|**NOT** 演算子と同じです。 そのため`keyword1` 、このクエリは、を含むアイテムを返し、 `keyword2`を含むアイテムを除外します。|
@@ -203,7 +203,7 @@ ms.locfileid: "38686875"
 |:-----|:-----|
 |メッセージの種類| 検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |参加者|電子メールメッセージ内のすべての人物フィールド。 これらのフィールドは、From、To、Cc、および Bcc です。|
-|種類|電子メールアイテムのメッセージクラスプロパティ。 このプロパティは、ItemClass email プロパティと同じです。 複数値の条件でもあります。 そのため、複数のメッセージクラスを選択するには、 **CTRL**キーを押したまま、条件に追加するドロップダウンリストで2つ以上のメッセージクラスをクリックします。 リストで選択した各メッセージクラスは、対応する検索クエリの**or**演算子によって論理的に接続されます。  <br/> Exchange によって使用さ**れるメッセージクラス**(および対応するメッセージクラス ID) の一覧については、「[アイテムの種類とメッセージクラス](https://go.microsoft.com/fwlink/?linkid=848143)」を参照してください。|
+|型|電子メールアイテムのメッセージクラスプロパティ。 このプロパティは、ItemClass email プロパティと同じです。 複数値の条件でもあります。 そのため、複数のメッセージクラスを選択するには、 **CTRL**キーを押したまま、条件に追加するドロップダウンリストで2つ以上のメッセージクラスをクリックします。 リストで選択した各メッセージクラスは、対応する検索クエリの**or**演算子によって論理的に接続されます。  <br/> Exchange によって使用さ**れるメッセージクラス**(および対応するメッセージクラス ID) の一覧については、「[アイテムの種類とメッセージクラス](https://go.microsoft.com/fwlink/?linkid=848143)」を参照してください。|
 |Received|電子メール メッセージが受信者によって受信された日付。 これは、Received メール プロパティと同じプロパティです。|
 |受信者|電子メールメッセージ内のすべての受信者フィールド。 これらのフィールドは、[宛先]、[Cc]、および [Bcc] になります。|
 |Sender|電子メール メッセージの差出人。|

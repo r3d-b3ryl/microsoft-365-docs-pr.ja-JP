@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 52b5718ecbd558cf1bf5e89702b6574c87841040
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 069f4dac1b04a75ff30339f8cecde4e8f82c044a
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690695"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699737"
 ---
 # <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>コンプライアンスオファリング: 刑事司法 Information Services (CJIS) セキュリティポリシー
 
@@ -53,13 +53,13 @@ FBI では、CJIS 要件に対する Microsoft コンプライアンスの証明
 
 [Microsoft CJIS のクラウドの要件](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states"></a>米国での CJIS の状態
+## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>米国での CJIS の状態 (9/23/2019 の時点での現在の状態)
 
-36の状態と、管理契約を含むコロンビアの地域。グリーンのマップで強調表示されているものは次のとおりです。
+37の状態と、管理契約を含むコロンビアの地域。グリーンのマップで強調表示されているものは次のとおりです。
 
-Alabama、アラスカ、Arkansas、アリゾナ、カリフォルニア、コロラド、フロリダ、ジョージア、ジョージア、イリノイ、インディアナ、アイオワ、カンザス、ケンタッキー、ミシガン、ミネソタ、モンタナ、ネバダ、、北ジョージア、オクラホマ、オレゴン、、北カロライナ、、オレゴン、ペンシルバニア、ロードアイランド、サウスカロライナ、テネシー、テキサス、ユタ、バーモント、バージニア、ワシントン、ワシントン D.C.、West バージニア。
+Alabama、アラスカ、Arkansas、アリゾナ、カリフォルニア、コロラド、フロリダ、ジョージア、ジョージア、イリノイ、インディアナ、アイオワ、カンザス、ケンタッキー、ミシガン、ミネソタ、モンタナ、ネバダ、、北ジョージア、オクラホマ、オレゴン、、北カロライナ、、オレゴン、ペンシルバニア、ロードアイランド、サウスカロライナ、テネシー、テキサス、ユタ、バーモント、バージニア、ワシントン、ワシントン D.C.、West バージニア、ウィスコンシン。
 
-適用可能な CJIS 規制統制に準拠する Microsoft のコミットメントにより、犯罪司法機関はクラウドベースのソリューションを実装し、CJIS のセキュリティポリシー v2.0 に準拠することができます。
+適用可能な CJIS 規制統制に準拠した Microsoft のコミットメントにより、犯罪司法機関はクラウドベースのソリューションを実装し、CJIS Security Policy v2.0 に準拠することができます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
