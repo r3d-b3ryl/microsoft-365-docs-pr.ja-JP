@@ -49,9 +49,6 @@
 #### [ユーザーにセキュリティ センターへのアクセス権を付与する](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
-
-
-
 ### [脅威からの保護](./office-365-security/protect-against-threats.md)
 #### [スパム対策とマルウェア対策の保護](./office-365-security/anti-spam-and-anti-malware-protection.md)
 ##### [高度なスパム フィルター処理オプション](./office-365-security/advanced-spam-filtering-asf-options.md)
@@ -141,7 +138,6 @@
 ##### [悪意のあるファイルの情報を表示する](./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md)
 
 
-
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
 #### [新着情報]()
 ##### [Office 365 ATP の新機能](office-365-security/whats-new-in-office-365-atp.md)
@@ -182,6 +178,7 @@
 #### [Office 365 セキュリティ インシデント対応](./office-365-security/office365-security-incident-response-overview.md)
 #### [Microsoft Office 365 での不正な同意付与の検出と修復](./office-365-security/detect-and-remediate-illicit-consent-grants.md)
 #### [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+#### [侵害された Office 365 電子メール アカウントへの対応](office-365-security/responding-to-a-compromised-email-account.md)
 
 ### [メール フロー]()
 #### [レポート メッセージ アドインを有効にする](./office-365-security/enable-the-report-message-add-in.md)
@@ -222,7 +219,7 @@
 
 ##### [EOP サービスを設定する](./office-365-security/set-up-your-eop-service.md)
 ###### [EOP を構成するためのベスト プラクティス](./office-365-security/best-practices-for-configuring-eop.md)
-###### [EOP および Office365 ATP セキュリティを構成するためのベスト プラクティス](./office-365-security/best-practices-for-eop-office365-atp.md)
+###### [EOP および Office 365 ATP セキュリティを構成するための推奨設定](./office-365-security/recommended-settings-for-eop-and-office365-atp.md)
 ###### [EOP 設定を複数のテナントに適用するスクリプトのサンプル](./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 ###### [ドメインと設定を 1 つの EOP 組織から別の EOP 組織に移動する](./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
 ###### [Google Postini、Barracuda Spam & Virus Firewall、または Cisco IronPort から EOP に切り替える](./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)

@@ -16,14 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワードのリセットを構成してテストします。'
-ms.openlocfilehash: 4ddcb0718fbb5546a0e37b648b698b46d7e55ec0
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 3ad5a1477bfc40b541c0b048b9b68b896a748e0a
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640726"
+ms.locfileid: "38673373"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
+
+*このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
 
 Azure Active Directory (Azure AD) のセルフサービスによるパスワードのリセット (SSPR) によって、ユーザーは自分のパスワードまたはアカウントをリセットまたはロック解除することができます。 
 

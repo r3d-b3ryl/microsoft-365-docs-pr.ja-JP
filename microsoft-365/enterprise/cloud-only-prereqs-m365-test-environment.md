@@ -13,14 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: eb70153bc2868289fde41ad9a68ffa3a44b01b59
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6e0796d24f2644907d214c4528eab2051fa3d83c
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627373"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673233"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
+
+*このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
 
 [ID とデバイスのアクセス構成](microsoft-365-policies-configurations.md)は、構成と条件付きアクセス ポリシーのセットで、Office 365 および Microsoft 365 Enterprise の Microsoft Intune などを含めた、Azure Active Directory (Azure AD) と統合されているすべてのサービスへのアクセスを保護します。
 
