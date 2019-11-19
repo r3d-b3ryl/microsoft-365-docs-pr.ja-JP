@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、機密データを保護します。
-ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676010"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704077"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -233,4 +233,4 @@ ATP の安全なリンクを設定するには、[この短いトレーニング
 
 3. 結果が表示されたら、 **Microsoft Intune**の横にある [開始] を選択して、後で見つけやすいようにします。
 
-管理センターに加えて、Intune を使用して組織のデバイスを登録および管理することができます。 詳細については、「 [Windows デバイスの登録方法](https://docs.microsoft.com/intune/enrollment-method-capabs)」および「 [Intune によって管理されるデバイスの登録オプション](https://docs.microsoft.com/intune/enrollment-options)」を参照してください。
+管理センターに加えて、Intune を使用して組織のデバイスを登録および管理することができます。 詳細については、「 [Windows デバイスの登録方法](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab)」および「 [Intune によって管理されるデバイスの登録オプション](https://docs.microsoft.com/intune/enrollment-options)」を参照してください。

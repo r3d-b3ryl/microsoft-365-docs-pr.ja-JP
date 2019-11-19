@@ -7,18 +7,18 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
+ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627561"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38697160"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>ユーザーがデバイスを使えるようにする
 
 Microsoft マネージドデスクトップデバイスがエンドユーザーの手に入ってきたら、それをすぐに簡単に開始できます。 デバイスには、現在のバージョンの Windows が事前に構成されており、ユーザーがセットアップを完了したときに、構成とアプリがクラウドからインストールされます。 
  
-これをさらに簡単にするために、最初のセットアップについて説明するガイドを提供し、必要に応じて、セットアップと後で使用するためのヘルプリソースを用意しています。 このガイドをカスタマイズして、組織に固有の特定の詳細を含めることができます。 その後、自分のデバイスと共に、ユーザーにガイドを直接配布します。 2つのバージョンがあります。1つは Microsoft のサポートシステム (Get Help app) を使用する組織用で、もう1つは、独自の内部エンドユーザーサポートを提供するものです。
+これをさらに簡単にするために、最初のセットアップについて説明するガイドを提供し、必要に応じて、セットアップと後で使用するためのヘルプリソースを用意しています。 このガイドをカスタマイズして、組織に固有の特定の詳細を含めることができます。 その後、自分のデバイスと共に、ユーザーにガイドを直接配布します。 2つのバージョンがあります。1つは Microsoft のサポートシステム (Get Help app) を使用する組織用で、もう1つはユーザーに対して別のサポートを提供するものです。
 
 ## <a name="to-prepare-the-guide"></a>ガイドを準備するには
 

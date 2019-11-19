@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: 5986e3fb7786ebb3fa7bcf42b34345be98af44a2
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633431"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704117"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
@@ -80,9 +80,8 @@ Microsoft 365 Business は、最大300のライセンスを想定しています
   
 オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルの Active Directory を保持する場合は、「 [Microsoft 365 Business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、 **azure ad に参加**しているデバイスにこれらのリソースへのアクセス権を与えることができます。
   
-Windows 10 Pc をセットアップした後、Office をデバイスに[自動的にインストール](auto-install-or-uninstall-office.md)することができます。 
   
-## <a name="contact-support"></a>サポートへのお問い合わせ
+## <a name="contact-support"></a>サポートに連絡
 
  **サポートに連絡する場合:**
   
