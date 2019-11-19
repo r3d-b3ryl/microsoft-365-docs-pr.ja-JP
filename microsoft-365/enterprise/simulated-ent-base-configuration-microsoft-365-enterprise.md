@@ -15,14 +15,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 用にシミュレートされたエンタープライズ テスト環境を作成します。
-ms.openlocfilehash: 5faa6857de42049cbcfc237e3e617de294794530
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: bbb3bc2fc7d2abab395dc50481f1955382eca144
+ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640389"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38694134"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
+
+*このテストラボ ガイドは、Microsoft 365 Enterprise および Office 365 Enterprise テスト環境に使用できます。*
 
 この記事では、次のものを含む Microsoft 365 Enterprise のシンプルな環境を作成するための詳しい手順について説明します。
 
@@ -136,7 +138,7 @@ $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name DC1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name DC1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 10.0.0.4
-$vm=New-AzVMConfig -VMName DC1 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName DC1 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for DC1."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName DC1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
@@ -242,7 +244,7 @@ $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name APP1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name APP1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
-$vm=New-AzVMConfig -VMName APP1 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName APP1 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for APP1."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName APP1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
@@ -300,7 +302,7 @@ $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name CLIENT1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
-$vm=New-AzVMConfig -VMName CLIENT1 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName CLIENT1 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"

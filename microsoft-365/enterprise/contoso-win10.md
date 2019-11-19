@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
-ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2080562aeb2f6359aa2a4f836de3406e4ca2439c
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627333"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672703"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 社の Windows 10 Enterprise 展開
-
-**概要:** Contoso 社が Microsoft Endpoint Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
 
 Microsoft 365 Enterprise の広範なロールアウトに先立ち、Contoso 社には、Windows 7 (10%)、Windows 8.1 (65%)、Windows 10 (25%) が混在する Windows 互換の PC とデバイスがありました。Contoso 社は、Windows 10 Enterprise 用の PC をアップグレードして、高度なセキュリティを利用したいと考え、更新プログラムの自動展開により IT 部門の負荷を削減しました。 
 
@@ -51,7 +49,7 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの前お�
 
   頻繁にクラッシュするデバイスを特定します。そのため、再構築または交換が必要になる可能性があり、デバイス クラッシュの原因となるデバイス ドライバーと、クラッシュの数を減らす可能性のあるドライバーの代替バージョンを提案します。 エンド ユーザーにプロンプ​​トを送信する Windows 情報保護の構成の誤りを通知します。
  
-Contoso 社には、既存の Configuration Manager (Current Branch) インフラストラクチャがあります。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Windows 10 Enterprise の展開と管理をより簡単で効率的にするための機能も組み込まれています。
+Contoso には、既存の Configuration Manager (Current Branch) インフラストラクチャがあります。 Configuration Manager は、大規模な環境向けに調整されていて、インストール、更新、設定についての詳細な制御を実現します。 さらに、組み込みの機能により、Windows 10 Enterprise の展開および管理が簡単で効率的になります。
 
 ## <a name="planning-process"></a>計画プロセス
 
