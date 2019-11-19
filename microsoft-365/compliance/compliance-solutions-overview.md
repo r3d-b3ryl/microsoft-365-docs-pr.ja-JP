@@ -12,16 +12,17 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 055954c7d2df878eb7ba2ed570c2176c439c89b2
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: bcdd08d48beeeb04c32f221504b5e3e7f996decf
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698419"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "38708146"
 ---
 # <a name="compliance-solutions"></a>コンプライアンス ソリューション
-このライブラリでは、[GDPR](gdpr.md) をはじめ、多くの組織に適用される規制の遵守作業に Microsoft 365 の機能を使用するための技術情報を提供します。 
+
+このライブラリでは、[GDPR](gdpr.md) をはじめ、多くの組織に適用される規制の遵守作業に Microsoft 365 の機能を使用するための技術情報を提供します。
 
 このライブラリにはさらにコンテンツを追加していきますが、Microsoft セキュリティ センターでコンプライアンスのリソースをご確認ください。
 - [コンプライアンスの概要](https://www.microsoft.com/trustcenter/compliance)
-- [コンプライアンス オファリング](https://www.microsoft.com/trustcenter/compliance/complianceofferings)
+- [コンプライアンス オファリング](offering-home.md)

@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5737cac2803c1ba74bc569e5e1206251bd1c8367
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: d68edbb64ae1c7b78661e765f8d270ee60fc271b
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431728"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "38710076"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -26,8 +26,8 @@ ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装�
 
 この記事は、ISO/IEC 27001 の要件を満たすための取り組みで利用できる、優先順位付けされたアクション プランについて説明しています。このアクション プランは、法令遵守を専門とする Microsoft のパートナーである Protiviti と提携して作成されました。Microsoft Ignite でこのアクション プランを使用する方法については、Maithili Dandige (Microsoft) と Antonio Maio (Protiviti) によるセッション「[Microsoft 365 準拠のパスと情報保護戦略を図化する](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions)」に参加してご確認ください。
 
-
 ## <a name="action-plan-outcomes"></a>アクション プランの結果
+
 これらの推奨事項は、以下の結果に基づいて 3 段階の論理的な順序で提供されます。 
 
 |||
@@ -37,10 +37,8 @@ ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装�
 |90 日間|**Microsoft 365 のセキュリティ機能を使用して環境へのアクセスを制御し、定義した標準業務手順書 (SOP) に従って組織の情報と資産を保護します。**<br>• 多要素認証や先進認証などの ID と認証のソリューションを有効にして、管理者とエンド ユーザーのアカウントを保護します。<br>• ユーザー アカウントの資格情報を管理および保護するための強力なパスワード ポリシーを確立します。<br>• 機密データをメールで送信する際にエンド ユーザーが組織の SOP に準拠できるようにするメッセージ暗号化機能を設定し、展開します。<br>• 悪意のあるコードから保護して、データ侵害の防止策と対応策を実装します。<br>• データ損失防止 (DLP) ポリシーを構成して、機密データの特定、保護、およびアクセス制御を行います。<br>• 確実に企業ポリシーに従って、機密データが保存され、アクセスされるようにします。<br>• フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。
 |90 日以降|**Microsoft 365 の高度なデータ ガバナンス ツールと情報保護を使用して、個人データの継続的な管理プログラムを実装します。**<br>• ドキュメントやメールの個人情報を自動的に識別します。<br>• モバイル デバイスで保存およびアクセスされる機密データを組織全体で保護し、必ずデータに対して準拠した会社のデバイスを使用します。<br><br>**Microsoft 365 および他のクラウド アプリケーション間で進行中のコンプライアンスを監視します。**<br>• 標準業務手順書 (SOP) に対するパフォーマンスを評価するには、Microsoft コンプライアンス マネージャーを使用して、組織の情報セキュリティ ポリシーとその実装に対する定期的な評価を実行します。<br>• 情報セキュリティ管理システムを継続的に評価および監視します。<br>• 高レベルのアクセス許可を持つすべてのユーザーおよびグループ (特権ユーザーまたは管理ユーザー) を制御し定期的に評価します。<br>• 特権 ID を保護し、特権アクセスを厳密に制御するための Microsoft 365 の機能を展開および構成します。<br>• 標準業務手順書 (SOP) の一環として、Office 365 監査ログを検索し、テナントの構成設定の変更、エンド ユーザーの権限昇格、および危険なユーザー アクティビティを確認します。<br>• クラウド アプリケーションの組織の使用状況を監視し、高度な警告ポリシーを実装します。<br>• 危険なアクティビティを追跡して、潜在的な悪意のある管理者を特定し、データ侵害を調査し、コンプライアンス要件が満たされていることを確認します。
 
-
-
-
 ## <a name="30-days--powerful-quick-wins"></a>30 日間 — 強力で迅速な成功
+
 タスクはすぐに実行できますので、ユーザーへの影響は少なくて済みます。
 
 |||
@@ -51,10 +49,8 @@ ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装�
 |標準業務手順書 (SOP) の一環として監査および責任ポリシーを作成することにより、情報セキュリティに関連する記録が紛失、削除、改ざん、または不正アクセスされないようにします。|[Office 365 の監査ログ記録](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)と[メールボックス監査](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)を (すべての Exchange メールボックスに対して) 有効にして、潜在的な悪意のあるアクティビティがないか Office 365 を監視し、データ侵害のフォレンジック分析を可能にします。<br>• 通常のスケジュールで Office 365 テナントの監査ログを検索し、テナントの構成設定に加えられた変更を確認します。<br>• ユーザー アカウントの権限の昇格が発生した場合など、機密性の高いアクティビティに対して、Microsoft 365 セキュリティ/コンプライアンス センターの [Office 365 アラート ポリシー](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264)を有効にします。<br>• Office 365 監査ログ データを長期間保存するには、[Office 365 マネージメント アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用して、セキュリティ情報およびイベント管理 (SIEM) ツールと統合します。
 |組織のための管理者ロールおよびセキュリティ ロールと共に、業務の分離に関連する適切な方針を定義します。|• 管理業務の分離を可能にするために、[Office 365 の管理者ロール](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a)を活用します。メモ: Office 365 の多くの管理者ロールには、Exchange Online、SharePoint Online、Skype for Business Online で対応するロールがあります。<br>• 一人の管理者が必要以上に大きいアクセス権を持たないようにするため、アクセス許可を分割します。|
 
+## <a name="90-days--enhanced-protections"></a>90 日間 — 保護の強化
 
-
-
-## <a name="90-days--enhanced-protections"></a>90 日間 — 保護の強化 
 タスクの計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。 
 
 |||
@@ -63,8 +59,8 @@ ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装�
 |Microsoft 365 のセキュリティ機能を使用して環境へのアクセスを制御し、定義した標準業務手順書 (SOP) に従って組織の情報と資産を保護します。|• すべてのユーザー アカウントで多要素認証 (MFA) を有効にし、すべてのアプリで先進認証を有効にするなど、[ID とデバイス アクセス ポリシー](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)を実装することによって、管理者とエンド ユーザーのアカウントを保護します。<br>• ユーザー アカウントの資格情報を管理および保護するための[強力なパスワード ポリシー](https://www.microsoft.com/research/publication/password-guidance/)を確立します。<br>• 機密データをメールで送信する際にエンド ユーザーが組織の SOP に準拠できるように [Office 365 Message Encryption (OME)](https://support.office.com/article/office-365-message-encryption-f87cb016-7876-4317-ae3c-9169b311ff8a) を設定します。<br>• 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) を展開します。<br>•  金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)するための [Office 365 Data Loss Prevention (DLP)](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) ポリシーを構成、テスト、展開します。<br>•  [ポリシーヒント](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)を設定することで、メール送信者に対して — 悪意あるメッセージを送信する前でも、ポリシーに違反する可能性があることを自動通知することができます。 ポリシーヒントは、Outlook、Outlook on the web、デバイス用 OWA に短いメモとして表示するよう設定でき、メール送信者がメッセージ作成中にポリシーに違反する可能性があることを通知します。<br>• [Office 365 Advanced Threat Protection (ATP)](https://support.office.com/article/office-365-advanced-threat-protection-e100fe7c-f2a1-4b7d-9e08-622330b83653) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
 
 
-
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 日以上 – 継続的なセキュリティ、データ管理、および報告
+
 保存中および送信中の個人データをセキュリティ保護し、データ侵害の検出および対応を行い、セキュリティ対策の定期的なテストを容易にします。これらは、これまでの作業に基づいて構築された重要なセキュリティ対策です。  
 
 
@@ -74,16 +70,7 @@ ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装�
 |Microsoft 365 の高度なデータ ガバナンス ツールと情報保護を使用して、個人データの継続的な管理プログラムを実装します。|• [Office 365 アドバンスト データ ガバナンス](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365)を使用して、Office 365  ラベルを自動的に適用することによって、ドキュメントおよびメール内の個人情報を特定します。<br>• [Microsoft Intune](https://docs.microsoft.com/intune/) を使用して、モバイル デバイスで保存およびアクセスされる機密データを組織全体で保護し、必ずデータに対して準拠した会社のデバイスを使用します。|
 |Microsoft 365 および他のクラウド アプリケーション間で進行中のコンプライアンスを監視します。|• 標準業務手順書 (SOP) に対するパフォーマンスを評価するには、[Microsoft コンプライアンス マネージャー](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)を継続的に使用して、組織の情報セキュリティ ポリシーとその実装に対する定期的な ISO 27001:2013 評価を実行します。<br>• 情報セキュリティ管理システムを継続的に評価および監視します。<br>•   [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) を使用して、高レベルのアクセス許可を持つすべてのユーザーおよびグループ (特権ユーザーまたは管理ユーザー) を管理し、定期的に評価します。<br>•　[Office 365 での特権アクセスの管理](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365)を展開、設定し、Office 365 の特権的管理タスクを細かくアクセス制限できるようにします。  有効にした後は、ユーザーはジャスト イン タイムのアクセスを要求し、広範囲で時間に制約がある承認ワークフローを介して、特権的管理タスクを完了する必要があります。<br>• 標準業務手順書 (SOP) の一環として、Office 365 監査ログを検索し、テナントの構成設定の変更、エンド ユーザーの権限昇格、および危険なユーザー アクティビティを確認します。<br>•   [所有者以外のメールボックス アクセス](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports)を監査して、潜在的な情報漏洩を特定し、すべての Exchange Online メールボックスに対する所有者以外のアクセスを積極的に確認します。<br>• [Office 365 アラート ポリシー、データ損失防止レポート、Microsoft Cloud App Security](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data) を使用して、組織のクラウド アプリケーションの使用状況を監視し、ヒューリスティックおよびユーザー アクティビティに基づいて高度なアラート ポリシーを実装します。<br>• [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して、危険なアクティビティを追跡して、潜在的な悪意のある管理者を特定し、データ侵害を調査し、コンプライアンス要件が満たされていることを確認します。|
 
-
-
-
-
-
-
 ## <a name="learn-more"></a>詳細情報
 
-Microsoft セキュリティ センター: [ISO/IEC 27001:2013 情報セキュリティ管理の標準](https://www.microsoft.com/TrustCenter/Compliance/ISO-IEC-27001)
-
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
+- Microsoft セキュリティ センター: [ISO/IEC 27001:2013 情報セキュリティ管理の標準](offering-iso-27001.md)
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

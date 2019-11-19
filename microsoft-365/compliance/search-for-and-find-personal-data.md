@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office 365 の個人データを検索する方法について説明します。
-ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086353"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38710082"
 ---
 # <a name="search-for-and-find-personal-data"></a>個人データの検索
 
@@ -79,7 +79,7 @@ Office 365 に含まれている機密情報の種類を使用して個人デー
 
 このトピックでは、欧州連合の市民に適用される機密情報の種類の一部がリストされています。 GDPR コンプライアンスを支援できる新しい追加については、セキュリティ センターまたはコンプライアンス センターを確認してください。
 
-また次の記事も参照してください: [機密情報の種類と、それぞれの検索対象の一覧](https://support.office.com/ja-JP/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)
+また次の記事も参照してください: [機密情報の種類と、それぞれの検索対象の一覧](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)
 
 機密情報の種類は、自動化されたプロセスが銀行口座番号、健康保険番号、クレジット カード番号などの特定の情報の種類を認識できる方法を定義します。機密情報の種類は条件とも呼ばれます。機密情報の種類はパターンで定義され、正規表現または関数で識別できます。機密情報の種類はさらに、キーワードやチェックサムなどの確証的な証拠を使用して識別することもできます。また、評価プロセスでは信頼度や近接度も使用されます。
 
@@ -97,7 +97,7 @@ Office 365 に含まれている機密情報の種類を使用して個人デー
 <tbody>
 <tr class="odd"><td align="left"><p>セキュリティ/コンプライアンス センターでコンテンツ検索に進む</p></td>
 <td align="left"><p>セキュリティ/コンプライアンス センターの左側のウィンドウで、**[検索と調査]** &gt; **[コンテンツ検索]** の順にクリックします。</p>
-<p>「<a href="https://support.office.com/ja-JP/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Office 365 のセキュリティ/コンプライアンス センターでコンテンツ検索を実行する</a>」を参照してください。</p></td>
+<p>「<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Office 365 のセキュリティ/コンプライアンス センターでコンテンツ検索を実行する</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>それぞれの機密情報の種類に新しい検索項目を作成する</p></td>
@@ -110,14 +110,14 @@ Office 365 に含まれている機密情報の種類を使用して個人デー
 <p>SensitiveType:&quot;France Passport Number&quot;</p>
 </blockquote>
 <p>SharePoint (OneDrive for Business を含む) に、検索の範囲を指定します。構文が完全に一致し、余分なスペースや入力ミスがないことを確認してください。</p>
-<p>「<a href="https://support.office.com/ja-JP/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">サイトに保存された機密データを検索するクエリの形成</a>」を参照してください。</p></td>
+<p>「<a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">サイトに保存された機密データを検索するクエリの形成</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>各検索の結果を確認します。</p></td>
 <td align="left"><p>次のような種類の問題を確認して、クエリの精度が正確かどうかを判断します。</p>
 <p><li>誤検知が多い</li></p>
 <p><li>データの既知のインスタンスがない</li></p>
-<p>「<a href="https://support.office.com/ja-JP/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Office 365 セキュリティ/コンプライアンス センターの検索結果をエクスポートする</a>」を参照してください。</p>
+<p>「<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Office 365 セキュリティ/コンプライアンス センターの検索結果をエクスポートする</a>」を参照してください。</p>
 <p>注: Mozilla Firefox または Chrome を使用している場合、最初に Internet Explorer または Edge を使用してレポートをダウンロードし、必要なアドオンをインストールする必要があります。</p></td>
 </tr>
 </tbody>
@@ -217,4 +217,4 @@ Office 365 に含まれている機密情報の種類を使用して個人デー
 
 注: "SensitiveType" は大文字と小文字を区別しますが、クエリの残りの部分では区別しません。
 
-プロパティと演算子を使用してクエリを調整する方法を示すこともできます。詳細とその他の例については、「[サイトに保存された機密データを検索するクエリの形成](https://support.office.com/ja-JP/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)」を参照してください。
+プロパティと演算子を使用してクエリを調整する方法を示すこともできます。詳細とその他の例については、「[サイトに保存された機密データを検索するクエリの形成](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)」を参照してください。

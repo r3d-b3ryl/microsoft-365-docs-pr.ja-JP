@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Office 365 のユーザー メールボックスに一括インポートする方法について説明します。'
-ms.openlocfilehash: a11bd934cf45a8f90ae7f558814a1b6d9e839914
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8596108902cadd82cbab4bd128d457858b5c63c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087091"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38710092"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Office 365 にインポートする
 
@@ -127,11 +127,11 @@ ms.locfileid: "37087091"
     
 3. 次のコマンドを実行して、PST ファイルを Office 365 にアップロードします。
 
-    ```
+    ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
   
     ```
- 
+
     > [!IMPORTANT] 
     > 前のコマンドでは、ソースの場所としてディレクトリを指定する必要があります。個々の PST ファイルを指定することはできません。 ソース ディレクトリにあるすべての PST ファイルがアップロードされます。
  
@@ -147,9 +147,8 @@ ms.locfileid: "37087091"
    
 各パラメーターの実際の値を使う AzCopy.exe ツールの構文の例を以下に示します。
     
-```
+```powershell
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-  
 ```
 
 コマンドを実行すると、PST ファイルのアップロードの進行状況を示す状態メッセージが表示されます。 最終的なステータス メッセージには、正常にアップロードされたファイルの合計数が表示されます。
@@ -200,8 +199,7 @@ PST ファイルを Office 365 組織の Azure Storage の場所にアップロ�
     
 2. CSV ファイルを開くか、ローカル コンピューターに保存します。次の例は、完了した PST インポートのマッピング ファイル (メモ帳で開いた) を示しています。Microsoft Excel を使って CSV ファイルを編集するほうが、はるかに簡単です。
 
-
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -214,6 +212,7 @@ PST ファイルを Office 365 組織の Azure Storage の場所にアップロ�
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
+    
     CSV ファイルの先頭行やヘッダー行には、PST ファイルをユーザー メールボックスにインポートするために PST インポート サービスで使うパラメーターが一覧表示されます。 各パラメーター名はコンマで区切られています。 ヘッダー行の下の各行は、特定のメールボックスに PST ファイルをインポートするためのパラメーター値を表します。 ユーザー メールボックスにインポートする各 PST ファイルには行が必要です。 必ずマッピング ファイル内のプレースホルダーのデータを実際のデータに置き換えてください。
 
    **注: **SharePoint パラメーターなど、ヘッダー行は何も変更しないでください。これらは PST インポートの処理中、無視されます。 
@@ -354,7 +353,7 @@ PST ファイルを Office 365 組織の Azure Storage の場所にアップロ�
   
 - 手順 1 で取得する Shared Access Signature (SAS) URL の例を示します。 この例には、PST ファイルを Office 365 にアップロードするために AzCopy.exe ツールで実行するコマンドの構文も含まれています。 パスワードや他のセキュリティ関連の情報を保護するのと同じように、SAS URL を保護する予防措置を講じる必要があります。
 
-    ```
+    ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y

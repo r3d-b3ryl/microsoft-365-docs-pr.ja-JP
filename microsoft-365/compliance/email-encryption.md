@@ -15,18 +15,18 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: Office Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Office 365 での暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
-ms.openlocfilehash: 79a7ddd13e437255fa671e949236c879b235c2ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70c22f9627c804c201cb23b7b3c38a4f6a349ece
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085916"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708149"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 の電子メールの暗号化
 
 この記事では、Office Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Office 365 での暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
   
-Office 365 では、電子メールのセキュリティのビジネス ニーズを満たすために複数の暗号化オプションが提供されています。 この記事では、Office 365 でメールを暗号化する 3 つの方法を紹介します。 Office 365 のすべてのセキュリティ機能については、[Office 365 トラスト センター](http://go.microsoft.com/fwlink/p/?LinkID=282470)にアクセスしてください。 この記事では、Office 365 管理者が Office 365 で電子メールを保護する上で役立つ次の 3 つの種類の暗号化を紹介します。
+Office 365 では、電子メールのセキュリティのビジネス ニーズを満たすために複数の暗号化オプションが提供されています。 この記事では、Office 365 でメールを暗号化する 3 つの方法を紹介します。 Office 365 のすべてのセキュリティ機能については、[Office 365 トラスト センター](https://go.microsoft.com/fwlink/p/?LinkID=282470)にアクセスしてください。 この記事では、Office 365 管理者が Office 365 で電子メールを保護する上で役立つ次の 3 つの種類の暗号化を紹介します。
   
 - Office Message Encryption (OME)。
 
@@ -66,7 +66,7 @@ Office 365 内の組織間、または Office 365 と Office 365 外部の信頼
 
 ## <a name="what-encryption-options-are-available-for-my-office-365-subscription"></a>使用中の Office 365 サブスクリプションでは、どの暗号化オプションを利用できますか?
 
-Office 365 サブスクリプションの電子メール暗号化オプションについては、「[Exchange Online サービスの説明](https://technet.microsoft.com/ja-JP/library/exchange-online-service-description.aspx)」を参照してください。 ここでは、次の暗号化の機能に関する情報を確認できます。
+Office 365 サブスクリプションの電子メール暗号化オプションについては、「[Exchange Online サービスの説明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)」を参照してください。 ここでは、次の暗号化の機能に関する情報を確認できます。
   
 - Azure RMS、IRM 機能と OME の両方を含む
 
@@ -92,7 +92,7 @@ Office 365 で、PGP (Pretty Good Privacy) などのサードパーティ製の�
   
 **IRM**
   
-[Exchange Online での Information Rights Management](https://technet.microsoft.com/ja-JP/library/jj983436%28v=exchg.150%29.aspx)
+[Exchange Online での Information Rights Management](https://technet.microsoft.com/library/jj983436%28v=exchg.150%29.aspx)
   
 [Azure Active Directory Rights Management の概要](https://technet.microsoft.com/library/jj585026)
   
@@ -106,4 +106,4 @@ Office 365 で、PGP (Pretty Good Privacy) などのサードパーティ製の�
   
 **TLS**
   
-[Office 365 でコネクタを使用してメール フローを構成する](https://technet.microsoft.com/ja-JP/library/jj723138%28v=exchg.150%29.aspx)
+[Office 365 でコネクタを使用してメール フローを構成する](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)

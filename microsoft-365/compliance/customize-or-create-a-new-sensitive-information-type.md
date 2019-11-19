@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: GDPR のための Office 365 の機密情報の種類を変更または新規作成する方法について説明します。
-ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085216"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708156"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>機密情報の種類をカスタマイズまたは新規作成する
 
@@ -71,7 +71,7 @@ ms.locfileid: "37085216"
 
 7.  新しい機密情報の種類をアップロードします。
 
-8.  機密情報を識別するため、コンテンツを再クロールします。「[サイトのクロールとインデックス再作成を手動で要求する](https://support.office.com/ja-JP/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)」を参照してください。
+8.  機密情報を識別するため、コンテンツを再クロールします。「[サイトのクロールとインデックス再作成を手動で要求する](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)」を参照してください。
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>例: "EU のデビット カード番号" の機密情報の種類の変更
 
@@ -141,15 +141,15 @@ ms.locfileid: "37085216"
 
 KQL を使ったクエリの生成と最適化を行うために使うリソース:
 
--   [キーワード クエリ言語 (KQL) 構文のリファレンス (DMC)](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [キーワード クエリ言語 (KQL) 構文のリファレンス (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [コンテンツ検索を実行する](https://support.office.com/ja-JP/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [コンテンツ検索を実行する](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-コンテンツ検索では、KQL クエリと機密情報の種類を開発するのに役立つ他のリソースとしてキーワードを使用できます。キーワードのリストを使用する理由は、各キーワードに一致する項目の数を示す統計を得ることができるからです。これにより、最も効果的 (および不適切) なキーワードをすばやく識別することができます。検索統計の詳細については、「[コンテンツ検索結果のキーワード統計の表示](https://support.office.com/ja-JP/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)」を参照してください。
+コンテンツ検索では、KQL クエリと機密情報の種類を開発するのに役立つ他のリソースとしてキーワードを使用できます。キーワードのリストを使用する理由は、各キーワードに一致する項目の数を示す統計を得ることができるからです。これにより、最も効果的 (および不適切) なキーワードをすばやく識別することができます。検索統計の詳細については、「[コンテンツ検索結果のキーワード統計の表示](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)」を参照してください。
 
 各行のキーワードは、作成された検索クエリの OR 演算子によって結合されます。1 つの行でキーワード フレーズ (かっこで囲まれている) を使用することもできます。
 
-詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://support.office.com/ja-JP/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)」を参照してください。
+詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)」を参照してください。
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>例—コンテンツ検索を使って電子メール アドレスを識別する
 
@@ -374,7 +374,7 @@ Contoso は、内部対応、外部対応、ドキュメントなどで、常に
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
-\<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"\>
+\<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"\>
 
 \<RulePack id="130ae63b-a91e-4a12-9e02-a90e36a83d7f"\>
 

@@ -11,17 +11,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: DLP ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: f6d6d69f7c776b9b49ea360367117a9ce86293b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085535"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38708163"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
 
@@ -41,7 +42,7 @@ DLP では、次のことができます。
 
 -   組織の DLP ポリシーと一致するコンテンツを示す DLP レポートを表示します。
 
-詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/ja-JP/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
+詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
 
 ![データ損失防止ポリシーを作成するためのオプション](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -119,7 +120,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 <thead>
 <tr class="header">
 <th align="left"><strong>コントロール</strong></th>
-<th align="left">[<strong>設定</strong>]</th>
+<th align="left"><strong>設定</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -142,7 +143,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 <tr class="odd">
 <td align="left">コンテンツがポリシーの設定に一致する場合にユーザーに通知する</td>
 <td align="left"><p>このボックスをチェックします ([ユーザーにポリシー ヒントを表示して電子メール通知を送信する])。</p>
-<p>[ヒントとメールをカスタマイズする] をクリックし、環境に合わせてこれらを更新します。この記事の既定の通知 [<a href="https://support.office.com/ja-JP/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">メール通知を送信し、DLP ポリシーのポリシー ヒントを表示する</a>] を参照してください。</p></td>
+<p>[ヒントとメールをカスタマイズする] をクリックし、環境に合わせてこれらを更新します。この記事の既定の通知 [<a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">メール通知を送信し、DLP ポリシーのポリシー ヒントを表示する</a>] を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td align="left">特定の量の機密情報が同時に共有されている場合に検出します。</td>
@@ -177,7 +178,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 <thead>
 <tr class="header">
 <th align="left"><strong>保護の範囲</strong></th>
-<th align="left"><strong>Capabilities</strong></th>
+<th align="left"><strong>機能</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -300,7 +301,7 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 詳しくは、以下の資料を参照してください。
 
--   [SharePoint Online 環境の外部共有を管理する](https://support.office.com/ja-JP/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [SharePoint Online 環境の外部共有を管理する](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/ja-JP/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
@@ -327,17 +328,17 @@ SharePoint と OneDrive for Business のデバイス アクセス ポリシー�
 <tr class="odd">
 <td align="left">SharePoint 管理センター</td>
 <td align="left">はい</td>
-<td align="left">はい</td>
-<td align="left">はい</td>
-<td align="left">はい</td>
+<td align="left">○</td>
+<td align="left">○</td>
+<td align="left">○</td>
 <td align="left">はい</td>
 </tr>
 <tr class="even">
 <td align="left">Azure Active Directory</td>
 <td align="left"></td>
 <td align="left">はい</td>
-<td align="left">はい</td>
-<td align="left">はい</td>
+<td align="left">○</td>
+<td align="left">○</td>
 <td align="left">はい</td>
 </tr>
 <tr class="odd">
@@ -351,7 +352,7 @@ SharePoint と OneDrive for Business のデバイス アクセス ポリシー�
 </tbody>
 </table>
 
-詳細: [SharePoint Online 管理センター: 非管理対象デバイスからのアクセスをコントロールします](https://support.office.com/ja-JP/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
+詳細: [SharePoint Online 管理センター: 非管理対象デバイスからのアクセスをコントロールします](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>ID とデバイスのサービス アクセスの保護
 
@@ -359,9 +360,9 @@ SharePoint と OneDrive for Business のデバイス アクセス ポリシー�
 
 ID とデバイスのアクセス保護は、ID が侵害されず、デバイスが安全で、デバイス上でアクセスされる組織データが分離され保護されるようにする保護のベースラインを提供します。
 
-開始時の推奨事項と構成のガイダンスについては、「[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](https://docs.microsoft.com/ja-JP/microsoft-365-enterprise/microsoft-security-guidance)」を参照してください。
+開始時の推奨事項と構成のガイダンスについては、「[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)」を参照してください。
 
-AD FS を使用するハイブリッド ID 環境については、「[推奨されるセキュリティ ポリシーと構成](https://docs.microsoft.com/ja-JP/microsoft-365-enterprise/microsoft-security-guidance)」を参照してください。
+AD FS を使用するハイブリッド ID 環境については、「[推奨されるセキュリティ ポリシーと構成](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)」を参照してください。
 
 次の図は、クラウド サービス (SaaS、PaaS)、アカウントの種類 (テナント ドメイン アカウントと B2B アカウント)、およびサービス アクセス機能の関連について説明しています。どの機能を B2B アカウントで使用できるかを銘記することが重要です。
 

@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '概要: SharePoint Online チーム サイトを作成し、さまざまなレベルの情報保護用に構成します。'
-ms.openlocfilehash: 2ddf3de7180d384c387bdc335afda6214508e3c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ff892d57d4fe6e707e4cbcb4f1562a3594fe70b
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070712"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38708166"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3 層の保護用に SharePoint Online サイトを展開する
 
@@ -46,7 +47,7 @@ ms.locfileid: "37070712"
     
 4. **[サイトの作成]** ページで、 **[チーム サイト]** をクリックします。
     
-5. **[サイト名]** にパブリック チーム サイト名を入力します。 
+5. **[サイト名]** にパブリック チーム サイト名を入力します。
     
 6. **[Team site description]\(チーム サイトの説明\)** に、サイトの目的の説明を入力します。
     
@@ -70,7 +71,7 @@ ms.locfileid: "37070712"
     
 4. **[サイトの作成]** ページで、 **[チーム サイト]** をクリックします。
     
-5. **[サイト名]** にプライベート チーム サイト名を入力します。 
+5. **[サイト名]** にプライベート チーム サイト名を入力します。
     
 6. **[チーム サイトの説明]** で、サイトの目的の説明を入力します。
     
