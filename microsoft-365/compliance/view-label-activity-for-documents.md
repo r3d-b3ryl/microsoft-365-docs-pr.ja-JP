@@ -1,24 +1,26 @@
 ---
 title: ドキュメントのラベル アクティビティを表示する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナントで生じている事柄を明確に把握できます。
-ms.openlocfilehash: 6b68c82e364432107d616c5184959cd879cdcb9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99e3f461ed1ff38b2f204a2823299a3c441c995f
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086461"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38710090"
 ---
 # <a name="view-label-activity-for-documents"></a>ドキュメントのラベル アクティビティを表示する
 
@@ -36,7 +38,7 @@ ms.locfileid: "37086461"
     
 - 各ドキュメントだけでなくフォルダーのラベル アクティビティも表示。今後は、ラベルが付けられたフォルダーの中のファイル数が表示される予定。
     
-ラベル アクティビティ エクスプローラーにアクセスするには、セキュリティ&amp;コンプライアンス センター>**[データ ガバナンス]** > **[ラベル アクティビティ エクスプローラー]** の順に移動します。
+ラベル アクティビティ エクスプローラーにアクセスするには、セキュリティ &amp; コンプライアンス センターで **[情報ガバナンス]** > **[ラベル アクティビティ エクスプローラー]** の順に移動します。
   
 なお、ラベル アクティビティ エクスプローラーには、Office 365 Enterprise E5 サブスクリプションが必要となります。
   
