@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38686780"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718686"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー) を使用する
 
@@ -383,7 +383,7 @@ Office 365 および ISO 27001 の評価の例を次に示します。 最初の
 
 1. テンプレート-評価
 2. ControlFamily
-3. Actions
+3. アクション
 4. Ownership
 5. Dimensions
 
@@ -421,13 +421,13 @@ Office 365 および ISO 27001 の評価の例を次に示します。 最初の
 
 - **Actiondimensionvalues:** 次の形式を使用して、[ディメンション] タブの該当するディメンションの二重セミコロンで区切られたリストです。
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
-    例:
+    次に例を示します。
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -459,15 +459,15 @@ Office 365 および ISO 27001 の評価の例を次に示します。 最初の
 - Hyperlinks
 - 太字
 
-行頭文字は、Word または Excel の行頭文字ではなく、アスタリスクで表されます。 例:
+行頭文字は、Word または Excel の行頭文字ではなく、アスタリスクで表されます。 次に例を示します。
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
 ```
 
-数字は数字として表されますが、インデントにスペースが含まれ (1 レベルに3スペース)、すべてのサブレベルで使用される数値のみ (たとえば、文字なし) になります。  例:
+数字は数字として表されますが、インデントにスペースが含まれ (1 レベルに3スペース)、すべてのサブレベルで使用される数値のみ (たとえば、文字なし) になります。  次に例を示します。
    1. アイテム A
    2. アイテム B
       1. サブアイテム A
@@ -478,17 +478,18 @@ Office 365 および ISO 27001 の評価の例を次に示します。 最初の
       2. サブアイテム B
    5. アイテム E
 
-ハイパーリンクを構成するには、ハイパーリンクテキストをかっこで囲み、角かっこの直後にハイパーリンク自体をかっこで囲んで記述します。  例:
+ハイパーリンクを構成するには、ハイパーリンクテキストをかっこで囲み、角かっこの直後にハイパーリンク自体をかっこで囲んで記述します。  次に例を示します。
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 このテキストは、次のようにレンダリングされます。 Microsoft のホームページに移動するに[は、ここ](https://www.microsoft.com)をクリックします。
+
 上記の例のように、コンプライアンスマネージャーは、下線付きの Url を表示しません。
 
-太字のテキストは、太字で表示されるテキストの各側に2つのアスタリスクがあるだけです。  例:
+太字のテキストは、太字で表示されるテキストの各側に2つのアスタリスクが付いています。  次に例を示します。
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **このテキストは太字で表示される**
