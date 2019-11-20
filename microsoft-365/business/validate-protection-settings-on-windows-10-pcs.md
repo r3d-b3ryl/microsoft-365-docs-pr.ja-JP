@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Windows 10 デバイスで Microsoft 365 Business app protection の設定を検証する方法について説明します。
-ms.openlocfilehash: 7710accf9a3cd1db788dd5215ab6d7bbb97e48a6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074382"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721862"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でアプリの保護設定を検証する
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>ユーザーが会社データを企業のデバイスの個人用ファイルにコピーできないことを確認する
 
-[アプリの保護ポリシーを設定](protection-settings-for-windows-10-devices.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。会社所有のデバイスの [ **ユーザーが会社のデータを個人用ファイルにコピーできないようにして、強制的に作業ファイルを OneDrive for Business に保存させる**] 設定を **オン**にした場合、Azure AD に接続してサインインした後に、ユーザーのデバイスでこの設定を確認できます。 
+[アプリの保護ポリシーを設定](protection-settings-for-windows-10-devices.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 **[** ユーザーが会社の**データを個人用ファイルにコピーできないよう**にする] をオンにして、会社が所有しているデバイスの OneDrive for business の設定に対して作業ファイルの保存を強制する場合は、Azure AD に接続してサインインした後、ユーザーのデバイス上でこれを確認できます。 
   
  **接続の設定を確認する**
   
@@ -38,11 +38,11 @@ ms.locfileid: "34074382"
     
     ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. [ \<テナント\>名**で管理**] ページで、次の図に示すような**管理サーバーのアドレス**を含む**接続情報**が表示されます。 
+2. [ \<テナント\>名**で管理**] ページで、次の図に示すような**管理サーバーのアドレス**を含む**接続情報**を確認できます。 
     
     ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
- **会社のデータを管理されていないアプリに貼り付けることができないことを確認する**
+ **非管理対象アプリに会社のデータを貼り付けることができないことを確認する**
   
 1. Microsoft 365 Business によってインストールされた Outlook 2016 を開きます。
     
@@ -50,7 +50,7 @@ ms.locfileid: "34074382"
     
     メモ帳を開き、そこにコンテンツを貼り付けようとします。
     
-    アプリがコンテンツにアクセスできないというエラーが表示されます。
+    アプリがコンテンツにアクセスできないことを示すエラーが表示されます。
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
@@ -60,7 +60,7 @@ ms.locfileid: "34074382"
 
  **接続の設定を確認する**
   
-1. On your Windows 10 personal device where you are logged in as a local user, go to **Windows Settings** and click or tap **Accounts** \> **Access work or school**.
+1. ローカルユーザーとしてログインしている windows 10 個人用デバイスで、[windows の**設定**] に移動して、[**アカウント** \> **アクセスの職場または学校**] をクリックまたはタップします。
     
 2. [ **職場または学校にアクセスする**] の下で [ **接続**] を選びます。
     
@@ -68,13 +68,13 @@ ms.locfileid: "34074382"
     
 4. [ **職場または学校にアクセスする**] ページで、[ **職場または学校アカウント**] を選んで、[ **情報**] を選びます。
     
-    ![Click or tap Info on the Work or school account dalog.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![[職場または学校のアカウント] ダイアログの [情報] をクリックまたはタップします。](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. [ **職場または学校にアクセスする**] ページで、 **wip**  および  **mam**  の単語を含む、次の図のような [ *管理サーバー アドレス*] が示された [ *接続情報*] を表示できます。 
+5. Access の**職場または学校**のページには、次の図に示すよう**な管理サーバーのアドレス**を含む**接続情報**が表示され、その中に「 *wip* and *mam* 」という単語が含まれています。 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
- **会社のデータを管理されていないアプリに貼り付けることができないことを確認する**
+ **非管理対象アプリに会社のデータを貼り付けることができないことを確認する**
   
 1. Outlook 2016 を開いて、必要に応じて Microsoft 365 Business アカウントを追加し、Microsoft 365 Business の資格情報でサインインします。
     

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business で多要素認証をセットアップします。
-ms.openlocfilehash: 3aa08670551da3754784237e14a35e94c6f64250
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59a3ff7a9494ccfc44fa701c6f605a9bd9eeafcf
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575625"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715059"
 ---
 # <a name="multi-factor-authentication"></a>多要素認証
 
@@ -31,7 +31,7 @@ ms.locfileid: "37575625"
 
 ## <a name="set-up-mfa-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで MFA をセットアップする
 
-[![[ラベル] 管理センターが変更されたことを知らせるために、aka.ms/aboutM365preview で詳細を確認できます。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 1. グローバル管理者の資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
 2. 左側のナビゲーションで、[**セットアップ**] を選択します。
@@ -40,4 +40,4 @@ ms.locfileid: "37575625"
 
   :::image type="content" source="media/turnonmfa.png" alt-text="[MFA] ページを有効にするスクリーンショット。":::
 
-5. [ **Strenghen サインインセキュリティ**] パネルで、[**管理者に対して多要素認証を必要とする**] または [**ポリシーの作成**] を選択します。
+5. [**サインインセキュリティを強化**する] パネルで、[**管理者に対して多要素認証を必要とする**] の両方をオンにして、[ポリシーの**作成**] を選択します。

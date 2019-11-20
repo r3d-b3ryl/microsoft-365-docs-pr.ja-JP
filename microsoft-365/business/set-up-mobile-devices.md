@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: IPhone または Android 電話機に Office をインストールすると、Office アプリの仕事ファイルは Microsoft 365 Business によって保護されます。
-ms.openlocfilehash: 6dd18569f0d4b3c71f00004706c2430eb7c5ae43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: e09db43705d601df0c0b30a46ee36cf0295ecae3
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575610"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718941"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする
 
@@ -58,11 +58,11 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 ![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-組織がアプリ上のファイルを保護している場合は、組織がアプリ内のデータを現在保護しており、使用を継続するには、アプリを再起動する必要があることを示すダイアログが表示されます。[ **OK**] をタップして Outlook を終了します。 
+組織がアプリ内のファイルを保護している場合は、アプリ内のデータが組織で保護されており、アプリを再起動して引き続き使用できることを示すダイアログが表示されます。 [ **OK**] をタップして Outlook を終了します。 
   
-![Screenshot that showa your organization is now protecting your Outlook app](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![組織が Outlook アプリを保護していることを示すスクリーンショット](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-iPhone で Outlook を見つけて、再起動します。求められたら、PIN を入力し、確認します。これで iPhone で Outlook を使用できるようになりました。
+iPhone で Outlook を見つけて、再起動します。 プロンプトが表示されたら、PIN を入力して確認します。 これで iPhone で Outlook を使用できるようになりました。
   
 ![Set a PIN to access your organization's data](media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
@@ -72,11 +72,11 @@ Android phone でのセットアップを開始するには、再生ストアに
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Google Play の検索ボックスで「Microsoft Outlook」と入力し、[ **インストール**] をタップします。Outlook のインストールが終了したら、[ **開く**] をタップします。
+[Google Play] 検索ボックスに「Microsoft Outlook」と入力し、[**インストール**] をタップします。 Outlook のインストールが完了したら、 **[開く**] をタップします。
   
 ![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-In the Outlook app tap **Get Started**, then add your Microsoft 365 Business email account \> **Continue**, and sign in with your organization credentials.
+Outlook アプリで、[**開始**] をタップし、Microsoft 365 Business \> **メールアカウントを**追加して、組織の資格情報でサインインします。
   
 ![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -84,7 +84,7 @@ Intune ポータル サイト アプリをインストールする必要があ�
   
 ![Tap on Go to store to get Intune Company Portal app](media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-Play ストアで、Intune ポータル サイトをインストールします。
+[ストアの再生] で、Intune ポータルサイトをインストールします。
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   

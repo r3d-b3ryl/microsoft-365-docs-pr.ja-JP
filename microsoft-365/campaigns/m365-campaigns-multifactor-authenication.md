@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 多元的認証を設定します。
-ms.openlocfilehash: cd14bb0d0f24215c64579851fe6982c5bf1ddc3e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 8bd3d4e0c2a918d5b8dbf0c763444bb0a1cff466
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772494"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748358"
 ---
 # <a name="set-up-multifactor-authentication"></a>多元的認証を設定する
 
@@ -38,4 +38,4 @@ ms.locfileid: "35772494"
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>デバイスで Outlook アプリを使用する
 
-管理者が MFA を使用するように求められ、認証の2番目の形式としてオーセンティケータアプリを設定した後は、Outlook アプリをインストールして使用することをお勧めします。キャンペーンの電子メールについては、Microsoft 365 にアクセスするために使用することをお勧めします。 「Outlook を含む Office アプリを電話にインストールする方法」の「[モバイルデバイスをセットアップ](../business/set-up-mobile-devices.md)する」を参照してください。
+管理者が MFA を使用する必要があり、認証の2番目の形式としてオーセンティケータアプリを設定した後は、Outlook アプリをインストールして使用し、Microsoft 365 にアクセスしてキャンペーンの電子メールを利用することをお勧めします。 「Outlook を含む Office アプリを電話にインストールする方法」の「[モバイルデバイスをセットアップ](../business/set-up-mobile-devices.md)する」を参照してください。

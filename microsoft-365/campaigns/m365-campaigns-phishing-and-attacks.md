@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 04779d1c69b57811cf493a9f48185eed2435c82e
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029061"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748258"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から保護する
 
@@ -36,7 +36,6 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 - **フィッシング**フィッシング詐欺とは、正当なように見えても、個人情報を取得したり、お客様の金銭を盗み出したりすることを目的とした電子メールのことです。
 - **スプーフィング**Scammers では、スプーフィングと呼ばれる手法を使用して、自分から電子メールを受信したかのように表示することもできます。 
 - **マルウェア**は、コンピューターにインストールできる悪意のあるソフトウェアです。通常は、リンクをクリックするか、電子メールからドキュメントを開いた後にインストールします。 さまざまな種類のマルウェア (たとえば、ランサムウェアなど) がありますが、それらのマルウェアを使用したくありません。 
-
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -70,11 +69,9 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
- 
-
 ## <a name="set-it-up"></a>設定する
 
 詳細については、以下を参照してください。
-- [Office を使用してファイルと通信を安全に保つ](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [仕事での安全性と秘密を維持する](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Office を使用して、ファイルと通信を安全に保つことが](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)できます。
+- [安全でプライベートな仕事を](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)します。
   

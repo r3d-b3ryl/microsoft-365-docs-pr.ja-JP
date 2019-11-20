@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Microsoft 365 Business ユーザー用に Windows 10 Pro を実行している Windows デバイスをセットアップする方法について説明します。 '
-ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575570"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718881"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーの Windows デバイスをセットアップする
 
@@ -41,7 +41,7 @@ Windows デバイスを Windows 10 Pro Creators Update にアップグレード�
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Windows 10 デバイスを組織の Azure AD に参加させる
 
-組織内のすべての Windows デバイスを Windows 10 Pro Creators Update にアップグレードしたか、既に Windows 10 Pro Creators Update が実行されている場合は、これらのデバイスを組織の Azure Active Directory に参加させることができます。デバイスを参加させると、デバイスは自動的に Windows 10 Business にアップグレードされます。これは、Microsoft 365 Business サブスクリプションの一部です。
+組織内のすべての Windows デバイスを Windows 10 Pro クリエーターの更新プログラムにアップグレードするか、または Windows 10 Pro クリエーターの更新プログラムを既に実行している場合は、これらのデバイスを組織の Azure Active Directory に参加させることができます。 参加したデバイスは、Microsoft 365 Business サブスクリプションの一部である Windows 10 Business に自動的にアップグレードされます。
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>新しい、または新たにアップグレードした Windows 10 Pro デバイスについて
 
@@ -89,7 +89,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-ファイルを OneDrive for Business にアップロードした場合、それらの同期を取り消します。サードパーティ製のツールを使用してプロファイルとファイルを移行した場合は、これらも新しいプロファイルに同期します。
+ファイルを OneDrive for Business にアップロードした場合、それらの同期を取り消します。 サードパーティ製のツールを使用してプロファイルとファイルを移行した場合は、それらを新しいプロファイルにも同期します。
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>デバイスが Azure AD に接続されていることを確認する
 
@@ -97,7 +97,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
 [同期の状態] ページで、[同期] をクリックして PC で最新のモバイル デバイス管理ポリシーを取得します。
   
-Microsoft 365 Business アカウントの使用を開始するには、Windows の [ **開始**] ボタンに移動し、現在のアカウントの画像を右クリックして、[ **アカウントの切り替え**] をクリックします。自分の組織のメール アドレスとパスワードを使用してサインインします。
+Microsoft 365 Business アカウントの使用を開始するには、Windows の [**スタート**] ボタンに移動し、現在のアカウントの画像を右クリックして、**アカウントを切り替え**ます。 自分の組織のメール アドレスとパスワードを使用してサインインします。
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

@@ -1,5 +1,5 @@
 ---
-title: セットアップの概要
+title: 手順の概要
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,24 +22,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Microsoft 365 Business のセットアップ手順の概要について説明します。
-ms.openlocfilehash: 3e1cf240db673a7b961ec8aa574f3e09efee476b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+description: Microsoft 365 Business のセットアップ手順の概要。
+ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676030"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721561"
 ---
 # <a name="overview-of-setup"></a>手順の概要
 
-セットアップ手順のほとんどはセットアップウィザードで行うことができますが、その他のオプションも表示されます。
-
+セットアップの手順のほとんどはセットアップウィザードで行うことができますが、その他のオプションも表示されます。
 
 ## <a name="step-1-add-your-domain-and-users"></a>手順 1: ドメインとユーザーを追加する
 
    - **[ドメインを追加](set-up.md#add-your-domain-to-personalize-sign-in)** します ([サインアップ](sign-up.md)中にドメインを購入した場合、この手順は既に完了しています)。
 
-    - **ユーザーを追加**します。 これは、次の3つの方法のいずれかで行うことができます。
+    - **ユーザーを追加**します。 次の3つの方法のいずれかでユーザーを追加できます。
         - [ウィザード](set-up.md#add-users-in-the-wizard)で。
         - オンプレミスの Active directory を使用している場合は、ディレクトリ同期を使用して、 [AZURE AD Connect を使用してユーザーを追加](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)します。
         - 後で管理センターで[ユーザーを追加](add-users-m365b.md)することもできます。
@@ -65,21 +64,21 @@ ms.locfileid: "38676030"
 
    Windows 10 デバイスを Azure AD に参加させると、[手順 2](#step-2-set-up-security-policies-and-configure-devices)で設定したポリシーが適用されます。
 
-   - Windows 10 Pro は Microsoft 365 Business の[前提条件](pre-requisites-for-data-protection.md)ですが、Windows 7 Pro、Windows 8 pro、または Windows 8.1 Pro を使用している場合は、サブスクリプションによって[windows 10 pro へのアップグレード](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)ができます。
+   - Windows 10 Pro は Microsoft 365 Business の[前提条件](pre-requisites-for-data-protection.md)ですが、Windows 7 Pro、Windows 8 pro、または Windows 8.1 Pro をご利用の場合は、サブスクリプションで[windows 10 pro へのアップグレード](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)をお勧めします。
     - [セットアップウィザード](set-up.md#protect-data-and-devices)を使用して、Windows 10 デバイスのポリシーを構成します。
 
-## <a name="stes-4-install-office-365-business"></a>Stes 4: Office 365 Business をインストールする
+## <a name="step-4-install-office-365-business"></a>手順 4: Office 365 Business をインストールする
 - [セットアップウィザード](set-up.md#deploy-office-365-client-apps)を使用して、Windows デバイスに Office を自動的にインストールすることができます。
 - ユーザーが Windows およびデバイス用の[Office アプリをインストール](https://docs.microsoft.com/office365/admin/setup/install-applications)できるようにします。
      
 ## <a name="advanced"></a>詳細情報
 - **自動操縦を使用して新しいデバイスをセットアップする**
             
-     [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、ユーザーに対して**新しい**windows 10 デバイスを自動的に事前構成することができますが、これを実行できる[パートナー](https://www.microsoft.com/solution-providers/search)を取得する方が簡単な場合があります。 [Microsoft ストア](https://go.microsoft.com/fwlink/?linkid=874598)に移動して、クラウドテクノロジエキスパートに購入した新しいデバイスのセットアップを依頼することもできます。
+     [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、ユーザーに対して**新しい**windows 10 デバイスを自動的に事前構成することができますが、これを実行できる[パートナー](https://www.microsoft.com/solution-providers/search)を取得する方が簡単な場合があります。 [Microsoft ストア](https://go.microsoft.com/fwlink/?linkid=874598)に移動し、クラウドテクノロジエキスパートに依頼して、購入する新しいデバイスをセットアップすることもできます。
 
 - **オンプレミス リソースへのアクセス**
 
-     - 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法は推奨されており、この状態のデバイスはハイブリッド Azure AD 参加デバイスと呼ばれます。
+     - 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法をお勧めします。この状態のデバイスは、ハイブリッド Azure AD 参加デバイスと呼ばれます。
 
     - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、「 [Microsoft 365 business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、azure ad に参加しているデバイスにこれらのリソースへのアクセス権を付与できます。
 

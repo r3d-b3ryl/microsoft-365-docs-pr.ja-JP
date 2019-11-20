@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business を購入してサインアップする方法について説明します。
-ms.openlocfilehash: ef34a3e2bc848ce98efb2218f7bdd9b2a186b6b2
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968785"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718721"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Microsoft 365 Business へのサインアップ
 
@@ -35,7 +35,7 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 - **Microsoft パートナーの**場合: パートナーである場合は、「Microsoft[パートナーセンターから microsoft 365 Business を取得](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)する」を参照してください。
 - **Microsoft ストアのヘルプを参照**してください。 [Microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)にアクセスします。 Microsoft ストアは、プランに関する質問を支援したり、ビジネスニーズに合ったプランを購入したり、設定を完了したりするのに役立ちます。
 
-**別のものが必要ですか。** 次の操作を実行できます。
+**別のものが必要ですか。** 次の操作を実行できます:
 - [Office 365 プランを Microsoft 365 Business にアップグレード](migrate-to-microsoft-365-business.md)します。
 - 1か月間、Microsoft 365 Business の[無料試用版を取得](https://go.microsoft.com/fwlink/p/?linkid=2102309)します。
 - 機能が少ないプランを必要とする場合は、 [Office 365 Business Premium にサインアップして](https://go.microsoft.com/fwlink/p/?LinkID=510935)ください。 各ビジネスプランに含まれる[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)について説明します。
@@ -46,10 +46,10 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 お客様のビジネス向けに Microsoft 365 にサインアップして購入するには、次の手順を実行します。
 
 1. [ [Microsoft 365 for business] ページ](https://go.microsoft.com/fwlink/?linkid=2109654)で、[**プラン & の価格を表示**する] を選択します。 
-2. 次のページで、月間費用を調べ、ページを下にスクロールして、Microsoft 365 Business に含まれているものに関する詳細を確認します。 [Microsoft 365 Business] で、[**今すぐ購入**] を選択します。
+2. 次のページで、月間費用を調べ、ページを下にスクロールして、Microsoft 365 Business に含まれているものに関する情報を確認します。 [Microsoft 365 Business] で、[**今すぐ購入**] を選択します。
 3. [ **Microsoft 365 Business をお選びいただきありがとうござい**ます] ページで、開始するための情報を入力します。
 4. **手順 1**で、既に使用している電子メールアドレスを入力します。 これは、現在の勤務先の電子メールアドレス、またはセットアップ中に Microsoft が通信するために使用するすべてのアドレスになることができます。 また、請求書と更新に関する情報を送信する住所でもあります。 次に、[**アカウントの設定**] を選択します。
-5. **手順 2**で、名前、勤務先電話番号、会社名、場所を入力します。 お客様の国または地域によって、Microsoft から受け取るサービスが正確に決定されることに注意してください。この手順の完了後に変更することはできません。 **[次へ]** を選択します。
+5. **手順 2**で、名前、勤務先電話番号、会社名、場所を入力します。 お客様の国または地域では、Microsoft から受け取るサービスを正確に決定しており、この手順を完了した後に変更することはできません。 **[次へ]** を選択します。
     > [!NOTE]
     > 会社名は管理センターに表示されます。ここでは、Microsoft 365 ユーザー、ライセンスなどを管理します。 また、すべての内部 (SharePoint) サイトの Url にも含めることができます。
 6. **手順 3**:
@@ -66,7 +66,7 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
         
         - **不明またはドメイン名を既に所有している** 
         
-             [ **Microsoft ドメインを今すぐ取得**] を選択します。 この方法では何もコストがかかりません。後で、ビジネスのためにカスタム名を取得し&mdash;たり、既に所有しているユーザーに接続したりすることができます。
+             [ **Microsoft ドメインを今すぐ取得**] を選択します。 これには費用はかかりません。後で、ビジネスのためのカスタム名を取得したり、既に所有しているものに接続したりできます。 その方法について説明します。
 
     3. [**次**へ] を選択して、ユーザー ID とビジネス電子メールアドレスを作成します。 使用する名前 (別名とも呼ばれます) を入力します。 たとえば、Robert Young は RobY または RobYoung を作業エイリアスとして使用することがあります。 パスワードを追加して、[**サインアップ**] を選択します。 パスワードをメモしておきます。 手順1で入力したアドレスに電子メールを送信して、ユーザー ID を知らせます。
 7. **手順 4**: 

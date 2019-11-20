@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 Business の保護レベルの向上に関するヘルプを利用する
-ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676105"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748308"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -59,11 +59,11 @@ Office 365 または Microsoft 365 環境にはマルウェアからの保護が
 
 ## <a name="protect-against-ransomware"></a>ランサムウェアから保護する
 
-ランサムウェアは、ファイルの暗号化またはコンピューター画面のロックによってデータへのアクセスを制限します。 その後、データにアクセスするために exchange では、通常、ビットコインのような cryptocurrencies のような形式で "ransom" を要求することによって、被害からのデータを組み込みます。 
+ランサムウェアは、ファイルの暗号化またはコンピューター画面のロックによってデータへのアクセスを制限します。 その後、データへのアクセスについては、通常はビットコインのような cryptocurrencies の形式で "ransom" を要求することによって、被害からの外に対して extort を試行します。 
   
 ランサムウェアから保護するには、1つまたは複数のメールフロールールを作成して、ランサムウェアに対してよく使用されるファイル拡張子をブロックするか (「[メールでマルウェアに対する保護レベルを高める](#raise-the-level-of-protection-against-malware-in-mail)」を参照)、または電子メールでこれらの添付ファイルを受信するユーザーに警告します。
 
-前の手順でブロックしたファイルに加えて、マクロを含む Office ファイル添付ファイルを開く前に、ユーザーに警告するルールを作成することをお勧めします。 ランサムウェアは、マクロ内で非表示にすることができます。そうしないと、ユーザーが知らないユーザーからこれらのファイルを開かないように警告されます。
+前の手順でブロックしたファイルに加えて、マクロを含む Office ファイル添付ファイルを開く前に、ユーザーに警告するルールを作成することをお勧めします。 ランサムウェアは、マクロ内で非表示にすることができます。そのため、ユーザーが知らないユーザーからこれらのファイルを開かないように警告します。
 
 メールトランスポートルールを作成するには、次のようにします。
   
@@ -128,7 +128,6 @@ Office 365 または Microsoft 365 環境用に1つ以上のカスタムドメ�
   
 最も重要なユーザーとカスタムドメインを保護するためのポリシーを作成して、この保護を開始することをお勧めします。 
 
-  
 ATP のフィッシング対策ポリシーを作成するには、[この短いトレーニングビデオ](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)をご覧ください。または、次の手順を実行します。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。 
@@ -139,7 +138,7 @@ ATP のフィッシング対策ポリシーを作成するには、[この短い
     
 4. [**フィッシング対策**] ページで、[ **+ 作成**] を選択します。 ウィザードが起動して、フィッシング対策ポリシーを定義する手順を実行します。
     
-5. 下の表に示す推奨事項に従って、ポリシーの名前、説明、および設定を指定します。 詳細については、「 [ATP のフィッシング対策ポリシーのオプションについ](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)て」を参照してください。 
+5. 下の表に示す推奨事項に従って、ポリシーの名前、説明、および設定を指定します。 詳細については、「 [ATP のフィッシング対策ポリシーオプション](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)の詳細」を参照してください。 
     
 6. 設定を確認した後、必要に応じて [**このポリシーを作成**する] または [**保存**] を選択します。
     
@@ -157,11 +156,11 @@ ATP のフィッシング対策ポリシーを作成するには、[この短い
    
 詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)セットアップする」を参照してください。
   
-## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>高度な脅威保護 (ATP) を使用して悪意のある添付ファイル、ファイル、およびリンクから保護する
+## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>高度な脅威保護 (ATP) を使用して、悪意のある添付ファイル、ファイル、およびリンクから保護する
 
 ![をhttps://aka.ms/aboutM365preview指すバナー。](../business/media/m365admincenterchanging.png)
 
-最初に、管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>で新しい管理センタープレビューが有効になっていることを確認してください。**新しい管理センターの**テキストの横にあるトグルをオンにします。
+最初に、管理センターで、新しい管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>プレビューが有効になっていることを確認してください。 **新しい管理センターの**テキストの横にあるトグルをオンにします。
 
    ![新しい管理センターのプレビューが表示されます。](media/previewon.png)
 
@@ -172,11 +171,11 @@ ATP のフィッシング対策ポリシーを作成するには、[この短い
     ![[高度な脅威からの保護を強化する] で [表示] を選択します。](media/startatp.png) 
 
 3. [**高度な脅威からの保護を強化**する] ページで、[**開始**] を選択します。
-4. 開いたウィンドウで、**電子メールのリンクと添付**ファイルの横にあるチェックボックスをオンにし、 **SharePoint、OneDrive、Teams でファイル**をスキャンし、[**アイテムをスキャンし、悪意のあるコンテンツを**スキャンする] の下にある**office デスクトップと office Online アプリのリンクをスキャン**します。
+4. 開いたウィンドウで、**電子メールのリンクと添付**ファイルの横にあるチェックボックス**** をオンにし、[アイテムをスキャンし、**悪意のあるコンテンツを**スキャンします] の下にある**office デスクトップと office Online アプリのリンク**をスキャンします。
 
       - [**電子メールのリンクと添付ファイル**] で、[すべてのユーザー] またはスキャンする電子メールの特定のユーザーを入力します。
 
-    ![「Protestion の高度な脅威からのすべてのチェックボックスをオンにする」を確認してください。](media/setatp.png)
+    ![[高度な脅威からの保護を強化する] のすべてのチェックボックスをオンにします。](media/setatp.png)
 5. [**ポリシーの作成**] を選択して、atp の安全な添付ファイルと atp の安全なリンクを有効にします。
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで ATP の安全な添付ファイルを設定する
@@ -288,9 +287,9 @@ Microsoft 365 Business サブスクリプションで監査ログの検索を有
 
 組織内のユーザーが自分の予定表を共有できないようにしたり、共有できるものを管理したりすることもできます。 たとえば、共有を空き時間情報のみに制限することができます。
 
-1. 管理<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>センターに移動し、[**設定** \> ] [**サービス & アドイン**] を選択します。
-2. [**サービス & アドイン**] ページで、[**予定表**] を選択し、組織内のユーザーが自分の予定表を Office 365 または Exchange を所有していないユーザーと共有できるようにするか、またはすべてのユーザーと共有するかを選択します。 
-    [すべてのユーザーと共有] を選択した場合は、空き時間情報のみを共有するように決定することもできます。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>の管理センターに移動して、[**設定** \> **サービス & アドイン**] を選択します。
+2. [**サービス & アドイン**] ページで、[**予定表**] を選択し、組織内のユーザーが自分の予定表を Office 365 または Exchange を使用していないユーザーや他のユーザーと共有できるかどうかを選択します。 
+    [他のユーザーと共有] オプションを選択すると、空き時間情報のみを共有するかどうかを決定することができます。
 
 3. ページの下部にある [**変更の保存**] を選択します。
 

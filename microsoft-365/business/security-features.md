@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Microsoft 365 Business に付属しているセキュリティ機能について説明します。
-ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031447"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715144"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business security and コンプライアンス機能
 
@@ -37,10 +37,9 @@ Microsoft 365 Business では、Pc、携帯電話、タブレットでデータ�
 
 管理センターでは、Microsoft 365 Business セキュリティ機能の多くを管理することができます。これにより、これらの機能を簡単にオンまたはオフにすることができます。 管理センターでは、次の操作を実行できます。
   
-  
 - [Android または iOS デバイスのアプリケーション管理設定を設定](app-protection-settings-for-android-and-ios.md)します。 
     
-    これらの設定には、設定期間後に非アクティブなデバイスからファイルを削除する、作業ファイルを暗号化する、ユーザーに PIN を設定することなどが含まれます。
+    これらの設定には、設定期間後に非アクティブなデバイスからファイルを削除したり、作業ファイルを暗号化したり、ユーザーに PIN の設定を要求したりすることが含まれます。
     
 - [Windows 10 デバイスのアプリケーション保護設定を設定](protection-settings-for-windows-10-devices.md)します。 
     
@@ -68,14 +67,14 @@ Microsoft 365 Business の高度な機能を使用すると、サイバー脅威
     
   - 高度な添付ファイルスキャンと AI による分析により、危険なメッセージを検出して破棄します。
     
-  - 電子メール内のリンクの自動チェックを行い、それらがフィッシングスキームの一部であるかどうかを評価します。 これにより、安全でない web サイトへのアクセスが安全に保たれます。
+  - 電子メール内のリンクの自動チェックを行って、それらがフィッシングスキームの一部であるかどうかを評価します。 これにより、安全でない web サイトへのアクセスが安全に保たれます。
 
 - **[Azure portal の Intune のすべての機能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    Azure portal の Intune 管理センターにアクセスすることにより、Microsoft では提供されていない、Windows 用アドバンストデバイス管理と共に、MacOS デバイス、iPhone、Android デバイスの管理など、追加のセキュリティ機能を設定できます。365 Business 管理センター
+    Azure portal で Intune 管理センターにアクセスすると、MacOS デバイス、iPhone、Android デバイスの管理などの追加のセキュリティ機能を、Microsoft では利用できない Windows のアドバンストデバイス管理と共にセットアップすることができます。365 Business 管理センター
 - **Azure AD P1 プランと同じ[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
-    条件付きアクセスでは、サインインリスクから組織を保護したり、予期しないネットワークまたはロケールからのアクセス試行、アクセス試行が危険なデバイスの種類などになったりすることを防止できます。 条件付きアクセスポリシーは、最初の認証が完了した後に適用され、最初の認証イベントからの信号を使用して、試行されたアクセスを承認、拒否、またはその他の証明 (2 番目の形式など) があるかどうかを判断します。必須。
+    条件付きアクセスでは、サインインリスクから組織を保護したり、予期しないネットワークまたはロケールからのアクセス試行、危険なデバイスの種類からのアクセス試行などを行ったりすることができます。 条件付きアクセスポリシーは、最初の認証が完了した後に適用され、最初の認証イベントからの信号を使用して、試行されたアクセスを承認するか、拒否するか、またはその他の校正を行うかどうかを決定します (第2の形式のid) は必須です。
 
     含まれている条件付きアクセス機能は次のとおりです。
 
@@ -85,7 +84,7 @@ Microsoft 365 Business の高度な機能を使用すると、サイバー脅威
     - アクセスに MFA を必要とする
     - [従来の認証](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)を使用するアプリへのアクセスをブロックする
     - アプリ tp が[Intune アプリ保護](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)を必要とする
-    - サードパーティのプロバイダーを使用する MFA などのカスタム認証。たとえば、DUO。
+    - サードパーティのプロバイダーを使用した MFA などのカスタム認証。たとえば、DUO。
    
     その他の機能:
     - ハイブリッド Azure AD の[セルフサービスによるパスワードのリセット](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization)
@@ -100,11 +99,11 @@ Microsoft 365 Business サブスクリプションには、コンプライアン
     
 - **[Exchange Online Archiving](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
     
-    Exchange Online のアーカイブライセンスでは、継続的なデータバックアップを使用してメッセージを簡単にアーカイブできます。 削除済みアイテムを含むすべてのユーザーの電子メールを、後で検出または復元するときに必要に応じて保存します。 また、さまざまなアイテム保持ポリシーを使用して、訴訟ホールド、電子情報開示、またはコンプライアンス要件を満たすために電子メールデータを保持することができます。
+    Exchange Online のアーカイブライセンスでは、継続的なデータバックアップを使用してメッセージを簡単にアーカイブできます。 削除済みアイテムを含むすべてのユーザーのメールを、後で探索または復元する際に必要になる場合に備えて保存します。 また、さまざまなアイテム保持ポリシーを使用して、訴訟ホールド、電子情報開示、またはコンプライアンス要件を満たすために電子メールデータを保持することができます。
     
 - **[機密ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 このプランを使用すると、機密**ラベル**を作成できます。これを使用すると、"転送不可" や "コピーしない" などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御することができます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 機密ラベルについては、 **AzInfoProtection_UL**をインストールします。
+   Microsoft 365 Business には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 このプランを使用すると、"転送不可" や "コピーしない" などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御できるようにする機密**ラベル**を作成できます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 機密ラベルについては、 **AzInfoProtection_UL**をインストールします。
 
 これらの機能は、セキュリティ&amp;コンプライアンスセンターおよび Intune 管理センターで管理できます。 時間の経過とともに、簡略化された統制は Microsoft 365 Business 管理センターに追加されます。
   
