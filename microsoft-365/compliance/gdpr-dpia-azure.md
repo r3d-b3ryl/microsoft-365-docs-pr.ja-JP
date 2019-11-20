@@ -9,14 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3269eb851ab21e98126bff6fbbf92a230450fdb2
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: a92ec4a54b3b79ed4cffbcac147e15360907af68
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422414"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749859"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>データ保護影響評価: Microsoft Azure を利用するデータ管理者向けガイダンス
 
@@ -51,11 +53,11 @@ GDPR の第 35 条では、「特に新たな技術を用いるなどのある�
 ||||
 |:---|:---|:--|
 |**DPIA の要素**|**Microsoft Azure 関連情報**| |
-| 処理の目的 | Microsoft Azure を使用したデータ処理の目的は、Microsoft Azure を導入、構成、使用する管理者が決定します。 <br><br> [オンライン サービスの使用条件 (OST)](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) に定められているように、マイクロソフトはデータ処理者として、お客様 (データ管理者) に対し要求されたサービスを提供する目的でのみ顧客データを処理します。顧客データまたは顧客データから得られた情報を、マイクロソフトが広告およびその他の類似する商用目的で使用することはありません。 |   |
-| 処理される個人データのカテゴリ  | *顧客データ* — これは、顧客または顧客の代理が エンタープライズ サービスの使用を通じて Microsoft に提供する、テキスト、音声、ビデオ、画像ファイル、およびソフトウェアを含むすべてのデータのことです。  顧客データには次の両方が含まれます: (1) 特定を可能にするエンド ユーザーの情報 (例: Azure Active Directory でのユーザー名と連絡先情報)、および (2) 特定のサービスでお客様がアップロードまたは作成する顧客コンテンツ (例: Azure Storage アカウント内の顧客コンテンツ、Azure SQL データベースの顧客コンテンツ、Azure Virtual Machines でのお客様の仮想マシン イメージ)。<br><br> *システム生成ログ* — Microsoft がエンタープライズ サービスをユーザーに提供するうえで役立つ、Microsoft により生成されるログおよび関連データ。 システム生成ログには主に固有 ID などの仮名化データが含まれています。固有 ID とは、それ自体は特定の個人を識別しないものの、エンタープライズ サービスをユーザーに提供するために使われるシステム生成番号です。  また、ユーザー名などの、特定を可能にするエンド ユーザーの情報がシステム生成ログに含まれることもあります。 <br><br> *サポート データ:* — これは、顧客または顧客の代理によって、オンライン サービスに関するテクニカル サポートを受ける際の Microsoft とのエンゲージメントを通して Microsoft に提供されるデータ (または Microsoft がオンライン サービスから取得することを顧客が承認するデータ) です。 <br><br> Azure で処理されるデータの詳細については、[オンライン サービスの使用条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)と [Microsoft Trust Center](https://www.microsoft.com/trustcenter) を参照してください。</p> |   |
+| 処理の目的 | Microsoft Azure を使用したデータ処理の目的は、Microsoft Azure を導入、構成、使用する管理者が決定します。 <br><br> [オンライン サービスの使用条件 (OST)](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) に定められているように、マイクロソフトはデータ処理者として、お客様 (データ管理者) に対し要求されたサービスを提供する目的でのみ顧客データを処理します。顧客データまたは顧客データから得られた情報を、マイクロソフトが広告およびその他の類似する商用目的で使用することはありません。 |   |
+| 処理される個人データのカテゴリ  | *顧客データ* — これは、顧客または顧客の代理が エンタープライズ サービスの使用を通じて Microsoft に提供する、テキスト、音声、ビデオ、画像ファイル、およびソフトウェアを含むすべてのデータのことです。  顧客データには次の両方が含まれます: (1) 特定を可能にするエンド ユーザーの情報 (例: Azure Active Directory でのユーザー名と連絡先情報)、および (2) 特定のサービスでお客様がアップロードまたは作成する顧客コンテンツ (例: Azure Storage アカウント内の顧客コンテンツ、Azure SQL データベースの顧客コンテンツ、Azure Virtual Machines でのお客様の仮想マシン イメージ)。<br><br> *システム生成ログ* — Microsoft がエンタープライズ サービスをユーザーに提供するうえで役立つ、Microsoft により生成されるログおよび関連データ。 システム生成ログには主に固有 ID などの仮名化データが含まれています。固有 ID とは、それ自体は特定の個人を識別しないものの、エンタープライズ サービスをユーザーに提供するために使われるシステム生成番号です。  また、ユーザー名などの、特定を可能にするエンド ユーザーの情報がシステム生成ログに含まれることもあります。 <br><br> *サポート データ:* — これは、顧客または顧客の代理によって、オンライン サービスに関するテクニカル サポートを受ける際の Microsoft とのエンゲージメントを通して Microsoft に提供されるデータ (または Microsoft がオンライン サービスから取得することを顧客が承認するデータ) です。 <br><br> Azure で処理されるデータの詳細については、[オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)と [Microsoft Trust Center](https://www.microsoft.com/trustcenter) を参照してください。</p> |   |
 | データ保存期間 | マイクロソフトは、お客様がオンライン サービスを利用する権限を有している期間中、または OST の条件に基づきすべての顧客データが削除またはお客様により取得されるまで、顧客データを保存および処理します。  お客様のサブスクリプション期間中は常に、お客様は各オンライン サービスに保存されている顧客データにアクセスし、データを抽出できます。 マイクロソフトは、お客様がデータを取り出せるように、お客様のサブスクリプションの有効期限または終了後 90 日間は、無料試用版と LinkedIn サービスを除くオンライン サービスに保管されている顧客データを機能制限付きアカウントにて保持します。 90 日間の保持期間が終了すると、マイクロソフトはお客様のアカウントを無効にして顧客データを削除します。 お客様は、[Azure Data Subject Request GDPR Documentation](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) で説明されている機能を使用して、データ主体要求に従い個人データを削除できます。 |   |
 | 個人データの保存場所と移転 | お客様は、OST で規定されている特定の例外を条件として、当該[地域](https://azuredatacentermap.azurewebsites.net/)内に保存されている顧客データをプロビジョニングできます。サービスの展開とデータの保管場所に関する追加情報については、[Azure グローバル インフラストラクチャ](https://azure.microsoft.com/global-infrastructure/) Web ページを参照してください。<br><br>マイクロソフトは欧州経済地域およびスイスの個人データについて、第三国または国際機関への個人データの移転は、GDPR の第 46 条に定められている適切な保護措置の対象であることを保証します。処理者およびその他のモデル契約に関する Standard Contractual Clauses (標準契約条項) の遵守の他に、マイクロソフトは EU-U.S. Privacy Shield Framework および Swiss-U.S. Privacy Shield Framework とその責務に対する認定を受けています。 |   |
-| 第三者とのデータの共有 | マイクロソフトは、お客様サポートやテクニカル サポートなどのサポート機能、サービス メンテナンス、およびその他の作業のために、二次処理者 (つまり、個人データを処理する協力会社) である第三者とデータを共有します。 マイクロソフトが顧客データまたはサポート データを転送する協力会社は、マイクロソフトとの間で書面による契約を締結しています。この契約による保護は、[オンライン サービスの使用条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)のデータ保護に関する条件と同等です。 顧客データまたはサポート データを共有するすべての第三者の協力会社は、[協力会社のリスト](https://www.microsoft.com/trustcenter/privacy/who-can-access-your-data-and-on-what-terms#subcontractors)に記載されています。(「協力会社によるアクセスを制限します」を参照してください)。 <br><br> 法執行機関または第三者からの顧客データの要請に対するマイクロソフトの対応については、オンライン サービスの使用条件に記載されています。 法律で禁止されている場合を除き、マイクロソフトはお客様に直接要請するように法執行機関または第三者に案内するよう努めます。 |   |
+| 第三者とのデータの共有 | マイクロソフトは、お客様サポートやテクニカル サポートなどのサポート機能、サービス メンテナンス、およびその他の作業のために、二次処理者 (つまり、個人データを処理する協力会社) である第三者とデータを共有します。 マイクロソフトが顧客データまたはサポート データを転送する協力会社は、マイクロソフトとの間で書面による契約を締結しています。この契約による保護は、[オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)のデータ保護に関する条件と同等です。 顧客データまたはサポート データを共有するすべての第三者の協力会社は、[協力会社のリスト](https://www.microsoft.com/trustcenter/privacy/who-can-access-your-data-and-on-what-terms#subcontractors)に記載されています。(「協力会社によるアクセスを制限します」を参照してください)。 <br><br> 法執行機関または第三者からの顧客データの要請に対するマイクロソフトの対応については、オンライン サービスの使用条件に記載されています。 法律で禁止されている場合を除き、マイクロソフトはお客様に直接要請するように法執行機関または第三者に案内するよう努めます。 |   |
 | データ主体権限 | マイクロソフトは処理者として、お客様 (データ管理者) に対し、データ主体の個人データを利用できるようにし、またデータ主体が GDPR の権利を行使する際に、データ主体の要求を遂行できるようにします。マイクロソフトは、製品の機能性と、データ処理者としての役割に対応した方法でこの処理を行います。マイクロソフトがお客様のデータ主体から GDPR の権利を 1 つ以上行使する要請を受けた場合、その要請はデータ管理者に案内されます。<br><br>[Azure Data Subject Request GDPR Documentation](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) に、Azure の機能を使用してデータ主体の権利に対応する方法が説明されています。 |   |
 | 目的に対する処理作業の必要性および比例性の評価 | このような評価は、データ管理者のニーズと処理の目的に応じて異なります。<br><br>マイクロソフトにより実行される処理に関して、このような処理はサービスをデータ管理者に提供する目的のために必須であり、またこの目的に合致しています。マイクロソフトは OST にこの内容を明記しています。 | |
 | データ主体の権利および自由に関するリスクの評価 | Microsoft Azure の使用に伴うデータ主体の権利および自由に関する主なリスクは、データ管理者が Microsoft Azure を導入、構成、使用する方法およびその文脈に対応します。<br><br> ただしどのサービスでも、サービスに保持される個人データには、不正なアクセスや不注意による漏洩のリスクがあります。このようなリスクに対するマイクロソフトの対策については OST に記載されており、以下で詳しく説明します。 | |

@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7c4e66988c57754324fbc18de95e97d409ab0a53
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c6f01e5b82d0021c4698dfa7b4fddc5152c7d737
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078917"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749877"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>GDPR のデータ保護影響評価
 
@@ -31,7 +33,7 @@ ms.locfileid: "35078917"
 
 - *データ コントローラー (コントローラー)*: 法人、公的機関、団体、その他の組織。単独または他者と協力して、個人データの処理の目的と方法を決定します。  
 - *個人データ*と*データ主体*: 特定されたまたは特定可能な自然人 (データ主体) に関連するあらゆる情報。特定可能な自然人とは、直接または間接的に特定することができる者のことです。  
-- *処理者:* コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
+- *処理者*: コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
 - *顧客データ*: ビジネス運営における日々の業務で作成および保存されるデータ。
 
 ## <a name="what-is-a-dpia"></a>DPIA とは?

@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの Exchange Server で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 9b15934f598adcd692d8c47358db357bcea58814
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b1cf86beeeb195396e45e0bc262f1d1b81b21057
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085102"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749868"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>Office Web Apps Server および Office Online Server の GDPR
 
-Office Online Server および Office Web Apps Server のテレメトリ データは、ULS ログの形で保存されます。[ULS Viewer](https://www.microsoft.com/en-us/download/details.aspx?id=44020) を使用することにより、オンプレミス テナントから ULS のログを確認できます。
+Office Online Server および Office Web Apps Server のテレメトリ データは、ULS ログの形で保存されます。[ULS Viewer](https://www.microsoft.com/download/details.aspx?id=44020) を使用することにより、オンプレミス テナントから ULS のログを確認できます。
 
 ログの各行には、それぞれ 1 つの CorrelationID が含まれています。関連するログ行は同じ CorrelationID を共有します。各 CorrelationID は単一の SessionID に結び付いており、1 つの SessionID は複数の CorrelationID に関連付けられている場合があります。各 SessionID を単一の UserID に関連付けることが可能ですが、いくつかのセッションは匿名のことがあり、その場合は関連する UserID がありません。そのため、特定のユーザーに関連付けられているのがどのデータかを判別するため、単一 UserID をそのユーザーに関連する SessionID に、それらの SessionID を対応する CorrelationID に、そしてそれらの CorrelationID をその関連付けのすべてのログにマッピングすることが可能です。さまざまな ID の間の関係については、次の図を参照してください。
 

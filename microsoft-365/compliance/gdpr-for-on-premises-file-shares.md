@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの Windows Server ファイル共有で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: b5d5023ec8a052dc51575fa01f9cb77c4bf001c4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b57bff104539691ca53c3c90dc676b7c0769743
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085094"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749873"
 ---
 # <a name="gdpr-for-on-premises-windows-server-file-shares"></a>オンプレミスの Windows Server ファイル共有の GDPR
 
@@ -51,6 +51,6 @@ ms.locfileid: "37085094"
 
     -   データ主体要求の個人データを検索するため、Azure Information Protection スキャナーを使用します。また、ファイル共有をクロールするよう、SharePoint Server 検索を構成することもできます。
 
-Azure Information Protection スキャナーを使用して個人データを検索したりラベル付けしたりすることに関する詳細については、[http://aka.ms/gdprpartners](<http://aka.ms/gdprpartners>) にある Microsoft GDPR Data Discovery Toolkit を参照してください。
+Azure Information Protection スキャナーを使用して個人データを検索したりラベル付けしたりすることに関する詳細については、[https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>) にある Microsoft GDPR Data Discovery Toolkit を参照してください。
 
-さまざまな条件でスキャナーを構成すること、また Office 365 データ損失防止 (DLP) のさまざまな機密情報タイプを使用することに関する情報については、「[Azure Information Protection 用の自動および推奨分類の条件を構成する方法](https://docs.microsoft.com/ja-JP/information-protection/deploy-use/configure-policy-classification)」を参照してください。新しいタイプの Office 365 機密情報はスキャナーですぐに利用できるようになるわけではなく、カスタム機密情報タイプはスキャナーで使用できないことに注意ください。
+さまざまな条件でスキャナーを構成すること、また Office 365 データ損失防止 (DLP) のさまざまな機密情報タイプを使用することに関する情報については、「[Azure Information Protection 用の自動および推奨分類の条件を構成する方法](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification)」を参照してください。新しいタイプの Office 365 機密情報はスキャナーですぐに利用できるようになるわけではなく、カスタム機密情報タイプはスキャナーで使用できないことに注意ください。

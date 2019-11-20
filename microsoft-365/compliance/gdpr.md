@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 11bf048dd1cd913d8344929b5025a65638d47f4b
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078937"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749865"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 
@@ -31,7 +33,7 @@ ms.locfileid: "35078937"
 
 - *データ コントローラー (コントローラー)*: 法人、公的機関、団体、その他の組織。単独または他者と協力して、個人データの処理の目的と方法を決定します。  
 - *個人データ*と*データ主体*: 特定されたまたは特定可能な自然人 (データ主体) に関連するあらゆる情報。特定可能な自然人とは、直接または間接的に特定することができる者のことです。  
-- *処理者:* コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
+- *処理者*: コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
 - *顧客データ*: ビジネス運営における日々の業務で作成および保存されるデータ。
 
 ## <a name="what-is-the-gdpr"></a>GDPR とは?
@@ -66,7 +68,7 @@ GDPR 基準を満たすには、次のタスクが必要です。 実装に関�
 - **DSR を完了するにはどのようなアクションが必要か?**: DSR には、検出、アクセス、修正、制限、エクスポート、削除の 6 つのアクティビティが含まれています。
 - **データ ソースとは?**: 組織のデータの大部分は、Excel や Outlook などの [Office アプリケーション](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)で生成されます。 また、DSR に関連するデータは、Microsoft の製品とサービスによって生成された[分析情報](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365)、および[システム生成ログ](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)でも検索することもできます。
 - **どのような種類のデータを検索する必要があるか?**: 個人データは、顧客データ、Microsoft の製品とサービスによって生成された分析情報、システム生成ログに含まれていることがあります。
-- **個人データの検索方法は?**: 個人データの検索は、Microsoft の製品とサービスによって異なる場合があります。 検索ツールには、[コンテンツ検索](https://docs.microsoft.com/ja-JP/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)、または[アプリ内検索](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs)能力が用意されています。 管理者は、ユーザーのアクティビティに関連する[システム生成ログ](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)にアクセスできます。  
+- **個人データの検索方法は?**: 個人データの検索は、Microsoft の製品とサービスによって異なる場合があります。 検索ツールには、[コンテンツ検索](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)、または[アプリ内検索](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs)能力が用意されています。 管理者は、ユーザーのアクティビティに関連する[システム生成ログ](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)にアクセスできます。  
 - **どのような形式で個人データを利用できるようにする必要があるか?**: GDPR の「データの移植の権利」により、データ主体は、「構造化された一般的に使用されているコンピューターが読み取り可能な形式」で個人データのコピーを要求できます。また、そうしたファイルを別のデータ コントローラーに送信するように組織に要求することもできます。
 
 ### <a name="data-protection-impact-assessment"></a>データ保護影響評価

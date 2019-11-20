@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698289"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749881"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft サポート/プロフェッショナル サービスと GDPR の下での違反の通知
 
@@ -27,7 +29,7 @@ Microsoft プロフェッショナル サービスのグローバル データ�
 
 ## <a name="data-protection-incident-response-overview"></a>データ保護インシデント対応の概要 
 
-お客様のセキュリティ保護に取り組む Microsoft プロフェッショナル サービスでは、お客様の信頼を維持する手段として、データ保護インシデントの発生を防止するためのかなりの数の対策をとっています。プロフェッショナル サービス組織はデータ保護インシデントを、Microsoft で処理中の個人データ、サポート データ、またはコンサルティング データに対する、データの損失、改ざん、許可されない開示につながる意図しない、または不正なアクセスとしてのセキュリティの侵害と定義しています。Premier サポート、統合サポート、または Microsoft コンサルティング サービスを購入したお客様は、<http://aka.ms/professionalservicesdpa/> で Professional Services Data Protection Addendum に記載されているデータ保護インシデント対応言語を参照してください。
+お客様のセキュリティ保護に取り組む Microsoft プロフェッショナル サービスでは、お客様の信頼を維持する手段として、データ保護インシデントの発生を防止するためのかなりの数の対策をとっています。プロフェッショナル サービス組織はデータ保護インシデントを、Microsoft で処理中の個人データ、サポート データ、またはコンサルティング データに対する、データの損失、改ざん、許可されない開示につながる意図しない、または不正なアクセスとしてのセキュリティの侵害と定義しています。Premier サポート、統合サポート、または Microsoft コンサルティング サービスを購入したお客様は、<https://aka.ms/professionalservicesdpa/> で Professional Services Data Protection Addendum に記載されているデータ保護インシデント対応言語を参照してください。
 
 ## <a name="scope--limits-of-data-protection-incident-response-process"></a>データ保護のインシデント対応プロセスの範囲と制限
 
@@ -54,7 +56,7 @@ Microsoft プロフェッショナル サービスは、個人データが含ま
 Microsoft プロフェッショナル サービスで使用している検出プロセスは、データ保護インシデントを発見して調査を開始するように設計されています。たとえば、次のプロセスがあります。
 
 - セキュリティの脆弱性は照会対象として Microsoft 全体のレポート システムに報告されるか、プロフェッショナル サービス データ保護インシデント対応チームに直接報告されます。
-- お客様は[カスタマー サポート ポータル](http://support.microsoft.com)を介して、不審なアクティビティについて説明するレポートを送信します。
+- お客様は[カスタマー サポート ポータル](https://support.microsoft.com)を介して、不審なアクティビティについて説明するレポートを送信します。
 - プロフェッショナル サービスの担当者がエスカレーションを送信します。Microsoft スタッフは潜在的なセキュリティ問題を見分けてエスカレートできるように訓練を受けています。
 - プロフェッショナル サービスを提供するプロセスで使用するツールおよびシステムとして、運用チームは内部モニタリング/アラート フレームワークを介した自動システム警報を使用します。これらの警告はマルウェア対策や侵入検知などのシグネチャ ベースのアラームとして出されることも、予期されるアクティビティをプロファイル化して異常があればアラートを発するアルゴリズムを介して出されることもあります。
 
