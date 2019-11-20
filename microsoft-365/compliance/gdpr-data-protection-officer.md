@@ -9,47 +9,49 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 772ff86c1973e9cbf656214145260fad2d6fb1d7
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 915e80a07d77e5ce2200228a1c3f5b77511d5f1d
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698179"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749858"
 ---
-# <a name="microsofts-data-protection-officer"></a><span data-ttu-id="bd3cd-104">Microsoft のデータ保護責任者</span><span class="sxs-lookup"><span data-stu-id="bd3cd-104">Microsoft's data protection officer</span></span>
+# <a name="microsofts-data-protection-officer"></a><span data-ttu-id="81806-104">Microsoft のデータ保護責任者</span><span class="sxs-lookup"><span data-stu-id="81806-104">Microsoft's data protection officer</span></span>
 
-## <a name="overview"></a><span data-ttu-id="bd3cd-105">概要</span><span class="sxs-lookup"><span data-stu-id="bd3cd-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="81806-105">概要</span><span class="sxs-lookup"><span data-stu-id="81806-105">Overview</span></span>
 
-<span data-ttu-id="bd3cd-p101">Microsoft は、自社のエンジニアリング グループとビジネス グループの独立したアドバイザーであり、提案されたすべての個人データの処理が EU の法的要件と Microsoft の企業基準を満たしていることの確認を支援する EU データ保護責任者 (DPO) を指名しました。この役割は、条項 37 ～ 39 で規定された GDPR 基準を満たすように設計されています。</span><span class="sxs-lookup"><span data-stu-id="bd3cd-p101">Microsoft has designated a European Union Data Protection Officer (DPO) to be an independent advisor for Microsoft’s engineering and business groups and to help ensure that all proposed processing of personal data meets EU legal requirements and Microsoft’s corporate standards. The role was designed to meet the GDPR criteria set out in Articles 37-39.</span></span>
+<span data-ttu-id="81806-p101">Microsoft は、自社のエンジニアリング グループとビジネス グループの独立したアドバイザーであり、提案されたすべての個人データの処理が EU の法的要件と Microsoft の企業基準を満たしていることの確認を支援する EU データ保護責任者 (DPO) を指名しました。この役割は、条項 37 ～ 39 で規定された GDPR 基準を満たすように設計されています。</span><span class="sxs-lookup"><span data-stu-id="81806-p101">Microsoft has designated a European Union Data Protection Officer (DPO) to be an independent advisor for Microsoft’s engineering and business groups and to help ensure that all proposed processing of personal data meets EU legal requirements and Microsoft’s corporate standards. The role was designed to meet the GDPR criteria set out in Articles 37-39.</span></span>
 
-## <a name="qualifications"></a><span data-ttu-id="bd3cd-108">資格</span><span class="sxs-lookup"><span data-stu-id="bd3cd-108">Qualifications</span></span>
+## <a name="qualifications"></a><span data-ttu-id="81806-108">資格</span><span class="sxs-lookup"><span data-stu-id="81806-108">Qualifications</span></span>
 
-<span data-ttu-id="bd3cd-p102">DPO 役割の候補者は、その地位に適任と認められるために、7 年以上の専門的なデータ保護の経験または合わせて 10 年のデータ保護、セキュリティ、および企業リスク管理の経験を有している必要があります。加えて、候補者は、国際的なデータ保護の法律や慣行に関する確かな専門知識を有している必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd3cd-p102">The DPO role requires successful candidates to have at least seven years of professional data protection experience, or a mix of 10 years of data protection, security and enterprise risk management experience in order to be considered for the position. In addition, candidates must have demonstrated expertise in international data protection law and practices.</span></span> 
+<span data-ttu-id="81806-p102">DPO 役割の候補者は、その地位に適任と認められるために、7 年以上の専門的なデータ保護の経験または合わせて 10 年のデータ保護、セキュリティ、および企業リスク管理の経験を有している必要があります。加えて、候補者は、国際的なデータ保護の法律や慣行に関する確かな専門知識を有している必要があります。</span><span class="sxs-lookup"><span data-stu-id="81806-p102">The DPO role requires successful candidates to have at least seven years of professional data protection experience, or a mix of 10 years of data protection, security and enterprise risk management experience in order to be considered for the position. In addition, candidates must have demonstrated expertise in international data protection law and practices.</span></span> 
 
-## <a name="nature-of-the-role"></a><span data-ttu-id="bd3cd-111">役割の特性</span><span class="sxs-lookup"><span data-stu-id="bd3cd-111">Nature of the role</span></span>
+## <a name="nature-of-the-role"></a><span data-ttu-id="81806-111">役割の特性</span><span class="sxs-lookup"><span data-stu-id="81806-111">Nature of the role</span></span>
 
-<span data-ttu-id="bd3cd-p103">DPO は、個人データの保護に関するすべての主要な問題に適切かつ適時に関与します。これは、Microsoft が作成したすべての Data Protection Impact Assessments (DPIA) に対する審査と助言における DPO の役割によってある程度達成されます。DPIA プログラムは Microsoft でのすべての個人データ処理を収集するように設計されているため、DPO は会社全体を調査し、Microsoft の個人データ処理に関して GDPR に規定された義務を Microsoft に通知および助言する機会が与えられています。これと同じメカニズムを使用して、DPO は、GDPR を含む、適用可能なデータ保護規則への Microsoft のコンプライアンスだけでなく、Microsoft の社内ポリシーとコントロールも監視することができます。</span><span class="sxs-lookup"><span data-stu-id="bd3cd-p103">The DPO is involved, properly and in a timely manner, in all key issues which relate to the protection of personal data. This is effectuated, in part, by the DPO’s role in reviewing and advising on all Data Protection Impact Assessments (DPIAs) generated by Microsoft. As the DPIA program is designed to capture all personal data processing at Microsoft, the DPO will have cross-company visibility into, and the opportunity to inform and advise Microsoft of its obligations pursuant to the GDPR in regards to Microsoft’s personal data processing. This same mechanism also allows the DPO to monitor Microsoft’s compliance with applicable data protection regulations, including the GDPR, as well as Microsoft’s internal policies and controls.</span></span> 
+<span data-ttu-id="81806-p103">DPO は、個人データの保護に関するすべての主要な問題に適切かつ適時に関与します。これは、Microsoft が作成したすべての Data Protection Impact Assessments (DPIA) に対する審査と助言における DPO の役割によってある程度達成されます。DPIA プログラムは Microsoft でのすべての個人データ処理を収集するように設計されているため、DPO は会社全体を調査し、Microsoft の個人データ処理に関して GDPR に規定された義務を Microsoft に通知および助言する機会が与えられています。これと同じメカニズムを使用して、DPO は、GDPR を含む、適用可能なデータ保護規則への Microsoft のコンプライアンスだけでなく、Microsoft の社内ポリシーとコントロールも監視することができます。</span><span class="sxs-lookup"><span data-stu-id="81806-p103">The DPO is involved, properly and in a timely manner, in all key issues which relate to the protection of personal data. This is effectuated, in part, by the DPO’s role in reviewing and advising on all Data Protection Impact Assessments (DPIAs) generated by Microsoft. As the DPIA program is designed to capture all personal data processing at Microsoft, the DPO will have cross-company visibility into, and the opportunity to inform and advise Microsoft of its obligations pursuant to the GDPR in regards to Microsoft’s personal data processing. This same mechanism also allows the DPO to monitor Microsoft’s compliance with applicable data protection regulations, including the GDPR, as well as Microsoft’s internal policies and controls.</span></span> 
 
-## <a name="position-of-the-data-protection-officer"></a><span data-ttu-id="bd3cd-116">データ保護責任者の位置づけ</span><span class="sxs-lookup"><span data-stu-id="bd3cd-116">Position of the Data Protection Officer</span></span>
+## <a name="position-of-the-data-protection-officer"></a><span data-ttu-id="81806-116">データ保護責任者の位置づけ</span><span class="sxs-lookup"><span data-stu-id="81806-116">Position of the Data Protection Officer</span></span>
 
-<span data-ttu-id="bd3cd-p104">EU DPO は、Microsoft の企業行動および法務部門の上級管理職である個人情報保護管理責任者に直接報告します。DPO 役割には、独立した公平な立場で職務を遂行するための自主性が与えられています。個人情報保護管理責任者の組織を通して、DPO はその職務を遂行するために必要なトレーニングと顧客対応リソースにアクセスできます。DPO には、秘密保持契約書の使用を通して、その作業に関する守秘義務が課されます。</span><span class="sxs-lookup"><span data-stu-id="bd3cd-p104">The European Union DPO reports directly to Microsoft’s Chief Privacy Officer, a senior executive within Microsoft’s Corporate and Legal Affairs division.  The DPO role has autonomy to perform the functions in an independent, unbiased manner. Through the Chief Privacy Officer’s organization, the DPO has access to training and customer response resources as necessary to perform the DPO functions. The DPO is bound by confidentiality concerning their tasks through the use of a non-disclosure agreement.</span></span>  
+<span data-ttu-id="81806-p104">EU DPO は、Microsoft の企業行動および法務部門の上級管理職である個人情報保護管理責任者に直接報告します。DPO 役割には、独立した公平な立場で職務を遂行するための自主性が与えられています。個人情報保護管理責任者の組織を通して、DPO はその職務を遂行するために必要なトレーニングと顧客対応リソースにアクセスできます。DPO には、秘密保持契約書の使用を通して、その作業に関する守秘義務が課されます。</span><span class="sxs-lookup"><span data-stu-id="81806-p104">The European Union DPO reports directly to Microsoft’s Chief Privacy Officer, a senior executive within Microsoft’s Corporate and Legal Affairs division.  The DPO role has autonomy to perform the functions in an independent, unbiased manner. Through the Chief Privacy Officer’s organization, the DPO has access to training and customer response resources as necessary to perform the DPO functions. The DPO is bound by confidentiality concerning their tasks through the use of a non-disclosure agreement.</span></span>  
 
-## <a name="contact"></a><span data-ttu-id="bd3cd-121">連絡先</span><span class="sxs-lookup"><span data-stu-id="bd3cd-121">Contact</span></span>
+## <a name="contact"></a><span data-ttu-id="81806-121">連絡先</span><span class="sxs-lookup"><span data-stu-id="81806-121">Contact</span></span>
 
-<span data-ttu-id="bd3cd-p105">データ主体は、[https://aka.ms/privacyresponse](https://aka.ms/privacyresponse) にある Web フォームに記入することにより、データ保護責任者と連絡を取ることができます。DPO は、下記宛ての書簡によっても連絡を取ることができます。</span><span class="sxs-lookup"><span data-stu-id="bd3cd-p105">Data subjects may contact the data protection officer by filling out the webform at [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse). The DPO can also be reached by post at:</span></span>
+<span data-ttu-id="81806-p105">データ主体は、[https://aka.ms/privacyresponse](https://aka.ms/privacyresponse) にある Web フォームに記入することにより、データ保護責任者と連絡を取ることができます。DPO は、下記宛ての書簡によっても連絡を取ることができます。</span><span class="sxs-lookup"><span data-stu-id="81806-p105">Data subjects may contact the data protection officer by filling out the webform at [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse). The DPO can also be reached by post at:</span></span>
 
-<span data-ttu-id="bd3cd-124">Microsoft EU Data Protection Officer</span><span class="sxs-lookup"><span data-stu-id="bd3cd-124">Microsoft EU Data Protection Officer</span></span><br>
-<span data-ttu-id="bd3cd-125">One Microsoft Place</span><span class="sxs-lookup"><span data-stu-id="bd3cd-125">One Microsoft Place</span></span><br>
-<span data-ttu-id="bd3cd-126">South County Business Park</span><span class="sxs-lookup"><span data-stu-id="bd3cd-126">South County Business Park</span></span><br>
-<span data-ttu-id="bd3cd-127">Leopardstown</span><span class="sxs-lookup"><span data-stu-id="bd3cd-127">Leopardstown</span></span><br>
-<span data-ttu-id="bd3cd-128">Dublin 18</span><span class="sxs-lookup"><span data-stu-id="bd3cd-128">Dublin 18</span></span><br>
-<span data-ttu-id="bd3cd-129">D18 P521</span><span class="sxs-lookup"><span data-stu-id="bd3cd-129">D18 P521</span></span><br>
-<span data-ttu-id="bd3cd-130">アイルランド</span><span class="sxs-lookup"><span data-stu-id="bd3cd-130">Ireland</span></span><br>
-<span data-ttu-id="bd3cd-131">電話番号: +353 (0) 1 295-3826</span><span class="sxs-lookup"><span data-stu-id="bd3cd-131">Telephone: +353 (0) 1 295-3826</span></span><br>
+<span data-ttu-id="81806-124">Microsoft EU Data Protection Officer</span><span class="sxs-lookup"><span data-stu-id="81806-124">Microsoft EU Data Protection Officer</span></span><br>
+<span data-ttu-id="81806-125">One Microsoft Place</span><span class="sxs-lookup"><span data-stu-id="81806-125">One Microsoft Place</span></span><br>
+<span data-ttu-id="81806-126">South County Business Park</span><span class="sxs-lookup"><span data-stu-id="81806-126">South County Business Park</span></span><br>
+<span data-ttu-id="81806-127">Leopardstown</span><span class="sxs-lookup"><span data-stu-id="81806-127">Leopardstown</span></span><br>
+<span data-ttu-id="81806-128">Dublin 18</span><span class="sxs-lookup"><span data-stu-id="81806-128">Dublin 18</span></span><br>
+<span data-ttu-id="81806-129">D18 P521</span><span class="sxs-lookup"><span data-stu-id="81806-129">D18 P521</span></span><br>
+<span data-ttu-id="81806-130">アイルランド</span><span class="sxs-lookup"><span data-stu-id="81806-130">Ireland</span></span><br>
+<span data-ttu-id="81806-131">電話番号: +353 (0) 1 295-3826</span><span class="sxs-lookup"><span data-stu-id="81806-131">Telephone: +353 (0) 1 295-3826</span></span><br>
 
-<span data-ttu-id="bd3cd-132">データ保護責任者の連絡先の詳細が Microsoft の監督機関に通知されています。</span><span class="sxs-lookup"><span data-stu-id="bd3cd-132">The contact details for the Data Protection Officer has been communicated to Microsoft’s Supervisory Authority.</span></span>
+<span data-ttu-id="81806-132">データ保護責任者の連絡先の詳細が Microsoft の監督機関に通知されています。</span><span class="sxs-lookup"><span data-stu-id="81806-132">The contact details for the Data Protection Officer has been communicated to Microsoft’s Supervisory Authority.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="bd3cd-133">詳細情報</span><span class="sxs-lookup"><span data-stu-id="bd3cd-133">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="81806-133">詳細情報</span><span class="sxs-lookup"><span data-stu-id="81806-133">Learn more</span></span>
 
-- [<span data-ttu-id="bd3cd-134">Microsoft Trust Center</span><span class="sxs-lookup"><span data-stu-id="bd3cd-134">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [<span data-ttu-id="81806-134">Microsoft Trust Center</span><span class="sxs-lookup"><span data-stu-id="81806-134">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
