@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise 展開コンテンツの変更
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の展開ガイドの新しいコンテンツおよびコンテンツの変更を参照してください。
-ms.openlocfilehash: d2946034c4f5bd5e650a18859c1fbd6fe3c6fdd4
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 529d781f31157c6e9ad63a83ef5f8bb96873049d
+ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669718"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38711891"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
+
+## <a name="november-2019"></a>2019 年 11 月
+
+### <a name="new-content"></a>新しいコンテンツ 
+
+- [Microsoft 365 Business から Microsoft 365 Enterprise E3 への移行](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+
+- [Contoso 社の極秘プロジェクトのチーム](contoso-team-for-top-secret-project.md)
+
+  [![Contoso 社の極秘プロジェクトのチーム](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)](contoso-team-for-top-secret-project.md)
 
 ## <a name="october-2019"></a>2019 年 10 月
 
@@ -30,13 +40,13 @@ ms.locfileid: "38669718"
 
   [![厳しく規制されたデータ用の Teams のポスター](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-  このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) でダウンロードして、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
+  このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 - [厳しく規制されたデータ用の SharePoint サイトのポスター](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
 
   [![厳しく規制されたデータ用の SharePoint サイトのポスター](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-  このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) でダウンロードして、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
+  このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 - [Autopilot ポスターを使用した Windows 10 の展開](windows10-deploy-autopilot.md) 
 
@@ -60,7 +70,7 @@ ms.locfileid: "38669718"
 
   [![リモート ワーカーを支援するポスター](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
 
-- [Microsoft 365 Business から Microsoft 365 Enterprise E3 への移行](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+  このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび拡張機能
 

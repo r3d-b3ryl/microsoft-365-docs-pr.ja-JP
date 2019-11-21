@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c3d3c8047e6814a56ec6470a9166fd0c13eb6839
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031112"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718636"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -36,7 +36,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
 
 このラボでは、自動的にプロビジョニングされた仮想ラボ環境が提供されます。これには、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、および完全に構成された ConfigMgr インスタンスが含まれます。ラボには、次の製品の評価版が含まれています。
 
-  - Windows 10 Enterprise、バージョン 1903
+  - Windows 10 Enterprise、バージョン 1909
   - Windows 7 Enterprise
   - System Center Configuration Manager、バージョン 1902
   - Windows 10 用 Windows アセスメント & デプロイメント キット、バージョン 1903
@@ -118,7 +118,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Windows と Office 展開ラボ キットのダウンロード**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2019 年 11 月 16 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
+*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 2 月 15 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
 
 ## <a name="additional-guidance"></a>**追加のガイダンス**
 
