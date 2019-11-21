@@ -1,318 +1,153 @@
 ---
-title: Office アプリにおける機密ラベルの機能
-ms.author: greglin
-author: greg-lindsay
+title: Office アプリの機密ラベル
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: ''
+ms.date: 11/20/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツに暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
-ms.translationtype: HT
+description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
+ms.openlocfilehash: 1b472185df2d45717cba6cfca30176768bf9cd4e
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417566"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755595"
 ---
-# <a name="how-sensitivity-labels-work-in-office-apps"></a><span data-ttu-id="daecf-104">Office アプリにおける機密ラベルの機能</span><span class="sxs-lookup"><span data-stu-id="daecf-104">How sensitivity labels work in Office apps</span></span>
+# <a name="sensitivity-labels-in-office-apps"></a><span data-ttu-id="ee9a6-104">Office アプリの機密ラベル</span><span class="sxs-lookup"><span data-stu-id="ee9a6-104">Sensitivity labels in Office apps</span></span>
 
-## <a name="what-prerequisites-are-there-to-use-sensitivity-labels-in-office-applications"></a><span data-ttu-id="daecf-105">Office アプリケーションで機密ラベルを使用するための前提条件について</span><span class="sxs-lookup"><span data-stu-id="daecf-105">What prerequisites are there to use sensitivity labels in Office applications?</span></span>
+<span data-ttu-id="ee9a6-105">この記事の内容</span><span class="sxs-lookup"><span data-stu-id="ee9a6-105">This article describes:</span></span>
 
-### <a name="common-requirements"></a><span data-ttu-id="daecf-106">一般的な要件</span><span class="sxs-lookup"><span data-stu-id="daecf-106">Common requirements</span></span> 
+- <span data-ttu-id="ee9a6-106">メール、ファイル、および添付ファイルに機密ラベルを適用する前の環境の要件。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-106">Requirements for your environment before you apply sensitivity labels to email, files, and attachments.</span></span>
+- <span data-ttu-id="ee9a6-107">各 Office アプリでサポートされている機密ラベル機能。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-107">Which sensitivity label capabilities are supported by each Office app.</span></span>
+- <span data-ttu-id="ee9a6-108">Office アプリで動作する他の Microsoft セキュリティおよびコンプライアンステクノロジとの機密ラベルを結合すると、どうなりますか。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-108">What happens when you combine sensitivity labels with other Microsoft security and compliance technologies that work with Office apps.</span></span>
+- <span data-ttu-id="ee9a6-109">組織内のユーザーが、Windows 用の Office アプリと web 用の Office アプリを使用する際に、機密ラベルをどのように使用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-109">How people in your organization can use sensitivity labels when they work with Office apps for Windows and Office apps for the web.</span></span>
+- <span data-ttu-id="ee9a6-110">組織内のユーザーに機密ラベルを使用して開始する場所。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-110">Where to go to get people in your organization started with sensitivity labels.</span></span>
 
-- <span data-ttu-id="daecf-107">統合された機密ラベルは[セキュリティ/コンプライアンス センターで構成、公開されている](https://aka.ms/managemip)必要があります。</span><span class="sxs-lookup"><span data-stu-id="daecf-107">Unified sensitivity labels must be [configured and published in the Security and Compliance Center](https://aka.ms/managemip)</span></span>
-- <span data-ttu-id="daecf-108">ユーザーは業務用アカウントを使って Office にログインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="daecf-108">Users must be signed in to Office with their work account.</span></span>
-- <span data-ttu-id="daecf-109">ユーザーには Office 365 E3 以上のライセンスが割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="daecf-109">Users must have an Office 365 E3 or above license assigned.</span></span>
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a><span data-ttu-id="ee9a6-111">秘密度ラベルのサブスクリプションとライセンスの要件</span><span class="sxs-lookup"><span data-stu-id="ee9a6-111">Subscription and licensing requirements for sensitivity labels</span></span>
 
-### <a name="additional-requirements-for-office-for-windows"></a><span data-ttu-id="daecf-110">Office for Windows のその他の要件</span><span class="sxs-lookup"><span data-stu-id="daecf-110">Additional requirements for Office for Windows</span></span> 
+<span data-ttu-id="ee9a6-112">ユーザーには、少なくとも次のライセンスのいずれかが割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-112">Users must have at least one of the following licenses assigned:</span></span>
 
-- <span data-ttu-id="daecf-111">Azure Information Protection クライアントが Office で実行されていない必要があります。</span><span class="sxs-lookup"><span data-stu-id="daecf-111">The Azure Information Protection client must not be running in Office.</span></span> <span data-ttu-id="daecf-112">「[機密ラベルは Office for Windows で Azure Information Protection クライアントと一緒に実行できますか?](#can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows)」も参照してください。</span><span class="sxs-lookup"><span data-stu-id="daecf-112">See also: [Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?](#can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows).</span></span>
+- <span data-ttu-id="ee9a6-113">[Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)またはそれ以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-113">[Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above</span></span>
 
-### <a name="additional-requirements-for-outlook-on-all-platforms"></a><span data-ttu-id="daecf-113">すべてのプラットフォームの Outlook に関するその他の要件</span><span class="sxs-lookup"><span data-stu-id="daecf-113">Additional requirements for Outlook on all platforms</span></span> 
+- <span data-ttu-id="ee9a6-114">[Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software)またはそれ以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-114">[Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above</span></span>
 
-- <span data-ttu-id="daecf-114">ラベル構成で、コンテンツ マーキングを有効にした場合に、コンテンツ マーキングが転送中に挿入されるようにするには、Exchange Online を使用している必要があります。</span><span class="sxs-lookup"><span data-stu-id="daecf-114">In your label configuration, if you turn on content marking, you must be using Exchange Online for that content marking to be inserted in transit.</span></span>
+- <span data-ttu-id="ee9a6-115">[Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/)以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-115">[Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above</span></span>
 
-## <a name="what-sensitivity-label-capabilities-are-supported-in-office-today"></a><span data-ttu-id="daecf-115">今日の Office でサポートされている機密ラベル機能について</span><span class="sxs-lookup"><span data-stu-id="daecf-115">What sensitivity label capabilities are supported in Office today?</span></span> 
+<span data-ttu-id="ee9a6-116">Office 組み込みのラベル付けクライアントは、Office のサブスクリプション版で機密ラベルをサポートします。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-116">The Office built-in labeling client supports sensitivity labels with a subscription version of Office.</span></span> <span data-ttu-id="ee9a6-117">クライアントは、Office 2016 または Office 2019 などのスタンドアロンバージョンをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-117">The client doesn't support standalone versions, for example, Office 2016 or Office 2019.</span></span>
 
-<table border="1" cellspacing="0" cellpadding="0">
-<th><span data-ttu-id="daecf-116"><font size="-1">機能</span><span class="sxs-lookup"><span data-stu-id="daecf-116"><font size="-1">Capability</span></span><th><span data-ttu-id="daecf-117"><font size="-1">Windows</span><span class="sxs-lookup"><span data-stu-id="daecf-117"><font size="-1">Windows</span></span><th><span data-ttu-id="daecf-118"><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</span><span class="sxs-lookup"><span data-stu-id="daecf-118"><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</span></span></tr>
-<tr><td>
+<span data-ttu-id="ee9a6-118">自動または推奨される秘密度のラベル付けを使用するには、ユーザーが次のいずれかのライセンスを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-118">To use automatic or recommended sensitivity labeling, your users need one of the following licenses:</span></span>
 
-<td><span data-ttu-id="daecf-119"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="daecf-119"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="daecf-120">Excel</span><span class="sxs-lookup"><span data-stu-id="daecf-120">Excel</span></span><br>
-<span data-ttu-id="daecf-121">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="daecf-121">PowerPoint</span></span><br>
-<span data-ttu-id="daecf-122">Outlook</span><span class="sxs-lookup"><span data-stu-id="daecf-122">Outlook</span></span>
+- <span data-ttu-id="ee9a6-119">[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)以降</span><span class="sxs-lookup"><span data-stu-id="ee9a6-119">[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above</span></span>
 
+- <span data-ttu-id="ee9a6-120">[Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software)以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-120">[Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) or above</span></span>
 
-<td><span data-ttu-id="daecf-123"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="daecf-123"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="daecf-124">Excel</span><span class="sxs-lookup"><span data-stu-id="daecf-124">Excel</span></span><br>
-<span data-ttu-id="daecf-125">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="daecf-125">PowerPoint</span></span><br>
-<span data-ttu-id="daecf-126">Outlook</span><span class="sxs-lookup"><span data-stu-id="daecf-126">Outlook</span></span>
+- <span data-ttu-id="ee9a6-121">[Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)以降</span><span class="sxs-lookup"><span data-stu-id="ee9a6-121">[Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) or above</span></span>
 
-<td><span data-ttu-id="daecf-127"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="daecf-127"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="daecf-128">Excel</span><span class="sxs-lookup"><span data-stu-id="daecf-128">Excel</span></span><br>
-<span data-ttu-id="daecf-129">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="daecf-129">PowerPoint</span></span>
-<td><span data-ttu-id="daecf-130"><font size="-1"> Outlook</span><span class="sxs-lookup"><span data-stu-id="daecf-130"><font size="-1"> Outlook</span></span>
+## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a><span data-ttu-id="ee9a6-122">Word、Excel、PowerPoint での機密ラベル機能のサポート</span><span class="sxs-lookup"><span data-stu-id="ee9a6-122">Support for sensitivity label capabilities in Word, Excel, and PowerPoint</span></span>
 
-<td><span data-ttu-id="daecf-131"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="daecf-131"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="daecf-132">Excel</span><span class="sxs-lookup"><span data-stu-id="daecf-132">Excel</span></span><br>
-<span data-ttu-id="daecf-133">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="daecf-133">PowerPoint</span></span>
-<td><span data-ttu-id="daecf-134"><font size="-1"> Outlook</span><span class="sxs-lookup"><span data-stu-id="daecf-134"><font size="-1"> Outlook</span></span>
+<span data-ttu-id="ee9a6-123">各機能について、次の表に、そのアプリに必要な最小バージョンを示します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-123">For each capability, the following table lists the minimum version you need for that app.</span></span> <span data-ttu-id="ee9a6-124">これは、そのプラットフォームではその機能を使用できないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-124">TBD means that you can't use that capability on that platform.</span></span>
 
-<td><span data-ttu-id="daecf-135"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="daecf-135"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="daecf-136">Excel</span><span class="sxs-lookup"><span data-stu-id="daecf-136">Excel</span></span><br>
-<span data-ttu-id="daecf-137">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="daecf-137">PowerPoint</span></span>
-<td><span data-ttu-id="daecf-138"><font size="-1"> Outlook </b>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-138"><font size="-1"> Outlook </b>
-</span></span></tr>
+|<span data-ttu-id="ee9a6-125">機能</span><span class="sxs-lookup"><span data-stu-id="ee9a6-125">Capability</span></span>                                                                                                        |<span data-ttu-id="ee9a6-126">Windows デスクトップ</span><span class="sxs-lookup"><span data-stu-id="ee9a6-126">Windows Desktop</span></span> |<span data-ttu-id="ee9a6-127">Mac デスクトップ</span><span class="sxs-lookup"><span data-stu-id="ee9a6-127">Mac Desktop</span></span> |<span data-ttu-id="ee9a6-128">iOS</span><span class="sxs-lookup"><span data-stu-id="ee9a6-128">iOS</span></span>    |<span data-ttu-id="ee9a6-129">Android</span><span class="sxs-lookup"><span data-stu-id="ee9a6-129">Android</span></span>      |<span data-ttu-id="ee9a6-130">Web</span><span class="sxs-lookup"><span data-stu-id="ee9a6-130">Web</span></span>                                                         |
+|------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
+|[<span data-ttu-id="ee9a6-131">ラベルを手動で適用、変更、または削除する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-131">Manually apply, change, or remove label</span></span>](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| <span data-ttu-id="ee9a6-132">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-132">1910+</span></span>          | <span data-ttu-id="ee9a6-133">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-133">16.21+</span></span>     | <span data-ttu-id="ee9a6-134">2.21以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-134">2.21+</span></span> | <span data-ttu-id="ee9a6-135">16.0.11231以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-135">16.0.11231+</span></span> | [<span data-ttu-id="ee9a6-136">プレビュー</span><span class="sxs-lookup"><span data-stu-id="ee9a6-136">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="ee9a6-137">既定のラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-137">Apply a default label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                         | <span data-ttu-id="ee9a6-138">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-138">1910+</span></span>          | <span data-ttu-id="ee9a6-139">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-139">16.21+</span></span>     | <span data-ttu-id="ee9a6-140">2.21以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-140">2.21+</span></span> | <span data-ttu-id="ee9a6-141">16.0.11231以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-141">16.0.11231+</span></span> | <span data-ttu-id="ee9a6-142">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-142">TBD</span></span>                                                        |
+|[<span data-ttu-id="ee9a6-143">ラベルを変更する場合は、根拠を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-143">Require a justification to change a label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                     | <span data-ttu-id="ee9a6-144">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-144">1910+</span></span>          | <span data-ttu-id="ee9a6-145">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-145">16.21+</span></span>     | <span data-ttu-id="ee9a6-146">2.21以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-146">2.21+</span></span> | <span data-ttu-id="ee9a6-147">16.0.11231以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-147">16.0.11231+</span></span> | [<span data-ttu-id="ee9a6-148">プレビュー</span><span class="sxs-lookup"><span data-stu-id="ee9a6-148">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="ee9a6-149">カスタム ヘルプ ページへのリンクを提供する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-149">Provide help link to a custom help page</span></span>](sensitivity-labels.md#what-label-policies-can-do)                       | <span data-ttu-id="ee9a6-150">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-150">1910+</span></span>          | <span data-ttu-id="ee9a6-151">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-151">16.21+</span></span>     | <span data-ttu-id="ee9a6-152">2.21以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-152">2.21+</span></span> | <span data-ttu-id="ee9a6-153">16.0.11231以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-153">16.0.11231+</span></span> | [<span data-ttu-id="ee9a6-154">プレビュー</span><span class="sxs-lookup"><span data-stu-id="ee9a6-154">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="ee9a6-155">コンテンツをマークする</span><span class="sxs-lookup"><span data-stu-id="ee9a6-155">Mark the content</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                              | <span data-ttu-id="ee9a6-156">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-156">1910+</span></span>          | <span data-ttu-id="ee9a6-157">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-157">16.21+</span></span>     | <span data-ttu-id="ee9a6-158">2.21以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-158">2.21+</span></span> | <span data-ttu-id="ee9a6-159">16.0.11231以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-159">16.0.11231+</span></span> | [<span data-ttu-id="ee9a6-160">プレビュー</span><span class="sxs-lookup"><span data-stu-id="ee9a6-160">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="ee9a6-161">アクセス許可を割り当てる</span><span class="sxs-lookup"><span data-stu-id="ee9a6-161">Assign permissions now</span></span>](encryption-sensitivity-labels.md#assign-permissions-now)                                 | <span data-ttu-id="ee9a6-162">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-162">1910+</span></span>          | <span data-ttu-id="ee9a6-163">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-163">16.21+</span></span>     | <span data-ttu-id="ee9a6-164">2.21以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-164">2.21+</span></span> | <span data-ttu-id="ee9a6-165">16.0.11231以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-165">16.0.11231+</span></span> | [<span data-ttu-id="ee9a6-166">プレビュー</span><span class="sxs-lookup"><span data-stu-id="ee9a6-166">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="ee9a6-167">ユーザーがアクセス許可を割り当てる</span><span class="sxs-lookup"><span data-stu-id="ee9a6-167">Let users assign permissions</span></span>](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | <span data-ttu-id="ee9a6-168">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-168">TBD</span></span>            | <span data-ttu-id="ee9a6-169">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-169">TBD</span></span>        | <span data-ttu-id="ee9a6-170">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-170">TBD</span></span>   | <span data-ttu-id="ee9a6-171">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-171">TBD</span></span>         | <span data-ttu-id="ee9a6-172">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-172">TBD</span></span>                                                        |
+|<span data-ttu-id="ee9a6-173">[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-173">[View label usage with label analytics](label-analytics.md) and send data for administrators</span></span>                      | <span data-ttu-id="ee9a6-174">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-174">TBD</span></span>            | <span data-ttu-id="ee9a6-175">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-175">TBD</span></span>        | <span data-ttu-id="ee9a6-176">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-176">TBD</span></span>   | <span data-ttu-id="ee9a6-177">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-177">TBD</span></span>         | <span data-ttu-id="ee9a6-178">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-178">TBD</span></span>                                                        |
+|<span data-ttu-id="ee9a6-179">
+  [ユーザーがメールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)</span><span class="sxs-lookup"><span data-stu-id="ee9a6-179">[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)</span></span>   | <span data-ttu-id="ee9a6-180">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-180">TBD</span></span>            | <span data-ttu-id="ee9a6-181">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-181">TBD</span></span>        | <span data-ttu-id="ee9a6-182">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-182">TBD</span></span>   | <span data-ttu-id="ee9a6-183">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-183">TBD</span></span>         | <span data-ttu-id="ee9a6-184">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-184">TBD</span></span>                                                        |
+|[<span data-ttu-id="ee9a6-185">機密ラベルをコンテンツに自動的に適用する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-185">Apply a sensitivity label to content automatically</span></span>](apply-sensitivity-label-automatically.md)                    | <span data-ttu-id="ee9a6-186">プレビュー: [Office Insider](https://office.com/insider)へのロールアウト</span><span class="sxs-lookup"><span data-stu-id="ee9a6-186">Preview: In roll-out to [Office Insider](https://office.com/insider)</span></span>                                  | <span data-ttu-id="ee9a6-187">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-187">TBD</span></span> | <span data-ttu-id="ee9a6-188">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-188">TBD</span></span> | <span data-ttu-id="ee9a6-189">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-189">TBD</span></span> | [<span data-ttu-id="ee9a6-190">プレビュー</span><span class="sxs-lookup"><span data-stu-id="ee9a6-190">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|<span data-ttu-id="ee9a6-191">ラベル付きおよび保護されたドキュメントでの[自動保存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)と[共同編集](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4)をサポートする</span><span class="sxs-lookup"><span data-stu-id="ee9a6-191">Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents</span></span> | <span data-ttu-id="ee9a6-192">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-192">TBD</span></span> | <span data-ttu-id="ee9a6-193">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-193">TBD</span></span> | <span data-ttu-id="ee9a6-194">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-194">TBD</span></span> | <span data-ttu-id="ee9a6-195">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-195">TBD</span></span> | [<span data-ttu-id="ee9a6-196">プレビュー</span><span class="sxs-lookup"><span data-stu-id="ee9a6-196">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|
 
-<tr>
-<td><span data-ttu-id="daecf-139"><font size="-1">ラベルを手動で適用、変更、または削除する</span><span class="sxs-lookup"><span data-stu-id="daecf-139"><font size="-1">Manually apply, change, or remove label</span></span><td><span data-ttu-id="daecf-140"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-140"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-141"><font size="-1">1910以上</font>
+## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a><span data-ttu-id="ee9a6-197">Outlook での機密ラベル機能のサポート</span><span class="sxs-lookup"><span data-stu-id="ee9a6-197">Support for sensitivity label capabilities in Outlook</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-141"><font size="-1">1910+</font>
+<span data-ttu-id="ee9a6-198">各機能について、次の表に、そのアプリに必要な最小バージョンを示します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-198">For each capability, the following table lists the minimum version you need for that app.</span></span> <span data-ttu-id="ee9a6-199">これは、そのプラットフォームではその機能を使用できないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-199">TBD means that you can't use that capability on that platform.</span></span>
 
-</span></span><td><span data-ttu-id="daecf-142"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-142"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-143"><font size="-1">16.21.0以上</font>
+|<span data-ttu-id="ee9a6-200">機能</span><span class="sxs-lookup"><span data-stu-id="ee9a6-200">Capability</span></span>                                                                                                        |<span data-ttu-id="ee9a6-201">Windows デスクトップ上の Outlook</span><span class="sxs-lookup"><span data-stu-id="ee9a6-201">Outlook on Windows Desktop</span></span> |<span data-ttu-id="ee9a6-202">Outlook on Mac デスクトップ</span><span class="sxs-lookup"><span data-stu-id="ee9a6-202">Outlook on Mac Desktop</span></span>  |<span data-ttu-id="ee9a6-203">Outlook on iOS</span><span class="sxs-lookup"><span data-stu-id="ee9a6-203">Outlook on iOS</span></span> |<span data-ttu-id="ee9a6-204">Outlook on Android</span><span class="sxs-lookup"><span data-stu-id="ee9a6-204">Outlook on Android</span></span> |<span data-ttu-id="ee9a6-205">Outlook on the web</span><span class="sxs-lookup"><span data-stu-id="ee9a6-205">Outlook on the web</span></span> |
+|------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
+|[<span data-ttu-id="ee9a6-206">ラベルを手動で適用、変更、または削除する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-206">Manually apply, change, or remove label</span></span>](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| <span data-ttu-id="ee9a6-207">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-207">1910+</span></span>                     | <span data-ttu-id="ee9a6-208">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-208">16.21+</span></span>                 | <span data-ttu-id="ee9a6-209">4.71 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-209">4.71+</span></span>         | <span data-ttu-id="ee9a6-210">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-210">4.0.39+</span></span>           | <span data-ttu-id="ee9a6-211">はい</span><span class="sxs-lookup"><span data-stu-id="ee9a6-211">Yes</span></span>               |
+|[<span data-ttu-id="ee9a6-212">既定のラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-212">Apply a default label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                         | <span data-ttu-id="ee9a6-213">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-213">1910+</span></span>                     | <span data-ttu-id="ee9a6-214">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-214">16.21+</span></span>                 | <span data-ttu-id="ee9a6-215">4.71 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-215">4.71+</span></span>         | <span data-ttu-id="ee9a6-216">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-216">4.0.39+</span></span>           | <span data-ttu-id="ee9a6-217">はい</span><span class="sxs-lookup"><span data-stu-id="ee9a6-217">Yes</span></span>               |
+|[<span data-ttu-id="ee9a6-218">ラベルを変更する場合は、根拠を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-218">Require a justification to change a label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                     | <span data-ttu-id="ee9a6-219">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-219">1910+</span></span>                     | <span data-ttu-id="ee9a6-220">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-220">16.21+</span></span>                 | <span data-ttu-id="ee9a6-221">4.71 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-221">4.71+</span></span>         | <span data-ttu-id="ee9a6-222">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-222">4.0.39+</span></span>           | <span data-ttu-id="ee9a6-223">はい</span><span class="sxs-lookup"><span data-stu-id="ee9a6-223">Yes</span></span>               |
+|[<span data-ttu-id="ee9a6-224">カスタム ヘルプ ページへのリンクを提供する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-224">Provide help link to a custom help page</span></span>](sensitivity-labels.md#what-label-policies-can-do)                       | <span data-ttu-id="ee9a6-225">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-225">1910+</span></span>                     | <span data-ttu-id="ee9a6-226">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-226">16.21+</span></span>                 | <span data-ttu-id="ee9a6-227">4.71 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-227">4.71+</span></span>         | <span data-ttu-id="ee9a6-228">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-228">4.0.39+</span></span>           | <span data-ttu-id="ee9a6-229">はい</span><span class="sxs-lookup"><span data-stu-id="ee9a6-229">Yes</span></span>               |
+|[<span data-ttu-id="ee9a6-230">コンテンツをマークする</span><span class="sxs-lookup"><span data-stu-id="ee9a6-230">Mark the content</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                              | <span data-ttu-id="ee9a6-231">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-231">1910+</span></span>                     | <span data-ttu-id="ee9a6-232">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-232">16.21+</span></span>                 | <span data-ttu-id="ee9a6-233">4.71 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-233">4.71+</span></span>         | <span data-ttu-id="ee9a6-234">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-234">4.0.39+</span></span>           | <span data-ttu-id="ee9a6-235">はい</span><span class="sxs-lookup"><span data-stu-id="ee9a6-235">Yes</span></span>               |
+|[<span data-ttu-id="ee9a6-236">アクセス許可を割り当てる</span><span class="sxs-lookup"><span data-stu-id="ee9a6-236">Assign permissions now</span></span>](encryption-sensitivity-labels.md#assign-permissions-now)                                 | <span data-ttu-id="ee9a6-237">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-237">1910+</span></span>                     | <span data-ttu-id="ee9a6-238">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-238">16.21+</span></span>                 | <span data-ttu-id="ee9a6-239">4.71 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-239">4.71+</span></span>         | <span data-ttu-id="ee9a6-240">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-240">4.0.39+</span></span>           | <span data-ttu-id="ee9a6-241">はい</span><span class="sxs-lookup"><span data-stu-id="ee9a6-241">Yes</span></span>               |
+|[<span data-ttu-id="ee9a6-242">ユーザーがアクセス許可を割り当てる</span><span class="sxs-lookup"><span data-stu-id="ee9a6-242">Let users assign permissions</span></span>](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | <span data-ttu-id="ee9a6-243">1910以上</span><span class="sxs-lookup"><span data-stu-id="ee9a6-243">1910+</span></span>                     | <span data-ttu-id="ee9a6-244">16.21 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-244">16.21+</span></span>                 | <span data-ttu-id="ee9a6-245">4.71 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-245">4.71+</span></span>         | <span data-ttu-id="ee9a6-246">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="ee9a6-246">4.0.39+</span></span>           | <span data-ttu-id="ee9a6-247">はい</span><span class="sxs-lookup"><span data-stu-id="ee9a6-247">Yes</span></span>               |
+|<span data-ttu-id="ee9a6-248">[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-248">[View label usage with label analytics](label-analytics.md) and send data for administrators</span></span>                      | <span data-ttu-id="ee9a6-249">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-249">TBD</span></span>                       | <span data-ttu-id="ee9a6-250">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-250">TBD</span></span>                    | <span data-ttu-id="ee9a6-251">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-251">TBD</span></span>           | <span data-ttu-id="ee9a6-252">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-252">TBD</span></span>               | <span data-ttu-id="ee9a6-253">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-253">TBD</span></span>               |
+|<span data-ttu-id="ee9a6-254">
+  [ユーザーがメールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)</span><span class="sxs-lookup"><span data-stu-id="ee9a6-254">[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)</span></span>   | <span data-ttu-id="ee9a6-255">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-255">TBD</span></span>                       | <span data-ttu-id="ee9a6-256">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-256">TBD</span></span>                    | <span data-ttu-id="ee9a6-257">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-257">TBD</span></span>           | <span data-ttu-id="ee9a6-258">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-258">TBD</span></span>               | <span data-ttu-id="ee9a6-259">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-259">TBD</span></span>               |
+|[<span data-ttu-id="ee9a6-260">機密ラベルをコンテンツに自動的に適用する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-260">Apply a sensitivity label to content automatically</span></span>](apply-sensitivity-label-automatically.md)                    | <span data-ttu-id="ee9a6-261">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-261">TBD</span></span>                       | <span data-ttu-id="ee9a6-262">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-262">TBD</span></span>                    | <span data-ttu-id="ee9a6-263">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-263">TBD</span></span>           | <span data-ttu-id="ee9a6-264">TBD</span><span class="sxs-lookup"><span data-stu-id="ee9a6-264">TBD</span></span>               | <span data-ttu-id="ee9a6-265">プレビュー:[対象指定リリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)へのロールアウト</span><span class="sxs-lookup"><span data-stu-id="ee9a6-265">Preview: In roll-out to [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)</span></span> |
+|
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-143"><font size="-1">16.21.0+</font>
+## <a name="about-the-office-built-in-labeling-client"></a><span data-ttu-id="ee9a6-266">Office の組み込みラベルクライアントについて</span><span class="sxs-lookup"><span data-stu-id="ee9a6-266">About the Office built-in labeling client</span></span>
 
-</span></span><td><span data-ttu-id="daecf-144"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-144"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-145"><font size="-1">2.21以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-145"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="daecf-146"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-146"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-147"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-147"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-148"><font size="-1">16.0.11231以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-148"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="daecf-149"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-149"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-150"><font size="-1">近日公開<sup>3</sup></span><span class="sxs-lookup"><span data-stu-id="daecf-150"><font size="-1">Coming soon<sup>3</sup></span></span><td><span data-ttu-id="daecf-151"><font size="-1">近日公開<sup>3</sup>
+<span data-ttu-id="ee9a6-267">Office 組み込みのラベルクライアントは、次の管理センターからラベルとポリシー設定をダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-267">The Office built-in labeling client downloads labels and policy settings from the following admin centers:</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-151"><font size="-1">Coming soon<sup>3</sup>
+- <span data-ttu-id="ee9a6-268">Office 365 セキュリティ/コンプライアンス センター</span><span class="sxs-lookup"><span data-stu-id="ee9a6-268">Office 365 Security & Compliance Center</span></span>
 
-</span></span><tr>
-<td><span data-ttu-id="daecf-152"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">既定のラベルを適用する</a>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-152"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a>
-</span></span><td><span data-ttu-id="daecf-153"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-153"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-154"><font size="-1">1910以上</font>
+- <span data-ttu-id="ee9a6-269">Microsoft 365 セキュリティ センター</span><span class="sxs-lookup"><span data-stu-id="ee9a6-269">Microsoft 365 security center</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-154"><font size="-1">1910+</font>
+- <span data-ttu-id="ee9a6-270">Microsoft 365 コンプライアンス センター</span><span class="sxs-lookup"><span data-stu-id="ee9a6-270">Microsoft 365 compliance center</span></span>
 
-</span></span><td><span data-ttu-id="daecf-155"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-155"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-156"><font size="-1">16.21.0以上</font>
+<span data-ttu-id="ee9a6-271">Office 組み込みラベルクライアントは、1つ以上の[ラベルポリシーを発行](sensitivity-labels.md#what-label-policies-can-do)したユーザーに対して自動的に有効になります。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-271">The Office built-in labeling client is enabled automatically for users who have one or more [label policy published](sensitivity-labels.md#what-label-policies-can-do) to them.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-156"><font size="-1">16.21.0+</font>
+<span data-ttu-id="ee9a6-272">Windows で Office の組み込みラベルクライアントを使用するには、Office で Azure Information Protection アドインを同時に実行することはできません。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-272">To use the built-in labeling client in Office on Windows, you can't run the Azure Information Protection add-in at the same time in Office.</span></span> <span data-ttu-id="ee9a6-273">Azure Information Protection クライアントは、一時的または完全にアンインストールすることも、インストールしたままにして、実行しないように Office を構成することもできます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-273">You can either temporarily or permanently uninstall the Azure Information Protection client, or you can leave it installed and configure Office to prevent it from running.</span></span>
 
-</span></span><td><span data-ttu-id="daecf-157"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-157"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-158"><font size="-1">2.21以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-158"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="daecf-159"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-159"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-160"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-160"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-161"><font size="-1">16.0.11231以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-161"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="daecf-162"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-162"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-163"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-163"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-164"><font size="-1">近日公開<sup>3</sup>
+1. <span data-ttu-id="ee9a6-274">次のオプションのいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-274">Complete one of these options:</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-164"><font size="-1">Coming soon<sup>3</sup>
+    <span data-ttu-id="ee9a6-275">**複数のコンピューターの場合:**[ **Office の秘密度機能を使用して、機密ラベルを適用して表示する**] グループポリシー設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-275">**For multiple computers:** Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting.</span></span> <span data-ttu-id="ee9a6-276">[**ユーザーの構成]/[管理用テンプレート]/[Microsoft Office 2016/セキュリティ設定**] の下にあるこの設定を見つけます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-276">Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.</span></span> <span data-ttu-id="ee9a6-277">この設定は、グループポリシーまたは[Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)を使用して展開します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-277">Deploy this setting through group policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).</span></span>
 
-</span></span><tr><td><span data-ttu-id="daecf-165"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">ラベル変更の正当な理由を要求する</a><sup>1</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-165"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup>
-</span></span><td><span data-ttu-id="daecf-166"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-166"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-167"><font size="-1">1910以上</font>
+    <span data-ttu-id="ee9a6-278">**1 台のコンピューターの場合:**「Office プログラムでのアドインの表示、管理、およびインストール」を参照してください。1台のコンピューターで Azure Information Protection アドインを[完全に無効にしたり削除](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-278">**For a single computer:** See "view, manage, and install add-ins in Office programs," and [permanently disable or remove](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection add-in on a single computer.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-167"><font size="-1">1910+</font>
+2. <span data-ttu-id="ee9a6-279">すべての Office アプリケーションを再起動します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-279">Restart all Office applications.</span></span>
 
-</span></span><td><span data-ttu-id="daecf-168"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-168"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-169"><font size="-1">16.21.0以上</font>
+<span data-ttu-id="ee9a6-280">情報保護用のクライアントアプリケーションの詳細については、「 [Azure Information protection のクライアント側](https://docs.microsoft.com/azure/information-protection/rms-client/use-client)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-280">For more information about client apps for information protection, see [The client side of Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/use-client).</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-169"><font size="-1">16.21.0+</font>
+## <a name="protection-templates-and-sensitivity-labels"></a><span data-ttu-id="ee9a6-281">保護テンプレートと機密ラベル</span><span class="sxs-lookup"><span data-stu-id="ee9a6-281">Protection templates and sensitivity labels</span></span>
 
-</span></span><td><span data-ttu-id="daecf-170"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-170"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-171"><font size="-1">2.21以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-171"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="daecf-172"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-172"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-173"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-173"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-174"><font size="-1">16.0.11231以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-174"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="daecf-175"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-175"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-176"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-176"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-177"><font size="-1">近日公開<sup>3</sup>
+<span data-ttu-id="ee9a6-282">Office 365 メッセージの暗号化に対して定義されているような管理者定義の[保護テンプレート](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)は、機密ラベルが有効になっており、暗号化が有効になっている機密ラベルを使用している場合に、office ユーザー環境では表示されません。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-282">Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-177"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="daecf-178"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">カスタム ヘルプ ページへのリンクを提供する</a>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-178"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a>
-</span></span><td><span data-ttu-id="daecf-179"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-179"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-180"><font size="-1">1910以上</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-180"><font size="-1">1910+</font>
+## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a><span data-ttu-id="ee9a6-283">ファイル、電子メール、および添付ファイルに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-283">Apply sensitivity labels to files, emails, and attachments</span></span>
 
-</span></span><td><span data-ttu-id="daecf-181"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-181"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-182"><font size="-1">16.21.0以上</font>
+<span data-ttu-id="ee9a6-284">ユーザーは、ドキュメントまたは電子メールごとに、一度に1つのラベルだけを適用できます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-284">Users can apply just one label at a time for each document or email.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-182"><font size="-1">16.21.0+</font>
+<span data-ttu-id="ee9a6-285">添付ファイルを含む電子メールメッセージにラベルを付けると、添付ファイルはラベルを継承しません。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-285">When you label an email message that has attachments, the attachments don't inherit the label.</span></span> <span data-ttu-id="ee9a6-286">添付ファイルにラベルが付けられている場合は、ラベルを個別に適用したままにします。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-286">If the attachments had a label they keep that separately applied label.</span></span> <span data-ttu-id="ee9a6-287">添付ファイルにラベルが付いていない場合、添付ファイルはラベルなしで保持されます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-287">If the attachments didn't have a label, then the attachments remain without a label.</span></span> <span data-ttu-id="ee9a6-288">ただし、メールのラベルが保護されている場合、その保護は Office の添付ファイルに適用されます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-288">However, if the label for the email applies protection, that protection is applied to Office attachments.</span></span>
 
-</span></span><td><span data-ttu-id="daecf-183"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-183"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-184"><font size="-1">2.21以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-184"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="daecf-185"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-185"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-186"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-186"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-187"><font size="-1">16.0.11231以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-187"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="daecf-188"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-188"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-189"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-189"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-190"><font size="-1">近日公開<sup>3</sup>
+## <a name="sensitivity-label-compatibility"></a><span data-ttu-id="ee9a6-289">機密ラベルの互換性</span><span class="sxs-lookup"><span data-stu-id="ee9a6-289">Sensitivity label compatibility</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="daecf-190"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="daecf-191"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">コンテンツをマークする</a>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-191"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a>
-</span></span><td><span data-ttu-id="daecf-192"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-192"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-193"><font size="-1">1910以上</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-193"><font size="-1">1910+</font>
-
-</span></span><td><span data-ttu-id="daecf-194"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-194"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-195"><font size="-1">16.21.0以上</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-195"><font size="-1">16.21.0+</font>
-
-</span></span><td><span data-ttu-id="daecf-196"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-196"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-197"><font size="-1">2.21以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-197"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="daecf-198"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-198"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-199"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-199"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-200"><font size="-1">16.0.11231以上</font
-</span><span class="sxs-lookup"><span data-stu-id="daecf-200"><font size="-1">16.0.11231+</font
-</span></span>><td><span data-ttu-id="daecf-201"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-201"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-202"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-202"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-203"><font size="-1">近日公開<sup>3</sup>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-203"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="daecf-204"><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">定義済みのアクセス許可を割り当てる</a>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-204"><font size="-1">Assign pre-defined permissions</span></span><td><span data-ttu-id="daecf-205"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-205"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-206"><font size="-1">1910以上</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-206"><font size="-1">1910+</font>
-
-</span></span><td><span data-ttu-id="daecf-207"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-207"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-208"><font size="-1">16.21.0以上</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-208"><font size="-1">16.21.0+</font>
-
-</span></span><td><span data-ttu-id="daecf-209"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-209"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-210"><font size="-1">2.21以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-210"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="daecf-211"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-211"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-212"><font size="-1"><b>はい</b></span><span class="sxs-lookup"><span data-stu-id="daecf-212"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="daecf-213"><font size="-1">16.0.11231以上</font>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-213"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="daecf-214"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-214"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-215"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-215"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-216"><font size="-1">近日公開<sup>3</sup>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-216"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="daecf-217"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">ユーザーがアクセス許可を割り当てる</a>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-217"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a>
-</span></span><td><span data-ttu-id="daecf-218"><font size="-1"><b>はい</b><sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="daecf-218"><font size="-1"><b>Yes</b><sup>2</sup></span></span><br><span data-ttu-id="daecf-219"><font size="-1">1910以上</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="daecf-219"><font size="-1">1910+</font>
-
-</span></span><td><span data-ttu-id="daecf-220"><font size="-1"><b>はい</b><sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="daecf-220"><font size="-1"><b>Yes</b><sup>2</sup></span></span><br><span data-ttu-id="daecf-221"><font size="-1">16.21.0以上</font></span><span class="sxs-lookup"><span data-stu-id="daecf-221"><font size="-1">16.21.0+</font></span></span>
-
-<td><span data-ttu-id="daecf-222"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-222"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-223"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-223"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-224"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-224"><font size="-1">TBD</span></span><td
-><span data-ttu-id="daecf-225"><font size="-1">近日公開<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-225"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="daecf-226"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-226"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-227"><font size="-1">近日公開<sup>3</sup></span><span class="sxs-lookup"><span data-stu-id="daecf-227"><font size="-1">Coming soon<sup>3</sup></span></span>
-
-<tr><td><span data-ttu-id="daecf-228"><font size="-1">管理者用に<a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">ラベルの分析</a>を送信する</span><span class="sxs-lookup"><span data-stu-id="daecf-228"><font size="-1">Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators</span></span>
-<td><span data-ttu-id="daecf-229"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-229"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="daecf-230"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-230"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="daecf-231"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-231"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-232"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-232"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-233"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-233"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-234"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-234"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-235"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-235"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-236"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-236"><font size="-1">TBD</span></span>
-
-<tr><td><span data-ttu-id="daecf-237"><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">ユーザーがメールとドキュメントにラベルを適用することを必須にする</a>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-237"><font size="-1">Require users to apply a label to their email and documents</span></span><td><span data-ttu-id="daecf-238"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-238"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="daecf-239"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-239"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="daecf-240"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-240"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-241"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-241"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-242"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-242"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-243"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-243"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-244"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-244"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-245"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-245"><font size="-1">TBD</span></span>
-
-<tr><td><span data-ttu-id="daecf-246"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">機密ラベルをコンテンツに自動的に適用する</a>
-</span><span class="sxs-lookup"><span data-stu-id="daecf-246"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a>
-</span></span><td><span data-ttu-id="daecf-247"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-247"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="daecf-248"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-248"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="daecf-249"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-249"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-250"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-250"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-251"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-251"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-252"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-252"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-253"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-253"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="daecf-254"><font size="-1">TBD</span><span class="sxs-lookup"><span data-stu-id="daecf-254"><font size="-1">TBD</span></span>
-</table>
-
-<br><span data-ttu-id="daecf-255"><sup>1</sup>構成されている場合、ユーザーはラベルのダウングレードを正当化するよう求められます。</span><span class="sxs-lookup"><span data-stu-id="daecf-255"><sup>1</sup>If configured, users are prompted to justify label downgrades.</span></span> <span data-ttu-id="daecf-256">ただし、このような根拠のあるデータは、管理者はまだ使用できません。</span><span class="sxs-lookup"><span data-stu-id="daecf-256">However, the justification data is not made available for administrators yet.</span></span> <span data-ttu-id="daecf-257">"管理者用にラベル分析データを送信する" 機能がサポートされている場合に使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="daecf-257">It will become available when the “send label analytics data for administrators” capability is supported.</span></span>
-<br><span data-ttu-id="daecf-258"><sup>2</sup> "ユーザーにアクセス許可を割り当てられるようにする" は、現在 Outlook for Windows と Outlook for Mac でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="daecf-258"><sup>2</sup>Let users assign permissions is currently only available in Outlook for Windows and Mac.</span></span> <span data-ttu-id="daecf-259">Word、Excel、PowerPoint の可用性は TBD です。</span><span class="sxs-lookup"><span data-stu-id="daecf-259">Availability for Word, Excel, and PowerPoint is TBD.</span></span>
-<br><span data-ttu-id="daecf-260"><sup>3</sup> 2019年の暦年第 4 四半期に予定されています。</span><span class="sxs-lookup"><span data-stu-id="daecf-260"><sup>3</sup>Expected Q4 of calendar year 2019.</span></span>
-
-## <a name="when-do-content-marks-or-encryption-get-applied-after-content-is-given-a-sensitivity-label"></a><span data-ttu-id="daecf-261">コンテンツに機密ラベルが付与された後に、コンテンツ マークや暗号化が適用される時期</span><span class="sxs-lookup"><span data-stu-id="daecf-261">When do content marks or encryption get applied after content is given a sensitivity label?</span></span>
-
-| <span data-ttu-id="daecf-262">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="daecf-262">Application</span></span> | <span data-ttu-id="daecf-263">コンテンツのマーケティング</span><span class="sxs-lookup"><span data-stu-id="daecf-263">Content marking</span></span> | <span data-ttu-id="daecf-264">暗号化</span><span class="sxs-lookup"><span data-stu-id="daecf-264">Encryption</span></span>
+<span data-ttu-id="ee9a6-290">**なりアプリを使用**します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-290">**With RMS-enlightened apps**.</span></span> <span data-ttu-id="ee9a6-291">機密ラベルをサポートしていない[なりアプリケーション](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)で、ラベル付きの_暗号化さ_れたドキュメントまたは電子メールを開くと、アプリは依然として暗号化と権限の管理を適用します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-291">If you open a labeled _and encrypted_ document or email in an [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) that doesn't support sensitivity labels, the app still enforces encryption and rights management.</span></span>
+
+<span data-ttu-id="ee9a6-292">**Azure Information Protection クライアントを使用**します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-292">**With Azure Information Protection client**.</span></span> <span data-ttu-id="ee9a6-293">Azure Information Protection クライアントを使用して Office 組み込みのラベル付けクライアントを使用して、ドキュメントや電子メールに適用する機密ラベルを表示および変更することができます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-293">You can view and change sensitivity labels that you apply to documents and emails with the Office built-in labeling client with the Azure Information Protection client, and the other way around.</span></span>
+
+<span data-ttu-id="ee9a6-294">**他のバージョンの Office で使用**します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-294">**With other versions of Office**.</span></span> <span data-ttu-id="ee9a6-295">承認されたユーザーは、他のバージョンの Office でラベル付きドキュメントとメールを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-295">Any authorized user can open labeled documents and emails in other versions of Office.</span></span> <span data-ttu-id="ee9a6-296">ただし、サポートされている Office バージョンまたは Azure Information Protection クライアントでのみ、ラベルを表示または変更できます。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-296">However, you can only view or change the label in supported Office versions or in the Azure Information Protection client.</span></span> <span data-ttu-id="ee9a6-297">サポートされている Office アプリのバージョンは、この記事の表に記載されています。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-297">Supported Office app versions are listed in the tables in this article.</span></span>
+
+## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a><span data-ttu-id="ee9a6-298">機密ラベルで保護された SharePoint および OneDrive ファイルのサポート</span><span class="sxs-lookup"><span data-stu-id="ee9a6-298">Support for SharePoint and OneDrive files protected by sensitivity labels</span></span>
+
+<span data-ttu-id="ee9a6-299">Web 上の office に Office の組み込みラベルクライアントを使用するには、ドキュメントを OneDrive for Business または SharePoint Online のインスタンスに配置し、 [sharepoint および OneDrive で office ファイルの機密ラベルを有効](sensitivity-labels-sharepoint-onedrive-files.md)にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-299">To use the Office built-in labeling client in Office on the web, the document must be located in a OneDrive for Business or SharePoint Online instance that has opted-in to the [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).</span></span>
+
+## <a name="when-office-365-applies-marks-and-encryption-to-content"></a><span data-ttu-id="ee9a6-300">Office 365 がコンテンツにマークと暗号化を適用する場合</span><span class="sxs-lookup"><span data-stu-id="ee9a6-300">When Office 365 applies marks and encryption to content</span></span>
+
+<span data-ttu-id="ee9a6-301">Office 365 は、使用するアプリケーションによって、機密ラベル付きのコンテンツマークまたは暗号化を適用します。</span><span class="sxs-lookup"><span data-stu-id="ee9a6-301">Office 365 applies content marks or encryption with a sensitivity label differently depending on the application you use.</span></span>
+
+| <span data-ttu-id="ee9a6-302">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ee9a6-302">Application</span></span> | <span data-ttu-id="ee9a6-303">コンテンツのマーケティング</span><span class="sxs-lookup"><span data-stu-id="ee9a6-303">Content marking</span></span> | <span data-ttu-id="ee9a6-304">暗号化</span><span class="sxs-lookup"><span data-stu-id="ee9a6-304">Encryption</span></span> |
 | --- | --- | --- |
-| <span data-ttu-id="daecf-265">すべてのプラットフォームの Word、Excel、PowerPoint</span><span class="sxs-lookup"><span data-stu-id="daecf-265">Word, Excel, PowerPoint on all platforms</span></span> | <span data-ttu-id="daecf-266">直ちに</span><span class="sxs-lookup"><span data-stu-id="daecf-266">Immediately</span></span> | <span data-ttu-id="daecf-267">直ちに</span><span class="sxs-lookup"><span data-stu-id="daecf-267">Immediately</span></span> |
-| <span data-ttu-id="daecf-268">Outlook for PC と Outlook for Mac</span><span class="sxs-lookup"><span data-stu-id="daecf-268">Outlook for PC and Mac</span></span> | <span data-ttu-id="daecf-269">Exchange Online でメールが送信された後</span><span class="sxs-lookup"><span data-stu-id="daecf-269">After the email is sent by Exchange Online</span></span> | <span data-ttu-id="daecf-270">直ちに</span><span class="sxs-lookup"><span data-stu-id="daecf-270">Immediately</span></span> |
-| <span data-ttu-id="daecf-271">Outlook on the web、iOS、および Android</span><span class="sxs-lookup"><span data-stu-id="daecf-271">Outlook on the web, iOS, and Android</span></span> | <span data-ttu-id="daecf-272">Exchange Online でメールが送信された後</span><span class="sxs-lookup"><span data-stu-id="daecf-272">After the email is sent by Exchange Online</span></span> | <span data-ttu-id="daecf-273">Exchange Online でメールが送信された後</span><span class="sxs-lookup"><span data-stu-id="daecf-273">After the email is sent by Exchange Online</span></span> |
+| <span data-ttu-id="ee9a6-305">すべてのプラットフォームの Word、Excel、PowerPoint</span><span class="sxs-lookup"><span data-stu-id="ee9a6-305">Word, Excel, PowerPoint on all platforms</span></span> | <span data-ttu-id="ee9a6-306">直ちに</span><span class="sxs-lookup"><span data-stu-id="ee9a6-306">Immediately</span></span> | <span data-ttu-id="ee9a6-307">直ちに</span><span class="sxs-lookup"><span data-stu-id="ee9a6-307">Immediately</span></span> |
+| <span data-ttu-id="ee9a6-308">Outlook for PC と Outlook for Mac</span><span class="sxs-lookup"><span data-stu-id="ee9a6-308">Outlook for PC and Mac</span></span> | <span data-ttu-id="ee9a6-309">Exchange Online が電子メールを送信した後</span><span class="sxs-lookup"><span data-stu-id="ee9a6-309">After Exchange Online sends the email</span></span> | <span data-ttu-id="ee9a6-310">直ちに</span><span class="sxs-lookup"><span data-stu-id="ee9a6-310">Immediately</span></span> |
+| <span data-ttu-id="ee9a6-311">Outlook on the web、iOS、および Android</span><span class="sxs-lookup"><span data-stu-id="ee9a6-311">Outlook on the web, iOS, and Android</span></span> | <span data-ttu-id="ee9a6-312">Exchange Online が電子メールを送信した後</span><span class="sxs-lookup"><span data-stu-id="ee9a6-312">After Exchange Online sends the email</span></span> | <span data-ttu-id="ee9a6-313">Exchange Online が電子メールを送信した後</span><span class="sxs-lookup"><span data-stu-id="ee9a6-313">After Exchange Online sends the email</span></span> |
+|
 
-## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a><span data-ttu-id="daecf-274">機密ラベルは Office for Windows で Azure Information Protection クライアントと一緒に実行できますか?</span><span class="sxs-lookup"><span data-stu-id="daecf-274">Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?</span></span>
+## <a name="more-resources"></a><span data-ttu-id="ee9a6-314">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="ee9a6-314">More resources</span></span>
 
-<span data-ttu-id="daecf-275">いいえ。</span><span class="sxs-lookup"><span data-stu-id="daecf-275">No.</span></span> <span data-ttu-id="daecf-276">機密ラベルは、Azure Information Protection クライアントが Office for Windows で読み込まれた場合にオフになります。</span><span class="sxs-lookup"><span data-stu-id="daecf-276">Sensitivity labels are turned off if the Azure Information Protection client is loaded in Office for Windows.</span></span>
+[<span data-ttu-id="ee9a6-315">Azure Information Protection での分類とラベル付けについてよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="ee9a6-315">Frequently asked questions about classification and labeling in Azure Information Protection</span></span>](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
 
-<span data-ttu-id="daecf-277">Azure Information Protection クライアントがインストールされていても、代わりに機密ラベルを使用する場合は、次のことができます。</span><span class="sxs-lookup"><span data-stu-id="daecf-277">If you have the Azure Information Protection client installed, but you want to use sensitivity labels instead, you can:</span></span>
-
-1. <span data-ttu-id="daecf-278"> *\*Office の [秘密度] 機能を使用して秘密ラベルを適用して表示する*\*のグループポリシー設定を構成します。この設定は、*\*ユーザーの構成/管理用テンプレート/Microsoft Office 2016/セキュリティ設定*\*にあります。</span><span class="sxs-lookup"><span data-stu-id="daecf-278">Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting, which can be found under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.</span></span>
-
-  ><span data-ttu-id="daecf-279">注: この設定は従来のグループ ポリシーの展開メカニズムか、[Office クラウド ポリシー サービス](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)から展開できます。</span><span class="sxs-lookup"><span data-stu-id="daecf-279">Note: this setting can be deployed via traditional group policy deployment mechanisms, or by the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).</span></span> 
- 
-  <span data-ttu-id="daecf-280">または、Azure Information Protection クライアントをアンインストール、または [無効](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d)にできます。</span><span class="sxs-lookup"><span data-stu-id="daecf-280">Alternatively, you can uninstall or [disable](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection client.</span></span> 
-
-2. <span data-ttu-id="daecf-281">すべての Office アプリケーションを再起動します。</span><span class="sxs-lookup"><span data-stu-id="daecf-281">Restart all Office applications.</span></span>
-
-## <a name="will-sensitivity-labels-be-supported-in-non-subscription-versions-of-office-like-office-2016-or-office-2019"></a><span data-ttu-id="daecf-282">機密ラベルは、Office 2016 または Office 2019 のようなサブスクリプション以外 Office のバージョンでサポートされますか?</span><span class="sxs-lookup"><span data-stu-id="daecf-282">Will sensitivity labels be supported in non-subscription versions of Office like Office 2016 or Office 2019?</span></span>
-
-<span data-ttu-id="daecf-283">いいえ。</span><span class="sxs-lookup"><span data-stu-id="daecf-283">No.</span></span> <span data-ttu-id="daecf-284">機密ラベルは Office 365 サブスクリプションでのみサポートされ、サブスクリプション以外のいずれのバージョンでもサポートされません。</span><span class="sxs-lookup"><span data-stu-id="daecf-284">Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription version.</span></span> <span data-ttu-id="daecf-285">ただし、Azure Information Protection の統合されたラベル クライアントは、サブスクリプション以外の Office のバージョンで使用できます。</span><span class="sxs-lookup"><span data-stu-id="daecf-285">However, the Azure Information Protection unified labeling client may be used in non-subscription versions of Office.</span></span> 
-
-## <a name="i-previously-deployed-protection-templates-before-setting-up-sensitivity-labels-where-did-they-go"></a><span data-ttu-id="daecf-286">以前は、保護テンプレートを展開してから機密ラベルを設定しました。</span><span class="sxs-lookup"><span data-stu-id="daecf-286">I previously deployed protection templates before setting up sensitivity labels.</span></span> <span data-ttu-id="daecf-287">どうなりましたか?</span><span class="sxs-lookup"><span data-stu-id="daecf-287">Where did they go?</span></span>
-
-<span data-ttu-id="daecf-288">機密ラベルが有効になっていると、管理者が定義した[保護テンプレート](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)は Office のユーザー環境から非表示になります。暗号化が有効になっている機密ラベルでは冗長であるためです。</span><span class="sxs-lookup"><span data-stu-id="daecf-288">Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.</span></span> 
-
-## <a name="can-a-file-or-email-have-more-than-one-classification"></a><span data-ttu-id="daecf-289">ファイルまたはメールに複数の分類を含めることはできますか?</span><span class="sxs-lookup"><span data-stu-id="daecf-289">Can a file or email have more than one classification?</span></span>
-
-<span data-ttu-id="daecf-290">いいえ。</span><span class="sxs-lookup"><span data-stu-id="daecf-290">No.</span></span> <span data-ttu-id="daecf-291">ユーザーは、ドキュメントまたはメールごとに一度に 1 つだけラベルを選択することができます。</span><span class="sxs-lookup"><span data-stu-id="daecf-291">Users can select just one label at a time for each document or email, which often results in just one classification.</span></span>
-
-## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a><span data-ttu-id="daecf-292">メールにラベルが付けられている場合は、添付ファイルに同じラベルを自動的に付けますか?</span><span class="sxs-lookup"><span data-stu-id="daecf-292">When an email is labeled, do any attachments automatically get the same labeling?</span></span>
-
-<span data-ttu-id="daecf-293">いいえ。</span><span class="sxs-lookup"><span data-stu-id="daecf-293">No.</span></span> <span data-ttu-id="daecf-294">添付ファイルのあるメール メッセージにラベルを付けると、この添付ファイルのラベルは同じラベルを継承しません。</span><span class="sxs-lookup"><span data-stu-id="daecf-294">When you label an email message that has attachments, those attachments do not inherit the same label.</span></span> <span data-ttu-id="daecf-295">ラベルがない場合、または別々にラベルを適用していない場合、添付ファイルはそのまま残ります。</span><span class="sxs-lookup"><span data-stu-id="daecf-295">The attachments remain either without a label or retain a separately applied label.</span></span> <span data-ttu-id="daecf-296">ただし、メールのラベルが保護されている場合、その保護は Office の添付ファイルに適用されます。</span><span class="sxs-lookup"><span data-stu-id="daecf-296">However, if the label for the email applies protection, that protection is applied to Office attachments.</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="daecf-297">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="daecf-297">Additional resources</span></span>
-
-[<span data-ttu-id="daecf-298">Azure Information Protection での分類とラベル付けについてよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="daecf-298">Frequently asked questions about classification and labeling in Azure Information Protection</span></span>](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)<br>
-[<span data-ttu-id="daecf-299">Office 内のドキュメントとメールに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="daecf-299">Apply sensitivity labels to your documents and email within Office</span></span>](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+[<span data-ttu-id="ee9a6-316">Office 内のドキュメントとメールに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="ee9a6-316">Apply sensitivity labels to your documents and email within Office</span></span>](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
