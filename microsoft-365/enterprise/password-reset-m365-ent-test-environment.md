@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワードのリセットを構成してテストします。'
-ms.openlocfilehash: 3ad5a1477bfc40b541c0b048b9b68b896a748e0a
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673373"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757714"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
 
@@ -48,9 +48,9 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
   
 この構成は、次の内容で成立します。 
   
-- Office 365 E5 および EMS E5 の試用版サブスクリプションまたは有料サブスクリプション。
+- Microsoft 365 E5 または Office 365 E5 の試用版または有料サブスクリプション。
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 
-- Azure AD Connect が APP1 上で実行され、TESTLAB Active Directory Domain Services (AD DS) ドメインが、Office 365 および EMS E5 サブスクリプションの Azure AD テナントに同期されます。
+- Azure AD Connect が APP1 上で実行され、TESTLAB Active Directory Domain Services (AD DS) ドメインが、Microsoft 365 または Office 365 サブスクリプションの Azure AD テナントに同期されます。
 
 
 ## <a name="phase-2-enable-password-writeback"></a>フェーズ 2: パスワード ライトバックの有効化
