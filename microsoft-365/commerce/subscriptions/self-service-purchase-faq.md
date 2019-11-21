@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
-ms.openlocfilehash: cbf30a29ed3948cb3b20da919835ed2524163617
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: fb295315eca84614e78792d0900318610c26b239
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721653"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757694"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入に関する FAQ
 
@@ -29,12 +29,11 @@ ms.locfileid: "38721653"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>電源プラットフォーム製品のセルフサービス購入に関して Microsoft が発表した変更点は何ですか?
 
-2019年10月31日の時点での更新: 過去1週間で、電力プラットフォーム製品のセルフサービス購入機能の展開に関するお客様からのフィードバックをお待ちしています。 フィードバックに基づいて、次のような変更をプランに加えています。
+11月19日に IT 管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にする方法を提供しました。 その使用方法については、「 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
 
-- 11月19日に、IT 管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にする方法を提供します。 その使用方法については、「 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
-- この変更の準備により多くの時間を提供するために、microsoft は、すべての商用クラウドのお客様に対して、電源プラットフォーム製品のサービスを、2月14日に Power BI で開始するためのサービスの購入機能を更新しています。  
+この変更の準備により多くの時間を提供するために、microsoft は、すべての商用クラウドのお客様について、1月14日に power Platform 製品が Power BI を開始できるようにするための、電源プラットフォーム製品のセルフサービス購入機能のための起動を更新しています。  
 
-2020年1月14日以降、電力プラットフォーム製品 (Power BI、電源アプリ、および電源自動化) のセルフサービス購入、サブスクリプション、およびライセンス管理の機能は、米国のコマーシャルクラウドのお客様が利用できます。 セルフサービス購入により、ユーザーは新しいテクノロジを試す機会を得ることができ、それにより大規模な組織に最終的にメリットをもたらすソリューションを開発することができます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。 中央の調達および IT チームは、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を介してセルフサービス購入ソリューションを購入および展開するすべてのユーザーに対して可視性を持ち、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。
+2020年1月14日以降、電力プラットフォーム製品 (Power BI、電源アプリ、および電源自動化) のセルフサービス購入、サブスクリプション、およびライセンス管理の機能は、米国のコマーシャルクラウドのお客様が利用できます。 セルフサービス購入により、ユーザーは新しいテクノロジを試す機会に、より大規模な組織に最終的にメリットをもたらすソリューションを開発することができます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。 中央の調達および IT チームは、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を介してセルフサービス購入ソリューションを購入および展開するすべてのユーザーに対して可視性を持ち、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Microsoft が電源プラットフォーム製品のセルフサービス購入オプションを追加するのはなぜですか?
 
@@ -46,13 +45,13 @@ Microsoft は、2020年1月14日に Power BI のセルフサービス購入を�
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>電源プラットフォーム製品を超えたサービスに対してセルフサービス購入が有効になりますか?
 
-現時点では、製品の電源プラットフォームファミリは、セルフサービス購入で提供されるサービスのみです。
+現時点では、セルフサービス購入で提供されているのは電源プラットフォームファミリ製品のみです。
 
 ## <a name="making-a-self-service-purchase"></a>セルフサービス購入の作成
 
 ### <a name="how-does-a-customer-make-a-self-service-purchase"></a>お客様はどのようにしてセルフサービス購入を行いますか?
 
-お客様は、Microsoft Power BI、Power Apps、および Power online の web サイトからセルフサービス購入を行うことができます。 お客様は、既存の Azure Active Directory (AD) テナント内のユーザーであることを確認するために、最初にメールアドレスを入力するように求められます。その後、Azure AD 資格情報を使用してログインするように指示されます。 ログイン後、お客様は購入するサブスクリプションの数を選択し、クレジットカードの支払いを提供するように求められます。 購入が完了すると、サブスクリプションの使用を開始できるようになります。 また、購入者は、組織内の他のユーザーが製品を使用できるようにするための<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の制限されたビューにアクセスすることもできます。
+お客様は、Microsoft Power BI、Power Apps、および Power online の web サイトからセルフサービス購入を行うことができます。 お客様は、既存の Azure Active Directory (AD) テナント内のユーザーであることを確認するために、最初にメールアドレスを入力するように求められます。 その後、Azure AD 資格情報を使用してログインするように指示されます。 サインインした後、お客様は購入するサブスクリプションの数を選択し、クレジットカードの支払いを提供するように求められます。 購入が完了すると、サブスクリプションの使用を開始できるようになります。 また、購入者は、組織内の他のユーザーが製品を使用できるようにするための<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の制限されたビューにアクセスすることもできます。
 
 ### <a name="what-are-the-payment-options-for-self-service-purchases"></a>セルフサービス購入の支払いオプションとは
 
@@ -88,7 +87,7 @@ Microsoft は、2020年1月14日に Power BI のセルフサービス購入を�
 
 ### <a name="what-is-the-pricing-for-self-service-purchases"></a>セルフサービス購入の価格設定について
 
-セルフサービス購入の各電源プラットフォーム製品の価格は、Microsoft の web サイトで提供されており、セルフサービス購入時にも、チェックアウト操作の一部として表示されます。 これらの価格は、パートナーによって集中購入または料金を提示する際に組織が支払う価格とは異なる場合があります。
+セルフサービス購入の各電源プラットフォーム製品の価格は、Microsoft の web サイトで提供されています。また、セルフサービス購入時にも、チェックアウト操作の一部として表示されます。 これらの価格は、パートナーによって集中購入または料金を提示する際に組織が支払う価格とは異なる場合があります。
 
 ### <a name="who-is-responsible-for-payment"></a>支払いの責任者
 
@@ -100,7 +99,7 @@ Microsoft は、2020年1月14日に Power BI のセルフサービス購入を�
 
 管理者は、組織内で行われたすべてのセルフサービスの購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。 組織に必要な場合、管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入または集中的に購入した製品に対して、同じデータ管理とアクセスポリシーを使用できます。
 
-管理者は、組織内のユーザーがセルフサービス購入を行うことができるかどうかを制御することもできます。 詳細について[は、「Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
+管理者は、組織内のユーザーがセルフサービス購入を行うことができるかどうかを制御することもできます。 詳細については、「 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>セルフサービス購入を有効にすることによって、Microsoft はデータガバナンスとコンプライアンスをどのように重視していますか?
 
@@ -136,7 +135,7 @@ IT 部門およびパートナーは、セルフサービス購入を通じて�
 
 ### <a name="what-happens-to-a-self-service-purchase-if-a-user-leaves-the-organization"></a>ユーザーが組織を離れた場合、セルフサービス購入はどうなりますか?
 
-有効なユーザーは、サブスクリプションの期間に対してセルフサービス購入を完全に使用し続けることができます。 サブスクリプションは、購入者が直接取り消すか、カスタマーサポートによってサブスクリプションをキャンセルすることを要求するまでアクティブなままになります。 また、管理者は、キャンセルされたサブスクリプションのユーザーに一括購入したライセンスを割り当てることもできます。
+有効なユーザーは、サブスクリプションの期間に対してセルフサービス購入を完全に使用し続けることができます。 サブスクリプションは、購入者が直接取り消すか、カスタマーサポートによってサブスクリプションをキャンセルすることを要求するまで、アクティブのままになります。 管理者は、解約されたサブスクリプションのユーザーに対して、集中購入したライセンスを割り当てることもできます。
 
 ## <a name="partners"></a>パートナー
 

@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 93bb36f115ee5f83e07ac9623c852fec4dbf205f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031292"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753626"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>管理されていない Windows 10 Pc および Mac を保護する
 
-Windows 10 Pc および Mac を Microsoft Intune に登録することによって管理できます。これにより、環境内のデータにアクセスする前に、それらを正常かつ安全な状態に保つことができます。 しかし、多くのキャンペーンおよび小規模企業には、組織で管理されていない独自のデバイス (byod) を提供するスタッフが含まれています。 これらの管理されていない Pc および Mac では、この記事を使用して最小限のセキュリティ機能が構成されていることを確認してください。 
+Windows 10 Pc および Mac を Microsoft Intune に登録することによって管理できます。これにより、環境内のデータにアクセスする前に、それらを正常かつ安全な状態に保つことができます。 しかし、多くのキャンペーンおよび小規模企業には、組織で管理されていない独自のデバイス (byod) を持っているスタッフが含まれています。 これらの管理されていない Pc および Mac では、この記事を使用して最小限のセキュリティ機能が構成されていることを確認してください。 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -50,8 +50,7 @@ Windows 10 PC または Mac が組織で管理されていない場合は、必�
 
 デバイスの暗号化は、さまざまな Windows デバイスで使用でき、暗号化によってデータを保護します。 デバイスの暗号化を有効にすると、承認されたユーザーのみがデバイスとデータにアクセスできるようになります。 手順については、「 [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 」を参照してください。
 
- デバイスの暗号化がデバイスで使用できない場合は、代わりに標準の[BitLocker 暗号化](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)を有効にすることができます。 (Windows 10 Home edition で BitLocker は使用できません。) 
-
+ デバイスの暗号化がデバイスで使用できない場合は、代わりに標準の[BitLocker 暗号化](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)を有効にすることができます。 (Windows 10 Home edition で BitLocker を使用することはできません。) 
 
 
 **Windows セキュリティを使用してデバイスを保護する**<p>
@@ -71,7 +70,7 @@ Windows Update は、PC の安全性を確保して脅威から保護するた�
 **マルウェアから mac を保護する**<p>
 Microsoft は、信頼性の高いウイルス対策ソフトウェアを Mac にインストールして使用することをお勧めします。 選択肢の一覧については、次の記事を参照してください。[最適な Mac ウイルス対策 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
 
-また、信頼できるソースからのソフトウェアのみを使用してマルウェアのリスクを軽減することもできます。 [セキュリティの & プライバシー設定] の設定では、Mac にインストールされているソフトウェアのソースを指定できます。 詳細については[、「マルウェアから Mac を保護](https://support.apple.com/kb/PH25087)する」を参照してください。
+また、信頼できるソースからのソフトウェアのみを使用してマルウェアのリスクを軽減することもできます。 [セキュリティの & プライバシー設定] の設定では、Mac にインストールされているソフトウェアのソースを指定できます。 詳細については、「[マルウェアから Mac を保護](https://support.apple.com/kb/PH25087)する」を参照してください。
 
 **ファイアウォール保護を有効にする**<p>
 インターネットまたはネットワークに接続しているときに他のコンピューターによって開始された不要な連絡先から Mac を保護するには、ファイアウォールの設定を使用します。 この保護を使用しないと、Mac が権限のないアクセスに対して脆弱になる可能性があります。 手順に[ついては、「アプリケーションファイアウォールについ](https://support.apple.com/HT201642)て」を参照してください。

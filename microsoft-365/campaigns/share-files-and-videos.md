@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams と SharePoint を使用して、キャンペーン内でファイルとビデオを共有できます。
-ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031192"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753616"
 ---
 # <a name="share-files-and-videos"></a>ファイルやビデオを共有する
 
-ファイルを表示できるユーザー、およびファイルを編集できるユーザーを制御する必要がある場合は、ファイルを安全な場所に保存して、アクセス許可が適切に適用されるようにする必要があります。 Microsoft Teams を使用してファイルを保存し、Microsoft Teams との間で、または SharePoint リンクを送信することによって、それらのファイルを共有することができます。 電子メールの添付ファイルではなくリンクを送信するということは、ファイルを表示および変更しているユーザーを知ることができます。また、アクセス許可がなくても、それらを表示または変更することはできません。 
+ファイルを表示できるユーザーと、ファイルを編集できるユーザーを制御する必要がある場合は、ファイルを安全な場所に保存して、アクセス許可を適切に適用できるようにする必要があります。 Microsoft teams を使用してファイルを保存し、Microsoft Teams を使用して、または SharePoint リンクを送信することによって、そのファイルをキャンペーンの内部または外部のどちらでも共有できます。 電子メールの添付ファイルではなくリンクを送信するということは、ファイルを表示および変更しているユーザーを知ることができます。また、アクセス許可がなくても、それらを表示または変更することはできません。 
 
 ![[ファイル] タブを表示し、メニューの [リンクの取得] を表示する Microsoft Teams ウィンドウの図](media/m365-democracy-teams-sharefiles.png)
 

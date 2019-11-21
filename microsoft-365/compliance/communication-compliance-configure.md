@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コミュニケーションコンプライアンスポリシーを設定して、レビューのために従業員の通信を構成します。
-ms.openlocfilehash: 76b28443d2fa77967933ea61f2724a2a5ff072be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686682"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755605"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Microsoft 365 の通信コンプライアンスを構成する (プレビュー)
 
@@ -42,7 +42,7 @@ Microsoft 365 組織の通信コンプライアンスをセットアップして
 
 - **手順 2 (必須)**:[組織内で通信のコンプライアンスを実現できるようにする](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    ポリシーをセットアップできるように、自分を**監督レビュー管理者**ロールに追加します。 また、**ケース管理**を割り当てて、ポリシーが一致するメッセージに対する調査と修復アクションを実行するユーザーまたはグループに役割を**レビュー**する必要があります。 これらの役割が割り当てられているすべてのユーザーは、Microsoft 365 コンプライアンスセンターの [**通信コンプライアンス**] ページにアクセスできます。 再表示可能な電子メールが Exchange Online でホストされている場合は、各レビュー担当者が[Exchange online へのリモート PowerShell アクセス権](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)を持っている必要があります。
+    ポリシーをセットアップできるように、自分を**監督レビュー管理者**ロールに追加します。 また、**監督レビュー管理者**と共にグループを作成する必要があります。**ケース管理**と、ポリシーが一致するメッセージに対する調査と修復アクションを実行するユーザーまたはグループに対する役割の**レビュー**を行う必要があります。 これらの役割が割り当てられているすべてのユーザーは、Microsoft 365 コンプライアンスセンターの [**通信コンプライアンス**] ページにアクセスできます。 再表示可能な電子メールが Exchange Online でホストされている場合は、各レビュー担当者が[Exchange online へのリモート PowerShell アクセス権](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)を持っている必要があります。
 
 - **手順 3 (必須)**:[通信コンプライアンスポリシーをセットアップする](#step-3-create-a-communication-compliance-policy-required)
 
@@ -77,29 +77,7 @@ Microsoft 365 組織の通信コンプライアンスをセットアップして
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>手順 2: 組織で通信のコンプライアンスを実現する (必須)
 
-Microsoft 365 コンプライアンスセンターのメニューオプションとして**通信のコンプライアンス**を実現するには、監督レビュー管理者の役割が割り当てられている必要があります。 ポリシーが一致するメッセージを調査および修復するには、**ケースの管理**および**レビュー**の役割が割り当てられている必要があります。
-  
-これを行うには、自分を監督レビュー役割グループのメンバーとして追加するか、新しい役割グループを作成することができます。
-  
-### <a name="add-required-roles-to-the-supervisory-reviewer-role-group"></a>必要な役割を監督レビューアー役割グループに追加する
-
-1. Microsoft 365 [https://compliance.microsoft.com](https://compliance.microsoft.com)組織の管理者アカウントの資格情報を使用してサインインします。
-
-2. Microsoft 365 コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
-
-3. [**監督レビュー** ] 役割グループを選択し、[詳細] ページの [**割り当てられた役割**] セクションで [**編集**] をクリックします。
-
-4. [**編集**] を選択し、[**追加**] を選択します。 [**ケースの管理**と**レビュー**] のチェックボックスをオンにし、[**追加**] を選択します。
-
-5. [**完了**] を選択し、[**保存**] を選択します。
-
-6. [**メンバー** ] セクションで、[**編集**] を選択して、組織の通信コンプライアンスを管理するユーザーを追加します。
-
-7. [**編集**] を選択し、[**追加**] を選択します。 ポリシーを一致させるメッセージを管理するすべてのユーザーとグループのチェックボックスをオンにし、[**追加**] を選択します。
-
-8. [**完了**] を選択し、[**保存**] を選択します。
-
-9. [**閉じる**] を選択して、役割グループの詳細ページを終了します。
+Microsoft 365 コンプライアンスセンターのメニューオプションとして**通信のコンプライアンス**を実現するには、**監督レビュー管理者**の役割が割り当てられている必要があります。 さらに、ポリシー一致を含むメッセージを調査および修復するには、**監督レビュー管理者**、**ケース管理**、および**レビュー**の役割を持つレビュー担当者のグループを作成する必要があります。
 
 ### <a name="create-a-new-role-group"></a>新しい役割グループを作成する
 

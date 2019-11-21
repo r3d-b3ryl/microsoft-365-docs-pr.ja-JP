@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのための Microsoft 365 のステップバイステップのサインアップ。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
-ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b6866a3c2291b00934b5808777f795e5b99faa34
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772464"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753606"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンのための Microsoft 365 へのサインアップ 
 
@@ -75,14 +75,14 @@ Office 365 for business (Office 365 Business Premium など) への既存のサ�
 > 既存の Microsoft 365 Business テナントには、Microsoft 365 for the キャンペーンオファーを追加することはできません。
 
 1. Microsoft 365 へのキャンペーン電子メールへの招待で、[**組織 >を登録**する] を選択します。 これにより、Microsoft 365 サインアップが実行されます。
-2. [**ようこそ、ご意見**をお**持ちですか?] ページで、既存のサブスクリプションに追加する場合はクリックまたはタップします。サインイン**します。
+2. [**ようこそ、ご意見**をお持ちですか?] ページで、クリックまたはタップして**既存のサブスクリプションに追加しますか?サインイン**します。
     
     ![右上隅の [サインイン] を選択します。](media/addtoexisting.png)
-3. [サインイン] ページで、既存のサブスクリプションの管理者エイリアス (例: *Alice @ VoteContoso<span></span>* ) を入力してから、[**次へ**] を選択し、パスワードを入力して、[**サインイン**] を選択します。
-4. **どのように表示されますか。** ユーザーの数を入力し、[**次へ**] をクリックします。 プロモーションコードは、招待 URL に既に含まれているため、ここで入力する必要がないことに注意してください。
+3. [サインイン] ページで、既存のサブスクリプションの管理者エイリアス (たとえば*Alice@VoteContoso<span></span>.org*) を入力し、[**次へ**] を選択し、パスワードを入力して、[**サインイン**] を選択します。
+4. **どのように表示されますか。** ユーザーの数を入力し、[**次へ**] をクリックします。 プロモーションコードは、招待 URL に既に含まれているため、ここで入力する必要はありません。
 5. [**支払い方法]** ページで、お支払い方法を入力し、[**注文**] を選択します。
 
-これらの手順を完了したら、[新しいライセンス](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)をキャンペーンスタッフに割り当てることができます。 
+これらの手順を完了すると、[新しいライセンス](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)をキャンペーンスタッフに割り当てる準備が整います。 
 
 
 ## <a name="whats-next"></a>次の作業

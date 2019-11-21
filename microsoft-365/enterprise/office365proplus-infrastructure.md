@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の Office 365 ProPlus インフラストラクチャを展開する手順。
-ms.openlocfilehash: a51a37a321b450d233d7f9fd6da28b5828514d13
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 30e3956eba0e990d8d07a41dae924c3005f34d75
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627451"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757754"
 ---
 # <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
@@ -59,7 +59,7 @@ Office 365 ProPlus を展開する前に、「[Office 365 ProPlus を展開す�
 
 - **[ODT を使用してクラウドから Office 365 ProPlus を展開する](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** ODT を使用して展開を管理し、Office CDN からクライアント デバイスに Office を直接インストールします。
  
-- **[Office ポータルから Office 365 ProPlus をセルフインストールする](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658):** Office ポータルから展開を管理し、ユーザーがポータルから各自のクライアント デバイスに Office インストールします。
+- **[Office ポータルから Office 365 ProPlus をセルフインストールする](https://docs.microsoft.com/deployoffice/manage-software-download-settings-office-365):** Office ポータルから展開を管理し、ユーザーがポータルから各自のクライアント デバイスに Office インストールします。
 
 多くの組織では、ユーザーに応じて前述のオプションを組み合わせて使用します。たとえば、ほとんどのユーザーに対しては Configuration Manager を使用して Office を展開しますが、社内ネットワークに頻繁に接続しない少数の作業員のグループにはセルフ インストールを有効にします。 
 

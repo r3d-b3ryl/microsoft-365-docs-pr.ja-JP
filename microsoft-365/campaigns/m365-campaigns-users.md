@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for キャンペーンがユーザーに与える影響について説明します。
-ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11a141ba24aa45c0c60dec064877f319f0b5ded2
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031242"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753596"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 for キャンペーンがユーザーに与える影響
 
@@ -53,7 +53,7 @@ Microsoft 365 for キャンペーンでは、ハッカーが自分の環境に�
 これらを設定すると、ユーザーは、メールを含むこれらのデバイスの組織データにアクセスするときに、認証アプリを使用するように求められます。 
 
 ## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>OD Mac と Windows 10 Pc を最新の状態に保つ 
-また、ユーザーがプライマリ作業デバイスを最新の状態にしておくことも重要です。
+また、ユーザーがプライマリ作業デバイスを最新の状態に保つことも重要です。
 - Office デスクトップアプリの最新バージョンをインストールし、メッセージが表示された場合は、更新プログラムを使用してそれらを最新の状態に保ちます。 
 - Windows update などのオペレーティングシステムの更新プログラムを常に最新の状態に保ちます。
 
@@ -73,8 +73,4 @@ Microsoft 365 for キャンペーンでは、ハッカーが自分の環境に�
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>管理された Windows 10 デバイスをセットアップする
-最も重要なスタッフメンバーは、自分で作成した Windows 10 デバイスを自分で管理して使用することをお勧めします。 [これらのデバイスを管理およびセキュリティ保護](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)する方法について説明します。 これにより、最も価値の高い対象となるスタッフメンバーが、ハッカーに最も保護されます。 
-
-
-
-  
+最も重要なスタッフメンバーは、自分で作成した Windows 10 デバイスを自分で管理して使用することをお勧めします。 [これらのデバイスを管理およびセキュリティ保護](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)する方法について説明します。 これにより、最も価値の高い対象となるスタッフメンバーが最も保護を受けることができます。 

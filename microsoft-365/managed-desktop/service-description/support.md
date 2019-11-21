@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982508"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757664"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのサポート
 
@@ -39,7 +39,7 @@ Microsoft マネージドデスクトップのサポートは次のとおりで�
 
 サポートの詳細情報:
 
-- 現行: 北アメリカ、カナダ (ケベック州を除く)、英国、オーストラリア、ニュージーランドのみ (24 時間365日) 
+- 現行: 米国、カナダ (ケベック州を除く)、英国、ベルギー、ルクセンブルク、オランダ、オーストラリア、ニュージーランド (24 時間) 
 - 英語は、お客様との電話およびチャットの会話でサポートされている唯一の言語です。 
 - 弊社は、会社のヘルプデスクをリプレースするのではなく、提携しています。基幹業務 (LOB) アプリ、ネットワークリソースなどは、引き続きヘルプデスクで処理されます。 
 - Microsoft マネージドデスクトップに含まれていない "テスト" グループとデバイスの microsoft マネージドデスクトップデバイスがスコープ外 

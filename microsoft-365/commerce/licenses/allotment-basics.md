@@ -12,12 +12,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: 新しい追加機能について説明します。
-ms.openlocfilehash: 3414fce02844629826edc6d9474f746aa27cfa2e
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: fff63b3c61ad95696e7f7677a34154ad65e82259
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012486"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753576"
 ---
 # <a name="allotment-basics"></a>サービス単位の基本
 
@@ -47,4 +47,4 @@ ms.locfileid: "38012486"
 
 ## <a name="getting-started"></a>はじめに
 
-この機能は、個人用のプレビューでは少数のお客様のみが利用できます。 参加したい場合は、次のフォームに記入してください。[https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)
+この機能は、個人用のプレビューでは少数のお客様のみが利用できます。 参加に興味がある場合は、次のフォームに[https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)記入してください。
