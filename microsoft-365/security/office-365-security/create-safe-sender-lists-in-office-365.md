@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 特定の送信者からのメールを確実に受信できるようにする場合は、Exchange 管理センターでスパムフィルターポリシーの許可リストを調整できます。このようなメッセージを受信します。
-ms.openlocfilehash: 2a161573e3b51f12cd7582df26a021fab3f8de84
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033692"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793681"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Office 365 で差出人セーフリストを作成する
 
@@ -87,7 +87,7 @@ Etr を使用して、送信者の認証を検証する際に特定の送信者�
 
 少なくとも、送信者/ドメインによる承認の方が望ましいオプションです。 このオプションは、スパム/スプーフィング/フィッシング保護を完全にバイパスし、送信者の認証を評価しない*場合に限り*、避ける必要があります。 この方法を使用すると、不適切な俳優からのメールを受信するリスクが高まり、テストの際にのみ、一時的に推奨されるものになります。 詳細な手順については、「[スパムフィルターポリシーの構成](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)」のドキュメントを参照してください。
 
-これらのリストの最大数は、約1000エントリです。
+これらのリストの最大数は、約1000エントリです。ただし、ポータルには30個のエントリしか入力できません。 30個を超えるエントリを追加するには、PowerShell を使用する必要があります。
 
 > [!CAUTION]
 > スパム対策ポリシーを構成して、[*送信者/許可] ドメインを許可*すると、許可リスト内の送信者からの、または b) 許可されたドメインの送信者からのメッセージがスパムフィルター処理によってスキップされます。 この方法では、スパム送信者が送信ドメインをスプーフィングする (または完全な電子メールアドレスを偽装する) スパムフィルター処理を省略し、送信者の受信トレイにメッセージを直接送信するリスクを大幅に向上させることができます。

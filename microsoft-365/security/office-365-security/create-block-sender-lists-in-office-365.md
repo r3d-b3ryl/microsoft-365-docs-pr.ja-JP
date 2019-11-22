@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 受信拒否リストのオプションには、Outlook のブロックされた送信者、スパム対策送信者/ドメイン禁止リスト、IP 禁止一覧、および Exchange トランスポートルール (Etr) がメールフロールールとも呼ばれます。
-ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032402"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793711"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Office 365 で受信拒否リストを作成する
 
@@ -49,7 +49,7 @@ ms.locfileid: "38032402"
 
 複数のユーザーが影響を受けている場合、範囲は広くなり、会社全体の送信者/ドメインブロックリストのスパム対策ポリシーを使用する必要があります。 詳細な手順については、「[スパムフィルターポリシーの構成](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)」のドキュメントを参照してください。 このメソッドによってブロックされるメッセージはすべて、ポリシーに構成されたスパムアクションに従います。
 
-これらのリストの最大数は、約1000エントリです。
+これらのリストの最大数は、約1000エントリです。ただし、ポータルには30個のエントリしか入力できません。 30個を超えるエントリを追加するには、PowerShell を使用する必要があります。
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Exchange トランスポートルール (Etr) を使用して特定の送信者をブロックする
 

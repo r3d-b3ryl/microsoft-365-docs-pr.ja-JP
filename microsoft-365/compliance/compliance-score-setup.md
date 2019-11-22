@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: サインインする方法、アクセス許可を設定する方法、および Microsoft コンプライアンススコアのダッシュボードを理解する方法について説明します。これにより、リスク評価を簡素化および自動化できます。
-ms.openlocfilehash: 8c9bc7d1605bad66228bb47de8f86042839ac5be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686673"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793651"
 ---
-# <a name="microsoft-compliance-score-setup-preview"></a>Microsoft コンプライアンススコアのセットアップ (プレビュー)
+# <a name="microsoft-compliance-score-preview-setup"></a>Microsoft コンプライアンススコア (プレビュー) の設定
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 通常、コンプライアンススコアにアクセスする最初のユーザーは、組織の Microsoft 365 グローバル管理者になります。 初めてコンプライアンススコアを参照する場合は、グローバル管理者サインインを推奨し、以下の説明に従ってユーザー権限を設定することをお勧めします。
 
@@ -52,7 +52,7 @@ ms.locfileid: "38686673"
 | **データを編集する**| コンプライアンス管理者 | コンプライアンスマネージャー共同作成者 | 
 | **テスト結果を編集する**| コンプライアンス管理者 | コンプライアンスマネージャーの査定者 | 
 | **評価、およびテンプレートとテナントデータを管理する**| コンプライアンス管理者<br>コンプライアンス データ管理者<br>セキュリティ管理者 | コンプライアンスマネージャー管理者 | 
-| **ユーザーを割り当てる**| 全体管理者 | ポータル管理者 | 
+| **ユーザーを割り当てる**| グローバル管理者 | ポータル管理者 | 
 
 > [!NOTE]
 > コンプライアンススコアからコンプライアンスマネージャーに移行してタスクを完了すると (たとえば、評価を管理する場合)、ブラウザーで新しいタブが開き、ダイアログボックスが表示されます。 上部のセクションに、「既に Microsoft cloud services のお客様である」というヘッダーがあります。 アカウントにサインインし、[コンプライアンスマネージャーにアクセスするには**サインイン**] を選択します。資格情報を再入力する必要はありません。

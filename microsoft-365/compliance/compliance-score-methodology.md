@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: リスクに対処し、コンプライアンスの姿勢を改善するために行われた処置に基づいて、Microsoft コンプライアンススコアが個人のスコアを計算する方法について理解します。
-ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686667"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793661"
 ---
-# <a name="microsoft-compliance-score-calculation-preview"></a>Microsoft コンプライアンススコアの計算 (プレビュー)
+# <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft コンプライアンススコア (プレビュー) の計算
 
 > [!IMPORTANT]
 > コンプライアンススコアは、特定の標準または規制に対する組織のコンプライアンスの絶対的な測定基準を表しているわけではありません。 このことは、個人データや個人のプライバシーに対するリスクを軽減するために、制御を採用した範囲を表しています。 コンプライアンススコアとコンプライアンスマネージャーからの推奨事項は、コンプライアンスの保証として解釈されないようにする必要があります。 このサービスは現在プレビュー段階であり、[オンラインサービス](https://go.microsoft.com/fwlink/?linkid=2108910)の使用条件の条件に従います。
@@ -74,10 +74,10 @@ ms.locfileid: "38686667"
   
 各コントロールには、次のリスクに基づいてコンプライアンススコアの値が割り当てられます。
 
-|**種類**|**割り当てられたスコア**|
+|**型**|**割り当てられたスコア**|
 |:-----|:-----|
 | 予防必須 | 27 |
-| 予防的裁量 | i-9 |
+| 予防的裁量 | 9  |
 | 検出必須 | 1/3 |
 | 検出随意 | 1-d |
 | 修正必須 | 1/3 |

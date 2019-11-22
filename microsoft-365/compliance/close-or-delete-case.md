@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085443"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191172"
 ---
 # <a name="close-or-delete-a-case"></a>ケースを閉じるか、ケースを削除する
 
@@ -35,16 +35,16 @@ ms.locfileid: "37085443"
 
 ケースを閉じるには、次のようにします。
 
-1. **[高度な電子情報開示**] ページで、ケースに移動します。
+1. [**高度な電子情報開示**] ページで、クローズするケースを選択します。
 
-2. [**設定**] に移動し、[**ケース情報**] を選択します。 
+2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
 
-3. [ **Case を閉じる**] をクリックします。 
+3. [ **Case を閉じる**] をクリックします。
 
 ケースを削除するには:
 
-1. **[高度な電子情報開示**] ページで、ケースに移動します。
+1. [**高度な電子情報開示**] ページで、削除するケースを選択します。
 
-2. [**設定**] に移動し、[**ケース情報**] を選択します。 
+2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
 
 3. [ **Case の削除**] をクリックします。 

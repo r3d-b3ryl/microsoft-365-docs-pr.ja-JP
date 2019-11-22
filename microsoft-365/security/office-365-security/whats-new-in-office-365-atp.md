@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 13267597bb29708fcf477a79168e6873a7ccdd90
-ms.sourcegitcommit: b8dd1cb1da936f2b7c9ed621bce6ef5b3588427c
+ms.openlocfilehash: 6f024337ac134cc830dfb61286e7f8e53d41c169
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37400343"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191222"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -30,7 +30,7 @@ Office 365 ATP の最新リリースでは、次の機能が一般公開 (GA) �
 
 >Office 365 ATP をまだ持っていませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。 
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン1およびプラン2
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン 1 およびプラン 2
 
 Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP Plan 1 および Office 365 ATP Plan 2。 次の表に、各プランに含まれるものの概要を示します。 
 
@@ -40,9 +40,13 @@ Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP
 
 Office 365 ATP プラン2は、Office 365 Enterprise E5、Office 365 エデュケーション A5、および Microsoft 365 Enterprise E5 に含まれています。 Office 365 ATP プラン1は、Microsoft 365 Business に含まれています。 現在のサブスクリプションに Office 365 ATP が含まれていない場合は、[売上に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、ATP が組織でどのように機能するかを確認します。 
 
+## <a name="november-2019"></a>2019 年 11 月
+
+- 侵害された[ユーザーの検出と応答の機能 (プレビュー) を確認](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)する (OFFICE 365 ATP Plan 2)
+
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [Office 365 で自動インシデント対応 (AIR) を活用](automated-investigation-response-office.md)する (OFFICE 365 ATP Plan 2)
+- [Office 365 で自動インシデント対応 (AIR) を](automated-investigation-response-office.md)使用する (OFFICE 365 ATP Plan 2)
 
 - Office [365 の ATP AIR イベントとの統合 office 365 Management ACTIVITY API を使用した統合](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(OFFICE 365 ATP Plan 2)
 

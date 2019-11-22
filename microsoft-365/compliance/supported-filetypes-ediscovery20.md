@@ -13,18 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧。 これには、高度な電子情報開示の OCR 機能でサポートされているイメージファイルの種類の一覧が含まれています。
+ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38686661"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191242"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高度な電子情報開示でサポートされているファイルの種類
 
-高度な電子情報開示では、多くの種類のファイルをサポートしています。これについては、次の表で説明します。 この一覧は最終処理されていません。検証テストを続行するときに、新しいファイルの種類を追加します。 表は、ファイルの種類がテキスト抽出 (画像用 OCR) でサポートされているかどうかを示します。これは、ネイティブビューアーで表示できます。また、Advanced 電子情報開示の注釈ビューアーでもサポートされています。
-
+高度な電子情報開示では、多くの種類のファイルをサポートしています。これについては、次の表で説明します。 この一覧は最終処理されていないため、検証テストを続行するときに新しいファイルの種類を追加します。 これらの表は、ファイルの種類がテキスト抽出 (および画像ファイルの OCR テキストの抽出) に対してサポートされているかどうかを示し、ネイティブビューアーで表示できます。また、Advanced eDiscovery の注釈ビューアーでもサポートしています。
 
 ## <a name="archive--container"></a>Archive/Container
 
@@ -40,12 +39,12 @@ ms.locfileid: "38686661"
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/mp4 | はい | はい | いいえ | はい | 不要 | . f4v;. m4a;. m4v;. mp4;. mp4v;。 mpeg4 |
-| 音声/mpeg | はい | はい | いいえ | はい | 不要 | mpeg-2 |
-| ビデオ/3gpp | はい | はい | いいえ | はい | 不要 | .3gp |
-| video/3gpp2 | はい | はい | いいえ | はい | 不要 | . 3g2;. 3g2 |
-| ビデオ/quicktime | はい | はい | いいえ | はい | 不要 | . moov、.mov、.qt |
-| ビデオ/m4v | はい | はい | いいえ | はい | 不要 | .m4v |
+| application/mp4 | はい | はい | いいえ | はい | いいえ | . f4v;. m4a;. m4v;. mp4;. mp4v;。 mpeg4 |
+| 音声/mpeg | はい | はい | いいえ | はい | いいえ | mpeg-2 |
+| ビデオ/3gpp | はい | はい | いいえ | はい | いいえ | .3gp |
+| video/3gpp2 | はい | はい | いいえ | はい | いいえ | . 3g2;. 3g2 |
+| ビデオ/quicktime | はい | はい | いいえ | はい | いいえ | . moov、.mov、.qt |
+| ビデオ/m4v | はい | はい | いいえ | はい | いいえ | .m4v |
 ||||||||
 
 ## <a name="database"></a>データベース
@@ -90,7 +89,7 @@ ms.locfileid: "38686661"
 | image/gif | はい | はい | はい | はい | はい | .gif |
 | image/jpeg | はい | はい | はい | はい | はい | .jpeg、.jpg |
 | image/png | はい | はい | はい | はい | はい | .png |
-| image/svg + xml | はい | はい | はい | はい | 不要 | svg |
+| image/svg + xml | はい | はい | はい | はい | いいえ | svg |
 | image/tiff | はい | はい | はい | はい | はい | .tif |
 | 画像/vnd. .dwg | はい | はい | はい | はい | はい | .dwg、dxf |
 | image/wmf | はい | はい | はい | はい | はい | .wmf |
@@ -101,9 +100,9 @@ ms.locfileid: "38686661"
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/vnd. が application | はい | はい | はい | はい | はい | .dat; .xls |
-| アプリケーション/vnd を有効にします。12 | はい | はい | はい | はい | 不要 | .xlsb |
+| アプリケーション/vnd を有効にします。12 | はい | はい | はい | はい | いいえ | .xlsb |
 | アプリケーション/vnd を有効にします。12 | はい | はい | はい | はい | はい | .xlsm |
-| アプリケーション/が application を有効にします。12 | はい | はい | はい | 不要 | いいえ | 。 xltm |
+| アプリケーション/が application を有効にします。12 | はい | はい | はい | いいえ | いいえ | 。 xltm |
 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | はい | はい | はい | はい | はい | .xlsx |
 | application/vnd. openxmlformats-officedocument | はい | はい | はい | はい | はい | 。 xltx |
 ||||||||
@@ -112,10 +111,10 @@ ms.locfileid: "38686661"
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| アプリケーション/onenote | はい | はい | はい | はい | 不要 | ます。1つ |
+| アプリケーション/onenote | はい | はい | はい | はい | いいえ | ます。1つ |
 ||||||||
 
-## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
@@ -143,7 +142,7 @@ ms.locfileid: "38686661"
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/vnd. ms-visio | はい | はい | はい | はい | 不要 |  |
+| application/vnd. ms-visio | はい | はい | はい | はい | いいえ |  |
 | アプリケーション/vnd visio | はい | はい | はい | はい | はい | .vsd |
 ||||||||
 
@@ -163,8 +162,8 @@ ms.locfileid: "38686661"
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/vnd. ms-works-ss | はい | はい | 不要 | いいえ | いいえ | wps |
-| application/vnd-wp | はい | はい | 不要 | いいえ | いいえ | wps |
+| application/vnd. ms-works-ss | はい | はい | いいえ | いいえ | いいえ | wps |
+| application/vnd-wp | はい | はい | いいえ | いいえ | いいえ | wps |
 ||||||||
 
 ## <a name="open-document-format"></a>開いているドキュメント形式
@@ -179,9 +178,9 @@ ms.locfileid: "38686661"
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/json | はい | はい | はい | はい | はい | × |
-| application/vnd. ms-graph | はい | はい | 不要 | いいえ | いいえ |  |
-| application/winhlp | はい | はい | 不要 | いいえ | いいえ | .hlp |
-| アプリケーション/x-tnef | はい | はい | 不要 | いいえ | いいえ |  |
+| application/vnd. ms-graph | はい | はい | いいえ | いいえ | いいえ |  |
+| application/winhlp | はい | はい | いいえ | いいえ | いいえ | .hlp |
+| アプリケーション/x-tnef | はい | はい | いいえ | いいえ | いいえ |  |
 ||||||||
 
 ## <a name="plain-text"></a>プレーン テキスト
@@ -203,14 +202,14 @@ ms.locfileid: "38686661"
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/vnd wordperfect;バージョン = 5.0 | はい | はい | はい | 不要 | いいえ | wpd |
-| application/vnd wordperfect;バージョン = 5.1 | はい | はい | はい | 不要 | いいえ | wpd |
-| application/vnd wordperfect;バージョン = 6. x | はい | はい | はい | 不要 | いいえ | wpd |
+| application/vnd wordperfect;バージョン = 5.0 | はい | はい | はい | いいえ | いいえ | wpd |
+| application/vnd wordperfect;バージョン = 5.1 | はい | はい | はい | いいえ | いいえ | wpd |
+| application/vnd wordperfect;バージョン = 6. x | はい | はい | はい | いいえ | いいえ | wpd |
 ||||||||
 
 ## <a name="word-pro"></a>Word Pro
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/vnd. lotus-wordpro | はい | はい | 不要 | いいえ | いいえ | lwp |
+| application/vnd. lotus-wordpro | はい | はい | いいえ | いいえ | いいえ | lwp |
 ||||||||
