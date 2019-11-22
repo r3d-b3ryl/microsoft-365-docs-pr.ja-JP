@@ -1,0 +1,1118 @@
+- name: Microsoft 365 コンプライアンス
+  href: index.yml
+- name: 作業の開始
+  items:
+    - name: コンプライアンス センターの新機能
+      href: whats-new.md
+    - name: コンプライアンス コンテンツの最近の更新プログラム
+      href: recently-updated-topics-mcc.md
+    - name: Microsoft 365 コンプライアンス センター
+      href: microsoft-365-compliance-center.md
+    - name: Microsoft 365 ソリューション カタログ (プレビュー)
+      href: microsoft-365-solution-catalog.md
+    - name: セキュリティ/コンプライアンス センターに移動する
+      href: go-to-the-securitycompliance-center.md
+    - name: 無料の Azure Active Directory Domain Services サブスクリプションを使用する
+      href: use-your-free-azure-ad-subscription-in-office-365.md
+    - name: Office 365 でセキュリティとコンプライアンスを計画する
+      href: plan-for-security-and-compliance.md
+- name: 内部リスクを管理する
+  items:
+    - name: ユーザーとデバイス アクセスの保護
+      href: protect-access-to-data-and-services.md
+    - name: 顧客ロックボックス
+      href: customer-lockbox-requests.md
+    - name: 特権アクセスの管理
+      items:
+        - name: 特権アクセス管理の詳細情報
+          href: privileged-access-management-overview.md
+        - name: 特権アクセス管理を設定する
+          href: privileged-access-management-configuration.md
+    - name: カスタマー キー
+      items:
+        - name: 顧客キーを使用して Office 365 でデータを制御する
+          href: controlling-your-data-using-customer-key.md
+        - name: Office 365 のFAQための、顧客キーによるサービスの暗号化
+          href: service-encryption-with-customer-key-faq.md
+    - name: 通信のコンプライアンス (プレビュー)
+      items:
+        - name: 通信コンプライアンスの詳細 (プレビュー)
+          href: communication-compliance.md
+        - name: Microsoft 365 で通信コンプライアンスを構成する (プレビュー)
+          href: communication-compliance-configure.md
+        - name: 通信コンプライアンスのアラートを調査して修復する (プレビュー)
+          href: communication-compliance-investigate-remediate.md
+        - name: 通信コンプライアンスの機能のリファレンス (プレビュー)
+          href: communication-compliance-feature-reference.md
+        - name: Office 365 の監視ポリシー
+          href: supervision-policies.md
+        - name: Office 365 の監視ポリシーを構成する
+          href: configure-supervision-policies.md
+    - name: 情報障壁
+      href: information-barriers.md
+      items:
+        - name: 情報障壁ポリシーの定義
+          href: information-barriers-policies.md
+        - name: 情報障壁ポリシーの属性
+          href: information-barriers-attributes.md
+        - name: 情報障壁のトラブルシューティング
+          href: information-barriers-troubleshooting.md
+        - name: 情報障壁ポリシーの編集
+          href: information-barriers-edit-segments-policies.md.md
+- name: 情報保護の管理
+  href: protect-information.md
+  items:
+    - name: 機密ラベル
+      href: sensitivity-labels.md
+      items:
+        - name: 機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
+          href: encryption-sensitivity-labels.md
+        - name: 機密ラベルをコンテンツに自動適用する
+          href: apply-sensitivity-label-automatically.md
+        - name: ラベル分析によるラベル使用状況の表示
+          href: label-analytics.md
+        - name: チーム、グループ、およびサイトで機密度ラベルを使用する
+          href: sensitivity-labels-teams-groups-sites.md
+        - name: SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする
+          href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Office アプリの機密ラベル
+          href: sensitivity-labels-office-apps.md
+    - name: データ損失防止 (DLP)
+      href: data-loss-prevention-policies.md
+      items:
+        - name: DLP と Microsoft Teams
+          href: dlp-microsoft-teams.md
+        - name: DLP についてもっと詳しく見る
+          href: 'https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111'
+        - name: DLP を設定する
+          items:
+            - name: DLP のポリシー勧告を見る
+              href: get-started-with-dlp-policy-recommendations.md
+            - name: 既定の DLP ポリシーの使用を開始する
+              href: get-started-with-the-default-dlp-policy.md
+            - name: テンプレートから DLP ポリシーを作成する
+              href: create-a-dlp-policy-from-a-template.md
+            - name: DLP ポリシーの作成、テスト、調整
+              href: create-test-tune-dlp-policy.md
+            - name: DLP ポリシーで通知とポリシー ヒントを使用する
+              href: use-notifications-and-policy-tips.md
+            - name: DLP ポリシー テンプレートに含まれるもの
+              href: what-the-dlp-policy-templates-include.md
+            - name: FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: DLP レポートの表示
+              href: view-the-dlp-reports.md
+            - name: サイトに保存された機密データを検索するクエリの形成
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
+              href: how-dlp-works-between-admin-centers.md
+    - name: 機密情報の種類
+      items:
+        - name: 機密情報の種類の検索基準
+          href: what-the-sensitive-information-types-look-for.md
+        - name: DLP 関数の検索対象
+          href: what-the-dlp-functions-look-for.md
+        - name: DLP のカスタマイズについてもっと詳しく見る
+          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
+        - name: 組み込みの機密情報の種類をカスタマイズする
+          href: customize-a-built-in-sensitive-information-type.md
+        - name: カスタムの機密情報の種類
+          href: custom-sensitive-info-types.md
+        - name: 正確なデータ一致に基づく分類を使用してカスタムの機密情報の種類を作成する
+          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: セキュリティ & コンプライアンスセンターでカスタムの機密情報の種類を作成する
+          href: create-a-custom-sensitive-information-type.md
+        - name: PowerShell を使用してカスタムの機密情報の種類を作成する
+          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: キーワード 辞書を作成する
+          href: create-a-keyword-dictionary.md
+        - name: ドキュメント フィンガープリンティング
+          href: document-fingerprinting.md
+        - name: ' 機密情報のDLP 関数'
+          href: what-the-dlp-functions-look-for.md
+        - name: DLP のカスタマイズについてもっと詳しく見る
+          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
+    - name: メールの暗号化
+      href: email-encryption.md
+      items:
+        - name: Office 365 Message Encryption (OME)
+          href: ome.md
+        - name: 新しい Office 365 Message Encryption 機能を設定する
+          href: set-up-new-message-encryption-capabilities.md
+        - name: Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する
+          href: define-mail-flow-rules-to-encrypt-email.md
+        - name: 暗号化されたメッセージに組織のブランドを追加する
+          href: add-your-organization-brand-to-encrypted-messages.md
+        - name: Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
+          href: ome-sensitive-info-types.md
+        - name: Office 365 Message Encryption を管理する
+          href: manage-office-365-message-encryption.md
+        - name: Office 365 Advanced Message Encryption
+          href: ome-advanced-message-encryption.md
+        - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
+          href: ome-advanced-expiration.md
+        - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールを無効にする
+          href: revoke-ome-encrypted-mail.md
+        - name: OME のバージョンを比較する
+          href: ome-version-comparison.md
+        - name: Office 365 Message Encryption に関する FAQ
+          href: ome-faq.md
+        - name: Exchange Online が電子メールの機密情報をセキュリティで保護する方法
+          href: exchange-online-secures-email-secrets.md
+        - name: Office 365 で電子メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
+          href: exchange-online-uses-tls-to-secure-email-connections.md
+        - name: Office 365 の暗号化についてのテクニカル リファレンスの詳細
+          href: technical-reference-details-about-encryption.md
+        - name: BitLocker とDistributed Key Manager (DKM) による暗号化
+          href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+        - name: レガシー OME
+          items:
+            - name: Office 365 Message Encryption の古い情報
+              href: legacy-information-for-message-encryption.md
+            - name: Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する
+              href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: データの分類を理解する (プレビュー)
+      href: data-classification-overview.md
+      items:
+        - name: ラベル付きコンテンツの表示 (プレビュー)
+          href: data-classification-content-explorer.md
+        - name: ラベル アクティビティを表示する (プレビュー)
+          href: data-classification-activity-explorer.md
+        - name: トレーニング可能な分類子の使用を開始する (プレビュー)
+          href: classifier-getting-started-with.md
+        - name: すぐに使用できる分類子を使用する (プレビュー)
+          href: classifier-using-a-ready-to-use-classifier.md
+        - name: 分類子の作成とトレーニング (プレビュー)
+          href: classifier-creating-a-trainable-classifier.md
+- name: 情報ガバナンスの管理
+  items:
+    - name: 情報ガバナンスの管理
+      href: manage-information-governance.md
+    - name: データのインポート
+      href: importing-pst-files-to-office-365.md
+      items:
+        - name: ネットワーク アップロードを使用して PST ファイルをインポートする
+          href: use-network-upload-to-import-pst-files.md
+        - name: ドライブ送付を使用して PST ファイルをインポートする
+          href: use-drive-shipping-to-import-pst-files-to-office-365.md
+        - name: PST コレクション ツールを使用して、PST ファイルの検索、コピー、および を削除をする
+          href: find-copy-and-delete-pst-files-in-your-organization.md
+        - name: PST ファイルをインポートするときに、データをフィルター処理する
+          href: filter-data-when-importing-pst-files.md
+        - name: ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする
+          href: use-network-upload-to-import-rms-encrypted-pst-files.md
+        - name: PST ファイルのインポートに関する FAQ
+          href: faqimporting-pst-files-to-office-365.md
+        - name: Office 365 でサードパーティのデータをアーカイブする
+          href: archiving-third-party-data.md
+          items:
+            - name: サンプルコネクタを使用して Facebook のデータをアーカイブする
+              href: archive-facebook-data-with-sample-connector.md
+            - name: サンプル コネクタを使用して Twitter のデータをアーカイブする
+              href: archive-twitter-data-with-sample-connector.md
+            - name: コネクタをセットアップして LinkedIn データをアーカイブする
+              href: archive-linkedin-data.md
+            - name: コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
+              href: archive-instant-bloomberg-data.md
+            - name: パートナーと共同作業でサードパーティーのデータをアーカイブする
+              href: work-with-partner-to-archive-third-party-data.md
+    - name: データを格納する
+      items:
+        - name: アーカイブ メールボックスの有効化
+          href: enable-archive-mailboxes.md
+        - name: 無制限アーカイブの概要
+          href: unlimited-archiving.md
+        - name: 無制限アーカイブの有効化
+          href: enable-unlimited-archiving.md
+        - name: メールボックスのアーカイブと削除ポリシーを設定する
+          href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+    - name: データを保持する
+      items:
+        - name: 保持ポリシー
+          href: retention-policies.md
+        - name: ファイル計画マネージャー
+          href: file-plan-manager.md
+        - name: 保持ラベル
+          href: labels.md
+        - name: 'SEC Rule 17a-4 に準拠する '
+          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: PowerShell を使用して保持ラベルを作成および発行する
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: イベント ベースの保持
+          href: event-driven-retention.md
+        - name: イベント ベースの保持を自動化する
+          href: automate-event-driven-retention.md
+        - name: SharePoint ドキュメントのライフサイクルを管理する
+          href: auto-apply-retention-labels-scenario.md
+    - name: データを破棄する
+      href: disposition-reviews.md
+    - name: 非アクティブなメールボックスを管理する
+      href: inactive-mailboxes-in-office-365.md
+      items:
+        - name: 非アクティブなメールボックスを作成および管理する
+          href: create-and-manage-inactive-mailboxes.md
+        - name: 非アクティブなメールボックスの保持期間を変更する
+          href: change-the-hold-duration-for-an-inactive-mailbox.md
+        - name: 非アクティブなメールボックスを回復する
+          href: recover-an-inactive-mailbox.md
+        - name: 非アクティブなメールボックスを復元する
+          href: restore-an-inactive-mailbox.md
+        - name: 非アクティブなメールボックスを削除する
+          href: delete-an-inactive-mailbox.md
+    - name: データ ガバナンスをモニターする
+      items:
+        - name: ドキュメントのラベル アクティビティを表示する
+          href: view-label-activity-for-documents.md
+        - name: ラベル分析によるラベル使用状況の表示
+          href: label-analytics.md
+        - name: データ ガバナンスのレポートを表示する
+          href: view-the-data-governance-reports.md
+    - name: データ ガバナンスの詳細情報
+      items:
+        - name: Microsoft のデータ ガバナンス チームによるビデオを見る
+          href: 'https://go.microsoft.com/fwlink/?linkid=867039'
+    - name: レコード管理
+      items:
+        - name: レコード管理
+          href: records-management.md
+        - name: レコード
+          href: records.md
+        - name: ファイル計画
+          items:
+            - name: ファイル計画マネージャー
+              href: file-plan-manager.md
+            - name: 保持ラベル
+              href: labels.md
+            - name: PowerShell を使用して保持ラベルを作成および発行する
+              href: bulk-create-publish-labels-using-powershell.md
+            - name: ラベル分析によるラベル使用状況の表示
+              href: label-analytics.md
+            - name: ドキュメントのラベル アクティビティを表示する
+              href: view-label-activity-for-documents.md
+            - name: データ ガバナンスのレポートを表示する
+              href: view-the-data-governance-reports.md
+        - name: イベント
+          items:
+            - name: イベント ベースの保持
+              href: event-driven-retention.md
+            - name: イベント ベースの保持を自動化する
+              href: automate-event-driven-retention.md
+        - name: 廃棄
+          href: disposition-reviews.md
+        - name: レコード管理の詳細情報
+          items:
+            - name: レコード管理のビデオを見る
+              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
+- name: コンテンツを検索する
+  href: search-for-content.md
+  items:
+    - name: コンテンツ検索を使う
+      href: content-search.md
+      items:
+        - name: コンテンツ検索のキーワード クエリと検索条件
+          href: keyword-queries-and-search-conditions.md
+        - name: コンテンツ検索結果のキーワード統計の表示
+          href: view-keyword-statistics-for-content-search.md
+        - name: コンテンツ検索の結果をエクスポートする
+          href: export-search-results.md
+        - name: コンテンツ検索レポートのエクスポート
+          href: export-a-content-search-report.md
+        - name: メール メッセージを検索して削除する
+          href: search-for-and-delete-messages-in-your-organization.md
+        - name: Office 365 のオンプレミス ユーザーのクラウド ベースのメールボックスを検索する
+          href: search-cloud-based-mailboxes-for-on-premises-users.md
+        - name: 複数のコンテンツ検索を一括編集する
+          href: bulk-edit-content-searches.md
+        - name: ID リスト コンテンツ検索用の CSV ファイルを準備する
+          href: csv-file-for-an-id-list-content-search.md
+        - name: コンテンツ検索を使用してサード パーティのデータを検索する
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+        - name: 電子情報開示ワークフローでコンテンツ検索を使用する
+          href: use-content-search-in-ediscovery.md
+        - name: コンテンツ検索クエリでエラーを確認する
+          href: check-your-content-search-query-for-errors.md
+        - name: 失敗したコンテンツ検索をもう一度行う
+          href: retry-failed-content-search.md
+        - name: コンテンツ検索用に Bcc 受信者を保持する
+          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+    - name: コンテンツ検索について理解する
+      items:
+        - name: コンテンツ検索の制限
+          href: limits-for-content-search.md
+        - name: コンテンツ検索で部分的にインデックスが作成されたアイテム
+          href: partially-indexed-items-in-content-search.md
+        - name: 部分的にインデックスが作成されたアイテムを調査する
+          href: investigating-partially-indexed-items-in-ediscovery.md
+        - name: 電子情報開示検索結果での重複排除
+          href: de-duplication-in-ediscovery-search-results.md
+        - name: 推定されるコンテンツ検索と実際のコンテンツ検索結果の違い
+          href: differences-between-estimated-and-actual-ediscovery-search-results.md
+    - name: コンテンツ検索を構成する
+      items:
+        - name: コンテンツ検索用にアクセス許可フィルターを設定する
+          href: permissions-filtering-for-content-search.md
+        - name: コンテンツ検索の結果をエクスポートするときにダウンロード速度を上げる
+          href: increase-download-speeds-when-exporting-ediscovery-results.md
+        - name: コンテンツ検索の結果をエクスポートするときに PST ファイルのサイズを変更する
+          href: change-the-size-of-pst-files-when-exporting-results.md
+        - name: コンテンツ検索の結果をエクスポートするときにレポートを無効にする
+          href: disable-reports-when-you-export-content-search-results.md
+    - name: コンテンツ検索 で PowerShell スクリプトを使用する
+      items:
+        - name: コンテンツ検索を使用して対象コレクションを検索する
+          href: use-content-search-for-targeted-collections.md
+        - name: コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
+          href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+        - name: 複数のコンテンツ検索の作成、報告、削除
+          href: create-report-on-and-delete-multiple-content-searches.md
+        - name: コンテンツ検索をコピーする
+          href: clone-a-content-search.md
+- name: 法的調査を管理する
+  href: manage-legal-investigations.md
+  items:
+    - name: ' Microsoft 365 での Advanced eDiscovery ソリューション '
+      href: overview-ediscovery-20.md
+      items:
+        - name: 新しいケースを作成する
+          href: create-new-ediscovery-case.md
+        - name: カストディアンと作業する
+          href: managing-custodians.md
+          items:
+            - name: カストディアンをケースに追加する
+              href: add-custodians-to-case.md
+            - name: カストディアンを管理する
+              href: manage-new-custodians.md
+            - name: カストディアンのアクティビティを表示する
+              href: view-custodian-activity.md
+        - name: 通信の操作
+          href: managing-custodian-communications.md
+          items:
+            - name: 保留通知を作成する
+              href: create-hold-notification.md
+            - name: 通信エディターを使用する
+              href: using-communications-editor.md
+            - name: 保留通知を管理する
+              href: manage-hold-notification.md
+            - name: 保留通知を確認する
+              href: acknowledge-hold-notification.md
+        - name: 保留リストを管理する
+          href: managing-holds.md
+        - name: 処理中のエラーの操作
+          href: processing-data-for-case.md
+          items:
+            - name: カストディアン データの詳細なインデックス処理
+              href: indexing-custodian-data.md
+            - name: データ処理中のエラー修復
+              href: error-remediation-when-processing-data-in-advanced-ediscovery.md
+            - name: 単一アイテムのエラーの修復
+              href: single-item-error-remediation.md
+        - name: ケースのデータの収集
+          href: collecting-data-for-ediscovery.md
+          items:
+            - name: 検索を作成する
+              href: create-search-to-collect-data.md
+            - name: 検索クエリのビルド
+              href: building-search-queries.md
+            - name: 検索の統計
+              href: search-statistics.md
+            - name: 検索結果をレビュー セットに追加する
+              href: add-data-to-review-set.md
+        - name: レビュー セットを管理する
+          href: managing-review-sets.md
+          items:
+            - name: レビュー セットに Office 365 以外のデータを読み込む
+              href: load-non-Office-365-data-into-a-review-set.md
+            - name: データを別のレビュー セットに追加する
+              href: add-data-to-review-set-from-another-review-set.md
+            - name: ロード セットの管理
+              href: manage-load-sets-in-advanced-ediscovery.md
+        - name: ケース データを確認する
+          items:
+            - name: レビュー セット内のドキュメントを表示する
+              href: view-documents-in-review-set.md
+            - name: レビュー セット内のデータをクエリする
+              href: review-set-search.md
+            - name: レビュー セット内のドキュメントをタグ付けする
+              href: tagging-documents.md
+            - name: 弁護士/依頼人特権の検出を設定する
+              href: attorney-privilege-detection.md
+        - name: ケース データを分析する
+          href: analyzing-data-in-review-set.md
+          items:
+            - name: 準重複の検出
+              href: near-duplicate-detection-in-advanced-ediscovery.md
+            - name: 電子メールスレッド
+              href: email-threading-in-advanced-ediscovery.md
+            - name: テーマ
+              href: themes-in-advanced-ediscovery.md
+            - name: 関連モジュールを使用したデータ分析
+              href: using-relevance.md
+        - name: ケース データをエクスポートする
+          href: exporting-data-ediscover20.md
+          items:
+            - name: レビュー セットからドキュメントをエクスポートする
+              href: export-documents-from-review-set.md
+            - name: エクスポート ジョブのダウンロード
+              href: download-export-jobs.md
+        - name: ジョブを管理する
+          href: managing-jobs-ediscovery20.md
+        - name: ケース設定を構成する
+          items:
+            - name: ケースを閉じるか、ケースを削除する
+              href: close-or-delete-case.md
+            - name: ケースからメンバーを追加または削除する
+              href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
+            - name: 検索と分析の設定を構成する
+              href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
+        - name: Advanced eDiscovery の参照
+          items:
+            - name: ノートをリリースする
+              href: release-notes-ediscovery20.md
+            - name: Advanced eDiscovery を制限する
+              href: limits-ediscovery20.md
+            - name: サポートされているファイルの種類
+              href: supported-filetypes-ediscovery20.md
+            - name: ドキュメントのメタデータ フィールド
+              href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: 会話レビュー セット
+              href: conversation-review-sets.md
+            - name: AzCopy のトラブルシューティング
+              href: troubleshooting-azcopy.md
+    - name: eDiscovery ケースを管理する
+      href: ediscovery-cases.md
+      items:
+        - name: Office 365 Advanced eDiscovery
+          href: office-365-advanced-ediscovery.md
+          items:
+            - name: Advanced eDiscovery の概要
+              href: quick-setup-for-advanced-ediscovery.md
+            - name: ケースを設定する
+              href: set-up-users-and-cases-in-advanced-ediscovery.md
+              items:
+                - name: ケースの問題を定義する
+                  href: define-issues-and-assign-users.md
+            - name: ケース データの収集
+              items:
+                - name: Advanced eDiscovery 用に検索結果を準備する
+                  href: prepare-search-results-for-advanced-ediscovery.md
+                - name: 'Advanced eDiscovery にデータを読み込む '
+                  href: prepare-data-for-advanced-ediscovery.md
+                - name: Office 365 以外のコンテンツをケースにインポートする
+                  href: import-non-office-365-data-into-advanced-ediscovery.md
+            - name: ケース データの処理
+              href: run-the-process-module-in-advanced-ediscovery.md
+              items:
+                - name: プロセス モジュールを実行し、データを読み込む
+                  href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
+                - name: プロセス モジュールの結果を表示する
+                  href: view-process-module-results-in-advanced-ediscovery.md
+            - name: ケース データの確認
+              items:
+                - name: ケース データの検索とタグ付け
+                  href: search-and-tagging.md
+                - name: レビュー セットに関する決定を行う
+                  href: decision-based-on-the-results-in-advanced-ediscovery.md
+            - name: ケース データの分析
+              href: analyze-case-data-with-advanced-ediscovery.md
+              items:
+                - name: 高速分析の実行
+                  href: use-express-analysis-in-advanced-ediscovery.md
+                - name: ドキュメントの類似性 (準重複) についての概要
+                  href: understand-document-similarity-in-advanced-ediscovery.md
+                - name: 分析結果を表示する
+                  href: view-analyze-results-in-advanced-ediscovery.md
+            - name: 関連モジュールの使用
+              href: use-relevance-in-advanced-ediscovery.md
+              items:
+                - name: 関連評価の概要
+                  href: assessment-in-relevance-in-advanced-ediscovery.md
+                - name: 関連評価の実行とタグ付け
+                  href: tagging-and-assessment-in-advanced-ediscovery.md
+                - name: 関連トレーニングの設定
+                  href: manage-relevance-setup-in-advanced-ediscovery.md
+                - name: 関連トレーニングの実行とタグ付け
+                  href: tagging-and-relevance-training-in-advanced-ediscovery.md
+                - name: 関連トレーニング プロセスを追跡する
+                  href: track-relevance-analysis-in-advanced-ediscovery.md
+                - name: 関連分析の結果をテストする
+                  href: test-relevance-analysis-in-advanced-ediscovery.md
+                - name: 関連トレーニングの追加データを読み込む
+                  href: set-up-loads-to-add-imported-files.md
+            - name: ケース データのエクスポート
+              href: export-case-data-in-advanced-ediscovery.md
+              items:
+                - name: データのエクスポート
+                  href: export-results-in-advanced-ediscovery.md
+                - name: レポートのフィールドのエクスポート
+                  href: export-report-fields-in-advanced-ediscovery.md
+                - name: バッチ履歴を表示し、過去の結果をエクスポートする
+                  href: view-batch-history-and-export-past-results.md
+            - name: Advanced eDiscovery の構成
+              items:
+                - name: ケースと組織の設定を構成する
+                  href: define-case-and-tenant-settings-in-advanced-ediscovery.md
+                - name: 分析の設定を構成する
+                  href: set-analyze-options-in-advanced-ediscovery.md
+                - name: Ignore Text 設定を構成する
+                  href: set-ignore-text-in-advanced-ediscovery.md
+                - name: 協調表示されたキーワードとその他の関連設定を構成する
+                  href: define-highlighted-keywords-and-advanced-options.md
+            - name: Advanced eDiscovery の参照
+              items:
+                - name: Advanced eDiscovery ユーティリティを使用する
+                  href: use-advanced-ediscovery-utilities.md
+                - name: レポートを実行する
+                  href: run-reports-in-advanced-ediscovery.md
+        - name: スクリプトを使用して電子情報開示ケースの保留リストにユーザーを追加する
+          href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+        - name: 電子情報開示ケースの保留リストのレポートを作成する
+          href: create-a-report-on-holds-in-ediscovery-cases.md
+    - name: 電子情報開示のアクセス許可を指定する
+      href: assign-ediscovery-permissions.md
+    - name: Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
+      href: set-up-compliance-boundaries.md
+    - name: 電子情報開示ソリューション シリーズ - データー流出のシナリオ - 検索と消去
+      href: data-spillage-scenariosearch-and-purge.md
+    - name: 電子情報開示に関する一般的な問題のトラブルシューティング
+      href: ediscovery-troubleshooting-common-issues.md
+    - name: 保留リストを管理する
+      items:
+        - name: 電子情報開示保留リストを作成する
+          href: 'ediscovery-cases.md#step-4-place-content-locations-on-hold'
+        - name: 訴訟ホールドを作成する
+          href: create-a-litigation-hold.md
+        - name: 保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
+          href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+        - name: 保留中のメールボックスの回復可能なアイテムのクォータを拡大する
+          href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+        - name: Exchange Online メールボックスに保存されている保留の種類を特定する方法
+          href: identify-a-hold-on-an-exchange-online-mailbox.md
+        - name: Bccと拡張配布グループの受信者を保持する
+          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+- name: データ調査を管理する
+  href: overview-data-investigations.md
+  items:
+    - name: データ流出インシデントを管理する
+      href: manage-data-spillage-incidents.md
+    - name: 新しい調査を作成する
+      href: create-new-investigation.md
+    - name: データ調査のアクセス許可を割り当てる
+      href: permissions.md
+    - name: 調査でデータ検索する
+      href: search-for-data.md
+      items:
+        - name: 検索クエリのビルド
+          href: build-search-queries.md
+        - name: 検索の統計
+          href: search-statistics.md
+    - name: エビデンスのデータを確認します
+      href: review-data-in-evidence.md
+      items:
+        - name: データをクエリする
+          href: evidence-query.md
+        - name: ドキュメントにタグ付けする
+          href: tag-documents.md
+        - name: ドキュメントに注釈づけや墨消しをする
+          href: annotate-and-redact-documents.md
+        - name: Office 365 以外のデータを読み込む
+          href: load-non-office365-data.md
+        - name: データ処理中のエラー修復
+          href: error-remediation.md
+        - name: アイテムを元の場所から削除する
+          href: delete-items-from-original-locations.md
+    - name: アナリティクスを使用して、より速い調査を実行する
+      href: run-analytics-to-investigate-faster.md
+      items:
+        - name: 電子メールスレッド
+          href: email-threading.md
+        - name: 準重複の検出
+          href: near-duplicates.md
+        - name: テーマ
+          href: themes.md
+        - name: 関連モジュールを実行する
+          href: use-relevance-module.md
+    - name: 調査に関心のあるユーザーを管理する
+      href: manage-people-of-interest.md
+      items:
+        - name: 調査でユーザーのデータに索引を付ける
+          href: index-data-people-of-interest.md
+        - name: 調査中のユーザーの監査活動を表示する
+          href: view-people-of-interest-activity.md
+    - name: 調査データをエクスポートする
+      href: export-data.md
+      items:
+        - name: エビデンスから文書をエクスポートする
+          href: export-documents-from-incident.md
+        - name: エクスポート ジョブのダウンロード
+          href: download-export-jobs-from-a-data-investigation.md
+    - name: 調査の設定を構成する
+      items:
+        - name: 調査のメンバーを追加または削除する
+          href: add-remove-members.md
+        - name: 検索と分析の設定を構成する
+          href: configure-search-analytics-settings.md
+        - name: 調査を完了するか調査を削除する
+          href: close-or-delete-investigation.md
+    - name: データ調査の参考資料
+      items:
+        - name: ノートをリリースする
+          href: data-investigations-release-notes.md
+        - name: データ調査の制限
+          href: limits-datainvestigations.md
+        - name: サポートされているファイルの種類
+          href: supported-filetypes-datainvestigations.md
+        - name: ドキュメントのメタデータ フィールド
+          href: document-metadata-fields.md
+        - name: ジョブを管理する
+          href: manage-jobs.md
+- name: 監査と通知ポリシーを管理する
+  items:
+    - name: 監査ログを検索する
+      href: search-the-audit-log-in-security-and-compliance.md
+    - name: 通知ポリシーを管理する
+      href: alert-policies.md
+    - name: 監査ログ検索を有効または無効にする
+      href: turn-audit-log-search-on-or-off.md
+    - name: メールボックスの監査を管理する
+      href: enable-mailbox-auditing.md
+    - name: 監査ログの詳細なプロパティ
+      href: detailed-properties-in-the-office-365-audit-log.md
+    - name: 監査ログ レコードをエクスポート、構成、表示する
+      href: export-view-audit-log-records.md
+    - name: 監査ログを使用して一般的な問題を調査する
+      href: auditing-troubleshooting-scenarios.md
+    - name: 監査ログで共有監査を使用する
+      href: use-sharing-auditing.md
+    - name: 監査ログで電子情報開示アクティビティを検索する
+      href: search-for-ediscovery-activities-in-the-audit-log.md
+- name: コンプライアンス リスクの管理
+  items:
+    - name: Microsoft Service Trust Portal
+      href: get-started-with-service-trust-portal.md
+    - name: コンプライアンス スコアとコンプライアンス マネージャー
+      items:
+        - name: コンプライアンス スコア (プレビュー)
+          href: compliance-score.md
+        - name: コンプライアンス スコアを設定する (プレビュー)
+          href: compliance-score-setup.md
+        - name: コンプライアンス スコアを使用する (プレビュー)
+          href: working-with-compliance-score.md
+        - name: コンプライアンス スコアの計算 (プレビュー)
+          href: compliance-score-methodology.md
+        - name: コンプライアンス スコアのリリース ノート (プレビュー)
+          href: compliance-score-release-notes.md
+        - name: コンプライアンス マネージャー (プレビュー)
+          href: compliance-manager-overview.md
+          items:
+            - name: コンプライアンス マネージャー (プレビュー) の新機能
+              href: compliance-manager-release-notes.md
+            - name: コンプライアンス マネージャー (プレビュー) と共同作業する
+              href: working-with-compliance-manager.md
+            - name: コンプライアンスマネージャー (クラシック)
+              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
+    - name: GDPR データ主体の要求ツール
+      href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
+    - name: GDPR のための Office 365 の情報保護
+      href: office-365-information-protection-for-gdpr.md
+      items:
+        - name: 概要-Office 365 の GDPR の保護
+          href: office-365-info-protection-for-gdpr-overview.md
+        - name: 個人データの検索
+          href: search-for-and-find-personal-data.md
+        - name: GDPR の機密情報の種類をカスタマイズまたは新規作成する
+          href: customize-or-create-a-new-sensitive-information-type.md
+        - name: 個人計画の分類スキーマを設計する
+          href: architect-a-classification-schema-for-personal-data.md
+        - name: Office 365 の個人データにラベルを適用する
+          href: apply-labels-to-personal-data-in-office-365.md
+        - name: Office 365 の個人データに保護を適用する
+          href: apply-protection-to-personal-data-in-office-365.md
+        - name: Office 365 の GDPR 開発/テスト環境
+          href: gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md
+    - name: オンプレミス Office サーバーでの GDPR 対応
+      href: gdpr-for-office-servers.md
+      items:
+        - name: SharePoint Server での GDPR 対応
+          href: gdpr-for-sharepoint-server.md
+        - name: Exchange Server での GDPR 対応
+          href: gdpr-for-exchange-server.md
+        - name: Skype for Business Server および Lync Server での GDPR 対応
+          href: gdpr-for-skype-for-business-server.md
+        - name: Project Server での GDPR 対応
+          href: gdpr-for-project-server.md
+        - name: Office Web Apps Server および Office Online Server の GDPR 対応
+          href: gdpr-for-office-online-server.md
+        - name: オンプレミスの Windows Server ファイル共有の GDPR 対応
+          href: gdpr-for-on-premises-file-shares.md
+- name: 法令遵守アクション プラン
+  href: compliance-solutions-overview.md
+  items:
+    - name: ISO - 推奨アクション プラン
+      href: iso-action-plan.md
+    - name: NIST - 推奨アクション プラン
+      href: nist-action-plan.md
+    - name: CCPA - その他のよく寄せられる質問
+      href: ccpa-faq.md
+    - name: GDPR
+      href: gdpr.md
+      items:
+        - name: GDPR の推奨アクション プラン
+          href: gdpr-action-plan.md
+        - name: アカウンタビリティ対応準備チェックリスト
+          items:
+            - name: アカウンタビリティ対応準備チェックリスト
+              href: gdpr-arc.md
+            - name: Azure
+              href: gdpr-arc-azure.md
+            - name: Dynamics 365
+              href: gdpr-arc-dynamics365.md
+            - name: Microsoft サポート & プロフェッショナルサービス
+              href: gdpr-arc-prof-services.md
+            - name: Office 365
+              href: gdpr-arc-office365.md
+        - name: 情報保護
+          href: gdpr-information-protection.md
+        - name: データ主体要求
+          items:
+            - name: データ主体要求
+              href: gdpr-data-subject-requests.md
+            - name: Azure
+              href: gdpr-dsr-azure.md
+            - name: Azure DevOps Services
+              href: gdpr-dsr-vsts.md
+            - name: Dynamics 365
+              href: gdpr-dsr-dynamics365.md
+            - name: Intune
+              href: gdpr-dsr-intune.md
+            - name: Microsoft サポート & プロフェッショナルサービス
+              href: gdpr-dsr-prof-services.md
+            - name: Office 365
+              href: gdpr-dsr-office365.md
+            - name: Visual Studio ファミリ
+              href: gdpr-dsr-visual-studio-family.md
+        - name: 侵害の通知
+          items:
+            - name: 侵害の通知
+              href: gdpr-breach-notification.md
+            - name: Azure & Dynamics 365
+              href: gdpr-breach-azure-dynamics.md
+            - name: Microsoft サポート & プロフェッショナルサービス
+              href: gdpr-breach-microsoft-support-professional-services.md
+            - name: Office 365
+              href: gdpr-breach-office365.md
+        - name: データ保護影響評価
+          items:
+            - name: データ保護影響評価
+              href: gdpr-data-protection-impact-assessments.md
+            - name: Azure
+              href: gdpr-dpia-azure.md
+            - name: Dynamics 365
+              href: gdpr-dpia-dynamics.md
+            - name: Microsoft サポート & プロフェッショナルサービス
+              href: gdpr-dpia-prof-services.md
+            - name: Office 365
+              href: gdpr-dpia-office365.md
+        - name: Microsoft のデータ保護責任者
+          href: gdpr-data-protection-officer.md
+- name: ハイブリッド コンプライアンス機能
+  items:
+    - name: 'AD RMS による Exchange Online のメールの暗号化 '
+      href: information-rights-management-in-exchange-online.md
+      items:
+        - name: IRM を設定して、オンプレミスの AD RMS サーバーを使用する
+          href: configure-irm-to-use-an-on-premises-ad-rms-server.md
+- name: コンプライアンス認証
+  items:
+    - name: Microsoft  コンプライアンスのサービス
+      href: offering-home.md
+    - name: グローバル
+      items:
+        - name: CIS ベンチマーク
+          href: offering-cis-benchmark.md
+        - name: CSA-STAR 構成証明
+          href: offering-csa-star-attestation.md
+        - name: CSA-STAR 認定資格
+          href: offering-csa-star-certification.md
+        - name: CSA-STAR 自己診断
+          href: offering-csa-star-self-assessment.md
+        - name: ISO 20000-1-2011
+          href: offering-iso-20000-1-2011.md
+        - name: ISO 22301
+          href: offering-iso-22301.md
+        - name: ISO 27001
+          href: offering-iso-27001.md
+        - name: ISO 27017
+          href: offering-iso-27017.md
+        - name: ISO 27018
+          href: offering-iso-27018.md
+        - name: ISO 27701
+          href: offering-iso-27701.md
+        - name: ISO-9001
+          href: offering-iso-9001.md
+        - name: SOC
+          href: offering-soc.md
+        - name: WCAG 2.1
+          href: offering-wcag-2-1.md
+    - name: 米国政府機関
+      items:
+        - name: CJIS
+          href: offering-cjis.md
+        - name: CNSSI 1253
+          href: offering-cnssi-1253.md
+        - name: DFARS
+          href: offering-dfars.md
+        - name: 'DoD DISA L2,L4,L5'
+          href: offering-dod-disa-l2-l4-l5.md
+        - name: DoE 10 CFR Part 810
+          href: offering-doe-10-cfr-part-810.md
+        - name: EAR (米国輸出管理者登録)
+          href: offering-ear.md
+        - name: FedRAMP
+          href: offering-fedramp.md
+        - name: FIPS 140-2
+          href: offering-fips-140-2.md
+        - name: IRS 1075
+          href: offering-irs-1075.md
+        - name: ITAR
+          href: offering-itar.md
+        - name: NIST 800-171
+          href: offering-nist-sp-800-171.md
+        - name: NIST CSF
+          href: offering-nist-csf.md
+        - name: VPATS 第 508
+          href: offering-section-508-vpats.md
+    - name: 業種
+      items:
+        - name: 教育
+          items:
+            - name: FERPA
+              href: offering-ferpa.md
+        - name: エネルギー
+          items:
+            - name: NERC
+              href: offering-nerc-cip.md
+        - name: 財務
+          items:
+            - name: 23 NYCRR Part 500
+              href: offering-23-nycrr-part-500.md
+            - name: AFM + DNB (オランダ)
+              href: offering-afm-dnb-netherlands.md
+            - name: APRA (オーストラリア)
+              href: offering-apra-australia.md
+            - name: AMF と ACPR (フランス)
+              href: offering-amf-acpr-france.md
+            - name: EBA (EU)
+              href: offering-eba-eu.md
+            - name: FCA (英国)
+              href: offering-fca-uk.md
+            - name: FFIEC (米国)
+              href: offering-ffiec-us.md
+            - name: FINMA (スイス)
+              href: offering-finma-switzerland.md
+            - name: FINRA 4511
+              href: offering-finra-4511.md
+            - name: FISC (日本)
+              href: offering-fisc-japan.md
+            - name: FSA (デンマーク)
+              href: offering-fsa-denmark.md
+            - name: GLBA
+              href: offering-glba.md
+            - name: KNF (ポーランド)
+              href: offering-knf-poland.md
+            - name: MA + ABS (シンガポール)
+              href: offering-mas-abs-singapore.md
+            - name: NBB + FSMA (ベルギー)
+              href: offering-nbb-fsma-belgium.md
+            - name: OSFI (カナダ)
+              href: offering-osfi-canada.md
+            - name: PCI DSS
+              href: offering-pci-dss.md
+            - name: RBI + IRDAI (インド)
+              href: offering-rbi-irdai-india.md
+            - name: SEC 17a-4
+              href: offering-sec-17a-4.md
+            - name: SOC
+              href: offering-soc.md
+            - name: SOX
+              href: offering-sox.md
+            - name: TruSight
+              href: offering-trusight.md
+        - name: 正常性
+          items:
+            - name: HDS (フランス)
+              href: offering-hds-france.md
+            - name: HIPAA/HITECH
+              href: offering-hipaa-hitech.md
+            - name: HITRUST
+              href: offering-hitrust.md
+            - name: MARS-E
+              href: offering-mars-e.md
+            - name: NEN-7510 (オランダ)
+              href: offering-nen-7510-netherlands.md
+            - name: NHS IG ツールキット (英国)
+              href: offering-nhs-ig-toolkit-uk.md
+        - name: 製造
+          items:
+            - name: FDA CFR Title 21 Part 11
+              href: offering-fda-cfr-title-21-part-11.md
+            - name: GxP
+              href: offering-gxp.md
+            - name: TISAX (ドイツ)
+              href: offering-tisax-germany.md
+        - name: メディア
+          items:
+            - name: CDSA
+              href: offering-cdsa.md
+            - name: DPP (英国)
+              href: offering-dpp-uk.md
+            - name: FACT (英国)
+              href: offering-fact-uk.md
+            - name: MPAA
+              href: offering-mpaa.md
+        - name: 小売
+          items:
+            - name: 23 NYCRR Part 500
+              href: offering-23-nycrr-part-500.md
+            - name: AFM + DNB (オランダ)
+              href: offering-afm-dnb-netherlands.md
+            - name: AMF と ACPR (フランス)
+              href: offering-amf-acpr-france.md
+            - name: CDSA
+              href: offering-cdsa.md
+            - name: CIS ベンチマーク
+              href: offering-cis-benchmark.md
+            - name: CSA-STAR 構成証明
+              href: offering-csa-star-attestation.md
+            - name: DoE 10 CFR Part 810
+              href: offering-doe-10-cfr-part-810.md
+            - name: DPP (英国)
+              href: offering-dpp-uk.md
+            - name: EAR (米国輸出管理者登録)
+              href: offering-ear.md
+            - name: ENISA IAF (EU)
+              href: 'https://aka.ms/ENISA'
+            - name: EU モデル条項
+              href: offering-eu-model-clauses.md
+            - name: EBA (EU)
+              href: offering-eba-eu.md
+            - name: EU 米国プライバシー シールド
+              href: offering-eu-us-privacy-shield.md
+            - name: FACT (英国)
+              href: offering-fact-uk.md
+            - name: FCA (英国)
+              href: offering-fca-uk.md
+            - name: FFIEC (米国)
+              href: offering-ffiec-us.md
+            - name: FINMA (スイス)
+              href: offering-finma-switzerland.md
+            - name: GDPR (EU)
+              href: offering-gdpr-eu.md
+            - name: GLBA
+              href: offering-glba.md
+            - name: HITRUST
+              href: offering-hitrust.md
+            - name: IRS 1075
+              href: offering-irs-1075.md
+            - name: ISO 27018
+              href: offering-iso-27018.md
+            - name: ISO-9001
+              href: offering-iso-9001.md
+            - name: ITAR
+              href: offering-itar.md
+            - name: KNF (ポーランド)
+              href: offering-knf-poland.md
+            - name: MARS-E
+              href: offering-mars-e.md
+            - name: MPAA
+              href: offering-mpaa.md
+            - name: NBB + FSMA (ベルギー)
+              href: offering-nbb-fsma-belgium.md
+            - name: NHS IG ツールキット (英国)
+              href: offering-nhs-ig-toolkit-uk.md
+            - name: NIST CSF
+              href: offering-nist-csf.md
+            - name: PCI DSS
+              href: offering-pci-dss.md
+            - name: VPATS 第 508
+              href: offering-section-508-vpats.md
+            - name: 共有評価
+              href: offering-shared-assessments.md
+            - name: SOC
+              href: offering-soc.md
+            - name: LOPD (スペイン)
+              href: offering-lopd-spain.md
+            - name: Cyber Essentials Plus (英国)
+              href: offering-cyber-essentials-plus-uk.md
+            - name: G-Cloud (英国)
+              href: offering-g-cloud-uk.md
+    - name: 地域
+      items:
+        - name: アジア
+          items:
+            - name: CS マーク (日本)
+              href: offering-cs-mark-gold-japan.md
+            - name: DJCP (中国)
+              href: 'https://www.trustcenter.cn/compliance/default.html#DJCP'
+            - name: GB 18030 (中国)
+              href: 'https://www.trustcenter.cn/compliance/default.html#GB18030'
+            - name: ISMS (韓国)
+              href: offering-ISMS-korea.md
+            - name: MeitY (インド)
+              href: offering-meity-india.md
+            - name: MTCS (シンガポール)
+              href: offering-mtcs-singapore.md
+            - name: マイナンバー (日本)
+              href: offering-my-number-act-japan.md
+            - name: TRUCS (中国)
+              href: 'https://aka.ms/TRUCS-Compliance'
+        - name: オーストラリア/パシフィック
+          items:
+            - name: CCSL/IRAP (オーストラリア)
+              href: offering-CCSL-IRAP-Australia.md
+            - name: NZ CC Framework (ニュージーランド)
+              href: offering-nz-cc-framework-nz.md
+        - name: ヨーロッパ
+          items:
+            - name: BIR 2012 (オランダ)
+              href: offering-bir-2012-netherlands.md
+            - name: C5 (ドイツ)
+              href: offering-c5-germany.md
+            - name: Cyber Essentials Plus (英国)
+              href: offering-cyber-essentials-plus-uk.md
+            - name: EN 301 549 (EU)
+              href: offering-en-301-549-eu.md
+            - name: ENS (スペイン)
+              href: offering-ens-spain.md
+            - name: ENISA IAF (EU)
+              href: 'https://aka.ms/ENISA'
+            - name: EU モデル条項
+              href: offering-eu-model-clauses.md
+            - name: EU 米国プライバシー シールド
+              href: offering-eu-us-privacy-shield.md
+            - name: GDPR (EU)
+              href: offering-gdpr-eu.md
+            - name: G-Cloud (英国)
+              href: offering-g-cloud-uk.md
+            - name: IDW PS 951 (ドイツ)
+            - name: IT Grundschutz Workbook (ドイツ)
+              href: offering-it-grundschutz-workbook-germany.md
+            - name: LOPD (スペイン)
+              href: offering-lopd-spain.md
+            - name: PASF (英国)
+              href: offering-pasf-uk.md
+        - name: 北アメリカ
+          items:
+            - name: カリフォルニア州消費者プライバシー法 (CCPA)
+              href: offering-ccpa.md
+            - name: カナダのプライバシーに関する法律
+              href: offering-canadian-privacy-laws.md
+        - name: 南アメリカ
+          items:
+            - name: PDPA (アルゼンチン)
+              href: offering-pdpa-argentina.md
+- name: Office 365 Enterprise
+  href: 'https://docs.microsoft.com/Office365/Enterprise'
+- name: Office 365 Business
+  href: 'https://docs.microsoft.com/office365/admin/admin-home'
+- name: Microsoft 365 セキュリティ
+  href: 'https://docs.microsoft.com/microsoft-365/security/'
