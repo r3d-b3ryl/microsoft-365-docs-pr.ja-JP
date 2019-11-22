@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 9a1ca4898696923b7dcbe22879906b25ccebcd13
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "38710078"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757654"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -25,7 +25,7 @@ Microsoft 365 を利用すると、企業はクラウド管理フレームワー
 
 Microsoft はクラウド セキュリティの業界リーダーとして認識されています。長年にわたるエンタープライズ ソフトウェアの構築とオンライン サービスの実施経験を活かして、Microsoft のチームは常に学習し、サービスとアプリケーションを継続的に更新して、コンプライアンスの厳格な業界標準に適合する安全なクラウド生産性サービスを提供します。Office 365 U.S. Government などのマイクロソフトの政府機関向けクラウド サービスは、米国 Federal Risk and Authorization Management Program (FedRAMP) の厳しい要件を満たしています。Microsoft Cloud を活用することで、米国連邦政府機関はコスト削減と厳格なセキュリティ対策を実現できます。
 
-この記事は、NIST 800-53 の要件を満たすための取り組みで利用できる、優先順位付けされたアクション プランについて説明しています。このアクション プランは、法令遵守を専門とする Microsoft のパートナーである Protiviti と提携して作成されました。Microsoft Ignite でこのアクション プランを使用する方法については、Maithili Dandige (Microsoft) と Antonio Maio (Protiviti) によるセッション「[Microsoft 365 準拠のパスと情報保護戦略を図化する](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions)」に参加してご確認ください。
+この記事には、NIST 800-53 の要件を満たすための取り組みで利用できる、優先順位付けされたアクション プランが含まれています。このアクション プランは、法令遵守を専門とする Microsoft のパートナーである Protiviti と連携して開発されました。 
 
 ## <a name="action-plan-outcomes"></a>アクション プランの結果
 
