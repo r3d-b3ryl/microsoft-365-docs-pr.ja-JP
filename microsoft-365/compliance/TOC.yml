@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: はじめに
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -701,6 +701,8 @@
           href: compliance-score-methodology.md
         - name: コンプライアンス スコアのリリース ノート (プレビュー)
           href: compliance-score-release-notes.md
+        - name: コンプライアンススコア FAQ (プレビュー)
+          href: compliance-score-faq.md
         - name: コンプライアンス マネージャー (プレビュー)
           href: compliance-manager-overview.md
           items:
