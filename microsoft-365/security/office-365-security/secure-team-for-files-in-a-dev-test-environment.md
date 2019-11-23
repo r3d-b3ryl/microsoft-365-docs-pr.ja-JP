@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: '概要: 開発/テスト環境のファイルのために、Microsoft Teams で機密チームと高機密チームを作成します。'
-ms.openlocfilehash: f22b3b1fbe07af6866206034ad6c9a90ced8a268
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929267"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202298"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>開発/テスト環境のファイルのために Teams の安全を強化する
 
@@ -62,7 +62,7 @@ ms.locfileid: "37929267"
       
 5. **[作成]** をクリックして、 **[グループ]** ブレードを閉じます。
     
-6.  「**Marketing staff (マーケティング スタッフ)**」という名前の新しい次のグループに対して、ステップ 3 から 5 を繰り返します。
+6.  「**Marketing staff (マーケティング スタッフ)**」という名前の新しいグループに対して、ステップ 3 から 5 を繰り返します。
     
 次に、グループのメンバーが、Office 365 と EMS のサブスクリプションのライセンスを自動的に割り当てられるように、自動ライセンスを構成します。
   
