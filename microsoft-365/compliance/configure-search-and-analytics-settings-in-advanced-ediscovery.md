@@ -14,21 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ケースのすべてのレビューセットに適用される高度な電子情報開示設定を構成します。 これには、分析と OCR の設定が含まれます。
-ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191142"
+ms.locfileid: "39202198"
 ---
 # <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
 
 次の機能を制御するために、高度な電子情報開示ケースごとに設定を構成できます。
 
 - ほぼ重複、電子メールスレッド
+
 - テーマ
+
 - 自動生成されたレビューセットクエリ
+
 - テキストを無視する
+
 - 光学式文字認識
 
 ケースの検索と分析の設定を構成するには:
@@ -69,7 +73,7 @@ ms.locfileid: "39191142"
 
 ![のレビュー用に自動生成されたクエリ](media/AeDForReviewQuery.png)
 
-このクエリは、基本的に、重複アイテムをレビューセットから除外します。 これにより、レビューセット内の一意のアイテムを確認できます。 このクエリは、ケースのすべてのレビューセットに対して分析を実行した場合にのみ作成されます。 詳細については、「レビュー[セットのクエリ](review-set-search.md)の概要」を参照してください。
+このクエリは、基本的に、重複アイテムをレビューセットから除外します。 これにより、レビューセット内の一意のアイテムを確認できます。 このクエリは、ケースのレビューセットに対して分析を実行した場合にのみ作成されます。 詳細については、「レビュー[セットのクエリ](review-set-search.md)の概要」を参照してください。
 
 ## <a name="ignore-text"></a>テキストを無視する
 
@@ -77,7 +81,8 @@ ms.locfileid: "39191142"
 
 ## <a name="optical-character-recognition-ocr"></a>光学式文字認識 (OCR)
 
-この設定をオンにすると、イメージのテキストをレビュー、検索、タグ付け、および分析できるように、OCR がイメージファイルに対して実行されます。 詳しくは、次のトピックを参照してください。
+この設定をオンにすると、イメージのテキストをレビュー、検索、タグ付け、および分析できるように、OCR がイメージファイルに対して実行されます。 抽出されたテキストは、校閲セットの選択したイメージファイルのテキストビューアーに表示できます。 詳しくは、次のトピックを参照してください。
 
 - [検索結果をレビュー セットに追加する](add-data-to-review-set.md#optical-character-recognition)
+
 - [サポートされているイメージファイルの種類](supported-filetypes-ediscovery20.md#image)

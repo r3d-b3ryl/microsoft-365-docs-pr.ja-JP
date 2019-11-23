@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高度な電子情報開示ケースに関連付けられた検索結果を追加します。 アイテムは元の場所からコピーされ、Microsoft によって提供される Azure ストレージの場所にコピーされます。 また、アイテムもインデックスが再作成され、高度な電子情報開示によって画像ファイルの OCR が実行され、レビューと分析のための画像テキストがアップロードされます。
-ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 99fe0cce8bd872ecd5f4a94699857c36c3a4d617
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191182"
+ms.locfileid: "39202328"
 ---
 # <a name="add-search-results-to-a-review-set"></a>検索結果をレビュー セットに追加する
 
@@ -57,6 +57,6 @@ ms.locfileid: "39191182"
 
 ## <a name="optical-character-recognition"></a>光学式文字認識
 
-検索結果をレビューセットに追加すると、Advanced eDiscovery の光学式文字認識 (OCR) 機能によって画像からテキストが自動的に抽出されます。また、画像テキストには、校閲セットに追加されるデータが含まれています。 これにより、画像内のテキストに対してさらにレビューと分析を行うことができます。 OCR は、ルースファイル、電子メールの添付ファイル、および埋め込み画像に対してサポートされています。 OCR でサポートされている画像ファイル形式の一覧については、「 [Advanced eDiscovery でサポートされるファイルの種類](supported-filetypes-ediscovery20.md#image)」を参照してください。
+検索結果をレビューセットに追加すると、Advanced eDiscovery の光学式文字認識 (OCR) 機能によって画像からテキストが自動的に抽出されます。また、画像テキストには、校閲セットに追加されるデータが含まれています。 抽出されたテキストは、校閲セットの選択したイメージファイルのテキストビューアーに表示できます。 これにより、画像内のテキストに対してさらにレビューと分析を行うことができます。 OCR は、ルースファイル、電子メールの添付ファイル、および埋め込み画像に対してサポートされています。 OCR でサポートされている画像ファイル形式の一覧については、「 [Advanced eDiscovery でサポートされるファイルの種類](supported-filetypes-ediscovery20.md#image)」を参照してください。
 
 詳細な電子情報開示で作成するケースごとに OCR 機能を有効にする必要があります。 詳細については、「 [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr)」を参照してください。

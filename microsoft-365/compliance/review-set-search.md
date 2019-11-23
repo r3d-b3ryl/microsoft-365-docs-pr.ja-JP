@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8eadfbeb1a78edd12129c97dc3144a45c5c409cf
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191272"
+ms.locfileid: "39202348"
 ---
 # <a name="query-the-data-in-a-review-set"></a>レビュー セット内のデータをクエリする
 
@@ -51,11 +51,11 @@ ms.locfileid: "39191272"
 
 ### <a name="query-language"></a>クエリ言語
 
-条件カードに加えて、キーワードカードで KQL のようなクエリ言語を使用してクエリを作成できます。 レビューセットクエリのクエリ言語は、AND、OR、NOT、NEAR (n) などの標準ブール演算子をサポートしています。 また、1文字のワイルドカード (?) と複数文字のワイルドカード (*) もサポートしています。
+条件カードに加えて、キーワードカードで KQL のようなクエリ言語を使用してクエリを作成できます。 レビューセットクエリのクエリ言語は、 **AND**、 **OR**、 **NOT**、 **NEAR**などの標準ブール演算子をサポートしています。 また、1文字のワイルドカード (?) と複数文字のワイルドカード (*) もサポートしています。
 
 ## <a name="using-filters"></a>フィルターの使用
 
-保存できるクエリに加えて、レビューセットフィルターを使用して、追加の条件をレビューセットクエリにすばやく適用することができます。 これにより、レビューセットクエリによって表示される結果をさらに絞り込むことができます。 
+保存できるクエリに加えて、レビューセットフィルターを使用して、追加の条件をレビューセットクエリにすばやく適用することができます。 これにより、レビューセットクエリによって表示される結果をさらに絞り込むことができます。
 
 ![設定フィルターを確認する](media/AeDReviewSetFilters.png)
 
