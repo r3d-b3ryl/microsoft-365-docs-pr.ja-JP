@@ -16,7 +16,7 @@
 ### [運用と監視](service-description/operations-and-monitoring.md)
 ### [アプリケーションの要件](service-description/mmd-app-requirements.md)
 ### [サービスの変更とコミュニケーション](service-description/servicechanges.md)
-### [サービスをカスタマイズする](service-description/customizing.md)
+### [サービス プランの例外](service-description/customizing.md)
 ## [Microsoft マネージド デスクトップへの登録準備](get-ready/index.md)
 ### [Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md)
 ### [ネットワークを準備する](get-ready/network.md)
