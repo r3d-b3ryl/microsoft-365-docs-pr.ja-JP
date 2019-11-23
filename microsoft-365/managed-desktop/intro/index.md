@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: a0f48fefcbb77f5972b91f7fbfbd9dffa6ad7f32
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191208"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204236"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -35,14 +35,14 @@ Microsoft マネージドデスクトップは、今日の企業およびその�
 
 もちろん、独自のデバイスや Microsoft 365 の展開を自分で取得して管理することもありません。 Microsoft の管理されたデスクトップとは何ですか。
 
-エンドユーザーの場合:
+弊社のポリシーとセキュリティベースラインは、エンドユーザーに次の利点を提供します。
 
 - Microsoft マネージドデスクトップデバイスの起動時間は、その4分の1分間を示します。
 - 少なくともバッテリ寿命の2倍
 - 年間 1 ~ 3 分のデバイスクラッシュ
 - [エンタープライズ状態ローミング](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)を使用したデバイスのモビリティにより、ユーザーはサインインするデバイスにかかわらず、同じ機能を使用できます。
 
-IT 管理者向け:
+IT 管理者は、次の機能を利用できます。
 
 - Insights ダッシュボードは、デバイスとユーザーの使用状況、信頼性、デバイスの正常性、およびその他のデータについて常に最新の状態を維持します。
 - デバイスの95% を更新するのに必要な時間の*10 分の 1*について
@@ -65,7 +65,7 @@ Microsoft マネージドデスクトップでは、登録されたデバイス�
 
 
 ## <a name="need-more-details"></a>詳細が必要な場合
-Microsoft マネージドデスクトップの価値 (顧客ストーリーを含む) の詳細については、「 [Microsoft Managed desktop](https://aka.ms/mmd)」を参照してください。 詳細については、[ロードマップ](https://aka.ms/AA6jiam)とダウンロード可能な[1 ページの概要](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf)を参照してください。 最新のニュースについては、Microsoft マネージドデスクトップ[ブログ](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop)を参照してください。
+Microsoft マネージドデスクトップの価値 (顧客ストーリーを含む) の詳細については、「 [Microsoft Managed desktop](https://aka.ms/mmd)」を参照してください。 詳細については、[ロードマップ](https://aka.ms/AA6jiam)とダウンロード可能な[1 ページの概要](https://aka.ms/AA6ob3h)を参照してください。 最新のニュースについては、Microsoft マネージドデスクトップ[ブログ](https://aka.ms/AA6l2dd)を参照してください。
 
 Microsoft の管理されたデスクトップが組織に適していると思われる場合は、サービスについての詳細を説明する追加ドキュメント、登録のために組織を準備する方法、サービスを開始する方法、およびその後の継続的な操作について詳しく説明します。必要に応じて、お客様とエンドユーザーが簡単にヘルプを利用できるようにする方法を含みます。 すでにオンボードでの準備が整っている場合は、「お客様の[地域のアカウントチーム](https://pages.email.office.com/contactmmd/)に連絡」を開始してください。
 
@@ -87,9 +87,14 @@ Microsoft の管理されたデスクトップが組織に適していると思�
 
 **作業の開始**登録の準備が整ったら、このセクションでは、実際にサービスに参加し、デバイスを取得および設定し、エンドユーザーを準備して、アプリを展開するための手順について説明します。
 
-- [Microsoft Managed Desktop 管理ポータルで管理者の連絡先を追加する](../get-started/add-admin-contacts.md)
+- [管理ポータルで管理者の連絡先を追加および確認する](../get-started/add-admin-contacts.md)
+- [条件付きアクセスを調整する](../get-started/conditional-access.md)
+- [ライセンスを割り当てる](../get-started/assign-licenses.md)
+- [デバイスに Intune ポータルサイトをインストールする](../get-started/company-portal.md)
+- [Enterprise State Roaming を有効にする](../get-started/enterprise-state-roaming.md)
 - [Microsoft マネージドデスクトップデバイスをセットアップする](../get-started/set-up-devices.md)
-- [アプリを Microsoft マネージドデスクトップデバイスに展開する](../get-started/deploy-apps.md)
+- [ユーザーがデバイスを使えるようにする](../get-started/get-started-devices.md)
+- [アプリをデバイスに展開する](../get-started/deploy-apps.md)
 
 **Microsoft マネージドデスクトップの使用**このセクションには、IT 管理者が必要に応じてサポートを受ける方法、エンドユーザーがサポートを受ける方法、展開したアプリを管理する方法、デバイスでカスタマイズ可能な設定を操作する方法など、サービスの日常のライフサイクルに関する情報が記載されています。
 

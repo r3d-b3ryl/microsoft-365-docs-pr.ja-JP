@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523632"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204264"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
 > [!NOTE] 
-> これらの更新プログラムは現在ロールアウトされており、すべてのユーザーに対してまだ使用できない場合があります。
+> これらの更新プログラムは現在ロールアウトされており、すべてのユーザーに対してまだ使用できない場合があります。 この機能は、エンタープライズ outlook.com ユーザーに対してサポートされています。 現時点では、コンシューマー outlook.com では使用できません。
 
 フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
 
@@ -51,11 +51,11 @@ Office 365 をご利用のお客様の場合は、セキュリティ & コンプ
 
     ![グラフィックインターフェイスで認証されていない送信者を編集する。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- 管理者が誤検知を識別し、送信者が未確認の送信者の処理を受信しないようにする場合は、次のいずれかの操作を実行して、スプーフィングインテリジェンススプーフィング許可リストに送信者を追加することができます。
+- 管理者が誤検知を識別し、送信者が未確認の送信者による処理を受信しないようにした場合は、次のいずれかの操作を行って、スプーフィングインテリジェンススプーフィング許可リストに送信者を追加することができます。
         
-    - スプーフィングインテリジェンスの洞察を通じてドメインペアを追加します。 詳細については、「チュートリアル: スプーフィングインテリジェンスの洞察」を参照してください。
+    - スプーフィングインテリジェンスの洞察を通じてドメインペアを追加します。 詳細については、「[チュートリアル: スプーフィングインテリジェンスの洞察](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)」を参照してください。
                 
-    - Get-phishfilterpolicy コマンドレットを使用して、ドメインペアを追加します。 詳細については、「Get-phishfilterpolicy」および「Office のスプーフィング対策保護」を参照してください365
+    - Get-phishfilterpolicy コマンドレットを使用して、ドメインペアを追加します。 詳細については、「 [get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) 」および「 [set UP Office 365 ATP フィッシング対策」および「set up Office](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)」を参照してください。
 
 また、電子メールトランスポートルール (Etr)、安全なドメインリスト (スパム対策ポリシー)、安全な送信者リスト、またはユーザーがこのユーザーを自分のドメイン内の "安全な送信者" として設定している場合にも、未検証の送信者の処理は適用されません。ボックス.
 
@@ -77,7 +77,7 @@ Via タグ: 送信者としての場合は、DKIM 署名のドメインまたは
 
 必ずしもそうではありません。 Outlook.com および web 上の Outlook は、メッセージ内に送信者を認証するためのその他のプロパティがある場合があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Outlook.com メールアカウントを保護する](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 

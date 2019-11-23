@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise テスト環境のライセンスとグループ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 Enterprise テスト環境で、グループベースのライセンスと動的なグループメンバーシップを構成します。
-ms.openlocfilehash: fe6380d94919556904a1fb1ac0624fac3496fe30
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673253"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202478"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のライセンスとグループメンバーシップを自動化する
 
-*このテストラボガイドは、Microsoft 365 エンタープライズテスト環境にのみ使用できます。*
+*このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
 
 グループベースのライセンスは、グループメンバーシップに基づいてユーザーアカウントのライセンスを自動的に割り当てるか削除します。 動的グループメンバーシップは、ユーザーアカウントのプロパティ (部署、国など) に基づいてグループにメンバーを追加または削除します。 この記事では、Microsoft 365 エンタープライズテスト環境の両方のデモを行います。
 
@@ -63,10 +63,10 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 12. **[クエリの追加]** をクリックしてから、**[作成]** をクリックします。
 13. [グループと**グループ-すべて**のグループ **]** ブレードを閉じます。
 
-次に、メンバーに Office 365 E5 および Enterprise Mobility + Security E5 ライセンスが自動的に割り当てられるように、Sales グループを構成します。
+次に、メンバーに Microsoft 365 E5 ライセンスが自動的に割り当てられるように、Sales グループを構成します。
 
 1. [Azure Active Directory の**概要**] ブレードで、[**すべての製品 > ライセンス**] をクリックします。
-2. 一覧で、 **[Enterprise Mobility + Security E5]** と **[Office 365 Enterprise E5]** を選択し、 **[割り当て]** をクリックします。
+2. 一覧で、[ **Micrsooft 365 E5**] を選択し、[**割り当て**] をクリックします。
 3. [**ライセンスの割り当て**] ブレードで、[**ユーザーとグループ**] をクリックします。
 4. グループの一覧で、[ **Sales** ] グループを選択します。
 5. **[選択]** をクリックし、**[割り当て]** をクリックします。
@@ -78,7 +78,7 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 2. [ **Microsoft 365 管理センター** ] タブで、[**アクティブなユーザー**] をクリックします。
 3. [**アクティブなユーザー** ] ページで、[ **User 4** ] アカウントをクリックします。
 4. [ **User 4** ] ウィンドウで、[**製品ライセンス**] の [**編集**] をクリックします。
-5. [**製品ライセンス**] ウィンドウで、 **Enterprise Mobility + Security e5**および**Office 365 Enterprise e5**ライセンスをオフにして、[**保存 > 閉じる**] をクリックします。
+5. [**製品ライセンス**] ウィンドウで、 **Microsoft 365 E5**ライセンスを無効にしてから、[**保存 > 閉じる**] をクリックします。
 6. User 4 アカウントの [プロパティ] で、製品ライセンスが割り当てられておらず、グループメンバーシップもないことを確認します。
 7. [**連絡先情報**] の [**編集**] をクリックします。
 8. [**連絡先情報の編集**] ウィンドウで、[**連絡先情報**] をクリックします。
@@ -88,7 +88,7 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 時間内に、次のように表示されるはずです。
 
 - **グループメンバーシップ**プロパティが**Sales** group で更新されました。
-- **Enterprise Mobility + Security e5**および**Office 365 enterprise e5**ライセンスで更新された**製品ライセンス**のプロパティ。
+- **製品ライセンス**プロパティは、 **Microsoft 365 E5**ライセンスで更新されました。
 
 動的グループメンバーシップと自動ライセンスを運用環境に展開するための情報とリンクについては、Id フェーズの以下の手順を参照してください。
 

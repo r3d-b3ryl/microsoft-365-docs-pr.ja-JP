@@ -13,25 +13,26 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 9ef3344bd6497495d3d2279f570a8090d4fa4573
-ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
+ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38677537"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204259"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
-**Exchange Online Protection (EOP)** は、Office 365 サブスクリプションのセキュリティの中核で、悪意のある電子メールが従業員の受信トレイに届かないようにするために使用されます。 しかし、毎日新しい高度な攻撃が発生すると、多くの場合、保護が強化されます。 **Office 365 Advanced Threat Protection (ATP)** ATP プラン1または ATP Plan 2 には、管理者によるセキュリティ、統制、調査の層をさらに強化する追加機能が含まれています。 
+**Exchange Online Protection (EOP)** は、Office 365 サブスクリプションのセキュリティの中核で、悪意のある電子メールが従業員の受信トレイに届かないようにするために使用されます。 しかし、毎日新しい高度な攻撃が発生すると、多くの場合、保護が強化されます。 **Office 365 Advanced Threat Protection (ATP)** ATP プラン1または ATP Plan 2 には、管理者によるセキュリティ、統制、調査の層をさらに強化する追加機能が含まれています。
 
-セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP と Office 365 ATP には、**標準**と**Strict**の2つのセキュリティレベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのメールフィルター構成は、ほとんどの状況で、不要なメールが従業員の受信トレイに届くことを防ぐために役立ちます。 
+セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP と Office 365 ATP には、**標準**と**Strict**の2つのセキュリティレベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのメールフィルター構成は、ほとんどの状況で、不要なメールが従業員の受信トレイに届くことを防ぐために役立ちます。
 
 このトピックでは、Office 365 ユーザーを保護するために Microsoft が推奨する設定について説明します。
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング対策保護
+
 スパム対策、マルウェア対策、およびフィッシング対策は、管理者が構成できる EOP の機能です。 次の構成をお勧めします。
 
-### <a name="anti-spam-policy"></a>スパム対策ポリシー
+### <a name="eop-anti-spam-policy-settings"></a>EOP スパム対策ポリシーの設定
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
@@ -71,7 +72,7 @@ ms.locfileid: "38677537"
 |MarkAsSpamNdrBackscatter|
 |MarkAsSpamSpfRecordHardFail|
 
-#### <a name="outbound-spam-filter-policy"></a>送信スパムフィルターポリシー
+#### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 送信スパムフィルターポリシーの設定
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
@@ -80,17 +81,17 @@ ms.locfileid: "38677537"
 |送信スパムポリシー受信者の制限-毎日の制限|800|1000||
 |ユーザーが制限を超えた場合のアクション|ユーザーがメールを送信するのを制限する|ユーザーがメールを送信するのを制限する||
 
-### <a name="anti-malware-policy"></a>マルウェア対策ポリシー
+### <a name="eop-anti-malware-policy-settings"></a>EOP マルウェア対策ポリシー設定
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|マルウェア検出応答|不要|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
+|マルウェア検出応答|いいえ|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |不審なファイルの種類をブロックするための "一般的な添付ファイルの種類のフィルター"|オン|オン||
 |マルウェアのゼロ時間の自動削除|オン|オン||
 |配信されていないメッセージの内部送信者に通知する|無効|無効||
 |配信されていないメッセージの外部送信者に通知する|無効|無効||
 
-### <a name="anti-phishing-policy"></a>フィッシング対策ポリシー
+### <a name="eop-anti-phishing-policy-settings"></a>EOP フィッシング対策ポリシー設定
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
@@ -98,18 +99,20 @@ ms.locfileid: "38677537"
 |認証されていない送信者を有効にする (タグ付け)|オン|オン||
 |ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合|受信者の迷惑メールフォルダーにメッセージを移動する|メッセージを検疫する||
 
-## <a name="office-365-advanced-threat-protection-atp-security"></a>Office 365 Advanced Threat Protection (ATP) のセキュリティ
-その他のセキュリティ上の利点には、Office 365 Advanced Threat Protection サブスクリプションが付属しています。 最新のニュースと情報については、「 [Office 365 ATP の新機能](whats-new-in-office-365-atp.md)」を参照してください。 
+## <a name="office-365-advanced-threat-protection-security"></a>Office 365 Advanced Threat Protection セキュリティ
+
+その他のセキュリティ上の利点には、Office 365 Advanced Threat Protection (ATP) サブスクリプションが付属しています。 最新のニュースと情報については、「 [Office 365 ATP の新機能](whats-new-in-office-365-atp.md)」を参照してください。
 
 Office 365 ATP には、悪意のある添付ファイルを含む電子メールを配信できないようにする安全な添付ファイルおよび安全なリンクのポリシーが含まれており、ユーザーは安全でない可能性のある Url をクリックすることになります。
 
 > [!IMPORTANT]
-> 高度なフィッシング対策は、Office 365 ATP サブスクリプションの利点の1つです。 [有効] 既定では、メールのフィルタリングを開始する前に、ポリシーを使用してフィッシング対策を構成する***必要があり***ます。 フィッシング対策ポリシーの構成を忘れると、ユーザーが危険な電子メールに公開される可能性があります。 Office 365 ATP サブスクリプションを追加した後に、必ずフィッシング対策ポリシーを構成してください。
+> 高度なフィッシング対策は、Office 365 ATP サブスクリプションの利点の1つです。 既定では有効になっていますが、メールのフィルターを開始する前に、少なくとも1つのフィッシング対策ポリシーを構成***する必要があり***ます。 フィッシング対策ポリシーの構成を忘れると、ユーザーが危険な電子メールに公開される可能性があります。 Office 365 ATP サブスクリプションを追加した後は、必ずフィッシング対策ポリシーを構成してください。
 
 EOP に Office 365 ATP サブスクリプションを追加した場合は、次の構成を設定します。
 
-### <a name="office-atp-anti-phishing-policy"></a>Office ATP のフィッシング対策ポリシー
-EOP のお客様は基本的なフィッシング対策ポリシーを設定していますが、Office 365 ATP を使用すると、管理者は、攻撃に対する防御、検出、再検証を支援するためのより多くの機能と制御を得ることができます。
+### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP のフィッシング対策ポリシー設定
+
+EOP のお客様は、前述したように基本的なフィッシング対策を行いますが、Office 365 ATP には、攻撃を防止、検出、修復するのに役立つ機能と制御が追加されています。
 
 |偽装セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
@@ -161,7 +164,7 @@ EOP のお客様は基本的なフィッシング対策ポリシーを設定し�
 |検出時に添付ファイルをリダイレクトする|有効|有効|添付ファイルがマルウェアであるかどうかを判断する方法を把握しているセキュリティ管理者の電子メールアドレスにリダイレクトする|
 |添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合の、ATP の安全な添付ファイル応答|有効|有効||
 
-## <a name="miscellaneous-settings-for-eop-or-office-365-atp"></a>EOP または Office 365 ATP のその他の設定
+## <a name="miscellaneous-settings"></a>その他の設定
 
 これらの設定は、上記の特定のカテゴリに必ずしも適合しない機能の範囲をカバーしています。 一部の設定は、セキュリティ & コンプライアンスセンターの外部にあります。
 

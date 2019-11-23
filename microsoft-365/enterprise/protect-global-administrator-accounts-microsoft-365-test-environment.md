@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise テスト環境で全体管理者アカウント
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 次の手順を使用して、Microsoft 365 Enterprise テスト環境の全体管理者アカウントを保護します。
-ms.openlocfilehash: 89985f99f5471aab87189e78035062add2c6bad9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5447177c6581b69d48272ceef7718552ea84dc9d
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673333"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202228"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保護する
 
-*このテストラボガイドは、Microsoft 365 エンタープライズテスト環境にのみ使用できます。*
+*このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
 
 組織でのデジタル攻撃を防止するには、管理者アカウントのセキュリティを可能な限り確保することができます。 この記事では、Azure Active Directory (Azure AD) 条件付きアクセスポリシーを使用して全体管理者アカウントを保護する方法について説明します。
 
@@ -56,7 +56,7 @@ Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保�
 4. [**パスワード**] をクリックし、[**パスワードの作成を許可**する] をクリックして、強力なパスワードを入力します。 この新しいアカウントのパスワードを安全な場所に記録します。
 5. **[このユーザーが最初にサインインしたときにパスワードを変更するのをクリアする**。
 6. [**ロール**] をクリックし、[**全体管理者**] をクリックします。
-7. [**製品ライセンス**] をクリックし、 **Enterprise Mobility + Security e5**および**Office 365 enterprise e5 ライセンス**を有効にします。
+7. [**製品ライセンス**] をクリックし、 **Microsoft 365 E5**ライセンスを有効にします。
 8. **[追加]** をクリックします。
 9. [**ユーザーが追加されました] ページ**で、[**電子メールでパスワードを送信**する] をオフにして、[**閉じる**] をクリックします。
 
