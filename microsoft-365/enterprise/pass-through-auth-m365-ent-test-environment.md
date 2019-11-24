@@ -3,7 +3,7 @@ title: Microsoft 365 テスト環境でのパススルー認証
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '要約: Microsoft 365 テスト環境でパススルー認証を構成します。'
-ms.openlocfilehash: 98e0ad4b216fdc3940c0077cb308d6271ffed678
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ed21007932b455c4f24af83434af75d44e583574
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757724"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202318"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境でのパススルー認証
 
@@ -78,13 +78,13 @@ Microsoft のクラウド ベースのサービスとアプリケーションへ
 
 10. [**パススルー認証**] をクリックします。[**パススルー認証**] ウィンドウには、認証エージェントがインストールされているサーバーの一覧が表示されます。一覧の中に APP1 が表示されているはずです。[**パススルー認証**] ウィンドウを閉じます。
 
-次に、<strong>user1@testlab.</strong>\< お客様のパブリック ドメイン > User1 アカウントのユーザー名で、Office 365 サブスクリプションにサインインできることをテストします。
+次に、User1 アカウントの <strong>user1@testlab.</strong>\< 自分のパブリック ドメイン > ユーザー名を使用して、サブスクリプションにサインインする機能をテストします。
 
-1. APP1 から、Office 365 のサインアウトを実行します。その後で、別のアカウントを指定して再度サインインします。
+1. APP1 から、サインアウトして、サインインし直しますが、その際に別のアカウントを指定します。
 
 2. ユーザー名とパスワードの入力を求めるダイアログが表示されたら、<strong>user1@testlab.</strong>\<お客様のパブリック ドメイン名> と User1 のパスワードを指定します。 User1 として正常にサインインできるはずです。
 
-User1 は、TESTLAB AD DS ドメインに対するドメイン管理者のアクセス許可を持っていますが、Office 365 のグローバル管理者ではありません。 そのため、**[管理者]** アイコンはオプションとして表示されません。
+User1 は、TESTLAB AD DS ドメインのドメイン管理者のアクセス許可を持っていますが、グローバル管理者ではないことをご注意ください。 そのため、**[管理者]** アイコンはオプションとして表示されません。
 
 最終的な構成をここに示します。
 
@@ -106,5 +106,3 @@ User1 は、TESTLAB AD DS ドメインに対するドメイン管理者のアク
 [Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
 
 [Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 最重要ファイルおよび機密ファイルを保存するためのセキュリティで保護されたチームを作成します。
-ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: cc29bbc076bf4d66593f785a1e4d1f881a530d83
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699767"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202428"
 ---
 # <a name="teams-for-highly-regulated-data"></a>厳しく規制されたデータに Teams で対応する
 
@@ -213,6 +213,12 @@ ms.locfileid: "38699767"
   ラベルが割り当てられているファイルがわかるようにするには、SharePoint のフォルダーを表示し、[**列の追加**] で [**列の表示/非表示**] オプションを使用して [**秘密度**] 列を追加します。
 
 必要に応じて、ユーザーの再トレーニングを行います。
+
+## <a name="demonstrate-this-in-a-test-environment"></a>テスト環境でこれを実証する
+
+機密ファイルおよび非常に機密性の高いファイルに適したチームのテストを行う独自のテスト環境を構築するには、[これらの手順](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment) を参照してください。 
+
+![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Contoso Corporation が極秘プロジェクトでどのように安全なチームを運用したか
 

@@ -3,7 +3,7 @@ title: Microsoft 365 用のシミュレートされたエンタープライズ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 用にシミュレートされたエンタープライズ テスト環境を作成します。
-ms.openlocfilehash: 98eb336a0f63f47b4b79de44c46fcd81f1d9c9f6
-ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
+ms.openlocfilehash: b89df6cad03084a8d9119f03f5c07d01a9c96061
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38711881"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202395"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
@@ -364,177 +364,26 @@ CLIENT1 の再起動後に、TESTLAB\\User1 のアカウント名とパスワー
 
   これには追加のコストが発生しますが、機能、構成、およびシナリオをテストするための期限切れのない実働テスト環境を確実に保持できます。この 1 つのテスト環境は、概念実証、同僚や経営者に向けたデモンストレーション、およびアプリケーションの開発とテストのために長期にわたって使用できます。この方法をお勧めします。
 
-Microsoft 365 E5 試用版サブスクリプションを開始するには、最初に、架空の会社名と新しい Microsoft アカウントが必要になります。
-  
-1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![](./media/Common-Images/TableLine.png)
-    
-2. 新しい Microsoft アカウントにサインアップするには、[https://outlook.com](https://outlook.com) に移動して、新しい電子メール アカウントとアドレスでアカウントを作成します。このアカウントを使用して、Office 365 にサインアップします。
-    
-  - ここに新しいアカウントの姓名を記録してください: ![](./media/Common-Images/TableLine.png)
-    
-  - ここに新しい電子メール アカウントのアドレスを記録してください: ![](./media/Common-Images/TableLine.png)@outlook.com
-    
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
-まず、Office 365 E5 試用版サブスクリプションを使用して、Microsoft 365 E5 サブスクリプションを追加します。
+Azure ポータルから、CORP\User1 アカウントを使用して CLIENT1 に接続します。
 
-1. シミュレーションのエンタープライズ Office 365 開発/テスト環境の場合は、Azure portal から CORP\User1 アカウントを使用して CLIENT1 に接続します。  スタート画面から Microsoft Edge を起動して、[https://aka.ms/e5trial](https://aka.ms/e5trial) に移動します。
-    
-2. **[ようこそ、必要事項をご記入ください]** ページで、次に示す項目を指定します。
-    
-  - 所在地
-    
-  - 新しい Microsoft アカウントの姓名
-    
-  - 新しい電子メール アドレス
-    
-  - 勤務先電話番号
-    
-  - 架空の会社名
-    
-  - 組織の規模に [250-999 人]
-    
-3. **[手順はあと 1 つだけです]** をクリックします。
-    
-4. **[ユーザー ID の作成]** ページで、新しい電子メール アドレスに応じたユーザー名を入力し、@ 記号の後に架空の会社名を入力します (名前に含まれる空白はすべて削除します)。次に、この新しい Office 365 アカウントのパスワードを 2 回入力します。 
-    
-    入力したパスワードを安全な場所に記録してください。
-    
-    架空の会社名を記録してください (この名前を**組織名**と呼ぶことにします): ![](./media/Common-Images/TableLine.png)
-    
-5. **[アカウントの作成]** をクリックします。
-    
-6. **[ロボットではないことを証明してください]** ページで、テキスト対応の電話の電話番号を入力して、**[自分にテキスト送信]** をクリックします。
-    
-7. 受信したテキスト メッセージの認証コードを入力して、**[次へ]** をクリックします。
-    
-8. ここにサインイン ページの URL を記録してください (選択してコピー): ![](./media/Common-Images/TableLine.png)
-    
-9. ここにユーザー ID を記録してください (選択してコピー): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    この値を**Office 365 全体管理者名**と呼ぶことにします。
-    
-10. **[準備が整いました]** が表示されたら、その表示をクリックします。
-    
-11. 次のページで、Office 365 のセットアップが完了して、すべてのタイルが使用できるようになるまで待機します。
-    
-Office 365 ポータルのメイン ページが表示されます。このページから、Office のサービスと Microsoft 365 管理センターにアクセスできます。
-  
-開発/テスト環境に現在お持ちの有料サブスクリプションとは別の Azure AD テナントが存在するように、Office 365 の試用版サブスクリプションを作成します。 このように分離することにより、運用サブスクリプションに影響を与えることなく、テスト テナントでのユーザーとグループの追加と削除が可能になります。
-    
-### <a name="configure-your-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションを構成する
+新しい Office 365 E5 試用版のサブスクリプションを作成するには、「軽量な基本構成」のテスト ラボ ガイドの [フェーズ 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) にある手順を実行します。
 
-次に、追加のユーザーで Office 365 E5 のサブスクリプションを構成し、Office 365 E5 ライセンスを割り当てます。
-  
-「[Office 365 PowerShell への接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)」の手順を使用して、CLIENT1 仮想マシンの Azure Active Directory PowerShell for Graph モジュールで Office 365 のサブスクリプションに接続します。
-    
-[Windows PowerShell 資格情報の要求] ダイアログ ボックスで、Office 365 全体管理者名 (例: jdoe@contosotoycompany.onmicrosoft.com) とパスワードを入力します。
-  
-組織名 (例: contosotoycompany)、所属地域に該当する 2 文字の国別コード、共通のアカウント パスワードを入力して、PowerShellのプロンプトから次のコマンドを実行します。
+新しい Office 365 E5 試用版のサブスクリプションを構成するには、「軽量な基本構成」のテスト ラボ ガイドの [フェーズ 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) にある手順を実行します。
 
-```powershell
-$orgName="<organization name>"
-$loc="<two-character country code, such as US>"
-$commonPW="<common user account password>"
-$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password=$commonPW
+#### <a name="using-an-office-365-e5-test-environment"></a>Office 365 E5 のテスト環境を使用する
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-```
-> [!NOTE]
-> ここで共通のパスワードを使用することで、自動化と、開発/テスト環境の構成を容易にします。 運用環境のサブスクリプションは避けるように強くお勧めします。 
-
-#### <a name="record-key-information-for-future-reference"></a>将来の参照のために重要な情報を記録する
-
-この記事を印刷しておき、30 日間の Office 365 試用版サブスクリプションの終了後にこの環境で必要になる特定の情報を記録しておくことをお勧めします。 試用版サブスクリプションは、追加で 30 日間まで簡単に延長できます。 永続的な開発/テスト環境では、別個の Azure AD テナントと少数のライセンスを使用して新しい有料サブスクリプションを作成します。
-
-これらの値を記録する:
-  
-- Office 365 全体管理者名: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 2 の手順 9 で入力したもの)
-    
-    このアカウントのパスワードも安全な場所に記録してください。
-    
-- 試用版サブスクリプションの組織名: ![](./media/Common-Images/TableLine.png) (フェーズ 2 の手順 4 で入力したもの)
-    
-- User 2、User 3、User 4、および User 5 のアカウントを一覧表示するには、次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。
-    
-  ```powershell
-  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
-  ```
-
-    ここにアカウント名を記録してください:
-    
-  - User 2 のアカウント名: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - User 3 のアカウント名: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - User 4 のアカウント名: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - User 5 のアカウント名: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    これらのアカウントの共通パスワードも安全な場所に記録してください。
-   
-
-#### <a name="using-an-office-365-e5-devtest-environment"></a>Office 365 E5 の開発/テスト環境を使用する
-
-Office 365 の開発/テスト環境だけが必要な場合は、ここで終了します。 
+Office 365 のテスト環境だけが必要な場合は、ここで終了します。 
 
 Office 365 と Microsoft 365 の両方に適用される追加のテスト ラボ ガイドについては、「[Microsoft 365 エンタープライズ テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)」を参照してください。
-  
+
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Microsoft 365 E5 の試用版サブスクリプションを追加する
 
-次に、Microsoft 365 E5 試用版サブスクリプションにサインアップして、Office 365 E5 試用版サブスクリプションと同じ組織に追加します。
+ライセンスを使用して、Office 365 E5 試用版のサブスクリプションのユーザー アカウントを構成するには、「軽量な基本構成」のテスト ラボ ガイドの [フェーズ 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) にある手順を実行します。
+
   
-まず最初に、Microsoft 365 E5 試用版サブスクリプションを追加して、Microsoft 365 ライセンスを全体管理者アカウントに割り当てます。
-  
-1. インターネット ブラウザーのプライベート インスタンスで、全体管理者アカウントの資格情報を使用して、Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
-    
-2. **[Microsoft 365 管理センター]** ページの左側のナビゲーションで **[請求]、[サービスを購入する]** の順にクリックします。
-    
-3. **[サービスを購入する]** ページで、**Microsoft 365 E5** 項目を見つけます。 その項目の上にマウス ポインターを移動させ、**[無料試用版を起動する]** をクリックします。
-
-4. **[Microsoft 365 E5 試用版]** ページで、テキスト メッセージを受信するか電話を受けるかを選択し、電話番号を入力して、**[テキスト メッセージを送信する]** または **[電話する]** をクリックします。
-
-5. **[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。
-
-6. **[注文の受領書]** ページで、**[続行]** をクリックします。
-
-7. Microsoft 365 管理センターで、**[アクティブ ユーザー]** をクリックしてから、管理者アカウントをクリックします。
-
-8. **[製品ライセンス]** の **[編集]** をクリックします。
-
-9. Office 365 Enterprise E5 のライセンスをオフにして、Microsoft 365 E5 のライセンスをオンにします。
-
-10. **[保存]、[閉じる]、[閉じる]** の順にクリックします。
-
-次に、その他のすべてのアカウント (User 2、User 3、User 4、および User 5) に前述の手順 8 から 11 を繰り返します。
-  
-> [!NOTE]
-> Microsoft 365 E5 の試用版サブスクリプションは 30 日間有効です。 永続的なテスト環境では、少数のライセンスを使用して、この試用版のサブスクリプションを有料サブスクリプションに変換します。 
-  
-### <a name="results"></a>結果
+## <a name="results"></a>結果
 
 テスト環境は、次のようになっています。
   
