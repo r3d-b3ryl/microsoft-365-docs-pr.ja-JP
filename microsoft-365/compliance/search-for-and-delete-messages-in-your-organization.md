@@ -1,5 +1,5 @@
 ---
-title: Office 365 組織でメール メッセージの検索と削除を行う - 管理者向けヘルプ
+title: Office 365 組織でのメール メッセージの検索と削除
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Office 365 セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: cd592ca48fdb2390e8449672920aa697cc297495
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085002"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39218862"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Office 365 組織でメール メッセージの検索と削除を行う - 管理者向けヘルプ
+# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Office 365 組織でのメール メッセージの検索と削除
 
 **この記事は管理者向けです。メールボックスで削除するアイテムを探している場合は、「[クイック検索を使ってメッセージまたはアイテムを検索する](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)」を参照してください。**|
    
@@ -39,11 +39,11 @@ Office 365 のコンテンツ検索機能を使って、組織のすべてのメ
   
 ## <a name="before-you-begin"></a>始める前に
 
-- コンテンツ検索を作成して実行するには、**電子情報開示管理者**役割グループのメンバーであるか、**コンプライアンス検索**の管理役割が割り当てられている必要があります。 メッセージを削除するには、**Organization Management** 役割グループのメンバーであるか、**検索と消去**の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+- コンテンツ検索を作成して実行するには、**電子情報開示管理者**役割グループのメンバーであるか、**コンプライアンス検索**の管理役割が割り当てられている必要があります。 メッセージを削除するには、**Organization Management** 役割グループのメンバーであるか、**検索と消去**の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
     
 - メッセージを削除するには、セキュリティ/コンプライアンス センターの PowerShell を使用する必要があります。 接続方法については、「[手順 2](#step-2-connect-to-security--compliance-center-powershell)」を参照してください。
     
-- メールボックスごとに最大 10 個のアイテムを一度に削除できます。 メッセージを検索し削除するための機能はインシデント対応ツールを意図したものなので、この制限により、メールボックスからすばやくかつ確実にメッセージを削除できます。 これは、ユーザーのメールボックスをクリーンアップするための機能ではありません。 10 個を超えるアイテムを削除する場合は、Exchange Online の PowerShell で **Search-Mailbox -DeleteContent** コマンドを使用できます。 「[メッセージを検索して削除する - 管理者向けヘルプ](search-for-and-delete-messagesadmin-help.md)」を参照してください。
+- メールボックスごとに最大 10 個のアイテムを一度に削除できます。 メッセージを検索し削除するための機能はインシデント対応ツールを意図したものなので、この制限により、メールボックスからすばやくかつ確実にメッセージを削除できます。 これは、ユーザーのメールボックスをクリーンアップするための機能ではありません。 10 個を超えるアイテムを削除する場合は、Exchange Online の PowerShell で **Search-Mailbox -DeleteContent** コマンドを使用できます。 「[メッセージを検索して削除する](search-for-and-delete-messagesadmin-help.md)」を参照してください。
     
 - コンテンツ検索で検索と削除アクションを実行してアイテムを削除できるメールボックスの最大数は 50,000 個です。 コンテンツ検索 ([手順 1](#step-1-create-a-content-search-to-find-the-message-to-delete) で作成) に 50,000 を超えるソース メールボックスが含まれる場合、削除アクション (手順 3 で作成) は失敗します。 50,000 を超えるメールボックスに対して検索と削除の操作を実行するためのヒントについては、「[詳細情報](#more-information)」セクションを参照してください。 
     
@@ -82,13 +82,13 @@ Office 365 のコンテンツ検索機能を使って、組織のすべてのメ
   
 - このクエリは、2016 年 4 月 13 日から 2016 年 4 月 14 日までの間にユーザーが受信し、単語 "action" と "required" が件名に含まれるメッセージを返します。
     
-    ```
+    ```powershell
     (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
     ```
-   
+
 - このクエリは、chatsuwloginsset12345@outlook.com から送信され、完全に一致する語句 "Update your account information" (アカウント情報を更新してください) が件名に含まれているメッセージを返します。
     
-    ```
+    ```powershell
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
@@ -104,13 +104,13 @@ Office 365 アカウントで多要素認証 (MFA) やフェデレーション�
   
 次の例では、"Remove Phishing Message"(フィッシング メッセージの削除) という名前のコンテンツ検索によって返された検索結果がコマンドによって論理的に削除されます。 
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
 Remove Phishing Message コンテンツ検索によって返されたアイテムを物理的に削除するには、次のコマンドを実行します。
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 

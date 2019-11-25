@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '管理者向け: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PST ファイル) をユーザーの Exchange Online のメールボックスに一括でインポートする方法について説明します。 このトピックでは、よくあるご質問と PST インポート プロセスのしくみを説明します。'
-ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085783"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39218842"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Office 365 への組織の PST ファイルや SharePoint データのインポートの概要
 
@@ -96,7 +96,7 @@ ms.locfileid: "37085783"
     
   - セキュリティ/コンプライアンス センターの[保持ポリシー](retention-policies.md)を使用して、メールボックスのコンテンツを保持する期間を制御し、保存期間が終了したらコンテンツを削除する。 
 
-  - [監督ポリシー](supervision-policies.md)を使用してメッセージを検査し、メッセージ基準に準拠しているかどうかを確認して、分類タイプを追加します。
+  - [通信コンプライアンス ポリシー](communication-compliance.md)を使用してメッセージを検査し、メッセージ基準に準拠しているかどうかを確認して、分類タイプを追加します。
     
 - Office 365 へのデータのインポートは、データ損失を防ぐのに役立ちます。 Office 365 にインポートされたメール データは、Exchange Online の高可用性機能を継承します。
     
