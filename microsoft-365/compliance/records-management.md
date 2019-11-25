@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のレコード管理を使用すると、組織の特定の保持スケジュールをファイル計画に適用し、コンテンツの完全なライフサイクルをサポートするために、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 97b5c1981cf2596554571e8b53059aa718aa561c
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3057b5ab061bc5107acbde3c67ecde8a9edaffd7
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440674"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "39233225"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 のレコードの管理
 
@@ -26,13 +26,13 @@ ms.locfileid: "37440674"
 
 レコード管理ソリューションは、次の要素をサポートします。
 
+- **コンテンツをレコードとして分類する**。 エンド ユーザーによって適用される[レコード ラベル](records.md)を発行するか、特定の機密情報、キーワード、コンテンツ種類を含むアイテムに[レコード ラベルを自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
+
 - **ファイル計画を使用して保持計画を移行および管理**し、[ファイル計画マネージャー](file-plan-manager.md)を使用して既存の保持計画を取り込むか、ファイル記述子と階層を展開して新しい計画を構築します。
 
 - **レコード ラベル内で保持と削除のポリシーを規定します**。 データの最終更新日または作成日を含むさまざまな要因に基づき、[保持](retention-policies.md#retaining-content-for-a-specific-period-of-time) および [廃棄](retention-policies.md#deleting-content-thats-older-than-a-specific-age) の期間を定義します。
 
 - [イベント ベースの保持](event-driven-retention.md)を使用して**イベント ベースの保持をトリガーします**。
-
-- **レコードとしてラベルを使用します**。 エンド ユーザーによって適用される[レコード ラベル](labels.md#using-retention-labels-for-records-management)を発行するか、特定の機密情報、キーワード、コンテンツ種類を含むアイテムに[レコード ラベルを自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
 
 - [廃棄確認](disposition-reviews.md)を使用して**廃棄を確認および検証します**。
 
