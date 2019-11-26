@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするインフラストラクチャとセキュリティを構成します。
-ms.openlocfilehash: bc36343d1bdce0f01ff91a5d3cece2b111c22dcb
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: 95b48112928902a046d837e5d02f025149028135
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733478"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929200"
 ---
 # <a name="empower-remote-workers"></a>リモート ワーカーを支援する
 
@@ -72,9 +72,9 @@ ms.locfileid: "37733478"
 
 <a name="poster"></a> このシナリオを 1 ページにまとめた「[リモート ワーカーを支援するポスター](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)」を参照してください。
 
-[![リモート ワーカーを支援するポスター](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![リモート ワーカーを支援するポスター](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 形式でダウンロードして、レター形式、リーガル形式、タブロイド形式 (11 x 17) で印刷することもできます。
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>フェーズ 1: リモート ワーカーに Microsoft 365 の機能を展開する
