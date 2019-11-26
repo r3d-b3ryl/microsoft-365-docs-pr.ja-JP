@@ -12,15 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: 940db3e32c67ee0c457bd499f63a562343f09e2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085197"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39266154"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -106,6 +107,9 @@ DLP ポリシーは、Office 365 全体で機密情報を検出して保護で�
 - コンテンツにラベルが含まれている。 詳細については、以下の「[DLP ポリシーでラベルを条件として使用する](#using-a-label-as-a-condition-in-a-dlp-policy)」セクションを参照してください。
     
 - コンテンツが組織の内または外のユーザーと共有されている。
+
+> [!NOTE]
+> ホストの組織の Active Directory または Azure Active Directory のテナントにゲスト以外のアカウントを持っているユーザーは、組織内のユーザーと見なされます。
     
 #### <a name="types-of-sensitive-information"></a>機密情報の種類
 
@@ -322,7 +326,11 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
     
 保持ラベルの詳細については、「[保持ラベルの概要](labels.md)」を参照してください。
   
-ラベルを作成した後は、DLP ポリシーでそのラベルを条件として使用できます。 たとえば、次のような場合があります。
+ラベルを作成した後は、DLP ポリシーでそのラベルを条件として使用できます。 
+
+![条件としてのラベル](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+たとえば、次のような場合があります。
   
 - **社外秘**というラベルを発行して、組織内のユーザーが社外秘のメールとドキュメントにラベルを手動で適用できるようにした。 DLP ポリシーでこのラベルを条件として使用して、**社外秘**というラベルが付いたコンテンツを組織外のユーザーと共有できないように制限できます。 
     
@@ -332,9 +340,10 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
     
 - **役員リーダー - 機密**というラベルを役員グループの Exchange メールボックスと OneDrive アカウントに発行した。 DLP ポリシーでこのラベルを条件として使用して、コンテンツとユーザーの同じサブセットに保持操作と保護操作の両方を適用できます。 
     
-DLP ルールでラベルを条件として使用して、特定のコンテンツ、場所、ユーザーに保護操作を適用できます。
-  
-![条件としてのラベル](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+DLP ルールでラベルを条件として使用して、特定のコンテンツ、場所、ユーザーに保護操作を適用できます。 
+
+> [!NOTE]
+> 保持ラベルを DLP ポリシーの条件として指定し、Exchange および/または Teams を場所として含めると、次のエラーが表示されます。「メールおよびチーム メッセージのラベル付きコンテンツの保護はサポートされていません。 下のラベルを削除するか、Exchange と Teams の場所指定をオフにしてください。」 これは、Exchange トランスポートがメッセージの送信や配信中にラベルのメタデータを評価しないためです。 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>機密ラベルのサポートを受ける
 

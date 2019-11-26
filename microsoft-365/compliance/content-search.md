@@ -10,18 +10,19 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: e3553ff2e3c8398ac4bc00258e41e8d9607b3639
-ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
+ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37334257"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39266156"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 
@@ -37,7 +38,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
 - Office 365 グループ
     
-コンテンツ検索を実行すると、コンテンツの場所の数と予想される検索結果の数が検索プロファイルに表示されます。検索クエリと一致するアイテムが最も多いコンテンツの場所など、統計情報をすばやく表示することもできます。検索を実行した後、結果をプレビューしたり、ローカルコンピューターにエクスポートしたりすることができます。
+コンテンツ検索を実行すると、コンテンツの場所の数と予想される検索結果の数が検索の統計情報に表示されます。検索クエリと一致するアイテムが最も多いコンテンツの場所など、統計情報をすばやく表示することもできます。検索を実行した後、結果をプレビューしたり、ローカルコンピューターにエクスポートしたりすることができます。
 
 ## <a name="create-a-search"></a>検索を作成する
 
@@ -103,11 +104,10 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
 このコンテンツ検索に再度アクセスするか、**コンテンツ検索**ページにリストされている他のコンテンツ検索にアクセスするには、検索を選択し、**[開く]** をクリックします。 
   
 結果をクリアするか、新しい検索を作成するには、[![追加アイコン](media/O365-MDM-CreatePolicy-AddIcon.gif)] [**新しい検索**] をクリックします。 
-
   
 ## <a name="preview-search-results"></a>検索結果のプレビュー
 
-検索結果のプレビューには、2 つの構成設定があります。新しい検索を実行するか、既存の検索を開いた後、[個々の結果] をクリックして、次のプレビュー設定を表示します。 
+検索結果のプレビューには、2 つの構成設定があります。新しい検索を実行するか、既存の検索を開いた後、**[個々の結果]** をクリックして、次のプレビュー設定を表示します。 
   
 ![検索結果設定のプレビュー](media/83519477-1c85-4442-8886-481f186fd758.png)
   
@@ -133,7 +133,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
 2. [ポップアップ] ページで、[**クエリを開く**] をクリックします。 
     
-3. **[個々の結果]** ドロップダウン リストで、**[検索プロファイル]** をクリックします。
+3. **[個々の結果]** ドロップダウン リストで、**[検索の統計情報]** をクリックします。
     
 4. **[種類]** ドロップダウン リストで、表示する検索統計に応じて、次のいずれかのオプションをクリックします。 
     
@@ -244,13 +244,12 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
     
 - チームまたは Office 365 グループのプロパティを表示するには、Exchange Online で **set-unifiedgroup** コマンドレットを実行します。 これは、チームまたはグループに関連付けられているサイトの URL を取得するのに適した方法です。 たとえば、次のコマンドは、上級管理職チームという名前の Office 365 グループの選択されたプロパティを表示します。 
     
-  ```
+  ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
   PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
   SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
-  
   ```
 
     > [!NOTE]
@@ -260,7 +259,7 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
     
 - チームまたは Office 365 グループのメンバーの一覧を取得するには、Microsoft 365 管理センターの **[ホーム] \> [グループ]** ページでプロパティを表示できます。 または、Exchange Online PowerShell で次のコマンドを実行できます。 
     
-  ```
+  ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
@@ -387,19 +386,19 @@ Exchange Online ライセンス (または Office 365 ライセンス全体) が
 
 **北アメリカ**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-NAM" -Users ediscovery-nam@contoso.com -Region NAM -Action ALL
 ```
 
 **ヨーロッパ**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-EUR" -Users ediscovery-eur@contoso.com -Region EUR -Action ALL
 ```
 
 **アジア太平洋**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@contoso.com -Region APC -Action ALL
 ```
 
