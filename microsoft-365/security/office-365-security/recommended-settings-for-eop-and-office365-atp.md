@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204259"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257552"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -164,24 +164,3 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |検出時に添付ファイルをリダイレクトする|有効|有効|添付ファイルがマルウェアであるかどうかを判断する方法を把握しているセキュリティ管理者の電子メールアドレスにリダイレクトする|
 |添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合の、ATP の安全な添付ファイル応答|有効|有効||
 
-## <a name="miscellaneous-settings"></a>その他の設定
-
-これらの設定は、上記の特定のカテゴリに必ずしも適合しない機能の範囲をカバーしています。 一部の設定は、セキュリティ & コンプライアンスセンターの外部にあります。
-
-セキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|[スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|はい|はい||
-|[DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)|はい|はい||
-|[DMARC を使用して Office 365 で電子メールを検証する](use-dmarc-to-validate-email.md)|はい|はい|Action = [標準] の場合は [検疫] を、厳密には action = reject を使用します。|
-|レポートメッセージのアドオンを展開して、疑わしいメールのエンドユーザーのレポートを向上させる|はい|はい||
-|マルウェアおよびスパムレポートをスケジュールする|はい|はい||
-|外部ドメインへの自動転送を許可または監視しない|はい|はい||
-|統合監査を有効にする必要があります。|はい|はい||
-|メールボックスへの IMAP 接続|無効|無効||
-|メールボックスへの POP 接続|無効|無効||
-|メールボックスへの SMTP 認証済み送信|無効|無効||
-|メールボックスへの EWS 接続|無効|無効||
-|PowerShell 接続|無効|無効||
-|スプーフィングインテリジェンスを使用して、可能な場合には送信者をホワイトリストする|はい|はい||
-|ディレクトリベースのエッジブロック (DBEB)|有効|有効|ドメインの種類 = 権限あり|
-|[すべての管理者アカウントに対して多要素認証をセットアップする](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|有効|有効||
