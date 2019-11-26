@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 60436db997d75d92e7d17fc27f66eb3944b419d8
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085547"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256904"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>高度な電子情報開示のレビューセットのデータを分析する
 
-収集されたドキュメントの数が多い場合は、それらをすべて確認するのは非常に困難です。 Advanced eDiscovery には、ドキュメントを分析して、情報が失われずにレビューされるドキュメントのボリュームを減らし、一貫性のある方法でドキュメントを整理するのに役立つさまざまなツールが用意されています。 これらの機能の詳細については、以下を参照してください。
+収集されたドキュメントの数が多い場合は、それらをすべて確認するのは困難です。 Advanced eDiscovery には、ドキュメントを分析して、情報が失われずにレビューされるドキュメントのボリュームを減らし、一貫性のある方法でドキュメントを整理するのに役立つさまざまなツールが用意されています。 これらの機能の詳細については、以下を参照してください。
 
 - [準重複の検出](near-duplicates.md)
 
@@ -43,7 +43,7 @@ ms.locfileid: "37085547"
 
 ケースの [**ジョブ**] タブで、分析の進行状況を確認できます。
 
- 分析が完了したら、analytics レポートを表示し、分析の出力に対してレビューセット内でクエリを実行し ([レビューセット内のクエリ](review-set-search.md)を参照)、特定のドキュメントの関連ドキュメントを表示できます (「[レビューセット内のデータ](reviewing-data-in-review-set.md)のレビュー」を参照)。
+ 分析が完了したら、analytics レポートを表示し、分析の出力に対してレビューセット内のクエリを実行し ([レビューセット内のクエリ](review-set-search.md)を参照)、特定のドキュメントの関連ドキュメントを表示できます (「[レビューセット内のデータ](reviewing-data-in-review-set.md)のレビュー」を参照してください)。
 
 ## <a name="analytics-report"></a>分析レポート
 
@@ -63,4 +63,4 @@ ms.locfileid: "37085547"
 
 - **電子**メール-inclusives の電子メールメッセージの数、包括的なコピー、包括的な minuses、または上記のいずれも含まれません。
 
-- **添付ファイル**: レビューセット内の別の電子メール添付ファイルの一意または重複した電子メール添付ファイルの数。
+- **添付ファイル**: レビューセット内の別の電子メール添付ファイルの一意の、または重複した電子メール添付ファイルの数。

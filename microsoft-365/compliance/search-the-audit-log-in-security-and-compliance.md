@@ -10,17 +10,18 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 9885463e61c36713cbd7be82ac1ef2caaee70e7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085005"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39233520"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -86,13 +87,13 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 
 - 自社の Office 365 で監査ログの検索を無効にする場合は、Exchange Online 組織に接続されたリモート PowerShell で次のコマンドを実行できます。
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     監査検索を再度有効にするには、Exchange Online PowerShell で次のコマンドを実行できます。
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -213,6 +214,9 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 
 - [**IP アドレス**]: アクティビティがログに記録されたときに使用されたデバイスの IP アドレス。 IP アドレスは、IPv4 または IPv6 アドレスの形式で表示されます。
 
+   > [!NOTE]
+  > 一部のサービスでは、このフィールドに表示される値は、ユーザーに代わってサービスを呼び出す信頼できるアプリケーション (Office on the web アプリなど) の IP アドレスであり、アクティビティを実行したユーザーが使用するデバイスの IP アドレスではない場合があります。 また、Azure Active Directory 関連のイベントの管理者のアクティビティ (またはシステムアカウントによって実行されるアクティビティ) の場合、IP アドレスはログに記録されず、このフィールドに表示される値は `null` になります。
+
 - [**ユーザー**]: イベントをトリガーしたアクションを実行したユーザー (またはサービス アカウント)。
 
 - [**アクティビティ**]: ユーザーが実行したアクティビティ。 この値は [**アクティビティ**] ドロップダウン リストで選択したアクティビティに対応します。 Exchange 管理者監査ログのイベントの場合、この列の値は、Exchange コマンドレットになります。
@@ -296,8 +300,9 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |[ユーザー管理アクティビティ](#user-administration-activities)|[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities)|[アプリケーション管理アクティビティ](#application-administration-activities)|
 |[役割管理アクティビティ](#role-administration-activities)|[ディレクトリ管理アクティビティ](#directory-administration-activities)|[電子情報開示アクティビティ](#ediscovery-activities)|
 |[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams アクティビティ](#microsoft-teams-activities)|[Yammer アクティビティ](#yammer-activities)|[Microsoft Flow アクティビティ](#microsoft-flow-activities)|
-|[Microsoft PowerApps アクティビティ](#microsoft-powerapps)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)|
+|[Microsoft Teams アクティビティ](#microsoft-teams-activities)|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Yammer アクティビティ](#yammer-activities)|
+|[Microsoft Flow アクティビティ](#microsoft-flow-activities)|[Microsoft PowerApps アクティビティ](#microsoft-powerapps)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
+[Exchange 管理アクティビティ](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
@@ -439,7 +444,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
-|サイト コレクション管理者の追加|SiteCollectionAdminAdded|サイト コレクション管理者または所有者が、サイトのサイト コレクション管理者としてユーザーを追加します。 サイト コレクション管理者には、サイト コレクションとすべてのサブサイトのフル コントロール権限があります。 このアクティビティは、SharePoint 管理センターでユーザー プロファイルを編集するか [Microsoft 365 管理センターを使用](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)することにより、管理者がユーザーの OneDrive アカウントへのアクセス権限を自分自身に付与する際にも記録されます。|
+|サイト コレクション管理者の追加|SiteCollectionAdminAdded|サイト コレクション管理者または所有者が、サイトのサイト コレクション管理者としてユーザーを追加します。 サイト コレクション管理者には、サイト コレクションとすべてのサブサイトのフル コントロール権限があります。 このアクティビティは、SharePoint 管理センターでユーザー プロファイルを編集するか [Microsoft 365 管理センターを使用](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)することにより、管理者がユーザーの OneDrive アカウントへのアクセス権限を自分自身に付与する際にも記録されます。|
 |SharePoint グループへのユーザーまたはグループの追加|AddedToGroup|ユーザーが SharePoint グループにメンバーまたはゲストを追加しました。これは、意図したアクション、または別のアクティビティ (共有イベントなど) の結果の可能性があります。|
 |アクセス許可レベルの継承の停止|PermissionLevelsInheritanceBroken|アイテムが変更されたので、アクセス許可レベルが親から継承されなくなりました。|
 |共有の継承の停止|SharingInheritanceBroken|アイテムが変更されたので、共有アクセス許可が親から継承されなくなりました。|
@@ -680,7 +685,7 @@ Power BI の監査ログは、既定で有効になりません。Office 365 監
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics アクティビティ
 
-Workplace Analytics では、Office 365 組織において各グループが共同作業を行う方法に関する洞察が得られます。次の表に、Microsoft Workplace Analytics での管理者役割とアナリスト役割を割り当てられたユーザーによって実行されるアクティビティを一覧表示しています。アナリスト役割を割り当てられたユーザーはすべてのサービス機能への完全なアクセス権を持ち、この製品を使用して分析を行うことができます。管理者役割を割り当てられたユーザーはプライバシーの設定とシステムの既定値を構成し、Workplace Analytics で組織データを準備、アップロード、検証することができます。詳しくは、「[Workplace Analytics](https://docs.microsoft.com/ja-JP/workplace-analytics/index-orig)」をご覧ください。
+Workplace Analytics では、Office 365 組織において各グループが共同作業を行う方法に関する洞察が得られます。次の表に、Microsoft Workplace Analytics での管理者役割とアナリスト役割を割り当てられたユーザーによって実行されるアクティビティを一覧表示しています。アナリスト役割を割り当てられたユーザーはすべてのサービス機能への完全なアクセス権を持ち、この製品を使用して分析を行うことができます。管理者役割を割り当てられたユーザーはプライバシーの設定とシステムの既定値を構成し、Workplace Analytics で組織データを準備、アップロード、検証することができます。詳しくは、「[Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig)」をご覧ください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
@@ -724,8 +729,16 @@ Workplace Analytics では、Office 365 組織において各グループが共�
 |タブの削除|TabRemoved|ユーザーがチャネルからタブを削除しました。|
 |コネクタの更新|ConnectorUpdated|ユーザーがチャネルのコネクタを変更しました。|
 |タブの更新|TabUpdated|ユーザーがチャネルのタブを変更しました。|
-|Teams へのユーザーのサインイン|TeamsSessionStarted|ユーザーが Microsoft Teams クライアントにサインインしました。|
+|Teams へのユーザーのサインイン|TeamsSessionStarted|ユーザーが Microsoft Teams クライアントにサインインしました。 このイベントは、トークン更新アクティビティをキャプチャしません。|
 ||||
+
+### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 医療活動アクティビティ
+
+組織で Microsoft Teams の [患者用アプリケーション](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) を使用している場合は、患者アプリの使用に関連するアクティビティの監査ログを検索できます。 患者アプリをサポートするように使用環境が構成されている場合、これらのアクティビティの追加アクティビティグループは、**アクティビティ** 選択リストに表示されます。
+
+![アクティビティ選択リスト内の Microsoft Teams 医療活動 アクティビティ](media/TeamsHealthcareAuditActivities.png)
+
+患者アプリのアクティビティの説明については、[患者アプリの監査ログ](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)をご覧ください。
 
 ### <a name="yammer-activities"></a>Yammer アクティビティ
 
@@ -758,7 +771,7 @@ Workplace Analytics では、Office 365 組織において各グループが共�
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
-PowerApps では、アプリ関連のアクティビティの監査ログを検索できます。 これらのアクティビティには、アプリの作成、起動、公開が含まれます。 アプリへのアクセス許可の割り当ても監査されます。 PowerApps のすべてのアクティビティの説明については、「[Activity logging for PowerApps のアクティビティのログ](https://docs.microsoft.com/ja-JP/power-platform/admin/logging-powerapps#what-events-are-audited)」を参照してください。
+PowerApps では、アプリ関連のアクティビティの監査ログを検索できます。 これらのアクティビティには、アプリの作成、起動、公開が含まれます。 アプリへのアクセス許可の割り当ても監査されます。 PowerApps のすべてのアクティビティの説明については、「[Activity logging for PowerApps のアクティビティのログ](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)」を参照してください。
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream アクティビティ
 
