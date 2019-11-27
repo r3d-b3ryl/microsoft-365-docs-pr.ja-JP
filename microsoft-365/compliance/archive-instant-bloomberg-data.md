@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、インスタント Bloomberg チャットツールから Office 365 にデータをインポートするためのネイティブコネクタをセットアップできます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686690"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615607"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Office 365 でインスタント Bloomberg データをアーカイブするためのコネクタを設定する
 
@@ -29,7 +29,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのネイ
 
 ![インスタント Bloomberg のインポートとアーカイブのプロセス](media/InstantBloombergDataArchiving.png)
 
-1. 組織は Bloomberg を使用して、Bloomberg SFTP サイトをセットアップします。 Bloomberg を使用して、チャットメッセージを Bloomberg SFTP サイトにコピーするためのインスタント Bloomberg を構成することもできます。
+1. 組織は Bloomberg を使用して、Bloomberg SFTP サイトをセットアップします。 また、Bloomberg を使用して、チャットメッセージを Bloomberg SFTP サイトにコピーするようにインスタント Bloomberg を構成します。
 
 2. 24時間ごとに、インスタント Bloomberg からのチャットメッセージが Bloomberg SFTP サイトにコピーされます。
     
@@ -39,7 +39,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのネイ
     
     a. **Office 365 ユーザーアカウントに対応する CorporateEmailAddress プロパティに値が設定されているアイテム:** コネクタが*CorporateEmailAddress*プロパティの電子メールアドレスを office 365 の特定のユーザーアカウントに関連付けることができる場合、そのアイテムはユーザーの office 365 メールボックス内の [受信トレイ] フォルダーにコピーされます。
     
-    b. **Office 365 ユーザーアカウントに対応していない CorporateEmailAddress プロパティの値を持つアイテム:** コネクタが*CorporateEmailAddress*プロパティの電子メールアドレスを office 365 の特定のユーザーアカウントに関連付けることができない場合、そのアイテムは office 365 の別の "キャッチオール" メールボックスの受信トレイフォルダーにコピーされます。
+    b. **Office 365 ユーザーアカウントに対応していない CorporateEmailAddress プロパティの値を持つアイテム:** コネクタが*CorporateEmailAddress*プロパティの電子メールアドレスを office 365 の特定のユーザーアカウントに関連付けることができない場合、そのアイテムは office 365 の代替の "キャッチオール" メールボックスの受信トレイフォルダーにコピーされます。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -114,7 +114,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのネイ
 
     - **SFTP URL:** Bloomberg SFTP サイトの URL (たとえば、sftp.bloomberg.com)。
 
-    - **SFTP ポート:** Bloomberg SFTP サイトのポート番号。 コネクタはこれを使用して、SFTP サイトに接続します。
+    - **SFTP ポート:** Bloomberg SFTP サイトのポート番号。 コネクタはこのポートを使用して、SFTP サイトに接続します。
 
 5. [**代替メールボックス**] ページで、組織内のユーザーメールボックスに関連付けられていないインスタント Bloomberg からのチャットメッセージを格納するために使用されるメールボックスの電子メールアドレスを入力します。
 

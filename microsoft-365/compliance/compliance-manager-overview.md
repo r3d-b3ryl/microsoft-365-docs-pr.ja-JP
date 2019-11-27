@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686668"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615617"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
@@ -39,7 +39,7 @@ ms.locfileid: "38686668"
 
 ## <a name="compliance-manager-relationships"></a>コンプライアンスマネージャーの関係
 
-コンプライアンスマネージャーは、コンプライアンス管理アクティビティを支援するために、いくつかのコンポーネントを使用します。 これらのコンポーネントは連携して、監査者のための完全な管理ワークフローと煩わしさのないコンプライアンスレポートを提供します。
+コンプライアンスマネージャーは、コンプライアンス管理アクティビティを支援するためにいくつかのコンポーネントを使用します。 これらのコンポーネントは連携して、監査者のための完全な管理ワークフローと煩わしさのないコンプライアンスレポートを提供します。
 
 次の図は、コンプライアンスマネージャーの主要なコンポーネント間の関係を示しています。
 

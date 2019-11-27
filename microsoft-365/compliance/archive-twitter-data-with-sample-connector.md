@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Office 365 に Twitter データをインポートするためのネイティブコネクタをセットアップできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: cf738f67778dbe435e60098b9fc6d753583858a8
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 86362193b0c64afa182c2f49ff27bd7e5f27935c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686763"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615577"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>サンプルコネクタを使用して Office 365 で Twitter データをアーカイブする (プレビュー)
 
@@ -31,13 +31,13 @@ Twitter データをインポートすると、メールボックスに格納さ
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Twitter 用のコネクタを設定するための前提条件
 
-セキュリティ & コンプライアンスセンターでサンプルコネクタを設定および構成するには、次の前提条件を満たしている必要があります。これにより、組織の Twitter アカウントからデータをインポートしてアーカイブすることができます。 
+セキュリティ & コンプライアンスセンターでサンプルコネクタを設定および構成するには、次の前提条件を満たしている必要があります。組織の Twitter アカウントからデータをインポートおよびアーカイブします。 
 
 - 組織のために Twitter アカウントが必要です。コネクタを設定するときに、このアカウントにサインインする必要があります。
 
 - 組織が有効な Azure サブスクリプションを持っている必要があります。 既存の Azure サブスクリプションがない場合は、次のオプションのいずれかにサインアップできます。
 
-    - [1年間の無料の Azure サブスクリプションにサインアップする](https://azure.microsoft.com/free) 
+    - [無料の1年間の Azure サブスクリプションにサインアップする](https://azure.microsoft.com/free) 
 
     - [Azure へのご購入のサブスクリプションへのサインアップ](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
@@ -48,12 +48,12 @@ Twitter データをインポートすると、メールボックスに格納さ
 
 - セキュリティ & コンプライアンス (手順 7) でカスタムコネクタをセットアップするユーザーに、Exchange Online のメールボックスのインポートのエクスポート役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「[役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)」または「[役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)」のセクションを参照してください。
 
-## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>手順 1: Github から事前に作成されたコネクタアプリパッケージをダウンロードする
+## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>手順 1: GitHub から事前に作成されたコネクタアプリパッケージをダウンロードする
 
 最初の手順として、twitter API を使用して twitter アカウントに接続し、データを抽出して Office 365 にインポートできるようにする Twitter サンプルコネクタアプリのソースコードをダウンロードします。
 
 1. [この GitHub サイト](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases)に移動します。 
-2. 最新のリリースで、 **SampleConnector**ファイルをクリックします。
+2. 最新リリースの下で、 **SampleConnector**ファイルを選択します。
 3. ZIP ファイルをローカルコンピューターの場所に保存します。 この zip ファイルを手順4で Azure にアップロードします。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>手順 2: Azure Active Directory でアプリを作成する
@@ -69,13 +69,13 @@ Twitter データをインポートすると、メールボックスに格納さ
 - AAD アプリケーション Uri
 - テナント Id
 
-## <a name="step-3-create-an-azure-storage-account"></a>手順 3: Azure storage アカウントを作成する
+## <a name="step-3-create-an-azure-storage-account"></a>手順 3: Azure Storage アカウントを作成する
 
-組織用に展開する Twitter コネクタは、Twitter から、この手順で作成した Azure ストレージの場所にアイテムをアップロードします。 セキュリティ & コンプライアンスセンター (手順 7) でカスタムコネクタを作成すると、Office 365 インポートサービスによって、Azure ストレージの場所から Office 365 のメールボックスに Twitter データがコピーされます。 前述の「[前提条件](#prerequisites-for-setting-up-a-connector-for-twitter)」セクションで説明したように、azure storage アカウントを作成するには、有効な azure サブスクリプションを用意する必要があります。
+組織用に展開する Twitter コネクタは、Twitter から、この手順で作成した Azure ストレージの場所にアイテムをアップロードします。 セキュリティ & コンプライアンスセンター (手順 7) でカスタムコネクタを作成すると、Office 365 インポートサービスによって、Azure ストレージの場所から Office 365 のメールボックスに Twitter データがコピーされます。 前述の「[前提条件](#prerequisites-for-setting-up-a-connector-for-twitter)」セクションで説明したように、azure Storage アカウントを作成するには、有効な azure サブスクリプションを用意する必要があります。
 
 詳細な手順については、「[手順 3: Azure ストレージアカウントを作成する](deploy-twitter-connector.md#step-3-create-an-azure-storage-account)」を参照してください。
 
-この手順が完了すると (手順に従って)、生成された接続文字列 Uri が保存されます。 この文字列は、手順4で Azure で web app リソースを作成するときに使用します。
+この手順が完了したら (手順に従って)、生成された接続文字列 Uri を保存します。 この文字列は、手順4で Azure で web app リソースを作成するときに使用します。
 
 ## <a name="step-4-create-a-web-app-resource-in-azure"></a>手順 4: Azure で web app リソースを作成する
 
@@ -86,12 +86,12 @@ Twitter データをインポートすると、メールボックスに格納さ
 この手順が完了すると (手順に従って)、次の情報が提供されます (前の手順を完了した後、テキストファイルにコピーしたもの) web app リソースを作成します。
 
 - APISecretKey –この手順の完了時にこのシークレットを作成します。手順7で使用します。
-- StorageAccountConnectionString –手順3で Azure storage アカウントを作成した後にコピーした接続文字列 Uri。
+- StorageAccountConnectionString –手順3で Azure Storage アカウントを作成した後にコピーした接続文字列 Uri。
 - tenantId –手順2で、Azure Active Directory で Twitter connector アプリを作成した後にコピーした Office 365 組織のテナント ID。
 
 また、この手順で SampleConnector ファイル (手順1でダウンロードした) をアップロードして、Twitter connector アプリのソースコードを展開します。
 
-この手順を完了したら、必ず Azure app service の URL (たとえば、 `https://twitterconnector.azurewebsites.net`) をコピーしてください。 手順5、手順6、手順7を完了するには、これを使用する必要があります。
+この手順を完了したら、必ず Azure app service の URL (たとえば、 `https://twitterconnector.azurewebsites.net`) をコピーしてください。 手順5、手順6、手順7を完了するには、この URL を使用する必要があります。
 
 ## <a name="step-5-create-developer-app-on-twitter"></a>手順 5: Twitter で開発者用アプリを作成する
 
@@ -124,7 +124,7 @@ Twitter データをインポートすると、メールボックスに格納さ
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>手順 7: セキュリティ & コンプライアンスセンターでカスタムコネクタをセットアップする
 
-最後の手順として、セキュリティ & コンプライアンスセンターでカスタムコネクタを設定して、組織の Twitter アカウントから Office 365 の指定したメールボックスにデータをインポートします。 この手順を正常に完了すると、Office 365 インポートサービスは、Twitter から Office 365 にデータをインポートするプロセスを開始します。 
+最後の手順として、セキュリティ & コンプライアンスセンターでカスタムコネクタを設定して、組織の Twitter アカウントから Office 365 の指定したメールボックスにデータをインポートします。 この手順が正常に完了すると、Office 365 インポートサービスは Twitter から Office 365 へのデータのインポートを開始します。 
 
 詳細な手順については、「[手順 7: セキュリティ/コンプライアンスセンターでカスタムコネクタを設定する](deploy-twitter-connector.md#step-7-set-up-a-custom-connector-in-the-security-and-compliance-center)」を参照してください。 
 

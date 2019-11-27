@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ネイティブコネクタをセットアップして、Facebook のビジネスページ、Twitter、LinkedIn 会社のページ、インスタント Bloomberg などのデータソースからサードパーティのデータをインポートできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 9479734fd1fcc65b4db7fd7e9a1ffc0f2c5fda59
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686764"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615597"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>サンプルコネクタを使用して Office 365 で Facebook データをアーカイブする (プレビュー)
 
@@ -31,7 +31,7 @@ Facebook データがインポートされたら、訴訟ホールド、コン�
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Facebook ビジネスページ用のコネクタを設定するための前提条件
 
-セキュリティ & コンプライアンスセンターでサンプルコネクタを設定および構成するには、次の前提条件を満たしている必要があります。これにより、組織の Facebook ビジネスページからデータをインポートしてアーカイブすることができます。 
+セキュリティ & コンプライアンスセンターでサンプルコネクタを設定および構成するには、次の前提条件を満たしている必要があります。組織の Facebook ビジネスページからデータをインポートおよびアーカイブします。 
 
 - 組織のビジネスページ用の Facebook アカウントが必要です (コネクタを設定するときに、このアカウントにサインインする必要があります)。 現時点では、Facebook のビジネスページのデータのみをアーカイブできます。個別の Facebook プロファイルからデータをアーカイブすることはできません。
 
@@ -48,13 +48,13 @@ Facebook データがインポートされたら、訴訟ホールド、コン�
 
 - セキュリティ & コンプライアンス (手順 7) でカスタムコネクタをセットアップするユーザーに、Exchange Online のメールボックスのインポートのエクスポート役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「[役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)」または「[役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)」のセクションを参照してください。
 
-## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>手順 1: Github から事前に作成されたコネクタアプリパッケージをダウンロードする
+## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>手順 1: GitHub から事前に作成されたコネクタアプリパッケージをダウンロードする
 
 最初の手順として、facebook API を使用して facebook のビジネスページに接続し、Facebook データを抽出して Office 365 にインポートできるようにする、事前に作成された Facebook コネクタアプリのソースコードをダウンロードします。
 
 1. [この GitHub サイト](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases)に移動します。 
-2. 最新のリリースで、 **SampleConnector**ファイルをクリックします。
-3. ZIP ファイルをローカルコンピューターの場所に保存します。 この zip ファイルを手順4で Azure にアップロードします。
+2. 最新リリースの下で、 **SampleConnector**ファイルを選択します。
+3. ZIP ファイルをローカルコンピューターの場所に保存します。 この ZIP ファイルを手順4で Azure にアップロードします。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>手順 2: Azure Active Directory でアプリを作成する
 
@@ -73,7 +73,7 @@ Facebook データがインポートされたら、訴訟ホールド、コン�
 
 組織用に展開する Facebook コネクタは、Facebook ビジネスページから、この手順で作成した Azure ストレージの場所にアイテムをアップロードします。 セキュリティ & コンプライアンスセンター (手順 7) でカスタムコネクタを作成した後、Office 365 インポートサービスは、Azure ストレージの場所から Office 365 のメールボックスに Facebook データをコピーします。 前述の「[前提条件](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages)」セクションで説明したように、azure Storage アカウントを作成するには、有効な azure サブスクリプションを用意する必要があります。
 
-詳細な手順については、「 [Azure storage アカウントを作成する](deploy-facebook-connector.md#step-3-create-an-azure-storage-account)」を参照してください。
+詳細な手順については、「 [Azure Storage アカウントを作成する](deploy-facebook-connector.md#step-3-create-an-azure-storage-account)」を参照してください。
 
 この手順が完了したら (手順に従って)、生成された接続文字列 Uri を保存します。 この文字列は、手順4で Azure で web app リソースを作成するときに使用します。
 
@@ -83,15 +83,15 @@ Facebook データがインポートされたら、訴訟ホールド、コン�
 
 詳細な手順については、「 [Create a new web app resource In Azure](deploy-facebook-connector.md#step-4-create-a-new-web-app-resource-in-azure)」を参照してください。
 
-この手順が完了すると (手順に従って)、次の情報が提供されます (前の手順を完了した後、テキストファイルにコピーしたもの) web app リソースを作成します。
+この手順を実行するには、手順に従って次の情報を入力します (前の手順を完了した後、テキストファイルにコピーしたもの) web app リソースを作成します。
 
-- APISecretKey: この手順の完了時にこのシークレットを作成します。手順7で使用されます。
-- StorageAccountConnectionString: 手順3で Azure storage アカウントを作成した後にコピーした接続文字列 Uri。
+- APISecretKey: この手順の完了時にこのシークレットを作成します。 手順7で使用します。
+- StorageAccountConnectionString: 手順3で Azure Storage アカウントを作成した後にコピーした接続文字列 Uri。
 - tenantId: 手順2で Azure Active Directory で Facebook connector アプリを作成した後にコピーした Office 365 組織のテナント ID。
 
 さらに、この手順の手順1でダウンロードした SampleConnector ファイルをアップロードして、Facebook connector アプリのソースコードを展開します。
 
-この手順を完了したら、app Service の URL (例:) https://fbconnector.azurewebsites.net)をコピーしてください。 手順5、手順6、手順7を完了するには、これを使用する必要があります。
+この手順を完了したら、app Service の URL (例:) https://fbconnector.azurewebsites.net)をコピーしてください。 手順5、手順6、手順7を完了するには、この URL を使用する必要があります。
 
 ## <a name="step-5-register-the-web-app-on-facebook"></a>手順 5: Facebook で web アプリを登録する
 
@@ -122,7 +122,7 @@ Facebook データがインポートされたら、訴訟ホールド、コン�
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>手順 7: セキュリティ & コンプライアンスセンターでカスタムコネクタをセットアップする
 
-最後の手順として、セキュリティ & コンプライアンスセンターでカスタムコネクタを設定して、Facebook ビジネスページから Office 365 の指定したメールボックスにデータをインポートします。 この手順を完了すると、Office 365 インポートサービスは、Facebook のビジネスページから Office 365 にデータをインポートするプロセスを開始します。 
+最後の手順として、セキュリティ & コンプライアンスセンターでカスタムコネクタを設定して、Facebook ビジネスページから Office 365 の指定したメールボックスにデータをインポートします。 この手順を完了すると、Office 365 インポートサービスは、Facebook のビジネスページから Office 365 へのデータのインポートを開始します。 
 
 詳細な手順については、「[セキュリティ & コンプライアンスセンターでカスタムコネクタを設定する](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center)」を参照してください。 
 
