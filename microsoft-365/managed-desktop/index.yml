@@ -23,27 +23,27 @@ sections:
           - href: intro/index.md
             html: <p>意思決定者向けの Microsoft マネージドデスクトップの概要--それがどのように機能するか、どのように役立つか</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
+              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
             title: Microsoft マネージド デスクトップとは
           - href: service-description/index.md
             html: <p>Microsoft マネージドデスクトップのすべての部分の詳細な説明</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
             title: サービスの説明
           - href: get-ready/index.md
             html: <p>環境と組織でサービスを使用できるようにするためのすべての手順</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
             title: 準備する
           - href: get-started/index.md
             html: <p>デバイスのセットアップやアプリの展開など、Microsoft マネージドデスクトップを使用して組織をオンボードで利用する</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
             title: 作業の開始
           - href: working-with-managed-desktop/index.md
             html: <p>サービスを使用した日常的な操作について</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
+              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
             title: Microsoft マネージド デスクトップの使用
   - title: 新しい記事とブログ投稿
     items:
@@ -54,15 +54,19 @@ sections:
         className: cardsM
         columns: 2
         items:
-          - href: 'https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/'
-            title: 発行モダンデスクトップを提供するための顧客およびパートナーとの共同作業
+          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
+            title: ロードMicrosoft マネージドデスクトップの完全なロードマップ
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
-          - href: 'https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html'
-            title: 'アーティクルMicrosoft マネージドデスクトップ: Microsoft によって管理されているすべての Windows 10 デバイス'
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
+            title: '英語研究: 管理されたデスクトップサービスの需要が増加します。'
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
+            title: '[E book]モダンワークプレースを使用して会社を成功する'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
   - title: ビデオ
     items:
       - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]'
+        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
