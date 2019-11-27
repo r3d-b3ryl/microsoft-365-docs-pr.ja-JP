@@ -1,7 +1,7 @@
 ---
 title: イベント ベースの保持の概要
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、特定の種類のイベントが発生したときの保持期間を設定できます。イベントによって保持期間の開始がトリガーされ、その種類のイベントに保持ラベルが適用されているすべてのコンテンツに、ラベルの保持アクションが適用されます。イベント ベースの保持は、通常、記録管理プロセスの一部として使用されます。
-ms.openlocfilehash: 1f258296017734c80cb3719eb0b830593f69b220
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085854"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "39268560"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -42,7 +42,7 @@ ms.locfileid: "37085854"
 - イベント ベースのラベルは通常、保存期間の終了時に廃棄レビューをトリガーするので、レコード管理者は手動でコンテンツを確認して廃棄できます。詳細については、「[廃棄レビューの概要](disposition-reviews.md)」を参照してください。
     
 イベント ベースのラベルには、Office 365 のラベルと同じ機能があります。詳細については、「[ラベルの概要](labels.md)」を参照してください。
-    
+
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>イベントの種類、ラベル、イベント、アセット ID の関係を理解する
 
 イベント ベースの保持を活用するには、下の図に示すように、イベントの種類、ラベル、イベント、アセット ID の関係を理解することが重要です。図の下には説明文も記載しています。
@@ -75,7 +75,10 @@ ms.locfileid: "37085854"
   
 ![イベント ベースの保持をセットアップするワークフローの図](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
-### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保存期間がイベント ベースのラベルを作成する
+> [!TIP]
+> SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、「[保持ラベルを使用した SharePoint ドキュメントのライフサイクルの管理](auto-apply-retention-labels-scenario.md)」を参照してください。
+
+### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保持期間がイベント ベースのラベルを作成する
 
 Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ&amp;コンプライアンス センターの左側のナビゲーションで、**[分類]**  >  **[保持ラベル]**  >  **[ラベル]** タブ > **[ラベルの作成]** を選択します。
   
@@ -103,7 +106,7 @@ Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリ
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>手順 3: ラベルの発行または自動適用
 
-他のラベルと同じように、イベント ベースのラベルを発行または自動適用する必要があります。したがって、このラベルはコンテンツに手動または自動で適用されます。これは **[分類]**  >  **[保持ラベル]** ページで実行できます。
+他のラベルと同じように、イベント ベースのラベルを発行または自動適用する必要があります。したがって、このラベルはコンテンツに手動または自動で適用されます。 この操作は、[**分類** > **保持ラベル**] ページで実行できます。
   
 ![保持ラベルの発行または自動適用のオプション](media/options-to-publish-auto-apply-retention-label.png)
 
@@ -123,9 +126,7 @@ Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリ
   
 ### <a name="step-5-create-an-event"></a>手順 5: イベントを作成する
 
-製品の使用を終えるなど、イベントの種類の特定のインスタンスが発生するときは、セキュリティ&amp;コンプライアンス センターの [イベント] ページに移動し、イベントを作成します。イベントを作成して手動でトリガーする必要があります。
-  
-![セキュリティ/コンプライアンス センターの [イベント] ページ](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+製品の使用を終えるなど、イベントの種類の特定のインスタンスが発生するときは、セキュリティ &amp; コンプライアンス センターの **[レコード管理]** > **[イベント]** ページに移動し、イベントを作成します。イベントを作成して手動でトリガーする必要があります。
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>手順 6: 手順 2 でのラベルを使用したイベントの種類と同じものを選択する
 

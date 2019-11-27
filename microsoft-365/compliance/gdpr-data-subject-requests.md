@@ -1,7 +1,7 @@
 ---
-title: GDPR のためのデータ サブジェクト要求
+title: GDPR および CCPA のためのデータ対象要求
 description: ''
-keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
+keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,21 +9,25 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: dc4352ac14f42a227f1572b0c7f1442aa4dec838
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078907"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39268563"
 ---
-# <a name="data-subject-requests-and-the-gdpr"></a>データ主体の要求と GDPR
+# <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>データ対象要求と GDPR および CCPA
 
-一般データ保護規則 (GDPR) では、欧州連合 (EU) 内の人々に商品やサービスを提供する、または EU 居住者向けのデータの収集と分析を実行する会社に対して、新しい規則を導入します。GDPR は、個人やその企業がどの場所にあるかに関係なく適用されます。 詳細については、「[GDPR 概要トピック](gdpr.md)」を参照してください。 <br><br>
+一般データ保護規則 (GDPR) では、欧州連合 (EU) 内の人々に商品やサービスを提供する、または EU 居住者向けのデータの収集と分析を実行する会社に対して、新しい規則を導入します。GDPR は、個人やその企業がどの場所にあるかに関係なく適用されます。 詳細については、「[GDPR 概要トピック](gdpr.md)」を参照してください。
+
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA は、特定の開示、行使権を選択する際の差別に対する保護、「販売」に分類される特定のデータ転送に対する「オプトアウト/ オプトイン」要件も規定しています。  <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
 
-このドキュメントは、Microsoft の製品とサービスの使用における、GDPR に基づくデータ主体の要求 (DSR) の完了に関する情報を提供します。
+このドキュメントは、Microsoft の製品とサービスの使用における、GDPR および CCPA に基づくデータ主体の要求 (DSR) の完了に関する情報を提供します。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -39,12 +43,14 @@ ms.locfileid: "35078907"
 
 - *データ コントローラー (コントローラー)*: 法人、公的機関、団体、その他の組織。単独または他者と協力して、個人データの処理の目的と方法を決定します。  
 - *個人データ*と*データ主体*: 特定されたまたは特定可能な自然人 (データ主体) に関連するあらゆる情報。特定可能な自然人とは、直接または間接的に特定することができる者のことです。  
-- *処理者:* コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
+- *処理者*: コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
 - *顧客データ*: ビジネス運営における日々の業務で作成および保存されるデータ。
 
 ## <a name="what-is-a-dsr"></a>DSR とは?
 
 一般データ保護規則 (GDPR) は、規制においてデータ主体と呼ばれる人に、雇用主または他の種類の機関や組織 (データ コントローラーまたは単にコントローラーと呼ばれます) によって収集された個人データを管理する権限を与えます。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの変更の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。
+
+カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  
 
 コントローラーとして、要求されたアクションを実行するか、またはコントローラーが DSR に対応できない理由についての説明を提供することによって、各 DSR を速やかに検討し、実質的な対応を提供する必要があります。 コントローラーは、特定の DSR の適切な処理について自身の法律またはコンプライアンスのアドバイザーに相談する必要があります。
 

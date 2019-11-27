@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft Service Trust Portal のコンプライアンス マネージャーでは、コントロールの追跡、実装、管理を行えるツールが用意されています。それらのツールは、Office 365 や Microsoft Azure などの Microsoft クラウド サービスを扱う際に、組織がセキュリティおよびデータ保護に関する業界標準 (GDPR、ISO 27001 および 27018、HIPAA など) に準拠するのに役立ちます。コンプライアンス マネージャーは、組織のデータ保護とプライバシー対策を講じる担当者が、コンプライアンスとリスク評価のプロセスを管理するのに役立ちます。
-ms.openlocfilehash: 95816ca13818d068066c4e3c7fce371f1eeccc25
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 4c3f979caf2fdc3a2dc942e49fd33a09d2d1589a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417596"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "39268575"
 ---
-# <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす
+# <a name="microsoft-compliance-manager-classic"></a>Microsoft コンプライアンス マネージャー (クラシック)
+
+> [!NOTE]
+> このドキュメントでは、旧製品について説明しています。 ユーザーはこのバージョンのコンプライアンス マネージャーを使用しないことを強くお勧めします。代わりに、新しい [Microsoft コンプライアンス スコア](compliance-score.md)の使用をお勧めします。
 
  *コンプライアンス マネージャーは、21Vianet が運用している Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High)、Office 365 Department of Defense では使用できません。* 
   
@@ -831,4 +834,4 @@ Service Trust Portal では、ページ コンテンツをさまざまな言語�
 
 - [コンプライアンス マネージャーの一般提供の発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
 
-- [Microsoft 365 は GDPR 対応を進めるために情報保護戦略を提供](https://blogs.office.com/ja-JP/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
+- [Microsoft 365 は GDPR 対応を進めるために情報保護戦略を提供](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
