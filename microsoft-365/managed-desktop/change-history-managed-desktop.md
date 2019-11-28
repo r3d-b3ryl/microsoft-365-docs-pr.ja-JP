@@ -8,16 +8,43 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369628"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634064"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 このトピックでは、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新されたトピックを一覧表示します。 「更新された」トピックは、マテリアルが追加または修正されたものであり、誤入力、スタイル、書式設定の問題の修正などのマイナー修正がリストされていません。 [GitHub 上のリポジトリ](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)にアクセスすることによって、特定のコミット (変更の詳細を含む) の履歴をいつでも表示できます。
+
+## <a name="november-2019"></a>2019 年 11 月
+新規または変更されたトピック | 説明
+--- | ---
+[分析情報を操作する](working-with-managed-desktop/insights.md) | 新しいトピック
+[使用状況の分析情報](working-with-managed-desktop/usage-insights.md) | 新しいトピック
+[信頼性の分析情報](working-with-managed-desktop/reliability-insights.md) | 新しいトピック
+[Microsoft マネージドデスクトップデバイス](service-description/device-list.md) | 更新されたトピック
+[Microsoft マネージドデスクトップのメインページ](https://docs.microsoft.com/microsoft-365/managed-desktop/) | 更新されたトピック
+[Microsoft マネージド デスクトップとは](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新されたトピック
+[ユーザーがデバイスを使えるようにする](get-started/get-started-devices.md) | 更新されたトピック
+[サービス プランの例外](service-description/customizing.md) | 更新されたトピック
+
+
+## <a name="october-2019"></a>2019 年 10 月
+新規または変更されたトピック | 説明
+--- | ---
+[サービス プランの例外](service-description/customizing.md) | 新しいトピック
+[エンドユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新されたトピック
+[Microsoft マネージドデスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新されたトピック
+[サービスの変更とコミュニケーション](service-description/servicechanges.md) | 新しいトピック
+[新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新されたトピック
+[既存のデバイスをユーザー自身が登録する](get-started/register-reused-devices-self.md) | 更新されたトピック
+[Microsoft Managed Desktop サポートされている地域と言語](service-description/regions-languages.md) | 更新されたトピック
+
+
+
 
 ## <a name="september-2019"></a>2019 年 9 月
 新規または変更されたトピック | 説明
@@ -33,7 +60,7 @@ ms.locfileid: "37369628"
 [既存のデバイスをユーザー自身が登録する](get-started/register-reused-devices-self.md) | 新しいトピック
 [Microsoft マネージドデスクトップでの更新プログラムの処理方法](service-description/updates.md) | 更新されたトピック
 
-## <a name="august-2019"></a>2019年8月
+## <a name="august-2019"></a>2019 年 8 月
 新規または変更されたトピック | 説明
 --- | ---
 [Microsoft コンサルティング サービスを使用する](get-ready/apps-mcs.md) | 更新されたトピック
@@ -44,7 +71,7 @@ ms.locfileid: "37369628"
 
 
 
-## <a name="july-2019"></a>2019年7月
+## <a name="july-2019"></a>2019 年 7 月
 新規または変更されたトピック | 説明
 --- | ---
 [Microsoft コンサルティング サービスを使用する](get-ready/apps-mcs.md) | 更新されたトピック
@@ -52,7 +79,7 @@ ms.locfileid: "37369628"
 [デバイス構成](service-description/device-policies.md) | 更新されたトピック
 
 
-## <a name="june-2019"></a>2019年6月
+## <a name="june-2019"></a>2019 年 6 月
 新規または変更されたトピック | 説明
 --- | ---
 [Microsoft マネージドデスクトップのアプリ](get-ready/apps.md) | 更新されたトピック

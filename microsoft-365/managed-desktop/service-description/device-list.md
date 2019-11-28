@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 70be19947e31d8c2b918d12887d63b1b360cf37b
-ms.sourcegitcommit: 3df6b6092542d466661c0fa08b7bfe7cec441b55
+ms.openlocfilehash: f46f5164340ec257a056a2f31bec8f846bb4a54a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254376"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634054"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -25,7 +25,7 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 ここに示すデバイスへのリンクは、リファレンスのみを対象としています。 デバイスを注文する場合は、商用チャネルの連絡先と協力して、正しい構成を選択してください。 この表では、*アーカイブの日付*は、これらのモデルがより短い Microsoft Managed Desktop service 寿命の対象となる日付です。このようなデバイスがこの日付以降に利用ても、Microsoft マネージドデスクトップからの3年の完全なサポート期間は表示されません。 アーカイブされたデバイスは、 [Microsoft マネージドデスクトップのアーカイブ](archived-device-list.md)されたデバイスにも記載されています。 [*定年期日*」は、Microsoft マネージドデスクトップでこのモデルがサポートされなくなる日付です。 その日に、このモデルのすべての登録済みデバイスは、登録されたときに関係なく、Microsoft マネージドデスクトップから削除されます。
 
 >[!NOTE]
->このテーブルには、いつでもデバイスを追加できますが、アーカイブまたは退職日に影響する変更については90日の通知が提供されます。
+>このテーブルには、いつでもデバイスを追加できますが、アーカイブまたは退職日に影響する変更については90日の通知が提供されます。 最後に追加したデバイスは、 **\*** でマークされます。
 
 
 **Microsoft マネージドデスクトップデバイス**
@@ -38,8 +38,8 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 | [Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2020年1月9日  | 2023年1月9日  |
 | [Dell Latitude 7200 2-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
 | [Dell Latitude 7390 7390 2-in-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM   | 必要な赤外線カメラ | 2020年1月9日 | 2023年1月9日 |
-| [HP EliteBook 830/840/850 G6 ノートブック PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU | 2020年11月30日 | 2023年11月30日 |
-| [HP EliteBook x360 830 G6 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU | 2020年11月30日 | 2023年11月30日 |
+| **\*[HP EliteBook 830/840/850 G6 ノートブック PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features)** | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU | 2020年11月30日 | 2023年11月30日 |
+| **\*[HP EliteBook x360 830 G6 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc)** | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP エリート x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 5VS03AV、IR カメラが必要な SKU | 2020年5月14日 | 2023年5月14日 |
 | [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | 2020年5月14日 | 2023年5月14日 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | 2020年10月23日 | 2023年10月23日 |

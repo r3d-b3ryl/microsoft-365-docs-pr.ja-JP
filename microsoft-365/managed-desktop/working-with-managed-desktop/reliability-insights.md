@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f830e01d54aef9065727971533633f8e63bc1214
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257035"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634034"
 ---
 # <a name="reliability-insights"></a>信頼性の分析情報
 
@@ -35,5 +35,12 @@ ms.locfileid: "39257035"
 - 番号が表す管理対象デバイスの割合
 - 特定の問題の出現回数の合計
 - 問題のソースとして表示されるソフトウェアコンポーネント
+- 検出された問題のカテゴリ。
+    - ブラウザー (エッジ、クロム、IE)
+    - Unknown (Microsoft 以外のコンポーネント)
+    - ドライバー (オーディオ、グラフィックス、またはその他のドライバー)
+    - 生産性 (余裕期間、G スイート、Microsoft Office およびそのアドオンまたは拡張機能、Teams)
+    - メディア (画像、音楽、ビデオアプリ)
+    - セキュリティ (Windows セキュリティコンポーネント)
 - Microsoft Managed Desktop 操作の現在の状態は、この問題の調査と remediates
 

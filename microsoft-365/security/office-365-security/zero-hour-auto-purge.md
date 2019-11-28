@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているスパムまたはマルウェアを含むメッセージを検出し、その悪意のあるコンテンツを無害にする電子メール保護機能です。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: dd702e88dc2400367330d9cb1b54b5b0017334e4
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 8496887f135e5a2c6496f969d420ae6eaa8f4908
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191232"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631587"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - スパムまたはマルウェアからの保護
 
@@ -42,7 +42,7 @@ ZAP アクションは、メールボックスユーザーにとってシーム�
 
 ### <a name="malware-zap"></a>マルウェアの ZAP
 
-新たに検出されたマルウェアの場合、ZAP は電子メールメッセージから添付ファイルを削除し、ユーザーのメールボックスにメッセージの本文を残します。 添付ファイルは、メールの開封状況に関係なく削除されます。
+新たに検出されたマルウェアの場合、ZAP は添付ファイルを含むメッセージ全体をマルウェア検疫に移動します。 メッセージは、メールの開封状況に関係なく移動されます。 動的配信スキャンプロセスでメッセージに対するマルウェア信号を受け取った場合、ZAP はメッセージに対して [迷惑メールに移動] アクションを実行します。 その後、動的配信が配信スキャンの時間を終了し、適切なアクションを実行できるようになります。
 
 マルウェアの ZAP は、マルウェアポリシーで既定で有効になっています。 Exchange Online PowerShell または Exchange Online Protection PowerShell で[new-malwarefilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy)コマンドレットの*zapenabled*パラメーターを使用して、マルウェアの ZAP を無効にすることができます。 セキュリティ/コンプライアンスセンターでマルウェアポリシーを編集することによって、マルウェアの ZAP を有効または無効にすることもできます。
 
@@ -58,7 +58,7 @@ ZAP アクションは、メールボックスユーザーにとってシーム�
 
 スパム ZAP は、スパムポリシーでは既定で有効になっています。 Exchange Online PowerShell または Exchange Online Protection PowerShell で[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)コマンドレットの*SpamZapEnabled*パラメーターを使用して、スパム ZAP を無効にすることができます。
 
-###<a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>フィッシングおよびスパム ZAP の要件、除外、および通知
+### <a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>フィッシングおよびスパム ZAP の要件、除外、および通知
 
 > [!IMPORTANT]
 > フィッシングとスパム ZAP の両方を制御する前の*Zapenabled*コマンドレットパラメーターは、 **2020 年2月1日に廃止**されます。 ZapEnabled パラメーターを使用するスクリプトを記述した場合は、SpamZapEnabled と PhishZapEnabled を使用するように更新することをお勧めします。 移行期間では、3つすべてのパラメーター (ZapEnabled、PhishZapEnabled、および SpamZapEnabled) がコマンドレットで使用できるようになります。 UI または PowerShell を使用して明示的に設定されるまで、PhishZapEnabled と SpamZapEnabled は ZapEnabled パラメーターから継承した値を表示します。 新しいパラメーターが設定されると、ZapEnabled パラメーターから継承されなくなります。 使用されなくなった場合、ZapEnabled が PhishZapEnabled または SpamZapEnabled プロパティに影響を与えることはありません。また、ZapEnabled はコマンドレットのパラメータリストから削除されます。
@@ -97,7 +97,7 @@ Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEna
 
 構文およびパラメーターの詳細については、「 [set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)」を参照してください。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>正当なメッセージが迷惑メールフォルダーに移動された場合はどうなりますか。
   

@@ -1,20 +1,20 @@
 ---
-title: 利用状況分析
+title: 使用状況の分析情報
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f1d1deb031d26f9dec687b73be86ec8a2491a50
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256864"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634024"
 ---
-# <a name="usage-insights"></a>利用状況分析
-このビューは、Microsoft マネージドデスクトップデバイスの使用指標を提供します。 
+# <a name="usage-insights"></a>使用状況の分析情報
+このビューは、Microsoft マネージドデスクトップデバイスの使用指標を提供します。 このような目的で、アプリが実行中で、フォーカスがある場合、アプリは "使用中" と見なされます。
 
 利用状況データを表示するには、[**利用状況**] タブを選択します。
 
