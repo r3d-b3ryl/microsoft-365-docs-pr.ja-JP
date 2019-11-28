@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバルアドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 272223d9ab61b2c5ae17043cf4523d49da306de9
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 12fc8ec47881ce5cb3dc00a7a646966588bd5cca
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686854"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39630987"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を Exchange Online に一括インポートする
 
@@ -42,7 +42,7 @@ ms.locfileid: "38686854"
 
 最初の手順として、Exchange Online にインポートする各外部連絡先に関する情報を含む CSV ファイルを作成します。 
   
-1. 次のテキストをメモ帳のテキストファイルにコピーして、ファイル名サフィックス .csv を使用して、そのファイルを CSV ファイルとしてデスクトップに保存します。たとえば、ExternalContacts。
+1. 次のテキストをメモ帳のテキストファイルにコピーして、ファイル名サフィックス .csv を使用して、それを CSV ファイルとしてデスクトップに保存します。たとえば、ExternalContacts。
     
     > [!TIP]
     > 言語に特殊文字 ( **å**、 **ä**、 **ö**など) が含まれている場合は、メモ帳でファイルを保存するときに、CSV ファイルを Utf-8 またはその他の Unicode エンコードで保存します。 
@@ -95,11 +95,11 @@ ms.locfileid: "38686854"
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>手順 3: 外部連絡先のプロパティに情報を追加する
 
-手順2でコマンドを実行した後、外部連絡先は作成されますが、CSV ファイルの大部分のセルからの情報である連絡先または組織の情報は含まれません。 これは、新しい外部連絡先を作成したときに、必要なプロパティだけが設定されるためです。 CSV ファイルに情報が入力されていない場合は、心配しないでください。 含まれていない場合は追加されません。
+手順2でコマンドを実行した後、外部連絡先は作成されますが、CSV ファイル内のほとんどのセルからの情報である連絡先または組織の情報は含まれません。 これは、新しい外部連絡先を作成したときに、必要なプロパティだけが設定されるためです。 CSV ファイルに情報が入力されていない場合は、心配しないでください。 含まれていない場合は追加されません。
   
 1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。
     
-2. 手順1で CSV ファイルを保存したデスクトップフォルダーに移動します。例`C:\Users\Administrator\desktop`を示します。
+2. 手順1で CSV ファイルを保存したデスクトップフォルダーに移動します。たとえば、 `C:\Users\Administrator\desktop`のようになります。
     
 3. 次の2つのコマンドを実行して、CSV ファイルの他のプロパティを手順2で作成した外部連絡先に追加します。
     

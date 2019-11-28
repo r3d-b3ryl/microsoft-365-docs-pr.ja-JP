@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+description: " "
+ms.openlocfilehash: 5d8950f2e6164781111465aee8d89eaff92ee958
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191172"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633836"
 ---
 # <a name="close-or-delete-a-case"></a>ケースを閉じるか、ケースを削除する
 
@@ -31,7 +31,7 @@ ms.locfileid: "39191172"
 
 - ケースは、セキュリティ & コンプライアンスセンターの [電子情報開示] ページに表示されたままになっています。 クローズしたケースの詳細、保持、検索、メンバーは保持されます。
 
-- ケースは閉じた後でも編集できます。たとえば、メンバーの追加または削除、検索の作成、検索結果のエクスポート、Advanced eDiscovery で分析するための検索結果の準備が行えます。アクティブ ケースと閉じたケースの主な違いは、ケースを閉じると保留が無効になることです。
+- クローズされた case を編集できます。 たとえば、メンバーを追加または削除したり、検索を作成したり、検索結果をエクスポートしたり、高度な電子情報開示で分析のために検索結果を準備したりできます。 アクティブなケースとクローズケースの主な違いは、ケースがクローズされたときに保留がオフになっていることです。
 
 ケースを閉じるには、次のようにします。
 

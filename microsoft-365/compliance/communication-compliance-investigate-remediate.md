@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 の通信コンプライアンスアラートを調査および修復します。
-ms.openlocfilehash: 8aaf74ceafc737487bd97bb7c71b26fc139aacf0
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 336ce22813b60a4543941b18e11acf525570bb26
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686679"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633686"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>通信コンプライアンスのアラートを調査して修復する (プレビュー)
 
@@ -31,7 +31,7 @@ ms.locfileid: "38686679"
 
 ポリシーによって検出された問題を調査するための最初の手順は、Microsoft 365 コンプライアンスセンターで生成された通知を確認することです。 通知のグループ化をどのように表示するかに応じて、コンプライアンスセンターにはアラートをすばやく調査するのに役立ついくつかの領域があります。
 
-- **通信コンプライアンスのホームページ**: Microsoft 365 組織[https://compliance.microsoft.com](https://compliance.microsoft.com)の管理者アカウントの資格情報を使用してサインインするときに、[**通信コンプライアンスの** > **概要**] を選択して [通信コンプライアンスのホーム] ページを表示します。 次のように表示します。
+- **通信コンプライアンスのホームページ**: Microsoft 365 組織の[https://compliance.microsoft.com](https://compliance.microsoft.com)管理者アカウントの資格情報を使用してサインインするときに、[**通信コンプライアンスの** > **概要**] を選択して [通信コンプライアンスのホーム] ページを表示します。 次のように表示します。
     - 重要度の高いものから低レベルへの評価を必要とするアラート。 通知を選択して通知の詳細ページを起動し、修復アクションを開始します。
     - 最近のポリシーがポリシー名で一覧表示されます。
     - ポリシー名で一覧表示されているアイテムを解決しました。

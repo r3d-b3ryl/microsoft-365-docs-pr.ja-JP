@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Office 365 メールボックスに配置できるさまざまな種類の保留リストを識別する方法について説明します。 これらの種類には、訴訟ホールド、電子情報開示の保持、および Office 365 アイテム保持ポリシーが含まれます。 ユーザーが組織全体のアイテム保持ポリシーから除外されているかどうかを確認することもできます。
-ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686881"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634014"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -175,32 +175,58 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>遅延保持時のメールボックスの管理
 
-メールボックスから何らかの種類の保留が解除されると、 *DelayHoldApplied* mailbox プロパティの値は**True**に設定されます。 これは、管理フォルダーアシスタントが次回メールボックスを処理し、ホールドが削除されたことを検出したときに発生します。 これは*遅延ホールド*と呼ばれ、保留を実際に削除すると、メールボックスからデータが完全に削除 (パージ) されないようにするために30日間は遅延することになります。 これにより、管理者は、保留が解除された後に削除されるメールボックスアイテムを検索したり、回復したりすることができます。 メールボックスに遅延保持が設定されている場合でも、メールボックスが訴訟ホールドの対象であったかのように、無期限に保持されていると見なされます。 30日後、遅延保持が有効期限切れになり、Office 365 は遅延保持を自動的に削除します ( *DelayHoldApplied*プロパティを**False**に設定する)。これにより、ホールドが解除されます。 *DelayHoldApplied*プロパティの値を**False**に設定すると、削除がマークされているアイテムは、次回メールボックスが管理フォルダーアシスタントによって処理されたときに削除されます。
+メールボックスから任意の種類の保留が削除されると、*遅延保持*が適用されます。 これは、データがメールボックスから完全に削除 (パージ) されないように、保留リストの実際の削除が30日間遅延されることを意味します。 これにより、管理者は、保留が解除された後に削除されるメールボックスアイテムを検索したり、回復したりする機会を得ることができます。 次回管理フォルダーアシスタントがメールボックスを処理し、ホールドが削除されたことを検出すると、メールボックスに遅延保持が適用されます。 具体的には、管理フォルダーアシスタントが次のいずれかのメールボックスプロパティを**True**に設定すると、遅延保持がメールボックスに適用されます。
 
-メールボックスの*DelayHoldApplied*プロパティの値を表示するには、Exchange Online PowerShell で次のコマンドを実行します。
+- **DelayHoldApplied:** このプロパティは、ユーザーのメールボックスに格納されている電子メール関連のコンテンツ (Outlook および Outlook on the web を使用しているユーザーが生成) に適用されます。
+
+- **DelayReleaseHoldApplied:** このプロパティは、ユーザーのメールボックスに格納されているクラウドベースのコンテンツ (Microsoft Teams、Microsoft Forms、microsoft Yammer などの Outlook 以外のアプリによって生成される) に適用されます。 Microsoft アプリによって生成されたクラウドデータは、通常、ユーザーのメールボックス内の隠しフォルダーに格納されます。
+ 
+ メールボックスに遅延保持が設定されている場合 (前述のいずれかのプロパティが**True**に設定されている場合)、メールボックスが訴訟ホールドの対象であったかのように、そのメールボックスは依然として保留時間が無制限であると見なされます。 30日後、遅延保持が有効期限切れになり、Office 365 は遅延ホールドを (DelayHoldApplied または DelayReleaseHoldApplied プロパティを**False**に設定して) 自動的に削除し、ホールドが解除されるようにします。 これらのプロパティのいずれかを**False**に設定すると、削除対象としてマークされている対応するアイテムは、管理フォルダーアシスタントによって次回メールボックスが処理されるときに削除されます。
+
+メールボックスの DelayHoldApplied プロパティと DelayReleaseHoldApplied プロパティの値を表示するには、Exchange Online PowerShell で次のコマンドを実行します。
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL *HoldApplied*
 ```
 
-遅延が期限切れになるまでの遅延を削除するには、Exchange Online PowerShell で次のコマンドを実行します。 
+遅延の期限が切れるまでの遅延を削除するには、Exchange Online PowerShell で次のコマンドのいずれか (または両方) を実行できます。変更するプロパティによって異なります。 
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-*RemoveDelayHoldApplied*パラメーターを使用するには、Exchange Online で法的情報保留の役割を割り当てられている必要があります。 
+または
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
 
-非アクティブなメールボックスの遅延ホールドを削除するには、Exchange Online PowerShell で次のコマンドを実行します。
+*RemoveDelayHoldApplied*パラメーターまたは*RemoveDelayReleaseHoldApplied*パラメーターを使用するには、Exchange Online で法的情報保留の役割が割り当てられている必要があります。 
+
+非アクティブなメールボックスの遅延ホールドを削除するには、Exchange Online PowerShell で次のいずれかのコマンドを実行します。
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
+または
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
+```
+
 > [!TIP]
 > 以前のコマンドで非アクティブなメールボックスを指定するには、その識別名または Exchange GUID 値を使用するのが最善の方法です。 これらの値のいずれかを使用すると、正しくないメールボックスを誤って指定することを避けられます。 
 
-## <a name="next-steps"></a>次の手順
+遅延保留を管理するためのこれらのパラメーターの使用の詳細については、「[メールボックスの設定](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)」を参照してください。
+
+遅延ホールド時にメールボックスを管理する場合は、次の点に注意してください。
+
+- DelayHoldApplied または DelayReleaseHoldApplied プロパティが**True**に設定されている場合、メールボックス (または対応する Office 365 ユーザーアカウント) が削除されると、メールボックスは非アクティブなメールボックスになります。 これは、いずれかのプロパティが**True**に設定されていて、保留中のメールボックスを削除すると非アクティブなメールボックスが保持されていると見なされるためです。 メールボックスを削除して非アクティブなメールボックスにしないようにするには、両方のプロパティを**False**に設定する必要があります。
+
+- 前述したように、メールボックスは、DelayHoldApplied または DelayReleaseHoldApplied プロパティが**True**に設定されている場合、保持期間が無制限であると見なされます。 ただし、これはメールボックス内の*すべて*のコンテンツが保持されるという意味ではありません。 各プロパティに設定されている値によって決まります。 たとえば、ホールドがメールボックスから削除されているため、両方のプロパティが**True**に設定されているとします。 その後、( *RemoveDelayReleaseHoldApplied*パラメーターを使用して) Outlook 以外のクラウドデータに適用される遅延ホールドのみを削除します。 管理フォルダーアシスタントが次回メールボックスを処理するときに、削除がマークされた Outlook 以外のアイテムは削除されます。 DelayHoldApplied プロパティが**True**に設定されている場合でも、削除対象としてマークされた Outlook アイテムは削除されません。 反対に、DelayHoldApplied が**False**に設定され、DelayReleaseHoldApplied が**true**に設定されている場合は、削除がマークされた Outlook アイテムのみが削除されます。
+
+## <a name="next-steps"></a>次のステップ
 
 メールボックスに適用されている保留リストを特定した後は、保留の期間の変更、一時的または完全に保持の削除、または Office 365 のアイテム保持ポリシーから非アクティブなメールボックスを除外するなどのタスクを実行できます。 保留に関連するタスクの実行の詳細については、以下のいずれかのトピックを参照してください。
 

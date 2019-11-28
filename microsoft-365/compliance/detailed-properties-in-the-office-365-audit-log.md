@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 監査ログレコードに含まれるその他のプロパティについて説明します。
-ms.openlocfilehash: a08c958df43905ea84f7a241f9f0fbf48502d164
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: e77fedb58d9f2142e9c7a386ee8105042766158e
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38686658"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633646"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 監査ログの詳細なプロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "38686658"
 次の表では、マルチプロパティの**Auditdata**列に含まれる Office 365 サービスに応じて、イベントが発生するプロパティについて説明します。 **このプロパティ列を持つ Office 365 サービス**は、プロパティを含むアクティビティ (ユーザーまたは管理者) のサービスと種類を示します。 これらのプロパティまたはこのトピックに記載されていないプロパティの詳細については、「 [Office 365 Management ACTIVITY API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993)」を参照してください。
   
 > [!TIP]
-> Excel の Power Query で JSON 変換機能を使用して、各プロパティが独自の列を持つように、 **Auditdata**列を複数の列に分割することができます。 これにより、これらのプロパティの1つ以上に対して並べ替えとフィルター処理を行うことができます。 これを行う方法については、「 [Export, configure, and view audit log records](export-view-audit-log-records.md)」を参照してください。 
+> Excel の Power Query で JSON 変換機能を使用して、各プロパティが独自の列を持つように、 **Auditdata**列を複数の列に分割することができます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 これを行う方法については、「 [Export, configure, and view audit log records](export-view-audit-log-records.md)」を参照してください。 
   
 |**プロパティ**|**説明**|**このプロパティを使用する Office 365 サービス**|
 |:-----|:-----|:-----|
@@ -59,14 +59,14 @@ ms.locfileid: "38686658"
 |LogonType|メールボックス アクセスの種類。次の値によって、メールボックスにアクセスしたユーザーの種類が示されます。<br/><br/> **0** - メールボックスの所有者を意味します。<br/> **1** - 管理者を意味します。<br/> **2** - 代理人を意味します。 <br/>**3** - Microsoft データセンターのトランスポート サービスを意味します。<br/> **4** - Microsoft データセンターのサービス アカウントを意味します。 <br/>**6** - 代理管理者を意味します。|Exchange (メールボックス アクティビティ)|
 |MailboxGuid|アクセスされたメールボックスの Exchange GUID。|Exchange (メールボックス アクティビティ)|
 |MailboxOwnerUPN|アクセスされたメールボックスの所有者のメール アドレス。|Exchange (メールボックス アクティビティ)|
-|Members|チームで追加または削除されたユーザーが一覧表示されます。次の値によって、ユーザーに割り当てられているロールの種類が示されます。<br/><br/> **1** - 所有者ロールを意味します。<br/> **2** - メンバー ロールを意味します。<br/> **3** - ゲスト ロールを意味します。 <br/><br/>Members プロパティには、組織の名前とメンバーのメール アドレスも含まれます。|Microsoft Teams|
+|Members|チームで追加または削除されたユーザーが一覧表示されます。次の値によって、ユーザーに割り当てられているロールの種類が示されます。<br/><br/> **1** - 所有者ロールを意味します。<br/> **2** - メンバー ロールを意味します。<br/> **3** - ゲスト ロールを意味します。 <br/><br/>メンバー プロパティには、組織の名前とメンバーのメール アドレスも含まれます。|Microsoft Teams|
 |ModifiedProperties (Name、NewValue、OldValue)|このプロパティは、管理イベント (サイトまたはサイト コレクションの管理者グループのメンバーとしてユーザーを追加するなど) に対して表示されます。このプロパティには、変更されたプロパティの名前 (サイト管理者グループなど)、変更されたプロパティの新しい値 (サイト管理者として追加されたユーザーなど)、および変更されたオブジェクトの以前の値が格納されます。|すべて (管理者のアクティビティ)|
 |ObjectID|Exchange 管理者監査ログの場合は、コマンドレットによって変更されたオブジェクトの名前。  <br/> SharePoint アクティビティの場合は、ユーザーがアクセスしたファイルまたはフォルダーの完全な URL パス名。  <br/> Azure AD アクティビティの場合は、変更されたユーザー アカウントの名前。|すべて|
 |Operation|ユーザーまたは管理者アクティビティの名前。 このプロパティの値は、[**アクティビティ**] ドロップダウンリストで選択された値に対応しています。 [**すべてのアクティビティの結果を表示]** が選択されている場合、すべてのサービスのすべてのユーザーと管理者のアクティビティのエントリがレポートに含まれます。 Office 365 監査ログに記録される操作/アクティビティの説明については、「 [office 365 で監査ログを検索](search-the-audit-log-in-security-and-compliance.md)する」の「監査**対象のアクティビティ**」タブを参照してください。  <br/> Exchange 管理者のアクティビティの場合、このプロパティは実行されたコマンドレットの名前を示します。|すべて|
 |OrganizationID|Office 365 組織の GUID。|すべて|
 |Path|アクセスされたメッセージが置かれているメールボックス フォルダーの名前。このプロパティは、メッセージの作成先、コピー先、移動先のフォルダーも識別します。|Exchange (メールボックス アクティビティ)|
 |Parameters|Exchange 管理者のアクティビティの場合、Operation プロパティで識別されたコマンドレットで使用された、すべてのパラメーターの名前と値。|Exchange (管理者のアクティビティ)|
-|RecordType|レコードで示されている操作の種類。次の値によって、レコードの種類が示されます。<br/><br/> **1** - Exchange 管理者監査ログのレコードを意味します。 <br/>**2** - Exchange メールボックス監査ログの、単一のメールボックス アイテムに対して行われた操作に関するレコードを意味します。 <br/>**3** -Exchange メールボックス監査ログからのレコードも示します。 このレコードの種類は、移動元のメールボックス内の複数のアイテムに対して操作が実行されたことを示します (複数のアイテムを削除済みアイテムフォルダーに移動したり、複数のアイテムを完全に削除したりするなど)。 <br/>**4** - SharePoint でのサイト管理者の操作 (管理者またはユーザーがサイトに対するアクセス許可を割り当てるなど) を意味します。 <br/>**6** - SharePoint でのファイルまたはフォルダーに関連する操作 (ユーザーの表示、ファイルの変更など) を意味します。 <br/>**8** - Azure Active Directory で行われた管理者の操作を意味します。 <br/>**9** - Azure Active Directory での OrgId ログオン イベントを意味します。このレコードの種類は非推奨となっています。<br/>**10** - データ センターで Microsoft 担当者が行ったセキュリティ コマンドレット イベントを意味します。 <br/>**11** - SharePoint でのデータ損失防止 (DLP) イベントを意味します。<br/> **12** - Sway のイベントを意味します。 <br/>**13** -統合された dlp ポリシーを使用して構成した場合、EXCHANGE の dlp イベントを示します。 Exchange メールフロールール (トランスポートルールとも呼ばれる) に基づく DLP イベントはサポートされていません。<br>**14** - SharePoint の共有イベントを意味します。<br/> **15** - Azure Active Directory の Secure Token Service (STS) ログオン イベントを意味します。 <br/>**18** -コンプライアンスセンターのイベント & セキュリティを示します。 <br/>**20** - Power BI のイベントを意味します。 <br/>**21**- Dynamics 365 のイベントを意味します。<br/>**22** - Yammer のイベントを意味します。 <br/>**23** - Skype for Business のイベントを意味します。 <br/>**24** -電子情報開示イベントを示します。 このレコードの種類は、セキュリティ/コンプライアンスセンターでコンテンツ検索を実行し、電子情報開示ケースを管理することによって実行されたアクティビティを示します。 詳細については、「 [Office 365 監査ログで電子情報開示アクティビティを検索](search-for-ediscovery-activities-in-the-audit-log.md)する」を参照してください。<br/>**25、26、27** - Microsoft Teams のイベントを意味します。 <br/>**28** - Exchange Online Protection イベントと Office 365 Advanced Threat Protection イベントからのフィッシングとマルウェアのイベントを意味します。<br/> **30** - Microsoft Flow のイベントを意味します。<br/> **31** -高度な電子情報開示イベントを示します。<br/> **32** -Microsoft Stream イベントを示します。<br/> **35** - Microsoft Project のイベントを意味します。 <br/> **36** - Sharepoint リストのイベントを意味します。<br/> **38** -セキュリティ/コンプライアンスセンターのアイテム保持ポリシーと保持ラベルに関連するイベントを示します。  <br/>**40** - セキュリティ/コンプライアンス アラートのシグナルに起因するイベントを意味します。<br/> **41** - Office 365 Advanced Threat Protection でのブロック時の安全なリンクと上書きのブロック イベントを意味します。<br/>**44** - Workplace Analytics のイベントを意味します。 <br/>**45** -PowerApps アプリイベントを示します。 <br/> **47** - SharePoint、OneDrive、Microsoft Teams 内のファイルに対する、Office 365 Advanced Threat Protection からのフィッシングとマルウェアのイベントを意味します。 <br/> **52** -データ INSIGHTS REST API に関連するイベントを示します。<br/>**54** -SharePoint リストアイテムのイベントを示します。<br/>**55** -SharePoint コンテンツタイプのイベントを示します。
+|RecordType|レコードで示されている操作の種類。次の値によって、レコードの種類が示されます。<br/><br/> **1** - Exchange 管理者監査ログのレコードを意味します。 <br/>**2** - Exchange メールボックス監査ログの、単一のメールボックス アイテムに対して行われた操作に関するレコードを意味します。 <br/>**3** -Exchange メールボックス監査ログからのレコードも示します。 このレコードの種類は、移動元のメールボックス内の複数のアイテムに対して操作が実行されたことを示します (複数のアイテムを削除済みアイテムフォルダーに移動したり、複数のアイテムを完全に削除したりするなど)。 <br/>**4** - SharePoint でのサイト管理者の操作 (管理者またはユーザーがサイトに対するアクセス許可を割り当てるなど) を意味します。 <br/>**6** - SharePoint でのファイルまたはフォルダーに関連する操作 (ユーザーの表示、ファイルの変更など) を意味します。 <br/>**8** - Azure Active Directory で行われた管理者の操作を意味します。 <br/>**9** - Azure Active Directory での OrgId ログオン イベントを意味します。このレコードの種類は非推奨となっています。<br/>**10** - データ センターで Microsoft 担当者が行ったセキュリティ コマンドレット イベントを意味します。 <br/>**11** - SharePoint でのデータ損失防止 (DLP) イベントを意味します。<br/> **12** - Sway のイベントを意味します。 <br/>**13** -統合された dlp ポリシーを使用して構成した場合、EXCHANGE の dlp イベントを示します。 Exchange メールフロールール (トランスポートルールとも呼ばれる) に基づく DLP イベントはサポートされていません。<br>**14** - SharePoint の共有イベントを意味します。<br/> **15** - Azure Active Directory の Secure Token Service (STS) ログオン イベントを意味します。 <br/>**18** -コンプライアンスセンターのイベント & セキュリティを示します。 <br/>**20** - Power BI のイベントを意味します。 <br/>**21**- Dynamics 365 のイベントを意味します。<br/>**22** - Yammer のイベントを意味します。 <br/>**23** - Skype for Business のイベントを意味します。 <br/>**24** -電子情報開示イベントを示します。 このレコードの種類は、セキュリティ/コンプライアンスセンターでコンテンツ検索を実行し、電子情報開示ケースを管理することによって実行されたアクティビティを示します。 詳細については、「 [Office 365 監査ログで電子情報開示アクティビティを検索](search-for-ediscovery-activities-in-the-audit-log.md)する」を参照してください。<br/>**25、26、27** - Microsoft Teams のイベントを意味します。 <br/>**28** - Exchange Online Protection イベントと Office 365 Advanced Threat Protection イベントからのフィッシングとマルウェアのイベントを意味します。<br/> **30** - Microsoft Flow のイベントを意味します。<br/> **31** -高度な電子情報開示イベントを示します。<br/> **32** -Microsoft Stream イベントを示します。<br/> **35** - Microsoft Project のイベントを意味します。 <br/> **36** - Sharepoint リストのイベントを意味します。<br/> **38** -セキュリティ/コンプライアンスセンターのアイテム保持ポリシーと保持ラベルに関連するイベントを示します。  <br/>**40** - セキュリティ/コンプライアンス アラートのシグナルに起因するイベントを意味します。<br/> **41** - Office 365 Advanced Threat Protection でのブロック時の安全なリンクと上書きのブロック イベントを意味します。<br/>**44** - Workplace Analytics のイベントを意味します。 <br/>**45** -PowerApps アプリイベントを示します。 <br/> **47** - SharePoint、OneDrive、Microsoft Teams 内のファイルに対する、Office 365 Advanced Threat Protection からのフィッシングとマルウェアのイベントを意味します。 <br/> **52** -データ INSIGHTS REST API に関連するイベントを示します。<br/>**54** -SharePoint リストアイテムのイベントを示します。<br/>**55** -SharePoint コンテンツタイプのイベントを示します。<br/>**66** -Microsoft Forms events を示します。
 |ResultStatus|(**Operation** プロパティで指定された) アクションが正常に終了したかどうかを示します。  <br/> Exchange 管理者アクティビティでは、値は **True** (成功) または **False** (失敗) のいずれかになります。|すべて  <br/>|
 |SecurityComplianceCenterEventType|アクティビティがセキュリティ & コンプライアンスセンターイベントであったことを示します。 このプロパティでは、すべてのセキュリティ & コンプライアンスセンターのアクティビティの値は**0**になります。|セキュリティ/コンプライアンス センター|
 |SharingType|リソースが共有されたユーザーに割り当てられているアクセス許可の種類。このユーザーは、**UserSharedWith** プロパティによって識別されます。|SharePoint|
@@ -87,7 +87,7 @@ ms.locfileid: "38686658"
 |UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
 |UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** -Office 365 組織の管理者。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
 |Version|ログに記録された (**Operation** プロパティで識別された) アクティビティのバージョン番号を示します。|すべて|
-|Workload|アクティビティが発生した Office 365 サービス。このプロパティの有効な値は次のとおりです。<br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>Skype for Business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>Workplace Analytics**|すべて|
+|Workload|アクティビティが発生した Office 365 サービス。このプロパティの有効な値は次のとおりです。<br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>Skype for Business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>Workplace Analytics**<br/>**Microsoft Forms**|すべて|
 ||||
 
 > [!NOTE]

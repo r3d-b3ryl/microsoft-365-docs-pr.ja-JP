@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 電子情報開示検索結果をエクスポートするときに、コンピューターにダウンロードされる PST ファイルの既定のサイズを変更できます。
-ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 3a302164a1de6d383e2e120dd7a849e692e622eb
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686856"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634004"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更する
 
 Office 365 eDiscovery エクスポートツールを使用して、さまざまな Microsoft eDiscovery ツールから電子情報開示検索の結果をエクスポートする場合、エクスポート可能な PST ファイルの既定のサイズは 10 GB です。 この既定のサイズを変更する場合は、検索結果のエクスポートに使用するコンピューターで Windows レジストリを編集できます。 これを行う理由の1つは、PST ファイルが DVD、コンパクトディスク、または USB ドライブなどのリムーバブルメディアに格納できるようにするためです。 
   
 > [!NOTE]
->  Office 365 eDiscovery エクスポートツールは、セキュリティ/コンプライアンスセンター、Exchange Online のインプレース電子情報開示、および SharePoint Online の電子情報開示センターでコンテンツ検索ツールを使用して検索結果をエクスポートするために使用されます。
+> Office 365 eDiscovery エクスポートツールは、セキュリティ/コンプライアンスセンター、Exchange Online のインプレース電子情報開示、および SharePoint Online の電子情報開示センターでコンテンツ検索ツールを使用して検索結果をエクスポートするために使用されます。
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更するためのレジストリ設定を作成する
 
@@ -43,7 +43,7 @@ Office 365 eDiscovery エクスポートツールを使用して、さまざま�
     
     |**サイズ (GB) (約)**|**バイト単位のサイズ**|
     |:-----|:-----|
-    |7 GB (700 MB)  <br/> |751619277  <br/> |
+    |0.7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
@@ -68,7 +68,7 @@ Office 365 eDiscovery エクスポートツールを使用して、さまざま�
   
  **PST ファイルの既定のサイズを増減する必要がありますか。**
   
-お客様は、組織内の他の場所を物理的に出荷できるリムーバブルメディアに検索結果が格納されるように、サイズ制限を小さくする傾向があります。 10 GB を超える PST ファイルで破損の問題が発生する可能性があるため、既定のサイズを大きくしないことをお勧めします。
+お客様は、組織内の他の場所に物理的に出荷できるリムーバブルメディアに検索結果が適合するように、サイズ制限を減らす傾向があります。 10 GB を超える PST ファイルで破損の問題が発生する可能性があるため、既定のサイズを大きくしないことをお勧めします。
   
  **この操作を実行する必要があるコンピューター**
   
@@ -80,4 +80,4 @@ Office 365 eDiscovery エクスポートツールを実行するローカルコ�
   
  **既存のレジストリキーを編集するか、新しいキーを作成しますか?**
   
-この手順で作成した .reg ファイルを初めて実行するときに、新しいレジストリキーが作成されます。 その後、.reg の編集ファイルを変更して再実行するたびに、この設定が編集されます。
+この手順で作成した .reg ファイルを初めて実行するときに、新しいレジストリキーが作成されます。 その後、.reg 編集ファイルを変更して再実行するたびに、設定が編集されます。
