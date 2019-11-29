@@ -3,7 +3,7 @@ title: 開発/テスト環境の SharePoint Online サイトをセキュリテ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/18/2019
+ms.date: 11/26/2019
 audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,115 +15,77 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
-description: '概要: 開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
-ms.openlocfilehash: 6bf18c3d010d7e624666745842f7f3c41176b1b3
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+description: '概要: 開発/テスト環境で、機密および高機密の SharePoint Online チーム サイトを作成します。'
+ms.openlocfilehash: a88701720147c8bd3e53572c27ba4a1949746cae
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035697"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631643"
 ---
-# <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a><span data-ttu-id="dd8fe-103">開発/テスト環境の SharePoint Online サイトをセキュリティで保護する</span><span class="sxs-lookup"><span data-stu-id="dd8fe-103">Secure SharePoint Online sites in a dev/test environment</span></span>
+# <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a><span data-ttu-id="46488-103">開発/テスト環境の SharePoint Online サイトをセキュリティで保護する</span><span class="sxs-lookup"><span data-stu-id="46488-103">Secure SharePoint Online sites in a dev/test environment</span></span>
 
- <span data-ttu-id="dd8fe-104">**概要:** 開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-104">**Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in a dev/test environment.</span></span>
+<span data-ttu-id="46488-104">この記事では、機密および高機密の SharePoint Online チーム サイトを含む開発/テスト環境を [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md) ソリューション用に作成する手順を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="46488-104">This article provides step-by-step instructions to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) solution.</span></span>
   
-<span data-ttu-id="dd8fe-105">この記事では、4 つの異なるタイプの SharePoint Online チーム サイトを含む開発/テスト環境を [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md) ソリューション用に作成する手順を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-105">This article provides step-by-step instructions to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) solution.</span></span>
+![機密および高機密の SharePoint Online サイトまたはファイル。](../media/sensitive-highly-confidential-sp-sites-dev-test.png)
   
-![セキュリティで保護された SharePoint Online の開発/テスト環境の 4 つすべてのチーム サイト。](../media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+<span data-ttu-id="46488-106">これらの種類のチーム サイトを運用環境に展開する前に、この開発/テスト環境を使用して、特定のニーズに合わせて設定を検証し、微調整します。</span><span class="sxs-lookup"><span data-stu-id="46488-106">Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying these types of teams in production.</span></span>
   
-<span data-ttu-id="dd8fe-107">SharePoint Online チーム サイトを運用環境に展開する前に、この開発/テスト環境を使用して情報保護の動作を試し、特定の必要に応じて設定を微調整します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-107">Use this dev/test environment to experiment with the information protection behaviors and fine-tune settings for your specific needs before deploying SharePoint Online team sites in production.</span></span>
-  
-## <a name="phase-1-create-your-devtest-environment"></a><span data-ttu-id="dd8fe-108">フェーズ 1: 開発/テスト環境を作成する</span><span class="sxs-lookup"><span data-stu-id="dd8fe-108">Phase 1: Create your dev/test environment</span></span>
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="46488-107">フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="46488-107">Phase 1: Build out your Microsoft 365 Enterprise test environment</span></span>
 
-<span data-ttu-id="dd8fe-109">このフェーズでは、架空の組織用に Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを取得します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-109">In this phase, you obtain trial subscriptions for Office 365 and Enterprise Mobility + Security (EMS) for a fictional organization.</span></span>
-  
-<span data-ttu-id="dd8fe-110">まず、「[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)」の**フェーズ 2**に記されている手順を実行します</span><span class="sxs-lookup"><span data-stu-id="dd8fe-110">First, follow the instructions in **Phase 2** of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).</span></span>
-  
-<span data-ttu-id="dd8fe-111">次に、EMS 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-111">Next, sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
-  
-1. <span data-ttu-id="dd8fe-112">必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-112">If needed, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with the credentials of the global administrator account of your trial subscription.</span></span>
-    
-2. <span data-ttu-id="dd8fe-113">左側のナビゲーションで **[請求]、[サービスを購入する]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-113">In the left navigation, click **Billing > Purchase services**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-p101">**[サービスを購入]** ページで、 **[Enterprise Mobility + Security E5]** 項目を探します。その項目の上にマウス ポインターを移動させ、 **[無料試用版を起動する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-p101">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-116">**[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-116">On the **Confirm your order** page, click **Try now**.</span></span>
-    
-5. <span data-ttu-id="dd8fe-117">**[注文の受領書]** ページで、**[続行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-117">On the **Order receipt** page, click **Continue**.</span></span>
-    
-<span data-ttu-id="dd8fe-118">次に、全体管理者アカウントの Enterprise Mobility + Security E5 ライセンスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-118">Next, enable the Enterprise Mobility + Security E5 license for your global administrator account.</span></span>
-  
-1. <span data-ttu-id="dd8fe-119">ブラウザーの **[Microsoft 365 管理センター]** タブの左側のナビゲーションで **[ユーザー] > [アクティブなユーザー]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-119">On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
-    
-2. <span data-ttu-id="dd8fe-120">全体管理者アカウントをクリックしてから、 **[製品ライセンス]** で **[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-120">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-121">**[製品ライセンス]** ウィンドウで、 **Enterprise Mobility + Security E5** の製品ライセンスを **[オン]** にして、 **[保存]** をクリックしてから、 **[閉じる]** を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-121">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
-    
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups-and-users"></a><span data-ttu-id="dd8fe-122">フェーズ 2: Azure Active Directory (AD) グループとユーザーを作成して構成する</span><span class="sxs-lookup"><span data-stu-id="dd8fe-122">Phase 2: Create and configure your Azure Active Directory (AD) groups and users</span></span>
+<span data-ttu-id="46488-108">最小要件で機密および高機密のチーム サイトを簡易な方法でテストする場合は、「[軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="46488-108">If you just want to test sensitive and highly confidential teams in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).</span></span>
 
-<span data-ttu-id="dd8fe-123">このフェーズでは、架空の組織用の Azure AD のグループとユーザーを作成して構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-123">In this phase, you create and configure the Azure AD groups and users for your fictional organization.</span></span>
+<span data-ttu-id="46488-109">シミュレーションのエンタープライズで機密および高機密のチーム サイトをテストするには、「[パスワード ハッシュの同期](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="46488-109">If you want to test sensitive and highly confidential teams in a simulated enterprise, follow the instructions in [Password hash synchronization](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).</span></span>
+
+>[!Note]
+><span data-ttu-id="46488-110">機密および高機密のチーム サイトのテストには、シミュレーションのエンタープライズ テスト環境は必要ありません。シミュレーションのエンタープライズ テスト環境には、インターネットに接続されたシミュレーションのイントラネット、Active Directory Domain Services (AD DS) フォレスト用のディレクトリ同期が含まれています。</span><span class="sxs-lookup"><span data-stu-id="46488-110">Testing sensitive and highly confidential teams does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="46488-111">この指示は、一般的な組織と類似した環境で機密および高機密のチーム サイトをテストしてお試しいただけるようオプションとしてここで提供しています。</span><span class="sxs-lookup"><span data-stu-id="46488-111">It is provided here as an option so that you can test sensitive and highly confidential teams and experiment with it in an environment that represents a typical organization.</span></span>
+>
+    
+## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups-and-users"></a><span data-ttu-id="46488-112">フェーズ 2: Azure Active Directory (AD) グループとユーザーを作成して構成する</span><span class="sxs-lookup"><span data-stu-id="46488-112">Phase 2: Create and configure your Azure Active Directory (AD) groups and users</span></span>
+
+<span data-ttu-id="46488-113">このフェーズでは、架空の組織用の Azure AD のグループとユーザーを作成して構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-113">In this phase, you create and configure the Azure AD groups and users for your fictional organization.</span></span>
   
-<span data-ttu-id="dd8fe-124">最初に、Azure Portal で一般的な組織のグループのセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-124">First, create a set of groups for a typical organization with the Azure portal.</span></span>
+<span data-ttu-id="46488-114">最初に、Azure portal で一般的な組織のグループを 2 つ作成します。</span><span class="sxs-lookup"><span data-stu-id="46488-114">First, create two groups for a typical organization with the Azure portal.</span></span>
   
-1. <span data-ttu-id="dd8fe-p102">ブラウザーで別のタブを作成し、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。必要に応じて、Office 365 E5 の試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-p102">Create a separate tab in your browser, and then go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.</span></span>
+1. <span data-ttu-id="46488-115">ブラウザーで新しいタブを開き、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。</span><span class="sxs-lookup"><span data-stu-id="46488-115">Create a separate tab in your browser, and then go to the Azure portal at [https://portal.azure.com](https://portal.azure.com).</span></span> <span data-ttu-id="46488-116">必要に応じて、Microsoft 365 E5 の試用版または有料サブスクリプション用の全体管理者アカウントの資格情報でサインインします。</span><span class="sxs-lookup"><span data-stu-id="46488-116">If needed, sign in with the credentials of the global administrator account for your Microsoft 365 E5 trial or paid subscription.</span></span>
     
-2. <span data-ttu-id="dd8fe-127">Azure Portal で **[Azure Active Directory] > [グループ]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-127">In the Azure portal, click **Azure Active Directory > Groups**.</span></span>
+2. <span data-ttu-id="46488-117">Azure Portal で **[Azure Active Directory] > [グループ]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-117">In the Azure portal, click **Azure Active Directory > Groups**.</span></span>
     
-3. <span data-ttu-id="dd8fe-128">**[グループ] - [すべてのグループ]** ブレードで、**[+ 新しいグループ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-128">On the **Groups - All groups** blade, click **+ New group**.</span></span>
+3. <span data-ttu-id="46488-118">**[グループ] - [すべてのグループ]** ブレードで、**[+ 新しいグループ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-118">On the **Groups - All groups** blade, click **+ New group**.</span></span>
     
-4. <span data-ttu-id="dd8fe-129">**[グループ]** ブレードでの手順:</span><span class="sxs-lookup"><span data-stu-id="dd8fe-129">On the **Group** blade:</span></span>
+4. <span data-ttu-id="46488-119">**[グループ]** ブレードでの手順:</span><span class="sxs-lookup"><span data-stu-id="46488-119">On the **Group** blade:</span></span>
     
-  - <span data-ttu-id="dd8fe-130">**[グループの種類]** で **[Office 365]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-130">Select **Office 365** in **Group type**.</span></span>
+  - <span data-ttu-id="46488-120">**[グループの種類]** で **[セキュリティ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="46488-120">Select **Security** in **Group type**.</span></span>
     
-  - <span data-ttu-id="dd8fe-131">**[名前]** に「**C スイート**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-131">Type **C-Suite** in **Name**.</span></span>
+  - <span data-ttu-id="46488-121">**[名前]** に「**C スイート**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="46488-121">Type **C-Suite** in **Name**.</span></span>
     
-  - <span data-ttu-id="dd8fe-132">**[メンバーシップの種類]** で **[割り当て済み]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-132">Select **Assigned** in **Membership type**.</span></span>
+  - <span data-ttu-id="46488-122">**[メンバーシップの種類]** で **[割り当て済み]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="46488-122">Select **Assigned** in **Membership type**.</span></span>
       
-5. <span data-ttu-id="dd8fe-133">**[作成]** をクリックして、 **[グループ]** ブレードを閉じます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-133">Click **Create**, and then close the **Group** blade.</span></span>
+5. <span data-ttu-id="46488-123">**[作成]** をクリックして、 **[グループ]** ブレードを閉じます。</span><span class="sxs-lookup"><span data-stu-id="46488-123">Click **Create**, and then close the **Group** blade.</span></span>
     
-6. <span data-ttu-id="dd8fe-134">次のグループ名について手順 3 から 5 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-134">Repeat steps 3-5 for the following group names:</span></span>
+6.  <span data-ttu-id="46488-124">「**Marketing staff (マーケティング スタッフ)**」という名前の新しいグループに対して、ステップ 3 から 5 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="46488-124">Repeat steps 3-5 for a new group named **Marketing staff**.</span></span>
     
-  - <span data-ttu-id="dd8fe-135">IT staff (IT スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-135">IT staff</span></span>
-    
-  - <span data-ttu-id="dd8fe-136">Research staff (研究スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-136">Research staff</span></span>
-    
-  - <span data-ttu-id="dd8fe-137">Regular staff (正規スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-137">Regular staff</span></span>
-    
-  - <span data-ttu-id="dd8fe-138">Marketing staff (マーケティング スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-138">Marketing staff</span></span>
-    
-  - <span data-ttu-id="dd8fe-139">Sales staff (営業スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-139">Sales staff</span></span>
-    
-7. <span data-ttu-id="dd8fe-140">ブラウザーの [Azure Portal] タブを開いたままにします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-140">Keep the Azure portal tab in your browser open.</span></span>
-    
-<span data-ttu-id="dd8fe-141">次に、グループのメンバーが、Office 365 と EMS のサブスクリプションのライセンスを自動的に割り当てられるように、自動ライセンスを構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-141">Next, you configure automatic licensing so that members of your groups are automatically assigned licenses for your Office 365 and EMS subscriptions.</span></span>
+<span data-ttu-id="46488-125">次に、グループのメンバーが、Office 365 と EMS のサブスクリプションのライセンスを自動的に割り当てられるように、自動ライセンスを構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-125">Next, you configure automatic licensing so that members of your groups are automatically assigned licenses for your Office 365 and EMS subscriptions.</span></span>
   
-1. <span data-ttu-id="dd8fe-142">Azure Portal で **[Azure Active Directory] > [ライセンス] > [すべての製品]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-142">In the Azure portal, click **Azure Active Directory > Licenses > All products**.</span></span>
+1. <span data-ttu-id="46488-126">Azure Portal で **[Azure Active Directory] > [ライセンス] > [すべての製品]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-126">In the Azure portal, click **Azure Active Directory > Licenses > All products**.</span></span>
     
-2. <span data-ttu-id="dd8fe-143">一覧で、 **[Enterprise Mobility + Security E5]** と **[Office 365 Enterprise E5]** を選択し、 **[割り当て]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-143">In the list, select **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5**, and then click **Assign**.</span></span>
+2. <span data-ttu-id="46488-127">一覧で、「**Microsoft 365 Enterprise E5**」を選択し、**[割り当て]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-127">In the list, select **Microsoft 365 Enterprise E5**, and then click **Assign**.</span></span>
     
-3. <span data-ttu-id="dd8fe-144">**[ライセンスの割り当て]** ブレードで、 **[ユーザーとグループ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-144">In the **Assign license** blade, click **Users and groups**.</span></span>
+3. <span data-ttu-id="46488-128">**[ライセンスの割り当て]** ブレードで、 **[ユーザーとグループ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-128">In the **Assign license** blade, click **Users and groups**.</span></span>
     
-4. <span data-ttu-id="dd8fe-145">グループの一覧で、以下を選択します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-145">In the list of groups, select the following:</span></span>
+4. <span data-ttu-id="46488-129">グループの一覧で、以下を選択します。</span><span class="sxs-lookup"><span data-stu-id="46488-129">In the list of groups, select the following:</span></span>
     
-  - <span data-ttu-id="dd8fe-146">C-Suite (C スイート)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-146">C-Suite</span></span>
+  - <span data-ttu-id="46488-130">C-Suite (C スイート)</span><span class="sxs-lookup"><span data-stu-id="46488-130">C-Suite</span></span>
     
-  - <span data-ttu-id="dd8fe-147">IT staff (IT スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-147">IT staff</span></span>
+  - <span data-ttu-id="46488-131">Marketing staff (マーケティング スタッフ)</span><span class="sxs-lookup"><span data-stu-id="46488-131">Marketing staff</span></span>
     
-  - <span data-ttu-id="dd8fe-148">Research staff (研究スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-148">Research staff</span></span>
+5. <span data-ttu-id="46488-132">**[選択]** をクリックし、 **[割り当て]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-132">Click **Select**, and then click **Assign**.</span></span>
     
-  - <span data-ttu-id="dd8fe-149">Regular staff (正規スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-149">Regular staff</span></span>
+6. <span data-ttu-id="46488-133">ブラウザーの [Azure Portal] タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="46488-133">Close the Azure portal tab in your browser.</span></span>
     
-  - <span data-ttu-id="dd8fe-150">Marketing staff (マーケティング スタッフ)</span><span class="sxs-lookup"><span data-stu-id="dd8fe-150">Marketing staff</span></span>
-    
-  - <span data-ttu-id="dd8fe-151">営業スタッフ</span><span class="sxs-lookup"><span data-stu-id="dd8fe-151">Sales staff</span></span>
-    
-5. <span data-ttu-id="dd8fe-152">**[選択]** をクリックし、 **[割り当て]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-152">Click **Select**, and then click **Assign**.</span></span>
-    
-6. <span data-ttu-id="dd8fe-153">ブラウザーの [Azure Portal] タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-153">Close the Azure portal tab in your browser.</span></span>
-    
-<span data-ttu-id="dd8fe-154">次に、[Graph 用 Azure Active Directory PowerShell モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-154">Next, you [Connect with the Azure Active Directory PowerShell for Graph module ](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="46488-134">次に、[Graph 用 Azure Active Directory PowerShell モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。</span><span class="sxs-lookup"><span data-stu-id="46488-134">Next, you [Connect with the Azure Active Directory PowerShell for Graph module ](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-<span data-ttu-id="dd8fe-155">組織名、場所、および共通のパスワードを入力し、PowerShell コマンド プロンプトまたは Integrated Script Environment (ISE) からこれらのコマンドを実行し、ユーザー アカウントを作成し、それぞれのグループに追加します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-155">Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create user accounts and add them to their groups:</span></span>
+<span data-ttu-id="46488-135">組織名、場所、および共通のパスワードを入力し、PowerShell コマンド プロンプトまたは Integrated Script Environment (ISE) からこれらのコマンドを実行し、ユーザー アカウントを作成し、それぞれのグループに追加します。</span><span class="sxs-lookup"><span data-stu-id="46488-135">Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create user accounts and add them to their groups:</span></span>
   
 ```
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
@@ -140,36 +102,8 @@ ForEach ($element in $userNames){
 New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
 }
-$groupName="IT staff"
-$userNames=@("ITAdmin1","ITAdmin2") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
-$groupName="Research staff"
-$userNames=@("Researcher1") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
-$groupName="Regular staff"
-$userNames=@("Regular1", "Regular2") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
 $groupName="Marketing staff"
 $userNames=@("Marketing1", "Marketing2") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
-$groupName="Sales staff"
-$userNames=@("SalesPerson1") 
 $groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ForEach ($element in $userNames){ 
 New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
@@ -178,412 +112,200 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> <span data-ttu-id="dd8fe-156">ここで共通のパスワードを使用することで、自動化と、開発/テスト環境の構成を容易にします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-156">The use of a common password here is for automation and ease of configuration for a dev/test environment.</span></span> <span data-ttu-id="dd8fe-157">運用環境のサブスクリプションは避けるように強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-157">Obviously, this is highly discouraged for production subscriptions.</span></span> 
+> <span data-ttu-id="46488-136">ここで共通のパスワードを使用することで、自動化と、開発/テスト環境の構成を容易にします。</span><span class="sxs-lookup"><span data-stu-id="46488-136">The use of a common password here is for automation and ease of configuration for a dev/test environment.</span></span> <span data-ttu-id="46488-137">運用環境のサブスクリプションは避けるように強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="46488-137">Obviously, this is highly discouraged for production subscriptions.</span></span> 
   
-<span data-ttu-id="dd8fe-158">次の手順を使用して、グループ ベースのライセンスが正しく機能していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-158">Use these steps to verify that group-based licensing is working correctly.</span></span>
+<span data-ttu-id="46488-138">次の手順を使用して、グループ ベースのライセンスが正しく機能していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="46488-138">Use these steps to verify that group-based licensing is working correctly.</span></span>
   
-1. <span data-ttu-id="dd8fe-159">ブラウザーの **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-159">From the **Microsoft Office Home** tab of your browser, click the **Admin** tile.</span></span>
+1. <span data-ttu-id="46488-139">ブラウザーの **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-139">From the **Microsoft Office Home** tab of your browser, click the **Admin** tile.</span></span>
     
-2. <span data-ttu-id="dd8fe-160">ブラウザーの新しい **[Microsoft 365 管理センター]** タブで、**[ユーザー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-160">From the new **Microsoft 365 admin center** tab of your browser, click **Users**.</span></span>
+2. <span data-ttu-id="46488-140">ブラウザーの新しい **[Microsoft 365 管理センター]** タブで、**[ユーザー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-140">From the new **Microsoft 365 admin center** tab of your browser, click **Users**.</span></span>
     
-3. <span data-ttu-id="dd8fe-161">ユーザーの一覧で、**[CEO]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-161">In the list of users, click **CEO**.</span></span>
+3. <span data-ttu-id="46488-141">ユーザーの一覧で、**[CEO]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-141">In the list of users, click **CEO**.</span></span>
     
-4. <span data-ttu-id="dd8fe-162">**CEO** ユーザー アカウントのプロパティが一覧表示されているウィンドウで、(**[Product licenses]\(製品ライセンス\)** の) **Enterprise Mobility + Security E5** および **Office 365 Enterprise E5** のライセンスが割り当てられていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-162">In the pane that lists the properties of the **CEO** user account, verify that it has been assigned the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses (in **Product licenses**).</span></span>
+4. <span data-ttu-id="46488-142">**CEO** ユーザー アカウントのプロパティが一覧表示されているウィンドウで、**Microsoft 365 Enterprise E5** のライセンスが割り当てられている (**製品ライセンス**内) ことを確認します。</span><span class="sxs-lookup"><span data-stu-id="46488-142">In the pane that lists the properties of the **CEO** user account, verify that it has been assigned the **Microsoft 365 Enterprise E5** license (in **Product licenses**).</span></span>
     
-## <a name="phase-3-create-office-365-retention-labels"></a><span data-ttu-id="dd8fe-163">フェーズ 3: Office 365 保持ラベルを作成する</span><span class="sxs-lookup"><span data-stu-id="dd8fe-163">Phase 3: Create Office 365 retention labels</span></span>
+## <a name="phase-3-create-office-365-retention-labels"></a><span data-ttu-id="46488-143">フェーズ 3: Office 365 保持ラベルを作成する</span><span class="sxs-lookup"><span data-stu-id="46488-143">Phase 3: Create Office 365 retention labels</span></span>
 
-<span data-ttu-id="dd8fe-164">このフェーズでは、SharePoint Online チーム サイトのドキュメント フォルダーに対してさまざまなセキュリティ レベルの保持ラベルを作成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-164">In this phase, you create the retention labels for the different levels of security for SharePoint Online team site documents folders.</span></span>
+<span data-ttu-id="46488-144">このフェーズでは、SharePoint チーム サイト内のドキュメント用に保持ラベルを作成します。</span><span class="sxs-lookup"><span data-stu-id="46488-144">In this phase, you create the retention labels for documents in your SharePoint team sites.</span></span>
 
+1. <span data-ttu-id="46488-145">全体管理者アカウントで、[Microsoft 365 コンプライアンス ポータル](https://compliance.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="46488-145">Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com) with your global admin account.</span></span>
+    
+2. <span data-ttu-id="46488-146">ブラウザーの **[ホーム - Microsoft 365 コンプライアンス]** タブで、**[分類] > [ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-146">From the **Home - Microsoft 365 compliance** tab of your browser, click **Classifications > Labels**.</span></span>
+    
+3. <span data-ttu-id="46488-147">**[保持ラベル] > [ラベルの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-147">Click **Retention labels > Create a label**.</span></span>
+    
+4. <span data-ttu-id="46488-148">**[ラベルに名前をつける]** ウィンドウで、**[ラベルに名前をつける]** のところに「**機密**」と入力してから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-148">On the **Name your label** pane, type **Sensitive** in **Name your label**, and then click **Next**.</span></span>
 
-1. <span data-ttu-id="dd8fe-165">全体管理者アカウントで、[Microsoft 365 コンプライアンス ポータル](https://compliance.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-165">Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com) with your global admin account.</span></span>
+5. <span data-ttu-id="46488-149">**[ファイル計画記述子]** ウィンドウで **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-149">On the **File plan descriptors** pane, click **Next**.</span></span>
     
-2. <span data-ttu-id="dd8fe-166">ブラウザーの **[ホーム - Microsoft 365 コンプライアンス]** タブで、**[分類] > [ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-166">From the **Home - Microsoft 365 compliance** tab of your browser, click **Classifications > Labels**.</span></span>
+6. <span data-ttu-id="46488-150">**[ラベルの設定]** ウィンドウで、必要に応じて **[保持]** を **[オン]** にして **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-150">On the **Label settings** pane, if needed, set **Retention** to **On**, and then click **Next**.</span></span>
     
-3. <span data-ttu-id="dd8fe-167">**[保持ラベル] > [ラベルの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-167">Click **Retention labels > Create a label**.</span></span>
+7. <span data-ttu-id="46488-151">**[設定の確認]** ウィンドウで、**[ラベルを作成する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-151">On the **Review your settings** pane, click **Create the label**.</span></span>
     
-4. <span data-ttu-id="dd8fe-168">**[ラベルに名前をつける]** ウィンドウで、**[ラベルに名前をつける]** のところに「**内部パブリック**」と入力してから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-168">On the **Name your label** pane, type **Internal Public** in **Name your label**, and then click **Next**.</span></span>
+8. <span data-ttu-id="46488-152">ステップ 3 から 7 を繰り返して、「**高機密**」という名前の追加の保持ラベルを作成します。</span><span class="sxs-lookup"><span data-stu-id="46488-152">Repeat steps 3-7 for an additional retention label named **Highly Confidential**.</span></span>
+    
+9. <span data-ttu-id="46488-153">**[ホーム]、[ラベル]** ウィンドウで、**[Publish labels]\(ラベルの発行\)** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-153">From the **Home > Labels** pane, click **Publish labels**.</span></span>
+    
+10. <span data-ttu-id="46488-154">**[発行するラベルを選択]** ウィンドウで、 **[発行するラベルを選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-154">On the **Choose labels to publish** pane, click **Choose labels to publish**.</span></span>
+    
+11. <span data-ttu-id="46488-155">**[Choose labels]\(ラベルの選択\)** ウィンドウで、**[追加]** をクリックして 4 つのラベルをすべて選択します。</span><span class="sxs-lookup"><span data-stu-id="46488-155">On the **Choose labels** pane, click **Add** and select all four labels.</span></span>
+    
+12. <span data-ttu-id="46488-156">[ **完了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-156">Click **Done**.</span></span>
+    
+13. <span data-ttu-id="46488-157">**[発行するラベルを選択]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-157">On the **Choose labels to publish** pane, click **Next**.</span></span>
+    
+14. <span data-ttu-id="46488-158">**[場所の選択]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-158">On the **Choose locations** pane, click **Next**.</span></span>
+    
+15. <span data-ttu-id="46488-159">**[ポリシーに名前をつける]** ウィンドウで、 **[名前]** に「 **サンプル組織**」と入力してから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-159">On the **Name your policy** pane, type **Example organization** in **Name**, and then click **Next**.</span></span>
+    
+16. <span data-ttu-id="46488-160">**[設定の確認]** ウィンドウで、 **[ラベルの発行]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-160">On the **Review your settings** pane, click **Publish labels**, and then click **Close**.</span></span>
+    
+## <a name="phase-4-create-your-team-sites"></a><span data-ttu-id="46488-161">フェーズ 4: チーム サイトを作成する</span><span class="sxs-lookup"><span data-stu-id="46488-161">Phase 4: Create your SharePoint Online team sites</span></span>
 
-5. <span data-ttu-id="dd8fe-169">**[ファイル計画記述子]** ウィンドウで **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-169">On the **File plan descriptors** pane, click **Next**.</span></span>
-    
-6. <span data-ttu-id="dd8fe-170">**[ラベルの設定]** ウィンドウで、必要に応じて **[保持]** を **[オン]** にして **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-170">On the **Label settings** pane, if needed, set **Retention** to **On**, and then click **Next**.</span></span>
-    
-7. <span data-ttu-id="dd8fe-171">**[設定の確認]** ウィンドウで、**[ラベルを作成する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-171">On the **Review your settings** pane, click **Create the label**.</span></span>
-    
-8. <span data-ttu-id="dd8fe-172">次の名前の追加ラベルについて、手順 3 から 7 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-172">Repeat steps 3-7 for additional labels with these names:</span></span>
-    
-  - <span data-ttu-id="dd8fe-173">プライベート</span><span class="sxs-lookup"><span data-stu-id="dd8fe-173">Private</span></span>
-    
-  - <span data-ttu-id="dd8fe-174">機密</span><span class="sxs-lookup"><span data-stu-id="dd8fe-174">Sensitive</span></span>
-    
-  - <span data-ttu-id="dd8fe-175">非常に機密性の高い社外秘</span><span class="sxs-lookup"><span data-stu-id="dd8fe-175">Highly Confidential</span></span>
-  
-9. <span data-ttu-id="dd8fe-176">**[ホーム]、[ラベル]** ウィンドウで、**[Publish labels]\(ラベルの発行\)** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-176">From the **Home > Labels** pane, click **Publish labels**.</span></span>
-    
-10. <span data-ttu-id="dd8fe-177">**[発行するラベルを選択]** ウィンドウで、 **[発行するラベルを選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-177">On the **Choose labels to publish** pane, click **Choose labels to publish**.</span></span>
-    
-11. <span data-ttu-id="dd8fe-178">**[Choose labels]\(ラベルの選択\)** ウィンドウで、**[追加]** をクリックして 4 つのラベルをすべて選択します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-178">On the **Choose labels** pane, click **Add** and select all four labels.</span></span>
-    
-12. <span data-ttu-id="dd8fe-179">[ **完了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-179">Click **Done**.</span></span>
-    
-13. <span data-ttu-id="dd8fe-180">**[発行するラベルを選択]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-180">On the **Choose labels to publish** pane, click **Next**.</span></span>
-    
-14. <span data-ttu-id="dd8fe-181">**[場所の選択]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-181">On the **Choose locations** pane, click **Next**.</span></span>
-    
-15. <span data-ttu-id="dd8fe-182">**[ポリシーに名前をつける]** ウィンドウで、 **[名前]** に「 **サンプル組織**」と入力してから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-182">On the **Name your policy** pane, type **Example organization** in **Name**, and then click **Next**.</span></span>
-    
-16. <span data-ttu-id="dd8fe-183">**[設定の確認]** ウィンドウで、 **[ラベルの発行]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-183">On the **Review your settings** pane, click **Publish labels**, and then click **Close**.</span></span>
-    
-## <a name="phase-4-create-your-sharepoint-online-team-sites"></a><span data-ttu-id="dd8fe-184">フェーズ 4: SharePoint Online チーム サイトを作成する</span><span class="sxs-lookup"><span data-stu-id="dd8fe-184">Phase 4: Create your SharePoint Online team sites</span></span>
+<span data-ttu-id="46488-162">このフェーズでは、サンプル組織の機密および高機密のチーム サイトを作成し、構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-162">In this phase, you create and configure sensitive and highly confidential teams for your example organization.</span></span>
 
-<span data-ttu-id="dd8fe-185">このフェーズでは、例の組織に 4 種類の SharePoint Online チーム サイトを作成して構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-185">In this phase, you create and configure the four types of SharePoint Online team sites for your example organization.</span></span>
-  
-### <a name="organization-wide-team-site"></a><span data-ttu-id="dd8fe-186">Organization wide チーム サイト</span><span class="sxs-lookup"><span data-stu-id="dd8fe-186">Organization wide team site</span></span>
+### <a name="sensitive-team-site-for-marketing-campaigns"></a><span data-ttu-id="46488-163">マーケティング キャンペーン向けの機密チーム サイト</span><span class="sxs-lookup"><span data-stu-id="46488-163">Sensitive team for marketing campaigns</span></span>
 
-<span data-ttu-id="dd8fe-187">ベースラインのパブリック SharePoint Online チーム サイトを作成するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-187">To create a baseline public SharePoint Online team site, do the following:</span></span>
-  
-1. <span data-ttu-id="dd8fe-188">必要な場合は、試用版サブスクリプションの全体管理者アカウントの資格情報で [Office 365 ポータル](https://portal.office.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-188">If needed, sign in to the [Office 365 portal](https://portal.office.com) with the credentials of the global administrator account of your trial subscription.</span></span>
-    
-2. <span data-ttu-id="dd8fe-189">タイルのリストで、**[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-189">In the list of tiles, click **SharePoint**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-190">ブラウザーの新しい **SharePoint** タブで、**[+ サイトの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-190">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-191">**[サイトの作成]** ページで、**[チーム サイト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-191">On the **Create a site** page, click **Team site**.</span></span>
-    
-5. <span data-ttu-id="dd8fe-192">**[サイト名]** に「**組織全体**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-192">In **Site name**, type **Organization wide**.</span></span> 
-    
-6. <span data-ttu-id="dd8fe-193">**[チーム サイトの説明]** に、「 **組織全体の SharePoint サイト**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-193">In **Team site description**, type **SharePoint site for the entire organization**.</span></span>
-    
-7. <span data-ttu-id="dd8fe-194">**[プライバシー設定]** で、 **[パブリック - 組織の全ユーザーがこのサイトにアクセス可能]** を選択して **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-194">In **Privacy settings**, select **Public - anyone in the organization can access this site**, and then click **Next**.</span></span>
-    
-8. <span data-ttu-id="dd8fe-195">**[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-195">On the **Who do you want to add?** pane, click **Finish**.</span></span>
-    
-<span data-ttu-id="dd8fe-196">次に、組織全体のチーム サイトのドキュメント フォルダーを [内部パブリック] ラベル用に構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-196">Next, configure the documents folder of the Organization wide team site for the Internal Public label.</span></span>
-  
-1. <span data-ttu-id="dd8fe-197">ブラウザーの **[組織全体 - ホーム]** タブで、 **[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-197">In the **Organization wide-Home** tab of your browser, click **Documents**.</span></span>
-    
-2. <span data-ttu-id="dd8fe-198">[設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-198">Click the settings icon, and then click **Library settings**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-199">**[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-199">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-200">**[設定 - ラベルの適用]** で **[内部パブリック]** をクリックし、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-200">In **Settings-Apply Label**, select **Internal Public**, and then click **Save**.</span></span>
-    
-### <a name="project-1-team-site"></a><span data-ttu-id="dd8fe-201">プロジェクト 1 チーム サイト</span><span class="sxs-lookup"><span data-stu-id="dd8fe-201">Project 1 team site</span></span>
+<span data-ttu-id="46488-164">最初に、進行中のマーケティング キャンペーンで共同作業を行えるように、マーケティング グループのメンバーを対象とした機密レベルのチーム サイトを作成します。</span><span class="sxs-lookup"><span data-stu-id="46488-164">To create a sensitive-level team for members of the marketing group to collaborate on ongoing marketing campaigns:</span></span>
 
-<span data-ttu-id="dd8fe-202">組織内のプロジェクト用にベースラインのプライベート SharePoint Online チーム サイトを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-202">To create a baseline private SharePoint Online team site for a project within the organization, do the following:</span></span>
-  
-1. <span data-ttu-id="dd8fe-203">必要な場合は、試用版サブスクリプションの全体管理者アカウントの資格情報で [Office 365 ポータル](https://portal.office.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-203">If needed, sign in to the [Office 365 portal](https://portal.office.com) with the credentials of the global administrator account of your trial subscription.</span></span>
-    
-2. <span data-ttu-id="dd8fe-204">タイルのリストで、**[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-204">In the list of tiles, click **SharePoint**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-205">ブラウザーの新しい **SharePoint** タブで、**[+ サイトの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-205">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-206">**[サイトの作成]** ページで、**[チーム サイト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-206">On the **Create a site** page, click **Team site**.</span></span>
-    
-5. <span data-ttu-id="dd8fe-207">**[サイト名]** に、「 **プロジェクト 1**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-207">In **Site name**, type **Project 1**.</span></span> 
-    
-6. <span data-ttu-id="dd8fe-208">**[チーム サイトの説明]** に、「 **プロジェクト 1 の SharePoint サイト**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-208">In **Team site description,** type **SharePoint site for Project 1**.</span></span>
-    
-7. <span data-ttu-id="dd8fe-209">**[プライバシー設定]** で、 **[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-209">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
-    
-8. <span data-ttu-id="dd8fe-210">**[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-210">On the **Who do you want to add?** pane, click **Finish**.</span></span>
-    
-<span data-ttu-id="dd8fe-211">次に、プライベート ラベル用に Project 1 チーム サイトのドキュメント フォルダーを構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-211">Next, configure the documents folder of the Project 1 team site for the Private label.</span></span>
-  
-1. <span data-ttu-id="dd8fe-212">ブラウザーの **[プロジェクト 1 - ホーム]** タブで、 **[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-212">In the **Project 1-Home** tab of your browser, click **Documents**.</span></span>
-    
-2. <span data-ttu-id="dd8fe-213">[設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-213">Click the settings icon, and then click **Library settings**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-214">**[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-214">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-215">**[設定 - ラベルの適用]** で **[プライベート]** をクリックし、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-215">In **Settings-Apply Label**, select **Private**, and then click **Save**.</span></span>
-    
-### <a name="marketing-campaigns-team-site"></a><span data-ttu-id="dd8fe-216">マーケティング キャンペーン チーム サイト</span><span class="sxs-lookup"><span data-stu-id="dd8fe-216">Marketing campaigns team site</span></span>
+1. <span data-ttu-id="46488-165">「**マーケティング キャンペーン**」という名前の[プライベート チーム サイトを新規作成](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)します。</span><span class="sxs-lookup"><span data-stu-id="46488-165">[Create a new private team](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d) with the name **Marketing Campaigns**.</span></span>
+2.  <span data-ttu-id="46488-166">SharePoint チーム サイトのツール バーで、設定アイコンをクリックしてから、[**サイトの権限**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-166">In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.</span></span>
+3.  <span data-ttu-id="46488-167">[**サイトの権限**] ウィンドウで、[**共有の設定**] の [**共有設定を変更します**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-167">In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.</span></span>
+4.  <span data-ttu-id="46488-168">**[共有アクセス許可]** で、**[サイト所有者のみが、ファイル、フォルダー、およびサイトを共有できます]** を選択して、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-168">Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**, and then click **Save**.</span></span>
 
-<span data-ttu-id="dd8fe-217">マーケティング キャンペーン リソース用の機密レベルの分離した SharePoint Online チーム サイトを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-217">To create a sensitive-level isolated SharePoint Online team site for marketing campaign resources, do the following:</span></span>
+<span data-ttu-id="46488-169">次に、マーケティング キャンペーン SharePoint チーム サイトのドキュメント フォルダーを [機密] ラベル用に構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-169">Next, configure the documents folder of the underlying Marketing Campaigns SharePoint site for the Sensitive label.</span></span>
 
- 
-1. <span data-ttu-id="dd8fe-218">必要な場合は、試用版サブスクリプションの全体管理者アカウントの資格情報で [Office 365 ポータル](https://portal.office.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-218">If needed, sign in to the [Office 365 portal](https://portal.office.com) with the credentials of the global administrator account of your trial subscription.</span></span>
-    
-2. <span data-ttu-id="dd8fe-219">タイルのリストで、**[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-219">In the list of tiles, click **SharePoint**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-220">ブラウザーの新しい **SharePoint** タブで、**[+ サイトの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-220">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-221">**[サイトの作成]** ページで、**[チーム サイト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-221">On the **Create a site** page, click **Team site**.</span></span>
-    
-5. <span data-ttu-id="dd8fe-222">**[Team site name]\(チーム サイト名\)** に、「**Marketing campaigns**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-222">In **Team site name**, type **Marketing campaigns**.</span></span>
-    
-6. <span data-ttu-id="dd8fe-223">**[チーム サイトの説明]** に、「 **マーケティング キャンペーン リソースの SharePoint サイト (機密)**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-223">In **Team site description**, type **SharePoint site for marketing campaign resources (sensitive)**.</span></span>
-    
-7.  <span data-ttu-id="dd8fe-224">**[プライバシー設定]** で、 **[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-224">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
-    
-8. <span data-ttu-id="dd8fe-225">**[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-225">On the **Who do you want to add?** pane, click **Finish**.</span></span>
-    
-9. <span data-ttu-id="dd8fe-226">ブラウザーの新しい **[マーケティング キャンペーン]** タブのツール バーで、設定アイコンをクリックしてから、 **[サイトのアクセス許可]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-226">On the new **Marketing campaigns** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
-    
-10. <span data-ttu-id="dd8fe-227">**[サイトの権限]** ウィンドウで、 **[高度な権限の設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-227">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
-    
-11. <span data-ttu-id="dd8fe-228">ブラウザーの新しい **[アクセス許可]** タブで、**[アクセス要求の設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-228">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
-    
-12. <span data-ttu-id="dd8fe-229">**[アクセス要求の設定]** ダイアログ ボックスで、**[サイトと個別のファイルおよびフォルダーの共有をメンバーに許可します]** および **[メンバーが、他のユーザーをサイト メンバー グループに招待することを許可します]** チェック ボックスをクリアし、**[すべてのアクセス要求を送信する]** に「**ITAdmin1@**\<組織名>**.onmicrosoft.com**」と入力し、**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-229">In the **Access Request Settings** dialog box, clear the **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** check boxes, type **ITAdmin1@**\<your organization name>**.onmicrosoft.com** in **Send all requests for access**, and then click **OK**.</span></span>
-    
-13. <span data-ttu-id="dd8fe-230">一覧にある **[マーケティング キャンペーン メンバー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-230">Click **Marketing campaigns Members** in the list.</span></span>
-    
-14. <span data-ttu-id="dd8fe-231">**[ユーザーとグループ]** ページで、 **[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-231">On the **People and Groups** page, click **New**.</span></span>
-    
-15. <span data-ttu-id="dd8fe-232">**[共有]** ダイアログ ボックスで、「 **マーケティング スタッフ**」と入力し、それを選択してから、 **[共有]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-232">In the **Share** dialog box, type **Marketing staff**, select it, and then click **Share**.</span></span>
-    
-16. <span data-ttu-id="dd8fe-233">**Researcher1** ユーザー アカウントに対して手順 14 と 15 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-233">Repeat steps 14 and 15 for the **Researcher1** user account.</span></span>
-    
-17. <span data-ttu-id="dd8fe-234">ブラウザーの戻るボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-234">Click the back button on your browser.</span></span>
-    
-18. <span data-ttu-id="dd8fe-235">一覧にある **[マーケティング キャンペーン所有者]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-235">Click **Marketing campaigns Owners** in the list.</span></span>
-    
-19. <span data-ttu-id="dd8fe-236">**[ユーザーとグループ]** ページで、 **[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-236">On the **People and Groups** page, click **New**.</span></span>
-    
-20. <span data-ttu-id="dd8fe-237">**[共有]** ダイアログ ボックスに「 **IT スタッフ**」と入力し、それを選択して、 **[共有]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-237">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
-    
-21. <span data-ttu-id="dd8fe-238">ブラウザーの戻るボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-238">Click the back button on your browser.</span></span>
-    
-22. <span data-ttu-id="dd8fe-239">ブラウザーの **[ユーザーとグループ]** タブを閉じて、ブラウザーの **[マーケティング キャンペーン - ホーム]** タブをクリックしてから、 **[サイトのアクセス許可]** ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-239">Close the **People and Groups** tab in your browser, click the **Marketing campaigns-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
-    
-<span data-ttu-id="dd8fe-240">権限を構成した結果を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-240">Here are the results of configuring permissions:</span></span>
-  
-- <span data-ttu-id="dd8fe-241">**Marketing campaigns - メンバー** SharePoint グループには、**Marketing campaigns** グループ (全体管理者ユーザー アカウントを含む)、**Marketing staff (マーケティング スタッフ)** グループ (Marketing1 および Marketing2 のユーザー アカウントを含む)、および **Researcher1** ユーザー アカウントのみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-241">The **Marketing campaigns-Members** SharePoint group contains only the **Marketing campaigns** group (which contains the global administrator user account), the **Marketing staff** group (which contains the Marketing1 and Marketing2 user accounts), and the **Researcher1** user account.</span></span>
-    
-- <span data-ttu-id="dd8fe-242">**Marketing campaigns - 所有者** SharePoint グループには、**IT staff (IT スタッフ)** グループ (ITAdmin1 および ITAdmin2 のユーザー アカウントのみを含む) のみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-242">The **Marketing campaigns-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
-    
-- <span data-ttu-id="dd8fe-243">**Marketing campaigns - 閲覧者** SharePoint グループには、グループまたはユーザー アカウントは含まれません。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-243">The **Marketing campaigns-Visitors** SharePoint group contains no groups or user accounts.</span></span>
-    
-- <span data-ttu-id="dd8fe-244">メンバーは、サイト レベルのアクセス許可を変更できません (これを実行できるのは、 **[マーケティング キャンペーン - 所有者]** グループのメンバーだけです)。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-244">Members cannot modify site-level permissions (this can only be done by members of the **Marketing campaigns-Owners** group).</span></span>
-    
-- <span data-ttu-id="dd8fe-245">他のユーザー アカウントは、サイトやそのリソースにアクセスできませんが、サイトへのアクセスを要求することができます。これにより、ITAdmin1 ユーザー アカウントのメールボックスに電子メールが送信されます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-245">Other user accounts cannot access the site or its resources, but can request access to the site, which will send an email to the ITAdmin1 user account mailbox.</span></span>
-    
-<span data-ttu-id="dd8fe-246">次に、マーケティング キャンペーン チーム サイトのドキュメント フォルダーを [機密] ラベル用に構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-246">Next, configure the documents folder of the Marketing campaigns team site for the Sensitive label.</span></span>
-  
-1. <span data-ttu-id="dd8fe-247">ブラウザーの **[マーケティング キャンペーン - ホーム]** タブで、 **[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-247">In the **Marketing campaigns-Home** tab of your browser, click **Documents**.</span></span>
-    
-2. <span data-ttu-id="dd8fe-248">[設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-248">Click the settings icon, and then click **Library settings**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-249">**[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-249">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-250">**[設定 - ラベルの適用]** で **[機密]** をクリックし、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-250">In **Settings-Apply Label**, select **Sensitive**, and then click **Save**.</span></span>
-    
-<span data-ttu-id="dd8fe-251">次に、機密ラベルのある SharePoint Online チーム サイト上のドキュメントを共有しようとしているユーザーに通知を行うデータ損失防止 (DLP) ポリシーを構成します。このチーム サイトには、組織外部のマーケティング キャンペーン サイトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-251">Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label, which includes the Marketing campaigns site, outside the organization.</span></span>
+1.  <span data-ttu-id="46488-170">ブラウザーの **[マーケティング キャンペーン - ホーム]** タブで、**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-170">In the **Marketing Campaigns-Home** tab of your browser, click **Documents**.</span></span>
+2.  <span data-ttu-id="46488-171">設定アイコンをクリックし、**[ライブラリの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-171">Click the settings icon, and then click **Library settings**.</span></span>
+3.  <span data-ttu-id="46488-172">**[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-172">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
+4.  <span data-ttu-id="46488-173">**[設定 - ラベルの適用]** で **[機密]** をクリックし、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-173">In **Settings-Apply Label**, select **Sensitive**, and then click **Save**.</span></span> 
 
-1. <span data-ttu-id="dd8fe-252">全体管理者アカウントで、[Microsoft 365 コンプライアンス ポータル](https://compliance.microsoft.com/)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-252">Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com/) with your global admin account.</span></span>
-    
-2. <span data-ttu-id="dd8fe-253">ブラウザーの新しい **[Microsoft 365 コンプライアンス]** タブで、**[ポリシー] > [データ損失防止]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-253">On the new **Microsoft 365 compliance** tab in your browser, click **Policies > Data loss prevention**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-254">**[ホーム] > [データ損失防止]** ウィンドウで、**[ポリシーの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-254">In the **Home > Data loss prevention** pane, click **Create a policy**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-255">**[テンプレートを利用するか、カスタム ポリシーを作成します]** ウィンドウで、**[カスタム]** をクリックしてから **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-255">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
-    
-5. <span data-ttu-id="dd8fe-256">**[ポリシーに名前をつける]** ウィンドウで、 **[名前]** に「 **機密ラベル SharePoint Online チーム サイト**」と入力してから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-256">In the **Name your policy** pane, type **Sensitive label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
-    
-6. <span data-ttu-id="dd8fe-257">**[場所の選択]** ウィンドウで、**[特定の場所を選択]** をクリックしてから **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-257">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
-    
-7. <span data-ttu-id="dd8fe-258">場所の一覧で、**[Exchange メール]**、**[OneDrive アカウント]**、および **[Teams のチャットとチャネルのメッセージ]** の場所を無効にして、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-258">In the list of locations, disable the **Exchange email**, **OneDrive accounts**, and **Teams chat and channel messages** locations, and then click **Next**.</span></span>
-    
-8. <span data-ttu-id="dd8fe-259">**[保護するコンテンツの種類をカスタマイズする]** ウィンドウで、**[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-259">In the **Customize the type of content you want to protect** pane, click **Edit**.</span></span>
-    
-9. <span data-ttu-id="dd8fe-260">**[保護するコンテンツの種類を選ぶ]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、**[保持ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-260">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Retention labels**.</span></span>
-    
-10. <span data-ttu-id="dd8fe-261">**[保持ラベル]** ウィンドウで、**[追加]** をクリックして **[機密]** ラベルを選択し、**[追加]** をクリックしてから **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-261">In the **Retention labels** pane, click **Add**, select the **Sensitive** label, click **Add**, and then click **Done**.</span></span>
-    
-11. <span data-ttu-id="dd8fe-262">**[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-262">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
-    
-12. <span data-ttu-id="dd8fe-263">**保護するコンテンツの種類をカスタマイズする** ウィンドウで、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-263">In the **Customize the type of content you want to protect** pane, click **Next**.</span></span>
+<span data-ttu-id="46488-174">次に、機密ラベルが付けられているドキュメント (組織外部のマーケティング キャンペーン サイト内のドキュメントを含む) を共有しようとしているユーザーに通知を行うデータ損失防止 (DLP) ポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-174">Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on the underlying SharePoint site with the Sensitive label, which includes the Marketing Campaigns site, outside the organization.</span></span>
 
-13. <span data-ttu-id="dd8fe-264">**機密性の高い情報が検出された場合に実行する操作** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-264">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
+1. <span data-ttu-id="46488-175">全体管理者アカウントで、[Microsoft 365 コンプライアンス ポータル](https://compliance.microsoft.com/)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="46488-175">Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com/) with your global admin account.</span></span>
     
-14. <span data-ttu-id="dd8fe-265">**[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、**[ポリシー ヒント テキストをカスタマイズする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-265">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
+2. <span data-ttu-id="46488-176">ブラウザーの新しい **[Microsoft 365 コンプライアンス]** タブで、**[ポリシー] > [データ損失防止]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-176">On the new **Microsoft 365 compliance** tab in your browser, click **Policies > Data loss prevention**.</span></span>
     
-15. <span data-ttu-id="dd8fe-266">機密性の高いファイルを保護するために Azure Information Protection を実装したかどうかに応じて、テキスト ボックスに、次のいずれかのヒントを入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-266">In the text box, type or paste in one of the following tips, depending on if you implemented Azure Information Protection to protect highly confidential files:</span></span>
+3. <span data-ttu-id="46488-177">**[ホーム] > [データ損失防止]** ウィンドウで、**[ポリシーの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-177">In the **Home > Data loss prevention** pane, click **Create a policy**.</span></span>
     
-  - <span data-ttu-id="dd8fe-p104">組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-p104">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
+4. <span data-ttu-id="46488-178">**[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-178">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
     
-16. <span data-ttu-id="dd8fe-270">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-270">Click **OK**.</span></span>
+5. <span data-ttu-id="46488-179">**[ポリシーに名前をつける]** ウィンドウで、**[名前]** に「**機密ラベル SharePoint サイト**」と入力してから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-179">In the **Name your policy** pane, type **Sensitive label SharePoint sites** in **Name**, and then click **Next**.</span></span>
     
-17. <span data-ttu-id="dd8fe-271">**[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-271">In the **What do you want to do if we detect sensitive info?** pane, click **Next**.</span></span>
+6. <span data-ttu-id="46488-180">**[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-180">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
     
-18. <span data-ttu-id="dd8fe-272">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-272">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
+7. <span data-ttu-id="46488-181">場所の一覧で、**[Exchange メール]**、**[OneDrive アカウント]**、および **[Teams のチャットとチャネルのメッセージ]** の場所を無効にして、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-181">In the list of locations, disable the **Exchange email**, **OneDrive accounts**, and **Teams chat and channel messages** locations, and then click **Next**.</span></span>
     
-19. <span data-ttu-id="dd8fe-273">**[設定の確認]** ウィンドウで、**[作成]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-273">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
-  
-### <a name="company-strategy-team-site"></a><span data-ttu-id="dd8fe-274">会社戦略のチーム サイト</span><span class="sxs-lookup"><span data-stu-id="dd8fe-274">Company strategy team site</span></span>
+8. <span data-ttu-id="46488-182">**[保護するコンテンツの種類をカスタマイズする]** ウィンドウで、**[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-182">In the **Customize the type of content you want to protect** pane, click **Edit**.</span></span>
+    
+9. <span data-ttu-id="46488-183">**[保護するコンテンツの種類を選ぶ]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、**[保持ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-183">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Retention labels**.</span></span>
+    
+10. <span data-ttu-id="46488-184">**[保持ラベル]** ウィンドウで、**[追加]** をクリックして **[機密]** ラベルを選択し、**[追加]** をクリックしてから **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-184">In the **Retention labels** pane, click **Add**, select the **Sensitive** label, click **Add**, and then click **Done**.</span></span>
+    
+11. <span data-ttu-id="46488-185">**[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-185">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
+    
+12. <span data-ttu-id="46488-186">**保護するコンテンツの種類をカスタマイズする** ウィンドウで、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-186">In the **Customize the type of content you want to protect** pane, click **Next**.</span></span>
 
-<span data-ttu-id="dd8fe-275">組織の最高責任者の戦略上の会社のリソース用に高機密レベルで分離した SharePoint Online チーム サイトを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-275">To create an isolated SharePoint Online team site at the highly confidential level for strategic company resources of the chief executives of the organization, do the following:</span></span>
-  
-1. <span data-ttu-id="dd8fe-276">必要な場合は、試用版サブスクリプションの全体管理者アカウントの資格情報で [Office 365 ポータル](https://portal.office.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-276">If needed, sign in to the [Office 365 portal](https://portal.office.com) with the credentials of the global administrator account of your trial subscription.</span></span>
+13. <span data-ttu-id="46488-187">**機密性の高い情報が検出された場合に実行する操作** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-187">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
     
-2. <span data-ttu-id="dd8fe-277">タイルのリストで、**[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-277">In the list of tiles, click **SharePoint**.</span></span>
+14. <span data-ttu-id="46488-188">**ポリシー ヒントと電子メール通知のカスタマイズ** ウィンドウで、**ポリシー ヒントのテキストをカスタマイズする** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-188">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
     
-3. <span data-ttu-id="dd8fe-278">ブラウザーの新しい **SharePoint** タブで、**[+ サイトの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-278">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
+15. <span data-ttu-id="46488-189">次の内容をテキスト ボックスに入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="46488-189">In the text box, type or paste in the following:</span></span>
     
-4. <span data-ttu-id="dd8fe-279">**[サイトの作成]** ページで、 **[チーム サイト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-279">On the **Create a site** page, click **Team site**.</span></span>
+  - <span data-ttu-id="46488-p104">組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。</span><span class="sxs-lookup"><span data-stu-id="46488-p104">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
     
-5. <span data-ttu-id="dd8fe-280">**[Team site name]\(チーム サイト名\)** に「**Company strategy**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-280">In **Team site name**, type **Company strategy**.</span></span>
+16. <span data-ttu-id="46488-193">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-193">Click **OK**.</span></span>
     
-6. <span data-ttu-id="dd8fe-281">**[チーム サイトの説明]** に、「 **会社戦略の SharePoint サイト (高機密)**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-281">In **Team site description**, type **SharePoint site for company strategy (highly confidential)**.</span></span>
+17. <span data-ttu-id="46488-194">**[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-194">In the **What do you want to do if we detect sensitive info?** pane, click **Next**.</span></span>
     
-7.  <span data-ttu-id="dd8fe-282">**[プライバシー設定]** で、 **[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-282">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
+18. <span data-ttu-id="46488-195">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-195">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
     
-8. <span data-ttu-id="dd8fe-283">**[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-283">On the **Who do you want to add?** pane, click **Finish**.</span></span>
-    
-9. <span data-ttu-id="dd8fe-284">ブラウザーの新しい **[会社戦略]** タブのツール バーで、設定アイコンをクリックしてから、 **[サイトのアクセス許可]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-284">On the new **Company strategy** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
-    
-10. <span data-ttu-id="dd8fe-285">**[サイトの権限]** ウィンドウで、 **[高度な権限の設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-285">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
-    
-11. <span data-ttu-id="dd8fe-286">ブラウザーの新しい **[アクセス許可]** タブで、 **[アクセス要求の設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-286">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
-    
-12. <span data-ttu-id="dd8fe-287">**[アクセス要求の設定]** ダイアログ ボックスの **[サイトと個別のファイルおよびフォルダーの共有をメンバーに許可します]** と **[メンバーが、他のユーザーをサイト メンバー グループに招待することを許可します]** をクリアし (これによって、3 つのチェック ボックスがすべてクリアされる)、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-287">In the **Access Request Settings** dialog box, clear **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** (so that all three check boxes are cleared), and then click **OK**.</span></span>
-    
-13. <span data-ttu-id="dd8fe-288">一覧にある **[会社戦略メンバー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-288">Click **Company strategy Members** in the list.</span></span>
-    
-14. <span data-ttu-id="dd8fe-289">**[ユーザーとグループ]** ページで、 **[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-289">On the **People and Groups** page, click **New**.</span></span>
-    
-15. <span data-ttu-id="dd8fe-290">**[共有]** ダイアログ ボックスで、「 **C スイート**」と入力し、それを選択してから、 **[共有]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-290">In the **Share** dialog box, type **C-Suite**, select it, and then click **Share**.</span></span>
-    
-16. <span data-ttu-id="dd8fe-291">一覧にある **[会社戦略所有者]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-291">Click **Company strategy Owners** in the list.</span></span>
-    
-17. <span data-ttu-id="dd8fe-292">**[ユーザーとグループ]** ページで、 **[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-292">On the **People and Groups** page, click **New**.</span></span>
-    
-18. <span data-ttu-id="dd8fe-293">**[共有]** ダイアログ ボックスに「 **IT スタッフ**」と入力し、それを選択して、 **[共有]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-293">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
-    
-19. <span data-ttu-id="dd8fe-294">ブラウザーの戻るボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-294">Click the back button on your browser.</span></span>
-    
-20. <span data-ttu-id="dd8fe-295">ブラウザーの **[ユーザーとグループ]** タブを閉じて、ブラウザーの **[会社戦略 - ホーム]** タブをクリックしてから、 **[サイトのアクセス許可]** ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-295">Close the **People and Groups** tab in your browser, click the **Company strategy-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
-    
-<span data-ttu-id="dd8fe-296">権限を構成した結果を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-296">Here are the results of configuring permissions:</span></span>
-  
-- <span data-ttu-id="dd8fe-297">**[会社戦略 - メンバー]** SharePoint グループには、 **[C スイート]** グループ (CEO、CFO、および CIO ユーザー アカウントのみを含む) と **[会社戦略]** グループ (全体管理者ユーザー アカウントのみを含む) のみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-297">The **Company strategy-Members** SharePoint group contains only the **C-Suite** group (which contains only the CEO, CFO, and CIO user accounts) and the **Company strategy** group (which contains only the global administrator user account).</span></span>
-    
-- <span data-ttu-id="dd8fe-298">**[会社戦略 - 所有者]** SharePoint グループには、 **[IT スタッフ]** グループ (ITAdmin1 ユーザー アカウントと ITAdmin2 ユーザー アカウントのみを含む) のみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-298">The **Company strategy-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
-    
-- <span data-ttu-id="dd8fe-299">**[会社戦略 - 訪問者]** SharePoint グループには、グループまたはユーザー アカウントは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-299">The **Company strategy-Visitors** SharePoint group contains no groups or user accounts.</span></span>
-    
-- <span data-ttu-id="dd8fe-300">メンバーはサイト レベルのアクセス許可を変更できません (これを実行できるのは、 **[会社戦略 - 所有者]** グループのメンバーだけです)。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-300">Members cannot modify site-level permissions (this can only be done by members of the **Company strategy-Owners** group).</span></span>
-    
-- <span data-ttu-id="dd8fe-p105">その他のユーザー アカウントは、サイトやそのリソースにアクセスすることも、そのサイトへのアクセスを要求することもできません。サイトへの追加のアクセス許可は、全体管理者または **[会社戦略 - 所有者]** グループのメンバーが行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-p105">Other user accounts cannot access the site or its resources or request access to the site. Additional permissions to the site must be done by the global administrator or by a member of the **Company strategy-Owners** group.</span></span>
-    
-<span data-ttu-id="dd8fe-303">次に、会社戦略チーム サイトのドキュメント フォルダーを [高機密] ラベル用に構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-303">Next, configure the documents folder of the Company strategy team site for the Highly Confidential label.</span></span>
-  
-1. <span data-ttu-id="dd8fe-304">ブラウザーの **[会社戦略 - ホーム]** タブで、 **[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-304">In the **Company strategy-Home** tab of your browser, click **Documents**.</span></span>
-    
-2. <span data-ttu-id="dd8fe-305">[設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-305">Click the settings icon, and then click **Library settings**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-306">**[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-306">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-307">**[設定 - ラベルの適用]** で **[高機密]** をクリックし、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-307">In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**.</span></span>
-    
-<span data-ttu-id="dd8fe-308">次に、高機密ラベルのある SharePoint Online チーム サイト上のドキュメントをユーザーが共有するのをブロックする DLP ポリシーを構成します。このチーム サイトには、組織外部の会社戦略サイトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-308">Next, configure a DLP policy that blocks users when they share a document on a SharePoint Online team site with the Highly Confidential label, which includes the Company strategy site, outside the organization.</span></span>
-  
-1. <span data-ttu-id="dd8fe-309">全体管理者で、[Microsoft 365 コンプライアンス ポータル](https://compliance.microsoft.com/)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-309">Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com/) with your global admin.</span></span>
-    
-2. <span data-ttu-id="dd8fe-310">ブラウザーの新しい **[Microsoft 365 コンプライアンス]** タブで、**[ポリシー] > [データ損失防止]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-310">On the new **Microsoft 365 compliance** tab in your browser, click **Policies > Data loss prevention**.</span></span>
-    
-3. <span data-ttu-id="dd8fe-311">**[ホーム] > [データ損失防止]** ウィンドウで、**[ポリシーの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-311">In the **Home > Data loss prevention** pane, click **Create a policy**.</span></span>
-    
-4. <span data-ttu-id="dd8fe-312">**[テンプレートを利用するか、カスタム ポリシーを作成します]** ウィンドウで、**[カスタム]** をクリックしてから **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-312">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
-    
-5. <span data-ttu-id="dd8fe-313">**[ポリシーに名前をつける]** ウィンドウで、 **[名前]** に「 **高機密ラベル SharePoint Online チーム サイト**」と入力してから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-313">In the **Name your policy** pane, type **Highly Confidential label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
-    
-6. <span data-ttu-id="dd8fe-314">**[場所の選択]** ウィンドウで、**[特定の場所を選択]** をクリックしてから **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-314">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
-    
-7. <span data-ttu-id="dd8fe-315">場所の一覧で、**[Exchange メール]**、**[OneDrive アカウント]**、および **[Teams のチャットとチャネルのメッセージ]** の場所を無効にして、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-315">In the list of locations, disable the **Exchange email**, **OneDrive accounts**, and **Teams chat and channel messages** locations, and then click **Next**.</span></span>
-    
-8. <span data-ttu-id="dd8fe-316">**[保護するコンテンツの種類をカスタマイズする]** ウィンドウで、**[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-316">In the **Customize the type of content you want to protect** pane, click **Edit**.</span></span>
-    
-9. <span data-ttu-id="dd8fe-317">**[保護するコンテンツの種類を選ぶ]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、**[保持ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-317">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Retention labels**.</span></span>
-    
-10. <span data-ttu-id="dd8fe-318">**[保持ラベル]** ウィンドウで、**[追加]** をクリックして **[高機密]** ラベルを選択し、**[追加]** をクリックしてから **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-318">In the **Retention labels** pane, click **Add**, select the **Highly Confidential** label, click **Add**, and then click **Done**.</span></span>
-    
-11. <span data-ttu-id="dd8fe-319">**[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-319">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
-    
-12. <span data-ttu-id="dd8fe-320">**保護するコンテンツの種類をカスタマイズする** ウィンドウで、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-320">In the **Customize the type of content you want to protect** pane, click **Next**.</span></span>
+19. <span data-ttu-id="46488-196">**[設定の確認]** ウィンドウで、**[作成]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-196">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
 
-13. <span data-ttu-id="dd8fe-321">**機密性の高い情報が検出された場合に実行する操作** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-321">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
-    
-14. <span data-ttu-id="dd8fe-322">**[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、**[ポリシー ヒント テキストをカスタマイズする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-322">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
-    
-15. <span data-ttu-id="dd8fe-323">機密性の高いファイルを保護するために Azure Information Protection を実装したかどうかに応じて、テキスト ボックスに、次のいずれかのヒントを入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-323">In the text box, type or paste in one of the following tips, depending on if you implemented Azure Information Protection to protect highly confidential files:</span></span>
-    
-  - <span data-ttu-id="dd8fe-p106">組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-p106">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
-    
-16. <span data-ttu-id="dd8fe-327">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-327">Click **OK**.</span></span>
-    
-17. <span data-ttu-id="dd8fe-328">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-328">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
+### <a name="company-strategy-team-site"></a><span data-ttu-id="46488-197">会社戦略チーム サイト</span><span class="sxs-lookup"><span data-stu-id="46488-197">Company strategy team site</span></span>
 
-18. <span data-ttu-id="dd8fe-329">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-329">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
-    
-19. <span data-ttu-id="dd8fe-330">**[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-330">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
-   
-    
-<span data-ttu-id="dd8fe-331">次に、「[Microsoft 365 管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある指示に従います。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-331">Next, follow the instructions in [Activate Azure RMS with the Microsoft 365 admin center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).</span></span>
-  
-<span data-ttu-id="dd8fe-332">次に、以下の手順に従い、保護とアクセス許可用に C-Suite グループを対象とした新しいポリシーとサブラベルを使用して、Azure Information Protection を構成します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-332">Next, configure Azure Information Protection with a new policy and sub-label scoped for the C-Suite group for protection and permissions with the following steps:</span></span>
-  
-1. <span data-ttu-id="dd8fe-333">必要に応じて、全体管理者アカウントを使用して、[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-333">If needed, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your global admin account.</span></span>
-    
-2. <span data-ttu-id="dd8fe-334">ブラウザーで別のタブを開き、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-334">In a separate tab of your browser, go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)).</span></span>
-    
-3. <span data-ttu-id="dd8fe-335">初めて Azure Information Protection を構成する場合は、これらの[手順](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-335">If this is the first time you are configuring Azure Information Protection, see these [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).</span></span>
-    
-4. <span data-ttu-id="dd8fe-336">リスト ウィンドウで、**[すべてのサービス]** をクリックして、「**information**」と入力し、**[Azure Information Protection]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-336">In the list pane, click **All services**, type **information**, and then click **Azure Information Protection**.</span></span>
+<span data-ttu-id="46488-198">最初に、会社戦略に関する共同作業を行えるよう、上級リーダーシップ チームのメンバーを対象にした高機密チーム サイトを作成します。</span><span class="sxs-lookup"><span data-stu-id="46488-198">To create a highly confidential-level team for members of the senior leadership team to collaborate on company strategy:</span></span>
 
-5. <span data-ttu-id="dd8fe-337">**[ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-337">Click **Labels**.</span></span>
-    
-6. <span data-ttu-id="dd8fe-338">**[非常に機密性の高い社外秘]** ラベルを右クリックしてから、**[サブラベルの追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-338">Right-click the **Highly Confidential** label, and then click **Add a sub-label**.</span></span>
-    
-7. <span data-ttu-id="dd8fe-339">**[名前]** と **[説明]** に「**C-Suite members**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-339">Type **C-Suite members** in **Name** and **Description**.</span></span>
-    
-8. <span data-ttu-id="dd8fe-340">**[このラベルを含むドキュメントやメールに対するアクセス許可の設定]** で、**[保護]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-340">In **Set permissions for documents and emails containing this label**, click **Protect**.</span></span>
-    
-9. <span data-ttu-id="dd8fe-341">**[保護]** セクションで **[Azure (クラウド キー)]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-341">In the **Protection** section, click **Azure (cloud key)**.</span></span>
-    
-10. <span data-ttu-id="dd8fe-342">**[保護]** ブレードで **[保護設定]** の **[+ アクセス許可の追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-342">On the **Protection** blade, under **Protection settings**, click **+ Add permissions**.</span></span>
-    
-11. <span data-ttu-id="dd8fe-343">**[アクセス許可を追加する]** ブレードの **[ユーザーとグループの指定]** で、 **[+ ディレクトリを参照]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-343">On the **Add permissions** blade, under **Specify users and groups**, click **+ Browse directory**.</span></span>
-    
-12. <span data-ttu-id="dd8fe-344">**[AAD ユーザーとグループ]** ウィンドウで、**[C スイート]** を選択してから、**[選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-344">On the **AAD Users and Groups** pane, select **C-Suite**, and then click **Select**.</span></span>
-    
-13. <span data-ttu-id="dd8fe-345">**[事前設定またはカスタムの設定からアクセス許可を選択する]** の **[カスタム]** をクリックし、次に **[権限の表示]**、**[コンテンツの編集]**、**[保存]**、**[返信]**、**[全員へ返信]** の各チェックボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-345">Under **Choose permissions from the preset or set custom**, click **Custom**, and then click the **View Rights**, **Edit Content**, **Save**, **Reply**, and **Reply all** check boxes.</span></span>
-    
-14. <span data-ttu-id="dd8fe-346">**[OK]** を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-346">Click **OK** twice.</span></span>
-    
-15. <span data-ttu-id="dd8fe-347">**[サブラベル]** ブレードで **[保存]** をクリックし、次に **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-347">On the **Sub-label** blade, click **Save**, and then click **OK**.</span></span>
+1. <span data-ttu-id="46488-199">「**会社戦略**」という名前の[プライベート チーム サイトを新規作成](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)します。</span><span class="sxs-lookup"><span data-stu-id="46488-199">[Create a new private team](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d) with the name **Company Strategy**.</span></span>
+2.  <span data-ttu-id="46488-200">SharePoint チーム サイトのツール バーで、設定アイコンをクリックしてから、[**サイトの権限**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-200">In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.</span></span>
+3.  <span data-ttu-id="46488-201">[**サイトの権限**] ウィンドウで、[**共有の設定**] の [**共有設定を変更します**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-201">In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.</span></span>
+4.  <span data-ttu-id="46488-202">[**共有アクセス許可**] で、[**ファイル、フォルダー、およびサイトを共有できるのはサイトの所有者だけです**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="46488-202">Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.</span></span>
+5.  <span data-ttu-id="46488-203">[**アクセス要求の許可**] をオフにし、[**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-203">Turn off **Allow access requests**, and then click **Save**.</span></span>
 
-16. <span data-ttu-id="dd8fe-348">**[Azure Information Protection]** ブレードで **[ポリシー] > [+ 新しいポリシーの追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-348">On the **Azure Information protection** blade, click **Policies > + Add a new policy**.</span></span>
-    
-17. <span data-ttu-id="dd8fe-349">**[ポリシー名]** に「**CompanyStrategy**」と入力し、**[説明]** に「**会社戦略チーム サイトのドキュメント**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-349">Type **CompanyStrategy** in **Policy name** and **Documents in the Company strategy team site** in **Description**.</span></span>
-    
-18. <span data-ttu-id="dd8fe-350">**[このポリシーを取得するユーザーまたはグループを選択してください] > [ユーザー/グループ]** をクリックし、 **[C スイート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-350">Click **Select which users or groups get this policy > User/Groups**, and then select **C-Suite**.</span></span>
-    
-19. <span data-ttu-id="dd8fe-351">**[選択] > [OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-351">Click **Select > OK**.</span></span>
+<span data-ttu-id="46488-204">次に、会社戦略 SharePoint チーム サイトのドキュメント フォルダーを [高機密] ラベル用に構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-204">Next, configure the documents folder of the underlying Company Strategy SharePoint site for the Highly Confidential label.</span></span>
 
-20. <span data-ttu-id="dd8fe-p107">**[ラベルの追加または削除]** をクリックします。**[ポリシー: ラベルの追加または削除]** ペインで **[C-Suite]** をクリックしてから、**[OK]** をクリックます。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-p107">Click **Add or remove labels**. In the **Policy: Add or remove labels** pane, click **C-Suite**, and then click **OK**.</span></span>   
+1.  <span data-ttu-id="46488-205">ブラウザーの **[会社戦略 - ホーム]** タブで、**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-205">In the **Company Strategy-Home** tab of your browser, click **Documents**.</span></span>
+2.  <span data-ttu-id="46488-206">設定アイコンをクリックし、**[ライブラリの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-206">Click the settings icon, and then click **Library settings**.</span></span>
+3.  <span data-ttu-id="46488-207">**[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-207">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
+4.  <span data-ttu-id="46488-208">**[設定 - ラベルの適用]** で **[高機密]** をクリックし、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-208">In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**.</span></span> 
 
-21. <span data-ttu-id="dd8fe-354">**[保存]** をクリックし、**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-354">Click **Save**, and then click **OK**.</span></span>
+<span data-ttu-id="46488-209">次に、高機密ラベルが付けられているドキュメント (組織外部の会社戦略サイト内のドキュメントを含む) をユーザーが共有するのをブロックする DLP ポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-209">Next, configure a DLP policy that blocks users when they share a document on an underlying SharePoint site with the Highly Confidential label, which includes the Company Strategy site, outside the organization.</span></span>
+  
+1. <span data-ttu-id="46488-210">全体管理者で、[Microsoft 365 コンプライアンス ポータル](https://compliance.microsoft.com/)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="46488-210">Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com/) with your global admin.</span></span>
     
-<span data-ttu-id="dd8fe-355">Azure Information Protection とこの新しいラベルでドキュメントを保護するには、テスト マシンに [Azure Information Protection クライアントをインストール](https://docs.microsoft.com/information-protection/rms-client/install-client-app)し、管理センターから Office をインストールしてから、試用版サブスクリプションの **[C スイート]** グループのアカウントを使用して Microsoft Word からサインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-355">To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **C-Suite** group of your trial subscription.</span></span>
-  
-<span data-ttu-id="dd8fe-356">これら 4 つのサイトでドキュメントを作成し、試用版サブスクリプションでさまざまなユーザー アカウントを使用して、それらへのアクセスをテストする準備が整いました。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-356">You are now ready to create documents in these four sites and test access to them with various user accounts in your trial subscription.</span></span>
-  
-<span data-ttu-id="dd8fe-357">ここに 4 つの SharePoint Online チーム サイト全体の構成を示します。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-357">Here is the overall configuration for all four SharePoint Online team sites.</span></span>
-  
-![セキュリティで保護された SharePoint Online の開発/テスト環境の 4 つすべてのチーム サイト。](../media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
-  
-## <a name="next-step"></a><span data-ttu-id="dd8fe-359">次の手順</span><span class="sxs-lookup"><span data-stu-id="dd8fe-359">Next step</span></span>
+2. <span data-ttu-id="46488-211">ブラウザーの新しい **[Microsoft 365 コンプライアンス]** タブで、**[ポリシー] > [データ損失防止]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-211">On the new **Microsoft 365 compliance** tab in your browser, click **Policies > Data loss prevention**.</span></span>
+    
+3. <span data-ttu-id="46488-212">**[ホーム] > [データ損失防止]** ウィンドウで、**[ポリシーの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-212">In the **Home > Data loss prevention** pane, click **Create a policy**.</span></span>
+    
+4. <span data-ttu-id="46488-213">**[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-213">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
+    
+5. <span data-ttu-id="46488-214">**[ポリシーに名前をつける]** ウィンドウで、**[名前]** に「**高機密ラベル SharePoint サイト**」と入力してから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-214">In the **Name your policy** pane, type **Highly Confidential label SharePoint sites** in **Name**, and then click **Next**.</span></span>
+    
+6. <span data-ttu-id="46488-215">**[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-215">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
+    
+7. <span data-ttu-id="46488-216">場所の一覧で、**[Exchange メール]**、**[OneDrive アカウント]**、および **[Teams のチャットとチャネルのメッセージ]** の場所を無効にして、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-216">In the list of locations, disable the **Exchange email**, **OneDrive accounts**, and **Teams chat and channel messages** locations, and then click **Next**.</span></span>
+    
+8. <span data-ttu-id="46488-217">**[保護するコンテンツの種類をカスタマイズする]** ウィンドウで、**[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-217">In the **Customize the type of content you want to protect** pane, click **Edit**.</span></span>
+    
+9. <span data-ttu-id="46488-218">**[保護するコンテンツの種類を選ぶ]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、**[保持ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-218">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Retention labels**.</span></span>
+    
+10. <span data-ttu-id="46488-219">**[保持ラベル]** ウィンドウで、**[追加]** をクリックして **[高機密]** ラベルを選択し、**[追加]** をクリックしてから **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-219">In the **Retention labels** pane, click **Add**, select the **Highly Confidential** label, click **Add**, and then click **Done**.</span></span>
+    
+11. <span data-ttu-id="46488-220">**[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-220">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
+    
+12. <span data-ttu-id="46488-221">**保護するコンテンツの種類をカスタマイズする** ウィンドウで、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-221">In the **Customize the type of content you want to protect** pane, click **Next**.</span></span>
 
-<span data-ttu-id="dd8fe-360">セキュリティで保護された SharePoint Online サイトの本番展開の準備が整ったら、「[SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)」を参照して、詳細情報と、展開を順を追って説明した記事へのリンクをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="dd8fe-360">When you are ready for production deployment of secure SharePoint Online sites, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) for detailed information and links to step-by-step deployment articles.</span></span>
-  
-## <a name="see-also"></a><span data-ttu-id="dd8fe-361">関連項目</span><span class="sxs-lookup"><span data-stu-id="dd8fe-361">See Also</span></span>
+13. <span data-ttu-id="46488-222">**機密性の高い情報が検出された場合に実行する操作** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-222">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
+    
+14. <span data-ttu-id="46488-223">**ポリシー ヒントと電子メール通知のカスタマイズ** ウィンドウで、**ポリシー ヒントのテキストをカスタマイズする** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-223">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
+    
+15. <span data-ttu-id="46488-224">次の内容をテキスト ボックスに入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="46488-224">In the text box, type or paste in the following:</span></span>
+    
+  - <span data-ttu-id="46488-p105">組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。</span><span class="sxs-lookup"><span data-stu-id="46488-p105">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
+    
+16. <span data-ttu-id="46488-228">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-228">Click **OK**.</span></span>
+    
+17. <span data-ttu-id="46488-229">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-229">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
 
-[<span data-ttu-id="dd8fe-362">SharePoint Online サイトとファイルをセキュリティで保護する</span><span class="sxs-lookup"><span data-stu-id="dd8fe-362">Secure SharePoint Online sites and files</span></span>](secure-sharepoint-online-sites-and-files.md)
+18. <span data-ttu-id="46488-230">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-230">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
+    
+19. <span data-ttu-id="46488-231">**[設定の確認]** ウィンドウで、**[作成]** をクリックして、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="46488-231">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
+
+<span data-ttu-id="46488-232">[こちらの手順](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)を使用して、秘密度ラベルを次の設定で構成します。</span><span class="sxs-lookup"><span data-stu-id="46488-232">Use [these instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a sensitivity label with the following settings:</span></span>
+
+- <span data-ttu-id="46488-233">ラベルの名前は「会社戦略」です</span><span class="sxs-lookup"><span data-stu-id="46488-233">The name of the label is Company Strategy</span></span>
+- <span data-ttu-id="46488-234">暗号化が有効になっています</span><span class="sxs-lookup"><span data-stu-id="46488-234">Encryption is enabled</span></span>
+- <span data-ttu-id="46488-235">会社戦略グループには、共同編集のアクセス許可があります</span><span class="sxs-lookup"><span data-stu-id="46488-235">The Company Strategy group has Co-Author permissions</span></span>
+
+<span data-ttu-id="46488-236">作成したら、新しいラベルを発行します。</span><span class="sxs-lookup"><span data-stu-id="46488-236">After creating, publish the new label.</span></span> <span data-ttu-id="46488-237">会社戦略グループのメンバーとしてサインインすると、Word、Excel、PowerPoint のホーム ツール バーの [秘密度] オプションに新しいラベルが表示されています。</span><span class="sxs-lookup"><span data-stu-id="46488-237">If you sign in as a member of the Company Strategy group, you will see the new label in the Sensitivity option in the Home toolbar of Word, Excel, and PowerPoint.</span></span> <span data-ttu-id="46488-238">ラベルをファイルに割り当てるには、[秘密度] オプションから会社戦略ラベルを選択します。</span><span class="sxs-lookup"><span data-stu-id="46488-238">Select the Company Strategy label from the Sensitivity option to assign the label to a file.</span></span>
+
+<span data-ttu-id="46488-239">会社戦略 SharePoint チーム サイトのドキュメント セクションにあるファイルには、高機密保持ラベルが割り当てられ、構成されている DLP ポリシーが適用されます。</span><span class="sxs-lookup"><span data-stu-id="46488-239">Files in the documents section of the underlying Company Strategy SharePoint site are assigned the Highly confidential retention label and are subject to the configured DLP policy.</span></span> <span data-ttu-id="46488-240">ファイルには、「会社戦略」機密ラベルを割り当てることもできます。</span><span class="sxs-lookup"><span data-stu-id="46488-240">Files can also have the Company Strategy sensitivity label assigned.</span></span>    
+
+<span data-ttu-id="46488-241">マーケティング キャンペーンと会社戦略の各チーム サイトの最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="46488-241">Here is the resulting configuration for the Company Strategy team.</span></span>
+
+![機密および高機密の SharePoint Online サイトまたはファイル。](../media/sensitive-highly-confidential-sp-sites-dev-test.png)
   
-[<span data-ttu-id="dd8fe-363">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="dd8fe-363">Cloud adoption and hybrid solutions</span></span>](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+## <a name="next-step"></a><span data-ttu-id="46488-243">次の手順</span><span class="sxs-lookup"><span data-stu-id="46488-243">Next step</span></span>
+
+<span data-ttu-id="46488-244">セキュリティで保護された SharePoint Online サイトの本番展開の準備が整ったら、「[SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)」を参照して、詳細情報と、展開を順を追って説明した記事へのリンクをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="46488-244">When you are ready for production deployment of secure SharePoint Online sites, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) for detailed information and links to step-by-step deployment articles.</span></span>
   
-[<span data-ttu-id="dd8fe-364">選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス</span><span class="sxs-lookup"><span data-stu-id="dd8fe-364">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+## <a name="see-also"></a><span data-ttu-id="46488-245">関連項目</span><span class="sxs-lookup"><span data-stu-id="46488-245">See Also</span></span>
+
+[<span data-ttu-id="46488-246">SharePoint Online サイトとファイルをセキュリティで保護する</span><span class="sxs-lookup"><span data-stu-id="46488-246">Secure SharePoint Online sites and files</span></span>](secure-sharepoint-online-sites-and-files.md)
+  
+[<span data-ttu-id="46488-247">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="46488-247">Cloud adoption and hybrid solutions</span></span>](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+  
+[<span data-ttu-id="46488-248">選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス</span><span class="sxs-lookup"><span data-stu-id="46488-248">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 
