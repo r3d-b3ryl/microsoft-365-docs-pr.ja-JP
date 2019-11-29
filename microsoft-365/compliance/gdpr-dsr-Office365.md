@@ -1,7 +1,7 @@
 ---
-title: GDPR に基づく Office 365 データ サービス要求
-description: GDPR に基づくユーザーの権利と、DSR への対応で企業が Office 365 を使用してデータを検索および処理する方法について説明します。
-keywords: Office 365、DSR、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
+title: GDPR および CCPA に基づく Office 365 データ サービス要求
+description: GDPR および CCPA に基づくユーザーの権利と、DSR への対応で企業が Office 365 を使用してデータを検索および処理する方法について説明します。
+keywords: Office 365、DSR、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,30 +9,34 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 9f2d17c6165a028061cf7d155f828c683f09543f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071496"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624521"
 ---
-# <a name="office-365-data-subject-requests-for-the-gdpr"></a>GDPR のための Office 365 データ主体要求
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Office 365 データ対象要求
 
 ## <a name="introduction-to-dsrs"></a>DSR について
 
 EU [一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) では、ユーザー (規則では*データ主体*と呼ばれる) に対して、雇用主やその他の会社または組織 (*データ管理者*または単に*管理者*と呼ばれる) が収集した個人データを管理する権利を与えます。GDPR では、個人データとは、識別された、または識別可能な自然人と関連するあらゆるデータとして広範に定義されています。GDPR は個人データに対する固有の権利をデータ主体に与えます。この権利には、個人データのコピーの取得、変更の要求、処理の制限、削除、または、別の管理者に移動できるようにするための電子形式での受信が含まれます。データ主体から管理者に個人データへの操作実行を求める正式な要求は、*データ主体の要求*または DSR と呼ばれます。管理者には、各 DSR を迅速に検討し、要求された操作を行うか、管理者が DSR に対応できない理由についての説明を提供するか、どちらかの実質的な応答をする義務があります。管理者は特定の DSR に対する適切な処置に関して自社の法律顧問の助言を求めるべきです。
 
-このガイドでは、Office 365 製品、サービス、および管理ツールを使用して、DSR に対応するために個人データを見つけて対処する方法について説明します。特に、Microsoft クラウドにある個人データの検出方法、アクセス方法、対処方法を示します。このガイドで説明するプロセスの概要は次のとおりです。
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) の権利などの GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。 また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「営業」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
 
-- **検出:** 検索/検出ツールを使用することで、DSR の対象となる可能性がある顧客データをより簡単に見つけられます。対応の対象となる可能性のあるドキュメントが収集されたら、以下のステップの DSR アクションを 1 つまたは複数実行して要求に対応できます。あるいは、DSR 対応に関する組織のガイドラインを要求が満たしていないと判断する場合もあります。
+このガイドでは、DSR に対応するために個人データや個人情報を検索して処理を行えるように Office 365 製品、サービス、管理ツールを使用する方法について説明します。 具体的には、Microsoft のクラウドに保存されている個人データや個人情報の検索、アクセス、および操作方法について説明します。 このガイドに記載されているプロセスの概要を次に示します。
+
+- **検出:** 検索および検出ツールを使用して、DSR の対象である可能性がある顧客データを簡単に検索します。 可能性のある応答ドキュメントが収集されると、以下の手順に示す 1 つ以上の DSR アクションを実行して、要求に応答できます。 または、DSR への応答に関する組織のガイドラインを要求が満たしていないと判断する場合もあります。
 - **アクセス:** Microsoft クラウドにある個人データを取り出し、要求がある場合は、データ主体が利用できるコピーを作成します。
 - **修正:** 必要に応じて、個人データを変更したり、要求された他の操作を個人データに対して実行したりします。
-- **制限:** さまざまな Azure サービスのライセンスを削除するか、可能な場合は該当するサービスを無効にすることで、個人データの処理を制限します。また、データを Microsoft クラウドから削除してオンプレミスまたは別の場所で保持することもできます。
+- **制限:** さまざまな Azure サービスのライセンスを削除するか、可能な場合は該当するサービスを無効にすることで、個人データの処理を制限します。 また、データを Microsoft クラウドから削除してオンプレミスまたは別の場所で保持することもできます。
 - **削除:** Microsoft クラウドに格納されていた個人データを完全に削除します。
-- **エクスポート:** 個人データの電子コピー (コンピューターで読み取り可能な形式) をデータ主体に提供します。
+- **エクスポート/ 受信 (移植性):** 個人データまたは個人情報の電子コピー (コンピューターで読み取り可能な形式) をデータ主体に提供します。 CCPA における個人情報とは、識別された人、または識別可能な人に関するあらゆる情報のことです。 個人の私的、公的、または職業上の役割による区別はありません。 "個人情報" と定義された用語は、GDPR における "個人データ" とほぼ同義です。 ただし、CCPA では家族データおよび世帯データも含まれます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
 
-### <a name="terminology"></a>用語集
+### <a name="terminology"></a>用語
 
 このガイドに関連する GDPR の用語の定義を以下に示します。
 
@@ -183,13 +187,13 @@ DSR に対応するための最初のステップは、DSR の対象となる個
 
 ***キーワード構文***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image18.png)
+![キーワード ダイアログ](media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>例 2
 
@@ -199,19 +203,19 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image19.png)
+![キーワード ダイアログ](media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>例 3
 
 この例では、指定された ID 番号 (フランスの社会保障番号 (INSEE)) を含む電子メール メッセージが返されます。
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image20.png)
+![キーワード ダイアログ](media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>部分的にインデックスが作成されたアイテムをコンテンツ検索で使用する
 
@@ -281,13 +285,13 @@ OneDrive for Business アカウントおよび SharePoint Online サイトに保
 
 ユーザーが別の方法で自分の SharePoint プロファイル データにアクセスするには、自分の OneDrive for Business アカウントの [**プロフィールの編集**] ページに移動します。このページにアクセスするには、OneDrive for Business アカウントの URL で **EditProfile.aspx** パスに移動します。 たとえば、<strong>user1@contoso.com</strong> というユーザーの OneDrive for Business アカウントは次の場所になります。
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 [プロフィールの編集] ページの URL は次のようになります。
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -357,9 +361,11 @@ OneNote Class Notebook は、クラス チームの SharePoint Online サイト�
 3. そのアイテムを選択して、詳細ウィンドウに表示されているフォルダー パスをコピーします。これは、Class Notebook のルート フォルダーです。
 4. 手順 1 で作成した検索を編集して、キーワード クエリのクラス名を Class Notebook のフォルダー パスに置き換えて、そのフォルダー パスの前に **path** サイト プロパティを追加します。たとえば、**path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"** のようにします。引用符と末尾のスラッシュが含まれていることを確認してください。
 5. 検索条件を追加し、[ファイルの種類] 条件を選択して、ファイルの種類の値として使用します。 これにより、すべての OneNote ファイルが検索結果で返されます。 その結果としてのキーワードの構文は、次のようになります。[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  コンテンツ検索を再実行します。 検索結果には、クラス チームの Class Notebook のすべての OneNote ファイルが含まれるようになります。
 
 #### <a name="microsoft-to-do"></a>Microsoft To Do
@@ -426,13 +432,13 @@ DSR エクスポート要求を満たすために、ネイティブのファイ�
 アイテムをエクスポートおよびダウンロードするには:
 
 1. セキュリティ/コンプライアンス センターで、[コンテンツ検索] を開きます。
-2. [検索] ポップアップ ページで ![](media/o365-dsr_image21.png) [**詳細**] をクリックし、[**結果のエクスポート**] をクリックします。 レポートをエクスポートすることもできます。
+2. [検索] ポップアップ ページで [![ダウンロード アイコン](media/o365-dsr_image21.png)] [**詳細**] をクリックし、 [**結果のエクスポート**] をクリックします。 レポートをエクスポートすることもできます。
 3. **[結果のエクスポート]** ポップアップ ページの各セクションに入力します。スクロール バーを使用して、すべてのエクスポート オプションを確認してください。
 4. セキュリティ/コンプライアンス センターのコンテンツ検索ページに戻って、**[エクスポート]** タブをクリックします。
 5. **[最新の情報に更新]** をクリックして、ページを更新します。
 6. [**名前**] 列で、作成したエクスポート ジョブをクリックします。 エクスポート ジョブの名前は、コンテンツ検索の名前に "**\_Export**" が付加されたものになります。
-7. [エクスポート] ポップアップ ページの [**エクスポート キー**] で、[**クリップボードにコピー**] をクリックします。 このキーは手順 10 で検索結果をダウンロードするときに使用します。
-8. ポップアップ ページの上部で、![](media/o365-dsr_image21.png) **[結果のダウンロード]** をクリックします。
+7. [エクスポート] ポップアップ ページの [**エクスポート キー**] で、[**クリップボードにコピー**] をクリックします。 このキーは手順 10 で検索結果をダウンロードするときに使用します
+8. ポップアップ ページの上部で、[![ダウンロード アイコン](media/o365-dsr_image21.png)] [**結果のダウンロード**] をクリックします。
 9. **Microsoft Office 365 電子情報開示エクスポート ツール**をインストールするように求めるダイアログが表示されたら、**[インストール]** をクリックします。
 10. **電子情報開示エクスポート ツール**で、手順 7 でコピーしたエクスポート キーを該当するボックスに貼り付けます。
 11. **[参照]** をクリックして、検索結果のファイルをダウンロードする場所を指定します。
@@ -845,15 +851,18 @@ Assignments には、教師と学生が作成する情報が保存されます�
 
 課題提出に関連付けられている学生のファイルは、ドキュメント ライブラリ (**[学生の作業]**) に保存され、教師が作成した (学生がアクセスできる) 課題に関連付けられているファイルは別のドキュメント ライブラリ (**[クラスのファイル]**) に保存されます。これらのドキュメント ライブラリはいずれも、対応する Class Team SharePoint サイトにあります。
 
-管理者は、Office 365 セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、([学生の作業] および [クラス ファイル] ライブラリ内にある) 課題提出に関連する学生のファイルや課題関連のファイルを検索できます。 たとえば、管理者は組織内のすべての SharePoint サイトを検索し、検索クエリに学生の名前とクラスまたは課題の名前を使用して DSR 要求に関連するデータを検索できます。
+管理者は、Office 365 セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、([学生の作業] および [クラス ファイル] ライブラリ内にある) 課題提出に関連する学生のファイルや課題関連のファイルを検索できます。 たとえば、管理者は組織内のすべての SharePoint サイトを検索し、検索クエリに、学生の名前とクラスまたは課題の名前を使用して DSR 要求に関連するデータを検索できます。
 
-同様に、管理者は教師が学生に配布したファイルの課題に関連する教師のファイルを検索できます。たとえば、管理者は組織内のすべての SharePoint サイトを検索し、検索クエリに教師の名前とクラスまたは課題名を指定して、DSR 要求に関連するデータを検出できます。
+同様に、管理者は教師が学生に配布するファイルの課題に関連する教師ファイルを検索できます。 たとえば、管理者は組織内のすべての SharePoint サイトを検索し、検索クエリに、教師の名前とクラスまたは課題の名前を使用して DSR に関連するデータを検索できます。
 
-このガイドの「[コンテンツ検索の電子情報開示ツールを使用した DSR への対応](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)」を参照してください。
+詳細については、以下を参照してください。
 
-##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>SharePoint に保存されていない Assignments データの検索
+- [課題の管理ドキュメント](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-admin-documentation)
+- このガイドの [コンテンツ検索の電子情報開示ツールを使用した DSR への対応](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)
 
-次に示す Assignments データはクラス チームの SharePoint サイトには保存されないため、コンテンツ検索では検出できません。 このデータには次が含まれます。
+##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>SharePoint に保存されない Assignments データの検索
+
+次の種類の Assignments データはクラス チームの SharePoint サイトには保存されないため、コンテンツ検索では検出できません。 このデータには次が含まれます。
 
 - 学生の成績と教師からのフィードバック
 - 各学生が課題用に提出したドキュメントのリスト
@@ -865,24 +874,27 @@ Assignments には、教師と学生が作成する情報が保存されます�
 
 ##### <a name="export"></a>エクスポート
 
-PowerShell スクリプトを使用すると、特定の学生について、その学生が登録しているすべてのクラスの Assignments データをエクスポートできます。 以下の情報を参照してください。
+PowerShell スクリプトを使用して登録した学生のすべてのクラスにおいて、特定の学生の Assignments データをエクスポートできます。その学生のクラスのリストを取得し、PowerShell スクリプトを使用してデータをエクスポートします。 参照:
 
-- [スクリプトを使用して Assignments のユーザー データをエクスポートまたは削除する](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe)。
-- [Assignments から学生と教師のデータをエクスポートする](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a)。
+- [チームの割り当てを構成する](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [特定の学生のクラスのリストを取得する](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Assignments から学生と教師のデータをエクスポートする](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)
 
 学生が Class Team サイトから削除されている場合、管理者はエクスポート スクリプトを実行する前にその学生をサイトに再度追加できます。あるいは、管理者がスクリプトの入力ファイルを使用して、その学生がこれまでに登録していたすべてのクラスを指定できます。また、課題エクスポート スクリプトを使用して、教師がアクセスできるすべての課題の提出データをエクスポートすることもできます。
 
 ##### <a name="delete"></a>削除
 
-PowerShell スクリプトを使用すると、特定の学生について、その学生が登録しているすべてのクラスの Assignments データを削除できます。 この操作は、その学生をクラスから削除する前に行う必要があります。 以下の情報を参照してください。
+PowerShell スクリプトを使用して登録した学生のすべてのクラスにおいて、特定の学生の Assignments データを削除できます。その学生のクラスのリストを取得し、PowerShell スクリプトを使用してデータを削除します。 この操作は、その学生をクラスから削除する前に行う必要があります。 参照:
 
-- [スクリプトを使用して Assignments のユーザー データをエクスポートまたは削除する](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe)。
-
-- [Assignments から学生データを削除する](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4)。
+- [チームの割り当てを構成する](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [特定の学生のクラスのリストを取得する](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Assignments から学生のデータを削除する](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)
 
 Class Team サイトから学生が削除されている場合、管理者はエクスポート スクリプトを実行する前にその学生をサイトに再び追加できます。あるいは、管理者がスクリプトの入力ファイルを使用して、その学生がこれまでに登録していたすべてのクラスを指定できます。教師データを削除する場合には、課題削除スクリプト使用できません。これは、すべての課題は Class Team サイトで共有されているためです。この代わりに、管理者は自分自身を Class Team サイトに追加し、特定の課題を削除できます。
 
-**Class Notebook:** Class Notebook でコンテンツを検索する方法については、このガイドの上の方に説明があります。 「[OneNote Class Notebook](#onenote-class-notebook)」のセクションを参照してください。 コンテンツ検索ツールを使用して、Class Notebook からデータをエクスポートすることもできます。 また、管理者またはデータ主体が Class Notebook からデータをエクスポートするという方法もあります。 「[Class Notebook のコピーを保存する](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec)」を参照してください。
+#### <a name="class-notebook"></a>Class Notebook
+
+Class Notebook でコンテンツを検索する方法については、このガイドの上の方に説明があります。 「[OneNote Class Notebook](#onenote-class-notebook)」セクションを参照してください。 コンテンツ検索ツールを使用して、Class Notebook からデータをエクスポートすることもできます。 また、管理者またはデータ主体が Class Notebook からデータをエクスポートするという方法もあります。 「[Class Notebook のコピーを保存する](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec)」を参照してください。
 
 ### <a name="flow"></a>Flow
 
@@ -1073,7 +1085,7 @@ PowerApps は、組織内で共有および使用できるアプリを作成す�
 
 PowerApps に関連する DSR 要求を支援するために、[PowerApps 管理センター](https://admin.powerapps.com/)および[PowerApps 管理 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)で公開されている管理操作を利用できます。 こうしたツールにアクセスするには、次のアクセス許可があるアカウントが必要になります。
 
-- 有料版の PowerApps プラン 2 ライセンスまたは PowerApps プラン 2 試用版ライセンス。 30 日間の試用版ライセンスは、[ここから](http://web.powerapps.com/trial)サインアップできます。
+- 有料版の PowerApps プラン 2 ライセンスまたは PowerApps プラン 2 試用版ライセンス。 30 日間の試用版ライセンスは、[ここから](https://web.powerapps.com/trial)サインアップできます。
 - [Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または
 - [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
@@ -1168,7 +1180,7 @@ StaffHub 内のほとんどのデータは、すべての StaffHub チーム メ
 - **共有ファイル**: StaffHub のすべてのファイルは SharePoint Online に保存されているため、上で説明したように、コンテンツ検索を使用して検出、アクセス、およびエクスポートできます。 また、StaffHub 内の [**ファイル**] タブで表示することもできます。
 - **メッセージング:** 現時点では、メッセージにアクセスするには、次の項目に示すユーザー固有のデータへのアクセスに関する手順を実行します。 将来的には StaffHub のすべてのメッセージは Microsoft Teams に保存されるようになるため、コンテンツ検索ツールを使用してアクセスできるようになります。
 - **ユーザー固有のデータ:** ユーザー固有のデータは、ユーザー設定、ユーザー アクティビティ フィードおよびユーザー シフト要求履歴で構成されていて、それらはいずれもチーム メンバーや管理者は表示できません。 ユーザー固有のデータに対するアクセスまたはエクスポートを実行するには、データ主体に自分の StaffHub アカウントにサインインしてそのデータを取得してもらいます。 また、データ主体が組織から退職している場合は、管理者がデータ主体のユーザー パスワードをリセットして、担当者または管理者が対象のアカウントにサインインできるようにすると、このデータの取得が可能になります。
-- **Kronos:** StaffHub は、サード パーティ製の従業員管理ツール [Kronos](http://www.kronos.com/) への接続をサポートしています。 StaffHub と Kronos は独立した処理ツールであるため、それぞれの当事者との間で同意した個別の規約に基づき組織のデータが処理されます。 DSR に関連するデータが Kronos によって保持されている場合、DSR の支援については Kronos に問い合わせる必要があります (StaffHub の場合も同様です)。
+- **Kronos:** StaffHub は、サード パーティ製の従業員管理ツール [Kronos](https://www.kronos.com/) への接続をサポートしています。 StaffHub と Kronos は独立した処理ツールであるため、それぞれの当事者との間で同意した個別の規約に基づき組織のデータが処理されます。 DSR に関連するデータが Kronos によって保持されている場合、DSR の支援については Kronos に問い合わせる必要があります (StaffHub の場合も同様です)。
 
 #### <a name="delete"></a>削除
 
@@ -1205,7 +1217,7 @@ Stream の「アクセス」セクションを参照してください。
 
 #### <a name="discover"></a>検索
 
-Sway を使用して作成したコンテンツ ([www.sway.com](http://www.sway.com) にあります) を表示できるのは、作成者により Sway の表示を許可されたユーザーおよび所有者だけです。 詳細については、「[Sway のプライバシー設定](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)」を参照してください。 DSR に対応する個人データが Sway に存在している可能性があるかどうかを判断するには、データ主体およびデータ主体に関するコンテンツを作成した可能性の高い組織のユーザーに各々の Sway を検索するよう依頼し、データ主体の要求に対応する個人データが含まれている可能性が高い Sway を管理者と共有してもらいます。 Sway の共有方法については、記事「[Sway を共有する](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998)」の「組織のアカウントから Sway を共有する」を参照してください。
+Sway を使用して作成したコンテンツ ([www.sway.com](https://www.sway.com) にあります) を表示できるのは、作成者により Sway の表示を許可されたユーザーおよび所有者だけです。 詳細については、「[Sway のプライバシー設定](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)」を参照してください。 DSR に対応する個人データが Sway に存在している可能性があるかどうかを判断するには、データ主体およびデータ主体に関するコンテンツを作成した可能性の高い組織のユーザーに各々の Sway を検索するよう依頼し、データ主体の要求に対応する個人データが含まれている可能性が高い Sway を管理者と共有してもらいます。 Sway の共有方法については、記事「[Sway を共有する](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998)」の「組織のアカウントから Sway を共有する」を参照してください。
 
 #### <a name="access"></a>Access
 
@@ -1531,7 +1543,7 @@ Delve では、ユーザーは自分の Office 365 プロファイルを管理�
 
 ### <a name="myanalytics"></a>MyAnalytics
 
-MyAnalytics は、ユーザーが仕事に費やした時間について理解するために役立つ統計を提供します。個人用ダッシュボードに表示されるデータと、そのデータの算出方法について正しく理解できるようにするために、ヘルプ トピック「[MyAnalytics の個人用ダッシュボード](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard)」を参照するようにユーザーに指示してください。
+MyAnalytics は、ユーザーが仕事に費やした時間について理解するために役立つ統計を提供します。個人用ダッシュボードに表示されるデータと、そのデータの算出方法について正しく理解できるようにするために、ヘルプ トピック「[MyAnalytics の個人用ダッシュボード](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2)」を参照するようにユーザーに指示してください。
 
 #### <a name="access-and-export"></a>アクセスとエクスポート
 
@@ -1543,7 +1555,7 @@ MyAnalytics で生成されるすべてのインサイトは、ユーザーの�
 
 #### <a name="restrict"></a>制限
 
-特定のユーザーの処理を制限するために、そのユーザーを MyAnalytics から除外できます。その方法については、「[MyAnalytics のユーザー設定を構成する](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings)」を参照してください。
+特定のユーザーの処理を制限するために、そのユーザーを MyAnalytics から除外できます。その方法については、「[MyAnalytics のユーザー設定を構成する](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics)」を参照してください。
 
 #### <a name="delete"></a>削除
 
@@ -1551,7 +1563,7 @@ MyAnalytics で生成されるすべてのインサイトは、ユーザーの�
 
 ### <a name="workplace-analytics"></a>Workplace Analytics
 
-Workplace Analytics により、組織は、組織の生産性、共同作業のパターン、および従業員エンゲージメントに関するインサイトを得るために、Office 365 のデータを組織独自の業務データで補強できるようになります。[この記事](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access)では、Workplace Analytics で処理されるデータと、そのデータにアクセスできるユーザーを組織が制御する方法について説明しています。
+Workplace Analytics により、組織は、組織の生産性、共同作業のパターン、および従業員エンゲージメントに関するインサイトを得るために、Office 365 のデータを組織独自の業務データで補強できるようになります。[この記事](https://docs.microsoft.com/workplace-analytics/index-orig)では、Workplace Analytics で処理されるデータと、そのデータにアクセスできるユーザーを組織が制御する方法について説明しています。
 
 Workplace Analytics で DSR を支援するには、次の操作を実行します。 
 
@@ -1580,7 +1592,7 @@ Workplace Analytics で DSR を支援するには、次の操作を実行しま�
 1. データ主体から Workplace Analytics ライセンスを削除します。
 2. データ主体の Azure Active Directory (AAD) エントリを削除します。(詳細については、「[ユーザーの削除](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)」を参照してください)
 3. サポートに連絡し、データ主体権限 (DSR) のユーザー削除要求のチケットを開くことを依頼します。このチケットでは、ユーザー プリンシパル名 (UPN) を使用してデータ主体を識別します。
-4. 会社の人事システムから人事データのコピーをエクスポート (「[データのエクスポート](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)」を参照) し、その人事データ ファイルからデータ主体の情報を削除し、編集後の人事データ ファイルを .csv 形式で Workplace Analytics にアップロードします (「[組織データをアップロードする](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)」を参照)。
+4. 会社の人事システムから人事データのコピーをエクスポート (「[データのエクスポート](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data)」を参照) し、その人事データ ファイルからデータ主体の情報を削除し、編集後の人事データ ファイルを .csv 形式で Workplace Analytics にアップロードします (「[組織データをアップロードする](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)」を参照)。
 
 ## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>パート 3: システム生成ログに対する DSR への対応
 
@@ -1625,7 +1637,7 @@ Microsoft は、GDPR における「個人データ」の広範な定義の下�
 
 - **システム生成ログ内のデータはどのように表示されますか?:** JSON 形式でのシステム生成ログのレコード例を次に示します。
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
@@ -1666,7 +1678,7 @@ Microsoft の最も頻繁に使用されるサービスの一部 (Exchange Onlin
 次に示す国別クラウドでシステム生成ログを削除するには、グローバル IT 管理者が次の操作を実行する必要があります。
 
 - Office 365 Germany - ユーザー アカウントが完全に削除される場合、システム生成ログも削除されます。 
-- Office 365 US Government - [Office 365 管理ポータル](http://portal.office365.us)から Microsoft サポートにリクエストを送信します。
+- Office 365 US Government - [Office 365 管理ポータル](https://portal.office365.us)から Microsoft サポートにリクエストを送信します。
 - 21Vianet が運営する Office 365 (中国) - Office 365 管理ポータル ([URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage)) から Microsoft サポートにリクエストを送信します。**[Commerce]** に移動し、**[Subscription]** -> **[Privacy]** -> **[GDPR]** を選択し、必要な情報を入力します。
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>パート 4: DSR に役立つその他のリソース
@@ -1783,5 +1795,6 @@ IT 管理者は、セキュリティ/コンプライアンス センターで監
 |2018 年 11 月 12 日| すべて| 壊れたブックマークと外部トピックへのリンクを修正しました。|
 |2019 年 1 月 9 日|[StaffHub](#staffhub)|[削除] セクションで、ユーザー アカウントが完全に削除された場合の動作の説明を更新しました。|
 |2019/5/8| [Publisher](#publisher)|Publisher の DSR への対応に関する追加のコンテンツです。|
-|2019/7/11| [MyAnalytics](#myanalytics)|すべてのユーザーが MyAnalytics アプリで自分のデータを表示できるようになったため、管理者が Office 365 セキュリティ/コンプライアンス センターの DSR ケース ツールを使用して MyAnalytics データをエクスポートする機能は削除されました。 |
+|2019/7/11| [MyAnalytics](#myanalytics)|すべてのユーザーが MyAnalytics アプリでデータを表示できるようになったため、管理者が Office 365 セキュリティ/コンプライアンス センターの DSR ケース ツールを使用して MyAnalytics データをエクスポートする機能は削除されました。 |
+|2019 年 11 月 6 日|[教育](#education)|PowerShell スクリプトを使用して特定の学生のクラスのリストを取得し、そのデータをエクスポートまたは削除する方法についての新しいトピックにリンクされています。|
 ||||

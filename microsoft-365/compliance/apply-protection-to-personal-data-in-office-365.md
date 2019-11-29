@@ -16,13 +16,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: DLP ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: データ損失防止 (DLP) ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
+ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708163"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256784"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
 
@@ -156,11 +156,11 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 
 すべての場所には次のものが含まれます。
 
--   SharePoint Online
+- SharePoint Online
 
--   OneDrive for Business アカウント
+- OneDrive for Business アカウント
 
--   Exchange メールボックス
+- Exchange メールボックス
 
 コンテンツ検索では、電子メールで機密情報の種類をテストできないため、各ポリシーの機密情報タイプのサブセットと Exchange の個別ポリシーを作成し、これらのポリシーのロールアウトを監視することを検討してください。
 
@@ -328,17 +328,17 @@ SharePoint と OneDrive for Business のデバイス アクセス ポリシー�
 <tr class="odd">
 <td align="left">SharePoint 管理センター</td>
 <td align="left">はい</td>
-<td align="left">○</td>
-<td align="left">○</td>
-<td align="left">○</td>
+<td align="left">はい</td>
+<td align="left">はい</td>
+<td align="left">はい</td>
 <td align="left">はい</td>
 </tr>
 <tr class="even">
 <td align="left">Azure Active Directory</td>
 <td align="left"></td>
 <td align="left">はい</td>
-<td align="left">○</td>
-<td align="left">○</td>
+<td align="left">はい</td>
+<td align="left">はい</td>
 <td align="left">はい</td>
 </tr>
 <tr class="odd">

@@ -8,20 +8,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの SharePoint Server で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dba20f2f85bc9a474b39e427ed2628a2f9c9f437
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085090"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39625402"
 ---
-# <a name="gdpr-for-sharepoint-server"></a>SharePoint Server での GDPR への対応
+# <a name="gdpr-for-sharepoint-server"></a>SharePoint Server での GDPR 対応
+
+適用対象:
+- SharePoint Server 2013
+- SharePoint Server 2016
+- SharePoint Server 2019
 
 個人情報保護の一部として、次のことをお勧めします。
 
 -   Azure Information Protection を使用してデータを分類します。
 
--   SharePoint Server を最小特権構成で実行します。詳細については、「[SharePoint Server で最小特権管理を計画する](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration)」と「[SharePoint Server のセキュリティ](https://docs.microsoft.com/ja-JP/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server)」を参照してください。
+-   SharePoint Server を最小特権構成で実行します。詳細については、「[SharePoint Server で最小特権管理を計画する](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration)」と「[SharePoint Server のセキュリティ](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server)」を参照してください。
 
 -   [サーバーで BitLocker 暗号化を有効にします](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server)。
 
@@ -35,7 +40,7 @@ SharePoint Server のサイトとライブラリに含まれているユーザ�
 
 ファイル共有、SharePoint のサイトおよびライブラリについて推奨される作業の手順を次に示します。
 
-1.  **[Azure Information Protection スキャナーをインストールし、構成します。](https://docs.microsoft.com/ja-JP/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Azure Information Protection スキャナーをインストールし、構成します。](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   使用する機密データの種類を決定します。
 
@@ -65,7 +70,7 @@ SharePoint Server のサイトとライブラリに含まれているユーザ�
 
 機密データにラベルを適用するときには、保護機能が設定されていないラベルを必ず使用してください。保護機能には、サービスがファイルの機密データを検出できない原因となる暗号化などがあります。
 
-Azure Information Protection スキャナーを使用して個人データを検索したりラベル付けしたりすることに関する詳細については、[Microsoft GDPR Data Discovery Toolkit](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners)) を参照してください。
+Azure Information Protection スキャナーを使用して個人データを検索したりラベル付けしたりすることに関する詳細については、[Microsoft GDPR Data Discovery Toolkit](https://aka.ms/gdprpartners) (https://aka.ms/gdprpartners)) を参照してください。
 
 さまざまな条件でスキャナーを構成すること、また Office 365 データ損失防止 (DLP) のさまざまな機密情報タイプを使用することに関する情報については、「[Azure Information Protection 用の自動および推奨分類の条件を構成する方法](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification)」を参照してください。新しいタイプの Office 365 機密情報はスキャナーですぐに利用できるようになるわけではなく、カスタム機密情報タイプはスキャナーで使用できないことに注意ください。
 
@@ -85,7 +90,7 @@ SharePoint ドキュメント ライブラリに保存されている Office フ
 
 ### <a name="uls-logs"></a>ULS ログ
 
-SharePoint Server の統合ログ サービス (ULS) と利用状況ログは、さまざまなシステム機能を追跡することから、ユーザー情報が含まれている可能性があります。ULS ログと利用状況ログはテキスト ファイルであり、各種検索ツールを使用して検索できます。[Merge-SPLogFile PowerShell コマンドレット](https://docs.microsoft.com/ja-JP/powershell/module/sharepoint-server/merge-splogfile)は、ファーム内の複数サーバー上の ULS ログのレコードを戻します。
+SharePoint Server の統合ログ サービス (ULS) と利用状況ログは、さまざまなシステム機能を追跡することから、ユーザー情報が含まれている可能性があります。ULS ログと利用状況ログはテキスト ファイルであり、各種検索ツールを使用して検索できます。[Merge-SPLogFile PowerShell コマンドレット](https://docs.microsoft.com/powershell/module/sharepoint-server/merge-splogfile)は、ファーム内の複数サーバー上の ULS ログのレコードを戻します。
 
 ログ保存ポリシーを、ビジネスの目標に必要な最小値に設定することを検討してください。SharePoint Server でのログの構成の詳細については、「[SharePoint Server で診断ログを構成する](https://docs.microsoft.com/SharePoint/administration/configure-diagnostic-logging)」を参照してください。
 
