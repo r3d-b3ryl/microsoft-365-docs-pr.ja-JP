@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39233520"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634044"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -59,7 +59,9 @@ ms.locfileid: "39233520"
 
 - Microsoft PowerApps 内のユーザーおよび管理者のアクティビティ
 
-## <a name="before-you-begin"></a>始める前に
+- Microsoft Forms 内のユーザーおよび管理者のアクティビティ
+
+## <a name="before-you-begin"></a>はじめに
 
 Office 365 監査ログを検索する前に、次の注意事項を必ずお読みください。
 
@@ -125,7 +127,9 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
   |SharePoint Online と OneDrive for Business|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (Azure AD) は、Office 365 のディレクトリ サービスです。 統合監査ログには、Microsoft 365 管理センターまたは Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](https://go.microsoft.com/fwlink/p/?LinkID=616549)」を参照してください。
 
@@ -167,7 +171,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 
     Office 365 の監査ログには、100 件以上のユーザーおよび管理者アクティビティが記録されます。この記事の内容にある [**監査されるアクティビティ**] タブをクリックすると、さまざまな Office 365 サービスそれぞれのすべてのアクティビティに関する説明を確認できます。
 
-    b. [**開始日**] と [**終了日**]: 既定で過去 7 日間が選択されています。 日付と時間の範囲を選択し、その期間内に発生したイベントを表示します。 日付と時間は、協定世界時 (UTC) 形式で指定します。 指定できる最大の日付範囲は 90 日間です。 選択した日付範囲が 90 日間よりも大きい場合は、エラーが表示されます。
+    b. [**開始日**] と [**終了日**]: 既定で過去 7 日間が選択されています。 日付と時間の範囲を選択し、その期間内に発生したイベントを表示します。 日付と時間は、協定世界時 (UTC) 形式で指定します。 指定できる日付範囲は最大 90 日です。 選択した日付範囲が 90 日間よりも大きい場合は、エラーが表示されます。
 
     > [!TIP]
     > 最大の日付範囲である 90 日を使用する場合は、[**開始日**] で現在の時刻を選択してください。それ以外の時刻を選択すると、開始日が終了日より前であるというエラーが返されます。過去 90 日以内に監査を有効にした場合、最大の日付範囲の開始日を監査を有効にした日付より前にすることはできません。
@@ -302,7 +306,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams アクティビティ](#microsoft-teams-activities)|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Yammer アクティビティ](#yammer-activities)|
 |[Microsoft Flow アクティビティ](#microsoft-flow-activities)|[Microsoft PowerApps アクティビティ](#microsoft-powerapps)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
-[Exchange 管理アクティビティ](#exchange-admin-audit-log)|||
+|[Microsoft Forms アクティビティ](#microsoft-forms-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
@@ -776,6 +780,43 @@ PowerApps では、アプリ関連のアクティビティの監査ログを検�
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream アクティビティ
 
 監査ログで Microsoft Stream 内のアクティビティを検索できます。これらのアクティビティには、ユーザーによって実行される動画関連アクティビティ、グループ チャネル アクティビティ、管理アクティビティ (ユーザーの管理、組織設定の管理、レポートのエクスポートなど) が含まれます。これらのアクティビティについては、「[Microsoft Stream の監査ログ](https://docs.microsoft.com/stream/audit-logs)」の「Microsoft Stream に記録されるアクティビティ」セクションを参照してください。
+
+### <a name="microsoft-forms-activities"></a>Microsoft Forms アクティビティ
+
+Office 365 監査ログに記録される Microsoft Forms のユーザー アクティビティおよび管理者アクティビティの一覧を次の表に記載します。 Microsoft Forms は、データを収集し分析するために使用するフォーム/クイズ/アンケート ツールです。 
+
+下記の説明に別途記載するとおり、一部の操作には追加のアクティビティ パラメーターが含まれます。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|コメントが作成される|CreateComment|フォーム所有者がコメントまたはスコアをクイズに追加する。|
+|フォームが作成される|CreateForm|フォーム所有者が新しいフォームを作成する。|
+|フォームが編集される|EditForm|フォーム所有者が質問の作成、削除、編集など、フォームを編集する。 <br><br>プロパティ EditOperation:string は、編集操作名を示します。 これに含まれる操作: CreateQuestion、CreateQuestionChoice、DeleteQuestion、DeleteQuestionChoice、DeleteFormImage、DeleteQuestionImage、UpdateQuestion、UpdateQuestionChoice、UploadFormImage/Bing/Onedrive、UploadQuestionImage、および ChangeTheme  <br><br>ほとんどの操作名は、特に説明を必要としないはずです。 <br><br>FormImage には、クエリ内や背景テーマなど、ユーザーが画像をアップロードできるフォーム内のすべての場所が含まれます。|
+|フォームが移動される|MoveForm|フォーム所有者がフォームを移動する。 <br><br>プロパティ DestinationUserId:string は、フォームを移動したユーザーのユーザー ID を示します。 プロパティ NewFormId:string は、新たにコピーされたフォームの新しい ID です。|
+|フォームが削除される|DeleteForm|フォーウ所有者がフォームを削除する。 これには、SoftDelete (削除オプションが使用され、フォームがごみ箱に移動されます) と HardDelete (ごみ箱が空になります) が含まれます。|
+|フォームが表示される (デザイン時)|ViewForm|フォーム所有者が既存のフォームを編集するために開く。|
+|フォームがプレビューされる|PreviewForm|フォーム所有者がプレビュー機能を使用してフォームをプレビューする。|
+|フォームがエクスポートされる|ExportForm|フォーム所有者が結果を Excel にエクスポートする。 <br><br>プロパティ ExportFormat:string は、Excel ファイルがダウンロードなのかオンラインなのかを示します。|
+|コピー用のフォームの共有が許可される|AllowShareFormForCopy|フォームを他のユーザーと共有するためのテンプレート リンクをフォーム所有者が作成する。 このイベントは、フォーム所有者がテンプレート URL を生成するためにクリックした際にログに記録されます。|
+|コピー用のフォームの共有が許可されない|DisallowShareFormForCopy|フォーム所有者がテンプレートリンクを削除する。|
+|フォームの共同編集者が追加される|AddFormCoauthor|回答のデザインや表示のための共同作業リンクをユーザーが使用する。 このイベントは、共同作業 URL が最初に生成されたときではなくユーザーが共同作業 URL を使用したときにログに記録されます。|
+|フォームの共同編集者が削除される|RemoveFormCoauthor|フォーム所有者が共同作業リンクを削除する。|
+|回答ページが表示される|ViewRuntimeForm|ユーザーが回答ページを開いて表示する。 このイベントは、ユーザーが回答を送信するかどうかに関わらずログに記録されます。|
+|回答が作成される|CreateResponse|新しい回答の受信と似ています。  ユーザーがフォームへの回答を送信した。 <br><br>プロパティ ResponseId:string とプロパティ ResponderId:string は、どの結果が表示されたかを示します。 <br><br>匿名回答者の場合、ResponderId プロパティは null となります。|
+|回答が更新される|UpdateResponse|フォーム所有者がクイズのコメントまたはスコアを更新した。 <br><br>プロパティ ResponseId:string とプロパティ ResponderId:string は、どの結果が表示されたかを示します。 <br><br>匿名回答者の場合、ResponderId プロパティは null となります。|
+|すべての回答が削除される|DeleteAllResponses|フォーム所有者がすべての回答データを削除する。|
+|回答が削除される|DeleteResponse|フォーム所有者が回答を 1 件削除する。 <br><br>プロパティ ResponseId:string は、削除される回答を示します。|
+|複数の回答が表示される|ViewResponses|フォーム所有者が回答の集計リストを表示する。 <br><br>プロパティ ViewType:string は、フォーム所有者は「詳細」を表示しているのか、「集計」を表示しているのかを示します。|
+|1 件の回答が表示される|ViewResponse|フォーム所有者が特定の 1 件の回答を表示する。 <br><br>プロパティ ResponseId:string とプロパティ ResponderId:string は、どの結果が表示されたかを示します。 <br><br>匿名回答者の場合、ResponderId プロパティは null となります。|
+|概要リンクが作成される|GetSummaryLink|結果を共有するための概要結果リンクをフォーム所有者が作成する。|
+|概要リンクが削除される|DeleteSummaryLink|フォーム所有者が概要結果リンクを削除する。|
+|フォームのフィッシング状態が更新される|UpdatePhishingStatus|このイベントは、内部セキュリティ状態の詳細値が変更されたとき、この変更により最終的なセキュリティの状態 (たとえば、現在フォームは「終了済み」または「開始済み」) が変更されたかどうかに関わらずログに記録されます。 つまり、最終的なセキュリティ状態が変更されない場合でも、重複するイベントが表示されることがあります。|
+|Forms Pro の招待が送信される|ProInvitation|ユーザーがクリックして Pro の試用版をアクティブにする。|
+|フォームの設定が更新される|UpdateFormSetting|フォーム所有者がフォームの設定を更新する。 <br><br>プロパティ FormSettingName:string は、設定名と新しい値を示します。|
+|ユーザー設定が更新される|UpdateUserSetting|フォーム所有者がユーザー設定を更新する。 <br><br>プロパティ UserSettingName:string は、設定名と新しい値を示します。|
+|フォームが一覧表示される|ListForms|フォーム所有者がフォームの一覧を表示している。 <br><br>プロパティ ViewType:string は、フォーム所有者が表示に使用しているビュー ([すべてのフォーム]、[自分と共有]、または [グループ フォーム]) を示します。|
+|回答が送信される|SubmitResponse|ユーザーがフォームへの回答を送信する。 <br><br>プロパティ IsInternalForm:boolean は、回答者がフォーム所有者と同じ組織内にいるかどうかを示します。|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ
 
