@@ -1,6 +1,6 @@
 ---
-title: GDPR のための Azure DevOps データ サブジェクト要求
-keywords: Visual Studio Team Services、VSTS、Azure DevOps ドキュメント、プライバシー、GDPR
+title: GDPR および CCPA のための Azure DevOps データ サブジェクト要求
+keywords: Visual Studio Team Services、VSTS、Azure DevOps ドキュメント、プライバシー、GDPR、CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: devops
@@ -9,21 +9,25 @@ ms.date: 06/11/2018
 author: jitojo
 ms.author: jominana
 manager: douge
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3af519ed13b8c647d359ea9c8d1faaff2c34209e
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071486"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268849"
 ---
-# <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>GDPR のための Azure DevOps Services データ サブジェクト要求
+# <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Azure DevOps Services データ サブジェクト要求
 
-EU [一般データ保護規則 (GDPR)](http://ec.europa.eu/justice/data-protection/reform/index_en.htm) では、ユーザー (この規則では*データ サブジェクト*と呼ばれる) に対して、*データ コントローラー*が収集した個人データを管理する権利が与えられます。データ コントローラー (または単に*コントローラー*) は、雇用主やその他の機関または組織です。GDPR の下では個人データは広範な定義がなされ、識別された、または識別可能な自然人に関連するあらゆるデータを指します。GDPR は、データ サブジェクトに対して、自分の個人データへの特定の権利を与えています。こうした権利には、個人データのコピーの取得、修正の要求、処理の制限、削除、別のコントローラーに移動できるようにするための電子形式での受信などがあります。データ サブジェクトがコントローラーに個人データに関するアクションの実行を求める正式な要求は、*データ サブジェクト要求* (DSR) と呼ばれます。
+EU [一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) では、ユーザー (この規則では*データ サブジェクト*と呼ばれる) に対して、*データ コントローラー*が収集した個人データを管理する権利が与えられます。データ コントローラー (または単に*コントローラー*) は、雇用主やその他の機関または組織です。GDPR の下では個人データは広範な定義がなされ、識別された、または識別可能な自然人に関連するあらゆるデータを指します。GDPR は、データ サブジェクトに対して、自分の個人データへの特定の権利を与えています。こうした権利には、個人データのコピーの取得、修正の要求、処理の制限、削除、別のコントローラーに移動できるようにするための電子形式での受信などがあります。データ サブジェクトがコントローラーに個人データに関するアクションの実行を求める正式な要求は、*データ サブジェクト要求* (DSR) と呼ばれます。
 
-GDPR の一般的な情報については、[Service Trust Portal の GDPR セクション](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)を参照してください。
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) の権利などの GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
+
+GDPR の一般的な情報については、[Service Trust Portal の GDPR セクション](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) を参照してください。
 
 このガイドでは、Microsoft のツールを使用して、認証済みの (サインイン済みの) Azure DevOps Services (旧 Visual Studio Team Services) セッション中に収集された個人データをエクスポートまたは削除する方法について説明します。
 
@@ -33,11 +37,11 @@ GDPR の一般的な情報については、[Service Trust Portal の GDPR セ�
 
 ## <a name="personal-data-we-collect"></a>Microsoft が収集する個人データ
 
-Microsoft は、Azure DevOps Services を運用および改善するためにユーザーから 2 種類のデータを収集します。顧客データとシステムが作り出すログです。顧客データには、Azure DevOps Services がサービスを実行するために必要な、ユーザーを確認するためのトランザクション データおよび対話データが含まれます。システムが作り出すログには、製品分野と機能ごとに集計されたサービス使用状況のデータが含まれます。
+Microsoft では、Azure DevOps Services の運用および向上のために、ユーザーのデータを収集します。 Azure DevOps Services では、2 つのカテゴリのデータを収集します。つまり、顧客データとシステム生成ログです。 顧客データには、サービスを運用するために Azure DevOps Services で必要とされる、特定のユーザーを識別可能なトラザクション データおよび相互作用的データが含まれます。 システム生成ログには、各製品領域と機能について集計されたサービスの利用状況データが含まれます。
 
 ## <a name="delete-azure-devops-data"></a>Azure DevOps データの削除
 
-関連する Azure DevOps Services の顧客データを削除し、システムが作り出すログの中で見つかる、個人を特定できるデータを匿名化するための最初の手順は、Azure Active Directory (AAD) の ID アカウントまたは Microsoft アカウント (MSA) を削除する事です。Azure DevOps Services は、厳密な整合性、追跡可能性、および監査規則を持つ記録システムとして信頼されています。これらの義務は、GDPR に定められた削除および保持の義務に影響します。ID アカウントを削除しても、Azure DevOps 組織内の個々の ID に関連付けられたアーチファクトや記録は、修正、削除、変更されません。Azure DevOps 組織全体が削除されたときは、その組織内の個人を特定できるすべての関連データとシステムが作り出すログは、(Azure DevOps 組織の削除の必須期間である 30 日を経た後で) 弊社のシステムから削除されることを保証します。
+関連付けられた Azure DevOps Services の顧客データの削除、およびシステム生成ログで確認される個人を識別可能なデータの匿名化の最初のステップは、Azure Active Directory (AAD) の ID アカウントまたは Microsoft アカウント (MSA) を閉じることです。 Azure DevOps Services は、完全な統合性、追跡可能性、監査ルールを用いたレコードのシステムとして信頼されています。 これらの既存の義務は、GDPR の削除と保持の義務に影響を与えます。 IDアカウントを閉じても、Azure DevOps 組織の個別 ID に関連付けられた成果物およびレコードを修正、削除、変更することはありません。 Azure DevOps 組織全体が削除さたときに、すべての関連付けられた個人を識別可能なデータおよびその組織で確認されるシステム生成ログが、システムから削除されることを確実にしました (Azure DevOps 組織で必要な 30 日間の倫理的な削除の期間後)。
 
 ## <a name="export-azure-devops-data"></a>Azure DevOps データのエクスポート
 
