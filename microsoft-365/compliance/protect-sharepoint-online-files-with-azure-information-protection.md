@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
-ms.openlocfilehash: 6302ee8163525502550017f62fe4350645af59b3
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 19fab529a9a8fb60afef1a419323d7544eeace88
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39630877"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668825"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure Information Protection を使用して SharePoint Online ファイルを保護する
 
@@ -31,7 +31,7 @@ ms.locfileid: "39630877"
   
 この記事の手順を使用して、Azure Information Protection を構成し、ファイルの暗号化やアクセス許可を実施します。これらのファイルは、高度な機密保護のために構成された SharePoint ライブラリに追加することができます。あるいは、サイトからファイルを直接開き、Azure Information Protection クライアントを使用して暗号化を追加することもできます。暗号化およびアクセス許可の保護は、ファイルをサイトからダウンロードした場合にも適用されます。 
 
-これらの手順は、SharePoint サイトとそれらのサイト内のファイルの高度な機密保護を構成するための大きなソリューションの一部です。詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)」を参照してください。 
+これらの手順は、SharePoint サイトとそれらのサイト内のファイルの高度な機密保護を構成するための大きなソリューションの一部です。詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)」を参照してください。 
 
 SharePoint Online 内のファイルに Azure Information Protection を使用することは、すべてのお客様に推奨されるものではなく、ファイルの一部に対してこの保護レベルを必要としているお客様向けのオプションです。
 
@@ -111,7 +111,7 @@ Azure Information Protection で保護されているファイルへのアクセ
 
 ## <a name="see-also"></a>関連項目
 
-[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[SharePoint Online サイトとファイルをセキュリティで保護する](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
