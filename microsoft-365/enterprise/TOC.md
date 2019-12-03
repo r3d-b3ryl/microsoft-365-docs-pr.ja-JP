@@ -1,4 +1,4 @@
-# [Microsoft 365 Enterprise のドキュメントとリソース](index.md)
+# [Microsoft 365 Enterprise のドキュメントとリソース](index.yml)
 # [Microsoft 365 Enterprise の概要](microsoft-365-overview.md)
 # [Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
 ## [基礎インフラストラクチャを展開する](deploy-foundation-infrastructure.md)
