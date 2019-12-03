@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: fdc1eca6913ba6af4f6b65691fdee2165e7c827e
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323397"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668790"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Microsoft 365 Business で Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
 
@@ -32,6 +32,9 @@ Azure Active Directory に参加している Windows 10 デバイスはすべて
 詳細については、「 [Azure Active Directory でのデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」を参照してください。
 手順の概要についても、以下のセクションで説明します。
 
+> [!IMPORTANT]
+> この手順は、OAuth および NTLM にのみ適用されます。 Kerberos はサポートされていません。
+ 
 ## <a name="run-azure-ad-connect"></a>Azure AD Connect を実行する
 
 次の手順を実行して、組織の Azure AD に参加しているデバイスがオンプレミスのリソースにアクセスできるようにします。
@@ -43,6 +46,8 @@ Azure Active Directory に参加している Windows 10 デバイスはすべて
 3. Windows 10 デバイスが Azure AD に参加している場合、各ユーザーはデバイスを再起動し、Microsoft 365 Business 資格情報を使用してサインインする必要があります。 これで、すべてのデバイスがオンプレミスのリソースにもアクセスできるようになりました。
     
 Azure AD に参加しているデバイスのオンプレミスのリソースにアクセスするために、追加の手順は必要ありません。 この機能は、Windows 10 に組み込まれています。 
+
+[PIN/Bio] のように、パスワード以外の方法で、(WHFB credential ログイン経由で) AADJ デバイスにログインし、オンプレミスのリソース (共有、プリンター) にアクセスする予定がある場合。など)。https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 前述の Azure AD に参加しているデバイス構成に組織が展開する準備ができていない場合は、[ハイブリッド AZURE ad の参加](manage-windows-devices.md)しているデバイス構成を設定することを検討してください。
   

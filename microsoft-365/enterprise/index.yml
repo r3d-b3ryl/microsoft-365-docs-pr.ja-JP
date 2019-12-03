@@ -1,0 +1,106 @@
+### YamlMime:Hub
+title: Microsoft 365 Enterprise のドキュメントとリソース
+summary: 高度な機能を備えたインテリジェントクラウドサービスによる、クラス内の生産性向上アプリ。
+brand: m365
+metadata:
+  title: Microsoft 365 Enterprise のドキュメントとリソース
+  description: IT 担当者、インフォメーションワーカー、パートナー用の Microsoft 365 Enterprise で利用できる製品のドキュメントとリソースについて説明します。
+  services: service
+  ms.prod: microsoft-365-enterprise
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: M365-subscription-management
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/29/2019
+  ms.openlocfilehash: 945412e8e66fe558971ceacf3a57023b5bba6e5f
+  ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/03/2019
+  ms.locfileid: "39669541"
+highlightedContent:
+  items:
+  - title: Microsoft 365 Enterprise について
+    itemType: get-started
+    url: microsoft-365-overview.md
+  - title: FastTrack を使用して展開を促進する
+    itemType: quickstart
+    url: https://www.microsoft.com/fasttrack/microsoft-365
+  - title: IT プロフェッショナルと管理者をトレーニングする
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+conceptualContent:
+  title: Microsoft 365 Enterprise およびその他のリソースに関するヘルプを取得する
+  summary: Microsoft 365 Enterprise 展開のガイダンス、機能、およびサービスについて説明します。
+  items:
+  - title: 展開のロードマップに従います。
+    links:
+    - url: deploy-microsoft-365-enterprise.md
+      itemType: deploy
+      text: 展開の概要
+    - url: deploy-foundation-infrastructure.md
+      itemType: how-to-guide
+      text: Foundation インフラストラクチャ
+    - url: deploy-workloads.md
+      itemType: how-to-guide
+      text: ワークロードとシナリオ
+    - url: desktop-deployment-center-home.md
+      itemType: get-started
+      text: 最新デスクトップ展開センターをご覧いただき
+  - title: キー要素を展開する
+    links:
+    - url: identity-infrastructure.md
+      itemType: how-to-guide
+      text: Id インフラストラクチャ
+    - url: https://docs.microsoft.com/windows/deployment/
+      itemType: get-started
+      text: Windows 10 Enterprise
+    - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+      itemType: deploy
+      text: Office 365 ProPlus
+    - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
+      itemType: deploy
+      text: Microsoft Intune
+  - title: 展開の主要なシナリオ
+    links:
+    - url: secure-teams-highly-regulated-data-scenario.md
+      itemType: how-to-guide
+      text: 厳しく規制されたデータに対応した Microsoft Teams
+    - url: teams-sharepoint-online-sites-highly-regulated-data.md
+      itemType: how-to-guide
+      text: 厳しく規制されたデータ用の SharePoint サイト
+    - url: empower-people-to-work-remotely.md
+      itemType: how-to-guide
+      text: リモートワーカー
+    - url: migration-microsoft-365-enterprise-workload.md
+      itemType: deploy
+      text: Office クライアントとサーバーおよび Windows の移行
+  - title: Microsoft 365 Enterprise を管理する
+    links:
+    - url: https://docs.microsoft.com/windows/deployment/update/
+      itemType: how-to-guide
+      text: Windows 10 Enterprise
+    - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+      itemType: concept
+      text: Office 365 ProPlus
+    - url: https://docs.microsoft.com/intune/apps/app-management
+      itemType: get-started
+      text: Intune を使用するアプリ
+    - url: https://docs.microsoft.com/office365/
+      itemType: get-started
+      text: Office 365 サービス
+additionalContent:
+  sections:
+  - title: その他のリソース
+    summary: その他の Microsoft 365 の機能とリソースについては、こちらを参照してください。
+    items:
+    - title: Microsoft 365 コンプライアンス
+      summary: 組織が情報を管理し、リスクから保護し、法的または規制基準に準拠できるようにします。
+      url: https://docs.microsoft.com/microsoft-365/compliance/index
+    - title: Microsoft 365 セキュリティ
+      summary: 堅牢なセキュリティサービスおよびソリューションを使用して、攻撃の面で組織を保護します。
+      url: https://docs.microsoft.com/microsoft-365/security/index
+    - title: Microsoft 365 technical community
+      summary: Microsoft Tech Community の同僚や専門家との接続と共同作業を行い、Microsoft 365 のベストプラクティスを共有します。
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

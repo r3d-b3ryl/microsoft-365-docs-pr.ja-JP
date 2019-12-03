@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Microsoft 365 Business に付属しているセキュリティ機能について説明します。
-ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 98eb0c2015ed6088b2d5e8621c8e72a5b63f2a17
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715144"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668850"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business security and コンプライアンス機能
 
@@ -74,7 +74,8 @@ Microsoft 365 Business の高度な機能を使用すると、サイバー脅威
     Azure portal で Intune 管理センターにアクセスすると、MacOS デバイス、iPhone、Android デバイスの管理などの追加のセキュリティ機能を、Microsoft では利用できない Windows のアドバンストデバイス管理と共にセットアップすることができます。365 Business 管理センター
 - **Azure AD P1 プランと同じ[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
-    条件付きアクセスでは、サインインリスクから組織を保護したり、予期しないネットワークまたはロケールからのアクセス試行、危険なデバイスの種類からのアクセス試行などを行ったりすることができます。 条件付きアクセスポリシーは、最初の認証が完了した後に適用され、最初の認証イベントからの信号を使用して、試行されたアクセスを承認するか、拒否するか、またはその他の校正を行うかどうかを決定します (第2の形式のid) は必須です。
+
+    条件付きアクセスでは、サインインリスクから組織を保護したり、予期しないネットワークまたはロケールからのアクセス試行、危険なデバイスの種類からのアクセス試行などを行ったりすることができます。 条件付きアクセスポリシーは、最初の認証が完了した後に適用され、最初の認証イベントからの信号を使用して、試行されたアクセスを承認するか、拒否するか、またはより多くの証明書を (たとえば、2番目の形式の識別) する必要があるかを判断します。が必要です。
 
     含まれている条件付きアクセス機能は次のとおりです。
 
@@ -108,7 +109,7 @@ Microsoft 365 Business サブスクリプションには、コンプライアン
 これらの機能は、セキュリティ&amp;コンプライアンスセンターおよび Intune 管理センターで管理できます。 時間の経過とともに、簡略化された統制は Microsoft 365 Business 管理センターに追加されます。
   
     
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>これらのセキュリティ機能はすべての市場で利用できますか?
   

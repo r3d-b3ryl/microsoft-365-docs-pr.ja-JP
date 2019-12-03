@@ -1,7 +1,7 @@
 ---
 title: 刑事司法 Information Services (CJIS) セキュリティポリシー
 description: Microsoft government cloud service は、米国犯罪司法 Information Services セキュリティポリシーに準拠しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 069f4dac1b04a75ff30339f8cecde4e8f82c044a
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699737"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668815"
 ---
 # <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>コンプライアンスオファリング: 刑事司法 Information Services (CJIS) セキュリティポリシー
 
@@ -40,14 +40,14 @@ Microsoft クラウドでの CJIS セキュリティポリシーの利点につ�
 
 Azure セキュリティおよびコンプライアンスブループリントを使用して CJIS のセキュリティポリシーを促進する方法について説明します。 [Microsoft Government Cloud Services 用の cjis 実装ガイドラインをダウンロード](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)する
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365 米国政府](https://aka.ms/d365-compliance-list)
 - [Office 365 米国政府機関](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 FBI では、CJIS 要件に対する Microsoft コンプライアンスの証明書は提供されません。 その代わりに、microsoft の構成証明書は、microsoft と州の CJIS の各権限、Microsoft とお客様との間の契約に含まれています。
 
@@ -71,22 +71,20 @@ Alabama、アラスカ、Arkansas、アリゾナ、カリフォルニア、コ�
 
 Microsoft は、状態 CJIS Systems Agency (CSA) を使用して、情報契約に署名します。状態の CSA からコピーを要求することができます。 さらに、Microsoft は、お客様に詳細なセキュリティ、プライバシー、コンプライアンス情報を提供しています。 お客様は、独立した監査者によって提供されるセキュリティおよびコンプライアンスレポートを見直して、Microsoft が関連する監査範囲に適したセキュリティコントロール (ISO 27001 など) を実装しているかどうかを検証することもできます。
 
-2017年8月には、次のように適切な CJIS ドキュメントが含まれていることがあります。たとえば、アラスカ、アリゾナ、Arkansas、カリフォルニア、コロラド、ハワイ、ジョージア、イリノイ、インディアナ、アイオワ、カンザス、ケンタッキー、マサチューセッツ、ミシガン、ミネソタ、ミズーリ、モンタナ、ネバダ、ニュージャージー、ニューヨーク、ノースカロライナ、オレゴン、ペンシルバニア、ロードアイランド、サウスカロライナ州、テネシー、テキサス、バージニア、ユタ、バーモント、およびワシントン。
-
 **エージェンシーのコンプライアンスの取り組みはどこで開始しますか?**
 
 [Cjis セキュリティポリシー](https://aka.ms/cjis-security-policy)には、CJI を保護するためにエージェンシーが講じる必要のある対策が含まれています。 さらに、Microsoft アカウント担当者は、管轄区の要件を熟知したユーザーと連絡を取ります。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [犯罪司法情報サービス](https://aka.ms/cjis)
 - [CJIS セキュリティポリシー](https://aka.ms/cjis-security-policy)
 - [CJIS セキュリティポリシーバージョン 5.3 backgrounder](https://aka.ms/cjis-backgrounder)
 - [Azure Government の CJIS 実装ガイドライン](https://aka.ms/cjisimplementationguidelines)
-- [Microsoft Common Controls Hub コンプライアンスフレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/?linkid=2087246)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf) をダウンロードします。

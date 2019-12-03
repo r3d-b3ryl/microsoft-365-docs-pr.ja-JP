@@ -1,7 +1,7 @@
 ---
 title: EU パスポート番号
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 44ee6e7b46d79772bcd3aec0fd26265f58f6c4c6
+ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085872"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39662802"
 ---
 # <a name="eu-passport-number"></a>EU パスポート番号
 
@@ -37,7 +37,7 @@ ms.locfileid: "37085872"
     
 - 7 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 該当なし
   
@@ -76,7 +76,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2つの文字の後に6桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 該当なし
   
@@ -115,7 +115,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  9 桁の数字 
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -154,7 +154,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  9 桁の数字 
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -193,7 +193,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1文字の後に6桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -232,7 +232,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 スペースまたは区切り文字を含まない8桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -271,7 +271,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  9 桁の数字 
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -310,7 +310,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1文字の後に7桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -361,7 +361,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字の後に 7 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -400,7 +400,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2つの文字の後に6桁または7桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -443,7 +443,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 - 7 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -486,7 +486,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 - 7 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 該当なし
   
@@ -529,7 +529,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 - 7 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -568,7 +568,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8桁の数字または文字 (大文字小文字を区別しない)
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 該当なし
   
@@ -607,7 +607,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8桁の数字または文字 (大文字小文字を区別しない)
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -646,7 +646,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  7 桁の数字 
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -685,7 +685,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9桁の文字または数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 該当なし
   
@@ -732,7 +732,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 - 6 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -771,7 +771,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8桁または9桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -810,7 +810,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1桁の数字または文字 (大文字小文字を区別しない) の後に7桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -855,7 +855,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 - 7 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 いいえ
   
@@ -900,7 +900,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 - 6 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 該当なし
   
