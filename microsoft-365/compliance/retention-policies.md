@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: e8014b04df0991c89c6f487b3f9d8e176b9cff75
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: caeec733b3b5722f25210d0d2566e1dd9a5cd95e
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39638040"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818989"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -213,9 +213,9 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>特定の追加または除外を含むポリシー
 
-アイテム保持ポリシーは、特定のユーザーに適用することもできます。そのためには、目的の場所の **[状態]** をオンに切り替えてから、リンクを使用して特定のユーザー、Office 365 グループ、または場所を含めたり除外したりします。 
+保持ポリシーは、特定のユーザーや、Office 365 グループ、またはサイトに適用することもできます。そのためには、目的の場所の **[状態]** をオンに切り替えてから、リンクを使用して特定のユーザー、Office 365 グループ、またはサイトを含めたり除外したりします。 
   
-ただし、1,000 人を超える特定ユーザーを含めたり除外したりするアイテム保持ポリシーには、次の制限があります。
+ただし、1,000 を超える特定の場所を含めたり除外したりする保持ポリシーには、次の制限があります。
   
 - これに該当する保持ポリシーに含めることができるメールボックスは 1,000 個以下、サイト コレクションは 100 個以下です。
     

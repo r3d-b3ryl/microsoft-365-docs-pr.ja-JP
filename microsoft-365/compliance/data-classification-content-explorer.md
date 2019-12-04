@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 6f062901acbf149f6fc56c266d10b370ed0c1112
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 9e9ad76d2bdd7f74368121346f7e04d1208803ff
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "39268577"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818859"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>データ分類コンテンツ エクスプローラー (プレビュー)
 
@@ -28,6 +28,18 @@ ms.locfileid: "39268577"
 ## <a name="content-explorer"></a>コンテンツ エクスプローラー
 
 コンテンツ エクスプローラーは、機密ラベル、保持ラベルまたは組織で機密情報の種類として分類されているアイテムの現在のスナップショットです。
+
+### <a name="sensitive-information-types"></a>機密情報の種類
+
+[DLP ポリシー](data-loss-prevention-policies.md)は、**機密情報の種類**として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](what-the-sensitive-information-types-look-for.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジットカード番号、銀行口座番号、国民識別番号、Windows Live ID サービス番号などです。
+
+### <a name="sensitivity-labels"></a>機密ラベル
+
+[機密ラベル](sensitivity-labels.md)は、組織に対するアイテムの価値を示すタグです。 手動で、または自動的に適用することができます。 適用すると、ドキュメントに埋め込まれ、ドキュメントがどこへ移動されても機密ラベルは保持されます。 機密ラベルによって、必須のウォーターマークや暗号化など、さまざまな保護機能が有効化されます。 エンド ポイントの保護を有効にすると、アイテムを組織の制御から離れさせないようにもできます。
+
+### <a name="retention-labels"></a>保持ラベル
+
+[保持ラベル](labels.md)を使用すると、ラベル付けされたアイテムの保持期間、およびアイテムを削除する前に行う手順を定義できます。 手動で、またはポリシーを使用して自動的に適用することができます。 組織が法的要件および規制要件を遵守するのに役立ちます。
 
 ![折りたたみ済みのコンテンツ エクスプローラーのスクリーンショット](media/data-classification-content-explorer-1.png)
 
@@ -55,3 +67,4 @@ ms.locfileid: "39268577"
 - [保持ラベル](labels.md)
 - [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
 - [アイテム保持ポリシーの概要](retention-policies.md)
+- [データ損失防止の概要](data-loss-prevention-policies.md)

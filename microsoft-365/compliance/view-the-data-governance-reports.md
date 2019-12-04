@@ -1,7 +1,7 @@
 ---
 title: データ ガバナンスのレポートを表示する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
-ms.openlocfilehash: d6537c7c2c6f4bda9aad105ea5882e245a430f4c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d761931cea171afb84e25fa0900bec7c3a2f3c2
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086477"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813907"
 ---
 # <a name="view-the-data-governance-reports"></a>データ ガバナンスのレポートを表示する
 
@@ -34,7 +34,7 @@ ms.locfileid: "37086477"
     
 これらのすべてのレポートでは、Exchange、SharePoint、OneDrive for Business からラベル付けされたコンテンツを表示します。
   
-これらのレポートは、セキュリティ&amp;コンプライアンス センター\>**データガバナンス**\>**ダッシュボード**で確認できます。
+これらのレポートは、セキュリティ&amp;コンプライアンス センター\>**情報ガバナンス**\>**ダッシュボード**で確認できます。
   
 ![過去 90 日間のラベルの傾向を示すグラフ](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
