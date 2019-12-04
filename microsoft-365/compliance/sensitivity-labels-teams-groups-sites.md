@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ラベルは、Microsoft Teams、Office 365 グループ、および SharePoint サイトに適用できます。
-ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
+ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818839"
+ms.locfileid: "39819133"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)
 
@@ -77,15 +77,15 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトの機
   }
 ```
 
-このプレビューを有効にした場合、Office 365 は新しいグループおよび SharePoint サイトに古い分類を使用しなくなりました。 [AZURE AD サイトの分類](/sharepoint/dev/solution-guidance/modern-experience-site-classification)($setting ["ClassificationList"]) を使用した場合は、既存のグループとサイトでも古い分類が表示されます。 新しい分類を表示するには、変換します。 変換方法の詳細については、「[従来の AZURE AD サイトの分類を使用したかどうか](#if-you-used-classic-azure-ad-site-classification)」を参照してください。
+このプレビューを有効にした場合、Office 365 は新しいグループおよび SharePoint サイトに古い分類を使用しなくなりました。 [AZURE AD サイトの分類](/sharepoint/dev/solution-guidance/modern-experience-site-classification)($setting ["ClassificationList"]) を使用した場合は、既存のグループとサイトでも古い分類が表示されます。 新しい分類を表示するには、変換します。 変換方法の詳細については、「[従来の AZURE AD サイトの分類を使用したかどうか](#if-you-used-classic-azure-ad-site-classification)」を参照してください。 
 
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>機密ラベルを作成 (または編集) する際にサイトおよびグループの設定を設定する
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>機密ラベルを作成または編集するときにサイトとグループの設定を設定する
 
-プレビューを有効にしたら、次の手順に従って、機密ラベルを作成します。 これらの設定を変更すると、同期が最大24時間かかる場合があります。
+プレビューを有効にした後、次の手順に従って、機密ラベルを作成または編集します。 既にラベルが定義されている場合でも、新しい機密ラベルをサイトやグループで使用できるようにするには、次の手順を実行する必要があります。 これらの設定を変更すると、同期が最大24時間かかる場合があります。
 
 1. Microsoft 365 コンプライアンスセンターで、[**分類** > **機密ラベル**] を選択します。
 
-2. [**ラベルの作成**] を選択します。
+2. [**ラベルの作成**] を選択します。 既にラベルを持っている場合は、次の手順に進みます。
 
 3. 必要なオプションを選択し、[**サイトとグループの設定**] タブで以下を選択します。
 
@@ -97,6 +97,14 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトの機
 
 > [!IMPORTANT]
 > チーム、グループ、またはサイトにラベルを適用すると、サイトおよびグループの設定のみが有効になります。 暗号化やコンテンツマーキングなどのその他の設定は、チーム、グループ、またはサイト内のすべてのコンテンツに適用されません。 同様に、ラベルを作成してサイトとグループの設定を有効にしない場合でも、ユーザーがチーム、グループ、およびサイトを作成するときに、ラベルは使用できますが、ユーザーがそれを適用しても何も実行しません。
+
+[機密ラベルを発行する方法について説明します。](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+
+## <a name="troubleshoot-sensitivity-label-deployment"></a>機密ラベルの展開のトラブルシューティング
+
+これらの設定を有効にした後、またはラベルの説明を変更した後に Teams または Office 365 グループを作成したときに問題が発生した場合は、ラベルを保存してから数時間待ってから、Team または Office 365 グループをもう一度作成してみてください。
+
+それでも SharePoint Online から新しい機密ラベルを表示できない場合は、直ちに Microsoft サポートにお問い合わせください。
 
 [機密ラベルを発行する方法について説明します。](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
