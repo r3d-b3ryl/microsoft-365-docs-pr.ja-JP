@@ -6,10 +6,11 @@
 ## セットアップ
 ### [手順の概要](set-up-overview.md)
 ### [Microsoft 365 Business をセットアップする](set-up.md)
+### [Windows 10 コンピューターのセキュリティを強化する](secure-win-10-pcs.md)
 ### [Windows Pro Creators Update にアップグレードする](upgrade-to-windows-pro-creators-update.md)
 ### [Office クライアントの展開の準備](prepare-for-office-client-deployment.md)
 ### [ユーザーの環境に Office をインストールする](help-users-install-office.md)
-### [オンプレミス リソースへのアクセス]()
+### [オンプレミス リソースへのアクセス]
 #### [ドメインに参加している Windows 10 デバイスを管理できるようにする](manage-windows-devices.md)
 #### [Azure AD 参加済みデバイスからリソースにアクセスする](access-resources.md)
 ## ユーザー デバイスのセットアップ
