@@ -24,26 +24,31 @@ sections:
             html: <p>意思決定者向けの Microsoft マネージドデスクトップの概要--それがどのように機能するか、どのように役立つか</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+              alt: ''
             title: Microsoft マネージド デスクトップとは
           - href: service-description/index.md
             html: <p>Microsoft マネージドデスクトップのすべての部分の詳細な説明</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+              alt: ''
             title: サービスの説明
           - href: get-ready/index.md
             html: <p>環境と組織でサービスを使用できるようにするためのすべての手順</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_support.svg'
+              alt: ''
             title: 準備する
           - href: get-started/index.md
             html: <p>デバイスのセットアップやアプリの展開など、Microsoft マネージドデスクトップを使用して組織をオンボードで利用する</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: 作業の開始
+              alt: ''
+            title: はじめに
           - href: working-with-managed-desktop/index.md
             html: <p>サービスを使用した日常的な操作について</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_portal.svg'
+              alt: ''
             title: Microsoft マネージド デスクトップの使用
   - title: 新しい記事とブログ投稿
     items:

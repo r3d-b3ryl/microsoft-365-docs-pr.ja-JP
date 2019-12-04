@@ -317,6 +317,8 @@
           href: export-search-results.md
         - name: コンテンツ検索レポートのエクスポート
           href: export-a-content-search-report.md
+        - name: Microsoft Edge で電子情報開示エクスポートツールを使用する
+          href: configure-edge-to-export-search-results.md
         - name: メール メッセージを検索して削除する
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Office 365 のオンプレミス ユーザーのクラウド ベースのメールボックスを検索する
@@ -667,7 +669,7 @@
           href: manage-jobs.md
 - name: 監査と通知ポリシーを管理する
   items:
-    - name: 監査ログを検索する
+    - name: 監査ログの検索
       href: search-the-audit-log-in-security-and-compliance.md
     - name: 通知ポリシーを管理する
       href: alert-policies.md
@@ -1106,7 +1108,7 @@
           items:
             - name: カリフォルニア州消費者プライバシー法 (CCPA)
               href: offering-ccpa.md
-            - name: カナダのプライバシーに関する法律
+            - name: カナダのプライバシー関連法
               href: offering-canadian-privacy-laws.md
         - name: 南アメリカ
           items:
