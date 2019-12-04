@@ -18,16 +18,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトには、保持ラベルとデータ損失防止 (DLP) ポリシーを適用してください。'
-ms.openlocfilehash: 4c9eb83cbde7d54706f109484257e97c22c4733c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: c40261df8203841e3627a0d7a0c09c7f88a02a6b
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631028"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668875"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>保持ラベルと DLP による SharePoint Online ファイルの保護
 
-この記事に示した手順を使用して、ベースライン、機密、および高機密の SharePoint Online チーム サイトに対応する保持ラベルと DLP ポリシーを設計および展開します。 この 3 層の保護の詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)」を参照してください。
+この記事に示した手順を使用して、ベースライン、機密、および高機密の SharePoint Online チーム サイトに対応する保持ラベルと DLP ポリシーを設計および展開します。 この 3 層の保護の詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)」を参照してください。
   
 ## <a name="how-this-works"></a>そのしくみ
 
@@ -150,7 +150,7 @@ ms.locfileid: "39631028"
     
 14. **ポリシー ヒントと電子メール通知のカスタマイズ** ウィンドウで、**ポリシー ヒントのテキストをカスタマイズする** をクリックします。
     
-15. 機密性の高いファイルを保護するために機密度ラベルを使用したかどうかに応じて、テキスト ボックスに、次のいずれかのヒントを入力するか、貼り付けます。
+15. 機密ファイルを保護するためにオプションで機密度ラベルを使用したかどうかに応じて、テキスト ボックスに、次のいずれかのヒントを入力するか、貼り付けます。
     
   - 組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。
   - 機密性の高いファイルは、暗号化によって保護されます。IT 部門によってこれらのファイルへのアクセス許可が与えられている外部ユーザーのみが、それらを読み取ることができます。

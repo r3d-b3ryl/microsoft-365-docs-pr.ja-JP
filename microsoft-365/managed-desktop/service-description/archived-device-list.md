@@ -4,13 +4,14 @@ description: リタイア間近にあるデバイスは登録できますが、�
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ccc4d7e2fae0a8e5ee6e3a7d71fb55edc8f04930
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640588"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813877"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
@@ -23,7 +24,7 @@ ms.locfileid: "38640588"
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 Microsoft Managed Desktop に登録するには、デバイスは次のモデルのいずれかである必要があります。また、RAM、プロセッサファミリ、およびディスク容量について、リストされている仕様を満たすか、それを超えることができます。 他のカスタマイズはサポートされていません。
 
-ここに示すデバイスへのリンクは、リファレンスのみを対象としています。 デバイスを注文する場合は、商用チャネルの連絡先と協力して、正しい構成を選択してください。
+
 
 >[!NOTE]
 >この表では、"定年年月日" は、Microsoft マネージドデスクトップではこのモデルがサポートされなくなる日付です。 その日に、このモデルのすべての登録済みデバイスは、登録されたときに関係なく、Microsoft マネージドデスクトップから削除されます。
@@ -32,9 +33,9 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 | モデル  | 最小仕様  | 追加要件   | 定年後の日付 |
 |---------|---------|---------|---------|
-| [HP EliteBook 830/840/850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年2月15日** |
-|[Surface のノートブック](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |
-|[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | なし | **2022年6月15日** |
+| HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年2月15日** |
+|Surface のノートブック| 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |
+|Surface Pro| 256 GB/Intel i5/8 GB RAM | なし | **2022年6月15日** |
 
 
 また、デバイスは次のものも必要です。

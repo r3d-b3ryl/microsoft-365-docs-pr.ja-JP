@@ -3,7 +3,7 @@ title: Office 365 Message Encryption に関する FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: 8fea73b73ab49dcfb0ac67935a9e027e87eb721a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38686952"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818849"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -59,7 +59,7 @@ BYOK の詳細については、「 [Azure Information Protection のテナン�
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>「Azure Information Protection を使用して OME と BYOK を実行する」では、subpoenas などのサードパーティのデータ要求に対する Microsoft のアプローチを変更します。
 
-不正解です。 OME と、Azure Information Protection からの独自の暗号化キーを提供および制御するオプションは、法的執行者 subpoenas に応答するようには設計されていませんでした。 Azure Information Protection の OME では、コンプライアンスを重視したお客様を対象として設計されています。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 受信する要求の詳細情報を定期的に公開しています。 サードパーティのデータ要求の詳細については、「Microsoft Trust Center で[顧客データにアクセスするための政府機関および司法執行機関への対応](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)」を参照してください。 また、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx)の「顧客データの開示」を参照してください。
+いいえ。 OME と、Azure Information Protection からの独自の暗号化キーを提供および制御するオプションは、法的執行者 subpoenas に応答するようには設計されていませんでした。 Azure Information Protection の OME では、コンプライアンスを重視したお客様を対象として設計されています。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 受信する要求の詳細情報を定期的に公開しています。 サードパーティのデータ要求の詳細については、「Microsoft Trust Center で[顧客データにアクセスするための政府機関および司法執行機関への対応](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)」を参照してください。 また、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx)の「顧客データの開示」を参照してください。
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>この機能は、従来の Office 365 メッセージの暗号化 (OME) と Information Rights Management (IRM) の機能に関連しています。
 
@@ -85,7 +85,7 @@ OME の以前のバージョンを引き続き使用することはできます�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>組織では Active Directory Rights Management を使用していますが、この機能を使用することはできますか?
 
-不正解です。 Active Directory Rights Management サービス (AD RMS) を使用して Exchange Online を使用している場合、これらの新機能をすぐに有効にすることはできません。 代わりに、まず[AD RMS を Azure Information Protection に移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する必要があります。 
+いいえ。 Active Directory Rights Management サービス (AD RMS) を使用して Exchange Online を使用している場合、これらの新機能をすぐに有効にすることはできません。 代わりに、まず[AD RMS を Azure Information Protection に移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する必要があります。 
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>自分の組織では、Exchange ハイブリッド展開を行っています。 この機能を使用できますか。
 
@@ -121,7 +121,7 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>ポリシーをセットアップすることで、メッセージを自動的に暗号化できますか?
 
-正解です。 Exchange Online でメールフロールールを使用して、特定の条件に基づいてメッセージを自動的に暗号化します。 たとえば、受信者 ID、受信者ドメイン、またはメッセージの本文または件名の内容に基づいたポリシーを作成できます。 「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールの定義」を](define-mail-flow-rules-to-encrypt-email.md)参照してください。
+はい。 Exchange Online でメールフロールールを使用して、特定の条件に基づいてメッセージを自動的に暗号化します。 たとえば、受信者 ID、受信者ドメイン、またはメッセージの本文または件名の内容に基づいたポリシーを作成できます。 「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールの定義」を](define-mail-flow-rules-to-encrypt-email.md)参照してください。
   
 ## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>受信および送信メールの暗号化を自動的に削除できますか?
 
@@ -133,7 +133,11 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信された暗号化されたメッセージを開くことはできますか。
 
-はい。 共有メールボックスで暗号化されたメッセージがサポートされています。 いくつかの制限が適用されます。
+はい。 共有メールボックスで暗号化されたメッセージがサポートされています。
+
+- 共有メールボックスで保護されたメールを配布グループの一部として受信した場合、ユーザーは共有メールボックスで保護されたメールを開くことができます。
+
+- ユーザーが Outlook for Windows、outlook for Mac、および Outlook on the web を使用している場合は、電子メールから保護を継承する添付ファイルを表示できます。
 
 ## <a name="is-delegated-access-supported"></a>委任されたアクセスがサポートされていますか?
 
@@ -149,7 +153,7 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>電子情報開示などのコンプライアンス機能を使用してメッセージの暗号化を使用できますか?
 
-正解です。 すべての暗号化された電子メールメッセージは、Office 365 コンプライアンス機能によって検出できます。
+はい。 すべての暗号化された電子メールメッセージは、Office 365 コンプライアンス機能によって検出できます。
 
 ## <a name="can-i-remove-encryption-from-email"></a>暗号化を電子メールから削除することはできますか?
 

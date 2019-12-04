@@ -4,7 +4,7 @@ keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動インシデント対応機能の使用を開始します。
-ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673423"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813867"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 の脅威を自動的に調査し対応する
 
@@ -36,22 +36,11 @@ AIR を使用すると、特定のアラートがトリガーされ、1つ以上
 - [調査の結果としてアクションを確認して承認する](#review-and-approve-actions) 
 - [調査に関連する通知の詳細を表示する](#view-details-about-an-alert-related-to-an-investigation)
 
-> [!NOTE]
-> この記事で説明されているタスクを実行するには、適切なアクセス許可を持っている必要があります。 たとえば、myst はグローバル管理者、セキュリティ管理者、セキュリティオペレーター、またはセキュリティ閲覧者になります。 [Microsoft 365 セキュリティセンターの役割とアクセス許可の詳細について説明](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)します。
-
-AIR は次のサブスクリプションに含まれています。
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 Advanced Threat Protection プラン 2
-
-これらのサブスクリプションのいずれかがない場合は、[無料試用版を開始](https://go.microsoft.com/fwlink/p/?LinkID=698279)します。
-
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
 1. Office 365 の全体管理者、セキュリティ管理者、またはセキュリティ閲覧者[https://protection.office.com](https://protection.office.com)として、に移動して、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
 
-2. 次のいずれかを実行します。
+2. 次のいずれかの操作を行います。
 
     - [**脅威管理** > ]**ダッシュボード**に移動します。 これにより、[セキュリティダッシュボード](security-dashboard.md)が表示されます。 エアウィジェットは、[セキュリティダッシュボード](security-dashboard.md)の上部に表示されます。 **調査の概要**などのウィジェットを選択します。
 
@@ -111,7 +100,7 @@ Office 365 では、通常、自動調査は1つまたは複数の推奨され�
 
 これを設定するには、次のリソースを使用します。
 
-|リソース  |説明  |
+|Resource  |説明  |
 |---------|---------|
 |[Office 365 管理 API の概要](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |Office 365 管理アクティビティ API は、Office 365 と Azure Active Directory のアクティビティ ログからの、ユーザー、管理者、システム、およびポリシー アクションとポリシー イベントについての情報を提供します。         |
 |[Office 365 管理 API の使用を開始する](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |Office 365 管理 API は、Azure AD を使用して、アプリケーションが Office 365 データにアクセスするための認証サービスを提供します。 これを設定するには、この記事の手順に従います。          |
@@ -120,10 +109,8 @@ Office 365 では、通常、自動調査は1つまたは複数の推奨され�
 
 ## <a name="next-steps"></a>次の手順
 
-[通知の詳細情報](../../compliance/alert-policies.md)
-
-[Office 365 で配信された悪意のある電子メールを手動で検索して調査する](investigate-malicious-email-that-was-delivered.md)
-
-[Microsoft Defender ATP の AIR についての詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
-[Microsoft 365 ロードマップにアクセスして、近日公開予定の機能を確認する](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [空気を取得し、必要なアクセス許可を確認する方法を確認する](automated-investigation-response-office.md#how-to-get-air)
+- [通知の詳細情報](../../compliance/alert-policies.md)
+- [Office 365 で配信された悪意のある電子メールを手動で検索して調査する](investigate-malicious-email-that-was-delivered.md)
+- [Microsoft Defender ATP の AIR についての詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Microsoft 365 ロードマップにアクセスして、近日公開予定の機能を確認する](https://www.microsoft.com/microsoft-365/roadmap?filters=)

@@ -1,9 +1,9 @@
 ---
-title: Office 365 での自動調査および対応 (AIR)
+title: Office 365 での自動インシデント対応 (エア)
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,28 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Office 365 Advanced Threat Protection での自動調査および対応機能について説明します。
-ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
-ms.translationtype: HT
+description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
+ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386204"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813917"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
+# <a name="automated-incident-response-air-in-office-365"></a>Office 365 での自動インシデント対応 (エア)
 
-自動調査および対応 (ARI) 機能を使用すると、既存のよく知られている脅威に対処するために、自動調査プロセスを実行できます。 AIR を使用すると、セキュリティ運用チームがより効率的かつ効果的に運用を行えます。
+自動インシデント対応 (エア) 機能により、現在存在している既知の脅威への対応として、自動化された調査プロセスを実行することができます。 AIR を使用すると、セキュリティ運用チームがより効率的かつ効果的に運用を行えます。
 - この記事では、AIR の仕組みの概要を説明します。
 - AIR の使用を開始するには、「[Office 365 で脅威を自動的に調査し対応する](office-365-air.md)」を参照してください。
-
-> [!NOTE]
-> AIR 機能にアクセスするには、グローバル管理者、セキュリティ管理者、セキュリティ オペレーター、またはセキュリティ リーダーである必要があります。 これらのアクセス許可の詳細については、「[Microsoft 365 セキュリティ センター: 役割とアクセス許可](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)」を参照してください。
-
-AIR は次のサブスクリプションに含まれています。
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 Advanced Threat Protection プラン 2
 
 ## <a name="the-overall-flow-of-air"></a>AIR の全体的な流れ
 
@@ -41,10 +32,10 @@ AIR の流れは大まかには次のようになります。
 
 |フェーズ  |内容  |
 |---------|---------|
-|1     |[アラート](#alerts)がトリガーされ、[セキュリティ プレイブック](#security-playbooks)が開始されます。         |
-|2     |具体的なアラートやセキュリティ プレイブックに応じて、[自動調査が直ちに開始されます](#example-a-user-reported-phish-message-launches-an-investigation-playbook)。 (別の方法として、[エクスプローラー](threat-explorer.md)などのレポートでの値を基に、セキュリティ アナリストが[自動調査を手動で開始することもできます](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。)         |
-|3     |自動調査の実行中に関連する新たなアラートがトリガーされると、調査範囲が広がることがあります。         |
-|4     |自動調査の実行中および実行後は、[詳細情報と結果](#investigation-graph)を表示することができます。 結果には、検出された脅威に対処し、修復を行うためにとることができる[推奨処理](#recommended-actions) が含まれます。 また、すべての調査活動を追跡する[プレイブック ログ](#playbook-log)が提供されます。<br/>組織でカスタム レポート ソリューションまたはサード パーティのソリューションを使用している場合は、[Office 365 マネージメント アクティビティ API を使用して](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)自動調査と脅威に関する情報を表示することができます。         |
+|1-d     |[アラート](#alerts)がトリガーされ、[セキュリティ プレイブック](#security-playbooks)が開始されます。         |
+|pbm-2     |具体的なアラートやセキュリティ プレイブックに応じて、[自動調査が直ちに開始されます](#example-a-user-reported-phish-message-launches-an-investigation-playbook)。 (別の方法として、[エクスプローラー](threat-explorer.md)などのレポートでの値を基に、セキュリティ アナリストが[自動調査を手動で開始することもできます](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。)         |
+|1/3     |自動調査の実行中に関連する新たなアラートがトリガーされると、調査範囲が広がることがあります。         |
+|2/4     |自動調査の実行中および実行後は、[詳細情報と結果](#investigation-graph)を表示することができます。 結果には、検出された脅威に対処し、修復を行うためにとることができる[推奨処理](#recommended-actions) が含まれます。 また、すべての調査活動を追跡する[プレイブック ログ](#playbook-log)が提供されます。<br/>組織でカスタム レポート ソリューションまたはサード パーティのソリューションを使用している場合は、[Office 365 マネージメント アクティビティ API を使用して](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)自動調査と脅威に関する情報を表示することができます。         |
 |5     |セキュリティ運用チームが結果と推奨事項を確認し、修復処理を承認します。 Office 365 では、修復処理は組織のセキュリティ チームが承認した場合にのみ実行されます。         |
 
 以下のセクションでは、アラート、セキュリティ プレイブック、調査の詳細などの、AIR の詳細情報を詳しく説明します。 また、この記事では AIRの仕組みについて 2 つの例を紹介します。 AIR の使用を開始するには、「[Office 365 で脅威を自動的に調査し対応する](office-365-air.md)」を参照してください。
@@ -53,24 +44,22 @@ AIR の流れは大まかには次のようになります。
 
 [アラート](../../compliance/alert-policies.md#viewing-alerts)は、セキュリティ運用チームのインシデント対応ワークフローに対するトリガーを表します。 すべての脅威に対処しつつ、優先的に調査するアラートのセットを適切に特定することは簡単ではありません。 アラートの調査を手動で実行する場合、セキュリティ運用チームは、脅威の危険にさらされているエンティティ (コンテンツ、デバイス、ユーザーなど) を捜索してそれらの相関関係を特定する必要があります。 このようなタスクやワークフローでは大きな手間を要し、複数のツールとシステムを必要とします。 AIR を使用することで、セキュリティ対応プレイブックを自動的にトリガーする主要なセキュリティおよび脅威の管理アラートに対して、調査と対応が自動化されます。　 
 
-2019 年 4 月に公開された AIR の最初のリリースでは、以下の単一イベント管理アラート ポリシーから生成されたアラートが自動的に調査されます。 
+最初のリリースの AIR (2019 年4月以降) では、次の種類の単一イベント通知ポリシーから生成されたアラートが自動的に調査されます。  
 
 - 悪意のある可能性がある URL のクリックが検出されました
-
 - ユーザーによりメールがフィッシングとして報告されました*
-
 - マルウェアを含んだメール メッセージが配信後に削除されました*
-
 - フィッシング URL を含んだメール メッセージが配信後に削除されました*
-
 - 不審なメール送信パターンが検出されました#
-
 - ユーザーに対してメールの送信が制限されました#
 
 > [!NOTE]
 > アスタリスク (*) が付いているアラートには、セキュリティ/コンプライアンス センター内の各アラート ポリシーで重要度*情報*が割り当てられ、メール通知が無効に設定されます。 メール通知は、[アラート ポリシーの構成](../../compliance/alert-policies.md#alert-policy-settings)で有効にすることができます。 ハッシュ (#) が付いているアラートは、パブリック プレビュー プレイブックに関連付けられている、一般公開のアラートです。
 
-アラートを表示するには、セキュリティ/コンプライアンス センターで、[**アラート**]  >  [**アラートの表示**] の順に選択します。 詳細情報を表示するアラートを選択し、通知を選択して詳細を表示します。次に、[**調査を表示**] リンクを使用して当該[調査](#investigation-graph)に移動します。 既定で、情報アラートはアラート ビューで非表示になっています。 表示するには、情報アラートを含めるように、アラート フィルターを変更する必要があります。
+アラートを表示するには、セキュリティ/コンプライアンス センターで、[**アラート**]  >  [**アラートの表示**] の順に選択します。 詳細情報を表示するアラートを選択し、通知を選択して詳細を表示します。次に、[**調査を表示**] リンクを使用して当該[調査](#investigation-graph)に移動します。 
+
+> [!NOTE]
+> 情報通知は、既定では通知ビューに表示されません。 それらを表示するには、通知フィルターを変更して情報通知を含めます。
 
 組織がアラート管理システム、サービス管理システム、またはセキュリティ情報イベント管理 (SIEM) システム経由でセキュリティ アラート管理を行っている場合は、Office 365 アラートをそうしたシステムに送信するのにメール通知または [Office 365 マネージメント アクティビティ API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) のいずれかを使用できます。 メールまたは API 経由の調査アラート通知には、セキュリティ/コンプライアンス センターでアラートにアクセスするためのリンクが含まれているので、割り当てられているセキュリティ管理者は簡単に調査に移動できます。
 
@@ -118,18 +107,22 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 - データの .CSV ファイルへのエクスポート。
 
 調査の状態は、分析と処理の進捗状況を示します。 調査が実行されると、状態の表示が変わり、脅威が検出されたかどうかと、処理が承認されているかどうかが示されるようになります。 
-- **開始中**: 調査がキューに入っており、まもなく開始されます。
-- **実行中**: 調査が開始され、分析を行っています。
-- **脅威は見つかりませんでした**: 調査で分析が完了し、脅威は発見されていませんでした。
-- **システムにより終了**: 調査は終了していませんでしたが、7 日間経過したため期限が切れました。
-- **処理の保留中**: 調査で、推奨される処理に脅威が見つかりました。
-- **脅威が見つかりました**: 調査では脅威が見つかりましたが、その脅威に対して使用できる処理が AIR に存在しません。
-- **修復された**: 調査が完了し、完全に修復されました (すべての処理が承認されました)。
-- **部分的に修復済み**: 調査が完了し、一部の推奨処理が承認されました。
-- **ユーザーにより終了**: 管理者が調査を終了しました。
-- **失敗**: 調査中にエラーが発生し、脅威の調査を最後まで行えませんでした。
-- **調整によりキューに登録済み**: システムの処理制限により (サービスのパフォーマンスを保護するため)、調査の分析は待機中です。
-- **調整により終了**: 調査量とシステムの処理制限が原因で、適切な時間内に調査を完了できませんでした。 エクスプローラーでメールを選択し、調査の処理を選択すると、調査を再トリガーできます。
+
+
+|状態  |意味  |
+|---------|---------|
+|開始中 | すぐに開始するために、調査がキューに入れられる |
+|実行中 | 調査が開始され、分析を実行しています |
+|脅威は見つかりませんでした | 調査が完了しました。脅威は見つかりませんでした |
+|システムによる終了 | 調査が閉じられず、7日後に期限切れになった |
+|保留中のアクション | 推奨される処置による脅威を検出しました |
+|脅威が検出されました | 調査は脅威を検出しましたが、脅威には AIR 内で使用可能なアクションがありません |
+|修復済み | 調査が完了し、完全に修復されました (すべてのアクションが承認されました) |
+|一部修復済み | 調査が終了し、推奨されるアクションのいくつかが承認された |
+|ユーザーにより終了 | 管理者が調査を終了した |
+|失敗 | 調査中にエラーが発生し、脅威の結論に達しませんでした |
+|調整によってキューに入れられる | 調査は、システム処理の制限 (サービスのパフォーマンスを保護するため) による分析を待機しています。 |
+|調整による終了 | 調査のボリュームとシステム処理の制限により、十分な時間内に調査を完了できませんでした。 エクスプローラーでメールを選択し、調査の処理を選択すると、調査を再トリガーできます。 |
 
 ### <a name="investigation-graph"></a>調査グラフ
 
@@ -137,7 +130,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![ARI の [調査グラフ] ページ](../media/air-investigationgraphpage.png)
 
-以下のことを実行できます。
+次の操作を実行できます:
 - 現在の調査の概要図の表示。
 - 調査期間の概要の表示。
 - 概要図内のノードを選択すると、そのノードの詳細が表示されます。
@@ -149,7 +142,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![AIR アラート ページ](../media/air-investigationalertspage.png)
 
-以下のことを実行できます。
+次の操作を実行できます:
 - 現在トリガーされているアラートおよびすべての関連アラートの概要図の表示。
 - 一覧でアラートを選択すると、アラートの完全な詳細情報を表示するフライアウト ページが開きます。
 
@@ -182,14 +175,15 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![ARI のメール調査ページ](../media/air-investigationemailpage.png)
 
-以下のことを実行できます。
+次の操作を実行できます:
 - 現在のクラスター化の結果と検出された脅威の概要図の表示。
 - クラスター エンティティまたは脅威リストをクリックすると、アラートのすべての詳細情報を表示するフライアウト ページが開きます。
 - メール クラスターをさらに調査するには、[メール クラスターの詳細] タブの上部にある [エクスプローラーで開く] リンクをクリックします。
 
 ![フライアウトの詳細情報を表示した AIR のメール調査](../media/air-investigationemailpageflyoutdetails.png)
 
-*注: 調査の一環で、"異常な量" という脅威がメールのコンテキストで検出されることがあります。 異常な量の発生は、以前のタイムフレームと比べて、調査イベントの時間の前後に似たようなメール メッセージのスパイクがあったことを示します。 似たような特徴 (件名や送信者ドメイン、本文の類似性や送信者の IP) を持つメール トラフィックのスパイクは、メール キャンペーンまたは攻撃の開始の典型です。 ただし、これらの特徴は多くの場合、バルク、スパム、および正当なメール キャンペーンでも同様にみられます。 異常な量で示されるのは潜在的な脅威であることから、ウイルス対策エンジン、デトネーション、または悪意の評価を使用して特定されたマルウェアやフィッシングの脅威ほどは重大でない可能性があります。
+> [!NOTE]
+> 電子メールのコンテキストでは、調査の一環としてボリュームの異常な脅威が表面化することがあります。 異常な量の発生は、以前のタイムフレームと比べて、調査イベントの時間の前後に似たようなメール メッセージのスパイクがあったことを示します。 似たような特徴 (件名や送信者ドメイン、本文の類似性や送信者の IP) を持つメール トラフィックのスパイクは、メール キャンペーンまたは攻撃の開始の典型です。 ただし、これらの特徴は多くの場合、バルク、スパム、および正当なメール キャンペーンでも同様にみられます。 異常な量で示されるのは潜在的な脅威であることから、ウイルス対策エンジン、デトネーション、または悪意の評価を使用して特定されたマルウェアやフィッシングの脅威ほどは重大でない可能性があります。
 
 ### <a name="user-investigation"></a>ユーザーの調査
 
@@ -199,7 +193,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![ARI のユーザー調査ページ](../media/air-investigationuserspage.png)
 
-以下のことを実行できます。
+次の操作を実行できます:
 - 特定されたユーザーの結果と検出されたリスクの概要図の表示。
 - ユーザーを選択すると、アラートのすべての詳細情報を表示するフライアウト ページが開きます。
 
@@ -212,7 +206,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 調査の一環として、AIR ではデバイスに対するメール脅威の相関関係が特定されます。 たとえば、悪意のあるファイル ハッシュは、診断のために調査から [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) に渡されます。 これにより、ユーザーが関わるコンピューターを自動的に調査できるため、クラウドとエンドポイント全体の両方で脅威に対処で脅威に対処できるようになります。 
 
-以下のことを実行できます。
+次の操作を実行できます:
 - 現在のコンピューターと検出された脅威の概要図の表示。
 - コンピューターを選択すると、関連する [Microsoft Defender ATP 調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)を Microsoft Defender セキュリティ センターで確認できるビューが開きます。
 
@@ -236,7 +230,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![AIR の調査ログ ページ](../media/air-investigationlogpage.png)
 
-以下のことを実行できます。
+次の操作を実行できます:
 - 実行されたプレイブック手順の概要図の表示。
 - 結果の CSV ファイルへのエクスポート。
 - ビューのフィルタリング。
@@ -301,14 +295,23 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 Office 365 AIR は次のサブスクリプションに含まれています。
 
-- Microsoft 365 Enterprise E5
-- Office 365 Enterprise E5
+- Microsoft 365 E5
+- Office 365 E5
 - Microsoft Threat Protection
 - Office 365 Advanced Threat Protection プラン 2
 
 これらのサブスクリプションのいずれも持っていない場合は、[無料の試用版を開始](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)してください。
 
 利用可能な機能の詳細については、「[Advanced Threat Protection (ATP) の各プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+
+## <a name="required-permissions-to-use-air-capabilities"></a>空気機能を使用するために必要なアクセス許可
+
+アクセス許可は、次の表に記載されているような特定の役割によって付与されます。 
+
+|タスク |必要な役割 |
+|--|--|
+|エア機能を設定するには |以下のいずれか: <br/>- **グローバル管理者**<br/>- **セキュリティ管理者** <br/>これらの役割は、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)または[Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)で割り当てることができます。 |
+|推奨されるアクションを承認または拒否するには|次のいずれか (これらの役割は、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)または[Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) で割り当てることができます。<br/>- **グローバル管理者** <br/>- **セキュリティ管理者**<br/>- **セキュリティリーダ** <br/>---と---<br/>- **検索と削除**(この役割は[Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)でのみ割り当てられます)
 
 ## <a name="next-steps"></a>次の手順
 
@@ -317,3 +320,4 @@ Office 365 AIR は次のサブスクリプションに含まれています。
 [Microsoft Defender ATP の AIR についての詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [Microsoft 365 ロードマップにアクセスして、近日公開予定の機能を確認する](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+

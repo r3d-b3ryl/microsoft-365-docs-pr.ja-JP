@@ -4,15 +4,16 @@ description: Microsoft マネージドデスクトップデバイスに展開さ
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012412"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813857"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップで基幹業務アプリを管理する
 
@@ -41,7 +42,7 @@ Microsoft マネージドデスクトップに利用したアプリのアプリ�
 ## <a name="update-line-of-business-apps-in-intune"></a>Intune で基幹業務アプリを更新する
 
 **Intune で基幹業務アプリを更新するには**
-1. [Azure portal](https://azure.portal.com)にサインインします。
+1. [Azure portal](https://portal.azure.com)にサインインします。
 2. [**すべてのサービス** > ]**Intune**を選択します。 Intune は、[**監視 + 管理**] セクションにあります。
 3. [**クライアントアプリ > アプリ**] を選択します。
 4. アプリの一覧でアプリを見つけて選択します。

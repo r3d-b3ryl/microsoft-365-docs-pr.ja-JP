@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '[使用準備完了] ボックス分類子のいずれかがニーズに合わない場合は、trainable 分類子を使用します。 Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 このトピックでは、カスタム分類子を作成する方法について説明します。'
-ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633984"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813375"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Trainable 分類子を作成する (プレビュー)
 
@@ -28,6 +28,9 @@ Trainable 分類子のいずれかがニーズに合わない場合は、分類�
 このタイムラインには、サンプルの展開が反映されています。
 
 ![trainable-クラシファイア-タイムライン](media/trainable-classifier-deployment-timeline_border.png)
+
+> [!TIP]
+> Trainable 分類子では、最初にオプトインが必要です。 Microsoft 365 で組織のコンテンツのベースライン評価を完了するには、12日間かかります。
 
 ## <a name="seed-content"></a>Seed コンテンツ
 
@@ -42,9 +45,6 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 
 > [!TIP]
 > 最良の結果を得るには、正と負の一致が均等に分配された1万アイテムをテストサンプルセットに含める必要があります。
-
-> [!TIP]
-> Trainable 分類子では、最初にオプトインが必要です。 Microsoft 365 で組織のコンテンツのベースライン評価を完了するには、12日間かかります。
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Trainable 分類子を作成する方法
 
@@ -107,6 +107,8 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 ![[アイテムの確認] ボックス](media/classifier-trainable-review-detail.png)
 
 19. *少なく*とも200のアイテムを確認します。
+
+<!-- insert Analyze steps here-->
 
 20. 精度が少なくとも70% に達するまで確認を続け`Publish the classifier` 、状態`Ready to use`はになります。
 

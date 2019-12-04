@@ -7,7 +7,9 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,14 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 'Windows デバイスを Windows 10 Pro クリエーターの更新プログラムにアップグレードする方法について説明します。 '
-ms.openlocfilehash: 72522626d3d5cd836b47e896202e6c18c06fe0b1
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 7aaf1f64e93c05a0ffc7de47c8eab9c787b6c220
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718851"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812750"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Windows デバイスを Windows Pro Creators Update にアップグレードする
+
+Windows デバイスを Windows 10 Pro にアップグレードする方法に関する短いビデオをご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
 
 ## <a name="upgrade-to-windows-10-pro-creators-update"></a>Windows 10 Pro クリエーターの更新プログラムへのアップグレード
   
@@ -46,3 +54,6 @@ Windows 10 デバイスのセットアップを完了するには、「 [Microso
   
 Android および iOS デバイスの設定を完了するには、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
   
+## <a name="see-also"></a>関連項目
+
+[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,18 +22,22 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+ms.openlocfilehash: 2e6e1e6153fe4033aa7dd47280c737957d0e4bd5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704117"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813060"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
 ## <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは
 
 Microsoft 365 Business は、Outlook、Word、Excel、その他の Office 製品など、常に最新の状態になっているビジネス生産性とコラボレーションツールの包括的なセットです。 管理が簡単なエンタープライズレベルのセキュリティを使用して、すべての iOS、Android、Windows 10 デバイス上の作業ファイルを保護することができます。
+
+Microsoft 365 Business の簡単な概要については、このビデオをご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
 Microsoft 365 Business は、最大300のライセンスを想定しています。 その他のライセンスが必要な場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。 
   
@@ -49,6 +54,13 @@ Microsoft 365 Business は、最大300のライセンスを想定しています
 次の図では、管理者が Microsoft 365 Business をセットアップする方法について説明します。 また、Microsoft 365 Business 用に Windows Pc を準備する手順についても説明します。 [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、Microsoft 365 Business 管理センターで新しいデバイスを追加することもできます。 自動操縦を使用して、ユーザーが Microsoft 365 のビジネス資格情報を使用してサインインできるようになるとすぐに、新しいデバイスをセットアップして事前構成することができます。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+
+Microsoft 365 Business のセットアップの概要については、このビデオをご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
+
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1: Microsoft 365 Business をセットアップする (管理者)
 
@@ -89,9 +101,10 @@ Microsoft 365 Business は、最大300のライセンスを想定しています
     
 - Microsoft 365 Business 管理者は、カスタマーサポートチームにアクセスできます。 **[ビジネス製品のサポートに問い合わせる-管理者向けヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="related-topics"></a>関連項目
+## <a name="see-also"></a>関連項目
+
 [Microsoft 365 Business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 Microsoft [365 business](manage.md)[移行を microsoft 365 business に管理する](migrate-to-microsoft-365-business.md)
-  
 
+[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Office 365 のセキュリティ & コンプライアンスセンターでコンテンツ検索の実際の結果をエクスポートする代わりに、検索結果レポートをエクスポートすることができます。 レポートには、検索結果の概要と、エクスポートされる各アイテムの詳細情報を含むドキュメントが含まれます。
-ms.openlocfilehash: 9fe006ba595920f938a4d070eb87987137d73f7e
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 5146120afd9ea36845f5a0d19619da35379438d5
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437787"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676794"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索レポートのエクスポート
 
 セキュリティ & コンプライアンスセンター (および電子情報開示ケースに関連付けられているコンテンツ検索) から完全な検索結果セットをエクスポートする代わりに、検索結果をエクスポートするときに生成されるものと同じレポートをエクスポートすることができます。
   
-レポートをエクスポートすると、コンテンツ検索と同じ名前のフォルダーにダウンロードされますが、そのレポートには [レポート]*のみ*が追加されます。 たとえば、コンテンツ検索に*ContosoCase0815*という名前が付けられている場合、レポートは*ContosoCase0815_ReportsOnly*という名前のフォルダーにダウンロードされます。 レポートに含まれるドキュメントの一覧については、「[レポートに含まれるもの](#whats-included-in-the-report)」を参照してください。
+レポートをエクスポートすると、コンテンツ検索と同じ名前のフォルダーにダウンロードされますが、これは *_ReportsOnly*に追加されます。 たとえば、コンテンツ検索に*ContosoCase0815*という名前が付けられている場合、レポートは*ContosoCase0815_ReportsOnly*という名前のフォルダーにダウンロードされます。 レポートに含まれるドキュメントの一覧については、「[レポートに含まれるもの](#whats-included-in-the-report)」を参照してください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - コンテンツ検索レポートをエクスポートするには、セキュリティ & コンプライアンスセンターでコンプライアンス検索管理役割が割り当てられている必要があります。 この役割は、組み込みの電子情報開示マネージャーと組織の管理役割グループに割り当てられます。 既定では、Organization Management 役割グループには割り当てられません。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
@@ -44,15 +44,17 @@ ms.locfileid: "37437787"
     
   - Microsoft .NET Framework 4.7
     
-  - サポートされているブラウザー:
-    
-    - Microsoft Edge
-    
-      または
-    
-    - Microsoft Internet Explorer 10 以降のバージョン
-    
-    **注:** Microsoft は、ClickOnce アプリケーションのサードパーティの拡張機能またはアドオンを製造していません。 サポートされていないブラウザーを使用して、サードパーティの内線番号またはアドオンを使用して検索結果をエクスポートすることはできません。 
+- 電子情報開示エクスポートツール<sup>1</sup>を実行するには、次のサポートされているブラウザーのいずれかを使用する必要があります。
+
+  - Microsoft Edge <sup>2</sup>
+
+    または
+
+  - Microsoft Internet Explorer 10 以降のバージョン
+
+  > [!NOTE]
+  > <sup>1</sup> Microsoft は、ClickOnce アプリケーション用のサードパーティ製の拡張機能またはアドオンを製造していません。 サポートされていないブラウザーを使用して、サードパーティの内線番号またはアドオンを使用して検索結果をエクスポートすることはできません。<br/>
+  > <sup>2</sup> Microsoft Edge に対する最近の変更の結果として、ClickOnce サポートは既定で有効になりません。 エッジで ClickOnce サポートを有効にする方法については、「 [Microsoft Edge で Office 365 EDiscovery エクスポートツールを使用する](configure-edge-to-export-search-results.md)」を参照してください。
 
 - コンテンツ検索によって返された結果の推定合計サイズが 2 TB を超えている場合は、レポートをエクスポートできません。 レポートを正常にエクスポートするには、範囲を絞るようにして検索を再実行し、結果の推定サイズが 2 TB 未満になるようにします。
 

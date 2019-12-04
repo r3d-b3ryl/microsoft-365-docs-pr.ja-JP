@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business を購入してサインアップする方法について説明します。
-ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 3470d07f98a1c5806a27d8f21f152a818e4a0371
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718721"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812800"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Microsoft 365 Business へのサインアップ
 
@@ -42,6 +43,12 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 - 業務を購入していない場合は[、ホームまたはファミリープランにサインアップ](https://go.microsoft.com/fwlink/?linkid=2109398)してください。 
 
 ## <a name="sign-up-steps"></a>サインアップ手順
+
+サインアッププロセスの簡単な概要については、このビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
 
 お客様のビジネス向けに Microsoft 365 にサインアップして購入するには、次の手順を実行します。
 
@@ -82,3 +89,6 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 
 セットアップのヘルプを表示するには、「セットアップ」[を参照し](set-up.md)てください。
 
+## <a name="see-also"></a>関連項目
+
+[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

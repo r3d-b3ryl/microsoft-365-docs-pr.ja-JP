@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ccb90c9b814c6e38793f48e671ddd07a16177045
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 9d9309c7840fd9ca6d0038444c40884dcb92ae83
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625242"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676664"
 ---
 # <a name="compliance-offering-it-grundschutz-compliance-workbook"></a>コンプライアンス サービス: IT-Grundschutz コンプライアンス ワークブック
 
@@ -63,7 +63,6 @@ Microsoft Cloud Germany は、ドイツに物理的拠点を置き、ドイツ�
 - [IT-Grundschutz](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzHome/itgrundschutzhome_node.html;jsessionid=5ABC53411232B460035220974AE634C4.1_cid351)
 - [IT-Grundschutz カタログ v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015)
 - [BSI 標準](https://www.bsi.bund.de/EN/Publications/BSIStandards/BSIStandards_node.html)
-- [IT-Grundschutz 証明書プロセス](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzCertification/itgrundschutzcertification_node.html)
 - [Azure Germany IT-Grundschutz コンプライアンス ワークブック](https://aka.ms/grundschutzworkbook)
 - [ISO/IEC 27001:2013 情報セキュリティ管理システムの背景](offering-iso-27001.md)
 - [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
