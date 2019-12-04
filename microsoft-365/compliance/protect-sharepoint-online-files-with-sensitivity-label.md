@@ -18,18 +18,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
-ms.openlocfilehash: b5251d393249e9023f6f437cb3df6c074ebdf436
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39638060"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668805"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>機密度ラベルで SharePoint Online ファイルを保護する
 
 この記事の手順を使用して、Office 365 の秘密度ラベルを構成し、ファイルの暗号化とアクセス許可を提供します。 これらのファイルは、非常に機密性の高い社外秘の保護のため構成されている SharePoint ライブラリに追加できます。 または、サイトから直接ファイルを開き、ラベルを適用できます。 暗号化およびアクセス許可の保護は、ファイルをサイトからダウンロードした場合にも適用されます。 
 
-これらの手順は、SharePoint サイトとそれらのサイト内のファイルの高度な機密保護を構成するための大きなソリューションの一部です。詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)」を参照してください。 
+これらの手順は、SharePoint サイトとそれらのサイト内のファイルの高度な機密保護を構成するための大きなソリューションの一部です。詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)」を参照してください。 
 
 SharePoint Online 内のファイルに機密度ラベルを使用することは、すべてのお客様に推奨されるものではなく、ファイルの一部に対してこの保護レベルを必要としているお客様向けのオプションです。
 
@@ -44,7 +44,7 @@ SharePoint Online 内のファイルに機密度ラベルを使用すること�
 
 - 全体での使用と個別のプライベート チームの両方に対して少ない数のラベルが必要な場合は、秘密度ラベルを使用します。
 
-- ラベルを多数使用している場合、または機密性の高いチーム用のラベルを厳しく規制されたラベルの下でまとめる場合は、機密サブラベルを使用します。
+- ラベルを多数使用している場合、または機密性の高いチーム用のラベルを機密性の高いファイルの汎用ラベルの下でまとめる場合は、機密サブラベルを使用します。
 
 [こちらの手順](encryption-sensitivity-labels.md)を使用して、別のラベルまたはサブラベルを次の設定で構成します。
 
@@ -67,7 +67,7 @@ Microsoft Word、Excel、PowerPoint の [**ホーム**] リボンの [**機密�
 
 ## <a name="see-also"></a>関連項目
 
-[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[SharePoint Online サイトとファイルをセキュリティで保護する](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
