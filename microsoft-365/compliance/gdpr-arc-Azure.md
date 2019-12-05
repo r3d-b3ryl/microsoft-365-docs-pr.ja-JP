@@ -13,12 +13,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 92d7e08c17d2f67781b5d261e103717ab57578d9
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 608e75dee25f73a1234a911bd5b9e4871412e59e
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749889"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676774"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Azure アカウンタビリティ対応準備チェックリスト
 
@@ -137,7 +137,7 @@ GDPR 関連のドキュメントの詳細については、「[https://aka.ms/gd
 | 7 <a name="7"> </a>   | [誰がどのような条件でデータにアクセスできるか](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 8 <a name="8"> </a>   | [代理管理者の契約: Microsoft との契約](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 9 <a name="9"> </a>   | [GDPR のための Azure データ主体要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) |
-| 10 <a name="10"> </a> | [GDPR の下でのAzure と侵害の通知](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure) |
+| 10 <a name="10"> </a> | [GDRP の下での Azure および Dynamics 365 の侵害通知](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics) |
 | 11 <a name="11"> </a> | [顧客データ保護影響評価に関する Azure からの重要な情報](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 タイプ 2 監査レポート [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (全体) ISO/IEC 27001:2013 ISMS の適用性に関するステートメント](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |

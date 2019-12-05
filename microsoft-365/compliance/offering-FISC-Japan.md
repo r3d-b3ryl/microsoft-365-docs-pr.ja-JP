@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0cf7a32d50c6fd648894934ccbb32d84959bd12b
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39232908"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676684"
 ---
 # <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>コンプライアンス サービス: 金融情報システム センター (FISC)
 
@@ -40,10 +40,7 @@ Microsoft は、外部評価機関と連携して、Microsoft Azure、Dynamics 3
 
 金融機関は、対象となる Azure、Dynamics 365、Office 365、および Microsoft Cloud App Security のインフラおよびプラットフォーム サービスについて、これらの 3 分野のコンプライアンスの評価を利用できます。
 
-Microsoft Cloud における FISC のメリットを確認してください。
-
-- [日本の FISC の背景情報をダウンロード](https://aka.ms/fisc-backgrounder)
-- [外部評価機関の検証と評価機関のサイトへのリンクの詳細 (日本語のみ)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx) 
+[外部評価機関の検証と評価機関のサイトへのリンクの詳細 (日本語のみ)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx)。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
