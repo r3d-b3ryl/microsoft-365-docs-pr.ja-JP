@@ -1,0 +1,115 @@
+- name: Microsoft マネージド デスクトップ
+  href: index.yml
+  items:
+    - name: Microsoft マネージド デスクトップとは
+      href: intro/index.md
+      items:
+        - name: 役割と責任
+          href: intro/roles-and-responsibilities.md
+        - name: Microsoft マネージド デスクトップのテクノロジ
+          href: intro/technologies.md
+        - name: Microsoft マネージド デスクトップと ITIL (IT インフラストラクチャ ライブラリ)
+          href: MMD-and-ITSM.md
+    - name: Microsoft マネージド デスクトップ サービスの説明
+      href: service-description/index.md
+      items:
+        - name: サポートされている地域と言語
+          href: service-description/regions-languages.md
+        - name: 製品のライフサイクル
+          href: service-description/device-lifecycle.md
+        - name: プログラム デバイス
+          href: service-description/device-list.md
+          items:
+            - name: アーカイブされたプログラム デバイス
+              href: service-description/archived-device-list.md
+        - name: デバイス サービス
+          href: service-description/device-services.md
+        - name: デバイス構成
+          href: service-description/device-policies.md
+        - name: セキュリティ
+          href: service-description/security.md
+        - name: 更新プログラム
+          href: service-description/updates.md
+        - name: サポート
+          href: service-description/support.md
+        - name: 運用と監視
+          href: service-description/operations-and-monitoring.md
+        - name: アプリケーションの要件
+          href: service-description/mmd-app-requirements.md
+        - name: サービスの変更とコミュニケーション
+          href: service-description/servicechanges.md
+        - name: サービス プランの例外
+          href: service-description/customizing.md
+    - name: Microsoft マネージド デスクトップへの登録準備
+      href: get-ready/index.md
+      items:
+        - name: Microsoft マネージド デスクトップの前提条件
+          href: get-ready/prerequisites.md
+        - name: ネットワークを準備する
+          href: get-ready/network.md
+        - name: Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する
+          href: get-ready/authentication.md
+        - name: Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
+          href: get-ready/mapped-drives.md
+        - name: Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する
+          href: get-ready/certs-wifi-lan.md
+        - name: アプリを準備する
+          href: get-ready/apps.md
+          items:
+            - name: Microsoft コンサルティング サービスを使用する
+              href: get-ready/apps-MCS.md
+    - name: Microsoft マネージド デスクトップの使用を開始する
+      href: get-started/index.md
+      items:
+        - name: 管理ポータルで管理者の連絡先を追加および確認する
+          href: get-started/add-admin-contacts.md
+        - name: 条件付きアクセスを調整する
+          href: get-started/conditional-access.md
+        - name: ライセンスを割り当てる
+          href: get-started/assign-licenses.md
+        - name: Intune 会社ポータルを展開する
+          href: get-started/company-portal.md
+        - name: Enterprise State Roaming を有効にする
+          href: get-started/enterprise-state-roaming.md
+        - name: デバイスをセットアップする
+          href: get-started/set-up-devices.md
+          items:
+            - name: 新しいデバイスをユーザー自身が登録する
+              href: get-started/register-devices-self.md
+              items:
+                - name: デバイスを登録するためのパートナー向け手順
+                  href: get-started/register-devices-partner.md
+            - name: 既存のデバイスをユーザー自身が登録する
+              href: get-started/register-reused-devices-self.md
+        - name: ユーザーがデバイスを使えるようにする
+          href: get-started/get-started-devices.md
+        - name: アプリを展開する
+          href: get-started/deploy-apps.md
+          items:
+            - name: Microsoft Project と Microsoft Visio
+              href: get-started/project-visio.md
+    - name: Microsoft マネージド デスクトップの使用
+      href: working-with-managed-desktop/index.md
+      items:
+        - name: 分析情報を操作する
+          href: working-with-managed-desktop/insights.md
+          items:
+            - name: 使用状況の分析情報
+              href: working-with-managed-desktop/usage-insights.md
+            - name: 信頼性の分析情報
+              href: working-with-managed-desktop/reliability-insights.md
+        - name: 管理者サポート
+          href: working-with-managed-desktop/admin-support.md
+        - name: エンド ユーザー サポート
+          href: working-with-managed-desktop/end-user-support.md
+        - name: アプリの管理
+          href: working-with-managed-desktop/manage-apps.md
+        - name: 構成可能な設定
+          href: working-with-managed-desktop/config-setting-overview.md
+          items:
+            - name: 構成可能な設定のリファレンス
+              href: working-with-managed-desktop/config-setting-ref.md
+            - name: 構成可能な設定を展開する
+              href: working-with-managed-desktop/config-setting-deploy.md
+    - name: Microsoft マネージド デスクトップのドキュメントの変更履歴
+      href: change-history-managed-desktop.md
