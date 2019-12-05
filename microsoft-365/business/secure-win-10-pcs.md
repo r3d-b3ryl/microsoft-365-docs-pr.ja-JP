@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Pc をセキュリティで保護する
+title: Windows 10 コンピューターのセキュリティを強化する
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,16 +20,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business のセットアップ後に Windows 10 Pc をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 6f599f3638ec9649be9464e1c51a531bf6c231b2
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39814255"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837321"
 ---
-# <a name="secure-windows-10-pcs"></a>Windows 10 Pc をセキュリティで保護する
+# <a name="secure-windows-10-computers"></a>Windows 10 コンピューターのセキュリティを強化する
 
 Microsoft 365 Business を[セットアップ](set-up.md)した後は、組織内の Windows 10 コンピューターを盗難から保護し、ウイルスやマルウェアのような悪意のある脅威から保護することができます。
+このビデオで、Windows 10 コンピューターをセキュリティで保護するためのポリシーを設定する方法の概要をご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
 
 ## <a name="to-secure-your-windows-10-pcs"></a>Windows 10 Pc をセキュリティで保護するには
 

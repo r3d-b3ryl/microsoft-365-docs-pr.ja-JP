@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615657"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837331"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "39615657"
 |フィッシング電子メールの検出アクション|検疫メッセージ|検疫メッセージ||
 |高信頼フィッシング電子メール検出アクション|検疫メッセージ|検疫メッセージ||
 |電子メールの一括検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|バルクメールしきい値をに設定する|シックス|2/4|現在、既定値は7ですが、ほとんどの組織では、少なくとも6になるようにすることをお勧めします。|
+|バルクメールしきい値をに設定する|シックス|2/4|現在、既定値は7ですが、多くの組織では、少なくとも6に移行することをお勧めします。|
 |検疫の保存期間|30 日間|30 日間||
 |安全性に関するヒント|オン|オン||
 |許可された送信者|なし|なし||

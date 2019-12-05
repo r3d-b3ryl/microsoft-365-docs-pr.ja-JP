@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a789aca60bbb34f6831c27afea4b1ec5d3135f59
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38686695"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831640"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Microsoft 365 solution catalog (プレビュー) の概要
 
@@ -80,13 +80,11 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 - Microsoft 365 ソリューションカタログにアクセスするには、 [https://compliance.microsoft.com](https://compliance.microsoft.com)に移動して、全体管理者、コンプライアンス管理者、またはコンプライアンスデータ管理者としてサインインします。 画面の左側にあるナビゲーションウィンドウの [**カタログ**] を選択して、カタログのホームページを開きます。
 
-- 要件の詳細については、「[必要なライセンスとアクセス許可](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)」を参照してください。
-
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 **新しい Microsoft 365 ソリューションカタログが表示されないのはなぜですか?**
 
-最初に、適切な[ライセンスとアクセス許可](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)を持っていることを確認してください。 次に、全体管理[https://compliance.microsoft.com](https://compliance.microsoft.com)者、コンプライアンス管理者、またはコンプライアンスデータ管理者としてにサインインします。 それでも左側のナビゲーションウィンドウに新しいソリューションカタログが表示されない場合は、すぐに表示されます。
+最初に、適切なライセンスとアクセス許可を持っていることを確認してください。 次に、全体管理[https://compliance.microsoft.com](https://compliance.microsoft.com)者、コンプライアンス管理者、またはコンプライアンスデータ管理者としてにサインインします。 それでも左側のナビゲーションウィンドウに新しいソリューションカタログが表示されない場合は、すぐに表示されます。
 
 **[ソリューションカタログ] ページにリストされているコンプライアンス機能の一部は、Microsoft 365 コンプライアンスセンターでは使用できません。どうしようか。**
 

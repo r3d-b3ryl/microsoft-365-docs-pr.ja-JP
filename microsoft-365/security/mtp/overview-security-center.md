@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 セキュリティセンターの概要
+title: Microsoft 365 セキュリティ センターの概要
 description: Microsoft の id、データ、デバイス、およびアプリのセキュリティを監視および管理するための新しいホームについて説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、id、データ、デバイス、アプリ
 ms.prod: w10
@@ -12,22 +12,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034208"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831998"
 ---
-# <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターの概要
+# <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
 ビジネスのセキュリティを管理して、発展を続ける脅威の状況を保護するには、多くの課題があります。 さまざまな場所で多数のセキュリティソリューションを構成して、さまざまな制御を構成することができ、どのコントロールが最も効果的で、従業員に新たな課題をもたらすかがわからない場合があります。 セキュリティチームにとって、セキュリティと生産性の適切なバランスを見つけるのが困難な場合があります。
 
 Microsoft 365 セキュリティセンター--Microsoft の id、データ、デバイス、アプリ、およびインフラストラクチャのセキュリティを監視および管理するための新しいホームを入力します。 ここでは、組織のセキュリティの状態を簡単に表示したり、デバイス、ユーザー、およびアプリを構成したり、疑わしいアクティビティに関するアラートを受け取ったりすることができます。 Microsoft 365 セキュリティセンターは、組織の管理と保護を強化するために、セキュリティ管理者およびセキュリティ運用チームを特に目的としています。
 
-新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターは、セキュリティチームおよびコンプライアンスチームのニーズを満たすために設計された専用のワークスペースです。 これらのソリューションは、Microsoft 365 サービス間で統合されており、リスクを軽減し、デジタルスペースを保護するのに役立つ、実践的な洞察を提供します。
-
-[詳細について](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance)は、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターの準備をしてください。
+新しい Microsoft 365 セキュリティセンターと[microsoft 365 コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)は、セキュリティチームおよびコンプライアンスチームのニーズを満たすために設計された専用のワークスペースです。 これらのソリューションは、Microsoft 365 サービス間で統合されており、リスクを軽減し、デジタルスペースを保護するのに役立つ、実践的な洞察を提供します。
 
 Microsoft 365 セキュリティセンターの security.microsoft.com にアクセスします。  
 

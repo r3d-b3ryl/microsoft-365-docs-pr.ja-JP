@@ -13,24 +13,33 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: f29dbdb61636fdfe573a1a6920d0aed963b737ad
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 0001c2b9962f6cce0be1f77cbf427c68f9ee3249
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721491"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831305"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>セットアップウィザードで Microsoft 365 Business をセットアップする
+
+Microsoft 365 Business のセットアップの概要については、このビデオをご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザーを追加し、ポリシーをセットアップする
 
@@ -44,16 +53,18 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 
 1. グローバル管理者の資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
 
-2. [**ドメインの追加**] または [**ユーザーの追加**] を選択して、ウィザードを開始します。
+2. [**セットアップに移動**] を選択してウィザードを開始します。
+
+    ![[セットアップに移動] を選択します。](media/gotosetupinadmincenter.png)
+
+3. [ **Office アプリのインストール**] ページで、必要に応じて、自分のコンピューターにアプリをインストールすることもできます。
+    
+4. [**ドメインの追加**] ステップで、使用するドメイン名 (contoso.com など) を入力します。
+
     > [!IMPORTANT]
     > サインアップ中にドメインを購入した場合は、ここに [**ドメインの追加**] 手順は表示されません。 代わりに、[[ユーザーの追加](#add-users-and-assign-licenses)] に移動します。
 
-    ![[セットアップに移動] を選択します。](media/gotosetupinadmincenter.png)
-    
-3. ウィザードで、使用するドメイン名 (contoso.com など) を入力します。
-
-
-    ![[サインインのカスタマイズ] ページのスクリーンショット。](media/personalizesignin.png)
+    ![[サインインのカスタマイズ] ページのスクリーンショット。](media/adddomain.png)
 
     
 4. ウィザードの手順に従って、ドメインを所有していることを確認する[Office 365 用の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)します。 ドメインホストがわかっている場合は、「[ホスト固有の指示](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)」も参照してください。
@@ -76,13 +87,6 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 
 2. ユーザーを追加すると、追加した新しいユーザーと資格情報を共有するためのオプションも表示されます。 それらを印刷、メール、またはダウンロードできます。
 
-3. [組織のチームの作成] で、Teams を追加してユーザーを追加することを選択できます。 これは後で行うこともできます。 詳細については、「[会社全体のチームを作成する](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3)」を参照してください。
-
-4. 移行のメール メッセージをスキップして、[ **メール メッセージの移行**] ページで [ **次へ**] を選びます。 
-
-    別のメールプロバイダーから移行していて、後でデータをコピーする場合は、[メールと連絡先を Office 365 に移行](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e)できます。
-
-
 ### <a name="connect-your-domain"></a>ドメインを接続する
 
 > [!NOTE]
@@ -95,31 +99,29 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
     - 既存の DNS レコード (既存の web サイトなど) があるが、DNS ホストが[ドメイン接続](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)に対して有効になっている場合は、[**レコードの追加**] を選択します。 [**オンラインサービスの選択**] ページで、すべての既定値をそのまま使用し、[**次へ**] を選択して、DNS ホストのページで [**承認**] を選択します。
     - 他の DNS ホスト (ドメイン接続に対して有効になっていません) に既存の dns レコードがある場合は、独自の DNS レコードを管理して、既存のサービスが常に接続していることを確認する必要があります。 詳細については、「[ドメインの基礎](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)」を参照してください。
 
-        ![自分の DNS レコードを管理するドメインページに接続します。](media/connectyourdomainpage.png)
+        ![レコードのアクティブ化ページ。](media/activaterecords.png)
 
 2. ウィザードの手順を実行すると、電子メールとその他のサービスが設定されます。
 
-### <a name="protect-data-and-devices"></a>データとデバイスを保護する 
+### <a name="protect-your-organization"></a>組織を保護する 
 
 ウィザードで設定したポリシーは、*すべてのユーザー*と呼ばれる[セキュリティグループ](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups)に自動的に適用されます。 管理センターで、ポリシーを割り当てるための追加のグループを作成することもできます。
 
-1. [**モバイルデバイス上の作業ファイルを保護**する] で、[**デバイスが失われたとき、または盗まれたときに作業ファイルを保護する**] オプションが既定でオンになっています。 [**ユーザーがモバイルデバイスで Office ファイルにアクセスする方法を管理**する] をオンにすることもできます。これは推奨されています。
+1. **高度なサイバー脅威からの保護を強化**するには、office [365 の事前の脅威保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)で office アプリのファイルとリンクをスキャンできるように、既定値をそのまま使用することをお勧めします。
 
-    ![[モバイルデバイスの作業ファイルを保護する] ページのスクリーンショット](media/protectworkfilesondevices.png)
+    ![保護ページの拡大のスクリーンショット。](media/increasetreatprotection.png)
 
-     - **デバイスが紛失または盗難時**に[既定値](protect-work-files-on-lost-or-stolen-device.md)を表示するように、[作業ファイルの保護] を展開します。
 
-        ![失われたデバイスでファイルを保護するための既定値のスクリーンショット。](media/protectworkfilesondevicesdefault.png)
+2. [**機密データのリークを防止**する] ページで、既定値をそのまま使用して Office 365 データ損失防止 (DLP) を有効にし、office アプリの機密データを追跡し、誤って組織外で共有されないようにします。
 
-    - [**ユーザーがモバイルデバイスで Office ファイルにアクセスする方法を管理**する] を選択し、これを展開して[既定値](manage-user-access-on-mobile-devices.md)を表示します。 すべてのユーザーに適用される Android、iOS、Windows 10 のアプリケーションポリシーを作成するには、セットアップ時に既定値を受け入れることをお勧めします。 セットアップが完了したら、追加のポリシーを作成できます。
+3. [ **Office for mobile のデータを保護**する] ページで、[モバイルアプリの管理] を選択したまま、設定を展開して確認し、[**モバイルアプリ管理ポリシーの作成**] を選択します。
 
-        ![モバイルでの Office ファイルの保護設定のスクリーンショット。](media/useraccessonmobile.png)
+    ![[Office for mobile のデータを保護する] ページのスクリーンショット](media/protectdatainmobile.png)
 
-2. データとデバイスを保護するための最後の手順では、Windows 10 デバイスをセキュリティで保護するためのポリシーを設定できます。 これらの設定は、ユーザーの Windows 10 が組織に接続すると自動的に適用されます。 **セキュリティで保護された Windows 10 デバイス**を拡張して、[既定値](secure-windows-10-devices.md)を表示および変更できます。
-3. Windows 10 デバイスで[Office を自動的にインストール](install-office-on-windows-10-during-setup.md)するように選択することもできます。
 
-    ![Windows 10 デバイス構成ページの設定のスクリーンショット。](media/setwin10config.png)
+## <a name="secure-windows-10-pcs"></a>Windows 10 Pc をセキュリティで保護する
 
+左側のナビゲーションで、[**設定**] を選択し、[**サインインとセキュリティ**] で [ **Windows 10 のコンピューターをセキュリティで保護する**] を選択します。 [**表示**] を選んで開始します。 詳細な手順については[、「Windows 10 コンピューターのセキュリティ保護](secure-win-10-pcs.md)」を参照してください。
 
 ## <a name="deploy-office-365-client-apps"></a>Office 365 クライアントアプリを展開する
 
@@ -128,3 +130,7 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 モバイル iOS または Android デバイスに Office をインストールするには、「 [Microsoft 365 Business ユーザーのモバイルデバイスをセットアップ](set-up-mobile-devices.md)する」を参照してください。
 
 Office を個別にインストールすることもできます。 手順について[は、「PC または Mac に Office をインストールする](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)」を参照してください。
+
+## <a name="see-also"></a>関連項目
+
+[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

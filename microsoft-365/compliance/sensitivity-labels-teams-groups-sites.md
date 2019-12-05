@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ラベルは、Microsoft Teams、Office 365 グループ、および SharePoint サイトに適用できます。
-ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
-ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
+ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
+ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819133"
+ms.locfileid: "39822493"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)
 
@@ -102,11 +102,9 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトの機
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>機密ラベルの展開のトラブルシューティング
 
-これらの設定を有効にした後、またはラベルの説明を変更した後に Teams または Office 365 グループを作成したときに問題が発生した場合は、ラベルを保存してから数時間待ってから、Team または Office 365 グループをもう一度作成してみてください。
+これらの設定を有効にした後、または機密ラベルの説明を変更した後に Teams または Office 365 グループを作成したときに問題が発生した場合は、ラベルを保存してから数時間待ってから、チームまたは Office 365 グループをもう一度作成してみてください。
 
 それでも SharePoint Online から新しい機密ラベルを表示できない場合は、直ちに Microsoft サポートにお問い合わせください。
-
-[機密ラベルを発行する方法について説明します。](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>新しいチームに機密ラベルを適用する
 

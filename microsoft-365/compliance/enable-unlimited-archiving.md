@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者向け: Exchange Online メールボックスで無制限の記憶領域をユーザーに提供する、Office 365 での自動拡張アーカイブを有効にする方法について説明します。 組織全体に対し、または特定のユーザーだけに対し、自動拡張アーカイブを有効にすることができます。'
-ms.openlocfilehash: b140cf9bed811c5af2de2e5441bd3c296ed7effe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
-ms.translationtype: HT
+ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085899"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38627093"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Office 365 で無制限アーカイブを有効にする — 管理者向けヘルプ
 
@@ -48,10 +48,10 @@ Office 365 の Exchange Online 自動拡張アーカイブ機能を使用して�
     
 2. 自動拡張アーカイブを組織全体で有効にするには、Exchange Online PowerShell で次のコマンドを実行します。
 
-    ```
+    ```powershell
     Set-OrganizationConfig -AutoExpandingArchive
     ```
-  
+
 ## <a name="enable-auto-expanding-archiving-for-specific-users"></a>自動拡張アーカイブを特定のユーザーに対して有効にする
 
 組織内のすべてのユーザーの自動拡張アーカイブを有効にするのではなく、特定のユーザーについてだけ有効にできます。 大容量のアーカイブ記憶領域の容量を必要とするのが一部のユーザーのみの場合に、この方法を使用します。
@@ -68,7 +68,7 @@ Office 365 の Exchange Online 自動拡張アーカイブ機能を使用して�
     
 2. 自動拡張アーカイブを特定のユーザーに対して有効にするには、次の PowerShell コマンドを実行します。 前述のように、ユーザーの自動拡張アーカイブを有効にする前に、そのユーザーのアーカイブ メールボックス (メイン アーカイブ) を有効にしておく必要があります。
     
-    ```
+    ```powershell
     Enable-Mailbox <user mailbox> -AutoExpandingArchive
     ```
 
@@ -80,7 +80,7 @@ Office 365 の Exchange Online 自動拡張アーカイブ機能を使用して�
 
 自動拡張アーカイブが組織に対して有効になっていることを確認するには、Exchange Online PowerShell で次のコマンドを実行します。
 
-```
+```powershell
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
@@ -88,9 +88,10 @@ Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
   
 自動拡張アーカイブが特定のユーザーに対して有効になっていることを確認するには、Exchange Online PowerShell で次のコマンドを実行します。
   
-```
+```powershell
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
+
 値 `True` は、自動拡張アーカイブがそのユーザーに対して有効になっていることを示します。 
   
 自動拡張アーカイブを有効にした後は、次の点に注意してください。
@@ -106,7 +107,7 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 
 - PowerShell を使って、アーカイブ メールボックスを有効にすることもできます。 たとえば、Exchange Online PowerShell で次のコマンドを実行して、アーカイブ メールボックスがまだ有効になっていないすべてのユーザーのアーカイブ メールボックスを有効にできます。
 
-    ```
+    ```powershell
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
 

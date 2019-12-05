@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 請求プロファイルが請求書をサポートする方法について説明します。
 keywords: 課金プロファイル、請求書、料金、管理された費用
-ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753546"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837391"
 ---
 # <a name="manage-billing-profiles"></a>課金プロファイルを管理する
 Microsoft の製品やサービスを購入している商用のお客様の場合、課金プロファイルを使用して、請求書に含めるアイテムをカスタマイズしたり、請求書に支払いを行ったりすることができます。

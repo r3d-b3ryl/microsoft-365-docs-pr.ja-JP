@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: サインインする方法、アクセス許可を設定する方法、および Microsoft コンプライアンススコアのダッシュボードを理解する方法について説明します。これにより、リスク評価を簡素化および自動化できます。
-ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793651"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831180"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft コンプライアンススコア (プレビュー) の設定
 
@@ -63,8 +63,6 @@ Microsoft 365 コンプライアンスセンターでアクセス許可を設定
 
 1. [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)に移動し、グローバル管理者アカウントでサインインします。
 2. 左側のナビゲーションウィンドウで [**アクセス許可**] を選択します。 ここから、役割を表示し、アクセス許可を割り当てることができます。
-
-詳細については、「 [Microsoft 365 コンプライアンスセンターでの役割とアクセス許可](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)の読み取り」を参照してください。
 
 ## <a name="understand-the-compliance-score-dashboard"></a>コンプライアンススコアダッシュボードを理解する
 

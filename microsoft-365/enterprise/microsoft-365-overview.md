@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: b5629edbdbd660a8548fc30809c408d88b18111b
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 67d7417af01b7c64094aa46350326f32e0f18534
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437843"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831958"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
 
@@ -46,7 +46,7 @@ Microsoft 365 Enterprise は、3つのプランで利用できます。
 | F1 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
 |||
 
-Microsoft 365 Enteprise E3 を使用している場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。
+Microsoft 365 Enterprise E3 を使用している場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。
 
 - Identity & 脅威保護
 - 情報保護 & コンプライアンス
@@ -72,9 +72,9 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
-[![Microsoft 365 ポスターへの移行の画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![「Microsoft 365への移行」ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
@@ -92,9 +92,9 @@ Microsoft 365 Enteprise E3 を使用している場合は、次の[オファー�
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-これらの製品のアップグレード、移行、クラウド移行の各オプションの視覚的な概要については、「[サポート終了ポスター](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)」を参照してください。
+これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)をご覧ください。
 
-[![Office 2010 クライアントおよびサーバーおよび Windows 7 ポスターのサポート終了の画像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 この1ページのポスターは、Windows 7 および Office 2010 のクライアントおよびサーバー製品がサポート終了を受けられないようにするための簡単な方法で、Microsoft 365 Enterprise で推奨されるパスとサポートが強調表示されています。
 

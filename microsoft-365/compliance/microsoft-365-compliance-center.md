@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 コンプライアンスセンター (含まれる内容、その取得方法、および次の手順) について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 619f18f1113d3c84cb9629c60fca6dd044d1de76
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 920de48cf81134a22f117ee8d1dea0160b0daaa8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38686708"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831650"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの概要
 
@@ -70,8 +70,6 @@ Microsoft 365 コンプライアンスセンターに最初にアクセスする
 
 - Microsoft 365 コンプライアンスセンターにアクセスするには、グローバル管理者、コンプライアンス管理者、またはコンプライアンスデータ[https://compliance.microsoft.com](https://compliance.microsoft.com)管理者として、に移動してサインインします。
 
-- 要件の詳細については、「[必要なライセンスとアクセス許可](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)」を参照してください。
-
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 **特定のポリシーの定義などのいくつかのタスクを完了するために Office 365 セキュリティ & コンプライアンスセンターに移動する理由は何ですか。**
@@ -80,7 +78,7 @@ Microsoft 365 コンプライアンスセンターに最初にアクセスする
 
 **新しい Microsoft 365 コンプライアンスセンターがまだ表示されないのはなぜですか?**
 
-最初に、適切な[ライセンスとアクセス許可](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)を持っていることを確認してください。 その後、にサインイン[https://compliance.microsoft.com](https://compliance.microsoft.com)します。 新しいコンプライアンスセンターがまだ表示されていない場合は、まもなくインストールされます。
+最初に、適切なライセンスとアクセス許可を持っていることを確認してください。 その後、にサインイン[https://compliance.microsoft.com](https://compliance.microsoft.com)します。 新しいコンプライアンスセンターがまだ表示されていない場合は、まもなくインストールされます。
 
 **コンプライアンス機能の一部は、Microsoft 365 コンプライアンスセンターでは使用できません。どうしようか。**
 

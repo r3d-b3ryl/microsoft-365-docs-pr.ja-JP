@@ -16,17 +16,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: ユーザーが Office アプリをインストールする際に役立ちます。
-ms.openlocfilehash: dd2d32ee04402ef977ee1530c20d77512c2d8336
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320225"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831210"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
 
@@ -34,8 +36,14 @@ ms.locfileid: "38320225"
 
 Microsoft 365 Business 管理センターから、Windows 10 Pc に Office をすばやく簡単にインストールすることができます。
   
-以前にインストールした Office アプリでこれがどのように機能するかを理解するには、開始する前に、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」をお読みください。 
-  
+以前にインストールした Office アプリでこれがどのように機能するかを理解するには、開始する前に、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」をお読みください。
+
+Office アプリのインストールに関する短いビデオをご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
+
 ## <a name="manage-office-deployments"></a>Office 展開を管理する
 
 1. の管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>に移動し、グローバル管理者の資格情報でサインインします。 
@@ -51,4 +59,6 @@ Microsoft 365 Business 管理センターから、Windows 10 Pc に Office を�
     
       :::image type="content" source="media/sendemailtousers.png" alt-text="[Office ダウンロードを使用して電子メールを送信するユーザー] リンクを選択します。":::
 
+## <a name="see-also"></a>関連項目
 
+[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

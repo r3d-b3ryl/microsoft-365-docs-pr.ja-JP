@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft business 製品の請求書を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 79d652f56617837019322b7329d918488283659a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0319f8ce1cfc0fcfeec095e6dedccefdcb1a0a4d
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029041"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837381"
 ---
 # <a name="understand-your-invoice"></a>請求書を把握する
 
