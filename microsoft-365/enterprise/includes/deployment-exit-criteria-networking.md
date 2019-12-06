@@ -20,7 +20,7 @@ DNS サーバーがインターネット上の場所を識別するローカル 
 必要に応じて、[手順 2](../networking-dns-resolution-same-location.md) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneccessary-network-hairpins-are-removed"></a>オプション: 不要なネットワーク ヘアピンの削除
+### <a name="optional-unnecessary-network-hairpins-are-removed"></a>オプション: 不要なネットワーク ヘアピンの削除
 
 ネットワーク ヘアピンの調査と、オフィス全体のパフォーマンスに与える影響の確認がなされていること。削除できるヘアピンを削除するか、サード パーティのネットワーク プロバイダーやセキュリティ プロバイダーと協力し、ネットワークに最適な Microsoft 365 ピアリングが実装されていること。
 
