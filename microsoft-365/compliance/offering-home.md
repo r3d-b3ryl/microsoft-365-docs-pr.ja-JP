@@ -10,12 +10,12 @@ keywords: Microsoft、Microsoft 365、コンプライアンス、提供
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
-ms.openlocfilehash: 15fa462b9cae68b613f7d6d28563acaebb7fa762
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d93e7071c43bc1d9f5ded5d4c7dd7d1a5af1cd62
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38686777"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859437"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft  コンプライアンスのサービス
 
@@ -155,7 +155,7 @@ Microsoft は、お客様の組織がデータの収集と使用を管理する�
                         <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (オランダ)</a></p>
                         <p><a href="offering-c5-germany.md">C5 (ドイツ)</a></p>
                         <p><a href="offering-ccpa.md">CCPA (米国-カリフォルニア)</a></p>
-                        <p><a href="offering-ccsl-irap-australia.md">CCSL/IRAP (オーストラリア)</a></p>
+                        <p><a href="offering-ccsl-irap-australia.md">IRAP/CCSL (オーストラリア)</a></p>
                         <p><a href="offering-cs-mark-gold-japan.md">CS マークゴールド (日本)</a></p>
                         <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (英国)</a></p>
                         <p><a href="offering-canadian-privacy-laws.md">カナダのプライバシーに関する法律</a></p>

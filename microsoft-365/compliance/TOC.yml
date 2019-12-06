@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: はじめに
+- name: 作業の開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -1071,7 +1071,7 @@
               href: 'https://aka.ms/TRUCS-Compliance'
         - name: オーストラリア/パシフィック
           items:
-            - name: CCSL/IRAP (オーストラリア)
+            - name: IRAP/CCSL (オーストラリア)
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Framework (ニュージーランド)
               href: offering-nz-cc-framework-nz.md
