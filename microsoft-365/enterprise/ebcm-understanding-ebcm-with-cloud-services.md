@@ -13,27 +13,27 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウドサービスが IT サービスに含まれている場合の、ビジネスの継続性の計画と実装の違いを説明します。
-ms.openlocfilehash: 9b8d769670b53a75c2b48254cb0026488995274a
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122257"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831838"
 ---
-# <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a><span data-ttu-id="ea8aa-103">クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM) について</span><span class="sxs-lookup"><span data-stu-id="ea8aa-103">Enterprise business continuity management (EBCM) with cloud services</span></span>
+# <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a><span data-ttu-id="6011f-103">クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM) について</span><span class="sxs-lookup"><span data-stu-id="6011f-103">Enterprise business continuity management (EBCM) with cloud services</span></span>
 
-<span data-ttu-id="ea8aa-104">組織のデジタル変換の一環として、Microsoft 365 クラウドサービスに依存しているビジネス プロセスに対応するために、障害復旧およびビジネスの継続性計画を見直す必要があります。</span><span class="sxs-lookup"><span data-stu-id="ea8aa-104">As part of your organizations digital transformation, you need to revisit and update your disaster recovery and business continuity plans to account for the business process that depend on Microsoft 365 Cloud services.</span></span> <span data-ttu-id="ea8aa-105">Microsoft 365 クラウドサービス (Exchange Online、SharePoint Online、OneDrive for Business など) は、優れた回復性を持つように設計されています。</span><span class="sxs-lookup"><span data-stu-id="ea8aa-105">Microsoft 365 Cloud services, like Exchange Online, SharePoint Online and OneDrive for Business are designed and operated to be highly resilient.</span></span> <span data-ttu-id="ea8aa-106">たとえ回復性を備えていても、サービス インシデントは発生します。</span><span class="sxs-lookup"><span data-stu-id="ea8aa-106">Even with this resilience, service incidents do occur.</span></span> <span data-ttu-id="ea8aa-107">そのため、組織はよく準備し、ビジネスの継続性戦略を明確に定める必要があります。</span><span class="sxs-lookup"><span data-stu-id="ea8aa-107">When they do, your organization should be prepared and have a well defined business continuity strategy.</span></span>
+<span data-ttu-id="6011f-104">組織のデジタル変換の一環として、Microsoft 365 クラウドサービスに依存しているビジネス プロセスに対応するために、障害復旧およびビジネスの継続性計画を見直す必要があります。</span><span class="sxs-lookup"><span data-stu-id="6011f-104">As part of your organizations digital transformation, you need to revisit and update your disaster recovery and business continuity plans to account for the business process that depend on Microsoft 365 Cloud services.</span></span> <span data-ttu-id="6011f-105">Microsoft 365 クラウドサービス (Exchange Online、SharePoint Online、OneDrive for Business など) は、優れた回復性を持つように設計されています。</span><span class="sxs-lookup"><span data-stu-id="6011f-105">Microsoft 365 Cloud services, like Exchange Online, SharePoint Online and OneDrive for Business are designed and operated to be highly resilient.</span></span> <span data-ttu-id="6011f-106">たとえ回復性を備えていても、サービス インシデントは発生します。</span><span class="sxs-lookup"><span data-stu-id="6011f-106">Even with this resilience, service incidents do occur.</span></span> <span data-ttu-id="6011f-107">そのため、組織はよく準備し、ビジネスの継続性戦略を明確に定める必要があります。</span><span class="sxs-lookup"><span data-stu-id="6011f-107">When they do, your organization should be prepared and have a well defined business continuity strategy.</span></span>
 
-<span data-ttu-id="ea8aa-108">まだ計画を見直していない場合は、ここで紹介するトピックが戦略の計画に役立ちます。また、サービスが既知の状態になるのを防ぎます。</span><span class="sxs-lookup"><span data-stu-id="ea8aa-108">If you haven't updated your plans yet this series of topics helps you to plan your strategy so your services can fail to a known state.</span></span> <span data-ttu-id="ea8aa-109">これらのトピックでは、連続性の準備を改善するための主な考慮事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="ea8aa-109">These topics highlight key considerations for improving your continuity readiness.</span></span>
+<span data-ttu-id="6011f-108">まだ計画を見直していない場合は、ここで紹介するトピックが戦略の計画に役立ちます。また、サービスが既知の状態になるのを防ぎます。</span><span class="sxs-lookup"><span data-stu-id="6011f-108">If you haven't updated your plans yet this series of topics helps you to plan your strategy so your services can fail to a known state.</span></span> <span data-ttu-id="6011f-109">これらのトピックでは、連続性の準備を改善するための主な考慮事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="6011f-109">These topics highlight key considerations for improving your continuity readiness.</span></span>
 
-## <a name="list-of-topics-with-links"></a><span data-ttu-id="ea8aa-110">トピックの一覧とリンク</span><span class="sxs-lookup"><span data-stu-id="ea8aa-110">List of topics with links</span></span>
+## <a name="list-of-topics-with-links"></a><span data-ttu-id="6011f-110">トピックの一覧とリンク</span><span class="sxs-lookup"><span data-stu-id="6011f-110">List of topics with links</span></span>
 
-- [<span data-ttu-id="ea8aa-111">顧客およびクラウドパートナーの責任</span><span class="sxs-lookup"><span data-stu-id="ea8aa-111">Customer and cloud partner responsibilities</span></span>](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
-- [<span data-ttu-id="ea8aa-112">Microsoft 365 サービスの回復性</span><span class="sxs-lookup"><span data-stu-id="ea8aa-112">Microsoft 365 service resiliency</span></span>](ebcm-m365-service-resiliency.md)
-- [<span data-ttu-id="ea8aa-113">連続性の計画を立てる</span><span class="sxs-lookup"><span data-stu-id="ea8aa-113">Developing your continuity plan</span></span>](ebcm-developing-your-ebcm-plan.md)
-- [<span data-ttu-id="ea8aa-114">Microsoft 365 のサービス インシデント対策のシナリオ</span><span class="sxs-lookup"><span data-stu-id="ea8aa-114">Microsoft 365 service incident mitigation scenarios</span></span>](ebcm-microsoft-365-mitigations.md)
-- [<span data-ttu-id="ea8aa-115">Microsoft 365 ビジネス連続性計画のトレーニングとリハーサル</span><span class="sxs-lookup"><span data-stu-id="ea8aa-115">Microsoft 365 business continuity plan training and rehearsal</span></span>](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [<span data-ttu-id="6011f-111">顧客およびクラウドパートナーの責任</span><span class="sxs-lookup"><span data-stu-id="6011f-111">Customer and cloud partner responsibilities</span></span>](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+- [<span data-ttu-id="6011f-112">Microsoft 365 サービスの回復性</span><span class="sxs-lookup"><span data-stu-id="6011f-112">Microsoft 365 service resiliency</span></span>](ebcm-m365-service-resiliency.md)
+- [<span data-ttu-id="6011f-113">連続性の計画を立てる</span><span class="sxs-lookup"><span data-stu-id="6011f-113">Developing your continuity plan</span></span>](ebcm-developing-your-ebcm-plan.md)
+- [<span data-ttu-id="6011f-114">Microsoft 365 のサービス インシデント対策のシナリオ</span><span class="sxs-lookup"><span data-stu-id="6011f-114">Microsoft 365 service incident mitigation scenarios</span></span>](ebcm-microsoft-365-mitigations.md)
+- [<span data-ttu-id="6011f-115">Microsoft 365 ビジネス連続性計画のトレーニングとリハーサル</span><span class="sxs-lookup"><span data-stu-id="6011f-115">Microsoft 365 business continuity plan training and rehearsal</span></span>](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
-## <a name="see-also"></a><span data-ttu-id="ea8aa-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="ea8aa-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6011f-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="6011f-116">See also</span></span>
 
-- [<span data-ttu-id="ea8aa-117">エンタープライズ ビジネス継続性法的免責事項</span><span class="sxs-lookup"><span data-stu-id="ea8aa-117">Enterprise business continuity legal disclaimer</span></span>](ebcm-legal-disclaimer.md)
+- [<span data-ttu-id="6011f-117">エンタープライズ ビジネス継続性法的免責事項</span><span class="sxs-lookup"><span data-stu-id="6011f-117">Enterprise business continuity legal disclaimer</span></span>](ebcm-legal-disclaimer.md)
