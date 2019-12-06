@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 89cd473a7b7f2ff663d7ee1eee41f84144dee6d7
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204264"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866439"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
@@ -47,7 +47,7 @@ Outlook.com と web 上の Outlook が電子メール認証手法を使用して
 
 Office 365 をご利用のお客様の場合は、セキュリティ & コンプライアンスセンターを使用してこの機能を管理できます。 
 
-- Office 365 セキュリティ & コンプライアンスセンターでは、フィッシングポリシーの下にあるスプーフィング対策保護を使用して、グローバルまたはセキュリティ管理者がこの機能を有効または無効にすることができます。 また、' Get-antiphishpolicy ' コマンドレットを使用して管理することもできます。 詳細については、「 [Office 365 のフィッシング対策保護](anti-phishing-protection.md)」および「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps)」を参照してください。
+- Office 365 セキュリティ & コンプライアンスセンターでは、フィッシングポリシーの下にあるスプーフィング対策保護を使用して、グローバルまたはセキュリティ管理者がこの機能を有効または無効にすることができます。 また、' Get-antiphishpolicy ' コマンドレットを使用して管理することもできます。 詳細については、「 [Office 365 のフィッシング対策保護](anti-phishing-protection.md)」および「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)」を参照してください。
 
     ![グラフィックインターフェイスで認証されていない送信者を編集する。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

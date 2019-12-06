@@ -1,7 +1,7 @@
 ---
 title: 家族教育機関/プライバシーに関する法律 (お客様)
 description: Microsoft は、アメリカ家族の教育機関とプライバシーに関する法律の要件に合致しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 02259b8c9e957e29ce695330a80b2a252478c0e1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690673"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859867"
 ---
-# <a name="compliance-offering-family-educational-rights-and-privacy-act-ferpa"></a>コンプライアンスオファリング: ファミリー教育機関とプライバシーに関する法律 (お客様)
+# <a name="family-educational-rights-and-privacy-act-ferpa"></a>家族教育機関/プライバシーに関する法律 (お客様)
 
 ## <a name="ferpa-overview"></a>大き PA の概要
 
@@ -40,19 +40,19 @@ ms.locfileid: "38690673"
 
 Microsoft Cloud での優れた機能の利点について説明します。次に、優れた[pa backgrounder をダウンロードし](https://aka.ms/ferpa-compliance)ます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 Microsoft がお客様のデータに「合法的な趣味」を持つ「学校のオフィシャル」として指定することを同意するサービスは次のとおりです。
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365、Office 365 米国政府機関、および Office 365 米国政府機関の防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI、PowerApps、Microsoft Flow はスタンドアロンサービスとして、または Office 365 ブランドのプランまたはスイートに含まれている
 - Azure DevOps Services
 - Windows Defender ATP
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 この場合、監査または証明書を必要とすることはありません。
 
@@ -74,9 +74,9 @@ Microsoft がお客様のデータに「合法的な趣味」を持つ「学校�
 - [連邦レジスタ: お金の最終ルール](https://aka.ms/ferpa-reg)
 - [Microsoft Azure 用の、お持ちの Microsoft Azure 向けの実装ガイド](https://aka.ms/azureferpa)
 - [Azure の PA コンプライアンスフレームワークマッピング](https://aka.ms/AzureFERPAMapping)
-- [Microsoft Online Services の使用条件](https://aka.ms/Online-Services-Terms)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf) をダウンロードします。

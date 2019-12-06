@@ -1,7 +1,7 @@
 ---
 title: 食品および医薬品管理の CFR Title 21 パート11
 description: Microsoft は、お客様がこれらの食品および薬品管理の規制に準拠することを支援します。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d37557c1df1edfc026960b5a7d256d5d3fbc7a0b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7e8d24aecb2343ed03a1d224b21060619426717f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690676"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859877"
 ---
-# <a name="compliance-offering-food-and-drug-administration-cfr-title-21-part-11"></a>コンプライアンスオファリング: 食品/医薬管理の CFR Title 21 パート11
+# <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食品および医薬品管理の CFR Title 21 パート11
 
 ## <a name="fda-cfr-title-21-overview"></a>FDA CFR Title 21 の概要
 
@@ -42,22 +42,22 @@ Microsoft enterprise cloud services では、通常独立したサードパー�
 
 FDA CFR Title 21 の展開を促進する方法について説明します。 [AZURE fda 21 認定ガイドをダウンロード](https://go.microsoft.com/fwlink/p/?linkid=2086604)する
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 CFR Title 21 Part 11 に準拠する証明書はありませんが、次の Microsoft enterprise cloud サービスは、独立したサードパーティの監査に参加しており、お客様のコンプライアンスの取り組みに役立てることができます。 これらのサービスは次のとおりです。
 
 - Azure: クラウドサービス、ストレージ、トラフィックマネージャー、仮想マシン、および仮想ネットワーク
 - Intune
-- [Dynamics 365 および Dynamics 365 米国政府](https://aka.ms/d365-compliance-list)
-- [Office 365 および Office 365 米国政府機関](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 SOC 1 および SOC 2 タイプ2、ISO/IEC 27001、ISO/IEC 27018 の標準の監査レポートでは、Microsoft が実装した統制の有効性を証明しており、お客様が FDA CFR Title 21 Part 11 に準拠していることをサポートすることができます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**標準の適用先**
+**この標準はだれに適用されますか?**
 
 FDA CFR Title 21 パート11は、研究、臨床研究、メンテナンス、製造、およびライフサイエンス製品の流通に関する FDA 規制の側面を扱う製品とサービスを備えた組織に適用されます。
 
@@ -69,11 +69,11 @@ Microsoft によって実装される監査対象のコントロールは、デ�
 
 **監査者のレポートのコピーを取得するには、どうすればよいですか。**
 
-[Service Trust Portal](https://aka.ms/stphelp)は、独立して監査されたコンプライアンスレポートを提供します。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft のクラウドサービスの結果を、自分の法律および規制要件と比較できるようにすることができます。
+[Service Trust Portal](https://aka.ms/stphelp) では、中立的な監査によるコンプライアンス レポートを提供しています。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft のクラウドサービスの結果を、自分の法律および規制要件と比較できるようにすることができます。
 
 **組織の証明プロセスに Microsoft のコンプライアンスを使用できますか?**
 
-正解です。 IEC/ISO 27001、ISO/IEC 27018、SOC 1、および SOC 2 標準に関する、Microsoft の統制の有効性に関する独立したサードパーティのコンプライアンスレポート。 Microsoft enterprise cloud のお客様は、これらの関連するレポートで説明されている監査された制御を、独自の CFR Title 21 Part 11 のリスク分析と認定の取り組みの一部として使用できます。 FDA の規制の対象となるアプリケーションを構築および展開するお客様は、アプリケーションが FDA の要件を満たしていることを確認する責任があります。
+はい。 IEC/ISO 27001、ISO/IEC 27018、SOC 1、および SOC 2 標準に関する、Microsoft の統制の有効性に関する独立したサードパーティのコンプライアンスレポート。 Microsoft enterprise cloud のお客様は、これらの関連するレポートで説明されている監査された制御を、独自の CFR Title 21 Part 11 のリスク分析と認定の取り組みの一部として使用できます。 FDA の規制の対象となるアプリケーションを構築および展開するお客様は、アプリケーションが FDA の要件を満たしていることを確認する責任があります。
 
 **この標準に準拠して管理するための Microsoft の責任は何ですか。**
 
@@ -86,11 +86,11 @@ Microsoft は、そのエンタープライズクラウドサービスが、管�
 - [業界パート11の FDA ガイダンス: 電子記録と署名](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Azure の資格ガイドライン](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Office 365 の認定ガイドライン](https://aka.ms/o365-qualification-guideline)
-- [Microsoft Common Controls Hub コンプライアンスフレームワーク](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Online Services の使用条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](https://aka.ms/govt-cloud)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) をダウンロードします。

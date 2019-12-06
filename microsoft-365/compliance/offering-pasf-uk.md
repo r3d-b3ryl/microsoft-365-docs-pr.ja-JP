@@ -1,7 +1,7 @@
 ---
 title: 警察の安全な施設 (PASF) 英国
 description: Microsoft business cloud services では、組織のデータを処理してクラウドに保存するために、警察が安全な施設を必要とする英国法の実施をサポートしています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ec66f54c8db21bf4d94feb22c5dd17ee4b45ef5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690735"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859297"
 ---
-# <a name="compliance-offering-police-assured-secure-facilities-pasf-united-kingdom"></a>コンプライアンスオファリング: 警察に対して保証された安全な施設 (PASF) 英国
+# <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>警察の安全な施設 (PASF) 英国
 
 ## <a name="about-pasf"></a>PASF について
 
@@ -34,13 +34,13 @@ Microsoft は、セキュリティに対する総合的な多層防御アプロ�
 
 これらの認定は、データセンターの物理的なセキュリティを保護するために講じる対策によって支えられています。 顧客データが格納されている領域への物理的なアクセスを厳密に制御するために、データセンターを設計、構築、運用する方法から始まる、階層化されたアプローチを採用しています。 Microsoft によって管理されているデータセンターには、施設の周辺、建物の周辺、建物内、およびデータセンターフロアで必要なアクセス承認があり、幅広いレベルの保護があります。 これにより、承認されていないユーザーがデータおよびデータセンターのリソースに物理的にアクセスするリスクを軽減します。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 NPIRMT は、1つの Azure データセンターを毎年監査し、英国の4つの Microsoft データセンターを巡回します。 Microsoft データセンターが PASF になっている NPIRMT 評価は、本社とその他の Microsoft クラウドサービスのリスク評価を実施している司法機関のお客様を対象としています。
 
@@ -52,16 +52,16 @@ NPIRMT は、1つの Azure データセンターを毎年監査し、英国の4�
 
 **英国の警察部門は、自社のリスク評価の一部として Azure PASF 評価を使用できますか。**
 
-正解です。 法律執行機関は、クラウドに移行する前に、Azure の NPIRMT 評価を使用して、独自のローカルリスク評価をサポートできます。
+はい。 法律執行機関は、クラウドに移行する前に、Azure の NPIRMT 評価を使用して、独自のローカルリスク評価をサポートできます。
 
 ## <a name="resources"></a>リソース
 
 - [国の監視の認定ポリシー](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure 施設、設置型、および物理的なセキュリティ](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft および ISO/IEC 27001:2013 ISM 標準](offering-iso-27001.md)
-- [Microsoft Online Services の使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf) をダウンロードします。

@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft は、さまざまなポリシー、手順を開発し、業界のベストプラクティスをいくつか採用して、ユーザーを不適切な迷惑メールや悪意のあるメールから保護しています。
-ms.openlocfilehash: 0957e34008f4e05693218970c458656d73d9c0fe
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a1e1e213c01eea5a07b616e72955303f21c6d2ae
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031812"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872063"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 
@@ -73,7 +73,7 @@ Office 365 に送信する電子メールは、次のドキュメントに記載
 
 ## <a name="office-365-limits"></a>Office 365 の制限
 
-送信者は、「[Exchange Online Protection の制限](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)」に記載されている Office 365 の制限に従わなければなりません。
+送信者は、「[Exchange Online Protection の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)」に記載されている Office 365 の制限に従わなければなりません。
 
 ## <a name="email-delivery-resources-and-organizations"></a>電子メール配信リソースと組織
 

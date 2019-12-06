@@ -15,20 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686728"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866359"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
-
-**プリンシパルの作成者** <br/>
-Paul Cunningham、Microsoft MVP <br/>
-[実際的な365](https://practical365.com/) <br/>
-[@Practical365](https://twitter.com/practical365)<br/>
-__________________________________________________
 
 データ損失防止とは、Office 365 のコンプライアンス機能で、組織が不要な機密情報を意図的または偶発的に危険にさらすことを防ぐために設計されています。 DLP は、Exchange Server と Exchange Online ではルートがあり、SharePoint Online と OneDrive for business にも適用されます。
 
@@ -217,6 +211,6 @@ DLP ポリシーを有効にした後、独自の最終的なテストを実行�
 
 ![コンテンツが制限されているポリシーのヒント](media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>概要
 
 データ損失防止ポリシーは、すべての種類の組織に適しています。 一部の DLP ポリシーのテストは、ポリシーヒント、エンドユーザーによる上書き、インシデントレポートなどの制御によって、リスクの低い課題となります。 一部の DLP ポリシーを自動的にテストして、組織内で既に発生している違反の種類を確認してから、誤検知率の低いポリシーを作成し、許可されたものと許可されていないものについてユーザーを教育し、DLP ポリシーをに展開することができます。機関.

@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: この資料では、Office 365 の受信トレイに電子メールを送信するときに生じる問題に関して送信者が参照できるトラブルシューティング情報と、Office 365 顧客に対するバルク メールのベスト プラクティスについて取り上げます。
-ms.openlocfilehash: b87b0745c95cd043987f49ed7f21118339d3e592
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 44fe5b984c22a4560da6cf8d63096775f5b47095
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030701"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872013"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Office 365 に送信されるメールのトラブルシューティング
 
@@ -71,7 +71,7 @@ DNS 逆引き参照を行えない送信者からの電子メールは受け付�
 
 一部の配信の問題の原因は、Microsoft によって送信者の IP アドレスがブロックされていることや、ユーザーのアカウントが以前の迷惑メール処理によって禁止された送信者として識別されていることにあります。エラーがあって NDR を受信したと分かっている場合には、まず、NDR メッセージに記載されている指示に従って問題を解決してください。
 
-受信したエラーの詳細については、「[DSNs and NDRs in On-Premises Exchange 2013 and Office 365](https://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx)」の SMTP エラー コードの完全な一覧をご覧ください。
+受信したエラーの詳細については、「 [Exchange Online のメール配信不能レポート](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)」にあるエラーコードの一覧を参照してください。
 
  たとえば、次の NDR を受信した場合、送信 IP アドレスが Microsoft によってブロックされたことを示しています。
 

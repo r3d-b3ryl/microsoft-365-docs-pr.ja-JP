@@ -12,12 +12,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: この articleSupported LanguagesInstall the 迷惑メール報告アドインをアンインストールします。迷惑メール報告アドインをアンインストールする inFor 詳細情報
-ms.openlocfilehash: 7f294ed78affba6e55f2372b81b517bbd25d3f08
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 508d542be4862a6a06b795fc7a4b97bdc405d430
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085635"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865889"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインのインストール
   
@@ -59,15 +59,14 @@ ms.locfileid: "37085635"
 - スペイン語
     
 ## <a name="install-the-junk-email-reporting-add-in"></a>迷惑メール報告アドインをインストールする
-<a name="sectionSection1"> </a>
 
 次の手順で、迷惑メール報告アドインをインストールします。
   
-- 他の .msi ファイルと同様に Windows インストーラー パッケージを実行する。アドインをインストールする際、GUI インターフェイスが開き、インストール画面で手順が示されます。詳細については、「[セットアップ ウィザードを使用して迷惑メール報告アドインをインストールする](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard)」をご覧ください。
+- 他の .msi ファイルと同様に Windows インストーラー パッケージを実行する。アドインをインストールする際、GUI インターフェイスが開き、インストール画面で手順が示されます。詳細については、「[セットアップ ウィザードを使用して迷惑メール報告アドインをインストールする](#install-the-junk-email-reporting-add-in-using-the-setup-wizard)」をご覧ください。
     
-- インストール ユーザー インターフェイスを表示しないサイレント インストールを実行する。インストール スクリプトを実行するコマンドライン オプションを指定します。アドインをインストールする際、GUI インターフェイスでは提供されない追加の構成オプションが使用できます。詳細については、「[サイレント モードで迷惑メール報告アドインをインストールする](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode)」をご覧ください。
+- インストール ユーザー インターフェイスを表示しないサイレント インストールを実行する。インストール スクリプトを実行するコマンドライン オプションを指定します。アドインをインストールする際、GUI インターフェイスでは提供されない追加の構成オプションが使用できます。詳細については、「[サイレント モードで迷惑メール報告アドインをインストールする](#install-the-junk-email-reporting-add-in-using-silent-mode)」をご覧ください。
     
-### <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインストール要件は次のとおりです。
   
@@ -87,7 +86,6 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
 > このアドインをインストールするコンピューターの管理者特権が必要です。 
   
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>セットアップ ウィザードを使用して迷惑メール報告アドインをインストールする
-<a name="BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard"> </a>
 
 1. お使いのコンピューターで Outlook を終了します。
     
@@ -108,7 +106,6 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
 9. Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷惑メール]** の隣にある下矢印を選択し、 **[フィッシングとして報告]** などのオプションを選択してください。メールが誤って迷惑メールに識別された場合、[迷惑メール] フォルダー中で、 **[迷惑メールではないことを報告]** を選択できます。 
     
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>サイレント モードで迷惑メール報告アドインをインストールする
-<a name="BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode"> </a>
 
 1. お使いのコンピューターで Outlook を終了します。
     
@@ -135,9 +132,9 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
   
     上記の例に基づいてこれら両方のオプション パラメーターを追加するには、x86 Outlook を実行しているコンピューターで以下を指定します。 
     
-  ```
-  msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
-  ```
+      ```
+      msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
+      ```
 
 4. インストールが完了したら、Outlook を起動します。
     
@@ -146,21 +143,19 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
 6. Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷惑メール]** の隣にある下矢印を選択し、 **[フィッシングとして報告]** などのオプションを選択してください。メールが誤って迷惑メールに識別された場合、[迷惑メール] フォルダー中で、 **[迷惑メールではないことを報告]** を選択できます。 
     
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>迷惑メール報告アドインをアンインストールする
-<a name="sectionSection2"> </a>
 
 迷惑メール報告アドインは、次のオプションのいずれかでアンインストールできます。
   
-- Windows コントロール パネルを使用してアドインを削除する。詳細については、「[コントロール パネルから迷惑メール報告アドインをアンインストールする](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel)」をご覧ください。
+- Windows コントロールパネルを使用してアドインを削除します。 詳細については、「[コントロールパネルから迷惑メール報告アドインをアンインストールする](#uninstall-the-junk-email-reporting-add-in-from-control-panel)」を参照してください。
     
-- Windows インストーラー パッケージを実行し、アンインストール オプションを選択する。詳細については、「[Windows インストーラー パッケージを実行して迷惑メール報告アドインをアンインストールする](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage)」をご覧ください。
+- Windows インストーラー パッケージを実行し、アンインストール オプションを選択する。 詳細については、「 [Windows インストーラーパッケージを実行して迷惑メール報告アドインをアンインストールする](#uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package)」を参照してください。
     
-- アンインストール オプションを使用して、サイレント インストールを実行する。詳細については、「[サイレント モードで迷惑メール報告アドインをアンインストールする](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#MK_UninstalltheJunkEmailReportingAdd-ininSilentMode)」をご覧ください。
+- アンインストール オプションを使用して、サイレント インストールを実行する。詳細については、「[サイレント モードで迷惑メール報告アドインをアンインストールする](#uninstall-the-junk-email-reporting-add-in-in-silent-mode)」をご覧ください。
     
 > [!NOTE]
 > このアドインをアンインストールするコンピューターの管理者特権が必要です。 
   
 ### <a name="uninstall-the-junk-email-reporting-add-in-from-control-panel"></a>コントロール パネルから迷惑メール報告アドインをアンインストールする
-<a name="BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel"> </a>
 
 1. お使いのコンピューターで Outlook を終了します。
     
@@ -175,7 +170,6 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
 6. Outlook を再起動して、アドインが Outlook のリボンに表示されていないことを確認します。
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package"></a>Windows インストーラー パッケージを実行して迷惑メール報告アドインをアンインストールする
-<a name="BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage"> </a>
 
 1. お使いのコンピューターで Outlook を終了します。
     
@@ -191,7 +185,6 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
 4. Outlook を再起動して、アドインが Outlook のリボンに表示されていないことを確認します。
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-in-silent-mode"></a>サイレント モードで迷惑メール報告アドインをアンインストールする
-<a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>
 
 1. お使いのコンピューターで Outlook を終了します。
     
@@ -208,8 +201,7 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
     
 4. Outlook を再起動して、アドインが Outlook のリボンに表示されていないことを確認します。
     
-## <a name="for-more-information"></a>関連情報
-<a name="sectionSection3"> </a>
+## <a name="for-more-information"></a>詳細情報
 
 [迷惑メール メッセージを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)
   

@@ -1,7 +1,7 @@
 ---
 title: 英国の財務倫理当局 (FCA)
 description: 英国の金融機関向けの Microsoft ガイダンスでは、クラウドへのアウトソーシングに関する財務行為権限とガイドラインに従っています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 55cb9e1901231f63b5e02b44b97c029359718625
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690674"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859887"
 ---
-# <a name="compliance-offering-united-kingdom-financial-conduct-authority-fca"></a>コンプライアンスオファリング: 英国財務倫理当局 (FCA)
+# <a name="united-kingdom-financial-conduct-authority-fca"></a>英国の財務倫理当局 (FCA)
 
 ## <a name="fca-uk-overview"></a>FCA (UK) の概要
 
@@ -40,30 +40,30 @@ FCA ガイダンスの各分野についての詳細な説明は、Microsoft ガ
 
 [Microsoft のアプローチを FCA ファイナライズされるクラウドガイダンスにダウンロードする](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
-- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 **組織のコンプライアンスプロセスで、このフレームワークに対する Microsoft の応答を使用できますか?**
 
-正解です。 ただし、このフレームワークへの Microsoft の応答はサードパーティによって確認されていますが、お客様は Azure または Power BI で実装されているソリューションのコンプライアンスを検証する責任があります。
+はい。 ただし、このフレームワークへの Microsoft の応答はサードパーティによって確認されていますが、お客様は Azure または Power BI で実装されているソリューションのコンプライアンスを検証する責任があります。
 
-正解です。 ただし、このフレームワークへの Microsoft の応答はサードパーティによって確認されていますが、お客様は Azure または Power BI で実装されているソリューションのコンプライアンスを検証する責任があります。
+はい。 ただし、このフレームワークへの Microsoft の応答はサードパーティによって確認されていますが、お客様は Azure または Power BI で実装されているソリューションのコンプライアンスを検証する責任があります。
 
 ## <a name="resources"></a>リソース
 
 - [英国の金融機関の Microsoft クラウドチェックリスト](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5-クラウドおよびその他のサードパーティ製 IT サービスに対する企業のアウトソーシングのガイダンス](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
 - [コンプライアンスの有効化: Microsoft のアプローチによる FCA 完了クラウドガイダンス](https://go.microsoft.com/fwlink/p/?linkid=2101561)
-- [Microsoft 金融サービスコンプライアンスプログラム](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Azure での金融サービスコンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft business cloud services および金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融サービス コンプライアンス プログラム](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft 法人向けクラウド サービスおよび金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf) をダウンロードします。

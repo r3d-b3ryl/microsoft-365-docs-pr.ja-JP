@@ -14,55 +14,53 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でスパムをユーザーの迷惑メールフォルダーにルーティングする方法について説明します。
-ms.openlocfilehash: dc37f2428e009f00a2d6d9dd15d5d2cd505f267a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f47b7821fd6cceb02501c559a0a776c4cdaf315f
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085712"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866769"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>スパムが各ユーザーの 迷惑メール フォルダーに転送されるようにする
 
 > [!IMPORTANT]
-> このトピックは、ハイブリッド展開でオンプレミスのメールボックスをホストしている Exchange Online Protection (EOP) のお客様にのみ当てはまります。Office 365 でメールボックスが完全にホストされている Exchange Online のお客様は、ここに示すコマンドを実行する必要はありません。 
-  
-EOP のお客様のための既定のスパム対策アクションでは、スパム メッセージは受信者の [迷惑メール] フォルダーに移動されます。 このアクションをオンプレミスのメールボックスで使用するには、オンプレミスのエッジサーバーまたはハブサーバーで Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成して、EOP によって追加されたスパムヘッダーを検出する必要があります。 これらのメールフロールールは、SclJunkThreshold コマンドレットのプロパティで使用されるスパム信頼レベル (SCL) を設定し、スパムを各メールボックスの迷惑メールフォルダーに移動します。 
-  
+> このトピックは、ハイブリッド展開でオンプレミスのメールボックスをホストしている Exchange Online Protection (EOP) のお客様にのみ当てはまります。Office 365 でメールボックスが完全にホストされている Exchange Online のお客様は、ここに示すコマンドを実行する必要はありません。
+
+EOP のお客様のための既定のスパム対策アクションでは、スパム メッセージは受信者の [迷惑メール] フォルダーに移動されます。 このアクションをオンプレミスのメールボックスで使用するには、オンプレミスのエッジサーバーまたはハブサーバーで Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成して、EOP によって追加されたスパムヘッダーを検出する必要があります。 これらのメールフロールールは、SclJunkThreshold コマンドレットのプロパティで使用されるスパム信頼レベル (SCL) を設定し、スパムを各メールボックスの迷惑メールフォルダーに移動します。
+
 ### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Windows PowerShell を使用してスパムが迷惑メールフォルダーに移動されるようにメールフロールールを追加するには
 
 1. オンプレミス Exchange サーバーの Exchange 管理シェル にアクセスします。オンプレミスの Exchange 組織で Exchange 管理シェル を開く方法については、「 **Open the Shell**」を参照してください。
-    
+
 2. コンテンツでフィルターされたスパム メッセージを [迷惑メール] フォルダーにルーティングするには、次のコマンドを実行します。
-    
-  ```Powershell
-  New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
-  ```
 
-    _NameForRule_ は、新しいルールの名前です (例: JunkContentFilteredMail)。 
-    
+   ```Powershell
+   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
+   ```
+
+   ここで、 _Nameforrule_は新しいルールの名前です。たとえば、JunkContentFilteredMail。
+
 3. コンテンツ フィルターに到達する前にスパムとしてマークされたメッセージを [迷惑メール] フォルダーにルーティングするには、次のコマンドを実行します。
-    
-  ```Powershell
-  New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
-  ```
 
-    _NameForRule_ は新しいルールの名前です (例: JunkMailBeforeReachingContentFilter)。 
-    
-4. 次に示すコマンドを実行して、スパム フィルター ポリシーのブロック リスト ( **受信拒否送信者**一覧など) に登録されている送信者からのメッセージが [迷惑メール] フォルダーにルーティングされるようにします。 
-    
-  ```Powershell
-  New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
-  ```
+   ```Powershell
+   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
+   ```
 
-    _NameForRule_ は新しいルールの名前です (例: JunkMailInSenderBlockList)。 
-    
+   ここで、 _Nameforrule_は新しいルールの名前です。たとえば、JunkMailBeforeReachingContentFilter。
+
+4. 次に示すコマンドを実行して、スパム フィルター ポリシーのブロック リスト ( **受信拒否送信者**一覧など) に登録されている送信者からのメッセージが [迷惑メール] フォルダーにルーティングされるようにします。
+
+   ```Powershell
+   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
+   ```
+
+   ここで、 _Nameforrule_は新しいルールの名前です。たとえば、JunkMailInSenderBlockList。
+
 **[迷惑メール フォルダーにメッセージを移動する]** アクションを使用しない場合は、Exchange 管理センター のコンテンツ フィルター ポリシーで別のアクションを選択してください。詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。メッセージ ヘッダー内で該当するフィールドの詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
-  
 
 > [!TIP]
 > [**迷惑メールフォルダーにメッセージを移動**する] アクションを使用しない場合は、Exchange 管理センターのコンテンツフィルターポリシーで別のアクションを選択できます。 詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 メッセージ ヘッダー内で該当するフィールドの詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
-> 
+
 ## <a name="see-also"></a>関連項目
 
-[New-TransportRule コマンドレット](https://technet.microsoft.com/library/bb125138%28v=exchg.160%29.aspx)
-
+[New-transportrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)

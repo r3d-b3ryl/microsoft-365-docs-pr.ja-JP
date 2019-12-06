@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: 387f14da591f2979ed15f0a6c7a29eb4bfd5689e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5ad8aa3525953fc0393595848a80fe85c6df8aa3
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086112"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865919"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP の安全な添付ファイル
 
@@ -46,7 +46,7 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
 |---------|---------|
 |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。         |
 |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照してください) |
+|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください) |
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>ATP の安全な添付ファイルの保護が適切かどうかを確認する方法
 

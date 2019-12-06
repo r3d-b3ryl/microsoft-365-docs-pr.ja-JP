@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。
-ms.openlocfilehash: c8779fb89ecb1deda92382ae2d91de4e54b303e7
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e60c0ae87f050b6e72e53b6069a61cd52df0641a
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032362"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871843"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>管理者として検疫済みメッセージを検索して解放する
 
@@ -37,9 +37,9 @@ EAC ではなくセキュリティ & コンプライアンスセンターを使�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」トピックの「検疫」エントリを参照してください。
+- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」トピックの「検疫」エントリを参照してください。
 
-- **[検疫]** ページでは、一度に複数のメッセージを解放または報告することができません。代わりに、このタスクを実行するリモート Windows PowerShell スクリプトを作成することができます。メッセージを検索する場合は [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) コマンドレットを使用し、それらを解放する場合は [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) コマンドレットを使用します。
+- **[検疫]** ページでは、一度に複数のメッセージを解放または報告することができません。代わりに、このタスクを実行するリモート Windows PowerShell スクリプトを作成することができます。メッセージを検索する場合は [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) コマンドレットを使用し、それらを解放する場合は [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) コマンドレットを使用します。
 
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 
@@ -54,7 +54,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
 
 2. **[高度な検索]** ウィンドウで、次の条件の任意の組み合わせを選択します。各条件を有効にするには、関連するチェック ボックスをオンにします。ワイルドカードはサポートされていません。
 
-   1. **メッセージ ID**: このパラメーターを使用して、特定のメッセージの対象となる検索を実行できます。 たとえば、組織のユーザーが特定のメッセージを送信したか、組織のユーザーに向けて特定のメッセージを送信したものの、宛先に届かない場合は、メッセージの追跡機能を使用してメッセージを検索できます。 詳細については、「 [メッセージの追跡を実行し、結果を表示する](https://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx)」をご覧ください。 メッセージがルールと一致したりスパムとして識別されたために検疫に送信されたことが判明した場合は、メッセージ ID を指定して検疫内でそのメッセージを簡単に見つけることができます。 完全なメッセージ ID 文字列を含める必要があります。 メッセージ ID には、山かっこ (\<\>) が含まれる場合もあります。
+   1. **メッセージ ID**: このパラメーターを使用して、特定のメッセージの対象となる検索を実行できます。 たとえば、組織のユーザーが特定のメッセージを送信したか、組織のユーザーに向けて特定のメッセージを送信したものの、宛先に届かない場合は、メッセージの追跡機能を使用してメッセージを検索できます。 詳細については、「 [メッセージの追跡を実行し、結果を表示する](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results)」をご覧ください。 メッセージがルールと一致したりスパムとして識別されたために検疫に送信されたことが判明した場合は、メッセージ ID を指定して検疫内でそのメッセージを簡単に見つけることができます。 完全なメッセージ ID 文字列を含める必要があります。 メッセージ ID には、山かっこ (\<\>) が含まれる場合もあります。
 
    2. **送信者の電子メールアドレス**: メッセージの送信者の電子メールアドレスを指定します。
 

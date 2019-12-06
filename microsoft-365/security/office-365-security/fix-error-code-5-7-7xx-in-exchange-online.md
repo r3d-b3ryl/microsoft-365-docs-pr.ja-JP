@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online でエラーコード 5.7.7 xx の電子メールの問題を解決する方法について説明します (テナントがメールの送信をブロックされた場合)。
-ms.openlocfilehash: 28ed444d821cbe00cfcb92872de15bb43a65ae28
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d89cc0caeebbf37336a3b00346b3393dd5e74e78
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033878"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865849"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Exchange Online でエラーコード 5.7.7 xx のメール配信の問題を修正する
 
@@ -51,7 +51,7 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 1. Microsoft 365 管理センターですべてのドメインを登録していることを確認してください。 詳細については、[こちら](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)を参照してください。
 
-2. 異常なコネクタを探します。 悪意のある俳優は、多くの場合、スパムを送信するために Office 365 テナントに新しい受信コネクタを作成します。 コネクタの確認の詳細については、[こちら](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)を参照してください。 
+2. 異常なコネクタを探します。 悪意のある俳優は、多くの場合、スパムを送信するために Office 365 テナントに新しい受信コネクタを作成します。 コネクタの確認の詳細については、[こちら](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)を参照してください。 
 
 3. オンプレミスのサーバーをロックし、侵害されないようにします。
 

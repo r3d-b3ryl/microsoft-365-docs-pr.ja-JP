@@ -1,7 +1,7 @@
 ---
 title: 米国国防総省 (DoD) 暫定認証
 description: Microsoft は、影響レベル5、4、および2で、米国国防総省 (DoD) の仮承認を受けました。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ad34c497e82ef8e61e61d6953afcca5815f1bc06
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d805c5dab7e8ebeb31ea94895356a6529bcd970d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690681"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859957"
 ---
-# <a name="compliance-offering-us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>コンプライアンスオファリング: 米国防総省 (DoD) の影響レベル2、4、および5における仮承認
+# <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>米国国防総省 (DoD) の影響レベル2、4、および5の仮承認
 
 ## <a name="dod-and-disa-overview"></a>DoD および DISA の概要
 
@@ -55,26 +55,26 @@ FedRAMP の承認に基づいて、クラウドサービスのサポートに Do
 
 影響レベル2は、制御されていない未分類情報 (公開リリースに対して承認されるデータ) を対象としています。 また、"ミッションクリティカル" とは見なされませんが、最小限のレベルのアクセス制御を必要とするその他の未分類の情報についても説明します。 この承認により、連邦政府のお客様は、範囲内の Microsoft クラウドサービスに機密情報や基本的な防衛アプリケーションと web サイトを展開できます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>DoD 影響レベル5の対象となるサービス
 
 - [DoD のための Azure Government](https://aka.ms/AzureCompliance)
-- [Office 365 米国政府機関による防衛](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-4"></a>DoD 影響レベル4の対象となるサービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
-- [Office 365 米国政府機関による防衛](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-2"></a>DoD 影響レベル2の対象となるサービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 米国政府](https://aka.ms/d365-compliance-list)
 - [Office 365 米国政府機関](https://aka.ms/o365-compliance-framework)
-- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 DoD PA が付与されると、Microsoft cloud services が毎年監視および評価されます。 [Microsoft FedRAMP 承認](https://marketplace.fedramp.gov/#/products?sort=productName&productNameSearch=microsoft)
 
@@ -84,9 +84,9 @@ Azure のセキュリティとコンプライアンス部門の防御の青写�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**組織の認定プロセスにおいて Microsoft のコンプライアンスを使用できますか?**
+**Microsoft のコンプライアンスを自分の組織の認定プロセスに利用できますか?**
 
-正解です。 すべての DoD 機関は、DoD 認証を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書に頼ることができます。 (これは、DoD をサポートし、クラウドサービスを必要とする他の組織にも適用されます)。ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
+はい。 すべての DoD 機関は、DoD 認証を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書に頼ることができます。 (これは、DoD をサポートし、クラウドサービスを必要とする他の組織にも適用されます)。ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
 
 **Microsoft の DoD 認定資格は、NIST 800 –171の要件を満たしていますか?**
 
@@ -102,10 +102,10 @@ Azure のセキュリティとコンプライアンス部門の防御の青写�
 - [DISA Cloud Service サポート](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
 - [連邦情報システムおよび組織での制御されていない未分類情報の保護](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-- [Microsoft Common Controls Hub コンプライアンスフレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf) をダウンロードします。

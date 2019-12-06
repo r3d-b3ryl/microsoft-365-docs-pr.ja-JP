@@ -1,7 +1,7 @@
 ---
 title: 米国証券取引委員会 (SEC) ルール 17a-4-4 (f) 米国
 description: 独立した評価会社が、金融企業が SEC Rule 17a-4 (f) レコードの保持と不変のストレージ要件を満たすことができること365を検証しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 54a221458da57cb403072dcbd91a55ba2e2021df
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 08ae4841f2523d5b5df576906bdf04e798d8e60f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690719"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859517"
 ---
-# <a name="compliance-offering-securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>コンプライアンスオファリング: 証券および Exchange 委員会 (SEC) ルール 17a-4 (f) 米国
+# <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>米国証券取引委員会 (SEC) ルール 17a-4-4 (f) 米国
 
 ## <a name="microsoft-and-sec-rule-17a-4f"></a>Microsoft および SEC Rule 17a-4 (f)
 
@@ -39,12 +39,12 @@ SEC Rule 17a-4 (f) に準拠するように Azure と Office 365 のコンプラ
 - **Azure**: [SEC 17a-4-4 (f) コンプライアンス評価: Microsoft azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset は、ポリシーロックオプションを使用して、時間ベースの blob[ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage)を消去できないようにすることを検証しています。このオプションを使用すると、消去不能かつ書き換え不可 (WORM) 形式で時間ベースの blob を保持することができます。 各 Blob (レコード) は、必要な保存期間が期限切れになり、関連付けられた法的保持が解放されるまで、変更、上書き、または削除されないように保護されます。 機密性の高いワークロードを持つソフトウェアプロバイダーとパートナーは、レコード保持と不変のストレージのための onestop ショップクラウドソリューションとして、Azure 不変 Blob ストレージを利用できるようになりました。 金融機関は、これらの機能を利用して、準拠したまま、自分のアプリケーションを構築できるようになりました。
 - **Office 365**: [Exchange Online を使用して SEC 17a-4 に準拠](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)します。 Cohasset では、 [office 365 に保持ロック](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy)が設定されていると、ブローカーディーラーを含む規制対象の顧客が、レコード保持の SEC 要件に準拠するために役立つ方法でデータを保存できるようにするアーカイブ機能があります。 Office 365 のアイテム保持ポリシーでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 ### <a name="azure--sec-rule-17"></a>Azure & SEC ルール17
 
@@ -73,12 +73,12 @@ Microsoft クラウドサービスおよびレギュレータの通知のリス�
 - Microsoft Office 365、データ保持、およびルール17a-4 でのアーカイブ
 - [コンプライアンス Microsoft 金融サービス](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [コンプライアンスプログラム Microsoft business cloud services および金融サービス](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [Azure での金融サービスコンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Azure 金融サービス Cloud リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure 金融サービス クラウド リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Office 365 のアイテム保持ポリシー](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融サービスのブログ](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf) をダウンロードします。

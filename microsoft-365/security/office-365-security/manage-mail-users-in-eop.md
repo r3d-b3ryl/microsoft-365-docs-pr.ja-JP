@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: 38beaa283d4fa120a75f11accf22861e6598d6e0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034358"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871773"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
@@ -40,7 +40,7 @@ ms.locfileid: "38034358"
 
 - このトピックの PowerShell コマンドでは、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。
 
-- Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)」を参照してください。
+- Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 
@@ -59,10 +59,10 @@ ms.locfileid: "38034358"
 
   - **Outlook の差出人セーフリストと受信拒否リスト**: サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。 これにより、ユーザーは独自の差出人セーフ リストとブロックする差出人リストをユーザー単位またはドメイン単位で管理できます。
 
-  - **ディレクトリベースのエッジブロック (dbeb)**: DBEB の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)」を参照してください。
+  - **ディレクトリベースのエッジブロック (dbeb)**: DBEB の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。
 
   - **エンドユーザーのスパム検疫**: エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。 社内のメールボックスを保護している EOP のお客様は、有効な電子メール ユーザーである必要があります。
- 
+
   - **メールフロールール**: ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループが自動的にクラウドにアップロードされ、EAC または Exchange Online Protection の PowerShell を使用して手動で追加することなく、特定のユーザーやグループを対象とするメールフロールール (トランスポートルールとも呼ばれる) を作成できます。 [動的配布グループ](https://go.microsoft.com/fwlink/?LinkId=507569)はディレクトリ同期を使用して同期できないことに注意してください。
 
 「[ディレクトリ同期を準備する](https://go.microsoft.com/fwlink/p/?LinkId=308908)」で説明されている手順に従って、必要な許可を取得し、ディレクトリ同期を準備します。

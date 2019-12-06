@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理者は、Exchange Online で S/MIME を使用する方法について説明します。
-ms.openlocfilehash: 64a76d1e9eebea86e548a06bf05d0030b0396d3d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 87f7438b8297b0c7d6d7674cd2c02db6be14bb28
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032152"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872053"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online でのメッセージの署名と暗号化の S/MIME
 
@@ -37,7 +37,7 @@ Exchange Online 管理者は、組織内のメールボックスに対して S/M
 
 これらの各エンドポイントを使用して S/MIME をセットアップする手順は、次の手順で少し異なります。 通常は、次の手順を実行する必要があります。
 
-- Windows ベースの証明機関をインストールし、S/MIME 証明書を発行するように公開キー基盤を設定します。 サードパーティの証明書プロバイダーによって発行された証明書もサポートされています。 詳細については、「[Active Directory 証明書サービスの概要](https://technet.microsoft.com/library/hh831740.aspx)」を参照してください。
+- Windows ベースの証明機関をインストールし、S/MIME 証明書を発行するように公開キー基盤を設定します。 サードパーティの証明書プロバイダーによって発行された証明書もサポートされています。 詳細については、「[Active Directory 証明書サービスの概要](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))」を参照してください。
 
 - **UserSMIMECertificate**または**usercertificate**属性で、社内 AD DS アカウントでユーザー証明書を公開します。
 
@@ -76,6 +76,6 @@ S/MIME には B2B (企業間取引) および B2C (企業-消費者間取引) �
 
 ## <a name="more-information"></a>詳細情報
 
-[Outlook on the web](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[Outlook on the web](https://docs.microsoft.com/exchange/exchange-admin-center)
 
-[セキュリティで保護されたメール (2000)](https://technet.microsoft.com/library/cc962043.aspx)
+[セキュリティで保護されたメール (2000)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

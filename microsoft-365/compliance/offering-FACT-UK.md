@@ -1,7 +1,7 @@
 ---
 title: 著作権詐取に対するフェデレーション (ファクト)
 description: Microsoft Azure は、英国の著作権詐取に対するフェデレーションからの認定を得ました。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1a3fe8adac9dae1b2dcbc04430e9d7d3f49bc201
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 378f03c5c579939abed84cfdea436845f37292af
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690680"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859897"
 ---
-# <a name="compliance-offering-federation-against-copyright-theft-fact"></a>コンプライアンスオファリング: 著作権詐取に対するフェデレーション (ファクト)
+# <a name="federation-against-copyright-theft-fact"></a>著作権詐取に対するフェデレーション (ファクト)
 
 ## <a name="fact-overview"></a>ファクトの概要
 
@@ -32,11 +32,11 @@ Microsoft による、ファクト監査に対する自発的な提出に基づ�
 
 Microsoft クラウドでの事実の利点について説明します。[ファクト backgrounder をダウンロードする](https://aka.ms/fact-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 [Azure および Azure Government](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Azure 認定は年ごとに更新されます。 [AZURE ファクト証明書](https://aka.ms/azurefactcert)
 
@@ -57,9 +57,9 @@ Microsoft では、実際には、Microsoft は、独立した評価を実施す
 - [Azure Media Services の CDSA 証明書](https://aka.ms/cdsa-cert)
 - [Azure ISO 27001 認定](https://aka.ms/Azure-BSI-Cert)
 - [MPAA 評価](offering-mpaa.md)
-- [CSA CAIQ v 3.0.1 への Azure の応答](https://aka.ms/csacaiqresponses)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [CSA CAIQ v3.0.1 への Azure の対応](https://aka.ms/csacaiqresponses)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf) をダウンロードします。

@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
-ms.openlocfilehash: d59d167a3e62dcb3d0f0532331902644c6b469dc
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: baf6999923a4c4cf346915800b8f97a0d0378f58
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033858"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871913"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを設定する
 
@@ -37,9 +37,9 @@ ms.locfileid: "38033858"
 
 予想所要時間 : 5 分
 
-この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」の「スパム対策」のエントリを参照してください。
+この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」の「スパム対策」のエントリを参照してください。
 
-以下の手順はリモート PowerShell 経由でも実行することができます。 [Get-HostedOutboundSpamFilterPolicy](https://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) コマンドレットを使用して設定を確認し、[Set-HostedOutboundSpamFilterPolicy](https://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) を使用して送信スパム ポリシー設定を編集します。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
+以下の手順はリモート PowerShell 経由でも実行することができます。 [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) コマンドレットを使用して設定を確認し、[Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) を使用して送信スパム ポリシー設定を編集します。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell に接続する](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
 
 ## <a name="use-the-security-and-compliance-center-scc-to-edit-the-default-outbound-spam-policy"></a>セキュリティ/コンプライアンスセンター (SCC) を使用して既定の送信スパムポリシーを編集する
 

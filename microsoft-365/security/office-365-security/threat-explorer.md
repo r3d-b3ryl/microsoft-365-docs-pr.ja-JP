@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: e3f205a75c30397382b63112df4503f7a1d23582
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 4507155acf3a973484f8228803660abf65167121
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673283"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866369"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -180,7 +180,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
     - セキュリティ管理者 (Azure Active Directory 管理センター[https://aad.portal.azure.com](https://aad.portal.azure.com)で割り当て可能)
     - セキュリティリーダ
 
-- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
     - 組織の管理
     - 表示限定の組織管理
     - "View-Only Recipients/表示専用受信者" 役割

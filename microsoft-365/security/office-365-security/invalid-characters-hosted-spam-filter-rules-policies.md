@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: スパム対策構成に無効な文字が含まれていて、セキュリティ&amp; /コンプライアンスセンターを使用しようとしたときに問題が発生する管理者向けのヘルプを提供します。
-ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 5e6fa97a3f325b6fc6fdc449ba4a61282f67b644
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38039106"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866719"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>スパムフィルタールールおよびスパムフィルターポリシーに無効な文字を使用しない 
 
@@ -37,7 +37,7 @@ ms.locfileid: "38039106"
 
 無効な文字を含むポリシーとルールを特定したら、Windows PowerShell コマンドレットを使用して名前を変更できます。 
 
-1. [リモート PowerShell を使用して Exchange Online に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. [リモート PowerShell を使用して Exchange Online に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)します。
     
 2. スパムフィルターポリシーの名前を変更するには、次のように Set-hostedcontentfilterpolicy コマンドレットを実行します。
     
@@ -56,6 +56,6 @@ ms.locfileid: "38039106"
 
 [セキュリティ&amp; /コンプライアンスセンターでの脅威管理](protect-against-threats.md)
   
-[Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
+[Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)
 
-[Disable-hostedcontentfilterrule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule?view=exchange-ps)
+[Disable-hostedcontentfilterrule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule)

@@ -1,7 +1,7 @@
 ---
 title: 健康保険の携行性と責任 (HIPAA) & のヒット処理機能
 description: Microsoft では、医療保険の携行性 & アカウンタビリティ Act ビジネスアソシエイトアグリーメント (BAAs) を提供しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b603cc6b946f62a8ca6b7cfa5c0dd7faf64dfbe4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690709"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859747"
 ---
-# <a name="compliance-offering-health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>コンプライアンスオファリング: 健康保険の携行性とアカウンタビリティ (HIPAA) & ヒット処理機能
+# <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保険の携行性と責任 (HIPAA) & のヒット処理機能
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>HIPAA とヒット法の概要
 
@@ -48,18 +48,18 @@ Microsoft エンタープライズクラウドサービスは、FedRAMP 評価�
 
 HIPAA と Microsoft Cloud でのエコーの利点について説明します。「 [Zwanger-Pesiri Radiology Customer Story」を参照](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)してください。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Microsoft Health Bot サービス
 - Microsoft Stream
-- Microsoft プロフェッショナルサービス: プレミアおよびオンプレミスの Azure、Dynamics 365、Intune、および中規模の企業およびエンタープライズのお客様向けの Office 365
-- [Dynamics 365 および Dynamics 365 米国政府](https://aka.ms/d365-compliance-list)
-- Microsoft Flow cloud service をスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
+- Microsoft プロフェッショナル サービス: Azure、Dynamics 365、Intune と、Office 365 の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
+- [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Intune
-- [Office 365、Office 365 米国政府機関、および Office 365 米国政府機関の防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps クラウドサービスをスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
+- [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに組み込まれているサービス)
 - Power BI cloud service をスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
 - Azure DevOps Services
 
@@ -81,7 +81,7 @@ Microsoft プロフェッショナルサービスサービスの場合: HIPAA Bu
 
 **Microsoft で BAA があることによって、組織が HIPAA に準拠していることと、エコーが発生することが保証されますか。**
 
-不正解です。 BAA を提供することで、Microsoft は HIPAA コンプライアンスをサポートしていますが、Microsoft サービスを使用しても、それを実現することはできません。 お客様の組織では、適切なコンプライアンスプログラムと内部プロセスが実施されており、Microsoft サービスの特定の使用が HIPAA およびお客様のものと一致していることを確認する責任があります。
+いいえ。 BAA を提供することで、Microsoft は HIPAA コンプライアンスをサポートしていますが、Microsoft サービスを使用しても、それを実現することはできません。 お客様の組織では、適切なコンプライアンスプログラムと内部プロセスが実施されており、Microsoft サービスの特定の使用が HIPAA およびお客様のものと一致していることを確認する責任があります。
 
 **Microsoft は組織の BAA を変更できますか?**
 
@@ -89,7 +89,7 @@ Microsoft サービスはすべてのお客様にとって一貫しており、�
 
 **監査者のレポートのコピーを取得するには、どうすればよいですか。**
 
-[Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.aspx)は、独立して監査されたコンプライアンスレポートを提供します。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft のクラウドサービスの結果を、自分の法律および規制の要件に合わせて比較できるようにすることができます。
+[Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.aspx) では、中立的な監査によるコンプライアンス レポートを提供しています。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft のクラウドサービスの結果を、自分の法律および規制の要件に合わせて比較できるようにすることができます。
 
 **HIPAA およびエコー行為への準拠の詳細については、どうすればわかりますか?**
 
@@ -102,13 +102,13 @@ Microsoft サービスはすべてのお客様にとって一貫しており、�
 ## <a name="resources"></a>リソース
 
 - [Hipaa Omnibus ルール](https://aka.ms/HIPAA-omnibus)(最終規則の変更、hipaa ルールの変更)
-- [Microsoft Common Controls Hub コンプライアンスフレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services の使用条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Azure に関する HIPAA 準拠について](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(2016 年5月19日)
 - [Azure HIPAA 実装のガイダンス](https://aka.ms/azure-hipaa-guide)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf) をダウンロードします。

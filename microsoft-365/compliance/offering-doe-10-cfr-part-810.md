@@ -1,7 +1,7 @@
 ---
 title: US DoE 10 CFR Part 810
 description: 米国 DoE 10 CFR Part 810 の輸出規制要件の対象となるお客様は、Azure Government を使用できます。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1e7f850a06a95f86c2afd5c8bccc77ff5431dda4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690721"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859407"
 ---
-# <a name="compliance-offering-us-doe-10-cfr-part-810"></a>コンプライアンス対応サービス: US DoE 10 CFR Part 810
+# <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR Part 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft および DoE 10 CFR Part 810
 
@@ -31,7 +31,7 @@ FedRAMP は適切な基準を提供しており、Azure 自治体がコアイン
 
 さらに、Azure Government は、Azure クラウドから物理的に分離された米国政府機関のコミュニティクラウドです。 米国政府機関による特定のバックグラウンド審査要件に関する追加の保証を提供します。これには、Azure の運用担当者間で、情報やシステムへのアクセスを制限する特定のコントロールが含まれます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
 - Intune
@@ -48,7 +48,7 @@ FedRAMP は適切な基準を提供しており、Azure 自治体がコアイン
 
 **Azure Government に適用される米国の核となる規制委員会の 10 CFR Part 110 の規制を行いますか?**
 
-不正解です。 [アメリカ弾頭ミサイル規制委員会](https://www.nrc.gov/)(nrc) は、 [10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)の下の核施設と関連する機器および材料の[エクスポートとインポート](https://www.nrc.gov/about-nrc/ip/export-import.html)を規制します。 NRC では、DoE 管轄区の下にあるこれらのアイテムに関連する核技術および支援を規制していません。 そのため、NRC 10 CFR Part 110 の規則は Azure Government には適用されません。
+いいえ。 [アメリカ弾頭ミサイル規制委員会](https://www.nrc.gov/)(nrc) は、 [10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)の下の核施設と関連する機器および材料の[エクスポートとインポート](https://www.nrc.gov/about-nrc/ip/export-import.html)を規制します。 NRC では、DoE 管轄区の下にあるこれらのアイテムに関連する核技術および支援を規制していません。 そのため、NRC 10 CFR Part 110 の規則は Azure Government には適用されません。
 
 **DoE 10 CFR Part 810 に準拠している証拠を提供するにはどうすればよいですか?**
 
@@ -61,11 +61,11 @@ Azure Government にデータを展開するお客様は、独自のセキュリ
 ## <a name="resources"></a>リソース
 
 - [Azure クラウドサービスおよび US 輸出統制](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- [Microsoft および FedRAMP](offering-fedramp.md)
+- [Microsoft と FedRAMP](offering-fedramp.md)
 - [Microsoft および DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft Government クラウド](https://www.microsoft.com/enterprise/government)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf) をダウンロードします。

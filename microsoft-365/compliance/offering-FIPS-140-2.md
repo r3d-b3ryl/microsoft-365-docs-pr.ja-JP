@@ -1,7 +1,7 @@
 ---
 title: 連邦情報処理規格 (FIPS) 文書140-2
 description: Microsoft は、暗号化モジュールが米国連邦情報処理規格に準拠していることを認定しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91dab1a0f064d35e836a921864817e670fd998b5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690679"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859827"
 ---
-# <a name="compliance-offering-federal-information-processing-standard-fips-publication-140-2"></a>コンプライアンスオファリング: 連邦情報処理規格 (FIPS) 文書140-2
+# <a name="federal-information-processing-standard-fips-publication-140-2"></a>連邦情報処理規格 (FIPS) 文書140-2
 
 ## <a name="fips-140-2-standard-overview"></a>FIPS 140-2 標準の概要
 
@@ -32,13 +32,13 @@ Microsoft では、140-2 の要件を満たすための積極的なコミット�
 
 Microsoft Windows 暗号化モジュールの技術情報、各モジュールのセキュリティポリシー、および CMVP 証明書の詳細については、「 [windows および Windows SERVER FIPS 140-2 のコンテンツ](https://aka.ms/AA6ehud)」を参照してください。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 現在の CMVP FIPS 140-2 実装のガイダンスでは、クラウドサービス自体に対する FIPS 140-2 検証は実行されません。クラウドサービスプロバイダーは、クラウドサービスを構成するコンピューティング要素に対して、FIPS 140 で検証された暗号化モジュールを取得して運用することを選択できます。 コンポーネントを含む Microsoft online services (FIPS 140-2 が検証されたもの) には、他にも次のようなものがあります。
 
 - [Azure および Azure Government](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
 - [Dynamics 365 および Dynamics 365 Government](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
-- [Office 365、Office 365 米国政府機関、および Office 365 米国政府機関の防御](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
+- [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -83,8 +83,8 @@ FIPS 140-2 に準拠するには、fips 承認モードで実行するように�
 - [暗号化モジュールの FIPS Pub 140-2 セキュリティ要件](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [NIST 暗号化モジュール検証プログラム](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows、Windows Server、および FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf) をダウンロードします。

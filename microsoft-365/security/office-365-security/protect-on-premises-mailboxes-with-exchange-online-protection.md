@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection を使用して社内メールボックスを保護する
+title: Exchange Online Protection を使用して社内のメールボックスを保護する
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -17,19 +17,19 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: 一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「365 Office 2013 で運用されている管理者ロールの割り当て」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。
-ms.openlocfilehash: 787c01ff7d06943b51916675b9e30dc3f020d5e1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7a9d7c3752e612b8e0bdcce6a0f9bb420c61c249
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086801"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866649"
 ---
-# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Exchange Online Protection を使用して社内メールボックスを保護する
+# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Exchange Online Protection を使用して社内のメールボックスを保護する
 
 > [!NOTE]
 > この記事は、中国で21Vianet が運営する Office 365 にのみ適用されます。 
   
-一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「 [365 office 2013 で運用されている管理者ロールの割り当て](https://support.office.com/article/d58b8089-cbfd-41ec-b64c-9cfcbef495ac)」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。 
+一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「 [365 office 2013 で運用されている管理者ロールの割り当て](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet)」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。 
   
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Microsoft 365 管理センターを使用してドメインを追加して確認する
 
@@ -38,7 +38,7 @@ ms.locfileid: "37086801"
 2.  ポータルの手順に従って、ドメインの所有権を確認するために、該当する dns レコードを DNS ホストプロバイダーに追加します。 
     
 > [!TIP]
-> 「 [21vianet が運用する office 365 にドメインとユーザーを追加](https://support.office.com/article/1cd4839b-d051-46b8-ab9b-bc7752024e78)する」と「 [365 office の Dns レコードを作成](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b)する」を参照してください。 dns レコードを管理するときは、ドメインをサービスに追加して dns を構成する際に参照するのに役立つリソースです。 
+> 「 [21vianet が運用する office 365 にドメインとユーザーを追加](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet)する」と「 [365 office の Dns レコードを作成](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet)する」を参照してください。 dns レコードを管理するときは、ドメインをサービスに追加して dns を構成する際に参照するのに役立つリソースです。 
   
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>手順 2: 受信者を追加してドメインの種類を構成する
 
@@ -54,7 +54,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
   
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>手順 4: 受信ポート 25 SMTP アクセスを許可する
 
-コネクタを構成した後、DNS レコードの更新が伝達されるよう 72 時間待ちます。 次に、ファイアウォールまたはメールサーバー上の受信ポート-25 SMTP トラフィックを制限して、EOP データセンターからのメールのみを受け入れるようにします。具体的には、21Vianet が運用している[Office 365 の url および ip アドレス範囲](https://support.office.com/article/5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0#__exchange_online_protection)に記載されている ip アドレスからのものです。 これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。 また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
+コネクタを構成した後、DNS レコードの更新が伝達されるよう 72 時間待ちます。 次に、ファイアウォールまたはメールサーバーで受信ポート-25 の SMTP トラフィックを制限して、EOP データセンターからのメールのみを受け入れるようにします。具体的には、 [Office 365 の url および ip アドレス範囲](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)に記載されている ip アドレスからのみを受信します。 これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。 また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
   
 > [!TIP]
 > SMTP サーバーの設定を、60 秒で接続タイムアウトが発生するように構成します。この設定はほとんどの状況で使用可能ですが、メッセージをサイズの大きな添付書類とともに送信した場合などに備えて、ある程度の遅延を設けてください。 
@@ -65,7 +65,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
   
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 
-Office 365 ドメイン構成手順に従って、ドメインの MX レコードを更新し、受信メールが EOP 経由で流れるようにします。 詳細については、「DNS レコードを[管理するときに、Office 365 の dns レコードを作成](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b)する」を参照してください。
+Office 365 ドメイン構成手順に従って、ドメインの MX レコードを更新し、受信メールが EOP 経由で流れるようにします。 詳細については、「DNS レコードを[管理するときに、Office 365 の dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
   
 このタスクの検証方法
   

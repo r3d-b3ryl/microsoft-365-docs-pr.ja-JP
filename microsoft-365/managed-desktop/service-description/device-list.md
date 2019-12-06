@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f46f5164340ec257a056a2f31bec8f846bb4a54a
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: f8d5b9321d8aad77ae25dcc7563a9e0db7dfc754
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634054"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859327"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -47,10 +47,11 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
 | [AIO の HP EliteOne 800 G4 23.8](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV、IR カメラまたは指紋リーダが必要な SKU | 2020年6月6日 | 2023年6月6日 |
-| [Surface Book 2](https://www.microsoft.com/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | 15インチディスプレイ | 2019年11月16時 | 2022年11月16時 |
 | [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 44 15Y/8GB RAM | なし | 2020年8月2時 | 2023年8月2時 |
 | [Surface Pc 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | なし | 10月 16 2020 | 10月 16 2023 |
+| **\*[Surface Pc 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB RAM | なし | 2021年10月22日 | 2024年10月22日 |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | なし | 10月 16 2020 | 10月 16 2023 |
+| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB RAM | なし | 2021年10月22日 | 2024年10月22日 |
 
 
 

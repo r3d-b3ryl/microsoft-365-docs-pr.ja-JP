@@ -1,7 +1,7 @@
 ---
 title: ニュージーランド政府機関向けクラウドコンピューティングのセキュリティとプライバシーに関する考慮事項
 description: Microsoft NZ は、ニュージーランドクラウドコンピューティングフレームワークで公開されている質問に対応しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: eb14bbe784685fb79ba09f28bc9ca12216b24d57
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 2722c5df4b96f28a449057abae353350b036a13b
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690733"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859337"
 ---
-# <a name="compliance-offering-new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>コンプライアンスオファリング: ニュージーランド政府機関向けクラウドコンピューティングのセキュリティとプライバシーに関する考慮事項
+# <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>ニュージーランド政府機関向けクラウドコンピューティングのセキュリティとプライバシーに関する考慮事項
 
 ## <a name="new-zealand-government-cloud-computing-security-and-privacy-overview"></a>ニュージーランド政府機関向けクラウドコンピューティングのセキュリティとプライバシーの概要
 
@@ -36,12 +36,12 @@ Microsoft Cloud での NZ CC フレームワークの利点について説明し
 
 Azure セキュリティおよびコンプライアンスブループリントを使用して、NZ による [CC] フレームワークの展開を促進する方法について説明します。 [azure からの応答を nz にダウンロード](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)します。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online、SharePoint Online、Skype for Business Online。 Microsoft NZ は、ホワイトペーパー「 [Office outlook 365: Seemail 統合およびリファレンスアーキテクチャ](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)」で説明されている Exchange Online と seemail を統合するためのリファレンスアーキテクチャを開発するための gcio チームと協力しています。
 
@@ -62,9 +62,9 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - [NZ 政府 ICT 戦略2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [クラウドコンピューティングのための NZ 政府の要件](https://aka.ms/NZ-Cloud-Requirements)
 - [クラウドコンピューティング: 情報のセキュリティとプライバシーに関する考慮事項 (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
-- [Microsoft Online Services の使用条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail 統合と参照アーキテクチャ](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)(クラウドサービス導入に関する Microsoft NZ の追加ガイダンス)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>「クラウドコンピューティング IPSC」への Microsoft の応答
 
@@ -74,6 +74,6 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf) をダウンロードします。

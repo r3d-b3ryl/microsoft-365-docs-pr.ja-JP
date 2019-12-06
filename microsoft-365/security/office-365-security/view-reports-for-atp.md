@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用する方法について説明します。
-ms.openlocfilehash: d5f0958d199684a9d6ca6bfe4ed01c0ab9102a2a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087116"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866409"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -30,8 +30,8 @@ ms.locfileid: "37087116"
   
 ATP レポートには次のものが含まれます。
 - [脅威保護の状態レポート](#threat-protection-status-report)
-- [ATP ファイルタイプレポート](#atp-file-types-report)
-- [ATP メッセージディスポジションレポート](#atp-message-disposition-report)
+- [ATP ファイルの種類レポート](#atp-file-types-report)
+- [ATP メッセージの廃棄レポート](#atp-message-disposition-report)
 - [リアルタイム検出またはエクスプローラー](threat-explorer.md) (OFFICE 365 ATP プラン1または2を使用しているかどうかによって異なります)
 - ...その[他](#additional-reports-to-view)。 
 
@@ -41,7 +41,7 @@ ATP レポートの概要とその使用方法については、この記事を�
 
 **脅威保護の状態**レポートは、悪意のあるコンテンツや悪意のある電子メールに関する情報をまとめた1つのビューで、 [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) および[Office 365 ATP](office-365-atp.md)によって検出されブロックされます。 このレポートは、時間の経過による検出 (最大90日間) を表示するのに役立ち、セキュリティ管理者が傾向を特定したり、ポリシーが調整を必要とするかどうかを判断したりできます。 
 
-脅威保護の状態レポートは、マルウェア対策エンジンによってブロックされたファイルや web サイトアドレス (Url)、[ゼロ時間の自動削除 (ZAP)](zero-hour-auto-purge.md)、ATP 機能など、悪意のあるコンテンツを含む一意の電子メールメッセージの合計数を示します。[Atp の安全なリンク](atp-safe-links.md)、 [atp の安全な添付ファイル](atp-safe-attachments.md)、および[atp のフィッシング対策機能](atp-anti-phishing.md)。 
+脅威保護の状態レポートでは、マルウェア対策エンジンによってブロックされたファイルや web サイトアドレス (Url)、[ゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)、Atp の[安全](atp-safe-links.md)な[添付ファイル](atp-safe-attachments.md)、atp の[フィッシング対策機能](atp-anti-phishing.md)などの atp 機能など、悪意のあるコンテンツを含む一意の電子メールメッセージの集計数が提供されます。 
 
 > [!NOTE]
 > 脅威保護の状態レポートは、 [Office 365 ATP](office-365-atp.md)または[Exchange Online Protection](exchange-online-protection-eop.md) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。 たとえば、ATP のお客様向けの脅威保護状態レポートには、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報が含まれています。 このような情報は ATP に固有のものなので、EOP を持たないお客様は脅威保護の状態レポートにこれらの詳細を表示しません。
@@ -62,19 +62,19 @@ ATP レポートの概要とその使用方法については、この記事を�
   
 ![ATP の脅威保護状態レポートの表示オプション](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
   
-## <a name="atp-file-types-report"></a>ATP ファイルタイプレポート
+## <a name="atp-file-types-report"></a>ATP ファイルの種類レポート
 
 **Atp ファイルの種類**レポートには、 [atp の安全な添付](atp-safe-attachments.md)ファイルによって検出されたファイルの種類が表示されます。
   
 このレポートを表示するには[、 &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \> **ATP**] [ファイルの種類] に移動します。
   
-![ATP ファイルタイプレポート](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
+![ATP ファイルの種類レポート](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
 特定の日の上にカーソルを移動すると、 [Office 365 で&amp; ](anti-spam-and-anti-malware-protection.md)、ATP の安全な[添付](atp-safe-attachments.md)ファイルとスパム対策のマルウェア対策保護によって検出された悪意のあるファイルの種類の分類を確認できます。
   
 ![1日の ATP ファイルタイプレポートデータ](../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
-## <a name="atp-message-disposition-report"></a>ATP メッセージディスポジションレポート
+## <a name="atp-message-disposition-report"></a>ATP メッセージの廃棄レポート
 
 **ATP メッセージディスポジション**レポートには、悪意のあるコンテンツが含まれていることが検出された電子メールメッセージに対して実行されたアクションが表示されます。 
   
@@ -92,11 +92,11 @@ ATP レポートの概要とその使用方法については、この記事を�
 
 |レポート (s)  |詳細  |
 |---------|---------|
-|**エクスプローラー**または**リアルタイム検出**(Office 365 ATP Plan 2 のお客様はエクスプローラーを所有しています。Office 365 ATP Plan 1 お客様はリアルタイムの検出を行っています。| [脅威エクスプローラー (およびリアルタイム検出)](threat-explorer.md)       |
+|**エクスプローラー**または**リアルタイム検出**(Office 365 ATP Plan 2 のお客様はエクスプローラーを所有しています。Office 365 ATP Plan 1 お客様はリアルタイムの検出を行っています。| [脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)       |
 |上位の送信者と受信者のレポート、スプーフィングメールレポート、スパム検出レポートなどの**電子メールセキュリティレポート**。 | [セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](../../compliance/view-email-security-reports.md)        |
-|**ATP の安全なリンクの URL トレース**(これは、PowerShell を使用して生成したレポートです。)このレポートには、過去7日間 (7 日間) の ATP の安全なリンクアクションの結果が表示されます。 |[取得-UrlTrace コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
-|**EOP および ATP の結果**(これは、PowerShell を使用して生成するカスタムレポートです)。 このレポートには、ドメイン、日付、イベントの種類、方向、アクション、メッセージ数などの情報が含まれます。  | [Get-mailtrafficatpreport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
-|**EOP および ATP の検出**(これは、PowerShell を使用して生成するカスタムレポートです)。 このレポートには、悪意のあるファイルまたは Url、フィッシングの試行、偽装、その他の電子メールやファイルの潜在的な脅威に関する詳細が記載されています。   | [Get-MailDetailATPReport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+|**ATP の安全なリンク URL トレース**(PowerShell を使用して生成したレポート)このレポートには、過去7日間 (7 日間) の ATP の安全なリンクアクションの結果が表示されます。 |[取得-UrlTrace コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace) |
+|**EOP および ATP の結果**(PowerShell を使用して生成するカスタムレポート)。 このレポートには、ドメイン、日付、イベントの種類、方向、アクション、メッセージ数などの情報が含まれます。  | [Get-mailtrafficatpreport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport) |
+|**EOP および ATP の検出**(PowerShell を使用して生成するカスタムレポート)。 このレポートには、悪意のあるファイルまたは Url、フィッシングの試行、偽装、その他の電子メールやファイルの潜在的な脅威に関する詳細が記載されています。   | [Get-MailDetailATPReport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)        |
 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP レポートを表示するには、どのようなアクセス許可が必要ですか。
@@ -108,13 +108,13 @@ ATP レポートの概要とその使用方法については、この記事を�
     - セキュリティ管理者 (Azure Active Directory 管理センター[https://aad.portal.azure.com](https://aad.portal.azure.com)で割り当て可能)
     - セキュリティリーダ
 
-- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
     - 組織の管理
     - 表示限定の組織管理
     - "View-Only Recipients/表示専用受信者" 役割
     - コンプライアンス管理
 
-詳細については、以下のリソースを参照してください。
+詳細については、次のリソースを参照してください。
 
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 

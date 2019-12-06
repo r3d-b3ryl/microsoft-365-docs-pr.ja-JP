@@ -1,7 +1,7 @@
 ---
 title: エレクトロニクスおよび情報技術の官庁 (MeitY)
 description: Microsoft では、インドの電子機器技術および情報技術の官庁による完全な認定が行われました。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 34e20578d09079031d4a41bafdf199d055ced09a
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690699"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859577"
 ---
-# <a name="compliance-offering-ministry-of-electronics-and-information-technology-meity"></a>コンプライアンスオファリング: エレクトロニクスおよび情報技術の官庁 (MeitY
+# <a name="ministry-of-electronics-and-information-technology-meity"></a>エレクトロニクスおよび情報技術の官庁 (MeitY)
 
 ## <a name="meity-overview"></a>MeitY 概要
 
@@ -38,12 +38,12 @@ Meity、クラウドサービスプロバイダーの認定 (「empanelment」�
 
 Microsoft の MeitY 認定は、評価フレームワークを使用して品質保証サービスを提供する政府機関である、標準化テストおよび Quality サーティフィケーション (STQC) の Directorate によって行われた厳格な監査の結果でした。MeghRaj Cloud イニシアチブの作業に基づいています。 Microsoft Azure を使用すると、公的機関の組織は、サービスとしてのインフラストラクチャ (IaaS)、サービスとしてのプラットフォーム (PaaS)、障害復旧、DevOps、管理されたバックアップなど、幅広い展開モデルとサービスの提供を行うことができます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 - [クラウドサービスプロバイダーの監査状態での](https://meity.gov.in/content/gi-cloud-meghraj)Microsoft Cloud 認定
 
@@ -58,8 +58,8 @@ Microsoft の MeitY 認定は、評価フレームワークを使用して品質
 - [エレクトロニクスおよび情報技術の官庁](https://meity.gov.in/)
 - [MeghRaj Cloud イニシアチブ](https://meity.gov.in/content/gi-cloud-meghraj)
 - [認定クラウドサービスプロバイダー](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf) をダウンロードします。

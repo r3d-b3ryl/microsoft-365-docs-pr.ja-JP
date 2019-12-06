@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 437029198d48ef8b2d9d91466108fbef989486c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813877"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859287"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
@@ -34,6 +34,7 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 | モデル  | 最小仕様  | 追加要件   | 定年後の日付 |
 |---------|---------|---------|---------|
 | HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年2月15日** |
+|Surface Book 2| 256 GB/Intel i5/8 GB RAM | なし | **2022年11月16日** |
 |Surface のノートブック| 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |
 |Surface Pro| 256 GB/Intel i5/8 GB RAM | なし | **2022年6月15日** |
 

@@ -1,7 +1,7 @@
 ---
 title: NIST SP 800 –171
 description: Microsoft クラウドサービスは NIST SP 800 に準拠しています。連邦情報システムで制御されていない未分類情報 (CUI) を保護するための171ガイドラインです。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8924905e83d1911dc30a420319d61940b75bfe05
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690736"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859347"
 ---
-# <a name="compliance-offering-nist-sp-800171"></a>コンプライアンスオファリング: NIST SP 800 –171
+# <a name="nist-sp-800171"></a>NIST SP 800 –171
 
 ## <a name="about-nist-sp-800171"></a>NIST SP 800 –171について
 
@@ -39,14 +39,14 @@ NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が
 
 米国政府機関を処理または保存するエンティティ (研究機関、コンサルティング会社、製造請負業者) は、NIST SP 800 –171の厳格な要件に準拠している必要があります。 この構成証明とは、microsoft が完全に準拠していることを保証するために CUI ワークロードの展開を検討しているお客様に対して、Microsoft のスコープを持つクラウドサービスが可能になります。 たとえば、情報システムの Microsoft クラウドサービスをスコープ内で使用することによって、「対象となる防衛情報」を処理、保存、または送信するすべての DoD 請負業者は、セキュリティに準拠する必要がある米国国防総省の各主要な条項を満たしています。NIST SP 800 –171の要件。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365 米国政府](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 米国政府機関向けコミュニティクラウド (GCC)、Office 365 GCC 高、DoD](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 - [NIST SP 800 –171に準拠した Azure Government の構成証明](https://aka.ms/Azure-NIST-800-171)
 
@@ -58,7 +58,7 @@ NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が
 
 **NIST SP 800 –171を使用して、組織の Microsoft コンプライアンスを使用できますか?**
 
-正解です。 Microsoft のお客様は、独自の FedRAMP の一部としての、独立したサードパーティの評価組織 (3PAO) からのレポートで説明されている監査された統制を使用できます。 これらのレポートは、Microsoft がスコープ内のクラウドサービスで実装した統制の有効性を証明します。 お客様は、CUI ワークロードが NIST SP 800 –171ガイドラインに準拠していることを確認する責任があります。
+はい。 Microsoft のお客様は、独自の FedRAMP の一部としての、独立したサードパーティの評価組織 (3PAO) からのレポートで説明されている監査された統制を使用できます。 これらのレポートは、Microsoft がスコープ内のクラウドサービスで実装した統制の有効性を証明します。 お客様は、CUI ワークロードが NIST SP 800 –171ガイドラインに準拠していることを確認する責任があります。
 
 ## <a name="resources"></a>リソース
 
@@ -68,8 +68,8 @@ NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が
 - [NIST 800-171 3.3 監査およびアカウンタビリティ (Office 365 GCC 高)](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft および NIST Cybersecurity Framework](offering-nist-csf.md)
 - [Microsoft Government クラウド](https://www.microsoft.com/enterprise/government)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf )をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ) をダウンロードします。

@@ -14,18 +14,18 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: これらの記事は、外部の送信者が自身の評価や Office 365 のユーザーにメールを送信する能力を高めるために役立ちます。また、Office 365 ユーザーでない場合であっても、迷惑メールとフィッシング行為を報告する方法に関する情報も提供します。
-ms.openlocfilehash: 335118eb49a078b79ae36f4813c530fe15643bae
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: da19605f97c906fae158bb8299339ffb82755faf
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032082"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872033"
 ---
 # <a name="sending-mail-to-office-365"></a>Office 365 へのメール送信
 
 これらの記事は、外部の送信者が自身の評価や Office 365 のユーザーにメールを送信する能力を高めるために役立ちます。また、Office 365 ユーザーでない場合であっても、迷惑メールとフィッシング行為を報告する方法に関する情報も提供します。
 
-Office 365 を利用していないが、Office 365 内のユーザーにメールを送信しようとする場合、この記事の情報は役立ちます。 Office 365 の管理者であり、スパムへの対処に関してサポートが必要な場合は、このセクションの情報は当てはまりません。 代わりに、[Anti-spam and anti-malware protection](https://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) をご覧ください。
+Office 365 を利用していないが、Office 365 内のユーザーにメールを送信しようとする場合、この記事の情報は役立ちます。 Office 365 の管理者であり、スパムへの対処に関してサポートが必要な場合は、このセクションの情報は当てはまりません。 代わりに、 [Office 365 でスパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)に移動します。
 
 |**以下についての関連情報...**|**参照...**|
 |:-----|:-----|

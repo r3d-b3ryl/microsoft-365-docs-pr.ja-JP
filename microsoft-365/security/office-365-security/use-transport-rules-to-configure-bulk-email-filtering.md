@@ -13,16 +13,16 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でのメールフロールールをバルクメールフィルターに使用する方法について説明します。
-ms.openlocfilehash: 557a12455284519cc224cbee5e40a564aa3d4f14
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 4f53ee482567a3c76acb4ee8ca0ffb10f6f8cca0
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441151"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866749"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 
-既定のスパム コンテンツ フィルター ポリシーを使用して、スパムやバルク メールに対して会社全体のコンテンツ フィルターを設定することができます。コンテンツ フィルター ポリシーを設定する方法については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」と「[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps)」を確認してください。
+既定のスパム コンテンツ フィルター ポリシーを使用して、スパムやバルク メールに対して会社全体のコンテンツ フィルターを設定することができます。コンテンツ フィルター ポリシーを設定する方法については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」と「[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy)」を確認してください。
 
 バルクメッセージをフィルター処理するためのその他のオプションが必要な場合は、メールフロールール (トランスポートルールとも呼ばれます) を作成して、バルクメールでよく見られるテキストパターンや語句を検索することができます。 それらの特徴を持つメッセージは、すべてスパムとしてマーク付けされます。 このルールを使用すれば、組織で受信する不要なバルク メールの量を減らすことができます。
 

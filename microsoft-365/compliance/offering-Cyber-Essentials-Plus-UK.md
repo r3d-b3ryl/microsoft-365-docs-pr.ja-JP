@@ -1,7 +1,7 @@
 ---
 title: 英国サイバーの Essentials PLUS
 description: サイバーエッセンシャル PLUS は、組織が一般的なサイバーセキュリティ脅威から保護することを支援する英国政府定義スキームです。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f30ec3181a90f259d6cafd9a3548d7a1ad5852
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 795a8b94c53aa94731d6c55786312b1baef6a685
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690692"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859987"
 ---
-# <a name="compliance-offering-united-kingdom-cyber-essentials-plus"></a>コンプライアンスオファリング: 英国サイバーのエッセンシャルプラス
+# <a name="united-kingdom-cyber-essentials-plus"></a>英国サイバーの Essentials PLUS
 
 ## <a name="uk-cyber-essentials-plus-overview"></a>UK サイバーエッセンシャルと概要
 
@@ -39,7 +39,7 @@ Microsoft Azure は、サイバーエッセンシャルとバッジを持って�
 
 Azure のグローバルな操作に適用される[Azure サイバー ESSENTIALS PLUS 証明書](https://aka.ms/AzureCyberEPlusCert)は、ダウンロードできます。
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 - [Azure サイバー Essentials PLUS コンプライアンスレポート](https://aka.ms/AzureCyberEPlusReport)
 - [Azure サイバーエッセンシャルおよび認定](https://aka.ms/AzureCyberEPlusCert)
@@ -47,8 +47,8 @@ Azure のグローバルな操作に適用される[Azure サイバー ESSENTIAL
 ## <a name="resources"></a>リソース
 
 - [サイバー Essentials スキーム: 保証フレームワーク](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf) をダウンロードします。

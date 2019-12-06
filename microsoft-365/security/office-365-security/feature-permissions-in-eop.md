@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Microsoft Exchange Online Protection (EOP) を管理するタスクを実行するために必要なアクセス許可は、管理している機能に応じて異なります。
-ms.openlocfilehash: e3b41ea2b58397a9af2a1cb8ba979b5f816b416b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031912"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871853"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP の機能アクセス許可
 
@@ -29,15 +29,15 @@ EOP 機能を管理するために必要なアクセス許可は、次の表で�
 
 |**機能**|**必要なアクセス許可**|
 |:-----|:-----|
-|マルウェア対策|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [検疫管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|スパム対策|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [検疫管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|メール フロー ルール|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Records Management](https://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx)|
-|ドメイン|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|Advanced Threat Protection (ATP)|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [検疫管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Office 365 コネクタ|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|メッセージ トレース|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|組織の構成|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|検疫|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|ユーザー、連絡先、および役割グループ|[組織の管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|配布グループとセキュリティ グループ|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|レポートの表示|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)- ユーザーはメールボックス保護レポートにアクセスできます。  <br/> [View-Only Recipients](https://technet.microsoft.com/library/37e66b92-81d3-412f-b7a9-e1bb8cbeb468.aspx)- ユーザーはメールボックス保護レポートにアクセスできます。  <br/> [Compliance Management](https://technet.microsoft.com/library/b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15.aspx) - ユーザーはメール保護レポートおよびデータ損失防止 (DLP) レポート (サブスクリプションに DLP 機能が含まれている場合) にアクセスできます。|
+|マルウェア対策|組織の管理 <br/><br/> 検疫管理|
+|スパム対策|組織の管理 <br/><br/> 検疫管理|
+|メール フロー ルール|組織の管理 <br/><br/> レコード管理|
+|ドメイン|組織の管理 <br/><br/> 表示専用組織の管理|
+|Advanced Threat Protection (ATP)|組織の管理 <br/><br/> 検疫管理|
+|Office 365 コネクタ|組織の管理|
+|メッセージ追跡|組織の管理 <br/><br/> 表示専用組織の管理|
+|組織の構成|組織の管理|
+|Quarantine|組織の管理 <br/><br/> 表示専用組織の管理 <br/><br/> 検疫管理|
+|ユーザー、連絡先、および役割グループ|組織の管理 <br/><br/> 表示専用組織の管理 <br/><br/> 検疫管理|
+|配布グループとセキュリティ グループ|組織の管理 <br/><br/> 表示専用組織の管理 <br/><br/> 検疫管理|
+|レポートの表示|組織の管理: メール保護レポートへのアクセス。 <br/><br/> 表示専用受信者: メール保護レポートへのアクセス。  <br/><br/> コンプライアンス管理: メール保護レポートおよびデータ損失防止 (DLP) レポートへのアクセス (サブスクリプションに DLP 機能が含まれている場合)。|

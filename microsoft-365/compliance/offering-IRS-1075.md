@@ -1,7 +1,7 @@
 ---
 title: 米内部収益サービス発行1075
 description: Microsoft では、microsoft の内部収益サービス文書1075の要件を満たすコントロールをご利用いただけます。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91d2d00b951252d8c8a1c9d8d405ff6c5fd888e2
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 30509260e83f1aaa59c57365357e18a3f12097c4
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690704"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859727"
 ---
-# <a name="compliance-offering-us-internal-revenue-service-publication-1075"></a>コンプライアンスオファリング: 米内部収益サービス発行1075
+# <a name="us-internal-revenue-service-publication-1075"></a>米内部収益サービス発行1075
 
 ## <a name="us-internal-revenue-service-publication-1075-overview"></a>米内部収益サービス文書1075の概要
 
@@ -42,17 +42,17 @@ Microsoft Azure Government および[Microsoft Office 365 米国政府](https://
 
 Microsoft クラウドでの IRS 1075 の利点について説明します。 [irs 1075 backgrounder をダウンロードする](https://aka.ms/irs1075-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 FedRAMP 承認は、NIST ガイドライン (低、中、高) に基づく3つの影響レベルで付与されます。 これらのランクは、機密、完全性、または可用性の損失が組織に及ぼす影響 (低 (制限)、中程度 (重大な悪影響)、高 (重大または致命的) によって変化します。
 
 - [Azure および Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Dynamics 365 米国政府
-- [Office 365 および Office 365 米国政府機関](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Office 365 米国政府機関による防衛
-- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+- [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 米国防総省
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 IRS 1075 の実質的な要件への準拠については、毎年、FedRAMP audit の下に記載されています。
 
@@ -73,16 +73,16 @@ Microsoft は、セキュリティ、プライバシー、運用の各コント�
 
 **Azure または Office 365 のパブリッククラウド環境を使用できますが、IRS 1075 に準拠しているかどうか。**
 
-不正解です。 FTI が保存および処理できる唯一の環境は、Azure Government または Office 365 米国政府です。 政府機関のお客様は、これらの環境を使用するための資格要件を満たす必要があります。
+いいえ。 FTI が保存および処理できる唯一の環境は、Azure Government または Office 365 米国政府です。 政府機関のお客様は、これらの環境を使用するための資格要件を満たす必要があります。
 
 ## <a name="resources"></a>リソース
 
 - [IRS 文書1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [IRS の保護プログラム](https://www.irs.gov/uac/Safeguards-Program)
-- [Microsoft Common Controls Hub コンプライアンスフレームワーク](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf) をダウンロードします。

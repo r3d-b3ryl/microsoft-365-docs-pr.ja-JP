@@ -1,7 +1,7 @@
 ---
 title: 商品計画取引委員会 (CFTC) ルール 1.31 (c-d) 米国
 description: 独立した評価会社では、Azure と Office 365 が、金融企業が CFTC ルール1.31 レコードの保持と不変のストレージ要件を満たすことができることを検証しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 72b5f8301dd32ed9188f52153498853720d883c1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: db357418b87e98ee0f649e48b1c00f9073d5e5de
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690696"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860067"
 ---
-# <a name="compliance-offering-commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>コンプライアンスオファリング: 商品計画取引委員会 (CFTC) ルール 1.31 (c-d) 米国
+# <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品計画取引委員会 (CFTC) ルール 1.31 (c-d) 米国
 
 ## <a name="about-cftc-rule-13c-d"></a>CFTC ルール 1.3 (c-d) について
 
@@ -42,12 +42,12 @@ CFTC Rule 1.31 (c-d) に対する Office 365 のコンプライアンスを評�
 
 Office 365 のアーカイブは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役に立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 [Azure & CFTC Rule 1.31-SEC 17a-4-4 (f) & Azure ストレージの CFTC 1.31 (c-d) コンプライアンス評価
 
@@ -56,19 +56,19 @@ Office 365 のアーカイブは、電子メール、ボイスメール、共有
 ## <a name="how-to-implement"></a>実装方法
 
 - [金融サービスの規制](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): クラウドコンピューティングおよび Microsoft online services の主要な US 規制原則のコンプライアンスマップ。
-- [リスク評価 & コンプライアンスガイド](https://aka.ms/RiskGovernanceGuide): Microsoft クラウドサービスおよびレギュレータの通知のリスク評価のためのガバナンスモデルを作成します。
-- [財務的な使用例](https://docs.microsoft.com/azure/industry/financial/): サポート案件の概要、チュートリアル、その他のリソースを使用して、金融サービスの Azure ソリューションを構築します。
+- [リスク評価およびコンプライアンス ガイド](https://aka.ms/RiskGovernanceGuide): Microsoft クラウド サービスのリスク評価および規制機関の通知のガバナンス モデルを作成します。
+- [金融ユース ケース](https://docs.microsoft.com/azure/industry/financial/): 金融サービス向けの Azure ソリューションを構築するためのユース ケースの概要、チュートリアル、およびその他のリソース。
 
 ## <a name="resources"></a>リソース
 
-- [Microsoft 金融サービスコンプライアンスプログラム](https://aka.ms/FSCP-Print)
-- [Microsoft business cloud services および金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Azure での金融サービスコンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Azure 金融サービス Cloud リスク評価ツール](https://aka.ms/FFIEC-CSDT)
+- [Microsoft 金融サービス コンプライアンス プログラム](https://aka.ms/FSCP-Print)
+- [Microsoft 法人向けクラウド サービスおよび金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Office 365 のアイテム保持ポリシー](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融サービスのブログ](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf) をダウンロードします。

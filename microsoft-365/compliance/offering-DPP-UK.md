@@ -1,7 +1,7 @@
 ---
 title: デジタル生産パートナーシップ (DPP) 英国
 description: Microsoft Azure では、DPP がブロードキャスト用にセキュリティマークを付けてコミットされています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ac12047420e29a0c096dffac884ab584a38fad9b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690678"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859967"
 ---
-# <a name="compliance-offering-digital-production-partnership-dpp-united-kingdom"></a>コンプライアンスオファリング: デジタル生産パートナーシップ (DPP) 英国
+# <a name="digital-production-partnership-dpp-united-kingdom"></a>デジタル生産パートナーシップ (DPP) 英国
 
 ## <a name="about-the-dpp"></a>DPP について
 
@@ -32,11 +32,11 @@ Microsoft Azure では、デジタル生産パートナーシップ (DPP) 自己
   
 そのため、Microsoft Azure を使用している放送およびその他のメディアのお客様は、堅牢なセキュリティと復元性の高いサービスが、プログラム開発から送信までの、ブロードキャスト業界の固有の要求を満たすことができるという自信を持つことができます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Azure ブロードキャストマークは1年間有効であり、毎年更新されます。
 
@@ -52,8 +52,8 @@ Azure ブロードキャストマークは1年間有効であり、毎年更新�
 
 - [DPP がセキュリティプログラムによってコミットされたブロードキャストチェックリストのユーザーガイド](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [サプライヤーのサイバーセキュリティ要件を促進するための NABA と DPP の共に使用する統合](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf) をダウンロードします。

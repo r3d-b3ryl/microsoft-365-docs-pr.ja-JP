@@ -1,7 +1,7 @@
 ---
 title: オーストラリア Prudential 規制機関 (APRA)
 description: 金融サービスクライアントがオーストラリア Prudential 規制機関のアウトソーシング標準に準拠するために役立つ Microsoft ガイダンス。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: dbbe64b20578860d3635876ec9fb1bd3c523c9b1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 8d6314b7a2adf3f677c8343ddece9cb27bff073e
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690672"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859247"
 ---
-# <a name="compliance-offering-australian-prudential-regulation-authority-apra"></a>コンプライアンスオファリング: オーストラリア Prudential の規制機関 (APRA)
+# <a name="australian-prudential-regulation-authority-apra"></a>オーストラリア Prudential 規制機関 (APRA)
 
 ## <a name="apra-overview"></a>APRA の概要
 
@@ -48,7 +48,7 @@ APRA の規制に準拠して、データとワークロードを Azure に移�
 
 APRA の規制に準拠して、データとワークロードを Azure に移行するための実践的なサポートを得る:[オーストラリアの金融機関のコンプライアンスチェックリストをダウンロードする](https://aka.ms/microsoftaprachecklistjun17)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -58,13 +58,13 @@ APRA の規制に準拠して、データとワークロードを Azure に移�
 
 **金融機関は、営業活動をアウトソーシングする前に、APRA の承認を必要としていますか?**
 
-不正解です。 ただし、規制されている財務組織のほとんどは、オーストラリア内の重要な業務活動をアウトソーシングするために契約に入る後、APRA に通知する必要があります。
+いいえ。 ただし、規制されている財務組織のほとんどは、オーストラリア内の重要な業務活動をアウトソーシングするために契約に入る後、APRA に通知する必要があります。
 
 また、クラウドサービスが「APRA [information paper](https://go.microsoft.com/fwlink/p/?linkid=2099080)」で説明されているように「高度な内在リスク」を受けていると見なされた場合は、オーストラリアの内外でサービスが提供されているかどうかにかかわらず、APRA を参照するために金融機関に推奨されます (ただし必須ではありません)。
 
 **オーストラリア外のデータの転送は許可されていますか?**
 
-正解です。 一般的なプライバシーに関する法律 (金融機関だけでなく、すべてのセクターに適用されます) では、特定の条件下でオーストラリア外での転送が許可されます。 Microsoft は、Microsoft クラウドサービスを使用するときにオーストラリア外のデータの転送が許可されるように、オーストラリアのプライバシー原則に基づいて用語を契約することに同意します。 しかし、オーストラリアの金融サービスを利用しているお客様の多くは、オーストラリアの地域で利用できるクラウドサービスを活用しています。これにより、rest に関するデータのカテゴリをオーストラリアの地域に格納するために、特定の契約上のコミットメントを得ることができます。 これらについては、[コンプライアンスチェックリスト](https://aka.ms/microsoftaprachecklistjun17)でさらに詳しく説明されています。
+はい。 一般的なプライバシーに関する法律 (金融機関だけでなく、すべてのセクターに適用されます) では、特定の条件下でオーストラリア外での転送が許可されます。 Microsoft は、Microsoft クラウドサービスを使用するときにオーストラリア外のデータの転送が許可されるように、オーストラリアのプライバシー原則に基づいて用語を契約することに同意します。 しかし、オーストラリアの金融サービスを利用しているお客様の多くは、オーストラリアの地域で利用できるクラウドサービスを活用しています。これにより、rest に関するデータのカテゴリをオーストラリアの地域に格納するために、特定の契約上のコミットメントを得ることができます。 これらについては、[コンプライアンスチェックリスト](https://aka.ms/microsoftaprachecklistjun17)でさらに詳しく説明されています。
 
 ## <a name="resources"></a>リソース
 
@@ -74,11 +74,11 @@ APRA の規制に準拠して、データとワークロードを Azure に移�
 - [クラウド上の APRA 情報用紙に対する Microsoft の応答](https://aka.ms/navigatecloudaustralia)
 - [クラウドへの移動: オーストラリアの金融機関のコンプライアンスチェックリスト](https://aka.ms/microsoftaprachecklistjun17)
 - [Microsoft オーストラリア: 金融サービスでのクラウド](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
-- [Microsoft 金融サービスコンプライアンスプログラム](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Azure での金融サービスコンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft business cloud services および金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融サービス コンプライアンス プログラム](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft 法人向けクラウド サービスおよび金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf) をダウンロードします。

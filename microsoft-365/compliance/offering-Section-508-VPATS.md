@@ -1,7 +1,7 @@
 ---
 title: 米国セクション508
 description: Microsoft では、これらのサービスのユーザー補助機能について説明する多くのクラウドサービスについて、詳細なアクセシビリティ準拠レポートを提供しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 86973d36149a938507c93938b9d97a99761ece8b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 044e92561c86829477339dbd6db2a5fde2da87bb
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690724"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859467"
 ---
-# <a name="compliance-offering-us-section-508"></a>コンプライアンスオファリング: 米国セクション508
+# <a name="us-section-508"></a>米国セクション508
 
 ## <a name="about-us-section-508"></a>米国セクション508について
 
@@ -30,28 +30,28 @@ ms.locfileid: "38690724"
 
 米国の米国のセクションに準拠していること。508の規制は、すべてのお客様がテクノロジとデータにアクセスできるようにするための取り組みを示しています。 米国セクション508は、EN 301 549 (ヨーロッパ) と WCAG (国際) を補完する米国固有のアクセシビリティ要件です。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
-- Dynamics 365 および Dynamics 365 米国政府
+- Dynamics 365、Dynamics 365 米国政府
 - Intune
-- [Office 365 および Office 365 米国政府機関](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- [Office 365 米国政府機関による防衛](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Windows Server 2016
 
-## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft アクセシビリティ準拠レポート
+## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft アクセシビリティ適合レポート
 
-すべての製品とサービスに関する[適合性レポート](https://go.microsoft.com/fwlink/p/?linkid=2050974)を検索します。
+すべての製品およびサービスの[適合レポート](https://go.microsoft.com/fwlink/p/?linkid=2050974) を検索します。
 
 ## <a name="resources"></a>リソース
 
 - [Microsoft アクセシビリティページ](https://go.microsoft.com/fwlink/p/?linkid=2051579): すべてのユーザーがより多くのことを達成できるようにする方法について説明します。
-- [Office 365 アクセシビリティセンター](https://go.microsoft.com/fwlink/p/?linkid=2051801): 障碍のある方のための office 365 リソース。
-- [Enterprise 障碍アンサーデスク](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品とサービス、コンプライアンスに関するアクセシビリティに関する質問を含む、企業のお客様向けの専用サポート。
+- [Office 365 アクセシビリティ センター](https://go.microsoft.com/fwlink/p/?linkid=2051801): 障碍のある方のための Office 365 のリソースです。
+- [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
 - [DHS 信頼テスタープログラム](https://go.microsoft.com/fwlink/?linkid=2052171): Microsoft が参加する米国国土安全保障 (DHS) 信頼されたテスタープログラムに関する情報を取得します。
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf) をダウンロードします。

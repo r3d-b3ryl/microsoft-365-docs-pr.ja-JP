@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 安全なリンクを使用して、フィッシングやその他の攻撃から組織を保護します。'
-ms.openlocfilehash: 9c429b51a471f570a5039054f8906c5d56e54218
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 2418704c7d3d1eced0194418e98f9833cf2f962b
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034268"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865907"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP の安全なリンク
 
@@ -66,7 +66,7 @@ ATP の安全なリンクポリシーが確立されると、Office 365 のグ�
 |---------|---------|
 |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。         |
 |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照してください) |
+|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>ATP の安全なリンク保護が適切であることを確認する方法
 

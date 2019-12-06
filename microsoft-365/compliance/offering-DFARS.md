@@ -1,7 +1,7 @@
 ---
 title: 連邦政府機関買収規制補足 (DFARS dfars)
 description: Microsoft Azure Government は、連邦取得の防御法 (DFARS dfars) の要件をサポートしています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: de25c210fb5b361cf9bba1d7efe15e27d386e200
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690684"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859977"
 ---
-# <a name="compliance-offering-defense-federal-acquisition-regulation-supplement-dfars"></a>コンプライアンスオファリング: 防衛機関買収規制補足 (DFARS dfars)
+# <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>連邦政府機関買収規制補足 (DFARS dfars)
 
 ## <a name="dfars-overview"></a>DFARS 概要
 
@@ -32,18 +32,18 @@ Microsoft Government Cloud services では、米国国防総省の基本およ�
   
 Azure セキュリティおよびコンプライアンスブループリントを使用して、DFARS 迅速に展開する方法について説明します。「 [azure をダウンロードする」: 「青写真のお客様の責任マトリックス](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 DoD 影響レベル5の対象となるサービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 米国政府機関および Office 365 米国政府機関の防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 - [Microsoft クラウドサービスの承認](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Azure P-ATO レター (2017 年3月3日)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
-- [その他の監査レポートを参照してください。](https://aka.ms/auditreports)
+- [その他の監査レポートを見る](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -78,4 +78,4 @@ CDI は、制御された技術情報またはその他の情報 (CUI レジス�
 - [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [制御されていない未分類の情報 (CUI)](https://www.archives.gov/cui/registry/category-list)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

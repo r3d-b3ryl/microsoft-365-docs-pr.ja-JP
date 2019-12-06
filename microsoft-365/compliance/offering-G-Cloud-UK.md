@@ -1,7 +1,7 @@
 ---
 title: 英国政府-クラウド (G-クラウド)
 description: クラウン商用サービスは、Microsoft クラウドサービスの分類を米国政府機関に更新します。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a79b56bc5f6150439cd945f99b53a69b34a04a45
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 525ea4c129e351b157463efdf02280a1f55797ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690714"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859787"
 ---
-# <a name="compliance-offering-united-kingdom-government-cloud-g-cloud"></a>コンプライアンスオファリング: 英国政府-クラウド (G-クラウド)
+# <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-クラウド (G-クラウド)
 
 ## <a name="uk-g-cloud-overview"></a>英国 G-クラウドの概要
 
@@ -38,18 +38,18 @@ Microsoft クラウドの英国 G-クラウド v6 の利点の詳細について
 
 Azure セキュリティおよびコンプライアンスブループリントを使用して、英国 G-クラウド v6 の展開を促進する方法について説明します。 [Azure ブループリントの UK g-クラウドプリンシパル実装ガイダンスをダウンロード](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)する
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow cloud service をスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
+- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Office 365: Exchange Online、SharePoint Online、Skype for Business Online
-- PowerApps クラウドサービスをスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
-- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Microsoft cloud services が G-Cloud agreement に準拠していることを確認するために、GDS accreditor は任意のタイミングで証拠を確認できます。
 
@@ -102,7 +102,7 @@ UK データセンターに加えて、Microsoft クラウドサービスには�
 
 **監査者のレポートのコピーを取得するには、どうすればよいですか。**
 
-[Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)は、独立して監査されたコンプライアンスレポートを提供します。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft の結果と法的および規制要件を比較できるようにすることができます。
+[Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) では、中立的な監査によるコンプライアンス レポートを提供しています。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft の結果と法的および規制要件を比較できるようにすることができます。
 
 ## <a name="resources"></a>リソース
 
@@ -111,8 +111,8 @@ UK データセンターに加えて、Microsoft クラウドサービスには�
 - [G-クラウドセキュリティの原則](https://aka.ms/UK-G-Cloud)
 - [デジタルマーケットプレース](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf) をダウンロードします。

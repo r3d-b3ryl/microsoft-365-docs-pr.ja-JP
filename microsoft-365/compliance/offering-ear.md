@@ -1,7 +1,7 @@
 ---
 title: US 輸出管理の規制 (EAR)
 description: Microsoft クラウドサービスは、お客様が米輸出管理規則 (EAR) に準拠したコンプライアンス要件を満たし、輸出規制リスクを管理する手助けをしています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 283b6a45807547f9a8d0521cf2c6793a2a15c4d6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690722"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859397"
 ---
-# <a name="compliance-offering-us-export-administration-regulations-ear"></a>コンプライアンスオファリング: US Export Administration の規制 (EAR)
+# <a name="us-export-administration-regulations-ear"></a>US 輸出管理の規制 (EAR)
 
 ## <a name="about-the-ear"></a>イヤーについて
 
@@ -46,7 +46,7 @@ Microsoft のテクノロジ、製品、およびサービスは、輸出管理�
 - **エンドツーエンドの暗号化**。 耳で指定された物理的な格納場所に対してエンドツーエンドの暗号化セーフハーバーを利用することにより、Microsoft のスコープ内のクラウドサービスは、輸出管理のリスクに対する保護に役立つ暗号化機能を提供します。 また、転送中および保存中の[データを暗号化するためのさまざまなオプション](https://aka.ms/Azure-Encryption-Overview)をお客様に提供します。また、暗号化オプションの中から柔軟に選択できます。
 - **許可されていないエクスポートを防止するためのツールとプロトコル**。 また、暗号化を使用すると、非 US のユーザーが暗号化されたデータにアクセスしている場合でも、暗号化されたデータを読み取ることができない場合や、データを認識していない場合でも、データの読み取りまたは認識ができない場合には何も表示されません。したがって、制御されたデータの "リリース" はありません。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 Government (GCC-高および DoD)](https://aka.ms/Office-365-Export-Controls)
@@ -88,4 +88,4 @@ Microsoft のテクノロジ、製品、およびサービスは、輸出管理�
 - [暗号化に対するエクスポートの制限](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft および FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft および ITAR](offering-itar.md)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

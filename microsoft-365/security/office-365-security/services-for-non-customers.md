@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
-ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f98044b65b49bd9594708ea9e6f798156037ac34
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031772"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871263"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Office 365 にメールを送信するユーザー以外に対するサービス
 
@@ -50,7 +50,7 @@ Microsoft は、Office 365 受信トレイに電子メールを送信するユ�
 
 - 電子メールを送信しようとしている Office 365 ユーザーに別の方法で連絡と取り、Microsoft サポートに連絡して自分の代わりにサポート チケットをオープンするよう依頼します。場合によっては、Microsoft サポートは法的な理由から、ブロックされている IP 領域を所有している送信者と直接やり取りする必要が生じます。ただし通常は、ユーザー以外はサポート チケットをオープンできません。
 
-  Office 365 の Microsoft 製品サポートについて詳しくは、「 [サポート](https://technet.microsoft.com/library/office-365-support.aspx)」をご覧ください。
+  Office 365 の Microsoft 製品サポートについて詳しくは、「 [サポート](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support)」をご覧ください。
 
 ## <a name="office-365-anti-spam-ip-delist-portal"></a>Office 365 スパム対策用 IP リストから除外ポータル
 

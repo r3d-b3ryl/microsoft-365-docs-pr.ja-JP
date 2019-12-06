@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: 82731d961fddf90c2b53bfead1b72a3f35df2b24
-ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
+ms.openlocfilehash: 09a9a47610915244ade77e1410024d7f055e390f
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37593882"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866619"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
@@ -51,7 +51,7 @@ ms.locfileid: "37593882"
     |---------|---------|
     |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。         |
     |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-    |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照してください) |
+    |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください) |
 
     役割とアクセス許可の詳細については、「[Office 365 セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 

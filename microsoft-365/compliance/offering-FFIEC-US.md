@@ -1,7 +1,7 @@
 ---
 title: 連邦金融機関調査委員会 (FFIEC)
 description: Microsoft は、金融サービスクライアントが連邦金融機関調査委員会 (FFIEC) の監査要件に準拠しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 61028937f469c21d50688912d9acccde7d1c117c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3ee932493aca94109381edde1b2df0aae342a4c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690675"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859857"
 ---
-# <a name="compliance-offering-federal-financial-institutions-examination-council-ffiec"></a>コンプライアンスオファリング: 連邦金融機関調査委員会 (FFIEC)
+# <a name="federal-financial-institutions-examination-council-ffiec"></a>連邦金融機関調査委員会 (FFIEC)
 
 ## <a name="ffiec-overview"></a>FFIEC の概要
 
@@ -39,14 +39,14 @@ Microsoft Azure、Microsoft Power BI、Microsoft Office 365 は、金融サー�
 
 FFIEC の要件に準拠するために、Microsoft クラウドサービスは、独立した CPA 企業によって作成された[SOC 構成証明書](offering-SOC.md)を提供します。 たとえば、認証された SOC の種類2は、AICPA SSAE 18 標準に基づいています (105 セクションを参照)。これは、SAS 70 を交換したものであり、財務報告に関する特定のコントロールのレポートに適しています。 SOC レポートには、指定された監視期間中に関連する制御目標を達成するために、監査者が Microsoft 統制の有効性についての意見が記載されています。 金融機関は、Azure、Power BI、および Office 365 に展開された資産に対して FFIEC 固有のコンプライアンス義務を遵守するときに、この公式監査を使用できます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI cloud service をスタンドアロンサービスとして、または Office 365 ブランドプランまたはスイートに含める
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Azure および Office 365 の SOC 構成証明レポート。
 
@@ -62,17 +62,17 @@ Azure および Office 365 の SOC 構成証明レポート。
 - [当社のクラウドコンピューティングおよび規制原則のコンプライアンスマップ](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [FFIEC 監査 IT 調査ハンドブック](https://ithandbook.ffiec.gov/it-booklets/audit.aspx)
 - [FFIEC アウトソーシングテクノロジサービス IT 試験ハンドブック](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)
-- [Azure 金融サービス Cloud リスク評価ツール](https://aka.ms/FFIEC-CSDT)
+- [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Azure のセキュリティとコンプライアンス FFIEC 金融サービスブループリント](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
 
-## <a name="other-microsoft-resources-for-financial-services"></a>金融サービスに関するその他の技術情報
+## <a name="other-microsoft-resources-for-financial-services"></a>金融サービス向けのその他の Microsoft リソース
 
-- [Microsoft 金融サービスコンプライアンスプログラム](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Azure での金融サービスコンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft business cloud services および金融サービス](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [クラウドコンピューティングの共有責任](https://aka.ms/sharedresponsibility)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融サービス コンプライアンス プログラム](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft 法人向けクラウド サービスおよび金融サービス](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
+- [クラウド コンピューティングの共同責任](https://aka.ms/sharedresponsibility)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf) をダウンロードします。

@@ -1,7 +1,7 @@
 ---
 title: 肘掛けされる国際トラフィック (ITAR)
 description: Azure Government は、Regs 対応システムでの国際トラフィックの作成をお客様にサポートしています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b79cd30c225631b93c92f8199d008d24ecc9a06d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690707"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859657"
 ---
-# <a name="compliance-offering-international-traffic-in-arms-regulations-itar"></a>コンプライアンスオファリング: 国際トラフィック (ITAR)
+# <a name="international-traffic-in-arms-regulations-itar"></a>肘掛けされる国際トラフィック (ITAR)
 
 ## <a name="itar-overview"></a>ITAR の概要
 
@@ -36,10 +36,10 @@ ITAR には、違反を報告するための特定の義務があります。こ
   
 ITAR 規制データのホストを求めるお客様は、Microsoft アカウントおよびライセンスチームと協力して、詳細を確認し、適切な同意を得て、関連するシステムアーキテクチャ情報にアクセスする必要があります。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
-- [Office 365 米国政府機関による防衛](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -54,8 +54,8 @@ Microsoft アカウント担当者にお問い合わせください。
 - [ITAR で制御されるデータでの Azure Government の使用](https://aka.ms/azure-itar-guide)
 - [Azure Government](https://azure.microsoft.com/features/gov/)
 - [Office 365 米国政府機関](https://products.office.com/government/office-365-web-services-for-government)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf) をダウンロードします。

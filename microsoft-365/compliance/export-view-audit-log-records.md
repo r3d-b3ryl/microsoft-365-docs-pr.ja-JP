@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 監査ログ検索の結果をエクスポートして CSV ファイルにダウンロードした後、Excel の Power Query エディターの JSON 変換機能を使用して、AuditData 列の JSON オブジェクトの各プロパティをそれぞれの列に分割できます。 これは、探している特定の監査データをすばやく見つけるのに役立ちます。
-ms.openlocfilehash: 9b422877c10f086553a695e43c50f02d389dd2b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: dc96bb8fbcf3acbab66bdb8d4b3d1450e9d3aeaf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686886"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39858183"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
@@ -122,10 +122,10 @@ CSV ファイルが**クエリエディター**で開かれます。 **CreationD
    
    - このパラメーターには、1つの値のみを含めることができます。 他のレコードの種類の監査レコードを検索するには、2つの前のコマンドを再度実行して、別のレコードの種類を指定し、それらの結果を元の CSV ファイルに追加します。 たとえば、次の2つのコマンドを実行して、同じ日付範囲の SharePoint ファイルアクティビティを PowerShellAuditlog ファイルに追加します。
 
-       ```powershell
-      $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
-      ```
+          ```powershell
+          $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
+          ```
 
-      ```powershell
-      $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```powershell
+          ```powershell
+          $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
+          ```

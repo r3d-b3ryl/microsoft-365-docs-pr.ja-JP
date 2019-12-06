@@ -1,7 +1,7 @@
 ---
 title: Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 description: Azure と Office 365 は、正常性情報信頼アライアンス (HITRUST) Common Security Framework (CSF) に対して認定されています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: fae04170595b953b2ec88c34e2fec5a2a7ffa9cb
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: ebe89a7dc63a9adbe2c40961f92c1a6656d9ae9d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690706"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859737"
 ---
-# <a name="compliance-offering-health-information-trust-alliance-hitrust-common-security-framework-csf"></a>コンプライアンスオファリング: 正常性情報信頼アライアンス (HITRUST) Common Security Framework (CSF)
+# <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 
 ## <a name="hitrust--csf-overview"></a>HITRUST — CSF の概要
 
@@ -36,13 +36,13 @@ Azure セキュリティおよびコンプライアンスブループリント�
 
 [Microsoft Azure HITRUST のお客様責任マトリックス (CRM) 青写真 v2.0 d をダウンロードする](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - Intune
-- [Office 365 および Office 365 米国政府機関](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Azure と Office 365 の HITRUST CSF 証明書は、2年間有効です。
 
@@ -71,7 +71,7 @@ HITRUST MyCSF ツールで Azure の完全に継承または共有の責任の�
 
 **Azure HITRUST コンプライアンスを使用して組織の証明プロセスに基づいて構築できますか?**
 
-正解です。 Microsoft サービスに展開された実装のための HITRUST 証明書が必要な場合は、コンプライアンス評価を実施する際に、Azure HITRUST への準拠に基づいて構築できます。 ただし、組織内の HITRUST の要件と制御を評価する責任があります。
+はい。 Microsoft サービスに展開された実装のための HITRUST 証明書が必要な場合は、コンプライアンス評価を実施する際に、Azure HITRUST への準拠に基づいて構築できます。 ただし、組織内の HITRUST の要件と制御を評価する責任があります。
 
 **HITRUST 証明書のコピーを取得するにはどうすればよいですか?**
 
@@ -106,8 +106,8 @@ HITRUST MyCSF®ツールにログインして、Microsoft Azure でホストさ�
 - [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)
 - [CSF の理解と活用](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [HITRUST 共有責任プログラムの詳細については、「」を参照してください。](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf) をダウンロードします。

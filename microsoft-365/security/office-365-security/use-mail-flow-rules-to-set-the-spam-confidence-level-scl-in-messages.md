@@ -14,12 +14,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でメッセージの SCL を設定する方法について説明します。
-ms.openlocfilehash: 8da95c5356f7cde47d378d93c721057959554631
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 35a1235ee8bbb1a61bf37c3cd29e06e62252351d
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030631"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871223"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
@@ -29,7 +29,7 @@ ms.locfileid: "38030631"
   
 - この手順の予想所要時間:10 分。
     
-- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「 [Exchange Online の機能のアクセス](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)許可」の「メールフロールール」、または「 [EOP の機能のアクセス許可](feature-permissions-in-eop.md)」を参照してください。 
+- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「 [Exchange Online の機能のアクセス](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)許可」の「メールフロールール」、または「 [EOP の機能のアクセス許可](feature-permissions-in-eop.md)」を参照してください。 
     
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
     

@@ -1,7 +1,7 @@
 ---
 title: 米国のセキュリティシステムの委員会に関する指示はありません。 1253 (CNSSI 1253)
 description: Azure 自治体は、高機密性、高整合性、高可用性を必要とする米国政府機関向けの CNSSI 1253 セキュリティ制御に準拠しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 232d8ddcdcd108d069247bc76850d7d17f18b629
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690694"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860037"
 ---
-# <a name="compliance-offering-committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>コンプライアンスオファリング: 米国のセキュリティシステムの委員会に関する指示はありません。 1253 (CNSSI 1253)
+# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>米国のセキュリティシステムの委員会に関する指示はありません。 1253 (CNSSI 1253)
 
 ## <a name="about-cnss-instruction-1253"></a>CNSS 命令1253について
 
@@ -36,11 +36,11 @@ FedRAMP で承認されたサードパーティの評価組織 (3PAO)、Kratos S
   
 要求の厳しい CNSSI 1253 要件を持つ Azure Government のコンプライアンスにより、Azure は米国内の公的機関のお客様に対して、CNSSI 1253 に準拠した豊富なサービスを提供できるようになります。Microsoft クラウドのセキュリティ。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、および証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Azure Government CNSSI 1253 CNSSI 1253 高高度ベースラインに準拠していることの証明
 
@@ -62,11 +62,11 @@ Azure Government (FedRAMP パッケージ ID F1603087869) は、これらのコ�
 
 - [Azure Government とは](https://docs.microsoft.com/azure/azure-government/documentation-government-welcome)
 - [Azure Government](https://aka.ms/Azure-Government)
-- [Microsoft および FedRAMP](offering-fedramp.md)
+- [Microsoft と FedRAMP](offering-fedramp.md)
 - [マイクロソフトおよび DoD 暫定認証](offering-DoD-DISA-L2-L4-L5.md)
 - [Microsoft Government クラウド](https://www.microsoft.com/enterprise/government)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf) をダウンロードします。

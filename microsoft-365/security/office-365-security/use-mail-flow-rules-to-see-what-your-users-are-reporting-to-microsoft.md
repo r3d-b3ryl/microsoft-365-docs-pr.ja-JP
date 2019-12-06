@@ -13,12 +13,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Exchange メールフロールールを作成して、ユーザーが電子メールメッセージを分析のために Microsoft に送信したり、独自のセキュリティプロセスで使用したりできないようにすることができます。
-ms.openlocfilehash: d1b67d60d10ea9ce5d3ed47e20959c85d785e437
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11033b0d4b0ab9da0109fd31907a1537adc09c4d
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030641"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871293"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
 
@@ -28,7 +28,7 @@ ms.locfileid: "38030641"
 
 予想所要時間 : 5 分
 
-この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「[メッセージングポリシーとコンプライアンスのアクセス許可](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)」トピックの「メールフロールール」、および「[クライアントとモバイルデバイスのアクセス許可](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)」の「web メールボックスポリシー」エントリを参照してください。
+この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions#exchange-online-permissions)」の「メールフロー」および「web メールボックスポリシー」のエントリを参照してください。
 
 このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 

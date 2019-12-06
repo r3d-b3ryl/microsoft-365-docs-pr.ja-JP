@@ -1,7 +1,7 @@
 ---
 title: '[インド of インド (RBI)] および [インドの保険法規および開発機関 (IRDAI)] の予約銀行'
 description: Microsoft は、クラウド導入において、インドの金融機関を支援するためのガイダンスを公開しています。
-keywords: Microsoft 365、コンプライアンス、オファーリング
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5e6af9be34fe5b14c84e8ba6cc9a55510baab92d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c88cfbfc9237e6e9a43dc8b143af015ba377ad17
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690720"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859497"
 ---
-# <a name="compliance-offering-reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>コンプライアンスオファリング: インド (r BI) およびインドの保険法規および開発機関 (IRDAI) の予約銀行 (it)
+# <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>[インド of インド (RBI)] および [インドの保険法規および開発機関 (IRDAI)] の予約銀行
 
 ## <a name="about-rbi-and-irdai"></a>RBI および IRDAI について
 
@@ -40,10 +40,10 @@ ms.locfileid: "38690720"
 
 マイクロソフトのチェックリストは、Microsoft business cloud services のデューデリジェンス評価を実施しているインドの金融企業に役立つ情報です。
 
-- コンテキストの規制状況の概要。
-- このような規制義務に対して、問題を解決し、Microsoft Azure、Microsoft Dynamics 365、Microsoft Office 365 のサービスをマップするチェックリスト。 このチェックリストは、規制フレームワークに対するコンプライアンスを測定し、コンプライアンスを文書化するための内部構造を提供するツールとして使用できます。また、お客様が Microsoft business cloud services の独自のリスク評価を実施するのに役立ちます。
+- 条件に応じた規制状況の概要。
+- このような規制義務に対して、問題を解決し、Microsoft Azure、Microsoft Dynamics 365、Microsoft Office 365 のサービスをマップするチェックリスト。 チェックリストは、規制の枠組みを背景にしてコンプライアンスを測定したり、コンプライアンスを文書化するための内部構造を提供したり、顧客が Microsoft 法人向けクラウド サービスに対する独自のリスク評価を実施したりするのを支援するツールとして使用されます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft スコープ内クラウドサービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となるマイクロソフトのクラウド サービス
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -52,24 +52,24 @@ ms.locfileid: "38690720"
 ## <a name="how-to-implement"></a>実装方法
 
 - [インドのコンプライアンスチェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): 金融企業は、Microsoft business cloud services のリスク評価の実施に関するサポートを受けることができます。
-- [リスク評価 & コンプライアンスガイド](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Microsoft クラウドサービスおよびレギュレータの通知のリスク評価のためのガバナンスモデルを作成します。
+- [リスク評価およびコンプライアンス ガイド](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Microsoft クラウド サービスのリスク評価および規制機関の通知のガバナンス モデルを作成します。
 - [Azure の財務的な使用例](https://docs.microsoft.com/azure/industry/financial/): サポート案件の概要、チュートリアル、その他のリソースを使用して、金融サービスの Azure ソリューションを構築します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**クラウドサービスプロバイダーと契約に含める必要のある必須条件はありますか?**
+**クラウド サービス プロバイダーについて、契約に含める必要がある必須条項はありますか?**
 
-正解です。 上記のガイドラインは、金融機関がクラウドサービス契約に組み込む必要のある特定のポイントを規定しています。 [チェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)のパート 2 (ページ 70) は、これらを Microsoft の契約書に記載されているセクションに対応しています。
+はい。 上記のガイドラインは、金融機関がクラウドサービス契約に組み込む必要のある特定のポイントを規定しています。 [チェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)のパート 2 (ページ 70) は、これらを Microsoft の契約書に記載されているセクションに対応しています。
 
 ## <a name="resources"></a>リソース
 
 - [Microsoft および MeitY ごごください。](offering-meity-india.md)
-- [Microsoft 金融サービスコンプライアンスプログラム](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
-- [Microsoft business cloud services および金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Azure での金融サービスコンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Azure 金融サービス Cloud リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
-- [Microsoft セキュリティセンターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融サービス コンプライアンス プログラム](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Microsoft 法人向けクラウド サービスおよび金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure 金融サービス クラウド リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>オファーリング backgrounder をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このオファーリングの backgrounder ドキュメントは必要ですか? [PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf)をダウンロードします。
+このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf) をダウンロードします。

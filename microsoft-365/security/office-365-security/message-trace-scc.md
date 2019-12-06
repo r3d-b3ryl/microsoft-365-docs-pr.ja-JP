@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
-ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
+ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37993732"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871763"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -99,7 +99,7 @@ ms.locfileid: "37993732"
 
 - **失敗**: メッセージは配信されませんでした。
 
-- **検疫**済み: メッセージが検疫されました (スパム、バルクメール、またはフィッシングとして)。 For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- **検疫**済み: メッセージが検疫されました (スパム、バルクメール、またはフィッシングとして)。 詳細については、「[Office 365 でのメール メッセージの検疫](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx)」を参照してください。
 
 - **スパムとしてフィルター処理**: メッセージがスパムとして検出され、拒否またはブロックされました (検疫されていません)。
 
@@ -131,7 +131,7 @@ ms.locfileid: "37993732"
 
 - **概要**: 時間範囲が10日未満の場合に使用できます。これには、追加のフィルターオプションは必要ありません。 [**検索**] をクリックすると、ほぼ瞬時に結果が得られます。
 
-- 拡張された**概要**または**拡張**: これらのレポートはダウンロード可能な CSV ファイルとしてのみ利用可能であり、時間範囲に関係なく、次のフィルターオプションの1つ以上を必要とし**ます。これらのユーザーに**は、これら**のユーザー、** または**メッセージ ID**。 送信者または受信者に対してワイルドカードを使用できます\*(たとえば、@contoso .com)。
+- 拡張された**概要**または**拡張**: これらのレポートはダウンロード可能な CSV ファイルとしてのみ使用でき、時間範囲に関係なく、次のフィルターオプションの1つ以上を必要とします。**これら**のユーザー、**これらのユーザー**、または**メッセージ ID**。 送信者または受信者に対してワイルドカードを使用できます\*(たとえば、@contoso .com)。
 
 **注**:
 
@@ -139,7 +139,7 @@ ms.locfileid: "37993732"
 
 - 拡張されたサマリーまたは拡張レポートを任意の日付/時刻範囲で選択できますが、通常、アーカイブデータの過去4時間は、これら2種類のレポートでは利用できません。
 
-[**次へ**] をクリックすると、選択したフィルターオプション、レポートの一意の (編集可能な) タイトル、およびメッセージの追跡が完了したときに通知を受信する電子メールアドレス (編集可能な場合もあります) を一覧表示する概要ページが表示されます。、組織の承認済みドメインのいずれかに含まれている必要があります。 [**レポートの準備**] をクリックして、メッセージの追跡を送信します。 メインの**メッセージ追跡**ページで、[ダウンロード可能な**レポート**] セクションにレポートの状態を表示できます。
+[**次へ**] をクリックすると、選択したフィルターオプション、レポートの一意の (編集可能な) タイトル、およびメッセージの追跡が完了したときに通知を受け取る電子メールアドレス (組織の承認済みドメインのいずれかである必要があります) を一覧表示する要約ページが表示されます。 [**レポートの準備**] をクリックして、メッセージの追跡を送信します。 メインの**メッセージ追跡**ページで、[ダウンロード可能な**レポート**] セクションにレポートの状態を表示できます。
 
 さまざまなレポートの種類で返される情報の詳細については、次のセクションを参照してください。
 
@@ -231,7 +231,7 @@ ms.locfileid: "37993732"
 
 利用可能 (完了) 強化された概要レポートについては、最初のメッセージ追跡の「ダウンロード可能な**レポート**」セクションを参照してください。 レポートでは、次の情報を使用できます。
 
-- **origin_timestamp**<sup>*</sup>: 構成済みの UTC タイムゾーンを使用して、メッセージが最初にサービスによって受信された日時。
+- **origin_timestamp**<sup>*</sup>: 構成済みの UTC タイムゾーンを使用して、メッセージが最初にサービスによって受信された日付と時刻。
 
 - **sender_address**: 送信者の電子メールアドレス (*エイリアス*@*ドメイン*)。
 
@@ -255,7 +255,7 @@ ms.locfileid: "37993732"
 
 - **方向性**: メッセージが組織に受信 (1) 送信されたかどうか、または組織から送信 (2) されたかどうかを示します。
 
-- **connector_id**: 転送元または転送先コネクタの名前。 Exchange Online のコネクタの詳細については、「 [Configure mail flow using connector Using Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」を参照してください。
+- **connector_id**: コピー元またはコピー先のコネクタの名前を指定します。 Exchange Online のコネクタの詳細については、「 [Configure mail flow using connector Using Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」を参照してください。
 
 - **delivery_priority**<sup>*</sup>: メッセージが**高**、**低**、または**通常**の優先度で送信されたかどうか。
 
@@ -263,17 +263,17 @@ ms.locfileid: "37993732"
 
 ### <a name="extended-reports"></a>拡張レポート
 
-利用可能 (完了) された拡張レポートは、メッセージ追跡の先頭にあるダウンロード可能な**レポート**セクションから入手できます。 拡張された概要レポートの情報は、ほぼすべて ( **origin_timestamp**と**delivery_priority**を除く) 拡張レポートで利用できます。 次の追加情報は、拡張レポートでのみ使用できます。
+利用可能 (完了) された拡張レポートは、メッセージ追跡の先頭にあるダウンロード可能な**レポート**セクションから入手できます。 拡張されたサマリーレポートからほぼすべての情報を拡張レポートで利用できます ( **origin_timestamp**と**delivery_priority**は除きます)。 次の追加情報は、拡張レポートでのみ使用できます。
 
 - **client_ip**: メッセージを送信した電子メールサーバーまたはメッセージングクライアントの ip アドレス。
 
 - **client_hostname**: メッセージを送信した電子メールサーバーまたはメッセージングクライアントのホスト名または FQDN。
 
-- **server_ip**: 転送元または転送先サーバーの ip アドレス。
+- **server_ip**: 送信元または送信先サーバーの ip アドレス。
 
 - **server_hostname**: 宛先サーバーのホスト名または FQDN。
 
-- **source_context**:**ソース**フィールドに関連付けられている付加情報。 次に例を示します。
+- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 次に例を示します。
 
   - `Protocol Filter Agent`
 
@@ -295,21 +295,21 @@ ms.locfileid: "37993732"
 
 - **recipient_count**: メッセージ内の受信者の合計数。
 
-- **related_recipient_address**:、 `EXPAND` `REDIRECT`、および`RESOLVE`イベントを使用して、メッセージに関連付けられている他の受信者の電子メールアドレスを表示します。
+- **related_recipient_address**: メッセージに`EXPAND`関連`REDIRECT`付けら`RESOLVE`れた他の受信者の電子メールアドレスを表示するために、、およびイベントと共に使用します。
 
 - **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 次に例を示します。
 
-  - **Dsn**: このイベントの後に dsn が生成された場合に、関連付けられている配信状態通知 (dsn、配信不能レポート、NDR、またはバウンスメッセージとも呼ばれる) の**message_id**値であるレポートリンクが含まれています。 これが DSN メッセージの場合、このフィールドには、DSN が生成された元のメッセージの**message_id**値が含まれています。
+  - **Dsn**: このイベントの後に dsn が生成された場合に、関連付けられている配信状態通知 (dsn、配信不能レポート、NDR、またはバウンスメッセージとも呼ばれる) の**message_id**値であるレポートリンクが含まれています。 これが DSN メッセージの場合、このフィールドには、DSN が生成された元のメッセージの**message_id**値が含まれます。
 
-  - **EXPAND**: 関連するメッセージの**related_recipient_address**値が含まれています。
+  - **EXPAND**: 関連するメッセージの**related_recipient_address**値を格納します。
 
   - **RECEIVE**: 他のプロセス (たとえば、受信トレイルール) によってメッセージが生成された場合に、関連するメッセージの**message_id**値が含まれている可能性があります。
 
   - **SEND**: DSN メッセージの**internal_message_id**値を格納します。
 
-  - **TRANSFER**: fork されているメッセージの**internal_message_id**値が含まれています (たとえば、コンテンツの変換、メッセージ受信者の制限、エージェント)。
+  - **TRANSFER**: fork されているメッセージの**internal_message_id**値を格納します (たとえば、コンテンツの変換、メッセージ受信者の制限、エージェント)。
 
-  - **MAILBOXRULE**: 受信トレイルールが送信メッセージを生成する原因となった受信メッセージの**internal_message_id**値が含まれています。
+  - **MAILBOXRULE**: 受信トレイルールが送信メッセージを生成する原因となった受信メッセージの**internal_message_id**値を格納します。
 
     その他の種類のイベントの場合、このフィールドは通常空白です。
 
@@ -317,7 +317,7 @@ ms.locfileid: "37993732"
 
 - **message_info**: メッセージに関する追加情報。 次に例を示します。
 
-  - メッセージの発信元の日付と`DELIVER` `SEND`イベントの UTC の日時。 発信日時は、メッセージが最初に Exchange Online 組織に入った時刻です。 UTC の日時は、ISO 8601 の日付と時刻の形式で表され`yyyy-mm-ddThh:mm:ss.fffZ`ます。 `yyyy`ここで、 `mm` = year、 `dd` = month、 `T` = day は、時間コンポーネントの開始`hh`を示し、 `mm` = hour、 `ss` = minute、 `fff` = second、=2番目`Z` `Zulu`の分数は、UTC を示す別の方法です。
+  - メッセージの発信元の日付と`DELIVER` `SEND`イベントの UTC の日時。 発信日時は、メッセージが最初に Exchange Online 組織に入った時刻です。 UTC の日時は、ISO 8601 の日付と時刻の形式で表され`yyyy-mm-ddThh:mm:ss.fffZ`ます。 `yyyy`ここで、 `mm` = year、 `dd` = month、 `T` = day は、時間コンポーネントの開始`hh`を示し、 `mm` = hour、 `ss` = minute、 `fff` = second、= 小数点`Z` `Zulu`以下の値を示します。これは、utc を示すもう1つの方法です。
 
   - 認証エラー。 たとえば、認証エラーが発生した`11a`ときに使用された認証の値と種類が表示されることがあります。
 
@@ -327,7 +327,7 @@ ms.locfileid: "37993732"
 
 - **custom_data**: 特定のイベントの種類に関連するデータが含まれています。 詳細については、以下のセクションを参照してください。
 
-#### <a name="custom_data-values"></a>custom_data の値
+#### <a name="custom_data-values"></a>custom_data 値
 
 イベントの custom_data フィールドは、メッセージ処理の詳細をログに記録するために、Exchange Online のさまざまなエージェントによって使用されます。 **** `AGENTINFO` 次のセクションでは、いくつかの興味深いエージェントについて説明します。
 
@@ -341,13 +341,13 @@ ms.locfileid: "37993732"
 |`SFV=SPM`|コンテンツ フィルターによって、メッセージがスパムとしてマークされました。|
 |`SFV=BLK`|ブロックする差出人から発信されたメッセージであるため、フィルター処理が省略され、メッセージはブロックされました。|
 |`SFV=SKS`|コンテンツ フィルターによって処理される前に、メッセージがスパムとしてマークされました。これには、メッセージを自動的にスパムとしてマークし、他のすべてのフィルター処理を省略するトランスポート ルールに適合したメッセージが含まれます。|
-|`SCL=<number>`|さまざまな SCL の値とその意味の詳細については、「[Spam Confidence Level](https://technet.microsoft.com/library/jj200686.aspx)」を参照してください。|
-|`PCL=<number>`|メッセージの Phishing Confidence Level (PCL) 値。これらの値は、「[Spam Confidence Level](https://technet.microsoft.com/library/jj200686.aspx)」に記載されている SCL 値と同様に解釈できます。  |
+|`SCL=<number>`|さまざまな SCL の値とその意味の詳細については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。|
+|`PCL=<number>`|メッセージの Phishing Confidence Level (PCL) 値。これらの値は、「[Spam Confidence Level](spam-confidence-levels.md)」に記載されている SCL 値と同様に解釈できます。  |
 |`DI=SB`|メッセージの送信者はブロックされました。|
 |`DI=SQ`|メッセージは検疫されました。|
 |`DI=SD`|メッセージは削除されました。|
 |`DI=SJ`|メッセージは受信者の迷惑メール フォルダーに送信されました。|
-|`DI=SN`|メッセージがより危険度の高い配信プールを経由してルーティングされました。 詳細については、「[送信メッセージ用の高リスク配信プール](https://technet.microsoft.com/library/jj200746.aspx)」を参照してください。|
+|`DI=SN`|メッセージがより危険度の高い配信プールを経由してルーティングされました。 詳細については、「[送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。|
 |`DI=SO`|メッセージは通常の送信用の配信プールを通じて送信されました。|
 |`SFS=[a]|SFS=[b]`|これはスパム ルールが一致したことを示します。|
 |`IPV=CAL`|このメッセージの IP アドレスは接続フィルターの IP 許可一覧に指定されているため、スパム フィルターの通過を許可されました。|
@@ -389,7 +389,7 @@ ms.locfileid: "37993732"
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|一致したルールの ID。|
 |`St=<datetime>`|ルールの一致が発生した日付と時刻 (UTC)。|
-|`Action=<ActionDefinition>`|適用されたアクション。 使用可能なアクションの一覧については、「 [Exchange Online のメールフロールールのアクション](https://technet.microsoft.com/library/jj919237.aspx)」を参照してください。|
+|`Action=<ActionDefinition>`|適用されたアクション。 使用可能なアクションの一覧については、「 [Exchange Online のメールフロールールのアクション](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」を参照してください。|
 |`Mode=<Mode>`|ルールのモード。 有効な値は次のとおりです。 <br/>•**強制**: ルールのすべてのアクションが適用されます。 <br/>•**ポリシーヒントを使用してテストする:**: ポリシーヒントアクションは送信されますが、他の強制アクションは実行されません。 <br/>•**ポリシーヒントなしのテスト**: アクションがログファイルにリストされますが、送信者には何も通知されず、強制アクションは実行されません。|
 
 メールフロールールの条件に一致するメッセージの**custom_data**値の例は、次のようになります。

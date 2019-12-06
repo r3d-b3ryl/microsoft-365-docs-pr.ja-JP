@@ -15,12 +15,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection を使用して、組織のブロック URL リストを設定する方法について説明します。ブロックされた URL は、ATP の安全なリンクに関するポリシーに従って、メール メッセージと Office ドキュメントに適用されます。
-ms.openlocfilehash: ab79f86646ffd195b31d46980c3bd3bd3bb8f444
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 645f2642a34483ba1310c3bfcd1178dbaaf42a49
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032062"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866589"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 ATP の安全なリンク機能を使用して、ユーザー設定のブロック URL リストを設定する
 
@@ -45,7 +45,7 @@ ATP ポリシーを編集 (または定義) するには、次の表に示す役
 |---------|---------|
 |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。         |
 |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照してください) |
+|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください) |
 
 > [!TIP]
 > 役割とアクセス許可の詳細については、「[Office 365 セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。

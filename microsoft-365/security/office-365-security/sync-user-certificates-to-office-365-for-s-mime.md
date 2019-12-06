@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 description: S/MIME 保護されたメッセージを送信するには、適切な証明書をセットアップする必要があります。Exchange Online 経由で暗号化メッセージを送信するために、送信者の電子メール プログラムでは受信者の公開証明書を使用してメッセージを暗号化します。この公開 X.509 証明書を Office 365 に公開する必要があります。
-ms.openlocfilehash: 7b42f757ade54e362afc65f920096252bf69eb31
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e03d7be2a7a1fcb8c5ef56395b4046442802cf2a
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030841"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872023"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>S/MIME 用にユーザー証明書を Office 365 に同期する
 
@@ -25,7 +25,7 @@ ms.locfileid: "38030841"
 
 ## <a name="to-sync-certificates-that-support-smime"></a>S/MIME をサポートする証明書を同期するには
 
-証明書を発行して、ローカルの Active Directory ドメイン サービスで公開することによって、S/MIME のセットアップを開始します。 Exchange Server での証明書の管理の詳細については、「 [Digital certificates AND SSL](https://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx)」を参照してください。
+証明書を発行して、ローカルの Active Directory ドメイン サービスで公開することによって、S/MIME のセットアップを開始します。 詳細については、「[Active Directory 証明書サービスの概要](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740(v=ws.11))」を参照してください。
 
 証明書が公開されたら、Azure Active Directory 同期ツール を使用してオンプレミスの Exchange 環境から Office 365 にユーザー データを同期します。このプロセスの詳細については、「[DirSync: Directory 同期ツールのバージョンのリリース履歴](https://go.microsoft.com/fwlink/p/?LinkId=392587)」を参照してください。
 

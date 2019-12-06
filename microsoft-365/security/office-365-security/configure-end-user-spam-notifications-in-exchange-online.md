@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 既定の企業全体のスパムフィルターポリシーまたはドメインに適用されるカスタムスパムフィルターポリシーに対して、エンドユーザーのスパム通知を構成できます。
-ms.openlocfilehash: 0f2fc88e0004f78c74f2447998d136e4c5ebc3d0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0eef6f508a775513ff5c6e061d12e023534eb0bd
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032453"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871933"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online エンドユーザースパム通知の構成
 
@@ -47,7 +47,7 @@ Office 365 で、受信拒否リストに送信者を追加する場合は、[**
 
 予想所要時間:2 分
   
-「この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」トピックの「スパム対策」のエントリを参照してください。 
+「この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」トピックの「スパム対策」のエントリを参照してください。 
   
 このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
   
@@ -67,7 +67,7 @@ Office 365 で、受信拒否リストに送信者を追加する場合は、[**
     
    - **通知の言語** ドロップダウン リストを使用して、このポリシーにエンドユーザーのスパム通知の作成に使用する言語を選択します。 
     
-   - **[保存]** をクリックします。 エンドユーザーのスパム通知の設定を含む、スパムフィルターポリシー設定の概要が右側のウィンドウに表示されます。
+   - [**保存**] をクリックします。 エンドユーザーのスパム通知の設定を含む、スパムフィルターポリシー設定の概要が右側のウィンドウに表示されます。
     
 > [!NOTE]
 >  エンドユーザーのスパム通知は、有効になっているスパムフィルターポリシーに対してのみ機能します。 >  エンド ユーザーの迷惑メールの通知は、1 日 1 回だけ送信されます。 特定のカスタマーについて通知の配信時間を保証することは不可能であり、設定もできません。 
@@ -94,7 +94,7 @@ Office 365 で、受信拒否リストに送信者を追加する場合は、[**
     
    - **通知の言語** ドロップダウン リストを使用して、このポリシーにエンドユーザーのスパム通知の作成に使用する言語を選択します。 
     
-   - **[保存]** をクリックします。 エンドユーザーのスパム通知の設定を含む、スパムフィルターポリシー設定の概要がウィンドウに表示されます。
+   - [**保存**] をクリックします。 エンドユーザーのスパム通知の設定を含む、スパムフィルターポリシー設定の概要がウィンドウに表示されます。
 
 ## <a name="for-more-information"></a>詳細情報
 
