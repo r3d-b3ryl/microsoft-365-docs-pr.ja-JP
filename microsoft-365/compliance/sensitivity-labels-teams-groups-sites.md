@@ -3,7 +3,7 @@ title: Microsoft Teams、Office 365 グループ、SharePoint サイトで機密
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/05/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ラベルは、Microsoft Teams、Office 365 グループ、および SharePoint サイトに適用できます。
-ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
-ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
+ms.openlocfilehash: e69968ad5939069ca8ae1611f3bbdc674f9dd7de
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39822493"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871253"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)
 
@@ -102,7 +102,7 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトの機
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>機密ラベルの展開のトラブルシューティング
 
-これらの設定を有効にした後、または機密ラベルの説明を変更した後に Teams または Office 365 グループを作成したときに問題が発生した場合は、ラベルを保存してから数時間待ってから、チームまたは Office 365 グループをもう一度作成してみてください。
+これらの設定を有効にした後、または機密ラベルの説明を変更した後に Teams または Office 365 グループを作成したときに問題が発生した場合は、ラベルを保存してから数時間待ってから、チームまたは Office 365 グループをもう一度作成してみてください。 詳細については、「[機密ラベルを作成または変更した後のロールアウトをスケジュールする](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)」を参照してください。
 
 それでも SharePoint Online から新しい機密ラベルを表示できない場合は、直ちに Microsoft サポートにお問い合わせください。
 

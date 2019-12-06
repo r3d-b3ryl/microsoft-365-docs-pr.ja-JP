@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド対応のビジネス継続性計画を立てる際の考慮事項。
-ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031072"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831670"
 ---
 # <a name="developing-your-continuity-plan"></a>継続性計画を立てる
 
@@ -26,7 +26,7 @@ ms.locfileid: "38031072"
 
 大まかには、ビジネス継続性計画の策定には、評価、計画、機能の検証、および通信と調整という 4 つの側面があります。
 
-## <a name="assesment"></a>評価
+## <a name="assessment"></a>評価
 まずは、組織の事業上の機能およびそれらをサポートしているサービスとプロセスを特定する必要があります。 これには、事業影響分析の実施が含まれます。この分析では、各事業機能をそれぞれの重要度に応じてランク付けし、各機能が依存しているプロセスとサービスを特定します。 評価を開始する際に参考になるサンプルの表を下に示します。
 
 **サンプル事業影響分析 (BIA)**
@@ -49,7 +49,7 @@ ms.locfileid: "38031072"
 |このテクノロジには、特定のプロセス SLA を牽引する既知の取締役命令はありますか? 「はい」の場合は、詳細を説明します。|`details here`|
 |このサービスに関連するデータの破損または侵害が発生した場合、重大な事故を誘発しますか? 「はい」の場合は、詳細を説明します。|`details here`|
 |このサービスには、主要機能の一部またはすべての代わりとなる回避策や代替方法が用意されていますか? 「はい」の場合は、詳細を説明します。|`details here`|
-|このサービスでは、顧客データ (PII) は処理、保存、または送信されますか? 「はい」の場合は、詳細を説明します。|`details here`|
+|サービスは、個人を特定できる情報 (PII) などの顧客データを処理、保存、または送信しますか? 「はい」の場合は、詳細を説明します。|`details here`|
 |BIA の状態|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |完了日|`the date this BIA was completed`|
 |BIA ファシリテータ|`name of the person or group who is responsible for developing and maintaining this BIA`|

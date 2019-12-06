@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: サービス インシデントの発生時に Microsoft が何を行っているかを理解し、ビジネス継続性プランをより適切に準備できるようにします。
-ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031082"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831868"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>エンタープライズ ビジネス継続性管理の顧客とクラウド パートナーの責任
 
@@ -34,7 +34,7 @@ Microsoft は、Microsoft 365 管理ポータルでテナント固有のサー�
 ## <a name="targeted"></a>対象範囲の限定
 ほとんどの場合、監視システムが問題を検出すると、影響を受けた顧客ベースを 1 つの顧客から地域またはそれ以上まで特定し、必要な通信をそれらの顧客に送信できます。 これにより、ビジネスに必要な情報を把握でき、影響のないノイズ通知に煩わされることはありません。 たとえば、特定のメールボックス データベースが影響を受ける場合、影響を受けるインフラストラクチャにユーザーがいるかどうかを正確に特定し、そのユーザーとの通信範囲を設定できます。 インシデントの影響範囲が明確でない場合、影響を受ける可能性のある最も幅広い顧客グループに通信を拡大します。
 
-## <a name="highly-avaliable"></a>高可用性
+## <a name="highly-available"></a>高可用性
 Microsoft は、顧客が使用できるサービス状態通信用の複数のチャネルを維持しています。
 
 - 管理センターまたは管理センター内のサービス正常性ダッシュボードが使用できない場合、[バックアップ サイト](https://status.office365.com/)を使用してサービス状態を監視できます。

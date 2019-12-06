@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818849"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866419"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -119,6 +119,10 @@ PDF 暗号化を使用すると、セキュリティで保護された通信や�
 
 Not yet. OneDrive for Business の添付ファイルはサポートされておらず、エンドユーザーは、クラウド OneDrive for Business の添付ファイルを含むメールを暗号化することはできません。
   
+## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>保護された電子メールで暗号化された添付ファイルのプレビューをサポートする電子メールクライアント
+
+保護されたメールで添付ファイルが保護されている場合、Outlook クライアントはでを使用してドキュメントを直接プレビューできます。 Outlook では、Office ドキュメント (.Docx、.xlsx、.pptx、doc、xls、ppt) のプレビューをサポートしています。 Web 上の Outlook では、Office ドキュメント (.docx、.xlsx、.pptx) と PDF のプレビューをサポートしています。  
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>ポリシーをセットアップすることで、メッセージを自動的に暗号化できますか?
 
 はい。 Exchange Online でメールフロールールを使用して、特定の条件に基づいてメッセージを自動的に暗号化します。 たとえば、受信者 ID、受信者ドメイン、またはメッセージの本文または件名の内容に基づいたポリシーを作成できます。 「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールの定義」を](define-mail-flow-rules-to-encrypt-email.md)参照してください。

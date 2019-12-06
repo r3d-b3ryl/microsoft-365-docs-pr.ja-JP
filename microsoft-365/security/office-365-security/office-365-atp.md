@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: ba7395c29a700039e29c066daa942687e610e4aa
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 65f123e77d5b38163dfe4e8971426d8a1135b571
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813767"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866709"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -102,7 +102,7 @@ Office 365 ATP プラン 2 には、組織のセキュリティ チームが悪�
 |---------|---------|
 |Office 365 のグローバル管理者 (Azure Active Directory または Office 365 セキュリティ/コンプライアンス センターで割り当てることができます) |[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |セキュリティ管理者 (Azure Active Directory または Office 365 セキュリティ/コンプライアンス センターで割り当てることができます) |[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 組織管理 (Exchange Online で割り当てることができます)|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Exchange Online 組織管理 (Exchange Online で割り当てることができます)|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |検索と消去 (Office 365 セキュリティ/コンプライアンス センターでのみ割り当てることができます) |[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md) |
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。

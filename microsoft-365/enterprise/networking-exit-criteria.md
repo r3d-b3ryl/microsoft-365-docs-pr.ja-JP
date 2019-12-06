@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise のネットワーク インフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370154"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831948"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>フェーズ 1: ネットワーク インフラストラクチャの終了条件
 
@@ -48,7 +48,7 @@ DNS サーバーがインターネット上の場所を識別するローカル 
 必要に応じて、[手順 2](networking-dns-resolution-same-location.md) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneccessary-network-hairpins-are-removed"></a>オプション: 不要なネットワーク ヘアピンの削除
+## <a name="optional-unnecessary-network-hairpins-are-removed"></a>オプション: 不要なネットワーク ヘアピンの削除
 
 ネットワーク ヘアピンの調査と、オフィス全体のパフォーマンスに与える影響の確認がなされていること。削除できるヘアピンを削除するか、サード パーティのネットワーク プロバイダーやセキュリティ プロバイダーと協力し、ネットワークに最適な Microsoft 365 ピアリングが実装されていること。
 

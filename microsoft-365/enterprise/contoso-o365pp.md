@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Office 365 ProPlus を展開する方法について説明します。
-ms.openlocfilehash: e0e1343d2ed36b1c76ad4708545c4e6d4010bb45
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7649a4a5c77c7f743e3339db6f91b7afc3b1343f
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673163"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831988"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 社での Office 365 ProPlus の展開
 
@@ -31,7 +31,7 @@ Contoso 社では自社の PC を Windows 10 Enterprise と Office 365 ProPlus �
 
 ## <a name="deployment-tools"></a>展開ツール
 
-要件に基づいて、Contoso 社は Windows 10 Enterprise および Office 365 ProPlus とConfiguration Manager (Current Branch) を展開することを選択しました。 Configuration Manager は、大規模な環境向けに調整されていて、インストール、更新、設定についての詳細な制御を実現します。 さらに、次に示す組み込みの機能により、Office の展開および管理が簡単で効率的になります。
+Contoso 社では自社の要件に基づいて、Configuration Manager (Current Branch) を使用した Windows 10 Enterprise と Office 365 ProPlus の展開を選択しました。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Office の展開と管理をより簡単で効率的にするために、以下の機能も組み込まれています。
 
 - ピア キャッシュ。遠隔地のデバイスに展開する際にネットワーク キャパシティが限られている場合に役立ちます
 - Office クライアント管理ダッシュボード。Office の展開と更新の監視を容易にし、管理者が最新の展開と管理機能にアクセスできるようにします
@@ -49,7 +49,7 @@ Office 365 ProPlus には、サービスとしての Office という新しい�
 
 Configuration Manager を使用して Office の更新を管理する代わりに、Contoso 社ではクラウドからの自動更新を有効にしました。クラウドベースの更新は、デバイスを最新の状態に保ちながら、管理上のオーバーヘッドを削減しました。 
 
-Contoso 社では Office の展開に使用した 2 段階アプローチ、つまりパイロット グループ内のデバイスが組織の残り (広範グループ) のデバイスよりも 4 か月早く機能の更新を受け取る方法と同じアプローチを機能の更新にも使用しました。 これを Office で可能にするために、Contoso 社では 2 つの推奨される[更新チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)を使用しました。 
+Contoso 社では Office の展開に使用した 2 段階アプローチ、つまりパイロット グループ内のデバイスが組織の残り (広範グループ) のデバイスよりも 4 か月早く機能の更新を受け取る方法と同じアプローチを機能の更新にも使用しました。これを Office で可能にするために、Contoso 社では 2 つの推奨される[更新チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)を使用しました。 
 
 - パイロット グループ用の半期チャネル (対象指定) 
 - 広範グループ用の半期チャネル。 

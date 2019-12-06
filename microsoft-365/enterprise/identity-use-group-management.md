@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: グループを使って、管理タスクの一部を自動的に管理することができます。
-ms.openlocfilehash: 769fc0dd69b13978dbb9cf91d890ad271a7d9bb5
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 0d46a2af5683b8da40275302460d453f1f14acbe
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370184"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831660"
 ---
 # <a name="step-5-use-groups-for-management"></a>手順 5: 管理にグループを使用する
 

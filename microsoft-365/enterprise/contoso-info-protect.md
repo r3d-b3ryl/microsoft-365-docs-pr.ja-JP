@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise の情報保護機能を使用して、クラウドのデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: f5893414a0aab3d0ab89eb180f0c907d4379194c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673203"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831680"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -65,7 +65,7 @@ Contoso 社は、次の手順を使用して、自社の情報保護の要件に
 
 4. アクセスをロックするアクセス許可を使用して機密データと厳しく規制されたデータに対応する保護された SharePoint サイトを作成した
 
-   機密サイトと厳しく制限されたサイトは、どちらも[分離したサイト](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)として構成しました。これらのサイトでは、既定の SharePoint チーム サイトのアクセス許可がカスタマイズされています。 「機密」および「厳しく規制」の SharePoint サイトは、対応する保持ラベルを使用して構成されています。 「厳しく規制」の SharePoint サイトに保存されているファイルは、「厳しく規制」のラベルの「機密」サブラベルで保護されています。 詳細については、「[厳しく規制されたデータに適した SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md)」のシナリオを参照してください。
+   機密性の高いサイトと厳しく規制されたサイトの両方が、追加のアクセス許可の制限のあるプライベート チーム サイトとして構成されました。 「機密」および「厳しく規制」の SharePoint サイトは、対応する保持ラベルを使用して構成されています。 「厳しく規制」の SharePoint サイトに保存されているファイルは、「厳しく規制」のラベルの「機密」サブラベルで保護されています。 詳細については、「[厳しく規制されたデータに適した SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md)」のシナリオを参照してください。
 
 5.  オンプレミスの SharePoint サイトとファイル共有のデータを新しい SharePoint サイトに移動した
 

@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーがスパムとして分類されている Office 365 からメッセージを送り続ける場合、メッセージを送信しないよう制限されます。 '
-ms.openlocfilehash: 4abb37bbda20d17b19144d6f62b4ef1a4fc8fb4c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032162"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871743"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 
@@ -34,7 +34,7 @@ ms.locfileid: "38032162"
 
 予想所要時間 : 5 分
   
-この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」の「スパム対策」のエントリを参照してください。
+この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」の「スパム対策」のエントリを参照してください。
 
 以下の手順はリモート PowerShell 経由でも実行することができます。 Get-BlockedSenderAddress コマンドレットを使用して制限付きユーザーのリストを取得し、Remove-BlockedSenderAddress を使用して制限を削除します。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
 
