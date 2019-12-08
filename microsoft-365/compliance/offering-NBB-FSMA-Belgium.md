@@ -1,7 +1,7 @@
 ---
 title: ベルギー国立銀行 (NBB) と Financial Services and Markets Authority (FSMA)
 description: クラウド導入によりベルギーの金融機関を支援するための Microsoft ガイダンスです。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c388eac90c0210e6c1351d77acc73205f6ee617a
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e9f43842e50dd61095a99dd2944bd47dfaaab1e0
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195271"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859557"
 ---
-# <a name="compliance-offering-national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>コンプライアンス認証: ベルギー国立銀行 (NBB) と Financial Services and Markets Authority (FSMA)
+# <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>ベルギー国立銀行 (NBB) と Financial Services and Markets Authority (FSMA)
 
 ## <a name="about-the-nbb-and-fsma"></a>NBB と FSMA について
 

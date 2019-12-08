@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676684"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859817"
 ---
-# <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>コンプライアンス サービス: 金融情報システム センター (FISC)
+# <a name="center-for-financial-industry-information-systems-fisc"></a>金融情報システム センター (FISC)
 
 ## <a name="fisc-overview"></a>FISC の概要
 

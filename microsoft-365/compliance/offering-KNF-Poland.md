@@ -1,7 +1,7 @@
 ---
 title: ポーランド金融監督庁 (KNF)
 description: Microsoft は、クラウド導入によりポーランドの金融機関を支援するためのガイダンスを発表しました。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c7f001f094c610d15e5e4775dc9ae94216a7ff56
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 433082c5fac3f1fef4aa680ebaeb8f4897d88569
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39268758"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859637"
 ---
-# <a name="compliance-offering-financial-supervision-authority-knf-poland"></a>コンプライアンス認証：金融監督局（KNF）ポーランド
+# <a name="financial-supervision-authority-knf-poland"></a>ポーランド金融監督庁 (KNF)
 
 ## <a name="about-the-knf"></a>KNF について
 

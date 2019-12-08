@@ -1,7 +1,7 @@
 ---
 title: EU 一般データ保護規則 (GDPR)
 description: ブログ「GDPR の下で個人のプライバシー権を安全に守る Microsoft Cloud のインテリジェント クラウド」をぜひご一読ください。Microsoft 365 および Microsoft Cloud で組織のコンプライアンスを遵守する方法など、一般データ保護規則 (GDPR) に関する重要なトピックがまとめられています。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ab50ba0a901672b2bd6f21f95f04612bba3f8cfd
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233540"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859777"
 ---
-# <a name="compliance-offering-general-data-protection-regulation-gdpr"></a>コンプライアンス認証: 一般データ保護規則 (GDPR)
+# <a name="general-data-protection-regulation-gdpr"></a>EU 一般データ保護規則 (GDPR)
 
 ## <a name="learn-about-gdpr-compliance-best-practices"></a>GDPR コンプライアンスのベスト プラクティスについて
 

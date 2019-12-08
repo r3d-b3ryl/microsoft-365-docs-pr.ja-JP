@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c6637db6b73bdc83972d90c938efede0b70938ad
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 208bf7d1e31f797ec24654d1c2cdfe374d1aafe3
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218716"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859567"
 ---
-# <a name="compliance-offering-my-number-act-japan"></a>コンプライアンス サービス: マイ ナンバー法 (日本)
+# <a name="my-number-act-japan"></a>マイ ナンバー法 (日本)
 
 ## <a name="about-the-my-number-act"></a>マイ ナンバー法について
 
