@@ -11,22 +11,22 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3c1bfd0d77eb2dd1a928355441cd8bb1ca5d574c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3bb251b888ba98bd1a815bde0aed0584a4a9bc13
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39625366"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859307"
 ---
-# <a name="compliance-offering-personal-data-protection-act-pdpa-argentina"></a>コンプライアンス認証: 個人データ保護法 (PDPA) アルゼンチン
+# <a name="personal-data-protection-act-pdpa-argentina"></a>個人データ保護法 (PDPA) アルゼンチン
 
 ## <a name="about-the-pdpa"></a>PDPA について
 
-アルゼンチン憲法に従い、[個人データ保護法第 25.326 号](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) が 2,000 年に執行されたことで、個人データのプライバシーが保護され、公共データベース、私的データベース、レジストリに保管されているすべての情報に個人がアクセスできるようになりました。 内閣官房長官下の、アルゼンチンの公開情報へのアクセス機関 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)、AAIP) がこの法の執行を管轄します。
+アルゼンチン憲法に従い、[個人データ保護法第 25.326 号](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) が 2,000 年に執行されたことで、個人データのプライバシーが保護され、公共データベース、私的データベース、レジストリに保管されているすべての情報に個人がアクセスできるようになりました。 内閣官房長官下の、アルゼンチンの公開情報へのアクセス機関 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)、AAIP) がこの法の執行を管轄します。
 
 PDPA は、データ プライバシーを保護するために欧州の立法モデルに準拠しており、アルゼンチンは中南米で初めて欧州からのデータ転送に関する適性な必要条件を満たした国です。
 
-2016 年に、AAIP は新たな規則 [条項 60-E/2016](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (スペイン語) を発表し、国境を越える個人データの転送を管理しています。 このルールでは、データ管理者とデータ処理者へのデータの転送にひな型 (一部は欧州のデータ転送モデルに基づいています) を認可しています。
+2016 年に、AAIP は新たな規則 [条項 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (スペイン語) を発表し、国境を越える個人データの転送を管理しています。 このルールでは、データ管理者とデータ処理者へのデータの転送にひな型 (一部は欧州のデータ転送モデルに基づいています) を認可しています。
 
 ## <a name="microsoft-and-the-pdpa"></a>Microsoft と PDPA
 

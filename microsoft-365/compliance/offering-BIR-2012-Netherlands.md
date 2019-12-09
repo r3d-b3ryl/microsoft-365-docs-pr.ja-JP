@@ -1,7 +1,7 @@
 ---
 title: Baseline Informatiebeveiliging Rijksdienst 標準 (BIR 2012)
 description: Microsoft クラウド サービスは、オランダの公的機関が BIR 2012 標準に準拠するのを支援します。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1a928dc7093f493238b848e3427875b78171f3b4
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 12c900b61e7227d8bb2770501c59747cd9c431c8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622568"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860097"
 ---
-# <a name="compliance-offering-baseline-informatiebeveiliging-rijksdienst-standard-bir-2012"></a>コンプライアンス認証: Baseline Informatiebeveiliging Rijksdienst 標準 (BIR 2012)
+# <a name="baseline-informatiebeveiliging-rijksdienst-standard-bir-2012"></a>Baseline Informatiebeveiliging Rijksdienst 標準 (BIR 2012)
 
 ## <a name="bir-2012-overview"></a>BIR 2012 の概要
 

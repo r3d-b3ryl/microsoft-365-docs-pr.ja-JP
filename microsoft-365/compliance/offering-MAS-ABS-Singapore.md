@@ -1,7 +1,7 @@
 ---
 title: シンガポール金融庁（MAS）およびシンガポール銀行協会（ABS）
 description: Microsoft は、金融クライアントがシンガポール金融庁のアウトソーシング ガイドラインを遵守し、シンガポール銀行協会のガイダンスを適用するのを支援しています。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,15 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 36b6253a2b880704dea1875dc1fcbfad4a90af2e
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e8755b89184b52b128e2f3c1060db6cf32e2f9e4
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218626"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859617"
 ---
-# <a name="compliance-offering-monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>コンプライアンス認証: 
-シンガポール金融庁（MAS）およびシンガポール銀行協会（ABS）
+# <a name="monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>シンガポール金融庁（MAS）およびシンガポール銀行協会（ABS）
 
 ## <a name="mas-and-abs-overview"></a>MAS および ABS の概要
 

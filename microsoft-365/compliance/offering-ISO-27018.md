@@ -1,7 +1,7 @@
 ---
 title: クラウドで個人データを保護するための ISO/IEC 27018 実施基準
 description: Microsoft は、クラウド プライバシーに関するこの実施基準を順守した初のクラウド プロバイダーです。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 405b730e845cd1f27d2d495b9437bf46a4499f5e
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 300a6c5d43bdb3653426b451abb3c82709194039
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218606"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859677"
 ---
-# <a name="compliance-offering-isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>コンプライアンス認証: クラウドで個人データを保護するための ISO/IEC 27018 実施基準
+# <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>クラウドで個人データを保護するための ISO/IEC 27018 実施基準
 
 ## <a name="isoiec-27018-overview"></a>ISO/IEC 27018 の概要
 

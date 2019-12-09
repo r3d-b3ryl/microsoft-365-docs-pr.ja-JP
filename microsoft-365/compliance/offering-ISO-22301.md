@@ -1,7 +1,7 @@
 ---
 title: ISO 22301:2012 ビジネス継続性管理標準
 description: Microsoft はこれらのビジネス継続性管理基準の実施に関する認証を取得しています。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d04a087ee0c58ec544128c6b8a510da1e1ae9bce
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 1f4bfd1c219de2126bc6cb9443f3b899b99945c6
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233560"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859697"
 ---
-# <a name="compliance-offering-iso-223012012-business-continuity-management-standard"></a>コンプライアンス認証: ISO 22301:2012 ビジネス継続性管理標準
+# <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 ビジネス継続性管理標準
 
 ## <a name="iso-22301-overview"></a>ISO 22301 の概要
 

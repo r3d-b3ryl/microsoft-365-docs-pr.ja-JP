@@ -1,7 +1,7 @@
 ---
 title: コンプライアンス認証 - Cloud Security Alliance (CSA) STAR Self-Assessment
 description: Microsoft の STAR Self-Assessment では、クラウド サービスにおいて Cloud Security Alliance の要件を満たす方法の詳細を説明しています。
-keywords: Microsoft 365、コンプライアンス、認証
+keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f526845ccaee4ea914c3859d4a2a9c34068048
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: 73a21ba3089646df55ad51a7918749f29691aad8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38763035"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859427"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-self-assessment"></a>コンプライアンス認証: Cloud Security Alliance (CSA) STAR Self-Assessment
+# <a name="cloud-security-alliance-csa-star-self-assessment"></a>Cloud Security Alliance (CSA) STAR Self-Assessment
 
 ## <a name="csa-star-self-assessment-overview"></a>CSA STAR Self-Assessment の概要
 
