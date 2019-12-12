@@ -2,7 +2,7 @@
 title: Microsoft 365 セキュリティ センターの概要
 description: Microsoft の id、データ、デバイス、およびアプリのセキュリティを監視および管理するための新しいホームについて説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、id、データ、デバイス、アプリ
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: e58ceb29693fbf950ba64c267332cf2b3efcadc0
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831998"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909976"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
@@ -27,7 +27,11 @@ Microsoft 365 セキュリティセンター--Microsoft の id、データ、デ
 
 新しい Microsoft 365 セキュリティセンターと[microsoft 365 コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)は、セキュリティチームおよびコンプライアンスチームのニーズを満たすために設計された専用のワークスペースです。 これらのソリューションは、Microsoft 365 サービス間で統合されており、リスクを軽減し、デジタルスペースを保護するのに役立つ、実践的な洞察を提供します。
 
-Microsoft 365 セキュリティセンターの security.microsoft.com にアクセスします。  
+Microsoft 365 セキュリティセンター () を[https://security.microsoft.com](https://security.microsoft.com)参照してください。 
+
+> [!NOTE]
+> Microsoft 365 セキュリティセンターにアクセスするには、Azure Active Directory のグローバル管理者、セキュリティ管理者、セキュリティオペレーター、セキュリティリーダーなどの適切な役割が割り当てられている必要があります。
+
 
 ## <a name="lets-take-a-closer-look"></a>詳しく見てみましょう。
 
@@ -35,24 +39,25 @@ Microsoft 365 セキュリティセンターの security.microsoft.com にアク
 
 この情報は、組織内の最新のアクティビティを把握するのに役立つ情報を示しています。 Microsoft 365 セキュリティセンターは、さまざまなソースからの信号を統合して、Microsoft 365 環境の全体的なビューを表示します。
 
-![Microsoft 365 セキュリティホームページ](../media/security-docs/home.jpg)
-
 Microsoft 365 セキュリティ センターには以下のものが含まれます。
 
 * **自宅**–組織の全体的なセキュリティの健全性を一目で確認できます。
-* **アラート**– Microsoft Cloud App Security、OFFICE 365 ATP、Azure AD、MICROSOFT Defender ATP からのアラートを含む、microsoft 356 環境全体のすべての通知をより詳細に把握できます。 E3 および E5 のお客様が使用できます。  
+* **インシデント**-エンティティの個々の通知に表示されるドットを接続することによって、より広範な攻撃のストーリーを参照できます。 攻撃が開始された場所、影響を受けているデバイス、脅威が発生した場所を正確に把握できます。
+* **アラート**– Microsoft Cloud App Security、OFFICE 365 ATP、azure AD、azure Atp、MICROSOFT Defender atp などのアラートを含む、microsoft 356 環境全体のすべての通知をより詳細に把握できます。 E3 および E5 のお客様が使用できます。  
+* **アクションセンター** -セキュリティチームが手動で対処する必要のあるアラートの量を減らし、セキュリティ運用チームがより高度な脅威やその他の高価値イニシアティブに集中できるようにします。
 * **レポート**–ユーザー、デバイス、アプリなどをより適切に保護するために必要な詳細情報と情報を取得します。
 * **セキュア スコア** - Microsoft セキュア スコアを使用して、全体的なセキュリティ体制を改善します。 このページには、有効にしたさまざまなセキュリティ機能の概要と、改善するための推奨事項が記載されています。
-* **ハンティング** - マルウェア、不審なファイル、および Microsoft 365 組織内のアクティビティを積極的に検索します。
+* **高度な**検索– Microsoft 365 組織のマルウェア、疑わしいファイル、アクティビティを積極的に検索します。
 * **分類** - ラベルを追加してドキュメント、メール メッセージ、ドキュメント、サイトなどを分類することにより、データ損失を防ぎます。 ラベルを適用すると (自動またはユーザーによって)、選択した設定に基づいてコンテンツまたはサイトが保護されます。 たとえば、ファイルを暗号化し、コンテンツ マーキングを追加し、特定のサイトへのユーザー アクセスを制御するラベルを作成できます。
 * **ポリシー** - デバイスを管理し、脅威から保護し、組織内のさまざまなアクティビティに関するアラートを受信するためのポリシーを設定します。
 * **アクセス許可** - 組織内の誰が Microsoft 365 セキュリティ センターにアクセスしてコンテンツを表示し、タスクを実行できるかを管理します。 Azure AD ポータルで Microsoft 365 のアクセス許可を割り当てることもできます。
 
-## <a name="learn-more"></a>詳細情報
+## <a name="learn-more"></a>詳細情報 
 
 次のトピックでは、セキュリティニーズの監視、レビュー、および対応について説明します。
-
-*  [Microsoft セキュリティスコア](microsoft-secure-score.md)を使用してセキュリティの姿勢 holistically を確認して改善する
-* Id、データ、デバイス、アプリ、およびインフラストラクチャの状態を[報告](monitoring-and-reporting.md)する
-* メール、データ、デバイス、アカウントに影響を与える侵入行為とブリーチアクティビティを[事前に探し](hunting.md)ます。
-* 脅威分析に関する[最新の攻撃キャンペーン](latest-attack-campaigns.md)および手法を理解する
+- 警告のドットを[インシデント](incident-queue.md)で接続する
+- [自動調査と修復](mtp-autoir.md)を使用して脅威を自動的に修復する
+-  [Microsoft セキュリティスコア](microsoft-secure-score.md)を使用してセキュリティの姿勢 holistically を確認して改善する
+- Id、データ、デバイス、アプリ、およびインフラストラクチャの状態を[報告](monitoring-and-reporting.md)する
+- メール、データ、デバイス、およびアカウントに影響する侵入行為および違反アクティビティの[脅威を事前に探し](advanced-hunting-overview.md)ます。
+- 脅威分析に関する[最新の攻撃キャンペーン](latest-attack-campaigns.md)および手法を理解する

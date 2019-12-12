@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 1f642d2790af5f4ec83dd1bbe57a9be249d095d1
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634034"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962334"
 ---
 # <a name="reliability-insights"></a>信頼性の分析情報
 
 このビューでは、管理対象デバイスの正常性の概要が提供されます。 信頼性データを表示するには、[**信頼性**] タブを選択します。
 
 
-![信頼性ウィンドウ](images/insights_reliability.png)
+![[信頼性] ウィンドウ: デバイス間の信頼性を左上に、時間の経過による信頼性を右上に、トップの問題の表を下にします。 ヘルプとフィードバックのボタンが右下に表示されます。](images/insights_reliability.png)
 
 「 **Devices**による信頼性」セクションでは、過去14日間にわたる展開の迅速な正常性の概要を提供します。これにより、"正常" と見なされているデバイスの割合と前回報告されたエラー以降に監視された平均時間を報告します。 
 

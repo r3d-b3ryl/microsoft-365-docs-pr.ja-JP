@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668790"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967165"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Microsoft 365 Business で Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
 
@@ -47,7 +47,7 @@ Azure Active Directory に参加している Windows 10 デバイスはすべて
     
 Azure AD に参加しているデバイスのオンプレミスのリソースにアクセスするために、追加の手順は必要ありません。 この機能は、Windows 10 に組み込まれています。 
 
-[PIN/Bio] のように、パスワード以外の方法で、(WHFB credential ログイン経由で) AADJ デバイスにログインし、オンプレミスのリソース (共有、プリンター) にアクセスする予定がある場合。など)。https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
+[PIN/Bio] のように、パスワード以外の方法で、(WHFB credential ログイン経由で) AADJ デバイスにログインし、オンプレミスのリソース (共有、プリンター) にアクセスする予定がある場合。など)。https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 前述の Azure AD に参加しているデバイス構成に組織が展開する準備ができていない場合は、[ハイブリッド AZURE ad の参加](manage-windows-devices.md)しているデバイス構成を設定することを検討してください。
   

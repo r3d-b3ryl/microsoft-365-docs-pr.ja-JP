@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871763"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970333"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -99,7 +99,7 @@ ms.locfileid: "39871763"
 
 - **失敗**: メッセージは配信されませんでした。
 
-- **検疫**済み: メッセージが検疫されました (スパム、バルクメール、またはフィッシングとして)。 詳細については、「[Office 365 でのメール メッセージの検疫](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx)」を参照してください。
+- **検疫**済み: メッセージが検疫されました (スパム、バルクメール、またはフィッシングとして)。 詳細については、「[Office 365 でのメール メッセージの検疫](quarantine-email-messages.md)」を参照してください。
 
 - **スパムとしてフィルター処理**: メッセージがスパムとして検出され、拒否またはブロックされました (検疫されていません)。
 
@@ -235,7 +235,7 @@ ms.locfileid: "39871763"
 
 - **sender_address**: 送信者の電子メールアドレス (*エイリアス*@*ドメイン*)。
 
-- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、[ \<*電子メールアドレス*\>##\<の*状態*\>] の形式で、それぞれの受信者と対応するステータスが表示されます。 次に例を示します。
+- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、[ \<*電子メールアドレス*\>##\<の*状態*\>] の形式で、それぞれの受信者と対応するステータスが表示されます。 例:
 
   - **# #Receive, Send**は、メッセージがサービスによって受信され、意図した宛先に送信されたことを意味します。
 
@@ -273,13 +273,13 @@ ms.locfileid: "39871763"
 
 - **server_hostname**: 宛先サーバーのホスト名または FQDN。
 
-- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 次に例を示します。
+- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 例:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **source**: イベントを担当する Exchange Online コンポーネント。 次に例を示します。
+- **source**: イベントを担当する Exchange Online コンポーネント。 例:
 
   - `AGENT`
 
@@ -297,7 +297,7 @@ ms.locfileid: "39871763"
 
 - **related_recipient_address**: メッセージに`EXPAND`関連`REDIRECT`付けら`RESOLVE`れた他の受信者の電子メールアドレスを表示するために、、およびイベントと共に使用します。
 
-- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 次に例を示します。
+- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 例:
 
   - **Dsn**: このイベントの後に dsn が生成された場合に、関連付けられている配信状態通知 (dsn、配信不能レポート、NDR、またはバウンスメッセージとも呼ばれる) の**message_id**値であるレポートリンクが含まれています。 これが DSN メッセージの場合、このフィールドには、DSN が生成された元のメッセージの**message_id**値が含まれます。
 
@@ -315,7 +315,7 @@ ms.locfileid: "39871763"
 
 - **return_path**: メッセージを送信した**MAIL FROM**コマンドによって指定された返信電子メールアドレス。 このフィールドは空になることはありませんが、null の送信者アドレス`<>`値をとして表すことができます。
 
-- **message_info**: メッセージに関する追加情報。 次に例を示します。
+- **message_info**: メッセージに関する追加情報。 例:
 
   - メッセージの発信元の日付と`DELIVER` `SEND`イベントの UTC の日時。 発信日時は、メッセージが最初に Exchange Online 組織に入った時刻です。 UTC の日時は、ISO 8601 の日付と時刻の形式で表され`yyyy-mm-ddThh:mm:ss.fffZ`ます。 `yyyy`ここで、 `mm` = year、 `dd` = month、 `T` = day は、時間コンポーネントの開始`hh`を示し、 `mm` = hour、 `ss` = minute、 `fff` = second、= 小数点`Z` `Zulu`以下の値を示します。これは、utc を示すもう1つの方法です。
 

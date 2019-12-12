@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報の概要について説明します。
-ms.openlocfilehash: 5c6ef13bbbb46de63dfb0cfecfa0824d8e50547d
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034178"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967970"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp; /コンプライアンスセンターのスマートレポートと洞察
 
@@ -50,7 +50,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターで利用�
 |:-----|:-----|:-----|
 |**セキュリティ&amp;コンプライアンスセンターのレポート**(すべて)  <br/> データ損失防止レポート、ラベル、電子メール&amp;セキュリティレポート、高度な脅威保護レポートなど、セキュリティコンプライアンスレポートへのリンクが含まれています。  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**レポート** \> ]**ダッシュボード**に移動します。 <br/> |[Microsoft 365 セキュリティセンターのレポートを監視および表示する](../mtp/monitoring-and-reporting.md) <br/> |
 |**データ損失防止** <br/> データ損失防止ポリシーの一致、誤検知と上書き、ポリシーを作成または編集するリンク  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**データ損失防止** \> **ポリシー** ] に移動します。 <br/> |[データ損失防止のレポートを表示する](../../compliance/view-the-dlp-reports.md) <br/> |
-|**データガバナンス** <br/> ラベルの適用方法、レコードとして分類されたラベル、ラベルの傾向などについて説明します。  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**データガバナンス** \> **ダッシュボード**] に移動します。 <br/> |[データ ガバナンスのレポートを表示する](../../compliance/view-the-data-governance-reports.md) <br/> |
+|**データガバナンス** <br/> ラベルの適用方法、レコードとして分類されたラベル、ラベルの傾向などについて説明します。  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**情報ガバナンス** \> **ダッシュボード**] に移動します。 <br/> |[データ ガバナンスのレポートを表示する](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**脅威管理ダッシュボード**(セキュリティダッシュボードおよび脅威インテリジェンスダッシュボードとも呼ばれます)  <br/> 脅威の検出、マルウェアの傾向、上位の対象ユーザー、送受信された電子メールメッセージなどの詳細  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**脅威管理** \> ]**ダッシュボード**に移動します。 <br/> |[セキュリティ ダッシュボードの概要](security-dashboard.md) <br/> |
 |**脅威エクスプローラー** (エクスプローラーとも呼ばれます) または**リアルタイム検出** <br/> Office 365 の電子メールとファイルで検出された疑いのあるマルウェア  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**脅威管理** \> **エクスプローラー** ] または [**リアルタイム検出**] に移動します。<br/> |[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md) <br/> |
 |**Advanced Threat Protection および電子メールセキュリティレポート** <br/> 電子メールセキュリティおよび脅威保護レポート (マルウェア、スパム、フィッシング、スプーフィングレポートを含む)  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**レポート** \> ]**ダッシュボード**に移動します。 <br/> |[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md) <br/><br/> [セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](../../compliance/view-email-security-reports.md) <br/> |

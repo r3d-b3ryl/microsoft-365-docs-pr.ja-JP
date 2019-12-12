@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 受信拒否リストのオプションには、Outlook のブロックされた送信者、スパム対策送信者/ドメイン禁止リスト、IP 禁止一覧、および Exchange トランスポートルール (Etr) がメールフロールールとも呼ばれます。
-ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793711"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970893"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Office 365 で受信拒否リストを作成する
 
@@ -43,7 +43,7 @@ ms.locfileid: "38793711"
 > [!IMPORTANT]
 > 不要なメッセージがよく知られ認識可能なソースからのニュースレターである場合は、電子メールからの登録を中止して、ユーザーが今後メールを受信できないようにすることもできます。
 
-この設定手順は、 [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)と[outlook クライアント](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)で異なります。 受信拒否が原因でメッセージが正常にブロックされると、メッセージがブロックされていることを示す " **fv: BLK" というメッセージがスパム対策に表示され**ます。
+この設定手順は、 [outlook on the web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)と[outlook クライアント](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)で異なります。 受信拒否が原因でメッセージが正常にブロックされると、メッセージがブロックされていることを示す " **fv: BLK" というメッセージがスパム対策に表示され**ます。
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>スパム対策ポリシーの送信者/ドメインブロックリストを使用する
 

@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074739"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962604"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをユーザー自身が登録する
 
@@ -96,7 +96,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
     - モデル 
     - Serial_Number 
     - ハードウェアハッシュ
-7. [**OK**] を選択します。
+7. **[OK]** をクリックします。
 
 **次に、** 次の手順に従ってレポートの表示を定義し、レポートを作成します。
 
@@ -208,7 +208,7 @@ CSV ファイルは、登録用に特定の形式である必要があります�
 
 Microsoft マネージドデスクトップの[Azure ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
 
-[![[デバイスの登録] を選択した後のフライイン](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
 [//]: # (残念ながら、これは当てはまりません。このメモを削除することはできますが、それについてお客様がチャットできるようになるまで、そのままにしておきます。)

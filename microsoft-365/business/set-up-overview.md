@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business のセットアップ手順の概要。
-ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812780"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967625"
 ---
 # <a name="overview-of-setup"></a>手順の概要
 
@@ -50,14 +50,16 @@ ms.locfileid: "39812780"
   
   セットアップウィザードのセキュリティ設定に加えて、次の設定を追加することによって、セキュリティを向上させることができます。
 
-      - **メールマルウェア対策**
-      - **ATP のフィッシング対策**
-      - **Exchange Online Archiving**
-      - **Azure Information Protection (Plan1**)
 
-          開始するには、「 [advanced security policies をセットアップ](set-up-advanced-security.md)する」を参照してください。
+- **メールマルウェア対策**
+- **ATP のフィッシング対策**
+- **Exchange Online Archiving**
+- **Azure Information Protection (Plan1**)
 
-        セキュリティに関するベストプラクティスのロードマップについては[、Microsoft 365 Business をセキュリティで保護するための10のトップの方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)も参照してください。
+
+開始するには、「 [advanced security policies をセットアップ](set-up-advanced-security.md)する」を参照してください。
+
+セキュリティに関するベストプラクティスのロードマップについては[、Microsoft 365 Business をセキュリティで保護するための10のトップの方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)も参照してください。
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>手順 3: Windows 10 デバイスをセットアップおよび管理する
 

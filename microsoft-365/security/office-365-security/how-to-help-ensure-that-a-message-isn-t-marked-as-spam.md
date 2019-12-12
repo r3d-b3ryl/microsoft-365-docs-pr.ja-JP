@@ -14,19 +14,19 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。 そのためのヒントおよび手順に関する更新されたバージョンの情報については、「セーフリストまたはその他の手法を使って、正しいメールが誤って迷惑メールとしてマークされるのを防ぐ」を参照してください。
-ms.openlocfilehash: c865c9e972dc1ce6a7394fab0efb94ec1a532e48
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: ef405aaef888937e1d1f9495f4d23a8b23c5ce06
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441124"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970413"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>メッセージがスパムとしてマークされないようにする方法
 
-Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。そのためのヒントおよび手順に関する更新されたバージョンの情報については、「[セーフリストまたはその他の手法を使って、正しいメールが誤って迷惑メールとしてマークされるのを防ぐ](https://go.microsoft.com/fwlink/p/?LinkID=534224)」を参照してください。
+Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。 [Office 365 で良好なメールがスパムとしてマークされないようにする方法](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)については、更新されたバージョンのヒントと手順を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 [Exchange Online の差出人セーフ リストと受信拒否リスト](safe-sender-and-blocked-sender-lists-faq.md)
 
-[Office 365 の電子メールのスパム対策保護](https://support.office.com/article/Office-365-Email-Anti-Spam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Office 365 メールのスパム対策保護](anti-spam-protection.md)

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メールフロールール (トランスポートルール) を使用して、Office 365 組織を通過するメッセージを識別し、処理を行うことができます。
-ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 604e2c7cb0b2cc34021e6708ae9f08769e8e6e91
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441534"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970343"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection のメール フロー ルール (トランスポート ルール)
 
@@ -41,7 +41,7 @@ ms.locfileid: "37441534"
 
 - [Exchange Online Protection でファイルの添付のブロックを通じてマルウェアの脅威を削減する](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [電子メール メッセージの暗号化または暗号化解除ルールの定義](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [Office 365 で電子メールメッセージを暗号化または暗号化解除するルールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 次のビデオは、Exchange Online Protection でのメールフロールールの設定のデモを示しています。
 
@@ -106,9 +106,9 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 |**メッセージの種類**|**ルールを適用可能か**|
 |:-----|:-----|
 |**通常のメッセージ**: 単一のリッチテキスト形式 (RTF)、HTML、プレーンテキストのメッセージ本文、またはメッセージ本文のマルチパートまたは代替セットが含まれるメッセージ。|はい|
-|**Office 365 メッセージ暗号化**: office 365 での Office 365 メッセージの暗号化によって暗号化されたメッセージ。 詳細については、「 [Office 365 での暗号化](https://go.microsoft.com/fwlink/p/?LinkId=392525)」を参照してください。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> 暗号化されたメッセージのコンテンツをルールで検査または変更する場合、トランスポート復号化が有効になっていることを確認する必要があります (必須または省略可能。既定は省略可能です)。詳細については、「[トランスポート解読を有効または無効にする](https://go.microsoft.com/fwlink/p/?linkid=848060)」を参照してください。  <br/><br/> 暗号化されたメッセージを自動的に復号化するルールを作成することもできます。詳細については、「[電子メール メッセージの暗号化または暗号化解除ルールの定義](https://go.microsoft.com/fwlink/p/?Linkid=402846)」を参照してください。  |
+|**Office 365 メッセージ暗号化**: office 365 での Office 365 メッセージの暗号化によって暗号化されたメッセージ。 詳細については、「[Office 365 での暗号化](https://docs.microsoft.com/microsoft-365/compliance/encryption)」をご覧ください。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> 暗号化されたメッセージの内容を検査または変更するルールについては、トランスポート復号化が有効になっていることを確認する必要があります (必須またはオプション)。既定値はオプションです。 詳細については、「 [Office 365 で電子メールメッセージを暗号化または暗号化解除するルールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)」を参照してください。|
 |**S/MIME 暗号化されたメッセージ**|ルールは、エンベロープ ヘッダーにのみアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> メッセージ コンテンツの検査を必要とする条件を使用したルール、またはメッセージのコンテンツを変更するアクションを処理することはできません。|
-|**RMS で保護されたメッセージ**: Active Directory Rights management サービス (AD RMS) または Azure Rights MANAGEMENT (RMS) ポリシーが適用されているメッセージ。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> RMS で保護されたメッセージのコンテンツをルールで検査または変更する場合、トランスポート復号化が有効になっていることを確認する必要があります (必須または省略可能。既定は省略可能です)。詳細については、「[トランスポート解読を有効または無効にする](https://go.microsoft.com/fwlink/p/?linkid=848060)」を参照してください。  |
+|**RMS で保護されたメッセージ**: Active Directory Rights management サービス (AD RMS) または Azure Rights MANAGEMENT (RMS) ポリシーが適用されているメッセージ。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> RMS で保護されたメッセージの内容を検査または変更するルールについては、トランスポート復号化が有効になっていることを確認する必要があります (必須または任意、既定値はオプション)。|
 |**クリア署名付きメッセージ**: 署名されているが、暗号化されていないメッセージ。|はい|
 |**UM メッセージ**: ボイスメール、fax、不在着信通知などのユニファイドメッセージングサービスによって作成または処理されたメッセージ、および Microsoft Outlook voice Access を使用して作成または転送されたメッセージ。|はい|
 |**匿名メッセージ**: 匿名送信者によって送信されたメッセージ。|はい|
@@ -126,4 +126,4 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 
 [Office 365 での電子メールの暗号化](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
 
-[ジャーナル、トランスポート、受信トレイのルール上の制限](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[ジャーナル、トランスポート、受信トレイのルール上の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012302"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962244"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ
 
@@ -40,11 +40,12 @@ ms.locfileid: "38012302"
 3. [**展開状態**] ワークスペースで、展開する設定を選択し、展開する段階的展開を選択します。
 4. 展開グループのいずれかに変更を展開するには、[**展開**] を選択します。
 
-![構成可能な設定の](images/1deployedit.png)展開状態の概要 Microsoft Managed Desktop では、展開グループへの展開をこの順序で実行することをお勧めします。テスト、ファースト、Fast、および広範。 
+![展開状態ワークスペース。 右側の [信頼済みサイト] ウィンドウ。 [展開グループ] セクションには、[展開グループ]、[デバイス]、[状態] の3つの列があります。 [状態] 列の [展開] が強調表示されています。](images/1deployedit.png)
+展開グループへの展開は、次の順序で行うことをお勧めします。 Test、First、Fast、および広義です。 
 
 各グループで変更が完了すると、状態が [**完了**] に変わります。
 
-![構成可能な設定の展開の完了](images/2completeedit.png)
+![更新日、バージョン、テスト、最初、高速、および広範な列を含む展開状態ワークスペース。 プロキシ行が展開され、それぞれの4つの展開グループで "complete" というフラグが付けられた日付形式の設定が表示されます。](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>展開を元に戻す
 
@@ -56,10 +57,10 @@ ms.locfileid: "38012302"
 1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
 2. [**設定**] で、[**構成可能**] を選択します。
 3. [**展開状態**] ワークスペースで、元に戻す設定を選択してから、元に戻す段階的な展開を選択します。
-4. **この変更を元に戻す必要がある**場合は、[**展開を元に戻す**] を選択します。
+4. [**この変更を元に戻す必要がありますか?**] で、[**展開の取り消し**] を選択します。
 
-![構成可能な設定の展開の復元](images/3revert.png) 
+![展開状態ワークスペース。 ブラウザーの開始ページが選択され、送信された変更とその状態に関するデータで右側のウィンドウが開きます。 下部にある [この変更を元に戻す必要があります] 領域は、「展開を元に戻す」を選択できます。](images/3revert.png) 
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他のリソース
 - [構成可能な設定の概要](config-setting-overview.md)
 - [構成可能な設定のリファレンス](config-setting-ref.md) 

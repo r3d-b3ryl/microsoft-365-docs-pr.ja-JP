@@ -22,19 +22,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 安全なリンクを使用して、フィッシングやその他の攻撃から組織を保護します。'
-ms.openlocfilehash: 2418704c7d3d1eced0194418e98f9833cf2f962b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fadec60dc25aad418480d7c26a06e92f5a2065dd
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865907"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970913"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP の安全なリンク
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクの概要
 
 > [!IMPORTANT]
-> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook の安全なリンクに関する情報を探している場合は、「[Outlook.com の高度なセキュリティ](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook の安全なリンクに関する情報を探している場合は、「[Outlook.com の高度なセキュリティ](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 Office 365 の ATP の安全なリンク ( [Advanced Threat Protection](office-365-atp.md)の一部) は、[電子メールメッセージ](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email)や[Office ドキュメント](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents)内の web アドレス (url) の確認時間を提供することにより、組織を保護するのに役立ちます。 保護は、Office 365 セキュリティチームによって設定された[ATP の安全なリンクポリシー](set-up-atp-safe-links-policies.md)によって定義されます。
   

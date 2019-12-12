@@ -1,9 +1,9 @@
 ---
-title: Office 365 脅威の調査および対応
+title: Office 365 の脅威の調査と応答機能 (Office 365 Advanced Threat Protection プラン 2)
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/03/2019
+ms.date: 12/04/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,31 +15,32 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: 63b5579c5a3e52273064f85a901a6b592e7dd939
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 1e8a3cee67a3fdb56042bc83dac7b09367241bf3
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813737"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39968000"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
 Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-365-atp.md)は、セキュリティアナリストおよび管理者が組織の office 365 ユーザーを保護するのに役立ちます。
-  
-- Cyberattacks の識別、監視、理解を容易にする
-    
+- Cyberattacks を容易に識別、監視、理解できるようにする
 - Exchange Online、SharePoint Online、OneDrive for Business、および Microsoft Teams での脅威への迅速な対応
-    
 - 組織に対する cyberattacks を防止するためにセキュリティ操作を支援するための洞察と知識の提供
-
-- 重要な電子メールベースの脅威に対する[自動インシデント対応](automated-investigation-response-office.md)の採用
+- メールベースの重要な脅威に対して[Office 365 で自動化された調査と応答](automated-investigation-response-office.md)を使用する
     
-脅威の調査と応答の機能は、Office 365 セキュリティ&amp;コンプライアンスセンターで利用可能な脅威と関連する応答アクションについての洞察を提供します。 これらの洞察は、組織のセキュリティチームが、電子メールまたはファイルベースの攻撃から Office 365 ユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、侵害された Pc、セキュリティインシデントなど、複数のソースからの信号を監視し、データを収集するのに役立ちます。 ビジネス意思決定者および Office 365 の全体管理者、セキュリティ管理者、およびセキュリティアナリストは、この情報を使用して Office 365 ユーザーに対する脅威を理解し、それに対処し、知的財産権を保護することができます。
+脅威の調査と応答の機能は、Office 365 セキュリティ&amp;コンプライアンスセンターで利用可能な脅威と関連する応答アクションについての洞察を提供します。 これらの洞察は、組織のセキュリティチームが、電子メールまたはファイルベースの攻撃から Office 365 ユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、危険にさらされた Pc、セキュリティインシデントなど、複数のソースからのデータを監視し、データを収集するのに役立ちます。 ビジネス意思決定者およびセキュリティ運用チームは、この情報を使用して組織との脅威を理解し、知的財産権を保護することができます。
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>脅威の調査と応答のツールについて理解する
 
-脅威の調査と応答の機能は、 &amp;セキュリティコンプライアンスセンターで、[脅威ダッシュボード](#threat-dashboard)、[エクスプローラー](#threat-explorer)、[インシデント](#incidents)、[アタックシミュレータ](#attack-simulator)、および[自動インシデント応答](automated-investigation-response-office.md)を含む一連のツールおよび応答ワークフローとして公開されています。
-  
+セキュリティ&amp;コンプライアンスセンターでの脅威の調査と応答の機能は、次のような一連のツールと応答のワークフローとして提供されます。
+- [脅威ダッシュボード](#threat-dashboard)
+- [Explorer](#threat-explorer)
+- [事件](#incidents)
+- [アタックシミュレータ](#attack-simulator)
+- [自動調査および対応](automated-investigation-response-office.md)
+
 ### <a name="threat-dashboard"></a>脅威ダッシュボード
 
 脅威ダッシュボード ([セキュリティダッシュボード](security-dashboard.md)とも呼ばれます) を使用して、どのような脅威が解決されたかをすばやく確認し、ビジネス意思決定者に対して Office 365 サービスがビジネスをどのようにセキュリティで保護しているかを視覚的に報告することができます。
@@ -72,7 +73,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 ### <a name="automated-investigation-and-response"></a>自動調査および対応
 
-自動化された調査と応答 (AIR) 機能を使用して、コンテンツ、デバイス、およびユーザーを組織内の脅威から危険に関連付ける時間と労力を節約します。 AIR プロセスは、特定の警告がトリガーされたとき、またはセキュリティ操作チームによって開始されたときに開始できます。 詳細については、「[Office 365 で自動インシデント応答](automated-investigation-response-office.md)」を参照してください。 
+自動化された調査と応答 (AIR) 機能を使用して、コンテンツ、デバイス、およびユーザーを組織内の脅威から危険に関連付ける時間と労力を節約します。 AIR プロセスは、特定の警告がトリガーされたとき、またはセキュリティ操作チームによって開始されたときに開始できます。 詳細については、「 [Office 365 の自動調査と応答](automated-investigation-response-office.md)」を参照してください。 
   
 ## <a name="threat-intelligence-widgets"></a>脅威インテリジェンスウィジェット
 
@@ -82,33 +83,26 @@ Office 365 Advanced Threat Protection プラン2のサービスの一部とし�
   
 ## <a name="how-do-we-get-these-capabilities"></a>これらの機能はどのように入手できますか?
 
-Office 365 の脅威の調査と応答の機能は、Office 365 Advanced Threat Protection プラン2および Enterprise E5 に含まれています。 
+Office 365 の脅威の調査と応答の機能は、Enterprise E5 に含まれる Office 365 Advanced Threat Protection プラン2に含まれています。また、特定のサブスクリプションのアドオンとして含まれています。 詳細については、「 [Office 365 ATP plan 1 And Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2)」を参照してください。
+
+## <a name="required-roles-and-permissions"></a>必要な役割とアクセス許可
+
+Office 365 Advanced Threat Protection は、役割ベースのアクセス制御を使用します。 アクセス許可は、Azure Active Directory、Microsoft 365 管理センター、または Office 365 セキュリティ & コンプライアンスセンターの役割によって割り当てられます。
 
 > [!TIP]
-> これらの脅威の調査および応答機能を備えていない Office 365 サブスクリプションが組織にある場合、Office 365 Advanced Threat Protection プラン2をアドオンとして購入する可能性があります。 プランオプションの詳細については、「 [office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」および「[購入または編集 (office 365 for business)](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)」を参照してください。
-  
-1. Office 365 の全体管理者として[https://admin.microsoft.com](https://admin.microsoft.com) 、に移動して、office 365 の職場または学校のアカウントを使用してサインインします。 
-    
-2. [**管理者** \> **課金**] を選択して、現在のサブスクリプションに含まれる内容を確認します。 
-    - **Office 365 Enterprise E5**が表示されている場合は、組織に Office 365 Advanced Threat Protection プラン2があります (脅威の調査と応答の機能を含みます)。 
-    - **Office 365 Enterprise E3**または**Office 365 enterprise E1**などの別のサブスクリプションが表示される場合は、「Office 365 Advanced Threat Protection プラン2」を追加することを検討してください。 (これを行うには、[**サブスクリプションの追加**] を選択します。)
-    
-3. Microsoft 365 管理センターで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。
-    
-4. Office 365 Advanced Threat Protection プラン2ライセンスをアクティブなすべてのユーザーに割り当てます。 (こののライセンスを持っているユーザーのみが、エクスプローラなどのレポートに表示されます)。
-    
-5. Office 365 Advanced Threat Protection を使用する組織内のユーザーに役割を割り当てます。 「[ユーザーに Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照し、次の表を参照してください。<br/><br/>
+> セキュリティ管理者などの一部の役割は、Office 365 セキュリティ & コンプライアンスセンターで割り当てることができますが、代わりに Microsoft 365 管理センターまたは Azure Active Directory のどちらかを使用することを検討してください。 役割、役割グループ、およびアクセス許可の詳細については、以下のリソースを参照してください。
+> - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+> - [Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 
-  |**実行する処理...** <br/> |**これらの役割が必要です。** <br/> |  
-  |:-----|:-----|
-  |脅威ダッシュボード (または新しい[セキュリティダッシュボード](security-dashboard.md)) を使用する<br/> 最近の脅威または現在の脅威に関する情報を表示する  <br/> |次のいずれか (Azure Active Directory または Office 365 セキュリティ&amp;コンプライアンスセンターで割り当てられたもの): <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> |
-  |脅威[エクスプローラー (およびリアルタイム検出)](threat-explorer.md)を使用して脅威を分析する  <br/> |次のいずれか (Azure Active Directory または Office 365 セキュリティ&amp;コンプライアンスセンターで割り当てられたもの): <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> |
-  |インシデント (調査とも呼ばれる) を表示する <br/> インシデントに電子メールメッセージを追加する  <br/> |次のいずれか (Azure Active Directory または Office 365 セキュリティ&amp;コンプライアンスセンターで割り当てられたもの): <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/>  <br/> |
-  |インシデントで電子メールアクションをトリガーする  <br/> 疑わしい電子メールメッセージの検索と削除  <br/> |次のいずれか (Azure Active Directory または Office 365 セキュリティ&amp;コンプライアンスセンターで割り当てられたもの): <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>---と---<br/>- **検索と削除**(Office 365 セキュリティ&amp;コンプライアンスセンターでのみ割り当てられる)  <br/> |
-  |Office 365 Advanced Threat Protection プラン2を Microsoft Defender ATP と統合する  <br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する  <br/> |次のいずれか (Azure Active Directory または Office 365 セキュリティ&amp;コンプライアンスセンターで割り当てられたもの): <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>---と---<br/>追加のアプリケーション (Microsoft Defender セキュリティセンター、SIEM サーバーなど) で割り当てられる適切な役割  <br/> |
+|アクティビティ |ロールと権限 |  
+|:-----|:-----|
+|脅威ダッシュボード (または新しい[セキュリティダッシュボード](security-dashboard.md)) を使用する<br/> <br/>最近の脅威または現在の脅威に関する情報を表示する  <br/> |以下のいずれか: <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで割り当てることができます。 |
+|脅威[エクスプローラー (およびリアルタイム検出)](threat-explorer.md)を使用して脅威を分析する  <br/> |以下のいずれか: <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで割り当てることができます。 |
+|インシデント (調査とも呼ばれる) を表示する <br/> インシデントに電子メールメッセージを追加する  <br/> |以下のいずれか: <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで割り当てることができます。  |
+|インシデントで電子メールアクションをトリガーする <br/> <br/> 疑わしい電子メールメッセージの検索と削除  <br/> |以下のいずれか: <br/>- **Office 365 グローバル管理者**  <br/> - **セキュリティ管理者**、**および検索と削除**の役割<br/><br/>**グローバル管理**者および**セキュリティ管理者**の役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかに割り当てることができます。 <br/><br/>**検索および削除**の役割は、Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) で割り当てる必要があります。 |
+|Office 365 Advanced Threat Protection プラン2と Microsoft Defender Advanced Threat Protection の統合  <br/><br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する  <br/> |**Office 365 の全体管理者**または Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に割り当てられている**セキュリティ管理者**の役割のいずれか。<br/>--- **plus** ---<br/>追加のアプリケーション ( [Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 、SIEM サーバーなど) で割り当てられている適切な役割  |
    
-役割、役割グループ、およびアクセス許可の詳細については、「 [Office 365 &amp;セキュリティコンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
     
 ## <a name="next-steps"></a>次の手順
 

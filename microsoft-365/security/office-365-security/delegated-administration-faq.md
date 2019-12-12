@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: このトピックでは、代理で Office 365 の管理タスクを実行する (他のテナント (企業) のために Exchange Online Protection (EOP) を管理する機能を含む) Microsoft パートナーとリセラーを対象に、よく寄せられる質問とその答えを取り上げます。
-ms.openlocfilehash: 729ebd0f62834ffcf929da4c2b1b11b0a16275c9
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 4e2548ebe52926e00269615a436662183ec5bd2a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440504"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970753"
 ---
 # <a name="delegated-administration-faq"></a>代理管理の FAQ
 
@@ -27,11 +27,11 @@ A. Microsoft のパートナーまたは販売店で、Microsoft advisor にサ�
 
 1. [Microsoft Office 365 アドバイザー](https://aka.ms/cloudbenefits) としてサインアップします。
 
-2. Office 365 の代理管理を行うためにサインアップします。カスタマーのアカウント管理を開始する前に、カスタマーから代理管理者としての承認を得る必要があります。承認を得るには、最初に[代理管理の提供をカスタマーに送ります](https://go.microsoft.com/fwlink/?LinkId=396829)。(後でカスタマーに代理管理を提供することもできます。)
+2. Office 365 の代理管理を行うためにサインアップします。カスタマーのアカウント管理を開始する前に、カスタマーから代理管理者としての承認を得る必要があります。承認を得るには、最初に[代理管理の提供をカスタマーに送ります](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e)。(後でカスタマーに代理管理を提供することもできます。)
 
-3. 「[代理管理者を追加または削除する](https://go.microsoft.com/fwlink/?LinkId=396831)」の手順に従って、委任された管理者アカウントを作成します。
+3. 「[サブスクリプションアドバイザーパートナーを追加、変更、または削除する](https://docs.microsoft.com/office365/admin/misc/add-partner)」の手順に従って、委任された管理者アカウントを作成します。
 
-Office 365 代理管理のセットアップ方法について詳しくは、「[パートナー: ビジネスを構築して Office 365 パートナー アカウントを管理する](https://go.microsoft.com/fwlink/?LinkId=301485)」を参照してください。
+Office 365 委任管理をセットアップする方法の詳細については、 [「パートナー: ビジネスを構築して office 365 パートナーサブスクリプションを管理](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319)する」を参照してください。
 
 **Q. わたしはリセラーではなく顧客です。どのようにすれば、自分のサブ テナントの代理管理者をセットアップできますか？**
 
@@ -43,4 +43,4 @@ A. 現在、Office 365 にその機能はありません。
 
 **Q. 自分のすべてのサブ テナントを統合したレポートを取得できますか？**
 
-A. この時点では、管理している会社を超えた統合レポートを Microsoft 365 管理センターのレポートで使用することはできません。 ただし、これは、リモート Windows PowerShell または[Office 365 Reporting web サービス](https://go.microsoft.com/fwlink/?LinkId=279926)を使用して行うことができます。
+A. この時点では、管理している会社を超えた統合レポートを Microsoft 365 管理センターのレポートで使用することはできません。 ただし、これは[Microsoft Graph](https://docs.microsoft.com/graph/overview)を使用して行うことができます。

@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Office 365 で迷惑メールを過剰に取得する スパムフィルターとスパム対策ポリシー設定をカスタマイズできます。
-ms.openlocfilehash: b18ec01419e73923b4c37d9666da97423b0cb81b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871973"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970903"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 メールのスパム対策保護
 
@@ -32,9 +32,9 @@ Office 365 で懸念されるスパム数 Office 365 または Exchange Online P
 
  **接続フィルター**: 接続フィルターを使用すると、Office 365 は、メッセージの受信を許可する前に、送信者の評価をチェックします。 許可リストまたは差出人セーフリストを作成して、特定の IP アドレスまたは IP アドレスの範囲から送信されたすべてのメッセージを受信するようにすることができます。 また、禁止一覧と呼ばれる、メッセージをブロックする IP アドレスの一覧を作成することもできます。 詳細については、「[接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)」を参照してください。 Office 365 でスパムを懸念している場合は、接続フィルターを使用してスパムを防止します。
 
-Office 365 Enterprise E5 を使用しているか、Advanced Threat Protection (ATP) ライセンスを購入しているお客様の場合、接続フィルターは、ドメインをスプーフィングしている送信者の許可と禁止の一覧を作成するために、スプーフィングインテリジェンスによって使用されます。 詳細については、「[スプーフィングインテリジェンスの詳細](https://go.microsoft.com/fwlink/?LinkID=735009)」を参照してください。
+Office 365 Enterprise E5 を使用しているか、Advanced Threat Protection (ATP) ライセンスを購入しているお客様の場合、接続フィルターは、ドメインをスプーフィングしている送信者の許可と禁止の一覧を作成するために、スプーフィングインテリジェンスによって使用されます。 詳細については、「[スプーフィングインテリジェンスの詳細](learn-about-spoof-intelligence.md)」を参照してください。
 
- **スパムフィルター**: Office 365 は、スパムフィルタリングを使用して、スパムと一貫性のあるメッセージ特性をチェックします。 スパムとして識別されたメッセージに実行する処理を選択し、特定の言語で記述されたメッセージ、または特定の国や地域から送信されたメッセージをフィルターするかどうかを選択できます。 高度なスパム フィルター オプションを有効にして、スパム フィルターに対する積極的なアプローチを実行することもできます。 さらに、エンド ユーザーのスパム通知を構成すると、ユーザー宛てのメッセージが検疫に送信された場合にユーザーに通知が送信されます。 (検疫にメッセージを送信することは、構成可能なアクションの1つです。)これらの通知から、エンドユーザーは誤検知をリリースし、それらを分析のために Microsoft に報告することができます。 詳細については、「 [スパム フィルター ポリシーの構成](https://go.microsoft.com/fwlink/p/?LinkId=617147)」を参照してください。 Office 365 でスパムを防止するために、スパムフィルター処理を使用します。 Office 365 ではスパムの数が多くなりすぎる場合は、接続フィルターを使用してスパムの防止に役立ちます。
+ **スパムフィルター**: Office 365 は、スパムフィルタリングを使用して、スパムと一貫性のあるメッセージ特性をチェックします。 スパムとして識別されたメッセージに実行する処理を選択し、特定の言語で記述されたメッセージ、または特定の国や地域から送信されたメッセージをフィルターするかどうかを選択できます。 高度なスパム フィルター オプションを有効にして、スパム フィルターに対する積極的なアプローチを実行することもできます。 さらに、エンド ユーザーのスパム通知を構成すると、ユーザー宛てのメッセージが検疫に送信された場合にユーザーに通知が送信されます。 (検疫にメッセージを送信することは、構成可能なアクションの1つです。)これらの通知から、エンドユーザーは誤検知をリリースし、それらを分析のために Microsoft に報告することができます。 詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 Office 365 でスパムを防止するために、スパムフィルター処理を使用します。 Office 365 ではスパムの数が多くなりすぎる場合は、接続フィルターを使用してスパムの防止に役立ちます。
 
 > [!NOTE]
 > EOP スタンドアロンのお客様の場合、既定では、EOP スパムフィルターはスパム検出メッセージを各受信者の迷惑メールフォルダーに送信します。 ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするには、EOP によって追加されたスパムヘッダーを検出するために、オンプレミスサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「[スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
@@ -45,7 +45,7 @@ Office 365 Enterprise E5 を使用しているか、Advanced Threat Protection (
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
 
-詳細については、「[スパムフィルターポリシーの構成](https://go.microsoft.com/fwlink/p/?LinkId=617147)」を参照してください。
+詳細については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」トピックを参照してください。
 
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Office 365 で送信メッセージを確認してスパムを防ぐ
 
@@ -65,11 +65,11 @@ Office 365 Enterprise E5 を使用しているか、Advanced Threat Protection (
 
 Office 365 でスパム、フィッシング、およびスプーフィングについて懸念している場合は、SPF、DKIM、DMARC を一緒に使用して、スパムや不要なスプーフィングを防止します。
 
- **エンドユーザー**による管理の設定: エンドユーザーが自分のスパム設定を管理する方法については、「[迷惑メールフィルターの概要」](https://go.microsoft.com/fwlink/?LinkId=270065) (Microsoft Outlook ユーザーの場合) または「[迷惑メールとフィッシング](https://go.microsoft.com/fwlink/?LinkId=270068)(web 上の outlook の場合)」を参照してください。 EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。
+ **エンドユーザー**による管理の設定: エンドユーザーが自分のスパム設定を管理する方法については、「[迷惑メールフィルターの概要」](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (Microsoft Outlook ユーザーの場合) または「[迷惑メールとフィッシング](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)(web 上の outlook の場合)」を参照してください。 EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。
 
 ## <a name="for-more-information"></a>詳細情報
 
-[ブログ: スパムとフィッシングが Office 365 によって取得されるのはなぜですか?](https://go.microsoft.com/fwlink/?LinkId=528179 )
+[ブログ: スパムとフィッシングが Office 365 によって取得されるのはなぜですか?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
 [スパム対策保護に関してよく寄せられる質問](anti-spam-protection-faq.md)
 
@@ -85,8 +85,8 @@ Office 365 でスパム、フィッシング、およびスプーフィングに
 
 ## <a name="more-resources"></a>その他のリソース
 
-[Office 365 コミュニティ フォーラムで情報を入手](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[Office 365 コミュニティ フォーラムで情報を入手](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[管理者向け: サインインとサービス リクエストの作成](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[管理者向け: サインインとサービス リクエストの作成](https://portal.office.com/AdminPortal/Home?ref=support)
 
-[管理者向け: 電話サポート](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[AContact support for business products-管理者向けヘルプ](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)

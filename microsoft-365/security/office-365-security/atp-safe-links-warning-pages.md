@@ -14,19 +14,19 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection が機能している場合に表示される可能性がある警告ページの概要を取得します。
-ms.openlocfilehash: 50f72c02596c317e3b5090b00382c6caef6ff746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2c14947f9d9b988eb4f5086500da0d4455f50a43
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086111"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970953"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP の安全なリンクの警告ページ
 
 > [!IMPORTANT]
-> この記事は、 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用しているビジネスのお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook の安全なリンクに関する情報を探している場合は、「[Outlook.com の高度なセキュリティ](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)(ATP) は、 [atp の安全なリンク](atp-safe-links.md)、Atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を介して組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (Url) はチェックされます。 URL が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても URL を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。 
+[Office 365 Advanced Threat Protection](office-365-atp.md) (atp) は、 [atp の安全なリンク](atp-safe-links.md)、Atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を使用して、組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (Url) はチェックされます。 URL が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても URL を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。 
   
 この記事では、表示される可能性がある警告ページの例と、警告ページに対する最新の更新プログラムを確認しています。
   

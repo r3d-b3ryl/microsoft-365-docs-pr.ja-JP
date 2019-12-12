@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 6e114f60d95edb68797e096f56b93836a14425a8
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634024"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962354"
 ---
 # <a name="usage-insights"></a>使用状況の分析情報
 このビューは、Microsoft マネージドデスクトップデバイスの使用指標を提供します。 このような目的で、アプリが実行中で、フォーカスがある場合、アプリは "使用中" と見なされます。
 
 利用状況データを表示するには、[**利用状況**] タブを選択します。
 
-![使用状況ウィンドウ](images/insights_usage.png)
+![使用状況ウィンドウ 左上のデバイス使用状況グラフ (時間の使用率と時間)。 アプリケーションの使用状況の表 (右上) 下にあるデバイスの一覧表。列のデバイス名、モデル、シリアル番号、表示名、ユーザー名、現在の状態 (アクティブ、低、または非アクティブ)、デバイスの使用量の合計、時間数、アクティブな日数。](images/insights_usage.png)
 
 ## <a name="device-usage"></a>デバイスの使用状況
 

@@ -10,19 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「Configure mail flow using connectors in Office 365」をご覧ください。
-ms.openlocfilehash: 189c3bb08609eb2604e77b5140e866711e8f1a09
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032002"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970113"
 ---
 # <a name="set-up-your-eop-service"></a>EOP サービスを設定する
 
 このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。コネクタの構成方法の詳細については、「[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」をご覧ください。
 
 > [!NOTE]
-> このトピックは、対象とする社内メールボックスがあり、それらをスタンドアロン シナリオとして知られている EOP で保護する場合を前提としています。 Exchange Online によりクラウド上のすべてのメールボックスをホストする場合、このトピックに記載されているすべての作業を行う必要はありません。 [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312)に移動してサインアップして、クラウド メールボックスを購入してください。 社内メールボックスの一部をホストし、一部をクラウド上に置く場合は、ハイブリッド シナリオと呼びます。 この場合、より高度なメール フローの設定が必要です。 「 [Exchange Server のハイブリッド展開](https://docs.microsoft.com/exchange/exchange-hybrid)」には、ハイブリッドメールフローについての説明と、設定方法を示すリソースへのリンクがあります。
+> このトピックは、対象とする社内メールボックスがあり、それらをスタンドアロン シナリオとして知られている EOP で保護する場合を前提としています。 Exchange Online によりクラウド上のすべてのメールボックスをホストする場合、このトピックに記載されているすべての作業を行う必要はありません。 「 [Exchange Online プランの比較](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)」に移動して、クラウドメールボックスをサインアップして購入します。 社内メールボックスの一部をホストし、一部をクラウド上に置く場合は、ハイブリッド シナリオと呼びます。 この場合、より高度なメール フローの設定が必要です。 「 [Exchange Server のハイブリッド展開](https://docs.microsoft.com/exchange/exchange-hybrid)」には、ハイブリッドメールフローについての説明と、設定方法を示すリソースへのリンクがあります。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
@@ -30,7 +30,7 @@ ms.locfileid: "38032002"
 
 - コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 詳細については、「 [Feature permissions IN EOP](feature-permissions-in-eop.md)」を参照してください。
 
-- EOP に登録にしていない場合は、「[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=282660)」にアクセスして、サービスを購入するか、試用してみてください。
+- EOP に登録にしていない場合は、「[Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)」にアクセスして、サービスを購入するか、試用してみてください。
 
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 
@@ -39,7 +39,7 @@ ms.locfileid: "38032002"
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Microsoft 365 管理センターを使用してドメインを追加して確認する
 
-1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=521888)で、[**セットアップ**] を使用して、ドメインをサービスに追加します。
+1. [Microsoft 365 管理センター](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)で、[**セットアップ**] を使用して、ドメインをサービスに追加します。
 
 2. ドメインの所有権を確認するため、以下の手順に従って、適用可能な DNS レコードを DNS ホスティング プロバイダーに追加します。
 

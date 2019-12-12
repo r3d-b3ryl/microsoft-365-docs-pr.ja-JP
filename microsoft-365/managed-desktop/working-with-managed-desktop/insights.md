@@ -1,19 +1,19 @@
 ---
-title: インサイトで作業する
+title: 分析情報を操作する
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: be8eb8e513ca244aaef45f6fb4aa61ec57e37e8a
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257145"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962324"
 ---
-# <a name="work-with-insights"></a>インサイトで作業する
+# <a name="work-with-insights"></a>分析情報を操作する
 
 Microsoft マネージドデスクトップには、テナントの管理者が、デバイスの作成に関するさまざまな側面を理解するために使用できる多数のダッシュボードが用意されています。 これらにアクセスするには、Microsoft 365 管理センターを使用します。
 
@@ -26,11 +26,11 @@ Microsoft マネージドデスクトップには、テナントの管理者が�
 
 Microsoft 365 管理センターからこれらのビューにアクセスするには、[**レポート**] 領域で [**詳細の表示**] を選択します。
 
-![Insights ウィンドウの概要](images/insights_overview.png)
+![右上に [レポート] 領域のある管理センター (デバイスレポートカードおよび [詳細の表示] リンクを含む)。](images/insights_overview.png)
 
 
 
-## <a name="usage-insights"></a>利用状況分析
+## <a name="usage-insights"></a>使用状況の分析情報
 このビューは、Microsoft マネージドデスクトップデバイスの使用指標を提供します。 
 
 利用状況データを表示するには、[**利用状況**] タブを選択します。

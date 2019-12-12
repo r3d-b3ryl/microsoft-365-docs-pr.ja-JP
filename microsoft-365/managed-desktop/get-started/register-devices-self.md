@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 952fac18db8ecc31fcd041dbfdf45e6ee8edee75
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: a1dbb5708cad32a0e37ddc25c97c70a765580f86
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577763"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962524"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスをユーザー自身が登録する
 
@@ -89,7 +89,7 @@ CSV ファイルは、登録用に特定の形式である必要があります�
 
 Microsoft マネージドデスクトップの[Azure ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
 
-[![[デバイスの登録] を選択した後のフライイン](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
 [//]: # (残念ながら、これは当てはまりません。このメモを削除することはできますが、それについてお客様がチャットできるようになるまで、そのままにしておきます。)

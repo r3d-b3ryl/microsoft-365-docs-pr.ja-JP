@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
-ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
+ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37391220"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962204"
 ---
 # <a name="getting-help-for-end-users"></a>エンドユーザーのヘルプを取得する
 
@@ -24,7 +24,7 @@ ms.locfileid: "37391220"
 
 ユーザーにサポートを提供するために推奨される方法は、エンドユーザーデバイスに組み込まれた使いやすいインターフェイスである**ヘルプ**を利用することです。  
 
-![ヘルプを表示する](images/get-help.png)
+![ヘルプアプリアイコンを取得する](images/get-help.png)
 
 これは、すべての Microsoft 管理デスクトップデバイスにインストールされているアプリケーションで、タスクバーにピン留めされています。 
 
@@ -51,6 +51,8 @@ Microsoft マネージドデスクトップデバイスを使用しているエ�
 - 米国: + 1 855 425 0216
 - カナダ (ケベックを除く): + 1 855 425 0216
 - 英国: + 44 800 026 0698
+- ベルギー: + 32 800 58533
+- ルクセンブルク: + 352 800 40119
 - オーストラリア: + 61 180 037 0619
 - ニュージーランド: + 64 988 44380
 
@@ -60,4 +62,4 @@ Microsoft マネージドデスクトップデバイスを使用しているエ�
 ## <a name="additional-resources"></a>その他のリソース
 - [Microsoft マネージドデスクトップの管理者サポート](admin-support.md)。 
 - [Microsoft マネージドデスクトップのサポート](../service-description/support.md)。
-- Microsoft マネージドデスクトップを既に購読している場合は、microsoft managed desktop admin の「 **Online resources** 」セクションの「Microsoft Managed Desktop admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を見つけることができます。 [ポータル](https://aka.ms/mwaasportal)。
+- Microsoft managed desktop を既に購読している場合は、「microsoft managed desktop admin [Portal](https://aka.ms/mwaasportal)」の「 **Online resources** 」セクションにある「Microsoft managed desktop admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を見つけることができます。

@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: '[スパム対策設定] ページ&amp;のセキュリティコンプライアンスセンターのスプーフィングインテリジェンスを使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。 スプーフィングインテリジェンスは、Office 365 Enterprise E5 の一部として、または Advanced Threat Protection と Exchange Online Protection の一部として別途利用できます。'
-ms.openlocfilehash: 35dee30472317349b330a8507fbf3d7e9573100e
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871813"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970433"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスをもっとよく知る
 
@@ -106,7 +106,7 @@ Office 365 Enterprise E5 サブスクリプションを使用している場合�
 
 特定の送信者が組織内のスプーフィングされた電子メールを送信することを許可またはブロックすることに加えて、フィルターの厳密さを設定したり、スプーフィングメッセージが見つかったときに実行するアクションを構成したりすることもできます。
 
-Office 365 組織の外部にあるドメインからの送信者からの電子メールに、スプーフィング対策保護が適用されます。 ポリシーは、メールボックスが Office 365 Enterprise E5 用にライセンスされている受信者に適用することができます。また、高度な脅威保護と 2018 EOP の顧客についても同様です。 他のフィッシング対策設定と共に、スプーフィング対策ポリシーを管理します。 フィッシング対策設定の詳細については、「 [Office 365 のフィッシング対策ポリシーをセットアップする](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions)」を参照してください。
+Office 365 組織の外部にあるドメインからの送信者からの電子メールに、スプーフィング対策保護が適用されます。 ポリシーは、メールボックスが Office 365 Enterprise E5 用にライセンスされている受信者に適用することができます。また、高度な脅威保護と 2018 EOP の顧客についても同様です。 他のフィッシング対策設定と共に、スプーフィング対策ポリシーを管理します。 フィッシング対策設定の詳細については、「 [Office 365 の ATP のフィッシング対策およびフィッシング対策ポリシー](set-up-anti-phishing-policies.md)をセットアップする」を参照してください。
 
 Office 365 には、常に実行している既定のスプーフィング防止保護が含まれています。 この既定の保護は、セキュリティ&amp;コンプライアンスセンターでは表示されません。また、Windows PowerShell コマンドレットから取得することもできません。 既定のスプーフィング防止保護を変更することはできません。 その代わりに、Office 365 で、作成した各フィッシング対策ポリシーのスプーフィング対策保護を強制的に適用する方法を構成できます。
 

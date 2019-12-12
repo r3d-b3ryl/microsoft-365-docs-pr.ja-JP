@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Office 365 と EOP admins に、電子メールメッセージの安全性に関するヒントを有効または無効にする方法を伝えます。
-ms.openlocfilehash: f812ac1a81dfed6061fe404893e3be2e19a75212
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: da91ec595697c7cfb1fdd5150a4c04e05cd91b0a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871883"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970603"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Office 365 で安全性のヒントを有効または無効にする
 
@@ -69,7 +69,7 @@ Office 365 では、組織のために既定で安全なヒントが有効にな
 
 管理者は、Exchange Online PowerShell を使用して安全性のヒントを有効または無効にすることができます。 スパムフィルターポリシーの安全性に関するヒントを有効または無効にするには、Set-hostedcontentfilterpolicy コマンドレットを使用します。
 
-1. Exchange Online PowerShell に接続します。 詳細については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。
+1. Exchange Online PowerShell に接続します。 詳細については、「 [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
 2. Set-hostedcontentfilterpolicy コマンドレットを実行して、安全性に関するヒントを有効または無効にします。
 

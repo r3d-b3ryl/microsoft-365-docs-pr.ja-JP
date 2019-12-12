@@ -13,16 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: 89cd473a7b7f2ff663d7ee1eee41f84144dee6d7
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866439"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970933"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
-> [!NOTE] 
+> [!NOTE]
 > これらの更新プログラムは現在ロールアウトされており、すべてのユーザーに対してまだ使用できない場合があります。 この機能は、エンタープライズ outlook.com ユーザーに対してサポートされています。 現時点では、コンシューマー outlook.com では使用できません。
 
 フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
@@ -36,12 +36,11 @@ Web 上の Outlook.com および Outlook on the メッセージの送信者が�
 
 ## <a name="you-see-a--in-the-sender-image"></a>送信者の画像に '? ' が表示される
 
-Outlook.com と web 上の Outlook が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者の写真に '? ' が表示されます。 
+Outlook.com と web 上の Outlook が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者の写真に '? ' が表示されます。
 
 ![メッセージが検証に合格しませんでした](../media/message-did-not-pass-verification.jpg)
 
 認証に失敗したすべてのメッセージが悪意のあるものであるとは限りません。 ただし、送信者を認識しない場合は、認証されないメッセージの操作について注意する必要があります。 または、通常は送信者の画像に '? ' が含まれていない送信者を認識したが、突然表示を開始した場合は、送信者がスプーフィングされているという署名になることがあります。
-
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>未確認の送信者の処理を受信するメッセージを管理する方法 
 
@@ -52,10 +51,10 @@ Office 365 をご利用のお客様の場合は、セキュリティ & コンプ
     ![グラフィックインターフェイスで認証されていない送信者を編集する。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - 管理者が誤検知を識別し、送信者が未確認の送信者による処理を受信しないようにした場合は、次のいずれかの操作を行って、スプーフィングインテリジェンススプーフィング許可リストに送信者を追加することができます。
-        
-    - スプーフィングインテリジェンスの洞察を通じてドメインペアを追加します。 詳細については、「[チュートリアル: スプーフィングインテリジェンスの洞察](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)」を参照してください。
-                
-    - Get-phishfilterpolicy コマンドレットを使用して、ドメインペアを追加します。 詳細については、「 [get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) 」および「 [set UP Office 365 ATP フィッシング対策」および「set up Office](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)」を参照してください。
+
+  - スプーフィングインテリジェンスの洞察を通じてドメインペアを追加します。 詳細については、「[チュートリアル: スプーフィングインテリジェンスの洞察](walkthrough-spoof-intelligence-insight.md)」を参照してください。
+
+  - Get-phishfilterpolicy コマンドレットを使用して、ドメインペアを追加します。 詳細については、「 [get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) 」および「 [set UP Office 365 ATP フィッシング対策」および「set up Office](set-up-anti-phishing-policies.md)」を参照してください。
 
 また、電子メールトランスポートルール (Etr)、安全なドメインリスト (スパム対策ポリシー)、安全な送信者リスト、またはユーザーがこのユーザーを自分のドメイン内の "安全な送信者" として設定している場合にも、未検証の送信者の処理は適用されません。ボックス.
 
@@ -81,6 +80,6 @@ Via タグ: 送信者としての場合は、DKIM 署名のドメインまたは
 
 [Outlook.com メールアカウントを保護する](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
-[Outlook.com での迷惑行為、フィッシング、またはスプーフィングに対処する](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
+[Outlook.com でのフィッシングまたはスプーフィングに対処する](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
 [Outlook on the web で迷惑メールおよびスパムをフィルター処理する](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)

@@ -1,19 +1,19 @@
 ---
-title: Microsoft コンサルティングサービスを使用する
+title: Microsoft コンサルティング サービスを使用する
 description: アプリケーションをパッケージ化するために MCS と連携するための準備と手順
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、service、ドキュメント、アプリ、MCS、パッケージ
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 4491504616eb4bb447f12d08dddb12c73c2a88ac
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425740"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962624"
 ---
-# <a name="working-with-microsoft-consulting-services"></a>Microsoft コンサルティングサービスを使用する
+# <a name="working-with-microsoft-consulting-services"></a>Microsoft コンサルティング サービスを使用する
 
 Microsoft コンサルティングサービス (MCS) と協力して、Microsoft マネージドデスクトップで使用するためにアプリをパッケージ化することができます。 詳細については、アカウント担当者と連携して MCS と連絡をとって、特定のアプリパッケージプロジェクトの範囲を指定します。
 
@@ -35,7 +35,7 @@ MCS アプリパッケージを使用するには、**次の要素を提供す�
 
 アプリの情報を Microsoft マネージドデスクトップポータルにアップロードして、パッケージ化プロセスを開始します。 パッケージチームは、毎週木曜日に新しい提出をレビューします。 レビューとパッケージ化後、パッケージ化されたアプリは次の金曜日に配信されます。 1週間に最大5つのアプリを開始するためのパッケージを作成できますが、サービスはニーズに合わせて拡張できます。
 
-![アプリのレビュー、パッケージ、および配信日を示すカレンダー](images/MCS-cal.png)
+![木曜日にアプリケーションのインフロー (この例では 21)、次の日にメディア検証、次の月曜日にパッケージ化 (25)、以降の金曜日にアプリの配信を示すカレンダー (29 日)](images/MCS-cal.png)
 
 アプリが配信されると、通知されます。 その時点で、承認テストを実行し、Microsoft マネージドデスクトップポータルで作業を行うことができるのは、21日です。 受け入れテストの間にアプリに関して何らかの問題が見つかった場合は、Microsoft マネージドデスクトップポータルでアプリを拒否すると、問題を把握して解決するために、メールで MCS パッケージャーに接続されます。
 

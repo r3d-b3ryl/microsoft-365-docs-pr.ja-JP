@@ -43,7 +43,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
               alt: ''
-            title: はじめに
+            title: 作業の開始
           - href: working-with-managed-desktop/index.md
             html: <p>サービスを使用した日常的な操作について</p>
             image:
@@ -71,7 +71,14 @@ sections:
             title: '[E book]モダンワークプレースを使用して会社を成功する'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+              alt: ''
   - title: ビデオ
     items:
+      - type: paragraph
+        text: Microsoft Managed Desktop の利点については、「インディアナ Pacers」の技術担当副社長を参照してください。
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
+      - type: paragraph
+        text: Microsoft Managed desktop のジェネラルマネージャーは、年間 Ignite 会議で、サービスのすべてのハイライトを共有しています。
+      - type: markdown
+        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'

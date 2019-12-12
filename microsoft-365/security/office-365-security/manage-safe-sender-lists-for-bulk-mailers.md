@@ -14,23 +14,31 @@ ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
 ms.collection:
 - M365-security-compliance
 description: '差出人セーフ リストを使用する場合は、Exchange Online Protection (EOP) と Outlook で処理が異なることを認識しておく必要があります。サービスでは RFC 5321.MailFrom アドレスと RFC 5322.From アドレスを検査することによって信頼できる差出人とドメインを尊重するのに対して、Outlook では RFC 5322.From アドレスをユーザーの差出人セーフ リストに追加します (注 : サービスは、ブロックする差出人とドメインについては、5321.MailFrom アドレスと 5322.From アドレスの両方を検査します)。'
-ms.openlocfilehash: f73cc3fc88318c4f625bf5579f73d92625624fd5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2dcfd73cc987290bbc8ca8111580a374216a843e
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086913"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970303"
 ---
 # <a name="manage-safe-sender-lists-for-bulk-mailers"></a>バルク メーラーの差出人セーフ リストを管理する
 
-差出人セーフリストを使用する場合は、Exchange Online Protection (EOP) と Outlook が異なる方法で処理することに注意してください。 Office 365 サービスは、RFC 5321.mailfrom アドレスと RFC 5322.from From アドレスを検査することによって、安全な送信者とドメインを尊重しますが、Outlook は RFC 5322.from アドレスをユーザーの [差出人セーフリスト] に追加します。 (注: サービスは、ブロックされた送信者とドメインの5321.mailfrom アドレスと5322.from アドレスの両方を調べます。)
-  
-RFC 5321.MailFrom アドレスとも呼ばれる SMTP MAIL FROM アドレスは、SPF チェックの実行に使用される電子メール アドレスで、メールが配信できない場合に返送されるメッセージが配信されるパスです。メッセージ ヘッダーの Return-Path に既定で配置されるのはこの電子メール アドレスですが、差出人は異なる Return-Path アドレスを指定することができます。
-  
-RFC 5322.From アドレスとも呼ばれるメッセージ ヘッダー内の差出人アドレスは、Outlook などのメール クライアントに表示される電子メール アドレスです。
-  
-大抵の場合、5321.MailFrom アドレスと 5322.From アドレスは同じです。このことは、人間同士のコミュニケーションではよく見られることです。ただし、他のユーザーに代わって電子メールが送信される場合は、これらのアドレスが異なるのが普通です。大部分のバルク メール メッセージでは、ほとんどの場合にそのようになります。
-  
-たとえば、Blue Yonder Airlines 航空が Margie's Travel に電子メール広告の配信を外注したとします。 受信トレイに入るメッセージの差出人は blueyonder@news.blueyonderairlines.com です。 この例では、MailFrom address は blueyonder.airlines@margiestravel.com、blueyonder@news.blueyonderairlines.com は5321.mailfrom アドレスで、これは Outlook に表示されます。 このサービスは RFC 5322.from アドレスを尊重するため、このメッセージがフィルター処理されないようにするには、RFC 5322.from アドレスを Outlook (ユーザーとして)、または管理者が、スパム対策に示されているようにメールフロールールを設定している場合には、信頼できる差出人として登録します。 [保護](anti-spam-protection.md)] セクション
-  
+差出人セーフリストを使用する場合は、Exchange Online Protection (EOP) と Outlook が異なる方法で処理することに注意してください。 Office 365 サービスは、 `RFC 5321.MailFrom`アドレスと`RFC 5322.From`アドレスを調べて、安全な送信者とドメインを尊重します`RFC 5322.From`が、Outlook はユーザーの差出人セーフリストにアドレスを追加します。 (注: サービスは、ブロックさ`5321.MailFrom`れた`5322.From`送信者とドメインのアドレスとアドレスの両方を調べます。)
 
+と`SMTP MAIL FROM` `RFC 5321.MailFrom address`いうアドレスは、SPF チェックの実行に使用される電子メールアドレス、およびメールを配信できない場合は、バウンスメッセージが配信されるパスのことです。 この電子メールアドレスは、 `Return-Path`既定でメッセージヘッダーに配置されていますが、送信者は別`Return-Path`のアドレスを指定することもできます。
+
+メッセージ`From:`ヘッダー内のアドレス ( `RFC 5322.From`アドレスとも呼ばれます) は、Outlook などのメールクライアントに表示される電子メールアドレスです。
+
+多くの時間、 `5321.MailFrom`および`5322.From`アドレスは同じです。 このことは、人間同士のコミュニケーションではよく見られることです。 ただし、他のユーザーに代わって電子メールが送信される場合は、これらのアドレスが異なるのが普通です。 大部分のバルク メール メッセージでは、ほとんどの場合にそのようになります。
+
+たとえば、青色の Yonder 航空が、青木社長の旅行を採用して、電子メール広告を送信しているとします。 受信トレイに入るメッセージの差出人は blueyonder@news.blueyonderairlines.com です。 この例では次のようになっています。
+
+- `5321.MailFrom`アドレスは blueyonder.airlines@margiestravel.com です。
+
+- `5322.From`アドレスは blueyonder@news.blueyonderairlines.com で、Outlook に表示されます。
+
+このメッセージがフィルター処理されないようにするには、次のことを行います。
+
+- [**ユーザーとして**] `RFC 5322.From` : アドレスを Outlook の信頼できる差出人として追加します。
+
+- **管理者として**:[メールフロールール](anti-spam-protection.md#beyond-the-basics-more-ways-to-prevent-spam-in-office-365)(トランスポートルールとも呼ばれます) を設定します。

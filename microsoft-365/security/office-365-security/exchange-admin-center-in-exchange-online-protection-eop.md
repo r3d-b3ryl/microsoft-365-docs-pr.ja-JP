@@ -14,12 +14,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 管理センター (EAC) は、Microsoft Exchange Online Protection (EOP) 向けの Web ベース管理コンソールです。
-ms.openlocfilehash: 6ef800b9f440f67d45f3eaa08b4731989fcf2652
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 58f339e2ebbb566b8656eed68453841ca011a72f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871863"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970553"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection の Exchange 管理センター
 
@@ -96,7 +96,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 ## <a name="supported-browsers"></a>サポートされているブラウザー
 
-EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。サービスでサポートされるブラウザー要件とシステム要件の詳細については、「[Office 365 のシステム要件](https://go.microsoft.com/fwlink/p/?LinkID=402699)」を参照してください。
+EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。 また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。 サポートされるブラウザーおよびサービスのシステム要件の詳細については、「 [Office のシステム要件](https://products.office.com/office-system-requirements)」を参照してください。
 
 ## <a name="supported-languages-in-eop"></a>EOP でサポートされている言語
 
