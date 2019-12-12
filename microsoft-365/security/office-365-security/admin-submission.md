@@ -1,5 +1,5 @@
 ---
-title: Office 365、O365 提出、Office 365 スパムの問題、O365 誤検出、office 365 での送信フィッシング、office 365 での電子メールの送信、メールの送信、メールをスキャン、フィッシングに関する Microsoft scan を使用している、microsoft scan for スパム、送信電子メール、メールを送信する
+title: Office 365、O365 提出、Office 365 スパムの問題、O365 誤検出、office 365 での送信フィッシング、office 365 での電子メールの送信、メールの送信、メールをスキャン、フィッシングに関する Microsoft scan を使用している、microsoft scan for スパム、送信電子メール、電子メールの送信、dodgy メール、無効なアクターメール、疑わしい、信頼されていないメール
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,59 +13,59 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 疑わしいメール、疑わしいフィッシングメール、スパム、およびその他の潜在的に有害なメッセージ、Url、およびその他の潜在的な問題のあるメールを、Office 365 テナントから Microsoft にスキャンするために提出する方法について説明します。
-ms.openlocfilehash: 5ca5eab2feab1243a83eb60c9320fd48dfb59f12
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
+ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087132"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39915218"
 ---
-# <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a><span data-ttu-id="4acb1-103">フィッシングの疑いのあるスパム、、Url、およびファイルを Microsoft for Office 365 スキャンに提出する方法</span><span class="sxs-lookup"><span data-stu-id="4acb1-103">How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning</span></span>
+# <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a><span data-ttu-id="21b20-103">フィッシングの疑いのあるスパム、、Url、およびファイルを Microsoft for Office 365 スキャンに提出する方法</span><span class="sxs-lookup"><span data-stu-id="21b20-103">How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning</span></span>
 
-<span data-ttu-id="4acb1-104">管理者は、Microsoft が Office 365 でスキャンするファイルまたはネットワークメッセージ ID、Url、ファイルを使用して、メールを送信できます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-104">Admins can send emails by using file or network message ID, URLs, and files for scanning by Microsoft in Office 365.</span></span> <span data-ttu-id="4acb1-105">更新された提出物セクションには、ユーザーが報告したメッセージと、EOP を使用しているすべてのお客様が利用できます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-105">The updated submissions section still includes user reported messages and available to all customers using EOP.</span></span>
+<span data-ttu-id="21b20-104">管理者は、Microsoft が Office 365 でスキャンするファイルまたはネットワークメッセージ ID、Url、ファイルを使用して、メールを送信できます。</span><span class="sxs-lookup"><span data-stu-id="21b20-104">Admins can send emails by using file or network message ID, URLs, and files for scanning by Microsoft in Office 365.</span></span> <span data-ttu-id="21b20-105">更新された提出物セクションには、ユーザーが報告したメッセージと、EOP を使用しているすべてのお客様が利用できます。</span><span class="sxs-lookup"><span data-stu-id="21b20-105">The updated submissions section still includes user reported messages and available to all customers using EOP.</span></span>
 
-<span data-ttu-id="4acb1-106">電子メールを送信すると、受信メールがテナントに許可されている可能性のあるポリシーや、メール内のすべての Url と添付ファイルの調査に関する情報が得られます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-106">When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail.</span></span> <span data-ttu-id="4acb1-107">メールが許可されているポリシーには、個々のユーザーの信頼できる差出人のリスト、および ETR ルールなどのテナントレベルのポリシーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-107">Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as ETR rules.</span></span> 
+<span data-ttu-id="21b20-106">電子メールを送信すると、受信メールがテナントに許可されている可能性のあるポリシーや、メール内のすべての Url と添付ファイルの調査に関する情報が得られます。</span><span class="sxs-lookup"><span data-stu-id="21b20-106">When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail.</span></span> <span data-ttu-id="21b20-107">メールが許可されているポリシーには、個々のユーザーの信頼できる差出人のリスト、および ETR ルールなどのテナントレベルのポリシーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="21b20-107">Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as ETR rules.</span></span> 
 
-## <a name="how-to-submit-content-to-microsoft-for-office-365-scanning"></a><span data-ttu-id="4acb1-108">Office 365 スキャン用にコンテンツを Microsoft に提出する方法</span><span class="sxs-lookup"><span data-stu-id="4acb1-108">How to submit content to Microsoft for Office 365 scanning</span></span>
+## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a><span data-ttu-id="21b20-108">Office 365 スキャンに対して疑わしいコンテンツを Microsoft に送信する方法</span><span class="sxs-lookup"><span data-stu-id="21b20-108">How to direct suspicious content to Microsoft for Office 365 scanning</span></span>
 
-<span data-ttu-id="4acb1-109">Microsoft にコンテンツを送信するには、送信ページの左上にある [**新しい送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4acb1-109">To submit content to Microsoft click the **New submission** button in the top left hand side of the submissions page.</span></span> <span data-ttu-id="4acb1-110">ページの右側にあるポップアップが表示され、電子メール、URL、またはファイルのいずれかを送信するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-110">A flyout on the right side of the page appears with the option to submit either an email, URL, or file.</span></span> 
+<span data-ttu-id="21b20-109">Microsoft にコンテンツを送信するには、送信ページの左上にある [**新しい送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="21b20-109">To submit content to Microsoft click the **New submission** button in the top left hand side of the submissions page.</span></span> <span data-ttu-id="21b20-110">ページの右側にあるポップアップが表示され、電子メール、URL、またはファイルのいずれかを送信するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="21b20-110">A flyout on the right side of the page appears with the option to submit either an email, URL, or file.</span></span> 
 
-### <a name="submit-an-email-to-microsoft"></a><span data-ttu-id="4acb1-111">Microsoft に電子メールを送信する</span><span class="sxs-lookup"><span data-stu-id="4acb1-111">Submit an email to Microsoft</span></span>
+### <a name="submit-a-questionable-email-to-microsoft"></a><span data-ttu-id="21b20-111">疑わしいメールを Microsoft に送信する</span><span class="sxs-lookup"><span data-stu-id="21b20-111">Submit a questionable email to Microsoft</span></span>
 ![電子メール送信の例](../media/submission-flyout-email.PNG)
-1. <span data-ttu-id="4acb1-113">電子メールを送信するには、[**電子**メール] を選択し、電子メール**ネットワークのメッセージ ID**を指定するか、電子メールファイルをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="4acb1-113">To submit an email, select **email** and specify the email **network message ID** or upload the email file.</span></span> 
+1. <span data-ttu-id="21b20-113">電子メールを送信するには、[**電子**メール] を選択し、電子メール**ネットワークのメッセージ ID**を指定するか、電子メールファイルをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="21b20-113">To submit an email, select **email** and specify the email **network message ID** or upload the email file.</span></span> 
 
-2. <span data-ttu-id="4acb1-114">ポリシーチェックの実行対象となる受信者を指定します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-114">Specify the recipient(s) that you would like to run the policy check against.</span></span> <span data-ttu-id="4acb1-115">ポリシーチェックは、ユーザーまたはテナントレベルのポリシーによって、電子メールがスキャンをバイパスしたかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-115">The policy check will determine if the email bypassed scanning due to user or tenant level policies.</span></span> 
+2. <span data-ttu-id="21b20-114">ポリシーチェックの実行対象となる受信者を指定します。</span><span class="sxs-lookup"><span data-stu-id="21b20-114">Specify the recipient(s) that you would like to run the policy check against.</span></span> <span data-ttu-id="21b20-115">ポリシーチェックは、ユーザーまたはテナントレベルのポリシーによって、電子メールがスキャンをバイパスしたかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="21b20-115">The policy check will determine if the email bypassed scanning due to user or tenant level policies.</span></span> 
 
-3. <span data-ttu-id="4acb1-116">電子メールがブロックされているかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-116">Specify if the email should have been blocked or not.</span></span> <span data-ttu-id="4acb1-117">メールがブロックされている必要がある場合は、スパム、フィッシング、またはマルウェアとしてブロックされているかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-117">If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware.</span></span> <span data-ttu-id="4acb1-118">可能な種類がわからない場合は、最適な judgement を使用してください。</span><span class="sxs-lookup"><span data-stu-id="4acb1-118">If you are not sure what type it might be, use your best judgement.</span></span>  
+3. <span data-ttu-id="21b20-116">電子メールがブロックされているかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="21b20-116">Specify if the email should have been blocked or not.</span></span> <span data-ttu-id="21b20-117">メールがブロックされている必要がある場合は、スパム、フィッシング、またはマルウェアとしてブロックされているかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="21b20-117">If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware.</span></span> <span data-ttu-id="21b20-118">可能な種類がわからない場合は、最適な judgement を使用してください。</span><span class="sxs-lookup"><span data-stu-id="21b20-118">If you are not sure what type it might be, use your best judgement.</span></span>  
 
-* <span data-ttu-id="4acb1-119">送信時のポリシーによってフィルターがバイパスされた場合は、そのポリシーに関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-119">If the filter was bypassed due to policies upon submission, you'll see information about that policy.</span></span>
+* <span data-ttu-id="21b20-119">送信時のポリシーによってフィルターがバイパスされた場合は、そのポリシーに関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="21b20-119">If the filter was bypassed due to policies upon submission, you'll see information about that policy.</span></span>
 
-* <span data-ttu-id="4acb1-120">1つまたは複数のポリシーによってフィルターがバイパスされていない場合、スキャンは数分で完了します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-120">If the filter was not bypassed due to one or more policies, the scan will complete in several minutes.</span></span> <span data-ttu-id="4acb1-121">[状態] リンクをクリックすると、送信に関する追加情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-121">You'll see additional information about the submission by clicking on the status link.</span></span> <span data-ttu-id="4acb1-122">これには、ポリシーチェックの結果と rescan verdict が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-122">This includes the results of the policy check and the rescan verdict.</span></span> <span data-ttu-id="4acb1-123">メモこれにより、Office 365 ATP の完全なフィルター処理スタックからメールが再度実行されることはありませんが、メール、URL、またはファイルの特定の属性に基づいて、部分的な再スキャンが実行されます。</span><span class="sxs-lookup"><span data-stu-id="4acb1-123">Note this does not run the email through the Office 365 ATP full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.</span></span> 
+* <span data-ttu-id="21b20-120">1つまたは複数のポリシーによってフィルターがバイパスされていない場合、スキャンは数分で完了します。</span><span class="sxs-lookup"><span data-stu-id="21b20-120">If the filter was not bypassed due to one or more policies, the scan will complete in several minutes.</span></span> <span data-ttu-id="21b20-121">[状態] リンクをクリックすると、送信に関する追加情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="21b20-121">You'll see additional information about the submission by clicking on the status link.</span></span> <span data-ttu-id="21b20-122">これには、ポリシーチェックの結果と rescan verdict が含まれます。</span><span class="sxs-lookup"><span data-stu-id="21b20-122">This includes the results of the policy check and the rescan verdict.</span></span> <span data-ttu-id="21b20-123">メモこれにより、Office 365 ATP の完全なフィルター処理スタックからメールが再度実行されることはありませんが、メール、URL、またはファイルの特定の属性に基づいて、部分的な再スキャンが実行されます。</span><span class="sxs-lookup"><span data-stu-id="21b20-123">Note this does not run the email through the Office 365 ATP full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.</span></span> 
 
-4. <span data-ttu-id="4acb1-124">[**送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4acb1-124">Click the **Submit** button.</span></span>
+4. <span data-ttu-id="21b20-124">[**送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="21b20-124">Click the **Submit** button.</span></span>
 
-### <a name="submit-a-url-to-microsoft"></a><span data-ttu-id="4acb1-125">Microsoft に URL を送信する</span><span class="sxs-lookup"><span data-stu-id="4acb1-125">Submit a URL to Microsoft</span></span>
+### <a name="send-a-suspect-url-to-microsoft"></a><span data-ttu-id="21b20-125">疑わしい URL を Microsoft に送信する</span><span class="sxs-lookup"><span data-stu-id="21b20-125">Send a suspect URL to Microsoft</span></span>
 ![電子メール送信の例](../media/submission-url-flyout.png)
-1. <span data-ttu-id="4acb1-127">URL を送信するには、ポップアップから [ **url** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-127">To submit a URL select **URL** from the flyout.</span></span> <span data-ttu-id="4acb1-128">プロトコル (**https://**) を含む完全な URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-128">Type in the full URL including the protocol (**https://**).</span></span> 
+1. <span data-ttu-id="21b20-127">URL を送信するには、ポップアップから [ **url** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="21b20-127">To submit a URL select **URL** from the flyout.</span></span> <span data-ttu-id="21b20-128">プロトコル (**https://**) を含む完全な URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="21b20-128">Type in the full URL including the protocol (**https://**).</span></span> 
 
-* <span data-ttu-id="4acb1-129">[**フィルター済み**] を選択した場合は、URL がフィッシングまたはマルウェアであるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4acb1-129">If you selected **Should have been filtered**, specify if the URL is phishing or malware.</span></span>
+* <span data-ttu-id="21b20-129">[**フィルター済み**] を選択した場合は、URL がフィッシングまたはマルウェアであるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="21b20-129">If you selected **Should have been filtered**, specify if the URL is phishing or malware.</span></span>
 
-2. <span data-ttu-id="4acb1-130">[**送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4acb1-130">Click the **Submit** button.</span></span> 
+2. <span data-ttu-id="21b20-130">[**送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="21b20-130">Click the **Submit** button.</span></span> 
 
 
-### <a name="submit-a-file-to-microsoft"></a><span data-ttu-id="4acb1-131">Microsoft にファイルを送信する</span><span class="sxs-lookup"><span data-stu-id="4acb1-131">Submit a file to Microsoft</span></span>
+### <a name="submit-a-suspected-file-to-microsoft"></a><span data-ttu-id="21b20-131">疑わしいファイルを Microsoft に送信する</span><span class="sxs-lookup"><span data-stu-id="21b20-131">Submit a suspected file to Microsoft</span></span>
 ![電子メール送信の例](../media/submission-file-flyout.PNG)
-1. <span data-ttu-id="4acb1-133">ファイルを送信するには、ポップアップ**からファイルを選択し**、スキャンしたいファイルをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="4acb1-133">To submit a file select **File** from the flyout and upload the file you would like to scan.</span></span> 
+1. <span data-ttu-id="21b20-133">ファイルを送信するには、ポップアップ**からファイルを選択し**、スキャンしたいファイルをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="21b20-133">To submit a file select **File** from the flyout and upload the file you would like to scan.</span></span> 
 
-2. <span data-ttu-id="4acb1-134">[**送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4acb1-134">Click the **Submit** button.</span></span>
+2. <span data-ttu-id="21b20-134">[**送信**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="21b20-134">Click the **Submit** button.</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="4acb1-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="4acb1-135">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="21b20-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="21b20-135">Related topics</span></span>
 
-[<span data-ttu-id="4acb1-136">Office 365 Advanced Threat Protection プラン2</span><span class="sxs-lookup"><span data-stu-id="4acb1-136">Office 365 Advanced Threat Protection Plan 2</span></span>](office-365-ti.md)
+[<span data-ttu-id="21b20-136">Office 365 Advanced Threat Protection プラン 2</span><span class="sxs-lookup"><span data-stu-id="21b20-136">Office 365 Advanced Threat Protection Plan 2</span></span>](office-365-ti.md)
   
-[<span data-ttu-id="4acb1-137">Office 365 で脅威から保護する</span><span class="sxs-lookup"><span data-stu-id="4acb1-137">Protect against threats in Office 365</span></span>](protect-against-threats.md)
+[<span data-ttu-id="21b20-137">Office 365 で脅威から保護する</span><span class="sxs-lookup"><span data-stu-id="21b20-137">Protect against threats in Office 365</span></span>](protect-against-threats.md)
   
-[<span data-ttu-id="4acb1-138">Office 365 Advanced Threat Protection のレポートを表示する</span><span class="sxs-lookup"><span data-stu-id="4acb1-138">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+[<span data-ttu-id="21b20-138">Office 365 Advanced Threat Protection のレポートを表示する</span><span class="sxs-lookup"><span data-stu-id="21b20-138">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
   
 
