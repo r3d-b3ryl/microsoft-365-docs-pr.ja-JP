@@ -15,17 +15,17 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 安全な添付ファイルのポリシーを定義して、電子メール内の悪意のあるファイルから組織を保護します。
-ms.openlocfilehash: 0c81c8323db417d6e462812efe8686389139e915
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 65552e990eb5e12d2a624eea1e1bdbb74454b44f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866639"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971425"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 の ATP の安全な添付ファイルのポリシーを設定する
 
 > [!IMPORTANT]
-> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook での安全な添付ファイルに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook での安全な添付ファイルに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを日常的に送信、受信、共有します。 電子メールメッセージを見るだけで、添付ファイルが安全か悪意かを知ることは常に容易ではありません。 最後に必要なのは、組織にとって wreaking 危害を受ける、悪意のある添付ファイルです。 さいわい、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) は役立ちます。 組織が安全でない電子メールの添付ファイルによる攻撃から保護されるようにするために、 [ATP の安全な添付ファイル](atp-safe-attachments.md)ポリシーを設定できます。 
   

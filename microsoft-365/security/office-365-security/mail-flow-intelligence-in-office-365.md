@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、Office 365 のコネクタを使用したメッセージ配信に関連付けられているエラーコード (メールフローインテリジェンスとも呼ばれます) について学ぶことができます。
-ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
-ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
+ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37886860"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971775"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 でのメール フロー インテリジェンス
 
@@ -60,7 +60,7 @@ ms.locfileid: "37886860"
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>エラーコード 450 4.4.316 を修正する方法
 
-- オンプレミスの環境にメールボックスがある場合は、TCP ポート25で Office 365 の IP アドレスからオンプレミスの電子メールサーバーへの接続を許可するように、ファイアウォールの設定を変更する必要があります。 Office 365 の IP アドレスの一覧については、「[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx)」を参照してください。
+- オンプレミスの環境にメールボックスがある場合は、TCP ポート25で Office 365 の IP アドレスからオンプレミスの電子メールサーバーへの接続を許可するように、ファイアウォールの設定を変更する必要があります。 Office 365 の IP アドレスの一覧については、「[Office 365 URL および IP アドレス範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
 
 - それ以上のエラー メッセージがオンプレミス環境に配信されないようにするには、通知内の **[今すぐ修正]** をクリックして、Office 365 が無効な受信者によるメッセージをすぐに拒否できるようにします。これにより、組織の無効な受信者用のクオータを超過するリスクが低減されます。このクオータの超過は、通常メッセージの配信に影響を及ぼすことがあります。または、次の手順を実行して、手動で問題を修正します。
 
@@ -74,7 +74,7 @@ ms.locfileid: "37886860"
 
        - [編集] ![編集アイコン**をクリックし**てコネクタを無効にし、 **[オンにする**]](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)をオフにします。
 
-  - オンプレミスの電子メール環境に関連付けられている Office 365 の承認済みドメインを、**内部の中継**から [**権限**あり] に変更します。 手順については、「 [Exchange Online で承認済みドメインを管理](https://go.microsoft.com/fwlink/p/?linkid=785428)する」を参照してください。
+  - オンプレミスの電子メール環境に関連付けられている Office 365 の承認済みドメインを、**内部の中継**から [**権限**あり] に変更します。 手順については、「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
 
   **注**: 通常、これらの変更は30分から1時間かかり、有効になります。 1時間後に、エラーが表示されなくなったことを確認します。
 

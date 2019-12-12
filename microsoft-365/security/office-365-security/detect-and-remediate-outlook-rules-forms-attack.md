@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
-ms.openlocfilehash: 5a35a227baf7c2d07ca0e7a28f791d65311c96b9
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871893"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970793"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う
 
@@ -98,7 +98,7 @@ ms.locfileid: "39871893"
 
 1. ユーザーとしてユーザーの Outlook クライアントを開きます。 ユーザーは、自分のメールボックスのルールを調べるためにヘルプを必要とする場合があります。
 
-2. 2007、2010、または2013バージョンの Outlook でルールのインターフェイスを開く方法の手順については、「[ルールを使用してメールメッセージを管理](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010)する」を参照してください。
+2. Outlook でルールインターフェイスを開く方法の手順については、「[ルールを使用してメールメッセージを管理](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)する」の記事を参照してください。
 
 3. ユーザーが作成しなかったルール、または不審な名前のルールがないかどうかを確認します。
 
@@ -110,7 +110,7 @@ ms.locfileid: "39871893"
 
 1. ユーザーとしてユーザーの Outlook クライアントを開きます。
 
-2. の手順に従い、ユーザーのバージョンの Outlook の [[開発] タブを表示](https://support.office.com/article/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45)します。
+2. の手順に従い、ユーザーのバージョンの Outlook の [[開発] タブを表示](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)します。
 
 3. Outlook で [現在表示されている開発] タブを開き、[**フォームのデザイン**] をクリックします。
 
@@ -156,13 +156,13 @@ ms.locfileid: "39871893"
 
 1. ユーザーが Outlook で使用したすべてのデバイスを特定します。 これらはすべて、潜在的なマルウェアを駆除する必要があります。 すべてのデバイスがクリーニングされるまで、ユーザーはサインオンして電子メールを使用できません。
 
-2. 「各デバイスの[ルールを削除する](https://support.office.com/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F)」の手順に従います。
+2. 「各デバイスの[ルールを削除する](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)」の手順に従います。
 
 3. 他のマルウェアが存在することが不明な場合は、デバイス上のすべてのソフトウェアを書式設定して再インストールすることができます。 モバイルデバイスでは、製造元の手順に従って、デバイスを出荷時イメージにリセットできます。
 
 4. 最新バージョンの Outlook をインストールします。 Outlook の現在のバージョンでは、この両方の種類の攻撃が既定でブロックされることに注意してください。
 
-5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) し、MFA がまだ有効になっていない場合は、 [Office 365 ユーザーのセットアップ多要素認証](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
+5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) し、MFA がまだ有効になっていない場合は、 [Office 365 ユーザーのセットアップ多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
 
 ### <a name="using-powershell"></a>PowerShell の使用
 
@@ -190,7 +190,7 @@ ms.locfileid: "39871893"
 
 ルールとフォームのエクスプロイトは、攻撃者がユーザーのアカウントのいずれかを盗んだ後、または侵害した後にのみ使用されます。 そのため、これらの悪用を組織に対して使用できないようにするための最初の手順として、ユーザーアカウントを積極的に保護することが挙げられます。 アカウントが侵害される最も一般的な方法には、フィッシングまたは[パスワード spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻撃があります。
 
-ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、 [Office 365 ユーザーに多要素認証を設定](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)することです。 次のことも実行する必要があります。
+ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、 [Office 365 ユーザーに多要素認証を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)することです。 次のことも実行する必要があります。
 
 - ユーザーアカウントがどのようにアクセスされ、[使用されるかを](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)監視します。 最初の違反を防ぐことはできませんが、期間を短縮して、違反が早く検出された場合の影響を短縮することができます。 これらの[Office 365 Cloud App Security ポリシー](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)を使用して、アカウントを監視し、異常なアクティビティに関する警告を表示することができます。
 
@@ -204,7 +204,7 @@ ms.locfileid: "39871893"
 
 ### <a name="second-keep-your-outlook-clients-current"></a>2番目: Outlook クライアントを最新の状態に保ちます
 
-Outlook 2013 の完全に更新されたバージョンとパッチが適用されたバージョン、および2016は、既定で [アプリケーションを開始する] ルール/フォームアクションを無効にします。 これにより、攻撃者がアカウントに違反したとしても、ルールおよびフォームのアクションはブロックされます。 最新の更新プログラムおよびセキュリティ更新プログラムは、「 [Office の更新プログラムをインストール](https://support.office.com/article/Install-Office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)する」の手順に従ってインストールできます。
+Outlook 2013 の完全に更新されたバージョンとパッチが適用されたバージョン、および2016は、既定で [アプリケーションを開始する] ルール/フォームアクションを無効にします。 これにより、攻撃者がアカウントに違反したとしても、ルールおよびフォームのアクションはブロックされます。 最新の更新プログラムおよびセキュリティ更新プログラムは、「 [Office の更新プログラムをインストール](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)する」の手順に従ってインストールできます。
 
 Outlook 2013 および2016クライアントのパッチバージョンは次のとおりです。
 
@@ -234,7 +234,7 @@ Outlook 2013 および2016クライアントのパッチバージョンは次の
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
 
-Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。 [Office 365 セキュリティロードマップを使用します。最初の30日間、90日間、および](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)office 365 テナントをセキュリティで保護するためのベストプラクティスを実装することをお勧めします。
+Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。 [Office 365 セキュリティロードマップを使用して、最初の30日間、90日間、および](security-roadmap.md)office 365 テナントをセキュリティで保護するためのベストプラクティスを実装することをお勧めします。
 
 - 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

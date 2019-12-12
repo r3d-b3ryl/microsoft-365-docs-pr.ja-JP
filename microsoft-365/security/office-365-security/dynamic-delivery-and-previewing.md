@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: ATP の安全な添付ファイルのポリシーを設定する場合は、[動的配信] を選択してメッセージの遅延を回避し、スキャンされた添付ファイルをプレビューできるようにします。
-ms.openlocfilehash: 203f5082701f1f3eeea36b385918328cb85deb81
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3cf914325b493098f61c84f27c102dd64fd7d8e9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085731"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970783"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Office 365 での動的配信とプレビュー、ATP の安全な添付ファイル
 
@@ -45,7 +45,7 @@ ms.locfileid: "37085731"
 
 動的配信を使用すると、ユーザーはすぐに電子メールメッセージの読み取りと応答を行うことができますが、添付ファイルは分析されます。 
 
-ATP の安全な添付ファイルのスキャンは、Office 365 データが存在する地域と同じ地域で行われます。 データセンター地理の詳細については、「[データの保存場所](https://products.office.com/where-is-your-data-located?geo=All)」を参照してください。 
+ATP の安全な添付ファイルのスキャンは、Office 365 データが存在する地域と同じ地域で行われます。 データセンター地理の詳細については、「[データの保存場所](https://products.office.com/where-is-your-data-located?geo=All)」を参照してください。
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>添付ファイルを含む電子メールを他のユーザーが転送した場合はどうなりますか。
 

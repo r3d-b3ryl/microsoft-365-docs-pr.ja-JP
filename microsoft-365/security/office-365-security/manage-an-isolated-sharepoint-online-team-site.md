@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: '概要: 以下の手順を使用して、分離した SharePoint Online チーム サイトを管理します。'
-ms.openlocfilehash: fd34a8af35b546266cf5d7cf308dbd387207eb1e
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 1b033d8c08b4b263c854213ce7b2a9fc2c0baede
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202448"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971735"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの管理
 
@@ -146,7 +146,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 カスタムのアクセス許可を持つドキュメントのサブフォルダーを作成するには、以下のことを行います。
   
-1. サイト管理者のアクセス グループのメンバーであるアカウントを使用して Office 365 にサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. サイト管理者のアクセス グループのメンバーであるアカウントを使用して Office 365 にサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. 分離したチーム サイトに移動し、 **[ドキュメント]** をクリックします。
     

@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3f9d4e1dff1f324e8e2c3eedb502ef0480d2c25e
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 4d9401c7568534e9f9a0036ef273964d327dbf06
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202418"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971405"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -28,21 +28,18 @@ ms.locfileid: "39202418"
 
 この記事では、最新リリースの Office 365 ATP の新機能の一覧を示します。 現在プレビューされている機能は、 **(プレビュー)** で示されています。
 
->Office 365 ATP をまだ持っていませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。 
+> [!TIP]
+> Office 365 ATP をまだ持っていませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン 1 およびプラン 2
 
-Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP Plan 1 および Office 365 ATP Plan 2。
- 
-次の表に、各プランに含まれるものの概要を示します。 
+Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP Plan 1 および Office 365 ATP Plan 2。 [各プランに含まれるものの詳細については、「」を参照して](office-365-atp.md#office-365-atp-plan-1-and-plan-2)ください。
 
-|Office 365 ATP プラン1  |Office 365 ATP プラン2  |
-|---------|---------|
-|構成、保護、および検出機能:<br/>- [安全な添付ファイル](atp-safe-attachments.md)<br/>- [安全なリンク](atp-safe-links.md)<br/>- [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)<br/>- [高度なフィッシング対策保護](atp-anti-phishing.md)<br/>- [リアルタイムの検出](threat-explorer.md)     |Office 365 ATP Plan 1 の機能<br/>---プラス---<br/>自動化、調査、修復、教育の機能:<br/>- [脅威のトラッカー](threat-trackers.md)<br/>- [脅威エクスプローラー](threat-explorer.md)<br/>- [インシデント対応の自動化](automated-investigation-response-office.md)<br/>- [アタックシミュレータ](attack-simulator.md)         |
+## <a name="december-2019"></a>2019 年 12 月
 
-- Office 365 ATP プラン2は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。 
-- Office 365 ATP プラン1は、Microsoft 365 Business に含まれています。 
-- 現在のサブスクリプションに Office 365 ATP が含まれていない場合は、[売上に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、ATP が組織でどのように機能するかを確認します。 
+- [エクスポート URL [オフライン分析のデータをクリックして](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)ください (OFFICE 365 ATP Plan 1 または Plan 2)
+
+- [Office のキャンペーンビュー (365 ATP) (**プレビュー**)](campaigns.md)
 
 ## <a name="november-2019"></a>2019 年 11 月
 
@@ -50,9 +47,9 @@ Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [Office 365 で自動インシデント対応 (AIR) を](automated-investigation-response-office.md)使用する (OFFICE 365 ATP Plan 2)
+- [Office 365 で自動調査および応答機能](automated-investigation-response-office.md)を使用する (OFFICE 365 ATP Plan 2)
 
-- Office [365 の ATP AIR イベントとの統合 office 365 Management ACTIVITY API を使用した統合](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(OFFICE 365 ATP Plan 2)
+- Office [365 との統合 office 365 Management ACTIVITY API を使用した office atp 自動調査と応答イベント](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(OFFICE 365 ATP Plan 2)
 
 - [電子メールのヘッダーを表示し、電子メール本文をダウンロードする](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body)(OFFICE 365 ATP Plan 1 または Plan 2)
 
@@ -64,10 +61,9 @@ Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP
 
 - [配信アクションと電子メールメッセージの場所を確認する](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location)(OFFICE 365 ATP Plan 1 または 2)
 
- ## <a name="june-2019"></a>2019 年 6 月
+## <a name="june-2019"></a>2019 年 6 月
 
 - [フィッシング url に関するデータを表示し、[verdict] をクリックし](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)ます (OFFICE 365 ATP Plan 1 または Plan 2)
-
 
 ## <a name="see-also"></a>関連項目
 

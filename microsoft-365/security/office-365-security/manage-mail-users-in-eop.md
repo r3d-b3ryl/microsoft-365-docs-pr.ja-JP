@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871773"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971745"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
@@ -63,13 +63,13 @@ ms.locfileid: "39871773"
 
   - **エンドユーザーのスパム検疫**: エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。 社内のメールボックスを保護している EOP のお客様は、有効な電子メール ユーザーである必要があります。
 
-  - **メールフロールール**: ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループが自動的にクラウドにアップロードされ、EAC または Exchange Online Protection の PowerShell を使用して手動で追加することなく、特定のユーザーやグループを対象とするメールフロールール (トランスポートルールとも呼ばれる) を作成できます。 [動的配布グループ](https://go.microsoft.com/fwlink/?LinkId=507569)はディレクトリ同期を使用して同期できないことに注意してください。
+  - **メールフロールール**: ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループが自動的にクラウドにアップロードされ、EAC または Exchange Online Protection の PowerShell を使用して手動で追加することなく、特定のユーザーやグループを対象とするメールフロールール (トランスポートルールとも呼ばれる) を作成できます。 [動的配布グループ](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)はディレクトリ同期を使用して同期できないことに注意してください。
 
-「[ディレクトリ同期を準備する](https://go.microsoft.com/fwlink/p/?LinkId=308908)」で説明されている手順に従って、必要な許可を取得し、ディレクトリ同期を準備します。
+必要なアクセス許可を取得し、ディレクトリ同期を準備します (「 [Azure Active directory でのハイブリッド id とは](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)」を参照)。
 
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>ユーザーディレクトリを Azure Active Directory Connect (AAD Connect) と同期するには
 
-Azure Active Directory (AAD) にユーザーを同期するには、「 [active directory 同期をアクティブ](https://go.microsoft.com/fwlink/p/?LinkId=308909)化する」の説明に従って、**ディレクトリ同期をアクティブ化**する必要があります。
+Azure Active Directory (AAD) に対してユーザーを同期するには、まず、「 [AZURE AD Connect sync: 同期の理解とカスタマイズ](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)」の説明に従って、**ディレクトリ同期をアクティブ化**する必要があります。
 
 次に、AAD Connect を実行するためのオンプレミスのコンピューターのインストールと構成を行います (時間の前に確認する必要があるものがまだない場合)。 [Aad connect を設定](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)すると、このトピックでは、社内のアカウントを aad 接続を使用して Azure AD にセットアップし、同期する方法について説明します。
 

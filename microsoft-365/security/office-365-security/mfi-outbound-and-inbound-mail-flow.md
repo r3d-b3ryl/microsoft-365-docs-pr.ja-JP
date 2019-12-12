@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの送信および受信メールフローウィジェットについて学習できます。
-ms.openlocfilehash: 91e582accdf7556d26e5678335eda42cc3f1f174
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ceb85b9e83596c6c300c35ba471b04282074c82f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086868"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970803"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>送信と受信のメール フロー
 
@@ -25,9 +25,9 @@ ms.locfileid: "37086868"
 
 ウィジェットの情報は、Office 365 のコネクタと TLS メッセージ保護に関連しています。 詳細については、以下のトピックを参照してください。
 
-- [Office 365 でコネクタを使用してメール フローを構成する](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
+- [Office 365 でコネクタを使用してメール フローを構成する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
-- [Exchange Online で電子メール接続をセキュリティで保護するために Office 365 で TLS を使用する方法](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
+- [Exchange Online が TLS を使って Office 365 のメール接続をセキュリティで保護する方法](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
 
 ## <a name="message-protected-in-transit-by-tls"></a>送信で保護されたメッセージ (TLS)
 
@@ -37,7 +37,7 @@ ms.locfileid: "37086868"
 
 現時点では、TLS 1.2 は、Office 365 で提供される最も安全な TLS のバージョンです。 多くの場合、コンプライアンス監査に使用されている TLS 暗号化を知っておく必要があります。 ほとんどの場合、送信元および送信先の電子メールサーバー (それらを所有しておらず、Microsoft も対象としていません) との直接的な関係はありません。そのため、これらのサーバーで使用される TLS 暗号化を改善するためのオプションは多くありません。
 
-ただし、[コネクタ](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)を使用して、電子メールサーバーと Office 365 との間で送信されるメッセージに対して最適な TLS 保護を確保することができます。 Office 365 と、パートナーに属する独自の電子メールサーバーまたはサーバー間のメールフローは、通常のメッセージよりも重要で重要なものなので、追加のセキュリティと警戒をこれらのメッセージに適用する必要があります。 独自の電子メールサーバーをアップグレードまたは修正して、使用されている TLS 暗号化を改善したり、パートナーに接続して同じ操作を実行したりすることができます。 **コネクタレポート**には、Office 365 コネクタを使用するメッセージのメールフローボリュームと TLS 暗号化の両方が表示されます。
+ただし、[コネクタ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)を使用して、電子メールサーバーと Office 365 との間で送信されるメッセージに対して最適な TLS 保護を確保することができます。 Office 365 と、パートナーに属する独自の電子メールサーバーまたはサーバー間のメールフローは、通常のメッセージよりも重要で重要なものなので、追加のセキュリティと警戒をこれらのメッセージに適用する必要があります。 独自の電子メールサーバーをアップグレードまたは修正して、使用されている TLS 暗号化を改善したり、パートナーに接続して同じ操作を実行したりすることができます。 **コネクタレポート**には、Office 365 コネクタを使用するメッセージのメールフローボリュームと TLS 暗号化の両方が表示されます。
 
 ## <a name="connector-report"></a>コネクタレポート
 
@@ -45,9 +45,9 @@ ms.locfileid: "37086868"
 
 **メールフロー**ビューには、過去1週間のコネクタを介してメッセージの量が表示されます。 日付範囲を変更するには、[**フィルター** ] を選択して、範囲を最大30日間まで拡大します。 [**すべてのメールフロー** ] ビューには、すべてのコネクタを介して Office 365 組織との間のすべてのメールフローが表示されます。 ドロップダウンメニューでは、名前によって特定のコネクタを選択できます。
 
-ドロップダウンから [ **tls usage]** ビューを選択すると、そのコネクタ経由でメッセージに対する tls 保護の内訳を確認できます。 **Tls の概要レポート**レポートと同様に、このビューには、さまざまな tls バージョンの割合が表示されます。 TLS 1.0 接続の場合は、実際には、Office 365 で TLS 1.0 サポートが廃止された場合の問題を回避するために、電子メールサーバーまたはパートナーのサーバーをアップグレードまたは修正する必要があります。 詳細については、「 [Office 365 の暗号化に関するテクニカルリファレンスの詳細](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221)」を参照してください。
+ドロップダウンから [ **tls usage]** ビューを選択すると、そのコネクタ経由でメッセージに対する tls 保護の内訳を確認できます。 **Tls の概要レポート**レポートと同様に、このビューには、さまざまな tls バージョンの割合が表示されます。 TLS 1.0 接続の場合は、実際には、Office 365 で TLS 1.0 サポートが廃止された場合の問題を回避するために、電子メールサーバーまたはパートナーのサーバーをアップグレードまたは修正する必要があります。 詳細については、「 [Office 365 の暗号化に関するテクニカルリファレンスの詳細](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)」を参照してください。
 
-Insights コネクタの潜在的な TLS 暗号化の問題に注意を向けるために役立つコネクタを指します。 分析情報は次のとおりです。 **tls が 25% を超え**ているか、 **tls 1.0 が 50% を超え**ています。 このような洞察がある場合は、コネクタに関連付けられている電子メールサーバーを調査するか、パートナー組織に連絡する必要があります。
+Insights コネクタの潜在的な TLS 暗号化の問題に注意を向けるために役立つコネクタを指します。 分析情報は次のとおりです。 **tls が25% を超え**ているか、 **tls 1.0 が50% を超え**ています。 このような洞察がある場合は、コネクタに関連付けられている電子メールサーバーを調査するか、パートナー組織に連絡する必要があります。
 
 ## <a name="see-also"></a>関連項目
 

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 17832631b188284b224fc2b786d99a78459b9d5c
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 10c03fe0370732e9cb1a10a55767648ae0ddb80b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078066"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971725"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -35,13 +35,15 @@ ms.locfileid: "38078066"
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を見つけるための手順
 
 1. Office 365 テナントの [**セキュリティとコンプライアンスセンター** ] を開きます。
+
 2. [**検索 & 調査**] ノードに移動して、[**監査ログ**の検索] を選択します。
+
 3. 検索を作成し (すべてのアクティビティとすべてのユーザー)、アプリケーションに対する同意のために結果をフィルター処理して、OAuth2PermissionGrant を追加します。
+
 4. 拡張プロパティを調べ、IsAdminContent が True に設定されているかどうかを確認します。
 
 > [!NOTE]
->  - イベントが発生した後、対応する監査ログエントリが検索結果に表示されるまでに最大で30分または最大24時間かかる場合があります。
->   - 監査レコードが保持され、監査ログで検索可能になる時間の長さは、Office 365 サブスクリプションによって異なり、特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+> •対応する監査ログエントリが検索結果に表示されるまでに、イベントが発生した後、最大30分または最大24時間かかる場合があります。 <br/><br/> •監査レコードが保持され、監査ログで検索可能になる時間の長さは、Office 365 のサブスクリプション、および特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 この値が true の場合は、グローバル管理者のアクセス権を持つユーザーがデータへの広範なアクセス権を持っている可能性があることを示します。 これが予期しない場合は、[攻撃を確認](#how-to-confirm-an-attack)するための手順を実行します。
 
 ## <a name="how-to-confirm-an-attack"></a>攻撃を確認する方法
@@ -49,7 +51,9 @@ ms.locfileid: "38078066"
 上記の IOCs のインスタンスが1つ以上ある場合は、攻撃が発生したことを確認するためにさらに調査する必要があります。 これら3つの方法のいずれかを使用して、攻撃を確認できます。
 
 - Azure Active Directory ポータルを使用した、アプリケーションとそのアクセス許可の一覧を示します。 この方法は徹底していますが、チェックするユーザーが多い場合は、一度に1人のユーザーをチェックするだけで十分な時間がかかる場合があります。
+
 - PowerShell を使用した、アプリケーションとそのアクセス許可の一覧を示します。 これは、最も少ないオーバーヘッドを最小限にした最も高速かつ最も綿密な方法です。
+
 - ユーザーが自分のアプリとアクセス許可を個別に確認して、修復のために管理者に結果を報告するようにします。
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>組織内でアクセスできるインベントリアプリ
@@ -61,9 +65,13 @@ ms.locfileid: "38078066"
 [Azure Active Directory ポータル](https://portal.azure.com/)を使用して、個々のユーザーがアクセス許可を付与したアプリケーションを検索できます。
 
 1. 管理者権限を使用して Azure Portal にサインインします。
+
 2. Azure Active Directory ブレードを選択します。
-3. [ **ユーザー**] を選びます。
+
+3. [**ユーザー**] を選択します。
+
 4. 確認するユーザーを選択します。
+
 5. [**アプリケーション**] を選択します。
 
 これにより、ユーザーに割り当てられているアプリと、applcations に設定されているアクセス許可が表示されます。
@@ -74,62 +82,90 @@ ms.locfileid: "38078066"
 
 ### <a name="steps-for-doing-this-with-powershell"></a>PowerShell を使用してこれを行うための手順
 
-不法同意付与攻撃を確認する最も簡単な方法は、 [Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)を実行することです。これにより、テナント内のすべてのユーザーの oauth 承諾許可と oauth アプリがすべて、1つの .csv ファイルにダンプされます。 
+不法同意付与攻撃を確認する最も簡単な方法は、 [Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)を実行することです。これにより、テナント内のすべてのユーザーの oauth 承諾許可と oauth アプリがすべて、1つの .csv ファイルにダンプされます。
 
 #### <a name="pre-requisites"></a>前提条件
 
 - Azure AD PowerShell ライブラリがインストールされていること。
+
 - スクリプトが実行されるテナントのグローバル管理者権限。
+
 - スクリプトを実行するコンピューターのローカル管理者。
 
 > [!IMPORTANT]
-> 管理アカウントでは、多要素認証を必要とすることを強くお勧めします。  このスクリプトは、MFA 認証をサポートします。
+> 管理アカウントでは、多要素認証を必要とすることを強くお勧めします。 このスクリプトは、MFA 認証をサポートします。
 
 1. スクリプトを実行するコンピューターに、ローカル管理者権限を使用してサインインします。
-2. GitHub から scruipt を実行するフォルダーに[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)スクリプトをダウンロードするか、コピーします。  これは、出力 "permissions" ファイルが書き込まれるフォルダーと同じです。
+
+2. GitHub から scruipt を実行するフォルダーに[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)スクリプトをダウンロードするか、コピーします。 これは、出力 "permissions" ファイルが書き込まれるフォルダーと同じです。
+
 3. 管理者として PowerShell インスタンスを開き、スクリプトを保存したフォルダーを開きます。
+
 4. [AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0)コマンドレットを使用して、ディレクトリに接続します。
-5. 次のように、この PowerShell コマンドラインを実行します。`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
+
+5. 次の PowerShell コマンドを実行します。
+
+   ```powershell
+   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   ```
 
 スクリプトによって、Permissions という名前のファイルが1つ作成されます。 次の手順に従って、不法なアプリケーションアクセス許可の付与を検索します。
 
 1. [Conな種類] 列 (列 G) で、値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可によって、クライアントアプリケーションは、テナント内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブの Office 365 アプリケーションは、正しく動作するためにこのアクセス許可を必要とします。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重にレビューする必要があります。
-2.  [アクセス許可] 列 (列 F) に、各委任されたアプリケーションがコンテンツに対して持っているアクセス許可を確認します。 "読み取り" と "書き込み" アクセス許可または "* を探します。All "アクセス許可を使用して、適切ではない可能性があるため慎重に確認してください。
-3.  同意が付与されている特定のユーザーを確認します。 プロファイルが大きい場合や、影響度の高いユーザーに不適切な同意が付与されている場合は、さらに詳しく調査する必要があります。
-4.  [ClientDisplayName] 列 (列 C) で、疑わしいと思われるアプリを探します。 名前のスペルが間違っているアプリ、super bland names、またはハッカーが発音した名前は、慎重に検討する必要があります。
+
+2. [アクセス許可] 列 (列 F) に、各委任されたアプリケーションがコンテンツに対して持っているアクセス許可を確認します。 "読み取り" と "書き込み" アクセス許可または "* を探します。All "アクセス許可を使用して、適切ではない可能性があるため慎重に確認してください。
+
+3. 同意が付与されている特定のユーザーを確認します。 プロファイルが大きい場合や、影響度の高いユーザーに不適切な同意が付与されている場合は、さらに詳しく調査する必要があります。
+
+4. [ClientDisplayName] 列 (列 C) で、疑わしいと思われるアプリを探します。 名前のスペルが間違っているアプリ、super bland names、またはハッカーが発音した名前は、慎重に検討する必要があります。
 
 ## <a name="determine-the-scope-of-the-attack"></a>攻撃の範囲を決定する
 
-アプリケーションアクセスのインベントリ処理が終了したら、Office 365**監査ログ**を確認して、違反の完全なスコープを特定します。  影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)で検索できます。 
+アプリケーションアクセスのインベントリ処理が終了したら、Office 365**監査ログ**を確認して、違反の完全なスコープを特定します。 影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)で検索できます。
 
 > [!IMPORTANT]
-> この情報を取得するには、攻撃の前に、[管理者とユーザーの](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)[メールボックスの監査](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)とアクティビティの監査を有効にする必要があります。
+> この情報を取得するには、攻撃の前に、[管理者とユーザーの](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)[メールボックスの監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)とアクティビティの監査を有効にする必要があります。
 
-## <a name="how-to-stop-and-remediate-an-illicit-consent-grant--attack"></a>方法不法な同意の付与攻撃を停止および修復する方法
+## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>方法不法な同意の付与攻撃を停止および修復する方法
 
 不法なアクセス許可を使用してアプリケーションを識別した後、そのアクセスを削除する方法がいくつかあります。
+
 - Azure Active Directory ポータルのアプリケーションのアクセス許可は、次の方法で取り消すことができます。
-    - **Azure Active Directory ユーザー**ブレードの影響を受けるユーザーに移動します。
-    - [**アプリケーション**] を選択します。
-    - 違法アプリケーションを選択します。
-    - ドリルダウンで [**削除**] をクリックします。
+
+  - **Azure Active Directory ユーザー**ブレードの影響を受けるユーザーに移動します。
+
+  - [**アプリケーション**] を選択します。
+
+  - 違法アプリケーションを選択します。
+
+  - ドリルダウンで [**削除**] をクリックします。
+
 - PowerShell で OAuth 同意の付与を取り消すには、 [AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant?view=azureadps-2.0)の手順に従ってください。
+
 - PowerShell を使用してサービスアプリの役割の割り当てを無効にするには、 [AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment?view=azureadps-2.0)の手順に従ってください。
+
 - 影響を受けるアカウントのサインインを完全に無効にすることもできます。これにより、そのアカウントのデータに対するアプリのアクセスが無効になります。 これは、エンドユーザーの生産性を向上させるのには理想的ではありませんが、影響をすばやく抑えるために作業する場合は、実用的な短期的な修復になります。
-- テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。  これを行うには、[統合アプリをオンまたはオフ](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34)にする手順に従ってください。
+
+- テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。 これを行うには、[統合アプリをオンまたはオフ](https://docs.microsoft.com/office365/admin/misc/integrated-apps)にする手順に従ってください。
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
 
-Office 365 サブスクリプションには、データとユーザーを保護するために使用可能な強力なセキュリティ機能のセットが付属しています。「[Office 365 のセキュリティ ロードマップ: 最初の 30 日間、90 日間、およびそれ以後の優先事項](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)」を使用して、Office 365 テナントをセキュリティで保護するためのマイクロソフト推奨ベスト プラクティスを実践します。
+Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。 [Office 365 セキュリティロードマップを使用して、最初の30日間、90日間、および](security-roadmap.md)office 365 テナントをセキュリティで保護するためのベストプラクティスを実装することをお勧めします。
 
-- 最初の 30 日間で完了すべき作業。すぐにユーザーに影響しますが、それほど大きな影響ではありません。
+- 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
+
 - 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
+
 - 90 日以降。最初の 90 日間の作業で保護が強化されます。
 
 ## <a name="see-also"></a>関連項目:
 
 - [[自分のアプリケーション] リスト内の予期しないアプリケーション](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)は、データにアクセスするための予期しないアプリケーションがあることを認識した後に、管理者がさまざまなアクションを実行できるようにします。
+
 - [アプリケーションを Azure Active Directory と統合](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)することは、同意とアクセス許可の概要です。
+
 - [アプリケーションの開発に関する問題](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map)さまざまな同意に関する記事へのリンクを提供します。
+
 - 「 [Azure Active Directory のアプリケーションおよびサービスプリンシパルオブジェクト (AZURE AD)」で](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)は、アプリケーションモデルにとって中核となるアプリケーションおよびサービスプリンシパルオブジェクトの概要を示します。
+
 - アプリへの[アクセスを管理](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps)すると、管理者がアプリへのユーザーアクセスを管理するために必要な機能の概要が表示されます。

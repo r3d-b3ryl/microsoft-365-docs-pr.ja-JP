@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-ms.openlocfilehash: c87744608930603f70e6be1132a0b405e9646b57
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441194"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971625"
 ---
 # <a name="troubleshooting-and-support-information"></a>トラブルシューティングとサポート情報
 
@@ -84,8 +84,8 @@ ms.locfileid: "37441194"
 
 アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Microsoft 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。 電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support FOR EOP](help-and-support-for-eop.md)」を参照してください。
 
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
-[レポート メッセージ アドインを有効にする](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)
 
 [迷惑メール メッセージを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)

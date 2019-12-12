@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
-ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: ae08ff17a3ef25f0b0903d02ffe396cd201bd06c
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441564"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970523"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 Microsoft Exchange Online Protection (EOP) でホストされる電子メール フィルタリング サービスへようこそ。ここでは、EOP で作業を開始する前に注意すべき点をいくつか取り上げ、以下のコンテンツを使用します。
 
-- EOP の詳細については、「[Exchange Online Protection サービスの説明](https://go.microsoft.com/fwlink/p/?LinkId=320619)」を参照してください。その他の有益なリソースとして、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」、「[EOP の一般的な FAQ](eop-general-faq.md)」、および「[EOP の機能](eop-features.md)」、および「[Exchange Online Protection ホームページ](https://go.microsoft.com/fwlink/?LinkId=279912)」があります。
+- EOP の詳細については、「 [Exchange Online Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)」を参照してください。 その他の有益なリソースとして、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」、「[EOP の一般的な FAQ](eop-general-faq.md)」、および「[EOP の機能](eop-features.md)」、および「[Exchange Online Protection ホームページ](https://products.office.com/exchange/exchange-email-security-spam-protection)」があります。
 
 - EOP を初めて使うお客様は、まず「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照してください。 このトピックには、EOP を使い始める際に役立つ手順が記載されています。
 
@@ -67,6 +67,6 @@ EOP エンド ユーザーによるスパム管理を支援するためのヘル
 
 - [マルウェアおよびマルウェア以外の Microsoft による分析の提出](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): エンドユーザーがフィルターを通過したマルウェアを送信したり、マルウェアとして誤って識別されたファイルを送信したりする方法について説明します。
 
-- エンドユーザーは、Outlook または web 上の Outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。 禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
+- エンドユーザーは、Outlook または web 上の Outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。 禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
 
 - 「[EOP のヘルプとサポート](help-and-support-for-eop.md)」 ヘルプおよびテクニカル サポートの入手方法について説明しています。

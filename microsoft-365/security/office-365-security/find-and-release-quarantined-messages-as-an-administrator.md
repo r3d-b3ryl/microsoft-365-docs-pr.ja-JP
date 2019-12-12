@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。
-ms.openlocfilehash: e60c0ae87f050b6e72e53b6069a61cd52df0641a
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871843"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971755"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>管理者として検疫済みメッセージを検索して解放する
 
 このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。 Office 365 は、スパムとして識別されたか、メールフロールール (トランスポートルールとも呼ばれる) と一致したために、メッセージを検疫するように指示します。
 
-EAC ではなくセキュリティ & コンプライアンスセンターを使用して、これらのタスクを実行することもできます。Exchange 管理センター (EAC) 内の検疫ポータルは、decommisioned に設定されています。  For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+EAC ではなくセキュリティ & コンプライアンスセンターを使用して、これらのタスクを実行することもできます。Exchange 管理センター (EAC) 内の検疫ポータルは、decommisioned に設定されています。 For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
 検疫済みメッセージは EAC の **[検疫]** ページに一覧表示されます。既定では、メッセージは **[受信]** フィールドの降順で並べ替えられます。 **[送信者]**、 **[件名]**、および **[有効期限]** の値もメッセージごとに表示されます。フィールドは、ヘッダーをクリックして並べ替えることができます。見出しをもう一度クリックすると、逆の順序で並べ替えられます。 **[検疫]** ページには最大で 500 個のメッセージを表示できます。
 
@@ -37,14 +37,14 @@ EAC ではなくセキュリティ & コンプライアンスセンターを使�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」トピックの「検疫」エントリを参照してください。
+- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」トピックの「検疫」エントリを参照してください。
 
 - **[検疫]** ページでは、一度に複数のメッセージを解放または報告することができません。代わりに、このタスクを実行するリモート Windows PowerShell スクリプトを作成することができます。メッセージを検索する場合は [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) コマンドレットを使用し、それらを解放する場合は [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) コマンドレットを使用します。
 
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 
 > [!TIP]
-> 問題がある場合は、 Exchange のフォーラムで質問してください。 > 一般法人向け Office 365 の管理者の場合は、サポートに問い合わせることができます。
+> 問題がある場合は、 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラムでヘルプを要求します。
 
 ## <a name="use-advanced-search-to-filter-and-locate-quarantined-messages"></a>高度な検索を使用して検疫済みメッセージをフィルター処理して特定する
 

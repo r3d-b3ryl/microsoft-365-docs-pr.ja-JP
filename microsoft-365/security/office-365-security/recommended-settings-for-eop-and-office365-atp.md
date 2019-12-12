@@ -13,18 +13,21 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837331"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971545"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
 **Exchange Online Protection (EOP)** は、Office 365 サブスクリプションのセキュリティの中核で、悪意のある電子メールが従業員の受信トレイに届かないようにするために使用されます。 しかし、毎日新しい高度な攻撃が発生すると、多くの場合、保護が強化されます。 **Office 365 Advanced Threat Protection (ATP)** ATP プラン1または ATP Plan 2 には、管理者によるセキュリティ、統制、調査の層をさらに強化する追加機能が含まれています。
 
 セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP と Office 365 ATP には、**標準**と**Strict**の2つのセキュリティレベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのメールフィルター構成は、ほとんどの状況で、不要なメールが従業員の受信トレイに届くことを防ぐために役立ちます。
+
+> [!IMPORTANT]
+> フィルター処理を正常に機能させるには、メールボックスで迷惑メールの構成を有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合はオンにしてください。 詳細については[、「set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) 」を参照してください。 
 
 このトピックでは、Office 365 ユーザーを保護するために Microsoft が推奨する設定について説明します。
 
@@ -41,7 +44,7 @@ ms.locfileid: "39837331"
 |フィッシング電子メールの検出アクション|検疫メッセージ|検疫メッセージ||
 |高信頼フィッシング電子メール検出アクション|検疫メッセージ|検疫メッセージ||
 |電子メールの一括検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|バルクメールしきい値をに設定する|シックス|2/4|現在、既定値は7ですが、多くの組織では、少なくとも6に移行することをお勧めします。|
+|バルクメールしきい値をに設定する|6 |4 |現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
 |検疫の保存期間|30 日間|30 日間||
 |安全性に関するヒント|オン|オン||
 |許可された送信者|なし|なし||
@@ -163,4 +166,3 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |ATP の安全な添付ファイルの不明なマルウェア応答|Block|Block||
 |検出時に添付ファイルをリダイレクトする|有効|有効|添付ファイルがマルウェアであるかどうかを判断する方法を把握しているセキュリティ管理者の電子メールアドレスにリダイレクトする|
 |添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合の、ATP の安全な添付ファイル応答|有効|有効||
-

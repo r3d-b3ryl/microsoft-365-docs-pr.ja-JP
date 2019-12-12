@@ -14,46 +14,46 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 信頼できるユーザーからの電子メールがブロックされないようにするには、接続フィルターポリシーを使用して、信頼する IP アドレスの許可リスト (安全な差出人のリストとも呼ばれます) を作成します。 受信拒否リストを作成することもできます。
-ms.openlocfilehash: 6dc0bc4f29446cc064420632f04265c93c0ffa1b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871923"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971835"
 ---
 # <a name="configure-the-connection-filter-policy"></a>接続フィルター ポリシーを設定する
 
 ほとんどの人は友人やビジネス パートナーを信頼しています。信頼する人からの電子メールが迷惑メール フォルダーに入っていたり、スパム フィルターによって完全にブロックされたりすると、もどかしさを感じます。そのようなメールがブロックされないようにするには、接続フィルター ポリシーを利用して許可リスト (「差出人セーフ リスト」ともいう) を作成し、信頼する IP アドレスを登録することができます。また、受信拒否リストを作成して既知のスパム メール送信者の IP アドレスを登録し、そのような送信者からの電子メール メッセージを受信しないようにすることもできます。
-  
+
 - *[許可リスト](create-safe-sender-lists-in-office-365.md)* について検討する場合、接続フィルターポリシーは、フィルターによって許可されている*信頼さ*れたアカウントに特に注意してください。 これは、必要な情報を保持しながら、信頼できるまたは信頼されていないメールをより正確にフィルター処理することが重要になります。 接続フィルターポリシーの許可リストは、アカウントおよび Ip の大規模なプールから少数の信頼された Ip にフィルターを適用し、信頼できるメールボックスへのアクセスを容易にすることを目的としています。
 
 - 接続フィルターポリシーブロックリストを作成する場合は、代わりに、フィルターでの信頼できないアカウントをキャッチすることを考えることができます。
 
- 組織全体に適用されるスパム設定の詳細については、「 [EOP と Office 365 でメールが迷惑メールとして検出されないようにする](https://go.microsoft.com/fwlink/p/?LinkId=534224)」または「[Office 365 のスパム フィルターでスパムや迷惑メールをブロックして、検出漏れ問題を防止する](https://go.microsoft.com/fwlink/p/?LinkId=534225)」を参照してください。これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
+ 組織全体に適用されるスパム設定の詳細については、「 [office 365 で電子メールがスパムとしてマークされないようにする方法](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)」または「 [office 365 でスパムメールを減らす方法](reduce-spam-email.md)」を参照してください。 これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
 
 > [!TIP]
 > [許可 (または安全な送信者) のリスト](create-safe-sender-lists-in-office-365.md)と[ブロックリスト](create-block-sender-lists-in-office-365.md)を作成する方法については、一時停止および読み取りを行う必要があります。
-  
+
 次のビデオでは、接続フィルター ポリシーの構成手順を示します。
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
 
 - 予想所要時間: 15 分
 
-- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」トピックの「スパム対策」のエントリを参照してください。
+- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」トピックの「スパム対策」のエントリを参照してください。
 
-- 許可またはブロックする送信者の IP アドレスを取得するには、メッセージのインターネット ヘッダーを確認するという方法があります。 「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」で説明されているように、CIP ヘッダーを調べます。 さまざまな電子メールクライアントでメッセージヘッダーを表示する方法については、「[メッセージヘッダーアナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」を参照してください。
+- 許可またはブロックする送信者の IP アドレスを取得するには、メッセージのインターネット ヘッダーを確認するという方法があります。 「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」で説明されているように、CIP ヘッダーを調べます。 さまざまな電子メールクライアントでメッセージヘッダーを表示する方法については、「 [Outlook でインターネットメッセージヘッダーを表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)する」を参照してください。
 
 - IP ブロック一覧の IP アドレスから送信された電子メール メッセージは拒否され、スパムとしてマークされず、追加のフィルター処理は行われません。
 
-- 以下の接続フィルター手順はリモート PowerShell 経由でも実行することができます。Get-HostedConnectionFilterPolicy コマンドレットを使用して設定を確認し、 Set-HostedConnectionFilterPolicy を使用して接続フィルター ポリシー設定を編集します。 [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) コマンドレットを使用して設定を確認し、[Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) を使用して接続フィルター ポリシー設定を編集します。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell に接続する](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
+- 以下の接続フィルター手順はリモート PowerShell 経由でも実行することができます。Get-HostedConnectionFilterPolicy コマンドレットを使用して設定を確認し、 Set-HostedConnectionFilterPolicy を使用して接続フィルター ポリシー設定を編集します。 [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) コマンドレットを使用して設定を確認し、[Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) を使用して接続フィルター ポリシー設定を編集します。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>EAC を使用して既定の接続フィルター ポリシーを編集する
 
 IP 許可リストまたは IP 禁止リストを作成するには、Exchange 管理センター (EAC) で接続フィルター ポリシーを編集します。接続フィルター ポリシーの設定は、受信メッセージのみに適用されます。
-  
+
 1. Exchange 管理センター (EAC) で、 **[保護]** \> **[接続フィルター]** に移動し、既定のポリシーをダブルクリックします。
 
 2. **[接続フィルター]** メニュー項目をクリックし、IP 許可一覧、IP 禁止一覧、あるいはその両方のうち、必要な一覧を作成します。
@@ -64,21 +64,21 @@ IP 許可リストまたは IP 禁止リストを作成するには、Exchange �
 
    > [!NOTE]
    > 両方のリストに IP アドレスを追加すると、その IP アドレスから送信された電子メールが許可されます。 <br/><br/> 最大 1273 のエントリを指定できます。各エントリは、単一の IP アドレス、または IP アドレスの CIDR 範囲 (/24 から /32 まで) にすることができます。<br/><br/> TLS で暗号化されたメッセージを送信している場合、IPv6 アドレスとアドレスの範囲はサポートされていません。
-  
-3. 必要に応じて、[**セーフリストを有効**にする] チェックボックスをオンにして、特定の既知の送信者からの電子メールが失われないようにします。 どう。 Microsoft は、信頼できる送信者のサードパーティソースにサブスクライブします。 このセーフリストを使用することは、これらの信頼できる差出人が誤ってスパムとしてマークされていることを意味します。 受信する誤検知 (良好なメールに分類されているメール) の数を減らす必要があるため、このオプションを選択することをお勧めします。 
+
+3. 必要に応じて、[**セーフリストを有効**にする] チェックボックスをオンにして、特定の既知の送信者からの電子メールが失われないようにします。 どう。 Microsoft は、信頼できる送信者のサードパーティソースにサブスクライブします。 このセーフリストを使用することは、これらの信頼できる差出人が誤ってスパムとしてマークされていることを意味します。 受信する誤検知 (良好なメールに分類されているメール) の数を減らす必要があるため、このオプションを選択することをお勧めします。
 
 4. **[保存]** をクリックします。既定のポリシー設定の概要が右側のウィンドウに表示されます。
 
 ## <a name="additional-considerations-when-configuring-ip-allow-lists"></a>IP 許可一覧を構成する場合のその他の留意点
 
 IP 許可一覧を構成する場合に考慮するまたは認識すべきその他の留意点を以下に示します。
-  
+
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>推奨範囲外の CIDR 範囲の指定
 
 /1 から/23 の CIDR IP アドレスの範囲を指定するには、スパムの信頼レベル (SCL) を設定するメールフロールールを作成する必要があり**ます (つまり**、この ip アドレス範囲内で受信するすべてのメッセージは "not spam" に設定されており、そのサービスによって追加のフィルター処理は実行されません) ただし、これらの IP アドレスのいずれかが Microsoft の独自のブロックリストまたはサードパーティのブロックリストのいずれかに表示される場合でも、これらのメッセージはブロックされます。 そのため、/24 ~ 32 IP アドレス範囲を使用することを強くお勧めします。
-  
+
 このメールフロールールを作成するには、次の手順を実行します。
-  
+
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
 2. ![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールを作成する]** を選択します。
@@ -100,11 +100,11 @@ IP 許可一覧を構成する場合に考慮するまたは認識すべきそ�
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>特定のドメインに関する IP 許可一覧例外の範囲指定
 
 一般に、安全だと思われるドメインの IP アドレス (または IP アドレス範囲) をすべて IP 許可一覧に追加することをお勧めします。 ただし、IP 許可一覧のエントリをすべてのドメインに適用しない場合は、特定のドメインを除外するメールフロールール (トランスポートルールとも呼ばれます) を作成できます。
-  
+
 たとえば、ContosoA.com、ContosoB.com、および ContosoC.com という 3 つのドメインがあり、IP アドレス (簡単にするために、1.2.3.4 を使用する) を追加して、ContosoB.com ドメインのフィルター処理だけを省略することにしましょう。 すべてのドメインの Spam Confidence Level (SCL) を -1 に設定する (非スパムに分類されることを意味する) 1.2.3.4 用の IP 許可一覧を作成します。 その後、ContosoB.com 以外のすべてのドメインの SCL を0に設定するメールフロールールを作成できます。 これにより、ルールの適用外のドメインに指定されている ContosoB.com を除く IP アドレスに対応するすべてのドメインについてメッセージが再スキャンされます。 ContosoB.com の SCL はフィルター処理をスキップする -1 のままであるのに対して、ContosoA.com と ContosoC.com の SCL はコンテンツ フィルターによって再スキャンされる 0 です。
-  
+
 これを実現するには、以下の手順を実行します。
-  
+
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
 2. ![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールを作成する]** を選択します。
@@ -119,7 +119,7 @@ IP 許可一覧を構成する場合に考慮するまたは認識すべきそ�
 
 7. [**例外の追加**] をクリックし、[除く] の**場合**は [**送信者**] を選択し、[ **domain is**] を選択します。
 
-8. [**ドメインの指定**] ボックスに、スパムフィルタリングをバイパスするドメイン ( **contosob.com**など) を入力します。 ![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif)をクリックして、それを語句の一覧に**移動します**。 その他のドメインを例外として追加する場合はこの手順を繰り返し、完了したら、 **[ok]** をクリックします。 
+8. [**ドメインの指定**] ボックスに、スパムフィルタリングをバイパスするドメイン ( **contosob.com**など) を入力します。 ![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif)をクリックして、それを語句の一覧に**移動します**。 その他のドメインを例外として追加する場合はこの手順を繰り返し、完了したら、 **[ok]** をクリックします。
 
 9. これ以外にも、ルールを監査する、ルールをテストする、一定期間だけルールをアクティブにするといった選択肢もあります。 ルールを施行する前に一定期間ルールをテストすることをお勧めします。 [Exchange Server のメールフロールールの手順には](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)、これらの選択についての詳細が含まれています。
 
@@ -152,11 +152,11 @@ IP 許可一覧を構成する場合に考慮するまたは認識すべきそ�
 ## <a name="for-more-information"></a>詳細情報
 
 [Exchange Online の差出人セーフ リストと受信拒否リスト](safe-sender-and-blocked-sender-lists-faq.md)
-  
+
 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)
-  
+
 [送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)
-  
-[メッセージがスパムとしてマークされないようにする方法](https://go.microsoft.com/fwlink/p/?LinkId=534224)
-  
-[検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+
+[Office 365 で良好なメールがスパムとしてマークされないようにする方法](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+
+[Office 365 で迷惑メールを減らす方法](reduce-spam-email.md)

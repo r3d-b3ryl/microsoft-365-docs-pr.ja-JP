@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 特定の送信者からのメールを確実に受信できるようにする場合は、Exchange 管理センターでスパムフィルターポリシーの許可リストを調整できます。このようなメッセージを受信します。
-ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793681"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970853"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Office 365 で差出人セーフリストを作成する
 
@@ -74,7 +74,7 @@ ms.locfileid: "38793681"
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Outlook の差出人セーフリストを使用する (エンドユーザーによる管理)
 
-エンドユーザーは、アドレス、ドメイン、または IP アドレスをグローバルに承認する代わりに、Outlook の差出人セーフリストを使用してアドレスを送信することもできます。 この設定を行うための手順は、 [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)と[outlook クライアント](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)で異なります。 **差出人セーフリストが原因でメッセージが正常に承認された場合は、** スパム/スプーフィング/フィッシングフィルターがバイパスされることを示す [スパム対策: sfv: sfv] が表示されます。
+エンドユーザーは、アドレス、ドメイン、または IP アドレスをグローバルに承認する代わりに、Outlook の差出人セーフリストを使用してアドレスを送信することもできます。 この設定の手順は、 [web 上の outlook](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)と[outlook クライアント](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)で異なります。 **差出人セーフリストが原因でメッセージが正常に承認された場合は、** スパム/スプーフィング/フィッシングフィルターがバイパスされることを示す [スパム対策: sfv: sfv] が表示されます。
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>スパム対策ポリシーの IP 許可一覧の使用
 

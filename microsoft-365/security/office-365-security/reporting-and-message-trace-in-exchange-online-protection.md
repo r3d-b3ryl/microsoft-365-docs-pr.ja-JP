@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートが用意されています。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。 次の表には、EOP 管理者が利用できるレポートおよびトラブルシューティングのツールを示します。
-ms.openlocfilehash: 81b4ce3d22fbf33dc2f22a4b0a73a3459b1874ee
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 251286fca4ed54b87809c46e6e0f47ea618df747
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441414"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971512"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection でのレポート作成とメッセージ追跡
 
@@ -31,15 +31,15 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 
 **メールボックスの使用状況**: メールボックスの使用済み記憶域、クォータ消費、アイテム数、最後のアクティビティ (送信または読み取りアクティビティ) に関する情報を表示します。
 
-詳細については、次のリソースを参照してください。
+詳細については、以下のリソースを参照してください。
 
-- [管理センターの office 365 レポート-Office 365 グループ](https://go.microsoft.com/fwlink/p/?linkid=861610)
+- [管理センターの office 365 レポート-Office 365 グループ](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [管理センターの Office 365 レポート-電子メールアクティビティ](https://go.microsoft.com/fwlink/p/?linkid=859706)
+- [管理センターの Office 365 レポート-電子メールアクティビティ](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [管理センターの Office 365 レポート-電子メールアプリの使用状況](https://go.microsoft.com/fwlink/p/?linkid=859707)
+- [管理センターの Office 365 レポート-電子メールアプリの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [管理センターでの Office 365 レポート-メールボックスの使用状況](https://go.microsoft.com/fwlink/p/?linkid=859708)
+- [管理センターでの Office 365 レポート-メールボックスの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのセキュリティ & コンプライアンスレポート
 
@@ -49,17 +49,15 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 
 **EOP**: マルウェアの検出、スプーフィングされたメール、スパム検出、組織との間のメールフローに関する情報を表示します。
 
-[Advanced Threat Protection および Exchange Online Protection のレポートを表示する](https://go.microsoft.com/fwlink/p/?linkid=852409)
+[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
 
-Microsoft Graph を使用して Microsoft 365 管理センターで利用可能なレポートをプログラムで作成する microsoft [graph の Office 365 使用状況レポート](https://go.microsoft.com/fwlink/p/?linkid=865135)の使用に関するサブトピックを参照してください。
+Microsoft Graph を使用して、Microsoft 365 管理センターで利用可能なレポートをプログラムで作成します。 「 [Microsoft Graph で Office 365 の使用状況レポートを](https://docs.microsoft.com/graph/api/resources/report)使用する」のサブトピックを参照してください。
 
-## <a name="custom-reports-using-reporting-web-services"></a>レポート Web サービスを使用するカスタム レポート
+## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
 
-REST/ODATA2 クエリフィルターを使用して、利用可能な Exchange Online Protection PowerShell レポートコマンドレットからプログラムでレポートを作成します。
-
-[Office 365 Reporting Web サービス](https://go.microsoft.com/fwlink/p/?LinkId=279926)を参照してください。
+プログラムでレポートを作成します。 [Microsoft Graph の概要を](https://docs.microsoft.com/graph/overview)参照してください。
 
 ## <a name="message-trace"></a>メッセージの追跡
 
