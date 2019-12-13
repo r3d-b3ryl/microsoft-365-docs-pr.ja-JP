@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 迷惑メールの検出漏れを防ぐための EOP スタンドアロンの管理者向けドキュメント
-ms.openlocfilehash: cc0237ddc127c9818ae9cf4916187485e4d1dee7
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871953"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971905"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>以下の設定により Office 365 のスパム対策フィルターをカスタマイズする
 
@@ -31,7 +31,7 @@ ms.locfileid: "39871953"
 
 接続フィルター IP 禁止一覧に送信者の IP アドレスを追加して、Office 365 のスパム フィルターをカスタマイズします。
 
-1. 「[メッセージ ヘッダー アナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」で説明されているように、Outlook や Outlook on the web (以前の Outlook Web App) などのメール クライアントでブロックするメッセージのヘッダーを取得します。
+1. 「[Outlook のインターネット メッセージ ヘッダーの表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)」で説明されているように、Outlook や Outlook on the web (以前の Outlook Web App) などのメール クライアントでブロックするメッセージのヘッダーを取得します。
 
 2. [メッセージ ヘッダー アナライザー](https://testconnectivity.microsoft.com/?tabid=mha)を使用するか、または手動で、X-Forefront-Antispam-Report ヘッダー内の CIP タグの後に続く IP アドレスを検索します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "39871953"
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>メール ユーザーは、Office 365 のスパム フィルターを使用して、確実に検出漏れや迷惑メールをブロックすることもできます。
 
-Office 365 のスパム対策を活用すれば、[Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) または [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=294862) のスパム送信者一覧にスパム送信者アドレスを追加するようユーザーに指示した場合に、検出漏れや迷惑メールを防止することができます。Outlook on the web では、ここで示すとおり、**[設定]** \> **[オプション]** \> **[ブロックまたは許可]** をクリックし、**[ブロックする差出人]** 一覧にアドレスを追加します。
+Office 365 のスパム対策を活用すれば、[Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) または [Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) のスパム送信者一覧にスパム送信者アドレスを追加するようユーザーに指示した場合に、検出漏れや迷惑メールを防止することができます。Outlook on the web では、ここで示すとおり、**[設定]** \> **[オプション]** \> **[ブロックまたは許可]** をクリックし、**[ブロックする差出人]** 一覧にアドレスを追加します。
 
 ![Outlook on the web で送信者をブロックする](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 

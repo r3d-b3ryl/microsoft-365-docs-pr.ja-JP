@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: 182b422f5ebfac440777eeb975732fe7cd48822b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871983"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971995"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -103,7 +103,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**理由**|**説明**|
-|0xx |メッセージは複合認証に失敗しました。<br/>**000** は、メッセージが拒否または検疫のアクションによって DMARC に失敗したことを意味します。  <br/>**001** は、メッセージが暗黙的な電子メール認証に失敗したことを意味します。 これは、送信側ドメインが電子メール認証レコードを公開していないか、公開していた場合でも弱い失敗ポリシー (SPF soft fail または neutral、p=none の DMARC ポリシー) があったことを意味します。  <br/>**002** は、組織に、スプーフィングされたメールの送信を明示的に禁止する送信者/ドメインのペアのポリシーがあることを意味します。この設定は、管理者が手動で設定します。  <br/>**010** は、メッセージが拒否または検疫のアクションによって DMARC に失敗して、送信側ドメインが組織の承認済みドメインに含まれていることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。 <br/> |
+|0xx |メッセージは複合認証に失敗しました。<br/>**000** は、メッセージが拒否または検疫のアクションによって DMARC に失敗したことを意味します。  <br/>**001** は、メッセージが暗黙的な電子メール認証に失敗したことを意味します。 これは、送信側ドメインが電子メール認証レコードを公開していないか、公開していた場合でも弱い失敗ポリシー (SPF soft fail または neutral、p=none の DMARC ポリシー) があったことを意味します。  <br/>**002** は、組織に、スプーフィングされたメールの送信を明示的に禁止する送信者/ドメインのペアのポリシーがあることを意味します。この設定は、管理者が手動で設定します。  <br/>**010** は、メッセージが拒否または検疫のアクションによって DMARC に失敗して、送信側ドメインが組織の承認済みドメインに含まれていることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。|
 |1xx、2xx、3xx、4xx、および 5xx|メッセージが暗黙の認証にパスした理由や、認証なしでもアクションが適用されなかった理由に関する、さまざまな内部コードに対応します。|
 |6xx|暗黙的な電子メール認証に失敗したが、送信側ドメインが組織の承認済みドメインのいずれかであることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。|
 
@@ -257,9 +257,9 @@ To: someone@example.com
 
 |**スプーフィングの種類**|**カテゴリ**|**安全のヒントの追加**|**適用対象**|
 |:-----|:-----|:-----|:-----|
-|DMARC の失敗 (検疫または拒否)  <br/> |HSPM (既定)、SPM または PHSH の可能性もあり  <br/> |なし (現時点)  <br/> |すべての Office 365 ユーザー、Outlook.com  <br/> |
-|自己完結型  <br/> |SPM  <br/> |あり  <br/> |すべての Office 365 組織、Outlook.com  <br/> |
-|クロスドメイン  <br/> |SPOOF  <br/> |あり  <br/> |Office 365 Advanced Threat Protection および E5 ユーザー  <br/> |
+|DMARC の失敗 (検疫または拒否)|HSPM (既定)、SPM または PHSH の可能性もあり|なし (現時点)|すべての Office 365 ユーザー、Outlook.com|
+|自己完結型|SPM|あり|すべての Office 365 組織、Outlook.com|
+|クロスドメイン|SPOOF|あり|Office 365 Advanced Threat Protection および E5 ユーザー|
 
 ### <a name="changing-your-anti-spoofing-settings"></a>スプーフィング対策の設定の変更
 
@@ -319,8 +319,8 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-
 ```
+
 > [!IMPORTANT]
 > メール パスの最初のホップが Office 365 であり、スプーフィングのマークが付けられた正当な電子メールが多すぎる場合は、まず、スプーフィングされた電子メールの自分のドメインへの送信を許可する送信者を設定します (「*認証されていない電子メールを送信する正当な送信者の管理*」を参照)。 それでも誤検知 (正当なメッセージにスプーフィングのマークが付けられる) が多すぎる場合でも、スプーフィング対策保護を完全に無効化することはお勧めしません。 その代りに、「高」ではなく「基本」の保護を選択することをお勧めします。 スプーフィングされた電子メールを放置すると長期的には組織に相当に高いコストがかかる可能性があるため、誤検知に対処するほうが良いでしょう。
 
@@ -330,15 +330,15 @@ Office 365 は、認証されていない電子メールを組織に送信して
 
 ただし、管理者は、Office 365 の決定をオーバーライドして、スプーフィングされた電子メールの送信を許可する送信者を指定できます。
 
-**方法 1: 組織がドメインを所有している場合は、電子メール認証を設定する**
+#### <a name="method-1---if-your-organization-owns-the-domain-set-up-email-authentication"></a>方法 1: 組織がドメインを所有している場合は、電子メール認証を設定する
 
 この方法は、組織内スプーフィングの解決に使用できます。また、複数のテナントを所有している場合や複数のテナントとやり取りする場合のクロスドメイン スプーフィングの解決にも使用できます。 さらに、Office 365 内の別のユーザーや、別のプロバイダーでホストされているサード パーティに送信する場合のクロスドメイン スプーフィングを解決する際にも役立ちます。
 
 詳細については、「[Office 365 のユーザー](#customers-of-office-365)」を参照してください。
 
-**方法 2: スプーフィング インテリジェンスを使用して、認証されていない電子メールが許可された送信者を構成する**
+#### <a name="method-2---use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>方法 2: スプーフィング インテリジェンスを使用して、認証されていない電子メールが許可された送信者を構成する
 
-認証されていないメッセージを組織に送信する送信者を許可するために、[スプーフィング インテリジェンス](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)を使用することもできます。
+認証されていないメッセージを組織に送信する送信者を許可するために、[スプーフィング インテリジェンス](learn-about-spoof-intelligence.md)を使用することもできます。
 
 外部ドメインの場合、スプーフィングされたユーザーは From アドレスのドメインになり、送信側インフラストラクチャは送信側 IP アドレス (/24 CIDR 範囲で分割)、または PTR レコードの組織のドメインになります (次のスクリーンショットでは、送信側 IP は 131.107.18.4 で、その PTR レコードは outbound.mail.protection.outlook.com であり、送信側インフラストラクチャについては outlook.com と表示されます)。
 
@@ -373,13 +373,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 これにより、bing.com は認証されていない電子メールを \*.outlook.com から送信できるようになります。
 
-**方法 3: 送信者/受信者ペアの許可エントリを作成する**
+#### <a name="method-3---create-an-allow-entry-for-the-senderrecipient-pair"></a>方法 3: 送信者/受信者ペアの許可エントリを作成する
 
 特定の送信者に対するすべてのスパム フィルター処理をバイパスすることもできます。 詳細については、「[Office 365 の許可リストに安全に送信者を追加する方法](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/)」を参照してください。
 
 この方法を使用すると、スパム フィルター処理と一部のフィッシング フィルター処理がスキップされます。ただし、マルウェア フィルター処理はスキップされません。
 
-**方法 4: 送信者に問い合わせて、電子メール認証を設定するように依頼する**
+#### <a name="method-4---contact-the-sender-and-ask-them-to-set-up-email-authentication"></a>方法 4: 送信者に問い合わせて、電子メール認証を設定するように依頼する
 
 スパムとフィッシングの問題があるため、Microsoft は、すべての送信者が電子メール認証を設定することをお勧めします。 送信側ドメインの管理者がわかっている場合は、その管理者に問い合わせて、電子メール認証レコードを設定するように要求し、一切のオーバーライドが不要になるようにします。 詳細については、この記事で後述する「[Office 365 ユーザーではないドメインの管理者](#administrators-of-domains-that-are-not-office-365-customers)」を参照してください。
 
@@ -654,7 +654,7 @@ Microsoft のスプーフィング対策テクノロジは、最初に Office 36
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>スパムまたは非スパムのメッセージについて、どのように Microsoft に報告すればよいですか
 
-[Outlook 用の迷惑メール報告アドイン](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できます。このアドインをインストールしていない場合は、[スパム、非スパム、およびフィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)こともできます。
+[Outlook 用の迷惑メール報告アドイン](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できます。このアドインをインストールしていない場合は、[スパム、非スパム、およびフィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)こともできます。
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>ドメイン管理者ですが、把握できていない送信者がいます
 
