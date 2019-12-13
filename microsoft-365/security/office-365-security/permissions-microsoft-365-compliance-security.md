@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
-ms.openlocfilehash: 2a5f5b13bcf00c8a8c17042efbf241028aac2263
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 43f6388820c531c99b6c12f615a3ffb8e3b85427
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37343370"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971585"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
@@ -27,7 +27,7 @@ ms.locfileid: "37343370"
 
 全体管理者がこれらの管理者のロールを割り当てると、管理者は、Microsoft 365 セキュリティ センター、Microsoft 365 コンプライアンス センター、Azure、Office 365、Enterprise Mobility + Security など、Microsoft 365 のすべてのサービスに及ぶ機能やデータにアクセスできます。
 
-![Microsoft 365 セキュリティ センターのアクセス許可ページ](../media/m365-security-permissions-page.png)
+![Microsoft 365 セキュリティ センターのアクセス許可のページ](../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Microsoft 365 のロール
 
@@ -58,7 +58,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |:-----|:-----|
 |[**Microsoft 365 コンプライアンス センター**](https://compliance.microsoft.com/)|Microsoft 365 サービス全体での組織のデータの保護および管理。 <br/><br/> コンプライアンス アラートの管理。|
 |[**コンプライアンス マネージャー**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|組織の法令遵守活動の追跡、割り当て、確認。|
-|[**Office 365 セキュリティ/コンプライアンス センター**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|データ ガバナンスの管理。 <br/><br/> 法律およびデータ調査の実行。 <br/><br/> データ主体の要求の管理。|
+|[**Office 365 セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|データ ガバナンスの管理。 <br/><br/> 法律およびデータ調査の実行。 <br/><br/> データ主体の要求の管理。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Intune のすべての監査データの表示。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|読み取り専用アクセス許可があり、アラートを管理できる。 <br/><br/> ファイル ポリシーの作成と変更、ファイル ガバナンス アクションの許可。 <br/><br/> データ管理下のすべての組み込みレポートの表示。|
 
@@ -70,7 +70,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |:-----|:-----|
 |[**Microsoft 365 コンプライアンス センター**](https://compliance.microsoft.com/)|Microsoft 365 サービス全体での組織のデータの保護および管理。 <br/><br/> コンプライアンス アラートの管理。 <br/><br/> 機密ラベルの管理。|
 |[**コンプライアンス マネージャー**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|組織の法令遵守活動の追跡、割り当て、確認。|
-|[**Office 365 セキュリティ/コンプライアンス センター**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|データ ガバナンスの管理。 <br/><br/> 法律およびデータ調査の実行。 <br/><br/> データ主体の要求の管理。 <br/><br/> 機密ラベルの管理。|
+|[**Office 365 セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|データ ガバナンスの管理。 <br/><br/> 法律およびデータ調査の実行。 <br/><br/> データ主体の要求の管理。 <br/><br/> 機密ラベルの管理。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (準備中)|Intune のすべての監査データの表示。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|読み取り専用アクセス許可を使用して情報を表示する。 <br/>通知の管理。 <br/><br/> ファイル ポリシーの作成と変更、ファイル ガバナンス アクションの許可。 <br/><br/> データ管理下のすべての組み込みレポートの表示。|
 
@@ -83,7 +83,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|Microsoft 365 サービス全体のセキュリティ関連ポリシーの監視。 <br/><br/>  セキュリティの脅威とアラートの管理。 <br/><br/> レポートの表示。 <br/><br/> 機密ラベルの管理。|
 |**Identity Protection Center**|セキュリティ閲覧者ロールができるすべてのことに加え、パスワードの再設定以外のすべての Identity Protection Center の操作の実行。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> Azure AD ロールの割り当てまたは設定を管理することは**できません**。|
-|[**Office 365 セキュリティ/コンプライアンス センター**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|セキュリティ ポリシーの管理。 <br/><br/> セキュリティの脅威の表示、調査、対応 <br/><br/> レポートの表示。 <br/><br/> 機密ラベルの管理。|
+|[**Office 365 セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|セキュリティ ポリシーの管理。 <br/><br/> セキュリティの脅威の表示、調査、対応 <br/><br/> レポートの表示。 <br/><br/> 機密ラベルの管理。|
 |**Azure Advanced Threat Protection**|疑わしいセキュリティ アクティビティの監視と対応。|
 |**Windows Defender ATP および EDR**|ロールの割り当て。 <br/><br/> コンピューター グループの管理。 <br/><br/> エンドポイントの脅威の検出と自動修復の構成。 <br/><br/> アラートの表示、調査、対応。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
@@ -100,7 +100,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> セキュリティの警告の表示、調査、対応。|
 |**Identity Protection Center** (近日対応予定)|セキュリティ閲覧者ロールができるすべてのこと。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|セキュリティ閲覧者ロールができるすべてのこと。|
-|[**Office 365 セキュリティ/コンプライアンス センター**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> セキュリティの脅威の表示、調査、対応|
+|[**Office 365 セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> セキュリティの脅威の表示、調査、対応|
 |**Windows Defender ATP および EDR**|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> アラートの表示、調査、対応。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|セキュリティ閲覧者ロールができるすべてのことに加え、アラートの表示および破棄。|
@@ -115,7 +115,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|Microsoft 365 サービス全体のセキュリティ関連ポリシーの表示。 <br/><br/> セキュリティの脅威とアラートの表示。 <br/><br/> レポートの表示。|
 |**Identity Protection Center**|各セキュリティ機能の全セキュリティ レポートと設定情報の閲覧: スパム対策、暗号化、データ損失防止 (DLP)、マルウェア対策、Advanced Threat Protection (ATP)、フィッシング詐欺対策、メール フロー ルール (トランスポート ルールとも呼ばれる)。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|読み取り専用アクセスを使用した Azure AD PIM に記載されているすべての情報の表示: Azure AD ロールの割り当てに関するポリシーとレポート、セキュリティレビュー、および将来的には Azure AD ロールの割り当て以外のシナリオでのポリシー データとレポート。 <br/><br/> Azure AD PIM へのサインアップおよび Azure AD PIM の変更を行うことは**できません**。 このロールのユーザーは、追加のロール (グローバル管理者や特権ロール管理者など) の資格がある場合、PIM ポータルまたは PowerShell からそれらのロールを有効化することができます。|
-|[**Office 365 セキュリティ/コンプライアンス センター**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|セキュリティ ポリシーの表示。 <br/><br/> セキュリティの脅威の表示および調査。 <br/><br/> レポートの表示。|
+|[**Office 365 セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|セキュリティ ポリシーの表示。 <br/><br/> セキュリティの脅威の表示および調査。 <br/><br/> レポートの表示。|
 |**Windows Defender ATP および EDR**|アラートの表示と調査。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|読み取り専用アクセス許可を使用して情報を表示する。 <br/><br/> 通知の管理。|
