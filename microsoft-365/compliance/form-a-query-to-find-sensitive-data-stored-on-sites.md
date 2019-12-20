@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
-ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686836"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823649"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -74,7 +74,7 @@ SharePoint の DLP には、LastSensitiveContentScan プロパティも導入さ
 
 すべてのクエリが平等に作成されているわけではありません。 次の表では、SharePoint の DLP で動作しないクエリの例を示し、その理由を説明します。
   
-|**サポートされていないクエリ**|**理由**|
+|**サポートされていないクエリ**|**Reason**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |少なくとも 1 つの値を追加する必要があります。  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" は、有効な機密型名ではありません。 DLP クエリでは、[機密情報の種類が一覧](https://go.microsoft.com/fwlink/?LinkID=509999)に含まれる名前のみが機能します。  <br/> |
@@ -88,7 +88,7 @@ SharePoint の DLP には、LastSensitiveContentScan プロパティも導入さ
 
 [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
   
-[Office 365 セキュリティ&amp;コンプライアンスセンターでコンテンツ検索を実行する](run-a-content-search-in-the-security-and-compliance-center.md)
+[コンテンツ検索を実行する](content-search.md)
   
 [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
   

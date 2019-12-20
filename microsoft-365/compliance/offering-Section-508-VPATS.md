@@ -11,24 +11,25 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 044e92561c86829477339dbd6db2a5fde2da87bb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6d7bcb6beccc9059d3a7f75fc52b307648f314c2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859467"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804230"
 ---
 # <a name="us-section-508"></a>米国セクション508
 
 ## <a name="about-us-section-508"></a>米国セクション508について
 
-米国 Congress では、Rehabilitation Act を1998および2000に修正し、ソフトウェア、ハードウェア、電子コンテンツ、サポートドキュメントなど、電子情報技術 (およびその製品) を連邦機関が利用できるようにしています。障碍のある方。 508 1973 の米国労働力 Rehabilitation Act のセクション (29 US Code § 194d)。修正されたように、障碍のある従業員が、障碍のある連邦政府の従業員が同等の方法でアクセスし、を使用することを保証する方法で、連邦機関が、データ、およびその他の連邦従業員を基準としたもの。  
-  
-米国連邦および州政府機関の主要なソフトウェアおよびクラウドサービスプロバイダーであるため、Microsoft は、関連するすべての政府標準およびコンプライアンス統制に準拠することに努めています。 これらの[幅広いユーザー補助](https://go.microsoft.com/fwlink/?linkid=2052068)に準拠することにより、microsoft は、政府内外のすべてのお客様が microsoft のサービスと製品を使用できるようになります。
+米国 Congress では、Rehabilitation Act を1998および2000に修正し、ソフトウェア、ハードウェア、電子コンテンツ、サポートドキュメントなど、電子情報技術 (およびその製品) を連邦機関が利用できるようにしています。障碍のある方。 508 1973 の米国労働力 Rehabilitation Act のセクション (29 US Code § 194d)。修正されたように、障碍のある従業員が、障碍のある連邦政府の従業員が同等の方法でアクセスし、を使用することを保証する方法で、連邦機関が、データ、およびその他の連邦従業員を基準としたもの。
+
+Microsoft は、米国連邦および州政府向けの主要なソフトウェアおよびクラウドサービスプロバイダーです。  政府機関のお客様が調達に関する決定を支援するために、Microsoft は、製品とサービスがセクション508の基準をサポートする範囲を示す、アクセシビリティ準拠レポートを公開しています。  この情報は、Microsoft のお客様が特定の製品またはサービスが特定のニーズを満たすかどうかを判断するのに役立ちます。
 
 ## <a name="microsoft-and-us-section-508"></a>Microsoft および米国のセクション508
 
-米国の米国のセクションに準拠していること。508の規制は、すべてのお客様がテクノロジとデータにアクセスできるようにするための取り組みを示しています。 米国セクション508は、EN 301 549 (ヨーロッパ) と WCAG (国際) を補完する米国固有のアクセシビリティ要件です。
+Microsoft では、製品とサービスの開発における米国のセクション508に関する考慮事項について、すべてのお客様がテクノロジとデータにアクセスできるようにすることをお約束しています。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -50,7 +51,7 @@ ms.locfileid: "39859467"
 - [Office 365 アクセシビリティ センター](https://go.microsoft.com/fwlink/p/?linkid=2051801): 障碍のある方のための Office 365 のリソースです。
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
 - [DHS 信頼テスタープログラム](https://go.microsoft.com/fwlink/?linkid=2052171): Microsoft が参加する米国国土安全保障 (DHS) 信頼されたテスタープログラムに関する情報を取得します。
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 

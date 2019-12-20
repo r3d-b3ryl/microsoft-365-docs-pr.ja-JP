@@ -1,7 +1,7 @@
 ---
 title: SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: c050aefb9feebbb3ff37a8504ba1b8385fb0ff49
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686828"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802830"
 ---
-# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密ラベルを有効にする (パブリックプレビュー)
+# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
 以前は、SharePoint および OneDrive に格納された Office ファイルへの暗号化を含む機密ラベルを適用すると、サービスはこれらのファイルのコンテンツを処理できませんでした。 このような状況では、共同編集、電子情報開示、データ損失防止、検索、Delve、その他のコラボレーション機能は使用できません。 このプレビューでは、次の機能を有効にします。
 
@@ -39,7 +39,7 @@ ms.locfileid: "38686828"
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
-また、Microsoft Teams、Office 365 グループ、および SharePoint サイトに機密ラベルを適用できるようになりました。 [詳細については、こちらを参照してください](sensitivity-labels-teams-groups-sites.md)。
+また、Microsoft Teams、Office 365 グループ、および SharePoint サイトに機密ラベルを適用できるようになりました。 [詳細情報](sensitivity-labels-teams-groups-sites.md) を参照してください。
 
 必要に応じて、いつでもプレビューの表示を中止することができます。
 
@@ -75,19 +75,24 @@ ms.locfileid: "38686828"
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>プレビュー用の SharePoint Online 管理シェルの準備
 
-プレビューを有効にする前に、最新の SharePoint Online 管理シェルを実行していることを確認してください。 最新バージョンが既にある場合は、プレビューを有効にすることができます。
+プレビューを有効にする前に、SharePoint Online Management Shell バージョン16.0.19418.12000 以降を実行していることを確認してください。 最新バージョンが既にある場合は、プレビューを有効にすることができます。
 
-プレビュー用の SharePoint Online 管理シェルを準備するには、次のようにします。
+1. 以前のバージョンの SharePoint Online Management Shell を PowerShell ギャラリーからインストールした場合は、次のコマンドレットを実行してモジュールを更新できます。
 
-1. 以前のバージョンの SharePoint Online 管理シェルをインストールした場合は、[**プログラムの追加と削除**] に移動し、"Sharepoint Online management shell" をアンインストールします。
+    ```PowerShell
+    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
 
-2. Web ブラウザーで、ダウンロードセンターページに移動して、[最新の SharePoint Online 管理シェルをダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=255251)します。
+2. または、Microsoft ダウンロードセンターから以前のバージョンの SharePoint Online 管理シェルをインストールした場合は、[**プログラムの追加と削除**] に移動して、Sharepoint Online 管理シェルをアンインストールすることもできます。
 
-3. 言語を選択し、[**ダウンロード**] をクリックします。
+3. Web ブラウザーで、ダウンロードセンターページに移動して、[最新の SharePoint Online 管理シェルをダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=255251)します。
 
-4. X64 ファイルと x86 .msi ファイルのどちらかを選択します。 64ビット版の Windows または x86 ファイル (32 ビット版を実行している場合) を実行する場合は、x64 ファイルをダウンロードしてください。 不明な場合は、[どのバージョンの Windows オペレーティングシステムを実行](https://support.microsoft.com/help/13443/windows-which-operating-system)しているかを確認します。
+4. 言語を選択し、[**ダウンロード**] をクリックします。
 
-5. ファイルをダウンロードした後、ファイルを実行し、セットアップウィザードの手順に従います。
+5. X64 ファイルと x86 .msi ファイルのどちらかを選択します。 64ビット版の Windows または x86 ファイル (32 ビット版を実行している場合) を実行する場合は、x64 ファイルをダウンロードしてください。 不明な場合は、[どのバージョンの Windows オペレーティングシステムを実行](https://support.microsoft.com/help/13443/windows-which-operating-system)しているかを確認します。
+
+
+6. ファイルをダウンロードした後、ファイルを実行し、セットアップウィザードの手順に従います。
 
 ## <a name="enable-the-preview-by-using-microsoft-powershell-opt-in"></a>Microsoft PowerShell を使用してプレビューを有効にする (オプトイン)
 

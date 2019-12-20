@@ -3,6 +3,7 @@ title: Office 365 の詳細な電子情報開示の関連モジュールを使�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Office 365 Advanced eDiscovery の関連性モジュールについて説明します。これには、ワークフロー、ガイドライン、トレーニングとファイルレビューの手順が含まれます。  '
-ms.openlocfilehash: f5b585008dca58f95b0f3b932b2ee4b82a1ae731
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3303a85742876934899517940d0a671e404dea92
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087073"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802282"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示の関連モジュールを使用する
 

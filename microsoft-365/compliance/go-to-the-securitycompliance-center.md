@@ -1,7 +1,7 @@
 ---
 title: 「Office 365 のセキュリティ センターとコンプライアンス センター」に移動
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: セキュリティ & コンプライアンスセンターを使用するには、適切なアクセス許可が必要です。 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか、グローバル管理者によって1つ以上のセキュリティ & コンプライアンスセンターの役割グループに割り当てられている必要があります。
-ms.openlocfilehash: 357b9c494c9b6441d801932ed2ca313c8780db68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7dc7afb00750586b34921cce347bcf459c2cf474
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085087"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807116"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>「Office 365 のセキュリティ センターとコンプライアンス センター」に移動
 

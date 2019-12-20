@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコアのワークフローツールを使用して、組織のコンプライアンスの管理に役立つ方法について説明します。
-ms.openlocfilehash: 9dc3eb41b1ad686e1c9e1f0a4cf2df66ccb3ffbe
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686671"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802137"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Microsoft コンプライアンススコアの処理 (プレビュー)
 
@@ -193,7 +193,7 @@ ms.locfileid: "38686671"
 
 ### <a name="default-assessments"></a>既定の評価
 
-既定では、[評価] ページに Microsoft 365 データ保護のベースライン評価が表示されます。 他の規制や基準をカバーする評価をさらに追加する場合は、コンプライアンスマネージャーで評価を管理できます。 コンプライアンススコアは、GDPR、CCPA、ISO 27001、ISO 27018、NIST 800-53、NIST 800-171、NIST CSF、CSA CCM、FFIEC、HIPAA/、FedRAMP などの、10個の非標準評価を提供します。
+既定では、[評価] ページに Microsoft 365 データ保護のベースライン評価が表示されます。 また、コンプライアンススコアには、いくつかの標準の評価が用意されています ([完全な一覧を表示](compliance-score.md#templates))。 他の規制や基準をカバーする評価を追加する場合は、コンプライアンスマネージャーでこれを行うことができます。
 
 ### <a name="managing-assessments"></a>評価の管理
 

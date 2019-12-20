@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '[使用準備完了] ボックス分類子のいずれかがニーズに合わない場合は、trainable 分類子を使用します。 Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 このトピックでは、カスタム分類子を作成する方法について説明します。'
-ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 6343635bb8e9dac12a8dde0867b3468347c2e84a
+ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813375"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39891088"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Trainable 分類子を作成する (プレビュー)
 
@@ -30,7 +30,7 @@ Trainable 分類子のいずれかがニーズに合わない場合は、分類�
 ![trainable-クラシファイア-タイムライン](media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> Trainable 分類子では、最初にオプトインが必要です。 Microsoft 365 で組織のコンテンツのベースライン評価を完了するには、12日間かかります。
+> Trainable 分類子では、最初にオプトインが必要です。 Microsoft 365 で組織のコンテンツのベースライン評価を完了するには、12日間かかります。 グローバル管理者に連絡して、オプトインプロセスを開始します。
 
 ## <a name="seed-content"></a>Seed コンテンツ
 

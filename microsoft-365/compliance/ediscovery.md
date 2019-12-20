@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Office 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
-ms.openlocfilehash: b21ed978762819e73493d1ca409f922e695cf29d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33d3ca2e86a1ee4a2c191e72198d80c4c52c69e9
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085749"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823759"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 の電子情報開示
 
@@ -38,7 +38,7 @@ Office 365 には、次の電子情報開示ツールが用意されています
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[セキュリティ & コンプライアンスセンターでコンテンツ検索を実行する](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |コンテンツ検索ツールを使用して、1回の検索で、メールボックス、パブリックフォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、ビジネスの場所に1台のドライブ、および Office 365 組織の Skype for Business の会話を検索する方法について説明します。  <br/> |
+|[コンテンツ検索を実行する](content-search.md) <br/> |コンテンツ検索ツールを使用して、1回の検索で、メールボックス、パブリックフォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、ビジネスの場所に1台のドライブ、および Office 365 組織の Skype for Business の会話を検索する方法について説明します。  <br/> |
 |[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md) <br/> |Office 365 組織のメールボックスとサイトのコンテンツを検索するために使用できる電子メールおよびファイルのプロパティと検索条件について説明します。  <br/> |
 |[コンテンツ検索の結果のキーワード統計を表示する](view-keyword-statistics-for-content-search.md) <br/> |検索統計を使用して、1つまたは複数のコンテンツ検索の統計を表示および比較し、検索クエリ内の各キーワードの統計情報を返す新規および既存の検索を構成する方法について説明します。  <br/> |
 |[セキュリティ & コンプライアンスセンターでコンテンツ検索を一括編集する](bulk-edit-content-searches.md) <br/> |1つまたは複数のコンテンツ検索の検索クエリとコンテンツの場所を一括編集する方法について説明します。  <br/> |
@@ -64,7 +64,7 @@ Office 365 には、次の電子情報開示ツールが用意されています
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[セキュリティ & コンプライアンスセンターで電子情報開示ケースを管理する](manage-ediscovery-cases.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示ケースを作成および管理する方法について説明します。  <br/> |
+|[セキュリティ & コンプライアンスセンターで電子情報開示ケースを管理する](ediscovery-cases.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示ケースを作成および管理する方法について説明します。  <br/> |
 |[Office 365 セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる方法について説明します。 アクセス許可を割り当てることにより、ユーザーが電子情報開示ケースを作成したり、電子情報開示ケースに関連付けられた保留リストを作成したり、コンテンツ検索を実行したり、検索結果をプレビューしたり、検索結果をエクスポートしたりできる  <br/> |
 |[Office 365 で電子情報開示ケースの保留リストのレポートを作成する](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |この記事の Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成する方法について説明します。  <br/> |
 |[セキュリティ & コンプライアンスセンターの電子情報開示ケースで、スクリプトを使用してユーザーを保留リストに追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |この記事に記載されている Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストに、メールボックスと OneDrive for Business サイトをすばやく追加する方法について説明します。  <br/> |
@@ -74,4 +74,4 @@ Office 365 には、次の電子情報開示ツールが用意されています
 
 Microsoft 365 の高度な電子情報開示ソリューションは、Office 365 の既存の電子情報開示および分析機能に基づいて構築されています。 *Advanced eDiscovery*と呼ばれるこの新しいソリューションは、組織の内部および外部の調査に応答するコンテンツを保持、収集、確認、分析、およびエクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務部門は法的情報保留通知ワークフロー全体を管理して、ケースに関与する保管担当者と通信することもできます。 
 
-詳細については、「 [Microsoft 365 の高度な電子情報開示ソリューションの概要](overview-ediscovery-20.md)」を参照してください。
+詳細については、「[Microsoft 365 の Advanced eDiscovery ソリューションの概要](overview-ediscovery-20.md)」を参照してください。

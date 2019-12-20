@@ -1,5 +1,5 @@
 ---
-title: サンプルコネクタを使用して Office 365 で Facebook データをアーカイブする (プレビュー)
+title: サンプルコネクタを使用して Facebook データをアーカイブする (プレビュー)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ネイティブコネクタをセットアップして、Facebook のビジネスページ、Twitter、LinkedIn 会社のページ、インスタント Bloomberg などのデータソースからサードパーティのデータをインポートできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: 9479734fd1fcc65b4db7fd7e9a1ffc0f2c5fda59
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 83b85408afcb4613705691d5bd5a3b72365cb11a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615597"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808182"
 ---
-# <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>サンプルコネクタを使用して Office 365 で Facebook データをアーカイブする (プレビュー)
+# <a name="use-a-sample-connector-to-archive-facebook-data-preview"></a>サンプルコネクタを使用して Facebook データをアーカイブする (プレビュー)
 
 Office 365 で Facebook データをアーカイブするためのサンプルコネクタ機能は、プレビュー段階にあります。
 

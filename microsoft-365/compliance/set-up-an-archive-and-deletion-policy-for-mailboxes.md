@@ -1,5 +1,5 @@
 ---
-title: Office 365 組織のメールボックスのアーカイブおよび削除ポリシーを設定する
+title: Office 365 の組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Office 365 でアーカイブと削除のポリシーを作成します。これにより、アイテムは自動的にユーザーのアーカイブメールボックスに移動されます。
-ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6da5d9bc180623778925697419f0ca39acee9185
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686932"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967770"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Office 365 組織のメールボックスのアーカイブおよび削除ポリシーを設定する
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Office 365 の組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
  Office 365 では、管理者は、ユーザーのアーカイブメールボックスにアイテムを自動的に移動し、メールボックスからアイテムを自動的に削除するアーカイブおよび削除ポリシーを作成できます。 管理者は、メールボックスに割り当てられたアイテム保持ポリシーを作成し、一定の期間後にユーザーのアーカイブメールボックスにアイテムを移動します。また、特定の保存期間に達した後もメールボックスからアイテムを削除します。 移動または削除されたアイテム、およびその発生時に保持タグと呼ばれるアイテムを決定する実際のルール。 保持タグは、ユーザーのメールボックスに割り当てられるアイテム保持ポリシーにリンクされます。 保持タグは、ユーザーのメールボックス内の個々のメッセージおよびフォルダーに保持設定を適用します。 メッセージがメールボックス内に残っている期間と、指定された保持期限に達したときに実行される処理を定義します。 メッセージが保存期限に達すると、メッセージはユーザーのアーカイブメールボックスに移動されるか、削除されます。 
   
@@ -44,7 +44,7 @@ ms.locfileid: "38686932"
     
 この記事の手順の一部またはすべてを実行して、組織内のメールボックスのアーカイブおよび削除ポリシーを設定できます。 このプロセスは、組織内のすべてのメールボックスに実装する前に、少数のメールボックスに対してテストすることをお勧めします。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - このトピックの手順を実行するには、Office 365 組織の全体管理者である必要があります。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "38686932"
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. セキュリティ & コンプライアンスセンターで、[**データガバナンス** \> **アーカイブ**] に移動します。
+3. セキュリティ & コンプライアンスセンターで、[**情報ガバナンス** \> **アーカイブ**] に移動します。
     
     組織内のメールボックスの一覧、および対応するアーカイブメールボックスが有効になっているかどうかが表示されます。 
     

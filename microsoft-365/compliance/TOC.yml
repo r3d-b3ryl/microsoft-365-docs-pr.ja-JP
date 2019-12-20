@@ -203,7 +203,7 @@
           href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: PST ファイルのインポートに関する FAQ
           href: faqimporting-pst-files-to-office-365.md
-        - name: Office 365 でサードパーティのデータをアーカイブする
+        - name: サードパーティのデータをアーカイブする
           href: archiving-third-party-data.md
           items:
             - name: サンプルコネクタを使用して Facebook のデータをアーカイブする
@@ -317,8 +317,6 @@
           href: export-search-results.md
         - name: コンテンツ検索レポートのエクスポート
           href: export-a-content-search-report.md
-        - name: Microsoft Edge で電子情報開示エクスポートツールを使用する
-          href: configure-edge-to-export-search-results.md
         - name: メール メッセージを検索して削除する
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Office 365 のオンプレミス ユーザーのクラウド ベースのメールボックスを検索する
@@ -749,7 +747,6 @@
         - name: オンプレミスの Windows Server ファイル共有の GDPR 対応
           href: gdpr-for-on-premises-file-shares.md
 - name: 法令遵守アクション プラン
-  href: compliance-solutions-overview.md
   items:
     - name: ISO - 推奨アクション プラン
       href: iso-action-plan.md
@@ -855,7 +852,7 @@
           href: offering-iso-9001.md
         - name: SOC
           href: offering-soc.md
-        - name: WCAG 2.1
+        - name: WCAG
           href: offering-wcag-2-1.md
     - name: 米国政府機関
       items:
@@ -935,6 +932,8 @@
               href: offering-rbi-irdai-india.md
             - name: SEC 17a-4
               href: offering-sec-17a-4.md
+            - name: SEC 規制 SCI
+              href: offering-sec-reg-sci.md
             - name: SOC
               href: offering-soc.md
             - name: SOX

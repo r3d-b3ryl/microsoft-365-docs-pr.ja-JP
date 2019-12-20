@@ -3,6 +3,7 @@ title: Office 365 の詳細な電子情報開示のドキュメントの類似�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'ドキュメントの類似性の値を確認します。2つのファイルの resemblance の最小レベルは、重複していると見なされ、Office 365 の高度な電子情報開示で機能します。 '
-ms.openlocfilehash: 78e4ab7d39600522370cd91f3d6561ff2fbdcf60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 29a9eef44f8eb46f53099f457c8cc86afe64dea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086259"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802640"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示のドキュメントの類似性を理解する
 
@@ -35,15 +36,15 @@ ms.locfileid: "37086259"
   
 同一の複製 (ND) セット内では、類似性のしきい値の下に resemblance レベルのドキュメントが存在することがあります。 文書を ND セットに参加させるには、その類似性を超えるレベルの resemblance で、ND セットに少なくとも1つのドキュメントが存在する必要があります。 
   
-たとえば、類似性が 80% に設定されている場合、document F1 はレベル 85% のドキュメント F2 に似ていますが、ドキュメント F2 はドキュメント F3 のレベルが 90% であると仮定します。 
+たとえば、類似性が80% に設定されている場合、document F1 はレベル85% のドキュメント F2 に似ていますが、ドキュメント F2 はドキュメント F3 のレベルが90% であると仮定します。 
   
-ただし、document F1 は、しきい値を下回る 70% のレベルで、document F3 のようになります。 しかし、この例では、ドキュメント F1、F2、および F3 はすべて、一方の ND セットに表示されます。 同様に、類似性値 80% を使用すると、2つのセットが作成されている可能性があります。 設定-1 には、E1 および E2 というドキュメントが含まれています。 [設定] は、ドキュメント F1、F2、および F3 を含みます。 
+ただし、document F1 は、しきい値を下回る70% のレベルで、document F3 のようになります。 しかし、この例では、ドキュメント F1、F2、および F3 はすべて、一方の ND セットに表示されます。 同様に、類似性値80% を使用すると、2つのセットが作成されている可能性があります。 設定-1 には、E1 および E2 というドキュメントが含まれています。 [設定] は、ドキュメント F1、F2、および F3 を含みます。 
   
 Resemblance のレベルは次のように示されています。
   
 ![ドキュメントの類似性](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
-別のドキュメント X1 が挿入されたと仮定します。 X1 と E3 の間の resemblance は 87% です。 同様に、X1 と F1 の間の resemblance は 92% です。 その結果として、すべての設定が1つの ND セットに結合されるようにします。
+別のドキュメント X1 が挿入されたと仮定します。 X1 と E3 の間の resemblance は87% です。 同様に、X1 と F1 の間の resemblance は92% です。 その結果として、すべての設定が1つの ND セットに結合されるようにします。
   
 ![ドキュメントの類似性](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   

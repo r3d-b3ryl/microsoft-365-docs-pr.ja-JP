@@ -3,6 +3,7 @@ title: Office 用データを準備する 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'Microsoft 365 セキュリティ&amp;コンプライアンスセンターを使用して Office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
-ms.openlocfilehash: be778acb3356071e9575ed708623a0b94e2b3c7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0429c957035068074a571c97cf430b27f9ad5904
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086355"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803824"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Office 用データを準備する 365 Advanced eDiscovery
 
@@ -29,7 +30,7 @@ ms.locfileid: "37086355"
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>手順 1: 高度な電子情報開示用に Office 365 データを準備する
 
-上級電子情報開示を使用してデータを分析するには、Microsoft 365 セキュリティ&amp;コンプライアンスセンター (Microsoft 365 セキュリティ&amp;コンプライアンスセンターの**コンテンツ検索**ページにリストされています) で実行するコンテンツ検索の結果を使用するか、電子情報開示ケースに関連付けられている検索 (セキュリティ&amp;コンプライアンスセンターの [**電子情報開示**] ページにリストされています)。 
+上級電子情報開示を使用してデータを分析するには、Microsoft 365 セキュリティ&amp;コンプライアンスセンター (Microsoft 365 セキュリティ&amp;コンプライアンスセンターの**コンテンツ検索**ページにリストされています) または電子情報開示ケースに関連付けられた検索 (セキュリティ&amp;コンプライアンスセンターの [**電子情報開示**] ページに一覧表示) で実行するコンテンツ検索の結果を使用できます。 
   
 高度な電子情報開示で分析のために検索結果を準備する詳細な手順については、「 [Office 365 Advanced ediscovery の検索結果を準備](prepare-search-results-for-advanced-ediscovery.md)する」を参照してください。
   

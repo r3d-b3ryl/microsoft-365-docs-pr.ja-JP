@@ -3,6 +3,7 @@ title: Office 365 の高度な電子情報開示の分析オプションを設�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Office 365 の Advanced eDiscovery で分析プロセスのオプションを設定する手順を確認します。これには、ほぼ重複、電子メールのスレッド、テーマなどが含まれます。  '
-ms.openlocfilehash: 6d853d701613fcbe61c6e98b3bf55ae99eefd901
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b6155814a4540f4cc619382d82cee34c471390d1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086207"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802740"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示の分析オプションを設定する
 
@@ -35,7 +36,7 @@ Advanced eDiscovery で、analyze を実行する前に Analyze オプション�
   
  **ほぼ重複した電子メールスレッド**分析を実行する場合は、このチェックボックスをオンにします。 既定では選択されています。 
   
- **ドキュメントの類似性**[重複した場合のしきい値」の値を入力するか、既定値の 65% をそのまま使用します。 
+ **ドキュメントの類似性**[重複した場合のしきい値」の値を入力するか、既定値の65% をそのまま使用します。 
   
  **テーマ**すべてのファイルを処理して、テーマを割り当てるには、このボックスをオンにします。 既定では、このチェックボックスはオフになっています。 テーマ処理を実行する場合は、次のオプションを入力します。
   

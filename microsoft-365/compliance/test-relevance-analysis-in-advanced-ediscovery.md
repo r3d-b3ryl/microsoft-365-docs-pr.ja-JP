@@ -3,6 +3,7 @@ title: Office 365 の詳細な電子情報開示でのテスト関連の分析
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Office 365 Advanced eDiscovery でバッチ計算の後に [テスト] タブを使用して、全体的な処理の品質をテスト、比較、検証する方法について説明します。  '
-ms.openlocfilehash: 7d150b9f68cdcd3246fbd4d8f79e0972a81a4703
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cda959c77b2d51f85f1396eb27d16d2690321bb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086281"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802630"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示でのテスト関連の分析
 

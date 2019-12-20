@@ -3,6 +3,7 @@ title: Office 365 で問題を定義してユーザーを割り当てる高度�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Office 365 Advanced eDiscovery でユーザーを割り当てたり、電子情報開示ケースの問題を削除したりするなど、案件を追加または編集する方法について説明します。
-ms.openlocfilehash: a7dad3cce54a3162cedf3c14e521f5e8fe966acf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a56942eec8f43ba9fd6175807437e71701c29e39
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071320"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806100"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Office 365 で問題を定義してユーザーを割り当てる高度な電子情報開示
 
@@ -51,7 +52,7 @@ ms.locfileid: "37071320"
   
 7. [**選択したユーザー**] で、選択したユーザーの名前の横にあるドロップダウンリストから、次のいずれかのサンプリングモードを選択します。 
     
-  - **On**: ファイルを表示し、タグを付けることができます。 既定の設定です。
+  - **On**: ファイルを表示し、タグを付けることができます。 これは、既定の設定です。
     
   - **Idle**: ファイルは表示できます。タグ付けは省略可能です。
     

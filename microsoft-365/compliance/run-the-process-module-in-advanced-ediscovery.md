@@ -3,6 +3,7 @@ title: Office 365 でプロセスモジュールを実行する Advanced eDiscov
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Office 365 Advanced eDiscovery で分析するために Office 365 データのケースファイルを準備するためのガイドラインについて説明します。  '
-ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086376"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802910"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Office 365 でプロセスモジュールを実行する Advanced eDiscovery
 
@@ -47,7 +48,7 @@ ms.locfileid: "37086376"
     
 - **ファイルパス**: 上級電子情報開示では、パスの長さが400文字までのファイルを読み込むことができます。
     
-- **テキストの抽出**: ネイティブファイルからテキストを抽出する場合、通常のテキストに加えて、非表示のテキスト (excel および .doc)、非表示の列 (excel)、変更履歴 (.doc)、発表者のノート (.ppt)、埋め込みオブジェクト (例:.Ppt で Excel オブジェクトを入力します。 これらはテキストエディターで表示できます。
+- **テキストの抽出**: ネイティブファイルからテキストを抽出する場合、通常のテキストに加えて、隠しテキスト (excel および .doc)、非表示の列 (excel)、変更履歴 (.doc)、発表者のノート (.ppt)、埋め込みオブジェクト (たとえば、.Ppt の Excel オブジェクト) が抽出されます。 これらはテキストエディターで表示できます。
     
 - **テキストを無視**する: このオプションの機能は、プロセスが実行された後、Analyze が実行される前に定義されます。 テキストを無視するには、使用するとファイル分析のパフォーマンスが低下する可能性があるため、注意して使用する必要があります。
     

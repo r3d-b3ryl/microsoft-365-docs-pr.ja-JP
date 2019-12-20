@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: b49a898c3a517b6c9468478ad7b7eddeeee1755c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859967"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805240"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>デジタル生産パートナーシップ (DPP) 英国
 
@@ -52,7 +53,7 @@ Azure ブロードキャストマークは1年間有効であり、毎年更新�
 
 - [DPP がセキュリティプログラムによってコミットされたブロードキャストチェックリストのユーザーガイド](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [サプライヤーのサイバーセキュリティ要件を促進するための NABA と DPP の共に使用する統合](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 

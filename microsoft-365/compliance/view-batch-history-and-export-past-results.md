@@ -3,6 +3,7 @@ title: Office 365 のバッチ履歴を表示して過去の結果をエクス�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '選択したエクスポートバッチセッションの詳細情報を表示する方法と、Office 365 Advanced eDiscovery で最終エクスポートセッションを取り消す方法について説明します。  '
-ms.openlocfilehash: e4e84dc4115c7ec718112c8c38e20b306427c5c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5e20fa787bcbb9dc6072af779326518d6a03aaa4
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086523"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802252"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Office 365 のバッチ履歴を表示して過去の結果をエクスポートする高度な電子情報開示
 
@@ -55,7 +56,7 @@ ms.locfileid: "37086523"
     
 2. [**参照**] をクリックして、ダウンロードしたエクスポートファイルをローカルコンピューターに保存するためのターゲットの場所を選択します。 
     
-3. [**開始**] をクリックします。 エクスポートファイルがローカルコンピューターにダウンロードされます。 
+3. **[開始]** をクリックします。 エクスポートファイルがローカルコンピューターにダウンロードされます。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a15b787904149073394bfc08a3ae8faf119d7ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859657"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804610"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>肘掛けされる国際トラフィック (ITAR)
 
@@ -39,7 +40,7 @@ ITAR 規制データのホストを求めるお客様は、Microsoft アカウ�
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
-- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 米国防総省](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -54,7 +55,7 @@ Microsoft アカウント担当者にお問い合わせください。
 - [ITAR で制御されるデータでの Azure Government の使用](https://aka.ms/azure-itar-guide)
 - [Azure Government](https://azure.microsoft.com/features/gov/)
 - [Office 365 米国政府機関](https://products.office.com/government/office-365-web-services-for-government)
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 

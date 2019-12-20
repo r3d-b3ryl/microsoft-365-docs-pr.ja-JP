@@ -3,6 +3,7 @@ title: Office 365 の高度な電子情報開示で強調表示されたキー�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'ユーザー定義のキーワードを関連性に追加して、Office 365 の高度な電子情報開示でのタグ付けとコストパラメータを指定する際に関連ファイルを特定する方法について説明します。  '
-ms.openlocfilehash: 4542e80e5324a35df2e7dc8e7e0cf09f37ae1ef4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 967258c152c12692cc5eb51f6553317161efa695
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071356"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806130"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
 
@@ -67,7 +68,7 @@ ms.locfileid: "37071356"
     
     ![関連性の設定のコストのパラメーター](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. **[保存]** をクリックします。 選択した設定が保存されます。
+3. [**保存**] をクリックします。 選択した設定が保存されます。
     
 ## <a name="see-also"></a>関連項目
 

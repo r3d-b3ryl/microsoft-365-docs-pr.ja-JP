@@ -1,5 +1,5 @@
 ---
-title: Office 365 でアーカイブ Twitter データにコネクタを展開する
+title: コネクタをアーカイブ Twitter データに展開する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Office 365 に Twitter データをインポートしてアーカイブするためのネイティブコネクタをセットアップできます。 このデータを Office 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: fda03e3e489b0ae9c754f2eba18bc60785bb3def
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686821"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806150"
 ---
-# <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Office 365 でアーカイブ Twitter データにコネクタを展開する
+# <a name="deploy-a-connector-to-archive-twitter-data"></a>コネクタをアーカイブ Twitter データに展開する
 
 この記事では、Office 365 インポートサービスを使用して組織の Twitter アカウントから Office 365 にデータをインポートするコネクタを展開するための段階的なプロセスについて説明します。 このプロセスの概要と、Twitter コネクタを展開するために必要な前提条件の一覧については、「[サンプルコネクタを使用して Office 365 の Twitter データをアーカイブする (プレビュー)](archive-twitter-data-with-sample-connector.md)」を参照してください。 
 
@@ -206,7 +206,7 @@ Twitter 開発者アプリを使用する準備ができました。
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security-and-compliance-center"></a>手順 7: セキュリティ/コンプライアンスセンターでカスタムコネクタをセットアップする
 
-1.  に移動<https://protection.office.com>して、[**データ\>ガバナンス\> ] [サードパーティデータのインポート**] をクリックします。
+1.  に移動<https://protection.office.com>して、[**情報\>ガバナンス\> ] [サードパーティデータのアーカイブをインポート**します] をクリックします。
 
     ![セキュリティ/コンプライアンスセンターの [アーカイブサードパーティのデータ] ページに移動します。](media/TCimage36.png)
 

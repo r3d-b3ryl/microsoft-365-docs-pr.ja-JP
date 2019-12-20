@@ -1,7 +1,7 @@
 ---
 title: EU 社会保障番号または同等の ID
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号または同等の ID の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085869"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805930"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>EU 社会保障番号または同等の ID
 
@@ -37,7 +37,7 @@ ms.locfileid: "37085869"
     
 - 誕生日に対応する6桁の数字 (DDMMYY)
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -106,7 +106,7 @@ versicherungsnummer
 
 11 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -187,7 +187,7 @@ numéronational#
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -266,7 +266,7 @@ osobni identifikacijski broj
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -341,7 +341,7 @@ rodne cislo
     
 - シーケンス番号に対応する4桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -420,7 +420,7 @@ personnummer
     
 - 1文字または1桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -517,7 +517,7 @@ hetu
 
 9 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -608,11 +608,11 @@ magyar áfa szám
     
   - シリアル番号の最後の桁は、男性の場合は奇数、女性の場合は偶数の数字を指定します。
     
-  - 1990までの間、シリアル番号 corresponded は、番号のベアラーが生まれたか (1947 以前に作成された場合)、特別なコード (通常は7番目の数字) を使用して、税務1947レコードに従って、そのユーザーが生活していた市区郡に割り当てられています。immigrants 
+  - 1990までの間、シリアル番号の corresponded を郡に割り当てます。これは、年1月 1947 1 日に税務レコードに従って、(通常は7番目の数字) を指定することによって、番号のベアラーが入社したか (1947 以前に作成された場合)、immigrants のための特別なコードになります。 
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   

@@ -1,7 +1,7 @@
 ---
 title: ドキュメント削除ポリシーの概要
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 組織では、コンプライアンス、法律、またはその他のビジネス要件のために長期間ドキュメントを保持する必要がある場合があります。 ただし、組織でドキュメントを必要以上に長期に保持している場合は、不要な法的リスクを作成します。 ドキュメント削除ポリシーを使用すると、特定の期間が経過した後にサイト内のドキュメントを削除することによって、積極的にリスクを軽減できます。たとえば、ドキュメントが作成された後に、ユーザーの OneDrive for Business サイトのドキュメントを5年後に削除することができます。
-ms.openlocfilehash: 87d79f6b8f4381693bf043bc0e04fcfe4359fa90
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 85a8a4464a14cb2e0b9e901fbf3912c7ff3faa8d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342950"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806050"
 ---
 # <a name="overview-of-document-deletion-policies"></a>ドキュメント削除ポリシーの概要
 

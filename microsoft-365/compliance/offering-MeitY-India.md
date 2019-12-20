@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 5ec81552de43d2e67a4987b0efbaf5582be26e40
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859577"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804450"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>エレクトロニクスおよび情報技術の官庁 (MeitY)
 
@@ -41,7 +42,8 @@ Microsoft の MeitY 認定は、評価フレームワークを使用して品質
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Intune
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -58,7 +60,7 @@ Microsoft の MeitY 認定は、評価フレームワークを使用して品質
 - [エレクトロニクスおよび情報技術の官庁](https://meity.gov.in/)
 - [MeghRaj Cloud イニシアチブ](https://meity.gov.in/content/gi-cloud-meghraj)
 - [認定クラウドサービスプロバイダー](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 

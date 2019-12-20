@@ -1,5 +1,5 @@
 ---
-title: Office 365 でインスタント Bloomberg データをアーカイブするためのコネクタを設定する
+title: コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、インスタント Bloomberg チャットツールから Office 365 にデータをインポートするためのネイティブコネクタをセットアップできます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 55b0acf6a2643fed4a994604e92e4c0e218da5d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615607"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807752"
 ---
-# <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Office 365 でインスタント Bloomberg データをアーカイブするためのコネクタを設定する
+# <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
 Office 365 のセキュリティ & コンプライアンスセンターのネイティブコネクタを使用して、[インスタント Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)コラボレーションツールから金融サービスチャットデータをインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の Bloomberg secure FTP サイト (SFTP) に毎日接続して、チャットメッセージの内容を電子メールメッセージの形式に変換した後、それらのアイテムを Office 365 のメールボックスにインポートします。
 
@@ -41,7 +41,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのネイ
     
     b. **Office 365 ユーザーアカウントに対応していない CorporateEmailAddress プロパティの値を持つアイテム:** コネクタが*CorporateEmailAddress*プロパティの電子メールアドレスを office 365 の特定のユーザーアカウントに関連付けることができない場合、そのアイテムは office 365 の代替の "キャッチオール" メールボックスの受信トレイフォルダーにコピーされます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 インスタント Bloomberg データをアーカイブするために必要な実装手順の多くは、Office 365 の外部にあり、セキュリティ & コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
 
@@ -73,7 +73,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのネイ
 
 最初の手順として、Secure Shell (SSH) およびかなり良好なプライバシー (PGP) のための公開キーのコピーを取得します。 手順2でこれらのキーを使用して、Bloomberg SFTP サイトを構成して、コネクタ (手順3で作成したもの) が SFTP サイトに接続し、インスタント Bloomberg のチャットデータを Office 365 メールボックスに転送できるようにします。 また、この手順では IP アドレスも取得します。これは、Bloomberg SFTP サイトを構成するときに使用します。
 
-1. に移動<https://protection.office.com>して、[**データ\>ガバナンスのインポート**] をクリックし、[**サードパーティのデータをアーカイブ**する] をクリックします。
+1. に移動<https://protection.office.com>して、[**情報\>ガバナンス**] [**サードパーティデータのアーカイブ**をインポート > します] をクリックします。
 
 2. [**サードパーティのデータをアーカイブ**する] ページで、[**コネクタの追加**] をクリックし、[**インスタント Bloomberg**] をクリックします。
 
@@ -100,7 +100,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのネイ
 
 最後の手順では、セキュリティ & コンプライアンスセンターでインスタント Bloomberg コネクタを作成します。 コネクタは、提供された情報を使用して、Bloomberg SFTP サイトに接続し、Office 365 の対応するユーザーメールボックスにチャットメッセージを転送します。 
 
-1. に移動<https://protection.office.com>して、[**データ\>ガバナンスのインポート**] をクリックし、[**サードパーティのデータをアーカイブ**する] をクリックします。
+1. に移動<https://protection.office.com>して、[**情報\>ガバナンス**] [**サードパーティデータのアーカイブ**をインポート > します] をクリックします。
 
 2. [**サードパーティのデータをアーカイブ**する] ページで、[**コネクタの追加**] をクリックし、[**インスタント Bloomberg**] をクリックします。
 

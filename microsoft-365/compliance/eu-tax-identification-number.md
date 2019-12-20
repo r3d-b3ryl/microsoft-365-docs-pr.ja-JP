@@ -1,7 +1,7 @@
 ---
 title: EU 税務識別番号
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: adcd9be9b5f8775ad39010d771ff2ac214df1e17
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085864"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805850"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税務識別番号
 
@@ -41,7 +41,7 @@ ms.locfileid: "37085864"
     
 - 4 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -106,9 +106,9 @@ steuernummer
     
 - 6 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -158,7 +158,7 @@ numéro d'identification fiscale
 
 10 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -233,7 +233,7 @@ uniformcivilno#
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -294,9 +294,9 @@ porezni broj
     
 - 1文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -361,9 +361,9 @@ tax id
     
 - 3桁または4桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -415,7 +415,7 @@ Hyphenl を含む10桁の数字:
     
 - 1桁目が誕生日の世紀に対応し、最後の桁は個人の性別に対応する4桁の数字 (男性の場合は奇数、女性の場合もあります)。
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -480,7 +480,7 @@ id の sk
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -545,7 +545,7 @@ isikukood
     
 - 1つの文字または1つの番号
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -634,9 +634,9 @@ kansallinen tunnus numero
     
 エンティティの9桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -689,7 +689,7 @@ numéro d'identification fiscale
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -756,9 +756,9 @@ steueridentifikationsnummer
 
 9 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -832,7 +832,7 @@ aφμ αριθμός
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -907,9 +907,9 @@ adóhatóság szám
     
 - 1文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -988,7 +988,7 @@ uimhir aitheantais phearsanta
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1055,7 +1055,7 @@ codice fiscale
     
 - 4 桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1122,9 +1122,9 @@ nodokļu identifikācija numurs
 
 11 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -1193,7 +1193,7 @@ mokesčių identifikavimas numeris
     
 - 2 桁のチェック ディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1270,9 +1270,9 @@ steueridentifikationsnummer
   
 -  9 桁の数字 
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -1337,7 +1337,7 @@ numru ta ' identifikazzjoni tat-taxxa
 
 9 桁の数字 
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1428,7 +1428,7 @@ nederlandse belasting 識別子
 
 11桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1513,7 +1513,7 @@ numeridentyfikacjipodatkowej#
 
 9 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1574,9 +1574,9 @@ número de identificação 会計
 
 13 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -1630,9 +1630,9 @@ numărul de 識別子は fiscală
 
 10 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -1696,7 +1696,7 @@ daňové číslo súboru
 
 8 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1805,7 +1805,7 @@ Foreigner の識別番号のない Foreigners
     
 - 1つの大文字 (大文字と小文字を区別) 
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1904,7 +1904,7 @@ cifnúmero#
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1979,7 +1979,7 @@ Unique 納税リファレンス (UTR):10 桁の数字
   
 国家保険番号 (NINO): 詳細については、「英国 [機密情報の種類がどのように表示されるか](what-the-sensitive-information-types-look-for.md)について、国家保険番号 (NINO) "を指定します。
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   

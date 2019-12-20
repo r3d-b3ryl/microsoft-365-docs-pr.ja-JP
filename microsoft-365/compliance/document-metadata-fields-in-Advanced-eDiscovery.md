@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 39ce4518e12b4446b339cbf7341a354bf5bd8876
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633586"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805970"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高度な電子情報開示のドキュメントメタデータフィールド
 
@@ -35,15 +35,15 @@ ms.locfileid: "39633586"
 
 - メタデータフィールドの説明 ([**説明] 列**)。
 
-| フィールド名 | 検索可能なフィールド名 | エクスポートされたフィールド名 | 表示フィールド名 | 説明 |
-| :- |  :- |  :- |  :- |  :- |
+|フィールド名|検索可能なフィールド名|エクスポートされたフィールド名|表示フィールド名|説明|
+|:-|:-|:-|:-|:-|
 | 添付ファイルのコンテンツ Id | AttachmentContentId |  | 添付ファイルのコンテンツ Id | アイテムの添付ファイルのコンテンツ Id。 |
 | 添付ファイル名 | AttachmentNames | Attachment_Names | 添付ファイル名 | 添付ファイルの名前の一覧。 |
 | 弁護士クライアント特権スコア | AttorneyClientPrivilegeScore |  | 弁護士クライアント特権スコア | 委任状-クライアント特権モデルのコンテンツスコア。 |
 | 設定元 | 設定元 | Doc_authors | 設定元 | ドキュメントのメタデータから作成します。 |
 | BCC | BCC | Email_bcc | BCC | メッセージの種類の Bcc フィールド。  Format は**DisplayName \<[smtpaddress>**] です。 |
 | CC | CC | Email_cc | CC | メッセージの種類の Cc フィールド。  Format は**DisplayName \<[smtpaddress>**] です。 |
-| コンプライアンスラベル | ComplianceLabels | Compliance_labels | コンプライアンスラベル | Office 365 で適用されるコンプライアンスラベル |
+| コンプライアンスラベル | ComplianceLabels | Compliance_labels | コンプライアンスラベル |Office 365 のコンテンツに適用される[保持ラベル](labels.md)。 |
 | 複合パス | CompoundPath | Compound_path | 複合パス | アイテムのソースを記述する、人間が判読できるパス。 |
 | コンテンツ | コンテンツ |  |  | アイテムの抽出されたテキスト。 |
 | 会話本文 | 会話本文 |  | 会話本文 | アイテムの会話本文。 |

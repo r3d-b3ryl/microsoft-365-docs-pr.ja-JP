@@ -3,6 +3,7 @@ title: Office 365 の高度な電子情報開示でのエクスプレス分析�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Office 365 Advanced eDiscovery の簡易分析モードを実行する方法について説明します。
-ms.openlocfilehash: 04b48db445f114fd6138b099703e826c6b4ce7c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f1b26e40c2ed3a3b468ada0d501fcafd20fefe2c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086234"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802312"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示でのエクスプレス分析の使用
 
@@ -72,7 +73,7 @@ ms.locfileid: "37086234"
   
 1. [**分析**] セクションで、次の手順を実行します。 
     
-  - [**重複した複製] と [電子メール] スレッド**で、**ドキュメントの類似性**値を入力するか、既定値の 65% をそのまま使用します。 
+  - [**重複した複製] と [電子メール] スレッド**で、**ドキュメントの類似性**値を入力するか、既定値の65% をそのまま使用します。 
     
   - [**テーマの最大数**] で、作成するテーマの数の値を入力または選択します。 既定値は 200 です。 
     

@@ -1,7 +1,7 @@
 ---
 title: EU 国家識別番号
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085876"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805940"
 ---
 # <a name="eu-national-identification-number"></a>EU 国家識別番号
 
@@ -35,9 +35,9 @@ ms.locfileid: "37085876"
     
 - 2つの文字 (大文字小文字を区別しない)、数字、バックスラッシュ、スラッシュ、プラス記号、または等号
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -93,7 +93,7 @@ personalausweis republik österreich
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -173,9 +173,9 @@ edinen grazhdanski nomer
 
  10桁の数字 
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -235,7 +235,7 @@ id カード番号
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -320,7 +320,7 @@ id-kaart
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -386,7 +386,7 @@ személyazonosító igazolvány
     
 - 1つのスペースまたは大文字 (大文字と小文字を区別)
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -461,7 +461,7 @@ uimh. psp
     
 - 1つのパリティ付き数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -537,7 +537,7 @@ codice fiscale
     
 - ランダムに生成される4桁の数字
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -601,7 +601,7 @@ personalcodeno#
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -674,9 +674,9 @@ asmens のためのものです。
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -747,9 +747,9 @@ eindeutigeid#
     
 - 1つの大文字 (大文字と小文字を区別)
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -808,7 +808,7 @@ numru ta ' 識別子 tuniku
 
 9 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -881,7 +881,7 @@ uniek identiteitsnummer
 
 13 桁の数字
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -962,7 +962,7 @@ numărpersonalunic#
 
 1つの円記号を含む10桁の数字:
   
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1039,7 +1039,7 @@ rodne cislo
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
 はい
   
@@ -1106,9 +1106,9 @@ emšo
     
 - 1桁の数字または文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>チェックサム
+### <a name="checksum"></a>Checksum
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 

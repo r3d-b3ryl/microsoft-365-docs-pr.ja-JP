@@ -1,5 +1,5 @@
 ---
-title: Office 365 で LinkedIn データをアーカイブするためのコネクタの設定 (プレビュー)
+title: LinkedIn データをアーカイブするためのコネクタを設定する (プレビュー)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、標準コネクタをセットアップして、LinkedIn Company ページから Office 365 にデータをインポートすることができます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのコンプライアンスを管理することができます。
-ms.openlocfilehash: bd11102a15396132cb192d8b0a4cc9a0dfca5645
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 6aff67ea9112b8215ba5b10dbdd6ce3a08876984
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615627"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807792"
 ---
-# <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Office 365 で LinkedIn データをアーカイブするためのコネクタの設定 (プレビュー)
+# <a name="set-up-a-connector-to-archive-linkedin-data-preview"></a>LinkedIn データをアーカイブするためのコネクタを設定する (プレビュー)
 
 Office 365 の LinkedIn Company ページからデータをアーカイブするためのコネクタ機能は、プレビュー段階です。
 
@@ -35,7 +35,7 @@ LinkedIn 会社のページデータがメールボックスに保存された�
 
 ## <a name="create-a-linkedin-connector"></a>LinkedIn コネクタを作成する
 
-1. に移動<https://protection.office.com>して、[**データ\>ガバナンスのインポート**] を選択し、[**サードパーティのデータをアーカイブ**する] を選択します。
+1. に移動<https://protection.office.com>して、[**情報\>ガバナンスのインポート > アーカイブして、サードパーティのデータをアーカイブ**します。
 
 2. [**サードパーティのデータをアーカイブ**する] ページで、[**コネクタの追加**] を選択し、[ **LinkedIn**] を選択します。
 

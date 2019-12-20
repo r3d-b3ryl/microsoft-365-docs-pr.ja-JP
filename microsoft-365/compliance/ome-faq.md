@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866419"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962564"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -69,10 +69,10 @@ Office 365 の新しいメッセージの暗号化機能は、既存の IRM お�
 
 |**機能**|**以前のバージョンの OME**|**IRM**|**OME の新機能**|
 |:-----|:-----|:-----|:-----|
-|**暗号化された電子メールの送信**|Exchange メールフロールールを使用した場合のみ|エンドユーザーが Outlook for PC、outlook for Mac、または Outlook on the web から開始しました。または Exchange メールフロールールを介して|エンドユーザーが Outlook for PC、outlook for Mac、または Outlook on the web から開始しました。またはメールフロールールによって|
+|**暗号化された電子メールの送信**|Exchange メールフロールールを使用した場合のみ|エンドユーザーが Outlook for Windows、outlook for Mac、または Outlook on the web から開始しました。または Exchange メールフロールールを介して|エンドユーザーが Outlook for Windows、outlook for Mac、または Outlook on the web から開始しました。またはメールフロールールによって|
 |**権限管理**|-|オプションとカスタムテンプレートを転送しない|転送不可オプション、暗号化のみオプション、既定およびカスタムテンプレート|
 |**サポートされている受信者の種類**|外部の受信者のみ|内部受信者のみ|内部および外部の受信者|
-|**受信者の利便性**|外部の受信者がブラウザーまたはダウンロードしたモバイルアプリでダウンロードして開く HTML メッセージを受信しました。|内部の受信者は、Outlook for PC、outlook for Mac、および Outlook on the web で暗号化された電子メールのみを受信しました。|内部および外部の受信者は、Outlook for PC、Outlook for Mac、Outlook on the web、Outlook for Android、および iOS 用の outlook、または web ポータルで、同じ Office 365 組織または Office 365 のどちらにあるかに関係なく、電子メールを受信します。機関. OME ポータルには、個別にダウンロードする必要はありません。|
+|**受信者の利便性**|外部の受信者がブラウザーまたはダウンロードしたモバイルアプリでダウンロードして開く HTML メッセージを受信しました。|内部の受信者 Outlook for Windows、outlook for Mac、Outlook on the web で暗号化された電子メールのみを受信しました。|内部および外部の受信者は、Outlook for Windows、Outlook for Mac、Outlook on the web、Outlook for Android、および iOS 版 outlook、または web ポータル経由で電子メールを受信します。これらのユーザーが同じ Office 365 組織または Office 365 にあるかどうかは関係ありません。機関. OME ポータルには、個別にダウンロードする必要はありません。|
 |**独自のキーサポートを提供する**|使用不可|使用不可| BYOK サポート|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>組織のために新しい OME 機能を有効にするにはどうすればよいですか?
@@ -93,11 +93,11 @@ OME の以前のバージョンを引き続き使用することはできます�
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>OME 暗号化メッセージを作成するために、どのような電子メールクライアントを使用する必要がありますか。 保護されたメッセージの送信に対してサポートされているアプリケーション
 
-保護されたメッセージは、Outlook 2016、outlook 2013 for PC および Mac、および Outlook on the web から作成できます。
+保護されたメッセージは、Outlook 2016、outlook 2013 for Windows および Mac、および Outlook on the web から作成できます。
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>保護された電子メールの読み取りと応答をサポートする電子メールクライアント
 
-Office 365 ユーザーの場合は、PC および Mac 用の Outlook (2013 と 2016)、Outlook on the web、および Outlook mobile (Android および iOS) の読み取りと応答が可能です。 組織で許可されている場合は、iOS ネイティブメールクライアントを使用することもできます。 Office 365 以外のユーザーの場合は、web ブラウザーを使用して、web 上で暗号化されたメッセージの読み取りと返信を行うことができます。
+Office 365 ユーザーの場合は、Outlook for Windows and Mac (2013 と 2016)、outlook on the web、および Outlook mobile (Android および iOS) の読み取りおよび応答を行うことができます。 組織で許可されている場合は、iOS ネイティブメールクライアントを使用することもできます。 Office 365 以外のユーザーの場合は、web ブラウザーを使用して、web 上で暗号化されたメッセージの読み取りと返信を行うことができます。
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>保護された電子メールの添付ファイルとしてサポートされているファイルの種類は何ですか。 添付ファイルは、保護された電子メールに関連付けられている保護ポリシーを継承しますか?
 
@@ -135,18 +135,6 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 
 はい。 Exchange Online またはセキュリティ&amp; /コンプライアンスセンターで DLP を使用して、メールフロールールを設定できます。
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信された暗号化されたメッセージを開くことはできますか。
-
-はい。 共有メールボックスで暗号化されたメッセージがサポートされています。
-
-- 共有メールボックスで保護されたメールを配布グループの一部として受信した場合、ユーザーは共有メールボックスで保護されたメールを開くことができます。
-
-- ユーザーが Outlook for Windows、outlook for Mac、および Outlook on the web を使用している場合は、電子メールから保護を継承する添付ファイルを表示できます。
-
-## <a name="is-delegated-access-supported"></a>委任されたアクセスがサポートされていますか?
-
-現時点ではできません。
-
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>企業ブランド化で暗号化されたメッセージをカスタマイズできますか。
 
 はい。 電子メールメッセージと OME ポータルのカスタマイズの詳細については、「組織のブランドを暗号化されたメッセージに追加する」を参照してください。 「[組織のブランドを暗号化されたメッセージに追加する」を](add-your-organization-brand-to-encrypted-messages.md)参照してください。
@@ -162,3 +150,32 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 ## <a name="can-i-remove-encryption-from-email"></a>暗号化を電子メールから削除することはできますか?
 
 管理者は、メールフロールールを設定して、送信メールから暗号化を削除することができます。 受信メッセージからメールフロールールを使用して暗号化を削除することはできません。
+
+## <a name="is-delegated-access-supported"></a>委任されたアクセスがサポートされていますか?
+
+現時点ではできません。
+
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信された暗号化されたメッセージを開くことはできますか。
+
+はい。 共有メールボックスで暗号化されたメッセージがサポートされています。
+
+- 共有メールボックスが、保護されたメールを配布グループの一部として受信した共有の mMailbox では、ユーザーは保護されたメールを開くことができます。
+
+- ユーザーが Outlook for Windows、outlook for Mac、および Outlook on the web を使用している場合は、電子メールから保護を継承する添付ファイルを表示できます。
+
+次の表に、共有メールボックスに対してサポートされているクライアントの一覧を示します。
+
+| プラットフォーム | メールの読み取り | 電子メールの添付ファイルを表示する |
+|----------|-----------|------------------------|
+| Outlook on the web | はい | はい                |
+| Outlook for Windows| はい | はい                |
+| Outlook for Mac    | はい | はい                |
+| Outlook for Android| はい | 不要                 |
+| Outlook for iOS    | はい | 不要                 |
+|
+
+現在、次の2つの既知の制限があります。
+
+- 共有メールボックスへの直接ユーザー割り当てによって提供されるアクセスのみをサポートしています。 メールが有効なセキュリティグループを使用した割り当てはサポートされていません。
+
+- Outlook mobile を使用してモバイルデバイスで受信した電子メールの添付ファイルを開くことはできません。
