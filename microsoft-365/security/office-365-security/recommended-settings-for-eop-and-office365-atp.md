@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 60042d5903a9dadd178fe68b3a73a3a2b9148798
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4aff384d571444e5641d3bcff58df136d27c7624
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807972"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40832050"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -89,7 +89,7 @@ ms.locfileid: "40807972"
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|マルウェア検出応答|いいえ|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
+|マルウェア検出応答|不要|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |不審なファイルの種類をブロックするための "一般的な添付ファイルの種類のフィルター"|オン|オン||
 |マルウェアのゼロ時間の自動削除|オン|オン||
 |配信されていないメッセージの内部送信者に通知する|無効|無効||
@@ -152,8 +152,8 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
 |Office 365 アプリの ATP Safe Links、Office for iOS、および Android を使用する|有効|有効|これは、組織全体に適用される ATP の安全なリンクポリシーに該当します。|
-ユーザーが [安全なリンク] をクリックしたときに追跡しない|無効|無効|これは、組織全体に適用される ATP の安全なリンクポリシーに該当します。|
-|ユーザーが元の URL への安全なリンクをクリックできないようにする|有効|有効|これは、組織全体に適用される ATP の安全なリンクポリシーに該当します。|
+ユーザーが [安全なリンク] をクリックしたときに追跡しない|無効|無効|これは、組織全体に適用されるポリシーと、特定の受信者に適用されるポリシーの両方に適用されます。|
+|ユーザーが元の URL への安全なリンクをクリックできないようにする|有効|有効|これは、組織全体に適用されるポリシーと特定の受信者に適用されるポリシーの両方に適用されます。|
 |メッセージ内の不明な潜在的な悪意のある Url に対するアクション|オン|オン||
 |疑わしいリンクおよびファイルを指すリンクのリアルタイム URL スキャンを適用する|有効|有効||
 |メッセージを配信する前に URL スキャンが完了するまで待機する|有効|有効||
@@ -177,4 +177,4 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 
 - [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を**セットアップする方法**、および[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を**構成**する方法に関する情報については、次のリンクを使用してください。 (「[365 Office での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ指示を参照してください。
 
-- [この記事](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)では、GPO/オンプレミスのオプション、および Intune ベースのセキュリティについては、[ここ](https://docs.microsoft.com/intune/protect/security-baselines)に記載されている**Windows のセキュリティベースライン**について説明します。 最後に、Microsoft Defender Advanced Threat Protection (ATP) と Windows Intune セキュリティベースラインの比較[につい](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)て説明します。
+- [この記事](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)では、GPO/オンプレミスのオプション、および Intune ベースのセキュリティについては、[ここ](https://docs.microsoft.com/intune/protect/security-baselines)に記載されている**Windows のセキュリティベースライン**について説明します。 最後に、Microsoft Defender Advanced Threat Protection (ATP) と Windows Intune セキュリティベースラインの比較は[こちらで](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)ご覧いただけます。
