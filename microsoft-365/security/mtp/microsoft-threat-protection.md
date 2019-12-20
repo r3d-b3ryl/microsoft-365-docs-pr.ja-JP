@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 01a81d5f4ac68d72095f86de93b727c60d28393f
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: a47ffecbf0ef1ac7dcfeef9d8cbe4e104de9ca2d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910231"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808582"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Microsoft の脅威保護は、エンドポイント、id、電子メール、およびアプリケーションによってネイティブに統合する、統合された事前違反のエンタープライズ防衛スイートであり、高度な攻撃を検出、阻止、調査、および自動応答します。  
 
@@ -74,6 +74,6 @@ Microsoft の脅威保護の製品間の機能には、次のようなものが�
 
 
 ## <a name="get-started"></a>作業の開始
-Microsoft 365 E5 または同等のライセンスを持つお客様は、Microsoft の脅威保護を使用できます。 開始するには、 [security.microsoft.com](https://security.microsoft.com)の Microsoft 365 セキュリティセンターでサービスを有効にします。 詳細については、以下を参照してください。
+Microsoft 365 E5 または同等のライセンスをお持ちのお客様は、Microsoft Threat Protection を使用できます。 開始するには、 [security.microsoft.com](https://security.microsoft.com)の Microsoft 365 セキュリティセンターでサービスを有効にします。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
-- [Microsoft の脅威保護を有効にする](mtp-enable.md)
+- [Microsoft Threat Protection を有効にする](mtp-enable.md)

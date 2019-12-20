@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーがスパムとして分類されている Office 365 からメッセージを送り続ける場合、メッセージを送信しないよう制限されます。 '
-ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871743"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823819"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 
@@ -33,19 +33,19 @@ ms.locfileid: "39871743"
 <a name="sectionSection0"> </a>
 
 予想所要時間 : 5 分
-  
+
 この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」の「スパム対策」のエントリを参照してください。
 
-以下の手順はリモート PowerShell 経由でも実行することができます。 Get-BlockedSenderAddress コマンドレットを使用して制限付きユーザーのリストを取得し、Remove-BlockedSenderAddress を使用して制限を削除します。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
+以下の手順はリモート PowerShell 経由でも実行することができます。 Get-BlockedSenderAddress コマンドレットを使用して制限付きユーザーのリストを取得し、Remove-BlockedSenderAddress を使用して制限を削除します。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>ブロックされた Office 365 メールアカウントの制限を削除する
 
 このタスクは、セキュリティ/コンプライアンス センター（SCC）で実行します。 SCC の詳細については、[セキュリティ/コンプライアンス センターにアクセス](../../compliance/go-to-the-securitycompliance-center.md)してください。 これらの機能を実行するには、**組織管理**または**セキュリティ管理者**の役割グループに属している必要があります。 SCC 役割グループの詳細については、[「セキュリティ/コンプライアンスセンターの権限」を参照](permissions-in-the-security-and-compliance-center.md)してください。
 
 1. Office 365　の包括的な管理者権限を持つ職場または学校のアカウントを使用して、Office 365 セキュリティ/コンプライアンスセンターにサインインし、左側のリストで **[脅威の管理]** を展開し、**[レビュー]** を選択して、**[制限付きユーザー]** を選びます。
-    
+
     > [!TIP]
-    > セキュリティ&amp;コンプライアンス センターの**制限付きユーザー**ページ（旧称アクションセンター）に直接アクセスするには、次のURLを使用します：> [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > **制限付きユーザー**ページ (旧称アクション センター、セキュリティ&amp; コンプライアンス センター内) に直接アクセスするには、次の URL を使用します: [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. このページには、メールの送信がブロックされているユーザーの一覧が表示されます。  制限を削除するユーザーを見つけて、**[ブロック解除]** を選択します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "39871743"
 5. **[はい]** をクリックして変更を確定します。
 
     > [!NOTE]
-    > 制限が解除されるまで 30 分以上かかる場合があります。 
+    > 制限が解除されるまで 30 分以上かかる場合があります。
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>この事態の際に管理者にアラートが送信されるようにする
 
@@ -79,7 +79,7 @@ ms.locfileid: "39871743"
 
 ## <a name="for-more-information"></a>関連情報
 
-[侵害された電子メール アカウントへの対応](../../compliance/responding-to-a-compromised-email-account.md)
+[侵害された電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
 [メールアラートの送信が制限されているユーザーを把握する](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 

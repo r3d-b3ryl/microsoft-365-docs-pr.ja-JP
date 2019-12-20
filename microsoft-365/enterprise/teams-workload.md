@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Teams について学習し、展開していきます。
-ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033602"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801242"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Microsoft Teams を展開する
 
@@ -43,7 +43,7 @@ Teams 機能の最初のセットについては、「[Microsoft Teams のチャ
 Teams のより高度な機能については、次を参照してください。
 
 - [会議](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [クラウド ボイス](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (Microsoft 365 Enterprise E5 が必要です)
+- [クラウド ボイス](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (Microsoft 365 E5 が必要です)
 
 組織の Teams の使用状況を監視するには、次を参照してください。
 

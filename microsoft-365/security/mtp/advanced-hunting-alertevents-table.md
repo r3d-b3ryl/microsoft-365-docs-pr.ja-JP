@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d83b659a98c56cc59e88f9777aa73ca2e25b745
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: ee14dcc1c2ae0a2bc6fa3c094d757441515f00de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911333"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807016"
 ---
 # <a name="alertevents"></a>AlertEvents
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高度な検索](advanced-hunting-overview.md) スキーマの `AlertEvents` テーブルには、Microsoft Defender ATP アラートに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
@@ -36,9 +36,9 @@ ms.locfileid: "39911333"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `AlertId` | string | アラートの一意識別子 |
-| `EventTime` | datetime | イベントが記録された日付と時刻 |
-| `MachineId` | 文字列 | コンピューターの一意識別子 |
-| `ComputerName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `Timestamp` | datetime | イベントが記録された日付と時刻 |
+| `DeviceId` | 文字列 | コンピューターの一意識別子 |
+| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `Severity` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの起こりうる影響 (高、中、低) を示します。 |
 | `Category` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの種類 |
 | `Title` | 文字列 | アラートのタイトル |
@@ -46,7 +46,7 @@ ms.locfileid: "39911333"
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを特定するには、この列を ComputerName 列と EventTime 列と共に使用する必要があります。 |
+| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
 | `Table` | 文字列 | イベントの詳細を含むテーブル |
 
 ## <a name="related-topics"></a>関連項目

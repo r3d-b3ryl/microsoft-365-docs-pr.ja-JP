@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 03cd648a178d63b2b964e0136c105068f4d1c6ca
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 23942b1d39bacfab470d41fca1ea630ad7b80ea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911341"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808702"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、興味深いインジケーターとエンティティを見つけることができます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対して、無制限な捜索が容易になります。
 
-Microsoft 365 セキュリティ センターでは、高度な捜索により、搭載デバイスからのデータを網羅する Microsoft Defender ATP とメールからのデータを提供する Office 365 ATP の両方からのデータを調べるクエリがサポートされます。 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
+Microsoft 365 セキュリティセンターでは、高度な検索では、Microsoft Defender ATP、利用デバイスからのデータ、および Office 365 ATP のデータを参照するクエリをサポートしており、電子メールからのデータが提供されます。 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 

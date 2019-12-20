@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise テスト環境のライセンスとグループ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/21/2019
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 Enterprise テスト環境で、グループベースのライセンスと動的なグループメンバーシップを構成します。
-ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: facff7eb556299c0312fa7488a35a96151bb1882
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202478"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802122"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のライセンスとグループメンバーシップを自動化する
 
@@ -49,28 +49,26 @@ Microsoft 365 Enterprise テスト環境で自動ライセンスと動的グル�
 
 最初に、新しい Sales グループを作成し、そのグループメンバーシップのルールを追加して、Department を Sales に設定したユーザーアカウントが自動的に Sales グループに追加されるようにします。
 
-1. インターネットブラウザーのプライベートインスタンスを使用して、office 365 のポータルに office 365 [https://portal.office.com](https://portal.office.com) E5 テストラボサブスクリプションの全体管理者アカウントでサインインします。
+1. インターネットブラウザーのプライベートインスタンスを使用して、Microsoft 365 E5 テストラボサブスクリプションの[https://portal.office.com](https://portal.office.com)全体管理者アカウントを使用して、Office 365 ポータルにサインインします。
 2. ブラウザーの別のタブで、Azure portal に移動[https://portal.azure.com](https://portal.azure.com)します。
-3. Azure portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
-4. [**すべてのグループ**] ブレードで、[**新しいグループ**] をクリックします。
+3. Azure portal で、[検索] ボックスに「 **groups** 」と入力し、[**グループ**] をクリックします。
+4. [**すべてのグループ**] ウィンドウで、[**新しいグループ**] をクリックします。
 5. [**グループの種類**] で、[ **Office 365**] を選択します。
 6. [**グループ名**] に「 **Sales**」と入力します。
-7. [**メンバーシップの種類**] で、[**動的ユーザー** ] を選択します。
-8. **[動的クエリの追加]** をクリックします。
-9. **[ユーザーを追加する場所]** で、**[部署]** を選択します。
-10. 次のフィールドで、**[等しい]** を選択します。
-11. 次のフィールドで、「 **Sales**」と入力します。
-12. **[クエリの追加]** をクリックしてから、**[作成]** をクリックします。
-13. [グループと**グループ-すべて**のグループ **]** ブレードを閉じます。
+7. [**メンバーシップの種類**] で、[**動的ユーザー**] を選択します。
+8. [**動的ユーザーメンバー**] をクリックします。
+9. [**動的メンバーシップの規則**] ウィンドウで、次のようにします。 
+   - **Department**プロパティを選択します。
+   - **Equals**演算子を選択します。
+   - [**売上**の**値**を入力します。
+10. [**保存**] をクリックします。
+11. **[作成]** をクリックします。
 
 次に、メンバーに Microsoft 365 E5 ライセンスが自動的に割り当てられるように、Sales グループを構成します。
 
-1. [Azure Active Directory の**概要**] ブレードで、[**すべての製品 > ライセンス**] をクリックします。
-2. 一覧で、[ **Micrsooft 365 E5**] を選択し、[**割り当て**] をクリックします。
-3. [**ライセンスの割り当て**] ブレードで、[**ユーザーとグループ**] をクリックします。
-4. グループの一覧で、[ **Sales** ] グループを選択します。
-5. **[選択]** をクリックし、**[割り当て]** をクリックします。
-6. ブラウザーの [Azure Portal] タブを閉じます。
+1. [ **Sales** ] グループをクリックし、[**ライセンス**] をクリックします。
+2. [**ライセンスの割り当ての更新**] ウィンドウで、[ **Microsoft 365 E5**] を選択し、[**保存**] をクリックします。
+3. ブラウザーの [Azure Portal] タブを閉じます。
 
 次に、ユーザー4アカウントの動的グループメンバーシップと自動ライセンスをテストします。 
 

@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1803445dfd9b46fce23b0dcc9585ea543f1b0347
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 631b328168003668ed06e37d76177c327794ed18
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911308"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808662"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高度な捜索](advanced-hunting-overview.md)スキーマは、イベント情報またはマシンとエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的に構築するには、高度な捜索スキーマのテーブルと列を理解する必要があります。
 
@@ -37,15 +37,15 @@ ms.locfileid: "39911308"
 
 | テーブル名 | 説明 |
 |------------|-------------|
-| **[MachineInfo](advanced-hunting-machineinfo-table.md)** | OS 情報を含むマシン情報 |
-| **[MachineNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | アダプタ、IP アドレス、MAC アドレス、および接続されたネットワークとドメインを含むマシンのネットワーク プロパティ |
-| **[ProcessCreationEvents](advanced-hunting-processcreationevents-table.md)** | プロセスの作成と関連イベント |
-| **[NetworkCommunicationEvents](advanced-hunting-networkcommunicationevents-table.md)** | ネットワーク接続と関連イベント |
-| **[FileCreationEvents](advanced-hunting-filecreationevents-table.md)** | ファイルの作成、変更、およびその他のファイル システム イベント |
-| **[RegistryEvents](advanced-hunting-registryevents-table.md)** | レジストリ エントリの作成と変更 |
-| **[LogonEvents](advanced-hunting-logonevents-table.md)** | サインインとその他の認証イベント |
-| **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL の読み込みイベント |
-| **[MiscEvents](advanced-hunting-miscevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント  |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | OS 情報を含むマシン情報 |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | アダプタ、IP アドレス、MAC アドレス、および接続されたネットワークとドメインを含むマシンのネットワーク プロパティ |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | プロセスの作成と関連イベント |
+| **[DeviceNetworkEvents 孔](advanced-hunting-devicenetworkevents-table.md)** | ネットワーク接続と関連イベント |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | ファイルの作成、変更、およびその他のファイル システム イベント |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | レジストリ エントリの作成と変更 |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | サインインとその他の認証イベント |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL の読み込みイベント |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント  |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | メール配信やブロック イベントを含む Office 365 のメール イベント |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Office 365 メールに添付されたファイルに関する情報 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Office 365 メールの URL に関する情報 |

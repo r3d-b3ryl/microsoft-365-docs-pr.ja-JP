@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1f2deef2c9ffc26f604194ff2d27d5f094471021
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911349"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808712"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高度な検索スキーマ](advanced-hunting-overview.md)の `EmailEvents` テーブルには、Office 365 ATP 上のメールの処理に関するイベントについての情報が含まれています。 このテーブルの情報を返すクエリを作成するには、この参照を使用できます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "39911349"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | イベントが記録された日付と時刻 |
+| `Timestamp` | datetime | イベントが記録された日付と時刻 |
 | `EmailId` | string | 一意のメールと受信者の識別子 |
 | `NetworkMessageId` | string | Office 365 により生成されたメールの一意の識別子 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |

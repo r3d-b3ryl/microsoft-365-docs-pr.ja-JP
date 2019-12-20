@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 で他の脅威を探します。
+title: Microsoft 365 での脅威を探します。
 description: Microsoft 365 セキュリティセンターの脅威検索機能を使用して、侵害やその他の脅威を事前に検索する
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、ハント、探し、Microsoft Defender ATP、Office 365 ATP、Azure ATP、高度な検索
+keywords: セキュリティ、マルウェア、Microsoft 365、M365、Microsoft Threat Protection、MTP、セキュリティセンター、ハント、脅威探し、cyberthreat 検索、Microsoft Defender ATP、Office 365 ATP、Azure ATP、高度な検索
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 795a7d88c2b6021a5bdd665b3787644b50fb346a
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 12705fa525374af8870aedcd211d8e9dcdd17f9c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909429"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808742"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Microsoft 365 での脅威を探します。
 
@@ -35,5 +35,5 @@ Microsoft の[脅威保護を有効](mtp-enable.md)にして、microsoft 365 セ
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検索の概要](advanced-hunting-overview.md)
-- [Microsoft の脅威保護の概要](microsoft-threat-protection.md)
-- [Microsoft の脅威保護を有効にする](mtp-enable.md)
+- [Microsoft Threat Protection の概要](microsoft-threat-protection.md)
+- [Microsoft Threat Protection を有効にする](mtp-enable.md)

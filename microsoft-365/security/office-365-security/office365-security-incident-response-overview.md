@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: このソリューションでは、最も一般的な cybersecurity 攻撃が Office 365 でどのように表示されるか、またそれらに応答する方法を示します。
-ms.openlocfilehash: d908b32a5c3cb01476ab9b7604861eb94c7a2745
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971595"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823829"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 セキュリティ インシデント対応
 
@@ -51,11 +51,11 @@ ms.locfileid: "39971595"
 
 ## <a name="incident-response-articles"></a>インシデント対応の記事
 
-- [侵害された Office 365 電子メール アカウントへの対応](~/compliance/responding-to-a-compromised-email-account.md)
+- [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
 
-Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。  [Office 365 セキュリティロードマップを使用して、最初の30日間、90日間、および](security-roadmap.md)office 365 テナントをセキュリティで保護するためのベストプラクティスを実装することをお勧めします。
+Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能セットが用意されています。  [Office 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Office 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
 
 - 最初の30日間に実行するタスク。  これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

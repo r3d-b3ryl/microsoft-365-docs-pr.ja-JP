@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise の概要
+title: Microsoft 365 for enterprise の概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,23 +10,23 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Microsoft 365 Enterprise のコンポーネント、計画、および展開パスの概要について説明します。
-ms.openlocfilehash: 67d7417af01b7c64094aa46350326f32e0f18534
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
+ms.openlocfilehash: 16efb061bbb8be4ff8cb5a93186d342fc55ca849
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831958"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801462"
 ---
-# <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 Enterprise の概要
+# <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
-Microsoft 365 Enterprise は、すべてのユーザーがクリエイティブを行い、安全に共同作業できるようにする完全なインテリジェントソリューションです。 
+Microsoft 365 for enterprise は、すべてのユーザーがクリエイティブな作業を行い、安全に共同作業を行えるようにする完全なインテリジェントソリューションです。 
 
-大規模な組織向けに設計されていますが、Microsoft 365 Enterprise は、高度なセキュリティと生産性の向上を必要とする中規模の中小企業にも使用できます。 
+大規模な組織向けに設計されていますが、Microsoft 365 for enterprise は、高度なセキュリティと生産性の機能を必要とする中規模の中小企業にも使用できます。 
 
 ## <a name="components"></a>コンポーネント
 
-Microsoft 365 Enterprise は次の要素で構成されています。
+エンタープライズ向け Microsoft 365 は、次の要素で構成されています。
 
 |||
 |:-------|:-----|
@@ -37,7 +37,7 @@ Microsoft 365 Enterprise は次の要素で構成されています。
 
 ## <a name="plans"></a>プラン
 
-Microsoft 365 Enterprise は、3つのプランで利用できます。
+Microsoft 365 for enterprise は、3つのプランで利用できます。
 
 |||
 |:-------|:-----|
@@ -46,37 +46,37 @@ Microsoft 365 Enterprise は、3つのプランで利用できます。
 | F1 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
 |||
 
-Microsoft 365 Enterprise E3 を使用している場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。
+Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。
 
 - Identity & 脅威保護
 - 情報保護 & コンプライアンス
 
-これらのオファーリングには、Microsoft 365 Enterprise E5 に含まれている追加機能が含まれています。
+これらのオファーリングには、Microsoft 365 E5 に含まれている追加機能が含まれています。
 
 詳細については、「[各プランの特徴と機能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
 
 ## <a name="get-the-big-picture"></a>大きな画像を取得する
 
-[Microsoft 365 Enterprise ポスター](media/m365-poster/Microsoft365Enterprise.pdf)は、次のものを一元的に表示する場所です。
+[Microsoft 365 for enterprise ポスター](media/m365-poster/Microsoft365Enterprise.pdf)は、次の情報を一元的に表示する場所です。
 
-- Microsoft 365 Enterprise の利点と、アプリとサービスがその価値の柱にマップされる方法
-- Microsoft 365 Enterprise プランと、それらに含まれるコンポーネント 
-- Microsoft 365 Enterprise が有効になっているモダンワークプレースの主要なコンポーネント
+- Microsoft 365 for enterprise の利点と、アプリとサービスがその価値の柱にマップされる方法
+- エンタープライズプランのための Microsoft 365 とその中に含まれるコンポーネント 
+- モダンワークプレースの主要なコンポーネントであり、Microsoft 365 for enterprise を使用すると、
 - 一般的な組織部門のための[Microsoft 365 プロダクティビティライブラリ](https://www.microsoft.com/microsoft-365/success/)と代表的なシナリオ
-- Microsoft 365 Enterprise[展開ガイド](deploy-microsoft-365-enterprise.md)を強調した導入ロードマップ
+- Microsoft 365 for enterprise[展開ガイド](deploy-microsoft-365-enterprise.md)を強調した導入ロードマップ
 
-[![Microsoft 365 Enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Microsoft 365 for enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)をクリックします。
 
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
+組織全体を Microsoft 365 for enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
-[![「Microsoft 365への移行」ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Microsoft 365 への移行ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
+この2ページのポスターを使用すると、既存のインフラストラクチャをすばやく把握し、Microsoft 365 for enterprise の対応する製品またはサービスに移行するためのガイダンスを得ることができます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
 [このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
@@ -96,13 +96,13 @@ Microsoft 365 Enterprise E3 を使用している場合は、次の[オファー
 
 [![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-この1ページのポスターは、Windows 7 および Office 2010 のクライアントおよびサーバー製品がサポート終了を受けられないようにするための簡単な方法で、Microsoft 365 Enterprise で推奨されるパスとサポートが強調表示されています。
+この1ページのポスターは、Microsoft 365 for enterprise で推奨されるパスとサポートを使用して、Windows 7 および Office 2010 のクライアントおよびサーバー製品のサポートが終了するのを防ぐための、さまざまなパスを簡単に理解する方法を示しています。
 
 [このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="deploy"></a>展開
 
-Microsoft 365 Enterprise の製品、機能、およびコンポーネントを展開するには、次の3つの方法があります。
+エンタープライズ向けの Microsoft 365 の製品、機能、およびコンポーネントを展開するには、次の3つの方法があります。
 
 1. FastTrack とのパートナーシップ
   
@@ -110,17 +110,17 @@ Microsoft 365 Enterprise の製品、機能、およびコンポーネントを�
   
 2. Microsoft コンサルティングサービスまたは[microsoft パートナー](https://partner.microsoft.com/)と協力して提供されます。
 
-   コンサルタントは、現在のインフラストラクチャを分析し、Microsoft 365 Enterprise のすべてのソフトウェアとサービスを組み込むための計画を策定する際に役立ちます。
+   コンサルタントは、現在のインフラストラクチャを分析し、Microsoft 365 for enterprise のすべてのソフトウェアとサービスを組み込むための計画を策定するのに役立ちます。
 
 3. 自分で行う
 
-   「 [Microsoft 365 Enterprise 展開ガイド」](deploy-microsoft-365-enterprise.md)では、インフラストラクチャと生産性のワークロードを構築する手順について手順を追って説明します。 
+   「 [Microsoft 365 for enterprise 展開ガイド」](deploy-microsoft-365-enterprise.md)では、インフラストラクチャと生産性のワークロードを構築する手順について手順を追って説明します。 
 
 展開の詳細については、「how to:」を参照してください。
 
-- [お客様](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)は、Microsoft 365 Enterprise を使用します。
-- [Microsoft では](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise)、Microsoft 365 Enterprise を使用しています。
-- 架空の多国籍企業である[Contoso Corporation](contoso-overview.md)は、Microsoft 365 Enterprise を展開しました。
+- [お客様](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-for-enterprise)は、Microsoft 365 for enterprise を使用しています。
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-for-enterprise)は microsoft 365 for enterprise を使用しています。
+- 架空の多国籍企業である[Contoso Corporation](contoso-overview.md)は、Microsoft 365 for enterprise を展開しました。
 
 ## <a name="additional-microsoft-365-solutions"></a>その他の Microsoft 365 ソリューション
 
@@ -146,8 +146,8 @@ Microsoft 365 Enterprise の製品、機能、およびコンポーネントを�
 
 ## <a name="next-step"></a>次の手順
 
-自分で展開を行っている場合は、 [Microsoft 365 Enterprise 展開](deploy-microsoft-365-enterprise.md)の手順を開始します。
+自分で展開を行う場合は、[エンタープライズ展開の過程で Microsoft 365 を](deploy-microsoft-365-enterprise.md)開始します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Enterprise 製品ページ](https://www.microsoft.com/microsoft-365/enterprise)
+[Microsoft 365 for enterprise 製品ページ](https://www.microsoft.com/microsoft-365/enterprise)

@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 989184c5dd8af6aafc525100e34e0172d96adcfe
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 1e157ff8c7c2ac61790b4be74c43553eb0807eb2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911326"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808732"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft Threat Protection のインシデントの概要
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 すべてのインシデントの基本はアラートです。 アラートは、ネットワーク上で悪意のあるイベントまたはアクティビティが検出されたときに作成されます。 個々のアラートは、個々のイベントまたはエンティティで何が起こっているかについての貴重なヒントを提供します。 ただし、攻撃は通常、さまざまな攻撃ベクトルを使用して侵害を実行します。 個々のヒントを組み合わせることは、困難で時間のかかる作業です。 
 

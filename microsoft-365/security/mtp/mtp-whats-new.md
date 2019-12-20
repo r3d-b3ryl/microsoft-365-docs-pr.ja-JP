@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b4a8908dec501ecf6c0a7932e0f5662a752a7eef
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 786d6bacdadfeb52ae24363cfdeb4a3346fcf87f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911362"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806916"
 ---
 # <a name="whats-new-in-microsoft-365-security"></a>Microsoft 365 セキュリティの新機能
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 このトピックでは、Microsoft 365 Security の最新リリースの一般公開 (GA) 機能について説明します。 
 

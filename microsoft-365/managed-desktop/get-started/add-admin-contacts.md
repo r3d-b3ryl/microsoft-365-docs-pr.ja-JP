@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962614"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823839"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで管理者の連絡先を追加および確認する
 
@@ -44,7 +44,7 @@ IT ヘルプデスク | サポートスタッフが Microsoft マネージドデ
 
 **これらの連絡先に対して選択するユーザーは、Microsoft マネージドデスクトップ環境を決定するための知識と権限を持っている必要があります。** Microsoft マネージドデスクトップ環境をオンにすると、ローカルのヘルプデスクおよびセキュリティのための連絡先を追加するように求められます。 
 
-[サポートリクエストを送信](../working-with-managed-desktop/support.md)する場合は、管理者の連絡先が必要です。 サポート要求のフォーカス領域に対する管理者の連絡先が必要です。 
+[サポートリクエストを送信](../service-description/support.md)する場合は、管理者の連絡先が必要です。 サポート要求のフォーカス領域に対する管理者の連絡先が必要です。 
 
 **管理者の連絡先を追加するには**
 

@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9f6a4aa68826133bee0437116b2fbf3fde4e7e00
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 9368185fff037b8c3c2f5b70a178f2485fda3736
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911332"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808722"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高度な捜索](advanced-hunting-overview.md)スキーマの `EmailAttachmentInfo` テーブルには、Office 365 ATP によって処理されるメールの添付ファイルに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "39911332"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `EventTime` | 日付型 | イベントが記録された日付と時刻 |
+| `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `AttachmentId` | 文字列型 | 一意のメール添付ファイルの識別子 |
 | `NetworkMessageId` | 文字列型 | Office 365 により生成されたメールの一意の識別子 |
 | `SenderFromAddress` | 文字列型 | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |

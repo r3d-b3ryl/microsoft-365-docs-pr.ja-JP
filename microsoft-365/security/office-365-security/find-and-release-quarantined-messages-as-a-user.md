@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Office 365 のユーザーとして、自分のスパム検疫メッセージを次の 2 つのうちいずれかの方法で管理できます。1 つは送信されたスパム通知に直接応答する方法 (管理者がこの機能を設定している場合) で、もう 1 つはセキュリティ &amp; コンプライアンス センターでスパム検疫機能を使用する方法です。
-ms.openlocfilehash: c912c19571cde31c39f4ca3f44c7628ba8b29526
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: bcc9b7ed52af0e9920506aa667e51daad7f82c80
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970463"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808002"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Office 365 のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -36,7 +36,7 @@ Office 365 のユーザーとして、自分に配信されずに検疫に送ら
 2. 左側の [**脅威の管理**] を展開し、[**確認**] を選択して、[**検疫**] を選択します。
 
     > [!TIP]
-    > セキュリティ &amp; コンプライアンス センターの [**検疫**] ページに直接移動するには、次の URL を使用します。[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > [**検疫**] ページ (セキュリティ &amp; コンプライアンス センター内) に直接移動するには、次の URL を使用します。[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 既定では、セキュリティ &amp; コンプライアンス センターには、スパムとして検疫されたすべてのメール メッセージが表示されます。 メッセージは、受信の [**日付**] に基づいて、最新のものから順に並べ替えられます。 各メッセージに [**送信者**]、[**件名**]、および有効期限 ([**有効期限**]) が表示されます。 特定のフィールドで並べ替えるには、その列見出しをクリックします。列見出しをもう一度クリックすると、逆の順番に並べ替えられます。
 

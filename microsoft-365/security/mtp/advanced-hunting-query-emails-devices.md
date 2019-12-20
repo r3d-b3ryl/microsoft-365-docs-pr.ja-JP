@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b374aac84b309d18a88ee7248021b50a893e120c
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: da985621c1cee3fe5aa30d961380ef3f3d83de8d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911313"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808752"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>デバイスとメール全体で脅威を捜索する
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [Microsoft Threat Protection](advanced-hunting-overview.md) の高度な捜索を使用すると、Windows デバイスおよび Office 365 メール全体で積極的に脅威を捜索できます。 デバイスとメールの両方を対象としたクエリの作成方法を検討する上で役立つ捜索シナリオとサンプル クエリをいくつか紹介します。
 
@@ -51,7 +51,7 @@ EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
 | where isnotempty(SHA256)
 | join (
-FileCreationEvents
+DeviceFileEvents
 | project FileName, SHA256
 ) on SHA256
 ```
@@ -63,11 +63,11 @@ FileCreationEvents
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
 | where MalwareFilterVerdict == "Malware" 
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmail
 | join (
-LogonEvents
-| project LogonTime = EventTime, AccountName, ComputerName
+DeviceLogonEvents
+| project LogonTime = Timestamp, AccountName, DeviceName
 ) on AccountName 
 | where (LogonTime - TimeEmail) between (0min.. 30min)
 | take 10
@@ -80,13 +80,13 @@ LogonEvents
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 x
 | join (
-ProcessCreationEvents
+DeviceProcessEvents
 | where FileName =~ "powershell.exe"
 //| where InitiatingProcessParentFileName =~ "outlook.exe"
-| project TimeProc = EventTime, AccountName, ComputerName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project TimeProc = Timestamp, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
 ) on AccountName 
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```

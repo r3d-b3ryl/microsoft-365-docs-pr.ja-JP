@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: c3d3c8047e6814a56ec6470a9166fd0c13eb6839
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718636"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801362"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -48,7 +48,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
 
 さらに、このラボは次の試用版に接続するように設計されています。 
 
-  - Microsoft 365 Enterprise E5
+  - Microsoft 365 E5
 
 または
   - Office 365 Enterprise E5
