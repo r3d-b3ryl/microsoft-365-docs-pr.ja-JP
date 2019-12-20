@@ -1,5 +1,5 @@
 ---
-title: サンプルコネクタを使用して Office 365 で Twitter データをアーカイブする (プレビュー)
+title: サンプルコネクタを使用して Twitter データをアーカイブする (プレビュー)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Office 365 に Twitter データをインポートするためのネイティブコネクタをセットアップできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: 86362193b0c64afa182c2f49ff27bd7e5f27935c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 77f0a0615a177c0bfd6179a6a5ce1a58b024dcdc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615577"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807486"
 ---
-# <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>サンプルコネクタを使用して Office 365 で Twitter データをアーカイブする (プレビュー)
+# <a name="use-a-sample-connector-to-archive-twitter-data-preview"></a>サンプルコネクタを使用して Twitter データをアーカイブする (プレビュー)
 
 Office 365 で Twitter データをアーカイブするためのサンプルコネクタ機能は、プレビュー段階にあります。
 

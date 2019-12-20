@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる、machine learning 分類子を使用する準備ができました。 このトピックでは、これらを使用して分類子を使用する準備をする方法について説明します。
-ms.openlocfilehash: 7e10bb94f84dd10a1ac22126106531d8ad309c47
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる、machine learning 分類子を使用するための準備が整ったことが用意されています。 このトピックでは、これらを使用して分類子を使用する準備をする方法について説明します。
+ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633856"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807416"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>すぐに使用できる分類子を使用する (プレビュー)
 
@@ -34,7 +34,7 @@ Microsoft では、非常に大規模なサンプルデータセットを使用�
 > 分類とラベル付けワークフローで分類子を使用できるようにするには、事前に組織のコンテンツのサンプルに照らしてテストし、分類の予測が期待どおりに満たされることを確認する必要があります。
 
 > [!IMPORTANT]
-> 不快な言葉、嫌がらせ、冒涜、および脅威の分類子は検索可能なテキストでのみ機能し、網羅的でも完全でもないことに注意してください。 さらに、言語と文化的な標準が絶えず変化しており、これらの現実からは、これらの分類子を裁量で更新する権利が Microsoft によって予約されています。 分類子は、お客様の組織が不快な言葉や使用されている他の言語を監視するのに役立ちますが、分類子は、そのような言語の結果に対応していません。そのような言語。 お客様の組織は、Microsoft またはその子会社ではなく、事前に訓練された分類子によって識別されるコンテンツの監視、実施、ブロック、削除、保持に関連するすべての意思決定に対して責任を担います。
+> 不快な言葉、嫌がらせ、冒涜、および脅威の分類子は、検索可能なテキストのみで機能することに注意してください。 さらに、言語と文化的な標準が絶えず変化し、これらの現実からは、これらの分類子を裁量で更新する権利を Microsoft が留保します。 分類子は、お客様の組織が不快な言葉や使用されている他の言語を監視するのに役立ちますが、分類子は、そのような言語の結果に対応していません。そのような言語。 お客様の組織は、Microsoft またはその子会社ではなく、事前に訓練された分類子によって識別されるコンテンツの監視、実施、ブロック、削除、保持に関連するすべての意思決定に対して責任を負うことになります。
 
 ## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>使用準備の分類子を準備して使用する方法
 
@@ -86,5 +86,5 @@ Microsoft では、非常に大規模なサンプルデータセットを使用�
 関連項目:
 
 - [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)
-- 「[保持ラベルの概要](labels.md)」を参照してください。
+- [保持ラベルの概要](labels.md)
 - [条件に基づいて保持ラベルポリシーを自動適用する](labels.md#applying-a-retention-label-automatically-based-on-conditions)

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: 067a54f6286df5a5ce6e5b02b7ea1d6964b16777
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 54a12334c4b63e1751d578dcd5a9c79d887d246d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603751"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823729"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -88,7 +88,7 @@ Microsoft Office‍ 365 のセキュリティ/コンプライアンス センタ
 
 ### <a name="case-management"></a>ケース管理
 
-この役割では、セキュリティ/コンプライアンス センターの電子情報開示ケースへのアクセスを作成、編集、削除、制御することができます。 詳細については、「[セキュリティ/コンプライアンス センターで電子情報開示を管理する](manage-ediscovery-cases.md)」を参照してください。 前に説明したように、**Add-eDiscoveryCaseAdmin** コマンドレットを使用してユーザーを電子情報開示管理者にするには、そのユーザーにケース管理の役割が割り当てられている必要があります。 
+この役割では、セキュリティ/コンプライアンス センターの電子情報開示ケースへのアクセスを作成、編集、削除、制御することができます。 詳細については、「[セキュリティ/コンプライアンス センターで電子情報開示を管理する](ediscovery-cases.md)」を参照してください。 前に説明したように、**Add-eDiscoveryCaseAdmin** コマンドレットを使用してユーザーを電子情報開示管理者にするには、そのユーザーにケース管理の役割が割り当てられている必要があります。 
 
 ### <a name="compliance-search"></a>コンプライアンス検索
 

@@ -1,5 +1,6 @@
 ---
-title: Microsoft 365 の通信コンプライアンス (プレビュー)
+title: 通信のコンプライアンス (プレビュー)
+description: Microsoft 365 での通信コンプライアンスについて
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Microsoft 365 での通信コンプライアンスについて
-ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 2e54a9d6e0cb74d7e58cda9869548214a7c69582
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633666"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807356"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Microsoft 365 の通信コンプライアンス (プレビュー)
 
@@ -93,7 +93,7 @@ Microsoft 365 の通信コンプライアンスは、いくつかの新しい機
 
 通信コンプライアンスポリシーにより、複数の通信チャネル間でメッセージをスキャンおよびキャプチャし、コンプライアンスの問題をすばやく確認して修復することができます。
 
-- **Microsoft teams**: パブリックおよびプライベートの[microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)チャネルおよび個々のチャットのチャット通信と関連付けられた添付ファイルは、スタンドアロンチャネルソースとして、または他の microsoft 365 サービスとの通信コンプライアンスでサポートされています。 ポリシーで定義された特定のユーザーについてすべての Microsoft Teams チャネルと teams が自動的にスキャンされるようになったため、Microsoft Teams 割り当てに対して個別のマッピングリストを保持する必要がなくなりました。
+- **Microsoft teams**: パブリックおよびプライベートの[microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)チャネルおよび個人チャットのチャット通信は、スタンドアロンチャネルソースとして、または他の microsoft 365 サービスとの通信コンプライアンスでサポートされています。 ポリシーで定義された特定のユーザーについてすべての Microsoft Teams チャネルと teams が自動的にスキャンされるようになったため、Microsoft Teams 割り当てに対して個別のマッピングリストを保持する必要がなくなりました。
 - **Exchange online**: Microsoft 365 組織の[exchange online](https://docs.microsoft.com/Exchange/exchange-online)でホストされているすべてのメールボックスは、スキャン対象となります。 通信コンプライアンスポリシーの条件に一致する電子メールと添付ファイルは、監視と監督レポートですぐに利用できます。 Exchange Online はオプションのソースチャネルとなり、通信コンプライアンスポリシーでは不要になりました。
 - **Skype For Business online**: 通信コンプライアンスポリシーでは、 [Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)でのチャット通信と関連付けられた添付ファイルのスキャンをサポートしています。
 - **サードパーティのソース**: Microsoft 365 組織のメールボックスにインポートされたデータについて、[サードパーティ](archiving-third-party-data.md)製のソースからのメッセージをスキャンできます。 通信コンプライアンスは、インスタント Bloomberg、Facebook、Twitter など、いくつかの一般的なプラットフォームへの接続をサポートします。
@@ -111,6 +111,9 @@ Microsoft 365 での通信コンプライアンスに関するコンプライア
 ### <a name="configure"></a>Configure
 
 このワークフローステップでは、コンプライアンス要件を識別し、適切なコミュニケーションコンプライアンスポリシーを構成します。 ポリシーテンプレートは、新しいコンプライアンスポリシーをすばやく構成するだけでなく、要件が変更されたときにポリシーを変更したり更新したりするための最適な方法です。 たとえば、組織内のすべてのユーザーに対してポリシーを構成する前に、少人数のユーザーグループの通信に関して、不快な言語と嫌がらせ対策のポリシーをすばやくテストすることができます。
+
+> [!Important]
+> 既定では、全体管理者は通信コンプライアンス機能にアクセスできません。 通信コンプライアンス機能のアクセス許可を有効にするには、「[組織で通信のコンプライアンスを利用できるよう](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required)にする」を参照してください。
 
 Microsoft 365 コンプライアンスセンターでは、次のポリシーテンプレートから選択できます。
 
