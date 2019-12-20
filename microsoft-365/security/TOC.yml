@@ -5,10 +5,6 @@
       items:
         - name: BDM のための Microsoft 365 セキュリティ
           href: Microsoft-365-security-for-bdm.md
-        - name: セキュリティ スコア
-          href: ./mtp/microsoft-secure-score.md
-        - name: セキュア スコア (プレビュー)
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: 最高情報セキュリティ責任者 (CISO) のワークショップ トレーニング
           href: ./office-365-security/ciso-workshop.md
           items:
@@ -55,23 +51,23 @@
               href: ./mtp/troubleshoot.md
         - name: 使い方ガイド
           items:
-            - name: Microsoft の脅威保護を有効にする
+            - name: Microsoft Threat Protection を有効にする
               href: mtp/mtp-enable.md
-            - name: 事件
+            - name: インシデント
               items:
                 - name: 概要
                   href: mtp/incidents-overview.md
-                - name: インシデントの優先順位付け
+                - name: インシデントの優先度設定
                   href: mtp/incident-queue.md
                 - name: インシデントの調査
                   href: mtp/investigate-incidents.md
-                - name: インシデントを管理する
+                - name: インシデントの管理
                   href: mtp/manage-incidents.md
             - name: 自動調査および対応
               items:
                 - name: エアの概要
                   href: mtp/mtp-autoir.md
-                - name: アクションセンターに移動します。
+                - name: アクション センターに移動する
                   href: mtp/mtp-action-center.md
                 - name: エアの結果を表示する
                   href: mtp/mtp-autoir-results.md
@@ -83,33 +79,33 @@
                   href: mtp/hunting.md
                 - name: 高度な検索の概要
                   href: mtp/advanced-hunting-overview.md
-                - name: クエリ言語について
+                - name: クエリ言語の説明
                   href: mtp/advanced-hunting-query-language.md
                 - name: 共有クエリを使用する
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: デバイスとメールを探します。
                   href: mtp/advanced-hunting-query-emails-devices.md
-                - name: スキーマについて
+                - name: スキーマを理解する
                   href: mtp/advanced-hunting-schema-tables.md
                   items:
-                    - name: MachineInfo
-                      href: mtp/advanced-hunting-machineinfo-table.md
-                    - name: MachineNetworkInfo
-                      href: mtp/advanced-hunting-machinenetworkinfo-table.md
-                    - name: Process/イベント
-                      href: mtp/advanced-hunting-processcreationevents-table.md
-                    - name: NetworkCommunicationEvents
-                      href: mtp/advanced-hunting-networkcommunicationevents-table.md
-                    - name: FileCreationEvents
-                      href: mtp/advanced-hunting-filecreationevents-table.md
-                    - name: RegistryEvents
-                      href: mtp/advanced-hunting-registryevents-table.md
-                    - name: LogonEvents
-                      href: mtp/advanced-hunting-logonevents-table.md
-                    - name: ImageLoadEvents
-                      href: mtp/advanced-hunting-imageloadevents-table.md
-                    - name: 誤った Cevents
-                      href: mtp/advanced-hunting-miscevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceNetworkEvents 孔
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceEvents
+                      href: mtp/advanced-hunting-deviceevents-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -124,7 +120,7 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
-                - name: クエリのベストプラクティスを適用する
+                - name: クエリのベスト プラクティスを適用する
                   href: mtp/advanced-hunting-best-practices.md
             - name: セキュリティ スコア
               items:
@@ -357,7 +353,9 @@
                   items:
                     - name: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: 脅威の分析によって最新の攻撃行動を理解する
+            - name: キャンペーンビュー
+              href: ./office-365-security/campaigns.md
+            - name: 脅威分析を使用した最新の攻撃について
               href: ./mtp/latest-attack-campaigns.md
             - name: ATP レポートを表示して閲覧する
               href: ./office-365-security/view-reports-for-atp.md
@@ -373,7 +371,7 @@
               href: ./office-365-security/office-365-air.md
             - name: 配信された悪意のあるメールの検索と調査
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: 脅威エクスプローラー (およびリアルタイムの検出)
+            - name: 脅威エクスプローラー (およびリアルタイム検出)
               href: ./office-365-security/threat-explorer.md
               items:
                 - name: 脅威エクスプローラー ビュー

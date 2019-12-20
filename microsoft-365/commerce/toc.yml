@@ -35,3 +35,5 @@
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: パートナーとの関係を管理する
       href: manage-partners.md
+    - name: アカウントの削除
+      href: close-your-account.md

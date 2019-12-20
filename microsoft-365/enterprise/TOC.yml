@@ -1,8 +1,8 @@
-- name: Microsoft 365 Enterprise のドキュメントとリソース
+- name: エンタープライズドキュメントとリソースの Microsoft 365
   href: index.yml
-- name: Microsoft 365 Enterprise の概要
+- name: Microsoft 365 for enterprise の概要
   href: microsoft-365-overview.md
-- name: Microsoft 365 Enterprise を展開する
+- name: Microsoft 365 for enterprise を展開する
   href: deploy-microsoft-365-enterprise.md
   items:
     - name: 基礎インフラストラクチャを展開する
@@ -186,7 +186,7 @@
           href: contoso-team-for-top-secret-project.md
         - name: 厳しく規制されたデータ用の SharePoint サイト
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Microsoft 365 Enterprise 展開コンテンツの変更
+    - name: エンタープライズ展開コンテンツのための Microsoft 365 への変更点
       href: microsoft-365-deploment-guide-changes.md
 - name: 最新デスクトップ展開センターをご覧いただき
   href: desktop-deployment-center-home.md
@@ -221,7 +221,7 @@
   href: ../compliance/index.yml
 - name: Microsoft 365 セキュリティ
   href: ../security/index.yml
-- name: クラウド サービスを使用したエンタープライズ ビジネス継続性の管理 (EBCM)
+- name: クラウドサービスを使用したエンタープライズビジネス継続性管理 (EBCM)
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: 顧客およびクラウド パートナーの EBCM に関する責任
