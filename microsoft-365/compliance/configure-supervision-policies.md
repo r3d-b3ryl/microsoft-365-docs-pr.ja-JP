@@ -1,5 +1,6 @@
 ---
-title: Office 365 の監視ポリシーを構成する
+title: 監督ポリシーを構成する
+description: Office 365 の通信監督を構成する
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Office 365 の通信監督を構成する
-ms.openlocfilehash: 694f35fd42fb534292130695efa12bacc114713c
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+titleSuffix: Office 365 Compliance
+ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38686844"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806630"
 ---
-# <a name="configure-supervision-policies-for-office-365"></a>Office 365 の監視ポリシーを構成する
+# <a name="configure-supervision-policies-in-office-365"></a>Office 365 で監督ポリシーを構成する
 
 > [!IMPORTANT]
 > このトピックは、Office 365 サブスクリプションの監督ポリシーを構成する場合に適用されます。 Microsoft 365 サブスクリプションの通信コンプライアンスを構成する場合は、「 [microsoft 365 の通信コンプライアンスを構成する (プレビュー)](communication-compliance-configure.md)」を参照してください。

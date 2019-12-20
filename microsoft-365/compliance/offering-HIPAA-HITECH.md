@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7d2d718aa8c502afedce0fe99d6f444f78735246
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859747"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804810"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保険の携行性と責任 (HIPAA) & のヒット処理機能
 
@@ -56,10 +57,10 @@ HIPAA と Microsoft Cloud でのエコーの利点について説明します。
 - Microsoft Stream
 - Microsoft プロフェッショナル サービス: Azure、Dynamics 365、Intune と、Office 365 の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
 - [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Intune
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI cloud service をスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
 - Azure DevOps Services
 
@@ -107,7 +108,7 @@ Microsoft サービスはすべてのお客様にとって一貫しており、�
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Azure に関する HIPAA 準拠について](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(2016 年5月19日)
 - [Azure HIPAA 実装のガイダンス](https://aka.ms/azure-hipaa-guide)
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: c87618648c4b34553312a91d5633164fee316e52
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859827"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805000"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>連邦情報処理規格 (FIPS) 文書140-2
 
@@ -83,7 +84,7 @@ FIPS 140-2 に準拠するには、fips 承認モードで実行するように�
 - [暗号化モジュールの FIPS Pub 140-2 セキュリティ要件](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [NIST 暗号化モジュール検証プログラム](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows、Windows Server、および FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ee932493aca94109381edde1b2df0aae342a4c2
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6b1b852ee79b377b5d67ada8a5a4de602a74e466
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859857"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805037"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>連邦金融機関調査委員会 (FFIEC)
 
@@ -65,7 +66,7 @@ Azure および Office 365 の SOC 構成証明レポート。
 - [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Azure のセキュリティとコンプライアンス FFIEC 金融サービスブループリント](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
 
-## <a name="other-microsoft-resources-for-financial-services"></a>金融サービス向けのその他の Microsoft リソース
+## <a name="other-microsoft-resources-for-financial-services"></a>金融サービス業向けのその他の Microsoft リソース
 
 - [Microsoft 金融サービス コンプライアンス プログラム](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)

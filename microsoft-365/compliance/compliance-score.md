@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコアを使用すると、組織はリスク評価を簡略化および自動化し、リスクに対処するための推奨される処置を提案します。
-ms.openlocfilehash: f604f52fd66664aeb1b61fb873cfe40e8f48115c
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: c13b4e345f5ab9bee7a0edd134aea73c23d84036
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686665"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806660"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft コンプライアンススコア (プレビュー)
 
@@ -71,7 +71,7 @@ Microsoft コンプライアンススコアは、Microsoft 365 コンプライ�
 
 ![コンプライアンスマネージャーバージョン3のリレーションシップ](media/compliance-manager-relationships.png "コンプライアンススコアコンポーネント")
 
-### <a name="controls"></a>コントロール
+### <a name="controls"></a>Controls
 
 コントロールは、規制、標準、または内部ポリシーの特定の要件を満たすために、システム構成、組織プロセス、および人のアカウンタビリティを評価および管理する方法を定義します。
 
@@ -106,18 +106,20 @@ Microsoft コンプライアンススコアは、Microsoft 365 コンプライ�
 
 コンプライアンススコア用に事前に構成されたテンプレートは次のとおりです。
 
-1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018: 2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [Cloud Security アライアンス (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [Cloud Security アライアンス (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / の[ヒット](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [FedRAMP モデレート](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [欧州連合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [カリフォルニアコンシューマ Privacy Act (CCPA)-プレビュー](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / の[ヒット](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP モデレート](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [欧州連合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [カリフォルニアコンシューマ Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (プレビュー)
+13. [Irap](https://go.microsoft.com/fwlink/?linkid=2113709) / [オーストラリア自治体 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (プレビュー)
+14. [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 > [!NOTE]
 > パブリックプレビューの間に、[コンプライアンスマネージャー] に移動してテンプレートを作成して管理します。
