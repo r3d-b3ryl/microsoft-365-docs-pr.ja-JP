@@ -1,6 +1,6 @@
 ---
 title: メールが赤のフラグが設定されている場合のポリシーと保護の組み合わせ
-description: 電子メールがマルウェア、スパム、信頼度の高いスパム、フィッシング、EOP によって、または ATP によってマークされたときに適用されるポリシーと実行するアクション。
+description: 電子メールが複数の種類の検出によってスキャンされた場合に、どのようなポリシーと保護が適用されるかについて説明します。 電子メールがマルウェア、スパム、信頼度の高いスパム、フィッシング、EOP によって、または ATP によってマークされたときに適用されるポリシーと実行するアクション。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085643"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807992"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー
 
@@ -34,13 +34,13 @@ ms.locfileid: "37085643"
 |1/3     | 高確度スパム      | HSPM        | スパム フィルター ポリシーの設定        |
 |2/4     | スプーフィング        | SPOOF        | フィッシング対策ポリシー、スプーフィングインテリジェンス        |
 |5     | スパム         | SPM         | スパム フィルター ポリシーの設定         |
-|シックス     | バルク         | BULK        | スパム フィルター ポリシーの設定         |
+|6      | バルク         | BULK        | スパム フィルター ポリシーの設定         |
 
 さらに、これらのポリシーは_ATP を使用している組織_にも適用されます。
 
 |優先度 |ポリシー  |カテゴリ  |管理対象の場所 |
 |---------|---------|---------|---------|
-|7     | ドメイン偽装         | DIMP         | Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする        |
+|7      | ドメイン偽装         | DIMP         | Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする        |
 |8      | ユーザー偽装        | UIMP         | Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする         |
 
 たとえば、それぞれに対応する優先度を持つ2つのポリシーがあるとします。

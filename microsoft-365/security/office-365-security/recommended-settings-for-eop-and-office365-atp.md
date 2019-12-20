@@ -1,7 +1,8 @@
 ---
-title: EOP および Office 365 に関する Microsoft の推奨事項、推奨事項、Sender Policy Framework、ドメインベースのメッセージの報告と適合性、DomainKeys で特定されたメール、手順、動作方法など
+title: EOP および Office 365 に関する Microsoft の推奨事項、推奨事項、Sender Policy Framework、ドメインベースのメッセージの報告と適合性、DomainKeys で識別されたメール、手順、使用方法、セキュリティ基準、EOP のベースラインATP、段取り ATP、セットアップ EOP、ATP の構成、EOP、セキュリティ構成の構成
 ms.author: tracyp
 author: MSFTTracyP
+ms.date: 12/12/2019
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -13,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 60042d5903a9dadd178fe68b3a73a3a2b9148798
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971545"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807972"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -44,7 +45,7 @@ ms.locfileid: "39971545"
 |フィッシング電子メールの検出アクション|検疫メッセージ|検疫メッセージ||
 |高信頼フィッシング電子メール検出アクション|検疫メッセージ|検疫メッセージ||
 |電子メールの一括検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|バルクメールしきい値をに設定する|6 |4 |現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
+|バルクメールしきい値をに設定する|6 |2/4|現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
 |検疫の保存期間|30 日間|30 日間||
 |安全性に関するヒント|オン|オン||
 |許可された送信者|なし|なし||
@@ -57,23 +58,23 @@ ms.locfileid: "39971545"
 
 高度なスパムフィルターと呼ばれる、この記述時に廃止されたスパム対策ポリシーには、その他のパラメーターがいくつかあります。 これらの推奨設定は、標準レベルと厳密なレベルの両方で**オフ**にすることをお勧めします。
 
-|セキュリティ機能の名前|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
+|セキュリティ機能の名前| Comments |
+|---------|---------|
+|IncreaseScoreWithImageLinks| |
+|IncreaseScoreWithNumericIps| |
+|IncreaseScoreWithRedirectToOtherPort| |
+|IncreaseScoreWithBizOrInfoUrls| |
+|MarkAsSpamEmptyMessages| |
+|MarkAsSpamJavaScriptInHtml| |
+|MarkAsSpamFramesInHtml| |
+|MarkAsSpamObjectTagsInHtml| |
+|MarkAsSpamEmbedTagsInHtml| |
+|MarkAsSpamFormTagsInHtml| |
+|MarkAsSpamWebBugsInHtml| |
+|MarkAsSpamSensitiveWordList| |
+|MarkAsSpamFromAddressAuthFail| |
+|MarkAsSpamNdrBackscatter| |
+|MarkAsSpamSpfRecordHardFail| |
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 送信スパムフィルターポリシーの設定
 
@@ -166,3 +167,14 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |ATP の安全な添付ファイルの不明なマルウェア応答|Block|Block||
 |検出時に添付ファイルをリダイレクトする|有効|有効|添付ファイルがマルウェアであるかどうかを判断する方法を把握しているセキュリティ管理者の電子メールアドレスにリダイレクトする|
 |添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合の、ATP の安全な添付ファイル応答|有効|有効||
+
+
+## <a name="related-topics"></a>関連項目
+
+- **Exchange メールフロー/Exchange トランスポートルール**のベストプラクティスについては、こちらを参照してください。 詳細については、[この記事](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop)を参照してください。
+
+- 疑わしいメール、スパムの疑いがあるスパム、フィッシング、または Url をスキャン用に Microsoft に送信します。 [この記事](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)に記載されている**管理者の送信**手順を使用します。
+
+- [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を**セットアップする方法**、および[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を**構成**する方法に関する情報については、次のリンクを使用してください。 (「[365 Office での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ指示を参照してください。
+
+- [この記事](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)では、GPO/オンプレミスのオプション、および Intune ベースのセキュリティについては、[ここ](https://docs.microsoft.com/intune/protect/security-baselines)に記載されている**Windows のセキュリティベースライン**について説明します。 最後に、Microsoft Defender Advanced Threat Protection (ATP) と Windows Intune セキュリティベースラインの比較[につい](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)て説明します。

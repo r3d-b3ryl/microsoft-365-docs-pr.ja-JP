@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d7e71eda9cf0750ce44a978dca742b43f2101d63
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627461"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801262"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>手順 5: Windows 10 Enterprise のセキュリティ機能を展開する
 
@@ -92,7 +92,7 @@ Windows Defender Exploit Guard を展開、管理、および構成するには�
 
 <a name="windows10-sec-atp"></a>
 ## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
-Microsoft Defender ATP は、Microsoft 365 Enterprise E5 プランでのみ利用可能です。これは、企業のお客様がネットワーク上の高度な脅威を検出、調査、および対応することを可能にするセキュリティサービスです。 Microsoft Defender ATP、最小要件、およびこの機能を管理する方法の詳細については、以下を参照してください。
+Microsoft Defender ATP は、Microsoft 365 E5 plan でのみ利用できます。これは、企業のお客様が自社のネットワーク上の高度な脅威を検出、調査、および対応することを可能にするセキュリティサービスです。 Microsoft Defender ATP、最小要件、およびこの機能を管理する方法の詳細については、以下を参照してください。
 
 * [Microsoft Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [最小要件](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)

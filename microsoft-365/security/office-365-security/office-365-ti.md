@@ -3,7 +3,7 @@ title: Office 365 の脅威の調査と応答機能 (Office 365 Advanced Threat 
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: 1e8a3cee67a3fdb56042bc83dac7b09367241bf3
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39968000"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808122"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
@@ -37,8 +37,8 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 セキュリティ&amp;コンプライアンスセンターでの脅威の調査と応答の機能は、次のような一連のツールと応答のワークフローとして提供されます。
 - [脅威ダッシュボード](#threat-dashboard)
 - [Explorer](#threat-explorer)
-- [事件](#incidents)
-- [アタックシミュレータ](#attack-simulator)
+- [インシデント](#incidents)
+- [攻撃シミュレータ](#attack-simulator)
 - [自動調査および対応](automated-investigation-response-office.md)
 
 ### <a name="threat-dashboard"></a>脅威ダッシュボード
@@ -57,7 +57,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
   
 このレポートを表示して使用するには、Office &amp; 365 セキュリティコンプライアンスセンターで、[**脅威管理** \> **エクスプローラー**] に移動します。
   
-### <a name="incidents"></a>事件
+### <a name="incidents"></a>インシデント
 
 インシデントリスト (調査とも呼ばれます) を使用して、フライトセキュリティインシデントの一覧を表示します。 インシデントは、不審な電子メールメッセージなどの脅威を追跡し、さらに調査と修復を行うために使用されます。
   
@@ -67,7 +67,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
   
 ![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>のレビュー] を選択します。](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
-### <a name="attack-simulator"></a>アタックシミュレータ
+### <a name="attack-simulator"></a>攻撃シミュレータ
 
 アタックシミュレータを使用して、組織内で現実的な cyberattacks を設定して実行し、実際の cyberattack がビジネスに影響を与える前に、脆弱性のある人物を特定します。 詳細については、「 [Office 365 のアタックシミュレータ](attack-simulator.md)」を参照してください。
 
@@ -85,9 +85,9 @@ Office 365 Advanced Threat Protection プラン2のサービスの一部とし�
 
 Office 365 の脅威の調査と応答の機能は、Enterprise E5 に含まれる Office 365 Advanced Threat Protection プラン2に含まれています。また、特定のサブスクリプションのアドオンとして含まれています。 詳細については、「 [Office 365 ATP plan 1 And Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2)」を参照してください。
 
-## <a name="required-roles-and-permissions"></a>必要な役割とアクセス許可
+## <a name="required-roles-and-permissions"></a>必要な役割と権限
 
-Office 365 Advanced Threat Protection は、役割ベースのアクセス制御を使用します。 アクセス許可は、Azure Active Directory、Microsoft 365 管理センター、または Office 365 セキュリティ & コンプライアンスセンターの役割によって割り当てられます。
+Office 365 Advanced Threat Protection は、役割ベースのアクセス制御を使用します。 アクセス許可は、Azure Active Directory、Microsoft 365 管理センター、または Office 365 セキュリティ & コンプライアンスセンターの特定の役割によって割り当てられます。
 
 > [!TIP]
 > セキュリティ管理者などの一部の役割は、Office 365 セキュリティ & コンプライアンスセンターで割り当てることができますが、代わりに Microsoft 365 管理センターまたは Azure Active Directory のどちらかを使用することを検討してください。 役割、役割グループ、およびアクセス許可の詳細については、以下のリソースを参照してください。
@@ -104,7 +104,7 @@ Office 365 Advanced Threat Protection は、役割ベースのアクセス制御
 |Office 365 Advanced Threat Protection プラン2と Microsoft Defender Advanced Threat Protection の統合  <br/><br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する  <br/> |**Office 365 の全体管理者**または Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に割り当てられている**セキュリティ管理者**の役割のいずれか。<br/>--- **plus** ---<br/>追加のアプリケーション ( [Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 、SIEM サーバーなど) で割り当てられている適切な役割  |
    
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [脅威のトラッカーについて-新知識と注目](threat-trackers.md)
     

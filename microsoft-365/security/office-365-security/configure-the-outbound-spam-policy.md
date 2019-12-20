@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
-ms.openlocfilehash: 06c74b578d7c18ad2f193bcbd4a8f9cdb6794416
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970873"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808442"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを設定する
 
@@ -39,7 +39,7 @@ ms.locfileid: "39970873"
 
 この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」の「スパム対策」のエントリを参照してください。
 
-以下の手順はリモート PowerShell 経由でも実行することができます。 [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) コマンドレットを使用して設定を確認し、[Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) を使用して送信スパム ポリシー設定を編集します。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+以下の手順はリモート PowerShell 経由でも実行することができます。 [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) コマンドレットを使用して設定を確認し、[Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) を使用して送信スパム ポリシー設定を編集します。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
 ## <a name="use-the-security-and-compliance-center-scc-to-edit-the-default-outbound-spam-policy"></a>セキュリティ/コンプライアンスセンター (SCC) を使用して既定の送信スパムポリシーを編集する
 
@@ -61,11 +61,11 @@ ms.locfileid: "39970873"
 
    この設定の使用を指定したドメインの管理者は、このユーザーによるメッセージ送信がブロックされていることを通知されます。  この通知がどのように表示されるかを確認するには、「[送信者が送信スパムの送信をブロックされる場合の通知例](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)」をご覧ください。
 
-   [メモ!]ユーザーが制限されていることを示すシステム警告も生成されます。  警告の詳細、およびユーザーの回復方法については、「[制限付きユーザーポータルからのユーザーの削除](removing-user-from-restricted-users-portal-after-spam.md)」を参照してください。
+   > [メモ!]ユーザーが制限されていることを示すシステム警告も生成されます。  警告の詳細、およびユーザーの回復方法については、「[制限付きユーザーポータルからのユーザーの削除](removing-user-from-restricted-users-portal-after-spam.md)」を参照してください。
 
 4. [**受信者の制限**] セクションを展開して、内部および外部の受信者の1時間ごとに、1日あたりの最大数と共に、ユーザーが送信できる受信者の最大数を指定します。
 
-    [メモ!]入力の最大数は1万です。  詳細については[、「Exchange online 内の受信および送信の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)」を参照してください。
+    > [メモ!]入力の最大数は1万です。  詳細については[、「Exchange online 内の受信および送信の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)」を参照してください。
 
 7. ユーザーが指定した制限を超えた場合に実行する**アクション**を指定します。  可能なアクションは次のとおりです。
     * **ユーザーが次の日までメールを送信**できないように制限します。  送信の制限 (内部、外部、または毎日) を超えると、管理者のための通知が生成されます。ユーザーは、UTC 時間に基づいて、次の日まで追加の電子メールを送信することはできません。 管理者がこのブロックを上書きすることはできません。

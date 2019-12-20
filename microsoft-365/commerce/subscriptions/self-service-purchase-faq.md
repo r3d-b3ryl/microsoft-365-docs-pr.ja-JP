@@ -1,5 +1,5 @@
 ---
-title: セルフサービス購入に関する FAQ
+title: セルフサービス購入についてよく寄せられる質問
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -9,18 +9,18 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
-ms.openlocfilehash: fb295315eca84614e78792d0900318610c26b239
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.custom: aka.ms/self-service-purchase-faq
+ms.openlocfilehash: d8edca60687a269c062f44a23500b204b965863c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757694"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806240"
 ---
-# <a name="self-service-purchase-faq"></a>セルフサービス購入に関する FAQ
+# <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
 > [!NOTE]
 > この記事に記載されている情報は、Microsoft 電源プラットフォーム (Power BI、電源アプリ、およびパワー自動化) サブスクリプションにのみ適用されます。
@@ -95,9 +95,9 @@ Microsoft は、2020年1月14日に Power BI のセルフサービス購入を�
 
 ## <a name="admin-capabilities"></a>管理機能
 
-### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>管理者はセルフサービス購入についてどのような機能を持っていますか?
+### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>セルフサービス購入における管理者の権限を教えてください
 
-管理者は、組織内で行われたすべてのセルフサービスの購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。 組織に必要な場合、管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入または集中的に購入した製品に対して、同じデータ管理とアクセスポリシーを使用できます。
+管理者は、組織内で行われたすべてのセルフサービスの購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。 組織に必要な場合、管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入された製品と一元的に購入された製品に対して、同じデータ管理およびアクセスポリシーを有します。
 
 管理者は、組織内のユーザーがセルフサービス購入を行うことができるかどうかを制御することもできます。 詳細については、「 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
 
