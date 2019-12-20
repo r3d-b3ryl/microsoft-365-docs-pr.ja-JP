@@ -157,7 +157,7 @@
             - name: セキュリティ強化のために、Office 365 テナントを設定する
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新しい Microsoft 365 セキュリティ センター
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
             - name: セキュリティ/コンプライアンス センターのアクセス許可
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: ユーザーにセキュリティ センターへのアクセス権を付与する
@@ -405,7 +405,7 @@
             - name: Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: 侵害された Office 365 電子メール アカウントへの対応
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
         - name: メール フロー
           items:
             - name: レポート メッセージ アドインを有効にする
