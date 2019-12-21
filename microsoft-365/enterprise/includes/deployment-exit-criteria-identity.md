@@ -1,4 +1,4 @@
-ID インフラストラクチャに関する追加の推奨事項については、[前提条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)も参照してください。
+ID インフラストラクチャに関する追加の推奨事項については、[前提条件](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites)も参照してください。
 
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必須: 全体管理者アカウントが保護されている 
@@ -14,7 +14,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 全体管理者アカウントを保護していることを確認するには、次の手順を使用します。
 
 1. PowerShell コマンドプロンプトで、次の Azure Active Directory PowerShell for Graph コマンドを実行します。 専用のグローバル管理者アカウントのリストのみが表示されます。
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. 手順 1 の各アカウントを使用して、Office 365 にサインインします。 それぞれのサインインでは、Azure 多要素認証および組織で使用できる最も強力な2 次認証が必要です。
@@ -93,7 +93,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 5.  テスト ユーザー アカウントを削除します。
 
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>省略可能: 資格情報を侵害から保護するために Azure AD Identity Protection が有効化されている (Microsoft 365 Enterprise E5 のみ)
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>省略可能: 資格情報が侵害されないよう保護するための Azure AD Identity Protection の有効化 (Microsoft 365 E5 のみ)
 
 次の目的で Azure AD Identity Protection を有効にしています。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の ID ベースのサービスとインフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: 94343400482083b2e793ff218816f06cb982187e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 540d3c01ea368634cebafb2ec3dd5562fcb0b73c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627393"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801752"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>フェーズ 2: ID インフラストラクチャの終了条件
 
@@ -26,7 +26,7 @@ ms.locfileid: "38627393"
 
 ID インフラストラクチャが次の必須基準を満たすとともに、オプションの基準も考慮済みであることをご確認ください。
 
-ID インフラストラクチャに関する追加の推奨事項については、[前提条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)も参照してください。
+ID インフラストラクチャに関する追加の推奨事項については、[前提条件](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites)も参照してください。
 
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>必須: 全体管理者アカウントが保護されている 
@@ -121,7 +121,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 5.  テスト ユーザー アカウントを削除します。
 
 <a name="crit-identity-ident-prot"></a>
-## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>省略可能: 資格情報を侵害から保護するために Azure AD Identity Protection が有効化されている (Microsoft 365 Enterprise E5 のみ)
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>省略可能: 資格情報が侵害されないよう保護するための Azure AD Identity Protection の有効化 (Microsoft 365 E5 のみ)
 
 次の目的で Azure AD Identity Protection を有効にしています。
 

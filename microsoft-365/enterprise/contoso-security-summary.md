@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: fb5e99f775c8e23b8ea522ca15b115a5c5d3aedf
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: fd3f73919a113389e9d423dbed11cf0074fb5833
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831888"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802062"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
 
@@ -54,7 +54,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - MFA および PIM を設定した全体管理者専用アカウント
 
-  Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成し、それらをAzure 多要素認証 (MFA) と Azure Active Directory (Azure AD) Privileged Identity Management (PIM) で保護しました。 PIM は、Microsoft 365 Enterprise E5 でのみ利用可能です。
+  Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成し、それらをAzure 多要素認証 (MFA) と Azure Active Directory (Azure AD) Privileged Identity Management (PIM) で保護しました。 PIM は、Microsoft 365 E5 でのみ使用可能です。
 
   全体管理者アカウントでサインインするのは特定の管理タスクを実行するときのみで、パスワードは指定されたスタッフにのみ知らされています。パスワードは Azure AD PIM で設定された時間内にのみ使用できます。 
 
@@ -117,7 +117,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Microsoft Cloud App Security を使用したクラウドの監視
 
-  Contoso 社では [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して、自社のクラウド環境のマップ、使用状況を監視、セキュリティ イベントとインシデントの検出を行っています。 Microsoft Cloud App Security は、Microsoft 365 Enterprise E5 でのみ利用可能です。
+  Contoso 社では [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して、自社のクラウド環境のマップ、使用状況を監視、セキュリティ イベントとインシデントの検出を行っています。 Microsoft Cloud App Security は、Microsoft 365 E5 でのみ使用可能です。
 
 - Microsoft Intune を使用したデバイス管理
 

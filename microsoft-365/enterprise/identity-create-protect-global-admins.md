@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: グローバル管理者アカウントには、資格情報の侵害から保護できるように特別な対処が必要です。
-ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627083"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801832"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>手順 1: グローバル管理者アカウントを作成して保護する
 
@@ -72,7 +72,7 @@ ms.locfileid: "38627083"
 
 管理者アカウントは永続的な管理者ではなく、対象管理者となります。 管理者ロールは、誰かが必要とするまで非アクティブとなります。 ライセンス認証プロセスを実行すると、特定の期間、管理者ロールが管理者アカウントに追加されます。 期限を過ぎると、PIM によって管理者アカウントから管理者ロールが削除されます。
 
-PIM は、Microsoft 365 Enterprise E5 に含まれている Azure Active Directory Premium P2 で使用できます。 または、管理者アカウントの Azure Active Directory Premium P2 ライセンスを個別に購入できます。
+PIM は、Microsoft 365 E5 に含まれている Azure Active Directory Premium P2 で使用できます。 または、管理者アカウントの Azure Active Directory Premium P2 ライセンスを個別に購入できます。
 
 Azure AD テナントと管理者アカウントに対して Azure PIM を有効にする場合は、[PIM の構成手順](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)を参照してください。
 

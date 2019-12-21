@@ -71,19 +71,19 @@ Windows Autopilot を使用しない場合、Azure AD への接続を含む、�
 <a name="crit-windows10-step5a"></a>
 ### <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>必須: Windows Defender ウイルス対策または独自のマルウェア対策ソリューションを使用している
 
-Windows 10 Enterprise を実行しているデバイスを悪意のあるソフトウェアから保護するために、Windows Defender ウイルス対策または独自のウイルス対策ソリューションを展開しました。Windows Defender ウイルス対策を展開した場合は、System Center Configuration Manager または Microsoft Intune などのレポートの方法を実装して、ウイルス対策のイベントとアクティビティを監視します。
+Windows 10 Enterprise を実行しているデバイスを悪意のあるソフトウェアから保護するために、Windows Defender ウイルス対策または独自のウイルス対策ソリューションを展開しました。Windows Defender ウイルス対策を展開した場合は、Microsoft Endpoint Configuration Manager または Microsoft Intune などのレポートの方法を実装して、ウイルス対策のイベントとアクティビティを監視します。
 
 必要に応じて、[手順 5](../windows10-enable-security-features.md#windows10-sec-av) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-windows10-step5b"></a>
 ### <a name="required-you-are-using-windows-defender-exploit-guard"></a>必須: Windows Defender Exploit Guard を使用している
 
-Windows 10 Enterprise を実行しているデバイスを侵入から保護するために、Windows Defender Exploit Guard を展開し、System Center Configuration Manager または Microsoft Intune などのレポートの方法を実装しました。
+Windows 10 Enterprise を実行しているデバイスを侵入から保護するために、Windows Defender Exploit Guard を展開し、Configuration Manager または Microsoft Intune などのレポートの方法を実装しました。
 
 必要に応じて、[手順 5](../windows10-enable-security-features.md#windows10-sec-eg) がこの必須条件を満たす上で役立ちます。
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必須: Microsoft Defender Advanced Threat Protection を使用している (Microsoft 365 Enterprise E5 のみ)
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-e5-only"></a>必須: Microsoft Defender Advanced Threat Protection を使用している (Microsoft 365 E5 のみ)
 
 ネットワークと Windows 10 Enterprise を実行しているデバイスに対する高度な脅威を検出し、調査し、対応するために Microsoft Defender Advanced Threat Protection (ATP) を展開しました。 
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザーの Windows デバイスへのサインインと、Microsoft 365 へのサインインのセキュリティ強化を行うことができます。
-ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370194"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801732"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>手順 3: ユーザーのサインインをセキュリティで保護して管理する
 
@@ -28,7 +28,7 @@ ms.locfileid: "37370194"
 <a name="identity-windows-hello"></a>
 ## <a name="use-windows-hello-for-business"></a>Windows Hello for Business を使用する
 
-*この手順は省略可能であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順はオプションであり、Microsoft 365 のバージョン E3 および E5 の両方に適用されます。*
 
 Windows 10 Enterprise の Windows Hello for Business では、Windows デバイスにサインオンするときのパスワードを強力な 2 要素認証に置き換えます。 この 2 要素認証は、デバイスと生体認証または PIN に関連付けられる新しい種類のユーザー資格情報です。
 
@@ -38,7 +38,7 @@ Windows 10 Enterprise の Windows Hello for Business では、Windows デバイ�
 <a name="identity-mfa"></a>
 ## <a name="set-up-azure-multi-factor-authentication"></a>Azure Multi-Factor Authentication の設定
 
-*この手順は省略可能であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順はオプションであり、Microsoft 365 のバージョン E3 および E5 の両方に適用されます。*
 
 この手順では、ユーザーのサインインとトランザクションに Azure Multi-Factor Authenticatio (MFA) を設定して、セキュリティの第 2 の層を追加します。 MFA により、ユーザーがパスワードを正しく入力した後に、追加の認証方法が求められます。 MFA を使わない場合、パスワードが唯一の認証方法になります。 パスワードの問題点は、多くのパスワードが攻撃者が簡単に推測できるものであること、また知らない間に信頼できない人物に共有されてしまうことがあるという点です。
 

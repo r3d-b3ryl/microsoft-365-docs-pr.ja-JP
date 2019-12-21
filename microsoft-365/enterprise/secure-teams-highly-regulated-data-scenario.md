@@ -3,7 +3,7 @@ title: 厳しく規制されたデータに Teams で対応する
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 最重要ファイルおよび機密ファイルを保存するためのセキュリティで保護されたチームを作成します。
-ms.openlocfilehash: fe397dbd091415b15bbc48d54bfa59c432437788
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631267"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801422"
 ---
 # <a name="teams-for-highly-regulated-data"></a>厳しく規制されたデータに Teams で対応する
 
@@ -38,29 +38,21 @@ ms.locfileid: "39631267"
   - サイトのメンバーではないユーザーがサイトへのアクセス権を要求することの防止。
 - アイテム保持ポリシーを定義する既定の方法として、サイト上の新しいファイルに自動的に適用される、基となっている SharePoint サイトの Office 365 保持ラベル。
 - ユーザーがファイルを組織外と共有または組織外へ送信することを保持ラベルを使用してブロックする、データ損失防止 (DLP) ポリシー。
-- 暗号化が有効になっている、規制の厳しいラベルの Office 365 秘密度ラベルまたはサブラベルおよびチームの Office 365 グループに対する共同作成者アクセス許可。 ユーザーは Word、Excel、PowerPoint の [秘密度] メニュー バーのオプションから、チームの [**ファイル**] セクションに保存されているファイルにラベルまたはサブラベルを適用します。
+- 暗号化が有効になっている、規制の厳しいラベルの Office 365 秘密度ラベルまたはサブラベルおよびチームの Office 365 グループに対する共同作成者アクセス許可。 ユーザーはチームの [**ファイル**] セクションに保存されているファイルにラベルまたはサブラベルを Word、Excel、PowerPoint の [**秘密度**] メニュー バーのオプションから適用します。
 
 この結果、秘密度ラベルが適用された構成は次のようになります。
 
 ![セキュリティで保護されたチーム シナリオの構成](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+
+概要については、この短いビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> このシナリオを 1 ページにまとめた概要については、「[厳しく規制されたデータ用の Teams のポスター](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)」を参照してください。
 
 [![厳しく規制されたデータ用の Teams のポスター](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
-
-
-<!--
-
-[Quick-Learn test (vertical): PDF](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pdf)
-
-[Quick-Learn test: PowerPoint](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pptx)
-
-[Horizontal PDF (Quick Start)](./media/secure-teams-highly-regulated-data-scenario/Sideways.pdf)
-
---> 
-
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>フェーズ 1: 厳しく規制されたデータ用のチームを構成する
 

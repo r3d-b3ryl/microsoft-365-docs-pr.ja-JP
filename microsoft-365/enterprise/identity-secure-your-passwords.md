@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体でパスワードを強力かつ管理しやすいものにする必要があります。
-ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746513"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801742"
 ---
 # <a name="step-2-secure-your-passwords"></a>手順 2: パスワードをセキュリティで保護する
 
@@ -27,7 +27,7 @@ ms.locfileid: "37746513"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>脆弱なパスワードを防止する
 
-*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順はオプションであり、Microsoft 365 のバージョン E3 および E5 の両方に適用されます。*
 
 すべてのユーザーが [Microsoft のパスワードのガイダンス](https://www.microsoft.com/research/publication/password-guidance/)を使用してユーザー アカウントのパスワードを作成する必要があります。
 
@@ -46,7 +46,7 @@ ms.locfileid: "37746513"
 <a name="identity-pw-reset"></a>
 ## <a name="simplify-password-resets"></a>パスワード再設定を簡素化する
 
-*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順はオプションであり、Microsoft 365 のバージョン E3 および E5 の両方に適用されます。*
 
 このセクションでは、セルフサービスによるパスワードのリセット (SSPR) を有効にして、ユーザーが自分のパスワードやアカウントの再設定やロック解除を行えるようにします。 誤用または悪用について警告するため、通知と共に、ユーザーがいつシステムにアクセスしたかを追跡する詳細なレポート作成機能を使用できます。 パスワード再設定をデプロイする前にパスワードの書き戻しを有効にする必要があります。
 

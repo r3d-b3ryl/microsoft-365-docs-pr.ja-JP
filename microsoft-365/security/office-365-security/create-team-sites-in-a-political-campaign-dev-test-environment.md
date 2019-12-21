@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: '概要: 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
-ms.openlocfilehash: bade24bbe0ebcf56007a7b5650ee5a55fc3697b6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: db248081460c30dbc1fb10b7e0ea2d55dbb8d3ab
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086741"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808592"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>選挙運動用の開発/テスト環境でチーム サイトを作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "37086741"
 
 このフェーズでは、SharePoint Online チーム サイトのドキュメント フォルダーに対してさまざまなセキュリティ レベルのラベルを作成します。
   
-1. 必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
@@ -368,13 +368,11 @@ ms.locfileid: "37086741"
   
 次に、以下の手順に従い、保護とアクセス許可用の新しいスコープ付きポリシーとサブラベルを使用して、Azure Information Protection を構成します。
   
-1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. ブラウザーで別のタブを開き、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。
     
-3. 初めて Azure Information Protection を構成する場合は、これらの[手順](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)を参照してください。
-    
-4. リスト ウィンドウで、**[すべてのサービス]** をクリックして、「**information**」と入力し、**[Azure Information Protection]** をクリックします。
+4. 検索ウィンドウで「**information**」と入力し、[**Azure Information Protection**] をクリックします。
 
 5. **[ラベル]** をクリックします。
     
