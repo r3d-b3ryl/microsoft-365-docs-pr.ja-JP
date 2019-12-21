@@ -3,7 +3,7 @@ title: Contoso Corporation の非常に機密性の高いデジタル資産向�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: 研究チーム間の共同作業を容易にするために、Contoso 社が非常に規制されたデータに対して SharePoint サイトを実装した方法を示します。'
-ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: caad341c6a44b3270f2bdecd4ab4d8378c11db2c
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672713"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699719"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation の非常に機密性の高いデジタル資産向けの SharePoint サイト
 
@@ -55,7 +55,7 @@ SharePoint サイトへのアクセスを保護するために、Contoso 社は�
 
 構成の詳細については、「 [SharePoint ファイルを保持ラベルおよび DLP で保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)する」を参照してください。
 
-## <a name="step-4-created-an-office-365-sensitivity-sublabel-for-the-site"></a>手順 4: サイト用の Office 365 機密 sublabel を作成する
+## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>手順 3: サイト用の Office 365 機密 sublabel を作成する
 
 Contoso 管理者は、次のような**高機密**ラベルの**研究チーム**という名前の新しい Office 365 機密 sublabel を作成しました。
 
@@ -78,11 +78,11 @@ Contoso 管理者は、次のような**高機密**ラベルの**研究チーム
 ![非常に機密性の高い資産を検索するための研究チームサイトの構成結果。](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
-## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>手順 5: オンプレミスの SharePoint リサーチデータを移行する
+## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>手順 4: オンプレミスの SharePoint リサーチデータを移行する
 
 Contoso admins は、オンプレミスの SharePoint Server 2016 サイト内のすべてのオンプレミスの研究ファイルを新しい**research** sharepoint サイト内のフォルダーに移動しました。
 
-## <a name="step-6-trained-their-researchers"></a>手順 6: 自分の研究者をトレーニングする
+## <a name="step-5-trained-their-researchers"></a>手順 5: 自分の研究者をトレーニングする
 
 Contoso のセキュリティスタッフは、 **Research** Office 365 グループのメンバーに、次の手順に従ってステップインした必須コースをトレーニングしています。
 
