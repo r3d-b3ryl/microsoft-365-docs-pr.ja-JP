@@ -1,9 +1,9 @@
 ---
-title: 非エンタープライズ向け Microsoft 365 Enterprise の基礎インフラストラクチャ
+title: 非エンタープライズ組織のためのエンタープライズ向け Microsoft 365 の基礎インフラストラクチャ
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,27 +12,27 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: エンタープライズ以外の組織を対象として、Microsoft 365 Enterprise の基礎インフラストラクチャの単純化されたフェーズを順番に説明します。
-ms.openlocfilehash: 4006980de5341c53d9c6a2d827613015c000fab0
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+description: 非エンタープライズ組織向けの、エンタープライズ向け Microsoft 365 基礎インフラストラクチャの簡略化されたフェーズを説明します。
+ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369578"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802032"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ向け Microsoft 365 Enterprise の基礎インフラストラクチャ
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ組織のためのエンタープライズ向け Microsoft 365 の基礎インフラストラクチャ
 
-エンタープライズ以外の組織でも、Microsoft 365 Enterprise を展開することで、チームワークを可能にして創造性を解き放つ、統合された安全なインフラストラクチャがもたらすビジネス価値を実現することができます。 通常、エンタープライズ以外の組織では以下が一般的です。
+エンタープライズ以外の組織でも、エンタープライズ向け Microsoft 365 を展開することで、チームワークを可能にして創造性を解き放つ、統合された安全なインフラストラクチャがもたらすビジネス価値を実現することができます。 通常、エンタープライズ以外の組織では以下が一般的です。
 
 - メール サーバー、ファイル サーバー、Active Directory Domain Services (AD DS) ドメインなど、小規模のオンプレミスの IT インフラストラクチャを装備している。または IT インフラストラクチャがまったく装備されていない。
 - IT スタッフは少人数であり、そのほとんどが IT ゼネラリストであって、ネットワークや電子メールなどの特定のテクノロジやワークロードのスペシャリストではない。
 
-小規模な非エンタープライズ組織向けに、Microsoft は [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) を提供しています。 しかし、次のような理由で Microsoft 365 Enterprise が必要になる場合があります。
+小規模な非エンタープライズ組織向けに、Microsoft は [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) を提供しています。 しかし、次のような理由で エンタープライズ向け Microsoft 365 が必要になる場合があります。
 
 - 組織が現時点で、または将来的に、Microsoft 365 Business ライセンスの最大数である 300 を超える Microsoft 365 ライセンスを必要としている。
 - 組織が、Microsoft 365 Business では利用できない高度な生産性、音声、セキュリティ、分析機能を必要としている。
 
-この記事では、非エンタープライズに適した Microsoft 365 Enterprise の基礎インフラストラクチャの簡単な展開について説明します。
+この記事では、非エンタープライズ組織に適した、エンタープライズ向け Microsoft 365 の基礎インフラストラクチャの簡略化された展開手順について説明します。
 
 ## <a name="first-set-up-your-subscription"></a>最初の手順: サブスクリプションのセットアップ
 
@@ -59,17 +59,17 @@ ms.locfileid: "37369578"
 
 ## <a name="phase-2-identity"></a>フェーズ 2: ID
 
-組織の各従業員がサインインできる必要があります。そのためには、Microsoft 365 Enterprise サブスクリプションの Azure Active Directory (Azure AD) テナントのユーザー アカウントが必要です。 次にグループが、SharePoint Online サイトやチームなどのアクセス許可が付与されたリソースと通信したり、それらにアクセスしたりするために、ユーザー アカウントやその他のグループをまとめるために使用されます。 
+組織の各従業員がサインインできる状態である必要があります。そのためには、エンタープライズ向け Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントにユーザー アカウントがある必要があります。 次にグループが、SharePoint Online サイトやチームなどのアクセス許可が付与されたリソースと通信したり、それらにアクセスしたりするために、ユーザー アカウントやその他のグループをまとめるために使用されます。 
 
 ### <a name="administrator-accounts"></a>管理者アカウント
 
 強力なパスワードや多要素認証 (MFA) を要求することで、グローバル管理者ユーザー アカウントを保護します。 詳細については、「[グローバル管理者アカウントを保護する](identity-create-protect-global-admins.md#protect-global-administrator-accounts)」を参照してください。
 
-組織が高度なセキュリティを必要としていて、Microsoft 365 Enterprise E5 を使用している場合は、Azure AD Privileged Identity Management を使用して、ジャストインタイムの管理者アクセスを有効にします。 詳細については、「[オンデマンド グローバル管理者をセットアップする](identity-create-protect-global-admins.md#identity-pim)」を参照してください。
+高度なセキュリティが要求される組織で Microsoft 365 E5 を使用している場合、Azure AD Privileged Identity Management を使用して、ジャストインタイムの管理者アクセスを有効にします。 詳細については、「[オンデマンド グローバル管理者をセットアップする](identity-create-protect-global-admins.md#identity-pim)」を参照してください。
 
 ### <a name="recommendations-for-groups"></a>グループに関する推奨事項
 
-オンプレミスの AD DS ドメインがある場合は、Microsoft 365 Enterprise のグループを Azure AD のグループとして引き続き使用します。
+オンプレミス AD DS ドメインがある場合、これらのグループは、Azure AD のグループとして引き続きエンタープライズ向け Microsoft 365 で使用します。
 
 オンプレミスの AD DS ドメインがない場合は、以下のレベルのセキュリティを使用して、Azure AD でセキュリティ グループを作成します。
 
@@ -82,7 +82,7 @@ ms.locfileid: "37369578"
 
 ### <a name="hybrid-identity"></a>ハイブリッド ID
 
-オンプレミスの AD DS ドメインがある場合は、ドメインのユーザー アカウント、グループ、連絡先一式を Microsoft 365 Enterprise サブスクリプションの Azure AD テナントと同期する必要があります。 エンタープライズ以外の場合は、パスワード ハッシュ同期 (PHS) を使用してサーバー上に Azure AD Connect を構成します。 詳細については、「[ID を同期する](identity-add-user-accounts.md#synchronize-identities-for-hybrid-identity)」を参照してください。
+オンプレミスの AD DS ドメインがある場合は、ドメインのユーザー アカウント、グループ、連絡先一式をエンタープライズ向け Microsoft 365 サブスクリプションの Azure AD テナントと同期する必要があります。 エンタープライズ以外の場合は、パスワード ハッシュ同期 (PHS) を使用してサーバー上に Azure AD Connect を構成します。 詳細については、「[ID を同期する](identity-add-user-accounts.md#synchronize-identities-for-hybrid-identity)」を参照してください。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>条件付きアクセスポリシーを使用したユーザー アクセスのセキュリティ強化
 
@@ -112,15 +112,15 @@ Azure AD では、ユーザーのサインインの条件が評価されます�
 |:------|:-----|
 | ベースライン ポリシー: 管理者に MFA を要求する | このポリシーは管理者の役割に適用されるため、グループを指定する必要はありません。 このポリシーは有効にするだけで済みます。 以降のすべてのポリシーは、作成して有効にする必要があります。 |
 | 先進認証をサポートしないクライアントはブロックする | ポリシー設定で [すべてのユーザー] を選択します。 |
-| サインインのリスクが中または高のときに MFA が必要 (Microsoft 365 Enterprise E5 が必要) | ベースライン |
-| サインインのリスクが低、中、または高のときに MFA が必要 (Microsoft 365 Enterprise E5 が必要) | 機密 |
+| サインインのリスクが中または高のときに MFA が必要 (Microsoft 365 E5 が必要) | ベースライン |
+| サインインのリスクが低、中、または高のときに MFA が必要 (Microsoft 365 E5 が必要) | 機密 |
 | 常に MFA が必要 | 厳しく規制 |
 | iOS と Android のデバイスで承認済みアプリが必要 | ベースライン、機密、厳しく規制 |
 | 準拠 PC が必要 | ベースライン |
 | 準拠している PC、および iOS と Android のデバイスが必要 | 機密、厳しく規制 |
 |||
 
-以下は、作成して有効にする Azure AD Identity Protection (Microsoft 365 Enterprise E5 が必要) ユーザーのリスク ポリシーです。
+以下は、作成して有効にする必要がある Azure AD Identity Protection (Microsoft 365 E5 が必要です) のユーザー リスク ポリシーです。
 
 | Azure AD Identity Protection ユーザーのリスク ポリシー | 適用対象のグループ |
 |:------|:-----|
@@ -140,11 +140,11 @@ Azure AD では、ユーザーのサインインの条件が評価されます�
 | グループベースのライセンス | グループ メンバーシップを使用して、ユーザー アカウントに対して自動的にライセンスの割り当てまたは割り当て解除を行います。 詳細については、「[グループベースのライセンス](identity-use-group-management.md#set-up-automatic-licensing)」を参照してください。 |
 |  |  |
 
-グループベースのライセンスを使用している場合は、LICENSED という名前のグループを作成して、Microsoft 365 Enterprise ライセンスが割り当てられているユーザー アカウント名を含めます。
+グループベースのライセンスを使用している場合は、LICENSED という名前のグループを作成して、エンタープライズ向け Microsoft 365 ライセンスが割り当てられているユーザー アカウント名を含めます。
 
 ### <a name="monitor-user-access"></a>ユーザー アクセスの監視
 
-Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity Protection を使用して、資格情報の侵害についてユーザーのサインインを監視および分析できます。 詳細については、「[資格情報が侵害されないように保護する](identity-secure-user-sign-ins.md#protect-against-credential-compromise)」を参照してください。
+Microsoft 365 E5 を利用している場合は、Azure AD Identity Protection を使用して、資格情報の侵害についてユーザーのサインインを監視および分析できます。 詳細については、「[資格情報が侵害されないように保護する](identity-secure-user-sign-ins.md#protect-against-credential-compromise)」を参照してください。
 
 ### <a name="your-configuration-so-far"></a>これまでの構成
 
@@ -178,7 +178,7 @@ Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity P
 
 ## <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
-お使いの Windows 10 Enterprise デバイスを Microsoft 365 Enterprise の ID とセキュリティ インフラストラクチャに確実に統合するには、次のオプションを使用できます。
+お使いの Windows 10 Enterprise デバイスをエンタープライズ向け Microsoft 365 の ID とセキュリティのインフラストラクチャに確実に統合する方法として、以下のオプションがあります。
 
 - ハイブリッド (オンプレミスの AD DS ドメインがある場合)
 
@@ -213,7 +213,7 @@ Microsoft 365 Enterprise E5 を利用している場合は、Azure AD Identity P
 
 ## <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
-Microsoft 365 Enterprise には、Microsoft Office のサブスクリプション版である Office 365 ProPlus が含まれています。 Office 2016 または Office 2019 と同様に、Office 365 ProPlus はクライアント デバイスに直接インストールされます。 ただし、Office 365 ProPlus には、新機能を含む更新プログラムが定期的に提供されます。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
+エンタープライズ向け Microsoft 365 には、Microsoft Office のサブスクリプション版である Office 365 ProPlus が含まれています。 Office 2016 または Office 2019 と同様に、Office 365 ProPlus はクライアント デバイスに直接インストールされます。 ただし、Office 365 ProPlus には、新機能を含む更新プログラムが定期的に提供されます。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
 
 エンタープライズ以外の組織の場合は、Office 365 ProPlus を Windows、iOS、Android デバイスを含むデバイスに手動でインストールします。 これは、新しいデバイスを使用する準備の一環として実行することも、ユーザーがオンボード プロセスの一環として実行することもできます。
 
@@ -237,7 +237,7 @@ Office 365 ProPlus に対する機能更新プログラムは、インストー�
 
 ## <a name="phase-5-mobile-device-management"></a>フェーズ 5: モバイル デバイス管理
 
-Microsoft 365 Enterprise には、モバイル デバイス管理用の Microsoft Intune が含まれています。 Intune を使用すると、Windows、iOS、Android、macOS の各デバイスを管理して、自分のデータを含む、組織のリソースへのアクセスを保護することができます。 Intune では、Azure AD のユーザー、グループ、コンピューター アカウントを使用します。
+エンタープライズ向け Microsoft 365 には、モバイル デバイス管理用の Microsoft Intune が含まれています。 Intune を使用すると、Windows、iOS、Android、macOS の各デバイスを管理して、自分のデータを含む、組織のリソースへのアクセスを保護することができます。 Intune では、Azure AD のユーザー、グループ、コンピューター アカウントを使用します。
 
 Intune には、次の 2 種類のモバイル デバイス管理が用意されています。
 
@@ -276,7 +276,7 @@ Intune ポリシーでは、デバイス コンプライアンスとアプリ保
 
 ## <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
 
-Microsoft 365 Enterprise には情報保護機能が用意されており、さまざまなレベルのガバナンス、セキュリティ、保護を適用することによって、データの分類を異なる方法で処理することが可能です。 
+エンタープライズ向け Microsoft 365 には情報保護機能が備わっており、異なるレベルのガバナンス、セキュリティ、保護を適用することによって、データの分類を異なる方法で処理することが可能です。 
 
 たとえば、ほとんどの従業員とその従業員が作業しているドキュメント間における通常の通信には、一定のベースライン レベルの保護が必要です。 財務レコード、顧客データ、知的財産には、より高いレベルの保護が必要です。
 
@@ -310,14 +310,14 @@ Microsoft 365 Enterprise には情報保護機能が用意されており、さ�
 
 詳細については、「[Microsoft 365 の分類の種類](infoprotect-configure-classification.md#microsoft-365-classification-types)」を参照してください。
 
-アクセス許可の機密度ラベルを使用する場合は、追加の Azure AD セキュリティ グループを作成して、機密度ラベルが適用された電子メールとドキュメントに対してどのような操作を誰に許可するのかを定義する必要があります。 
+アクセス許可の機密度ラベルを使用する場合は、追加の Office 365 セキュリティ グループを作成して、機密度ラベルが適用されている電子メールとドキュメントに対してどのような操作を誰に許可するのかを定義する必要があります。 
 
 たとえば、リサーチ チームの電子メールとドキュメントを保護するには、「リサーチ」という機密度ラベルを作成する必要があります。 以下を決定する必要があります。
 
 - リサーチを行う従業員は、機密度ラベル "リサーチ" が付けられたドキュメントを変更できなければならない。
 - リサーチを行わない従業員に必要なのは、機密度ラベル "リサーチ" が付けられたドキュメントを表示する機能のみ。 
 
-つまり、次の 2 つのグループを追加で作成して管理する必要があります。
+つまり、次の 2 つの Office 365 グループを追加で作成して管理する必要があります。
 
 - リサーチ-すべて
 - リサーチ-表示
@@ -343,7 +343,7 @@ Microsoft 365 Enterprise には情報保護機能が用意されており、さ�
 
 ## <a name="onboarding"></a>オンボード
 
-Microsoft 365 Enterprise のインフラストラクチャがあれば、組織の従業員を簡単にオンボードすることができます。
+エンタープライズ向け Microsoft 365 のインフラストラクチャがあれば、組織の従業員を簡単にオンボードすることができます。
 
 ### <a name="a-new-windows-10-enterprise-device"></a>新しい Windows 10 Enterprise デバイス
 
@@ -369,7 +369,7 @@ Microsoft 365 Enterprise のインフラストラクチャがあれば、組織�
 
 Microsoft 365 管理センターで、複数の Azure AD グループにユーザー アカウントを追加できます。 ユーザー アカウントのプロパティで、**[グループの管理] > [メンバーシップの追加]** の順にクリックします。
 
-Powershell を使用する場合は、この[ダウンロード可能な Excel ブック](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)を参照してください。指定したユーザー アカウントと選択したグループ名に基づいて PowerShell コマンドが生成されます。
+Powershell を使用する場合は、この[ダウンロード可能な Excel ブック](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)を参照してください。指定したユーザー アカウントと選択したグループ名に基づいて PowerShell コマンドが生成されます。
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>クラウド専用ユーザー アカウントを持っている新入社員
 
@@ -390,11 +390,11 @@ Powershell を使用する場合は、この[ダウンロード可能な Excel �
 
 ## <a name="end-results"></a>最終的な結果
 
-エンタープライズ以外の組織向けに Microsoft 365 Enterprise の基礎インフラストラクチャを構成すると、次のようになります。
+エンタープライズ向け Microsoft 365 の基礎インフラストラクチャを非エンタープライズ組織向けに構成すると、次のようになります。
 
 ### <a name="infrastructure-results"></a>インフラストラクチャの結果
 
-Microsoft 365 Enterprise インフラストラクチャの構築および構成を行うと、以下が装備されます。
+エンタープライズ向け Microsoft 365 インフラストラクチャの構築および構成が完了すると、以下が装備されます。
 
 - 地域のローカル DNS サーバーを使用している ISP によって提供される十分な帯域幅を備えた、各オフィス用のローカル インターネット接続。
 - ハイブリッド ID の場合は、オンプレミス AD DS ドメインと Azure AD テナントを同期するサーバーで実行される Azure AD Connect。
@@ -403,7 +403,7 @@ Microsoft 365 Enterprise インフラストラクチャの構築および構成�
   - 条件付きアクセスの除外
   - ベースライン、機密、厳しく規制の各 Azure AD グループのメンバーでもある、適切な AD DS または Azure AD セキュリティ グループ 
   - ワークグループ、部署、地域の各グループ
-  - 機密度ラベル グループ (必要な場合)
+  - 機密度ラベル Office 365 グループ (必要な場合)
 - ベースライン、機密、厳しく規制、条件付きアクセスの除外の各 Azure AD グループを使用する Azure AD サインイン条件付きアクセス ポリシー。
 - Intune アプリケーションとデバイスのコンプライアンス ポリシー。
 - カスタムの機密情報の種類 (必要な場合)。
@@ -427,7 +427,7 @@ Microsoft 365 Enterprise インフラストラクチャの構築および構成�
    - ライセンス付与済み
    - 条件付きアクセス ポリシー用のベースライン、機密、厳しく規制の各 Azure AD グループのメンバーでもある、適切な AD DS または Azure AD セキュリティ グループ 
    - 適切なワークグループ、部署、地域の各グループ
-   - 機密度ラベル グループ (必要な場合)
+   - 機密度ラベル Office 365 グループ (必要な場合)
 - Windows 10 Enterprise デバイスは、以下のようになります。
    - Azure AD テナント (クラウド専用) に参加している、または Azure AD テナントと AD DS ドメイン (ハイブリッド) の両方に参加している。
    - Windows 10 Enterprise の最新の製品の品質向上とセキュリティ強化と共に自動的に更新される。
@@ -436,4 +436,4 @@ Microsoft 365 Enterprise インフラストラクチャの構築および構成�
 
 ## <a name="next-step"></a>次の手順
 
-[ワークロードとシナリオ](deploy-workloads.md)を展開して、Microsoft 365 Enterprise の基礎インフラストラクチャの機能と構成を活用します。
+[ワークロードとシナリオ](deploy-workloads.md)を展開して、エンタープライズ向け Microsoft 365 の基礎インフラストラクチャの機能と構成を活用します。
