@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise のワークロードとシナリオ
+title: Microsoft 365 Enterprise のワークロードおよびシナリオ
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/21/2019
@@ -11,25 +11,25 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 組織のユーザーを Microsoft 365 Enterprise の生産性ワークロードへ参加させます。
-ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
-ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
+description: 組織のユーザーを Microsoft 365 Enterprise の生産性向上ワークロードに参加させます。
+ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37608598"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801902"
 ---
-# <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードとシナリオ
+# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードおよびシナリオ
 
-Microsoft 365 Enterprise の創造性とチームワークのメリットを得るため、次のワークロードを基礎インフラストラクチャに展開します。
+Microsoft 365 Enterprise の創造性およびチームワークに関するメリットを得るには、これらのワークロードを基盤インフラストラクチャに展開します。
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
 - [SharePoint および OneDrive](sharepoint-online-onedrive-workload.md)
 
-組織全体を Microsoft 365 Enterprise に移行するための一般的なロードマップについては、[移行](migration-microsoft-365-enterprise-workload.md)に関する記事を参照してください。それには、Microsoft Office クライアント製品、オンプレミス Office サーバー製品、および Microsoft Windows ベースのデバイスが含まれています。
+組織全体を Microsoft 365 Enterprise に移行するための一般的なロードマップについては、[移行](migration-microsoft-365-enterprise-workload.md)に関する記事を参照してください。それには Microsoft Office クライアント製品、オンプレミス Office サーバー製品、および Microsoft Windows ベースのデバイスが含まれます。
 
-シナリオは Microsoft 365 Enterprise 全体から機能およびサービスを統合された方法で使用し、ビジネスニーズに対応します。 
+シナリオは Microsoft 365 Enterprise の機能およびサービスを統合的に使用し、ビジネス ニーズに対応します。 
 
 こうした必要性の 1 つは、従業員がイントラネットに直接接続していない場合に、従業員が生産的かつ安全に作業できることを保証することです。 インフラストラクチャ要素を展開して、Teams や Exchange Online などの主要なワークロードの導入をリモート ユーザーに促すためのロードマップについては、「[リモート ワーカーの強化](empower-people-to-work-remotely.md)」のシナリオを参照してください。
 
@@ -45,9 +45,9 @@ Microsoft 365 Enterprise の創造性とチームワークのメリットを得�
 
 これらのシナリオでは、段階を追って Microsoft Teams チームまたは SharePoint サイトを構成して、最も重要なデータを安全に保管します。
 
-Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオを次に示します。
+全体的な Microsoft 365 Enterprise 展開ガイドのワークロードおよびシナリオは次のとおりです。
 
-![Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリオ](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![全体的な Microsoft 365 Enterprise 展開ガイドのワークロードおよびシナリオ](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)」を参照してください。 
 
@@ -64,7 +64,7 @@ Microsoft 365 Enterprise 展開ガイド全体のワークロードとシナリ�
 | モバイル デバイス管理 | デバイスを登録し、管理することができます。 |
 | 情報保護 | Office 365 の情報保護機能が構成されると、機密ラベルまたは Azure Information Protection ラベルでドキュメントを保護する準備が整います。 |
 
-これは理想的であり、計画、構成、テスト、およびパイロットのために時間がかかる場合があることに注意してください。特に既存のインフラストラクチャで複数の場所が対象になる大規模な組織が該当します。 あらゆる場所でこうしたフェーズを完了させることは、Microsoft 365 Enterprise からビジネス上の価値をより迅速に得るためには必要ありません。 
+これは理想的であり、計画、構成、テスト、およびパイロットのために時間がかかる場合があることに注意してください。特に既存のインフラストラクチャで複数の場所が対象になる大規模な組織が該当します。 すべての場所でこれらのフェーズを完了させることは、Microsoft 365 Enterprise からビジネス上の価値をより迅速に得るためには必要ありません。 
 
 すぐに展開するための一般的なワークロードを以下に示します。 
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise 展開コンテンツの変更
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の展開ガイドの新しいコンテンツおよびコンテンツの変更を参照してください。
-ms.openlocfilehash: bf7cda762d2ac7a8fd57135b985d893ee03c0646
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831828"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801562"
 ---
-# <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
+# <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -31,14 +31,13 @@ ms.locfileid: "39831828"
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび拡張機能
 
 - 機密度ラベルを使用するための [SharePoint Online のサイトとファイルをセキュリティで保護する](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)
--  新しい試用版サブスクリプションの手順のための[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)および[シミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)
-- 
+-  一連の[テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)の更新 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
 ### <a name="new-content"></a>新しいコンテンツ 
 
-- [Microsoft 365 Business から Microsoft 365 Enterprise E3 への移行](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Microsoft 365 Business から Microsoft 365 E3 への移行](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Contoso 社の極秘プロジェクトのチーム](contoso-team-for-top-secret-project.md)
 
@@ -93,9 +92,9 @@ ms.locfileid: "39831828"
  
   [![厳しく規制されたデータに適した SharePoint サイトのシナリオ](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)
 
-- 新しいシナリオの [Microsoft 365 Enterprise ポスター](microsoft-365-overview.md#get-the-big-picture) 
+- 新しいシナリオ向け [Microsoft 365 Enterprise ポスター](microsoft-365-overview.md#get-the-big-picture) 
 
-  [![Microsoft 365 Enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+  [![Microsoft 365 Enterprise ポスター用の画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="september-2019"></a>2019 年 9 月
 
@@ -118,11 +117,11 @@ ms.locfileid: "39831828"
 
 ### <a name="new-content"></a>新しいコンテンツ 
 
-- [組織を Microsoft 365 Enterprise に移行するポスター](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
+- [組織を Microsoft 365 Enterprise ポスターへと移行する](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
 
    [![Microsoft 365 への移行ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
  
-- [Microsoft 365 Enterprise ポスターの ID インフラストラクチャ](identity-infrastructure.md)
+- [Microsoft 365 Enterprise ポスター用の ID インフラストラクチャ](identity-infrastructure.md)
 
   [![ID インフラストラクチャのポスター](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
 
@@ -138,15 +137,15 @@ ms.locfileid: "39831828"
 
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび拡張機能
 
-- 新しい生産性向上シナリオ用の [Microsoft 365 Enterprise ポスター](microsoft-365-overview.md#get-the-big-picture)
+- 新しい生産性向上シナリオ向け [Microsoft 365 Enterprise ポスター](microsoft-365-overview.md#get-the-big-picture)
 
-   [![Microsoft 365 Enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+   [![Microsoft 365 Enterprise ポスター用の画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="july-2019"></a>2019 年 7 月
 
 ### <a name="new-content"></a>新しいコンテンツ
 
-- [非エンタープライズの条項に適した Microsoft 365 Enterprise](deploy-foundation-infrastructure-non-enterprises.md#onboarding) 用の Excel ブック
+- [非エンタープライズの条項に適した Microsoft 365 Enterprise](deploy-foundation-infrastructure-non-enterprises.md#onboarding) 向け Excel ブック
 
 ## <a name="may-2019"></a>2019 年 5 月
 
@@ -154,7 +153,7 @@ ms.locfileid: "39831828"
 
 - [基盤インフラストラクチャのポスター](deploy-foundation-infrastructure.md#at-a-glance)
 
-  [![Microsoft 365 Enterprise の基盤インフラストラクチャ ポスターの画像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+  [![Microsoft 365 Enterprise 基盤インフラストラクチャ ポスター用の画像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
   お知らせ: [LinkedIn](https://www.linkedin.com/pulse/how-can-i-get-big-picture-microsoft-365-enterprise-joe-davies/)
 

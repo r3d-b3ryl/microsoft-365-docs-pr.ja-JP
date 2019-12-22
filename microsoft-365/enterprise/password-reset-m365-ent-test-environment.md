@@ -3,7 +3,7 @@ title: Microsoft 365 テスト環境のパスワードのリセット
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワードのリセットを構成してテストします。'
-ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 930c5b4a4ddcc4866a586ff444380ff6dcd66238
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757714"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801412"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
 
@@ -33,7 +33,7 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
 
 1.  Microsoft 365 Enterprise のテスト環境を作成します。
 2.  パスワード ライトバックを有効にします。
-3.  User 2 アカウントのパスワードのリセットを構成してテストする。
+3.  User 3 アカウントのパスワードのリセットを構成してテストする。
     
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,6 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 
 - Azure AD Connect が APP1 上で実行され、TESTLAB Active Directory Domain Services (AD DS) ドメインが、Microsoft 365 または Office 365 サブスクリプションの Azure AD テナントに同期されます。
 
-
 ## <a name="phase-2-enable-password-writeback"></a>フェーズ 2: パスワード ライトバックの有効化
 
 [フェーズ 2 のパスワード ライトバックのテスト ラボ ガイド](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)の手順に従います。
@@ -67,25 +66,26 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
 
 1. ブラウザーのプライベート インスタンスから [https://portal.azure.com](https://portal.azure.com) を開き、全体管理者アカウントの資格情報でサインインします。
 2. Azure portal で **[Azure Active Directory] > [グループ] > [新しいグループ]** の順にクリックします。
-3. **[グループの種類]** を **[セキュリティ]**、**[グループ名]** を **[PWReset]**、**[メンバーシップの種類]** を **[割り当て済み]** に設定し、**[作成]** をクリックします。
-5. リストの中から **[PWReset]** グループをクリックし、**[メンバー]** をクリックします。
-6. **[メンバーの追加]** > **[User 2]** > **[選択** の順にクリックします。その後、**[PWReset]** ページおよび **[グループ]** ページを閉じます。
-7. Azure Active Directory のページで、**[パスワードのリセット]** をクリックします。
-8. **[プロパティ]** ページの、**[セルフサービスによるパスワードのリセットの有効化]** オプションで **[選択済み]** を選択します。
-9. **[グループの選択]** から **[PWReset]** をクリックし、**[保存]** をクリックします。
-10. プライベート ブラウザー インスタンスを閉じます。
+3. **[グループの種類]** を **[セキュリティ]**、**[グループ名]** を **[PWReset]**、**[メンバーシップの種類]** を **[割り当て済み]** に設定します。 
+4. **[メンバー]** をクリックし**ユーザー 3** を見つけて選択し、**[選択]** をクリックしてから **[作成]** をクリックします。
+5. **[グループ]** ウィンドウを閉じます。
+6. [Azure Active Directory] ウィンドウで、左側のナビゲーションにある **[パスワードのリセット]** をクリックします。
+7. **[パスワードのリセット - プロパティ]** ページの **[セルフサービスによるパスワードのリセットの有効化]** オプションで **[選択済み]** を選択します。
+8. **[グループの選択]** をクリックして **[PWReset]** グループを選択し、**[選択] > [保存]** の順にクリックします。
+9. プライベート ブラウザー インスタンスを閉じます。
 
-次に、User 2 アカウントのパスワードのリセットをテストします。
+次に、User 3 アカウントのパスワード リセットをテストします。
 
 1. 新しいプライベート ブラウザー インスタンスを開き、[https://aka.ms/ssprsetup](https://aka.ms/ssprsetup) を参照します。
-2. User 2 アカウントの資格情報でサインインします。
-3. **[アカウントにアクセスできるようにする]** の認証用電話を携帯電話番号に設定し、認証用メールを仕事用や個人用メール アカウントに設定します。
-4. 認証用の電話とメールに問題がなければ、**[問題ありません]** をクリックして、ブラウザーのプライベート インスタンスを閉じます。
-5. 新しいプライベート ブラウザー インスタンスを開き、[https://aka.ms/sspr](https://aka.ms/sspr) に移動します。
-6. User 2 アカウントの資格情報でサインインして、CAPTCHA で示された文字を入力し、**[次へ]** をクリックします。
-8. **[認証手順 1]** で、**[連絡用メール アドレスにメールする]** をクリックし、**[メール]** をクリックします。メールを受信したら、認証コードを入力し、**[次へ]** をクリックします。
-9. **[アカウントに戻る]** で、User 2 アカウントの新しいパスワードを入力し、**[終了]** をクリックします。User 2 アカウントの変更したパスワードのメモを取り、安全な場所に保存します。
-10. 同じブラウザーの別のタブで [https://portal.office.com](https://portal.office.com) に移動し、User 2 アカウント名と新しいパスワードでサインインします。 **[Microsoft Office Home]** ページが表示されます。
+2. User 3 アカウントの資格情報でサインインします。
+3. **[必要な詳細情報]** で、**[次へ]** をクリックします。 
+5. **[アカウントにアクセスできるようにする]** の認証用電話を携帯電話番号に設定し、認証用メールを仕事用や個人用メール アカウントに設定します。
+7. 認証用の電話とメールに問題がなければ、**[問題ありません]** をクリックして、ブラウザーのプライベート インスタンスを閉じます。
+8. 新しいプライベート ブラウザー インスタンスを開き、[https://aka.ms/sspr](https://aka.ms/sspr) に移動します。
+9. User 3 アカウント名を入力し、CAPTCHA に表示された文字を入力してから **[次へ]** をクリックします。
+10. **[認証手順 1]** で、**[連絡用メール アドレスにメールする]** をクリックし、**[メール]** をクリックします。メールを受信したら、認証コードを入力し、**[次へ]** をクリックします。
+11. **[アカウントに戻る]** で User 3 アカウントの新しいパスワードを入力し、**[完了]** をクリックします。 変更された User 3 アカウントのパスワードをメモし、安全な場所に保管します。
+12. 同じブラウザの別のタブで[https://portal.office.com](https://portal.office.com)に移動し、ユーザー 3 アカウント名およびその新しいパスワードでサインインします。 **[Microsoft Office Home]** ページが表示されます。
 
 実稼働環境でのパスワードのリセットの構成に関する情報およびリンクについては、ID フェーズの手順、「[パスワードのリセットを簡素化する](identity-secure-your-passwords.md#identity-pw-reset)」を参照してください。
 

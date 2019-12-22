@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise の基礎インフラストラクチャチャ
+title: Microsoft 365 Enterprise 基盤インフラストラクチャ
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Microsoft 365 Enterprise の基礎インフラストラクチャを組織に展開するための主要フェーズ (別名、コア展開) について理解します。
-ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Microsoft 365 Enterprise 基盤インフラストラクチャを組織に展開するための主要なフェーズ (コア展開とも呼ばれます) について理解します。
+ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370354"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801962"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise の基礎インフラストラクチャチャ
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise 基盤インフラストラクチャ
 
-Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行っている場合は、まずアプリケーションとサービスによる創造性とチームワークが安全な環境で発揮される強固な基盤を構築する必要があります。 この基盤は、*コア展開*と呼ばれることもあります。
+Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行う場合には、まず安全な環境でアプリケーションおよびサービスが創造性とチームワークを解き放つための強固な基盤を構築する必要があります。 この基盤は、*コア展開*と呼ばれることもあります。
 
-展開に関して定義されたエンド ツー エンドのパスの次のフェーズを使用して Microsoft 365 Enterprise の基礎インフラストラクチャを計画して展開することができます。
+定義されたエンドツーエンドの展開パスについて、これらのフェーズを使用して Microsoft 365 Enterprise の基盤インフラストラクチャを計画し展開することができます。
 
 | | フェーズ | 結果 |
 |:-------|:-----|:-----|
@@ -48,19 +48,19 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 -  **企業組織の場合**、フェーズを定義されたパスではなく IT インフラストラクチャのレイヤーとして表示し、組織全体の各レイヤーに必要な条件に対して最終的に一番最適な方法を決定します。
 
-各フェーズの最後には*終了条件*がありますので、その条件を確認するようにしてください。満たさなければならない必須条件、検討する必要があるオプションの条件を確認できます。 各フェーズの終了条件は、オンプレミスとクラウドのインフラストラクチャ、およびそのフェーズから得られるエンド ツー エンドの構成が、Microsoft 365 Enterprise 展開の要件を満たしているかどうかの判断基準となります。
+各フェーズの最後には*終了条件*がありますので、その条件を確認するようにしてください。満たさなければならない必須条件、検討する必要があるオプションの条件を確認できます。 各フェーズの終了条件は、オンプレミスおよびクラウドのインフラストラクチャ、およびそのフェーズから得られるエンドツーエンドの構成が Microsoft 365 Enterprise の展開の要件を満たしているかどうかの判断基準となります。
 
 以下の短時間のビデオでコンテンツの構造を確認できます。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-以下が Microsoft 365 Enterprise の全体的な展開ガイドの基礎インフラストラクチャとなります。
+以下が全体的な Microsoft 365 Enterprise の展開ガイドの基盤インフラストラクチャです。
 
-![Microsoft 365 Enterprise の全体的な展開ガイドの基礎インフラストラクチャ](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![全体的な Microsoft 365 Enterprise の展開ガイドの基盤インフラストラクチャ](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>概要
 
-[Microsoft 365 Enterprise の基盤インフラストラクチャのポスター](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)は、各フェーズで参照できる中心的な場所です。
+[Microsoft 365 Enterprise の基盤インフラストラクチャ ポスター](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)は、各フェーズで参照できる中心的な場所です。
 
 - 管理者とユーザーのフェーズの全体的な目標
 - サービス、機能、およびツール
@@ -69,16 +69,16 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 - 新しいユーザーのオンボード プロセス
 - モニターと更新の方法
 
-[![Microsoft 365 Enterprise の基盤インフラストラクチャ ポスターの画像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Microsoft 365 Enterprise 基盤インフラストラクチャ ポスター用の画像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)をクリックします。
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>インフラストラクチャの構成とユーザー ロールアウト
 
-構成されたソフトウェアとサービス一式が、基礎インフラストラクチャになります。これらのソフトウェアやサービスをユーザー向けに組み合わせることで、安全な環境で Microsoft 365 Enterprise が提供するすべての機能を利用することができます。 エンド ツー エンドの展開の最終目的は、お客様の全ユーザーとそのユーザーの Windows ベースのデバイスに基礎インフラストラクチャを適用することです。 
+基盤インフラストラクチャは、構成済みのソフトウェアおよびサービスのセットであり、ユーザー向けに組み合わせると Microsoft 365 Enterprise が提供するすべての機能および保護を活用できます。 エンド ツー エンドの展開の最終目的は、お客様の全ユーザーとそのユーザーの Windows ベースのデバイスに基礎インフラストラクチャを適用することです。 
 
-ただし、Microsoft 365 Enterprise の基礎インフラストラクチャと、ユーザーへのソフトウェアおよびサービスのロールアウトは別のものになります。 ***基礎インフラストラクチャのレイヤーは、すべてのユーザーにロールアウトしなくても構成することができます。***
+ただし、Microsoft 365 Enterprise 基盤インフラストラクチャはユーザーへのソフトウェアおよびサービスのロールアウトとは無関係であることに注意することが重要です。 ***基礎インフラストラクチャのレイヤーは、すべてのユーザーにロールアウトしなくても構成することができます。***
 
 組織のオフィス、地域、あるいは部署の多数のユーザーにロールアウトする前に、基礎インフラストラクチャの要素を構成、テスト、試験運用することができます。
 
