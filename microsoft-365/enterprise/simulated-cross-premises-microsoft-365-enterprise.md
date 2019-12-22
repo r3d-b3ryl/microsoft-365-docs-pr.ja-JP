@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 description: '概要: Microsoft 365 テスト環境として、シミュレートされたクロスプレミスの仮想ネットワークを Microsoft Azure に作成します。'
-ms.openlocfilehash: 69e269de55aa7cd06dc5e26edbd29ae981fb9683
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 4293975fc6c2cd2583fe8e0dd7bbf54536f6c93c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694084"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801322"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 テスト環境でのシミュレートされたクロスプレミスの仮想ネットワーク
 
@@ -27,7 +27,7 @@ ms.locfileid: "38694084"
 
 この記事では、2 つの Azure 仮想ネットワークを使用した、Microsoft Azure でのシミュレートされたハイブリッド クラウド環境の作成について順を追って説明します。最終的な構成は、次のようになります。 
   
-![XPrem VNet に DC2 仮想マシンがある場合の、シミュレートされたクロスプレミスの仮想ネットワークネットワークの開発/テスト環境のフェーズ 3](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![XPrem VNet の DC2 仮想マシンを使用した、シミュレートされたクロスプレミス仮想ネットワーク テスト環境のフェーズ 3](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 これは Azure IaaS ハイブリッド クラウド運用環境をシミュレートするもので、次のもので構成されます。
   
@@ -45,7 +45,7 @@ ms.locfileid: "38694084"
     
 - ハイブリッド クラウドベース IT ワークロードをシミュレートするための、コンピューターのテスト構成の作成 (TestLab 仮想ネットワーク内、および XPrem 仮想ネットワーク内)。
     
-次の 3 つの主要なフェーズを経て、この開発/テスト環境を設定します。
+このテスト環境のセットアップには、3 つの主要なフェーズが存在します。
   
 1. TestLab 仮想ネットワークを構成します。
     
@@ -124,9 +124,9 @@ Add-AzVirtualNetworkPeering -Name TestLab2XPrem -VirtualNetwork $vnet1 -RemoteVi
 Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
 ```
 
-これは、現在の構成です。 
+こちらが現在の構成です。 
   
-![XPrem VNet と VNet のピアリング関係がある場合の、シミュレートされたクロスプレミスの仮想ネットワークネットワークの開発/テスト環境のフェーズ 2](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![XPrem VNet および VNet ピアリング関係を使用した、シミュレートされたクロスプレミス仮想ネットワーク テスト環境のフェーズ 2](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>フェーズ 3: DC2 を構成する
 
@@ -196,9 +196,9 @@ New-ADReplicationSubnet -Name "10.0.0.0/8" -Site "TestLab"
 New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 ```
 
-これは、現在の構成です。 
+こちらが現在の構成です。 
   
-![XPrem VNet に DC2 仮想マシンがある場合の、シミュレートされたクロスプレミスの仮想ネットワークネットワークの開発/テスト環境のフェーズ 3](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![XPrem VNet の DC2 仮想マシンを使用した、シミュレートされたクロスプレミス仮想ネットワーク テスト環境のフェーズ 3](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 シミュレートされた Azure ハイブリッド クラウド環境をテストする準備ができました。
   

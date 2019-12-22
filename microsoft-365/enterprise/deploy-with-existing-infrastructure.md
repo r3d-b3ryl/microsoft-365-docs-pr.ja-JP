@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 既存のインフラストラクチャがある場合の Microsoft 365 Enterprise の展開の終了条件について順を追って説明します。
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+description: 既存のインフラストラクチャがある場合の Microsoft 365 Enterprise の展開の終了条件について、順を追って説明します。
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148511"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801932"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>既存のインフラストラクチャを使用した Microsoft 365 Enterprise の展開
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>既存のインフラストラクチャを使用した Microsoft 365 Enterprise の展開
 
-多くの組織には、既存のネットワーク、ID、およびその他のコンポーネント、または Microsoft オンプレミス製品およびクラウドベース サービスが既に導入されています。この記事では、既存のインフラストラクチャを適応させるまたは変更する方法を容易に決定できるように、Microsoft 365 Enterprise 展開の各フェーズについて順を追って説明します。
+多くの組織には、既存のネットワーク、ID、およびその他のコンポーネント、または Microsoft オンプレミス製品およびクラウドベース サービスが既に導入されています。この記事では、Microsoft 365 Enterprise の展開の各フェーズについて順を追って説明します。これにより、既存のインフラストラクチャを適応させる、または変更する方法をすばやく判断できます。
 
-各フェーズを終了する前に、フェーズの終了条件を確認する必要があります。終了条件は、満たしている必要がある必須条件と、検討すべきオプションの条件からなります。各フェーズの終了条件により、オンプレミス インフラストラクチャおよびクラウド インフラストラクチャとその結果としてのエンドツーエンド構成が、Microsoft 365 Enterprise 展開の要件を満たしていることが確認されます。
+各フェーズを終了する前に、フェーズの終了条件を確認する必要があります。終了条件は、満たす必要がある必須条件と、考慮すべきオプション条件からなります。各フェーズの終了条件により、オンプレミス インフラストラクチャおよびクラウド インフラストラクチャとその結果として生じるエンドツーエンド構成が、Microsoft 365 Enterprise の展開の要件を満たしていることが確認されます。
 
 > [!Note] 
 > FastTrack は、サブスクリプションの一部として無料で利用可能な、Microsoft エンジニアがお客様のペースに合わせたクラウドへの移行を支援する継続的かつ反復的なサービスです。FastTrack では、必要に応じて追加サービスを提供する認定パートナーにアクセスできます。FastTrack はこれまでに 40,000 以上のお客様に対応しており、ROI の最大化、展開の迅速化、組織全体での採用の拡充を支援してきました。「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。

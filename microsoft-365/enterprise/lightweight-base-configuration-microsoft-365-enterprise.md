@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise をテストするための軽量なテスト環境を作成します。
-ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202308"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801652"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 
@@ -43,13 +43,13 @@ ms.locfileid: "39202308"
 
 Office 365 E5 試用版サブスクリプションを開始するには、最初に、架空の会社名と新しい Microsoft アカウントが必要になります。
   
-1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![](./media/Common-Images/TableLine.png)
+1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![線](./media/Common-Images/TableLine.png)
     
 2. 新しい Microsoft アカウントにサインアップするには、[https://outlook.com](https://outlook.com) に移動して、新しい電子メール アカウントとアドレスでアカウントを作成します。このアカウントを使用して、Office 365 にサインアップします。
     
-  - ここに新しいアカウントの姓名を記録してください: ![](./media/Common-Images/TableLine.png)
+  - ここに新しいアカウントの姓名を記録してください: ![線](./media/Common-Images/TableLine.png)
     
-  - ここに新しい電子メール アカウントのアドレスを記録してください: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - 新しいメール アカウント アドレスをここに記録します。 ![線](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
@@ -58,8 +58,8 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
 2. 「**Office 365 E5 をお選び頂き、ありがとうございます**」ページで、手順 1 の新しいメール アカウントのアドレスを明記します。
 3. 試用版サブスクリプション プロセスの手順 2 で、必要な情報を入力して、検証を実行します。
 4. 手順 3 では、組織名を入力して、サブスクリプション用の全体管理者になるアカウント名を入力します。 
-5. 手順 4 では、ここにサインイン ページを記録してください (選択してコピー):![](./media/Common-Images/TableLine.png) 
-6. ここにユーザー ID を記録してください: ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. 手順 4 では、ここにサインイン ページを記録します (選択してコピー): ![線](./media/Common-Images/TableLine.png) 
+6. ここにユーザー ID を記録します: ![Line](./media/Common-Images/TableLine.png).onmicrosoft.com  
    入力したパスワードを安全な場所に記録してください。
    この値を**Office 365 全体管理者名**と呼ぶことにします。
 8. [**セットアップに移動**] をクリックします。
@@ -119,11 +119,11 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 これらの値を記録する:
   
-- Office 365 全体管理者名: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 1 の手順 6 で入力したもの)
+- Office 365 グローバル管理者名: ![線](./media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 1 のステップ 6 から)
     
     このアカウントのパスワードも安全な場所に記録してください。
     
-- 試用版サブスクリプションの組織名: ![](./media/Common-Images/TableLine.png) (フェーズ 1 の手順 4 で入力したもの)
+- 試用版サブスクリプションの組織名: ![線](./media/Common-Images/TableLine.png) (フェーズ 1 のステップ 4 から)
     
 - User 2、User 3、User 4、および User 5 のアカウントを一覧表示するには、次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。
     
@@ -133,13 +133,13 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
     ここにアカウント名を記録してください:
     
-  - User 2 のアカウント名: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 2 アカウント名: user2@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 3 のアカウント名: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 3 アカウント名: user3@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 4 のアカウント名: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 4 アカウント名: user4@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 5 のアカウント名: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 5 アカウント名: user5@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     これらのアカウントの共通パスワードも安全な場所に記録してください。
    
