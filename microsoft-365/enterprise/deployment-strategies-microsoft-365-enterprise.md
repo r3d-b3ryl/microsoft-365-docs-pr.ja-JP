@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise の基盤インフラストラクチャの展開戦略
+title: Microsoft 365 Enterprise の基盤インフラストラクチャ展開戦略
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,17 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Microsoft 365 Enterprise の基盤インフラストラクチャの各フェーズを展開するいくつかの方法を説明します。
-ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+description: Microsoft 365 Enterprise の基盤インフラストラクチャの各フェーズを展開するいくつかの方法について説明します。
+ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369438"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801892"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 Enterprise の基盤インフラストラクチャの展開戦略
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 Enterprise の基盤インフラストラクチャ展開戦略
 
-Microsoft 365 Enterprise の[基盤インフラストラクチャ](deploy-foundation-infrastructure.md)の各フェーズを展開し、その機能、ソフトウェア、サービスをユーザーにロールアウトする方法は数多くあります。この仕事のプロジェクト管理に取り掛かることは、組織と既存のインフラストラクチャの規模によっては大がかりで複雑な作業になる可能性があるので、次のような展開戦略を考慮してください。
+Microsoft 365 Enterprise の[基盤インフラストラクチャ](deploy-foundation-infrastructure.md)の各フェーズを展開し、その機能、ソフトウェア、サービスをユーザーにロールアウトする方法は数多くあります。この仕事のプロジェクト管理に取り掛かることは、組織および既存のインフラストラクチャの規模によっては大がかりで複雑な作業になる可能性があるので、以下のような展開戦略を考慮してください。
 
 - 順次展開
 - ユーザー ロールアウトが重複しない並列展開
@@ -74,19 +74,19 @@ IT インフラストラクチャには、バックエンド サービスと、�
 - IT テクノロジの依存関係
 - ビジネスの変更管理とエンド ユーザーからの抵抗
 
-次のガント チャートでは、Microsoft 365 Enterprise の基盤インフラストラクチャのフェーズ 2 から 6 の簡略化された順次展開を示しています。
+このガント チャートは、Microsoft 365 Enterprise の基盤インフラストラクチャのフェーズ 2 〜 6 の簡略化された順次展開を示しています。
 
 ![基盤インフラストラクチャのフェーズ 2 から 6 のシリアル展開](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 説明と例を簡単にするために、各フェーズと、各フェーズ内の展開セグメントは、同じ時間がかかると想定しています。
 
 >[!Note]
->フェーズ 1: Microsoft 365 Enterprise 基盤インフラストラクチャのネットワークは、IT 部門専用の段階です。ユーザーは Microsoft のクラウド リソースへの最適化された接続のメリットを享受しますが、それを達成することが課されているわけではありません。
+>フェーズ 1: Microsoft 365 Enterprise 基盤インフラストラクチャのネットワーキングは、IT 部門専用のフェーズです。ユーザーは Microsoft のクラウド リソースへと最適化された接続のメリットを享受しますが、その達成が強制されることはありません。
 >
 
 例として、簡素化されたパイロット ユーザー エクスペリエンスを次に示します。
 
-- 12 月に、MFA 用にスマート フォンを使用する必要があります。 (ユーザー情報)
+- 12 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 3 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
 - 6 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
 - 9 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
@@ -96,7 +96,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 例として、簡素化されたエンドユーザー エクスペリエンスを次に示します。
 
-- 1 月に、MFA 用にスマート フォンを使用する必要があります。 (ユーザー情報)
+- 1 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 4 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
 - 7 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
 - 10 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
@@ -104,7 +104,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 結果は、連続するユーザー ロールアウトの間で 90 日間の間隔になります。
 
-この展開戦略の欠点は、Microsoft 365 Enterprise の基盤インフラストラクチャを完全に展開するのに時間がかかることです。
+この展開戦略の欠点は、Microsoft 365 Enterprise 基盤インフラストラクチャを完全に展開するのに時間がかかることです。
 
 ### <a name="parallel-deployment-with-non-overlapping-user-rollout-parallel-1"></a>ユーザー ロールアウトが重複しない並列展開 (並列 1)
 
@@ -134,7 +134,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 結果は、連続するユーザー ロールアウトの間で 60 日間の間隔になります。
 
-この展開戦略の利点は、Microsoft 365 Enterprise の基盤インフラストラクチャを完全に展開するのにかかる時間が短いことです。IT 部門とユーザーが同時に複数のロールアウトを処理することも求められません。
+この展開戦略の利点は、IT 部門およびユーザーが同時に複数のロールアウトに対処する必要がなく、Microsoft 365 Enterprise 基盤インフラストラクチャを完全に展開するのにかかる時間が短いことです。
 
 ### <a name="parallel-deployment-with-overlapping-user-rollout-parallel-2"></a>ユーザー ロールアウトが重複する並列展開 (並列 2)
 
@@ -172,7 +172,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 結果は、連続するユーザー ロールアウトの間で 30 日間の間隔になります。
 
-この展開戦略の利点は、Microsoft 365 Enterprise の基盤インフラストラクチャを完全に展開するのにかかる時間がさらに短くなることです。ユーザーが同時に複数のロールアウトに対処することも求められません。 ただし、ユーザーは連続するフェーズ間で休憩を取ることはできません。
+この展開戦略の利点は、Microsoft 365 Enterprise 基盤インフラストラクチャの完全に展開にかかる時間がさらに短くなることです。エンドユーザーが同時に複数のロールアウトに対処する必要もありません。 ただし、ユーザーは連続するフェーズ間で休憩を取ることはできません。
 
 ### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>事前のインフラストラクチャとエンド ツー エンド構成のロールアウト
 
