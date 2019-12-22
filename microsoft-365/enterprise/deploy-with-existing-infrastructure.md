@@ -12,56 +12,56 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 既存のインフラストラクチャがある場合の Microsoft 365 Enterprise の展開の終了条件について順を追って説明します。
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+description: 既存のインフラストラクチャがある場合の Microsoft 365 Enterprise の展開の終了条件について、順を追って説明します。
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148511"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801932"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a><span data-ttu-id="c993c-103">既存のインフラストラクチャを使用した Microsoft 365 Enterprise の展開</span><span class="sxs-lookup"><span data-stu-id="c993c-103">Deployment of Microsoft 365 Enterprise with existing infrastructure</span></span>
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a><span data-ttu-id="7df94-103">既存のインフラストラクチャを使用した Microsoft 365 Enterprise の展開</span><span class="sxs-lookup"><span data-stu-id="7df94-103">Deployment of Microsoft 365 Enterprise with existing infrastructure</span></span>
 
-<span data-ttu-id="c993c-p101">多くの組織には、既存のネットワーク、ID、およびその他のコンポーネント、または Microsoft オンプレミス製品およびクラウドベース サービスが既に導入されています。この記事では、既存のインフラストラクチャを適応させるまたは変更する方法を容易に決定できるように、Microsoft 365 Enterprise 展開の各フェーズについて順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="c993c-p101">Many organizations have exisiting networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 Enterprise so you can quickly determine how to adapt or change your existing infrastructure.</span></span>
+<span data-ttu-id="7df94-p101">多くの組織には、既存のネットワーク、ID、およびその他のコンポーネント、または Microsoft オンプレミス製品およびクラウドベース サービスが既に導入されています。この記事では、Microsoft 365 Enterprise の展開の各フェーズについて順を追って説明します。これにより、既存のインフラストラクチャを適応させる、または変更する方法をすばやく判断できます。</span><span class="sxs-lookup"><span data-stu-id="7df94-p101">Many organizations have existing networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 Enterprise so you can quickly determine how to adapt or change your existing infrastructure.</span></span>
 
-<span data-ttu-id="c993c-p102">各フェーズを終了する前に、フェーズの終了条件を確認する必要があります。終了条件は、満たしている必要がある必須条件と、検討すべきオプションの条件からなります。各フェーズの終了条件により、オンプレミス インフラストラクチャおよびクラウド インフラストラクチャとその結果としてのエンドツーエンド構成が、Microsoft 365 Enterprise 展開の要件を満たしていることが確認されます。</span><span class="sxs-lookup"><span data-stu-id="c993c-p102">Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meets the requirements for a Microsoft 365 Enterprise deployment.</span></span>
+<span data-ttu-id="7df94-p102">各フェーズを終了する前に、フェーズの終了条件を確認する必要があります。終了条件は、満たす必要がある必須条件と、考慮すべきオプション条件からなります。各フェーズの終了条件により、オンプレミス インフラストラクチャおよびクラウド インフラストラクチャとその結果として生じるエンドツーエンド構成が、Microsoft 365 Enterprise の展開の要件を満たしていることが確認されます。</span><span class="sxs-lookup"><span data-stu-id="7df94-p102">Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meets the requirements for a Microsoft 365 Enterprise deployment.</span></span>
 
 > [!Note] 
-> <span data-ttu-id="c993c-p103">FastTrack は、サブスクリプションの一部として無料で利用可能な、Microsoft エンジニアがお客様のペースに合わせたクラウドへの移行を支援する継続的かつ反復的なサービスです。FastTrack では、必要に応じて追加サービスを提供する認定パートナーにアクセスできます。FastTrack はこれまでに 40,000 以上のお客様に対応しており、ROI の最大化、展開の迅速化、組織全体での採用の拡充を支援してきました。「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c993c-p103">FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).</span></span>
+> <span data-ttu-id="7df94-p103">FastTrack は、サブスクリプションの一部として無料で利用可能な、Microsoft エンジニアがお客様のペースに合わせたクラウドへの移行を支援する継続的かつ反復的なサービスです。FastTrack では、必要に応じて追加サービスを提供する認定パートナーにアクセスできます。FastTrack はこれまでに 40,000 以上のお客様に対応しており、ROI の最大化、展開の迅速化、組織全体での採用の拡充を支援してきました。「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7df94-p103">FastTrack is an ongoing and repeatable benefit—available for free as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).</span></span>
 
-## <a name="exit-criteria-for-networking-phase-1"></a><span data-ttu-id="c993c-112">ネットワークの終了条件 (フェーズ 1)</span><span class="sxs-lookup"><span data-stu-id="c993c-112">Exit criteria for networking (phase 1)</span></span>
+## <a name="exit-criteria-for-networking-phase-1"></a><span data-ttu-id="7df94-112">ネットワークの終了条件 (フェーズ 1)</span><span class="sxs-lookup"><span data-stu-id="7df94-112">Exit criteria for networking (phase 1)</span></span>
 
-<span data-ttu-id="c993c-113">ネットワーク インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="c993c-113">Step through the following required and optional conditions for the networking infrastructure.</span></span>
+<span data-ttu-id="7df94-113">ネットワーク インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="7df94-113">Step through the following required and optional conditions for your networking infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for networking](./includes/deployment-exit-criteria-networking.md)]
 
-## <a name="exit-criteria-for-identity-phase-2"></a><span data-ttu-id="c993c-114">ID の終了条件 (フェーズ 2)</span><span class="sxs-lookup"><span data-stu-id="c993c-114">Exit criteria for identity (phase 2)</span></span>
+## <a name="exit-criteria-for-identity-phase-2"></a><span data-ttu-id="7df94-114">ID の終了条件 (フェーズ 2)</span><span class="sxs-lookup"><span data-stu-id="7df94-114">Exit criteria for identity (phase 2)</span></span>
 
-<span data-ttu-id="c993c-115">ID インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="c993c-115">Step through the following required and optional conditions for the identity infrastructure.</span></span>
+<span data-ttu-id="7df94-115">ID インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="7df94-115">Step through the following required and optional conditions for your identity infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-identity.md)]
 
-## <a name="exit-criteria-for-windows-10-enterprise-phase-3"></a><span data-ttu-id="c993c-116">Windows 10 Enterprise の終了条件 (フェーズ 3)</span><span class="sxs-lookup"><span data-stu-id="c993c-116">Exit criteria for Windows 10 Enterprise (phase 3)</span></span>
+## <a name="exit-criteria-for-windows-10-enterprise-phase-3"></a><span data-ttu-id="7df94-116">Windows 10 Enterprise の終了条件 (フェーズ 3)</span><span class="sxs-lookup"><span data-stu-id="7df94-116">Exit criteria for Windows 10 Enterprise (phase 3)</span></span>
 
-<span data-ttu-id="c993c-117">Windows 10 Enterprise インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="c993c-117">Step through the following required and optional conditions for the Windows 10 Enterprise infrastructure.</span></span>
+<span data-ttu-id="7df94-117">Windows 10 Enterprise インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="7df94-117">Step through the following required and optional conditions for your Windows 10 Enterprise infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## <a name="exit-criteria-for-office-365-proplus-phase-4"></a><span data-ttu-id="c993c-118">Office 365 ProPlus の終了条件 (フェーズ 4)</span><span class="sxs-lookup"><span data-stu-id="c993c-118">Exit criteria for Office 365 ProPlus (phase 4)</span></span>
+## <a name="exit-criteria-for-office-365-proplus-phase-4"></a><span data-ttu-id="7df94-118">Office 365 ProPlus の終了条件 (フェーズ 4)</span><span class="sxs-lookup"><span data-stu-id="7df94-118">Exit criteria for Office 365 ProPlus (phase 4)</span></span>
 
-<span data-ttu-id="c993c-119">Office 365 ProPlus インフラストラクチャの評価、展開計画、および展開の要件を満たします。</span><span class="sxs-lookup"><span data-stu-id="c993c-119">Meet the requirements for assessment, deployment planning, and deployment of the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.</span></span>
+<span data-ttu-id="7df94-119">Office 365 ProPlus インフラストラクチャの評価、展開計画、および展開の要件を満たします。</span><span class="sxs-lookup"><span data-stu-id="7df94-119">Meet the requirements for assessment, deployment planning, and deployment of your Office 365 ProPlus infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
 
-## <a name="exit-criteria-for-mobile-device-management-phase-5"></a><span data-ttu-id="c993c-120">モバイル デバイス管理の終了条件 (フェーズ 5)</span><span class="sxs-lookup"><span data-stu-id="c993c-120">Exit criteria for mobile device management (phase 5)</span></span>
+## <a name="exit-criteria-for-mobile-device-management-phase-5"></a><span data-ttu-id="7df94-120">モバイル デバイス管理の終了条件 (フェーズ 5)</span><span class="sxs-lookup"><span data-stu-id="7df94-120">Exit criteria for mobile device management (phase 5)</span></span>
 
-<span data-ttu-id="c993c-121">モバイル デバイス管理インフラストラクチャの次の要件を満たします。</span><span class="sxs-lookup"><span data-stu-id="c993c-121">Meet the following requirements for the mobile device management infrastructure.</span></span>
+<span data-ttu-id="7df94-121">モバイル デバイス管理インフラストラクチャの次の要件を満たします。</span><span class="sxs-lookup"><span data-stu-id="7df94-121">Meet the following requirements for your mobile device management infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for mobile device management](./includes/deployment-exit-criteria-mobility.md)]
 
-## <a name="exit-criteria-for-information-protection-phase-6"></a><span data-ttu-id="c993c-122">情報保護の終了条件 (フェーズ 6)</span><span class="sxs-lookup"><span data-stu-id="c993c-122">Exit criteria for information protection (phase 6)</span></span>
+## <a name="exit-criteria-for-information-protection-phase-6"></a><span data-ttu-id="7df94-122">情報保護の終了条件 (フェーズ 6)</span><span class="sxs-lookup"><span data-stu-id="7df94-122">Exit criteria for information protection (phase 6)</span></span>
 
-<span data-ttu-id="c993c-123">情報保護インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="c993c-123">Step through the following required and optional conditions for the information protection infrastructure.</span></span>
+<span data-ttu-id="7df94-123">情報保護インフラストラクチャの次の必須条件とオプションの条件を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="7df94-123">Step through the following required and optional conditions for your information protection infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for information protection](./includes/deployment-exit-criteria-infoprotect.md)]
 
