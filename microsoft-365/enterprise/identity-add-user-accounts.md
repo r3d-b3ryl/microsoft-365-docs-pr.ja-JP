@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザー アカウントとグループを、クラウドに直接追加するか、オンプレミス ディレクトリと同期することにより追加します。
-ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370224"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801842"
 ---
 # <a name="step-4-add-your-user-accounts"></a>手順 4: ユーザ アカウントを追加する
 
@@ -82,7 +82,7 @@ Azure AD にオンプレミスのユーザーとグループが作成される�
 <a name="identity-sync-health"></a>
 ## <a name="monitor-synchronization-health"></a>同期の状態を監視する
 
-*この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
+*この手順はオプションであり、Microsoft 365 のバージョン E3 および E5 の両方に適用されます。*
 
 このセクションでは、Azure AD Connect Health エージェントを各オンプレミス AD DS ドメイン コントローラーにインストールして、Azure AD Connect によって提供されている ID インフラストラクチャと 同期サービスを監視します。 監視情報は Azure AD Connect Health ポータルで使用可能になります。このポータルでは、アラート、パフォーマンス監視、使用状況分析などの情報を確認できます。
 
