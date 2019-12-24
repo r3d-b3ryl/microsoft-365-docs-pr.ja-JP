@@ -1,9 +1,9 @@
 ---
 title: 機密ラベルの概要
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツに暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: 5bc15b1ba18dbc52f9db554f8037cb59187b88fc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: f411cf5ac91581526c54f718ee83d0beaaaa2d73
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39232906"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802840"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -130,7 +130,7 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 - ラベル ポリシーに含まれているユーザーとグループが作成したすべての新しいドキュメントと電子メールに**既定のラベルを適用します**。この既定のラベルにより、すべてのコンテンツに適用する保護設定の基本レベルを設定できます。
 
-- **ラベル変更の正当な理由を要求する。** コンテンツに「社外秘」のマークが付けられている場合にユーザーがそのラベルを削除または低い分類 (ラベル名「公開」など) との置き換えを希望する場合、ユーザーがその操作を実行するときに理由を提示するように要求できます。 管理者はこれらの理由を確認できます。
+- **ラベル変更の正当な理由を要求する。** コンテンツに「社外秘」のマークが付けられている場合にユーザーがそのラベルを削除または低い分類 (ラベル名「公開」など) との置き換えを希望する場合、ユーザーがその操作を実行するときに理由を提示するように要求できます。 現在、正当な理由は、管理者がレビューするための[ラベル分析](label-analytics.md)に送信されません。 ただし、[Azure Information Protection の統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)は、この情報を [Azure Information Protection の分析](https://docs.microsoft.com/azure/information-protection/reports-aip)に送信します。
 
     ![ユーザーに正当性を入力するように求めるダイアログ](media/Sensitivity-label-justification-required.png)
 

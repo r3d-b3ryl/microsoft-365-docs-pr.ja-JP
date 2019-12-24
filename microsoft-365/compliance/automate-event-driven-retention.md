@@ -1,7 +1,7 @@
 ---
 title: イベント ベースの保持を自動化する
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: このトピックでは、Microsoft 365 REST API を使用して、イベントによってビジネス プロセス フローの自動化の保持をセットアップする方法について説明します。
-ms.openlocfilehash: b4ae97ad9564f61e65b990a0054fcf13d88f1d8d
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b2aadaf4e450167cf7bff864569652c05deb7298
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631067"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807436"
 ---
 # <a name="automate-event-based-retention"></a>イベント ベースの保持を自動化する
 
@@ -407,7 +407,7 @@ REST API を呼び出すサンプル コード
 
 手順 1: セキュリティ/コンプライアンス センターに移動します。
 
-手順 2: [**データ ガバナンス**] の [**イベント**] を選択します。
+手順 2: [**情報ガバナンス**] の [**イベント**] を選択します。
 
 手順 3: イベントが作成されたことを確認します。
 

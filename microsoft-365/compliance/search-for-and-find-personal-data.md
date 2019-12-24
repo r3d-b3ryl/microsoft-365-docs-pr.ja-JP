@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office 365 の個人データを検索する方法について説明します。
-ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 75c6afaae18cddc0c8e63cac671ac1140e3fa303
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710082"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802860"
 ---
 # <a name="search-for-and-find-personal-data"></a>個人データの検索
 
@@ -33,9 +33,7 @@ ms.locfileid: "38710082"
 
 この記事では、SharePoint Online および OneDrive for Business (すべての Office 365 グループおよび Microsoft Teams のサイトを含む) に保管されている個人データを検索する方法について説明します。
 
-GDPR の対象となる個人データの検索には、Office 365 での機密情報の種類を使用する必要があります。これによって自動化プロセスが健康保険番号やクレジット カード番号などの特定情報の種類を認識する方法が定義されます。現時点では、機密情報の種類は Exchange メールボックスに保管中のデータの検索には使用できません。ただし機密情報の種類は、データ損失防止ポリシーとともに、移動中の電子メールに含まれる個人データの検索には使用できます。
-
-そのため、現在は Exchange Online メールボックスに保管中の個人データはコンテンツ検索には使用できませんが、GDPR のためにまとめた機密情報の種類を使用して、個人情報が電子メールで送信されるときに検索し、保護することができます。
+GDPR の対象となる個人データを見つけることは、Office 365 の機密情報の種類の使用に依存します。 これらは、自動プロセスが正常性サービス番号やクレジット カード番号などの特定の情報の種類を認識する方法を定義します。 データ損失防止ポリシーを使用して、送信中のメールで個人データを見つけることができます。 GDPR 用に作成した機密情報の種類を使用して、メールで送信される個人情報の検索と保護を行うことができます。 また、「[セキュリティ/コンプライアンス センターで DSR ケース ツールを使用して GDPR データ主体要求を管理する](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)」を参照してください。
 
 ## <a name="use-content-search-to-find-personal-data"></a>コンテンツ検索を使用して個人データを検索する
 

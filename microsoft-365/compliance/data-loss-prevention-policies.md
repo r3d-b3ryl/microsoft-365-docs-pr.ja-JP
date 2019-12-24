@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39266154"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806620"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,9 @@ DLP ポリシーにはいくつかの基本的な内容が含まれます。
 DLP ポリシーは、Office 365 全体で機密情報を検出して保護できます。情報が Exchange Online、SharePoint Online、OneDrive for Business、Microsoft Teams のいずれかに保存されていてもかまいません。 Exchange メール、Microsoft Teams のチャットとチャネル メッセージ、およびすべての SharePoint または OneDrive ライブラリ内のコンテンツを保護するか、ポリシーの特定の場所を選択できます。
   
 ![DLP ポリシーを適用できる場所のオプション](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
-  
+
+ Exchange に特定の配布グループを含めるように選択した場合、DLP ポリシーはそのグループのメンバーにのみ適用されます。 同様に、配布グループを除外すると、その配布グループのすべてのメンバーがポリシー評価から除外されます。 ポリシーを配布リストのメンバー、動的配布グループ、セキュリティ グループの範囲にすることができます。 DLP ポリシーには、このような追加および除外を 50 個まで含めることができます。
+
 特定の SharePoint サイトまたは OneDrive アカウントを含めるか、除外するかを選択した場合、DLP ポリシーに含めることができるのは、100 を超えることはできません。 こうした制限はありますが、組織全体のポリシーまたは場所全体に適用されるポリシーを適用することで、この制限を超えることができます。
   
 ### <a name="rules"></a>ルール
@@ -166,7 +168,9 @@ DLP ポリシーによってクレジット カード番号などの機密情報
 OneDrive for Business アカウントにおけるポリシー ヒントの表示内容を示します。
   
 ![OneDrive アカウントでのドキュメントのポリシー ヒント](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-  
+
+ DLP ポリシーのユーザー通知とポリシー ヒントの詳細については、「[通知とポリシー ヒントを使用する](use-notifications-and-policy-tips.md)」を参照してください。
+
 #### <a name="incident-reports"></a>インシデント レポート
 
 ルールが一致する場合は、イベントの詳細を含むインシデント レポートをコンプライアンス担当者 (または選択したユーザー) に送信できます。 このレポートには、一致したアイテム、ルールに一致した実際のコンテンツ、コンテンツの最終変更者の名前が含まれます。 メール メッセージの場合、レポートには添付ファイルとして、DLP ポリシーに適合する元のメッセージも含まれます。
@@ -221,7 +225,7 @@ OneDrive for Business アカウントにおけるポリシー ヒントの表示
 
 ポリシーでルールを作成すると、作成した順の優先度が各ルールに割り当てられます。つまり、最初に作成したルールの優先度が最も高くなり、2 番目に作成したルールの優先度は 2 番目になります。 
   
-![優先度順のルール](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
+![優先度順のルール](media/dlp-rules-in-priority-order.png)
   
 DLP ポリシーを 1 つ以上設定したら、1 つまたは複数のポリシーの優先順位を変更できます。 変更を行うには、ポリシーを選択し、**[ポリシーの編集]** を選び、**[優先度]** の一覧で優先度を指定します。
 

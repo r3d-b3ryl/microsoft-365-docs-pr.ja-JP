@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: cb728c4e6a88fc7bb47716a40addd01f9828208f
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 775802f8aecf04668641c2e7d6b24e645a7c9f90
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "39622619"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823739"
 ---
 # <a name="data-classification-overview-preview"></a>データ分類の概要 (プレビュー)
 
@@ -59,6 +59,8 @@ Microsoft 365 または Azure Information Protection (AIP) のいずれかでア
 - タグが含まれることで、必須のウォーターマークや暗号化など、さまざまな保護機能が有効化されます。 エンド ポイントの保護を有効にすると、アイテムを組織の制御から離れさせないようにもできます。
 
 機密ラベルの詳細については、「[機密ラベルの概要](sensitivity-labels.md)」を参照してください。
+
+SharePoint および OneDrive にあるファイルに対応するデータがデータ分類ページに表示されるようにするには、機密度ラベルを有効にする必要があります。 詳細については、「[SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md)」を参照してください。
 
 機密ラベル カードには、機密レベルごとのアイテム (メールやドキュメント) の数が表示されます。
 

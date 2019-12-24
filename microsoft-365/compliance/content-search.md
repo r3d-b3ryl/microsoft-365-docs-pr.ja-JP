@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39266156"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967520"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 
@@ -310,7 +310,7 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
   
 ### <a name="searching-inactive-mailboxes"></a>非アクティブなメールボックスの検索
 
-コンテンツ検索で非アクティブなメールボックスを検索できます。 組織内の非アクティブなメールボックスのリストを取得するには、Exchange Online PowerShell でコマンド `Get-Mailbox -InactiveMailboxOnly` を実行します。 または、セキュリティ/コンプライアンス センターの [**データガバナンス**] \> [**保持**] に移動して、[**詳細**] ![ナビゲーション バーの省略記号](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> [**非アクティブなメールボックス**] をクリックすることもできます。
+コンテンツ検索で非アクティブなメールボックスを検索できます。 組織内の非アクティブなメールボックスのリストを取得するには、Exchange Online PowerShell でコマンド `Get-Mailbox -InactiveMailboxOnly` を実行します。 または、セキュリティ/コンプライアンス センターの [**情報ガバナンス**] \> [**保持**] に移動して、[**詳細**] ![ナビゲーション バーの省略記号](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> [**非アクティブなメールボックス**] をクリックすることもできます。
   
 非アクティブなメールボックスを検索するときの留意点を以下に示します。
 

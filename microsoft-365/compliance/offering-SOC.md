@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4d8587438d564d98d9b30897ebdf5bf8722a09c8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859487"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804260"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -108,7 +109,7 @@ Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 
 
 **Azure SOC 報告書が発行される頻度はどれくらいですか?**
 
-Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、四半期ごとに新たな報告書が発行されます。 SOC 報告書を通じて監査の頻度が増加することにより、監査期間の対象範囲がさらに時宜を得たものとなり、ブリッジ レターと比較して、より確実な保証が外部監査役により提供されます。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
+Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、半年ごとに新たな報告書が発行されます (期間は 3 月 31 日と 9 月 30 日に終了)。 ブリッジ レターは、1 月に発行されて 10/1- 12/31 の期間をカバーし、7 月に発行されて 4/1 - 6/30の期間をカバーします。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
 
 **Microsoft データセンターの監査は、自分自身で実施する必要がありますか?**
 
@@ -133,6 +134,6 @@ Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stre
  - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
  - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf) ファイルをダウンロードできます。

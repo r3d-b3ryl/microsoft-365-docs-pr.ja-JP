@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 055c19715ff5dcd28ae05489600a31b2f7904e72
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 828c4f7faaae1225d438a4d34b159d981b31b141
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749887"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806520"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Dynamics 365 アカウンタビリティ対応準備チェックリスト
 
@@ -26,8 +27,8 @@ ms.locfileid: "38749887"
 
 このアカウンタビリティ対応準備チェックリストは、Microsoft Dynamics 365 を使用する際に GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。チェックリストは、以下に基づいた個人データ プロセスに関する一連のプライバシーとセキュリティ コントロールのタイトルと参照番号 (各チェックリスト トピックに対してかっこで示す) を使用して編成されています。
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) セキュリティ テクニックの要件。
-- プライバシー管理要件に関連する [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472)。 
+- セキュリティ技術の要件に関連する [ISO/IEC CD 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736)。
+- プライバシー管理要件に関連する [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472)。
 
 コンプライアンス マネージャー [[15](gdpr-arc-Dynamics365.md#15)] で、GDPR タイル内の*顧客管理コントロール*の下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。
 

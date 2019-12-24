@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: 54a12334c4b63e1751d578dcd5a9c79d887d246d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823729"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854042"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -47,7 +47,7 @@ Microsoft Office‍ 365 のセキュリティ/コンプライアンス センタ
 
 - セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てるには、組織の管理役割グループのメンバーであるか、または役割管理役割が割り当てられている必要があります。
     
-- セキュリティ/コンプライアンス センターの PowerShell で [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループのメンバーとして、電子情報開示管理者の役割グループに追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「 [more information](#more-information) 」セクションを参照してください。 
+- セキュリティ/コンプライアンス センターの PowerShell で [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループのメンバーとして、電子情報開示管理者の役割グループに追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「 [More information](#more-information) 」セクションを参照してください。 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -121,7 +121,10 @@ Microsoft Office‍ 365 のセキュリティ/コンプライアンス センタ
 
 ### <a name="review"></a>レビュー
 
-この役割では、Office 365 Advanced eDiscovery のケース データにアクセスできます。 この役割の主な目的は、ユーザーが Advanced eDiscovery にアクセスできるようにすることです。 この役割を割り当てられたユーザーは、自分がメンバーになっているセキュリティ & コンプライアンスセンターの [電子情報開示] ページで、ケースの一覧を表示して開くことができます。 ユーザーがセキュリティ & コンプライアンスセンターのケースにアクセスした後、上級電子情報開示でケースデータにアクセスして分析するために、 **Advanced ediscovery への切り替え**を選択することができます。 この役割では、ユーザーは、ケースに関連付けられたコンテンツ検索の結果をプレビューしたり、その他のコンテンツ検索やケース管理タスクを実行したりすることはできません。
+この役割を使用すると、ユーザーは[Office 365](office-365-advanced-ediscovery.md)のケースデータにアクセスできます (上級電子情報開示についても知ることができます)。 この役割の主な目的は、ユーザーが Office 365 Advanced 電子情報開示にアクセスできるようにすることです。 この役割を割り当てられたユーザーは、自分がメンバーになっているセキュリティ & コンプライアンスセンターの [電子情報開示] ページで、ケースの一覧を表示して開くことができます。 ユーザーがセキュリティ & コンプライアンスセンターのケースにアクセスした後、Office 365 Advanced eDiscovery でケースデータにアクセスして分析するために、 **Advanced ediscovery への切り替え**を選択することができます。 この役割では、ユーザーは、ケースに関連付けられたコンテンツ検索の結果をプレビューしたり、その他のコンテンツ検索やケース管理タスクを実行したりすることはできません。
+
+> [!NOTE]
+> 現時点では、確認の役割 (またはレビュー担当者の役割グループのメンバー) が割り当てられているユーザーは、Microsoft 365 (Advanced eDiscovery v2 とも呼ばれます) の[高度な電子情報開示](overview-ediscovery-20.md)のデータにアクセスすることはできません。 ケースデータを確認できるように、Advanced eDiscovery v2 のケースにメンバーを追加するには、ユーザーが電子情報開示マネージャーの役割グループのメンバーである必要があります。
 
 ### <a name="rms-decrypt"></a>RMS の暗号化解除
 

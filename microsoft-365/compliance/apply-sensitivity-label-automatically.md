@@ -1,11 +1,11 @@
 ---
 title: 機密ラベルをコンテンツに自動的に適用する
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 3c5b52c89c9a5eb9e78e670bce0b5c3edec89cd1
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 77a0b3cdf88301677451fe7fe1bac58de2a40a5f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256714"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807842"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -31,9 +31,9 @@ ms.locfileid: "39256714"
 
 - ユーザーへの依存は、一部のコンテンツを正しく分類するためにのみ必要。
 
-- ユーザーはポリシーについて把握する必要がなくなり、自分たちの仕事に集中できる。
+- ユーザーはポリシーについて把握する必要がなくなり、自分たちの仕事に集中できます。
 
-ライセンスの要件の詳細については、「[Office アプリの機密ラベル](sensitivity-labels-office-apps.md)」を参照してください。
+ライセンス要件の詳細については、「[機密度ラベルのサブスクリプションおよびライセンス要件](sensitivity-labels-office-apps.md#subscription-and-licensing-requirements-for-sensitivity-labels)」を参照してください。
 
 自動ラベル付けの設定は、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、Office 365 セキュリティ/コンプライアンス センターの **[分類]**  >  **[機密ラベル]** で機密ラベルを作成するときに使用できます。
 

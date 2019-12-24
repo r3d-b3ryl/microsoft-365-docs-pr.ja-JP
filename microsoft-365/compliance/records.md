@@ -1,7 +1,7 @@
 ---
 title: レコードの概要
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 または Microsoft 組織でレコード管理戦略を実装するには、コンテンツをレコードとして宣言する保持ラベルを使用します。 次に、保持レコードラベルを公開または自動適用します。
-ms.openlocfilehash: 37f23dcd9c2b94edce99fa55977cb26e1faa4d8e
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39638050"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803834"
 ---
 # <a name="overview-of-records"></a>レコードの概要
 
@@ -62,7 +62,7 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
     ![SharePoint の「アイテムが削除されませんでした」というメッセージ](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    「 [アイテム保持ポリシーは所定の場所にあるコンテンツに対してどのように作用するか](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)」で説明されているように、ユーザーが OneDrive でレコードを削除しようとすると、アイテムはアイテム保管ライブラリに移動されます。
+    「[アイテム保持ポリシーは所定の場所にあるコンテンツに対してどのように作用するか](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)」で説明されているように、ユーザーが OneDrive でレコードを削除しようとすると、アイテムはアイテム保管ライブラリに移動されます。
 
   - **レコード ラベルは削除できません。** レコードラベルがアイテムに適用されると、その場所の管理者 (SharePoint サイトのサイト コレクション管理者など) のみがそのレコード ラベルを削除できます。
 
@@ -76,7 +76,7 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
    ![[このラベルを使用して、コンテンツをレコードに分類する] チェックボックスをクリックします](media/recordversioning6.png)
 
-3. 保持ラベルを SharePoint サイトおよび/または OneDrive アカウントに[公開](labels.md#how-retention-labels-work-with-retention-label-policies)または[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。 
+3. 保持ラベルを SharePoint サイトおよび/または OneDrive アカウントに[公開](labels.md#how-retention-labels-work-with-retention-label-policies)または[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
 
 ### <a name="applying-a-retention-label-to-content"></a>コンテンツに保持ラベルを適用する
 
@@ -85,7 +85,7 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 これは、SharePoint サイトまたは OneDrive アカウント上のドキュメントにレコード ラベルが適用されたときの外観です。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning7.png" alt-text="レコードとしてタグ付けされたドキュメントの詳細ウィンドウ":::
+![レコードとしてタグ付けされたドキュメントの詳細ウィンドウ](media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>レコードのバージョン管理
 
@@ -102,7 +102,7 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 レコードのバージョン管理は、アイテムをレコードとして宣言する保持ラベルを持つすべてのドキュメントで自動的に使用できます。 ユーザーが詳細ウィンドウでドキュメントのプロパティを表示すると、**レコード ステータス**が**ロック済み**から**ロック解除**に切り替わります。 この一回のクリックによりアイテム保管ライブラリの [レコード] フォルダーにレコードが作成され、保存期間の残りの期間はそこに保存されます。 ドキュメントのロックが解除されている間、アクセス許可を持つすべてのユーザーがファイルを編集できます。 ただし、宣言されたレコードと見なされるため、ユーザーはファイルを削除できません。 必要な変更が行われた後、ユーザーは**レコード ステータス**を**ロック解除**から**ロック済み**へと切り替えることができるため、ドキュメントは再びレコードとして宣言され、編集できなくなります。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning8.png" alt-text="レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ":::
+![レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ](media/recordversioning8.png)
 
 > [!NOTE]
 > レコードのバージョン管理には、SharePoint サイトまたは OneDrive アカウントでレコードとして宣言されているコンテンツを編集する権限を持つユーザーごとに Office 365 Enterprise E5 ライセンスが必要です。 読み取り専用アクセス権を持つユーザーは、ライセンスを必要としません。
@@ -112,7 +112,7 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 レコード ラベルがドキュメントに割り当てられた後、規定のメンバー グループ (投稿アクセス許可レベル) のユーザーは、レコードのロックを解除したり、ロックが解除されたレコードをロックしたりできます。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning9.png" alt-text="レコード ステータスは、レコード ドキュメントがロック解除されていることを示しています":::
+![レコード ステータスは、レコード ドキュメントがロック解除されていることを示しています](media/recordversioning9.png)
 
 ユーザーがレコードのロックを解除すると、以下のアクションが発生します。
 
@@ -133,7 +133,7 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 ユーザーがレコードのロックを解除するたびに、最新バージョンがアイテム保管ライブラリの [レコード] フォルダーにコピーされ、そのバージョンには**レコード**の値がバージョン履歴の [**コメント**] フィールドに含まれます。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning10.png" alt-text="アイテム保管ライブラリに表示されるレコード":::
+![アイテム保管ライブラリに表示されるレコード](media/recordversioning10.png)
 
 バージョン履歴を表示するには、ドキュメント ライブラリでドキュメントを選択し、[アイテム] メニューの [**バージョン履歴**] をクリックします。
 
@@ -142,11 +142,11 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 レコードは、サイト コレクションのトップレベル サイトにあるアイテム保管ライブラリの [レコード] フォルダーに保存されます。 トップレベル サイトの左側のナビゲーションで、[**サイト コンテンツ**] \> [**アイテム保管ライブラリ**] を選択します。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning11.png" alt-text="アイテム保管ライブラリ":::
+![アイテム保管ライブラリ](media/recordversioning11.png)
 
 <br/><br/>
 
-:::image type="content" source="media/recordversioning12.png" alt-text="アイテム保管ライブラリの [レコード] フォルダー":::
+![アイテム保管ライブラリの [レコード] フォルダー](media/recordversioning12.png)
 
 アイテム保管ライブラリは、サイト コレクション管理者にのみ表示されます。 また、アイテム保管ライブラリは規定では存在しません。 保持ラベルまたは保持ポリシーの対象となるコンテンツがサイト コレクション内で初めて削除された場合にのみ作成されます。
 
@@ -155,6 +155,6 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 レコードのロックおよびロック解除のアクションは、Office 365 監査ログに記録されます。 **レコード ステータスがロックに変更されました**および**レコード ステータスがロック解除に変更されました**の特定のアクティビティを検索できます。これらのアクティビティはセキュリティ/コンプライアンス センター内にあり、[**ファイルとページのアクティビティ**] セクションは [**アクティビティ**] ドロップダウン リストに、そしてこのドロップダウン リストは [**監査ログの検索**] ページ にあります。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning13.png" alt-text="レコードのバージョン管理イベントの監査ログを検索する":::
+![レコードのバージョン管理イベントの監査ログを検索する](media/recordversioning13.png)
 
 これらのイベントの検索に関する詳細情報については、「[セキュリティ/コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)」の "ファイルとページのアクティビティ" セクションを参照してください。
