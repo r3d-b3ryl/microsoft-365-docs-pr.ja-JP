@@ -1,5 +1,5 @@
 ---
-title: 欧州規格 EN 301 549 レポート
+title: 欧州規格 EN 301 549
 description: Microsoft クラウドは多数のサービスから構成され、多数の個別の適合レポートに記載されています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
@@ -11,33 +11,34 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3bb38720caaa27b0f8deba26046410c0d8f25d6c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859937"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805210"
 ---
-# <a name="european-standards-en-301-549-reports"></a>欧州規格 EN 301 549 レポート
+# <a name="european-standards-en-301-549"></a>欧州規格 EN 301 549
 
 ## <a name="about-en-301-549"></a>EN 301 549 について
 
-情報処理および情報通信 (ICT) 製品およびサービスの公共調達に適したアクセシビリティ要件は、EN 301 549 に記載されています。そしてそれは、Web サイト、ソフトウェア、デジタル デバイスを含む、ICT 製品およびサービス用の一連の規格です。 2014 年、欧州委員会の要請に応じ、欧州電気通信標準化機構 (ETSI) によって EN 301 549 は発行されました。そしてそれは、2018 年のバージョン 2.1.2 で更新されました。 それは、政府機関および公的部門の組織による調達の際に使用されることを目的としています。 EN 301 549 では、第 9.2 条の Web アクセシビリティに適した WCAG 2.1 規格が具体化されています。
+情報処理および情報通信 (ICT) 製品およびサービスに適したアクセシビリティ要件は、EN 301 549 に記載されており、Web サイト、ソフトウェア、デジタル デバイスを含む、ICT 製品およびサービス用の一連の規格です。 2014 年、欧州委員会の要請に応じ、欧州電気通信標準化機構 (ETSI) によって EN 301 549 は発行されました。2019 年 11 月に最新バージョン 3.1.1 に更新されました。 EN 301 549 3.1.1 には、Web アクセシビリティのための [WCAG](offering-WCAG-2-1.md) 規格が組み込まれています。
 
-Microsoft は、欧州列国の主要なソフトウェアおよびクラウド サービスのプロバイダーであるため、すべての関連する [政府規格およびコンプライアンス規制](https://go.microsoft.com/fwlink/p/?linkid=2051708) を遵守することに尽力しています。 これらの広範囲にわたるアクセシビリティ規格に忠実であることで、Microsoft では、政府内外両方のすべての顧客が Microsoft サービスおよび製品を使用できることを保証します。
+Microsoft は、欧州列国の主要なソフトウェアおよびクラウド サービスのプロバイダーです。 調達決定を行う政府機関のお客様を支援するため、Microsoft は、Microsoft の製品とサービスが EN 301 549 の条件をどの程度サポートしているかを説明するアクセシビリティ仕様適合レポート (ACR) を発行しています。 ACR に記載された情報は、Microsoft のお客様が、製品やサービスが特定のニーズに合うかどうかを判断するのに役立ちます。
 
 ## <a name="microsoft-and-en-301-549"></a>マイクロソフトと EN 301 549
 
-Microsoft の EN 301 549 規格に対する順守は、すべての顧客のアクセシビリティへの取り組みを指向します。 EN 301 549 は、Section 508 (米国) および WCAG 2.1 (国際) を補完する欧州固有のアクセシビリティ規格です。
+Microsoft は、製品およびサービスの開発において EN 301 549 を考慮することにより、すべての顧客のアクセシビリティへの取り組みを指向します。
 
-## <a name="microsoft-in-scope-cloud-services"></a>対象となるマイクロソフトのクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
 - Dynamics 365、Dynamics 365 米国政府
 - Intune
 - [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Office 365 U.S. Government Defense
+- Office 365 米国防総省
 - Windows Server 2016
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft アクセシビリティ適合レポート
@@ -51,6 +52,6 @@ Microsoft の EN 301 549 規格に対する順守は、すべての顧客のア�
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf) ファイルをダウンロードできます。

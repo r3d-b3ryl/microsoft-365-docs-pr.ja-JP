@@ -1,6 +1,6 @@
 ---
-title: Web Content Accessibility Guidelines 2.1
-description: Microsoft は、完全な製品またはサービス、または個別にインストールできる製品の一部を反映した WCAG 2.1 AA レポートを公開しています。
+title: Web Content Accessibility Guidelines
+description: Microsoft は、完全な製品やサービス、または個別にインストールできる製品の一部を反映した WCAG AA レポートを発行しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -11,30 +11,31 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a1887bd2b6c04836ebb11d224fcc59debcd88e55
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 316347bb212e415848586c88936bd345fd5d1a94
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859447"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804210"
 ---
-# <a name="web-content-accessibility-guidelines-21"></a>Web Content Accessibility Guidelines 2.1
+# <a name="web-content-accessibility-guidelines"></a>Web Content Accessibility Guidelines
 
-## <a name="about-wcag-21"></a>WCAG 2.1 について
+## <a name="about-wcag"></a>WCAG について
 
-WCAG 2.1 は、障碍のある方や、グラフィック性能が限られているデバイスの利用者のアクセシビリティを改善する Web コンテンツを作成するためのフレームワークを提供します。 WCAG 2.0 は、2008 年に、Web 標準を策定する専門の国際組織である World Wide Web Consortium (W3C) によって発行され、2018 年 6 月に WCAG 2.1 に更新されました。 2012 年には、WCAG 2.0 も ISO/IEC 40500:2012 として、国際標準化機構 (ISO) によって発行されました。  
-  
-WCAG 2.1 に適合するコンテンツは、WCAG 2.0 にも適合しています。 WCAG 2.0 への適合を必要とするポリシーの場合、WCAG 2.1 は代替の適合手段を提供できます。  
-  
-各ガイドラインの適合要件は、A、AA、AAA の 3 レベルで評価されます。 Microsoft は、世界中の州および政府に対する主要なソフトウェアおよびクラウド サービス プロバイダーであるため、関連するすべての[国際標準およびコンプライアンス管理](https://go.microsoft.com/fwlink/p/?linkid=2052226)の遵守に取り組んでいます。 これらの広範囲にわたるアクセシビリティ規格に忠実であることで、Microsoft では、政府内外両方のすべての顧客が Microsoft サービスおよび製品を使用できることを保証します。  
+Web Content Accessibility Guidelines (WCAG) は、障碍のある方にとって Web コンテンツをアクセスしやすくするためのフレームワークを提供します。 WCAG バージョン 2.0 は、2008 年に、Web 標準を策定する専門の国際組織である World Wide Web Consortium (W3C) によって発行され、2018 年 6 月に WCAG 2.1 に更新されました。 2012 年には、WCAG 2.0 も ISO/IEC 40500:2012 として、国際標準化機構 (ISO) によって発行されました。
 
-## <a name="microsoft-and-wcag-21"></a>Microsoft と WCAG 2.1
+WCAG 2.1 に適合するコンテンツは、WCAG 2.0 にも適合しています。 WCAG 2.0 への適合を必要とするポリシーの場合、WCAG 2.1 は代替の適合手段を提供できます。
 
-Microsoft が WCAG 2.1 (ISO/IEC 40500) 標準を順守していることは、すべての顧客がテクノロジーとデータにアクセスできるようにするという責任を示しています。 WCAG 2.1 (ISO/IEC 40500) は、EN 301 549 (ヨーロッパ) およびセクション 508 (米国) を補完する国際的なアクセシビリティ要件です。  
+Microsoft は、世界各国のコンシューマー、ビジネス、政府の主要なソフトウェアおよびクラウド サービスのプロバイダーです。 購入を決定するお客様を支援するため、Microsoft は、Microsoft の製品とサービスが WCAG の条件をどの程度サポートしているかを説明するアクセシビリティ仕様適合レポートを発行しています。 この情報は、Microsoft のお客様が、特定の製品やサービスが特定のニーズに合うかどうかを判断するのに役立ちます。
   
-Microsoft は、製品またはサービス全体を表す WCAG 2.1 レポートを発行しています。 通常、個々の機能またはコンポーネントのレポートは作成されません。 Microsoft は、既存の製品の新しいコンポーネントや、既存のコンポーネントの新しいバージョンをリリースし、そのコンポーネントをユーザーが個別にインストールできる場合は、そのコンポーネントについての WCAG 2.1 レポートを発行する場合があります。  
-  
-[WCAG 2.1 (ISO/IEC 40500) アクセシビリティ標準をダウンロードする](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+## <a name="microsoft-and-wcag"></a>Microsoft と WCAG
+
+Microsoft は、製品およびサービスの開発において WCAG を考慮することにより、すべてのお客様がテクノロジとデータにアクセスできるようにする取り組みを指向します。
+
+Microsoft は、製品またはサービス全体を表す WCAG レポートを発行しています。 通常、個々の機能またはコンポーネントのレポートは作成されません。 Microsoft は、既存の製品の新しいコンポーネントや、既存のコンポーネントの新しいバージョンをリリースし、そのコンポーネントをユーザーが個別にインストールできる場合は、そのコンポーネントについての WCAG レポートを発行する場合があります。
+
+[WCAG (ISO/IEC 40500) アクセシビリティ標準をダウンロードする](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -48,22 +49,15 @@ Microsoft は、製品またはサービス全体を表す WCAG 2.1 レポート
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft アクセシビリティ適合レポート
 
-すべての製品およびサービスの WCAG レポートを検索します。
-
-[**詳細情報**](https://go.microsoft.com/fwlink/p/?linkid=2050974)
+[すべての製品およびサービス](https://go.microsoft.com/fwlink/p/?linkid=205097)の WCAG レポートをお読みください。
 
 ## <a name="resources"></a>リソース
 
-Microsoft アクセシビリティ サイト — アクセシビリティ機能の使用に関する情報を取得して、すべてのユーザーがもっと多くのことを達成するために Microsoft ではどのような革新が行われているのかを理解します。
+- [Microsoft アクセシビリティ サイト](https://www.microsoft.com/accessibility): アクセシビリティ機能の使用に関する情報を取得して、すべてのユーザーがもっと多くのことを達成するために Microsoft ではどのような革新が行われているのかを理解します。
+- [Office 365 アクセシビリティ センター](https://go.microsoft.com/fwlink/p/?linkid=2051801): 障碍のある方のための Office 365 のリソースです。
+- [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-[Office 365 アクセシビリティ センター](https://go.microsoft.com/fwlink/p/?linkid=2051801)
-    - 身体に障害のある方向けの Office 365 リソース
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-[Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890)
-    - 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
-
-[Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
-
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf) ファイルをダウンロードできます。
