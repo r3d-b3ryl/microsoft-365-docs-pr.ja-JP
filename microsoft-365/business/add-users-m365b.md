@@ -16,21 +16,31 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Microsoft 365 Business で新しいユーザーを追加し、デバイスをセキュリティで保護し、役割を割り当てる方法について説明します。
-ms.openlocfilehash: 25f19873400dad1c57445a63dd354bbb5d1fce49
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: f0498134d9f258f831cdbab10b7ee9c77b5d133d
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38322537"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850926"
 ---
 # <a name="add-more-users-to-microsoft-365-business"></a>Microsoft 365 Business にさらにユーザーを追加する
 
 ## <a name="add-new-users"></a>新しいユーザーを追加する
+
+ユーザーの追加に関する短いビデオを視聴します。 <br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
+
+ユーザーを追加するには、次のようにします。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
 2. 左側のナビゲーションウィンドウで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。

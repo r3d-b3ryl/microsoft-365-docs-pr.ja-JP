@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: IPhone または Android 電話機に Office をインストールすると、Office アプリの仕事ファイルは Microsoft 365 Business によって保護されます。
-ms.openlocfilehash: d87ea714f578130d05be57d1f66270b306f37c7c
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 6dc116f9c0822d33e8d742d065c8485a0cf82c37
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831385"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850826"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする
 
@@ -39,9 +39,11 @@ ms.locfileid: "39831385"
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-Microsoft 365 Business を使用して iOS デバイスで Office アプリをセットアップする方法についてのビデオをご覧ください。<br><br>
+Microsoft 365 Business を使用して iOS デバイスで Office アプリをセットアップする方法について、簡単なビデオを見ることができます。<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
 
 **App Store** に移動し、検索フィールドに「 Microsoft Outlook」と入力します。
   

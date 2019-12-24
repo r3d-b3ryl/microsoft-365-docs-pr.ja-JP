@@ -23,14 +23,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business のセットアップ手順の概要。
-ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967625"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850806"
 ---
 # <a name="overview-of-setup"></a>手順の概要
+
+Microsoft 365 Business のセットアップに関する短いビデオをご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
 
 セットアップの手順のほとんどはセットアップウィザードで行うことができますが、その他のオプションも表示されます。
 
@@ -50,14 +56,12 @@ ms.locfileid: "39967625"
   
   セットアップウィザードのセキュリティ設定に加えて、次の設定を追加することによって、セキュリティを向上させることができます。
 
-
 - **メールマルウェア対策**
 - **ATP のフィッシング対策**
 - **Exchange Online Archiving**
 - **Azure Information Protection (Plan1**)
 
-
-開始するには、「 [advanced security policies をセットアップ](set-up-advanced-security.md)する」を参照してください。
+作業を開始するには、「[高度セキュリティポリシーのセットアップ](set-up-advanced-security.md)」を参照してください。
 
 セキュリティに関するベストプラクティスのロードマップについては[、Microsoft 365 Business をセキュリティで保護するための10のトップの方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)も参照してください。
 
