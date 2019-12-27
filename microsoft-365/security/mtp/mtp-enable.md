@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 セキュリティ センターで Microsoft Threat Protection を有効にする
 description: Microsoft Threat Protection を有効にし、セキュリティ インシデントと応答の統合を開始する方法について説明します。
-keywords: 開始する、MTP、Microsoft Threat Protection、M365、セキュリティ、データの場所
+keywords: 作業の開始、MTP の有効化、Microsoft Threat Protection、M365、セキュリティ、データの場所、必要なアクセス許可、ライセンスの資格を取得します。
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7790e079d4b39b5d41961a26bb17009adb1bec1d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 842c3be031e96467c8b82e8cf482435e66124960
+ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808452"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "40881978"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -33,8 +33,10 @@ ms.locfileid: "40808452"
 
 Microsoft Threat Protection は、Microsoft Defender Advanced Threat Protection (ATP)、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP の主要機能を統合することで、インシデント対応プロセスを統合します。 この統合されたエクスペリエンスにより、Microsoft 365 セキュリティ センターでアクセスできる強力な機能が追加されました。
 
-## <a name="check-your-eligibility"></a>利用資格を確認する
+## <a name="check-license-eligibility-and-required-permissions"></a>ライセンスの利用資格と必要なアクセス許可を確認する
 Microsoft 365 E5 または同等のライセンスをお持ちのお客様は、Microsoft Threat Protection を使用できます。 詳細については、[ライセンス要件を参照してください](prerequisites.md#licensing-requirements)。
+
+ Microsoft の脅威保護を有効にするには、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)の**全体管理**者または**セキュリティ管理者**である必要があります。
 
 ## <a name="start-using-the-service"></a>サービスの使用を開始する
 Microsoft Threat Protection サービスを有効にすると、さまざまな統合サービスからのデータが集約されます。 データは一元的に処理および保存され、新しい分析情報が特定され、一元化された応答ワークフローが可能になります。
@@ -44,7 +46,7 @@ Microsoft Threat Protection サービスを有効にすると、さまざまな�
 ![Microsoft Threat Protection 機能を使用しない Microsoft 365 セキュリティ センター メニューの画像](../images/mtp-off.png)
 *Microsoft Threat Protection を無効にした Microsoft 365 セキュリティ センター*
 
-Microsoft Threat Protection サービスを有効にするには、Microsoft 365 セキュリティ センターの [**設定**]  >  [**Microsoft Threat Protection**]  >  [**オプトイン/オプトアウト**] の順に移動します。 このタスクを実行するには、[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) のグローバル管理者またはセキュリティ管理者である必要があります。
+Microsoft Threat Protection サービスを有効にするには、Microsoft 365 セキュリティ センターの [**設定**]  >  [**Microsoft Threat Protection**]  >  [**オプトイン/オプトアウト**] の順に移動します。
 
 Microsoft Defender ATP が組織にプロビジョニングされている場合、データは、[Microsoft Defender ATP データ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)用に選択した同じデータ センターの場所に保存および処理されます。 Microsoft Defender ATP がない場合は、Microsoft Threat Protection 専用の新しいデータ センターの場所を選択するよう求められます。 データがサービス間で共有され、集計される前に、同意する必要があります。
 
