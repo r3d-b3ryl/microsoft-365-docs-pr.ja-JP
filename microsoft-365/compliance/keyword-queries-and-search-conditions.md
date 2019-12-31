@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for Business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
-ms.openlocfilehash: 5c5aafebf0dabfd43487c0c410088fe2a50aef35
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d76f92de4b41c7f6f0494af36a7e1aee953b9896
+ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808502"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911475"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -83,7 +83,7 @@ ms.locfileid: "40808502"
 |:-----|:-----|:-----|:-----|
 |設定元|ドキュメントがコピーされた場合に保持される Office ドキュメントの作成者フィールドです。 たとえば、ユーザーがドキュメントを作成し、そのドキュメントを他のユーザーが SharePoint にアップロードした場合、そのドキュメントは元の作成者を保持したままになります。 このプロパティには、必ずユーザーの表示名を使用してください。|`author:"Garth Fort"`|Garth Fort によって作成されたすべてのドキュメント。|
 |ContentType|アイテム、ドキュメント、ビデオなどのアイテムの SharePoint コンテンツタイプ。|`contenttype:document`|すべてのドキュメントが返されます。|
-|Created|アイテムが作成された日付。|`created\>=06/01/2016`|2016年6月1日以降に作成されたすべてのアイテム。|
+|作成済み|アイテムが作成された日付。|`created\>=06/01/2016`|2016年6月1日以降に作成されたすべてのアイテム。|
 |CreatedBy|アイテムを作成またはアップロードした人。 このプロパティには、必ずユーザーの表示名を使用してください。|`createdby:"Garth Fort"`|Garth Fort によって作成またはアップロードされたすべてのアイテム。|
 |DetectedLanguage|アイテムの言語。|`detectedlanguage:english`|英語のすべてのアイテム。|
 |DocumentLink|SharePoint または OneDrive for business サイトの特定のフォルダーのパス (URL)。 このプロパティを使用する場合は、指定したフォルダーが配置されているサイトを検索するようにしてください。  <br/> Documentlink プロパティに指定したフォルダーのサブフォルダーにあるアイテムを返すには、指定したフォルダー\*の URL にを追加する必要があります。例えば`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Documentlink プロパティを検索する方法と、スクリプトを使用して特定のサイト上のフォルダーの documentlink Url を取得する方法の詳細については、「[対象化コレクション用に Office 365 のコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business フォルダー内のすべてのアイテムを返します。 2番目の例では、指定されたサイトフォルダー (およびすべてのサブフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
@@ -91,7 +91,7 @@ ms.locfileid: "40808502"
 |FileName|ファイルの名前。|`filename:"marketing plan"`  <br/> `filename:estimate`|最初の例では、タイトルに "marketing plan" と完全一致する語句が含まれるファイルが返されます。2 番目の例では、ファイル名に "estimate" という単語を含むファイルが返されます。|
 |LastModifiedTime|アイテムが最後に変更された日付。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|最初の例では、2016年5月1時以降に変更されたアイテムを返します。 2番目の例では、2016年5月1日から2016年6月1日までの間に変更されたアイテムを返します。|
 |ModifiedBy|アイテムを最後に変更した人。 このプロパティには、必ずユーザーの表示名を使用してください。|`modifiedby:"Garth Fort"`|Garth Fort によって最後に変更されたすべてのアイテム。|
-|Path|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。  <br/> Path プロパティに指定したサイト内のフォルダーにあるアイテムを返すには、指定したサイト\*の URL を追加する必要があります。例えば`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注:** OneDrive の`Path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 検索クエリで別のサイトプロパティを使用して、OneDrive フォルダーのメディアファイルを検索します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムを返します。 2番目の例では、指定したサイト (およびサイト内のフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
+|パス|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。  <br/> Path プロパティに指定したサイト内のフォルダーにあるアイテムを返すには、指定したサイト\*の URL を追加する必要があります。例えば`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注:** OneDrive の`Path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 検索クエリで別のサイトプロパティを使用して、OneDrive フォルダーのメディアファイルを検索します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムを返します。 2番目の例では、指定したサイト (およびサイト内のフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
 |SharedWithUsersOWSUser|指定したユーザーと共有され、ユーザーの OneDrive for Business サイトの [**自分と共有**] ページに表示されるドキュメント。 これらは、組織内の他のユーザーによって指定されたユーザーが明示的に共有しているドキュメントです。 SharedWithUsersOWSUser プロパティを使用する検索クエリに一致するドキュメントをエクスポートすると、指定されたユーザーとドキュメントを共有しているユーザーの元のコンテンツの場所からドキュメントがエクスポートされます。 詳細については、「[組織内で共有しているサイトコンテンツを検索する](#searching-for-site-content-shared-within-your-organization)」を参照してください。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|両方の例では、Garth 砦と明示的に共有されており、Garth 砦の OneDrive for Business アカウントの [**自分と共有**] ページに表示されるすべての内部ドキュメントを返します。|
 |Site|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザーについて、OneDrive for Business サイトからアイテムを返します。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
 |Size|アイテムのサイズ (バイト数)。|`size>=1`  <br/> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
@@ -150,7 +150,7 @@ ms.locfileid: "40808502"
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT kind: im|キーワードまたは`property:value`式で指定された項目を除外します。 2番目の例では、彩 Beebe によって送信されたメッセージを除外します。 3番目の例では、会話履歴メールボックスフォルダーに保存されている Skype for Business の会話など、インスタントメッセージングの会話を除外します。 <sup>2</sup>|
 |-|keyword1 -keyword2|**NOT** 演算子と同じです。 そのため`keyword1` 、このクエリは、を含むアイテムを返し、 `keyword2`を含むアイテムを除外します。|
 |NEAR|keyword1 NEAR(n) keyword2|互いに近い単語を含む項目を返します。 n は単語の数と等しくなります。 たとえば、 `best NEAR(5) worst` "最下位" という単語が5単語の "best" に含まれているアイテムを返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>2</sup>|
-|ONEAR|keyword1 ONEAR(n) keyword2|**Near**に似ていますが、指定された順序で互いに近い単語を持つアイテムを返します。 たとえば、" `best ONEAR(5) worst` best" という単語の前に "best" が出現し、2つの単語がそれぞれ互いの5つの単語の中にある場合は、"best" という単語を返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>2</sup> <br/> > [!NOTE]>、 **Onear**演算子はメールボックスの検索時にサポートされていません。 SharePoint と OneDrive for business サイトを検索する場合にのみ機能します。 同じ検索でメールボックスとサイトを検索していて、クエリに**Onear**演算子が含まれている場合、検索では、 **NEAR**演算子を使用している場合と同じように、メールボックスアイテムが返されます。 つまり、検索では、単語が出現する順序に関係なく、指定した単語が互いに近くにあるアイテムが返されます。|
+|ONEAR|keyword1 ONEAR(n) keyword2|**Near**に似ていますが、指定された順序で互いに近い単語を持つアイテムを返します。 たとえば、" `best ONEAR(5) worst` best" という単語の前に "best" が出現し、2つの単語がそれぞれ互いの5つの単語の中にある場合は、"best" という単語を返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>2</sup> <br/> **注:** メールボックスの検索では、 **Onear**演算子はサポートされていません。 SharePoint と OneDrive for business サイトを検索する場合にのみ機能します。 同じ検索でメールボックスとサイトを検索していて、クエリに**Onear**演算子が含まれている場合、検索では、 **NEAR**演算子を使用している場合と同じように、メールボックスアイテムが返されます。 つまり、検索では、単語が出現する順序に関係なく、指定した単語が互いに近くにあるアイテムが返されます。|
 |:|property:value|コロン (:)`property:value`構文では、検索対象のプロパティの値に指定された値が含まれることを指定します。 たとえば、  `recipients:garthf@contoso.com` は garthf@contoso.com に送信されたすべてのメッセージを返します。|
 |=|property=value|**:** 演算子と同じです。|
 |\<|property\<value|検索対象のプロパティが指定の値より小さいことを意味します。<sup>1</sup>|
@@ -203,7 +203,7 @@ ms.locfileid: "40808502"
 |:-----|:-----|
 |メッセージの種類| 検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |参加者|電子メールメッセージ内のすべての人物フィールド。 これらのフィールドは、From、To、Cc、および Bcc です。|
-|種類|電子メールアイテムのメッセージクラスプロパティ。 このプロパティは、ItemClass email プロパティと同じです。 複数値の条件でもあります。 そのため、複数のメッセージクラスを選択するには、 **CTRL**キーを押したまま、条件に追加するドロップダウンリストで2つ以上のメッセージクラスをクリックします。 リストで選択した各メッセージクラスは、対応する検索クエリの**or**演算子によって論理的に接続されます。  <br/> Exchange によって使用さ**れるメッセージクラス**(および対応するメッセージクラス ID) の一覧については、「[アイテムの種類とメッセージクラス](https://go.microsoft.com/fwlink/?linkid=848143)」を参照してください。|
+|型|電子メールアイテムのメッセージクラスプロパティ。 このプロパティは、ItemClass email プロパティと同じです。 複数値の条件でもあります。 そのため、複数のメッセージクラスを選択するには、 **CTRL**キーを押したまま、条件に追加するドロップダウンリストで2つ以上のメッセージクラスをクリックします。 リストで選択した各メッセージクラスは、対応する検索クエリの**or**演算子によって論理的に接続されます。  <br/> Exchange によって使用さ**れるメッセージクラス**(および対応するメッセージクラス ID) の一覧については、「[アイテムの種類とメッセージクラス](https://go.microsoft.com/fwlink/?linkid=848143)」を参照してください。|
 |Received|電子メール メッセージが受信者によって受信された日付。 これは、Received メール プロパティと同じプロパティです。|
 |受信者|電子メールメッセージ内のすべての受信者フィールド。 これらのフィールドは、[宛先]、[Cc]、および [Bcc] になります。|
 |Sender|電子メール メッセージの差出人。|
@@ -220,7 +220,7 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
 |:-----|:-----|
 |設定元|ドキュメントがコピーされた場合に保持される Office ドキュメントの作成者フィールドです。 たとえば、ユーザーがドキュメントを作成し、そのドキュメントを他のユーザーが SharePoint にアップロードした場合、そのドキュメントは元の作成者を保持したままになります。|
 |役職|ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。|
-|Created|ドキュメントが作成された日付。|
+|作成済み|ドキュメントが作成された日付。|
 |最終更新日時|ドキュメントが最後に変更された日付。|
 |ファイルの種類|ファイルの拡張子。例: .docx、one、.pptx、または .xlsx。 これは、FileExtension サイト プロパティと同じプロパティです。|
 |||
