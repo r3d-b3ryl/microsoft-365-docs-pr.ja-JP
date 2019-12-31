@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 4aff384d571444e5641d3bcff58df136d27c7624
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40832050"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910118"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -31,6 +31,9 @@ ms.locfileid: "40832050"
 > フィルター処理を正常に機能させるには、メールボックスで迷惑メールの構成を有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合はオンにしてください。 詳細については[、「set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) 」を参照してください。 
 
 このトピックでは、Office 365 ユーザーを保護するために Microsoft が推奨する設定について説明します。
+
+> [!TIP]
+> これらの設定の一部を決定するのに役立つ、Office 365 Advanced Threat Protection 推奨構成アナライザー (ORCA) と呼ばれる、ダウンロードできる新しい PowerShell モジュールがあります。 テナントで管理者として実行すると、ORCAReport はスパム対策、フィッシング、その他のメッセージの検疫設定の評価を作成するのに役立ちます。 このモジュールは、にhttps://www.powershellgallery.com/packages/ORCA/ダウンロードできます。
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング対策保護
 
@@ -45,7 +48,7 @@ ms.locfileid: "40832050"
 |フィッシング電子メールの検出アクション|検疫メッセージ|検疫メッセージ||
 |高信頼フィッシング電子メール検出アクション|検疫メッセージ|検疫メッセージ||
 |電子メールの一括検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|バルクメールしきい値をに設定する|6 |2/4|現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
+|バルクメールしきい値をに設定する|6 |4 |現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
 |検疫の保存期間|30 日間|30 日間||
 |安全性に関するヒント|オン|オン||
 |許可された送信者|なし|なし||
@@ -58,7 +61,7 @@ ms.locfileid: "40832050"
 
 高度なスパムフィルターと呼ばれる、この記述時に廃止されたスパム対策ポリシーには、その他のパラメーターがいくつかあります。 これらの推奨設定は、標準レベルと厳密なレベルの両方で**オフ**にすることをお勧めします。
 
-|セキュリティ機能の名前| Comments |
+|セキュリティ機能の名前| コメント |
 |---------|---------|
 |IncreaseScoreWithImageLinks| |
 |IncreaseScoreWithNumericIps| |
@@ -80,16 +83,16 @@ ms.locfileid: "40832050"
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|送信スパムポリシーの受信者の制限-外部時間の制限|500|400||
-|送信スパムポリシーの受信者の制限-内部時間の制限|1000|800||
-|送信スパムポリシー受信者の制限-毎日の制限|1000|800||
+|送信スパムポリシーの受信者の制限-外部時間の制限|400|500||
+|送信スパムポリシーの受信者の制限-内部時間の制限|800|1000||
+|送信スパムポリシー受信者の制限-毎日の制限|800|1000||
 |ユーザーが制限を超えた場合のアクション|ユーザーがメールを送信するのを制限する|ユーザーがメールを送信するのを制限する||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP マルウェア対策ポリシー設定
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|マルウェア検出応答|不要|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
+|マルウェア検出応答|いいえ|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |不審なファイルの種類をブロックするための "一般的な添付ファイルの種類のフィルター"|オン|オン||
 |マルウェアのゼロ時間の自動削除|オン|オン||
 |配信されていないメッセージの内部送信者に通知する|無効|無効||

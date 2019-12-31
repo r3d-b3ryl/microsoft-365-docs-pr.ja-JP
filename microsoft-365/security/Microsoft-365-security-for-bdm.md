@@ -2,7 +2,7 @@
 title: Microsoft 365 セキュリティ (ビジネス意思決定者向け) (Bdm)
 ms.author: bcarter
 author: brendacarter
-manager: ''
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 環境の組織が現在直面している最も一般的な脅威と攻撃のシナリオ、およびこれらのリスクを軽減するために推奨される処置。
-ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9ad9d05cf29dba5aa3a7d14063db6fa2b4dd3bc4
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801252"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910138"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 セキュリティ (ビジネス意思決定者向け) (Bdm)
 
@@ -134,7 +134,7 @@ Microsoft 365 情報保護機能は、どのような情報が保存されてい
 |**Office 365 ATP**ツールを使用します。<br>•脅威の調査と応答の機能<br> •自動調査と応答 |         |![緑のチェックマーク](../images/green-check-mark.png)|
 |**Microsoft DEFENDER ATP**を使用します。<br> •[エンドポイントの検出と応答](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> •自動調査と修復のセキュリティで保護されたスコア <br>•[高度な](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)検索 <br>|         |![緑のチェックマーク](../images/green-check-mark.png)|
 |**Microsoft Cloud App Security**を使用して、クラウドアプリ間の異常な動作を検出し、ランサムウェア、侵害されたユーザー、または悪意のあるアプリケーションを特定し、リスクを組織に制限するために、危険性の高い使用状況を分析し、自動的に修復します。|         |![緑のチェックマーク](../images/green-check-mark.png)|
-|**Microsoft Azure Sentinel**または**現在の SIEM**ツールを使用して、環境全体にわたる脅威を監視します。 Azure Sentinel は、プレビュー期間中は無料で使用できます。 |         |![緑のチェックマーク](../images/green-check-mark.png)|
+|**Microsoft Azure Sentinel**または現在の SIEM ツールを使用して、環境全体にわたる脅威を監視します。 |         |![緑のチェックマーク](../images/green-check-mark.png)|
 |** [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)を展開**し、オンプレミスの Active Directory 環境を対象とする脅威を監視および保護します。   |         |![緑のチェックマーク](../images/green-check-mark.png) |
 |**Azure セキュリティセンター**を使用して、ハイブリッドおよびクラウドのワークロードにわたる脅威を監視します。 Azure セキュリティセンターには、空き階層と、リソース時間またはトランザクションに基づいて支払われる標準的な機能層が含まれています。|         |         |
 

@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 06/26/2019
+ms.date: 12/30/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: 29e0c8d485d89498fe952d29d8b68f808c4aaaf3
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970133"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910158"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
@@ -122,8 +122,8 @@ ATP の安全なリンクポリシーを設定または編集すると、いく�
 |このオプション  |機能  |
 |---------|---------|
 | **次の Url をブロックする** <br/>    | 自動でブロックされる Url のカスタムリストを組織で使用できるようにします。 ユーザーがこのリストの URL をクリックすると、URL がブロックされる理由を説明する[警告ページ](atp-safe-links-warning-pages.md)が表示されます。 詳細については、「 [Office 365 の ATP の安全なリンクを使用してカスタムのブロックされた url リストをセットアップする](set-up-a-custom-blocked-urls-list-wtih-atp.md)」を参照してください。 |
-| **Office 365 ProPlus、iOS 版 Office および Android** <br/>    | このオプションを選択すると、Windows または Mac OS 上の Word、Excel、および PowerPoint ファイルの Url、iOS 上の Office ドキュメント、Windows 上の Visio 2016、および web バージョンの Office アプリ (Word、PowerPoint、Excel、および web 版) に対して、ATP の安全なリンク保護が適用されます。OneNote)。ユーザーが Office 365 にサインインしていることを示します。 |
-| **ユーザーが ATP の安全なリンクをクリックしたときに追跡しない** <br/>  | このオプションが選択されている場合は、Word、Excel、PowerPoint、および Visio のドキュメントで、[データの Url] をクリックしても保存されません。  <br/> |
+| **Office 365 ProPlus、iOS 版 Office および Android** <br/>    | このオプションが選択されている場合、Windows または Mac OS 上の Word、Excel、および PowerPoint ファイルの Url、Outlook の電子メールメッセージ、iOS または Android デバイス上の Office ドキュメント、Windows 上の Visio 2016 ファイル、および web バージョンの web で開いているファイルに対して、ATP の安全なリンク保護が適用されます。Office アプリ (Word、PowerPoint、Excel、Outlook、OneNote) は、ユーザーが Office 365 にサインインしていることを前提としています。 |
+| **ユーザーが ATP の安全なリンクをクリックしたときに追跡しない** <br/>  | このオプションが選択されている場合は、[Word、Excel、PowerPoint、Visio ドキュメント、および Outlook の電子メールメッセージのデータは保存されません] をクリックします。  <br/> |
 |**ユーザーが元の URL に対して ATP の安全なリンクをクリックできないようにします。** <br/> |このオプションが選択されている場合、ユーザーは、悪意があると判断された URL に[警告ページ](atp-safe-links-warning-pages.md)をスキップすることはできません。  <br/> |
 
 ### <a name="policies-that-apply-to-specific-email-recipients"></a>特定の電子メールの受信者に適用されるポリシー
