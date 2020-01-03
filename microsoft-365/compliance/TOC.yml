@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -22,7 +22,7 @@
       href: protect-access-to-data-and-services.md
     - name: 顧客ロックボックス
       href: customer-lockbox-requests.md
-    - name: 特権アクセスの管理
+    - name: 特権アクセス管理
       items:
         - name: 特権アクセス管理の詳細情報
           href: privileged-access-management-overview.md
@@ -120,7 +120,7 @@
           href: custom-sensitive-info-types.md
         - name: 正確なデータ一致に基づく分類を使用してカスタムの機密情報の種類を作成する
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: セキュリティ & コンプライアンスセンターでカスタムの機密情報の種類を作成する
+        - name: セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
           href: create-a-custom-sensitive-information-type.md
         - name: PowerShell を使用してカスタムの機密情報の種類を作成する
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
@@ -1097,6 +1097,7 @@
             - name: G-Cloud (英国)
               href: offering-g-cloud-uk.md
             - name: IDW PS 951 (ドイツ)
+              href: 'https://www.idw.de/the-idw/about-the-idw'
             - name: IT Grundschutz Workbook (ドイツ)
               href: offering-it-grundschutz-workbook-germany.md
             - name: LOPD (スペイン)
