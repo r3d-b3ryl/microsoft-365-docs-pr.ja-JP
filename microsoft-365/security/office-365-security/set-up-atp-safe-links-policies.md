@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/30/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: 7914c29f932469cdcea7436d1084536eaaf3d093
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910158"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959665"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
@@ -108,6 +108,9 @@ ms.locfileid: "40910158"
   - [**適用先**] セクションで、[**受信者が次のメンバー**である] を選択し、ポリシーに含めるグループを選択します。 [**追加**] を選択し、[ **OK]** を選択します。
     
 6. **[保存]** を選択します。
+
+> [!NOTE]
+> ATP の安全なリンクポリシー優先度の高いポリシーが優先されます。 ユーザーが2つ以上のポリシーの対象になっている場合は、優先度の高いポリシーのみが有効になります。
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>手順 4: ATP の安全なリンクポリシーのオプションについて学習する
 
@@ -139,7 +142,7 @@ ATP の安全なリンクポリシーを設定または編集すると、いく�
 |**ユーザーが元の URL にクリックできないようにする** <br/> |このオプションが選択されている場合、ユーザーは、悪意があると判断された URL に[警告ページ](atp-safe-links-warning-pages.md)をスキップすることはできません。  <br/> |
 |**次の Url を書き換えないでください。** <br/> |Url をそのまま残します。 組織内の特定の電子メール受信者グループに対して、スキャンを必要としない安全な Url のカスタムリストを保持します。  追加の詳細については、「 [ATP Safe Links を使用してカスタムの url リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)」を参照してください\*。これには、ワイルドカードのアスタリスク () のサポートに関する最新の変更が含まれています。  <br/> |
    
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ATP の安全なリンクポリシーを設定すると、レポートを表示することにより、ATP が自分の組織でどのように動作しているかを確認できます。 詳細については、以下のリソースを参照してください。
 

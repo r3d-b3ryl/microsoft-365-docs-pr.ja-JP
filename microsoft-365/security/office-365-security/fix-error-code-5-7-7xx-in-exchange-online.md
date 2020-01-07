@@ -3,7 +3,7 @@ title: Exchange Online でエラーコード 5.7.7 xx のメール配信の問�
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/11/2019
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online でエラーコード 5.7.7 xx の電子メールの問題を解決する方法について説明します (テナントがメールの送信をブロックされた場合)。
-ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970453"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959655"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Exchange Online でエラーコード 5.7.7 xx のメール配信の問題を修正する
 
@@ -27,42 +27,52 @@ ms.locfileid: "39970453"
 
 ## <a name="57705-tenant-has-exceeded-threshold-restriction-what-you-need-to-know"></a>5.7.705: テナントがしきい値制限を超過しました: 知っておくべきこと
 
-内部の送信者は、テナントが侵害された場合に、メールを送信しようとするたびにこの NDR を表示することができます。 これは通常、テナントからのトラフィックの大部分が疑わしいと検出され、テナントの送信機能が禁止されている場合に occus します。 これは、ユーザーが Office 365 から大量のバルクメールを送信した場合にも発生する可能性があります。 サービスの説明に記載されているように、正当なバルク商用電子メール (たとえば、顧客向けのニュースレター) を送信する必要がある Exchange Online のお客様は、これらのサービスに特化したサードパーティのプロバイダーを使用する必要があります。
+ユーザーが特定の量の疑わしい電子メールをサービス経由で送信すると、その問題が解決されるまで、すべてのユーザーが電子メールを送信できなくなります。 これは通常、侵害 (最も一般的) または大量のメールを送信した結果です。 ユーザーは、次のような状態の NDR を受信します。
 
-テナントとしてユーザーが特定の数の疑わしいメールをサービス経由で送信すると、その問題が解決されるまで、すべてのユーザーがメールを送信できなくなります。 ユーザーは、次の状態を示す配信不能レポート (NDR) を受信します。
+`550 5.7.705 Access denied, tenant has exceeded threshold`
 
-- 550 5.7.705 アクセスが拒否されました、テナントはしきい値を超えています
+まれに、既に期限が切れた後にサブスクリプションを更新した場合にも発生する可能性があります。 サービスが新しいサブスクリプション情報 (通常は1日以内) を同期するのには時間がかかりますが、組織がメールを送信できないようにブロックされることがあります。 これを回避する最善の方法は、サブスクリプションの有効期限が切れないようにすることです。
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750: 登録が解除されるドメインの電子メール制限: 理解しておくべき情報
 
-Office 365 では、テナントが Exchange Online Protection (EOP) を介して一部のメッセージを中継できます。 サポートされている例の1つは、ユーザーが Office 365 メールボックスを持っていて、誰かが電子メールを送信したが、電子メール転送がユーザーの外部メールボックスに戻るように構成されている場合です。 これは、学生が個人用の電子メールインターフェイスを利用していても、学校に関連するメールを受信したい教育環境で最も一般的です。 もう1つの例として、顧客がハイブリッドシナリオで、EOP からメールを送信するオンプレミスサーバーがある場合があります。
+Office 365 では、テナントが Exchange Online Protection (EOP) を介して一部のメッセージを中継することが許可されています。 例:
+
+- Office 365 メールボックスは、外部の送信者から電子メールを受信します。 メール転送は Office 365 メールボックスで構成されているため、メッセージはユーザーの外部の電子メールアドレスに戻されます。 このシナリオは、学生が自分の個人用メールアカウントを使用して学校関連のメッセージを表示する教育環境で最もよく見られます。
+
+- EOP を経由して送信メールを送信するオンプレミスの電子メールサーバーを持つハイブリッド envrionments。
 
 ### <a name="problems-with-unregistered-domains"></a>未登録のドメインに関する問題
 
-この問題は、オンプレミスのサーバーが侵害され、EOP の大量のスパムを中継してしまうことにあります。 ほとんどの場合、右コネクタはセットアップされていますが、未登録のドメイン (プロビジョニング解除されたドメインとも呼ばれる) からメールを送信しています。 Office 365 では、登録されていないドメインからのメールの送信を許可していますが、の送信を計画している各ドメインの管理センターで承認済みドメインを構成する必要があります。
+問題は、社内のメールサーバーが危険にさらされた場合に、EOP を介して大量のスパムを中継することです。 ほとんどの場合、コネクタは正しく設定されていますが、未登録の (プロビジョニングされていない) ドメインからメールが送信されています。 Office 365 では、登録されていないドメインからの十分な量の電子メールを使用できますが、電子メールを承認済みドメインとして送信するために使用するすべてのドメインを構成する必要があります。
 
-いったん侵害されると、テナントは未登録のドメインの送信メールを送信できなくなります。 ユーザーは、次の状態を示す配信不能レポート (NDR) を受信します。
+いったん侵害されると、テナントは未登録ドメインの送信電子メールを送信できなくなります。 ユーザーは、次のような状態の NDR を受信します。
 
-- 550 5.7.750 サービスは利用できません。 クライアントが未登録のドメインからの送信をブロックしました
+`550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
 ## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>再送信のためにテナントのブロックを解除する方法
 
-テナントが電子メールの送信をブロックされる場合は、次のようないくつかの作業を行う必要があります。
+テナントが電子メールの送信をブロックされている場合は、いくつかの作業を行う必要があります。
 
-1. Microsoft 365 管理センターですべてのドメインを登録していることを確認してください。 詳細については、[こちら](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)を参照してください。
+1. すべての電子メールドメインが登録されていることを確認します。 詳細については、「 [Office 365 へのドメインの追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)」および「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
 
-2. 異常なコネクタを探します。 悪意のある俳優は、多くの場合、スパムを送信するために Office 365 テナントに新しい受信コネクタを作成します。 コネクタの確認の詳細については、[こちら](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)を参照してください。
+2. 異常な[コネクタ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)を探します。 悪意のある俳優は、スパムを送信するために Office 365 組織に新しい受信コネクタを作成することがよくあります。 既存のコネクタを表示するには、「 [Office 365 でコネクタを検証](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)する」を参照してください。
 
-3. オンプレミスのサーバーをロックし、侵害されないようにします。
+3. 「 [Office 365 で侵害された電子メールアカウントに応答する](responding-to-a-compromised-email-account.md)」の説明に従って、侵害されたユーザーをチェックします。
+
+4. Office 365 組織内のすべての管理者に対して[MFA を有効に](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
+
+5. オンプレミスの電子メールサーバーをロックし、侵害されていないことを確認します。
 
    > [!TIP]
-   > ここでは、特にサードパーティ製のサーバーの場合に、多くの要因が関係しています。 いずれにしても、サーバーから発信されたすべてのメールが正当であることを確認できるようにする必要があります。
+   > 特にサードパーティ製サーバーを使用している場合は、多くの要因があります。 いずれにしても、すべての送信メールが正当であることを確認する必要があります。
 
-4. 完了したら、Microsoft サポートに連絡して、登録されていないドメインから送信されないようにテナントのブロック解除を取得するように依頼する必要があります。  エラーコードを提供することは役に立ちますが、環境がセキュリティで保護されており、スパムが再送信されないことを証明する必要があります。 サポートケースを開く方法については、[こちら](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)を参照してください。
+6. Microsoft サポートに連絡して、未登録のドメインから送信されないようにテナントのブロック解除を取得するように依頼します。 エラーコードは役に立ちますが、環境がセキュリティで保護されており、スパムを送信することができないことを証明する必要があります。 サポート案件を開くには、「 [business products のサポートへのお問い合わせ-管理者向けヘルプ](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)」を参照してください。
 
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [Office 365 メールのスパム対策保護](anti-spam-protection.md)
+
+[Exchange Online サービスの説明の「送信制限」セクションのバルクメールガイダンス](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Office 365 でのメール配信不能レポート](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 

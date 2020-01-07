@@ -3,7 +3,7 @@ title: スパム、非スパム、フィッシング詐欺メッセージを分�
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/19/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: fb939c4166bc6c732f831dc767bffe1cfd7a2f7c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087043"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959645"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
 
@@ -58,10 +58,10 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
     
 3. 迷惑メールまたはフィッシング詐欺メッセージをコピーして、新しいメッセージに添付ファイルとして貼り付けます。 
     
-    > [!NOTE]
-    > 新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類 (フィッシング詐欺メッセージまたは迷惑メールメッセージ) であることを確認します。 > 新しいメッセージの本文は空のままにします。 
+   > [!NOTE]
+   > •新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類であることを確認してください。フィッシング詐欺メッセージまたは迷惑メールメッセージのいずれかです。 <br/><br/>•新しいメッセージの本文を空白のままにします。 <br/><br/>•添付されたメッセージの場合は、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。
   
-4. [ **送信**] をクリックします。
+4. [**送信**] をクリックします。
     
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>通過が許可されるはずだったのに迷惑メールとタグ付けされたメッセージを提出する
 <a name="sectionSection1"> </a>
@@ -72,7 +72,7 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
   
 スパムではないメッセージを送信するには、次のようにします。
   
-- コンテンツフィルターを構成するときに **[迷惑メールフォルダーにメッセージを移動**する] アクションを使用する (これが既定の操作である) 場合、ユーザーは、outlook または web 上の outlook (旧称: Outlook web App) の迷惑メールフォルダーに誤検知メッセージを解放することができます。. 
+- コンテンツフィルターを構成するときに **[迷惑メールフォルダーにメッセージを移動**する] アクションを使用すると (これが既定の動作です)、ユーザーは、outlook または web 上の outlook (旧称 Outlook web App) の迷惑メールフォルダーにある誤検知メッセージを解放することができます。 
     
   - Outlook ユーザーは、**迷惑メール**ではない右クリックメニューオプションを使用して誤検知メッセージを解放できます。 ただし、この記事の手順に示されているように、電子メールでメッセージを Microsoft に送信する必要があります。 
     

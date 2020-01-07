@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: このテストラボガイドを使用して、Microsoft 365 Enterprise テスト環境で特権アクセス管理を有効にします。
-ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: f0010b4d6aa85902473676d023d8b4fb9f4018bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831818"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959635"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の特権アクセスの管理
 
@@ -28,8 +28,8 @@ ms.locfileid: "39831818"
 
 ![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+>[!TIP]
+>[ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
@@ -37,8 +37,8 @@ ms.locfileid: "39831818"
   
 シミュレートされたエンタープライズで特権アクセス管理を構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
-> [!NOTE]
-> 権限のあるアクセス管理をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと AD DS フォレストのディレクトリ同期が含まれます。 この記事は、一般的な組織を表す環境で、特権アクセス管理をテストしてテストできるようにするためのオプションとして提供されています。 
+>[!NOTE]
+>権限のあるアクセス管理をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと AD DS フォレストのディレクトリ同期が含まれます。 この記事は、一般的な組織を表す環境で、特権アクセス管理をテストしてテストできるようにするためのオプションとして提供されています。 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>フェーズ 2: 特権アクセス管理を構成する
 
@@ -74,8 +74,8 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>New-journalrule タスクの新しい特権アクセスポリシーを作成する
 
-> [!NOTE]
-> このガイドのフェーズ2の手順1と2をまだ完了していない場合は、「権限アクセス承認者」という名前の承認者のグループを作成し、テスト環境で特権アクセスを有効にする手順に従ってください。
+>[!NOTE]
+>このガイドのフェーズ2の手順1と2をまだ完了していない場合は、「権限アクセス承認者」という名前の承認者のグループを作成し、テスト環境で特権アクセスを有効にする手順に従ってください。
 
 1. 資格情報を使用して[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。テスト環境のグローバル管理者アカウントです。
 
