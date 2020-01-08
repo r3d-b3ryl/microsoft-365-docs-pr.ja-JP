@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859777"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959605"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>EU 一般データ保護規則 (GDPR)
 
@@ -67,9 +68,13 @@ Microsoft のお客様である INAIL が GDPR に備えるために機密デー
 
 [コンプライアンス マネージャー](https://go.microsoft.com/fwlink/p/?linkid=2048390)を使用すると、継続的なリスク評価の実施、実行可能な分析情報の取得、コンプライアンス プロセスの簡素化を行うことができます。
 
-### <a name="security-and-compliance-center"></a>セキュリティ/コンプライアンス センター
+### <a name="microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センター
 
-Microsoft 365 [セキュリティ/コンプライアンス センター](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance)では、セキュリティおよびコンプライアンスのコントロールを確認できます。
+[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)では、コンプライアンス コントロールを確認することができます。
+
+### <a name="microsoft-365-security-center"></a>Microsoft 365 セキュリティ センター
+
+[Microsoft 365 セキュリティ センター](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)では、セキュリティ コントロールを確認することができます。
 
 ### <a name="discover-compliance-solutions"></a>コンプライアンス ソリューションのご紹介
 

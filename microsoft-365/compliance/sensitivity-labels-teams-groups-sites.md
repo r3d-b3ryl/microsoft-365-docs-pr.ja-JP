@@ -3,7 +3,7 @@ title: Microsoft Teams、Office 365 グループ、SharePoint サイトで機密
 ms.author: krowley
 author: cabailey
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams、Office 365 グループ、SharePoint サイトにラベルを適用することができます。
-ms.openlocfilehash: edaa13a21d5eb9069c6e4dce509c13456dec3d89
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4a8cf810ba29c2bb025b50e1529081a1a9ba6843
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802880"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966895"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)
 
@@ -62,7 +62,7 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトで機
 
 - 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Installing the Azure AD Module (Azure AD モジュールのインストール)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
 
-- Azure AD PowerShell モジュール (AzureAD) の 2.0 一般提供バージョンをインストールしている場合には、PowerShell セッションで`Uninstall-Module AzureAD`を実行してアンインストールし、`Install-Module AzureADPreview`を実行してプレビュー バージョンをインストールする必要があります。
+- Azure AD PowerShell モジュール (AzureAD) の 2.0 一般提供バージョンをインストールしている場合には、PowerShell セッションで `Uninstall-Module AzureAD` を実行してアンインストールし、`Install-Module AzureADPreview` を実行してプレビュー バージョンをインストールする必要があります。
 
 - プレビュー バージョンを既にインストールしている場合には、`Install-Module AzureADPreview`を実行しそれがこのモジュールの最新バージョンであることを確認します。
 
@@ -70,7 +70,9 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトで機
 
 1. PowerShell セッションで、グローバル管理者特権を持つ職場または学校のアカウントを使用して Azure Active Directory に接続します。 たとえば、以下を実行します。
     
-        Connect-AzureAD
+    ```powershell
+    Connect-AzureAD
+    ````
     
     詳しい手順については、「[Azure AD への接続](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad)」を参照してください。
 
@@ -97,7 +99,7 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトで機
 
 3. 同じ PowerShell セッションで、グローバル管理者特権を持つ職場または学校のアカウントを使用して、セキュリティ/コンプライアンス センターに接続します。 手順については、「[Office 365 セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
 
-4. 以下のコマンドを実行します。
+4. ラベルを Office 365 グループで使用できるように、次のコマンドを実行してラベルを Azure AD に同期させます。
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -218,7 +220,36 @@ Outlook on the web では、新しい [**機密**] ボックスに発行され�
 
 ## <a name="change-site-and-group-settings-for-a-label"></a>ラベル向けのサイトとグループの設定を変更する
 
-ベスト プラクティスとして、複数のチーム、グループ、またはサイトにラベルを適用した後に設定を変更しないでください。 変更が必要な場合には、Azure AD PowerShell スクリプトを使用して更新を手動で適用する必要があります。 この方法により、既存のすべてのチーム、サイト、およびグループに新しい設定が適用されることが保証されます。
+ラベルのサイトとグループの設定を変更するたびに、チーム、サイト、グループが新しい設定を使用できるように、次の PowerShell コマンドを実行する必要があります。 ベスト プラクティスとして、ラベルを複数のチーム、グループ、またはサイトに適用した後にラベルのサイトとグループの設定を変更しないようにします。
+
+1. 次のコマンドを実行して、Office 365 セキュリティ/コンプライアンス センターの PowerShell に接続し、機密ラベルとそれらの GUID のリストを取得します。
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
+    Import-PSSession $Session
+    Get-Label |ft Name, Guid
+    ```
+
+2. 変更を行ったラベルの GUID をメモします。
+
+3. 次に、Exchange Online PowerShell に接続して、Get-UnifiedGroup コマンドレットを実行します。GUID 例の "e48058ea-98e8-4940-8db0-ba1310fd955e" の代わりにラベルの GUID を指定します。 
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
+
+4. 各グループについて、GUID 例の "e48058ea-98e8-4940-8db0-ba1310fd955e" の代わりにラベルの GUID を指定して機密ラベルを再適用します。
+    
+    ```powershell
+    foreach ($g in $groups)
+    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
 
 ## <a name="support-for-the-new-sensitivity-labels"></a>新しい機密ラベルのサポート
 
