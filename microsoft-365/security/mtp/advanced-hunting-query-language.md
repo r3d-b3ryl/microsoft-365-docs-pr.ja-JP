@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: df811e38c55becf9ba52de40891fc1201d0afae0
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808682"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966885"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -35,7 +35,7 @@ ms.locfileid: "40808682"
 
 Microsoft 365 セキュリティ センターで、[**捜索**] に移動して最初のクエリを実行します。 次の例を使用してください。
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents 
 | where Timestamp > ago(7d)
@@ -55,7 +55,7 @@ DeviceProcessEvents
 
 クエリは、まず、目的を説明する短いコメントから始まります。 これは、後でクエリを保存し、組織内の他のユーザーと共有することを決定した場合に役立ちます。
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents
 ```
@@ -64,19 +64,19 @@ DeviceProcessEvents
 
 最初のパイプ要素は、過去 7 日間に限定された時間フィルターです。 時間範囲をできる限り狭くすることで、クエリが適切に実行され、管理可能な結果が返され、タイムアウトが回避されます。
 
-```
+```kusto
 | where Timestamp > ago(7d)
 ```
 
 時間範囲の直後に、PowerShell アプリケーションを表すファイルを検索します。
 
-```
+```kusto
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
 その後、クエリは通常、ファイルをダウンロードするために PowerShell で使用されるコマンド ラインを探します。
 
-```
+```kusto
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
@@ -86,7 +86,7 @@ DeviceProcessEvents
 
 クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義する要素を追加できます。 `project` は特定の列を返し、`top` は結果の数を制限するため、結果が適切に書式設定され、適度に大きく、処理も簡単になります。
 
-```
+```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by Timestamp'
 ```
