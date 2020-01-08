@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9322198be4e180988e1651c2ccdcaef2b0ac52a9
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971745"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962326"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
@@ -174,7 +174,7 @@ Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser
 
 ### <a name="use-eop-powershell-to-remove-a-mail-user"></a>EOP PowerShell を使用してメールユーザーを削除する
 
-この例では、コマンドレット [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient/remove-eopmailuser) を使用してユーザー Jeffrey Zeng を削除します。
+この例では、コマンドレット [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser) を使用してユーザー Jeffrey Zeng を削除します。
 
 ```PowerShell
 Remove-EOPMailUser -Identity Jeffrey

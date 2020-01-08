@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online でエラーコード 5.7.7 xx の電子メールの問題を解決する方法について説明します (テナントがメールの送信をブロックされた場合)。
-ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959655"
+ms.locfileid: "40962306"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Exchange Online でエラーコード 5.7.7 xx のメール配信の問題を修正する
 
@@ -53,7 +53,7 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 テナントが電子メールの送信をブロックされている場合は、いくつかの作業を行う必要があります。
 
-1. すべての電子メールドメインが登録されていることを確認します。 詳細については、「 [Office 365 へのドメインの追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)」および「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
+1. すべての電子メールドメインが登録されていることを確認します。 詳細については、「 [Office 365 へのドメインの追加](https://docs.microsoft.com/office365/admin/setup/add-domain)」および「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
 
 2. 異常な[コネクタ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)を探します。 悪意のある俳優は、スパムを送信するために Office 365 組織に新しい受信コネクタを作成することがよくあります。 既存のコネクタを表示するには、「 [Office 365 でコネクタを検証](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)する」を参照してください。
 
@@ -72,7 +72,7 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 [Office 365 メールのスパム対策保護](anti-spam-protection.md)
 
-[Exchange Online サービスの説明の「送信制限」セクションのバルクメールガイダンス](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+[Exchange Online サービスの説明の「送信制限」セクションのバルクメールガイダンス](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Office 365 でのメール配信不能レポート](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
