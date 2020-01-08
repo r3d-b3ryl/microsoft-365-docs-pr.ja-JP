@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 1ae0b469e2edd6970f3384f2777bb9bdc5cad2a6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802670"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959526"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監視ポリシー
 
@@ -68,8 +68,8 @@ Microsoft 365 で新しい通信コンプライアンスの手順を試してみ
 
 監督の使用を開始する前に、通信を確認する必要があるユーザーを決定する必要があります。 ポリシーで、ユーザーの電子メールアドレスは、監督するユーザーまたはグループを識別します。 これらのグループの例としては、Office 365 グループ、Exchange ベースの配布リスト、Microsoft Teams チャネルなどがあります。 また、監視グループまたはグループの一覧を使用して、監督から特定のユーザーまたはグループを除外することもできます。
 
-> [!IMPORTANT]
-> 監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。既存の Enterprise E5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
+>[!IMPORTANT]
+>監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。既存の Enterprise E5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -129,11 +129,11 @@ Microsoft 365 で新しい通信コンプライアンスの手順を試してみ
 
 組織内の電子メールメッセージの送信または受信を監視して、不快な言葉を取得します。 このモデルでは、機械学習、人工知能、およびキーワードの組み合わせを使用して、電子メールメッセージの言語を識別して、スパム対策やその他のポリシーを侵害する可能性があります。 現在、不快な言語のモデルは英語のキーワードをサポートしており、電子メールメッセージの本文を監視します。
 
-> [!NOTE]
-> 次のことを行う必要がある場合は、ブロックされる用語の[カスタムキーワードディクショナリ](create-a-keyword-dictionary.md)を使用して、[データ損失防止ポリシー](create-test-tune-dlp-policy.md)を作成します。
+>[!NOTE]
+>次のことを行う必要がある場合は、ブロックされる用語の[カスタムキーワードディクショナリ](create-a-keyword-dictionary.md)を使用して、[データ損失防止ポリシー](create-test-tune-dlp-policy.md)を作成します。
 >
-> - 組織内の Microsoft Teams の通信を監視して、不快感を持たせる
-> - 組織内の通信で不快な言語を禁止またはブロックする
+>- 組織内の Microsoft Teams の通信を監視して、不快感を持たせる
+>- 組織内の通信で不快な言語を禁止またはブロックする
 
 このモデルでは、不快感を与える言語の完全なリストが提供されているわけではないことに注意してください。 さらに、言語と文化的な標準が絶えず変化しており、これらの現実から、Microsoft は、その判断に基づいてモデルを更新する権利を有します。 このモデルは、不快感を与える言語の監視に役立つ場合がありますが、このモデルは、そのような言語を監視またはアドレス指定するための唯一の手段を提供することを意図したものではありません。 Microsoft ではなく、組織は、不快感を及ぼす言語の監視とブロックに関連するすべての決定を担います。
 
@@ -235,8 +235,8 @@ Microsoft 365 で新しい通信コンプライアンスの手順を試してみ
 2. 「 **Reports** \> **Dashboard** 」または「**監督**」に移動して、現在の監督ポリシーアクティビティの概要に関する監督報告ウィジェットを表示します。
 3. [**監督**] ウィジェットを選択して [詳細レポート] ページを開きます。
 
-> [!NOTE]
-> [**レポート**] ページにアクセスできない場合は、「[組織での監督の利用](configure-supervision-policies.md)」で説明されているように、監督レビューの役割グループのメンバーであることを確認してください。 この役割グループに含めることで、監督ポリシーを作成して管理し、レポートを実行することができます。
+>[!NOTE]
+>[**レポート**] ページにアクセスできない場合は、「[組織での監督の利用](configure-supervision-policies.md)」で説明されているように、監督レビューの役割グループのメンバーであることを確認してください。 この役割グループに含めることで、監督ポリシーを作成して管理し、レポートを実行することができます。
   
 ### <a name="how-to-use-the-report"></a>レポートの使用方法
 
@@ -260,8 +260,8 @@ Microsoft 365 で新しい通信コンプライアンスの手順を試してみ
 | **Purview** | 監督ポリシーによってスキャンされた Exchange、Teams、およびサードパーティのデータソースからのメッセージの合計数 (毎日) |
 | **Resolved** | Exchange、Teams、およびサードパーティのデータソースから、**解決済み**として分類されたメッセージの合計数|
 
-> [!NOTE]
-> 監督ポリシーは、レポートに表示する前にプロビジョニングする必要があります。 ポリシーが削除されても、履歴データは表示されます。 しかし、"存在しないポリシー" として示されており、 **Export**関数は使用できません。
+>[!NOTE]
+>監督ポリシーは、レポートに表示する前にプロビジョニングする必要があります。 ポリシーが削除されても、履歴データは表示されます。 しかし、"存在しないポリシー" として示されており、 **Export**関数は使用できません。
 
 ## <a name="audit"></a>監査
 
@@ -288,4 +288,3 @@ Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -Re
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
 組織の監督ポリシーを構成するには、「[監督ポリシーを構成](configure-supervision-policies.md)する」を参照してください。
-

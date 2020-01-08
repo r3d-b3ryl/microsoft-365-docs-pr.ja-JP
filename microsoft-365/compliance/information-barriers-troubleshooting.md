@@ -1,5 +1,5 @@
 ---
-title: 情報の障壁をトラブルシューティングする
+title: 情報障壁のトラブルシューティング
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報の障壁をトラブルシューティングするためのガイドとして使用してください。
-ms.openlocfilehash: 47549029ffbaa5ead028c18e97850b30f8072011
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085033"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970805"
 ---
-# <a name="troubleshooting-information-barriers"></a>情報の障壁をトラブルシューティングする
+# <a name="troubleshooting-information-barriers"></a>情報障壁のトラブルシューティング
 
 [情報バリア](information-barriers.md)は、組織が法的な要件や業界の規制に準拠していることを支援します。 たとえば、情報バリアを使用すると、特定のユーザーグループ間の通信を制限して、利息やその他の問題の競合を回避できます。 (情報障壁の設定方法の詳細については、「 [Define policies for information バリア](information-barriers-policies.md)」を参照してください)。
 
@@ -71,7 +71,7 @@ ms.locfileid: "37085033"
     |---------|---------|
     |`Get-OrganizationSegment`<p>このコマンドレットを Identity パラメーターと共に使用します。     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>この例では、GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*を持つセグメントについての情報を取得しています。         |
 
-    セグメントの詳細を確認します。 必要に応じて、[セグメントを編集](information-barriers-edit-segments-policies.md.md#edit-a-segment)してから、 `Start-InformationBarrierPoliciesApplication`コマンドレットを再度使用します。
+    セグメントの詳細を確認します。 必要に応じて、[セグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment)してから、 `Start-InformationBarrierPoliciesApplication`コマンドレットを再度使用します。
 
     **情報バリアポリシーに問題がある場合は、サポートにお問い合わせください**。
 
@@ -99,8 +99,8 @@ ms.locfileid: "37085033"
     
     |結果  |次の操作  |
     |---------|---------|
-    |選択したユーザーのセグメントが表示されません     |次のいずれかを実行します。<br/>-Azure Active Directory でユーザープロファイルを編集して、ユーザーを既存のセグメントに割り当てます。 (「 [Office 365 PowerShell を使用してユーザーアカウントのプロパティを構成する」を](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)参照してください)。<br/>-[情報バリアに対してサポートされている属性](information-barriers-attributes.md)を使用してセグメントを定義します。 次に、[新しいポリシーを定義](information-barriers-policies.md#part-2-define-information-barrier-policies)するか、[既存のポリシーを編集](information-barriers-edit-segments-policies.md.md#edit-a-policy)してそのセグメントを含めます。  |
-    |セグメントは表示されますが、これらのセグメントに情報バリアポリシーが割り当てられていません     |次のいずれかを実行します。<br/>- 対象のセグメントごとに[新しい情報バリアポリシーを定義する](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [既存の情報バリアポリシーを編集](information-barriers-edit-segments-policies.md.md#edit-a-policy)して正しいセグメントに割り当てる         |
+    |選択したユーザーのセグメントが表示されません     |次のいずれかの操作を行います。<br/>-Azure Active Directory でユーザープロファイルを編集して、ユーザーを既存のセグメントに割り当てます。 (「 [Office 365 PowerShell を使用してユーザーアカウントのプロパティを構成する」を](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)参照してください)。<br/>-[情報バリアに対してサポートされている属性](information-barriers-attributes.md)を使用してセグメントを定義します。 次に、[新しいポリシーを定義](information-barriers-policies.md#part-2-define-information-barrier-policies)するか、[既存のポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy)してそのセグメントを含めます。  |
+    |セグメントは表示されますが、これらのセグメントに情報バリアポリシーが割り当てられていません     |次のいずれかの操作を行います。<br/>- 対象のセグメントごとに[新しい情報バリアポリシーを定義する](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [既存の情報バリアポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy)して正しいセグメントに割り当てる         |
     |セグメントがリストされ、それぞれが情報バリアポリシーに含まれています。     |-コマンドレット`Get-InformationBarrierPolicy`を実行して、情報バリアポリシーがアクティブであることを確認します。<br/>- `Get-InformationBarrierPoliciesApplicationStatus`コマンドレットを実行してポリシーが適用されていることを確認する<br/>-すべての`Start-InformationBarrierPoliciesApplication`アクティブ情報バリアポリシーを適用するには、コマンドレットを実行します。          |
     
 
@@ -147,7 +147,7 @@ Policy application コマンドレットを実行すると、組織内のすべ�
     |状態  |次の手順  |
     |---------|---------|
     |**未開始**     |**InformationBarrierPoliciesApplication**コマンドレットが実行されてから45分以上経過している場合は、監査ログを調べて、ポリシー定義にエラーがないかどうか、またはアプリケーションが開始されていない理由を確認してください。 |
-    |**失敗**     |アプリケーションに障害が発生した場合は、監査ログを確認します。 また、セグメントとポリシーも確認してください。 複数のセグメントに割り当てられているユーザーはいますか? セグメントに複数の poliicy が割り当てられているかどうか。 必要に応じて、[セグメントを編集](information-barriers-edit-segments-policies.md.md#edit-a-segment)するか、または[ポリシーを編集](information-barriers-edit-segments-policies.md.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication**コマンドレットを再度実行します。  |
+    |**失敗**     |アプリケーションに障害が発生した場合は、監査ログを確認します。 また、セグメントとポリシーも確認してください。 複数のセグメントに割り当てられているユーザーはいますか? セグメントに複数の poliicy が割り当てられているかどうか。 必要に応じて、[セグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment)するか、または[ポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication**コマンドレットを再度実行します。  |
     |**処理中**     |アプリケーションがまだ進行中の場合は、完了するのに時間を確保します。 数日経過した場合は、監査ログを収集し、サポートに連絡してください。 |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>問題: 情報バリアポリシーがまったく適用されていない
@@ -173,7 +173,7 @@ Policy application コマンドレットを実行すると、組織内のすべ�
 
 [Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
 
-[情報の障壁](information-barriers.md)
+[情報障壁](information-barriers.md)
 
 
 

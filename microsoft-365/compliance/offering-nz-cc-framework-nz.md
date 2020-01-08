@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: da5fbef7ed9ceb136f276e2d6baab0c94bba3c22
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804000"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959536"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>ニュージーランド政府機関向けクラウドコンピューティングのセキュリティとプライバシーに関する考慮事項
 
@@ -62,7 +62,7 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - [ニュージーランドのセキュリティおよびプライバシーに関する要件のコンテキストにおける Microsoft Azure コンプライアンス](https://aka.ms/azurecompliancenewzealand)
 - [NZ 政府 ICT 戦略2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [クラウドコンピューティングのための NZ 政府の要件](https://aka.ms/NZ-Cloud-Requirements)
-- [クラウドコンピューティング: 情報のセキュリティとプライバシーに関する考慮事項 (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
+- [クラウドコンピューティング: 情報のセキュリティとプライバシーに関する考慮事項 (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail 統合と参照アーキテクチャ](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)(クラウドサービス導入に関する Microsoft NZ の追加ガイダンス)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
@@ -75,6 +75,6 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

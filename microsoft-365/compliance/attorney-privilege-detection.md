@@ -14,20 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: 上級電子情報開示ケースのコンテンツを確認するときに、権限の内容の machine learning ベースの検出を使用するには、「オプトイン」と「委任状」の権限の検出モデルを使用します。
-ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+description: 上級電子情報開示ケースのコンテンツを確認するときに、権限のあるコンテンツのマシン学習ベースの検出を使用するには、「弁護士クライアント特権検出モデル」を使用します。
+ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603781"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970865"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>高度な電子情報開示で、弁護士クライアント特権の検出を設定する
 
 電子情報開示プロセスのレビューフェーズの主な重要な側面は、権限のあるコンテンツのドキュメントをレビューすることです。 Advanced eDiscovery は、このプロセスをより効率的にするために、権限のあるコンテンツの機械学習ベースの検出を行います。 この機能は *、"委任状-クライアント特権の検出*" と呼ばれます。
-
-> [!NOTE]
-> 使用できるようにするには、その前に、弁護士クライアント特権検出モデルを選択する必要があります。 手順1については、[手順 1](#step-1-opt-in-to-attorney-client-privilege-detection)を参照してください。
 
 ## <a name="how-does-it-work"></a>どのような仕組みなのか。
 
@@ -53,11 +50,11 @@ ms.locfileid: "39603781"
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>弁護士クライアント特権検出モデルを設定する
 
-弁護士クライアント特権検出モデルを有効にするには、組織で弁護士リストを選択してアップロードする必要があります。
+弁護士クライアントの特権検出モデルを有効にするには、組織でそれを有効にしてから、弁護士リストをアップロードする必要があります。
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>手順 1: 委任状にクライアント特権の検出をオプトインする
+### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>手順 1: 弁護士クライアント特権の検出を有効にする
 
-前述したように、弁護士クライアント特権検出モデルはプレビュー段階にあります。 そのため、組織の電子情報開示管理者 (電子情報開示マネージャーの役割グループの電子情報開示管理者サブグループのメンバー) のユーザーは、高度な電子情報開示ケースで使用できるようにするために、モデルを選択する必要があります。
+組織内の電子情報開示管理者 (電子情報開示マネージャーの役割グループの電子情報開示管理者サブグループのメンバー) であるユーザーは、高度な電子情報開示ケースでそのモデルを利用できるようにする必要があります。
 
 1. セキュリティ & コンプライアンスセンターで、[**電子情報開示 > Advanced ediscovery**] に移動します。
 

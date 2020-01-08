@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: 35220410212f285c9024d2c8df7d5a275dad03ee
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 47c53f25954bc5691fe502f3857d9e4d80b97980
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086494"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962436"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
@@ -68,7 +68,7 @@ ms.locfileid: "37086494"
 **脅威保護の状態**レポートは、Exchange Online Protection によって検出およびブロックされた悪意のある電子メールを示すスマートレポートです。 このレポートは、マルウェアまたはフィッシング詐欺として特定された電子メールを時間の経過とともに (最大90日間) 表示し、セキュリティ管理者が傾向を特定したり、ポリシーが調整を必要とするかどうかを判断したりするのに役立ちます。
 
 > [!NOTE]
-> 脅威保護の状態レポートは、 [Office 365 ATP](/security/office-365-security/office-365-atp.md)または[Exchange Online Protection](/security/office-365-security/exchange-online-protection-eop.md) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](/security/office-365-security/atp-for-spo-odb-and-teams.md)に関する情報は、ATP 固有の機能です。 ([ATP レポートの詳細について](/security/office-365-security/view-reports-for-atp.md)は、を参照してください)。
+> 脅威保護の状態レポートは、 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)または[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)に関する情報は、ATP 固有の機能です。 ([ATP レポートの詳細について](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)は、を参照してください)。
   
 このレポートを表示するには[、 &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \> **脅威保護の状態**] に移動します。
   
@@ -76,7 +76,7 @@ ms.locfileid: "37086494"
   
 脅威保護の状態レポートを初めて開いたとき、既定では過去7日間のデータがレポートに表示されます。ただし、[**フィルター** ] をクリックして、最大90日間の日付範囲を変更することができます。 (試用版サブスクリプションを使用している場合は、30日間のデータに制限されることがあります)。
 
-このレポートは、組織の[Exchange Online Protection 機能](/security/office-365-security//eop-features.md)の有効性と影響、および長期的な傾向を確認するのに役立ちます。 
+このレポートは、組織の[Exchange Online Protection 機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)の有効性と影響、および長期的な傾向を確認するのに役立ちます。 
   
 ![脅威保護の状態レポートのフィルター](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -96,7 +96,7 @@ ms.locfileid: "37086494"
   
 ## <a name="top-malware-report"></a>上位マルウェアレポート
 
-**上位マルウェア**レポートには、 [Exchange Online](/security/office-365-security/eop-features.md)によって検出されたさまざまな種類のマルウェアが表示されます。 
+**上位マルウェア**レポートには、 [Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)によって検出されたさまざまな種類のマルウェアが表示されます。 
   
 このレポートを表示するには[、 &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[ **Reports** \> **Dashboard** \> **Top マルウェア**] に移動します。
   
@@ -122,7 +122,7 @@ ms.locfileid: "37086494"
   
 レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。
   
-[**データの表示**] リストを使用して、上位の送信者、受信者、スパム受信者、およびマルウェア受信者のデータを表示するかどうかを選択します。 また、 [Exchange Online Protection](/security/office-365-security/exchange-online-protection-overview.md)によって検出されたマルウェアの受信者を確認することもできます。 
+[**データの表示**] リストを使用して、上位の送信者、受信者、スパム受信者、およびマルウェア受信者のデータを表示するかどうかを選択します。 また、 [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop)によって検出されたマルウェアの受信者を確認することもできます。 
   
 ![特定の情報を表示するには、[データの表示] リストを使用します。](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
@@ -138,7 +138,7 @@ ms.locfileid: "37086494"
   
 グラフの1日をポイントすると、受信したスプーフィングメールメッセージの数を確認できます。
   
-レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。 スプーフィング対策保護の詳細については、「 [Office 365 のスプーフィング対策保護](/security/office-365-security/anti-spoofing-protection.md)」を参照してください。
+レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。 スプーフィング対策保護の詳細については、「 [Office 365 のスプーフィング対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection)」を参照してください。
   
 ## <a name="spam-detections-report"></a>スパム検出レポート
 
@@ -154,7 +154,7 @@ ms.locfileid: "37086494"
   
 ![スパム検出レポートでは、ブロックまたはフィルターで除外されたスパムメッセージの数がわかります。](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-グラフの下に、検出されたスパムアイテムの一覧が表示されます。 その他の情報を表示するアイテムを選択します。これには、受信または送信、メッセージ ID、受信者などの追加情報が表示されます。 スパム対策保護の詳細については、「 [Office 365 電子メールのスパム対策保護](/security/office-365-security/anti-spam-protection.md)」を参照してください。
+グラフの下に、検出されたスパムアイテムの一覧が表示されます。 その他の情報を表示するアイテムを選択します。これには、受信または送信、メッセージ ID、受信者などの追加情報が表示されます。 スパム対策保護の詳細については、「 [Office 365 電子メールのスパム対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)」を参照してください。
   
 ## <a name="sent-and-received-email-report"></a>送信および受信した電子メールレポート
 
@@ -176,11 +176,11 @@ ms.locfileid: "37086494"
   
 ![このレポートは、マルウェア対策、スパム対策、およびその他のメッセージの検出に関する情報を示します。](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-電子メールインテリジェンスの詳細については、「 [Office 365 のメールフローインテリジェンス](/security/office-365-security/mail-flow-intelligence-in-office-365.md)」を参照してください。
+電子メールインテリジェンスの詳細については、「 [Office 365 のメールフローインテリジェンス](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)」を参照してください。
   
 ## <a name="user-reported-messages-report"></a>ユーザーによって報告されたメッセージレポート
 
-ユーザーによって報告された**メッセージ**レポートには、ユーザーが[レポートメッセージアドイン](/security/office-365-security/enable-the-report-message-add-in.md)を使用して、迷惑メール、フィッシングの試行、または正常なメールとして報告した電子メールメッセージに関する情報が表示されます。
+ユーザーによって報告された**メッセージ**レポートには、ユーザーが[レポートメッセージアドイン](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in)を使用して、迷惑メール、フィッシングの試行、または正常なメールとして報告した電子メールメッセージに関する情報が表示されます。
   
 組織に対して構成されたスパムポリシーの例外やメールフロールールなどの配信理由を含む、各メッセージの詳細を表示できます。 詳細を表示するには、[ユーザーレポート] リスト内のアイテムを選択し、[**概要**] タブと [**詳細**] タブで情報を表示します。 
   
@@ -195,7 +195,7 @@ ms.locfileid: "37086494"
 ![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\> ] \> [ユーザーから報告されたメッセージを確認する] を選択します。](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> ユーザーによって報告されたメッセージレポートが正常に機能するためには、Office 365 環境の**監査ログを有効にする必要があり**ます。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフにする](turn-audit-log-search-on-or-off.md)」を参照してください。 
+> ユーザーによって報告されたメッセージレポートが正常に機能するためには、Office 365 環境の**監査ログを有効にする必要があり**ます。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフにする](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)」を参照してください。 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するには、どのようなアクセス許可が必要ですか。
 
@@ -204,7 +204,7 @@ ms.locfileid: "37086494"
 - セキュリティ&amp; /コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
     - 組織の管理
     - セキュリティ管理者 (Azure Active Directory 管理センターで割り当てることができます[https://aad.portal.azure.com](https://aad.portal.azure.com)()
-    - セキュリティリーダ
+    - セキュリティ閲覧者
 
 - Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
     - 組織の管理
@@ -212,25 +212,25 @@ ms.locfileid: "37086494"
     - "View-Only Recipients/表示専用受信者" 役割
     - コンプライアンス管理
 
-詳細については、以下のリソースを参照してください。
+詳細については、次のリソースを参照してください。
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 
 - [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートでデータが表示されない場合はどうなりますか。
 
-レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「 [Office 365 の脅威から保護](/security/office-365-security/protect-against-threats.md)する」を参照してください。
+レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「 [Office 365 の脅威から保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)する」を参照してください。
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 の電子メールのスパム対策保護](/security/office-365-security/anti-spam-protection.md)
+[Office 365 の電子メールのスパム対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
   
-[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](/security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
   
-[セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する](/security/office-365-security/create-a-schedule-for-a-report.md)
+[セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
   
-[セキュリティ&amp; /コンプライアンスセンターでカスタムレポートを設定およびダウンロードする](/security/office-365-security/set-up-and-download-a-custom-report.md)
+[セキュリティ&amp; /コンプライアンスセンターでカスタムレポートを設定およびダウンロードする](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)
   
 

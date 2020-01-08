@@ -15,17 +15,17 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1ea929026db3ac50a0eac3d452c2608fd0c0d123
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803765"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959516"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理の構成
 
-> [!IMPORTANT]
-> このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。
+>[!IMPORTANT]
+>このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。
 
 このトピックでは、Office 365 組織で特権アクセス管理を有効にして構成する手順を説明します。 Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。 
 
@@ -51,8 +51,8 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 
 承認が付与されると、要求元のユーザーは目的のタスクを実行できるようになり、特権アクセスにより、ユーザーに代わってタスクが承認および実行されます。 承認は、要求された期間 (既定の期間は4時間) に対して有効なままとなり、要求者は目的のタスクを複数回実行できます。 このような実行はすべてログに記録され、セキュリティとコンプライアンスの監査に使用できるようになります。 
 
-> [!NOTE]
-> Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。 Office 365 組織に対して多要素認証を有効にして、Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用する必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
+>[!NOTE]
+>Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。 Office 365 組織に対して多要素認証を有効にして、Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用する必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
 
 <a name="step1"> </a>
 
@@ -89,16 +89,19 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 ### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
 特権アクセスを有効にし、承認者のグループを割り当てるには、Exchange Online PowerShell で次のコマンドを実行します。
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccounts @('<systemAccountUPN1>','<systemAccountUPN2>')
 ```
+
 例:
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
 ```
 
-> [!NOTE]
-> システムアカウント機能を使用して、組織内の特定のオートメーションが特権アクセスに依存せずに機能できるようにすることができます。ただし、このような除外は例外的に行うことをお勧めします。普段は。
+>[!NOTE]
+>システムアカウント機能を使用して、組織内の特定のオートメーションが特権アクセスに依存せずに機能できるようにすることができます。ただし、このような除外は例外的に行うことをお勧めします。普段は。
 
 <a name="step3"> </a>
 
@@ -134,11 +137,13 @@ Office 365 組織に対して最大30の特権アクセスポリシーを作成�
 
 承認ポリシーを作成して定義するには、Exchange Online PowerShell で次のコマンドを実行します。
 
-```
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
 ```
+
 例:
-```
+
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType Manual -ApproverGroup 'mbmanagers@fabrikamorg.onmicrosoft.com'
 ```
 
@@ -175,14 +180,19 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 #### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
 Exchange Online PowerShell で次のコマンドを実行して、承認要求を作成し、承認者のグループに送信します。
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\<exchange management cmdlet name>' -Reason '<appropriate reason>' -DurationHours <duration in hours>
 ```
+
 例:
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
+
 ### <a name="view-status-of-elevation-requests"></a>昇格要求の状態を表示する
+
 承認要求が作成されると、昇格要求の状態は、管理センターまたは Exchange 管理 PowerShell で、関連付けられている要求 ID を使用して確認できます。
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
@@ -198,15 +208,19 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 #### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
 Exchange Online PowerShell で次のコマンドを実行して、特定の要求 ID の承認要求の状態を表示します。
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus
 ```
+
 例:
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | select RequestStatus
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>昇格認証要求を承認する
+
 承認要求が作成されると、関連する承認者グループのメンバーは電子メール通知を受信し、要求 ID に関連付けられている要求を承認できます。 送信者は、電子メールメッセージを使用して、要求の承認または拒否を通知されます。
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
@@ -225,25 +239,30 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 昇格認証要求を承認するには、Exchange Online PowerShell で次のコマンドを実行します。
 
-```
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval comment>'
 ```
+
 例:
-```
+
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
 昇格認証要求を拒否するには、Exchange Online PowerShell で次のコマンドを実行します。
 
-```
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 ```
+
 例:
-```
+
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
 ```
 
 ## <a name="delete-a-privileged-access-policy-in-office-365"></a>Office 365 で特権アクセスポリシーを削除する
+
 組織で不要になった場合は、特権アクセスポリシーを削除することができます。
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
@@ -264,7 +283,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 特権アクセスポリシーを削除するには、Exchange Online Powershell で次のコマンドを実行します。
 
-```
+```PowerShell
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
@@ -284,6 +303,6 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 特権アクセスを無効にするには、Exchange Online Powershell で次のコマンドを実行します。
 
-```
+```PowerShell
 Disable-ElevatedAccessControl
 ```

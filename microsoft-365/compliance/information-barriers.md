@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 情報バリアを使用して、組織内の Microsoft Teams を使用して通信のコンプライアンスを確保します。
-ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 352f101a443b015840b09b82626f7dbee9cfb79e
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690660"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970835"
 ---
 # <a name="information-barriers"></a>情報障壁
 
@@ -75,7 +75,7 @@ Microsoft クラウドサービスには、強力なコミュニケーション�
 
 情報バリアポリシーを定義、検証、または編集するには、PowerShell コマンドレットを熟知している必要があります。 [「How to](information-barriers-policies.md)」の記事では PowerShell コマンドレットの例をいくつか示していますが、パラメーターなどの追加の詳細については、組織のために知っておく必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Teams の情報障壁の詳細を知る](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
@@ -83,5 +83,4 @@ Microsoft クラウドサービスには、強力なコミュニケーション�
 
 - [情報バリアのポリシーを定義する](information-barriers-policies.md)
 
-- [情報バリアポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md.md) 
-
+- [情報バリアポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md) 

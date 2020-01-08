@@ -1,5 +1,5 @@
 ---
-title: 情報バリアポリシーの属性
+title: 情報障壁ポリシーの属性
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,21 +11,21 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報バリアポリシーで使用できるさまざまな属性の参照として使用します。
-ms.openlocfilehash: 4198728d412062edced6238604b2b891da22aeac
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12acaa4fb8d6bcd6c660381b172703bd178af81f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085938"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970785"
 ---
-# <a name="attributes-for-information-barrier-policies"></a>情報バリアポリシーの属性
+# <a name="attributes-for-information-barrier-policies"></a>情報障壁ポリシーの属性
 
 Azure Active Directory の特定の属性を使用して、ユーザーをセグメントにすることができます。 セグメントが定義されると、それらのセグメントは情報バリアポリシーのフィルターとして使用できます。 たとえば **、部署を使用し**て、組織内の部署別のユーザーのセグメントを定義することができます (2 つの部署に対して1人の従業員が同時に働くことは想定されていません)。 
 
 この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を示します。 情報バリアの詳細については、以下のリソースを参照してください。
-- [情報の障壁](information-barriers.md)
+- [情報障壁](information-barriers.md)
 - [Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
-- [情報バリアポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md.md)
+- [情報バリアポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>情報バリアポリシーで属性を使用する方法
 
@@ -50,7 +50,7 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
     > [!TIP]
     > セグメントを定義するときは、すべてのセグメントに同じ属性を使用します。 たとえば、*部門*を使用してセグメントを定義する場合、 *department*を使用してすべてのセグメントを定義します。 *部署*を使用したセグメントと、 *MemberOf*を使用しているセグメントを定義しないでください。 セグメントが重ならないようにします。各ユーザーは、1つのセグメントにのみ割り当てる必要があります。 
 
-## <a name="reference"></a>リファレンス
+## <a name="reference"></a>Reference
 
 次の表に、情報バリアで使用できる属性を示します。
 
@@ -79,7 +79,7 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 |MSExchExtensionCustomAttribute3 |ExtensionCustomAttribute3 |
 |MSExchExtensionCustomAttribute4 |ExtensionCustomAttribute4 |
 |MSExchExtensionCustomAttribute5 |ExtensionCustomAttribute5 |
-|MailNickname |エイリアス |
+|MailNickname |Alias |
 |PhysicalDeliveryOfficeName |Office |
 |郵便 |郵便 |
 |ProxyAddresses |EmailAddresses |
@@ -95,9 +95,9 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 
 [Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
 
-[情報の障壁をトラブルシューティングする](information-barriers-troubleshooting.md)
+[情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)
 
-[情報の障壁](information-barriers.md)
+[情報障壁](information-barriers.md)
 
 
 

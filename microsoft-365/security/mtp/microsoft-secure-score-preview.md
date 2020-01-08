@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff159546cd62b2fd2b5cb4fca031e449c860d5cb
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 5ce06f582966f7209d4b539f9de41e8045b98519
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676804"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970925"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft セキュリティスコア (プレビュー)
 
@@ -63,21 +63,21 @@ Microsoft セキュリティスコアにアクセスするためのアクセス�
 
 読み取りおよび書き込みアクセス権を使用すると、変更を加えて、セキュリティで保護されたスコアと直接対話できます。 読み取り専用アクセスを他のユーザーに割り当てることもできます。
 
-* 会社の管理者
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* グローバル管理者
+* セキュリティ管理者
+* Exchange 管理者
+* SharePoint 管理者
 
 ### <a name="read-only-roles"></a>読み取り専用ロール
 
 読み取り専用アクセスでは、改善アクションの状態やメモを編集したり、スコア領域を編集したり、カスタム比較を編集したりすることはできません。
 
-* Helpadministration Admin
-* UserAccountAdmin
-* サービスのアップポート管理者
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* ヘルプデスク管理者
+* ユーザー管理者
+* サービス管理者
+* セキュリティ閲覧者
+* セキュリティ オペレーター
+* グローバル閲覧者
 
 ### <a name="graph-api"></a>Graph API
 
@@ -109,7 +109,7 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 ランク付けは、残っている残りのポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいています。 最も順位の高い向上アクションには、低い問題点、ユーザーへの影響、および複雑さが残った大きなポイントがあります。
 
-### <a name="actions"></a>Actions
+### <a name="actions"></a>操作
 
 特定の改善アクションを選択すると、完全なページポップアップが表示されます。  
 

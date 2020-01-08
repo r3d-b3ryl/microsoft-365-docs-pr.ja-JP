@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805230"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959556"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>米国国防総省 (DoD) の影響レベル2、4、および5の仮承認
 
@@ -100,13 +100,13 @@ Azure のセキュリティとコンプライアンス部門の防御の青写�
 ## <a name="resources"></a>リソース
 
 - [DoD クラウドコンピューティングのセキュリティ要件ガイド (SRG) とその他のドキュメント](https://public.cyber.mil/dccs/dccs-documents/)
-- [DISA Cloud Service サポート](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [DISA Cloud Service サポート](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [連邦情報システムおよび組織での制御されていない未分類情報の保護](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

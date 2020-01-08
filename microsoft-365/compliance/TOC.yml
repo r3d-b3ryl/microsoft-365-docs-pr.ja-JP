@@ -58,7 +58,7 @@
         - name: 情報障壁のトラブルシューティング
           href: information-barriers-troubleshooting.md
         - name: 情報障壁ポリシーの編集
-          href: information-barriers-edit-segments-policies.md.md
+          href: information-barriers-edit-segments-policies.md
 - name: 情報保護の管理
   href: protect-information.md
   items:

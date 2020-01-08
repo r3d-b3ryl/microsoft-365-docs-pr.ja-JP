@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38690753"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970845"
 ---
 # <a name="define-policies-for-information-barriers"></a>情報バリアのポリシーを定義する
 
@@ -43,7 +43,7 @@ ms.locfileid: "38690753"
 
 - **ポリシーアプリケーション**は、すべての情報バリアポリシーが定義された後に実行され、組織に適用する準備が整っています。
 
-## <a name="the-work-flow-at-a-glance"></a>作業フローの概要
+## <a name="the-work-flow-at-a-glance"></a>ワークフローの概要
 
 |フェーズ    |内容  |
 |---------|---------|
@@ -51,7 +51,7 @@ ms.locfileid: "38690753"
 |[パート 1: 組織内のユーザーのセグメント化](#part-1-segment-users)     |-必要なポリシーを決定する<br/>-定義するセグメントの一覧を作成する<br/>-使用する属性を識別する<br/>-ポリシーフィルターの観点からセグメントを定義する        |
 |[パート 2: 情報バリアポリシーを定義する](#part-2-define-information-barrier-policies)     |-ポリシーを定義します (まだ適用しない)<br/>-2 つの種類 (ブロックまたは許可) から選択します。 |
 |[パート 3: 情報バリアポリシーを適用する](#part-3-apply-information-barrier-policies)     |-ポリシーをアクティブな状態に設定します。<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を表示する         |
-|(必要な場合)[セグメントまたはポリシーを編集する](information-barriers-edit-segments-policies.md.md)    |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを再実行します。<br/>-ポリシーの状態を表示する         |
+|(必要な場合)[セグメントまたはポリシーを編集する](information-barriers-edit-segments-policies.md)    |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを再実行します。<br/>-ポリシーの状態を表示する         |
 |(必要な場合)[トラブルシューティング](information-barriers-troubleshooting.md)|-期待どおりに動作しない場合に処理を実行する|
 
 ## <a name="prerequisites"></a>前提条件
@@ -246,7 +246,7 @@ ms.locfileid: "38690753"
 
 PowerShell を使用すると、次の表に示すように、ユーザーアカウント、セグメント、ポリシー、およびポリシーアプリケーションの状態を表示できます。
 
-|これを表示するには  |操作  |
+|これを表示するには  |説明  |
 |---------|---------|
 |ユーザー アカウント     |Identity パラメーターを使用して**InformationBarrierRecipientStatus**コマンドレットを使用します。 <p>文`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p>例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。 <p>(1 人のユーザーに対してこのコマンドレットを`Get-InformationBarrierRecipientStatus -Identity <value>`使用することもできます。) <p>このコマンドレットは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。|
 |多角形     |**コマンドレットを使用**します。<p>文`Get-OrganizationSegment` <p>これにより、組織に定義されているすべてのセグメントの一覧が表示されます。         |
@@ -260,11 +260,11 @@ PowerShell を使用すると、次の表に示すように、ユーザーアカ
 
 - 情報の障壁に問題が生じた場合は、「[トラブルシューティング情報の障壁](information-barriers-troubleshooting.md)」を参照してください。
 
-- ポリシーが適用されないようにするには、「[ポリシーアプリケーションを停止](information-barriers-edit-segments-policies.md.md#stop-a-policy-application)する」を参照してください。
+- ポリシーが適用されないようにするには、「[ポリシーアプリケーションを停止](information-barriers-edit-segments-policies.md#stop-a-policy-application)する」を参照してください。
 
-- 情報バリアポリシーを削除するには、「[ポリシーを削除](information-barriers-edit-segments-policies.md.md#remove-a-policy)する」を参照してください。
+- 情報バリアポリシーを削除するには、「[ポリシーを削除](information-barriers-edit-segments-policies.md#remove-a-policy)する」を参照してください。
 
-- セグメントまたはポリシーに変更を加えるには、「 [Edit (または remove) information バリアー policies](information-barriers-edit-segments-policies.md.md)」を参照してください。
+- セグメントまたはポリシーに変更を加えるには、「 [Edit (または remove) information バリアー policies](information-barriers-edit-segments-policies.md)」を参照してください。
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>例: Contoso 社の部署、セグメント、ポリシー
 
