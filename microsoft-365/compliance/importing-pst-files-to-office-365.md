@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '管理者向け: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PST ファイル) をユーザーの Exchange Online のメールボックスに一括でインポートする方法について説明します。 このトピックでは、よくあるご質問と PST インポート プロセスのしくみを説明します。'
-ms.openlocfilehash: 309fde077cdf456ba33656c29f9e325aac1820e3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e58be4e90429c2d39bbcf4c5ef362e659764d63
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807126"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995287"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Office 365 への組織の PST ファイルのインポートの概要
 
@@ -52,11 +52,11 @@ ms.locfileid: "40807126"
     
 2. **PST ファイルをアップロードまたはコピーする** - 次の手順は、ネットワーク アップロード、またはドライブ送付のどちらを使用して PST ファイルをインポートするかによって異なります。 いずれの場合も、ツールと、前の手順で取得したセキュリティで保護されたストレージ キーを使用します。
     
-    - **ネットワーク アップロード** (手順 1 でダウンロードした) Microsoft クラウド内の Azure Storage の場所に PST ファイルをアップロードして保存するために、AzCopy.exe ツールを使用します。 PST ファイルをアップロードする Azure Storage の場所は、Office 365 組織があるのと同じ地域の Microsoft データ センターにあります。
+    - **ネットワーク アップロード:** (手順 1 でダウンロードした) Microsoft クラウド内の Azure Storage の場所に PST ファイルをアップロードして保存するために、AzCopy.exe ツールを使用します。 PST ファイルをアップロードする Azure Storage の場所は、Office 365 組織があるのと同じ地域の Microsoft データ センターにあります。
     
       PST ファイルをアップロードするには、Office 365 にインポートするファイルが組織のファイル共有またはファイル サーバー上にある必要があります。
     
-    - **ドライブ送付** (手順 1 でダウンロードした) WAImportExport.exe ツールを使用して、PST ファイルをハード ドライブにコピーします。 このツールは、BitLocker を使用してハード ドライブを暗号化してから、PST ファイルをハード ドライブにコピーします。 ネットワーク アップロードと同様、ハード ドライブにコピーする PST ファイルは、組織のファイル共有またはファイル サーバー上にある必要があります。
+    - **ドライブ送付:** (手順 1 でダウンロードした) WAImportExport.exe ツールを使用して、PST ファイルをハード ドライブにコピーします。 このツールは、BitLocker を使用してハード ドライブを暗号化してから、PST ファイルをハード ドライブにコピーします。 ネットワーク アップロードと同様、ハード ドライブにコピーする PST ファイルは、組織のファイル共有またはファイル サーバー上にある必要があります。
     
 3. **PST インポート マッピング ファイルを作成する** - PST ファイルを Azure Storage の場所にアップロードまたはハード ドライブにコピーしたら、次は PST ファイルのインポート先となるユーザーのメールボックスを指定する、コンマ区切り値 (CSV) ファイルを作成します (PST ファイルはユーザーのプライマリ メールボックスまたはアーカイブ メールボックスにインポートできます)。 Office 365 インポート サービスは、情報を使用して PST ファイルをインポートします。 
     
