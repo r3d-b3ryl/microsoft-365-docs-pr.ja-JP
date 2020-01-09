@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 46387f82a38c33debdc24a6825479bf3183f0283
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0f4569a4ef8496a07fc1dc52f500ee91a6590fdd
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808432"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989542"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -32,6 +32,7 @@ ms.locfileid: "40808432"
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 のように、不法な同意を与える攻撃はどのようになりますか?
 
 この攻撃の兆候 (IOC) を検出するには、Office 365**監査ログ**を検索する必要があります。 Azure に登録されているアプリケーションの数が多く、ユーザーが大規模な組織では、組織の同意の付与を週単位で確認することをお勧めします。
+
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を見つけるための手順
 
 1. Office 365 テナントの [**セキュリティとコンプライアンスセンター** ] を開きます。

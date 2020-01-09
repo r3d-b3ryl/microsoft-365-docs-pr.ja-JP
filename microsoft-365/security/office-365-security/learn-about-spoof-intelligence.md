@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: '[スパム対策設定] ページ&amp;のセキュリティコンプライアンスセンターのスプーフィングインテリジェンスを使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。 スプーフィングインテリジェンスは、Office 365 Enterprise E5 の一部として、または Advanced Threat Protection と Exchange Online Protection の一部として別途利用できます。'
-ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970433"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989492"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスをもっとよく知る
 
@@ -79,9 +79,9 @@ ms.locfileid: "39970433"
 
     ![スパム対策ページへのアクセスを示すスクリーンショット](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. 右ウィンドウの [**スパム対策設定**] ページで、[**カスタム**] タブを選択し、下にスクロールして [**スプーフィングインテリジェンスポリシー**] を展開します。
+4. 右側のウィンドウの [**スパム対策設定**] ページで、下にスクロールして [**スプーフィングインテリジェンスポリシー**] を展開します。
 
-    ![スパム対策カスタム設定へのアクセスを示すスクリーンショット](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![なりすます](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. ドメインをスプーフィングしている送信者の一覧を表示するには、[**新しい送信者の確認**] を選択して、[**自分のドメイン**] タブを選択します。
 

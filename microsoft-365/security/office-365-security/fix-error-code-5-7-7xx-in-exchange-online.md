@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online でエラーコード 5.7.7 xx の電子メールの問題を解決する方法について説明します (テナントがメールの送信をブロックされた場合)。
-ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962306"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989532"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Exchange Online でエラーコード 5.7.7 xx のメール配信の問題を修正する
 
@@ -35,7 +35,7 @@ ms.locfileid: "40962306"
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750: 登録が解除されるドメインの電子メール制限: 理解しておくべき情報
 
-Office 365 では、テナントが Exchange Online Protection (EOP) を介して一部のメッセージを中継することが許可されています。 例:
+Office 365 では、テナントが Exchange Online Protection (EOP) を介して一部のメッセージを中継することが許可されています。 以下に例を示します。
 
 - Office 365 メールボックスは、外部の送信者から電子メールを受信します。 メール転送は Office 365 メールボックスで構成されているため、メッセージはユーザーの外部の電子メールアドレスに戻されます。 このシナリオは、学生が自分の個人用メールアカウントを使用して学校関連のメッセージを表示する教育環境で最もよく見られます。
 
@@ -55,18 +55,20 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 1. すべての電子メールドメインが登録されていることを確認します。 詳細については、「 [Office 365 へのドメインの追加](https://docs.microsoft.com/office365/admin/setup/add-domain)」および「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
 
-2. 異常な[コネクタ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)を探します。 悪意のある俳優は、スパムを送信するために Office 365 組織に新しい受信コネクタを作成することがよくあります。 既存のコネクタを表示するには、「 [Office 365 でコネクタを検証](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)する」を参照してください。
+2. Office 365 組織内のすべての管理者に対して[MFA を有効に](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
 
-3. 「 [Office 365 で侵害された電子メールアカウントに応答する](responding-to-a-compromised-email-account.md)」の説明に従って、侵害されたユーザーをチェックします。
+3. すべての電子メールドメインが登録されていることを確認します。 詳細については、「 [Office 365 へのドメインの追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)」および「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
 
-4. Office 365 組織内のすべての管理者に対して[MFA を有効に](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
+4. 異常な[コネクタ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)を探します。 悪意のある俳優は、スパムを送信するために Office 365 組織に新しい受信コネクタを作成することがよくあります。 既存のコネクタを表示するには、「 [Office 365 でコネクタを検証](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)する」を参照してください。
 
-5. オンプレミスの電子メールサーバーをロックし、侵害されていないことを確認します。
+5. 「 [Office 365 で侵害された電子メールアカウントに応答する](responding-to-a-compromised-email-account.md)」の説明に従って、侵害されたユーザーをチェックします。
+
+6. オンプレミスの電子メールサーバーをロックし、侵害されていないことを確認します。
 
    > [!TIP]
    > 特にサードパーティ製サーバーを使用している場合は、多くの要因があります。 いずれにしても、すべての送信メールが正当であることを確認する必要があります。
 
-6. Microsoft サポートに連絡して、未登録のドメインから送信されないようにテナントのブロック解除を取得するように依頼します。 エラーコードは役に立ちますが、環境がセキュリティで保護されており、スパムを送信することができないことを証明する必要があります。 サポート案件を開くには、「 [business products のサポートへのお問い合わせ-管理者向けヘルプ](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)」を参照してください。
+7. Microsoft サポートに連絡して、再度電子メールを送信するようにテナントのブロック解除を取得するように依頼します。 エラーコードは役に立ちますが、環境がセキュリティで保護されており、スパムを送信することができないことを証明する必要があります。 サポート案件を開くには、「 [business products のサポートへのお問い合わせ-管理者向けヘルプ](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)」を参照してください。
 
 ## <a name="for-more-information"></a>関連情報
 

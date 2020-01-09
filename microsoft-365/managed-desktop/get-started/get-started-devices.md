@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
-ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
+ms.openlocfilehash: 59cdb911c46fbb2ad5dd998810297a5502c8fa0c
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38697160"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989552"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>ユーザーがデバイスを使えるようにする
 
@@ -23,7 +23,7 @@ Microsoft マネージドデスクトップデバイスがエンドユーザー�
 ## <a name="to-prepare-the-guide"></a>ガイドを準備するには
 
 1. 組織に適したバージョンをダウンロードします。
-- [Microsoft マネージドデスクトップ-デバイスの使用を開始する (ヘルプバージョンを取得する)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) -エンドユーザーが Microsoft のサポートシステムを使用する場合は、このバージョンを使用してください。
+- [Microsoft マネージドデスクトップ-デバイスの使用を開始する (ヘルプバージョンを取得する)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) -エンドユーザーが Microsoft のサポートシステムを使用する場合は、このバージョンを使用してください。
 - [Microsoft マネージドデスクトップ-デバイスで](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)の使用を開始する-エンドユーザーが Microsoft のサポートシステムを使用し*ない*場合は、このバージョンを使用してください。
 2. PDF ファイルを開くことができる任意のアプリを使用して、組織に関連する詳細情報を記入します。
     - セットアップを続行するためにユーザーが接続する必要のあるネットワークの名前 (ガイドの手順 3)
@@ -33,9 +33,9 @@ Microsoft マネージドデスクトップデバイスがエンドユーザー�
 
 ## <a name="ready-to-use-guide"></a>「すぐに使用できるガイド」
 
-また、カスタマイズする必要がない組織に対して、より一般的なバージョンのガイドを提供しています。 2つのバージョンがあります。1つは Microsoft のサポートシステム (Get Help app) を使用する組織用で、もう1つは、独自の内部エンドユーザーサポートを提供するものです。
+また、カスタマイズする必要がない組織に対して、より一般的なバージョンのガイドを提供しています。 2つのバージョンがあります。1つは Microsoft のサポートシステム (Get Help app) を使用する組織用で、もう1つはユーザーに対して別のサポートを提供するものです。 
 
-- [Microsoft マネージドデスクトップ-お使いのデバイスでの使用を開始します (ヘルプバージョンの準備ができ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf)ています)。エンドユーザーが Microsoft のサポートシステムを使用する場合は、このバージョンをご利用ください。
+- [Microsoft マネージドデスクトップ-お使いのデバイスでの使用を開始します (ヘルプバージョンの準備ができ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf)ています)。エンドユーザーが Microsoft のサポートシステムを使用する場合は、このバージョンをご利用ください。
 - [Microsoft マネージドデスクトップ-デバイスの使用を開始します (ご利用いただけます)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) 。エンドユーザーが Microsoft のサポートシステムを使用し*ない*場合は、このバージョンを使用してください。
 
 この時点で、アプリの展開に進むことができます。
