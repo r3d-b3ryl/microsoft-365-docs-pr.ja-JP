@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business のセットアップ手順の概要。
-ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: cab999493bf86ed0adf32521eaf6b3943f107f79
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850806"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995252"
 ---
 # <a name="overview-of-setup"></a>手順の概要
 
@@ -36,7 +36,7 @@ Microsoft 365 Business のセットアップに関する短いビデオをご覧
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 セットアップの手順のほとんどはセットアップウィザードで行うことができますが、その他のオプションも表示されます。
 
@@ -61,7 +61,7 @@ Microsoft 365 Business のセットアップに関する短いビデオをご覧
 - **Exchange Online Archiving**
 - **Azure Information Protection (Plan1**)
 
-作業を開始するには、「[高度セキュリティポリシーのセットアップ](set-up-advanced-security.md)」を参照してください。
+開始するには、「[脅威保護を強化](increase-threat-protection.md)する」と「[コンプライアンス機能をセットアップ](set-up-compliance.md)する」を参照してください。
 
 セキュリティに関するベストプラクティスのロードマップについては[、Microsoft 365 Business をセキュリティで保護するための10のトップの方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)も参照してください。
 
@@ -91,4 +91,4 @@ Windows 10 デバイスを Azure AD に参加させると、Windows 10 コンピ
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

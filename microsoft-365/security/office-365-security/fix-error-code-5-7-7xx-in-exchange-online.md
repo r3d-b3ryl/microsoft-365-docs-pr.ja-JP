@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online でエラーコード 5.7.7 xx の電子メールの問題を解決する方法について説明します (テナントがメールの送信をブロックされた場合)。
-ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989532"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995231"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Exchange Online でエラーコード 5.7.7 xx のメール配信の問題を修正する
 
@@ -39,7 +39,7 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 - Office 365 メールボックスは、外部の送信者から電子メールを受信します。 メール転送は Office 365 メールボックスで構成されているため、メッセージはユーザーの外部の電子メールアドレスに戻されます。 このシナリオは、学生が自分の個人用メールアカウントを使用して学校関連のメッセージを表示する教育環境で最もよく見られます。
 
-- EOP を経由して送信メールを送信するオンプレミスの電子メールサーバーを持つハイブリッド envrionments。
+- EOP を介して送信メールを送信するオンプレミスの電子メールサーバーがあるハイブリッド環境。
 
 ### <a name="problems-with-unregistered-domains"></a>未登録のドメインに関する問題
 
@@ -57,7 +57,7 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 2. Office 365 組織内のすべての管理者に対して[MFA を有効に](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
 
-3. すべての電子メールドメインが登録されていることを確認します。 詳細については、「 [Office 365 へのドメインの追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)」および「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
+3. すべての電子メールドメインが登録されていることを確認します。 詳細については、「 [Office 365 へのドメインの追加](https://docs.microsoft.com/office365/admin/setup/add-domain)」および「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
 
 4. 異常な[コネクタ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)を探します。 悪意のある俳優は、スパムを送信するために Office 365 組織に新しい受信コネクタを作成することがよくあります。 既存のコネクタを表示するには、「 [Office 365 でコネクタを検証](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)する」を参照してください。
 

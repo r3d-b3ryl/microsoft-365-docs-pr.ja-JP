@@ -1,5 +1,5 @@
 ---
-title: Windows デバイスを Windows Pro Creators Update にアップグレードする
+title: Windows デバイスを Windows 10 Pro にアップグレードする
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: 'Windows デバイスを Windows 10 Pro クリエーターの更新プログラムにアップグレードする方法について説明します。 '
-ms.openlocfilehash: e8399ad94ef58ad8fa5386d4ab0ed7fa4b8627a0
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+description: 'Windows デバイスを Windows 10 Pro にアップグレードする方法について説明します。 '
+ms.openlocfilehash: acad4a393e0870299df768fd4c821d9c1e83ecac
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831195"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995272"
 ---
-# <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Windows デバイスを Windows Pro Creators Update にアップグレードする
+# <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows デバイスを Windows 10 Pro にアップグレードする
 
 Windows デバイスを Windows 10 Pro にアップグレードする方法に関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
-## <a name="upgrade-to-windows-10-pro-creators-update"></a>Windows 10 Pro クリエーターの更新プログラムへのアップグレード
+## <a name="upgrade-to-windows-10-pro"></a>Windows 10 Pro へのアップグレード
   
-Windows 10 Pro クリエーターの更新プログラムにアップグレードするには、いくつかのオプションがあります。 次の操作を実行できます:
+Windows 10 Pro にアップグレードするには、いくつかのオプションがあります。 以下のことを実行できます。
     
 - [[マイクロソフトソフトウェアダウンロードサイト](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash;からアップグレードをインストールする] このオプションは、ログインしているデバイスが更新するデバイスと同じデバイス上にある場合に選択します。 
 
@@ -50,7 +50,7 @@ Windows 10 Pro クリエーターの更新プログラムにアップグレー�
     - ツールの使用方法とインストールメディアの作成方法に関する指示を読んでください。 
 
 > [!NOTE]
-> Windows 7 Pro、Windows 8 Pro、または Windows 8.1 Pro を実行している Windows デバイスがある場合は、Microsoft 365 Business サブスクリプションで Windows 10 のアップグレードができます。プロダクトキーは必須ではありません。
+> Windows 7 Pro、Windows 8 Pro、または Windows 8.1 Pro を実行している Windows デバイスを使用している場合は、Microsoft 365 Business サブスクリプションで Windows Pro 10 アップグレードを使用できます。プロダクトキーは必須ではありません。
     
 Windows 10 デバイスのセットアップを完了するには、「 [Microsoft 365 Business ユーザーの windows デバイス](set-up-windows-devices.md)をセットアップする」を参照してください。 
   
@@ -58,4 +58,4 @@ Android および iOS デバイスの設定を完了するには、「 [Microsof
   
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
