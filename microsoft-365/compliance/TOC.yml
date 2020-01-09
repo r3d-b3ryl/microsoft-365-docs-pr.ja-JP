@@ -199,23 +199,21 @@
           href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: PST ファイルをインポートするときに、データをフィルター処理する
           href: filter-data-when-importing-pst-files.md
-        - name: ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする
-          href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: PST ファイルのインポートに関する FAQ
           href: faqimporting-pst-files-to-office-365.md
-        - name: サードパーティのデータをアーカイブする
-          href: archiving-third-party-data.md
-          items:
-            - name: サンプルコネクタを使用して Facebook のデータをアーカイブする
-              href: archive-facebook-data-with-sample-connector.md
-            - name: サンプル コネクタを使用して Twitter のデータをアーカイブする
-              href: archive-twitter-data-with-sample-connector.md
-            - name: コネクタをセットアップして LinkedIn データをアーカイブする
-              href: archive-linkedin-data.md
-            - name: コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
-              href: archive-instant-bloomberg-data.md
-            - name: パートナーと共同作業でサードパーティーのデータをアーカイブする
-              href: work-with-partner-to-archive-third-party-data.md
+    - name: サードパーティのデータをアーカイブする
+      href: archiving-third-party-data.md
+      items:
+        - name: Facebook データをアーカイブするためのコネクタの設定
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Twitter データをアーカイブするためのコネクタの設定
+          href: archive-twitter-data-with-sample-connector.md
+        - name: コネクタをセットアップして LinkedIn データをアーカイブする
+          href: archive-linkedin-data.md
+        - name: コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
+          href: archive-instant-bloomberg-data.md
+        - name: パートナーと共同作業でサードパーティーのデータをアーカイブする
+          href: work-with-partner-to-archive-third-party-data.md
     - name: データを格納する
       items:
         - name: アーカイブ メールボックスの有効化
