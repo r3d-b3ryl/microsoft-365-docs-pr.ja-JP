@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business の詳細については、こちらを参照してください。
-ms.openlocfilehash: 1d4eb62a31cc44ab8dc75964c038f0a3deef4005
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: eafd03be90c128051c8c91bc339af69a0a613136
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831435"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999556"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 
@@ -42,7 +42,7 @@ Microsoft 365 Business の簡単な概要については、このビデオをご
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。 
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。 
 
 Microsoft 365 Business は、最大300のライセンスを想定しています。 その他のライセンスが必要な場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。
 
@@ -99,7 +99,7 @@ Microsoft 365 Business は、次のような**脅威からの保護**に貢献�
 
 - 簡素化された制御を使用して、企業内のすべての Windows 10 Pc のポリシーを管理し、BitLocker 暗号化を適用し、重要な Windows 更新プログラムを自動的にインストールします (Windows update ポリシーを適用します)。
 
-セキュリティ機能の完全な一覧については、「 [Microsoft 365 Business security features](security-features.md)」を参照してください。 [Microsoft 365 Business](set-up.md)をセットアップした後、ガイド付きセットアップの一部として含まれていないセキュリティ機能を使用して作業を開始するには、「 [advanced Security policies をセットアップ](set-up-advanced-security.md)する」を参照してください。 また、 [Office 365 および Microsoft 365 のビジネスプランを保護する](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)ための10の方法についても説明します。これは、サイバー犯罪およびハッカーに対する保護を設定する方法の概要を示しています。
+セキュリティ機能の完全な一覧については、「 [Microsoft 365 Business security features](security-features.md)」を参照してください。 [Microsoft 365 Business をセットアップ](set-up.md)した後は、「[脅威保護を強化](increase-threat-protection.md)する」と「[コンプライアンス機能](set-up-compliance.md)をセットアップする」を参照して、ガイド付きセットアップの一部として含まれていないセキュリティ機能を使い始めることができます。 また、 [Office 365 および Microsoft 365 のビジネスプランを保護する](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)ための10の方法についても説明します。これは、サイバー犯罪およびハッカーに対する保護を設定する方法の概要を示しています。
 
 ## <a name="get-microsoft-365-business"></a>Microsoft 365 Business を入手する
 
@@ -114,4 +114,4 @@ Microsoft 365 Business は、次のような**脅威からの保護**に貢献�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
