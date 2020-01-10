@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823839"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004922"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで管理者の連絡先を追加および確認する
 
@@ -25,7 +25,7 @@ Microsoft Managed Desktop service がお客様と通信するには、いくつ�
 Microsoft Managed Desktop 管理ポータルでは、ポータルにアクセスするユーザーが次のいずれかの Azure Active Directory (AD) の役割を持っている必要があります。
 - グローバル管理者
 - Intune サービス管理者
-- 課金管理者
+- グローバル閲覧者
 - サービスサポート管理者
 
 グローバル管理者は、組織を Microsoft マネージドデスクトップに登録するためのものである必要があります。 すべての5つの役割は、タスクを開始して表示するために、管理ポータル内で同じアクセス権を持ちます。 これらの役割を Azure AD に割り当てる方法の詳細については、「 [Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)」を参照してください。 
