@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
+ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970915"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41012190"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -135,6 +135,21 @@ Microsoft Secure Score は、システム構成、ユーザーの行動、およ
 ## <a name="whats-coming"></a>今後の機能
 
 Microsoft のセキュリティスコアをより良いものにして、セキュリティの状況をより良くし、利便性を向上させるために、近い将来にいくつかの変更を加えています。 スコアと可能な最大スコアが変わります。 ただし、これはセキュリティに関する姿勢の変化を意味するものではありません。
+
+### <a name="mfa-improvement-action-updates"></a>MFA 向上アクションの更新
+
+ビジネスに適したポリシーを適用しているときに、最高レベルのセキュリティを確保するための企業の必要性を反映するために、Microsoft Secure Score は、多要素認証を中心とした3つの改善アクションを削除し、2つを追加します。
+
+削除される3つのを次に示します。
+- すべてのユーザーに多要素認証を登録する
+- すべてのユーザーに MFA を必須にする
+- Azure AD の特権の役割に MFA を必要とする
+
+新しい改善アクション:
+- すべてのユーザーが、セキュリティで保護されたアクセスに対して多要素認証を完了できるようにする
+- 管理役割に MFA を必要とする
+
+ これらの新しい改善アクションでは、ユーザーまたは管理者に対して複数要素認証 (MFA) をディレクトリに登録し、組織のニーズに合ったポリシーの適切なセットを確立する必要があります。 主な目標は柔軟性にありますが、すべてのユーザーと管理者が複数の要因またはリスクベースの id 確認プロンプトで認証できるようにします。 これはセキュリティの既定値を設定することができます。これにより、Microsoft は、MFA のユーザーをチャレンジするタイミングを決定することができます。また、スコープ決定を適用する複数のポリシーを持つことができます。
 
 ### <a name="removing-not-scored-and-review-improvement-actions"></a>[スコアを表示しない] および [レビュー] の強化アクションを削除する
 
