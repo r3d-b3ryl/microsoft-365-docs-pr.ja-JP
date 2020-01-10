@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: 548af12811287dce3461e5ce7d5f1ffa905eef73
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854042"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004842"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -128,7 +128,7 @@ Microsoft Office‍ 365 のセキュリティ/コンプライアンス センタ
 
 ### <a name="rms-decrypt"></a>RMS の暗号化解除
 
-この役割では、検索結果をエクスポートしたり、Advanced eDiscovery の分析に対する検索結果を準備したりするときに、RMS 暗号化メール メッセージの暗号化を解除できます。 エクスポート時の検索結果の暗号化解除に関する詳細については、「[検索結果をエクスポートする](export-search-results.md)」を参照してください。
+この役割により、ユーザーは、高度な電子情報開示で検索結果をエクスポートしたり、検索結果を準備したりする際に、権利が保護された電子メールメッセージを解読できます。 エクスポート時の検索結果の暗号化解除に関する詳細については、「[検索結果をエクスポートする](export-search-results.md)」を参照してください。
 
 ### <a name="search-and-purge"></a>検索と消去
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 140ccc3984dc09a794d822eb3ff02f139d87fcd5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202348"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004824"
 ---
 # <a name="query-the-data-in-a-review-set"></a>レビュー セット内のデータをクエリする
 
@@ -27,7 +27,7 @@ ms.locfileid: "39202348"
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>レビューセットにクエリを作成して実行する
 
-校閲セット内のドキュメントに対してクエリを作成して実行するには、確認セットの [**新しいクエリ**] をクリックします。 クエリの名前を指定して条件を定義した後、[**保存**] をクリックしてクエリを保存して実行します。 以前に保存したクエリを実行するには、保存されているクエリをクリックします。 
+校閲セット内のドキュメントに対してクエリを作成して実行するには、確認セットの [**新しいクエリ**] をクリックします。 クエリの名前を指定して条件を定義した後、[**保存**] をクリックしてクエリを保存して実行します。 以前に保存したクエリを実行するには、保存されているクエリをクリックします。
 
 ![Set クエリを確認する](media/AeDReviewSetQueries.png)
 
