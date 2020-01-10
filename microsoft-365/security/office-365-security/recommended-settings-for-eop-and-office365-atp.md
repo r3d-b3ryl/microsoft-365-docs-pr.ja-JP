@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910118"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021833"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -48,7 +48,7 @@ ms.locfileid: "40910118"
 |フィッシング電子メールの検出アクション|検疫メッセージ|検疫メッセージ||
 |高信頼フィッシング電子メール検出アクション|検疫メッセージ|検疫メッセージ||
 |電子メールの一括検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|バルクメールしきい値をに設定する|6 |4 |現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
+|バルクメールしきい値をに設定する|シックス|2/4|現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
 |検疫の保存期間|30 日間|30 日間||
 |安全性に関するヒント|オン|オン||
 |許可された送信者|なし|なし||
@@ -59,33 +59,35 @@ ms.locfileid: "40910118"
 |ゼロ時間自動削除|オン|オン|スパムとフィッシング ZAP の両方|
 |MarkAsSpamBulkMail|オン|オン|この設定は、PowerShell でのみ使用できます。|
 
-高度なスパムフィルターと呼ばれる、この記述時に廃止されたスパム対策ポリシーには、その他のパラメーターがいくつかあります。 これらの推奨設定は、標準レベルと厳密なレベルの両方で**オフ**にすることをお勧めします。
+推奨されていない高度なスパムフィルター (ASF) と呼ばれるスパム対策ポリシーには、他にもいくつかのパラメーターがあります。 これらの機能の減価償却のタイムラインの詳細については、このトピックの外に連絡します。
+ 
+ 標準レベルと厳密なレベルの両方で、これらの設定を**無効**にすることをお勧めします。
 
-|セキュリティ機能の名前| コメント |
+|セキュリティ機能の名前|コメント|
 |---------|---------|
-|IncreaseScoreWithImageLinks| |
-|IncreaseScoreWithNumericIps| |
-|IncreaseScoreWithRedirectToOtherPort| |
-|IncreaseScoreWithBizOrInfoUrls| |
-|MarkAsSpamEmptyMessages| |
-|MarkAsSpamJavaScriptInHtml| |
-|MarkAsSpamFramesInHtml| |
-|MarkAsSpamObjectTagsInHtml| |
-|MarkAsSpamEmbedTagsInHtml| |
-|MarkAsSpamFormTagsInHtml| |
-|MarkAsSpamWebBugsInHtml| |
-|MarkAsSpamSensitiveWordList| |
-|MarkAsSpamFromAddressAuthFail| |
-|MarkAsSpamNdrBackscatter| |
-|MarkAsSpamSpfRecordHardFail| |
+|IncreaseScoreWithImageLinks||
+|IncreaseScoreWithNumericIps||
+|IncreaseScoreWithRedirectToOtherPort||
+|IncreaseScoreWithBizOrInfoUrls||
+|MarkAsSpamEmptyMessages||
+|MarkAsSpamJavaScriptInHtml||
+|MarkAsSpamFramesInHtml||
+|MarkAsSpamObjectTagsInHtml||
+|MarkAsSpamEmbedTagsInHtml||
+|MarkAsSpamFormTagsInHtml||
+|MarkAsSpamWebBugsInHtml||
+|MarkAsSpamSensitiveWordList||
+|MarkAsSpamFromAddressAuthFail||
+|MarkAsSpamNdrBackscatter||
+|MarkAsSpamSpfRecordHardFail||
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 送信スパムフィルターポリシーの設定
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|送信スパムポリシーの受信者の制限-外部時間の制限|400|500||
-|送信スパムポリシーの受信者の制限-内部時間の制限|800|1000||
-|送信スパムポリシー受信者の制限-毎日の制限|800|1000||
+|送信スパムポリシーの受信者の制限-外部時間の制限|500|400||
+|送信スパムポリシーの受信者の制限-内部時間の制限|1000|800||
+|送信スパムポリシー受信者の制限-毎日の制限|1000|800||
 |ユーザーが制限を超えた場合のアクション|ユーザーがメールを送信するのを制限する|ユーザーがメールを送信するのを制限する||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP マルウェア対策ポリシー設定

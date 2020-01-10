@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '管理者は、Office 365 で誤検知済みの肯定メッセージを表示、リリース、および報告することができます。 Office 365 がメッセージをフィルター処理して、複数の理由で検疫にメッセージを送信するようにポリシーを設定できます。これは、スパム、バルク、フィッシング、マルウェア、またはメールフロールールと一致したためです。 '
-ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970935"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021863"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Office 365 の管理者として検疫済みメッセージおよびファイルを管理する
 
@@ -31,26 +31,15 @@ ms.locfileid: "40970935"
 
 検疫済みメッセージや検疫されたファイルを操作するには、Office 365 でグローバル管理者 (GA) のアクセス許可を持っているか、または1つ以上のセキュリティ & コンプライアンスセンターの役割グループのメンバーである必要があります。 詳細について[は、「Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) 」の「アクセス許可」を参照してください。
 
-> [!IMPORTANT]
-> 既定では、スパム、バルクメッセージ、およびフィッシングメッセージは、30日間検疫に保持されます。 メールフロールールに一致したために検疫されたメッセージは、7日間検疫に保持されます。 マルウェアメッセージは、15日間検疫に保持されます。 セキュリティ & コンプライアンスセンターのスパム対策設定でスパム検疫時間をカスタマイズできます。 Office 365 で検疫からメッセージが削除されると、元に戻すことはできません。 必要に応じて、スパム対策フィルターポリシーの検疫済みメッセージの保持期間を変更することができます。 詳細については、「[検疫の保存期間の設定](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)」を参照してください。
+## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>管理者の検疫にアクセスするには、どのようなアクセス許可が必要ですか。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+検疫を管理するためのアクセス許可は、*セキュリティ & コンプライアンスセンター*の役割グループのメンバーシップによって制御されます。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)」を参照してください。
 
-検疫はセキュリティ & コンプライアンスセンターに含まれていますが、検疫内のメッセージを管理するためのアクセス許可は、 **Exchange Online**役割グループのメンバーシップによって制御されます。 Exchange Online の役割グループの詳細については、「 [Manage role groups In Exchange online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
+検疫を管理するためのアクセス許可を与えるセキュリティ & コンプライアンスの役割グループは次のとおりです。
 
-検疫ファイルを管理するためのアクセス許可を付与する Exchange Online 役割グループは次のとおりです。
-
-- **組織の管理**: グローバル管理者は、自動的にこのグループのメンバーになります。
+- **検疫管理者**
 
 - **セキュリティ管理者**
-
-- **検疫管理**
-
-検疫ファイルを表示するためのアクセス許可を付与する Exchange Online 役割グループは次のとおりです。
-
-- **View-Only Organization Management**
-
-- **セキュリティ閲覧者**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>組織の検疫済みメッセージを表示する
 

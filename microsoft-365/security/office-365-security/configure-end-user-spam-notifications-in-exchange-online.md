@@ -13,19 +13,19 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 既定の企業全体のスパムフィルターポリシーまたはドメインに適用されるカスタムスパムフィルターポリシーに対して、エンドユーザーのスパム通知を構成できます。
-ms.openlocfilehash: 0b1b88a60ba1f14aa482dc8214739930b69cca05
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8e77fbb619db776d7231f6e1f944f1237c1d601c
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909837"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021993"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online エンドユーザースパム通知の構成
 
 > [!IMPORTANT]
 > このトピックはクラウドでホストされたメールボックスを保護している Exchange Online のお客様を対象としています。 オンプレミスのメールボックスを保護している Exchange Online Protection (EOP) スタンドアロンのお客様は、代わりに次のトピックを参照してください。 [EOP でエンドユーザーのスパム通知を構成](configure-end-user-spam-notifications-in-eop.md)します。 
   
-既定の企業全体のスパムフィルターポリシーまたはドメインに適用されるカスタムスパムフィルターポリシーに対して、エンドユーザーのスパム通知を構成できます。 エンド ユーザー向けスパム通知メッセージを有効にすると、エンド ユーザーは自分のスパム検疫メッセージを自己管理することができます。 エンド ユーザー向けスパム通知は、ユーザーまたはグループに適用されるポリシーや、例外が設定されたポリシーでは使用できません。
+既定の企業全体のスパムフィルターポリシーまたはカスタムスパムフィルターポリシーのエンドユーザースパム通知を構成できます。 エンドユーザーのスパム通知メッセージを有効にすると、ユーザーは自分のスパム検疫済みメッセージを管理できます。 
   
 エンド ユーザー向けスパム通知は、構成した期間 (1 ～ 15 日の間で指定可能) に、エンド ユーザーが受信したすべてのスパム検疫済みメッセージのリストを含みます。通知メッセージを記述する言語を構成することもできます。
   
@@ -90,7 +90,7 @@ ms.locfileid: "39909837"
     
    - [**保存**] をクリックします。 エンドユーザーのスパム通知の設定を含む、スパムフィルターポリシー設定の概要がウィンドウに表示されます。
 
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)
   
