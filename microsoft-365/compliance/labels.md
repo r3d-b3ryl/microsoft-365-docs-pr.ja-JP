@@ -1,7 +1,7 @@
 ---
 title: 保持ラベルの概要
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39621110"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023371"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -55,7 +55,7 @@ ms.locfileid: "39621110"
    - ユーザーはデータ ガバナンス ポリシーについて把握する必要がなくなり、仕事に集中できる。
 
   > [!NOTE]
-  > ラベルを自動的に適用する機能では、サイトまたはメールボックスで自動的にラベルが付けられたコンテンツを編集するアクセス許可を持つユーザーごとに Office 365 Enterprise E5 ライセンスが必要になります。読み取り専用アクセス許可だけを持つユーザーにはライセンスは不要です。
+  > ラベルの自動適用機能では、サイトで自動ラベル付けされるコンテンツに対する編集権限を持つユーザーまたはメールボックスが自動ラベル付けの対象になっているユーザーごとに Office 365 Enterprise E5 ライセンスが必要になります。読み取り専用アクセス許可を持つユーザーまたはラベル付けされたメールに単に返信を行うだけのユーザーにはライセンスは不要です。
       
 - メールとドキュメントの両方を含む、**Office 365 全体でレコード管理を実装**できます。保持ラベルを使用して、コンテンツをレコードとして分類できます。この場合、ラベルの変更と削除、およびコンテンツの編集と削除はできません。 
 
