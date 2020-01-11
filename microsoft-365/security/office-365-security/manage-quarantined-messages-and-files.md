@@ -3,7 +3,7 @@ title: Office 365 の管理者として検疫済みメッセージおよびフ�
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '管理者は、Office 365 で誤検知済みの肯定メッセージを表示、リリース、および報告することができます。 Office 365 がメッセージをフィルター処理して、複数の理由で検疫にメッセージを送信するようにポリシーを設定できます。これは、スパム、バルク、フィッシング、マルウェア、またはメールフロールールと一致したためです。 '
-ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021863"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023331"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Office 365 の管理者として検疫済みメッセージおよびファイルを管理する
 
@@ -33,9 +33,11 @@ ms.locfileid: "41021863"
 
 ## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>管理者の検疫にアクセスするには、どのようなアクセス許可が必要ですか。
 
-検疫を管理するためのアクセス許可は、*セキュリティ & コンプライアンスセンター*の役割グループのメンバーシップによって制御されます。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)」を参照してください。
+検疫を管理するためのアクセス許可は、*セキュリティ & コンプライアンスセンター*の役割グループ (具体的には、**検疫**の役割) のメンバーシップによって制御されます。 セキュリティ & コンプライアンスセンターの役割および役割グループの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-検疫を管理するためのアクセス許可を与えるセキュリティ & コンプライアンスの役割グループは次のとおりです。
+既定で検疫を管理するためのアクセス許可を付与するセキュリティ & コンプライアンス役割グループは次のとおりです。
+
+- **組織の管理**(全体管理者)
 
 - **検疫管理者**
 

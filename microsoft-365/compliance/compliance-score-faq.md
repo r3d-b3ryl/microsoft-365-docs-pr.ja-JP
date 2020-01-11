@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft のコンプライアンススコアに関してよく寄せられる質問への回答を検索します。これにより、組織はリスク評価を簡素化および自動化できます。
-ms.openlocfilehash: bc0ddfe71a3de2bbfa2c9c9a0fdc507a540daf90
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "39625422"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021983"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft コンプライアンススコア (プレビュー) についてよく寄せられる質問
 
@@ -41,7 +41,7 @@ Microsoft コンプライアンススコアは、組織の法令遵守状況を�
 
 コンプライアンススコアは、コンプライアンス監視の役割を果たし、規制基準に準拠するためのアクティビティを実行する組織内のすべてのユーザーに役立ちます。 コンプライアンススコアでは、組織のデータ保護を向上させるために、規制や基準を熟知している必要はありません。 コンプライアンススコアは、すべてのユーザーにとって最適な開始位置です。 ここから、コンプライアンススコアを確認し、推奨されるアクションを使用してリスクを最小限に抑えることができます。多くの場合、これらのアクションを実行するためにソリューションを適切に起動します。
 
-コンプライアンスマネージャーとは、評価を構築するために、ユーザーが評価を管理し、カスタムテンプレートを作成できるようにするための場所です。 パブリックプレビュー中に[コンプライアンスマネージャーのみがサポートするアクション](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship)について説明します。
+コンプライアンスマネージャーとは、評価を構築するために、ユーザーが評価を管理し、カスタムテンプレートを作成できるようにするための場所です。 パブリックプレビュー中に[コンプライアンスマネージャーのみがサポートするアクション](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)について説明します。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>スコアが高い場合は、完全に準拠していることを意味します。
 

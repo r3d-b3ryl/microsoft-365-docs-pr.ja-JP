@@ -13,19 +13,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 9c8c122a84a739a0cc2942f63ff319121510415b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085134"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022362"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
 > [!NOTE]
-> データ損失防止機能は、最近、Office 365 Advanced コンプライアンスのライセンスが付与されたユーザーのために Microsoft Teams のチャットおよびチャネルメッセージに追加されました。これは、スタンドアロンオプションとして利用でき、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 Office 365 と Microsoft 365 E3 には、SharePoint Online、OneDrive、および Exchange Online の DLP 保護が含まれています。 これには、Teams が SharePoint Online と OneDrive を使用してファイルを共有するため、Teams によって共有されるファイルも含まれます。
+> 最近、Office 365 Advanced Compliance のライセンスを取得しているユーザー向けに、データ損失防止機能が Microsoft Teams のチャットとチャネルのメッセージに追加されました。これはスタンドアロンのオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 Office 365 と Microsoft 365 E3 には、SharePoint Online、OneDrive、および Exchange Online の DLP 保護が含まれています。 これには、Teams が SharePoint Online と OneDrive を使用してファイルを共有するため、Teams によって共有されるファイルも含まれます。
 Teams チャットで DLP 保護をサポートするには、E5 が必要です。
-ライセンス要件の詳細については、「 [Microsoft 365 テナントレベルサービスライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
+ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft Teams の DLP の概要
 
@@ -90,7 +90,7 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 5. すべてのアカウントの既定の設定をそのまま使用するか、または含めるアカウントまたは除外するアカウントを指定します。
 
-6. **[保存]** をクリックします。
+6. [**保存**] をクリックします。
 
 変更がデータセンターを経由して、ユーザーアカウントに同期されるまで約1時間の時間を確保します。
 <!-- again, why user accounts? -->
@@ -109,6 +109,7 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 5. [**場所の選択**] タブで、すべての場所の既定の設定をそのまま使用するか、[特定の**場所を選択**する] を選択して、[**次へ**] を選択します。<br/>特定の場所を選択した場合は、DLP ポリシーに対してそれらの場所を選択し、[**次へ**] を選択します。<br/>![DLP ポリシーの場所](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > 機密情報が含まれるドキュメントが不適切に共有されないようにするには、 **SharePoint サイト**と**OneDrive アカウント**が、 **Teams のチャットおよびチャネルメッセージ**と共にオンになっていることを確認してください。
+    > Microsoft Teams のチャネルは、Exchange Online の機能に強く依存しています。 チャネルのコンテンツに適用する必要があるポリシーについても、 **Exchange のメール**の場所が有効になっていることを確認してください。  
 <br/>
 
 6. [**ポリシー設定**] タブの [**保護するコンテンツの種類をカスタマイズ**する] で、既定の簡易設定をそのまま使用するか、[**詳細設定**] を選択して [**次へ**] を選択します。 [詳細設定] を選択した場合は、ポリシーのルールを作成または編集することができます。 (詳細については、「 [Simple settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)」と「advanced settings」を参照してください)。
