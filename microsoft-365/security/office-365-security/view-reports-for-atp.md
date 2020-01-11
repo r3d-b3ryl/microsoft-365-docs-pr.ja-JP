@@ -1,9 +1,9 @@
 ---
-title: Office 365 Advanced Threat Protection のレポートを表示する
+title: Office 365 Advanced Threat Protection、マルウェアレポート、フィッシングレポート、侵害されたアカウント、URL 保護状態、脅威レポート、レポートの脅威のレポートを表示する
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 01/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用する方法について説明します。
-ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用します。
+ms.openlocfilehash: a03fc9e14017255faf8c1c7f58cf2baa65823962
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866409"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022393"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -41,7 +41,27 @@ ATP レポートの概要とその使用方法については、この記事を�
 
 **脅威保護の状態**レポートは、悪意のあるコンテンツや悪意のある電子メールに関する情報をまとめた1つのビューで、 [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) および[Office 365 ATP](office-365-atp.md)によって検出されブロックされます。 このレポートは、時間の経過による検出 (最大90日間) を表示するのに役立ち、セキュリティ管理者が傾向を特定したり、ポリシーが調整を必要とするかどうかを判断したりできます。 
 
-脅威保護の状態レポートでは、マルウェア対策エンジンによってブロックされたファイルや web サイトアドレス (Url)、[ゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)、Atp の[安全](atp-safe-links.md)な[添付ファイル](atp-safe-attachments.md)、atp の[フィッシング対策機能](atp-anti-phishing.md)などの atp 機能など、悪意のあるコンテンツを含む一意の電子メールメッセージの集計数が提供されます。 
+このレポートでは、マルウェア対策エンジンによってブロックされたファイルや web サイトアドレス (Url)、[ゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)、Atp の[安全](atp-safe-links.md)な添付ファイル、Atp の[安全な添付ファイル](atp-safe-attachments.md)、および[atp のフィッシング対策機能](atp-anti-phishing.md)などの、悪意のあるコンテンツを使用した一意の電子メールメッセージの集計数が提供されます。 
+
+情報のフィルターと内訳により、このレポートの情報をより詳細に分類することができます。 具体的には、[*メール > フィッシング*] および [*電子メール > マルウェア] ビュー*に含まれている [切断] メニューがあります。 データは次のように分割されます。
+
+| |  |
+|---------|---------|
+|検出の種類別    | これらの脅威をキャッチするために役立つポリシーは何ですか。         |
+|検出テクノロジによる     | 脅威をキャッチした Microsoft テクノロジの基礎        |
+|配信状況別     | 脅威として検出された電子メールメッセージにはどのような現象がありますか?         |
+| | |
+
+> [!TIP]
+> 電子メール > フィッシング |マルウェアの表示には、ATP によって*生成さ*れたファイルの評価、*ファイルの分析*、 *URL の分析*、*スプーフィング防止: DMARC failure*などのカテゴリがあるので、表示されている検出テクノロジの詳細な分類があります。たとえば、組織が脅威をキャッチすることを明確にするために役立ちます。
+
+![脅威保護の状態レポートのドロップダウンが表示されています。](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+
+これらのビューは、ボタンクリック (電子メール > フィッシング、電子メール > マルウェア、およびコンテンツ > マルウェアビュー) を使用して、エクスポートするオプションを提供します。 コンピューターにエクスポートされた集計データを Excel で開くことができます。
+
+![この図は、マルウェアビューのメニュー、[スケジュールの作成]、および [要求レポート] のオプションとしてのエクスポートを示しています。](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+概要とメールのビューでは、24時間ではなく、処理時間内に情報が表示されます (demand re)。 ここでは、この速度が向上しています)。
 
 > [!NOTE]
 > 脅威保護の状態レポートは、 [Office 365 ATP](office-365-atp.md)または[Exchange Online Protection](exchange-online-protection-eop.md) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。 たとえば、ATP のお客様向けの脅威保護状態レポートには、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報が含まれています。 このような情報は ATP に固有のものなので、EOP を持たないお客様は脅威保護の状態レポートにこれらの詳細を表示しません。
@@ -61,7 +81,28 @@ ATP レポートの概要とその使用方法については、この記事を�
 [**データの表示**] メニューを使用して、レポートに表示される情報を変更することもできます。 
   
 ![ATP の脅威保護状態レポートの表示オプション](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-  
+
+## <a name="url-protection-status-report"></a>URL 保護状態レポート
+
+このレポートは基礎となるデータを収集し、1回のクリックで検出された脅威です (一方、他のほとんどの電子メール脅威関連のレポートはメッセージデータごと)。 このレポートは、クリックごとに電子メールメッセージやドキュメント内のハイパーリンクによって発生する脅威を表示するように設計されています。 2つのビューがあります。
+
+|  |  |
+|---------|---------|
+|URL [保護アクション] をクリックします。   | ブロックされる Url の数、ブロックされているが、ユーザーによるクリックスルーで上書きされ、ユーザーがクリックスルーで上書きしていることを確認します。        |
+|[URL] をクリックします (アプリケーション別)     | URL がクリックされたアプリケーションを参照してください。        |
+|  |  |
+
+詳細表には、クリック時間とユーザー情報に関する詳細情報が表示されます。 最後に、URL 保護の状態レポートでは、ATP の安全なリンク機能が保護されているため、ATP の安全なリンクが有効になっているお客様のみが、このレポートに反映されるデータを表示することに注意してください。
+
+> [!NOTE]
+> これは、*保護傾向レポート*で、データが大きなデータセット内の傾向を表すことを意味します。 レポートは、リアルタイムでは利用できません。 リアルタイム URL の場合は、[データ] をクリックし、引き続き URL トレースを使用してください。
+
+## <a name="compromised-users-report"></a>侵害されたユーザーレポート
+
+このレポートは、Exchange Online Protection を使用しているすべてのユーザーが、疑わしいユーザーまたは制限されたユーザーとしてマークされたユーザーアカウント数を示しています。ユーザーアカウントが問題になっている可能性がある状態のいずれかを入力するか、またはそれ以外の場合にも使用できます。セキュリティ. 侵害されたユーザーレポートによって、不審または制限付きの状態でマークされたアカウントでスパイクや傾向を特定でき、セキュリティとテナントの wellness に関する問題が発生する可能性があります。
+
+![危険にさらされているユーザーは、Office 365 に表示されたとおりに報告されます。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="atp-file-types-report"></a>ATP ファイルの種類レポート
 
 **Atp ファイルの種類**レポートには、 [atp の安全な添付](atp-safe-attachments.md)ファイルによって検出されたファイルの種類が表示されます。
@@ -106,7 +147,7 @@ ATP レポートの概要とその使用方法については、この記事を�
 - セキュリティ&amp; /コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
     - 組織の管理
     - セキュリティ管理者 (Azure Active Directory 管理センター[https://aad.portal.azure.com](https://aad.portal.azure.com)で割り当て可能)
-    - セキュリティリーダ
+    - セキュリティ閲覧者
 
 - Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
     - 組織の管理
