@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 147dd0ec0276d685177ae389092ec18ace0d7bed
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 92a786f40c10170cf0eb5f91f765bad4dc044c97
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831690"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112671"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
@@ -39,7 +39,7 @@ Windows 10 オペレーティングシステムを展開するためのさまざ
 
 | 展開シナリオ | 使用する状況 |
 |:--- |:--- |
-| [Microsoft エンドポイント構成マネージャーを一括アップグレードとして使用する](windows10-deploy-inplaceupgrade.md) | Windows 7 または Windows 8.1 コンピューターを Windows 10 Enterprise の<a href="https://aka.ms/windows-10-release-information" target="_blank">現在のバージョン</a>にアップグレードする必要があり、コンピューターが現在<a href="https://aka.ms/introtosccm" target="_blank">構成マネージャー (current branch)</a>で管理されている場合は、このオプションを選択します。 |
+| [Microsoft エンドポイント構成マネージャーを一括アップグレードとして使用する](windows10-deploy-inplaceupgrade.md) | Windows 7 または Windows 8.1 コンピューターを Windows 10 Enterprise の<a href="https://aka.ms/windows-10-release-information" target="_blank">現在のバージョン</a>にアップグレードする必要があり、コンピューターが現在<a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">構成マネージャー (current branch)</a>で管理されている場合は、このオプションを選択します。 |
 | [Windows 自動操縦の使用](windows10-deploy-autopilot.md) | Windows 10 Enterprise、バージョン1703以降が事前インストールされている Windows コンピューターを新たにセットアップする場合は、このオプションを選択します。 エンドユーザーは、職場または学校のアカウントの資格情報を入力することによって、目的の構成を使用してセットアップを開始します。 |
 
 これらの展開シナリオが組織のニーズに合わない場合は、他のシナリオについて学習し、 [Windows 10 の展開シナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)での各機能と制限事項について理解することができます。 自分で<a href="https://aka.ms/planforwin10deployment" target="_blank">Windows 10 の展開を計画</a>することもできます。

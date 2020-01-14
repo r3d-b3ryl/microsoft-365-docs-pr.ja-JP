@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: dc715bbf4cef8a742a28a6452e83b6e8d2f7cdd8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805620"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111871"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Microsoft 365 Business から Microsoft 365 E3 への移行
 
@@ -74,10 +74,10 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 | Office 365 データ損失防止、Azure Information Protection プラン1  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | エンドポイント DLP のウィンドウ情報の保護    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | **クライアントアクセスライセンス (CAL 権限)**    | | |   
-| エンタープライズ CAL スイート (Exchange、SharePoint、Skype、Windows、System Center Configuration Manager、Windows Rights Management)| |        ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| エンタープライズ CAL スイート (Exchange、SharePoint、Skype、Windows、Microsoft エンドポイント構成マネージャー、Windows Rights Management)| |       ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | **コンプライアンス**        | | | 
 | 無制限のメールのアーカイブ | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| Compliance Manager    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| コンプライアンス マネージャー    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | 電子情報開示    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | インプレース保持と訴訟ホールド | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | メッセージング レコード管理 (MRM) 保持タグとアイテム保持ポリシー  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 

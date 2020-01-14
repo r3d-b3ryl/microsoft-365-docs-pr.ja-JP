@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959615"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111851"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>コミュニケーションコンプライアンス機能リファレンス (プレビュー)
 
@@ -173,7 +173,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 
 通知テンプレートは、次のメッセージフィールドを定義できるカスタム電子メールテンプレートです。
 
-|**Field**|**Required**| **詳細** |
+|**Field**|**必須**| **詳細** |
 |:-----|:-----|:-----|
 |**テンプレート名** | はい | 修復時に通知ワークフローで選択する通知テンプレートのフレンドリ名。テキスト文字がサポートされています。 |
 | **送信者のアドレス** | はい | サブスクリプションの Active Directory から選択された、ポリシーが一致する従業員にメッセージを送信する1人以上のユーザーまたはグループのアドレス。 |
@@ -215,7 +215,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 | **Recipient** | メッセージが送信されたユーザー。 |
 | [**Sender (送信者)**] | メッセージを送信したユーザー。 |
 | **送信者ドメイン** | メッセージを送信したドメイン。 |
-| **Size** | メッセージのサイズ (KB 単位)。 |
+| **サイズ** | メッセージのサイズ (KB 単位)。 |
 | **件名/タイトル** | メッセージの件名またはチャットのタイトル。 |
 | **Tags** | メッセージに割り当てられているタグ (*疑わしい*、*準拠*、または*非準拠*)。 |
 | **エスカレート先** | メッセージエスカレーションアクションの一部として含まれるユーザー名。 |
@@ -277,6 +277,12 @@ Office 365 セキュリティ & コンプライアンスセンターの [**通�
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+```
+
+この例では、通信コンプライアンスポリシーの更新アクティビティを返します。
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。

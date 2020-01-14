@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online Protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
-ms.openlocfilehash: c3efed345baec7b0350d089a56e931006a4724a6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 235bac70380d8eadb006ce0c903036a1fd471cff
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970273"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112631"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする
 
@@ -120,7 +120,7 @@ Contoso のセキュリティ管理者は、このようなニーズを満たす
 |||
 |:-----|:-----|
 |**設定またはオプション**|**例**|
-|Name|ドメインと CEO|
+|名前|ドメインと CEO|
 |説明|CEO とドメインが偽装されていないことを確実にする。|
 |保護対象のユーザーの追加|少なくとも CEO の電子メール アドレスを指定します。|
 |保護対象のドメインの追加|CEO のオフィスが含まれている組織のドメイン。|
@@ -147,7 +147,7 @@ Contoso のセキュリティ管理者は、このようなニーズを満たす
 
 フィッシング対策ポリシーを設定すると、レポートを表示して、組織の脅威保護機能がどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
 
-- [Office 365 のレポートを表示する](view-reports-for-atp.md)か、[電子メールのセキュリティレポート](../../compliance/view-email-security-reports.md)を表示する
+- [Office 365 のレポートを表示する](view-reports-for-atp.md)か、[電子メールのセキュリティレポート](view-email-security-reports.md)を表示する
 
 - [脅威エクスプローラー (またはリアルタイムの検出) を使用する](threat-explorer.md)
 

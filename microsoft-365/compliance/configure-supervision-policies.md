@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: e7a46e2fcd15a77f6fe7f1b97adf5ed26e97e0e2
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: a04d97cf887a14d89052d03ffdf3353f62cd612f
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959625"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111931"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Office 365 で監督ポリシーを構成する
 
@@ -123,7 +123,7 @@ Office 365 セキュリティ/コンプライアンスセンターのメニュ�
 
 ### <a name="create-a-new-role-group"></a>新しい役割グループを作成する
 
-1. Office 365 [https://protection.office.com](https://protection.office.com)組織の管理者アカウントの資格情報を使用してサインインします。
+1. Office 365 [https://protection.office.com/permissions](https://protection.office.com/permissions)組織の管理者アカウントの資格情報を使用してサインインします。
 
 2. Office 365 セキュリティ/コンプライアンスセンターで、[**アクセス許可**] に移動し、[**+** 追加] () をクリックします。
 

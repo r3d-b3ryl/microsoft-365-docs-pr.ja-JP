@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 08d10dae35023d3e1d9f1e98d36e52f283ec04fa
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669684"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112691"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>手順 2: 既存のデバイス用に Windows 10 Enterprise を一括アップグレードとして展開する
 
@@ -27,7 +27,7 @@ ms.locfileid: "38669684"
 
 Windows 7 または Windows 8.1 を実行している既存のコンピューターがある場合は、組織で Windows 10 を展開している場合はこのパスを使用することをお勧めします。 Windows インストールプログラム (Setup.exe) を活用して一括アップグレードを実行すると、既存のオペレーティングシステムのバージョンからすべてのデータ、設定、アプリケーション、およびドライバーが自動的に保持されます。 複雑な展開インフラストラクチャは必要ないため、これには最小限の IT 作業が必要になります。
 
-構成マネージャーを一括アップグレードとして使用して Windows 10 Enterprise のイメージを構成および展開するには、次の手順を実行します。
+Microsoft エンドポイント構成マネージャーを一括アップグレードとして使用して Windows 10 Enterprise イメージを構成および展開するには、次の手順を実行します。
 
 ## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>構成マネージャーポスターを使用した Windows 10 展開
 
@@ -45,7 +45,7 @@ Windows 7 または Windows 8.1 を実行している既存のコンピュータ
 
 次に、ガイドに従って構成マネージャー (Current Branch) を使用して、Windows 7 以降のオペレーティングシステムを Windows 10 にアップグレードします。 高リスク展開の場合と同様に、先に進む前にユーザーデータをバックアップすることをお勧めします。 OneDrive クラウドストレージは、Microsoft 365 ユーザーのライセンスを使用する準備が整っており、そのファイルを安全に保存するために使用できます。 詳細については、「 [OneDrive クイックスタートガイド](https://aka.ms/ODfBquickstartguide)」を参照してください。 このページにアクセスするには、Office 365 または Microsoft 365 テナントのテナント管理者またはグローバル管理者としてサインインする必要があります。
 
-Configuration Manager のバージョンと、対応する Windows 10 クライアントのバージョンの一覧については、「 [Configuration manager の windows 10 のサポート](https://aka.ms/supportforwin10sccm)」を参照してください。
+Configuration Manager のバージョンと、対応する Windows 10 クライアントのバージョンの一覧については、「 [Configuration manager の windows 10 のサポート](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10)」を参照してください。
 
 **Windows のアップグレードの準備状況を確認するには**
 
@@ -94,7 +94,7 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 アップグレードタスクシーケンスを作成した後、アップグレードするデバイスを含むコレクションを作成する必要があります。
 
 > [!NOTE]
-> 次の設定を使用して、単一のデバイスで展開をテストします。 準備が整ったら、さまざまなメンバーシップルールを使用してデバイスのグループを含めることができます。 詳細については、「 [Configuration Manager でコレクションを作成する方法](https://aka.ms/sccm-create-collections)」を参照してください。
+> 次の設定を使用して、単一のデバイスで展開をテストします。 準備が整ったら、さまざまなメンバーシップルールを使用してデバイスのグループを含めることができます。 詳細については、「 [Configuration Manager でコレクションを作成する方法](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections)」を参照してください。
 
 1. 構成マネージャーコンソールの [**アセットとコンプライアンス**] ワークスペースで、[**デバイスコレクション**] を右クリックし、[**デバイスコレクションの作成**] を選択します。 
 2. [デバイスコレクションの作成] ウィザードの **[全般**] ページで、次の設定を入力し、[**次へ**] を選択します。

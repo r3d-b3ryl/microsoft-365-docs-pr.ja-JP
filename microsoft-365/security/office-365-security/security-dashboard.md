@@ -1,5 +1,5 @@
 ---
-title: セキュリティ ダッシュボードの概要
+title: セキュリティダッシュボードの概要
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: f7fc45ca1df86fa29c6e2af69da5258fe6d564b6
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033938"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112651"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -64,7 +64,7 @@ ms.locfileid: "38033938"
 
 |サブスクリプションに含まれるもの |これらの詳細が表示できます。 |
 |---------|---------|
-|EOP ではないが、Office 365 ATP     |EOP によって検出およびブロックされた悪意のある電子メール<br> 「[脅威保護の状態レポート (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report)」を参照してください。| 
+|EOP ではないが、Office 365 ATP     |EOP によって検出およびブロックされた悪意のある電子メール<br> 「[脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。| 
 |Office 365 ATP |EOP および Office 365 ATP により、悪意のあるコンテンツや悪意のある電子メールが検出されブロックされる<br>マルウェア対策エンジン、[ゼロ時間自動削除](zero-hour-auto-purge.md)、atp 機能 ([安全なリンク](atp-safe-links.md)、[安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](atp-anti-phishing.md)など) によってブロックされた一意の電子メールメッセージの集計数。<br>「[脅威保護の状態レポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。 | 
 
 脅威保護状態ウィジェットを表示またはアクセスするには、Advanced Threat Protection レポートを表示する権限が必要です。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
@@ -119,7 +119,7 @@ ms.locfileid: "38033938"
   
 ## <a name="related-topics"></a>関連項目
 
-[セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](../../compliance/view-email-security-reports.md)
+[セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](view-email-security-reports.md)
   
 [Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
   

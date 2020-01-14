@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8627a46ee861751799e1175c7e030e1b28c6d935
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807376"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111887"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Microsoft 365 で通信コンプライアンスを構成する (プレビュー)
 
@@ -42,7 +42,7 @@ Microsoft 365 組織の通信コンプライアンスをセットアップして
 
 - **手順 2 (必須)**:[組織内で通信のコンプライアンスを実現できるようにする](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    ポリシーをセットアップできるように、自分を**監督レビュー管理者**ロールに追加します。 また、**監督レビュー管理者**、**ケース管理**を使用してグループを作成し、ポリシーが一致するメッセージに対する調査と修復アクションを実行するユーザーまたはグループに対して役割を**レビュー**する必要があります。 これらの役割が割り当てられているすべてのユーザーは、Microsoft 365 コンプライアンスセンターの [**通信コンプライアンス**] ページにアクセスできます。 再表示可能な電子メールが Exchange Online でホストされている場合は、各レビュー担当者が[Exchange online へのリモート PowerShell アクセス権](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)を持っている必要があります。
+    ポリシーをセットアップできるように、自分を**監督レビュー管理者**ロールに追加します。 また、**監督レビュー管理者**、**ケース管理**を使用して新しいグループを作成し、ポリシーが一致するメッセージに対する調査と修復アクションを実行するユーザーまたはグループに対して役割を**レビュー**する必要があります。 これらの役割が割り当てられているすべてのユーザーは、Microsoft 365 コンプライアンスセンターの [**通信コンプライアンス**] ページにアクセスできます。 再表示可能な電子メールが Exchange Online でホストされている場合は、各レビュー担当者が[Exchange online へのリモート PowerShell アクセス権](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)を持っている必要があります。
 
 - **手順 3 (必須)**:[通信コンプライアンスポリシーをセットアップする](#step-3-create-a-communication-compliance-policy-required)
 
@@ -88,15 +88,17 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 ### <a name="create-a-new-role-group"></a>新しい役割グループを作成する
 
-1. Office 365 [https://compliance.microsoft.com](https://compliance.microsoft.com)組織の管理者アカウントの資格情報を使用してサインインします。
+1. Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions)組織の管理者アカウントの資格情報を使用してサインインします。
 
-2. Microsoft 365 コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
+2. Microsoft Office 365 セキュリティ/コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
 
 3. [**作成**] を選択します。
 
 4. [**名前**] フィールドに、新しい役割グループにフレンドリ名を付けます。 **[次へ]** を選択します。
 
 5. [**役割の選択**] を選択し、[**追加**] を選択します。 [**監督レビュー管理者**]、[**ケースの管理**]、[**レビュー**] のチェックボックスをオンにして、[**追加**と**完了**] を選択します。 **[次へ]** を選択します。
+
+    ![通信コンプライアンスに必要な役割グループ](media/communication-compliance-role-groups.png)
 
 6. [**メンバーの選択**] を選択し、[**追加**] を選択します。 [ポリシーの作成] と [ポリシーの一致でメッセージを管理する] を使用するすべてのユーザーおよびグループのチェックボックスをオンにし、[**追加** **] を選択します。** **[次へ]** を選択します。
 

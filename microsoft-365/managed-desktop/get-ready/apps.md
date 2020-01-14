@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913048"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112661"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのアプリ
 
@@ -32,7 +32,7 @@ Microsoft Managed Desktop license には、Office 365 ProPlus Standard Suite (Wo
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft が提供するアプリのサポート内容
 
-Microsoft は、含まれている Office 365 ProPlus アプリの展開、更新、およびサポートに対して完全なサービスを提供します。 既定では、クイック実行バージョンの Microsoft Project と Visio は含まれて*いません*が、Microsoft Managed Desktop では展開グループが提供されます。これにより、IT 管理者はライセンスを管理し、これらのアプリケーションを適切に展開することができます。機関. Microsoft は、Microsoft マネージドデスクトップサポートチャネルを使用して、これらのアプリケーションのエンドユーザーをサポートします。
+Microsoft は、含まれている Office 365 ProPlus アプリの展開、更新、およびサポートに対して完全なサービスを提供します。 既定では、クイック実行バージョンの Microsoft Project と Visio は含まれて*いません*が、Microsoft Managed Desktop は展開グループを提供し、IT 管理者がライセンスを管理したり、組織に適したアプリケーションを展開したりできるようにします。 Microsoft は、Microsoft マネージドデスクトップサポートチャネルを使用して、これらのアプリケーションのエンドユーザーをサポートします。
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>提供するアプリをサポートするために必要な作業
 
@@ -46,7 +46,7 @@ Microsoft は、含まれている Office 365 ProPlus アプリの展開、更�
 
 もちろん、ビジネス運用に必要なその他のアプリが多数存在する可能性があります。 これらは microsoft Intune の展開パイプラインを使用して、Microsoft マネージドデスクトップデバイスにのみ展開できます。 アプリで必要になるのは、ベンダーによってパッケージ化されている場合 (Microsoft 以外のベンダーまたは Microsoft コンサルティングサービス (MCS) である場合もあります)、または手段を持っている場合は自分でパッケージ化することができます。 次に、これらのパッケージを Microsoft マネージドデスクトップポータルに追加して、展開を開始するように Azure Active Directory グループに割り当てます。 
 
-現在、System Center Configuration Manager を使用してアプリを展開している場合は、Microsoft Managed Desktop を使用してアプリを評価し、どのユーザーが Microsoft Intune に移行する準備ができているかを検出して、何らかの調整が必要な場合があります。.
+Microsoft エンドポイント構成マネージャーを使用して現在アプリを展開している場合、Microsoft マネージドデスクトップでは、アプリを評価して、Microsoft Intune に移行する準備ができているものと、必要なものがあるかどうかを検出するためのクエリを提供できます。セレクター.
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに含める独自のアプリの準備

@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 1d9b390cc28002b4561d61fa1d6cc411f3b135f1
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962604"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112711"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをユーザー自身が登録する
 
@@ -43,10 +43,10 @@ Microsoft マネージドデスクトップは、ハードウェアハッシュ�
 
 #### <a name="configuration-manager"></a>Configuration Manager
 
-System Center Configuration Manager を使用して、Microsoft マネージドデスクトップに登録する既存のデバイスからハードウェアハッシュを収集できます。
+Microsoft エンドポイント構成マネージャーを使用して、Microsoft マネージドデスクトップに登録する既存のデバイスからハードウェアハッシュを収集できます。
 
 > [!IMPORTANT]
-> この情報を取得するデバイスには、Windows 10、バージョン1703以降が実行されている必要があります。 また、System Center の現在のブランチサイトに接続されている構成マネージャークライアントのデバイスも必要です。 また、SQL Server Reporting Services が有効になっている環境で、レポートポイントサイトシステムの役割が設定されている必要もあります。 
+> この情報を取得するデバイスには、Windows 10、バージョン1703以降が実行されている必要があります。 構成マネージャー (Current Branch) サイトに接続されている構成マネージャークライアントのデバイスも必要です。 また、SQL Server Reporting Services が有効になっている環境で、レポートポイントサイトシステムの役割が設定されている必要もあります。 
 
 これらの前提条件をすべて満たしている場合は、次の手順を実行して情報を収集する準備ができています。
 
@@ -148,7 +148,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. デバイスのエントリが存在する可能性があるディレクトリにアクセスします。 Windows Server Active Directory ドメインサービスと Azure Active Directory を含む、*すべて*のディレクトリから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
-4. デバイスのエントリが存在する可能性があるアクセス管理サービス。 System Center Configuration manager、Microsoft Intune、Windows 自動操縦など、*すべて*の管理サービスから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
+4. デバイスのエントリが存在する可能性があるアクセス管理サービス。 Microsoft エンドポイント構成マネージャー、Microsoft Intune、Windows 自動操縦を含む、*すべて*の管理サービスから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
 
 これで、デバイスの[登録](#register-devices)に進むことができます。
 

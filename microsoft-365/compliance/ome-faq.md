@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: fa8268569bfabcaa9e3cca963ad12723c8c99369
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962564"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111861"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -141,7 +141,7 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>暗号化された電子メールについては、レポート機能や分析情報はありますか。
 
-セキュリティ/コンプライアンスセンターには、暗号化レポートがあります。 [セキュリティ & コンプライアンスセンターで電子メールセキュリティレポートを表示する](view-email-security-reports.md)を参照してください。
+セキュリティ/コンプライアンスセンターには、暗号化レポートがあります。 [セキュリティ & コンプライアンスセンターで電子メールセキュリティレポートを表示する](../security/office-365-security/view-email-security-reports.md)を参照してください。
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>電子情報開示などのコンプライアンス機能を使用してメッセージの暗号化を使用できますか?
 
@@ -170,8 +170,8 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 | Outlook on the web | はい | はい                |
 | Outlook for Windows| はい | はい                |
 | Outlook for Mac    | はい | はい                |
-| Outlook for Android| はい | 不要                 |
-| Outlook for iOS    | はい | 不要                 |
+| Outlook for Android| はい | いいえ                 |
+| Outlook for iOS    | はい | いいえ                 |
 |
 
 現在、次の2つの既知の制限があります。
