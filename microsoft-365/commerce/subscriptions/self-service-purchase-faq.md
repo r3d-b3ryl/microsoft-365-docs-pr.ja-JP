@@ -13,17 +13,19 @@ search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: d8edca60687a269c062f44a23500b204b965863c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806240"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120158"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
 > [!NOTE]
 > この記事に記載されている情報は、Microsoft 電源プラットフォーム (Power BI、電源アプリ、およびパワー自動化) サブスクリプションにのみ適用されます。
+
+米国では、Power BI でセルフサービス購入を利用できるようになりました。
 
 ## <a name="general"></a>全般
 
@@ -39,9 +41,9 @@ ms.locfileid: "40806240"
 
 今日の世界では、エンドユーザーと部署が、独自のテクノロジソリューションを求め、購入する機会が増えています。 これらのお客様から多数の要求を受信して、電源プラットフォーム製品のセルフサービス購入を有効にしました。 IT 管理者のニーズを均等にする一方で、組織内の個々のユーザーがサードパーティ製のソリューションを使用して知識を持たない場合に、表示や制御を行うことがよくあります。 今後の電源プラットフォーム製品のセルフサービス機能を使用すると、IT 管理者は組織内で行われているすべてのセルフサービス購入を完全に把握し、組織レベルで設定されたデータガバナンスポリシーを次のように見越計上することができるようになります。セルフサービスで購入したサブスクリプション。 また、管理者は既存のライセンスを割り当てることも、追加のサブスクリプションを購入することもできます。これには、既存の契約と、セルフサービス購入に割り当てられたユーザーの価格設定を使用します。 これらの集中的に購入したライセンスを割り当てた後、管理者は purchasers に既存のサブスクリプションをキャンセルするよう要求できます。 Microsoft は、このプロセスを今後の管理者向けに簡素化および合理化する方法を調査しています。
 
-### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>電源プラットフォーム製品のセルフサービス購入を利用できるようになるのはいつですか?
+### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>セルフサービス購入に使用できる電源プラットフォーム製品を教えてください。
 
-Microsoft は、2020年1月14日に Power BI のセルフサービス購入を米国のお客様に向けて開始しています。これにより、今後数か月に追加のマーケットが利用できるようになります。 電源アプリと電源自動化は、次の週に追加されます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。
+Microsoft は、お客様が米国で Power BI のセルフサービス購入を開始しており、今後数か月に追加のマーケットが利用可能になりました。 パワーアプリと電源自動化は、2020年1月28日に米国の顧客に追加されます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>電源プラットフォーム製品を超えたサービスに対してセルフサービス購入が有効になりますか?
 
