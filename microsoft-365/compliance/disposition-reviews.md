@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
-ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a48d47c6b02ebe20ba5fb48470a2efc88aa3dbc7
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806070"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123668"
 ---
 # <a name="overview-of-disposition-reviews"></a>廃棄レビューの概要
 
@@ -56,6 +56,7 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
   
 ![セキュリティ/コンプライアンスセンターの [配置] ページ](media/Retention-Dispositions-v2-page.png)
 
+
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>保持ラベルを作成して廃棄レビューを設定する
 
 これは、廃棄レビューを設定するための基本的なワークフローです。 このフローには、公開されている保持ラベルと、ユーザーによって手動で適用されるものが示されることに注意してください。または、廃棄レビューをトリガーする保持ラベルをコンテンツに自動適用することもできます。
@@ -67,7 +68,10 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
 保持ラベルの詳細については、「[保持ラベルの概要](labels.md)」を参照してください。
   
 ![ラベルの保持設定](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
-  
+ 
+> [!NOTE]
+> [レビューの準備が**できたアイテムがあるときにこれらのユーザーに通知**する] オプションを指定する場合は、ユーザーまたはメールが有効なセキュリティグループを指定します。 このオプションでは、Office 365 グループはサポートされていません。
+
 ## <a name="disposing-content"></a>コンテンツを破棄する
 
 コンテンツがレビューできる状態であることをレビュー担当者に電子メールで通知する場合**** は、セキュリティ&amp;コンプライアンスセンターの [廃棄] ページに移動できます。 レビュー担当者は、廃棄を待機している各保持ラベルのアイテム数を確認し、そのラベルを持つすべてのコンテンツを表示する保持ラベルを選択することができます。
@@ -94,9 +98,15 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
   
 ## <a name="permissions-for-disposition"></a>廃棄のアクセス許可
 
-[**廃棄**] ページへのアクセスを取得するには、レビュー担当者が**廃棄管理**役割および**表示専用の監査ログ**役割のメンバーである必要があります。 廃棄レビュー担当者という新しい役割グループを作成し、この2つの役割をその役割グループに追加して、役割グループにメンバーを追加することをお勧めします。 
-  
-詳細については、「[ユーザーに Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+[**廃棄**] ページへのアクセスを取得するには、レビュー担当者が**廃棄管理**役割および**表示専用の監査ログ**役割のメンバーである必要があります。 **廃棄レビュー担当者**と呼ばれる新しい役割グループを作成し、これらの2つの役割をその役割グループに追加することをお勧めします。 
+
+**表示のみの監査ログ**の役割に固有です。
+
+- 監査ログの検索に使用される基礎となるコマンドレットは Exchange Online コマンドレットなので、セキュリティ & コンプライアンスセンターの [**アクセス許可**] ページではなく、exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center)を使用してユーザーを割り当てる必要があります。 手順については、「 [Manage role groups In Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
+
+- Office 365 グループはこの役割ではサポートされていません。 代わりに、ユーザーメールボックス、メールユーザー、またはメールが有効なセキュリティグループを割り当てます。
+
+**廃棄管理**役割をユーザーに付与し、新しい**廃棄レビュー担当者**の役割を作成する手順については、「 [Office 365 &amp;セキュリティコンプライアンスセンターへのアクセス権をユーザーに](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)付与する」を参照してください。
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>破棄されたコンテンツが完全に削除されるまでの時間
 
