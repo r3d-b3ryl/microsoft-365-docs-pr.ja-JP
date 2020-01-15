@@ -1,7 +1,7 @@
 - name: Microsoft 365 セキュリティ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 開始
       items:
         - name: BDM のための Microsoft 365 セキュリティ
           href: Microsoft-365-security-for-bdm.md
@@ -412,6 +412,8 @@
               href: ./office-365-security/enable-the-report-message-add-in.md
             - name: セキュリティ/コンプライアンス センター のメッセージ追跡
               href: ./office-365-security/message-trace-scc.md
+            - name: セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
+              href: ./office-365-security/view-email-security-reports.md
             - name: セキュリティ/コンプライアンス センター のメール フロー インサイト
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
