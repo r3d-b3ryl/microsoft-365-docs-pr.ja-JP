@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ご自身の環境でWindowsおよびOfficeのサービスを準備する方法を学びます。
-ms.openlocfilehash: a1cc9cb66754ed86f982d90db0ccbcce16b5ffb1
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 28c66bbd723aaf4f3823e582e7b9b98daea69c27
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031502"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112257"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>ステップ7： WindowsとOfficeのサービス
 
@@ -37,7 +37,7 @@ ms.locfileid: "38031502"
 >WindowsおよびOfficeサービスは、半年ごとの機能更新に備えるための計画サイクルを統括する、推奨展開プロセスの第7段階です。 完全なデスクトップ展開プロセスを確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)にアクセスしてください。
 >
 
-Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプション、サポートモデル、および更新スケジュールが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 System Center Configuration Manager (Current Branch) の新機能を活用しながら、Windows 10 および Office 365 ProPlus の新機能を提供する半期チャンネルの更新を準備する方法について説明します。
+Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプション、サポートモデル、および更新スケジュールが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 Microsoft Endpoint Configuration Manager (Current Branch) の新機能を活用しながら、Windows 10 および Office 365 ProPlus の新機能を提供する半期チャンネルの更新を準備する方法について説明します。
 
 [Windows 10およびOffice 365 ProPlusへの移行を支援します](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
@@ -77,11 +77,11 @@ Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプショ�
 
 ### <a name="supporting-management-tools"></a>管理ツールをサポート
 
-更新プログラムの展開をどのようにシームレスに行うかについても検討を重ねました。Windows、Office、その他の新しい機能に対する更新プログラムの公開をサポートするために、System Center Configuration Manager (Current Branch) は頻繁に更新されています。
+更新プログラムの展開をどのようにシームレスに行うかについても検討を重ねました。Windows、Office、その他の新しい機能に対する更新プログラムの公開をサポートするために、Configuration Manager (Current Branch) は頻繁に更新されています。
 
-[System Center Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
+[Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>WindowsとOfficeチャンネルの概要
 
@@ -117,11 +117,11 @@ Windows の「簡易更新プログラム」と、Office のバイナリ差分�
 
 [Windows 10 の品質の更新プログラムの説明と、差分更新プログラムの終了](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-Windows Update for Business および Windows Server Update Services では簡易更新プログラムを長期間サポートしてきましたが、System Center Configuration Manager (Current Branch) でも簡易更新プログラムを利用できるようにサポートを拡張しました。
+Windows Update for Business および Windows Server Update Services では簡易更新プログラムを長期間サポートしてきましたが、Microsoft Endpoint Configuration Manager (Current Branch) でも簡易更新プログラムを利用できるようにサポートを拡張しました。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
-#### <a name="binary-delta-compression"></a>バイナリ差分圧縮
+#### <a name="binary-delta-compression"></a>バイナリ差分圧縮は
 
 Office のバイナリ差分圧縮は、Office 365 ProPlus の最新バージョンから更新する場合にのみ使用します。このアプローチを使用するには、以前のビルドから更新する必要があり、更新のスキップはできません。
 
@@ -133,7 +133,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 デバイスとアプリの準備で網羅したように、展開プロセス全体の手順 1 でセットアップしたのと同じ準備ツールを使用して、この大規模な更新プログラムの準備を開始します。
 
-ツールに関しては、Windows Update for Business でのポリシー設定、System Center Configuration Manager (Current Branch) によるソフトウェアの更新管理、Windows Server Update Services (WSUS)、または Microsoft Intune で設定された更新ポリシーを使用できます。ネットワーク帯域幅に関して懸念がある場合は、「手順 2: ディレクトリとネットワークの準備」を参照してください。配信の最適化や他のピアツーピアのキャッシング技術によるネットワーク トラフィック削減に関するオプションの詳細を確認できます。
+ツールに関しては、Windows Update for Business でのポリシー設定、Microsoft Endpoint Configuration Manager (Current Branch) によるソフトウェアの更新管理、Windows Server Update Services (WSUS)、または Microsoft Intune で設定された更新ポリシーを使用できます。ネットワーク帯域幅に関して懸念がある場合は、「手順 2: ディレクトリとネットワークの準備」を参照してください。配信の最適化や他のピアツーピアのキャッシング技術によるネットワーク トラフィック削減に関するオプションの詳細を確認できます。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -143,7 +143,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 #### <a name="upgrade-task-sequences"></a>タスク シーケンスのアップグレード
 
-標準レベルのソフトウェア更新管理のルーチンによる大きな機能の更新プログラムのインストールもサポートされていますが、多くの組織では System Center Configuration Manager (Current Branch) でのアップグレードのタスク シーケンス、または Microsoft Deployment Toolkit を使用することを選びます。
+標準レベルのソフトウェア更新管理のルーチンによる大きな機能の更新プログラムのインストールもサポートされていますが、多くの組織では Microsoft Endpoint Configuration Manager (Current Branch) でのアップグレードのタスク シーケンス、または Microsoft Deployment Toolkit を使用することを選びます。
 
 タスク シーケンスを使用すると、機能の更新プログラムをインストールする前にカスタム チェックやタスクを作成でき、更新プログラムのインストール自体が完了した後にカスタム タスクを実行できます。更新、ドライバーのインストールと置き換え、アプリケーションのアップグレード、タスクバーおよび Windows 10 のスタート画面の個人用設定などで、必要に応じてサービスを一時停止することも、更新後のタスクに含まれます。
 
@@ -151,7 +151,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 Windows 7 のコンピューターを Windows 10 に移行するために既にタスク シーケンスを使用していて、それらのツールに精通している場合は、移行を開始することをお勧めします。移行後は操作性も格段に向上します。アップグレード全体で 1 つのみのタスク シーケンスを使用することはできますが、組織では 2 つのタスク シーケンスを使用するのが一般的です。1 つのタスク シーケンスは、コンピューターがアップグレードの準備ができていることを確認し、対象のコンピューター上に必要なセットアップ ファイルすべてを、ダイアログを表示せずに事前にステージングします。もう 1 つのタスク シーケンスは実際のアップグレードを行います。このアプローチにより、ユーザーの生産性の低下を防ぐことができます。
 
-[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>機能の更新プログラム向けの半期チャネルのサポート
 
