@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 での脅威を探します。
 description: Microsoft 365 セキュリティセンターの脅威検索機能を使用して、侵害やその他の脅威を事前に検索する
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、Microsoft Threat Protection、MTP、セキュリティセンター、ハント、脅威探し、cyberthreat 検索、Microsoft Defender ATP、Office 365 ATP、Azure ATP、高度な検索
+keywords: Microsoft 365、M365、Microsoft Threat Protection、MTP、セキュリティセンター、ハント、脅威の探し、cyberthreat 検索、Microsoft Defender ATP、Office 365 ATP、Azure ATP、高度な検索
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e0f4c97a1c2963fc714420457208b40af688d86b
-ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
+ms.openlocfilehash: c2bb0b088a40511eea36348d39790fd5e88fa40b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41173503"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210162"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Microsoft 365 での脅威を探します。
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0f54ee771f4358c5c99c3338366eb277013c15e3
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: 284efd5224f3e48ab718c0de0c877f68fc0bdecc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012180"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210479"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft セキュリティスコア (プレビュー)
 
@@ -53,7 +53,7 @@ Microsoft セキュリティスコアは、組織のセキュリティに関す�
 
 ### <a name="products-included-in-secure-score"></a>セキュリティで保護されたスコアに含まれる製品
 
-現時点では、Office 365 (SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、Intune、Microsoft Defender ATP、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日中に公開されます。 推奨事項では、各製品に関連付けられているすべての攻撃対象が網羅されるわけではありませんが、適切な基準になっています。 また、改善アクションをサードパーティの対象としてマークすることもできます。
+現時点では、Office 365 (SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、Microsoft Defender ATP、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日中に公開されます。 推奨事項では、各製品に関連付けられているすべての攻撃対象が網羅されるわけではありませんが、適切な基準になっています。 また、改善アクションをサードパーティの対象としてマークすることもできます。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 

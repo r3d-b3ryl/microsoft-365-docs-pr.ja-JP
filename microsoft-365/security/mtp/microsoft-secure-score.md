@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012190"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210152"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -50,7 +50,7 @@ Microsoft セキュリティスコアは、組織のセキュリティに関す�
 
 ### <a name="products-included-in-secure-score"></a>セキュリティで保護されたスコアに含まれる製品
 
-現時点では、Office 365 (SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、Intune、および Cloud App Security に関する推奨事項があります。 Azure ATP、Microsoft Defender ATP など、他のセキュリティ製品の推奨事項は近日中に公開されています。 推奨事項では、各製品に関連付けられているすべての攻撃対象が網羅されるわけではありませんが、適切な基準になっています。 また、改善アクションをサードパーティの対象としてマークすることもできます。
+現時点では、Office 365 (SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、および Cloud App Security に関する推奨事項が含まれています。 Azure ATP、Microsoft Defender ATP など、他のセキュリティ製品の推奨事項は近日中に公開されています。 推奨事項では、各製品に関連付けられているすべての攻撃対象が網羅されるわけではありませんが、適切な基準になっています。 また、改善アクションをサードパーティの対象としてマークすることもできます。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
@@ -136,16 +136,53 @@ Microsoft Secure Score は、システム構成、ユーザーの行動、およ
 
 Microsoft のセキュリティスコアをより良いものにして、セキュリティの状況をより良くし、利便性を向上させるために、近い将来にいくつかの変更を加えています。 スコアと可能な最大スコアが変わります。 ただし、これはセキュリティに関する姿勢の変化を意味するものではありません。
 
+### <a name="removing-improvement-actions-from-intune"></a>Intune からの改善アクションの削除
+
+Intune から提供された Microsoft のセキュリティで保護されたスコアの改善アクションを評価した後は、組織内のデバイスのセキュリティに関する有益な表現を提供していないと判断されました。 ポリシーを重視するのではなく、デバイスの構成状態を直接評価するセキュリティ制御に移行することに取り組んでいます。
+
+次の Intune 向上アクションが削除されます。
+
+- Microsoft Intune モバイルデバイス管理を有効にする
+- Android 用の Microsoft Intune コンプライアンスポリシーを作成する
+- Android 用の Microsoft Intune コンプライアンスポリシーを作成する
+- Android 用の Microsoft Intune アプリ保護ポリシーを作成する
+- IOS 用 Microsoft Intune アプリ保護ポリシーを作成する
+- Microsoft Intune コンプライアンスポリシーが割り当てられていないデバイスを、準拠していないとしてマークする
+- IOS 用 Microsoft Intune コンプライアンスポリシーを作成する
+- MacOS の Microsoft Intune コンプライアンスポリシーを作成する
+- Windows 用の Microsoft Intune コンプライアンスポリシーを作成する
+- Android 用の Microsoft Intune 構成プロファイルを作成する
+- Android 用の Microsoft Intune 構成プロファイルを作成する
+- MacOS 用の Microsoft Intune 構成プロファイルを作成する
+- IOS 用 Microsoft Intune 構成プロファイルを作成する
+- Windows 用 Microsoft Intune 構成プロファイルを作成する
+- Microsoft Intune で拡張 jailbreak 検出を有効にする
+- すべてのデバイスにパッチを適用して、ウイルス対策とファイアウォールを有効にする必要がある
+- Microsoft Intune への Windows Defender ATP 統合を有効にする
+- Microsoft Intune Windows 情報保護ポリシーを作成する
+- すべてのデバイスに高度なセキュリティ構成を要求する
+- 毎週ブロックされたデバイスのレポートを確認する
+
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>信頼性の高い測定要件を満たしていない改善アクションを削除する
+
+マイクロソフトのセキュリティスコアが意味があり、すべての改善アクションが測定可能で信頼性を備えていることを確認するために、次の改善アクションを削除しています。
+
+- 監査データの記録を有効にする
+- 危険かつ準拠していないシャドウ IT アプリケーションを検出する
+- 環境に接続されたリスクの高い OAuth アプリケーションをブロック & アクセス許可を確認する
+
 ### <a name="mfa-improvement-action-updates"></a>MFA 向上アクションの更新
 
 ビジネスに適したポリシーを適用しているときに、最高レベルのセキュリティを確保するための企業の必要性を反映するために、Microsoft Secure Score は、多要素認証を中心とした3つの改善アクションを削除し、2つを追加します。
 
 削除される3つのを次に示します。
+
 - すべてのユーザーに多要素認証を登録する
 - すべてのユーザーに MFA を必須にする
 - Azure AD の特権の役割に MFA を必要とする
 
 新しい改善アクション:
+
 - すべてのユーザーが、セキュリティで保護されたアクセスに対して多要素認証を完了できるようにする
 - 管理役割に MFA を必要とする
 

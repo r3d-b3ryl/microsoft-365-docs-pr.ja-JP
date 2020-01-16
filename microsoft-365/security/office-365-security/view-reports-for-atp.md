@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用します。
-ms.openlocfilehash: 1ddb5a549551e674fb257e4f78c81c5df1eb1a10
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 74ed1387af7792d8cb41d6f890deb89be07fc9fc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112731"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210509"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -96,12 +96,6 @@ ATP レポートの概要とその使用方法については、この記事を�
 
 > [!NOTE]
 > これは、*保護傾向レポート*で、データが大きなデータセット内の傾向を表すことを意味します。 レポートは、リアルタイムでは利用できません。 リアルタイム URL の場合は、[データ] をクリックし、引き続き URL トレースを使用してください。
-
-## <a name="compromised-users-report"></a>侵害されたユーザーレポート
-
-このレポートは、Exchange Online Protection を使用しているすべてのユーザーが、疑わしいユーザーまたは制限されたユーザーとしてマークされたユーザーアカウント数を示しています。ユーザーアカウントが問題になっている可能性がある状態のいずれかを入力するか、またはそれ以外の場合にも使用できます。セキュリティ. 侵害されたユーザーレポートによって、不審または制限付きの状態でマークされたアカウントでスパイクや傾向を特定でき、セキュリティとテナントの wellness に関する問題が発生する可能性があります。
-
-![危険にさらされているユーザーは、Office 365 に表示されたとおりに報告されます。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="atp-file-types-report"></a>ATP ファイルの種類レポート
 

@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceImageLoadEvents テーブル
 description: 高度な検索スキーマの DeviceImageLoadEvents テーブルでの DLL 読み込みイベントについて説明します。
-keywords: 高度な検索、脅威の探し、サイバー脅威の探し、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、imageloadevents、DeviceImageLoadEvents、DLL の読み込み、ライブラリ、ファイルイメージ
+keywords: 高度な検索、脅威の探し、サイバーの脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、imageloadevents、DeviceImageLoadEvents、DLL の読み込み、ライブラリ、ファイルイメージ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fdb69ee2e53372fdc486679831704c98202dddfe
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d2ff86977343aac1fdb5c201e3eb786bf968e545
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809339"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210459"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -43,23 +43,23 @@ ms.locfileid: "40809339"
 | `FolderPath` | 文字列型 | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `MD5` | 文字列 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
-| `InitiatingProcessAccountDomain` | 文字列型 | イベントを担当するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | 文字列型 | イベントを担当するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | 文字列型 | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessIntegrityLevel` | 文字列型 | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動されたかどうかなど、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響します。 |
-| `InitiatingProcessTokenElevation` | 文字列型 | イベントを開始したプロセスに適用されたユーザーアクセス制御 (UAC) 特権昇格が存在するかどうかを示すトークンの種類 |
-| `InitiatingProcessSHA1` | 文字列型 | イベントを開始したプロセス (画像ファイル) の SHA-1 |
-| `InitiatingProcessMD5` | 文字列型 | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
-| `InitiatingProcessFileName` | 文字列型 | イベントを開始したプロセスの名前 |
+| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動されたかどうかなど、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響します。 |
+| `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されたユーザーアクセス制御 (UAC) 特権昇格が存在するかどうかを示すトークンの種類 |
+| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
+| `InitiatingProcessMD5` | string | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
+| `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | 文字列型 | イベントを開始したプロセスを実行するために使用されるコマンドライン |
+| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスを実行するために使用されるコマンドライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日付と時刻 |
-| `InitiatingProcessFolderPath` | 文字列型 | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
+| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
 | `InitiatingProcessParentId` | int | イベントを担当するプロセスを発生させる親プロセスのプロセス ID (PID) |
-| `InitiatingProcessParentFileName` | 文字列型 | イベントを処理するプロセスを生成した親プロセスの名前 |
+| `InitiatingProcessParentFileName` | string | イベントを処理するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
-| `AppGuardContainerId` | 文字列型 | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
+| `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
 
 ## <a name="related-topics"></a>関連項目
 - [積極的に脅威を捜索する](advanced-hunting-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Threat Protection の高度な捜索のベスト プラクティス
 description: 高度な検索を使用する場合に、迅速かつ効率的で、エラーのない脅威検索クエリを作成する方法について説明します。
-keywords: 高度な検索、脅威の検索、サイバー脅威の検索、検索、クエリ、テレメトリ、カスタム検出、スキーマkusto、タイムアウト回避、コマンド ライン、プロセス ID
+keywords: 高度な検索、脅威の探し、サイバーの脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、カスタムの検出、スキーマ、kusto、タイムアウトの回避、コマンドライン、プロセス id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 97c5f5541e1c3293346a53d87b950121e85e6eae
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: adb447916346ad83c95e64ef889d2986a106e776
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966871"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209942"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 

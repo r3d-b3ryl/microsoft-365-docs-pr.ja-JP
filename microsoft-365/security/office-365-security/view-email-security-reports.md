@@ -1,9 +1,9 @@
 ---
-title: セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
+title: 電子メールセキュリティレポートの表示セキュリティ&amp;コンプライアンスセンター、侵害されたユーザー、暗号化、脅威保護の状態、マルウェア検出、上位マルウェア、スパム検出、送受信されたメール、ユーザーが報告したメッセージ、閲覧レポート、検出、セキュリティデータ、セキュリティ情報
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: 70eceb8d7afa227027b71d475aa22b2151f2dea6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112427"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209952"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
@@ -29,7 +29,8 @@ ms.locfileid: "41112427"
 ![高度な脅威保護がどのように動作しているかを確認するダッシュボード](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 電子メールのセキュリティレポートには、次のようなものがあります。
-- [暗号化レポート](#encryption-report)(新)
+- [侵害されたユーザーレポート (**新!**)](#compromised-users-report-new)
+- [暗号化レポート](#encryption-report)
 - [脅威保護の状態レポート](#threat-protection-status-report) 
 - [マルウェア検出レポート](#malware-detections-report) 
 - [上位マルウェアレポート](#top-malware-report)
@@ -38,10 +39,17 @@ ms.locfileid: "41112427"
 - [スパム検出レポート](#spam-detections-report)
 - [送信および受信した電子メールレポート](#sent-and-received-email-report)
 - [ユーザーによって報告されたメッセージレポート](#user-reported-messages-report)
-    
+
+
+## <a name="compromised-users-report-new"></a>侵害されたユーザーレポート (**新!**) 
+
+このレポートは、Exchange Online Protection を使用しているすべてのユーザーが、疑わしいユーザーまたは制限されたユーザーとしてマークされたユーザーアカウント数を示しています。ユーザーアカウントが問題になっている可能性がある状態のいずれかを入力するか、またはそれ以外の場合にも使用できます。セキュリティ. 侵害されたユーザーレポートによって、不審または制限付きの状態でマークされたアカウントでスパイクや傾向を特定でき、セキュリティとテナントの wellness に関する問題が発生する可能性があります。
+
+![危険にさらされているユーザーは、Office 365 に表示されたとおりに報告されます。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="encryption-report"></a>暗号化レポート
 
-(**新**)**暗号化レポート**には、組織のポリシーによって、またはエンドユーザーの制御によって暗号化された電子メールメッセージに関する情報が表示されます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。
+**暗号化レポート**には、組織のポリシーによって、またはエンドユーザーの制御によって暗号化された電子メールメッセージに関する情報が表示されます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。
 
 このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[**レポート** \> **ダッシュボード** \>の**暗号化レポート**] に移動します。
 

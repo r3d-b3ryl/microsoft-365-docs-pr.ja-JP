@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceRegistryEvents テーブル
 description: 高度な検索スキーマの DeviceRegistryEvents テーブルからクエリを実行できるレジストリイベントについて説明します。
-keywords: 高度な検索、脅威の探し、サイバー脅威の探し、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、registryevents、registry、DeviceRegistryEvents、key、subkey、value
+keywords: 高度な検索、脅威の探し、サイバーの脅威の検出、microsoft の脅威の防止、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、registryevents、registry、DeviceRegistryEvents、key、subkey、value
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e096caea72f268599b171b5ac37414de29352d7a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f08ed781d66ad959149e643cc5773e1b1ed02166
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809346"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210392"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -39,29 +39,29 @@ ms.locfileid: "40809346"
 | `DeviceId` | 文字列 | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
-| `RegistryKey` | 文字列型 | 記録済みのアクションが適用されたレジストリキー |
-| `RegistryValueType` | 文字列型 | 記録された操作が適用されたレジストリ値の、バイナリまたは文字列などのデータ型 |
-| `RegistryValueName` | 文字列型 | 記録されたアクションが適用されたレジストリ値の名前 |
-| `RegistryValueData` | 文字列型 | 記録された操作が適用されたレジストリ値のデータ |
-| `PreviousRegistryValueName` | 文字列型 | 変更される前のレジストリ値の元の名前 |
-| `PreviousRegistryValueData` | 文字列型 | 変更される前のレジストリ値の元のデータ |
-| `InitiatingProcessAccountDomain` | 文字列型 | イベントを担当するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | 文字列型 | イベントを担当するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | 文字列型 | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessSHA1` | 文字列型 | イベントを開始したプロセス (画像ファイル) の SHA-1 |
-| `InitiatingProcessMD5` | 文字列型 | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
-| `InitiatingProcessFileName` | 文字列型 | イベントを開始したプロセスの名前 |
+| `RegistryKey` | string | 記録済みのアクションが適用されたレジストリキー |
+| `RegistryValueType` | string | 記録された操作が適用されたレジストリ値の、バイナリまたは文字列などのデータ型 |
+| `RegistryValueName` | string | 記録されたアクションが適用されたレジストリ値の名前 |
+| `RegistryValueData` | string | 記録された操作が適用されたレジストリ値のデータ |
+| `PreviousRegistryValueName` | string | 変更される前のレジストリ値の元の名前 |
+| `PreviousRegistryValueData` | string | 変更される前のレジストリ値の元のデータ |
+| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
+| `InitiatingProcessMD5` | string | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
+| `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | 文字列型 | イベントを開始したプロセスを実行するために使用されるコマンドライン |
+| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスを実行するために使用されるコマンドライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日付と時刻 |
-| `InitiatingProcessFolderPath` | 文字列型 | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
+| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
 | `InitiatingProcessParentId` | int | イベントを担当するプロセスを発生させる親プロセスのプロセス ID (PID) |
-| `InitiatingProcessParentFileName` | 文字列型 | イベントを処理するプロセスを生成した親プロセスの名前 |
+| `InitiatingProcessParentFileName` | string | イベントを処理するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
-| `InitiatingProcessIntegrityLevel` | 文字列型 | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動されたかどうかなど、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響します。 |
-| `InitiatingProcessTokenElevation` | 文字列型 | イベントを開始したプロセスに適用されたユーザーアクセス制御 (UAC) 特権昇格が存在するかどうかを示すトークンの種類 |
+| `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動されたかどうかなど、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響します。 |
+| `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されたユーザーアクセス制御 (UAC) 特権昇格が存在するかどうかを示すトークンの種類 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
-| `AppGuardContainerId` | 文字列型 | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
+| `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
 
 ## <a name="related-topics"></a>関連項目
 - [積極的に脅威を捜索する](advanced-hunting-overview.md)

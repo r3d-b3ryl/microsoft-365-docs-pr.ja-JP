@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceInfo テーブル
 description: 高度な検索スキーマの DeviceInfo テーブルにある OS、コンピューター名、およびその他のマシン情報について説明します。
-keywords: 高度な検索、脅威の探し、サイバーの脅威の探し、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、machineinfo、DeviceInfo、device、machine、OS、プラットフォーム、ユーザー
+keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、machineinfo、DeviceInfo、device、machine、OS、platform、ユーザー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1141447de9b7ac714fb200dab56c4c2e8d75a05d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4c8c5cef3ba99339176086ada055d266f92c30cf
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809355"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210449"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -37,15 +37,15 @@ ms.locfileid: "40809355"
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | 文字列 | コンピューターの一意識別子 |
-| `DeviceName` | 文字列型 | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ClientVersion` | 文字列型 | コンピューター上で実行されているエンドポイントエージェントまたはセンサーのバージョン |
-| `PublicIP` | 文字列型 | Microsoft Defender ATP サービスに接続するために利用コンピューターによって使用されるパブリック IP アドレス。 これは、マシン自体、NAT デバイス、またはプロキシの IP アドレスである場合があります。 |
+| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `ClientVersion` | string | コンピューター上で実行されているエンドポイントエージェントまたはセンサーのバージョン |
+| `PublicIP` | string | Microsoft Defender ATP サービスに接続するために利用コンピューターによって使用されるパブリック IP アドレス。 これは、マシン自体、NAT デバイス、またはプロキシの IP アドレスである場合があります。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティングシステムを示します。 |
-| `OSBuild` | 文字列型 | コンピューター上で実行されているオペレーティングシステムのビルドバージョン |
+| `OSBuild` | string | コンピューター上で実行されているオペレーティングシステムのビルドバージョン |
 | `IsAzureADJoined` | ブール型 | コンピューターが Azure Active Directory に参加しているかどうかを示すブール値のインジケーター |
-| `LoggedOnUsers` | 文字列型 | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
-| `RegistryDeviceTag` | 文字列型 | レジストリに追加されたコンピュータータグ |
+| `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
+| `RegistryDeviceTag` | string | レジストリに追加されたコンピュータータグ |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `MachineGroup` | string | コンピューターのコンピューターグループ。 このグループは、役割ベースのアクセス制御によって、コンピューターへのアクセスを決定するために使用されます。 |
