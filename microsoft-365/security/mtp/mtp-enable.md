@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b1832e2080c3178837f43cbfd45366fc4d48322d
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970855"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173823"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -41,7 +41,7 @@ Microsoft 365 E5 または同等のライセンスをお持ちのお客様は、
 ## <a name="start-using-the-service"></a>サービスの使用を開始する
 Microsoft Threat Protection サービスを有効にすると、さまざまな統合サービスからのデータが集約されます。 データは一元的に処理および保存され、新しい分析情報が特定され、一元化された応答ワークフローが可能になります。
 
-サービスを有効にする前には、Microsoft 365 セキュリティ センター ([security.microsoft.com](https://security.microsoft.com)) に [**インシデント**] と [**アクションセンター**] オプションが表示されません。
+サービスを有効にする前に、Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com)) では、[**インシデント**] および [**アクションセンター** ] オプションがメニューに表示されません。
 
 ![Microsoft Threat Protection 機能を使用しない Microsoft 365 セキュリティ センター メニューの画像](../images/mtp-off.png)
 *Microsoft Threat Protection を無効にした Microsoft 365 セキュリティ センター*
@@ -71,7 +71,7 @@ Microsoft Threat Protection を使用しない場合、Microsoft 365 セキュ�
 
 ## <a name="get-assistance"></a>サポートを利用する
 
-Microsoft のスタッフは、テナントのサービスおよび関連リソースのプロビジョニングまたはプロビジョニング解除を支援できます。 詳細については、[取引先担当者のプレミアにお問い合わせください](https://go.microsoft.com/fwlink/?LinkID=733758)。
+Microsoft のスタッフは、テナントのサービスおよび関連リソースのプロビジョニングまたはプロビジョニング解除を支援できます。 詳細については、「Microsoft 365 セキュリティセンターで**ヘルプが必要ですか?** 」を参照してください。 懸念事項を説明する際には、「Microsoft Threat Protection」をお伝えください。
 
 ## <a name="related-topics"></a>関連項目
 

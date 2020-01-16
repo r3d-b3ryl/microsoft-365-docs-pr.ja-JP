@@ -3,7 +3,7 @@ title: 未確認の送信者
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/11/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 65b9d1dd3eb1a764867103710448255be96cd183
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970933"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173513"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
@@ -44,9 +44,9 @@ Outlook.com と web 上の Outlook が電子メール認証手法を使用して
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>未確認の送信者の処理を受信するメッセージを管理する方法 
 
-Office 365 をご利用のお客様の場合は、セキュリティ & コンプライアンスセンターを使用してこの機能を管理できます。 
+Office 365 をご利用のお客様の場合は、Office 365 セキュリティ & コンプライアンスセンターを使用してこの機能を管理できます。
 
-- Office 365 セキュリティ & コンプライアンスセンターでは、フィッシングポリシーの下にあるスプーフィング対策保護を使用して、グローバルまたはセキュリティ管理者がこの機能を有効または無効にすることができます。 また、' Get-antiphishpolicy ' コマンドレットを使用して管理することもできます。 詳細については、「 [Office 365 のフィッシング対策保護](anti-phishing-protection.md)」および「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)」を参照してください。
+- セキュリティ & コンプライアンスセンターでは、フィッシングポリシーの下にあるスプーフィング対策保護を使用して、グローバルまたはセキュリティ管理者がこの機能を有効または無効にすることができます。 また、Exchange Online PowerShell で**get-antiphishpolicy**コマンドレットを使用することもできます。 詳細については、「 [Office 365 のフィッシング対策保護](anti-phishing-protection.md)」および「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)」を参照してください。
 
     ![グラフィックインターフェイスで認証されていない送信者を編集する。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -54,9 +54,9 @@ Office 365 をご利用のお客様の場合は、セキュリティ & コンプ
 
   - スプーフィングインテリジェンスの洞察を通じてドメインペアを追加します。 詳細については、「[チュートリアル: スプーフィングインテリジェンスの洞察](walkthrough-spoof-intelligence-insight.md)」を参照してください。
 
-  - Get-phishfilterpolicy コマンドレットを使用して、ドメインペアを追加します。 詳細については、「 [get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) 」および「 [set UP Office 365 ATP フィッシング対策」および「set up Office](set-up-anti-phishing-policies.md)」を参照してください。
+  - Exchange Online PowerShell で**get-phishfilterpolicy**コマンドレットを使用して、ドメインのペアを追加します。 詳細については、「 [get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) 」および「 [set UP Office 365 ATP フィッシング詐欺防止」および「設定](set-up-anti-phishing-policies.md)」を参照してください。
 
-また、電子メールトランスポートルール (Etr)、安全なドメインリスト (スパム対策ポリシー)、安全な送信者リスト、またはユーザーがこのユーザーを自分のドメイン内の "安全な送信者" として設定している場合にも、未検証の送信者の処理は適用されません。ボックス.
+さらに、メッセージがメールフロールール (トランスポートルールとも呼ばれます)、安全なドメインリスト (スパム対策ポリシー)、または安全な送信者リストによって受信トレイに配信された場合、未検証の送信者の処理は適用されません。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

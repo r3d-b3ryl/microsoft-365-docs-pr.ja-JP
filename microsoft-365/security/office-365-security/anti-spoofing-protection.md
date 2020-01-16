@@ -3,7 +3,7 @@ title: Office 365 でのスプーフィング対策保護
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
-ms.date: 08/30/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 1bcf6b954c69297981eafecef192cab0e55a7684
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971995"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112741"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -113,31 +113,25 @@ Authentication-Results:
 
 Microsoft では、2 種類のスプーフィング メッセージを区別しています。
 
- **組織内スプーフィング**
+#### <a name="intra-org-spoofing"></a>組織内スプーフィング
 
 自己完結型スプーフィングとも呼ばれます。これは、From: アドレスのドメインが受信者のドメインと同じまたは一致する (受信者のドメインが組織の[承認済みドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のいずれかに含まれる) 場合、または From: アドレスのドメインが同じ組織の一部である場合に発生します。
 
 たとえば、次に示す送信者と受信者のドメインは同じドメイン (contoso.com) です。 このページでのスパムボットの収集活動を阻止するために、電子メール アドレスにはスペースが挿入されています。
 
-From: sender @ contoso.com
-
-To: recipient @ contoso.com
+> From: sender @ contoso.com <br/> To: recipient @ contoso.com
 
 次に示す送信者と受信者のドメインは組織のドメイン (fabrikam.com) が一致しています。
 
-From: sender @ foo.fabrikam.com
-
-To: recipient @ bar.fabrikam.com
+> From: sender @ foo.fabrikam.com <br/> To: recipient @ bar.fabrikam.com
 
 次に示す送信者と受信者のドメイン (microsoft.com と bing.com) は異なっていますが、どちらも同じ組織に属しています (つまり、どちらも組織の承認済みドメインの一部です)。
 
-From: sender @ microsoft.com
-
-To: recipient @ bing.com
+> From: sender @ microsoft.com <br/> To: recipient @ bing.com
 
 組織内スプーフィングに失敗したメッセージのヘッダーには、次の値が含まれています。
 
-X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11
+`X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
 CAT はメッセージのカテゴリであり、通常は SPM (スパム) のスタンプが設定されています。ただし、メッセージ内にある別の種類のパターンによって HSPM (高確度スパム) や PHISH (フィッシング) などになっていることもあります。
 
@@ -145,13 +139,13 @@ SFTY はメッセージの安全性レベルです。最初の数字 (9) はメ�
 
 2018 年後半の時点では、組織内スプーフィングについてスタンプされる複合認証の特定の理由コードはありません (タイムラインは未定義です)。
 
- **クロスドメイン スプーフィング**
+#### <a name="cross-domain-spoofing"></a>クロスドメイン スプーフィング
 
 これは、From: アドレスの送信側ドメインが受信側組織の外部ドメインになる場合に発生します。 クロスドメイン スプーフィングのために複合認証に失敗したメッセージのヘッダーには、次の値が含まれています。
 
-Authentication-Results: … compauth=fail reason=000/001
+`Authentication-Results: ... compauth=fail reason=000/001`
 
-X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22
+`X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
 どちらの場合も、メッセージには次に示す赤色の安全のヒントがスタンプされます (同じ内容のヒントが受信者のメールボックスの言語に応じてカスタマイズされていることもあります)。
 
@@ -171,74 +165,74 @@ Office 365 の組織の管理者には、いくつかの注意が必要になる
 
 たとえば、スプーフィング対策が展開されるまで、SPF、DKIM、および DMARC のどのレコードもないメッセージは次のようなものになります。
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com;
-From: sender @ example.com
+  action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
+
 スプーフィング対策後、Office 365 Enterprise E5、EOP、または ATP を使用している場合は、compauth 値がスタンプされます。
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com; compauth=fail reason=001
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=fail reason=001
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
-
 ```
 
-これを修正するために example.com が SPF レコードを設定した場合は、DKIM レコードを設定していない場合でも、SPF にパスしたドメインと From: アドレスのドメインが一致するため、複合認証にパスするようになります。
+これを修正するために fabrikam.com が SPF レコードを設定した場合は、DKIM レコードを設定していない場合でも、SPF にパスしたドメインと From: アドレスのドメインが一致するため、複合認証にパスするようになります。
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
-  action=none header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
 また、DKIM レコードを設定して SPF レコードを設定していない場合でも、From: アドレスのドメインとパスした DKIM-Signature のドメインが一致するため同様に複合認証にパスします。
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=pass
-  (signature was verified) header.d=outbound.example.com;
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
+  (signature was verified) header.d=outbound.fabrikam.com;
   contoso.com; dmarc=bestguesspass action=none
-  header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-ただし、フィッシャーも SPF と DKIM を設定して自分のドメインでメッセージに署名しておいて、From: アドレスに異なるドメインを指定する可能性もあります。 SPF と DKIM のどちらも From: アドレスのドメインと一致する必要はないため、example.com が DMARC レコードを公開していないときには、DMARC を使用してスプーフィングのマークが付けられることはありません。
+ただし、フィッシャーも SPF と DKIM を設定して自分のドメインでメッセージに署名しておいて、From: アドレスに異なるドメインを指定する可能性もあります。 SPF と DKIM のどちらも From: アドレスのドメインと一致する必要はないため、fabrikam.com が DMARC レコードを公開していないときには、DMARC を使用してスプーフィングのマークが付けられることはありません。
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
-  contoso.com; dmarc=none action=none header.from=example.com;
-From: sender @ example.com
+  contoso.com; dmarc=none action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-電子メール クライアント (Outlook や Outlook on the web などのあらゆる電子メール クライアント) には、From: ドメインのみが表示され、SPF や DKIM のドメインは表示されません。そのため、ユーザーは実際には maliciousDomain.com から送信されたメッセージを example.com から送信されたものだと誤解してしまう可能性があります。
+電子メール クライアント (Outlook や Outlook on the web などのあらゆる電子メール クライアント) には、From: ドメインのみが表示され、SPF や DKIM のドメインは表示されません。そのため、ユーザーは実際には maliciousDomain.com から送信されたメッセージを fabrikam.com から送信されたものだと誤解してしまう可能性があります。
 
 ![パスした SPF または DKIM と From: ドメインが一致しないにもかかわらず認証されたメッセージ](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 こうした理由から、Office 365 では From: アドレスのドメインが SPF または DKIM 署名のドメインと一致することを必要とします。また、一致しない場合は、メッセージが正当であることを示す何らかの内部シグナルが含まれていることを必要とします。 それ以外の場合、メッセージは compauth に失敗します。
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
   contoso.com; dmarc=none action=none header.from=contoso.com;
   compauth=fail reason=001
 From: sender@contoso.com
-To: someone@example.com
+To: someone@fabrikam.com
 ```
 
 このようにして、Office 365 のスプーフィング対策では、認証されていないドメイン、および認証が設定されていてもユーザーが確認してメッセージの送信者だと信じる From: アドレスのドメインと一致しないドメインからの保護を実施します。 これは、組織外のドメインと組織内のドメインの両方に当てはまります。
@@ -322,7 +316,7 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 ```
 
 > [!IMPORTANT]
-> メール パスの最初のホップが Office 365 であり、スプーフィングのマークが付けられた正当な電子メールが多すぎる場合は、まず、スプーフィングされた電子メールの自分のドメインへの送信を許可する送信者を設定します (「*認証されていない電子メールを送信する正当な送信者の管理*」を参照)。 それでも誤検知 (正当なメッセージにスプーフィングのマークが付けられる) が多すぎる場合でも、スプーフィング対策保護を完全に無効化することはお勧めしません。 その代りに、「高」ではなく「基本」の保護を選択することをお勧めします。 スプーフィングされた電子メールを放置すると長期的には組織に相当に高いコストがかかる可能性があるため、誤検知に対処するほうが良いでしょう。
+> メール パスの最初のホップが Office 365 であり、スプーフィングのマークが付けられた正当な電子メールが多すぎる場合は、まず、スプーフィングされた電子メールの自分のドメインへの送信を許可する送信者を設定します (このトピックの「[認証されていない電子メールを送信する正当な送信者の管理](#managing-legitimate-senders-who-are-sending-unauthenticated-email)」セクションを参照)。 それでも誤検知 (正当なメッセージにスプーフィングのマークが付けられる) が多すぎる場合でも、スプーフィング対策保護を完全に無効化することはお勧めしません。 その代りに、「高」ではなく「基本」の保護を選択することをお勧めします。 スプーフィングされた電子メールを放置すると長期的には組織に相当に高いコストがかかる可能性があるため、誤検知に対処するほうが良いでしょう。
 
 ### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>認証されていない電子メールを送信する正当な送信者の管理
 
@@ -350,9 +344,6 @@ PowerShell を使用して、特定の送信者にドメインのスプーフィ
 
 ```powershell
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
-```
-
-```powershell
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
@@ -443,12 +434,12 @@ Office 365 の設定が更新されて、スプーフィング対策の適用を
 
 a) まず、メッセージのヘッダーで、Authentication-Results ヘッダーにある受信者ドメインを調べます。
 
-```
+```text
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; office365.contoso.net; dkim=fail
-  (body hash did not verify) header.d=simple.example.com;
+  smtp.mailfrom=fabrikam.com; office365.contoso.net; dkim=fail
+  (body hash did not verify) header.d=simple.fabrikam.com;
   office365.contoso.net; dmarc=none action=none
-  header.from=example.com; compauth=fail reason=001
+  header.from=fabrikam.com; compauth=fail reason=001
 ```
 
 受信者のドメインは、上記の赤色で示された太字のテキストでわかります (この例では、office365.contoso.net)。 これは、To: ヘッダーの受信者と異なる場合があります。
@@ -477,29 +468,28 @@ b) その次に、受信者の書き換えの一般的なユースケースを�
 
 ### <a name="how-to-disable-anti-spoofing"></a>スプーフィング対策を無効にする方法
 
-フィッシング対策ポリシーが作成済みの場合は、EnableAntispoofEnforcement パラメーターを $false に設定します。
+フィッシング対策ポリシーが作成済みの場合は、*EnableAntispoofEnforcement* パラメーターを $false に設定します。
 
-```
+```powershell
 $name = "<name of policy>"
 Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
-
 ```
 
 無効にするポリシーの名前がわからない場合は、次のようにして表示できます。
 
-```
-Get-AntiphishPolicy | fl Name
+```powershell
+Get-AntiphishPolicy | Format-List Name
 ```
 
 既存のフィッシング対策ポリシーがない場合は、そのポリシーを作成してから無効にしてください (ポリシーがない場合でも、スプーフィング対策は適用されています。2018 年後半の時点で、既定のポリシーが自動で作成されるようになったため、既定のポリシーを作成することなく無効にできます)。 これは、複数の手順で実行する必要があります。
 
-```
+```powershell
 $org = Get-OrganizationConfig
 $name = "My first anti-phishing policy for " + $org.Name
 # Note: If the name is more than 64 characters, you will need to choose a smaller one
 ```
 
-```
+```powershell
 # Next, create a new anti-phishing policy with the default values
 New-AntiphishPolicy -Name $Name
 # Select the domains to scope it to
@@ -509,7 +499,6 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 # Finally, scope the anti-phishing policy to the domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
-
 ```
 
 スプーフィング対策は、コマンドレットでのみ無効化できます (将来は、セキュリティ/コンプライアンス センターでも可能になります)。 PowerShell にアクセスできない場合は、サポート チケットを作成してください。
@@ -520,35 +509,20 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 個々のユーザーは、スプーフィング対策の安全のヒントに対する操作内容が制限されています。 ただし、一般的なシナリオを解決するために、いくつかのことを実行できます。
 
-### <a name="common-scenario-1---discussion-lists"></a>一般的なシナリオ #1 - ディスカッション リスト
+### <a name="common-scenario-discussion-lists"></a>一般的なシナリオ: ディスカッション リスト
 
 ディスカッション リストには、スプーフィング対策に関する既知の問題があります。このリストは、メッセージを転送して、その内容を変更するにもかかわらず元の From: アドレスが保持されるという方法に問題の原因があります。
 
-たとえば、自分の電子メール アドレスが user @ contoso.com で、バード ウォッチングに興味があり、ディスカッション リスト birdwatchers @ example.com に参加するとします。 このディスカッション リストにメッセージを送信するときには、次の方法で送信することになります。
+たとえば、Gabriela Laureano (glaureano @ contoso.com) はバード ウォッチングに興味があり、ディスカッション リスト birdwatchers @ fabrikam.com に参加するとします。 ディスカッション リストにメッセージを送信するときには、次のように表示されます。
 
-**From:** John Doe \<user @ contoso.com\>
-
-**宛先:** Birdwatcher のディスカッション リスト \<birdwatchers @ example.com\>
-
-**件名:** 今週、レーニア山からアオカケス を見ることができます
-
-今週、レーニア山からの風景を 眺めてみませんか?
+> **From:** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **To:** Birdwatcher のディスカッション リスト \<birdwatchers @ fabrikam.com\> <br/> 
+**件名:** 今週、レーニア山からアオカケス を見ることができます <br/><br/>今週、レーニア山からの風景を 眺めてみませんか?
 
 電子メール リストはメッセージを受信すると、そのメッセージの書式を設定し、内容を変更して、ディスカッション リストの残りのメンバーに向けてメッセージをリプレイします。このメンバーは、多様な電子メール レシーバーから構成されています。
 
-**From:** John Doe \<user @ contoso.com\>
+> **From:** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **To:** Birdwatcher のディスカッション リスト \<birdwatchers @ fabrikam.com\> <br/> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <br/><br/> 今週、レーニア山からの風景を 眺めてみませんか? <br/><br/> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
 
-**宛先:** Birdwatcher のディスカッション リスト \<birdwatchers @ example.com\>
-
-**件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます
-
-今週、レーニア山からの風景を 眺めてみませんか?
-
----
-
-このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
-
-上記のリプレイされたメッセージには、同じ From: アドレス (user @ contoso.com) がありますが、元のメッセージは件名にタグを追加して、メッセージの下側にフッターを追加することで変更されています。 この種のメッセージの変更は、メーリング リストでは一般的なものですが、誤検出の原因になることがあります。
+この例では、リプレイされたメッセージに同じ From: アドレス (glaureano @ contoso.com) がありますが、元のメッセージは件名にタグを追加して、メッセージの下側にフッターを追加することで変更されています。 この種のメッセージの変更は、メーリング リストでは一般的なものですが、誤検出の原因になることがあります。
 
 組織内のいずれかのユーザーがメーリング リストの管理者になっている場合は、そのメーリング リストがスプーフィング対策をパスするように構成できます。
 
@@ -558,11 +532,11 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 - メーリング リスト サーバーに ARC をサポートする更新プログラムをインストールすることを検討してください ([https://arc-spec.org](https://arc-spec.org/) を参照)
 
-メーリング リストの所有者でない場合は、次のようにします。
+メーリング リストを所有していない場合:
 
 - メーリング リストの管理者に、上記のいずれかのオプションを実装するように要求してください (この管理者は、メーリング リストを中継するドメインにも電子メール認証を設定する必要があります)。
 
-- 電子メール クライアントで、メッセージを受信トレイに移動するメールボックス ルールを作成してください。 また、組織の管理者に許可ルールを設定するように要求するか、「認証されていない電子メールを送信する正当な送信者の管理」のセクションで説明するようにオーバーライドするように要求してください。
+- 電子メール クライアントで、メッセージを受信トレイに移動するメールボックス ルールを作成してください。 また、組織の管理者に許可ルールを設定するように要求するか、このトピックの「[認証されていない電子メールを送信する正当な送信者の管理](#managing-legitimate-senders-who-are-sending-unauthenticated-email)」セクションで説明するようにオーバーライドするように要求してください。
 
 - Office 365 でサポート チケットを作成して、メーリング リストを正当なものとして扱うためのオーバーライドを作成してください。
 
@@ -574,7 +548,7 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 3. さらに、送信者がわかっていて、悪意のあるスプーフィングでないと確信している場合は、送信者に、認証されていないメール サーバーからメッセージを送信していることを返信で知らせてください。 これにより、元の送信者は要求された電子メール認証レコードを設定する IT 管理者に問い合わせることもあります。
 
-ドメインの所有者に対して相当数の送信者が電子メール認証レコードの設定が必要なことを返信することで、ドメインの所有者の行動を促します。 Microsoft は必要なレコードを公開するためにドメインの所有者と協力しますが、個々のユーザーの要求が大きな支援になります。
+   ドメインの所有者に対して相当数の送信者が電子メール認証レコードの設定が必要なことを返信することで、ドメインの所有者の行動を促します。 Microsoft は必要なレコードを公開するためにドメインの所有者と協力しますが、個々のユーザーの要求が大きな支援になります。
 
 4. 必要に応じて、送信者を [差出人セーフ リスト] に追加します。 ただし、そのアカウントをフィッシャーがスプーフィングすると、それが自分のメールボックスに配信される点に注意してください。 そのため、このオプションは慎重に使用してください。
 
@@ -610,9 +584,11 @@ Office 365 のユーザーではないドメインの管理者は、次のよう
 
 ### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>自分のドメインとして電子メールを送信した送信者がわからない場合
 
-多くのドメインは、すべての送信者を把握しているわけではないため、SPF レコードを公開していません。 そのことは問題になりません。すべての送信者がわかっている必要はありません。 その代りに、自分が知っているもの、特に会社のトラフィックがある場所の SPF レコードを公開することから始めて、次のニュートラル SPF ポリシー (?all) を公開します。
+多くのドメインは、すべての送信者を把握しているわけではないため、SPF レコードを公開していません。 そのことは問題になりません。すべての送信者がわかっている必要はありません。 その代りに、自分が知っているもの、特に会社のトラフィックがある場所の SPF レコードを公開することから始めて、次のニュートラル SPF ポリシー (`?all`) を公開します。
 
-example.com IN TXT "v=spf1 include:spf.example.com ?all"
+```text
+fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
+```
 
 ニュートラル ポリシーとは、会社のインフラストラクチャから送信されるすべての電子メールが、その他すべての電子メール レシーバーの場所で電子メール認証にパスするという意味です。 不明な送信者から送られた電子メールは、ニュートラルにフォールバックします。これは、SPF レコードをまったく公開していないこととほとんど同じです。
 
@@ -622,7 +598,7 @@ Office 365 への送信時、会社のトラフィックから送信された電
 
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>メーリング リストの所有者の場合
 
-セクション「[一般的なシナリオ #1 - ディスカッション リスト](#common-scenario-1---discussion-lists)」を参照してください。
+前述の「[一般的なシナリオ: ディスカッション リスト](#common-scenario-discussion-lists)」セクションを参照してください。
 
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>インターネット サービス プロバイダー (ISP)、電子メール サービス プロバイダー (ESP)、クラウド ホスティング サービスなどのインフラストラクチャ プロバイダーの場合
 
