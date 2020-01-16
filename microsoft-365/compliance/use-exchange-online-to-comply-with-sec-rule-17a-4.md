@@ -1,7 +1,7 @@
 ---
 title: Exchange Online および セキュリティ/コンプライアンス センターを使用して米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に準拠する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange Online および セキュリティ/コンプライアンス センターは、推奨通りに構成した場合、米国商品先物取引委員会規則 1.31(c)-(d) (CFTC Rule 1.31(c)-(d) )、米国金融取引業規制機構規則 4511 (FINRA Rule 4511)、および米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) における記憶域に関する該当要件に準拠することが、Cohasset Associates により検証されました。
-ms.openlocfilehash: 60b8d27ed75afbfd6ffc5d8e254738ea62e0d21b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086235"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122426"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Exchange Online および セキュリティ/コンプライアンス センターを使用して米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に準拠する
 
@@ -65,7 +65,7 @@ PowerShell を使用してアイテム保持ポリシーをロックすること
 
 ## <a name="known-limitations"></a>既知の制限
 
-Exchange Online でいくつかの制限があることを把握しています。Microsoft ではこの問題に現在取り組んでおり、次のシナリオへのサポートを 2019 年 7 月にリリースする予定にしています。
+現在、Exchange Online にはいくつかの制限があります。
 
 - アイテム レベルの監査は Office 365 グループのメールボックスでサポートされていません。
 - スレッド形式の通信は、Teams チャットおよびチャンネル メッセージでサポートされていません。
