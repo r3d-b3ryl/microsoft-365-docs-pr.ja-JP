@@ -14,17 +14,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップ展開センターの概要。
-ms.openlocfilehash: 0e901a162be61c7be2465a0054669ebc459e6f3f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7f4ef60b4f9c82055dce42291b1abca504a8248
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031092"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112551"
 ---
 # <a name="desktop-deployment-center"></a>最新デスクトップ展開センターをご覧いただき
 
 <strong>Windows 7 から Windows 10 にアップグレードする</strong>
-<p>2020 年 1 月 14 日に Windows 7 の延長サポートが終了します。 Windows 7 から Windows 10 へのインプレース アップグレードが、最速の展開方法です。 ユーザーは<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">単一の PC をアップグレードしたり</a>、System Center Configuration Manager を使用して<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">数千の PC をアップグレードしたりできます</a>。 インプレース アップグレードを使用するアプリの配信、ファイルの移行、カスタム イメージング、またはクラウドベースのサービスの有効化だけにこだわる必要はありません。 既存の PC をアップグレードするには既存のツールを使用でき、次のアップグレード用の展開手順に重点を置きます。 </p>
+<p>2020 年 1 月 14 日に Windows 7 の延長サポートが終了します。 Windows 7 から Windows 10 へのインプレース アップグレードが、最速の展開方法です。 ユーザーは<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">単一の PC をアップグレードしたり</a>、<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Microsoft Endpoint Configuration Manager を使用して数千の PC をアップグレードしたり</a>できます。 インプレース アップグレードを使用するアプリの配信、ファイルの移行、カスタム イメージング、またはクラウドベースのサービスの有効化だけにこだわる必要はありません。 既存の PC をアップグレードするには既存のツールを使用でき、次のアップグレード用の展開手順に重点を置きます。 </p>
 
 <p>
 </p>

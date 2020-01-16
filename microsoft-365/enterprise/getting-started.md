@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップの展開プロセスの概要です。
-ms.openlocfilehash: 89aeb74eddad4b973854e9900800e1fbcf262f9e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030972"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112531"
 ---
 # <a name="getting-started---desktop-deployment"></a>概要 - デスクトップの展開
 
@@ -63,9 +63,9 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 **プリブート環境をセキュリティで保護**: BIOS の代わりに 64 ビットの UEFI ファームウェアが置き換えられます。 これは起動時間を短縮するだけでなく、Windows 10 に含まれる多くの最新のセキュリティ機能を有効にするために必要です。 Windows 10 は BIOS 上でも動作しますが、UEFI の使用を強くお勧めします。 BIOS から 64 ビットを利用する UEFI に切り替えていない場合は、今すぐ切り替えましょう。 Windows 10 のアップグレード中またはアップグレード後の切り替えを支援するツールが用意されています。
 
-**クラウドベースのデバイス管理**: Microsoft Intune などのサービスは、他のモバイル デバイスと同様、Windows 10 デバイスを 1 か所から管理するのに役立ちます。 しかし、Microsoft Intune には、System Center Configuration Manager で Windows 10 デバイスを共同管理するという独自の機能があります。 System Center Configuration Manager を使用して Windows 10 に移行し、それから Microsoft Intune を追加することができます。 この連携を通じて、System Center Configuration Manager は、Microsoft のインテリジェント クラウドに接続され、組織内のインテリジェント エッジになります。 管理者は、ユーザーのデバイスがどこにあっても安全に管理することができます。ユーザーが組織のインフラストラクチャに接続されているか、パブリック クラウドに接続されているかを問いません。
+**クラウドベースのデバイス管理**: Microsoft Intune などのサービスは、他のモバイル デバイスと同様、Windows 10 デバイスを 1 か所から管理するのに役立ちます。 しかし、Microsoft Intune には、Microsoft Endpoint Configuration Manager で Windows 10 デバイスを共同管理するという独自の機能があります。 Configuration Manager を使用して Windows 10 に移行し、それから Microsoft Intune を追加することができます。 この連携を通じて、Microsoft Endpoint Configuration Manager は、Microsoft のインテリジェント クラウドに接続され、組織内のインテリジェント エッジになります。 管理者は、ユーザーのデバイスがどこにあっても安全に管理することができます。ユーザーが組織のインフラストラクチャに接続されているか、パブリック クラウドに接続されているかを問いません。
 
-[Windows 10 デバイスの共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+[Windows 10 デバイスの共同管理](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
 
 **クラウドベースの展開サービス**: 新しい PC を取得した際に、Microsoft 365 デバイスの導入に役立つ新しいクラウド サービスが導入されました。これは、Windows Autopilot 展開サービスと呼ばれます。 Autopilot はハードウェア プロバイダーと統合し、新しい PC は Autopilot に自動的に登録されます。このため、新しい PC をエンドユーザーに直接出荷することができます。 最初に PC の電源を入れると、組織の希望する設定にすばやく構成され、ユーザーの特定のニーズに合わせてカスタマイズされます。
 
@@ -73,7 +73,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 **クイック実行の展開**: Office デスクトップ アプリケーションをプロビジョニングする場合の推奨オプションは Office 365 ProPlus になります。 Office 365 ProPlus を利用すれば、開発中の Office の最新の技術革新の実践が可能となり、新しい機能を取得するまで何年も待つ必要はなくなります。 クイック実行と呼ばれるという新しいインストールも使用できます。
 
-クイック実行は、過去の MSI ベースのパッケージとはまったく異なります。 クイック実行は今まで以上に速く軽く、バックグラウンドでの更新をサポートするため、ユーザーの起動および実行が維持されます。 それは引き続き Office のローカル コピーであり、System Center Configuration Manager などの既存の展開ツールを使用した、アプリのプロビジョニングと構成も継続して行うことができます。
+クイック実行は、過去の MSI ベースのパッケージとはまったく異なります。 クイック実行は今まで以上に速く軽く、バックグラウンドでの更新をサポートするため、ユーザーの起動および実行が維持されます。 それは引き続き Office のローカル コピーであり、Microsoft Endpoint Configuration Manager などの既存の展開ツールを使用した、アプリのプロビジョニングと構成も継続して行うことができます。
 
 [Office 365 ProPlus の展開ガイド](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
@@ -83,7 +83,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 開始する前に、高レベルの計画と、その実現を支援するスポンサーを得ることが重要になります。 ここでは、Microsoft の展開プロセス全体における重要な手順の概要を説明しています。手順を参照すれば、以下の展開分野におけるコア チーム メンバーと管理するリソースを特定しやすくなります。
 
-**[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)** 展開を成功させるには、まず自分が所有しているものを把握する必要があります。 つまり、デバイスやアプリのインベントリを作成し、互換性を確認することが重要になります。 クラウドベースのサービスである Desktop Analytics で利用できるツールを活用すると、インベントリの作成や互換性の確認がしやすくなります。 Desktop Analytics を使用すれば、何億台もの PC から収集された互換性のインテリジェンスと診断データを基に、デバイス上で実行されているアプリやドライバーを評価し、デスクトップ資産を整備することができます。 「展開可能な PC」の一覧を Desktop Analytics から System Center Configuration Manager にエクスポートすることもできます。エクスポート後、対象となる PC のデータに基づくコレクションを作成できるようになります。
+**[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)** 展開を成功させるには、まず自分が所有しているものを把握する必要があります。 つまり、デバイスやアプリのインベントリを作成し、互換性を確認することが重要になります。 クラウドベースのサービスである Desktop Analytics で利用できるツールを活用すると、インベントリの作成や互換性の確認がしやすくなります。 Desktop Analytics を使用すれば、何億台もの PC から収集された互換性のインテリジェンスと診断データを基に、デバイス上で実行されているアプリやドライバーを評価し、デスクトップ資産を整備することができます。 「展開可能な PC」の一覧を Desktop Analytics から Configuration Manager にエクスポートすることもできます。エクスポート後、対象となる PC のデータに基づくコレクションを作成できるようになります。
 
 [アップグレードの準備を開始する](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started)
 
@@ -97,7 +97,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 **[手順 4: ユーザー ファイルと設定の移行](https://aka.ms/mdd4)** ここは、PC の交換や更新サイクルにおける重要な手順です。ユーザーのファイル、データ、設定が正常に移行し、移行中に内容が保持されるようにする必要があります。 この手順では、よく知られているオプションや新しいオプションを含め、手動または自動で移行できるオプションを網羅します。
 
-以前のアップグレードと同様、ユーザー状態移行ツールはこのプロセスを自動化する貴重なツールであり、System Center Configuration Manager または Microsoft Deployment Toolkit による移行において重要な役割を果たします。 しかし、移行の際にすべてのデータを移動すると、PC ごとに数百 GB にも及ぶ転送が 2 回行われるため (1 回目は既存のデスクトップからの転送で、2 回目は新しいデスクトップへの転送)、PC 交換の時間的ボトルネックになる可能性があります。 OneDrive で有効になった新しいオプションである Known Folder Move を使用すれば、クラウド上の大きなサイズのユーザーのドキュメント、画像、デスクトップ ファイルを、展開前に同期することが可能となります。
+以前のアップグレードと同様、ユーザー状態移行ツールはこのプロセスを自動化する貴重なツールであり、Microsoft Endpoint Configuration Manager または Microsoft Deployment Toolkit による移行において重要な役割を果たします。 しかし、移行の際にすべてのデータを移動すると、PC ごとに数百 GB にも及ぶ転送が 2 回行われるため (1 回目は既存のデスクトップからの転送で、2 回目は新しいデスクトップへの転送)、PC 交換の時間的ボトルネックになる可能性があります。 OneDrive で有効になった新しいオプションである Known Folder Move を使用すれば、クラウド上の大きなサイズのユーザーのドキュメント、画像、デスクトップ ファイルを、展開前に同期することが可能となります。
 
 [Windows の既知のフォルダーを OneDrive にリダイレクトして移動する](https://docs.microsoft.com/onedrive/redirect-known-folders)
 
@@ -107,7 +107,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 **[Step 6: OS の展開と機能の更新プログラム](https://aka.ms/mdd6)**: 準備がすべて整ったら、次の手順は OS イメージを展開することです。複雑な作業の多くを、System Center Configuration Manager のタスク シーケンスとインフラストラクチャを使用して実行できます。推奨されるアプローチは、フェーズごとの展開です。代表的な一連のハードウェアとアプリケーションを使用して、最初に「早期採用グループ」を対象に設定し、展開を行います。その後、これらのデバイスやユーザーのデータを基に、展開の対象となる PC をさらに増やしていくことができます。
 
-[System Center Configuration Manager のオペレーティング システムの展開の概要](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+[Configuration Manager のオペレーティング システムの展開の概要](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[手順 7: サービスとしての Windows および Office](https://aka.ms/mdd7)** これは、ユーザーのデスクトップ資産の維持方法に関する大きな変更を表しています。 Windows 10 および Office 365 ProPlus に移行すると、サービスとしての Windows および Office を管理することができます。 数年に一度の大規模なテクノロジの更新ではなく、新しい機能、エクスペリエンス、保護機能を継続してユーザーに提供します。 半期の機能更新プログラムは毎年秋と春に新しい機能を提供し、毎月の累積的な品質更新プログラムには、セキュリティ、信頼性、バグ修正プログラムが含まれます。 Office 2019 クライアントを展開することもできますが、Office 365 ProPlus に移行することを強くお勧めします。 これには Windows と同様のサービス プランが用意されており、ユーザーが Office アプリの更新プログラムを定期的に入手することもできます。
 

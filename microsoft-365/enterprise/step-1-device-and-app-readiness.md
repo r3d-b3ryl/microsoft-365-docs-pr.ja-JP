@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のデバイスとアプリの準備を評価する方法について説明します。
-ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031632"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112721"
 ---
 # <a name="step-1-device-and-app-readiness"></a>手順 1: デバイスとアプリの準備
 
@@ -45,7 +45,7 @@ ms.locfileid: "38031632"
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10 互換性スキャン
 
-Windows 10 を展開する前に、Windows 7、8、8.1 のいずれかを実行している既存のデバイスの準備状況を確認することをお勧めします。 Windows 10 インストール メディアでは、setup.exe でアップグレードを実行するためのコマンド ライン スイッチがサポートされていますが、互換性のチェックのみを行い、実際にアップグレードを実行することはできません。 ScanOnly は、スクリプト化されたバッチファイルとして実行するか、または System Center Configuration Manager のタスク シーケンスに統合できます。これには、ScanOnly をネットワークから直接実行して、Windows 10 インストールメディアをローカル デバイスにストリーミングしないようにする機能が含まれます。 ScanOnly が完了すると、Setup.EXE によって生成されたログファイルのリターン コードを介して結果が返されます。   
+Windows 10 を展開する前に、Windows 7、8、8.1 のいずれかを実行している既存のデバイスの準備状況を確認することをお勧めします。 Windows 10 インストール メディアでは、setup.exe でアップグレードを実行するためのコマンド ライン スイッチがサポートされていますが、互換性のチェックのみを行い、実際にアップグレードを実行することはできません。 ScanOnly は、スクリプト化されたバッチファイルとして実行するか、または Microsoft Endpoint Configuration Manager のタスク シーケンスに統合できます。これには、ScanOnly をネットワークから直接実行して、Windows 10 インストールメディアをローカル デバイスにストリーミングしないようにする機能が含まれます。 ScanOnly が完了すると、Setup.EXE によって生成されたログファイルのリターン コードを介して結果が返されます。   
 
 互換性スキャンをサイレントで完了する ScanOnly コマンド ラインの例を以下に示します。
 
@@ -57,7 +57,7 @@ ScanOnly やその他の Windows セットアップ コマンド スイッチの
 
 Desktop Analytics は、従来のデスクトップ管理システムよりも利点が多く、お勧めのツールです。 エージェントレスであり、何億ものコンシューマー PC のアップグレードにより収集されたアプリケーションとドライバーの互換性情報を利用して、実行する必要がある手順をガイドします。 その情報を使用して詳細な評価を行い、アップグレードをブロックする可能性のある互換性の問題を特定し、Microsoft が把握している修正プログラムへのリンクを提供してサポートします。
 
-Desktop Analytics を設定するには、まず Azure サブスクリプションを設定し、それに Azure Log Analytics ワークスペースを含める必要があります。 Desktop Analytics のサービスが起動したことを確認したら、グループ ポリシー設定を使用してインターネットに接続された Windows 7 SP1 以降のデバイスを登録できます。とても簡単です。 エージェントを展開する必要はありません。Desktop Analytics の視覚的なワークフローを参考にしながら、パイロットから運用環境への展開を実施できます。 必要に応じて、Desktop Analytics から System Center Configuration Manager (Current Branch) などのソフトウェア展開ツールにデータをエクスポートしたり、ターゲット PC に直接データをエクスポートしたりして、展開の準備が整い次第コレクションを作成できます。
+Desktop Analytics を設定するには、まず Azure サブスクリプションを設定し、それに Azure Log Analytics ワークスペースを含める必要があります。 Desktop Analytics のサービスが起動したことを確認したら、グループ ポリシー設定を使用してインターネットに接続された Windows 7 SP1 以降のデバイスを登録できます。とても簡単です。 エージェントを展開する必要はありません。Desktop Analytics の視覚的なワークフローを参考にしながら、パイロットから運用環境への展開を実施できます。 必要に応じて、Desktop Analytics から Microsoft Endpoint Configuration Manager (Current Branch) などのソフトウェア展開ツールにデータをエクスポートしたり、ターゲット PC に直接データをエクスポートしたりして、展開の準備が整い次第コレクションを作成できます。
 
 現時点で目的の環境に Desktop Analytics をセットアップしていない場合や、試用のためにサインアップしようとしている場合は、Desktop Analytics ページ] (https://www.aka.ms/desktopanalytics) に移動して開始してください。
 
@@ -103,7 +103,7 @@ Desktop Analytics を使用して、ブラウザーベースの互換性の問�
 
 Configuration Manager ソフトウェア インベントリは、クラウドベースの分析ソリューションを使ってデバイスとアプリの準備を整える方法に代わる手段です。 インストール数を使用したり、特定のコンピューターを詳細に調査したりして、互換性のテストと検証の優先順位を定め、パッケージ設定を使用してアプリケーション パッケージを Windows 10 互換として設定できます。 このオプションでは既知の互換性情報と Microsoft の分析サービスとを比較することはできませんが、優先度の高いアプリのより小さなセットを対象に手動テストを行うための効果的なソリューションになり得ます。 
 
-詳細については、「[System Center Configuration Manager のソフトウェア インベントリの概要](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory)」を参照してください。アプリケーション パッケージのプラットフォーム設定の要件については、「[System Center Configuration Manager のパッケージとプログラム](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)」を参照してください。
+詳細については、「[Configuration Manager のソフトウェア インベントリの概要](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)」を参照してください。アプリケーション パッケージのプラットフォーム設定の要件については、「[Configuration Manager のパッケージとプログラム](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。
 
 
 ## <a name="desktop-app-assure"></a>Desktop App Assure

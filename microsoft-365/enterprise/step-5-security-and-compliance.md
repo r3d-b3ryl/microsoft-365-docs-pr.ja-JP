@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows と Office の重要なセキュリティとコンプライアンスに関する考慮事項について説明します。
-ms.openlocfilehash: 10fc9ca58d9b48f752bdfed860b805e4f5663d6a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031692"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112561"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>手順 5: セキュリティとコンプライアンスに関する考慮事項
 
@@ -117,7 +117,7 @@ Microsoft インテリジェント セキュリティ グラフとの併用に�
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) は、IOS、Android および Windows デバイスを含むモバイル シナリオに対応するクラウドベースの管理サービスとして機能します。System Center Configuration Manager によって管理される特定のワークロードに対する制御を補完および拡張するための共同管理に向けた構成が可能になりました。その利点の 1 つは、保護されたリソースにアクセスするデバイスは、管理対象ではないデバイス、ドメインに参加していないデバイスまたは Azure AD に参加していないデバイスであったとしても、デバイス管理への登録を要件にできることです。また、オペレーティング システムおよびアプリケーション レベルで、詳細な構成とコンプライアンス ポリシーの強制適用を利用することもできます。アプリケーションのポリシーと設定は、Microsoft Intune を使用することで一元的に構成して Windows 10 の Office 365 ProPlus と Store アプリに強制適用できます。
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) は、IOS、Android および Windows デバイスを含むモバイル シナリオに対応するクラウドベースの管理サービスとして機能します。Configuration Manager によって管理される特定のワークロードに対する制御を補完および拡張するための共同管理に向けた構成が可能になりました。その利点の 1 つは、保護されたリソースにアクセスするデバイスは、管理対象ではないデバイス、ドメインに参加していないデバイスまたは Azure AD に参加していないデバイスであったとしても、デバイス管理への登録を要件にできることです。また、オペレーティング システムおよびアプリケーション レベルで、詳細な構成とコンプライアンス ポリシーの強制適用を利用することもできます。アプリケーションのポリシーと設定は、Microsoft Intune を使用することで一元的に構成して Windows 10 の Office 365 ProPlus と Store アプリに強制適用できます。
 
 ## <a name="next-step"></a>次の手順
 

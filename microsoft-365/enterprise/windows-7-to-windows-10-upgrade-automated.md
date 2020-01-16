@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 から Windows 10 に大規模な組織向けの自動アップグレード
-ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078086"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112701"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Windows 7 から Windows 10 に大規模な組織向けの自動インプレース アップグレード
 
@@ -40,7 +40,7 @@ Windows 7 を実行している PC のセキュリティ更新プログラムや
 
 アップグレードプロセスの既定では、以前の Windows のインストールがアップグレードの一部としてバックアップされます。そのため、アップグレードに失敗した場合、またはデバイスやアプリケーションが正常にアップグレード後に機能しない場合は、Windows 7 に戻すことができます。 既定では、アップグレードされた PC は 10 日間の猶予があるため、必要に応じて Windows 7 にロールバックすることができます。
 
-インプレース アップグレードは、 [System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) または [Microsoft 展開ツールキット](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit) などのオペレーティング システム展開ツールを使用して自動化できます。 この記事では、自動化されたアプローチと最適化、およびその他のヘルプの関連リソースへのリンクについて説明します。
+インプレース アップグレードは、 [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) または [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit) などのオペレーティング システム展開ツールを使用して自動化できます。 この記事では、自動化されたアプローチと最適化、およびその他のヘルプの関連リソースへのリンクについて説明します。
 
 ## <a name="upgrading-a-small-number-of-computers"></a>少数のコンピューターをアップグレードする
 
@@ -48,7 +48,7 @@ Windows 7 を実行している PC のセキュリティ更新プログラムや
 
 ## <a name="how-to-upgrade-many-computers"></a>複数のコンピューターをアップグレードする方法
 
-数十、数千のコンピューターを管理する場合、System Center Configuration Manager または Microsoft 展開ツールキットを使用して、タスクシーケンスの自動化を使用してインプレース アップグレードを実行することをお勧めします。 ほとんどの場合、このプロセスの信頼性は非常に高いですが、アップグレードする PC の台数によっては、規模を正常にするために必要なテストと制御を行うことをお勧めします。
+数十、数千のコンピューターを管理する場合、Microsoft Endpoint Configuration Manager または Microsoft Deployment Toolkitを使用して、タスクシーケンスの自動化を使用してインプレース アップグレードを実行することをお勧めします。 ほとんどの場合、このプロセスの信頼性は非常に高いですが、アップグレードする PC の台数によっては、規模を正常にするために必要なテストと制御を行うことをお勧めします。
 
 Azure Active Directory、Office およびビジネスアプリの配送とパッケージ、ユーザーのファイルの移行に関連付けられているタスクをスキップすることができます。これらはアップグレードの一部として保持され、セキュリティは最低限にする必要があります。 これらの領域は、時間の経過とともに改善されます。
 
@@ -78,13 +78,13 @@ Azure Active Directory、Office およびビジネスアプリの配送とパッ
 
   - 低レベル コード ソリューション (マルウェア対策、VPN、仮想化など)
 
-[アップグレード タスク シーケンス](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)テンプレートは、System Center Configuration Manager の現在のブランチに組み込まれており、いくつかのリリースで使用できます。 最近のリリースでは、System Center Configuration Manager のテクノロジーが強化され、プロセスをより効率的にして、デバイスや Office の互換性の評価を行い、ネットワーク トラフィックを削減し、OneDrive バックアップなどの新規オプションの構成を行うことができるようになりました。 System Center Configuration Manager OS の展開に関する最新の更新プログラムの詳細については、[Microsoft の発表](https://youtu.be/CYRnAmCD7ls) をご覧ください。
+[アップグレード タスク シーケンス](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)テンプレートは、Microsoft Endpoint Configuration Manager (Current Branch) に組み込まれており、いくつかのリリースで使用できます。 最近のリリースでは、Configuration Manager のテクノロジーが強化され、プロセスをより効率的にして、デバイスや Office の互換性の評価を行い、ネットワーク トラフィックを削減し、OneDrive バックアップなどの新規オプションの構成を行うことができるようになりました。 Configuration Manager OS の展開に関する最新の更新プログラムの詳細については、[Microsoft の発表](https://youtu.be/CYRnAmCD7ls) をご覧ください。
 
-System Center Configuration Manager を使用していない場合は、Microsoft 展開ツールキットを使用して、アップグレード展開タスク シーケンスを作成して実行できます。
+Microsoft Endpoint Configuration Manager を使用していない場合は、Microsoft 展開ツールキットを使用して、アップグレード展開タスク シーケンスを作成して実行できます。
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>キャッシュ前のタスク シーケンスのアップグレード
 
-Configuration Manager 展開タスク シーケンス用の [キャッシュ前オプション](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) を使用すると、タスクシーケンスがオペレーティングシステムをアップグレードする前に、関連する OS アップグレードパッケージのコンテンツをダウンロードできます。 以前は、タスク シーケンスを開始すると、パッケージ コンテンツのダウンロードが開始されました。 キャッシュ前のコンテンツでは、適用可能な OS アップグレード パッケージのみをダウンロードするか、展開を受信するとすぐにその他のすべての参照コンテンツのみをダウンロードするかのオプションを、クライアントが設定することもできます。
+Configuration Manager 展開タスク シーケンス用の [キャッシュ前オプション](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) を使用すると、タスクシーケンスがオペレーティングシステムをアップグレードする前に、関連する OS アップグレードパッケージのコンテンツをダウンロードできます。 以前は、タスク シーケンスを開始すると、パッケージ コンテンツのダウンロードが開始されました。 キャッシュ前のコンテンツでは、適用可能な OS アップグレード パッケージのみをダウンロードするか、展開を受信するとすぐにその他のすべての参照コンテンツのみをダウンロードするかのオプションを、クライアントが設定することもできます。
 
 キャッシュ前のタスク シーケンスと互換性スキャン
 

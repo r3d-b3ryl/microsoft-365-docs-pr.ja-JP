@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザーのファイルと設定を移行する方法について説明します。
-ms.openlocfilehash: 8b9bde4eb1ddf0951a2ab27795dadef9965f6a1c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031492"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112571"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>手順 4: ユーザーのファイルと設定の移行
 
@@ -51,7 +51,7 @@ ms.locfileid: "38031492"
 
 ## <a name="automated-migration-using-usmt"></a>USMT を使用した移行の自動化 
 
-大規模な展開の場合は、System Center Configuration Manager や Microsoft Deployment Toolkit (MDT) など、タスク シーケンス ベースの展開自動化ツールを使用することで、プロセスの大部分を自動化できます。どちらのソリューションも、エンドツーエンドの展開プロセスの一部として「ユーザー状態移行ツール (USMT)」を利用します。USMT は [Windows ADK (Windows Assessment and Deployment Kit)](https://docs.microsoft.com/windows-hardware/get-started/adk-install) に含まれています。
+大規模な展開の場合は、Microsoft Endpoint Configuration Manager や Microsoft Deployment Toolkit (MDT) など、タスク シーケンス ベースの展開自動化ツールを使用することで、プロセスの大部分を自動化できます。どちらのソリューションも、エンドツーエンドの展開プロセスの一部として「ユーザー状態移行ツール (USMT)」を利用します。USMT は [Windows ADK (Windows Assessment and Deployment Kit)](https://docs.microsoft.com/windows-hardware/get-started/adk-install) に含まれています。
 
 USMT は、ユーザー アカウント、オペレーティング システムの設定、およびアプリケーションの設定を取り込んで、新しい Windows インストールに移行します。また、IT 管理者は、移行する内容を正確に制御することも、オプションとして不要なファイルの種類 (オーディオやビデオのファイル、実行可能ファイルなど) を除外することもできます。
 

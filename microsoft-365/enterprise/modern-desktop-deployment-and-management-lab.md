@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801362"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112511"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
 ダウンロード可能なこれらの実践ラボでは、Windows 10 や Office 365 の展開と、展開後の構成や管理に関する考慮事項を主に扱います。このトレーニングは、Windows 7 のサポート終了に備えようとしている組織に特にお勧めしますが、Windows 10 と Office 365 Plus または Office 2019 を現在使用中のユーザーにも適用されます。このトレーニングには、Windows 10、Office 365 ProPlus、Enterprise Mobility + Security、および関連する製品やサービスのガイドが含まれます。
 
-これらのラボは、Windows 10 Enterprise および Office 365 ProPlus を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、System Center Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
+これらのラボは、Windows 10 Enterprise および Office 365 ProPlus を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
 
 Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://www.aka.ms/howtoshift)」プロセスの一部として、展開ツールの更新プログラムの確認や展開関連の自動化をテストするとき、まず、セキュリティで保護されるか隔離されているラボ環境を構築するようにお勧めします。
 
@@ -38,7 +38,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
 
   - Windows 10 Enterprise、バージョン 1909
   - Windows 7 Enterprise
-  - System Center Configuration Manager、バージョン 1902
+  - Microsoft Endpoint Configuration Manager、バージョン 1902
   - Windows 10 用 Windows アセスメント & デプロイメント キット、バージョン 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
@@ -72,7 +72,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
 
 ### <a name="office-and-lob-app-delivery"></a>**Office と LOB アプリの配信**
 
-  - System Center Configuration Manager を使用した Office 365 ProPlus の展開
+  - Microsoft Endpoint Configuration Manager を使用した Office 365 ProPlus の展開
   - Microsoft Intune を使用した Office 365 ProPlus の展開
   - Microsoft Intune を使用したアプリの展開と管理
   - ビジネス向け Microsoft Store を使用したアプリの展開とセルフ サービス インストール
@@ -126,7 +126,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
 
   - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager の OS の展開](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager OS の展開](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 の展開計画</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
