@@ -5,7 +5,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/01/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0e164afca97818d2082ddf4053df791317e29ac5
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802830"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41218587"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
@@ -39,35 +39,37 @@ ms.locfileid: "40802830"
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
-また、Microsoft Teams、Office 365 グループ、および SharePoint サイトに機密ラベルを適用できるようになりました。 [詳細情報](sensitivity-labels-teams-groups-sites.md) を参照してください。
+また、Microsoft Teams、Office 365 グループ、および SharePoint サイトに機密ラベルを適用できるようになりました。 この個別のプレビューの詳細については、「 [Microsoft Teams、Office 365 グループ、および SharePoint サイト (パブリックプレビュー) を使用して機密ラベルを使用する](sensitivity-labels-teams-groups-sites.md)」を参照してください。
 
-必要に応じて、いつでもプレビューの表示を中止することができます。
+いつでもこのプレビューの選択を解除することができます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
-これらの機能は、[機密ラベル](sensitivity-labels.md)に対してのみ機能します。 Azure Information Protection ラベルを使用した場合は、それらを機密ラベルに変換して、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 [方法について説明します。](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+これらの機能は、[機密ラベル](sensitivity-labels.md)に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
-このプレビューでは、Windows とバージョン19.002.0107.0008 以降の Mac の OneDrive 同期アプリバージョン19.002.0121.0008 を使用します。 これらのバージョンは、2019年1月28日にリリースされ、現在すべてのリングにリリースされています。 [OneDrive リリースノートを参照してください](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 このプレビューを有効にすると、以前のバージョンの同期アプリを実行しているユーザーに更新を求めるメッセージが表示されます。
+このプレビューでは、Windows で OneDrive 同期アプリのバージョン19.002.0121.0008 以降、バージョン19.002.0107.0008 以降の Mac を使用します。 これらのバージョンは、2019年1月28日にリリースされ、現在すべてのリングにリリースされています。 詳細については、 [OneDrive リリースノート](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)を参照してください。 このプレビューを有効にすると、以前のバージョンの同期アプリを実行しているユーザーに更新を求めるメッセージが表示されます。
 
 ## <a name="limitations"></a>制限事項
 
-- このプレビューを有効にすると、Office デスクトップまたはモバイルアプリを使用してファイルにラベルを適用するユーザーは、ファイルに加えた他の変更を保存できない場合があります。 代わりに、アプリはユーザーにローカルの変更を保存するか、破棄するかを確認します。 作業が失われるのを防ぐには、次のいずれかの操作を行います。
-
-  - ラベルを適用するには、Office アプリの web 版を使用します。
-
-  - ラベルを適用した後でファイルを閉じてから、他の変更を行うためにファイルを再度開いてください。
+- このプレビューを有効にすると、OneDrive Sync フォルダー内のファイルに対してラベルを変更したユーザーは、ファイルに加えた他の変更を保存できない場合があります。  [白い十字アイコンのエラー](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)が表示された赤い円が表示され、新しい変更内容を別のコピーとして保存するように求められます。  ユーザーによって開始されたラベルの変更に加えて、管理者が、既にユーザーの同期クライアントにダウンロードしたファイルに適用されている発行済みラベルの設定を変更した場合にも、同じ現象が発生することがあります。
+    
+    これらのシナリオの作業を失わないようにするには、次のいずれかの操作を行います。
+    - ラベルを適用するには、Office アプリの web 版を使用します。
+    - ラベルを適用した後、ファイルを閉じてから、他の変更を行うためにファイルを開きます。
 
 - SharePoint では、Azure Information Protection ラベルを使用して既に暗号化されている既存のファイルに新しいラベルが自動的に適用されることはありません。 代わりに、このプレビューを有効にした後で機能を使用できるようにするには、次のタスクを完了します。
+    
+    1. Azure Information Protection ラベルを機密ラベルに移行し、Microsoft 365 コンプライアンスセンター (または同等のラベル付き管理センター) から公開していることを確認してください。
+    
+    2. ファイルをダウンロードし、それらを SharePoint にアップロードします。
 
-  - Azure Information Protection ラベルを機密ラベルに変換します。
+- 暗号化を適用したラベルが暗号化に使用する次のいずれかの構成を持っている場合、SharePoint は暗号化されたファイルを処理できません。
+    - **ユーザーがラベルを適用するときにアクセス許可を割り当てる** **、Word、PowerPoint、および Excel に**ユーザーがアクセス許可を指定できるようにする
+    - **コンテンツへのユーザーアクセスの有効期限**が、 **Never**以外の値に設定されています。
 
-  - ファイルをダウンロードし、それらを SharePoint にアップロードします。
+- ユーザーに編集権限を付与する暗号化されたドキュメントの場合、Office アプリの web 版ではコピーをブロックすることはできません。
 
-- SharePoint では、カスタムアクセス許可と、有効期限のあるラベルを処理することはできません。
-
-- ユーザーが編集アクセス許可を持っている場合、Office アプリの web 版では、ラベルのコピーポリシー設定に関係なくコピーが許可されます。
-
-- RMS の失効、追跡、およびレポートはサポートされていません。
+- Azure Information Protection ドキュメント追跡サイトはサポートされていません。
 
 - Office デスクトップアプリとモバイルアプリは共同編集をサポートしていません。 代わりに、これらのアプリは引き続き、排他編集モードでファイルを開きます。
 
@@ -85,11 +87,11 @@ ms.locfileid: "40802830"
 
 2. または、Microsoft ダウンロードセンターから以前のバージョンの SharePoint Online 管理シェルをインストールした場合は、[**プログラムの追加と削除**] に移動して、Sharepoint Online 管理シェルをアンインストールすることもできます。
 
-3. Web ブラウザーで、ダウンロードセンターページに移動して、[最新の SharePoint Online 管理シェルをダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=255251)します。
+3. Web ブラウザーで [ダウンロード センター] ページへと移動し、[最新の SharePoint Online 管理シェルをダウンロードします](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
 4. 言語を選択し、[**ダウンロード**] をクリックします。
 
-5. X64 ファイルと x86 .msi ファイルのどちらかを選択します。 64ビット版の Windows または x86 ファイル (32 ビット版を実行している場合) を実行する場合は、x64 ファイルをダウンロードしてください。 不明な場合は、[どのバージョンの Windows オペレーティングシステムを実行](https://support.microsoft.com/help/13443/windows-which-operating-system)しているかを確認します。
+5. x64 および x86 の .msi ファイルのいずれかを選択します。 64ビット版の Windows または x86 ファイル (32 ビット版を実行している場合) を実行する場合は、x64 ファイルをダウンロードしてください。 不明な場合は、[どのバージョンの Windows オペレーティングシステムを実行](https://support.microsoft.com/help/13443/windows-which-operating-system)しているかを確認します。
 
 
 6. ファイルをダウンロードした後、ファイルを実行し、セットアップウィザードの手順に従います。
@@ -98,7 +100,7 @@ ms.locfileid: "40802830"
 
 プレビューを有効にするには、Set-spotenant コマンドレットを使用します。
 
-1. Office 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint のオンライン管理シェルを使うにあたって](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
+1. Office 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
 
 2. 次のコマンドを実行します。
 
@@ -124,7 +126,7 @@ Microsoft 365 コンプライアンスセンターで機密ラベルを作成ま
 
 プレビューを無効にするには、Set-spotenant コマンドレットを使用します。
 
-1. Office 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint のオンライン管理シェルを使うにあたって](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
+1. Office 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
 
 2. 次のコマンドを実行します。
 
