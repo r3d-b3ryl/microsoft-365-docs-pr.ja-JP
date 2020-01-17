@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e67ff2b28a6dec741b2ad7af5179dca226fb86ad
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962574"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230215"
 ---
 # <a name="manage-tickets-through-servicenow"></a>ServiceNow を介してチケットを管理する
 
@@ -109,15 +109,19 @@ Microsoft 365 セキュリティセンターで ServiceNow チケットが表示
 
 ServiceNow で、アプリケーションのレジストリテーブル (メニュー > System OAuth > アプリケーションレジストリ) に移動し、自分が作成した OAuth エンティティ (割り当てた名前) を見つけます。
 
-### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Microsoft 365 Security & コンプライアンスコネクタのインストールチェックリストで作成した統合ユーザーを検証する方法
-
-ServiceNow で [ユーザー] テーブル (> [ユーザー管理 > ユーザー)] を選び、自分で作成した統合ユーザー (割り当てられた名前) を見つけます。
+### <a name="logging-in-as-the-integration-user"></a>統合ユーザーとしてログインする
 
 Microsoft 365 セキュリティセンターと ServiceNow 間の接続を承認する前に、インストール手順で作成した統合ユーザーログインとパスワードを使用していることを確認してください。 個人の資格情報は使用しないでください。
 
-### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>インストールは完了しましたが、チケットが表示されず、共有できません
+1. ServiceNow の [認証] ページに移動します。
+2. 個人の資格情報を使用してサインインしている場合は、右上隅にある [リンクし**ない**] を選択します。
+3. インストールチェックリストから、以前に作成した統合ユーザーとして ServiceNow にログインします。  
+4. セキュリティ + コンプライアンスコネクタが ServiceNow アカウントに接続できるかどうかを確認する、ServiceNow ページの [**許可**] を選択します。
+5. セットアップの手順を続行します。
 
-インストールとセットアップの手順が完了していても、ユーザーがホームページに ServiceNow カードを表示せず、Microsoft のセキュリティスコアから ServiceNow に共有できない場合は、のhttps://security.microsoft.com/ticketProvisioning「プロビジョニング」ページの状態を確認してください。 [**保存**してホームページに戻る] を選択します。 カードが表示されます。
+### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Microsoft 365 Security & コンプライアンスコネクタのインストールチェックリストで作成した統合ユーザーを検証する方法
+
+ServiceNow で [ユーザー] テーブル (> [ユーザー管理 > ユーザー)] を選び、自分で作成した統合ユーザー (割り当てられた名前) を見つけます。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>お客様の会社では、シングルサインオンが有効になっています。これにより、Microsoft 365 セキュリティセンターから ServiceNow に接続できなくなります。
 
@@ -135,3 +139,7 @@ Microsoft 365 セキュリティセンターと ServiceNow 間の接続を承認
 
 1. Azure Active Directory のセキュリティ管理者特権を持つユーザーを作成します。 ユーザーは、インストールチェックリストから作成した統合ユーザーと同じ名前とメールアドレスを持っている必要があります。 ログインして接続が完了したら、セキュリティ管理者の役割を削除できます。
 2. このユーザーとして Microsoft 365 セキュリティセンターにログインし、セットアップ手順に従います。
+
+### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>インストールは完了しましたが、チケットが表示されず、共有できません
+
+インストールとセットアップの手順が完了していても、ユーザーがホームページに ServiceNow カードを表示せず、Microsoft のセキュリティスコアから ServiceNow に共有できない場合は、のhttps://security.microsoft.com/ticketProvisioning「プロビジョニング」ページの状態を確認してください。 [**保存**してホームページに戻る] を選択します。 カードが表示されます。

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210152"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230195"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -170,6 +170,7 @@ Intune から提供された Microsoft のセキュリティで保護された�
 - 監査データの記録を有効にする
 - 危険かつ準拠していないシャドウ IT アプリケーションを検出する
 - 環境に接続されたリスクの高い OAuth アプリケーションをブロック & アクセス許可を確認する
+- SharePoint online ドキュメントライブラリのバージョン管理を設定する
 
 ### <a name="mfa-improvement-action-updates"></a>MFA 向上アクションの更新
 
