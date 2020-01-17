@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
-ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
+ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41107906"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210062"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -45,7 +45,7 @@ ms.locfileid: "41107906"
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
-   
+
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
 - [Office 365 Advanced ediscovery](office-365-advanced-ediscovery.md)V2.0 (Office 365 Security & コンプライアンスセンターの電子情報開示ケースによってアクセスされる先進電子情報開示の最初のバージョン)。
@@ -62,7 +62,7 @@ ms.locfileid: "41107906"
 これらのすべての機能 (検索結果を証拠開示用メールボックスにコピーする場合を除く) は、 [microsoft 365 コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)のコンテンツ検索、電子情報開示、および高度な電子情報開示ツールで利用できるようになりました (強化された機能、信頼性、および幅広い microsoft 365 サービスのサポート)。 他の電子情報開示ツールへの移行を支援するために、以下の表に、インプレース電子情報開示とインプレース保持の代わりに使用できるツールを示します。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
-    
+
 - Office 365 と Microsoft 365 エンタープライズ組織
 
 - Office 365 および Microsoft 365 エデュケーション組織
@@ -71,11 +71,10 @@ ms.locfileid: "41107906"
 
 - Office 365 Germany
 
-
 ### <a name="timeline-for-retirement"></a>定年後のタイムライン
-    
+
 - 2020年4月1日: 新しい検索と保持を作成することはできませんが、既存の検索を自分のリスクで実行、編集、削除することはできます。 Microsoft サポートは、EAC でのインプレース電子情報開示 & 保持を中止します。
-    
+
 - 2020年7月1日: インプレース電子情報開示 & は、EAC の機能を読み取り専用モードで保持します。 これは、既存の検索と保持を削除できることを意味します。
 
 ### <a name="alternative-tools"></a>代替ツール
@@ -87,7 +86,7 @@ ms.locfileid: "41107906"
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>コメント</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -131,6 +130,11 @@ ms.locfileid: "41107906"
 <p>
 <p>または、検索結果を PST ファイルにエクスポートし、Microsoft 365 インポートサービスを使用して Pst を探索メールボックスにインポートすることもできます。 詳細な手順については、「<a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">ネットワークアップロードを使用して PST ファイルを Office 365 にインポートする</a>」を参照してください。
 </tr>
+<tr class="even">
+<td>回復可能なアイテムフォルダーからアイテムを復元する</td>
+  <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">復元-回復した Ableitems</td>
+  <td>アイテムの削除済みアイテムの保存期間が期限切れになっていない限り、メールボックス内の完全に削除されたアイテム (<i>回復可能な</i>アイテムとも呼ばれる) を復元することができます。 詳細については、「 <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Exchange Online の回復可能なアイテムフォルダー</a>」を参照してください。</td>
+</tr>
 </tbody>
 </table>
 
@@ -155,7 +159,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 これらの機能は、パフォーマンスとスケーラビリティが向上した[<span class="underline">Microsoft 365 コンプライアンスセンター</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)および Office 365 Security & コンプライアンスセンターの PowerShell で利用できるようになったため、これらの強化されたコマンドレットを使用する必要があります。 これらのコマンドレットには、 [<span class="underline"> \*-get-compliancecase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase)、 [<span class="underline"> \*-new-compliancesearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)、 [<span class="underline"> \*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)、 [<span class="underline"> \*-new-caseholdrule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule)、および[<span class="underline"> \*-new-compliancesearchaction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)があります。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
-    
+
 - Office 365 と Microsoft 365 エンタープライズ組織
 
 - Office 365 および Microsoft 365 エデュケーション組織
@@ -165,9 +169,9 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 - Office 365 Germany
 
 ### <a name="timeline"></a>タイムライン
-    
+
 - 2020年4月1日: **get-mailboxsearch**を使用してインプレース電子情報開示検索とインプレース保持を新たに作成することはできませんが、コマンドレットを使用して、既存の検索を実行、編集、および削除することができます。 Microsoft サポートでは、これらの種類の検索と保留リストのサポートが提供されなくなりました。
-    
+
 - 2020年7月1日: 前述したように、インプレース電子情報開示 & は EAC の機能を読み取り専用モードで保持します。 これはまた、 **get-mailboxsearch**、 **get-mailboxsearch**、または**get-mailboxsearch**コマンドレットを使用できないことを意味します。 既存の検索と保持を取得して削除することはできません。
 
 ### <a name="alternative-tools"></a>代替ツール
@@ -179,7 +183,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>コメント</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -204,7 +208,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 </tr>
 <tr class="odd">
 <td>検索結果を探索メールボックスにコピーする</td>
-<td>なし</td>
+<td>None</td>
 <td>この機能は、Microsoft 365 のすべてのサービスへのアクセスを提供しないので、直接交換することはできません。 代替ソリューションについては、以下の FAQ を参照してください。</td>
 </tr>
 </tbody>
@@ -239,7 +243,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 - Office 365 Germany
 
 ### <a name="timeline"></a>タイムライン
-    
+
 -  2020年4月1日:**検索-メールボックス**コマンドレットが使用できなくなり、Microsoft サポートからサポートが提供されなくなります。
 
 ### <a name="alternative-tools"></a>代替ツール
@@ -251,7 +255,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>コメント</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -314,11 +318,11 @@ Microsoft 365 の新しい高度な電子情報開示ソリューション (*上
 - Office 365 Germany
 
 ### <a name="timeline"></a>タイムライン
-    
+
 - 2020年4月1日: 新しい Advanced eDiscovery v2.0 のケースを作成することはできません。
-    
-- 2020年7月1日: Microsoft サポートにはサポートが提供されていません。 [この通知](https://go.microsoft.com/fwlink/?linkid=2113221)を参照してください。 場合によっては、新しいデータ (高度な電子情報開示の検索結果を準備する) をいつでも追加することはできません。 既存のケースでは、ユーザー自身のリスクで引き続きデータを操作できます。
+
+- 2020年7月1日: 新しいデータ (高度な電子情報開示の検索結果を準備する) をいつでも追加することはできません。 既存のケースでは、ユーザー自身のリスクで引き続きデータを操作できます。 Microsoft サポートからサポートが提供されなくなります。 
 
 ### <a name="alternative-tools"></a>代替ツール
-    
+
 Microsoft 365 コンプライアンスセンターの[高度な電子情報開示ソリューション](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20)。
