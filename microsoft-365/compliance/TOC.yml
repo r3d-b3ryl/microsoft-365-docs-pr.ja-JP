@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 開始
+- name: 作業の開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -65,6 +65,8 @@
     - name: 機密ラベル
       href: sensitivity-labels.md
       items:
+        - name: 機密ラベルを作成して発行する
+          href: create-sensitivity-labels.md
         - name: 機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
           href: encryption-sensitivity-labels.md
         - name: 機密ラベルをコンテンツに自動適用する
