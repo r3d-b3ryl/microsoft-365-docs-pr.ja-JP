@@ -13,18 +13,18 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。そのための方法の 1 つに、組織内のユーザーの中で、信頼できる差出人とブロックする差出人のリストを作成する、というものがあります。
-ms.openlocfilehash: 5530fa8c8ee5a83c4e8515a8f31f91e45b2ec97b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9c281460aeff64226343af5e5608ccf42fc83799
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971675"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238394"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online の差出人セーフ リストと受信拒否リスト
 
 Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。そのための方法の 1 つに、組織内のユーザーの中で、信頼できる差出人とブロックする差出人のリストを作成する、というものがあります。
 
-[Office 365 で良好なメールがスパムとしてマークされないようにする方法](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)*について、これらのリストを管理者として管理する方法に関するヒントと手順の更新版を参照してください*。
+[Office 365 で良好なメールがスパムとしてマークされないようにする方法](prevent-email-from-being-marked-as-spam.md)*について、これらのリストを管理者として管理する方法に関するヒントと手順の更新版を参照してください*。
 
 管理者ではない場合に、差出人セーフリストを使用して Outlook で自分の迷惑メールを管理する場合は、[「迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」の手順を参照してください。
 

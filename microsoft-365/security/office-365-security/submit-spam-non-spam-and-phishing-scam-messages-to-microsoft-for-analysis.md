@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ca4c99d5e8803fdf7f41ff00cc2a5e65ab38049
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959645"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238434"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
 
@@ -68,7 +68,7 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
 
 メッセージが誤って迷惑メールとして識別された場合は、「偽陽性」メッセージを Microsoft スパム分析チームに送信できます。 アナリストは、メッセージの評価と分析を行います。 分析結果によっては、このメッセージが許可されるようにサービス全体のスパム コンテンツ フィルター ルールが調整されることがあります。
   
-管理者は、組織全体に適用されるその他のスパム設定情報を確認できます。 [メッセージがスパムとしてマークされないようにする方法に](../../compliance/prevent-email-from-being-marked-as-spam.md)ついて説明します。 管理者レベルの制御権限を持っている場合に誤検出防止に役立つ情報を記載しています。
+管理者は、組織全体に適用されるその他のスパム設定情報を確認できます。 [メッセージがスパムとしてマークされないようにする方法に](prevent-email-from-being-marked-as-spam.md)ついて説明します。 管理者レベルの制御権限を持っている場合に誤検出防止に役立つ情報を記載しています。
   
 スパムではないメッセージを送信するには、次のようにします。
   
@@ -122,7 +122,7 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
 
 [スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
   
-[メッセージがスパムとしてマークされないようにする方法](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[メッセージがスパムとしてマークされないようにする方法](prevent-email-from-being-marked-as-spam.md)
   
 [検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](reduce-spam-email.md)
   
