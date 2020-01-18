@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d5769088f3904bf62d2889f35f236c9410628db
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: ea20e7354838bade17ebb83522b543c8aec3d33e
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230205"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233928"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -40,7 +40,7 @@ ms.locfileid: "41230205"
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
 | `IsSigned` | ブール型 | ファイルが署名されているかどうかを示します |
-| `SignatureType` | string | 署名情報が埋め込みとして読み取られたかどうかを示します | ファイル自体の内容または外部カタログファイルからの読み取り |
+| `SignatureType` | string | 署名情報がファイル自体の埋め込みコンテンツとして読み取られたか、外部カタログファイルから読み取られたかを示します |
 | `Signer` | string | ファイルの署名者に関する情報 |
 | `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
 | `Issuer` | string | 発行元の証明機関 (CA) に関する情報 |

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 上級電子情報開示ケースのコンテンツを確認するときに、権限のあるコンテンツのマシン学習ベースの検出を使用するには、「弁護士クライアント特権検出モデル」を使用します。
-ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: f4d5252a44183f5e2e38e4f4676c73d350befaf2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970865"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233724"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>高度な電子情報開示で、弁護士クライアント特権の検出を設定する
 
@@ -36,11 +36,11 @@ ms.locfileid: "40970865"
 
 このモデルでは、すべてのドキュメントに対して次の3つのプロパティが生成されます。
 
-- **AttorneyClientPrivilegeScore** –ドキュメントが合法的である可能性。スコアの値は**0**から**1**です。
+- **AttorneyClientPrivilegeScore:** ドキュメントが実際に有効である可能性。スコアの値は**0**から**1**です。
 
-- **Hasattorney** –ドキュメントの参加者のいずれかが弁護士リストに記載されている場合は、このプロパティを**true**に設定します。それ以外の場合、値は**false**になります。 組織が弁護士リストをアップロードしていない場合も、値は**false**に設定されます。
+- **Hasattorney:** ドキュメントの参加者のいずれかが弁護士リストに含まれている場合、このプロパティは**true**に設定されます。それ以外の場合、値は**false**になります。 組織が弁護士リストをアップロードしていない場合も、値は**false**に設定されます。
 
-- **IsPrivilege** – **AttorneyClientPrivilegeScore**の値がしきい値を超える場合、*または*ドキュメントに弁護士が参加している場合は、このプロパティを**true**に設定します。それ以外の場合、値は**false**に設定されます。
+- **IsPrivilege:****AttorneyClientPrivilegeScore**の値がしきい値を超える場合、*または*ドキュメントに弁護士の参加者がいる場合は、このプロパティを**true**に設定します。それ以外の場合、値は**false**に設定されます。
 
 次のスクリーンショットに示すように、これらのプロパティ (および対応する値) は、レビューセット内のドキュメントのファイルメタデータに追加されます。
 
@@ -58,11 +58,11 @@ ms.locfileid: "40970865"
 
 1. セキュリティ & コンプライアンスセンターで、[**電子情報開示 > Advanced ediscovery**] に移動します。
 
-2. [**高度な電子情報開示**ホーム] ページの [**設定**] タイルで、[**実験的な実験機能を構成する**] を選択します。
+2. [**高度な電子情報開示**ホーム] ページの [**設定**] タイルで、[**グローバル分析設定の構成**] をクリックします。
 
    ![[実験的な機能の構成] を選択します。](media/AeDExperimentalFeatures.png)
 
-3. [**実験的な機能**] タブで、[**委任状の管理-クライアント特権の設定**] を選択します。
+3. [**分析設定**] タブで、[**弁護士-クライアント特権設定の管理**] を選択します。
 
 4. [**委任状-クライアント特権**のポップアップ] ページで、切り替えを使用して機能を有効にし、[**保存**] を選択します。
 

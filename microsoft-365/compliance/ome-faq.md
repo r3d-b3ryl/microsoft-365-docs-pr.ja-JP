@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: fa8268569bfabcaa9e3cca963ad12723c8c99369
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0afb27854e6e080963d7133fb32ecbd5532ae9b2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111861"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233848"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -85,7 +85,7 @@ OME の以前のバージョンを引き続き使用することはできます�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>組織では Active Directory Rights Management を使用していますが、この機能を使用することはできますか?
 
-いいえ。 Active Directory Rights Management サービス (AD RMS) を使用して Exchange Online を使用している場合、これらの新機能をすぐに有効にすることはできません。 代わりに、まず[AD RMS を Azure Information Protection に移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する必要があります。 
+いいえ。 Active Directory Rights Management サービス (AD RMS) を使用して Exchange Online を使用している場合、これらの新機能をすぐに有効にすることはできません。 代わりに、まず[AD RMS を Azure Information Protection に移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する必要があります。
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>自分の組織では、Exchange ハイブリッド展開を行っています。 この機能を使用できますか。
 
@@ -97,7 +97,7 @@ OME の以前のバージョンを引き続き使用することはできます�
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>保護された電子メールの読み取りと応答をサポートする電子メールクライアント
 
-Office 365 ユーザーの場合は、Outlook for Windows and Mac (2013 と 2016)、outlook on the web、および Outlook mobile (Android および iOS) の読み取りおよび応答を行うことができます。 組織で許可されている場合は、iOS ネイティブメールクライアントを使用することもできます。 Office 365 以外のユーザーの場合は、web ブラウザーを使用して、web 上で暗号化されたメッセージの読み取りと返信を行うことができます。
+Office 365 のユーザーは、Outlook for Windows および Mac (2013 および 2016)、Outlook on the web、Outlook mobile (Android および iOS) の読み取りおよび応答を行うことができます。 組織で許可されている場合は、iOS ネイティブメールクライアントを使用することもできます。 Office 365 以外のユーザーの場合は、web ブラウザーを使用して、web 上で暗号化されたメッセージの読み取りと返信を行うことができます。
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>保護された電子メールの添付ファイルとしてサポートされているファイルの種類は何ですか。 添付ファイルは、保護された電子メールに関連付けられている保護ポリシーを継承しますか?
 
@@ -167,9 +167,9 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 
 | プラットフォーム | メールの読み取り | 電子メールの添付ファイルを表示する |
 |----------|-----------|------------------------|
-| Outlook on the web | はい | はい                |
-| Outlook for Windows| はい | はい                |
-| Outlook for Mac    | はい | はい                |
+| Outlook on the web | あり | はい                |
+| Outlook for Windows| あり | はい                |
+| Outlook for Mac    | あり | はい                |
 | Outlook for Android| はい | いいえ                 |
 | Outlook for iOS    | はい | いいえ                 |
 |
