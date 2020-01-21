@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: 272de0400e89f9829b3ead5d4523db27789c0c44
-ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
+ms.openlocfilehash: ab80de0e1be3a164da8414ef3791fb9717bcc190
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "39268971"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233698"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>ラベル付きコンテンツのアクティビティを表示する (プレビュー)
 
@@ -38,6 +38,16 @@ ms.locfileid: "39268971"
 
 
 リストまたは棒グラフとしてデータを表示することができます。
+
+## <a name="prerequisites"></a>前提条件
+
+アクティビティ エクスプローラーにアクセスして使用するすべてのアカウントには、これらのいずれかのサブスクリプションのライセンスが割り当てられている必要があります。
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- 高度なコンプライアンス (E5) アドオン
+- 高度な脅威インテリジェンス (E5) アドオン
+- Advanced Threat Protection (E5) アドオン
 
 ## <a name="activity-type"></a>アクティビティの種類
 

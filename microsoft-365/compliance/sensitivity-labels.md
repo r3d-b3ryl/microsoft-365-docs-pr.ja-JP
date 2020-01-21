@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、従業員の生産性や共同作業性が低下することはありません。秘密度ラベルは、ラベル付けされたコンテンツに暗号化および透かしなどの保護設定を適用するために使用できます。
-ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023351"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233838"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -178,7 +178,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 ## <a name="how-to-get-started-with-sensitivity-labels"></a>機密ラベルの使用を開始する方法
 
-機密ラベルの使用は、簡単なプロセスで開始できます。
+次のプロセスに従って、秘密度ラベルの使用を開始します。
 
 1. **ラベルを定義する。** まず、コンテンツの各秘密度レベルを定義するための分類方法を決定します。 ユーザーにとって意味のある、一般的な名前または用語を使用します。 たとえば、個人用、公開用、一般、社外秘、極秘などのラベルから始めることができます。 サブラベルを使用すると、類似したラベルをカテゴリ別にグループ化できます。 また、ラベルを作成するときは、ツール ヒントが必要です。これは、ユーザーがリボン上のラベル オプションにマウス ポインターを合わせるときに Office アプリケーションに表示されます。
 
@@ -189,6 +189,8 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 機密ラベルが機能するために、管理者、ユーザー、Office アプリが実行する内容の基本的なフローを次に示します。
 
 ![機密ラベルのワークフローを示す図](media/Sensitivity-label-flow.png)
+
+詳しい手順については、「[機密ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)」を参照してください。
 
 ## <a name="where-sensitivity-labels-can-appear"></a>機密ラベルを表示できる場所
 
