@@ -1,5 +1,5 @@
 ---
-title: サンプルコネクタを使用して Twitter データをアーカイブする (プレビュー)
+title: Twitter データをアーカイブするためのコネクタの設定
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,28 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Office 365 に Twitter データをインポートするためのネイティブコネクタをセットアップできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: 77f0a0615a177c0bfd6179a6a5ce1a58b024dcdc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 083c293e869cb35b428592717b7cf3810e7fea8c
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807486"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247560"
 ---
-# <a name="use-a-sample-connector-to-archive-twitter-data-preview"></a>サンプルコネクタを使用して Twitter データをアーカイブする (プレビュー)
+# <a name="set-up-a-connector-to-archive-twitter-data"></a>Twitter データをアーカイブするためのコネクタの設定
 
-Office 365 で Twitter データをアーカイブするためのサンプルコネクタ機能は、プレビュー段階にあります。
+Office 365 のセキュリティ & コンプライアンスセンターでコネクタを使用して、Twitter からデータをインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の Twitter アカウントに (スケジュールに従って) 接続して、アイテムのコンテンツを電子メールメッセージの形式に変換し、そのアイテムを Office 365 のメールボックスにインポートします。
 
-Office 365 のセキュリティ & コンプライアンスセンターのサンプルコネクタを使用して、Twitter からデータをインポートおよびアーカイブします。 サンプルコネクタをセットアップして構成すると、組織の Twitter アカウントに (スケジュールに従って) 接続され、アイテムのコンテンツが電子メールメッセージの形式に変換されてから、それらのアイテムを Office 365 のメールボックスにインポートします。
-
-Twitter データをインポートすると、メールボックスに格納されているデータに、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、[通信コンプライアンス](communication-compliance.md)、office 365 アイテム保持ポリシーなどの office 365 コンプライアンス機能を適用できます。 たとえば、コンテンツ検索を使用して Twitter データを検索したり、保管担当者でデータが格納されているメールボックスを、高度な電子情報開示ケースに関連付けたりすることができます。 サンプルコネクタを使用して Office 365 で Twitter データをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
-
-> [!NOTE]
-> 現時点では、Twitter および[Facebook のビジネスページ](archive-facebook-data-with-sample-connector.md)用のサンプルコネクタのみをプレビューで利用できます。 その他のサンプルコネクタは近日中に公開されます。
-
+Twitter データをインポートすると、メールボックスに格納されているデータに、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、通信コンプライアンス、Office 365 アイテム保持ポリシーなどの Office 365 コンプライアンス機能を適用できます。 たとえば、コンテンツ検索を使用して Twitter データを検索したり、保管担当者でデータが格納されているメールボックスを、高度な電子情報開示ケースに関連付けたりすることができます。 コネクタを使用して Office 365 で Twitter データをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Twitter 用のコネクタを設定するための前提条件
 
-セキュリティ & コンプライアンスセンターでサンプルコネクタを設定および構成するには、次の前提条件を満たしている必要があります。組織の Twitter アカウントからデータをインポートおよびアーカイブします。 
+セキュリティ & コンプライアンスセンターでコネクタを設定および構成して、組織の Twitter アカウントからデータをインポートおよびアーカイブする前に、次の前提条件を満たしている必要があります。 
 
 - 組織のために Twitter アカウントが必要です。コネクタを設定するときに、このアカウントにサインインする必要があります。
 
@@ -42,7 +36,7 @@ Twitter データをインポートすると、メールボックスに格納さ
     - [Azure へのご購入のサブスクリプションへのサインアップ](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 サブスクリプションに含まれている[無料の Azure Active Directory サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)は、セキュリティ & コンプライアンスセンターのサンプルコネクタをサポートしていません。
+    > Office 365 サブスクリプションに含まれている[無料の Azure Active Directory サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)は、セキュリティ & コンプライアンスセンターのコネクタをサポートしていません。
 
 - 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。
 
@@ -50,7 +44,7 @@ Twitter データをインポートすると、メールボックスに格納さ
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>手順 1: GitHub から事前に作成されたコネクタアプリパッケージをダウンロードする
 
-最初の手順として、twitter API を使用して twitter アカウントに接続し、データを抽出して Office 365 にインポートできるようにする Twitter サンプルコネクタアプリのソースコードをダウンロードします。
+最初の手順として、twitter API を使用して twitter アカウントに接続し、Office 365 にインポートできるようにデータを抽出する Twitter connector アプリのソースコードをダウンロードします。
 
 1. [この GitHub サイト](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases)に移動します。 
 2. 最新リリースの下で、 **SampleConnector**ファイルを選択します。

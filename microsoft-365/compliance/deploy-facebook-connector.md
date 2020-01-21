@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook のビジネスページをインポートおよびアーカイブするためのネイティブコネクタを Office 365 にセットアップすることができます。 このデータを Office 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bb348c6e08151d63e92973d3f262704357e40814
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806260"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247480"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data"></a>コネクタを展開して Facebook データをアーカイブする
 
-この記事では、Office 365 インポートサービスを使用して Facebook のビジネスページから Office 365 にデータをインポートするコネクタを展開するための段階的なプロセスについて説明します。 このプロセスの概要と、Facebook コネクタを展開するために必要な前提条件の一覧については、「[サンプルコネクタを使用して Office 365 で facebook データをアーカイブする (プレビュー)](archive-facebook-data-with-sample-connector.md)」を参照してください。 
+この記事では、Office 365 インポートサービスを使用して Facebook のビジネスページから Office 365 にデータをインポートするコネクタを展開するための段階的なプロセスについて説明します。 このプロセスの概要と、Facebook コネクタを展開するために必要な前提条件の一覧については、「 [Office 2010 で facebook データをアーカイブするためにコネクタを使用する 365 (プレビュー)](archive-facebook-data-with-sample-connector.md)を参照してください。 
 
 ## <a name="step-1-download-the-package"></a>手順 1: パッケージをダウンロードする
 

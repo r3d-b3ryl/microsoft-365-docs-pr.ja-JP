@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b881e51f08e201f2870ea979e3f6c8181ab2ea02
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831640"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247600"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Microsoft 365 solution catalog (プレビュー) の概要
 
@@ -51,13 +51,14 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 ## <a name="insider-risk-management-section"></a>Insider リスク管理セクション
 
-ホームページの [ **Insider リスク管理**] セクションには、組織が問題を引き起こす前に内部リスクを特定、分析、および修復する方法が一目でわかります。
+ホームページの [ **Insider リスク管理**] セクションには、組織が内部リスクを特定、分析、アクションを実行して問題を引き起こす可能性があることが一目でわかるように表示されます。
 
-![Microsoft 365 solution catalog insider リスク管理セクション](media/m365-solution-catalog-internal-risk-management.png)
+![Microsoft 365 solution catalog insider リスク管理セクション](media/m365-solution-catalog-insider-risk-management.png)
 
-ここから、次のソリューションのカードに移動できます。
+ここから、次のソリューションのカードが表示されます。
 
-- [通信のコンプライアンス](communication-compliance.md): 不適切なメッセージを自動的にキャプチャし、ポリシー違反を調査し、修復の手順を実行することによって、通信リスクを最小限に抑えます。
+- [通信のコンプライアンス](communication-compliance.md): 不適切なメッセージを自動的にキャプチャし、可能なポリシー違反を調査し、悪影響を最小限に抑えるための手順を実行することによって、通信リスクを最小限に抑えます。
+- [Insider リスク管理](insider-risk-management.md): 社内のリスクや脅威を迅速に特定し、調査し、アクションを実行できるように、組織全体のリスクの高い活動を検出します。
 
 ## <a name="discovery--response-section"></a>検出 & 応答のセクション
 
@@ -92,9 +93,11 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 既存のコンプライアンスソリューションを探しており、Microsoft 365 コンプライアンスセンターでまだ利用できない場合は、「」に[https://protection.office.com](https://protection.office.com)アクセスして、既存の Office 365 セキュリティ/コンプライアンスセンターのソリューションにいつでもアクセスできます。 または、Microsoft 365 コンプライアンスセンターの左側のナビゲーションにある [**その他のリソース**] タブをクリックして、Office 365 セキュリティ/コンプライアンスセンターカードを選択することもできます。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - お客様の組織での重要な標準および規制への準拠状況を理解するために役立つ、個人のリスクベースのスコアである**Microsoft のコンプライアンススコアを確認**します。 コンプライアンスの全体的な姿勢を強化するために推奨されるアクションを提供し、それらのアクションを効率的に実行できるようにするためのワークフロー機能を提供します。 詳細については、「[コンプライアンススコア (プレビュー)](compliance-score.md)」を参照してください。
+
+- 内部のリスクを最小限に抑えるために**insider リスク管理ポリシーを構成**し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理](insider-risk-management.md)」を参照してください。
 
 - **Microsoft Information Protection**は、microsoft 365 ソリューションが、どこにいても機密情報の検出、分類、保護を支援する方法について説明します。
     - **Microsoft Cloud App Security について理解し、セットアップし**ます。 「[クイックスタート: Microsoft Cloud App Security の使用を開始](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)する」を参照してください。
