@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、従業員の生産性や共同作業性が低下することはありません。秘密度ラベルは、ラベル付けされたコンテンツに暗号化および透かしなどの保護設定を適用するために使用できます。
-ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: f416bcb32e9d8c14fee17d2dcecddac2aec20485
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233838"
+ms.locfileid: "41238504"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -154,7 +154,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
     ![リボンの [機密] ボタンに示された詳細な説明のリンク](media/Sensitivity-label-learn-more.png)
 
-ラベル ポリシーを作成して、ユーザーおよびグループに機密ラベルを割り当てると、そのユーザーおよびグループは、1 時間以内に Office アプリで使用できるラベルを確認できるようになります。
+ユーザーとグループに秘密度ラベルを割り当てるラベル ポリシーを作成した後、これらのユーザーが Office アプリのラベルを確認するまでに最大で 24 時間かかります。
 
 作成および発行できる秘密度ラベルの数に制限はありませんが、1 つだけ例外があります。ラベルにより暗号化が適用される場合、ラベルの最大数は 500 に制限されます。 ただし、管理者のオーバーヘッドを低減し、ユーザーのために複雑さを軽減するためのベスト プラクティスとして、ラベルの数は必要最小限に抑えるようにします。 実際の展開における経験から、ユーザーに与えられた親ラベルが 6 個以上ある場合や親ラベル 1 つにつき 6 個以上のサブラベルがある場合、効果が大きく低下することがわかっています。
 
@@ -190,7 +190,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 ![機密ラベルのワークフローを示す図](media/Sensitivity-label-flow.png)
 
-詳しい手順については、「[機密ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)」を参照してください。
+詳しい手順については、「[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)」を参照してください。
 
 ## <a name="where-sensitivity-labels-can-appear"></a>機密ラベルを表示できる場所
 
