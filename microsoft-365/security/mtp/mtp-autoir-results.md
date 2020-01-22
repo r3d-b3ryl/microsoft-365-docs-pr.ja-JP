@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d33844c1bd774f6b53dbbaa428762c4832fccb85
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e70fa5f226b25df72514f75bb20873665d9021f6
+ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806986"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41256553"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -92,6 +92,9 @@ ms.locfileid: "40806986"
 |Clean (クリーン)  |デバイスまたはメールのコンテンツ   |必要な修復アクションはありません|
 
 [保留中のアクションをアクション センターで確認する](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
+
+> [!TIP]
+> Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 
