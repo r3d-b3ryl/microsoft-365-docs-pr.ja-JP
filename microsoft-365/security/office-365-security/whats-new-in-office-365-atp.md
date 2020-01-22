@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: f8848ec9b56bc6f44d0a895d7274deb285a64bc7
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260225"
+ms.locfileid: "41263349"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -63,7 +63,7 @@ ms.locfileid: "41260225"
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン 1 およびプラン 2
 
-Office 365 ATP は2つのプランで利用できることをご存知ですか。 Office 365 ATP Plan 1、および Office 365 ATP プラン2があります。 [各プランに含まれる内容について説明](office-365-atp.md#office-365-atp-plan-1-and-plan-2)します。
+Office 365 ATP は2つのプランで利用できることをご存知ですか。 [各プランに含まれる内容について説明](office-365-atp.md#office-365-atp-plan-1-and-plan-2)します。
 
 ## <a name="see-also"></a>関連項目
 
