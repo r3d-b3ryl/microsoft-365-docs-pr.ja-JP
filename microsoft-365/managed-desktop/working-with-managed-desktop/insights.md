@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962324"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260105"
 ---
 # <a name="work-with-insights"></a>分析情報を操作する
 
@@ -40,4 +40,9 @@ Microsoft 365 管理センターからこれらのビューにアクセスする
 ## <a name="reliability-insights"></a>信頼性の分析情報
 このビューでは、管理対象デバイスの正常性の概要が提供されます。 信頼性データを表示するには、[**信頼性**] タブを選択します。
 
-[信頼性の分析](reliability-insights.md)についての詳細情報
+[信頼性の分析](reliability-insights.md)について説明します。
+
+## <a name="battery-insights"></a>バッテリインサイト
+このビューには、環境内のデバイスの電力消費量と予想されるバッテリ寿命に関する情報が表示されます。 この情報を表示するには、[**バッテリ**] タブを選択します。
+
+[詳細につい](battery-insights.md)ては、「」を参照してください。

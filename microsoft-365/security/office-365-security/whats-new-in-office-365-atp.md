@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807942"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260225"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -30,10 +30,6 @@ ms.locfileid: "40807942"
 
 > [!TIP]
 > Office 365 ATP をまだ持っていませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
-
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン 1 およびプラン 2
-
-Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP Plan 1 および Office 365 ATP Plan 2。 [詳細情報](office-365-atp.md#office-365-atp-plan-1-and-plan-2) を参照してください。
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -65,8 +61,14 @@ Office 365 ATP は、次の2つのプランで利用できます: Office 365 ATP
 
 - [フィッシング url に関するデータを表示し、[verdict] をクリックし](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)ます (OFFICE 365 ATP Plan 1 または Plan 2)
 
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン 1 およびプラン 2
+
+Office 365 ATP は2つのプランで利用できることをご存知ですか。 Office 365 ATP Plan 1、および Office 365 ATP プラン2があります。 [各プランに含まれる内容について説明](office-365-atp.md#office-365-atp-plan-1-and-plan-2)します。
+
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Microsoft Threat Protection での自動調査および対応](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

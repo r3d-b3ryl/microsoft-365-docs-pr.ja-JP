@@ -98,6 +98,8 @@
               href: working-with-managed-desktop/usage-insights.md
             - name: 信頼性の分析情報
               href: working-with-managed-desktop/reliability-insights.md
+            - name: バッテリインサイト
+              href: working-with-managed-desktop/battery-insights.md
         - name: 管理者サポート
           href: working-with-managed-desktop/admin-support.md
         - name: エンド ユーザー サポート

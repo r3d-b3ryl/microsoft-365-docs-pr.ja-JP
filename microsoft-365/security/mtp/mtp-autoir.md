@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ea3201838e625969a239aee4339e0de605d95c55
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9459b1b8ff431624045c5b57ade531288d41866e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808612"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260185"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Microsoft Threat Protection での自動調査および対応 (AIR)
 
@@ -38,24 +38,26 @@ ms.locfileid: "40808612"
 
 セキュリティ運用チームは AIR を使用することで、セキュリティの警告やインシデントへの組織の対応能力を大幅に向上させることが可能です。 AIR を使用すると、調査と修復アクションでのコストを削減でき、脅威対策スイートを最大限に活用できます。 セキュリティ運用チームを支援する以下の操作が AIR により実行されます。
 
-1.  脅威に対してアクションを実行する必要があるかどうかの判断。
-2.  必要な修復アクションの実行 (または推奨)。
-3.  実行する必要がある追加の調査の特定。
-4.  必要に応じた、他の警告に対するプロセスの反復。
+1. 脅威に対してアクションを実行する必要があるかどうかの判断。
+2. 必要な修復アクションの実行 (または推奨)。
+3. 実行する必要がある追加の調査の特定。
+4. 必要に応じた、他の警告に対するプロセスの反復。
 
 ## <a name="the-automated-investigation-process"></a>自動調査のプロセス
 
 [**Alert (警告)**] > [**incident (インシデント)**] > [**automated investigation (自動調査)**] > [**verdict (判定)**] > [**remediation action (修復アクション)**]
 
-大まかな流れとしては、トリガーされた警告によりインシデントが作成され、これにより自動調査の開始が可能になります。 この調査の結果、1 つまたは複数の修復アクションが実行される可能性があります。 Microsoft Threat Protection では、次の表にまとめたとおり、各自動調査により Azure Advanced Threat Protection (Azure ATP)、Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)、Office 365 Advanced Threat Protection (Office 365 ATP) の間でシグナルの関連付けが行われます。 
+トリガーされた通知は、インシデントを作成します。これにより、自動調査が開始されます。 この調査の結果、1 つまたは複数の修復アクションが実行される可能性があります。 Microsoft Threat Protection では、次の表にまとめたとおり、各自動調査により Azure Advanced Threat Protection (Azure ATP)、Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)、Office 365 Advanced Threat Protection (Office 365 ATP) の間でシグナルの関連付けが行われます。 
 
 |エンティティ |脅威対策サービス  |
 |---------|---------|
 |デバイス (エンドポイントとも呼ばれます)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |メールの内容 (メールボックス内のファイルとメッセージ)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-
 各調査では、調査対象の証拠それぞれについて判定 (*Malicious (悪意のある)*、 *Suspicious (疑わしい)*、または *Clean (クリーン)*) が作成されます。 脅威の種類および出された判定に応じて、修復アクションが自動的に、または組織のセキュリティ運用チームの承認を受けて実行されます。 保留中および完了済みのアクションは、[アクション センター](mtp-action-center.md)に一覧表示されます。
+
+> [!TIP]
+> Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
 
 調査の実行中にその他の関連する警告が発生した場合は、それらの警告は調査が完了するまで調査に追加され続けます。 有害なエンティティが別の場所に見つかった場合、そのエンティティを対象に含めるために自動調査の対象範囲が拡大され、全般的なセキュリティのプレイブックが実行されます。 
 

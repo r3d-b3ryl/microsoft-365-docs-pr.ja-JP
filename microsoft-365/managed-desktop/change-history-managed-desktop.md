@@ -8,16 +8,25 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 8713b678432d71304649e05fba466659de0369ad
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634064"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260125"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 このトピックでは、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新されたトピックを一覧表示します。 「更新された」トピックは、マテリアルが追加または修正されたものであり、誤入力、スタイル、書式設定の問題の修正などのマイナー修正がリストされていません。 [GitHub 上のリポジトリ](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)にアクセスすることによって、特定のコミット (変更の詳細を含む) の履歴をいつでも表示できます。
+
+## <a name="december-2019"></a>2019 年 12 月
+新規または変更されたトピック | 説明
+--- | ---
+[Microsoft マネージドデスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新されたトピック
+[Microsoft マネージドデスクトップデバイス](service-description/device-list.md) | 更新されたトピック
+[Microsoft マネージドデスクトップのアーカイブされたデバイス](service-description/archived-device-list.md) | 更新されたトピック
+
+
 
 ## <a name="november-2019"></a>2019 年 11 月
 新規または変更されたトピック | 説明

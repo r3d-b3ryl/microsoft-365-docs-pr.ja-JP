@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca98e59ded0956455e3279caa9de2af4f4af86c9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 91f2ae9a9fef96a3fdfedf86481aa5f5f33cb724
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808472"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260215"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>アクション センターに移動して修復アクションを表示する
 
@@ -70,6 +70,10 @@ ms.locfileid: "40808472"
     - 調査がメール コンテンツ (エンティティがメールボックスなど) に関連する場合は、調査の詳細は Office 365 セキュリティ/コンプライアンス センター に表示されます ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation))。 
 
     - 調査にデバイスが含まれる場合は、調査の詳細がセキュリティ センター で開きます ([https://security.microsoft.com](https://security.microsoft.com))。 
+
+
+> [!TIP]
+> Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
 
 ## <a name="required-permissions-for-action-center-tasks"></a>アクション センター タスクに必要なアクセス許可
 

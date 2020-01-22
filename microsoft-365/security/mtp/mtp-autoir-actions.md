@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: edc952a0361ee8cfa6ed3df2eaf80f0fc4bf7fd5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 35433eccf93c56a8f8bf66b50fa6728ff7585d8e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808462"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260205"
 ---
 # <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>自動調査による保留中のアクションを承認または拒否する
 
@@ -31,6 +31,9 @@ ms.locfileid: "40808462"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 自動調査が実行されたときに、調査を続行するには承認を必要とする 1 つまたは複数の[修復](mtp-action-center.md#remediation-actions)アクションが発生する場合があります。 たとえば、一連のメール メッセージを削除する必要がある場合や、検疫されたファイルを削除する必要がある場合があります。 自動調査を続行し適時完了できるよう、保留中のアクションはできるだけ早く承認 (または拒否) することが重要です。 
+
+> [!TIP]
+> Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
 
 保留中のアクションを確認して承認する方法には、いくつかあります。
 - [アクション センターを使用する](#review-a-pending-action-in-the-action-center)
