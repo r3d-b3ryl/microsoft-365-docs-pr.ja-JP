@@ -73,6 +73,8 @@
                   href: mtp/mtp-autoir-results.md
                 - name: 保留中のアクションを承認または拒否する
                   href: mtp/mtp-autoir-actions.md
+                - name: 誤検知/ネガを報告する
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 高度な捜索
               items:
                 - name: Microsoft 365 での検出
