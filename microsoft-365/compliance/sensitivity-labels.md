@@ -15,27 +15,27 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、従業員の生産性や共同作業性が低下することはありません。秘密度ラベルは、ラベル付けされたコンテンツに暗号化および透かしなどの保護設定を適用するために使用できます。
-ms.openlocfilehash: f416bcb32e9d8c14fee17d2dcecddac2aec20485
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 97667bbce764e3e36dd488aac799b11fa50ed3bf
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238504"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259943"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
 組織の従業員は、業務を達成するために組織の内外の関係者との共同作業を行います。このためコンテンツはファイアウォールの内側にとどまらず、デバイス、アプリ、およびサービスなどのさまざまな場所にローミングすることになります。コンテンツがローミングする際は、組織のビジネス ポリシーとコンプライアンス ポリシーを満たすように、コンテンツを安全な状態で保護することが必要です。
 
-機密ラベルを使用すると、組織のユーザーの生産性や共同作業性に影響を与えることなく、機密コンテンツの分類と保護を行えます。
-
-> [!NOTE]
-> 秘密度ラベルは、米国政府機関向けコミュニティ (GCC) の組織では使用できません。 
+秘密度ラベルを使用すると、組織のユーザーの生産性や共同作業性に影響を与えることなく、組織のデータの分類と保護を行えます。
 
 秘密度ラベルを示す例:
 
 ![Excel のリボンおよびステータス バーに示された秘密度ラベル](media/Sensitivity-label-in-Excel.png)
 
 秘密度ラベルは、グローバル (パブリック) クラウドのテナントでのみサポートされています。 現在、秘密度ラベルは、[国別クラウド](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)などの他のクラウドのテナントではサポートされていません。
+
+> [!NOTE]
+> 秘密度ラベルは、米国政府機関向けコミュニティ (GCC) の組織ではまだ使用できません。
 
 機密ラベルを適用するには、ユーザーは職場または学校のアカウントを使用して Office にサインインする必要があります。
 
@@ -45,19 +45,15 @@ ms.locfileid: "41238504"
 
 - **さまざまなプラットフォームやデバイスで Office アプリのコンテンツを保護する。** サポートされているアプリの一覧については、「[Office アプリの機密ラベル](sensitivity-labels-office-apps.md)」を参照してください。
 
-- **Windows を実行するデバイスでは、機密コンテンツの組織外への流出を防止します。** これには、Microsoft Intune の Endpoint Protection を使用します。Windows デバイスに存在するコンテンツに機密ラベルが適用されていると、Endpoint Protection により、そのコンテンツがサード パーティ製アプリ (Twitter や Gmail など)、またはリムーバブル記憶域 (USB ドライブなど) にコピーされることを防止できます。
+- **Windows を実行するデバイスでは、機密コンテンツの組織外への流出を防止します。** これには、Microsoft Intune の Endpoint Protection を使用します。Windows デバイスに存在するコンテンツに秘密度ラベルが適用されていると、Endpoint Protection により、そのコンテンツがサード パーティ製アプリ (Twitter や Gmail など)、またはリムーバブル記憶域 (USB ドライブなど) にコピーされることを防止できます。
 
-- Microsoft Cloud App Security を使用して**サード パーティ製アプリおよびサービスのコンテンツを保護します**。 Cloud App Security を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます (サード パーティ製のアプリやサービスが機密ラベルを認識しない場合やサポートしない場合でも可能です)。
+- Microsoft Cloud App Security を使用して**サード パーティ製アプリおよびサービスのコンテンツを保護する**。 Cloud App Security を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます (サード パーティ製のアプリやサービスが機密ラベルを認識しない場合やサポートしない場合でも可能です)。
 
-- **サード パーティ製アプリおよびサービスに機密ラベルを拡張します。** Microsoft Information Protection SDK を使用すると、[これらのプラットフォーム](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)上のサード パーティ製アプリは、機密ラベルを認識して、保護設定を適用できるようになります。
+- **秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する。** Microsoft Information Protection SDK を使用すると、秘密度ラベルの読み取りと保護設定の適用をサード パーティ製アプリで行えるようになります。
 
 - **保護設定を何も使わずにコンテンツを分類する。** 使用し、共有しているコンテンツを永続化、ローミングする（ステッカーなどの）コンテンツに分類をただ割り当てることもできます。 この分類を使用して使用状況レポートを作成し、機密性の高いコンテンツのアクティビティ データを確認できます。 この情報に基づいて常に選択し、後で保護設定を適用できます。
 
-Office 365 の秘密度ラベルを使用することにより、これらすべてのケースにおいて適切なコンテンツで適切な措置をとることができます。 秘密度ラベルを使用すると、組織全体でデータを分類し、その分類に基づいて保護設定を適用できます。
-  
-機密ラベルの作成は、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターの [**分類**]  >  [**機密ラベル**] で行います。 これらの機密情報のラベルは、Azure Information Protection、Office アプリ、および Office 365 サービスで使用できます。
-
-Azure Information Protection のお客様は、それ以外の管理センターで Azure Information Protection のラベルを使用できます。また、追加の構成や高度な構成を実施することで、ラベルは Azure portal と同期されるようになります。 Azure Information Protection ラベルと Office 365 秘密度ラベルとの間には互換性があります。たとえば、Azure Information Protection によりラベル付けされたコンテンツがある場合は、コンテンツの再分類やラベルの付け直しを行う必要がありません。
+Microsoft 365 の秘密度ラベルを使用することにより、これらすべてのケースにおいて適切なコンテンツで適切な措置をとることができます。 秘密度ラベルを使用すると、組織全体でデータを分類し、その分類に基づいて保護設定を適用できます。
 
 ## <a name="what-a-sensitivity-label-is"></a>機密ラベルとは
 
@@ -67,13 +63,14 @@ Azure Information Protection のお客様は、それ以外の管理センター
 
 - **クリア テキスト:**  ラベルはコンテンツのメタデータにクリア テキストとして保存されるため、サードパーティのアプリやサービスはラベルを読み取り、必要に応じてそれぞれの保護アクションを適用することができます。
 
-- **永続性:** 秘密度ラベルをコンテンツに適用すると、適用されたラベルはメールまたはドキュメントのメタデータで永続的に保持されます。つまり、ラベルは保護設定も含めてコンテンツと共にローミングし、このデータに基づきポリシーが適用されたり実施されたりします。
+- **永続性。** 秘密度ラベルをコンテンツに適用すると、ラベルは、そのメールまたはドキュメントのメタデータ内に格納されます。 これは、ラベルが保護設定を含むコンテンツとともにローミングすることを意味します。このデータは、ポリシーの適用と強制実行の基礎となります。
 
 Office アプリでは、秘密度ラベルはメールやドキュメントのタグのようにユーザーに表示されます。
 
 コンテンツの各アイテムには、1 つの機密ラベルを適用できます。ただし、1 つのアイテムに 1 つの機密ラベルと 1 つの[保持ラベル](labels.md)の両方を適用できます。
 
-![電子メールに適用された機密ラベル](media/Sensitivity-label-on-email.png)
+> [!div class="mx-imgBorder"]
+> ![電子メールに適用された秘密度ラベル](media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>機密ラベルでできること
 
@@ -85,10 +82,10 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 メールやドキュメントに秘密度ラベルが適用されると、そのラベルで構成済みの保護設定がコンテンツに適用されます。秘密度ラベルを使用すると、次のことができます。
 
-- 電子メールのみ、または電子メールとドキュメントの両方の**暗号化**。 どのユーザーまたはグループがどのアクションを実行する権限を持つかを選択でき、権限を持つ期間も選択できます。 たとえば、組織外の特定のドメインのユーザーに、コンテンツを確認する権限を、コンテンツにラベルが付けられてから 7 日間のみ与えることができます。 または、アクセス許可を管理者が割り当てるのではなく、ユーザーがラベルを適用する際に、コンテンツへのアクセス許可の割り当てをユーザーが行えるようにもできます。 詳細については、「[機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)」を参照してください。
+- 電子メールのみ、または電子メールとドキュメントの両方の**暗号化**。 どのユーザーまたはグループがどのアクションを実行する権限を持つかを選択でき、権限を持つ期間も選択できます。 たとえば、他の組織の特定のグループのユーザーに対して、コンテンツにラベルが付けられてから 7 日間のみコンテンツを確認する権限を与えることができます。 または、管理者が割り当てるアクセス許可の代わりに、ユーザーがラベルを適用する際に、コンテンツへのアクセス許可の割り当てをユーザーが行えるようにもできます。 詳細については、「[秘密度ラベルの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)」を参照してください。
 
-- ラベルが適用されている電子メールやドキュメントにカスタムの透かし、ヘッダー、またはフッターを追加することで、**コンテンツにマークを付けます**。 透かしはドキュメントにのみ適用でき、電子メールには適用できません。透かしで使用できる文字数は、255 文字までです。 また、ヘッダーとフッターで使用できる文字数は 1024 文字までです (ただし、Excel の場合、ドキュメントに他のヘッダーまたはフッターが含まれているかどうかにより、また、その他の要素により、 255 文字以下に制限)。
-
+- ラベルが適用されているメールやドキュメントに対して透かし、ヘッダー、またはフッターを追加することで、Office アプリを使用するときに**コンテンツにマークを付ける**。 透かしはドキュメントには適用できますが、メールには適用できません。透かしで使用できる文字数は、255 文字に制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。 コンテンツのマーキングが適用される場合の詳細については、「[Office 365 がコンテンツにマーキングと暗号化を適用する場合](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content)」を参照してください。
+    
     ![ドキュメントに適用されたヘッダーと透かし](media/Sensitivity-label-watermark-header.png)
 
 - Intune のエンドポイント保護を有効にすることで、**データの損失を防止**する。 機密情報がダウンロードされた際に、Windows デバイスからデータが失われることを防止できます。 たとえば、ラベルが付けられたコンテンツは Dropbox、Gmail、または USB ドライブにコピーできなくなります。 機密ラベルで Windows 情報保護 (WIP) を使用できるようにするには、最初に Azure ポータルでアプリ保護ポリシーを作成する必要があります。 詳細については、「[Windows 情報保護で機密ラベル付きのファイルを保護する方法](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)」を参照してください。
@@ -96,10 +93,6 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 - **機密情報を含むコンテンツに自動的にラベルを適用します。** どのような種類の機密情報にラベルをつけるか、また、ラベルを自動でつけるか、あるいは推奨するラベルを適用するようにユーザーに確認メッセージを表示するか選択することができます。ラベルを推奨する場合、ダイアログに任意に選択したテキストを表示することができます。詳細については、「[機密ラベルを自動的にコンテンツに適用する](apply-sensitivity-label-automatically.md)」を参照してください。
 
     ![必要なラベルを割り当てるかを確認するダイアログ](media/Sensitivity-label-Prompt-for-required-label.png)
-
-これらすべてのオプションは、秘密度ラベルを作成する際に使用できます。
-
-![機密ラベルの作成時のオプション](media/Sensitivity-label-create-options.png)
 
 ### <a name="label-priority-order-matters"></a>ラベルの優先度 (順序の問題)
 
@@ -121,36 +114,36 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 サブラベルの表示方法の例:
 
-![リボンでグループ化されたサブラベル](media/Sensitivity-label-grouped-labels.png)
+![リボンでグループ化されたサブラベル](media/Sensitivity-label-grouped-labels2.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>機密ラベルの編集または削除
 
-機密ラベルを削除しても、そのラベルがコンテンツから削除されることはなく、コンテンツに対する保護設定の適用が継続されます。
+管理センターで秘密度ラベルを削除してもラベルがコンテンツから自動的に削除されることはなく、そのラベルが適用されているコンテンツでは保護設定の適用が継続されます。
 
 機密ラベルを編集した場合は、コンテンツに適用されていたラベルのバージョンが、そのコンテンツに強制適用される内容になります。
 
 ## <a name="what-label-policies-can-do"></a>ラベル ポリシーでできること
 
-機密ラベルの作成後には、その機密ラベルを発行し、組織内のユーザーが機密ラベルを選択してコンテンツに適用できるようにする必要があります。すべての Exchange メールボックスなどの場所に発行される保持ラベルとは異なり、機密ラベルはユーザーやグループに発行されます。発行後に、機密ラベルは該当するユーザーとグループの Office アプリに表示されます。
+独自の秘密度ラベルを作成した場合、それらの秘密度ラベルを発行し、組織内のユーザーとサービスが使用できるようにする必要があります。 そうすることで、秘密度ラベルをドキュメントやメールに適用できるようになります。 Exchange メールボックスなどの場所に発行される保持ラベルと異なり、秘密度ラベルはユーザーまたはグループに発行されます。 発行された秘密度ラベルは、発行を受けたユーザーとグループの Office アプリに表示されるようになります。
 
 ラベル ポリシーを使用すると、次のことができます。
 
-- **ラベルが表示されるユーザーとグループを選択します。** ラベルは、電子メールが有効なセキュリティ グループ、配布グループ、Office 365 グループ、または動的配布グループに発行できます。
+- **ラベルを表示させるユーザーとグループを選択する。** ラベルは、メールが有効になっているセキュリティ グループ、Office 365 グループ、または動的配布グループのいずれにも発行できます。
 
-- ラベル ポリシーに含まれているユーザーとグループが作成したすべての新しいドキュメントと電子メールに**既定のラベルを適用します**。この既定のラベルにより、すべてのコンテンツに適用する保護設定の基本レベルを設定できます。
+- ラベル ポリシーに含まれているユーザーとグループが作成したすべての新しいドキュメントと電子メールに**既定のラベルを適用する**。 既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 
 
-- **ラベル変更の正当な理由を要求する。** コンテンツに「社外秘」のマークが付けられている場合にユーザーがそのラベルを削除または低い分類 (ラベル名「公開」など) との置き換えを希望する場合、ユーザーがその操作を実行するときに理由を提示するように要求できます。 現在、正当な理由は、管理者がレビューするための[ラベル分析](label-analytics.md)に送信されません。 ただし、[Azure Information Protection の統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)は、この情報を [Azure Information Protection の分析](https://docs.microsoft.com/azure/information-protection/reports-aip)に送信します。
+- **ラベル変更の正当な理由を要求する。** コンテンツに「社外秘」のマークが付けられている場合にユーザーがそのラベルを削除または低い分類 (ラベル名「公開」など) と置き換えようとした場合に、その操作を実行する理由を提示するようにユーザーに要求できます。 現在、正当な理由は、管理者がレビューするための[ラベル分析](label-analytics.md)に送信されません。 ただし、[Azure Information Protection の統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)は、この情報を [Azure Information Protection の分析](https://docs.microsoft.com/azure/information-protection/reports-aip)に送信します。
 
     ![ユーザーに正当性を入力するように求めるダイアログ](media/Sensitivity-label-justification-required.png)
 
-- **メールとドキュメントにラベルを適用するようユーザーに要求します。** ユーザーのすべてのコンテンツにラベル付けする場合は、ユーザーのすべての保存ドキュメントと送信メールに必ずラベルを適用するよう要求することができます。ラベルはユーザーが手動で割り当てるか、条件の結果として自動的に割り当てるか、既存で割り当てることができます (既存のラベル オプションについては前述のとおりです)。これは、Outlook で表示されるユーザーにラベルを割り当てるように要求するダイアログです。
+- **メールとドキュメントにラベルを適用することをユーザーに義務付ける。** これは必須ラベルとも呼ばれ、ユーザーがドキュメントを保存したりメールを送信したりできるようになる前に、ラベルを適用することを要求できます。 これは、ラベル付けの適用範囲を広げる場合に使用できるオプションです。 ラベルはユーザーが手動で割り当てることも、構成した条件に従って自動的に適用することも、既定 (上記の既定のラベルのオプション) で適用することもできます。 これは、ラベル付けがユーザーに要求されている場合に Outlook に表示されるダイアログです。
 
+    ![要求されるラベルを適用することをユーザーに求める Outlook のダイアログ](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
+    
     > [!NOTE]
-    > 必須ラベルを付けるには、Azure Information Protection のサブスクリプションが必要です。 この機能を使用するには、[Azure Information Protection クライアント](https://www.microsoft.com/download/details.aspx?id=53018)、またはより新しい [Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)をダウンロードしてインストールする必要があります。 また、同クライアントは Windows でのみ実行されるため、この機能は Mac、iOS、および Android ではまだサポートされていません。
+    > 必須ラベルを付けるには、Azure Information Protection のサブスクリプションが必要です。 この機能を使用するには、[Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)をインストールする必要があります。 このクライアントは Windows 上でのみ実行できるため、この機能は Mac、iOS、および Android ではまだサポートされていません。
 
-    ![必要なラベルを適用するかユーザーに確認する Outlook のダイアログ](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
-
-- **カスタム ヘルプ ページへのリンクを提供する。** ユーザーが機密ラベルの意味や使用方法について明確に理解できない場合は、Office アプリの [**機密ラベル**] メニューの一番下に表示される [詳細情報] の URL を提供できます。
+- **カスタム ヘルプ ページへのリンクを提供する。** 秘密度ラベルの意味や使用方法についてユーザーがよく理解していない場合は、Office アプリの [**秘密度ラベル**] メニューの一番下に表示される [詳細情報] の URL を提供できます。
 
     ![リボンの [機密] ボタンに示された詳細な説明のリンク](media/Sensitivity-label-learn-more.png)
 
@@ -168,140 +161,64 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 - ラベル ポリシーの範囲 (ポリシーに含まれるユーザーとグループ)。
 - 上記のラベル ポリシーの設定 (既定のラベル、妥当性、必須ラベル、ヘルプのリンク)。
 
-ユーザーは複数のラベル ポリシーに含めることができ、その場合、複数のポリシーのすべての秘密度ラベルがユーザーに表示されます。 ただし、ユーザーに表示されるポリシー設定は、最も優先度の高いラベル ポリシーのもののみです。
+ユーザーは複数のラベル ポリシーに含めることができ、その場合、複数のポリシーのすべての秘密度ラベルがユーザーに表示されます。 ただし、ユーザーに提供されるポリシー設定は、優先度が最も高いラベル ポリシーのもののみです。
 
-既定のラベルや必須のラベルなど、組織内のユーザーまたはグループに意図したラベル ポリシーのオプションが表示されない場合、機密ラベル ポリシーの順序を確認してください。 ラベル ポリシーを並べ替えるには、機密ラベル ポリシーを選択し、右側にある省略記号を選択して**下へ移動**または**上へ移動**します。
+すでに 24 時間以上経過しており、ユーザーまたはグループに表示されることが想定されるラベルまたはラベル ポリシーの設定が表示されない場合は、秘密度ラベル ポリシーの順序を確認します。 ラベル ポリシーを並べ替えるには、機密ラベル ポリシーを選択し、右側にある省略記号を選択して**下へ移動**または**上へ移動**します。
 
 ![機密ラベル ポリシーのページ上の移動オプション](media/sensitivity-label-policy-priority.png)
 
-機密ラベル ポリシーにとって優先度は重要ですが、保持ラベル ポリシーの場合は**重要ではありません**。 「[保持するための原則、または優先順位](labels.md#the-principles-of-retention-or-what-takes-precedence)」で説明したように、コンテンツは複数の保持ポリシーの対象になれます。
+秘密度ラベルに加えて保持レベルも使用している場合、優先度は秘密度ラベルにとっては重要ですが、[保持ラベル ポリシー](labels.md#the-principles-of-retention-or-what-takes-precedence)にとっては重量ではないということを覚えておく必要があります。
 
-## <a name="how-to-get-started-with-sensitivity-labels"></a>機密ラベルの使用を開始する方法
+## <a name="sensitivity-labels-and-azure-information-protection"></a>秘密度ラベルと Azure Information Protection
 
-次のプロセスに従って、秘密度ラベルの使用を開始します。
+ラベルの展開に Azure Information Protection を使用している場合は、秘密度ラベルを使用する前に、次のセクションを参考にしてください。
 
-1. **ラベルを定義する。** まず、コンテンツの各秘密度レベルを定義するための分類方法を決定します。 ユーザーにとって意味のある、一般的な名前または用語を使用します。 たとえば、個人用、公開用、一般、社外秘、極秘などのラベルから始めることができます。 サブラベルを使用すると、類似したラベルをカテゴリ別にグループ化できます。 また、ラベルを作成するときは、ツール ヒントが必要です。これは、ユーザーがリボン上のラベル オプションにマウス ポインターを合わせるときに Office アプリケーションに表示されます。
+### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
 
-2. **各ラベルの機能を定義する。** 次に、各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、秘密度の低いコンテンツ (「一般」ラベルなど) には単にヘッダーやフッターを適用し、秘密度のより高いコンテンツ (「社外秘」ラベルなど) には透かし、暗号化、および WIP を適用することにより、権限があるユーザーのみが機密コンテンツにアクセスできるようにすることが可能です。
+テナントがまだ[統合ラベル付けプラットフォーム](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上にないことが理由で Azure Information Protection ラベルを使用している場合は、統合ラベル付けを有効にするまでは秘密度ラベルを作成しないことをお勧めします。 このシナリオでは、Azure ポータルに表示されるラベルは、秘密度ラベルではなく、Azure Information Protection のラベルになります。 これらのラベルは、macOS、iOS、または Android を実行するデバイスでは使用できません。 この問題を解決するには、[これらのラベルを秘密度ラベルに移行](/azure/information-protection/configure-policy-migrate-labels)させます。
 
-3. **ラベルの対象になるユーザーを定義します。** 組織のラベルを定義したら、そのラベルをラベル ポリシーで発行します。このポリシーによって、どのユーザーおよびグループにラベルを表示するかを制御します。1 つのラベルを再使用できるため、一度定義したラベルは、さまざまなユーザーに割り当てる複数のラベル ポリシーに含めることができます。ただし、コンテンツにラベルを割り当てるには、まず、そのラベルを発行して Office アプリなどのサービスで使用できるようにしておく必要があります。開始したばかりのときには、少数のユーザーに機密ラベルを割り当てて試験運用してください。
+この 2 つのセットのラベルによって適用されるメタデータ同士には互換性があるため、移行完了後にドキュメントとメールにラベルを付け直す必要はありません。
 
-機密ラベルが機能するために、管理者、ユーザー、Office アプリが実行する内容の基本的なフローを次に示します。
+### <a name="azure-information-protection-clients"></a>Azure Information Protection クライアント
 
-![機密ラベルのワークフローを示す図](media/Sensitivity-label-flow.png)
+秘密度ラベルを Windows コンピューター上の Office 365 ProPlus アプリで使用する場合は、Azure Information Protection クライアントを使用するか、Office に組み込まれているラベル付け機能を使用するかを選ぶことができます。 
 
-詳しい手順については、「[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)」を参照してください。
+既定では、Azure Information Protection クライアントがインストールされている場合、組み込みのラベル付け機能はこれらのアプリでオフになっています。 詳細については、「[Office 組み込みラベル付けクライアントについて](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client)」を参照してください。
 
-## <a name="where-sensitivity-labels-can-appear"></a>機密ラベルを表示できる場所
+どちらのラベル付けクライアントを使用するかを判断する上でヘルプが必要な場合は、Azure Information Protection のドキュメントの、「[Windows コンピューターに使用するラベル付けクライアントを選択する](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)」を参照してください。
 
-秘密度ラベルは Office アプリの UI に表示され、リボンにある [ホーム] タブの [**秘密度**] ボタンから選択できます。 特定のアプリとプラットフォームで現在提供されている組み込みのラベル付け機能を確認するには、「[アプリでの秘密度ラベル機能のサポート](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)」を参照してください。
+## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>秘密度ラベルと Microsoft Cloud App Security
 
-Windows コンピューターで Azure Information Protection 統合ラベル付けクライアントを使用している場合は、秘密度ラベルで利用可能な追加の機能があります。 詳細については、「[Windows コンピューターのラベル付けクライアントを比較する](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)」を参照してください。
+Cloud App Security (CAS) を使用することにより、サード パーティ製サービスおよびアプリ (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます。 
 
-### <a name="office-apps-on-windows"></a>Windows 上の Office アプリ
+Cloud App Security は、Azure Information Protection ラベルと秘密度ラベルの両方で動作します。
 
-Windows を実行するデバイス上の Office アプリでは、秘密度ラベルはリボンの [**ホーム**] タブにある [**秘密度**] ボタンに表示されます。 
+- ラベル付け管理センターに Azure ポータルのラベルと同じラベルがある場合、秘密度ラベルが使用されます。 これらのラベルを Cloud App Security で選択するには、少なくとも 1 つのラベルを少なくとも 1 人のユーザーに対して[発行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)する必要があります。
 
-組み込みのラベル付け機能を使用する場合、適用されているラベルはウィンドウ下部のステータス バーにも表示されます。
+- Azure portal のラベルと同じラベルがラベル付け管理センターにない場合、ラベル付け管理センターからの秘密度ラベルは使用されず、その代わりに、Azure Information Protection ラベルが Azure ポータルから取得されます。
 
-![Windows の Excel のリボンに示された [機密] ボタン](media/Sensitivity-label-Sensitivity-button.png)
+Cloud App Security をこれらのラベルで使用する手順については、「[Azure Information Protection の分類ラベルを自動的に適用する](https://docs.microsoft.com/cloud-app-security/use-case-information-protection)」を参照してください。
 
-### <a name="office-apps-on-the-web"></a>Web 上の Office アプリ
-
-Web 上の Office アプリでの秘密度ラベルの使用方法については、「[Office on the web でファイルとメールに秘密度ラベルを適用する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」を参照してください。
-
-### <a name="office-apps-on-mac"></a>Mac 上の Office アプリ
-
-Mac デバイス上の Office アプリでは、秘密度ラベルはリボンの [**ホーム**] タブにある [**秘密度**] ボタンに表示されます。 適用されているラベルはウィンドウ下部のステータス バーにも表示されます。
-
-![Mac 上の Office のリボンに示された [機密] ボタン](media/Sensitivity-label-on-Mac.png)
-
-### <a name="office-apps-on-ios"></a>iOS 上の Office アプリ
-
-iOS デバイス上の Office アプリでは、秘密度ラベルはリボンの [**ホーム**] タブにある [**秘密度**] ボタンに表示されます。 適用されているラベルはウィンドウ下部のステータス バーにも表示されます。
-
-![iOS 上の Office のリボンに示された [機密] ボタン](media/Sensitivity-label-on-iOS.png)
-
-### <a name="office-apps-on-android"></a>Android 上の Office アプリ
-
-Android デバイス上の Office アプリでは、秘密度ラベルはリボンの [**ホーム**] タブにある [**秘密度**] ボタンに表示されます。 適用されているラベルはウィンドウ下部のステータス バーにも表示されます。
-
-![Android 上の Office のリボンに示された [機密] ボタン](media/Sensitivity-label-on-Android.png)
-
-### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Office アプリの機密ラベルに関する詳細情報
-
-- [Office 内の文書やメールに機密ラベルを適用する](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- [Office ファイルに機密ラベルを適用した場合の既知の問題](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
-- [Office アプリの機密ラベル](sensitivity-labels-office-apps.md)
-
-## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>機密ラベルが既存の Azure Information Protection ラベルと連動する方法
-
-Azure Information Protection のユーザーは、Azure Information Protection 統合ラベル付けクライアントを使用して Windows のコンテンツを分類してラベルを付けることができます。 既存の Azure Information Protection ラベルは、統一ラベルとも呼ばれる新しい秘密度ラベルとシームレスに連動します。 これは、次のことを実行できることを意味します。
-
-- 既存の Azure Information Protection ラベルをドキュメントと電子メールに保持する。
-- 既存の Azure Information Protection ラベル構成を保持する。
-
-テナントがまだ[統合ラベル付けプラットフォーム](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上にないことが理由で Azure Information Protection ラベルを使用している場合は、統合ラベル付けを有効にするまでは他の管理センターで新しいラベルを作成しないことをお勧めします。 このプロセスの詳細については、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
-
-## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>秘密度ラベルと Azure Information Protection クライアント
-
-Office 365 ProPlus アプリでは、Azure Information Protection クライアントがインストールされている場合、Office Windows アプリの秘密度ラベルの組み込みラベル付け機能が自動的に無効になります。
-この既定の設定を変更して組み込みラベル付け機能を使用できるようにするには、「[Office 組み込みラベル クライアントについて](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client)」を参照してください。
-
-## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Microsoft Intune のエンドポイント保護を使用して Windows デバイス上のコンテンツを保護する
-
-秘密度ラベルを作成するときは、このラベル付きのファイルが Windows デバイスに保存されるときにデータ漏洩から保護する必要があることを Windows に通知するオプションがあります。 このオプションを使用することで、このラベルが付けられたコンテンツは、たとえエンドポイントに保存されている場合であっても、許可された場所にのみ共有およびコピーを許可することが可能になります。 つまり、秘密度ラベルにこのオプションを有効にすると、追加の利用制約を必要とする最重要データであることが Windows に通知されます。
-
-このオプションを有効にすると、Windows はドキュメントの機密ラベルを読み取って、認識し、対処できるようになり、コンテンツに対して自動的に Windows 情報保護 (WIP) を適用します。そのコンテンツがマネージ Windows デバイスにどのように送られたかは関係ありません。これにより、暗号化適用の有無にかかわらず、ラベルが付けられたファイルの不用意な漏えいを防止できるようになります。
-
-たとえば、Windows はユーザーのマシンに存在する Word 文書に「社外秘」ラベルが適用されていることを認識して、そのデバイスから業務に関係ない場所 (個人用 OneDrive、個人用電子メール アカウント、ソーシャル メディア、USB ドライブなど) にデータがコピーまたは共有されることを防止するために WIP を適用できます。
-
-ユーザーがラベル付きのコンテンツを個人用の Gmail アカウントにアップロードしようとすると、次のメッセージが表示されます。
-
-![ラベル付きのコンテンツは Gmail にコピーできないことを示すメッセージ](media/Sensitivity-label-WIP-Gmail.png)
-
-また、ユーザーがラベル付きのコンテンツを USB ドライブに保存しようとすると、次のメッセージが表示されます。
-
-![ラベル付きのコンテンツは USB ドライブにコピーできないことを示すメッセージ](media/Sensitivity-label-WIP-USB-drive.png)
-
-### <a name="important-prerequisites-for-using-wip"></a>WIP を使用する場合の重要な前提条件
-
-機密ラベルで WIP が使用できるようにするには、まず、「[Windows 情報保護で機密ラベル付きのファイルを保護する方法](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)」で説明する前提条件を満たしておく必要があります。このトピックには、次の前提条件についての説明があります。
-
-- Windows 10 バージョン 1809 以降を実行していることを確認する。
-- 「[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) のセットアップ](https://docs.microsoft.com/windows/security/threat-protection/)」では、ラベルのコンテンツをスキャンして、対応する WIP 保護を適用します。 ATP では、異常の報告など、WIP と独立した複数の操作が実行されます。
-- エンドポイント デバイスに適用する Windows 情報保護 (WIP) ポリシーを作成する。次のいずれかの方法で作成することができます。
-
-  - [Microsoft Intune の Azure portal を使用して MDM で Windows 情報保護 (WIP) ポリシーを作成する](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-  - [System Center Configuration Manager を使用した Windows 情報保護 (WIP) ポリシーの作成と展開](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
-
-## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Microsoft Cloud App Security を使用してサード パーティ製アプリおよびサービスのコンテンツを保護する
-
-Cloud App Security (CAS) を使用してサード パーティ製アプリおよびサービスのコンテンツを保護します。 Cloud App Security を使用すると、サード パーティ製サービスおよびアプリ (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます。 たとえば、Dropbox で機密ラベルを認識できい場合でも、CAS はその場所にあるラベル付きコンテンツにアクセスして保護することができます。
-
-詳細については、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/cloud-app-security/use-case-information-protection)」を参照してください。
-
-### <a name="important-prerequisites-for-using-cas"></a>CAS を使用する場合の重要な前提条件
-
-機密ラベルで CAS を使用できるようにするには、まず、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/cloud-app-security/use-case-information-protection)」で説明する前提条件を満たしておく必要があります。 このトピックには、次の前提条件についての説明があります。
-
-- テナントに対する [Cloud App Security と Azure Information Protection を有効にする](https://docs.microsoft.com/cloud-app-security/azip-integration)。
-- Cloud App Security に[アプリを接続する](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
-
-## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Microsoft Information Protection SDK を使用して機密ラベルをサード パーティ製アプリおよびサービスに拡張する
+## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>秘密度ラベルと Microsoft Information Protection SDK
 
 機密ラベルはクリア テキストとしてドキュメントのメタデータ内に存在するため、そうしたラベルを含むコンテンツの識別と保護をサード パーティ製アプリとサービスでサポートすることもできます。その他のアプリとサービスでのサポートは常に拡張中です。
 
-[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/) を使用すると、サード パーティ製のアプリやサービスは、ドキュメントの機密ラベルを認識して、ドキュメントに対して保護を適用することができます。  [これらのプラットフォーム](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)上のアプリが SDK でサポートされています。
+[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) を使用すると、サード パーティ製のアプリやサービスは、ドキュメントの機密ラベルを認識して、ドキュメントに対する保護を多くのプラットフォームで適用することができます。 詳細については、[Tech Community ブログでのお知らせ](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)を参照してください。 
 
-この SDK を使用することで、その他の Microsoft 情報保護アプリおよびサービス (Office アプリ、Office 365 サービス、Azure Information Protection スキャナー、Microsoft Cloud App Security などと、その他いくつかのパートナーのソリューション) での操作方法でコンテンツのラベル付けと保護が可能になります。その例として、[Adobe Acrobat での機密ラベルのサポート](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)について調べてください。
+[Microsoft Information Protection に統合されているパートナー ソリューション](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)についての説明もご覧いただけます。
 
-Microsoft Information Protection SDK の詳細については、[Tech Community ブログでのお知らせ](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)を参照してください。また、[Microsoft 情報保護に統合されているパートナー ソリューション](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)についても調べてください。
+## <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
-## <a name="permissions-required-to-create-sensitivity-labels"></a>機密ラベルの作成に必要なアクセス許可
+1. **ラベルを作成する。** コンテンツのさまざまなレベルに対する組織の分類方法に従って、秘密度ラベルを作成して名前を付けます。 ユーザーにとって意味のある、一般的な名前または用語を使用します。 分類方法がまだ確率していない場合は、「個人用」、「パブリック」、「一般」、「社外秘」、および「極秘」などのラベル名を使って使用開始することを検討してください。 サブラベルを使用すると、類似したラベルをカテゴリ別にグループ化できます。 ラベルを作成するときは、ユーザーが適切なラベルを選択できるよう、ツールヒントのテキストを使用します。
 
-機密ラベルを作成するコンプライアンス チームのメンバーは、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者はこれらの管理センターへのアクセス権を所有し、コンプライアンス責任者や他のユーザーにアクセス権を付与できます (テナント管理者が持つすべての権限を付与する必要はありません)。この委任された制限付き管理者アクセスについては、これらのいずれかの管理センターの [**アクセス許可**] ページに移動して、[**コンプライアンス管理者**] 役割グループまたは [**セキュリティ管理者**] 役割グループにユーザーを追加します。
+2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、秘密度の低いコンテンツ (「一般」ラベルなど) には単にヘッダーやフッターを適用し、秘密度のより高いコンテンツ (「社外秘」ラベルなど) には透かし、暗号化、および WIP を適用することができます。
 
-詳細については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。
+3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用できます。一度定義したラベルは、異なるユーザーに割り当てる複数のラベル ポリシーに含めることができます。 たとえば、ラベル ポリシーをごく少数のユーザーに対して適用して、秘密度ラベルを試験運用することができます。 組織全体に対してラベルを展開する準備ができたら、ラベルの新しいラベル ポリシーを作成し、今回はすべてのユーザーを指定することができます。
 
-ラベルとラベル ポリシーを作成して適用するときにのみ、これらのアクセス許可が必要になります。ポリシーを適用する場合に、コンテンツへのアクセスは必要ありません。
+秘密度ラベルを機能させるために、管理者、ユーザー、Office アプリとサービスが実行する内容の基本的なフローです。
+
+![秘密度ラベルのワークフローを示す図](media/Sensitivity-label-flow.png)
+
+これで、[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)準備が整いました。 
+
+Office アプリでの秘密度ラベルの使用に関する詳細については、「[Office アプリでの秘密度ラベル](sensitivity-labels-office-apps.md)」を参照してください。

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022023"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265895"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -51,13 +51,13 @@ ms.locfileid: "41022023"
 
 - Yammer 内のユーザーおよび管理者のアクティビティ
 
-- Microsoft Flow 内のユーザーおよび管理者のアクティビティ
+- Microsoft Power Automate 内のユーザーおよび管理者のアクティビティ
 
 - Microsoft Stream 内のユーザーおよび管理者のアクティビティ
 
 - Microsoft Workplace Analytics でのアナリストと管理者のアクティビティ
 
-- Microsoft PowerApps 内のユーザーおよび管理者のアクティビティ
+- Microsoft Power Apps 内のユーザーおよび管理者のアクティビティ
 
 - Microsoft Forms 内のユーザーおよび管理者のアクティビティ
 
@@ -118,7 +118,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
   |Dynamics 365 CRM|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |電子情報開示|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Flow|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Project|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -305,7 +305,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |[役割管理アクティビティ](#role-administration-activities)|[ディレクトリ管理アクティビティ](#directory-administration-activities)|[電子情報開示アクティビティ](#ediscovery-activities)|
 |[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams アクティビティ](#microsoft-teams-activities)|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Yammer アクティビティ](#yammer-activities)|
-|[Microsoft Flow アクティビティ](#microsoft-flow-activities)|[Microsoft PowerApps アクティビティ](#microsoft-powerapps)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
+|[Microsoft Power Automate のアクティビティ](#microsoft-power-automate-activities)|[Microsoft Power Apps のアクティビティ](#microsoft-power-apps-activities)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
 |[Microsoft Forms アクティビティ](#microsoft-forms-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)|||
 ||||
 
@@ -770,13 +770,13 @@ Workplace Analytics では、Office 365 組織において各グループが共�
 |ファイルの表示|FileVisited|ユーザーがファイルを表示しました。|
 ||||
 
-### <a name="microsoft-flow-activities"></a>Microsoft Flow アクティビティ
+### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate のアクティビティ
 
-監査ログで Microsoft Flow のアクティビティを検索できます。 これらのアクティビティには、フローの作成、編集、および削除と、フローのアクセス許可の変更があります。 フロー アクティビティの監査の詳細については、ブログ「[セキュリティ/コンプライアンス センターで利用可能な Microsoft Flow 監査イベント](https://flow.microsoft.com/blog/security-and-compliance-center)」を参照してください。
+Power Automate (旧称: Microsoft Flow) では、監査ログを検索できます。 これらのアクティビティには、フローの作成、編集、および削除と、フローのアクセス許可の変更があります。 Power Automate アクティビティの監査の詳細については、ブログ「[セキュリティ/コンプライアンス センターで利用可能な Microsoft Flow 監査イベント](https://flow.microsoft.com/blog/security-and-compliance-center)」を参照してください。
 
-### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps アクティビティ
 
-PowerApps では、アプリ関連のアクティビティの監査ログを検索できます。 これらのアクティビティには、アプリの作成、起動、公開が含まれます。 アプリへのアクセス許可の割り当ても監査されます。 PowerApps のすべてのアクティビティの説明については、「[Activity logging for PowerApps のアクティビティのログ](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)」を参照してください。
+Power Apps では、アプリ関連のアクティビティの監査ログを検索できます。 これらのアクティビティには、アプリの作成、起動、公開が含まれます。 アプリへのアクセス許可の割り当ても監査されます。 Power Apps のすべてのアクティビティの説明については、「[Activity logging for Power Apps のアクティビティのログ](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)」を参照してください。
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream アクティビティ
 
