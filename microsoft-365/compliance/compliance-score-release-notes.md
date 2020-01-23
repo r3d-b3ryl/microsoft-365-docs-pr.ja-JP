@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコア (プレビュー) のリリースノートと既知の問題。 M365 コンプライアンスセンターの機能で、リスク評価を簡素化および自動化します。
-ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 370c714c927d09a16272f8ab265c7b0c4e36381a
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021933"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261871"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft コンプライアンススコア (プレビュー) リリースノート
 
@@ -31,9 +31,11 @@ Microsoft コンプライアンススコアの公開プレビューでは、今�
 
 評価用の新しい事前構成済みテンプレートは、コンプライアンススコア (プレビュー) が提供されると、運用環境にリリースされます。 [ここでテンプレートの完全なリスト](compliance-score.md#templates)を確認してください。 最近追加されたテンプレートは次のとおりです。
 
-- ISO 27701:2019
+- ブラジルの一般データ保護法 (LGPD)
 - IRAP/オーストラリア自治体 ISM (プレビュー)
-
+- ISO 27701:2019
+- SOC 1
+- SOC 2
 
 ### <a name="compliance-score-relationship-to-compliance-manager"></a>コンプライアンスマネージャーへのコンプライアンススコアの関係
 

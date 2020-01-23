@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: '管理者の場合: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除します (法的情報保留に設定されている場合も含む)。 これは、Office 365 に誤ってこぼれたデータを削除する効果的な方法です。'
-ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: "管理者向け: でアイテムを削除する \n\nExchange Online メールボックスの er の回復可能なアイテムフォルダー (そのメールボックスが法的情報保持に配置されている場合でも)。 これは、Office 365 に誤ってこぼれたデータを削除する効果的な方法です。"
+ms.openlocfilehash: 6eeb3fecc531d4790330236f8b8857aa4344b371
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686902"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259675"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
@@ -43,19 +43,15 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
 > [!CAUTION]
 > この記事に記載されている手順により、Exchange Online メールボックスからデータが完全に削除 (パージ) されます。 これは、回復可能なアイテムフォルダーから削除されたメッセージを回復できず、法的証拠開示やその他の法令遵守のために利用できないことを意味します。 セキュリティ/コンプライアンスセンターで作成された訴訟ホールド、インプレースホールド、電子情報開示のホールド、または Office 365 アイテム保持ポリシーの一部として保留になっているメールボックスからメッセージを削除する場合は、レコード管理または法務部門に確認してください。保留リストを削除する前。 組織には、保留中のメールボックスとデータ流出インシデントのどちらを優先するかを定義するポリシーがあります。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-- 手順5で [回復可能なアイテム] フォルダーからメッセージを検索して削除するには、Exchange Online の次の両方の管理役割を割り当てられている必要があります。
-    
-  - **メールボックス検索**-この役割を使用すると、組織内のメールボックスを検索できます。 既定では、Exchange 管理者はこの役割を割り当てられていません。 この役割を自分自身に割り当てるには、Exchange Online の "Discovery Management/検出の管理" 役割グループのメンバーとして自分自身を追加します。 
-    
-  - **メールボックスインポートエクスポート**-この役割を使用すると、ユーザーのメールボックスからメッセージを削除することができます。 既定では、この役割はどの役割グループにも割り当てられていません。 ユーザーのメールボックスからメッセージを削除するには、Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加します。 
+- コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。
     
 - この記事で説明する手順は、非アクティブなメールボックスではサポートされていません。 これは、削除した後、非アクティブなメールボックスに保留 (または Office 365 アイテム保持ポリシー) を再適用できないためです。 非アクティブなメールボックスからホールドを削除すると、その保留中のメールボックスは通常の回復可能な削除によって削除され、管理フォルダーアシスタントによる処理後は組織から完全に削除されます。
     
 - 保持ロックでロックされている Office 365 アイテム保持ポリシーに割り当てられているメールボックスに対して、この手順を実行することはできません。 これは、保持ロックによって、Office 365 アイテム保持ポリシーからメールボックスを削除または除外したり、メールボックス上の管理フォルダーアシスタントを無効にしたりすることができないためです。 保持ポリシーのロックの詳細については、「[アイテム保持ポリシーのロック](retention-policies.md#locking-a-retention-policy)」を参照してください。
     
-- メールボックスが保持されていない (または単一アイテムの回復が有効になっていない) 場合は、単に回復可能なアイテムフォルダーからアイテムを削除することができます。 これを行う方法の詳細については、「[メッセージを検索して削除](https://go.microsoft.com/fwlink/?linkid=852453)する」を参照してください。
+- メールボックスが保持されていない (または単一アイテムの回復が有効になっていない) 場合は、単に回復可能なアイテムフォルダーからアイテムを削除することができます。 これを行う方法の詳細については、「 [Office 365 組織の電子メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」を参照してください。
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>手順 1: メールボックスに関する情報を収集する
 
@@ -67,7 +63,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
     
 また、この手順の実行中に所有者 (または他のユーザー) がメールボックスにアクセスできないように、メールボックスクライアントアクセスの設定を取得する必要があります。 最後に、[回復可能なアイテム] フォルダー内のアイテムの現在のサイズと数を取得することができます。 手順5で [回復可能なアイテム] フォルダー内のアイテムを削除した後、この情報を使用してアイテムが実際に削除されたことを確認します。
   
-1. [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)。 Exchange Online で適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用してください。 
+1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=396554)。 Exchange Online で適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用してください。 
     
 2. 単一アイテムの回復と削除済みアイテムの保存期間に関する情報を取得するには、次のコマンドを実行します。
 
@@ -247,88 +243,35 @@ $CaseHold.Name
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>手順 4: メールボックスから遅延保持を削除する
 
-メールボックスから何らかの種類の保留が解除されると、 *DelayHoldApplied* mailbox プロパティの値は**True**に設定されます。 これは、管理フォルダーアシスタントが次回メールボックスを処理し、ホールドが削除されたことを検出したときに発生します。 これは*遅延ホールド*と呼ばれ、データがメールボックスから完全に削除されないようにするために、保留リストの実際の削除が30日間延期されることを意味します。 (遅延保持の目的は、保留が解除された後に削除されるメールボックスアイテムを、管理者が検索または復旧する機会を管理者に提供することです)。 メールボックスに遅延保持が設定されている場合でも、メールボックスが訴訟ホールドの対象であったかのように、無期限に保持されていると見なされます。 30日後、遅延保持が有効期限切れになり、Office 365 は遅延保持を自動的に削除します ( *DelayHoldApplied*プロパティを**False**に設定する)。保留が実際に削除されるようにします。 
+メールボックスから何らかの種類の保留を解除した後、 *DelayHoldApplied*または*DelayReleaseHoldApplied* mailbox プロパティの値は**True**に設定されます。 これは、管理フォルダーアシスタントが次回メールボックスを処理し、ホールドが削除されたことを検出したときに発生します。 これは*遅延ホールド*と呼ばれ、データがメールボックスから完全に削除されないようにするために、保留リストの実際の削除が30日間延期されることを意味します。 (遅延保持の目的は、保留が解除された後に削除されるメールボックスアイテムを、管理者が検索または復旧する機会を管理者に提供することです)。 メールボックスに遅延保持が設定されている場合でも、メールボックスが訴訟ホールドの対象であったかのように、無期限に保持されていると見なされます。 30日後、遅延保持が有効期限切れになり、Office 365 は遅延ホールドを ( *DelayHoldApplied*または*DelayReleaseHoldApplied*プロパティを**False**に設定することによって) 自動的に削除し、保留が実際に削除されるようにします。 遅延ホールドの詳細については、「 [Exchange Online メールボックスに配置された保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)」の「遅延保持のメールボックスを管理する」を参照してください。
 
 手順5でアイテムを削除する前に、メールボックスから遅延ホールドを削除する必要があります。 最初に、Exchange Online PowerShell で次のコマンドを実行して、遅延保持がメールボックスに適用されているかどうかを判断します。
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 ```
 
-*DelayHoldApplied*プロパティの値が**False**に設定されている場合、遅延保持はメールボックスに配置されていません。 [回復可能なアイテム] フォルダー内のアイテムを削除するには、手順5に進みます。
+*DelayHoldApplied*または*DelayReleaseHoldApplied*プロパティの値が**False**に設定されている場合、遅延保持はメールボックスに配置されていません。 [回復可能なアイテム] フォルダー内のアイテムを削除するには、手順5に進みます。
 
-*DelayHoldApplied*プロパティの値が**True**に設定されている場合は、次のコマンドを実行して遅延保持を削除します。
+*DelayHoldApplied*または*DelayReleaseHoldApplied*プロパティの値が**True**に設定されている場合は、次のいずれかのコマンドを実行して遅延保持を削除します。
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-*RemoveDelayHoldApplied*パラメーターを使用するには、Exchange Online で法的情報保留の役割が割り当てられている必要があることに注意してください。
+または
+
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
+
+*RemoveDelayHoldApplied*または*RemoveDelayReleaseHoldApplied*パラメーターを使用するには、Exchange Online で法的情報保留の役割が割り当てられている必要があります。
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>手順 5: 回復可能なアイテムフォルダーのアイテムを削除する
 
-これで、Exchange Online の PowerShell で[検索-メールボックス](https://go.microsoft.com/fwlink/?linkid=852595)コマンドレットを使用して、回復可能なアイテムフォルダーのアイテムを実際に削除する準備ができました。 **検索-メールボックス**コマンドレットを実行すると、次の3つのオプションがあります。 
-  
-- アイテムを削除する前に、対象のメールボックスにコピーしてから、必要に応じて削除する前にアイテムを確認できるようにします。
-    
-- アイテムをターゲットメールボックスにコピーし、同じコマンドで削除します。
-    
-- ターゲットメールボックスにコピーせずにアイテムを削除します。 
-    
-ユーザーのプライマリアーカイブメールボックスの [回復可能なアイテム] フォルダー内のアイテムは、**検索-メールボックス**コマンドレットを実行したときにも削除されることに注意してください。 これを防ぐために、  *DoNotIncludeArchive*  スイッチを含めることができます。 前述したように、メールボックスの自動拡張アーカイブが有効になっている場合、* * 検索-メールボックス * * コマンドレットは補助アーカイブメールボックス内のアイテムを削除しません。 自動拡張アーカイブの詳細については、「 [Office 365 の無制限アーカイブの概要](unlimited-archiving.md)」を参照してください。
-  
-> [!NOTE]
-> ( *SearchQuery*  パラメーターを使用していて) 検索クエリが含まれている場合、 **Search-Mailbox** コマンドレットは、検索結果で最大 10,000 個のアイテムを返します。したがって、検索クエリを含める場合は、 **Search-Mailbox** コマンドを複数回実行して 10,000 を超えるアイテムを削除する必要があるかもしれません。 
-  
-次の例は、これらの各オプションのコマンド構文を示しています。 これらの例で`-SearchQuery size>0`は、パラメーター値を使用して、回復可能なアイテムフォルダー内のすべてのサブフォルダーからすべてのアイテムを削除します。 特定の条件に一致するアイテムのみを削除する必要がある場合は、 *Searchquery*パラメーターを使用して、メッセージの件名、日付の範囲など、他の条件を指定することもできます。 [その他の SearchQuery パラメーターの使用例](#other-examples-of-using-the-searchquery-parameter)を参照してください。 
-  
-### <a name="example-1"></a>例 1
+これで、セキュリティ & コンプライアンスセンターで[new-compliancesearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)および new-compliancesearchaction コマンドレットを使用して、回復可能[な](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)アイテムフォルダーのアイテムを実際に削除する準備ができました。 
 
-この例では、ユーザーの回復可能なアイテムフォルダー内のすべてのアイテムを組織の探索検索メールボックス内のフォルダーにコピーします。 これにより、アイテムを完全に削除する前に確認することができます。
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
-```
-
-前の例では、アイテムを探索検索メールボックスにコピーする必要はありません。 任意のターゲットメールボックスにメッセージをコピーできます。 ただし、機密性の高いメールボックスデータにアクセスできないようにするには、権限のある人物にアクセスが制限されたメールボックスにメッセージをコピーすることをお勧めします。 既定では、既定の探索検索メールボックスへのアクセスは、Exchange Online の "Discovery Management/検出の管理" 役割グループのメンバーに制限されています。 
-  
-### <a name="example-2"></a>例 2
-
-この例では、ユーザーの回復可能なアイテムフォルダー内のすべてのアイテムを組織の探索検索メールボックス内のフォルダーにコピーし、ユーザーの回復可能なアイテムフォルダーからアイテムを削除します。
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
-```
-
-### <a name="example-3"></a>例 3
-
-この例では、ユーザーの回復可能なアイテムフォルダー内のすべてのアイテムをターゲットメールボックスにコピーせずに削除します。 
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
-```
-
-### <a name="other-examples-of-using-the-searchquery-parameter"></a>SearchQuery パラメーターを使用する他の例
-
-次に、 *Searchquery*パラメーターを使用して特定のメッセージを検索する例をいくつか示します。 *Searchquery*パラメーターを使用して特定のアイテムを検索する場合は、検索結果を確認し、必要に応じてクエリを修正してから検索結果を削除することができるように、検索結果をターゲットメールボックスにコピーすることを検討してください。 
-  
-この例では、[件名] フィールドに特定の語句が含まれるメッセージを返します。
-  
-```powershell
-SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
-```
-
-この例では、指定した日付範囲内に送信されたメッセージを返します。
-  
-```powershell
-SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
-```
-
-この例では、指定したユーザーに送信されたメッセージを返します。
-
-```powershell
-SearchQuery 'to:garthf@alpinehouse.com'
-```
+これを行うには、「[メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」を参照してください。
 
 ### <a name="verify-that-items-were-deleted"></a>アイテムが削除されたことを確認する
 

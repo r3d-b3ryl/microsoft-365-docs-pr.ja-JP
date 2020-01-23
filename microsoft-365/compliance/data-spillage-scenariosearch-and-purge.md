@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Office 365 の電子情報開示および検索ツールを使用して、組織内のデータ流出インシデントを管理および応答します。
-ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686904"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259423"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューションシリーズ: Data 流出 scenario-検索と削除
 
@@ -54,7 +54,7 @@ Contoso 社のリード情報セキュリティ責任者であること。 従�
     
 - ケースを作成するには、電子情報開示マネージャーの役割グループのメンバーであるか、またはケース管理役割が割り当てられているカスタム役割グループのメンバーである必要があります。 メンバーではない場合は、Office 365 管理者に[電子情報開示マネージャーの役割グループへの追加](assign-ediscovery-permissions.md)を依頼してください。
     
-- 組織に挿入されたデータを削除するには、Exchange Online PowerShell で[DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps)コマンドを使用する必要があります。 さらに、 *DeleteContent*パラメーターを使用するには、メールボックスのインポートのエクスポート役割が割り当てられている Exchange Online の役割グループのメンバーでもある必要があります。 「 [Manage role groups](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx)」の「役割グループに役割を追加する」セクションを参照してください。
+- コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。
     
 - 手順8で Office 365 監査ログ電子情報開示アクティビティを検索するには、組織に対して監査を有効にする必要があります。 過去90日以内に実行されたアクティビティを検索できます。 監査を有効にして使用する方法の詳細については、手順8の「[データ流出調査プロセスの監査](#auditing-the-data-spillage-investigation-process)」セクションを参照してください。 
     
@@ -84,7 +84,7 @@ Contoso 社のリード情報セキュリティ責任者であること。 従�
   
 メールボックスごとに1000を超えるメールボックスを使用している場合や、確認するメールボックスごとの電子メールメッセージ数が100を超える場合は、日付範囲や送信者/受信者などの追加のキーワードや条件を使用して、最初の検索を複数の検索に分割し、各検索結果を個別に確認することができます。 [手順 7](#step-7-permanently-delete-the-spilled-data)でメッセージを削除するときに使用するすべての検索クエリを書き留めておいてください。
 
-保管担当者またはエンドユーザーに Office 36 E5 ライセンスが割り当てられている場合は、Office 365 Advanced eDiscovery を使用して、最大1万の検索結果を一度に調べることができます。 レビュー対象の電子メールメッセージが1万を超える場合は、検索結果が日付で並べ替えられるように、検索クエリを日付範囲で分割し、各結果を個別に確認できます。 高度な電子情報開示では、プレビューパネルの [**ラベル**] 機能を使用して検索結果にタグを付け、ラベルの付いたタグで検索結果をフィルター処理することができます。 これは、第2のレビュー担当者と共同で作業する場合に役立ちます。 高度な電子情報開示の追加分析ツール (光学式文字認識、電子メールスレッド、予測コーディングなど) を使用すると、数千のメッセージをすばやく処理して確認し、さらにレビューすることができます。 「 [Office 365 Advanced eDiscovery のクイックセットアップ」を](quick-setup-for-advanced-ediscovery.md)参照してください。
+保管担当者またはエンドユーザーに Office 365 E5 ライセンスが割り当てられている場合は、Office 365 Advanced eDiscovery を使用して、最大1万の検索結果を一度に調べることができます。 レビュー対象の電子メールメッセージが1万を超える場合は、検索結果が日付で並べ替えられるように、検索クエリを日付範囲で分割し、各結果を個別に確認できます。 高度な電子情報開示では、プレビューパネルの [**ラベル**] 機能を使用して検索結果にタグを付け、ラベルの付いたタグで検索結果をフィルター処理することができます。 これは、第2のレビュー担当者と共同で作業する場合に役立ちます。 高度な電子情報開示の追加分析ツール (光学式文字認識、電子メールスレッド、予測コーディングなど) を使用すると、数千のメッセージをすばやく処理して確認し、さらにレビューすることができます。 「 [Office 365 Advanced eDiscovery のクイックセットアップ」を](quick-setup-for-advanced-ediscovery.md)参照してください。
 
 こぼれたデータが含まれている電子メールメッセージが見つかったら、メッセージの受信者に対して、外部で共有されているかどうかを確認します。 さらにメッセージを追跡するには、メッセージのトレースログを使用できるように、送信者情報と日付範囲を収集することができます。これについては、[手順 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)で説明します。
 
@@ -136,7 +136,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
     
 2. [フライアウト] ページで、[**結果の表示**] をクリックします。
     
-3. [**個々の結果**] ドロップダウンリストで、[**検索統計**] をクリックします。
+3. **[個々の結果]** ドロップダウン リストで、**[検索の統計情報]** をクリックします。
     
 4. [**種類**] ドロップダウンリストで、[**上の場所**] をクリックします。
     
@@ -168,31 +168,9 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>手順 7: こぼれたデータを完全に削除する
 
-手順6で収集して準備したメールボックスの場所と、手順3で作成して調整した検索クエリを使用して、こぼれたデータが含まれている電子メールメッセージを検索することで、そのデータを完全に削除できます。 前述したように、次の手順を使用してメッセージを削除するには、Exchange Online のメールボックスのインポートの役割が割り当てられている必要があります。
-  
-1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=396554)。
-    
-2. 次のコマンドを実行します。
-    
-    ```powershell
-    Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
-    ```
+手順6で収集して準備したメールボックスの場所と、手順3で作成して調整した検索クエリを使用して、こぼれたデータが含まれている電子メールメッセージを検索することで、そのデータを完全に削除できます。  前述したように、メッセージを削除するには、組織の管理役割グループのメンバーであるか、または検索と削除の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。
 
-3. Id パラメーターの値を置換して、こぼれたデータを含む各メールボックスに対して前のコマンドを再度実行します。例えば：
-
-    ```powershell
-    Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-    ```powershell
-    Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-   ```powershell
-   Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-   ```
-
-前述したように、 [powershell スクリプト](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6)を作成し、メールボックスの一覧に対して実行することで、スクリプトによって各メールボックス内のこぼれたデータが削除されるようにすることもできます。
+こぼれたメッセージを削除するには、「 [Office 365 組織の電子メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」の手順 2 & 3 を参照してください。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>手順 8: 確認し、削除の証明を提供し、監査を行う
 
@@ -214,12 +192,9 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>データ流出調査プロセスの監査
 
-調査中に実行された電子情報開示アクティビティについては、Office 365 監査ログを検索することができます。 また、監査ログを検索して、 **DeleteContent**コマンドを実行して、こぼれたデータを削除したときに作成された監査レコードを取得することもできます。 詳しくは、次のトピックを参照してください。
+調査中に実行された電子情報開示アクティビティについては、Office 365 監査ログを検索することができます。 また、監査ログを検索して、手順7で実行した**new-compliancesearchaction-** 削除コマンドの監査レコードを戻して、こぼれたデータを削除することもできます。 詳細については、以下を参照してください。
 
 - [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 
 - [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
-
-- Exchange Online のコマンドレットの実行に関連する監査レコードを検索する方法については、「 [audit log を検索](search-the-audit-log-in-security-and-compliance.md#audited-activities)する」の「監査対象のアクティビティ-Exchange 管理者監査ログ」セクションを参照してください。
   
-

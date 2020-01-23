@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b14ef9970aa709ad5e23fdae467992497a1331e8
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260153"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269388"
 ---
 # <a name="battery-insights"></a>バッテリインサイト
 このビューでは、Microsoft マネージドデスクトップデバイスの電力、バッテリ、アプリの使用状況の測定基準が提供されます。 このような目的で、アプリが実行中で、フォーカスがある場合、アプリは "使用中" と見なされます。
@@ -43,8 +43,6 @@ ms.locfileid: "41260153"
 - その他
 
 "その他" には、ディスクアクティビティ、モバイルブロードバンド使用状況、内部抵抗に対するエネルギー損失など、さまざまなソースによる電力消費が含まれる場合があります。 
-
-* * Top energy コンシューマに表示されるアプリ
 
 このビューにフィルターを適用して、フォアグラウンドアプリ、バックグラウンドアプリ、またはその両方を表示することができます。右上のメニューを使用します。 フォアグラウンドアプリは、マウスを使用して何かを選択するなど、過去28日以内にユーザーが操作したものです。
 
