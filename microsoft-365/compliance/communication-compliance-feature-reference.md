@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 64514c8c46cbc2ef35746e052e1ffb87831933c2
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111851"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515788"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>コミュニケーションコンプライアンス機能リファレンス (プレビュー)
 
@@ -84,6 +84,16 @@ Microsoft 365 組織の通信コンプライアンスポリシーは、Microsoft
     - [カスタムデータコネクタ](archiving-third-party-data.md)
 
 通信コンプライアンスポリシーにコネクタを割り当てる前に、Microsoft 365 組織用にサードパーティ製のコネクタを構成する必要があります。 通信コンプライアンスポリシーウィザードの [**サードパーティのソース**] セクションには、現在構成されているサードパーティ製コネクタのみが表示されます。
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Office 365 の監督からの移行
+
+Office 365 で監督ポリシーを使用する組織と、Microsoft 365 の通信コンプライアンスポリシーに移行するための計画については、次の重要な点を理解する必要があります。
+
+- 両方のソリューションが組織で並行して使用される場合がありますが、各ソリューションで使用されるポリシーには一意のポリシー名が必要です。 グループとユーザー設定のキーワードディクショナリは、移行期間中にソリューション間で共有できます。
+- Office 365 の監督に保存されたメッセージポリシーの一致は、Microsoft 365 の通信コンプライアンスに移動または共有できません。
+- Office 365 の監督ソリューションは、Microsoft 365 のコミュニケーションコンプライアンスソリューションに完全に置き換えられます。 既存の監督ポリシーと同じ設定を使用して新しい調査と修復の改善を行うことで、コミュニケーションコンプライアンスで新しいポリシーを作成することをお勧めします。 Microsoft 365 の通信コンプライアンスに移行する場合は、内部のコンプライアンス保持ポリシー要件がある場合は、Office 365 の監督からレポートデータをエクスポートするように計画する必要があります。
+
+Office 365 の監督に関する定年に関する情報については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)(詳細) を参照してください。
 
 ## <a name="policy-settings"></a>ポリシー設定
 
@@ -219,6 +229,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 | **件名/タイトル** | メッセージの件名またはチャットのタイトル。 |
 | **Tags** | メッセージに割り当てられているタグ (*疑わしい*、*準拠*、または*非準拠*)。 |
 | **エスカレート先** | メッセージエスカレーションアクションの一部として含まれるユーザー名。 |
+| **器** | メッセージに適用される組み込み分類子とカスタム分類子の名前。 一部の例には、*不快*な言葉、*対象となる嫌がらせ*、*下品*な言葉、*脅威*などが含まれています。
 
 ## <a name="alert-policies"></a>ポリシーを通知する
 

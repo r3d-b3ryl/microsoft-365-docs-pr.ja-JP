@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook のビジネスページをインポートおよびアーカイブするためのネイティブコネクタを Microsoft 365 にセットアップできます。 このデータを Microsoft 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: 1222a82e3a3b8415aa3fc98cd3c06376e491beb0
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: c13f055a9ca96d9b7cc1ec5791c476e6cda8e5f0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269422"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515738"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタを展開して Facebook ビジネスページデータをアーカイブする
 
@@ -60,15 +60,12 @@ ms.locfileid: "41269422"
 
    ![シークレットの値をコピーして保存する](media/FBCimage9.png)
 
-10. **マニフェスト**に移動し、次のスクリーンショットで強調表示されているように、identifieruris (AAD アプリケーション Uri とも呼ばれる) をコピーします。 AAD アプリケーション Uri をテキストファイルまたは他の保存場所にコピーします。 手順6で使用します。
-
-    ![マニフェストに移動し、AAD アプリケーション Uri をコピーします。](media/FBCimage10.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHub から Azure アカウントにコネクタ web サービスを展開する
 
-1. [この GitHub サイト](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)に移動し、[ **Azure への展開] を**クリックします。
+1. [この GitHub サイト](https://github.com/microsoft/m365-sample-connector-csharp-aspnet)に移動し、[ **Azure への展開] を**クリックします。
 
-    ![[Azure への展開] をクリックします。](media/FBCimage11.png)
+    ![[Azure への展開] をクリックします。](media/FBCGithubApp.png)
 
 2. [ **Azure への展開**] をクリックすると、カスタムテンプレートページを使用して azure portal にリダイレクトされます。 [**基本**と**設定**] の詳細を入力し、[**購入**] をクリックします。
 

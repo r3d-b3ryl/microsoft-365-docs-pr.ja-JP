@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89804f5f5f10d06879effd411cec4a7c52037620
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 02cde8915691565614e3d1d04a1fc57ed9a718cb
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859797"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263329"
 ---
 # <a name="financial-supervisory-authority-fsa-denmark"></a>金融監督機関 (FSA) デンマーク
 
@@ -36,7 +37,7 @@ FSA は、欧州銀行監督局 (EBA) と協力して活動しており、「欧
 
 ## <a name="microsoft-and-the-fsa"></a>Microsoft と FSA
 
-ビジネス機能をクラウドにアウトソーシングすることを検討しているデンマークの金融機関の決定を支援するために、Microsoft では、「[デンマークの金融機関向けコンプライアンスのチェックリスト](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362)」を発行しました。 チェックリストを確認して完了すると、金融機関では、適用される規制要件に従い、自信をもって Microsoft 法人向けクラウド サービスを導入することができます。
+ビジネス機能をクラウドにアウトソーシングすることを検討しているデンマークの金融機関の決定を支援するために、Microsoft では、「[デンマークの金融機関向けコンプライアンスのチェックリスト](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf)」を発行しました。 チェックリストを確認して完了すると、金融機関では、適用される規制要件に従い、自信をもって Microsoft 法人向けクラウド サービスを導入することができます。
 
 デンマークの金融機関がビジネス活動をアウトソーシングするときは、欧州銀行監督局 (EBA) の幅広いポリシー フレームワーク内で金融監督機関 (FSA)の要件を満たし、作業する必要があります。 具体的には、これらの要件は、金融サービスとクラウド プロバイダーとの間の契約上の合意が、アウトソースされた活動の適切な制御をどのように保証できるかに重点を置いています。
 
@@ -75,6 +76,6 @@ Microsoft チェックリストでは、デンマークの金融機関による 
 - [Azure 金融サービス クラウド リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf) ファイルをダウンロードできます。

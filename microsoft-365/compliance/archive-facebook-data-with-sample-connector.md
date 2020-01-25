@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Facebook のビジネスページ、Twitter、LinkedIn 会社のページ、インスタント Bloomberg などのデータソースからサードパーティのデータをインポートするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理することができます。
-ms.openlocfilehash: f0e7e7e040debd489e538c9075925db29bfe8f9f
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: dbc38840ccaa98a4e89fc91216765f209b844326
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269438"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515778"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data"></a>Facebook データをアーカイブするためのコネクタの設定
 
@@ -53,8 +53,6 @@ Microsoft 365 コンプライアンスセンターでコネクタを設定およ
 - AAD アプリケーション ID
 
 - AAD アプリケーションシークレット
-
-- AAD アプリケーション Uri
 
 - テナント Id
 

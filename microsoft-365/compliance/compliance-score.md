@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコアを使用すると、組織はリスク評価を簡略化および自動化し、リスクに対処するための推奨される処置を提案します。
-ms.openlocfilehash: 27720412ee8d2b03869b96a1ff9fce68b2fe6eb4
-ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.openlocfilehash: 8a523878cb003e1cc676ea65d69f402ddf056e84
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41261861"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515678"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft コンプライアンススコア (プレビュー)
 
@@ -141,4 +141,4 @@ Microsoft コンプライアンススコアは、Microsoft 365 コンプライ�
 
 ## <a name="next-step-begin-setup"></a>次の手順: セットアップを開始する
 
-サインイン、アクセス許可の設定、[コンプライアンススコアの設定](compliance-score-setup.md)でのコンプライアンススコアダッシュボードの詳細について説明します。
+[コンプライアンススコア](compliance-score-setup.md)の設定で、サインイン、アクセス許可の設定、および更新とダッシュボードの表示を構成する方法について説明します。

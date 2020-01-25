@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Twitter データを Microsoft 365 にインポートするためのネイティブコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理することができます。
-ms.openlocfilehash: cba4509c9752fbfefd8aadfdeac679aa45159711
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 65e2c5e2090364d28863763746b135a56fa58dee
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269378"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515798"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data"></a>Twitter データをアーカイブするためのコネクタの設定
 
@@ -53,27 +53,30 @@ Microsoft 365 コンプライアンスセンターでコネクタを設定およ
 この手順が完了すると (手順に従って)、次の情報がテキストファイルに保存されます。 これらの値は、展開プロセスの後の手順で使用されます。
 
 - AAD アプリケーション ID
+
+- AAD アプリケーションシークレット
+
 - テナント Id
 
 ## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>手順 2: GitHub リポジトリから Azure アカウントに connector web サービスを展開する
 
 次の手順では、twitter API を使用して twitter アカウントに接続し、データを抽出して Microsoft 365 にインポートできるようにするための twitter コネクタアプリのソースコードを展開します。 組織用に展開する Twitter コネクタは、組織の Twitter アカウントから、この手順で作成された Azure ストレージの場所にアイテムをアップロードします。 Microsoft 365 コンプライアンスセンター (手順 5) で Twitter コネクタを作成した後、Office 365 インポートサービスは、Azure ストレージの場所から Twitter データを Microsoft 365 のメールボックスにコピーします。 前述の「[前提条件](#prerequisites-for-setting-up-a-connector-for-twitter)」セクションで説明したように、azure Storage アカウントを作成するには、有効な azure サブスクリプションを用意する必要があります。
 
-組織用に展開する Twitter コネクタは、Twitter から、この手順で作成した Azure ストレージの場所にアイテムをアップロードします。 セキュリティ & コンプライアンスセンター (手順 7) でカスタムコネクタを作成すると、Office 365 インポートサービスによって、Azure ストレージの場所から Office 365 のメールボックスに Twitter データがコピーされます。 前述の「[前提条件](#prerequisites-for-setting-up-a-connector-for-twitter)」セクションで説明したように、azure Storage アカウントを作成するには、有効な azure サブスクリプションを用意する必要があります。
-
-Twitter connector アプリのソースコードを展開するには、
+Twitter connector アプリのソースコードを展開するには、次のようにします。
 
 1. [この GitHub サイト](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)に移動します。
-2. [ **Azure への配置**] ボタンをクリックします。
+
+2. [ **Azure への展開] を**クリックします。
 
 詳細な手順については、「 [connector web service を GitHub から Azure アカウントに展開する](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account)」を参照してください。
 
 手順に従ってこの手順を完了すると、次の情報が提供されます。
 
 - APISecretKey: この手順の完了時にこのシークレットを作成します。 手順5で使用します。
+
 - tenantId: 手順1で作成した、Azure Active Directory で Twitter アプリを作成した後にコピーした Microsoft 365 組織のテナント ID。
 
-この手順を完了したら、app Service の URL (例:) https://twitterconnector.azurewebsites.net)をコピーしてください。 手順3、手順4、および手順5を完了するには、この URL を使用する必要があります。
+この手順を完了したら、必ず app Service の URL (例: `https://twitterconnector.azurewebsites.net`) をコピーしてください。 手順3、手順4、および手順5を完了するには、この URL を使用する必要があります。
 
 ## <a name="step-3-create-developer-app-on-twitter"></a>手順 3: Twitter で開発者用アプリを作成する
 
@@ -84,8 +87,11 @@ Twitter connector アプリのソースコードを展開するには、
 この手順が完了したら (手順に従って)、次の情報をテキストファイルに保存します。 これらの値は、手順4で Twitter connector アプリを構成するために使用されます。
 
 - Twitter API キー
+
 - Twitter API の秘密キー
+
 - Twitter アクセストークン
+
 - Twitter アクセストークンシークレット
 
 ## <a name="step-4-configure-the-twitter-connector-app"></a>手順 4: Twitter connector アプリを構成する
@@ -97,10 +103,15 @@ Twitter connector アプリのソースコードを展開するには、
 この手順が完了すると (手順に従って)、次の情報が提供されます (前の手順を完了した後、テキストファイルにコピーしたことになります)。
 
 - Twitter API キー (手順3で取得)
+
 - Twitter API の秘密キー (手順3で取得)
+
 - Twitter アクセストークン (手順3で取得)
+
 - Twitter アクセストークンシークレット (手順3で取得)
+
 - Azure Active Directory アプリケーション ID (手順1で取得した AAD アプリケーション ID)
+
 - Azure Active Directory アプリケーションシークレット (手順1で取得した AAD アプリケーションシークレット)
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>手順 5: Microsoft 365 コンプライアンスセンターで Twitter connector をセットアップする
@@ -112,4 +123,5 @@ Twitter connector アプリのソースコードを展開するには、
 この手順が完了すると (手順に従って)、次の情報が提供されます (手順を完了したら、テキストファイルにコピーしたことになります)。
 
 - Azure app service の URL (手順2で取得`https://twitterconnector.azurewebsites.net`) (例:)
+
 - APISecretKey (手順2で作成したもの)

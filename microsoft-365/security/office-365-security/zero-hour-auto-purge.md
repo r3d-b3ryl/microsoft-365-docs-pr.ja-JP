@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているスパムまたはマルウェアを含むメッセージを検出し、その悪意のあるコンテンツを無害にする電子メール保護機能です。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: 87d0837b74606a57c7a4aaee3150f70449b09b81
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b2e2fb8fb0786f921b7c5330e92df519b0877d30
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238384"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515898"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - スパムまたはマルウェアからの保護
 
@@ -36,7 +36,7 @@ ZAP は、Exchange Online メールボックスを含む Office 365 サブスク
 
 Office 365 は、毎日スパム対策エンジンとマルウェア署名をリアルタイムで更新します。 ただし、ユーザーが配信された後にコンテンツが weaponized されている場合を含め、さまざまな理由で、ユーザーは引き続き悪意のあるメッセージを受信トレイに配信する可能性があります。 ZAP は、継続的に Office 365 スパムおよびマルウェア署名の更新を監視することによって解決します。 ZAP は、既にユーザーの受信トレイにある配信済みメッセージを見つけて削除することができます。
 
-ZAP アクションは、メールボックスユーザーにとってシームレスです。電子メールメッセージが移動された場合は通知されません。 メッセージを2日より前にすることはできません。
+ZAP アクションは、メールボックスユーザーにとってシームレスです。電子メールメッセージが移動された場合は通知されません。 
 
 許可リスト、[メールフロールール](use-transport-rules-to-configure-bulk-email-filtering.md)(トランスポートルールとも呼ばれます)、およびエンドユーザールールまたは追加フィルターは、ZAP より優先されます。
 
@@ -67,8 +67,8 @@ ZAP は、動的配信スキャンのプロセスに含まれるすべてのメ�
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動したかどうかを確認する方法
 
-ZAP がメッセージを移動したかどうかを確認するには、[脅威保護状態レポート](view-email-security-reports.md#threat-protection-status-report)または[脅威エクスプローラー (およびリアルタイム検出)](threat-explorer.md)のいずれかを使用できます。
-
+ZAP がメッセージを移動したかどうかを確認するには、[脅威保護状態レポート](view-email-security-reports.md#threat-protection-status-report)または[脅威エクスプローラー (およびリアルタイム検出)](threat-explorer.md)のいずれかを使用できます。 システムアクションとして、ZAP が exchange メールボックス監査ログに記録されないことに注意してください。 
+ 
 ## <a name="disable-zap"></a>ZAP を無効にする
 
 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 Exchange Online Protection PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
@@ -114,6 +114,16 @@ ZAP は、スパム対策ポリシーのフィッシングおよびスパムの�
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>メッセージが別のフォルダー (たとえば、受信トレイルールなど) に移動した場合はどうなりますか。
 
 この場合、ZAP は、メッセージが削除されているか、迷惑メールにある場合を除き、この場合でも動作します。
+
+### <a name="does-zap-change-the-email-header"></a>電子メールのヘッダーを ZAP に変更しますか?
+
+ZAP アクションでは、電子メールのヘッダーに対して変更は行われません。
+
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP がメールボックスを保留にする方法
+
+ZAP はメールボックスから保留中のメッセージを削除しないので、メッセージに対して "検疫に移動" アクションを実行することはありません。 ポリシーによって指定されている場合、メッセージは引き続き迷惑メールフォルダーに移動されます。 
+
+[メールボックス保持の詳細については、ここをクリックしてください。](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
 
 ## <a name="related-topics"></a>関連項目
 

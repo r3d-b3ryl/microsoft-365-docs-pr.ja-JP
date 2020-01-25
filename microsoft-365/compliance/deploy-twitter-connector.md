@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Twitter データをインポートおよびアーカイブするためのネイティブコネクタを Microsoft 365 にセットアップできます。 このデータを Microsoft 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: 5a7d7749f99615d9fd6858be05cc63153cfe1d31
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 9bf0be8684eb18fbc022f4eefa798c5c9265b3d7
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269398"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515698"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>コネクタをアーカイブ Twitter データに展開する
 
@@ -56,9 +56,6 @@ ms.locfileid: "41269398"
 
    ![シークレットをコピーして保存する](media/TCimage09.png)
 
-9. **マニフェスト**に移動し、次のスクリーンショットで強調表示されているように、identifieruris (AAD アプリケーション Uri とも呼ばれる) をコピーします。 AAD アプリケーション Uri をテキストファイルまたは他の保存場所にコピーします。 手順6で使用します。
-
-    ![AAD アプリケーション Uri をコピーして保存する](media/TCimage10.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHub から Azure アカウントにコネクタ web サービスを展開する
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 221c773e04bd9b7a4e404d0ec6a5fd5695ca089c
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807386"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515758"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>通信コンプライアンスのアラートを調査して修復する (プレビュー)
 
@@ -58,7 +58,7 @@ ms.locfileid: "40807386"
 
 5. [**フィルター** ] コントロールを選択して、[**フィルター**の詳細] ページを開きます。
 
-6. これらの通知のフィルターを有効にするには、1つ以上のチェックボックスをオンにします。
+6. これらの通知のフィルターを有効にするには、1つ以上のチェックボックスをオンにします。 *日付*、*送信者*、*件名/タイトル*、*分類子*など、さまざまなフィルタから選択できます。
 
 7. 選択したフィルターを既定のフィルターとして保存する場合は、[**既定値として保存**] を選択します。 このフィルターを保存済みのフィルターとして使用する場合は、[**完了**] を選択します。
 

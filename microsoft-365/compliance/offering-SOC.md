@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804260"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259985"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -52,7 +52,8 @@ Microsoft クラウドにおける SOC 1、2、3 の利点の詳細: [SOC 1 お�
 - Dynamics 365 および Dynamics 365 U.S. Government [詳細リスト](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Microsoft マネージド デスクトップ
+- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
 - Office 365、Office 365 U.S. Government、および Office 365 U.S. Government Defense [詳細リスト](https://go.microsoft.com/fwlink/p/?LinkID=2077751)。Yammer は SOC 1 Type 1 報告書を取得しています。
 - Office 365 Germany
 - PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
@@ -66,7 +67,8 @@ Microsoft クラウドにおける SOC 1、2、3 の利点の詳細: [SOC 1 お�
 - Cloud App Security
 - Graph
 - Intune
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Microsoft マネージド デスクトップ
+- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
 - PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI
 - Stream

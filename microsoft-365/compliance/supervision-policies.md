@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 6ccf5cb4dff8b458c91700ebc1e7dc830d16aafc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: aaeb73553d023ac1664ba3bbff10d7edbb4dea54
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112271"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515878"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監視ポリシー
 
@@ -41,6 +41,16 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 今後の監視機能の改善と可用性の詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照してください。
 
 Microsoft 365 で新しい通信コンプライアンスの手順を試してみたいですか。 [Microsoft 365 (プレビュー) の通信コンプライアンス](communication-compliance.md)で利用できる新機能と強化された機能を確認してください。
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Office 365 の監督からの移行
+
+Office 365 で監督ポリシーを使用する組織と、 [Microsoft 365 の通信コンプライアンスポリシー](communication-compliance.md)に移行するための計画については、次の重要な点を理解する必要があります。
+
+- 両方のソリューションが組織で並行して使用される場合がありますが、各ソリューションで使用されるポリシーには一意のポリシー名が必要です。 グループとユーザー設定のキーワードディクショナリは、移行期間中にソリューション間で共有できます。
+- Office 365 の監督に保存されたメッセージポリシーの一致は、Microsoft 365 の通信コンプライアンスに移動または共有できません。
+- Office 365 の監督ソリューションは、Microsoft 365 のコミュニケーションコンプライアンスソリューションに完全に置き換えられます。 既存の監督ポリシーと同じ設定を使用して新しい調査と修復の改善を行うことで、コミュニケーションコンプライアンスで新しいポリシーを作成することをお勧めします。 Microsoft 365 の通信コンプライアンスに移行する場合は、内部のコンプライアンス保持ポリシー要件がある場合は、Office 365 の監督からレポートデータをエクスポートするように計画する必要があります。
+
+Office 365 の監督に関する定年に関する情報については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)(詳細) を参照してください。
 
 ## <a name="scenarios-for-supervision-policies"></a>監督ポリシーのシナリオ
 

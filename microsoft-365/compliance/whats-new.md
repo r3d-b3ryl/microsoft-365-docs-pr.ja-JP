@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 コンプライアンスセンターに新機能を継続的に追加し、学習した問題を修正し、フィードバックに基づいて変更を加えています。 今月の内容を確認してください。
-ms.openlocfilehash: d9ef94323eb054b5f3c815b3fac114a1175d104e
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: 5d9a4dbd1339fdcf44d1169e5dedc4ea5e0a9f09
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962416"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515858"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの新機能
 
@@ -55,6 +55,7 @@ ms.locfileid: "40962416"
 |ソリューションカタログ (プレビュー) <br/>|ソリューションカタログは、コンプライアンスおよびリスク管理ソリューションの発見、学習、迅速な開始を行うためのワンストップショップです。 カタログは3つのコンプライアンスカテゴリに編成されており、それぞれにカテゴリを構成するソリューションに関する詳細が含まれています。 カテゴリには、情報保護 & ガバナンス、Insider リスク管理、検出 & 応答が含まれます。 <br/>|[ソリューションカタログの概要 (プレビュー)](microsoft-365-solution-catalog.md)|
 |通信のコンプライアンス (プレビュー) <br/>|コミュニケーションへのコンプライアンスは、組織内の不適切なメッセージに対する修復アクションを検出、取得、および実行できるようにすることで、コミュニケーションリスクを最小限にするために役立つ、新しい insider リスク管理カテゴリに含まれています。 このソリューションでは、インテリジェントテンプレート、柔軟な修復ワークフロー、実践的な洞察など、いくつかの新しい拡張機能を導入することで、Office 365 の監督ポリシーの機能が拡張されています。 <br/>|[Microsoft 365 の通信コンプライアンス (プレビュー)](communication-compliance.md)|
 |データ分類 (プレビュー) <br/>|新しいデータ分類ページには、組織全体のコンテンツに機密情報とラベル (保持と機密情報) がどのように使用されているかを検出して評価するのに役立つ、強力な洞察とツールが含まれています。 機密情報が含まれている、またはラベルが適用されているコンテンツを確認し、Microsoft 365 の場所にまたがるラベルアクティビティを調査し、カスタムの機密情報の種類を作成するなど、さまざまな内容を確認します。<br/>|[データ分類の概要 (プレビュー)](data-classification-overview.md)|
+|Trainable 分類子 (プレビュー) <br/>|この強力な新しいツールは、機械学習エンジンを使用して、規制文書や従業員契約書など、組織内のコンテンツのカテゴリを特定するのに役立ちます。 作成した分類子は、いくつかのコンプライアンスソリューションで使用して、関連するコンテンツを検出し、それを分類し、保護し、その他の情報を保持することができます。<br/>|[トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)|
 
 #### <a name="updated-compliance-solutions"></a>コンプライアンスソリューションの更新
 
@@ -82,7 +83,7 @@ ms.locfileid: "40962416"
 |ラベルアクティビティエクスプローラー|情報ガバナンス > ラベルアクティビティエクスプローラー <br/> https://protection.office.com/labelexplorer |データ分類 > アクティビティエクスプローラータブ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[ラベル付きコンテンツのアクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)|
 |保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | 「[保持ラベルの概要](labels.md)」を参照してください。|
 |保持ポリシー|情報ガバナンス > の保持 <br/> https://protection.office.com/retention |情報ガバナンス > [保持] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[アイテム保持ポリシーの概要](retention-policies.md)|
-|機密情報の種類|機密情報の種類 > 分類 <br/> https://protection.office.com/sensitivetypes |データ分類 > 機密情報の種類] タブ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)|
+|機密情報の種類|機密情報の種類 > 分類 <br/> https://protection.office.com/sensitivetypes |データ分類 > 機密情報の種類] タブ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)|
 |機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[機密ラベルの概要](sensitivity-labels.md) |
 |サービス アシュアランス|サービス アシュアランス <br/> https://protection.office.com/serviceassurance/dashboard |現時点では、サービス保証のリソースには、Office 365 セキュリティ & コンプライアンスセンターのみがアクセスできます。 |[セキュリティ & コンプライアンスセンターのサービスアシュアランス](service-assurance.md)|
 |監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通信コンプライアンス <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 の通信コンプライアンス (プレビュー)](communication-compliance.md) |
