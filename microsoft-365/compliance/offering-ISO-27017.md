@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f58322fe915c811ba2613bef98116f910abc03d1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 758e7d0f3e82afa6cfd4b90501bd84080d8f6303
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859687"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260015"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 情報セキュリティ コントロールの実施基準
 
@@ -48,7 +49,8 @@ Microsoft クラウドでの ISO/IEC 27017 の利点について確認してく�
 - Genomics
 - Graph
 - Intune
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Microsoft マネージド デスクトップ
+- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
 - Office 365、Office 365 米国政府、Office 365 米国防総省、Office 365 Germany
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
@@ -60,7 +62,7 @@ Microsoft クラウド サービスは、年 1 回、ISO/IEC 27001:2013 の認�
 
 - [Azure ISO 27017 証明書](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Azure ISO 27017 評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 適用宣言書](https://aka.ms/azureiso27017StatementofApplicability)
+- [Azure ISO 27017 適用宣言書](https://aka.ms/AzureISO27017StatementofApplicability)
 - [Office 365 ISO 27001、27018、27017 監査評価レポート](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -87,6 +89,6 @@ Azure、Intune、Power BI の [ISO/IEC 27017:2015 認定証](https://aka.ms/azur
 - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf) ファイルをダウンロードできます。

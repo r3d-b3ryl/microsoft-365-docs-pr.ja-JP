@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111871"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558044"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Microsoft 365 Business から Microsoft 365 E3 への移行
 
@@ -77,7 +77,7 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 | エンタープライズ CAL スイート (Exchange、SharePoint、Skype、Windows、Microsoft エンドポイント構成マネージャー、Windows Rights Management)| |       ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | **コンプライアンス**        | | | 
 | 無制限のメールのアーカイブ | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| コンプライアンス マネージャー    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| コンプライアンススコア/コンプライアンスマネージャー   | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | 電子情報開示    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | インプレース保持と訴訟ホールド | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | メッセージング レコード管理 (MRM) 保持タグとアイテム保持ポリシー  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 

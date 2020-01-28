@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Office 365 の電子情報開示および検索ツールを使用して、組織内のデータ流出インシデントを管理および応答します。
-ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259423"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558364"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューションシリーズ: Data 流出 scenario-検索と削除
 
@@ -124,7 +124,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
     
 ## <a name="step-6-prepare-the-mailboxes"></a>手順 6: メールボックスを準備する
 
-削除が必要なメッセージのみが検索結果に含まれることを確認して検証した後、 **DeleteContent**コマンドを実行するときに、手順7で使用する影響を受けるメールボックスの電子メールアドレスの一覧を収集する必要があります。 また、永続的なデータを含むメールボックスで単一アイテムの回復が有効になっているかどうか、またはこれらのメールボックスが保留中であるかどうかによって、メールボックスを完全に削除する前にメールボックスを準備する必要があります。
+削除する必要のあるメッセージのみが検索結果に含まれていることを確認して検証した後は、影響を受けたメールボックスの電子メールアドレスの一覧を収集して、手順7で使用して、こぼれたデータを削除する必要があります。 また、永続的なデータを含むメールボックスで単一アイテムの回復が有効になっているかどうか、またはこれらのメールボックスが保留中であるかどうかによって、メールボックスを完全に削除する前にメールボックスを準備する必要があります。
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>データがこぼれているメールボックスのアドレスの一覧を取得する
 
@@ -170,7 +170,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
 
 手順6で収集して準備したメールボックスの場所と、手順3で作成して調整した検索クエリを使用して、こぼれたデータが含まれている電子メールメッセージを検索することで、そのデータを完全に削除できます。  前述したように、メッセージを削除するには、組織の管理役割グループのメンバーであるか、または検索と削除の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。
 
-こぼれたメッセージを削除するには、「 [Office 365 組織の電子メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」の手順 2 & 3 を参照してください。
+こぼれたメッセージを削除するには、「[メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」のステップ 2 & 3 を参照してください。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>手順 8: 確認し、削除の証明を提供し、監査を行う
 

@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbe175d16a7b588e8c0cb3e7b5457459c314bdc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 89296e2fb7b94bd74ee8ff617d818705fb844863
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804040"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558514"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -33,12 +33,12 @@ Cybersecurity は、[重要なインフラストラクチャを改善するた�
 
 NIST Cybersecurity Framework (CSF) は、Cybersecurity 関連のリスクを管理するための標準、ガイドライン、ベストプラクティスで構成される自発的なフレームワークです。 Microsoft クラウドサービスは、独立したサードパーティの FedRAMP の適度な監査と高基準の監査を行い、FedRAMP 標準に従って認定されています。 また、HITRUST によって実行された検証済み評価により、セキュリティおよびプライバシーに関する標準の開発および認定組織のため、Office 365 は、NIST CSF で指定された目標に対して認定されています。
 
-コンプライアンスマネージャーおよび Azure セキュリティ/コンプライアンス青写真を使用して、NIST Cybersecurity Framework の展開を促進する方法について説明します。
+コンプライアンススコアと Azure セキュリティおよびコンプライアンス青写真を使用して、NIST Cybersecurity Framework の展開を促進する方法について説明します。
 
 - [Azure セキュリティおよびコンプライアンスブループリントをダウンロードする-NIST CSF リスク評価チェックリスト](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
-- [コンプライアンスマネージャーでの、Office 365 の NIST CSF 評価の詳細については、こちらを参照してください。](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+- [コンプライアンススコアの NIST CSF 評価 Office 365 の詳細情報](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象 Microsoft クラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365 for Government](https://aka.ms/d365-compliance-list)
@@ -56,11 +56,11 @@ NIST Cybersecurity Framework (CSF) 標準は、クラウドでは困難になる
 
 - [Azure NIST CSF ブループリントの使用を開始する](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
-## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-manager"></a>コンプライアンスマネージャーで NIST CSF を使用して Office 365 でリスク評価を実行する
+## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>コンプライアンススコアで NIST CSF を使用して Office 365 でリスク評価を実行する
 
-Cybersecurity は、デジタル変換の時代に、重要な管理上の問題が残っています。 Office 365 テナントのセキュリティコントロールを実装して検証するために、Microsoft は、コンプライアンスマネージャーの NIST CSF 評価にお客様が推奨するアクションを提供しています。
+Cybersecurity は、デジタル変換の時代に、重要な管理上の問題が残っています。 Office 365 テナントのセキュリティ制御を実装および検証するために、Microsoft は、コンプライアンススコアの NIST CSF 評価にお客様が推奨するアクションを提供しています。
 
-- [コンプライアンスマネージャーの使用を開始する](https://aka.ms/compliancemanager)
+- [コンプライアンススコアの使用を開始する](compliance-score.md)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -105,6 +105,6 @@ Microsoft は、その他のクラウドサービスプロバイダーと比較�
 - [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf) ファイルをダウンロードできます。

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Office 365 メールボックスに配置できるさまざまな種類の保留リストを識別する方法について説明します。 これらの種類には、訴訟ホールド、電子情報開示の保持、および Office 365 アイテム保持ポリシーが含まれます。 ユーザーが組織全体のアイテム保持ポリシーから除外されているかどうかを確認することもできます。
-ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: dcdb79aa1c1cae83602a42e6c99136a2f85226a1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634014"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558014"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -121,7 +121,7 @@ Office 365 アイテム保持ポリシーとして InPlaceHolds プロパティ�
 
 メールボックスに適用されている保留リストの GUID を取得した後、次の手順として、その GUID を使用して保留リストを識別します。 次のセクションでは、ホールド GUID を使用して、保留 (およびその他の情報) の名前を識別する方法を示します。
 
-### <a name="ediscovery-holds"></a>電子情報開示の保持
+### <a name="ediscovery-holds"></a>電子情報開示の保留
 
 セキュリティ & コンプライアンスセンターの PowerShell で次のコマンドを実行して、メールボックスに適用されている電子情報開示ホールドを識別します。 手順1で特定した電子情報開示の保留リストの GUID (UniH プレフィックスを含まない) を使用します。 最初のコマンドは、保留リストに関する情報を含む変数を作成します。 この変数は、他のコマンドで使用されます。 2番目のコマンドは、保留が関連付けられている電子情報開示ケースの名前を表示します。 3番目のコマンドは、保留リストの名前と、保留が適用されるメールボックスのリストを表示します。
 
@@ -148,6 +148,9 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
 
 インプレース保持の GUID が`cld`プレフィックスで始まる場合は、前のコマンドを実行するときに必ずプレフィックスを指定してください。
+
+> [!IMPORTANT]
+> メールボックスのコンテンツを保持するためのさまざまな方法に投資し続けるため、Exchange 管理センター (EAC) でのインプレースホールドの廃止を発表しています。 2020年4月1日以降、Exchange Online に新しいインプレースホールドを作成することはできません。 ただし、EAC でインプレースホールドを管理することも、Exchange Online PowerShell で**get-mailboxsearch**コマンドレットを使用することもできます。 ただし、2020年7月1日以降、インプレースホールドを管理することはできません。 これらのアドインは、EAC または**get-mailboxsearch**コマンドレットを使用して削除します。 インプレースホールドが廃止された場合の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
 
 ### <a name="office-365-retention-policies"></a>Office 365 のアイテム保持ポリシー
 

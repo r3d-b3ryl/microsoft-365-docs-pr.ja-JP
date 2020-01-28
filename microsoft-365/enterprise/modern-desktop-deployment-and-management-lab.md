@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 435b8177fc97f9cd07ff78704605428e594e0dd8
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112511"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558584"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -56,7 +56,7 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
 
 ## <a name="step-by-step-labs"></a>**ステップ バイ ステップ ラボ**
 
-詳細なラボのガイドにより、次のような複数の展開および管理シナリオを体験できます。
+詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager (バージョン 1910) 用にラボは更新されました。  
 
 ### <a name="device-and-app-readiness"></a>**デバイスとアプリの準備**
 
@@ -116,9 +116,12 @@ Windows 10 と Office 365 ProPlus での「[デスクトップ展開](https://ww
   - Configuration Manager を使用した Office 365 ProPlus の更新管理
   - Microsoft Intune を使用した、Windows 10 に適用されるモバイル デバイスの管理
 
+### <a name="new-windows-virtual-desktop"></a>**新登場! Windows Virtual Desktop**
+  - Windows Virtual Desktop: 準備、展開、最適化 
+
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Windows と Office 展開ラボ キットのダウンロード**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 2 月 15 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
+*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 4 月 18 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
 
 ## <a name="additional-guidance"></a>**追加のガイダンス**
 

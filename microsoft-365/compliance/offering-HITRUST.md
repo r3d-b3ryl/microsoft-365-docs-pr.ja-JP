@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9b0448a3ed5cf36a909ebb14e0aadf2b8ac96610
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6085446677e592425d5453aa350541590de1b9d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804800"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558534"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 
@@ -37,13 +37,13 @@ Azure セキュリティおよびコンプライアンスブループリント�
 
 [Microsoft Azure HITRUST のお客様責任マトリックス (CRM) 青写真 v2.0 d をダウンロードする](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となるマイクロソフトのクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
+## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
 
 Azure と Office 365 の HITRUST CSF 証明書は、2年間有効です。
 
@@ -58,9 +58,9 @@ Azure のセキュリティとコンプライアンスに関するブループ�
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Office 365 を使用する際に HIPAA/HITRUST 準拠を促進する
 
-コンプライアンスマネージャーを使用して安全かつ準拠した方法で健康情報を管理するには、Office 365 を使用します。これにより、HIPAA のような健康規制、NIST CSF、NIST 800-53 などのセキュリティ統制フレームワークなどのリスク評価を行うことができます。 詳細な手順に従って、医療機関のコンプライアンスを実現するのに役立つデータ保護制御を実装および維持する方法を理解しておくことができます。
+Office 365 を使用して、コンプライアンススコアを使用してセキュリティで保護された方法で健康情報を管理します。これにより、HIPAA のような健康規制、NIST CSF、NIST 800-53 などのセキュリティ統制フレームワークなどのリスク評価を行うことができます。 詳細な手順に従って、医療機関のコンプライアンスを実現するのに役立つデータ保護制御を実装および維持する方法を理解しておくことができます。
 
-[コンプライアンスマネージャーの使用を開始する](https://go.microsoft.com/fwlink/p/?linkid=862650)
+[コンプライアンススコアの使用を開始する](compliance-score.md)
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>HITRUST 共有責任プログラムで Microsoft と共同作業する
 
@@ -95,7 +95,7 @@ Office 365 のような SaaS にデータを格納すると、Microsoft と組�
 
 **Office 365 を使用するときには、Microsoft が適切なコントロールを実装するためのガイダンスを提供していますか?**
 
-はい。コンプライアンスマネージャー、クラウドサービスを使用する場合に組織が複雑な法令遵守義務を満たすことができる、Microsoft のクラウドソリューションで、お勧めのお客様のアクションを見つけることができます。 具体的には、HITRUST CSF の場合は、コンプライアンスマネージャーで NIST 800-53 および NIST CSF 評価を使用してリスク評価を実行することをお勧めします。 評価では、データ保護コントロールを実装するために使用できる、手順を追ったガイダンスと Microsoft ソリューションについて説明します。 コンプライアンスマネージャーの詳細については、この[ホワイトペーパー](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us)を参照してください。
+はい。クラウドサービスを使用する場合は、組織が複雑な法令遵守義務を満たすことができるようにする、コンプライアンススコア、Microsoft のクラウドソリューションによるお勧めのお客様のアクションを見つけることができます。 具体的には、HITRUST CSF の場合は、NIST 800-53 と、コンプライアンススコアの NIST CSF 評価を使用してリスク評価を実行することをお勧めします。 評価では、データ保護コントロールを実装するために使用できる、手順を追ったガイダンスと Microsoft ソリューションについて説明します。 コンプライアンススコアの詳細については、「 [Microsoft コンプライアンススコア](compliance-score.md)」を参照してください。
 
 **Microsoft と連携するにはどうすればよいですか?**
 
@@ -109,6 +109,6 @@ HITRUST MyCSF®ツールにログインして、Microsoft Azure でホストさ�
 - [HITRUST 共有責任プログラムの詳細については、「」を参照してください。](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf) ファイルをダウンロードできます。

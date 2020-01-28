@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804190"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558604"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>カリフォルニア州消費者プライバシー法 (CCPA)
 
@@ -37,7 +37,7 @@ CCPA は 2020 年 1 月 1 日から有効になります。 ただし、カリ�
 
 OST で設定されているように、Microsoft は、オンラインサービスのプロビジョニングに適用できるすべての法律および規制に準拠しています。これには、CCPA が含まれます。  
 
-## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象 Microsoft クラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure Dev Ops
@@ -51,7 +51,7 @@ OST で設定されているように、Microsoft は、オンラインサービ
 
 CCPA の準備をするために必要ないくつかの手順を以下に示します。
 
-- CCPA プライバシー プログラムの一環として、コンプライアンス マネージャーの GDPR の評価を利用します。
+- CCPA プライバシープログラムの一環として、[コンプライアンススコア](compliance-score.md)の GDPR 評価の活用を開始します。
 - データ主体要求ツールを使用して、データ主体のアクセス要求 (DSARs) に効率よく応答するためのプロセスを確立します。
 - ラベルとポリシーを設定し、Microsoft Information Protection を使用して機密データを検索、分類、保護します。
 - メールの暗号化機能を使用して、機密情報をさらに管理します。

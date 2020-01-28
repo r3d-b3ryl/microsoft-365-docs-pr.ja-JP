@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67cb8cd6a7320f0b2ff79566be4cf6c6fa3f67a6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "39233740"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260115"
 ---
 # <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>コンプライアンス認証: ISO/IEC 27001:2013 情報セキュリティ管理基準
 
@@ -43,7 +44,8 @@ Microsoft Cloud における ISO-Iec-27001 のメリットを確認してくだ�
 - Graph
 - Health Bot
 - Intune
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Microsoft マネージド デスクトップ
+- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
 - OMS Service Map
@@ -60,7 +62,7 @@ Microsoft Cloud における ISO-Iec-27001 のメリットを確認してくだ�
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS Service Map、PowerApps、Power BI、Stream、Microsoft Datacenter - ISO 27001 証明書](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft マネージド デスクトップ、OMS Service Map、PowerApps、Power BI、Stream、Microsoft データセンター - ISO 27001 証明書](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### <a name="office-365"></a>Office 365
 
@@ -88,7 +90,7 @@ Microsoft Cloud における ISO-Iec-27001 のメリットを確認してくだ�
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS Service Map、PowerApps、Power BI、Stream、Microsoft Datacenter - ISO 27001 および 27018 監査評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft マネージド デスクトップ、OMS Service Map、PowerApps、Power BI、Stream、Microsoft データセンター - ISO 27001 および 27018 監査評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2078010)
 - [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS Service Map、PowerApps、Power BI、Stream、Microsoft Datacenter - ISO 27001 および 27018 適用宣言書 (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ### <a name="office-365"></a>Office 365
@@ -156,4 +158,4 @@ ISO/IEC 27001 を適用することは戦略的なコミットです。 まず�
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

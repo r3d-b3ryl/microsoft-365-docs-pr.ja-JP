@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: はじめに
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -347,8 +347,6 @@
           href: csv-file-for-an-id-list-content-search.md
         - name: コンテンツ検索を使用してサード パーティのデータを検索する
           href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: 電子情報開示ワークフローでコンテンツ検索を使用する
-          href: use-content-search-in-ediscovery.md
         - name: コンテンツ検索クエリでエラーを確認する
           href: check-your-content-search-query-for-errors.md
         - name: 失敗したコンテンツ検索をもう一度行う
@@ -1013,7 +1011,7 @@
             - name: EAR (米国輸出管理者登録)
               href: offering-ear.md
             - name: ENISA IAF (EU)
-              href: 'https://aka.ms/ENISA'
+              href: offering-enisa.md
             - name: EU モデル条項
               href: offering-eu-model-clauses.md
             - name: EBA (EU)
@@ -1107,7 +1105,7 @@
             - name: ENS (スペイン)
               href: offering-ens-spain.md
             - name: ENISA IAF (EU)
-              href: 'https://aka.ms/ENISA'
+              href: offering-enisa.md
             - name: EU モデル条項
               href: offering-eu-model-clauses.md
             - name: EU 米国プライバシー シールド

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 705b59a5ae499a580086304abe91a9318bb36fcb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4ae0df3ddc8eec28cc6f29bddd0a46a09d33b0dc
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859707"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260045"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 IT サービス マネジメント
 
@@ -37,6 +38,7 @@ ISO 20000-1:2011 認証を取得することは、Microsoft Azure にとって�
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Intune
+- Microsoft マネージド デスクトップ
 - Microsoft PowerApps
 - Microsoft Flow
 - Microsoft Graph
@@ -46,7 +48,7 @@ ISO 20000-1:2011 認証を取得することは、Microsoft Azure にとって�
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-Azure、Intune、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics、Microsoft Datacenter の 2017 ISO 20000-1 に関するドキュメント
+Azure、Intune、Microsoft マネージド デスクトップ、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics、Microsoft データセンターの 2017 ISO 20000-1 ドキュメント
 
 - [評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [証明書](https://go.microsoft.com/fwlink/p/?linkid=2077815)
@@ -76,6 +78,6 @@ Service Trust Portal では、中立的な監査によるコンプライアン�
 - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf) ファイルをダウンロードできます。

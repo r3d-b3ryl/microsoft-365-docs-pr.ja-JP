@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: メールボックスを非アクティブなメールボックスに変換することにより、元従業員のメールボックスの内容を保持する方法について説明します。 メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 アカウントを削除することによって、これを行うことができます。
-ms.openlocfilehash: cd0d69b77dada9f249e3c3e0b68f556ad1120030
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 8522242e499d1b612b3e0f68055919bc75c8b4aa
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38686846"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557974"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 の非アクティブなメールボックスの概要
 
@@ -33,9 +33,8 @@ ms.locfileid: "38686846"
   
 ただし、組織で元従業員のメールボックスのコンテンツを保持する必要がある場合は、メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーをセキュリティ & コンプライアンスセンターのメールボックスに適用してから、対応する Office 365 アカウントを削除することにより、メールボックスを非アクティブなメールボックスに変更できます。 The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. ただし、30日が経過すると、非アクティブなメールボックスは、保持ポリシーまたはアイテム保持ポリシーが削除されるまで、Office 365 に保持されます。 
   
-> [!NOTE]
-> 2017 年 7 月 1 日に終了する予定だった、メールボックスを非アクティブにするために新しいインプレース ホールドを作成できる期間を延長しました。しかし、今年の終わりごろまたは来年の初めごろには、新しいインプレース ホールドを Exchange Online 内で作成することはできなくなります。その時点で、非アクティブのメールボックスを作成するために使用できるのは、訴訟ホールドと Office 365 アイテム保持ポリシーだけになります。ただし、インプレース ホールドにある既存の非アクティブなメールボックスは引き続きサポートされます。また、引き続き非アクティブなメールボックスのインプレース ホールドを管理することができます。これには、インプレース ホールドの期間を変更すること、およびそのインプレース ホールドを削除することによって非アクティブなメールボックスを完全に削除することが含まれます。 
- 
+> [!IMPORTANT]
+> メールボックスのコンテンツを保持するためのさまざまな方法に投資し続けるので、Exchange 管理センターでのインプレースホールドの廃止を発表しています。 つまり、訴訟ホールドと Office 365 アイテム保持ポリシーを使用して、非アクティブなメールボックスを作成する必要があります。 2020年4月1日以降、Exchange Online に新しいインプレースホールドを作成することはできません。 ただし、非アクティブなメールボックスに設定されたインプレースホールドの保持期間を変更することはできます。 ただし、2020年7月1日以降、保持期間を変更することはできません。 インプレースホールドを削除しても、非アクティブなメールボックスを削除することはできません。 インプレース保持されている既存の非アクティブなメールボックスは、保留が解除されるまで保持されます。 インプレースホールドが廃止された場合の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
   
 ## <a name="inactive-mailboxes-and-office-365-retention-policies"></a>非アクティブなメールボックスと Office 365 アイテム保持ポリシー
 
