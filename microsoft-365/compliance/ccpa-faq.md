@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 567c104fcb960cce3bd09cd636fed8814cdbeb4c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 9323cce022af6c624b76b56a27fe35ff55c3519f
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39638069"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558424"
 ---
 # <a name="california-consumer-privacy-act-ccpa-frequently-asked-questions"></a>カリフォルニア州消費者プライバシー法 (CCPA) についてよく寄せられる質問
 
@@ -98,7 +98,7 @@ Microsoft は GDPR 関連のデータ主体要求 (DSR) をグローバルに実
 
 **CCPA 準拠への準備を開始するのに役立つツールはありますか?**
 
-- CCPA プライバシー プログラムの一環として、コンプライアンス マネージャーの GDPR の評価を利用します。
+- CCPA プライバシー プログラムの一環として、コンプライアンス スコアの GDPR の評価を利用します。
 - 消費者からの要求に効果的に対応するためのプロセスを確立します。
 - ラベルとポリシーを設定し、Microsoft Information Protection を使用して機密データを検索、分類、保護します。
 - メールの暗号化機能を使用して、機密情報をさらに管理します。

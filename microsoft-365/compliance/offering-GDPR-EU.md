@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959605"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558524"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>EU 一般データ保護規則 (GDPR)
 
@@ -37,7 +37,7 @@ ms.locfileid: "40959605"
 
 ### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a>Microsoft 365 で GDPR に備える Abrona
 
-オランダの医療機関である Abrona が、コンプライアンス マネージャーや Azure Information Protection などの Microsoft テクノロジーを活用してどのように GDPR に備えているかを紹介します。
+オランダの医療機関である Abrona が、コンプライアンス スコアや Azure Information Protection などの Microsoft テクノロジーを活用してどのように GDPR に備えているかを紹介します。
 
 [今すぐ見る](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -64,9 +64,9 @@ Microsoft のお客様である INAIL が GDPR に備えるために機密デー
 
 [詳細情報](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a>コンプライアンス マネージャー
+### <a name="compliance-score"></a>コンプライアンス スコア
 
-[コンプライアンス マネージャー](https://go.microsoft.com/fwlink/p/?linkid=2048390)を使用すると、継続的なリスク評価の実施、実行可能な分析情報の取得、コンプライアンス プロセスの簡素化を行うことができます。
+[コンプライアンス スコア](compliance-score.md)を使用すると、継続的なリスク評価の実施、実行可能な分析情報の取得、コンプライアンス プロセスの簡素化を行うことができます。
 
 ### <a name="microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センター
 

@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Yammer グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
+ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967520"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558404"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 
@@ -35,8 +35,10 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
 - Skype for Business の会話
     
 - Microsoft Teams 
-    
+
 - Office 365 グループ
+
+- Yammer グループ 
     
 コンテンツ検索を実行すると、コンテンツの場所の数と予想される検索結果の数が検索の統計情報に表示されます。検索クエリと一致するアイテムが最も多いコンテンツの場所など、統計情報をすばやく表示することもできます。検索を実行した後、結果をプレビューしたり、ローカルコンピューターにエクスポートしたりすることができます。
 
@@ -81,9 +83,9 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
        - **場所**: 検索するコンテンツの場所を選択します。
     
-      - [**すべての場所**]: 組織内のすべてのコンテンツの場所を検索するには、このオプションを選択します。 これには、すべての Exchange メールボックス (非アクティブなすべてのメールボックス、すべての Office 365 グループのメールボックス、すべての Microsoft Teams のメールボックスなど)、すべての Skype for Business の会話、すべての SharePoint および OneDrive for Business サイト (すべての Office 365 グループと Microsoft Teams のサイトなど) 内の電子メール、およびすべての Exchange パブリック フォルダー内のアイテムが含まれます。
+      - [**すべての場所**]: 組織内のすべてのコンテンツの場所を検索するには、このオプションを選択します。 これには、すべての Exchange メールボックス (非アクティブなすべてのメールボックス、およびすべての Microsoft Teams、Yammer グループ、Office 365 グループのメールボックスを含む) 内の電子メール、すべての Skype for Business の会話、すべての SharePoint および OneDrive for Business サイト (すべての Microsoft Teams、Yammer グループ、および Office 365 グループのサイトを含む)、およびすべての Exchange パブリック フォルダー内のアイテムが含まれます。
     
-      - [**特定の場所**]: 特定のコンテンツの場所を検索するには、このオプションを使用します。 特定の Office 365 サービスのすべてのコンテンツの場所を検索できます (すべての Exchange メールボックスを検索したり、すべての SharePoint サイトを検索したりするなど)。または、表示されている Office 365 サービスの特定の場所を検索することができます。 
+      - [**特定の場所**]: 特定のコンテンツの場所を検索するには、このオプションを使用します。 特定の Office 365 サービスのすべてのコンテンツの場所を検索できます (すべての Exchange メールボックスを検索したり、すべての SharePoint サイトを検索したりするなど)。または、表示されている Office 365 サービスの特定の場所にあるコンテンツを検索することができます。 
     
         ![検索するコンテンツの場所を選択するためのユーザー インターフェイス](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -91,8 +93,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
        > [!NOTE]
        > すべてのメールボックスを検索する場合も、特定のメールボックスだけを検索する場合も、コンテンツ検索の結果をエクスポートする際に、ユーザー メールボックスに保存されている他の Office 365 アプリケーションのデータが含まれます。 このデータは、予想される検索結果には含まれず、プレビューも行えません。 このデータは、検索結果をエクスポートおよびダウンロードする際には含まれます。 詳細については、「[Content stored in Exchange Online mailboxes (Exchange Online のメールボックスに格納されているコンテンツ)](what-is-stored-in-exo-mailbox.md)」を参照してください。
-
-    
+   
 6. 検索クエリを設定したら、[**保存と実行**] をクリックします。
     
 7. [**検索の保存**] ページで、検索の名前と、検索を識別するための説明 (省略可能) を入力します。検索の名前は、組織内で一意である必要があります。 
@@ -176,6 +177,8 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
 [OneDrive アカウントの検索](#searching-onedrive-accounts)
   
 [Microsoft Teams と Office 365 グループの検索](#searching-microsoft-teams-and-office-365-groups)
+
+[Yammer グループの検索](#searching-yammer-groups)
   
 [非アクティブなメールボックスの検索](#searching-inactive-mailboxes)
   
@@ -308,6 +311,25 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
 
 条件は **AND** 演算子によってキーワード クエリに論理的に関連付けられます。 つまり、アイテムは検索結果として返されるためにキーワード クエリと検索条件の両方に一致する必要があります。 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)」の "条件を使用するためのガイドライン" セクションを参照してください。
   
+### <a name="searching-yammer-groups"></a>Yammer グループの検索
+
+**ItemClass** メール プロパティまたは **[タイプ]** 検索条件を使用して、Yammer グループの会話アイテムを具体的に検索できます。
+
+  - キーワード検索クエリの一部として **ItemClass** プロパティを使用するには、検索クエリの **[キーワード]** ボックスで、次のいずれか (またはすべて) の property:value のペアを入力します。
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    たとえば、次の検索クエリを使用して、Yammer のメッセージと Yammer の称賛アイテムを取得できます。
+
+    ![ItemClass プロパティを使用して、Yammer アイテムを検索する](media/YammerContentSearch1.png)
+  
+  - または、**[タイプ]** メール条件を使用し、**[Yammer メッセージ]** を選択して、Yammer アイテムを返すこともできます。 たとえば、次の検索クエリでは、"社外秘" キーワードを含むすべての Yammer の会話アイテムが返されます。 
+
+    ![[タイプ] 条件カードを使用して Yammer の会話アイテムを検索する](media/YammerContentSearch2.png)
+
 ### <a name="searching-inactive-mailboxes"></a>非アクティブなメールボックスの検索
 
 コンテンツ検索で非アクティブなメールボックスを検索できます。 組織内の非アクティブなメールボックスのリストを取得するには、Exchange Online PowerShell でコマンド `Get-Mailbox -InactiveMailboxOnly` を実行します。 または、セキュリティ/コンプライアンス センターの [**情報ガバナンス**] \> [**保持**] に移動して、[**詳細**] ![ナビゲーション バーの省略記号](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> [**非アクティブなメールボックス**] をクリックすることもできます。
@@ -321,7 +343,7 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
 - Security＆Compliance Center PowerShell を使用してコンテンツ検索を作成し、非アクティブなメールボックスを検索できます。 これを行うには、ピリオド (.) を事前に追加する必要があります。 非アクティブなメールボックスのメール アドレスに。 たとえば次のコマンドは、メール アドレス pavelb@contoso.onmicrosoft.com を含む非アクティブなメールボックスを検索するコンテンツ検索を作成します。
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - 同じ SMTP アドレスを持つアクティブなメールボックスと非アクティブなメールボックスを所有しないようにすることを強くお勧めします。 非アクティブなメールボックスに割り当てられている SMTP アドレスを再使用する必要がある場合は、非アクティブなメールボックスを復元するか、非アクティブなメールボックスのコンテンツをアクティブなメールボックス (またはアクティブなメールボックスのアーカイブ) に復元して、非アクティブなメールボックスを削除することをお勧めします。 詳細については、以下のいずれかのトピックを参照してください。

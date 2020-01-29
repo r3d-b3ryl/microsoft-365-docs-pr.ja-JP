@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f2eadfaf23c4485e6b50b6550f0a884690a79548
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031902"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572984"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを検索して調査する
 
@@ -44,9 +44,9 @@ ms.locfileid: "38031902"
 
 |アクティビティ  |役割グループ |必要なプレビューの役割  |
 |---------|---------|---------|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |Office 365 グローバル管理者 <br> セキュリティ管理者 <br> セキュリティリーダ     | いいえ   |
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |Office 365 グローバル管理者 <br> セキュリティ管理者 <br>セキュリティリーダ   |       いいえ  |
-|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |Office 365 グローバル管理者 <br>セキュリティ管理者 <br> セキュリティリーダ <br> プレビュー   |   はい      |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |Office 365 グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | 不要   |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |Office 365 グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       不要  |
+|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |Office 365 グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> プレビュー   |   はい      |
 
 > [!NOTE]
 > *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 Office 365 のグローバル管理者の役割には、Microsoft 365 管理[https://admin.microsoft.com](https://admin.microsoft.com)センター () が割り当てられており、セキュリティ管理者およびセキュリティリーダーの役割が Office 365[https://protection.office.com](https://protection.office.com)Security & コンプライアンスセンター () に割り当てられます。 役割とアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。

@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、Office 365 の組織から送信されたメッセージを検証する方法について説明します。
-ms.openlocfilehash: f48ab1e231e0b46889f10fc14723111480f02d5c
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 42238ce7d5129d933b28238f07a9e24ba05ff395
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038906"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515908"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 で電子メールを検証する
 
@@ -77,7 +77,7 @@ Microsoft の DMARC TXT レコードは、次のような内容になります�
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft は、DMARC レポートをサード パーティの [Agari](https://agari.com) に送信します。 Agari では、DMARC レポートを収集して分析します。
+Microsoft は、DMARC レポートをサード パーティの [Agari](https://agari.com) に送信します。 Agari では、DMARC レポートを収集して分析します。 さらに、Valimail では、[Office 365 に対する無料 DMARC 監視サービス](https://go.valimail.com/microsoft.html)を提供します。
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>受信メール用に DMARC を実装する
 <a name="implementDMARCinbound"> </a>

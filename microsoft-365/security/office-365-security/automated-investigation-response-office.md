@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
-ms.openlocfilehash: d36215c83c926f96b23e930f888e5c8dca40dc60
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fcb48da4b6f3777fa8c21ef514d5f591e342562e
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808482"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573044"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 の自動調査と応答 (AIR)
 
@@ -132,7 +132,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![ARI の [調査グラフ] ページ](../media/air-investigationgraphpage.png)
 
-次の操作を実行できます:
+以下のことを実行できます。
 - 現在の調査の概要図の表示。
 - 調査期間の概要の表示。
 - 概要図内のノードを選択すると、そのノードの詳細が表示されます。
@@ -144,7 +144,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![AIR アラート ページ](../media/air-investigationalertspage.png)
 
-次の操作を実行できます:
+以下のことを実行できます。
 - 現在トリガーされているアラートおよびすべての関連アラートの概要図の表示。
 - 一覧でアラートを選択すると、アラートの完全な詳細情報を表示するフライアウト ページが開きます。
 
@@ -177,7 +177,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![ARI のメール調査ページ](../media/air-investigationemailpage.png)
 
-次の操作を実行できます:
+以下のことを実行できます。
 - 現在のクラスター化の結果と検出された脅威の概要図の表示。
 - クラスター エンティティまたは脅威リストをクリックすると、アラートのすべての詳細情報を表示するフライアウト ページが開きます。
 - メール クラスターをさらに調査するには、[メール クラスターの詳細] タブの上部にある [エクスプローラーで開く] リンクをクリックします。
@@ -195,7 +195,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![ARI のユーザー調査ページ](../media/air-investigationuserspage.png)
 
-次の操作を実行できます:
+以下のことを実行できます。
 - 特定されたユーザーの結果と検出されたリスクの概要図の表示。
 - ユーザーを選択すると、アラートのすべての詳細情報を表示するフライアウト ページが開きます。
 
@@ -220,7 +220,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![ARI のエンティティ調査ページ](../media/air-investigationentitiespage.png)
 
-次の操作を実行できます:
+以下のことを実行できます。
 - 調査エンティティと検出された脅威の概要図の表示。
 - エンティティを選択すると、関連するエンティティの詳細情報を表示するフライアウト ページが開きます。
 
@@ -232,7 +232,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![AIR の調査ログ ページ](../media/air-investigationlogpage.png)
 
-次の操作を実行できます:
+以下のことを実行できます。
 - 実行されたプレイブック手順の概要図の表示。
 - 結果の CSV ファイルへのエクスポート。
 - ビューのフィルタリング。

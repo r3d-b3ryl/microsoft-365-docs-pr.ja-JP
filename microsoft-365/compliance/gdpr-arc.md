@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: db67326b7fa1f09576ae49de75e3f1de525ffd86
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749884"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558074"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>アカウンタビリティ対応準備チェックリストを使用して GDPR プログラムをサポートする
 
@@ -36,7 +37,7 @@ Microsoft の製品とサービスを使用するときに GDPR をサポート�
 - [Azure](gdpr-arc-Azure.md)
 - [Microsoft サポート/プロフェッショナル サービス](gdpr-arc-prof-services.md)
 
-[コンプライアンス マネージャー](https://servicetrust.microsoft.com/ComplianceManager)で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。
+[コンプライアンス スコア](compliance-score.md)で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。
 
 チェックリストには、GDPR をサポートするプライバシー プログラムに関する以下の 4 つのカテゴリの基本的な考慮事項と、要件の例が含まれています。
 

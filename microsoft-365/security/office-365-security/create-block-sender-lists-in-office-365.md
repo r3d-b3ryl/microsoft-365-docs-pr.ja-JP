@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: 受信拒否リストのオプションには、Outlook のブロックされた送信者、スパム対策送信者/ドメイン禁止リスト、IP 禁止一覧、および Exchange トランスポートルール (Etr) がメールフロールールとも呼ばれます。
-ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: 受信拒否リストのオプションには、Outlook の禁止された送信者、スパム対策送信者/ドメイン禁止リスト、IP 禁止一覧、および Exchange メールフロールール (トランスポートルール) が含まれます。
+ms.openlocfilehash: 09a90fce31bd1ed9aea8275e2f01cda3ba816b1b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970893"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572333"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Office 365 で受信拒否リストを作成する
 
-送信者から不要な電子メールをブロックする必要がある場合があります。 複数の方法から選択できます。 これらのオプションには、Outlook のブロックされた送信者、スパム対策送信者/ドメイン禁止一覧、IP 禁止一覧、および Exchange トランスポートルール (Etr はメールフロールールとも呼ばれます) が含まれます。
+送信者から不要な電子メールをブロックする必要がある場合があります。 複数の方法から選択できます。 これらのオプションには、Outlook のブロックされた送信者、スパム対策送信者/ドメインブロックリスト、IP 禁止一覧、および Exchange メールフロールール (トランスポートルールとも呼ばれる) があります。
 
 > [!NOTE]
 > 組織のブロックリストは誤検知 (不在着信) に対処するために使用できますが、これらの候補を分析のために Microsoft に送信する必要があります。 ブロックリストを使用して誤検知を管理すると、管理オーバーヘッドが大幅に向上します。 この目的でブロックリストを使用する場合は、「ready」に記載されているように、[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)する記事も残しておく必要があります。
@@ -33,7 +33,7 @@ ms.locfileid: "39970893"
 
 - Outlook のブロックされた送信者
 - スパム対策ポリシー: 送信者/ドメインブロックリスト
-- Exchange トランスポートルール (Etr はメールフロールールとも呼ばれる)
+- Exchange メールフロールール
 - スパム対策ポリシー: IP 禁止一覧
 
 ## <a name="use-outlook-blocked-senders"></a>Outlook の受信拒否リストを使用する
@@ -47,19 +47,19 @@ ms.locfileid: "39970893"
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>スパム対策ポリシーの送信者/ドメインブロックリストを使用する
 
-複数のユーザーが影響を受けている場合、範囲は広くなり、会社全体の送信者/ドメインブロックリストのスパム対策ポリシーを使用する必要があります。 詳細な手順については、「[スパムフィルターポリシーの構成](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)」のドキュメントを参照してください。 このメソッドによってブロックされるメッセージはすべて、ポリシーに構成されたスパムアクションに従います。
+複数のユーザーが影響を受けている場合、範囲は広くなり、会社全体の送信者/ドメインブロックリストのスパム対策ポリシーを使用する必要があります。 詳細な手順については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 このメソッドによってブロックされるメッセージはすべて、ポリシーに構成されたスパムアクションに従います。
 
 これらのリストの最大数は、約1000エントリです。ただし、ポータルには30個のエントリしか入力できません。 30個を超えるエントリを追加するには、PowerShell を使用する必要があります。
 
-## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Exchange トランスポートルール (Etr) を使用して特定の送信者をブロックする
+## <a name="use-exchange-mail-flow-rules-specific-senders"></a>Exchange メールフロールール固有の送信者を使用する
 
-特定のユーザーまたは組織全体で送信されるメッセージをブロックする必要がある場合は、Etr (メールフロールールとも呼ばれます) を使用できます。 Etr では、メッセージの送信者の電子メールアドレスやドメインだけでなく、重要な単語やその他のプロパティもトリガーできるため、柔軟性が向上しています。 この柔軟性により、部分的なブロックを作成することができます。 [ETR (メールフロールールとも呼ばれる) を作成する手順をクリックしてください](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)。
+特定のユーザーまたは組織全体でメッセージが送信されないようにブロックする必要がある場合は、メールフロールールを使用できます。 メールフロールールは、送信者の電子メールアドレスやドメインだけでなく、メッセージ内の重要な語句やその他のプロパティをトリガーすることができるため、より柔軟になります。 この柔軟性により、部分的なブロックを作成することができます。 メールフロールールの詳細については、「[メールフロールールを使用したメッセージでの SCL の設定](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)」を参照してください。
 
 > [!IMPORTANT]
 > 非常にアグレッシブなルールを作成する*のは簡単*です。その結果、使用されている条件が可能な限り固有であることが重要です。 また、作成したルールの監査を有効にし、テストを行って、すべてが期待どおりに動作することを確認してください。
 
 ## <a name="use-anti-spam-policy-ip-block-lists"></a>スパム対策ポリシーの IP 禁止一覧を使用する
 
-他のオプションのいずれかを使用して送信者をブロックすることができない場合*は、スパム*対策ポリシー IP 禁止一覧を使用できます。 [詳細な手順については、記事「接続フィルターポリシーを構成する」を参照して](https://docs.microsoft.com/office365/securitycompliance/configure-the-connection-filter-policy)ください。 ここでは、ブロックされた ip の一覧を*最小*にして、IP アドレスの範囲を使用することはお勧めし*ません*。
+他のオプションのいずれかを使用して*送信者をブロック*することができない場合は、スパム対策ポリシー IP 禁止一覧を使用できます。 詳細については、「[接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)」を参照してください。 ブロックされている ip の数を最小限に抑えることが重要なので、IP アドレス範囲全体をブロックすることはお勧めし*ません*。
 
 *特*に、コンシューマーサービスまたは共有インフラストラクチャに属する ip アドレス範囲の追加を避ける必要があります。また、通常のメンテナンスの一環として、許可された ip アドレスの一覧を確認してください。 **が許可されているため、エントリは攻撃のためにルートを開くことができるので、このリストを詳細に管理して、不要になった許可エントリを定期的に削除する必要があります。** また、差出人セーフリストを許可する場合は、「 *[Office 365 で安全な送信者のリストを作成](create-safe-sender-lists-in-office-365.md)* する」のリスクと注意事項を必ず読んで理解してください。

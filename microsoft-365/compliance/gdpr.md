@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749865"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557984"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 
@@ -99,7 +100,7 @@ GDPR では、データ コントローラーは「自然人の権利と自由�
 
 ### <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR に関するアカウンタビリティ対応準備チェックリスト
 
-これらの[チェックリスト](gdpr-arc.md)は、Microsoft 製品の使用において、GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。 [コンプライアンス マネージャー](https://servicetrust.microsoft.com/ComplianceManager)で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、チェックリスト項目を管理できます。
+これらの[チェックリスト](gdpr-arc.md)は、Microsoft 製品の使用において、GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。 [Microsoft コンプライアンス スコア](compliance-score.md)で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、チェックリスト項目を管理できます。
 
 ## <a name="learn-more"></a>詳細情報
 

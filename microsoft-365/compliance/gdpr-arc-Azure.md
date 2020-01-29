@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 608e75dee25f73a1234a911bd5b9e4871412e59e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 34d36b6782d1f3dd8a5b12beb7be681e07518170
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676774"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558094"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Azure アカウンタビリティ対応準備チェックリスト
 
@@ -29,9 +30,9 @@ ms.locfileid: "39676774"
 - [ISO/IEC CD 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) セキュリティ技術の要件。
 - プライバシー管理要件に関連する [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472)。
 
-コンプライアンス マネージャー [16] で、GDPR タイル内の顧客管理のコントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。 GDPR をサポートするために Microsoft Azure が実装する内部コントロールのプレゼンテーションを編成するためにもこのコントロール構造は使用されます ([Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) でダウンロードすることができます)。
+コンプライアンス スコア [16] で、GDPR タイル内の顧客管理のコントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。 GDPR をサポートするために Microsoft Azure が実装する内部コントロールのプレゼンテーションを編成するためにもこのコントロール構造は使用されます ([Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) でダウンロードすることができます)。
 
-[GDPR をサポートするために Microsoft Dynamics 365 が実装する内部コントロール](https://aka.ms/GDPRControls)のプレゼンテーションを編成するためにもこのコントロール構造は使用されます。
+[GDPR をサポートするために Microsoft Dynamics 365 が実装する内部コントロール](https://aka.ms/gdprcontrols)のプレゼンテーションを編成するためにもこのコントロール構造は使用されます。
 
 GDPR 関連のドキュメントの詳細については、「[https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted)」を参照してください。
 
@@ -143,7 +144,7 @@ GDPR 関連のドキュメントの詳細については、「[https://aka.ms/gd
 | 13 <a name="13"> </a> | [Microsoft Azure (全体) ISO/IEC 27001:2013 ISMS の適用性に関するステートメント](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Microsoft Trust Center コンプライアンスで提供されるサービス](offering-home.md)  |
 | 15 <a name="15"> </a> | [Intune でのプライバシーおよび個人データ](https://review.docs.microsoft.com/intune/privacy-personal-data) |
-| 16 <a name="16"> </a> | [ダウンロード可能な、完全な Azure GDPR 管理セット](https://aka.ms/GDPRControls)または[コンプライアンスマネー ジャーツール](https://servicetrust.microsoft.com/ComplianceManager) |
+| 16 <a name="16"> </a> | [ダウンロード可能な、完全な Azure GDPR 管理セット](https://aka.ms/GDPRControls)または[コンプライアンス スコア](compliance-score.md) |
 | 17 <a name="17"> </a> | [Microsoft DPO 情報](https://aka.ms/GDPRDPO) |
 
 ## <a name="learn-more"></a>詳細情報

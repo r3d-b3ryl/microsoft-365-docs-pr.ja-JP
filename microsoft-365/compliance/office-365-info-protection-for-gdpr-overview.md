@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: GDPR のための Office 365 の情報保護の概要を確認します。個人データを検出、分類、保護、監視する方法について説明します。
-ms.openlocfilehash: c1d73baef939ec69a69e63d26b7a204c353ca95a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d4e84e6a3fc1020f3eecda6eb72e3d02a9f66555
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086655"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558504"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護の概要
 
@@ -41,13 +41,13 @@ GDPR は個人データの収集、保存、処理、共有を規制します。
 
 GDPR 遵守に向けた最初の手順は、GDPR が組織に適用されるかどうか、また適用される場合はその範囲を評価することです。この分析には、組織で保持するデータとその場所を理解することが含まれます。
 
-### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>手順 1: コンプライアンス マネージャーを使用して規制要件を確認し、進捗状況を追跡します。
+### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>手順 1: コンプライアンス スコアを使用して規制要件を確認し、進捗状況を追跡します。
 
-コンプライアンス マネージャーには監査制御を追跡、実装、管理するためのツールが用意されており、組織は GDPR をはじめとするさまざまな基準に対してコンプライアンスを達成することができます。
+コンプライアンス スコアには監査制御を追跡、実装、管理するためのツールが用意されており、組織は GDPR をはじめとするさまざまな基準に対してコンプライアンスを達成することができます。
 
-![コンプライアンス マネージャーを使用して要件を表示して進捗状況を追跡する](Media/Overview-image1.png)
+![コンプライアンス スコアおよびコンプライアンス マネージャーを使用して、要件を表示し、進捗状況を追跡する](Media/Overview-image1.png)
 
-詳細については、「[Service Trust Portal でコンプライアンス マネージャーを使用する](https://servicetrust.microsoft.com/ComplianceManager)」を参照してください。 
+詳細については、「[コンプライアンス スコア](compliance-score.md)」を参照してください。
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>手順 2: コンテンツ検索と機密情報の種類を使用して個人データを検索する 
 
