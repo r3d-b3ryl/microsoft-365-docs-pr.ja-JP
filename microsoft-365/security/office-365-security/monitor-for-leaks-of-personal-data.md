@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
-ms.openlocfilehash: 995f0b273753d7b3a92b8c5acef6eb94d51458b3
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872103"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572974"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -31,11 +31,11 @@ ms.locfileid: "39872103"
 
 この図について:
 
--   まず、SharePoint Online、OneDrive for Business、転送中の電子メールの個人データを監視するための Office 365 データ損失防止レポートから開始します。このレポートは、個人データを監視するための最も詳細なレベルの内容を提供します。ただし、このレポートには Office 365 のすべてのサービスが含まれているわけではありません。
+- まず、SharePoint Online、OneDrive for Business、転送中の電子メールの個人データを監視するための Office 365 データ損失防止レポートから開始します。このレポートは、個人データを監視するための最も詳細なレベルの内容を提供します。ただし、このレポートには Office 365 のすべてのサービスが含まれているわけではありません。
 
--   次に、アラート ポリシーと Office 365 監査ログを使用して、Office 365 サービス全体のアクティビティを監視します。進行中の監視を設定するか、または監査ログを検索してインシデントを調査します。Office 365 監査ログは、Sway、PowerBI、電子情報開示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理アクティビティ、OneDrive for Business、SharePoint Online、転送中のメール、保存メールボックスなどの Office 365 サービス全体で機能します。Skype の会話は保存メールボックスに含まれます。
+- 次に、アラート ポリシーと Office 365 監査ログを使用して、Office 365 サービス全体のアクティビティを監視します。進行中の監視を設定するか、または監査ログを検索してインシデントを調査します。Office 365 監査ログは、Sway、PowerBI、電子情報開示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理アクティビティ、OneDrive for Business、SharePoint Online、転送中のメール、保存メールボックスなどの Office 365 サービス全体で機能します。Skype の会話は保存メールボックスに含まれます。
 
--   最後に、Microsoft Cloud App Security を使用して、他の SaaS プロバイダーの機密データを含むファイルを監視します。Office 365 の機密情報タイプと統合ラベルを Azure Information Protection と Cloud App Security が有効な Office で使用できる機能が近日公開予定です。すべての SaaS アプリまたは特定のアプリ (ボックスなど) に適用するポリシーを設定できます。Cloud App Security では、電子メールに添付されたファイルを含め、Exchange Online のファイルは検出されません。
+- 最後に、Microsoft Cloud App Security を使用して、他の SaaS プロバイダーの機密データを含むファイルを監視します。Office 365 の機密情報タイプと統合ラベルを Azure Information Protection と Cloud App Security が有効な Office で使用できる機能が近日公開予定です。すべての SaaS アプリまたは特定のアプリ (ボックスなど) に適用するポリシーを設定できます。Cloud App Security では、電子メールに添付されたファイルを含め、Exchange Online のファイルは検出されません。
 
 ## <a name="office-365-data-loss-prevention-reports"></a>Office 365 データ損失防止レポート
 
@@ -43,23 +43,23 @@ ms.locfileid: "39872103"
 
 DLP レポートを使用すると、以下のことを行えます。
 
--   特定の期間に絞り込み、スパイクや傾向の理由を理解します。
+- 特定の期間に絞り込み、スパイクや傾向の理由を理解します。
 
--   組織の DLP ポリシーに違反するビジネス プロセスを検出します。
+- 組織の DLP ポリシーに違反するビジネス プロセスを検出します。
 
--   DLP ポリシーのビジネスに及ぼす影響を理解します。
+- DLP ポリシーのビジネスに及ぼす影響を理解します。
 
--   ユーザーがポリシーを上書きしたり、誤検知を報告したりしてポリシーのヒントを解決するときに送信する正当な理由を表示します。
+- ユーザーがポリシーを上書きしたり、誤検知を報告したりしてポリシーのヒントを解決するときに送信する正当な理由を表示します。
 
--   特定の DLP ポリシーに関する一致箇所を表示することによって、そのポリシーのコンプライアンス遵守を確認します。
+- 特定の DLP ポリシーに関する一致箇所を表示することによって、そのポリシーのコンプライアンス遵守を確認します。
 
--   詳細ウィンドウで、DLP ポリシーに一致する機密データを含むファイルの一覧を表示します。
+- 詳細ウィンドウで、DLP ポリシーに一致する機密データを含むファイルの一覧を表示します。
 
 さらに、テスト モードで実行するときに、DLP レポートを使用して DLP ポリシーを微調整することができます。
 
 DLP レポートは、セキュリティ/コンプライアンス センターにあります。 [レポート] \> [レポートの表示] に移動します。 [データ損失防止 (DLP)] の下で、[DLP ポリシーおよびルールの一致] または [DLP の誤検知と上書き] に移動します。
 
-詳細については、「[データ損失防止のレポートの表示](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)」を参照してください。
+詳細については、「[データ損失防止のレポートの表示](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)」を参照してください。
 
 ![DLP ポリシーと一致することを示すレポート](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -69,9 +69,9 @@ Office 365 監査ログには、Exchange Online、SharePoint Online、OneDrive f
 
 セキュリティ/コンプライアンス センターでは、Office 365 監査ログを監視およびレポートする 2 つの方法を提供しています。
 
--   アラート ポリシーの設定、アラートの表示、トレンドの監視には、セキュリティ センターまたはコンプライアンス センターのいずれかにあるアラート ポリシーとアラート ダッシュボード ツールを使用します。
+- アラート ポリシーの設定、アラートの表示、トレンドの監視には、セキュリティ センターまたはコンプライアンス センターのいずれかにあるアラート ポリシーとアラート ダッシュボード ツールを使用します。
 
--   監査ログを直接検索するには、指定した日付の範囲ですべてのイベントを検索します。また、操作を実行したユーザー、操作、または対象オブジェクトなど、特定の条件に基づいて結果をフィルター処理することもできます。
+- 監査ログを直接検索するには、指定した日付の範囲ですべてのイベントを検索します。また、操作を実行したユーザー、操作、または対象オブジェクトなど、特定の条件に基づいて結果をフィルター処理することもできます。
 
 情報セキュリティおよびコンプライアンス チームは、これらのツールを使用して、エンド ユーザーと管理者の両方が Office 365 サービスで実行したアクティビティを予防的に確認することができます。特定のアクティビティが特定のサイト コレクションで発生した場合に (たとえば、GDPR 関連情報が含まれていることがわかっているサイトからコンテンツを共有する場合など)、電子メール通知を送信するように自動アラートを設定できます。これによってチームは、ユーザーをフォローアップして、企業のセキュリティ ポリシー遵守の徹底、追加のトレーニング提供などを行うことができます。
 
@@ -81,17 +81,17 @@ Microsoft 管理アクティビティ API を使用して統一監査ログを�
 
 アラート ポリシーと監査ログの検索については、以下を参照してください。
 
-- [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+- [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
-- [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (概要)
+- [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (概要)
 
-- [Office 365 監査ログの検索を有効または無効にする](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+- [Office 365 監査ログの検索を有効または無効にする](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-- [監査ログを検索する](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+- [監査ログを検索する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (コマンドレット)
 
-- [Office 365 監査ログの詳細なプロパティ](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+- [Office 365 監査ログの詳細なプロパティ](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -111,9 +111,9 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 これらの属性タイプは、Cloud App Security に近日公開されます。
 
--   Office 365 の機密情報の種類
+- Office 365 の機密情報の種類
 
--   Office 365 および Azure Information Protection での統一ラベル
+- Office 365 および Azure Information Protection での統一ラベル
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security ダッシュボード
 
@@ -125,11 +125,11 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 詳しくは、以下の資料を参照してください。
 
--   [Cloud App Security を展開する](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Cloud App Security を展開する](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>個人データの共有を検出するためのファイル ポリシーとアクティビティ ポリシーの例
 
@@ -198,9 +198,9 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 類似のポリシー:
 
--   PII (メール アドレス) を含むファイルの共有を検出する
+- PII (メール アドレス) を含むファイルの共有を検出する
 
--   PII (パスポート番号) を含むファイルの共有を検出する
+- PII (パスポート番号) を含むファイルの共有を検出する
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Box for Business または OneDrive for Business の顧客データや人事データを検出する
 
@@ -208,9 +208,9 @@ OneDrive for Business または Box for Business に Customer Data (顧客デー
 
 注:
 
--   Box の監視では、API Connector SDK を使用してコネクタを設定する必要があります。
+- Box の監視では、API Connector SDK を使用してコネクタを設定する必要があります。
 
--   このポリシーには、現在プライベート プレビューになっている機能が必要です。
+- このポリシーには、現在プライベート プレビューになっている機能が必要です。
 
 <table>
 <thead>
@@ -267,6 +267,6 @@ OneDrive for Business または Box for Business に Customer Data (顧客デー
 
 類似のポリシー:
 
--   顧客データや人事データの大量ダウンロードを検出する — 顧客データや人事データを含む多数のファイルが、単一ユーザーによって短時間にダウンロードされたことが検出されたときに警告します。
+- 顧客データや人事データの大量ダウンロードを検出する — 顧客データや人事データを含む多数のファイルが、単一ユーザーによって短時間にダウンロードされたことが検出されたときに警告します。
 
--   顧客および人事データの共有を検出する — 顧客または人事データを含むファイルが共有されたときに警告します。
+- 顧客および人事データの共有を検出する — 顧客または人事データを含むファイルが共有されたときに警告します。

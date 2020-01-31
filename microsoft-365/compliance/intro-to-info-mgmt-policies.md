@@ -1,5 +1,7 @@
 ---
 title: 情報管理ポリシー入門
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -17,12 +19,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: 情報管理ポリシーとは、コンテンツ タイプに関する一連のルールです。 情報管理ポリシーにより、組織はコンテンツの保持期間やユーザーがそのコンテンツで実行できる操作などを制御し、管理することができます。 情報管理ポリシーは、組織が法律上または行政上の規制を遵守したり、内部のビジネス プロセスを徹底するのに役立ちます。
-ms.openlocfilehash: a5cf571b22b7d698daf8a70f8565b250e2388a1a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3c3ca901674b9ae34aa990f320cf4eb550ea05b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085934"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41588037"
 ---
 # <a name="introduction-to-information-management-policies"></a>情報管理ポリシー入門
 

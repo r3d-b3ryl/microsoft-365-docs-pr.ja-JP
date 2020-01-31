@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
-ms.openlocfilehash: 7861e2c0009b34d558d64a87a44a10cc3c953b3c
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: a6d45dbcb5015be1b688cad562a234c555d0ef66
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233778"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572693"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
@@ -146,7 +146,7 @@ Points to address or value: selector2-<domainGUID>._domainkey.<initialDomain>
 TTL:                3600
 ```
 
-詳細は次のとおりです。
+ここで、
 
 - Office 365 では、セレクターは常に "selector1" または "selector2" になります。
 

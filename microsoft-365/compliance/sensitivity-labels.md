@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、従業員の生産性や共同作業性が低下することはありません。秘密度ラベルは、ラベル付けされたコンテンツに暗号化および透かしなどの保護設定を適用するために使用できます。
-ms.openlocfilehash: 97667bbce764e3e36dd488aac799b11fa50ed3bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: aa0c379e7d1209fb4ac9afc2924500f7b1af82e2
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259943"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515888"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "41259943"
 
 秘密度ラベルを使用すると、組織のユーザーの生産性や共同作業性に影響を与えることなく、組織のデータの分類と保護を行えます。
 
-秘密度ラベルを示す例:
+リボンの [**ホーム**] タブから、Excel で利用可能な秘密度ラベルを表示する例。 この例では、適用されたラベルがステータス バーに表示されます。
 
 ![Excel のリボンおよびステータス バーに示された秘密度ラベル](media/Sensitivity-label-in-Excel.png)
 
@@ -175,7 +175,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
 
-テナントがまだ[統合ラベル付けプラットフォーム](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上にないことが理由で Azure Information Protection ラベルを使用している場合は、統合ラベル付けを有効にするまでは秘密度ラベルを作成しないことをお勧めします。 このシナリオでは、Azure ポータルに表示されるラベルは、秘密度ラベルではなく、Azure Information Protection のラベルになります。 これらのラベルは、macOS、iOS、または Android を実行するデバイスでは使用できません。 この問題を解決するには、[これらのラベルを秘密度ラベルに移行](/azure/information-protection/configure-policy-migrate-labels)させます。
+テナントがまだ[統合ラベル付けプラットフォーム](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上にないことが理由で Azure Information Protection ラベルを使用している場合は、統合ラベル付けを有効にするまでは秘密度ラベルを作成しないことをお勧めします。 このシナリオでは、Azure ポータルに表示されるラベルは、秘密度ラベルではなく、Azure Information Protection のラベルになります。 これらのラベルは、Windows コンピューター上の Azure Information Protection クライアント (クラシック) で使用できますが、macOS、iOS、または Android を実行しているデバイスでは使用できません。 この問題を解決するには、[これらのラベルを秘密度ラベルに移行](/azure/information-protection/configure-policy-migrate-labels)させます。 
 
 この 2 つのセットのラベルによって適用されるメタデータ同士には互換性があるため、移行完了後にドキュメントとメールにラベルを付け直す必要はありません。
 

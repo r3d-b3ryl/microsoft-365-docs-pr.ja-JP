@@ -1,5 +1,7 @@
 ---
 title: 高度な電子情報開示ケースで保管担当者を管理する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 17c77f14267f988a071e201733ae54ad9c438547
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0b6776571f4abafaf8e050fa6c31311df452d90e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085991"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582916"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースで保管担当者を管理する
 
@@ -108,7 +110,7 @@ Advanced eDiscovery の [保管担当者] タブには、ケースに追加さ�
 
 保管担当者データの再インデックス作成は、長時間実行されるプロセスです。作成された対応するジョブには、**保管担当者データの再インデックス**という名前が付けられます。 [**ジョブ**] タブまたは [**保管担当者**] タブで進行状況を追跡するには、[**インデックス作成ジョブの状態**] 列の状態を監視します。
 
-詳細については、次のトピックを参照してください。
+詳細については、以下を参照してください。
 
 - [処理中のエラーの操作](processing-data-for-case.md)
 

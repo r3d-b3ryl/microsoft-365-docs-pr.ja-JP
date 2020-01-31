@@ -1,5 +1,7 @@
 ---
 title: Office 365 Message Encryption の古い情報
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Office 365 組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「Office 365 Message Encryption」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
-ms.openlocfilehash: 5320c678dee5ef08f7095c4415a22841e6202b5f
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: cb5315c99b586f250ecd2e5ee51ee6f4534e8bff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690744"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585726"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -151,7 +153,7 @@ Office 365 で暗号化されたメッセージを受信する組織外部の受
   
  **Q. 暗号化された電子メール メッセージを独自のブランドでカスタマイズすることはできますか。**
   
-正解です。 Windows PowerShell コマンドレットを使用して、暗号化された電子メール メッセージの上に表示する既定のテキスト、免責事項テキスト、および電子メール メッセージや暗号化ポータルに使用するロゴをカスタマイズできます。 詳細については、「[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
+はい。 Windows PowerShell コマンドレットを使用して、暗号化された電子メール メッセージの上に表示する既定のテキスト、免責事項テキスト、および電子メール メッセージや暗号化ポータルに使用するロゴをカスタマイズできます。 詳細については、「[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
   
  **Q. このサービスは組織内のすべてのユーザーに対して 1 つのライセンスが必要ですか。**
   
@@ -201,7 +203,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q: Office 365 メッセージの暗号化をサポートするために、組織のファイアウォール内の Url、IP アドレス、またはポートを開く必要がありますか。**
   
-正解です。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Office 365 の url と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
+はい。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Office 365 の url と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
   
  **Q. Office 365 の暗号化されたメッセージは、何人まで送信できますか。**
   
@@ -209,7 +211,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q. 特定の受信者に送信されたメッセージを取り消すことは可能ですか。**
   
-不正解です。 送信されたメッセージを特定のユーザーに対して取り消すことはできません。
+いいえ。 送信されたメッセージを特定のユーザーに対して取り消すことはできません。
   
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
   

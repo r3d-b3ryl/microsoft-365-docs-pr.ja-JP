@@ -1,5 +1,7 @@
 ---
 title: EU 税務識別番号
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805850"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41591018"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税務識別番号
 
@@ -108,7 +110,7 @@ steuernummer
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -296,7 +298,7 @@ porezni broj
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -363,7 +365,7 @@ tax id
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -636,7 +638,7 @@ kansallinen tunnus numero
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -758,7 +760,7 @@ steueridentifikationsnummer
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -909,7 +911,7 @@ adóhatóság szám
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -1124,7 +1126,7 @@ nodokļu identifikācija numurs
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -1272,7 +1274,7 @@ steueridentifikationsnummer
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -1576,7 +1578,7 @@ número de identificação 会計
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -1632,7 +1634,7 @@ numărul de 識別子は fiscală
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 

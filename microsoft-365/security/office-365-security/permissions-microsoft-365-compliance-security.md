@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
-ms.openlocfilehash: 43f6388820c531c99b6c12f615a3ffb8e3b85427
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 070e9bb1f7bf070a1b95995c2010b79dee7cbc9b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971585"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572964"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
@@ -57,19 +57,19 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |**サービス**|**コンプライアンス管理者ができること**|
 |:-----|:-----|
 |[**Microsoft 365 コンプライアンス センター**](https://compliance.microsoft.com/)|Microsoft 365 サービス全体での組織のデータの保護および管理。 <br/><br/> コンプライアンス アラートの管理。|
-|[**コンプライアンス マネージャー**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|組織の法令遵守活動の追跡、割り当て、確認。|
+|[**コンプライアンス スコア**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|組織の法令遵守活動の追跡、割り当て、確認。|
 |[**Office 365 セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|データ ガバナンスの管理。 <br/><br/> 法律およびデータ調査の実行。 <br/><br/> データ主体の要求の管理。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Intune のすべての監査データの表示。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|読み取り専用アクセス許可があり、アラートを管理できる。 <br/><br/> ファイル ポリシーの作成と変更、ファイル ガバナンス アクションの許可。 <br/><br/> データ管理下のすべての組み込みレポートの表示。|
 
 ### <a name="compliance-data-administrator"></a>コンプライアンス データ管理者
 
-この役割を持つユーザーは、Microsoft 365 コンプライアンス センター、Microsoft 365 管理センター、Azure のデータを保護し、追跡するアクセス許可を持ちます。 また、ユーザーは、Exchange 管理センター、コンプライアンス マネージャー、Teams および Skype for Business の管理センター内のすべての機能を管理したり、Azure および Microsoft 365 のサポート チケットを作成したりすることもできます。
+この役割を持つユーザーは、Microsoft 365 コンプライアンス センター、Microsoft 365 管理センター、Azure のデータを保護し、追跡するアクセス許可を持ちます。 また、ユーザーは、Exchange 管理センター、コンプライアンス スコア、Teams および Skype for Business の管理センター内のすべての機能を管理したり、Azure および Microsoft 365 のサポート チケットを作成したりすることもできます。
 
 |**このサービスで…**|**コンプライアンス データ管理者は…**|
 |:-----|:-----|
 |[**Microsoft 365 コンプライアンス センター**](https://compliance.microsoft.com/)|Microsoft 365 サービス全体での組織のデータの保護および管理。 <br/><br/> コンプライアンス アラートの管理。 <br/><br/> 機密ラベルの管理。|
-|[**コンプライアンス マネージャー**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|組織の法令遵守活動の追跡、割り当て、確認。|
+|[**コンプライアンス スコア**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|組織の法令遵守活動の追跡、割り当て、確認。|
 |[**Office 365 セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|データ ガバナンスの管理。 <br/><br/> 法律およびデータ調査の実行。 <br/><br/> データ主体の要求の管理。 <br/><br/> 機密ラベルの管理。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (準備中)|Intune のすべての監査データの表示。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|読み取り専用アクセス許可を使用して情報を表示する。 <br/>通知の管理。 <br/><br/> ファイル ポリシーの作成と変更、ファイル ガバナンス アクションの許可。 <br/><br/> データ管理下のすべての組み込みレポートの表示。|
@@ -152,7 +152,7 @@ Azure Active Directoryでこれらのロールを管理するときは、**す�
 |Azure Active Directory (Azure AD) および Azure AD Identity Protection|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Azure ATP ロール グループ](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Compliance Manager|[Compliance Manager ロール](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud#permissions-and-role-based-access-control)|
+|コンプライアンス スコア|[コンプライアンス スコアの役割](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange のロール ベースのアクセス制御](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Intune のロール ベースのアクセス制御](https://docs.microsoft.com/intune/role-based-access-control)|
 |管理対象デスクトップ|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

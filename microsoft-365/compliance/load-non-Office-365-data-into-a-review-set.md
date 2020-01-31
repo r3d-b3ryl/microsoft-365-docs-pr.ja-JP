@@ -1,5 +1,7 @@
 ---
 title: レビュー セットに Office 365 以外のデータを読み込む
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高度な電子情報開示ケースのレビューセットに Office 365 以外のデータをインポートします。
-ms.openlocfilehash: 508346c3fe3a8f67addfed4ced08693daa2d49e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086035"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585686"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>レビュー セットに Office 365 以外のデータを読み込む
 
@@ -40,7 +42,7 @@ ms.locfileid: "37086035"
 
 - Office 以外の365データは、Advanced eDiscovery でサポートされているファイルの種類である必要があります。 詳細については、「 [Advanced eDiscovery でサポートされるファイルの種類](supported-filetypes-ediscovery20.md)」を参照してください。
 
-- レビューセットにアップロードされたすべてのファイルは、フォルダーに配置されている必要があります。各フォルダーは特定の保管担当者に関連付けられています。 これらのフォルダーの名前には、*エイリアス @ domainname*のような名前を付ける必要があります。 エイリアス @ domainname は、ユーザーの Office 365 エイリアスおよびドメインである必要があります。 ルートフォルダー内のすべてのエイリアス @ domainname フォルダーを収集できます。 ルートフォルダーには、別名 @ domainname folders のみを含めることができます。 ルートフォルダー内のルースファイルはサポートされていません。
+- レビューセットにアップロードされたすべてのファイルは、フォルダーに配置されている必要があります。各フォルダーは特定の保管担当者に関連付けられています。 これらのフォルダーの名前は、次の名前付け形式を使用する必要があります。 *alias@domainname*。 Alias@domainname は、ユーザーの Office 365 エイリアスおよびドメインである必要があります。 ルートフォルダー内のすべての alias@domainname フォルダーを収集できます。 ルートフォルダーには alias@domainname フォルダーのみ含めることができます。 ルートフォルダー内のルースファイルはサポートされていません。
 
    アップロードする Office 365 以外のデータのフォルダー構造は、次の例のようになります。
 
@@ -79,9 +81,9 @@ ms.locfileid: "37086035"
 
    ![Office 以外の365インポート: ファイルのアップロード](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a. [**ファイルの場所のパス**] ボックスで、アップロードする Office 365 以外のデータを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
+   a.  [**ファイルの場所のパス**] ボックスで、アップロードする Office 365 以外のデータを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
 
-   b. [**クリップボードにコピー** ] をクリックして、ボックスに表示されているコマンドをコピーします。
+   b.  [**クリップボードにコピー** ] をクリックして、ボックスに表示されているコマンドをコピーします。
 
 7. Windows コマンドプロンプトを起動し、前の手順でコピーしたコマンドを貼り付け、 **enter**キーを押して、azcopy コマンドを開始します。  コマンドを開始すると、Office 以外の365ファイルは、手順4で準備した Azure ストレージの場所にアップロードされます。
 

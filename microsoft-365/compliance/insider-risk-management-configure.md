@@ -5,17 +5,19 @@ keywords: Microsoft 365、insider リスク管理、リスク管理、コンプ�
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5d32e28d53fccbb16d935bbd9348ad7c12bac365
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: aea8c4a8dff0581b9286880d646728eb9a8dd555
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259845"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590668"
 ---
 # <a name="get-started-with-insider-risk-management-preview"></a>Insider リスク管理の概要 (プレビュー)
 
@@ -24,7 +26,7 @@ Insider リスク管理ポリシーを使用して、組織内のリスクの通
 >[!IMPORTANT]
 >Microsoft 365 insider リスク管理ソリューションは、お客様がユーザーレベルで内部ガバナンスを促進できるようにするためのテナントレベルのオプションを提供します。 テナントレベルの管理者は、組織のメンバーに対してこのソリューションへのアクセスを提供するためのアクセス許可を設定したり、Microsoft 365 コンプライアンスセンターでデータコネクタを設定して、ユーザーレベルの id をサポートするために関連データをインポートすることができます。リスクの高い活動。 お客様は、個人ユーザーに関連する洞察を認識します。雇用に関連する大きなの動作、文字、またはパフォーマンスは、管理者が計算し、組織内の他のユーザーが利用できるようにすることができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 Insider のリスク管理を開始する前に、Microsoft 365 のサブスクリプションを確認する必要があります。 Insider リスク管理ポリシーに含まれるユーザーは、Microsoft 365 E5 コンプライアンスライセンスを所有しているか、Microsoft 365 E5 サブスクリプションに含まれている必要があります。
 
