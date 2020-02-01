@@ -1,5 +1,7 @@
 ---
 title: セルフサービス購入を管理する (ユーザー)
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -12,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: 6cf62a3968738f3367c5ed6a681e7f225f1dae8b
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 1535784350b719b606dca9417f9cdb192060adf1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120227"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594658"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービス購入を管理する (ユーザー)
 

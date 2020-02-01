@@ -2,6 +2,8 @@
 title: Microsoft 365 ビジネスでよく寄せられる質問 
 description: 小規模および中規模企業 (SMB) 向けに設計された新しいソリューションである Microsoft 365 Business に関してよく寄せられる質問への回答を検索します。 
 author: Sirkkuw
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -10,19 +12,19 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: 09a155c87bf90309f8a4cdd2eb5c0b71d2337d58
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748373"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594230"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 ビジネスでよく寄せられる質問
 
 ## <a name="general"></a>全般
 
 ### <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは 
-Microsoft 365 は、小規模から中規模企業向けに、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 次のとおりです。
+Microsoft 365 は、小規模から中規模企業向けに、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 内容は以下のとおりです。
 
 **ビジネス生産性とコラボレーションツールのセット** 
 * Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access 

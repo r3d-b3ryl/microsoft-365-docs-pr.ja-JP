@@ -1,5 +1,7 @@
 ---
 title: PST コレクションツールを使用して、組織内の PST ファイルを検索、コピー、および削除する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Microsoft PST コレクションツールを使用して、組織のネットワークを検索し、組織全体に散在している PST ファイルのインベントリを取得します。 PST ファイルを検索したら、pst コレクションツールを使用して、それらを Office 365 にインポートできるように、1つの場所にコピーすることができます。
-ms.openlocfilehash: 703208b574a723eb4f91aad0a892d6ea4abf427b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686883"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594558"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>PST コレクションツールを使用して、組織内の PST ファイルを検索、コピー、および削除する
 
@@ -215,9 +217,9 @@ DataCollectorMaster を Collect モードで正常に実行した後、次のフ
   
 PST ファイルを Office 365 にインポートするための詳細な手順については、以下のいずれかのトピックを参照してください。
   
-- [ネットワークアップロードを使用して Office 365 に PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
+- [ネットワーク アップロードを使用して PST ファイルを Office 365 にインストールする](use-network-upload-to-import-pst-files.md)
     
-- [ドライブ送付を使用して PST ファイルを Office 365 にインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
+- [ドライブの送付を使用して PST ファイルを Office 365 にインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
 
 ## <a name="step-5-delete-the-pst-files-found-on-your-network"></a>手順 5: ネットワーク上で見つかった PST ファイルを削除する

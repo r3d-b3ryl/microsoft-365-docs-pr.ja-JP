@@ -1,5 +1,7 @@
 ---
 title: ソリューションプロバイダーを操作する
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft 認定のソリューションプロバイダーと協力して、組織または学校の製品とサービスを購入して管理することができます。
 keywords: パートナー、ソリューションプロバイダ
-ms.openlocfilehash: bb78e1a704529fd2d12ff49639913fe80b75be7a
-ms.sourcegitcommit: a7edd3840226e67e82126bb9dee423b3458fef4d
+ms.openlocfilehash: 341a353247635eab491eb0962273eeed09b31599
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36994078"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594121"
 ---
 # <a name="working-with-solution-providers-in-microsoft-store-for-business"></a>ビジネス向け Microsoft Store のソリューションプロバイダーを使用する
 

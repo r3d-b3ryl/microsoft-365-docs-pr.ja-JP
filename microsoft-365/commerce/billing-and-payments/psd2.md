@@ -1,5 +1,7 @@
 ---
 title: 一般法人向けお客様向けのお支払いサービス指令2および強力な顧客認証
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: 2019年9月14日以降に、欧州経済地域の31国の銀行は、支払いを処理する前にオンライン購入を行うユーザーの身元を確認する必要があります。
 keywords: 支払いサービスディレクティブ2、強力な顧客認証、多要素認証
-ms.openlocfilehash: 1e9272803fd592062676e3324d172560b6b2219b
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: f59808d3735f10b57ed5c0cd279b6703b24a44a4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646442"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594708"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>一般法人向けお客様向けのお支払いサービス指令2および強力な顧客認証
 
@@ -44,7 +46,7 @@ ms.locfileid: "37646442"
 
 定期的な支払いに対する請求は失敗する可能性があります。 その場合は、手順に従って電子メールを受信します。 確認要求に応答して、現在の支払いを行うように求めるメッセージが表示されます。
 
-## <a name="need-more-help"></a>ヘルプを表示
+## <a name="need-more-help"></a>サポートが必要な場合
 
 これらのシナリオでは、金融機関が最適な連絡先です。
 - 確認コードを受信していません。  

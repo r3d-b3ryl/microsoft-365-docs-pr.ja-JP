@@ -1,5 +1,7 @@
 ---
 title: 高度な電子情報開示で会話を確認する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d03df51df3c6314dcec072b5c3b8573a36c279d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085361"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595674"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>高度な電子情報開示で会話を確認する 
 
@@ -37,7 +39,7 @@ ms.locfileid: "37085361"
 
 - 個々のメッセージまたはスレッド化会話をエクスポートする
 
-## <a name="terminology"></a>用語集
+## <a name="terminology"></a>用語
 
 ここでは、会話の再構築の使用を開始する際に役立つ定義について説明します。
 
@@ -134,13 +136,13 @@ ms.locfileid: "37085361"
 
 ![エクスポート](media/export.png)
 
-a. メタデータオプション
+a.  メタデータオプション
 
    - **ファイルの読み込み:** 各メッセージ、電子メール、およびドキュメントのメタデータが含まれています。 会話内のメッセージごとに1つの行があります。 
 
    - **タグ:** レビュープロセスからのタグはメタデータファイルに含まれています。 スレッド内のメッセージは、同じタグを共有します。 
 
-b. 会話オプション
+b.  会話オプション
   
    - **会話ファイル:** 会話ファイルをエクスポートすると、注釈付きのビューは PDF ファイルに変換され、エクスポートフォルダーにダウンロードされます。 1つのスレッドファイル内のメッセージは、同じ会話ファイルの PDF バージョンをポイントします。  
   

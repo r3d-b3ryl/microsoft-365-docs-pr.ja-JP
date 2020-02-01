@@ -1,5 +1,7 @@
 ---
 title: DLP ポリシーを作成、テスト、調整する
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: fe075c004c397baa2ed568a56c9d675cdd788857
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: defd5c8eba1202020fc8d3e3225c6ef4a425a331
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021973"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595564"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーを作成、テスト、調整する
 

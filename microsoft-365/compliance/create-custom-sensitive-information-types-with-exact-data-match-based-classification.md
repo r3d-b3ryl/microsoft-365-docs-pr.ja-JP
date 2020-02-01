@@ -1,5 +1,7 @@
 ---
 title: Exact Data Match によりカスタムの機密情報の種類を作成する
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exact Data Match に基づく分類を使って、カスタムの機密情報の種類を作成します。
-ms.openlocfilehash: a639c71753602ffd381c9240cf6e7273f3ba8bbe
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4f3fecc664850a2f766336040cbf559e1579c552
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708153"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596174"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -299,6 +301,9 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 > この手順を開始する前に、自分が  *EDM\_DataUploaders*  セキュリティ グループのメンバーであり、コンピューターのローカル管理者であることを確認します。
 
 1. [EDM アップロード エージェント](https://go.microsoft.com/fwlink/?linkid=2088639)をダウンロードしてインストールします。 既定では、インストール場所は、[C:\\Program Files\\Microsoft\\EdmUploadAgent] になります。
+
+> [!TIP]
+> サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
 
 2. EDM アップロード エージェントを承認するには、管理者として Windows コマンド プロンプトを開き、次のコマンドを実行します。
 

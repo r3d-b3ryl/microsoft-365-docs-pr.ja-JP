@@ -1,5 +1,7 @@
 ---
 title: 高度な電子情報開示でケースデータをエクスポートする
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0bd071912ca1a39779e71beed193b3f59fc93d21
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 51b19ccb7be459bdb58792c347c6f4cb33979f4f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085955"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594598"
 ---
 # <a name="export-case-data-in-advanced-ediscovery"></a>高度な電子情報開示でケースデータをエクスポートする
 
@@ -27,7 +29,7 @@ ms.locfileid: "37085955"
 
 **ダウンロード**–一連の小さなネイティブファイルを (ブラウザーを使用して) ダウンロードするために使用します。 このことは、データの小さなセットをエクスポートするのが最も簡単です。
 
-**エクスポート**: メタデータファイル、ネイティブファイル、テキストファイル、および PDF ファイルに保存されているがドキュメントのエクスポートなど、エクスポートされるデータをカスタマイズするために使用します。 エクスポートされたデータを Azure の保存場所にアップロードした後、ローカルコンピューターにダウンロードする必要があります。 詳細については、次のトピックを参照してください。 
+**エクスポート**: メタデータファイル、ネイティブファイル、テキストファイル、および PDF ファイルに保存されているがドキュメントのエクスポートなど、エクスポートされるデータをカスタマイズするために使用します。 エクスポートされたデータを Azure の保存場所にアップロードした後、ローカルコンピューターにダウンロードする必要があります。 詳細については、以下を参照してください。 
 
    - [レビュー セットからドキュメントをエクスポートする](export-documents-from-review-set.md)
 

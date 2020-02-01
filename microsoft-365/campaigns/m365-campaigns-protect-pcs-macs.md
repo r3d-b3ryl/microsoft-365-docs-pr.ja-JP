@@ -1,5 +1,7 @@
 ---
 title: 管理されていない Windows 10 Pc および Mac を保護する
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 93bb36f115ee5f83e07ac9623c852fec4dbf205f
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 7cb09d0cadcc70b96c5f1404defa5d0387947ca8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753626"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594798"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>管理されていない Windows 10 Pc および Mac を保護する
 

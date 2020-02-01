@@ -1,5 +1,7 @@
 ---
 title: クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: "管理者向け: でアイテムを削除する \n\nExchange Online メールボックスの er の回復可能なアイテムフォルダー (そのメールボックスが法的情報保持に配置されている場合でも)。 これは、Office 365 に誤ってこぼれたデータを削除する効果的な方法です。"
-ms.openlocfilehash: 6eeb3fecc531d4790330236f8b8857aa4344b371
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 1a242122726635be530ec16934b465c152279400
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259675"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595312"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
@@ -45,7 +47,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
   
 ## <a name="before-you-begin"></a>はじめに
 
-- コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。
+- コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[セキュリティ/コンプライアンス センターの電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」をご覧ください。
     
 - この記事で説明する手順は、非アクティブなメールボックスではサポートされていません。 これは、削除した後、非アクティブなメールボックスに保留 (または Office 365 アイテム保持ポリシー) を再適用できないためです。 非アクティブなメールボックスからホールドを削除すると、その保留中のメールボックスは通常の回復可能な削除によって削除され、管理フォルダーアシスタントによる処理後は組織から完全に削除されます。
     

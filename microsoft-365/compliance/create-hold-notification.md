@@ -1,5 +1,7 @@
 ---
 title: 法的情報保留通知を作成する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c34271f5dce3bc830241ba0fa5bad70cd294ba22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085298"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595624"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的情報保留通知を作成する
 
@@ -45,7 +47,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
     
     - **発行責任**者: ドロップダウンリストには、ケースメンバーの一覧が表示されます。 保管担当者に送信される各通知は、指定された発行責任者の代理として送信されます。
 
-4. **[次へ]** をクリックします。
+4. [**次へ**] をクリックします。
 
 ## <a name="step-2-define-the-portal-content"></a>手順 2: ポータルコンテンツを定義する
 
@@ -59,7 +61,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 2. 通知に差し込み変数を挿入して、通知をカスタマイズし、保管担当者コンプライアンスポータルを共有します。
 
-3. **[次へ]** をクリックします。
+3. [**次へ**] をクリックします。
 
   >[!Tip]
   >ポータルコンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [Use The Communications Editor](using-communications-editor.md)」を参照してください。
@@ -100,7 +102,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
    
 4. 保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。 手順2で定義したポータルコンテンツが再発行通知の最後に追加されることに注意してください。
    
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 
 >[!Note]
 >保留通知が変更されると、その通知に割り当てられたすべての保管担当者に対して、再発行の通知が自動的に送信されます。 通知が送信されると、保管担当者は保留通知を再認識するように求められます。 通知またはエスカレーションワークフローを設定している場合は、それらも再起動されます。 
@@ -127,7 +129,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 ![アラーム/エスカレーションページ](media/ReminderEscalations.PNG)
 
-### <a name="reminders"></a>Reminders
+### <a name="reminders"></a>リマインダー
 
 保留通知を送信した後は、通知ワークフローを定義することによって、応答のない保管担当者でフォローアップできます。 
 

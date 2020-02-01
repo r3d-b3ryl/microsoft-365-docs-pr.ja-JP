@@ -1,5 +1,7 @@
 ---
 title: リストまたはライブラリに Information Rights Management (IRM) を適用する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされたファイルを制御し、保護することができます。
-ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256814"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596084"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>リストまたはライブラリに Information Rights Management (IRM) を適用する
 
@@ -63,7 +65,7 @@ Information Rights Management (IRM) を使用すると、リストまたはラ�
     
 7. このリストまたはライブラリ内のドキュメントに追加の制限を適用するには、[**オプションの表示**] をクリックして、次のいずれかの操作を行います。
     
-|**次の操作を行います。**|**次の手順を実行します。**|
+|**これを行うには、次の手順を実行します。**|**次の手順を実行します。**|
 |:-----|:-----|
 |ユーザーにこのリストまたはライブラリからのドキュメントの印刷を許可する  <br/> |[**閲覧者に印刷を許可**する] チェックボックスをオンにします。  <br/> |
 |少なくとも、アイテムの表示権限を持つユーザーがドキュメントに対して埋め込みコードまたはマクロを実行できるようにします。  <br/> |[**閲覧者に、ダウンロードしたドキュメントで機能するようにスクリーンリーダーを許可**する] チェックボックスをオンにします。  <br/> このオプションを選択すると、ユーザーはコードを実行してドキュメントのコンテンツを抽出することができます。           |

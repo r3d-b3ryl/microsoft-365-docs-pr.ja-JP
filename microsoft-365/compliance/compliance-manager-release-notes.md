@@ -1,5 +1,7 @@
 ---
 title: Microsoft コンプライアンスマネージャーリリースノート
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: c988a727bc48a5b27146168a66a0831c9b57b216
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c3d0efbfcf58eb001d2df5832439c22c7cc662aa
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806690"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595784"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>コンプライアンスマネージャーのリリースノート (プレビュー)
 
@@ -42,7 +44,7 @@ ms.locfileid: "40806690"
 
 次のセクションでは、コンプライアンスマネージャーの今後のリリースで解決される既知の問題について説明します。
 
-### <a name="compliance-score"></a>コンプライアンススコア
+### <a name="compliance-score"></a>コンプライアンス スコア
 
 - **スコープ内にない**とマークされたアクションアイテムの場合、アクションアイテムに割り当てられているスコアは、コンプライアンススコアの計算から除外されません。 **スコープにない**アクションアイテムは、コンプライアンススコアを増加しません。
 

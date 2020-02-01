@@ -1,5 +1,7 @@
 ---
 title: コンテンツ検索をコピーする
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: この記事に記載されている Windows PowerShell スクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで既存のコンテンツ検索をすばやく複製します。 検索を複製すると、元の検索と同じプロパティを含む新しい検索 (新しい名前) が作成されます。 その後、キーワードクエリまたは日付範囲を変更して新しい検索を編集し、それを実行します。
-ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 59fdaab7cf12bc0f5c4b08cbac1834803e5a8d98
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633846"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595884"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 

@@ -1,5 +1,7 @@
 ---
 title: 課金アカウントを管理する
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -13,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 課金アカウントとそれらを管理する方法について説明します。
-ms.openlocfilehash: 9a5d7548608cb44befb271e63420e7eb84b2e399
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d05b0c78da31ca0c829a71708906c34d6b54be97
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805750"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594154"
 ---
 # <a name="manage-billing-accounts"></a>課金アカウントを管理する
 

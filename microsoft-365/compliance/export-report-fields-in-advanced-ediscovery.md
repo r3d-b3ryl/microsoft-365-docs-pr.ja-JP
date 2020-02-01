@@ -1,5 +1,7 @@
 ---
 title: Office 365 でレポートフィールドをエクスポートする高度な電子情報開示
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 高度な電子情報開示のエクスポートレポートに含まれるすべてのフィールドについて説明します。
-ms.openlocfilehash: cc585fcabefa9036d91162b6418c3e5e9c752378
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: facd93422bbe41a9dc8c5f252cf08eab7fb308f2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805840"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594618"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Office 365 でレポートフィールドをエクスポートする高度な電子情報開示
 

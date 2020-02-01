@@ -1,5 +1,7 @@
 ---
 title: コンテンツ検索の結果をエクスポートするときにレポートを無効にする
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Office 365 のセキュリティ & コンプライアンスセンターからコンテンツ検索の結果をエクスポートするときにレポートを無効にするには、ローカルコンピューターの Windows レジストリを編集します。 これらのレポートを無効にすると、ダウンロード時間が短縮され、ディスク容量が節約されます。
-ms.openlocfilehash: f9b999eaf3f1924012c9d4899b0e234f0893fc2c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 99f8079bdbb0a3a43d0306dcf6b6ca8ab2c4fbef
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686899"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595242"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>コンテンツ検索の結果をエクスポートするときにレポートを無効にする
 

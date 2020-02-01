@@ -1,5 +1,7 @@
 ---
 title: Office 365 カスタマー ロックボックス要求
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: a9f7f6116d4667e294666afc71747a6fad1efb33
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233768"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595504"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
@@ -148,7 +150,7 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 |:---------- |:----------|
 | 日付       | 顧客のロックボックス要求が承認または拒否された日時。
 | IP アドレス | 承認者が要求を承認または拒否するために使用したコンピューターの IP アドレス。 |
-| ユーザー       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
+| User       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
 | アクティビティ   | AccessToCustomerDataRequest;これは、顧客のロックボックス要求を承認または拒否するときに記録される監査アクティビティです。                                |
 | アイテム       | 顧客のロックボックス要求の Guid                             |
 
@@ -167,7 +169,7 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 |:---------- |:----------|
 | 日付       | アクションが実行された日時。 この操作が実行された時間は、顧客のロックボックス要求が承認された4時間以内になることに注意してください。              |
 | IP アドレス | Microsoft エンジニアが使用したコンピューターの IP アドレス。 |
-| ユーザー       | Microsoft Operator;この値は、このレコードが顧客のロックボックス要求に関連付けられていることを示します。                                  |
+| User       | Microsoft Operator;この値は、このレコードが顧客のロックボックス要求に関連付けられていることを示します。                                  |
 | アクティビティ   | Microsoft エンジニアによって実行されたアクティビティの名前。|
 | アイテム       | \<必須\>                                             |
 

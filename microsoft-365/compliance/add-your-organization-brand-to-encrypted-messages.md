@@ -1,5 +1,7 @@
 ---
 title: 暗号化されたメッセージに組織ブランドを追加する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 のグローバル管理者は、組織の暗号化された電子メールメッセージと暗号化ポータルの内容に組織のブランド化を適用することができます。
-ms.openlocfilehash: 118bf93f7bdcb7dc522f95978eb5bb4456e90d5b
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: b4712edd86099b1c382ef02ca54520b68a54614e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256744"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594028"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>暗号化されたメッセージに組織のブランドを追加する
 

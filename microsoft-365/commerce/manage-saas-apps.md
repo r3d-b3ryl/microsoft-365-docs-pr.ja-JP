@@ -7,16 +7,18 @@ ms.sitesec: library
 ms.pagetype: ''
 search.appverid: MET150
 author: trudyha
+f1.keywords:
+- NOCSH
 ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: 047c93dd6dbeeb1e55bfc22b337f42870f34e104
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 6473fefc0db3b21b2bf6ed5820d2d48018b45264
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753556"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594678"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサードパーティ製アプリのサブスクリプションを管理する
 
@@ -78,12 +80,12 @@ ms.locfileid: "38753556"
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
 2. [ **Billing** > **Products & services** > **Apps**] を選択します。
 3. 管理するアプリを検索して選択します。 
-4. [**設定 & アクション**] の下で、 **publisher のポータルで管理**するリンクを選択します。 
+4. [**設定とアクション**] の下で、[**発行元のポータルで管理する**] へのリンクを選択します。 
  
 ## <a name="change-license-quantity"></a>ライセンス数を変更する
 管理者は、組織によって所有されているライセンスの数を変更できます。 これは、座席ベースの価格設定を使用して購入したアプリにのみ適用されます。
 
-**ライセンスの数量を変更するには**
+**ライセンス数を変更するには**
 
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
 2. [ **Billing** > **Products & services** > **Apps**] を選択します。
@@ -116,4 +118,4 @@ ms.locfileid: "38753556"
 1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=837890)に移動し、[**プレビューの試行**] をオンにします。
 2. [ **Billing** > **Products & services** > **Apps**] を選択します。
 3. 管理するアプリを検索して選択します。 
-4. [**設定 & アクション**] で、[**サブスクリプションのキャンセル**] を選択します。
+4. [**設定とアクション**] の下で、[**サブスクリプションのキャンセル**] を選択します。

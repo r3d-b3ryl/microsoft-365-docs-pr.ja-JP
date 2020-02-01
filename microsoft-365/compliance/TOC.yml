@@ -34,7 +34,7 @@
           href: insider-risk-management-content-explorer.md
         - name: ユーザーを insider リスクポリシーに追加する (プレビュー)
           href: insider-risk-management-users.md
-        - name: Insider のリスク通知の作成 (プレビュー)
+        - name: Insider のリスク通知テンプレートを作成する (プレビュー)
           href: insider-risk-management-notices.md
     - name: 通信のコンプライアンス (プレビュー)
       items:
@@ -61,7 +61,7 @@
           href: information-barriers-troubleshooting.md
         - name: 情報障壁ポリシーの編集
           href: information-barriers-edit-segments-policies.md
-    - name: 特権アクセス管理
+    - name: 特権アクセスの管理
       items:
         - name: 特権アクセス管理の詳細情報
           href: privileged-access-management-overview.md
@@ -852,7 +852,7 @@
           href: offering-csa-star-attestation.md
         - name: CSA-STAR 認定資格
           href: offering-csa-star-certification.md
-        - name: CSA-STAR 自己診断
+        - name: CSA-スター自己評価
           href: offering-csa-star-self-assessment.md
         - name: ISO 20000-1-2011
           href: offering-iso-20000-1-2011.md

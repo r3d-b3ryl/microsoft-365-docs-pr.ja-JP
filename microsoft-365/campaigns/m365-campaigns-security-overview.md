@@ -1,5 +1,7 @@
 ---
 title: キャンペーンのセキュリティ保護を強化する
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 でキャンペーンのセキュリティを強化して、キャンペーンを保護する方法について説明します。
-ms.openlocfilehash: 74c7d5f5836fd77b591389dd467114c93b8ab14e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: f2d57fe0cbc6765b359a759c3d33c6482d86bb06
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772414"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594788"
 ---
 # <a name="bump-up-security-protection-for-your-campaign"></a>キャンペーンのセキュリティ保護を強化する
 
@@ -42,6 +44,6 @@ ms.locfileid: "35772414"
 - [マルウェアやその他の脅威から保護する](m365-campaigns-increase-protection.md)
 - アカウントとアプリを保護して、[キャンペーンデータへのアクセスを保護する](m365-campaigns-conditional-access.md)
 - [管理者アカウントを保護する](m365-campaigns-protect-admin-accounts.md)
-- [モバイルデバイスをセットアップする](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [モバイル デバイスのセットアップ](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 - [ユーザーをトレーニングする](m365-campaigns-users.md) 
 

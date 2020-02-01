@@ -1,5 +1,7 @@
 ---
 title: OneDrive for Business および SharePoint Online におけるデータ暗号化
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: OneDrive for Business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
-ms.openlocfilehash: a1ed9f511f77883428b23ff224956593763403e1
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e22412f43f8caf4ff12d3f6e4f56e08d9d77b4ae
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686825"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595444"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 

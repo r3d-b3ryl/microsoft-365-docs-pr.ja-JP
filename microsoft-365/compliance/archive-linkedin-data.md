@@ -1,5 +1,7 @@
 ---
 title: コネクタをセットアップして LinkedIn データをアーカイブする
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365 に LinkedIn Company ページからデータをインポートするためのネイティブコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのコンプライアンスを管理することができます。
-ms.openlocfilehash: 109d05b5bd2e4a361a92487f86198a07be124dfc
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: c8e39577a6eaba3ad865b1617683c2baa9260759
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269454"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596024"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>コネクタをセットアップして LinkedIn データをアーカイブする
 

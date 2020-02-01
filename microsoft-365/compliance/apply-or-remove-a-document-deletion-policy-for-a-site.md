@@ -1,5 +1,7 @@
 ---
 title: サイトのドキュメント削除ポリシーを適用または削除する
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 多くの場合、組織は一定期間、ドキュメントの保持が要求されるコンプライアンス、法的要件、その他の規制を受けます。しかし、必要以上にドキュメントを長く保持すると、組織が法的なリスクにさらされる場合があります。このため、組織は、例えば一般的なビジネス文書は作成の 5 年後に削除する必要があるといった、ドキュメント削除ポリシーをサイトに作成する場合があります。
-ms.openlocfilehash: b21c24d902591e1aa619bdd5433e1a7b0c551ff0
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808242"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596074"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>サイトのドキュメント削除ポリシーを適用または削除する
 
@@ -75,7 +77,7 @@ ms.locfileid: "40808242"
     > [!NOTE]
     > サイトコレクションにポリシーが割り当てられていない場合、[**ドキュメント削除ポリシー**のリンクは表示されません。 また、リンクは、ポリシーがサイトに割り当てられた直後には表示されず、[**ドキュメント削除ポリシー** ] リンクが表示されるときにポリシーが割り当てられると、最大24時間かかることがあります。 
   
-3. 次のいずれかを実行します。
+3. 次のいずれかの操作を行います。
     
   - **ポリシーを適用するには**ポリシー \>の選択そのポリシー \>の [**保存**] でルールを選択します。
     

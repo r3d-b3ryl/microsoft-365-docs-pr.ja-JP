@@ -1,5 +1,7 @@
 ---
 title: Office 365 で無制限アーカイブを有効にする — 管理者向けヘルプ
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者向け: Exchange Online メールボックスで無制限の記憶領域をユーザーに提供する、Office 365 での自動拡張アーカイブを有効にする方法について説明します。 組織全体に対し、または特定のユーザーだけに対し、自動拡張アーカイブを有効にすることができます。'
-ms.openlocfilehash: 4059e007039a62e415fd0b5847d1d8fa120a1570
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: d37243c65770ff7bbcce4cbe4cfd593b68b7a869
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850891"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593208"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Office 365 で無制限アーカイブを有効にする — 管理者向けヘルプ
 

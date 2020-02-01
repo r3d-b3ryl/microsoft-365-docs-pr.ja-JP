@@ -1,5 +1,7 @@
 ---
 title: Office 365 での見積もりおよび実際の電子情報開示の検索結果の相違点
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Office 365 で電子情報開示ツールを使用して検索を実行すると、予想および実際の検索結果が異なる理由を理解します。 '
-ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085143"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595252"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 での見積もりおよび実際の電子情報開示の検索結果の相違点
 
@@ -59,7 +61,7 @@ ms.locfileid: "37085143"
     
     セキュリティ & コンプライアンスセンターでコンテンツ検索ツールを使用する場合は、検索の推定にインデックスのないアイテムを含めるオプションがあります。 検索によって返されるインデックス付けされていないアイテムの数は、その他の予測される検索結果と共に詳細ウィンドウに表示されます。 インデックスが設定されていないアイテムは、推定検索結果の合計サイズにも含まれます。 検索結果をエクスポートする場合は、インデックスのないアイテムを含めるか非表示にするかを選択できます。 これらのオプションをどのように構成するかによって、予想される結果と実際の検索結果との間で相違が生じることがあります。 
     
-- **すべてのコンテンツの場所を含むコンテンツ検索の結果をエクスポート**する-結果のエクスポート元の検索が組織内のすべてのコンテンツの場所の検索であった場合、次の内容を含むインデックス位置からのインデックスがないアイテムのみ検索条件に一致するアイテムはエクスポートされます。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. ただし、すべてのコンテンツの場所 (検索クエリに一致するアイテムが含まれていないものも含む) のインデックスが設定されていないアイテムは、推定検索結果に含まれます。 
+- **すべてのコンテンツの場所を含むコンテンツ検索の結果をエクスポート**する-結果のエクスポート元の検索が組織内のすべてのコンテンツの場所の検索であった場合、検索条件に一致するアイテムを含むインデックスのないアイテムのみがエクスポートされます。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. ただし、すべてのコンテンツの場所 (検索クエリに一致するアイテムが含まれていないものも含む) のインデックスが設定されていないアイテムは、推定検索結果に含まれます。 
     
     または、エクスポートした検索結果に特定のコンテンツの場所が含まれている場合、検索で指定されたすべてのコンテンツの場所からインデックスが設定されていないアイテム (検索条件によって除外されていない) はエクスポートされます。 この例では、インデックスが設定されていないアイテムの推定数と、実際にエクスポートされたインデックスのないアイテムの数は同じである必要があります。
     

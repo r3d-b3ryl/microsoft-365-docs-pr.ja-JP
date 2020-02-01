@@ -1,5 +1,7 @@
 ---
 title: Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Office 365 Business Premium から Microsoft 365 Business にビジネスをアップグレードする手順。
-ms.openlocfilehash: 61da9148ccb87654aa2391ff90c4f086a4cbbe24
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 0732f76e5bd8540e5954bd7ea7b88061326901b5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120143"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593681"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
 
@@ -38,7 +40,7 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 Business Premium と Microsoft 365 Business の違いは何ですか。
 これらの2つのプランを[Microsoft 365 Business Service の説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)に並べて比較しました。 
 
-## <a name="before-you-get-started"></a>開始する前に
+## <a name="before-you-get-started"></a>使用を開始する前に
 
 - **いつアップグレードを選択する必要がありますか。** アップグレードは、1つのプランに割り当てられた**すべてのユーザー**をアップグレードする場合に最適です。 [アップグレード] を選択すると、すべてのプランユーザーが同時に別のプランに切り替えられます。 1つのプランに割り当てられたすべてのユーザーをアップグレードしない場合は、新しいプラン (この場合は Microsoft 365 Business) のライセンスを購入し、アップグレードするユーザーごとに[これらのライセンスを個別に割り当て](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)ます。 
 - **一部のアドオンでアップグレードができない場合がある**アップグレードを開始しようとしていて、続行できないアドオンがある場合は、最初にアドオンを削除してから、後で必要になったときに追加することができます。 

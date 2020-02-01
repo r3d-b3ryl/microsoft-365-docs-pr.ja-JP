@@ -1,5 +1,7 @@
 ---
 title: すぐに使用できる分類子を使用する (プレビュー)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる、machine learning 分類子を使用するための準備が整ったことが用意されています。 このトピックでは、これらを使用して分類子を使用する準備をする方法について説明します。
-ms.openlocfilehash: b94a49930cc2d460fb2db5ff4ff0f441f6c7b35a
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: c6659bc32131948c57ad0bf7c8e3a30fbce125d9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259433"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595894"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>すぐに使用できる分類子を使用する (プレビュー)
 

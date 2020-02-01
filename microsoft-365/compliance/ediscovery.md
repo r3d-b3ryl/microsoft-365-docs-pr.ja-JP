@@ -1,5 +1,7 @@
 ---
 title: Office 365 の電子情報開示
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Office 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
-ms.openlocfilehash: 33d3ca2e86a1ee4a2c191e72198d80c4c52c69e9
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 2386fcc2115b7acb3c869d79d04987a88f10de26
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823759"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595122"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 の電子情報開示
 

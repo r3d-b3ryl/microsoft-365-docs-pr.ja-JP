@@ -1,5 +1,7 @@
 ---
 title: 検索結果をレビュー セットに追加する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高度な電子情報開示ケースに関連付けられた検索結果を追加します。 アイテムは元の場所からコピーされ、Microsoft によって提供される Azure ストレージの場所にコピーされます。 また、アイテムもインデックスが再作成され、高度な電子情報開示によって画像ファイルの OCR が実行され、レビューと分析のための画像テキストがアップロードされます。
-ms.openlocfilehash: 838301576d84f4cf3dcb618904f55b661bcf95b3
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 748de7f3cb3fec5a37cb205e0d480701b4cded2e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257025"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594638"
 ---
 # <a name="add-search-results-to-a-review-set"></a>検索結果をレビュー セットに追加する
 

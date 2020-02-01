@@ -1,5 +1,7 @@
 ---
 title: MSCommerce PowerShell モジュールで AllowSelfServicePurchase を使用する
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスの購入をオンまたはオフにする方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cb035294ff7f6007e73464f88fc69376fc5b8cc1
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 5149a07daeedae3c28bc4326b92bb20881faebe2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748248"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594668"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールで AllowSelfServicePurchase を使用する
 

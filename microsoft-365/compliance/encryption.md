@@ -1,5 +1,7 @@
 ---
 title: Office 365 での暗号化
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 では、使用可能な暗号化、プロトコル、およびテクノロジが最強の状態で、コンテンツが保存され、転送中に暗号化されます。 Office 365 の暗号化の概要について説明します。
-ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686735"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593178"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 の暗号化
 
@@ -59,7 +61,7 @@ Office 365 には、Office 365 でのボリューム暗号化、ファイル暗�
   
 詳細については、次のリソースを参照してください。
   
-- [Azure Rights Management とは](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [Azure Active Directory Rights Management の概要](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 - [管理センターで Rights Management をアクティブ化する](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
@@ -81,4 +83,4 @@ Office 365 には、Office 365 でのボリューム暗号化、ファイル暗�
 
 [Office 365 のセキュリティおよび情報保護機能を計画する](plan-for-security-and-compliance.md)
 
-[Office 365 および Microsoft 365 のビジネスプランをセキュリティで保護するための10の方法のトップ](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[Office 365とMicrosoft 365 Businessプランを安全にする10の方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)

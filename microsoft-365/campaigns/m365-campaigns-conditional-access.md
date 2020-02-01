@@ -1,5 +1,7 @@
 ---
 title: 条件付きアクセスポリシーを設定する
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: MFA を要求する方法と、Microsoft 365 Business の条件付きアクセスポリシーを設定する方法について説明します。
-ms.openlocfilehash: 0279fff8dd4143c883b2f1633907ac197c65f04a
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748288"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594862"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>多要素認証を必要とし、条件付きアクセスポリシーを設定する
 

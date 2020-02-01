@@ -1,5 +1,7 @@
 ---
 title: コネクタを展開して Facebook ビジネスページデータをアーカイブする
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook のビジネスページをインポートおよびアーカイブするためのネイティブコネクタを Microsoft 365 にセットアップできます。 このデータを Microsoft 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: c13f055a9ca96d9b7cc1ec5791c476e6cda8e5f0
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 22810b377abf3ed30c53bab2cd27b970a5dcd62f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515738"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595302"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタを展開して Facebook ビジネスページデータをアーカイブする
 

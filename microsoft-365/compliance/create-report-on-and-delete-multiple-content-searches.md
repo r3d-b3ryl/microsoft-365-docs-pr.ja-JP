@@ -1,5 +1,7 @@
 ---
 title: 複数のコンテンツ検索の作成、報告、削除
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Office 365 のセキュリティ & コンプライアンスセンターで、PowerShell スクリプトを使用して検索を作成したりレポートを実行したりするなど、コンテンツ検索タスクを自動化する方法について説明します。
-ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686909"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595574"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
@@ -54,7 +56,7 @@ ms.locfileid: "38686909"
     ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
     ```
 
-    ファイルの最初の行、つまりヘッダー行には、新しいコンテンツ検索を作成するために、 **new-compliancesearch**コマンドレットで使用するパラメーター (手順3のスクリプト) が表示されます。 パラメーター名とパラメーター名の間はコンマで区切られています。 ヘッダー行にスペースがないことを確認してください。 ヘッダー行の下の各行は、各検索のパラメーター値を表します。 必ず、CSV ファイル内のプレースホルダーデータを実際のデータに置き換えてください。 
+    ファイルの最初の行、つまりヘッダー行には、新しいコンテンツ検索を作成するために、 **new-compliancesearch**コマンドレットで使用するパラメーター (手順3のスクリプト) が表示されます。 各パラメーター名はコンマで区切られています。 ヘッダー行にスペースがないことを確認してください。 ヘッダー行の下の各行は、各検索のパラメーター値を表します。 必ず、CSV ファイル内のプレースホルダーデータを実際のデータに置き換えてください。 
     
 2. Excel で .txt ファイルを開き、次の表の情報を使用して、各検索の情報でファイルを編集します。 
     
@@ -68,7 +70,7 @@ ms.locfileid: "38686909"
    
 3. Excel ファイルを CSV ファイルとして、ローカルコンピューター上のフォルダーに保存します。 手順3で作成したスクリプトでは、この CSV ファイルの情報を使用して検索を作成します。 
   
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: セキュリティ & コンプライアンスセンター PowerShell に接続する
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: セキュリティ/コンプライアンス センターの PowerShell に接続する
 
 次の手順では、組織のセキュリティ & コンプライアンスセンターの PowerShell に接続します。
   

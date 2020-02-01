@@ -1,5 +1,7 @@
 ---
 title: 高度な電子情報開示でケースのデータを収集する
+f1.keywords:
+- NOCSH
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4e0bc71071ecfe20a2141e72b1146e9688618faf
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: a6b86d9f86edc427e10c02a99e3cda3e5e79db66
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633606"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595854"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>高度な電子情報開示でケースのデータを収集する
 
@@ -39,7 +41,7 @@ ms.locfileid: "39633606"
 
 検索の推定が完了したら、検索を選択すると、検索結果に関する大まかな統計情報が表示される、フライアウトページが表示されます。 この時点で、[**統計**] ボタンがアクティブになります。 このチェックボックスをオンにすると、次のような検索統計情報を表示できます。
 
-- Summary
+- 概要
 - トップの場所
 - クエリ
 

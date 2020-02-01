@@ -1,5 +1,7 @@
 ---
 title: エクスポート ジョブのダウンロード
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Azure ストレージエクスプローラーをインストールして使用すると、アドバンスト eDiscovery のレビューセットからエクスポートされたドキュメントをダウンロードできます。
-ms.openlocfilehash: 412ec48865c6cb7e511e3f6068fe02d87a99f831
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c92b92a91755ef641d7fd5f4ef0533065e1f8349
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686894"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595152"
 ---
 # <a name="download-export-jobs"></a>エクスポート ジョブのダウンロード
 
@@ -63,7 +65,7 @@ ms.locfileid: "38686894"
 
     SAS URL の一部が [**表示名**] ボックスに表示されることに注意してください。 これは、保存場所に接続した後、**ストレージアカウント**の下に作成されるコンテナーの表示名として使用されます。 この名前は、高度な電子情報開示ケースの ID と一意の識別子で構成されます。 既定の表示名をそのまま使用することも、それを変更することもできます。 この設定を変更する場合は、表示名を一意にする必要があります。
 
-5.  **[次へ]** をクリックします。
+5.  [**次へ**] をクリックします。
 
     [**接続の概要**] ページが表示されます。
    

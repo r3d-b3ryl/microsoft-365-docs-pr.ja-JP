@@ -1,5 +1,7 @@
 ---
 title: 顧客キーを使用して Office 365 でデータを制御する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for business で Office 365 の顧客キーを設定する方法について説明します。 顧客キーを使用して、組織の暗号化キーを制御し、Office 365 を使用して Microsoft のデータセンターで保存されているデータを暗号化するように構成します。
-ms.openlocfilehash: 500adf03469833784228e13e26d8272716acc56c
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 6d8673443fd08edfbe6d9f8b320429a6424d2a30
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686824"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595694"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>顧客キーを使用して Office 365 でデータを制御する
 
@@ -206,7 +208,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
   -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
   ```
 
-  例:
+  次に例を示します。
     
   ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
@@ -221,7 +223,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
   ```
 
-    詳細は次のとおりです。
+    ここで、
     
   - *vaultname*は、作成したキーのコンテナーの名前です。 
     
@@ -278,7 +280,7 @@ Azure Key Vault にキーを追加するには、2つの方法があります。
 Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
-詳細は次のとおりです。
+ここで、
   
 - *vaultname*は、キーを作成するキーコンテナーの名前です。
 
@@ -337,7 +339,7 @@ Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>
 > [!TIP]
 > 出力ファイルに対して、コンテナー名とキー名の組み合わせを選択します。 これにより、ファイル名が自己記述されます。 バックアップファイルの名前が競合しないようにすることもできます。
   
-例:
+次に例を示します。
   
 ```powershell
 Backup-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -447,7 +449,7 @@ DEP を作成するには、次の手順を実行します。
    New-DataEncryptionPolicy -Name <PolicyName> -Description "PolicyDescription " -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
-   詳細は次のとおりです。
+   ここで、
 
    -  *PolicyName*は、ポリシーに使用する名前です。 名前にスペースを含めることはできません。 たとえば、USA_mailboxes のようにします。
 
@@ -566,7 +568,7 @@ Office 365 の顧客キーを設定した後、これらの追加の管理タス
 Restore-AzureKeyVaultKey -VaultName <vaultname> -InputFile <filename>
 ```
 
-例:
+次に例を示します。
   
 ```powershell
 Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -584,7 +586,7 @@ Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso
   
 キーをロールすると、既存のキーの新しいバージョンが要求されます。 既存のキーの新しいバージョンを要求するために、最初にキーを作成したときと同じ構文を使用して、同じコマンドレット[AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey)を使用します。
   
-例:
+次に例を示します。
   
 ```powershell
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
@@ -629,7 +631,7 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 Get-AzureRmKeyVault -VaultName <vaultname>
 ```
 
-例:
+次に例を示します。
   
 ```powershell
 Get-AzureRmKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -642,7 +644,7 @@ Remove-AzureRmKeyVaultAccessPolicy -VaultName <vaultname>
 -UserPrincipalName <UPN of user>
 ```
 
-例:
+次に例を示します。
   
 ```powershell
 Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1

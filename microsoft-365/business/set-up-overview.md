@@ -1,5 +1,7 @@
 ---
 title: 手順の概要
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business のセットアップ手順の概要。
-ms.openlocfilehash: cab999493bf86ed0adf32521eaf6b3943f107f79
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 07cbd4fd187f78474783db848ac9b69068d2b44a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995252"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595067"
 ---
 # <a name="overview-of-setup"></a>手順の概要
 
@@ -36,7 +38,7 @@ Microsoft 365 Business のセットアップに関する短いビデオをご覧
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 セットアップの手順のほとんどはセットアップウィザードで行うことができますが、その他のオプションも表示されます。
 

@@ -1,5 +1,7 @@
 ---
 title: 電子情報開示ソリューションシリーズデータ流出シナリオ-検索と削除
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Office 365 の電子情報開示および検索ツールを使用して、組織内のデータ流出インシデントを管理および応答します。
-ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558364"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595404"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューションシリーズ: Data 流出 scenario-検索と削除
 
@@ -54,7 +56,7 @@ Contoso 社のリード情報セキュリティ責任者であること。 従�
     
 - ケースを作成するには、電子情報開示マネージャーの役割グループのメンバーであるか、またはケース管理役割が割り当てられているカスタム役割グループのメンバーである必要があります。 メンバーではない場合は、Office 365 管理者に[電子情報開示マネージャーの役割グループへの追加](assign-ediscovery-permissions.md)を依頼してください。
     
-- コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。
+- コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[セキュリティ/コンプライアンス センターの電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」をご覧ください。
     
 - 手順8で Office 365 監査ログ電子情報開示アクティビティを検索するには、組織に対して監査を有効にする必要があります。 過去90日以内に実行されたアクティビティを検索できます。 監査を有効にして使用する方法の詳細については、手順8の「[データ流出調査プロセスの監査](#auditing-the-data-spillage-investigation-process)」セクションを参照してください。 
     
@@ -168,7 +170,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>手順 7: こぼれたデータを完全に削除する
 
-手順6で収集して準備したメールボックスの場所と、手順3で作成して調整した検索クエリを使用して、こぼれたデータが含まれている電子メールメッセージを検索することで、そのデータを完全に削除できます。  前述したように、メッセージを削除するには、組織の管理役割グループのメンバーであるか、または検索と削除の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。
+手順6で収集して準備したメールボックスの場所と、手順3で作成して調整した検索クエリを使用して、こぼれたデータが含まれている電子メールメッセージを検索することで、そのデータを完全に削除できます。  前述したように、メッセージを削除するには、組織の管理役割グループのメンバーであるか、または検索と削除の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[セキュリティ/コンプライアンス センターの電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」をご覧ください。
 
 こぼれたメッセージを削除するには、「[メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」のステップ 2 & 3 を参照してください。
   

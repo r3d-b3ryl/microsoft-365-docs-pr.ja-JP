@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 のデータ調査用リリースノート (プレビュー)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
-ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085201"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595414"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査用リリースノート (プレビュー)
 
@@ -45,4 +47,4 @@ Microsoft 365 の新しいデータ調査 (プレビュー) ツールを使用�
 
 - **ジョブ**–長時間実行されているプロセスの状態を追跡します。
 
-- **ハードディスクを削除するメールボックスアイテム**-緊急事態の場合は、正しく配置されていないアイテムを完全に削除する必要があります。 これを行うには、セキュリティ & コンプライアンスセンターの PowerShell で PurgeType を使用して、メールボックスからアイテムを完全に削除するように、 **new-compliancesearchaction-のハード削除**コマンドを実行します。 詳細については、「 [new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)」を参照してください。
+- **ハードディスクを削除するメールボックスアイテム**-緊急事態の場合は、正しく配置されていないアイテムを完全に削除する必要があります。 これを行うには、セキュリティ & コンプライアンスセンターの PowerShell で PurgeType を使用して、メールボックスからアイテムを完全に削除するように、 **new-compliancesearchaction-のハード削除**コマンドを実行します。 詳細については、「[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)」を参照してください。

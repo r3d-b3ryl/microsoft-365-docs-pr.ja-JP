@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 Business へのサインアップ
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business を購入してサインアップする方法について説明します。
-ms.openlocfilehash: d755931b6383a15376d3a875a9cf1ed93e9f4a63
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 63bff3d34df017d1c7cc437ef050d53623e76aa9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831245"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594250"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Microsoft 365 Business へのサインアップ
 
@@ -38,7 +40,7 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 - **Microsoft パートナーの**場合: パートナーである場合は、「Microsoft[パートナーセンターから microsoft 365 Business を取得](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)する」を参照してください。
 - **Microsoft ストアのヘルプを参照**してください。 [Microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)にアクセスします。 Microsoft ストアは、プランに関する質問を支援したり、ビジネスニーズに合ったプランを購入したり、設定を完了したりするのに役立ちます。
 
-**別のものが必要ですか。** 次の操作を実行できます:
+**別のものが必要ですか。** 以下のことを実行できます。
 - [Office 365 プランを Microsoft 365 Business にアップグレード](migrate-to-microsoft-365-business.md)します。
 - 1か月間、Microsoft 365 Business の[無料試用版を取得](https://go.microsoft.com/fwlink/p/?linkid=2102309)します。
 - 機能が少ないプランを必要とする場合は、 [Office 365 Business Premium にサインアップして](https://go.microsoft.com/fwlink/p/?LinkID=510935)ください。 各ビジネスプランに含まれる[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)について説明します。
@@ -50,7 +52,7 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-このビデオが役に立つ場合は、[小規模企業のための完全なトレーニングシリーズと、Microsoft 365 に新たに追加](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)されたトレーニングをご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 お客様のビジネス向けに Microsoft 365 にサインアップして購入するには、次の手順を実行します。
 
@@ -93,4 +95,4 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business training のビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -1,5 +1,7 @@
 ---
 title: Office 365 で ID リストコンテンツ検索用の CSV ファイルを準備する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 特定の電子メールメッセージを返す ID リスト検索を作成するには、既存のコンテンツ検索から .csv ファイルまたはインデックスを作成しない .csv ファイルを使用します。 通常、ID リスト検索は、部分的にインデックスが作成されたメールボックスアイテムを返すために使用されます。
-ms.openlocfilehash: caeb1874b113c601135531a1913bdcdda424a3d8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806540"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595524"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Office 365 で ID リストコンテンツ検索用の CSV ファイルを準備する
 

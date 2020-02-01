@@ -1,5 +1,7 @@
 ---
 title: 検索と分析の設定を構成する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ケースのすべてのレビューセットに適用される高度な電子情報開示設定を構成します。 これには、分析と OCR の設定が含まれます。
-ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202198"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595714"
 ---
 # <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
 
@@ -81,7 +83,7 @@ ms.locfileid: "39202198"
 
 ## <a name="optical-character-recognition-ocr"></a>光学式文字認識 (OCR)
 
-この設定をオンにすると、イメージのテキストをレビュー、検索、タグ付け、および分析できるように、OCR がイメージファイルに対して実行されます。 抽出されたテキストは、校閲セットの選択したイメージファイルのテキストビューアーに表示できます。 詳しくは、次のトピックを参照してください。
+この設定をオンにすると、イメージのテキストをレビュー、検索、タグ付け、および分析できるように、OCR がイメージファイルに対して実行されます。 抽出されたテキストは、校閲セットの選択したイメージファイルのテキストビューアーに表示できます。 詳細については、以下を参照してください。
 
 - [検索結果をレビュー セットに追加する](add-data-to-review-set.md#optical-character-recognition)
 

@@ -1,5 +1,7 @@
 ---
 title: ポリシーとデバイスの表示
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: グローバル管理者の資格情報を使用して Microsoft 365 business にサインインして、デバイスのポリシーとアクションを表示します。
-ms.openlocfilehash: 982c1f410802f9589d40073a11768b7dd68567c0
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 9664a72d85cf6eed9993937299d38a84b9a8f0d2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718921"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595589"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>ポリシーとデバイスの表示と管理
 
@@ -33,7 +35,7 @@ ms.locfileid: "38718921"
 
 ## <a name="view-and-edit-device-policies"></a>デバイスポリシーを表示および編集する
 
-1.  <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
+1.  <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 2. 左側のナビゲーションで、[**デバイス** \> **ポリシー**] を選択します。
 
     このページでは、ポリシーを作成、編集、変更対象グループ、または削除することができます。

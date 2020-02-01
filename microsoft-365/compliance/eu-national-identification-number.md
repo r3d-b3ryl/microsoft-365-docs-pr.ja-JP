@@ -1,5 +1,7 @@
 ---
 title: EU 国家識別番号
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f001d23ec3d6d8a2b3aa9575d4a9d602c4315e13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805940"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41592238"
 ---
 # <a name="eu-national-identification-number"></a>EU 国家識別番号
 
@@ -37,7 +39,7 @@ ms.locfileid: "40805940"
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -175,7 +177,7 @@ edinen grazhdanski nomer
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -676,7 +678,7 @@ asmens のためのものです。
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -749,7 +751,7 @@ eindeutigeid#
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -1108,7 +1110,7 @@ emšo
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 

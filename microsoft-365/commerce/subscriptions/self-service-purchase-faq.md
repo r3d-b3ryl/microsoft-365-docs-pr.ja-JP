@@ -1,5 +1,7 @@
 ---
 title: セルフサービス購入についてよく寄せられる質問
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -13,19 +15,19 @@ search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120158"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594101"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
 > [!NOTE]
 > この記事に記載されている情報は、Microsoft 電源プラットフォーム (Power BI、電源アプリ、およびパワー自動化) サブスクリプションにのみ適用されます。
 
-米国では、Power BI でセルフサービス購入を利用できるようになりました。
+米国では、セルフサービス購入を Power Platform で利用できるようになりました。
 
 ## <a name="general"></a>全般
 
@@ -43,7 +45,7 @@ ms.locfileid: "41120158"
 
 ### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>セルフサービス購入に使用できる電源プラットフォーム製品を教えてください。
 
-Microsoft は、お客様が米国で Power BI のセルフサービス購入を開始しており、今後数か月に追加のマーケットが利用可能になりました。 パワーアプリと電源自動化は、2020年1月28日に米国の顧客に追加されます。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。
+Microsoft は、米国の顧客に対して、電力プラットフォーム (Power BI、電源アプリ、および電源自動化) に対するセルフサービスの購入を開始しており、今後数か月に追加のマーケットが利用可能になりました。 現時点では、この機能は米国政府機関、非営利団体、または教育機関のテナントでは使用できません。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>電源プラットフォーム製品を超えたサービスに対してセルフサービス購入が有効になりますか?
 

@@ -1,5 +1,7 @@
 ---
 title: 高度な電子情報開示で、弁護士クライアント特権の検出を設定する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 上級電子情報開示ケースのコンテンツを確認するときに、権限のあるコンテンツのマシン学習ベースの検出を使用するには、「弁護士クライアント特権検出モデル」を使用します。
-ms.openlocfilehash: f4d5252a44183f5e2e38e4f4676c73d350befaf2
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: b60fe72cf476b9a6cbbd5cae3ed1a1e541d6b313
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233724"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595964"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>高度な電子情報開示で、弁護士クライアント特権の検出を設定する
 

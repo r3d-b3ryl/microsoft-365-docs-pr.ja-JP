@@ -1,5 +1,7 @@
 ---
 title: 管理者アカウントを保護する
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントをセットアップして保護する方法について説明します。
-ms.openlocfilehash: 76c90b48e0f0859ed856b6e3dc772aedfc2ccdaf
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 6160f7458dc9a4c343c48f07d87776529c4f1326
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753744"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594822"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
