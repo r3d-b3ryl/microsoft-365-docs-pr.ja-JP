@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d45be77abd404f87484d0f8390f09f1b9bc3b8ce
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d3f24e8615f5b11b0853d7f1e36b49eb0cf2424f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600010"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661923"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -33,23 +33,25 @@ ms.locfileid: "41600010"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Microsoft 365 セキュリティを実行および使用するライセンス、ハードウェアとソフトウェアの要件、およびその他の構成設定について説明します。
+Microsoft の脅威保護をプロビジョニングおよび使用するためのライセンス、ハードウェア要件、ソフトウェア要件、およびその他の構成設定について説明します。
 
 ## <a name="licensing-requirements"></a>ライセンス要件
-Microsoft 365 セキュリティには、次のいずれかのライセンスが必要です。
+Microsoft の脅威保護を使用するには、次のいずれかのライセンスまたはライセンスの組み合わせが必要です。
 
-- Microsoft 365 E5 
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
 - Office 365 E5、Enterprise Mobility + Security E5、および Windows E5
 
-これらのライセンスは、[Microsoft 365 Enterprise ページ](https://www.microsoft.com/en-us/microsoft-365/enterprise)から取得できます。
+[Microsoft 365 Enterprise service プランを表示する](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 
 ### <a name="check-your-existing--licenses"></a>既存のライセンスを確認する
-[admin.microsoft.com](https://admin.microsoft.com/) の Microsoft 365 管理センターに移動し、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
+Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com/)) に移動して、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
 
-ライセンス情報を確認するには、[**課金管理者**] または [**グローバルな閲覧者**] の[役割を Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) で割り当てる必要があります。 アクセスの問題が発生した場合は、グローバル管理者に連絡してください。  
+>[!NOTE]
+> ライセンス情報を表示するには、 [AZURE AD の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)**課金管理者**または**グローバル閲覧**者の役割のいずれかが割り当てられている必要があります。 アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
-Microsoft 365 セキュリティ センターへのアクセスはブラウザーで行います。 Internet Explorer と Microsoft Edge がサポートされています。 HTML5 に準拠したブラウザーもサポートされています。
+Microsoft Edge、Internet Explorer 11、または任意の HTML 5 準拠の web ブラウザーを使用して、microsoft 365 セキュリティセンターの Microsoft 脅威保護にアクセスします。
 
 ## <a name="related-topics"></a>関連項目
 - [Microsoft Threat Protection の概要](microsoft-threat-protection.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Threat Protection サービスに関する問題のトラブルシューティング
 description: 既知の Microsoft Threat Protection の問題の解決策と対処方法を見つける
-keywords: Microsoft Threat Protection のトラブルシューティング、トラブルシューティング、問題
+keywords: Microsoft の脅威保護、トラブルシューティング、Azure ATP、問題、アドオン、設定ページのトラブルシューティング
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2f7faec3223ca707e166c229b48093193be09d1e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbc7d5d434765b94b0b2707605be2edfbbc8e423
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599974"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661983"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Microsoft Threat Protection サービスに関する問題のトラブルシューティング
 
@@ -34,8 +34,8 @@ ms.locfileid: "41599974"
 このセクションでは、Microsoft Threat Protection サービスを使用するときに発生する可能性のある問題に対処します。
 
 
-## <a name="not-seeing-microsoft-threat-protection-content"></a>Microsoft Threat Protection コンテンツが表示されない
-インシデント、アクションセンター、ポータルでの検索などの機能がナビゲーション ウィンドウに表示されない場合は、テナントに適切なライセンスがあることを確認する必要があります。 
+## <a name="i-dont-see-microsoft-threat-protection-content"></a>Microsoft Threat Protection コンテンツが表示されない
+ポータルでインシデント、アクションセンター、探している機能など、ナビゲーションウィンドウに機能が表示されない場合は、テナントに適切なライセンスがあることを確認する必要があります。 
 
 詳細については、「[前提条件](prerequisites.md)」をご覧ください。
 
@@ -45,6 +45,11 @@ ms.locfileid: "41599974"
 詳細については、「[Azure ATP 統合](https://docs.microsoft.com/cloud-app-security/aatp-integration)」を参照してください。
 
 ## <a name="is-microsoft-threat-protection-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Microsoft Threat Protection は、米国政府機関向けコミュニティ クラウド (GCC) または GCC High で使用できますか?
-現時点では、使用できません。 
+現時点では、使用できません。
 
+## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>サービスをオンにするための設定ページはどこにありますか。
+Microsoft の脅威保護を有効にするには、Microsoft 365 セキュリティセンターのナビゲーションウィンドウの**設定**にアクセスします。 このナビゲーション項目は、[必要なアクセス許可とライセンス](mtp-enable.md#check-license-eligibility-and-required-permissions)がある場合にのみ表示されます。
+
+## <a name="can-i-use-an-add-on-instead-of-the-required-e5-licenses"></a>必要な E5 ライセンスではなくアドオンを使用できますか?
+現在、Microsoft の脅威保護に対するアドオンはありません。 [ライセンス要件を参照してください。](prerequisites.md) 
 

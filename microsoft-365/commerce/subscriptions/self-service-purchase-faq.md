@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594101"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661911"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
@@ -101,7 +101,7 @@ Microsoft は、米国の顧客に対して、電力プラットフォーム (Po
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>セルフサービス購入における管理者の権限を教えてください
 
-管理者は、組織内で行われたすべてのセルフサービスの購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。 組織に必要な場合、管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入された製品と一元的に購入された製品に対して、同じデータ管理およびアクセスポリシーを有します。
+管理者は、組織内で行われたすべてのセルフサービスの購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。 電源プラットフォーム管理センターでは、管理者はセルフサービス購入容量を表示することもできます。 組織に必要な場合、管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入された製品と一元的に購入された製品に対して、同じデータ管理およびアクセスポリシーを有します。
 
 管理者は、組織内のユーザーがセルフサービス購入を行うことができるかどうかを制御することもできます。 詳細については、「 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
 
