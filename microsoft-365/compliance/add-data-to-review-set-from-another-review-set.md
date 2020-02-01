@@ -1,5 +1,7 @@
 ---
 title: 1つのレビューセットから別のレビューセットにデータを追加する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,33 +16,33 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62acfd2240801e59447209c7cb1e41912d3dcf4d
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 1c0f174b29d49ec1d07c128f709ee3279c1b53ef
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256754"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594050"
 ---
-# <a name="add-data-to-a-review-set-from-another-review-set"></a><span data-ttu-id="86f9e-102">別のレビューセットからのレビューセットへのデータの追加</span><span class="sxs-lookup"><span data-stu-id="86f9e-102">Add data to a review set from another review set</span></span>
+# <a name="add-data-to-a-review-set-from-another-review-set"></a><span data-ttu-id="2d74a-102">別のレビューセットからのレビューセットへのデータの追加</span><span class="sxs-lookup"><span data-stu-id="2d74a-102">Add data to a review set from another review set</span></span>
 
-<span data-ttu-id="86f9e-103">場合によっては、1つの校閲セットからドキュメントを選択して、別のレビューセットで個別に操作する必要があります。</span><span class="sxs-lookup"><span data-stu-id="86f9e-103">In some cases, it may be necessary to select documents from one review set and work with them individually in another review set.</span></span> <span data-ttu-id="86f9e-104">これは、校閲セットのコンテンツをカリングし、データのサブセットに対して分析を実行する場合に特に便利です。</span><span class="sxs-lookup"><span data-stu-id="86f9e-104">This is especially useful if you've culled content in a review set and want to run analytics on the subset of data.</span></span>
+<span data-ttu-id="2d74a-103">場合によっては、1つの校閲セットからドキュメントを選択して、別のレビューセットで個別に操作する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2d74a-103">In some cases, it may be necessary to select documents from one review set and work with them individually in another review set.</span></span> <span data-ttu-id="2d74a-104">これは、校閲セットのコンテンツをカリングし、データのサブセットに対して分析を実行する場合に特に便利です。</span><span class="sxs-lookup"><span data-stu-id="2d74a-104">This is especially useful if you've culled content in a review set and want to run analytics on the subset of data.</span></span>
 
-<span data-ttu-id="86f9e-105">この記事のワークフローに従って、ある校閲セットから別のレビューセットにコンテンツを追加します。</span><span class="sxs-lookup"><span data-stu-id="86f9e-105">Follow the workflow in this article to add content from one review set to another.</span></span>
+<span data-ttu-id="2d74a-105">この記事のワークフローに従って、ある校閲セットから別のレビューセットにコンテンツを追加します。</span><span class="sxs-lookup"><span data-stu-id="2d74a-105">Follow the workflow in this article to add content from one review set to another.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="86f9e-106">始める前に</span><span class="sxs-lookup"><span data-stu-id="86f9e-106">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="2d74a-106">始める前に</span><span class="sxs-lookup"><span data-stu-id="2d74a-106">Before you begin</span></span>
 
-<span data-ttu-id="86f9e-107">開始する前に、データを追加するための新しいレビューセットを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="86f9e-107">Before you start, you'll need to create a new review set to add the data to.</span></span>  <span data-ttu-id="86f9e-108">ケースの [**レビューセット**] タブに新しいレビューセットを追加できます。</span><span class="sxs-lookup"><span data-stu-id="86f9e-108">A new review set can be added on the **Review sets** tab of the case.</span></span> <span data-ttu-id="86f9e-109">詳細については、「[レビューセットを作成する](managing-review-sets.md#create-a-review-set)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="86f9e-109">For more information, see [Create a review set](managing-review-sets.md#create-a-review-set).</span></span>
+<span data-ttu-id="2d74a-107">開始する前に、データを追加するための新しいレビューセットを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2d74a-107">Before you start, you'll need to create a new review set to add the data to.</span></span>  <span data-ttu-id="2d74a-108">ケースの [**レビューセット**] タブに新しいレビューセットを追加できます。</span><span class="sxs-lookup"><span data-stu-id="2d74a-108">A new review set can be added on the **Review sets** tab of the case.</span></span> <span data-ttu-id="2d74a-109">詳細については、「[レビューセットを作成する](managing-review-sets.md#create-a-review-set)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2d74a-109">For more information, see [Create a review set](managing-review-sets.md#create-a-review-set).</span></span>
 
-## <a name="step-1-identify-content-to-add-to-another-review-set"></a><span data-ttu-id="86f9e-110">手順 1: 別のレビューセットに追加するコンテンツを識別する</span><span class="sxs-lookup"><span data-stu-id="86f9e-110">Step 1: Identify content to add to another review set</span></span>
+## <a name="step-1-identify-content-to-add-to-another-review-set"></a><span data-ttu-id="2d74a-110">手順 1: 別のレビューセットに追加するコンテンツを識別する</span><span class="sxs-lookup"><span data-stu-id="2d74a-110">Step 1: Identify content to add to another review set</span></span>
 
-<span data-ttu-id="86f9e-111">ソースレビューセット内の特定のドキュメントを選択するか、またはレビューセットクエリによって返されるすべてのアイテムを選択することによって、1つのレビューセットから別のレビューセットにコンテンツを追加できます。</span><span class="sxs-lookup"><span data-stu-id="86f9e-111">You can add content from one review set to another one by selecting specific documents in the source review set or by selecting all items returned by review set query.</span></span> <span data-ttu-id="86f9e-112">選択したアイテムを追加している場合は、アイテムを選択し、[**アクション**] を選択してから、[**別のレビューセットに追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="86f9e-112">If you're adding selected items, select the items, select **Action**, and then select **Add to another review set**.</span></span>
+<span data-ttu-id="2d74a-111">ソースレビューセット内の特定のドキュメントを選択するか、またはレビューセットクエリによって返されるすべてのアイテムを選択することによって、1つのレビューセットから別のレビューセットにコンテンツを追加できます。</span><span class="sxs-lookup"><span data-stu-id="2d74a-111">You can add content from one review set to another one by selecting specific documents in the source review set or by selecting all items returned by review set query.</span></span> <span data-ttu-id="2d74a-112">選択したアイテムを追加している場合は、アイテムを選択し、[**アクション**] を選択してから、[**別のレビューセットに追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2d74a-112">If you're adding selected items, select the items, select **Action**, and then select **Add to another review set**.</span></span>
 
 ![別の校閲セットに追加する](media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 
-## <a name="step-2-specify-options-for-adding-to-another-review-set"></a><span data-ttu-id="86f9e-114">手順 2: 別のレビューセットに追加するためのオプションを指定する</span><span class="sxs-lookup"><span data-stu-id="86f9e-114">Step 2: Specify options for adding to another review set</span></span>
+## <a name="step-2-specify-options-for-adding-to-another-review-set"></a><span data-ttu-id="2d74a-114">手順 2: 別のレビューセットに追加するためのオプションを指定する</span><span class="sxs-lookup"><span data-stu-id="2d74a-114">Step 2: Specify options for adding to another review set</span></span>
 
-<span data-ttu-id="86f9e-115">[**別のレビューセットオプションポップアップに追加**] ページで、アイテムを追加するレビューセットを選択します。</span><span class="sxs-lookup"><span data-stu-id="86f9e-115">In the **Add to another review set options** flyout page, choose the review set you want to add the items to.</span></span> <span data-ttu-id="86f9e-116">**すべての検索結果**または**選択したアイテム**を追加するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="86f9e-116">Choose whether to add **All search results** or **Selected items**.</span></span>  <span data-ttu-id="86f9e-117">**その他の情報**には、アイテムのすべてのメタデータを含めるオプションと、ドキュメントが新しいレビューセットに追加されたときにソースレビューセットからタグを含める (**ラベル**チェックボックスをオンにする) 必要があるかどうかが表示されます。</span><span class="sxs-lookup"><span data-stu-id="86f9e-117">**Additional information** provides options to include all metadata from the items and whether to include the tags (by selecting the **Labels** check box) from the source review set when the documents are added to the new review set.</span></span>  
+<span data-ttu-id="2d74a-115">[**別のレビューセットオプションポップアップに追加**] ページで、アイテムを追加するレビューセットを選択します。</span><span class="sxs-lookup"><span data-stu-id="2d74a-115">In the **Add to another review set options** flyout page, choose the review set you want to add the items to.</span></span> <span data-ttu-id="2d74a-116">**すべての検索結果**または**選択したアイテム**を追加するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="2d74a-116">Choose whether to add **All search results** or **Selected items**.</span></span>  <span data-ttu-id="2d74a-117">**その他の情報**には、アイテムのすべてのメタデータを含めるオプションと、ドキュメントが新しいレビューセットに追加されたときにソースレビューセットからタグを含める (**ラベル**チェックボックスをオンにする) 必要があるかどうかが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2d74a-117">**Additional information** provides options to include all metadata from the items and whether to include the tags (by selecting the **Labels** check box) from the source review set when the documents are added to the new review set.</span></span>  
 
 ![別の校閲セットに追加する](media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
-<span data-ttu-id="86f9e-119">[ **Ok]** をクリックすると、別のレビューセットにコンテンツを追加するための新しいジョブ (**別のレビューセットへのデータの追加**) が作成されます。</span><span class="sxs-lookup"><span data-stu-id="86f9e-119">After you click **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set.</span></span> <span data-ttu-id="86f9e-120">[**ジョブ**] タブに移動して、このジョブの進行状況を監視できます。</span><span class="sxs-lookup"><span data-stu-id="86f9e-120">You can go to the **Jobs** tab and monitor the progress of this job.</span></span> <span data-ttu-id="86f9e-121">詳細については、「 [Manage jobs](managing-jobs-ediscovery20.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="86f9e-121">For more information, see [Manage jobs](managing-jobs-ediscovery20.md).</span></span>
+<span data-ttu-id="2d74a-119">[ **Ok]** をクリックすると、別のレビューセットにコンテンツを追加するための新しいジョブ (**別のレビューセットへのデータの追加**) が作成されます。</span><span class="sxs-lookup"><span data-stu-id="2d74a-119">After you click **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set.</span></span> <span data-ttu-id="2d74a-120">[**ジョブ**] タブに移動して、このジョブの進行状況を監視できます。</span><span class="sxs-lookup"><span data-stu-id="2d74a-120">You can go to the **Jobs** tab and monitor the progress of this job.</span></span> <span data-ttu-id="2d74a-121">詳細については、「 [Manage jobs](managing-jobs-ediscovery20.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2d74a-121">For more information, see [Manage jobs](managing-jobs-ediscovery20.md).</span></span>

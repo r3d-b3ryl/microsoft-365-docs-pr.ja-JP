@@ -1,5 +1,7 @@
 ---
 title: ファイルやビデオを共有する
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: twerner
 manager: scotv
@@ -22,48 +24,48 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams と SharePoint を使用して、キャンペーン内でファイルとビデオを共有できます。
-ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: bd6fae6c728cee50efcb5094edd6c75f6bdf3b11
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753616"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594728"
 ---
-# <a name="share-files-and-videos"></a><span data-ttu-id="854b5-103">ファイルやビデオを共有する</span><span class="sxs-lookup"><span data-stu-id="854b5-103">Share files and videos</span></span>
+# <a name="share-files-and-videos"></a><span data-ttu-id="b2a45-103">ファイルやビデオを共有する</span><span class="sxs-lookup"><span data-stu-id="b2a45-103">Share files and videos</span></span>
 
-<span data-ttu-id="854b5-104">ファイルを表示できるユーザーと、ファイルを編集できるユーザーを制御する必要がある場合は、ファイルを安全な場所に保存して、アクセス許可を適切に適用できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="854b5-104">When you need to control who can view and who can edit your files, you need to store the files in a secure location, where you can make sure permissions are applied appropriately.</span></span> <span data-ttu-id="854b5-105">Microsoft teams を使用してファイルを保存し、Microsoft Teams を使用して、または SharePoint リンクを送信することによって、そのファイルをキャンペーンの内部または外部のどちらでも共有できます。</span><span class="sxs-lookup"><span data-stu-id="854b5-105">You can use Microsoft Teams to store your files, and then share the files either inside or outside of your campaign by using Microsoft Teams or by sending SharePoint links.</span></span> <span data-ttu-id="854b5-106">電子メールの添付ファイルではなくリンクを送信するということは、ファイルを表示および変更しているユーザーを知ることができます。また、アクセス許可がなくても、それらを表示または変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="854b5-106">Sending a link rather than an email attachment means that you know who is viewing and modifying the files, and they can't be viewed or modified without your permission.</span></span> 
+<span data-ttu-id="b2a45-104">ファイルを表示できるユーザーと、ファイルを編集できるユーザーを制御する必要がある場合は、ファイルを安全な場所に保存して、アクセス許可を適切に適用できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2a45-104">When you need to control who can view and who can edit your files, you need to store the files in a secure location, where you can make sure permissions are applied appropriately.</span></span> <span data-ttu-id="b2a45-105">Microsoft teams を使用してファイルを保存し、Microsoft Teams を使用して、または SharePoint リンクを送信することによって、そのファイルをキャンペーンの内部または外部のどちらでも共有できます。</span><span class="sxs-lookup"><span data-stu-id="b2a45-105">You can use Microsoft Teams to store your files, and then share the files either inside or outside of your campaign by using Microsoft Teams or by sending SharePoint links.</span></span> <span data-ttu-id="b2a45-106">電子メールの添付ファイルではなくリンクを送信するということは、ファイルを表示および変更しているユーザーを知ることができます。また、アクセス許可がなくても、それらを表示または変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="b2a45-106">Sending a link rather than an email attachment means that you know who is viewing and modifying the files, and they can't be viewed or modified without your permission.</span></span> 
 
 ![[ファイル] タブを表示し、メニューの [リンクの取得] を表示する Microsoft Teams ウィンドウの図](media/m365-democracy-teams-sharefiles.png)
 
-<span data-ttu-id="854b5-108">Microsoft Teams と SharePoint のファイルを使用して、ファイルに対して共同作業を行い、互いの変更を確認することもできます。</span><span class="sxs-lookup"><span data-stu-id="854b5-108">With your files in Microsoft Teams and SharePoint, you can also work on the files together and review each other's changes.</span></span> <span data-ttu-id="854b5-109">Microsoft Teams を使用して、政治キャンペーンの内部でファイルを共有します。</span><span class="sxs-lookup"><span data-stu-id="854b5-109">Use Microsoft Teams to share files inside of a political campaign.</span></span> <span data-ttu-id="854b5-110">キャンペーン外のユーザーと外部で共有する必要がある場合は、それらをゲストとしてチームに追加したり、セキュリティで保護された SharePoint リンクを送信したりできます。</span><span class="sxs-lookup"><span data-stu-id="854b5-110">If you need to share externally with people outside the campaign, you can add them as guests to a team or send them a secure SharePoint link.</span></span>
+<span data-ttu-id="b2a45-108">Microsoft Teams と SharePoint のファイルを使用して、ファイルに対して共同作業を行い、互いの変更を確認することもできます。</span><span class="sxs-lookup"><span data-stu-id="b2a45-108">With your files in Microsoft Teams and SharePoint, you can also work on the files together and review each other's changes.</span></span> <span data-ttu-id="b2a45-109">Microsoft Teams を使用して、政治キャンペーンの内部でファイルを共有します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-109">Use Microsoft Teams to share files inside of a political campaign.</span></span> <span data-ttu-id="b2a45-110">キャンペーン外のユーザーと外部で共有する必要がある場合は、それらをゲストとしてチームに追加したり、セキュリティで保護された SharePoint リンクを送信したりできます。</span><span class="sxs-lookup"><span data-stu-id="b2a45-110">If you need to share externally with people outside the campaign, you can add them as guests to a team or send them a secure SharePoint link.</span></span>
 
-<span data-ttu-id="854b5-111">Microsoft Stream を使用して、キャンペーンのビデオを保存および共有することもできます。</span><span class="sxs-lookup"><span data-stu-id="854b5-111">You can also use Microsoft Stream to store and share videos for your campaign.</span></span> <span data-ttu-id="854b5-112">これらのビデオは公開されていないため、内部のキャンペーンメッセージングには理想的です。</span><span class="sxs-lookup"><span data-stu-id="854b5-112">These videos are not viewable to the public so they are ideal for internal campaign messaging.</span></span>
+<span data-ttu-id="b2a45-111">Microsoft Stream を使用して、キャンペーンのビデオを保存および共有することもできます。</span><span class="sxs-lookup"><span data-stu-id="b2a45-111">You can also use Microsoft Stream to store and share videos for your campaign.</span></span> <span data-ttu-id="b2a45-112">これらのビデオは公開されていないため、内部のキャンペーンメッセージングには理想的です。</span><span class="sxs-lookup"><span data-stu-id="b2a45-112">These videos are not viewable to the public so they are ideal for internal campaign messaging.</span></span>
 
-## <a name="best-practices"></a><span data-ttu-id="854b5-113">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="854b5-113">Best practices</span></span>
+## <a name="best-practices"></a><span data-ttu-id="b2a45-113">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="b2a45-113">Best practices</span></span>
 
-<span data-ttu-id="854b5-114">次の方法を使用して、ファイルとビデオを安全に共有します。</span><span class="sxs-lookup"><span data-stu-id="854b5-114">Use these methods to share files and videos securely:</span></span>
+<span data-ttu-id="b2a45-114">次の方法を使用して、ファイルとビデオを安全に共有します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-114">Use these methods to share files and videos securely:</span></span>
 
-1. <span data-ttu-id="854b5-115">Microsoft Teams または SharePoint にファイルを保存し、それらのファイルへのアクセスを必要とするユーザーのみがファイルを所有していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="854b5-115">Store files in Microsoft Teams or SharePoint, and make sure that only the people who need access to those files have them.</span></span> 
-2. <span data-ttu-id="854b5-116">を共有する場合は、ファイルを電子メールに添付しないようにします。</span><span class="sxs-lookup"><span data-stu-id="854b5-116">When you want to share, don't attach files to an email.</span></span> <span data-ttu-id="854b5-117">代わりに、[Microsoft Teams または SharePoint から**リンクを取得**] を選択して、電子メールでリンクを送信します。</span><span class="sxs-lookup"><span data-stu-id="854b5-117">Instead, choose **Get link** from Microsoft Teams or SharePoint and send the link in email.</span></span>
-3. <span data-ttu-id="854b5-118">ファイルを外部で共有するには、ユーザーをゲストとしてチームに追加するか、SharePoint を使用してそのファイルのみを共有するためのセキュリティで保護されたリンクを取得します。</span><span class="sxs-lookup"><span data-stu-id="854b5-118">To share a file externally, add the user as a guest to your team, or use SharePoint to get a secure link to share just that file.</span></span>
-4. <span data-ttu-id="854b5-119">Microsoft Stream を使用して、キャンペーンに表示するビデオをホストします。</span><span class="sxs-lookup"><span data-stu-id="854b5-119">Use Microsoft Stream to host videos you want your campaign to see.</span></span> 
-5. <span data-ttu-id="854b5-120">Microsoft Teams または SharePoint を使用して、チームで共同作業または共有する必要があるビデオファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="854b5-120">Use Microsoft Teams or SharePoint to store video files you need your team to collaborate on or share.</span></span>
+1. <span data-ttu-id="b2a45-115">Microsoft Teams または SharePoint にファイルを保存し、それらのファイルへのアクセスを必要とするユーザーのみがファイルを所有していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="b2a45-115">Store files in Microsoft Teams or SharePoint, and make sure that only the people who need access to those files have them.</span></span> 
+2. <span data-ttu-id="b2a45-116">を共有する場合は、ファイルを電子メールに添付しないようにします。</span><span class="sxs-lookup"><span data-stu-id="b2a45-116">When you want to share, don't attach files to an email.</span></span> <span data-ttu-id="b2a45-117">代わりに、[Microsoft Teams または SharePoint から**リンクを取得**] を選択して、電子メールでリンクを送信します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-117">Instead, choose **Get link** from Microsoft Teams or SharePoint and send the link in email.</span></span>
+3. <span data-ttu-id="b2a45-118">ファイルを外部で共有するには、ユーザーをゲストとしてチームに追加するか、SharePoint を使用してそのファイルのみを共有するためのセキュリティで保護されたリンクを取得します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-118">To share a file externally, add the user as a guest to your team, or use SharePoint to get a secure link to share just that file.</span></span>
+4. <span data-ttu-id="b2a45-119">Microsoft Stream を使用して、キャンペーンに表示するビデオをホストします。</span><span class="sxs-lookup"><span data-stu-id="b2a45-119">Use Microsoft Stream to host videos you want your campaign to see.</span></span> 
+5. <span data-ttu-id="b2a45-120">Microsoft Teams または SharePoint を使用して、チームで共同作業または共有する必要があるビデオファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-120">Use Microsoft Teams or SharePoint to store video files you need your team to collaborate on or share.</span></span>
 
  
-## <a name="set-up"></a><span data-ttu-id="854b5-121">設定</span><span class="sxs-lookup"><span data-stu-id="854b5-121">Set up</span></span>
+## <a name="set-up"></a><span data-ttu-id="b2a45-121">設定</span><span class="sxs-lookup"><span data-stu-id="b2a45-121">Set up</span></span>
 
-<span data-ttu-id="854b5-122">チームを作成し、広告主または融資パートナーなどのゲストを追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="854b5-122">To create a team and add guests, like advertisers or financing partners, to it, follow these steps.</span></span>
+<span data-ttu-id="b2a45-122">チームを作成し、広告主または融資パートナーなどのゲストを追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-122">To create a team and add guests, like advertisers or financing partners, to it, follow these steps.</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-<span data-ttu-id="854b5-123">Microsoft Teams を使用せずに、保護されたリンクをゲストと共有するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="854b5-123">To share a secure link with a guest, without using Microsoft Teams, follow these steps</span></span>
+<span data-ttu-id="b2a45-123">Microsoft Teams を使用せずに、保護されたリンクをゲストと共有するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-123">To share a secure link with a guest, without using Microsoft Teams, follow these steps</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
-<span data-ttu-id="854b5-124">ビデオを作成して共有するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="854b5-124">To create and share videos, follow these steps.</span></span>
+<span data-ttu-id="b2a45-124">ビデオを作成して共有するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b2a45-124">To create and share videos, follow these steps.</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-<span data-ttu-id="854b5-125">ファイルを共有する方法の簡単な概要については、「 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435)または[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)でインフォグラフィックをダウンロードする」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="854b5-125">Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.</span></span>
+<span data-ttu-id="b2a45-125">ファイルを共有する方法の簡単な概要については、「 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435)または[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)でインフォグラフィックをダウンロードする」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="b2a45-125">Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.</span></span>
 
-<span data-ttu-id="854b5-126">[![別のユーザーとファイルを共有する図](media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)</span><span class="sxs-lookup"><span data-stu-id="854b5-126">[![An illustration of sharing files with different users](media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)</span></span>
+<span data-ttu-id="b2a45-126">[![別のユーザーとファイルを共有する図](media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)</span><span class="sxs-lookup"><span data-stu-id="b2a45-126">[![An illustration of sharing files with different users](media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)</span></span>
