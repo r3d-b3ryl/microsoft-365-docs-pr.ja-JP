@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02adda0c2c59d2994b0c6197dd76c6cc893ad9f0
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593696"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627983"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Microsoft 365 Business から Microsoft 365 E3 への移行
 
@@ -56,7 +56,6 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 | Teams | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | OneDrive for Business | ユーザーごとに 1 TB のストレージ制限   | 無制限 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| StaffHub  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
 | Outlook カスタマーマネージャー、ミル Eiq  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | | 
 | **脅威保護**     | | | 
 | 攻撃対象領域の削減機能 | [このリストを表示する](#threat-protection) | Microsoft Edge のハードウェアベースの分離のエンタープライズ管理 | 

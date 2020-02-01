@@ -1,5 +1,7 @@
 ---
 title: Advanced eDiscovery で保管担当者を操作する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced 電子情報開示の保管担当者管理ツールを使用すると、法的訴訟で関心のある人物に関連付けられているデータを識別、保持、および収集することに関するワークフローを管理できます。
-ms.openlocfilehash: 5f112b5229e2a13b329559786ffe82bce798fa72
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fd796471ae4caeafbabc7b588dcf03b8cad80bc4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085977"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600494"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Advanced eDiscovery で保管担当者を操作する
 

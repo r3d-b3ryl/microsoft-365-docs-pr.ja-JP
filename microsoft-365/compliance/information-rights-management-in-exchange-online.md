@@ -1,5 +1,7 @@
 ---
 title: 'AD RMS による Exchange Online のメールの暗号化 '
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 必要に応じて、社内の Active Directory Rights Management サービス (AD RMS) を使用するように Exchange Online IRM を構成し、組織の要件を満たすようにすることができます。 これは一般的ではありません。 AD RMS を使用するための要件がない場合は、代わりに Office メッセージの暗号化を使用します。
-ms.openlocfilehash: 1c3bdf02f31f57f1328f0244d539d0dc88e7ba89
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 24a86ad9b1a1f3bbd67e194143fa02cb4040a47e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686741"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600654"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>AD RMS による Exchange Online のメールの暗号化 
 

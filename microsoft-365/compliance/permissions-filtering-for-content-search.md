@@ -1,5 +1,7 @@
 ---
 title: コンテンツ検索用にアクセス許可フィルターを設定する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: コンテンツ検索アクセス許可のフィルター処理を使用して、電子情報開示管理者が Office 365 組織内のメールボックスとサイトのサブセットのみを検索できるようにします。
-ms.openlocfilehash: 97f01a7d0c91359251b4af2a26fe9c48aab7122e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 670dd2e5d0c88c520234cd7e71805cfa97ad9ec9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686939"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601764"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>コンテンツ検索用にアクセス許可フィルターを設定する
 

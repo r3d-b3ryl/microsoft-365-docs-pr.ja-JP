@@ -1,5 +1,7 @@
 ---
 title: スパム フィルターのルールとスパム フィルター ポリシーで無効な文字の使用を避ける
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: スパム対策構成に無効な文字が含まれていて、セキュリティ&amp; /コンプライアンスセンターを使用しようとしたときに問題が発生する管理者向けのヘルプを提供します。
-ms.openlocfilehash: 5e6fa97a3f325b6fc6fdc449ba4a61282f67b644
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: f1841eb86583a48acecde0770f030b626323fa8e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866719"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599114"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>スパムフィルタールールおよびスパムフィルターポリシーに無効な文字を使用しない 
 
@@ -52,7 +54,7 @@ ms.locfileid: "39866719"
     ```  
 
   
- ## <a name="for-more-information"></a>詳細情報
+ ## <a name="for-more-information"></a>関連情報
 
 [セキュリティ&amp; /コンプライアンスセンターでの脅威管理](protect-against-threats.md)
   

@@ -1,5 +1,7 @@
 ---
 title: EOP の機能
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
-ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840176"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599374"
 ---
 # <a name="eop-features"></a>EOP の機能
 
@@ -36,10 +38,10 @@ ms.locfileid: "40840176"
 |フィッシング対策保護|EOP には既知のスパム発信者 750,000 名のドメインが含まれています。|
 |**スパム管理**||
 |接続フィルター「IP 許可一覧」および「IP 禁止一覧」構成機能|この接続フィルターで指定する IP アドレスは、単一の IP アドレスと CIDR IP アドレス範囲で記述できます。 このサービスは IPv6 アドレスもサポートしています。 詳細については、「[接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)」を参照してください。|
-|ユーザー、グループ、またはドメインごとにコンテンツ フィルター ポリシーをカスタマイズする機能|よりきめ細かく制御する場合は、カスタム コンテンツ フィルター ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
-|コンテンツによりフィルター処理されたメッセージに対するアクションを構成する機能|複数の構成可能なアクションがあります。 たとえば、コンテンツによりフィルターされたメッセージを削除したり、[迷惑メール] フォルダーまたは検疫にそれらのメッセージを送信したりできます。 詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
+|ユーザー、グループ、またはドメインごとにコンテンツ フィルター ポリシーをカスタマイズする機能|よりきめ細かく制御する場合は、カスタム コンテンツ フィルター ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「[スパム フィルター ポリシーを構成する](configure-your-spam-filter-policies.md)」 を参照してください。|
+|コンテンツによりフィルター処理されたメッセージに対するアクションを構成する機能|複数の構成可能なアクションがあります。 たとえば、コンテンツによりフィルターされたメッセージを削除したり、[迷惑メール] フォルダーまたは検疫にそれらのメッセージを送信したりできます。 詳細については、「[スパム フィルター ポリシーを構成する](configure-your-spam-filter-policies.md)」 を参照してください。|
 |スパム メールを積極的にフィルター処理する拡張オプションの構成機能|詳細については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」および「 [Advanced spam filtering options](advanced-spam-filtering-asf-options.md) (各オプションの機能に関する具体的な詳細情報を提供します)」を参照してください。|
-|国際スパム フィルタリング|EOP を構成して、特定の言語で書かれたメッセージまたは特定の国や地域から送信されたメッセージをフィルターできます。 最大 86 言語、250 地域を構成できます。 サービスが信頼度の高いスパムに対して構成されたアクションを適用します。 詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
+|国際スパム フィルタリング|EOP を構成して、特定の言語で書かれたメッセージまたは特定の国や地域から送信されたメッセージをフィルターできます。 最大 86 言語、250 地域を構成できます。 サービスが信頼度の高いスパムに対して構成されたアクションを適用します。 詳細については、「[スパム フィルター ポリシーを構成する](configure-your-spam-filter-policies.md)」 を参照してください。|
 |Outlook または web 上の Outlook (旧称 Outlook Web App) を使用してスパムを管理する|管理者およびエンド ユーザーは、安全な送信者の一覧および受信拒否送信者の一覧を作成できます。 詳細情報: <br/>• **Web 上の Outlook**: [[ブロックまたは許可 (迷惑メール設定)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)] を参照してください。  <br/>• **Outlook**: 「[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。 <br/><br/> EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。|
 |Microsoft Office Outlook の迷惑メール報告アドイン経由のスパム報告|解析用に Microsoft にスパム メッセージを報告するためのアドインを Outlook にダウンロードできます。 このツールのダウンロードと使用の詳細については、「[レポートメッセージアドインを有効にする](enable-the-report-message-add-in.md)」を参照してください。 <br/><br/> EOP を使用して Exchange Server 2013 以降を使用している場合は、「 [web 上の outlook で迷惑メールとフィッシング詐欺を報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)する」に記載されているように、web 上の outlook で右クリックしてスパムメッセージを送信することもできます。|
 |電子メール エイリアスを使用したスパムおよび非スパムの報告|スパム (迷惑メール) メッセージと非スパム (非迷惑メール) メッセージを電子メール経由で Microsoft に報告できます。 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。|

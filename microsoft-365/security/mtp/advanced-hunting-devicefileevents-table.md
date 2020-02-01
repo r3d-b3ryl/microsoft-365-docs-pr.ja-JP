@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b772f1adccfcab52709fbedd872cb48b1c15f4e2
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 035efb5b2404708010f5fbfd4c419d59df088393
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210489"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600474"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -66,7 +68,7 @@ ms.locfileid: "41210489"
 | `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
 | `SensitivityLabel` | string | 情報保護のためにメール、ファイル、その他のコンテンツに適用されるラベル |
 | `SensitivitySubLabel` | string | Sublabel は、電子メール、ファイル、またはその他のコンテンツに適用され、情報保護のために分類します。機密サブラベルは、機密ラベルの下にグループ化されますが、個別に処理されます。 |
-| `IsAzureInfoProtectionApplied` | ブール型 | ファイルが Azure Information Protection によって暗号化されているかどうかを示します |
+| `IsAzureInfoProtectionApplied` | boolean | ファイルが Azure Information Protection によって暗号化されているかどうかを示します |
 
 ## <a name="related-topics"></a>関連項目
 - [積極的に脅威を捜索する](advanced-hunting-overview.md)

@@ -2,6 +2,8 @@
 title: メールが赤のフラグが設定されている場合のポリシーと保護の組み合わせ
 description: 電子メールが複数の種類の検出によってスキャンされた場合に、どのようなポリシーと保護が適用されるかについて説明します。 電子メールがマルウェア、スパム、信頼度の高いスパム、フィッシング、EOP によって、または ATP によってマークされたときに適用されるポリシーと実行するアクション。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c6b3fcc931aa396187eb81d0db495f77877f667b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807992"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599174"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー
 
@@ -29,11 +31,11 @@ ms.locfileid: "40807992"
 
 |優先度 |ポリシー  |カテゴリ  |管理対象の場所 |
 |---------|---------|---------|---------|
-|1-d     | マルウェア      | MALW      | マルウェア ポリシー   |
-|pbm-2     | フィッシング     | PHSH     | スパム フィルター ポリシーの設定     |
-|1/3     | 高確度スパム      | HSPM        | スパム フィルター ポリシーの設定        |
-|2/4     | スプーフィング        | SPOOF        | フィッシング対策ポリシー、スプーフィングインテリジェンス        |
-|5     | スパム         | SPM         | スパム フィルター ポリシーの設定         |
+|1      | マルウェア      | MALW      | マルウェア ポリシー   |
+|2      | フィッシング     | PHSH     | スパム フィルター ポリシーの設定     |
+|3      | 高確度スパム      | HSPM        | スパム フィルター ポリシーの設定        |
+|4      | スプーフィング        | SPOOF        | フィッシング対策ポリシー、スプーフィングインテリジェンス        |
+|5      | スパム         | SPM         | スパム フィルター ポリシーの設定         |
 |6      | バルク         | BULK        | スパム フィルター ポリシーの設定         |
 
 さらに、これらのポリシーは_ATP を使用している組織_にも適用されます。
@@ -47,8 +49,8 @@ ms.locfileid: "40807992"
 
 |ポリシー  |優先度  |ユーザー/ドメイン偽装  |スプーフィング対策  |
 |---------|---------|---------|---------|
-|A     | 1-d        | オン        |オフ         |
-|B     | pbm-2        | オフ        | オン        |
+|A     | 1         | オン        |オフ         |
+|B     | 2         | オフ        | オン        |
 
 メッセージが_ユーザーの偽装_と_スプーフィング_の両方として識別される (上記の表の「スプーフィング対策」を参照)、ポリシー a をスコープとする同じセットのユーザーがポリシー B を対象としている場合、メッセージはフラグが付けられ、_スプーフィング_として扱われます。 ただし、スプーフィングは、ユーザー偽装 (8) よりも高い優先度 (4) で実行されていますが、対策がオフになっているため、アクションは適用されません。
 

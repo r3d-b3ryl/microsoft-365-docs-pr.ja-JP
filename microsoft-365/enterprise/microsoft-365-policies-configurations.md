@@ -6,6 +6,8 @@ manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -14,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: eba186233efa5bebb980c4e16aafb0fe854910c9
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: af68a8e81cdaab1bbbd8887a7d586fcaefff1041
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031322"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600894"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -130,7 +132,7 @@ Windows 10 および Office 365 ProPlus は、Pc に推奨されるクライア�
 
 次の表では、3つの保護層でこれらの機能を使用するための推奨事項を要約しています。
 
-|保護メカニズム|基準|機密|高度な規制|
+|保護メカニズム|基準|機密|厳しく規制|
 |:-------------------|:-------|:--------|:---------------|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を強制する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|

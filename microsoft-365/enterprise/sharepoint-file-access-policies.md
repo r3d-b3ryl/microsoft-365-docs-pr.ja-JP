@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.date: 06/07/2018
 ms.reviewer: martincoetzer
@@ -14,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 1d1f9dc70982a629126f82aaa6f62fed1cece08f
-ms.sourcegitcommit: bd487d36b04b8f8caf10900e8c5237f9ccf9e072
+ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37654016"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600764"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -51,7 +53,7 @@ ms.locfileid: "37654016"
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 |         |[準拠*して*いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に SharePoint Online を含める|
 ||[Sharepoint Online のアクセス制御ポリシー](#sharepoint-online-access-control-policies): 管理されていないデバイスからの特定の SharePoint サイトへのブラウザー専用アクセスを許可する|これにより、ファイルの編集とダウンロードができなくなります。 PowerShell を使用してサイトを指定する|
-|**高度な規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
+|**厳しく規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 ||[Sharepoint Online のアクセス制御ポリシー](#use-app-enforced-restrictions-in-sharepoint-online): 管理されていないデバイスから特定の SharePoint サイトへのアクセスをブロックする|PowerShell を使用してサイトを指定する|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>SharePoint Online でアプリに強制される制限を使用する

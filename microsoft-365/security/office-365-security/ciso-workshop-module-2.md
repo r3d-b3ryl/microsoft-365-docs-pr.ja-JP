@@ -1,5 +1,7 @@
 ---
 title: 'チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 2: セキュリティ管理'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 4b1403b35c9cea10c87f528c6f09c2948f316f27
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: ebe1797e0a6a4b7f8bafa28b57feedbd96324093
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517586"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599714"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>CISO ワークショップモジュール 2: セキュリティ管理 
 

@@ -1,5 +1,7 @@
 ---
 title: ユーザーとデバイス アクセスの保護
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: O365 データおよびサービスへのアクセスを保護するためのランディングページ
-ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086625"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601704"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 
@@ -53,7 +55,7 @@ Office 365 環境を管理するために使用する管理アカウントには
 - Mult 認証
 - 条件付きアクセス
 - Intune アプリの保護 (デバイス用のアプリとデータの保護)
-- Intune デバイスのコンプライアンス
+- Intune デバイス コンプライアンス
 - Azure AD Identity Protection
 
 Intune デバイスコンプライアンスを実装するには、デバイスの登録が必要です。 デバイスを管理することにより、環境内のリソースへのアクセスを許可する前に、それらを正常かつ準拠していることを確認できます。 「 [Intune で管理用のデバイスを登録する](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)」を参照してください。

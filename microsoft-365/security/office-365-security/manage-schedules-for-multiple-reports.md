@@ -1,5 +1,7 @@
 ---
 title: セキュリティ&amp; /コンプライアンスセンターで複数のレポートのスケジュールを管理する
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: セキュリティ&amp;コンプライアンスセンターでレポートのスケジュールを表示、編集、および管理する方法について説明します。
-ms.openlocfilehash: d9858de4d51653a44eb310572a1f4ce457210066
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38fd211a20c86fffc564c8b4fbe86e963da7fe05
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086908"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598934"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで複数のレポートのスケジュールを管理する
 
@@ -30,7 +32,7 @@ ms.locfileid: "37086908"
   
 ![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>の管理] を選択します。](../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. に[https://protection.office.com](https://protection.office.com)移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
+1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
 
 2. セキュリティ&amp; /コンプライアンスセンターで、[**レポート** \>の**管理**] に移動します。
     

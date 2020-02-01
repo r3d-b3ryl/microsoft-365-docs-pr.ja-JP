@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ea20e7354838bade17ebb83522b543c8aec3d33e
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: ffff2802b52fb48bd7fc88fc0d3eac425380502e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233928"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602835"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -39,7 +41,7 @@ ms.locfileid: "41233928"
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
-| `IsSigned` | ブール型 | ファイルが署名されているかどうかを示します |
+| `IsSigned` | boolean | ファイルが署名されているかどうかを示します |
 | `SignatureType` | string | 署名情報がファイル自体の埋め込みコンテンツとして読み取られたか、外部カタログファイルから読み取られたかを示します |
 | `Signer` | string | ファイルの署名者に関する情報 |
 | `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
@@ -50,8 +52,8 @@ ms.locfileid: "41233928"
 | `CertificateCreationTime` | 日付型 | 証明書が作成された日付と時刻 |
 | `CertificateExpirationTime` | 日付型 | 証明書が期限切れに設定された日付と時刻 |
 | `CertificateCountersignatureTime` | 日付型 | 証明書が副署名された日付と時刻 |
-| `IsTrusted` | ブール型 | WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。この関数は、不明なルート証明書情報、無効な署名、失効した証明書、およびその他の疑わしい属性をチェックします。 |
-| `IsRootSignerMicrosoft` | ブール型 | ルート証明書の署名者が Microsoft であるかどうかを示します |
+| `IsTrusted` | boolean | WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。この関数は、不明なルート証明書情報、無効な署名、失効した証明書、およびその他の疑わしい属性をチェックします。 |
+| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 | 
 
 ## <a name="related-topics"></a>関連項目

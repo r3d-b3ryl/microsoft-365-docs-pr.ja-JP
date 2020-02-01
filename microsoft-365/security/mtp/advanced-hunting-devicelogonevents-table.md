@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5b2e1fdb49a5ae3730a7a7e67090e09430a8c999
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 708e55db1c39d85501b1c42f9a46821bbc2eff9e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210627"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600434"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -67,7 +69,7 @@ ms.locfileid: "41210627"
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
 | `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
-| `IsLocalAdmin` | ブール型 | ユーザーがコンピューターのローカル管理者であるかどうかを示すブールインジケーター |
+| `IsLocalAdmin` | boolean | ユーザーがコンピューターのローカル管理者であるかどうかを示すブールインジケーター |
 
 ## <a name="related-topics"></a>関連項目
 - [積極的に脅威を捜索する](advanced-hunting-overview.md)

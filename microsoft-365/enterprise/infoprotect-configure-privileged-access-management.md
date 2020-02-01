@@ -1,5 +1,7 @@
 ---
 title: '手順 7: Office 365 の特権アクセス管理を構成する'
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: e9c68e4fafb1e9537b403965b4360806938c6a6f
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: da047d21094854f15fdb39fc46fd046a1c4605ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370424"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600964"
 ---
 # <a name="step-7-configure-privileged-access-management-for-office-365"></a>手順 7: Office 365 の特権アクセス管理を構成する
 
@@ -42,10 +44,10 @@ Office 365 の特権アクセス管理を有効にするには、「[Office 365 
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  テストラボ環境でこの構成を実践するには、「[特権アクセス管理のテストラボガイド](privileged-access-microsoft-365-enterprise-dev-test-environment.md)」を参照してください。 |
+|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  テスト ラボ環境でこの構成の実習を行うには、「[特権アクセス管理テスト ラボ ガイド](privileged-access-microsoft-365-enterprise-dev-test-environment.md)」を参照してください。 |
 |||
 
-中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step7)を確認してください。
+中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step7)を確認できます。
 
 ## <a name="next-step"></a>次の手順
 

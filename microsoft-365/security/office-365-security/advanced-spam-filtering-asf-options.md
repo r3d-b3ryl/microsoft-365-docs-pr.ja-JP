@@ -1,5 +1,7 @@
 ---
 title: 高度なスパム フィルター処理オプション
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 高度なスパムフィルターオプションを使用すると、管理者はメッセージのさまざまなコンテンツ属性を検査できます。 このような属性がメッセージに存在すると、メッセージのスパム スコアが上がるか (そのためにスパムとして識別される可能性が上がる)、メッセージがスパムとしてマークされます。 ASF オプションの対象は、スパム メッセージで一般的に検出される、HTML タグや URL リダイレクトなど、特定のメッセージ プロパティです。
-ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 07f2b32dac6ba4a04fbccac5f015be399f62e254
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793701"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599964"
 ---
 # <a name="advanced-spam-filtering-options"></a>高度なスパム フィルター処理オプション
 

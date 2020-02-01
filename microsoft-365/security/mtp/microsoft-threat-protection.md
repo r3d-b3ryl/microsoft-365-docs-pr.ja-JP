@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a47ffecbf0ef1ac7dcfeef9d8cbe4e104de9ca2d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 031fc4164307d9fa8c78f02c775b230f7eff5383
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808582"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600184"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -73,7 +75,7 @@ Microsoft の脅威保護の製品間の機能には、次のようなものが�
 <br>
 
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>はじめに
 Microsoft 365 E5 または同等のライセンスをお持ちのお客様は、Microsoft Threat Protection を使用できます。 開始するには、 [security.microsoft.com](https://security.microsoft.com)の Microsoft 365 セキュリティセンターでサービスを有効にします。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

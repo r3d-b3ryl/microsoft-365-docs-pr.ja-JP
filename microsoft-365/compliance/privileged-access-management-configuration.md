@@ -1,5 +1,7 @@
 ---
 title: Office 365 での特権アクセス管理の構成
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 1ea929026db3ac50a0eac3d452c2608fd0c0d123
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959516"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601734"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理の構成
 

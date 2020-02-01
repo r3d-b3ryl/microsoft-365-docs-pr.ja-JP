@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 667dfe355aca61eff99a85c2a2c29ee0b57e74c5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030962"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601024"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -71,7 +73,7 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 |**iOS**|Outlook for iOS|[最新](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[最新](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
-|**Linux**|サポート対象外||
+|**Linux**|非サポート||
 |||
 
 
@@ -80,14 +82,14 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|OneDrive 同期クライアント|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 8.1|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 10|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows Phone 10|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
-|Android|サポート|サポート|サポート|サポート|該当なし|
-|iOS|サポート|サポート|サポート|サポート|該当なし|
+|Windows 7|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 8.1|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 10|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows Phone 10|非サポート|非サポート|サポート対象外|サポート対象外|サポート対象外|
+|Android|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
+|iOS|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
 |macOS|パブリック プレビュー|パブリック プレビュー|該当なし|該当なし|サポートされていません|
-|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
+|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 
 <sup>*</sup>[OneDrive 同期クライアント](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e)での条件付きアクセスの使用方法について説明します。
 

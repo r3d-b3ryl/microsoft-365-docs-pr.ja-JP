@@ -1,5 +1,7 @@
 ---
 title: 詳細な電子情報開示でのデータの分析に関連モジュールを使用する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: dc31dc560dd984259890094423873745c27ee4e2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ebf5490467ec041cb22c126ac75c90ae58deb942
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086525"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601274"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>詳細な電子情報開示でのデータの分析に関連モジュールを使用する
 

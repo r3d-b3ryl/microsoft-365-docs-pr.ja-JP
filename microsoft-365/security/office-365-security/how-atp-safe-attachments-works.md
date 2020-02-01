@@ -1,5 +1,7 @@
 ---
 title: Office 365 の ATP の安全な添付ファイルの動作
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: 78abf4aed7999e891907c981cddfea4e659d4285
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 951f9f0e50da6ef83135f1ca8f1ad109a8e66988
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305921"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599224"
 ---
 # <a name="how-office-365-atp-safe-attachments-works"></a>Office 365 の ATP の安全な添付ファイルの動作
 

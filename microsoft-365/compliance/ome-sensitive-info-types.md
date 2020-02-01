@@ -1,5 +1,7 @@
 ---
 title: Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: '概要: 機密情報の種類に関する Office 365 メッセージの暗号化ポリシー。'
-ms.openlocfilehash: 8632a0419b443d2810afd3554da572ab2197ae2a
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: a3767fb0f9fe5e565c49db4f9da94d75a3cee8a7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690657"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601794"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
 
@@ -32,7 +34,7 @@ Exchange 管理センター (EAC) にサインインし、[**メールフロー*
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>PowerShell でメールフロールールを使用してポリシーを作成するには
 
-Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始して Exchange Online に接続します。 手順については、「 [Exchange Online PowerShell への接続](https://aka.ms/exopowershell)」を参照してください。 New-transportrule コマンドレットと新しいコマンドレットを使用して、ポリシーを作成します。
+Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始して Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。 New-transportrule コマンドレットと新しいコマンドレットを使用して、ポリシーを作成します。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>PowerShell を使用して作成されたメールフロールールの例
 

@@ -1,5 +1,7 @@
 ---
 title: Office 365 で法的調査を管理する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Office 365 のセキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、組織の法的調査を管理します。 E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
-ms.openlocfilehash: ce476c93e9c33d949c5615f872b8399a97420bba
-ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
+ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "38686641"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600534"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Office 365 で法的調査を管理する
 
@@ -52,7 +54,7 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 
 上級電子情報開示では、Office 365 または Microsoft 365 組織の E5 サブスクリプションが必要です。 または、E3 ライセンスを持つユーザーが高度なコンプライアンスアドオンサブスクリプションを必要とするため、保管担当者として高度な電子情報開示ケースで管理することができます。
 
-高度な電子情報開示における組み込みワークフローの概要を次に示します。 詳細については、「 [Microsoft 365 の高度な電子情報開示ソリューションの概要](overview-ediscovery-20.md)」を参照してください。
+高度な電子情報開示における組み込みワークフローの概要を次に示します。 詳細については、「[Microsoft 365 の Advanced eDiscovery ソリューションの概要](overview-ediscovery-20.md)」を参照してください。
 
 - [ケースを作成](create-new-ediscovery-case.md)して開始する
 

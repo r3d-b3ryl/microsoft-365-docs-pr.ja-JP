@@ -1,5 +1,7 @@
 ---
 title: 自動転送済みメッセージレポート
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、Office 365 セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの自動転送メッセージレポートについて説明します。
-ms.openlocfilehash: f8909a983dab3f752c8396948e3c6e7d11281208
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2949f8991d7c65861fd390d3c843053ad36c0d60
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086901"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598904"
 ---
 # <a name="auto-forwarded-messages-report"></a>自動転送済みメッセージレポート
 

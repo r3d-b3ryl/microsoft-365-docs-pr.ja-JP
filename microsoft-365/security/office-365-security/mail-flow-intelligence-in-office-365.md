@@ -1,5 +1,7 @@
 ---
 title: Office 365 のメール フローのインテリジェンス
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、Office 365 のコネクタを使用したメッセージ配信に関連付けられているエラーコード (メールフローインテリジェンスとも呼ばれます) について学ぶことができます。
-ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971775"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599054"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 でのメール フロー インテリジェンス
 
@@ -42,7 +44,7 @@ ms.locfileid: "39971775"
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>エラー コード:450 4.4.315 接続がタイムアウトしました
 
-通常、これは Office 365 が宛先の電子メールサーバーに接続できないことを意味します。 エラーの詳細に、この問題についての説明があります。 例:
+通常、これは Office 365 が宛先の電子メールサーバーに接続できないことを意味します。 エラーの詳細に、この問題についての説明があります。 次に例を示します。
 
 - オンプレミスの電子メールサーバーがダウンしています。
 
@@ -82,7 +84,7 @@ ms.locfileid: "39971775"
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>エラー コード:450 4.4.317 リモート サーバーに接続できません
 
-通常、このエラーは、Office 365 が宛先の電子メールサーバーに接続されたが、サーバーが即時エラーで応答したか、接続要件を満たしていないことを意味します。 エラーの詳細に、この問題についての説明があります。 例:
+通常、このエラーは、Office 365 が宛先の電子メールサーバーに接続されたが、サーバーが即時エラーで応答したか、接続要件を満たしていないことを意味します。 エラーの詳細に、この問題についての説明があります。 次に例を示します。
 
 - 宛先の電子メールサーバーが、"サービスは利用できません" というエラーで応答しました。これは、サーバーが Office 365 との通信を維持できないことを示します。
 

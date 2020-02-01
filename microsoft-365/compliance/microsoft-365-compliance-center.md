@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 コンプライアンスセンターの概要
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 コンプライアンスセンター (含まれる内容、その取得方法、および次の手順) について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f1a779037b283d2b03b48890dc8eb8423d90c147
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247587"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602784"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの概要
 
@@ -88,7 +90,7 @@ Microsoft 365 コンプライアンスセンターに最初にアクセスする
 
 ![その他のリソース](media/m365-compliance-center-more-resources.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - 準拠スコアを向上させるために **、Microsoft コンプライアンススコアを確認**します。 詳細については、「[コンプライアンススコア (プレビュー)](compliance-score.md)」を参照してください。
 

@@ -1,5 +1,7 @@
 ---
 title: チーフ情報セキュリティ責任者 (CISO) ワークショップ
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7377eb0bedf86e69618a82a05a7f048cc9b1cde7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012422"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599654"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>チーフ情報セキュリティ責任者 (CISO) ワークショップのトレーニング
 
@@ -38,4 +40,4 @@ CISO ワークショップのビデオおよび PDF/PowerPoint のダウンロ�
 
 - [モジュール 4b: 脅威保護戦略 (第2部](ciso-workshop-module-4b.md)): このモジュールでは、セキュリティ運用センター (SOC) の進化と軌道について説明します。これは、Microsoft のインテリジェントセキュリティグラフの trillions シグナルによって提供されます。
 
-- [第5章: 情報保護](ciso-workshop-module-5.md): 自動分類、デバイス間での永続的な暗号化、モバイルデバイス、クラウドサービス、その他のデータの継続的な監視などの機密情報を保護する方法について説明します。会社の資産。
+- [第5章: 情報保護](ciso-workshop-module-5.md): 自動分類、デバイス間での永続的な暗号化、およびモバイルデバイス、クラウドサービス、およびその他の企業資産間でのデータの継続的な監視を使用して、機密情報を保護する方法について説明します。

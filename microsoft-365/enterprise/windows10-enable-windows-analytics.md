@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 964756a1fadba89f644a0d04c1d35d2945b78c6c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370094"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602874"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>手順 4: デバイスの正常性とコンプライアンスの監視
 
@@ -33,4 +35,4 @@ Windows Analytics のデバイスの正常性の機能は、エンド ユーザ�
 
 |||
 |:-------|:-----|
-|![ステップ 5](./media/stepnumbers/Step5.png)| [Windows 10 Enterprise のセキュリティ機能を展開する](windows10-enable-security-features.md) |
+|![手順 5](./media/stepnumbers/Step5.png)| [Windows 10 Enterprise のセキュリティ機能を展開する](windows10-enable-security-features.md) |

@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 コンプライアンスセンターの新機能
+f1.keywords:
+- NOCSH
 ms.author: brendonb
 author: brendonb
 manager: laurawi
@@ -16,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
-ms.openlocfilehash: 61e4798575c44a9759a15bb93dbbb723d5be8999
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850881"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601654"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -113,7 +115,7 @@ Office 365 Advanced Message Encryption を使用するために必要な Office 
 
 [Microsoft コンプライアンススコアの計算 (プレビュー)](compliance-score-methodology.md) (更新)<br>コンプライアンススコアの計算方法に関するコンテキストを追加しました。これには、スコアに関連する新しい Microsoft 365 データ保護基準の詳細が含まれます。
 
-### <a name="sensitivity-labels"></a>機密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 [コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)(更新)<br>Outlook で推奨されるラベル付けの今後のサポートに関する情報を削除しました。 重複するライセンス情報を削除しました。 [Office アプリの機密ラベル](sensitivity-labels-office-apps.md)で権限のある情報を指すようになりました。
 
@@ -154,7 +156,7 @@ Office 365 Advanced Message Encryption を使用するために必要な Office 
 
 [Microsoft 365 でのデータ流出インシデントの管理](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data)(更新)<br>新しい「元の場所からアイテムを削除する」機能を使用して、こぼれたデータを削除する方法の詳細を追加しました。
 
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>アクセス許可
 
 [Microsoft 365 コンプライアンスセンターおよび microsoft 365 セキュリティセンターのアクセス許可](../security/office-365-security/permissions-microsoft-365-compliance-security.md)(新)<br>新しい Azure Active Directory 役割グループはパブリックプレビューにリリースされました。
 

@@ -1,5 +1,7 @@
 ---
 title: '手順 6: 電子メールの暗号化を構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370434"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600924"
 ---
 # <a name="step-6-configure-email-encryption"></a>手順 6: 電子メールの暗号化を構成する
 
@@ -44,7 +46,7 @@ OME を使用すると、組織は組織内外のユーザー間で暗号化さ�
 
 暗号化の条件を定義するトランスポートルールを設定します。 ユーザーがルールに一致するメッセージを送信する場合、自動的に暗号化が適用されます。
 
-暗号化されたメッセージを表示するには、受信者はワンタイムパスコードを取得するか、Microsoft アカウントでサインインするか、Microsoft 365 に関連付けられた職場または学校のアカウントでサインインすることができます。 受信者は、暗号化された返信を送信することもできます。 暗号化されたメッセージを表示したり、暗号化された返信を送信したりするために、独自の Microsoft 365 サブスクリプションは必要ありません。
+暗号化されたメッセージを表示するには、受信者はワンタイムパスコードを取得するか、Microsoft アカウントでサインインするか、Microsoft 365 に関連付けられた職場または学校のアカウントでサインインすることができます。 受信者は暗号化された返事を送信することもできます。 暗号化されたメッセージを表示したり、暗号化された返信を送信したりするために、独自の Microsoft 365 サブスクリプションは必要ありません。
 
 詳細については、「 [Office 365 での暗号化](https://docs.microsoft.com/Office365/SecurityCompliance/ome)」を参照してください。
 
@@ -62,7 +64,7 @@ IRM ポリシーは、Microsoft 365 内で構成されており、SharePoint Onl
 
 ## <a name="smime"></a>S/MIME
 
-S/MIME は、デジタル証明書ベースの電子メールベースの保護ソリューションで、メッセージの暗号化とデジタル署名の両方を行うことができます。 メッセージの暗号化により、指定された受信者だけがメッセージを開き読むことができます。 デジタル署名は、受信者が送信者の身元を確認し、送信者のみが送信したことを確認するのに便利です。
+S/MIME は、デジタル証明書ベースの電子メールベースの保護ソリューションで、メッセージの暗号化とデジタル署名の両方を行うことができます。 メッセージを暗号化することで、本来の受信者だけがメッセージを開き、閲覧できます。 デジタル署名は、受信者が送信者の身元を確認し、送信者のみが送信したことを確認するのに便利です。
 
 ![電子メールメッセージの S/MIME 保護](./media/infoprotect-email-encryption/smime-protection.png)
 
@@ -79,4 +81,4 @@ S/MIME を使用するには、各受信者の公開キーを持っている必�
 
 |||
 |:-------|:-----|
-|![手順7](./media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
+|![手順 7](./media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|

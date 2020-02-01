@@ -1,5 +1,7 @@
 ---
 title: Office 365 での自動調査および対応 (AIR)
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
-ms.openlocfilehash: fcb48da4b6f3777fa8c21ef514d5f591e342562e
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41573044"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599804"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 の自動調査と応答 (AIR)
 
@@ -34,10 +36,10 @@ AIR の流れは大まかには次のようになります。
 
 |フェーズ  |内容  |
 |---------|---------|
-|1-d     |[通知](#alerts)は Office イベントによってトリガーされ、[セキュリティのプレイブック](#security-playbooks)は選択した通知の自動調査を開始します。 <br/><br/>また、セキュリティアナリストは、[エクスプローラー](threat-explorer.md)から[手動で自動調査を開始](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)することもできます。        |
-|pbm-2     |自動調査を実行すると、電子メールとその電子メールに関連するエンティティ (ファイル、Url、受信者) に関する追加データが収集されます。  新しい関連する警告がトリガーされると、調査のスコープが向上する可能性があります。         |
-|1/3     |自動調査の実行中および実行後は、[詳細情報と結果](#investigation-graph)を表示することができます。 結果には、検出された脅威に対処し、修復を行うためにとることができる[推奨処理](#recommended-actions) が含まれます。 さらに、調査のすべてのアクティビティを追跡する[プレイブックログ](#playbook-log)も利用できます。<br/><br/>組織でカスタム レポート ソリューションまたはサード パーティのソリューションを使用している場合は、[Office 365 マネージメント アクティビティ API を使用して](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)自動調査と脅威に関する情報を表示することができます。         |
-|2/4     |セキュリティ運用チームは、調査結果と推奨事項を確認し、修復アクションを承認します。 Office 365 では、修復処理は組織のセキュリティ チームが承認した場合にのみ実行されます。         |
+|1      |[通知](#alerts)は Office イベントによってトリガーされ、[セキュリティのプレイブック](#security-playbooks)は選択した通知の自動調査を開始します。 <br/><br/>また、セキュリティアナリストは、[エクスプローラー](threat-explorer.md)から[手動で自動調査を開始](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)することもできます。        |
+|2      |自動調査を実行すると、電子メールとその電子メールに関連するエンティティ (ファイル、Url、受信者) に関する追加データが収集されます。  新しい関連する警告がトリガーされると、調査のスコープが向上する可能性があります。         |
+|3      |自動調査の実行中および実行後は、[詳細情報と結果](#investigation-graph)を表示することができます。 結果には、検出された脅威に対処し、修復を行うためにとることができる[推奨処理](#recommended-actions) が含まれます。 さらに、調査のすべてのアクティビティを追跡する[プレイブックログ](#playbook-log)も利用できます。<br/><br/>組織でカスタム レポート ソリューションまたはサード パーティのソリューションを使用している場合は、[Office 365 マネージメント アクティビティ API を使用して](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)自動調査と脅威に関する情報を表示することができます。         |
+|4      |セキュリティ運用チームは、調査結果と推奨事項を確認し、修復アクションを承認します。 Office 365 では、修復処理は組織のセキュリティ チームが承認した場合にのみ実行されます。         |
 
 以下のセクションでは、アラート、セキュリティ プレイブック、調査の詳細などの、AIR の詳細情報を詳しく説明します。 また、この記事では AIRの仕組みについて 2 つの例を紹介します。 AIR の使用を開始するには、「[Office 365 で脅威を自動的に調査し対応する](office-365-air.md)」を参照してください。
 

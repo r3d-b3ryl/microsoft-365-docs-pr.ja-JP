@@ -1,5 +1,7 @@
 ---
 title: ウォークスルー - 詳細レポートからインサイトへの移動
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、詳細レポートから洞察に移動する方法について説明します。
-ms.openlocfilehash: 0ab5f99fb1dd8a313ead93950cfb6f7d0f86558c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9385f7bc8bc8c2277df5e3f774015081b39f37a9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085668"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599264"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>ウォークスルー - 詳細レポートからインサイトへの移動
 

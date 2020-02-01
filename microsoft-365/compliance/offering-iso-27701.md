@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859377"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601914"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 プライバシー情報管理システム (PIMS)
 
@@ -63,6 +66,11 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 ## <a name="what-should-your-organization-do-with-pims"></a>組織はPIMSを用いて何をすべきですか ?
 
 組織の規模やコントローラーであるかプロセッサーであるかに関係なく、あなたの組織のため、またはあなたのビジネス要件に基づいてベンダーまたはサプライヤーにそれを要求するために、組織は認証の追求を検討すべきです。 これは特に、機密性の高いまたは大量の個人データを処理するプロセッサー、サブプロセッサー、および共同コントローラーに適用されます。 いずれの場合でも、組織はビジネス ニーズを評価して自社の製品およびサービスの認証が適切かどうかを判断する必要があります。
+
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
+
+- [Azure ISO/IEC 27701 認定資格](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure ISO/IEC 27701 評価レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 
 ## <a name="resources"></a>リソース
 

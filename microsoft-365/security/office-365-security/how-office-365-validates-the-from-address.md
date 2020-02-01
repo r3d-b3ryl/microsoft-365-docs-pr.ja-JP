@@ -1,5 +1,7 @@
 ---
 title: Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'フィッシングを防止するために、Office 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
-ms.openlocfilehash: 5805ca41243603ef4f58bbf39c8ddb38e5a9aa01
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871833"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599184"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 
@@ -73,7 +75,7 @@ From: アドレスの値の形式は、いくつかの Rfc で詳細に定義さ
 From: "displayname " <emailaddress >
 ```
 
-詳細は次のとおりです。
+ここで、
 
 - オプション *displayname*は、電子メールアドレスの所有者を説明する語句です。 たとえば、これは、メールボックスの名前よりも、送信者を示すユーザーフレンドリな名前になることがあります。 表示名の使用はオプションです。 ただし、表示名の使用を選択する場合は、表示されているとおり常に引用符で囲むことをお勧めします。
 
@@ -83,7 +85,7 @@ From: "displayname " <emailaddress >
   local-part @domain
   ```
 
-    詳細は次のとおりです。
+    ここで、
 
   - 要する *local part*は、アドレスに関連付けられているメールボックスを識別する文字列です。 これは、ドメイン内で一意です。 多くの場合、メールボックス所有者のユーザー名または GUID は、ローカル部分の値として使用されます。
 

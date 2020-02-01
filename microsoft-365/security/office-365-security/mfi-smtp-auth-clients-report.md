@@ -1,5 +1,7 @@
 ---
 title: SMTP Auth クライアントのレポート
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントレポートについて学習できます。
-ms.openlocfilehash: a273da9e0ebe7987a22669c54f3ebfe103e5933c
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 7dee70de4000b23302348d964010801c8e097744
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306031"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598834"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP Auth クライアントのレポート
 

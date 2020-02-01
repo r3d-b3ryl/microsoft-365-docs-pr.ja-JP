@@ -1,5 +1,7 @@
 ---
 title: Microsoft コンプライアンススコアの使用
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコアのワークフローツールを使用して、組織のコンプライアンスの管理に役立つ方法について説明します。
-ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 046a370fe1294220ee4ee6150311df5f51905674
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802137"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601194"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Microsoft コンプライアンススコアの処理 (プレビュー)
 

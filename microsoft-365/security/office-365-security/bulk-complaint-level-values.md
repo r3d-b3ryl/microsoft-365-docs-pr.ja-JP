@@ -1,5 +1,7 @@
 ---
 title: バルク苦情レベルの値、一括メール広告、BCL レベル、BCL のしくみ、BCL 評価、スパム対策、スパム対策ヘッダー、バルクメールフィルター、バルクメールの停止
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Office 365 での、バルク文句レベル (BCL) の値について説明します。
-ms.openlocfilehash: 822c84ea9b36cfdae1d8faccf7e0c7d9f747c917
-ms.sourcegitcommit: 7830969c8fa41724359657910716f3ce312cc2cf
+ms.openlocfilehash: b0eb922323421834eae77b8c5430f1bd8f48c8ee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37650119"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599724"
 ---
 # <a name="bulk-complaint-level-values"></a>バルク苦情レベルの値
 

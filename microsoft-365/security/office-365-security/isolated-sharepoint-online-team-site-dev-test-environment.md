@@ -1,5 +1,7 @@
 ---
 title: 分離した SharePoint Online チーム サイト開発/テスト環境
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
-ms.openlocfilehash: ae76667a0c6c32dcf83b4fbd911a6e0b5db0c579
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808112"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599124"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
@@ -168,7 +170,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 11. リストの **[ProjectX のメンバー]** をクリックします。
 
-12. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
+12. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
 
 13. **[共有]** ダイアログ ボックスに「 **ProjectX-Members**」と入力し、それを選択して、 **[共有]** をクリックします。
 
@@ -176,7 +178,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 15. リストの **[ProjectX の所有者]** をクリックします。
 
-16. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
+16. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
 
 17. **[共有]** ダイアログ ボックスに「 **ProjectX-Admins**」と入力し、それを選択して、 **[共有]** をクリックします。
 

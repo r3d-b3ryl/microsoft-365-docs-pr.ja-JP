@@ -1,5 +1,7 @@
 ---
 title: Office 365 のコンテンツを検索する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,16 +13,16 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: セキュリティ & コンプライアンスセンターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for Business でのインスタントメッセージングの会話をすばやく見つけることができます。
-ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086600"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601544"
 ---
 # <a name="search-for-content-in-office-365"></a>Office 365 のコンテンツを検索する
 
-セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用すると、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、および Skype for Business でのインスタントメッセージングの会話をすばやく見つけることができます。 コンテンツ検索ツールを使用して、Microsoft Teams や Office 365 グループなどの Office 365 コラボレーションツールで、電子メール、ドキュメント、インスタントメッセージの会話を検索することができます。
+セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Office 365 グループなどの Office 365 コラボレーション ツール内の電子メール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
   
 ## <a name="search-for-content"></a>コンテンツを検索する
 
@@ -77,7 +79,7 @@ ms.locfileid: "37086600"
 
 より高度で複雑で反復的なコンテンツ検索タスクを実行する必要がある場合があります。 このような場合、セキュリティ & コンプライアンスセンターでは、PowerShell コマンドを使用する方が簡単で高速です。 これを簡単にするために、多数のセキュリティ & コンプライアンスセンターの PowerShell スクリプトを作成し、複雑なコンテンツ検索関連のタスクを実行できるようにしました。
   
-- [特定のメールボックスおよびサイトフォルダーを検索](use-content-search-for-targeted-collections.md)する(対象の*コレクション*と呼ばれます) ケースに応答するアイテムがそのフォルダー内にあることを確信している場合 
+- ケースに応答するアイテムがそのフォルダー内にあることを確信している場合は、[特定のメールボックスおよびサイトフォルダー](use-content-search-for-targeted-collections.md) (*対象のコレクション*と呼ばれます) を検索します。 
     
 - [メールボックスおよび OneDrive の場所](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)でユーザーの一覧を検索する 
     

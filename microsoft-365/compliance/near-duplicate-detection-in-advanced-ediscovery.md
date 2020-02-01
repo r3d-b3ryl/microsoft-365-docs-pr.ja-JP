@@ -1,5 +1,7 @@
 ---
 title: 準重複の検出
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7ae5e695091d140089f979f28793876a2df77251
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8162cae8b69d420ffe87eda137be02688da778b0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086677"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602734"
 ---
 # <a name="near-duplicate-detection"></a>準重複の検出
 
 サブセットが同じテンプレートを基にしていて、ほとんど同じ定型表現を持っており、ここではいくつかの違いがある、ドキュメントのセットをレビューすることを検討してください。 レビュー担当者がこのサブセットを特定し、そのうちの1つを徹底的に確認して、残りの相違点を確認した場合は、すべてのドキュメントカバーの読み取りにかかる時間が限られているため、固有の情報が失われることはありません。 ほぼ重複した検出グループでは、よく似たドキュメントが一緒に表示され、レビュープロセスの効率を高めることができます。
 
-## <a name="how-does-it-work"></a>どのように動作するか。
+## <a name="how-does-it-work"></a>どのような仕組みなのか。
 
 近い重複検出が実行されると、システムによってすべてのドキュメントがテキストで解析されます。 次に、すべてのドキュメントを比較して、類似性が設定されたしきい値より大きいかどうかを判断します。 その場合、ドキュメントはグループ化されています。 すべてのドキュメントを比較してグループ化すると、各グループのドキュメントが "pivot" としてマークされます。ドキュメントを確認するには、ピボットを最初に確認して、同じ付近にある重複セット内の他のドキュメントを確認して、ピボットとレビュー中のドキュメントの違いに焦点を合わせます。

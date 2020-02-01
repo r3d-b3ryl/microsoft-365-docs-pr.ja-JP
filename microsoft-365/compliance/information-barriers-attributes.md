@@ -1,5 +1,7 @@
 ---
 title: 情報障壁ポリシーの属性
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報バリアポリシーで使用できるさまざまな属性の参照として使用します。
-ms.openlocfilehash: 12acaa4fb8d6bcd6c660381b172703bd178af81f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: ff7b6e22370c086f6b685fce4de8b61396017bf9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970785"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600624"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>情報障壁ポリシーの属性
 
@@ -50,7 +52,7 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
     > [!TIP]
     > セグメントを定義するときは、すべてのセグメントに同じ属性を使用します。 たとえば、*部門*を使用してセグメントを定義する場合、 *department*を使用してすべてのセグメントを定義します。 *部署*を使用したセグメントと、 *MemberOf*を使用しているセグメントを定義しないでください。 セグメントが重ならないようにします。各ユーザーは、1つのセグメントにのみ割り当てる必要があります。 
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>リファレンス
 
 次の表に、情報バリアで使用できる属性を示します。
 

@@ -3,6 +3,8 @@ title: モバイルデバイス管理インフラストラクチャの終了条�
 description: Microsoft 365 Enterprise には、Microsoft Intune を使用したモバイルデバイス管理が含まれます。 要件と前提条件を確認し、Azure Active Directory リソースを使用して Intune を設定し、iOS、macOS、Android、および Windows デバイスを登録し、アプリを展開し、構成プロファイルを作成し、コンプライアンスポリシーを使用して、モバイルの条件付きアクセスを有効にします。Microsoft 365 Enterprise を使用したデバイス管理。
 keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、モバイルデバイス管理、Intune
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/03/2019
@@ -13,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: e8f8f53224b334f92142e2c03ed05eaa9e38787a
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: daf7bcf6525f30b7b52065e4f6bf2ff335f4ea4b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385724"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600884"
 ---
 # <a name="mobile-device-management-infrastructure-exit-criteria"></a>モバイルデバイス管理インフラストラクチャの終了条件
 
-![フェーズ 5: モバイルデバイスの管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![フェーズ 5: モバイル デバイス管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *これは、Microsoft 365 Enterprise の E3 および E5 バージョンに適用されます。*
 
@@ -34,7 +36,7 @@ ms.locfileid: "37385724"
 - 機能と設定は、作成した Azure AD ユーザーとグループを使用してデバイスに構成および適用されます。これにはウイルス対策の有効化や特定アプリの制限が含まれます。
 - コンプライアンスポリシーは、デバイスでファイアウォールまたはパスワードの長さを要求するために配置されます。 デバイスが準拠していない場合、条件付きアクセスでは組織のデータへのアクセスがブロックされます。
 
-## <a name="results-and-next-steps"></a>結果と次のステップ
+## <a name="results-and-next-steps"></a>結果と次の手順
 
 デバイスは Intune に登録され、適切なポリシーで構成されます。
 

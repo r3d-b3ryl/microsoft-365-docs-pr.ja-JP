@@ -1,5 +1,7 @@
 ---
 title: 低速メール フローのルールのインサイト
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについて理解できます。
-ms.openlocfilehash: 34b2b0b3089dcb00668b0b9cd708691381a31ced
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 706b9b53e710252308817913718edd92e416e96c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086860"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598814"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>低速メール フローのルールのインサイト
 

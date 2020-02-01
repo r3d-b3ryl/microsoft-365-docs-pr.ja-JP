@@ -1,5 +1,7 @@
 ---
 title: EOP の監査レポート
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 管理者は、Exchange Online Protection (EOP) で使用可能な管理者監査レポートについて学ぶことができます。
-ms.openlocfilehash: 5686ff8acef1f1bc3e6ab1d72ba4968ed49480db
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: aaecef0bbee84a94d367545bc251f34bbd758874
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440574"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599784"
 ---
 # <a name="auditing-reports-in-eop"></a>EOP の監査レポート
 

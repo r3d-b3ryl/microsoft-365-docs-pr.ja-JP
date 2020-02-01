@@ -1,5 +1,7 @@
 ---
 title: カストディアン データの詳細なインデックス処理
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6259d839dd9a0ca196bae37afe374d1d8f21d53
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 5ab54e84de7434a16bdf7eb7d04fad7b9af05440
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38686795"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600634"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>カストディアン データの詳細なインデックス処理
 
@@ -36,7 +38,7 @@ Office 365 の処理サポートと、部分的にインデックスが作成さ
 
 高度なインデックス処理が完了すると、再処理の有効性について理解することができます。  [保管担当者 Indexing] ビューでは、*ハイブリッドインデックス*に追加されたすべてのアイテムがグラフに一覧表示されます。  ハイブリッドインデックスは、高度な電子情報開示が再処理されたコンテンツを格納する場所です。
 
-グラフには、修復が必要な項目の数と、ファイルの種類別のエラーのグラフも表示されます。 詳しくは、次のトピックを参照してください。
+グラフには、修復が必要な項目の数と、ファイルの種類別のエラーのグラフも表示されます。 詳細については、以下を参照してください。
 
 - [データ処理中のエラー修復](error-remediation.md)
 - [単一アイテムのエラーの修復](single-item-error-remediation.md)

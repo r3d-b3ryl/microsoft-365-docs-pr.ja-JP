@@ -1,5 +1,7 @@
 ---
 title: レコードの概要
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 または Microsoft 組織でレコード管理戦略を実装するには、コンテンツをレコードとして宣言する保持ラベルを使用します。 次に、保持レコードラベルを公開または自動適用します。
-ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803834"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601684"
 ---
 # <a name="overview-of-records"></a>レコードの概要
 
@@ -78,6 +80,10 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
 3. 保持ラベルを SharePoint サイトおよび/または OneDrive アカウントに[公開](labels.md#how-retention-labels-work-with-retention-label-policies)または[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
 
+> [!NOTE]
+> [保持ラベル](labels.md)を使用してアイテムをレコードとして宣言するには、この場所でコンテンツを編集する権限を持つユーザーごとに Office 365 Enterprise E5 ライセンス、または同等のライセンスが必要です。 読み取り専用アクセス権を持つユーザーは、ライセンスを必要としません。
+
+
 ### <a name="applying-a-retention-label-to-content"></a>コンテンツに保持ラベルを適用する
 
 Exchange の場合、メールボックスへの書き込みアクセス権を持つすべてのユーザーは、メール メッセージにレコード ラベルを適用できます。 SharePoint および OneDrive のコンテンツの場合、既定のメンバー グループ (投稿アクセス許可レベル) のすべてのユーザーがレコード ラベルをコンテンツに適用できます。 そのレコード ラベルが適用された後に削除または変更できるのは、サイト コレクション管理者のみです。 前述のように、コンテンツをレコードとして分類する保持ラベルは、コンテンツに自動適用できます。
@@ -105,7 +111,7 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 ![レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ](media/recordversioning8.png)
 
 > [!NOTE]
-> レコードのバージョン管理には、SharePoint サイトまたは OneDrive アカウントでレコードとして宣言されているコンテンツを編集する権限を持つユーザーごとに Office 365 Enterprise E5 ライセンスが必要です。 読み取り専用アクセス権を持つユーザーは、ライセンスを必要としません。
+> レコードのバージョン管理には、SharePoint サイトまたは OneDrive アカウントでレコードとして宣言されているコンテンツを編集する権限を持つユーザーごとに Office 365 Enterprise E5 ライセンスが必要です。 読み取り専用アクセス権を持つユーザーは、このライセンスを必要としません。
 
 ### <a name="locking-and-unlocking-a-record"></a>レコードのロックおよびロック解除
 

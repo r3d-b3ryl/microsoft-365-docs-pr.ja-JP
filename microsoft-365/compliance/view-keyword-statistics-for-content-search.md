@@ -1,5 +1,7 @@
 ---
 title: コンテンツ検索結果のキーワード統計の表示
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: セキュリティ & コンプライアンスセンターで複数のコンテンツ検索の統計情報を表示および比較するには、検索統計機能を使用します。 検索クエリを作成または編集するときにキーワードリストを構成して、各キーワードまたはキーワードフレーズに一致するアイテムの数を示す拡張統計を取得することもできます。
-ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086495"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601254"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>コンテンツ検索結果のキーワード統計の表示
 

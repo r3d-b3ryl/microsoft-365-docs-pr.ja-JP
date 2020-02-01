@@ -1,5 +1,7 @@
 ---
 title: Office 365 の ATP フィッシング対策機能
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -12,17 +14,17 @@ search.appverid:
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
-description: ATP のフィッシング対策は、Office 365 Advanced Threat Protection の一部です。 ATP のフィッシング対策は、一連の機械学習モデルを受信メッセージに適用して、市販およびスピアーフィッシング攻撃に対する保護を提供します。 すべてのメッセージは、フィッシングメッセージを検出するために訓練された広範な一連の機械学習モデルと共に、さまざまなユーザーおよびドメイン偽装攻撃から保護するための一連の高度なアルゴリズムと共に適用されます。
-ms.openlocfilehash: b2ce20d64952ecf489c2ccdbd5b4cafd16b8f64f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: ATP のフィッシング対策は、Office 365 Advanced Threat Protection の一部です。 ATP アンチフィッシングは、機械学習モデルのセットと偽装検出アルゴリズムを受信メッセージに適用して、コモディティ フィッシング攻撃およびスピア フィッシング攻撃への保護を提供します。 すべてのメッセージは、フィッシングメッセージを検出するために訓練された広範な一連の機械学習モデルと共に、さまざまなユーザーおよびドメイン偽装攻撃から保護するための一連の高度なアルゴリズムと共に適用されます。
+ms.openlocfilehash: eca12a1f75057aee94762a8a5eef0cceffe327d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086141"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599834"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 の ATP フィッシング対策機能
 
-ATP のフィッシング対策は、 [Office 365 Advanced Threat Protection](office-365-atp.md)の一部です。 ATP のフィッシング対策は、一連の機械学習モデルを受信メッセージに適用して、市販およびスピアーフィッシング攻撃に対する保護を提供します。 すべてのメッセージは、フィッシングメッセージを検出するために訓練された広範な一連の機械学習モデルと共に、さまざまなユーザーおよびドメイン偽装攻撃から保護するための一連の高度なアルゴリズムと共に適用されます。 ATP のフィッシング対策は、Office 365 グローバルまたはセキュリティ管理者によって設定されたポリシーに従って組織を保護します。
+ATP のフィッシング対策は、 [Office 365 Advanced Threat Protection](office-365-atp.md)の一部です。 ATP アンチフィッシングは、機械学習モデルのセットと偽装検出アルゴリズムを受信メッセージに適用して、コモディティ フィッシング攻撃およびスピア フィッシング攻撃への保護を提供します。 すべてのメッセージは、フィッシングメッセージを検出するために訓練された広範な一連の機械学習モデルと共に、さまざまなユーザーおよびドメイン偽装攻撃から保護するための一連の高度なアルゴリズムと共に適用されます。 ATP のフィッシング対策は、Office 365 グローバルまたはセキュリティ管理者によって設定されたポリシーに従って組織を保護します。
   
 詳細については、「 [Office 365 でフィッシング対策ポリシーをセットアップ](set-up-anti-phishing-policies.md)する」を参照してください。
   

@@ -1,5 +1,7 @@
 ---
 title: Office 365 のバッチ履歴を表示して過去の結果をエクスポートする高度な電子情報開示
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '選択したエクスポートバッチセッションの詳細情報を表示する方法と、Office 365 Advanced eDiscovery で最終エクスポートセッションを取り消す方法について説明します。  '
-ms.openlocfilehash: 5e20fa787bcbb9dc6072af779326518d6a03aaa4
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0309c84bb28f4034f3a0ec8726a21ca2a4b4f22f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802252"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601264"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Office 365 のバッチ履歴を表示して過去の結果をエクスポートする高度な電子情報開示
 

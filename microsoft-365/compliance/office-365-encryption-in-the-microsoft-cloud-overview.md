@@ -1,5 +1,7 @@
 ---
 title: Microsoft Cloud における暗号化
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Microsoft クラウドでの暗号化の概要について説明します。
-ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cce463cf953bd9f8ea0df61e3fe97b356608eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690665"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601824"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud における暗号化
 
@@ -40,8 +42,8 @@ FIPS 140-2 は、これを使用する製品ではなく、暗号化を実装す
 Microsoft は、Windows オペレーティングシステムの新しいリリースごとにクラウドサービスで使用される基礎となる暗号化モジュールを認定しています。
 
 - Azure および Azure 米国政府
-- Dynamics 365 および Dynamics 365 米国政府
-- Office 365、Office 365 米国政府機関、および Office 365 米国政府機関の防御
+- Dynamics 365、Dynamics 365 米国政府
+- Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense
 
 Office 365 の顧客保存データの暗号化は、Exchange Online、Skype for Business、OneDrive for Business、SharePoint Online での複数のサービス側テクノロジ (BitLocker、DKM、Azure Storage Service Encryption、およびサービス暗号化を含む) によって提供されます。 Office 365 service encryption には、Azure Key Vault に格納されている、顧客が管理する暗号化キーを使用するオプションが含まれています。 この顧客管理キーオプション ( [Office 365 顧客キー](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)) は、Exchange Online、SharePoint Online、Skype for business、および OneDrive for business で使用できます。
 

@@ -1,5 +1,7 @@
 ---
 title: データ調査の制限
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ff11d03adf8afb0ce76151ff67a238cce342f9df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2666b1f4add1a55453162d1555e9b7e1f01eada7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085021"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600774"
 ---
 # <a name="data-investigations-preview-limits"></a>データ調査 (プレビュー) の制限
 
@@ -32,7 +34,7 @@ ms.locfileid: "37085021"
   |**制限の説明**|**制限**|
   |:-----|:-----|
   |調査の最大数。  <br/> |50  <br/> |
-  |調査に追加できるドキュメントの合計数 (調査中のすべての証拠セットに対して)。  <br/> |100 万  <br/> |
+  |調査に追加できるドキュメントの合計数 (調査中のすべての証拠セットに対して)。  <br/> |100 万個  <br/> |
   |ロードあたりのファイルサイズの合計。  <br/> |100 GB  <br/> |
   |1つのファイルの最大サイズ。   <br/> |100 MB <sup>1</sup> <br/> |
   |1つのファイルから抽出する最大文字数。  <br/> |1000万<sup>1</sup> <br/> |
