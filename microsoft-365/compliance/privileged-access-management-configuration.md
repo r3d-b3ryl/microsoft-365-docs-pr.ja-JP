@@ -1,5 +1,7 @@
 ---
 title: Office 365 での特権アクセス管理の構成
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,293 +17,293 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 1ea929026db3ac50a0eac3d452c2608fd0c0d123
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959516"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601734"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a><span data-ttu-id="293b3-103">Office 365 での特権アクセス管理の構成</span><span class="sxs-lookup"><span data-stu-id="293b3-103">Configuring privileged access management in Office 365</span></span>
+# <a name="configuring-privileged-access-management-in-office-365"></a><span data-ttu-id="5972e-103">Office 365 での特権アクセス管理の構成</span><span class="sxs-lookup"><span data-stu-id="5972e-103">Configuring privileged access management in Office 365</span></span>
 
 >[!IMPORTANT]
-><span data-ttu-id="293b3-104">このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="293b3-104">This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.</span></span>
+><span data-ttu-id="5972e-104">このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="5972e-104">This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.</span></span>
 
-<span data-ttu-id="293b3-105">このトピックでは、Office 365 組織で特権アクセス管理を有効にして構成する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="293b3-105">This topic guides you through enabling and configuring privileged access management in your Office 365 organization.</span></span> <span data-ttu-id="293b3-106">Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。</span><span class="sxs-lookup"><span data-stu-id="293b3-106">You can use either the Microsoft 365 Admin Center or Exchange Management PowerShell to manage and use privileged access.</span></span> 
+<span data-ttu-id="5972e-105">このトピックでは、Office 365 組織で特権アクセス管理を有効にして構成する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="5972e-105">This topic guides you through enabling and configuring privileged access management in your Office 365 organization.</span></span> <span data-ttu-id="5972e-106">Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。</span><span class="sxs-lookup"><span data-stu-id="5972e-106">You can use either the Microsoft 365 Admin Center or Exchange Management PowerShell to manage and use privileged access.</span></span> 
 
-## <a name="enable-and-configure-privileged-access-management"></a><span data-ttu-id="293b3-107">特権アクセス管理を有効にして構成する</span><span class="sxs-lookup"><span data-stu-id="293b3-107">Enable and configure privileged access management</span></span>
+## <a name="enable-and-configure-privileged-access-management"></a><span data-ttu-id="5972e-107">特権アクセス管理を有効にして構成する</span><span class="sxs-lookup"><span data-stu-id="5972e-107">Enable and configure privileged access management</span></span>
 
-<span data-ttu-id="293b3-108">Office 365 組織で特権アクセスをセットアップして使用するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="293b3-108">Follow these steps to set up and use privileged access in your Office 365 organization:</span></span>
+<span data-ttu-id="5972e-108">Office 365 組織で特権アクセスをセットアップして使用するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="5972e-108">Follow these steps to set up and use privileged access in your Office 365 organization:</span></span>
 
-- [<span data-ttu-id="293b3-109">手順 1: 承認者のグループを作成する</span><span class="sxs-lookup"><span data-stu-id="293b3-109">Step 1: Create an approver's group</span></span>](privileged-access-management-configuration.md#step1)
+- [<span data-ttu-id="5972e-109">手順 1: 承認者のグループを作成する</span><span class="sxs-lookup"><span data-stu-id="5972e-109">Step 1: Create an approver's group</span></span>](privileged-access-management-configuration.md#step1)
 
-    <span data-ttu-id="293b3-110">特権アクセスの使用を開始する前に、昇格されたタスクおよび権限のあるタスクへのアクセスを要求するための承認権限を必要とするユーザーを決定します。</span><span class="sxs-lookup"><span data-stu-id="293b3-110">Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks.</span></span> <span data-ttu-id="293b3-111">承認者グループの一部であるユーザーは、アクセス要求を承認することができます。</span><span class="sxs-lookup"><span data-stu-id="293b3-111">Any user who is part of the Approvers’ group is able to approve access requests.</span></span> <span data-ttu-id="293b3-112">このグループを有効にするには、Office 365 でメールが有効なセキュリティグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="293b3-112">This group is enabled by creating a mail-enabled security group in Office 365.</span></span>
+    <span data-ttu-id="5972e-110">特権アクセスの使用を開始する前に、昇格されたタスクおよび権限のあるタスクへのアクセスを要求するための承認権限を必要とするユーザーを決定します。</span><span class="sxs-lookup"><span data-stu-id="5972e-110">Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks.</span></span> <span data-ttu-id="5972e-111">承認者グループの一部であるユーザーは、アクセス要求を承認することができます。</span><span class="sxs-lookup"><span data-stu-id="5972e-111">Any user who is part of the Approvers’ group is able to approve access requests.</span></span> <span data-ttu-id="5972e-112">このグループを有効にするには、Office 365 でメールが有効なセキュリティグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="5972e-112">This group is enabled by creating a mail-enabled security group in Office 365.</span></span>
 
-- [<span data-ttu-id="293b3-113">手順 2: 特権アクセスを有効にする</span><span class="sxs-lookup"><span data-stu-id="293b3-113">Step 2: Enable privileged access</span></span>](privileged-access-management-configuration.md#step2)
+- [<span data-ttu-id="5972e-113">手順 2: 特権アクセスを有効にする</span><span class="sxs-lookup"><span data-stu-id="5972e-113">Step 2: Enable privileged access</span></span>](privileged-access-management-configuration.md#step2)
 
-    <span data-ttu-id="293b3-114">権限のあるアクセスは、既定の承認者グループを使用して Office 365 で明示的に有効にする必要があります。これには、特権アクセス管理アクセス制御から除外する一連のシステムアカウントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="293b3-114">Privileged access must be explicitly enabled in Office 365 with the default approver group, including a set of system accounts that you want excluded from the privileged access management access control.</span></span>
+    <span data-ttu-id="5972e-114">権限のあるアクセスは、既定の承認者グループを使用して Office 365 で明示的に有効にする必要があります。これには、特権アクセス管理アクセス制御から除外する一連のシステムアカウントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5972e-114">Privileged access must be explicitly enabled in Office 365 with the default approver group, including a set of system accounts that you want excluded from the privileged access management access control.</span></span>
 
-- [<span data-ttu-id="293b3-115">手順 3: アクセスポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="293b3-115">Step 3: Create an access policy</span></span>](privileged-access-management-configuration.md#step3)
+- [<span data-ttu-id="5972e-115">手順 3: アクセスポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="5972e-115">Step 3: Create an access policy</span></span>](privileged-access-management-configuration.md#step3)
 
-    <span data-ttu-id="293b3-116">承認ポリシーを作成すると、個々のタスクでスコープを設定する特定の承認要件を定義できます。</span><span class="sxs-lookup"><span data-stu-id="293b3-116">Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks.</span></span> <span data-ttu-id="293b3-117">承認の種類のオプションは**自動**または**手動**です。</span><span class="sxs-lookup"><span data-stu-id="293b3-117">The approval type options are **Auto** or **Manual**.</span></span>
+    <span data-ttu-id="5972e-116">承認ポリシーを作成すると、個々のタスクでスコープを設定する特定の承認要件を定義できます。</span><span class="sxs-lookup"><span data-stu-id="5972e-116">Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks.</span></span> <span data-ttu-id="5972e-117">承認の種類のオプションは**自動**または**手動**です。</span><span class="sxs-lookup"><span data-stu-id="5972e-117">The approval type options are **Auto** or **Manual**.</span></span>
 
-- [<span data-ttu-id="293b3-118">手順 4: 特権アクセス要求を送信/承認する</span><span class="sxs-lookup"><span data-stu-id="293b3-118">Step 4: Submit/approve privileged access requests</span></span>](privileged-access-management-configuration.md#step4)
+- [<span data-ttu-id="5972e-118">手順 4: 特権アクセス要求を送信/承認する</span><span class="sxs-lookup"><span data-stu-id="5972e-118">Step 4: Submit/approve privileged access requests</span></span>](privileged-access-management-configuration.md#step4)
 
-    <span data-ttu-id="293b3-119">有効にすると、関連付けられている承認ポリシーが定義されているすべてのタスクに対して、特権アクセスが必要になります。</span><span class="sxs-lookup"><span data-stu-id="293b3-119">Once enabled, privileged access requires approvals for any task that has an associated approval policy defined.</span></span> <span data-ttu-id="293b3-120">承認ポリシーに含まれているタスクについては、タスクを実行するために必要なアクセス許可を付与するために、ユーザーは要求し、アクセス承認を付与する必要があります。</span><span class="sxs-lookup"><span data-stu-id="293b3-120">For tasks included in an approval policy, users must request and be granted access approval to have permissions necessary to execute the task.</span></span>
+    <span data-ttu-id="5972e-119">有効にすると、関連付けられている承認ポリシーが定義されているすべてのタスクに対して、特権アクセスが必要になります。</span><span class="sxs-lookup"><span data-stu-id="5972e-119">Once enabled, privileged access requires approvals for any task that has an associated approval policy defined.</span></span> <span data-ttu-id="5972e-120">承認ポリシーに含まれているタスクについては、タスクを実行するために必要なアクセス許可を付与するために、ユーザーは要求し、アクセス承認を付与する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5972e-120">For tasks included in an approval policy, users must request and be granted access approval to have permissions necessary to execute the task.</span></span>
 
-<span data-ttu-id="293b3-121">承認が付与されると、要求元のユーザーは目的のタスクを実行できるようになり、特権アクセスにより、ユーザーに代わってタスクが承認および実行されます。</span><span class="sxs-lookup"><span data-stu-id="293b3-121">After approval is granted, the requesting user can execute the intended task and privileged access will authorize and execute the task on behalf of the user.</span></span> <span data-ttu-id="293b3-122">承認は、要求された期間 (既定の期間は4時間) に対して有効なままとなり、要求者は目的のタスクを複数回実行できます。</span><span class="sxs-lookup"><span data-stu-id="293b3-122">The approval remains valid for the requested duration (default duration is 4 hours), during which the requester can execute the intended task multiple times.</span></span> <span data-ttu-id="293b3-123">このような実行はすべてログに記録され、セキュリティとコンプライアンスの監査に使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="293b3-123">All such executions are logged and made available for security and compliance auditing.</span></span> 
+<span data-ttu-id="5972e-121">承認が付与されると、要求元のユーザーは目的のタスクを実行できるようになり、特権アクセスにより、ユーザーに代わってタスクが承認および実行されます。</span><span class="sxs-lookup"><span data-stu-id="5972e-121">After approval is granted, the requesting user can execute the intended task and privileged access will authorize and execute the task on behalf of the user.</span></span> <span data-ttu-id="5972e-122">承認は、要求された期間 (既定の期間は4時間) に対して有効なままとなり、要求者は目的のタスクを複数回実行できます。</span><span class="sxs-lookup"><span data-stu-id="5972e-122">The approval remains valid for the requested duration (default duration is 4 hours), during which the requester can execute the intended task multiple times.</span></span> <span data-ttu-id="5972e-123">このような実行はすべてログに記録され、セキュリティとコンプライアンスの監査に使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="5972e-123">All such executions are logged and made available for security and compliance auditing.</span></span> 
 
 >[!NOTE]
-><span data-ttu-id="293b3-124">Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。</span><span class="sxs-lookup"><span data-stu-id="293b3-124">If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials.</span></span> <span data-ttu-id="293b3-125">Office 365 組織に対して多要素認証を有効にして、Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="293b3-125">You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell.</span></span> <span data-ttu-id="293b3-126">多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。</span><span class="sxs-lookup"><span data-stu-id="293b3-126">Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.</span></span>
+><span data-ttu-id="5972e-124">Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。</span><span class="sxs-lookup"><span data-stu-id="5972e-124">If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials.</span></span> <span data-ttu-id="5972e-125">Office 365 組織に対して多要素認証を有効にして、Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="5972e-125">You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell.</span></span> <span data-ttu-id="5972e-126">多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。</span><span class="sxs-lookup"><span data-stu-id="5972e-126">Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.</span></span>
 
-<span data-ttu-id="293b3-127"><a name="step1"> </a></span><span class="sxs-lookup"><span data-stu-id="293b3-127"></span></span>
+<span data-ttu-id="5972e-127"><a name="step1"> </a></span><span class="sxs-lookup"><span data-stu-id="5972e-127"><a name="step1"> </a></span></span>
 
-## <a name="step-1-create-an-approvers-group"></a><span data-ttu-id="293b3-128">手順 1: 承認者のグループを作成する</span><span class="sxs-lookup"><span data-stu-id="293b3-128">Step 1: Create an approver's group</span></span>
+## <a name="step-1-create-an-approvers-group"></a><span data-ttu-id="5972e-128">手順 1: 承認者のグループを作成する</span><span class="sxs-lookup"><span data-stu-id="5972e-128">Step 1: Create an approver's group</span></span>
 
-1. <span data-ttu-id="293b3-129">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-129">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="5972e-129">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-129">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="293b3-130">管理センターで、 **[グループ** > **の追加]** を選びます。</span><span class="sxs-lookup"><span data-stu-id="293b3-130">In the Admin Center, go to **Groups** > **Add a group**.</span></span>
+2. <span data-ttu-id="5972e-130">管理センターで、 **[グループ** > **の追加]** を選びます。</span><span class="sxs-lookup"><span data-stu-id="5972e-130">In the Admin Center, go to **Groups** > **Add a group**.</span></span>
 
-3. <span data-ttu-id="293b3-131">[**メールが有効なセキュリティグループ**] を選択し、新しいグループの**名前**、**グループ電子メールアドレス**、および**説明**フィールドを入力します。</span><span class="sxs-lookup"><span data-stu-id="293b3-131">Select **mail-enabled security group** and then complete the **Name**, **Group email address**, and **Description** fields for the new group.</span></span>
+3. <span data-ttu-id="5972e-131">[**メールが有効なセキュリティグループ**] を選択し、新しいグループの**名前**、**グループ電子メールアドレス**、および**説明**フィールドを入力します。</span><span class="sxs-lookup"><span data-stu-id="5972e-131">Select **mail-enabled security group** and then complete the **Name**, **Group email address**, and **Description** fields for the new group.</span></span>
 
-4. <span data-ttu-id="293b3-132">グループを保存します。</span><span class="sxs-lookup"><span data-stu-id="293b3-132">Save the group.</span></span> <span data-ttu-id="293b3-133">グループが完全に構成され、Microsoft 365 管理センターに表示されるまでに数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="293b3-133">It may take a few minutes for the group to be fully configured and to appear in the Microsoft 365 admin center.</span></span>
+4. <span data-ttu-id="5972e-132">グループを保存します。</span><span class="sxs-lookup"><span data-stu-id="5972e-132">Save the group.</span></span> <span data-ttu-id="5972e-133">グループが完全に構成され、Microsoft 365 管理センターに表示されるまでに数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="5972e-133">It may take a few minutes for the group to be fully configured and to appear in the Microsoft 365 admin center.</span></span>
 
-5. <span data-ttu-id="293b3-134">新しい承認者のグループを選択し、[**編集**] を選択してグループにユーザーを追加します。</span><span class="sxs-lookup"><span data-stu-id="293b3-134">Select the new approver's group and select **edit** to add users to the group.</span></span>
+5. <span data-ttu-id="5972e-134">新しい承認者のグループを選択し、[**編集**] を選択してグループにユーザーを追加します。</span><span class="sxs-lookup"><span data-stu-id="5972e-134">Select the new approver's group and select **edit** to add users to the group.</span></span>
 
-6. <span data-ttu-id="293b3-135">グループを保存します。</span><span class="sxs-lookup"><span data-stu-id="293b3-135">Save the group.</span></span>
+6. <span data-ttu-id="5972e-135">グループを保存します。</span><span class="sxs-lookup"><span data-stu-id="5972e-135">Save the group.</span></span>
 
-<span data-ttu-id="293b3-136"><a name="step2"> </a></span><span class="sxs-lookup"><span data-stu-id="293b3-136"></span></span>
+<span data-ttu-id="5972e-136"><a name="step2"> </a></span><span class="sxs-lookup"><span data-stu-id="5972e-136"><a name="step2"> </a></span></span>
 
-## <a name="step-2-enable-privileged-access"></a><span data-ttu-id="293b3-137">手順 2: 特権アクセスを有効にする</span><span class="sxs-lookup"><span data-stu-id="293b3-137">Step 2: Enable privileged access</span></span>
+## <a name="step-2-enable-privileged-access"></a><span data-ttu-id="5972e-137">手順 2: 特権アクセスを有効にする</span><span class="sxs-lookup"><span data-stu-id="5972e-137">Step 2: Enable privileged access</span></span>
 
-### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="293b3-138">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="293b3-138">In the Microsoft 365 Admin Center</span></span>
+### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="5972e-138">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="5972e-138">In the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="293b3-139">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-139">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="5972e-139">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-139">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="293b3-140">管理センターで、[設定] **> 設定 > セキュリティ & プライバシー** > **特権アクセス**の設定] に移動します。</span><span class="sxs-lookup"><span data-stu-id="293b3-140">In the Admin Center, go to **Settings > Settings > Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="5972e-140">管理センターで、[設定] **> 設定 > セキュリティ & プライバシー** > **特権アクセス**の設定] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5972e-140">In the Admin Center, go to **Settings > Settings > Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="293b3-141">[**権限のあるタスクの承認を必須**にする] コントロールを有効にします。</span><span class="sxs-lookup"><span data-stu-id="293b3-141">Enable the **Require approvals for privileged tasks** control.</span></span>
+3. <span data-ttu-id="5972e-141">[**権限のあるタスクの承認を必須**にする] コントロールを有効にします。</span><span class="sxs-lookup"><span data-stu-id="5972e-141">Enable the **Require approvals for privileged tasks** control.</span></span>
 
-4. <span data-ttu-id="293b3-142">手順1で作成した承認者のグループを**既定の承認者グループ**として割り当てます。</span><span class="sxs-lookup"><span data-stu-id="293b3-142">Assign the approver's group you created in Step 1 as the **Default approvers group**.</span></span>
+4. <span data-ttu-id="5972e-142">手順1で作成した承認者のグループを**既定の承認者グループ**として割り当てます。</span><span class="sxs-lookup"><span data-stu-id="5972e-142">Assign the approver's group you created in Step 1 as the **Default approvers group**.</span></span>
 
-5. <span data-ttu-id="293b3-143">**保存**して**閉じ**ます。</span><span class="sxs-lookup"><span data-stu-id="293b3-143">**Save** and **Close**.</span></span>
+5. <span data-ttu-id="5972e-143">**保存**して**閉じ**ます。</span><span class="sxs-lookup"><span data-stu-id="5972e-143">**Save** and **Close**.</span></span>
 
-### <a name="in-exchange-management-powershell"></a><span data-ttu-id="293b3-144">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="293b3-144">In Exchange Management PowerShell</span></span>
+### <a name="in-exchange-management-powershell"></a><span data-ttu-id="5972e-144">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5972e-144">In Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="293b3-145">特権アクセスを有効にし、承認者のグループを割り当てるには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="293b3-145">To enable privileged access and to assign the approver's group, run the following command in Exchange Online PowerShell:</span></span>
+<span data-ttu-id="5972e-145">特権アクセスを有効にし、承認者のグループを割り当てるには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5972e-145">To enable privileged access and to assign the approver's group, run the following command in Exchange Online PowerShell:</span></span>
 
 ```PowerShell
 Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccounts @('<systemAccountUPN1>','<systemAccountUPN2>')
 ```
 
-<span data-ttu-id="293b3-146">例:</span><span class="sxs-lookup"><span data-stu-id="293b3-146">Example:</span></span>
+<span data-ttu-id="5972e-146">例:</span><span class="sxs-lookup"><span data-stu-id="5972e-146">Example:</span></span>
 
 ```PowerShell
 Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
 ```
 
 >[!NOTE]
-><span data-ttu-id="293b3-147">システムアカウント機能を使用して、組織内の特定のオートメーションが特権アクセスに依存せずに機能できるようにすることができます。ただし、このような除外は例外的に行うことをお勧めします。普段は。</span><span class="sxs-lookup"><span data-stu-id="293b3-147">System accounts feature is made available to ensure certain automations within your organizations can work without dependency on privileged access, however it is recommended that such exclusions be exceptional and those allowed should be approved and audited regularly.</span></span>
+><span data-ttu-id="5972e-147">システムアカウント機能を使用して、組織内の特定のオートメーションが特権アクセスに依存せずに機能できるようにすることができます。ただし、このような除外は例外的に行うことをお勧めします。普段は。</span><span class="sxs-lookup"><span data-stu-id="5972e-147">System accounts feature is made available to ensure certain automations within your organizations can work without dependency on privileged access, however it is recommended that such exclusions be exceptional and those allowed should be approved and audited regularly.</span></span>
 
-<span data-ttu-id="293b3-148"><a name="step3"> </a></span><span class="sxs-lookup"><span data-stu-id="293b3-148"></span></span>
+<span data-ttu-id="5972e-148"><a name="step3"> </a></span><span class="sxs-lookup"><span data-stu-id="5972e-148"><a name="step3"> </a></span></span>
 
-## <a name="step-3-create-an-access-policy"></a><span data-ttu-id="293b3-149">手順 3: アクセスポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="293b3-149">Step 3: Create an access policy</span></span>
+## <a name="step-3-create-an-access-policy"></a><span data-ttu-id="5972e-149">手順 3: アクセスポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="5972e-149">Step 3: Create an access policy</span></span>
 
-<span data-ttu-id="293b3-150">Office 365 組織に対して最大30の特権アクセスポリシーを作成し、構成することができます。</span><span class="sxs-lookup"><span data-stu-id="293b3-150">You can create and configure up to 30 privileged access policies for your Office 365 organization.</span></span>
+<span data-ttu-id="5972e-150">Office 365 組織に対して最大30の特権アクセスポリシーを作成し、構成することができます。</span><span class="sxs-lookup"><span data-stu-id="5972e-150">You can create and configure up to 30 privileged access policies for your Office 365 organization.</span></span>
 
-### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="293b3-151">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="293b3-151">In the Microsoft 365 Admin Center</span></span>
+### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="5972e-151">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="5972e-151">In the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="293b3-152">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-152">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="5972e-152">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-152">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="293b3-153">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="293b3-153">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="5972e-153">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5972e-153">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="293b3-154">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-154">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="5972e-154">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-154">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="293b3-155">[**ポリシーの構成**] を選択し、[**ポリシーの追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-155">Select **Configure policies** and select **Add a policy**.</span></span>
+4. <span data-ttu-id="5972e-155">[**ポリシーの構成**] を選択し、[**ポリシーの追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-155">Select **Configure policies** and select **Add a policy**.</span></span>
 
-5. <span data-ttu-id="293b3-156">ドロップダウンフィールドで、組織に適切な値を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-156">From the drop-down fields, select the appropriate values for your organization:</span></span>
+5. <span data-ttu-id="5972e-156">ドロップダウンフィールドで、組織に適切な値を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-156">From the drop-down fields, select the appropriate values for your organization:</span></span>
     
-    <span data-ttu-id="293b3-157">**ポリシーの種類**: タスク、役割、または役割グループ</span><span class="sxs-lookup"><span data-stu-id="293b3-157">**Policy type**: Task, Role, or Role Group</span></span>
+    <span data-ttu-id="5972e-157">**ポリシーの種類**: タスク、役割、または役割グループ</span><span class="sxs-lookup"><span data-stu-id="5972e-157">**Policy type**: Task, Role, or Role Group</span></span>
 
-    <span data-ttu-id="293b3-158">**ポリシースコープ**: Exchange</span><span class="sxs-lookup"><span data-stu-id="293b3-158">**Policy scope**: Exchange</span></span>
+    <span data-ttu-id="5972e-158">**ポリシースコープ**: Exchange</span><span class="sxs-lookup"><span data-stu-id="5972e-158">**Policy scope**: Exchange</span></span>
 
-    <span data-ttu-id="293b3-159">**ポリシー名**: 使用可能なポリシーから選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-159">**Policy name**: Select from the available policies</span></span>
+    <span data-ttu-id="5972e-159">**ポリシー名**: 使用可能なポリシーから選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-159">**Policy name**: Select from the available policies</span></span>
 
-    <span data-ttu-id="293b3-160">**承認の種類**: 手動または自動</span><span class="sxs-lookup"><span data-stu-id="293b3-160">**Approval type**: Manual or Auto</span></span>
+    <span data-ttu-id="5972e-160">**承認の種類**: 手動または自動</span><span class="sxs-lookup"><span data-stu-id="5972e-160">**Approval type**: Manual or Auto</span></span>
 
-    <span data-ttu-id="293b3-161">**承認グループ**: 手順1で作成した承認者グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-161">**Approval group**: Select the approvers group created in Step 1</span></span>
+    <span data-ttu-id="5972e-161">**承認グループ**: 手順1で作成した承認者グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-161">**Approval group**: Select the approvers group created in Step 1</span></span>
 
-6. <span data-ttu-id="293b3-162">[**作成**] を選択し、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="293b3-162">Select **Create** and then **Close**.</span></span> <span data-ttu-id="293b3-163">ポリシーが完全に構成され、有効になるまでに数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="293b3-163">It may take a few minutes for the policy to be fully configured and enabled.</span></span>
+6. <span data-ttu-id="5972e-162">[**作成**] を選択し、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5972e-162">Select **Create** and then **Close**.</span></span> <span data-ttu-id="5972e-163">ポリシーが完全に構成され、有効になるまでに数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="5972e-163">It may take a few minutes for the policy to be fully configured and enabled.</span></span>
 
-### <a name="in-exchange-management-powershell"></a><span data-ttu-id="293b3-164">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="293b3-164">In Exchange Management PowerShell</span></span>
+### <a name="in-exchange-management-powershell"></a><span data-ttu-id="5972e-164">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5972e-164">In Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="293b3-165">承認ポリシーを作成して定義するには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="293b3-165">To create and define an approval policy, run the following command in Exchange Online PowerShell:</span></span>
+<span data-ttu-id="5972e-165">承認ポリシーを作成して定義するには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5972e-165">To create and define an approval policy, run the following command in Exchange Online PowerShell:</span></span>
 
 ```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
 ```
 
-<span data-ttu-id="293b3-166">例:</span><span class="sxs-lookup"><span data-stu-id="293b3-166">Example:</span></span>
+<span data-ttu-id="5972e-166">例:</span><span class="sxs-lookup"><span data-stu-id="5972e-166">Example:</span></span>
 
 ```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType Manual -ApproverGroup 'mbmanagers@fabrikamorg.onmicrosoft.com'
 ```
 
-<span data-ttu-id="293b3-167"><a name="step4"> </a></span><span class="sxs-lookup"><span data-stu-id="293b3-167"></span></span>
+<span data-ttu-id="5972e-167"><a name="step4"> </a></span><span class="sxs-lookup"><span data-stu-id="5972e-167"><a name="step4"> </a></span></span>
 
-## <a name="step-4-submitapprove-privileged-access-requests"></a><span data-ttu-id="293b3-168">手順 4: 特権アクセス要求を送信/承認する</span><span class="sxs-lookup"><span data-stu-id="293b3-168">Step 4: Submit/approve privileged access requests</span></span>
+## <a name="step-4-submitapprove-privileged-access-requests"></a><span data-ttu-id="5972e-168">手順 4: 特権アクセス要求を送信/承認する</span><span class="sxs-lookup"><span data-stu-id="5972e-168">Step 4: Submit/approve privileged access requests</span></span>
 
-### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a><span data-ttu-id="293b3-169">権限タスクを実行するための昇格承認の要求</span><span class="sxs-lookup"><span data-stu-id="293b3-169">Requesting elevation authorization to execute privileged tasks</span></span>
+### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a><span data-ttu-id="5972e-169">権限タスクを実行するための昇格承認の要求</span><span class="sxs-lookup"><span data-stu-id="5972e-169">Requesting elevation authorization to execute privileged tasks</span></span>
 
-<span data-ttu-id="293b3-170">特権アクセスの要求は、要求が送信されてから最大24時間有効です。</span><span class="sxs-lookup"><span data-stu-id="293b3-170">Requests for privileged access are valid for up to 24 hours after the request is submitted.</span></span> <span data-ttu-id="293b3-171">承認または拒否されていない場合、要求は期限切れになり、アクセスは承認されません。</span><span class="sxs-lookup"><span data-stu-id="293b3-171">If not approved or denied, the requests expire and access is not approved.</span></span>
+<span data-ttu-id="5972e-170">特権アクセスの要求は、要求が送信されてから最大24時間有効です。</span><span class="sxs-lookup"><span data-stu-id="5972e-170">Requests for privileged access are valid for up to 24 hours after the request is submitted.</span></span> <span data-ttu-id="5972e-171">承認または拒否されていない場合、要求は期限切れになり、アクセスは承認されません。</span><span class="sxs-lookup"><span data-stu-id="5972e-171">If not approved or denied, the requests expire and access is not approved.</span></span>
 
-#### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="293b3-172">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="293b3-172">In the Microsoft 365 Admin Center</span></span>
+#### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="5972e-172">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="5972e-172">In the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="293b3-173">資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-173">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using your credentials.</span></span>
+1. <span data-ttu-id="5972e-173">資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-173">Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using your credentials.</span></span>
 
-2. <span data-ttu-id="293b3-174">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="293b3-174">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="5972e-174">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5972e-174">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="293b3-175">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-175">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="5972e-175">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-175">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="293b3-176">[**新しい要求**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-176">Select **New request**.</span></span> <span data-ttu-id="293b3-177">ドロップダウンフィールドで、組織に適切な値を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-177">From the drop-down fields, select the appropriate values for your organization:</span></span>
+4. <span data-ttu-id="5972e-176">[**新しい要求**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-176">Select **New request**.</span></span> <span data-ttu-id="5972e-177">ドロップダウンフィールドで、組織に適切な値を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-177">From the drop-down fields, select the appropriate values for your organization:</span></span>
 
-    <span data-ttu-id="293b3-178">**要求の種類**: タスク、役割、または役割グループ</span><span class="sxs-lookup"><span data-stu-id="293b3-178">**Request type**: Task, Role, or Role Group</span></span>
+    <span data-ttu-id="5972e-178">**要求の種類**: タスク、役割、または役割グループ</span><span class="sxs-lookup"><span data-stu-id="5972e-178">**Request type**: Task, Role, or Role Group</span></span>
 
-    <span data-ttu-id="293b3-179">**要求スコープ**: Exchange</span><span class="sxs-lookup"><span data-stu-id="293b3-179">**Request scope**: Exchange</span></span>
+    <span data-ttu-id="5972e-179">**要求スコープ**: Exchange</span><span class="sxs-lookup"><span data-stu-id="5972e-179">**Request scope**: Exchange</span></span>
 
-    <span data-ttu-id="293b3-180">**要求**: 使用可能なポリシーから選択します</span><span class="sxs-lookup"><span data-stu-id="293b3-180">**Request for**: Select from the available policies</span></span>
+    <span data-ttu-id="5972e-180">**要求**: 使用可能なポリシーから選択します</span><span class="sxs-lookup"><span data-stu-id="5972e-180">**Request for**: Select from the available policies</span></span>
 
-    <span data-ttu-id="293b3-181">**期間 (時間)**: 要求されたアクセスの時間数。</span><span class="sxs-lookup"><span data-stu-id="293b3-181">**Duration (hours)**: Number of hours of requested access.</span></span> <span data-ttu-id="293b3-182">要求可能な時間数に制限はありません。</span><span class="sxs-lookup"><span data-stu-id="293b3-182">There isn't a limit on the number of hours that can be requested.</span></span>
+    <span data-ttu-id="5972e-181">**期間 (時間)**: 要求されたアクセスの時間数。</span><span class="sxs-lookup"><span data-stu-id="5972e-181">**Duration (hours)**: Number of hours of requested access.</span></span> <span data-ttu-id="5972e-182">要求可能な時間数に制限はありません。</span><span class="sxs-lookup"><span data-stu-id="5972e-182">There isn't a limit on the number of hours that can be requested.</span></span>
 
-    <span data-ttu-id="293b3-183">**Comments**: アクセス要求に関連するコメントのテキストフィールド</span><span class="sxs-lookup"><span data-stu-id="293b3-183">**Comments**: Text field for comments related to your access request</span></span>
+    <span data-ttu-id="5972e-183">**Comments**: アクセス要求に関連するコメントのテキストフィールド</span><span class="sxs-lookup"><span data-stu-id="5972e-183">**Comments**: Text field for comments related to your access request</span></span>
 
-5. <span data-ttu-id="293b3-184">[**保存**] を選択し、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="293b3-184">Select **Save** and then **Close**.</span></span> <span data-ttu-id="293b3-185">要求は、電子メールを介して承認者のグループに送信されます。</span><span class="sxs-lookup"><span data-stu-id="293b3-185">Your request will be sent to the approver's group via email.</span></span>
+5. <span data-ttu-id="5972e-184">[**保存**] を選択し、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5972e-184">Select **Save** and then **Close**.</span></span> <span data-ttu-id="5972e-185">要求は、電子メールを介して承認者のグループに送信されます。</span><span class="sxs-lookup"><span data-stu-id="5972e-185">Your request will be sent to the approver's group via email.</span></span>
 
-#### <a name="in-exchange-management-powershell"></a><span data-ttu-id="293b3-186">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="293b3-186">In Exchange Management PowerShell</span></span>
+#### <a name="in-exchange-management-powershell"></a><span data-ttu-id="5972e-186">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5972e-186">In Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="293b3-187">Exchange Online PowerShell で次のコマンドを実行して、承認要求を作成し、承認者のグループに送信します。</span><span class="sxs-lookup"><span data-stu-id="293b3-187">Run the following command in Exchange Online PowerShell to create and submit an approval request to the approver's group:</span></span>
+<span data-ttu-id="5972e-187">Exchange Online PowerShell で次のコマンドを実行して、承認要求を作成し、承認者のグループに送信します。</span><span class="sxs-lookup"><span data-stu-id="5972e-187">Run the following command in Exchange Online PowerShell to create and submit an approval request to the approver's group:</span></span>
 
 ```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\<exchange management cmdlet name>' -Reason '<appropriate reason>' -DurationHours <duration in hours>
 ```
 
-<span data-ttu-id="293b3-188">例:</span><span class="sxs-lookup"><span data-stu-id="293b3-188">Example:</span></span>
+<span data-ttu-id="5972e-188">例:</span><span class="sxs-lookup"><span data-stu-id="5972e-188">Example:</span></span>
 
 ```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
 
-### <a name="view-status-of-elevation-requests"></a><span data-ttu-id="293b3-189">昇格要求の状態を表示する</span><span class="sxs-lookup"><span data-stu-id="293b3-189">View status of elevation requests</span></span>
+### <a name="view-status-of-elevation-requests"></a><span data-ttu-id="5972e-189">昇格要求の状態を表示する</span><span class="sxs-lookup"><span data-stu-id="5972e-189">View status of elevation requests</span></span>
 
-<span data-ttu-id="293b3-190">承認要求が作成されると、昇格要求の状態は、管理センターまたは Exchange 管理 PowerShell で、関連付けられている要求 ID を使用して確認できます。</span><span class="sxs-lookup"><span data-stu-id="293b3-190">After an approval request is created, elevation request status can be reviewed in the admin center or in Exchange Management PowerShell using the associated with request ID.</span></span>
+<span data-ttu-id="5972e-190">承認要求が作成されると、昇格要求の状態は、管理センターまたは Exchange 管理 PowerShell で、関連付けられている要求 ID を使用して確認できます。</span><span class="sxs-lookup"><span data-stu-id="5972e-190">After an approval request is created, elevation request status can be reviewed in the admin center or in Exchange Management PowerShell using the associated with request ID.</span></span>
 
-#### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="293b3-191">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="293b3-191">In the Microsoft 365 admin center</span></span>
+#### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="5972e-191">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="5972e-191">In the Microsoft 365 admin center</span></span>
 
-1. <span data-ttu-id="293b3-192">資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-192">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.</span></span>
+1. <span data-ttu-id="5972e-192">資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-192">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.</span></span>
 
-2. <span data-ttu-id="293b3-193">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="293b3-193">In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="5972e-193">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5972e-193">In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="293b3-194">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-194">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="5972e-194">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-194">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="293b3-195">[**表示**] を選択して、送信された要求を**保留**、**承認**、**拒否**、または**顧客のロックボックス**の状態でフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="293b3-195">Select **View** to filter submitted requests by **Pending**, **Approved**, **Denied**, or **Customer Lockbox** status.</span></span>
+4. <span data-ttu-id="5972e-195">[**表示**] を選択して、送信された要求を**保留**、**承認**、**拒否**、または**顧客のロックボックス**の状態でフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="5972e-195">Select **View** to filter submitted requests by **Pending**, **Approved**, **Denied**, or **Customer Lockbox** status.</span></span>
 
-#### <a name="in-exchange-management-powershell"></a><span data-ttu-id="293b3-196">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="293b3-196">In Exchange Management PowerShell</span></span>
+#### <a name="in-exchange-management-powershell"></a><span data-ttu-id="5972e-196">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5972e-196">In Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="293b3-197">Exchange Online PowerShell で次のコマンドを実行して、特定の要求 ID の承認要求の状態を表示します。</span><span class="sxs-lookup"><span data-stu-id="293b3-197">Run the following command in Exchange Online PowerShell to view an approval request status for a specific request ID:</span></span>
+<span data-ttu-id="5972e-197">Exchange Online PowerShell で次のコマンドを実行して、特定の要求 ID の承認要求の状態を表示します。</span><span class="sxs-lookup"><span data-stu-id="5972e-197">Run the following command in Exchange Online PowerShell to view an approval request status for a specific request ID:</span></span>
 
 ```PowerShell
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus
 ```
 
-<span data-ttu-id="293b3-198">例:</span><span class="sxs-lookup"><span data-stu-id="293b3-198">Example:</span></span>
+<span data-ttu-id="5972e-198">例:</span><span class="sxs-lookup"><span data-stu-id="5972e-198">Example:</span></span>
 
 ```PowerShell
 Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | select RequestStatus
 ```
 
-### <a name="approving-an-elevation-authorization-request"></a><span data-ttu-id="293b3-199">昇格認証要求を承認する</span><span class="sxs-lookup"><span data-stu-id="293b3-199">Approving an elevation authorization request</span></span>
+### <a name="approving-an-elevation-authorization-request"></a><span data-ttu-id="5972e-199">昇格認証要求を承認する</span><span class="sxs-lookup"><span data-stu-id="5972e-199">Approving an elevation authorization request</span></span>
 
-<span data-ttu-id="293b3-200">承認要求が作成されると、関連する承認者グループのメンバーは電子メール通知を受信し、要求 ID に関連付けられている要求を承認できます。</span><span class="sxs-lookup"><span data-stu-id="293b3-200">When an approval request is created, members of the relevant approver group receive an email notification and can approve the request associated with the request ID.</span></span> <span data-ttu-id="293b3-201">送信者は、電子メールメッセージを使用して、要求の承認または拒否を通知されます。</span><span class="sxs-lookup"><span data-stu-id="293b3-201">The requestor is notified of the request approval or denial via email message.</span></span>
+<span data-ttu-id="5972e-200">承認要求が作成されると、関連する承認者グループのメンバーは電子メール通知を受信し、要求 ID に関連付けられている要求を承認できます。</span><span class="sxs-lookup"><span data-stu-id="5972e-200">When an approval request is created, members of the relevant approver group receive an email notification and can approve the request associated with the request ID.</span></span> <span data-ttu-id="5972e-201">送信者は、電子メールメッセージを使用して、要求の承認または拒否を通知されます。</span><span class="sxs-lookup"><span data-stu-id="5972e-201">The requestor is notified of the request approval or denial via email message.</span></span>
 
-#### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="293b3-202">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="293b3-202">In the Microsoft 365 admin center</span></span>
+#### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="5972e-202">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="5972e-202">In the Microsoft 365 admin center</span></span>
 
-1. <span data-ttu-id="293b3-203">資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-203">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.</span></span>
+1. <span data-ttu-id="5972e-203">資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-203">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.</span></span>
 
-2. <span data-ttu-id="293b3-204">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="293b3-204">In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="5972e-204">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5972e-204">In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="293b3-205">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-205">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="5972e-205">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-205">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="293b3-206">詳細を表示し、要求に対してアクションを実行するには、リストされている要求を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-206">Select a listed request to view the details and to take action on the request.</span></span>
+4. <span data-ttu-id="5972e-206">詳細を表示し、要求に対してアクションを実行するには、リストされている要求を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-206">Select a listed request to view the details and to take action on the request.</span></span>
 
-5. <span data-ttu-id="293b3-207">[**承認**] を選択して要求を承認するか、[**拒否**] を選択して要求を拒否します。</span><span class="sxs-lookup"><span data-stu-id="293b3-207">Select **Approve** to approve the request or select **Deny** to deny the request.</span></span> <span data-ttu-id="293b3-208">以前に承認された要求では、 **Revoke**を選択することによってアクセスを取り消すことができます</span><span class="sxs-lookup"><span data-stu-id="293b3-208">Previously approved requests can have access revoked by selecting **Revoke**.</span></span>
+5. <span data-ttu-id="5972e-207">[**承認**] を選択して要求を承認するか、[**拒否**] を選択して要求を拒否します。</span><span class="sxs-lookup"><span data-stu-id="5972e-207">Select **Approve** to approve the request or select **Deny** to deny the request.</span></span> <span data-ttu-id="5972e-208">以前に承認された要求では、 **Revoke**を選択することによってアクセスを取り消すことができます</span><span class="sxs-lookup"><span data-stu-id="5972e-208">Previously approved requests can have access revoked by selecting **Revoke**.</span></span>
 
-#### <a name="in-exchange-management-powershell"></a><span data-ttu-id="293b3-209">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="293b3-209">In Exchange Management PowerShell</span></span>
+#### <a name="in-exchange-management-powershell"></a><span data-ttu-id="5972e-209">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5972e-209">In Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="293b3-210">昇格認証要求を承認するには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="293b3-210">To approve an elevation authorization request, run the following command in Exchange Online PowerShell:</span></span>
+<span data-ttu-id="5972e-210">昇格認証要求を承認するには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5972e-210">To approve an elevation authorization request, run the following command in Exchange Online PowerShell:</span></span>
 
 ```PowerShell
 Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval comment>'
 ```
 
-<span data-ttu-id="293b3-211">例:</span><span class="sxs-lookup"><span data-stu-id="293b3-211">Example:</span></span>
+<span data-ttu-id="5972e-211">例:</span><span class="sxs-lookup"><span data-stu-id="5972e-211">Example:</span></span>
 
 ```PowerShell
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
-<span data-ttu-id="293b3-212">昇格認証要求を拒否するには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="293b3-212">To deny an elevation authorization request, run the following command in Exchange Online PowerShell:</span></span>
+<span data-ttu-id="5972e-212">昇格認証要求を拒否するには、Exchange Online PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5972e-212">To deny an elevation authorization request, run the following command in Exchange Online PowerShell:</span></span>
 
 ```PowerShell
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 ```
 
-<span data-ttu-id="293b3-213">例:</span><span class="sxs-lookup"><span data-stu-id="293b3-213">Example:</span></span>
+<span data-ttu-id="5972e-213">例:</span><span class="sxs-lookup"><span data-stu-id="5972e-213">Example:</span></span>
 
 ```PowerShell
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
 ```
 
-## <a name="delete-a-privileged-access-policy-in-office-365"></a><span data-ttu-id="293b3-214">Office 365 で特権アクセスポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="293b3-214">Delete a privileged access policy in Office 365</span></span>
+## <a name="delete-a-privileged-access-policy-in-office-365"></a><span data-ttu-id="5972e-214">Office 365 で特権アクセスポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="5972e-214">Delete a privileged access policy in Office 365</span></span>
 
-<span data-ttu-id="293b3-215">組織で不要になった場合は、特権アクセスポリシーを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="293b3-215">If it is no longer needed in your organization, you can delete a privileged access policy.</span></span>
+<span data-ttu-id="5972e-215">組織で不要になった場合は、特権アクセスポリシーを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="5972e-215">If it is no longer needed in your organization, you can delete a privileged access policy.</span></span>
 
-### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="293b3-216">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="293b3-216">In the Microsoft 365 admin center</span></span>
+### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="5972e-216">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="5972e-216">In the Microsoft 365 admin center</span></span>
 
-1. <span data-ttu-id="293b3-217">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-217">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="5972e-217">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-217">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="293b3-218">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="293b3-218">In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="5972e-218">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5972e-218">In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="293b3-219">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-219">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="5972e-219">[**アクセスポリシーと要求の管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-219">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="293b3-220">[**構成ポリシー**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-220">Select **Configure policies**.</span></span>
+4. <span data-ttu-id="5972e-220">[**構成ポリシー**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-220">Select **Configure policies**.</span></span>
 
-5. <span data-ttu-id="293b3-221">削除するポリシーを選択し、[ポリシーの**削除**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-221">Select the policy you want to delete, then select **Remove Policy**.</span></span>
+5. <span data-ttu-id="5972e-221">削除するポリシーを選択し、[ポリシーの**削除**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-221">Select the policy you want to delete, then select **Remove Policy**.</span></span>
 
-6. <span data-ttu-id="293b3-222">**[閉じる]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="293b3-222">Select **Close**.</span></span>
+6. <span data-ttu-id="5972e-222">**[閉じる]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5972e-222">Select **Close**.</span></span>
 
-### <a name="in-exchange-management-powershell"></a><span data-ttu-id="293b3-223">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="293b3-223">In Exchange Management PowerShell</span></span>
+### <a name="in-exchange-management-powershell"></a><span data-ttu-id="5972e-223">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5972e-223">In Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="293b3-224">特権アクセスポリシーを削除するには、Exchange Online Powershell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="293b3-224">To delete a privileged access policy, run the following command in Exchange Online Powershell:</span></span>
+<span data-ttu-id="5972e-224">特権アクセスポリシーを削除するには、Exchange Online Powershell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5972e-224">To delete a privileged access policy, run the following command in Exchange Online Powershell:</span></span>
 
 ```PowerShell
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
-## <a name="disable-privileged-access-in-office-365"></a><span data-ttu-id="293b3-225">Office 365 で特権アクセスを無効にする</span><span class="sxs-lookup"><span data-stu-id="293b3-225">Disable privileged access in Office 365</span></span>
+## <a name="disable-privileged-access-in-office-365"></a><span data-ttu-id="5972e-225">Office 365 で特権アクセスを無効にする</span><span class="sxs-lookup"><span data-stu-id="5972e-225">Disable privileged access in Office 365</span></span>
 
-<span data-ttu-id="293b3-226">必要に応じて、組織の特権アクセス管理を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="293b3-226">If needed, you can disable privileged access management for your organization.</span></span> <span data-ttu-id="293b3-227">特権アクセスを無効にしても、関連付けられている承認ポリシーまたは承認グループは削除されません。</span><span class="sxs-lookup"><span data-stu-id="293b3-227">Disabling privileged access does not delete any associated approval policies or approver groups.</span></span>
+<span data-ttu-id="5972e-226">必要に応じて、組織の特権アクセス管理を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="5972e-226">If needed, you can disable privileged access management for your organization.</span></span> <span data-ttu-id="5972e-227">特権アクセスを無効にしても、関連付けられている承認ポリシーまたは承認グループは削除されません。</span><span class="sxs-lookup"><span data-stu-id="5972e-227">Disabling privileged access does not delete any associated approval policies or approver groups.</span></span>
 
-### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="293b3-228">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="293b3-228">In the Microsoft 365 admin center</span></span>
+### <a name="in-the-microsoft-365-admin-center"></a><span data-ttu-id="5972e-228">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="5972e-228">In the Microsoft 365 admin center</span></span>
 
-1. <span data-ttu-id="293b3-229">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="293b3-229">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="5972e-229">組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5972e-229">Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="293b3-230">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="293b3-230">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="5972e-230">管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5972e-230">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="293b3-231">[**特権アクセス制御の承認を必須**にする] を有効にします。</span><span class="sxs-lookup"><span data-stu-id="293b3-231">Enable the **Require approvals for privileged access** control.</span></span>
+3. <span data-ttu-id="5972e-231">[**特権アクセス制御の承認を必須**にする] を有効にします。</span><span class="sxs-lookup"><span data-stu-id="5972e-231">Enable the **Require approvals for privileged access** control.</span></span>
 
-### <a name="in-exchange-management-powershell"></a><span data-ttu-id="293b3-232">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="293b3-232">In Exchange Management PowerShell</span></span>
+### <a name="in-exchange-management-powershell"></a><span data-ttu-id="5972e-232">Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5972e-232">In Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="293b3-233">特権アクセスを無効にするには、Exchange Online Powershell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="293b3-233">To disable privileged access, run the following command in Exchange Online Powershell:</span></span>
+<span data-ttu-id="5972e-233">特権アクセスを無効にするには、Exchange Online Powershell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5972e-233">To disable privileged access, run the following command in Exchange Online Powershell:</span></span>
 
 ```PowerShell
 Disable-ElevatedAccessControl

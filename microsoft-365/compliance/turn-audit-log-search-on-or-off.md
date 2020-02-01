@@ -1,5 +1,7 @@
 ---
 title: Office 365 監査ログの検索を有効または無効にする
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,78 +19,78 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: セキュリティ & コンプライアンスセンターでは、監査ログ検索機能を有効にすることができます。 変更した場合は、いつでもオフにすることができます。 監査ログ検索がオフになっている場合、管理者は、組織内のユーザーおよび管理者のアクティビティに対して Office 365 監査ログを検索することはできません。
-ms.openlocfilehash: 4e382c9916a9460d2c837a336607734427416a1a
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: dfa637bfe6df0e4643d96a921a604ea5d0deba9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686921"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601371"
 ---
-# <a name="turn-office-365-audit-log-search-on-or-off"></a><span data-ttu-id="28836-105">Office 365 監査ログの検索を有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="28836-105">Turn Office 365 audit log search on or off</span></span>
+# <a name="turn-office-365-audit-log-search-on-or-off"></a><span data-ttu-id="527a3-105">Office 365 監査ログの検索を有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="527a3-105">Turn Office 365 audit log search on or off</span></span>
 
-<span data-ttu-id="28836-106">Office 365 監査ログの検索を開始する前に、自分 (または別の管理者) が監査ログを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="28836-106">You (or another admin) must turn on audit logging before you can start searching the Office 365 audit log.</span></span> <span data-ttu-id="28836-107">セキュリティ & コンプライアンスセンターで監査ログの検索が有効になっている場合、組織からのユーザーおよび管理者のアクティビティが監査ログに記録され、90日間保持されます。</span><span class="sxs-lookup"><span data-stu-id="28836-107">When audit log search in the Security & Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days.</span></span> <span data-ttu-id="28836-108">ただし、監査ログデータを記録して保持したくない組織もあります。</span><span class="sxs-lookup"><span data-stu-id="28836-108">However, your organization may not want to record and retain audit log data.</span></span> <span data-ttu-id="28836-109">または、サードパーティのセキュリティ情報およびイベント管理 (SIEM) アプリケーションを使用して、監査データにアクセスしている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="28836-109">Or you may be using a third-party security information and event management (SIEM) application to access your auditing data.</span></span> <span data-ttu-id="28836-110">そのような場合、グローバル管理者は Office 365 で監査ログの検索を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="28836-110">In those cases, a global admin can turn off audit log search in Office 365.</span></span>
+<span data-ttu-id="527a3-106">Office 365 監査ログの検索を開始する前に、自分 (または別の管理者) が監査ログを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-106">You (or another admin) must turn on audit logging before you can start searching the Office 365 audit log.</span></span> <span data-ttu-id="527a3-107">セキュリティ & コンプライアンスセンターで監査ログの検索が有効になっている場合、組織からのユーザーおよび管理者のアクティビティが監査ログに記録され、90日間保持されます。</span><span class="sxs-lookup"><span data-stu-id="527a3-107">When audit log search in the Security & Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days.</span></span> <span data-ttu-id="527a3-108">ただし、監査ログデータを記録して保持したくない組織もあります。</span><span class="sxs-lookup"><span data-stu-id="527a3-108">However, your organization may not want to record and retain audit log data.</span></span> <span data-ttu-id="527a3-109">または、サードパーティのセキュリティ情報およびイベント管理 (SIEM) アプリケーションを使用して、監査データにアクセスしている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-109">Or you may be using a third-party security information and event management (SIEM) application to access your auditing data.</span></span> <span data-ttu-id="527a3-110">そのような場合、グローバル管理者は Office 365 で監査ログの検索を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="527a3-110">In those cases, a global admin can turn off audit log search in Office 365.</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="28836-111">始める前に</span><span class="sxs-lookup"><span data-stu-id="28836-111">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="527a3-111">始める前に</span><span class="sxs-lookup"><span data-stu-id="527a3-111">Before you begin</span></span>
 
-- <span data-ttu-id="28836-112">Office 365 組織で監査ログの検索をオンまたはオフにするには、Exchange Online の Audit Logs 役割が割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="28836-112">You have to be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Office 365 organization.</span></span> <span data-ttu-id="28836-113">既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="28836-113">By default, this role is assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center.</span></span> <span data-ttu-id="28836-114">Office 365 のグローバル管理者は、Exchange Online の Organization Management 役割グループのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="28836-114">Global admins in Office 365 are members of the Organization Management role group in Exchange Online.</span></span> 
+- <span data-ttu-id="527a3-112">Office 365 組織で監査ログの検索をオンまたはオフにするには、Exchange Online の Audit Logs 役割が割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-112">You have to be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Office 365 organization.</span></span> <span data-ttu-id="527a3-113">既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="527a3-113">By default, this role is assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center.</span></span> <span data-ttu-id="527a3-114">Office 365 のグローバル管理者は、Exchange Online の Organization Management 役割グループのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="527a3-114">Global admins in Office 365 are members of the Organization Management role group in Exchange Online.</span></span> 
     
     > [!IMPORTANT]
-    > <span data-ttu-id="28836-115">監査ログの検索を有効または無効にするには、Exchange Online のアクセス許可をユーザーに割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="28836-115">Users have to be assigned permissions in Exchange Online to turn audit log search on or off.</span></span> <span data-ttu-id="28836-116">セキュリティ & コンプライアンスセンターの [**アクセス許可**] ページで監査ログの役割をユーザーに割り当てると、監査ログの検索をオンまたはオフにすることができなくなります。</span><span class="sxs-lookup"><span data-stu-id="28836-116">If you assign users the Audit Logs role on the **Permissions** page in the Security & Compliance Center, they won't be able to turn audit log search on or off.</span></span> <span data-ttu-id="28836-117">これは、基礎となるコマンドレットが Exchange Online のコマンドレットであるためです。</span><span class="sxs-lookup"><span data-stu-id="28836-117">This is because the underlying cmdlet is an Exchange Online cmdlet.</span></span> 
+    > <span data-ttu-id="527a3-115">監査ログの検索を有効または無効にするには、Exchange Online のアクセス許可をユーザーに割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-115">Users have to be assigned permissions in Exchange Online to turn audit log search on or off.</span></span> <span data-ttu-id="527a3-116">セキュリティ & コンプライアンスセンターの [**アクセス許可**] ページで監査ログの役割をユーザーに割り当てると、監査ログの検索をオンまたはオフにすることができなくなります。</span><span class="sxs-lookup"><span data-stu-id="527a3-116">If you assign users the Audit Logs role on the **Permissions** page in the Security & Compliance Center, they won't be able to turn audit log search on or off.</span></span> <span data-ttu-id="527a3-117">これは、基礎となるコマンドレットが Exchange Online のコマンドレットであるためです。</span><span class="sxs-lookup"><span data-stu-id="527a3-117">This is because the underlying cmdlet is an Exchange Online cmdlet.</span></span> 
   
-- <span data-ttu-id="28836-118">Office 365 で監査ログの検索を無効にした場合、Office 365 Management Activity API を使用して組織の監査データにアクセスすることはできません。</span><span class="sxs-lookup"><span data-stu-id="28836-118">If you turn off audit log search in Office 365, you can't use the Office 365 Management Activity API to access auditing data for your organization.</span></span> <span data-ttu-id="28836-119">この記事の手順に従って監査ログの検索を無効にすると、セキュリティ & コンプライアンスセンターを使用して監査ログを検索したとき、または Exchange Online PowerShell で**search-unifiedauditlog**コマンドレットを実行したときに結果が返されないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="28836-119">Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security & Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell.</span></span> <span data-ttu-id="28836-120">これは、Office 365 Management Activity API を介して監査ログを利用できないことも意味します。</span><span class="sxs-lookup"><span data-stu-id="28836-120">This also means that your audit logs won't be available through the Office 365 Management Activity API.</span></span>  
+- <span data-ttu-id="527a3-118">Office 365 で監査ログの検索を無効にした場合、Office 365 Management Activity API を使用して組織の監査データにアクセスすることはできません。</span><span class="sxs-lookup"><span data-stu-id="527a3-118">If you turn off audit log search in Office 365, you can't use the Office 365 Management Activity API to access auditing data for your organization.</span></span> <span data-ttu-id="527a3-119">この記事の手順に従って監査ログの検索を無効にすると、セキュリティ & コンプライアンスセンターを使用して監査ログを検索したとき、または Exchange Online PowerShell で**search-unifiedauditlog**コマンドレットを実行したときに結果が返されないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="527a3-119">Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security & Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell.</span></span> <span data-ttu-id="527a3-120">これは、Office 365 Management Activity API を介して監査ログを利用できないことも意味します。</span><span class="sxs-lookup"><span data-stu-id="527a3-120">This also means that your audit logs won't be available through the Office 365 Management Activity API.</span></span>  
     
-- <span data-ttu-id="28836-121">Office 365 監査ログの検索の詳細な手順については、「[セキュリティ & のコンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="28836-121">For step-by-step instructions on searching the Office 365 audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).</span></span>
+- <span data-ttu-id="527a3-121">Office 365 監査ログの検索の詳細な手順については、「[セキュリティ & のコンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="527a3-121">For step-by-step instructions on searching the Office 365 audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).</span></span>
     
-## <a name="turn-on-audit-log-search"></a><span data-ttu-id="28836-122">監査ログ検索を有効にする</span><span class="sxs-lookup"><span data-stu-id="28836-122">Turn on audit log search</span></span>
+## <a name="turn-on-audit-log-search"></a><span data-ttu-id="527a3-122">監査ログ検索を有効にする</span><span class="sxs-lookup"><span data-stu-id="527a3-122">Turn on audit log search</span></span>
 
-<span data-ttu-id="28836-123">セキュリティ & コンプライアンスセンターまたは PowerShell を使用して、Office 365 で監査ログの検索を有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="28836-123">You can use the Security & Compliance Center or PowerShell to turn on audit log search in Office 365.</span></span> <span data-ttu-id="28836-124">監査ログの検索を有効にすると、監査ログの検索時に結果を返す前に、数時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="28836-124">It may take several hours after you turn on audit log search before you can return results when you search the audit log.</span></span> <span data-ttu-id="28836-125">監査ログ検索を有効にするには、Exchange Online で Audit Logs 役割を割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="28836-125">You have to be assigned the Audit Logs role in Exchange Online to turn on audit log search.</span></span>
+<span data-ttu-id="527a3-123">セキュリティ & コンプライアンスセンターまたは PowerShell を使用して、Office 365 で監査ログの検索を有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="527a3-123">You can use the Security & Compliance Center or PowerShell to turn on audit log search in Office 365.</span></span> <span data-ttu-id="527a3-124">監査ログの検索を有効にすると、監査ログの検索時に結果を返す前に、数時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-124">It may take several hours after you turn on audit log search before you can return results when you search the audit log.</span></span> <span data-ttu-id="527a3-125">監査ログ検索を有効にするには、Exchange Online で Audit Logs 役割を割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-125">You have to be assigned the Audit Logs role in Exchange Online to turn on audit log search.</span></span>
   
-### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a><span data-ttu-id="28836-126">セキュリティ & コンプライアンスセンターを使用して監査ログの検索を有効にする</span><span class="sxs-lookup"><span data-stu-id="28836-126">Use the Security & Compliance Center to turn on audit log search</span></span>
+### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a><span data-ttu-id="527a3-126">セキュリティ & コンプライアンスセンターを使用して監査ログの検索を有効にする</span><span class="sxs-lookup"><span data-stu-id="527a3-126">Use the Security & Compliance Center to turn on audit log search</span></span>
 
-1. <span data-ttu-id="28836-127">[セキュリティ & コンプライアンスセンター] で、[**検索** \> **監査ログの検索**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="28836-127">In the Security & Compliance Center, go to **Search** \> **Audit log search**.</span></span>
+1. <span data-ttu-id="527a3-127">[セキュリティ & コンプライアンスセンター] で、[**検索** \> **監査ログの検索**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="527a3-127">In the Security & Compliance Center, go to **Search** \> **Audit log search**.</span></span>
     
-   <span data-ttu-id="28836-128">ユーザーおよび管理者のアクティビティを記録するために、監査を有効にする必要があるというバナーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="28836-128">A banner is displayed saying that auditing has to be turned on to record user and admin activity.</span></span>
+   <span data-ttu-id="527a3-128">ユーザーおよび管理者のアクティビティを記録するために、監査を有効にする必要があるというバナーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="527a3-128">A banner is displayed saying that auditing has to be turned on to record user and admin activity.</span></span>
 
-2. <span data-ttu-id="28836-129">[**監査を有効にする] を**クリックします。</span><span class="sxs-lookup"><span data-stu-id="28836-129">Click **Turn on auditing**.</span></span>
+2. <span data-ttu-id="527a3-129">[**監査を有効にする] を**クリックします。</span><span class="sxs-lookup"><span data-stu-id="527a3-129">Click **Turn on auditing**.</span></span>
     
     ![[監査を有効にする] をクリックします。](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    <span data-ttu-id="28836-131">バナーが更新され、監査ログの準備が完了し、ユーザーと管理者のアクティビティを数時間で検索できるようになります。</span><span class="sxs-lookup"><span data-stu-id="28836-131">The banner is updated to say the audit log is being prepared and that you can search for user and admin activity in a few hours.</span></span>
+    <span data-ttu-id="527a3-131">バナーが更新され、監査ログの準備が完了し、ユーザーと管理者のアクティビティを数時間で検索できるようになります。</span><span class="sxs-lookup"><span data-stu-id="527a3-131">The banner is updated to say the audit log is being prepared and that you can search for user and admin activity in a few hours.</span></span>
     
-### <a name="use-powershell-to-turn-on-audit-log-search"></a><span data-ttu-id="28836-132">PowerShell を使用して監査ログの検索を有効にする</span><span class="sxs-lookup"><span data-stu-id="28836-132">Use PowerShell to turn on audit log search</span></span>
+### <a name="use-powershell-to-turn-on-audit-log-search"></a><span data-ttu-id="527a3-132">PowerShell を使用して監査ログの検索を有効にする</span><span class="sxs-lookup"><span data-stu-id="527a3-132">Use PowerShell to turn on audit log search</span></span>
 
-1. [<span data-ttu-id="28836-133">Exchange Online PowerShell への接続</span><span class="sxs-lookup"><span data-stu-id="28836-133">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [<span data-ttu-id="527a3-133">Exchange Online PowerShell への接続</span><span class="sxs-lookup"><span data-stu-id="527a3-133">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
-2. <span data-ttu-id="28836-134">Office 365 で監査ログの検索を有効にするには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="28836-134">Run the following PowerShell command to turn on audit log search in Office 365.</span></span>
+2. <span data-ttu-id="527a3-134">Office 365 で監査ログの検索を有効にするには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="527a3-134">Run the following PowerShell command to turn on audit log search in Office 365.</span></span>
     
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
-    <span data-ttu-id="28836-135">変更が有効になるまでに最大60分かかる可能性があることを伝えるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="28836-135">A message is displayed saying that it may take up to 60 minutes for the change to take effect.</span></span>
+    <span data-ttu-id="527a3-135">変更が有効になるまでに最大60分かかる可能性があることを伝えるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="527a3-135">A message is displayed saying that it may take up to 60 minutes for the change to take effect.</span></span>
   
-## <a name="turn-off-audit-log-search"></a><span data-ttu-id="28836-136">監査ログの検索を無効にする</span><span class="sxs-lookup"><span data-stu-id="28836-136">Turn off audit log search</span></span>
+## <a name="turn-off-audit-log-search"></a><span data-ttu-id="527a3-136">監査ログの検索を無効にする</span><span class="sxs-lookup"><span data-stu-id="527a3-136">Turn off audit log search</span></span>
 
-<span data-ttu-id="28836-137">監査ログの検索を無効にするには、Exchange Online 組織に接続されたリモート PowerShell を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="28836-137">You have to use remote PowerShell connected to your Exchange Online organization to turn off audit log search.</span></span> <span data-ttu-id="28836-138">監査ログ検索を有効にするのと同様に、監査ログ検索を無効にするには、Exchange Online の Audit Logs 役割を割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="28836-138">Similar to turning on audit log search, you have to be assigned the Audit Logs role in Exchange Online to turn off audit log search.</span></span>
+<span data-ttu-id="527a3-137">監査ログの検索を無効にするには、Exchange Online 組織に接続されたリモート PowerShell を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-137">You have to use remote PowerShell connected to your Exchange Online organization to turn off audit log search.</span></span> <span data-ttu-id="527a3-138">監査ログ検索を有効にするのと同様に、監査ログ検索を無効にするには、Exchange Online の Audit Logs 役割を割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-138">Similar to turning on audit log search, you have to be assigned the Audit Logs role in Exchange Online to turn off audit log search.</span></span>
   
-1. [<span data-ttu-id="28836-139">Exchange Online PowerShell への接続</span><span class="sxs-lookup"><span data-stu-id="28836-139">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [<span data-ttu-id="527a3-139">Exchange Online PowerShell への接続</span><span class="sxs-lookup"><span data-stu-id="527a3-139">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
-2. <span data-ttu-id="28836-140">Office 365 で監査ログの検索を無効にするには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="28836-140">Run the following PowerShell command to turn off audit log search in Office 365.</span></span>
+2. <span data-ttu-id="527a3-140">Office 365 で監査ログの検索を無効にするには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="527a3-140">Run the following PowerShell command to turn off audit log search in Office 365.</span></span>
     
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. <span data-ttu-id="28836-141">しばらくした後、監査ログの検索がオフ (無効) になっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="28836-141">After a while, verify that audit log search is turned off (disabled).</span></span> <span data-ttu-id="28836-142">これを行うには 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="28836-142">There are two ways to do this:</span></span>
+3. <span data-ttu-id="527a3-141">しばらくした後、監査ログの検索がオフ (無効) になっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="527a3-141">After a while, verify that audit log search is turned off (disabled).</span></span> <span data-ttu-id="527a3-142">これを行うには 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="527a3-142">There are two ways to do this:</span></span>
     
-    - <span data-ttu-id="28836-143">PowerShell で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="28836-143">In PowerShell, run the following command:</span></span>
+    - <span data-ttu-id="527a3-143">PowerShell で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="527a3-143">In PowerShell, run the following command:</span></span>
 
     ```powershell
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
     ```
 
-      <span data-ttu-id="28836-144">UnifiedAuditLogIngestionEnabled プロパティの`False`の値__ は、監査ログの検索がオフになっていることを示します。</span><span class="sxs-lookup"><span data-stu-id="28836-144">The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off.</span></span> 
+      <span data-ttu-id="527a3-144">UnifiedAuditLogIngestionEnabled プロパティの`False`の値__ は、監査ログの検索がオフになっていることを示します。</span><span class="sxs-lookup"><span data-stu-id="527a3-144">The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off.</span></span> 
     
-    - <span data-ttu-id="28836-145">[セキュリティ & コンプライアンスセンター] で、[**検索** \> **監査ログの検索**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="28836-145">In the Security & Compliance Center, go to **Search** \> **Audit log search**.</span></span>
+    - <span data-ttu-id="527a3-145">[セキュリティ & コンプライアンスセンター] で、[**検索** \> **監査ログの検索**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="527a3-145">In the Security & Compliance Center, go to **Search** \> **Audit log search**.</span></span>
     
-      <span data-ttu-id="28836-146">ユーザーおよび管理者のアクティビティを記録するために、監査を有効にする必要があるというバナーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="28836-146">A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.</span></span>
+      <span data-ttu-id="527a3-146">ユーザーおよび管理者のアクティビティを記録するために、監査を有効にする必要があるというバナーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="527a3-146">A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.</span></span>
