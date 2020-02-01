@@ -1,5 +1,7 @@
 ---
 title: データ調査のアクセス許可を割り当てる (プレビュー)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,25 +16,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 でデータ調査ツールを使用するために必要なアクセス許可を設定する方法について説明します。
-ms.openlocfilehash: bff6b976667f3793cf1973f9ab684ae14d590d97
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cbe17c00637da6b96cdf638f9d14b402c2d07380
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086641"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597774"
 ---
-# <a name="assign-permissions-for-data-investigations-preview"></a><span data-ttu-id="26832-103">データ調査のアクセス許可を割り当てる (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="26832-103">Assign permissions for Data Investigations (Preview)</span></span>
+# <a name="assign-permissions-for-data-investigations-preview"></a><span data-ttu-id="5b06a-103">データ調査のアクセス許可を割り当てる (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="5b06a-103">Assign permissions for Data Investigations (Preview)</span></span>
 
-<span data-ttu-id="26832-104">セキュリティ/コンプライアンスセンターでデータの調査にアクセスするには、データ捜査役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="26832-104">To access a data investigation in the security and compliance center, you need be a member of the Data Investigator role group.</span></span> <span data-ttu-id="26832-105">役割グループにメンバーを追加するには、組織の管理役割グループのメンバーであるか、セキュリティ & コンプライアンスセンターで役割管理の役割を割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="26832-105">To add members to a role group, you must be be a member of the Organization Management role group or assigned the Role Management role in the Security & Compliance Center.</span></span> <span data-ttu-id="26832-106">データの調査担当になると、メンバーとなっているデータ調査で、調査を作成、アクセス、および実行できるようになります。</span><span class="sxs-lookup"><span data-stu-id="26832-106">After you become a data investigator, you can create, access, and conduct investigations in the data investigations that you are a member of.</span></span>
+<span data-ttu-id="5b06a-104">セキュリティ/コンプライアンスセンターでデータの調査にアクセスするには、データ捜査役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b06a-104">To access a data investigation in the security and compliance center, you need be a member of the Data Investigator role group.</span></span> <span data-ttu-id="5b06a-105">役割グループにメンバーを追加するには、組織の管理役割グループのメンバーであるか、セキュリティ & コンプライアンスセンターで役割管理の役割を割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b06a-105">To add members to a role group, you must be be a member of the Organization Management role group or assigned the Role Management role in the Security & Compliance Center.</span></span> <span data-ttu-id="5b06a-106">データの調査担当になると、メンバーとなっているデータ調査で、調査を作成、アクセス、および実行できるようになります。</span><span class="sxs-lookup"><span data-stu-id="5b06a-106">After you become a data investigator, you can create, access, and conduct investigations in the data investigations that you are a member of.</span></span>
 
-<span data-ttu-id="26832-107">データ調査のアクセス許可を割り当てるには</span><span class="sxs-lookup"><span data-stu-id="26832-107">To assign data investigations permissions:</span></span>
+<span data-ttu-id="5b06a-107">データ調査のアクセス許可を割り当てるには</span><span class="sxs-lookup"><span data-stu-id="5b06a-107">To assign data investigations permissions:</span></span>
 
-1. <span data-ttu-id="26832-108">にhttps://protection.office.com移動し、職場または学校のアカウントを使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="26832-108">Go to https://protection.office.com and sign in using your work or school account.</span></span>
+1. <span data-ttu-id="5b06a-108">にhttps://protection.office.com移動し、職場または学校のアカウントを使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="5b06a-108">Go to https://protection.office.com and sign in using your work or school account.</span></span>
 
-2. <span data-ttu-id="26832-109">[セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26832-109">In the Security & Compliance Center, click **Permissions**.</span></span> 
+2. <span data-ttu-id="5b06a-109">[セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b06a-109">In the Security & Compliance Center, click **Permissions**.</span></span> 
 
-3. <span data-ttu-id="26832-110">[**データ**調査担当者] 役割グループをクリックし、ポップアップページの [**メンバー** ] の横にある [**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26832-110">Click the **Data Investigator** role group, and then next to **Members** on the flyout page, click **Edit**.</span></span>
+3. <span data-ttu-id="5b06a-110">[**データ**調査担当者] 役割グループをクリックし、ポップアップページの [**メンバー** ] の横にある [**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b06a-110">Click the **Data Investigator** role group, and then next to **Members** on the flyout page, click **Edit**.</span></span>
 
-4. <span data-ttu-id="26832-111">[**メンバーの選択**] をクリックし、[**追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26832-111">Click **Choose members** and then click **Add**.</span></span> <span data-ttu-id="26832-112">データ捜査として追加するユーザーを選択し、[**追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26832-112">Select the users that you want to add as data investigators, and then click **Add**.</span></span>
+4. <span data-ttu-id="5b06a-111">[**メンバーの選択**] をクリックし、[**追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b06a-111">Click **Choose members** and then click **Add**.</span></span> <span data-ttu-id="5b06a-112">データ捜査として追加するユーザーを選択し、[**追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b06a-112">Select the users that you want to add as data investigators, and then click **Add**.</span></span>
 
-5. <span data-ttu-id="26832-113">すべてのユーザーを追加した後、[**完了**] をクリックし、[**保存**] をクリックして、役割グループへの変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="26832-113">After you've added all the users, click **Done** and then click **Save** to save the changes to the role group.</span></span>
+5. <span data-ttu-id="5b06a-113">すべてのユーザーを追加した後、[**完了**] をクリックし、[**保存**] をクリックして、役割グループへの変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="5b06a-113">After you've added all the users, click **Done** and then click **Save** to save the changes to the role group.</span></span>
