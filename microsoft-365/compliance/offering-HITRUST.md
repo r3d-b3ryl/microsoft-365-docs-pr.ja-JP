@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: aa93ea90748f4beeb7a6d2ad6f537b098f19376c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602304"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628103"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 
@@ -56,7 +56,7 @@ Azure と Office 365 の HITRUST CSF 証明書は、2年間有効です。
 
 Azure のセキュリティとコンプライアンスに関するブループリント (HIPAA/HITRUST Health データと AI) を使用した正常性データソリューションのクラウドのメリットの活用について、すぐに開始できます。 この青写真は、今日の HIPAA/HITRUST ソリューションの構築を開始するのに役立つツールとガイダンスを提供します。
 
-[Azure HIPAA/HITRUST ブループリントの使用を開始する](https://go.microsoft.com/fwlink/p/?linkid=2100613)
+[Azure HIPAA/HITRUST ブループリントの使用を開始する](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Office 365 を使用する際に HIPAA/HITRUST 準拠を促進する
 
