@@ -1,5 +1,7 @@
 ---
 title: オンプレミスの AD RMS サーバーを使用するように IRM を構成する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法を示します。
-ms.openlocfilehash: ed6ded3a51146fb73fa3a806007d977bce96da7f
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 9af8de571285843a994c943ef33baa2f5966b328
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38686769"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596254"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM を設定して、オンプレミスの AD RMS サーバーを使用する
   
@@ -33,7 +35,7 @@ Exchange Online の IRM については、「[Information Rights Management in E
 
 - このタスクの予想所要時間:30 分
 
-- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「[メッセージングポリシーとコンプライアンスのアクセス許可](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)」の「Information Rights Management」を参照してください。 
+- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[メッセージングポリシーとコンプライアンスのアクセス許可](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)」の「Information Rights Management」を参照してください。 
 
 - AD RMS サーバーは、Windows Server 2008 以降を実行している必要があります。 AD RMS を展開する方法の詳細については、「 [AD Rms クラスターのインストール](https://go.microsoft.com/fwlink/?LinkId=210873)」を参照してください。
 

@@ -1,5 +1,7 @@
 ---
-title: Set up Information Rights Management (IRM) in SharePoint admin center
+title: SharePoint 管理センターで Information Rights Management (IRM) を設定する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Microsoft Azure Active Directory Rights Management Services (RMS) を使用して SharePoint Online IRM を使用して SharePoint リストとドキュメントライブラリを保護する方法について説明します。
-ms.openlocfilehash: 4ed50b5c683215394222628153c03c58ee23e6a0
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 47321ea6151b51ac3637b3c044af37fbbc032d56
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686837"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597444"
 ---
-# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
+# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>SharePoint 管理センターで Information Rights Management (IRM) を設定する
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
-SharePoint Online では、IRM 保護はリストおよびライブラリレベルでファイルに適用されます。 組織で IRM 保護を使用するには、最初に Rights Management を設定する必要があります。 IRM は azure Information Protection からの Azure Rights Management サービスに依存して、使用制限を暗号化して割り当てます。 一部の Office 365 プランには、Azure Rights Management は含まれていますが、すべてではありません。 詳細については、「 [Office アプリケーションとサービスが Azure Rights Management をサポートする方法](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)」を参照してください。
+SharePoint Online では、リストおよびライブラリのレベルでファイルに IRM 保護が適用されます。 組織で IRM 保護を使用するには、まず、Rights Management をセットアップしておく必要があります。 IRM は Azure Information Protection の Azure Rights Management サービスを利用して、暗号化と使用制限の割り当てを実施します。 Office 365 のプランには Azure Rights Management が含まれているものと、含まれていないものがあります。 詳細については、「 [Office アプリケーションとサービスが Azure Rights Management をサポートする方法](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)」を参照してください。
   
 ## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>SharePoint 管理センターを使用して IRM サービスを有効にする
 

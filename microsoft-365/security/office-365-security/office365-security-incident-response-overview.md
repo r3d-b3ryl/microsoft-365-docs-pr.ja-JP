@@ -1,5 +1,7 @@
 ---
 title: Office 365 セキュリティ インシデント対応
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: このソリューションでは、最も一般的な cybersecurity 攻撃が Office 365 でどのように表示されるか、またそれらに応答する方法を示します。
-ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823829"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598724"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 セキュリティ インシデント対応
 

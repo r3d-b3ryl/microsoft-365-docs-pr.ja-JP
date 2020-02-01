@@ -1,5 +1,7 @@
 ---
 title: EOP および Office 365 に関する Microsoft の推奨事項、推奨事項、Sender Policy Framework、ドメインベースのメッセージの報告と適合性、DomainKeys で識別されたメール、手順、使用方法、セキュリティ基準、EOP のベースラインATP、段取り ATP、セットアップ EOP、ATP の構成、EOP、セキュリティ構成の構成
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 12/12/2019
@@ -14,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: fd2b1fdbb0356cfc2cea080f15bf696d8073fc10
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021833"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598644"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -48,7 +50,7 @@ ms.locfileid: "41021833"
 |フィッシング電子メールの検出アクション|検疫メッセージ|検疫メッセージ||
 |高信頼フィッシング電子メール検出アクション|検疫メッセージ|検疫メッセージ||
 |電子メールの一括検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|バルクメールしきい値をに設定する|シックス|2/4|現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
+|バルクメールしきい値をに設定する|6 |4 |現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
 |検疫の保存期間|30 日間|30 日間||
 |安全性に関するヒント|オン|オン||
 |許可された送信者|なし|なし||
@@ -63,7 +65,7 @@ ms.locfileid: "41021833"
  
  標準レベルと厳密なレベルの両方で、これらの設定を**無効**にすることをお勧めします。
 
-|セキュリティ機能の名前|コメント|
+|セキュリティ機能の名前|Comments|
 |---------|---------|
 |IncreaseScoreWithImageLinks||
 |IncreaseScoreWithNumericIps||
@@ -94,7 +96,7 @@ ms.locfileid: "41021833"
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|マルウェア検出応答|いいえ|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
+|マルウェア検出応答|不要|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |不審なファイルの種類をブロックするための "一般的な添付ファイルの種類のフィルター"|オン|オン||
 |マルウェアのゼロ時間の自動削除|オン|オン||
 |配信されていないメッセージの内部送信者に通知する|無効|無効||

@@ -1,5 +1,7 @@
 ---
 title: Office 365 へのメール送信
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: これらの記事は、外部の送信者が自身の評価や Office 365 のユーザーにメールを送信する能力を高めるために役立ちます。また、Office 365 ユーザーでない場合であっても、迷惑メールとフィッシング行為を報告する方法に関する情報も提供します。
-ms.openlocfilehash: da19605f97c906fae158bb8299339ffb82755faf
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: f6a0860c505453811e6e637941d90a91fd5b40f7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872033"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598414"
 ---
 # <a name="sending-mail-to-office-365"></a>Office 365 へのメール送信
 

@@ -1,5 +1,7 @@
 ---
 title: 高度な電子情報開示分析のために Office 365 以外のコンテンツをインポートする
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: O365 に格納されていないコンテンツを Azure blob にインポートして、AeD で分析できるようにする手順
-ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 8417382bc37b5bb3515e893ff2043019525b3f72
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823789"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597974"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>高度な電子情報開示分析のために Office 365 以外のコンテンツをインポートする
 
@@ -30,7 +32,7 @@ Office 365 の高度な電子情報開示で分析する必要があるすべて
 > [!NOTE]
 > Office 365 Advanced eDiscovery data storage アドオンサブスクリプションは、Office 以外の365コンテンツに対して購入できます。 これは、Advanced eDiscovery で分析するコンテンツにのみ使用できます。 「 [Office 365 for business の購入または編集とアドオン](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6)」の手順に従って、Office 365 Advanced eDiscovery storage アドオンを購入します。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 この手順の説明に従って Office 365 以外のアップロード機能を使用するには、次の条件を持っている必要があります。
   

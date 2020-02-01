@@ -1,5 +1,7 @@
 ---
 title: 検索クエリのビルド
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 で Advanced eDiscovery を使用してデータを検索するときに、検索範囲を絞るためにキーワードと条件を使用します。
-ms.openlocfilehash: 41f445c12599f96f8bb848c571c906e2b319cc7c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 7a6d175016053cd963b03cae91ff43f9c4b3336c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631047"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596294"
 ---
 # <a name="build-search-queries"></a>検索クエリのビルド
 

@@ -1,5 +1,7 @@
 ---
-title: Contoso Corporation のトップシークレットプロジェクトのチーム
+title: Contoso 社の極秘プロジェクトのチーム
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社がトップ機密プロジェクトの高度な規制データに対してチームを使用して、新しいスイートの製品とサービスを開発する方法について説明します。'
-ms.openlocfilehash: 23a967ea7ffdb3497d705a3ddda4d3c56e415b8e
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699902"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597074"
 ---
-# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation のトップシークレットプロジェクトのチーム
+# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso 社の極秘プロジェクトのチーム
 
 上級管理職がオフサイトになると、Contoso 社の CEO は、今後5年間で Contoso 社の利益を2倍にすることができる新しいスイートの製品とサービスの開発を命じました。 ビジネス、エンジニアリング、マーケットプランを開発する最上位のプロジェクトは、 **Project 2x**という名前で、会社全体にわたる主なスタッフは recruited でした。 
 

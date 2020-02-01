@@ -1,5 +1,7 @@
 ---
 title: Office 365 の ATP の安全なリンクポリシーを設定する
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: 7914c29f932469cdcea7436d1084536eaaf3d093
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 4ae3b75ce13b783bc8a373202a0ae42bb14d7cfc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959665"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598364"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
@@ -142,7 +144,7 @@ ATP の安全なリンクポリシーを設定または編集すると、いく�
 |**ユーザーが元の URL にクリックできないようにする** <br/> |このオプションが選択されている場合、ユーザーは、悪意があると判断された URL に[警告ページ](atp-safe-links-warning-pages.md)をスキップすることはできません。  <br/> |
 |**次の Url を書き換えないでください。** <br/> |Url をそのまま残します。 組織内の特定の電子メール受信者グループに対して、スキャンを必要としない安全な Url のカスタムリストを保持します。  追加の詳細については、「 [ATP Safe Links を使用してカスタムの url リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)」を参照してください\*。これには、ワイルドカードのアスタリスク () のサポートに関する最新の変更が含まれています。  <br/> |
    
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ATP の安全なリンクポリシーを設定すると、レポートを表示することにより、ATP が自分の組織でどのように動作しているかを確認できます。 詳細については、以下のリソースを参照してください。
 

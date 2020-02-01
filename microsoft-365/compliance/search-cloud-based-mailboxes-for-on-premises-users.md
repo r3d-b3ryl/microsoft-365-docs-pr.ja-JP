@@ -1,5 +1,7 @@
 ---
 title: Office 365 でオンプレミスのユーザーのクラウドベースのメールボックスを検索する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Exchange ハイブリッド展開の社内ユーザーのために、Microsoft Teams のチャットデータ (1xN チャット) を検索してエクスポートするには、セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用します。
-ms.openlocfilehash: 5c757ee16232cb0e70b8adf57ab6888fb972368e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676824"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597574"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Office 365 でオンプレミスのユーザーのクラウドベースのメールボックスを検索する
 

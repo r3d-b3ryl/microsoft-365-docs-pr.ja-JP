@@ -1,5 +1,7 @@
 ---
 title: Outlook on the web で迷惑メール レポートを無効にする
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -11,12 +13,12 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: Office 365 管理者は、ユーザーが迷惑メールとして電子メールを報告する機能をオフにできます。
-ms.openlocfilehash: 46ce4de8fa6ea14c81041208864957cbc73aebf5
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 0bca03786d0335c24e48340e588510f09d6f6a7e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871283"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598124"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Outlook on the web で迷惑メール レポートを無効にする
 

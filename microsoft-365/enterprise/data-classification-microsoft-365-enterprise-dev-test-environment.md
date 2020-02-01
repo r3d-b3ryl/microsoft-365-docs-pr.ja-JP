@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 Enterprise テスト環境のデータ分類
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントに対して Office 365 保持ラベルを作成して使用します。
-ms.openlocfilehash: dba98ca7a38291c9ce22e9a275585975e6b840ee
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3bda79236b2c6bc1022e9c590f50bc2bdaec2aea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802052"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597054"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデータ分類
 
@@ -109,7 +111,7 @@ ms.locfileid: "40802052"
   
 1. ブラウザーの [ **SensitiveFiles** ] タブで、[**ドキュメント**] をクリックします。
     
-2. 設定アイコンをクリックし、**[ライブラリの設定]** をクリックします。
+2. [設定] アイコンをクリックしてから、**[ライブラリの設定]** をクリックします。
     
 3. [**権限と管理**] で、[**このリストまたはライブラリ内のアイテムにラベルを適用] を**クリックします。 このオプションが表示されない場合、保持ラベルはまだ公開されていません。 後でこの手順を試してください。
     

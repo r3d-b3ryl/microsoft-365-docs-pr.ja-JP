@@ -1,5 +1,7 @@
 ---
 title: 侵害された Office 365 電子メール アカウントへの対応
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 侵害された Office 365 電子メール アカウントを認識して対処する方法について説明します
-ms.openlocfilehash: 0262ca29681aa04d66c628a7d9101e3d3296481b
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 3aa8be9b53f2aa8f3fc6bf64744b36de5d912645
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572713"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598604"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントへの対応
 
@@ -55,7 +57,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 
 ユーザーが上記の兆候のいずれかを報告してきた場合は、詳しい調査を実施する必要があります。 Microsoft 365 セキュリティ/コンプライアンス センターと Azure ポータルには、侵害が疑われるユーザー アカウントの活動を調査するためのツールが用意されています。
 
-- **セキュリティ/コンプライアンス センターの Office 365 統合監査ログ**: 不審な活動が発生する直前から現在の日付までの範囲で結果をフィルター処理すると、疑わしいアカウントのすべての活動を確認します。検索期間の活動はフィルター処理しないでください。
+- **セキュリティ/コンプライアンス センターの Office 365 統合監査ログ**: 不審な活動が発生する直前から現在の日付までの範囲で結果をフィルター処理すると、疑わしいアカウントのすべての活動を確認します。 検索中に活動をフィルタリングしないでください。
 
 - **EAC の Office 365 管理監査ログ**: Exchange Online では、Exchange 管理センター (EAC) を使用して管理者監査ログ内のエントリを検索および表示できます。 管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。 管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
 
@@ -93,7 +95,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 - オンプレミス ID が Office 365 とフェデレーションされている場合は、パスワードをオンプレミスで変更してから、侵害を管理者に報告する必要があります。
 
 > [!TIP]
-> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。  MFA の詳細については、[ここ](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)で確認できます。
+> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。  MFA の詳細については、[こちら](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)で確認できます。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>ステップ 2 不審な電子メール転送アドレスを削除する
 

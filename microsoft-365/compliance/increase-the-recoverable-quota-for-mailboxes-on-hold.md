@@ -1,5 +1,7 @@
 ---
 title: 保持中のメールボックスの [回復可能なアイテム] のクォータを拡大する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Office 365 のメールボックスの回復可能なアイテムフォルダーのサイズを大きくするには、アーカイブメールボックスを有効にして、自動拡張アーカイブをオンにします。 '
-ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686884"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597934"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 
@@ -61,7 +63,7 @@ ms.locfileid: "38686884"
 
 最初の手順では、[回復可能なアイテム] フォルダーのカスタム保持タグ (アイテム保持ポリシー タグまたは RPT と呼ばれる) を作成します。 先に説明したように、この RPT により、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダー内のアイテムは、ユーザーのアーカイブ メールボックスの [回復可能なアイテム] フォルダーへ移動されます。 回復可能なアイテムフォルダーの RPT を作成するには、PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. [回復可能なアイテム] フォルダーの新しい RPT を作成するには、次のコマンドを実行します。  
     

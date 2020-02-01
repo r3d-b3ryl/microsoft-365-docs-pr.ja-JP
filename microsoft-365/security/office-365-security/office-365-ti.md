@@ -1,5 +1,7 @@
 ---
 title: Office 365 の脅威の調査と応答機能 (Office 365 Advanced Threat Protection プラン 2)
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808122"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598754"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
@@ -104,7 +106,7 @@ Office 365 Advanced Threat Protection は、役割ベースのアクセス制御
 |Office 365 Advanced Threat Protection プラン2と Microsoft Defender Advanced Threat Protection の統合  <br/><br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する  <br/> |**Office 365 の全体管理者**または Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に割り当てられている**セキュリティ管理者**の役割のいずれか。<br/>--- **plus** ---<br/>追加のアプリケーション ( [Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 、SIEM サーバーなど) で割り当てられている適切な役割  |
    
     
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [脅威のトラッカーについて-新知識と注目](threat-trackers.md)
     

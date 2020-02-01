@@ -1,5 +1,7 @@
 ---
 title: Office 365 の暗号化用 BitLocker
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: '概要: クラウドでの暗号化の BitLocker に関する情報。'
-ms.openlocfilehash: bbe32f642f214d27c7f9f82c39b11237556d51bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dce56b0d4dedfa77a988d3cb6f8de6411fc258eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086673"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597884"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker とDistributed Key Manager (DKM) による暗号化
 

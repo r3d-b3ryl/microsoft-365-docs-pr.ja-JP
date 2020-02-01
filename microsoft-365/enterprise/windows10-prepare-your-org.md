@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: josephd
-ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 69ff4846e3daeef39310aa63961e0b3f5ccb9875
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370244"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596594"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>手順 1: Windows 10 Enterprise を組織で展開するための準備
 
@@ -40,12 +42,12 @@ Microsoft では、診断データを使用して、マルウェアの傾向や�
 
 管理ポリシーを構成するときは、次の表に示す適切な値を使用します。
 
-| Level | 収集されたデータ | 値 |
+| レベル | 収集されたデータ | 値 |
 |:--- |:--- |:--- |
 | セキュリティ | セキュリティデータのみ。 | .0 |
-| 基本 | セキュリティデータ、および基本的なシステムと品質のデータ。 | 1-d |
-| 保護 | セキュリティデータ、基本的なシステムと品質のデータ、強化された洞察および高度な信頼性データ。 | pbm-2 |
-| Full | セキュリティデータ、基本的なシステムと品質のデータ、強化された洞察および高度な信頼性データ、および完全な診断データ。 | 1/3 |
+| 基本 | セキュリティデータ、および基本的なシステムと品質のデータ。 | 1  |
+| 保護 | セキュリティデータ、基本的なシステムと品質のデータ、強化された洞察および高度な信頼性データ。 | 2  |
+| Full | セキュリティデータ、基本的なシステムと品質のデータ、強化された洞察および高度な信頼性データ、および完全な診断データ。 | 3  |
 
 診断データを有効にするには、次のいずれかの方法を使用します。
 
@@ -62,7 +64,7 @@ Windows 診断データの詳細と、選択した方法に基づいて有効に
 
 |||
 |:-------|:-----|
-|![リスト 1 のテキスト](./media/stepnumbers/Step2.png)| [インプレース アップグレードによる Windows 10 Enterprise の既存デバイスへの展開](windows10-deploy-inplaceupgrade.md) |
+|![手順 2](./media/stepnumbers/Step2.png)| [インプレース アップグレードによる Windows 10 Enterprise の既存デバイスへの展開](windows10-deploy-inplaceupgrade.md) |
 
 
 

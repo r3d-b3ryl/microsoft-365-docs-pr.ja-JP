@@ -1,5 +1,7 @@
 ---
 title: Exchange Online メールボックスに格納されているコンテンツ
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 のクラウドベースのアプリによって生成されたデータは、Microsoft クラウド内のユーザーの Exchange Online メールボックスに格納されます。
-ms.openlocfilehash: d2d126d28a9b92962af7637610282e99e7685594
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f9db94eebf855a2d8dcfee8897ca6171eabbc400
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086449"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597194"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Exchange Online メールボックスに格納されているコンテンツ
 

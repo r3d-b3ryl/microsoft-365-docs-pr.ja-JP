@@ -1,5 +1,7 @@
 ---
 title: Exchange Online Protection でのレポート作成とメッセージ追跡
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートが用意されています。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。 次の表には、EOP 管理者が利用できるレポートおよびトラブルシューティングのツールを示します。
-ms.openlocfilehash: 251286fca4ed54b87809c46e6e0f47ea618df747
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 282fd032e73ccb8217801a575f6029dbd9fadc9c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971512"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598554"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection でのレポート作成とメッセージ追跡
 
@@ -33,7 +35,7 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 
 詳細については、以下のリソースを参照してください。
 
-- [管理センターの office 365 レポート-Office 365 グループ](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [管理センターでの Office 365 レポート - Office 365 グループ](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
 - [管理センターの Office 365 レポート-電子メールアクティビティ](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 

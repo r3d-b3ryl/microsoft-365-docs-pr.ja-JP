@@ -1,5 +1,7 @@
 ---
-title: チュートリアルのスプーフィングインテリジェンスの洞察
+title: スプーフィング インテリジェンス分析のチュートリアル
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 新しいスプーフィングインテリジェンスの理解のしくみを参照してください。
-ms.openlocfilehash: 652dde07d615a4eef98074fb8d2b5c676f65d633
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086553"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598014"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>チュートリアル: スプーフィングインテリジェンスの洞察
 
@@ -60,7 +62,7 @@ ms.locfileid: "37086553"
   
 *ドメインペア*は、"From:" アドレスと送信元インフラストラクチャの組み合わせです。 
   
-- "差出人" アドレスは、メールアプリケーションによって差出人アドレスとして表示されるアドレスです。 このアドレスは電子メールの作成者を識別します。 つまり、メッセージを書いた個人またはシステムのメールボックスになります。 これは、 5322.From アドレスとも呼ばれます。
+- "差出人" アドレスは、メールアプリケーションによって差出人アドレスとして表示されるアドレスです。 このアドレスにより、電子メールの作成者を識別します。 つまり、メッセージを書いた個人またはシステムのメールボックスになります。 これは、 5322.From アドレスとも呼ばれます。
     
 - 送信元のインフラストラクチャ (送信者) は、送信元の IP アドレスの PTR レコードの組織ドメインです。 送信元の IP アドレスに PTR レコードがない場合、送信元の IP アドレスは、CIDR 表記法 (/24) で255.255.255.0 サブネットマスクを使用して識別されます。 たとえば、IP アドレスが192.168.100.100 の場合、送信者の完全な IP アドレスは 192.168.100.100/24 です。
     

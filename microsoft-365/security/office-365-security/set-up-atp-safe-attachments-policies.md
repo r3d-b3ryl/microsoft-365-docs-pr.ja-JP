@@ -1,5 +1,7 @@
 ---
 title: Office 365 の ATP の安全な添付ファイルのポリシーを設定する
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 安全な添付ファイルのポリシーを定義して、電子メール内の悪意のあるファイルから組織を保護します。
-ms.openlocfilehash: e38067230554b5d37f7dc4526e90ab4e63608900
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6ec78f8734fd655d71d9ce2877baa8ebde2e50ee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558624"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598344"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 の ATP の安全な添付ファイルのポリシーを設定する
 
@@ -95,7 +97,7 @@ ATP の安全な添付ファイルのポリシーを設定するときは、Moni
 |**リダイレクトを有効にする**|[モニター、ブロック、または置換] オプションを選択したときに適用されます。  <br/> セキュリティ管理者またはアナリストが調査できる指定された電子メールアドレスに添付ファイルを送信します。|セキュリティ管理者とアナリストが疑わしい添付ファイルを調査できるようにする|
 |**マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合に上記の選択を適用する**|非送信添付ファイルに対して構成されているアクションを、スキャンできない添付ファイル (タイムアウトまたはエラーのため) に適用します。|
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ATP の安全な添付ファイルのポリシーを設定すると、レポートを表示することによって、ATP が組織でどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
 

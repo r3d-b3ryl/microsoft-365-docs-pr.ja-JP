@@ -1,5 +1,7 @@
 ---
 title: 「Office 365 のセキュリティ センターとコンプライアンス センター」に移動
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: セキュリティ & コンプライアンスセンターを使用するには、適切なアクセス許可が必要です。 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか、グローバル管理者によって1つ以上のセキュリティ & コンプライアンスセンターの役割グループに割り当てられている必要があります。
-ms.openlocfilehash: 7dc7afb00750586b34921cce347bcf459c2cf474
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807116"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596524"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>「Office 365 のセキュリティ センターとコンプライアンス センター」に移動
 

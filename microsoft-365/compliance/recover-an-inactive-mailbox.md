@@ -1,5 +1,7 @@
 ---
 title: Office 365 で非アクティブなメールボックスを回復する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '元従業員が組織に戻った場合、または新しい従業員が退職した従業員の職務を受けた場合は、Office 365 の非アクティブなメールボックスの内容を復元できます。 非アクティブなメールボックスを復元すると、非アクティブなメールボックスのコンテンツが含まれる新しいメールボックスに変換されます。 '
-ms.openlocfilehash: 6589c8b75e7d17720848ed221e9625c77b867503
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6d375467a4e04b21cf10905009b19fdf7b11a386
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803714"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597644"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Office 365 で非アクティブなメールボックスを回復する
 
@@ -34,7 +36,7 @@ ms.locfileid: "40803714"
 > [!NOTE]
 > メールボックスが非アクティブになるように、新しいインプレースホールドを作成する期限を延期しました。 しかし、将来のある時点では、Exchange Online にインプレースホールドを新たに作成することはできません。 その時点では、非アクティブなメールボックスを作成するのに訴訟ホールドと Office 365 のアイテム保持ポリシーのみを使用できます。 ただし、インプレース保持されている既存の非アクティブなメールボックスは引き続きサポートされ、非アクティブなメールボックスのインプレース保持を引き続き管理することができます。 これには、インプレース保持の期間を変更し、インプレース保持を削除することで非アクティブなメールボックスを完全に削除することが含まれます。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 非アクティブなメールボックスを復元するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)」を参照してください。
     

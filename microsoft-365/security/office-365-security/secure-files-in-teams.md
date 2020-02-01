@@ -1,5 +1,7 @@
 ---
 title: Microsoft Teams のファイルを保護する
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: Microsoft Teams 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: 309ccfb4850f0c89f48e23c53088db5a2cda1437
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: d06b3b196b11804c8c06d3b63469b2c0a9aa2fcd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572753"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598474"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Microsoft Teams のファイルを保護する
 

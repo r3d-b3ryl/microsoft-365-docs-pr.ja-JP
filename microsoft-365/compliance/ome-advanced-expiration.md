@@ -1,5 +1,7 @@
 ---
 title: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 の高度なメッセージ暗号化機能が Office 365 メッセージ暗号化 (OME) の上にあるため、電子メールのセキュリティを拡張するには、カスタムブランド化されたテンプレートを使用して、メールの有効期限を設定します。
-ms.openlocfilehash: 6790cc7103ad098419bde96b93738424626cd0cc
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 90f406ec72eeab0618184336b8b28de452a5e3c6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686751"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597824"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
 
@@ -45,7 +47,7 @@ Office 365 Advanced Message Encryption では、カスタムブランドを適�
      New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
      ```
 
-詳細は次のとおりです。
+ここで、
 
 - `Identity`は、カスタムテンプレートの名前です。
 

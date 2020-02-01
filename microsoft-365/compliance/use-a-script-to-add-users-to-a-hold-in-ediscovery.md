@@ -1,5 +1,7 @@
 ---
 title: セキュリティ & コンプライアンスセンターの電子情報開示ケースで、スクリプトを使用してユーザーを保留リストに追加する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: メールボックスと OneDrive for Business サイトをセキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストにすばやく追加するためのスクリプトを実行します。
-ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: f61c56beb17e31cf839d102a681b685a1e7fb046
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686920"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597294"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターの電子情報開示ケースで、スクリプトを使用してユーザーを保留リストに追加する
 

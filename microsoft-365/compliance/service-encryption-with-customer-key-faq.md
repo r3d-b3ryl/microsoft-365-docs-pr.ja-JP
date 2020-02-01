@@ -1,5 +1,7 @@
 ---
 title: Office 365 のFAQための、顧客キーによるサービスの暗号化
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: BitLocker および Distributed Key Manager (DKM) によって有効になるベースライン、ボリュームレベルの暗号化に加えて、Office 365 では、Exchange からのデータを含む、Office 365 の顧客コンテンツのための暗号化のレイヤーが追加されています。Online、Skype for Business、SharePoint Online、OneDrive for business。 これをサービス暗号化と呼びます。
-ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: a2285db4bd5ff5594c6b766dcad8909f0442d3ce
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686818"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597454"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 のFAQための、顧客キーによるサービスの暗号化
 

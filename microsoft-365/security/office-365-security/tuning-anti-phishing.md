@@ -1,5 +1,7 @@
 ---
 title: Office 365 でフィッシング対策保護を調整する
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージがどのように使用されたのかや、今後のフィッシング対策メッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: b7ce09ff85c0341ea8cb901942e87dbe10ba0435
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823849"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598144"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Office 365 でフィッシング対策保護を調整する
 

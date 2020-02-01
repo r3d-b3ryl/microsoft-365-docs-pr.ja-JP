@@ -1,5 +1,7 @@
 ---
 title: 'Outlook on the web で迷惑メールとフィッシング詐欺を報告する '
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook on the web ユーザーは、組み込みの電子メール報告オプションを使用して、迷惑メール (スパム) とフィッシング詐欺を報告することができます。 また、電子メールが誤って迷惑メール (スパム) として識別されたかどうかを Microsoft に知らせることもできます。
-ms.openlocfilehash: 3d55c163813972af8a2fb322442776e51ffb1212
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: e433a91d1152e1e87aa9f45b0ccfe94e8b39f0f9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971575"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598594"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Outlook on the web で迷惑メールとフィッシング詐欺を報告する
 

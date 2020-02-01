@@ -1,5 +1,7 @@
 ---
 title: トラブルシューティングとサポート情報
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: efb71aab852b76b2b898419444bfea4144728514
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971625"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598174"
 ---
 # <a name="troubleshooting-and-support-information"></a>トラブルシューティングとサポート情報
 
@@ -84,7 +86,7 @@ ms.locfileid: "39971625"
 
 アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Microsoft 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。 電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support FOR EOP](help-and-support-for-eop.md)」を参照してください。
 
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)
 

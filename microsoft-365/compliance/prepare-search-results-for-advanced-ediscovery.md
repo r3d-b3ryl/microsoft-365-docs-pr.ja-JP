@@ -1,5 +1,7 @@
 ---
 title: Office 365 アドバンスト eDiscovery 用に検索結果を準備する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,18 +17,21 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 上級電子情報開示ツールを使用して詳細な分析を行うために、Office 365 のセキュリティ & コンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086638"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597744"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Office 365 アドバンスト eDiscovery 用に検索結果を準備する
 
-セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた検索が正常に実行されると、Office 365 Advanced eDiscovery を使用した検索結果の準備ができます。これにより、大規模な非構造化データセットを分析し、法的訴訟に関連するデータ量を減らす。 高度な電子情報開示機能は次のとおりです。
+> [!IMPORTANT]
+> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は Office 365 Advanced eDiscovery ( *Advanced ediscovery*v2.0 とも呼ばれます) の廃止を発表しています。 まだ Advanced eDiscovery v2.0 を使用している場合は、できるだけ早く、advanced [ediscovery](overview-ediscovery-20.md) V2.0 ( *Microsoft 365 では高度な電子情報開示ソリューション*とも呼ばれます) に移行してください。 上級電子情報開示2.0 には、Advanced eDiscovery v2.0 のような機能がありますが、保管担当者管理、コミュニケーション管理、およびレビューセットなどの多くの新機能も提供しています。 Advanced eDiscovery v2.0 の廃止の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
+
+セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている検索が正常に実行されると、Office 365 Advanced eDiscovery を使用して検索結果を準備することができます。これにより、大規模な非構造化データセットを分析し、法的訴訟に関連するデータ量を減らすことができます。 高度な電子情報開示機能は次のとおりです。
   
-- **光学式文字認識**-高度な電子情報開示の検索結果を準備するときに、光学式文字認識 (ocr) 機能によって画像からテキストが自動的に抽出され、次のような検索結果が表示されます。分析のための高度な電子情報開示。 OCR は、ルースファイル、電子メールの添付ファイル、および埋め込み画像に対してサポートされています。 これにより、高度な電子情報開示 (ほぼ重複、電子メールスレッド、テーマ、予測可能コーディング) のテキスト分析機能を画像ファイル内のテキストコンテンツに適用することができます。 高度な電子情報開示 OCR では、次の画像ファイル形式をサポートしています。
+- **光学式文字認識**-高度な電子情報開示のための検索結果を準備すると、光学式文字認識 (ocr) 機能によって画像からテキストが自動的に抽出されます。また、これは、高度な電子情報開示に読み込まれた検索結果に含まれています。 OCR は、ルースファイル、電子メールの添付ファイル、および埋め込み画像に対してサポートされています。 これにより、高度な電子情報開示 (ほぼ重複、電子メールスレッド、テーマ、予測可能コーディング) のテキスト分析機能を画像ファイル内のテキストコンテンツに適用することができます。 高度な電子情報開示 OCR では、次の画像ファイル形式をサポートしています。
 
     - GIF
     - JPEG

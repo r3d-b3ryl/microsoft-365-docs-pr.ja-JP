@@ -1,5 +1,7 @@
 ---
 title: Office 365 Message Encryption に関する FAQ
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: 0afb27854e6e080963d7133fb32ecbd5532ae9b2
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 032aa1dacc89aea63cf15080efb80de61e9a6f22
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233848"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597814"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -167,11 +169,11 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 
 | プラットフォーム | メールの読み取り | 電子メールの添付ファイルを表示する |
 |----------|-----------|------------------------|
-| Outlook on the web | あり | はい                |
-| Outlook for Windows| あり | はい                |
-| Outlook for Mac    | あり | はい                |
-| Outlook for Android| はい | いいえ                 |
-| Outlook for iOS    | はい | いいえ                 |
+| Outlook on the web | はい | はい                |
+| Outlook for Windows| はい | はい                |
+| Outlook for Mac    | はい | はい                |
+| Outlook for Android| はい | 不要                 |
+| Outlook for iOS    | はい | 不要                 |
 |
 
 現在、次の2つの既知の制限があります。

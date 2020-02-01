@@ -1,5 +1,7 @@
 ---
 title: Office 365 のプロセスモジュールの結果の表示の詳細電子情報開示
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'タスクの状態とプロセスの概要を含む、Office 365 のアドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。  '
-ms.openlocfilehash: decfd181354a51054f2ab33870b281d91783cf50
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2c492b9c8dfa2b6851620c434f1a5b4bbddc2e4e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802182"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597224"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Office 365 のプロセスモジュールの結果の表示の詳細電子情報開示
 

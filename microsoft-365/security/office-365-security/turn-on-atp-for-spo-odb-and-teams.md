@@ -1,5 +1,7 @@
 ---
 title: SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
-ms.openlocfilehash: 49e29f838fa8fbcd4b0b6eea36e9bbe2d5547a7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 601549db67d34460f4505941d4f2847a2c8f370b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806740"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598154"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする
 
@@ -84,9 +86,9 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 5. [**この通知を送信するタイミング**] セクションで、次の操作を行います。
 
-   a. [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
+   a.  [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
 
-   b. [**ユーザー** ] フィールドは空のままにします。
+   b.  [**ユーザー** ] フィールドは空のままにします。
 
 6. [**この通知を送信する**ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。
 
@@ -94,7 +96,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 通知の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターでアクティビティ警告を作成](../../compliance/create-activity-alerts.md)する」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 1. [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
 

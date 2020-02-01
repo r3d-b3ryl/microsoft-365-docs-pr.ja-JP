@@ -1,5 +1,7 @@
 ---
 title: 転送中のデータの Office 365 暗号化
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: '概要: 転送中に Microsoft がデータを暗号化する方法を簡単に説明します。'
-ms.openlocfilehash: 571a0e28386539058a9998f703d7b4537e1a155a
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: cd261621320d4543a99836e8699c537ed10a8dcf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690742"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597874"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>転送中のデータの Office 365 暗号化
 

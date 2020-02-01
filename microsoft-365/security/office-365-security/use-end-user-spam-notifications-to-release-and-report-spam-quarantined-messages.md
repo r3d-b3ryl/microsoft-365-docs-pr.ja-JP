@@ -1,5 +1,7 @@
 ---
 title: エンド ユーザーのスパム通知を使ってスパム検疫済みメッセージを解放して報告する
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -12,12 +14,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: '検疫済みメールに関するエンドユーザーのスパム通知メッセージを管理者から取得したユーザーは、これらのメッセージに対してこれらの操作を行うことができます。 '
-ms.openlocfilehash: 5c113e186a0469714829592437698ddb1185a141
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 4d53e4866733ba0d3de96f068297a342c134e5ac
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971415"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598084"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>エンド ユーザーのスパム通知を使ってスパム検疫済みメッセージを解放して報告する
 

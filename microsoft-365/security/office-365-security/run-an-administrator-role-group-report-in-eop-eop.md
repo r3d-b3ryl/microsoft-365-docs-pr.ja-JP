@@ -1,5 +1,7 @@
 ---
 title: 'EOP で管理者役割グループ レポートを実行する '
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: 管理者は、Exchange Online Protection (EOP) で管理者の役割グループレポートを実行する方法について説明します。 このレポートは、管理者が管理者の役割グループに対してメンバーを追加または削除したときにログに記録されます。 Microsoft Exchange Online Protection (EOP) は、各発生回数をログに記録します。
-ms.openlocfilehash: 59557f6fab2281cd36569b40afcf3e0225bd9347
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441404"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598544"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>EOP で管理者役割グループ レポートを実行する
 

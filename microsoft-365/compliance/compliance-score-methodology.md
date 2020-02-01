@@ -1,5 +1,7 @@
 ---
 title: コンプライアンススコアの計算
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: リスクに対処し、コンプライアンスの姿勢を改善するために行われた処置に基づいて、Microsoft コンプライアンススコアが個人のスコアを計算する方法について理解します。
-ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515578"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596244"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft コンプライアンススコア (プレビュー) の計算
 
@@ -79,9 +81,9 @@ ms.locfileid: "41515578"
 |**型**|**割り当てられたスコア**|
 |:-----|:-----|
 | 予防必須 | 27 |
-| 予防的裁量 | i-9 |
-| 検出必須 | 1/3 |
-| 検出随意 | 1-d |
-| 修正必須 | 1/3 |
-| 随意随意 | 1-d |
+| 予防的裁量 | 9  |
+| 検出必須 | 3  |
+| 検出随意 | 1  |
+| 修正必須 | 3  |
+| 随意随意 | 1  |
   

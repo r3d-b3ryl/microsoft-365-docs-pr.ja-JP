@@ -1,5 +1,7 @@
 ---
 title: 調査でデータ検索する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcd7f3f38f53ef22fc50823f3d2e3564af333431
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62d42c29182a81cfa133c5d8863add56aba29be3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37085004"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597554"
 ---
 # <a name="search-for-data-in-an-investigation"></a>調査でデータ検索する
 
@@ -27,7 +29,7 @@ ms.locfileid: "37085004"
 
 検索を実行すると、検索クエリに一致したアイテムが最も多いコンテンツの場所など、検索によって返されたアイテムの統計情報を表示できます。 結果のサブセットをプレビューすることもできます。 さらに調査するドキュメントのセットを特定したら、検索結果を証拠セットに追加して、さらに処理および分析を行うことができます。
 
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>検索を作成する
 
 1. 調査で、[**検索**] タブをクリックし、[**新しい検索**] をクリックします。 
 

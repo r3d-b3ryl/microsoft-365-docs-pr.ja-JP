@@ -1,5 +1,7 @@
 ---
 title: 脅威エクスプローラーのビューとリアルタイムの検出
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,18 +14,18 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 脅威エクスプローラーとリアルタイム検出で使用できるさまざまな種類のビューについて説明します。
-ms.openlocfilehash: 7c3d78c5b5d4b1708fc57adba6951b4e352f0eaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37087010"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598254"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイムの検出
 
 ![脅威エクスプローラー](../media/ThreatExplorerFirstOpened.png)
 
-[脅威エクスプローラー](threat-explorer.md)(およびリアルタイムの検出レポート) は、セキュリティ運用チームがセキュリティ&amp;コンプライアンスセンターで脅威を調査して対応するのに役立つ、強力でほぼリアルタイムのツールです。 エクスプローラー (およびリアルタイム検出レポート) は、疑いのあるマルウェアおよびフィッシングに関する情報を、Office 365 の電子メールとファイル、および組織に対する他のセキュリティ上の脅威やリスクと共に表示します。 
+[脅威エクスプローラー](threat-explorer.md) (およびリアルタイムの検出レポート) は、セキュリティ運用チームがセキュリティ&amp;コンプライアンスセンターで脅威を調査して対応するのに役立つ、強力でほぼリアルタイムのツールです。 エクスプローラー (およびリアルタイム検出レポート) は、疑いのあるマルウェアおよびフィッシングに関する情報を、Office 365 の電子メールとファイル、および組織に対する他のセキュリティ上の脅威やリスクと共に表示します。 
 
 - [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) プラン2を使用している場合は、エクスプローラーがあります。
 - Office 365 ATP Plan 1 を使用している場合は、リアルタイムの検出があります。

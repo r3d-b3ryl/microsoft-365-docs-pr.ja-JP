@@ -1,5 +1,7 @@
 ---
 title: データ調査のアクセス許可を割り当てる (プレビュー)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 でデータ調査ツールを使用するために必要なアクセス許可を設定する方法について説明します。
-ms.openlocfilehash: bff6b976667f3793cf1973f9ab684ae14d590d97
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cbe17c00637da6b96cdf638f9d14b402c2d07380
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086641"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597774"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>データ調査のアクセス許可を割り当てる (プレビュー)
 

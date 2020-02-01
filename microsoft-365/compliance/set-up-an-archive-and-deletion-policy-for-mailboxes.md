@@ -1,5 +1,7 @@
 ---
 title: Office 365 の組織のメールボックスについて、アーカイブ削除ポリシーを設定する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Office 365 でアーカイブと削除のポリシーを作成します。これにより、アイテムは自動的にユーザーのアーカイブメールボックスに移動されます。
-ms.openlocfilehash: 6da5d9bc180623778925697419f0ca39acee9185
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 23732306abccbbdff654577ff120df8b79b78e6d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967770"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597484"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Office 365 の組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
@@ -44,7 +46,7 @@ ms.locfileid: "39967770"
     
 この記事の手順の一部またはすべてを実行して、組織内のメールボックスのアーカイブおよび削除ポリシーを設定できます。 このプロセスは、組織内のすべてのメールボックスに実装する前に、少数のメールボックスに対してテストすることをお勧めします。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - このトピックの手順を実行するには、Office 365 組織の全体管理者である必要があります。 
     
@@ -309,7 +311,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     
 - 次の表では、このトピックの手順に従って作成されたカスタムアイテム保持ポリシーに追加される各保持タグの詳細について説明します。
     
-    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**種類**|
+    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**型**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 年間のアーカイブへの移動  <br/> |過去1095日 (3 年) のアイテムをアーカイブメールボックスに移動します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (アーカイブ)、このタグは、メールボックス全体に自動的に適用されます。  <br/> |
     |Alpine House 7 年間完全に削除  <br/> |7年前の時点でプライマリメールボックスまたはアーカイブメールボックスのアイテムを完全に削除します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (削除)。このタグは、メールボックス全体に自動的に適用されます。  <br/> |

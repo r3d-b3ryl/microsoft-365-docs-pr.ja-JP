@@ -1,5 +1,7 @@
 ---
 title: DMARC を使用して Office 365 でメールを検証する
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、Office 365 の組織から送信されたメッセージを検証する方法について説明します。
-ms.openlocfilehash: a812003df72cfb3697a5b114acb37aede4268b21
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 88daf311c5c3bdad396044b78476a134f3c814cb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572683"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598094"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 で電子メールを検証する
 

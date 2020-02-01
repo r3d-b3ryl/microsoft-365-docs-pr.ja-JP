@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37746553"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596954"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -50,7 +52,7 @@ ms.locfileid: "37746553"
 |        |[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Pc の Intune 管理を強制する|
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](#require-mfa-based-on-sign-in-risk)| |
 |         |[準拠*して*いる pc とモバイルデバイスが必要](#require-compliant-pcs-and-mobile-devices)|Pc と携帯電話/タブレットに Intune 管理を強制する|
-|**高度な規制**|[*常に*MFA が必要](#require-mfa-based-on-sign-in-risk)|
+|**厳しく規制**|[*常に*MFA が必要](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>ユーザーへのポリシーの割り当て
@@ -102,9 +104,9 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 |プロパティ|保護レベル|値|注|
 |:---|:---------|:-----|:----|
-|リスク レベル|基準|高、中|両方をチェック|
+|リスク レベル|ベースライン|高、中|両方をチェック|
 | |機密|高、中、低|3 つすべてチェック|
-| |高度な規制| |すべてのオプションをオフのままにして、常に MFA を強制する|
+| |厳しく規制| |すべてのオプションをオフのままにして、常に MFA を強制する|
 
 **アクセス制御**
 
@@ -217,21 +219,21 @@ iOS と Android では、アプリ保護ポリシーのオプションが若干�
 ||[名前を付けて保存] を禁止する|はい||
 ||会社のデータを保存できるストレージ サービスの選択|OneDrive for Business、SharePoint||
 ||他のアプリとの間で切り取り、コピー、貼り付けを制限する|貼り付けられたポリシー管理対象アプリ||
-||Web コンテンツを管理対象ブラウザーで表示するように制限する|いいえ||
+||Web コンテンツを管理対象ブラウザーで表示するように制限する|不要||
 ||[アプリ データの暗号化]|はい|iOS では、[デバイスがロックされている場合] オプションを選択します|
 ||デバイスが有効な場合はアプリの暗号化を無効にする|はい|二重暗号化を回避するためにこの設定を無効にする|
-||連絡先の同期を無効にする|いいえ||
-||印刷を無効にする|いいえ||
+||連絡先の同期を無効にする|不要||
+||印刷を無効にする|不要||
 |アクセス|アクセスのために PIN を要求する|はい||
 ||種類の選択|数値||
-||単純な PIN を許可する|いいえ||
+||単純な PIN を許可する|不要||
 ||PIN の長さ|6 ||
 ||PIN の代わりに指紋を要求する|はい||
 ||デバイス PIN が管理されている場合はアプリ PIN を無効にする|はい||
-||アクセスのために会社の資格情報を要求する|いいえ||
+||アクセスのために会社の資格情報を要求する|不要||
 ||[(分数) 後に、アクセス要件を再確認する]|31||
 ||[スクリーン キャプチャと Android Assistant をブロックする]|[いいえ]|iOS では、このオプションは使用できません|
-|サインインのセキュリティ要件|PIN の最大試行回数|5|Pin のリセット|
+|サインインのセキュリティ要件|PIN の最大試行回数|5 |Pin のリセット|
 ||[オフラインの猶予期間]|720|アクセスをブロックする|
 ||アプリのデータがワイプされるまでのオフライン期間 (日数)|90|データのワイプ|
 ||脱獄/ルート化したデバイス| |データのワイプ|
@@ -311,7 +313,7 @@ Windows 10 では、次の設定をお勧めします。
 ||パスワードの最小文字数|6 ||
 ||パスワードが必要になるまでの最大非アクティブ時間 (分)|15 |この設定は、Android バージョン4.0 以降、または KNOX 4.0 以降でサポートされています。 IOS デバイスでは、iOS 8.0 以降でサポートされています。|
 ||パスワードの有効期限 (日)|41||
-||再利用を防止するための以前のパスワードの数|5||
+||再利用を防止するための以前のパスワードの数|5 ||
 ||デバイスがアイドル状態から戻るときにパスワードを要求する (Mobile および Holographic)|必須|Windows 10 以降で使用可能|
 |暗号化|デバイス上のデータストレージの暗号化|必須||
 |デバイスのセキュリティ|ウォール|必須||
@@ -384,6 +386,6 @@ Windows 10 では、次の設定をお勧めします。
 このポリシーを作成するときは、プラットフォームを選択しないでください。 これにより、準拠しているデバイスが強制できます。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [電子メールをセキュリティで保護するためのポリシーの推奨事項について学びます](secure-email-recommended-policies.md)

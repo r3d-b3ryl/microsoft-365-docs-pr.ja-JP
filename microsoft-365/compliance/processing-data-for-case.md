@@ -1,5 +1,7 @@
 ---
 title: 高度な電子情報開示で処理エラーを処理する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d16343328e4d4ff0a67d2d3a1a9fac4219588746
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: ae5ce4946f4338c6471c525517e01aed71b484df
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38686816"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597718"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>高度な電子情報開示で処理エラーを処理する
 
@@ -29,7 +31,7 @@ ms.locfileid: "38686816"
 
 Advanced eDiscovery の [**処理**] タブでは、さまざまな処理シナリオの詳細なインデックス作成の状態についての洞察が得られます。
 
-詳細については、以下の記事を参照してください。
+詳細については、次の記事を参照してください。
 
 - [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 - [データ処理中のエラー修復](error-remediation.md)

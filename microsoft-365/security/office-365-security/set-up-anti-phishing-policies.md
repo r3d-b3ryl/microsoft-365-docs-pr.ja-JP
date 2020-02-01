@@ -1,5 +1,7 @@
 ---
 title: Office 365 の ATP のフィッシング対策ポリシーをセットアップする
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -12,12 +14,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online Protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
-ms.openlocfilehash: 24470c67b4a630205398860b1741b5bf9fe751a7
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 2f57a81451c1bf77399e741752ec2d8ea0577dfe
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572263"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598354"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする
 

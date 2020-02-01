@@ -1,5 +1,7 @@
 ---
 title: レビュー セット内のドキュメントをタグ付けする
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: dfb5b32ac833f401d819b8697ff1bf1cca7ee2f9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37086286"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597414"
 ---
 # <a name="tag-documents-in-a-review-set"></a>レビュー セット内のドキュメントをタグ付けする
 
-レビューセットのコンテンツを整理することは、電子情報開示プロセスでさまざまなワークフローを完了するために重要です。 これには以下が含まれます。
+レビューセットのコンテンツを整理することは、電子情報開示プロセスでさまざまなワークフローを完了するために重要です。 これには、次の内容が含まれます。
 
 -  不要なコンテンツのカリング
 

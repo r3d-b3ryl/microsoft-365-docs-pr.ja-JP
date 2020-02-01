@@ -1,5 +1,7 @@
 ---
 title: メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'ポリシー ヒントは、誰かがコンテンツを使用していて、それが DLP ポリシーと競合している場合に表示される通知または警告です。メール通知とポリシー ヒントを使用して、組織のポリシーに関する認識を高め、ユーザーの教育に役立てることができます。また、業務上の正当な理由がある場合や、ポリシーが誤検知した場合にブロックされないように、ユーザーにポリシーを上書きするオプションを提供することもできます。 '
-ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686830"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597354"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -281,8 +283,8 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
     
 - [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
     
-- [FCI または他のプロパティが使用されているドキュメントを保護する DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
+- [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)

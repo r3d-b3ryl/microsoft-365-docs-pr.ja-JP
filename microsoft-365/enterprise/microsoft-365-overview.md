@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 for enterprise の概要
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
-ms.openlocfilehash: 16efb061bbb8be4ff8cb5a93186d342fc55ca849
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801462"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596854"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -65,7 +67,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 - 一般的な組織部門のための[Microsoft 365 プロダクティビティライブラリ](https://www.microsoft.com/microsoft-365/success/)と代表的なシナリオ
 - Microsoft 365 for enterprise[展開ガイド](deploy-microsoft-365-enterprise.md)を強調した導入ロードマップ
 
-[![Microsoft 365 for enterprise ポスターの画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Microsoft 365 Enterprise ポスター用の画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)をクリックします。
 
@@ -76,7 +78,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 [![Microsoft 365 への移行ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-この2ページのポスターを使用すると、既存のインフラストラクチャをすばやく把握し、Microsoft 365 for enterprise の対応する製品またはサービスに移行するためのガイダンスを得ることができます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
+このポスター (見開き 2 ページ) で簡単に既存のインフラストラクチャのインベントリを作成し、Microsoft 365 Enterprise に対応する製品またはサービスに移行するためのガイダンスへとアクセスします。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
 [このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
