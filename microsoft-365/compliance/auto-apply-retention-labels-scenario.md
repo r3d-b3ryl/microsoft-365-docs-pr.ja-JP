@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: このソリューション シナリオは、Office 365 保持ラベルを使用して SharePoint Online に保存されている製品関連ドキュメントのライフサイクルを管理する方法を示します。 これは、ドキュメントを使用してコンテンツを分類し、特に Office 365 の保持ラベルを自動適用し、イベント ベースの保持を設定することによって行われます。
-ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca3dd4699a608d2e3313efa3c10fc61b72f9b36e
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596374"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628113"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する
 
@@ -348,3 +348,9 @@ KQL クエリが正しく機能していることを確認したので、KQL ク
 ## <a name="summary"></a>概要
 
 この記事では、SharePoint のサイト列に基づいて保持ラベルを自動的に適用するドキュメント管理シナリオを示しました。 次に、イベント ベースの保持と Microsoft Flow を使用して、外部イベントに基づいて保持期間の開始を自動的にトリガーしました。
+
+## <a name="credits"></a>開発者情報
+
+このシナリオの作成者: 
+
+Frederic Lapierre<br/>Microsoft Services プリンシパル コンサルタント

@@ -5,6 +5,8 @@ keywords: Office 365、DSR、Microsoft 365、Microsoft 365 Education、Microsoft
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 685e653d7f0b8d31990724c58eccafe9a25ae6a5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004932"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628123"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Office 365 データ対象要求
 
@@ -90,7 +92,7 @@ DSR 要求への対応時には、DSR 要求の対象であるデータが Micro
 
 ## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>コンテンツ検索の電子情報開示ツールを使用した DSR への対応
 
-組織が Office 365 を使用して作成および保存している大規模なデータのセット内にある個人データを検索する際には、検索するデータの作成に使用された可能性が最も高いアプリケーションを考える必要がある場合があります。Microsoft では、Office 365 に保存されている組織のデータの 90% 以上が Word、Excel、PowerPoint、OneNote、および Outlook で作成されていると推定しています。これらの Office アプリケーションを Office 365 ProPlus または Office 永続ライセンスで購入した場合でも、これらのアプリケーションで作成されたドキュメントは、SharePoint Online サイト、ユーザーの OneDrive for Business アカウント、またはユーザーの Exchange Online メールボックスに保存されている可能性があります。そのため、コンテンツ検索の電子情報開示ツールを使用して、SharePoint Online サイト、OneDrive for Business アカウント、および Exchange Online メールボックス (Office 365 グループ、Microsoft Teams、EDU Assignments、StaffHub に関連付けられたサイトおよびメールボックスを含む) を検索 (および、その他の DSR 関連アクションを実行) して、調査対象の DSR に関連するドキュメントおよびメールボックス アイテムを検索できます。また、コンテンツ検索ツールを使用して、別の Office 365 アプリケーションで作成された顧客データを検出することもできます。
+組織が Office 365 を使用して作成および保存している大規模なデータのセット内にある個人データを検索する際には、検索するデータの作成に使用された可能性が最も高いアプリケーションを考える必要がある場合があります。Microsoft では、Office 365 に保存されている組織のデータの 90% 以上が Word、Excel、PowerPoint、OneNote、および Outlook で作成されていると推定しています。これらの Office アプリケーションを Office 365 ProPlus または Office 永続ライセンスで購入した場合でも、これらのアプリケーションで作成されたドキュメントは、SharePoint Online サイト、ユーザーの OneDrive for Business アカウント、またはユーザーの Exchange Online メールボックスに保存されている可能性があります。そのため、コンテンツ検索の電子情報開示ツールを使用して、SharePoint Online サイト、OneDrive for Business アカウント、および Exchange Online メールボックス (Office 365 グループ、Microsoft Teams、EDU Assignments に関連付けられたサイトおよびメールボックスを含む) を検索 (および、その他の DSR 関連アクションを実行) して、調査対象の DSR に関連するドキュメントおよびメールボックス アイテムを検索できます。また、コンテンツ検索ツールを使用して、別の Office 365 アプリケーションで作成された顧客データを検出することもできます。
 
 次の表に、「顧客が作成したコンテンツ」の作成にユーザーが使用する Office 365 アプリケーションのリストを示します。これらのアプリケーションはコンテンツ検索を使用した検出が可能です。 DSR ガイドのこのセクションでは、これらの Office 365 アプリケーションを使用して作成されたデータの検出、アクセス、エクスポート、および削除方法について説明します。
 
@@ -631,9 +633,8 @@ Office 365 管理ポータルでは、ユーザーの物理的な削除は実行
 | ![Access アイコン](media/o365-access-64x64.png) <br> [Access](#access) | ![Office アイコン](media/O365-DSR-Doc_image22.png) <br> [Office 365<br> のビジネス アプリ](#business-apps-for-office-365) | ![Office アイコン](media/O365-DSR-Doc_image22.png) <br> [Education](#education)|
 | ![Flow アイコン](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms アイコン](media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala アイコン](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
 | ![Planner アイコン](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps アイコン](media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI アイコン](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project アイコン](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher アイコン](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![StaffHub アイコン](media/o365-staffhub-64x64.png) <br> [StaffHub](#staffhub) |
-|![Stream アイコン](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway アイコン](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard アイコン](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-||![Yammer アイコン](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+|![Project アイコン](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher アイコン](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream アイコン](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway アイコン](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard アイコン](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer アイコン](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access
@@ -1164,33 +1165,6 @@ Project Online 環境から特定のユーザーのコンテンツをエクス�
 #### <a name="delete"></a>削除
 
 文書からコンテンツを削除、ページ全体の削除、または Publisher ファイル全体を削除できます。 [ページを追加、または削除する](https://support.office.com/article/add-or-delete-pages-daf71e39-86e0-4bbc-a186-d5ec70450b08)を参照してください。
-
-### <a name="staffhub"></a>StaffHub
-
-次の各セクションでは、Microsoft StaffHub のアプリ内機能を使用して、個人データの検索、アクセス、エクスポート、および削除を実行する方法について説明します。
-
-#### <a name="discover"></a>検索
-
-StaffHub 内のほとんどのデータは、すべての StaffHub チーム メンバーとマネージャーが利用できます。StaffHub 内のデータを確認するには、マネージャーまたはチーム メンバーが <https://staffhub.office.com> に移動して DSR 要求に関連する可能性のあるデータを見つけるか、応答する可能性のあるデータについて StaffHub の情報を直接確認できるようにメンバーとしてチームに参加させるように依頼します。
-
-#### <a name="access"></a>Access
-
-該当する StaffHub コンテンツが見つかったら、アプリケーション内でデータ主体に提供する関連データを表示してスクリーンショットを作成できます。または、そのデータをダウンロードできます。
-
-- **スケジュール情報:** StaffHub の [**スケジュール**] タブでは [**People ビュー**] と [**シフト ビュー**] の両方が提供され、チーム メンバーまたは勤務シフトごとの日次、週次および月次スケジュールを確認できます。 これらのビューは、印刷または Excel にダウンロードできます。これを行うには、StaffHub Web アプリの左上隅にある 3 つのドット (省略記号) を選択して、[**スケジュールのエクスポート**] をクリックします。
-- **共有ファイル**: StaffHub のすべてのファイルは SharePoint Online に保存されているため、上で説明したように、コンテンツ検索を使用して検出、アクセス、およびエクスポートできます。 また、StaffHub 内の [**ファイル**] タブで表示することもできます。
-- **メッセージング:** 現時点では、メッセージにアクセスするには、次の項目に示すユーザー固有のデータへのアクセスに関する手順を実行します。 将来的には StaffHub のすべてのメッセージは Microsoft Teams に保存されるようになるため、コンテンツ検索ツールを使用してアクセスできるようになります。
-- **ユーザー固有のデータ:** ユーザー固有のデータは、ユーザー設定、ユーザー アクティビティ フィードおよびユーザー シフト要求履歴で構成されていて、それらはいずれもチーム メンバーや管理者は表示できません。 ユーザー固有のデータに対するアクセスまたはエクスポートを実行するには、データ主体に自分の StaffHub アカウントにサインインしてそのデータを取得してもらいます。 また、データ主体が組織から退職している場合は、管理者がデータ主体のユーザー パスワードをリセットして、担当者または管理者が対象のアカウントにサインインできるようにすると、このデータの取得が可能になります。
-- **Kronos:** StaffHub は、サード パーティ製の従業員管理ツール [Kronos](https://www.kronos.com/) への接続をサポートしています。 StaffHub と Kronos は独立した処理ツールであるため、それぞれの当事者との間で同意した個別の規約に基づき組織のデータが処理されます。 DSR に関連するデータが Kronos によって保持されている場合、DSR の支援については Kronos に問い合わせる必要があります (StaffHub の場合も同様です)。
-
-#### <a name="delete"></a>削除
-
-- StaffHub でマスター管理されているアプリ内のデータ コンテンツのほとんどは、チーム マネージャーがアプリから削除ができます。StaffHub の「検出」セクションで前述したように、自分自身をチーム マネージャーとしてチームに追加して、データを削除できます。
-- ユーザー アカウントが完全に削除されると、アカウントの削除から 30 日以内に、StaffHub がユーザーの名前、電話番号、電子メール アドレス、およびプロファイルの画像を編集します。
-
-#### <a name="export"></a>エクスポート
-
-StaffHub の「[アクセス](#access-12)」セクションを参照してください。
 
 ### <a name="stream"></a>Stream
 
@@ -1794,8 +1768,9 @@ IT 管理者は、セキュリティ/コンプライアンス センターで監
 |9/18/2018 | [Whiteboard](#whiteboard) |Whiteboard プレビューは既にプレビューではなく、リリースされて一般提供されています。したがって、Whiteboard プレビューのセクションは「PC、Surface Hub、およびその他のプラットフォーム用の Whiteboard」に変更されました。このセクションからデータのアクセス、エクスポート、および削除の手順が削除され、Whiteboard のサポート記事へのリンクに置き換えられました。|
 |2018 年 11 月 8 日 | [Workplace Analytics](#workplace-analytics) |Workplace Analytics からデータ主体を削除し、Workplace Analytics レポートからデータ主体の情報を削除する方法を示す具体的な手順を削除セクションに追加しました。|
 |2018 年 11 月 12 日| すべて| 壊れたブックマークと外部トピックへのリンクを修正しました。|
-|2019 年 1 月 9 日|[StaffHub](#staffhub)|[削除] セクションで、ユーザー アカウントが完全に削除された場合の動作の説明を更新しました。|
+|2019 年 1 月 9 日| StaffHub |[削除] セクションで、ユーザー アカウントが完全に削除された場合の動作の説明を更新しました。|
 |2019/5/8| [Publisher](#publisher)|Publisher の DSR への対応に関する追加のコンテンツです。|
 |2019/7/11| [MyAnalytics](#myanalytics)|すべてのユーザーが MyAnalytics アプリでデータを表示できるようになったため、管理者が Office 365 セキュリティ/コンプライアンス センターの DSR ケース ツールを使用して MyAnalytics データをエクスポートする機能は削除されました。 |
 |2019 年 11 月 6 日|[教育](#education)|PowerShell スクリプトを使用して特定の学生のクラスのリストを取得し、そのデータをエクスポートまたは削除する方法についての新しいトピックにリンクされています。|
+|2020/1/28| すべて | ドキュメントから StaffHub を削除し、StaffHub は廃止されました。 |
 ||||
