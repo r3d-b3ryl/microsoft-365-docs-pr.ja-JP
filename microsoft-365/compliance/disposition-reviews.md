@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
-ms.openlocfilehash: 8dafaf45df0d681880ef513c9feab6b833c99cb8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 267b2bc7a8bc65e3a816c2d3d88397589734b55d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595232"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661933"
 ---
 # <a name="overview-of-disposition-reviews"></a>廃棄レビューの概要
 
@@ -128,7 +128,7 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
   
 - **保留中の廃棄**は、保持期間の最後に達し、廃棄レビューを必要とするアイテムを示します。 各項目を確認した後、別の保持ラベルを適用するか、その保持期間を延長するか、または完全に削除するかを決定します。 複数のアイテムを選択できます。
     
-- [**破棄**されたアイテム] タブには、廃棄レビュー中に削除が承認され、削除されたアイテムや、削除されたレコードとしてマークされたアイテムが含まれていることが示されます。 別の保持ラベルが適用されたアイテム、またはレビューの一部として延長されたアイテムの保持期間は、ここに表示されません。
+- [**破棄**されたアイテム] タブには、廃棄レビューで既に実行されている完全に削除されたアイテムが表示されます。 この記事では、上記のセクションで説明したように、永続的な削除処理に数日かかる場合があるため、ここで説明します。 別の保持ラベルが適用されているアイテム、またはレビューの一部として保持期間を延長したアイテムは、ここには表示されません。
 
 ![ディスポジションタブ](media/Retention-Disposition-tabs.png)
     

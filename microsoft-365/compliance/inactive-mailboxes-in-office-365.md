@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: メールボックスを非アクティブなメールボックスに変換することにより、元従業員のメールボックスの内容を保持する方法について説明します。 メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 アカウントを削除することによって、これを行うことができます。
-ms.openlocfilehash: 7b60ce92382c0b8111dcf4c1b8d9fb4c793717c6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ede1ae199bdecfea2662a187c3965cc2b676d7
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597944"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661883"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 の非アクティブなメールボックスの概要
 
@@ -85,7 +85,7 @@ Office 365 のラベルは、ガバナンスのために組織内の電子メー
   
 ## <a name="creating-an-inactive-mailbox"></a>非アクティブなメールボックスの作成
 
-メールボックスが非アクティブになるようにするには、訴訟ホールドまたは Office 365 の保持ポリシーをメールボックスに適用する前に、exchange online プラン2のライセンス (または、exchange online アーカイブアドオンライセンスを持つ Exchange Online プラン1ライセンス) を割り当てる必要があります。れる. メールボックスが削除されると、それに関連付けられていた Exchange Online ライセンスを新しいユーザーに割り当てることができるようになります。 非アクティブなメールボックスは、継続的なライセンスを必要としません。
+メールボックスが非アクティブになるようにするには、訴訟ホールドまたは Office 365 の保持ポリシーをメールボックスに適用する前に、exchange online プラン2のライセンス (または、exchange online アーカイブアドオンライセンスを持つ Exchange Online プラン1ライセンス) を割り当てる必要があります。れる. メールボックスが削除されると、それに関連付けられていた Exchange Online ライセンスを新しいユーザーに割り当てることができるようになります。
   
 次の表は、各種の保持シナリオについて、非アクティブなメールボックスを作成するプロセスを要約しています。 詳細については、「 [Office 365 で非アクティブなメールボックスを管理](create-and-manage-inactive-mailboxes.md)する」を参照してください。
   

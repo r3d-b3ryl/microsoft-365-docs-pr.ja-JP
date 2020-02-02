@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: はじめに
+- name: 作業の開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -36,15 +36,15 @@
           href: insider-risk-management-users.md
         - name: Insider のリスク通知テンプレートを作成する (プレビュー)
           href: insider-risk-management-notices.md
-    - name: 通信のコンプライアンス (プレビュー)
+    - name: 通信コンプライアンス
       items:
-        - name: 通信コンプライアンスの詳細 (プレビュー)
+        - name: 通信のコンプライアンスについて
           href: communication-compliance.md
-        - name: Microsoft 365 で通信コンプライアンスを構成する (プレビュー)
+        - name: コミュニケーションのコンプライアンスの概要
           href: communication-compliance-configure.md
-        - name: 通信コンプライアンスのアラートを調査して修復する (プレビュー)
+        - name: 通信コンプライアンスアラートを調査および修復する
           href: communication-compliance-investigate-remediate.md
-        - name: 通信コンプライアンスの機能のリファレンス (プレビュー)
+        - name: コミュニケーションコンプライアンスの機能リファレンス
           href: communication-compliance-feature-reference.md
         - name: Office 365 の監視ポリシー
           href: supervision-policies.md
@@ -150,8 +150,6 @@
           href: document-fingerprinting.md
         - name: ' 機密情報のDLP 関数'
           href: what-the-dlp-functions-look-for.md
-        - name: DLP のカスタマイズについてもっと詳しく見る
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
     - name: メールの暗号化
       href: email-encryption.md
       items:
@@ -454,6 +452,8 @@
               href: tagging-documents.md
             - name: 弁護士/依頼人特権の検出を設定する
               href: attorney-privilege-detection.md
+            - name: レビューセットダッシュボード (プレビュー) を使用する
+              href: advanced-ediscovery-dashboard.md
         - name: ケース データを分析する
           href: analyzing-data-in-review-set.md
           items:
@@ -494,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: 会話レビュー セット
               href: conversation-review-sets.md
+            - name: 高度な電子情報開示レポート (プレビュー)
+              href: advanced-ediscovery-reports.md
             - name: AzCopy のトラブルシューティング
               href: troubleshooting-azcopy.md
     - name: eDiscovery ケースを管理する
