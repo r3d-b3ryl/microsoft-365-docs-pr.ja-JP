@@ -1,5 +1,7 @@
 ---
 title: セキュリティ/コンプライアンス センターで監査ログを検索する
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265895"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662003"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -122,6 +124,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
   |Microsoft Project|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power アプリ|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |セキュリティ/コンプライアンス センター|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online と OneDrive for Business|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -335,7 +338,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |(なし)|FileModifiedExtended|これは、"ファイルの変更" (FileModified) アクティビティに関連しています。 同じユーザーが長時間 (最大 3 時間) にわたって、ファイルの変更を継続的に行うと、FileModifiedExtended イベントがログに記録されます。 <br/><br/> FileModifiedExtended イベントをログに記録する目的は、ファイルの変更が継続的に行われたときにログに記録される FileModified イベントの数を減らすことにあります。 これにより、本質的に同じユーザーのアクティビティであるファイル変更に対する無意味な複数の FileModified レコードを減り、初期 (のより重要な) FileModified イベントに注目できます。|
 |ファイルの移動|FileMoved|ユーザーがドキュメントをサイトの現在の場所から新しい場所に移動しました。|
 |(なし)|FilePreviewed|ユーザーが SharePoint または OneDrive for Business サイトにあるファイルをプレビューします。 通常、これらのイベントは、イメージ ギャラリーの表示などの 1 つのアクティビティに基づいて、大きいボリュームで発生します。|
-|実行された検索クエリ|SearchQueryPerformed|ユーザーまたはシステム アカウントが SharePoint または OneDrive for Business で検索を実行します。 サービス アカウントにより検索クエリが実行される一般的なシナリオとして、電子開示情報の保留またはアイテム保持ポリシーがサイトまたは OneDrive アカウントに適用される場合や、保持ラベルまたは機密ラベルがサイト コンテンツに自動適用される場合があります。 これらの多くのケースでは、監査レコードの User フィールドに記録されるサービス アカウントの名前は、**app@sharepoint** となります。 </br></br> **ヒント:** Performed 検索クエリの監査レコード内の ApplicationDisplayName と EventData フィールドを確認することにより、このイベントをトリガーしたシナリオまたはサービスを特定できる場合があります。|
+|実行された検索クエリ|SearchQueryPerformed|ユーザーまたはシステム アカウントが SharePoint または OneDrive for Business で検索を実行します。 サービス アカウントにより検索クエリが実行される一般的なシナリオとして、電子開示情報の保留またはアイテム保持ポリシーがサイトまたは OneDrive アカウントに適用される場合や、保持ラベルまたは機密ラベルがサイト コンテンツに自動適用される場合があります。 これらの多くのケースでは、監査レコードの User フィールドに記録されるサービス アカウントの名前は、**app\@sharepoint** となります。 </br></br> **ヒント:** Performed 検索クエリの監査レコード内の ApplicationDisplayName と EventData フィールドを確認することにより、このイベントをトリガーしたシナリオまたはサービスを特定できる場合があります。|
 |リサイクルされたファイルのすべてのマイナー バージョン|FileVersionsAllMinorsRecycled|ユーザーが、ファイルのバージョン履歴からすべてのマイナー バージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。|
 |ファイルのすべてのバージョンのリサイクル|FileVersionsAllRecycled|ユーザーが、ファイルのバージョン履歴からすべてのバージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。|
 |ファイルのバージョンのリサイクル|FileVersionRecycled|ユーザーが、ファイルのバージョン履歴から 1 つのバージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。|

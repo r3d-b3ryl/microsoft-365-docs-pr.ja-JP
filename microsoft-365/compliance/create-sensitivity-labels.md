@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のドキュメントやメールを分類し、保護するための秘密度ラベルを作成、構成、発行する手順です。
-ms.openlocfilehash: 3ce1f729853d514a85852221eb997c456a379dcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 73df1928a89218a419a9d774a7830ecad4aceb6d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595534"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661863"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -45,7 +45,7 @@ ms.locfileid: "41595534"
 1. ラベル付けの管理センターで、[秘密度ラベル] に移動します。
     
     - Microsoft 365 コンプライアンス センター: 
-        - [**ソリューション**]  >  [**Information Protection (プレビュー)**]
+        - [**ソリューション**]  >  [**Information Protection**]
         
         このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。 
     
@@ -118,7 +118,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 1. ラベル付けの管理センターで、[秘密度ラベル] に移動します。
     
     - Microsoft 365 コンプライアンス センター: 
-        - [**ソリューション**]  >  [**Information Protection (プレビュー)**]
+        - [**ソリューション**]  >  [**Information Protection**]
         
         このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。 
     

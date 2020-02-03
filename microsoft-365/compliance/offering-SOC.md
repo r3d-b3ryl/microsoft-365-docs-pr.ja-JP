@@ -5,6 +5,8 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259985"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662023"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -47,29 +49,29 @@ Microsoft クラウドにおける SOC 1、2、3 の利点の詳細: [SOC 1 お�
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>SOC 1 および SOC 2 の対象サービス
 
-- Azure、Azure Government、および Azure Germany [詳細リスト](https://aka.ms/AzureCompliance)
+- [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Dynamics 365 および Dynamics 365 U.S. Government [詳細リスト](https://aka.ms/d365-compliance-list)
+- [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
 - Microsoft マネージド デスクトップ
 - Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
-- Office 365、Office 365 U.S. Government、および Office 365 U.S. Government Defense [詳細リスト](https://go.microsoft.com/fwlink/p/?LinkID=2077751)。Yammer は SOC 1 Type 1 報告書を取得しています。
-- Office 365 Germany
-- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Stream
 - Azure DevOps Services
 
 ### <a name="covered-services-for-soc-3"></a>SOC 3 の対象サービス
 
-- Azure、Azure Government、および Azure Germany [詳細リスト](https://aka.ms/AzureCompliance)
+- [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Graph
 - Intune
 - Microsoft マネージド デスクトップ
 - Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
-- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
 - Stream
 
@@ -93,11 +95,13 @@ Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 
 
 #### <a name="office-365"></a>Office 365
 
-- [Office 365 SOC 1 SSAE 16 Type II 監査報告書](https://aka.ms/office365soc1auditreport)
-- [Office 365 SOC 2 AT 101 Type II 監査報告書](https://aka.ms/Office365SOC2AuditReport)
+- [Office 365 Core - SSAE 18 SOC 1 報告書](https://aka.ms/o365SOC-1)
+- [Office 365 Core - SSAE 18 SOC 2 報告書](https://aka.ms/o365SOC-2)
+- [Office 365 Core - SSAE 18 SOC 3 報告書](https://aka.ms/o365SOC-3)
+- [Office 365 Microservices T1 – SSAE 18 SOC2 Type I 報告書](https://aka.ms/o365-MS-SOC-2-type1)
 - [Office 365 Customer Lockbox SOC 1 SSAE 16 監査報告書](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
-- [Yammer SOC 2 AT 101 Type II 監査報告書](https://aka.ms/YammerSOC2AuditReport)
 - [Yammer SOC 2 AT 101 Type I 監査報告書](https://aka.ms/YammerSOC2Type1AuditReport)
+- [Yammer SOC 2 Type II 報告書](https://aka.ms/yammerSOC-2)
 - [ブリッジ レターおよびその他の監査報告書を参照する](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -127,15 +131,10 @@ Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stre
 
 ## <a name="resources"></a>リソース
 
- - [Microsoft クラウド サービスによるデータの保護の強化](https://www.microsoft.com/trustcenter/guidance/protect-data)
- - [Service Organization Control (SOC) 報告書](https://aka.ms/mssocreports)
- - [SSAE 16 監査基準](https://www.ssae-16.com/)
- - [ISAE 3402 基準](https://isae3402.com/)
- - [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
- - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
- - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf) ファイルをダウンロードできます。
+- [Microsoft クラウド サービスによるデータの保護の強化](https://www.microsoft.com/trustcenter/guidance/protect-data)
+- [Service Organization Control (SOC) 報告書](https://aka.ms/mssocreports)
+- [SSAE 16 の概要](http://ssae16.com/SSAE16_overview.html)
+- [ISAE 3402 の概要](http://isae3402.com/ISAE3402_overview.html)
+- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
