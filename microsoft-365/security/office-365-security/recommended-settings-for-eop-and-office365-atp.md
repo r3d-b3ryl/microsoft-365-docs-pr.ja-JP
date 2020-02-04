@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: fd2b1fdbb0356cfc2cea080f15bf696d8073fc10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598644"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678923"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -65,7 +65,7 @@ ms.locfileid: "41598644"
  
  標準レベルと厳密なレベルの両方で、これらの設定を**無効**にすることをお勧めします。
 
-|セキュリティ機能の名前|Comments|
+|セキュリティ機能の名前|コメント|
 |---------|---------|
 |IncreaseScoreWithImageLinks||
 |IncreaseScoreWithNumericIps||
@@ -96,7 +96,7 @@ ms.locfileid: "41598644"
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|マルウェア検出応答|不要|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
+|マルウェア検出応答|いいえ|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |不審なファイルの種類をブロックするための "一般的な添付ファイルの種類のフィルター"|オン|オン||
 |マルウェアのゼロ時間の自動削除|オン|オン||
 |配信されていないメッセージの内部送信者に通知する|無効|無効||

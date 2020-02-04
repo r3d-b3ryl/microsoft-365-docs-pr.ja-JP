@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: 461193bf7278a07de9bec1e3879fecc8fb6d91ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598924"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678933"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -31,13 +31,9 @@ Office 365 セキュリティ & コンプライアンスセンターのメッセ
 
 ## <a name="open-message-trace"></a>メッセージ追跡を開く
 
-1. 職場または学校のアカウントを使用して、[Office 365 にサインイン](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)します。
+1. にある<https://protection.office.com>Office 365 セキュリティ & コンプライアンスセンターを開きます。
 
-2. 左上のアプリ起動ツールのアイコン ![Office 365 アプリ起動ツール アイコン](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) を選び、[ **管理者**] を選びます。
-
-3. 左下のナビゲーションで、[**管理センター** ] を展開し、[**セキュリティ & コンプライアンス**] を選択します。
-
-4. 表示される [**セキュリティ & コンプライアンス**] ページで、[**メールフロー**] を展開して、[**メッセージの追跡**] を選択します。
+2. [**メールフロー**] を展開し、[**メッセージの追跡**] を選択します。
 
 ## <a name="message-trace-page"></a>メッセージ追跡ページ
 
@@ -234,7 +230,7 @@ Office 365 セキュリティ & コンプライアンスセンターのメッセ
 
 - **sender_address**: 送信者の電子メールアドレス (*エイリアス*@*ドメイン*)。
 
-- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、[ \<*電子メールアドレス*\>##\<の*状態*\>] の形式で、それぞれの受信者と対応するステータスが表示されます。 次に例を示します。
+- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、[ \<*電子メールアドレス*\>##\<の*状態*\>] の形式で、それぞれの受信者と対応するステータスが表示されます。 例:
 
   - **# #Receive, Send**は、メッセージがサービスによって受信され、意図した宛先に送信されたことを意味します。
 
@@ -272,13 +268,13 @@ Office 365 セキュリティ & コンプライアンスセンターのメッセ
 
 - **server_hostname**: 宛先サーバーのホスト名または FQDN。
 
-- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 次に例を示します。
+- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 例:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **source**: イベントを担当する Exchange Online コンポーネント。 次に例を示します。
+- **source**: イベントを担当する Exchange Online コンポーネント。 例:
 
   - `AGENT`
 
@@ -296,7 +292,7 @@ Office 365 セキュリティ & コンプライアンスセンターのメッセ
 
 - **related_recipient_address**: メッセージに`EXPAND`関連`REDIRECT`付けら`RESOLVE`れた他の受信者の電子メールアドレスを表示するために、、およびイベントと共に使用します。
 
-- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 次に例を示します。
+- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 例:
 
   - **Dsn**: このイベントの後に dsn が生成された場合に、関連付けられている配信状態通知 (dsn、配信不能レポート、NDR、またはバウンスメッセージとも呼ばれる) の**message_id**値であるレポートリンクが含まれています。 これが DSN メッセージの場合、このフィールドには、DSN が生成された元のメッセージの**message_id**値が含まれます。
 
@@ -314,7 +310,7 @@ Office 365 セキュリティ & コンプライアンスセンターのメッセ
 
 - **return_path**: メッセージを送信した**MAIL FROM**コマンドによって指定された返信電子メールアドレス。 このフィールドは空になることはありませんが、null の送信者アドレス`<>`値をとして表すことができます。
 
-- **message_info**: メッセージに関する追加情報。 次に例を示します。
+- **message_info**: メッセージに関する追加情報。 例:
 
   - メッセージの発信元の日付と`DELIVER` `SEND`イベントの UTC の日時。 発信日時は、メッセージが最初に Exchange Online 組織に入った時刻です。 UTC の日時は、ISO 8601 の日付と時刻の形式で表され`yyyy-mm-ddThh:mm:ss.fffZ`ます。 `yyyy`ここで、 `mm` = year、 `dd` = month、 `T` = day は、時間コンポーネントの開始`hh`を示し、 `mm` = hour、 `ss` = minute、 `fff` = second、= 小数点`Z` `Zulu`以下の値を示します。これは、utc を示すもう1つの方法です。
 
