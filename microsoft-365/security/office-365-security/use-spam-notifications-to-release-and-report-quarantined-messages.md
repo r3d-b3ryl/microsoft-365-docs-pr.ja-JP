@@ -18,16 +18,16 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 管理者がユーザーの通知を有効にした場合、スパム、大量、またはフィッシングメッセージとして識別されたメールボックスに送信されたメッセージを一覧表示する通知メッセージを受け取ります。 通知された後にメッセージを解放または報告することができます。
-ms.openlocfilehash: c9cd0849f826e66411695a3758f271ec70d24c9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598024"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722038"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
 
-管理者がユーザーのスパム通知を有効にした場合、スパムとして識別されたメールボックス宛てのメッセージを一覧表示する通知メッセージを受け取ります。
+管理者がユーザーに対してスパム通知を有効にすると、スパム、一括、またはフィッシングとして識別されたメールボックス宛てのメッセージを一覧表示する通知メッセージが表示されます。
 
 > [!TIP]
 > 管理者がこの機能を有効にする場合は、[既定のスパム対策ポリシーを変更](configure-your-spam-filter-policies.md)するときにオプションを選択できます。
@@ -50,6 +50,6 @@ ms.locfileid: "41598024"
 
 以下の点にご注意ください。
 
-- メールフロールールに一致したために検疫されたメッセージは、ユーザーの検疫済みメッセージには含まれません。 スパム検疫済みメッセージのみが列挙されます。
+- メールフロールールに一致したために検疫されたマルウェアと信頼性の高いフィッシングメッセージとメッセージは、ユーザーのスパム通知に含まれません。 
 
 - メッセージを解放して、誤検知 (迷惑メールではない) として報告することができるのは1回だけです。
