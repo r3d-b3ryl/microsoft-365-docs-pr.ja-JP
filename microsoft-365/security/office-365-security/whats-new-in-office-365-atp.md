@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 98a658febe6c20904f82fb2f152bb6cc115cce49
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc781d9f800b3db938b253775b31df118c21fd03
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597960"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784704"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -49,7 +49,7 @@ ms.locfileid: "41597960"
 
 - Office [365 との統合 office 365 Management ACTIVITY API を使用した office atp 自動調査と応答イベント](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(OFFICE 365 ATP Plan 2)
 
-- [電子メールのヘッダーを表示し、電子メール本文をダウンロードする](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body)(OFFICE 365 ATP Plan 1 または Plan 2)
+- [電子メールのヘッダーを表示し、電子メール本文をダウンロードする](investigate-malicious-email-that-was-delivered.md)(OFFICE 365 ATP Plan 1 または Plan 2)
 
 ## <a name="august-2019"></a>2019 年 8 月
 
