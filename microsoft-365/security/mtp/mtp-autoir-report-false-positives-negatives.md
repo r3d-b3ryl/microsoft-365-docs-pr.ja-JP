@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 44c90c6c9394b1f9fee34b8eb068bb7c232c4d78
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627973"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774193"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
 
@@ -57,7 +57,7 @@ Microsoft の脅威保護ミスの自動化された[調査と応答機能](mtp-
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>デバイスで実行された修復アクションを元に戻す
 
-修復アクションがデバイス (Windows 10 デバイスなど) に対して実行され、実際にクリーンな状態になっている場合、セキュリティ運用チームは[アクションセンター](mtp-action-center.md)で修復処理を取り消すことができます。
+修復アクションがデバイス (Windows 10 デバイスなど) に対して実行され、そのアイテムが実際にクリーンである場合、セキュリティ操作チームは[アクションセンター](mtp-action-center.md)で修復アクションを取り消すことができます。
 
 > [!IMPORTANT]
 > 次のタスクを実行する前に、[必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)があることを確認してください。

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243938"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774233"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ
 
@@ -19,25 +19,12 @@ ms.locfileid: "36243938"
 
 Microsoft マネージドデスクトップでは、管理されたデバイスとデータを保護するために、いくつかの Microsoft テクノロジを使用しています。 具体的には次のとおりです。 
 
-- [データセキュリティ](#data-security)-Microsoft マネージドデスクトップによって収集され、セキュリティで保護されたデータの種類
+
 - [デバイスセキュリティ](#device-security)– Microsoft マネージドデスクトップデバイスのセキュリティと保護
 - [Id およびアクセス管理](#identity-and-access-management): Azure Active Directory id サービスを使用して、デバイスの安全な使用を管理する
 - [ネットワークセキュリティ](#network-security)– VPN 情報と Microsoft Managed Desktop 推奨ソリューションと設定
 - [情報セキュリティ](#information-security)–機密情報をさらに保護するためのオプションの利用可能なサービス 
 
-## <a name="data-security"></a>データ セキュリティ
-
-顧客テナントから収集されたデータ (Microsoft Managed Desktop IT サービスと運用を可能にする) は、米国でホストされている Microsoft テナントの Azure SQL データベースに格納されます。
-
-詳細については、「 [Microsoft Azure セキュリティ](https://docs.microsoft.com/azure/security/azure-database-security-overview)」を参照してください。
-
-以下に、テナントから送信されるデータの種類を示します。
-
-- デバイスの更新、使用状況、および信頼性のデータ
-- アプリの展開と信頼性のデータ
-- 更新およびセキュリティポリシーの展開データ
-- デバイスに割り当てられているユーザー
-- Microsoft マネージドデスクトップがサービスを管理するために使用するアカウントに関連するテナントからのセキュリティログ
 
 
 

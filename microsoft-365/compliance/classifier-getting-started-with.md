@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable クラシファイアは、コンテンツのさまざまな種類を認識するために学習することができます。 分類子がトレーニングされると、結果が正確であることを確認できます。 次に、これを使用して組織のコンテンツを検索し、それを分類して、保持または機密ラベルを適用したり、データ損失防止 (DLP) またはアイテム保持ポリシーに含めたりします。
-ms.openlocfilehash: 4b4bfa996b1f68f9db8c206aaaec43878abf3f42
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595904"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722028"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -49,6 +49,10 @@ ms.locfileid: "41595904"
 
 > [!IMPORTANT]
 > Trainable 分類子は、暗号化されておらず英語になっているアイテムに対してのみ機能します。
+
+### <a name="licensing-requirements"></a>ライセンス要件
+
+Trainable 分類子は、Microsoft 365 E5 または E5 準拠の機能です。 それらを利用するには、これらのサブスクリプションのいずれかが必要です。
 
 ## <a name="types-of-classifiers"></a>分類子の種類
 
