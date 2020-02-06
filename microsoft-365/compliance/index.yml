@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: b6c5cf658bcd10b4ec7f7ffafad2532efdeb7b58
-  ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+  ms.openlocfilehash: e3c8b712931c4225bff0a989b9846957f9a6be79
+  ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/01/2019
-  ms.locfileid: "38690654"
+  ms.lasthandoff: 02/06/2020
+  ms.locfileid: "41800067"
 landingContent:
 - title: 情報保護の管理
   linkLists:
@@ -56,7 +56,7 @@ landingContent:
     links:
     - text: ユーザーとデバイス アクセスの保護
       url: protect-access-to-data-and-services.md
-    - text: 特権アクセス管理
+    - text: 特権アクセスの管理
       url: privileged-access-management-overview.md
     - text: 顧客ロックボックス
       url: customer-lockbox-requests.md
@@ -65,7 +65,7 @@ landingContent:
     - text: 情報障壁
       url: information-barriers.md
     - text: カスタマー キー
-      url: controlling-your-data-using-customer-key.md
+      url: customer-key-overview.md
 - title: 検出して応答する
   linkLists:
   - linkListType: overview
@@ -76,13 +76,13 @@ landingContent:
       url: overview-data-investigations.md
     - text: コンテンツを検索する
       url: search-for-content.md
-    - text: 監査ログを検索する
+    - text: 監査ログの検索
       url: search-the-audit-log-in-security-and-compliance.md
 - title: 法令遵守の概要
   linkLists:
   - linkListType: get-started
     links:
-    - text: コンプライアンススコア
+    - text: コンプライアンス スコア
       url: compliance-score.md
     - text: GDPR コンプライアンスアクションプラン
       url: gdpr-action-plan.md

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 では、使用可能な暗号化、プロトコル、およびテクノロジが最強の状態で、コンテンツが保存され、転送中に暗号化されます。 Office 365 の暗号化の概要について説明します。
-ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 782b7f3b64c6fdabd2e94a91de3d2ef67b1573f0
+ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593178"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41800087"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 の暗号化
 
@@ -51,7 +51,7 @@ Office 365 では、複数のレイヤーと暗号化の種類が連携してデ
   
 |**コンテンツの種類**|**暗号化テクノロジ**|**追加情報**|
 |:-----|:-----|:-----|
-|デバイス上のファイル。 これらのファイルには、フォルダーに保存された電子メールメッセージ、コンピューター、タブレット、電話に保存された Office ドキュメント、または Microsoft クラウドに保存されたデータを含めることができます。  <br/> |Microsoft データセンター内の BitLocker。 BitLocker は、Windows コンピューターやタブレットなどのクライアントマシンでも使用できます。  <br/> Microsoft データセンターでの Distributed Key Manager (DKM)  <br/> Office 365 の顧客キー  <br/> |[Windows IT センター: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft セキュリティセンター: 暗号化](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Cloud security controls series: 休息中のデータを暗号化する](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online が電子メールの機密情報をセキュリティで保護する方法](exchange-online-secures-email-secrets.md) <br/> [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md) <br/> |
+|デバイス上のファイル。 これらのファイルには、フォルダーに保存された電子メールメッセージ、コンピューター、タブレット、電話に保存された Office ドキュメント、または Microsoft クラウドに保存されたデータを含めることができます。  <br/> |Microsoft データセンター内の BitLocker。 BitLocker は、Windows コンピューターやタブレットなどのクライアントマシンでも使用できます。  <br/> Microsoft データセンターでの Distributed Key Manager (DKM)  <br/> Office 365 の顧客キー  <br/> |[Windows IT センター: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft セキュリティセンター: 暗号化](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Cloud security controls series: 休息中のデータを暗号化する](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online がメールの機密情報をセキュリティで保護する方法](exchange-online-secures-email-secrets.md) <br/> [Office 365 での顧客キーによるサービスの暗号化](customer-key-overview.md) <br/> |
 |ユーザー間で転送中のファイル。 これらのファイルには、ユーザー間で共有する Office ドキュメントまたは SharePoint リストアイテムを含めることができます。  <br/> |送信中のファイルの TLS  <br/> |[OneDrive for Business および SharePoint Online におけるデータ暗号化](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business Online: セキュリティとアーカイブ](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |受信者間で送信中の電子メール。 このメールには、Exchange Online によってホストされる電子メールが含まれます。  <br/> |送信中の電子メールのための Azure Rights Management、S/MIME、TLS を使用した Office 365 メッセージの暗号化  <br/> |[Office 365 Message Encryption (OME)](ome.md) <br/> [Office 365 での電子メールの暗号化](email-encryption.md) <br/> [Exchange Online が TLS を使って Office 365 のメール接続をセキュリティで保護する方法](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 
@@ -67,7 +67,7 @@ Office 365 には、Office 365 でのボリューム暗号化、ファイル暗�
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
-- [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
+- [Office 365 での顧客キーによるサービスの暗号化](customer-key-overview.md)
 
 ## <a name="how-do-i"></a>方法
 

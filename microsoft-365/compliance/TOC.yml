@@ -67,12 +67,6 @@
           href: privileged-access-management-overview.md
         - name: 特権アクセス管理を設定する
           href: privileged-access-management-configuration.md
-    - name: カスタマー キー
-      items:
-        - name: 顧客キーを使用して Office 365 でデータを制御する
-          href: controlling-your-data-using-customer-key.md
-        - name: Office 365 のFAQための、顧客キーによるサービスの暗号化
-          href: service-encryption-with-customer-key-faq.md
     - name: ユーザーとデバイス アクセスの保護
       href: protect-access-to-data-and-services.md
     - name: 顧客ロックボックス
@@ -85,7 +79,7 @@
       items:
         - name: 秘密度ラベルを作成して発行する
           href: create-sensitivity-labels.md
-        - name: 機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
+        - name: 暗号化を適用するために機密ラベルを使用してコンテンツへのアクセスを制限する
           href: encryption-sensitivity-labels.md
         - name: 機密ラベルをコンテンツに自動適用する
           href: apply-sensitivity-label-automatically.md
@@ -150,6 +144,18 @@
           href: document-fingerprinting.md
         - name: ' 機密情報のDLP 関数'
           href: what-the-dlp-functions-look-for.md
+    - name: カスタマー キー
+      items:
+        - name: Office 365 での顧客キーによるサービスの暗号化
+          href: customer-key-overview.md
+        - name: Office 365 の顧客キーを設定する
+          href: customer-key-set-up.md
+        - name: Office 用の顧客キーの管理365
+          href: customer-key-manage.md
+        - name: 顧客キーまたは可用性キーをロールまたは回転する
+          href: customer-key-availability-key-roll.md
+        - name: Office 365 の顧客キーの可用性キーについて
+          href: customer-key-availability-key-understand.md
     - name: メールの暗号化
       href: email-encryption.md
       items:

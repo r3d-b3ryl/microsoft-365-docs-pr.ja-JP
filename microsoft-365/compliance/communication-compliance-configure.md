@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9371429caedfe2081331fab1aebbe0e1ec761e81
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661973"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784694"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "41661973"
 
 コミュニケーションコンプライアンスポリシーを使用して、内部または外部のレビューアーによる調査のために従業員の通信をキャプチャします。 通信コンプライアンスポリシーが組織内の通信の監視にどのように役立つかについては、「 [Microsoft 365 の通信コンプライアンスポリシー](communication-compliance.md)」を参照してください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 通信のコンプライアンスを開始する前に、Microsoft 365 のサブスクリプションを確認する必要があります。 通信コンプライアンスポリシーに含まれているユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Microsoft 365 E5 サブスクリプションに含まれている必要があります。
 
@@ -67,7 +67,14 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 役割グループとアクセス許可の詳細については、「[Permissions in the Compliance Center (コンプライアンス センターのアクセス許可)](../security/office-365-security/protect-against-threats.md)」を参照してください。 
 
-## <a name="step-2-optional-set-up-groups-for-communication-compliance"></a>手順 2 (省略可能): 通信コンプライアンス用にグループをセットアップする
+## <a name="step-2-required-enable-the-office-365-audit-log"></a>手順 2 (必須): Office 365 監査ログを有効にする
+
+通信のコンプライアンスでは、監査ログを使用して通知を表示し、レビュー担当者が行った修復アクションを追跡する必要があります。 監査ログは、定義済みの組織ポリシーに関連付けられているすべてのアクティビティ、または通信コンプライアンスポリシーが変更されるたびに、その概要を示します。
+
+監査を有効にするための詳細な手順については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+
+
+## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>手順 3 (省略可能): 通信コンプライアンス用にグループをセットアップする
 
  通信コンプライアンスポリシーを作成する場合は、通信をレビューしたユーザーとレビューを実行するユーザーを定義します。 ポリシーでは、メール アドレスを使って、個人または複数人のグループを指定します。 セットアップを簡単にするために、コミュニケーションをレビューしたユーザーのためのグループを作成できます。 グループを使用している場合は、複数必要になる場合があります。 たとえば、2つの異なるユーザーグループ間の通信を監視する場合、または、監視されないグループを指定する場合などです。
 
@@ -86,7 +93,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 - [メールが有効なセキュリティ グループの管理](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Overview of Office 365 Groups (Office 365 グループの概要)](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-3-required-create-a-communication-compliance-policy"></a>手順 3 (必須): 通信コンプライアンスポリシーを作成する
+## <a name="step-4-required-create-a-communication-compliance-policy"></a>手順 4 (必須): 通信コンプライアンスポリシーを作成する
   
 1. Microsoft 365 [https://compliance.microsoft.com](https://compliance.microsoft.com)組織の管理者アカウントの資格情報を使用してサインインします。
 
@@ -120,7 +127,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 6. [**ポリシーが作成**されました] ページが表示され、ポリシーがアクティブ化され、どの通信が取得されるかについてのガイドラインが表示されます。
 
-## <a name="step-4-optional-create-employee-notice-templates"></a>手順 4 (省略可能): 従業員の通知テンプレートを作成する
+## <a name="step-5-optional-create-employee-notice-templates"></a>手順 5 (省略可能): 従業員の通知テンプレートを作成する
 
 関連付けられた従業員にアラーム通知を送信してポリシーの警告に応答するオプションを使用する場合は、組織内に少なくとも1つの通知テンプレートを作成する必要があります。 通知テンプレートフィールドは、通知修復プロセスの一環として送信される前に編集でき、コミュニケーションコンプライアンスポリシーごとにカスタマイズされた通知テンプレートを作成することをお勧めします。
 
@@ -140,7 +147,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 5. [**保存**] を選択して、通知テンプレートを作成して保存します。
 
-## <a name="step-5-optional-test-your-communication-compliance-policy"></a>手順 5 (オプション): 通信コンプライアンスポリシーをテストする
+## <a name="step-6-optional-test-your-communication-compliance-policy"></a>手順 6 (オプション): 通信コンプライアンスポリシーをテストする
 
 通信コンプライアンスポリシーを作成した後、それをテストして、定義した条件がポリシーによって適切に適用されていることを確認することをお勧めします。 また、通信コンプライアンスポリシーに機密情報の種類が含まれている場合は、[データ損失防止 (DLP) ポリシーをテスト](create-test-tune-dlp-policy.md)することもできます。 テストする通信が取得されるように、ポリシーの時間をアクティブにする必要があることを確認してください。
 
@@ -155,11 +162,3 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 3. コミュニケーションコンプライアンスポリシーで指定されたレビュー担当者として Microsoft 365 にサインインします。 [**通信コンプライアンス** > **アラート**に移動して、ポリシーのアラートを表示します。
 
 4. 修復コントロールを使用してアラートを修復し、アラートが適切に解決されることを確認します。
-
-## <a name="step-6-optional-enable-auditing-for-your-communication-compliance-policies"></a>手順 6 (オプション): 通信コンプライアンスポリシーの監査を有効にする
-
-ポリシーのテストが完了したら、通信コンプライアンス管理に関連付けられたアクティビティが記録されるように監査を有効にすることができます。 この監査は、定義済みの組織ポリシーに関連付けられているすべてのアクティビティの要約、または通信コンプライアンスポリシーが変更されるたびに発生する可能性があります。
-
-監査が有効になっている場合は、内部または外部監査の準備が完了するために、コミュニケーションコンプライアンスポリシーに組み込みの監査証跡が組み込まれます。 監査が有効になっている場合、すべてのポリシーのメインページにある [**レビュー活動のエクスポート**] コントロールを使用して、監査ファイルを生成したり、統合監査ログで監査アクティビティを表示したりすることができます。
-
-監査を有効にするには、Office 365 セキュリティ & コンプライアンスセンターの [**監査ログの検索**] ページで、[**ユーザーと管理者のアクティビティの記録を開始**する] をクリックします。 このリンクが表示されない場合は、組織の監査が既に有効になっています。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。

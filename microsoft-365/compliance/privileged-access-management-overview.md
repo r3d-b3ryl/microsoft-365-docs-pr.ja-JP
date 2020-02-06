@@ -17,19 +17,19 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 0c9d8ba22f57c7f6a576f1995e8df92be7478073
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29436c9f647de2844f95f05e66b3b6c05527352b
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597734"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784664"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理
 
 > [!IMPORTANT]
 > このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。
 
-特権アクセス管理を使用すると、Office 365 の特権のある管理タスクに対して詳細なアクセス制御を行うことができます。 これにより、既存の特権のある管理者アカウントを使用して機密性の高いデータにアクセスしたり、重要な構成設定にアクセスしたりすることにより、組織を侵害から保護することができます。 特権アクセス管理では、ユーザーはジャストインタイムアクセスを要求して、高度に範囲指定された、時間の制限のある承認ワークフローを通じて、昇格された権限のあるタスクを完了させる必要があります。 これにより、機密データや重要な構成設定が危険にさらされることなく、ユーザーにとってすぐにタスクを実行できるだけの余裕が与えられます。 Office 365 で特権アクセス管理を有効にすることで、組織はゼロに立った権限で運用し、管理アクセスの脆弱性に対する防御層を提供できます。
+特権アクセス管理を使用すると、Office 365 の特権のある管理タスクに対して詳細なアクセス制御を行うことができます。 これにより、既存の特権のある管理者アカウントを使用して機密性の高いデータにアクセスしたり、重要な構成設定にアクセスしたりすることにより、組織を侵害から保護することができます。 特権アクセス管理では、ユーザーはジャストインタイムアクセスを要求して、高度に範囲指定された、時間の制限のある承認ワークフローを通じて、昇格された権限のあるタスクを完了させる必要があります。 この構成では、機密性の高いデータまたは重要な構成設定が公開されていない限り、ユーザーはすぐにタスクを実行することができるようになります。 Office 365 で特権アクセス管理を有効にすることで、組織はゼロに立った権限で運用し、管理アクセスの脆弱性に対する防御層を提供できます。
 
 統合された顧客ロックボックスおよび特権アクセス管理ワークフローの簡単な概要については、「 [Office 365 ビデオ」の「customer のロックボックスと特権アクセス管理](https://go.microsoft.com/fwlink/?linkid=2066800)」を参照してください。
 
@@ -76,18 +76,23 @@ Office 365 での特権アクセス管理は、**タスク**レベルで定義�
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Office 365 では、どの Sku で特権アクセスを使用できますか?
+
 特権アクセス管理は、Office 365 E5 および高度なコンプライアンス Sku を使用しているお客様が利用できます。
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>特権アクセスが Exchange を超えて Office 365 ワークロードをサポートするのはいつですか?
+
 権限のあるアクセス管理は、近日中に他の Office 365 ワークロードで利用可能になります。 詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照してください。
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>自分の組織では30以上の特権アクセスポリシーが必要ですが、この制限は増加しますか?
+
 はい。 Office 365 組織あたりの特権アクセスポリシーの現在の制限は、機能ロードマップにあります。
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Office 365 で特権アクセスを管理するには、グローバル管理者である必要がありますか。
-いいえ。 Office 365 で特権アクセスを管理するアカウントには、Exchange 役割管理役割が割り当てられている必要があります。 役割管理役割をスタンドアロンのアカウントアクセス許可として構成しない場合は、グローバル管理者の役割に既定でこの役割が含まれ、特権アクセスを管理できます。 承認者のグループに含まれているユーザーは、グローバル管理者である必要がありません。または、要求を確認して承認するための役割管理役割が割り当てられている必要はありません。
+
+いいえ。 Office 365 で特権アクセスを管理するアカウントには、Exchange 役割管理役割が割り当てられている必要があります。 役割管理役割をスタンドアロンのアカウントアクセス許可として構成しない場合は、グローバル管理者の役割に既定でこの役割が含まれ、特権アクセスを管理できます。 承認者のグループに含まれるユーザーは、グローバル管理者である必要がありません。または、PowerShell を使用して要求を確認して承認するための役割管理役割が割り当てられている必要はありません。
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>お客様のロックボックスに関連する Office 365 での特権アクセス管理について
+
 [カスタマーロックボックス](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests)Microsoft がデータにアクセスするときに、組織に対してレベルのアクセス制御を許可します。 Office 365 の特権アクセス管理を使用すると、すべての Office 365 特権タスクに対して、組織内で詳細なアクセス制御を行うことができます。
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。

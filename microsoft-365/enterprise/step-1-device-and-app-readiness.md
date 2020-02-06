@@ -1,5 +1,7 @@
 ---
 title: 手順 1 - デバイスとアプリの準備
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のデバイスとアプリの準備を評価する方法について説明します。
-ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112721"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774213"
 ---
 # <a name="step-1-device-and-app-readiness"></a>手順 1: デバイスとアプリの準備
 
@@ -106,9 +108,9 @@ Configuration Manager ソフトウェア インベントリは、クラウドベ
 詳細については、「[Configuration Manager のソフトウェア インベントリの概要](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)」を参照してください。アプリケーション パッケージのプラットフォーム設定の要件については、「[Configuration Manager のパッケージとプログラム](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。
 
 
-## <a name="desktop-app-assure"></a>Desktop App Assure
+## <a name="app-assure"></a>App Assure
 
-Windows 10 と Office 365 ProPlus アプリの互換性を支援する別のツールは、FastTrack Center から入手できる、[Desktop App Assure](https://aka.ms/desktopappassure) プログラムです。 有効なアプリケーションの問題が発生した場合でも、Desktop App Assure を使用すれば、Microsoft のエンジニアと協力して、追加料金なしでアプリケーションの非互換性を修復できます。
+Windows 10 と Office 365 ProPlus アプリの互換性を支援する別のツールは、FastTrack Center から入手できる、[App Assure](https://aka.ms/appassure) プログラムです。 有効なアプリケーションの問題が発生した場合でも、Microsoft のエンジニアと協力して、App Assure を通して追加料金なしでアプリケーションの非互換性を修復できます。
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>診断データ ツールの継続的な使用
 

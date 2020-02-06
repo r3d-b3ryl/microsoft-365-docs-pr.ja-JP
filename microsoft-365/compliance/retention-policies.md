@@ -1,5 +1,7 @@
 ---
 title: アイテム保持ポリシーの概要
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558594"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774223"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -54,7 +56,9 @@ ms.locfileid: "41558594"
 
 - [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)の [**ポリシー**] ページ。
 - [**保持**] ページ ([**情報ガバナンス**] 下にあり、[Office 365 セキュリティ&amp; コンプライアンス センター](https://protection.office.com/)内にあります)。
-  
+
+**コンテンツを完全に削除する前に確認できるようにする場合は、** アイテム保持ポリシーではなく[保持ラベル](labels.md)の使用を検討してください。 保持ラベルを作成するときに、保持期間の終了時にコンテンツを確認するための[廃棄確認](disposition-reviews.md)を設定できます。
+
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>アイテム保持ポリシーは所定の場所にあるコンテンツに対してどのように作用するか
 
 サイトやメールボックスなどの場所をアイテム保持ポリシーに含めたときにも、コンテンツは元の場所に引き続き保持されます。そのため、ユーザーは何事もなかったかのように、自分のドキュメントやメールに対する作業を継続できます。ただし、ポリシーに含まれるコンテンツを編集したり削除したりした場合、ポリシーを適用したときの状態でコンテンツのコピーが保持されます。
