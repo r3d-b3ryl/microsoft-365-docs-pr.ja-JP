@@ -5,26 +5,29 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9ca6323d5c5ffd019c7d79f283b98cb25816cf62
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: f4cb36cd208017881dd03a99d4e8c8adbbea65d4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859527"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602074"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>カナダの金融機関監督官局 (OSFI)
 
 ## <a name="about-the-osfi"></a>OSFI について
 
-「[金融機関監督官局](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx)」 (OSFI) は、プルーデンス規制およびカナダの連邦制によって規制された金融機関と年金制度の監督に対して責任を負うカナダ政府の独立機関です。
+「[金融機関監督官局](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx)」 (OSFI) は、プルーデンス規制およびカナダの連邦制によって規制された金融機関と年金制度の監督に対して責任を負うカナダ政府の独立機関です。
 
-その監督の役割において、OSFI では、「[ビジネスのアクティビティ、機能、およびプロセスのアウトソーシング](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)」に適した B-10 ガイドラインを発行しました。 同局では、ビジネスをサービス プロバイダーにアウトソーシングすることに関連するリスクを評価したり管理したりするために、連邦制で規制された金融機関向けの “プルーデンスの実践、手続き、または基準” を構築しました。 その後の OSFI 覚書である [新しい技術を基盤としたアウトソーシング要件](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)では、B-10 ガイドラインが依然として現在通用するものであり、重大なアウトソーシングに関する取り決めに対する OSFI の要請に応える必要があることをそれらの機関に思い出させています。
+その監督の役割において、OSFI では、「[ビジネスのアクティビティ、機能、およびプロセスのアウトソーシング](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)」に適した B-10 ガイドラインを発行しました。 同局では、ビジネスをサービス プロバイダーにアウトソーシングすることに関連するリスクを評価したり管理したりするために、連邦制で規制された金融機関向けの “プルーデンスの実践、手続き、または基準” を構築しました。 その後の OSFI 覚書である [新しい技術を基盤としたアウトソーシング要件](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)では、B-10 ガイドラインが依然として現在通用するものであり、重大なアウトソーシングに関する取り決めに対する OSFI の要請に応える必要があることをそれらの機関に思い出させています。
 
 さらに、金融機関によるクラウド サービスの使用では、[個人情報保護および電子文書に関する法律](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)、および場合によっては州のデータ プライバシー法に準拠する必要があります。
 
@@ -32,7 +35,7 @@ ms.locfileid: "39859527"
 
 ビジネス機能をクラウドにアウトソーシングすることを検討しているカナダの金融機関の決定を支援するために、Microsoft では、「[クラウド導入への手引き: カナダの金融機関向けコンプライアンスのチェックリスト](https://aka.ms/Azure-Canada-Compliance)」を発行しました。 チェックリストを確認して完了すると、金融機関では、適用される規制要件に従い、自信をもって Microsoft 法人向けクラウド サービスを導入することができます。
 
-カナダの金融機関がビジネス事業をアウトソーシングする場合は、[個人情報保護および電子文書に関する法律](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) を含む、カナダのプライバシー法および金融機関監督官局 (OSFI) によって発行された「[ビジネスのアクティビティ、機能、およびプロセスのアウトソーシング](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)」の B-10 ガイドラインに準拠する必要があります。
+カナダの金融機関がビジネス事業をアウトソーシングする場合は、[個人情報保護および電子文書に関する法律](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) を含む、カナダのプライバシー法および金融機関監督官局 (OSFI) によって発行された「[ビジネスのアクティビティ、機能、およびプロセスのアウトソーシング](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)」の B-10 ガイドラインに準拠する必要があります。
 
 Microsoft チェックリストでは、カナダの金融機関による Microsoft 法人向けクラウド サービスのデューデリジェンス評価および以下の実施を支援します。
 
@@ -58,7 +61,7 @@ Microsoft チェックリストでは、カナダの金融機関による Micros
 
 いいえ。 事前の通知、相談、または承認に対する要件はありません。 パブリック クラウド コンピューティングの使用は許可されておりますが、常に OSFI の要件に準拠する必要があります。
 
-[OSFI B-10 ガイドライン](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) では、関連するリスクに見合ったリスク緩和を使用して、アウトソーシングに関する取り決めのすべてに適用されるリスク管理プログラムを策定するよう、OSFI が金融機関に対して要請していることを示しています。 ただし、重大なアウトソーシングに関する取り決めのみ、ガイドラインに示されている保護条項に対応する書面の契約書を用いて文書化される必要があります。 Microsoft [チェックリスト](https://aka.ms/Azure-Canada-Compliance) (53 頁) のパート 2 では、それらに対応する Microsoft の契約書のセクションを背景にしてそれらを対応づけています。
+[OSFI B-10 ガイドライン](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) では、関連するリスクに見合ったリスク緩和を使用して、アウトソーシングに関する取り決めのすべてに適用されるリスク管理プログラムを策定するよう、OSFI が金融機関に対して要請していることを示しています。 ただし、重大なアウトソーシングに関する取り決めのみ、ガイドラインに示されている保護条項に対応する書面の契約書を用いて文書化される必要があります。 Microsoft [チェックリスト](https://aka.ms/Azure-Canada-Compliance) (53 頁) のパート 2 では、それらに対応する Microsoft の契約書のセクションを背景にしてそれらを対応づけています。
 
 **クラウド サービス プロバイダーについて、契約に含める必要がある必須条項はありますか?**
 
@@ -73,6 +76,6 @@ Microsoft チェックリストでは、カナダの金融機関による Micros
 - [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf) ファイルをダウンロードできます。

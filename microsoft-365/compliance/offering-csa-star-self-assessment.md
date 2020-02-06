@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 73a21ba3089646df55ad51a7918749f29691aad8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 576404aadb2328682f10f69f30e58df2cafebe54
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859427"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601994"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Cloud Security Alliance (CSA) STAR Self-Assessment
 
@@ -67,8 +70,8 @@ CSP は CSA STAR Self-Assessment を使用すると、透明性の高い方法�
 **Microsoft のビジネス クラウド サービスは、CSA STAR のどの保証レベルを達成していますか?**
 
 - **Level 1**: **CSA STAR Self-Assessment**: Azure、Dynamics 365、Office 365。 Self-Assessment は、お客様がサービスのセキュリティを評価できるように、クラウド サービス プロバイダーが自社のセキュリティ コントロールの文書化に使用でき、無料で提供されます。
-- **Level 2**: **CSA STAR Certification**: Azure、Cloud App Security、Intune、Power BI。 STAR Certification は、ISO/IEC 27001 認定を取得しているか、また、CCM において規定されている基準を満たしているかで判定されます。 クラウド サービス プロバイダーのセキュリティ コントロールとセキュリティ施策について、第三者による厳格な評価を実施した上で、認定されます。
-- **Level 2**: **CSA STAR 証明**: Azure および Intune。 CSA と AICPA が協力して、CPA が SOC 2 に取り組む際に使用できるガイドラインを提供しています。このガイドラインでは、AICPA (Trust Service Principles, AT 101) および CSA CCM の基準を使用しています。 STAR Attestation では、これらのガイドラインを基に、クラウド プロバイダーに対する独立機関による厳格な評価を経て認定されます。
+- **Level 2**: **CSA STAR Certification**: Azure、Cloud App Security、Intune、Power BI。 STAR 認証は、ISO/IEC 27001 認証の取得および CCM に規定されている基準への適合に基づきます。 この認証は、クラウド サービス プロバイダーにおけるセキュリティの制御と取り組みについて、第三者による厳格な評価を経て付与されます。
+- **レベル 2**: **CSA STAR 評価証明**: Azure および Intune。 CSA と AICPA が協力して、CPA が SOC 2 に取り組む際に使用できるガイドラインを提供しています。このガイドラインでは、AICPA (Trust Service Principles, AT 101) および CSA CCM の基準を使用しています。 STAR Attestation では、これらのガイドラインを基に、クラウド プロバイダーに対する独立機関による厳格な評価を経て認定されます。
 
 ## <a name="resources"></a>リソース
 
@@ -85,5 +88,5 @@ CSP は CSA STAR Self-Assessment を使用すると、透明性の高い方法�
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf) ファイルをダウンロードできます。
 

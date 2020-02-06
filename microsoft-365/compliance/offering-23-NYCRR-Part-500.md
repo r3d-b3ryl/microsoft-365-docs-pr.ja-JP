@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 09126b4086f178f2f94e1344a4f4210a67b66621
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860127"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602894"
 ---
 # <a name="title-23-nycrr-part-500"></a>Title 23 NYCRR Part 500
 
@@ -76,4 +79,4 @@ Microsoft では、Title 23 NYCRR Part 500 の規制を受ける金融サービ�
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf) ファイルをダウンロードできます。

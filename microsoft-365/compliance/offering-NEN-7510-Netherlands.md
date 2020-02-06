@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 168519277be7b19d0d3e864e39aa506b1bf0ed0d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 99fa3ff77c957d209123458b15305f4b93ed6562
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859547"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602104"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
@@ -78,6 +81,6 @@ Microsoft は自社の世界中の保証と NEN 7510 標準の統制との対応
 - [NEN 7510:2011 標準](https://www.nen.nl/NEN-Shop-2/Standard/NEN-75102011-nl.htm)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/3/D/E/3DE55FFB-0B45-49BC-851E-3696C8BD5FB7/NEN7510-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/3/D/E/3DE55FFB-0B45-49BC-851E-3696C8BD5FB7/NEN7510-Compliance.pdf) ファイルをダウンロードできます。

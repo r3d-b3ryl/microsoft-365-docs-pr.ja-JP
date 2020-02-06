@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 546e4b29f26ffdee8c876032fe83254fb5643fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859817"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602384"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>金融情報システム センター (FISC)
 
@@ -40,7 +43,7 @@ Microsoft は、外部評価機関と連携して、Microsoft Azure、Dynamics 3
 
 金融機関は、対象となる Azure、Dynamics 365、Office 365、および Microsoft Cloud App Security のインフラおよびプラットフォーム サービスについて、これらの 3 分野のコンプライアンスの評価を利用できます。
 
-[外部評価機関の検証と評価機関のサイトへのリンクの詳細 (日本語のみ)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx)。
+[外部評価機関の検証と評価機関のサイトへのリンクの詳細 (日本語のみ)](https://cloudblogs.microsoft.com/industry-blog/ja-jp/financial-services/2018/05/11/fisc_v9/)。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -84,4 +87,4 @@ Microsoft クラウド サービスの FISC 準拠を評価した第三者のセ
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf) ファイルをダウンロードできます。

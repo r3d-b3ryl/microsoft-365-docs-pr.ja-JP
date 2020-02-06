@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 69cc897f749a591da9bdc69057bccf2dc96351da
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: af6e80bb61eb987c612349070b6ed4b7bbb89e5b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859537"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602094"
 ---
 # <a name="national-health-service-nhs-information-governance-ig-toolkit"></a>国民保健サービス (NHS) 情報ガバナンス (IG) ツールキット
 
@@ -81,6 +84,6 @@ IG ツールキットの達成レベルは 0 - 3 あります。
 - [IG ツールキット FAQ](https://www.igt.hscic.gov.uk/resources/About%20the%20IG%20Toolkit.pdf)
 - [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/7/F/6/7F6EBDDE-F3EF-4225-ACDA-ADCD851430C4/NHS_IG-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/F/6/7F6EBDDE-F3EF-4225-ACDA-ADCD851430C4/NHS_IG-Compliance.pdf) ファイルをダウンロードできます。

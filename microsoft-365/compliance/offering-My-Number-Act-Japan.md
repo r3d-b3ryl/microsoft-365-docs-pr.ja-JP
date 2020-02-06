@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 208bf7d1e31f797ec24654d1c2cdfe374d1aafe3
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859567"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602134"
 ---
 # <a name="my-number-act-japan"></a>マイ ナンバー法 (日本)
 
@@ -70,11 +73,11 @@ PPC Q\&Aの[セクション Q3-13](https://www.ppc.go.jp/legal/policy/faq/) (日
 ## <a name="resources"></a>リソース
 
 - [Azure コンプライアンスおよび日本のセキュリティとプライバシーの要件](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
-- [Microsoft におけるプライバシー](https://privacy.microsoft.com/ja-JP/)
+- [Microsoft におけるプライバシー](https://privacy.microsoft.com/en-US/)
 - [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)
 - [クラウドでのプライバシーに関する考慮事項](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf) ファイルをダウンロードできます。

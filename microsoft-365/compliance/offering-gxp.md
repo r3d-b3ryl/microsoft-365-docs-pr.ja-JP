@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 44f6423768049f80bbc7af3affc99294a8ad7ac1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a3379043108340391764781f52b6a1bc3e05cf3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859387"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601934"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 
@@ -65,6 +68,6 @@ Azure にアプリケーションを展開するお客様は、使用目的に�
 - [Microsoft と ISO 9001](offering-iso-9001.md)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/4/5/B/45B4B144-E0D0-432E-A210-B8AF841F9A0A/GXP-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/4/5/B/45B4B144-E0D0-432E-A210-B8AF841F9A0A/GXP-Compliance.pdf) ファイルをダウンロードできます。

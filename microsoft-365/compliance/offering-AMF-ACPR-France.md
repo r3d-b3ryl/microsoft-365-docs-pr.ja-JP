@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 208c6105e684bedb2b59b31a849486e131bbce59
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: cfd0c127b7cea626d6e2ed571f8ed1913370c1db
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860117"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602714"
 ---
 # <a name="financial-authority-amf-and-prudential-authority-acpr-france"></a>Financial Authority (AMF) および Prudential Authority (ACPR) フランス
 
@@ -74,7 +77,7 @@ EBA が発行する「[クラウド サービス プロバイダーへのアウ�
 - [Azure 金融サービス クラウド リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/3/D/8/3D81D753-0896-4D8C-9131-D9F9153942DB/AMF-ACPR-Compliance.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/3/D/8/3D81D753-0896-4D8C-9131-D9F9153942DB/AMF-ACPR-Compliance.pdf) ファイルをダウンロードできます。
 

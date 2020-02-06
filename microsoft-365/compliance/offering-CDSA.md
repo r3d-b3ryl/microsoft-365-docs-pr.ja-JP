@@ -5,18 +5,21 @@ keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6158a9584e70615b1f20e5ffbc25c46a33cac8a9
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 34e0b0197754a85576c86fc4d447af7a25c0dc62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860077"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602654"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Content Delivery &amp; Security Association (CDSA) の Content Protection &amp; Security (CPS) 標準
 
@@ -77,4 +80,4 @@ Microsoft は CDSA CPS 認定の 6 か月間の更新を無事に終え、Azure 
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
-このサービスに関する背景資料が必要ですか? [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf) をダウンロードします。
+このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。
