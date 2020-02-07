@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 97d46c7fce851e420c33763260c88e948718840f
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5946fc193b0f96501a2f8168eef0d3e694d9cfcb
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784684"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830981"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
@@ -84,7 +84,7 @@ ms.locfileid: "41784684"
 
 - ラベルに暗号化が含まれている場合、Microsoft Cloud App Security は SharePoint のファイルのラベル情報を読み取ることができません。
 
-- ラベル付きドキュメントが SharePoint にアップロードされ、そのラベルがサービスプリンシパル名のアカウントを使用して暗号化されている場合、そのドキュメントは web 上の Office では開くことができません。 シナリオの例としては、Microsoft Cloud App Security と、電子メールで Teams に送信されるファイルがあります。
+- ラベル付きのドキュメントが SharePoint にアップロードされ、そのラベルがサービスプリンシパル名のアカウントを使用して暗号化されている場合、そのドキュメントを web 上の Office で開くことはできません。 シナリオの例としては、Microsoft Cloud App Security と、電子メールで Teams に送信されるファイルがあります。
 
 - 次の方法で暗号化されたドキュメントは、web 上の Office で開くことができません。
     - オンプレミスキー ("自分のキーを保持する" または HYOK) を使用する暗号化
