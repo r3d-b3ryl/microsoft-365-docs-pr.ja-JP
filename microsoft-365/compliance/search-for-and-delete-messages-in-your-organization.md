@@ -1,5 +1,7 @@
 ---
 title: Office 365 組織でのメール メッセージの検索と削除
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Office 365 セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259975"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601554"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Office 365 組織でのメール メッセージの検索と削除
 
@@ -43,7 +45,7 @@ Office 365 のコンテンツ検索機能を使って、組織のすべてのメ
     
 - メッセージを削除するには、セキュリティ/コンプライアンス センターの PowerShell を使用する必要があります。 接続方法については、「[手順 2](#step-2-connect-to-security--compliance-center-powershell)」を参照してください。
     
-- メールボックスごとに最大 10 個のアイテムを一度に削除できます。 メッセージを検索し削除するための機能はインシデント対応ツールを意図したものなので、この制限により、メールボックスからすばやくかつ確実にメッセージを削除できます。 これは、ユーザーのメールボックスをクリーンアップするための機能ではありません。 10 個を超えるアイテムを削除する場合は、Exchange Online の PowerShell で **Search-Mailbox -DeleteContent** コマンドを使用できます。 「[メッセージを検索して削除する](search-for-and-delete-messagesadmin-help.md)」を参照してください。
+- メールボックスごとに最大 10 個のアイテムを一度に削除できます。 メッセージを検索し削除するための機能はインシデント対応ツールを意図したものなので、この制限により、メールボックスからすばやくかつ確実にメッセージを削除できます。 これは、ユーザーのメールボックスをクリーンアップするための機能ではありません。
     
 - コンテンツ検索で検索と削除アクションを実行してアイテムを削除できるメールボックスの最大数は 50,000 個です。 コンテンツ検索 ([手順 1](#step-1-create-a-content-search-to-find-the-message-to-delete) で作成) に 50,000 を超えるソース メールボックスが含まれる場合、削除アクション (手順 3 で作成) は失敗します。 50,000 を超えるメールボックスに対して検索と削除の操作を実行するためのヒントについては、「[詳細情報](#more-information)」セクションを参照してください。 
     

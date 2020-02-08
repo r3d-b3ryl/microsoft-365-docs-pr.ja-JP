@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、組織の人事 (HR) システムから Microsoft 365 に従業員データをインポートするためのデータコネクタをセットアップすることができます。 これにより、社内リスク管理ポリシーの人事データを使用して、組織に内部の脅威をもたらす可能性がある特定のユーザーによるアクティビティを検出することができます。
-ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600694"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862037"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>HR データをインポートするためのコネクタの設定
 
@@ -211,6 +211,6 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
    ![タスクスケジューラライブラリに新しいタスクが表示されます。](media/HRConnectorTaskSchedulerLibrary.png)
 
-   前回、スクリプトの実行がスケジュールされている場合は、[実行] が表示されます。 タスクをダブルクリックすると、そのタスクを編集できます。
+   前回スクリプトが実行された日時と、次回の実行スケジュールが表示されます。 タスクをダブルクリックすると、そのタスクを編集できます。
 
    また、コンプライアンスセンターの対応する HR コネクタのフライアウトページで、最後にスクリプトが実行された日時を確認することもできます。

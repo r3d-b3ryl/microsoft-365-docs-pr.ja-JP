@@ -1,5 +1,7 @@
 ---
 title: セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
-ms.openlocfilehash: 12a44fcc4fb5228f1e1d901502c1e6dd0e2582af
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806610"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596214"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する

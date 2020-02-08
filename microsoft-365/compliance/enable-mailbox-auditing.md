@@ -1,5 +1,7 @@
 ---
 title: メールボックスの監査を管理する
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: メールボックス監査ログは、既定では Office 365 で有効になっています (既定では、既定のメールボックスの監査またはメールボックスの監査とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録されることを意味します。このログでは、メールボックスに対して実行されたアクティビティを検索できます。
-ms.openlocfilehash: 059039205e82ea63b1dc14a8be5e768e9cdba069
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: db36e285878a5afb9c6efcc9b173188452f267fa
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515568"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862067"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -37,7 +39,7 @@ ms.locfileid: "41515568"
 - 組織全体で一貫したメールボックスの監査ポリシーを使用している (すべてのメールボックスに対して同じアクションを監査しているため)。
 
 > [!NOTE]
->•既定でのメールボックス監査のリリースに関する重要な点は、次のとおりです。メールボックスの監査を管理するために何もする必要はありません。 ただし、詳細については、このトピックで説明されているように、既定の設定からメールボックスの監査をカスタマイズするか、または完全に無効にすることをお勧めします。 <br><br>•セキュリティ & コンプライアンスセンターまたは Office 365 Management Activity API を介して、E5 ユーザーのメールボックス監査イベントのみを使用して監査ログの検索を行うことができます。 詳細については、このトピックの「[詳細情報](#more-information)」を参照してください。
+>•既定でのメールボックス監査のリリースに関する重要な点は、次のとおりです。メールボックスの監査を管理するために何もする必要はありません。 ただし、詳細については、このトピックで説明されているように、既定の設定からメールボックスの監査をカスタマイズするか、または完全に無効にすることをお勧めします。 <br><br>•既定では、E5 ユーザーのメールボックス監査イベントのみが、セキュリティ & コンプライアンスセンターでの監査ログの検索、または Office 365 Management Activity API を介して使用できるようになります。 詳細については、このトピックの「[詳細情報](#more-information)」を参照してください。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>既定で [メールボックスの監査を有効にする] がオンになっていることを確認する
 
@@ -106,10 +108,12 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**ApplyRecord**|アイテムには、レコードとしてラベルが付けられます。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**コピーする**|メッセージが別のフォルダーにコピーされました。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|メールボックス内の予定表、連絡先、メモ、または仕事フォルダーにアイテムが作成されました (たとえば、新しい会議出席依頼が作成された場合)。 メッセージの作成、送信、または受信が監査されないことに注意してください。 また、メールボックス フォルダーの作成も監査されません。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Default**||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|メールボックス フォルダーがアクセスされました。この操作は、管理者または委任されたユーザーがメールボックスを開いたときにも記録されます。<br/><br/> **注**: 代理人によって実行されたフォルダーバインド操作の監査レコードは統合されます。 1つの監査レコードは、24時間以内に個々のフォルダーへのアクセスに対して生成されます。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|メッセージが [回復可能なアイテム] フォルダーから削除されました。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**アクセスされる mailitems**|メールデータは、メールプロトコルおよびクライアントによってアクセスされます。 この値は、E5 または E5 コンプライアンスアドオンのサブスクリプションユーザーに対してのみ使用できます。 詳細については、「[高価値の監査イベント](https://docs.microsoft.com/microsoft-365/compliance/advanced-audit#high-value-audit-events)」を参照してください。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MailboxLogin**|ユーザーが自分のメールボックスにサインインしている。 |||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|メッセージがプレビュー ウィンドウに表示されました (または開かれました)。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**MessageBind**|メッセージがプレビューウィンドウに表示されるか、管理者によって開かれた。**注**: この値はメールボックスアクションとして受け入れられますが、これらのアクションはログに記録されなくなります。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**注**: この値はメールボックスアクションとして受け入れられますが、既に**updatefolderpermissions**アクションに含まれており、個別に監査されていません。 言い換えると、この値は使用しないでください。||||
 |**移動する**|メッセージが別のフォルダーに移動されました。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MoveToDeletedItems**|メッセージが削除され、[削除済みアイテム] フォルダーに移動されました。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -120,6 +124,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SoftDelete**|メッセージが完全に削除された、つまり [削除済みアイテム] フォルダーから削除されました。削除済み (回復可能) アイテムは、回復可能なアイテム フォルダーに移動されます。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Update**|メッセージまたはそのプロパティが変更されました。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|メールボックスに予定表の委任が割り当てられました。予定表の委任により、同じ組織の他のユーザーに、メールボックス所有者の予定表を管理する権限が付与されます。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateComplianceTag**|メールアイテムに別の保持ラベルが適用されます (アイテムには、1つの保持ラベルが割り当てられている場合があります)。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**UpdateFolderPermissions**|フォルダーのアクセス許可が変更されました。 フォルダーのアクセス許可では、メールボックス内のフォルダーとそれらのフォルダーに格納されているメッセージにアクセスできる組織内のユーザーを制限します。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateInboxRules**|受信トレイルールが追加、削除、または変更されました。 受信トレイルールは、指定された条件に基づいてユーザーの受信トレイ内のメッセージを処理し、指定されたフォルダーにメッセージを移動したり、メッセージを削除したりするなど、ルールの条件が満たされたときにアクションを実行するために使用されます。|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
@@ -183,7 +188,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 ユーザーのメールボックスまたは共有メールボックスに現在ログオンしているメールボックスの\<操作\>を表示するには、MailboxIdentity をメールボックスの名前、エイリアス、電子メールアドレス、またはユーザープリンシパル名 (ユーザー名) に置き換えて、Exchange Online PowerShell で次のコマンドを1つ以上実行します。
 
 > [!NOTE]
-> Office 365 のグループメール`-GroupMailbox`ボックスの次の**メールボックス**コマンドにスイッチを追加することはできますが、表示される値を信じないでください。 Office 365 グループメールボックスに対して監査される既定および静的メールボックスのアクションについては、このトピックで前述した「 [office 365 グループメールボックスのメールボックスアクション](#mailbox-actions-for-office-365-group-mailboxes)」セクションを参照してください。
+> Office 365 のグループメール`-GroupMailbox`ボックスの次の**メールボックス**コマンドにスイッチを追加することはできますが、返される値は信じられません。 Office 365 グループメールボックスに対して監査される既定および静的メールボックスのアクションについては、このトピックで前述した「 [office 365 グループメールボックスのメールボックスアクション](#mailbox-actions-for-office-365-group-mailboxes)」セクションを参照してください。
 
 #### <a name="owner-actions"></a>所有者のアクション
 
@@ -334,9 +339,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>詳細情報
 
-- 既定では、すべての組織に対してメールボックス監査ログ記録が有効になっていますが、E5 ライセンスを持つユーザーのみが[、セキュリティ & コンプライアンスセンター](search-the-audit-log-in-security-and-compliance.md)または[Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を介して監査ログの監査ログイベントを返すことができます。
+- 既定では、すべての組織に対してメールボックス監査ログ記録が有効になっていますが、E5 ライセンスを持つユーザーのみが[、セキュリティ & コンプライアンスセンター](search-the-audit-log-in-security-and-compliance.md)または[Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用し**て既定で**、メールボックス監査ログイベントを返すことができます。
 
   E5 ライセンスを持たないユーザーのメールボックス監査ログエントリを取得するには、次のことを行います。
+
+  - 個々のメールボックスでメールボックスの監査を手動で有効にし**た後**、セキュリティ & コンプライアンスセンターで、または Office 365 MANAGEMENT Activity API を使用して、監査ログの検索を使用します。
 
   - Exchange Online PowerShell で次のコマンドレットを使用します。
 

@@ -1,5 +1,7 @@
 ---
 title: 新しい Office 365 Message Encryption 機能を設定する
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Azure Information Protection をベースに構築された、Office 365 Message Encryption (OME) の新機能を使用すると、自分の組織で組織内および組織外のユーザーと保護されたメール通信を使用することができます。 OME の新機能は、他の Office 365 組織、Outlook.com、Gmail、およびその他のメール サービスと連携します。
-ms.openlocfilehash: c772151250d30e62a3f2689df5cd853536af3ede
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 766e1d2ae054a5a5e91786a360177492ee9ba1b7
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39218736"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680086"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>新しい Office 365 Message Encryption 機能を設定する
 
@@ -84,7 +86,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
      結果は次のようになります:
 
      ```text
-    Results : Acquiring RMS Templates ...
+     Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
             Verifying encryption ...
@@ -95,7 +97,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
                 - PASS: IRM verified successfully.
 
             OVERALL RESULT: PASS
-    ```
+     ```
 
    - *Contoso* は Office 365 の組織名に置き換えられます。
 

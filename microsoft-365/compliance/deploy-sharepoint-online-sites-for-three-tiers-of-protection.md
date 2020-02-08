@@ -1,5 +1,7 @@
 ---
 title: 3 層の保護用に SharePoint Online サイトを展開する
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '概要: SharePoint Online チーム サイトを作成し、さまざまなレベルの情報保護用に構成します。'
-ms.openlocfilehash: 1396a45103bfbaf6ea2de6c5ba6c4b086da344ec
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 8aee0018db9035ca29037448e3d1200471589a7c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668865"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595292"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3 層の保護用に SharePoint Online サイトを展開する
 
@@ -104,6 +106,6 @@ ms.locfileid: "39668865"
 
 [SharePoint Online サイトとファイルをセキュリティで保護する](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
-[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

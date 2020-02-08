@@ -1,5 +1,7 @@
 ---
 title: データ分類の使用を開始する (プレビュー)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 775802f8aecf04668641c2e7d6b24e645a7c9f90
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823739"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595454"
 ---
 # <a name="data-classification-overview-preview"></a>データ分類の概要 (プレビュー)
 

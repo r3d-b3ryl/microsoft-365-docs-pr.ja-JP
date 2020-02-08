@@ -5,6 +5,8 @@ keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメ�
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 0ead7cbabc87b7d852cf61fc414df65315c25e39
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41557984"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596334"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 

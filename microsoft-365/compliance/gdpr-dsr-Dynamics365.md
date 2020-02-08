@@ -5,6 +5,8 @@ keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメ�
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ca3da7e4fcfc5e639ea29b41f92fbfbb2711d450
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268580"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722018"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Dynamics 365 データ対象要求
 
@@ -197,134 +200,6 @@ Dynamics 365 for Finance and Operations と ***Dynamics 365 for Talent*** のど
 - 顧客データを Excel ファイルにエクスポートできます。 その後に、Excel で顧客データが移植性要求に含まれるように編集し、.csv や .xml などの、コンピューターで読み取り可能な一般的に使用されるファイル形式でそのファイルを保存できます。 詳細については、「[ビジネス データを Excel にエクスポートする](https://docs.microsoft.com/dynamics365/business-central/about-export-data)」を参照してください。
 - 顧客データを Excel ファイルにエクスポートできます。 その後に、Excel で顧客データが移植性要求に含まれるように編集し、.csv や .xml などの、コンピューターで読み取り可能な一般的に使用されるファイル形式でそのファイルを保存できます。 詳細については、「[ビジネス データを Excel にエクスポートする](https://docs.microsoft.com/dynamics365/business-central/about-export-data)」を参照してください。
 
-### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
-
-Microsoft Social Engagement は、顧客データやソーシャル コンテンツに含まれうる個人データを処理するので、ソーシャル ネットワークから取得した個人データを参照する際に DSR 要求を独特な方法で処理します。 ソーシャル コンテンツは公開コンテンツであり、Microsoft Social Engagement 内で実行される顧客の検索クエリに応答してソーシャル メディア ネットワーク (Twitter、Facebook、YouTube など) および データ インデックス作成サービスやデータ集約サービスから収集されます。 ソーシャル コンテンツは顧客データではありません。 ソーシャル コンテンツの処理、使用、保存に関する他の制限については、Microsoft オンライン サービス使用条件で詳しく説明しています。
-
-### <a name="finding-personal-data"></a>個人データの検索
-
-データ対象の要求に対する対応の最初の段階として、要求の対象となっている個人データを検索して特定します。Microsoft Social Engagement は次のデータを保存します。
-
-#### <a name="for-social-media-users"></a>ソーシャル メディア ユーザーの場合
-
-- Social Engagement がソーシャル プラットフォームから取得する、ソーシャル メディア ユーザー データ (Social Engagement では*作成者*と呼ばれる)。これには、名前、ユーザー名、プロファイル画像、場所、Web サイトの他に、作成者によって提供されている場合は自己紹介も含まれることがあります。
-- 作成者をグループ化し分類する目的で使用する作成者タグ。インフルエンサー、競合企業、ファンなどがあります。
-
-#### <a name="for-employees"></a>従業員の場合
-
-- 従業員名、連絡先情報、およびプロファイル画像を含み、Office 365 で管理されるユーザー プロファイル。
-- 投稿アラートやトレンド アラートを作成した従業員によって提供されるメール アドレス。
-- ソーシャル プラットフォーム上の他のユーザーと連携する目的で、Social Engagement 内で従業員によって認証されるソーシャル メディア アカウント (Social Engagement では*ソーシャル プロファイル*と呼ばれる)。これらのアカウントは、従業員が所有する場合と組織が所有しする場合があり、従業員がソーシャル プラットフォームにアカウントを登録するときに提供するデータが含まれます。これらのプロファイルは、ソーシャル メディア上の組織を表しており、Social Engagement アプリケーション内から組織に代わって投稿を操作するために使用されます。
-- Power BI でソーシャル メディア上のチーム パフォーマンスを分析するために、ユーザーの組織が [Social Engagement コンテンツ パック](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)を使用する場合の、Power BI でのユーザー名。
-
-この第 1 ステップ (該当する個人データの検出と確認) により、データ主体の要求が、データ主体の要求の承認/拒否に関する組織の要件を満たしているかどうか判断できます。 たとえば、個人データを検出して確認した後、その要求を実行すると他者の権利や自由が侵害される恐れがあるので、その要求は組織の要件に適合しないと判断する場合があるかもしれません。
-
-#### <a name="social-media-users-authors"></a>ソーシャル メディア ユーザー (作成者)
-
-- 個人データを検索するには、[作成者の検索と削除](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#find-and-delete-an-author)にある最初の 4 つのステップに従います。
-- ソーシャル プラットフォーム上で特定の定義済みコンテンツを検索する Social Engagement ルールを従業員が作成する場合があります。これらのルールを確実に検索するには、[Twitter](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-private-messages-rule)、[Instagram](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-custom-sources-rule)、[YouTube](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a--rule) などの適切なアカウントに対するソーシャル アカウント検索ルールを確認します。
-- 作成者の作成者タグを検索するには、まず [[作成者]](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/understand-filters#authors) で [[投稿をフィルター処理]](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/use-filters#add-edit-or-remove-a-filter) し、次に [[作成者タグを表示]](https://go.microsoft.com/fwlink/?linkid=864795) を選択します。
-
-##### <a name="your-employees"></a>従業員の場合
-
-検索方法
-
-- ユーザー プロファイルを検索するには、[管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、[**ユーザー**] を選択します。 [**アクティブなユーザー**] ページで、ユーザーを一覧から検索します。 Social Engagement で、**[設定] \> [ユーザー管理]** の順に移動し、Office 365 から自動的に同期されている情報を表示します。
-- アラートの受信者を検索するには、「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」にある最初の 2 つのステップに従います。
-- 従業員が入力したソーシャル プロファイル データを検索するには、**[設定] \> [ソーシャル プロファイル]** の順に移動します。(詳細については「[ソーシャル プロファイルの管理](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles)」をご覧ください)。
-- Power BI のユーザー名を検索するには、Social Engagement Power BI ダッシュボードを開き、従業員名でフィルター処理します。
-
-### <a name="providing-a-copy-of-personal-data"></a>個人データのコピーの提供
-
-GDPR では、要求に応じて個人データのコピーを取得する権利をデータ対象に付与しています。そのリクエストに関係する可能性のあるデータを含む顧客コンテンツを発見した場合、データ対象にコピーを提供するかどうかを決定するのは、ユーザーとその組織の責任です。
-
-#### <a name="social-media-users-authors"></a>ソーシャル メディア ユーザー (作成者)
-
-- 作成者の個人データをエクスポートするには、「[作成者情報のエクスポート](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information)」にあるデータを Excel ファイルにエクスポートするための手順に従います。
-- 特定の作成者に追加された作成者タグを抽出するために、[作成者タグ データをエクスポート](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data)することができます。
-
-##### <a name="your-employees"></a>従業員の場合
-
-エクスポート方法
-
-- ユーザー プロファイルから顧客データをエクスポートするには、[管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、**[ユーザー]** を選択します。 **[アクティブなユーザー]** ページで、データをエクスポートするユーザーを検索します。 対象ユーザー以外のユーザーをすべて削除してから、**[エクスポート]** を選択してデータを .csv ファイルにエクスポートします。Excel を使用すると、このファイルの情報を表示できます。
-- アラートの受信者のメール アドレス (アラートに含まれる唯一の顧客データ) をエクスポートするには、 「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」の手順に従います。 それから、**[エクスポート]** を選択して、この受信者を含むアラートの Excel リストをダウンロードします。
-- Power BI からユーザー名をエクスポートする場合。[[Engagement レポート]](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) に、ソーシャル メディア上のチーム パフォーマンスのレポートに含まれるユーザー名が表示されます。このデータをエクスポートするには、PowerBI ダッシュボード内のユーザーでフィルター処理するか、[[レポート]](https://docs.microsoft.com/power-bi/power-bi-report-add-filter) を選択し、[[データのエクスポート]](https://docs.microsoft.com/power-bi/service-export-to-pbix) を選択します。
-
-### <a name="rectifying-personal-data"></a>個人データの修正
-
-不正確または不完全な個人データを修正するには
-
-#### <a name="social-media-users-authors"></a>ソーシャル メディア ユーザー (作成者)
-
-- ソーシャル プラットフォーム (Twitter、WordPress、Tumblr など) 上で変更を加えるには、データの所有者 (作成者) に確認する必要があります。ソーシャル メディア アカウント内のデータは、データ対象が所有しているので、その所有者のみがデータを変更できます。作成者がデータを変更すると、Social Engagement は修正された詳細を自動的に同期します。
-- 作成者タグを修正するには、「[作成者タグの変更](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#change-author-tags)」の手順に従います。
-
-##### <a name="your-employees"></a>従業員の場合
-
-- ユーザー プロファイル: ユーザー プロファイルの顧客データを変更するには、「[Office 365 でユーザー名とメール アドレスを変更する](https://support.office.com/article/change-a-user-name-and-email-address-in-office-365-fb5ac074-e203-4e1f-9843-b9d1a3e03297)」、および「[Office 365 に自分のプロファイル写真を追加する](https://support.office.com/article/add-your-profile-photo-to-office-365-2eaf93fd-b3f1-43b9-9cdc-bdcd548435b7)」をご覧ください。 これらの変更は、Social Engagement で自動的に同期されます。 これらを検索するには、 [**設定**] \> [**ユーザー管理**] の順に移動します。
-
-- アラートの受信者: [アラートを変更する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#change-an-alert)ことができます。
-
-### <a name="restricting-the-processing-of-personal-data"></a>個人データの処理の制限
-
-#### <a name="social-media-users-authors"></a>ソーシャル メディア ユーザー (作成者)
-
-Social Engagement で作成者の顧客データの処理を中止するには、[作成者を削除](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author)します。
-
-こうすることにより、このデータ対象のデータや将来の投稿の処理が今後ブロックされ、この作成者に関するデータやこの作成者が作成したデータはすべて削除されます。Social Engagement は、新しい投稿を受信すると、その作成者が以前に削除されているかどうかを自動的に確認し、削除された作成者の投稿である場合はその投稿を破棄します。これは、ソーシャル プラットフォーム上のユーザー アカウントには影響しません。
-
-##### <a name="your-employees"></a>従業員の場合
-
-- 従業員の顧客データの処理を停止する場合、Office 365 で[その従業員のライセンスを削除](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1)できます。 この処理を実行すると、ユーザー ロールやプロファイルなどの Social Engagement 関連の項目すべて、関連するすべてのユーザー定義カスタム設定、アラート、アクティビティ マップ、ストリームが削除されます。 検索トピックとソーシャル プロファイルは削除されません。ただし、管理者は削除されたユーザーのソーシャル プロファイルの所有権を継承しており、要求に応じてそれらを削除できます。
-- アラート電子メール メッセージの送信を制限するには、「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」の手順に従って、あるメール アドレスを追加したアラートすべてからそのメール アドレスを削除します。
-
-### <a name="deleting-personal-data"></a>個人データの削除
-
-GDPR では、特定の状況下で、コントローラーから個人データの削除を要求する権利をデータ対象に与えています。組織からそのようなデータを削除することによる「忘れられる権利」は、GDPR の主要な保護対象です。
-
-#### <a name="social-media-users-authors"></a>ソーシャル メディア ユーザー (作成者)
-
-Social Engagement に含まれる、ある作成者の個人データすべてを完全に削除するには、この作成者のソーシャル プロファイルすべてを削除します。「[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors)[作成者の削除](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author)」をご覧ください。  
-
-処理を実行すると、元に戻すことはできません。この処理により、Social Engagement 上のこの作成者に関するデータやこの作成者が作成したデータはすべて削除され、この作成者のデータや将来の投稿の処理が今後ブロックされます。Social Engagement は、新しい投稿を受信すると、その作成者が以前に削除されているかどうかを自動的に確認し、削除された作成者の投稿である場合はその投稿を破棄します。これは、ソーシャル プラットフォーム上のユーザー アカウントには影響しません。
-
-作成者のタグを削除するには、「[作成者タグの削除](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#remove-author-tags)」をご覧ください。
-
->[!NOTE]
->特定の作成者の情報を削除するように依頼された場合、最初にその作成者の ID を確認し、要求を検証することをお勧めします。 ID を確認するには、その作成者のソーシャル メディア アカウントから、プライベート メッセージを送信するように要求できます。
-
-Social Engagement は、さまざまなソーシャル プラットフォーム (Twitter、WordPress、Tumblr など) のコンプライアンス フィードを実装しており、そのソーシャル プラットフォーム上でトリガーされた投稿の削除などのシグナルに直接反応します。Social Engagement をインストールすると、この機能は自動的にアクティブになるので、ユーザーが操作する必要はありません。また、Social Engagement には、Social Engagement から得たソーシャル コンテンツ上に構築されるサービス (Dynamics 365 for Customer Engagement など) がこれらのシグナルを継承できるようにするメカニズムも用意されています。
-
-##### <a name="your-employees"></a>従業員の場合
-
-ある従業員の顧客データすべてを完全に削除するには、Office 365 で[その従業員のライセンスを削除](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1)できます。
-
-- この処理を実行すると、ユーザー ロールやプロファイルなどの Social Engagement 関連の項目すべて、関連するすべてのユーザー定義カスタム設定、アラート、アクティビティ マップ、およびストリームが削除されます。検索トピックとソーシャル プロファイルは削除されません。(管理者は削除されたユーザーのソーシャル プロファイルの所有権を継承しており、要求に応じてそれらを削除できます)。
-- これらの変更は、Social Engagement で自動的に同期されます。これらを検索するには、**[設定] \> [ユーザー管理]** の順に移動します。
-- PowerBI の Engagement レポートに含まれるその従業員のエントリは、当人の個人データが削除されると匿名化されます。
-
-[ソーシャル プロファイルを削除](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles#delete-a-social-profile)できます。
-
-あるメール アドレスを追加したアラートすべてからそのメール アドレスを削除するには、「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」の手順に従います。[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)
-
-### <a name="exporting-personal-data"></a>個人データのエクスポート
-
-データ主体に電子形式で当人の個人データを提供できます。
-
-#### <a name="social-media-users-authors"></a>ソーシャル メディア ユーザー (作成者)
-
-作成者の個人データをエクスポートするには、「[作成者情報のエクスポート](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information)」にあるデータを Excel ファイルにエクスポートするための手順に従います。
-
-特定の作成者に追加された作成者タグを抽出するために、[作成者タグ データをエクスポート](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data)することができます。
-
-##### <a name="your-employees"></a>従業員の場合
-
-エクスポート方法
-
-- ユーザー プロファイルから顧客データをエクスポートするには、[管理センター](https://portal.office.com/adminportal/home)に移動します。 **管理センター**で、**[ユーザー]** を選択します。 **[アクティブなユーザー]** ページで、データをエクスポートするユーザーを検索します。 対象ユーザー以外のユーザーをすべて削除してから、**[エクスポート]** を選択してデータを .csv ファイルにエクスポートします。Excel を使用すると、このファイルの情報を表示できます。
-- アラートの受信者のメール アドレス (アラートに含まれる唯一の個人データ) をエクスポートするには、「[管理者としてアラート受信者を管理する](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)」の手順に従います。それから、**[エクスポート]** を選択して、この受信者を含むアラートの Excel リストをダウンロードします。
-- Power BI からユーザー名をエクスポートする場合。[[Engagement レポート]](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) に、ソーシャル メディア上のチーム パフォーマンスのレポートに含まれるユーザー名が表示されます。このデータをエクスポートするには、PowerBI ダッシュボード内のユーザーでフィルター処理するか、[[レポート]](https://docs.microsoft.com/power-bi/power-bi-report-add-filter) を選択し、[[データのエクスポート]](https://docs.microsoft.com/power-bi/service-export-to-pbix) を選択します。
 
 ## <a name="part-2-responding-to-dsrs-for-system-generated-logs"></a>第 2 部: システム生成ログに関する DSR に対する対応
 

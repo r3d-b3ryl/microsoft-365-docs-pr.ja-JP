@@ -5,26 +5,29 @@ keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメ�
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: dougeby
-author: dougeby
-manager: angrobe
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9e668f4571ed193bd23b1373c170d3c0be929013
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 1e5323682d5c3b2da03e4a3d176c3b3bacb4e19f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268581"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594326"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Intune データ主体の要求
 
-欧州連合の[一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) は、規制において*データ主体*と呼ばれる人に、雇用主または他の種類の機関や組織 (*データ コントローラー*または単に*コントローラー*と呼ばれます) によって収集された個人データを管理する権限を与えます。 GDPR での個人データは、特定されたまたは特定可能な自然人に関連するすべてのデータと、非常に幅広く定義されています。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。 データ主体がコントローラーに対して個人データへのアクションを実行するよう正式に要求することを、*データ主体の要求*または DSR と呼びます。
+欧州連合の[一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) は、雇用主または他の種類の機関や組織 (*データ コントローラー*または単に*コントローラー*と呼ばれます) によって収集された個人データを管理する権限を個人 (同規則にでは*データ主体*と呼ばれます) に与えます。GDPR での個人データは、特定されたまたは特定可能な自然人に関連するすべてのデータと、非常に幅広く定義されています。GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。データ 主体からコントローラーに個人データへのアクション実行を求める正式な要求は、*データ主体要求*または DSR と呼ばれます。
 
-同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) の権利などの GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、カリフォルニア州の消費者に対するプライバシーの権利および義務を規定しており、個人情報を削除する権利や個人情報へのアクセスと受け取りの権利 (ポータビリティ) など、同法には GDPR のデータ主体の権利に類似した権利が含まれています。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
 
 このガイドでは、コントローラーが DSR 要求に応じて個人データを検索して操作できるように Microsoft 製品、サービス、管理ツールを使用する方法について説明します。 具体的には、Microsoft のクラウド内に存在する個人データまたは個人情報の検索、アクセス、および操作方法について説明します。 このガイドに記載されているプロセスの概要を次に示します。
 

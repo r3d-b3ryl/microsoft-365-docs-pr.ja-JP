@@ -1,5 +1,7 @@
 ---
 title: ラベル分析によるラベル使用状況の表示
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルと機密ラベルを作成した後に、テナント全体でどのように使用されているかを確認することができます。 Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのラベル分析で、どのラベルが最もよく使われているか、どこで適用されているかを簡単に確認できます。
-ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38710088"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600584"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>ラベル分析によるラベル使用状況の表示
 

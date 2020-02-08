@@ -1,5 +1,7 @@
 ---
 title: ファイル計画マネージャーの概要
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: a79f24beb83c27873824973410daff953e989175
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805890"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594578"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 

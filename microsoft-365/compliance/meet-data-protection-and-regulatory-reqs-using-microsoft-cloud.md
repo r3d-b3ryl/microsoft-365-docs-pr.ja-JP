@@ -1,5 +1,7 @@
 ---
 title: Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft Service Trust Portal のコンプライアンス マネージャーでは、コントロールの追跡、実装、管理を行えるツールが用意されています。それらのツールは、Office 365 や Microsoft Azure などの Microsoft クラウド サービスを扱う際に、組織がセキュリティおよびデータ保護に関する業界標準 (GDPR、ISO 27001 および 27018、HIPAA など) に準拠するのに役立ちます。コンプライアンス マネージャーは、組織のデータ保護とプライバシー対策を講じる担当者が、コンプライアンスとリスク評価のプロセスを管理するのに役立ちます。
-ms.openlocfilehash: 4c3f979caf2fdc3a2dc942e49fd33a09d2d1589a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 52f6cbfb6e1c711b8b6bebec36bea965a9dc6e62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39268575"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602904"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft コンプライアンス マネージャー (クラシック)
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -17,44 +17,18 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Office 365 メッセージの暗号化では、組織内のユーザーと外部のユーザーとの間で暗号化された電子メールメッセージの送受信を行うことができます。 電子メールメッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
-ms.openlocfilehash: 76d3688fbc30923e204b9cba338b61bc955b8f95
-ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
+ms.openlocfilehash: a80086e64c7e7033141fcc84e0cd9145d64a22f6
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680096"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862027"
 ---
 # <a name="office-365-message-encryption"></a>はい
 
 電子メールは、財務データ、法的契約、社外秘の製品情報、売上レポートや売上見込み、患者の医療情報、顧客や従業員の情報などの機密性の高い情報を交換するためによく使われています。その結果、メールボックスが機密性の高い大量の情報のリポジトリとして使用され、組織にとって情報漏洩が深刻な脅威となる可能性があります。
 
 Office 365 メッセージの暗号化では、組織内のユーザーと外部のユーザーとの間で暗号化された電子メールメッセージの送受信を行うことができます。 Office 365 メッセージの暗号化は、Outlook.com、Yahoo!、Gmail、その他の電子メールサービスで機能します。 電子メールメッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
-
-## <a name="important-updates-to-ome-to-enhance-email-authenticity---action-required"></a>OME の重要な更新: 電子メールの信頼性を強化する-必要な操作
-
-2020年2月日以降、OME で使用される送信者アドレスを変更することによって、OME メールのメールの信憑性を向上させる OME への改善を展開しています。 これらの改善を行わないと、一部の組織では、送信者のアドレスがドメイン messaging.onmicrosoft.com を使用していたため、1回限りのパスコードメールやポータルの返信など、OME からシステム生成されたメールを拒否していました。 この変更により、これらのシステム生成メールは、onmicrosoft.com ではなく、組織のカスタムドメインから送信されます。 この改善を実装するためには、メールフロールールを更新する必要があります。
-
-Exchange Online の場合、新しい OME アドレスを検索するには、古い OME 電子メールアドレスまたは組織外の任意のアドレスを検索するメールフロールールを更新する必要があります。 新しい OME (1 回限りのパスとポータルの返信) メールはカスタムドメインから送信されるため、組織の外部からのメールとは見なされなくなりました。
-
-Exchange オンプレミスまたは Exchange Online と共に使用するサードパーティ製のソリューションを使用している場合は、すべての古い OME ルールを更新して、新しい OME 電子メールアドレスを反映させる必要があります。 たとえば、以前の OME 電子メールアドレスが表示されている場合は、新しい電子メールをホワイトリスト電子メールのリストに追加する必要があります。
-
-### <a name="changes-to-ome-email-addresses"></a>OME 電子メールアドレスへの変更
-
-1回限りのパスコード送信者アドレス:
-
-- 古いアドレス:``onetimepasscode@messaging.onmicrosoft.com``
-
-- 新しいアドレス:``onetimepasscode@<yourdomain.com>``
-
-OME ポータルからの OME 応答:
-
-- 古いアドレス:``omeportal@messaging.onmicrosoft.com``
-
-- 新しいアドレス:``omeportal@<yourdomain.com>``
-
-### <a name="errors-routing-mail-from-exchange-online-through-exchange-on-premises-to-external-recipients"></a>Exchange オンプレミスから外部の受信者に Exchange online からメールをルーティングするエラー
-
-オンプレミスの Exchange を経由して組織の外部の受信者にメールをルーティングすると、一部のサードパーティ製システムは DMARC エラーを返し、電子メールを受け入れません。 たとえば、次のようにメールをルーティングする場合、gmail は DMARC エラーを返します。 この問題を回避するには、exchange Online から外部の受信者に電子メールを直接ルーティングし、オンプレミスの Exchange をバイパスします。
 
 ## <a name="how-office-365-message-encryption-works"></a>Office 365 メッセージの暗号化のしくみ
 

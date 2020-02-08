@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 74ce16a1cc98943ea808bbae08eccd54f8f21fad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602424"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851824"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>連邦金融機関調査委員会 (FFIEC)
 
@@ -58,6 +58,10 @@ Azure および Office 365 の SOC 構成証明レポート。
 **マイクロソフトの SOC 標準を使用して、組織の機関の FFIEC 準拠の義務を満たすことはできますか?**
 
 これらの義務を満たすために、Microsoft は、前述した SOC 標準への準拠についての詳細を提供しています。 しかし最終的には、お客様は自分のサービスが、お客様の機関に適用される特定の法律および規制に準拠しているかどうかを判断する必要があります。 また、FFIEC は、「監査レポートまたはレビューのユーザーは、レポートに含まれる情報のみに依存して TSP の内部統制環境を検証することはない」ということにもアドバイスしています。 「FFIEC IT の調査ハンドブック」の「[アウトソーシングテクノロジ](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)」に記載されているように、追加の確認および監視手順を使用する必要があります。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+
+[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[FFIEC Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117912)と[FFIEC Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118101)を使用して、組織がこの規制の要件を満たすことができるようにします。
 
 ## <a name="resources"></a>リソース
 

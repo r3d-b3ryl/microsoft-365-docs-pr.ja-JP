@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: 4b81968c6f60377195afb2715a2a6aabdb9dea51
-ms.sourcegitcommit: 2436c983402157ed3d09682d78792783313a64f4
+ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41787507"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855346"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Office アプリの機密ラベル
 
@@ -90,7 +90,7 @@ Windows コンピューター上でのみ実行される Azure Information Prote
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
 |[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
-|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | レビュー                       | レビュー                    | レビュー           | レビュー               | プレビュー:[対象指定リリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)へのロールアウト |
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト                       | レビュー                    | レビュー           | レビュー               | はい |
 |
 
 ## <a name="about-the-office-built-in-labeling-client"></a>Office の組み込みラベルクライアントについて

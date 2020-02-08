@@ -21,12 +21,13 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: de0091c4a3bc0d1b531689c9b1410f4801179a31
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 8497f2c33e89f4e8240de16ba29b1431fff39de4
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598484"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855246"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -160,7 +161,7 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
 
 セキュリティ シナリオで保証される場合には、機密ラベルを使用して、ファイルが移動する場所に関係なく、保護を適用することができます。 Microsoft 365 コンプライアンス センターの機密ラベルと Azure Information Protection ラベルは同じです。 このソリューションでは、最も高度なセキュリティで保護する必要があるファイルに対しては、機密ラベルまたは「高機密」機密ラベルのサブラベルを使用して暗号化を行い、アクセス許可を付与することをお勧めしています。
 
-Office 365 に保存されているファイルに機密ラベルによる暗号化が適用されている場合、サービスはそのようなファイルのコンテンツを処理できません。 共同編集、電子情報開示、検索、Delve、その他の共同作業機能は機能しません。 DLP ポリシーが操作できるのはメタデータ (保持ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。
+組織が[ SharePoint および OneDrive の Office ファイルに対する機密ラベルを有効にしていない場合 (パブリック プレビュー)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): Office 365 に保存するファイルに機密ラベルの暗号化を適用すると、サービスはこれらのファイルのコンテンツを処理できないことに注意してください。 共同編集、電子情報開示、検索、Delve、その他の共同作業機能は機能しません。 DLP ポリシーが操作できるのはメタデータ (保持ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。
 
 詳細については、「[機密ラベルの概要](../../compliance/sensitivity-labels.md)」をご覧ください。
 

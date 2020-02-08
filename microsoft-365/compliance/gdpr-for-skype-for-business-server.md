@@ -1,5 +1,8 @@
 ---
 title: Skype for Business Server の GDPR
+description: オンプレミスの Skype for Business Server および Lync Server での GDPR の要件に対応する方法について説明します。
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: オンプレミスの Skype for Business Server および Lync Server での GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: fb3789a6835a367d415e5c32eeec043add150724
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: aa0d66bcf727b7dd3c545384ec3a4838667a9183
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749855"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596404"
 ---
 # <a name="gdpr-for-skype-for-business-server-and-lync-server"></a>Skype for Business Server および Lync Server の GDPR
 

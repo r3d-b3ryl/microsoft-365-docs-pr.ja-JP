@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: af68a8e81cdaab1bbbd8887a7d586fcaefff1041
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600894"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855386"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -122,7 +122,7 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 
 - [セキュリティ強化のために office 365 テナントを構成](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)する: これらの推奨事項は、office 365 テナントのベースラインセキュリティに適用されます。
 - [Office 365 セキュリティロードマップ: 最初の30日間、90日以降の優先順位](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): これらの推奨事項には、ログ、データガバナンス、管理アクセス、および脅威保護があります。
-- [セキュリティで保護された SharePoint Online サイトおよびファイル](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files): この記事の一連の記事では、ベースライン、機密、および高機密保護のために適切なレベルでファイルとサイトを保護する方法について説明します。
+
 
 ### <a name="windows-10-and-office-365-proplus"></a>Windows 10 および Office 365 ProPlus
 

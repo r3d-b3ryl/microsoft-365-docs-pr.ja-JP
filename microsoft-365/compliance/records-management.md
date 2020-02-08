@@ -1,7 +1,9 @@
 ---
-title: Microsoft 365 のレコードの管理
-ms.author: laurawi
-author: laurawi
+title: レコード管理
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のレコード管理を使用すると、組織の特定の保持スケジュールをファイル計画に適用し、コンテンツの完全なライフサイクルをサポートするために、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 3057b5ab061bc5107acbde3c67ecde8a9edaffd7
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: dcc3e5666bcd438a046d535cf9fce88910b85ad7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "39233225"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597654"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 のレコードの管理
 

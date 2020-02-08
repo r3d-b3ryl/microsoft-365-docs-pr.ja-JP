@@ -1,5 +1,7 @@
 ---
 title: 保持ラベルの概要
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 541c1727bfc1ca2132120aadff6330a1a9ac5c0a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023371"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585766"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 

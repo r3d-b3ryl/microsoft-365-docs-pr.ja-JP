@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: セキュリティ & コンプライアンスセンターを使用して、組織内の電子情報開示ケースを作成および管理します。ケースにメンバーを割り当てたり、コンテンツの場所を保持に配置したり、ケースに関連付けられたコンテンツ検索を実行したり、検索結果をエクスポートしたりすることができます。Office 365 Advanced eDiscovery で詳細な分析を行うためにケースデータを準備することもできます。
-ms.openlocfilehash: f687f405b6b721ec3f3f1d94e11091c1023d1aea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595142"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862107"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターの電子情報開示のケースを管理する
 
@@ -624,7 +624,5 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
     
     > [!NOTE]
     > (チームの SharePoint サイトを保留にするときに) Microsoft チームまたはチーム チャネルの Wiki コンテンツを保持する機能は、2017 年 6 月 22 日にリリースされました。チーム サイトが保留にされると、この日から Wiki コンテンツが保持されます。ただし、チーム サイトが保留にされ、Wiki コンテンツが 2017 年 6 月 22 日よりも前に削除された場合、その Wiki コンテンツは保持されていません。 
-  
-  - Microsoft チームにホールドを設定しても、そのホールドはプライベートチャネルメッセージには適用されません。 標準チャネル内のメッセージのみが保持されます。 プライベートチャネルメッセージの保持のサポートは、近日中に公開されます。
 
 - **OneDrive for Business サイトの URL を確認するにはどうすればよいですか?** 電子情報開示ケースに関連付けられた保留または検索に追加できるように、組織内の OneDrive for Business サイトの Url のリストを収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)する」を参照してください。 この記事内のスクリプトは、すべての OneDrive サイトのリストを含むテキスト ファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive サイトに組織の個人用サイト ドメインの URL を必ず追加してください。 これは、すべての OneDrive を含むドメインです。例: `https://contoso-my.sharepoint.com` ユーザーの OneDrive サイトの URL の例は次のとおりです。`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`

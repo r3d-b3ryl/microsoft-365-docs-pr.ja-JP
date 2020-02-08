@@ -7,17 +7,19 @@ localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/14/2018
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 9695daea9d5601682a56b22c4fde49f4e9cd783e
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: c8d222f035bbb8ad618c652809808ffe31ce036b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558454"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594648"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 

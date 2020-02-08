@@ -1,5 +1,7 @@
 ---
 title: 保持ラベルと DLP による SharePoint Online ファイルの保護
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトには、保持ラベルとデータ損失防止 (DLP) ポリシーを適用してください。'
-ms.openlocfilehash: c40261df8203841e3627a0d7a0c09c7f88a02a6b
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: ad333007b2efdcf577f1c31afc716c525a7abf7e
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668875"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855376"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>保持ラベルと DLP による SharePoint Online ファイルの保護
 
@@ -221,8 +223,6 @@ ms.locfileid: "39668875"
     
 ## <a name="see-also"></a>関連項目
 
-[SharePoint Online サイトとファイルをセキュリティで保護する](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

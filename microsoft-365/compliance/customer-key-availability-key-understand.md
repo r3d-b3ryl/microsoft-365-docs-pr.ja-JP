@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 紛失した Office 365 顧客キーを回復するために使用される可用性キーについて説明します。
-ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
-ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
+ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845366"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862087"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Office 365 の顧客キーの可用性キーについて
 
@@ -94,7 +94,7 @@ SharePoint Online、OneDrive for Business、Teams ファイルでは、可用性
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Exchange Online と Skype for Business が可用性キーを使用する方法
 
-顧客キーを使用して DEP を作成すると、Office 365 はその DEP に関連付けられているデータ暗号化ポリシーキー (DEP キー) を生成します。 このサービスは、DEP キーを3回暗号化します。1回は各顧客キーで、もう1回は可用性キーを使用しています。 暗号化されたバージョンの DEP キーのみが保存され、DEP キーは顧客キーまたは可用性キーを使用してのみ復号化できます。 次に、DEP キーはメールボックスキーを暗号化するために使用され、それを使用して個々のメールボックスを暗号化します。
+顧客キーを使用して DEP を作成すると、Office 365 はその DEP に関連付けられているデータ暗号化ポリシーキー (DEP キー) を生成します。 このサービスは、DEP キーを3回暗号化します。1回は各顧客キーで、もう1回は可用性キーを使用しています。 暗号化されたバージョンの DEP キーのみが保存され、DEP キーは顧客キーまたは可用性キーを使用してのみ復号化できます。 次に、DEP キーを使用して、個々のメールボックスを暗号化するメールボックスキーを暗号化します。
   
 Office 365 は、次のプロセスに従って、顧客がサービスを使用しているときにデータの暗号化を解除し、提供します。
   
@@ -171,7 +171,7 @@ Office 365 の自動化されたシステムは、ウイルス対策、電子情
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online と Skype for Business の可用性キーのログ
 
-Exchange Online と Skype for Business では、一時的なエラーが発生したときに可用性キーが自動的に使用されます。 このフォールバックが発生すると、Office 365 は、セキュリティ/コンプライアンスセンターからアクセス可能な顧客の表示ログを公開します。 可用性キー操作の監査ログレコードは、これらのサービスが availability キーを使用して切り替えられるたびに生成されます。 アクティビティの種類が "フォールバックツー可用性キー" の新しいレコードの種類として、管理者が[統合監査ログ](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)の検索結果をフィルター処理して可用性キーレコードを表示することができます。 Availability キーレコードは、顧客キーがデータへのアクセスに使用されている場合にのみ生成され、Microsoft のサービス管理キーに対しては生成されません。
+Exchange Online と Skype for Business では、一時的なエラーが発生したときに可用性キーが自動的に使用されます。 このフォールバックが発生すると、Office 365 は、セキュリティ/コンプライアンスセンターからアクセス可能な顧客の表示ログを公開します。 可用性キー操作の監査ログレコードは、これらのサービスが可用性キーを使用するたびに生成されます。 アクティビティの種類が "フォールバックツー可用性キー" の新しいレコードの種類として、管理者が[統合監査ログ](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)の検索結果をフィルター処理して可用性キーレコードを表示することができます。 Availability キーレコードは、顧客キーがデータへのアクセスに使用されている場合にのみ生成され、Microsoft のサービス管理キーに対しては生成されません。
 
 ログレコードには、日付、時刻、アクティビティ、組織 ID、データ暗号化ポリシー ID などの属性が含まれます。 レコードは Office 365 の統合監査ログの一部として利用でき、Office 365 の [セキュリティとコンプライアンスセンターの監査ログの検索] タブからアクセスできます。
 

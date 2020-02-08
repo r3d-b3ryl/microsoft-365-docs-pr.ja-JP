@@ -1,5 +1,7 @@
 ---
 title: 機密情報の種類をカスタマイズまたは新規作成する
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -18,12 +20,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: GDPR のための Office 365 の機密情報の種類を変更または新規作成する方法について説明します。
-ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708156"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595484"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>機密情報の種類をカスタマイズまたは新規作成する
 
@@ -141,9 +143,9 @@ ms.locfileid: "38708156"
 
 KQL を使ったクエリの生成と最適化を行うために使うリソース:
 
--   [キーワード クエリ言語 (KQL) 構文のリファレンス (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [キーワード クエリ言語 (KQL) 構文のリファレンス (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [コンテンツ検索を実行する](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+- [コンテンツ検索を実行する](content-search.md)
 
 コンテンツ検索では、KQL クエリと機密情報の種類を開発するのに役立つ他のリソースとしてキーワードを使用できます。キーワードのリストを使用する理由は、各キーワードに一致する項目の数を示す統計を得ることができるからです。これにより、最も効果的 (および不適切) なキーワードをすばやく識別することができます。検索統計の詳細については、「[コンテンツ検索結果のキーワード統計の表示](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)」を参照してください。
 

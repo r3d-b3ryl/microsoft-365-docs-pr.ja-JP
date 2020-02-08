@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8d4fc749faa340ceaca76983df03ccbc48c3126a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4aae95778a829203dc8d34fe1882528cf866b913
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601904"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851804"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -97,6 +97,10 @@ NIST CSF 認定のスコープ内サービスには、Exchange Online のアー�
 
 Microsoft は、その他のクラウドサービスプロバイダーと比較して、最も包括的な製品を提供しています。 地域や業界にわたる幅広いコンプライアンスサービスに対応するために、市場需要、お客様からのフィードバック、製品のライフサイクルに基づく保証作業の範囲にサービスを含めます。 特定のコンプライアンスオファリングの現在のスコープにサービスが含まれていない場合、お客様の組織は、コンプライアンスの義務に基づいてリスクを評価し、そのサービスでデータを処理する方法を決定する責任を負っています。 お客様からのフィードバックを継続的に収集し、規制や監査担当者と協力してコンプライアンスを拡大し、セキュリティおよびコンプライアンスのニーズを満たすことができます。
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+
+[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[NIST CSF テンプレート](https://go.microsoft.com/fwlink/?linkid=2117917)を使用して、組織がこの規制の要件を満たすのを支援します。
+
 ## <a name="resources"></a>リソース
 
 - [Microsoft クラウドサービスの承認](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
@@ -105,7 +109,7 @@ Microsoft は、その他のクラウドサービスプロバイダーと比較�
 - [連邦ネットワークおよび重要なインフラストラクチャの Cybersecurity を強化する Presidential Executive の注文](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 

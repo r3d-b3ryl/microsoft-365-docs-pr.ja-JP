@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 Enterprise 展開コンテンツの変更
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/18/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の展開ガイドの新しいコンテンツおよびコンテンツの変更を参照してください。
-ms.openlocfilehash: 680b42c255053338d401e53b75ab7471a064c44d
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 73ce204352af92e1380b57b9a58e04323fb7a987
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111977"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855462"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
 
@@ -30,7 +32,6 @@ ms.locfileid: "41111977"
 
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび拡張機能
 
-- 機密度ラベルを使用するための [SharePoint Online のサイトとファイルをセキュリティで保護する](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)
 -  一連の[テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)の更新 
 
 ## <a name="november-2019"></a>2019 年 11 月

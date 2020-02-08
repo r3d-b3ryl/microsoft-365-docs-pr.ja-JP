@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628093"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851894"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保険の携行性と責任 (HIPAA) & のヒット処理機能
 
@@ -62,7 +62,7 @@ HIPAA と Microsoft Cloud でのエコーの利点について説明します。
 - Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
 - Intune
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI cloud service をスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
 - Azure DevOps Services
 
@@ -78,7 +78,7 @@ Azure のセキュリティとコンプライアンスに関するブループ�
 
 Microsoft は、Microsoft のサービスを対象範囲とする、資格のある企業またはそのサプライヤーを BAA に提供しています。
 
-Microsoft クラウドサービスの場合: [hipaa 法人関連付け契約](https://aka.ms/BAA)は、オンラインサービスの利用規約に既定で提供されています。 この BAA で扱われているクラウドサービスの一覧については、この web ページの「Microsoft scope cloud services」を参照してください。
+Microsoft クラウドサービスの場合: [hipaa 法人関連付け契約](https://aka.ms/BAA)は、オンラインサービスの利用規約に既定で提供されています。 この BAA で扱われているクラウドサービスの一覧については、この web ページにある「Microsoft のスコープのクラウドサービス」を参照してください。
 
 Microsoft プロフェッショナルサービスサービスの場合: HIPAA Business アソシエイトへの修正は、Microsoft サービス担当者への要求に応じて、Microsoft プロフェッショナルサービスを対象範囲として提供されています。
 
@@ -102,6 +102,10 @@ Microsoft サービスはすべてのお客様にとって一貫しており、�
 - [Microsoft Azure を使用してセキュリティで保護された正常性ソリューションを設計するための実践的なガイド](https://aka.ms/azureindustrysecurity)。クラウドサービスを安全な方法で適切に導入するために必要なことを理解するのに役立つ情報を示します。
 - [Microsoft クラウドでの HIPAA のセキュリティとプライバシーの要件への対応に](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)は、規制要件の概要が記載されています。 また、これらの要件に対応する方法論を使用して Microsoft のクラウドサービスがどのように構築されたかについての詳細な分析と、コンプライアンス対応のソリューションを構築する方法のガイダンスを提供します。
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+
+[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[hipaa Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2118005)と[hipaa Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118006)を使用して、組織がこの規制の要件を満たすことができるようにします。
+
 ## <a name="resources"></a>リソース
 
 - [Hipaa Omnibus ルール](https://aka.ms/HIPAA-omnibus)(最終規則の変更、hipaa ルールの変更)
@@ -110,7 +114,7 @@ Microsoft サービスはすべてのお客様にとって一貫しており、�
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Azure に関する HIPAA 準拠について](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(2016 年5月19日)
 - [Azure HIPAA 実装のガイダンス](https://aka.ms/azure-hipaa-guide)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 

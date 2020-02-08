@@ -1,5 +1,7 @@
 ---
 title: Office 365 のコンテンツ検索
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Yammer グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558404"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595724"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 

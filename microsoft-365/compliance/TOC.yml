@@ -695,12 +695,14 @@
   items:
     - name: 監査ログの検索
       href: search-the-audit-log-in-security-and-compliance.md
-    - name: 通知ポリシーを管理する
-      href: alert-policies.md
+    - name: 詳細な監査
+      href: advanced-audit.md
     - name: 監査ログ検索を有効または無効にする
       href: turn-audit-log-search-on-or-off.md
     - name: メールボックスの監査を管理する
       href: enable-mailbox-auditing.md
+    - name: 監査ログの保持ポリシーを管理する
+      href: audit-log-retention-policies.md
     - name: 監査ログの詳細なプロパティ
       href: detailed-properties-in-the-office-365-audit-log.md
     - name: 監査ログ レコードをエクスポート、構成、表示する
@@ -711,6 +713,8 @@
       href: use-sharing-auditing.md
     - name: 監査ログで電子情報開示アクティビティを検索する
       href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: 通知ポリシーを管理する
+      href: alert-policies.md
 - name: コンプライアンス リスクの管理
   items:
     - name: Microsoft Service Trust Portal

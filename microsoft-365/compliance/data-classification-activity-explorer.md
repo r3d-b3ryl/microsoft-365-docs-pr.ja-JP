@@ -1,5 +1,7 @@
 ---
 title: データ分類アクティビティ エクスプローラーを使用する
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: ab80de0e1be3a164da8414ef3791fb9717bcc190
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233698"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595474"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>ラベル付きコンテンツのアクティビティを表示する (プレビュー)
 
@@ -47,7 +49,6 @@ ms.locfileid: "41233698"
 - Office 365 (E5)
 - 高度なコンプライアンス (E5) アドオン
 - 高度な脅威インテリジェンス (E5) アドオン
-- Advanced Threat Protection (E5) アドオン
 
 ## <a name="activity-type"></a>アクティビティの種類
 

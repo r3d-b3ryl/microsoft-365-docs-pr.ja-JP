@@ -1,10 +1,12 @@
 ---
-title: GDPR および CCPA のための Azure データ主体の要求
+title: GDPR および CCPA のための Azure データ主体要求
 description: ''
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,20 +15,21 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 73139f0ab67f728ecb55874bb92d9cc874b60408
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d54867ad5a469fb429d3edbe012aab9288d76e0f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268582"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594346"
 ---
-# <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Azure データ主体の要求
+# <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Azure データ主体要求
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>データ主体要求 (DSR) の概要
 
-EU [データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) では、ユーザー (規則では*データ サブジェクト*と呼ばれる) に対して、雇用主やその他の会社または組織 (*データ コントローラー*または単に*コントローラー*と呼ばれる) が収集した個人データを管理する権利を与えます。GDPR の下で個人データは広範な定義がなされ、識別された、または識別可能な自然人と関連するあらゆるデータのことです。GDPR は個人データに対するデータ サブジェクト固有の権利を与えます。この権利には、個人データのコピーの取得、修正の要求、処理の制限、削除、または、別のコントローラーに移動できるようにするための電子形式での受信が含まれます。データ サブジェクトからコントローラーに個人データへのアクション実行を求める正式な要求は、*データ サブジェクト要求* (DSR) と呼ばれます。
+欧州連合の[一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) は、雇用主または他の種類の機関や組織 (*データ コントローラー*または単に*コントローラー*と呼ばれます) によって収集された個人データを管理する権限を個人 (同規則にでは*データ主体*と呼ばれます) に与えます。GDPR での個人データは、特定されたまたは特定可能な自然人に関連するすべてのデータと、非常に幅広く定義されています。GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。データ 主体からコントローラーに個人データへのアクション実行を求める正式な要求は、*データ主体要求*または DSR と呼ばれます。
 
-同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) の権利などの GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。 また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、カリフォルニア州の消費者に対するプライバシーの権利および義務を規定しており、個人情報を削除する権利や個人情報へのアクセスと受け取りの権利 (ポータビリティ) など、同法には GDPR のデータ主体の権利に類似した権利が含まれています。 また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
 
 このガイドでは、DSR への対応として個人データを見つけて処理するコントローラーのお客様を支援する目的で、Microsoft の製品、サービス、管理ツールをどのように使用できるかを説明します。特に、Microsoft クラウドにある個人データを検出、アクセス、処理する方法を示します。このガイドで説明するプロセスの概要は次のとおりです:
 
@@ -90,7 +93,7 @@ DSR に対応する最初の手順は、要求の件名の個人データを見�
 
 1. ディレクトリのグローバル管理者であるアカウントを使用して [Azure Portal](https://portal.azure.com/) にサインインします。
 
-2. **Azure Active Directory** を選択します。
+2. [**Azure Active Directory**] を選択します。
 
      ![[すべてのサービス] を選択します](media/gdpr-azure-dsr-azure-portal.png)
 
@@ -102,7 +105,7 @@ DSR に対応する最初の手順は、要求の件名の個人データを見�
 
     ![プロファイルを選択します](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. ユーザー プロファイル情報を追加または変更する必要がある場合は、コマンド バーの **[編集]** を選択し、追加または変更した後、**[保存]** を選択します。 
+5. ユーザー プロファイル情報を追加または変更する必要がある場合は、コマンド バーの [**編集**] を選択し、追加または変更を行った後に、[**保存**] を選択します。 
 
 #### <a name="service-specific-interfaces"></a>サービス固有のインターフェイス
 
@@ -138,7 +141,7 @@ DSR 対応の対象となる可能性のある個人データを含む顧客デ�
 
 1. ディレクトリのグローバル管理者であるアカウントを使用して [Azure Portal](https://portal.azure.com/) にサインインします。
 
-2. **Azure Active Directory** を選択します。
+2. [**Azure Active Directory**] を選択します。
 
     ![[すべてのサービス] を選択します](media/gdpr-azure-dsr-azure-portal.png)
 
@@ -146,11 +149,11 @@ DSR 対応の対象となる可能性のある個人データを含む顧客デ�
 
     ![ユーザーを選択します](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. [**すべてのユーザー**] ブレードで、リストからユーザーを選択し、そのユーザーのブレードの [**プロファイル**] を選択すると、修正または更新が必要なユーザー プロファイル情報が表示されます。
+4. [**すべてのユーザー**] ブレードで、リストからユーザーを選択し、そのユーザーのブレードの [**プロファイル**] を選択して修正または更新が必要なユーザー プロファイル情報を表示します。
 
     ![プロファイルを選択します](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. 勤務先情報を含むユーザー プロファイル情報を修正または更新する場合は、コマンド バーの **[編集]** を選択し、修正または更新した後、 **[保存]** を選択します。 
+5. コマンド バーの [**編集**] を選択して勤務先情報を含むユーザー プロファイル情報を修正または更新し、更新が完了したら [ **保存**] を選択します。 
 
     ![プロファイルを選択します](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
@@ -185,9 +188,9 @@ DSR 対応の対象となる可能性のある個人データを含む顧客デ�
 
 ###### <a name="to-delete-a-user-from-an-azure-tenant"></a>Azure テナントからユーザーを削除するには
 
-1. ディレクトリのグローバル管理者であるアカウントを使用して [Azure Portal](https://portal.azure.com/) にサインインします。
+1. ディレクトリのグローバル管理者のアカウントを使用して [Azure Portal](https://portal.azure.com/) にサインインします。
 
-2. **Azure Active Directory** を選択します。
+2. [**Azure Active Directory**] を選択します。
 
     ![[すべてのサービス] を選択します](media/gdpr-azure-dsr-azure-portal.png)
 
@@ -199,11 +202,11 @@ DSR 対応の対象となる可能性のある個人データを含む顧客デ�
 
     ![ユーザーの管理](media/gdpr-azure-dsr-azure-selected-user.png)
 
-5.  **[すべてのユーザー]** ブレードで、 **[削除済みユーザー]** を選択します。
+5. [ **すべてのユーザー**]  ブレードで、[ **削除済みユーザー**] を選択します。
 
     ![ユーザー プロファイルを表示します](media/gdpr-azure-dsr-azure-deleted-user.png)
 
-4. 同じユーザーを再び選択し、コマンド バーで **[完全に削除する]** を選択して、確認を求めるボックスで **[はい]** を選択します。
+4. 同じユーザーを再び選択し、コマンド バーで　[ **完全に削除する**] を選択して、確認を求めるボックスで [ **はい**]  を選択します。
 
 >[!IMPORTANT]  
 >**[はい]** をクリックすると、ユーザーおよび関連するすべてのデータとシステム生成ログが完全に削除され、この操作を元に戻せないことに注意してください。間違ってこの操作を行った場合、手動でユーザーをテナントに再び追加する必要があります。関連するデータとシステム生成ログは回復不能です。

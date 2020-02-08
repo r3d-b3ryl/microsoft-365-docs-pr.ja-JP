@@ -1,5 +1,7 @@
 ---
 title: データ損失防止の概要
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,15 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8d87367f86d3fd0f9ec5aab19ccd191a1cd20f17
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806620"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595424"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
+<!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
 > 最近、Office 365 Advanced Compliance のライセンスを取得しているユーザー向けに、データ損失防止機能が Microsoft Teams のチャットとチャネルのメッセージに追加されました。これはスタンドアロンのオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0448082ce6dcbcd9d1cee52557a78b2d7913a034
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588357"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862077"
 ---
 # <a name="export-documents-from-a-review-set"></a>レビュー セットからドキュメントをエクスポートする
 
@@ -45,7 +45,7 @@ ms.locfileid: "41588357"
 
 ### <a name="metadata-file"></a>メタデータファイル
 
-これは、エクスポートしたファイルに関連付けられているメタデータを含む "load file" と考えることができます。 メタデータファイルで使用可能なフィールドの一覧につい\[て\]は、「link」を参照してください。 このファイルは、通常、下位の<sup>サードパーティ製</sup>のツールによって取り込まれたすることができます。
+これは、エクスポートするファイルに関連付けられたメタデータを含む "load file" と考えることができます。 メタデータファイルで使用できるエクスポートフィールドの一覧については、「 [Advanced 電子情報開示のドキュメントメタデータフィールド](document-metadata-fields-in-Advanced-eDiscovery.md)」を参照してください。 このファイルは、通常、サードパーティ製のツールによって取り込まれたできます。
 
 ### <a name="tag-data"></a>タグデータ
 
@@ -53,11 +53,11 @@ ms.locfileid: "41588357"
 
 ### <a name="text-files"></a>テキスト ファイル
 
-レビューセットからエクスポートされたファイルごとに、テキストファイルを生成できます。 多くの場合、これらのファイルは、取り込むデータの一部としてサービスパートナーによって、ダウンストリームで3人の<sup>サードパーティ製</sup>ツールに必要になります。
+レビューセットからエクスポートされたファイルごとに、テキストファイルを生成できます。 これらのファイルは、多くの場合、サービスパートナーが取り込むデータの一部としてサードパーティ製ツールに必要とする場合があります。
 
 ### <a name="redacted-files"></a>がファイル
 
-レビュー中にが Pdf が生成された場合、これらのファイルはエクスポート中に利用できます。 ユーザーは、ネイティブファイルのみをエクスポートするか、または redactions を持つ natives を Pdf で焼き付けられるものに置き換えるかを決定できます。
+レビュー中にが PDF ファイルが生成された場合、これらのファイルはエクスポート中に利用できます。 ネイティブファイルのみをエクスポートするか、または校正を必要とするネイティブファイルを、実際の redactions を含む PDF ファイルに置き換えるかを決定できます。
 
 ### <a name="export-location"></a>エクスポート場所
 

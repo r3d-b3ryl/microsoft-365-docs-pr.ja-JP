@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601894"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851784"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -40,7 +40,7 @@ Kratos Secureinfo および Coalfire を認定したサードパーティの評�
 
 NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が使用する標準です。 付録 D: NIST SP 800 –171は、自分の CUI セキュリティ要件を、NIST SP 800-53 の関連するセキュリティコントロールに直接マッピングします。これは、スコープ内のクラウドサービスが既に評価され、FedRAMP プログラムで承認されています。
 
-米国政府機関を処理または保存するエンティティ (研究機関、コンサルティング会社、製造請負業者) は、NIST SP 800 –171の厳格な要件に準拠している必要があります。 この構成証明とは、microsoft が完全に準拠していることを保証するために CUI ワークロードの展開を検討しているお客様に対して、Microsoft のスコープを持つクラウドサービスが可能になります。 たとえば、情報システムの Microsoft クラウドサービスをスコープ内で使用することによって、「対象となる防衛情報」を処理、保存、または送信するすべての DoD 請負業者は、セキュリティに準拠する必要がある米国国防総省の各主要な条項を満たしています。NIST SP 800 –171の要件。
+米国政府機関を処理または保存するエンティティ (研究機関、コンサルティング会社、製造請負業者) は、NIST SP 800 –171の厳格な要件に準拠している必要があります。 この構成証明とは、microsoft が完全に準拠していることを保証するために CUI ワークロードの展開を検討しているお客様に対して、Microsoft のスコープを持つクラウドサービスが可能になります。 たとえば、情報システムの Microsoft クラウドサービスをスコープ内で使用することによって、「対象となる防衛情報」を処理、保存、または転送するすべての DoD 請負業者は、セキュリティに準拠する必要がある米国国防総省の各主要な条件を満たしています。NIST SP 800 –171の要件。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -62,6 +62,10 @@ NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が
 **NIST SP 800 –171を使用して、組織の Microsoft コンプライアンスを使用できますか?**
 
 はい。 Microsoft のお客様は、独自の FedRAMP の一部としての、独立したサードパーティの評価組織 (3PAO) からのレポートで説明されている監査された統制を使用できます。 これらのレポートは、Microsoft がスコープ内のクラウドサービスで実装した統制の有効性を証明します。 お客様は、CUI ワークロードが NIST SP 800 –171ガイドラインに準拠していることを確認する責任があります。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+
+[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[NIST 800-171 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117526)を使用して、組織がこの規制の要件を満たすことができるようにします。
 
 ## <a name="resources"></a>リソース
 
