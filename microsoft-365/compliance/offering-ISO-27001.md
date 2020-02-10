@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d88ef57ea9340d95073db7f5ddd4423d5275c840
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef99b36737627a9ea457e7d4235b42241f34248b
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602254"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851814"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 情報セキュリティ管理基準
 
@@ -141,6 +141,10 @@ ISO/IEC 27001 を適用することは戦略的なコミットです。 まず�
 **Microsoft サービスの ISO/IEC 27001 コンプライアンスを私の組織の認定に利用できますか?**
 
 はい。 ビジネスに必要なのが、Microsoft サービスでデプロイされている実装の ISO/IEC 27001 認定である場合は、該当する認定をコンプライアンス評価で利用できます。 ただし、ご自身の責任で、査定人が、組織内での制御やプロセスと ISO/IEC 27001 コンプライアンスの実装を評価するよう、手配する必要があります。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコア 2の設定](compliance-score-setup.md)後、事前に構成された [ISO 27001 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117914)を使用してこの規制の要件を満たすようにします。
 
 ## <a name="resources"></a>リソース
 

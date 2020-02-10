@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5cd89e0f31d650e85de20b40e3870de0ef8c7cc3
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601914"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851834"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 プライバシー情報管理システム (PIMS)
 
@@ -39,7 +39,7 @@ PIMS に対する認定をベンダーに期待することは、組織の規模
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>扱う規制要件が多すぎる
 
-ISO/IEC 27701 には、コントローラーおよびプロセッサーに関する GDPR の関連要件に対応する規格の運用管理を含む付録が含まれています。 この対応は、ISO フレームワークを使用してプライバシー規制を運用する方法の一例にすぎません。 他の規制との追加対応が利用可能になり、検証されると、規格の運用管理を規制のレビューから実装に直接移行できます。 この汎用フレームワークにより、組織は “車輪を再発明” することなく、関連する規制要件を確実に運用できます。 プライバシー コミュニティが他の規制への対応をまとめ、既存の対応を検証できるようにする保留中のオープンソース プロジェクトが進行中です。 お知らせを常にご確認ください。
+ISO/IEC 27701 には、コントローラーおよびプロセッサーに関する GDPR の関連要件に対応する規格の運用管理を含む付録が含まれています。 この対応は、ISO フレームワークを使用してプライバシー規制を運用する方法の一例にすぎません。 他の規制との追加対応が利用可能になり、検証されると、規格の運用管理を規制のレビューから実装に直接移行できます。 この汎用フレームワークにより、組織は「車輪を再発明」することなく、関連する規制要件を確実に運用できます。 プライバシー コミュニティが他の規制への対応をまとめ、既存の対応を検証できるようにする保留中のオープンソース プロジェクトが進行中です。 お知らせを常にご確認ください。
 
 ## <a name="too-costly-to-audit-regulation-by-regulation"></a>規制ごとの監査をするには費用がかかりすぎる
 
@@ -71,6 +71,10 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 
 - [Azure ISO/IEC 27701 認定資格](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 - [Azure ISO/IEC 27701 評価レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコア 2の設定](compliance-score-setup.md)後、事前に構成された [ISO 27701 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117915)を使用してこの規制の要件を満たすようにします。
 
 ## <a name="resources"></a>リソース
 

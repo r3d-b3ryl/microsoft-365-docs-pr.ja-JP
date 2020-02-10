@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 016d0f9fdd0795ea709f168a0fc8ba027f029e8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602234"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851874"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>クラウドで個人データを保護するための ISO/IEC 27018 実施基準
 
@@ -102,12 +102,12 @@ Microsoft クラウド サービスおよび法人向けテクニカル サポ�
 
 この実施基準は、他の組織のために PII 処理契約を結んでいる CSP に適用されます。 また、Microsoft では、これは CSP のサポートにも適用されます。
 
-**"個人情報管理者" と "個人情報処理者" はどう違うのですか?**
+**「個人情報管理者」と「個人情報処理者」はどう違うのですか?**
 
 ISO/IEC 27018 のコンテキストでは、次のような違いがあります。
 
-- "管理者" は、個人情報の収集、保持、処理、または使用を管理します。他の企業に代わって個人情報を管理する管理担当者も含まれます。
-- "処理者" は、管理者に代わって情報を処理します。情報の使用方法または処理の目的に関する決定を下すことはありません。 ユーザーのベンダーである Microsoft は、エンタープライズ クラウド サービスを提供する際に、情報処理者の役割を果たします。
+- 「管理者」は、個人情報の収集、保持、処理、または使用を管理します。他の企業に代わって個人情報を管理する管理担当者も含まれます。
+- 「処理者」は、管理者に代わって情報を処理します。情報の使用方法または処理の目的に関する決定を下すことはありません。 ユーザーのベンダーである Microsoft は、エンタープライズ クラウド サービスを提供する際に、情報処理者の役割を果たします。
 
 **Microsoft の ISO/IEC 27018 コンプライアンス情報はどこで確認できますか?**
 
@@ -120,6 +120,10 @@ ISO/IEC 27018 のコンテキストでは、次のような違いがあります
 はい。 Microsoft の適用エンタープライズ クラウド サービスのいずれかにデプロイされている実装と、ビジネスで ISO/IEC 27018 に準拠していることが重要である場合、Microsoft の ISO/IEC 27001 認定と Microsoft の ISO/IEC 27018 コンプライアンス証明をコンプライアンス評価で利用できます。
 
 ただし、コンプライアンスや、組織内の統制およびプロセスに関して、実装を評価する査定人の手配の責任は、審査を受ける組織が負うものとします。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコア 2の設定](compliance-score-setup.md)後、事前に構成された [ISO 27018 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117523)を使用してこの規制の要件を満たすようにします。
 
 ## <a name="resources"></a>リソース
 

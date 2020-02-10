@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exact Data Match に基づく分類を使って、カスタムの機密情報の種類を作成します。
-ms.openlocfilehash: 4f3fecc664850a2f766336040cbf559e1579c552
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596174"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836727"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -74,10 +74,12 @@ EDM ベースの分類をセットアップおよび構成するには、機密�
 
 2. EDM ベースの分類に使用されるフィールドの名前が 1 行目に含まれるように、.csv ファイル内の機密データを構成します。 .csv ファイルには、"ssn"、"birthdate"、"firstname"、"lastname" などのフィールド名があります。 たとえば、使用する .csv ファイルの名前を  *PatientRecords.csv*、列には  *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN*  などを含めます。
 
-3. 機密情報のデータベースのスキーマを .xml 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を付けて、データベースの各列に対して構文 \<Field name="" searchable=""/\> を使用する行があるように構成します。
+3. 機密情報のデータベースのスキーマを .xml 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を  **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。 
 
-      -  *Field name*  の値に列名を使用します。
-      -  *searchable="true"*  を使用して、最大 5 つのフィールドで検索可能にします。 少なくとも 1 つのフィールドを検索可能に指定する必要があります。
+`\<Field name="" searchable=""/\>`
+
+-  *Field name*  の値に列名を使用します。
+-  *searchable="true"*  を使用して、最大 5 つのフィールドで検索可能にします。 少なくとも 1 つのフィールドを検索可能に指定する必要があります。
 
 たとえば、次の .xml ファイルは患者の記録のデータベースのスキーマを定義します。検索可能として指定された 5 つのフィールドは、 *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB* です。
 
@@ -128,9 +130,9 @@ New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>EDM ベースの分類のスキーマを編集する
 
-EDM ベースの分類に使用するフィールドの変更など、edm.xml ファイルを変更する場合は、次の手順に従います:
+EDM ベースの分類に使用するフィールドの変更など、**edm.xml** ファイルを変更する場合は、次の手順に従います:
 
-1. edm.mxl ファイルを編集します (これは、この記事の「 [スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information) 」セクションで説明したファイルです)。
+1. **edm.mxl** ファイルを編集します (これは、この記事の「 [スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information) 」セクションで説明したファイルです)。
 
 2. [Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
@@ -186,7 +188,7 @@ Remove-DlpEdmSchema -Identity patientrecords
 
 1. 次の例のように、.xml 形式 (Unicode エンコード) でルール パッケージを作成します。 (この例は、コピー、変更、使用することができます。)
 
-ルール パッケージをセットアップするときに、.csv ファイルと edm .xml ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
+ルール パッケージをセットアップするときに、.csv ファイルと **edm .xml** ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
 
 - **RulePack id & ExactMatch id**:  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  を使用して GUID を作成します。
 
@@ -251,7 +253,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 この時点で、EDM ベースの分類がセットアップされています。 次の手順では、機密データにインデックスを付け、インデックス付きのデータをアップロードします。
 
-前の手順から PatientRecords スキーマが次の 5 つのフィールドを検索可能として定義していることに注意してください:  *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB*。 ルール パッケージの例には、これらのフィールドが含まれ、検索可能なフィールドごとに 1 つの  *ExactMatch*  アイテムを含むデータベース スキーマ ファイル (edm.xml) を参照します。 次の ExactMatch アイテムを検討してください。
+前の手順から PatientRecords スキーマが次の 5 つのフィールドを検索可能として定義していることに注意してください:  *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB*。 ルール パッケージの例には、これらのフィールドが含まれ、検索可能なフィールドごとに 1 つの  *ExactMatch*  アイテムを含むデータベース スキーマ ファイル (**edm.xml**) を参照します。 次の ExactMatch アイテムを検討してください。
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -289,18 +291,18 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
-1. 全体管理者として、管理センター ([https://admin.microsoft.com](https://admin.microsoft.com/)) へ移動し、EDM \_DataUploaders という  [セキュリティー グループを作成](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)  します。
+1. 全体管理者として、管理センター ([https://admin.microsoft.com](https://admin.microsoft.com/)) へ移動し、 **EDM\_DataUploaders** という [セキュリティー グループを作成](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)  します。
 
-2.  *EDM\_DataUploaders*  セキュリティ グループに、1 人以上のユーザーを追加します。 (これらのユーザーは機密情報のデータベースを管理します)。
+2.  **EDM\_DataUploaders**  セキュリティ グループに、1 人以上のユーザーを追加します。 (これらのユーザーは機密情報のデータベースを管理します)。
 
 3. 機密データを管理している各ユーザーが、EDM アップロード エージェントに使用されるコンピューターのローカル管理者であることを確認してください。
 
 #### <a name="set-up-the-edm-upload-agent"></a>EDM アップロード エージェントをセットアップする
 
 >[!NOTE]
-> この手順を開始する前に、自分が  *EDM\_DataUploaders*  セキュリティ グループのメンバーであり、コンピューターのローカル管理者であることを確認します。
+> この手順を開始する前に、自分が  **EDM\_DataUploaders**  セキュリティ グループのメンバーであり、コンピューターのローカル管理者であることを確認します。
 
-1. [EDM アップロード エージェント](https://go.microsoft.com/fwlink/?linkid=2088639)をダウンロードしてインストールします。 既定では、インストール場所は、[C:\\Program Files\\Microsoft\\EdmUploadAgent] になります。
+1. [EDM アップロード エージェント](https://go.microsoft.com/fwlink/?linkid=2088639)をダウンロードしてインストールします。 既定では、インストール場所は、[ **C:\\Program Files\\Microsoft\\EdmUploadAgent**] になります。
 
 > [!TIP]
 > サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
@@ -315,7 +317,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 #### <a name="index-and-upload-the-sensitive-data"></a>機密データのインデックスを作成しアップロードする
 
-機密データ ファイル (この例では  *PatientRecords.csv*) をコンピューターのローカル ドライブに保存します。 (例の  *PatientRecords.csv* file を C:\\Edm\\データに保存しました)。
+機密データ ファイル (この例では  **PatientRecords.csv**) をコンピューターのローカル ドライブに保存します。 (例の  **PatientRecords.csv**  ファイルを  **C:\\Edm\\Data** に保存しました。)
 
 機密データにインデックスを付けてアップロートするには、Windows コマンド プロンプトで次のコマンドを実行します。
 
@@ -329,13 +331,17 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-例: **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+次に例を示します。
+
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
 インデックス付きのデータをアップロードするには、Windows コマンド プロンプトで次のコマンドを実行します。
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-例: **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+次に例を示します。 
+
+> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 機密データがアップロードされたことを確認するには、Windows コマンド プロンプトで次のコマンドを実行します。
 

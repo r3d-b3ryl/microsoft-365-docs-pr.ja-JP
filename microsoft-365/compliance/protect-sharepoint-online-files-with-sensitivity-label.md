@@ -1,5 +1,7 @@
 ---
 title: 機密度ラベルで SharePoint Online ファイルを保護する
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
-ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 7b43ee5bcc3193da398359a155e2daeac2d06a85
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668805"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830971"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>機密度ラベルで SharePoint Online ファイルを保護する
 
@@ -34,7 +36,7 @@ ms.locfileid: "39668805"
 SharePoint Online 内のファイルに機密度ラベルを使用することは、すべてのお客様に推奨されるものではなく、ファイルの一部に対してこの保護レベルを必要としているお客様向けのオプションです。
 
 このソリューションに関する重要な注意点がいくつかあります:
-- 暗号化が Office 365 に保存されているファイルに適用されている場合、このサービスはこれらのファイルのコンテンツを処理することはできません。 共同編集、電子情報開示、検索、Delve、その他の共同作業機能は機能しません。 データ損失防止 (DLP) ポリシーはメタデータ (Office 365 ラベルを含む) でのみ機能し、これらのファイルのコンテンツ (ファイル内のクレジットカード番号など) には機能しません。
+- 組織が[ SharePoint および OneDrive の Office ファイルに対する機密ラベルを有効にしていない場合 (パブリック プレビュー)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): 暗号化が Office 365 に保存されているファイルに適用されている場合、このサービスはこれらのファイルのコンテンツを処理することはできません。 共同編集、電子情報開示、検索、Delve、その他の共同作業機能は機能しません。 データ損失防止 (DLP) ポリシーはメタデータ (Office 365 ラベルを含む) でのみ機能し、これらのファイルのコンテンツ (ファイル内のクレジットカード番号など) には機能しません。
 
 - このソリューションでは、ユーザーは保護を適用するラベルを選択する必要があります。 自動暗号化と SharePoint がファイルにインデックスを付け検査する機能を要求するには、SharePoint Online で Information Rights Management (IRM) を使用することを検討してください。 IRM の SharePoint ライブラリを構成する場合、ファイルが編集のためにダウンロードされるときに、自動的に暗号化されます。  SharePoint IRM には、決定に影響を与える可能性のある制限が含まれます。 詳細については、「[SharePoint 管理センターにおける Information Rights Management (IRM) の設定](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)」を参照してください。
 
