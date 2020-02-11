@@ -172,14 +172,21 @@
             - name: スパム対策とマルウェア対策の保護
               href: ./office-365-security/anti-spam-and-anti-malware-protection.md
               items:
+                - name: マルウェア対策保護
+                  href: ./office-365-security/anti-malware-protection.md
+                  items:
+                    - name: マルウェア対策保護のよく寄せられる質問
+                      href: ./office-365-security/anti-malware-protection-faq-eop.md
+                    - name: マルウェア対策ポリシーを構成する
+                      href: ./office-365-security/configure-anti-malware-policies.md
+                    - name: マルウェアおよびマルウェアでないファイルを分析のために Microsoft に提出する
+                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                    - name: SharePoint Online のウイルス検出
+                      href: ./office-365-security/virus-detection-in-spo.md
                 - name: 高度なスパム フィルター処理オプション
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
                 - name: 送信メッセージにおける危険度の高い配信プール
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: マルウェア対策保護のよく寄せられる質問
-                  href: ./office-365-security/anti-malware-protection-faq-eop.md
-                - name: マルウェア対策保護
-                  href: ./office-365-security/anti-malware-protection.md
                 - name: スパム対策保護 FAQ
                   href: ./office-365-security/anti-spam-protection-faq.md
                 - name: スパム フィルターのルールとスパム フィルター ポリシーで無効な文字の使用を避ける
@@ -194,8 +201,6 @@
                   href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
                 - name: Office 365 に送信される迷惑メールへの対処
                   href: ./office-365-security/fighting-junk-email.md
-                - name: SharePoint Online のウイルス検出
-                  href: ./office-365-security/virus-detection-in-spo.md
                 - name: Office 365 メールのスパム対策保護
                   href: ./office-365-security/anti-spam-protection.md
                 - name: ポリシーと保護を組み合わせる方法
@@ -214,8 +219,6 @@
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                 - name: バルク メーラーの差出人セーフ リストを管理する
                   href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: マルウェア対策ポリシーを設定する
-                  href: ./office-365-security/configure-anti-malware-policies.md
                 - name: スパム対策ポリシーを設定する
                   href: ./office-365-security/configure-the-anti-spam-policies.md
                 - name: Office 365 でブロックする差出人のリストを作成する
@@ -240,8 +243,6 @@
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Office 365 での管理者による送信
                   href: ./office-365-security/admin-submission.md
-                - name: マルウェアおよびマルウェアでないファイルを分析のために Microsoft に提出する
-                  href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: 無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
                 - name: スパム対策メッセージ ヘッダー
