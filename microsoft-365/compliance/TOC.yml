@@ -79,7 +79,7 @@
       items:
         - name: 秘密度ラベルを作成して発行する
           href: create-sensitivity-labels.md
-        - name: 暗号化を適用するために機密ラベルを使用してコンテンツへのアクセスを制限する
+        - name: 秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
           href: encryption-sensitivity-labels.md
         - name: 機密ラベルをコンテンツに自動適用する
           href: apply-sensitivity-label-automatically.md
@@ -202,6 +202,8 @@
           href: data-classification-content-explorer.md
         - name: ラベル アクティビティを表示する (プレビュー)
           href: data-classification-activity-explorer.md
+        - name: データ分類パブリックプレビューリリースノート (プレビュー)
+          href: data-classification-pub-preview-relnotes.md
         - name: トレーニング可能な分類子の使用を開始する (プレビュー)
           href: classifier-getting-started-with.md
         - name: すぐに使用できる分類子を使用する (プレビュー)
