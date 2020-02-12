@@ -15,30 +15,30 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: 0dd8b54d2c8153b4200336d8c0e439f278f7ae77
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598134"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957252"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
 > [!NOTE]
-> これらの更新プログラムは現在ロールアウトされており、すべてのユーザーに対してまだ使用できない場合があります。 この機能は、エンタープライズ outlook.com ユーザーに対してサポートされています。 現時点では、コンシューマー outlook.com では使用できません。
+> これらの更新プログラムは現在ロールアウトされており、すべてのユーザーが使用できるとは限りません。 この機能は、エンタープライズ Outlook.com およびエンタープライズ Outlook Win32 デスクトップユーザーがサポートされています。 現在、コンシューマーの Office 365 ユーザーは使用できません。
 
-フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
+フィッシングメッセージがメールボックスに到達しないようにするため、Office 365 は、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
 
 > [!IMPORTANT]
-> メッセージがフィッシング詐欺としてマークされている場合、Outlook.com および web 上の Outlook では、ページの上部に警告が表示されますが、メッセージ内のすべてのリンクを開くことができます。
+> メッセージがフィッシング詐欺メールとしてマークされている場合は、ページの上部に警告が表示されますが、メッセージ内のすべてのリンクを開くことができます。
 
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>受信トレイ内の疑わしいメッセージを特定するには、どうすればよいですか。
 
-Web 上の Outlook.com および Outlook on the メッセージの送信者が識別できない場合、または送信者アドレスに表示されているものとは異なる場合のインジケーターを表示します。
+Outlook では、メッセージの送信者が識別できない場合や、id が [差出人アドレスに表示されているものと異なる場合に、インジケーターが表示されます。
 
 ## <a name="you-see-a--in-the-sender-image"></a>送信者の画像に '? ' が表示される
 
-Outlook.com と web 上の Outlook が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者の写真に '? ' が表示されます。
+Office 365 が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者画像に '? ' が表示されます。
 
 ![メッセージが検証に合格しませんでした](../media/message-did-not-pass-verification.jpg)
 
@@ -58,25 +58,29 @@ Office 365 をご利用のお客様の場合は、Office 365 セキュリティ 
 
   - Exchange Online PowerShell で**get-phishfilterpolicy**コマンドレットを使用して、ドメインのペアを追加します。 詳細については、「 [get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) 」および「 [set UP Office 365 ATP フィッシング詐欺防止」および「設定](set-up-anti-phishing-policies.md)」を参照してください。
 
-さらに、メッセージがメールフロールール (トランスポートルールとも呼ばれます)、安全なドメインリスト (スパム対策ポリシー)、または安全な送信者リストによって受信トレイに配信された場合、未検証の送信者の処理は適用されません。
+また、メッセージがメールフロールール (トランスポートルールとも呼ばれる) または安全なドメインリスト (スパム対策ポリシー) によって受信トレイに配信された場合、未検証の送信者の処理は適用されません。
+
+## <a name="how-to-manage-the-via-tag"></a>' Via ' タグを管理する方法 
+
+Office 365 をご利用のお客様の場合は、Office 365 セキュリティ & コンプライアンスセンターを使用してこの機能を管理できます。これは、未検証の送信者の処理を管理する方法と同じです。 スプーフィングのスプーフィング許可リストに送信者を追加した場合、' via ' 処理は適用されません。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Outlook.com と web 上の Outlook で、'? ' および ' via ' プロパティを追加するために使用する条件とは何ですか。
+### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>Outlook.com と Outlook Win32 デスクトップで、'? ' および ' via ' プロパティを追加するために使用する条件とは何ですか。
 
 送信者イメージの '? ' の場合: Outlook.com では、メッセージが SPF 認証または DKIM 認証のいずれかを通過し、dmarc パスを受け取るか、または Office 365 スプーフィングインテリジェンスからのコンポジット認証パスを受け取ることが要求されます。 詳細については、「 [Set UP SPF In office 365](set-up-spf-in-office-365-to-help-prevent-spoofing.md) 」を参照して、スプーフィングを防止し、 [Dkim を使用して office 365 のカスタムドメインから送信される送信電子メールを検証](use-dkim-to-validate-outbound-email.md)します。
 
 Via タグの場合: From アドレスのドメインが DKIM シグネチャまたは SMTP メールのドメインと異なる場合、Outlook.com は、この2つのフィールドのいずれかにドメインを表示します (DKIM シグネチャを優先します)。
 
-### <a name="how-do-i-remove-the-"></a>'? ' を削除する方法
+### <a name="how-do-i-remove-the--without-utilizing-the-spoof-intelligence-spoof-allow-list"></a>スプーフィングインテリジェンススプーフィング許可リストを利用せずに '? ' を削除するには、どうすればよいですか?
 
 送信者の画像の '? ' の場合は、送信者として、SPF または DKIM のいずれかを使用してメッセージを認証する必要があります。
 
 Via タグ: 送信者としての場合は、DKIM 署名のドメインまたは SMTP メールが、From アドレスのドメインと同じかサブドメインのものであることを確認する必要があります。
 
-### <a name="does-outlookcom-and-outlook-on-the-web-show-this-for-every-message-that-doesnt-pass-authentication"></a>Outlook.com と web 上の Outlook は、認証を通過しないすべてのメッセージに対してこのように表示されます。
+### <a name="do-outlookcom-and-outlook-win32-desktop-show-this-for-every-message-that-doesnt-pass-authentication"></a>Do Outlook.com and Outlook Win32 デスクトップ認証を通過しないすべてのメッセージに対してこのメッセージを表示するかどうか。
 
-必ずしもそうではありません。 Outlook.com および web 上の Outlook は、メッセージ内に送信者を認証するためのその他のプロパティがある場合があります。
+必ずしもそうではありません。 Office 365 では、送信者を認証するために、メッセージ内に他のプロパティがある場合があります。
 
 ## <a name="related-topics"></a>関連項目
 
