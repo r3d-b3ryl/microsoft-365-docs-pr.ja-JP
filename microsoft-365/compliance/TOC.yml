@@ -8,7 +8,7 @@
       href: recently-updated-topics-mcc.md
     - name: Microsoft 365 コンプライアンス センター
       href: microsoft-365-compliance-center.md
-    - name: Microsoft 365 ソリューション カタログ (プレビュー)
+    - name: Microsoft 365 ソリューションカタログ
       href: microsoft-365-solution-catalog.md
     - name: セキュリティ/コンプライアンス センターに移動する
       href: go-to-the-securitycompliance-center.md
@@ -202,7 +202,7 @@
           href: data-classification-content-explorer.md
         - name: ラベル アクティビティを表示する (プレビュー)
           href: data-classification-activity-explorer.md
-        - name: データ分類パブリックプレビューリリースノート (プレビュー)
+        - name: データ分類パブリック プレビューのリリース ノート (プレビュー)
           href: data-classification-pub-preview-relnotes.md
         - name: トレーニング可能な分類子の使用を開始する (プレビュー)
           href: classifier-getting-started-with.md
@@ -458,8 +458,6 @@
               href: review-set-search.md
             - name: レビュー セット内のドキュメントをタグ付けする
               href: tagging-documents.md
-            - name: 弁護士/依頼人特権の検出を設定する
-              href: attorney-privilege-detection.md
             - name: レビューセットダッシュボード (プレビュー) を使用する
               href: advanced-ediscovery-dashboard.md
         - name: ケース データを分析する
@@ -500,6 +498,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: ドキュメントのメタデータ フィールド
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: 弁護士/依頼人特権の検出を設定する
+              href: attorney-privilege-detection.md
             - name: 会話レビュー セット
               href: conversation-review-sets.md
             - name: 高度な電子情報開示レポート (プレビュー)
