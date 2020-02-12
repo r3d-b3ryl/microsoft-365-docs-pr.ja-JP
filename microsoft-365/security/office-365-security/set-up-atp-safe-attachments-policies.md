@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 安全な添付ファイルのポリシーを定義して、電子メール内の悪意のあるファイルから組織を保護します。
-ms.openlocfilehash: 6ec78f8734fd655d71d9ce2877baa8ebde2e50ee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598344"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957182"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 の ATP の安全な添付ファイルのポリシーを設定する
 
@@ -43,13 +43,13 @@ ms.locfileid: "41598344"
 
 - 組織に[Office 365 Advanced Threat Protection](office-365-atp.md)があることを確認します。
 
-- 必要なアクセス許可を持っていることを確認してください。 ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。 次の表では、いくつかの例について説明します。
+- 必要なアクセス許可を持っていることを確認してください。 ATP ポリシーを定義 (または編集) するには、Exchange Online 組織の管理役割 (既定では、Office 365 グローバル管理者がこの役割に割り当てられます) または Exchange Online の検疫管理およびセキュリティ管理者の役割のいずれかが割り当てられている必要があります。 詳細については、次の表を参照してください。
 
   |役割|参照先/割り当て方法|
   |---------|---------|
   |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。|
   |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-  |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください)|
+  |Exchange Online 組織の管理、Exchange Online の検疫管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください)|
 
   役割とアクセス許可の詳細については、「[Office 365 セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 

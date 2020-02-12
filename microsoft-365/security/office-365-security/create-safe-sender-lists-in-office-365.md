@@ -14,24 +14,24 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 特定の送信者からのメールを確実に受信できるようにするには、その送信者とメッセージを信頼するため、スパムフィルターポリシーの許可リストを調整することができます。
-ms.openlocfilehash: 4ac97192327cd9ced853ce63537375931f3f0ec3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599534"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957262"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Office 365 で差出人セーフリストを作成する
 
 ユーザーが特定の送信者または送信者からの電子メールを確実に受信できるようにする場合は、複数の方法から選択できます。 これらのオプションには、Exchange メールフロールール (トランスポートルールとも呼ばれます)、Outlook の信頼できる差出人、IP 許可リスト、スパム対策送信者/ドメイン許可リストなどがあります。
 
 > [!IMPORTANT]
-> 組織の許可リストは、誤検知を解決するために使用できますが、これは一時的なソリューションとして考慮され、可能な場合は回避されます。 許可リストを使用して誤検知を管理することは推奨されません。これは、誤ってスプーフィング、偽装、その他の攻撃を受けて組織を開く可能性があるためです。 この目的のために許可リストを使用する場合は、準備が整っている必要があります。また、[スパム、非スパム、フィッシングメールを分析のために Microsoft に送信](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)するための記事を準備しておく必要があります。
+> 組織の許可リストは、誤検知を解決するために使用できますが、これは一時的なソリューションとして考慮され、可能な場合は回避されます。 許可リストを使用して誤検知を管理することは推奨されません。これは、誤ってスプーフィング、偽装、その他の攻撃を受けて組織を開く可能性があるためです。 この目的のために許可リストを使用する場合は、準備が整っている必要があります。また、[スパム、非スパム、フィッシングメールを分析のために Microsoft に送信](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)するための記事を準備しておく必要があります。
 
 安全な送信者リストを構成するために推奨される方法は、メールフロールールを使用して、適切なメッセージのみが許可されるようにするための最も柔軟性を提供することです。 ドメインは簡単にスプーフィングできるため、*スパム対策ポリシーの電子メールアドレス*と*ドメインベースの許可リスト*は、 *IP アドレスベースのリスト*ほど安全ではありません。 ただし、スパム対策ポリシー IP ベースの許可リストは、その IP を経由して送信されるすべてのドメインがスパムフィルタリングをバイパスすることを許可するので、リスクを提示します。 慎重に、発生し*た例外を*監視してください。
 
 > [!IMPORTANT]
-> **受信拒否リスト**を作成する方法については、[こちら](create-block-sender-lists-in-office-365.md)を参照してください。
+> •**受信拒否リスト**を作成する方法については、[こちら](create-block-sender-lists-in-office-365.md)を参照してください。 <br/><br/> •送信者ドメインが認証されていない電子メールを送信できるようにする (スプーフィング防止保護をバイパスします) が、スパム対策およびマルウェア対策のチェックをバイパスしないようにするには、それを[Allowedtospoof safe sender リスト](walkthrough-spoof-intelligence-insight.md)に追加します。
 
 ## <a name="options-from-most-to-least-recommended"></a>推奨されるオプションのうち、最も少ないもの
 
@@ -46,7 +46,7 @@ ms.locfileid: "41599534"
 
 正当なメッセージだけが組織に許可されるようにするには、条件を次のいずれかにする必要があります。
 
-- 送信側ドメインの送信者の認証状態を使用します。 これは、"dmarc = pass" または "dmarc = bestguesspass" が含まれていることを確認するために、認証結果ヘッダーをチェックすることによって行われます。 これにより、送信側ドメインが認証され、スプーフィングされていないことが確認されます。 [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、 [dkim](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、および[DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)電子メール認証の詳細については、をクリックしてください。
+- 送信側ドメインの送信者の認証状態を使用します。 これは、"dmarc = pass" または "dmarc = bestguesspass" が含まれていることを確認するために、認証結果ヘッダーをチェックすることによって行われます。 これにより、送信側ドメインが認証され、スプーフィングされていないことが確認されます。 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [dkim](use-dkim-to-validate-outbound-email.md)、および[DMARC](use-dmarc-to-validate-email.md)電子メール認証の詳細については、をクリックしてください。
 
 - または、送信側ドメインが認証されていない場合は、送信側ドメインと送信元 IP (または IP 範囲 *) を使用*します。 *可能な限り、これ*を可能な限り安全なものにすることを目標にしてください。 /24 より大きい IP 範囲は推奨され*ていません*。 コンシューマーサービスまたは共有インフラストラクチャに属する IP アドレス範囲を追加しないようにします。
 
@@ -87,7 +87,7 @@ ms.locfileid: "41599534"
 
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>スパム対策ポリシーの送信者/ドメイン許可リストを使用する
 
-少なくとも、送信者/ドメインによる承認の方が望ましいオプションです。 このオプションは、スパム/スプーフィング/フィッシング保護を完全にバイパスし、送信者の認証を評価しない*場合に限り*、避ける必要があります。 この方法を使用すると、不適切な俳優からのメールを受信するリスクが高まり、テストの際にのみ、一時的に推奨されるものになります。 詳細な手順については、「[スパムフィルターポリシーの構成](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)」のドキュメントを参照してください。
+少なくとも、送信者/ドメインによる承認の方が望ましいオプションです。 このオプションは、スパム/スプーフィング/フィッシング保護を完全にバイパスし、送信者の認証を評価しない*場合に限り*、避ける必要があります。 この方法を使用すると、不適切な俳優からのメールを受信するリスクが高まり、テストの際にのみ、一時的に推奨されるものになります。 詳細な手順については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 これらのリストの最大数は、約1000エントリです。ただし、ポータルには30個のエントリしか入力できません。 30個を超えるエントリを追加するには、PowerShell を使用する必要があります。
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/10/2020
+ms.date: 02/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用します。
-ms.openlocfilehash: a1db932dda8b49d2d17805e605e11bc654c0e318
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a7ee065447c7351f02d1ff88239b1c41b7e874b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598074"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957382"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -143,6 +143,7 @@ ATP レポートの概要とその使用方法については、この記事を�
 - セキュリティ&amp; /コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
     - 組織の管理
     - セキュリティ管理者 (Azure Active Directory 管理センター[https://aad.portal.azure.com](https://aad.portal.azure.com)で割り当て可能)
+    - Security Operator (Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com)) で割り当てることができます)
     - セキュリティ閲覧者
 
 - Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
@@ -168,5 +169,7 @@ ATP レポートにデータが表示されない場合は、ポリシーが正�
 [セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する](create-a-schedule-for-a-report.md)
   
 [セキュリティ&amp; /コンプライアンスセンターでカスタムレポートを設定およびダウンロードする](set-up-and-download-a-custom-report.md)
+
+[役割のアクセス許可 (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
   
 

@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599454"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957152"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -39,11 +39,13 @@ ms.locfileid: "41599454"
 
 1. Office 365 テナントの [**セキュリティとコンプライアンスセンター** ] を開きます。
 
-2. [**検索 & 調査**] ノードに移動して、[**監査ログ**の検索] を選択します。
+2. [**検索**] に移動して、[**監査ログの検索**] を選択します。
 
-3. 検索を作成し (すべてのアクティビティとすべてのユーザー)、アプリケーションに対する同意のために結果をフィルター処理して、OAuth2PermissionGrant を追加します。
+3. 検索 (すべてのアクティビティとすべてのユーザー)、必要に応じて開始日と終了日を入力し、[**検索**] をクリックします。 
 
-4. 拡張プロパティを調べ、IsAdminContent が True に設定されているかどうかを確認します。
+4. アプリケーションに対する同意のために結果をフィルター処理し、OAuth2PermissionGrant を追加します。
+
+5. 結果をクリックして、アクティビティの詳細を表示します。 [**詳細情報**] をクリックして、アクティビティの詳細を取得します。 IsAdminContent が True に設定されているかどうかを確認します。
 
 > [!NOTE]
 > •対応する監査ログエントリが検索結果に表示されるまでに、イベントが発生した後、最大30分または最大24時間かかる場合があります。 <br/><br/> •監査レコードが保持され、監査ログで検索可能になる時間の長さは、Office 365 のサブスクリプション、および特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
