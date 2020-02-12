@@ -181,6 +181,8 @@
                       href: ./office-365-security/configure-anti-malware-policies.md
                     - name: マルウェアおよびマルウェアでないファイルを分析のために Microsoft に提出する
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                    - name: ランサムウェア攻撃からの回復
+                      href: ./office-365-security/recover-from-ransomware.md
                     - name: SharePoint Online のウイルス検出
                       href: ./office-365-security/virus-detection-in-spo.md
                 - name: 高度なスパム フィルター処理オプション
