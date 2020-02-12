@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ソリューションカタログの概要
+title: Microsoft 365 ソリューションカタログ
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,18 +11,16 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 57591d385ce05454151b9ed28c5d764096d9e95b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602744"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41891980"
 ---
-# <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Microsoft 365 solution catalog (プレビュー) の概要
+# <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューションカタログ
 
-## <a name="overview"></a>概要
-
-Microsoft 365 でコンプライアンスタスクをすばやく始める方法を探していますか。 新しい[Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog)を参照して、コンプライアンスおよびリスク管理ソリューションを見つけて、理解し、すぐに開始してください。
+Microsoft 365 でコンプライアンスタスクをすばやく始める方法を探していますか。 [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog)を参照して、コンプライアンスおよびリスク管理ソリューションを見つけて、理解し、すぐに開始してください。
 
 Microsoft 365 のコンプライアンスソリューションは、エンドツーエンドのコンプライアンスシナリオの管理に役立つ統合された機能の集合です。 ソリューションの機能とツールには、ポリシー、警告、レポートなどの組み合わせが含まれている場合があります。
 
@@ -79,19 +77,17 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 ## <a name="how-do-i-get-this"></a>どのようにして入手できますか?
 
-- 新しい Microsoft 365 ソリューションカタログがインストールされていない場合は、近日中に入手できます。 増分ロールアウトのすべての Microsoft 365 サブスクリプションに対してソリューションカタログを有効にしています。
-
-- Microsoft 365 ソリューションカタログにアクセスするには、 [https://compliance.microsoft.com](https://compliance.microsoft.com)に移動して、全体管理者、コンプライアンス管理者、またはコンプライアンスデータ管理者としてサインインします。 画面の左側にあるナビゲーションウィンドウの [**カタログ**] を選択して、カタログのホームページを開きます。
+Microsoft 365 ソリューションカタログにアクセスするには、 [https://compliance.microsoft.com](https://compliance.microsoft.com)に移動して、全体管理者、コンプライアンス管理者、またはコンプライアンスデータ管理者としてサインインします。 画面の左側にあるナビゲーションウィンドウの [**カタログ**] を選択して、カタログのホームページを開きます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**新しい Microsoft 365 ソリューションカタログが表示されないのはなぜですか?**
+**Microsoft 365 ソリューションカタログが表示されないのはなぜですか?**
 
-最初に、適切なライセンスとアクセス許可を持っていることを確認してください。 次に、全体管理[https://compliance.microsoft.com](https://compliance.microsoft.com)者、コンプライアンス管理者、またはコンプライアンスデータ管理者としてにサインインします。 それでも左側のナビゲーションウィンドウに新しいソリューションカタログが表示されない場合は、すぐに表示されます。
+最初に、適切なライセンスとアクセス許可を持っていることを確認してください。 次に、全体管理[https://compliance.microsoft.com](https://compliance.microsoft.com)者、コンプライアンス管理者、またはコンプライアンスデータ管理者としてにサインインします。
 
 **[ソリューションカタログ] ページにリストされているコンプライアンス機能の一部は、Microsoft 365 コンプライアンスセンターでは使用できません。どうしようか。**
 
-引き続き、Microsoft 365 コンプライアンスセンターとソリューションカタログに機能を追加しています。 ナビゲーション領域に特定のソリューションが見つからない場合は、ソリューションがサブスクリプションで利用可能になったときにアクセスできます。
+マイクロソフトは常に、Microsoft 365 コンプライアンスセンターおよびソリューションカタログに新しい機能を追加することに取り組んでいます。 ナビゲーション領域に特定のソリューションが見つからない場合は、ソリューションがサブスクリプションで利用可能になったときにアクセスできます。
 
 既存のコンプライアンスソリューションを探しており、Microsoft 365 コンプライアンスセンターでまだ利用できない場合は、「」に[https://protection.office.com](https://protection.office.com)アクセスして、既存の Office 365 セキュリティ/コンプライアンスセンターのソリューションにいつでもアクセスできます。 または、Microsoft 365 コンプライアンスセンターの左側のナビゲーションにある [**その他のリソース**] タブをクリックして、Office 365 セキュリティ/コンプライアンスセンターカードを選択することもできます。  
 
@@ -99,12 +95,12 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 - お客様の組織での重要な標準および規制への準拠状況を理解するために役立つ、個人のリスクベースのスコアである**Microsoft のコンプライアンススコアを確認**します。 コンプライアンスの全体的な姿勢を強化するために推奨されるアクションを提供し、それらのアクションを効率的に実行できるようにするためのワークフロー機能を提供します。 詳細については、「[コンプライアンススコア (プレビュー)](compliance-score.md)」を参照してください。
 
-- 内部のリスクを最小限に抑えるために**insider リスク管理ポリシーを構成**し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理](insider-risk-management.md)」を参照してください。
+- 内部のリスクを最小限に抑えるために**insider リスク管理ポリシーを構成**し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理 (プレビュー)](insider-risk-management.md)」を参照してください。
+
+- **コミュニケーションコンプライアンスポリシーについて説明し、それを作成**して、企業のコードのポリシー違反を迅速に特定して改善します。 「[通信のコンプライアンス](communication-compliance.md)」を参照してください。
 
 - **Microsoft Information Protection**は、microsoft 365 ソリューションが、どこにいても機密情報の検出、分類、保護を支援する方法について説明します。
     - **Microsoft Cloud App Security について理解し、セットアップし**ます。 「[クイックスタート: Microsoft Cloud App Security の使用を開始](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)する」を参照してください。
     - **分類子を使い始める**。 コンテンツを分類して、適切に処理できるようにラベル付けすることは、情報保護の統制の出発点となります。 「 [Trainable 分類子の](classifier-getting-started-with.md)概要」を参照してください。
-
-- **コミュニケーションコンプライアンスポリシーについて説明し、それを作成**して、企業のコードのポリシー違反を迅速に特定して改善します。 「 [Microsoft 365 の通信コンプライアンス」を](communication-compliance.md)参照してください。
 
 - 多くの場合、 **Microsoft 365 ソリューションカタログにアクセス**して、コンプライアンス要件を満たすために役立つ新しいソリューションを確認してください。 にサインイン[https://compliance.microsoft.com](https://compliance.microsoft.com)し、左側のナビゲーションウィンドウで [**カタログ**] を選択します。

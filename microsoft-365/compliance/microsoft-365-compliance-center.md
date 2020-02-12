@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 コンプライアンスセンターの概要
+title: Microsoft 365 コンプライアンス センター
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 コンプライアンスセンター (含まれる内容、その取得方法、および次の手順) について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62c70fc4e7ea8a491db23a4fc9695b2b11b283ac
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602784"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916932"
 ---
-# <a name="overview-of-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの概要
-
-## <a name="overview"></a>概要
+# <a name="microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センター
 
 組織のコンプライアンスに関心がある場合は、 [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)をご利用いただけます。 Microsoft 365 コンプライアンスセンターでは、組織のコンプライアンスのニーズに合わせて管理する必要があるデータおよびツールに簡単にアクセスできます。
 
@@ -60,7 +58,7 @@ Microsoft 365 コンプライアンスセンターに最初にアクセスする
 
 ## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>より多くのコンプライアンス機能への簡単なナビゲーション
 
-ホームページのカード内のリンクに加えて、画面の左側にナビゲーションウィンドウが表示されます。これにより、[アラート](../security/office-365-security/alerts.md)、[レポート](reports-in-security-and-compliance.md)、[ポリシー](alert-policies.md)、コンプライアンスソリューションなどに簡単にアクセスできます。
+ホームページのカード内のリンクに加えて、画面の左側にナビゲーションウィンドウが表示されます。これにより、[アラート](../security/office-365-security/alerts.md)、[レポート](reports-in-security-and-compliance.md)、[ポリシー](alert-policies.md)、コンプライアンスソリューションなどに簡単にアクセスできます。 カスタマイズしたナビゲーションウィンドウのオプションを追加または削除するには、ナビゲーションウィンドウで [**ナビゲーションのカスタマイズ**] コントロールを使用します。 これにより、ナビゲーションウィンドウに表示されるアイテムを構成できるように、[**ナビゲーションウィンドウのカスタマイズ]** 設定が開きます。
 
 |  |  |
 |---------|---------|
