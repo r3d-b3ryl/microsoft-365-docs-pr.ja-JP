@@ -15,12 +15,12 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Exchange online の Outlook on the web で S/MIME 設定を表示および構成するために必要な Exchange Online 管理者の簡単な説明。
-ms.openlocfilehash: 2f6a4499a8961144cd24a414f14135d683cf36dc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 354b247c2b0e0e610e6cb0626f4a404b582db717
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599604"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960323"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Outlook on the web を使用して、Exchange Online の S/MIME 設定を構成する
 
@@ -28,14 +28,22 @@ Exchange Online の管理者は、S/MIME で保護されたメッセージを送
 
 構文およびパラメーターの詳細については、「 [Get-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig) 」および「 [Set-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)」を参照してください。
 
+## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>新しい Microsoft Edge (Chromium ベース) に関する考慮事項
+
+Web 上の Outlook で S/MIME を新しい[Microsoft edge](https://www.microsoft.com/windows/microsoft-edge) web ブラウザーで使用するには、microsoft edge の新しい microsoft Edge に microsoft S/mime 拡張機能をインストールするために、ユーザー (または別の管理者) が、 **Extensioninstallforcelist**という microsoft edge browser policy を設定および構成する必要があります。 ポリシーの値は`maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`です。 このポリシーを適用するには、ドメインに参加しているコンピューターが必要であるため、新しい Microsoft Edge ブラウザーで S/MIME を使用するとドメインに参加しているコンピューターが効果的に必要になります。
+
+**Extensioninstallforcelist**ポリシーの詳細については、「 [extensioninstallforcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist)」を参照してください。
+
+この手順は、新しい Microsoft Edge を使用するための前提条件です。ユーザーによってインストールされた S/MIME コントロールは置き換えられません。 S/MIME の初めての使用時に、S/MIME コントロールをダウンロードして、web 上の Outlook にインストールするようにユーザーに求められます。 または、ユーザーが Outlook on the web 設定で**S/MIME**を事前に参照して、コントロールのダウンロードリンクを取得することができます。
+
 ## <a name="considerations-for-chrome"></a>Chrome の考慮事項
 
 Google Chrome web ブラウザーで Outlook on the web で S/MIME を使用するには、ユーザー (または別の管理者) が**Extensioninstallforcelist**という名前の Chromium ポリシーを設定および構成して、Microsoft S/mime 拡張機能を Chrome にインストールする必要があります。 ポリシーの値は`maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`です。 このポリシーを適用するには、ドメインに参加しているコンピューターが必要であるため、Chrome で S/MIME を使用するとドメインに参加しているコンピューターが効果的に必要になります。
 
-**Extensioninstallforcelist**ポリシーの詳細については、「 [extensioninstallforcelist](https://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist)」を参照してください。
+**Extensioninstallforcelist**ポリシーの詳細については、「 [extensioninstallforcelist](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ExtensionInstallForcelist)」を参照してください。
 
 この手順は、Chrome を使用するための前提条件です。ユーザーによってインストールされた S/MIME コントロールは置き換えられません。 S/MIME の初めての使用時に、S/MIME コントロールをダウンロードして、web 上の Outlook にインストールするようにユーザーに求められます。 または、ユーザーが Outlook on the web 設定で**S/MIME**を事前に参照して、コントロールのダウンロードリンクを取得することができます。
 
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [S/MIME によるメッセージの署名と暗号化](s-mime-for-message-signing-and-encryption.md)
