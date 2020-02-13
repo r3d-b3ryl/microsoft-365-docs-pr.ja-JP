@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f829c6735bc8326a775a9d259da8b64aaa8b02ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600464"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960333"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>高度な電子情報開示でジョブを管理する
 
@@ -55,6 +55,6 @@ ms.locfileid: "41600464"
 | 送信失敗 | ジョブの送信に失敗しました。  ジョブをトリガーしたアクションを再実行する必要があります。 |
 | 処理中 | ジョブが進行中である場合は、[**ジョブ**] タブでジョブの進行状況を監視できます。 |
 | 場合 | ジョブが正常に完了しました。 ジョブの完了日時は、[**ジョブ**] タブの [**完了**] 列に表示されます。 |
-| 部分的に成功 | ジョブは部分的に成功しました。 |
-| 失敗 | ジョブが失敗しました。  ジョブをトリガーしたアクションを再実行する必要があります。 2回目のジョブが失敗した場合は、Microsoft サポートに連絡して、そのジョブのサポート情報を提供することをお勧めします。 |
+| 部分的に成功 | ジョブは部分的に成功しました。 この状態は、通常、一部の保管担当者データソースで、ジョブが部分的にインデックス化されたデータ (インデックスなしの*データ*とも呼ばれます) を検出しなかった場合に返されます。  |
+| Failed | ジョブが失敗しました。  ジョブをトリガーしたアクションを再実行する必要があります。 2回目のジョブが失敗した場合は、Microsoft サポートに連絡して、そのジョブのサポート情報を提供することをお勧めします。 |
 |||

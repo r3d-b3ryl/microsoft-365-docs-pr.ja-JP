@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: db05b598fb0dab3cac9420b33b0bd4e12b6b7e9a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602794"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957192"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>従来の電子情報開示検索と保持を Microsoft 365 コンプライアンスセンターに移行する
 
@@ -28,7 +28,7 @@ Microsoft 365 コンプライアンスセンターでは、次のような電子
 > [!NOTE]
 > さまざまなシナリオがあるため、この記事では、Microsoft 365 コンプライアンスセンターのコア電子情報開示ケースに移行するための一般的なガイダンスについて説明します。 電子情報開示ケースの使用は常に必須ではありませんが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当てることによって、セキュリティの追加の層が追加されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - この記事で説明されている PowerShell コマンドを実行するには、Office 365 セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 また、Exchange 管理センターの "Discovery Management/検出の管理" 役割グループのメンバーである必要もあります。
 
@@ -41,7 +41,7 @@ Microsoft 365 コンプライアンスセンターでは、次のような電子
 ```powershell
 $UserCredential = Get-Credential
 $sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -AllowClobber -DisableNameChecking
+Import-PSSession $sccSession -DisableNameChecking
 $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
@@ -87,23 +87,19 @@ $search | FL
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![Get-compliancecase コマンドの実行例](media/MigrateLegacyeDiscovery3.png)
-
 ## <a name="step-5-create-the-ediscovery-hold"></a>手順 5: 電子情報開示の保持を作成する
 
 ケースを作成したら、ホールドを作成し、前の手順で作成したケースに関連付けることができます。 ケース保持ポリシーとケース保持ルールの両方を作成する必要があることを覚えておくことが重要です。 ケース保持ポリシーを作成した後にケース保持ルールが作成されなかった場合、電子情報開示ホールドは作成されず、コンテンツは保持されません。
 
-移行する電子情報開示保持を再作成するには、次のコマンドを実行します。 これらの例では、移行する手順3のインプレースホールドからのプロパティを使用します。
+移行する電子情報開示保持を再作成するには、次のコマンドを実行します。 これらの例では、移行する手順3のインプレースホールドからのプロパティを使用します。 最初のコマンドは、新しいケース保持ポリシーを作成し、プロパティを変数に保存します。 2番目のコマンドは、対応するケース保持ルールを作成します。
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
 ```
 
 ```powershell
-$rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
+New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
-
-![NewCaseHoldPolicy および NewCaseHoldRule コマンドレットの使用例](media/MigrateLegacyeDiscovery4.png)
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>手順 6: 電子情報開示の保留を確認する
 
