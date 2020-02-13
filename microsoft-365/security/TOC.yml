@@ -378,6 +378,8 @@
               href: ./office-365-security/office-365-air.md
             - name: 配信された悪意のあるメールの検索と調査
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Office 365 ATP の安全なドキュメント
+              href: ./office-365-security/safe-docs.md
             - name: 脅威エクスプローラー (およびリアルタイム検出)
               href: ./office-365-security/threat-explorer.md
               items:
