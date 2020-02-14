@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 の高度な監査は、新しい監査機能を提供し、組織におけるフォレンシックおよびコンプライアンスの調査を支援します。
-ms.openlocfilehash: 49d2e2bbf7d1c19bb4c282920008a0ca9a34188d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862407"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960243"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
