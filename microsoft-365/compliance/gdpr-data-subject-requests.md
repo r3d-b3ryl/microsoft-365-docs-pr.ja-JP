@@ -5,6 +5,8 @@ keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメ�
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,22 +14,19 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39268563"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916912"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>データ対象要求と GDPR および CCPA
 
 一般データ保護規則 (GDPR) では、欧州連合 (EU) 内の人々に商品やサービスを提供する、または EU 居住者向けのデータの収集と分析を実行する会社に対して、新しい規則を導入します。GDPR は、個人やその企業がどの場所にあるかに関係なく適用されます。 詳細については、「[GDPR 概要トピック](gdpr.md)」を参照してください。
 
-同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA は、特定の開示、行使権を選択する際の差別に対する保護、「販売」に分類される特定のデータ転送に対する「オプトアウト/ オプトイン」要件も規定しています。  <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
-
-このドキュメントは、Microsoft の製品とサービスの使用における、GDPR および CCPA に基づくデータ主体の要求 (DSR) の完了に関する情報を提供します。
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 このドキュメントは、Microsoft の製品とサービスの使用における、GDPR および CCPA に基づくデータ主体の要求 (DSR) の完了に関する情報を提供します。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -50,9 +49,9 @@ ms.locfileid: "39268563"
 
 一般データ保護規則 (GDPR) は、規制においてデータ主体と呼ばれる人に、雇用主または他の種類の機関や組織 (データ コントローラーまたは単にコントローラーと呼ばれます) によって収集された個人データを管理する権限を与えます。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの変更の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。
 
-カリフォルニア州消費者プライバシー法 (CCPA) では、それらの個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  
+カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  
 
-コントローラーとして、要求されたアクションを実行するか、またはコントローラーが DSR に対応できない理由についての説明を提供することによって、各 DSR を速やかに検討し、実質的な対応を提供する必要があります。 コントローラーは、特定の DSR の適切な処理について自身の法律またはコンプライアンスのアドバイザーに相談する必要があります。
+管理者は、要求されたアクションを実行するか、または管理者が DSR に対応できない理由についての説明を提供することで、各 DSR を速やかに検討し、実質的な対応を提供する必要があります。 コントローラーは、特定の DSR の適切な処理について自身の法律またはコンプライアンスのアドバイザーに相談する必要があります。
 
 DSR の完了には、組織の GDPR コンプライアンス規則に従って、いくつかのプロセスが必要になる場合があります。
   
@@ -79,7 +78,7 @@ Microsoft によって生成されたログと関連データには、"個人デ
 
 ### <a name="yammer-and-kaizala"></a>Yammer と Kaizala
 
-ユーザー アカウントを削除した場合、Yammer と Kaizala でシステム生成されたログは削除されません。これらのアプリケーションからデータを削除するには、次のいずれかを参照してください。
+ユーザー アカウントを削除した場合、Yammer と Kaizala でシステム生成されたログは削除されません。これらのアプリケーションからデータを削除する場合は、次のいずれかの資料を参照してください。
 
 - [Yammer Enterprise で GDPR データ主体の要求を管理する](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -99,6 +98,12 @@ Microsoft によって生成されたログと関連データには、"個人デ
 ### <a name="third-party-products"></a>サード パーティ製品
 
 Microsoft アカウント認証を介してアクセスしたサード パーティの製品とサービスの場合、すべてのデータ主体の要求は該当するサード パーティに送信される必要があります。
+
+## <a name="data-subject-request-admin-tools"></a>データ主体の要求の管理ツール
+
+- **セキュリティ/コンプライアンス センター**: ユーザーが生成したデータは、[セキュリティ/コンプライアンス センター](https://aka.ms/stpsecurityandcompliance)を使用するか、アプリケーション内の機能を使用してエクスポートします。
+- **Azure AD 管理センター**: Azure Active Directory および関連サービスからのデータ主体の削除には、[Azure AD 管理センター](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/)を使用します。
+- **Microsoft データ ログのエクスポート**: システム生成のログは、テナント管理者が [Microsoft データ ログのエクスポート](https://aka.ms/MicrosoftGDPR)を使用することでエクスポートできます。
 
 ## <a name="learn-more"></a>詳細情報
 

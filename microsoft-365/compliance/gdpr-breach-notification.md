@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ffd5bd81542e2d39a928789c8575178c1b9a7633
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e419dd362ec42f7f2acb8cda03688afe3ade37be
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594427"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916922"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 違反の通知
 
-一般データ保護規則 (GDPR) では、欧州連合 (EU) 内の人々に商品やサービスを提供する、または EU 居住者向けのデータの収集と分析を実行する会社に対して、新しい規則を導入します。GDPR は、個人やその企業がどの場所にあるかに関係なく適用されます。 詳細については、「[GDPR 概要トピック](gdpr.md)」を参照してください。<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
-
-このドキュメントは、Microsoft の製品とサービスの使用における、GDPR に基づく違反の通知の完了に関する情報を提供します。
+一般データ保護規則 (GDPR) では、欧州連合 (EU) 内の人々に商品やサービスを提供する、または EU 居住者向けのデータの収集と分析を実行する会社に対して、新しい規則を導入します。GDPR は、個人やその企業がどの場所にあるかに関係なく適用されます。 詳細については、「[GDPR 概要トピック](gdpr.md)」を参照してください。 このドキュメントは、Microsoft の製品とサービスの使用における、GDPR に基づく違反の通知の完了に関する情報を提供します。
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>GDPR における個人データ侵害とは?
 
@@ -47,7 +43,7 @@ ms.locfileid: "41594427"
 
 Microsoft では、一般データ保護規則 (GDPR) の下での義務を重く受け止めています。 セキュリティ インシデント/データ侵害とは、Microsoft の機器あるいは Microsoft の施設に保存されている顧客のデータへの違法なアクセス、または顧客データの損失、漏洩、改変を引き起こす可能性のあるものへの不正アクセスなどのイベントを指します。
 
-データ処理者として、Microsoft は、必ずお客様がデータ コントローラーとして GDPR の違反通知要件を満たせるようにしています。 Microsoft からの通知は、その評価に必要な情報を提供しています。 Microsoft は、個人データが判読不能であると確認された場合 (たとえば、キーの整合性が確認された強力に暗号化されたデータ) を除き、お客様に個人データ侵害に関する通知を行います。
+データ処理者として、Microsoft は、必ずお客様がデータ コントローラーとして GDPR の違反通知要件を満たせるようにしています。 Microsoft からの通知は、その評価に必要な情報を提供しています。 Microsoft は、個人データが判読不能であると確認された場合 (たとえば、キーの整合性が確認された、暗号化されたデータ) を除き、お客様に個人データ侵害に関する通知を行います。
 
 データ コントローラーは、データ プライバシーに対するリスクを評価し、お客様の DPA に通知する必要がある侵害かどうかを判断する責任があります。 Microsoft は、GDPR コンプライアンス ポリシーに沿って、その評価を行うために必要な情報を提供します。
 
@@ -73,12 +69,16 @@ Microsoft では、一般データ保護規則 (GDPR) の下での義務を重�
     - *お客様への通知*: Microsoft Azure は、必要に応じてデータ侵害をお客様と規制当局に通知します。 次の場合を除き、お客様への通知は、侵害の発生を認識してから 72 時間以内に行われます。
 
         - Microsoft が、通知を実行すると他のユーザーにとってリスクが増大する判断した場合。
-        - 72 時間以内にインシデントの詳細がいくつか分かりそうな場合。 この場合、詳細情報は調査が進むにつれて入手可能。
+        - 72 時間以内にインシデントの詳細がいくつか分かりそうな場合。 これらの詳細は、調査が進むにつれて入手できます。
 
         詳細については、「[お客様への通知](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification)」を参照してください。
 
 3. **[Microsoft サポート/プロフェッショナル サービス](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
     プロフェッショナル サービスの性質上、一部のデータ保護のインシデントはお客様の責任の範囲内に含まれる場合があります。 Microsoft Professional Services によってデータ保護のインシデントと判断された場合は、「[データ保護のインシデント対応プロセスの範囲と制限](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process)」で説明されている文書化された業界標準対応計画に基づいて、インシデント対応が行われます。
+
+## <a name="breach-notification-admin-tools"></a>違反の通知管理ツール
+
+- **組織のプライバシー連絡先の設定**: テナント管理者は [Azure Active Directory 管理ポータル](https://go.microsoft.com/fwlink/p/?linkid=2052736)を使用して、Microsoft が連絡を取る必要がある組織のプライバシー連絡先を定義できます。
 
 ## <a name="learn-more"></a>詳細情報
 

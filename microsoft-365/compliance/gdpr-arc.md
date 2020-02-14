@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 111bafdb5d95792e8fda08007bccd7cd274b8832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bb4056b90afc8805d4e56b9b73c0c7d118d6f08c
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594487"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916892"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>アカウンタビリティ対応準備チェックリストを使用して GDPR プログラムをサポートする
 
@@ -28,9 +28,7 @@ ms.locfileid: "41594487"
 
 ## <a name="accountability-readiness-checklists"></a>アカウンタビリティ対応準備チェックリスト
 
-Microsoft の製品とサービスを使用するときに GDPR をサポートするために必要な情報に簡単にアクセスできるよう、アカウンタビリティ対応準備チェックリストを提供します。 チェックリストには、GDPR に基づく潜在的な義務が記載され、組織のコンプライアンスをサポートするために使用できる情報を示します。 <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+Microsoft の製品とサービスを使用するときに GDPR をサポートするために必要な情報に簡単にアクセスできるよう、アカウンタビリティ対応準備チェックリストを提供します。 チェックリストには、GDPR に基づく潜在的な義務が記載され、組織のコンプライアンスをサポートするために使用できる情報を示します。
 
 4 つの Microsoft 製品とサービス ファミリに関する詳しいガイドが用意されています:
 
@@ -65,6 +63,17 @@ Microsoft の製品とサービスを使用するときに GDPR をサポート�
     - 組織とそのコンテキストについての理解  
     - 計画  
     - 情報セキュリティ ポリシー
+
+## <a name="customer-agreements"></a>顧客契約
+
+- **オンライン サービス使用条件**: GDPR に関する Microsoft の契約責任は、「[オンライン サービス使用条件](https://go.microsoft.com/fwlink/p/?linkid=2052208)」に記載されています。
+- **Microsoft 製品使用条件**: Microsoft では、ボリューム ライセンスのすべてのお客様に [GDPR 使用条件の責任](https://go.microsoft.com/fwlink/p/?linkid=2052213)を拡張しています。
+- **Data Protection Addendum**: Microsoft サービスは、Microsoft コンサルティング サービスのお客様やその他のお客様にまで[責任を拡張](https://go.microsoft.com/fwlink/p/?linkid=2052215)しています。
+
+## <a name="gdpr-compliance-controls"></a>GDPR コンプライアンスのコントロール
+
+- **コンプライアンス スコアの使用**: [コンプライアンス スコア](compliance-score.md)を使用して、Microsoft が GDPR の義務をサポートするために使用しているコントロールをレビューし、組み込みます。
+- **GDPR コントロールのマッピング**: GDPR の義務に対する Microsoft コントロールの[総合的なマッピング](https://go.microsoft.com/fwlink/p/?linkid=2052220)にアクセスします。
 
 ## <a name="learn-more"></a>詳細情報
 
