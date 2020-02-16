@@ -16,65 +16,65 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f43510d0055a487cf1ee00e799a7244114016384
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f10995e5180afc0d8aa7de2b2fdb8040f0f838ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582906"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072014"
 ---
-# <a name="manage-hold-notifications"></a><span data-ttu-id="df180-102">保留通知を管理する</span><span class="sxs-lookup"><span data-stu-id="df180-102">Manage hold notifications</span></span>
+# <a name="manage-hold-notifications"></a><span data-ttu-id="acbe6-102">保留通知を管理する</span><span class="sxs-lookup"><span data-stu-id="acbe6-102">Manage hold notifications</span></span>
 
-<span data-ttu-id="df180-103">法的情報開示通知ワークフローを開始したら、Advanced eDiscovery を活用して、コミュニケーションの状態を追跡できます。</span><span class="sxs-lookup"><span data-stu-id="df180-103">After you have initiated your legal hold notification workflow, you can leverage  Advanced eDiscovery to track the status of your communications.</span></span> <span data-ttu-id="df180-104">[通信] タブでは、高度な電子情報開示ケース内のすべての保留通知が対象になります。</span><span class="sxs-lookup"><span data-stu-id="df180-104">The Communications Tab showcases all of the hold notifications within your Advanced eDiscovery case.</span></span> <span data-ttu-id="df180-105">ここでは、割り当てられている、または通知を確認した保管担当者の数などの詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="df180-105">Here, you can see details, such as the number of custodians that have been assigned or have acknowledged the notice.</span></span>
+<span data-ttu-id="acbe6-103">法的情報開示通知ワークフローを開始したら、Advanced eDiscovery を活用して、コミュニケーションの状態を追跡できます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-103">After you have initiated your legal hold notification workflow, you can leverage  Advanced eDiscovery to track the status of your communications.</span></span> <span data-ttu-id="acbe6-104">[通信] タブでは、高度な電子情報開示ケース内のすべての保留通知が対象になります。</span><span class="sxs-lookup"><span data-stu-id="acbe6-104">The Communications Tab showcases all of the hold notifications within your Advanced eDiscovery case.</span></span> <span data-ttu-id="acbe6-105">ここでは、割り当てられている、または通知を確認した保管担当者の数などの詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-105">Here, you can see details, such as the number of custodians that have been assigned or have acknowledged the notice.</span></span>
 
-## <a name="view-communication-details"></a><span data-ttu-id="df180-106">コミュニケーションの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="df180-106">View communication details</span></span>
+## <a name="view-communication-details"></a><span data-ttu-id="acbe6-106">コミュニケーションの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="acbe6-106">View communication details</span></span>
 
-### <a name="track-acknowledgements"></a><span data-ttu-id="df180-107">確認を追跡する</span><span class="sxs-lookup"><span data-stu-id="df180-107">Track acknowledgements</span></span>
+### <a name="track-acknowledgements"></a><span data-ttu-id="acbe6-107">確認を追跡する</span><span class="sxs-lookup"><span data-stu-id="acbe6-107">Track acknowledgements</span></span>
 
-<span data-ttu-id="df180-108">[**通信**] タブで通信を選択すると、保留通知が確認されている保管担当者の一覧を表示できます。</span><span class="sxs-lookup"><span data-stu-id="df180-108">Once you select a communication from the **Communications**, tab you can view a list of custodians that have acknowledged a hold notice.</span></span> 
+<span data-ttu-id="acbe6-108">[**通信**] タブで通信を選択すると、保留通知が確認されている保管担当者の一覧を表示できます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-108">Once you select a communication from the **Communications**, tab you can view a list of custodians that have acknowledged a hold notice.</span></span> 
 
-### <a name="preview-acknowledgements"></a><span data-ttu-id="df180-109">確認のプレビュー</span><span class="sxs-lookup"><span data-stu-id="df180-109">Preview acknowledgements</span></span>
+### <a name="preview-acknowledgements"></a><span data-ttu-id="acbe6-109">確認のプレビュー</span><span class="sxs-lookup"><span data-stu-id="acbe6-109">Preview acknowledgements</span></span>
 
-<span data-ttu-id="df180-110">[通信の詳細] ポップアップでは、法的情報保留通信に関する詳細をプレビューできます。</span><span class="sxs-lookup"><span data-stu-id="df180-110">In the communication details flyout, you can preview the details regarding your legal hold communication.</span></span> <span data-ttu-id="df180-111">**プレビュー**パネルでは、法的情報保留の通知の簡易スナップショット、およびワークフロー通知の設定とコンテンツを表示できます。</span><span class="sxs-lookup"><span data-stu-id="df180-111">In the **Preview** panel, you will be able to see a quick snapshot of your legal hold notice as well as the settings and content for your workflow notifications.</span></span> <span data-ttu-id="df180-112">プレビューパネルには、保管担当者が既に通知を確認済みであることに関する詳細も表示されます。</span><span class="sxs-lookup"><span data-stu-id="df180-112">The Preview panel will also surface details around which custodians have already acknowledged the notice.</span></span>
+<span data-ttu-id="acbe6-110">[通信の詳細] ポップアップでは、法的情報保留通信に関する詳細をプレビューできます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-110">In the communication details flyout, you can preview the details regarding your legal hold communication.</span></span> <span data-ttu-id="acbe6-111">**プレビュー**パネルでは、法的情報保留の通知の簡易スナップショット、およびワークフロー通知の設定とコンテンツを表示できます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-111">In the **Preview** panel, you will be able to see a quick snapshot of your legal hold notice as well as the settings and content for your workflow notifications.</span></span> <span data-ttu-id="acbe6-112">プレビューパネルには、保管担当者が既に通知を確認済みであることに関する詳細も表示されます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-112">The Preview panel will also surface details around which custodians have already acknowledged the notice.</span></span>
 
-## <a name="taking-action-on-existing-communications"></a><span data-ttu-id="df180-113">既存の通信に対してアクションを実行する</span><span class="sxs-lookup"><span data-stu-id="df180-113">Taking action on existing communications</span></span>
+## <a name="taking-action-on-existing-communications"></a><span data-ttu-id="acbe6-113">既存の通信に対してアクションを実行する</span><span class="sxs-lookup"><span data-stu-id="acbe6-113">Taking action on existing communications</span></span>
 
-### <a name="re-send-a-hold-notice"></a><span data-ttu-id="df180-114">保留通知を再送信する</span><span class="sxs-lookup"><span data-stu-id="df180-114">Re-send a hold notice</span></span>
+### <a name="re-send-a-hold-notice"></a><span data-ttu-id="acbe6-114">保留通知を再送信する</span><span class="sxs-lookup"><span data-stu-id="acbe6-114">Re-send a hold notice</span></span>
 
-<span data-ttu-id="df180-115">場合によっては、保管担当者が電子メールを毎日の作業で追跡できなくなります。</span><span class="sxs-lookup"><span data-stu-id="df180-115">Occasionally, custodians lose track of their emails in their day-to-day work.</span></span> <span data-ttu-id="df180-116">または、長期間訴訟が発生した場合は、保管担当者が到着して、通知を再送信するよう求められることがあります。</span><span class="sxs-lookup"><span data-stu-id="df180-116">Or, for a long-running litigation, a custodian may reach out and ask you to re-send a notice.</span></span> <span data-ttu-id="df180-117">法的情報保持通知に関するワークフローを管理する際には、「ユーザーのメールボックスの先頭」に戻るために通知を再送信する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="df180-117">As you manage your workflow around legal hold notices, you may need to re-send a notice to bring it back to the "top of a user's mailbox".</span></span>
+<span data-ttu-id="acbe6-115">場合によっては、保管担当者が電子メールを毎日の作業で追跡できなくなります。</span><span class="sxs-lookup"><span data-stu-id="acbe6-115">Occasionally, custodians lose track of their emails in their day-to-day work.</span></span> <span data-ttu-id="acbe6-116">または、長期間訴訟が発生した場合は、保管担当者が到着して、通知を再送信するよう求められることがあります。</span><span class="sxs-lookup"><span data-stu-id="acbe6-116">Or, for a long-running litigation, a custodian may reach out and ask you to re-send a notice.</span></span> <span data-ttu-id="acbe6-117">法的情報保持通知に関するワークフローを管理する際には、「ユーザーのメールボックスの先頭」に戻るために通知を再送信する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="acbe6-117">As you manage your workflow around legal hold notices, you may need to re-send a notice to bring it back to the "top of a user's mailbox".</span></span>
 
-<span data-ttu-id="df180-118">保留通知は、次の方法で保管担当者に再送信できます。</span><span class="sxs-lookup"><span data-stu-id="df180-118">You can re-send a hold notice to your custodian by:</span></span>
-1. <span data-ttu-id="df180-119">**「セキュリティとコンプライアンス > 高度な電子情報開示**」内のケースに移動します。</span><span class="sxs-lookup"><span data-stu-id="df180-119">Navigate to a case within **Security and Compliance > Advanced eDiscovery**.</span></span>
-2. <span data-ttu-id="df180-120">ケースを選択したら、[**通信**] タブに移動します。</span><span class="sxs-lookup"><span data-stu-id="df180-120">Once you have selected a case, navigate to the **Communications** tab.</span></span>
-3. <span data-ttu-id="df180-121">法的情報保留通知を保管担当者に再送信するには、通信を選択し、[**再送信**] オプションをクリックします。</span><span class="sxs-lookup"><span data-stu-id="df180-121">To re-send a legal hold notice to a custodian, select the communication and click the **Re-Send** option.</span></span>
-4. <span data-ttu-id="df180-122">保管担当者が保留通知をまだ確認していない場合は、アラームとエスカレーションフローが再起動されます。</span><span class="sxs-lookup"><span data-stu-id="df180-122">If a custodian has not already acknowledged their hold notification, then the reminder and escalation flow will be restarted.</span></span> <span data-ttu-id="df180-123">保管担当者が既に保留通知を受信確認している場合、保管担当者は最初のホールド通知のコピーを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="df180-123">If a custodian has already acknowledged the hold notice, then the custodian will just receive a copy of the initial hold notice.</span></span>
+<span data-ttu-id="acbe6-118">保留通知は、次の方法で保管担当者に再送信できます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-118">You can re-send a hold notice to your custodian by:</span></span>
+1. <span data-ttu-id="acbe6-119">**「セキュリティとコンプライアンス > 高度な電子情報開示**」内のケースに移動します。</span><span class="sxs-lookup"><span data-stu-id="acbe6-119">Navigate to a case within **Security and Compliance > Advanced eDiscovery**.</span></span>
+2. <span data-ttu-id="acbe6-120">ケースを選択したら、[**通信**] タブに移動します。</span><span class="sxs-lookup"><span data-stu-id="acbe6-120">Once you have selected a case, navigate to the **Communications** tab.</span></span>
+3. <span data-ttu-id="acbe6-121">法的情報保留通知を保管担当者に再送信するには、通信を選択し、[**再送信**] オプションをクリックします。</span><span class="sxs-lookup"><span data-stu-id="acbe6-121">To re-send a legal hold notice to a custodian, select the communication and click the **Re-Send** option.</span></span>
+4. <span data-ttu-id="acbe6-122">保管担当者が保留通知をまだ確認していない場合は、アラームとエスカレーションフローが再起動されます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-122">If a custodian has not already acknowledged their hold notification, then the reminder and escalation flow will be restarted.</span></span> <span data-ttu-id="acbe6-123">保管担当者が既に保留通知を受信確認している場合、保管担当者は最初のホールド通知のコピーを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="acbe6-123">If a custodian has already acknowledged the hold notice, then the custodian will just receive a copy of the initial hold notice.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="df180-124">法的情報保留通知は、通信に割り当てられている保管担当者に再送信することのみできます。</span><span class="sxs-lookup"><span data-stu-id="df180-124">You can only re-send a legal hold notification to custodians that are assigned to the communication.</span></span> 
+> <span data-ttu-id="acbe6-124">法的情報保留通知は、通信に割り当てられている保管担当者に再送信することのみできます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-124">You can only re-send a legal hold notification to custodians that are assigned to the communication.</span></span> 
 
-### <a name="edit-a-communication"></a><span data-ttu-id="df180-125">通信を編集する</span><span class="sxs-lookup"><span data-stu-id="df180-125">Edit a communication</span></span>
+### <a name="edit-a-communication"></a><span data-ttu-id="acbe6-125">通信を編集する</span><span class="sxs-lookup"><span data-stu-id="acbe6-125">Edit a communication</span></span>
 
-#### <a name="update-preservation-requirements"></a><span data-ttu-id="df180-126">更新保持要件</span><span class="sxs-lookup"><span data-stu-id="df180-126">Update preservation requirements</span></span>
+#### <a name="update-preservation-requirements"></a><span data-ttu-id="acbe6-126">更新保持要件</span><span class="sxs-lookup"><span data-stu-id="acbe6-126">Update preservation requirements</span></span>
   
-<span data-ttu-id="df180-127">ケースが進行するにつれて、保管担当者は、以前に指示されていたのとは別のデータを保持する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="df180-127">As the case progresses, custodians may be required to preserve additional or less data than was previously instructed.</span></span> <span data-ttu-id="df180-128">電子情報開示の用語では、更新されたコンテンツを含む保留通知を再発行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="df180-128">In eDiscovery terms, you need to re-issue the hold notice with updated content.</span></span>
+<span data-ttu-id="acbe6-127">ケースが進行するにつれて、保管担当者は、以前に指示されていたのとは別のデータを保持する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="acbe6-127">As the case progresses, custodians may be required to preserve additional or less data than was previously instructed.</span></span> <span data-ttu-id="acbe6-128">電子情報開示の用語では、更新されたコンテンツを含む保留通知を再発行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="acbe6-128">In eDiscovery terms, you need to re-issue the hold notice with updated content.</span></span>
 
-<span data-ttu-id="df180-129">最初の保留通知の内容を更新するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="df180-129">To update the contents of the initial hold notice:</span></span>
+<span data-ttu-id="acbe6-129">最初の保留通知の内容を更新するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="acbe6-129">To update the contents of the initial hold notice:</span></span>
 
-1. <span data-ttu-id="df180-130">**「セキュリティとコンプライアンス > 高度な電子情報開示**」内のケースに移動します。</span><span class="sxs-lookup"><span data-stu-id="df180-130">Navigate to a case within **Security and Compliance > Advanced eDiscovery**.</span></span>
-2. <span data-ttu-id="df180-131">ケースを選択したら、[**通信**] タブに移動します。</span><span class="sxs-lookup"><span data-stu-id="df180-131">Once you have selected a case, navigate to the **Communications** tab.</span></span>
-3. <span data-ttu-id="df180-132">更新するホールド通知を選択し、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="df180-132">Select the hold notice that you would like to update and click **Edit**.</span></span>
-4. <span data-ttu-id="df180-133">編集ワークフローで、[**ポータルコンテンツを定義**する] を選択し、通知の内容を更新します。</span><span class="sxs-lookup"><span data-stu-id="df180-133">In the Edit workflow, select **Define Portal Content** and update the contents of your notice.</span></span> 
-5. <span data-ttu-id="df180-134">[**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="df180-134">Click **Save**.</span></span> <span data-ttu-id="df180-135">保存された後、法的情報保留通知に対して現在割り当てられているすべての保管担当者に再発行通知が送信されます。</span><span class="sxs-lookup"><span data-stu-id="df180-135">Once saved, the re-issuance notice will be sent to all the custodians that are presently assigned to the legal hold notification.</span></span> <span data-ttu-id="df180-136">また、アラーム/エスカレーションの通知が有効になっている場合は、これらのワークフローも再起動されます。</span><span class="sxs-lookup"><span data-stu-id="df180-136">In addition, if the reminder/escalation notices are enabled, then these workflows will restart as well.</span></span> 
+1. <span data-ttu-id="acbe6-130">**「セキュリティとコンプライアンス > 高度な電子情報開示**」内のケースに移動します。</span><span class="sxs-lookup"><span data-stu-id="acbe6-130">Navigate to a case within **Security and Compliance > Advanced eDiscovery**.</span></span>
+2. <span data-ttu-id="acbe6-131">ケースを選択したら、[**通信**] タブに移動します。</span><span class="sxs-lookup"><span data-stu-id="acbe6-131">Once you have selected a case, navigate to the **Communications** tab.</span></span>
+3. <span data-ttu-id="acbe6-132">更新するホールド通知を選択し、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="acbe6-132">Select the hold notice that you would like to update and click **Edit**.</span></span>
+4. <span data-ttu-id="acbe6-133">編集ワークフローで、[**ポータルコンテンツを定義**する] を選択し、通知の内容を更新します。</span><span class="sxs-lookup"><span data-stu-id="acbe6-133">In the Edit workflow, select **Define Portal Content** and update the contents of your notice.</span></span> 
+5. <span data-ttu-id="acbe6-134">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="acbe6-134">Click **Save**.</span></span> <span data-ttu-id="acbe6-135">保存された後、法的情報保留通知に対して現在割り当てられているすべての保管担当者に再発行通知が送信されます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-135">Once saved, the re-issuance notice will be sent to all the custodians that are presently assigned to the legal hold notification.</span></span> <span data-ttu-id="acbe6-136">また、アラーム/エスカレーションの通知が有効になっている場合は、これらのワークフローも再起動されます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-136">In addition, if the reminder/escalation notices are enabled, then these workflows will restart as well.</span></span> 
 
 
-#### <a name="update-legal-hold-notifications-and-settings"></a><span data-ttu-id="df180-137">法的情報保留通知と設定を更新する</span><span class="sxs-lookup"><span data-stu-id="df180-137">Update legal hold notifications and settings</span></span>
+#### <a name="update-legal-hold-notifications-and-settings"></a><span data-ttu-id="acbe6-137">法的情報保留通知と設定を更新する</span><span class="sxs-lookup"><span data-stu-id="acbe6-137">Update legal hold notifications and settings</span></span>
 
-<span data-ttu-id="df180-138">発行、リリース、再発行、アラーム、またはエスカレーションの通知のコンテンツまたは設定を更新すると、これらの変更は、ワークフローによって生成された以降のすべての通信に適用されます。</span><span class="sxs-lookup"><span data-stu-id="df180-138">When you update the content or settings of the Issuance, Release, Reissue, Reminder, or Escalation notice, then these changes will apply to all future communications generated by the workflow.</span></span>
+<span data-ttu-id="acbe6-138">発行、リリース、再発行、アラーム、またはエスカレーションの通知のコンテンツまたは設定を更新すると、これらの変更は、ワークフローによって生成された以降のすべての通信に適用されます。</span><span class="sxs-lookup"><span data-stu-id="acbe6-138">When you update the content or settings of the Issuance, Release, Reissue, Reminder, or Escalation notice, then these changes will apply to all future communications generated by the workflow.</span></span>
 
-## <a name="related-information"></a><span data-ttu-id="df180-139">関連情報</span><span class="sxs-lookup"><span data-stu-id="df180-139">Related information</span></span> 
+## <a name="related-information"></a><span data-ttu-id="acbe6-139">関連情報</span><span class="sxs-lookup"><span data-stu-id="acbe6-139">Related information</span></span> 
 
-- [<span data-ttu-id="df180-140">法的情報保留通知を作成する</span><span class="sxs-lookup"><span data-stu-id="df180-140">Create a legal hold notice</span></span>](create-hold-notification.md)
+- [<span data-ttu-id="acbe6-140">法的情報保留通知を作成する</span><span class="sxs-lookup"><span data-stu-id="acbe6-140">Create a legal hold notice</span></span>](create-hold-notification.md)
     
-- [<span data-ttu-id="df180-141">保留通知を確認する</span><span class="sxs-lookup"><span data-stu-id="df180-141">Acknowledge a hold notification</span></span>](acknowledge-hold-notification.md)
+- [<span data-ttu-id="acbe6-141">保留通知を確認する</span><span class="sxs-lookup"><span data-stu-id="acbe6-141">Acknowledge a hold notification</span></span>](acknowledge-hold-notification.md)
     
-- [<span data-ttu-id="df180-142">ケースにカストディアンを追加する</span><span class="sxs-lookup"><span data-stu-id="df180-142">Add custodians to a case</span></span>](add-custodians-to-case.md)
+- [<span data-ttu-id="acbe6-142">ケースにカストディアンを追加する</span><span class="sxs-lookup"><span data-stu-id="acbe6-142">Add custodians to a case</span></span>](add-custodians-to-case.md)
