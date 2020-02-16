@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 031fc4164307d9fa8c78f02c775b230f7eff5383
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600184"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087617"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -48,13 +48,13 @@ Microsoft の脅威保護の独自のクロス積層は、個々のスイート�
 - 自動修復によって影響を受ける資産の自己復旧を開始することにより、侵害への対応を自動化する
 - エンドポイントと Office データにわたって、セキュリティチームが詳細で効果的な脅威を探すことができるようにする
 
-![インシデントの概要ページの画像](../images/overview-incident.png) <br>
+![インシデントの概要ページの画像](../../media/overview-incident.png) <br>
 製品間のインシデント (概要)
 
-![通知キューの画像](../images/incident-list.png)<br>
+![通知キューの画像](../../media/incident-list.png)<br>
 Suite 製品全体で関連付けられているすべての通知を1つのインシデント ([alerts] ビュー) に関連付けます。
 
-![インシデントキューの画像](../images/advanced-hunting.png)<br>
+![インシデントキューの画像](../../media/advanced-hunting.png)<br>
 電子メールとエンドポイントの生データを検索するクエリベースの検索
 
 
@@ -75,7 +75,7 @@ Microsoft の脅威保護の製品間の機能には、次のようなものが�
 <br>
 
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業の開始
 Microsoft 365 E5 または同等のライセンスをお持ちのお客様は、Microsoft Threat Protection を使用できます。 開始するには、 [security.microsoft.com](https://security.microsoft.com)の Microsoft 365 セキュリティセンターでサービスを有効にします。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

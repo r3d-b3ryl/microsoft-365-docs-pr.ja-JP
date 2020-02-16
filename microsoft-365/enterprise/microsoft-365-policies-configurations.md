@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855386"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066859"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -59,25 +59,25 @@ Enterprise Mobility + Security E5 ライセンスを持っていない組織で�
 - **機密保護**: 一部のお客様は、より高いレベルで保護する必要があるデータのサブセットを持っているか、すべてのデータをより高いレベルで保護する必要がある場合があります。 Office 365 環境のすべてまたは特定のデータ セットに高度な保護機能を適用できます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。  
 - 厳しく**規制**されている組織によっては、非常に多くのデータ、consititutes 取引機密、または規制データがある場合があります。 Microsoft は、ID とデバイスの保護を追加するなど、組織がそのような要件を満たすための機能を提供しています。
 
-![セキュリティコーン-特定のお客様 > 一部のお客様 >。 特定のアプリケーションに対する幅広いアプリケーション](../images/M365-idquality-threetiers.png)
+![セキュリティコーン-特定のお客様 > 一部のお客様 >。 特定のアプリケーションに対する幅広いアプリケーション](../media/M365-idquality-threetiers.png)
 
 このガイダンスでは、これらの各層の保護の id とデバイスの保護を実装する方法について説明します。 組織の出発点としてこのガイダンスを使用し、組織の特定の要件を満たすようにポリシーを調整します。
 
 データ、ID、デバイスをまたぎ、一貫性のある保護レベルを採用することが重要です。 たとえば、このガイダンスを実装する場合は、必ず同等のレベルでデータを保護してください。 これらのアーキテクチャモデルは、どの機能が同等であるかを示しています。
 
 **Office 365 の ID とデバイス保護**<br/>
-![ポスターのサムネイル「Office の Id とデバイスの保護365」](../images/O365_Identity_device_protection_thumb.png)<br/>
+![ポスターのサムネイル「Office の Id とデバイスの保護365」](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Office 365 のファイル保護ソリューション**<br/>
-![ポスターのサムネイル「Office のファイル保護ソリューション」 (365)](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![ポスターのサムネイル「Office のファイル保護ソリューション」 (365)](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>セキュリティと生産性の折り合い
 
 セキュリティ戦略を実装するには、セキュリティと生産性の間にトレードオフが必要です。 各決定が、セキュリティ、機能、および使いやすさのバランスにどのように影響するかを評価するのに役立ちます。
 
-![セキュリティ、機能性、使いやすさのバランスを保つためのセキュリティの障害許容。](media/policies-configurations/security-triad.png)
+![セキュリティ、機能性、使いやすさのバランスを保つためのセキュリティの障害許容。](../media/policies-configurations/security-triad.png)
 
 提供される推奨事項は、次の原則に基づいています。
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: af061b50e92d2b7f00be3fab217a60855f0669c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b12bf7b4bbda79a8699e01f31c97d0cfde330b5c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600234"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087382"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>Microsoft Threat Protection のインシデントを調査する
 
@@ -42,7 +42,7 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 
 1. インシデント キューからインシデントを選択します。 <BR> これにより、サイドパネルが開き、状態、重要度、カテゴリ、影響を受けるエンティティなどの重要な情報のプレビューが表示されます。
 
-    ![インシデント サイドパネルの画像](../images/incident-side-panel.png)
+    ![インシデント サイドパネルの画像](../../media/incident-side-panel.png)
 
 2. [**インシデント ページを開く**] を選択します。 <BR> これにより、インシデント ページが開き、インシデントの詳細、コメントとアクション、タブ (概要、アラート、デバイス、ユーザー、調査、証拠) が表示されます。
 
@@ -52,7 +52,7 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 概要ページでは、インシデントに関する主な情報がスナップショットで表示されます。
 
 
-![インシデントの概要ページの画像](../images/incidents-overview.png)
+![インシデントの概要ページの画像](../../media/incidents-overview.png)
 
 
 攻撃のカテゴリでは、キルチェーンに対する攻撃の状況を視覚的に、そして数値で確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft Threat Protection は、[MITRE ATT&CK&trade;](https://attack.mitre.org/) フレームワークに準拠します。 
@@ -69,7 +69,7 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 ## <a name="alerts"></a>アラート 
 インシデントに関連するすべてのアラートを表示することができます。重要度、アラートに関係したエンティティ、アラートのソース (Azure ATP、Microsoft Defender ATP、Office 365 ATP)、およびそれらのアラートが相互にリンクされた理由などの情報も確認できます。 
 
-![インシデント アラート ページの画像](../images/incident-alerts.png)
+![インシデント アラート ページの画像](../../media/incident-alerts.png)
 
 既定では、アラートは発生順に並べ替えられています。これにより、発生した攻撃を時系列で確認できます。 各アラートをクリックすると、関連するアラート ページが表示され、そのアラートについて詳細な調査を行うことができます。 
 
@@ -78,7 +78,7 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 
 攻撃が行われたコンピューターの名前をクリックすると、そのコンピューターのページが表示されます。調査を簡単にするために、トリガーされたアラートや関連イベントが表示されます。 
 
-![インシデントの [コンピューター] タブの画像](../images/incident-machines.png)
+![インシデントの [コンピューター] タブの画像](../../media/incident-machines.png)
 
 [タイムライン] タブを選択すると、コンピューターのタイムラインをスクロールして、コンピューター上で監視されているすべてのイベントおよび動作、発生したアラートを日付順に表示できます。 
 
@@ -89,18 +89,18 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 ユーザー名をクリックすると、ユーザーの Cloud App Security ページに移動します。ここで詳細な調査を行うことができます。
 
 
-![インシデントの [ユーザー] タブの画像](../images/incident-users.png)
+![インシデントの [ユーザー] タブの画像](../../media/incident-users.png)
 
 ## <a name="mailboxes"></a>メールボックス
 インシデントに関連すると識別されたメールボックスを調査します。 メール関連アラートを選択し Office 365 Advanced Threat Protection を開くと、修復アクションを実行でき、さらに調査を行うことができます。
 
 
-![インシデントの [メールボックス] タブの画像](../images/incident-mailboxes.png)
+![インシデントの [メールボックス] タブの画像](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>調査
 このインシデントのアラートによって実行されたすべての自動調査を表示するには、[**調査**] を選択します。 調査は、Microsoft Defender ATP および Office 365 Advanced Threat Protection での自動調査の実行をどのように構成したかによって、修復アクションを実行するか、またはアナリストからのアクションの承認を待ちます。
 
-![インシデントの [調査] タブの画像](../images/incident-investigations.png)
+![インシデントの [調査] タブの画像](../../media/incident-investigations.png)
 
 
 調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。 調査の一部として承認待ちのアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを行います。
@@ -109,7 +109,7 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 ## <a name="evidence"></a>証拠
 Microsoft Threat Protection は、アラート内のすべてのインシデントのサポートされているイベントおよび不審なエンティティを自動的に調査し、自動応答や重要なファイル、プロセス、サービス、メールなどに関する情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。 
 
-![インシデントの [証拠] タブの画像](../images/incident-evidence.png)
+![インシデントの [証拠] タブの画像](../../media/incident-evidence.png)
 
 分析された各エンティティには、判定 (悪質、不審、クリーン)、および修復状況が示されます。 これにより、インシデント全体の修復状況、および修復の次の手順について理解するのをサポートします。
 

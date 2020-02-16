@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7e96ca06a7b77a6bdc0cf4af55d519aebda833cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600384"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087499"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -61,14 +61,14 @@ Microsoft 365 セキュリティセンターでは、高度な検索では、Mic
 - 選択した値をクエリ (`!=`) から除外する 
 - クエリに値を追加するためのより高度な演算子 `contains`、`starts with`、および `ends with` を取得する 
 
-![Microsoft Defender ATP の高度な捜索結果セットの画像](../images/advanced-hunting-results-filter.png)
+![Microsoft Defender ATP の高度な捜索結果セットの画像](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>クエリ結果をフィルター処理する
 右に表示されるフィルターは、結果セットの要約を提供します。 各列には、その列で見つかった個別の値とインスタンスの数を一覧表示する独自のセクションがあります。
 
 含めるまたは除外する値の [+] または [-] ボタンを選択し、[**クエリの実行**] を選択して、クエリを絞り込みます。
 
-![高度な捜索フィルターの画像](../images/advanced-hunting-filter.png)
+![高度な捜索フィルターの画像](../../media/advanced-hunting-filter.png)
 
 フィルターを適用してクエリを変更し、クエリを実行すると、結果がそれに応じて更新されます。
 

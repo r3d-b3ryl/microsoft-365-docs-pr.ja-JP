@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: cecc84c1df3ccba3eea75d29aa5f293909d5d51f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600164"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087847"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのデバイスの監視とレポート
 
@@ -35,7 +35,7 @@ Microsoft Defender ATP の各アラートには、対応する重要度 (高、�
 
 **デバイスアラートの重要度**カードを使用して、より深刻で、即時応答を必要とする可能性があるアラートに特に注目します。 このカードから、Microsoft Defender セキュリティセンターポータルの詳細情報を表示できます。
 
-![デバイス通知の重要度カード](../images/device-alerts-severity.png)
+![デバイス通知の重要度カード](../../media/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>通知のソースを理解する
 
@@ -43,7 +43,7 @@ Microsoft Defender ATP は、さまざまなセキュリティセンサーおよ
 
 **デバイスアラート検出**ソースカードは、通知のソース別の配布を示しています。 このカードは、特定のソース (特にカスタムソース) に関連するアクティビティを追跡するのに役立ちます。 また、これを使用して、悪意のあるアクティビティやコンポーネントを自動的にブロックするように構成されていないセンサーからのアラートに焦点を当てることもできます。
 
-![デバイスアラート検出ソースカード](../images/device-alert-detection-sources.png)
+![デバイスアラート検出ソースカード](../../media/device-alert-detection-sources.png)
 
 このカードから、Microsoft Defender セキュリティセンターポータルの詳細情報を表示できます。
 
@@ -53,13 +53,13 @@ Microsoft Defender ATP は、各アラートを、アタックチェーンまた
 
 **デバイスの脅威カテゴリ**カードには、これらのカテゴリへのアラートの配布が表示されます。 この情報を使用して、ソーシャルエンジニアリング試行と比較して影響を受ける可能性がある、資格情報の盗用試行などの脅威のアクティビティを識別できます。 この情報を使用して、ランサムウェアなどの潜在的な破壊的脅威を監視することもできます。
 
-![デバイスの脅威カテゴリカード](../images/device-threat-categories.png)
+![デバイスの脅威カテゴリカード](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>アクティブなアラートを監視する
 
 **デバイス通知ステータス**カードは、解決されておらず、注意が必要なアラートの数を示しています。 このカードから、Microsoft Defender セキュリティセンターポータルの詳細情報を表示できます。
 
-![デバイスアラートステータスカード](../images/device-alert-status.png)
+![デバイスアラートステータスカード](../../media/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>解決されたアラートの分類を監視する
 
@@ -72,7 +72,7 @@ Microsoft Defender ATP 通知を解決するとき、セキュリティ担当者
 
 注: 状況によっては、特定の通知に対して分類情報を使用できない場合があります。
 
-![デバイスアラート分類カード](../images/device-alert-classification.png)
+![デバイスアラート分類カード](../../media/device-alert-classification.png)
 
 ### <a name="monitor-determination-of-resolved-alerts"></a>解決されたアラートの決定を監視する
 
@@ -89,13 +89,13 @@ Microsoft Defender ATP 通知を解決するとき、セキュリティ担当者
 
 このカードから、Microsoft Defender セキュリティセンターの詳細情報を表示することができます。
 
-![デバイスのアラート判別カード](../images/device-alert-determination.png)
+![デバイスのアラート判別カード](../../media/device-alert-determination.png)
 
 ### <a name="understand-which-devices-are-at-risk"></a>危険にさらされているデバイスを理解する
 
 **デバイス保護**は、デバイスのリスクレベルを示しています。 リスクレベルは、デバイス上のアラートの種類や重要度などの要因に基づいています。
 
-![デバイス保護カード](../images/device-protection.png)
+![デバイス保護カード](../../media/device-protection.png)
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>Intune で管理されているデバイスの状態を監視および報告する
 
@@ -114,43 +114,43 @@ Intune 登録デバイスデータには次のものが含まれます。
 
 **デバイスのコンプライアンス**Intune に登録されているデバイスの数が、構成ポリシーに準拠していることを示します。
 
-![デバイスコンプライアンスカード](../images/device-compliance.png)
+![デバイスコンプライアンスカード](../../media/device-compliance.png)
 
 ### <a name="discover-devices-with-malware-detections"></a>マルウェアが検出されるデバイスを検出する
 
 **デバイスマルウェアの検出**は、完全に解決されていないマルウェアを含む Intune 登録デバイスの数を提供します。 これは、保留中のアクション、再起動、完全スキャン、手動によるユーザー操作、あるいは修復アクションが正常に完了しなかったことが原因である可能性があります。
 
-![デバイスマルウェア検出カード](../images/device-malware-detections.png)
+![デバイスマルウェア検出カード](../../media/device-malware-detections.png)
 
 ### <a name="understand-the-types-of-malware-detected"></a>検出されたマルウェアの種類を理解する
 
 **デバイス上のマルウェアの種類**は、Intune に登録されているデバイスで検出されたさまざまな種類のマルウェアを示しています。 Microsoft 365 セキュリティセンターでは、それぞれの種類を調べることができます。
 
-![デバイスカードのマルウェアの種類](../images/types-of-malware-on-devices.png)
+![デバイスカードのマルウェアの種類](../../media/types-of-malware-on-devices.png)
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>デバイスで検出された特定のマルウェアについて理解する
 
 **デバイス上のマルウェア**は、デバイスで検出された特定のマルウェアの一覧を提供します。
 
-![デバイスカードのマルウェア](../images/malware-on-devices.png)
+![デバイスカードのマルウェア](../../media/malware-on-devices.png)
 
 ### <a name="understand-which-devices-have-the-most-malware"></a>最もマルウェアがあるデバイスを理解する
 
 **マルウェアが検出**されたデバイスには、マルウェアが検出されたデバイスが表示されます。 Microsoft 365 セキュリティセンターでは、マルウェアがアクティブであるかどうか、デバイスを使用しているかどうか、および Intune での管理状態を調査できます。
 
-![マルウェア検出カードがあるデバイス](../images/devices-with-malware-detections.png)
+![マルウェア検出カードがあるデバイス](../../media/devices-with-malware-detections.png)
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>最も多くのマルウェアがあるデバイスをどのユーザーが所有しているかを理解する
 
 **マルウェアが検出**されたユーザーには、マルウェアが検出されたデバイスを持つユーザーが表示されます。 Microsoft 365 セキュリティセンターでは、各ユーザーに割り当てられているデバイスの数と、各デバイスおよびマルウェアの種類に関する詳細情報を表示できます。
 
-![マルウェア検出カードを使用するユーザー](../images/users-with-malware-detections.png)
+![マルウェア検出カードを使用するユーザー](../../media/users-with-malware-detections.png)
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を監視および管理する
 
 [Attack Surface Reduction (ASR) ルール](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)は、マルウェアに感染した場合によく使用される操作やアプリを阻止するのに役立ちます。 このようなルールによって、実行可能ファイルの実行を許可するタイミングと方法を制御します。 たとえば、JavaScript や VBScript がダウンロードした実行可能ファイルを開始することを禁止したり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行するプロセスをブロックしたりできます。
 
-![アタック表面減少カード](../images/attack-surface-reduction-rules.png)
+![アタック表面減少カード](../../media/attack-surface-reduction-rules.png)
 
 **[攻撃面の減少ルール]** カードには、デバイス全体に配置するルールの概要が示されます。
 
@@ -166,7 +166,7 @@ Intune 登録デバイスデータには次のものが含まれます。
 
 ネットワーク内の ASR ルールの検出に関する詳細情報を表示するには、[ **Attack surface reduction ルール**カード] の [**検出の表示**] を選択します。 [詳細レポート] ページの [**検出**] タブが開きます。
 
-![[検出] タブ](../images/detections-tab.png)
+![[検出] タブ](../../media/detections-tab.png)
 
 ページ上部のグラフには、ブロックまたは監査された時間帯の検出の検出が表示されます。 下部の表は、最近の検出のリストです。 表に示された次の情報を使用して、検出の種類を理解します。
 
@@ -179,7 +179,7 @@ Intune 登録デバイスデータには次のものが含まれます。
 
 [ **Attack surface reduction ルール**レポート] ページで、[**構成**] タブに移動して個々のデバイスのルールの設定を確認します。 デバイスを選択して、各ルールがブロックモード、監査モード、または完全にオフになっているかどうかに関する詳細情報を取得します。
 
-![[構成] タブ](../images/configuration-tab.png)
+![[構成] タブ](../../media/configuration-tab.png)
 
 Microsoft Intune は、ASR ルールの管理機能を提供します。 設定を更新する場合は、タブの [デバイスの**構成**] の [**開始**] を選択して、Intune でデバイス管理を開きます。
 
@@ -192,7 +192,7 @@ Microsoft 365 セキュリティセンターでは、攻撃対象から[除外�
 >[!NOTE]  
 >このツールでは、すべての攻撃対象領域の削減ルールによって検出が分析されますが、[一部のルールのみが除外をサポート](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr)します。
 
-![[除外の追加] タブ](../images/add-exclusions-tab.png)
+![[除外の追加] タブ](../../media/add-exclusions-tab.png)
 
 攻撃対象領域の削減ルールによって検出されたすべてのファイル名の一覧を示します。 ファイルを選択して、それらを除外した場合の影響を確認できます。
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 26e227b4b1e8047ca962ca9e65b139bacae55e03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599994"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086940"
 ---
 # <a name="manage-tickets-through-servicenow"></a>ServiceNow を介してチケットを管理する
 
@@ -61,7 +61,7 @@ Microsoft 365 セキュリティセンターから ServiceNow チケットを作
 
 Microsoft 365 セキュリティセンターのホームページに移動して、ServiceNow 接続カードを表示します。
 
-![ServiceNow を使用していますか](../images/do-you-use-servicenow-250.png)
+![ServiceNow を使用していますか](../../media/do-you-use-servicenow-250.png)
 
 [ServiceNow に接続] を選択して、[ServiceNow セットアップ] ページに移動します。 指示に従って、Microsoft 365 Connector アプリを承認します。
 
@@ -74,7 +74,7 @@ Microsoft 365 セキュリティセンターのホームページに移動して
 
 統合がセットアップされたら、特定の Microsoft セキュリティスコア向上アクションに基づいて ServiceNow タスクを作成します。 Microsoft 365 セキュリティセンターポータルで、[セキュリティで保護されたスコア] のすべての改善アクションに移動し、[共有] アイコンを選択します。 ドロップダウンオプションの1つは ServiceNow です。
 
-![セキュリティで保護されたスコアでの ServiceNow 共有](../images/servicenow-share.png)
+![セキュリティで保護されたスコアでの ServiceNow 共有](../../media/servicenow-share.png)
 
 タスクが生成され、優先度を設定して、名前、説明、または期限を編集できます。 すべての必須フィールドが入力されたら、そのタスクを ServiceNow に送信します。
 
@@ -84,7 +84,7 @@ Microsoft 365 セキュリティセンターのホームページに移動して
 
 ServiceNow 変更管理およびインシデント管理チケットが作成されると、Microsoft 365 セキュリティセンターのホームページのカードに表示されます。 これらのカードから、チケットの作成、すべてのチケットの表示、または ServiceNow 構成の管理を行うことができます。
 
-![ServiceNow 変更管理チケット](../images/change-management-375.png)  ![ServiceNow インシデント管理チケット](../images/incident-management-375.png)
+![ServiceNow 変更管理チケット](../../media/change-management-375.png)  ![ServiceNow インシデント管理チケット](../../media/incident-management-375.png)
 
 Microsoft 365 セキュリティセンターで ServiceNow 統合を再プロビジョニングまたは管理するには、いずれかのカードで**servicenow 構成を管理**するを選択します。 そこから、現在の ServiceNow 接続を削除し、チケットの状態名をカスタマイズします。
 

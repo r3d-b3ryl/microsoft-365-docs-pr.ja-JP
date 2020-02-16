@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6e5dd8d1d80d08ed808bc607fcc7aba8a390a9ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6f6468117f73d6cf7079ce50e8ea951422bfc073
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600314"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087437"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -33,7 +33,7 @@ ms.locfileid: "41600314"
 
 [高度な捜索](advanced-hunting-overview.md)クエリは、同じ組織内のユーザー間で共有できます。 また、GitHub で公開されているクエリも検索できます。 これらのクエリを使用すると、クエリを最初から作成することなく、特定の脅威の捜索シナリオを迅速に実行できます。
 
-![共有クエリの画像](../images/advanced-hunting-shared-queries.png)
+![共有クエリの画像](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>クエリを保存、変更、共有する
 新規または既存のクエリを保存して、自分のみアクセスできるようにしたり、組織内の他のユーザーと共有したりできます。 
@@ -44,7 +44,7 @@ ms.locfileid: "41600314"
     
 3. クエリの名前を入力します。 
 
-   ![クエリの保存の画像](../images/advanced-hunting-save-query.png)
+   ![クエリの保存の画像](../../media/advanced-hunting-save-query.png)
 
 4. クエリを保存するフォルダーを選択します。
     - [**共有クエリ**] — 組織のすべてのユーザーに共有する
@@ -55,7 +55,7 @@ ms.locfileid: "41600314"
 ## <a name="delete-or-rename-a-query"></a>クエリを削除または名前を変更する
 1. 名前を変更または削除するクエリを右クリックします。
 
-    ![削除するクエリの画像](../images/advanced_hunting_delete_rename.png)
+    ![削除するクエリの画像](../../media/advanced_hunting_delete_rename.png)
 
 2. [**削除**] を選択して、削除を確認します。 または、[**名前の変更**] を選択して、クエリに新しい名前を入力ます。
 

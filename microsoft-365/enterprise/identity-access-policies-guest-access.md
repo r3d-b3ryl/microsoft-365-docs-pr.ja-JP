@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601054"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067458"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>ゲストおよび外部の B2B アクセスを許可するためのポリシー
 この記事では、推奨される一般的な id およびデバイスアクセスポリシーを調整して、B2B アカウントアクセス (ゲストおよび外部ユーザー) を許可する方法について説明します。 このガイダンスは、[共通の id およびデバイスアクセスポリシー](identity-access-policies.md)に基づいて構築されています。
@@ -33,7 +33,7 @@ Azure AD テナントを使用して認証するための B2B ユーザーのパ
 
 次の図は、一般的な id とデバイスのアクセスポリシーと、ゲストおよび外部アクセスを保護するために追加または更新するポリシー (鉛筆アイコン) を示しています。 
 
-![ゲストアクセスを保護するためのポリシー更新の概要](../images/identity-access-ruleset-guest.png)
+![ゲストアクセスを保護するためのポリシー更新の概要](../media/identity-access-ruleset-guest.png)
 
 次の表に、更新または新規作成のどちらかを行う必要があるポリシーを示します。 共通のポリシーは、[一般的な id とデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクしています。
 
@@ -45,7 +45,7 @@ Azure AD テナントを使用して認証するための B2B ユーザーのパ
 
 条件付きアクセスルールにゲストと外部ユーザーを含めたり、除外したりするには、[包含または除外] タブをクリックして、**すべてのゲストと外部ユーザー**をチェックします。
 
-![ゲストを除外するためのコントロールの画面キャプチャ](../images/identity-access-exclude-guests-ui.png)
+![ゲストを除外するためのコントロールの画面キャプチャ](../media/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>詳細情報
 

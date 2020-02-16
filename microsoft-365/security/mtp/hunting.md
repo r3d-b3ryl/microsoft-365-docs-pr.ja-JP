@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9f647ba306215d20d6fb1d0c7dbfd8d3b96fb909
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7e41190d3cad9328e678ff47b0e0bf0d38adb7c9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600244"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087723"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Microsoft 365 での脅威を探します。
 
@@ -28,14 +28,14 @@ Microsoft 365 セキュリティセンターの脅威を探す機能を使用す
 - Microsoft Defender ATP-[デバイスに対する脅威を探し](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)ます。
 - Azure ATP- [id への脅威を探し](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)ます。
 
-![探しているページ](../images/hunt.png)
+![探しているページ](../../media/hunt.png)
 
 
 ## <a name="hunt-with-microsoft-threat-protection"></a>Microsoft の脅威保護を使用したハント
 
 Microsoft の[脅威保護を有効](mtp-enable.md)にして、microsoft 365 セキュリティセンターで、高度な検索クエリインターフェイスを直接取得します。 [高度な](advanced-hunting-overview.md)検索を使用すると、MICROSOFT Defender atp、利用デバイスからのデータ、および OFFICE 365 ATP のデータを参照する単一のクエリを作成して、電子メールからデータを提供できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検索の概要](advanced-hunting-overview.md)
 - [Microsoft Threat Protection の概要](microsoft-threat-protection.md)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)
