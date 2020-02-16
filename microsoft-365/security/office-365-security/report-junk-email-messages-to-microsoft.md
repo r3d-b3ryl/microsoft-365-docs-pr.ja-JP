@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 用迷惑メール報告アドインでは、次のような複数の方法で迷惑メール メッセージを報告できます。
-ms.openlocfilehash: a2a427f13c329c4c72f718bb19ecc0dce06f8f91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598574"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088257"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>迷惑メール メッセージを Microsoft に報告する
 
@@ -47,10 +47,10 @@ Microsoft Office Outlook 用迷惑メール報告アドインでは、次のよ�
 1. 迷惑メールとして報告するメッセージを右クリックします。
 
 2. **[迷惑メール]** を選択し、 **[迷惑メールの報告]** をクリックします。
-    ![受信トレイから迷惑メール メッセージを報告する](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+    ![受信トレイから迷惑メール メッセージを報告する](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
 
 3. **[Microsoft Junk E-mail Reporting Add-in]** ダイアログ ボックスが開きます。 選択したメッセージを迷惑メールとして送信する場合は、 **[はい]** をクリックします。
-    ![迷惑メールとして報告することの確認](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![迷惑メールとして報告することの確認](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > 迷惑メール メッセージの送信時にこの確認メッセージを表示しない場合は、 **[今後、このメッセージを表示しない]** チェック ボックスをオンにします。
@@ -59,10 +59,10 @@ Microsoft Office Outlook 用迷惑メール報告アドインでは、次のよ�
 
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>開いたメッセージから迷惑メール メッセージを報告するには
 
-1. 迷惑メール メッセージが開いた状態で、メッセージ リボンの **[迷惑メールの報告]** ボタンをクリックします。 たとえば、 **[迷惑メール** \> **レポート迷惑** ![メール] をクリックすると、メッセージ内から迷惑メールを受信します。](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. 迷惑メール メッセージが開いた状態で、メッセージ リボンの **[迷惑メールの報告]** ボタンをクリックします。 たとえば、 **[迷惑メール** \> **レポート迷惑** ![メール] をクリックすると、メッセージ内から迷惑メールを受信します。](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. **[Microsoft Junk E-mail Reporting Add-in]** ダイアログ ボックスが開きます。 選択したメッセージを迷惑メールとして送信する場合は、 **[はい]** をクリックします。
-    ![迷惑メールとして報告することの確認](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![迷惑メールとして報告することの確認](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > 迷惑メール メッセージの送信時にこの確認メッセージを表示しない場合は、 **[今後、このメッセージを表示しない]** チェック ボックスをオンにします。

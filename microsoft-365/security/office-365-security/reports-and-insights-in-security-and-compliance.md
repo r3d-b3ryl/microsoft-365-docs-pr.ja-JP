@@ -17,12 +17,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報の概要について説明します。
-ms.openlocfilehash: edbc4cd53b5cd830996220c875a1b48565a96c13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c205350ef57514c434ac75fae21c104a2c1706e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598564"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088146"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp; /コンプライアンスセンターのスマートレポートと洞察
 
@@ -32,7 +32,7 @@ ms.locfileid: "41598564"
 
 Office 365 セキュリティ&amp;コンプライアンスセンターで利用可能な監視機能には、セキュリティおよびコンプライアンス管理者が、セキュリティ攻撃や不審な活動の増加など、優先度の高い問題に焦点を当てることができるスマートレポートと分析情報が含まれています。 ダッシュボードでは、スマートレポートと分析情報は次のようになります。
   
-![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>ダッシュボード] を選択します。](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>ダッシュボード] を選択します。](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 スマートレポートと分析には、問題の領域を強調するだけでなく、データを表示して探索したり、簡単なアクションを実行したりするための推奨事項やリンクが含まれています。 たとえば、エンドユーザーによってスパムとしてマークされている電子メールメッセージの数が急増している組織では、スパム対策ポリシーを見直して、適切なレベルの保護が適用されていることを確認することをお勧めします。
   
@@ -73,7 +73,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターで利用�
     
 - [セキュリティ&amp; /コンプライアンスセンターで既存のレポートをダウンロードする](download-existing-reports.md)
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 セキュリティセンターのレポートを監視および表示する](../mtp/monitoring-and-reporting.md)
   

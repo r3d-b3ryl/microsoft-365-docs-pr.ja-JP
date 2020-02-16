@@ -16,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威調査および応答機能を使用して、組織が侵入や脅威を検出し、脅威から迅速に脅威を軽減および回復する方法について説明します。
-ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6734903198fa29cdd7ac4295feb6313479ecab50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599104"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088678"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Office 365 の脅威の調査および応答機能を使用して組織を安全に保つ
 
@@ -35,7 +35,7 @@ Office [365 の脅威の調査と応答](office-365-ti.md)機能が Office 365 E
 
 エクスプローラーを使用すると、管理者はユーザーとメール間の関係を移動することができます。 特定のメールが正しくないことがわかりますか。 これを検索して、どのユーザーがメールを受信したかを確認してから、一連のイベントを実行し、それらのユーザーが実行したことを確認します。
 
-![Office 365 の脅威エクスプローラーのスクリーンショット、マルウェアファミリによる色分け](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Office 365 の脅威エクスプローラーのスクリーンショット、マルウェアファミリによる色分け](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>脅威を迅速に軽減および復旧する
 
@@ -43,7 +43,7 @@ Office [365 の脅威の調査と応答](office-365-ti.md)機能が Office 365 E
 
  **更新:** インシデントフレームワークから直接電子メールメッセージを削除 (ソフトまたは削除) する機能が追加されました。 以前の管理者は、ユーザーの迷惑メールフォルダーにのみメールを移動でき、ユーザーはそのアイテムを回復できます。 新たにリリースされた削除機能を使用すると、悪意のあるメールまたは不要なメールが完全に削除されていることを確認できるようになりました。
 
-![インシデント修復の電子メールリストのスクリーンショット](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![インシデント修復の電子メールリストのスクリーンショット](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Microsoft の脅威テレメトリを活用する
 
