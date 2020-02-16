@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 15c507cd900d339b1de27389647e9f78c0aac4a6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9c978144df9e254ac3072e3d0d2ed4a0403fad43
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601604"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081554"
 ---
-# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="f6880-102">高度な電子情報開示でケースデータを確認する</span><span class="sxs-lookup"><span data-stu-id="f6880-102">Review case data in Advanced eDiscovery</span></span>
+# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="1f2e9-102">高度な電子情報開示でケースデータを確認する</span><span class="sxs-lookup"><span data-stu-id="1f2e9-102">Review case data in Advanced eDiscovery</span></span>
 
 
-<span data-ttu-id="f6880-103">近日対応予定</span><span class="sxs-lookup"><span data-stu-id="f6880-103">Coming soon</span></span>
+<span data-ttu-id="1f2e9-103">近日対応予定</span><span class="sxs-lookup"><span data-stu-id="1f2e9-103">Coming soon</span></span>

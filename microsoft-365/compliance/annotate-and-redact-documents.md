@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4369420cbaccd6753d8b55aa1b7c2af8bd1275c1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05aacce9605e17dd45afed8eb3bf16b8784a2316
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596144"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079924"
 ---
-# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="e7719-102">証拠でドキュメントに注釈を付けて墨消しする</span><span class="sxs-lookup"><span data-stu-id="e7719-102">Annotate and redact documents in evidence</span></span>
+# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="94d3b-102">証拠でドキュメントに注釈を付けて墨消しする</span><span class="sxs-lookup"><span data-stu-id="94d3b-102">Annotate and redact documents in evidence</span></span>
 
-<span data-ttu-id="e7719-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="e7719-103">Content coming soon.</span></span>
+<span data-ttu-id="94d3b-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="94d3b-103">Content coming soon.</span></span>
