@@ -16,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 の特権アクセス管理について理解して構成します。
-ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d678c109f42901be2413c2b33e362d6796be96b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600924"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067192"
 ---
 # <a name="step-6-configure-email-encryption"></a>手順 6: 電子メールの暗号化を構成する
 
 *この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Microsoft 365 には、3種類の電子メール暗号化があります。
 
@@ -38,11 +38,11 @@ Microsoft 365 には、3種類の電子メール暗号化があります。
 | Secure/Multipurpose Internet Mail Extensions (S/MIME) | 暗号化とデジタル署名による電子メール保護。 |
 |||
 
-## <a name="office-365-message-encryption"></a>はい
+## <a name="office-365-message-encryption"></a>Office 365 Message Encryption
 
 OME を使用すると、組織は組織内外のユーザー間で暗号化された電子メールメッセージの送受信を行うことができます。 OME は、Outlook.com、Yahoo!、Gmail、その他の電子メールサービスと連携して動作します。 電子メールメッセージの暗号化を使用すると、意図した受信者のみがメッセージを表示できるようになります。
 
-![電子メールメッセージの OME 暗号化](./media/infoprotect-email-encryption/ome-encryption.png)
+![電子メールメッセージの OME 暗号化](../media/infoprotect-email-encryption/ome-encryption.png)
 
 暗号化の条件を定義するトランスポートルールを設定します。 ユーザーがルールに一致するメッセージを送信する場合、自動的に暗号化が適用されます。
 
@@ -56,7 +56,7 @@ Microsoft 365 の IRM は、追加の暗号化を使用して情報を保護し�
 
 IRM ポリシーは、Microsoft 365 内で構成されており、SharePoint Online および電子メールメッセージ内のドキュメントに適用できます。 IRM で保護された電子メールには、適用されたポリシー設定が含まれており、それと一緒に移動します。 
 
-![電子メールメッセージの IRM 保護](./media/infoprotect-email-encryption/irm-protection.png)
+![電子メールメッセージの IRM 保護](../media/infoprotect-email-encryption/irm-protection.png)
 
 受信者が含まれているポリシーを使用して電子メールを開くと、ポリシー設定を使用して、メッセージを復号化し、受信者が実行できる処理を決定します。 
 
@@ -66,7 +66,7 @@ IRM ポリシーは、Microsoft 365 内で構成されており、SharePoint Onl
 
 S/MIME は、デジタル証明書ベースの電子メールベースの保護ソリューションで、メッセージの暗号化とデジタル署名の両方を行うことができます。 メッセージを暗号化することで、本来の受信者だけがメッセージを開き、閲覧できます。 デジタル署名は、受信者が送信者の身元を確認し、送信者のみが送信したことを確認するのに便利です。
 
-![電子メールメッセージの S/MIME 保護](./media/infoprotect-email-encryption/smime-protection.png)
+![電子メールメッセージの S/MIME 保護](../media/infoprotect-email-encryption/smime-protection.png)
 
 S/MIME は、Microsoft 365 サブスクリプションの他のメールボックスまたは外部ユーザーに電子メールで使用できます。
 メッセージ暗号化とデジタル署名の両方は、メッセージの暗号化または復号化、およびデジタル署名の作成と検証のための公開キーと秘密キーを含むデジタル証明書を使用することによって可能になります。
@@ -81,4 +81,4 @@ S/MIME を使用するには、各受信者の公開キーを持っている必�
 
 |||
 |:-------|:-----|
-|![手順 7](./media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
+|![手順 7](../media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|

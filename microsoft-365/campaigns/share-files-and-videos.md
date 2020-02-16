@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams と SharePoint を使用して、キャンペーン内でファイルとビデオを共有できます。
-ms.openlocfilehash: bd6fae6c728cee50efcb5094edd6c75f6bdf3b11
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b67b6f834fd9333814f1807567776644dd2826e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594728"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080420"
 ---
 # <a name="share-files-and-videos"></a>ファイルやビデオを共有する
 
 ファイルを表示できるユーザーと、ファイルを編集できるユーザーを制御する必要がある場合は、ファイルを安全な場所に保存して、アクセス許可を適切に適用できるようにする必要があります。 Microsoft teams を使用してファイルを保存し、Microsoft Teams を使用して、または SharePoint リンクを送信することによって、そのファイルをキャンペーンの内部または外部のどちらでも共有できます。 電子メールの添付ファイルではなくリンクを送信するということは、ファイルを表示および変更しているユーザーを知ることができます。また、アクセス許可がなくても、それらを表示または変更することはできません。 
 
-![[ファイル] タブを表示し、メニューの [リンクの取得] を表示する Microsoft Teams ウィンドウの図](media/m365-democracy-teams-sharefiles.png)
+![[ファイル] タブを表示し、メニューの [リンクの取得] を表示する Microsoft Teams ウィンドウの図](../media/m365-democracy-teams-sharefiles.png)
 
 Microsoft Teams と SharePoint のファイルを使用して、ファイルに対して共同作業を行い、互いの変更を確認することもできます。 Microsoft Teams を使用して、政治キャンペーンの内部でファイルを共有します。 キャンペーン外のユーザーと外部で共有する必要がある場合は、それらをゲストとしてチームに追加したり、セキュリティで保護された SharePoint リンクを送信したりできます。
 
@@ -68,4 +68,4 @@ Microsoft Teams を使用せずに、保護されたリンクをゲストと共�
 
 ファイルを共有する方法の簡単な概要については、「 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435)または[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)でインフォグラフィックをダウンロードする」をご覧ください。
 
-[![別のユーザーとファイルを共有する図](media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![別のユーザーとファイルを共有する図](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

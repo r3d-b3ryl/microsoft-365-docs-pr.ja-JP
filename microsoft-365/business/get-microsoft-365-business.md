@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft パートナーセンターから Microsoft 365 Business を購入する方法について説明します。
-ms.openlocfilehash: 18af5b0aee378784199e91c8254b50fd1104172b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba6aa806e3e628e8c3478abb57c4529e4f5692bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593953"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065822"
 ---
 # <a name="get-microsoft-365-business"></a>Microsoft 365 Business を入手する
 
@@ -46,13 +46,13 @@ Microsoft 365 Business を購入してセットアップのヘルプを受ける
     
 2. パートナーダッシュボードで、[**顧客**] を選択し、お客様を選択するか、新しい顧客を追加してから、Microsoft 365 Business を取得します。
     
-    ![Microsoft パートナーセンターで、お客様を追加します。](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![Microsoft パートナーセンターで、お客様を追加します。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. 顧客の [**サブスクリプション**] ページで、[**サブスクリプションの追加**] を選択し、[カタログ] の下の [Small business] オプションを選択してから、[ **Microsoft 365 business**] を選択します。
     
     必要なライセンス数 (最大 300) を選びます。 300を超えるユーザーがいる場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 」を参照してください。 
     
-    ![[サブスクリプションの新規作成] ページで、[small business] を選択します。](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![[サブスクリプションの新規作成] ページで、[small business] を選択します。](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
     新しい顧客を追加するための残りの手順を完了します (会社名を含む)。
     

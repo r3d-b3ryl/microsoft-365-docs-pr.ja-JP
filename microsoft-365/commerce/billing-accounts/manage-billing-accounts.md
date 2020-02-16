@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 課金アカウントとそれらを管理する方法について説明します。
-ms.openlocfilehash: d05b0c78da31ca0c829a71708906c34d6b54be97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37b9d8a9de8b187e5685f2b10fbb20d1589904b4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594154"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080404"
 ---
 # <a name="manage-billing-accounts"></a>課金アカウントを管理する
 
@@ -151,7 +151,7 @@ Microsoft 製品を試用または購入するためにサインアップする�
 
 売上税は、単価に対して計算されてから集計されます。
 
-次に例を示します。
+例:
 
 >*(単価 X 税率)X 数量 = 総売上税*
 

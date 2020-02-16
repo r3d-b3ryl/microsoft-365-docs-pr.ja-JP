@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントをセットアップして保護する方法について説明します。
-ms.openlocfilehash: 6160f7458dc9a4c343c48f07d87776529c4f1326
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594822"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080585"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
@@ -48,18 +48,18 @@ Microsoft 365 Business にサインアップして、情報を入力すると、
 
  1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理センター</a>に移動し、左側のナビゲーションで [**ユーザー** \>の**アクティブなユーザー** ] を選択します。
 
-    ![左側のナビゲーションで、[ユーザー]、[アクティブユーザー] の順に選択します。](media/Activeusers.png)
+    ![左側のナビゲーションで、[ユーザー]、[アクティブユーザー] の順に選択します。](../media/Activeusers.png)
 
 2. [**アクティブなユーザー** ] ページで、ページの上部にある [**ユーザーの追加**] を選択し、[**新しいユーザー** ] パネルで名前とその他の情報を入力します。
 3. [**役割**] セクションを展開し、[**グローバル管理者**] を選択して、このユーザーにグローバル管理者アクセス権を付与します。 [カスタマイズされた**管理者**] を選択して、表示される役割のいずれかを選択することもできます。
 
     [**代替メールアドレス**] テキストボックスに別の電子メールを入力します。 ロックアウトされている場合は、このアドレスを使用してパスワード情報を回復できます。グローバル管理者の場合、billing ステートメントはこのアドレスにも送信されます。
 
-    ![管理者の役割を選択する](media/adminroles.png)
+    ![管理者の役割を選択する](../media/adminroles.png)
     
 4. [**製品ライセンス**] セクションで、 **Microsoft 365 Business**のセレクターを**オフ**にし、[**製品ライセンスなしでユーザーを作成**する] を **[オン**] に移動します。
 
-    ![製品ライセンスを選択する](media/productlicense.png)
+    ![製品ライセンスを選択する](../media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>緊急管理者アカウントを作成する
 

@@ -1,5 +1,7 @@
 ---
 title: Windows 10 PC でアプリの保護設定を検証する
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Windows 10 デバイスで Microsoft 365 Business app protection の設定を検証する方法について説明します。
-ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 577921f7f33eafbbe652dcf825a145d89f1ff556
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721862"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057286"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でアプリの保護設定を検証する
 
@@ -36,11 +38,11 @@ ms.locfileid: "38721862"
   
 1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
-    ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
+    ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
 2. [ \<テナント\>名**で管理**] ページで、次の図に示すような**管理サーバーのアドレス**を含む**接続情報**を確認できます。 
     
-    ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
+    ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
  **非管理対象アプリに会社のデータを貼り付けることができないことを確認する**
   
@@ -52,7 +54,7 @@ ms.locfileid: "38721862"
     
     アプリがコンテンツにアクセスできないことを示すエラーが表示されます。
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     ただし、同じコンテンツを Word 2016 には貼り付けることができます。
     
@@ -68,11 +70,11 @@ ms.locfileid: "38721862"
     
 4. [ **職場または学校にアクセスする**] ページで、[ **職場または学校アカウント**] を選んで、[ **情報**] を選びます。
     
-    ![[職場または学校のアカウント] ダイアログの [情報] をクリックまたはタップします。](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![[職場または学校のアカウント] ダイアログの [情報] をクリックまたはタップします。](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
 5. Access の**職場または学校**のページには、次の図に示すよう**な管理サーバーのアドレス**を含む**接続情報**が表示され、その中に「 *wip* and *mam* 」という単語が含まれています。 
     
-    ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
+    ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
  **非管理対象アプリに会社のデータを貼り付けることができないことを確認する**
   
@@ -84,7 +86,7 @@ ms.locfileid: "38721862"
     
     アプリがコンテンツにアクセスできないというエラーが表示されます。
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     ただし、同じコンテンツを Word 2016 には貼り付けることができます。
     

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Office 365 ATP の安全なドキュメントについて説明します。
-ms.openlocfilehash: db73fc152a5a580a28bf6d8424ebc2a139cf3303
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: c76ae2c776c31cf798c21d7330bce488ad1e7cc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960355"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082372"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office の安全なドキュメント 365 Advanced Threat Protection
 
@@ -46,7 +46,7 @@ ms.locfileid: "41960355"
 
 4. 完了したら、**[保存]** をクリックします。
 
-![ATP の「安全な添付ファイル」ページ](../media/safe-docs.png)
+![ATP の「安全な添付ファイル」ページ](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-safe-documents"></a>Exchange Online PowerShell または Exchange Online Protection PowerShell を使用して安全なドキュメントを構成する
 

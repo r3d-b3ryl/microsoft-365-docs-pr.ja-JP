@@ -16,12 +16,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でメッセージの SCL を設定する方法について説明します。
-ms.openlocfilehash: 4befc3c371118416b6d07f151eb2c346f8520608
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598058"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081982"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
@@ -39,14 +39,14 @@ ms.locfileid: "41598058"
 
 1. Exchange 管理センター (EAC) で、 **[メール フロー]** \> **[ルール]** を選択します。
 
-2. **[新規作成]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) を選択し、 **[新しいルールの作成]** を選択します。
+2. **[新規作成]**![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif) を選択し、 **[新しいルールの作成]** を選択します。
 
 3. ルールの名前を指定します。
 
 4. **[その他のオプション]** を選択し、 **[このルールを適用する条件]** で、このルールに設定するアクション (つまり、SCL 値の設定) をトリガーする条件を指定します。
 
    たとえば、 **[送信者]** \> **[外部/内部である]** を設定し、 **[送信者の場所の選択]** ダイアログ ボックスで **[組織内]**、 **[OK]** の順に選択します。<br/>
-   ![送信者の場所の選択](../media/EOP-ETR-SetSCL-1.jpg)
+   ![送信者の場所の選択](../../media/EOP-ETR-SetSCL-1.jpg)
 
 5. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** \> **[SCL (Spam Confidence Level) の設定]** の順に選択します。
 

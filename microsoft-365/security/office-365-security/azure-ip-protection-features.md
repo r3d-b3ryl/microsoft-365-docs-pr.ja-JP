@@ -16,12 +16,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: 情報を保護するための最初の手順を説明するために、2018年7月に、Azure Information Protection の対象となるすべてのテナントに、Azure Information protection の保護機能が既定で有効になります。 以前は Office 365 では、Azure Information Protection の保護機能が Rights Management または Azure RMS と呼ばれていました。 組織に Office E3 service プランまたはより高いサービスプランがある場合は、これらの機能をロールアウトする際に、Azure Information Protection を使用して情報の保護を開始することになります。
-ms.openlocfilehash: 6ff4ecb4dc9b0e2b0a4e8dd7a2d9573326afc6a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de3b233d4baac380608d3a209c2ffea274c20d5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599774"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083579"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>既存の Office 365 テナントにロールアウトされる Azure Information Protection の保護機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "41599774"
 
 テナント管理者は、Office 365 管理者ポータルで保護の状態を確認できます。
 
-![Office 365 の権限管理がアクティブ化されたことを示すスクリーンショット。](../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
+![Office 365 の権限管理がアクティブ化されたことを示すスクリーンショット。](../../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
 
 ## <a name="why-are-we-making-this-change"></a>この変更を行う理由
 
@@ -85,6 +85,6 @@ ADSI Edit を使用して、Active Directory で発行された SCP があるか
 
 これを有効にしていない場合は、 [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)で発表された新しいバージョンの Office 365 Message Encryption の使用を開始して、Azure Information protection の暗号化および保護機能を活用することができます。
 
-![Web 上の Outlook で OME 保護されたメッセージを示すスクリーンショット。](../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+![Web 上の Outlook で OME 保護されたメッセージを示すスクリーンショット。](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
 新しい機能の詳細については、「 [Office 365 Message Encryption](../../compliance/ome.md)」を参照してください。

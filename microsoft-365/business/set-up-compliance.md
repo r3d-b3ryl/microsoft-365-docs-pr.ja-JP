@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 Business の脅威保護を強化する
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データ損失を防ぎ、機密データにラベルを付けます。
-ms.openlocfilehash: 6fae95e8c5e6d133e3163dbdfd3c09cfede11382
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: d569ff8d84faf82881035f0ed54e5d175605776f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715124"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064709"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能のセットアップ
 
@@ -68,6 +70,6 @@ AIP クライアントを手動でインストールするには、次のよう�
 1. [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=53018)から**AzinfoProtection_UL .exe**をダウンロードします。
  
 2. Word 文書を表示し、[**ホーム**] タブで [**秘密度**] オプションが有効になっていることを確認することで、インストールが正常に行われたことを確認できます。
-<br/>![Word 文書内の [保護] タブのドロップダウン](media/word-sensitivity.png)
+<br/>![Word 文書内の [保護] タブのドロップダウン](../media/word-sensitivity.png)
 
 詳細については、「[クライアントをインストールする](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)」を参照してください。

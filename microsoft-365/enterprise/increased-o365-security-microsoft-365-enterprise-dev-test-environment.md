@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の Microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: 7587a840a765a4dfb6f966f927314e63ac28fe85
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 465e9df40e8dfe9883a81d352eabff17151df8f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600984"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067264"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズテスト環境の Microsoft 365 セキュリティの強化
 
@@ -27,10 +27,10 @@ ms.locfileid: "41600984"
 
 この記事の手順に従って、Microsoft 365 エンタープライズテスト環境のセキュリティを強化するために、その他の Microsoft 365 設定を構成します。
 
-![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
@@ -70,7 +70,7 @@ Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsof
 
 3. [ **SharePoint、OneDrive、Microsoft Teams のファイルを保護**する] で。 [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 
 ### <a name="enable-anti-malware"></a>マルウェア対策を有効にする

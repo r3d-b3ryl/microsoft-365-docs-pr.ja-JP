@@ -1,19 +1,19 @@
 ---
-title: Microsoft マネージドデスクトップの前提条件
+title: Microsoft マネージド デスクトップの前提条件
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6595b6496c8fb2e71542b6aae9f35e4f40c08aa4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b729712a188c105fdf8a38e208124c2ef4c27a33
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981718"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085876"
 ---
-# <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの前提条件
+# <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの前提条件
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
@@ -22,7 +22,7 @@ ms.locfileid: "36981718"
 
 Microsoft FastTrack を使用すると、これらの要件を満たし、Microsoft マネージドデスクトップへの参加準備に役立てることができます。 詳細については、「 [Microsoft FastTrack](https://fasttrack.microsoft.com/about)」を参照してください。 
 
-項目 | 前提条件の詳細
+分野 | 前提条件の詳細
 --- | ---
 ライセンス |Microsoft マネージドデスクトップでは、次のいずれかの Microsoft 365 ライセンス (または同等のライセンス) が必要です。<br>-Microsoft 365 E5<br>-Microsoft 365 E5 セキュリティアドオンを使用した microsoft 365 E3<br><br>Microsoft マネージドデスクトップでの特定のサービスプランおよびその役割の詳細については、このトピックの「[ライセンスの詳細](#more-about-licenses)」を参照してください。<br>利用可能なライセンスの詳細については、「 [Microsoft 365 ライセンス](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
 接続 |  すべての Microsoft 管理対象デスクトップデバイスでは、企業ネットワークから多数の Microsoft サービスエンドポイントへの接続が必要です。<br><br>必要な Ip および Url の完全な一覧については、「[ネットワーク構成](../get-ready/network.md)」を参照してください。 

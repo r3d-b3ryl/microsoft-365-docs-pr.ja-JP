@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 322ced9ae3a565e07de372d7775c176ba647301b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599694"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086546"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO ワークショップモジュール 4a: 脅威保護戦略
 
 脅威保護、セキュリティの進化、戦略、およびセキュリティのロードマップに関する重要なな学習事項について説明します。
 
-- PDF の概要をダウンロードする:[モジュール 4a: 脅威保護戦略](../media/ciso-workshop-4a-threat-protection.pdf)
+- PDF の概要をダウンロードする:[モジュール 4a: 脅威保護戦略](../../media/ciso-workshop-4a-threat-protection.pdf)
 - PowerPoint の概要をダウンロードする:[モジュール 4a: 脅威保護戦略](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>概要: 脅威保護戦略 (4:37)

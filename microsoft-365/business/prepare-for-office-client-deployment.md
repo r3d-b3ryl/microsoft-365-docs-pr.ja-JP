@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 32ビット版の Office アプリを Windows 10 コンピューターに自動的にインストールして、更新したままにする方法について説明します。
-ms.openlocfilehash: fa5b2ce1852ebdb1e76c1fa844793fee56af3d68
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593621"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065110"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Microsoft 365 Business による Office クライアントの展開を準備する
 
@@ -44,7 +44,7 @@ Microsoft 365 Business を使用して、Windows 10 コンピューターに32�
     
 To determine if you have the Click-to-Run version of Office, in any Office app go to **File** \> **Account** ( **Office Account** in Outlook). 次の図に示すように**Office の更新プログラム**が表示された場合は、クイック実行を使用してインストールを実行しています。 
   
-![Screenshot of Office updates in Office app Account](media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![Screenshot of Office updates in Office app Account](../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **この機能を利用するメリット**
   
@@ -60,10 +60,10 @@ To determine if you have the Click-to-Run version of Office, in any Office app g
   
 |**Office インストールの開始状態**|**Microsoft 365 Business Office のインストール前に行うアクション**|**終了状態**|
 |:-----|:-----|:-----|
-|Office スイート製品がインストールされない  <br/> |None  <br/> |クイック実行を使用して Office 2016 32 ビットがインストールされている  <br/> |
-|Office (2016 以前) の 32 ビット版クイック実行バージョンはあるが、単体アプリはない  <br/> |None  <br/> |必要に応じて、最新の Office 2016 の 32 ビット版クイック実行バージョンにアップグレードする **\*** <br/> |
-|既存のクイック実行32ビットバージョンの Office とクイック実行の32ビットバージョンまたは64ビットバージョンの Office アプリ (たとえば、Visio、Project)  <br/> |None  <br/> |スタンドアロンアプリは影響を受けません。 スイート製品を Office 2016 の 32 ビット版クイック実行バージョンにアップグレードする  <br/> |
-|Office の 32 ビット版クイック実行バージョンと、32 ビットまたは 64 ビット版 (2016 を除く) MSI の単体 Office アプリがある  <br/> |None  <br/> |スタンドアロンアプリは影響を受けません。 スイート製品を Office 2016 の 32 ビット版クイック実行バージョンにアップグレードする  <br/> ||||
+|Office スイート製品がインストールされない  <br/> |なし  <br/> |クイック実行を使用して Office 2016 32 ビットがインストールされている  <br/> |
+|Office (2016 以前) の 32 ビット版クイック実行バージョンはあるが、単体アプリはない  <br/> |なし  <br/> |必要に応じて、最新の Office 2016 の 32 ビット版クイック実行バージョンにアップグレードする **\*** <br/> |
+|既存のクイック実行32ビットバージョンの Office とクイック実行の32ビットバージョンまたは64ビットバージョンの Office アプリ (たとえば、Visio、Project)  <br/> |なし  <br/> |スタンドアロンアプリは影響を受けません。 スイート製品を Office 2016 の 32 ビット版クイック実行バージョンにアップグレードする  <br/> |
+|Office の 32 ビット版クイック実行バージョンと、32 ビットまたは 64 ビット版 (2016 を除く) MSI の単体 Office アプリがある  <br/> |なし  <br/> |スタンドアロンアプリは影響を受けません。 スイート製品を Office 2016 の 32 ビット版クイック実行バージョンにアップグレードする  <br/> ||||
 |任意の Office の 64 ビット版クイック実行バージョンがある  <br/> |64ビット版の Office アプリをアンインストールしても、32ビットの Office アプリに置き換えられる場合は、アンインストールします。  <br/> |64 ビット版の Office アプリを削除した場合は、32 ビット版クイック実行バージョンの Office 2016 をインストールする  <br/> |
 |Office 2016 の MSI インストールがある (単体アプリの有無は関係ない)  <br/> |MSI Office 2016 をアンインストールする  <br/> |Office 2016 の 32 ビット版クイック実行バージョンをインストールする。単体アプリへの変更はなし  <br/> |
 |既存の Office 2013 (以前) の MSI インストールおよび/または単体の Office アプリ  <br/> |なし  <br/> |Office 2016 の 32 ビット版クイック実行バージョンと既存の MSI Office インストール (および単体アプリ) が共存する  <br/> |

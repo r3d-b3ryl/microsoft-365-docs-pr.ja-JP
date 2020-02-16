@@ -16,12 +16,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 において、Sender Policy Framework (SPF) TXT レコードを DNS で使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。 これは、Office 365 から送信された送信メールに適用されます。 Office 365 から Office 365 内の受信者に送信されたメッセージは、常に SPF チェックに合格します。'
-ms.openlocfilehash: f02219b19af592f9ad27ea963cb07a260c09327f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086005"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
 
@@ -78,7 +78,7 @@ v=spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\> \<enforcement rule\
 
 SPF は、送信者から受信者へのパスが直接パスである場合に最適に機能します。次に例を示します。
 
-![サーバーからサーバーへ直接送信されるときに SPF がメールを認証する方法を示す図。](../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
+![サーバーからサーバーへ直接送信されるときに SPF がメールを認証する方法を示す図。](../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
 
 Woodgrovebank.com がメッセージを受け取る際に、IP アドレス # 1 が contoso.com の SPF TXT レコードにある場合は、メッセージは SPF チェックに合格し認証されます。
 
@@ -87,7 +87,7 @@ Woodgrovebank.com がメッセージを受け取る際に、IP アドレス # 1 
 
 フィッシャーが contoso.com を偽装する方法を見つけたとします。
 
-![偽装しているサーバーから送信されるときに SPF がメールを認証する方法を示す図。](../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
+![偽装しているサーバーから送信されるときに SPF がメールを認証する方法を示す図。](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
 
 IP アドレス #12 は contoso の SPF TXT レコードにないため、メッセージは SPF チェックに失敗し、受信者はそのメッセージをスパムとしてマークすることを選択できます。
 
@@ -96,7 +96,7 @@ IP アドレス #12 は contoso の SPF TXT レコードにないため、メッ
 
 SPF の欠点の1つは、メールが転送されたときに機能しないことです。 たとえば、woodgrovebank.com のユーザーが、outlook.com アカウントにすべての電子メールを送信する転送ルールを設定しているとします。
 
-![電子メール メッセージが転送される際に SPF がメールを認証できないことを示す図。](../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
+![電子メール メッセージが転送される際に SPF がメールを認証できないことを示す図。](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
 このメッセージは最初、woodgrovebank.com で SPF チェックに合格していますが、outlook.com の SPF チェックに失敗します。 IP #25 は、contoso 社の SPF TXT レコードには含まれていません。 このため、Outlook.com はメッセージをスパムとしてマークする可能性があります。 この問題を回避するには、SPF を DKIM や DMARC などの他の電子メールの認証方法と組み合わせて使用します。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 02adda0c2c59d2994b0c6197dd76c6cc893ad9f0
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: cd6b9b14e9bc1ed03635be12873fb90592efe527
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627983"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065324"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Microsoft 365 Business から Microsoft 365 E3 への移行
 
@@ -53,35 +53,35 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 | Office アプリ *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
 | **クラウド生産性アプリ**       | | | 
 | Exchange Online および Outlook   | メールボックスごとに 50 GB の格納域の制限と無制限の Exchange Online アーカイブ   | メールボックスごとに 100 GB の格納域の制限と無制限の Exchange Online アーカイブ | 
-| Teams | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| Teams | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | OneDrive for Business | ユーザーごとに 1 TB のストレージ制限   | 無制限 | 
-| Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| Outlook カスタマーマネージャー、ミル Eiq  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | | 
+| Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Outlook カスタマーマネージャー、ミル Eiq  | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | | 
 | **脅威保護**     | | | 
 | 攻撃対象領域の削減機能 | [このリストを表示する](#threat-protection) | Microsoft Edge のハードウェアベースの分離のエンタープライズ管理 | 
-| Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](./media/check-mark.png)  | 含まれていませんが、に追加できます。 | 
+| Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](../media/check-mark.png) | 含まれていませんが、に追加できます。 | 
 | **ID 管理**       | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|    ![Microsoft 365 Business に含まれている](./media/check-mark.png) | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| Cloud App Discovery、Azure AD Connect Health  |   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| Azure AD Office 365 apps シングルサインオン (SSO): ユーザーごとに10個のアプリ (Salesforce などのギャラリー SaaS アプリ) * | ![Microsoft 365 Business に含まれている](./media/check-mark.png) | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| Azure AD Premium 1 SSO: 制限なし (Azure AD アプリケーションプロキシと、セルフサービスアプリ統合テンプレートを使用したギャラリー以外のアプリを使用したオンプレミスアプリ)  |   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|    ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Cloud App Discovery、Azure AD Connect Health  |   | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Azure AD Office 365 apps シングルサインオン (SSO): ユーザーごとに10個のアプリ (Salesforce などのギャラリー SaaS アプリ) * | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO: 制限なし (Azure AD アプリケーションプロキシと、セルフサービスアプリ統合テンプレートを使用したギャラリー以外のアプリを使用したオンプレミスアプリ)  |   | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | **デバイスとアプリの管理**     | | | 
-| Microsoft Intune、Windows 自動操縦|  ![Microsoft 365 Business に含まれている](./media/check-mark.png) | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-|仮想デスクトップアクセス (VDA)   |  |    ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-|Windows 仮想デスクトップ (WVD)  | ![Microsoft 365 Business に含まれている](./media/check-mark.png) |     ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-|共有コンピューターのライセンス認証 (SCA)   | ![Microsoft 365 Business に含まれている](./media/check-mark.png) |     ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| Microsoft デスクトップ最適化パッケージ    | |     ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| Microsoft Intune、Windows 自動操縦|  ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+|仮想デスクトップアクセス (VDA)   |  |    ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+|Windows 仮想デスクトップ (WVD)  | ![Microsoft 365 Business に含まれている](../media/check-mark.png) |    ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+|共有コンピューターのライセンス認証 (SCA)   | ![Microsoft 365 Business に含まれている](../media/check-mark.png) |    ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Microsoft デスクトップ最適化パッケージ    | |     ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | **情報保護**        | | | 
-| Office 365 データ損失防止、Azure Information Protection プラン1  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| エンドポイント DLP のウィンドウ情報の保護    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| Office 365 データ損失防止、Azure Information Protection プラン1  | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| エンドポイント DLP のウィンドウ情報の保護    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | **クライアントアクセスライセンス (CAL 権限)**    | | |   
-| エンタープライズ CAL スイート (Exchange、SharePoint、Skype、Windows、Microsoft エンドポイント構成マネージャー、Windows Rights Management)| |       ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| エンタープライズ CAL スイート (Exchange、SharePoint、Skype、Windows、Microsoft エンドポイント構成マネージャー、Windows Rights Management)| |       ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | **コンプライアンス**        | | | 
-| 無制限のメールのアーカイブ | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| コンプライアンススコア/コンプライアンスマネージャー   | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| 電子情報開示    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| インプレース保持と訴訟ホールド | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
-| メッセージング レコード管理 (MRM) 保持タグとアイテム保持ポリシー  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Microsoft 365 E3 に含まれています](./media/check-mark.png) | 
+| 無制限のメールのアーカイブ | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| コンプライアンススコア/コンプライアンスマネージャー   | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| 電子情報開示    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| インプレース保持と訴訟ホールド | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| メッセージング レコード管理 (MRM) 保持タグとアイテム保持ポリシー  | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 ||||
 
 \*SaaS アプリへのアクセスが割り当てられているユーザーは、最大10個のアプリへの SSO アクセスを取得できます。 管理者は SSO を構成し、さまざまな SaaS アプリへのユーザーアクセスを変更できますが、SSO アクセスは、一度に1ユーザーあたり10個のアプリに対してのみ許可されます。 すべての Office 365 アプリは、1つのアプリとして数えられます。

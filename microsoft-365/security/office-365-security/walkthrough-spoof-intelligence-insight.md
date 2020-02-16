@@ -17,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 新しいスプーフィングインテリジェンスの理解のしくみを参照してください。
-ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598014"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084360"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>チュートリアル: スプーフィングインテリジェンスの洞察
 
@@ -50,7 +50,7 @@ ms.locfileid: "41598014"
 
 ダッシュボードの洞察には、このような情報が表示されます。
   
-![スプーフィングインテリジェンスの洞察のスクリーンショット](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![スプーフィングインテリジェンスの洞察のスクリーンショット](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 この洞察には、次の2つのモードがあります。
   
@@ -82,7 +82,7 @@ ms.locfileid: "41598014"
     
 2. このテーブル内の項目を選択すると、そのドメインのペアに関する豊富な情報が含まれる詳細ウィンドウが表示されます。これには、これをキャッチした理由、ドメインの概要、送信者に関する WhoIs データ、および同じ送信者からのテナントに表示された類似の電子メールなどがあります。 ここから、ドメインペアを**Allowedtospoof** safe sender リストから追加または削除することもできます。 
   
-![スプーフィングインテリジェンスの詳細情報ウィンドウにあるドメインのスクリーンショット](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![スプーフィングインテリジェンスの詳細情報ウィンドウにあるドメインのスクリーンショット](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>AllowedToSpoof safe 送信者リストにドメインを追加または削除する
 
@@ -90,7 +90,7 @@ ms.locfileid: "41598014"
   
 これにより、偽装されたドメインと送信元インフラストラクチャの一意のドメインペアの組み合わせが変更されます。また、分離されたドメインまたは送信元のインフラストラクチャ全体についても対応しません。 たとえば、次のドメインの組を ' AllowedToSpoof ' 送信者の許可一覧に追加すると、*偽装ドメイン*"gmail.com" と、インフラストラクチャ " *Mx.com"* を*送信*します。そのドメインペアからのメールのみがスプーフィングに許可されます。 "Gmail.com" のスプーフィングを試みる他の送信者、および "tms.mx.com" がスプーフィングしようとしている他のドメインは、スプーフィングインテリジェンスによって引き続き保護されます。 
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [スプーフィング インテリジェンスの詳細情報](learn-about-spoof-intelligence.md)
   

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: 研究チーム間の共同作業を容易にするために、Contoso 社が非常に規制されたデータに対して SharePoint サイトを実装した方法を示します。'
-ms.openlocfilehash: c0b9e36f90e64e1d1c7f7ea2c4b1b4b65e60b95c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601134"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068277"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation の非常に機密性の高いデジタル資産向けの SharePoint サイト
 
@@ -67,7 +67,7 @@ Contoso 管理者は、次のような**高機密**ラベルの**研究チーム
 
 以下は、非常に機密性の高い資産を対象とした**研究**チームサイトの構成結果です。
 
-![非常に機密性の高い資産を検索するための研究チームサイトの構成結果。](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![非常に機密性の高い資産を検索するための研究チームサイトの構成結果。](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 **リサーチ**サイトのフォルダー内のファイルは、次の方法で保護されます。
 
@@ -77,7 +77,7 @@ Contoso 管理者は、次のような**高機密**ラベルの**研究チーム
 
 **Research サイトに**保存されているファイルの例として、 **research Teams**の感度 sublabel が割り当てられています。
 
-![非常に機密性の高い資産を検索するための研究チームサイトの構成結果。](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
+![非常に機密性の高い資産を検索するための研究チームサイトの構成結果。](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
 ## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>手順 4: オンプレミスの SharePoint リサーチデータを移行する

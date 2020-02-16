@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Microsoft を使用してアカウントを終了する方法について説明します。
-ms.openlocfilehash: bbb3b56d72c0f67e7771c9a188df751aa3dd95ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594141"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080384"
 ---
 # <a name="close-your-account"></a>アカウントの削除
 
@@ -78,7 +78,7 @@ Microsoft を使用してアカウントを閉じると、アカウントに関�
 
 1. グローバル管理者アカウントを使用して、 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 管理センター</a>にサインインします。
 
-2. **Azure Active Directory** を選択します。
+2. [**Azure Active Directory**] を選択します。
 
 3. 削除するディレクトリに切り替えます。
 

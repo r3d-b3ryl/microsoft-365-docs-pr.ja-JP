@@ -1,5 +1,7 @@
 ---
 title: 多要素認証をセットアップする
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business で多要素認証をセットアップします。
-ms.openlocfilehash: 59a3ff7a9494ccfc44fa701c6f605a9bd9eeafcf
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 4a201680172653fe5beffe7855fd35d1d395359e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715059"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064534"
 ---
 # <a name="multi-factor-authentication"></a>多要素認証
 
@@ -31,13 +33,13 @@ ms.locfileid: "38715059"
 
 ## <a name="set-up-mfa-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで MFA をセットアップする
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 1. グローバル管理者の資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
 2. 左側のナビゲーションで、[**セットアップ**] を選択します。
 3. [セットアップ] ページで、[**多要素認証 (MFA) カードを有効にする** **] を選択し**ます。
 4. [ **Mfa を有効**にする] ページで、[**開始**] を選択するか、既に MFA を設定して変更を行う場合は [**管理**] を選択します。 
 
-  :::image type="content" source="media/turnonmfa.png" alt-text="[MFA] ページを有効にするスクリーンショット。":::
+  :::image type="content" source="../media/turnonmfa.png" alt-text="[MFA] ページを有効にするスクリーンショット。":::
 
 5. [**サインインセキュリティを強化**する] パネルで、[**管理者に対して多要素認証を必要とする**] の両方をオンにして、[ポリシーの**作成**] を選択します。

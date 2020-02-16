@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを設定する方法について説明します。
-ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599554"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083470"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する
 
@@ -55,7 +55,7 @@ ms.locfileid: "41599554"
     
 3. レポートの左上隅で、[ **+ スケジュールの作成**] を選択します。 
     
-    ![スケジュールを作成する](../media/atpfiletypes-createschedule.png)
+    ![スケジュールを作成する](../../media/atpfiletypes-createschedule.png)
 
     (メモ: [**スケジュールの作成**] ボタンがすべてのレポートに含まれているわけではありません)。
   
@@ -63,13 +63,13 @@ ms.locfileid: "41599554"
     
 4. 既定の設定のままにして、[**スケジュールの作成**] を選択するか、[**スケジュールのカスタマイズ**] を選択します。
     
-    ![既定の設定を使用するか、レポートのスケジュールをカスタマイズできます。](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![既定の設定を使用するか、レポートのスケジュールをカスタマイズできます。](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     レポートスケジュールのカスタマイズを選択する場合は、レポートの頻度、送信者の電子メールアドレス、および受信者の電子メールアドレスを指定できます。 
     
 レポートのスケジュールを作成すると、そのレポートは電子メールによって受信者の電子メールアドレスに自動的に配信されます。 
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Office 365 Business Premium から Microsoft 365 Business にビジネスをアップグレードする手順。
-ms.openlocfilehash: 0732f76e5bd8540e5954bd7ea7b88061326901b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e17ac2658c7276ba4a77de371847343866815c42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593681"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065285"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
 
@@ -51,11 +51,11 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
 1. で<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>管理センターにサインインします。
 2. ナビゲーションウィンドウに移動して、[ **Billing** \> **Products & Services**] を選択します。 Office 365 サブスクリプションを検索し、それを選択して詳細を表示します。 
 
-    ![スクリーンショットは、管理センターでサブスクリプションを検索して選択する方法を示しています。](media/FindYourSubscription.png)
+    ![スクリーンショットは、管理センターでサブスクリプションを検索して選択する方法を示しています。](../media/FindYourSubscription.png)
 
 3. 次のページで、[**アップグレード**] を選択します。 
 
-      ![管理センターで、[アップグレード] を選択する場所がスクリーンショットに示されています。](media/SelectUpgrade.png)
+      ![管理センターで、[アップグレード] を選択する場所がスクリーンショットに示されています。](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > **Azure Active Directory でのグループベースのライセンスでサブスクリプションのアップグレードがサポート**されていないというメッセージが表示された場合は、非常に大規模な組織でない限り、これは無視しても問題ありません。 このオプションを選択した組織では、グループベースのライセンスを使用していることに注意してください。

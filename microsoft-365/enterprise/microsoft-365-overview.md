@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
-ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596854"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066896"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -59,7 +59,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 ## <a name="get-the-big-picture"></a>大きな画像を取得する
 
-[Microsoft 365 for enterprise ポスター](media/m365-poster/Microsoft365Enterprise.pdf)は、次の情報を一元的に表示する場所です。
+[Microsoft 365 for enterprise ポスター](../media/m365-poster/Microsoft365Enterprise.pdf)は、次の情報を一元的に表示する場所です。
 
 - Microsoft 365 for enterprise の利点と、アプリとサービスがその価値の柱にマップされる方法
 - エンタープライズプランのための Microsoft 365 とその中に含まれるコンポーネント 
@@ -67,16 +67,16 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 - 一般的な組織部門のための[Microsoft 365 プロダクティビティライブラリ](https://www.microsoft.com/microsoft-365/success/)と代表的なシナリオ
 - Microsoft 365 for enterprise[展開ガイド](deploy-microsoft-365-enterprise.md)を強調した導入ロードマップ
 
-[![Microsoft 365 Enterprise ポスター用の画像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Microsoft 365 Enterprise ポスター用の画像](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)をクリックします。
 
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 for enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
+組織全体を Microsoft 365 for enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
-[![Microsoft 365 への移行ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Microsoft 365 への移行ポスターの画像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 このポスター (見開き 2 ページ) で簡単に既存のインフラストラクチャのインベントリを作成し、Microsoft 365 Enterprise に対応する製品またはサービスに移行するためのガイダンスへとアクセスします。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
@@ -94,9 +94,9 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)をご覧ください。
+これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)をご覧ください。
 
-[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 この1ページのポスターは、Microsoft 365 for enterprise で推奨されるパスとサポートを使用して、Windows 7 および Office 2010 のクライアントおよびサーバー製品のサポートが終了するのを防ぐための、さまざまなパスを簡単に理解する方法を示しています。
 
@@ -142,7 +142,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 |||
 |:-------|:-----|
-![Microsoft 365 基本トレーニング](./media/m365-poster/m365-fundamentals.svg)| ご自分のトレーニングを受けて、Microsoft 365 認定に向けて作業を行います。 <BR> 最初に、 [Microsoft 365 の基本事項](https://docs.microsoft.com/learn/paths/m365-fundamentals/)についてご解説します。
+![Microsoft 365 基本トレーニング](../media/m365-poster/m365-fundamentals.svg)| ご自分のトレーニングを受けて、Microsoft 365 認定に向けて作業を行います。 <BR> 最初に、 [Microsoft 365 の基本事項](https://docs.microsoft.com/learn/paths/m365-fundamentals/)についてご解説します。
 |||
 
 

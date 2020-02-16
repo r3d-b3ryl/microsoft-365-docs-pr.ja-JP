@@ -12,19 +12,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 97ba2b0319f8a34bd6fe1cbdf597b85281810855
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4f264bead74f6a087fc0cac93df18d02121fbe4c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599704"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083526"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>CISO ワークショップモジュール 3: Id とゼロ信頼ユーザーアクセス
 
 ネットワーク境界の内部および外部にある企業データをより適切に保護するために、id とユーザーアクセス戦略を使用してゼロの信頼を進化させる方法について説明します。
 
-- PDF の概要をダウンロードする:[モジュール 3: id と信頼できるユーザーアクセス](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
-- PowerPoint の概要:[モジュール 3: id およびアクセス管理](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
+- PDF の概要をダウンロードする:[モジュール 3: id と信頼できるユーザーアクセス](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- PowerPoint の概要:[モジュール 3: id およびアクセス管理](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>パート 1: Id とゼロの信頼の履歴 (9:33)
 

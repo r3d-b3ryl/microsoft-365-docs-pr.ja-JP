@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントに対して Office 365 保持ラベルを作成して使用します。
-ms.openlocfilehash: 3bda79236b2c6bc1022e9c590f50bc2bdaec2aea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6534eff67e9c91423eb6f81415cb3ef2e965dcc1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597054"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067994"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデータ分類
 
@@ -27,10 +27,10 @@ ms.locfileid: "41597054"
 
 この記事の手順を使用して、Microsoft 365 エンタープライズテスト環境で Office 365 の保持ラベルを使用してデータ分類を構成します。
 
-![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
@@ -111,7 +111,7 @@ ms.locfileid: "41597054"
   
 1. ブラウザーの [ **SensitiveFiles** ] タブで、[**ドキュメント**] をクリックします。
     
-2. [設定] アイコンをクリックしてから、**[ライブラリの設定]** をクリックします。
+2. 設定アイコンをクリックし、**[ライブラリの設定]** をクリックします。
     
 3. [**権限と管理**] で、[**このリストまたはライブラリ内のアイテムにラベルを適用] を**クリックします。 このオプションが表示されない場合、保持ラベルはまだ公開されていません。 後でこの手順を試してください。
     

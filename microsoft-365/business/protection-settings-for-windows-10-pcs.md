@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Windows 10 デバイスをセキュリティで保護するために Microsoft 365 Business で利用可能な既定の設定とその他の設定について説明します。
-ms.openlocfilehash: b286eb417a8e723b01838c16286ceb612d497c7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593518"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064968"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Windows 10 の PC のデバイス保護設定を設定する
 
@@ -37,7 +37,7 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 
     
 2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
   
@@ -49,7 +49,7 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
     
     [ **既定の設定に戻す**] リンクを使用すれば、既定の設定にいつでも戻すことができます。 
     
-    ![Add policy pane with Windows 10 Device configuration selected](media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
+    ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
     
@@ -63,7 +63,7 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
   
 |||
 |:-----|:-----|
-|Setting  <br/> |説明  <br/> |
+|設定  <br/> |説明  <br/> |
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
 |デバイスに対する攻撃を回避するルールを使用する  <br/> |オンにすると、攻撃の回避により、デバイス感染のためにマルウェアが通常使用するアクションやアプリをブロックすることができます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[攻撃の回避](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)」を参照してください。  <br/> |

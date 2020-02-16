@@ -1,5 +1,7 @@
 ---
 title: Windows 10 PC でアプリの保護設定を検証する
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Windows 10 デバイスで Microsoft 365 Business app protection の設定を検証する方法について説明します。
-ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721802"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056677"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でデバイス保護設定を検証する
 
@@ -37,23 +39,23 @@ ms.locfileid: "38721802"
   
 1. [**設定**\>**更新&amp;セキュリティ** **** \> **** Windows update の再起動オプション] に移動し、すべての設定が淡色表示になっていることを確認します。 \> 
     
-    ![すべての再起動オプションが淡色表示されます。](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![すべての再起動オプションが淡色表示されます。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. [**設定** \> ] [ ** &amp;セキュリティ** \> **Windows update** \>セキュリティ **] [詳細オプション]** の順に移動し、すべての設定が淡色表示になっていることを確認します。 
     
-    ![Windows Advanced updates のオプションはすべて淡色表示になっています。](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows Advanced updates のオプションはすべて淡色表示になっています。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
     一部の設定が非表示になっているか、組織によって管理されており、すべてのオプションが灰色表示されていることを確認してください (赤)。
     
-    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**. 
     
 5. すべてのオプションが淡色表示になっていることを確認します。 
     
-    ![ウイルスおよび脅威の保護の設定は灰色表示されています。](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![ウイルスおよび脅威の保護の設定は灰色表示されています。](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## <a name="related-topics"></a>関連項目
 

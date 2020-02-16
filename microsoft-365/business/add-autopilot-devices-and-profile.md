@@ -1,5 +1,7 @@
 ---
 title: ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Windows 自動操縦を使用して、ビジネス用に新しい Windows 10 デバイスをセットアップする方法について説明します。
-ms.openlocfilehash: 5f40dac57285b83da57d4506bac58e562475522c
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: e5774b1e2079a5249e0f6e9e7142de19268253b5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323097"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068543"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
@@ -42,19 +44,19 @@ Windows 自動操縦を使用して、自分の組織のために**新しい**wi
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>セットアップ ガイドを使用して、デバイスとプロファイルを作成する
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 デバイスグループまたはプロファイルをまだ作成していない場合は、まず、ステップバイステップガイドを使用して開始することをお勧めします。 ガイドを使用せずに、[デバイスを追加](create-and-edit-autopilot-devices.md)したり、[プロファイルを割り当て](create-and-edit-autopilot-profiles.md)たりすることもできます。 
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
 
 2. 左側のナビゲーションウィンドウで、[**デバイス** \> **自動操縦**] を選択します。
 
-    ![管理センターで、[デバイス] を選択し、[自動操縦] を選択します。](media/AutoPilot.png)
+    ![管理センターで、[デバイス] を選択し、[自動操縦] を選択します。](../media/AutoPilot.png)
   
 2. [**自動操縦**] ページで、[**スタートガイド**] をクリックまたはタップします。
     
-    ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
 3. [**デバイスの一覧を含む .csv ファイルのアップロード**] ページで、準備した場所を参照します。CSV ファイルを開き、[**次へ**] を**開き** \>ます。 ファイルには3つのヘッダーが必要です。
     

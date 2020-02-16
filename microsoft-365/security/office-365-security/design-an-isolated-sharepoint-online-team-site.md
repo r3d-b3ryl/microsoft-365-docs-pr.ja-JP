@@ -16,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 概要:分離した SharePoint Online チーム サイトの設計プロセスをステップごとに示します。
-ms.openlocfilehash: 345a5fa5dcdcf2a3e61fdd6f1f346d46afe3fd5f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599474"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083223"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの設計
 
@@ -53,7 +53,7 @@ SharePoint グループのメンバーがサイトで実行できる内容を決
   
 既定の SharePoint グループとアクセス許可レベルは次のとおりです。
   
-![SharePoint Online サイトの既定の SharePoint グループとアクセス許可レベル。](../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![SharePoint Online サイトの既定の SharePoint グループとアクセス許可レベル。](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>フェーズ 2:アクセス グループを使用してアクセス許可をユーザーに割り当てる
 
@@ -93,7 +93,7 @@ Office 365 の Azure AD グループは、Office 365 のグループとは異な
   
 Azure AD ベースのアクセスグループを使用するように構成された既定の SharePoint グループを次に示します。
   
-![Access グループを既定の SharePoint Online サイトグループのメンバーとして使用します。](../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Access グループを既定の SharePoint Online サイトグループのメンバーとして使用します。](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 3 つのアクセス グループを設計するときは、以下の点にご注意ください。
   
@@ -103,7 +103,7 @@ Azure AD ベースのアクセスグループを使用するように構成さ�
     
 ここでは、ProjectX という名前の分離されたサイトの SharePoint グループとアクセスグループの例を示します。
   
-![ProjectX という名前の SharePoint Online サイトのアクセスグループを使用する例。](../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![ProjectX という名前の SharePoint Online サイトのアクセスグループを使用する例。](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>フェーズ 3: ネストされた Azure AD グループを使用する
 
@@ -126,7 +126,7 @@ Azure AD ベースのアクセスグループを使用するように構成さ�
   
 ここでは、ProjectX メンバーアクセスグループのための、ネストされた Azure AD グループの例を示します。
   
-![ProjectX サイトのメンバーアクセスグループにネストされたアクセスグループを使用する例。](../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![ProjectX サイトのメンバーアクセスグループにネストされたアクセスグループを使用する例。](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 リサーチ、エンジニアリング、プロジェクトリードの各チームのすべてのユーザーアカウントはサイトメンバーになることを目的としているため、Azure AD グループを ProjectX Members アクセスグループに追加するのが簡単です。
   

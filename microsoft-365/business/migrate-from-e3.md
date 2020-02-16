@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 E3 から、ビジネスを Microsoft 365 Business に移行する方法について説明します。
-ms.openlocfilehash: 210f3ebf76da49349dfb6d61d0b8ce88d15d3734
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593706"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065581"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Office 365 E3 から Microsoft 365 Business への移行 
 
@@ -44,25 +44,25 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 | Office アプリ<sup>1</sup>   | Office 365 Business   | Office 365 ProPlus | 
 | **クラウド生産性アプリ**       | | | 
 | Exchange Online および Outlook   | メールボックスごとに 50 GB の格納域の制限と無制限の Exchange Online アーカイブ   | メールボックスごとに 100 GB の格納域の制限と無制限の Exchange Online アーカイブ | 
-| Teams | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Office 365 E3 に含まれている](./media/check-mark.png) | 
+| Teams | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
 | OneDrive for Business | ユーザーごとに 1 TB のストレージ制限   | 無制限 | 
-| Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Office 365 E3 に含まれている](./media/check-mark.png) | 
-| StaffHub  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | ![Office 365 E3 に含まれている](./media/check-mark.png) | 
-| Outlook カスタマーマネージャー、ミル Eiq  | ![Microsoft 365 Business に含まれている](./media/check-mark.png)   | | 
+| Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
+| StaffHub  | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
+| Outlook カスタマーマネージャー、ミル Eiq  | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | | 
 | **脅威保護**     | | | 
-| Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](./media/check-mark.png)  | 含まれていませんが、に追加できます。 | 
+| Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](../media/check-mark.png) | 含まれていませんが、に追加できます。 | 
 | **ID 管理**       | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|    ![Microsoft 365 Business に含まれている](./media/check-mark.png) |  | 
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|    ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  | 
 | **デバイスとアプリの管理**     | | |
-| Microsoft Intune、Windows 自動操縦|  ![Microsoft 365 Business に含まれている](./media/check-mark.png) |  |
-| 共有コンピューターのライセンス認証|   ![Microsoft 365 Business に含まれている](./media/check-mark.png) | ![Office 365 E3 に含まれている](./media/check-mark.png)| 
-| Win 7/8.1 Pro ライセンスから Windows 10 Pro へのアップグレード権限|     ![Microsoft 365 Business に含まれている](./media/check-mark.png) || 
+| Microsoft Intune、Windows 自動操縦|  ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  |
+| 共有コンピューターのライセンス認証|   ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png)| 
+| Win 7/8.1 Pro ライセンスから Windows 10 Pro へのアップグレード権限|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    || 
 | **情報保護**        | | |
-|Office 365 データ損失防止|   ![Microsoft 365 Business に含まれている](./media/check-mark.png)|![Office 365 E3 に含まれている](./media/check-mark.png)|
-|Azure Information Protection プラン1、Bitlocker 強制|![Microsoft 365 Business に含まれている](./media/check-mark.png)||
-|Azure Information Protection プラン1、機密ラベル|![Microsoft 365 Business に含まれている](./media/check-mark.png)||
+|Office 365 データ損失防止|   ![Microsoft 365 Business に含まれている](../media/check-mark.png)|![Office 365 E3 に含まれている](../media/check-mark.png)|
+|Azure Information Protection プラン1、Bitlocker 強制|![Microsoft 365 Business に含まれている](../media/check-mark.png)||
+|Azure Information Protection プラン1、機密ラベル|![Microsoft 365 Business に含まれている](../media/check-mark.png)||
 |**クライアントアクセスライセンス (CAL 権限)**|||
-|エンタープライズ CAL スイート (Exchange、SharePoint、Skype)||![Office 365 E3 に含まれている](./media/check-mark.png)|
+|エンタープライズ CAL スイート (Exchange、SharePoint、Skype)||![Office 365 E3 に含まれている](../media/check-mark.png)|
 
 <sup>1</sup> Microsoft 365 Business バージョンの Office アプリには、グループポリシー、アプリテレメトリ、更新制御、スプレッドシートの比較と照会、またはビジネスインテリジェンスを使用したボリュームライセンス認証は含まれていません。
 

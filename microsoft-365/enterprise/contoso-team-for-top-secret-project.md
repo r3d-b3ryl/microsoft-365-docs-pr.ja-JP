@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社がトップ機密プロジェクトの高度な規制データに対してチームを使用して、新しいスイートの製品とサービスを開発する方法について説明します。'
-ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597074"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068030"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso 社の極秘プロジェクトのチーム
 
@@ -68,7 +68,7 @@ Contoso 管理者は、 **Project 2x**という名前の新しい Office 365 機
 
 プロジェクト2チームの最終的な構成を次に示します。
 
-![プロジェクト2チームの最終的な構成](./media/contoso-team-for-highly-confidential-assets/final-config.png)
+![プロジェクト2チームの最終的な構成](../media/contoso-team-for-highly-confidential-assets/final-config.png)
  
 基になる Project 2X SharePoint サイトの [ドキュメント] セクションにあるファイルは、次の方法で保護されています。
 
@@ -79,7 +79,7 @@ Contoso 管理者は、 **Project 2x**という名前の新しい Office 365 機
 
 ここでは、基本となる Project 2X サイトに保存されているファイルのうち、高度な規制保持ラベルと Project 2X 機密ラベルが割り当てられているファイルの例を示します。
 
-![基になる Project 2X サイトに保存されているファイルの例](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
+![基になる Project 2X サイトに保存されているファイルの例](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
  
 ## <a name="step-4-trained-project-2x-team-members"></a>手順 4: トレーニングを受けた Project 2X チームメンバー
 

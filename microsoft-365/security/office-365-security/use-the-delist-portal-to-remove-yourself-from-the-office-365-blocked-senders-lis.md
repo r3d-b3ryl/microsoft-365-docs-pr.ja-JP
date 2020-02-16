@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
-ms.openlocfilehash: af528f7fed60130bec8ff53ad182df928d09faee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598034"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081963"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
 
@@ -45,7 +45,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 3. [ **保存**] をクリックします。
 
-    ポータルは、指定したメール アドレスにメールを送信します。 電子メールは次のようになります![。リストから除外ポータルを通じて要求を送信したときに受信された電子メールのスクリーンショット](../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    ポータルは、指定したメール アドレスにメールを送信します。 電子メールは次のようになります![。リストから除外ポータルを通じて要求を送信したときに受信された電子メールのスクリーンショット](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. リストから除外のポータルから受信したメールの中にある確認のリンクをクリックします。
 

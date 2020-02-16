@@ -1,5 +1,7 @@
 ---
 title: 共同作業のためのチームの作成
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams を使用してチームのコラボレーションスペースを作成します。
-ms.openlocfilehash: 9b501daa61998b0b2daedd84c333552b42e5338f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031352"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056354"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Microsoft Teams での共同作業のためのチームの作成
 
@@ -42,7 +44,7 @@ Microsoft Teams は、任意のデバイスから、スタッフが開催し、�
 
 また、特定のプロジェクトのチームを作成し、誰が含める必要があるかに基づいて適切な保護を適用することもできます。 
 
-![セキュリティで保護されたコミュニケーションとコラボレーションを可能にする3つの独立したチームを含む Microsoft Teams ウィンドウの図](media/m365-democracy-teams-collab.png)
+![セキュリティで保護されたコミュニケーションとコラボレーションを可能にする3つの独立したチームを含む Microsoft Teams ウィンドウの図](../media/m365-democracy-teams-collab.png)
 
 チームを作成する場合は、次のように作成します。
 

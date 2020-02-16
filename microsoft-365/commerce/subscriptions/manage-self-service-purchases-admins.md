@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーによって作成されたセルフサービスの購入を管理する方法について説明します。
-ms.openlocfilehash: 5db942b42f398e8951da43add7013569af52c53f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594111"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080334"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービス購入を管理する (管理者)
 
@@ -80,7 +80,7 @@ ms.locfileid: "41594111"
 
 7. セルフサービス購入サブスクリプションを購入したユーザーに連絡して、それを取り消すように依頼します。
 
-## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
+## <a name="need-help-contact-us"></a>ヘルプが必要な場合 ご連絡ください。
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 

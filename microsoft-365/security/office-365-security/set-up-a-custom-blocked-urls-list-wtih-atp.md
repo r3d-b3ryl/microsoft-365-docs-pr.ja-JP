@@ -17,12 +17,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection を使用して、組織のブロック URL リストを設定する方法について説明します。ブロックされた URL は、ATP の安全なリンクに関するポリシーに従って、メール メッセージと Office ドキュメントに適用されます。
-ms.openlocfilehash: bb5eb8572aee11be1c4264863b572f014b281985
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598404"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088093"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 ATP の安全なリンク機能を使用して、ユーザー設定のブロック URL リストを設定する
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598404"
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用すると、組織はブロックされている Web サイト アドレスのユーザー設定リストを所有することができます。URL がブロックされると、ブロックされた URL へのリンクをクリックしたユーザーは次の画像のような[警告ページ](atp-safe-links-warning-pages.md)に移動します。 
   
-![このサイトはブロックされています](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![このサイトはブロックされています](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
 ブロック URL リストは組織の Office 365 セキュリティ チームによって定義され、Office 365 ATP の安全なリンク ポリシーによって保護されている組織の全員に適用されます。 
   
@@ -58,7 +58,7 @@ ATP ポリシーを編集 (または定義) するには、次の表に示す役
     
 2. 左側のナビゲーションの **[脅威の管理]** で **[ポリシー]** \> **[安全なリンク]** の順に選びます。
     
-3. **[組織全体に適用されるポリシー]** セクションで、**[既定]**、**[編集]** (編集ボタンは鉛筆に似ています) の順に選びます。<br/>![[編集] をクリックして安全なリンクの保護に関する既定のポリシーを編集する](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>これにより、ブロック URL リストを表示することができます。最初は、URL のリストが表示されないかもしれません。<br/>![既定の安全なリンク ポリシーに適用されるブロック URL リスト](../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. **[組織全体に適用されるポリシー]** セクションで、**[既定]**、**[編集]** (編集ボタンは鉛筆に似ています) の順に選びます。<br/>![[編集] をクリックして安全なリンクの保護に関する既定のポリシーを編集する](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>これにより、ブロック URL リストを表示することができます。最初は、URL のリストが表示されないかもしれません。<br/>![既定の安全なリンク ポリシーに適用されるブロック URL リスト](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. **[有効な URL を入力します]** ボックスを選んで、「URL」と入力し、プラス記号 (**+**) を選びます。 
 

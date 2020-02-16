@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: a353e39b824bae702fa015b0c7d3dd7e6416454c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593723"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065615"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
@@ -57,13 +57,13 @@ Microsoft 365 Business は、最大300のライセンスを想定しています
   
 次の図では、管理者が Microsoft 365 Business をセットアップする方法について説明します。 また、Microsoft 365 Business 用に Windows Pc を準備する手順についても説明します。 [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、Microsoft 365 Business 管理センターで新しいデバイスを追加することもできます。 自動操縦を使用して、ユーザーが Microsoft 365 のビジネス資格情報を使用してサインインできるようになるとすぐに、新しいデバイスをセットアップして事前構成することができます。
   
-![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
 Microsoft 365 Business のセットアップの概要については、このビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1: Microsoft 365 Business をセットアップする (管理者)

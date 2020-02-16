@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: ユーザーが Office アプリをインストールする際に役立ちます。
-ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593918"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065718"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Microsoft 365 Business 管理センターから、Windows 10 Pc に Office をすばやく簡単にインストールすることができます。
   
@@ -44,7 +44,7 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="manage-office-deployments"></a>Office 展開を管理する
 
@@ -59,7 +59,7 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
 4. [**メールユーザーをダウンロードする] リンクをダウンロードするためのリンク**をクリックして、電子メールを送信するユーザーを選択してから、[**選択したユーザーにメールを送信**します。
 
     
-      :::image type="content" source="media/sendemailtousers.png" alt-text="[Office ダウンロードを使用して電子メールを送信するユーザー] リンクを選択します。":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="[Office ダウンロードを使用して電子メールを送信するユーザー] リンクを選択します。":::
 
 ## <a name="see-also"></a>関連項目
 

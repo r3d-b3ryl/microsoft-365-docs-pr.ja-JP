@@ -16,12 +16,12 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection が機能している場合に表示される可能性がある警告ページの概要を取得します。
-ms.openlocfilehash: c7c3db68cfb0bc8205c5796bda7ee46d5b0604dd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef2f0fd59c7d5f8e62b0f562097fafd01d669459
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599854"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086716"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP の安全なリンクの警告ページ
 
@@ -38,37 +38,37 @@ ms.locfileid: "41599854"
 
 ATP の安全なリンクによって、URL がスキャンされています。 リンクを再度試すには、しばらく待つ必要がある場合があります。
 
-![ATP がリンクをスキャンしています](../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![ATP がリンクをスキャンしています](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### <a name="a-url-is-in-a-suspicious-email-message"></a>疑わしい電子メールメッセージ内の URL
 
 この URL は、疑わしいと思われる他の電子メールメッセージに類似した電子メールメッセージに含まれています。 サイトに進む前に、電子メールメッセージをもう一度確認することをお勧めします。
 
-![この URL は疑わしい電子メールメッセージに含まれています](../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+![この URL は疑わしい電子メールメッセージに含まれています](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>フィッシングの試行として識別されたメッセージ内の URL
 
 この URL は、フィッシング攻撃として識別された電子メールメッセージに含まれています。 その結果、電子メールメッセージ内のすべての Url がブロックされます。 サイトに進まないことをお勧めします。
 
-![この URL は、フィッシングとして識別されたメッセージ内にあります。](../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+![この URL は、フィッシングとして識別されたメッセージ内にあります。](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
 ### <a name="a-site-has-been-identified-as-malicious"></a>サイトが悪意のあるものとして識別された
 
 URL は、悪意があると識別されたサイトを指しています。  <br/> サイトに進まないことをお勧めします。
 
-![このサイトは悪意のあるものとして識別されています。](../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+![このサイトは悪意のあるものとして識別されています。](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
 ### <a name="a-site-is-blocked"></a>サイトがブロックされている
 
 組織の URL がブロックされています。 URL がブロックされる理由はいくつかあります。 組織の Office 365 管理者に連絡することをお勧めします。
 
-![このサイトはブロックされています](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![このサイトはブロックされています](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### <a name="an-error-has-occurred"></a>エラーが発生しました
 
 何らかのエラーが発生し、URL を開くことができません。
 
-![エラーが発生しました](../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+![エラーが発生しました](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
 
 ## <a name="recent-updates-to-warning-pages"></a>警告ページに対する最新の更新プログラム
 
@@ -78,39 +78,39 @@ Office 365 ATP のために最近更新された警告ページがいくつか�
 
 元の警告ページ:
 
-![進行中の URL スキャンに関する元の警告ページ](../media/04368763-763f-43d6-94a4-a48291d36893.png)
+![進行中の URL スキャンに関する元の警告ページ](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
 
 更新された警告ページ:
 
-![ATP がリンクをスキャンしています](../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![ATP がリンクをスキャンしています](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### <a name="malicious-site-warning"></a>悪意のあるサイトの警告
 
 元の警告ページ:
 
-![悪意のあるサイトに関する元の警告ページ](../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+![悪意のあるサイトに関する元の警告ページ](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
 
 更新された警告ページ:
 
-![このサイトは悪意のあるものとして識別されています。](../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+![このサイトは悪意のあるものとして識別されています。](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
 ### <a name="blocked-url-warning"></a>ブロックされた URL の警告
 
 元の警告ページ:
 
-![ブロックされた URL に関する元の警告ページ](../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![ブロックされた URL に関する元の警告ページ](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
 更新された警告ページ:
 
-![このサイトはブロックされています](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![このサイトはブロックされています](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### <a name="error-occurred-warning-page"></a>"エラーが発生しました" の警告ページ
 
 元の警告ページ:
 
-![元の "エラーが発生しました" という警告ページ](../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+![元の "エラーが発生しました" という警告ページ](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
 
 更新された警告ページ:
 
-![エラーが発生しました](../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+![エラーが発生しました](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    

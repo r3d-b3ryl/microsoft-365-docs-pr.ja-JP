@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Office 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について説明します。 セキュリティのニーズによっては、より多くのセキュリティを必要とする場合があります。 これらの推奨事項を出発点として使用します。
-ms.openlocfilehash: 3bf11ae0520ac6f715e3f84669c6d6f615deaf14
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: 38c07739ebfd6e10fe08dbc5496e4ae7634ed510
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932297"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082048"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを設定する
 
@@ -59,7 +59,7 @@ Microsoft 365 セキュリティセンターには、環境を保護する機能
 |[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)|これは、セキュリティセンターの [**脅威の管理**] セクションにもあります。 Office 365 テナントに対する攻撃を調査しているか、または攻撃に遭遇している場合は、エクスプローラー (またはリアルタイムの検出) を使用して脅威を分析します。 エクスプローラー (およびリアルタイムの検出レポート) には、時間の経過と共に攻撃の量が表示されます。このデータは、脅威ファミリ、攻撃者のインフラストラクチャなどで分析できます。 インシデントリストに対して疑わしい電子メールをマークすることもできます。|
 |レポート—ダッシュボード|セキュリティセンターの [**レポート**] セクションで、SharePoint Online および Exchange online 組織の監査レポートを表示します。 [**レポートの表示**] ページから、Azure Active Directory (azure ad) ユーザーのサインインレポート、ユーザーアクティビティレポート、および azure AD 監査ログにアクセスすることもできます。|
 
-![セキュリティセンターダッシュボード](../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![セキュリティセンターダッシュボード](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>その他の Exchange Online テナント全体の設定を構成する
 
@@ -122,9 +122,9 @@ Office 365 Cloud App Security を使用して、リスクを評価し、疑わ�
 
 - [Cloud App Security とは](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-![Cloud App Security ダッシュボード](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Cloud App Security ダッシュボード](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
-## <a name="additional-resources"></a>追加リソース
+## <a name="additional-resources"></a>その他のリソース
 
 これらの記事およびガイドでは、Office 365 環境を保護するためのその他の規範となる情報を提供します。
 

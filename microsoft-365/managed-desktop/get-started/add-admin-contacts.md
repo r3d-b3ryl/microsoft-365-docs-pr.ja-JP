@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004922"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085904"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで管理者の連絡先を追加および確認する
 
@@ -52,15 +52,15 @@ IT ヘルプデスク | サポートスタッフが Microsoft マネージドデ
 
 2.  [**サポート**] で、[管理者の**連絡先**] を選択します。 
 
-    ![選択されている上部付近のサポートメニュー、管理者の連絡先](images/admincontacts.png)
+    ![選択されている上部付近のサポートメニュー、管理者の連絡先](../../media/admincontacts.png)
 
-3. **[追加]** を選択します。
+3. [**追加**] を選択します。
 
-    ![管理ポータル、[追加] ボタン、[エクスポートと更新] の左側に](images/adminadd.png)
+    ![管理ポータル、[追加] ボタン、[エクスポートと更新] の左側に](../../media/adminadd.png)
 
 4.  **フォーカスの領域**を選択し、連絡先の情報を入力します。 
 
-    ![他の、アプリ、セキュリティなど、フォーカスがある領域のリスト](images/areaoffocus.png)
+    ![他の、アプリ、セキュリティなど、フォーカスがある領域のリスト](../../media/areaoffocus.png)
 
 5. フォーカスの領域ごとに繰り返します。 
 

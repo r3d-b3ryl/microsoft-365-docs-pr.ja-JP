@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 キャンペーンのセットアップの概要
-ms.openlocfilehash: cca8866241a3759c022a362d39f7b208dff72580
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d2dac24488e5d29b0e888ba09f5359cba6b1f614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594175"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080488"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Microsoft 365 for キャンペーンのセットアップ
 
@@ -38,7 +38,7 @@ ms.locfileid: "41594175"
 ## <a name="admins-set-up-microsoft-365-for-campaigns"></a>管理者向け: Microsoft 365 for a キャンペーンのセットアップ
 次の図は、管理者が Microsoft 365 をキャンペーン用にセットアップする方法について説明しています。
 
-![Microsoft 365 をキャンペーンに設定するための手順](media/M365-democracy-SetUpProcess.png)
+![Microsoft 365 をキャンペーンに設定するための手順](../media/M365-democracy-SetUpProcess.png)
 
 特別価格に該当するキャンペーンの場合は、 [microsoft からの招待を要求](https://m365forcampaigns.microsoft.com/)することによって開始し、[キャンペーンに microsoft 365 に](m365-campaigns-sign-up.md)サインアップします。 セットアップを完了するには、[セットアップウィザードを実行](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)して、コア設定を構成します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "41594175"
  
 ユーザーは、この環境で動作するようにデバイスをセットアップするのに数分かかる必要があります。 主なユーザー (ハッカーにとって最も価値の高い対象となるユーザー) については、新しいデバイスをセットアップして事前構成することができます。 これにより、Microsoft 365 資格情報を使用してサインインしたときに作業を開始できるようになります。 
 
-![ユーザーデバイスのセットアッププロセス](media/m365-democracy-user-device-setup.png)
+![ユーザーデバイスのセットアッププロセス](../media/m365-democracy-user-device-setup.png)
   
 ユーザーデバイスをセットアップするには、次のようにします。 
 1. 各ユーザーが[モバイルデバイスを設定](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)します。 

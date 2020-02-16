@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Exchange メールフロールールを作成して、ユーザーが電子メールメッセージを分析のために Microsoft に送信したり、独自のセキュリティプロセスで使用したりできないようにすることができます。
-ms.openlocfilehash: 530cc12fd83650f319da3f65e961c925a1de7409
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8655416840dc326344e2c2aea7c67486389492
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598064"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084376"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
 
@@ -38,7 +38,7 @@ ms.locfileid: "41598064"
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-2. ![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールを作成する]** を選択します。
+2. ![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールを作成する]** を選択します。
 
 3. ルールに名前を付けてから、 **[その他のオプション]** をクリックします。
 
@@ -46,11 +46,11 @@ ms.locfileid: "41598064"
 
 5. [**単語または語句の指定**] ボックスで、次の手順を実行します。
 
-   - 種類`abuse@messaging.microsoft.com`**をクリックし** ![、[](../media/ITPro-EAC-AddIcon.gif)追加] `junk@office365.microsoft.com`アイコン、入力して、](../media/ITPro-EAC-AddIcon.gif) **[追加] アイコンをクリック** ![します。 これらの電子メール アドレスは、偽陰性のメッセージをマイクロソフトに送信するために使用されます。
+   - 種類`abuse@messaging.microsoft.com`**をクリックし** ![、[](../../media/ITPro-EAC-AddIcon.gif)追加] `junk@office365.microsoft.com`アイコン、入力して、](../../media/ITPro-EAC-AddIcon.gif) **[追加] アイコンをクリック** ![します。 これらの電子メール アドレスは、偽陰性のメッセージをマイクロソフトに送信するために使用されます。
 
-   - 入力`phish@office365.microsoft.com`して、 **[追加]** ![アイコン](../media/ITPro-EAC-AddIcon.gif)をクリックします。 この電子メール アドレスは、フィッシングとして処理されなかったフィッシング メッセージを Microsoft に送信するために使用されます。
+   - 入力`phish@office365.microsoft.com`して、 **[追加]** ![アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックします。 この電子メール アドレスは、フィッシングとして処理されなかったフィッシング メッセージを Microsoft に送信するために使用されます。
 
-   - 種類`false_positive@messaging.microsoft.com`**をクリックし** ![、[](../media/ITPro-EAC-AddIcon.gif)追加] `not_junk@office365.microsoft.com`アイコン、種類、 **[追加]** ![アイコン](../media/ITPro-EAC-AddIcon.gif)をクリックします。 これらの電子メール アドレスは、偽陽性のメッセージをマイクロソフトに送信するために使用されます。
+   - 種類`false_positive@messaging.microsoft.com`**をクリックし** ![、[](../../media/ITPro-EAC-AddIcon.gif)追加] `not_junk@office365.microsoft.com`アイコン、種類、 **[追加]** ![アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックします。 これらの電子メール アドレスは、偽陽性のメッセージをマイクロソフトに送信するために使用されます。
 
    - **[OK]** をクリックします。
 

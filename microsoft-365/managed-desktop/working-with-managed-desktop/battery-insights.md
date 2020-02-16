@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269388"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085733"
 ---
 # <a name="battery-insights"></a>バッテリインサイト
 このビューでは、Microsoft マネージドデスクトップデバイスの電力、バッテリ、アプリの使用状況の測定基準が提供されます。 このような目的で、アプリが実行中で、フォーカスがある場合、アプリは "使用中" と見なされます。
 
 利用状況データを表示するには、[**バッテリ**] タブを選択します。
 
-![バッテリウィンドウ: 左上にあるデバイスごとのバッテリの寿命、右上のエネルギー消費者 (アプリごと) は、下にある insights の表で予測されます。 右上のドキュメントリンク](images/insights_battery.png)
+![バッテリウィンドウ: 左上にあるデバイスごとのバッテリの寿命、右上のエネルギー消費者 (アプリごと) は、下にある insights の表で予測されます。 右上のドキュメントリンク](../../media/insights_battery.png)
 
 ## <a name="predicted-battery-life"></a>バッテリ寿命の予測
 

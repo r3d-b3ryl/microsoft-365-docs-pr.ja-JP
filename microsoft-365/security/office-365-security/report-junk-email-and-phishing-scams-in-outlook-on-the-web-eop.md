@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook on the web ユーザーは、組み込みの電子メール報告オプションを使用して、迷惑メール (スパム) とフィッシング詐欺を報告することができます。 また、電子メールが誤って迷惑メール (スパム) として識別されたかどうかを Microsoft に知らせることもできます。
-ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082407"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Outlook on the web で迷惑メールとフィッシング詐欺を報告する
 
@@ -33,7 +33,7 @@ ms.locfileid: "41957422"
 
 1. 迷惑メール メッセージをクリックしてから、ツールバーの **[迷惑メール]** をクリックします。これにより、メッセージが迷惑メール フォルダーに移動され、その送信者が受信拒否リストに追加されます。
 
-   ![電子メールが Web 上の Outlook からの迷惑メールであることを示しています](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![電子メールが Web 上の Outlook からの迷惑メールであることを示しています](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > または、メッセージを右クリックしてメニューを表示し、 **[迷惑メールにする]** をクリックします。
@@ -42,7 +42,7 @@ ms.locfileid: "41957422"
 
 2. 迷惑メール メッセージのコピーを分析のために Microsoft に送信するかどうかを確認するダイアログ ボックスが開きます。Microsoft スパム分析チームにメッセージを送信する場合は、 **[報告]** をクリックします。今後の迷惑メール メッセージをプロンプトなしで Microsoft に自動的に送信する場合には、オプションで、 **[今後、このメッセージを表示しない]** チェック ボックスを選択します。
 
-   ![Web 上の Outlook から Microsoft に迷惑メールについて報告します](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![Web 上の Outlook から Microsoft に迷惑メールについて報告します](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > **[今後、このメッセージを表示しない]** チェック ボックスを選択した場合でも、後で Outlook on the web の表示設定にアクセスすることによって、迷惑メールを報告するようにこの設定を変更することができます (これらの設定には、サインイン名の横にあるギア メニューからアクセスできます)。
@@ -53,7 +53,7 @@ ms.locfileid: "41957422"
 
 1. フィッシング詐欺メッセージをクリックして、 **[迷惑メール]** の横にある下向き矢印をクリックしてから、ツールバーの **[フィッシング]** をクリックします。 フィッシング詐欺メッセージの送信者は正当な送信者を偽装していることが多いため、Office 365 は送信者をブロックしません。 必要に応じて、「 [web 上の Outlook で迷惑メールとスパムをフィルター](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)する」の手順に従って、送信者を受信拒否リストに追加します。
 
-   ![電子メールが Web 上の Outlook 内のフィッシング詐欺メールであることを示しています](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![電子メールが Web 上の Outlook 内のフィッシング詐欺メールであることを示しています](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    または、メッセージを右クリックしてメニューを表示し、 **[Mark as Phishing] (フィッシングとして報告する)** をクリックします。
 

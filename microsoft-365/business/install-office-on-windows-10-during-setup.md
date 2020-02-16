@@ -24,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: セットアップ時に Office を Windows 10 デバイスに自動的に展開する方法について説明します。
-ms.openlocfilehash: 8a631d3976ae3bce82d59d84e38a14405010ab02
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8ba69f73b455cb78e7141d57b2f690f49bb36f2e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593863"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065697"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>セットアップ時に Windows 10 に Office をインストールする
 
-![をhttps://aka.ms/aboutM365preview指すバナー。](media/m365admincenterchanging.png)
+![をhttps://aka.ms/aboutM365preview指すバナー。](../media/m365admincenterchanging.png)
 
 既定では、この設定はオフになっています。 この機能をオンにして、ユーザーが Windows 10 デバイスすべてに最新バージョンの Office を所有していることを確認できますが、最初にすべての前提条件が満たされていることを確認してください。 この設定では、「 [microsoft 365 business による Office クライアントの展開の準備](prepare-for-office-client-deployment.md)」で説明されているその他の要件に加えて、ユーザーが Microsoft 365 business のライセンスを持っている必要があります。
   

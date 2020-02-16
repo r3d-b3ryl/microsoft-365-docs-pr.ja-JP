@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: キャンペーン用のコミュニケーションサイトを作成します。
-ms.openlocfilehash: f0d79bcaa49d5e62dff5618eeaf94347d5dd6313
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c6590ae8e8fbe0dd1cc024c53f3a2a109aa918c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594922"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056380"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>キャンペーン用のコミュニケーションサイトを作成する
 
@@ -44,12 +44,12 @@ ms.locfileid: "41594922"
 4. **イベント web パーツ**にキャンペーンイベントを追加して、すべてのユーザーが何が起こっているかを確認できるようにします。
 5. ユーザーが使用できる、または**画像ギャラリー web パーツ**に共有できる写真を追加します。
 
-![キャンペーンに必要な共通要素のスペースを含む SharePoint の通信ページの図](media/m365-democracy-comms-site.png)
+![キャンペーンに必要な共通要素のスペースを含む SharePoint の通信ページの図](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>インフォグラフィック: コミュニケーションサイトの情報を作成する図 
 PowerPoint と PDF の次のリンクは、タブロイド形式 (台帳、11 x 17、または A3 とも呼ばれます) でダウンロードおよび印刷できます。
 
-[![コミュニケーションサイトのインフォグラフィックの画像](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![コミュニケーションサイトのインフォグラフィックの画像](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)
 
