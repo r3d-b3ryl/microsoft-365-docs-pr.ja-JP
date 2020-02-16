@@ -23,38 +23,38 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft パートナーセンターから Microsoft 365 Business を購入する方法について説明します。
-ms.openlocfilehash: 18af5b0aee378784199e91c8254b50fd1104172b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba6aa806e3e628e8c3478abb57c4529e4f5692bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593953"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065822"
 ---
-# <a name="get-microsoft-365-business"></a><span data-ttu-id="10267-103">Microsoft 365 Business を入手する</span><span class="sxs-lookup"><span data-stu-id="10267-103">Get Microsoft 365 Business</span></span>
+# <a name="get-microsoft-365-business"></a><span data-ttu-id="f145c-103">Microsoft 365 Business を入手する</span><span class="sxs-lookup"><span data-stu-id="f145c-103">Get Microsoft 365 Business</span></span>
 
-## <a name="get-microsoft-365-business-from-microsoft"></a><span data-ttu-id="10267-104">Microsoft から Microsoft 365 Business を購入する</span><span class="sxs-lookup"><span data-stu-id="10267-104">Get Microsoft 365 Business from Microsoft</span></span>
+## <a name="get-microsoft-365-business-from-microsoft"></a><span data-ttu-id="f145c-104">Microsoft から Microsoft 365 Business を購入する</span><span class="sxs-lookup"><span data-stu-id="f145c-104">Get Microsoft 365 Business from Microsoft</span></span>
 
-<span data-ttu-id="10267-105">パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/en-US/microsoft-365/business)できます。</span><span class="sxs-lookup"><span data-stu-id="10267-105">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
+<span data-ttu-id="f145c-105">パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/en-US/microsoft-365/business)できます。</span><span class="sxs-lookup"><span data-stu-id="f145c-105">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
 
-<span data-ttu-id="10267-106">詳細な手順については、「 [Microsoft 365 Business のサインアップ](sign-up.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="10267-106">See [sign up for Microsoft 365 Business](sign-up.md) for detailed instructions.</span></span>
+<span data-ttu-id="f145c-106">詳細な手順については、「 [Microsoft 365 Business のサインアップ](sign-up.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f145c-106">See [sign up for Microsoft 365 Business](sign-up.md) for detailed instructions.</span></span>
 
-<span data-ttu-id="10267-107">Microsoft 365 Business を購入してセットアップのヘルプを受けるために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)にアクセスすることもできます。</span><span class="sxs-lookup"><span data-stu-id="10267-107">You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business and get setup help.</span></span>
+<span data-ttu-id="f145c-107">Microsoft 365 Business を購入してセットアップのヘルプを受けるために[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)にアクセスすることもできます。</span><span class="sxs-lookup"><span data-stu-id="f145c-107">You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business and get setup help.</span></span>
   
-## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a><span data-ttu-id="10267-108">Microsoft パートナー センターから Microsoft 365 Business を購入する</span><span class="sxs-lookup"><span data-stu-id="10267-108">Get Microsoft 365 Business from Microsoft Partner Center</span></span>
+## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a><span data-ttu-id="f145c-108">Microsoft パートナー センターから Microsoft 365 Business を購入する</span><span class="sxs-lookup"><span data-stu-id="f145c-108">Get Microsoft 365 Business from Microsoft Partner Center</span></span>
 
-1. <span data-ttu-id="10267-109">クラウド サービス プロバイダー (CSP) プログラムに登録するときに作成した資格情報を使用して、[Microsoft パートナー センター](https://go.microsoft.com/fwlink/p/?linkid=849910)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="10267-109">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
+1. <span data-ttu-id="f145c-109">クラウド サービス プロバイダー (CSP) プログラムに登録するときに作成した資格情報を使用して、[Microsoft パートナー センター](https://go.microsoft.com/fwlink/p/?linkid=849910)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="f145c-109">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
     
-2. <span data-ttu-id="10267-110">パートナーダッシュボードで、[**顧客**] を選択し、お客様を選択するか、新しい顧客を追加してから、Microsoft 365 Business を取得します。</span><span class="sxs-lookup"><span data-stu-id="10267-110">On the Partner Dashboard, choose **Customers**, then select your customer or add a new customer before you get Microsoft 365 Business.</span></span>
+2. <span data-ttu-id="f145c-110">パートナーダッシュボードで、[**顧客**] を選択し、お客様を選択するか、新しい顧客を追加してから、Microsoft 365 Business を取得します。</span><span class="sxs-lookup"><span data-stu-id="f145c-110">On the Partner Dashboard, choose **Customers**, then select your customer or add a new customer before you get Microsoft 365 Business.</span></span>
     
-    ![Microsoft パートナーセンターで、お客様を追加します。](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![Microsoft パートナーセンターで、お客様を追加します。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. <span data-ttu-id="10267-112">顧客の [**サブスクリプション**] ページで、[**サブスクリプションの追加**] を選択し、[カタログ] の下の [Small business] オプションを選択してから、[ **Microsoft 365 business**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="10267-112">On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.</span></span>
+3. <span data-ttu-id="f145c-112">顧客の [**サブスクリプション**] ページで、[**サブスクリプションの追加**] を選択し、[カタログ] の下の [Small business] オプションを選択してから、[ **Microsoft 365 business**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f145c-112">On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.</span></span>
     
-    <span data-ttu-id="10267-113">必要なライセンス数 (最大 300) を選びます。</span><span class="sxs-lookup"><span data-stu-id="10267-113">Select the number of licenses you need (up to 300).</span></span> <span data-ttu-id="10267-114">300を超えるユーザーがいる場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="10267-114">If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead.</span></span> 
+    <span data-ttu-id="f145c-113">必要なライセンス数 (最大 300) を選びます。</span><span class="sxs-lookup"><span data-stu-id="f145c-113">Select the number of licenses you need (up to 300).</span></span> <span data-ttu-id="f145c-114">300を超えるユーザーがいる場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f145c-114">If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead.</span></span> 
     
-    ![[サブスクリプションの新規作成] ページで、[small business] を選択します。](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![[サブスクリプションの新規作成] ページで、[small business] を選択します。](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
-    <span data-ttu-id="10267-116">新しい顧客を追加するための残りの手順を完了します (会社名を含む)。</span><span class="sxs-lookup"><span data-stu-id="10267-116">Complete the rest of the steps for adding a new customer, including the business name.</span></span>
+    <span data-ttu-id="f145c-116">新しい顧客を追加するための残りの手順を完了します (会社名を含む)。</span><span class="sxs-lookup"><span data-stu-id="f145c-116">Complete the rest of the steps for adding a new customer, including the business name.</span></span>
     
 
 
