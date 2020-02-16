@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a0b86240e09838ff290bb9c3b4b53f5cce3e2995
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600124"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083788"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>アクション センターに移動して修復アクションを表示する
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600124"
 
 ## <a name="a-single-pane-of-glass-experience"></a>「単一画面」エクスペリエンス
 
-![アクション センター](../images/air-actioncenter.png)
+![アクション センター](../../media/air-actioncenter.png)
 
 アクション センターを使用して、組織のデバイスおよびメールボックス全体の現在および過去の調査結果を確認します。 脅威の種類および[出された判定](mtp-autoir-results.md#remediation-actions-following-automated-investigation)に応じて、修復アクションが自動的に、または組織のセキュリティ運用チームの承認を受けて実行されます。 すべての修復アクションは、承認待ちか既に承認済みかにかかわらず、アクションセンターに統合されます。 
 
@@ -65,9 +65,9 @@ ms.locfileid: "41600124"
 
     - [**履歴**] タブには、過去の調査や、自動的に実行された修復アクションのリストが表示されます。 過去 1 日、1 週間、1 か月、または 6 か月のデータを表示できます。
 
-4. 表示する列のみを表示するには、[**列のカスタマイズ**] を選択します。<br/>![Microsoft Threat Protection のアクション センター](../images/mtp-action-center.png)
+4. 表示する列のみを表示するには、[**列のカスタマイズ**] を選択します。<br/>![Microsoft Threat Protection のアクション センター](../../media/mtp-action-center.png)
 
-5. 調査の詳細を表示するには、リストから項目を選択します。 調査の詳細ビューが開きます。<br/>![調査の詳細](../images/mtp-air-investdetails.png)
+5. 調査の詳細を表示するには、リストから項目を選択します。 調査の詳細ビューが開きます。<br/>![調査の詳細](../../media/mtp-air-investdetails.png)
 
     - 調査がメール コンテンツ (エンティティがメールボックスなど) に関連する場合は、調査の詳細は Office 365 セキュリティ/コンプライアンス センター に表示されます ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation))。 
 

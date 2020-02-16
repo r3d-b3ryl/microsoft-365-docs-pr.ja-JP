@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8f966060ebc9a30166647b397b93f2b45356df74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662053"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083730"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -45,7 +45,7 @@ Microsoft の脅威保護は、さまざまな統合サービスからのデー�
 
 サービスを有効にする前に、Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com)) では、ナビゲーションウィンドウの [**インシデント**] および [**アクションセンター** ] オプションが表示されません。
 
-![Microsoft 365 セキュリティセンターのナビゲーションウィンドウのイメージ microsoft の脅威保護](../images/mtp-off.png)
+![Microsoft 365 セキュリティセンターのナビゲーションウィンドウのイメージ microsoft の脅威保護](../../media/mtp-off.png)
 機能のない microsoft*365 セキュリティセンターと microsoft の脅威保護がオフになっている*
 
 Microsoft の脅威保護を有効にするには、ナビゲーションウィンドウで [**設定**] を選択します。 [**[設定] ページ](https://security.microsoft.com/settings)** で、[ **Microsoft Threat Protection** > **オプトイン/オプトアウト**] に移動します。
@@ -65,7 +65,7 @@ Microsoft Defender ATP が組織にプロビジョニングされている場合
 - [自動化された調査と対応](mtp-autoir.md)を管理するアクション センター
 - 既存の [**捜索**] ページへの[高度な捜索](advanced-hunting-overview.md)機能
 
-![Microsoft 365 セキュリティセンターのナビゲーションウィンドウと microsoft の脅威保護機能](../images/mtp-on.png)
+![Microsoft 365 セキュリティセンターのナビゲーションウィンドウと microsoft の脅威保護機能](../../media/mtp-on.png)
 のイメージ microsoft*365 セキュリティセンターとインシデント管理およびその他の microsoft の脅威保護機能*
 
 ### <a name="getting-azure-atp-data"></a>Azure ATP データを取得する

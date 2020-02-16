@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 2019年9月14日以降に、欧州経済地域の31国の銀行は、支払いを処理する前にオンライン購入を行うユーザーの身元を確認する必要があります。
 keywords: 支払いサービスディレクティブ2、強力な顧客認証、多要素認証
-ms.openlocfilehash: f59808d3735f10b57ed5c0cd279b6703b24a44a4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53de6ce3158760299a3ed2a7bc840919babf20bd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594708"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080394"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>一般法人向けお客様向けのお支払いサービス指令2および強力な顧客認証
 

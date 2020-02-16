@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: MFA を要求する方法と、Microsoft 365 Business の条件付きアクセスポリシーを設定する方法について説明します。
-ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594862"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056419"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>多要素認証を必要とし、条件付きアクセスポリシーを設定する
 
@@ -58,13 +58,13 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
 2. [セットアップ] ページで、[サインイン] の [**セキュリティで保護さ**れたカードの作成] で [**表示**] を選択します。
 
 
-    ![サインインして、より安全なカードを作成します。](media/setupmfa.png)
+    ![サインインして、より安全なカードを作成します。](../media/setupmfa.png)
 3. [サインインを強化する] ページで、[**開始**] を選択します。
  
 4. [サインインのセキュリティを強化する] ウィンドウで、[**管理者に多要素認証を必要**とする] の横にあるチェックボックスをオンにし、[**ユーザーに多要素認証の登録を要求し、リスクが検出された場合はアクセスをブロック**する] チェックボックスをオンにします。
     [**ユーザーの検索**] ボックスの [MFA] 要件から、[緊急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)または "破損" 管理者アカウントを除外するようにしてください。
     
-    ![[セキュリティを強化する] ページ。](media/requiremfa.png)
+    ![[セキュリティを強化する] ページ。](../media/requiremfa.png)
 
 5. ページの下部にある [**ポリシーの作成**] を選択します。
 
@@ -74,7 +74,7 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
     
     ベースラインポリシーはページに一覧表示されており、管理者と**エンドユーザー保護****を必要**とする手順が完了した後、 [mfa が必要](#require-mfa)であることがわかります。
 
-    ![条件付きアクセスのベースラインポリシーを一覧表示するページ。](media/casettings.png)
+    ![条件付きアクセスのベースラインポリシーを一覧表示するページ。](../media/casettings.png)
 2. 各ポリシーについて、次の具体的な手順を参照してください。
 
     - [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

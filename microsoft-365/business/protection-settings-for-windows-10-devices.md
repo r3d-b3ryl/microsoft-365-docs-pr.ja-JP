@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Windows 10 デバイスでアプリ管理ポリシーを作成し、作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: 703f63fc1c90966eb8412886e82670af3e9d6f62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eb9c5465bf7376efa95162cd39be3f1c6840a3e4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593538"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065020"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Windows 10 デバイスのアプリケーション保護設定を設定する
 
@@ -40,7 +40,7 @@ ms.locfileid: "41593538"
 
 ユーザーが作業タスクを実行する個人の Windows 10 デバイスを持っている場合、それらのデバイスでもデータを保護することができます。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 
     
 2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
 
@@ -60,11 +60,11 @@ ms.locfileid: "41593538"
     
     既定では、デバイスに保存されていてユーザーのプロファイルに関連付けられている秘密キーを使用して、作業ファイルの暗号化が行われます。 該当するユーザーのみがファイル開き、暗号化を解除することができます。 ただし、デバイスが失われたり、ユーザーが削除されたりした場合、ファイルを暗号化された状態に留めておくことができます。 管理者は、データ回復エージェント (DRA) 証明書を使用して、ファイルの暗号化を解除できます。
     
-    ![Browse to Data Recovery Agent certificate.](media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
+    ![Browse to Data Recovery Agent certificate.](../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
 10. 追加のドメインまたは SharePoint Online の場所を追加して、一覧表示されているすべてのアプリのファイルが保護されるようにする場合は、 **[追加のネットワークとクラウドの場所を保護**する] を展開します。 いずれかのフィールドに複数の項目を入力する必要がある場合は、項目間にセミコロン (;) を使用します。
     
-    ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
+    ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
     

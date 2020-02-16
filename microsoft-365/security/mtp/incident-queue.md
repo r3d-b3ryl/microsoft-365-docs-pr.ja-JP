@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ad616deb8717772a68b01147ed858f8e7f6ed7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600254"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087303"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Microsoft Threat Protection のインシデントに優先順位を付ける
 
@@ -39,7 +39,7 @@ Microsoft Threat Protection は、相関分析を適用し、さまざまな製�
 **インシデント キュー**には、デバイス、ユーザー、メールボックス全体からフラグが付けられたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。
 
 
-![インシデント キューの画像](../images/incidents-queue.png) 
+![インシデント キューの画像](../../media/incidents-queue.png) 
 
 既定では、Microsoft 365 セキュリティ センターのキューには過去 30 日間に発生したインシデントが表示され、最新のインシデントがリストの一番上に表示されるため、最新のインシデントを最初に確認できます。
 

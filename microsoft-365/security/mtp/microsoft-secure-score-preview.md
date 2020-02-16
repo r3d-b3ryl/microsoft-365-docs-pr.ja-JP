@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087578"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft セキュリティスコア (プレビュー)
 
@@ -41,7 +41,7 @@ Microsoft セキュリティスコアは、組織のセキュリティに関す�
 
 さらに、 [Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)を通じて、推奨事項やスコアにアクセスできます。 [セキュリティで保護されたスコアリソースの種類](https://go.microsoft.com/fwlink/?linkid=2092996)について説明します。
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 推奨されるセキュリティ機能の構成、セキュリティ関連タスクの実行、またはサードパーティ製のアプリケーションまたはソフトウェアを使用した改善アクションへの対応のポイントが提供されています。 一部の改善アクションでは、完全に完了した時点でポイントが提供されます。一部のデバイスまたはユーザーに対して完了した場合は、一部の機能を提供します。 改善アクションのいずれかを実行できない、または適用したくない場合は、リスクを受け入れるか、リスクを軽減することを選択できます。
 
@@ -100,7 +100,7 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 [Microsoft セキュリティスコアの概要] ページでは、これらのグループ間のポイントの分割方法と、使用可能なポイントを確認できます。 また、概要ページでは、スコアの合計を表示し、セキュリティで保護されたスコアの傾向をベンチマーク比較によって把握し、スコアを向上させるために実行できる改善措置の優先順位付けを行うことができます。
 
-![セキュリティで保護](../media/secure-score/secure-score-homepage.png)
+![セキュリティで保護](../../media/secure-score/secure-score-homepage.png)
 されたスコアホーム*ページ図 1: Microsoft セキュリティスコアの概要ページ*
 
 ## <a name="take-action-to-improve-your-score"></a>スコアを向上させるためのアクションを実行する
@@ -111,11 +111,11 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 ランク付けは、残っている残りのポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいています。 最も順位の高い向上アクションには、低い問題点、ユーザーへの影響、および複雑さが残った大きなポイントがあります。
 
-### <a name="actions"></a>Actions
+### <a name="actions"></a>操作
 
 特定の改善アクションを選択すると、完全なページポップアップが表示されます。  
 
-![改善アクションのポップアップ](../media/secure-score/secure-score-improvement-action.png)
+![改善アクションのポップアップ](../../media/secure-score/secure-score-improvement-action.png)
 の例*図 2: 改善アクションのポップアップの例*
 
 この操作を完了するには、いくつかのオプションがあります。

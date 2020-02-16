@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 208cbb49afc2f4520fa44a4ef283194bcaff22be
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600094"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083760"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600094"
 
 自動調査が Microsoft Threat Protection で実行された際は、自動調査プロセスの実行中および実行後に調査の詳細を確認できます。 [必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 調査の詳細ビューでは最新の状態が表示され、保留中のアクションを承認する機能が提供されます。 
 
-![調査の詳細](../images/mtp-air-investdetails.png)
+![調査の詳細](../../media/mtp-air-investdetails.png)
 
 ## <a name="open-the-investigation-details-view"></a>調査の詳細ビューを開く
 
@@ -60,7 +60,7 @@ ms.locfileid: "41600094"
 
 2. ナビゲーション ウィンドウで、[**インシデント**] を選択します。 
 
-3. リスト内のアイテムを選択してインシデントの詳細ビューを開きます。<br/>![インシデントの詳細](../images/mtp-incidentdetails-tabs.png)
+3. リスト内のアイテムを選択してインシデントの詳細ビューを開きます。<br/>![インシデントの詳細](../../media/mtp-incidentdetails-tabs.png)
 
 4. [**調査**] タブで、一覧から調査を選択します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "41600094"
 
 調査の詳細ビューを使用して、調査に関連する過去、現在、保留中のアクティビティを表示します。 調査の詳細ビューの画像は次のようになります。
 
-![調査の詳細](../images/mtp-air-investdetails.png)
+![調査の詳細](../../media/mtp-air-investdetails.png)
 
 調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
 

@@ -12,16 +12,16 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 964756a1fadba89f644a0d04c1d35d2945b78c6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a53759eafbedc6b48d2a6266b4b52777112941d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602874"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085566"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>手順 4: デバイスの正常性とコンプライアンスの監視
 
-![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics は、診断データを使用して高度で実践的な情報を提供し、環境内の Windows 10 デバイスの運用効率と正常性の詳細な分析情報を把握するのに役立ちます。
 
@@ -35,4 +35,4 @@ Windows Analytics のデバイスの正常性の機能は、エンド ユーザ�
 
 |||
 |:-------|:-----|
-|![手順 5](./media/stepnumbers/Step5.png)| [Windows 10 Enterprise のセキュリティ機能を展開する](windows10-enable-security-features.md) |
+|![手順 5](../media/stepnumbers/Step5.png)| [Windows 10 Enterprise のセキュリティ機能を展開する](windows10-enable-security-features.md) |

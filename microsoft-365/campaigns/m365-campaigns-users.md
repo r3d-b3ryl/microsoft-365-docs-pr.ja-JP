@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for キャンペーンがユーザーに与える影響について説明します。
-ms.openlocfilehash: 7c510de861758da3da2c86a6804a58de6d4e8030
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594758"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080510"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 for キャンペーンがユーザーに与える影響
 
 Microsoft 365 for キャンペーンでは、ハッカーが自分の環境にアクセスするのは非常に困難になります。 その代償として、ユーザーはこのより安全な環境での作業方法を知る必要があります。 少し手間がかかることを理解していますが、組織を保護しておく価値があります。
 
-![IPhones、Android デバイス、Mac、Windows 10、共有、および主要なスタッフに関する以下の重要なポイントを合計する図](media/M365-democracy-Users_700px.png)
+![IPhones、Android デバイス、Mac、Windows 10、共有、および主要なスタッフに関する以下の重要なポイントを合計する図](../media/M365-democracy-Users_700px.png)
 
 ## <a name="use-secure-email-practices"></a>セキュリティで保護された電子メールプラクティスの使用
 メールの安全性を確保するために、すべてのユーザーは、これらのメールプラクティスを認識して使用する必要があります。

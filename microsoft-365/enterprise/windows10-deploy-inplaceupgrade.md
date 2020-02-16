@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602854"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085586"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>手順 2: 既存のデバイス用に Windows 10 Enterprise を一括アップグレードとして展開する
 
 *この記事は、Microsoft 365 Enterprise の E3 および E5 の両バージョンに適用されます*
 
-![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 現在 Windows 7 または Windows 8.1 を実行している Pc をアップグレードするための最も単純なパスは、一括アップグレードを使用しています。 構成マネージャー (構成マネージャー) のタスクシーケンスを使用して、プロセスを完全に自動化することができます。 
 
@@ -35,7 +35,7 @@ Microsoft エンドポイント構成マネージャーを一括アップグレ�
 
 構成マネージャーのポスターは、横モード (17x11) の1つのページです。 ブラウザーに PDF を表示するには、以下の画像をクリックします。 
 
-[![構成マネージャーポスターを使用して Windows 10 を展開する](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+[![構成マネージャーポスターを使用して Windows 10 を展開する](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) または [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) 形式でダウンロードすることもできます。
 
@@ -151,4 +151,4 @@ Windows 10 の展開を開始する前に、これらの要件を確認します
 
 |||
 |:-------|:-----|
-|![手順 3](./media/stepnumbers/Step3.png)| [Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する](windows10-deploy-autopilot.md) |
+|![手順 3](../media/stepnumbers/Step3.png)| [Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する](windows10-deploy-autopilot.md) |

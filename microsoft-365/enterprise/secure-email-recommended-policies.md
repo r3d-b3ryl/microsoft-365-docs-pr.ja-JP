@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: e8c2b10f3e1dd88703b15c326dedb164a686cfca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596734"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084313"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -34,7 +34,7 @@ ms.locfileid: "41596734"
 
 次の図は、一般的な id およびデバイスアクセスポリシーを示し、電子メールを保護するために更新する必要があるポリシーを示しています。 ActiveSync クライアントをブロックする Exchange Online の新しいルールの追加に注意してください。 これにより、Outlook mobile が強制的に使用されます。
 
-![メールを保護するためのポリシー更新の概要](../images/identity-access-ruleset-mail.png)
+![メールを保護するためのポリシー更新の概要](../media/identity-access-ruleset-mail.png)
 
 ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ルールは、[一般的な id およびデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクします。
 
@@ -70,13 +70,13 @@ ms.locfileid: "41596734"
 
 8. [**条件**] を選択してから、[**クライアントアプリ**] を選択します。
 
-9. [**構成**] で、[**はい]** を選択します。 [**モバイルアプリ] と [デスクトップクライアント**] および [ **Exchange ActiveSync クライアント**] のみをチェックします。 [ **Done**] を選びます。
+9. [**構成**] で、[**はい]** を選択します。 [**モバイルアプリ] と [デスクトップクライアント**] および [ **Exchange ActiveSync クライアント**] のみをチェックします。 [**完了**] を選択します。
 
 10. **[アクセス制御]** セクションから **[許可]** を選びます。
 
 11. [**アクセス許可の付与**] を選択し、[**承認済みクライアントアプリの要求**] を選択します。  複数のコントロールの場合は、[選択した**コントロールを必要とする**] を選択し、[**選択**] を選択します。
 
-12. [**作成**] を選択します。
+12. **[作成]** を選択します。
 
 ## <a name="setup-office-365-message-encryption"></a>Office 365 メッセージの暗号化のセットアップ
 

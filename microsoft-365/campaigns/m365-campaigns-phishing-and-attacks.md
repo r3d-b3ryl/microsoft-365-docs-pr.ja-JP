@@ -1,5 +1,7 @@
 ---
 title: フィッシングやその他の攻撃から保護する
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 04779d1c69b57811cf493a9f48185eed2435c82e
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 2b0acd42b1c272bba7078bf6bc09944540ca9e42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748258"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080604"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から保護する
 
@@ -65,7 +67,7 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 
 このインフォグラフィックを、お客様のためのヒントと、キャンペーンチームのメンバーにダウンロードしてください。
 
-[![「キャンペーン情報を保護する」の図](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![「キャンペーン情報を保護する」の図](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

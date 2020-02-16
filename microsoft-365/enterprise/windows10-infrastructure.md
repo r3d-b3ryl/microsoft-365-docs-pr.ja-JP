@@ -12,16 +12,16 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: a709971786dd85ff0f086c5c9d57c2d807391c65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596624"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085542"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
-![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![フェーズ 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise には、Windows 10 Enterprise が含まれています。これにより、より多くの機能を提供し、安全な状態を維持できます。 Windows 10 Enterprise:
 
@@ -80,10 +80,10 @@ Microsoft の内部を見ることで、会社が[Windows 10 Enterprise を展�
 
 架空の多国籍企業である Contoso Corporation が[Windows 10 Enterprise を展開](contoso-win10.md)した方法を参照してください。
 
-![Contoso 社](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![手順 1](./media/stepnumbers/Step1.png)| [Windows 10 Enterprise を組織で展開するための準備](windows10-prepare-your-org.md) |
+|![手順 1](../media/stepnumbers/Step1.png)| [Windows 10 Enterprise を組織で展開するための準備](windows10-prepare-your-org.md) |

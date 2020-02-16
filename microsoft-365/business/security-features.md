@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Microsoft 365 Business に付属しているセキュリティ機能について説明します。
-ms.openlocfilehash: 0e1823374ec1843b6caa3f080393ca013302bf72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593427"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064806"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business security and コンプライアンス機能
 
@@ -35,7 +35,7 @@ Microsoft 365 Business では、Pc、携帯電話、タブレットでデータ�
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business 管理センターのセキュリティ機能
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 管理センターでは、Microsoft 365 Business セキュリティ機能の多くを管理することができます。これにより、これらの機能を簡単にオンまたはオフにすることができます。 管理センターでは、次の操作を実行できます。
   
@@ -123,6 +123,6 @@ Microsoft 365 Business サブスクリプションには、コンプライアン
     
 2. 左側のナビゲーションで、[**管理センター** ] を見つけて展開します。 
     
-    ![Microsoft 365 管理センターの左側のナビゲーションで、[管理センター] を選択します。](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![Microsoft 365 管理センターの左側のナビゲーションで、[管理センター] を選択します。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. [**セキュリティ&amp;コンプライアンス**] を選択し&amp;て、セキュリティ/コンプライアンスセンターに移動します。

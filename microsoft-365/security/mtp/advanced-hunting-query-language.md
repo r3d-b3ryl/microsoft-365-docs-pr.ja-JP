@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 586b887c9c5c1e4c19623c89dd08ed62ba0d4bb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: acc515d046b1ebd2ff7c5dd9c52b363fe99f0b9e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600344"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087469"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -53,7 +53,7 @@ DeviceProcessEvents
 
 これは、高度な捜索でどのように見えるかを示します。
 
-![Microsoft Defender ATP の高度な捜索クエリの画像](../images/advanced-hunting-query-example.png)
+![Microsoft Defender ATP の高度な捜索クエリの画像](../../media/advanced-hunting-query-example.png)
 
 クエリは、まず、目的を説明する短いコメントから始まります。 これは、後でクエリを保存し、組織内の他のユーザーと共有することを決定した場合に役立ちます。
 
@@ -130,7 +130,7 @@ DeviceProcessEvents
 
 [**はじめに**] セクションでは、一般的に使用されている演算子を使用した簡単なクエリーをいくつか提供します。 これらのクエリを実行して、少し変更してみてください。
 
-![高度な捜索ウィンドウの画像](../images/advanced-hunting-get-started.png)
+![高度な捜索ウィンドウの画像](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >基本的なクエリ サンプルとは別に、特定の脅威の捜索シナリオの[共有クエリ](advanced-hunting-shared-queries.md)にアクセスすることもできます。 ページ左側の共有クエリまたは GitHub クエリ リポジトリを探します。
