@@ -20,18 +20,18 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされたファイルを制御し、保護することができます。
-ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596084"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079906"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>リストまたはライブラリに Information Rights Management (IRM) を適用する
 
 Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされたファイルを制御し、保護することができます。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Azure Information Protection からの azure Rights Management サービス (Azure RMS) と、オンプレミスの Active Directory Rights Management サービス (AD RMS) は、サイトの Information Rights Management をサポートしています。 個別または追加のインストールは必要ありません。
     
@@ -47,13 +47,13 @@ Information Rights Management (IRM) を使用すると、リストまたはラ�
 ## <a name="apply-irm-to-a-list-or-library"></a>リストまたはライブラリに IRM を適用する
 <a name="__toc256598179"> </a>
 
-![Information Rights Management の設定](media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![Information Rights Management の設定](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. IRM を構成するリストまたはライブラリに移動します。
     
 2. リボンの [**ライブラリ**] タブをクリックし、[**ライブラリの設定**] をクリックします。 (リストで作業している場合は、[**リスト**] タブをクリックし、[**リストの設定**] をクリックします)。
     
-    ![リボンの [SharePoint ライブラリの設定] ボタン](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![リボンの [SharePoint ライブラリの設定] ボタン](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. [**権限と管理**] で、[ **Information Rights Management**] をクリックします。 Information Rights Management のリンクが表示されない場合は、サイトで IRM が有効になっていない可能性があります。 サイトで IRM を有効にできるかどうかを確認するには、サーバー管理者に問い合わせてください。 画像ライブラリの Information Rights Management リンクは表示されません。
     
@@ -137,7 +137,7 @@ IRM 保護は、リストまたはライブラリレベルでファイルに適�
 |権限の管理、Web サイトの管理  <br/> |**フルコントロール**(クライアントプログラムによって定義されている): この権限では、通常、権限が管理されたコンテンツの読み取り、編集、コピー、保存、および変更のアクセス許可がユーザーに許可されます。  <br/> |
 |アイテムの編集、リストの管理、ページの追加とカスタマイズ  <br/> |[**編集**]、[**コピー**]、[**保存**]: リストまたはライブラリの [Information Rights Management の設定] ページで、[**ユーザーにドキュメントの印刷を許可する**] チェックボックスがオンになっている場合にのみ、ファイルを印刷できます。  <br/> |
 |アイテムの表示  <br/> |**読み取り**: ユーザーはドキュメントを読み取ることはできますが、コンテンツをコピーまたは変更することはできません。 リストまたはライブラリの [Information Rights Management の設定] ページで、[ユーザー**にドキュメントの印刷を許可する**] チェックボックスがオンになっている場合にのみ、印刷を行うことができます。  <br/> |
-|Other  <br/> |IRM アクセス許可に直接対応するその他のアクセス許可はありません。  <br/> |
+|その他  <br/> |IRM アクセス許可に直接対応するその他のアクセス許可はありません。  <br/> |
    
 SharePoint Server 2013 のリストまたはライブラリで IRM を有効にする場合、すべてのフロントエンド web サーバーにプロテクターがインストールされているリストまたはライブラリ内のファイルの種類のみを保護できます。 プロテクターは、特定のファイル形式の権限が管理されたファイルの暗号化と復号化を制御するプログラムです。 SharePoint には、次のファイルの種類のプロテクターが含まれています。
   

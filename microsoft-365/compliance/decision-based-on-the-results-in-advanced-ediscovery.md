@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Office 365 の Advanced eDiscovery の [判断] タブで、ケースファイルのレビューセットの適切なサイズを決定するのに役立つデータを提供する方法について説明します。 '
-ms.openlocfilehash: e60aff12e20a4f8accfbcda958c2d087fd732e88
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b0dd68c294b4555bcf7c9b2cb1c6db455af32e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595384"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076250"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示の結果に基づく決定
 
@@ -31,7 +31,7 @@ ms.locfileid: "41595384"
   
 ## <a name="using-the-decide-tab"></a>[判断] タブの使用
 
-![関連性の決定](media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![関連性の決定](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 このタブには次のものが含まれます。
   

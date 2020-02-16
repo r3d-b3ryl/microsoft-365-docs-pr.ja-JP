@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Microsoft 365 に LinkedIn Company ページからデータをインポートするためのネイティブコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのコンプライアンスを管理することができます。
-ms.openlocfilehash: c8e39577a6eaba3ad865b1617683c2baa9260759
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b42584efb0c99b97c14059ed7d860013f085262c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596024"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079638"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>コネクタをセットアップして LinkedIn データをアーカイブする
 
@@ -45,13 +45,13 @@ LinkedIn 会社のページデータをメールボックスに格納した後�
 
    LinkedIn の [サインイン] ページが表示されます。
 
-   ![LinkedIn サインインページ](media/LinkedInSigninPage.png)
+   ![LinkedIn サインインページ](../media/LinkedInSigninPage.png)
 
 5. LinkedIn の [サインイン] ページで、アーカイブする会社のページに関連付けられている LinkedIn アカウントの電子メールアドレス (または電話番号) とパスワードを入力し、[**サインイン**] をクリックします。
 
    ウィザードページが、サインインしたアカウントに関連付けられているすべての LinkedIn 会社のページの一覧と共に表示されます。 コネクタは、1つの会社のページに対してのみ構成できます。 組織に複数の LinkedIn Company ページがある場合は、それぞれに対してコネクタを作成する必要があります。
 
-   ![LinkedIn 会社のページの一覧を含むページが表示されます。](media/LinkedInSelectCompanyPage.png)
+   ![LinkedIn 会社のページの一覧を含むページが表示されます。](../media/LinkedInSelectCompanyPage.png)
 
 6. アイテムをアーカイブする会社のページを選択し、[**次へ**] をクリックします。
 

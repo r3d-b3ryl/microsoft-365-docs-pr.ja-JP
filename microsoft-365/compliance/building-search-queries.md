@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 で Advanced eDiscovery を使用してデータを検索するときに、検索範囲を絞るためにキーワードと条件を使用します。
-ms.openlocfilehash: 7a6d175016053cd963b03cae91ff43f9c4b3336c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c704b338600c715193829e442e1bd6ba7c780455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596294"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079044"
 ---
 # <a name="build-search-queries"></a>検索クエリのビルド
 
 検索クエリを作成するときには、キーワードを使用して特定のコンテンツと条件を見つけ、法的調査に最も関連のあるアイテムを返すように検索の範囲を絞り込むことができます。
 
-![キーワードと条件を使用して検索結果を絞り込む](media/SearchQueryBox.png)
+![キーワードと条件を使用して検索結果を絞り込む](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>キーワード検索
 
@@ -35,7 +35,7 @@ ms.locfileid: "41596294"
     
 または、[**キーワードリストを表示**する] チェックボックスをオンにして、各行にキーワードまたはキーワードフレーズを入力することもできます。 このようにすると、各行のキーワードは、作成された検索クエリの**or**演算子の機能と類似した論理演算子 (検索クエリ構文では*c:s*で表されます) によって接続されます。 これは、任意の行にキーワードを含むアイテムが検索結果に含まれることを意味します。
 
-![キーワードリストを使用して、クエリ内の各キーワードの統計情報を取得する](media/KeywordListSearch.png)
+![キーワードリストを使用して、クエリ内の各キーワードの統計情報を取得する](../media/KeywordListSearch.png)
 
 キーワードリストを使用する理由 キーワードリストの各キーワードに一致するアイテムの数を示す統計情報を取得できます。 これは、最も頻繁に使用される (および最も少ない) キーワードをすばやく識別するのに役立ちます。 キーワードリストの行にキーワードフレーズ (かっこで囲む) を使用することもできます。 検索統計の詳細については、「[検索統計](search-statistics.md)」を参照してください。
 

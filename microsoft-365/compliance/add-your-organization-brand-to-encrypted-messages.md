@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 のグローバル管理者は、組織の暗号化された電子メールメッセージと暗号化ポータルの内容に組織のブランド化を適用することができます。
-ms.openlocfilehash: b4712edd86099b1c382ef02ca54520b68a54614e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 23b6cd205c4ae3a0ca08aab2209e0152a3f78b63
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594028"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079981"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>暗号化されたメッセージに組織のブランドを追加する
 
@@ -71,7 +71,7 @@ Windows PowerShell を使用して、一度に1つのブランド化テンプレ
 
 2. テンプレートを変更するには、次の図と表を参考にして、set [-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)コマンドレットを使用します。
 
-![カスタマイズ可能な電子メールパーツ](media/ome-template-breakout.png)
+![カスタマイズ可能な電子メールパーツ](../media/ome-template-breakout.png)
 
 |**カスタマイズする暗号化エクスペリエンスの特性**|**使用するコマンド**|
 |:-----|:-----|
@@ -162,7 +162,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 
 3. Microsoft 365 管理センターで、[**管理センター** \> ] [ **Exchange**] を選択します。
 
-4. EAC で、[**メールフロー** \> ] [**ルール**] に移動し **、[新しい** ![新規作成] アイコン](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>を選択して**新しいルールを作成**します。 EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
+4. EAC で、[**メールフロー** \> ] [**ルール**] に移動し **、[新しい** ![新規作成] アイコン](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>を選択して**新しいルールを作成**します。 EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
 
 5. [**名前**] に、[営業部門のブランド化] など、ルールの名前を入力します。
 

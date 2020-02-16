@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: OneDrive for Business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
-ms.openlocfilehash: e22412f43f8caf4ff12d3f6e4f56e08d9d77b4ae
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c21ec4ef6b81bcf89565fd005b9a1d2068244b20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595444"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076354"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 

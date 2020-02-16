@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを使用して、組織の暗号化キーを制御し、Office 365 を使用して Microsoft のデータセンターで保存されているデータを暗号化するように構成します。
-ms.openlocfilehash: ee62065542ea50091d73362dd8d05f2e4e7dc337
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804827"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076928"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Office 365 での顧客キーによるサービスの暗号化
 
@@ -71,11 +71,11 @@ Office 365 では、BitLocker および Distributed Key Manager (DKM) によっ�
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Exchange Online と Skype for Business のキーを暗号化するために使用される暗号化暗号
 
-![Exchange Online の顧客キーの暗号化暗号](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online の顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint Online、OneDrive for Business、Teams ファイルのキーを暗号化するために使用される暗号化暗号
 
-![SharePoint Online の顧客キーの暗号化暗号](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online の顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>関連記事
 

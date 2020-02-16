@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077731"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "41596194"
     
 - ユーザーのプライマリおよびアーカイブメールボックスのアイテムは保持されます。
     
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Exchange Online メールボックスを訴訟ホールドの対象にするには、Exchange online プラン2ライセンスが割り当てられている必要があります。 メールボックスに Exchange Online プラン1ライセンスが割り当てられている場合は、それを保持するために別の Exchange Online アーカイブライセンスを割り当てる必要があります。
     
@@ -86,7 +86,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 次の図は、[回復可能なアイテム] フォルダー内のサブフォルダーと保持のワークフロー プロセスを示しています。
 
-![訴訟ホールドライフサイクル](media/LitigationHoldLifeCycle.png)
+![訴訟ホールドライフサイクル](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > 電子情報開示ケースに関連付けられた保留リストがメールボックスに配置されている場合、削除されたアイテムは、削除サブフォルダーから DiscoveryHolds サブフォルダーに移動され、メールボックスが電子情報開示ホールドから解放されるまで保持されます。

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595674"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078139"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>高度な電子情報開示で会話を確認する 
 
@@ -47,7 +47,7 @@ ms.locfileid: "41595674"
 
 - **会話:** 1つまたは複数のメッセージのグループを表します。 アプリケーションによって、会話はさまざまな方法で表現されることがあります。 アプリケーションによっては、既存のメッセージに返信することによって明示的にアクションが実行されることがあります。 このユーザーの操作の結果として、会話は明示的に形成されます。 たとえば、Microsoft Teams でのチャネル会話のスクリーンショットを次に示します。
 
-   ![Microsoft Teams チャネルの会話](media/threadedchat.png)
+   ![Microsoft Teams チャネルの会話](../media/threadedchat.png)
 
    他のアプリ (Teams における1xN チャットメッセージなど) には、正式な返信チェーンはありません。代わりに、メッセージは1つのスレッド内に "フラット川メッセージ" として表示されます。 これらの種類のアプリでは、会話は特定の時間内に発生するメッセージのグループから推論されます。 メッセージの "ソフトグループ化" (返信チェーンではなく) は、関心のある特定のトピックに関する "前後の" 会話を表します。 
 
@@ -71,7 +71,7 @@ ms.locfileid: "41595674"
 
 会話のデータをレビューセットに追加するときは、会話の取得オプションを使用して、検索を展開し、コンテキストメッセージを含めることができます。 会話の取得オプションを設定すると、次の処理が行われます。
 
-  ![会話の取得](media/messagesandconversations.png)
+  ![会話の取得](../media/messagesandconversations.png)
   
 1. キーワードと日付範囲のクエリを使用して、検索によって*メッセージ 3*でヒットが返されました。 このメッセージは、 *CRC1*で示されている、より大きな会話の一部でした。 
   
@@ -99,13 +99,13 @@ ms.locfileid: "41595674"
 
 標準の校閲セットでは、メッセージが処理され、メールボックスフォルダーに格納されているのと同じように、個別のアイテムとして表示されます。 このワークフローでは、各メッセージは個別のアイテムとして処理されます。 その結果、スレッド化された概要およびエクスポートオプションは、標準のレビューセットでは使用できません。 
 
-  ![標準レビューセット](media/standardrs.PNG)
+  ![標準レビューセット](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>会話レビューセット内の会話のレビュー
 
 会話レビューセットでは、個々のメッセージが連結され、スレッドとして表示されます。 これにより、コンテキスト会話を確認およびエクスポートできます。 
 
-  ![会話レビューセット](media/ConversationRSOptions.PNG)
+  ![会話レビューセット](../media/ConversationRSOptions.PNG)
 
 次のセクションでは、会話レビューセットでの会話のレビューとエクスポートについて説明します。
 
@@ -134,7 +134,7 @@ ms.locfileid: "41595674"
 
 会話のレビューセットでは、次のオプションを設定して会話をエクスポートできます。
 
-![エクスポート](media/export.png)
+![エクスポート](../media/export.png)
 
 a.  メタデータオプション
 

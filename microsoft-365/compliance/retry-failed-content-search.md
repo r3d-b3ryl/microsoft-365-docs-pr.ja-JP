@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: コンテンツの場所にエラーがあるコンテンツ検索を解決するには、[再試行] ボタンを使用します。
-ms.openlocfilehash: ce88749a887fea57e977e210de1eda40268cb832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601624"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081581"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 
@@ -46,7 +46,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 検索を再起動すると、複数のサーバーで同様のエラーが発生することがよくあります。 検索を再起動する代わりに、検索結果ページの上部に表示される [**再試行**] ボタンをクリックします。
 
-![[再試行] ボタンをクリックしてコンテンツの場所のエラーを解決する](media/retrycontentsearch3.png)
+![[再試行] ボタンをクリックしてコンテンツの場所のエラーを解決する](../media/retrycontentsearch3.png)
 
 これにより、失敗したメールボックスに対してのみ検索を再試行します。 検索を再試行すると、正常に返されたその他の結果は保持されます。
 

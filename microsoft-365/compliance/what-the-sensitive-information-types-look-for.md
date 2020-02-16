@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: efd5d2f8003bd79620118a6a058576e5593699b1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601214"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084336"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
@@ -46,7 +46,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのデー�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -104,7 +104,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -152,7 +152,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -224,7 +224,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -424,7 +424,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -584,7 +584,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -644,7 +644,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -704,7 +704,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -754,7 +754,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -810,7 +810,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -864,7 +864,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -904,7 +904,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -962,7 +962,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1021,7 +1021,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1309,7 +1309,7 @@ Cédula de 識別子 dade id カード national id número de rregistro registro
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1375,7 +1375,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1592,7 +1592,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1638,7 +1638,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1705,7 +1705,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -2220,7 +2220,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -2421,7 +2421,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
    
 ## <a name="eu-debit-card-number"></a>欧州連合のデビット カード番号
@@ -2857,7 +2857,7 @@ Keyword_finland_passport_number からのキーワードが見つかりました
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -2906,7 +2906,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -2924,7 +2924,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
    
 ## <a name="france-passport-number"></a>フランスのパスポート番号
 
@@ -2941,7 +2941,7 @@ None
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3303,7 +3303,7 @@ bnationalit
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3353,7 +3353,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3569,7 +3569,7 @@ DLP ポリシーは75% です。この種類の機密情報は、近接する300
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3640,7 +3640,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
    
 ## <a name="ip-address"></a>IP アドレス
@@ -3657,7 +3657,7 @@ None
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3719,7 +3719,7 @@ Dictionary
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3761,7 +3761,7 @@ Dictionary
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3880,7 +3880,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3965,7 +3965,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4009,7 +4009,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4119,7 +4119,7 @@ Otemachi
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4179,7 +4179,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4218,7 +4218,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4269,7 +4269,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4320,7 +4320,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4365,7 +4365,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4574,7 +4574,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4736,7 +4736,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4776,7 +4776,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4994,7 +4994,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
 ## <a name="sql-server-connection-string"></a>SQL Server の接続文字列
 
@@ -5014,7 +5014,7 @@ None
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5107,7 +5107,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-不要
+いいえ
    
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 
@@ -5121,7 +5121,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5196,7 +5196,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5319,7 +5319,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5364,7 +5364,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5391,7 +5391,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Resident Cert. 
 - Identification card 
 - Alien Resident Certificate 
-- 円弧 
+- ARC 
 - Taiwan Area Resident Certificate 
 - TARC 
 - 居留證 
@@ -5560,7 +5560,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5685,7 +5685,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5744,7 +5744,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5796,7 +5796,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -5860,7 +5860,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -6021,7 +6021,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -6108,7 +6108,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
 
 
 ### <a name="definition"></a>定義
@@ -6116,92 +6116,40 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
-- 関数 Func_us_date が適切な日付形式の日付を検出した。
-- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_unformatted_ssn は、このパターンに一致するコンテンツを検索します。
 - Keyword_ssn のキーワードを検出した。
-- 関数 Func_us_date が適切な日付形式の日付を検出した。
-- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_randomized_formatted_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
-- 関数 Func_us_date が適切な日付形式の日付を検出した。
-- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に 55% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_randomized_unformatted_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
-- 関数 Func_us_date が適切な日付形式の日付を検出した。
-- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
-DLP ポリシーの信頼度は40% で、この種類の機密情報は、近接する300文字内で検出されます。
-- 関数 Func_ssn がパターンに一致するコンテンツを検出した。
-- 関数 Func_unformatted_ssn がパターンに一致するコンテンツを検出しなかった。
-- 関数 Func_randomized_unformatted_ssn は、このパターンに一致するコンテンツを検出しません。
-- Keyword_ssn からのキーワードが見つかりません。
- 
-または
-
-- 関数 Func_randomized_formatted_ssn がパターンに一致するコンテンツを検出した。
-- 関数 Func_unformatted_ssn がパターンに一致するコンテンツを検出しなかった。
-- 関数 Func_randomized_unformatted_ssn は、このパターンに一致するコンテンツを検出しません。
-- Keyword_ssn からのキーワードが見つかりません。
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
   <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="55">
         <IdMatch idRef="Func_randomized_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-    </Entity>
+  </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード

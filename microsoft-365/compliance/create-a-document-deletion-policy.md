@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 組織は多くの場合、コンプライアンス、法律、その他の規制により、ドキュメントを一定期間保持する必要があります。しかし、必要以上にドキュメントを長く保持すると、組織が法的なリスクにさらされる場合があります。
-ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596234"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077940"
 ---
 # <a name="create-a-document-deletion-policy"></a>ドキュメント削除ポリシーを作成する
 
@@ -32,19 +32,19 @@ ms.locfileid: "41596234"
   
 ドキュメント削除ポリシーを作成した後、それをサイト コレクション テンプレートに割り当てると、そのテンプレートから作成されたすべてのサイト コレクションでポリシーを利用できます。さらに、特定のサイト コレクションにポリシーを割り当て、そのサイト コレクションのテンプレートに割り当てられているポリシーを上書きすることもできます。
   
-![ドキュメント削除ポリシー センターのホーム ページ](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![ドキュメント削除ポリシー センターのホーム ページ](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>ポリシー テンプレート
 
 ドキュメント削除ポリシーは、最初から作成することも、サンプル ポリシーのいずれかを使用して作成することもできます。コンプライアンス ポリシー センターには、そのまま使用できるサンプル ポリシー、または名前や内容の変更ができる基礎となるサンプル ポリシーが用意されています。
   
-![サンプル ドキュメント削除ポリシー](media/IP-Sample-deletion-policies.png)
+![サンプル ドキュメント削除ポリシー](../media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>ドキュメント削除ポリシーの使い方の例
 
 サイト コレクションまたはサイト コレクション テンプレートに 1 つ以上のポリシーを割り当てることができ、各ポリシーに 1 つ以上のルールを含めることができます。 ただし、サイトごとにアクティブなポリシーは1つだけであり、サイト内のライブラリに対していつでもアクティブな削除ルールは1つだけです。
   
-![ポリシー間の関係を示す図](media/IP-Two-policies-four-rules.png)
+![ポリシー間の関係を示す図](../media/IP-Two-policies-four-rules.png)
   
 さらに、必須または既定のポリシーを選択でき、削除ルールを既定のルールとして選択できます。 
   
@@ -68,7 +68,7 @@ ms.locfileid: "41596234"
     
 この例では、特定のテンプレートから作成されたすべてのサイト コレクション内のすべてのライブラリに既定の削除ルールが適用され、サイトの所有者はポリシーを拒否できません。これは、ドキュメント削除ポリシーを広範囲にわたって厳格に適用するための最も簡単な方法です。
   
-![単一の必須ポリシーを示す図](media/IP-Example-1-doc-deletion-policies.png)
+![単一の必須ポリシーを示す図](../media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>例 2: 複数のルールを持つ単一のポリシーをサイトコレクションテンプレートに適用する
 
@@ -84,7 +84,7 @@ ms.locfileid: "41596234"
     
 サイトの所有者は、代替削除ルールを 1 つ選択する、ポリシーを拒否する、あるいはそのまま既定のポリシーとルールに従うこともできます。
   
-![多数のルールを含む 1 つのポリシーを示す図](media/IP-Example-2-doc-deletion-policies.png)
+![多数のルールを含む 1 つのポリシーを示す図](../media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>例 3: 1 つ以上のルールを持つ複数のポリシーをサイト コレクションに適用する
 
@@ -104,7 +104,7 @@ ms.locfileid: "41596234"
     
 さらに、特定のサイト コレクションに合わせてポリシーとルールをカスタマイズし、サイトの所有者は各サイトに最も適したポリシーとルールを選択して、継承を断つことができます。
   
-![多数のポリシーとルールを示す図](media/IP-Example-3-doc-deletion-policies.png)
+![多数のポリシーとルールを示す図](../media/IP-Example-3-doc-deletion-policies.png)
   
 ## <a name="create-a-document-deletion-policy"></a>ドキュメント削除ポリシーを作成する
 
@@ -114,7 +114,7 @@ ms.locfileid: "41596234"
     
 2. [**削除ポリシー**] を選択します。
     
-    ![削除ポリシー オプション](media/IP-Deletion-Policies-option.png)
+    ![削除ポリシー オプション](../media/IP-Deletion-Policies-option.png)
   
 3. **[新しいアイテム]** を選択します。
     
@@ -132,9 +132,9 @@ ms.locfileid: "41596234"
     
   - ルールが既定のルールであるかどうかを選択します。最初に作成したルールは、自動的に既定のルールとして設定されます。既定のルールは、ポリシーを使用するサイト内のすべてのライブラリに自動的に適用されます。
     
-![新しい削除ルール ページ](media/IP-New-deletion-rule.png)
+![新しい削除ルール ページ](../media/IP-New-deletion-rule.png)
   
-7. [**保存**] をクリックします。
+7. **[保存]** をクリックします。
     
 8. サイトの所有者が各サイトに適用する別のルールを選択できるようにしたい場合は、追加のルールを作成します。サイト所有者が措置を取らなければ、既定のルールが適用されます。
     
@@ -143,7 +143,7 @@ ms.locfileid: "41596234"
     > [!NOTE]
     > ルールを削除したときに、そのポリシーに既定のルールが含まれていない場合は、そのポリシーに対して適用されるルールはありません。つまり、ドキュメントが削除されることはありません。 
   
-![ポリシーからのルール削除の確認メッセージ](media/IP-Remove-rule-from-policy-message.png)
+![ポリシーからのルール削除の確認メッセージ](../media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>ドキュメント削除ポリシーをサイト コレクション テンプレートに割り当てる
 
@@ -155,7 +155,7 @@ ms.locfileid: "41596234"
     
 2. **[テンプレートのポリシーの割り当て]** を選択します。
     
-    ![[テンプレートのポリシーの割り当て] オプション](media/IP-Policy-Assignments-for-Templates-option.png)
+    ![[テンプレートのポリシーの割り当て] オプション](../media/IP-Policy-Assignments-for-Templates-option.png)
   
 3. **[新しいアイテム]** を選択します。
     
@@ -168,24 +168,24 @@ ms.locfileid: "41596234"
     > [!NOTE]
     > サイト コレクション テンプレートにポリシーを割り当てると、そのポリシーは、そのテンプレートから作成された既存のサイト コレクションと今後作成されるサイト コレクションの両方で利用できるようになります。 
   
-![OneDrive オプションを表示するテンプレート ページの選択](media/IP-Choose-a-template.png)
+![OneDrive オプションを表示するテンプレート ページの選択](../media/IP-Choose-a-template.png)
   
-5. [**保存**] をクリックします。
+5. **[保存]** をクリックします。
     
     > [!NOTE]
     > 各テンプレートには、1つのポリシーセットのみを割り当てることができます。 このテンプレートに既に割り当てられているポリシーがあるというエラーが表示される場合は、左側のナビゲーション\>で [**サイトコレクションへの割り当て**を**キャンセル** \>する] を選択します。既に割り当てられているポリシーのセットを表示および管理するには、[サイトコレクション] を選択します。 
   
 6. **[割り当て済みのポリシーの管理]** を選択し、割り当てたいポリシーを選択し、いずれかのポリシーを既定のポリシーにするかどうかを選択します。 既定のポリシーを設定すると、そのポリシーに割り当てられているすべてのサイトでポリシーが自動的に (サイト所有者の操作なしに) アクティブになります。
     
-    ![ポリシー ページの追加および管理](media/IP-Add-and-manage-policies-page.png)
+    ![ポリシー ページの追加および管理](../media/IP-Add-and-manage-policies-page.png)
   
-7. [**保存**] をクリックします。
+7. **[保存]** をクリックします。
     
 8. サイト所有者が拒否できないようにポリシーをすべてのサイトに適用するには、**[必須のポリシーに指定する]** を選択します。ポリシーを必須にすると、サイト コレクション テンプレートにはその 1 つのポリシーのみを割り当てることができます。そのポリシーは、既定のポリシーとしても指定する必要があります。
     
     このオプションが灰色表示になっている場合は、**[割り当て済みのポリシーの管理]** を選択し、少なくとも 1 つのポリシーが割り当て済みであり、既定として設定されていることを確認してください。 
     
-9. [**保存**] をクリックします。
+9. **[保存]** をクリックします。
     
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection"></a>ドキュメント削除ポリシーをサイト コレクションに割り当てる
 
@@ -197,7 +197,7 @@ ms.locfileid: "41596234"
     
 2. **[サイト コレクションのポリシーの割り当て]** を選択します。
     
-    ![[サイト コレクションのポリシーの割り当て] オプション](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![[サイト コレクションのポリシーの割り当て] オプション](../media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. **[新しいアイテム]** を選択します。
     
@@ -206,19 +206,19 @@ ms.locfileid: "41596234"
     > [!NOTE]
     > 各サイトコレクションには、1つのポリシーセットのみを割り当てることができます。 このサイトコレクションに既にポリシーが割り当てられていることを示すエラーが表示された場合は、[**サイトコレクションへの割り当て**を**キャンセル** \>する] を選択し、既に割り当てられているポリシーのセットを表示および管理するためのサイトコレクションを選択します。 
   
-![サイト コレクション ページの選択](media/IP-Choose-a-site-collection-page.png)
+![サイト コレクション ページの選択](../media/IP-Choose-a-site-collection-page.png)
   
 5. **[割り当て済みのポリシーの管理]** を選択し、割り当てたいポリシーを選択し、いずれかのポリシーを既定のポリシーにするかどうかを選択します。 既定のポリシーを設定すると、そのポリシーに割り当てられているすべてのサイトでポリシーが自動的に (サイト所有者の操作なしに) アクティブになります。
     
-    ![ポリシー ページの追加および管理](media/IP-Add-and-manage-policies-page.png)
+    ![ポリシー ページの追加および管理](../media/IP-Add-and-manage-policies-page.png)
   
-6. [**保存**] をクリックします。
+6. **[保存]** をクリックします。
     
 7. サイト所有者が拒否できないようにポリシーをすべてのサイトに適用するには、**[必須のポリシーに指定する]** を選択します。ポリシーを必須にすると、サイト コレクションにその 1 つのポリシーのみを割り当てることができます。そのポリシーは、既定のポリシーとしても指定する必要があります。
     
     このオプションが灰色表示になっている場合は、**[割り当て済みのポリシーの管理]** を選択し、少なくとも 1 つのポリシーが割り当て済みであり、既定として設定されていることを確認してください。 
     
-8. [**保存**] をクリックします。
+8. **[保存]** をクリックします。
     
 ## <a name="delete-a-policy-assignment"></a>ポリシーの割り当てを削除する
 
@@ -230,7 +230,7 @@ ms.locfileid: "41596234"
     
 3. 割り当てアイテムを選択し、[**アイテムの削除**] をクリックします。
     
-    ![ポリシー割り当てのアイテム コマンドの削除](media/IP-Delete-policy-assignment.png)
+    ![ポリシー割り当てのアイテム コマンドの削除](../media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>ポリシーを削除する
 
@@ -240,17 +240,17 @@ ms.locfileid: "41596234"
     
 2. [* * 削除ポリシー] * * を選択します。
     
-    ![削除ポリシー オプション](media/IP-Deletion-Policies-option.png)
+    ![削除ポリシー オプション](../media/IP-Deletion-Policies-option.png)
   
 3. ポリシーを選択します。
     
 4. [リボン\> **アイテム**] タブ\>で [**ポリシーの削除**] を削除します。
     
-    ![リボンの [ポリシーの削除] ボタン](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![リボンの [ポリシーの削除] ボタン](../media/IP-Remove-Policy-button-on-Ribbon.png)
   
 5. ポリシーが使用されている場合、そのポリシーを使用しているすべてのサイトコレクションから削除するかどうかを確認するメッセージが表示されます。 確認したら、[ **OK]** を選択します。
     
-    ![ポリシー確認メッセージの削除](media/IP-Delete-policy-confirmation.png)
+    ![ポリシー確認メッセージの削除](../media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>関連項目
 

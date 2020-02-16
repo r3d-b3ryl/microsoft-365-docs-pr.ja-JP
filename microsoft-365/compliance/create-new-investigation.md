@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ef84380e17757f96bdf66307595c92d85a335930
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596164"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077471"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>データ調査で新しい調査を作成する (プレビュー)
 
@@ -49,4 +49,4 @@ ms.locfileid: "41596164"
 
     調査の [**ホーム**] タブが表示されます。 たとえば、次に示すのは、" *Critical: Tax document and finance data 漏洩*" という名前の新しい調査です。
 
-    ![データ調査の新しい調査の [ホーム] タブ](media/NewDataInvestigations.png)
+    ![データ調査の新しい調査の [ホーム] タブ](../media/NewDataInvestigations.png)

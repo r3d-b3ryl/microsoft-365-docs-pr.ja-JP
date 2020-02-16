@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Office 365 Advanced eDiscovery で関連性トレーニングを実行する前に、インポートされたファイルを最後に定義したロードまたはバッチファイルに追加する手順を確認します。  '
-ms.openlocfilehash: 6778666e1ef0e5900a2afcc2949bdc9579c21fd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601464"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081100"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示でインポートされたファイルを追加するためのロードを設定する
 
@@ -42,7 +42,7 @@ ms.locfileid: "41601464"
   
 1. [**関連性\>の関連性の設定**] タブで、[**ロード**] を選択します。
     
-    ![[関連性の設定をロード] タブ](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![[関連性の設定をロード] タブ](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **インクルードファイル**: 含めるファイルのオプションを選択します。 既定では、現在の負荷にファイルを追加すると、"すべてのファイル" の作成に基づきます。
     

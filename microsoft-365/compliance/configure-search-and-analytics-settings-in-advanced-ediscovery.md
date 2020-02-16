@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ケースのすべてのレビューセットに適用される高度な電子情報開示設定を構成します。 これには、分析と OCR の設定が含まれます。
-ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595714"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078328"
 ---
 # <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
 
@@ -45,7 +45,7 @@ ms.locfileid: "41595714"
 
    [ケースの設定] ページが表示されます。 これらの設定は、ケースのすべてのレビューセットに適用されます。
 
-   ![高度な電子情報開示ケースの分析と検索の設定を構成する](media/AeDCaseSettings.png)
+   ![高度な電子情報開示ケースの分析と検索の設定を構成する](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>ほぼ重複、電子メールスレッド
 
@@ -73,7 +73,7 @@ ms.locfileid: "41595714"
 
 [**分析後に保存された検索の確認を自動的に作成**する] チェックボックスをオンにすると、[上級電子情報開示] Autogenerates**に対して**という名前のレビュー設定クエリが生成されます。 
 
-![のレビュー用に自動生成されたクエリ](media/AeDForReviewQuery.png)
+![のレビュー用に自動生成されたクエリ](../media/AeDForReviewQuery.png)
 
 このクエリは、基本的に、重複アイテムをレビューセットから除外します。 これにより、レビューセット内の一意のアイテムを確認できます。 このクエリは、ケースのレビューセットに対して分析を実行した場合にのみ作成されます。 詳細については、「レビュー[セットのクエリ](review-set-search.md)の概要」を参照してください。
 

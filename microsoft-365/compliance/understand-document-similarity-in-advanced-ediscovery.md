@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'ドキュメントの類似性の値を確認します。2つのファイルの resemblance の最小レベルは、重複していると見なされ、Office 365 の高度な電子情報開示で機能します。 '
-ms.openlocfilehash: c11359681de4d1e078cde8ebf603396c9a71e3b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597334"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080776"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示のドキュメントの類似性を理解する
 
@@ -44,11 +44,11 @@ ms.locfileid: "41597334"
   
 Resemblance のレベルは次のように示されています。
   
-![ドキュメントの類似性](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![ドキュメントの類似性](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 別のドキュメント X1 が挿入されたと仮定します。 X1 と E3 の間の resemblance は87% です。 同様に、X1 と F1 の間の resemblance は92% です。 その結果として、すべての設定が1つの ND セットに結合されるようにします。
   
-![ドキュメントの類似性](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![ドキュメントの類似性](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > 1つの ND セットに2つのドキュメントが割り当てられている場合は、そのセットに追加のドキュメントが追加された場合でも、セットが結合された場合でも、同じ ND セットに残ります。 

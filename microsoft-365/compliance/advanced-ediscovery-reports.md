@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 736117f62877bd0b33ae1007f00d5a32680963fb
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079958"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>高度な電子情報開示レポート (プレビュー)
 
@@ -35,7 +35,7 @@ ms.locfileid: "41662251"
 
 - 組織内にアクティブなケースとクローズしたケースはいくつありますか?
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 高度な電子情報開示レポートにアクセスするには、電子情報開示管理役割グループのメンバーである必要があります。 この役割グループのメンバーである場合は、レポート内のデータを表示、フィルター処理、およびエクスポートするために必要なアクセス許可が付与されます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
 
@@ -51,11 +51,11 @@ Advanced eDiscovery レポートにアクセスするには、次のようにし
   
    **[Advanced eDiscovery**ホーム] ページでは、ケース、保管担当者、[データソース]、[コミュニケーションレポート] タブがページの上部に表示されます。 
   
-   ![ホームページの高度な電子情報開示レポート](media/report-home.png)
+   ![ホームページの高度な電子情報開示レポート](../media/report-home.png)
 
 5. レポートを表示するには、レポートタブをクリックし、必要に応じて次のいずれかの操作を行います。
 
-   ![レポートデータをフィルター処理またはダウンロードすることができます。](media/AeDReportsFilterDownload.png)
+   ![レポートデータをフィルター処理またはダウンロードすることができます。](../media/AeDReportsFilterDownload.png)
 
    a.  レポートデータを絞り込むには、[**フィルター** ] をクリックします。 各レポートのさまざまなプロパティにフィルターを適用することができます。
   
@@ -97,7 +97,7 @@ Advanced eDiscovery レポートにアクセスするには、次のようにし
 |列        |説明|
 | -------------|-------------|
 |ケース ID |各ケースの一意の識別子。 |
-|Workload |保持するコンテンツの場所の種類 (Exchange、SharePoint など) を示します。
+|ワークロード |保持するコンテンツの場所の種類 (Exchange、SharePoint など) を示します。
 |場所の名前 |コンテンツの場所の SMTP アドレス (Exchange メールボックスの場合) または URL (SharePoint サイトの場合) を示します。 | 
 |保管担当者 ID |データソースが保管担当者に属している場合、この列には、特定のケースにおける保管担当者の一意の識別子が表示されます。 この列は、非 wi-fi ダイヤルの場所の場合は null になります。|
 |保管担当者名 |Active Directory 内の保管担当者の名前。| 

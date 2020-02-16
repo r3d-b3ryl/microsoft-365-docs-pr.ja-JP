@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784694"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078781"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -53,13 +53,13 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 2. Microsoft Office 365 セキュリティ/コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
 
-3. [**作成**] を選択します。
+3. **[作成]** を選択します。
 
 4. [**名前**] フィールドに、新しい役割グループにフレンドリ名を付けます。 [**次へ**] を選択します。
 
 5. [**役割の選択**] を選択し、[**追加**] を選択します。 [**監督レビュー管理者**]、[**ケースの管理**]、[**レビュー**] のチェックボックスをオンにして、[**追加**と**完了**] を選択します。 [**次へ**] を選択します。
 
-    ![通信コンプライアンスに必要な役割グループ](media/communication-compliance-role-groups.png)
+    ![通信コンプライアンスに必要な役割グループ](../media/communication-compliance-role-groups.png)
 
 6. [**メンバーの選択**] を選択し、[**追加**] を選択します。 [ポリシーの作成] と [ポリシーの一致でメッセージを管理する] を使用するすべてのユーザーおよびグループのチェックボックスをオンにし、[**追加** **] を選択します。** [**次へ**] を選択します。
 

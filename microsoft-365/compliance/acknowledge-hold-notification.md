@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 法的調査の一環として、電子的に保存された情報を保持する義務を保管担当者に通知する必要があります。 上級電子情報開示を使用すると、保留通知プロセスを簡単に管理できます。
-ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594070"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080280"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する
 
@@ -52,4 +52,4 @@ ms.locfileid: "41594070"
 
 電子メール通知に加えて、各保管担当者は固有のコンプライアンスポータルにアクセスできます。 ポータルを通じて、各保管担当者はアクティブな保留通知を表示、アクセス、および認識できます。
 
-![保管担当者のコンプライアンスポータル](media/CustodianPortal.jpg)
+![保管担当者のコンプライアンスポータル](../media/CustodianPortal.jpg)

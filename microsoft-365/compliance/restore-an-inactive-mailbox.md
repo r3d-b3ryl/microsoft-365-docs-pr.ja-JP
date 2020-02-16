@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 新しい従業員または別のユーザーが Office 365 の非アクティブなメールボックスのコンテンツにアクセスする必要がある場合は、非アクティブなメールボックスのコンテンツを既存のメールボックスに復元 (またはマージ) することができます。
-ms.openlocfilehash: 7a12d34c175340a51ddaf39cdfffc945a0add203
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1fdf86c17d557ef27373001cb63f710168269a19
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601634"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081607"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>Office 365 の非アクティブなメールボックスを復元する
 
@@ -33,7 +33,7 @@ ms.locfileid: "41601634"
 
 非アクティブなメールボックスの復元と回復の違いの詳細については、この記事の「**詳細情報**」セクションを参照してください。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 非アクティブなメールボックスを復元するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)」を参照してください。
 
@@ -125,8 +125,8 @@ ms.locfileid: "41601634"
 
     **TargetRootFolder パラメーターを使用しない場合の、ターゲット メールボックス内のフォルダー階層**
 
-    ![TargetRootFolder パラメーターを使用していないときのスクリーン ショット](media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+    ![TargetRootFolder パラメーターを使用していないときのスクリーン ショット](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
   
     **TargetRootFolder パラメーターを使用する場合の、ターゲット メールボックス内のフォルダー階層**
 
-    ![TargetRootFolder パラメーターが使用されているときのスクリーン ショット](media/300da592-7323-48db-b8a4-07012259d113.png)
+    ![TargetRootFolder パラメーターが使用されているときのスクリーン ショット](../media/300da592-7323-48db-b8a4-07012259d113.png)

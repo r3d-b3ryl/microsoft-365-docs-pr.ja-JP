@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: d0bd5411e99471ff326906f65747ec7a6f841545
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
-ms.translationtype: HT
+ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596204"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078294"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Office 365 で監督ポリシーを構成する
 
 >[!IMPORTANT]
->このトピックは、Office 365 サブスクリプションの監督ポリシーの構成に適用されます。 Microsoft 365 サブスクリプションの通信コンプライアンスを構成する場合は、「[Configure communications compliance in Microsoft 365 (preview) (Microsoft 365 で通信コンプライアンスを構成する (プレビュー))](communication-compliance-configure.md)」を参照してください。
+>このトピックは、Office 365 サブスクリプションの監督ポリシーの構成に適用されます。 Microsoft 365 サブスクリプションの通信コンプライアンスを構成する場合は、「 [microsoft 365 で通信コンプライアンスを構成](communication-compliance-configure.md)する」を参照してください。
 
 監督ポリシーを使って、内部レビューまたは外部レビューによる調査のために従業員の通信をキャプチャします。 監督ポリシーが組織内の通信を監視する方法の詳細については、「[Office 365 の監督ポリシー](supervision-policies.md)」を参照してください。
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661953"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078739"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>通信コンプライアンスアラートを調査および修復する
 
@@ -66,7 +66,7 @@ ms.locfileid: "41661953"
 
 8. 選択したフィルターをフィルタークエリとして保存する場合は、少なくとも1つのフィルター値を構成した後で、[クエリコントロールを**保存**する] を選択します。 フィルタークエリの名前を入力し、[**保存**] を選択します。 このフィルターは、このポリシーに対してのみ使用でき、[**フィルター**の詳細] ページの [**保存されたフィルタークエリ**] セクションに一覧表示されます。
 
-    ![コミュニケーションコンプライアンスフィルターの詳細コントロール](media/communication-compliance-filter-detail-controls.png)
+    ![コミュニケーションコンプライアンスフィルターの詳細コントロール](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>ほぼ同一の重複分析の使用
 
@@ -90,7 +90,7 @@ ms.locfileid: "41661953"
 
 8. メッセージの修復アクションを完了したら、[**閉じる**] を選択します。
 
-    ![コミュニケーションコンプライアンスの正確な複製コントロール](media/communication-compliance-duplicates-controls.png)
+    ![コミュニケーションコンプライアンスの正確な複製コントロール](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>アラートを修復する
 
@@ -98,7 +98,7 @@ ms.locfileid: "41661953"
 
 1. **メッセージの基本事項を確認**します。メッセージがすぐに修復される可能性があることが、ソースまたは件名から明らかな場合もあります。 メッセージが誤っているかポリシーに一致しない可能性があるため、誤検知として解決する必要があります。 **誤**検知コントロールを選択して、直ちにアラートを解決し、保留中のアラートキューから削除します。 送信元または送信者の情報から、このような状況でメッセージをルーティングまたは処理する方法が既にわかっている場合があります。 タグを該当するメッセージに割り当てるか、または指定した校閲者にメッセージを送信するには、**タグとし**てまたはを**エスカレート**することを検討してください。
 
-    ![コミュニケーションコンプライアンスの修復コントロール](media/communication-compliance-remediation-controls.png)
+    ![コミュニケーションコンプライアンスの修復コントロール](../media/communication-compliance-remediation-controls.png)
 
 2. **メッセージの詳細を確認**します。メッセージの基礎を確認したら、メッセージを開いて詳細を確認し、さらに修復アクションを決定します。 メッセージを選択して、完全なメッセージヘッダーと本文情報を表示します。 適切なアクションを決定するのに役立つさまざまなビューがあります。
 
@@ -107,7 +107,7 @@ ms.locfileid: "41661953"
     - **ビューに注釈を付ける**: このビューでは、メッセージのビューに保存されているメッセージに、注釈を直接追加することができます。
     - [**ユーザー履歴**: ユーザー履歴の表示の場合、メッセージを送信するユーザーの通信コンプライアンスポリシーによって生成される他のすべての警告を表示します。
 
-    ![コミュニケーションコンプライアンスメッセージビューコントロール](media/communication-compliance-message-views.png)
+    ![コミュニケーションコンプライアンスメッセージビューコントロール](../media/communication-compliance-message-views.png)
 
 3. **修復アクションを決定**する: 通知のメッセージの詳細を確認したので、いくつかの修復アクションを選択できます。
 

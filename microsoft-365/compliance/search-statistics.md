@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 665ffe5fea6fa6996b405198524ef7dfb51e162f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601744"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081377"
 ---
 # <a name="search-statistics"></a>検索の統計
 
 データインシデントの調査時に検索結果を検証する効果的な方法は、検索結果に関する統計情報を表示して、期待どおりに配置されていることを確認することです。 検索の実行が完了すると、[検索の詳細] ポップアップページの [**状態**] の下に、次のような高レベルの統計が表示されます。
 
-![検索 statisics 上の検索の詳細ポップアップページ](media/SearchDetailsFlyout.png)
+![検索 statisics 上の検索の詳細ポップアップページ](../media/SearchDetailsFlyout.png)
 
 - 検索条件に一致したアイテムの推定数とサイズ。
 
@@ -37,7 +37,7 @@ ms.locfileid: "41601744"
 
 詳細な統計情報を表示するには、[検索の詳細] ポップアップページの [**統計**] をクリックします。 [**検索統計**] ページでは、検索の概要、検索結果に一致したアイテムを含む上位の場所、および検索クエリに関する詳細な統計情報を表示できます。
 
-![検索の統計ドロップダウンリスト](media/SearchStatisticsDropDownList.png)
+![検索の統計ドロップダウンリスト](../media/SearchStatisticsDropDownList.png)
 
 ## <a name="summary"></a>概要
 

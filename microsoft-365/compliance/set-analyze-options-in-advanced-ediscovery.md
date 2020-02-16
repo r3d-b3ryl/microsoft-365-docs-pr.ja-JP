@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Office 365 の Advanced eDiscovery で分析プロセスのオプションを設定する手順を確認します。これには、ほぼ重複、電子メールのスレッド、テーマなどが含まれます。  '
-ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597464"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081160"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示の分析オプションを設定する
 
@@ -34,7 +34,7 @@ Advanced eDiscovery で、analyze を実行する前に Analyze オプション�
 
 \> [ **Analyze \>の準備**]**セットアップ**を開きます。 次のウィンドウが表示されます。
   
-![[分析設定] のオプション](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![[分析設定] のオプション](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **ほぼ重複した電子メールスレッド**分析を実行する場合は、このチェックボックスをオンにします。 既定では選択されています。 
   
@@ -51,11 +51,11 @@ Advanced eDiscovery で、analyze を実行する前に Analyze オプション�
     
     たとえば、提案された単語が "computer" で、"2" が "テーマの最大数" として指定されている場合、上級電子情報開示では、"computer" という単語に関連する2つのテーマが生成されます。 この2つのテーマは、「コンピューターソフトウェア」と「コンピュータハードウェア」などです。 
     
-    ![提示されたテーマの追加](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![提示されたテーマの追加](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. 提案されたテーマを表示、追加、または編集するには、[**変更**] をクリックします。
     
-2. [推奨された**テーマ**] パネルで、[](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)追加] アイコンアイコンをクリック**して** ![テーマを追加します。 [**推奨テーマの追加**] パネルで、単語をコンマで区切って追加します。 
+2. [推奨された**テーマ**] パネルで、[](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)追加] アイコンアイコンをクリック**して** ![テーマを追加します。 [**推奨テーマの追加**] パネルで、単語をコンマで区切って追加します。 
     
 3. [**テーマの数**] で、詳細電子情報開示によって生成されるテーマの数を決定する値を選択します (既定では1テーマ)。
     

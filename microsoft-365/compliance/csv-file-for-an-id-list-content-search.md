@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 特定の電子メールメッセージを返す ID リスト検索を作成するには、既存のコンテンツ検索から .csv ファイルまたはインデックスを作成しない .csv ファイルを使用します。 通常、ID リスト検索は、部分的にインデックスが作成されたメールボックスアイテムを返すために使用されます。
-ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595524"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077025"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Office 365 で ID リストコンテンツ検索用の CSV ファイルを準備する
 
@@ -65,7 +65,7 @@ SharePoint サイトと OneDrive アカウントを含む検索では、CSV フ�
 
     次に、ID リストコンテンツ検索用に送信できる CSV ファイルの例を示します。
 
-    ![対象コンテンツ検索用の CSV ファイルの例](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
+    ![対象コンテンツ検索用の CSV ファイルの例](../media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
 
 6. CSV ファイルを保存するか、[名前を付け**て保存**するファイルを別のファイル名で保存します。 どちらの場合も、必ず CSV 形式でファイルを保存してください。
 
@@ -78,9 +78,9 @@ SharePoint サイトと OneDrive アカウントを含む検索では、CSV フ�
 
 1. [セキュリティ & コンプライアンスセンター] で、[**検索** \> **コンテンツ検索**] に移動します。
 
-2. [**検索**] ページで、[追加] アイコン![](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) [**新しい検索**] の横にある矢印をクリックし、[ **ID リストで検索**] をクリックします。
+2. [**検索**] ページで、[追加] アイコン![](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) [**新しい検索**] の横にある矢印をクリックし、[ **ID リストで検索**] をクリックします。
 
-    ![[新しい検索] ドロップダウンリストから [ID リストで検索] をクリックします。](media/e65f9942-09b2-4127-865e-e64029a590df.png)
+    ![[新しい検索] ドロップダウンリストから [ID リストで検索] をクリックします。](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 
 3. [ **ID リストによる検索**] ポップアップで、検索に名前を指定 (オプションで説明します) し、[**参照**] をクリックして、前の手順で準備した CSV ファイルを選択します。
 
@@ -90,7 +90,7 @@ SharePoint サイトと OneDrive アカウントを含む検索では、CSV フ�
 
     ここでは、推定検索結果の例と、ID リスト検索用に生成されたクエリを示します。
 
-    ![詳細ウィンドウで対象コンテンツ検索の検索クエリを実行する](media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
+    ![詳細ウィンドウで対象コンテンツ検索の検索クエリを実行する](../media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
 
     ID 検索の統計に表示される推定アイテム数は、CSV ファイルで選択したアイテムの数と一致する必要があることに注意してください。
 

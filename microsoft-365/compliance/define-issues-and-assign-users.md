@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Office 365 Advanced eDiscovery でユーザーを割り当てたり、電子情報開示ケースの問題を削除したりするなど、案件を追加または編集する方法について説明します。
-ms.openlocfilehash: 78f0b53c1f66adb9c1c8534bbf4b1e1915f6ba0d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595352"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075897"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Office 365 で問題を定義してユーザーを割り当てる高度な電子情報開示
 
@@ -33,11 +33,11 @@ ms.locfileid: "41595352"
 
 1. [**関連性\>の関連性の設定**] タブ\>で、[**問題**] を選択します。
     
-    ![関連性の設定の問題](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![関連性の設定の問題](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
 2. 問題を追加するには、* * + * * アイコンをクリックします。 [**懸案事項の追加**] ダイアログが表示されます。 
     
-    ![[関連性の設定] の追加問題](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![[関連性の設定] の追加問題](../media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
     問題を編集するには、[**編集**] アイコンをクリックします。 
     

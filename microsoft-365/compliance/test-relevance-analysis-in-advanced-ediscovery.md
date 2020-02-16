@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Office 365 Advanced eDiscovery でバッチ計算の後に [テスト] タブを使用して、全体的な処理の品質をテスト、比較、検証する方法について説明します。  '
-ms.openlocfilehash: 0931e0ea6aabfb9fbeca04973f17395d4f245f41
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e07d02a0eff1e07cacbce5debd27d4057fe40db2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597374"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080938"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示でのテスト関連の分析
 
@@ -46,7 +46,7 @@ ms.locfileid: "41597374"
     
 2. [**テスト**] タブで、[**新しいテスト**] をクリックします。 次の例に示すように、[**テストの作成**] ダイアログが表示されます。 
     
-    ![関連性テストの残りの結果](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![関連性テストの残りの結果](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. [**テスト名**] と [**説明**] に、名前と説明を入力します。
     
@@ -66,7 +66,7 @@ ms.locfileid: "41597374"
     
 11. [テスト] タブで [結果の**表示**] をクリックすると、テスト結果が表示されます。 次の図に例を示します。 
     
-    ![残りの結果をテストする](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![残りの結果をテストする](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 上記の図では、表の [**サンプルパラメータ**] セクションに、エキスパートによってタグ付けされたファイルの数と、そのサンプルで見つかった関連ファイルの数についての詳細が含まれています。 
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Office 365 Advanced eDiscovery の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマなどの高度な設定を構成する方法について説明します。 '
-ms.openlocfilehash: 2c2a104b834d8da9d0d10f93980b4f2cbb6294c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601514"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081271"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Set Office 365 の詳細な電子情報開示の設定を分析する
 
@@ -32,7 +32,7 @@ Advanced eDiscovery は、モジュール設定を分析するための既定の
   
 1. [ ** \> Analyze \> **の設定の準備] タブで、[**詳細設定**] (ページの下部) をクリックします。 次のパネルが表示されます。 
     
-    ![分析設定の拡張設定](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![分析設定の拡張設定](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. [**ほぼ重複] および [電子メールスレッド] パラメーター**で、必要に応じて次の値を選択します。
     

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 紛失した Office 365 顧客キーを回復するために使用される可用性キーについて説明します。
-ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862087"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076956"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Office 365 の顧客キーの可用性キーについて
 
@@ -175,11 +175,11 @@ Exchange Online と Skype for Business では、一時的なエラーが発生�
 
 ログレコードには、日付、時刻、アクティビティ、組織 ID、データ暗号化ポリシー ID などの属性が含まれます。 レコードは Office 365 の統合監査ログの一部として利用でき、Office 365 の [セキュリティとコンプライアンスセンターの監査ログの検索] タブからアクセスできます。
 
-![可用性キーイベントの監査ログ検索](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![可用性キーイベントの監査ログ検索](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Exchange Online と Skype for Business の可用性キーレコードは、Office 365 Management Activity [common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)を追加のカスタムパラメーターと共に使用します。ポリシー Id、範囲キーバージョン Id、および要求 Id。
 
-![可用性キーのカスタムパラメーター](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![可用性キーのカスタムパラメーター](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Online、OneDrive for Business、および Teams ファイル可用性キーのログ
 
@@ -195,11 +195,11 @@ Office 365 は、可用性キーを使用して、カスタマーキーサービ
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Exchange Online と Skype for Business のキーを暗号化するために使用される暗号化暗号
 
-![Exchange Online の顧客キーの暗号化暗号](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online の顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online と OneDrive for business のキーを暗号化するために使用される暗号化暗号
 
-![SharePoint Online の顧客キーの暗号化暗号](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online の顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>関連記事
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: a57fd1f1e079424f1494acc4b8944534c30359b2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661874"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081074"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監視ポリシー
 
@@ -42,7 +42,7 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 
 今後の監視機能の改善と可用性の詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照してください。
 
-Microsoft 365 で新しい通信コンプライアンスの手順を試してみたいですか。 [Microsoft 365 (プレビュー) の通信コンプライアンス](communication-compliance.md)で利用できる新機能と強化された機能を確認してください。
+Microsoft 365 で新しい通信コンプライアンスの手順を試してみたいですか。 [Microsoft 365 の通信コンプライアンス](communication-compliance.md)で利用可能な新機能と強化された機能を確認してください。
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Office 365 の監督からの移行
 

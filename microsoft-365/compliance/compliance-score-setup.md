@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: サインインする方法、アクセス許可を設定する方法、および Microsoft コンプライアンススコアのダッシュボードを理解する方法について説明します。これにより、リスク評価を簡素化および自動化できます。
-ms.openlocfilehash: a97fa1c0598fcab1660d71581fed2be8dafe8911
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595754"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078614"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft コンプライアンススコア (プレビュー) の設定
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 通常、コンプライアンススコアにアクセスする最初のユーザーは、組織の Microsoft 365 グローバル管理者になります。 初めてコンプライアンススコアを参照する場合は、グローバル管理者サインインを推奨し、以下の説明に従ってユーザー権限を設定することをお勧めします。
 
@@ -102,7 +102,7 @@ Microsoft 365 コンプライアンスセンターでアクセス許可を設定
 
 コンプライアンススコアダッシュボードは、現在のコンプライアンス状況を一目で確認できるように設計されています。
 
-![コンプライアンススコア-ダッシュボード](media/compliance-score-dashboard.png "コンプライアンススコアダッシュボード")
+![コンプライアンススコア-ダッシュボード](../media/compliance-score-dashboard.png "コンプライアンススコアダッシュボード")
 
 ### <a name="overall-compliance-score"></a>総合コンプライアンススコア
 

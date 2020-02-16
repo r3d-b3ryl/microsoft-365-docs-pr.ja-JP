@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable クラシファイアは、コンテンツのさまざまな種類を認識するために学習することができます。 分類子がトレーニングされると、結果が正確であることを確認できます。 次に、これを使用して組織のコンテンツを検索し、それを分類して、保持または機密ラベルを適用したり、データ損失防止 (DLP) またはアイテム保持ポリシーに含めたりします。
-ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722028"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078822"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -74,7 +74,7 @@ Microsoft 365 には、分類子を使用する準備ができました。
 
 これらは、 **Microsoft 365 コンプライアンスセンター** > **データ分類 (プレビュー)** > **Trainable 分類子**ビューに、の`Ready to use`状態と共に表示されます。
 
-![分類子-すぐに使用できる分類子](media/classifiers-ready-to-use-classifiers.png)
+![分類子-すぐに使用できる分類子](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > 不快な言葉、嫌がらせ、冒涜、および脅威の分類子は、検索可能なテキストのみで機能することに注意してください。  さらに、言語と文化的な標準が絶えず変化し、これらの現実からは、これらの分類子を裁量で更新する権利を Microsoft が留保します。 分類子は、お客様の組織が不快な言葉や使用されている他の言語を監視するのに役立ちますが、分類子は、そのような言語の結果に対応していません。そのような言語。 お客様の組織は、Microsoft またはその子会社ではなく、事前に訓練された分類子によって識別されるコンテンツの監視、実施、ブロック、削除、保持に関連するすべての意思決定に対して責任を負うことになります。
@@ -83,7 +83,7 @@ Microsoft 365 には、分類子を使用する準備ができました。
 
 分類子を使用する準備が整っている必要はありませんが、コンプライアンスソリューションで使用する前に、必要なコンテンツの種類を特定することを確認する必要があります。 事前に学習した分類子のテストは、このフローに従います。
 
-![事前に学習した分類子をテストするプロセスフロー](media/classifier-pre-trained-classifier-flow.png)
+![事前に学習した分類子をテストするプロセスフロー](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>Trainable 分類子について
 
@@ -96,7 +96,7 @@ Microsoft 365 には、分類子を使用する準備ができました。
 
 Trainable 分類子を作成して、アイテム保持ポリシー、通信監督などのコンプライアンスソリューションで使用するために、このフローに従います。 Trainable 分類子を作成する方法の詳細については、「 [trainable クラシファイアを作成](classifier-creating-a-trainable-classifier.md)する」を参照してください。
 
-![プロセスフロー trainable クラシファイア](media/classifier-trainable-classifier-flow.png)
+![プロセスフロー trainable クラシファイア](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>関連項目
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: defd5c8eba1202020fc8d3e3225c6ef4a425a331
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 818a0db46d0c2a763c1c90b585a6d7a0fd403b94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595564"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077347"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーを作成、テスト、調整する
 
@@ -59,23 +59,23 @@ Exchange Online の DLP ポリシーは、Exchange 管理センターを介し�
 
 Office 365 は、DLP ポリシーの作成に使用できるさまざまな [DLP ポリシー テンプレート](what-the-dlp-policy-templates-include.md)を提供しています。 例えば、ここがオーストラリアの企業だとしましょう。 ポリシー テンプレートをフィルター処理し、オーストラリアに関連するもののみを表示できます。これらは金融、医療、健康、プライバシーの一般カテゴリに分類されます。
 
-![国または地域を選択するオプション](media/DLP-create-test-tune-choose-country.png)
+![国または地域を選択するオプション](../media/DLP-create-test-tune-choose-country.png)
 
 このデモンストレーションでは、オーストラリアの個人を特定できる情報 (PII) データを選択します。これには、オーストラリアのタックス ファイル ナンバー (TFN) および運転免許証番号の情報の種類が含まれます。
 
-![ポリシー テンプレートを選択するオプション](media/DLP-create-test-tune-choose-policy-template.png)
+![ポリシー テンプレートを選択するオプション](../media/DLP-create-test-tune-choose-policy-template.png)
 
 新しい DLP ポリシーに名前を付けます。 規定の名前は DLP ポリシー テンプレートと一致しますが、同じテンプレートから複数のポリシーを作成できるため、よりわかりやすい独自の名前を選択する必要があります。
 
-![ポリシーに名前を付けるオプション](media/DLP-create-test-tune-name-policy.png)
+![ポリシーに名前を付けるオプション](../media/DLP-create-test-tune-name-policy.png)
 
 ポリシーを適用する場所を選択します。 DLP ポリシーは Exchange Online、SharePoint Online、および OneDrive for Business に適用できます。 このポリシーは、すべての場所に適用されるように構成したまま残します。
 
-![すべての場所を選択するオプション](media/DLP-create-test-tune-choose-locations.png)
+![すべての場所を選択するオプション](../media/DLP-create-test-tune-choose-locations.png)
 
 最初の**ポリシー設定**手順では、今のところは規定値をそのまま使用します。 DLP ポリシーでは行うことができるカスタマイズが非常に多くありますが、規定値は開始するのに適しています。
 
-![保護するコンテンツの種類をカスタマイズするオプション](media/DLP-create-test-tune-default-customization-settings.png)
+![保護するコンテンツの種類をカスタマイズするオプション](../media/DLP-create-test-tune-default-customization-settings.png)
 
 [**次へ**] をクリックすると、カスタマイズ オプションが増えた追加の [**ポリシー設定**] ページが表示されます。 テストしているポリシーの場合、ここから調整を開始できます。
 
@@ -83,11 +83,11 @@ Office 365 は、DLP ポリシーの作成に使用できるさまざまな [DLP
 - また、インスタンスの数を 10 から 1 に減らすことで、このポリシーがデータの一括共有だけでなくオーストラリアの PII データの共有を検出できるようにしました。
 - また、インシデント レポートのメールに別の受信者を追加しました。
 
-![追加のポリシー設定](media/DLP-create-test-tune-more-policy-settings.png)
+![追加のポリシー設定](../media/DLP-create-test-tune-more-policy-settings.png)
 
 最後に、最初はテスト モードで実行するようにこのポリシーを構成しました。 ここには、テスト モード中にポリシー ヒントを無効にするオプションもあります。 これにより、ポリシー内でポリシー ヒントを有効にする柔軟性が得られますが、それらを表示するか非表示にするかをテスト中に決定します。
 
-![最初にポリシーをテストするオプション](media/DLP-create-test-tune-test-mode.png)
+![最初にポリシーをテストするオプション](../media/DLP-create-test-tune-test-mode.png)
 
 最終確認画面で [**作成**] をクリックして、ポリシーの作成を完了します。
 
@@ -97,19 +97,19 @@ Office 365 は、DLP ポリシーの作成に使用できるさまざまな [DLP
 
 例として、この記事のために作成した DLP ポリシーはオーストラリアのタックス ファイル ナンバー (TFN) を検出します。 ドキュメントによると、一致は以下の基準に基づいています。
 
-![オーストラリアのタックス ファイル ナンバーに関するドキュメント](media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
+![オーストラリアのタックス ファイル ナンバーに関するドキュメント](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
 TFN の検出をかなり鈍い方法で示すために、“Tax file number” という単語および近接する 9 桁の数字列が記載されたメールは問題なく送信されます。 DLP ポリシーがトリガーされない理由は、9 桁の数字列が無害な数字の文字列ではなく有効な TFN であることを示すチェックサムに合格する必要があるためです。
 
-![チェックサムに合格しないオーストラリアのタックス ファイル ナンバー](media/DLP-create-test-tune-email-test1.png)
+![チェックサムに合格しないオーストラリアのタックス ファイル ナンバー](../media/DLP-create-test-tune-email-test1.png)
 
 これに対し、“Tax file number” という単語およびチェックサムに合格した有効な TFN を含むメールがポリシーをトリガーします。 実際には、私が使用している TFN は有効ではあるものの本物ではない TFN を生成する Web サイトから取得したものです。 DLP ポリシーをテストする際の最も一般的な間違いの 1 つは、有効ではなくチェックサムを渡さない (したがってポリシーをトリガーしない) 偽の番号を使用することです。したがって、そういったサイトはとても便利です。
 
-![チェックサムに合格したオーストラリアのタックス ファイル ナンバー](media/DLP-create-test-tune-email-test2.png)
+![チェックサムに合格したオーストラリアのタックス ファイル ナンバー](../media/DLP-create-test-tune-email-test2.png)
 
 インシデント レポートのメールには、検出された機密情報の種類、検出されたインスタンスの数、および検出の信頼レベルが含まれています。
 
-![検出されたタックス ファイル ナンバーを示すインシデント レポート](media/DLP-create-test-tune-email-incident-report.png)
+![検出されたタックス ファイル ナンバーを示すインシデント レポート](../media/DLP-create-test-tune-email-incident-report.png)
 
 DLP ポリシーをテスト モードのままにしてインシデント レポートのメールを分析すると、DLP ポリシーの正確性およびそれが適用されたときの効果について感触をつかむことができます。 インシデント レポートに加えて、[DLP レポートを使用](view-the-dlp-reports.md)してテナント全体でのポリシーの一致の集計ビューを表示できます。
 
@@ -119,15 +119,15 @@ DLP ポリシーをテスト モードのままにしてインシデント レ�
 
 セキュリティ/コンプライアンス センターでは、既存のポリシーを編集して動作を調整できます。
 
-![ポリシーを編集するオプション](media/DLP-create-test-tune-edit-policy.png)
+![ポリシーを編集するオプション](../media/DLP-create-test-tune-edit-policy.png)
  
 ポリシーが特定のワークロードまたは特定のサイトおよびアカウントにのみ適用されるように、場所の設定を調整できます。
 
-![特定の場所を選択するオプション](media/DLP-create-test-tune-edit-locations.png)
+![特定の場所を選択するオプション](../media/DLP-create-test-tune-edit-locations.png)
 
 また、ポリシー設定を調整し、ニーズに合わせてルールを編集することもできます。
 
-![ルールを編集するオプション](media/DLP-create-test-tune-edit-rule.png)
+![ルールを編集するオプション](../media/DLP-create-test-tune-edit-rule.png)
 
 DLP ポリシー内のルールを編集する際、以下を変更できます。
 
@@ -137,29 +137,29 @@ DLP ポリシー内のルールを編集する際、以下を変更できます�
 - ユーザーによる上書き。ユーザーがメールまたはファイル共有を続行するかどうかを決定します。
 - 管理者に通知するためのインシデント レポート。
 
-![ルールの一部を編集するオプション](media/DLP-create-test-tune-editing-options.png)
+![ルールの一部を編集するオプション](../media/DLP-create-test-tune-editing-options.png)
 
 このデモンストレーションでは、ポリシーにユーザー通知を追加し (適切なユーザー認識トレーニングなしで行う場合には注意してください)、ユーザーがビジネス上の理由または誤検知としてフラグを立てることでポリシーを上書きすることを許可しました。 組織のポリシーに関する追加情報を含める場合にはメールおよびポリシー ヒントのテキストをカスタマイズしたり、質問がある場合にはサポートに連絡するようユーザーに促したりすることもできることに注意してください。
 
-![ユーザー通知および上書きのオプション](media/DLP-create-test-tune-user-notifications.png)
+![ユーザー通知および上書きのオプション](../media/DLP-create-test-tune-user-notifications.png)
 
 このポリシーには高ボリュームおよび低ボリュームの処理に関する 2 つのルールが含まれているため、必要なアクションでは必ず両方を編集してください。 これは、その特性に応じてケースを異なる方法で処理する機会となっています。 たとえば、低ボリューム違反への上書きは許可しても、高ボリューム違反への上書きは許可しない場合などです。
 
-![高ボリューム用の 1 つのルールおよび低ボリューム用の 1 つのルール](media/DLP-create-test-tune-two-rules.png)
+![高ボリューム用の 1 つのルールおよび低ボリューム用の 1 つのルール](../media/DLP-create-test-tune-two-rules.png)
 
 また、ポリシーに違反しているコンテンツへのアクセスを実際にブロックまたは制限したい場合には、そうするようにルールでアクションを構成する必要があります。
 
-![コンテンツへのアクセスを制限するオプション](media/DLP-create-test-tune-restrict-access-action.png)
+![コンテンツへのアクセスを制限するオプション](../media/DLP-create-test-tune-restrict-access-action.png)
 
 ポリシー設定へのこれらの変更を保存した後、ポリシーのメイン設定ページに戻り、ポリシーがテスト モードのときにユーザーにポリシー ヒントを表示するオプションを有効にする必要もあります。 これは、エンド ユーザーに DLP ポリシーを紹介し、生産性に影響を与える多数の誤検知のリスクを負うことなくユーザーの意識向上トレーニングを行う効果的な方法です。
 
-![テスト モードでポリシー ヒントを表示するオプション](media/DLP-create-test-tune-show-policy-tips.png)
+![テスト モードでポリシー ヒントを表示するオプション](../media/DLP-create-test-tune-show-policy-tips.png)
 
 サーバー側 (または必要に応じてクラウド側) では、さまざまな処理間隔により、変更がすぐに有効にならない場合があります。 ユーザーに新しいポリシー ヒントを表示する DLP ポリシーの変更を行っている場合、Outlook クライアントは 24 時間ごとにポリシーの変更をチェックするのでユーザーには変更がすぐに反映されない場合があります。 テストのためにスピードを上げたい場合には、このレジストリ修正を使用して [PolicyNudges キーから最終ダウンロードのタイムスタンプをクリア](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)できます。 Outlook は次回再起動してメール メッセージの作成を開始する際に、最新のポリシー情報をダウンロードします。
 
 ポリシー ヒントを有効にしている場合、ユーザーは Outlook でヒントの表示を開始し、誤検知が発生した場合に報告することができます。
 
-![誤検知を報告するオプションを備えたポリシー ヒント](media/DLP-create-test-tune-policy-tip-in-outlook.png)
+![誤検知を報告するオプションを備えたポリシー ヒント](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
 
 ## <a name="investigate-false-positives"></a>誤検知を調査する
 
@@ -167,26 +167,26 @@ DLP ポリシー テンプレートは、そのままでは完璧ではありま
 
 これが誤検知の例です。 このメールは、まったくの無害です。 ユーザーは自分の携帯電話番号を誰かに提供し、メールに署名を含めています。
 
-![誤検知情報を示すメール](media/DLP-create-test-tune-false-positive-email.png)
+![誤検知情報を示すメール](../media/DLP-create-test-tune-false-positive-email.png)
  
 しかしユーザーには、メールに機密情報、具体的にはオーストラリアの運転免許証番号が含まれていることを警告するポリシー ヒントが表示されます。
 
-![ポリシー ヒントで誤検知を報告するオプション](media/DLP-create-test-tune-policy-tip-closeup.png)
+![ポリシー ヒントで誤検知を報告するオプション](../media/DLP-create-test-tune-policy-tip-closeup.png)
 
 ユーザーは誤検知を報告でき、管理者はそれが発生した理由を調べることができます。 インシデント レポートのメールには、誤検知のフラグが設定されています。
 
-![誤検知を示すインシデント レポート](media/DLP-create-test-tune-false-positive-incident-report.png)
+![誤検知を示すインシデント レポート](../media/DLP-create-test-tune-false-positive-incident-report.png)
 
 この運転免許証のケースは、掘り下げるにはちょうど良い例です。 この誤検知が発生した理由は、“オーストラリアの運転免許証” の種類が 9 桁の数字の文字列 (10 桁の数字の文字列の一部であっても)、“sydney nsw” というキーワードに近接する 300 文字以内 (大文字と小文字は区別しません) によってトリガーされるためです。 そのため、ユーザーがたまたまシドニーにいるという理由だけで、電話番号とメール署名によってトリガーされます。
 
 
 1 つのオプションは、オーストラリアの運転免許証の情報の種類をポリシーから削除することです。 DLP ポリシー テンプレートの一部なのでそこに含まれていますが、強制的に使用する必要はありません。 運転免許証ではなくタックス ファイル ナンバーのみに関心がある場合には、削除して構いません。 たとえば、ポリシーの低ボリューム ルールからそれを削除しながらも、複数の運転免許証のリストがまだ検出されるように高ボリューム ルールにはそのままそれを残しておくことができます。
 
-![機密情報の種類をルールから削除するオプション](media/DLP-create-test-tune-delete-low-volume-rule.png)
+![機密情報の種類をルールから削除するオプション](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
 別のオプションとしては、単純にインスタンス数を増やすことが挙げられます。これにより、複数のインスタンスがある場合にのみ少量の運転免許証が検出されます。
 
-![インスタンス数を編集するオプション](media/DLP-create-test-tune-edit-instance-count.png)
+![インスタンス数を編集するオプション](../media/DLP-create-test-tune-edit-instance-count.png)
 
 インスタンス数の変更に加えて、一致の精度 (または信頼レベル) を調整することもできます。 機密情報の種類に複数のパターンがある場合、ルールが特定のパターンのみに一致するように、ルールの一致の精度を調整できます。 たとえば、誤検出を減らすためにルールの一致の精度を設定して、最も高い信頼レベルを持つパターンのみと一致するようにできます。 信頼レベルの計算方法を理解することは少し難しい (そしてこの投稿の範囲を超えている) のですが、ここに[信頼レベルを使用してルールを調整する方法](data-loss-prevention-policies.md#match-accuracy)の良い説明があります。
 
@@ -196,21 +196,21 @@ DLP ポリシー テンプレートは、そのままでは完璧ではありま
 
 DLP ポリシーが機密情報の種類を正確かつ効果的に検出し、エンド ユーザーが設定されたポリシーに対処する準備ができていることに満足したら、ポリシーを有効にできます。
 
-![ポリシーをオンにするオプション](media/DLP-create-test-tune-turn-on-policy.png)
+![ポリシーをオンにするオプション](../media/DLP-create-test-tune-turn-on-policy.png)
  
 ポリシーを有効にする時期を待っている場合には、[セキュリティ/コンプライアンス センターの PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)、[Get-DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)を実行して DistributionStatus を確認します。
 
-![PowerShell でコマンドレットを実行する](media/DLP-create-test-tune-PowerShell.png)
+![PowerShell でコマンドレットを実行する](../media/DLP-create-test-tune-PowerShell.png)
 
 DLP ポリシーをオンにした後、独自の最終テストをいくつか実行し、予想されるポリシー アクションが発生していることを確認する必要があります。 クレジット カード データなどをテストしようとしている場合、チェックサムを通過しポリシーをトリガーするサンプルのクレジット カードやその他の個人情報を生成する方法についての情報を掲載した Web サイトがオンラインにあります。
 
 ユーザーによる上書きを許可するポリシーは、ポリシー ヒントの一部としてユーザーにそのオプションを提示します。
 
-![ユーザーによる上書きを許可するポリシー ヒント](media/DLP-create-test-tune-override-option.png)
+![ユーザーによる上書きを許可するポリシー ヒント](../media/DLP-create-test-tune-override-option.png)
 
 コンテンツを制限するポリシーは、ポリシー ヒントの一部としてユーザーに警告を表示しユーザーがメールを送信できないようにします。
 
-![コンテンツが制限されているポリシー ヒント](media/DLP-create-test-tune-restrict-warning.png)
+![コンテンツが制限されているポリシー ヒント](../media/DLP-create-test-tune-restrict-warning.png)
 
 ## <a name="summary"></a>概要
 

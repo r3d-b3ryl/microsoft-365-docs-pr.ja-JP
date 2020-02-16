@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 02534cf9dcd342f0872e755aec622f8028b235f8
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784674"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078764"
 ---
 # <a name="communication-compliance-feature-reference"></a>コミュニケーションコンプライアンス機能のリファレンス
 
@@ -147,7 +147,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 
 次の表では、各条件の詳細について説明します。
   
-|**Condition**|**この条件の使用方法**|
+|**条件**|**この条件の使用方法**|
 |:-----|:-----|
 | **コンテンツがこれらの分類子のいずれかと一致する** | メッセージに分類子が含まれている場合、または除外される場合にポリシーに適用します。 テナントで事前に定義されている分類子と、この条件に使用できるようにするためにカスタム分類子を個別に構成する必要があります。 ポリシーの条件として定義できる分類子は1つだけです。 分類子の構成の詳細については、「[分類子](classifier-getting-started-with.md)」を参照してください。 |
 | **コンテンツにこれらの機密情報の種類のいずれかが含まれている** | 機密情報の種類をメッセージに含めたり、除外したりするときにポリシーに適用します。 テナントで事前に定義されている分類子と、カスタム分類子は、条件の割り当てプロセスの一部として個別に構成することもできます。 選択した機密情報の種類は個別に適用されます。ポリシーをメッセージに適用するには、これらの機密情報の種類のいずれかを適用する必要があります。 カスタムの機密情報の種類の詳細については、「[カスタムの機密情報の種類](custom-sensitive-info-types.md)」を参照してください。 |
@@ -300,4 +300,4 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-Microsoft 365 組織の通信コンプライアンスを構成するには、「 [microsoft 365 組織の通信コンプライアンスを構成する (プレビュー)](communication-compliance-configure.md)」を参照してください。
+Microsoft 365 組織の通信コンプライアンスを構成するには、「 [microsoft 365 組織の通信コンプライアンスを構成](communication-compliance-configure.md)する」を参照してください。

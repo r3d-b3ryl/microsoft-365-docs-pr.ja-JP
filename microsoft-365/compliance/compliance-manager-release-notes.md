@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: c3d0efbfcf58eb001d2df5832439c22c7cc662aa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595784"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078654"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>コンプライアンスマネージャーのリリースノート (プレビュー)
 

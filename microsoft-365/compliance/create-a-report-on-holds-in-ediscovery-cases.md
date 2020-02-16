@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: この記事のスクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
-ms.openlocfilehash: 415e484938a74620f0e3578bd1e00735232164de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c426ff06bb0b2bafdfa91b9098b321994d558d7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595644"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077711"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Office 365 で電子情報開示ケースの保留リストのレポートを作成する
   
@@ -29,7 +29,7 @@ ms.locfileid: "41595644"
 
 レポートに含まれる情報の詳細については、「 [More information](#more-information) 」セクションを参照してください。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織の電子情報開示管理者である必要があります。 電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。 EDiscovery アクセス許可の詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
@@ -176,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     CaseHoldsReport スクリプトを実行する例を次に示します。 
     
-    ![CaseHoldsReport スクリプトを実行した後の出力](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![CaseHoldsReport スクリプトを実行した後の出力](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>詳細情報
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 高度な電子情報開示では、検索とタグ付けモジュールを使用して、ケースでドキュメントを検索、プレビュー、および整理することができます。 現時点では、このモジュールはベータ版です。
-ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601714"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081401"
 ---
 # <a name="search-and-tagging"></a>検索とタグ付け
 
@@ -34,7 +34,7 @@ ms.locfileid: "41601714"
 
 次の表に、KQL キーワードクエリを使用して検索できるプロパティを示します。 または、高度な電子情報開示検索ツールで条件カードを使用して、検索クエリに条件 (選択したプロパティの場合) を追加することもできます。
 
-|**プロパティ**|**説明**|
+|**Property**|**説明**|
 |:-----|:-----|
 |**caselabel** <br/> | 文書にタグ付けするときに作成/適用されるタグの名前を指定します。 <br/> |
 |**保管担当者** <br/> | ドキュメントに関連付けられている保管担当者。制限の対象となります。 <br/> |
@@ -69,7 +69,7 @@ ms.locfileid: "41601714"
 
 または、高度な電子情報開示検索ツールの条件カードを使用して、検索クエリに条件 (選択したプロパティの場合) を追加することもできます。 次のスクリーンショットは、クエリに追加できる条件を示しています。 [**グループ]** 列は、プロパティが電子メール、サイトドキュメント、またはその両方に適用されるかどうかを示します (*共通*の値で示されます)。 この列は、関連性モジュールを実行した後に使用できる検索可能なプロパティも識別します。
 
-![高度な電子情報開示検索ツールの検索条件](media/AeDSearchConditions.png)
+![高度な電子情報開示検索ツールの検索条件](../media/AeDSearchConditions.png)
 
 検索可能なプロパティの詳細については、「[キーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
   

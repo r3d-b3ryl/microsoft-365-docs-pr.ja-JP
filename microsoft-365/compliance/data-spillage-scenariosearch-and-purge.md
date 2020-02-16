@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Office 365 の電子情報開示および検索ツールを使用して、組織内のデータ流出インシデントを管理および応答します。
-ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c143095ecd26d2a9c8f2271b9d28f75b1c71502c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595404"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076327"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューションシリーズ: Data 流出 scenario-検索と削除
 
@@ -37,7 +37,7 @@ Contoso 社のリード情報セキュリティ責任者であること。 従�
 
 データ流出インシデントを管理する方法は次のとおりです。
 
-![データ流出インシデントを管理するための8段階のワークフロー](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![データ流出インシデントを管理するための8段階のワークフロー](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [オプション手順 1: ケースにアクセスできるユーザーを管理し、コンプライアンスの境界を設定する](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [手順 2: 電子情報開示ケースを作成する](#step-2-create-an-ediscovery-case)<br/>
@@ -100,7 +100,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
  
       [レポートのエクスポート] ページが表示されます。
 
-    ![検索を選択し、[詳細] をクリックして、フライアウトページにあるレポートをエクスポート > します。](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![検索を選択し、[詳細] をクリックして、フライアウトページにあるレポートをエクスポート > します。](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. **認識できない形式のアイテムを含む、暗号化されている、またはその他の理由でインデックスが付けられ**ていないすべてのアイテムを選択して、[**レポートの生成**] をクリックします。
 
@@ -108,7 +108,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
 
 5. エクスポートジョブをクリックし、ポップアップページの [レポートの**ダウンロード**] をクリックします。
  
-    ![[エクスポート] ページで、エクスポートをクリックしてから、[レポートのダウンロード] をクリックします。](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![[エクスポート] ページで、エクスポートをクリックしてから、[レポートのダウンロード] をクリックします。](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 **エクスポートの概要**レポートには、結果がある場所の数と検索結果のサイズが含まれています。 これを使用して、削除後に生成されたレポートと比較し、削除の証明として提供することができます。 **結果**レポートには、件名、送信者、受信者、電子メールが開封された場合、各メッセージのサイズなど、検索結果の詳細な要約が表示されます。 このレポートの詳細に実際にこぼれたデータが含まれている場合は、調査の完了時に結果の .csv ファイルを完全に削除する必要があります。
 
@@ -142,7 +142,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
     
 4. [**種類**] ドロップダウンリストで、[**上の場所**] をクリックします。
     
-    ![検索統計の [上位の場所] ページに検索結果が含まれているメールボックスの一覧を取得する](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![検索統計の [上位の場所] ページに検索結果が含まれているメールボックスの一覧を取得する](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     検索結果が含まれるメールボックスの一覧が表示されます。 検索クエリに一致する各メールボックス内のアイテムの数も表示されます。
     
@@ -190,7 +190,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
     
 2. フライアウトページで、[**削除**] をクリックします。
 
-    ![検索を選択し、フライアウトページで [削除] をクリックします。](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![検索を選択し、フライアウトページで [削除] をクリックします。](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>データ流出調査プロセスの監査
 

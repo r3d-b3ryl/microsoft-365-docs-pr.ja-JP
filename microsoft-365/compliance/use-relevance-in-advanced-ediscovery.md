@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Office 365 Advanced eDiscovery の関連性モジュールについて説明します。これには、ワークフロー、ガイドライン、トレーニングとファイルレビューの手順が含まれます。  '
-ms.openlocfilehash: 5151c94d2b0bd1824abb499f6cb27bbfbc7618b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601304"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080714"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示の関連モジュールを使用する
 
@@ -30,7 +30,7 @@ ms.locfileid: "41601304"
   
 詳細な電子情報開示では、関連性に関するトレーニングと、ケースに関連するファイルのレビューが関連モジュールに含まれています。 関連性ワークフローが表示され、次のように説明されています。
   
-![関連性のワークフロー](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![関連性のワークフロー](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **評価と追跡のサイクル**:
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Office 365 の Advanced eDiscovery で Analyze および Process モジュールを使用するときに、特定のテキストを無視するルールを定義する方法について説明します。  '
-ms.openlocfilehash: 7bda497f961ed762b1b077ad0631a0a6a94cdcc8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 440393061fef9b5a3c946322307fcafd034be81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601504"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081136"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Office 365 で分析の [テキストを無視] オプションを設定する Advanced eDiscovery
 
@@ -107,7 +107,7 @@ ms.locfileid: "41601504"
     
 2. [**無視するテキストを追加**] ダイアログの [**名前**] フィールドに、ignore テキストルールの名前を入力します。 
     
-    ![無視されたテキストの追加](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
+    ![無視されたテキストの追加](../media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
 3. **テキスト**ボックスに、無視するテキストを入力します。 Text フィールドに使用できる文字数に制限はありません。 
     
@@ -122,7 +122,7 @@ ms.locfileid: "41601504"
     
 7. [ **OK]** をクリックして、Ignore テキストルールを保存します。 定義済みの Ignore テキストルールが表示されます。 
     
-    ![無視されたテキスト名を設定する](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
+    ![無視されたテキスト名を設定する](../media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
 ## <a name="see-also"></a>関連項目
 
