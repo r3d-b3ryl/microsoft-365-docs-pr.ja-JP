@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, CSP サブスクリプションの移行
 ms.date: 11/01/2017
-ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595047"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057273"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Microsoft 365 Business CSP サブスクリプションの移行
 
@@ -29,33 +29,33 @@ Microsoft 365 Business Preview CSP サブスクリプションを利用してい
 
     会社のサブスクリプションが表示されます。
 
-    ![パートナー センターでの顧客のサブスクリプションの表示](images/pc_customer_subscriptions_1.png)
+    ![パートナー センターでの顧客のサブスクリプションの表示](../../media/pc_customer_subscriptions_1.png)
     
 3. 会社の [**サブスクリプション**] ページで、[**サブスクリプションの追加**] を選択します。
 4. [**サブスクリプションの新規作成**] ページで、[ **Small business** ] を選択し、リストから [ **Microsoft 365 business** ] を選択します。
 5. ライセンス数を追加し、**[次へ: レビュー]** を選びます。サブスクリプションを確認して、**[送信]** を選びます。
 
-    ![Microsoft 365 Business の新しいサブスクリプションの確認](images/pc_customer_reviewnewsubscription.png)
+    ![Microsoft 365 Business の新しいサブスクリプションの確認](../../media/pc_customer_reviewnewsubscription.png)
 
     **[ライセンス ベースのサブスクリプション]** には、**[Microsoft 365 Business Preview]** と **[Microsoft 365 Business]** が表示されます。 次にプレビューサブスクリプションを中断します。
 
 6. **[Microsoft 365 Business Preview]** を選びます。
 7. [ **Microsoft 365 Business preview** ] ページで、[**中断**] を選択してプレビューサブスクリプションを中断します。
 
-    ![Microsoft 365 Business の Preview サブスクリプションの中断](images/pc_customer_m365bpreview_suspend.png)
+    ![Microsoft 365 Business の Preview サブスクリプションの中断](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. **[送信]** をクリックして確認します。
 
     [**サブスクリプション**] ページで、 **Microsoft 365 Business Preview**の状態が [**中断**] と表示されていることを確認します。
 
-    ![Preview サブスクリプションの状態が中断になっていることを確認する](images/pc_customer_m365bpreview_suspend_confirm.png)
+    ![Preview サブスクリプションの状態が中断になっていることを確認する](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 必要に応じて、使用許諾契約書を検証することもできます。 これを行うには、次の手順に従います。
     1. 会社の **[サブスクリプション]** ページから **[ユーザーとライセンス]** を選びます。
     2. [**ユーザーとライセンス**] ページで、ユーザーを選択します。
     3. ユーザーのページで、[ライセンスの**割り当て**] セクションを確認し、 **Microsoft 365 Business**が表示されることを確認します。
 
-        ![Microsoft 365 Business ライセンスがユーザーに割り当てられていることを確認する](images/pc_customer_userslicenses_m365b_validate.png)
+        ![Microsoft 365 Business ライセンスがユーザーに割り当てられていることを確認する](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>移行中および移行後のお客様とユーザーへの影響
 
