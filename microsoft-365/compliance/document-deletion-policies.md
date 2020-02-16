@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 組織では、コンプライアンス、法律、またはその他のビジネス要件のために長期間ドキュメントを保持する必要がある場合があります。 ただし、組織でドキュメントを必要以上に長期に保持している場合は、不要な法的リスクを作成します。 ドキュメント削除ポリシーを使用すると、特定の期間が経過した後にサイト内のドキュメントを削除することによって、積極的にリスクを軽減できます。たとえば、ドキュメントが作成された後に、ユーザーの OneDrive for Business サイトのドキュメントを5年後に削除することができます。
-ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595212"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075219"
 ---
 # <a name="overview-of-document-deletion-policies"></a>ドキュメント削除ポリシーの概要
 
@@ -40,7 +40,7 @@ ms.locfileid: "41595212"
     
 ドキュメント削除ポリシーセンターを使用して、ドキュメント削除ポリシーを作成および管理します。 または、[サイトコレクションを作成](https://go.microsoft.com/fwlink/p/?LinkID=404342)し、[**エンタープライズ**] タブの [**コンプライアンスポリシーセンター** ] を選択して、ポリシーセンターを手動で作成することもできます。各テナントには、ドキュメント削除ポリシーセンターを1つだけ含めることができます。 
   
-![ドキュメント削除ポリシー センターのホーム ページ](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![ドキュメント削除ポリシー センターのホーム ページ](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="when-to-use-document-deletion-policies"></a>ドキュメント削除ポリシーを使用する場合
 
@@ -56,7 +56,7 @@ Office 365 には、ドキュメント削除ポリシーに加えて、サイト
   
 ドキュメント削除ポリシーは、構造化データとコンテンツタイプに最適に機能するレコード管理ポリシーまたは情報管理ポリシーを置き換えません。 OneDrive for Business サイトやチームサイトなどの非構造化データの自動削除を幅広く管理する必要がある場合は、ドキュメント削除ポリシーを使用する必要があります。
   
-![サイト コンテンツの保持オプションを示す図](media/IP-Retention-policies-for-site-content.png)
+![サイト コンテンツの保持オプションを示す図](../media/IP-Retention-policies-for-site-content.png)
   
 リストまたはライブラリ用に既にコンテンツ タイプ ポリシーまたは情報管理ポリシーを使用しているサイトにドキュメント削除ポリシーを適用した場合、前者のポリシーは無視され、ドキュメント削除ポリシーが有効になります。 つまり、構造化または非構造化コンテンツ (両方ではない) に対して指定されたポリシーのみを使用するようにサイトを計画する必要があります。 ドキュメント削除ポリシーが他のポリシーを上書きする方法の詳細については、「[サイトのドキュメント削除ポリシーを適用または削除する](apply-or-remove-a-document-deletion-policy-for-a-site.md)」を参照してください。
   
@@ -74,13 +74,13 @@ Office 365 には、ドキュメント削除ポリシーに加えて、サイト
     
 ポリシーに複数のルールが含まれている場合、サイト所有者は、そのコンテンツに最も適したルールを選択できます。
   
-![新しい削除ルール ページ](media/IP-New-deletion-rule.png)
+![新しい削除ルール ページ](../media/IP-New-deletion-rule.png)
   
 ## <a name="policies-and-assignments"></a>ポリシーと割り当て
 
 ドキュメント削除ポリシーを作成したら、それをサイトコレクションテンプレートに割り当てることができます。たとえば、ポリシーを OneDrive for Business テンプレートに割り当てることによって、すべてのユーザーの OneDrive サイトが含まれるようにすることができます。 ポリシーをサイトコレクションテンプレートに割り当てると、そのテンプレートから作成されたすべてのサイトコレクションに加えて、そのテンプレートから作成されたすべてのサイトコレクションにも適用されます。
   
-![OneDrive オプションを表示するテンプレート ページの選択](media/IP-Choose-a-template.png)
+![OneDrive オプションを表示するテンプレート ページの選択](../media/IP-Choose-a-template.png)
   
 ポリシーを特定のサイトコレクションに割り当てることもできます。これにより、そのサイトコレクションテンプレートに割り当てられているすべてのポリシーが上書きされます。 たとえば、ポリシーをチームサイトテンプレートに割り当てることができますが、そのテンプレートから作成された特定のサイトコレクションに対して、異なる一連のポリシーを適用することによって上書きします。
   
@@ -106,7 +106,7 @@ Office 365 には、ドキュメント削除ポリシーに加えて、サイト
   
 サイトコレクションまたはサイトコレクションテンプレートには、1つまたは複数のポリシーを割り当てることができます。また、各ポリシーには1つ以上のルールを含めることができます。 ただし、サイトごとにアクティブなポリシーは1つだけであり、サイト内のライブラリに対していつでもアクティブな削除ルールは1つだけです。
   
-![ポリシー間の関係を示す図](media/IP-Two-policies-four-rules.png)
+![ポリシー間の関係を示す図](../media/IP-Two-policies-four-rules.png)
   
 ## <a name="document-deletion-policies-are-inherited"></a>ドキュメント削除ポリシーが継承される
 

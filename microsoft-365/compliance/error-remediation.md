@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aac2dc742af4491be8c7f30ed6e78c549a924f3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 524378ecb7ec7cd8285e7d1ccda5667aa6081f30
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592818"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074442"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>調査のためにデータを処理するときのエラー修復
 
@@ -40,15 +40,15 @@ ms.locfileid: "41592818"
 
 3. [ **+ 新しいエラーの修復**] をクリックします。
 
-    ![エラーの修復](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![エラーの修復](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     エラー修復セッションが開始され、エラーが発生しているファイルが、ダウンロード可能な Azure の安全な場所にコピーされる準備段階から開始されます。
 
-    ![エラー修復の準備](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![エラー修復の準備](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. 準備が完了したら、[**次へ: ファイルのダウンロード**] をクリックして、ダウンロードを続行します。
 
-    ![ファイルをダウンロードする](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![ファイルをダウンロードする](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. ファイルをダウンロードするには、**ダウンロード先のパス**を指定します。 これは、ファイルをダウンロードするローカルコンピューター上のパスです。  既定のパス%USERPROFILE%\Downloads\errors は、ログインしているユーザーの [ダウンロード] フォルダーを指します。必要に応じて変更できます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "41592818"
 
     ファイルがダウンロードされます。
 
-    ![エラー修復の準備](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![エラー修復の準備](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > このコマンドの実行に関する問題がある場合は、「 [Advanced eDiscovery での AzCopy のトラブルシューティング](troubleshooting-azcopy.md)」を参照してください。
@@ -74,13 +74,13 @@ ms.locfileid: "41592818"
 
 8. データの調査 (プレビュー) に戻り、[**次へ: ファイルのアップロード**] をクリックします。  これにより、次の手順に進み、ファイルをアップロードできるようになります。
 
-    ![ファイルをアップロードする](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![ファイルをアップロードする](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. [**ファイルの場所へのパス**] テキストボックスに修復したファイルの場所を指定し、[**クリップボードにコピー] を**クリックします。
 
 10. コマンドを Windows コマンドプロンプトに貼り付け、 **enter**キーを押してファイルをアップロードします。
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. 最後に、データ調査 (プレビュー) に戻り、[**次へ: プロセスファイル**] をクリックします。
 

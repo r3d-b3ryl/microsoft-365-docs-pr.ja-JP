@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 監査ログレコードに含まれるその他のプロパティについて説明します。
-ms.openlocfilehash: d479a063cd6a97fd2f099130a8c9e183e0663798
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: fc6a237b881f7154219fcbff464825d1cec63f0c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862057"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075494"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 監査ログの詳細なプロパティ
 
@@ -97,4 +97,4 @@ ms.locfileid: "41862057"
 
 上記のプロパティは、特定のイベントの詳細を表示するときに [**詳細情報**] をクリックしたときにも表示されます。 
   
-![[詳細情報] をクリックして監査ログのイベント レコードの詳細なプロパティを表示する](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![[詳細情報] をクリックして監査ログのイベント レコードの詳細なプロパティを表示する](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)

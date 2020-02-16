@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 監査ログ検索の結果をエクスポートして CSV ファイルにダウンロードした後、Excel の Power Query エディターの JSON 変換機能を使用して、AuditData 列の JSON オブジェクトの各プロパティをそれぞれの列に分割できます。 これは、探している特定の監査データをすばやく見つけるのに役立ちます。
-ms.openlocfilehash: de116db76597c6eb7966541c3cc0f34f91c06c70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594608"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074116"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
@@ -36,7 +36,7 @@ Office 365 監査ログを検索し、検索結果を CSV ファイルにダウ�
     
 2. [**結果のエクスポート**] をクリックし、[**すべての結果をダウンロード**する] を選択します。 
     
-   ![[すべての結果をダウンロード] をクリックします。](media/ExportAuditSearchResults.png)
+   ![[すべての結果をダウンロード] をクリックします。](../media/ExportAuditSearchResults.png)
 
    このオプションは、手順1で実行した監査ログ検索からすべての監査レコードをエクスポートし、その生データを監査ログから CSV ファイルにダウンロードするために使用します。 
 
@@ -44,7 +44,7 @@ Office 365 監査ログを検索し、検索結果を CSV ファイルにダウ�
 
 3. [保存] をクリックし**て名前を付けて保存 >** 、CSV ファイルをローカルコンピューターに保存します。 多くの検索結果をダウンロードするには、しばらく時間がかかります。 通常は、すべてのアクティビティまたは広範な日付範囲を検索する場合に使用します。 CSV ファイルのダウンロードが完了すると、ウィンドウの下部にメッセージが表示されます。
  
-   ![CSV ファイルのダウンロードが完了したときに表示されるメッセージ](media/ExportAuditSearchResultsFinish.png)
+   ![CSV ファイルのダウンロードが完了したときに表示されるメッセージ](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
   > 1つの監査ログ検索から CSV ファイルに最大5万エントリをダウンロードできます。 5万エントリが CSV ファイルにダウンロードされた場合は、検索条件に一致する5万イベントの数がを超える可能性があると考えられます。 この制限を超える値をエクスポートするには、日付範囲を使用して監査ログレコードの数を減らしてみてください。 5万を超えるエントリをエクスポートするには、短い日付範囲で複数の検索を実行する必要がある場合があります。
@@ -57,29 +57,29 @@ Office 365 監査ログを検索し、検索結果を CSV ファイルにダウ�
     
 2.  [**データ**] タブの [ **Get & Transform Data** ] リボングループで、[ **Text/CSV**] をクリックします。
 
-    ![[データ] タブの [テキスト/CSV から] をクリックします。](media/JSONTransformOpenCSVFile.png)
+    ![[データ] タブの [テキスト/CSV から] をクリックします。](../media/JSONTransformOpenCSVFile.png)
 
 3. 手順1でダウンロードした CSV ファイルを開きます。
     
 4. 表示されたウィンドウで、[**データの変換**] をクリックします。
 
-   ![[データの変換] をクリックします。](media/JSONOpenPowerQuery.png)
+   ![[データの変換] をクリックします。](../media/JSONOpenPowerQuery.png)
 
 CSV ファイルが**クエリエディター**で開かれます。 **CreationDate**、 **UserIds**、 **Operations**、および**auditdata**の4つの列があります。 **Auditdata**列は、複数のプロパティを含む JSON オブジェクトです。 次の手順では、JSON オブジェクトの各プロパティに対して列を作成します。
     
 5. **Auditdata**列のタイトルを右クリックし、[**変換**] をクリックして、[ **JSON**] をクリックします。 
  
-   ![[AuditData] 列を右クリックし、[変換] をクリックして、[JSON] を選択します。](media/JSONTransform.png)
+   ![[AuditData] 列を右クリックし、[変換] をクリックして、[JSON] を選択します。](../media/JSONTransform.png)
 
 6. **Auditdata**列の右上隅で、[展開] アイコンをクリックします。
     
-   ![[AuditData] 列で、[expand] アイコンをクリックします。](media/JSONTransformExpandIcon.png)
+   ![[AuditData] 列で、[expand] アイコンをクリックします。](../media/JSONTransformExpandIcon.png)
 
    **Auditdata**列の JSON オブジェクトのプロパティの一部のリストが表示されます。
 
 7. [**詳細を読み込む**] をクリックして、[ **auditdata** ] 列の JSON オブジェクトのすべてのプロパティを表示します。
 
-   ![[詳細を読み込む] をクリックして、JSON オブジェクトのすべてのプロパティを表示します。](media/JSONTransformLoadJSONProperties.png)
+   ![[詳細を読み込む] をクリックして、JSON オブジェクトのすべてのプロパティを表示します。](../media/JSONTransformLoadJSONProperties.png)
 
    含める必要のないプロパティの横にあるチェックボックスの選択を解除することができます。 調査に役に立たない列を削除することは、監査ログに表示されるデータの量を減らすための適切な方法です。 
 

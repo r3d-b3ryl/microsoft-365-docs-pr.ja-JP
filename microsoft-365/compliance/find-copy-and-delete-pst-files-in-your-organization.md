@@ -13,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Microsoft PST コレクションツールを使用して、組織のネットワークを検索し、組織全体に散在している PST ファイルのインベントリを取得します。 PST ファイルを検索したら、pst コレクションツールを使用して、それらを Office 365 にインポートできるように、1つの場所にコピーすることができます。
-ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 736e317318f860936450b7412bc465fc7c9d59e1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594558"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073928"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>PST コレクションツールを使用して、組織内の PST ファイルを検索、コピー、および削除する
 
@@ -33,7 +33,7 @@ PST コレクションツールを使用して、ユーザーが新しい PST �
 
 PST コレクションツールを使用して、組織内の PST ファイルを検索、制御、収集、および削除するプロセスの概要を次に示します。
   
-![PST コレクションツールのプロセスの概要](media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
+![PST コレクションツールのプロセスの概要](../media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
   
 1. **[手順 1: ネットワーク上の pst ファイルを検索](#step-1-find-pst-files-on-your-network)** する-ツールを実行して pst ファイルを検索する場合、クライアントおよびサーバーコンピューターの Active Directory オブジェクトを含む組織単位などの場所を指定します。 特定のコンピューターまたはネットワークファイル共有を検索することもできます。 ツールを実行すると、ターゲットコンピューターに "ライトウェイト" コレクションエージェントがインストールされます。 このエージェントは、送信先のコンピューターで PST ファイルを検索し、見つかった PST ファイルに関する情報を PST コレクションツールに送り返します。 このツールは、指定した場所に見つかった PST ファイルに関する情報を含むログファイルを作成します。 これらのファイルは、後の手順でツールを実行するときに使用されます。 
     
@@ -45,7 +45,7 @@ PST コレクションツールを使用して、組織内の PST ファイル�
     
 5. **[手順 5: ネットワーク上の pst ファイルを削除](#step-5-delete-the-pst-files-found-on-your-network)** する-見つけて収集した pst ファイルを Office 365 の Exchange Online メールボックスにインポートした後、pst コレクションツールを使用して、手順1で見つかった pst ファイルを元の場所から削除できます。 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - PST コレクションツールをローカルコンピューターにダウンロードするには、次の手順を実行します。 
     
@@ -240,7 +240,7 @@ PST ファイルを Office 365 にインポートするための詳細な手順�
     
     |パラメーター * * * *|****説明****|例 * * * *|
     |:-----|:-----|:-----|
-    | `DataSource` <br/> |検索するデータの種類を指定します。 現時点では、pst コレクションツールを使用して PST ファイルを検索できます。 ![空ける](media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
+    | `DataSource` <br/> |検索するデータの種類を指定します。 現時点では、pst コレクションツールを使用して PST ファイルを検索できます。 ![空ける](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |ツールによって実行される操作の種類を指定します。 検索モードで`Delete`ツールを実行したときに検出された PST ファイルを削除するには、値を使用します。  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |既存の PST コレクションジョブの名前を指定します。 この同じジョブ名を使用する必要があります。この名前は、このツールを検索モードで実行したときと、手順1および手順3で使用したものと同じです。 このジョブ名は、ツールを削除モードで実行するときに作成されるログファイルの名前にも追加されます。  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |収集モードでツールを実行したときに作成された .xml 構成ファイルが格納されているフォルダーを指定します。 手順3でこのパラメーターに使用したのと同じ値を使用します。  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |

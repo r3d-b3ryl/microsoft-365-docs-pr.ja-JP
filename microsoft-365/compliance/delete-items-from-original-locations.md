@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、セキュリティ & コンプライアンスセンターで新しいデータ調査 (プレビュー) ツールを使用して、アイテムを元の場所から削除する方法について説明します。
-ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0232a822af0427fcfa669fa1e86558ca54996202
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595322"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075854"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>元の場所からアイテムを削除する (プレビュー)
 
@@ -31,7 +31,7 @@ ms.locfileid: "41595322"
 
 データ調査を使用して、アイテムを元の場所から削除することができます。 これは、組織全体の Exchange メールボックス、SharePoint サイト、および OneDrive アカウントからアイテムを削除できることを意味します。 証拠としてアイテムを収集したので、さらに調査するために証拠セットに保持されているアイテムのコピー、または参照として保持することができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - アイテムを削除するには、セキュリティ & コンプライアンスセンターで**検索と削除**の役割が割り当てられている必要があります。 この役割は、既定で、組み込みデータ調査役割グループに割り当てられます。
 
@@ -52,22 +52,22 @@ ms.locfileid: "41595322"
  
 2. [**アクション**] をクリックし、[**元の場所からアイテムを削除**する] をクリックします。
 
-   ![[アクション] をクリックし、[元の場所からアイテムを削除する] をクリックします。](media/DataInvestigationsDeleteItems1.png)
+   ![[アクション] をクリックし、[元の場所からアイテムを削除する] をクリックします。](../media/DataInvestigationsDeleteItems1.png)
 
 3. [ポップアップ] ページで、削除されるアイテムと関連する子ドキュメントの数を確認し、[**削除**] をクリックします。
 
-   ![フライアウトページには、削除対象として選択されたアイテムおよび添付されたドキュメントの数が表示されます。](media/DataInvestigationsDeleteItems2.png)
+   ![フライアウトページには、削除対象として選択されたアイテムおよび添付されたドキュメントの数が表示されます。](../media/DataInvestigationsDeleteItems2.png)
 
    > [!NOTE]
    > 前のスクリーンショットで、アイテムの数は、削除対象として選択されているアイテムの数を示しています。 ドキュメントの数は、親アイテムに添付されているすべてのファイルを含むアイテムの合計数を示します。 たとえば、1つの電子メールメッセージを選択し、そのメッセージに Word 文書が添付されている場合、[**選択されたドキュメント**] の下に表示されるアイテムとドキュメントの数は**1 アイテム (2 ドキュメント)** になります。
 
 [**ジョブ**] タブの [**元の場所からアイテムを削除**する] ジョブの進行状況を追跡できます。ジョブをクリックして、フライアウトページを表示します。
 
-![元の場所からアイテムを削除するジョブのポップアップページ](media/DataInvestigationsDeleteItems3.png)
+![元の場所からアイテムを削除するジョブのポップアップページ](../media/DataInvestigationsDeleteItems3.png)
 
 ジョブのアイテムが削除されると、ジョブの状態は [**成功**] に設定されます。 完了したジョブの日時も表示されます。
 
-![完了したアイテムの削除ジョブ](media/DataInvestigationsDeleteItems4.png)
+![完了したアイテムの削除ジョブ](../media/DataInvestigationsDeleteItems4.png)
 
 > [!NOTE]
 > [**元の場所からアイテムを削除**] ジョブに対して、**一部成功**の状態が表示されることがあります。 このジョブの状態は、さまざまな状況で発生します。 詳細については、この記事の「[部分的に成功](#partially-successful-deletions)した削除」を参照してください。

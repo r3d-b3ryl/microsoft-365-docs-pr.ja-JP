@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
-ms.openlocfilehash: d308dcc58bbacf118374bbabdebf27c35ad2d73a
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836717"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075410"
 ---
 # <a name="overview-of-disposition-reviews"></a>廃棄レビューの概要
 
@@ -56,20 +56,20 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
   
 廃棄レビューには、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、および Office 365 グループのコンテンツを含めることができます。 これらの場所の廃棄レビューを待機しているコンテンツは、レビュー担当者がコンテンツを完全に削除することを選択した場合にのみ削除されます。
   
-![セキュリティ/コンプライアンスセンターの [配置] ページ](media/Retention-Dispositions-v2-page.png)
+![セキュリティ/コンプライアンスセンターの [配置] ページ](../media/Retention-Dispositions-v2-page.png)
 
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>保持ラベルを作成して廃棄レビューを設定する
 
 これは、廃棄レビューを設定するための基本的なワークフローです。 このフローには、公開されている保持ラベルと、ユーザーによって手動で適用されるものが示されることに注意してください。または、廃棄レビューをトリガーする保持ラベルをコンテンツに自動適用することもできます。
   
-![廃棄のしくみを示す図](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![廃棄のしくみを示す図](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
 廃棄のレビューは、Office 365 で保持ラベルを作成する場合のオプションです。 このオプションは、アイテム保持ポリシーでは使用できませんが、コンテンツを保持するように構成された保持ラベルでのみ使用できます。
   
 保持ラベルの詳細については、「[保持ラベルの概要](labels.md)」を参照してください。
   
-![ラベルの保持設定](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+![ラベルの保持設定](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
 > [レビューの準備が**できたアイテムがあるときに、これらのユーザーに通知**する] オプションを指定する場合は、ユーザーを指定します。 このオプションでは、Office 365 グループはサポートされていません。
@@ -80,7 +80,7 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
 
 保持ラベルを選択すると、次のページにそのラベルの保留中のすべての実行が表示されます。
 
-![ディスポジションオプション](media/Retention-Disposition-options-v2.png)
+![ディスポジションオプション](../media/Retention-Disposition-options-v2.png)
 
 レビュー担当者は次のことができます。 
   
@@ -128,18 +128,18 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
     
 - [**破棄**されたアイテム] タブには、廃棄レビューで既に実行されている完全に削除されたアイテムが表示されます。 この記事では、上記のセクションで説明したように、永続的な削除処理に数日かかる場合があるため、ここで説明します。 別の保持ラベルが適用されているアイテム、またはレビューの一部として保持期間を延長したアイテムは、ここには表示されません。
 
-![ディスポジションタブ](media/Retention-Disposition-tabs.png)
+![ディスポジションタブ](../media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>廃棄ビューをフィルター処理する
 
 これらのビューは、保持ラベルまたは時間範囲によってフィルター処理できます。 保留中の処理の場合、時間の範囲は有効期限に基づきます。 破棄されたアイテムの場合、時間範囲は、削除日に基づいています。
   
-![廃棄フィルターオプション](media/Retention-filter-options.png)
+![廃棄フィルターオプション](../media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>廃棄アイテムをエクスポートする
 
 また、いずれかのビューのアイテムを .csv ファイルとしてエクスポートして、Excel で開くことができます。
   
-![Excel でエクスポートされた廃棄データ](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Excel でエクスポートされた廃棄データ](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 
