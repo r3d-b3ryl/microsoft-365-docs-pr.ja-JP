@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/26/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,179 +16,185 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、Outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: 77fa9c2766ee1e2392ad9ea962a43f4779238209
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599464"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086393"
 ---
-# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="4ec9c-103">レポート メッセージ アドインを有効にする</span><span class="sxs-lookup"><span data-stu-id="4ec9c-103">Enable the Report Message add-in</span></span>
+# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="b5e46-103">レポート メッセージ アドインを有効にする</span><span class="sxs-lookup"><span data-stu-id="b5e46-103">Enable the Report Message add-in</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4ec9c-104">Outlook および outlook on the web 用のレポートメッセージアドインは、 [Outlook 迷惑メールフィルター](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)とまったく同じではありませんが、両方を使用して、電子メールを迷惑メール、迷惑メールではないメールとしてマークしたり、フィッシングを試行したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-104">The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt.</span></span> <span data-ttu-id="4ec9c-105">違いは、Outlook 用のレポートメッセージアドインと web 上の Outlook は、分類された電子メールの誤通知を Microsoft に通知するのに対して、Outlook の迷惑メールフィルターを使用してユーザーのメールボックス内の電子メールメッセージを整理しています。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-105">The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.</span></span>
+> <span data-ttu-id="b5e46-104">Outlook および outlook on the web 用のレポートメッセージアドインは、 [Outlook 迷惑メールフィルター](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)とまったく同じではありませんが、両方を使用して、電子メールを迷惑メール、迷惑メールではないメールとしてマークしたり、フィッシングを試行したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-104">The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt.</span></span> <span data-ttu-id="b5e46-105">違いは、Outlook 用のレポートメッセージアドインと web 上の Outlook は、分類された電子メールの誤通知を Microsoft に通知するのに対して、Outlook の迷惑メールフィルターを使用してユーザーのメールボックス内の電子メールメッセージを整理しています。</span><span class="sxs-lookup"><span data-stu-id="b5e46-105">The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="4ec9c-106">概要</span><span class="sxs-lookup"><span data-stu-id="4ec9c-106">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="b5e46-106">概要</span><span class="sxs-lookup"><span data-stu-id="b5e46-106">Overview</span></span>
 
-<span data-ttu-id="4ec9c-107">Outlook 用のレポートメッセージアドインと web 上の Outlook を使用すると、ユーザーは、安全であるか悪意のある電子メールであっても、分析のために Microsoft と関連会社に対して、誤った分類されたメールを簡単に報告できます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-107">The Report Message add-in for Outlook and Outlook on the web enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="4ec9c-108">Microsoft では、これらの送信を使用して、電子メール保護テクノロジの有効性を向上させています。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-108">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="4ec9c-109">さらに、組織で[Office 365 Advanced Threat Protection プラン 1](office-365-atp.md)または[Plan 2](office-365-ti.md)を使用している場合は、レポートメッセージアドインにより、組織のセキュリティチームに対して、セキュリティポリシーの確認と更新に使用できる有用な情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-109">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
+<span data-ttu-id="b5e46-107">Outlook 用のレポートメッセージアドインと web 上の Outlook (旧称 Outlook Web App) を使用すると、ユーザーは、安全であるか悪意のある電子メールであっても、分析のために Microsoft と関連会社に対して、誤って分類されたメールを簡単に報告できます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-107">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="b5e46-108">Microsoft では、これらの送信を使用して、電子メール保護テクノロジの有効性を向上させています。</span><span class="sxs-lookup"><span data-stu-id="b5e46-108">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="b5e46-109">さらに、組織で[Office 365 Advanced Threat Protection プラン 1](office-365-atp.md)または[Plan 2](office-365-ti.md)を使用している場合は、レポートメッセージアドインにより、組織のセキュリティチームに対して、セキュリティポリシーの確認と更新に使用できる有用な情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-109">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
 
-<span data-ttu-id="4ec9c-110">たとえば、ユーザーが大量のメッセージをフィッシングとして報告しているとします。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-110">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="4ec9c-111">この情報は、[セキュリティダッシュボード](security-dashboard.md)やその他のレポートに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-111">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="4ec9c-112">組織のセキュリティチームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があることを示すものとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-112">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="4ec9c-113">または、レポートメッセージアドインを使用して迷惑メールではないというフラグが付いたメッセージを多数報告している場合は、組織のセキュリティチームが[スパム対策ポリシー](configure-the-anti-spam-policies.md)を調整する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-113">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-the-anti-spam-policies.md).</span></span>
+<span data-ttu-id="b5e46-110">たとえば、ユーザーが大量のメッセージをフィッシングとして報告しているとします。</span><span class="sxs-lookup"><span data-stu-id="b5e46-110">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="b5e46-111">この情報は、[セキュリティダッシュボード](security-dashboard.md)やその他のレポートに表示されます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-111">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="b5e46-112">組織のセキュリティチームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があることを示すものとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-112">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="b5e46-113">または、レポートメッセージアドインを使用して迷惑メールではないというフラグが付いたメッセージを多数報告している場合は、組織のセキュリティチームが[スパム対策ポリシー](configure-the-anti-spam-policies.md)を調整する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-113">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-the-anti-spam-policies.md).</span></span>
 
-<span data-ttu-id="4ec9c-114">レポートメッセージアドインは、Office 365 サブスクリプションと、次の製品で機能します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-114">The Report Message add-in works with your Office 365 subscription and the following products:</span></span>
- - <span data-ttu-id="4ec9c-115">Outlook on the web</span><span class="sxs-lookup"><span data-stu-id="4ec9c-115">Outlook on the web</span></span>
- - <span data-ttu-id="4ec9c-116">Outlook 2013 SP1</span><span class="sxs-lookup"><span data-stu-id="4ec9c-116">Outlook 2013 SP1</span></span>
- - <span data-ttu-id="4ec9c-117">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4ec9c-117">Outlook 2016</span></span>
- - <span data-ttu-id="4ec9c-118">Outlook 2016 for Mac</span><span class="sxs-lookup"><span data-stu-id="4ec9c-118">Outlook 2016 for Mac</span></span>
- - <span data-ttu-id="4ec9c-119">Office 365 ProPlus に含まれている Outlook</span><span class="sxs-lookup"><span data-stu-id="4ec9c-119">Outlook included with Office 365 ProPlus</span></span>
+<span data-ttu-id="b5e46-114">レポートメッセージアドインは、ほとんどの Office 365 サブスクリプションと、次の製品で機能します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-114">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
 
-<span data-ttu-id="4ec9c-120">既存の web ブラウザーでは、レポートメッセージアドインが動作するように十分である必要があります。ただし、アドインが使用できない、または正常に動作しないことが判明した場合は、別のブラウザーを試してみてください。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-120">Your existing web browser should suffice for the Report Message add-in to work; however, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
+ - <span data-ttu-id="b5e46-115">Outlook on the web</span><span class="sxs-lookup"><span data-stu-id="b5e46-115">Outlook on the web</span></span>
+ - <span data-ttu-id="b5e46-116">Outlook 2013 SP1</span><span class="sxs-lookup"><span data-stu-id="b5e46-116">Outlook 2013 SP1</span></span>
+ - <span data-ttu-id="b5e46-117">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b5e46-117">Outlook 2016</span></span>
+ - <span data-ttu-id="b5e46-118">Outlook 2016 for Mac</span><span class="sxs-lookup"><span data-stu-id="b5e46-118">Outlook 2016 for Mac</span></span>
+ - <span data-ttu-id="b5e46-119">Office 365 ProPlus に含まれている Outlook</span><span class="sxs-lookup"><span data-stu-id="b5e46-119">Outlook included with Office 365 ProPlus</span></span>
 
-<span data-ttu-id="4ec9c-121">個人ユーザーの場合は、[レポートメッセージアドインを自分自身に対して有効に](#get-the-report-message-add-in-for-yourself)することができます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-121">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
+<span data-ttu-id="b5e46-120">レポートメッセージアドインは現在、次の場合には使用できません。</span><span class="sxs-lookup"><span data-stu-id="b5e46-120">The Report Message add-in is currently not available for:</span></span>
 
-<span data-ttu-id="4ec9c-122">Office 365 の全体管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-122">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="4ec9c-123">これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-123">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
+ - <span data-ttu-id="b5e46-121">オンプレミスの Exchange 組織内のメールボックス</span><span class="sxs-lookup"><span data-stu-id="b5e46-121">Mailboxes in on-premises Exchange organizations</span></span>
+ - <span data-ttu-id="b5e46-122">GCC、GCC HIGH、または DoD サブスクリプション</span><span class="sxs-lookup"><span data-stu-id="b5e46-122">GCC, GCC HIGH, or DoD subscriptions</span></span>
 
-## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="4ec9c-124">自分用のレポートメッセージアドインを取得する</span><span class="sxs-lookup"><span data-stu-id="4ec9c-124">Get the Report Message add-in for yourself</span></span>
+<span data-ttu-id="b5e46-123">既存の web ブラウザーでは、レポートメッセージアドインが動作するように十分である必要があります。ただし、アドインが使用できない、または正常に動作しないことが判明した場合は、別のブラウザーを試してみてください。</span><span class="sxs-lookup"><span data-stu-id="b5e46-123">Your existing web browser should suffice for the Report Message add-in to work; however, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
 
-1. <span data-ttu-id="4ec9c-125">[Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps)で、[レポートメッセージアドイン](https://appsource.microsoft.com/product/office/wa104381180)を検索します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-125">In [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), search for the [Report Message add-in](https://appsource.microsoft.com/product/office/wa104381180).</span></span>
+<span data-ttu-id="b5e46-124">個人ユーザーの場合は、[レポートメッセージアドインを自分自身に対して有効に](#get-the-report-message-add-in-for-yourself)することができます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-124">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
 
-2. <span data-ttu-id="4ec9c-126">[**今すぐ取得**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-126">Choose **GET IT NOW**.</span></span>
+<span data-ttu-id="b5e46-125">Office 365 の全体管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-125">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="b5e46-126">これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="b5e46-126">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-   ![レポートメッセージ-今すぐ取得](../media/ReportMessageGETITNOW.png)
+## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="b5e46-127">自分用のレポートメッセージアドインを取得する</span><span class="sxs-lookup"><span data-stu-id="b5e46-127">Get the Report Message add-in for yourself</span></span>
 
-3. <span data-ttu-id="4ec9c-128">使用条件とプライバシーポリシーを確認します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-128">Review the terms of use and privacy policy.</span></span> <span data-ttu-id="4ec9c-129">[ **Continue**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-129">Then choose **Continue**.</span></span>
+1. <span data-ttu-id="b5e46-128">[Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps)で、[レポートメッセージアドイン](https://appsource.microsoft.com/product/office/wa104381180)を検索します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-128">In [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), search for the [Report Message add-in](https://appsource.microsoft.com/product/office/wa104381180).</span></span>
 
-4. <span data-ttu-id="4ec9c-130">職場または学校アカウントを使用して Office 365 にサインインします (一般法人向け)。または Microsoft アカウント (個人使用)。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-130">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+2. <span data-ttu-id="b5e46-129">[**今すぐ取得**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-129">Choose **GET IT NOW**.</span></span>
 
-<span data-ttu-id="4ec9c-131">アドインがインストールされて有効になると、次のアイコンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-131">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+   ![レポートメッセージ-今すぐ取得](../../media/ReportMessageGETITNOW.png)
 
-- <span data-ttu-id="4ec9c-132">Outlook のアイコンは、次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-132">In Outlook, the icon looks like this:</span></span>
+3. <span data-ttu-id="b5e46-131">使用条件とプライバシーポリシーを確認します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-131">Review the terms of use and privacy policy.</span></span> <span data-ttu-id="b5e46-132">[ **Continue**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-132">Then choose **Continue**.</span></span>
 
-  ![Outlook のレポートメッセージアドインアイコン](../media/OutlookReportMessageIcon.png)
+4. <span data-ttu-id="b5e46-133">職場または学校アカウントを使用して Office 365 にサインインします (一般法人向け)。または Microsoft アカウント (個人使用)。</span><span class="sxs-lookup"><span data-stu-id="b5e46-133">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
 
-- <span data-ttu-id="4ec9c-134">Web 上の Outlook (旧称 Outlook Web App) では、アイコンは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-134">In Outlook on the web (formerly known as Outlook Web App), the icon looks like this:</span></span>
+<span data-ttu-id="b5e46-134">アドインがインストールされて有効になると、次のアイコンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-134">After the add-in is installed and enabled, you'll see the following icons:</span></span>
 
-  ![Outlook on the web レポートメッセージアドインアイコン](../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+- <span data-ttu-id="b5e46-135">Outlook のアイコンは、次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-135">In Outlook, the icon looks like this:</span></span>
 
-> [!TIP]
-> <span data-ttu-id="4ec9c-136">次の手順として、[レポートメッセージアドインの使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-136">As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+  ![Outlook のレポートメッセージアドインアイコン](../../media/OutlookReportMessageIcon.png)
 
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="4ec9c-137">組織のレポートメッセージアドインを取得して有効にする</span><span class="sxs-lookup"><span data-stu-id="4ec9c-137">Get and enable the Report Message add-in for your organization</span></span>
+- <span data-ttu-id="b5e46-137">Web 上の Outlook (旧称 Outlook Web App) では、アイコンは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-137">In Outlook on the web (formerly known as Outlook Web App), the icon looks like this:</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="4ec9c-138">このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-138">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span> <span data-ttu-id="4ec9c-139">また、詳細については、OAuth 認証を使用するように Exchange を構成する必要があります。詳細については、「 [exchange の要件 (アドインの一元展開)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-139">In addition, Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
-
-1. <span data-ttu-id="4ec9c-140">Microsoft 365 管理センターの [[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-140">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
-
-   ![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](../media/ServicesAddInsPageNewM365AdminCenter.png)
-
-2. <span data-ttu-id="4ec9c-142">[ **+ アドインの展開**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-142">Choose **+ Deploy Add-in**.</span></span>
-
-   ![[アドインの展開] を選択する](../media/ServicesAddIns-ChooseDeployAddIn.png)
-
-3. <span data-ttu-id="4ec9c-144">[**新しいアドイン**] 画面で情報を確認し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-144">In the **New Add-In** screen, review the information, and then choose **Next**.</span></span>
-
-   ![新しいアドインの詳細](../media/NewAddInScreen1.png)
-
-4. <span data-ttu-id="4ec9c-146">[ **Office ストアからアドインを追加**する] を選択し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-146">Select **I want to add an Add-In from the Office Store**, and then choose **Next**.</span></span>
-
-   ![新しいアドインを追加する](../media/NewAddInScreen2.png)
-
-5. <span data-ttu-id="4ec9c-148">**レポートメッセージ**を検索し、結果の一覧で、[**レポートメッセージアドイン**] の横にある [**追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-148">Search for **Report Message**, and in the list of results, next to the **Report Message Add-In**, choose **Add**.</span></span>
-
-   ![レポートメッセージを検索し、[追加] を選択します。](../media/NewAddInScreen3.png)
-
-6. <span data-ttu-id="4ec9c-150">[**レポートメッセージ**] 画面で情報を確認し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-150">On the **Report Message** screen, review the information, and then choose **Next**.</span></span>
-
-   ![レポートメッセージの詳細](../media/ReportMessageAdd-InNewScreen4.png)
-
-7. <span data-ttu-id="4ec9c-152">Outlook のユーザーの既定の設定を指定し、[**次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-152">Specify the user default settings for Outlook, and  then choose **Next**.</span></span>
-
-   ![Outlook の既定のレポートメッセージ設定](../media/ReportMessageOptionsScreen5.png)
-
-8. <span data-ttu-id="4ec9c-154">レポートメッセージアドインを取得するユーザーを指定し、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-154">Specify who gets the Report Message Add-in, and then choose **Save**.</span></span>
-
-   ![レポートメッセージアドインを取得するユーザー](../media/ReportMessageOptionsScreen6.png)
+  ![Outlook on the web レポートメッセージアドインアイコン](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
 > [!TIP]
-> <span data-ttu-id="4ec9c-156">[ユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定することを](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)お勧めします。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-156">We recommend [setting up a rule to get a copy of email messages reported by your users](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span></span>
+> <span data-ttu-id="b5e46-139">次の手順として、[レポートメッセージアドインの使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-139">As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-<span data-ttu-id="4ec9c-157">アドインのセットアップ時に選択した内容に応じて (上記の手順 7-8)、組織内のユーザーが[レポートメッセージアドイン](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-157">Depending on what you selected when you set up the add-in (steps 7-8 above), people in your organization will have the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) available.</span></span> <span data-ttu-id="4ec9c-158">組織内のユーザーには、次のアイコンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-158">People in your organization will see the following icons:</span></span>
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="b5e46-140">組織のレポートメッセージアドインを取得して有効にする</span><span class="sxs-lookup"><span data-stu-id="b5e46-140">Get and enable the Report Message add-in for your organization</span></span>
 
-- <span data-ttu-id="4ec9c-159">Outlook のアイコンは、次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-159">In Outlook, the icon looks like this:</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="b5e46-141">このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-141">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span> <span data-ttu-id="b5e46-142">また、詳細については、OAuth 認証を使用するように Exchange を構成する必要があります。詳細については、「 [exchange の要件 (アドインの一元展開)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b5e46-142">In addition, Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-  ![Outlook のレポートメッセージアドインアイコン](../media/OutlookReportMessageIcon.png)
+1. <span data-ttu-id="b5e46-143">Microsoft 365 管理センターの [[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-143">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
 
-- <span data-ttu-id="4ec9c-161">Web 上の Outlook では、アイコンは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-161">In Outlook on the web, the icon looks like this:</span></span>
+   ![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-  ![Outlook on the Web レポートメッセージアドインアイコン](../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+2. <span data-ttu-id="b5e46-145">[ **+ アドインの展開**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-145">Choose **+ Deploy Add-in**.</span></span>
+
+   ![[アドインの展開] を選択する](../../media/ServicesAddIns-ChooseDeployAddIn.png)
+
+3. <span data-ttu-id="b5e46-147">[**新しいアドイン**] 画面で情報を確認し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-147">In the **New Add-In** screen, review the information, and then choose **Next**.</span></span>
+
+   ![新しいアドインの詳細](../../media/NewAddInScreen1.png)
+
+4. <span data-ttu-id="b5e46-149">[ **Office ストアからアドインを追加**する] を選択し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-149">Select **I want to add an Add-In from the Office Store**, and then choose **Next**.</span></span>
+
+   ![新しいアドインを追加する](../../media/NewAddInScreen2.png)
+
+5. <span data-ttu-id="b5e46-151">**レポートメッセージ**を検索し、結果の一覧で、[**レポートメッセージアドイン**] の横にある [**追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-151">Search for **Report Message**, and in the list of results, next to the **Report Message Add-In**, choose **Add**.</span></span>
+
+   ![レポートメッセージを検索し、[追加] を選択します。](../../media/NewAddInScreen3.png)
+
+6. <span data-ttu-id="b5e46-153">[**レポートメッセージ**] 画面で情報を確認し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-153">On the **Report Message** screen, review the information, and then choose **Next**.</span></span>
+
+   ![レポートメッセージの詳細](../../media/ReportMessageAdd-InNewScreen4.png)
+
+7. <span data-ttu-id="b5e46-155">Outlook のユーザーの既定の設定を指定し、[**次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5e46-155">Specify the user default settings for Outlook, and  then choose **Next**.</span></span>
+
+   ![Outlook の既定のレポートメッセージ設定](../../media/ReportMessageOptionsScreen5.png)
+
+8. <span data-ttu-id="b5e46-157">レポートメッセージアドインを取得するユーザーを指定し、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-157">Specify who gets the Report Message Add-in, and then choose **Save**.</span></span>
+
+   ![レポートメッセージアドインを取得するユーザー](../../media/ReportMessageOptionsScreen6.png)
 
 > [!TIP]
-> <span data-ttu-id="4ec9c-163">レポートメッセージアドインについてユーザーに通知する場合は、[レポートメッセージアドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)するためのリンクを含めます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-163">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+> <span data-ttu-id="b5e46-159">[ユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定することを](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)お勧めします。</span><span class="sxs-lookup"><span data-stu-id="b5e46-159">We recommend [setting up a rule to get a copy of email messages reported by your users](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span></span>
 
-## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a><span data-ttu-id="4ec9c-164">ユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定する</span><span class="sxs-lookup"><span data-stu-id="4ec9c-164">Set up a rule to get a copy of email messages reported by your users</span></span>
+<span data-ttu-id="b5e46-160">アドインのセットアップ時に選択した内容に応じて (上記の手順 7-8)、組織内のユーザーが[レポートメッセージアドイン](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-160">Depending on what you selected when you set up the add-in (steps 7-8 above), people in your organization will have the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) available.</span></span> <span data-ttu-id="b5e46-161">組織内のユーザーには、次のアイコンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-161">People in your organization will see the following icons:</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="4ec9c-165">このタスクを実行するには、Exchange Online の管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-165">You must be an Exchange Online Administrator to perform this task.</span></span>
+- <span data-ttu-id="b5e46-162">Outlook のアイコンは、次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-162">In Outlook, the icon looks like this:</span></span>
 
-<span data-ttu-id="4ec9c-166">組織内のユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定できます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-166">You can set up a rule to get a copy of email messages reported by users in your organization.</span></span> <span data-ttu-id="4ec9c-167">この操作は、組織でレポートメッセージアドインをダウンロードして有効にした後に行います。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-167">You do this after you have downloaded and enabled the Report Message add-in for your organization.</span></span>
+  ![Outlook のレポートメッセージアドインアイコン](../../media/OutlookReportMessageIcon.png)
 
-1. <span data-ttu-id="4ec9c-168">Exchange 管理センターで、[**メールフロー** \> **ルール**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-168">In the Exchange admin center, choose **mail flow** \> **rules**.</span></span>
+- <span data-ttu-id="b5e46-164">Web 上の Outlook では、アイコンは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-164">In Outlook on the web, the icon looks like this:</span></span>
 
-2. <span data-ttu-id="4ec9c-169">[ **+** \> **新しいルールを作成する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-169">Choose **+** \> **Create a new rule**.</span></span>
+  ![Outlook on the Web レポートメッセージアドインアイコン](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-3. <span data-ttu-id="4ec9c-170">[**名前**] ボックスに、「送信」などの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-170">In the **Name** box, type a name, such as Submissions.</span></span>
+> [!TIP]
+> <span data-ttu-id="b5e46-166">レポートメッセージアドインについてユーザーに通知する場合は、[レポートメッセージアドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)するためのリンクを含めます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-166">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-4. <span data-ttu-id="4ec9c-171">[**このルールを適用する条件**] ボックスの一覧で、[**受信者のアドレス**を選択してください...] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-171">In the **Apply this rule if** list, choose **The recipient address includes...**.</span></span>
-
-5. <span data-ttu-id="4ec9c-172">[**単語または語句の指定**] 画面`junk@office365.microsoft.com`で`phish@office365.microsoft.com`、とを追加し、[ **OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-172">In the **specify words or phrases** screen, add `junk@office365.microsoft.com` and `phish@office365.microsoft.com`, and then choose **OK**.</span></span>
-
-   ![ルールの迷惑メールアドレスとフィッシングメールアドレスを指定する](../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
-
-6. <span data-ttu-id="4ec9c-174">[**実行する処理...** ] の一覧で、[**メッセージの Bcc**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-174">In the **Do the following...** list, choose **Bcc the message to...**.</span></span>
-
-7. <span data-ttu-id="4ec9c-175">ユーザーが Microsoft に報告する各電子メールメッセージのコピーを受信する必要のある全体管理者、セキュリティ管理者、およびセキュリティ閲覧者を追加し、[ **OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-175">Add a global administrator, security administrator, and/or security reader who should receive a copy of each email message that people report to Microsoft, and then choose **OK**.</span></span>
-
-   ![グローバルまたはセキュリティ管理者を追加して、報告された各メッセージのコピーを受信する](../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
-
-8. <span data-ttu-id="4ec9c-177">[**このルールを次の重大度レベルで監査**する] を選択し、[**中**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-177">Select **Audit this rule with severity level**, and choose **Medium**.</span></span>
-
-9. <span data-ttu-id="4ec9c-178">[**このルールのモードの選択**] で、[**強制**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-178">Under **Choose a mode for this rule**, choose **Enforce**.</span></span>
-
-   ![レポートされた各メッセージのコピーを取得するルールを設定する](../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
-
-10. <span data-ttu-id="4ec9c-180">**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-180">Choose **Save**.</span></span>
-
-<span data-ttu-id="4ec9c-181">このルールが設定されている場合、組織内のユーザーがレポートメッセージアドインを使用して電子メールメッセージを報告するたびに、全体管理者、セキュリティ管理者、セキュリティリーダがそのメッセージのコピーを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-181">With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message.</span></span> <span data-ttu-id="4ec9c-182">この情報を使用すると、 [Office 365 の ATP の安全なリンク](atp-safe-links.md)ポリシー、または[スパム対策](anti-spam-protection.md)の設定などのポリシーを設定または調整することができます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-182">This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies, or your [anti-spam](anti-spam-protection.md) settings.</span></span>
-
-## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="4ec9c-183">レポートメッセージアドインの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-183">Learn how to use the Report Message add-in</span></span>
-
-<span data-ttu-id="4ec9c-184">「[レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-184">See [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
-
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="4ec9c-185">レポートメッセージアドインの設定を確認または編集する</span><span class="sxs-lookup"><span data-stu-id="4ec9c-185">Review or edit settings for the Report Message add-in</span></span>
-
-<span data-ttu-id="4ec9c-186">[[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)で、レポートメッセージアドインの既定の設定を確認および編集できます。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-186">You can review and edit the default settings for the Report Message add-in on the [Services & Add-Ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span></span>
+## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a><span data-ttu-id="b5e46-167">ユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定する</span><span class="sxs-lookup"><span data-stu-id="b5e46-167">Set up a rule to get a copy of email messages reported by your users</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="4ec9c-187">このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-187">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span>
+> <span data-ttu-id="b5e46-168">このタスクを実行するには、Exchange Online の管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-168">You must be an Exchange Online Administrator to perform this task.</span></span>
 
-1. <span data-ttu-id="4ec9c-188">Microsoft 365 管理センターの [[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-188">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="b5e46-169">組織内のユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定できます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-169">You can set up a rule to get a copy of email messages reported by users in your organization.</span></span> <span data-ttu-id="b5e46-170">この操作は、組織でレポートメッセージアドインをダウンロードして有効にした後に行います。</span><span class="sxs-lookup"><span data-stu-id="b5e46-170">You do this after you have downloaded and enabled the Report Message add-in for your organization.</span></span>
 
-   ![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](../media/ServicesAddInsPageNewM365AdminCenter.png)
+1. <span data-ttu-id="b5e46-171">Exchange 管理センターで、[**メールフロー** \> **ルール**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-171">In the Exchange admin center, choose **mail flow** \> **rules**.</span></span>
 
-2. <span data-ttu-id="4ec9c-190">レポートメッセージアドインを検索して選択します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-190">Find and select the Report Message add-in.</span></span>
+2. <span data-ttu-id="b5e46-172">[ **+** \> **新しいルールを作成する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-172">Choose **+** \> **Create a new rule**.</span></span>
 
-   ![レポートメッセージアドインを検索して選択する](../media/FindReportMessageAddIn.png)
+3. <span data-ttu-id="b5e46-173">[**名前**] ボックスに、「送信」などの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-173">In the **Name** box, type a name, such as Submissions.</span></span>
 
-3. <span data-ttu-id="4ec9c-192">[レポートメッセージ] 画面で、組織に合わせて設定を確認して編集します。</span><span class="sxs-lookup"><span data-stu-id="4ec9c-192">On the Report Message screen, review and edit settings as appropriate for your organization.</span></span>
+4. <span data-ttu-id="b5e46-174">[**このルールを適用する条件**] ボックスの一覧で、[**受信者のアドレス**を選択してください...] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-174">In the **Apply this rule if** list, choose **The recipient address includes...**.</span></span>
 
-   ![レポートメッセージアドインの設定](../media/EditReportMessageAddIn.png)
+5. <span data-ttu-id="b5e46-175">[**単語または語句の指定**] 画面`junk@office365.microsoft.com`で`phish@office365.microsoft.com`、とを追加し、[ **OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-175">In the **specify words or phrases** screen, add `junk@office365.microsoft.com` and `phish@office365.microsoft.com`, and then choose **OK**.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="4ec9c-194">関連項目</span><span class="sxs-lookup"><span data-stu-id="4ec9c-194">Related topics</span></span>
+   ![ルールの迷惑メールアドレスとフィッシングメールアドレスを指定する](../../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
 
-[<span data-ttu-id="4ec9c-195">レポートメッセージアドインを使用する</span><span class="sxs-lookup"><span data-stu-id="4ec9c-195">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+6. <span data-ttu-id="b5e46-177">[**実行する処理...** ] の一覧で、[**メッセージの Bcc**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-177">In the **Do the following...** list, choose **Bcc the message to...**.</span></span>
 
-[<span data-ttu-id="4ec9c-196">セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する</span><span class="sxs-lookup"><span data-stu-id="4ec9c-196">View email security reports in the Security &amp; Compliance Center</span></span>](view-email-security-reports.md)
+7. <span data-ttu-id="b5e46-178">ユーザーが Microsoft に報告する各電子メールメッセージのコピーを受信する必要のある全体管理者、セキュリティ管理者、およびセキュリティ閲覧者を追加し、[ **OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-178">Add a global administrator, security administrator, and/or security reader who should receive a copy of each email message that people report to Microsoft, and then choose **OK**.</span></span>
 
-[<span data-ttu-id="4ec9c-197">Office 365 Advanced Threat Protection のレポートを表示する</span><span class="sxs-lookup"><span data-stu-id="4ec9c-197">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+   ![グローバルまたはセキュリティ管理者を追加して、報告された各メッセージのコピーを受信する](../../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
 
-[<span data-ttu-id="4ec9c-198">セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する</span><span class="sxs-lookup"><span data-stu-id="4ec9c-198">Use Explorer in the Security &amp; Compliance Center</span></span>](threat-explorer.md)
+8. <span data-ttu-id="b5e46-180">[**このルールを次の重大度レベルで監査**する] を選択し、[**中**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-180">Select **Audit this rule with severity level**, and choose **Medium**.</span></span>
+
+9. <span data-ttu-id="b5e46-181">[**このルールのモードの選択**] で、[**強制**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-181">Under **Choose a mode for this rule**, choose **Enforce**.</span></span>
+
+   ![レポートされた各メッセージのコピーを取得するルールを設定する](../../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+
+10. <span data-ttu-id="b5e46-183">**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-183">Choose **Save**.</span></span>
+
+<span data-ttu-id="b5e46-184">このルールが設定されている場合、組織内のユーザーがレポートメッセージアドインを使用して電子メールメッセージを報告するたびに、全体管理者、セキュリティ管理者、セキュリティリーダがそのメッセージのコピーを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-184">With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message.</span></span> <span data-ttu-id="b5e46-185">この情報を使用すると、 [Office 365 の ATP の安全なリンク](atp-safe-links.md)ポリシー、または[スパム対策](anti-spam-protection.md)の設定などのポリシーを設定または調整することができます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-185">This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies, or your [anti-spam](anti-spam-protection.md) settings.</span></span>
+
+## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="b5e46-186">レポートメッセージアドインの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-186">Learn how to use the Report Message add-in</span></span>
+
+<span data-ttu-id="b5e46-187">「[レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b5e46-187">See [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="b5e46-188">レポートメッセージアドインの設定を確認または編集する</span><span class="sxs-lookup"><span data-stu-id="b5e46-188">Review or edit settings for the Report Message add-in</span></span>
+
+<span data-ttu-id="b5e46-189">[[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)で、レポートメッセージアドインの既定の設定を確認および編集できます。</span><span class="sxs-lookup"><span data-stu-id="b5e46-189">You can review and edit the default settings for the Report Message add-in on the [Services & Add-Ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="b5e46-190">このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="b5e46-190">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span>
+
+1. <span data-ttu-id="b5e46-191">Microsoft 365 管理センターの [[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-191">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
+
+   ![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+
+2. <span data-ttu-id="b5e46-193">レポートメッセージアドインを検索して選択します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-193">Find and select the Report Message add-in.</span></span>
+
+   ![レポートメッセージアドインを検索して選択する](../../media/FindReportMessageAddIn.png)
+
+3. <span data-ttu-id="b5e46-195">[レポートメッセージ] 画面で、組織に合わせて設定を確認して編集します。</span><span class="sxs-lookup"><span data-stu-id="b5e46-195">On the Report Message screen, review and edit settings as appropriate for your organization.</span></span>
+
+   ![レポートメッセージアドインの設定](../../media/EditReportMessageAddIn.png)
+
+## <a name="related-topics"></a><span data-ttu-id="b5e46-197">関連トピック</span><span class="sxs-lookup"><span data-stu-id="b5e46-197">Related topics</span></span>
+
+[<span data-ttu-id="b5e46-198">レポートメッセージアドインを使用する</span><span class="sxs-lookup"><span data-stu-id="b5e46-198">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+
+[<span data-ttu-id="b5e46-199">セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する</span><span class="sxs-lookup"><span data-stu-id="b5e46-199">View email security reports in the Security &amp; Compliance Center</span></span>](view-email-security-reports.md)
+
+[<span data-ttu-id="b5e46-200">Office 365 Advanced Threat Protection のレポートを表示する</span><span class="sxs-lookup"><span data-stu-id="b5e46-200">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+
+[<span data-ttu-id="b5e46-201">セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する</span><span class="sxs-lookup"><span data-stu-id="b5e46-201">Use Explorer in the Security &amp; Compliance Center</span></span>](threat-explorer.md)
