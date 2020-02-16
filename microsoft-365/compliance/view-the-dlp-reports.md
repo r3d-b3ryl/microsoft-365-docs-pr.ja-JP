@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の DLP レポートを使用すると、DLP ポリシーの一致、オーバーライド、誤検知の数をすばやく表示できます。時間の経過と共に、傾向の上下が変化するかどうかを確認します。レポートをさまざまな方法でフィルター処理します。そして、グラフ上の線上の点を選択して詳細を表示します。
-ms.openlocfilehash: 1605e2ebed9ada5903402ae5facdb40ce2f12c39
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601234"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068763"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
@@ -33,7 +33,7 @@ ms.locfileid: "41601234"
     
   - 特定の期間に絞り込み、スパイクや傾向の理由を理解します。
     
-  - 組織の DLP ポリシーに違反するビジネスプロセスを検出します。
+  - 組織の DLP ポリシーに違反するビジネス プロセスを検出します。
     
   - コンテンツに適用されているアクションを確認することにより、DLP ポリシーのビジネスへの影響を理解します。
     
@@ -59,19 +59,19 @@ ms.locfileid: "41601234"
   
 これらのレポートは、セキュリティ&amp;コンプライアンスセンター \>の**レポート** \> **ダッシュボード**で見つけることができます。
   
-![DLP ポリシーがレポートに一致する](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP ポリシーがレポートに一致する](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>上書きのためにユーザーによって送信された妥当性を表示する
 
 DLP ポリシーでユーザーによる上書きを許可する場合は、誤検知と上書きレポートを使用して、[ポリシー] ヒントにユーザーが送信したテキストを表示することができます。
   
-![DLP false 正とオーバーライドレポートの詳細にある妥当性フィールド](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![DLP false 正とオーバーライドレポートの詳細にある妥当性フィールド](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>洞察と推奨事項についてのアクションを実行する
 
 レポートでは、赤の警告アイコンをクリックして潜在的な問題に関する詳細を表示し、問題を解決することができます。
   
-![インサイトアイコンをクリックすると、詳細と実行されるアクションが表示されます。](media/51782036-7299-4960-8175-75c2b1637159.png)
+![インサイトアイコンをクリックすると、詳細と実行されるアクションが表示されます。](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>DLP レポートのアクセス許可
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 80c5bb701c7805f673280d24903935c2951046b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590798"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072884"
 ---
 # <a name="insider-risk-management-alerts-preview"></a>Insider リスク管理警告 (プレビュー)
 
@@ -34,7 +34,7 @@ Insider リスク**警告ダッシュボード**を使用すると、insider の
     - 時間、日、または月単位で一覧表示されている中程度の重要度のアラートを解決するのにかかった平均時間。
     - 低重要度アラートの解決にかかった平均時間 (時間、日、または月単位で表示されます)。
 
-![Insider リスク管理アラートダッシュボード](media/insider-risk-alerts-dashboard.png)
+![Insider リスク管理アラートダッシュボード](../media/insider-risk-alerts-dashboard.png)
 
 ## <a name="alert-status-and-severity"></a>アラートの状態と重大度
 

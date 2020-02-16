@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Microsoft Office 365 のデータ復元性について理解します。'
-ms.openlocfilehash: 5b22584e677dd4815b991b4e95b5ad59feb2fbc2
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: ec7f794a62a910fadaece890cf73451644d44109
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41799547"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071114"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 でのサービスの暗号化
 

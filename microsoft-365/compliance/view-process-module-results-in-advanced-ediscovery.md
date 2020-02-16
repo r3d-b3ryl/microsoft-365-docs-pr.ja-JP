@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'タスクの状態とプロセスの概要を含む、Office 365 のアドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。  '
-ms.openlocfilehash: 2c492b9c8dfa2b6851620c434f1a5b4bbddc2e4e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597224"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068845"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Office 365 のプロセスモジュールの結果の表示の詳細電子情報開示
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597224"
 
 [ **** \> **** 処理\>の準備] で、次の例に示すよう**に、ページ**に現在の状態 (プロセスが実行中の場合) または最後のプロセスの状態タスクの状態が表示されます。
   
-![プロセス モジュールのタスクの進捗状況](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
+![プロセス モジュールのタスクの進捗状況](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 表示されるタスクは、選択された [処理] オプションによって異なる場合があります。 
   
@@ -82,7 +82,7 @@ ms.locfileid: "41597224"
     
     **タグ付け**されたファイルのマーキングが失敗した場合は、それも記録されます。 
     
-![プロセス モジュールの概要](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
+![プロセス モジュールの概要](../media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
 ## <a name="process-summary-accumulated-and-last-charts"></a>プロセス概要累計および最終グラフ
 
@@ -106,7 +106,7 @@ ms.locfileid: "41597224"
 
 [ \>処理\>結果\>の最終処理] エラーでは、最後に実行されたセッションまたはアクションのエラーの詳細が表示されます。
   
-![プロセス モジュールのエラー](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
+![プロセス モジュールのエラー](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>関連項目
 

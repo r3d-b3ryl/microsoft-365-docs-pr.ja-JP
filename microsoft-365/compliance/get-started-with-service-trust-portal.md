@@ -14,12 +14,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Office 365、Azure、および Dynamics 365 Online の法令遵守レポートでは、サードパーティの監査を表示するために、Microsoft が顧客データを安全に保持する方法と、これらのオンラインサービスを使用する場合に ISO、HIPAA、NIST、FINRA、GDPR、および FedRAMP に準拠する方法について説明します。
-ms.openlocfilehash: d8347a20543664a1de86001709f068bf39b1cb5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596344"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073158"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal を使い始める
 
@@ -56,7 +56,7 @@ Service Trust Portal には、クラウドサービスおよびお客様のデ�
 
 サービス信頼ポータルの機能とコンテンツは、メインメニューからアクセスできます。
   
-![サービス信頼ポータルメニュー](media/STPMenus1.png)
+![サービス信頼ポータルメニュー](../media/STPMenus1.png)
 
 次のセクションでは、メインメニューの各項目について説明します。
   
@@ -100,7 +100,7 @@ Microsoft クラウドサービスに関する業界固有または地域固有�
 
 - **地域:** Microsoft クラウドサービスコンプライアンスに関して、さまざまな国のさまざまな法律に関する法的な意見を提供します。 特定の国には、オーストラリア、カナダ、チェコ共和国、デンマーク、ドイツ、ポーランド、ルーマニア、スペイン、英国が含まれます。
   
-### <a name="trust-center"></a>トラスト センター
+### <a name="trust-center"></a>セキュリティ センター
 
 Microsoft セキュリティ[センター](https://www.microsoft.com/trust-center)へのリンク。これにより、microsoft クラウドでのセキュリティ、コンプライアンス、およびプライバシーに関する詳細情報が提供されます。 これには、Microsoft クラウドサービスの機能に関する情報が含まれています。この情報には、GDPR の特定の要件に対応するために役立つドキュメント、GDPR のアカウンタビリティに役立つドキュメント、および技術および組織の測定基準についての理解を深めることができます。Microsoft は、GDPR をサポートするために実行しました。
   
@@ -126,13 +126,13 @@ Microsoft セキュリティ[センター](https://www.microsoft.com/trust-cente
 
 [サービス信頼ポータル] ページの右上隅にある虫眼鏡をクリックして、ボックスを展開し、検索語句を入力**して enter キーを**押します。 検索**ページが**表示されます。検索語が検索ボックスに表示され、下に表示されている検索結果が表示されます。
   
-![Service Trust Portal - フィルターを適用したドキュメントでの検索](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - フィルターを適用したドキュメントでの検索](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 既定では、th 検索はドキュメントの結果を返します。 ドロップダウンリストを使用して、表示されているドキュメントの一覧を絞り込むことにより、結果をフィルター処理することができます。 複数のフィルターを使用して、ドキュメントの一覧を絞り込むことができます。 フィルターには、特定のクラウドサービス、コンプライアンスのカテゴリ、セキュリティプラクティス、地域、業界などが含まれます。 ドキュメント名のリンクをクリックして、ドキュメントをダウンロードします。
   
 コンプライアンスマネージャーの評価からコントロールをリストするには、検索用語をクリックして、[**コンプライアンスマネージャー**] をクリックします。 検索結果には、評価が作成された日付、評価グループの名前、適用可能な Microsoft クラウドサービス、およびそのコントロールが Microsoft であるか顧客が管理されているかが表示されます。 コントロールの名前をクリックして、コンプライアンスマネージャーの評価でコントロールを表示します。
   
-![Service Trust Portal - コンプライアンス マネージャー コントロールでの検索](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - コンプライアンス マネージャー コントロールでの検索](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > Service Trust Portal のレポートとドキュメントは、発行後、または新しいバージョンのドキュメントが使用可能になるまで、少なくとも12か月間ダウンロードできます。
@@ -161,7 +161,7 @@ Starter pack は、特定の業界向けの Microsoft クラウドサービス�
 
 Service Trust Portal では、ページコンテンツを異なる言語で表示できます。 ページの言語を変更するには、ページの左下隅にある地球のアイコンをクリックして、任意の言語を選択します。 
   
-![Service Trust Portal - ローカライズされたコンテンツのオプション](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - ローカライズされたコンテンツのオプション](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>フィードバック
 
@@ -169,4 +169,4 @@ Service Trust Portal では、ページコンテンツを異なる言語で表�
   
 ぜひフィードバックをお寄せください。 ページの下部にある [フィードバック] ボタンをクリックして、お客様や製品の機能を向上させるためのご意見やご提案をお寄せください。
   
-![フィードバックの種類](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![フィードバックの種類](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

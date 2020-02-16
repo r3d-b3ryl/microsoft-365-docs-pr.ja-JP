@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601864"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071224"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>証券および Exchange のコミッション: 規制システムのコンプライアンスと整合性 (SCI)
 
@@ -73,8 +73,8 @@ SCI ルールは、そのような自己規制組織 (SROs) をストックお�
 - [Azure における金融サービス コンプライアンス](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft 金融サービス](https://aka.ms/FinServ-Compliance)
 - [Microsoft および SEC Rule 17a-4](offering-SEC-17a-4.md)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
 このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) ファイルをダウンロードできます。

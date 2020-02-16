@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: セキュリティ & コンプライアンスセンターでは、監査ログ検索機能を有効にすることができます。 変更した場合は、いつでもオフにすることができます。 監査ログ検索がオフになっている場合、管理者は、組織内のユーザーおよび管理者のアクティビティに対して Office 365 監査ログを検索することはできません。
-ms.openlocfilehash: dfa637bfe6df0e4643d96a921a604ea5d0deba9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4e5a8c3236da9d2cf6e9392b8a9a29d064b0ce0d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601371"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069434"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Office 365 監査ログの検索を有効または無効にする
 
 Office 365 監査ログの検索を開始する前に、自分 (または別の管理者) が監査ログを有効にする必要があります。 セキュリティ & コンプライアンスセンターで監査ログの検索が有効になっている場合、組織からのユーザーおよび管理者のアクティビティが監査ログに記録され、90日間保持されます。 ただし、監査ログデータを記録して保持したくない組織もあります。 または、サードパーティのセキュリティ情報およびイベント管理 (SIEM) アプリケーションを使用して、監査データにアクセスしている可能性があります。 そのような場合、グローバル管理者は Office 365 で監査ログの検索を無効にすることができます。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Office 365 組織で監査ログの検索をオンまたはオフにするには、Exchange Online の Audit Logs 役割が割り当てられている必要があります。 既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。 Office 365 のグローバル管理者は、Exchange Online の Organization Management 役割グループのメンバーです。 
     
@@ -53,7 +53,7 @@ Office 365 監査ログの検索を開始する前に、自分 (または別の�
 
 2. [**監査を有効にする] を**クリックします。
     
-    ![[監査を有効にする] をクリックします。](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![[監査を有効にする] をクリックします。](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     バナーが更新され、監査ログの準備が完了し、ユーザーと管理者のアクティビティを数時間で検索できるようになります。
     

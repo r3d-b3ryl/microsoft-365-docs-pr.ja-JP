@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、組織の人事 (HR) システムから Microsoft 365 に従業員データをインポートするためのデータコネクタをセットアップすることができます。 これにより、社内リスク管理ポリシーの人事データを使用して、組織に内部の脅威をもたらす可能性がある特定のユーザーによるアクティビティを検出することができます。
-ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862037"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073033"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>HR データをインポートするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターでデータコネクタをセットアップして、従業員が resignation を提出した日付、従業員の最終日の日付などの人事データをインポートすることができます。 この人事データは、新しい[insider リスク管理ソリューション](insider-risk-management.md)などの Microsoft 情報保護ソリューションによって使用され、組織内の悪意のあるアクティビティやデータの盗難から組織を保護するのに役立ちます。 HR コネクタの設定では、コネクタによる認証に使用される Azure Active Directory でアプリを作成し、人事データを含む CSV マッピングファイルを作成し、コンプライアンスセンターでデータコネクタを作成してから、スクリプトを実行します (スケジュールされた基準) は、CSV ファイル内の人事データを Microsoft クラウドに ingests します。 その後、データコネクタは microsoft のコンプライアンスソリューション (insider リスク管理など) を使用して、Microsoft 365 組織にインポートされた人事データにアクセスします。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 組織は、Office 365 インポートサービスが組織内のデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3で HR コネクタを正常に作成するには、この手順を完了する必要があります。
 
@@ -86,7 +86,7 @@ CSV ファイルの最初の行、つまりヘッダー行には、必要な列�
 
 5. [**ファイルマッピング**] ページで、3つの列ヘッダー名を入力します (それぞれのボックスに、手順2で作成した CSV ファイルの*パラメーター*とも呼ばれます)。 名前の大文字と小文字は区別されません。 前述のように、これらのボックスに入力する名前は、CSV ファイルのパラメーター名と一致している必要があります。 たとえば、次のスクリーンショットは、手順2に示すサンプル CSV ファイルの例のパラメータ名を示しています。
 
-   ![CSV ファイル内の列見出し名が一致する](media/HRConnectorWizard3.png)
+   ![CSV ファイル内の列見出し名が一致する](../media/HRConnectorWizard3.png)
 
 6. [**レビュー** ] ページで、設定を確認し、[**完了**] をクリックしてコネクタを作成します。
 
@@ -98,7 +98,7 @@ CSV ファイルの最初の行、つまりヘッダー行には、必要な列�
 
 8. 作成した HR コネクタをクリックすると、フライアウトページが表示され、コネクタに関するプロパティやその他の情報が表示されます。 
 
-   ![新しい HR コネクタのフライアウトページ](media/HRConnectorWizard7.png)
+   ![新しい HR コネクタのフライアウトページ](../media/HRConnectorWizard7.png)
 
    まだ実行していない場合は、 **Azure アプリケーション id**と**コネクタジョブ ID**の値をコピーできます。 次の手順でスクリプトを実行するには、これらが必要になります。 また、スクリプトは、フライアウトページからダウンロードすることもできます (または、次の手順のリンクを使用してダウンロードすることもできます)。
 
@@ -153,11 +153,11 @@ HR コネクタを作成し、人事データをアップロードするスク�
 
 2. [**コネクタ**] タブをクリックし、[HR] コネクタを選択して、コネクタに関するプロパティと情報を含むフライアウトページを表示します。
 
-   ![プロパティと状態を含む HR コネクタのポップアップページ](media/HRConnectorFlyout1.png)
+   ![プロパティと状態を含む HR コネクタのポップアップページ](../media/HRConnectorFlyout1.png)
 
 3. [**進行状況**] で、[**ログのダウンロード**] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、スクリプトが実行されるたびに関する情報が含まれ、CSV ファイルのデータを Microsoft クラウドにアップロードします。 
 
-   ![HR コネクタログファイルアップロードされた CSV ファイルの行数を表示します。](media/HRConnectorLogFile.png)
+   ![HR コネクタログファイルアップロードされた CSV ファイルの行数を表示します。](../media/HRConnectorLogFile.png)
 
    [**レコードの保存**] フィールドは、アップロードされた CSV ファイルの行数を示します。 たとえば、CSV ファイルに4つの行が含まれている場合、スクリプトによって CSV ファイル内のすべての行が正常にアップロードされた場合、[**レコードの保存**] フィールドの値は4になります。
 
@@ -193,7 +193,7 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
 7. [ **Actions** ] タブを選択し、[**新規**] をクリックして、次の操作を行います。
 
-   ![HR connector スクリプトの新しいスケジュールされたタスクを作成するためのアクションの設定](media/HRConnectorScheduleTask1.png)
+   ![HR connector スクリプトの新しいスケジュールされたタスクを作成するためのアクションの設定](../media/HRConnectorScheduleTask1.png)
 
    a.  [**アクション**] ドロップダウンリストで、[**プログラムの開始**] が選択されていることを確認してください。
 
@@ -209,7 +209,7 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
    タスクスケジューラライブラリに新しいタスクが表示されます。
 
-   ![タスクスケジューラライブラリに新しいタスクが表示されます。](media/HRConnectorTaskSchedulerLibrary.png)
+   ![タスクスケジューラライブラリに新しいタスクが表示されます。](../media/HRConnectorTaskSchedulerLibrary.png)
 
    前回スクリプトが実行された日時と、次回の実行スケジュールが表示されます。 タスクをダブルクリックすると、そのタスクを編集できます。
 

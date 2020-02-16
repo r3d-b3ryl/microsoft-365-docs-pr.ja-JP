@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Office 365 のメールボックスの回復可能なアイテムフォルダーのサイズを大きくするには、アーカイブメールボックスを有効にして、自動拡張アーカイブをオンにします。 '
-ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597934"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072928"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 
@@ -96,15 +96,15 @@ EAC または Exchange Online の PowerShell を使用して、アイテム保�
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>EAC を使用してアイテム保持ポリシーを作成する
   
-1. EAC で、[**コンプライアンス管理** \> ] [**アイテム保持ポリシー**] の順に移動し](media/ITPro-EAC-AddIcon.gif)、 **[追加] アイコンをクリック** ![します。
+1. EAC で、[**コンプライアンス管理** \> ] [**アイテム保持ポリシー**] の順に移動し](../media/ITPro-EAC-AddIcon.gif)、 **[追加] アイコンをクリック** ![します。
     
 2. **[新しい保持ポリシー]** ページの **[名前]** に、アイテム保持ポリシーの目的を説明する名前 (例: **MRM Policy for Mailboxes on Hold**) を入力します。  
     
-3. [**保持タグ**] で、[追加](media/ITPro-EAC-AddIcon.gif)] アイコン**をクリックし** ![ます。
+3. [**保持タグ**] で、[追加](../media/ITPro-EAC-AddIcon.gif)] アイコン**をクリックし** ![ます。
     
 4. 保持タグの一覧で、手順 1 で作成した回復可能なアイテムの RPT を選択し、**[追加]** をクリックします。
     
-    ![カスタムの [回復可能なアイテム] 保持タグを選択する](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![カスタムの [回復可能なアイテム] 保持タグを選択する](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. アイテム保持ポリシーに追加する保持タグを選択します。たとえば、Default MRM Policy に含まれているのと同じタグを追加します。
     
@@ -114,7 +114,7 @@ EAC または Exchange Online の PowerShell を使用して、アイテム保�
     
     アイテム保持ポリシーにリンクされている保持タグが詳細ウィンドウに表示されることに注目してください。
     
-    ![アイテム保持ポリシーにリンクした保持タグが詳細ウィンドウに表示される](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![アイテム保持ポリシーにリンクした保持タグが詳細ウィンドウに表示される](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Exchange Online の PowerShell を使用してアイテム保持ポリシーを作成する
   
@@ -139,7 +139,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
   
 1. **[受信者]** \> **[メールボックス]** に移動します。
     
-2. リストビューで、アイテム保持ポリシーを適用するメールボックスを選択し、[編集アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)の**編集** ![] をクリックします。
+2. リストビューで、アイテム保持ポリシーを適用するメールボックスを選択し、[編集アイコン](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)の**編集** ![] をクリックします。
     
 3. **[ユーザー メールボックス]** ページで、**[メールボックスの機能]** をクリックします。
     

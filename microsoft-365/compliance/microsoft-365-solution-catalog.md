@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41891980"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071358"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューションカタログ
 
@@ -30,17 +30,17 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 ソリューションカタログは、Microsoft 365 サブスクリプションで利用可能な各コンプライアンスソリューションの情報カードを含むセクションに分かれています。 各セクションには、コンプライアンス領域によってグループ化されたソリューションのカードが含まれています。
 
-![Microsoft 365 ソリューションカタログのホームページ](media/m365-solution-catalog-home.png)
+![Microsoft 365 ソリューションカタログのホームページ](../media/m365-solution-catalog-home.png)
 
 [ソリューションカードの**表示**] を選択すると、コンプライアンスソリューションに関する詳細な情報と、開始する方法が表示されます。 この情報には、概要、構成前の要件、学習リソース、カードをナビゲーションウィンドウにピン留めするためのコントロール、およびそのソリューションをリンク、電子メール、または Microsoft Teams メッセージとして共有するオプションが含まれています。
 
-![Microsoft 365 コミュニケーションコンプライアンスソリューション](media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365 コミュニケーションコンプライアンスソリューション](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>情報保護 & ガバナンスセクション
 
 「 **Information protection & ガバナンス**」のセクションでは、Microsoft 365 コンプライアンスソリューションを使用して組織内のデータを保護および管理する方法について概要を示します。
 
-![Microsoft 365 solution catalog information protection and ガバナンスセクション](media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 solution catalog information protection and ガバナンスセクション](../media/m365-solution-catalog-information-protection-governance.png)
 
 ここから、次のソリューションのカードが表示されます。
 
@@ -53,7 +53,7 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 ホームページの [ **Insider リスク管理**] セクションには、組織が内部リスクを特定、分析、アクションを実行して問題を引き起こす可能性があることが一目でわかるように表示されます。
 
-![Microsoft 365 solution catalog insider リスク管理セクション](media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft 365 solution catalog insider リスク管理セクション](../media/m365-solution-catalog-insider-risk-management.png)
 
 ここから、次のソリューションのカードが表示されます。
 
@@ -64,7 +64,7 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 ホームページの [**探索 & の応答**] セクションでは、組織が関連するデータに関するコンプライアンスの問題をすばやく見つけ、調査し、対応する方法がひとめでわかります。
 
-![Microsoft 365 solution catalog の検出と応答のセクション](media/m365-solution-catalog-discovery-response.png)
+![Microsoft 365 solution catalog の検出と応答のセクション](../media/m365-solution-catalog-discovery-response.png)
 
 ここから、次のソリューションのカードが表示されます。
 

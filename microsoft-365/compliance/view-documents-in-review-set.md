@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: cde55f9dd3a1a9aacc48ba816cd0ef00472dad56
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5636e2e6186107bee3a0116d203910bc7b766990
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661743"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069034"
 ---
 # <a name="view-documents-in-a-review-set"></a>レビュー セット内のドキュメントを表示する
 
@@ -36,14 +36,14 @@ ms.locfileid: "41661743"
 このパネルは、ドキュメントに関連付けられているさまざまなメタデータを表示するために、オン/オフを切り替えることができます。 検索結果グリッドをカスタマイズして特定のメタデータを表示することはできますが、データを確認する間、水平方向にスクロールするのが困難な場合があります。 [ファイルメタデータ] パネルを使用すると、ユーザーはビューアー内のビューを切り替えることができます。
 
 ![ファイルのメタデータパネル
-](media/Reviewimage2.png)
+](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>ネイティブビュー
 
 ネイティブビューアーは、ドキュメントの最も豊富なビューを表示します。 数百のファイルの種類をサポートしており、できる限りの、ネイティブの環境を表示することを目的としています。 Microsoft Office ファイルの場合、viewer は Office アプリの web 版を使用して、ドキュメントコメント、Excel の数式、非表示の行/列、PowerPoint メモなどのコンテンツを表示します。
 
 ![ネイティブビュー
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>テキストビュー
 
@@ -56,10 +56,10 @@ ms.locfileid: "41661743"
   - Diff ビューは、重複するドキュメントを表示するときにテキストの違いを強調表示する比較ビューを提供します。
 
 ![テキストビュー
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 ![相違ビュー
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>ビューに注釈を付ける
 
@@ -86,7 +86,7 @@ ms.locfileid: "41661743"
   - 検索-ユーザーはドキュメント内で検索し、ドキュメント内のさまざまなヒットに移動できます。
     
     ![ビューに注釈を付ける
-    ](media/Reviewimage1.png)
+    ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>ダッシュボードビュー 
 ダッシュボードビューを使用すると、検索結果グリッドのデータを視覚化して要約することができます。 このビューでは、ユーザー設定のウィジェットを作成して、校閲とレポート作成を直観的かつ簡単に行うことができます。 ウィジェットを作成したら、それらを操作してアイテム数を取得したり、検索を作成したりすることができます。 

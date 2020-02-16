@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fdde59b04c7f52f163028aa7ba4759e226fccb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602454"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071284"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食品および医薬品管理の CFR Title 21 パート11
 
@@ -50,9 +50,10 @@ FDA CFR Title 21 の展開を促進する方法について説明します。 [A
 CFR Title 21 Part 11 に準拠する証明書はありませんが、次の Microsoft enterprise cloud サービスは、独立したサードパーティの監査に参加しており、お客様のコンプライアンスの取り組みに役立てることができます。 これらのサービスは次のとおりです。
 
 - Azure: クラウドサービス、ストレージ、トラフィックマネージャー、仮想マシン、および仮想ネットワーク
+- Azure DevOps
 - Intune
 - [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 および Office 365 米国政府
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -94,6 +95,6 @@ Microsoft は、そのエンタープライズクラウドサービスが、管�
 - [Microsoft Cloud for Government](https://aka.ms/govt-cloud)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
 このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f43510d0055a487cf1ee00e799a7244114016384
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f10995e5180afc0d8aa7de2b2fdb8040f0f838ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582906"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072014"
 ---
 # <a name="manage-hold-notifications"></a>保留通知を管理する
 
@@ -64,7 +64,7 @@ ms.locfileid: "41582906"
 2. ケースを選択したら、[**通信**] タブに移動します。
 3. 更新するホールド通知を選択し、[**編集**] をクリックします。
 4. 編集ワークフローで、[**ポータルコンテンツを定義**する] を選択し、通知の内容を更新します。 
-5. [**保存**] をクリックします。 保存された後、法的情報保留通知に対して現在割り当てられているすべての保管担当者に再発行通知が送信されます。 また、アラーム/エスカレーションの通知が有効になっている場合は、これらのワークフローも再起動されます。 
+5. **[保存]** をクリックします。 保存された後、法的情報保留通知に対して現在割り当てられているすべての保管担当者に再発行通知が送信されます。 また、アラーム/エスカレーションの通知が有効になっている場合は、これらのワークフローも再起動されます。 
 
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>法的情報保留通知と設定を更新する

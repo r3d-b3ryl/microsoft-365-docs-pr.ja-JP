@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の高度な電子情報開示の新バージョンについて説明します。
-ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662013"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071058"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションの概要
 
@@ -31,7 +31,7 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 
 高度な電子情報開示の組み込みワークフローは、電子情報開示参照モデル (EDRM) によって規定された電子情報開示プロセスと連携しています。 
 
-![電子情報開示参照モデル (EDRM)](media/EDRMv1.png)
+![電子情報開示参照モデル (EDRM)](../media/EDRMv1.png)
 
 (画像ソース edrm.net の特例)。 ソースイメージは、Creative Commons 属性3.0 の非移植ライセンスで利用可能になっています。)
 
@@ -57,7 +57,7 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 
 詳細な電子情報開示でのエンドツーエンドワークフローの詳細については、 [Microsoft の技術](https://go.microsoft.com/fwlink/?linkid=2066133)情報のビデオを参照してください。 
 
-![上級電子情報開示のタブは EDRM ワークフローに従います。](media/aedisco-homepage-1.png)
+![上級電子情報開示のタブは EDRM ワークフローに従います。](../media/aedisco-homepage-1.png)
 
 ## <a name="managing-custodians"></a>カストディアンを管理する
 

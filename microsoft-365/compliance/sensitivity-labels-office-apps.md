@@ -1,5 +1,5 @@
 ---
-title: Office アプリの機密ラベル
+title: Office アプリで機密ラベルを使用する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,23 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、および web 用 Office アプリの機密ラベルを使用して作業する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
+ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855346"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069864"
 ---
-# <a name="sensitivity-labels-in-office-apps"></a>Office アプリの機密ラベル
+# <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで機密ラベルを使用する
 
-この記事の内容
+Microsoft 365 コンプライアンスセンターまたは同等のラベル付けセンターから機密ラベルが公開されている場合は、作成または編集時にデータを分類して保護するために、ユーザーが Office アプリに表示され始めます。
 
-- メール、ファイル、および添付ファイルに機密ラベルを適用する前の環境の要件。
-- 各 Office アプリでサポートされている機密ラベル機能。
-- Office アプリで動作する他の Microsoft セキュリティおよびコンプライアンステクノロジとの機密ラベルを結合すると、どうなりますか。
-- 組織内のユーザーが、Windows 用の Office アプリと web 用の Office アプリを使用する際に、機密ラベルをどのように使用できるようにします。
-- 組織内のユーザーが機密ラベルの使用を開始する際に役立つその他のリソースです。
+この記事に記載されている情報を使用して、Office アプリの機密ラベルを適切に管理することができます。 たとえば、組み込みのラベル付けをサポートするために必要な最低限のバージョンのアプリ、Azure Information Protection の統一されたラベル付きクライアントとの相互作用、および他のアプリやサービスとの互換性があります。
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>秘密度ラベルのサブスクリプションとライセンスの要件
 
@@ -70,7 +66,7 @@ Windows コンピューター上でのみ実行される Azure Information Prote
 |[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト            | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト        | レビュー   | レビュー         | レビュー                                                        |
+|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | プレビュー: [Office Insider](https://office.com/insider)            | プレビュー: [Office Insider](https://office.com/insider)        | レビュー   | レビュー         | レビュー                                                        |
 |[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)                                  | レビュー | レビュー | レビュー | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -93,7 +89,7 @@ Windows コンピューター上でのみ実行される Azure Information Prote
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト                       | レビュー                    | レビュー           | レビュー               | はい |
 |
 
-## <a name="about-the-office-built-in-labeling-client"></a>Office の組み込みラベルクライアントについて
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベルクライアントと Azure Information Protection クライアント
 
 Office 組み込みのラベルクライアントは、次の管理センターから、機密ラベルと機密ラベルポリシー設定をダウンロードします。
 
@@ -127,21 +123,24 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ユーザーは、ドキュメントまたは電子メールごとに、一度に1つのラベルだけを適用できます。
 
-添付ファイルを含む電子メールメッセージにラベルを付けると、添付ファイルはラベルを継承しません。 添付ファイルにラベルが付けられている場合は、ラベルを個別に適用したままにします。 添付ファイルにラベルが付いていない場合、添付ファイルはラベルなしで保持されます。 ただし、メールのラベルが保護されている場合、その保護は Office の添付ファイルに適用されます。
+添付ファイルを含む電子メールメッセージにラベルを付けると、添付ファイルはラベルを継承しません。
+
+- 添付ファイルにラベルがある場合は、ラベルを個別に適用したままにします。
+- 添付ファイルにラベルが付いていない場合、添付ファイルはラベルなしで保持されます。 ただし、メールのラベルが保護されている場合、その保護は Office の添付ファイルに適用されます。
 
 ## <a name="sensitivity-label-compatibility"></a>機密ラベルの互換性
 
-**なりアプリを使用**します。 機密ラベルをサポートしていない[なりアプリケーション](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)で、ラベル付きの_暗号化さ_れたドキュメントまたは電子メールを開くと、アプリは依然として暗号化と権限の管理を適用します。
+**Rms-なりアプリ**の場合: 機密ラベルをサポートしていない[rms なりアプリケーション](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)で、ラベル付きの暗号化されたドキュメントまたは電子メールを開くと、そのアプリは暗号化と権限の管理を引き続き適用します。
 
-**Azure Information Protection クライアントを使用**します。 Azure Information Protection クライアントを使用して Office 組み込みのラベル付けクライアントを使用して、ドキュメントや電子メールに適用する機密ラベルを表示および変更することができます。
+**Azure Information protection クライアントを使用**すると、ドキュメントやメールに適用する機密ラベルを、Azure information protection クライアントを使用して Office 組み込みのラベルクライアントを使用して表示および変更できます。また、その他の方法もあります。
 
-**他のバージョンの Office で使用**します。 承認されたユーザーは、他のバージョンの Office でラベル付きドキュメントとメールを開くことができます。 ただし、サポートされている Office バージョンまたは Azure Information Protection クライアントでのみ、ラベルを表示または変更できます。 サポートされている Office アプリのバージョンは、この記事の表に記載されています。
+**他のバージョンの office**の場合: 承認されたユーザーは、他のバージョンの office でラベル付きドキュメントとメールを開くことができます。 ただし、サポートされている Office バージョンまたは Azure Information Protection クライアントを使用してのみ、ラベルを表示または変更できます。 サポートされている Office アプリのバージョンは、[前のセクション](#support-for-sensitivity-label-capabilities-in-apps)に一覧表示されています。
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>機密ラベルで保護された SharePoint および OneDrive ファイルのサポート
 
-Web 上の office に Office の組み込みラベルクライアントを使用するには、ドキュメントを OneDrive for Business または SharePoint Online のインスタンスに配置し、 [sharepoint および OneDrive で office ファイルの機密ラベルを有効](sensitivity-labels-sharepoint-onedrive-files.md)にする必要があります。
+OneDrive for business または SharePoint Online のドキュメントに対して web 上の office に office の組み込みラベルクライアントを使用するには、[プレビュー] をオンにして、 [sharepoint および onedrive で office ファイルの機密ラベルを有効](sensitivity-labels-sharepoint-onedrive-files.md)にしていることを確認してください。
 
-## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>Office 365 がコンテンツにコンテンツマーキングと暗号化を適用する
+## <a name="when-office-365-applies-content-marking-and-encryption"></a>Office 365 がコンテンツマーキングと暗号化を適用する場合
 
 Office 365 では、使用しているアプリによって、機密ラベル付きのコンテンツマーキングと暗号化が異なる方法で適用されます。
 
@@ -152,7 +151,7 @@ Office 365 では、使用しているアプリによって、機密ラベル付
 | Outlook on the web、iOS、および Android | Exchange Online が電子メールを送信した後 | Exchange Online が電子メールを送信した後 |
 |
 
-## <a name="more-resources"></a>その他のリソース
+## <a name="end-user-documentation"></a>エンドユーザードキュメント
 
 - [Office 内の文書やメールに機密ラベルを適用する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0da96fe4148ffc30ac8e2f7854157675786cd321
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582876"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072755"
 ---
 # <a name="insider-risk-management-in-microsoft-365-preview"></a>Microsoft 365 の Insider リスク管理 (プレビュー)
 
@@ -56,7 +56,7 @@ Insider のリスク管理は、組織内の内部リスクに対処するため
 
 Microsoft 365 での内部リスクアクティビティおよび insider リスク管理に関するコンプライアンスの問題を特定して解決するには、次のワークフローを使用します。
 
-![Insider リスク管理ワークフロー](media/insider-risk-workflow.png)
+![Insider リスク管理ワークフロー](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>ポリシー
 
@@ -70,7 +70,7 @@ Microsoft 365 での内部リスクアクティビティおよび insider リス
 
 詳細については、「 [Insider リスク管理ポリシー](insider-risk-management-policies.md)」を参照してください。
 
-![Insider リスク管理ポリシーダッシュボード](media/insider-risk-policy-dashboard.png)
+![Insider リスク管理ポリシーダッシュボード](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>アラート
 
@@ -84,7 +84,7 @@ Microsoft 365 での内部リスクアクティビティおよび insider リス
 
 詳細については、「 [Insider リスク管理の警告](insider-risk-management-alerts.md)」を参照してください。
 
-![Insider リスク管理アラートダッシュボード](media/insider-risk-alerts-dashboard.png)
+![Insider リスク管理アラートダッシュボード](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>度
 
@@ -92,7 +92,7 @@ Microsoft 365 での内部リスクアクティビティおよび insider リス
 
 アラートは、新しいケースを開いたり、既存のケースに警告を割り当てたり、警告を無視したりすることによって解決されます。 アラートフィルターを使用すると、状態、重大度、検出された時間でアラートをすばやく簡単に識別できます。 トリアージプロセスの一環として、レビューアーは、ポリシー一致のアラート詳細の表示、一致に関連付けられたユーザーアクティビティの表示、アラートの重要度の確認、およびユーザープロファイル情報の確認を行うことができます。
 
-![Insider リスク管理の優先順位付け](media/insider-risk-triage.png)
+![Insider リスク管理の優先順位付け](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>検査
 
@@ -106,7 +106,7 @@ Microsoft 365 での内部リスクアクティビティおよび insider リス
 
 詳細については、「 [Insider リスク管理ケース](insider-risk-management-cases.md)」を参照してください。
 
-![Insider リスク管理の調査](media/insider-risk-investigate.png)
+![Insider リスク管理の調査](../media/insider-risk-investigate.png)
 
 ### <a name="action"></a>Action
 

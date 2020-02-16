@@ -20,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、Office 365 監査ログで共有監査を使用して、組織外のユーザーと共有しているリソースを識別できるようになりました。 '
-ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597284"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069241"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>共有を監査して外部ユーザーと共有されているリソースを見つける
 
@@ -99,13 +99,13 @@ ms.locfileid: "41597284"
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
-3. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**検索**  > **監査ログの検索**] をクリックします。
+3. セキュリティ/コンプライアンス センターの左側のウィンドウで、[**検索**]   >  [**監査ログの検索**] の順にクリックします。
     
     [**監査ログの検索**] ページが表示されます。 
     
 4. [**アクティビティ**] の下の [**共有とアクセス要求アクティビティ**] をクリックして、共有関連イベントを検索します。 
     
-    ![[アクティビティ] の下で、[共有とアクセスの要求のアクティビティ] を選択します。](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![[アクティビティ] の下で、[共有とアクセスの要求のアクティビティ] を選択します。](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  日付と時刻の範囲を選択して、その期間内に発生した共有イベントを検索します。 
     

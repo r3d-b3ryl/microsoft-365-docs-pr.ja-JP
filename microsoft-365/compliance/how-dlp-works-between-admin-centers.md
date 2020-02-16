@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: セキュリティ & コンプライアンスセンターの DLP が、Exchange 管理センターの DLP およびメールフロールール (トランスポートルール) とどのように連動するかについて説明します。
-ms.openlocfilehash: a491317727cce571f0f9e1c527557595f6adf7b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82b3d371303b647488c08416c5392d006c81e479
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596514"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073070"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
 
@@ -34,7 +34,7 @@ Office 365 では、2つの異なる管理センターでデータ損失防止 (
     
 これらの管理センターで作成された DLP ポリシーは、並行して機能します。このトピックでは、その方法について説明します。
   
-![セキュリティ/コンプライアンスセンターと Exchange 管理センターの DLP ページ](media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![セキュリティ/コンプライアンスセンターと Exchange 管理センターの DLP ページ](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Exchange 管理センターでのセキュリティ & コンプライアンスセンターの DLP とメールフロールールの動作
 

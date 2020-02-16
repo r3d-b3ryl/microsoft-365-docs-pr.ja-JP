@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: この洞察を重視する推奨事項は、組織が DLP ポリシーの範囲内に潜在的なギャップがある場合に通知することによって、Office 365 で機密コンテンツを保存および共有する際に、機密コンテンツを安全に保持するのに役に立ちます。 ドキュメントに上位5つの最も一般的な種類の機密&amp;情報が含まれていても、DLP ポリシーによって保護されていない場合は、セキュリティコンプライアンスセンターのホームページにこの推奨事項が表示されます。
-ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596354"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073215"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>DLP のポリシー勧告を見る
 
@@ -26,7 +26,7 @@ ms.locfileid: "41596354"
   
 このウィジェットを使用すると、クリックまたは2つのカスタマイズされた DLP ポリシーをすばやく作成できます。この DLP ポリシーを作成すると、完全にカスタマイズできるようになります。 最初に推奨事項が表示されない場合は、[**推奨する**方法] セクションの下部にある [ **+ More** ] をクリックしてください。 
   
-![保護されていない機密情報という名前のウィジェット](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![保護されていない機密情報という名前のウィジェット](../media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
 ## <a name="create-the-recommended-dlp-policy"></a>推奨の DLP ポリシーを作成する
 
@@ -48,7 +48,7 @@ DLP ポリシーを選択することもできます。
     
 これらのオプションを後で変更する場合は、作成後に DLP ポリシーを編集できます。 たとえば、最初の場所に機密情報が含まれるコンテンツの共有をブロックすることで、ポリシーの制限を高めることができます。次のセクションを参照してください。
   
-![保護されていない機密情報という名前のウィジェットの設定](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![保護されていない機密情報という名前のウィジェットの設定](../media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## <a name="edit-the-recommended-dlp-policy"></a>推奨の DLP ポリシーを編集する
 
@@ -56,7 +56,7 @@ DLP ポリシーを選択することもできます。
   
 既定では、**機密情報を共有するためのシステム推奨ポリシー**という名前のポリシーです。 このポリシーは完全にカスタマイズ可能ですが、最初から自分で作成した DLP ポリシーと同じです。 たとえば、ウィジェットを使用したときにインシデントレポートとポリシーヒントを有効にしないことにした場合は、いつでもポリシーを編集してこれらのオプションを有効にすることができます。
   
-![機密情報を共有するためのシステム推奨ポリシー](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![機密情報を共有するためのシステム推奨ポリシー](../media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>ウィジェットが表示されない場合
 

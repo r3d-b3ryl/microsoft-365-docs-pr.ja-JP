@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 コンプライアンスセンターに新機能を継続的に追加し、学習した問題を修正し、フィードバックに基づいて変更を加えています。 今月の内容を確認してください。
-ms.openlocfilehash: 2ec046b6b5aa78e5eb44bbe6eebff222752f9c18
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: c3537657eb0bd3bf5b31f1b90c513c3e49eef000
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774203"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068707"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの新機能
 
@@ -32,11 +32,71 @@ ms.locfileid: "41774203"
 > 他の管理センターでは何が起こっているのでしょうか。 次の記事をご覧ください。<br>[Microsoft 365 管理センターの新機能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 また、 [microsoft 365 ロードマップ](https://www.microsoft.com/en-us/microsoft-365/roadmap)を参照して、起動された、展開中の、開発中である、キャンセルされた、または既にリリースされた microsoft 365 の機能について説明します。
 
+## <a name="january-2020"></a>2020 年 1 月
+
+待機が終了しています。 Microsoft 365 コンプライアンスセンターは、Microsoft 365、Office 365、Enterprise Mobility + Security (EMS)、および Windows 10 Enterprise プランを使用しているすべてのお客様が利用できることを嬉しくお勧めいたします。 Office 365 セキュリティ & コンプライアンスセンターで管理していたすべてのデータやポリシーは、コンプライアンスセンターで利用できます。そのため、前後に移動する必要はありません。
+
+> [!TIP]
+> 最近お客様に表示した[新しいソリューション](#new-compliance-solutions)の一部、および Office 365 セキュリティ & コンプライアンスセンターからのコンプライアンス機能が Microsoft 365 で有効になっていることを示す[ロードマップ](#updated-compliance-solutions)については、先月の「更新」を参照してください。
+
+組織全体にわたるコンプライアンスを[https://compliance.microsoft.com](https://compliance.microsoft.com)管理するためのワンストップショップのツアーを開始するには、今すぐにブックマークを作成してください。詳細については、[この記事を参照](microsoft-365-compliance-center.md)してください。
+
+![Microsoft 365 コンプライアンスセンターのホームページ](../media/mcc-home-ga.png)
+
+また、今月の新規および更新されたソリューションもリリースしました。 強調表示の概要は次のとおりです。
+
+### <a name="now-in-preview"></a>現在はプレビュー
+
+**Insider リスク管理 (プレビュー)**
+
+これで、insider のリスク管理ソリューションが公開プレビューであることがわかります。 簡単に言うと、insider リスク管理は、次のような情報を提供することで、組織がインテリジェントに内部のリスクを特定し、アクションを実行できるようにします。
+
+- ユーザーのプライバシーを確保するための匿名性制御。
+- 内部の脅威 (データリークなど) を識別するネイティブおよびサードパーティの指標を使用したインテリジェントポリシーテンプレート。
+- IT、人事、および法務チーム全体にわたる、統合されたエンドツーエンドの調査ワークフロー。
+
+ご感想をお聞かせください。 ソリューションを使用している間に、フィードバックをお寄せください。これにより、一般的な可用性に至るまでのニーズを満たすことができるようになります。
+
+[Insider リスク管理の詳細情報](insider-risk-management.md)
+
+### <a name="just-launched"></a>開始したばかり
+
+**通信コンプライアンス**
+
+Graduating は、プレビュー段階から完全な可用性まで、コミュニケーションコンプライアンスは新しい insider リスクソリューションセットの主要なコンポーネントです。 この堅牢なソリューションにより、組織の標準に準拠していないメッセージの検出、調査、修復処理を行うためのワークフローを使用して、コミュニケーションリスクを最小限に抑えることができます。
+
+プレビュー中のお客様からのフィードバックはすばらしいものでした。 開始、調査、修復処理の改善など、いくつかの機能強化が行われています。
+
+[通信のコンプライアンスに関する詳細情報](communication-compliance.md)
+
+![Microsoft 365 コンプライアンスセンターの [通信コンプライアンス] ページで、最初のカードの案内画面が表示されている](../media/mcc-communication-compliance-page-with-fre.png)
+
+**データコネクタ**
+
+以前は、Office 365 セキュリティ & コンプライアンスセンターの他の「インポート」機能とのスペースを共有しています。データコネクタは、Microsoft 365 コンプライアンスセンターで独自のホームになっています。 新しい [データコネクタ] ページを使用して、組織の人事 (HR) ファイルと、さまざまなサードパーティ製プラットフォーム (Facebook、LinkedIn、Twitter、インスタント Bloomberg など) のデータを Microsoft 365 組織のメールボックスにインポートおよびアーカイブします。 インポートされると、このデータは、電子情報開示、insider リスク管理、コミュニケーションコンプライアンス、監査、アイテム保持ポリシーなどを含む、いくつかのコンプライアンスソリューションで管理できます。
+
+[データコネクタの詳細情報](archiving-third-party-data.md)
+
+![Microsoft 365 コンプライアンスセンターのデータコネクタページ](../media/mcc-data-connectors-page.png)
+
+### <a name="noteworthy-updates"></a>注目すべき更新プログラム
+
+**コンプライアンススコアの新しい評価テンプレート (プレビュー)**
+
+常に努力していくことにより、絶えず進化するコンプライアンスに役立てることができ、コンプライアンススコアチームは新しい一連のテンプレートを提供し、最近の規制に対する組織のコンプライアンスについて評価し、実装方法に関するガイダンスを得ることができます。より効果的なコントロール。 次の新しいテンプレートが表示られるようになります。
+
+- ISO/IEC 27701:2019
+- カリフォルニア州消費者プライバシー法 (CCPA)
+- ブラジルの一般データ保護法 (Lei Geral de Proteção de Dados-LGPD)
+- SOC 1 タイプ2および SOC 2 タイプ2
+
+[コンプライアンススコアテンプレートの詳細情報](compliance-score.md#templates)
+
 ## <a name="november--december-2019"></a>2019年12月 &
 
 休日に加えて、Ignite でデモされていたすべての高度なコンプライアンスソリューションのロールアウトを開始しました。 ほとんどはプレビュー状態であるため、それをテストして、コンプライアンスセンターの右下でフィードバックカードを開いて、ご意見をお聞かせください。
 
-![feedback](media/Feedback_card_MCC.JPG)
+![feedback](../media/Feedback_card_MCC.JPG)
 
 ### <a name="get-to-know-the-new-neighborhood"></a>新しい近隣を理解する
 
@@ -74,7 +134,7 @@ ms.locfileid: "41774203"
 |ポリシーを通知する|通知 > 警告ポリシー <br/> https://protection.office.com/alertpolicies |現時点では、アラートポリシーは Office 365 セキュリティ & コンプライアンスセンターでのみ管理されます。 |[セキュリティ/コンプライアンスセンターのアラートポリシー](alert-policies.md) |
 |アラート|通知 > 表示する通知 <br/> https://protection.office.com/viewalerts |アラート <br/> https://compliance.microsoft.com/compliancealerts |[通知の表示](alert-policies.md#viewing-alerts)|
 |アーカイブ|情報ガバナンス > アーカイブ <br/> https://protection.office.com/archiving |情報ガバナンス > [アーカイブ] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)|
-|監査ログ検索|検索 > 監査ログの検索 <br/> https://protection.office.com/unifiedauditlog |現時点では、監査ログは Office 365 セキュリティ & コンプライアンスセンターからのみ検索できます。| [セキュリティ & コンプライアンスセンターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)|
+|監査ログ検索|検索 > 監査ログの検索 <br/> https://protection.office.com/unifiedauditlog |監査 <br/> https://compliance.microsoft.com/auditlogsearch| [セキュリティ & コンプライアンスセンターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)|
 |コンテンツ検索|検索 > コンテンツ検索 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | コンテンツ検索 <br/> https://compliance.microsoft.com/contentsearch |[Office 365 のコンテンツを検索する](search-for-content.md) |
 |データコネクタ|情報ガバナンス > サードパーティのデータをアーカイブする <br/> https://protection.office.com/nativeconnector | データコネクタ <br/> https://compliance.microsoft.com/connectorlanding |[サードパーティのデータをアーカイブする](archiving-third-party-data.md)|
 |データ損失防止|データ損失防止 <br/> https://protection.office.com/datalossprevention |データ損失防止 <br/> https://compliance.microsoft.com/datalossprevention |[データ損失防止の概要](data-loss-prevention-policies.md)|
@@ -84,10 +144,10 @@ ms.locfileid: "41774203"
 |ファイル計画|レコード管理 > ファイル計画 <br/> https://protection.office.com/fileplan |レコード管理 > ファイル計画] タブ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[ファイル計画マネージャーの概要](file-plan-manager.md)|
 |PST ファイルのインポート|情報ガバナンス > PST ファイルのインポート <br/> https://protection.office.com/importV2 |情報ガバナンス > インポート] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[組織の PST ファイルのインポートの概要](importing-pst-files-to-office-365.md)|
 |ラベルアクティビティエクスプローラー|情報ガバナンス > ラベルアクティビティエクスプローラー <br/> https://protection.office.com/labelexplorer |データ分類 > アクティビティエクスプローラータブ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[ラベル付きコンテンツのアクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)|
-|保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | 「[保持ラベルの概要](labels.md)」を参照してください。|
+|保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保持ラベルの概要](labels.md)|
 |保持ポリシー|情報ガバナンス > の保持 <br/> https://protection.office.com/retention |情報ガバナンス > [保持] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[アイテム保持ポリシーの概要](retention-policies.md)|
 |機密情報の種類|機密情報の種類 > 分類 <br/> https://protection.office.com/sensitivetypes |データ分類 > 機密情報の種類] タブ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)|
-|機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[機密ラベルの概要](sensitivity-labels.md) |
+|機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[機密ラベルについて](sensitivity-labels.md) |
 |サービス アシュアランス|サービス アシュアランス <br/> https://protection.office.com/serviceassurance/dashboard |現時点では、サービス保証のリソースには、Office 365 セキュリティ & コンプライアンスセンターのみがアクセスできます。 |[セキュリティ & コンプライアンスセンターのサービスアシュアランス](service-assurance.md)|
 |監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通信コンプライアンス <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 の通信コンプライアンス (プレビュー)](communication-compliance.md) |
 
@@ -124,4 +184,4 @@ ms.locfileid: "41774203"
 
 必要なレポートを見つけるために、大量のレポートをスクロールする必要はありません。 これで、(タイトルに基づいて) レポートを検索し、「ラベル」や「コンプライアンス」、「Office 365」や「Microsoft Cloud App Security」などのソースのカテゴリにフィルターを適用することができます。
 
-![適用されたフィルターを使用したレポートの検索とフィルターのボタンの画面キャプチャ](media/mcc_report_filtering.png)
+![適用されたフィルターを使用したレポートの検索とフィルターのボタンの画面キャプチャ](../media/mcc_report_filtering.png)

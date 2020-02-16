@@ -17,18 +17,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (FCI) の分類プロパティ、SharePoint のドキュメントプロパティ、またはドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既に存在します。サードパーティ製のシステムによって適用されます。 これが組織を説明している場合は、Office 365 で、Windows Server FCI または他のシステムによってドキュメントに適用されたプロパティを認識する DLP ポリシーを作成して、特定の FCI またはその他の Office ドキュメントに DLP ポリシーを適用できるようにすることができます。プロパティの値。
-ms.openlocfilehash: 1ae70571817de1df3a48b38a44da1ed1e3695750
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bfcbc30af3a3dac304dc57551e6246ec9e6554c0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597704"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070629"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
 Office 365 でデータ損失防止 (DLP) ポリシーを使用すると、機密情報の識別、監視、保護を行えます。多くの組織には、Windows Server ファイル分類インフラストラクチャ (FCI) の分類プロパティ、SharePoint のドキュメント プロパティ、またはサード パーティによって適用されたドキュメント プロパティを使用して機密情報を識別および分類するプロセスが既に存在します。ご自分の組織でもこの状況が当てはまる場合、Offce 365 で DLP ポリシーを作成できます。このポリシーは、Windows Server FCI または他のシステムによってドキュメントに適用されているプロパティを認識し、特定の FCI 値または他のプロパティ値が含まれる Office ドキュメントに DLP ポリシーを適用できるようにします。
   
-![Office 365 と外部の分類システムを示す図](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![Office 365 と外部の分類システムを示す図](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
 たとえば、組織において、Windows Server FCI を使用して社会保障番号などの個人情報 (PII) が含まれるドキュメントを識別し、ドキュメント内で検出された個人情報の種類と検出回数に基づいて [**個人情報**] プロパティを [**高**]、[**中**]、[**低**]、[**公開**]、または [**個人情報ではない**] に設定することによってドキュメントの分類を行っている場合があります。 Office 365 では、それらのプロパティが [**高**] や [**中**] などの特定の値に設定されているドキュメントを識別し、それらのファイルに対するアクセスをブロックするなどのアクションを実行する DLP ポリシーを作成できます。 プロパティが [**低**] に設定されている場合には (電子メールの通知送信などの) 異なるアクションを実行する別のルールを同じポリシーに含めることができます。 このようにして、Office 365 の DLP が Windows Server FCI と統合されており、Windows Server ベースのファイルサーバーから Office 365 にアップロードまたは共有される Office ドキュメントを保護するのに役立ちます。
   
@@ -58,11 +58,11 @@ DLP ポリシーで Windows Server FCI プロパティまたは他のプロパ�
     
 3. 左側のナビゲーションで、[検索**管理** \> ] ページ\>の **[検索] を選択し**ます。**検索スキーマを管理**します。
     
-    ![SharePoint 管理センターの検索管理ページ](media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+    ![SharePoint 管理センターの検索管理ページ](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
 4. [**管理プロパティ**] ページ\>で、**新しい管理プロパティを追加**します。
     
-    ![[新しい管理プロパティ] ボタンが強調表示されている[プロパティ管理] ページ](media/b161c764-414c-4037-83ed-503a49fb4410.png)
+    ![[新しい管理プロパティ] ボタンが強調表示されている[プロパティ管理] ページ](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
 5. プロパティの名前と説明を入力します。この名前が、DLP ポリシーに表示されます。
     
@@ -74,7 +74,7 @@ DLP ポリシーで Windows Server FCI プロパティまたは他のプロパ�
     
 9. [クロールされた**プロパティ**の\>選択] ダイアログボックスで、 \> **DLP ポリシーで**使用する Windows Server fci プロパティまたはその他のプロパティに対応するクロールされたプロパティを検索して選択します。
     
-    ![[クロールされたプロパティの選択] ダイアログ ボックス](media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+    ![[クロールされたプロパティの選択] ダイアログ ボックス](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
 10. ページ\>の下部にある **[OK] をクリック**します。
     
@@ -96,7 +96,7 @@ Condition**ドキュメントプロパティにこれらの値のいずれかが
   
 これらのコマンドレットの詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. を使用`New-DlpCompliancePolicy`してポリシーを作成します。
 
@@ -120,7 +120,7 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
   
 1 つのルールは、[**個人情報**] プロパティが [**高**] または [**中**] の場合にコンテンツへのアクセスをブロックします。 2 番目のルールは、[**個人情報**] プロパティが [**低**] の場合にコンテンツについて通知を送信します。
   
-![2 つのルールが作成されたことを示す[新しい DLP ポリシー] ダイアログ ボックス](media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![2 つのルールが作成されたことを示す[新しい DLP ポリシー] ダイアログ ボックス](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
   
 ## <a name="after-you-create-the-dlp-policy"></a>DLP ポリシーを作成した後に
 

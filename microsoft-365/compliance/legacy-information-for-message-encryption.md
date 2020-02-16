@@ -16,18 +16,18 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Office 365 組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「Office 365 Message Encryption」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
-ms.openlocfilehash: cb5315c99b586f250ecd2e5ee51ee6f4534e8bff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29bebb89bf8fcfed25e5348789d80d244a044b6f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585726"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072238"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
 Office 365 組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「 [Office 365 Message Encryption](ome.md)」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
   
-Office 365 メッセージの暗号化では、組織内のユーザーと外部のユーザーとの間で暗号化された電子メールメッセージの送受信を行うことができます。 Office 365 メッセージの暗号化は、Outlook.com、Yahoo、Gmail、その他の電子メールサービスで機能します。 電子メールメッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
+Office 365 Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。 Office 365 メッセージの暗号化は、Outlook.com、Yahoo、Gmail、その他の電子メールサービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
   
 次に例を示します。
   
@@ -53,19 +53,19 @@ Office 365 Message Encryption は、Microsoft Azure Rights Management (Azure RMS
   
 下の図は、暗号化と復号化のプロセスにおける電子メール メッセージの流れをまとめたものです。
   
-![暗号化された電子メールのパスを示す図](media/O365-Office365MessageEncryption-Concept.png)
+![暗号化された電子メールのパスを示す図](../media/O365-Office365MessageEncryption-Concept.png)
   
 詳細については、[新しい OME 機能のリリース前に、「従来の Office 365 Message Encryption のサービス情報](legacy-information-for-message-encryption.md#LegacyServiceInfo)」を参照してください。
   
 ## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>新しい OME 機能を使用しない Office 365 メッセージ暗号化のメールフロールールを定義する
 
-新しい機能を使用せずに Office 365 メッセージの暗号化を有効にするには、exchange Online および Exchange Online Protection 管理者が Exchange メールフロールールを定義します。 これらのルールは、電子メールメッセージを暗号化する条件、およびメッセージの暗号化を削除する条件を決定します。 ルールに対して暗号化アクションが設定されている場合、ルールの条件に一致するメッセージは、送信される前に暗号化されます。
+新しい機能を使用せずに Office 365 メッセージの暗号化を有効にするには、exchange Online および Exchange Online Protection 管理者が Exchange メールフロールールを定義します。 これらのルールは、電子メールメッセージを暗号化する条件、およびメッセージの暗号化を削除する条件を決定します。 暗号化アクションをルールで設定すると、そのルールの条件を満たすすべてのメッセージが送信前に暗号化されます。
   
-メールフロールールは柔軟性に富んでおり、条件を組み合わせて1つのルール内の特定のセキュリティ要件を満たすことができます。 たとえば、指定したキーワードを含むすべてのメッセージを暗号化するルールを作成し、外部の受信者に送信することができます。 Office 365 Message Encryption は、暗号化された電子メールの受信者からの返信を暗号化することもできます。また、電子メールユーザーにとって便利なように、これらの返信を復号化するルールを作成することができます。 このようにすると、組織内のユーザーは、返信を表示するために暗号化ポータルにサインインする必要がなくなります。
+メール フロー ルールは柔軟であるため条件を組み合わせることができ、1 つのルールで特定のセキュリティ要件を満たすことができます。 たとえば、指定したキーワードを含み、外部の受信者に宛てられたすべてのメッセージを暗号化するルールを作成できます。 Office 365 Message Encryption は、暗号化された電子メールの受信者からの返信を暗号化することもできます。また、電子メールユーザーにとって便利なように、これらの返信を復号化するルールを作成することができます。 このようにすると、組織内のユーザーは、返信を表示するために暗号化ポータルにサインインする必要がなくなります。
   
 Exchange メールフロールールの作成方法の詳細については、「 [Define rules For Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
   
-## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>暗号化された電子メール メッセージの送信、表示、および返信
+## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>暗号化されたメール メッセージの送信、表示、および返信
 
 Office 365 メッセージの暗号化では、管理者が定義したルールに基づいて電子メールメッセージが自動的に暗号化されます。 暗号化されたメッセージを含む電子メールが、添付の HTML ファイルと共に受信者の受信トレイに到着します。
   
@@ -87,7 +87,7 @@ Exchange Online および Exchange Online Protection 管理者は、暗号化さ
   
 以下の例は、電子メールの添付ファイルに表示される ContosoPharma のカスタム ロゴです。
   
-![暗号化メッセージ ページの表示例](media/TA-OME-3attachment2.jpg)
+![暗号化メッセージ ページの表示例](../media/TA-OME-3attachment2.jpg)
   
  **暗号化の電子メールメッセージと暗号化ポータルを組織のブランドでカスタマイズするには**
   

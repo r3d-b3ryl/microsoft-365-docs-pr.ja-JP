@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: eac58e10e97b639a296717210f7a9576abef5e35
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 59616247f284b76a4e180f315067f694ff861007
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597244"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068814"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>関心のあるユーザーの監査アクティビティを表示する
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 データ調査 (プレビュー) は、セキュリティ & コンプライアンスセンターの既存の監査ログ検索ツールと統合されました。 この組み込みの操作を使用すると、関心のあるデータ調査 (プレビュー) ユーザーの管理ツールを使用して、調査中に関心のある人のためのアクティビティを簡単にアクセスおよび検索できるので、調査が容易になります。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 Office 365 の監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [アクセス許可] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 ユーザーがデータ調査 (プレビュー) 監査ログを最低限の特権レベルで検索できるようにするには、Exchange Online でカスタム役割グループを作成し、表示のみの監査ログまたは監査ログの役割を追加し、そのユーザーを新しい役割 gr のメンバーとして追加することができます。oup。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
 

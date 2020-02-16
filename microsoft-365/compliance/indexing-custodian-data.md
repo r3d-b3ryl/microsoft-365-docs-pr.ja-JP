@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5ab54e84de7434a16bdf7eb7d04fad7b9af05440
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 高度な電子情報開示ケースに保管担当者が追加されると、部分的にインデックスと見なされた Office 365 のコンテンツはすべて、完全に検索可能になるように再処理されます。
+ms.openlocfilehash: 3c1bead5f853a39410a6a018f170ee637dfcf84e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600634"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072894"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>カストディアン データの詳細なインデックス処理
 
@@ -30,22 +30,26 @@ ms.locfileid: "41600634"
 Office 365 の処理サポートと、部分的にインデックスが作成されたアイテムの詳細については、以下を参照してください。
 
 - [高度な電子情報開示でサポートされているファイルの種類](supported-filetypes-ediscovery20.md)
+
 - [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)
+
 - [Exchange Search によってインデックス処理されるファイル形式](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+
 - [SharePoint Server での既定のクロール対象ファイル名拡張子および解析対象ファイルの種類](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## <a name="viewing-advanced-indexing-results"></a>高度なインデックス作成の結果を表示する
 
-高度なインデックス処理が完了すると、再処理の有効性について理解することができます。  [保管担当者 Indexing] ビューでは、*ハイブリッドインデックス*に追加されたすべてのアイテムがグラフに一覧表示されます。  ハイブリッドインデックスは、高度な電子情報開示が再処理されたコンテンツを格納する場所です。
+高度なインデックス処理が完了すると、再処理の有効性について理解することができます。  ケースに対して [**処理**] タブの [詳細なインデックス作成の結果] ビューに、*ハイブリッドインデックス*に追加されたアイテムの数がグラフに表示されます。  ハイブリッドインデックスは、高度な電子情報開示が再処理されたコンテンツを格納する場所です。
 
-グラフには、修復が必要な項目の数と、ファイルの種類別のエラーのグラフも表示されます。 詳細については、以下を参照してください。
+このビューには、修復を必要とするアイテムの数と、ファイルの種類別のエラーのグラフも含まれています。 詳細については、以下を参照してください。
 
 - [データ処理中のエラー修復](error-remediation.md)
+
 - [単一アイテムのエラーの修復](single-item-error-remediation.md)
 
-## <a name="updating-advanced-indexes-for-custodians"></a>保管担当者の高度なインデックスを更新する
+## <a name="updating-the-advanced-index-for-custodians"></a>保管担当者の高度なインデックスを更新する
 
-高度な電子情報開示ケースに保管担当者が追加されると、部分的にインデックスが作成されたすべてのアイテムが再処理されます。 ただし、時間が経過すると、インデックスが作成されたアイテムの数が多くなると、ユーザーのメールボックスまたは OneDrive アカウントに追加されることがあります。  必要に応じて、インデックスを更新できます。
+高度な電子情報開示ケースに保管担当者が追加されると、部分的にインデックスが作成されたすべてのアイテムが再処理されます。 ただし、時間が経過すると、インデックスが作成されたアイテムの数が多くなると、ユーザーのメールボックスまたは OneDrive アカウントに追加されることがあります。  必要に応じて、特定の保管担当者のインデックスを更新できます。 詳細については、「 [Manage 保管担当者 in a Advanced eDiscovery case](manage-new-custodians.md#re-index-custodian-data)」を参照してください。 [**処理**] タブの [**更新インデックス**] をクリックして、すべての保管担当者のインデックスを更新することもできます。
 
 > [!NOTE]
-> 保管担当者インデックスの更新は、長時間実行されるプロセスです。 ケースでは、1日に1回のインデックスを更新しないことをお勧めします。
+> 保管担当者インデックスの更新は、長時間実行されるプロセスです。 ケースでは、インデックスを1日に複数回更新しないことをお勧めします。

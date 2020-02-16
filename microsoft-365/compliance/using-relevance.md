@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ebf5490467ec041cb22c126ac75c90ae58deb942
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ddc9a6ae868682a3a241e9896d3aa63ac46f985
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601274"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069161"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>詳細な電子情報開示でのデータの分析に関連モジュールを使用する
 
@@ -33,7 +33,7 @@ ms.locfileid: "41601274"
 
 関連性ワークフローが表示され、次のように説明されています。
   
-![関連性のワークフロー](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![関連性のワークフロー](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **評価と追跡のサイクル**:
     

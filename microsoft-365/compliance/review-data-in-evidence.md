@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 18d67983d4e5e934e606944c1502dd76331812a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dffbc68714470e65557c58ded710ae53d64a3868
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597634"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070084"
 ---
 # <a name="review-the-data-in-evidence"></a>エビデンスのデータを確認する
 
@@ -48,14 +48,14 @@ ms.locfileid: "41597634"
 
 ドキュメントのファイルメタデータの例を次に示します。 メタデータフィールドの詳細については、「[データ調査のドキュメントメタデータフィールド (プレビュー)](document-metadata-fields.md)」を参照してください。
 
-![ファイルのメタデータパネル](media/Reviewimage2.png)
+![ファイルのメタデータパネル](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>ネイティブビュー
 
 ネイティブビューアーは、ドキュメントをネイティブ形式で最も正確に表示します。 ネイティブビューは、数百種類のファイルタイプでサポートされており、ドキュメントを表示することを目的としています。 Microsoft Office ファイルの場合、ネイティブビューアーは Office アプリの web 版を使用します。 これにより、さまざまな Office ドキュメント、数式、Excel の非表示の行/列、PowerPoint のメモビューなどのコンテンツを表示できます。
 
 ![ネイティブビュー
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>テキストビュー
 
@@ -70,12 +70,12 @@ ms.locfileid: "41597634"
 **テキストとスクロールバーでの行カウンターと検索検索の強調表示の例**
 
 ![テキストビュー
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 **相違ビューの例**
 
 ![相違ビュー
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>ビューに注釈を付ける
 
@@ -101,7 +101,7 @@ ms.locfileid: "41597634"
 
 **注釈の表示の例**
 
-![ビューに注釈を付ける](media/Reviewimage1.png)
+![ビューに注釈を付ける](../media/Reviewimage1.png)
 
 > [!NOTE]
 > 注釈は、証拠セットに追加されたドキュメントのコピーに適用されます。 Live サービスの元のドキュメントには、注釈は付けません。

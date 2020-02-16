@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
-ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597794"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071081"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査 (プレビュー) の概要
 
@@ -37,7 +37,7 @@ ms.locfileid: "41597794"
 
 以下のセクションでは、データ調査 (プレビュー) における組み込みワークフローの各手順について説明します。 次のスクリーンショットは、 *「高リスク: 財務ドキュメント漏洩*」という名前の調査の [**ホーム**] タブを示しています。 
 
-![データ調査ツールのワークフロー](media/DataInvestigationsWorkflow.png)
+![データ調査ツールのワークフロー](../media/DataInvestigationsWorkflow.png)
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>機密、悪意、または間違ったデータを検索する
 

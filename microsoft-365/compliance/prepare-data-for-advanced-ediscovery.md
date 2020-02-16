@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'Microsoft 365 セキュリティ&amp;コンプライアンスセンターを使用して Office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
-ms.openlocfilehash: 6407b6f2a2bbe9bc69842057232ec01569ef64c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 028cdb48e5ece2509d175a363c19beb6c2fafa19
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597764"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071034"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Office 用データを準備する 365 Advanced eDiscovery
 
 このトピックでは、高度な電子情報開示のケースにコンテンツ検索の結果を読み込む方法について説明します。 
   
 > [!IMPORTANT]
-> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は Office 365 Advanced eDiscovery ( *Advanced ediscovery*v2.0 とも呼ばれます) の廃止を発表しています。 まだ Advanced eDiscovery v2.0 を使用している場合は、できるだけ早く、advanced [ediscovery](overview-ediscovery-20.md) V2.0 ( *Microsoft 365 では高度な電子情報開示ソリューション*とも呼ばれます) に移行してください。 上級電子情報開示2.0 には、Advanced eDiscovery v2.0 のような機能がありますが、保管担当者管理、コミュニケーション管理、およびレビューセットなどの多くの新機能も提供しています。 Advanced eDiscovery v2.0 の廃止の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。  
+> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Office 365 Advanced eDiscovery (*Advanced eDiscovery v1.0* とも呼ばれる) のサポート終了を発表しました。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>手順 1: 高度な電子情報開示用に Office 365 データを準備する
 
@@ -53,11 +53,11 @@ ms.locfileid: "41597764"
     
 5. ケースの **[ホーム]** ページで、**[Advanced eDiscovery]** をクリックします。 
     
-    ![[高度な電子情報開示に切り替え] をクリックして、高度な電子情報開示でケースを開きます。](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![[高度な電子情報開示に切り替え] をクリックして、高度な電子情報開示でケースを開きます。](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     **[高度な電子情報開示**の進行状況バーへの接続] が表示されます。 上級電子情報開示に接続されている場合は、ケースのセットアップページにコンテナーの一覧が表示されます。 
     
-    ![詳細な電子情報開示でケースが表示される](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![詳細な電子情報開示でケースが表示される](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
      これらのコンテナーは、手順1でアドバンスト eDiscovery で分析するために準備した検索結果を表します。 セキュリティ&amp; /コンプライアンスセンターでは、コンテナーの名前がコンテンツ検索と同じ名前になっていることに注意してください。 リスト内のコンテナーは、準備したものです。 上級電子情報開示のために別のユーザーが検索結果を準備している場合、対応するコンテナーはリストに含まれません。 
     

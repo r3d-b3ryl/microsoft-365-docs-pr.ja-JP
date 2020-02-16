@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: セキュリティ & コンプライアンスセンターを使用するには、適切なアクセス許可が必要です。 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか、グローバル管理者によって1つ以上のセキュリティ & コンプライアンスセンターの役割グループに割り当てられている必要があります。
-ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c141f7f9de5a47412dc009ae6c077404cd3f795d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596524"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073091"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>「Office 365 のセキュリティ センターとコンプライアンス センター」に移動
 
@@ -40,4 +40,4 @@ ms.locfileid: "41596524"
 
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
 
-![Office 365 セキュリティ & コンプライアンスセンターのホームページ](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Office 365 セキュリティ & コンプライアンスセンターのホームページ](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

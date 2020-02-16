@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: '表示されているタスクオプションの定義を含む、Office 365 Advanced eDiscovery の分析プロセスの結果を表示する場所について説明します。  '
-ms.openlocfilehash: 9e06770135afd62a39115c9365a698df4493bd72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597254"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069188"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Office の分析結果を表示する 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597254"
 
 [**結果\> \>の\>分析タスクの状態の準備**] では、プロセスの実行中および分析後に状態が表示されます。 
   
-![タスクの進捗状況の分析](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![タスクの進捗状況の分析](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 表示されるタスクは、選択したオプションによって異なる場合があります。 
   
@@ -73,7 +73,7 @@ ms.locfileid: "41597254"
     
 **添付ファイル**の結果には、重複した種類によって添付ファイルの数が表示されます。 
   
-![類似および電子メールのスレッド](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![類似および電子メールのスレッド](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>関連項目
 

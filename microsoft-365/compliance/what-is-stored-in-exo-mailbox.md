@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 のクラウドベースのアプリによって生成されたデータは、Microsoft クラウド内のユーザーの Exchange Online メールボックスに格納されます。
-ms.openlocfilehash: f9db94eebf855a2d8dcfee8897ca6171eabbc400
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5e263acaca21e8cdf9c338f0aaa56846a8a929ef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068734"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Exchange Online メールボックスに格納されているコンテンツ
 
@@ -32,10 +32,10 @@ Exchange Online のメールボックスは、主に、メッセージ、予定�
 
 |Office 365 アプリ  |説明  |
 |:---------|:---------|
-|Forms     <br/> |フォーム (PDF ファイルとして保存される) とフォーム (CSV ファイルに格納されている) への返信は、電子メールメッセージに添付され、フォームを作成したユーザーのメールボックス内の隠しフォルダーに格納されます。 PST ファイルのフォームからコンテンツをエクスポートする場合、このデータは、次のグローバルに一意に識別された (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**という名前のサブフォルダーにある**applicationdataroot**フォルダーに格納されます。        <br/> |
+|フォーム     <br/> |フォーム (PDF ファイルとして保存される) とフォーム (CSV ファイルに格納されている) への返信は、電子メールメッセージに添付され、フォームを作成したユーザーのメールボックス内の隠しフォルダーに格納されます。 PST ファイルのフォームからコンテンツをエクスポートする場合、このデータは、次のグローバルに一意に識別された (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**という名前のサブフォルダーにある**applicationdataroot**フォルダーに格納されます。        <br/> |
 |Office 365 グループ    <br/>|  電子メールメッセージ、予定表アイテム、連絡先 (人)、メモ、およびタスクは、Office 365 グループに関連付けられているメールボックスに格納されます。       <br/> |
 |Outlook/Exchange Online<br/>|  電子メールメッセージ、予定表アイテム、連絡先 (人)、メモ、およびタスクは、ユーザーのメールボックスに格納されます。       <br/> |
-|複数のユーザー    <br/> |  People アプリ (Outlook でアクセス可能な連絡先と同じ連絡先) 内の連絡先は、ユーザーのメールボックスに保存されます。      <br/> |
+|People    <br/> |  People アプリ (Outlook でアクセス可能な連絡先と同じ連絡先) 内の連絡先は、ユーザーのメールボックスに保存されます。      <br/> |
 |クラススケジュール     <br/> |   クラススケジュールで作成されたプランは、新しいプランが作成されたときにプロビジョニングされる対応する Office 365 グループのメールボックスに格納されます。 グループメールボックスのエイリアスは、プランの名前です。      <br/> |
 |Skype for Business    <br/>  | Skype for Business の会話は、ユーザーのメールボックスの [会話履歴] フォルダーに保存されます。 Skype 会議の参加者のメールボックスが訴訟ホールドの対象となっている場合、またはアイテム保持ポリシーに割り当てられている場合、会議に添付されたファイルは参加者のメールボックスに保持されます。         <br/> |
 |Sway     <br/> |  Sway は、電子メールメッセージに添付された HTML ファイルとして格納され、sway を作成したユーザーのメールボックス内の隠しフォルダーに格納されます。 PST ファイルの Sway からコンテンツをエクスポートすると、このデータは、次の GUID を持つサブフォルダーの**Applicationdataroot**フォルダーに格納されます。 **905fcf2647 eb7-48a0-9ff0-8dcc7194b5ba**。       <br/> |

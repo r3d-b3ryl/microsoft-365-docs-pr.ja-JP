@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Office 365 管理者は、Office 365 Advanced Message Encryption で暗号化された特定の電子メールを取り消すことができます。
-ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597604"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070040"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption 機能を使って暗号化されたメールを無効にする
 
@@ -41,7 +41,7 @@ Office 365 Advanced Message Encryption を使用してメッセージを暗号�
 
 電子メールが失効されると、受信者は Office 365 メッセージ暗号化ポータルを経由して暗号化された電子メールにアクセスしたときにエラーを受信します。 "メッセージは送信者によって取り消されました"。
 
-![取り消された暗号化された電子メールを示すスクリーンショット。](media/revoked-encrypted-email.png)
+![取り消された暗号化された電子メールを示すスクリーンショット。](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>暗号化された電子メールを取り消す方法
 
