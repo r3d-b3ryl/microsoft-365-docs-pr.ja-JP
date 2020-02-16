@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: e5e3e4fb48a0eb2af1978cbd5a687c67c72bea0c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba5804d3065dcb01d85d457df7555a642d6f2839
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596644"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085596"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>手順 3: Windows Autopilot を使用して新しいデバイスに Windows 10 Enterprise を展開する
 
 *この記事は、Microsoft 365 Enterprise の E3 および E5 の両バージョンに適用されます*
 
-![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 新しい Windows 10 PC では、Windows Autopilot を使用して、組織の OOBE (out-of-box-experience) をカスタマイズし、すでに構成されているアプリや設定を使用して新しいシステムを展開できます。イメージの展開や挿入するドライバー、管理するインフラストラクチャはありません。各ユーザーは IT 管理者に問い合わせる必要なく、展開プロセスを個別に実行することができます。
 
@@ -33,7 +33,7 @@ Windows Autopilot を使用して、新しい Windows 10 デバイスをセッ�
 
 Windows 自動操縦ポスターは、縦置きモード (11x17) の2ページです。 ブラウザーに PDF を表示するには、以下の画像をクリックします。 
 
-[![Autopilot ポスターを使用した Windows 10 の展開](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
+[![Autopilot ポスターを使用した Windows 10 の展開](../media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) または [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) 形式でダウンロードすることもできます。
 
@@ -114,4 +114,4 @@ Azure AD で、デバイスの同期状態を確認し、デバイス上で Micr
 
 |||
 |:-------|:-----|
-|![手順 4](./media/stepnumbers/Step4.png)| [デバイスの正常性とコンプライアンスを監視する](windows10-enable-windows-analytics.md) |
+|![手順 4](../media/stepnumbers/Step4.png)| [デバイスの正常性とコンプライアンスを監視する](windows10-enable-windows-analytics.md) |

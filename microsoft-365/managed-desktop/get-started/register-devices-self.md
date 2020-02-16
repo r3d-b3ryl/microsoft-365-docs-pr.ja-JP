@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: d0e29bd16f1b0afd119fc822d6e2391e7f9f3020
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e41003a7137b864b52f823debcd72c72ca55045d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602824"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085042"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスをユーザー自身が登録する
 
@@ -90,7 +90,7 @@ CSV ファイルは、登録用に特定の形式である必要があります�
 
 Microsoft マネージドデスクトップの[Azure ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
 
-[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (残念ながら、これは当てはまりません。このメモを削除することはできますが、それについてお客様がチャットできるようになるまで、そのままにしておきます。)

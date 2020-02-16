@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600764"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084209"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -35,7 +35,7 @@ ms.locfileid: "41600764"
 
 次の図は、SharePoint Online と OneDrive for business のファイルを保護するために推奨されるポリシーのセットを示しています。 この値は、SharePoint Online と OneDrive for business の保護を追加するために、どのポリシーを更新または新規作成する必要があるかを示します。
 
-![SharePoint Online および OneDrive のポリシーの概要](../images/identity-access-ruleset-sharepoint.png)
+![SharePoint Online および OneDrive のポリシーの概要](../media/identity-access-ruleset-sharepoint.png)
 
 共通ポリシーの作成時に SharePoint Online を含めた場合は、新しいポリシーを作成するだけで済みます。 条件付きアクセスルールを構成する場合は、SharePoint Online に OneDrive for Business が含まれています。
 
@@ -77,7 +77,7 @@ SharePoint サイトのアクセス許可は、通常、サイトへのアクセ
 
 次の図は、SharePoint デバイスアクセスポリシーがサイトへのアクセスを保護する方法の例を示しています。
 
-![SharePoint デバイスアクセスポリシーがサイトを保護する方法](../images/SharePoint-rules-scenario.png)
+![SharePoint デバイスアクセスポリシーがサイトを保護する方法](../media/SharePoint-rules-scenario.png)
 
 この図について:
 

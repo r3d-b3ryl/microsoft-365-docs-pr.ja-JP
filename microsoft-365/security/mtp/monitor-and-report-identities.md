@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e04f5f48edee663bd6b386d063b67af196e7a782
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2a84cc9c275db1579dfab5050672faf2463698e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600144"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084973"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでの id の監視とレポート
 
@@ -29,7 +29,7 @@ ms.locfileid: "41600144"
 * 条件付きアクセス ポリシーによって危険性が高いと報告されたユーザーの数
 * 組織内のグローバル管理者の数
 
-![レポートページの id カテゴリ](../images/identities.png)
+![レポートページの id カテゴリ](../../media/identities.png)
 
 特定の検出があるユーザーについては、Microsoft Defender セキュリティセンターで特定の警告を調べて調査することができます。 検出には、未知の場所からサインインしたユーザーなどの異常が含まれます。
 

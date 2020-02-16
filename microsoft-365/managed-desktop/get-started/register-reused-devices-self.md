@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41d2ac66dea6640978435390bf3a8868c7cec7c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596534"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085956"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをユーザー自身が登録する
 
@@ -60,7 +60,7 @@ Microsoft エンドポイント構成マネージャーを使用して、Microso
     - **説明:** レポートの説明を指定します。 
     - **サーバー:** このレポートを作成するレポートサーバーの名前を表示します。 
     - **パス:**[**参照**] を選択して、レポートを保存するフォルダーを指定します。 
-5. **[次へ]** を選択します。 
+5. [**次へ**] を選択します。 
 6. [**概要**] ページで、設定を確認します。 [**前**へ] を選択して設定を変更するか、[**次へ**] を選択して、構成マネージャーでレポートを作成します。 
 7. [**完了**] ページで、[**閉じる**] を選択してウィザードを終了し、レポート**ビルダー**を開いてレポート設定を入力します。 メッセージが表示されたら、ユーザーアカウントとパスワードを入力し、[OK] を選択し**ます。** レポートビルダーがデバイスにインストールされていない場合は、インストールするように求めるメッセージが表示されます。 レポートを変更および作成するために必要な**レポートビルダーをインストールするに**は、[実行] を選択します。 
 
@@ -210,7 +210,7 @@ CSV ファイルは、登録用に特定の形式である必要があります�
 
 Microsoft マネージドデスクトップの[Azure ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
 
-[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (残念ながら、これは当てはまりません。このメモを削除することはできますが、それについてお客様がチャットできるようになるまで、そのままにしておきます。)

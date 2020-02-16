@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b79625ba017bd30cc9d6b0153d101b16ec574e8c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600134"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084782"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのデータの監視とレポート
 
@@ -32,4 +32,4 @@ ms.locfileid: "41600134"
 * DLP ポリシーの上書きの数または報告された誤検出の数
 * Microsoft Cloud App Security を介してサードパーティのクラウドサービスで発生した DLP ポリシーの一致数
 
-![レポートページのデータカテゴリ](../images/data.png)
+![レポートページのデータカテゴリ](../../media/data.png)
