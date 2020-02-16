@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7282e1f9d780c127dd70845efefa90aa03e57537
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 64a2936b5a2f9e670a3d89c50424ca0322e99c13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011848"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085796"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイスをセットアップする
 
@@ -38,11 +38,11 @@ Microsoft マネージドデスクトップでは、新しいデバイスと既�
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの使用を開始する手順
 
-1. [管理ポータルで管理者の連絡先を追加して確認する](add-admin-contacts.md)
+1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
 2. [条件付きアクセスを調整する](conditional-access.md)
 3. [ライセンスを割り当てる](assign-licenses.md)
-4. [Intune ポータルサイトを展開する](company-portal.md)
-5. [エンタープライズ状態の移動を有効にする](enterprise-state-roaming.md)
+4. [Intune 会社ポータルを展開する](company-portal.md)
+5. [Enterprise State Roaming を有効にする](enterprise-state-roaming.md)
 6. デバイスをセットアップする (このトピック)
 7. [ユーザーがデバイスを使えるようにする](get-started-devices.md)
 8. [アプリを展開する](deploy-apps.md)

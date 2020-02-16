@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: faa0e904ef2a07ccd209ef91630ce6fc8205e347
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801198"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085713"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの管理者サポート
 
@@ -57,7 +57,7 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 
 チケットが**緩和**された状態または**解決済み**の状態になったら、その特定の問題を使用して、フィードバックを共有できます。 これを行うには、管理ポータルの [**サポート要求**] ページに移動します。 特定のチケットを選択します。 右側に表示されるフライインで、[**フィードバック**] タブを選択し、要求された情報を入力します。 フィードバックフォームに個人情報を含めないように注意してください。 プライバシーの詳細については、 [Microsoft のプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明を参照してください。
 
-![フィードバックフォーム](images/feedback_form.png)
+![フィードバックフォーム](../../media/feedback_form.png)
 
 ## <a name="provide-administrator-rights-to-specific-users"></a>特定のユーザーに管理者権限を付与する
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 疑わしいメール、疑わしいフィッシングメール、スパム、およびその他の潜在的に有害なメッセージ、Url、およびその他の潜在的な問題のあるメールを、Office 365 テナントから Microsoft にスキャンするために提出する方法について説明します。
-ms.openlocfilehash: a12981ee302ea72e112826104996fb775e4ac3fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599984"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083637"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>フィッシングの疑いのあるスパム、、Url、およびファイルを Microsoft for Office 365 スキャンに提出する方法
 
@@ -35,7 +35,7 @@ Microsoft にコンテンツを送信するには、送信ページの左上に�
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>疑わしいメールを Microsoft に送信する
 
-![電子メール送信の例](../media/submission-flyout-email.PNG)
+![電子メール送信の例](../../media/submission-flyout-email.PNG)
 
 1. 電子メールを送信するには、[**電子**メール] を選択し、電子メール**ネットワークのメッセージ ID**を指定するか、電子メールファイルをアップロードします。
 
@@ -51,7 +51,7 @@ Microsoft にコンテンツを送信するには、送信ページの左上に�
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>疑わしい URL を Microsoft に送信する
 
-![電子メール送信の例](../media/submission-url-flyout.png)
+![電子メール送信の例](../../media/submission-url-flyout.png)
 
 1. URL を送信するには、ポップアップから [ **url** ] を選択します。 プロトコル (**https://**) を含む完全な URL を入力します。
 
@@ -61,13 +61,13 @@ Microsoft にコンテンツを送信するには、送信ページの左上に�
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>疑わしいファイルを Microsoft に送信する
 
-![電子メール送信の例](../media/submission-file-flyout.PNG)
+![電子メール送信の例](../../media/submission-file-flyout.PNG)
 
 1. ファイルを送信するには、ポップアップ**からファイルを選択し**、スキャンしたいファイルをアップロードします。
 
 2. [**送信**] ボタンをクリックします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)
 

@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: e90c26575db04afffd5e5c2722b75a1c7235523d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a527816ca701e2f2e9ab2e8d2b9b20cad1230a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599924"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086566"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO ワークショップモジュール 1: Microsoft Cybersecurity ブリーフィング
 
 このモジュールでは、重要なセキュリティ対策、Microsoft cybersecurity reference architecture、cybersecurity の復元、インターネット機能 (IoT)、運用技術の概要について説明します。
 
-- PDF の概要をダウンロードする:[モジュール 1: Microsoft Cybersecurity ブリーフィング](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- PDF の概要をダウンロードする:[モジュール 1: Microsoft Cybersecurity ブリーフィング](../../media/ciso-workshop-1-cybersecurity-briefing.pdf)
 - PowerPoint の概要:[モジュール 1: Microsoft Cybersecurity ブリーフィング](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)をダウンロードする
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>パート 1: コースの概要と概要 (9:13)

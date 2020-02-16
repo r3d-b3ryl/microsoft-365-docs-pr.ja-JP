@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 04c146a90cacccee831edd8a825bff0139963e16
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85c616c717a85f9a6a47e63a48621a8703b487aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598464"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088205"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -44,7 +44,7 @@ ms.locfileid: "41598464"
 
 脅威管理の概要ウィジェットは、過去7日間の脅威から組織がどのように保護されているかをひとめで確認できます。
 
-![セキュリティダッシュボード-脅威管理の概要ウィジェット](../media/SecDash-ThreatMgmtSummary.png)
+![セキュリティダッシュボード-脅威管理の概要ウィジェット](../../media/SecDash-ThreatMgmtSummary.png)
 
 脅威管理の概要に表示される情報は、サブスクリプションの内容によって異なります。 次の表では、Office 365 E3 および Office 365 E5 に含まれる情報について説明します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "41598464"
 
 脅威保護の状態ウィジェットは、フィッシングとマルウェアの傾向と詳細な表示を使用して、脅威保護の効果を示します。 
 
-![脅威保護状態ウィジェット](../media/tpswidget.png)
+![脅威保護状態ウィジェット](../../media/tpswidget.png)
 
 この詳細は、office 365 サブスクリプションに[office 365 Advanced Threat protection](office-365-atp.md) (ATP) があるかどうかにかかわらず、 [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) が含まれているかどうかによって異なります。
 
@@ -75,7 +75,7 @@ ms.locfileid: "41598464"
  
 グローバルな週次脅威検出ウィジェットは、過去7日間 (7 日間) の電子メールメッセージで検出された脅威の数を示します。
 
-![グローバルな週次脅威検出ウィジェット](../media/globalweeklythreatdetections.png)
+![グローバルな週次脅威検出ウィジェット](../../media/globalweeklythreatdetections.png)
 
 メトリックは、次の表に示すように計算されます。
 
@@ -90,13 +90,13 @@ ms.locfileid: "41598464"
 
 マルウェアウィジェットは、マルウェアの傾向とマルウェアファミリの種類に関する詳細を過去7日間 (7 日間) に表示します。
 
-![マルウェアの傾向とファミリの種類](../media/malwarewidgetatpe5.png)
+![マルウェアの傾向とファミリの種類](../../media/malwarewidgetatpe5.png)
  
 ## <a name="insights"></a>分析情報
 
 洞察では、確認すべき重要な問題が表面化するだけでなく、考慮すべき推奨事項とアクションも含まれています。 
 
-![Smart insights](../media/smartinsights.png)
+![Smart insights](../../media/smartinsights.png)
 
 たとえば、一部のユーザーが迷惑メールのオプションを無効にしているために、フィッシング電子メールメッセージが配信されている可能性があります。 Insights の機能の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのレポートと分析](reports-and-insights-in-security-and-compliance.md)」を参照してください。
   
@@ -104,14 +104,14 @@ ms.locfileid: "41598464"
 
 組織のサブスクリプションに[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度な脅威調査および応答ツールを含むセクションがあります。 組織のセキュリティチームは、このセクションの情報を使用して、新しいキャンペーンの理解、脅威の調査、インシデントの管理を行うことができます。 
   
-![脅威インテリジェンスは、組織を対象とした攻撃を理解するのに役立つ](../media/threatintelwidget.png)
+![脅威インテリジェンスは、組織を対象とした攻撃を理解するのに役立つ](../../media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>傾向
 
 セキュリティダッシュボードの下部にある [**傾向**] セクションは、組織の電子メールフローの傾向を要約したものです。 レポートでは、スパム、マルウェア、フィッシングの試行、および適切な電子メールとして分類された電子メールに関する情報が提供されます。 タイルをクリックすると、レポートに詳細な情報が表示されます。 
   
-![[傾向] セクションには、組織の電子メールフローの傾向が要約されています。](../media/trends.png)
+![[傾向] セクションには、組織の電子メールフローの傾向が要約されています。](../../media/trends.png)
   
 また、組織の Office 365 サブスクリプションに[office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合は、セキュリティチームが優先度の高いセキュリティ警告を表示してアクションを実行できるようにするための、**最新の脅威管理通知**レポートもこのセクションにあります。 
 
@@ -119,7 +119,7 @@ ms.locfileid: "41598464"
 
 最近の脅威管理通知 widget を表示またはアクセスするには、通知を表示するためのアクセス許可が必要です。 詳細については、「[通知の表示に必要な RBAC アクセス許可](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)」を参照してください。
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](view-email-security-reports.md)
   

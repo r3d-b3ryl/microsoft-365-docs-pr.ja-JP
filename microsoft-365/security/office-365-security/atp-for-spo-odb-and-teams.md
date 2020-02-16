@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Office 365 Advanced Threat Protection を SharePoint Online、OneDrive for Business、Microsoft Teams のファイルに拡張して、組織にとってより安全なコラボレーションを可能にします。
-ms.openlocfilehash: a21654ed8045b9adb6c09a730ada3ae458cf1609
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3105a9443ddab483bc5ac4037e5260b354d64de9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599844"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086637"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP for SharePoint、OneDrive、Microsoft Teams
 
@@ -31,19 +31,19 @@ ms.locfileid: "41599844"
 
 ユーザーは、SharePoint、OneDrive、Microsoft Teams を使用して、ファイルを定期的に共有し、共同作業を行うことができます。 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用すると、組織は安全な方法で共同作業を行うことができます。 ATP は、チームサイトおよびドキュメントライブラリで悪意のあるものとして識別されたファイルを検出およびブロックするのに便利です。
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 SharePoint Online、OneDrive for Business、および Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルをロックするために、ATP はファイルストアと直接統合されます。 次の図は、ライブラリ内で検出された悪意のあるファイルの例を示しています。
 
-![悪意のあるものとして検出された OneDrive for Business のファイル](../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![悪意のあるものとして検出された OneDrive for Business のファイル](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 ブロックされたファイルは、ドキュメントライブラリ、web、モバイル、またはデスクトップの各アプリケーションに表示されたままですが、ブロックされたファイルを開く、コピー、移動、または共有することはできません。 ただし、ユーザーはブロックされたファイルを削除できます。 ユーザーのモバイルデバイスに表示されるものの例を次に示します。
 
-![Onedrive モバイルアプリから OneDrive for business からブロックされたファイルを削除する](../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![Onedrive モバイルアプリから OneDrive for business からブロックされたファイルを削除する](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 Office 365 の構成方法によっては、ブロックされたファイルをダウンロードすることができるかどうかはユーザーによって異なる場合があります。 ブロックされたファイルをダウンロードすると、ユーザーのモバイルデバイスで次のように表示されます。
 
-![OneDrive for Business でブロックされたファイルをダウンロードする](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![OneDrive for Business でブロックされたファイルをダウンロードする](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 詳細については、「[SharePoint、OneDrive、Microsoft の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)」を参照してください。
 

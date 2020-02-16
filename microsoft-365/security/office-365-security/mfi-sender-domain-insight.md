@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する方法について説明します。
-ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598824"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082574"
 ---
 # <a name="fix-sender-domain-insight"></a>送信者ドメインの洞察を修正する
 
@@ -36,15 +36,15 @@ Office 365 では、内部のオンプレミスの電子メール環境から Of
 
 「**送信者ドメインを修正**する」には、オンプレミスの環境からの、条件に一致しないメールが表示されます。これにより、オンプレミスの電子メール環境にある潜在的に侵害されたコンピューターやユーザーアカウントを特定し、修復のアクションを実行するのに役立てることができます。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する](../media/sender-domain-insight-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する](../../media/sender-domain-insight-selected.png)
 
 [詳細の**表示**] をクリックすると、次の図に示すように、詳細を含む別のウィジェットに移動します。
 
-![「送信者ドメインを修正する」の詳細ウィジェット](../media/sender-domain-view-details.png)
+![「送信者ドメインを修正する」の詳細ウィジェット](../../media/sender-domain-view-details.png)
 
 Office 365 にメッセージを配信するために使用された受信コネクタが表示されます。 [**サンプルメッセージ id の表示**] をクリックして、オンプレミスの電子メール環境から送信されたメッセージの詳細を確認することもできます。 これらのメッセージは Office 365 によって拒否されたため、メッセージ追跡を使用することはできませんが、サンプルのメッセージ id を使用してオンプレミスの電子メール環境内のメッセージを追跡できます。
 
-![「Fix sender domain insights」のサンプルメッセージ id を表示する](../media/sender-domain-view-sample-message-ids.png)
+![「Fix sender domain insights」のサンプルメッセージ id を表示する](../../media/sender-domain-view-sample-message-ids.png)
 
 ## <a name="see-also"></a>関連項目
 

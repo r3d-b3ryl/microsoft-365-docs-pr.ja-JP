@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Office 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
-ms.openlocfilehash: 625fe036e8f8b00201abd0f5cb6a8f0003c597f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cccf44a64d20dc1304dbc5145d6ae50441cfacef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599254"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085972"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>ユーザーに Office 365 セキュリティ センターとコンプライアンス センターへのアクセス権を付与する
 
@@ -49,9 +49,9 @@ ms.locfileid: "41599254"
 
 3. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動します。
 
-4. リストからユーザーを追加する役割グループを選択し、 **[編集] [** ![編集] アイコン](../media/O365-MDM-CreatePolicy-EditIcon.gif)をクリックします。
+4. リストからユーザーを追加する役割グループを選択し、 **[編集] [** ![編集] アイコン](../../media/O365-MDM-CreatePolicy-EditIcon.gif)をクリックします。
 
-5. 役割グループのプロパティページの [**メンバー**] で、 **[追加]**![アイコン](../media/ITPro-EAC-AddIcon.gif)をクリックし、追加するユーザーの名前を選択します。
+5. 役割グループのプロパティページの [**メンバー**] で、 **[追加]**![アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックし、追加するユーザーの名前を選択します。
 
 6. 役割グループに追加するすべてのユーザーを選択したら、[ **\>追加**] をクリックし、[ **OK]** をクリックします。
 

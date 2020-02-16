@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
-ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599124"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083008"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
@@ -142,7 +142,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 **図 1**
 
-![分離 SharePoint Online グループ サイトの Office 365 グループおよびそのメンバーシップ](../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![分離 SharePoint Online グループ サイトの Office 365 グループおよびそのメンバーシップ](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>フェーズ 3: 新しい ProjectX SharePoint Online チーム サイトを作成して分離させる
 
@@ -208,7 +208,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 **図 2**
 
-![分離 SharePoint Online グループ サイトの SharePoint Online グループおよびそのメンバーシップ](../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![分離 SharePoint Online グループ サイトの SharePoint Online グループおよびそのメンバーシップ](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 デザイナーのリーダーのユーザー アカウントを使用したアクセスをデモンストレーションします。
 

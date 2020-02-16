@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でのメールフロールールをバルクメールフィルターに使用する方法について説明します。
-ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598044"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081822"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 
@@ -35,11 +35,11 @@ ms.locfileid: "41598044"
 
 1. Exchange 管理センター (EAC) で、[**メール フロー**] \> [**ルール**] に移動します。
 
-2. [追加] アイコン](../media/ITPro-EAC-AddIcon.gif) **をクリックし**、[**新しいルールの作成**] を選択します。 ![
+2. [追加] アイコン](../../media/ITPro-EAC-AddIcon.gif) **をクリックし**、[**新しいルールの作成**] を選択します。 ![
 
 3. ルールの名前を指定します。
 
-4. [**その** ![他のオプションオプション](../media/ITPro-EAC-MoreOptionsIcon.png)] アイコンをクリックします。 **[次の場合、このルールを適用する]** で、 **[件名または本文]** \> **[件名または本文が次のテキスト パターンと一致する]** の順に選択します。
+4. [**その** ![他のオプションオプション](../../media/ITPro-EAC-MoreOptionsIcon.png)] アイコンをクリックします。 **[次の場合、このルールを適用する]** で、 **[件名または本文]** \> **[件名または本文が次のテキスト パターンと一致する]** の順に選択します。
 
 5. [**単語または文字列の指定**] ダイアログボックスで、バルクメールでよく見られる次の正規表現を一度に1つずつ追加して、完了したら [ **OK** ] をクリックします。
 
@@ -87,7 +87,7 @@ ms.locfileid: "41598044"
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-2. [追加] アイコン](../media/ITPro-EAC-AddIcon.gif) **をクリックし**、[**新しいルールの作成**] を選択します。 ![
+2. [追加] アイコン](../../media/ITPro-EAC-AddIcon.gif) **をクリックし**、[**新しいルールの作成**] を選択します。 ![
 
 3. ルールの名前を指定します。
 

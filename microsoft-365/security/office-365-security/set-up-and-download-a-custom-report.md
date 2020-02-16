@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターでカスタムの日付範囲とフィルターを使用してレポートを設定およびダウンロードする方法について説明します。
-ms.openlocfilehash: 0de4b9bf2ac8d16c0e0ecc38fa69a3c9bf5e2774
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598384"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088000"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでカスタムレポートを設定およびダウンロードする
 
@@ -34,17 +34,17 @@ ms.locfileid: "41598384"
   
 1. [セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード**] に移動します。
     
-2. レポートを選択します。 (この例では、メッセージの廃棄レポートを使用します)。<br/>![レポートをダウンロードするための要求レポートを選択する](../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. レポートを選択します。 (この例では、メッセージの廃棄レポートを使用します)。<br/>![レポートをダウンロードするための要求レポートを選択する](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. レポートの左上隅で、[**要求レポート**] を選択します。
     
-4. [**レポートの要求**] ダイアログボックスで、レポートの名前、開始日、および終了日を指定します。 [**次へ**] を選択します。<br/>![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>レポート] を選択してダウンロードします。](../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. [**レポートの要求**] ダイアログボックスで、レポートの名前、開始日、および終了日を指定します。 [**次へ**] を選択します。<br/>![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>レポート] を選択してダウンロードします。](../../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
 5. レポートに使用するフィルターを指定します。 (たとえば、メッセージの廃棄レポートにクライアント IP アドレスを指定することがあります)。[**次へ**] を選択します。
     
 6. レポートの電子メール受信者を指定し、[**保存**] を選択します。
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   

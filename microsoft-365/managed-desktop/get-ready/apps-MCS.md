@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4491504616eb4bb447f12d08dddb12c73c2a88ac
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962624"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085943"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Microsoft コンサルティング サービスを使用する
 
@@ -35,7 +35,7 @@ MCS アプリパッケージを使用するには、**次の要素を提供す�
 
 アプリの情報を Microsoft マネージドデスクトップポータルにアップロードして、パッケージ化プロセスを開始します。 パッケージチームは、毎週木曜日に新しい提出をレビューします。 レビューとパッケージ化後、パッケージ化されたアプリは次の金曜日に配信されます。 1週間に最大5つのアプリを開始するためのパッケージを作成できますが、サービスはニーズに合わせて拡張できます。
 
-![木曜日にアプリケーションのインフロー (この例では 21)、次の日にメディア検証、次の月曜日にパッケージ化 (25)、以降の金曜日にアプリの配信を示すカレンダー (29 日)](images/MCS-cal.png)
+![木曜日にアプリケーションのインフロー (この例では 21)、次の日にメディア検証、次の月曜日にパッケージ化 (25)、以降の金曜日にアプリの配信を示すカレンダー (29 日)](../../media/MCS-cal.png)
 
 アプリが配信されると、通知されます。 その時点で、承認テストを実行し、Microsoft マネージドデスクトップポータルで作業を行うことができるのは、21日です。 受け入れテストの間にアプリに関して何らかの問題が見つかった場合は、Microsoft マネージドデスクトップポータルでアプリを拒否すると、問題を把握して解決するために、メールで MCS パッケージャーに接続されます。
 

@@ -16,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。
-ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c46ff11b8d08c46c3000232c836af8148c58511
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599394"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083098"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>管理者として検疫済みメッセージを検索して解放する
 
@@ -137,7 +137,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
 
 2. メッセージをクリックして選択し、次のスクリーン ショットに示される **[メッセージの解放]** アイコンをクリックします。
 
-   ![[メッセージの解放] アイコンが強調表示され、解放オプションが示されている検疫ページを表示しています](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![[メッセージの解放] アイコンが強調表示され、解放オプションが示されている検疫ページを表示しています](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    **[選択したメッセージを解放し、送信者を許可します]** をドロップダウン リストからクリックします。
 
@@ -157,7 +157,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
 
 4. **[解放]** をクリックします。
 
-[最新の情報に更新](../media/ITPro-EAC-RefreshIcon.gif) ] アイコン**をクリック** ![してデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることがわかります。
+[最新の情報に更新](../../media/ITPro-EAC-RefreshIcon.gif) ] アイコン**をクリック** ![してデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることがわかります。
 
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>1 つ以上の検疫済みメッセージをすべての受信者に解放する
 
@@ -184,8 +184,8 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
 > [!TIP]
 > 「[メッセージがスパムとしてマークされないようにする方法](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)」の手順に従って、メッセージがスパムとしてマークされないようにします。
 
-**[最新の情報に更新]**![[最新の情報に更新] アイコン](../media/ITPro-EAC-RefreshIcon.gif) アイコンをクリックしてデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることが示されます。
+**[最新の情報に更新]**![[最新の情報に更新] アイコン](../../media/ITPro-EAC-RefreshIcon.gif) アイコンをクリックしてデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることが示されます。
 
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [検疫に関する FAQ](quarantine-faq.md)

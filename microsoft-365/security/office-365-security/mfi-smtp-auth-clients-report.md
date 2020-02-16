@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントレポートについて学習できます。
-ms.openlocfilehash: 7dee70de4000b23302348d964010801c8e097744
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e80ee36fd7e94cc4dc2791f71ae594f0182b4269
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598834"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082633"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP Auth クライアントのレポート
 
@@ -24,31 +24,31 @@ ms.locfileid: "41598834"
 
 メールフローダッシュボードに表示されるウィジェットは、過去7日間に SMTP 認証プロトコルを使用したユーザーまたはサービスアカウントの数を示します。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントのレポート](../media/smtp-auth-clients-report-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントのレポート](../../media/smtp-auth-clients-report-selected.png)
 
 ウィジェットをクリックすると、過去1週間の TLS 使用量とボリュームの集計ビューを表示するポップアップが表示されます。
 
-![SMTP Auth clients レポートのポップアップ](../media/smtp-auth-clients-flyout.png)
+![SMTP Auth clients レポートのポップアップ](../../media/smtp-auth-clients-flyout.png)
 
 [ **SMTP Auth Clients] レポート**リンクをクリックすると、2つの主要なデータビューと2つのデータビューが表示されます。 データピボットは、**送信ボリューム**と**TLS 使用率**です。 データビューは、グラフと詳細の表です。
 
 **送信ボリューム**ビューには、指定された時間範囲に関して SMTP Auth を使用して送信されたメッセージの数が表示されます。 範囲を調整するには、[**フィルター**] をクリックします。 このグラフは、送信者のドメインによって整理されています。 ドメインごとに個別のデータを表示するには、[**データの表示**] ドロップダウンでそのドメインを選択します。
 
-![SMTP Auth Clients レポートでのボリュームの送信](../media/smtp-auth-clients-report-sending-volume.png)
+![SMTP Auth Clients レポートでのボリュームの送信](../../media/smtp-auth-clients-report-sending-volume.png)
 
 [**詳細テーブルの表示**] をクリックすると、送信者とそのメッセージカウントに関する詳細な情報を表示できます。 グラフに戻るには、[**レポートの表示**] をクリックします。
 
-![SMTP Auth Clients レポートでのボリューム送信の詳細表](../media/smtp-auth-clients-report-details-sending-volume.png)
+![SMTP Auth Clients レポートでのボリューム送信の詳細表](../../media/smtp-auth-clients-report-details-sending-volume.png)
 
 Tls**使用率**ピボットは、Office 365 の tls 1.0 と tls 1.1 の今後の廃止によって重要です。 多くのレガシデバイスおよびアプリケーションは、SMTP Auth で TLS 1.0 を使用できる場合にのみ電子メールを送信できなくなります。このピボットにより、以前のバージョンの TLS を使用しているユーザーとシステムアカウントを識別し、アクションを実行することができます。
 
-![SMTP Auth Clients レポートでの TLS の使用](../media/smtp-auth-clients-report-tls-usage.png)
+![SMTP Auth Clients レポートでの TLS の使用](../../media/smtp-auth-clients-report-tls-usage.png)
 
 [**詳細テーブルの表示**] をクリックすると、送信者、SMTP 認証で使用している TLS のバージョン、およびそれらのメッセージ数に関する詳細情報を表示できます。 グラフに戻るには、[**レポートの表示**] をクリックします。
 
 [要求レポート] をクリックして、レポートの詳細バージョンをダウンロードすることもできます。
 
-![SMTP Auth Clients レポートでの TLS 使用の詳細表](../media/smtp-auth-clients-report-details-tls-usage.png)
+![SMTP Auth Clients レポートでの TLS 使用の詳細表](../../media/smtp-auth-clients-report-details-tls-usage.png)
 
 ## <a name="see-also"></a>関連項目
 

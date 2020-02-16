@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Azure AD Identity Protection を構成し、Microsoft 365 Enterprise テスト環境で現在のアカウントを分析します。
-ms.openlocfilehash: 376fc838191314e93ae37accb7fc5066456499fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f3740e42c7ec909f44a3c761dfc743359b3f030
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597164"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068494"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の Azure AD Id 保護
 
@@ -33,10 +33,10 @@ Microsoft 365 エンタープライズテスト環境で Azure AD Id 保護を�
 1. Microsoft 365 Enterprise のテスト環境を作成します。
 2. Azure AD Identity Protection を使用します。
 
-![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
@@ -55,7 +55,7 @@ Microsoft 365 エンタープライズテスト環境で Azure AD Id 保護を�
 4. [**通知**] の下で、[**リスクが検出された通知のユーザー**] をクリックします。
 5. [**リスクが検出されたユーザーのアラート**] ウィンドウで、[**中**] を選択します。
 6. **メールが次のユーザーに送信さ**れる場合は、[**含める**] をクリックして、グローバル管理者アカウントが選択されているメンバーの一覧に含まれていることを確認します。
-7. [**保存**] をクリックします。
+7. **[保存]** をクリックします。
 
 [**保護**] の下にあるさまざまなポリシーをクリックして、それらを構成する方法を確認します。 ポリシーを作成してアクティブにした場合は、アクセスがブロックされている範囲を超えていないか、またはグローバル管理者であってもサインインできないことを確認してください。
 

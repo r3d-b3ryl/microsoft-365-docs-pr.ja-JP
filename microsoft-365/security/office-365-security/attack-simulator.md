@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Office 365 のグローバル管理者として、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃によってビジネスに遭遇する前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。
-ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 93a2601322fd33024c1310e1df69ad1dea2f07b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957412"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083689"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
@@ -57,7 +57,7 @@ ms.locfileid: "41957412"
 
 - 組織に[Office 365 Advanced Threat Protection プラン 2](office-365-atp.md)があり、セキュリティ&amp;コンプライアンスセンターでアタックシミュレータが表示されている (**脅威管理** \>の**アタックシミュレータ**に移動)
 
-    ![脅威管理-アタックシミュレータ](../media/ThreatMgmt-AttackSimulator.png)
+    ![脅威管理-アタックシミュレータ](../../media/ThreatMgmt-AttackSimulator.png)
 
 ## <a name="credential-harvest-spear-phishing-attack"></a>資格情報ハーベストのスピアー-フィッシング攻撃
 
@@ -67,7 +67,7 @@ ms.locfileid: "41957412"
 
 ### <a name="to-simulate-a-spear-phishing-attack"></a>スピアーフィッシング攻撃をシミュレートするには
 
-![電子メール本文の作成](../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![電子メール本文の作成](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
 リッチ HTML エディターは、**電子メール本文**フィールド自体で直接作成することも、html ソースで操作することもできます。
 
@@ -75,15 +75,15 @@ ms.locfileid: "41957412"
 
 2. 攻撃に対して適切なキャンペーン名を指定するか、テンプレートを選択します。
 
-   ![フィッシング開始ページ](../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   ![フィッシング開始ページ](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
 3. 対象の受信者を指定します。 これは、組織内の個人またはグループにすることができます。 攻撃を成功させるには、各対象となる受信者に Exchange Online メールボックスが必要です。
 
-   ![受信者の選択](../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+   ![受信者の選択](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
 
 4. フィッシング電子メールの詳細を構成します。
 
-   ![電子メールの詳細を構成する](../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   ![電子メールの詳細を構成する](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
 
    HTML 形式は、キャンペーンのニーズに合わせて複雑な書式にすることも、基本的なものにすることもできます。 電子メール形式は HTML であるため、画像とテキストを挿入して believability を強化できます。 受信したメッセージが受信側の電子メールクライアントでどのように表示されるかを制御できます。
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598764"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088316"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 の脅威を自動的に調査し対応する
 
@@ -55,11 +55,11 @@ ms.locfileid: "41598764"
 
     どちらの方法でも、調査の一覧を取得できます。
 
-    ![AIR のメインの調査ページ](../media/air-maininvestigationpage.png) 
+    ![AIR のメインの調査ページ](../../media/air-maininvestigationpage.png) 
 
 3. 調査の一覧で、[ **ID** ] 列のアイテムを選択します。 これにより、調査の詳細ページが開き、[調査] グラフが表示されます。
 
-    ![ARI の [調査グラフ] ページ](../media/air-investigationgraphpage.png)
+    ![ARI の [調査グラフ] ページ](../../media/air-investigationgraphpage.png)
 
 4. 調査の詳細については、さまざまなタブを使用してください。
 

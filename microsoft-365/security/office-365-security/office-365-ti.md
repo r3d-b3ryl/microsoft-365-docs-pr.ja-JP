@@ -17,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4bd23dcafeed2faf04979b2c757d5517073a210d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598754"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082500"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
@@ -47,7 +47,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 脅威ダッシュボード ([セキュリティダッシュボード](security-dashboard.md)とも呼ばれます) を使用して、どのような脅威が解決されたかをすばやく確認し、ビジネス意思決定者に対して Office 365 サービスがビジネスをどのようにセキュリティで保護しているかを視覚的に報告することができます。
   
-![脅威ダッシュボード](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![脅威ダッシュボード](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 このダッシュボードを表示して使用するには、Office &amp; 365 セキュリティコンプライアンスセンターで、[**脅威管理** \> ]**ダッシュボード**に移動します。
   
@@ -55,7 +55,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 脅威[エクスプローラー (およびリアルタイム検出)](threat-explorer.md)を使用して脅威を分析し、時間の経過と共に攻撃の量を確認し、脅威ファミリ、攻撃インフラストラクチャなどによるデータの分析を行います。 脅威エクスプローラー (エクスプローラーとも呼ばれます) は、セキュリティアナリストの調査ワークフローの出発点です。
   
-![脅威エクスプローラー](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![脅威エクスプローラー](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
 このレポートを表示して使用するには、Office &amp; 365 セキュリティコンプライアンスセンターで、[**脅威管理** \> **エクスプローラー**] に移動します。
   
@@ -63,11 +63,11 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 インシデントリスト (調査とも呼ばれます) を使用して、フライトセキュリティインシデントの一覧を表示します。 インシデントは、不審な電子メールメッセージなどの脅威を追跡し、さらに調査と修復を行うために使用されます。
   
-![Office 365 の現在の脅威インシデントの一覧](../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Office 365 の現在の脅威インシデントの一覧](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
 組織の現在のインシデントの一覧を表示するには、セキュリティ&amp; /コンプライアンスセンターで、[**脅威管理** \>の**レビュー** \> **インシデント**] に移動します。
   
-![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>のレビュー] を選択します。](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>のレビュー] を選択します。](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulator"></a>攻撃シミュレータ
 
@@ -81,7 +81,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 Office 365 Advanced Threat Protection プラン2のサービスの一部として、セキュリティアナリストは既知の脅威に関する詳細を確認できます。 これは、ユーザーを安全に保つために実行できる追加の予防策/手順があるかどうかを判断するのに役立ちます。
   
-![最近の脅威に関する情報を示すセキュリティ傾向](../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
+![最近の脅威に関する情報を示すセキュリティ傾向](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
 ## <a name="how-do-we-get-these-capabilities"></a>これらの機能はどのように入手できますか?
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。
-ms.openlocfilehash: cfd83b8558ed4cec3a48b536437e0a0dbe75aeaa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c7d5c7ddc8391c70a555279c530cc2bf19e66ca2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598774"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088332"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>ドメインと設定を 1 つの EOP 組織から別の EOP 組織に移動する
 
@@ -28,7 +28,7 @@ ms.locfileid: "41598774"
 
 次の例では、Contoso, Ltd. 社を Contoso Suites 社に併合します。次の図は、ドメイン、メール ユーザーとグループ、および設定を、移動元 EOP 組織 (contoso.onmicrosoft.com) から移動先 EOP 組織 (contososuites.onmicrosoft.com) に移動するプロセスを示しています。
 
-![EOP ドメインと設定の移動](../media/EOP-Move-domains-and-settings.jpg)
+![EOP ドメインと設定の移動](../../media/EOP-Move-domains-and-settings.jpg)
 
 1 つの組織から別の組織へドメインを移動する際の課題は、検証済みのドメインが 2 つの組織で同時には存在し得ないことです。この記事で説明する手順は、この課題に対処するために役立ちます。
 
@@ -57,7 +57,7 @@ ms.locfileid: "41598774"
 
 次に、すべての設定を収集し、それらを .xml ファイルにエクスポートし、そのファイルを移動先のテナントにインポートします。一般に、各設定の **Get** コマンドレットの出力を **Export-Clixml** コマンドレットにパイプ処理することにより、設定を .xml ファイルに保存できます。この後のコード例に示すとおりです。
 
-Exchange Online Protection の PowerShell で、見つけやすい場所に Export というディレクトリを作成し、そのディレクトリに移動します。 次に例を示します。
+Exchange Online Protection の PowerShell で、見つけやすい場所に Export というディレクトリを作成し、そのディレクトリに移動します。 例:
 
 ```PowerShell
 mkdir C:\EOP\Export

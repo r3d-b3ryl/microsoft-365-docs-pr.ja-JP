@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 513a45594dd41db56abe143ea6edca7074539d2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082009"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
@@ -40,7 +40,7 @@ Outlook では、メッセージの送信者が識別できない場合や、id 
 
 Office 365 が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者画像に '? ' が表示されます。
 
-![メッセージが検証に合格しませんでした](../media/message-did-not-pass-verification.jpg)
+![メッセージが検証に合格しませんでした](../../media/message-did-not-pass-verification.jpg)
 
 認証に失敗したすべてのメッセージが悪意のあるものであるとは限りません。 ただし、送信者を認識しない場合は、認証されないメッセージの操作について注意する必要があります。 または、通常は送信者の画像に '? ' が含まれていない送信者を認識したが、突然表示を開始した場合は、送信者がスプーフィングされているという署名になることがあります。
 
@@ -50,7 +50,7 @@ Office 365 をご利用のお客様の場合は、Office 365 セキュリティ 
 
 - セキュリティ & コンプライアンスセンターでは、フィッシングポリシーの下にあるスプーフィング対策保護を使用して、グローバルまたはセキュリティ管理者がこの機能を有効または無効にすることができます。 また、Exchange Online PowerShell で**get-antiphishpolicy**コマンドレットを使用することもできます。 詳細については、「 [Office 365 のフィッシング対策保護](anti-phishing-protection.md)」および「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)」を参照してください。
 
-    ![グラフィックインターフェイスで認証されていない送信者を編集する。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![グラフィックインターフェイスで認証されていない送信者を編集する。](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - 管理者が誤検知を識別し、送信者が未確認の送信者による処理を受信しないようにした場合は、次のいずれかの操作を行って、スプーフィングインテリジェンススプーフィング許可リストに送信者を追加することができます。
 
@@ -82,7 +82,7 @@ Via タグ: 送信者としての場合は、DKIM 署名のドメインまたは
 
 必ずしもそうではありません。 Office 365 では、送信者を認証するために、メッセージ内に他のプロパティがある場合があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Outlook.com メールアカウントを保護する](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 

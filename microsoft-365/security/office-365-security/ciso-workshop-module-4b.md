@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 38f7a1af7592801a97fd8b5156dcbfaa1c5ebfdf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f187c00a7ce55bbcfe66171bbcc1668f431e3b25
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599684"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083516"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO ワークショップモジュール 4b: 脅威保護戦略 
 
 このモジュールでは、microsoft のセキュリティ運用センター (SOC) の進化と軌道について説明します。この機能は、Microsoft のインテリジェントセキュリティグラフの trillions によって提供されています。
 
-- PDF の概要をダウンロードする:[モジュール 4b: 脅威保護戦略](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- PDF の概要をダウンロードする:[モジュール 4b: 脅威保護戦略](../../media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - PowerPoint の概要:[モジュール 4b: 脅威保護戦略](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>概要: 脅威保護戦略 (応答の検出-回復) (3:38)

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962204"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084993"
 ---
 # <a name="getting-help-for-end-users"></a>エンドユーザーのヘルプを取得する
 
@@ -24,7 +24,7 @@ ms.locfileid: "39962204"
 
 ユーザーにサポートを提供するために推奨される方法は、エンドユーザーデバイスに組み込まれた使いやすいインターフェイスである**ヘルプ**を利用することです。  
 
-![ヘルプアプリアイコンを取得する](images/get-help.png)
+![ヘルプアプリアイコンを取得する](../../media/get-help.png)
 
 これは、すべての Microsoft 管理デスクトップデバイスにインストールされているアプリケーションで、タスクバーにピン留めされています。 
 

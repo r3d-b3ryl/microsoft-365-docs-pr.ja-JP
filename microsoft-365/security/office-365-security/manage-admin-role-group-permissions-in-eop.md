@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理者は、exchange Online Protection の Exchange 管理センター (EAC) でアクセス許可を割り当てる、または削除する方法を学習できます。
-ms.openlocfilehash: ab574e4d33d84774ef63f73297447ea66a74430b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01676fab3ed69120a35687d1c6939cb466b8d672
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599034"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082916"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>EOP で管理役割グループのアクセス許可を管理する
 
@@ -38,9 +38,9 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
 
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>EAC を使用してメンバーを管理役割グループに割り当てる
 
-1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを追加する役割グループをクリックしてから、[**編集]** ![編集](../media/ITPro-EAC-EditIcon.gif)アイコンをクリックします。
+1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを追加する役割グループをクリックしてから、[**編集]** ![編集](../../media/ITPro-EAC-EditIcon.gif)アイコンをクリックします。
 
-2. [メンバー] で、[追加](../media/ITPro-EAC-AddIcon.gif)] アイコン**をクリックし** ![ます。 [メンバーの選択] ウィンドウが表示されます。
+2. [メンバー] で、[追加](../../media/ITPro-EAC-AddIcon.gif)] アイコン**をクリックし** ![ます。 [メンバーの選択] ウィンドウが表示されます。
 
 3. 追加するユーザーを検索するか、または一覧からユーザーを選択します。
 
@@ -53,9 +53,9 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
 
 ## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>EAC を使用して管理役割グループからメンバーを削除する
 
-1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを削除する役割グループをクリックしてから、[ **** ![編集アイコン](../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。
+1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを削除する役割グループをクリックしてから、[ **** ![編集アイコン](../../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。
 
-2. [メンバー] で削除するユーザーを選択し、[削除] [**削除]** ![アイコン](../media/ITPro-EAC-RemoveIcon.gif)をクリックします。
+2. [メンバー] で削除するユーザーを選択し、[削除] [**削除]** ![アイコン](../../media/ITPro-EAC-RemoveIcon.gif)をクリックします。
 
 3. **[保存]** をクリックして役割グループに対する変更内容を保存し、 **[管理役割]** ページに戻ります。ユーザーが管理者役割グループから正常に削除されているかは、選択した役割グループの詳細ウィンドウの [メンバー] に、該当するメンバーが表示されていないことで確認します。
 

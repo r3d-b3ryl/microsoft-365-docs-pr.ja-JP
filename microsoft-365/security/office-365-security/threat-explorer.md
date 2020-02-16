@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: 21fc170fc820fa0187c03ac07ddc8b8c771f54ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598244"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082147"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -29,11 +29,11 @@ ms.locfileid: "41598244"
 
 |ATP プラン2を使用すると、次のように表示されることになります。  |ATP プラン1では、次のように表示されることがあります。  |
 |---------|---------|
-|![脅威エクスプローラー](../media/threatmgmt-explorer.png)      |![リアルタイムの検出](../media/threatmgmt-realtimedetections.png)         |
+|![脅威エクスプローラー](../../media/threatmgmt-explorer.png)      |![リアルタイムの検出](../../media/threatmgmt-realtimedetections.png)         |
 
 エクスプローラー (リアルタイム検出) を使用すると、強力なレポートが得られます。これにより、セキュリティ運用チームは脅威を調査して効果的かつ効率的に対処することができます。 このレポートは次のようになります。 
 
-![[脅威管理\>エクスプローラー] に移動します。](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![[脅威管理\>エクスプローラー] に移動します。](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 このレポートでは、次のことができます。
 - [Office 365 のセキュリティ機能によって検出されたマルウェアを参照](#see-malware-detected-in-email-by-technology)
@@ -105,7 +105,7 @@ ms.locfileid: "41598244"
 > [!TIP]
 > ネットワークメッセージ ID エクスプローラーまたは関連するサードパーティ製のツールでネットワークメッセージ ID を使用して検索したときに、[クリック戻る] を特定のメールにマップします。 ネットワークのメッセージ ID を検索すると、クリックの結果に関連付けられた特定の電子メールが管理者に付与されます。 エクスポートが行われると、ネットワークメッセージ ID の相関 id があるため、より迅速かつ強力な分析が可能になります。
 
-![tp_ExportClickResultAndNetworkID .png](../../images/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID .png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
 
@@ -113,11 +113,11 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューで、[**電子メール** > **マルウェア**] を選択します。<br/>![エクスプローラーの [表示] メニュー](../media/ExplorerViewEmailMalwareMenu.png)<br/>
+2. [**表示**] メニューで、[**電子メール** > **マルウェア**] を選択します。<br/>![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
-3. [**送信者**] をクリックし、[**基本** > **検出テクノロジ**] を選択します。<br/>これで、検出テクノロジがレポートのフィルターとして使用できるようになります。<br/>![マルウェア検出テクノロジ](../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+3. [**送信者**] をクリックし、[**基本** > **検出テクノロジ**] を選択します。<br/>これで、検出テクノロジがレポートのフィルターとして使用できるようになります。<br/>![マルウェア検出テクノロジ](../../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
 
-4. オプションを選択し、[**更新**] ボタンをクリックしてそのフィルターを適用します。<br/>![選択されている検出テクノロジ](../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+4. オプションを選択し、[**更新**] ボタンをクリックしてそのフィルターを適用します。<br/>![選択されている検出テクノロジ](../../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
 
 レポートが更新され、選択した [テクノロジ] オプションを使用して、電子メールで検出された結果のマルウェアが表示されます。 ここから、さらに分析を行うことができます。
 
@@ -129,11 +129,11 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** > **フィッシング**] をクリックします。<br/>![エクスプローラーの [表示] メニュー](../media/ExplorerViewEmailPhishMenu.png)<br/>
+2. [**表示**] メニューの [**電子メール** > **フィッシング**] をクリックします。<br/>![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
 3. [**送信者**] をクリックし、[ **url** > ] を選択して、**[verdict] をクリック**します。
 
-4. 1つまたは複数のオプション ([**ブロック**されて**ブロック**する] など) を選択し、[**更新**] ボタンをクリックして、そのフィルターを適用するオプションと同じ行にあるものをクリックします。 (ブラウザーウィンドウを更新しないでください)。<br/>![Url および [verdicts] をクリックします。](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. 1つまたは複数のオプション ([**ブロック**されて**ブロック**する] など) を選択し、[**更新**] ボタンをクリックして、そのフィルターを適用するオプションと同じ行にあるものをクリックします。 (ブラウザーウィンドウを更新しないでください)。<br/>![Url および [verdicts] をクリックします。](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     レポートが更新され、[URL] タブにレポートの下に2つの異なる URL テーブルが表示されます。
 
@@ -143,7 +143,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
    
    2つの URL 表は、配信アクションと場所によって、フィッシング電子メールメッセージの上位の Url を示しています。また、ブロックされた (または警告によってアクセスされた) URL クリックが表示されるので、ユーザーがどのような潜在的なリンクを受信し、ユーザーが操作したかを把握できます。 ここから、さらに分析を行うことができます。 たとえば、グラフの下に、組織の環境でブロックされた電子メールメッセージ内の上位の Url が表示されます。
    
-   ![ブロックされたエクスプローラーの Url](../media/ExplorerPhishClickVerdictURLs.png)
+   ![ブロックされたエクスプローラーの Url](../../media/ExplorerPhishClickVerdictURLs.png)
    
    URL を選択して、詳細情報を表示します。 **注**: url フライアウトダイアログでは、電子メールメッセージのフィルター処理が削除され、お客様の環境での url の公開が完全に表示されます。 これにより、関心のあるメールメッセージをエクスプローラーでフィルター処理し、潜在的な脅威である特定の Url を見つけ、URL フィルターを追加することなく、環境内の URL の公開について理解を深めることができます (URL の詳細ダイアログを使用)。エクスプローラービュー自体。
 
@@ -153,11 +153,11 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。<br/>![エクスプローラーの [表示] メニュー](../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。<br/>![エクスプローラーの [表示] メニュー](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. [**送信者**] をクリックし、[**基本** > **レポートの種類**] を選択します。
 
-4. オプション (**フィッシング**など) を選択し、[**更新**] ボタンをクリックします。 <br/>![ユーザーによって報告されるフィッシング](../media/EmailUserReportedReportType.png)<br/> 
+4. オプション (**フィッシング**など) を選択し、[**更新**] ボタンをクリックします。 <br/>![ユーザーによって報告されるフィッシング](../../media/EmailUserReportedReportType.png)<br/> 
 
 レポートが更新され、組織内のユーザーがフィッシングとして報告した電子メールメッセージに関するデータが表示されます。 この情報を使用して、さらに分析を行い、必要に応じて、 [ATP のフィッシング対策ポリシー](set-up-anti-phishing-policies.md)を調整することができます。
 
