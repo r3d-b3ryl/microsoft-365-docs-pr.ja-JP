@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 173249af0625b24337d3115bde808fd5817b6ae9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d3167e79c43eedc9bb5e5f17caca13cae91bc71
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588777"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074384"
 ---
-# <a name="export-data-from-an-investigation"></a><span data-ttu-id="c5713-102">調査データをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="c5713-102">Export data from an investigation</span></span>
+# <a name="export-data-from-an-investigation"></a><span data-ttu-id="ef401-102">調査データをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="ef401-102">Export data from an investigation</span></span>
 
-<span data-ttu-id="c5713-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="c5713-103">Content coming soon.</span></span>
+<span data-ttu-id="ef401-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="ef401-103">Content coming soon.</span></span>
