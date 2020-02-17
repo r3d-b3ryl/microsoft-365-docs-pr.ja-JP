@@ -44,7 +44,7 @@ ms.locfileid: "42086214"
     
 このようにして、詳細レポートから洞察や推奨されるアクションに移動することができます。 
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [チュートリアル: 洞察から詳細レポートへ](from-an-insight-to-a-detailed-report.md)
   
