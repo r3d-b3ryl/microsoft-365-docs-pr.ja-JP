@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: このトピックでは、Microsoft 365 REST API を使用して、イベントによってビジネス プロセス フローの自動化の保持をセットアップする方法について説明します。
-ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596324"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079095"
 ---
 # <a name="automate-event-based-retention"></a>イベント ベースの保持を自動化する
 
@@ -121,13 +121,13 @@ Rest API は一連の HTTP 操作 (メソッド) をサポートするサービ�
 
 次の図には、1 つのイベントに複数のラベルを関連付けられることを示しています。 「労働者災害補償 (Worker’s compensation)」ラベル下のすべてのファイルと、「従業員の福利厚生 (Employee benefits)」ラベル下のすべてのファイルがどちらも、従業員が組織のメンバーでなくなるという単一のイベントに関連付けられています。 これらのファイルの保持期間はそれぞれ異なります。 そのため、従業員が組織のメンバーでなくなると、各ラベルのファイルには異なる保持期間が適用されます。 各従業員について、ファイルの各種類または各ラベルのこれらの異なる保持期間をすべてトリガーすることは、困難な作業です。 この作業を複数の従業員に対して行う場合は、困難さがさらに強まります。
 
-![イベントの種類、イベント、およびラベルの図](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![イベントの種類、イベント、およびラベルの図](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 そのため、複数の従業員に対して異なる保持期間をトリガーする自動化されたプロセスでは、時間を節約し、エラーをなくし、効率性を非常に高められます。
 
 **このシナリオに関する自動化されたイベント ベースの保持を構成する:**
 
-![従業員が組織のメンバーでなくなるシナリオに関する役割とアクションの図](media/automate-event-driven-retention-employee-termination-diagram.png)
+![従業員が組織のメンバーでなくなるシナリオに関する役割とアクションの図](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - 管理者は Jane Doe、John Smith などのドキュメント セットに従業員フォルダーを作成します。
 
@@ -151,9 +151,9 @@ Rest API は一連の HTTP 操作 (メソッド) をサポートするサービ�
 
 手順 1 - Microsoft 365 REST API を使用してイベントを作成するフローを作成します
 
-![Flow を使用してイベントを作成する](media/automate-event-driven-retention-flow-1.png)
+![Flow を使用してイベントを作成する](../media/automate-event-driven-retention-flow-1.png)
 
-![Flow を使用して REST API を呼び出す](media/automate-event-driven-retention-flow-2.png)
+![Flow を使用して REST API を呼び出す](../media/automate-event-driven-retention-flow-2.png)
 
 ##### <a name="create-an-event"></a>イベントを作成する
 
@@ -423,7 +423,7 @@ REST API を呼び出すサンプル コード
 
 **このシナリオに関する自動化されたイベント ベースの保持を構成する:**
 
-![契約の有効期限シナリオの役割とタスクの図](media/automate-event-driven-retention-contract-expiration.png)
+![契約の有効期限シナリオの役割とタスクの図](../media/automate-event-driven-retention-contract-expiration.png)
 
   - 管理者は、契約の種類ごとにさまざまなフォルダーを含む SharePoint ライブラリを作成します。
 
@@ -451,7 +451,7 @@ REST API を呼び出すサンプル コード
 
 **このシナリオに関する自動化されたイベント ベースの保持を構成する:**
 
-![製品のライフサイクル シナリオの役割とタスクの図](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![製品のライフサイクル シナリオの役割とタスクの図](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - 管理者は、「製品 1」、「製品 2」 などの製品フォルダーをドキュメント セットに作成します。
 

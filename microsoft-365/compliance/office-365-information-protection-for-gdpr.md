@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: このソリューションでは、Office 365 サービスに保存されている機密データを保護する方法を示します。
-ms.openlocfilehash: a6bc231c82e65e7361cdcda7c2087bc48a55dcc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e930b0397e071a9270556041aa396ccfe5c17228
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597844"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071130"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護
 
@@ -30,7 +30,7 @@ ms.locfileid: "41597844"
   
 このソリューションには、個人データの検出、分類、保護、および監視に規定された推奨事項が含まれています。このソリューションでは、例として一般データ保護規制 (GDPR) を使用しますが、その他の多くの規制遵守のためにも同じ手順を適用することができます。
 
-[![GDPR のための Office 365 の情報保護ポスターのサムネイル画像](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
+[![GDPR のための Office 365 の情報保護ポスターのサムネイル画像](../media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
 
 [PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
   

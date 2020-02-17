@@ -1,5 +1,7 @@
 ---
 title: Windows 7 から Windows 10 に自動アップグレード
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 から Windows 10 に大規模な組織向けの自動アップグレード
-ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112701"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085628"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Windows 7 から Windows 10 に大規模な組織向けの自動インプレース アップグレード
 
 Windows 7 を実行している PC のセキュリティ更新プログラムやサポートは、2020 年 1 月 14 日以降は提供されなくなります。 期限前に Windows 7 から Windows 10 へ移行し、複数のオプションを展開するために、Windows 7 から Windows 10 に移行するための最も簡単な方法をご説明します。 簡単に移行するには、既存の PC のインプレース アップグレードを行ういます。これにより、デスクトップ展開プロセスのいくつかの問題を減らすことができます。
 
-<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
+<center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 インプレース アップグレードを使用すると、次に示すようなデスクトップ展開プロセスの範囲が大幅に減少します。
 
@@ -68,7 +70,7 @@ Azure Active Directory、Office およびビジネスアプリの配送とパッ
 
   - それ以外に、ビジネスの準備が整った状態を実現するために構成する必要があるもの
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
+![](../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
 
 アップグレードが完了しない、またはアップグレードができない最も一般的な理由は、次のとおりです。
 

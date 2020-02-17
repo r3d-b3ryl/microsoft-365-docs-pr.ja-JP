@@ -1,5 +1,7 @@
 ---
 title: '手順 8: ユーザーのコミュニケーションとトレーニング'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 10 および Office 365 ProPlus について、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
-ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033662"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085130"
 ---
 # <a name="step-8-user-communications-and-training"></a>手順 8: ユーザーのコミュニケーションとトレーニング
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>手順 8: ユーザーのコミュニケーションとトレーニング</strong></p>
 <p>PC を Windows 10 や Office 365 ProPlus に移行するにあたり、新しい作業環境と作業方法について、ユーザーに通知してください。Microsoft FastTrack によるユーザー採用支援、トレーニング資料とコミュニケーション テンプレートの利用方法、ならびに、ユーザー受け入れや使用状況を監視する新しい方法について説明します。</p></td>
-<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -47,7 +49,7 @@ Office 365、Windows 10、Azure Active Directory での新しいセキュリテ�
 
 これらおよびその他のロカール アプリ、Teams や Planner などのブラウザー ベースのアプリについては、詳細なコミュニケーションとトレーニングのテンプレートが利用可能です。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 また、Outlook での OneDrive にリンクしたファイルの添付、Morph スライドの遷移機能や PowerPoint の Designer 機能など、新しいアプリ内の機能を初めて使う方のためにガイダンスが用意されています。
 
@@ -77,7 +79,7 @@ Windows 10 の場合、生体認証を使用して安全にログインするた
 
 各部署とそれぞれのマネージャーの連携により、最適な展開リングが作成されます。展開や変更を避けたい重要な日時などは、把握しておかなければなりません。計画や関係者からの購入は、綿密に行わないと、ユーザーにとっては、開始が困難になったり、これから生じる何らかの変更を快適に行ったりすることができなくなります。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>フェーズ 1: IT チームと早期に導入する内部関係者 
 
@@ -117,7 +119,7 @@ Microsoft の IT ショーケース シリーズも、Windows 10 の展開に関
 
 パイロットが拡大するにつれ、よく寄せられる質問とセルフサービス コンテンツを文書化して公開し、サポート チケットとヘルプデスクへの問い合わせを削減できるよう、事前に対処できます。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>フェーズ 3 以降: さまざまな運用環境への展開 
 

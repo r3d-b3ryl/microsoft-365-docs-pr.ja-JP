@@ -67,7 +67,7 @@ Microsoft にコンテンツを送信するには、送信ページの左上に�
 
 2. [**送信**] ボタンをクリックします。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)
 

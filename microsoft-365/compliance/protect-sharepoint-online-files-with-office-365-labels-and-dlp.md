@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトには、保持ラベルとデータ損失防止 (DLP) ポリシーを適用してください。'
-ms.openlocfilehash: ad333007b2efdcf577f1c31afc716c525a7abf7e
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855376"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081756"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>保持ラベルと DLP による SharePoint Online ファイルの保護
 
@@ -118,7 +118,7 @@ ms.locfileid: "41855376"
     
 最終的な構成をここに示します。
   
-![4 種類の SharePoint Online チーム サイト用の保持ラベル。](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![4 種類の SharePoint Online チーム サイト用の保持ラベル。](../media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>SharePoint Online サイトの DLP ポリシー
 
@@ -169,7 +169,7 @@ ms.locfileid: "41855376"
     
 機密 SharePoint Online チーム サイトの最終的な構成をここに示します。
   
-![「機密」保持ラベルを使用して分離されている SharePoint Online チーム サイトの DLP ポリシー。](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![「機密」保持ラベルを使用して分離されている SharePoint Online チーム サイトの DLP ポリシー。](../media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 次に、以下の手順で、SharePoint Online の非常に機密性の高い社外秘チーム サイト上のドキュメントを組織外と共有するときにユーザーをブロックする DLP ポリシーを構成します。
   
@@ -215,7 +215,7 @@ ms.locfileid: "41855376"
     
 非常に機密性の高い社外秘 SharePoint Online チーム サイトの最終的な構成をここに示します。
   
-![「高機密」保持ラベルを使用して分離されている SharePoint Online チーム サイトの DLP ポリシー。](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![「高機密」保持ラベルを使用して分離されている SharePoint Online チーム サイトの DLP ポリシー。](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>次の手順
 

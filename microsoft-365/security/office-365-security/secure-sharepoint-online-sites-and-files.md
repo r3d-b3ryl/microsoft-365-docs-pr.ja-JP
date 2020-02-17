@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8497f2c33e89f4e8240de16ba29b1431fff39de4
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855246"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082300"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -51,7 +51,7 @@ ms.locfileid: "41855246"
 
 SharePoint Online チーム サイトの推奨事項は、Microsoft 365 のさまざまな機能に基づいています。 次の図は、4 つの SharePoint Online チーム サイトについて推奨されている構成を示しています。
 
-![SharePoint サイトの推奨構成](../media/SharePoint-site-configurations.png)
+![SharePoint サイトの推奨構成](../../media/SharePoint-site-configurations.png)
 
 次の点が示されています。
 
@@ -141,7 +141,7 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
 
 - 組織内のユーザーは、Outlook on the web、Outlook 2010 以降、OneDrive for Business、SharePoint Online、Office 365 グループのコンテンツに手動でラベルを適用できます。ユーザーは自分が操作するコンテンツの種類を最もよく知っているので、コンテンツを分類して適切な DLP ポリシーを適用できます。
 
-![SharePoint サイトの推奨構成](../media/7fed0126-ab4a-4480-922c-681970642339.png)
+![SharePoint サイトの推奨構成](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 
 図に示されているように、このソリューションでは次の保持ラベルを作成します。
 

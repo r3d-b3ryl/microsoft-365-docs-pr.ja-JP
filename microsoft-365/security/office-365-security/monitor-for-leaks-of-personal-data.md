@@ -18,18 +18,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
-ms.openlocfilehash: fbdae1222a8969b5f7bdd928e7baadfda70bb937
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598794"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088402"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
 個人データの使用と転送を監視するために使用できるツールは数多くあります。このトピックでは、効果的な 3 つのツールについて説明します。
 
-![個人データの使用と転送を監視するためのツール](../media/Monitor-for-leaks-of-personal-data-image1.png)
+![個人データの使用と転送を監視するためのツール](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 この図について:
 
@@ -63,7 +63,7 @@ DLP レポートは、セキュリティ/コンプライアンス センター�
 
 詳細については、「[データ損失防止のレポートの表示](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)」を参照してください。
 
-![DLP ポリシーと一致することを示すレポート](../media/Monitor-for-leaks-of-personal-data-image2.png)
+![DLP ポリシーと一致することを示すレポート](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="office-365-audit-log-and-alert-policies"></a>Office 365 監査ログおよびアラートのポリシー
 
@@ -105,7 +105,7 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 たとえば、次の図は GDPR に役立つ 2 つのクラウド アプリケーション セキュリティ ポリシーを示しています。
 
-![クラウド アプリケーション セキュリティ ポリシーの例](../media/Monitor-for-leaks-of-personal-data-image3.png)
+![クラウド アプリケーション セキュリティ ポリシーの例](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 1 番目のポリシーは、選択した事前定義の PII 属性またはカスタム式を持つファイルが、選択した SaaS アプリから組織外で共有されると警告します。
 
@@ -123,7 +123,7 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 注: Cloud App Security の使用を開始するときやラベルを割り当てる前に、[一般設定] の [Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする] を有効にしてください。設定後は、Cloud App Security は、変更されるまで既存ファイルを再スキャンしません。
 
-![アラートに関する情報を表示するダッシュボード](../media/Monitor-for-leaks-of-personal-data-image4.png)
+![アラートに関する情報を表示するダッシュボード](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 詳しくは、以下の資料を参照してください。
 

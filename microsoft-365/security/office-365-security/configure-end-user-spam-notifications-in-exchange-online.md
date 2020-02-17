@@ -92,7 +92,7 @@ ms.locfileid: "42086466"
     
    - **[保存]** をクリックします。 エンドユーザーのスパム通知の設定を含む、スパムフィルターポリシー設定の概要がウィンドウに表示されます。
 
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)
   

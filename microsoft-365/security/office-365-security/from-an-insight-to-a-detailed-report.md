@@ -44,7 +44,7 @@ ms.locfileid: "42083061"
   
 このようにして、洞察から基になる詳細まで簡単に移動したり、組織のデータ損失防止に関するより多くの情報を決定したりできます。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [チュートリアル: 詳細レポートから洞察を得る](from-a-detailed-report-to-an-insight.md)
   

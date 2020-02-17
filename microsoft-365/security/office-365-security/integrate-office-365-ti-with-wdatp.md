@@ -57,7 +57,7 @@ Microsoft Defender ATP との Office 365 ATP の統合は、セキュリティ &
 5. Microsoft Defender セキュリティセンターで接続を有効にします。
 
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 の脅威の調査と対応](office-365-ti.md)
   

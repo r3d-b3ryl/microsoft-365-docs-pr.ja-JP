@@ -73,7 +73,7 @@ ms.locfileid: "42083502"
   
 ![エンド ユーザー向けスパム通知をテストするためのトランスポート ルール](../../media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)
   

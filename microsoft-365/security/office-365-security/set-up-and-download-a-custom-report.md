@@ -44,7 +44,7 @@ ms.locfileid: "42088000"
     
 6. レポートの電子メール受信者を指定し、[**保存**] を選択します。
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   

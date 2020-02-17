@@ -50,7 +50,7 @@ Microsoft Teams の使用を開始するために、依存サービスを有効�
 Teams のクラウドアプリの割り当てに含める依存サービスは次のとおりです。
 
 - Microsoft Teams
-- SharePoint Online と OneDrive for Business
+- Sharepoint Online と OneDrive for Business
 - Exchange Online
 - Skype for Business Online
 - Microsoft Stream (会議のレコーディング)

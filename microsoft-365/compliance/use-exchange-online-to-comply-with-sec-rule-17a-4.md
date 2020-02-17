@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange Online および セキュリティ/コンプライアンス センターは、推奨通りに構成した場合、米国商品先物取引委員会規則 1.31(c)-(d) (CFTC Rule 1.31(c)-(d) )、米国金融取引業規制機構規則 4511 (FINRA Rule 4511)、および米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) における記憶域に関する該当要件に準拠することが、Cohasset Associates により検証されました。
-ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: d2f92f97ba15bcce9466e8886198c7502c41732b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628593"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069260"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Exchange Online および セキュリティ/コンプライアンス センターを使用して米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に準拠する
 
@@ -36,7 +36,7 @@ Exchange Online および セキュリティ/コンプライアンス センタ�
 
 [Cohasset 評価はこちらからダウンロード](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)できます。
 
-![ダウンロード可能な Cohasset Associates による評価のタイトル ページ](media/cohasset-associates-assessment.png)
+![ダウンロード可能な Cohasset Associates による評価のタイトル ページ](../media/cohasset-associates-assessment.png)
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>この評価は、Exchange Online に固有のものです
 

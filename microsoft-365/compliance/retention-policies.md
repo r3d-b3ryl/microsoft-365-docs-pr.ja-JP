@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774223"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070221"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -87,7 +87,7 @@ SharePoint サイト コレクションの場合、ユーザーがコンテン�
   
 OneDrive アカウントまたは SharePoint サイトにアイテム保持ポリシーが割り当てられていると、コンテンツは次の 2 つの経路のどちらかで処理されます。
 
-![SharePoint および OneDrive のコンテンツ ライフサイクルの図](media/Retention_Diagram_of_retention_flow_in_sites.png)
+![SharePoint および OneDrive のコンテンツ ライフサイクルの図](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. 保存期間中に**コンテンツが変更または削除された場合**、アイテム保持ポリシーが割り当てられたときに存在していた元のコンテンツのコピーが [アイテム保管ライブラリ] に作成されます。 そこでタイマー ジョブが定期的に実行され、保持期間が終了したアイテムを識別し、それらのアイテムは93日目に、完全に削除される第 2 段階の [ごみ箱] に移動されます。 第 2 段階のごみ箱はエンド ユーザーには表示されません (第 1 段階のごみ箱のみが表示されます) が、サイト コレクション管理者はそこからコンテンツを表示および復元できます。
 
@@ -110,7 +110,7 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
   
 アイテム保持ポリシーがメールボックスまたはパブリック フォルダーに割り当てられた後は、コンテンツは次の 2 つのパスのいずれかをたどることができます。
 
-![メールおよびパブリック フォルダーの保持フローの図](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![メールおよびパブリック フォルダーの保持フローの図](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. 保持期間中に**ユーザーがアイテムを変更または完全に削除した場合**。ユーザーが Shift キーと Delete キーを同時に押すか、[削除済みアイテム] から削除を実行すると、アイテムは [回復可能なアイテム] フォルダーに移動されます (編集の場合はコピーされます)。ここでは、プロセスが定期的に実行され、アイテム保持ポリシーの有効期間を経過したアイテムが識別されます。これに該当するアイテムは、保持期間の満了日から 14 日以内に完全に削除されます。既定の設定は 14 日間ですが、最長 30 日間にまで変更できます。
     
@@ -139,7 +139,7 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
   
 保持期間の終了時にコンテンツを完全に削除するかどうかを選択できます。 アイテム保持ポリシーは、古いコンテンツを保持せずに削除することもできます。 次のセクションを参照してください。
   
-![[アイテム保持設定] ページ](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![[アイテム保持設定] ページ](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## <a name="deleting-content-thats-older-than-a-specific-age"></a>特定の経過時間を超えた古いコンテンツを削除する
 
@@ -147,19 +147,19 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
   
 アイテム保持ポリシーによってコンテンツを削除する場合、アイテム保持ポリシーに指定した期間は、ポリシーが割り当てられた時点からではなく、コンテンツが作成または変更された時点から計算されることを理解しておくことが重要です。
   
-![[削除の設定]](media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
+![[削除の設定]](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
   
 たとえば、3 年間経過後のコンテンツを削除するアイテム保持ポリシーを作成して、そのポリシーをすべての OneDrive アカウントに割り当てるとします。また、該当するアカウントには 4 年から 5 年前に作成されたコンテンツが数多く含まれているとします。この場合、そのアイテム保持ポリシーを初めて割り当てたときに、多数のコンテンツがすぐに削除されます。こうした理由から、**コンテンツを削除するアイテム保持ポリシーは、コンテンツに大きな影響を与えることになります**。 
   
 そのため、サイト コレクションに初めてポリシーを割り当てるときには、その前に、既存のコンテンツの経過時間と、そのコンテンツにポリシーが及ぼす影響について考慮する必要があります。また、新しいポリシーを割り当てる前に、サイト所有者に連絡して、発生する可能性のある影響について評価するための時間を与えるようにしてください。アイテム保持ポリシーの作成前に設定を確認すると、この警告が表示されます。
   
-![コンテンツの削除に関する警告](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
+![コンテンツの削除に関する警告](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## <a name="advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions"></a>特定の条件を満たすコンテンツにのみポリシーを適用するための高度な設定
 
 アイテム保持ポリシーは、その場所に含まれるすべてのコンテンツに適用することも、特定のキーワードや[特定の種類の機密情報](what-the-sensitive-information-types-look-for.md)を含むコンテンツにのみ適用するように選択することもできます。
   
-![高度なアイテム保持のオプション](media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
+![高度なアイテム保持のオプション](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
 ### <a name="retain-content-that-contains-specific-keywords"></a>特定のキーワードを含むコンテンツを保持する
 
@@ -169,13 +169,13 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
   
 クエリベースの保持では、検索インデックスを使用してコンテンツを識別します。
   
-![クエリ エディター](media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
+![クエリ エディター](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
   
 ### <a name="retain-content-that-contains-sensitive-information"></a>機密情報が含まれているコンテンツを保持する
 
 アイテム保持ポリシーは、[特定の種類の機密情報](what-the-sensitive-information-types-look-for.md)が含まれているコンテンツにのみ適用できます。たとえば、納税者番号、社会保障番号、パスポート番号などの個人を特定できる情報 (PII) が含まれているコンテンツにのみ固有の保持要件を適用することができます。
   
-![機密情報の種類のページ](media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
+![機密情報の種類のページ](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
 注:
   
@@ -201,7 +201,7 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
     
 - Exchange パブリック フォルダー
     
-![すべての場所のオプション](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![すべての場所のオプション](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 その他の組織全体のアイテム保持ポリシーに関する重要な機能は、次のとおりです。
   
@@ -215,7 +215,7 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
   
 組織全体のポリシーと同様に、場所全体の任意の組み合わせにポリシーを適用する場合は、ポリシーに含めることができるメールボックスまたはサイトの数に制限はありません。たとえば、ポリシーにすべての Exchange 電子メールとすべての SharePoint サイトを含めると、数に関係なくすべてのサイトとメールボックスが含まれるようになります。また、Exchange の場合、ポリシーの適用後に作成された新しいメールボックスには、そのポリシーが自動的に継承されます。
  
-![[場所の選択] ページ](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+![[場所の選択] ページ](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>特定の追加または除外を含むポリシー
 
@@ -235,7 +235,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
   
 Skype for Business ユーザーを選択すると、列ヘッダーの [**名前**] ボックスを選択して、すべてのユーザーをすばやく含めることができます。 ただし、各ユーザーはポリシーの特定のインクルージョンとしてカウントされることを理解することが重要です。 したがって、1,000 人を超えるユーザーを含める場合は、前のセクションで述べた制限が適用されます。 ここですべての Skype ユーザーを選択することは、組織全体のポリシーに規定ですべての Skype ユーザーを含めることができた場合と同じではありません。 
   
-![Skype ユーザーの選択ページ](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
+![Skype ユーザーの選択ページ](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブには作用しない機能です。**[会話履歴]** はエンド ユーザーが無効にできますが、Skype のアーカイブの場合はユーザーがアクセスできない (電子情報開示には使用できる) 非表示フォルダーに Skype の会話のコピーが保存されます。
 
@@ -250,7 +250,7 @@ Teams チャットおよびチャネル メッセージは、Exchange または 
   
 アイテム保持ポリシーがチームに割り当てられた後は、チャットおよびチャネル メッセージは次の 2 つのパスのいずれかをたどることができます。
 
-![Teams チャットとチャネル メッセージの保持フローの図](media/TeamsRetentionLifecycle.png)
+![Teams チャットとチャネル メッセージの保持フローの図](../media/TeamsRetentionLifecycle.png)
 
 1. 保存期間中に**ユーザーがチャットまたはチャネル メッセージを変更または削除した場合**、メッセージは SubstrateHolds フォルダー (すべてのユーザーまたはグループ メールボックスの非表示フォルダー) に移動 (または編集の場合はコピー) され、 保持期間が終了するまで、このフォルダに保存されます。 メッセージは保持期間が終了する日に完全に削除されます。
 
@@ -278,7 +278,7 @@ Teams の保持機能の最適化に継続的に取り組んでおり、今後�
   
 Teams に適用するアイテム保持ポリシーには、[保持ロック](#locking-a-retention-policy)を使用できます。
   
-![チャットおよびチャネル メッセージに対応する Teams の場所](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+![チャットおよびチャネル メッセージに対応する Teams の場所](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
 > 組織内の Skype または Teams の場所用にアイテム保持ポリシーを作成する場合、ユーザーが Outlook デスクトップ クライアントでメールボックス フォルダーのプロパティを表示すると、これらのポリシーの 1 つが既定のフォルダーポリシーとして表示されます。 これは、Outlook の誤表示の問題であり、[既知の問題](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)です。 既定のフォルダー ポリシーとして表示されるのは、フォルダーに適用されるメールボックス保持ポリシーです。 Skype または Teams の保持ポリシーは、ユーザーのメールボックスには適用されません。  
@@ -309,23 +309,23 @@ PowerShell を使用すると、アイテム保持ポリシーから特定の種
 
 次に、アイテム保持ポリシーの一覧を表示し、ロックするポリシーの名前を検索し、`Get-RetentionCompliancePolicy` を実行します。
 
-![PowerShell のアイテム保持ポリシーの一覧](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+![PowerShell のアイテム保持ポリシーの一覧](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 3 番目に、アイテム保持ポリシーに保持ロックを設定するには`Set-RetentionCompliancePolicy`を実行しますが、その際に`RestrictiveRetention`パラメーターを true に設定する必要があります。 次に例を示します。
 
 `Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
 
-![PowerShell の RestrictiveRetention パラメーター](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+![PowerShell の RestrictiveRetention パラメーター](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
 そのコマンドレットを実行すると、確認メッセージが表示されます。**[すべてにはい]** を選択します。
 
-![PowerShell でアイテム保持ポリシーをロックすることを確認するプロンプト](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+![PowerShell でアイテム保持ポリシーをロックすることを確認するプロンプト](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 アイテム保持ポリシーに保持ロックが設定されました。 `Get-RetentionCompliancePolicy`を実行すると、`RestrictiveRetention`パラメーターは true に設定されます。 次に例を示します。
 
 `Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
 
-![PowerShell に表示されるすべてのパラメーターを含むロックされたポリシー](media/retention-policy-preservation-lock-locked-policy.PNG)
+![PowerShell に表示されるすべてのパラメーターを含むロックされたポリシー](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="releasing-a-retention-policy"></a>アイテム保持ポリシーを解除する
 
@@ -337,7 +337,7 @@ PowerShell を使用すると、アイテム保持ポリシーから特定の種
 
 コンテンツには複数のアイテム保持ポリシーが適用され、各ポリシーに異なるアクション (保持または削除、あるいはその両方) と保持期間が設定されている場合が多くあります。どれが優先されるのでしょうか? 概ね、あるポリシーで保持されているコンテンツを別のポリシーで完全に削除することはできないので、ご安心ください。
   
-![保持の原則の図](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![保持の原則の図](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 さまざまなアイテム保持ポリシーが、どのようにコンテンツに適用されるかを理解するために、次に示す保持の原則を覚えておいてください。
   

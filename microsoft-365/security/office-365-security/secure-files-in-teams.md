@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: Microsoft Teams 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: d06b3b196b11804c8c06d3b63469b2c0a9aa2fcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598474"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088132"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Microsoft Teams のファイルを保護する
 
@@ -49,7 +49,7 @@ ms.locfileid: "41598474"
 
 セキュリティで保護されたチームの推奨事項は、Microsoft 365 のさまざまな機能に基づいています。 次の図は、推奨されている構成を示してます。
 
-![チームの推奨構成](../media/secure-team-configurations.png)
+![チームの推奨構成](../../media/secure-team-configurations.png)
 
 次の点が示されています。
 

@@ -1,5 +1,7 @@
 ---
 title: 'フェーズ 3: Windows 10 Enterprise のインフラストラクチャの終了条件'
+f1.keywords:
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の Windows 10 Enterprise の条件を満たしていることを確認します。
-ms.openlocfilehash: d51392572c78edb1a21f5edc3229057b9af3f514
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801222"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085556"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>フェーズ 3: Windows 10 Enterprise のインフラストラクチャの終了条件
 
-![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![フェーズ 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 Enterprise インフラストラクチャが次の必須基準を満たすとともに、オプションの基準も考慮済みであることをご確認ください。
 
@@ -125,4 +127,4 @@ Windows 10 Enterprise インフラストラクチャは、新しいデバイス�
 
 |||
 |:-------|:-----|
-|![フェーズ 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は [Office 365 ProPlus](office365proplus-infrastructure.md) です。 |
+|![フェーズ 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は [Office 365 ProPlus](office365proplus-infrastructure.md) です。 |

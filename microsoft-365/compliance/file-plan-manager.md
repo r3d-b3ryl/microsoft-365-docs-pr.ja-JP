@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594578"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074215"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "41594578"
 
 セキュリティおよびコンプライアンス センターのファイル計画マネージャーにアクセスするには、**[レコードの管理]** > **[ファイル計画]** に移動します。
 
-![[ファイル計画] ページ](media/file-plan-page.png)
+![[ファイル計画] ページ](../media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>ファイル計画マネージャーへのアクセス
 
@@ -89,7 +89,7 @@ ms.locfileid: "41594578"
     - 自動削除
     - 要確認 (廃棄レビューとも呼ばれる)
 
-![ファイル計画でのラベル設定](media/file-plan-label-columns.png)
+![ファイル計画でのラベル設定](../media/file-plan-label-columns.png)
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>保持ラベル ファイル計画記述子列
 
@@ -99,11 +99,11 @@ ms.locfileid: "41594578"
 
 保持ラベルを作成または編集時のファイル計画記述子に関する手順の画面です。
 
-![ファイル計画記述子](media/file-plan-descriptors.png)
+![ファイル計画記述子](../media/file-plan-descriptors.png)
 
 ファイル計画マネージャーの [**ラベル**] タブのファイル計画記述子列の画面です。
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>分析したりオフライン レビューを実行したりするために、すべての既存の保持ラベルをエクスポートする
 
@@ -111,11 +111,11 @@ ms.locfileid: "41594578"
 
 すべての保持ラベルをエクスポートするには: [**ファイル計画**] ページで [**ファイル計画の操作**] \> [**ラベルをエクスポート**] の順に移動します。
 
-![ファイル計画をエクスポートするオプション](media/file-plan-export-labels-option.png)
+![ファイル計画をエクスポートするオプション](../media/file-plan-export-labels-option.png)
 
 既存のすべての保持ラベルを含む *.csv ファイルが開きます。
 
-![すべての保持ラベルが表示された CSV ファイル](media/file-plan-csv-file.png)
+![すべての保持ラベルが表示された CSV ファイル](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>ファイル計画に保持ラベルをインポートする
 
@@ -125,13 +125,13 @@ ms.locfileid: "41594578"
 
 1. [**ファイル計画**] ページで [**ファイル計画の操作**]  >  [**ラベルをインポート**] の順に移動します。
 
-   ![ファイル計画のインポートのオプション](media/file-plan-import-labels-option.png)
+   ![ファイル計画のインポートのオプション](../media/file-plan-import-labels-option.png)
 
-   ![空白のファイル計画テンプレートをダウンロードするオプション](media/file-plan-blank-template-option.png)
+   ![空白のファイル計画テンプレートをダウンロードするオプション](../media/file-plan-blank-template-option.png)
 
 2. 空白のテンプレートをダウンロードして、新しい保持ラベルをインポートします。 または、組織の既存の保持ラベルをエクスポートするときにエクスポートされる .csv ファイルから開始することもできます。
 
-   ![Excel で開かれた空白のファイル計画テンプレート](media/file-plan-blank-template.png)
+   ![Excel で開かれた空白のファイル計画テンプレート](../media/file-plan-blank-template.png)
 
 3. テンプレートに入力します。 次に、ファイル計画テンプレートのプロパティと各プロパティの有効な値について説明します。<br/>
 
@@ -159,16 +159,16 @@ ms.locfileid: "41594578"
 
    保持ラベルに関する情報を含むテンプレートの例を次に示します。
 
-   ![情報が入力されたファイル計画テンプレート](media/file-plan-filled-out-template.png)
+   ![情報が入力されたファイル計画テンプレート](../media/file-plan-filled-out-template.png)
 
 4. ファイル計画のインポート ウィザード ページの手順 3 で、[**ファイルの参照**] をクリックして、入力済みのテンプレートをアップロードします。 
 
    ファイル計画マネージャーでエントリが検証され、インポートの統計情報が表示されます。
 
-   ![ファイル計画のインポートの統計情報](media/file-plan-import-statistics.png)
+   ![ファイル計画のインポートの統計情報](../media/file-plan-import-statistics.png)
 
    検証エラーが発生した場合、ファイル計画のインポートはインポート ファイル内のすべてのエントリを引き続き検証し、インポート ファイル内でエラーを参照するラインまたは行の番号を表示し、表示されたエラー結果をコピーます。これにより、簡単にインポート ファイルに戻り、エラーを修正することができます。
 
 5. インポートが完了したらファイル計画マネージャーに戻り、新しい保持ラベルを新規または既存の保持ポリシーと関連付けます。
 
-   ![ラベルを公開するオプション](media/file-plan-publish-labels-option.png)
+   ![ラベルを公開するオプション](../media/file-plan-publish-labels-option.png)

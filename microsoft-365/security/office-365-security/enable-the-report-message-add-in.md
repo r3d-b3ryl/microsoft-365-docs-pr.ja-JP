@@ -189,7 +189,7 @@ Office 365 の全体管理者または Exchange Online 管理者であり、Exch
 
    ![レポートメッセージアドインの設定](../../media/EditReportMessageAddIn.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 

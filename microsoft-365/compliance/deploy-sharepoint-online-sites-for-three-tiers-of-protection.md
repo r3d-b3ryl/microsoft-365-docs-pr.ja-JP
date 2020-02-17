@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '概要: SharePoint Online チーム サイトを作成し、さまざまなレベルの情報保護用に構成します。'
-ms.openlocfilehash: 1f67dd1956059162902aefdb194e5e514d063778
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855256"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075531"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3 層の保護用に SharePoint Online サイトを展開する
 
@@ -41,7 +41,7 @@ ms.locfileid: "41855256"
 
 最終的な構成をここに示します。
   
-![パブリック SharePoint Online チーム サイトのベースライン レベルの保護。](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![パブリック SharePoint Online チーム サイトのベースライン レベルの保護。](../media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>プライベート
 
@@ -49,7 +49,7 @@ ms.locfileid: "41855256"
   
 最終的な構成をここに示します。
   
-![プライベート SharePoint Online チーム サイトのベースライン レベルの保護。](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![プライベート SharePoint Online チーム サイトのベースライン レベルの保護。](../media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>機密 SharePoint Online チーム サイト
 
@@ -70,7 +70,7 @@ ms.locfileid: "41855256"
 
 最終的な構成をここに示します。
   
-![独立した SharePoint Online チーム サイトの機密レベルの保護。](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![独立した SharePoint Online チーム サイトの機密レベルの保護。](../media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 サイトのメンバーは、いずれかのアクセス グループのグループ メンバーシップを使用して、サイトのリソースについて安全に共同作業できるようになりました。
   
@@ -94,7 +94,7 @@ ms.locfileid: "41855256"
 
 最終的な構成をここに示します。
   
-![独立した SharePoint Online チーム サイトの高機密レベルの保護。](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![独立した SharePoint Online チーム サイトの高機密レベルの保護。](../media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 サイトのメンバーは、いずれかのアクセス グループのグループ メンバーシップを使用して、サイトのリソースについて安全に共同作業できるようになりました。
   

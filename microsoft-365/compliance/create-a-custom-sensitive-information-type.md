@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
-ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 726f21416a3e83a9c3024d810c4335ea263b3c20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596214"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078063"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
@@ -69,7 +69,7 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
 1. セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して **[作成]** をクリックします。
 
-    ![機密情報の種類と [作成] ボタンの場所](media/scc-cust-sens-info-type-new.png)
+    ![機密情報の種類と [作成] ボタンの場所](../media/scc-cust-sens-info-type-new.png)
 
 2. **[名前と説明の選択]** ページが開いたら、次の値を入力します。
 
@@ -77,7 +77,7 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
   - **[説明]**: 9 桁の Contoso 従業員 ID 番号を検出します。
 
-    ![名前と説明のページ](media/scc-cust-sens-info-type-new-name-desc.png)
+    ![名前と説明のページ](../media/scc-cust-sens-info-type-new-name-desc.png)
 
     完了したら、**[次へ]** をクリックします。
 
@@ -101,17 +101,17 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
     - 既定の **[文字の近接]** 値 300 のままにします。
 
-    ![[一致の要件] ページ](media/scc-cust-sens-info-type-new-reqs.png)
+    ![[一致の要件] ページ](../media/scc-cust-sens-info-type-new-reqs.png)
 
     完了したら、**[次へ]** をクリックします。
 
 4. **[確認と最終処理]** ページが開いたら、設定を確認して **[完了]** をクリックします。
 
-    ![[確認と最終処理] ページ](media/scc-cust-sens-info-type-new-review.png)
+    ![[確認と最終処理] ページ](../media/scc-cust-sens-info-type-new-review.png)
 
 5. 次のページでは、[**はい**] をクリックして新しいカスタムの機密情報の種類をテストするように促されます。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする](#test-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。ルールのテストを後で行うには、[**いいえ**] をクリックします。
 
-    ![推奨をテストするページ](media/scc-cust-sens-info-type-new-test.png)
+    ![推奨をテストするページ](../media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
@@ -131,7 +131,7 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
 セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して、変更するカスタムの機密情報の種類を選択し、[**編集**] をクリックします。
 
-  ![機密情報の種類と [編集] ボタンの場所](media/scc-cust-sens-info-type-edit.png)
+  ![機密情報の種類と [編集] ボタンの場所](../media/scc-cust-sens-info-type-edit.png)
 
 ここでは、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成したときと同じオプションを選択できます。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](#create-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。
 
@@ -155,7 +155,7 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
 2. ポップアップが開いたら、**[削除]** (複数選択した場合は **[機密情報の種類の削除]**) をクリックします。
 
-    ![機密情報の種類と [削除] ボタンの場所](media/scc-cust-sens-info-type-delete.png)
+    ![機密情報の種類と [削除] ボタンの場所](../media/scc-cust-sens-info-type-delete.png)
 
 3. 警告メッセージが表示されたら、**[はい]** をクリックします。
 
@@ -169,14 +169,14 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
 2. テストするカスタムの機密情報の種類を 1 つ以上選択します。ポップアップが開いたら、**[種類のテスト]** (複数選択した場合は **[機密情報の種類のテスト]**) をクリックします。
 
-    ![機密情報の種類と [種類のテスト] ボタンの場所](media/scc-cust-sens-info-type-test.png)
+    ![機密情報の種類と [種類のテスト] ボタンの場所](../media/scc-cust-sens-info-type-test.png)
 
 3. [**テストの対象ファイルのアップロード**] ページが開いたら、ファイルをドラッグ アンド ドロップするか、または [**参照**] をクリックしてファイルを選択し、テストの対象ドキュメントをアップロードします。
 
-    ![[テストの対象ファイルのアップロード] ページ](media/scc-cust-sens-info-type-test-upload.png)
+    ![[テストの対象ファイルのアップロード] ページ](../media/scc-cust-sens-info-type-test-upload.png)
 
 4. **[テスト]** ボタンをクリックして、ファイル内のパターン マッチについてドキュメントをテストします。
 
 5. [**照合結果**] ページで、[**完了**] をクリックします。
 
-    ![照合結果](media/scc-cust-sens-info-type-test-results.png)
+    ![照合結果](../media/scc-cust-sens-info-type-test-results.png)

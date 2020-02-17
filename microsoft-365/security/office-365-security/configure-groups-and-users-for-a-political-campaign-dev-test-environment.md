@@ -1,5 +1,7 @@
 ---
 title: 選挙運動の開発/テスト環境用にグループとユーザーを構成する
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: a5bce86ef7bce79d58628b78d95e02484051c389
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971845"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083486"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -185,11 +187,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 この開発/テスト環境で Office 365 と EMS の試用版サブスクリプションを使用するために、これらの値を記録します。
 
-- 試用版サブスクリプションの組織名 ![下線](../media/Common-Images/TableLine.png)
+- 試用版サブスクリプションの組織名 ![下線](../../media/Common-Images/TableLine.png)
 
   たとえば、試用版サブスクリプションのドメイン名が contoso.onmicrosoft.com である場合、組織名は「contoso」です。
 
-- Office 365 グローバル管理者名 ![下線](../media/Common-Images/TableLine.png).onmicrosoft.com
+- Office 365 グローバル管理者名 ![下線](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   このアカウントのパスワードや、その他のユーザー アカウントの共通のパスワードを安全な場所に記録します。
 

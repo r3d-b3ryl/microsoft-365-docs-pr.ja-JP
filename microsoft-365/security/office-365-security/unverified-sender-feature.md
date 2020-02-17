@@ -82,7 +82,7 @@ Via タグ: 送信者としての場合は、DKIM 署名のドメインまたは
 
 必ずしもそうではありません。 Office 365 では、送信者を認証するために、メッセージ内に他のプロパティがある場合があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Outlook.com メールアカウントを保護する](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 

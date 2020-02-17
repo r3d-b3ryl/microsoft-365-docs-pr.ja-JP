@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
-ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597214"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068798"
 ---
 # <a name="view-the-data-governance-reports"></a>データ ガバナンスのレポートを表示する
 
@@ -38,10 +38,10 @@ ms.locfileid: "41597214"
   
 これらのレポートは、セキュリティ&amp;コンプライアンス センター\>**情報ガバナンス**\>**ダッシュボード**で確認できます。
   
-![過去 90 日間のラベルの傾向を示すグラフ](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![過去 90 日間のラベルの傾向を示すグラフ](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 データ ガバナンス レポートは、日付 (最長 90 日間) と場所 (Exchange、SharePoint、OneDrive for Business) でフィルタリングできます。最新のデータは、レポートに表示されるまでに最長 24 時間かかることがあります。
   
-![データ ガバナンス レポートのフィルター](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![データ ガバナンス レポートのフィルター](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 

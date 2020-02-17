@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: 7561daccb400fd5364e8c1ed948924f7975af5a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596094"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079805"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Office 365 の個人データにラベルを適用する
 
@@ -41,7 +41,7 @@ Office 365 で個人用データを保護するためにラベルを使用して
 
 保持ラベルは Exchange Online のメールに適用できます。これらのラベルは Office 365 のデータ損失防止と連動することができます。 
 
-![Office 365 のラベルと Azure Information Protection のラベル](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Office 365 のラベルと Azure Information Protection のラベル](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 この図について:
@@ -55,7 +55,7 @@ Office 365 で個人用データを保護するためにラベルを使用して
 
 次の図は、ラベル ポリシー、データ損失防止ポリシー、Cloud App Security ポリシーで保持ラベルと機密情報の種類を使用する方法を示しています。
 
-![Office のラベルと機密情報の種類](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Office のラベルと機密情報の種類](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 次の表では、図での例と同じものを見やすいように記載しています。
 
@@ -196,7 +196,7 @@ GDPR の対象となる個人データについては、環境に合わせて設
 
 次の図は、顧客データ ラベル用の自動適用ラベルを作成する方法を示しています。
 
-![顧客データのラベルの作成と適用](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![顧客データのラベルの作成と適用](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 この図について:
 

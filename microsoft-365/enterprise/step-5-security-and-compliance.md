@@ -1,5 +1,7 @@
 ---
 title: 手順 5 - セキュリティとコンプライアンスに関する考慮事項
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows と Office の重要なセキュリティとコンプライアンスに関する考慮事項について説明します。
-ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112561"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085269"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>手順 5: セキュリティとコンプライアンスに関する考慮事項
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>手順 5: セキュリティとコンプライアンスに関する考慮事項</strong></p>
 <p>Windows 10 と Office 365 ProPlus には、データ、デバイスおよびユーザーを保護し、素早く脅威を検出して対応するための新しい方法が用意されています。Windows 10 への移行時のディスクの暗号化、マルウェア対策のアプリとポリシーに関連する共通の問題に対処する方法についても説明します。</p></td>
-<td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -63,7 +65,7 @@ Windows 10 および Office 365 ProPlus に移行する際に追加できる新�
 
 以前のバージョンの Windows と Office に使用されていた Active Directory グループ ポリシーの設定は、Windows 10 と Office 365 ProPlus に直接変換できないことがあり、新しいセキュリティ機能とコンプライアンス機能には、古いものとは異なる考慮事項があります。現行バージョンの Windows と Office に対応するセキュリティ ポリシーのベースラインを取得するために、Microsoft Security Compliance Toolkit の使用をお勧めします。さらに、Microsoft Intune の一部としてモバイル デバイス管理ポリシーを検討してみることもお勧めします。
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
 ## 
 

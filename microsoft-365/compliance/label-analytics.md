@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルと機密ラベルを作成した後に、テナント全体でどのように使用されているかを確認することができます。 Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのラベル分析で、どのラベルが最もよく使われているか、どこで適用されているかを簡単に確認できます。
-ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600584"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072302"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>ラベル分析によるラベル使用状況の表示
 
@@ -36,7 +36,7 @@ ms.locfileid: "41600584"
 
 ラベル分析は、[[Microsoft 365 コンプライアンス センター]](https://compliance.microsoft.com/labelanalytics) または [[Microsoft 365 セキュリティ センター]](https://security.microsoft.com/labelanalytics)  >  **[分類]**  >  **[ラベル分析]** で確認できます。
 
-![ラベル分析のページ](media/label-analytics-page.png)
+![ラベル分析のページ](../media/label-analytics-page.png)
 
 ## <a name="sensitivity-label-usage"></a>機密ラベルの使用状況
 
@@ -50,7 +50,7 @@ Azure Information Protection のレポートは、Microsoft 365 コンプライ�
 - 上位の各ラベルの数を確認するには、棒グラフをポイントすると表示されるツール ヒントを確認してください。
 - レポートでは、アプリごとに機密ラベルがどこに適用されているかを示します (保持ラベルは場所ごとに示されます)。
 
-![機密ラベルの使用状況レポート](media/sensitivity-label-usage-report.png)
+![機密ラベルの使用状況レポート](../media/sensitivity-label-usage-report.png)
 
 ## <a name="retention-label-usage"></a>保持ラベルの使用状況
 
@@ -63,7 +63,7 @@ Azure Information Protection のレポートは、Microsoft 365 コンプライ�
 - レポートでは、場所ごとに保持ラベルがどこに適用されているかを示します (機密ラベルはアプリごとに示されます)。
 - 保持レベルは、テナントの全期間のデータの概要で、特定の日付範囲にフィルター処理はされません。 これに対し、[ラベル アクティビティ エクスプローラー](view-label-activity-for-documents.md)は、過去 30 日間のみのデータが表示されます。
 
-![保持ラベルの使用状況レポート](media/retention-label-usage-report.png)
+![保持ラベルの使用状況レポート](../media/retention-label-usage-report.png)
 
 ## <a name="view-all-content-with-a-specific-retention-label"></a>特定の保持ラベルが付いたコンテンツをすべて表示する
 
@@ -71,15 +71,15 @@ Azure Information Protection のレポートは、Microsoft 365 コンプライ�
 
 最初に、レポートの下部にある **[詳細の表示]** を選択します。
 
-![保持ラベルの使用状況レポートの下部にある [詳細の表示] オプション](media/retention-label-usage-view-details.png)
+![保持ラベルの使用状況レポートの下部にある [詳細の表示] オプション](../media/retention-label-usage-view-details.png)
 
 次に、保持ラベル > **右側のウィンドウの [アイテムを参照する]** を選択します。
 
-![右側のウィンドウの [アイテムを参照する] オプション](media/retention-label-usage-explore-items.png)
+![右側のウィンドウの [アイテムを参照する] オプション](../media/retention-label-usage-explore-items.png)
 
 そのラベルで、**[アクティビティ]** タブを選択すると、そのラベルの場所ごとのアイテム数が表示されます。
 
-![保持ラベルの [アクティビティ] タブ](media/retention-label-usage-activity-tab.png)
+![保持ラベルの [アクティビティ] タブ](../media/retention-label-usage-activity-tab.png)
 
 **[このラベルを含むアイテム]** タブも選択できます。それから、特定の場所について確認することができます。
 
@@ -88,7 +88,7 @@ Azure Information Protection のレポートは、Microsoft 365 コンプライ�
 
 メールボックスまたはサイト コレクションを選択すると、その場所の保持ラベルを含むアイテムの一覧が表示されます。
 
-![[このラベルを含むアイテム] タブでその保持ラベルを持つすべてのアイテムを表示](media/retention-label-usage-content-explorer.png)
+![[このラベルを含むアイテム] タブでその保持ラベルを持つすべてのアイテムを表示](../media/retention-label-usage-content-explorer.png)
 
 ## <a name="permissions"></a>アクセス許可
 

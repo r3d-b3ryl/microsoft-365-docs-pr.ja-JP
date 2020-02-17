@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: データ損失防止 (DLP) ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596064"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079761"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
 
@@ -46,7 +46,7 @@ DLP では、次のことができます。
 
 詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
 
-![データ損失防止ポリシーを作成するためのオプション](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
+![データ損失防止ポリシーを作成するためのオプション](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
 この図は、DLP ポリシーを作成するためのオプションを示しています。
 
@@ -172,7 +172,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 
 次の図では、個人データへのアクセスを保護するために適用できる追加の保護について説明しています。
 
-![個人データへのアクセスを保護するための追加の保護](Media/Apply-protection-to-personal-data-in-Office-365-image2.png)
+![個人データへのアクセスを保護するための追加の保護](../media/Apply-protection-to-personal-data-in-Office-365-image2.png)
 
 次の表では、図での情報と同じものを見やすいように記載しています。
 
@@ -222,7 +222,7 @@ GDPR 準拠用に構成された環境では、次の機能を使用できます
 
 SharePoint のアクセス許可を使用して、サイトまたはそのコンテンツへのユーザーのアクセスを制限します。個々のユーザーまたは Azure Active Directory グループを既定の SharePoint グループに追加します。または、細かくコントロールするためにカスタム グループを作成します。
 
-![フル コントロールから表示のみまでのアクセス許可レベル](Media/Apply-protection-to-personal-data-in-Office-365-image3.png)
+![フル コントロールから表示のみまでのアクセス許可レベル](../media/Apply-protection-to-personal-data-in-Office-365-image3.png)
 
 この図は、フル コントロールから表示のみまでのアクセス許可レベルを示しています。次の表には、同じ情報が含まれています。
 
@@ -368,7 +368,7 @@ AD FS を使用するハイブリッド ID 環境については、「[推奨さ
 
 次の図は、クラウド サービス (SaaS、PaaS)、アカウントの種類 (テナント ドメイン アカウントと B2B アカウント)、およびサービス アクセス機能の関連について説明しています。どの機能を B2B アカウントで使用できるかを銘記することが重要です。
 
-![クラウド サービス、アカウントの種類、およびアクセス機能](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
+![クラウド サービス、アカウントの種類、およびアクセス機能](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
 アクセシビリティのため、このセクションの残りの部分でこの図について説明します。
 
