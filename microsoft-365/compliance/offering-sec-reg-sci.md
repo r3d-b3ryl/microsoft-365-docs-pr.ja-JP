@@ -69,12 +69,12 @@ SCI ルールは、そのような自己規制組織 (SROs) をストックお�
 - [規制 SCI に関してよく寄せられる質問に対する SEC の回答](https://www.sec.gov/divisions/marketreg/regulation-sci-faq.shtml)
 - [ビジネス継続性と障害復旧 (BCDR): Azure ペアリングされた領域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [クラウドコンピューティングの規制原則と Microsoft Online Services のコンプライアンスマップ](https://aka.ms/FinServ-Guide-US)
-- [Microsoft Cloud Financial Services Compliance Program](https://aka.ms/FSCP-Print)
+- [Microsoft Cloud Financial Services Compliance プログラム](https://aka.ms/FSCP-Print)
 - [Azure における金融サービス コンプライアンス](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft 金融サービス](https://aka.ms/FinServ-Compliance)
 - [Microsoft および SEC Rule 17a-4](offering-SEC-17a-4.md)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
 このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) ファイルをダウンロードできます。

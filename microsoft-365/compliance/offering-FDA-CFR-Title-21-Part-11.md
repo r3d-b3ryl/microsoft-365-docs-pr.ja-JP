@@ -95,6 +95,6 @@ Microsoft は、そのエンタープライズクラウドサービスが、管�
 - [Microsoft Cloud for Government](https://aka.ms/govt-cloud)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 
 このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。
