@@ -69,7 +69,7 @@ ms.locfileid: "42083470"
     
 レポートのスケジュールを作成すると、そのレポートは電子メールによって受信者の電子メールアドレスに自動的に配信されます。 
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   
