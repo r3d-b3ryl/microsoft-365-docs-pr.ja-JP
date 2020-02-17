@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f79fcebf220f1aee98ba97c537ff80b65b6e3881
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582856"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072791"
 ---
 # <a name="insider-risk-management-users-preview"></a>Insider リスク管理ユーザー (プレビュー)
 
@@ -29,7 +29,7 @@ Insider リスク管理ユーザーは、1つ以上の insider リスク管理�
 - **確認**された違反: ユーザーの*確認ポリシー違反*として解決されたケースの数。
 - **ケース**: ユーザーの現在のアクティブなケース。
 
-![Insider リスク管理ユーザーダッシュボード](media/insider-risk-users-dashboard.png)
+![Insider リスク管理ユーザーダッシュボード](../media/insider-risk-users-dashboard.png)
 
 ## <a name="view-user-details"></a>ユーザーの詳細を表示する
 

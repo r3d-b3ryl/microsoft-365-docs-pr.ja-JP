@@ -10,16 +10,24 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9a5d163d14dda6aed50a39a27ae9a03ffbed526c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c021654c99faf3104766dc05fe466ce9537d656
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596584"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091360"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 このトピックでは、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新されたトピックを一覧表示します。 「更新された」トピックは、マテリアルが追加または修正されたものであり、誤入力、スタイル、書式設定の問題の修正などのマイナー修正がリストされていません。 [GitHub 上のリポジトリ](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)にアクセスすることによって、特定のコミット (変更の詳細を含む) の履歴をいつでも表示できます。
+
+## <a name="january-2020"></a>2020 年 1 月
+新規または変更されたトピック | 説明
+--- | ---
+[ユーザーがデバイスを使えるようにする](get-started/get-started-devices.md)| 更新されたトピック
+[管理ポータルで管理者の連絡先を追加および確認する](get-started/add-admin-contacts.md) | 更新されたトピック
+[デバイス構成](service-description/device-policies.md) | 更新されたトピック
+
 
 ## <a name="december-2019"></a>2019 年 12 月
 新規または変更されたトピック | 説明

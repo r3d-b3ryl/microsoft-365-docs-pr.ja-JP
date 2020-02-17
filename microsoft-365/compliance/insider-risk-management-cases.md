@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590678"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072858"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Insider リスク管理ケース (プレビュー)
 
@@ -41,7 +41,7 @@ Insider リスク管理**ケースダッシュボード**を使用すると、�
 - **最終更新**日: ケースの状態に追加のケースメモまたは変更があったために経過した時間。
 - **最終更新者**: ケースを最後に更新した insider リスク管理アナリストまたは調査担当者の名前。
 
-![Insider リスク管理ケースダッシュボード](media/insider-risk-cases-dashboard.png)
+![Insider リスク管理ケースダッシュボード](../media/insider-risk-cases-dashboard.png)
 
 **検索**コントロールを使用して、ケース名を特定のテキストで検索し、ケースフィルターを使用して、次の属性でケースを並べ替えます。
 
@@ -67,9 +67,9 @@ Insider リスク管理**ケースダッシュボード**を使用すると、�
 - **通知確認**: ケースに対して確認されたユーザーの警告のリスト。
 - **リスクがあるコンテンツ**: コンテンツソースと種類で並べ替えられたコンテンツのリスト。 たとえば、SharePoint Online のケース警告コンテンツの場合は、警告のリスクアクティビティに関連付けられているフォルダーまたはファイル名が、ケースに表示されることがあります。
 
-![Insider リスク管理ケースの詳細](media/insider-risk-case-details.png)
+![Insider リスク管理ケースの詳細](../media/insider-risk-case-details.png)
 
-### <a name="alerts"></a>Alerts (警告)
+### <a name="alerts"></a>アラート
 
 [**通知**] タブには、ケースに含まれている現在の通知が要約されます。 新しい警告は既存のケースに追加され、割り当てられたときに**警告**キューに追加される場合があります。 次の警告属性がキューに一覧表示されます。
 
@@ -89,7 +89,7 @@ Insider リスク管理**ケースダッシュボード**を使用すると、�
 
 [**ユーザーアクティビティ**] タブは、内部リスク分析および insider リスク管理ソリューションのケースを調査するための最も強力なツールの1つです。 このタブは、すべての通知の過去のタイムライン、すべての警告の詳細、ユーザーの現在のリスクスコア、ケースにおけるリスクを含めるための効果的なアクションを実行する制御など、ケースのクイックレビューを有効にするように構成されています。
 
-![Insider リスク管理のユーザーアクティビティ](media/insider-risk-user-activities.png)
+![Insider リスク管理のユーザーアクティビティ](../media/insider-risk-user-activities.png)
 
 1. **日付と時刻のフィルター**: 既定では、ケースで確認された通知の過去6か月間は、[ユーザーアクティビティ] グラフに表示されます。 グラフビューのフィルターは、グラフウィンドウの両端にあるスライダーコントロール、またはグラフフィルターコントロールで特定の開始日と終了日を定義することで簡単に実行できます。
 2. **リスクアラートのアクティビティと詳細**: リスクアクティビティは、[ユーザーアクティビティ] グラフに色付きのバブルとして視覚的に表示されます。 バブルはさまざまなカテゴリのリスクに対して作成され、バブルサイズはカテゴリのリスクアクティビティの数に比例します。 バブルを選択して、各リスクアクティビティの詳細を表示します。 詳細は次のとおりです。
@@ -107,7 +107,7 @@ Insider リスク管理**ケースダッシュボード**を使用すると、�
 
 コンテンツエクスプローラーは、基本的で高度な検索とフィルター処理機能を備えた強力なツールです。 コンテンツエクスプローラーの使用の詳細については、「 [Insider リスク管理コンテンツエクスプローラー](insider-risk-management-content-explorer.md)」を参照してください。
 
-![Insider リスク管理ケースコンテンツエクスプローラー](media/insider-risk-content-explorer.png)
+![Insider リスク管理ケースコンテンツエクスプローラー](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>ケースメモ
 
