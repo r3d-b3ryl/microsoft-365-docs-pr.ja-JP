@@ -31,7 +31,7 @@ ms.locfileid: "42081982"
 
 - この手順の予想所要時間:10 分。
 
-- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「 [Exchange Online の機能のアクセス](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)許可」の「メールフロールール」、または「 [EOP の機能のアクセス許可](feature-permissions-in-eop.md)」を参照してください。
+- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「 [Exchange Online の機能のアクセス](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)許可」の「メールフロールール」、または「 [EOP の機能のアクセス許可](feature-permissions-in-eop.md)」を参照してください。
 
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 

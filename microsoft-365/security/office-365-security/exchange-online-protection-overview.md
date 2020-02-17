@@ -74,7 +74,7 @@ EOP のセットアップは、特にコンプライアンス ルールが少な
 
 すでに EOP を購入している場合は、「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照して、メッセージング環境を保護するように EOP を構成するために必要なすべての手順が完了していることを確認してください。
 
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [EOP の機能](eop-features.md)
 

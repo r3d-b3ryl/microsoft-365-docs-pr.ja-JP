@@ -50,7 +50,7 @@ ms.locfileid: "42082372"
 
 ### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-safe-documents"></a>Exchange Online PowerShell または Exchange Online Protection PowerShell を使用して安全なドキュメントを構成する
 
-次の構文を使用します。
+次の構文を使用してください。
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$false>
