@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
-ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
+ms.openlocfilehash: c7b945ea464cbb18ae19eaa9f9e4a8df0313b0c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41779032"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073707"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Office 365 データ対象要求
 
@@ -100,14 +100,14 @@ DSR 要求への対応時には、DSR 要求の対象であるデータが Micro
 
 | | |
 | :---: | :---:|
-![カレンダー アイコン](media/O365-DSR-Doc-Final_image3.png) <br> カレンダー | ![SharePoint アイコン](media/o365-sharepoint-64x64.png) <br> SharePoint  |
-| ![Excel アイコン](media/o365-excel-64x64.png) <br> Excel | ![Skype for Business アイコン](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
-| ![Office Lens アイコン](media/o365-lens-64x64.png) <br> Office Lens | ![タスク アイコン](media/O365-DSR-Doc-Final_image8.png) <br> タスク |
-| ![OneDrive アイコン](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams アイコン](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote アイコン](media/o365-onenote-64x64.png) <br> OneNote| ![To do アイコン](media/o365-todo-64x64.png) <br> やるべきこと |
-| ![Outlook アイコン](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![ビデオ アイコン](media/O365-DSR-Doc-Final_image14.png) <br> ビデオ |
-| ![People アイコン](media/O365-DSR-Doc-Final_image15.png) <br> People | ![Visio アイコン](media/o365-visio-64x64.png) <br> Visio |
-| ![PowerPoint アイコン](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word アイコン](media/o365-word-64x64.png) <br> Word
+![カレンダー アイコン](../media/O365-DSR-Doc-Final_image3.png) <br> カレンダー | ![SharePoint アイコン](../media/o365-sharepoint-64x64.png) <br> SharePoint  |
+| ![Excel アイコン](../media/o365-excel-64x64.png) <br> Excel | ![Skype for Business アイコン](../media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
+| ![Office Lens アイコン](../media/o365-lens-64x64.png) <br> Office Lens | ![タスク アイコン](../media/O365-DSR-Doc-Final_image8.png) <br> タスク |
+| ![OneDrive アイコン](../media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams アイコン](../media/o365-teams-64x64.png) <br> Teams |
+| ![OneNote アイコン](../media/o365-onenote-64x64.png) <br> OneNote| ![To do アイコン](../media/o365-todo-64x64.png) <br> やるべきこと |
+| ![Outlook アイコン](../media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![ビデオ アイコン](../media/O365-DSR-Doc-Final_image14.png) <br> ビデオ |
+| ![People アイコン](../media/O365-DSR-Doc-Final_image15.png) <br> People | ![Visio アイコン](../media/o365-visio-64x64.png) <br> Visio |
+| ![PowerPoint アイコン](../media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word アイコン](../media/o365-word-64x64.png) <br> Word
 ||
 
 >[!NOTE]
@@ -196,7 +196,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![キーワード ダイアログ](media/O365-DSR-Doc_image18.png)
+![キーワード ダイアログ](../media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>例 2
 
@@ -206,7 +206,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![キーワード ダイアログ](media/O365-DSR-Doc_image19.png)
+![キーワード ダイアログ](../media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>例 3
 
@@ -218,7 +218,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![キーワード ダイアログ](media/O365-DSR-Doc_image20.png)
+![キーワード ダイアログ](../media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>部分的にインデックスが作成されたアイテムをコンテンツ検索で使用する
 
@@ -435,13 +435,13 @@ DSR エクスポート要求を満たすために、ネイティブのファイ�
 アイテムをエクスポートおよびダウンロードするには:
 
 1. セキュリティ/コンプライアンス センターで、[コンテンツ検索] を開きます。
-2. [検索] ポップアップ ページで [![ダウンロード アイコン](media/o365-dsr_image21.png)] [**詳細**] をクリックし、 [**結果のエクスポート**] をクリックします。 レポートをエクスポートすることもできます。
+2. [検索] ポップアップ ページで [![ダウンロード アイコン](../media/o365-dsr_image21.png)] [**詳細**] をクリックし、 [**結果のエクスポート**] をクリックします。 レポートをエクスポートすることもできます。
 3. **[結果のエクスポート]** ポップアップ ページの各セクションに入力します。スクロール バーを使用して、すべてのエクスポート オプションを確認してください。
 4. セキュリティ/コンプライアンス センターのコンテンツ検索ページに戻って、**[エクスポート]** タブをクリックします。
 5. **[最新の情報に更新]** をクリックして、ページを更新します。
 6. [**名前**] 列で、作成したエクスポート ジョブをクリックします。 エクスポート ジョブの名前は、コンテンツ検索の名前に "**\_Export**" が付加されたものになります。
 7. [エクスポート] ポップアップ ページの [**エクスポート キー**] で、[**クリップボードにコピー**] をクリックします。 このキーは手順 10 で検索結果をダウンロードするときに使用します
-8. ポップアップ ページの上部で、[![ダウンロード アイコン](media/o365-dsr_image21.png)] [**結果のダウンロード**] をクリックします。
+8. ポップアップ ページの上部で、[![ダウンロード アイコン](../media/o365-dsr_image21.png)] [**結果のダウンロード**] をクリックします。
 9. **Microsoft Office 365 電子情報開示エクスポート ツール**をインストールするように求めるダイアログが表示されたら、**[インストール]** をクリックします。
 10. **電子情報開示エクスポート ツール**で、手順 7 でコピーしたエクスポート キーを該当するボックスに貼り付けます。
 11. **[参照]** をクリックして、検索結果のファイルをダウンロードする場所を指定します。
@@ -630,11 +630,11 @@ Office 365 管理ポータルでは、ユーザーの物理的な削除は実行
 
 ||||
 |:-----:|:-----:|:-----:|:-----:|
-| ![Access アイコン](media/o365-access-64x64.png) <br> [Access](#access) | ![Office アイコン](media/O365-DSR-Doc_image22.png) <br> [Office 365<br> のビジネス アプリ](#business-apps-for-office-365) | ![Office アイコン](media/O365-DSR-Doc_image22.png) <br> [Education](#education)|
-| ![Flow アイコン](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms アイコン](media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala アイコン](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
-| ![Planner アイコン](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps アイコン](media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI アイコン](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project アイコン](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher アイコン](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream アイコン](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway アイコン](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard アイコン](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-|![Yammer アイコン](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+| ![Access アイコン](../media/o365-access-64x64.png) <br> [Access](#access) | ![Office アイコン](../media/O365-DSR-Doc_image22.png) <br> [Office 365<br> のビジネス アプリ](#business-apps-for-office-365) | ![Office アイコン](../media/O365-DSR-Doc_image22.png) <br> [Education](#education)|
+| ![Flow アイコン](../media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms アイコン](../media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala アイコン](../media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
+| ![Planner アイコン](../media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps アイコン](../media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI アイコン](../media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
+|![Project アイコン](../media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher アイコン](../media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream アイコン](../media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway アイコン](../media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard アイコン](../media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer アイコン](../media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access

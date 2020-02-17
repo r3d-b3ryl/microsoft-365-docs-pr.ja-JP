@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 88dc03613a6a2b77ed9cb440d8c8d80c7cfbae2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596494"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073330"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のための Microsoft サポート/プロフェッショナル サービス データ サブジェクト要求
 
@@ -132,7 +132,7 @@ DSR の解決に関して Microsoft がお客様を支援する場合、これ�
 
 特定の連携を識別するために、お客様は連携全体を検索する必要があります。プレミア顧客の場合、お客様の契約サービス マネージャー (“CSM”) は契約スケジュールの下で作成されたすべてのサポート要求 (SR) を確認できます。プレミアでない場合、オンライン サービス サポート エリアなど、同等のサポート連携ポータルを使用できます。
 
-![SMC での検索](media/Prof-Serv-DSR-Doc-Final_image3.png)CSM は Support.Microsoft.Com ([https://support.microsoft.com/\<local 言語コード\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) (“SMC”) でポータルにアクセスし、サポート要求を選択および確認できます。 (注: URL 内のローカル言語コードを置き換えてください)。
+![SMC での検索](../media/Prof-Serv-DSR-Doc-Final_image3.png)CSM は Support.Microsoft.Com ([https://support.microsoft.com/\<local 言語コード\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) (“SMC”) でポータルにアクセスし、サポート要求を選択および確認できます。 (注: URL 内のローカル言語コードを置き換えてください)。
 
 >[!IMPORTANT]
 >SMC 内のケース履歴に加えて、お客様はサポート連携時に Microsoft によって収集された (またはお客様の許可の下でオンライン サービスから削除された) ファイル内にエンド ユーザーの個人データを保有している場合があります。 例としてお客様の Exchange メールボックス、Azure VM、データベースのコピーなどがあります。 こうした個人データは特定の連携に関するケース事例 (つまりチケット) の中で記述されている場合と記述されていない場合があります。 そのデータを確認するために、お客様連絡先は、Microsoft サポート データ転送および管理ツール (DTM) 内のワークスペースの URL を受け取っている特定の認証済み (AAD または MSA による) サポート要求連絡先である必要があります。 お客様連絡先はファイルにアクセスできますが、グローバル表示は使用できません。また、SMC はファイルが存在するかどうかを示しません。

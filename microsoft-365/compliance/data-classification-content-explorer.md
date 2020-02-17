@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661908"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076431"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>データ分類コンテンツ エクスプローラー (プレビュー)
 
@@ -45,7 +45,7 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 
 [保持ラベル](labels.md)を使用すると、ラベル付けされたアイテムの保持期間、およびアイテムを削除する前に行う手順を定義できます。 手動で、またはポリシーを使用して自動的に適用することができます。 組織が法的要件および規制要件を遵守するのに役立ちます。
 
-![折りたたみ済みのコンテンツ エクスプローラーのスクリーンショット](media/data-classification-content-explorer-1.png)
+![折りたたみ済みのコンテンツ エクスプローラーのスクリーンショット](../media/data-classification-content-explorer-1.png)
 
 ### <a name="permissions"></a>アクセス許可
 
