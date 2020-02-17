@@ -73,7 +73,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターで利用�
     
 - [セキュリティ&amp; /コンプライアンスセンターで既存のレポートをダウンロードする](download-existing-reports.md)
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 セキュリティセンターのレポートを監視および表示する](../mtp/monitoring-and-reporting.md)
   

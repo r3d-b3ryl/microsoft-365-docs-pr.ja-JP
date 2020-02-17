@@ -35,7 +35,7 @@ Microsoft 365 セキュリティセンターの脅威を探す機能を使用す
 
 Microsoft の[脅威保護を有効](mtp-enable.md)にして、microsoft 365 セキュリティセンターで、高度な検索クエリインターフェイスを直接取得します。 [高度な](advanced-hunting-overview.md)検索を使用すると、MICROSOFT Defender atp、利用デバイスからのデータ、および OFFICE 365 ATP のデータを参照する単一のクエリを作成して、電子メールからデータを提供できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検索の概要](advanced-hunting-overview.md)
 - [Microsoft Threat Protection の概要](microsoft-threat-protection.md)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

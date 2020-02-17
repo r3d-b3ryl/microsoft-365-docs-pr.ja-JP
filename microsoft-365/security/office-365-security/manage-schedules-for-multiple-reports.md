@@ -42,7 +42,7 @@ ms.locfileid: "42082873"
     
 5. 必要に応じて、スケジュールを編集または削除してから、[**閉じる**] をクリックします。
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   

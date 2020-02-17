@@ -46,7 +46,7 @@ ms.locfileid: "42083171"
   
 この方法では、ダッシュボードから洞察および推奨されるアクションに移行できます。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [チュートリアル: 洞察から詳細レポートへ](from-an-insight-to-a-detailed-report.md)
   
