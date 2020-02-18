@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070221"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093443"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -201,8 +201,9 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
     
 - Exchange パブリック フォルダー
     
+
 ![すべての場所のオプション](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
 その他の組織全体のアイテム保持ポリシーに関する重要な機能は、次のとおりです。
   
 - ポリシーに含めることができるメールボックスまたはサイトの数に制限はありません。
