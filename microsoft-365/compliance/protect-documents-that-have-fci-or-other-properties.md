@@ -96,7 +96,7 @@ Condition**ドキュメントプロパティにこれらの値のいずれかが
   
 これらのコマンドレットの詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. を使用`New-DlpCompliancePolicy`してポリシーを作成します。
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 同じメッセージの複数のインスタンスが異なるメールボックスで検出された場合でも、エクスポートされる電子情報開示検索結果の重複を除外するオプションがあります。
-ms.openlocfilehash: bfd810d358a85c0cdfacab50fb512a8d2a9c8828
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892040"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076277"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複排除
 
@@ -45,11 +45,11 @@ Office 365 電子情報開示ツールは、次の電子メールプロパティ
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>結果の .csv レポート (Excel で表示)
   
-![結果 .csv レポートでの重複アイテムに関する情報の表示](media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![結果 .csv レポートでの重複アイテムに関する情報の表示](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml レポート (Excel で表示)
   
-![Manifest.xml レポートでの重複アイテムに関する情報の表示](media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Manifest.xml レポートでの重複アイテムに関する情報の表示](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 さらに、重複するメッセージからのその他のプロパティがエクスポートレポートに含まれています。 これには、メッセージが配布グループに送信されたかどうか、およびそのメッセージが別のユーザーに対して Cc または Bcc であったかどうかについて、重複しているメッセージが置かれているメールボックスが含まれます。
   

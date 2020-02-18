@@ -1,5 +1,7 @@
 ---
 title: 軽量な基本構成
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise をテストするための軽量なテスト環境を作成します。
-ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801652"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067094"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 
@@ -28,14 +30,14 @@ ms.locfileid: "40801652"
 
 この記事は、Microsoft 365 E5 サブスクリプションと、Windows 10 Enterprise を実行しているコンピューターを使用して、簡略化された環境を作成する詳細な手順を説明します。 
 
-![軽量な Microsoft 365 Enterprise テスト環境](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![軽量な Microsoft 365 Enterprise テスト環境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 作成された環境を使用して、[Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) のフィーチャーと機能をテストします。
 
-![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
 
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>フェーズ 1: Office 365 E5 サブスクリプションを作成する
 
@@ -43,13 +45,13 @@ ms.locfileid: "40801652"
 
 Office 365 E5 試用版サブスクリプションを開始するには、最初に、架空の会社名と新しい Microsoft アカウントが必要になります。
   
-1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![線](./media/Common-Images/TableLine.png)
+1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![線](../media/Common-Images/TableLine.png)
     
 2. 新しい Microsoft アカウントにサインアップするには、[https://outlook.com](https://outlook.com) に移動して、新しい電子メール アカウントとアドレスでアカウントを作成します。このアカウントを使用して、Office 365 にサインアップします。
     
-  - ここに新しいアカウントの姓名を記録してください: ![線](./media/Common-Images/TableLine.png)
+  - ここに新しいアカウントの姓名を記録してください: ![線](../media/Common-Images/TableLine.png)
     
-  - 新しいメール アカウント アドレスをここに記録します。 ![線](./media/Common-Images/TableLine.png)@outlook.com
+  - 新しいメール アカウント アドレスをここに記録します。 ![線](../media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
@@ -58,8 +60,8 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
 2. 「**Office 365 E5 をお選び頂き、ありがとうございます**」ページで、手順 1 の新しいメール アカウントのアドレスを明記します。
 3. 試用版サブスクリプション プロセスの手順 2 で、必要な情報を入力して、検証を実行します。
 4. 手順 3 では、組織名を入力して、サブスクリプション用の全体管理者になるアカウント名を入力します。 
-5. 手順 4 では、ここにサインイン ページを記録します (選択してコピー): ![線](./media/Common-Images/TableLine.png) 
-6. ここにユーザー ID を記録します: ![Line](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. 手順 4 では、ここにサインイン ページを記録します (選択してコピー): ![線](../media/Common-Images/TableLine.png) 
+6. ここにユーザー ID を記録します: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
    入力したパスワードを安全な場所に記録してください。
    この値を**Office 365 全体管理者名**と呼ぶことにします。
 8. [**セットアップに移動**] をクリックします。
@@ -119,11 +121,11 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 これらの値を記録する:
   
-- Office 365 グローバル管理者名: ![線](./media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 1 のステップ 6 から)
+- Office 365 グローバル管理者名: ![線](../media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 1 のステップ 6 から)
     
     このアカウントのパスワードも安全な場所に記録してください。
     
-- 試用版サブスクリプションの組織名: ![線](./media/Common-Images/TableLine.png) (フェーズ 1 のステップ 4 から)
+- 試用版サブスクリプションの組織名: ![線](../media/Common-Images/TableLine.png) (フェーズ 1 のステップ 4 から)
     
 - User 2、User 3、User 4、および User 5 のアカウントを一覧表示するには、次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。
     
@@ -133,13 +135,13 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
     ここにアカウント名を記録してください:
     
-  - ユーザー 2 アカウント名: user2@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 2 アカウント名: user2@![線](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - ユーザー 3 アカウント名: user3@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 3 アカウント名: user3@![線](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - ユーザー 4 アカウント名: user4@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 4 アカウント名: user4@![線](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - ユーザー 5 アカウント名: user5@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - ユーザー 5 アカウント名: user5@![線](../media/Common-Images/TableLine.png).onmicrosoft.com
     
     これらのアカウントの共通パスワードも安全な場所に記録してください。
    
@@ -190,7 +192,7 @@ Office 365 と Microsoft 365 の両方に適用される追加のテスト ラ�
     
 Office 365 と Enterprise Security + Management (EMS) の両方を含む Microsoft 365 E5 を追加した最終的な構成をここに示します。
   
-![Microsoft 365 Enterprise テスト環境のフェーズ 3](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Microsoft 365 Enterprise テスト環境のフェーズ 3](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>フェーズ 4: Windows 10 Enterprise コンピューターを作成する
 
@@ -301,7 +303,7 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
     
 最終的な環境をここに示します。
 
-![Microsoft 365 Enterprise テスト環境のフェーズ 5](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Microsoft 365 Enterprise テスト環境のフェーズ 5](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 これには、以下を備えた WIN10 コンピューターが含まれます。
 

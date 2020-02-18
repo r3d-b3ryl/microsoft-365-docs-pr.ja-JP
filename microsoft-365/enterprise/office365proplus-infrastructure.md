@@ -1,5 +1,7 @@
 ---
 title: 'フェーズ 4: Office 365 ProPlus'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の Office 365 ProPlus インフラストラクチャを展開する手順。
-ms.openlocfilehash: f41990055a97a2853622529e7cc28ccf096eef69
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2b3ac311863249720a2dc1fba00ead9ebf6ac8e5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831898"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066451"
 ---
 # <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
 
-![フェーズ 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![フェーズ 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *これは Microsoft 365 Enterprise および Microsoft 365 Education のバージョン E3 および E5 に適用されます。*
 
@@ -63,7 +65,7 @@ Office 365 ProPlus を展開する前に、「[Office 365 ProPlus を展開す�
 
 多くの組織では、ユーザーに応じて前述のオプションを組み合わせて使用します。たとえば、ほとんどのユーザーに対しては Configuration Manager を使用して Office を展開しますが、社内ネットワークに頻繁に接続しない少数の作業員のグループにはセルフ インストールを有効にします。 
 
-組織が Configuration Manager を使用する場合は、Current Branch にアップグレードし、最新リリースに更新することをお勧めします。詳細については、「[Configuration Manager のどのブランチを使用するか](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use)」を参照してください。
+組織が Configuration Manager を使用する場合は、Current Branch にアップグレードし、最新リリースに更新することをお勧めします。詳細については、「[Configuration Manager のどのブランチを使用するか](https://docs.microsoft.com/configmgr/core/understand/which-branch-should-i-use)」を参照してください。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
@@ -73,7 +75,7 @@ Microsoft のエキスパートが [Office 365 ProPlus の更新プログラム�
 
 架空の代表的な多国籍企業である Contoso Corporation の [Office 365 ProPlus の展開](contoso-o365pp.md)方法をご覧ください。
 
-![Contoso 社](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 

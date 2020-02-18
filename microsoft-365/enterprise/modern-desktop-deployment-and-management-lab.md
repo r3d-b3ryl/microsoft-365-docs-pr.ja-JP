@@ -1,5 +1,7 @@
 ---
 title: Windows と Office 展開ラボ キット
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 435b8177fc97f9cd07ff78704605428e594e0dd8
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 44335889432d1c5998b76836c9d8f0201a62dc67
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558584"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066744"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 

@@ -1,5 +1,7 @@
 ---
 title: '手順 3: Microsoft 365 のセキュリティ強化を構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 のセキュリティ強化を理解して、構成します。
-ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eabf0d60f3cfb61b7fffcc688a080ba99f83293e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801682"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067244"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>手順 3: Microsoft 365 のセキュリティ強化を構成する
 
 *この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
 
-![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Microsoft 365 サブスクリプションとそのデータが、悪意のある脅威から最初から保護されているようにするには、次を構成します。
 
@@ -47,7 +49,7 @@ Office 365 ATP は、Microsoft 365 E5 でのみ利用可能です。
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Microsoft 365 のセキュリティ強化を構成する](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Microsoft 365 のセキュリティ強化を構成する](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step3)を確認できます。
@@ -57,6 +59,6 @@ Office 365 ATP は、Microsoft 365 E5 でのみ利用可能です。
 
 |||
 |:-------|:-----|
-|![手順 4](./media/stepnumbers/Step4.png)|[Windows 情報保護を構成する](infoprotect-deploy-windows-information-protection.md)|
+|![手順 4](../media/stepnumbers/Step4.png)|[Windows 情報保護を構成する](infoprotect-deploy-windows-information-protection.md)|
 
 

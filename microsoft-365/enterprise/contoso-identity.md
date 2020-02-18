@@ -1,6 +1,8 @@
 ---
 title: Contoso 社の ID
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: dc893fb1e632cf15a612ebf13e911173933d9af3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673213"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068462"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
@@ -30,7 +32,7 @@ Contosoは、contoso.comに1つのActive Directoryドメインサービス（AD 
 
 これは、地域ハブを含む世界のさまざまな地域の地域ドメインを持つ Contoso フォレストです。
 
-![Contoso 社の世界中のフォレストとドメイン](./media/contoso-identity/contoso-identity-fig1.png)
+![Contoso 社の世界中のフォレストとドメイン](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contosoは、contoso.comフォレストのアカウントとグループをMicrosoft 365の作業とサービスの認証・承認に使用したいと考えていました。
 
@@ -43,7 +45,7 @@ Contoso 社では次のことが可能です。
 
 これは、公開 Web サイト、パートナーのエクストラネット、および Active Directory フェデレーション サービス (AD FS) サーバーのセットを含む Contoso 社の DMZ です。DMZ は、顧客、パートナー、およびインターネット サービスを含むインターネットに接続されています。
 
-![Contoso 社の顧客とパートナー向けのフェデレーション認証のサポート](./media/contoso-identity/contoso-identity-fig2.png)
+![Contoso 社の顧客とパートナー向けのフェデレーション認証のサポート](../media/contoso-identity/contoso-identity-fig2.png)
  
 DMZ の AD FS サーバーは、ID のプロバイダーが提供しパブリック Web サイトにアクセスするための顧客資格情報、およびパートナー エクストラネットにアクセスするためのパートナー資格情報の認証を容易にします。
 
@@ -59,7 +61,7 @@ PHSは、自社運用のAD DSフォレストをMicrosoft 365 Enterpriseの登録
 
 これは、変更のために Contoso AD DS フォレストをポーリングし、それらの変更を Azure AD テナントと同期する Azure AD Connect を実行しているサーバーです。
 
-![Contoso 社の PHS ディレクトリ同期インフラストラクチャ](./media/contoso-identity/contoso-identity-fig4.png)
+![Contoso 社の PHS ディレクトリ同期インフラストラクチャ](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>ID およびデバイス アクセスの条件付きアクセス ポリシー
 
@@ -71,7 +73,7 @@ Contosoは、3 つの保護レベルに対して Azure AD と Intune の[条件�
 
 これが、Contoso 社が結果として得られる ID およびデバイスの条件付きアクセス ポリシーのセットです。
 
-![Contoso 社の ID およびデバイスの条件付きアクセス ポリシー](./media/contoso-identity/contoso-identity-fig5.png)
+![Contoso 社の ID およびデバイスの条件付きアクセス ポリシー](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>次の手順
 

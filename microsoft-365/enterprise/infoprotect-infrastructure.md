@@ -1,5 +1,7 @@
 ---
 title: 'フェーズ 6: 情報保護'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の情報保護インフラストラクチャの展開手順。
-ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 418506927885948cd917061d99bb69163b1e44a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030852"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067145"
 ---
 # <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
 
-![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
 情報保護は、機密情報を送信、保存、処理する方法を定義するポリシーとテクノロジの集合です。フェーズ 6 では、クラウドベースのワークロードとシナリオのデータの保護に役立つ Microsoft 365 Enterprise の情報保護の設定と機能について、順を追って説明します。
 
@@ -38,13 +40,13 @@ ms.locfileid: "38030852"
 
 |||
 |:-------|:-----|
-|![手順 1](./media/stepnumbers/Step1.png)|[セキュリティおよび情報保護のレベルを定義する](infoprotect-define-sec-infoprotect-levels.md)|
-|![手順 2](./media/stepnumbers/Step2.png)|[環境のデータ分類を構成する](infoprotect-configure-classification.md)|
-|![手順 3](./media/stepnumbers/Step3.png)|[Microsoft 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
-|![手順 4](./media/stepnumbers/Step4.png)|[Windows 情報保護を構成する](infoprotect-deploy-windows-information-protection.md)|
-|![手順 5](./media/stepnumbers/Step5.png)|[Office 365 データ損失防止を構成する](infoprotect-data-loss-prevention.md)|
-|![手順 6](./media/stepnumbers/Step6.png)|[電子メールの暗号化を構成する](infoprotect-email-encryption.md)|
-|![手順 7](./media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
+|![手順 1](../media/stepnumbers/Step1.png)|[セキュリティおよび情報保護のレベルを定義する](infoprotect-define-sec-infoprotect-levels.md)|
+|![手順 2](../media/stepnumbers/Step2.png)|[環境のデータ分類を構成する](infoprotect-configure-classification.md)|
+|![手順 3](../media/stepnumbers/Step3.png)|[Microsoft 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
+|![手順 4](../media/stepnumbers/Step4.png)|[Windows 情報保護を構成する](infoprotect-deploy-windows-information-protection.md)|
+|![手順 5](../media/stepnumbers/Step5.png)|[Office 365 データ損失防止を構成する](infoprotect-data-loss-prevention.md)|
+|![手順 6](../media/stepnumbers/Step6.png)|[電子メールの暗号化を構成する](infoprotect-email-encryption.md)|
+|![手順 7](../media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
 |||
 
 上記の手順が完了したら、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。
@@ -57,11 +59,11 @@ Microsoft の IT エキスパートが [Azure Information Protection を使用�
 
 架空の典型的な多国籍企業である Contoso Corporation での、Microsoft 365 クラウド サービスによる[情報保護の実装](contoso-info-protect.md)方法を確認します。
 
-![Contoso 社](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![手順 1](./media/stepnumbers/Step1.png)|[セキュリティおよび情報保護のレベルを定義する](infoprotect-define-sec-infoprotect-levels.md)|
+|![手順 1](../media/stepnumbers/Step1.png)|[セキュリティおよび情報保護のレベルを定義する](infoprotect-define-sec-infoprotect-levels.md)|
 

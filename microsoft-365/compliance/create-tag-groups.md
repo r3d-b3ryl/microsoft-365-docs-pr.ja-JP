@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2cf0bafa45e96960b8d957d1b8905124223173ce
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9dc6f92ffdc5a676bd6f8895fe884b5493724963
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595544"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077089"
 ---
 # <a name="create-tag-groups"></a>タググループを作成する
 
@@ -31,17 +31,17 @@ ms.locfileid: "41595544"
 
 1.  レビューセットで、[**レビューセットの管理**] をクリックします。
 
-    ![[校閲セットの管理] をクリックします。](media/ED-managews.png)
+    ![[校閲セットの管理] をクリックします。](../media/ED-managews.png)
 
 2.  [**タグ**] タイルで、[**タグの管理**] をクリックします。
 
-    ![タグタイルの [タグの管理] をクリックします。](media/ED-managetags.png)
+    ![タグタイルの [タグの管理] をクリックします。](../media/ED-managetags.png)
 
 タグ管理の内側で、ケースの要件を満たすタグを作成できます。 最初に、タググループを作成することができます。
 
 1.  [ **Add section]** をクリックします。
 
-    ![タググループを追加する](media/ED-addtagsection.png)
+    ![タググループを追加する](../media/ED-addtagsection.png)
 
     保存するとプレビュー画面が更新されるので、タグの管理画面を閉じて作業セットに戻る必要なしに、タグパネルをプレビューできます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "41595544"
 
 3. そのグループ内にタグを作成するには、新しいタググループの省略記号をクリックして、その新しいセクションにタグを作成します。
     
-    ![タググループ内のタグの作成](media/ED-createtag.png)
+    ![タググループ内のタグの作成](../media/ED-createtag.png)
 
    - **Option タグ**を指定すると、ユーザーはタグのグループから1つのタグを選択するように強制されます。
    
@@ -59,5 +59,5 @@ ms.locfileid: "41595544"
 
 タグをネストするには、タグの横にある省略記号をクリックし、追加する新しいタグを選択します。
 
-![タグのネスト](media/ED-tagnesting.png)
+![タグのネスト](../media/ED-tagnesting.png)
 

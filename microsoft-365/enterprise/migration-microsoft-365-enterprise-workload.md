@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 2f5b1b077346e3225252ef25a4e9e685c4892a7c
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 06cacbb45a98bb62f53866b0d2ab7ba393e609a0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148491"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066816"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -151,9 +151,9 @@ Windows 7 は、**2020 年 1 月 14 日**にサポート終了になります。
 
 ## <a name="summary-of-options-for-office-2010-clients-and-servers-and-windows-7"></a>Office 2010 クライアントとサーバー、および Windows 7 のオプションの概要
 
-これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)をご覧ください。
+これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)をご覧ください。
 
-[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 この 1 ページのポスターで、Office 2010 クライアントおよびサーバー製品と Windows 7 がサポート終了に達してしまうことを防ぐさまざまなパスをすばやく理解できます。ここには、強調表示された Microsoft 365 Enterprise で推奨されるパスとそれによる宛先サポートが含まれます。
 
@@ -171,9 +171,9 @@ Microsoft の IT 担当者がどのように会社のデータを Microsoft 365 
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
-[![「Microsoft 365への移行」ポスターの画像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![「Microsoft 365への移行」ポスターの画像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 この見開きポスター (2 ページ) で簡単に既存のインフラストラクチャのインベントリを確認して、Microsoft 365 Enterprise で対応する製品またはサービスに移行するためのガイダンスにアクセスできます。 Windows および Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 

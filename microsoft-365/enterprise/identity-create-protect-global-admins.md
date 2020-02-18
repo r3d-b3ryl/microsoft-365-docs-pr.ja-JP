@@ -1,5 +1,7 @@
 ---
 title: '手順 1: グローバル管理者アカウントを作成して保護する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: グローバル管理者アカウントには、資格情報の侵害から保護できるように特別な対処が必要です。
-ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801832"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067344"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>手順 1: グローバル管理者アカウントを作成して保護する
 
-![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>グローバル管理者アカウントを保護する
@@ -57,7 +59,7 @@ ms.locfileid: "40801832"
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  テスト ラボ環境でこの構成の実習を行うには、「[グローバル管理者アカウントを保護する テスト ラボ ガイド](protect-global-administrator-accounts-microsoft-365-test-environment.md)」を参照してください。 |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  テスト ラボ環境でこの構成の実習を行うには、「[グローバル管理者アカウントを保護する テスト ラボ ガイド](protect-global-administrator-accounts-microsoft-365-test-environment.md)」を参照してください。 |
 |||
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-global-admin)を確認できます。
@@ -101,7 +103,7 @@ Office 365 の特権アクセス管理を有効にするには、「[Office 365 
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  テスト ラボ環境でこの構成の実習を行うには、「[特権アクセス管理テスト ラボ ガイド](privileged-access-microsoft-365-enterprise-dev-test-environment.md)」を参照してください。 |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  テスト ラボ環境でこの構成の実習を行うには、「[特権アクセス管理テスト ラボ ガイド](privileged-access-microsoft-365-enterprise-dev-test-environment.md)」を参照してください。 |
 |||
 
 中間チェックポイントとして、この手順に対応する[終了条件](identity-exit-criteria.md#crit-identity-pam)を確認できます。
@@ -110,5 +112,5 @@ Office 365 の特権アクセス管理を有効にするには、「[Office 365 
 
 |||
 |:-------|:-----|
-|![手順 2](./media/stepnumbers/Step2.png)| [パスワードをセキュリティで保護する](identity-secure-your-passwords.md) |
+|![手順 2](../media/stepnumbers/Step2.png)| [パスワードをセキュリティで保護する](identity-secure-your-passwords.md) |
 

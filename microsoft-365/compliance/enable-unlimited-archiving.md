@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者向け: Exchange Online メールボックスで無制限の記憶領域をユーザーに提供する、Office 365 での自動拡張アーカイブを有効にする方法について説明します。 組織全体に対し、または特定のユーザーだけに対し、自動拡張アーカイブを有効にすることができます。'
-ms.openlocfilehash: d37243c65770ff7bbcce4cbe4cfd593b68b7a869
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0ca31372d99f0727a6da48be4d8276a533fbe3f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593208"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074691"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Office 365 で無制限アーカイブを有効にする — 管理者向けヘルプ
 
@@ -102,7 +102,7 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
     
 - 同様に、自動拡張アーカイブを有効にしても、メールボックスの *ArchiveQuota* プロパティと *ArchiveWarningQuota* プロパティの値も変更されません。 実際、ユーザー メールボックスの自動拡張アーカイブを有効にして、*AutoExpandingArchiveEnabled* プロパティを `True` に設定している場合、*ArchiveQuota* プロパティと *ArchiveWarningQuota* プロパティは無視されます。 ユーザーのメールボックスの自動拡張アーカイブを有効にした後のこれらのメールボックス プロパティの例を示します。 
     
-    ![自動拡張アーカイブを有効にした後、ArchiveQuota と ArchiveWarningQuota プロパティは無視されます。](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![自動拡張アーカイブを有効にした後、ArchiveQuota と ArchiveWarningQuota プロパティは無視されます。](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
 ## <a name="more-information"></a>詳細情報

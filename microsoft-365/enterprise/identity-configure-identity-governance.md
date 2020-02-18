@@ -1,5 +1,7 @@
 ---
 title: '手順 7: Identity Governance を構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Azure AD テナントの Identity Governance を理解し、構成します。
-ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302924"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067354"
 ---
 # <a name="step-6-configure-identity-governance"></a>手順 6: Identity Governance を構成する
 
-![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 Identity Governance とは、従業員の生産性を確保するのに重要な資産へのアクセスを保護、監視、監査することです。 たとえば、Identity Governance を使用すると、適切なユーザーが正しいリソースにアクセスできるようになり、時間の経過と共にアクセス権が変更されたかどうかを判断できます。
 

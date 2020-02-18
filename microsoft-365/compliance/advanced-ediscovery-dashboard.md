@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 127e2c9a04977bf6e902a1ce669fa9e4248e3ef2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662243"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080106"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>レビューセットの高度な電子情報開示ダッシュボード (プレビュー)
 
@@ -37,15 +37,15 @@ ms.locfileid: "41662243"
   
 4. 個々の**結果**ドロップダウンリストで、[**検索プロファイルビュー**] をクリックします。 
 
-   ![DashbordPivot](media/dashboardpivot.png)
+   ![DashbordPivot](../media/dashboardpivot.png)
 
    [**検索プロファイルビュー** ] ページが表示されます。このページを初めて表示するときに、3つの既定のウィジェットが表示されます。
 
-   ![ダッシュボード](media/dashboardonly.png)
+   ![ダッシュボード](../media/dashboardonly.png)
   
 5. **新しいウィジェット**をクリックし、次のいずれかの項目を選択します。
 
-   ![新しいウィジェットのドロップダウンリスト](media/NewWidgetDropdownBox.png)
+   ![新しいウィジェットのドロップダウンリスト](../media/NewWidgetDropdownBox.png)
 
    - **ライブラリから選択:** ウィジェットの既定のライブラリを表示します。 ウィジェットをクリックし、[**追加**] をクリックして、[**検索プロファイルの表示**] ページのウィジェットに追加します。
   
@@ -53,7 +53,7 @@ ms.locfileid: "41662243"
 
 6. カスタムウィジェットを作成するには、[**ウィジェットの追加**] ページで次の操作を行います。
 
-   ![ウィジェットの作成](media/addwidget.png)
+   ![ウィジェットの作成](../media/addwidget.png)
 
     a.  ウィジェットの名前を入力します。ウィジェットのタイトルバーに表示されます。 ウィジェットの名前付けは必須ですが、ウィジェットのデータを特定するのに役立ちます。
 
@@ -67,17 +67,17 @@ ms.locfileid: "41662243"
 
 1. ウィジェットタイトルバーの [ **...** ] をクリックし、[**条件の適用**] をクリックします。
 
-   ![ダッシュボード](media/searchprofilehome.png)
+   ![ダッシュボード](../media/searchprofilehome.png)
 
 2. ポップアップページで、ウィジェットキーまたはウィジェットグラフの要素をクリックして、フィルターを作成します。
 
-   ![CreateFilter](media/applyconditionfilter.png)
+   ![CreateFilter](../media/applyconditionfilter.png)
 
 3. 他のウィジェットの場合は、手順1-2 を繰り返します。 
 
 4. 完了したら、[**クエリとして保存**] をクリックして、検証セットの新しい検索クエリとして条件を保存します。
 
-   ![Query](media/savequery.png)
+   ![クエリ](../media/savequery.png)
 
 5. [**検索プロファイル] ビュー**を閉じて、検索結果ビューに戻ります。
 

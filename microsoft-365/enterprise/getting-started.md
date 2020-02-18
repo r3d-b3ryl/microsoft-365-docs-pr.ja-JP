@@ -1,5 +1,7 @@
 ---
 title: 概要 - デスクトップの展開
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップの展開プロセスの概要です。
-ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112531"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067498"
 ---
 # <a name="getting-started---desktop-deployment"></a>概要 - デスクトップの展開
 
-![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
+![](../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>はじめに: ユーザー、プロセス、およびテクノロジのガイダンス</strong></p>
 <p>Windows 10 および Office 365 ProPlus の利点、大きな変更点、考慮事項を以前の展開と比べたうえで明確にし、Windows 10 および Office 365 ProPlus への移行をスムーズにできるようなベスト プラクティスを確立します。</p></td>
-<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -111,7 +113,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 **[手順 7: サービスとしての Windows および Office](https://aka.ms/mdd7)** これは、ユーザーのデスクトップ資産の維持方法に関する大きな変更を表しています。 Windows 10 および Office 365 ProPlus に移行すると、サービスとしての Windows および Office を管理することができます。 数年に一度の大規模なテクノロジの更新ではなく、新しい機能、エクスペリエンス、保護機能を継続してユーザーに提供します。 半期の機能更新プログラムは毎年秋と春に新しい機能を提供し、毎月の累積的な品質更新プログラムには、セキュリティ、信頼性、バグ修正プログラムが含まれます。 Office 2019 クライアントを展開することもできますが、Office 365 ProPlus に移行することを強くお勧めします。 これには Windows と同様のサービス プランが用意されており、ユーザーが Office アプリの更新プログラムを定期的に入手することもできます。
 
-![](media/getting-started-media/getting-started-media-2.png)
+![](../media/getting-started-media/getting-started-media-2.png)
 
 [サービスとしての Windows の概要](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [サービスとしての Office の概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)

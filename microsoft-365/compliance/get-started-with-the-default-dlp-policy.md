@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: 最初のデータ損失防止 (DLP) ポリシーを作成する前に、DLP は既定のポリシーを使用して機密情報を保護するのに役立ちます。 この既定のポリシーとその推奨事項 (以下を参照) は、クレジットカード番号を含む電子メールやドキュメントが組織外のユーザーと共有されたことを通知することにより、機密コンテンツの安全性を確保するのに役立ちます。
-ms.openlocfilehash: 3ac2fef32c7ba20d906ec96e2510971c94ef2652
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596544"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073124"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>既定の DLP ポリシーの使用を開始する
 
@@ -30,7 +30,7 @@ ms.locfileid: "41596544"
   
 このウィジェットを使用すると、共有された機密性の高い情報をすばやく表示し、1回または2つの方法で既定の DLP ポリシーを調整することができます。 完全にカスタマイズできるので、いつでも既定の DLP ポリシーを編集できます。 最初に推奨事項が表示されない場合は、[**推奨する**方法] セクションの下部にある [ **+ More** ] をクリックしてください。 
   
-![共有コンテンツの保護という名前のウィジェット](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![共有コンテンツの保護という名前のウィジェット](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>レポートを表示し、既定の DLP ポリシーを調整する
 
@@ -58,7 +58,7 @@ ms.locfileid: "41596544"
   
 これらのオプションを後で変更する場合は、既定の DLP ポリシーをいつでも編集できます。次のセクションを参照してください。
   
-![その他の保護共有コンテンツという名前のウィジェットの設定](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![その他の保護共有コンテンツという名前のウィジェットの設定](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>既定の DLP ポリシーを編集する
 
@@ -66,7 +66,7 @@ ms.locfileid: "41596544"
   
 このポリシーは完全にカスタマイズ可能ですが、最初から自分で作成した DLP ポリシーと同じです。 また、ポリシーを無効にするか削除して、ユーザーがポリシーヒントや電子メール通知を受信しなくなるようにすることもできます。
   
-![既定の Office 365 DLP ポリシーという名前の DLP ポリシー](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![既定の Office 365 DLP ポリシーという名前の DLP ポリシー](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>ウィジェットが表示されない場合
 

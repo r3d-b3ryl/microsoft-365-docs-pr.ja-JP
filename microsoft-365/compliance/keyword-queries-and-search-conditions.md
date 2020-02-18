@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for Business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
-ms.openlocfilehash: e8a0da1815b7ddda889217d027a3aabae4420c56
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585916"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072412"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -85,7 +85,7 @@ ms.locfileid: "41585916"
 |:-----|:-----|:-----|:-----|
 |設定元|ドキュメントがコピーされた場合に保持される Office ドキュメントの作成者フィールドです。 たとえば、ユーザーがドキュメントを作成し、そのドキュメントを他のユーザーが SharePoint にアップロードした場合、そのドキュメントは元の作成者を保持したままになります。 このプロパティには、必ずユーザーの表示名を使用してください。|`author:"Garth Fort"`|Garth Fort によって作成されたすべてのドキュメント。|
 |ContentType|アイテム、ドキュメント、ビデオなどのアイテムの SharePoint コンテンツタイプ。|`contenttype:document`|すべてのドキュメントが返されます。|
-|Created|アイテムが作成された日付。|`created\>=06/01/2016`|2016年6月1日以降に作成されたすべてのアイテム。|
+|作成済み|アイテムが作成された日付。|`created\>=06/01/2016`|2016年6月1日以降に作成されたすべてのアイテム。|
 |CreatedBy|アイテムを作成またはアップロードした人。 このプロパティには、必ずユーザーの表示名を使用してください。|`createdby:"Garth Fort"`|Garth Fort によって作成またはアップロードされたすべてのアイテム。|
 |DetectedLanguage|アイテムの言語。|`detectedlanguage:english`|英語のすべてのアイテム。|
 |DocumentLink|SharePoint または OneDrive for business サイトの特定のフォルダーのパス (URL)。 このプロパティを使用する場合は、指定したフォルダーが配置されているサイトを検索するようにしてください。  <br/> Documentlink プロパティに指定したフォルダーのサブフォルダーにあるアイテムを返すには、指定したフォルダー\*の URL にを追加する必要があります。例えば`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Documentlink プロパティを検索する方法と、スクリプトを使用して特定のサイト上のフォルダーの documentlink Url を取得する方法の詳細については、「[対象化コレクション用に Office 365 のコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business フォルダー内のすべてのアイテムを返します。 2番目の例では、指定されたサイトフォルダー (およびすべてのサブフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
@@ -95,9 +95,9 @@ ms.locfileid: "41585916"
 |ModifiedBy|アイテムを最後に変更した人。 このプロパティには、必ずユーザーの表示名を使用してください。|`modifiedby:"Garth Fort"`|Garth Fort によって最後に変更されたすべてのアイテム。|
 |Path|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。  <br/> Path プロパティに指定したサイト内のフォルダーにあるアイテムを返すには、指定したサイト\*の URL を追加する必要があります。例えば`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注:** OneDrive の`Path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 検索クエリで別のサイトプロパティを使用して、OneDrive フォルダーのメディアファイルを検索します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムを返します。 2番目の例では、指定したサイト (およびサイト内のフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
 |SharedWithUsersOWSUser|指定したユーザーと共有され、ユーザーの OneDrive for Business サイトの [**自分と共有**] ページに表示されるドキュメント。 これらは、組織内の他のユーザーによって指定されたユーザーが明示的に共有しているドキュメントです。 SharedWithUsersOWSUser プロパティを使用する検索クエリに一致するドキュメントをエクスポートすると、指定されたユーザーとドキュメントを共有しているユーザーの元のコンテンツの場所からドキュメントがエクスポートされます。 詳細については、「[組織内で共有しているサイトコンテンツを検索する](#searching-for-site-content-shared-within-your-organization)」を参照してください。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|両方の例では、Garth 砦と明示的に共有されており、Garth 砦の OneDrive for Business アカウントの [**自分と共有**] ページに表示されるすべての内部ドキュメントを返します。|
-|Site|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザーについて、OneDrive for Business サイトからアイテムを返します。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
+|サイト|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザーについて、OneDrive for Business サイトからアイテムを返します。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
 |Size|アイテムのサイズ (バイト数)。|`size>=1`  <br/> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
-|タイトル|ドキュメントのタイトル。 Title プロパティは、Microsoft Office ドキュメントで指定されているメタデータです。 ドキュメントのファイル名とは異なります。|`title:"communication plan"`|Office ドキュメントの Title メタデータ プロパティに "communication plan" という語句が含まれるすべてのドキュメント。|
+|役職|ドキュメントのタイトル。 Title プロパティは、Microsoft Office ドキュメントで指定されているメタデータです。 ドキュメントのファイル名とは異なります。|`title:"communication plan"`|Office ドキュメントの Title メタデータ プロパティに "communication plan" という語句が含まれるすべてのドキュメント。|
 |||||
    
 ## <a name="searchable-contact-properties"></a>検索可能な連絡先のプロパティ
@@ -126,7 +126,7 @@ ms.locfileid: "41585916"
 |OfficeLocation|**Office**または office の**location**プロパティの値。|
 |OtherAddress|**Other** address プロパティの値。|
 |Surname|" **Last** name/名前" プロパティの名前を指定します。|
-|タイトル|**役職プロパティの**タイトル。|
+|役職|**役職プロパティの**タイトル。|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>検索可能な機密性の高いデータ型
@@ -221,8 +221,8 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
 |**条件**|**説明**|
 |:-----|:-----|
 |設定元|ドキュメントがコピーされた場合に保持される Office ドキュメントの作成者フィールドです。 たとえば、ユーザーがドキュメントを作成し、そのドキュメントを他のユーザーが SharePoint にアップロードした場合、そのドキュメントは元の作成者を保持したままになります。|
-|タイトル|ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。|
-|Created|ドキュメントが作成された日付。|
+|役職|ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。|
+|作成済み|ドキュメントが作成された日付。|
 |最終更新日時|ドキュメントが最後に変更された日付。|
 |ファイルの種類|ファイルの拡張子。例: .docx、one、.pptx、または .xlsx。 これは、FileExtension サイト プロパティと同じプロパティです。|
 |||
@@ -271,9 +271,9 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
     
 - 前述のとおり、いくつかの条件プロパティでは複数の値を入力することができます。 各値は **OR** 演算子によって論理的に接続されます。 これは、同じ条件の複数のインスタンス (値はそれぞれ 1 つ) の場合と同じロジックになります。 次の図は、複数の値を持つ単一の条件の例と、単一の値を持つ複数の条件 (同じプロパティの場合) の例を示しています。 両方の例は、同じクエリになります。`(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
-    ![メッセージは、ルールのすべての条件に一致しなければなりません。別々の条件に一致させる必要がある場合は、条件ごとに個別のルールを使用します。たとえば、ファイルが添付されたメッセージと、コンテンツがパターンと一致するメッセージに同じ免責事項を追加するには、それぞれの条件ごとに 1 つのルールを作成します。ルールは簡単にコピーできます。](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+    ![メッセージは、ルールのすべての条件に一致しなければなりません。別々の条件に一致させる必要がある場合は、条件ごとに個別のルールを使用します。たとえば、ファイルが添付されたメッセージと、コンテンツがパターンと一致するメッセージに同じ免責事項を追加するには、それぞれの条件ごとに 1 つのルールを作成します。ルールは簡単にコピーできます。](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
-    ![同じプロパティに対する複数の検索条件](media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
+    ![同じプロパティに対する複数の検索条件](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
 > 条件が複数の値を受け入れる場合、1 つの条件を使用し、(コンマまたはセミコロンで区切って) 複数の値を指定することをお勧めします。これにより、適用されるクエリ ロジックが確実に意図するものとなるようにすることができます。 
@@ -288,7 +288,7 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
   
  **GUI**
   
-![検索条件の最初の例](media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![検索条件の最初の例](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
   
  **検索クエリ構文**
   
@@ -304,7 +304,7 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
   
  **GUI**
   
-![検索条件の 2 番目の例](media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![検索条件の 2 番目の例](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
   
  **検索クエリ構文**
   
@@ -320,7 +320,7 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
   
  **GUI**
   
-![検索条件の 3 番目の例](media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![検索条件の 3 番目の例](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
   
  **検索クエリ構文**
   
@@ -379,7 +379,7 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
   
 `SharedWithUsersOWSUser`プロパティを使用して検索結果で返されるように、ドキュメントを明示的に特定のユーザーと共有する必要があります。 たとえば、ユーザーが自分の OneDrive アカウントでドキュメントを共有している場合、そのユーザーは、組織内または組織外のユーザーと共有したり、組織内のユーザーと共有したり、特定のユーザーと共有したりすることができます。 OneDrive の [**共有**] ウィンドウのスクリーンショットでは、3つの共有オプションが表示されています。 
   
-![SharedWithUsersOWSUser プロパティを使用する検索クエリによって、特定のユーザーと共有されているファイルのみが返されます。](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![SharedWithUsersOWSUser プロパティを使用する検索クエリによって、特定のユーザーと共有されているファイルのみが返されます。](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
 この`SharedWithUsersOWSUser`プロパティを使用する検索クエリでは、3番目のオプション (**特定のユーザー**と共有) を使用して共有されているドキュメントのみが返されます。 
 

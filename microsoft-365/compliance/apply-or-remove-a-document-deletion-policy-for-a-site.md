@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 多くの場合、組織は一定期間、ドキュメントの保持が要求されるコンプライアンス、法的要件、その他の規制を受けます。しかし、必要以上にドキュメントを長く保持すると、組織が法的なリスクにさらされる場合があります。このため、組織は、例えば一般的なビジネス文書は作成の 5 年後に削除する必要があるといった、ドキュメント削除ポリシーをサイトに作成する場合があります。
-ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596074"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079854"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>サイトのドキュメント削除ポリシーを適用または削除する
 
@@ -64,7 +64,7 @@ ms.locfileid: "41596074"
     
 このリストは表示専用であり、サイト コレクションの所有者に、使用可能なすべてのポリシーとルールが表示されます。ポリシーを適用するには、次のセクションを参照してください。
   
-![サイト コレクションに割り当てられているドキュメント削除ポリシーの表示](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![サイト コレクションに割り当てられているドキュメント削除ポリシーの表示](../media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>サイトのドキュメント削除ポリシーを適用または削除する
 
@@ -83,13 +83,13 @@ ms.locfileid: "41596074"
     
     1 つのサイトに一度に有効にできるのは、1 つのポリシーおよび 1 つのルールのみです。組織は複数のポリシーとルールを用意して選択できるようにする場合も、ポリシーやルールを 1 つだけ用意する場合もあります。
     
-    ![ポリシーオプションの選択](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![ポリシーオプションの選択](../media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
   - **ポリシーからオプトアウトするに**は[**オプトアウト: Do Note Delete** \> **Save**] を選択します。
     
     サイトの所有者は、ポリシーがサイトのコンテンツに適用できないと判断した場合は、ドキュメント削除ポリシーをオプトアウトできます。 ただし、**必須**としてマークされているポリシーからオプトアウトすることはできません。
     
-    ![オプトアウトオプション](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![オプトアウトオプション](../media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>ドキュメント削除ポリシーによる、他のポリシーの上書き
 
@@ -113,7 +113,7 @@ ms.locfileid: "41596074"
     
 2. [**サイト管理** \> **コンテンツタイプポリシーテンプレート**] の下。
     
-    ![サイト削除ポリシーが使用されていることを示す警告](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![サイト削除ポリシーが使用されていることを示す警告](../media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>情報管理ポリシーが無視されているかどうかを確認する
 
@@ -121,7 +121,7 @@ ms.locfileid: "41596074"
   
 - \>リストまたはライブラリの場合、[**権限と管理** \> **情報管理ポリシーの設定**] の [リボン**ライブラリ**] タブ\> **ライブラリの設定** \> 。
     
-    ![サイト削除ポリシーが使用されていることを示す警告](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![サイト削除ポリシーが使用されていることを示す警告](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## <a name="see-also"></a>関連項目
 

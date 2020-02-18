@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation の情報保護
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/02/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise の情報保護機能を使用して、クラウドのデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068418"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -85,7 +87,7 @@ ID とモバイル デバイスの管理インフラストラクチャと共に�
 
 以下は、Contoso 社の情報保護に応じた結果としてのポリシーのセットです。
 
-![デバイス、Exchange Online、および SharePoint の条件付きアクセス ポリシー](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![デバイス、Exchange Online、および SharePoint の条件付きアクセス ポリシー](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso 社は、ID とサインイン用に追加の条件付きアクセス ポリシーも構成しました。 「[Contoso 社の ID](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)」を参照してください。
@@ -113,7 +115,7 @@ ID とモバイル デバイスの管理インフラストラクチャと共に�
 
 以下は、Contoso 社の結果として得られる情報保護構成です。
 
-![Contoso 社の結果として得られる情報保護構成](./media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Contoso 社の結果として得られる情報保護構成](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>次の手順
 

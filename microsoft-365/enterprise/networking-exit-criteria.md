@@ -1,5 +1,7 @@
 ---
 title: 'フェーズ 1: ネットワーク インフラストラクチャの終了条件'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise のネットワーク インフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831948"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066626"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>フェーズ 1: ネットワーク インフラストラクチャの終了条件
 
-![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 ネットワーク インフラストラクチャが次の必須基準を満たすとともに、オプションの基準も考慮済みであることをご確認ください。
 
@@ -38,7 +40,7 @@ ms.locfileid: "39831948"
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>必須: 支店のローカル インターネット接続と名前解決機能
 
-DNS サーバーがインターネット上の場所を識別するローカル パブリック IP アドレスを使用するローカル ISP を使用して、各支店にインターネット アクセスを構成しました。 これにより、Microsoft 365 クラウド サービスにアクセスするユーザーに最高のパフォーマンスが保証されます。
+DNS サーバーがインターネット上の場所を識別するローカル パブリック IP アドレスを使用するローカル ISP を使用して、各支店にインターネット アクセスを構成しました。これにより、Microsoft 365 クラウド サービスにアクセスするユーザーに最高のパフォーマンスが保証されます。
 
 各支店でローカル ISP を使用していない場合、ネットワーク トラフィックが組織のバックボーンを通過する必要があるか、またはデータ リクエストがリモートのフロントエンド サーバーにより処理されるため、パフォーマンスが低下する可能性があります。
 
@@ -83,4 +85,4 @@ DNS サーバーがインターネット上の場所を識別するローカル 
 
 |||
 |:-------|:-----|
-|![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は [ID](identity-infrastructure.md) です。 |
+|![フェーズ 2 - ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は [ID](identity-infrastructure.md) です。 |

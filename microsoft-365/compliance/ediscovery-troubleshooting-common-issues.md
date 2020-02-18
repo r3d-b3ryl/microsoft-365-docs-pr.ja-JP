@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: Office 365 電子情報開示の一般的な問題を調査、トラブルシューティング、解決します。
 siblings_only: true
-ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595132"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074817"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、および解決する
 
@@ -51,7 +51,7 @@ ms.locfileid: "41595132"
    > |名前  |RecipientType  |
    > |---------|---------|
    > |Alias、User     |Enable-mailuser         |
-   > |Alias、User     |User         |
+   > |Alias、User     |ユーザー         |
 
 3. 複数のユーザーが返された場合は、競合しているオブジェクトを見つけて修正します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "41595132"
 電子情報開示またはコンテンツの検索では、次のエラーが発生することがあります。
 >この検索は (#) エラーで完了しました。  失敗した場所で検索を再試行しますか?
 
-![検索固有の場所が失敗するエラーのスクリーンショット]( media/edisc-tshoot-specific-location-search-fails.png)
+![検索固有の場所が失敗するエラーのスクリーンショット](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>解像度
 
@@ -136,7 +136,7 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 電子情報開示検索を実行するときに、"内部サーバーエラー (500) が発生しました" と同様のエラーで検索が引き続き失敗する場合は、特定のメールボックスの場所でのみ検索を再実行する必要がある場合があります。
 
-![内部サーバーエラー500スクリーンショット](media/edisc-tshoot-error-500.png)
+![内部サーバーエラー500スクリーンショット](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>解像度
 

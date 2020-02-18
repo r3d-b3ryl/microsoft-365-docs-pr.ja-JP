@@ -1,5 +1,7 @@
 ---
 title: '手順 2: パスワードをセキュリティで保護する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体でパスワードを強力かつ管理しやすいものにする必要があります。
-ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801742"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067284"
 ---
 # <a name="step-2-secure-your-passwords"></a>手順 2: パスワードをセキュリティで保護する
 
-![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>脆弱なパスワードを防止する
@@ -54,7 +56,7 @@ ms.locfileid: "40801742"
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: パスワードのリセット](password-reset-m365-ent-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: パスワードのリセット](password-reset-m365-ent-test-environment.md) |
 |||
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-pw-reset)を確認できます。
@@ -73,7 +75,7 @@ Azure AD Connect ツールを使用して Azure AD シームレス SSO を構成
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Azure AD シームレス シングル サインオン](single-sign-on-m365-ent-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Azure AD シームレス シングル サインオン](single-sign-on-m365-ent-test-environment.md) |
 |||
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-sso)を確認できます。
@@ -98,4 +100,4 @@ Microsoft 365 Enterprise では、サイン ページと [アクセス パネル
 
 |||
 |:-------|:-----|
-|![手順 3](./media/stepnumbers/Step3.png)| [ユーザーのサインインをセキュリティで保護して管理する](identity-secure-user-sign-ins.md) |
+|![手順 3](../media/stepnumbers/Step3.png)| [ユーザーのサインインをセキュリティで保護して管理する](identity-secure-user-sign-ins.md) |

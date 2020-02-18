@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '[使用準備完了] ボックス分類子のいずれかがニーズに合わない場合は、trainable 分類子を使用します。 Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 このトピックでは、カスタム分類子を作成する方法について説明します。'
-ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595914"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078878"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Trainable 分類子を作成する (プレビュー)
 
@@ -29,7 +29,7 @@ Trainable 分類子のいずれかがニーズに合わない場合は、分類�
 
 このタイムラインには、サンプルの展開が反映されています。
 
-![trainable-クラシファイア-タイムライン](media/trainable-classifier-deployment-timeline_border.png)
+![trainable-クラシファイア-タイムライン](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > Trainable 分類子では、最初にオプトインが必要です。 Microsoft 365 で組織のコンテンツのベースライン評価を完了するには、12日間かかります。 グローバル管理者に連絡して、オプトインプロセスを開始します。
@@ -80,7 +80,7 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 10. 分類子を選択することによって、[詳細] ページを表示できるようになりました。
 
 
-![テストの準備が整った trainable クラシファイア](media/classifier-trainable-ready-to-test-detail.png)
+![テストの準備が整った trainable クラシファイア](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. 少なくとも200のテストコンテンツアイテムを収集します。 Microsoft では、最適な結果を得るために1万をお勧めします。 これらのアイテムは、強力な陽性、強力なネガ、およびそれらの性質上の明確にわかりにくい項目を組み合わせたものにする必要があります。 サポートされているファイルの種類については、「 [SharePoint Server での既定のクロール対象ファイル名拡張子および解析済みファイルの種類](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)」を参照してください。
 
@@ -100,13 +100,13 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 
 16. Trainable クラシファイアがテストファイルの処理を完了すると、詳細ページの状態はに`Ready to review`変わります。 テストサンプルサイズを増やす必要がある場合は、 `Add items to test` trainable クラシファイアが追加のアイテムを処理することを選択して許可します。
 
-![スクリーンショットを確認する準備ができました](media/classifier-trainable-ready-to-review-detail.png)
+![スクリーンショットを確認する準備ができました](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. [ `Tested items to review`タブ] を選択してアイテムを確認します。
 
 18. Microsoft 365 は、一度に30個のアイテムを提示します。 それらを確認し、 `We predict this item is "Relevant". Do you agree?`ボックスで、 `Yes`また`No`は`Not sure, skip to next item`のどちらかを選択します。 モデル精度は30アイテムごとに自動的に更新されます。
 
-![[アイテムの確認] ボックス](media/classifier-trainable-review-detail.png)
+![[アイテムの確認] ボックス](../media/classifier-trainable-review-detail.png)
 
 19. *少なく*とも200のアイテムを確認します。
 
@@ -114,7 +114,7 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 
 20. 精度が少なくとも70% に達するまで確認を続け`Publish the classifier` 、状態`Ready to use`はになります。
 
-![精度と発行の準備ができている](media/classifier-trainable-review-ready-to-publish.png)
+![精度と発行の準備ができている](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. 分類子を発行します。
 

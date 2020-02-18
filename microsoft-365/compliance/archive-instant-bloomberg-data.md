@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、インスタント Bloomberg チャットツールから Microsoft 365 にデータをインポートするためのネイティブコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 9711442e75e5a60540c8c7debea83d90c89e7893
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e93802eaf3197139fe8b8384bc1ec3ee16b2d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596034"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079661"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
@@ -29,7 +29,7 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
 
 次の概要では、コネクタを使用して、Microsoft 365 でインスタント Bloomberg チャットデータをアーカイブするプロセスについて説明します。 
 
-![インスタント Bloomberg のインポートとアーカイブのプロセス](media/InstantBloombergDataArchiving.png)
+![インスタント Bloomberg のインポートとアーカイブのプロセス](../media/InstantBloombergDataArchiving.png)
 
 1. 組織は Bloomberg を使用して、Bloomberg SFTP サイトをセットアップします。 また、Bloomberg を使用して、チャットメッセージを Bloomberg SFTP サイトにコピーするようにインスタント Bloomberg を構成します。
 
@@ -39,7 +39,7 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
     
 4. コネクタは、特定のユーザーのメールボックスにチャットメッセージアイテムをインポートします。 InstantBloomberg という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress*プロパティの値を使用して実行されます。 すべてのチャットメッセージには、このプロパティが含まれており、チャットメッセージのすべての参加者の電子メールアドレスが設定されます。 *CorporateEmailAddress*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 このマッピングファイルには、各ユーザーの Bloomberg UUID および corresponing Microsoft 365 メールボックスアドレスが含まれている必要があります。 自動ユーザーマッピングを有効にしてカスタムマッピングマッピングを提供する場合、すべてのチャットアイテムに対して、コネクタはまずカスタムマッピングファイルを参照します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャットアイテムの*CorporateEmailAddress*プロパティを使用します。 コネクタがカスタムマッピングファイルまたはチャットアイテムの*CorporateEmailAddress*プロパティに有効な Microsoft 365 ユーザーを見つけられない場合、そのアイテムはインポートされません。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 インスタント Bloomberg データをアーカイブするために必要な実装手順の多くは、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に、完了する必要があります。
 

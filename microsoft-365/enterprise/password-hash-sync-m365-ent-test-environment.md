@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 テスト環境のパスワード ハッシュ同期
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: ef08fcf59602d7812875015971d00a34526576d6
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: a0a498aea84bacb61de257150801328834724981
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202458"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066395"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
@@ -29,7 +31,7 @@ ms.locfileid: "39202458"
 
 多くの組織では、Azure AD Connect とパスワード ハッシュ同期を使用して、オンプレミスの Active Directory Domain Services (AD DS) フォレスト内のアカウント セットを、Microsoft 365 または Office 365 サブスクリプションの Azure AD テナント内のアカウント セットに同期します。 この記事では、Microsoft 365 のテスト環境にパスワード ハッシュ同期を追加する方法について説明します。最終的な構成は、次のとおりになります。
   
-![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 このテスト環境は、次に示す 2 つのフェーズで設定します。
   
@@ -37,13 +39,13 @@ ms.locfileid: "39202458"
 2. APP1 に Azure AD Connect をインストールして構成する。
     
 > [!TIP]
-> [ここ](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する
 
 「[Microsoft 365 用のシミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)」の手順を実行します。次に、最終的な構成を示します。
   
-![シミュレートされたエンタープライズ基本構成](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![シミュレートされたエンタープライズ基本構成](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 この構成は、次の内容で成立します。 
   
@@ -60,7 +62,7 @@ ms.locfileid: "39202458"
 
 最終的な構成をここに示します。
   
-![testlab ドメイン名の登録](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![testlab ドメイン名の登録](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 この構成は、次の内容で成立します。
 
@@ -127,7 +129,7 @@ User1 は、TESTLAB AD DS ドメインのドメイン管理者のアクセス許
 
 最終的な構成をここに示します。
 
-![パスワード ハッシュ同期テスト環境があるシミュレートされたエンタープライズ](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![パスワード ハッシュ同期テスト環境があるシミュレートされたエンタープライズ](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 この構成は、次の内容で成立します。 
   

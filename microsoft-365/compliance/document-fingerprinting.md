@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織内のインフォメーション ワーカーは、日常的にさまざまな種類の機密情報を処理します。 ドキュメント フィンガープリンティングは、組織全体で使用される標準フォームを特定することによってこの情報の保護を容易にします。 このトピックでは、ドキュメントフィンガープリンティングの背後にある概念と、PowerShell を使用して作成する方法について説明します。
-ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892030"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074951"
 ---
 # <a name="document-fingerprinting"></a>ドキュメント フィンガープリンティング
 
@@ -45,7 +45,7 @@ ms.locfileid: "41892030"
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>特許情報テンプレートのドキュメント フィンガープリントと一致する特許情報ドキュメントの例
 
-![Document-Fingerprinting-diagram](media/Document-Fingerprinting-diagram.png)
+![Document-Fingerprinting-diagram](../media/Document-Fingerprinting-diagram.png)
   
 特許テンプレートには、「特許役職」、「Inventors」、「説明」、および「Description」、および各フィールドの説明 (word パターン) が含まれています。 元の特許テンプレートをアップロードすると、サポートされているファイルの種類とテキスト形式のいずれかになります。 DLP この単語パターンは、元のテキストを表す一意のハッシュ値を含む小さな Unicode XML ファイルであるドキュメント指紋に変換され、指紋は Active Directory 内のデータ分類として保存されます。 (セキュリティ対策として、元のドキュメント自体はサービスに格納されず、ハッシュ値のみが格納され、元のドキュメントをハッシュ値から再構築することはできません)。その後、特許指紋は、DLP ポリシーに関連付けることができる機密情報の種類になります。 指紋を DLP ポリシーに関連付けた後、DLP は特許指紋に一致するドキュメントを含む送信メールを検出し、組織のポリシーに従ってそれらを処理します。 
 

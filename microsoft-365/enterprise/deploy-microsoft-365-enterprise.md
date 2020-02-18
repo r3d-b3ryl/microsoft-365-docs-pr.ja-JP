@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 Enterprise の展開
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801922"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067961"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Microsoft 365 Enterprise の展開
 
@@ -65,7 +67,7 @@ Microsoft 365 Enterprise を自分で展開するには:
 
 ここに、基礎インフラストラクチャーとワークロードとシナリオの関係性を示します。
 
-![基礎インフラストラクチャーとワークロードとシナリオの関係性](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![基礎インフラストラクチャーとワークロードとシナリオの関係性](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 ワークロードとシナリオは、基礎インフラストラクチャー上で運用します。 ただし、生産性と共同作業の向上のためにワークロードを使用するのにすべての基礎インフラストラクチャー フェーズを満たす必要はありません。
 
@@ -83,13 +85,13 @@ TLGs を使用すると、複雑な構成、ワークロード、またはエン
 
 詳細については、「[Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)」を参照してください。 
 
-![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法についてより良く理解するためには、「[組織を Microsoft 365 に移行する](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)」を参照してください。
+組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法についてより良く理解するためには、「[組織を Microsoft 365 に移行する](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)」を参照してください。
 
-[![組織を Microsoft 365 に移行するためのポスター](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![組織を Microsoft 365 に移行するためのポスター](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 このポスター (見開き 2 ページ) で簡単に既存のインフラストラクチャのインベントリを作成し、Microsoft 365 Enterprise に対応する製品またはサービスに移行するためのガイダンスへとアクセスします。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 

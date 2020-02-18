@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高度な電子情報開示ケースのレビューセットに Office 365 以外のデータをインポートします。
-ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585686"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072211"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>レビュー セットに Office 365 以外のデータを読み込む
 
@@ -30,7 +30,7 @@ ms.locfileid: "41585686"
 >[!Note]
 >高度な電子情報開示では、組織の Microsoft 365 または Office 365 E5 サブスクリプション、および Advanced コンプライアンスアドオンサブスクリプションを備えた E3 サブスクリプションが必要です。 その計画がなく、高度な電子情報開示を試行する必要がある場合は、Office 365 Enterprise E5 の試用版にサインアップすることができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 この記事に記載されている「Office 以外の365をアップロードする」機能を使用するには、次のものが必要です。
 
@@ -52,7 +52,7 @@ ms.locfileid: "41585686"
 
    この例では、abraham.mcmahon@contoso.com、jewell.gordon@contoso.com、および staci.gonzalez@contoso.com は、保管担当者の SMTP アドレスです。
 
-   ![Office 以外の365データアップロードフォルダーの構造](media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![Office 以外の365データアップロードフォルダーの構造](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - 電子情報開示マネージャーの役割グループに割り当てられているアカウント (および電子情報開示管理者として追加されたもの)。
 
@@ -69,17 +69,17 @@ ms.locfileid: "41585686"
 
 4. [**ファイルのアップロード**] をクリックして、Office 365 以外のデータインポートウィザードを起動します。
 
-   ![ファイルをアップロードする](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![ファイルをアップロードする](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    ウィザードの最初の手順では、にファイルをアップロードするための、セキュリティ保護された Microsoft 提供の Azure ストレージの場所を準備します。  準備が完了すると、 **[次へ: ファイルのアップロード**] ボタンがアクティブになります。
 
-   ![Office 以外の365のインポート: 準備](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Office 以外の365のインポート: 準備](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. [**次へ: ファイルのアップロード**] をクリックします。
 
 6. [**ファイルのアップロード**] ページで、次の操作を行います。
 
-   ![Office 以外の365インポート: ファイルのアップロード](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![Office 以外の365インポート: ファイルのアップロード](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
    a.  [**ファイルの場所のパス**] ボックスで、アップロードする Office 365 以外のデータを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
 
@@ -87,7 +87,7 @@ ms.locfileid: "41585686"
 
 7. Windows コマンドプロンプトを起動し、前の手順でコピーしたコマンドを貼り付け、 **enter**キーを押して、azcopy コマンドを開始します。  コマンドを開始すると、Office 以外の365ファイルは、手順4で準備した Azure ストレージの場所にアップロードされます。
 
-   ![Office 以外の365インポート: AzCopy](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![Office 以外の365インポート: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > 前述したように、[**ファイルのアップロード**] ページで提供されているコマンドを正常に使用するには、azcopy v1.1 を使用する必要があります。 指定した AzCopy コマンドが失敗した場合は、「 [Advanced eDiscovery での AzCopy のトラブルシューティング](troubleshooting-azcopy.md)」を参照してください。
@@ -96,6 +96,6 @@ ms.locfileid: "41585686"
 
 9. Office ではない365ファイルの処理の進行状況を追跡するには、[**処理ファイル**] ページまたは [**ジョブ**] タブで、[ **office 以外の365データをレビューセットに追加する**] というジョブを表示します。  ジョブが完了すると、新しいファイルがレビューセットで利用できるようになります。
 
-   ![Office 以外の365インポート: 処理ファイル](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![Office 以外の365インポート: 処理ファイル](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. 処理が終了したら、ウィザードを閉じることができます。

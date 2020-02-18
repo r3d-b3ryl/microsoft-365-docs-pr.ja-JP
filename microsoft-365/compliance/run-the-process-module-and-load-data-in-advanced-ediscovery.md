@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Office 365 セキュリティ&amp;コンプライアンスセンターを使用して Office 365 Advanced eDiscovery にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
-ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601594"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081528"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>プロセスモジュールを実行し、Office 365 でデータを読み込む高度な電子情報開示
 
@@ -49,7 +49,7 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
     
 4. [ **** \> **** プロセス\> **セットアップ**の準備] で、使用可能なコンテナーの一覧からコンテナーを選択します。
     
-    ![検索結果をケースに追加するには、[処理] をクリックします。](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![検索結果をケースに追加するには、[処理] をクリックします。](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. [**詳細設定**] をクリックします。コンテナーを seed ファイルとして、またはタグ付け済みファイルとして追加する場合。 
     
@@ -57,7 +57,7 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
     
     事前にタグ付けされたファイルを使用して、関連性トレーニングを自動化します。 少なくとも1500ファイルにタグを付けて、関連性があるコレクションと同じように関連していないファイルに関連する割合を維持する必要があります。 これらのファイルは手動でタグ付けする必要があり、タグの品質に自信を持っている必要があります。
     
-    ![バッチファイルを処理するための [詳細設定] ページのスクリーンショット](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![バッチファイルを処理するための [詳細設定] ページのスクリーンショット](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - [ **Seed** ] セクションで、次のようにします。 
     

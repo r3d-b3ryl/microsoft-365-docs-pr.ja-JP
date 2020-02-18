@@ -1,5 +1,7 @@
 ---
 title: '手順 2: 環境の分類を構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内のデータを分類するさまざまな方法について理解し、構成します。
-ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370414"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067254"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>手順 2: 環境の分類を構成する
 
 *この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 この手順では、法務/コンプライアンス チームと連携して組織のデータの分類方法を定義します。
 
@@ -100,7 +102,7 @@ GDPR の個人データを含む分類スキーマの例については、「[�
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: データの分類](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: データの分類](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 中間チェックポイントとして、この手順に対応する[終了条件](infoprotect-exit-criteria.md#crit-infoprotect-step2)を確認してください。
@@ -109,5 +111,5 @@ GDPR の個人データを含む分類スキーマの例については、「[�
 
 |||
 |:-------|:-----|
-|![手順 3](./media/stepnumbers/Step3.png)|[Office 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
+|![手順 3](../media/stepnumbers/Step3.png)|[Office 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
 

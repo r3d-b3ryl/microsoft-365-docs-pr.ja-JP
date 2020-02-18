@@ -1,5 +1,7 @@
 ---
 title: '手順 4: ユーザ アカウントを追加する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザー アカウントとグループを、クラウドに直接追加するか、オンプレミス ディレクトリと同期することにより追加します。
-ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801842"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067377"
 ---
 # <a name="step-4-add-your-user-accounts"></a>手順 4: ユーザ アカウントを追加する
 
-![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## <a name="create-your-user-accounts-for-cloud-only-identity"></a>クラウド専用 ID のユーザー アカウントを作成する
@@ -42,7 +44,7 @@ ms.locfileid: "40801842"
 
 Azure AD Connect は、シングル フォレストまたはマルチフォレスト AD DS 環境の実際に必要な ID のみを、Azure AD テナントと同期できるようにする、サポートされている Microsoft ツールです。 次の図は、Azure AD Connect 同期に関する基本的なプロセスを示します。
 
-![Azure AD Connect によるオンプレミス ディレクトリと Azure AD の同期方法](./media/identity-add-user-accounts/azure-ad-connect.png)
+![Azure AD Connect によるオンプレミス ディレクトリと Azure AD の同期方法](../media/identity-add-user-accounts/azure-ad-connect.png)
 
 1. サーバーで実行している Azure AD Connect は、アカウント、グループ、および連絡先の変更に関して AD DS にポーリングします。
 2. Azure AD Connect はそれらの変更を Microsoft 365 サブスクリプションの Azure AD テナントに送信します。
@@ -74,7 +76,7 @@ Azure AD にオンプレミスのユーザーとグループが作成される�
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: パスワード ハッシュ同期](password-hash-sync-m365-ent-test-environment.md)<br> [テスト ラボ ガイド: パススルー認証](pass-through-auth-m365-ent-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: パスワード ハッシュ同期](password-hash-sync-m365-ent-test-environment.md)<br> [テスト ラボ ガイド: パススルー認証](pass-through-auth-m365-ent-test-environment.md) |
 |||
 
 中間チェックポイントとして、このセクションに対応する[終了条件](identity-exit-criteria.md#crit-identity-sync)を確認できます。
@@ -86,7 +88,7 @@ Azure AD にオンプレミスのユーザーとグループが作成される�
 
 このセクションでは、Azure AD Connect Health エージェントを各オンプレミス AD DS ドメイン コントローラーにインストールして、Azure AD Connect によって提供されている ID インフラストラクチャと 同期サービスを監視します。 監視情報は Azure AD Connect Health ポータルで使用可能になります。このポータルでは、アラート、パフォーマンス監視、使用状況分析などの情報を確認できます。
 
-![Azure AD Connect Health のコンポーネント](./media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
+![Azure AD Connect Health のコンポーネント](../media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
 
 Azure AD Connect Health の使用法に関する重要な設計上の決定は、Azure AD Connect をどのように使用しているかに応じて異なります。
 
@@ -119,11 +121,11 @@ Azure AD Connect Health の使用法に関する重要な設計上の決定は�
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: パスワードの書き戻し](password-writeback-m365-ent-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: パスワードの書き戻し](password-writeback-m365-ent-test-environment.md) |
 |||
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-pw-writeback)を確認できます。
 
 |||
 |:-------|:-----|
-|![手順 5](./media/stepnumbers/Step5.png)| [管理にグループを使用する](identity-use-group-management.md) |
+|![手順 5](../media/stepnumbers/Step5.png)| [管理にグループを使用する](identity-use-group-management.md) |

@@ -1,5 +1,7 @@
 ---
 title: Office 365 ProPlus の展開の終了条件
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が、Office 365 ProPlus インフラストラクチャの Microsoft 365 Enterprise の終了条件を満たしていることを確認します。
-ms.openlocfilehash: 749d9661911bd6b69a3d6abff0b54e9ea1200adc
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 2f19de8c40c95f27e3b7578d384db39d5feb57e0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746583"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066490"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Office 365 ProPlus の展開の終了条件
 
-![フェーズ 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![フェーズ 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *これは Microsoft 365 Enterprise および Microsoft 365 Education のバージョン E3 および E5 に適用されます。*
 
@@ -60,4 +62,4 @@ ms.locfileid: "37746583"
 
 |||
 |:-------|:-----|
-|![フェーズ 5: モバイル デバイス管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は[モバイル デバイス管理](mobility-infrastructure.md)です。 |
+|![フェーズ 5: モバイル デバイス管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Microsoft 365 Enterprise のエンド ツー エンド展開のフェーズを実行している場合、次の手順は[モバイル デバイス管理](mobility-infrastructure.md)です。 |

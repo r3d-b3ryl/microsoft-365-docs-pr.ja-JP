@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595624"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077564"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的情報保留通知を作成する
 
 Advanced eDiscovery 保管担当者 communications を使用すると、組織は保管担当者との通信に関するワークフローを管理できます。 法務部門は、コミュニケーションツールを使用して、法的情報保留通知の送信、収集、追跡を系統的に行うことができます。 また、柔軟な作成プロセスでは、チームは、保留通知ワークフローと、保管担当者に送信される通知の内容をカスタマイズすることもできます。 
 
-![通信ページ](media/CommunicationPage.PNG)
+![通信ページ](../media/CommunicationPage.PNG)
 
 この記事では、保留通知ワークフローの手順の概要を説明します。
 
@@ -35,7 +35,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 最初の手順として、法的情報保留通知またはその他の保管担当者通信に関する適切な詳細を指定します。 
 
-![名前の通信ページ](media/NameCommunication.PNG)
+![名前の通信ページ](../media/NameCommunication.PNG)
 
 1. [セキュリティ & コンプライアンスセンター] で、 **[電子情報開示 > Advanced ediscovery** ] に移動して、組織内のケースの一覧を表示します。
    
@@ -47,13 +47,13 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
     
     - **発行責任**者: ドロップダウンリストには、ケースメンバーの一覧が表示されます。 保管担当者に送信される各通知は、指定された発行責任者の代理として送信されます。
 
-4. [**次へ**] をクリックします。
+4. **[次へ]** をクリックします。
 
 ## <a name="step-2-define-the-portal-content"></a>手順 2: ポータルコンテンツを定義する
 
 次に、保留通知のコンテンツを作成して追加することができます。 [**通信の作成**] ウィザードの [**ポータルコンテンツの定義**] ページで、保留通知の内容を指定します。 このコンテンツは、発行、再発行、アラーム、エスカレーション通知に自動的に追加されます。 さらに、このコンテンツは保管担当者のコンプライアンスポータルに表示されます。 
 
-![ポータルコンテンツページ](media/PortalContent.PNG)
+![ポータルコンテンツページ](../media/PortalContent.PNG)
 
 ポータルコンテンツを作成するには、次のようにします。
 
@@ -61,7 +61,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 2. 通知に差し込み変数を挿入して、通知をカスタマイズし、保管担当者コンプライアンスポータルを共有します。
 
-3. [**次へ**] をクリックします。
+3. **[次へ]** をクリックします。
 
   >[!Tip]
   >ポータルコンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [Use The Communications Editor](using-communications-editor.md)」を参照してください。
@@ -102,7 +102,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
    
 4. 保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。 手順2で定義したポータルコンテンツが再発行通知の最後に追加されることに注意してください。
    
-5. [**保存**] をクリックします。
+5. **[保存]** をクリックします。
 
 >[!Note]
 >保留通知が変更されると、その通知に割り当てられたすべての保管担当者に対して、再発行の通知が自動的に送信されます。 通知が送信されると、保管担当者は保留通知を再認識するように求められます。 通知またはエスカレーションワークフローを設定している場合は、それらも再起動されます。 
@@ -127,7 +127,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 必要に応じて、自動化された通知およびエスカレーション通知を作成およびスケジュールすることによって、応答のない保管担当者をフォローアップするワークフローを簡略化できます。
 
-![アラーム/エスカレーションページ](media/ReminderEscalations.PNG)
+![アラーム/エスカレーションページ](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>リマインダー
 
@@ -173,7 +173,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 通知の内容を完了したら、通知を送信する保管担当者を選択します。 
 
-![保管担当者ページの選択](media/SelectCustodians.PNG)
+![保管担当者ページの選択](../media/SelectCustodians.PNG)
 
 保管担当者を追加するには
 

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、および Teams の各ファイルに対して、Office 365 の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: a57fb5ee7eea1746a50ec0fb1e2c3e84495b4f2c
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a360c2c7a6876669ce5d2ae6b52a730a3c7f45a5
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804829"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091290"
 ---
 # <a name="set-up-customer-key-for-office-365"></a>Office 365 の顧客キーを設定する
 
@@ -124,7 +124,7 @@ Azure の手順を完了したら、 [Microsoft FastTrack ポータル](https://
 
 ルート暗号化キーが一時的または完全に失われると、非常に破壊的または重大な操作によってデータが失われる可能性があります。 このため、顧客キーで使用されるリソースには強力な保護が必要です。 顧客キーと共に使用されるすべての Azure リソースは、既定の構成を超える保護メカニズムを提供します。 Azure サブスクリプションは、即時および irrevocable のキャンセルを防止するようにタグ付けまたは登録することができます。 これは、必須の保持期間の登録と呼ばれます。 必須の保持期間に Azure サブスクリプションを登録するために必要な手順は、Office 365 チームとの共同作業が必要です。 このプロセスには、1 ~ 5 営業日かかることがあります。 以前は、これは「キャンセルしない」と呼ばれることがありました。
   
-Office 365 チームに連絡する前に、顧客キーで使用する Azure サブスクリプションごとに以下の手順を実行する必要があります。 続行する前に、Azure PowerShell Az モジュールがインストールされてhttps://docs.microsoft.com/powershell/azure/new-azureps-module-azいることを確認してください (。
+Office 365 チームに連絡する前に、顧客キーで使用する Azure サブスクリプションごとに以下の手順を実行する必要があります。 開始する前に、 [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az)モジュールがインストールされていることを確認してください。
   
 1. Azure PowerShell でサインインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps)してサインインする」を参照してください。
 
@@ -132,7 +132,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する Azure �
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
    ```
 
 3. プロセスを完了させるために、Microsoft にお問い合わせください。 SharePoint および OneDrive for Business チームについては、 [spock@microsoft.com](mailto:spock@microsoft.com)にお問い合わせください。 Exchange Online と Skype for Business の場合は、 [exock@microsoft.com](mailto:exock@microsoft.com)にお問い合わせください。 メールに次のものを含めます。
@@ -144,18 +144,18 @@ Office 365 チームに連絡する前に、顧客キーで使用する Azure �
 
    このプロセスを完了するためのサービスレベル契約 (SLA) は、Microsoft が事前通知 (および検証) した後で、サブスクリプションを必須の保持期間を使用するように登録した後、5営業日です。
 
-4. 登録が完了したことを Microsoft から通知された後、次のようにして、コマンドレットを実行して登録の状態を確認します。 各サブスクリプションに対してこの操作を実行します。
+4. 登録が完了したことを Microsoft から通知されたら、次のようにして、「Get-AzProviderFeature」コマンドを実行し、登録の状態を確認します。 検証された場合、取得した AzProviderFeature コマンドは、**登録状態**プロパティに**登録さ**れている値を返します。 各サブスクリプションに対してこの操作を実行します。
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
    ```
 
-5. このコマンドレットを実行して、登録の**状態**のプロパティが [**登録済み**] の値を返すことを確認した後、次のコマンドを実行してプロセスを完了します。 各サブスクリプションに対してこの操作を実行します。
+5. プロセスを完了するには、AzResourceProvider コマンドを実行します。 各サブスクリプションに対してこの操作を実行します。
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzResourceProvider -ProviderNamespace "Microsoft.KeyVault"
+   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>各サブスクリプションにプレミアム Azure キーコンテナーを作成する

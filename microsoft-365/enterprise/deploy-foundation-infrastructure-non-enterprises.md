@@ -1,6 +1,8 @@
 ---
 title: 非エンタープライズ組織のためのエンタープライズ向け Microsoft 365 の基礎インフラストラクチャ
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/08/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 非エンタープライズ組織向けの、エンタープライズ向け Microsoft 365 基礎インフラストラクチャの簡略化されたフェーズを説明します。
-ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802032"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068174"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ組織のためのエンタープライズ向け Microsoft 365 の基礎インフラストラクチャ
 
@@ -55,7 +57,7 @@ ms.locfileid: "40802032"
 
 以下は、フェーズ 1 の要素に注目して概要を視覚的に示したものです。 **組織**には複数のオフィスがある場合があり、各オフィスには地域のローカル DNS サーバーを使用している ISP 経由のローカル インターネット接続があります。 ISP を介して、各オフィスのユーザーは、最も近い Microsoft 365 のネットワークの場所にアクセスして Microsoft 365 サブスクリプションのリソースを使用できます。
 
-![ネットワーク フェーズ後の組織](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
+![ネットワーク フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
 ## <a name="phase-2-identity"></a>フェーズ 2: ID
 
@@ -150,30 +152,30 @@ Microsoft 365 E5 を利用している場合は、Azure AD Identity Protection �
 
 以下は、既存の要素と新しい要素に注目して、ハイブリッド ID の ID フェーズの概要を視覚的に示したものです。
 
-![ハイブリッド ID の ID フェーズ後の組織](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
+![ハイブリッド ID の ID フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
 新しく取り上げたハイブリッド ID の要素には次のものがあります。
  
 |||
 |:------:|:-----|
-| ![ユーザーのアカウントとグループを含むオンプレミスの AD DS ドメイン](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | ユーザーのアカウントとグループを含むオンプレミスの AD DS ドメイン。 |
-| ![Azure AD Connect を実行している Windows ベースのサーバー](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | Azure AD Connect を実行している Windows ベースのサーバー。 |
-| ![Azure AD 内の AD DS のユーザー アカウントとグループの同期セット](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Azure AD 内の AD DS のユーザー アカウントとグループの同期セット。 |
-| ![認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定。 |
-| ![Azure AD 条件付きアクセス ポリシー](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件付きアクセス ポリシー。 |
+| ![ユーザーのアカウントとグループを含むオンプレミスの AD DS ドメイン](../media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | ユーザーのアカウントとグループを含むオンプレミスの AD DS ドメイン。 |
+| ![Azure AD Connect を実行している Windows ベースのサーバー](../media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | Azure AD Connect を実行している Windows ベースのサーバー。 |
+| ![Azure AD 内の AD DS のユーザー アカウントとグループの同期セット](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Azure AD 内の AD DS のユーザー アカウントとグループの同期セット。 |
+| ![認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定。 |
+| ![Azure AD 条件付きアクセス ポリシー](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件付きアクセス ポリシー。 |
 |||
 
 以下は、新しい要素に注目して、クラウド専用 ID の ID フェーズの概要を視覚的に示したものです。
 
-![クラウド専用 ID の ID フェーズ後の組織](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+![クラウド専用 ID の ID フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
 新しく取り上げたクラウド専用 ID の要素には次のものがあります。
  
 |||
 |:------:|:-----|
-| ![Azure AD のユーザー アカウントとグループ](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Azure AD のユーザー アカウントとグループ。 |
-| ![認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定。 |
-| ![Azure AD 条件付きアクセス ポリシー](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件付きアクセス ポリシー。 |
+| ![Azure AD のユーザー アカウントとグループ](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Azure AD のユーザー アカウントとグループ。 |
+| ![認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 認証、グローバル アカウントのセキュリティ保護、グループとライセンスの管理の簡易化を行うための Azure AD 設定。 |
+| ![Azure AD 条件付きアクセス ポリシー](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件付きアクセス ポリシー。 |
 |||
 
 ## <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
@@ -201,14 +203,14 @@ Microsoft 365 E5 を利用している場合は、Azure AD Identity Protection �
 
 以下は、新しい要素に注目して、Windows 10 Enterprise フェーズの概要を視覚的に示したものです。
 
-![Windows 10 Enterprise フェーズ後の組織](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
+![Windows 10 Enterprise フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
 新しく取り上げた Windows 10 Enterprise の要素には次のものがあります。
 
 |||
 |:------:|:-----|
-| ![Windows デバイスにインストールされている Windows 10 Enterprise](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows デバイスにインストールされている Windows 10 Enterprise (例として、オンプレミスのノート PC を表示)。 |
-| ![ボリューム ライセンス サービス センター](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Windows 10 Enterprise の新規インストール用のイメージが用意されているボリューム ライセンス サービス センター、および最新の更新プログラムを提供する Windows Update for Business サービス。 |
+| ![Windows デバイスにインストールされている Windows 10 Enterprise](../media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows デバイスにインストールされている Windows 10 Enterprise (例として、オンプレミスのノート PC を表示)。 |
+| ![ボリューム ライセンス サービス センター](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Windows 10 Enterprise の新規インストール用のイメージが用意されているボリューム ライセンス サービス センター、および最新の更新プログラムを提供する Windows Update for Business サービス。 |
 |||
 
 ## <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
@@ -225,14 +227,14 @@ Office 365 ProPlus に対する機能更新プログラムは、インストー�
 
 以下は、新しい要素に注目して、Office 365 ProPlus フェーズの概要を視覚的に示したものです。
 
-![Office 365 ProPlus フェーズ後の組織](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Office 365 ProPlus フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
 新しく取り上げた Office 365 ProPlus の要素には次のものがあります。
  
 |||
 |:------:|:-----|
-| ![デバイスにインストールされている Office 365 ProPlus](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | デバイスにインストールされている Office 365 ProPlus (例として、オンプレミスのノート PC を表示)。 |
-| ![Office 365 ProPlus 用の Office コンテンツ配信ネットワーク (CDN)](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 ProPlus の更新プログラムのためにデバイスがアクセスする、Office 365 ProPlus 用の Office コンテンツ配信ネットワーク (CDN)。 |
+| ![デバイスにインストールされている Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | デバイスにインストールされている Office 365 ProPlus (例として、オンプレミスのノート PC を表示)。 |
+| ![Office 365 ProPlus 用の Office コンテンツ配信ネットワーク (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 ProPlus の更新プログラムのためにデバイスがアクセスする、Office 365 ProPlus 用の Office コンテンツ配信ネットワーク (CDN)。 |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>フェーズ 5: モバイル デバイス管理
@@ -264,14 +266,14 @@ Intune ポリシーでは、デバイス コンプライアンスとアプリ保
 
 以下は、新しい要素に注目して、モバイル デバイス管理フェーズの概要を視覚的に示したものです。
 
-![モバイル デバイス管理フェーズ後の組織](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
+![モバイル デバイス管理フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
 新しく取り上げたモバイル デバイス管理の要素には次のものがあります。
 
 |||
 |:------:|:-----|
-| ![Intune に登録されているデバイス](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | Intune に登録されているデバイス (例として、Windows 10 Enterprise を実行しているオンプレミスのノート PC を表示)。 |
-| ![デバイス コンプライアンスとアプリ保護のための Intune ポリシー](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | デバイス コンプライアンスとアプリ保護のための Intune ポリシー。 |
+| ![Intune に登録されているデバイス](../media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | Intune に登録されているデバイス (例として、Windows 10 Enterprise を実行しているオンプレミスのノート PC を表示)。 |
+| ![デバイス コンプライアンスとアプリ保護のための Intune ポリシー](../media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | デバイス コンプライアンスとアプリ保護のための Intune ポリシー。 |
 |||
 
 ## <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
@@ -330,13 +332,13 @@ Intune ポリシーでは、デバイス コンプライアンスとアプリ保
 
 以下は、新しい要素に注目して、情報保護フェーズの概要を視覚的に示したものです。
 
-![情報保護フェーズ後の組織](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
+![情報保護フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
  
 新しく取り上げた情報保護の要素には次のものがあります。
  
 |||
 |:------:|:-----|
-| ![3 つのセキュリティ レベルの機密度ラベル。](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | ユーザーがドキュメントと電子メールに適用できる 3 つのセキュリティ レベルの機密度ラベル。 |
+| ![3 つのセキュリティ レベルの機密度ラベル。](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | ユーザーがドキュメントと電子メールに適用できる 3 つのセキュリティ レベルの機密度ラベル。 |
 |||
 
 カスタム情報の種類と保持ラベルは表示されません。
@@ -412,11 +414,11 @@ Powershell を使用する場合は、この[ダウンロード可能な Excel �
 
 以下は、組織がハイブリッド ID を使用している場合のインフラストラクチャの概要を視覚的に示したものです。これには、AD DS ドメイン、Azure AD Connect サーバー、同期された AD DS のユーザーとグループが含まれています。
 
-![組織がハイブリッド ID を使用している場合のインフラストラクチャの概要](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
+![組織がハイブリッド ID を使用している場合のインフラストラクチャの概要](../media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
  
 以下は、組織がクラウド専用の ID を使用している場合のインフラストラクチャの概要を視覚的に示したものです。
  
-![組織がクラウド専用の ID を使用している場合のインフラストラクチャの概要](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
+![組織がクラウド専用の ID を使用している場合のインフラストラクチャの概要](../media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
 
 ### <a name="employee-results"></a>従業員の結果
 

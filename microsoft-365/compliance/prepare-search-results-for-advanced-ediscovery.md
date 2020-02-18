@@ -17,17 +17,17 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 上級電子情報開示ツールを使用して詳細な分析を行うために、Office 365 のセキュリティ & コンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ba115cf45aa3be7b9cb43b3a261687e073edba2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597744"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071018"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Office 365 アドバンスト eDiscovery 用に検索結果を準備する
 
 > [!IMPORTANT]
-> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は Office 365 Advanced eDiscovery ( *Advanced ediscovery*v2.0 とも呼ばれます) の廃止を発表しています。 まだ Advanced eDiscovery v2.0 を使用している場合は、できるだけ早く、advanced [ediscovery](overview-ediscovery-20.md) V2.0 ( *Microsoft 365 では高度な電子情報開示ソリューション*とも呼ばれます) に移行してください。 上級電子情報開示2.0 には、Advanced eDiscovery v2.0 のような機能がありますが、保管担当者管理、コミュニケーション管理、およびレビューセットなどの多くの新機能も提供しています。 Advanced eDiscovery v2.0 の廃止の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
+> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Office 365 Advanced eDiscovery (*Advanced eDiscovery v1.0* とも呼ばれる) のサポート終了を発表しました。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
 
 セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている検索が正常に実行されると、Office 365 Advanced eDiscovery を使用して検索結果を準備することができます。これにより、大規模な非構造化データセットを分析し、法的訴訟に関連するデータ量を減らすことができます。 高度な電子情報開示機能は次のとおりです。
   
@@ -49,7 +49,7 @@ ms.locfileid: "41597744"
     
 - **レビューアプリケーション用のデータのエクスポート**-分析を完了し、データセットを縮小した後で、高度な電子情報開示と Office 365 のデータをエクスポートできます。 エクスポートパッケージには、エクスポートされたコンテンツと分析メタデータのプロパティを含む CSV ファイルが含まれています。 このエクスポートパッケージは、電子情報開示レビューアプリケーションにインポートできます。 
     
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office365 E5 ライセンスが割り当てられている必要があります。または、Office365 E1 または E3 ライセンスを持つユーザーに Advanced eDiscovery 単体のライセンスを割り当てることもできます。ケースに割り当てられ、Advanced eDiscovery を使用してデータを分析する管理者および法令遵守責任者には E5 ライセンスは不要です。 
     
@@ -98,11 +98,11 @@ ms.locfileid: "41597744"
     
 3. ケースの **[ホーム]** ページで、**[Advanced eDiscovery]** をクリックします。 
     
-    ![[高度な電子情報開示に切り替え] をクリックして、高度な電子情報開示でケースを開きます。](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![[高度な電子情報開示に切り替え] をクリックして、高度な電子情報開示でケースを開きます。](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     **[高度な電子情報開示**の進行状況バーへの接続] が表示されます。 上級電子情報開示に接続されている場合は、ケースのセットアップページにコンテナーの一覧が表示されます。 
     
-    ![詳細な電子情報開示でケースが表示される](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![詳細な電子情報開示でケースが表示される](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
      これらのコンテナーは、手順1でアドバンスト eDiscovery で分析するために準備した検索結果を表します。 セキュリティ & コンプライアンスセンターの場合、コンテナーの名前は検索と同じ名前になることに注意してください。 リスト内のコンテナーは、準備したものです。 上級電子情報開示のために別のユーザーが検索結果を準備している場合、対応するコンテナーはリストに含まれません。 
     

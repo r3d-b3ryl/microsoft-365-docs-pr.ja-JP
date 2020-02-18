@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595504"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076863"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
@@ -50,7 +50,7 @@ Microsoft のエンジニアは、サポートプロセスでお客様から報�
 
 5. Microsoft サポートマネージャーが要求を承認した後、顧客のロックボックスは、Microsoft からの保留中のアクセス要求に関する電子メール通知を組織内の指定された承認者に送信します。
 
-    ![顧客のロックボックス電子メール通知の例](media/CustomerLockbox1.png)
+    ![顧客のロックボックス電子メール通知の例](../media/CustomerLockbox1.png)
 
    Microsoft 365 管理センターで[カスタマーロックボックスアクセス承認](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)者の役割を割り当てられたすべてのユーザーは、顧客ロックボックス要求を承認できます。
 
@@ -74,11 +74,11 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 
 2. **セキュリティ & プライバシーの設定 >** 選択します。
 
-    ![管理センターでカスタマーロックボックスの設定を編集する](media/CustomerLockbox2.png)
+    ![管理センターでカスタマーロックボックスの設定を編集する](../media/CustomerLockbox2.png)
 
 3. [**顧客ロックボックス**] タイルで、[**編集**] を選択し、トグルを**オン**または**オフ**にして、機能をオンまたはオフにします。
 
-    ![Require approval for Customer Lockbox](media/CustomerLockbox4.png)
+    ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>カスタマーロックボックス要求を承認または拒否する
 
@@ -86,19 +86,19 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 
 2. [ **Support > Customer のロックボックス要求**] を選択します。
 
-    ![[サポート] をクリックし、[カスタマーロックボックス要求] をクリックします。](media/CustomerLockbox5.png)
+    ![[サポート] をクリックし、[カスタマーロックボックス要求] をクリックします。](../media/CustomerLockbox5.png)
 
     顧客のロックボックス要求の一覧が表示されます。
 
-    ![顧客ロックボックス要求の一覧](media/CustomerLockbox6.png)
+    ![顧客ロックボックス要求の一覧](../media/CustomerLockbox6.png)
 
 3. 顧客のロックボックス要求を選択し、[**承認**または**拒否**] を選択します。
 
-    ![カスタマーロックボックス要求を承認または拒否する](media/CustomerLockbox7.png)
+    ![カスタマーロックボックス要求を承認または拒否する](../media/CustomerLockbox7.png)
 
     顧客のロックボックス要求の承認に関する確認メッセージが表示されます。
 
-    ![カスタマーロックボックス要求を承認または拒否する](media/CustomerLockbox8.png)
+    ![カスタマーロックボックス要求を承認または拒否する](../media/CustomerLockbox8.png)
 
 ## <a name="auditing-customer-lockbox-requests"></a>顧客ロックボックス要求の監査
 
@@ -116,7 +116,7 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 
     [**監査ログの検索**] ページが表示されます。
 
-    ![監査ログの検索ページ](media/auditlogsearch1.png)
+    ![監査ログの検索ページ](../media/auditlogsearch1.png)
   
 4. 次の検索条件を設定します。
 
@@ -138,7 +138,7 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 
    - Microsoft のエンジニアに関連する監査レコードを表示するには、承認された顧客ロックボックス要求に対する処理を実行します。 [**ユーザー** ] 列の下のボックスに、「 **Microsoft Operator**」と入力します。 [ **Activity** ] 列には、エンジニアが実行したアクションが表示されます。
 
-      ![監査レコードを表示するには、"Microsoft Operator" のフィルターを適用します。](media/CustomerLockbox10.png)
+      ![監査レコードを表示するには、"Microsoft Operator" のフィルターを適用します。](../media/CustomerLockbox10.png)
 
 7. 結果の一覧で、監査レコードをクリックして表示します。
 
@@ -150,13 +150,13 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 |:---------- |:----------|
 | 日付       | 顧客のロックボックス要求が承認または拒否された日時。
 | IP アドレス | 承認者が要求を承認または拒否するために使用したコンピューターの IP アドレス。 |
-| User       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
+| ユーザー       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
 | アクティビティ   | AccessToCustomerDataRequest;これは、顧客のロックボックス要求を承認または拒否するときに記録される監査アクティビティです。                                |
-| アイテム       | 顧客のロックボックス要求の Guid                             |
+| 項目       | 顧客のロックボックス要求の Guid                             |
 
 次のスクリーンショットは、承認された顧客ロックボックス要求に対応する監査ログレコードの例を示しています。 顧客のロックボックス要求が拒否された場合、 **Approvaldecision**パラメーターの値は**Deny**になります。
 
-![承認された顧客ロックボックス要求の監査レコード](media/CustomerLockbox9.png)
+![承認された顧客ロックボックス要求の監査レコード](../media/CustomerLockbox9.png)
 
 > [!TIP]
 > 監査レコードに詳細情報を表示するには、[**詳細情報**] をクリックします。
@@ -169,9 +169,9 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 |:---------- |:----------|
 | 日付       | アクションが実行された日時。 この操作が実行された時間は、顧客のロックボックス要求が承認された4時間以内になることに注意してください。              |
 | IP アドレス | Microsoft エンジニアが使用したコンピューターの IP アドレス。 |
-| User       | Microsoft Operator;この値は、このレコードが顧客のロックボックス要求に関連付けられていることを示します。                                  |
+| ユーザー       | Microsoft Operator;この値は、このレコードが顧客のロックボックス要求に関連付けられていることを示します。                                  |
 | アクティビティ   | Microsoft エンジニアによって実行されたアクティビティの名前。|
-| アイテム       | \<必須\>                                             |
+| 項目       | \<必須\>                                             |
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

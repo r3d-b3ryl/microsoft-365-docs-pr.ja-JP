@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4005b1e379b138f4eb22bb5c11e1f278185dc65e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c1acdb515e278c40ca25d47e2d9fd24c23d51f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597614"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070066"
 ---
 # <a name="query-the-data-in-a-review-set"></a>レビュー セット内のデータをクエリする
 
@@ -31,7 +31,7 @@ ms.locfileid: "41597614"
 
 校閲セット内のドキュメントに対してクエリを作成して実行するには、確認セットの [**新しいクエリ**] をクリックします。 クエリの名前を指定して条件を定義した後、[**保存**] をクリックしてクエリを保存して実行します。 以前に保存したクエリを実行するには、保存されているクエリをクリックします。
 
-![Set クエリを確認する](media/AeDReviewSetQueries.png)
+![Set クエリを確認する](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>レビューセットクエリを作成する
 
@@ -59,7 +59,7 @@ ms.locfileid: "41597614"
 
 保存できるクエリに加えて、レビューセットフィルターを使用して、追加の条件をレビューセットクエリにすばやく適用することができます。 これにより、レビューセットクエリによって表示される結果をさらに絞り込むことができます。
 
-![設定フィルターを確認する](media/AeDReviewSetFilters.png)
+![設定フィルターを確認する](../media/AeDReviewSetFilters.png)
 
 フィルターは、次の2つの重要な方法でクエリとは異なります。
 

@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation のネットワーク
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のネットワーク インフラストラクチャと、Microsoft 365 Enterprise のクラウド サービスに対する最高のネットワーク性能を得るために SD-WAN テクノロジをどのように使用しているかについて説明します。
-ms.openlocfilehash: 87584660805608c45b36e13804ca1dab6b8e7d17
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673173"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068346"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 
@@ -42,7 +44,7 @@ ms.locfileid: "38673173"
 
 図 1 は、Contoso 社のネットワーク インフラストラクチャと、そのインターネットに対する接続を示しています。
 
-![Contoso 社のネットワーク](./media/contoso-networking/contoso-networking-fig1.png)
+![Contoso 社のネットワーク](../media/contoso-networking/contoso-networking-fig1.png)
  
 **図 1: Contoso 社のネットワーク**
 
@@ -75,7 +77,7 @@ Contoso 社は、次のような基幹業務アプリケーションおよびサ
 
 図 2 は、Contoso 社のイントラネット サーバー アクセス時のネットワーク トラフィックの割合を示します。
 
-![Contoso 社の内部アプリケーションのインフラストラクチャ](./media/contoso-networking/contoso-networking-fig2.png)
+![Contoso 社の内部アプリケーションのインフラストラクチャ](../media/contoso-networking/contoso-networking-fig2.png)
  
 **図 2: Contoso 社の内部アプリケーションのインフラストラクチャ**
 

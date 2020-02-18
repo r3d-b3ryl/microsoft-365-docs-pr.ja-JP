@@ -1,5 +1,7 @@
 ---
 title: '手順 4: Windows Information Protection の構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の Windows Information Protection について理解し、展開します。
-ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067164"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>手順 4: Windows Information Protection の構成する
 
 *この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 個人用デバイスが業務に使用されるようになったことで、アプリやデバイスによって非公開の組織データが漏えいされるリスクが高まっています。 例えば、従業員はソーシャル メディア サイトに将来の製品のマーケティング計画の写真を誤って送信したり、機密性の高い情報を含むファイルをパブリック クラウド ストレージに保存したりします。 
 
@@ -49,6 +51,6 @@ Microsoft 365 Enterprise を使用して組織に WIP を展開するには、�
 
 |||
 |:-------|:-----|
-|![手順 5](./media/stepnumbers/Step5.png)|[Office 365 データ損失防止を構成する](infoprotect-data-loss-prevention.md)|
+|![手順 5](../media/stepnumbers/Step5.png)|[Office 365 データ損失防止を構成する](infoprotect-data-loss-prevention.md)|
 
 

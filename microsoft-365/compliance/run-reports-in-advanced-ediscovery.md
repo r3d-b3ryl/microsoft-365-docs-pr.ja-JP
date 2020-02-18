@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'レポートを実行してから、Office 365 Advanced eDiscovery でその .csv ファイルをダウンロードする方法について説明します。  '
-ms.openlocfilehash: 9d459065878eceaf9f0fc8b6ebacb749ff4c4830
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: badc657e100961ba89de6a49349b7016ae790b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597594"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069991"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示でレポートを実行する
 
@@ -36,7 +36,7 @@ ms.locfileid: "41597594"
   
 1. [**レポート**] タブで、[**レポート名**] ボックスの一覧からオプションを選択します。 3つの**レポート名**オプションから、**関連性の決定**、**テーマリスト、** または**タグ付きファイル**を選択します。
     
-    ![電子的情報開示分析レポート](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
+    ![電子的情報開示分析レポート](../media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
   
 2. 選択されたレポートに応じて、使用可能なパラメーターと、並べ替えおよびフィルターのオプションを設定できます。 
     

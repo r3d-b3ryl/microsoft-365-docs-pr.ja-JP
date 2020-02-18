@@ -35,7 +35,7 @@ Exchange Online の IRM については、「[Information Rights Management in E
 
 - このタスクの予想所要時間:30 分
 
-- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[メッセージングポリシーとコンプライアンスのアクセス許可](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)」の「Information Rights Management」を参照してください。 
+- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「[メッセージングポリシーとコンプライアンスのアクセス許可](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)」の「Information Rights Management」を参照してください。 
 
 - AD RMS サーバーは、Windows Server 2008 以降を実行している必要があります。 AD RMS を展開する方法の詳細については、「 [AD Rms クラスターのインストール](https://go.microsoft.com/fwlink/?LinkId=210873)」を参照してください。
 

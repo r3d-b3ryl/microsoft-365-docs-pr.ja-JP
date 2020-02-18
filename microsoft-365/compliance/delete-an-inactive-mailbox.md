@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Office 365 の非アクティブなメールボックスの内容を保持する必要がなくなった場合は、保留リストを削除することによって、非アクティブなメールボックスを完全に削除することができます。 ホールドを削除すると、非アクティブなメールボックスは削除するようにマークされ、処理された後は完全に削除されます。
-ms.openlocfilehash: 21df7f34d6f07a413b860b1b918eb1dbdf26e946
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 412d7ec60fea758c67719271e1be8dbca98611e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595332"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075818"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Office 365 の非アクティブなメールボックスを削除する
 
@@ -107,11 +107,11 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. 削除するインプレースホールドを選択し、 **[編集]** ![編集アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)をクリックします。
+3. 削除するインプレースホールドを選択し、 **[編集]** ![編集アイコン](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)をクリックします。
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**, uncheck the **Place content matching the search query in selected mailboxes on hold** box, and then click **Save**.
     
-5. On the **In-Place eDiscovery &amp; Hold** page, select the In-Place Hold again, and then click **Delete**![Delete icon](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
+5. On the **In-Place eDiscovery &amp; Hold** page, select the In-Place Hold again, and then click **Delete**![Delete icon](../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
     
 6. 警告が表示されたら、 **[はい]** をクリックして、インプレース保持を削除します。 
     
@@ -145,11 +145,11 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. 非アクティブなメールボックスに配置されたインプレースホールドを選択し、[ **** ![編集アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)の編集] をクリックします。
+3. 非アクティブなメールボックスに配置されたインプレースホールドを選択し、[ **** ![編集アイコン](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)の編集] をクリックします。
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **Sources**.
     
-5. ソース メールボックスのリストで、削除する非アクティブなメールボックスの名前をクリックして、 **[削除]**![[削除] アイコン](media/adf01106-cc79-475c-8673-065371c1897b.gif)をクリックします。
+5. ソース メールボックスのリストで、削除する非アクティブなメールボックスの名前をクリックして、 **[削除]**![[削除] アイコン](../media/adf01106-cc79-475c-8673-065371c1897b.gif)をクリックします。
     
 6. **[保存]** をクリックして変更を保存します。操作が正常に完了したことを示すメッセージが表示されます。 
     

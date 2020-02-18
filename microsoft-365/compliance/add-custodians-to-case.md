@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594060"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080240"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースに保管担当者を追加する
 
@@ -29,9 +29,9 @@ Advanced 電子情報開示の組み込みの保管担当者管理ツールを�
 
 次のワークフローを使用して、高度な電子情報開示ケースで保管担当者を追加して管理します。 
 
-![[保管担当者の管理] タブ](media/CustodianMgtPage.png)
+![[保管担当者の管理] タブ](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 ケースに保管担当者を追加するには、電子情報開示マネージャーの役割グループのメンバーである必要があります。 これにより、ケースに保管担当者を追加し、custodial データソースにホールドを配置するために必要なアクセス許可が提供されます。
 
@@ -46,7 +46,7 @@ Advanced 電子情報開示の組み込みの保管担当者管理ツールを�
 
 3. ケースに追加する保管担当者を見つけます。 ユーザー名の最初の部分を入力して、組織の Azure Active Directory のユーザーを表示します。 適切な人物が見つかったら、その名前をクリックして一覧に追加します。
 
-   ![潜在的な保管担当者を特定する](media/AddCustodianStep1.png)
+   ![潜在的な保管担当者を特定する](../media/AddCustodianStep1.png)
  
 4. 関連するすべての保管担当者を追加した後、[**次**へ] をクリックして、保管担当者のプライマリデータソースを選択します。
   
@@ -58,7 +58,7 @@ Advanced 電子情報開示の組み込みの保管担当者管理ツールを�
 
 1. すべての保管担当者の Exchange メールボックスを選択するには、列の上部にある [ **exchange** ] チェックボックスをオンにします。 その後、特定の保管担当者のチェックボックスをオフにして、メールボックスを custodial の場所として削除することができます。 または、列の選択が解除された状態で**Exchange**チェックボックスをオンのままにして、個々の保管担当者のチェックボックスをオンにします。 
  
-   ![Custodial データソースの選択](media/AddCustodianStep2.png)
+   ![Custodial データソースの選択](../media/AddCustodianStep2.png)
  
 2. 保管担当者の OneDrive アカウントに対して同じことを繰り返します。 
 
@@ -74,7 +74,7 @@ Advanced 電子情報開示の組み込みの保管担当者管理ツールを�
 
 1. [**追加データソースの選択**] ページで、特定の保管担当者の行にある [**追加**] をクリックします。 
   
-   ![追加のデータソースをマップする](media/AddCustodianStep3.PNG)
+   ![追加のデータソースをマップする](../media/AddCustodianStep3.PNG)
 
 2. フライアウトページでは、次のいずれかの Office 365 サービスからデータソースを指定できます。
   
@@ -87,7 +87,7 @@ Advanced 電子情報開示の組み込みの保管担当者管理ツールを�
      
      - **Teams** – [**チームの選択**] をクリックし、[ **teams の選択**] をもう一度クリックして、保管担当者が現在メンバーになっている Microsoft teams の一覧を表示します。 保管担当者に追加する Teams を選択します。 このチェックボックスをオンにすると、関連付けられた SharePoint サイトと、その Microsoft teams に関連付けられているグループメールボックスを選択 & が自動的に識別されます。 [**選択**] をクリックし、[**完了**] をクリックします。
 
-       ![データソースのマップ](media/AddCustodianStep4.PNG)
+       ![データソースのマップ](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > 追加のチームを保管担当者に関連付けるには、 **Exchange メール**および**SharePoint サイト**の場所を使用して、チームに関連付けられているメールボックスとサイトを個別に追加する必要があります。
@@ -102,7 +102,7 @@ Advanced 電子情報開示の組み込みの保管担当者管理ツールを�
 
 1. [選択した**保管担当者ページにホールドを配置**する] で、列の上部にある [**保留**] チェックボックスをオンにして、すべての保管担当者を保留にします。 保持から削除する特定の保管担当者のチェックボックスをオフにすることができます。 または、列の選択が解除されている状態で**保持**チェックボックスをオンのままにして、個々の保管担当者のチェックボックスをオンにすることもできます。 
  
-   ![インプレースホールド](media/AddCustodianStep5.PNG)
+   ![インプレースホールド](../media/AddCustodianStep5.PNG)
 
 2. 保管担当者ホールドの選択を確認し、[**完了**] をクリックします。
 

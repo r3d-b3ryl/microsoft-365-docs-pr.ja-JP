@@ -287,4 +287,4 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)
