@@ -1,5 +1,7 @@
 ---
 title: '手順 2: オフィスごとにローカルのインターネット接続を構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,52 +15,52 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: DNS 解決について理解し、パフォーマンスの良い DNS 解決を構成します。
-ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370304"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066666"
 ---
-# <a name="step-2-configure-local-internet-connections-for-each-office"></a><span data-ttu-id="6f6e4-103">手順 2: オフィスごとにローカルのインターネット接続を構成する</span><span class="sxs-lookup"><span data-stu-id="6f6e4-103">Step 2: Configure local Internet connections for each office</span></span>
+# <a name="step-2-configure-local-internet-connections-for-each-office"></a><span data-ttu-id="13058-103">手順 2: オフィスごとにローカルのインターネット接続を構成する</span><span class="sxs-lookup"><span data-stu-id="13058-103">Step 2: Configure local Internet connections for each office</span></span>
 
-<span data-ttu-id="6f6e4-104">*この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="6f6e4-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="13058-104">*この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="13058-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
-![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-<span data-ttu-id="6f6e4-p101">手順 2 では、オフィスごとにローカルのインターネット接続を構成し、ローカルの DNS サーバーを使用していることを確認します。どちらも、接続待機時間を削減し、オンプレミスのクライアント コンピューターが Microsoft 365 クラウドベース サービスの最寄りのエントリ ポイントに確実に接続するために必要な要素です。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-p101">In Step 2, you ensure that each of your offices have local Internet connections and use local DNS servers. Both of these elements are required to reduce connection latency and ensure that on-premises client computers make connections to the nearest point of entry to Microsoft 365 cloud-based services.</span></span>
+<span data-ttu-id="13058-p101">手順 2 では、オフィスごとにローカルのインターネット接続を構成し、ローカルの DNS サーバーを使用していることを確認します。どちらも、接続待機時間を削減し、オンプレミスのクライアント コンピューターが Microsoft 365 クラウドベース サービスの最寄りのエントリ ポイントに確実に接続するために必要な要素です。</span><span class="sxs-lookup"><span data-stu-id="13058-p101">In Step 2, you ensure that each of your offices have local Internet connections and use local DNS servers. Both of these elements are required to reduce connection latency and ensure that on-premises client computers make connections to the nearest point of entry to Microsoft 365 cloud-based services.</span></span>
 
-<span data-ttu-id="6f6e4-108">大規模な組織の従来のネットワークの場合、インターネット トラフィックは、ネットワーク バックボーンを横断して中央インターネット接続に到達します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-108">In traditional networks for large organizations, Internet traffic travels across the network backbone to a central Internet connection.</span></span> <span data-ttu-id="6f6e4-109">グローバルに分散した、Office 365 や Microsoft 365 の Intune 製品を含む、サービスとしてのソフトウェア (SaaS) インフラストラクチャの場合、この方法ではパフォーマンスの最適化がうまくいきません。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-109">In traditional networks for large organizations, Internet traffic travels across the network backbone to a central Internet connection. This does not work well for optimizing performance to a globally distributed Software-as-a-Service (SaaS) infrastructure, which includes the Office 365 and Enterprise Mobility + Security (EMS) products in Microsoft 365.</span></span>
+<span data-ttu-id="13058-108">大規模な組織の従来のネットワークの場合、インターネット トラフィックは、ネットワーク バックボーンを横断して中央インターネット接続に到達します。</span><span class="sxs-lookup"><span data-stu-id="13058-108">In traditional networks for large organizations, Internet traffic travels across the network backbone to a central Internet connection.</span></span> <span data-ttu-id="13058-109">グローバルに分散した、Office 365 や Microsoft 365 の Intune 製品を含む、サービスとしてのソフトウェア (SaaS) インフラストラクチャの場合、この方法ではパフォーマンスの最適化がうまくいきません。</span><span class="sxs-lookup"><span data-stu-id="13058-109">This does not work well for optimizing performance to a globally distributed Software-as-a-Service (SaaS) infrastructure, which includes the Office 365 and Intune products in Microsoft 365.</span></span>
 
-<span data-ttu-id="6f6e4-110">Microsoft のグローバル ネットワークには、地理的に分散された場所を用いた高可用性でスケーラブルなネットワーク エッジとなる *分散サービス フロント ドア* インフラストラクチャが含まれます。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-110">The Microsoft Global Network includes a *Distributed Service Front Door* infrastructure, a highly available and scalable network edge with geographically distributed locations.</span></span> <span data-ttu-id="6f6e4-111">それは、フロント ドア サーバーでエンド ユーザー接続を終了させ、Microsoft のグローバル ネットワーク内でエンド ユーザー トラフィックを効率的にルーティングさせます。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-111">It terminates end user connections at a front door server and efficiently routes end user traffic within the Microsoft Global Network.</span></span>
+<span data-ttu-id="13058-110">Microsoft のグローバル ネットワークには、地理的に分散された場所を用いた高可用性でスケーラブルなネットワーク エッジとなる *分散サービス フロント ドア* インフラストラクチャが含まれます。</span><span class="sxs-lookup"><span data-stu-id="13058-110">The Microsoft Global Network includes a *Distributed Service Front Door* infrastructure, a highly available and scalable network edge with geographically distributed locations.</span></span> <span data-ttu-id="13058-111">それは、フロント ドア サーバーでエンド ユーザー接続を終了させ、Microsoft のグローバル ネットワーク内でエンド ユーザー トラフィックを効率的にルーティングさせます。</span><span class="sxs-lookup"><span data-stu-id="13058-111">It terminates end user connections at a front door server and efficiently routes end user traffic within the Microsoft Global Network.</span></span>
 
-![Microsoft のグローバル ネットワーク](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![Microsoft のグローバル ネットワーク](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
-<span data-ttu-id="6f6e4-113">最高のパフォーマンスを目指す場合、オンプレミスのクライアントは、ネットワーク バックボーン全体や組織の中央インターネット接続に最も近いフロント ドアにトラフィックを送信するのではなく、地理的に最も近い場所のフロント ドアにアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-113">The Microsoft Global Network includes front end servers to the set of cloud services for Microsoft 365 all over the world. For the best performance, on-premises clients should access a front-end server that is geographically closest to them, rather than sending the traffic over a network backbone and to the front-end server that is closest to the organization’s central Internet connection.</span></span>
+<span data-ttu-id="13058-113">最高のパフォーマンスを目指す場合、オンプレミスのクライアントは、ネットワーク バックボーン全体や組織の中央インターネット接続に最も近いフロント ドアにトラフィックを送信するのではなく、地理的に最も近い場所のフロント ドアにアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="13058-113">For the best performance, on-premises clients should access a front door location that is geographically closest to them, rather than sending the traffic over a network backbone and to the front door that is closest to the organization’s central Internet connection.</span></span>
 
-<span data-ttu-id="6f6e4-114">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-114">Here’s an example.</span></span>
+<span data-ttu-id="13058-114">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="13058-114">Here’s an example.</span></span>
 
-![Microsoft のグローバル ネットワークの使用例](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![Microsoft のグローバル ネットワークの使用例](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
-<span data-ttu-id="6f6e4-116">パリ支社のユーザーが SharePoint Online サイトにアクセスする場合:</span><span class="sxs-lookup"><span data-stu-id="6f6e4-116">When a user in the Paris branch office wants to access a SharePoint Online site:</span></span>
+<span data-ttu-id="13058-116">パリ支社のユーザーが SharePoint Online サイトにアクセスする場合:</span><span class="sxs-lookup"><span data-stu-id="13058-116">When a user in the Paris branch office wants to access a SharePoint Online site:</span></span>
 
-1. <span data-ttu-id="6f6e4-117">Contoso.sharepoint.com など、名前解決のために DNS クエリを送信します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-117">It sends a DNS query to resolve a name, such as contoso.sharepoint.com.</span></span> 
-2. <span data-ttu-id="6f6e4-118">ISP によって提供される DNS サーバーでは、そのクエリを Microsoft DNS サーバーに転送します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-118">The DNS server provided by the ISP forwards that query to a Microsoft DNS server.</span></span>
-3. <span data-ttu-id="6f6e4-119">Microsoft の DNS サーバーでは、転送された DNS クエリのソース IP アドレスからそのアドレスが割り当てられている世界の地域を特定します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-119">Microsoft’s DNS servers match the source IP address of the forwarded DNS query to the region of the world assigned that address.</span></span> <span data-ttu-id="6f6e4-120">Microsoft DNS サーバーでは、ヨーロッパで最も近い Microsoft ネットワーク フロント ドアの IP アドレスに応答します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-120">The Microsoft DNS server responds with the IP address of the nearest Microsoft Network front door in Europe.</span></span>
-4. <span data-ttu-id="6f6e4-121">ISP の DNS サーバーでは、その IP アドレスをユーザーに送信します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-121">The ISP DNS server sends that IP address to the user.</span></span>
-5. <span data-ttu-id="6f6e4-122">ユーザーは、ヨーロッパのフロント ドアを通過して SharePoint サーバーへの接続を開始します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-122">The user initiates a connection to the SharePoint server through the Europe front door.</span></span>
+1. <span data-ttu-id="13058-117">Contoso.sharepoint.com など、名前解決のために DNS クエリを送信します。</span><span class="sxs-lookup"><span data-stu-id="13058-117">It sends a DNS query to resolve a name, such as contoso.sharepoint.com.</span></span> 
+2. <span data-ttu-id="13058-118">ISP によって提供される DNS サーバーでは、そのクエリを Microsoft DNS サーバーに転送します。</span><span class="sxs-lookup"><span data-stu-id="13058-118">The DNS server provided by the ISP forwards that query to a Microsoft DNS server.</span></span>
+3. <span data-ttu-id="13058-119">Microsoft の DNS サーバーでは、転送された DNS クエリのソース IP アドレスからそのアドレスが割り当てられている世界の地域を特定します。</span><span class="sxs-lookup"><span data-stu-id="13058-119">Microsoft’s DNS servers match the source IP address of the forwarded DNS query to the region of the world assigned that address.</span></span> <span data-ttu-id="13058-120">Microsoft DNS サーバーでは、ヨーロッパで最も近い Microsoft ネットワーク フロント ドアの IP アドレスに応答します。</span><span class="sxs-lookup"><span data-stu-id="13058-120">The Microsoft DNS server responds with the IP address of the nearest Microsoft Network front door in Europe.</span></span>
+4. <span data-ttu-id="13058-121">ISP の DNS サーバーでは、その IP アドレスをユーザーに送信します。</span><span class="sxs-lookup"><span data-stu-id="13058-121">The ISP DNS server sends that IP address to the user.</span></span>
+5. <span data-ttu-id="13058-122">ユーザーは、ヨーロッパのフロント ドアを通過して SharePoint サーバーへの接続を開始します。</span><span class="sxs-lookup"><span data-stu-id="13058-122">The user initiates a connection to the SharePoint server through the Europe front door.</span></span>
 
-<span data-ttu-id="6f6e4-123">地理的に最も近いフロント ドアへとクライアント要求を方向づけるために、Microsoft の DNS サーバーでは、クライアントの最初の接続要求に対応した DNS クエリを使用します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-123">To direct a client request to the geographically nearest front-end server, Microsoft’s DNS servers use the DNS queries corresponding the client’s initial connection request. Therefore, for the lowest network latency:</span></span> <span data-ttu-id="6f6e4-124">そのため、次のようにしてネットワーク遅延を最小化します。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-124">Therefore, for the lowest network latency:</span></span>
+<span data-ttu-id="13058-123">地理的に最も近いフロント ドアへとクライアント要求を方向づけるために、Microsoft の DNS サーバーでは、クライアントの最初の接続要求に対応した DNS クエリを使用します。</span><span class="sxs-lookup"><span data-stu-id="13058-123">To direct a client request to the geographically nearest front door, Microsoft’s DNS servers use the DNS queries corresponding the client’s initial connection request.</span></span> <span data-ttu-id="13058-124">そのため、次のようにしてネットワーク遅延を最小化します。</span><span class="sxs-lookup"><span data-stu-id="13058-124">Therefore, for the lowest network latency:</span></span>
 
-- <span data-ttu-id="6f6e4-125">組織のすべてのオフィスに、[最適化](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories)カテゴリのネットワーク トラフィック用のローカル インターネット接続が用意されている。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-125">All offices of your organization should have local Internet connections for [Optimize](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories) category network traffic.</span></span>
-- <span data-ttu-id="6f6e4-126">各ローカル インターネット接続で、その地点からの送信インターネット トラフィックに、地理的にローカルな DNS サーバーを使用している。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-126">Each local Internet connection should be using a regionally local DNS server for outbound Internet traffic from that location.</span></span>
+- <span data-ttu-id="13058-125">組織のすべてのオフィスに、[最適化](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories)カテゴリのネットワーク トラフィック用のローカル インターネット接続が用意されている。</span><span class="sxs-lookup"><span data-stu-id="13058-125">All offices of your organization should have local Internet connections for [Optimize](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories) category network traffic.</span></span>
+- <span data-ttu-id="13058-126">各ローカル インターネット接続で、その地点からの送信インターネット トラフィックに、地理的にローカルな DNS サーバーを使用している。</span><span class="sxs-lookup"><span data-stu-id="13058-126">Each local Internet connection should be using a regionally local DNS server for outbound Internet traffic from that location.</span></span>
 
-<span data-ttu-id="6f6e4-127">詳細については、「[ネットワーク接続のローカルの出口を提供する](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-127">For more information, see [Egress network connections locally](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally).</span></span> 
+<span data-ttu-id="13058-127">詳細については、「[ネットワーク接続のローカルの出口を提供する](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13058-127">For more information, see [Egress network connections locally](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally).</span></span> 
 
-<span data-ttu-id="6f6e4-128">中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step2)を確認できます。</span><span class="sxs-lookup"><span data-stu-id="6f6e4-128">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step2) for this step.</span></span>
+<span data-ttu-id="13058-128">中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step2)を確認できます。</span><span class="sxs-lookup"><span data-stu-id="13058-128">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step2) for this step.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="6f6e4-129">次の手順</span><span class="sxs-lookup"><span data-stu-id="6f6e4-129">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="13058-129">次の手順</span><span class="sxs-lookup"><span data-stu-id="13058-129">Next step</span></span>
 
 |||
 |:-------|:-----|
-|![手順 3](./media/stepnumbers/Step3.png)|[<span data-ttu-id="6f6e4-131">ネットワーク ヘアピンを回避する</span><span class="sxs-lookup"><span data-stu-id="6f6e4-131">Avoid network hairpins</span></span>](networking-avoid-network-hairpins.md)|
+|![手順 3](../media/stepnumbers/Step3.png)|[<span data-ttu-id="13058-131">ネットワーク ヘアピンを回避する</span><span class="sxs-lookup"><span data-stu-id="13058-131">Avoid network hairpins</span></span>](networking-avoid-network-hairpins.md)|
