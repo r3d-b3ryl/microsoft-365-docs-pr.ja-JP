@@ -1,5 +1,7 @@
 ---
 title: 'フェーズ 1: Microsoft 365 Enterprise のネットワーク インフラストラクチャ'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: " Microsoft 365 Enterprise のネットワーク インフラストラクチャを展開する手順。"
-ms.openlocfilehash: 9fe7f16aef8b9c82ded2c17ce562dffb2194eaa2
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9a805ffbdbdc19ef5943a0c0ba0ff8f010d3e19b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033672"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066594"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>フェーズ 1: Microsoft 365 Enterprise のネットワーク インフラストラクチャ
 
-![フェーズ 1: ネットワーク](./media/deploy-foundation-infrastructure/networking_icon.png)
+![フェーズ 1: ネットワーク](../media/deploy-foundation-infrastructure/networking_icon.png)
 
 Microsoft 365 Enterprise には、Office 365、Microsoft Intune、および Microsoft Azure の多くの ID およびセキュリティ サービスが含まれます。 これらのクラウド ベースのサービスはすべて、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
 
@@ -37,11 +39,11 @@ Microsoft 365 Enterprise の要件と機能に対応したネットワーク イ
 
 |||
 |:-------|:-----|
-|![手順 1](./media/stepnumbers/Step1.png)|[Microsoft 365 用のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
-|![手順 2](./media/stepnumbers/Step2.png)|[オフィスごとにローカルのインターネット接続を構成する](networking-dns-resolution-same-location.md)|
-|![手順 3](./media/stepnumbers/Step3.png)|[ネットワーク ヘアピンを回避する](networking-avoid-network-hairpins.md)|
-|![手順 4](./media/stepnumbers/Step4.png)|[トラフィック バイパスを構成する](networking-configure-proxies-firewalls.md)|
-|![手順 5](./media/stepnumbers/Step5.png)|[クライアントと Office 365 サービスのパフォーマンスを最適化する](networking-optimize-tcp-performance.md)|
+|![手順 1](../media/stepnumbers/Step1.png)|[Microsoft 365 用のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
+|![手順 2](../media/stepnumbers/Step2.png)|[オフィスごとにローカルのインターネット接続を構成する](networking-dns-resolution-same-location.md)|
+|![手順 3](../media/stepnumbers/Step3.png)|[ネットワーク ヘアピンを回避する](networking-avoid-network-hairpins.md)|
+|![手順 4](../media/stepnumbers/Step4.png)|[トラフィック バイパスを構成する](networking-configure-proxies-firewalls.md)|
+|![手順 5](../media/stepnumbers/Step5.png)|[クライアントと Office 365 サービスのパフォーマンスを最適化する](networking-optimize-tcp-performance.md)|
 
 
 上記の手順が完了したら、このフェーズの[終了条件](networking-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認します。
@@ -54,11 +56,11 @@ Microsoft の内部を見て、[クラウド サービス向けに Microsoft ネ
 
 架空ではあるものの代表的な多国籍企業である Contoso Corporation が Microsoft 365 クラウド サービス用に[ネットワーク デバイスおよびインターネット接続を最適化](contoso-networking.md)した方法をご覧ください。
 
-![Contoso 社](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 
 |||
 |:-------|:-----|
-|![手順 1](./media/stepnumbers/Step1.png)|[Microsoft 365 のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
+|![手順 1](../media/stepnumbers/Step1.png)|[Microsoft 365 のネットワークを準備する](networking-provide-bandwidth-cloud-services.md)|
 

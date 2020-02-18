@@ -1,5 +1,7 @@
 ---
 title: 'ステップ 5: Office 365 データ損失防止を構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の Office 365 データ損失防止を理解して展開する。
-ms.openlocfilehash: 43ebfb39202e407fe6dc7bb4c8e0fe8f906f7a6d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370164"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067224"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>ステップ 5: Office 365 データ損失防止を構成する
 
 *この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
-![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Office 365 セキュリティ/コンプライアンス センターのデータ損失防止 (DLP) ポリシーを使用することにより、Microsoft 365 全体で機密情報の識別、監視、自動保護を行えます。 DLP ポリシーを使用すると、以下を行えます:
 
@@ -58,6 +60,6 @@ DLP ポリシーは、以下を指定します:
 
 |||
 |:-------|:-----|
-|![手順 6](./media/stepnumbers/Step6.png)|[電子メールの暗号化を構成する](infoprotect-email-encryption.md)|
+|![手順 6](../media/stepnumbers/Step6.png)|[電子メールの暗号化を構成する](infoprotect-email-encryption.md)|
 
 

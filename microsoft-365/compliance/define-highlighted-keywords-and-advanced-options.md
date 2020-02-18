@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'ユーザー定義のキーワードを関連性に追加して、Office 365 の高度な電子情報開示でのタグ付けとコストパラメータを指定する際に関連ファイルを特定する方法について説明します。  '
-ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595364"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075934"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
 
@@ -48,11 +48,11 @@ ms.locfileid: "41595364"
     
 6. [**説明**] に、キーワードリスト (省略可能) を入力します。
     
-    ![新しいキーワードの追加](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
+    ![新しいキーワードの追加](../media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
 7. 完了したら、[ **OK]** をクリックします。 作成したリストがキーワードリストテーブルに追加され、編集または削除できるようになります。 
     
-    ![関連性の設定のキーワードの一覧](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
+    ![関連性の設定のキーワードの一覧](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
 ユーザー定義のキーワードが、[関連性\> ] タグの指定した色で表示されます。 
   
@@ -68,9 +68,9 @@ ms.locfileid: "41595364"
     
 2. [**時間で確認されたファイルの数**] ボックスの一覧で、金額を選択するか、既定値をそのまま使用します。 
     
-    ![関連性の設定のコストのパラメーター](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
+    ![関連性の設定のコストのパラメーター](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. [**保存**] をクリックします。 選択した設定が保存されます。
+3. **[保存]** をクリックします。 選択した設定が保存されます。
     
 ## <a name="see-also"></a>関連項目
 

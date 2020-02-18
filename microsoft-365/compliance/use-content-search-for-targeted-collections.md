@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597304"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080813"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 のコンテンツ検索を使用した対象コレクション
 
@@ -30,7 +30,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
 > [!NOTE]
 > SharePoint または OneDrive for Business サイト内のフォルダーにあるコンテンツを返すには、このトピックのスクリプトで Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティは、フォルダー内のすべてのコンテンツを返すので、Path プロパティよりも堅牢ですが、Path プロパティはいくつかのメディアファイルを返すわけではありません。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 手順1でスクリプトを実行するには、セキュリティ&amp;コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
@@ -201,7 +201,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   
 メールボックスフォルダーのスクリプトによって返される出力の例を次に示します。
   
-![スクリプトによって返されるメールボックスフォルダーとフォルダー Id のリストの例](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![スクリプトによって返されるメールボックスフォルダーとフォルダー Id のリストの例](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 手順2の例は、ユーザーの [回復可能なアイテム] フォルダー内の [削除] サブフォルダーを検索するために使用されるクエリを示しています。
   
@@ -211,7 +211,7 @@ SharePoint または OneDrive for Business サイトから**documentlink**プロ
   
 サイトフォルダーのスクリプトによって返される出力の例を次に示します。
   
-![スクリプトによって返されるサイトフォルダーのドキュメントリンク名のリストの例](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![スクリプトによって返されるサイトフォルダーのドキュメントリンク名のリストの例](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>手順 2: フォルダー ID または documentlink を使用して対象のコレクションを実行する
 
@@ -221,7 +221,7 @@ SharePoint または OneDrive for Business サイトから**documentlink**プロ
     
 2. 手順1でスクリプトの実行に使用したアカウントと資格情報を使用して、Office 365 にサインインします。
     
-3. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**検索** \> **コンテンツの検索**] をクリックし、[**新規作成** ![] [追加] アイコン](media/O365-MDM-CreatePolicy-AddIcon.gif)をクリックします。
+3. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**検索** \> **コンテンツの検索**] をクリックし、[**新規作成** ![] [追加] アイコン](../media/O365-MDM-CreatePolicy-AddIcon.gif)をクリックします。
     
 4. **[新規検索]** ページで、コンテンツ検索の名前を入力します。 この名前は、組織内で固有である必要があります。 
     
@@ -233,13 +233,13 @@ SharePoint または OneDrive for Business サイトから**documentlink**プロ
     
     - [検索する**特定のサイトを選択する**] をクリックし、手順1でスクリプトを実行したときに指定したものと同じサイト URL を追加します。 
     
-6. [**次へ**] をクリックします。
+6. **[次へ]** をクリックします。
     
 7. [**検索する内容を選択**してください] ページの [キーワード] ボックスに、 `folderid:<folderid>`手順`documentlink:<path>` 1 でスクリプトによって返された値を貼り付けます。 
     
     たとえば、次のスクリーンショットのクエリは、ユーザーの回復可能なアイテムフォルダーのパージサブフォルダー内のアイテムを検索します (パージ`folderid`サブフォルダーのプロパティの値は、手順1のスクリーンショットに示されています)。
     
-    ![検索クエリのキーワードボックスに folderid または documentlink を貼り付ける](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![検索クエリのキーワードボックスに folderid または documentlink を貼り付ける](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. [**検索**] をクリックして、対象となるコレクション検索を開始します。 
   

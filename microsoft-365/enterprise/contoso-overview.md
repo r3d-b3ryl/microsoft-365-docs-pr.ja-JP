@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation の概要
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: f1c758b92915845a0786c24aec611cb221c70186
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673153"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068300"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
 
-![Contoso 社](./media/contoso-overview/contoso-icon.png)
+![Contoso 社](../media/contoso-overview/contoso-icon.png)
 
 Contoso Corporation は、フランスのパリに本社を持つ多国籍企業であり、100,000 を超える製品を製造、販売、およびサポートする複合組織です。
 
@@ -30,7 +32,7 @@ Contoso Corporation は、フランスのパリに本社を持つ多国籍企業
 
 図 1 は、パリにある本社と、さまざまな大陸にある地域ハブおよびサテライト オフィスを示しています。
 
-![世界各国の Contoso 社のオフィス](./media/contoso-overview/contoso-overview-fig1.png)
+![世界各国の Contoso 社のオフィス](../media/contoso-overview/contoso-overview-fig1.png)
 
 **図 1:世界各国の Contoso 社のオフィス**
  

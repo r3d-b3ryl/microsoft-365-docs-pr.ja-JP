@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: リスクに対処し、コンプライアンスの姿勢を改善するために行われた処置に基づいて、Microsoft コンプライアンススコアが個人のスコアを計算する方法について理解します。
-ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca8615f8c15264104faa71d155d2656cd788bd53
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596244"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078634"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft コンプライアンススコア (プレビュー) の計算
 
@@ -78,12 +78,12 @@ ms.locfileid: "41596244"
   
 各コントロールには、次のリスクに基づいてコンプライアンススコアの値が割り当てられます。
 
-|**型**|**割り当てられたスコア**|
+|**種類**|**割り当てられたスコア**|
 |:-----|:-----|
 | 予防必須 | 27 |
 | 予防的裁量 | 9  |
-| 検出必須 | 3  |
-| 検出随意 | 1  |
-| 修正必須 | 3  |
-| 随意随意 | 1  |
+| 検出必須 | 1/3 |
+| 検出随意 | 1-d |
+| 修正必須 | 1/3 |
+| 随意随意 | 1-d |
   
