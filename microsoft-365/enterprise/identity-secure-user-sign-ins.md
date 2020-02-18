@@ -1,5 +1,7 @@
 ---
 title: '手順 3: ユーザーのサインインをセキュリティで保護して管理する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザーの Windows デバイスへのサインインと、Microsoft 365 へのサインインのセキュリティ強化を行うことができます。
-ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c541f5b74fe3ea6e94b002212f21ec8645e8e87e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801732"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067294"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>手順 3: ユーザーのサインインをセキュリティで保護して管理する
 
-![フェーズ 2 - ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![フェーズ 2 - ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -53,7 +55,7 @@ MFA での 2 番目のセキュリティ層には次のものがあります。
 
 |||
 |:-------|:-----|
-|![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Azure Multi-Factor Authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
+|![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Azure Multi-Factor Authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-mfa)を確認できます。
@@ -85,11 +87,11 @@ Azure AD Identity Protection では次の作業を実行できます。
 
 |||
 |:-------|:-----|
-|![Microsoft クラウド のテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|![Microsoft クラウド のテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [テスト ラボ ガイド: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
 中間チェックポイントとして、このセクションの[終了条件](identity-exit-criteria.md#crit-identity-ident-prot)を確認できます。
 
 |||
 |:-------|:-----|
-|![手順 4](./media/stepnumbers/Step4.png)| [ユーザー アカウントを追加する](identity-add-user-accounts.md) |
+|![手順 4](../media/stepnumbers/Step4.png)| [ユーザー アカウントを追加する](identity-add-user-accounts.md) |

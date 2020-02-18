@@ -1,5 +1,7 @@
 ---
 title: 保持ラベルと DLP を使用してチーム内のファイルを保護する
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様なチーム内のファイルには、保持ラベルとデータ損失防止 (DLP) ポリシーを適用してください。'
-ms.openlocfilehash: 89320a074d5d52062268a7585081849ac42d2025
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 94d8a02d0ea88fa8a05cd6a2c95a2db866d72fad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925831"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083407"
 ---
 # <a name="protect-files-in-teams-with-retention-labels-and-dlp"></a>保持ラベルと DLP を使用してチーム内のファイルを保護する
 
@@ -114,7 +116,7 @@ ms.locfileid: "37925831"
     
 最終的な構成をここに示します。
   
-![4 種類の基となる SharePoint サイト用の保持ラベル。](../media/retention-labels.png)
+![4 種類の基となる SharePoint サイト用の保持ラベル。](../../media/retention-labels.png)
   
 ## <a name="dlp-policies-for-your-underlying-sharepoint-sites"></a>基となる SharePoint サイトの DLP ポリシー
 
@@ -165,7 +167,7 @@ ms.locfileid: "37925831"
     
 機密チームの最終的な構成をここに示します。
   
-![機密保持ラベルを使用した機密チーム向けの DLP ポリシー](../media/retention-labels-sensitive-dlp.png)
+![機密保持ラベルを使用した機密チーム向けの DLP ポリシー](../../media/retention-labels-sensitive-dlp.png)
   
 次に、以下の手順で、基となる SharePoint サイト上のドキュメントを組織外と共有するときにユーザーをブロックする DLP ポリシーを構成します。
   
@@ -211,7 +213,7 @@ ms.locfileid: "37925831"
     
 機密性の高いチームの最終的な構成をここに示します。
   
-![高機密保持ラベルを使用した機密性の高いチーム向けの DLP ポリシー](../media/retention-labels-highly-confidential-dlp.png)
+![高機密保持ラベルを使用した機密性の高いチーム向けの DLP ポリシー](../../media/retention-labels-highly-confidential-dlp.png)
   
 ## <a name="next-step"></a>次の手順
 

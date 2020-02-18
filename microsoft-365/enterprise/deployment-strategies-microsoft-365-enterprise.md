@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 Enterprise の基盤インフラストラクチャ展開戦略
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/24/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基盤インフラストラクチャの各フェーズを展開するいくつかの方法について説明します。
-ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801892"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067814"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 Enterprise の基盤インフラストラクチャ展開戦略
 
@@ -51,7 +53,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 この資料では、次の図を使用して、これらの定義を示します。 
 
-![パイロットおよびユーザー ロールアウトの定義を示すグラフィックス](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![パイロットおよびユーザー ロールアウトの定義を示すグラフィックス](../media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 ユーザー ロールアウトの図の網かけは、グループ、部門、地域などの構造化または系統的アプローチを使用する、組織全体におけるパーセンテージ (0% から 100%) を示します。
 
@@ -76,7 +78,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 このガント チャートは、Microsoft 365 Enterprise の基盤インフラストラクチャのフェーズ 2 〜 6 の簡略化された順次展開を示しています。
 
-![基盤インフラストラクチャのフェーズ 2 から 6 のシリアル展開](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![基盤インフラストラクチャのフェーズ 2 から 6 のシリアル展開](../media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 説明と例を簡単にするために、各フェーズと、各フェーズ内の展開セグメントは、同じ時間がかかると想定しています。
 
@@ -110,7 +112,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 この展開戦略では、ユーザー ロールアウトの現在のフェーズの最後の部分の間に、次のフェーズのパイロット ロールアウトを開始します。前のフェーズのユーザー ロールアウトと重なる形でパイロット ロールアウトが発生する場合の、フェーズ 2 から 6 の展開を以下に示します。
 
-![ユーザー ロールアウトが重複しないフェーズ 2 から 6 の並列展開](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![ユーザー ロールアウトが重複しないフェーズ 2 から 6 の並列展開](../media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 最終結果としては、次のフェーズが始まる前に、組織全体で現在のフェーズのユーザー ロールアウトが完了します。パイロット ロールアウトに含まれないユーザーは、同時に複数のフェーズのロールアウトで処理されることはありませんが、パイロット ロールアウトはユーザー ロールアウトと並行して処理されます。
 
@@ -145,7 +147,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 各種の展開戦略の簡単な比較を示します。
 
-![ユーザー ロールアウトが重複するフェーズ 2 から 6 の並列展開](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![ユーザー ロールアウトが重複するフェーズ 2 から 6 の並列展開](../media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 最終結果は次のようになります。
 
@@ -178,7 +180,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 フェーズ 2 から 6 を 1 つの展開セグメントに圧縮することができる、小規模な組織の場合、結果の展開は次のようになります。
  
-![事前のインフラストラクチャとエンド ツー エンド構成のロールアウト](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![事前のインフラストラクチャとエンド ツー エンド構成のロールアウト](../media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 IT 部門はフェーズ 2 から 6 のインフラストラクチャを構成してから、エンド ツー エンド機能を確認するためにパイロット ユーザーにロールアウトします。たとえば、パイロット ユーザーは以下のすべての機能を同時に取得します。
 

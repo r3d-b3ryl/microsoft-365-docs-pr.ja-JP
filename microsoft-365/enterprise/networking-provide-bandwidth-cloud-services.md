@@ -1,5 +1,7 @@
 ---
 title: 手順 1. Microsoft 365 のネットワークを準備する
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise のクラウド サービスに必要なインターネット帯域幅について理解します。
-ms.openlocfilehash: ea92bcbd19c0b4cef16292d652cf5f8aa45aee07
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 2f20542609c757c4fbccd2f9b0e4af59d9bc7566
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370294"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066525"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>手順 1. Microsoft 365 のネットワークを準備する
 
 *この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
 
-![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 手順 1 では、以下を行う必要があります。
 
@@ -40,5 +42,5 @@ Office 365 や、Microsoft 365 Enterprise の他のクラウド サービスで�
 
 |||
 |:-------|:-----|
-|![手順 2](./media/stepnumbers/Step2.png)|[オフィスごとにローカルのインターネット接続を構成する](networking-dns-resolution-same-location.md)|
+|![手順 2](../media/stepnumbers/Step2.png)|[オフィスごとにローカルのインターネット接続を構成する](networking-dns-resolution-same-location.md)|
 

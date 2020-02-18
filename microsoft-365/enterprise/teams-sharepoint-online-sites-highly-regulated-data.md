@@ -1,6 +1,8 @@
 ---
 title: 厳しく規制されたデータ用の SharePoint サイト
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019
@@ -11,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: ''
 description: セキュリティで保護された SharePoint チーム サイトを作成して、最も重要な機密ファイルを保存します。
-ms.openlocfilehash: f8ccda85256e1f590f80a9302897e2950c59d154
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: c74a2bc59a6ef9d16ecd0dfbed06d577bd98649b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699747"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085063"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>厳しく規制されたデータ用の SharePoint サイト
 
@@ -59,7 +62,7 @@ Microsoft 365 Enterprise には、一連のクラウドベースのサービス�
 
 次に、セキュリティで保護された SharePoint サイトの構成例を示します。
 
-![厳しく規制されたデータ シナリオ用の SharePoint サイト](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![厳しく規制されたデータ シナリオ用の SharePoint サイト](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 このシナリオでは、以下のものを既に展開している必要があります。
 
@@ -68,9 +71,9 @@ Microsoft 365 Enterprise には、一連のクラウドベースのサービス�
 
 以下のフェーズでは、厳しく規制されたデータを扱う SharePoint サイトの設計、構成、導入方法について、順を追って説明します。
 
-<a name="poster"></a> このシナリオを 1 ページにまとめた概要については、「[厳しく規制されたデータ用の SharePoint サイトのポスター](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)」を参照してください。
+<a name="poster"></a> このシナリオを 1 ページにまとめた概要については、「[厳しく規制されたデータ用の SharePoint サイトのポスター](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)」を参照してください。
 
-[![厳しく規制されたデータ用の SharePoint サイトのポスター](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+[![厳しく規制されたデータ用の SharePoint サイトのポスター](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
@@ -170,11 +173,11 @@ SharePoint サイトから、これらのアクセス許可の設定を構成し
 
 これは、厳しく規制されたラベルのサブラベルを使用した結果の構成です。
 
-![厳しく規制されたデータ シナリオ用の SharePoint サイト](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![厳しく規制されたデータ シナリオ用の SharePoint サイト](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 サイトに保存されているファイルにサブラベルを適用したユーザーの例を次に示します。
 
-![厳しく規制されたデータ シナリオ用の SharePoint サイト](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+![厳しく規制されたデータ シナリオ用の SharePoint サイト](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
 
 ## <a name="phase-3-drive-user-adoption"></a>フェーズ 3: ユーザーによる導入を主導

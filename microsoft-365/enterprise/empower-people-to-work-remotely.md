@@ -1,6 +1,8 @@
 ---
 title: リモート ワーカーを支援する
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/24/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするインフラストラクチャとセキュリティを構成します。
-ms.openlocfilehash: 2544820b577b81062550a8c0a84513f2a8c28668
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b86071b7e5a6101c328b43177e965856f74995d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831968"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067745"
 ---
 # <a name="empower-remote-workers"></a>リモート ワーカーを支援する
 
@@ -70,9 +72,9 @@ ms.locfileid: "39831968"
 
 次のフェーズでは、リモート アクセスを可能にする Microsoft 365 Enterprise の機能を展開し、リモート ワーカーの採用を推進する手順について説明します。 これらのフェーズの要素がすでに展開されている場合は、次の要素に進む前に、それらの要素が上記の要件を満たしていることを確認してください。
 
-<a name="poster"></a> このシナリオを 1 ページにまとめた「[リモート ワーカーを支援するポスター](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)」を参照してください。
+<a name="poster"></a> このシナリオを 1 ページにまとめた「[リモート ワーカーを支援するポスター](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)」を参照してください。
 
-[![リモート ワーカーを支援するポスター](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![リモート ワーカーを支援するポスター](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
@@ -94,7 +96,7 @@ ms.locfileid: "39831968"
 
 次に、ID 要素を強調表示した構成を示します。
 
-![リモート ワーカーの ID 要素](./media/empower-people-to-work-remotely/remote-workers-id-phase.png)
+![リモート ワーカーの ID 要素](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
 [フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md) の場合、次を展開します。
 
@@ -103,13 +105,13 @@ ms.locfileid: "39831968"
 
 次に、Windows 10 Enterprise デバイスの構成を示します。
 
-![リモート ワーカー向けの Windows 10 Enterprise の要素](./media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
+![リモート ワーカー向けの Windows 10 Enterprise の要素](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
 [フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md) の場合、インフラストラクチャを展開して Office 365 ProPlus をインストールするか、Office 2010 や Office 2013 などの現在インストールされている Office スイートを組織のデバイス上の Office 365 ProPlus にアップグレードします。 これにより、ユーザーがセキュリティと共同作業エクスペリエンスを最大限活用できるようになります。
 
 次に、Office 365 ProPlus がデバイスにインストールされた場合の構成を示します。
 
-![リモート ワーカー向けの Office 365 ProPlus 要素](./media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![リモート ワーカー向けの Office 365 ProPlus 要素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 [フェーズ 5: モバイル デバイス管理](mobility-infrastructure.md)の場合、次の目的で Intune デバイスとアプリの管理を展開します。
 
@@ -119,7 +121,7 @@ ms.locfileid: "39831968"
 
 次に、Intune の登録済みデバイスとポリシーを強調表示した構成を示します。
 
-![リモート ワーカー向けのモバイル デバイス管理の要素](./media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
+![リモート ワーカー向けのモバイル デバイス管理の要素](../media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
  
 [フェーズ 6: 情報保護](infoprotect-infrastructure.md)の場合、デジタル資産の保護を次の機能により設計および構成します。
 
@@ -128,13 +130,13 @@ ms.locfileid: "39831968"
 
 次に、DLP ポリシーと機密度ラベルを強調表示した構成を示します。
 
-![リモート ワーカー向けの情報保護の要素](./media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
+![リモート ワーカー向けの情報保護の要素](../media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
  
 オンプレミス アプリにアクセスするには、ハイブリッド ID 環境を必要とする [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)を使用できます。
 
 次に、アプリケーション プロキシ コンポーネントを強調表示した構成を示します。
 
-![リモート ワーカーのアプリケーション プロキシの要素](./media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
+![リモート ワーカーのアプリケーション プロキシの要素](../media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
  
 ### <a name="step-2-workloads-for-remote-workers"></a>手順 2: リモート ワーカーのワークロード
 
@@ -146,7 +148,7 @@ ms.locfileid: "39831968"
 
 次に、ワークロードを強調表示した構成を示します。
 
-![リモート ワーカー向けの Microsoft 365 ワークロード](./media/empower-people-to-work-remotely/remote-workers-workloads.png)
+![リモート ワーカー向けの Microsoft 365 ワークロード](../media/empower-people-to-work-remotely/remote-workers-workloads.png)
  
 ### <a name="deployment-results"></a>展開結果
 
@@ -165,11 +167,11 @@ ms.locfileid: "39831968"
 
 次に、ハイブリッド ID を使用する場合の、組織のリモート ワーカーの構成を示します。
 
-![ハイブリッド ID を持つ組織の最終の構成](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
+![ハイブリッド ID を持つ組織の最終の構成](../media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
  
 次に、クラウド専用 ID を使用する場合の、組織のリモート ワーカーの構成を示します。
 
-![クラウド専用 ID を持つ組織の最終の構成](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+![クラウド専用 ID を持つ組織の最終の構成](../media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
 
 ## <a name="phase-2-drive-user-adoption-for-remote-workers"></a>フェーズ 2: リモート ワーカーに導入を促す
 

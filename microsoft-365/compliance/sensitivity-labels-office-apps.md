@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、および web 用 Office アプリの機密ラベルを使用して作業する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069864"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101237"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで機密ラベルを使用する
 
-Microsoft 365 コンプライアンスセンターまたは同等のラベル付けセンターから機密ラベルが公開されている場合は、作成または編集時にデータを分類して保護するために、ユーザーが Office アプリに表示され始めます。
+Microsoft 365 コンプライアンスセンターまたは同等のラベル付けセンターから機密ラベルが[公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)されている場合は、作成または編集時にデータを分類して保護するために、ユーザーが Office アプリに表示され始めます。
 
-この記事に記載されている情報を使用して、Office アプリの機密ラベルを適切に管理することができます。 たとえば、組み込みのラベル付けをサポートするために必要な最低限のバージョンのアプリ、Azure Information Protection の統一されたラベル付きクライアントとの相互作用、および他のアプリやサービスとの互換性があります。
+この記事の情報を使用して、Office アプリの機密ラベルを正常に管理するのに役立ちます。 たとえば、組み込みのラベルをサポートするために必要な最小限のバージョンのアプリを特定し、Azure Information Protection のユニファイドラベルクライアントと他のアプリやサービスとの互換性について理解します。
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>秘密度ラベルのサブスクリプションとライセンスの要件
 

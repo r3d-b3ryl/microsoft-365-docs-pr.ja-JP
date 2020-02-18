@@ -1,6 +1,8 @@
 ---
 title: 厳しく規制されたデータに Teams で対応する
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/13/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 最重要ファイルおよび機密ファイルを保存するためのセキュリティで保護されたチームを作成します。
-ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e2499c6e9061704846f4649ade43f74bd5632e8b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084272"
 ---
 # <a name="teams-for-highly-regulated-data"></a>厳しく規制されたデータに Teams で対応する
 
@@ -42,15 +44,15 @@ ms.locfileid: "40801422"
 
 この結果、秘密度ラベルが適用された構成は次のようになります。
 
-![セキュリティで保護されたチーム シナリオの構成](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![セキュリティで保護されたチーム シナリオの構成](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 概要については、この短いビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> このシナリオを 1 ページにまとめた概要については、「[厳しく規制されたデータ用の Teams のポスター](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)」を参照してください。
+<a name="poster"></a> このシナリオを 1 ページにまとめた概要については、「[厳しく規制されたデータ用の Teams のポスター](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)」を参照してください。
 
-[![厳しく規制されたデータ用の Teams のポスター](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+[![厳しく規制されたデータ用の Teams のポスター](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
@@ -84,7 +86,7 @@ ms.locfileid: "40801422"
 
 チーム サイトの既定のアクセス許可は次のとおりです。
 
-![チーム サイトの既定のアクセス許可](./media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
+![チーム サイトの既定のアクセス許可](../media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
  
 >[!Note]
 >編集権限レベルの \<チーム名> 所有者 SharePoint グループを表示しても、\<チーム名> 所有者は表示されません。
@@ -99,7 +101,7 @@ ms.locfileid: "40801422"
 
 この結果、構成は現時点では次のようになります。
 
-![セキュリティで保護されたチーム シナリオの構成の手順 2](./media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
+![セキュリティで保護されたチーム シナリオの構成の手順 2](../media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
  
 ### <a name="step-3-configure-the-underlying-sharepoint-site-for-additional-security"></a>手順 3: 基となる SharePoint サイトを構成してセキュリティを強化する
 
@@ -114,7 +116,7 @@ ms.locfileid: "40801422"
 
 この結果、構成は現時点では次のようになります。
 
-![セキュリティで保護されたチーム シナリオの構成の手順 3](./media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
+![セキュリティで保護されたチーム シナリオの構成の手順 3](../media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
 
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>手順 4: 保持ラベルおよび DLP ポリシーを作成する
@@ -127,7 +129,7 @@ ms.locfileid: "40801422"
 
 この結果、構成は現時点では次のようになります。
 
-![セキュリティで保護されたチーム シナリオの構成の手順 4](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
+![セキュリティで保護されたチーム シナリオの構成の手順 4](../media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
 ### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>手順 5: 厳しく規制された機密度ラベル用の機密度ラベルまたはサブラベルを作成する
 
@@ -148,11 +150,11 @@ ms.locfileid: "40801422"
 
 この結果、新しいラベルが適用された構成は次のようになります。
 
-![セキュリティで保護されたチーム シナリオの構成の手順 5](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![セキュリティで保護されたチーム シナリオの構成の手順 5](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 秘密度ラベルとチーム グループの関係は次のとおりです。
 
-![チーム グループとラベルのアクセス許可の関係](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
+![チーム グループとラベルのアクセス許可の関係](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
 
 
 >[!Note]
@@ -178,7 +180,7 @@ ms.locfileid: "40801422"
 
 この結果、ラベルのアクセス許可は次のようになります。
 
-![ラベル付きのファイルを閲覧するためのカスタム アクセス許可の例](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
+![ラベル付きのファイルを閲覧するためのカスタム アクセス許可の例](../media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
 サイトの訪問者はチーム サイトに直接アクセスして、サブラベルが適用されているファイルの内容を表示できます。 ただし、訪問者はチーム グループのメンバーではないため、チームまたはチームのリソースにアクセスすることはできません。
 
@@ -191,7 +193,7 @@ ms.locfileid: "40801422"
 
 チーム グループのメンバーは、チームおよびそのすべてのリソース (チャット、会議、およびその他のアプリなど) にアクセスできます。 チャネルの [**ファイル**] セクションにあるファイルで作業をする場合、チーム グループのメンバーは、セキュリティで保護されたチーム用に作成されたファイルに秘密度ラベルまたはサブラベルを割り当てる必要があります。 例を次に示します。
 
-![セキュリティで保護されたチームのファイルに適用されるラベルの例](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+![セキュリティで保護されたチームのファイルに適用されるラベルの例](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
 ラベルがファイルに適用されると、ファイルはセキュリティで保護されます。 チーム グループのメンバーは、ファイルを Teams で開いてリアルタイムで共同作業を行えます。 ファイルは暗号化され、チーム グループのメンバーには共同作成者アクセス許可が設定されます。 ファイルがサイトを離れて悪意のあるユーザーに転送された場合、そのようなユーザーがファイルを開いて内容を表示するには、チーム グループ メンバーのユーザー アカウントの資格情報を入力する必要があります。 
 
@@ -222,7 +224,7 @@ ms.locfileid: "40801422"
 
 機密ファイルおよび非常に機密性の高いファイルに適したチームのテストを行う独自のテスト環境を構築するには、[これらの手順](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment) を参照してください。 
 
-![Microsoft クラウドのテスト ラボ ガイド](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
+![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Contoso Corporation が極秘プロジェクトでどのように安全なチームを運用したか
 

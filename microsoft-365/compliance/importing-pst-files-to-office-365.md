@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '管理者向け: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PST ファイル) をユーザーの Exchange Online のメールボックスに一括でインポートする方法について説明します。 このトピックでは、よくあるご質問と PST インポート プロセスのしくみを説明します。'
-ms.openlocfilehash: eb916ef3f06cc8d58c962b5b05ea4524e9469e4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600674"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072965"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Office 365 への組織の PST ファイルのインポートの概要
 
@@ -32,9 +32,9 @@ ms.locfileid: "41600674"
 
 セキュリティ/コンプライアンス センターのインポート サービスを使用して、PST ファイルを Office 365 組織の Exchange Online メールボックスにすばやく一括でインポートできます。 PST ファイルを Office 365 にインポートするには、次の 2 つの方法があります。
 
-- **ネットワーク アップロード** ![クラウド アップロード](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - PST ファイルをネットワーク経由で Microsoft クラウド内の一時的な Azure Storage の場所にアップロードします。 次に、Office 365 インポート サービスを使用して、Office 365 組織のメールボックスに PST データをインポートします。 
+- **ネットワーク アップロード** ![クラウド アップロード](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - PST ファイルをネットワーク経由で Microsoft クラウド内の一時的な Azure Storage の場所にアップロードします。 次に、Office 365 インポート サービスを使用して、Office 365 組織のメールボックスに PST データをインポートします。 
 
-- **ドライブの発送** ![ハード ディスク](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - PST ファイルを BitLocker で暗号化されたハード ディスク ドライブにコピーし、Microsoft にそのドライブを物理的に発送します。 Microsoft はそのハード ドライブを受け取ると、データ センターの担当者がデータを Microsoft クラウド内の一時的な Azure Storage の場所にアップロードします。 次に、Office 365 インポート サービスを使用して、Office 365 組織のメールボックスにデータをインポートします。
+- **ドライブの発送** ![ハード ディスク](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - PST ファイルを BitLocker で暗号化されたハード ディスク ドライブにコピーし、Microsoft にそのドライブを物理的に発送します。 Microsoft はそのハード ドライブを受け取ると、データ センターの担当者がデータを Microsoft クラウド内の一時的な Azure Storage の場所にアップロードします。 次に、Office 365 インポート サービスを使用して、Office 365 組織のメールボックスにデータをインポートします。
 
 ## <a name="step-by-step-instructions"></a>詳しい手順
   
@@ -48,7 +48,7 @@ ms.locfileid: "41600674"
 
 完全な PST インポート プロセスの図と説明を示します。 図には、プライマリ ワークフローが示され、ネットワーク アップロード方法とドライブ送付方法の違いを明らかにしています。
   
-![PST インポート プロセスのワークフロー](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![PST インポート プロセスのワークフロー](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
 1. **PST インポート ツールとキーをプライベート Azure Storage の場所にダウンロードする** - 最初の手順は、PST ファイルのアップロードまたはそれらのハード ドライブへのコピーに使用されるツールとアクセス キーのダウンロードになります。 これらは、セキュリティ/コンプライアンス センター の [**インポート**] ページで取得します。 このキーにより、PST ファイルをプライベートのセキュリティで保護された Azure Storage の場所にアップロードするために必要なアクセス許可がユーザー (またはドライブ送付の場合は、Microsoft データ センター担当者) に提供されます。 このアクセス キーは組織に固有のもので、PST ファイルを Microsoft クラウドにアップロードした後に、PST ファイルへの不正アクセスから保護するのに役立ちます。 Office 365 への PST ファイルのインポートには、組織で別の Azure サブスクリプションを持つ必要はありません。 
     

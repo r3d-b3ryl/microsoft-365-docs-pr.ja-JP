@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: GDPR のための Office 365 の情報保護の概要を確認します。個人データを検出、分類、保護、監視する方法について説明します。
-ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597864"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071174"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護の概要
 
@@ -47,7 +47,7 @@ GDPR 遵守に向けた最初の手順は、GDPR が組織に適用されるか�
 
 コンプライアンス スコアには監査制御を追跡、実装、管理するためのツールが用意されており、組織は GDPR をはじめとするさまざまな基準に対してコンプライアンスを達成することができます。
 
-![コンプライアンス スコアおよびコンプライアンス マネージャーを使用して、要件を表示し、進捗状況を追跡する](Media/Overview-image1.png)
+![コンプライアンス スコアおよびコンプライアンス マネージャーを使用して、要件を表示し、進捗状況を追跡する](../media/Overview-image1.png)
 
 詳細については、「[コンプライアンス スコア](compliance-score.md)」を参照してください。
 
@@ -59,7 +59,7 @@ GDPR 遵守に向けた最初の手順は、GDPR が組織に適用されるか�
 
 - 機密データの種類とその他のクエリを最適化して、環境内のすべての個人データを検索します。
 
-![コンテンツ検索と機密情報の種類を使用して個人データを検索する](Media/Overview-image2.png)
+![コンテンツ検索と機密情報の種類を使用して個人データを検索する](../media/Overview-image2.png)
 
 機密情報の種類は、自動化されたプロセスで、健康保険番号やクレジット カード番号など、特定の情報の種類をどのように認識するかを定義するものです。この記事では、開始点として使用できるセットが含まれています。EU 加盟国の個人データについては、他にも機密情報の種類が追加される予定です。
 
@@ -69,7 +69,7 @@ GDPR 遵守に向けた最初の手順は、GDPR が組織に適用されるか�
 
 Office 365 での情報保護に使用される一部の機能は、その他の SaaS アプリケーションの機密データ保護にも使用されます。
 
-![個人データを分類、保護、監視する](Media/Overview-image3.png)
+![個人データを分類、保護、監視する](../media/Overview-image3.png)
 
 この図はこのセクションの後半 (手順 3-5) で説明します。
 

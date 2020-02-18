@@ -1,6 +1,8 @@
 ---
 title: Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
-ms.openlocfilehash: d98f401ae4a39e3e04b5840e8f76c1e3e1b1a24d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802072"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068390"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
 
@@ -30,7 +32,7 @@ Contoso 社では、ほとんど集中管理されたオンプレミスの IT �
 
 図 1 は、本社とアプリケーション データセンター、境界ネットワーク、およびインターネットを示しています。
 
-![Contoso 社の既存の IT インフラストラクチャ](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contoso 社の既存の IT インフラストラクチャ](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **図 1: Contoso 社の既存の IT インフラストラクチャ**
  

@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 Enterprise 基盤インフラストラクチャ
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise 基盤インフラストラクチャを組織に展開するための主要なフェーズ (コア展開とも呼ばれます) について理解します。
-ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801962"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067980"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise 基盤インフラストラクチャ
 
@@ -28,12 +30,12 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 | | フェーズ | 結果 |
 |:-------|:-----|:-----|
-|![フェーズ 1: ネットワーク](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[フェーズ 1: ネットワーク](networking-infrastructure.md)| ネットワークは、Microsoft 365 のクラウドベースのサービスへのアクセスに最適化されます。 |
-|![フェーズ 2: ID](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[フェーズ 2: ID](identity-infrastructure.md)| 管理者アカウントの保護と、ユーザーおよびグループの同期が行われ、強固なセキュリティによるユーザー認証が実現します。 |
-|![フェーズ 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md)| 既存の Windows ベースのコンピューターは Windows 10 Enterprise にアップグレードすることができ、新しいデバイスは Windows 10 Enterprise と共にインストールされます。 |
-|![フェーズ 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Microsoft Office の既存のユーザーは Office 365 ProPlus にアップグレードすることができます。 |
-|![フェーズ 5: モバイル デバイス管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[フェーズ 5: モバイル デバイス管理](mobility-infrastructure.md)| デバイスを登録し、管理することができます。 |
-|![フェーズ 6: 情報保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[フェーズ 6: 情報保護](infoprotect-infrastructure.md)| Office 365 のセキュリティ機能が有効になると、ラベルとポリシーを使用して、ドキュメントとメールを保護する準備が整います。 |
+|![フェーズ 1: ネットワーク](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[フェーズ 1: ネットワーク](networking-infrastructure.md)| ネットワークは、Microsoft 365 のクラウドベースのサービスへのアクセスに最適化されます。 |
+|![フェーズ 2: ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[フェーズ 2: ID](identity-infrastructure.md)| 管理者アカウントの保護と、ユーザーおよびグループの同期が行われ、強固なセキュリティによるユーザー認証が実現します。 |
+|![フェーズ 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md)| 既存の Windows ベースのコンピューターは Windows 10 Enterprise にアップグレードすることができ、新しいデバイスは Windows 10 Enterprise と共にインストールされます。 |
+|![フェーズ 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Microsoft Office の既存のユーザーは Office 365 ProPlus にアップグレードすることができます。 |
+|![フェーズ 5: モバイル デバイス管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[フェーズ 5: モバイル デバイス管理](mobility-infrastructure.md)| デバイスを登録し、管理することができます。 |
+|![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[フェーズ 6: 情報保護](infoprotect-infrastructure.md)| Office 365 のセキュリティ機能が有効になると、ラベルとポリシーを使用して、ドキュメントとメールを保護する準備が整います。 |
 
 フェーズは最も基本的なもの (ネットワークと ID) から始めます。その後に、インフラストラクチャの設定とグループのレイヤーを作成し以下を実施します。
 
@@ -56,11 +58,11 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 以下が全体的な Microsoft 365 Enterprise の展開ガイドの基盤インフラストラクチャです。
 
-![全体的な Microsoft 365 Enterprise の展開ガイドの基盤インフラストラクチャ](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![全体的な Microsoft 365 Enterprise の展開ガイドの基盤インフラストラクチャ](../media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>概要
 
-[Microsoft 365 Enterprise の基盤インフラストラクチャ ポスター](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)は、各フェーズで参照できる中心的な場所です。
+[Microsoft 365 Enterprise の基盤インフラストラクチャ ポスター](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)は、各フェーズで参照できる中心的な場所です。
 
 - 管理者とユーザーのフェーズの全体的な目標
 - サービス、機能、およびツール
@@ -69,7 +71,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 - 新しいユーザーのオンボード プロセス
 - モニターと更新の方法
 
-[![Microsoft 365 Enterprise 基盤インフラストラクチャ ポスター用の画像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Microsoft 365 Enterprise 基盤インフラストラクチャ ポスター用の画像](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)をクリックします。
 

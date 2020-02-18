@@ -1,5 +1,7 @@
 ---
 title: '手順 2: オフィスごとにローカルのインターネット接続を構成する'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: DNS 解決について理解し、パフォーマンスの良い DNS 解決を構成します。
-ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370304"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066666"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>手順 2: オフィスごとにローカルのインターネット接続を構成する
 
 *この手順は必須であり、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます。*
 
-![フェーズ 1 - ネットワーキング](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![フェーズ 1 - ネットワーキング](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 手順 2 では、オフィスごとにローカルのインターネット接続を構成し、ローカルの DNS サーバーを使用していることを確認します。どちらも、接続待機時間を削減し、オンプレミスのクライアント コンピューターが Microsoft 365 クラウドベース サービスの最寄りのエントリ ポイントに確実に接続するために必要な要素です。
 
@@ -32,13 +34,13 @@ ms.locfileid: "37370304"
 
 Microsoft のグローバル ネットワークには、地理的に分散された場所を用いた高可用性でスケーラブルなネットワーク エッジとなる *分散サービス フロント ドア* インフラストラクチャが含まれます。 それは、フロント ドア サーバーでエンド ユーザー接続を終了させ、Microsoft のグローバル ネットワーク内でエンド ユーザー トラフィックを効率的にルーティングさせます。
 
-![Microsoft のグローバル ネットワーク](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![Microsoft のグローバル ネットワーク](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
 最高のパフォーマンスを目指す場合、オンプレミスのクライアントは、ネットワーク バックボーン全体や組織の中央インターネット接続に最も近いフロント ドアにトラフィックを送信するのではなく、地理的に最も近い場所のフロント ドアにアクセスする必要があります。
 
 次に例を示します。
 
-![Microsoft のグローバル ネットワークの使用例](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![Microsoft のグローバル ネットワークの使用例](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
 パリ支社のユーザーが SharePoint Online サイトにアクセスする場合:
 
@@ -61,4 +63,4 @@ Microsoft のグローバル ネットワークには、地理的に分散され
 
 |||
 |:-------|:-----|
-|![手順 3](./media/stepnumbers/Step3.png)|[ネットワーク ヘアピンを回避する](networking-avoid-network-hairpins.md)|
+|![手順 3](../media/stepnumbers/Step3.png)|[ネットワーク ヘアピンを回避する](networking-avoid-network-hairpins.md)|

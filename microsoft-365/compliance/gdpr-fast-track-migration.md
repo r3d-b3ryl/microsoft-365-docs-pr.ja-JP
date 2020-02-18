@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 89ddb00045e2a17821ef2e841ad9a9b4c38d2219
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c5b79c29c6946ae66e53073189376e858e3d978b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596464"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073305"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>削除要求を送信するための FastTrack 移行ツールセット
 
@@ -49,9 +49,9 @@ Microsoft は、Windows プラットフォームと PowerShell コンソール�
 
 このツールセットは、PowerShell コンソール アプリケーション上の PowerShell ギャラリーで入手できます。このコマンドレット モジュールを検索して読み込むには、まず、PowerShell を管理者モードで開いて、モジュールをインストールするための適切なアクセス許可が付与されるようにします。過去に PowerShell を使用したことがない場合は、Windows のタスク バーに移動して、検索ボックスに「PowerShell」と入力します。右クリックを使用してコンソール アプリケーションを選択し、**[管理者として実行]** を選択してから、**[はい]** をクリックして Windows PowerShell を実行します。
 
-![PowerShell - 管理者として実行](media/fasttrack-powershell_image.png)
+![PowerShell - 管理者として実行](../media/fasttrack-powershell_image.png)
 
-![PowerShell - アプリケーションに変更を許可する](media/fasttrack-run-powershell_image.png)
+![PowerShell - アプリケーションに変更を許可する](../media/fasttrack-run-powershell_image.png)
 
 これでコンソールが開きましたので、スクリプト実行のアクセス許可を設定する必要があります。次のコマンドを入力して、スクリプトの実行を許可します。‘Set-ExecutionPolicy — ExecutionPolicy: Bypass — Scope: Process’
 
@@ -59,7 +59,7 @@ Microsoft は、Windows プラットフォームと PowerShell コンソール�
 
 ***実行ポリシーの設定***
 
-![PowerShell での実行ポリシー変更の設定](media/powershell-set-execution-policy_image.png)
+![PowerShell での実行ポリシー変更の設定](../media/powershell-set-execution-policy_image.png)
 
 これで、スクリプトを許可するようにコンソールが設定されたため、次のコマンドを実行してモジュールをインストールします。
 

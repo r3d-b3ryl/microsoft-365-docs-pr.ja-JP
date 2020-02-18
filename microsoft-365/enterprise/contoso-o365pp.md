@@ -1,6 +1,8 @@
 ---
 title: Contoso 社での Office 365 ProPlus の展開
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Office 365 ProPlus を展開する方法について説明します。
-ms.openlocfilehash: 7649a4a5c77c7f743e3339db6f91b7afc3b1343f
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 45c9933ea04632b255acfa1062ae7ecaf9810030
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831988"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068321"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 社での Office 365 ProPlus の展開
 
@@ -73,7 +75,7 @@ Contoso 社ではクラウドからデバイスを自動的に更新するよう
 
 次に Contoso 社の Office 365 ProPlus のインストール、および進行中の更新プログラムの展開アーキテクチャを示します。
 
-![Contoso 社の Office 365 ProPlus の展開インフラストラクチャ](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+![Contoso 社の Office 365 ProPlus の展開インフラストラクチャ](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>次の手順
 

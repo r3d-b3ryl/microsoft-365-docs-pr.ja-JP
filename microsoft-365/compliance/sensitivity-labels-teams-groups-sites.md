@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams、Office 365 グループ、SharePoint サイトにラベルを適用することができます。
-ms.openlocfilehash: 7fd19d9d8f84bd6463d61aec68dbd86c4fc627c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 297ccd3e17f6c5a747e18a46747e6f2c23311df0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601564"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069818"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)
 
@@ -54,9 +54,9 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイト向け
 
 以下に例を示します。
 
-![SharePoint でチーム サイトを作成するときの機密ラベル](media/sensitivity-label-new-team-site.png)
+![SharePoint でチーム サイトを作成するときの機密ラベル](../media/sensitivity-label-new-team-site.png)
 
-![Word デスクトップ アプリに表示される機密ラベル](media/sensitivity-label-word.png)
+![Word デスクトップ アプリに表示される機密ラベル](../media/sensitivity-label-word.png)
 
 ## <a name="enable-this-preview"></a>このプレビューを有効にする
 
@@ -124,7 +124,7 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトで機
     - ゲストアクセス: ゲストをグループに追加できるかどうかを制御できます。 [Office 365 グループでのゲスト アクセスの管理について](/office365/admin/create-groups/manage-guest-access-in-groups)
     - 管理されていないデバイス: この設定により、ハイブリッド AD に参加していないデバイスまたは Intune に準拠していないデバイスからの SharePoint コンテンツへのアクセスをブロックまたは制限することができます。 非管理対象デバイスを選択した場合、Azure AD にアクセスしてポリシーのセットアップを完了させる必要があります。 詳細については、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。
     
-    ![[サイトとグループの設定] タブ](media/edit-sensitivity-label-site-group.png)
+    ![[サイトとグループの設定] タブ](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > チーム、グループ、またはサイトにラベルを適用すると、サイトとグループの設定のみが有効になります。 暗号化やコンテンツ マーキングなどのその他の設定は、チーム、グループ、またはサイト内のすべてのコンテンツに適用されるわけではありません。
@@ -184,11 +184,11 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトで機
 
 [Teams の機密ラベルの詳細について](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-![新しいチームを作成する際のプライバシー設定](media/privacy-setting-new-team.png)
+![新しいチームを作成する際のプライバシー設定](../media/privacy-setting-new-team.png)
 
 チームを作成すると、すべてのチャネルの右上隅に機密ラベルが表示されます。
 
-![チームに表示される機密ラベル](media/privacy-setting-teams.png)
+![チームに表示される機密ラベル](../media/privacy-setting-teams.png)
 
 このサービスは、Office 365 グループおよび接続された SharePoint チーム サイトに対して同じ機密ラベルを自動的に適用します。
 
@@ -196,7 +196,7 @@ Microsoft Teams、Office 365 グループ、および SharePoint サイトで機
 
 Outlook on the web では、新しい [**機密**] ボックスに発行されたラベルが含まれています。 ユーザーが詳細を知りたい場合には、[ヘルプ] アイコンをクリックすると使用できるラベルおよび関連ポリシーに関する詳細情報が表示されます。
 
-![グループを作成し、[機密] 下でオプションを選択する](media/sensitivity-label-new-group.png)
+![グループを作成し、[機密] 下でオプションを選択する](../media/sensitivity-label-new-group.png)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>新しいサイトに機密ラベルを適用する
 
@@ -206,17 +206,17 @@ Outlook on the web では、新しい [**機密**] ボックスに発行され�
 
 ユーザーが最新のチームおよびコミュニケーション サイトを作成すると、規定で機密ラベルがすでに選択されています。 ユーザーは [ヘルプ] アイコンを選択し、ラベルの詳細を確認できます。
 
-![サイトを作成し、[機密] 下でオプションを選択する](media/sensitivity-label-new-communication-site.png)
+![サイトを作成し、[機密] 下でオプションを選択する](../media/sensitivity-label-new-communication-site.png)
 
 ユーザーがサイトを参照すると、ラベルの名前および適用されているポリシーが表示されます。
 
-![機密ラベルが適用されているサイト](media/sensitivity-label-site.png)
+![機密ラベルが適用されているサイト](../media/sensitivity-label-site.png)
 
 ## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>SharePoint 管理センターで機密ラベルを管理する
 
 ラベルを表示および編集するには、新しい SharePoint 管理センターの [アクティブなサイト] ページを使用します。
 
-![[アクティブなサイト] ページの [機密] 列](media/manage-site-sensitivity-labels.png)
+![[アクティブなサイト] ページの [機密] 列](../media/manage-site-sensitivity-labels.png)
 
 [新しい SharePoint 管理センターでのサイト管理の詳細をご覧ください](/sharepoint/manage-sites-in-new-admin-center)。
 
