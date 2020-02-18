@@ -1,5 +1,7 @@
 ---
 title: 開発/テスト環境のファイルのために Teams の安全を強化する
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: '概要: 開発/テスト環境のファイルのために、Microsoft Teams で機密チームと高機密チームを作成します。'
-ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202298"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082267"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>開発/テスト環境のファイルのために Teams の安全を強化する
 
 この記事では、「[Microsoft Teams のファイルを保護する](secure-files-in-teams.md)」ソリューションとして、機密チームや高機密チームが含まれる開発/テスト環境を作成するための詳しい手順を説明します。
   
-![ファイルのための Microsoft Teams の機密チームと高機密チーム。](../media/sensitive-highly-confidential-teams-dev-test.png)
+![ファイルのための Microsoft Teams の機密チームと高機密チーム。](../../media/sensitive-highly-confidential-teams-dev-test.png)
   
 こうしたチームを運用環境に展開する前に、この開発/テスト環境を使用して、特定のニーズに合わせて設定を検証し、微調整します。
   
@@ -86,7 +88,7 @@ ms.locfileid: "39202298"
   
 組織名、場所、および共通のパスワードを入力し、PowerShell コマンド プロンプトまたは Integrated Script Environment (ISE) からこれらのコマンドを実行し、ユーザー アカウントを作成し、それぞれのグループに追加します。
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -167,7 +169,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 進行中のマーケティング キャンペーンで共同作業を行えるように、マーケティング グループのメンバーを対象とした機密レベルのチームを作成するには、次のようにします。
 
-1. 「**マーケティング キャンペーン**」という名前の[プライベート チームを新規作成](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b)します。
+1. 「**マーケティング キャンペーン**」という名前の[プライベート チームを新規作成](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b)します。
 2. 「**マーケティング キャンペーン**」チームを開きます。
 3.  チームのツール バーで、**[ファイル]** をクリックします。
 4.  省略記号をクリックし、**[SharePoint で開く]** をクリックします。
@@ -226,13 +228,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 「マーケティング キャンペーン」チームの最終的な構成をここに示します。
 
-![「マーケティング キャンペーン」チームの構成。](../media/sensitive-team-config-dev-test.png)
+![「マーケティング キャンペーン」チームの構成。](../../media/sensitive-team-config-dev-test.png)
   
 ### <a name="company-strategy-team-site"></a>会社戦略チーム サイト
 
 会社戦略に基づいて共同作業を行うために、上級リーダーシップ チームのメンバーを対象にした高機密チームを作成するには、次のようにします。
 
-1. 「**会社戦略**」という名前の[プライベート チームを新規作成](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b)します。
+1. 「**会社戦略**」という名前の[プライベート チームを新規作成](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b)します。
 2. 「**会社戦略**」チームを開きます。
 3.  チームのツール バーで、**[ファイル]** をクリックします。
 4.  省略記号をクリックし、**[SharePoint で開く]** をクリックします。
@@ -300,7 +302,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 会社戦略チームの最終的な構成をここに示します。
 
-![会社戦略チームの構成。](../media/highlyconfidential-team-config-dev-test.png) 
+![会社戦略チームの構成。](../../media/highlyconfidential-team-config-dev-test.png) 
 
 基となる会社戦略 SharePoint サイトの [ドキュメント] セクションにあるファイルには、高機密保持ラベルが割り当てられ、構成されている DLP ポリシーが適用されます。 ファイルには、会社戦略の秘密度ラベルを割り当てることもできます。    
   

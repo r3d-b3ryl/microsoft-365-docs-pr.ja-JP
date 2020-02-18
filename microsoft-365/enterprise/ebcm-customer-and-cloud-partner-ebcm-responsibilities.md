@@ -1,6 +1,8 @@
 ---
 title: 顧客およびクラウド パートナー エンタープライズ ビジネス継続性の責任
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: サービス インシデントの発生時に Microsoft が何を行っているかを理解し、ビジネス継続性プランをより適切に準備できるようにします。
-ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831868"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067676"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>エンタープライズ ビジネス継続性管理の顧客とクラウド パートナーの責任
 
@@ -53,7 +55,7 @@ Microsoft は、顧客が使用できるサービス状態通信用の複数の�
  
 Microsoft 365 オンライン サービスへのアクセスを提供することは、組織と Microsoft とのパートナーシップです。 次の図は、サービス インシデントの発生時および通常の運用時の Microsoft と顧客の両方の責任のバランスについてまとめたものです。
 
-![顧客と Microsoft の責任のバランス](media/ebcm/responsibilities.png)
+![顧客と Microsoft の責任のバランス](../media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>環境 - サービス継続性
 継続計画について考えるときは、組織に影響を与える可能性のあるイベントと、全体的な通信の能力に注意してください。 高レベルでは、ビジネスに影響を与える可能性のある 3 つの要因があります。
@@ -69,6 +71,6 @@ Microsoft は、クラウド リソースへのネットワーク接続を設定
 多くのコラボレーション ソリューションは、企業のワイド エリア ネットワーク (WAN) などのシステムに依存しています。 これらのシステムが利用できない場合、組織はどのように対応しますか?
 この図は、複数の領域に影響を与える可能性のある問題を表しています。 添付の表は、考慮すべき例を示す
 
-![ベン図](media/ebcm/venn-diagram.png)
+![ベン図](../media/ebcm/venn-diagram.png)
 
 継続計画では、これらの各領域を考慮する必要があります。 例: ユーザーを企業ネットワークに接続する必要があり、吹雪の場合、それらのユーザーはどのようにして主要なリソースにアクセスできますか? 雪がオフィスへの移動を妨げ、サービス エンジニアが企業ネットワークに接続する必要がある場合、自宅に会社のノートパソコンを持ち込むことを義務付けるポリシーがありますか?

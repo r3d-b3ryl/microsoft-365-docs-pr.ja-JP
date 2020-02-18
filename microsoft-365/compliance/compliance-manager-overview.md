@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595794"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078671"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
@@ -45,7 +45,7 @@ ms.locfileid: "41595794"
 
 次の図は、コンプライアンスマネージャーの主要なコンポーネント間の関係を示しています。
 
-![コンプライアンスマネージャーバージョン3のリレーションシップ](media/compliance-manager-relationships.png)
+![コンプライアンスマネージャーバージョン3のリレーションシップ](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>グループ
 
@@ -68,7 +68,7 @@ ms.locfileid: "41595794"
 - **顧客管理コントロール**: これは、各コントロールに対してアクションを実行するときに、組織によって実装されたコントロールのコレクションです。
 - **評価スコア**: 評価での顧客管理コントロールの可能なスコアの合計の割合です。 これにより、各コントロールに割り当てられたアクションの実装を追跡できます。
 
-## <a name="controls"></a>Controls
+## <a name="controls"></a>コントロール
 
 [統制](working-with-compliance-manager.md#controls-and-actions)はコンプライアンスマネージャーのコンプライアンスプロセスコンテナーで、コンプライアンスアクティビティを管理する方法を定義します。 これらのコントロールは、対応する認定資格または規制の評価構造と一致するように、コントロールファミリ内に整理されています。
 
@@ -77,7 +77,7 @@ ms.locfileid: "41595794"
 - **記事 ID**: このフィールドは GDPR の評価にのみ使用され、対応する GDPR の記事番号を指定します。
 - **説明**: 対応する証明書または規制からのコントロールのテキスト。 著作権制限により、ISO 標準に関連する情報へのリンクが記載されています。
 
-![コンプライアンスマネージャーバージョン3のコントロール](media/compliance-manager-controls.png)
+![コンプライアンスマネージャーバージョン3のコントロール](../media/compliance-manager-controls.png)
 
 コンプライアンスマネージャー、 **Microsoft 管理コントロール**、**顧客管理**コントロール、および**共有管理コントロール**には、3種類のコントロールがあります。
 

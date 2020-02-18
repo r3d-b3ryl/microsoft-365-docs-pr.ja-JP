@@ -1,6 +1,8 @@
 ---
 title: Contoso 社のモバイル デバイス管理
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise で Microsoft Intune を使用して、デバイスやデバイスで実行されるアプリをどのように管理しているかを説明します。
-ms.openlocfilehash: c486c9ef338ab1bd8959266183da6b79d62b3311
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7232c89cc105525cc57facd5a1b9de06426adbca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673183"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068370"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 社のモバイル デバイス管理
 
@@ -65,7 +67,7 @@ Contoso 社は、次のようにモバイル デバイス管理インフラス�
 
 次に Contoso 社のモバイル デバイス管理展開アーキテクチャを示します。
 
-![Contoso 社のモバイル デバイス管理展開インフラストラクチャ](./media/contoso-mdm/contoso-mdm-fig1.png)
+![Contoso 社のモバイル デバイス管理展開インフラストラクチャ](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>次の手順
 

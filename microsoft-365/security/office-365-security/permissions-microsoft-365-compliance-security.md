@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
-ms.openlocfilehash: 53695bb412c760c769692dfe7fb40324f495d356
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598704"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082445"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
@@ -29,7 +29,7 @@ ms.locfileid: "41598704"
 
 全体管理者がこれらの管理者のロールを割り当てると、管理者は、Microsoft 365 セキュリティ センター、Microsoft 365 コンプライアンス センター、Azure、Office 365、Enterprise Mobility + Security など、Microsoft 365 のすべてのサービスに及ぶ機能やデータにアクセスできます。
 
-![Microsoft 365 セキュリティ センターのアクセス許可のページ](../media/m365-security-permissions-page.png)
+![Microsoft 365 セキュリティ センターのアクセス許可のページ](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Microsoft 365 のロール
 
@@ -130,13 +130,13 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 
 詳しくは、「[Azure Active Directory で管理者ロールを表示して割り当てる](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal)」をご覧ください。
 
-![Azure Active Directory のアクセス許可管理へのリンク](../media/permissions-manage-in-azure-ad-link.png)
+![Azure Active Directory のアクセス許可管理へのリンク](../../media/permissions-manage-in-azure-ad-link.png)
 
 ## <a name="managing-roles-in-a-service-instead-of-azure-active-directory"></a>Azure Active Directory の代わりにサービスのロールを管理する
 
 Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターに表示されるロールは、アクセス許可を持つサービスにも表示されます。 たとえば、これらのロールは Office 365 セキュリティ/コンプライアンス センターで確認できます。
 
-![Office 365 セキュリティ/コンプライアンス センターでのロール](../media/m365-roles-in-o365-scc.png)
+![Office 365 セキュリティ/コンプライアンス センターでのロール](../../media/m365-roles-in-o365-scc.png)
 
 ### <a name="breaking-inheritance"></a>継承の解除
 

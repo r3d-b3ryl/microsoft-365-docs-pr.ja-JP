@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
-ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601654"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081625"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -117,13 +117,13 @@ Office 365 Advanced Message Encryption を使用するために必要な Office 
 
 ### <a name="sensitivity-labels"></a>機密ラベル
 
-[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)(更新)<br>Outlook で推奨されるラベル付けの今後のサポートに関する情報を削除しました。 重複するライセンス情報を削除しました。 [Office アプリの機密ラベル](sensitivity-labels-office-apps.md)で権限のある情報を指すようになりました。
+[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)(更新)<br>Outlook で推奨されるラベル付けの今後のサポートに関する情報を削除しました。 重複するライセンス情報を削除しました。 [Office アプリの機密ラベルを使用](sensitivity-labels-office-apps.md)して、優先する情報をポイントするようになりました。
 
 [SharePoint と OneDrive で Office ファイルの機密ラベルを有効にする (パブリックプレビュー)](sensitivity-labels-sharepoint-onedrive-files.md) (新)<br>これらの場所に格納されているコンテンツへの機密ラベルのアプリケーション用に SharePoint および OneDrive を準備する方法に関するガイダンス。
 
 [機密ラベルの概要](sensitivity-labels.md)(更新)<br>Web 上の Office アプリ、Microsoft Teams、Office 365 グループ、SharePoint サイト、および SharePoint と OneDrive の office ファイルのサポートに関する詳細が追加されました。
 
-[Office アプリの機密ラベル](sensitivity-labels-office-apps.md)(更新されたもの)<br>新たにサポートされているアプリ、サブスクリプションとライセンスの要件、および管理者が定義したテンプレート (Office 365 のメッセージの暗号化と機密情報のラベルなど) の相互作用に関する詳細を含むいくつかの更新プログラム。
+[Office アプリで機密ラベルを使用する](sensitivity-labels-office-apps.md)(更新)<br>新たにサポートされているアプリ、サブスクリプションとライセンスの要件、および管理者が定義したテンプレート (Office 365 のメッセージの暗号化と機密情報のラベルなど) の相互作用に関する詳細を含むいくつかの更新プログラム。
 
 [Microsoft Teams、Office 365 グループ、および SharePoint サイト (パブリックプレビュー) で機密ラベルを使用する](sensitivity-labels-teams-groups-sites.md)(新)<br>Microsoft Teams、Office 365 グループ、および SharePoint サイトでの機密ラベルの設定と適用についての詳細。
 
