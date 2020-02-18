@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 サービスの回復性
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 回復性に関するトピックの説明
-ms.openlocfilehash: a31e24925e65bcdff4ee6416a3e308bf46a5a955
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 8cda7a861b6ea646ed9606674e26aaca551d1024
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831858"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597024"
 ---
 # <a name="built-in-resiliency"></a>回復力の向上
 

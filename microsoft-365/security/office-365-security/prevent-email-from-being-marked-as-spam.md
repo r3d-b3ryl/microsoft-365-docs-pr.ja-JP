@@ -1,5 +1,7 @@
 ---
 title: Office 365 で誤検知が発生しないようにする方法
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365、Exchange Online、スタンドアロン Exchange Online Protection (EOP) で、誤検知を予防し、正しいメールが迷惑メールにならないようにする方法について説明します。
-ms.openlocfilehash: 483bad168aa421e3fba4b0cc51e0b2e286f5701d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bf6149d21a5088e4507b65c6474918327faf3510
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809344"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598694"
 ---
 # <a name="how-to-prevent-good-email-messages-from-being-marked-as-spam-in-office-365"></a>Office 365 で問題ないメール メッセージが迷惑メールとしてマークされるのを防ぐ方法
 

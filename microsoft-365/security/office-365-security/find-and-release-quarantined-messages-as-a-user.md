@@ -1,5 +1,7 @@
 ---
 title: Office 365 のユーザーとして検疫済みメッセージを検索して解放する
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Office 365 のユーザーとして、自分のスパム検疫メッセージを次の 2 つのうちいずれかの方法で管理できます。1 つは送信されたスパム通知に直接応答する方法 (管理者がこの機能を設定している場合) で、もう 1 つはセキュリティ &amp; コンプライアンス センターでスパム検疫機能を使用する方法です。
-ms.openlocfilehash: bcc9b7ed52af0e9920506aa667e51daad7f82c80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 277af18d2061e8bd13386ab96e37d982d68e0b52
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808002"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599294"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Office 365 のユーザーとして検疫済みメッセージを検索して解放する
 
