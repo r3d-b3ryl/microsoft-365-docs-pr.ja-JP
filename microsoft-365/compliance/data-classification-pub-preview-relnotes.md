@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類パブリック プレビューのリリース ノート。
-ms.openlocfilehash: fecf643d12cf544c16570c173b15bb1e0dc043f0
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076364"
 ---
 # <a name="data-classification-public-preview-release-notes-preview"></a>データ分類パブリック プレビューのリリース ノート (プレビュー)
 
@@ -40,7 +40,7 @@ Exchange メールボックスに移動すると、小さなツール ヒント�
 
 ## <a name="seeing-guids-instead-of-label-names"></a>ラベル名の代わりに GUID を表示する
 
-プライベート プレビューのお客様の場合、コンテンツが既にスタンプされたラベルを削除するとコンテンツ エクスプローラーおよびアクティビティ エクスプローラーでラベル名の代わりに 32 ビット GUID に解決されるインスタンスが表示されます。 
+プライベート プレビューのお客様の場合、コンテンツが既にスタンプされたラベルの移行またはラベルを削除するとコンテンツ エクスプローラーおよびアクティビティ エクスプローラーでラベル名の代わりに 32 ビット GUID に解決されるインスタンスが表示されます。 
 
 ## <a name="rendering-of-encrypted-documents"></a>暗号化されたドキュメントのレンダリング
 

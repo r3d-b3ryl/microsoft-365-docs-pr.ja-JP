@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830951"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074646"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -63,7 +63,7 @@ ms.locfileid: "41830951"
 
 暗号化オプションの構成:
 
-![暗号化用の秘密度ラベルのオプション](media/encrytion-options-sensitivity-label.png)
+![暗号化用の秘密度ラベルのオプション](../media/encrytion-options-sensitivity-label.png)
 
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>ラベルが適用された場合の既存の暗号化への影響
@@ -111,7 +111,7 @@ ms.locfileid: "41830951"
 
 [Choosing whether to assign permissions now] (アクセス許可を今すぐ割り当てる) または [Let users assign permissions] (アクセス許可の割り当てをユーザーに許可する) の選択: 
 
-![ユーザーまたは管理者が定義したアクセス許可を追加するオプション](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![ユーザーまたは管理者が定義したアクセス許可を追加するオプション](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## <a name="assign-permissions-now"></a>アクセス許可を今すぐ割り当てる
@@ -124,7 +124,7 @@ ms.locfileid: "41830951"
 
 暗号化されたコンテンツに対するアクセス制御の設定:
 
-![管理者が定義したアクセス許可の設定](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![管理者が定義したアクセス許可の設定](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>オフライン アクセスのための Rights Management 使用ライセンス
 
@@ -146,7 +146,7 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 
 アクセス許可の割り当て:
 
-![ユーザーにアクセス許可を割り当てる際のオプション](media/Sensitivity-Assign-permissions-settings.png)
+![ユーザーにアクセス許可を割り当てる際のオプション](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>ユーザーまたはグループの追加
 
@@ -179,13 +179,13 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 
 それぞれの具体的なアクセス許可に関する詳細については、「[使用権限と説明](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)」を参照してください。  
 
-![既定またはカスタムのアクセス許可を選択する際のオプション](media/Sensitivity-Choose-permissions-settings.png)
+![既定またはカスタムのアクセス許可を選択する際のオプション](../media/Sensitivity-Choose-permissions-settings.png)
 
 同じラベルで異なるユーザーに異なるアクセス許可を付与できます。たとえば、次のスクリーンショットに示すように、単一のラベルで一部のユーザーを「レビュー担当者」として割り当てて、別のユーザーを「共同作成者」として割り当てることができます。
 
 これを行うには、ユーザーまたはグループを追加してアクセス許可を割り当て、その設定を保存します。その後で、この手順 (ユーザーの追加とアクセス許可の割り当て) を繰り返して、そのたびに保存します。この構成は、異なるユーザーに異なるアクセス許可を定義することが必要になるたびに実行できます。
 
-![異なるアクセス許可を持つ異なるユーザー](media/Sensitivity-Multiple-users-permissions.png)
+![異なるアクセス許可を持つ異なるユーザー](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>常にフル コントロールを持つ Rights Management 発行者 (機密ラベルを適用するユーザー)
 
@@ -207,7 +207,9 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 - Word、PowerPoint、Excel で、ユーザーは特定のユーザー、グループ、または組織に対して任意のアクセス許可を選択するよう求められます。 
     > [!NOTE]
-    > Word、PowerPoint、Excel 用のこのオプションは、Azure Information Protection 統合ラベル付けクライアントでサポートされています。 組み込みのラベル付け機能を使用するアプリについては、現在 [Windows 用および Mac 用のプレビュー](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)を展開中です。 このオプションを選択したもののユーザーのアプリで同オプションがサポートされていない場合、ラベルはユーザーに表示されません。
+    > Word、PowerPoint、Excel 用のこのオプションは、Azure Information Protection 統合ラベル付けクライアントでサポートされています。 組み込みのラベル付け機能を使用するアプリについては、現在 [Windows 用および Mac 用のプレビュー](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)をがサポート中です。 
+    > 
+    > このオプションが選択されているもののユーザーのアプリでサポートされていない場合、そのラベルはユーザーに表示されないか、または (現在 iOS および Android のプレビューで展開中) 一貫性のためにラベルは表示されますが、ユーザーへの説明メッセージとともに適用はされません。
 
 選択するオプションがサポートされている場合に、秘密度ラベルがユーザーに表示されるどうかについて、次の表で確認できます。
 
@@ -222,13 +224,13 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 ユーザーが割り当てるアクセス許可の構成:
 
-![ユーザー定義のアクセス許可の暗号化設定](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![ユーザー定義のアクセス許可の暗号化設定](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Outlook の制限
 
 Outlook では、ユーザーがメッセージにアクセス許可を割り当てることができる機密度ラベルを適用する場合、制限は [転送不可] オプションと同じです。 メッセージの上部にラベル名と説明が表示されます。これは、コンテンツが保護されていることを示します。 Word、PowerPoint、Excel ([次のセクション](#word-powerpoint-and-excel-permissions)参照) とは異なり、ユーザーは特定のアクセス許可を選択するよう求められません。
 
-![Outlook のメッセージに適用される機密度ラベル](media/sensitivity-label-outlook-protection-applied.png)
+![Outlook のメッセージに適用される機密度ラベル](../media/sensitivity-label-outlook-protection-applied.png)
 
 [転送不可] オプションがメールに適用されると、メールは暗号化され、受信者は認証する必要があります。 それにより、受信者はそれを転送したり、印刷したり、コピーしたりすることができなくなります。 たとえば、Outlook クライアントでは、[転送] ボタン、[名前を付けて保存] および [印刷] メニュー オプションは使用できず、[宛先]、[CC]、または [BCC] ボックスで受信者を追加または変更することはできません。
 
@@ -244,7 +246,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 - ユーザー、グループ、または組織を選択します。 これには、組織内外のユーザーが含まれます。
 - 選択したユーザがコンテンツにアクセスできなくなる有効期限を設定します。 詳細については、上記のセクション「[オフライン アクセスのための Rights Management 使用ライセンス](#rights-management-use-license-for-offline-access)」を参照してください。
 
-![ユーザーがカスタムのアクセス許可で保護するためのオプション](media/sensitivity-aip-custom-permissions-dialog.png)
+![ユーザーがカスタムのアクセス許可で保護するためのオプション](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 組み込みのラベルの場合、ユーザーが次のオプションを選択すると同様のダイアログ ボックスが表示されます。
 
