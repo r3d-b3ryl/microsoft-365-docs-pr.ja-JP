@@ -75,8 +75,11 @@
   href: protect-information.md
   items:
     - name: 機密ラベル
-      href: sensitivity-labels.md
       items:
+        - name: 機密ラベルについて
+          href: sensitivity-labels.md
+        - name: 秘密度ラベルの使用を開始する
+          href: get-started-with-sensitivity-labels.md
         - name: 秘密度ラベルを作成して発行する
           href: create-sensitivity-labels.md
         - name: 秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Office アプリの機密ラベル
+        - name: Office アプリで機密ラベルを使用する
           href: sensitivity-labels-office-apps.md
     - name: データ損失防止 (DLP)
       href: data-loss-prevention-policies.md
