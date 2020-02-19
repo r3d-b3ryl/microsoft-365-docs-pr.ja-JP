@@ -1,5 +1,5 @@
 ---
-title: 機密度ラベルの詳細
+title: 秘密度ラベルの詳細
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2020
 ms.locfileid: "42081470"
 ---
-# <a name="learn-about-sensitivity-labels"></a>機密度ラベルの詳細
+# <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
 組織の従業員は、業務を達成するために組織の内外の関係者との共同作業を行います。このためコンテンツはファイアウォールの内側にとどまらず、デバイス、アプリ、およびサービスなどのさまざまな場所にローミングすることになります。コンテンツがローミングする際は、組織のビジネス ポリシーとコンプライアンス ポリシーを満たすように、コンテンツを安全な状態で保護することが必要です。
 
@@ -45,7 +45,7 @@ ms.locfileid: "42081470"
   
 - **ラベルが付けられたコンテンツに、暗号化や透かしなどの保護設定を強制適用します。** たとえば、ユーザーはドキュメントや電子メールに「社外秘」ラベルを適用できます。そのラベルによって、コンテンツを暗号化して「社外秘」の透かしを適用できます。
 
-- **さまざまなプラットフォームやデバイスで Office アプリのコンテンツを保護する。** サポートされているアプリの一覧については、「[Use sensitivity labels in Office apps (Office アプリの機密ラベルを使用する)](sensitivity-labels-office-apps.md)」を参照してください。
+- **さまざまなプラットフォームやデバイスで Office アプリのコンテンツを保護する。** サポートされているアプリの一覧については、「[Use sensitivity labels in Office apps (Office アプリの秘密度ラベルを使用する)](sensitivity-labels-office-apps.md)」を参照してください。
 
 - **Windows を実行するデバイスでは、機密コンテンツの組織外への流出を防止します。** これには、Microsoft Intune の Endpoint Protection を使用します。Windows デバイスに存在するコンテンツに秘密度ラベルが適用されていると、Endpoint Protection により、そのコンテンツがサード パーティ製アプリ (Twitter や Gmail など)、またはリムーバブル記憶域 (USB ドライブなど) にコピーされることを防止できます。
 
@@ -197,7 +197,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 既定では、Azure Information Protection クライアントがインストールされている場合、組み込みのラベル付け機能はこれらのアプリでオフになっています。 この既定の動作の変更方法などの詳細については、「[Office built-in labeling client and the Azure Information Protection client (Office 組み込みラベル付けクライアントおよび Azure Information Protection クライアント)](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)」を参照してください。
 
-Office アプリで組み込みのラベル付けを使用する場合でも、Azure Information Protection 統合ラベル付けクライアントを次の機密度ラベルと共に使用することもできます。
+Office アプリで組み込みのラベル付けを使用する場合でも、Azure Information Protection 統合ラベル付けクライアントを次の秘密度ラベルと共に使用することもできます。
 
 - オンプレミスに保存されている機密情報を検出し、オプションでそのコンテンツにラベルを付けるスキャナー
 
@@ -223,9 +223,9 @@ Cloud App Security をこれらのラベルで使用する手順については�
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>秘密度ラベルと Microsoft Information Protection SDK
 
-機密度ラベルはドキュメントのメタデータにクリア テキストとして保存されるため、サードパーティ製のアプリおよびサービスはこのラベル付けメタデータを読み書きして、ラベル付けの展開を補完できます。 さらに、ソフトウェア開発者は [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) を使用して、複数のプラットフォームにわたってラベル付けおよび暗号化機能を完全にサポートできます。 詳細については、[Tech Community ブログでの一般提供のお知らせ](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144) を参照してください。 
+秘密度ラベルはドキュメントのメタデータにクリア テキストとして保存されるため、サードパーティ製のアプリおよびサービスはこのラベル付けメタデータを読み書きして、ラベル付けの展開を補完できます。 さらに、ソフトウェア開発者は [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) を使用して、複数のプラットフォームにわたってラベル付けおよび暗号化機能を完全にサポートできます。 詳細については、[Tech Community ブログでの一般提供のお知らせ](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144) を参照してください。 
 
-[Microsoft Information Protection に統合されているパートナー ソリューション](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657) についての説明もご覧いただけます。
+[Microsoft Information Protection に統合されているパートナー ソリューション](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)についての説明もご覧いただけます。
 
 ## <a name="deployment-guidance"></a>展開ガイダンス
 

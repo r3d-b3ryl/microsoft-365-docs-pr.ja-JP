@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072579"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093456"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -44,9 +44,11 @@ ms.locfileid: "42072579"
     
 - コンテンツに次のものが含まれている場合など、特定の条件に一致するときには、**保持ラベルをコンテンツに自動的に適用**できます。 
     
-  - 特定の種類の機密情報。
+    - 特定の種類の機密情報。
     
-  - 作成したクエリに一致する特定のキーワード。
+    - 作成したクエリに一致する特定のキーワード。
+    
+    - トレーニング可能な分類子のパターン マッチ。
     
   保持ラベルを自動的にコンテンツに適用する機能が重要である理由は次のとおりです。
     
@@ -57,13 +59,13 @@ ms.locfileid: "42072579"
    - ユーザーはデータ ガバナンス ポリシーについて把握する必要がなくなり、仕事に集中できる。
 
   > [!NOTE]
-  > ラベルの自動適用機能では、サイトで自動ラベル付けされるコンテンツに対する編集権限を持つユーザーまたはメールボックスが自動ラベル付けの対象になっているユーザーごとに Office 365 Enterprise E5 ライセンスが必要になります。読み取り専用アクセス許可を持つユーザーまたはラベル付けされたメールに単に返信を行うだけのユーザーにはライセンスは不要です。
+  > ラベルを自動的に適用する機能では、サイトまたはメールボックスで自動的にラベルが付けられたコンテンツを編集するアクセス許可を持つユーザーごとに Office 365 Enterprise E5 以上のライセンスが必要になります。そうしないと、メールボックスが自動的にラベル付けされるように選択されます。 コンテンツへの読み取り専用のアクセスやラベル付きメールへの返信が可能なユーザーには、このライセンスは必要ありません。
       
 - メールとドキュメントの両方を含む、**Office 365 全体でレコード管理を実装**できます。保持ラベルを使用して、コンテンツをレコードとして分類できます。この場合、ラベルの変更と削除、およびコンテンツの編集と削除はできません。 
 
 - SharePoint の **ドキュメント ライブラリ、フォルダー、またはドキュメント セットに既定の保持ラベルを適用**することにより、この場所に到着するすべてのドキュメントに既定の保持ラベルが継承されるようになります。  
     
-Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターで保持ラベルを作成します。 左側のナビゲーションで、**[分類]**  >  **[保持ラベル]**  >  **[ラベルの作成]** を選択します。
+Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターで保持ラベルを作成します。
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>保持ラベル ポリシーでの保持ラベルのしくみ
 
@@ -258,14 +260,17 @@ Office 365 グループのコンテンツを保持するには、Office 365 グ�
     
 コンテンツに次の内容が含まれている場合は、保持ラベルを自動的にコンテンツに適用するように選択できます。
   
-- 特定の種類の機密情報。
+- [特定の種類の機密情報](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- 作成したクエリに一致する特定のキーワード。
+- [作成したクエリに一致する特定のキーワード](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [トレーニング可能な分類子のマッチ](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![自動適用ラベルの [条件選択] ページ](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
+最初の 2 つのオプションに対して構成された保持ラベルの自動適用には、Office 365 Enterprise E5 サブスクリプションが必要です。 トレーニング可能な分類子のオプションを使用する場合、この機能には[追加のライセンス要件](classifier-getting-started-with.md#licensing-requirements)があります。
 
-自動適用の保持ラベルには Office 365 Enterprise E5 サブスクリプションが必要です。また、前述したように、条件に一致するすべてのコンテンツに自動適用の保持ラベルが適用されるまでに最大 7 日間かかります。
+構成した条件に一致するすべてのコンテンツに保持ラベルを自動的に適用するには、最大 7 日かかります。
   
 > [!TIP]
 > SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、「[保持ラベルを使用した SharePoint ドキュメントのライフサイクルの管理](auto-apply-retention-labels-scenario.md)」を参照してください。
@@ -309,6 +314,17 @@ Office 365 グループのコンテンツを保持するには、Office 365 グ�
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![クエリ エディター](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
+
+トレーニング可能な分類子のオプションを選択すると、組み込み分類子またはカスタム分類子のいずれかを選択できます。 組み込み分類子には、**攻撃的言語**、**履歴書**、**ソース コード**、**ハラスメント**、**冒とく**、および**脅威**が含まれます。
+
+このオプションを使用してラベルを自動的に適用するには、SharePoint Online サイトとメールボックスには少なくとも 10 MB のデータが必要です。
+
+トレーニング可能な分類子の詳細については、「[トレーニング可能な分類子 (プレビュー) の概要](classifier-getting-started-with.md)」を参照してください。
+
+構成の例については、「[すぐに使用できる分類子を準備して使用する方法](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier)」を参照してください。
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定の保持ラベルの適用
 
