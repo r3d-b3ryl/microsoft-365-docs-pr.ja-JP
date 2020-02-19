@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069950"
+ms.locfileid: "42091370"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -109,7 +109,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 
 - プログラムを使用して Office 365 監査ログからデータをダウンロードする場合、PowerShell スクリプトを使用する代わりに、Office 365 Management Activity API を使用することをお勧めします。Office 365 Management Activity API は、組織の運用、セキュリティ、コンプライアンス監視ソリューションの開発に使用する REST Web サービスです。詳細については、「[Office 365 マネージメント アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)」を参照してください。
 
-- イベントが発生してから対応する監査ログ エントリが検索結果に表示されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Office 365 のさまざまなサービスで、この処理に要する時間を示しています。
+- イベントが発生してから対応する監査ログ レコードが監査ログ検索の結果に返されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Office 365 のさまざまなサービスで、この処理に要する時間を示しています。
 
   |**Office 365 サービス**|**30 分**|**24 時間**|
   |:-----|:-----:|:-----:|
@@ -117,14 +117,14 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
   |Azure Active Directory (ユーザー ログイン イベント)||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (管理イベント)||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |データ損失防止|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |電子情報開示|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Microsoft Project|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power アプリ|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power アプリ||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |セキュリティ/コンプライアンス センター|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online と OneDrive for Business|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||

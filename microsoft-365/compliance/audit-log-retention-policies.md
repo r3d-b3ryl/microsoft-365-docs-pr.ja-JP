@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: 5e2a1e328888a6aadf5c3057bbe7882ac0f72fbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d19e18fa2c701996306f5b2e567ea01708d96144
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079216"
+ms.locfileid: "42091324"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -61,9 +61,9 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
     ![監査ログの検索ページ](../media/AuditLogRetentionPolicy1.png)
 
-3. [**アイテム保持ポリシーの新規作成**] をクリックし、ポップアップ ページの次のフィールドに入力します。
+3. [**監査保持ポリシーの新規作成**] をクリックし、ポップアップ ページの次のフィールドに入力します。
 
-    ![監査ログの保持ポリシーのポップアップ ページ](../media/AuditLogRetentionPolicy2.png)
+    ![監査保持ポリシーのポップアップ ページ](../media/AuditLogRetentionPolicy2.png)
 
    a.  **名前:** 監査ログの保持ポリシーの名前です。 この名前は組織内で一意である必要があります。
    
