@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
-ms.openlocfilehash: 36edcbc7106710ff62bc1a176fb76a17fd7076a6
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: ad9b6865b0afe5b49c2b02d3ee9adba4d62ef9eb
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101247"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106820"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -108,13 +108,13 @@ Insider リスク管理ソリューションのプレビューリリースをサ
 
 ### <a name="mrm-in-exchange-online"></a>Exchange Online の MRM
 
-[メールボックスの保存機能を有効にする](https://docs.microsoft.com/en-us/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled)(更新)<br>ElcProcessingDisabled と RetentionHoldEnabled メールボックスのプロパティを比較して、管理フォルダーアシスタントの処理にどのように影響するか、新しいセクションを追加しました。
+[メールボックスの保存機能を有効にする](https://docs.microsoft.com/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled)(更新)<br>ElcProcessingDisabled と RetentionHoldEnabled メールボックスのプロパティを比較して、管理フォルダーアシスタントの処理にどのように影響するか、新しいセクションを追加しました。
 
 ### <a name="records-management"></a>レコード管理
 
 [廃棄レビューの概要](disposition-reviews.md#permissions-for-disposition)(更新)<br>Exchange 管理センターで、表示のみの監査ログの役割を割り当てる必要があることを明確にすることで、長期にわたるサポートの問題が解決されました。
 
-### <a name="sensitivity-labels"></a>機密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 [機密ラベルとそのポリシーを作成および構成する](create-sensitivity-labels.md)(新)<br>機密ラベルを作成/構成/発行するための手順と推奨されるフロー また、さまざまな言語のラベルを構成する例を含む、PowerShell を必要とする追加設定についても詳しく説明します。
 
@@ -152,7 +152,7 @@ Insider リスク管理ソリューションのプレビューリリースをサ
 
 [ネットワークアップロードを使用して組織の PST ファイルを Office 365 にインポート](use-network-upload-to-import-pst-files.md#before-you-begin)する (更新)<br>パフォーマンス調整を回避するために、Azure ストレージの場所にアップロードされる PST ファイルのサイズを 20 GB 以下にすることを推奨しました。
 
-### <a name="sensitivity-labels"></a>機密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 [機密ラベルについて](sensitivity-labels.md#what-label-policies-can-do)(更新)<br>お客様からのフィードバックによって、ユーザーが提供するジャスティフィケーションテキストが、現在管理者のレビューのためにラベル分析にアクセスされていないことを明確にしていますが、Azure Information Protection の統一されたラベル付けクライアントがインストールされている場合、Azure Information Protection に移動分析.
 
@@ -269,7 +269,7 @@ Office 365 Advanced Message Encryption を使用するために必要な Office 
 
 [Microsoft コンプライアンススコアの計算 (プレビュー)](compliance-score-methodology.md) (更新)<br>コンプライアンススコアの計算方法に関するコンテキストを追加しました。これには、スコアに関連する新しい Microsoft 365 データ保護基準の詳細が含まれます。
 
-### <a name="sensitivity-labels"></a>機密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 [コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)(更新)<br>Outlook で推奨されるラベル付けの今後のサポートに関する情報を削除しました。 重複するライセンス情報を削除しました。 [Office アプリの機密ラベルを使用](sensitivity-labels-office-apps.md)して、優先する情報をポイントするようになりました。
 
