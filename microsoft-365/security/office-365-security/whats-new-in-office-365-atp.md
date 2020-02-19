@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dc781d9f800b3db938b253775b31df118c21fd03
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.date: 01/28/2020
+ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784704"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106850"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -33,15 +34,27 @@ ms.locfileid: "41784704"
 > [!TIP]
 > Office 365 ATP をまだ持っていませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
 
+## <a name="januaryfebruary-2020"></a>2020年1月/年2月
+
+- セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索してフィルター処理できるようにするための[脅威エクスプローラー](threat-explorer.md)の機能拡張。
+    - 配信場所と特別なアクション
+    - 方向性 (受信、送信、または組織内)
+    - オーバーライド (ユーザーによるブロックまたは許可)
+    - URL の脅威 (マルウェア、フィッシング、スパム、または none)
+    - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
+    - 詳細な時間フィルター (日、時間、半時間) 
+
+- **インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。 (セキュリティウィジェットを表示するには、Office 365 セキュリティ & コンプライアンスセンターで、[**脅威管理** > の**レビュー**] に移動します。)
+
 ## <a name="december-2019"></a>2019 年 12 月
 
 - [エクスポート URL [オフライン分析のデータをクリックして](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)ください (OFFICE 365 ATP Plan 1 または Plan 2)
 
-- [Office のキャンペーンビュー (365 ATP) (**プレビュー**)](campaigns.md)
+- [Office 365 の ATP (**プレビュー**) でキャンペーンビューを使用する](campaigns.md)
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- 侵害された[ユーザーの検出と応答の機能 (**プレビュー**) を確認](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)する (Office 365 ATP Plan 2)
+- 侵害された[ユーザーの検出と応答の機能](address-compromised-users-quickly.md)(**プレビュー**) を確認する (Office 365 ATP Plan 2)
 
 ## <a name="september-2019"></a>2019 年 9 月
 
