@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: a9e49f5b9b518711f72c9b9a29e690c55acf3861
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
+ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080311"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155626"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
 > [!NOTE]
 > この記事に記載されている情報は、Microsoft 電源プラットフォーム (Power BI、電源アプリ、およびパワー自動化) サブスクリプションにのみ適用されます。
 
-米国、オーストラリア、カナダ、および日本の電源プラットフォームでセルフサービス購入が可能になりました。
+複数の国の電源プラットフォームでセルフサービス購入が可能になりました。
 
 ## <a name="general"></a>全般
 
@@ -146,3 +146,9 @@ IT 部門およびパートナーは、セルフサービス購入を通じて�
 ### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>セルフサービス購入における Microsoft のパートナーの役割
 
 管理権限を委任されたパートナーは、管理者と同様に、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>でセルフサービス購入を表示できます。パートナーは、セルフサービス購入によって購入された製品を集中管理する組織のサポートに役立ちます。 また、パートナーは、セルフサービス購入の機能を拡張するためのソリューションを提供することができます。
+
+## <a name="country-availability"></a>国の空き時間情報
+
+### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>どの国でセルフサービス購入を行うことができますか。
+
+セルフサービス購入は、オーストラリア、カナダ、日本、および米国の国で利用できます。
