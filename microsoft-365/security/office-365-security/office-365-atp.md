@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 7210cc2cfbb060ee6afe9042a5c8934ff6f53576
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598744"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106840"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -101,7 +101,7 @@ Office 365 ATP プラン 2 には、組織のセキュリティ チームが悪�
 
 - **[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)** (エクスプローラーとも呼ばれます) は、最近発生した脅威を特定して分析できるリアルタイムのレポートです。 カスタム期間のデータを表示するようにエクスプローラーを構成することができます。
 
-- **[攻撃シミュレータ](attack-simulator.md)** を使用すると、現実的な攻撃シナリオを組織で実行して、脆弱性を特定することができます。 [表示名のスピア フィッシング攻撃](attack-simulator.md#display-name-spear-phishing-attack)、[パスワード スプレー攻撃](attack-simulator.md#password-spray-attack)、[ブルート フォース パスワード攻撃](attack-simulator.md#brute-force-password-attack)など、現在の種類の攻撃のシミュレーションを利用できます。
+- **[攻撃シミュレータ](attack-simulator.md)** を使用すると、現実的な攻撃シナリオを組織で実行して、脆弱性を特定することができます。 [資格情報獲得のスピア フィッシング攻撃](attack-simulator.md#credential-harvest-spear-phishing-attack)、[パスワード スプレー攻撃](attack-simulator.md#password-spray-attack)、[ブルート フォース パスワード攻撃](attack-simulator.md#brute-force-password-attack)など、現在の種類の攻撃のシミュレーションを利用できます。
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>自動化された調査と対応で時間を節約する
 
