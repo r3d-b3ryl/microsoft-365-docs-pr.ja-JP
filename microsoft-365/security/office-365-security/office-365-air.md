@@ -1,5 +1,5 @@
 ---
-title: Office 365 の脅威を自動的に調査し対応する
+title: Office 365 の自動調査と応答
 keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
@@ -15,109 +15,30 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d777ca0a61655c8df16d62c72691195bdec330a9
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088316"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175781"
 ---
-# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 の脅威を自動的に調査し対応する
+# <a name="office-365-automated-investigation-and-response"></a>Office 365 の自動調査と応答
 
-## <a name="overview"></a>概要
+[Office 365 Advanced Threat Protection](office-365-atp.md)Plan 2 には、セキュリティ運用チームの時間と労力を節約できる強力な自動化された調査と応答 (AIR) 機能が含まれています。 特定のアラートがトリガーされると、1つ以上のセキュリティプレイブックが開始され、自動調査プロセスが開始されます。 これにより、セキュリティ運用チームが、トリガーされた通知を失うことなく、優先度の高いタスクに集中できるようになります。 
 
-サブスクリプションに応じて、 [Office 365 Advanced Threat Protection](office-365-atp.md)には、セキュリティ運用チームの時間と、アラートと脅威を処理するための労力を節約できる自動化された調査と応答 (航空) 機能が含まれることがあります。
+AIR の流れは大まかには次のようになります。
 
-- Office 365 の自動調査および応答機能を使用するには、この記事をご利用ください。 
-- 機能の概要については、「 [365 Office 2010 での自動調査と応答](automated-investigation-response-office.md)」を参照してください。
-
-> [!TIP]
-> Microsoft 365 E5 または Microsoft 365 E3 と ID および Threat Protection を併用していますか? [Microsoft の脅威保護で自動調査と応答 (AIR)](../mtp/mtp-autoir.md)を試行することを検討してください。
-
-自動調査と応答機能を使用すると、特定のアラートがトリガーされると、1つ以上のセキュリティプレイブックが開始され、自動調査プロセスが開始されます。 自動化された調査プロセスにおいて、セキュリティチームは次のことを行うことができます。
-
-- [調査の詳細を表示する](#view-details-of-an-investigation)
-- [調査の結果としてアクションを確認して承認する](#review-and-approve-actions) 
-- [調査に関連する通知の詳細を表示する](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!IMPORTANT]
-> この記事で説明されているタスクを実行するには、適切なアクセス許可が割り当てられている必要があります。 [AIR 機能を使用するには、必要なアクセス許可を](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities)参照してください。
-
-## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
-
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
-
-2. 次のいずれかの操作を行います。
-
-    - [**脅威管理** > ]**ダッシュボード**に移動します。 これにより、[セキュリティダッシュボード](security-dashboard.md)が表示されます。 エアウィジェットは、[セキュリティダッシュボード](security-dashboard.md)の上部に表示されます。 **調査の概要**などのウィジェットを選択します。
-
-    - [**脅威管理** > の**調査**] に移動します。 
-
-    どちらの方法でも、調査の一覧を取得できます。
-
-    ![AIR のメインの調査ページ](../../media/air-maininvestigationpage.png) 
-
-3. 調査の一覧で、[ **ID** ] 列のアイテムを選択します。 これにより、調査の詳細ページが開き、[調査] グラフが表示されます。
-
-    ![ARI の [調査グラフ] ページ](../../media/air-investigationgraphpage.png)
-
-4. 調査の詳細については、さまざまなタブを使用してください。
-
-## <a name="review-and-approve-actions"></a>アクションの確認と承認
-
-Office 365 では、通常、自動調査は1つまたは複数の推奨されるアクションになります。 ただし、セキュリティ運用チームによって承認されるまで、アクションは実行されません。 アクションを確認して承認するには、以下の手順を使用します。
-
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 
-
-2. [**脅威管理** > の**調査**] に移動します。
-
-3. 調査の一覧で、[ **ID** ] 列のアイテムを選択します。 
-
-3. 調査の詳細ビューで、[**操作**] タブを選択します。承認待ちのすべてのアクションがここに表示されます。
-
-4. リストからアイテムを選択します。
-
-5. 推奨されるアクションを実行する場合は [**承認**] を選択します (アクションを行わずに調査を終了する場合は**拒否**)。
-
-## <a name="view-details-about-an-alert-related-to-an-investigation"></a>調査に関連する通知の詳細を表示する
-
-特定の種類の通知では、Office 365 で自動調査がトリガーされます。 詳細については、「 [Alerts](automated-investigation-response-office.md#alerts)」を参照してください。 次の手順を使用して、自動調査に関連付けられている通知の詳細を表示します。
-
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
-
-2. [**脅威管理** > の**調査**] に移動します。
-
-3. 調査の一覧で、[ **ID** ] 列のアイテムを選択します。 
-
-4. 調査の詳細を開いた状態で、[**通知**] タブを選択します。調査をトリガーしたアラートが一覧表示されています。
-
-5. リストからアイテムを選択します。 ポップアップが開き、通知に関する詳細と追加情報およびアクションへのリンクが表示されます。
-
-6. ポップアップの情報を確認し、特定の通知に応じて、ユーザーの**解決**、**抑制**、または**通知**などのアクションを実行します。 
-
-    - **解決**は通知を閉じることと同じです。
-    
-    - **抑制**すると、指定した期間、ポリシーがアラートをトリガーしなくなります。
-    
-    - **通知**ユーザーに既に入力されたユーザーのメールアドレスを使用してメールを開始し、セキュリティ運用チームがそれらのユーザーにメッセージを入力できるようにします。 (これは、[脅威エクスプローラー](threat-explorer.md)を使用してメッセージを受信者に送信するのと似ています。)  
-
-## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>カスタムまたはサードパーティのレポートソリューションに Office 365 Management Activity API を使用する
-
-組織でカスタムまたはサードパーティのレポートソリューションを使用している場合は、Office 365 Management Activity API を使用して、そのソリューションの自動化された調査に関する情報を表示できます。
-
-これを設定するには、次のリソースを使用します。
-
-|Resource  |説明  |
+|手順  |結果  |
 |---------|---------|
-|[Office 365 管理 API の概要](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |Office 365 管理アクティビティ API は、Office 365 と Azure Active Directory のアクティビティ ログからの、ユーザー、管理者、システム、およびポリシー アクションとポリシー イベントについての情報を提供します。         |
-|[Office 365 管理 API の使用を開始する](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |Office 365 管理 API は、Azure AD を使用して、アプリケーションが Office 365 データにアクセスするための認証サービスを提供します。 これを設定するには、この記事の手順に従います。          |
-|[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |Office 365 Management Activity API を使用して、Office 365 および Azure AD のアクティビティログから、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を取得することができます。 この機能の詳細については、この記事を参照してください。        |
-|[Office 365 管理アクティビティ API のスキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Office 365 Management Activity API を通じて使用できる特定の種類のデータについて理解するために、[共通スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)と[OFFICE 365 の ATP および脅威の調査および応答スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)の概要を説明します。         |
+|1-d     |通知は Office イベントによってトリガーされ、[セキュリティのプレイブック](automated-investigation-response-office.md#security-playbooks)は選択した通知の自動調査を開始します。 <br/><br/>あるいは、セキュリティアナリストは、[脅威エクスプローラー](threat-explorer.md)を使用して自動化され[た調査を開始](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)することもできます。        |
+|pbm-2     |自動調査を実行すると、電子メールとその電子メールに関連するエンティティ (ファイル、Url、受信者) に関する追加データが収集されます。  新しい関連する警告がトリガーされると、調査のスコープが向上する可能性があります。         |
+|1/3     |自動調査の実行中および実行後は、[詳細情報と結果](air-view-investigation-results.md)を表示することができます。 結果には、検出された脅威に対処し、修復を行うためにとることができる[推奨処理](air-remediation-actions.md) が含まれます。 また、すべての調査活動を追跡する[プレイブック ログ](air-view-investigation-results.md#playbook-log)が提供されます。<br/><br/>組織でカスタム レポート ソリューションまたはサード パーティのソリューションを使用している場合は、[Office 365 マネージメント アクティビティ API を使用して](air-custom-reporting.md)自動調査と脅威に関する情報を表示することができます。         |
+|2/4     |セキュリティ運用チームは、[調査結果と推奨事項](air-view-investigation-results.md)を確認し、[修復アクションを承認](air-remediation-actions.md#approve-or-reject-pending-actions)します。 Office 365 では、アクションは自動的には実行されません。 修復処理は、組織のセキュリティチームによる承認時にのみ行われます。         |
 
-## <a name="next-steps"></a>次の手順
+自動化された調査プロセスにおいて、セキュリティチームは次のことを行うことができます。
 
-- [空気を取得し、必要なアクセス許可を確認する方法を確認する](automated-investigation-response-office.md#how-to-get-air)
-- [通知の詳細情報](../../compliance/alert-policies.md)
-- [Office 365 で配信された悪意のある電子メールを手動で検索して調査する](investigate-malicious-email-that-was-delivered.md)
-- [Microsoft Defender ATP の AIR についての詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Microsoft 365 ロードマップにアクセスして、近日公開予定の機能を確認する](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [調査に関連する通知の詳細を表示する](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
+- [調査の結果の詳細を表示する](air-view-investigation-results.md#view-details-of-an-investigation)
+- [調査の結果としてアクションを確認して承認する](air-remediation-actions.md#approve-or-reject-pending-actions)
+
+詳細については、「[エアのしくみ](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)」を参照してください。

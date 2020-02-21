@@ -67,9 +67,11 @@
               items:
                 - name: エアの概要
                   href: mtp/mtp-autoir.md
-                - name: アクション センターに移動する
+                - name: 修復アクションを表示する
+                  href: mtp/mtp-remediation-actions.md
+                - name: アクションセンターにアクセスする
                   href: mtp/mtp-action-center.md
-                - name: エアの結果を表示する
+                - name: 調査結果を表示する
                   href: mtp/mtp-autoir-results.md
                 - name: 保留中のアクションを承認または拒否する
                   href: mtp/mtp-autoir-actions.md
@@ -364,6 +366,20 @@
               href: ./office-365-security/campaigns.md
             - name: 脅威分析を使用した最新の攻撃について
               href: ./mtp/latest-attack-campaigns.md
+            - name: 自動調査および対応
+              items:
+                - name: エアの概要
+                  href: ./office-365-security/office-365-air.md
+                - name: 調査の詳細と結果を表示する
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: 修復アクションの表示と承認
+                  href: ./office-365-security/air-remediation-actions.md
+                - name: カスタムまたはサードパーティのレポートソリューションを使用して AIR を統合する
+                  href: ./office-365-security/air-custom-reporting.md
+            - name: 侵害されたユーザーアカウントを迅速に検出して解決する
+              href: ./office-365-security/address-compromised-users-quickly.md
+            - name: 悪意のある電子メールを調査および修復する
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: ATP レポートを表示して閲覧する
               href: ./office-365-security/view-reports-for-atp.md
             - name: ATP の安全なリンク機能の警告ページとは?
@@ -372,12 +388,6 @@
               href: ./office-365-security/threat-trackers.md
             - name: Office 365 の攻撃シミュレータを使用する
               href: ./office-365-security/attack-simulator.md
-            - name: 脅威の調査および対応によりユーザーの安全を確保する
-              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
-            - name: Office 365 の脅威を自動的に調査し対応する
-              href: ./office-365-security/office-365-air.md
-            - name: 配信された悪意のあるメールの検索と調査
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Office 365 ATP の安全なドキュメント
               href: ./office-365-security/safe-docs.md
             - name: 脅威エクスプローラー (およびリアルタイム検出)
@@ -393,6 +403,8 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: ATP のしくみ
               items:
+                - name: 自動化された調査と応答のしくみ
+                  href: ./office-365-security/automated-investigation-response-office.md
                 - name: ATP の安全なリンク機能のしくみ
                   href: ./office-365-security/how-atp-safe-links-works.md
                 - name: ATP の安全な添付ファイル機能のしくみ
@@ -403,8 +415,6 @@
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: 脅威の調査および対応のしくみ
                   href: ./office-365-security/office-365-ti.md
-                - name: 自動調査および対応のしくみ
-                  href: ./office-365-security/automated-investigation-response-office.md
         - name: セキュリティ インシデントの管理
           items:
             - name: Office 365 セキュリティ インシデント対応

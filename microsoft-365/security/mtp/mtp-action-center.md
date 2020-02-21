@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083788"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175710"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>アクション センターに移動して修復アクションを表示する
 
 **適用対象:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>「単一画面」エクスペリエンス
 
@@ -47,11 +45,6 @@ ms.locfileid: "42083788"
 
 ## <a name="remediation-actions"></a>修復アクション
 
-次の表に、現在アクション センターでサポートされている修復アクションを示します。 
-
-|エンドポイントの修復アクション  |メールの修復アクション  |
-|---------|---------|
-|ファイルの検疫<br/>レジストリ キーの削除<br/>プロセスの強制終了 <br/>サービスの停止 <br/>レジストリ キーの削除 <br/>ドライバーの無効化 <br/>スケジュールされたタスクの実行      |メール メッセージまたはクラスターの論理的な削除<br/>URL のブロック (クリック時)<br/>外部メール転送の無効化          |
 
 ## <a name="go-to-the-action-center"></a>アクション センターに移動する
 

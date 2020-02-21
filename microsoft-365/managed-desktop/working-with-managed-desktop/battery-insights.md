@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085733"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170597"
 ---
 # <a name="battery-insights"></a>バッテリインサイト
 このビューでは、Microsoft マネージドデスクトップデバイスの電力、バッテリ、アプリの使用状況の測定基準が提供されます。 このような目的で、アプリが実行中で、フォーカスがある場合、アプリは "使用中" と見なされます。
@@ -33,7 +33,7 @@ ms.locfileid: "42085733"
 
 ## <a name="top-energy-consumers"></a>最高消費電力
 
-[ **Top energy コンシューマ**] 領域には、MilliWatt (mWh) で最も多くのエネルギーを消費している環境内のアプリが表示されます。 表示されるアプリは、左側の [**バッテリ寿命の予測**] セクションで選択した、特定のデバイスごとにあります。 たとえば、マイクロ Sft Surface Book 2 デバイスのアプリごとの使用量を確認するには、バッテリの寿命領域でその行を選択します。 モデルを選択しない場合、表示されるアプリの利用状況データは、データが含まれるすべてのアプリについて、すべてのアプリケーションで使用されます。
+[ **Top energy コンシューマ**] 領域には、MilliWatt (mWh) で最も多くのエネルギーを消費している環境内のアプリが表示されます。 表示されるアプリは、左側の [**バッテリ寿命の予測**] セクションで選択した、特定のデバイスごとにあります。 たとえば、Microsoft Surface Book 2 デバイスのアプリごとの使用量を確認するには、バッテリの寿命領域でその行を選択します。 モデルを選択しない場合、表示されるアプリの利用状況データは、データが含まれるすべてのアプリについて、すべてのアプリケーションで使用されます。
 
  各アプリについて、色分けされたセグメントは、このカテゴリにおけるアプリのエネルギー使用の配分を示しています。
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理者は、Exchange Online で S/MIME を使用する方法について説明します。
-ms.openlocfilehash: b135a9dc2c5ad8fbf190b38f9fe10161b95a7531
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598534"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170497"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online でのメッセージの署名と暗号化の S/MIME
 
@@ -39,15 +39,15 @@ Exchange Online 管理者は、組織内のメールボックスに対して S/M
 
 これらの各エンドポイントを使用して S/MIME をセットアップする手順は、次の手順で少し異なります。 通常は、次の手順を実行する必要があります。
 
-- Windows ベースの証明機関をインストールし、S/MIME 証明書を発行するように公開キー基盤を設定します。 サードパーティの証明書プロバイダーによって発行された証明書もサポートされています。 詳細については、「[Active Directory 証明書サービスの概要](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))」を参照してください。
+1. Windows ベースの証明機関をインストールし、S/MIME 証明書を発行するように公開キー基盤を設定します。 サードパーティの証明書プロバイダーによって発行された証明書もサポートされています。 詳細については、「[Active Directory 証明書サービスの概要](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))」を参照してください。
 
-- **UserSMIMECertificate**または**usercertificate**属性で、社内 AD DS アカウントでユーザー証明書を公開します。
+2. **UserSMIMECertificate**または**usercertificate**属性で、社内 AD DS アカウントでユーザー証明書を公開します。
 
-- Exchange Online 組織の場合は、適切なバージョンの DirSync を使用して、ユーザー証明書を AD DS から Azure Active Directory に同期させます。 次に、これらの証明書は Azure Active Directory から Exchange Online のディレクトリに同期され、受信者へのメッセージの暗号化に使用されます。
+3. Exchange Online 組織の場合は、適切なバージョンの Azure AD Connect を使用して、ユーザー証明書を AD DS から Azure Active Directory に同期させます。 次に、これらの証明書は Azure Active Directory から Exchange Online のディレクトリに同期され、受信者へのメッセージの暗号化に使用されます。
 
-- S/MIME を検証するためには、仮想の証明書のコレクションを設定します。この情報は、電子メールの署名を検証する際に Web 上の Outlook により使用され、そのメールが信頼される証明書により署名されたことが確認されます。
+4. S/MIME を検証するためには、仮想の証明書のコレクションを設定します。この情報は、電子メールの署名を検証する際に Web 上の Outlook により使用され、そのメールが信頼される証明書により署名されたことが確認されます。
 
-- S/MIME を使用する Outlook エンド ポイントまたは EAS エンド ポイントを設定します。
+5. S/MIME を使用する Outlook エンド ポイントまたは EAS エンド ポイントを設定します。
 
 > [!NOTE]
 > Mac、iOS、Android、その他の非 Windows デバイスでは、Outlook on the web に S/MIME コントロールをインストールすることはできません。 詳細については、「 [web 上の Outlook で S/MIME を使用してメッセージを暗号化する](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)」を参照してください。
