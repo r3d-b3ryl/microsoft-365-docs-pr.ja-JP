@@ -1,5 +1,5 @@
 ---
-title: Insider リスク管理ユーザー (プレビュー)
+title: Insider リスク管理ユーザー
 description: Microsoft 365 での insider リスク管理のユーザーについて説明します。
 keywords: Microsoft 365、insider リスク管理、リスク管理、コンプライアンス
 localization_priority: Normal
@@ -12,19 +12,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072791"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179108"
 ---
-# <a name="insider-risk-management-users-preview"></a>Insider リスク管理ユーザー (プレビュー)
+# <a name="insider-risk-management-users"></a>Insider リスク管理ユーザー
 
 Insider リスク管理ユーザーは、1つ以上の insider リスク管理ポリシーに含まれている組織内の従業員です。 **ユーザーダッシュボード**を使用して、従業員に関するリスク情報をすばやく確認し、従業員を既存の insider リスク管理ポリシーに追加します。 Insider リスク管理ポリシーに含まれる各ユーザーには、次の情報が**ユーザーダッシュボード**に表示されます。
 
 - **Users**: ユーザーのユーザー名。
-- **リスクレベル**: 
+- **リスクレベル**: ユーザーの現在の計算されたリスクレベル。 このスコアは24時間ごとに計算され、ユーザーに関連付けられたすべてのアクティブなアラートからアラートのリスクスコアを使用します。
 - **Active alerts**: すべてのポリシーのアクティブなアラートの数。
 - **確認**された違反: ユーザーの*確認ポリシー違反*として解決されたケースの数。
 - **ケース**: ユーザーの現在のアクティブなケース。
@@ -54,5 +54,5 @@ Insider リスク管理ポリシーにユーザーを追加するには、Micros
 2. ツールバーの [**ポリシーにユーザーを追加**] を選択します。
 3. [**新しいユーザーの追加**] ダイアログで、[**ユーザー** ] フィールドにユーザー名を入力します。 ポリシーに追加するユーザーを選択します。
 4. [**ポリシー** ] フィールドのドロップダウン矢印を選択して、構成済みの insider リスク管理ポリシーを表示します。 ユーザーを追加するポリシーを選択します。
-5. [**監視] ウィンドウ**スライダーコントロールを使用して、......監視ウィンドウの範囲は、5から30日です。
+5. **アクティブ化のウィンドウ**スライダーコントロールを使用して、このユーザーに対してポリシーがアクティブである期間を定義します。また、このポリシーに一致する最初のアクティビティをユーザーが実行したときにトリガーされます。 監視ウィンドウの範囲は、5から30日です。
 6. [**追加**] を選択し、ポリシーにユーザーを追加する**ことを確認**します。

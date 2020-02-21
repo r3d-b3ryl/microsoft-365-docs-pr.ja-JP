@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071358"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179148"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューションカタログ
 
@@ -95,7 +95,7 @@ Microsoft 365 ソリューションカタログにアクセスするには、 [h
 
 - お客様の組織での重要な標準および規制への準拠状況を理解するために役立つ、個人のリスクベースのスコアである**Microsoft のコンプライアンススコアを確認**します。 コンプライアンスの全体的な姿勢を強化するために推奨されるアクションを提供し、それらのアクションを効率的に実行できるようにするためのワークフロー機能を提供します。 詳細については、「[コンプライアンススコア (プレビュー)](compliance-score.md)」を参照してください。
 
-- 内部のリスクを最小限に抑えるために**insider リスク管理ポリシーを構成**し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理 (プレビュー)](insider-risk-management.md)」を参照してください。
+- 内部のリスクを最小限に抑えるために**insider リスク管理ポリシーを構成**し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理](insider-risk-management.md)」を参照してください。
 
 - **コミュニケーションコンプライアンスポリシーについて説明し、それを作成**して、企業のコードのポリシー違反を迅速に特定して改善します。 「[通信のコンプライアンス](communication-compliance.md)」を参照してください。
 

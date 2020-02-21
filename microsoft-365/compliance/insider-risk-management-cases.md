@@ -1,5 +1,5 @@
 ---
-title: Insider リスク管理ケース (プレビュー)
+title: Insider リスク管理ケース
 description: Microsoft 365 の insider リスク管理ケースについて説明します。
 keywords: Microsoft 365、insider リスク管理、リスク管理、コンプライアンス
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072858"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179178"
 ---
-# <a name="insider-risk-management-cases-preview"></a>Insider リスク管理ケース (プレビュー)
+# <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
 ケースは insider リスク管理の中心であり、ポリシーで定義されているリスク指標によって発生した問題について、深く調査してアクションを実行することができます。 ケースは、従業員のコンプライアンス関連の問題に対処するためにさらにアクションが必要になる状況で、警告から手動で作成されます。 各ケースは1人の従業員を対象としており、従業員に対して複数の通知を既存のケースまたは新しいケースに追加できます。 ケースの詳細を調査した後は、従業員に通知を送信するか、問題を解決できないと解決したり、データまたは従業員の調査にエスカレーションしたりすることで、行動を取ることができます。
 
@@ -96,7 +96,7 @@ Insider リスク管理**ケースダッシュボード**を使用すると、�
     - リスクアクティビティの**日付**。
     - **リスクアクティビティカテゴリ**。 たとえば、組織または*SharePoint Online からダウンロード*された*添付ファイルを含む電子メール (s) が*含まれます。
     - アラートの**リスクスコア**。 このスコアは、アラートのリスク重大度レベルの数値スコアです。
-    - 通知に関連付けられた**ファイル**または**メール**の数。 リスクアクティビティに関連付けられている各ファイルまたは電子メールへのリンクも利用できます。
+    - 通知に関連付けられているイベントの数。 リスクアクティビティに関連付けられている各ファイルまたは電子メールへのリンクも利用できます。
 3. **リスクアクティビティの凡例**: ユーザーアクティビティグラフの下部に、色分けされた凡例が表示され、各アラートのリスクカテゴリをすばやく判断できます。
 4. **リスクアクティビティ chronology**: 対応する通知のバブルで利用可能なすべての詳細を含む、ケースに関連付けられているすべてのリスクアラートの完全な chronology が一覧表示されます。
 5. ケース**アクション**: ケースを解決するためのオプションは、ケースアクションツールバーにあります。 ケースを解決したり、従業員に電子メール通知を送信したり、データまたは従業員の調査のためにケースをエスカレートしたりすることができます。

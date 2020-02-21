@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072884"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179218"
 ---
-# <a name="insider-risk-management-alerts-preview"></a>Insider リスク管理警告 (プレビュー)
+# <a name="insider-risk-management-alerts"></a>Insider リスク管理警告
 
 Insider リスク管理の通知は、insider リスク管理ポリシーで定義されたリスク指標によって自動的に生成されます。 これらのアラートは、コンプライアンスアナリストと調査担当に、現在のリスク状態のすべてのビューを提供し、組織が検出されたリスクをトリアージし、アクションを実行できるようにします。
 
@@ -29,7 +29,7 @@ Insider リスク**警告ダッシュボード**を使用すると、insider の
 
 - **確認するアラート**: アラートの重要度の内訳を含む、確認とトリアージを必要とするアラートの合計数が表示されます。
 - **[過去30日間にわたってアラートを開く**]: 過去30日間にわたってポリシーによって作成されたアラートの合計数 (高、中、低) のアラート重大度レベルで並べ替えられます。
-- 解決された**通知の平均時間**: 有用な通知統計の要約:
+- **通知の平均解決時間**: 有用な通知統計の要約:
     - 高重要度のアラートを解決する平均時間 (時間、日、または月単位) を示します。
     - 時間、日、または月単位で一覧表示されている中程度の重要度のアラートを解決するのにかかった平均時間。
     - 低重要度アラートの解決にかかった平均時間 (時間、日、または月単位で表示されます)。

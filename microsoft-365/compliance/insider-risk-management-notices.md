@@ -1,5 +1,5 @@
 ---
-title: Insider リスク管理の通知テンプレート (プレビュー)
+title: Insider リスク管理の通知テンプレート
 description: Microsoft 365 の insider リスク管理の通知テンプレートについて説明します。
 keywords: Microsoft 365、insider リスク管理、リスク管理、コンプライアンス
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072810"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179088"
 ---
-# <a name="insider-risk-management-notice-templates-preview"></a>Insider リスク管理の通知テンプレート (プレビュー)
+# <a name="insider-risk-management-notice-templates"></a>Insider リスク管理の通知テンプレート
 
 Insider リスク管理の通知テンプレートを使用すると、アクティビティがポリシーの一致と通知を生成するときに、従業員に電子メールメッセージを送信できます。 ほとんどの場合、通知を生成する従業員のアクションは、誤ったミスまたは不注意なアクティビティの結果として、意図したとおりにはなりません。 通知は、従業員に対して、より慎重に、またはリフレッシャートレーニングや企業ポリシーリソースのリンクや情報を提供するための簡単な通知として機能します。 通知は、内部のコンプライアンストレーニングプログラムの重要な部分になる可能性があり、定期的なリスクアクティビティを持つ従業員に関する文書化された監査証跡を作成するのに役立ちます。
 

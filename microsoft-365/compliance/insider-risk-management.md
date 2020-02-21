@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072755"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179188"
 ---
-# <a name="insider-risk-management-in-microsoft-365-preview"></a>Microsoft 365 の Insider リスク管理 (プレビュー)
+# <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 での Insider リスク管理
 
-Insider リスク管理は、組織内のリスクのあるアクティビティを検出、調査、処理を実行できるようにすることによって、内部的なリスクを最小限に抑えるために役立つ、Microsoft 365 の内部リスクソリューションです。 カスタムポリシーを使用すると、必要に応じて他の Microsoft 365 調査ソリューションへのケースのエスカレーションを含む、組織内の悪意のある悪意のあるリスクアクティビティを検出し、アクションを実行することができます。 組織内のリスクアナリストは、ユーザーが組織のコンプライアンス標準に準拠していることを確認するために、適切なアクションを迅速に実行できます。
+Insider リスク管理は、組織内のリスクのあるアクティビティを検出、調査、処理を実行できるようにすることによって、内部的なリスクを最小限に抑えるために役立つ Microsoft 365 のソリューションです。 カスタムポリシーを使用すると、必要に応じて Microsoft Advanced eDiscovery にエスカレーションするケースを含めて、組織内の悪意のある悪意のあるリスクアクティビティを検出し、アクションを実行することができます。 組織内のリスクアナリストは、ユーザーが組織のコンプライアンス標準に準拠していることを確認するために、適切なアクションを迅速に実行できます。
 
 以下のビデオを参照して、組織の価値、文化、従業員の操作を優先する際に、組織がリスクを回避、検出、および格納する方法をどのように支援できるかについて説明します。
 <br>
@@ -66,7 +66,7 @@ Microsoft 365 での内部リスクアクティビティおよび insider リス
 
 - 従業員データの盗難からの離脱
 - データリーク
-- コミュニケーションにおける不快な言葉
+- 電子メールの不快な言葉
 
 詳細については、「 [Insider リスク管理ポリシー](insider-risk-management-policies.md)」を参照してください。
 

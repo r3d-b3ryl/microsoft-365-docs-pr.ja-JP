@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078698"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179238"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 
@@ -36,6 +36,8 @@ Microsoft 365 のコミュニケーションコンプライアンスポリシー
 - 法規制の適用と罰金のリスク
 
 組織によっては、IT サポートとコンプライアンス管理グループの間での職務の分離が存在する場合があります。 Microsoft 365 では、通信のコンプライアンス構成と、通信をスキャンするためのポリシーの構成を分離しています。 たとえば、組織の IT グループは、組織のコンプライアンスチームが構成および管理する通信コンプライアンスポリシーをサポートするための役割のアクセス許可とグループの設定を担当する場合があります。
+
+コミュニケーションのコンプライアンスの概要については、「microsoft の技術情報」[チャネル](https://www.youtube.com/user/OfficeGarageSeries)の「 [microsoft 365 ビデオ」の「workplace の嫌がらせを検出し、コミュニケーションに関するコンプライアンス](https://youtu.be/z33ji7a7Zho)」を参照してください。
 
 ## <a name="scenarios-for-communication-compliance"></a>通信コンプライアンスのシナリオ
 

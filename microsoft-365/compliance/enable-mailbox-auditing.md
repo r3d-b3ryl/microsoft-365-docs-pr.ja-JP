@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: メールボックス監査ログは、既定では Office 365 で有効になっています (既定では、既定のメールボックスの監査またはメールボックスの監査とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録されることを意味します。このログでは、メールボックスに対して実行されたアクティビティを検索できます。
-ms.openlocfilehash: 1c1d9996ef72c686a6a543a30bcb34e265cc79cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 28823c3b2b43261d18352cb939c36f1cfc0b2c7c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074714"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170577"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -111,7 +111,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**Default**||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|メールボックス フォルダーがアクセスされました。この操作は、管理者または委任されたユーザーがメールボックスを開いたときにも記録されます。<br/><br/> **注**: 代理人によって実行されたフォルダーバインド操作の監査レコードは統合されます。 1つの監査レコードは、24時間以内に個々のフォルダーへのアクセスに対して生成されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|メッセージが [回復可能なアイテム] フォルダーから削除されました。|![チェックマーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェックマーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**アクセスされる mailitems**|メールデータは、メールプロトコルおよびクライアントによってアクセスされます。 この値は、E5 または E5 コンプライアンスアドオンのサブスクリプションユーザーに対してのみ使用できます。 詳細については、「[高価値の監査イベント](https://docs.microsoft.com/microsoft-365/compliance/advanced-audit#high-value-audit-events)」を参照してください。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**アクセスされる mailitems**|メールデータは、メールプロトコルおよびクライアントによってアクセスされます。 この値は、E5 または E5 コンプライアンスアドオンのサブスクリプションユーザーに対してのみ使用できます。 詳細については、「[調査のための重要なイベントへのアクセス](advanced-audit.md#access-to-crucial-events-for-investigations)」を参照してください。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MailboxLogin**|ユーザーが自分のメールボックスにサインインしている。 |||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MessageBind**|メッセージがプレビューウィンドウに表示されるか、管理者によって開かれた。**注**: この値はメールボックスアクションとして受け入れられますが、これらのアクションはログに記録されなくなります。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**注**: この値はメールボックスアクションとして受け入れられますが、既に**updatefolderpermissions**アクションに含まれており、個別に監査されていません。 言い換えると、この値は使用しないでください。||||
@@ -315,7 +315,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 現在、組織内のメールボックスの監査が既定でオンになっている場合、特定のメールボックスのメールボックス監査を無効にすることはできません。 たとえば、 *Auditenabled* mailbox プロパティを**False**に設定することは無視されます。
 
-ただし、Exchange Online PowerShell で**set-mailboxauditbypassassociation**コマンドレットを使用して、アクションが発生した場所に関係なく、指定されたユーザーによる*すべて*のメールボックスの操作をログに記録しないようにすることができます。 例:
+ただし、Exchange Online PowerShell で**set-mailboxauditbypassassociation**コマンドレットを使用して、アクションが発生した場所に関係なく、指定されたユーザーによる*すべて*のメールボックスの操作をログに記録しないようにすることができます。 次に例を示します。
 
 - バイパスユーザーが実行したメールボックスの所有者のアクションは記録されません。
 
