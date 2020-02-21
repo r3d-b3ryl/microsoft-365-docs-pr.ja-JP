@@ -18,23 +18,23 @@
       href: plan-for-security-and-compliance.md
 - name: Insider のリスクを管理する
   items:
-    - name: Insider リスク管理 (プレビュー)
+    - name: Insider リスク管理
       items:
-        - name: Insider リスク管理について (プレビュー)
+        - name: Insider リスク管理について
           href: insider-risk-management.md
-        - name: Insider リスク管理の概要 (プレビュー)
+        - name: Insider リスク管理の概要
           href: insider-risk-management-configure.md
-        - name: Insider リスクポリシーを作成および管理する (プレビュー)
+        - name: Insider リスクポリシーの作成と管理
           href: insider-risk-management-policies.md
-        - name: Insider のリスクのアラートを調査する (プレビュー)
+        - name: Insider のリスクのアラートを調査する
           href: insider-risk-management-alerts.md
-        - name: Insider のリスクケースに対してアクションを実行する (プレビュー)
+        - name: Insider のリスクケースに対してアクションを実行する
           href: insider-risk-management-cases.md
-        - name: Insider リスクコンテンツエクスプローラーを使用してデータを確認する (プレビュー)
+        - name: Insider リスクコンテンツエクスプローラーを使用してデータを確認する
           href: insider-risk-management-content-explorer.md
-        - name: ユーザーを insider リスクポリシーに追加する (プレビュー)
+        - name: ユーザーを insider リスクポリシーに追加する
           href: insider-risk-management-users.md
-        - name: Insider のリスク通知テンプレートを作成する (プレビュー)
+        - name: Insider リスク通知テンプレートを作成する
           href: insider-risk-management-notices.md
     - name: 通信コンプライアンス
       items:
@@ -61,7 +61,7 @@
           href: information-barriers-troubleshooting.md
         - name: 情報障壁ポリシーの編集
           href: information-barriers-edit-segments-policies.md
-    - name: 特権アクセスの管理
+    - name: 特権アクセス管理
       items:
         - name: 特権アクセス管理の詳細情報
           href: privileged-access-management-overview.md
@@ -76,7 +76,7 @@
   items:
     - name: 機密ラベル
       items:
-        - name: 機密ラベルについて
+        - name: 機密度ラベルの詳細
           href: sensitivity-labels.md
         - name: 秘密度ラベルの使用を開始する
           href: get-started-with-sensitivity-labels.md
@@ -92,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Office アプリで機密ラベルを使用する
+        - name: Office アプリで秘密度ラベルを使用する
           href: sensitivity-labels-office-apps.md
     - name: データ損失防止 (DLP)
       href: data-loss-prevention-policies.md
