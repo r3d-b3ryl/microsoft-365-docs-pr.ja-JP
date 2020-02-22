@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
-ms.openlocfilehash: 8f781687047f39d4d038e293e50c9caad83d051a
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179248"
+ms.locfileid: "42228583"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -132,28 +132,6 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 ![マルウェアの調査をエクスプローラーで開始する](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 アラートによってトリガーされるプレイブックと同様、エクスプローラーのビューからトリガーされる自動調査には、ルート調査、脅威を特定して相関関連を特定するための手順、これらの脅威を軽減するための推奨処置が含まれます。
-
-## <a name="how-to-get-air"></a>AIR の入手方法
-
-Office 365 AIR は次のサブスクリプションに含まれています。
-
-- Microsoft 365 E5
-- Office 365 E5
-- Microsoft Threat Protection
-- Office 365 Advanced Threat Protection プラン 2
-
-これらのサブスクリプションのいずれも持っていない場合は、[無料の試用版を開始](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)してください。
-
-利用可能な機能の詳細については、「[Advanced Threat Protection (ATP) の各プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
-
-## <a name="required-permissions-to-use-air-capabilities"></a>空気機能を使用するために必要なアクセス許可
-
-アクセス許可は、次の表に記載されているような特定の役割によって付与されます。 
-
-|タスク |必要な役割 |
-|--|--|
-|エア機能を設定するには |次のいずれかの役割: <br/>- **グローバル管理者**<br/>- **セキュリティ管理者** <br/>これらの役割は、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)または[Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)で割り当てることができます。 |
-|推奨されるアクションを承認または拒否するには|[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)または[Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)で割り当てられている次のいずれかの役割。<br/>- **グローバル管理者** <br/>- **セキュリティ管理者**<br/>- **セキュリティリーダ** <br/>--- さらに ---<br/>- **検索と削除**(この役割は、 [Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)でのみ割り当てられます。 そこで新しい役割グループを作成し、その新しい役割グループに検索役割と削除役割を追加する必要がある場合があります。
 
 ## <a name="next-steps"></a>次の手順
 

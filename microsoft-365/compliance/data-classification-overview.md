@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bec44dea9059c779a567a3ff222cc41360de9321
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076402"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175801"
 ---
-# <a name="data-classification-overview-preview"></a>データ分類の概要 (プレビュー)
+# <a name="know-your-data---data-classification-overview-preview"></a>データを把握する - データ分類の概要 (プレビュー)
 
 Microsoft 365 の管理者またはコンプライアンス管理者は、組織内のコンテンツを評価してタグ付けすることにより、コンテンツの保存場所を制御し、保存場所に関わらずコンテンツを保護でき、また、組織のニーズに合わせてコンテンツを保持および削除できるようになります。 これらは、[秘密ラベル](sensitivity-labels.md)、[保持ラベル](labels.md)、および機密情報の種類の分類を適用することにより行います。 検出、評価、タグ付けを行うにはさまざまな方法がありますが、最終的には、これらのラベルの一方または両方を使用してタグ付けおよび分類された大量のドキュメントとメールが生み出される可能性があります。 保持ラベルと機密ラベルを適用した後は、テナント全体でラベルがどのように使用されているか、これらのアイテムに対してどのような操作が行われているかを確認する必要があります。 こうした内容は、データ分類のページで確認できます。具体的には次の内容を確認できます。
 

@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 の高度な監査は、新しい監査機能を提供し、組織におけるフォレンシックおよびコンプライアンスの調査を支援します。
-ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960243"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170517"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
 Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 Microsoft 365 の高度な監査のリリースにより、組織におけるフォレンシックおよびコンプライアンスの調査を支援できる新しい監査機能が追加されました。
 
 > [!NOTE]
-> 高度な監査は、Office 365 または Microsoft 365 Enterprise E5 サブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン サブスクリプションは、監査ログの長期保持や価値の高い監査イベントと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。
+> 高度な監査は、Office 365 または Microsoft 365 Enterprise E5 サブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン サブスクリプションは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。
 
 この記事では、これらの高度な監査機能の概要について説明します。
 
@@ -49,9 +49,9 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 特定のポリシーが他のポリシーよりも優先されるように、ポリシーおよび優先度のレベルに一致する監査レコードを保持する期間を指定することもできます。 また、組織の一部またはすべてのユーザーに対して Exchange、SharePoint、または Azure Active Directory 監査レコードを 1 年未満で保持する必要がある場合は、カスタム監査ログの保持ポリシーが既定の監査保持ポリシーよりも優先されます。 詳細については、「[監査ログ保持ポリシーを管理する](audit-log-retention-policies.md)」を参照してください。
 
-## <a name="high-value-audit-events"></a>重要な監査イベント
+## <a name="access-to-crucial-events-for-investigations"></a>調査のための重要なイベントへのアクセス
 
-セキュリティ関連の重要な監査イベントおよびコンプライアンス関連の監査イベントは、違反の可能性やその他のフォレンジック調査の調査に役立つイベントです。 リリースする最初のそのような重要なイベントは、*MailItemsAccessed* メールボックスの監査イベントです。 このイベントは、メール プロトコルとクライアントがメール データにアクセスしたときにトリガーされます。 MailItemsAccessed イベントは、調査者がデータ違反を識別し、侵害された可能性があるメッセージの範囲を特定するのに役立ちます。 攻撃者がメール メッセージにアクセスすると、MailItemsAccessed イベントは、実際に読み取られたことを示す明示的な信号がない場合でもトリガーされます (つまり、バインドや同期などのアクセスの種類が監査レコードに記録されます)。
+重要なセキュリティ - セキュリティ関連の重要な監査イベントおよびコンプライアンス関連の監査イベントは、違反の可能性やその他のフォレンジック調査の調査に役立つイベントです。 リリースする最初の重要なイベントは、*MailItemsAccessed* メールボックスの監査イベントです。 このイベントは、メール プロトコルとクライアントがメール データにアクセスしたときにトリガーされます。 MailItemsAccessed イベントは、調査者がデータ違反を識別し、侵害された可能性があるメッセージの範囲を特定するのに役立ちます。 攻撃者がメール メッセージにアクセスすると、MailItemsAccessed イベントは、実際に読み取られたことを示す明示的な信号がない場合でもトリガーされます (つまり、バインドや同期などのアクセスの種類が監査レコードに記録されます)。
 
 新しい MailItemsAccessed メールボックス アクションは、Exchange Online のメールボックスの監査ログインの MessageBind を置き換え、次の改良点を提供します。
 

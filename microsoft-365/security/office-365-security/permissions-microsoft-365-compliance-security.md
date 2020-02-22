@@ -16,20 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
-ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 78068a4c6f32dbc53b8fb649c0f27905e0e634ad
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082445"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230110"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
 組織は、すべての Microsoft 365 サービスに関するセキュリティとコンプライアンスのシナリオを管理する必要があります。 また、組織の IT グループ内の適切なユーザーに、適切な管理者権限を付与する柔軟性も必要です。 Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
 
 全体管理者がこれらの管理者のロールを割り当てると、管理者は、Microsoft 365 セキュリティ センター、Microsoft 365 コンプライアンス センター、Azure、Office 365、Enterprise Mobility + Security など、Microsoft 365 のすべてのサービスに及ぶ機能やデータにアクセスできます。
-
-![Microsoft 365 セキュリティ センターのアクセス許可のページ](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Microsoft 365 のロール
 
