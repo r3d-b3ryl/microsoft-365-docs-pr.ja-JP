@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 87bb8faa13f34fbe299b6de82bdd9099eaaff5aa
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 98b669a216b5c3a875cb1a42fd0cc97fb6112f1b
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851854"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222109"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>オーストラリア自治体情報セキュリティ登録された査定者プログラム (IRAP)
 
@@ -86,9 +86,9 @@ IRAP は、クラウドサービスを使用するすべてのオーストラリ
 - [IRAP トレーニングを提供するのは誰ですか?](https://acsc.gov.au/infosec/irap/training.htm)
 - [コンプライアンスおよびコンプライアンス違反の要件情報](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[irap テンプレート](https://go.microsoft.com/fwlink/?linkid=2117913)を使用して、組織がこの規制の要件を満たすことができるようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[irap テンプレート](https://go.microsoft.com/fwlink/?linkid=2117913)を選択して、組織がこの規制の要件を満たすのを支援します。
 
 ## <a name="resources"></a>リソース
 

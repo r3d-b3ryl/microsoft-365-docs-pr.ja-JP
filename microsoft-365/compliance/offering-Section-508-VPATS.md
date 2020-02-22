@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d9d0c213fcca5b991b4912d5b9158e2d3836aff9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc5e8312f219176dbed7a84072c90e0ca165cd11
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602024"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228523"
 ---
 # <a name="us-section-508"></a>米国セクション508
 
@@ -45,7 +45,7 @@ Microsoft では、製品とサービスの開発における米国のセクシ�
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft アクセシビリティ適合レポート
 
-すべての製品およびサービスの[適合レポート](https://go.microsoft.com/fwlink/p/?linkid=2050974) を検索します。
+すべての製品およびサービスの[適合レポート](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/) を検索します。
 
 ## <a name="resources"></a>リソース
 
@@ -53,7 +53,7 @@ Microsoft では、製品とサービスの開発における米国のセクシ�
 - [Office 365 アクセシビリティ センター](https://go.microsoft.com/fwlink/p/?linkid=2051801): 障碍のある方のための Office 365 のリソースです。
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
 - [DHS 信頼テスタープログラム](https://go.microsoft.com/fwlink/?linkid=2052171): Microsoft が参加する米国国土安全保障 (DHS) 信頼されたテスタープログラムに関する情報を取得します。
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 

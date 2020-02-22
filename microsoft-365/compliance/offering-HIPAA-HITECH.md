@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851894"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228513"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保険の携行性と責任 (HIPAA) & のヒット処理機能
 
@@ -49,7 +49,7 @@ HIPAA 規制では、対象となるエンティティとそのビジネスに�
 
 Microsoft エンタープライズクラウドサービスは、FedRAMP 評価にも含まれています。 Microsoft Azure および Microsoft Azure Government は、FedRAMP ジョイント認証ボードから操作するための仮の機関を受け取りました。Microsoft Dynamics 365 米国政府機関が、米国および米国の米国政府機関からの米国政府機関からの米国政府機関との関係において、米国の住宅および都市の開発部門を対象とした機関を受け取っ365ています。
 
-HIPAA と Microsoft Cloud でのエコーの利点について説明します。「 [Zwanger-Pesiri Radiology Customer Story」を参照](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)してください。
+Microsoft Cloud が顧客による HIPAA およびお客様のフィードバックのサポートを支援する方法については、 [Microsoft カスタマーストーリー](https://customers.microsoft.com)を参照してください。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -102,9 +102,9 @@ Microsoft サービスはすべてのお客様にとって一貫しており、�
 - [Microsoft Azure を使用してセキュリティで保護された正常性ソリューションを設計するための実践的なガイド](https://aka.ms/azureindustrysecurity)。クラウドサービスを安全な方法で適切に導入するために必要なことを理解するのに役立つ情報を示します。
 - [Microsoft クラウドでの HIPAA のセキュリティとプライバシーの要件への対応に](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)は、規制要件の概要が記載されています。 また、これらの要件に対応する方法論を使用して Microsoft のクラウドサービスがどのように構築されたかについての詳細な分析と、コンプライアンス対応のソリューションを構築する方法のガイダンスを提供します。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[hipaa Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2118005)と[hipaa Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118006)を使用して、組織がこの規制の要件を満たすことができるようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[Hipaa Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2118005)と[hipaa Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118006)を選択して、組織がこの規制の要件を満たすのを支援します。
 
 ## <a name="resources"></a>リソース
 

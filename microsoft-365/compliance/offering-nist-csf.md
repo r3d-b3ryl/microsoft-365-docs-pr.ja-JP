@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4aae95778a829203dc8d34fe1882528cf866b913
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851804"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222009"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -97,9 +97,9 @@ NIST CSF 認定のスコープ内サービスには、Exchange Online のアー�
 
 Microsoft は、その他のクラウドサービスプロバイダーと比較して、最も包括的な製品を提供しています。 地域や業界にわたる幅広いコンプライアンスサービスに対応するために、市場需要、お客様からのフィードバック、製品のライフサイクルに基づく保証作業の範囲にサービスを含めます。 特定のコンプライアンスオファリングの現在のスコープにサービスが含まれていない場合、お客様の組織は、コンプライアンスの義務に基づいてリスクを評価し、そのサービスでデータを処理する方法を決定する責任を負っています。 お客様からのフィードバックを継続的に収集し、規制や監査担当者と協力してコンプライアンスを拡大し、セキュリティおよびコンプライアンスのニーズを満たすことができます。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[NIST CSF テンプレート](https://go.microsoft.com/fwlink/?linkid=2117917)を使用して、組織がこの規制の要件を満たすのを支援します。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[NIST CSF テンプレート](https://go.microsoft.com/fwlink/?linkid=2117917)を選択して、組織がこの規制の要件を満たすことができるようにします。
 
 ## <a name="resources"></a>リソース
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: fb667cdf13ed8ed6777f454b8fa3e21342f90272
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851864"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222089"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Federal Risk and Authorization Management Program (FedRAMP)
 
@@ -109,9 +109,9 @@ FISMA は、FISMA 要件に準拠している組織からのみ情報システ�
 
 はい。 連邦政府機関からの ATO を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書を使用することができます。 ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[fedramp テンプレート](https://go.microsoft.com/fwlink/?linkid=2118102)を使用して、組織がこの規制の要件を満たすのを支援します。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[fedramp テンプレート](https://go.microsoft.com/fwlink/?linkid=2118102)を選択して、組織がこの規制の要件を満たすのを支援します。
 
 ## <a name="resources"></a>リソース
 

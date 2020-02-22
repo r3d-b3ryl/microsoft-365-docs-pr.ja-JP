@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596484"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225510"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA に関する Visual Studio ファミリ データ主体要求
 
@@ -47,7 +47,7 @@ GDPR の一般的な情報については、[Service Trust Portal の GDPR セ�
 
 GDPR に基づくデータ プロセッサとして、Microsoft は、Visual Studio、Visual Studio for Mac、およびそれらと Visual Studio Code に対する Microsoft 拡張機能に対するエクスペリエンスを提供し、これらを改善するために必要なデータをユーザーから収集します。データは、顧客データとシステム生成ログという 2 つのカテゴリに分けられます。顧客データには、これらの製品が提供しているサービスを実行するために必要なユーザーを特定できるトランザクション データと相互作用データが含まれます。たとえば、ユーザーにローミング設定などの個人的なエクスペリエンスを提供するには、ユーザー アカウント情報と設定データを収集する必要があります。システム生成ログは、問題を特定してトラブルシューティングし、弊社の製品やサービスを向上させるために使用される、利用状況データまたは診断データで、ユーザー名などのエンドユーザーに関する特定可能な情報が含まれている場合もあります。システム生成ログは、少なくとも 18 か月間保持されます。例として、システム生成ログは、次のサンプルで示すように、製品使用の日ごとに集計され、使用日、使用された製品 ("Visual Studio 2017" など)、実行されたアクション ("vs/core/packagecostsummary/solutionload" など)、およびアクションの実行回数が記録されます。
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}

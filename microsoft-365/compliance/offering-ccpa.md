@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851844"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222029"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>カリフォルニア州消費者プライバシー法 (CCPA)
 
@@ -93,9 +93,9 @@ CCPA には、次のように、個人情報を収集、転送、販売する規
 - CCPA は、13 歳未満の子供に対して、児童オンラインプライバシー保護法 (COPPA) と一致する、保護者による同意の義務を導入しています。
 - 16歳から16歳の子供の場合、CCPA は子からオプトイン同意を得るための新しい責務を課しています。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[ccpa テンプレート](https://go.microsoft.com/fwlink/?linkid=2118004)を使用して、組織がこの規制の要件を満たすことができるようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[ccpa テンプレート](https://go.microsoft.com/fwlink/?linkid=2118004)を選択して、組織がこの規制の要件を満たすことができるようにします。
 
 ## <a name="resources"></a>リソース
 

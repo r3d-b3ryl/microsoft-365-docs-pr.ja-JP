@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851824"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222072"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>連邦金融機関調査委員会 (FFIEC)
 
@@ -59,9 +59,9 @@ Azure および Office 365 の SOC 構成証明レポート。
 
 これらの義務を満たすために、Microsoft は、前述した SOC 標準への準拠についての詳細を提供しています。 しかし最終的には、お客様は自分のサービスが、お客様の機関に適用される特定の法律および規制に準拠しているかどうかを判断する必要があります。 また、FFIEC は、「監査レポートまたはレビューのユーザーは、レポートに含まれる情報のみに依存して TSP の内部統制環境を検証することはない」ということにもアドバイスしています。 「FFIEC IT の調査ハンドブック」の「[アウトソーシングテクノロジ](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)」に記載されているように、追加の確認および監視手順を使用する必要があります。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンススコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、事前に構成された[FFIEC Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117912)と[FFIEC Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118101)を使用して、組織がこの規制の要件を満たすことができるようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから、事前に構成された[FFIEC Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117912)と[FFIEC Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118101)を選択して、組織がこの規制の要件を満たすのを支援します。
 
 ## <a name="resources"></a>リソース
 

@@ -1,5 +1,5 @@
 ---
-title: Office アプリで機密ラベルを使用する
+title: Office アプリで秘密度ラベルを使用する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、および web 用 Office アプリの機密ラベルを使用して作業する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101237"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225515"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで機密ラベルを使用する
+# <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
 Microsoft 365 コンプライアンスセンターまたは同等のラベル付けセンターから機密ラベルが[公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)されている場合は、作成または編集時にデータを分類して保護するために、ユーザーが Office アプリに表示され始めます。
 
@@ -77,16 +77,16 @@ Windows コンピューター上でのみ実行される Azure Information Prote
 
 |機能                                                                                                        |Windows デスクトップ上の Outlook |Outlook on Mac デスクトップ  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[ラベルを手動で適用、変更、または削除する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
+|[ラベルを手動で適用、変更、または削除する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
 |[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
-|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト                       | レビュー                    | レビュー           | レビュー               | はい |
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト                       | レビュー                    | レビュー           | レビュー               | 必要 |
 |
 
 ## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベルクライアントと Azure Information Protection クライアント
@@ -123,10 +123,15 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ユーザーは、ドキュメントまたは電子メールごとに、一度に1つのラベルだけを適用できます。
 
-添付ファイルを含む電子メールメッセージにラベルを付けると、添付ファイルはラベルを継承しません。
+添付ファイルが含まれている電子メールメッセージにラベルを付けると、添付ファイルはラベルを継承しません。1つの例外があります。
 
-- 添付ファイルにラベルがある場合は、ラベルを個別に適用したままにします。
-- 添付ファイルにラベルが付いていない場合、添付ファイルはラベルなしで保持されます。 ただし、メールのラベルが保護されている場合、その保護は Office の添付ファイルに適用されます。
+- 添付ファイルは、暗号化を適用しないラベル付きの Office ドキュメントで、電子メールメッセージに適用するラベルは暗号化を適用します。 この場合、メールで送信された Office ドキュメントは、その電子メールのラベルを暗号化設定で継承します。
+
+無視しない場合は: 
+
+- 添付ファイルにラベルがある場合は、元のラベルが適用されたままになります。
+- 添付ファイルがラベルなしで暗号化されている場合、暗号化は保持されますが、ラベルは付けられません。
+- 添付ファイルにラベルが付いていない場合は、ラベルが付いていないままになります。
 
 ## <a name="sensitivity-label-compatibility"></a>機密ラベルの互換性
 
