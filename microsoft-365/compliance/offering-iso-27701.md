@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5cd89e0f31d650e85de20b40e3870de0ef8c7cc3
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851834"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222019"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 プライバシー情報管理システム (PIMS)
 
@@ -74,7 +74,7 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコア 2の設定](compliance-score-setup.md)後、事前に構成された [ISO 27701 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117915)を使用してこの規制の要件を満たすようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコアの設定](compliance-score-setup.md)後、[**テンプレート**] ドロップダウン メニューから事前に構成された [ISO 27701 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117915)を選択してこの規制の要件を満たすようにします。
 
 ## <a name="resources"></a>リソース
 

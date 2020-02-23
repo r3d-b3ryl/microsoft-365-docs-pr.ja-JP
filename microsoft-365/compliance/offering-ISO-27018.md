@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e2a26b91de38c876145b9b5b1c7765058b4b25a3
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851874"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222059"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>クラウドで個人データを保護するための ISO/IEC 27018 実施基準
 
@@ -123,7 +123,7 @@ ISO/IEC 27018 のコンテキストでは、次のような違いがあります
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコア 2の設定](compliance-score-setup.md)後、事前に構成された [ISO 27018 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117523)を使用してこの規制の要件を満たすようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコアの設定](compliance-score-setup.md)後、[**テンプレート**] ドロップダウン メニューから事前に構成された [ISO 27018 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117523)を選択してこの規制の要件を満たすようにします。
 
 ## <a name="resources"></a>リソース
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722018"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225525"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Dynamics 365 データ対象要求
 
@@ -82,10 +82,9 @@ Dynamics 365 は、サービスとしてのソフトウェア (SaaS) として�
 
 Microsoft は、データ主体の権利要求への対応とそれに伴う顧客データへのアクセスに関して、ユーザーを支援する機能を提供します。ただし、個人データが適切に保存および分類されるようにするのは、お客様の責任です。
 
-***Dynamics 365 for Customer Engagement*** には、高度な検索、関連性検索、レコード検索など、レコード内の個人データをユーザーが検索するための機能が複数用意されています。 いずれの機能でも、個人データを特定または検索できます。
+***Dynamics 365 for Customer Engagement*** には、高度な検索、レコード検索など、レコード内の個人データをユーザーが検索するための機能が複数用意されています。 いずれの機能でも、個人データを特定または検索できます。
 
 - [[高度な検索]](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [[関連性検索]](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results) は、ダッシュボードを使用して後で参照するために保存することができます。
 - [[レコード検索]](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records) は、複数のレコードの種類に対して検索を実行できます。
 
 Dynamics 365 for Marketing には、次の追加機能が用意されています。

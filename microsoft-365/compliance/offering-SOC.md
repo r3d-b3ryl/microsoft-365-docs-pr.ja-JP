@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851884"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222049"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -131,7 +131,7 @@ Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stre
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコア 2の設定](compliance-score-setup.md)後、事前に構成された [SOC 1 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117918)と [SOC 2 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117919)を使用してこの規制の要件を満たすようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコアの設定](compliance-score-setup.md)後、[**テンプレート**] ドロップダウン メニューから事前に構成された [SOC 1 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117918)と [SOC 2 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117919)を選択してこの規制の要件を満たすようにします。
 
 ## <a name="resources"></a>リソース
 

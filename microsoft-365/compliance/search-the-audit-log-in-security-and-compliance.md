@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: fe91f43d088242336d7e77e5422093979d34193b
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219188"
+ms.locfileid: "42228593"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -725,7 +725,7 @@ Workplace Analytics では、Office 365 組織において各グループが共�
 |チームへのボットの追加|BotAddedToTeam|ユーザーがチームにボットを追加しました。|
 |チャネルの追加|ChannelAdded|ユーザーがチームにチャネルを追加しました。|
 |コネクタの追加|ConnectorAdded|ユーザーがチャネルにコネクタを追加しました。|
-|チームへのメンバーの追加|MemberAdded|チーム所有者がチームにメンバーを追加しました。|
+|追加されたメンバー|MemberAdded|チームの所有者が、チームまたはグループ チャットにメンバーを追加しました。|
 |タブの追加|TabAdded|ユーザーがチャネルにタブを追加しました。|
 |チャネルの設定の変更|ChannelSettingChanged|次のアクティビティがチーム メンバーにより実行されると、ChannelSettingChanged 操作が記録されます。 これらの各アクティビティについては、変更された設定 (以下のかっこ内) の説明が、監査ログの検索結果の [**項目**] 列に表示されます。 <br/><br/>• チーム チャネルの名前が変更されます (**チャネル名**)。 <br/><br/>• チーム チャネルの説明が変更されます (**チャネルの説明**)。|
 |組織の設定の変更|TeamsTenantSettingChanged|TeamsTenantSettingChanged は、全体管理者が Microsoft 365 管理センターを使用して次のアクティビティを実行したときに記録されます。これらのアクティビティは組織全体の Microsoft Teams の設定に影響を及ぼすことに注意してください。 詳細については、「[Microsoft Teams の管理者設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)」を参照してください。 <br/> これらの各アクティビティについては、変更された設定 (以下のかっこ内) の説明が、監査ログの検索結果の [**項目**] 列に表示されます。 <br/><br/>• 組織に対して Microsoft Teams が有効または無効になります (**Microsoft Teams**)。 <br/><br/>• 組織に対して Microsoft Teams と Skype for Business の相互運用が有効または無効になります (**Skype for Business の相互運用性**)。 <br/><br/>• Microsoft Teams クライアントの組織図ビューを有効または無効にします (組織図ビュー **)。<br/><br/>• チーム メンバーがプライベート会議をスケジュールする機能を有効または無効にします (** プライベート会議のスケジュール **)。<br/><br/>• チーム メンバーがチャネル会議をスケジュールする機能を有効または無効にします (チャネル会議のスケジュール**)。 <br/><br/>• Teams 会議のビデオ通話を有効または無効にします (Skype 会議のビデオ **)。<br/><br/>• 組織に対して Microsoft Teams ミートアップの画面共有を有効または無効にします (** Skype 会議の画面共有 **)。<br/><br/>• (Giphys と呼ばれる) アニメーション画像を Teams の会話 (アニメーション画像**) に追加する機能を有効または無効にします。 <br/><br/>• 組織のコンテンツの評価設定を変更します (**コンテンツの評価**)。 コンテンツの評価により、会話に表示されるアニメーション画像の種類が制限されます。 <br/><br/>• チーム メンバーがインターネット上の (カスタム ミーム と呼ばれる) カスタマイズ可能な画像 をチームの会話に追加する機能を有効または無効にします (インターネット上のカスタマイズ可能な画像 **)。<br/><br/>• チーム メンバーが (ステッカーと呼ばれる) 編集可能な画像をチームの会話に追加する機能を有効または無効にします (** 編集可能な画像 **)。<br/><br/>• Microsoft Teams のチャットとチャネルで、チーム メンバーがボットを使用する機能を有効または無効にします (組織全体のボット**)。 <br/><br/>• Microsoft Teams に特定のボットを有効にします。 組織でボットを有効にすると利用可能になる、Teams のヘルプ ボットである T-Bot はこれに含まれません (**個々のボット**)。 <br/><br/>• チーム メンバーが拡張機能またはタブを追加する機能を有効または無効にします (**拡張機能またはタブ**)。 <br/><br/>• Microsoft Teams に対して専用ボットのサイドローディングが有効または無効になります (**ボットのサイドローディング**)。 <br/><br/>• ユーザーがメール メッセージを Microsoft Teams に送信する機能が、有効または無効になります (**チャネルのメール**)。|
@@ -736,7 +736,7 @@ Workplace Analytics では、Office 365 組織において各グループが共�
 |チームの削除|TeamDeleted|チーム所有者がチームを削除しました。|
 |チームからのボットの削除|BotRemovedFromTeam|ユーザーがチームからボットを削除しました。|
 |コネクタの削除|ConnectorRemoved|ユーザーがチャネルからコネクタを削除しました。|
-|チームからのメンバーの削除|MemberRemoved|チーム所有者がチームからメンバーを削除しました。|
+|削除されたメンバー|MemberRemoved|チームの所有者がチームまたはグループ チャットからメンバーを削除しました。|
 |タブの削除|TabRemoved|ユーザーがチャネルからタブを削除しました。|
 |コネクタの更新|ConnectorUpdated|ユーザーがチャネルのコネクタを変更しました。|
 |タブの更新|TabUpdated|ユーザーがチャネルのタブを変更しました。|
@@ -836,6 +836,7 @@ Office 365 監査ログに記録される Microsoft Forms のユーザー アク
 |ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Office on the web を使用して、機密ラベルがドキュメントに適用されました。|
 |ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged|Office on the web を使用して、異なる機密ラベルがドキュメントに適用されました。|
 |ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Office on the web を使用して、機密ラベルがドキュメントから削除されました。|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ
 
