@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091370"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219188"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -62,6 +62,8 @@ ms.locfileid: "42091370"
 - Microsoft Power Apps 内のユーザーおよび管理者のアクティビティ
 
 - Microsoft Forms 内のユーザーおよび管理者のアクティビティ
+
+- SharePoint Online または Microsoft Teams を使用するサイトの機密ラベルのユーザーおよび管理アクティビティ
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -309,7 +311,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams アクティビティ](#microsoft-teams-activities)|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Yammer アクティビティ](#yammer-activities)|
 |[Microsoft Power Automate のアクティビティ](#microsoft-power-automate-activities)|[Microsoft Power Apps のアクティビティ](#microsoft-power-apps-activities)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
-|[Microsoft Forms アクティビティ](#microsoft-forms-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)|||
+|[Microsoft Forms アクティビティ](#microsoft-forms-activities)|[機密ラベル アクティビティ](#sensitivity-label-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
@@ -330,7 +332,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ごみ箱からのファイルの削除|FileDeletedFirstStageRecycleBin|ユーザーがサイトのごみ箱からファイルを削除しました。|
 |第 2 段階のごみ箱からのファイルの削除|FileDeletedSecondStageRecycleBin|ユーザーがサイトの第 2 段階のごみ箱からファイルを削除しました。|
 |削除されたレコードのコンプライアンス ポリシー ラベル|ComplianceRecordDelete|レコードとして分類されたドキュメントが削除されました。 ドキュメントがレコードとしてみなされるのは、ドキュメントをレコードとして分類する保持ラベルがドキュメントに適用されている場合です。|
-|検出されたドキュメントの秘密度の不一致|DocumentSensitivityMismatchDetected|ユーザーが、ドキュメントのアップロード先サイトに適用されている機密ラベルよりも高い優先度の機密ラベルで分類されたドキュメントをアップロードします。 <br/><br/> サイトに適用されている機密ラベルの方が、サイトにアップロードされたドキュメントに適用されている機密ラベルよりも優先順位が高い場合、このイベントは発生しません。 秘密度ラベルの優先度の詳細については、「[Learn about sensitivity labels (秘密度ラベルの詳細)](sensitivity-labels.md#label-priority-order-matters)」の「ラベルの優先度」セクションを参照してください。|
+|検出されたドキュメントの秘密度の不一致|DocumentSensitivityMismatchDetected|ユーザーが機密ラベルで保護されているサイトにドキュメントをアップロードし、ドキュメントの機密ラベルがサイトよりも低いです。 <br/><br/> サイトに適用されている機密ラベルの方が、サイトにアップロードされたドキュメントに適用されている機密ラベルよりも優先順位が高い場合、このイベントは発生しません。 機密ラベルの優先度の詳細については、「[ラベルの優先度 (順序の問題)](sensitivity-labels.md#label-priority-order-matters)」を参照してください。|
 |ファイルでのマルウェアの検出|FileMalwareDetected|SharePoint ウイルス対策エンジンにより、ファイル内でマルウェアが検出されました。|
 |ファイル チェックアウトの破棄|FileCheckOutDiscarded|ユーザーは、チェックアウトしたファイルを破棄します (または元に戻します)。つまり、チェックアウト時にファイルに加えた変更はすべて破棄され、ドキュメント ライブラリ内のドキュメントのバージョンには保存されないということです。|
 |ファイルのダウンロード|FileDownloaded|ユーザーがサイトからドキュメントをダウンロードしました。|
@@ -350,6 +352,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |クライアントが表示をシグナル|ClientViewSignaled|ユーザーのクライアント (Web サイトやモバイル アプリなど) が、示されるページをユーザーが表示したことをシグナルしました。 多くの場合、ページでの PagePrefetched イベントに続いてこのアクティビティがログに記録されます。 <br/><br/>**注**: ClientViewSignaled イベントはサーバーではなくクライアントによりシグナルされるため、イベントがサーバーによってログに記録されず、監査ログに表示されない場合があります。 また、監査レコードの情報の信頼性が低い可能性もあります。 ただし、ユーザーの ID はシグナルの作成に使用されたトークンによって検証されるため、対応する監査レコードに記載されているユーザーの ID は正確です。 |
 |(なし)|PagePrefetched|示されるページにユーザーがアクセスした際のパフォーマンスを上げるため、ユーザーのクライアント (Web サイトやモバイル アプリなど) がそのページを要求しました。 このイベントは、ページの内容がユーザーのクライアントに配信されたことを示すため、ログに記録されます。 このイベントは、ユーザーがページに移動したことをはっきりと示します。 <br/><br/> (ユーザーの要求に従って) ページのコンテンツがクライアントによってレンダリングされると、ClientViewSignaled イベントが生成されます。 プレフェッチの指摘はすべてのクライアントでサポートされているわけではないため、プレフェッチされた一部のアクティビティは PageViewed イベントとしてログ記録される可能性があります。|
 ||||
+
 
 ### <a name="folder-activities"></a>フォルダー アクティビティ
 
@@ -822,6 +825,18 @@ Office 365 監査ログに記録される Microsoft Forms のユーザー アク
 |回答が送信される|SubmitResponse|ユーザーがフォームへの回答を送信する。 <br><br>プロパティ IsInternalForm:boolean は、回答者がフォーム所有者と同じ組織内にいるかどうかを示します。|
 ||||
 
+### <a name="sensitivity-label-activities"></a>機密ラベル アクティビティ 
+
+次の表に、SharePoint Online および Teams サイトのラベル付けアクティビティから生じるイベントを一覧表示します。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|サイトに適用された機密ラベル|SensitivityLabelApplied|機密ラベルが SharePoint または Teams サイトに適用されました。|
+|サイトから削除された機密ラベル|SensitivityLabelRemoved|SharePoint または Teams サイトから機密ラベルが削除されました。|
+|ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Office on the web を使用して、機密ラベルがドキュメントに適用されました。|
+|ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged|Office on the web を使用して、異なる機密ラベルがドキュメントに適用されました。|
+|ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Office on the web を使用して、機密ラベルがドキュメントから削除されました。|
+
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ
 
 (Office 365 において既定で有効になっている) 管理者監査ログは、管理者 (または管理者権限が割り当てられているユーザー) が Exchange Online の組織で変更を行ったときに、Office 365 監査ログにイベントを記録します。 Exchange 管理センターを使用するか、Exchange Online PowerShell でコマンドレットを実行して加えられた変更は、Exchange 管理者監査ログに記録されます。 Office 365 監査ログには、動詞の **Get-**、**Search-**、または **Test-** で始まるコマンドレットが記録されません。 Exchange の管理者監査ログの詳細については、「[管理者監査ログ](https://go.microsoft.com/fwlink/p/?LinkID=619225)」を参照してください。
@@ -848,6 +863,7 @@ Office 365 監査ログを検索するときに Exchange 管理者のアクテ�
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    Exchange 管理者監査ログと Office 365 監査ログの両方に同じ Exchange 管理者アクティビティが記録されますので注意してください。
+
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
