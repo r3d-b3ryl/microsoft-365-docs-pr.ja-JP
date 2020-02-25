@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 708e55db1c39d85501b1c42f9a46821bbc2eff9e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c7f1bba23379b25ccecc427b2aa866a1105396d
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600434"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235016"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 `DeviceLogonEvents` [高度な](advanced-hunting-overview.md)検索スキーマの表には、ユーザーログオンとその他の認証イベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
