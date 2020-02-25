@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 712fdf6935fa69bfb2079858d6384eee270776e6
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106840"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261034"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -39,7 +39,7 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 
 - **[脅威の調査および反応機能](#use-threat-investigation-and-response-capabilities)**: 最先端のツールを使用して、脅威の調査、把握、シミュレーション、および回避を行います。
 
-- **[自動調査および対応機能](#save-time-with-automated-investigation-and-response)**: 脅威の調査および軽減にかかる時間と労力を節約します。
+- **[自動調査および対応機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: 脅威の調査および軽減にかかる時間と労力を節約します。
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン 1 およびプラン 2
 
@@ -47,7 +47,7 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 
 |Office 365 ATP プラン 1 |Office 365 ATP プラン 2|
 |---------|---------|
-|構成、保護、および検出機能:<br/>- [安全な添付ファイル](atp-safe-attachments.md)<br/>- [安全なリンク](atp-safe-links.md)<br/>- [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)<br/>- [高度なフィッシング対策による保護](atp-anti-phishing.md)<br/>- [リアルタイムの検出](threat-explorer.md)     |Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:<br/>- [脅威トラッカー](threat-trackers.md)<br/>- [脅威エクスプローラー](threat-explorer.md)<br/>- [自動調査および対応](automated-investigation-response-office.md)<br/>- [攻撃シミュレータ](attack-simulator.md)|
+|構成、保護、および検出機能:<br/>- [安全な添付ファイル](atp-safe-attachments.md)<br/>- [安全なリンク](atp-safe-links.md)<br/>- [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)<br/>- [高度なフィッシング対策による保護](atp-anti-phishing.md)<br/>- [リアルタイムの検出](threat-explorer.md)     |Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:<br/>- [脅威トラッカー](threat-trackers.md)<br/>- [脅威エクスプローラー](threat-explorer.md)<br/>- [自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [攻撃シミュレータ](attack-simulator.md)|
 
 - Office 365 ATP プラン 2 は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。
 
@@ -56,9 +56,6 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 - Office 365 ATP プラン 1 および Office 365 ATP プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして使用できます。 詳細については、「[ATP プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
 - 現在のサブスクリプションに Office 365 ATP が含まれていない場合は、[販売員に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、ATP が組織でどのように機能するかを確認してください。
-
-> [!TIP]
-> Microsoft 365 E5 または Microsoft 365 E3 と ID および Threat Protection を併用していますか? [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md) を試してみてください。
 
 ## <a name="configure-atp-policies"></a>ATP ポリシーを構成する
 
@@ -105,7 +102,7 @@ Office 365 ATP プラン 2 には、組織のセキュリティ チームが悪�
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>自動化された調査と対応で時間を節約する
 
-(**新機能!**) 潜在的なサイバー攻撃を調査している場合は、期限厳守です。 脅威をより早く特定して軽減できれば、組織はより良くなります。 [自動調査および対応](automated-investigation-response-office.md) (AIR) 機能には、アラートがトリガーされたときなどには自動的に、またはエクスプローラーのビューから手動で起動できるセキュリティ プレイブックのセットが含まれています。 AIR は、セキュリティ運用チームの脅威を軽減するための時間と労力を効果的かつ効率的に節約できます。 詳細については、「[Office 365 での AIR](automated-investigation-response-office.md)」を参照してください。
+(**新機能!**) 潜在的なサイバー攻撃を調査している場合は、期限厳守です。 脅威をより早く特定して軽減できれば、組織はより良くなります。 [自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) 機能には、アラートがトリガーされたときなどには自動的に、またはエクスプローラーのビューから手動で起動できるセキュリティ プレイブックのセットが含まれています。 AIR は、セキュリティ運用チームの脅威を軽減するための時間と労力を効果的かつ効率的に節約できます。 詳細については、「[Office 365 での AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)」を参照してください。
 
 ## <a name="permissions-required-to-use-atp-features"></a>ATP 機能を使用するために必要なアクセス許可
 
