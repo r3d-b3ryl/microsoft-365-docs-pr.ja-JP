@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219178"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262024"
 ---
-# <a name="go-to-the-action-center-to-view-remediation-actions"></a>アクション センターに移動して修復アクションを表示する
+# <a name="the-action-center"></a>アクションセンター
 
 **適用対象:**
 - Microsoft Threat Protection
 
-## <a name="a-single-pane-of-glass-experience"></a>「単一画面」エクスペリエンス
+アクション センターを使用して、組織のデバイスおよびメールボックス全体の現在および過去の調査結果を確認します。 脅威の種類および結果の verdict に応じて、[修復アクション](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)は自動的に、または組織のセキュリティ運用チームによる承認時に発生します。 すべての修復アクションは、承認待ちか既に承認済みかにかかわらず、アクションセンターに統合されます。 
 
 ![アクション センター](../../media/air-actioncenter.png)
 
-アクション センターを使用して、組織のデバイスおよびメールボックス全体の現在および過去の調査結果を確認します。 脅威の種類および[出された判定](mtp-autoir-results.md#remediation-actions-following-automated-investigation)に応じて、修復アクションが自動的に、または組織のセキュリティ運用チームの承認を受けて実行されます。 すべての修復アクションは、承認待ちか既に承認済みかにかかわらず、アクションセンターに統合されます。 
+## <a name="a-single-pane-of-glass-experience"></a>「単一画面」エクスペリエンス
 
 アクション センターは、次のようなタスクに「単一画面」エクスペリエンスを提供します。
 - 保留中の修復アクションを承認する。
@@ -63,7 +63,6 @@ ms.locfileid: "42219178"
 
     - 調査にデバイスが含まれる場合は、調査の詳細がセキュリティ センター で開きます ([https://security.microsoft.com](https://security.microsoft.com))。 
 
-
 > [!TIP]
 > Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
 
@@ -82,6 +81,8 @@ ms.locfileid: "42219178"
 ## <a name="next-steps"></a>次のステップ 
 
 - [Microsoft Threat Protection のインシデントの詳細](incidents-overview.md)
+
 - [自動化された調査の結果を表示する](mtp-autoir-results.md)
+
 - [Microsoft Threat Protection の捜索の詳細](advanced-hunting-overview.md)
 

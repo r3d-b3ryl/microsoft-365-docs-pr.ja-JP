@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085693"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250427"
 ---
 # <a name="work-with-insights"></a>分析情報を操作する
 
@@ -23,6 +23,10 @@ Microsoft マネージドデスクトップには、テナントの管理者が�
 - 最もよく使用されているアプリと、その時間。
 - クラッシュまたはハングによって問題が発生しているのはどのアプリか。
 - Microsoft マネージドデスクトップの運用において、このような問題を軽減または解決する方法を教えてください。
+- どのアプリが最も多くの電力を消費していますか?
+- 予想されるバッテリの寿命はどのようなものですか?
+- デバイス上のセキュリティ更新プログラムの現在の状態は何ですか。
+- デバイスの95% が最新のセキュリティ更新プログラムで最新の状態になるまでにどのくらいの時間がかかりましたか?
 
 Microsoft 365 管理センターからこれらのビューにアクセスするには、[**レポート**] 領域で [**詳細の表示**] を選択します。
 
@@ -46,3 +50,9 @@ Microsoft 365 管理センターからこれらのビューにアクセスする
 このビューには、環境内のデバイスの電力消費量と予想されるバッテリ寿命に関する情報が表示されます。 この情報を表示するには、[**バッテリ**] タブを選択します。
 
 [詳細につい](battery-insights.md)ては、「」を参照してください。
+
+## <a name="windows-security-update-insights"></a>Windows セキュリティ更新プログラムインサイト
+
+このビューには、Microsoft マネージドデスクトップデバイスのセキュリティ更新プログラムの状態に関する情報が表示されます。 この情報を表示するには、[ **Windows セキュリティ**] タブを選択します。
+
+[セキュリティ更新プログラム](security-update-insights.md)の詳細について説明します。

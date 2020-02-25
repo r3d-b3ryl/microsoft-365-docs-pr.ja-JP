@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 6b18b0c681950c2bce75045aef70dd3d021b0fb9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774233"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250437"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ
 
@@ -26,7 +26,7 @@ Microsoft マネージドデスクトップでは、管理されたデバイス�
 - [情報セキュリティ](#information-security)–機密情報をさらに保護するためのオプションの利用可能なサービス 
 
 
-
+Microsoft マネージドデスクトップでのセキュリティ運用チームの詳細、およびそれらがデバイスにセキュリティを提供する方法については、「 [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP)」を参照してください。 
 
 ## <a name="device-security"></a>デバイスのセキュリティ
 
@@ -64,7 +64,7 @@ VPN | お客様は VPN インフラストラクチャを所有しており、制
 
 ## <a name="information-security"></a>情報セキュリティ
 
-お客様は、企業の価値の高い資産を保護するために、これらのオプションのサービスを構成できます。 
+企業の価値の高い資産を保護するために、これらのオプションのサービスを構成できます。 
 
 サービス | 説明
 --- | ---

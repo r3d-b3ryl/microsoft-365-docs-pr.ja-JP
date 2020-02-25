@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c4b3687fa3cf2ba65fabf11ee9ae18d5c0be5ca5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087516"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234786"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [高度な検索スキーマ](advanced-hunting-overview.md)の `EmailEvents` テーブルには、Office 365 ATP 上のメールの処理に関するイベントについての情報が含まれています。 このテーブルの情報を返すクエリを作成するには、この参照を使用できます。
 

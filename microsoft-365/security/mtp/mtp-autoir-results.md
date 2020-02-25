@@ -1,5 +1,5 @@
 ---
-title: 自動調査の詳細と結果を表示する
+title: 自動化された調査の詳細と結果
 description: 自動調査の結果と主な検出事項は、調査の実行中および実行後に表示できます。
 keywords: 自動化、調査、結果、分析、詳細、修復、autoair
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 062dd86de49eb3dfe47566aa8d7269780cf9995c
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 6b3bc068e5da99e02a64463891e32d137c448d64
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175720"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261064"
 ---
-# <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
+# <a name="details-and-results-of-an-automated-investigation"></a>自動化された調査の詳細と結果
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -80,24 +80,9 @@ ms.locfileid: "42175720"
 |Log (ログ)    |調査中に実行されたすべてのステップの詳細および状態を表示します。|
 |Pending actions (保留中のアクション)    |続けるには承認を必要とするアイテムを一覧表示します。|
 
-## <a name="remediation-actions-following-automated-investigation"></a>自動調査後の修復アクション
-
-自動調査が完了すると、関係するすべての証拠について判定が行われ、修復アクションが特定されます。 修復アクションが自動的に実行される場合もあれば、修復アクションが承認を待機する場合もあります。 考えられる判定と結果を次の表に示します。
-
-|判定    |分野   |結果|
-|------|------|------|
-|Malicious (悪意のある)  |デバイス (エンドポイント)    |修復アクションが自動的に実行されます|
-|Malicious (悪意のある)  |メールのコンテンツ (URL または添付ファイル) | 推奨される修復アクションが承認待ちになります|
-|Suspicious (不審) |デバイスまたはメールのコンテンツ |推奨される修復アクションが承認待ちになります|
-|Clean (クリーン)  |デバイスまたはメールのコンテンツ   |必要な修復アクションはありません|
-
-[保留中のアクションをアクション センターで確認する](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
-
-> [!TIP]
-> Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
-
 ## <a name="next-steps"></a>次のステップ
 
 - [アクション センターのアクセス許可の概要を確認する](mtp-action-center.md#required-permissions-for-action-center-tasks)
+
 - [自動調査と応答に関連するアクションを承認または拒否する](mtp-autoir-actions.md)
 
