@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection での自動調査および対応
+title: Microsoft の脅威保護の自動化された調査と応答機能
 description: Microsoft Threat Protection での自動調査および対応機能の概要を説明します
 keywords: 自動化、調査、警告、トリガー、アクション、修復
 search.appverid: met150
@@ -18,23 +18,21 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: da7216aa94455a4b431e540b976f8a1662378a58
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f54ec3c0b318acaf6c81d26f32cfde5e87585a13
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600074"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261994"
 ---
-# <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Microsoft Threat Protection での自動調査および対応 (AIR)
+# <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Microsoft の脅威保護の自動化された調査と応答 (AIR) 機能
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+セキュリティ警告がトリガーされた場合、組織のセキュリティ運用チームはこれらの警告を調査し、組織を保護するための手順を実行する必要があります。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 Microsoft の脅威保護の自動化された調査と対応 (AIR) 機能が役立ちます。 空気は、セキュリティ運用センターで仮想アナリストを持つようなものです。
 
 ## <a name="your-virtual-analyst"></a>仮想アナリスト
-
-セキュリティ警告がトリガーされた場合、組織のセキュリティ運用チームはこれらの警告を調査し、組織を保護するための手順を実行する必要があります。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 
 
 組織のレベル 1 またはレベル 2 のセキュリティ運用チームは、仮想アナリストを使用することができます。 仮想アナリストは、セキュリティ運用チームであれば実行するであろう脅威の調査と修復の最適な手順を模倣して実行します。 仮想アシスタントは、処理能力の制限なしに24時間年中無休で作業することが可能で、調査と脅威の修復を大量に処理することができます。 このような仮想アシスタントを使用すると、対応するまでの時間を大幅に短縮できます。その結果、セキュリティ運用チームでは、その他の重要な戦略的プロジェクトに取り組むための時間的余裕が生まれます。 これは、決して仮定のシナリオではありません。 このような仮想アナリストは、Microsoft Threat Protection スイートの一部として提供されており、*自動調査と対応* (AIR) と呼ばれています。
 
@@ -73,6 +71,7 @@ ms.locfileid: "41600074"
 |サブスクリプションの要件 |- Microsoft 365 E5 または Microsoft 365 E3 と Identity & Threat Protection<br/>- [Microsoft 365 のプラン](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans) を参照してください|
 |ネットワーク要件 |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) がオン<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) が構成済み<br/>- [MCAS が Azure ATP と統合済み](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
 |Windows コンピューターの要件 |- Windows 10、バージョン 1709 以降がインストール済み (「[Windows 10 リリース情報](https://docs.microsoft.com/windows/release-information/)」を参照してください)<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) が構成済み <br/>- [Windows Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)が構成済み |
+|電子メールコンテンツと Office ファイルの保護 |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)の構成 |
 |アクセス許可 |- AIR を*構成*するユーザーには、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで、**グローバル管理者**または**セキュリティ管理者**の役割が割り当てられている必要があります。<br/><br/>- AIR の機能を*使用*する方法については、「[アクション センターのタスクに必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)」を参照してください。 |
 
 ## <a name="next-steps"></a>次のステップ

@@ -1,5 +1,5 @@
 ---
-title: Office 365 の自動調査と応答
+title: Office 365 での自動調査および対応 (AIR)
 keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.openlocfilehash: 7bfa07880a302f77769ee15e9108db21dac2519c
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228572"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262014"
 ---
-# <a name="office-365-automated-investigation-and-response"></a>Office 365 の自動調査と応答
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)Plan 2 には、セキュリティ運用チームの時間と労力を節約できる強力な自動化された調査と応答 (AIR) 機能が含まれています。 特定のアラートがトリガーされると、1つ以上のセキュリティプレイブックが開始され、自動調査プロセスが開始されます。 これにより、セキュリティ運用チームが、トリガーされた通知を失うことなく、優先度の高いタスクに集中できるようになります。 
+
+## <a name="the-overall-flow-of-air"></a>AIR の全体的な流れ
 
 AIR の流れは大まかには次のようになります。
 

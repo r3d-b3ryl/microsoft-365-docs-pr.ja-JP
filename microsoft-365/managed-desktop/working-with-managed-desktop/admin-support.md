@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085713"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266093"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの管理者サポート
 
@@ -59,12 +59,7 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 
 ![フィードバックフォーム](../../media/feedback_form.png)
 
-## <a name="provide-administrator-rights-to-specific-users"></a>特定のユーザーに管理者権限を付与する
 
-サポート担当者と協力して作業する際には、トラブルシューティングを支援するためにデバイス上のユーザーにローカル管理者権限を付与する必要があるかもしれません。 これを行うには、自分のアカウントに対して、Microsoft Intune でのグローバル管理者またはデバイス管理者の権限を持っている必要があります。 状況に応じて、次のいずれかの手順を実行します。
-
-- ユーザーがオンプレミスの Active Directory アカウントから同期されている場合は、管理者特権でのコマンドプロンプトから**net localgroup administrators/add "Contoso\username"** を実行します。
-- ユーザーが Azure Active Directory で作成されている場合は、管理者特権でのコマンドプロンプトから**net localgroup administrators/add "AzureAD\UserUpn"** を実行します。
 
 ## <a name="additional-resources"></a>その他のリソース
 - [Microsoft マネージドデスクトップのエンドユーザーサポート](end-user-support.md)。 

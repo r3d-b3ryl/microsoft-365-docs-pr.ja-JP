@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602754"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250477"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでの更新プログラムの処理方法
 
@@ -23,7 +23,7 @@ ms.locfileid: "41602754"
 
 <!--Update management -->
 
-Microsoft マネージドデスクトップは、すべてのデバイスを最新のクラウドベースのインフラストラクチャに接続します。 Windows、Office、ドライバー、ファームウェア、および Microsoft Store for Business アプリケーションを最新の状態に保つことは、速度と安定性のバランスになります。 展開グループは、オペレーティングシステムの更新とポリシーが安全な方法でロールアウトされるようにするために使用されます。 
+Microsoft マネージドデスクトップは、すべてのデバイスを最新のクラウドベースのインフラストラクチャに接続します。 Windows、Office、ドライバー、ファームウェア、および Microsoft Store for Business アプリケーションを最新の状態に保つことは、速度と安定性のバランスになります。 展開グループは、オペレーティングシステムの更新とポリシーが安全な方法でロールアウトされるようにするために使用されます。 詳細については、「 [Microsoft マネージドデスクトップの変更およびリリースプロセス](https://www.microsoft.com/videoplayer/embed/RE4mWqP)」を参照してください。
 
 Microsoft によってリリースされた更新プログラムは累積的であり、品質または機能の更新プログラムとして分類されます。
 詳細については、「 [Windows update For Business: update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)」を参照してください。 

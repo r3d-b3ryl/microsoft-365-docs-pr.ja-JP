@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085956"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250447"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをユーザー自身が登録する
 
@@ -150,7 +150,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. デバイスのエントリが存在する可能性があるディレクトリにアクセスします。 Windows Server Active Directory ドメインサービスと Azure Active Directory を含む、*すべて*のディレクトリから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
-4. デバイスのエントリが存在する可能性があるアクセス管理サービス。 Microsoft エンドポイント構成マネージャー、Microsoft Intune、Windows 自動操縦を含む、*すべて*の管理サービスから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
+4. デバイスのエントリが存在する可能性があるアクセス管理サービス。 Microsoft エンドポイント構成マネージャー、Microsoft Intune、Windows 自動操縦など、*すべて*の管理サービスから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
 
 これで、デバイスの[登録](#register-devices)に進むことができます。
 

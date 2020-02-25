@@ -1,5 +1,5 @@
 ---
-title: Microsoft の脅威保護で、空軍の誤検知または誤検知を報告する方法
+title: Microsoft の脅威保護での電波の誤検知または誤ネガの処理
 description: Microsoft の脅威保護で、何らかの問題があるか、またはエアで誤って検出されましたか? 分析のために誤検知または誤検知を Microsoft に送信する方法について説明します。
 keywords: 自動化、調査、警告、トリガー、アクション、修復、誤検知、false 負
 search.appverid: met150
@@ -19,23 +19,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774193"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262004"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
+# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査と応答機能で誤検知/否定を処理する
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 Microsoft の脅威保護ミスの自動化された[調査と応答機能](mtp-autoir.md)を、誤って検出しましたか? この問題を解決するには、以下の手順を実行します。 以下のことを実行できます。
+
 - [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
+
 - [通知を調整し](#adjust-an-alert-to-prevent-false-positives-from-recurring)ます (必要な場合)。そして 
+
 - [デバイスに対して実行された修復操作を元に戻し](#undo-a-remediation-action-that-was-taken-on-a-device)ます。 
 
 この記事をガイドとして使用します。 
@@ -51,7 +52,7 @@ Microsoft の脅威保護ミスの自動化された[調査と応答機能](mtp-
 
 |シナリオ |サービス |行うこと |
 |--------|--------|--------|
-|-警告が正規の使用によってトリガーされる <br/>-警告が正確でない    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> または <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Cloud App Security ポータルで通知を管理する](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+|-警告が正規の使用によってトリガーされる <br/>-警告が正確でない    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Cloud App Security ポータルで通知を管理する](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
 |ファイル、IP アドレス、URL、またはドメインが安全であっても、デバイスのマルウェアとして扱われる|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |["許可" アクションを含むカスタムインジケーターを作成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
@@ -81,5 +82,7 @@ Microsoft の脅威保護ミスの自動化された[調査と応答機能](mtp-
 ## <a name="related-articles"></a>関連記事
 
 - [自動調査と対応に関連するアクションを承認または拒否する](mtp-autoir-actions.md)
+
 - [アクション センターの詳細](mtp-action-center.md)
+
 - [Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する](advanced-hunting-overview.md)

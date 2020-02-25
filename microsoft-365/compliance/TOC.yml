@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 概要
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -209,7 +209,7 @@
           href: data-classification-pub-preview-relnotes.md
         - name: トレーニング可能な分類子の使用を開始する (プレビュー)
           href: classifier-getting-started-with.md
-        - name: すぐに使用できる分類子を使用する (プレビュー)
+        - name: 組み込みの分類子を使用する (プレビュー)
           href: classifier-using-a-ready-to-use-classifier.md
         - name: 分類子の作成とトレーニング (プレビュー)
           href: classifier-creating-a-trainable-classifier.md

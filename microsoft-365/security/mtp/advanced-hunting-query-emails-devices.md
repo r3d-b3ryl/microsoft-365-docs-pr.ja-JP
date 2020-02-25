@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 83a4b7b52508002ad9bc5c27e1ebf68677808444
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0bbcef72fa305819c9f8e0813cfcdfd6c2b0fff3
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087936"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234726"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>デバイスとメール全体で脅威を捜索する
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [Microsoft Threat Protection](advanced-hunting-overview.md) の高度な捜索を使用すると、Windows デバイスおよび Office 365 メール全体で積極的に脅威を捜索できます。 デバイスとメールの両方を対象としたクエリの作成方法を検討する上で役立つ捜索シナリオとサンプル クエリをいくつか紹介します。
 

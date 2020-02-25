@@ -1,0 +1,98 @@
+---
+title: クイック ヘルプ削除済みのユーザー
+f1.keywords:
+- NOCSH
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
+ROBOTS: NOINDEX
+description: ユーザーの Office 365 アカウントを削除または復元する方法について説明します。
+ms.openlocfilehash: 35245a0f9cbe78f6758c7071adea30053f7b8737
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42257357"
+---
+# <a name="quick-help-deleted-user"></a>クイック ヘルプ:削除済みのユーザー
+
+組織内の[ユーザー](../add-users/add-users.md)を削除することが必要になる場合があります。 通常は、ユーザーが離職した場合にユーザーを削除します。 
+  
+## <a name="delete-a-user"></a>ユーザーを削除する
+
+::: moniker range="o365-worldwide"
+
+> [!NOTE]
+> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
+  
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
+2. ユーザーを選択し、ユーザーの一覧の上にある [**その他のオプション**(**...**)] を選択し、[**ユーザーの削除**] を選択します。
+  
+3. [削除の確認] ウィンドウで、[**ユーザーの削除**] を選択します。 <br/>[記事全体を参照してください。](../add-users/delete-a-user.md)
+  
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
+
+2. ユーザーを選択し、ユーザーの一覧の上にある [**その他** >の**ユーザーを削除する**] を選択します。
+  
+3. [削除の確認] ウィンドウで、[**ユーザーの削除**] を選択します。 <br/>[記事全体を参照してください。](../add-users/delete-a-user.md)
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
+
+2. ユーザーを選択し、ユーザーの一覧の上にある [**その他** >の**ユーザーを削除する**] を選択します。
+  
+3. [削除の確認] ウィンドウで、[**ユーザーの削除**] を選択します。 <br/>[記事全体を参照してください。](../add-users/delete-a-user.md)
+
+::: moniker-end
+
+  
+## <a name="restore-a-user"></a>ユーザーを復元する
+
+ホームページで [**削除済み****ユーザー** ] を検索し、結果で [削除済みのユーザー] を選択するか、左側のナビゲーションから [**削除済みのユーザー** ] ページに移動して復元するユーザーを選択することで、ユーザーを復元できます。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
+  
+## <a name="what-are-deleted-users"></a>削除済みのユーザーとは
+
+削除済みの[ユーザー](../add-users/add-users.md)とは、組織から削除した職場または学校のアカウントです。 
+  
+## <a name="does-deleting-a-user-free-up-their-office-365-license"></a>ユーザーを削除すると Office 365 のライセンスは解放されるのか?
+
+はい。ユーザーを削除すると、そのユーザーに割り当てられている Office 365 ライセンスは解放されます。解放されたライセンスは、他のユーザーに割り当てることができます。記事の全文については、[こちら](../../commerce/licenses/remove-licenses-from-subscription.md)を参照してください。
+  
+## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>[削除済みのユーザー] に表示されていた削除済みのユーザーが表示されなくなりました。 何が起こったのでしょうか?
+
+削除済みのユーザーは、組織内で 30 日間保持されます。 30 日が経過すると、それらのユーザーは組織から完全に削除されます。
+  
+## <a name="how-long-do-i-have-if-i-want-to-restore-a-user"></a>ユーザーを復元するための猶予期間はどれだけですか?
+
+ユーザーを削除した後、30 日を経過するとユーザーを復元できなくなります。
+  
+## <a name="do-i-lose-all-the-users-data-when-i-delete-them"></a>ユーザーを削除した場合、そのユーザーのデータはすべて失われますか?
+
+ユーザーを削除しても、ユーザーのデータは削除されません。ユーザーのデータは 30 日間保存されます。30 日以内にユーザーを復元した場合、そのユーザーに関連するデータはすべて復元されます。
+  
+## <a name="how-do-i-restore-a-user"></a>ユーザーを復元する方法
+
+ホームページで [**削除済み****ユーザー** ] を検索し、結果で [削除済みのユーザー] を選択するか、左側のナビゲーションから [**削除済みのユーザー** ] ページに移動して復元するユーザーを選択することで、ユーザーを復元できます。 記事の全文については、[こちら](../add-users/delete-a-user.md)を参照してください。
+  
+

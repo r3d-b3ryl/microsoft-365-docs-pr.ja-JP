@@ -14,21 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
-ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 49b7e95e1669c106ee7f7bf9191ff8e73ae4802f
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228583"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261974"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
 セキュリティの警告がトリガーされたときに、そのような警告を確認し、組織を保護するための手順を実行することは、セキュリティ運用チームにかかっています。 場合によっては、セキュリティ運用チームが、トリガーされた通知の量に圧倒されることがあります。 Office 365 の自動化された調査と応答 (AIR) 機能を利用できます。 AIR により、セキュリティ運用チームがより効率的かつ効果的に運用できるようになります。 空気機能には、今日の既知の脅威への対応として、自動化された調査プロセスが含まれます。 適切な修復処置で承認を受けることができ、セキュリティ運用チームが検出された脅威に対応できるようになります。 
 
 この記事では、エアとそのコンポーネントの概要について説明します。 航空を使い始める準備ができたら、「 [Office 365 で脅威に自動的に調査して対応](office-365-air.md)する」を参照してください。
-
-> [!TIP]
-> Microsoft 365 E5 または Microsoft 365 E3 と ID および Threat Protection を併用していますか? [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md) を試してみてください。
 
 ## <a name="at-a-high-level"></a>高レベル
 

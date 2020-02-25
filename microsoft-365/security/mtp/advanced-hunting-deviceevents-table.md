@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 34401bde5af594899f88b93f8ca76695ce3c7132
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602764"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235046"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [高度な](advanced-hunting-overview.md)検索スキーマの`DeviceEvents`その他のデバイスイベントまたはテーブルには、さまざまなイベントの種類に関する情報が含まれています。これには、Windows Defender ウイルス対策や exploit protection などのセキュリティコントロールによってトリガーされるイベントが含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 

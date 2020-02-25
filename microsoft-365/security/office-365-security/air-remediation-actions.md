@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の修復アクションについて説明します。
-ms.openlocfilehash: e75ef1523247cbddcf6cb28d69a889db1de8e42f
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 433813ed1a801117a88da696392030db5091b54b
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228533"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261054"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 での自動調査の後の修復アクション
 
-## <a name="remediation-actions-overview"></a>修復アクションの概要
+## <a name="remediation-actions"></a>修復アクション
 
 Office 365 の[自動調査および応答機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)高度な脅威保護には、特定の修復アクションが含まれています。 自動化された調査を実行している場合や、完了した場合は、通常、セキュリティ運用チームによる承認を必要とする1つ以上の修復アクションが表示されます。 次の表に、Office 365 Advanced Threat Protection で現在利用可能な修復処置の概要を示します。 
 
@@ -52,6 +52,8 @@ Office 365 の[自動調査および応答機能](https://docs.microsoft.com/mic
  - **承認**は修復を開始することを許可します。
  - **却下**にはその他のアクションはありません
 
-## <a name="related-articles"></a>関連記事
+## <a name="next-steps"></a>次のステップ
 
-[Microsoft の脅威保護の自動化された調査と対応について説明します。](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [侵害されたユーザーセキュリティのプレイブックについて](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly)
+
+- [ATP レポートを表示する](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)

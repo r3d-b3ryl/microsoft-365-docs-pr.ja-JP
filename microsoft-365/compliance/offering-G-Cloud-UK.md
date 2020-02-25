@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602354"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236887"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-クラウド (G-クラウド)
 
@@ -49,8 +49,8 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - Intune
 - Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Office 365: Exchange Online、SharePoint Online、Skype for Business Online
-- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -64,17 +64,17 @@ Microsoft cloud services が G-Cloud agreement に準拠していることを確
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
-- [Dynamics 365 UK G クラウドリスク環境](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Dynamics 365 UK G クラウドリスク環境](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### <a name="intune"></a>Intune
 
-- [Intune UK G クラウドリスク環境](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [Intune UK G クラウドリスク環境](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [Intune UK G クラウドの残留リスク](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Azure UK G クラウドセキュリティ評価の概要](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 UK G クラウドリスク環境](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Office 365 UK G クラウドリスク環境](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## <a name="accelerate-your-deployment-of-uk-g-cloud-solutions-on-azure"></a>Azure での英国 G-クラウドソリューションの展開を促進する
 
@@ -114,8 +114,8 @@ UK データセンターに加えて、Microsoft クラウドサービスには�
 - [G-クラウドセキュリティの原則](https://aka.ms/UK-G-Cloud)
 - [デジタルマーケットプレース](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
+## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
 
 このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

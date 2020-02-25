@@ -2,27 +2,32 @@
   href: index.md
   expanded: true
   items:
-    - name: 製品とサービス
+    - name: サブスクリプションを管理する
       items:
         - name: サードパーティ製アプリを管理する
           href: manage-saas-apps.md
-        - name: ライセンスを購入する
-          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: ライセンスを割り当てる
-          href: /office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: ライセンスの割り当てを解除する
-          href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: サブスクリプションからライセンスを削除する
-          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: サブスクリプションのアップグレード
-          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
+        - name: セルフサービス購入を管理する (ユーザー)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
+        - name: セルフサービス購入を管理する (管理者)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
+    - name: ライセンスの管理
+      items:
+        - name: ライセンスを購入する
+          href: /microsoft-365/commerce/licenses/buy-licenses
+        - name: ライセンスを割り当てる
+          href: /microsoft-365/admin/manage/assign-licenses-to-users
+        - name: ライセンスの割り当てを解除する
+          href: /microsoft-365/admin/manage/remove-licenses-from-users
+        - name: サブスクリプションからライセンスを削除する
+          href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
     - name: 請求書と支払い
-      expanded: true
       items:
         - name: 請求書を把握する
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
         - name: 支払い方法を管理する
-          href: /office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
         - name: 課金プロファイルを管理する
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: 支払いサービスディレクティブ2と強力な顧客認証
