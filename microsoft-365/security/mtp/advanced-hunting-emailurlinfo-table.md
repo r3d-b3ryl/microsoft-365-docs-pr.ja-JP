@@ -17,35 +17,35 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2a3a635b7fd189d380b4323fcf2dc09447e12efe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7f5912306700efa0db704fe8d0c0db006105fda6
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087946"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234766"
 ---
-# <a name="emailurlinfo"></a><span data-ttu-id="4a3fa-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="4a3fa-104">EmailUrlInfo</span></span>
+# <a name="emailurlinfo"></a><span data-ttu-id="7eb69-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="7eb69-104">EmailUrlInfo</span></span>
 
-<span data-ttu-id="4a3fa-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="4a3fa-105">**Applies to:**</span></span>
-- <span data-ttu-id="4a3fa-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="4a3fa-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="7eb69-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="7eb69-105">**Applies to:**</span></span>
+- <span data-ttu-id="7eb69-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="7eb69-106">Microsoft Threat Protection</span></span>
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-<span data-ttu-id="4a3fa-107">[高度な捜索](advanced-hunting-overview.md)スキーマの `EmailUrlInfo` テーブルには、Office 365 ATP によって処理されるメールおよび添付ファイルの URL に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="4a3fa-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="4a3fa-108">このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。</span><span class="sxs-lookup"><span data-stu-id="4a3fa-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="4a3fa-109">高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4a3fa-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="7eb69-107">[高度な捜索](advanced-hunting-overview.md)スキーマの `EmailUrlInfo` テーブルには、Office 365 ATP によって処理されるメールおよび添付ファイルの URL に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7eb69-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="7eb69-108">このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。</span><span class="sxs-lookup"><span data-stu-id="7eb69-108">Use this reference to construct queries that return information from this table.</span></span>
 
-| <span data-ttu-id="4a3fa-110">列名</span><span class="sxs-lookup"><span data-stu-id="4a3fa-110">Column name</span></span> | <span data-ttu-id="4a3fa-111">データ型</span><span class="sxs-lookup"><span data-stu-id="4a3fa-111">Data type</span></span> | <span data-ttu-id="4a3fa-112">説明</span><span class="sxs-lookup"><span data-stu-id="4a3fa-112">Description</span></span> |
+<span data-ttu-id="7eb69-109">高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7eb69-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+
+| <span data-ttu-id="7eb69-110">列名</span><span class="sxs-lookup"><span data-stu-id="7eb69-110">Column name</span></span> | <span data-ttu-id="7eb69-111">データ型</span><span class="sxs-lookup"><span data-stu-id="7eb69-111">Data type</span></span> | <span data-ttu-id="7eb69-112">説明</span><span class="sxs-lookup"><span data-stu-id="7eb69-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="4a3fa-113">日付型</span><span class="sxs-lookup"><span data-stu-id="4a3fa-113">datetime</span></span> | <span data-ttu-id="4a3fa-114">イベントが記録された日付と時刻</span><span class="sxs-lookup"><span data-stu-id="4a3fa-114">Date and time when the event was recorded</span></span> |
-| `UrlId` | <span data-ttu-id="4a3fa-115">文字列型</span><span class="sxs-lookup"><span data-stu-id="4a3fa-115">string</span></span> | <span data-ttu-id="4a3fa-116">メールの件名、本文、または添付ファイル内の URL の一意の識別子</span><span class="sxs-lookup"><span data-stu-id="4a3fa-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="4a3fa-117">文字列型</span><span class="sxs-lookup"><span data-stu-id="4a3fa-117">string</span></span> | <span data-ttu-id="4a3fa-118">Office 365 により生成されたメールの一意の識別子</span><span class="sxs-lookup"><span data-stu-id="4a3fa-118">Unique identifier for the email, generated by Office 365</span></span> |
-| `Url` | <span data-ttu-id="4a3fa-119">文字列型</span><span class="sxs-lookup"><span data-stu-id="4a3fa-119">string</span></span> | <span data-ttu-id="4a3fa-120">メールの件名、本文、または添付ファイル内の完全な URL</span><span class="sxs-lookup"><span data-stu-id="4a3fa-120">Full URL in the email subject, body, or attachment</span></span> |
+| `Timestamp` | <span data-ttu-id="7eb69-113">日付型</span><span class="sxs-lookup"><span data-stu-id="7eb69-113">datetime</span></span> | <span data-ttu-id="7eb69-114">イベントが記録された日付と時刻</span><span class="sxs-lookup"><span data-stu-id="7eb69-114">Date and time when the event was recorded</span></span> |
+| `UrlId` | <span data-ttu-id="7eb69-115">文字列型</span><span class="sxs-lookup"><span data-stu-id="7eb69-115">string</span></span> | <span data-ttu-id="7eb69-116">メールの件名、本文、または添付ファイル内の URL の一意の識別子</span><span class="sxs-lookup"><span data-stu-id="7eb69-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="7eb69-117">文字列型</span><span class="sxs-lookup"><span data-stu-id="7eb69-117">string</span></span> | <span data-ttu-id="7eb69-118">Office 365 により生成されたメールの一意の識別子</span><span class="sxs-lookup"><span data-stu-id="7eb69-118">Unique identifier for the email, generated by Office 365</span></span> |
+| `Url` | <span data-ttu-id="7eb69-119">文字列型</span><span class="sxs-lookup"><span data-stu-id="7eb69-119">string</span></span> | <span data-ttu-id="7eb69-120">メールの件名、本文、または添付ファイル内の完全な URL</span><span class="sxs-lookup"><span data-stu-id="7eb69-120">Full URL in the email subject, body, or attachment</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="4a3fa-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="4a3fa-121">Related topics</span></span>
-- [<span data-ttu-id="4a3fa-122">積極的に脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="4a3fa-122">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="4a3fa-123">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="4a3fa-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="4a3fa-124">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="4a3fa-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="4a3fa-125">デバイスとメール全体で脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="4a3fa-125">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="4a3fa-126">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="4a3fa-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="4a3fa-127">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="4a3fa-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="7eb69-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="7eb69-121">Related topics</span></span>
+- [<span data-ttu-id="7eb69-122">積極的に脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="7eb69-122">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="7eb69-123">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="7eb69-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="7eb69-124">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="7eb69-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="7eb69-125">デバイスとメール全体で脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="7eb69-125">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="7eb69-126">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="7eb69-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="7eb69-127">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="7eb69-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
