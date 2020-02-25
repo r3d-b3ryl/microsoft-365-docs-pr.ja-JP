@@ -19,73 +19,73 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ef10eede38128bbf9b23537d860113b71f603089
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087303"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235126"
 ---
-# <a name="prioritize-incidents-in-microsoft-threat-protection"></a><span data-ttu-id="328d9-104">Microsoft Threat Protection のインシデントに優先順位を付ける</span><span class="sxs-lookup"><span data-stu-id="328d9-104">Prioritize incidents in Microsoft Threat Protection</span></span>
+# <a name="prioritize-incidents-in-microsoft-threat-protection"></a><span data-ttu-id="a2ace-104">Microsoft Threat Protection のインシデントに優先順位を付ける</span><span class="sxs-lookup"><span data-stu-id="a2ace-104">Prioritize incidents in Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="328d9-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="328d9-105">**Applies to:**</span></span>
-- <span data-ttu-id="328d9-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="328d9-106">Microsoft Threat Protection</span></span>
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-<span data-ttu-id="328d9-107">Microsoft Threat Protection は、相関分析を適用し、さまざまな製品からのすべての関連する通知と調査を 1 つのインシデントに集約します。</span><span class="sxs-lookup"><span data-stu-id="328d9-107">Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations from different products into one incident.</span></span> <span data-ttu-id="328d9-108">また、Microsoft Threat Protection は、Microsoft Threat Protection が資産全体および製品スイート全体にわたってエンドツーエンドの可視性を備えているため、悪意があると識別できるアクティビティにのみ一意の警告をトリガーします。</span><span class="sxs-lookup"><span data-stu-id="328d9-108">Microsoft Threat Protection also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft Threat Protection has across the entire estate and suite of products.</span></span> <span data-ttu-id="328d9-109">そうすることで、Microsoft Threat Protection はより広範な攻撃事例を説明し、セキュリティ運用アナリストが組織全体の複雑な脅威を理解して対処できるようにします。</span><span class="sxs-lookup"><span data-stu-id="328d9-109">By doing so, Microsoft Threat Protection narrates the broader attack story, allowing a security operations analyst to understand and deal with complex threats across the organization.</span></span>
+<span data-ttu-id="a2ace-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="a2ace-105">**Applies to:**</span></span>
+- <span data-ttu-id="a2ace-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="a2ace-106">Microsoft Threat Protection</span></span>
 
 
-<span data-ttu-id="328d9-110">**インシデント キュー**には、デバイス、ユーザー、メールボックス全体からフラグが付けられたインシデントのコレクションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="328d9-110">The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes.</span></span> <span data-ttu-id="328d9-111">これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。</span><span class="sxs-lookup"><span data-stu-id="328d9-111">It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.</span></span>
+
+<span data-ttu-id="a2ace-107">Microsoft Threat Protection は、相関分析を適用し、さまざまな製品からのすべての関連する通知と調査を 1 つのインシデントに集約します。</span><span class="sxs-lookup"><span data-stu-id="a2ace-107">Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations from different products into one incident.</span></span> <span data-ttu-id="a2ace-108">また、Microsoft Threat Protection は、Microsoft Threat Protection が資産全体および製品スイート全体にわたってエンドツーエンドの可視性を備えているため、悪意があると識別できるアクティビティにのみ一意の警告をトリガーします。</span><span class="sxs-lookup"><span data-stu-id="a2ace-108">Microsoft Threat Protection also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft Threat Protection has across the entire estate and suite of products.</span></span> <span data-ttu-id="a2ace-109">そうすることで、Microsoft Threat Protection はより広範な攻撃事例を説明し、セキュリティ運用アナリストが組織全体の複雑な脅威を理解して対処できるようにします。</span><span class="sxs-lookup"><span data-stu-id="a2ace-109">By doing so, Microsoft Threat Protection narrates the broader attack story, allowing a security operations analyst to understand and deal with complex threats across the organization.</span></span>
+
+
+<span data-ttu-id="a2ace-110">**インシデント キュー**には、デバイス、ユーザー、メールボックス全体からフラグが付けられたインシデントのコレクションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-110">The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes.</span></span> <span data-ttu-id="a2ace-111">これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-111">It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.</span></span>
 
 
 ![インシデント キューの画像](../../media/incidents-queue.png) 
 
-<span data-ttu-id="328d9-113">既定では、Microsoft 365 セキュリティ センターのキューには過去 30 日間に発生したインシデントが表示され、最新のインシデントがリストの一番上に表示されるため、最新のインシデントを最初に確認できます。</span><span class="sxs-lookup"><span data-stu-id="328d9-113">By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.</span></span>
+<span data-ttu-id="a2ace-113">既定では、Microsoft 365 セキュリティ センターのキューには過去 30 日間に発生したインシデントが表示され、最新のインシデントがリストの一番上に表示されるため、最新のインシデントを最初に確認できます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-113">By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.</span></span>
 
-<span data-ttu-id="328d9-114">インシデント キューには、カスタマイズ可能な列が表示され、インシデントまたは含まれているエンティティのさまざまな特性を確認できます。これにより、処理するインシデントの優先順位付けに関する情報に基づいて意思決定ができます。</span><span class="sxs-lookup"><span data-stu-id="328d9-114">The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities, helping you make an informed decision regarding prioritization of incidents to handle.</span></span> 
+<span data-ttu-id="a2ace-114">インシデント キューには、カスタマイズ可能な列が表示され、インシデントまたは含まれているエンティティのさまざまな特性を確認できます。これにより、処理するインシデントの優先順位付けに関する情報に基づいて意思決定ができます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-114">The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities, helping you make an informed decision regarding prioritization of incidents to handle.</span></span> 
 
-<span data-ttu-id="328d9-115">また、インシデント キューには複数のフィルター処理オプションも表示されます。このオプションを適用すると、環境内の既存のすべてのインシデントを幅広く一括処理したり、特定のシナリオまたは脅威に焦点を当てたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="328d9-115">The incident queue also exposes multiple filtering options, that when applied, enable you to choose to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat.</span></span> <span data-ttu-id="328d9-116">インシデント キューにフィルターを適用すると、すぐに注意が必要なインシデントを特定できます。</span><span class="sxs-lookup"><span data-stu-id="328d9-116">Applying filters on the incident queue can help determine which incident requires immediate attention.</span></span> 
+<span data-ttu-id="a2ace-115">また、インシデント キューには複数のフィルター処理オプションも表示されます。このオプションを適用すると、環境内の既存のすべてのインシデントを幅広く一括処理したり、特定のシナリオまたは脅威に焦点を当てたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-115">The incident queue also exposes multiple filtering options, that when applied, enable you to choose to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat.</span></span> <span data-ttu-id="a2ace-116">インシデント キューにフィルターを適用すると、すぐに注意が必要なインシデントを特定できます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-116">Applying filters on the incident queue can help determine which incident requires immediate attention.</span></span> 
 
-## <a name="available-filters"></a><span data-ttu-id="328d9-117">利用可能なフィルター</span><span class="sxs-lookup"><span data-stu-id="328d9-117">Available filters</span></span>
+## <a name="available-filters"></a><span data-ttu-id="a2ace-117">利用可能なフィルター</span><span class="sxs-lookup"><span data-stu-id="a2ace-117">Available filters</span></span>
 
-### <a name="status"></a><span data-ttu-id="328d9-118">状態</span><span class="sxs-lookup"><span data-stu-id="328d9-118">Status</span></span>
-<span data-ttu-id="328d9-119">状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。</span><span class="sxs-lookup"><span data-stu-id="328d9-119">You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.</span></span>
+### <a name="status"></a><span data-ttu-id="a2ace-118">状態</span><span class="sxs-lookup"><span data-stu-id="a2ace-118">Status</span></span>
+<span data-ttu-id="a2ace-119">状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-119">You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.</span></span>
 
-### <a name="severity"></a><span data-ttu-id="328d9-120">重要度</span><span class="sxs-lookup"><span data-stu-id="328d9-120">Severity</span></span>
-<span data-ttu-id="328d9-121">インシデントの重大度は、資産に与える影響を示しています。</span><span class="sxs-lookup"><span data-stu-id="328d9-121">The severity of an incident is indicative of the impact it can have in your assets.</span></span> <span data-ttu-id="328d9-122">重大度が高いほど影響が大きく、通常は最も迅速な対応が必要になります。</span><span class="sxs-lookup"><span data-stu-id="328d9-122">The higher the severity the bigger the impact and typically requires the most immediate attention.</span></span> 
+### <a name="severity"></a><span data-ttu-id="a2ace-120">重要度</span><span class="sxs-lookup"><span data-stu-id="a2ace-120">Severity</span></span>
+<span data-ttu-id="a2ace-121">インシデントの重大度は、資産に与える影響を示しています。</span><span class="sxs-lookup"><span data-stu-id="a2ace-121">The severity of an incident is indicative of the impact it can have in your assets.</span></span> <span data-ttu-id="a2ace-122">重大度が高いほど影響が大きく、通常は最も迅速な対応が必要になります。</span><span class="sxs-lookup"><span data-stu-id="a2ace-122">The higher the severity the bigger the impact and typically requires the most immediate attention.</span></span> 
 
-### <a name="assigned-to-owner"></a><span data-ttu-id="328d9-123">割り当て先 (所有者)</span><span class="sxs-lookup"><span data-stu-id="328d9-123">Assigned to (owner)</span></span>
-<span data-ttu-id="328d9-124">ユーザー割り当てられているものまたは自分に割り当てられているものを選択することで、リストをフィルター処理することを選択できます。</span><span class="sxs-lookup"><span data-stu-id="328d9-124">You can choose to filter the list by selecting assigned to anyone or ones that are assigned to you.</span></span>
+### <a name="assigned-to-owner"></a><span data-ttu-id="a2ace-123">割り当て先 (所有者)</span><span class="sxs-lookup"><span data-stu-id="a2ace-123">Assigned to (owner)</span></span>
+<span data-ttu-id="a2ace-124">ユーザー割り当てられているものまたは自分に割り当てられているものを選択することで、リストをフィルター処理することを選択できます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-124">You can choose to filter the list by selecting assigned to anyone or ones that are assigned to you.</span></span>
 
-### <a name="multiple-alerts"></a><span data-ttu-id="328d9-125">複数のアラート</span><span class="sxs-lookup"><span data-stu-id="328d9-125">Multiple alerts</span></span> 
-<span data-ttu-id="328d9-126">複数のアラートを含むインシデントのみを表示するには、フィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="328d9-126">Filter to see only incidents containing more than one alert.</span></span> <span data-ttu-id="328d9-127">これは、攻撃がキル チェーンでより複雑または進行していることを示している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="328d9-127">This could be an indication for an attack that is more complex or progressed in the kill chain.</span></span> 
+### <a name="multiple-alerts"></a><span data-ttu-id="a2ace-125">複数のアラート</span><span class="sxs-lookup"><span data-stu-id="a2ace-125">Multiple alerts</span></span> 
+<span data-ttu-id="a2ace-126">複数のアラートを含むインシデントのみを表示するには、フィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="a2ace-126">Filter to see only incidents containing more than one alert.</span></span> <span data-ttu-id="a2ace-127">これは、攻撃がキル チェーンでより複雑または進行していることを示している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a2ace-127">This could be an indication for an attack that is more complex or progressed in the kill chain.</span></span> 
 
 
-### <a name="multiple-service-sources"></a><span data-ttu-id="328d9-128">複数のサービス ソース</span><span class="sxs-lookup"><span data-stu-id="328d9-128">Multiple service sources</span></span> 
-<span data-ttu-id="328d9-129">さまざまなソース (Microsoft Defender ATP、Microsoft Cloud App Security、Azure ATP、Office 365 ATP) からのアラートを含むインシデントのみを表示するようにフィルター処理する</span><span class="sxs-lookup"><span data-stu-id="328d9-129">Filter to only see incidents that contain alerts from different sources (Microsoft Defender ATP, Microsoft Cloud App Security, Azure ATP, Office 365 ATP)</span></span>
-### <a name="service-sources"></a><span data-ttu-id="328d9-130">サービス ソース</span><span class="sxs-lookup"><span data-stu-id="328d9-130">Service sources</span></span>
-<span data-ttu-id="328d9-131">特定のソースを選択すると、選択したソースから 1 つ以上のアラートを含むインシデントに焦点を当てることができます。</span><span class="sxs-lookup"><span data-stu-id="328d9-131">By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source.</span></span> 
+### <a name="multiple-service-sources"></a><span data-ttu-id="a2ace-128">複数のサービス ソース</span><span class="sxs-lookup"><span data-stu-id="a2ace-128">Multiple service sources</span></span> 
+<span data-ttu-id="a2ace-129">さまざまなソース (Microsoft Defender ATP、Microsoft Cloud App Security、Azure ATP、Office 365 ATP) からのアラートを含むインシデントのみを表示するようにフィルター処理する</span><span class="sxs-lookup"><span data-stu-id="a2ace-129">Filter to only see incidents that contain alerts from different sources (Microsoft Defender ATP, Microsoft Cloud App Security, Azure ATP, Office 365 ATP)</span></span>
+### <a name="service-sources"></a><span data-ttu-id="a2ace-130">サービス ソース</span><span class="sxs-lookup"><span data-stu-id="a2ace-130">Service sources</span></span>
+<span data-ttu-id="a2ace-131">特定のソースを選択すると、選択したソースから 1 つ以上のアラートを含むインシデントに焦点を当てることができます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-131">By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source.</span></span> 
 
-### <a name="multiple-categories"></a><span data-ttu-id="328d9-132">複数のカテゴリ</span><span class="sxs-lookup"><span data-stu-id="328d9-132">Multiple categories</span></span> 
-<span data-ttu-id="328d9-133">キル チェーンの複数のカテゴリにマッピングされたインシデントのみを表示できます。この場合、より多くの損害を引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="328d9-133">You can choose to see only incidents that have mapped to multiple categories of the kill chain and can potentially cause more damage.</span></span> 
+### <a name="multiple-categories"></a><span data-ttu-id="a2ace-132">複数のカテゴリ</span><span class="sxs-lookup"><span data-stu-id="a2ace-132">Multiple categories</span></span> 
+<span data-ttu-id="a2ace-133">キル チェーンの複数のカテゴリにマッピングされたインシデントのみを表示できます。この場合、より多くの損害を引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a2ace-133">You can choose to see only incidents that have mapped to multiple categories of the kill chain and can potentially cause more damage.</span></span> 
 
-### <a name="categories"></a><span data-ttu-id="328d9-134">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="328d9-134">Categories</span></span>
-<span data-ttu-id="328d9-135">キル チェーンの特定の手順に焦点を当てる特定のカテゴリを選択する</span><span class="sxs-lookup"><span data-stu-id="328d9-135">Choose specific categories to focus on a specific step in the kill chain</span></span>
+### <a name="categories"></a><span data-ttu-id="a2ace-134">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="a2ace-134">Categories</span></span>
+<span data-ttu-id="a2ace-135">キル チェーンの特定の手順に焦点を当てる特定のカテゴリを選択する</span><span class="sxs-lookup"><span data-stu-id="a2ace-135">Choose specific categories to focus on a specific step in the kill chain</span></span>
 
-### <a name="data-sensitivity"></a><span data-ttu-id="328d9-136">データの機密性</span><span class="sxs-lookup"><span data-stu-id="328d9-136">Data sensitivity</span></span>
-<span data-ttu-id="328d9-137">一部の攻撃では、機密データや貴重なデータを排除することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="328d9-137">Some attacks focus on targeting to exfiltrate sensitive or valuable data.</span></span> <span data-ttu-id="328d9-138">機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。</span><span class="sxs-lookup"><span data-stu-id="328d9-138">By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.</span></span>
+### <a name="data-sensitivity"></a><span data-ttu-id="a2ace-136">データの機密性</span><span class="sxs-lookup"><span data-stu-id="a2ace-136">Data sensitivity</span></span>
+<span data-ttu-id="a2ace-137">一部の攻撃では、機密データや貴重なデータを排除することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="a2ace-137">Some attacks focus on targeting to exfiltrate sensitive or valuable data.</span></span> <span data-ttu-id="a2ace-138">機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-138">By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="328d9-139">Microsoft Information Protection が有効になっている場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="328d9-139">Only applicable if Microsoft Information Protection is turned on.</span></span>
+><span data-ttu-id="a2ace-139">Microsoft Information Protection が有効になっている場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-139">Only applicable if Microsoft Information Protection is turned on.</span></span>
 
 
-## <a name="next-steps"></a><span data-ttu-id="328d9-140">次の手順</span><span class="sxs-lookup"><span data-stu-id="328d9-140">Next steps</span></span>
-<span data-ttu-id="328d9-141">どのインシデントが最も重要かを判断したら、インシデントについてさらに調査を進めます。</span><span class="sxs-lookup"><span data-stu-id="328d9-141">After you've determined which incident requires the highest priority, you can proceed to do further investigative work on an incident.</span></span>
-- [<span data-ttu-id="328d9-142">インシデントの調査</span><span class="sxs-lookup"><span data-stu-id="328d9-142">Investigate incidents</span></span>](investigate-incidents.md)
+## <a name="next-steps"></a><span data-ttu-id="a2ace-140">次の手順</span><span class="sxs-lookup"><span data-stu-id="a2ace-140">Next steps</span></span>
+<span data-ttu-id="a2ace-141">どのインシデントが最も重要かを判断したら、インシデントについてさらに調査を進めます。</span><span class="sxs-lookup"><span data-stu-id="a2ace-141">After you've determined which incident requires the highest priority, you can proceed to do further investigative work on an incident.</span></span>
+- [<span data-ttu-id="a2ace-142">インシデントの調査</span><span class="sxs-lookup"><span data-stu-id="a2ace-142">Investigate incidents</span></span>](investigate-incidents.md)
 
 
-## <a name="related-topics"></a><span data-ttu-id="328d9-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="328d9-143">Related topics</span></span>
-- [<span data-ttu-id="328d9-144">インシデントの概要</span><span class="sxs-lookup"><span data-stu-id="328d9-144">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="328d9-145">インシデントの調査</span><span class="sxs-lookup"><span data-stu-id="328d9-145">Investigate incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="328d9-146">インシデントの管理</span><span class="sxs-lookup"><span data-stu-id="328d9-146">Manage incidents</span></span>](manage-incidents.md)
+## <a name="related-topics"></a><span data-ttu-id="a2ace-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="a2ace-143">Related topics</span></span>
+- [<span data-ttu-id="a2ace-144">インシデントの概要</span><span class="sxs-lookup"><span data-stu-id="a2ace-144">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="a2ace-145">インシデントの調査</span><span class="sxs-lookup"><span data-stu-id="a2ace-145">Investigate incidents</span></span>](investigate-incidents.md)
+- [<span data-ttu-id="a2ace-146">インシデントの管理</span><span class="sxs-lookup"><span data-stu-id="a2ace-146">Manage incidents</span></span>](manage-incidents.md)
