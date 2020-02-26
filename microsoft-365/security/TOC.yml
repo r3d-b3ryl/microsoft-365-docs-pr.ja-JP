@@ -1,35 +1,35 @@
 - name: Microsoft 365 セキュリティ
   href: index.yml
   items:
-    - name: 概要
+    - name: 使用を開始する
       items:
         - name: BDM のための Microsoft 365 セキュリティ
           href: Microsoft-365-security-for-bdm.md
         - name: 最高情報セキュリティ責任者 (CISO) のワークショップ トレーニング
           href: ./office-365-security/ciso-workshop.md
           items:
-            - name: 'モジュール 1: Microsoft のサイバー セキュリティ ブリーフィング'
+            - name: モジュール 1 - Microsoft のサイバーセキュリティ ブリーフィング
               href: ./office-365-security/ciso-workshop-module-1.md
-            - name: 'モジュール 2: セキュリティ管理'
+            - name: モジュール 2 - セキュリティ管理
               href: ./office-365-security/ciso-workshop-module-2.md
-            - name: 'モジュール 3: ID とゼロ トラスト ユーザー アクセス'
+            - name: モジュール 3 - ID とゼロ トラスト ユーザー アクセス
               href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 'モジュール 4 a: 脅威保護戦略、第 1 部'
+            - name: モジュール 4a - 脅威保護戦略、第 1 部
               href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 'モジュール 4 b: 脅威保護戦略、第 2 部'
+            - name: モジュール 4b - 脅威保護戦略、第 2 部
               href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: 'モジュール 5: 情報保護'
+            - name: モジュール 5 - 情報保護
               href: ./office-365-security/ciso-workshop-module-5.md
     - name: ID とデバイスのアクセス構成
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
-        - name: 必須の作業
+        - name: 事前に必要な作業
           href: ../enterprise/identity-access-prerequisites.md
         - name: 共通 ID とデバイスのアクセス ポリシー
           href: ../enterprise/identity-access-policies.md
         - name: ゲスト ユーザーと外部ユーザーのポリシー
           href: ../enterprise/identity-access-policies-guest-access.md
-        - name: おすすめのチーム アクセス ポリシー
+        - name: 推奨されるチーム アクセス ポリシー
           href: ../enterprise/teams-access-policies.md
         - name: 推奨される Exchange Online のアクセス ポリシー
           href: ../enterprise/secure-email-recommended-policies.md
@@ -41,15 +41,15 @@
           items:
             - name: Microsoft Threat Protection とは
               href: mtp/microsoft-threat-protection.md
-            - name: Microsoft の脅威保護の新機能
+            - name: Microsoft Threat Protection の新機能
               href: mtp/whats-new.md
             - name: Microsoft 365 セキュリティ センター
               href: mtp/overview-security-center.md
             - name: 前提条件
               href: mtp/prerequisites.md
-            - name: データのセキュリティとプライバシー
+            - name: データ セキュリティとプライバシー
               href: mtp/data-privacy.md
-            - name: 問題のトラブルシューティングを行う
+            - name: 問題のトラブルシューティング
               href: ./mtp/troubleshoot.md
         - name: 使い方ガイド
           items:
@@ -59,37 +59,37 @@
               items:
                 - name: 概要
                   href: mtp/incidents-overview.md
-                - name: インシデントの優先度設定
+                - name: インシデントの優先度を設定する
                   href: mtp/incident-queue.md
-                - name: インシデントの調査
+                - name: インシデントを調査する
                   href: mtp/investigate-incidents.md
-                - name: インシデントの管理
+                - name: インシデントを管理する
                   href: mtp/manage-incidents.md
             - name: 自動調査および対応
               items:
-                - name: エアの概要
+                - name: AIR の概要
                   href: mtp/mtp-autoir.md
                 - name: 修復アクション
                   href: mtp/mtp-remediation-actions.md
-                - name: アクションセンター
+                - name: アクション センター
                   href: mtp/mtp-action-center.md
                 - name: 自動調査の詳細と結果を表示する
                   href: mtp/mtp-autoir-results.md
                 - name: 保留中のアクションを承認または拒否する
                   href: mtp/mtp-autoir-actions.md
-                - name: 誤検知/ネガを報告する
+                - name: 誤検知/検出漏れを報告する
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
-            - name: 高度な捜索
+            - name: 高度な検出
               items:
                 - name: Microsoft 365 での検出
                   href: mtp/hunting.md
-                - name: 高度な検索の概要
+                - name: 高度な検出の概要
                   href: mtp/advanced-hunting-overview.md
                 - name: クエリ言語の説明
                   href: mtp/advanced-hunting-query-language.md
                 - name: 共有クエリを使用する
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: デバイスとメールを探します。
+                - name: デバイスとメールでの検出
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: スキーマを理解する
                   href: mtp/advanced-hunting-schema-tables.md
@@ -100,7 +100,7 @@
                       href: mtp/advanced-hunting-devicenetworkinfo-table.md
                     - name: DeviceProcessEvents
                       href: mtp/advanced-hunting-deviceprocessevents-table.md
-                    - name: DeviceNetworkEvents 孔
+                    - name: DeviceNetworkEvents
                       href: mtp/advanced-hunting-devicenetworkevents-table.md
                     - name: DeviceFileEvents
                       href: mtp/advanced-hunting-devicefileevents-table.md
@@ -130,13 +130,13 @@
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
                 - name: クエリのベスト プラクティスを適用する
                   href: mtp/advanced-hunting-best-practices.md
-            - name: セキュリティ スコア
+            - name: セキュア スコア
               items:
-                - name: セキュリティ スコア
+                - name: セキュア スコア
                   href: mtp/microsoft-secure-score.md
                 - name: セキュア スコア (プレビュー)
                   href: mtp/microsoft-secure-score-preview.md
-                - name: 予定
+                - name: 今後の予定
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: レポート
               items:
@@ -150,17 +150,17 @@
                   href: mtp/monitor-devices.md
                 - name: アプリの監視とレポート
                   href: mtp/monitor-apps.md
-            - name: アクセス許可 & の設定
+            - name: アクセス許可と設定
               items:
                 - name: アクセスを管理する
                   href: mtp/mtp-permissions.md
-                - name: タイムゾーンの設定
+                - name: タイム ゾーンを設定する
                   href: mtp/mtp-time-zone.md
             - name: ServiceNow を介してチケットを管理する
               href: ./mtp/tickets.md
     - name: Office 365 セキュリティ
       items:
-        - name: はじめに
+        - name: 概要
           items:
             - name: Office 365 のセキュリティ ロードマップ
               href: ./office-365-security/security-roadmap.md
@@ -181,13 +181,13 @@
                 - name: マルウェア対策保護
                   href: ./office-365-security/anti-malware-protection.md
                   items:
-                    - name: マルウェア対策保護のよく寄せられる質問
+                    - name: マルウェア対策保護に関するよく寄せられる質問
                       href: ./office-365-security/anti-malware-protection-faq-eop.md
                     - name: マルウェア対策ポリシーを構成する
                       href: ./office-365-security/configure-anti-malware-policies.md
                     - name: マルウェアおよびマルウェアでないファイルを分析のために Microsoft に提出する
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-                    - name: ランサムウェア攻撃からの回復
+                    - name: ランサムウェア攻撃から回復する
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: SharePoint Online のウイルス検出
                       href: ./office-365-security/virus-detection-in-spo.md
@@ -195,7 +195,7 @@
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
                 - name: 送信メッセージにおける危険度の高い配信プール
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: スパム対策保護 FAQ
+                - name: スパム対策保護に関するよく寄せられる質問
                   href: ./office-365-security/anti-spam-protection-faq.md
                 - name: スパム フィルターのルールとスパム フィルター ポリシーで無効な文字の使用を避ける
                   href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
@@ -229,9 +229,9 @@
                   href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
                 - name: スパム対策ポリシーを設定する
                   href: ./office-365-security/configure-the-anti-spam-policies.md
-                - name: Office 365 でブロックする差出人のリストを作成する
+                - name: Create-block-sender-lists-in-office-365
                   href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                - name: Office 365 で安全な差出人のリストを作成する
+                - name: Create-safe-sender-lists-in-office-365
                   href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
                 - name: スパム フィルター ポリシーの設定
                   href: ./office-365-security/configure-your-spam-filter-policies.md
@@ -255,7 +255,7 @@
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
                 - name: スパム対策メッセージ ヘッダー
                   href: ./office-365-security/anti-spam-message-headers.md
-            - name: Office 365 のフィッシング対策保護
+            - name: Office 365 でのフィッシング対策保護
               href: ./office-365-security/anti-phishing-protection.md
               items:
                 - name: フィッシング対策保護の調整
@@ -273,7 +273,7 @@
                   href: ./office-365-security/learn-about-spoof-intelligence.md
                 - name: スプーフィング インテリジェンス分析のチュートリアル
                   href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
-                - name: Outlook.com および Outlook on the web での不審なメッセージを特定する
+                - name: Outlook.com および Outlook on the web で不審なメッセージを特定する
                   href: ./office-365-security/unverified-sender-feature.md
             - name: EOP とは何ですか?
               href: ./office-365-security/what-is-eop.md
@@ -284,13 +284,13 @@
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: EOP でのエンドユーザー スパム通知の構成
                   href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Exchange Online エンドユーザースパム通知の構成
+                - name: Exchange Online エンドユーザー スパム通知の構成
                   href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Outlook on the web で迷惑メールとフィッシング詐欺を報告する
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Exchange Online Protection を使用して社内のメールボックスを保護する
                   href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: Microsoft Outlook 用迷惑メール報告アドインのインストール
+                - name: Microsoft Outlook 用迷惑メール報告アドインをインストールする
                   href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
                 - name: Outlook on the web で迷惑メール レポートを無効にする
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
@@ -366,23 +366,23 @@
                   items:
                     - name: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: キャンペーンビュー
+            - name: キャンペーン ビュー
               href: ./office-365-security/campaigns.md
-            - name: 脅威分析を使用した最新の攻撃について
+            - name: 脅威の分析によって最新の攻撃行動を理解する
               href: ./mtp/latest-attack-campaigns.md
             - name: 自動調査および対応
               items:
-                - name: エアの概要
+                - name: AIR の概要
                   href: ./office-365-security/office-365-air.md
                 - name: 自動調査の詳細と結果を表示する
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: 保留中のアクションを承認または拒否する
                   href: ./office-365-security/air-remediation-actions.md
-                - name: カスタムソリューションまたはサードパーティ製ソリューションを使用して AIR を統合する
+                - name: AIR をカスタム ソリューションまたはサードパーティのソリューションと統合する
                   href: ./office-365-security/air-custom-reporting.md
-            - name: 侵害されたユーザーアカウントを迅速に検出して解決する
+            - name: 侵害されたユーザー アカウントをすばやく検出して対処する
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: 悪意のある電子メールを調査および修復する
+            - name: 悪意のあるメールを調査して修復する
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: ATP レポートを表示して閲覧する
               href: ./office-365-security/view-reports-for-atp.md
@@ -394,20 +394,20 @@
               href: ./office-365-security/attack-simulator.md
             - name: Office 365 ATP の安全なドキュメント
               href: ./office-365-security/safe-docs.md
-            - name: 脅威エクスプローラー (およびリアルタイム検出)
+            - name: 脅威エクスプローラー (およびリアルタイムの検出)
               href: ./office-365-security/threat-explorer.md
               items:
                 - name: 脅威エクスプローラー ビュー
                   href: ./office-365-security/threat-explorer-views.md
-            - name: セキュリティを強化するための統合
+            - name: セキュリティを強化する統合
               items:
-                - name: Office 365 の ATP と Microsoft Defender ATP の統合
+                - name: Office 365 の ATP と Microsoft Defender ATP を統合する
                   href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
                 - name: SIEM と Office 365 ATP の統合
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: ATP のしくみ
               items:
-                - name: 自動化された調査と応答のしくみ
+                - name: 自動調査および対応のしくみ
                   href: ./office-365-security/automated-investigation-response-office.md
                 - name: ATP の安全なリンク機能のしくみ
                   href: ./office-365-security/how-atp-safe-links-works.md
@@ -442,7 +442,7 @@
               items:
                 - name: メール フローのマップ レポート
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: トップドメインのメール フローの状態洞察　
+                - name: トップ ドメインのメール フローの状態洞察
                   href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
                 - name: SMTP Auth クライアントのレポート
                   href: ./office-365-security/mfi-smtp-auth-clients-report.md
@@ -546,7 +546,7 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Office 365 でのメール フロー インテリジェンス
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: 検疫
+                - name: Quarantine
                   href: ./office-365-security/quarantine.md
                   items:
                     - name: 管理者として検疫済みメッセージを検索して解放する
@@ -584,7 +584,7 @@
                   href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
                 - name: S/MIME 用にユーザー証明書を Office 365 に同期する
                   href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
-                - name: S/MIME を検証するための仮想証明書コレクションを設定する
+                - name: S/MIME を検証するための仮想証明書コレクションをセットアップする
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 Enterprise
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'

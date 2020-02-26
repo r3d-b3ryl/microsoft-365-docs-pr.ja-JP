@@ -1,4 +1,4 @@
-- name: エンタープライズドキュメントとリソースの Microsoft 365
+- name: Microsoft 365 for enterprise のドキュメントとリソース
   href: index.yml
 - name: Microsoft 365 for enterprise の概要
   href: microsoft-365-overview.md
@@ -8,87 +8,87 @@
     - name: 基礎インフラストラクチャを展開する
       href: deploy-foundation-infrastructure.md
       items:
-        - name: フェーズ 1-ネットワーク
+        - name: フェーズ 1 - ネットワーク
           href: networking-infrastructure.md
           items:
-            - name: 手順 1-Microsoft のネットワークを準備する365
+            - name: 手順 1 - Microsoft 365 のネットワークを準備する
               href: networking-provide-bandwidth-cloud-services.md
-            - name: 手順 2-各 office のローカルインターネット接続を構成する
+            - name: 手順 2 - オフィスごとにローカルのインターネット接続を構成する
               href: networking-dns-resolution-same-location.md
-            - name: 手順 3-ネットワークヘアピンを回避する
+            - name: 手順 3 - ネットワーク ヘアピンを回避する
               href: networking-avoid-network-hairpins.md
-            - name: 手順 4-トラフィックバイパスを構成する
+            - name: 手順 4 - トラフィック バイパスを構成する
               href: networking-configure-proxies-firewalls.md
-            - name: 手順 5-クライアントと Office 365 サービスのパフォーマンスを最適化する
+            - name: 手順 5 - クライアントと Office 365 サービスのパフォーマンスを最適化する
               href: networking-optimize-tcp-performance.md
             - name: ネットワークの終了条件
               href: networking-exit-criteria.md
-        - name: フェーズ 2-Id
+        - name: フェーズ 2 - ID
           href: identity-infrastructure.md
           items:
-            - name: 手順 1-グローバル管理者アカウントを作成して保護する
+            - name: 手順 1 - グローバル管理者アカウントを作成して保護する
               href: identity-create-protect-global-admins.md
-            - name: 手順 2-パスワードをセキュリティで保護する
+            - name: 手順 2 - パスワードをセキュリティで保護する
               href: identity-secure-your-passwords.md
-            - name: 手順 3-ユーザーのサインインをセキュリティで保護して管理する
+            - name: 手順 3 - ユーザーのサインインをセキュリティで保護して管理する
               href: identity-secure-user-sign-ins.md
-            - name: 手順 4-ユーザーアカウントを追加する
+            - name: 手順 4 - ユーザ アカウントを追加する
               href: identity-add-user-accounts.md
-            - name: 手順 5-管理にグループを使用する
+            - name: 手順 5 - 管理にグループを使用する
               href: identity-use-group-management.md
-            - name: 手順 6-id ガバナンスを構成する
+            - name: 手順 6 - Identity Governance を構成する
               href: identity-configure-identity-governance.md
             - name: ID の終了条件
               href: identity-exit-criteria.md
-        - name: フェーズ 3-Windows 10 Enterprise
+        - name: フェーズ 3 - Windows 10 Enterprise
           href: windows10-infrastructure.md
           items:
-            - name: 手順 1-組織を準備する
+            - name: 手順 1 - 組織の準備をする
               href: windows10-prepare-your-org.md
-            - name: 手順 2-一括アップグレードとして展開する
+            - name: 手順 2 - インプレース アップグレードとして展開する
               href: windows10-deploy-inplaceupgrade.md
-            - name: 手順 3-新しいデバイスの展開
+            - name: 手順 3 - 新しいデバイス用に展開する
               href: windows10-deploy-autopilot.md
-            - name: ステップ 4-デバイスの正常性とコンプライアンスを監視する
+            - name: 手順 4 - デバイスの正常性とコンプライアンスを監視する
               href: windows10-enable-windows-analytics.md
-            - name: 手順 5-セキュリティ機能を展開する
+            - name: 手順 5 - セキュリティ機能を展開する
               href: windows10-enable-security-features.md
             - name: Windows 10 Enterprise の終了条件
               href: windows10-exit-criteria.md
-        - name: フェーズ 4-Office 365 ProPlus
+        - name: フェーズ 4 - Office 365 ProPlus
           href: office365proplus-infrastructure.md
           items:
             - name: Office 365 ProPlus の終了条件
               href: office365proplus-exit-criteria.md
-        - name: フェーズ 5-モバイルデバイス管理
+        - name: フェーズ 5 - モバイル デバイス管理
           href: mobility-infrastructure.md
           items:
             - name: モバイル デバイス管理の終了条件
               href: mobility-infrastructure-exit-criteria.md
-        - name: フェーズ 6-情報保護
+        - name: フェーズ 6 - 情報保護
           href: infoprotect-infrastructure.md
           items:
-            - name: 手順 1-セキュリティレベルと情報保護レベルを定義する
+            - name: 手順 1 - セキュリティおよび情報保護のレベルを定義する
               href: infoprotect-define-sec-infoprotect-levels.md
-            - name: 手順 2-環境の分類を構成する
+            - name: 手順 2 - 環境の分類を構成する
               href: infoprotect-configure-classification.md
-            - name: 手順 3-Microsoft 365 のセキュリティ強化を構成する
+            - name: 手順 3 - Microsoft 365 のセキュリティ強化を構成する
               href: infoprotect-configure-increased-security-office-365.md
-            - name: 手順 4-Windows 情報保護を構成する
+            - name: 手順 4 - Windows 情報保護を構成する
               href: infoprotect-deploy-windows-information-protection.md
-            - name: 手順 5-Office 365 データ損失防止を構成する
+            - name: 手順 5 - Office 365 データ損失防止を構成する
               href: infoprotect-data-loss-prevention.md
-            - name: 手順 6-電子メールの暗号化を構成する
+            - name: 手順 6 - 電子メールの暗号化を構成する
               href: infoprotect-email-encryption.md
-            - name: 手順 7-Office 365 の特権アクセス管理を構成する
+            - name: 手順 7 - Office 365 の特権アクセス管理を構成する
               href: infoprotect-configure-privileged-access-management.md
             - name: 情報保護の終了条件
               href: infoprotect-exit-criteria.md
         - name: 展開戦略
           href: deployment-strategies-microsoft-365-enterprise.md
-        - name: 既存のインフラストラクチャを使用して展開する
+        - name: 既存のインフラストラクチャを利用して展開する
           href: deploy-with-existing-infrastructure.md
-        - name: 非エンタープライズ向けの展開
+        - name: 非エンタープライズ向けに展開する
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: ワークロードとシナリオを展開する
       href: deploy-workloads.md
@@ -103,7 +103,7 @@
           href: migration-microsoft-365-enterprise-workload.md
         - name: リモート ワーカーを支援する
           href: empower-people-to-work-remotely.md
-        - name: 厳しく規制されたデータに Teams で対応する
+        - name: 厳しく規制されたデータ用の Teams
           href: secure-teams-highly-regulated-data-scenario.md
         - name: 厳しく規制されたデータ用の SharePoint サイト
           href: teams-sharepoint-online-sites-highly-regulated-data.md
@@ -118,7 +118,7 @@
               href: simulated-ent-base-configuration-microsoft-365-enterprise.md
         - name: ID
           items:
-            - name: パスワード ハッシュ同期
+            - name: パスワード ハッシュの同期
               href: password-hash-sync-m365-ent-test-environment.md
             - name: パススルー認証
               href: pass-through-auth-m365-ent-test-environment.md
@@ -130,7 +130,7 @@
               href: multi-factor-authentication-microsoft-365-test-environment.md
             - name: グローバル管理者アカウントを保護する
               href: protect-global-administrator-accounts-microsoft-365-test-environment.md
-            - name: パスワード ライトバック
+            - name: パスワードの書き戻し
               href: password-writeback-m365-ent-test-environment.md
             - name: パスワードのリセット
               href: password-reset-m365-ent-test-environment.md
@@ -143,13 +143,13 @@
               items:
                 - name: クラウド専用
                   href: cloud-only-prereqs-m365-test-environment.md
-                - name: パスワード ハッシュ同期
+                - name: パスワード ハッシュの同期
                   href: phs-prereqs-m365-test-environment.md
                 - name: パススルー認証
                   href: pta-prereqs-m365-test-environment.md
         - name: モバイル デバイス管理
           items:
-            - name: iOS および Android デバイスの登録
+            - name: iOS および Android デバイスを登録する
               href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
             - name: デバイス コンプライアンス ポリシー
               href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
@@ -159,7 +159,7 @@
               href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
             - name: データの分類
               href: data-classification-microsoft-365-enterprise-dev-test-environment.md
-            - name: 特権アクセスの管理
+            - name: 特権アクセス管理
               href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
     - name: Contoso 社の導入事例
       href: contoso-case-study.md
@@ -186,12 +186,12 @@
           href: contoso-team-for-top-secret-project.md
         - name: 厳しく規制されたデータ用の SharePoint サイト
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: エンタープライズ展開コンテンツのための Microsoft 365 への変更点
+    - name: Microsoft 365 Enterprise 展開コンテンツの変更
       href: microsoft-365-deploment-guide-changes.md
-- name: 最新デスクトップ展開センターをご覧いただき
+- name: デスクトップ展開センター
   href: desktop-deployment-center-home.md
   items:
-    - name: 作業の開始-人、プロセス、およびテクノロジのガイダンス
+    - name: はじめに - ユーザー、プロセス、およびテクノロジのガイダンス
       href: getting-started.md
     - name: 手順 1 - デバイスとアプリの準備
       href: step-1-device-and-app-readiness.md
@@ -205,13 +205,13 @@
       href: step-5-security-and-compliance.md
     - name: 手順 6 - OS の展開と機能更新プログラム
       href: step-6-os-deployment-and-feature-updates.md
-    - name: ステップ7  -  WindowsとOfficeのサービス
+    - name: 手順 7 - Windows と Office のサービス
       href: step-7-windows-and-office-as-a-service.md
-    - name: '手順 8: ユーザーのコミュニケーションとトレーニング'
+    - name: 手順 8 - ユーザーのコミュニケーションとトレーニング
       href: step-8-user-communications-and-training.md
     - name: Windows 7 から Windows 10 への手動アップグレード
       href: windows-7-to-windows-10-upgrade-manual.md
-    - name: Windows 7 から Windows 10 に自動アップグレード
+    - name: Windows 7 から Windows 10 への自動アップグレード
       href: windows-7-to-windows-10-upgrade-automated.md
     - name: Windows と Office の展開と Lab キット
       href: modern-desktop-deployment-and-management-lab.md
@@ -221,10 +221,10 @@
   href: ../compliance/index.yml
 - name: Microsoft 365 セキュリティ
   href: ../security/index.yml
-- name: クラウドサービスを使用したエンタープライズビジネス継続性管理 (EBCM)
+- name: クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM)
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
-    - name: 顧客およびクラウド パートナーの EBCM に関する責任
+    - name: 顧客およびクラウド パートナーの EBCM 責任
       href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
     - name: Microsoft 365 クラウド サービスの回復性
       href: ebcm-m365-service-resiliency.md
