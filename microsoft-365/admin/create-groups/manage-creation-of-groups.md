@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Office 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 1f0d3109d1102c740a9be0b670e618eac982e6e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a211cb3b69348a4d4a401a3c318fe019d8fd257f
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241368"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42277194"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Office 365 グループを作成できるユーザーを管理する
 
@@ -120,14 +120,20 @@ Office 365 グループの作成を特定のセキュリティグループのメ
 2. **[Windows PowerShell]** を右クリックし、**[管理者として実行]** を選択します。
     
     ![[管理者として実行] で PowerShell を開く。](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+    
+3. ポリシーを RemoteSigned に設定するには、 [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)を使用します。
+    
+    ```
+    Set-ExecutionPolicy RemoteSigned
+    ```
   
-2. インストール済みモジュールを確認します。
+4. インストール済みモジュールを確認します。
     
     ```
     Get-InstalledModule -Name "AzureAD*"
     ```
 
-3. AzureADPreview または AzureAD の以前のバージョンをアンインストールするには、次のコマンドを実行します。
+5. AzureADPreview または AzureAD の以前のバージョンをアンインストールするには、次のコマンドを実行します。
   
     ```
     Uninstall-Module AzureADPreview
@@ -139,7 +145,7 @@ Office 365 グループの作成を特定のセキュリティグループのメ
     Uninstall-Module AzureAD
     ```
 
-4. AzureADPreview の最新のバージョンをインストールするには、次のコマンドを実行します。
+6. AzureADPreview の最新のバージョンをインストールするには、次のコマンドを実行します。
   
     ```
     Install-Module AzureADPreview
