@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074646"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278773"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -44,15 +44,15 @@ ms.locfileid: "42074646"
 
 暗号化の設定は、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターで[秘密度ラベルを作成](create-sensitivity-labels.md)するときに使用できます。
 
-## <a name="how-encryption-works"></a>暗号化のしくみ
+## <a name="understand-how-the-encryption-works"></a>暗号化のしくみを理解する
 
 暗号化では、Azure Information Protection の Azure Rights Management サービス (Azure RMS) が使用されます。 この保護ソリューションでは、暗号化ポリシー、ID ポリシー、および認識ポリシーが使用されます。 詳細については、 Azure Information Protection ドキュメントの「[Azure Rights Management とは](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)」を参照してください。 
 
 暗号化ソリューションを使用すると、**スーパー ユーザー**機能により、認証されたユーザーとサービスが、組織のために暗号化されたデータの閲覧と検査を常に行えるようにできます。 必要に応じて、暗号化を削除または変更することができます。 詳細については、「[Azure Information Protection および検索サービスまたはデータ回復用のスーパー ユーザーの構成](https://docs.microsoft.com/azure/information-protection/configure-super-users)」を参照してください。
 
-## <a name="configuring-a-label-for-encryption"></a>暗号化用のラベルを構成する
+## <a name="how-to-configure-a-label-for-encryption"></a>暗号化のラベルを構成する方法
 
-**秘密度ラベルを作成または編集**する際は、ウィザードの [[Encryption](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)] (暗号化) ページで、次のいずれかのオプションを選択できます。
+[秘密度ラベル を作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ウィザードの [**暗号化**] ページで、次のいずれかのオプションを選択します。
 
 - [**None**] (なし): 新しいラベルの既定の設定です。 新規の暗号化は適用されません。
 - [**Apply**] (適用): 暗号化が有効になります。管理者は暗号化の設定を指定します。
@@ -85,7 +85,7 @@ ms.locfileid: "42074646"
 |**管理者定義によるアクセス許可が適用されたラベル**|元の暗号化が削除されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
 
 新しいラベルの暗号化が適用された場合、または元の暗号化が削除された場合にそれが実際に実行されるのは、このアクションをサポートする次の使用権限または役割が、ラベルの適用を行うユーザーに付与されている場合のみです。
-- 「エクスポート」または「フル コントロール」の[使用権限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions)。
+- 「エクスポート」または「フル コントロール」の[使用権限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
 - [Rights Management 発行者または Rights Management 所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)の役割、または[スーパー ユーザー](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
 
 ユーザーに上記のいずれかの権限または役割が付与されていない場合はラベルを適用することはできず、そのため元の暗号化が維持されます。 ユーザーには次のメッセージが表示されます: **You don't have permission to make this change to the sensitivity label. Please contact the content owner.** (秘密度ラベルを変更するためのアクセス許可がありません。コンテンツの所有者に連絡してください。)
@@ -98,7 +98,7 @@ ms.locfileid: "42074646"
 
 既に暗号化されているドキュメントが添付ファイルとして追加された場合は常に、元の暗号化がそのドキュメントで維持されます。 
 
-## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>秘密度ラベル用に暗号化を構成する方法
+## <a name="configure-encryption-settings"></a>暗号化設定を構成する
 
 秘密度ラベルを作成または編集するためにウィザードの [**Encryption**] (暗号化) ページで [**Apply**] (適用) を選択するときは、次のいずれかを選択します。
 
