@@ -74,12 +74,12 @@
         - name: デバイスをセットアップする
           href: get-started/set-up-devices.md
           items:
-            - name: 新しいデバイスをユーザー自身が登録する
+            - name: 新しいデバイスを自分で登録する
               href: get-started/register-devices-self.md
               items:
                 - name: デバイスを登録するためのパートナー向け手順
                   href: get-started/register-devices-partner.md
-            - name: 既存のデバイスをユーザー自身が登録する
+            - name: 既存のデバイスをj自分で登録する
               href: get-started/register-reused-devices-self.md
         - name: ユーザーがデバイスを使えるようにする
           href: get-started/get-started-devices.md
@@ -88,7 +88,7 @@
           items:
             - name: Microsoft Project と Microsoft Visio
               href: get-started/project-visio.md
-    - name: Microsoft マネージド デスクトップの使用
+    - name: Microsoft マネージド デスクトップを使用する
       href: working-with-managed-desktop/index.md
       items:
         - name: 分析情報を操作する
@@ -98,15 +98,15 @@
               href: working-with-managed-desktop/usage-insights.md
             - name: 信頼性の分析情報
               href: working-with-managed-desktop/reliability-insights.md
-            - name: バッテリインサイト
+            - name: バッテリーの分析情報
               href: working-with-managed-desktop/battery-insights.md
-            - name: Windows セキュリティ更新プログラムインサイト
+            - name: Windows セキュリティ更新プログラムの分析情報
               href: working-with-managed-desktop/security-update-insights.md
         - name: 管理者サポート
           href: working-with-managed-desktop/admin-support.md
         - name: エンド ユーザー サポート
           href: working-with-managed-desktop/end-user-support.md
-        - name: アプリの管理
+        - name: アプリを管理する
           href: working-with-managed-desktop/manage-apps.md
         - name: 構成可能な設定
           href: working-with-managed-desktop/config-setting-overview.md

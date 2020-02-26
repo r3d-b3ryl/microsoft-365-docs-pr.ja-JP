@@ -1,18 +1,18 @@
-- name: 商取引の購入と請求を管理する
+- name: 取引の購入および支払いを管理する
   href: index.md
   expanded: true
   items:
     - name: サブスクリプションを管理する
       items:
-        - name: サードパーティ製アプリを管理する
+        - name: サードパーティ製のアプリを管理する
           href: manage-saas-apps.md
-        - name: サブスクリプションのアップグレード
+        - name: サブスクリプションをアップグレードする
           href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
-        - name: セルフサービス購入を管理する (ユーザー)
+        - name: セルフサービスによる購入を管理する (ユーザー)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
-        - name: セルフサービス購入を管理する (管理者)
+        - name: セルフサービスによる購入を管理する (管理者)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
-    - name: ライセンスの管理
+    - name: ライセンスを管理する
       items:
         - name: ライセンスを購入する
           href: /microsoft-365/commerce/licenses/buy-licenses
@@ -22,23 +22,23 @@
           href: /microsoft-365/admin/manage/remove-licenses-from-users
         - name: サブスクリプションからライセンスを削除する
           href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
-    - name: 請求書と支払い
+    - name: 請求と支払い
       items:
-        - name: 請求書を把握する
+        - name: 請求書の内容を理解する
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
-        - name: 支払い方法を管理する
+        - name: 支払方法を管理する
           href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
-        - name: 課金プロファイルを管理する
+        - name: 課金プロフィールを管理する
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: 支払いサービスディレクティブ2と強力な顧客認証
+        - name: 支払サービス ディレクティブ 2 および強力な顧客認証
           href: /microsoft-365/commerce/billing-and-payments/psd2
-    - name: 課金アカウント
+    - name: 請求アカウント
       items:
-        - name: 課金アカウントを管理する
+        - name: 請求アカウントを管理する
           href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
-        - name: テナントを課金アカウントに関連付ける
+        - name: テナントと自分の請求アカウントを関連付ける
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: パートナーとの関係を管理する
+    - name: 自分のパートナーとの関係を管理します。
       href: manage-partners.md
-    - name: アカウントの削除
+    - name: アカウントの使用を停止する
       href: close-your-account.md
