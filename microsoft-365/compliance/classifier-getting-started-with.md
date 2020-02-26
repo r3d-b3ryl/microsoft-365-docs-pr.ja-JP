@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable クラシファイアは、コンテンツのさまざまな種類を認識するために学習することができます。 分類子がトレーニングされると、結果が正確であることを確認できます。 次に、これを使用して組織のコンテンツを検索し、それを分類して、保持または機密ラベルを適用したり、データ損失防止 (DLP) またはアイテム保持ポリシーに含めたりします。
-ms.openlocfilehash: 7ebd991fe70401b91c14673bcff8aabbdabbda6a
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 877001784f30f4b51e0e8c9fdb15091ea6308bf5
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266879"
+ms.locfileid: "42277204"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -44,10 +44,8 @@ ms.locfileid: "42266879"
 
 この分類方法は、手動または自動のパターン一致方式のどちらかによって簡単に識別できないコンテンツに特に適しています。 この分類の方法は、アイテムに基づいてアイテムを識別する分類子をトレーニングすることになります (アイテムに含まれる要素ではありません) (パターンマッチング)。 分類子は、分類するコンテンツの数百の例を参照して、コンテンツの種類を識別する方法を学習します。 最初に、カテゴリに含まれている例を示します。 それらを処理したら、一致する比較例と一致しない例の両方を組み合わせてテストします。 その後、分類子は、指定されたアイテムが作成中のカテゴリに属するかどうかについての予測を行います。 その後、その結果を確認し、陽性、ネガ、偽陽性、誤検知を並べ替えて、予測の精度を高めることができます。 トレーニング対象の分類子を発行すると、SharePoint Online、Exchange、および OneDrive などの場所にあるアイテムが並べ替えられ、コンテンツが分類されます。
 
-<!-- add link in the below note to sensitivity label topic when carolb provides -->
-
 > [!IMPORTANT]
-> 両方の種類の分類子は、条件と[通信のコンプライアンス](communication-compliance.md)[に基づいて、自動適用の保持ラベルポリシー](labels.md#applying-a-retention-label-automatically-based-on-conditions)の条件として使用できます。
+> 両方の種類の分類子は、条件と[通信のコンプライアンス](communication-compliance.md)[に基づいて、自動適用の保持ラベルポリシー](labels.md#applying-a-retention-label-automatically-based-on-conditions)の条件として使用できます。 機密ラベルは、組み込みの分類子を条件としてのみ使用できます。詳細については、「[コンテンツに機密ラベルを自動的に適用](apply-sensitivity-label-automatically.md)する」を参照してください。
 
 > [!IMPORTANT]
 > Trainable 分類子は、暗号化されておらず英語になっているアイテムに対してのみ機能します。

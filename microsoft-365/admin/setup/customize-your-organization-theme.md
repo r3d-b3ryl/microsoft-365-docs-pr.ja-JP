@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Office 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
-ms.openlocfilehash: b59efa21195c0c7bed12c98b9d360d84451b3d35
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247874"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280185"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>組織で使用する Office 365 のテーマをカスタマイズする
 
@@ -43,7 +43,7 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
   - **カスタムロゴイメージを使用**する: URL からイメージを使用するか、イメージをアップロードするかを選択します。 URL を使用する場合は、URL が HTTPS を使用しており、任意のサイズの任意の形式の 200 x 30 ピクセルであることを確認してください。 200 x 30 ピクセル、JPG、PNG、GIF、または SVG 形式のロゴを 10 KB 未満でアップロードできます。
 
     > [!NOTE]
-    > SharePoint モバイルアプリにロゴが表示されるようにするには、SVG 画像のみを使用します。 他の形式でアップロードされた画像は、アプリに表示されません。 
+    > SharePoint モバイルアプリにロゴが表示されるようにするには、SVG 画像のみを使用します。 他の形式でアップロードされた画像は、アプリに表示されません。 ロゴは、SharePoint モバイルアプリでクリックできません。
     
   - **ロゴをクリックできるよう**にする: 会社のリソースへのリンクとして、ナビゲーションバーでロゴを使用することができます。 ここには、http://または https://から始まるロゴの URL を入力できます。 これはオプションです。
     

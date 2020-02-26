@@ -1,19 +1,20 @@
 ---
-title: Microsoft マネージドデスクトップのマップされたドライブの準備
+title: Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 description: 確認のための重要な手順
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34100713"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280175"
 ---
-#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのマップされたドライブの準備
+#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 
 多くのエンタープライズ環境には、マップされたドライブに対する従来の要件があります。これにより、ユーザーまたはチームは、ファイルを共有および保存したり、オンプレミスのアプリケーションを使用したりできます。 Microsoft では、マップされたドライブを Microsoft マネージドデスクトップと共に使用することはお勧めしません。 代わりに、yor ファイルアクセスソリューションを次のように改革することをお勧めします。
   
