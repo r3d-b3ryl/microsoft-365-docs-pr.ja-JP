@@ -15,177 +15,190 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 高度な電子情報開示ケースの [通信] タブを使用して、保管担当者通知ワークフローを管理します。
+ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077564"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280235"
 ---
-# <a name="create-a-legal-hold-notice"></a><span data-ttu-id="42ab1-102">法的情報保留通知を作成する</span><span class="sxs-lookup"><span data-stu-id="42ab1-102">Create a legal hold notice</span></span>
+# <a name="create-a-legal-hold-notice"></a><span data-ttu-id="06a41-103">法的情報保留通知を作成する</span><span class="sxs-lookup"><span data-stu-id="06a41-103">Create a legal hold notice</span></span>
 
-<span data-ttu-id="42ab1-103">Advanced eDiscovery 保管担当者 communications を使用すると、組織は保管担当者との通信に関するワークフローを管理できます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-103">Using Advanced eDiscovery custodian communications, organizations can manage their workflow around communicating with custodians.</span></span> <span data-ttu-id="42ab1-104">法務部門は、コミュニケーションツールを使用して、法的情報保留通知の送信、収集、追跡を系統的に行うことができます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-104">Through the Communications tool, legal teams can systematically send, collect, and track legal hold notifications.</span></span> <span data-ttu-id="42ab1-105">また、柔軟な作成プロセスでは、チームは、保留通知ワークフローと、保管担当者に送信される通知の内容をカスタマイズすることもできます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-105">The flexible creation process also allows teams to customize the hold notification workflow and the content in the notices sent to custodians.</span></span> 
+<span data-ttu-id="06a41-104">Advanced eDiscovery 保管担当者 communications を使用すると、組織は保管担当者との通信に関するワークフローを管理できます。</span><span class="sxs-lookup"><span data-stu-id="06a41-104">Using Advanced eDiscovery custodian communications, organizations can manage their workflow around communicating with custodians.</span></span> <span data-ttu-id="06a41-105">法務部門は、コミュニケーションツールを使用して、法的情報保留通知の送信、収集、追跡を系統的に行うことができます。</span><span class="sxs-lookup"><span data-stu-id="06a41-105">Through the Communications tool, legal teams can systematically send, collect, and track legal hold notifications.</span></span> <span data-ttu-id="06a41-106">また、柔軟な作成プロセスでは、チームは、保留通知ワークフローと、保管担当者に送信される通知の内容をカスタマイズすることもできます。</span><span class="sxs-lookup"><span data-stu-id="06a41-106">The flexible creation process also allows teams to customize the hold notification workflow and the content in the notices sent to custodians.</span></span> 
 
 ![通信ページ](../media/CommunicationPage.PNG)
 
-<span data-ttu-id="42ab1-107">この記事では、保留通知ワークフローの手順の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-107">The article outlines the steps in the hold notification workflow.</span></span>
+<span data-ttu-id="06a41-108">この記事では、保留通知ワークフローの手順の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="06a41-108">The article outlines the steps in the hold notification workflow.</span></span>
 
-## <a name="step-1-specify-communication-details"></a><span data-ttu-id="42ab1-108">手順 1: 通信の詳細を指定する</span><span class="sxs-lookup"><span data-stu-id="42ab1-108">Step 1: Specify communication details</span></span>
+## <a name="step-1-specify-communication-details"></a><span data-ttu-id="06a41-109">手順 1: 通信の詳細を指定する</span><span class="sxs-lookup"><span data-stu-id="06a41-109">Step 1: Specify communication details</span></span>
 
-<span data-ttu-id="42ab1-109">最初の手順として、法的情報保留通知またはその他の保管担当者通信に関する適切な詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-109">The first step is to specify the appropriate details for legal hold notices or other custodian communications.</span></span> 
+<span data-ttu-id="06a41-110">最初の手順として、法的情報保留通知またはその他の保管担当者通信に関する適切な詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="06a41-110">The first step is to specify the appropriate details for legal hold notices or other custodian communications.</span></span>
 
 ![名前の通信ページ](../media/NameCommunication.PNG)
 
-1. <span data-ttu-id="42ab1-111">[セキュリティ & コンプライアンスセンター] で、 **[電子情報開示 > Advanced ediscovery** ] に移動して、組織内のケースの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-111">In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.</span></span>
-   
-2. <span data-ttu-id="42ab1-112">[**通信**] タブをクリックし、[**新しい通信**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-112">Click the **Communications** tab, and then click **New communication**.</span></span>
-   
-3. <span data-ttu-id="42ab1-113">[**名前の通信**] ページで、次の (必須) 通信の詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-113">On the **Name communication** page, specify the following (required) communication details.</span></span>
+1. <span data-ttu-id="06a41-112">[セキュリティ & コンプライアンスセンター] で、 **[電子情報開示 > Advanced ediscovery** ] に移動して、組織内のケースの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="06a41-112">In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.</span></span>
 
-    - <span data-ttu-id="42ab1-114">**Name**: これは通信の名前です。</span><span class="sxs-lookup"><span data-stu-id="42ab1-114">**Name**: This is the name for the communication.</span></span>
-    
-    - <span data-ttu-id="42ab1-115">**発行責任**者: ドロップダウンリストには、ケースメンバーの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-115">**Issuing officer**: The dropdown list displays a list of a case members.</span></span> <span data-ttu-id="42ab1-116">保管担当者に送信される各通知は、指定された発行責任者の代理として送信されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-116">Each notice sent to custodians will be sent on behalf of the specified issuing officer.</span></span>
+2. <span data-ttu-id="06a41-113">ケースを選択し、[**通信**] タブをクリックして、[**新しい通信**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-113">Select a case, click the **Communications** tab, and then click **New communication**.</span></span>
 
-4. <span data-ttu-id="42ab1-117">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-117">Click **Next**.</span></span>
+3. <span data-ttu-id="06a41-114">[**名前の通信**] ページで、次の (必須) 通信の詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="06a41-114">On the **Name communication** page, specify the following (required) communication details.</span></span>
 
-## <a name="step-2-define-the-portal-content"></a><span data-ttu-id="42ab1-118">手順 2: ポータルコンテンツを定義する</span><span class="sxs-lookup"><span data-stu-id="42ab1-118">Step 2: Define the portal content</span></span>
+    - <span data-ttu-id="06a41-115">**Name**: これは通信の名前です。</span><span class="sxs-lookup"><span data-stu-id="06a41-115">**Name**: This is the name for the communication.</span></span>
 
-<span data-ttu-id="42ab1-119">次に、保留通知のコンテンツを作成して追加することができます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-119">Next, you can create and add the content of the hold notice.</span></span> <span data-ttu-id="42ab1-120">[**通信の作成**] ウィザードの [**ポータルコンテンツの定義**] ページで、保留通知の内容を指定します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-120">On the **Define portal content** page in the **Create communication** wizard, specify the contents of the hold notice.</span></span> <span data-ttu-id="42ab1-121">このコンテンツは、発行、再発行、アラーム、エスカレーション通知に自動的に追加されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-121">This content will be automatically appended to the Issuance, Re-Issue, Reminder, and Escalation notices.</span></span> <span data-ttu-id="42ab1-122">さらに、このコンテンツは保管担当者のコンプライアンスポータルに表示されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-122">Additionally, this content will appear in the custodian's Compliance Portal.</span></span> 
+    - <span data-ttu-id="06a41-116">**発行責任**者: ドロップダウンリストには、ケースメンバーの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-116">**Issuing officer**: The dropdown list displays a list of case members.</span></span> <span data-ttu-id="06a41-117">保管担当者に送信される各通知は、指定された発行責任者の代理として送信されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-117">Each notice sent to custodians will be sent on behalf of the specified issuing officer.</span></span>
+
+4. <span data-ttu-id="06a41-118">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-118">Click **Next**.</span></span>
+
+## <a name="step-2-define-the-portal-content"></a><span data-ttu-id="06a41-119">手順 2: ポータルコンテンツを定義する</span><span class="sxs-lookup"><span data-stu-id="06a41-119">Step 2: Define the portal content</span></span>
+
+<span data-ttu-id="06a41-120">次に、保留通知のコンテンツを作成して追加することができます。</span><span class="sxs-lookup"><span data-stu-id="06a41-120">Next, you can create and add the content of the hold notice.</span></span> <span data-ttu-id="06a41-121">[**通信の作成**] ウィザードの [**ポータルコンテンツの定義**] ページで、保留通知の内容を指定します。</span><span class="sxs-lookup"><span data-stu-id="06a41-121">On the **Define portal content** page in the **Create communication** wizard, specify the contents of the hold notice.</span></span> <span data-ttu-id="06a41-122">このコンテンツは、発行、再発行、アラーム、エスカレーション通知に自動的に追加されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-122">This content will be automatically appended to the Issuance, Re-Issue, Reminder, and Escalation notices.</span></span> <span data-ttu-id="06a41-123">さらに、このコンテンツは保管担当者のコンプライアンスポータルに表示されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-123">Additionally, this content will appear in the custodian's Compliance Portal.</span></span> 
 
 ![ポータルコンテンツページ](../media/PortalContent.PNG)
 
-<span data-ttu-id="42ab1-124">ポータルコンテンツを作成するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-124">To create the portal content:</span></span>
+<span data-ttu-id="06a41-125">ポータルコンテンツを作成するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="06a41-125">To create the portal content:</span></span>
 
-1. <span data-ttu-id="42ab1-125">ポータルコンテンツのテキストボックスに、保留通知を入力します (または、別のドキュメントに切り取り、貼り付けを行います)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-125">Type (or cut and paste from another document) your hold notice in the textbox for the portal content.</span></span> 
+1. <span data-ttu-id="06a41-126">ポータルコンテンツのテキストボックスに、保留通知を入力します (または、別のドキュメントに切り取り、貼り付けを行います)。</span><span class="sxs-lookup"><span data-stu-id="06a41-126">Type (or cut and paste from another document) your hold notice in the textbox for the portal content.</span></span> 
 
-2. <span data-ttu-id="42ab1-126">通知に差し込み変数を挿入して、通知をカスタマイズし、保管担当者コンプライアンスポータルを共有します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-126">Insert merge variables into your notice to customize the notice and share the Custodian Compliance Portal.</span></span>
+2. <span data-ttu-id="06a41-127">通知に差し込み変数を挿入して、通知をカスタマイズし、保管担当者コンプライアンスポータルを共有します。</span><span class="sxs-lookup"><span data-stu-id="06a41-127">Insert merge variables into your notice to customize the notice and share the Custodian Compliance Portal.</span></span>
 
-3. <span data-ttu-id="42ab1-127">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-127">Click **Next**.</span></span>
+3. <span data-ttu-id="06a41-128">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-128">Click **Next**.</span></span>
 
   >[!Tip]
-  ><span data-ttu-id="42ab1-128">ポータルコンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [Use The Communications Editor](using-communications-editor.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="42ab1-128">To learn more about how to can customize the content and format of the portal content, see [Use the Communications Editor](using-communications-editor.md).</span></span>
+  ><span data-ttu-id="06a41-129">ポータルコンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [Use The Communications Editor](using-communications-editor.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06a41-129">To learn more about how to can customize the content and format of the portal content, see [Use the Communications Editor](using-communications-editor.md).</span></span>
 
-## <a name="step-3-set-the-required-notifications"></a><span data-ttu-id="42ab1-129">手順 3: 必要な通知を設定する</span><span class="sxs-lookup"><span data-stu-id="42ab1-129">Step 3: Set the required notifications</span></span>
+## <a name="step-3-set-the-required-notifications"></a><span data-ttu-id="06a41-130">手順 3: 必要な通知を設定する</span><span class="sxs-lookup"><span data-stu-id="06a41-130">Step 3: Set the required notifications</span></span>
 
-<span data-ttu-id="42ab1-130">保留通知の内容を定義した後、通知プロセスを送信および管理するためのワークフローを設定できます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-130">After you've defined the contents of the hold notice, you can set up the workflows around sending and managing the notification process.</span></span> <span data-ttu-id="42ab1-131">通知は、保管担当者を使用して通知とフォローアップのために送信される電子メールメッセージです。</span><span class="sxs-lookup"><span data-stu-id="42ab1-131">Notifications are email messages that are sent to notify and follow-up with custodians.</span></span> <span data-ttu-id="42ab1-132">通信に追加されたすべての保管担当者は同じ通知を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-132">Every custodian added to the communication will receive the same notification.</span></span> 
+<span data-ttu-id="06a41-131">保留通知の内容を定義した後、通知プロセスを送信および管理するためのワークフローを設定できます。</span><span class="sxs-lookup"><span data-stu-id="06a41-131">After you've defined the contents of the hold notice, you can set up the workflows around sending and managing the notification process.</span></span> <span data-ttu-id="06a41-132">通知は、通知に送信される電子メールメッセージで、保管担当者を使用してフォローアップされます。</span><span class="sxs-lookup"><span data-stu-id="06a41-132">Notifications are email messages that are sent to notify and follow up with custodians.</span></span> <span data-ttu-id="06a41-133">通信に追加されたすべての保管担当者は同じ通知を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="06a41-133">Every custodian added to the communication will receive the same notification.</span></span> 
 
-<span data-ttu-id="42ab1-133">保留通知を設定して送信するには、発行、再発行、およびリリース通知を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-133">To set up and send a hold notice, you must include Issuance, Re-Issuance, and Release notifications.</span></span>
+<span data-ttu-id="06a41-134">保留通知を設定して送信するには、発行、再発行、およびリリース通知を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="06a41-134">To set up and send a hold notice, you must include Issuance, Re-Issuance, and Release notifications.</span></span>
 
-### <a name="issuance-notification"></a><span data-ttu-id="42ab1-134">発行通知</span><span class="sxs-lookup"><span data-stu-id="42ab1-134">Issuance notification</span></span> 
+### <a name="issuance-notification"></a><span data-ttu-id="06a41-135">発行通知</span><span class="sxs-lookup"><span data-stu-id="06a41-135">Issuance notification</span></span> 
 
-<span data-ttu-id="42ab1-135">通信が作成されると、指定された発行責任者によって**発行通知**が開始されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-135">After the communication is created, the **Issuance Notification** is initiated by the specified Issuing Officer.</span></span> <span data-ttu-id="42ab1-136">発行通知は、保管担当者に送信される最初の通信で、保持義務について通知します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-136">The Issuance notification is the first communication sent to the custodian to inform them about their preservation obligations.</span></span> 
+<span data-ttu-id="06a41-136">通信が作成されると、指定された発行責任者によって**発行通知**が開始されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-136">After the communication is created, the **Issuance Notification** is initiated by the specified Issuing Officer.</span></span> <span data-ttu-id="06a41-137">発行通知は、保管担当者に送信される最初の通信で、保持義務について通知します。</span><span class="sxs-lookup"><span data-stu-id="06a41-137">The Issuance notification is the first communication sent to the custodian to inform them about their preservation obligations.</span></span> 
 
-<span data-ttu-id="42ab1-137">発行通知を作成するには:</span><span class="sxs-lookup"><span data-stu-id="42ab1-137">To create an issuance notification:</span></span>
+<span data-ttu-id="06a41-138">発行通知を作成するには:</span><span class="sxs-lookup"><span data-stu-id="06a41-138">To create an issuance notification:</span></span>
 
-1. <span data-ttu-id="42ab1-138">[**発行**] タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-138">In the **Issuance** tile, click **Edit**.</span></span>
-   
-2. <span data-ttu-id="42ab1-139">必要に応じて、[ **Cc** ] フィールドと [ **Bcc** ] フィールドにケースメンバーまたはスタッフを追加します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-139">If necessary, add additional case members or staff to the **Cc** and **Bcc** fields.</span></span> <span data-ttu-id="42ab1-140">これらのフィールドに複数のユーザーを追加するには、電子メールアドレスをセミコロンで区切ります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-140">To add multiple users to these fields, separate email addresses with a semi-colon.</span></span>
-   
-3. <span data-ttu-id="42ab1-141">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-141">Specify the **Subject** for the notice (required).</span></span>
-   
-4. <span data-ttu-id="42ab1-142">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-142">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="42ab1-143">手順2で定義したポータルコンテンツが、発行通知の最後に追加されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="42ab1-143">Note that the portal content you defined in Step 2 is added to the end of the issuance notice.</span></span> 
-   
-5. <span data-ttu-id="42ab1-144">**[保存]** をクリックします</span><span class="sxs-lookup"><span data-stu-id="42ab1-144">Click **Save**</span></span> 
+1. <span data-ttu-id="06a41-139">[**発行**] タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-139">In the **Issuance** tile, click **Edit**.</span></span>
 
-### <a name="re-issuance-notification"></a><span data-ttu-id="42ab1-145">再発行の通知</span><span class="sxs-lookup"><span data-stu-id="42ab1-145">Re-Issuance notification</span></span> 
+2. <span data-ttu-id="06a41-140">必要に応じて、[ **Cc** ] フィールドと [ **Bcc** ] フィールドにケースメンバーまたはスタッフを追加します。</span><span class="sxs-lookup"><span data-stu-id="06a41-140">If necessary, add additional case members or staff to the **Cc** and **Bcc** fields.</span></span> <span data-ttu-id="06a41-141">これらのフィールドに複数のユーザーを追加するには、電子メールアドレスをセミコロンで区切ります。</span><span class="sxs-lookup"><span data-stu-id="06a41-141">To add multiple users to these fields, separate email addresses with a semi-colon.</span></span>
 
-<span data-ttu-id="42ab1-146">ケースが進行するにつれて、保管担当者は、以前に指示されていたのとは別のデータを保持する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-146">As the case progresses, custodians may be required to preserve additional or less data than was previously instructed.</span></span> <span data-ttu-id="42ab1-147">保留通知の内容を更新した後、再発行の通知は、保存義務に対する変更について保管担当者に通知します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-147">After you update the contents of the hold notice, the re-issuance notification alerts the  custodians about the changes to their preservation obligations.</span></span>
+3. <span data-ttu-id="06a41-142">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-142">Specify the **Subject** for the notice (required).</span></span>
 
-<span data-ttu-id="42ab1-148">再発行の通知を作成するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-148">To create a re-issuance notification:</span></span> 
+4. <span data-ttu-id="06a41-143">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-143">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="06a41-144">手順2で定義したポータルコンテンツが、発行通知の最後に追加されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-144">The portal content you defined in Step 2 is added to the end of the issuance notice.</span></span> 
 
-1. <span data-ttu-id="42ab1-149">[**再発行**] タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-149">In the **Reissue** tile, click **Edit**.</span></span>
-   
-2. <span data-ttu-id="42ab1-150">必要に応じて、[ **Cc** ] フィールドと [ **Bcc** ] フィールドにケースメンバーまたはスタッフを追加します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-150">If necessary, add additional case members or staff to the **Cc** and **Bcc** fields.</span></span> <span data-ttu-id="42ab1-151">これらのフィールドに複数のユーザーを追加するには、電子メールアドレスをセミコロンで区切ります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-151">To add multiple users to these fields, separate email addresses with a semi-colon.</span></span>
-   
-3. <span data-ttu-id="42ab1-152">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-152">Specify the **Subject** for the notice (required).</span></span>
-   
-4. <span data-ttu-id="42ab1-153">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-153">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="42ab1-154">手順2で定義したポータルコンテンツが再発行通知の最後に追加されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="42ab1-154">Note that the portal content you defined in Step 2 is added to the end of the re-issuance notice.</span></span>
-   
-5. <span data-ttu-id="42ab1-155">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-155">Click **Save**.</span></span>
+5. <span data-ttu-id="06a41-145">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-145">Click **Save**.</span></span>
 
->[!Note]
-><span data-ttu-id="42ab1-156">保留通知が変更されると、その通知に割り当てられたすべての保管担当者に対して、再発行の通知が自動的に送信されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-156">If a hold notification is modified, the re-issuance notification will be automatically sent to all custodians assigned to the notice.</span></span> <span data-ttu-id="42ab1-157">通知が送信されると、保管担当者は保留通知を再認識するように求められます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-157">After the notification is sent, custodians will be asked to re-acknowledge their hold notice.</span></span> <span data-ttu-id="42ab1-158">通知またはエスカレーションワークフローを設定している場合は、それらも再起動されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-158">If you have set up any reminder or escalation workflows, these will also re-start.</span></span> 
+### <a name="re-issuance-notification"></a><span data-ttu-id="06a41-146">再発行の通知</span><span class="sxs-lookup"><span data-stu-id="06a41-146">Re-Issuance notification</span></span>
 
-### <a name="release-notification"></a><span data-ttu-id="42ab1-159">リリース通知</span><span class="sxs-lookup"><span data-stu-id="42ab1-159">Release notification</span></span>
+<span data-ttu-id="06a41-147">ケースが進行するにつれて、保管担当者は、以前に指示されていたのとは別のデータを保持する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="06a41-147">As the case progresses, custodians may be required to preserve additional or less data than was previously instructed.</span></span> <span data-ttu-id="06a41-148">ポータルコンテンツを更新すると、再発行の通知が送信され、保持義務に関する変更について保管担当者に通知されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-148">After you update the portal content, the re-issuance notification is sent and alerts custodians about any changes to their preservation obligations.</span></span>
 
-<span data-ttu-id="42ab1-160">問題が解決した場合や、保管担当者がコンテンツを保持する必要がなくなった場合は、ケースから保管担当者をリリースできます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-160">After a matter is resolved or if a custodian is no longer subject to preserve content, you can release the custodian from a case.</span></span> <span data-ttu-id="42ab1-161">保管担当者に以前に保留通知が発行されていた場合は、リリース通知を使用して、その義務から解放されたことを保管担当者に通知できます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-161">If the custodian was previously issued a hold notice, the release notification can be used to alert custodians that they have been released from their obligation.</span></span>
+<span data-ttu-id="06a41-149">再発行の通知を作成するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="06a41-149">To create a re-issuance notification:</span></span>
 
-<span data-ttu-id="42ab1-162">リリース通知を作成するには:</span><span class="sxs-lookup"><span data-stu-id="42ab1-162">To create a release notification:</span></span> 
+1. <span data-ttu-id="06a41-150">[**再発行**] タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-150">In the **Reissue** tile, click **Edit**.</span></span>
 
-1. <span data-ttu-id="42ab1-163">[**リリース**タイル] で、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-163">In the **Release** tile, click **Edit**.</span></span>
-   
-2. <span data-ttu-id="42ab1-164">必要に応じて、[ **Cc** ] フィールドと [ **Bcc** ] フィールドにケースメンバーまたはスタッフを追加します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-164">If necessary, add additional case members or staff to the **Cc** and **Bcc** fields.</span></span> <span data-ttu-id="42ab1-165">これらのフィールドに複数のユーザーを追加するには、電子メールアドレスをセミコロンで区切ります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-165">To add multiple users to these fields, separate email addresses with a semi-colon.</span></span>
-   
-3. <span data-ttu-id="42ab1-166">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-166">Specify the **Subject** for the notice (required).</span></span>
-   
-4. <span data-ttu-id="42ab1-167">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-167">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span>
-   
-5. <span data-ttu-id="42ab1-168">[**保存**] をクリックして、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-168">Click **Save** and go to the next step.</span></span> 
+2. <span data-ttu-id="06a41-151">必要に応じて、[ **Cc** ] フィールドと [ **Bcc** ] フィールドにケースメンバーまたはスタッフを追加します。</span><span class="sxs-lookup"><span data-stu-id="06a41-151">If necessary, add additional case members or staff to the **Cc** and **Bcc** fields.</span></span> <span data-ttu-id="06a41-152">これらのフィールドに複数のユーザーを追加するには、電子メールアドレスをセミコロンで区切ります。</span><span class="sxs-lookup"><span data-stu-id="06a41-152">To add multiple users to these fields, separate email addresses with a semi-colon.</span></span>
 
-## <a name="optional-step-4-set-the-optional-notifications"></a><span data-ttu-id="42ab1-169">オプション手順 4: オプションの通知を設定する</span><span class="sxs-lookup"><span data-stu-id="42ab1-169">(Optional) Step 4: Set the optional notifications</span></span>
+3. <span data-ttu-id="06a41-153">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-153">Specify the **Subject** for the notice (required).</span></span>
 
-<span data-ttu-id="42ab1-170">必要に応じて、自動化された通知およびエスカレーション通知を作成およびスケジュールすることによって、応答のない保管担当者をフォローアップするワークフローを簡略化できます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-170">Optionally, you can simplify the workflow for following up with unresponsive custodians by creating and scheduling automated reminder and escalation notifications.</span></span>
+4. <span data-ttu-id="06a41-154">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-154">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="06a41-155">手順2で定義したポータルコンテンツが再発行通知の最後に追加されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-155">The portal content you defined in Step 2 is added to the end of the re-issuance notice.</span></span>
+
+5. <span data-ttu-id="06a41-156">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-156">Click **Save**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="06a41-157">ポータルコンテンツが変更された場合 (**通信の編集**ウィザードの [**ポータルコンテンツの定義**] ページで)、再発行の通知は、通知に割り当てられたすべての保管担当者に自動的に送信されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-157">If the portal content is modified (on the **Define Portal Content** page in the **Edit communication** wizard), the re-issuance notification will be automatically sent to all custodians assigned to the notice.</span></span> <span data-ttu-id="06a41-158">通知が送信されると、保管担当者は保留通知を再認識するように求められます。</span><span class="sxs-lookup"><span data-stu-id="06a41-158">After the notification is sent, custodians will be asked to re-acknowledge their hold notice.</span></span> <span data-ttu-id="06a41-159">通知またはエスカレーションワークフローを設定している場合は、それらも再起動されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-159">If you have set up any reminder or escalation workflows, these will also re-start.</span></span> <span data-ttu-id="06a41-160">その他のケース管理イベントが通信を開始する場合の詳細については、「[通知を](#events-that-trigger-notifications)発生させるイベント」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06a41-160">For more information about what other case management events trigger communications, see [Events that trigger notifications](#events-that-trigger-notifications).</span></span>
+
+### <a name="release-notification"></a><span data-ttu-id="06a41-161">リリース通知</span><span class="sxs-lookup"><span data-stu-id="06a41-161">Release notification</span></span>
+
+<span data-ttu-id="06a41-162">問題が解決した場合や、保管担当者がコンテンツを保持する必要がなくなった場合は、ケースから保管担当者をリリースできます。</span><span class="sxs-lookup"><span data-stu-id="06a41-162">After a matter is resolved or if a custodian is no longer subject to preserve content, you can release the custodian from a case.</span></span> <span data-ttu-id="06a41-163">保管担当者に以前に保留通知が発行されていた場合は、リリース通知を使用して、その義務から解放されたことを保管担当者に通知できます。</span><span class="sxs-lookup"><span data-stu-id="06a41-163">If the custodian was previously issued a hold notice, the release notification can be used to alert custodians that they have been released from their obligation.</span></span>
+
+<span data-ttu-id="06a41-164">リリース通知を作成するには:</span><span class="sxs-lookup"><span data-stu-id="06a41-164">To create a release notification:</span></span> 
+
+1. <span data-ttu-id="06a41-165">[**リリース**タイル] で、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-165">In the **Release** tile, click **Edit**.</span></span>
+
+2. <span data-ttu-id="06a41-166">必要に応じて、[ **Cc** ] フィールドと [ **Bcc** ] フィールドにケースメンバーまたはスタッフを追加します。</span><span class="sxs-lookup"><span data-stu-id="06a41-166">If necessary, add additional case members or staff to the **Cc** and **Bcc** fields.</span></span> <span data-ttu-id="06a41-167">これらのフィールドに複数のユーザーを追加するには、電子メールアドレスをセミコロンで区切ります。</span><span class="sxs-lookup"><span data-stu-id="06a41-167">To add multiple users to these fields, separate email addresses with a semi-colon.</span></span>
+
+3. <span data-ttu-id="06a41-168">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-168">Specify the **Subject** for the notice (required).</span></span>
+
+4. <span data-ttu-id="06a41-169">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-169">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span>
+
+5. <span data-ttu-id="06a41-170">[**保存**] をクリックして、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="06a41-170">Click **Save** and go to the next step.</span></span>
+
+## <a name="optional-step-4-set-the-optional-notifications"></a><span data-ttu-id="06a41-171">オプション手順 4: オプションの通知を設定する</span><span class="sxs-lookup"><span data-stu-id="06a41-171">(Optional) Step 4: Set the optional notifications</span></span>
+
+<span data-ttu-id="06a41-172">必要に応じて、自動化された通知およびエスカレーション通知を作成およびスケジュールすることによって、応答のない保管担当者をフォローアップするワークフローを簡略化できます。</span><span class="sxs-lookup"><span data-stu-id="06a41-172">Optionally, you can simplify the workflow for following up with unresponsive custodians by creating and scheduling automated reminder and escalation notifications.</span></span>
 
 ![アラーム/エスカレーションページ](../media/ReminderEscalations.PNG)
 
-### <a name="reminders"></a><span data-ttu-id="42ab1-172">リマインダー</span><span class="sxs-lookup"><span data-stu-id="42ab1-172">Reminders</span></span>
+### <a name="reminders"></a><span data-ttu-id="06a41-174">リマインダー</span><span class="sxs-lookup"><span data-stu-id="06a41-174">Reminders</span></span>
 
-<span data-ttu-id="42ab1-173">保留通知を送信した後は、通知ワークフローを定義することによって、応答のない保管担当者でフォローアップできます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-173">After you have sent a hold notification, you can follow-up with unresponsive custodians by defining a reminder workflow.</span></span> 
+<span data-ttu-id="06a41-175">保留通知を送信した後は、アラームのワークフローを定義することによって、応答のない保管担当者でフォローアップできます。</span><span class="sxs-lookup"><span data-stu-id="06a41-175">After you have sent a hold notification, you can follow up with unresponsive custodians by defining a reminder workflow.</span></span>
 
-<span data-ttu-id="42ab1-174">アラームをスケジュールするには</span><span class="sxs-lookup"><span data-stu-id="42ab1-174">To schedule reminders:</span></span>
+<span data-ttu-id="06a41-176">アラームをスケジュールするには</span><span class="sxs-lookup"><span data-stu-id="06a41-176">To schedule reminders:</span></span>
 
-1. <span data-ttu-id="42ab1-175">[**通知**] タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-175">In the **Reminder** tile, click **Edit**.</span></span>
-   
-2. <span data-ttu-id="42ab1-176">**ステータス**切り替え (必須) をオンにして、**アラーム**ワークフローを有効にします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-176">Enable the **Reminder** workflow by turning on the **Status** toggle (required).</span></span>
-   
-3. <span data-ttu-id="42ab1-177">通知の**間隔 (日数)** を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-177">Specify the **Reminder interval (in days)** (required).</span></span> <span data-ttu-id="42ab1-178">これは、最初のアラーム通知とフォローアップリマインダー通知を送信するまでの日数です。</span><span class="sxs-lookup"><span data-stu-id="42ab1-178">This is the number of days to wait before sending the first and follow-up reminder notifications.</span></span> <span data-ttu-id="42ab1-179">たとえば、通知の間隔を7日に設定した場合、最初の通知は、保留通知が最初に発行されてから7日後に送信されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-179">For example, if you set the reminder interval to 7 days, then the first reminder would be sent 7 days after the hold notification was initially issued.</span></span> <span data-ttu-id="42ab1-180">以降のすべてのアラームも7日ごとに送信されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-180">All subsequent reminders would also be sent every 7 days.</span></span>
-   
-4. <span data-ttu-id="42ab1-181">**アラームの数**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-181">Specify the **Number of reminders** (required).</span></span> <span data-ttu-id="42ab1-182">このフィールドには、応答のない保管担当者に送信される通知の数を指定します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-182">This field specifies how many reminders to send to un-responsive custodians.</span></span> <span data-ttu-id="42ab1-183">たとえば、アラームの数を3に設定すると、保管担当者は最大3つのリマインダーを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-183">For example, if you set the number of reminders to 3, then a custodian would receive a maximum of 3 reminders.</span></span> <span data-ttu-id="42ab1-184">保管担当者が保留通知を確認すると、そのユーザーに通知が送信されなくなります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-184">After a custodian acknowledges the hold notification, reminders will no longer be sent to that user.</span></span>
-   
-5. <span data-ttu-id="42ab1-185">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-185">Specify the **Subject** for the notice (required).</span></span> 
-   
-6. <span data-ttu-id="42ab1-186">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-186">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="42ab1-187">手順2で定義したポータルコンテンツがアラーム通知の最後に追加されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="42ab1-187">Note that the portal content you defined in Step 2 is added to the end of the reminder notice.</span></span>
-   
-7. <span data-ttu-id="42ab1-188">[**保存**] をクリックして、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-188">Click **Save** and go the the next step.</span></span>
+1. <span data-ttu-id="06a41-177">[**通知**] タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-177">In the **Reminder** tile, click **Edit**.</span></span>
 
-### <a name="escalations"></a><span data-ttu-id="42ab1-189">報告</span><span class="sxs-lookup"><span data-stu-id="42ab1-189">Escalations</span></span> 
+2. <span data-ttu-id="06a41-178">**ステータス**切り替え (必須) をオンにして、**アラーム**ワークフローを有効にします。</span><span class="sxs-lookup"><span data-stu-id="06a41-178">Enable the **Reminder** workflow by turning on the **Status** toggle (required).</span></span>
 
-<span data-ttu-id="42ab1-190">状況によっては、応答のない保管担当者でフォローアップするための別の方法が必要になることがあります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-190">In some situations, you may need additional ways to follow-up with unresponsive custodians.</span></span> <span data-ttu-id="42ab1-191">保管担当者が、指定された数のアラームを受信した後に保留通知を承認しない場合、法務チームは保管担当者とその上司にエスカレーション通知を自動的に送信するワークフローを指定できます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-191">If a custodian doesn't acknowledge a hold notification after receiving the specified number of reminders, the legal team can specify a workflow to automatically send an escalation notice to the custodian and their manager.</span></span>
+3. <span data-ttu-id="06a41-179">通知の**間隔 (日数)** を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-179">Specify the **Reminder interval (in days)** (required).</span></span> <span data-ttu-id="06a41-180">これは、最初のアラーム通知とフォローアップリマインダー通知を送信するまでの日数です。</span><span class="sxs-lookup"><span data-stu-id="06a41-180">This is the number of days to wait before sending the first and follow-up reminder notifications.</span></span> <span data-ttu-id="06a41-181">たとえば、通知の間隔を7日に設定した場合、最初の通知は、保留通知が最初に発行されてから7日後に送信されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-181">For example, if you set the reminder interval to seven days, then the first reminder would be sent seven days after the hold notification was initially issued.</span></span> <span data-ttu-id="06a41-182">以降のすべてのアラームも7日ごとに送信されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-182">All subsequent reminders would also be sent every seven days.</span></span>
 
-<span data-ttu-id="42ab1-192">エスカレーションをスケジュールするには</span><span class="sxs-lookup"><span data-stu-id="42ab1-192">To schedule escalations:</span></span>
+4. <span data-ttu-id="06a41-183">**アラームの数**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-183">Specify the **Number of reminders** (required).</span></span> <span data-ttu-id="06a41-184">このフィールドは、応答しない保管担当者に送信するアラームの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="06a41-184">This field specifies how many reminders to send to unresponsive custodians.</span></span> <span data-ttu-id="06a41-185">たとえば、アラームの数を3に設定すると、保管担当者は最大で3件のアラームを受信することになります。</span><span class="sxs-lookup"><span data-stu-id="06a41-185">For example, if you set the number of reminders to 3, then a custodian would receive a maximum of three reminders.</span></span> <span data-ttu-id="06a41-186">保管担当者が保留通知を確認すると、そのユーザーに通知が送信されなくなります。</span><span class="sxs-lookup"><span data-stu-id="06a41-186">After a custodian acknowledges the hold notification, reminders will no longer be sent to that user.</span></span>
 
-1. <span data-ttu-id="42ab1-193">**エスカレーション**タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-193">In the **Escalation** tile, click **Edit**.</span></span>
-   
-2. <span data-ttu-id="42ab1-194">**状態**の切り替えをオンにして、**エスカレーション**ワークフローを有効にします。</span><span class="sxs-lookup"><span data-stu-id="42ab1-194">Enable the **Escalation** workflow by turning on the **Status** toggle.</span></span>
-   
-3. <span data-ttu-id="42ab1-195">エスカレーションの**間隔 (日数)** を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-195">Specify the **Escalation interval (in days)** (required).</span></span> 
-   
-4. <span data-ttu-id="42ab1-196">**エスカレーションの数**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-196">Specify the **Number of escalations** (required).</span></span> <span data-ttu-id="42ab1-197">このフィールドには、応答のない保管担当者に送信するエスカレーションの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-197">This field specifies how many escalations to send to un-responsive custodians.</span></span> <span data-ttu-id="42ab1-198">たとえば、エスカレーション数を3に設定すると、エスカレーション通知が保管担当者に送信され、そのマネージャーは最大3回送信されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-198">For example, if you set the number of escalations to 3, then an escalation notice would be sent to the custodian and their manager a maximum of 3 times.</span></span> <span data-ttu-id="42ab1-199">保管担当者が保留通知を確認すると、エスカレーションは送信されなくなります。</span><span class="sxs-lookup"><span data-stu-id="42ab1-199">After a custodian acknowledges the hold notification, escalations will no longer be sent.</span></span> 
-   
-5. <span data-ttu-id="42ab1-200">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-200">Specify the **Subject** for the notice (required).</span></span> 
-   
-6. <span data-ttu-id="42ab1-201">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="42ab1-201">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="42ab1-202">手順2で定義したポータルコンテンツがエスカレーション通知の末尾に追加されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="42ab1-202">Note that the portal content you defined in Step 2 is added to the end of the escalation notice.</span></span>
-   
-7. <span data-ttu-id="42ab1-203">[**保存**] をクリックして、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-203">Click **Save** and go the the next step.</span></span>
-   
-## <a name="step-5-assign-custodians"></a><span data-ttu-id="42ab1-204">手順 5: 保管担当者を割り当てる</span><span class="sxs-lookup"><span data-stu-id="42ab1-204">Step 5: Assign custodians</span></span> 
+5. <span data-ttu-id="06a41-187">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-187">Specify the **Subject** for the notice (required).</span></span> 
 
-<span data-ttu-id="42ab1-205">通知の内容を完了したら、通知を送信する保管担当者を選択します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-205">After you have finalized the content for notifications, select the custodians that you would like to send the notifications.</span></span> 
+6. <span data-ttu-id="06a41-188">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-188">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="06a41-189">手順2で定義したポータルコンテンツが、アラーム通知の最後に追加されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-189">The portal content you defined in Step 2 is added to the end of the reminder notice.</span></span>
+
+7. <span data-ttu-id="06a41-190">[**保存**] をクリックして、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="06a41-190">Click **Save** and go the next step.</span></span>
+
+### <a name="escalations"></a><span data-ttu-id="06a41-191">報告</span><span class="sxs-lookup"><span data-stu-id="06a41-191">Escalations</span></span>
+
+<span data-ttu-id="06a41-192">状況によっては、応答のない保管担当者については、さらに別の方法が必要になることがあります。</span><span class="sxs-lookup"><span data-stu-id="06a41-192">In some situations, you may need additional ways to follow up with unresponsive custodians.</span></span> <span data-ttu-id="06a41-193">保管担当者が、指定された数のアラームを受信した後に保留通知を承認しない場合、法務チームは保管担当者とその上司にエスカレーション通知を自動的に送信するワークフローを指定できます。</span><span class="sxs-lookup"><span data-stu-id="06a41-193">If a custodian doesn't acknowledge a hold notification after receiving the specified number of reminders, the legal team can specify a workflow to automatically send an escalation notice to the custodian and their manager.</span></span>
+
+<span data-ttu-id="06a41-194">エスカレーションをスケジュールするには</span><span class="sxs-lookup"><span data-stu-id="06a41-194">To schedule escalations:</span></span>
+
+1. <span data-ttu-id="06a41-195">**エスカレーション**タイルで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06a41-195">In the **Escalation** tile, click **Edit**.</span></span>
+
+2. <span data-ttu-id="06a41-196">**状態**の切り替えをオンにして、**エスカレーション**ワークフローを有効にします。</span><span class="sxs-lookup"><span data-stu-id="06a41-196">Enable the **Escalation** workflow by turning on the **Status** toggle.</span></span>
+
+3. <span data-ttu-id="06a41-197">エスカレーションの**間隔 (日数)** を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-197">Specify the **Escalation interval (in days)** (required).</span></span>
+
+4. <span data-ttu-id="06a41-198">**エスカレーションの数**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-198">Specify the **Number of escalations** (required).</span></span> <span data-ttu-id="06a41-199">このフィールドは、応答しない保管担当者に送信するエスカレーションの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="06a41-199">This field specifies how many escalations to send to unresponsive custodians.</span></span> <span data-ttu-id="06a41-200">たとえば、エスカレーション数を3に設定すると、エスカレーション通知が保管担当者に送信され、その上司は最大で3回送信されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-200">For example, if you set the number of escalations to 3, then an escalation notice would be sent to the custodian and their manager a maximum of three times.</span></span> <span data-ttu-id="06a41-201">保管担当者が保留通知を確認すると、エスカレーションは送信されなくなります。</span><span class="sxs-lookup"><span data-stu-id="06a41-201">After a custodian acknowledges the hold notification, escalations will no longer be sent.</span></span>
+
+5. <span data-ttu-id="06a41-202">通知の**件名**を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-202">Specify the **Subject** for the notice (required).</span></span> 
+
+6. <span data-ttu-id="06a41-203">保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。</span><span class="sxs-lookup"><span data-stu-id="06a41-203">Specify the contents or additional instructions that you would like to provide to the custodian (required).</span></span> <span data-ttu-id="06a41-204">手順2で定義したポータルコンテンツがエスカレーション通知の最後に追加されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-204">The portal content you defined in Step 2 is added to the end of the escalation notice.</span></span>
+
+7. <span data-ttu-id="06a41-205">[**保存**] をクリックして、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="06a41-205">Click **Save** and go the next step.</span></span>
+
+## <a name="step-5-assign-custodians-to-receive-notifications"></a><span data-ttu-id="06a41-206">手順 5: 通知を受信するように保管担当者を割り当てる</span><span class="sxs-lookup"><span data-stu-id="06a41-206">Step 5: Assign custodians to receive notifications</span></span>
+
+<span data-ttu-id="06a41-207">通知の内容を完了したら、通知を送信する保管担当者を選択します。</span><span class="sxs-lookup"><span data-stu-id="06a41-207">After you have finalized the content for notifications, select the custodians that you would like to send notifications to.</span></span> 
 
 ![保管担当者ページの選択](../media/SelectCustodians.PNG)
 
-<span data-ttu-id="42ab1-207">保管担当者を追加するには</span><span class="sxs-lookup"><span data-stu-id="42ab1-207">To add custodians:</span></span>
+<span data-ttu-id="06a41-209">保管担当者を追加するには</span><span class="sxs-lookup"><span data-stu-id="06a41-209">To add custodians:</span></span>
 
-1. <span data-ttu-id="42ab1-208">名前の横にあるチェックボックスをオンにして、保管担当者を通信に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-208">Assign custodians to the communication by clicking the checkbox next to their name.</span></span>
+1. <span data-ttu-id="06a41-210">名前の横にあるチェックボックスをオンにして、保管担当者を通信に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="06a41-210">Assign custodians to the communication by clicking the checkbox next to their name.</span></span>
 
-    <span data-ttu-id="42ab1-209">通信が作成されると、選択した保管担当者に通知ワークフローが自動的に適用されます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-209">After the communication is created, the notification workflow will automatically apply to the selected custodians.</span></span>
-   
-2. <span data-ttu-id="42ab1-210">[**次**へ] をクリックして、通信設定と詳細を確認します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-210">Click **Next** to review the communication settings and details.</span></span>
- 
+    <span data-ttu-id="06a41-211">通信が作成されると、選択した保管担当者に通知ワークフローが自動的に適用されます。</span><span class="sxs-lookup"><span data-stu-id="06a41-211">After the communication is created, the notification workflow will automatically apply to the selected custodians.</span></span>
+
+2. <span data-ttu-id="06a41-212">[**次**へ] をクリックして、通信設定と詳細を確認します。</span><span class="sxs-lookup"><span data-stu-id="06a41-212">Click **Next** to review the communication settings and details.</span></span>
+
 >[!NOTE]
-><span data-ttu-id="42ab1-211">保管担当者は、ケースに追加されていて、ケース内で別の通知が送信されていない場合にのみ追加できます。</span><span class="sxs-lookup"><span data-stu-id="42ab1-211">You can only add custodians who have been added to the case and haven't been sent another notification within the case.</span></span>
+><span data-ttu-id="06a41-213">保管担当者は、ケースに追加されていて、ケース内で別の通知が送信されていない場合にのみ追加できます。</span><span class="sxs-lookup"><span data-stu-id="06a41-213">You can only add custodians who have been added to the case and haven't been sent another notification within the case.</span></span>
 
-## <a name="step-6-review-settings"></a><span data-ttu-id="42ab1-212">手順 6: 設定を確認する</span><span class="sxs-lookup"><span data-stu-id="42ab1-212">Step 6: Review settings</span></span>
+## <a name="step-6-review-settings"></a><span data-ttu-id="06a41-214">手順 6: 設定を確認する</span><span class="sxs-lookup"><span data-stu-id="06a41-214">Step 6: Review settings</span></span>
 
-<span data-ttu-id="42ab1-213">設定を確認し、[**送信**] をクリックして通信を完了すると、システムは、発行通知を送信することによって、自動的に通信ワークフローを開始します。</span><span class="sxs-lookup"><span data-stu-id="42ab1-213">After you review the settings and click **Send** to complete the communication, the system will automatically start the communication workflow by sending the issuance notice.</span></span>
+<span data-ttu-id="06a41-215">設定を確認し、[**送信**] をクリックして通信を完了すると、システムは、発行通知を送信することによって、自動的に通信ワークフローを開始します。</span><span class="sxs-lookup"><span data-stu-id="06a41-215">After you review the settings and click **Send** to complete the communication, the system will automatically start the communication workflow by sending the issuance notice.</span></span>
+
+## <a name="events-that-trigger-notifications"></a><span data-ttu-id="06a41-216">通知を発生させるイベント</span><span class="sxs-lookup"><span data-stu-id="06a41-216">Events that trigger notifications</span></span>
+
+<span data-ttu-id="06a41-217">次の表では、さまざまな種類の通知が保管担当者に送信されたときにトリガーされる、ケース管理プロセスのイベントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="06a41-217">The following table describes events in the case management process that trigger when the different types of notifications are sent to custodians.</span></span>
+
+|<span data-ttu-id="06a41-218">通信の種類</span><span class="sxs-lookup"><span data-stu-id="06a41-218">Type of communication</span></span>|<span data-ttu-id="06a41-219">Trigger</span><span class="sxs-lookup"><span data-stu-id="06a41-219">Trigger</span></span> |
+|:---------|:---------|
+|<span data-ttu-id="06a41-220">発行通知</span><span class="sxs-lookup"><span data-stu-id="06a41-220">Issuance notices</span></span>|<span data-ttu-id="06a41-221">最初に通知を作成します。</span><span class="sxs-lookup"><span data-stu-id="06a41-221">The initial creation of the notification.</span></span> <span data-ttu-id="06a41-222">保留通知を手動で再送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="06a41-222">You can also manually resend a hold notification.</span></span> |
+|<span data-ttu-id="06a41-223">再発行の通知</span><span class="sxs-lookup"><span data-stu-id="06a41-223">Re-issuance notices</span></span>|<span data-ttu-id="06a41-224">**通信の編集**ウィザードの [**ポータルコンテンツの定義**] ページでポータルコンテンツを更新します。</span><span class="sxs-lookup"><span data-stu-id="06a41-224">Updating the portal content on the **Define Portal Content** page in the **Edit communication** wizard.</span></span>|
+|<span data-ttu-id="06a41-225">リリース通知</span><span class="sxs-lookup"><span data-stu-id="06a41-225">Release notices</span></span>|<span data-ttu-id="06a41-226">保管担当者がケースからリリースされます。</span><span class="sxs-lookup"><span data-stu-id="06a41-226">The custodian is released from the case.</span></span>|
+|<span data-ttu-id="06a41-227">リマインダー</span><span class="sxs-lookup"><span data-stu-id="06a41-227">Reminders</span></span>|<span data-ttu-id="06a41-228">アラームに対して構成された通知の間隔と数。</span><span class="sxs-lookup"><span data-stu-id="06a41-228">The interval and number of reminders configured for the reminder.</span></span>|
+|<span data-ttu-id="06a41-229">報告</span><span class="sxs-lookup"><span data-stu-id="06a41-229">Escalations</span></span>|<span data-ttu-id="06a41-230">エスカレーションに対して構成された通知の間隔と数。</span><span class="sxs-lookup"><span data-stu-id="06a41-230">The interval and number of reminders configured for the escalation.</span></span>|
+|||
