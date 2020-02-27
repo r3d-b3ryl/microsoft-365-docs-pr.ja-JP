@@ -17,32 +17,36 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 5946fc193b0f96501a2f8168eef0d3e694d9cfcb
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 5d9b5a493b44ef4453906f1601481a6aa89c3884
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830981"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288535"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
-このプレビューの前に、SharePoint および OneDrive に格納されている Office ファイルへの暗号化を含む機密ラベルを適用すると、サービスはこれらのファイルのコンテンツを処理できませんでした。 このような状況では、共同編集、電子情報開示、データ損失防止、検索、Delve、その他のコラボレーション機能は使用できません。 次のプレビューでは、クラウドベースのキーで暗号化が適用されている場合に、次の機能が有効になります。
+このプレビューの前に、SharePoint および OneDrive に格納されている Office ファイルへの暗号化を含む機密ラベルを適用すると、サービスはこれらのファイルのコンテンツを処理できませんでした。 このような状況では、共同編集、電子情報開示、データ損失防止、検索、Delve、その他のコラボレーション機能は使用できません。 このプレビューでは、クラウドベースのキーを使用した暗号化を含む、機密ラベルが適用された新規ファイルおよび変更されたファイルに対して次の機能が有効になります。
 
-- SharePoint は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルに適用される機密ラベルを認識します。 SharePoint では、各ラベルに対応する設定も適用されます。
+- Sharepoint は、sharepoint および OneDrive の Word、Excel、および PowerPoint ファイルに適用される機密ラベルを認識します。ファイルが SharePoint に格納されている間は、ファイルの内容を処理できるように、Azure Information Protection からの暗号化が削除されます。その後、ファイルがダウンロードされると、ラベルの暗号化設定が再適用されます。 ドキュメントがダウンロードされる前に保護される方法については、「 [OneDrive for business および SharePoint Online のデータ暗号化](data-encryption-in-odb-and-spo.md)」を参照してください。
+ 
+- アップロード時に SharePoint がファイルを復号化するには、ラベル付きおよび暗号化されたファイルをアップロードするユーザーに、少なくともファイルを表示するための使用権限が必要です。 Sharepoint では、ユーザーが SharePoint の外部で開くことができないファイルは復号化されません。
 
-- SharePoint または OneDrive からファイルをダウンロードすると、機密ラベルがファイルと共に移動し、設定が適用されたままになります。
+- SharePoint または OneDrive からファイルをダウンロードするか、またはファイルにアクセスすると、ファイルの保存時に機密ラベルと暗号化の設定が再適用されます。これらの設定は、ファイルを保存するときに常に適用されます。
 
-- Office ファイルに機密ラベルを適用し、機密ラベルが適用されている (ラベルのアクセス許可が許可されている場合) ファイルを開いて編集するには、Word、Excel、および PowerPoint の web バージョンを使用します。 Word on the web では、ドキュメントを編集するときに自動ラベル付けを使用することもできます。
+- Web 上の Office (Word、Excel、PowerPoint) を使用して、暗号化を適用する機密ラベルが設定された Office ファイルを開いて編集します。 暗号化によって割り当てられたアクセス許可が適用されます。 Word on the web では、これらのドキュメントを編集するときに自動ラベル付けを使用することもできます。
 
-- Office 365 eDiscovery は、機密ラベルが適用されているファイル内のフルテキスト検索をサポートします。 データ損失防止 (DLP) ポリシーは、これらのファイルの内容を対象としています。
+- Office 365 電子情報開示では、これらのファイルのフルテキスト検索がサポートされています。 データ損失防止 (DLP) ポリシーは、これらのファイルの内容を対象としています。
 
-- 機密ラベルの監視に使用できる3つの新しい監査イベントがあります。
-  - FileSensitivityApplied
-  - FileSensitivityLabelChanged
-  - FileSensitivityLabelRemoved
+- Web 上の Office を使用して適用される機密ラベルを監視するには、次の3つの新しい[監査イベント](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)を使用できます。
+  - **ファイルに適用された機密ラベル**
+  - **ファイルに適用された機密ラベルの変更**
+  - **ファイルから削除された機密ラベル**
 
 > [!NOTE]
-> クラウドベースのキーで暗号化が適用されておらず、オンプレミスキーであっても、"自分のキーを保持する" と呼ばれるキー管理トポロジ (HYOK) では、SharePoint の動作はこのプレビューでは変更されません。 
+> クラウドベースのキーで暗号化が適用されておらず、オンプレミスキーであっても、"自分のキーを保持する" と呼ばれるキー管理トポロジ (HYOK) では、SharePoint の動作はこのプレビューでは変更されません。
+>
+> プレビューを有効にする前に、sharepoint の既存のラベル付きファイルと暗号化されたファイルについても SharePoint の動作は変わりません。 これらのファイルが新機能を利用できるようにするには、プレビューを有効にした後、それらのファイルをダウンロードしてアップロードするか、編集する必要があります。 たとえば、それらは検索と電子情報開示の結果として返されます。
 
 また、Microsoft Teams、Office 365 グループ、および SharePoint サイトに機密ラベルを適用できるようになりました。 この個別のプレビューの詳細については、「 [Microsoft Teams、Office 365 グループ、および SharePoint サイト (パブリックプレビュー) を使用して機密ラベルを使用する](sensitivity-labels-teams-groups-sites.md)」を参照してください。
 
@@ -52,7 +56,7 @@ ms.locfileid: "41830981"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 これらの機能は、[機密ラベル](sensitivity-labels.md)に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -66,7 +70,7 @@ ms.locfileid: "41830981"
     - ラベルを適用するには、Office アプリの web 版を使用します。
     - ラベルを適用した後、ファイルを閉じてから、他の変更を行うためにファイルを開きます。
 
-- SharePoint では、Azure Information Protection ラベルを使用して既に暗号化されている既存のファイルに新しいラベルが自動的に適用されることはありません。 代わりに、このプレビューを有効にした後で機能を使用できるようにするには、次のタスクを完了します。
+- SharePoint では、Azure Information Protection ラベルを使用して既に暗号化されている既存のファイルに機密ラベルが自動的に適用されることはありません。 代わりに、このプレビューを有効にした後で機能を使用できるようにするには、次のタスクを完了します。
     
     1. Azure Information Protection ラベルを機密ラベルに移行し、Microsoft 365 コンプライアンスセンター (または同等のラベル付き管理センター) から公開していることを確認してください。
     
@@ -89,6 +93,8 @@ ms.locfileid: "41830981"
 - 次の方法で暗号化されたドキュメントは、web 上の Office で開くことができません。
     - オンプレミスキー ("自分のキーを保持する" または HYOK) を使用する暗号化
     - ラベルとは独立して適用された暗号化。たとえば、Rights Management protection テンプレートを直接適用します。
+
+- SharePoint でドキュメントに適用されているラベルを削除する場合、該当するラベルポリシーからラベルを削除するのではなく、ダウンロードしたドキュメントがラベル付けまたは暗号化されないようにします。 比較すると、ラベル付きドキュメントが SharePoint の外部に保存されている場合、ラベルが削除されてもドキュメントは暗号化されたままになります。 テストフェーズではラベルを削除することもできますが、運用環境でラベルを削除するのは非常にまれです。
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>プレビュー用の SharePoint Online 管理シェルの準備
 

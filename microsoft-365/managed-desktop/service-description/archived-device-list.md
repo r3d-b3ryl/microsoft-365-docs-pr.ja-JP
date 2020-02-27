@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085786"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284368"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
@@ -35,9 +35,12 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 | モデル  | 最小仕様  | 追加要件   | 定年後の日付 |
 |---------|---------|---------|---------|
+| Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2023年1月9日** |
+| Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB RAM   | 必要な赤外線カメラ | **2023年1月9日** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年2月15日** |
 |HP エリート x2 1013 G3| 256 GB/Intel i5/8 GB RAM | 5VS03AV、IR カメラが必要な SKU |**2023年5月14日** |
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU |**2023年5月14日** |
+|HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | **2023年10月23日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | なし | **2022年11月16日** |
 |Surface のノートブック| 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |
 |Surface Pro| 256 GB/Intel i5/8 GB RAM | なし | **2022年6月15日** |
@@ -47,7 +50,7 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 - Microsoft マネージドデスクトップによって承認されたイメージがあること。 デバイスを注文するときは、Microsoft マネージドデスクトップで使用されていることを確認してください。
 - Windows 初回実行時の動作が完了していません。
-- [デバイス登録](https://aka.ms/mmddrhelp)機能を使用して Microsoft Managed Destkop に登録されている
+- [デバイス登録](https://aka.ms/mmddrhelp)機能を使用して Microsoft マネージドデスクトップに登録する
 
 #### <a name="additional-help"></a>その他のヘルプ
 

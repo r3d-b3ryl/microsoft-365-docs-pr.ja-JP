@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: b94a09757cf6e7126a6b7cc73ac5cc0930d1ea2e
-ms.sourcegitcommit: 08f9af6cd98e2de4bb634b90f5630e6a66676497
+ms.openlocfilehash: b385e5cae1f78f300655dd5c3a0dbf584dc69256
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42157379"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288495"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
@@ -151,4 +151,4 @@ IT 部門およびパートナーは、セルフサービス購入を通じて�
 
 ### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>どの国でセルフサービス購入を行うことができますか。
 
-セルフサービス購入は、オーストラリア、カナダ、フランス、ドイツ、日本、英国、および米国の各国でご利用いただけます。
+セルフサービス購入は、次の国で利用できます: オーストラリア、オーストリア、ベルギー、ブルガリア、カナダ、クロアチア、キプロス、チェコ共和国、デンマーク、エストニア、フィンランド、フランス、ドイツ、ギリシャ、ハンガリー、アイスランド、アイルランド、イタリア、日本、ラトビア、リトアニア、ルクセンブルク、マルタ、オランダ、ノルウェー、ポーランド、ポルトガル、ルーマニア、スロバキア、スロベニア、スペイン、スウェーデン、スイス、英国、および米国。

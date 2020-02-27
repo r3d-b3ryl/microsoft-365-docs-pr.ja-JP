@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.custom: air
+ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262014"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288475"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -28,7 +29,9 @@ ms.locfileid: "42262014"
 
 ## <a name="the-overall-flow-of-air"></a>AIR の全体的な流れ
 
-AIR の流れは大まかには次のようになります。
+アラートがトリガーされ、セキュリティのプレイブックが開始されます。これにより、自動調査が開始されます。 または、セキュリティアナリストが脅威エクスプローラーを使用して、自動化された調査をトリガーします。 自動調査が実行され、通常は特定の修復アクションが識別されます。 これらのアクションは、セキュリティ運用チームによってレビューおよび承認され、調査が完了します。 
+
+次の表では、空気の全体的な流れについて順を追って説明します。
 
 |手順  |結果  |
 |---------|---------|

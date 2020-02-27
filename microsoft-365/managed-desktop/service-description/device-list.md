@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d1838a15566c6d985d437f84f1691c600ff6ce41
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: c781d86c13165ac51dfee57b1c2cf3e9e536d3d5
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278753"
+ms.locfileid: "42284358"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -35,24 +35,24 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2020年5月22日  | 2023年5月22日 |
 | [Dell Latitude 5300](https://www.dell.com/en-us/work/shop/laptops/13-5300/spd/latitude-13-5300-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年6月1日  | 2024年6月1日  |
-| [Dell Latitude 5300 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/13-5300-2-in-1/spd/latitude-13-5300-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
+| **\*[Dell Latitude 5300 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/13-5300-2-in-1/spd/latitude-13-5300-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
 | [Dell Latitude 5400](https://www.dell.com/en-us/work/shop/laptops/14-5400/spd/latitude-14-5400-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年6月1日  | 2024年6月1日  |
 | [Dell Latitude 5500](https://www.dell.com/en-us/work/shop/laptops/15-5500/spd/latitude-15-5500-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年6月1日  | 2024年6月1日  |
 | [Dell Latitude 7200 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/12-7200-2-in-1/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
 | [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
 | [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
-| [Dell Latitude 7400 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
+| **\*[Dell Latitude 7400 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
 | [HP EliteBook 830/840/850 G6 ノートブック PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP EliteBook x360 830 G6 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU | 2020年11月30日 | 2023年11月30日 |
 | **\*[HP のエリート x2 G4 タブレット](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB/Intel i5/8 GB RAM | 5VS03AV の SKU | 2021年7月31日 | 2024年7月31日 |
 | **\*[HP EliteBook x360 1030 G4 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB/Intel i5/8 GB RAM | 5VS01AV の SKU | 2021年2月28日 | 2024年2月28日 |
-| [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | 2020年10月23日 | 2023年10月23日 |
+| **\*[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040)** | 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
 | [AIO の HP EliteOne 800 G4 23.8](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV、IR カメラまたは指紋リーダが必要な SKU | 2020年6月6日 | 2023年6月6日 |
-| **\*[HP Z2 Mini G4 ワークステーション](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1)** | 256 GB/Intel i5/8 GB RAM | 8QR48AV の SKU| 2021年1月31日 | 2024年1月31日 |
-|**\*[HP ZBook 14u/15u G6 モバイルワークステーション](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation)** | 256 GB/Intel i5/8 GB RAM | 5VS02AV、IR カメラが必要な SKU | 2020年11月30日 | 2023年11月30日 |
+| [HP Z2 Mini G4 ワークステーション](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB RAM | 8QR48AV の SKU| 2021年1月31日 | 2024年1月31日 |
+|[HP ZBook 14u/15u G6 モバイルワークステーション](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB RAM | 5VS02AV、IR カメラが必要な SKU | 2020年11月30日 | 2023年11月30日 |
 | [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 44 15Y/8GB RAM | なし | 2020年8月2時 | 2023年8月2時 |
 | [Surface Pc 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | なし | 10月 16 2020 | 10月 16 2023 |
 | **\*[Surface Pc 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB RAM | なし | 2021年10月22日 | 2024年10月22日 |

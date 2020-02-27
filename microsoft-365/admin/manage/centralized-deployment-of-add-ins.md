@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Office の365テナントとユーザーが要件を満たしているかどうかを確認します。これにより、一元展開を使用して Office アドインを展開できます。
-ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278763"
+ms.locfileid: "42284388"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -84,7 +84,7 @@ Office 365 ProPlus のヘルプについては、「[Office 365 ProPlus での�
 
 ### <a name="exchange-online-requirements"></a>Exchange Online の要件
 
-Microsoft Exchange では、アドインのマニフェストが組織のテナントに格納されます。 管理者がアドインを展開し、アドインを受信するユーザーは、OAuth 認証をサポートする Exchange Online のバージョンになっている必要があります。 既定では、Exchange のマルチテナントと専用の VNext 展開は OAuth をサポートしています。 
+Microsoft Exchange では、アドインのマニフェストが組織のテナントに格納されます。 管理者がアドインを展開し、アドインを受信するユーザーは、OAuth 認証をサポートする Exchange Online のバージョンになっている必要があります。
   
 組織の Exchange 管理者に、どの構成を使用できるのかを確認してください。ユーザーごとの OAuth 認証接続は、[Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell コマンドレットを使用して、検証できます。 
 

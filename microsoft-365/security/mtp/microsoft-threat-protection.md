@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ef68143d185b6b716b8b5c8213b1e4f3ea1a5abd
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235076"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288595"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -34,6 +34,17 @@ ms.locfileid: "42235076"
 Microsoft の脅威保護は、エンドポイント、id、電子メール、およびアプリケーションによってネイティブに統合する、統合された事前違反のエンタープライズ防衛スイートであり、高度な攻撃を検出、阻止、調査、および自動応答します。  
 
 統合された Microsoft の脅威保護ソリューションを使用することで、セキュリティ担当者は、これらの各製品が脅威のすべての範囲と影響を受信して判断することを伝える脅威に対して協力することができます。環境にどのように対応したか、どのような影響を受けるか、どのように組織にどのように影響しているか。 Microsoft の脅威保護は、攻撃を阻止または停止したり、影響を受けるメールボックス、エンドポイント、ユーザー id を自己回復させるための自動操作を行います。  
+
+
+<center><h2>Microsoft Threat Protection サービス</center></h2>
+<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender Advanced Threat Protection</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 Advanced Threat Protection</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure Advanced Threat Protection</b></a></center></td>
+<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
+</tr>
+</table>
+<br>
+
 
 
 Microsoft Threat Protection スイートは以下を保護します。 
@@ -65,17 +76,8 @@ Microsoft の脅威保護の製品間の機能には、次のようなものが�
 - 侵害された**デバイス、ユーザー id、メールボックスに対する自己復旧**-Microsoft の脅威保護は、影響を受けた自動アクションおよびプレイブックを使用して、影響を受けるアセットをセキュリティで保護された状態に戻します。 Microsoft の脅威保護は、スイート製品の自動修復機能を活用して、インシデントに関連する影響を受けるすべての資産が可能な場合に自動的に修復されるようにします。
 - **クロス積脅威**検索-セキュリティチームは、さまざまな保護製品によって収集された生データに対して独自のカスタムクエリを作成することによって、組織の独自の知識を活用して、侵害の兆候を探すことができます。 Microsoft の脅威保護では、エンドポイントと Office 365 の ATP データに対して、30日間の履歴生信号およびアラートデータに対するクエリベースのアクセスが提供されています。 
 
-<center><h2>Microsoft Threat Protection サービス</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender Advanced Threat Protection</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 Advanced Threat Protection</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure Advanced Threat Protection</b></a></center></td>
-<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
-</tr>
-</table>
-<br>
-
 
 ## <a name="get-started"></a>概要
-Microsoft 365 E5 または同等のライセンスをお持ちのお客様は、Microsoft Threat Protection を使用できます。 開始するには、 [security.microsoft.com](https://security.microsoft.com)の Microsoft 365 セキュリティセンターでサービスを有効にします。 詳細については、以下を参照してください。
+Microsoft 365 セキュリティセンターの[security.microsoft.com](https://security.microsoft.com)でサービスを有効にするには、Microsoft の脅威保護ライセンスの要件を満たす必要があります。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

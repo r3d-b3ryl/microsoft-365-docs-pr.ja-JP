@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ba50572405da05359594fea85fdba2d28f3b141b
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235226"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288545"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -36,11 +36,11 @@ ms.locfileid: "42235226"
 Microsoft の脅威保護をプロビジョニングおよび使用するためのライセンス、ハードウェア要件、ソフトウェア要件、およびその他の構成設定について説明します。
 
 ## <a name="licensing-requirements"></a>ライセンス要件
-Microsoft の脅威保護を使用するには、次のいずれかのライセンスまたはライセンスの組み合わせが必要です。
+Microsoft の脅威保護を使用するには、次の*いずれか*のライセンスまたはライセンスの組み合わせが必要です。
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Security
-- Office 365 E5、Enterprise Mobility + Security E5、および Windows E5
+- Office 365 E5 および "Enterprise Mobility + Security E5 (EMS E5)" および Windows E5
 
 [Microsoft 365 Enterprise service プランを表示する](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 
