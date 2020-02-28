@@ -2,7 +2,7 @@
 title: Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)
 f1.keywords:
 - NOCSH
-ms.author: krowley
+ms.author: cabailey
 author: cabailey
 manager: laurawi
 ms.date: ''
@@ -17,91 +17,44 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams、Office 365 グループ、SharePoint サイトにラベルを適用することができます。
-ms.openlocfilehash: 297ccd3e17f6c5a747e18a46747e6f2c23311df0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 611876b7e403c8d877c602d21967675adef2d061
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069818"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288580"
 ---
-# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a><span data-ttu-id="88f94-103">Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)</span><span class="sxs-lookup"><span data-stu-id="88f94-103">Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)</span></span>
+# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a><span data-ttu-id="2aa11-103">Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)</span><span class="sxs-lookup"><span data-stu-id="2aa11-103">Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)</span></span>
 
-<span data-ttu-id="88f94-104">[Microsoft 365 コンプライアンス センター](https://protection.office.com/)で機密ラベルを作成する場合、Microsoft Teams、Office 365 グループ、SharePoint サイトへと適用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="88f94-104">When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to Microsoft Teams, Office 365 groups, and SharePoint sites.</span></span> <span data-ttu-id="88f94-105">ポリシーをラベルに関連付けることで、以下を制御できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-105">You can associate policies with the labels to control:</span></span>
+<span data-ttu-id="2aa11-104">[Microsoft 365 コンプライアンス センター](https://protection.office.com/)で機密ラベルを作成する場合、次のコンテナーへと適用できるようになりました: Microsoft Teams、Office 365 グループ、SharePoint サイト。</span><span class="sxs-lookup"><span data-stu-id="2aa11-104">When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams, Office 365 groups, and SharePoint sites.</span></span> <span data-ttu-id="2aa11-105">ラベル設定を使用して、これらのコンテナーの次のオプションを制御します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-105">Use label settings to control the following options for these containers:</span></span>
 
-- <span data-ttu-id="88f94-106">パブリック/プライベート設定</span><span class="sxs-lookup"><span data-stu-id="88f94-106">Public/private settings</span></span>
-- <span data-ttu-id="88f94-107">ゲスト アクセス</span><span class="sxs-lookup"><span data-stu-id="88f94-107">Guest access</span></span>
-- <span data-ttu-id="88f94-108">非管理対象デバイスからのアクセス</span><span class="sxs-lookup"><span data-stu-id="88f94-108">Access from unmanaged devices</span></span>
+- <span data-ttu-id="2aa11-106">Office 365 グループに接続されているチーム サイトのプライバシー(パブリックまたはプライベート)</span><span class="sxs-lookup"><span data-stu-id="2aa11-106">Privacy of Office 365 group-connected teams sites (public or private)</span></span>
+- <span data-ttu-id="2aa11-107">外部ユーザーのアクセス</span><span class="sxs-lookup"><span data-stu-id="2aa11-107">External users access</span></span>
+- <span data-ttu-id="2aa11-108">非管理対象デバイスからのアクセス</span><span class="sxs-lookup"><span data-stu-id="2aa11-108">Access from unmanaged devices</span></span> 
 
-<span data-ttu-id="88f94-109">ラベルをチームまたはグループに適用すると、ラベルは接続された SharePoint チーム サイトに自動的に適用され、その逆の場合にも同様に適用されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-109">When you apply a label to a team or group, the label automatically applies to the connected SharePoint team site and the other way around.</span></span>
+<span data-ttu-id="2aa11-109">サポートされているコンテナーの 1 つにこのラベルを適用すると、構成済みオプションが接続された SharePoint サイトまたはチーム サイトに自動的に適用されます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-109">When you apply this label to one of the supported containers, the label automatically applies the configured options to the connected SharePoint site or team site.</span></span> 
 
-<span data-ttu-id="88f94-110">また、SharePoint および OneDrive で Office ファイルの機密ラベルを有効にできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="88f94-110">You can now also enable sensitivity labels for Office files in SharePoint and OneDrive.</span></span> <span data-ttu-id="88f94-111">詳細については、「[SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-111">For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).</span></span>
+<span data-ttu-id="2aa11-110">ただし、これらのコンテナーのコンテンツは、ラベル名、視覚的なマーキング、暗号化などの設定のラベルを継承しません。</span><span class="sxs-lookup"><span data-stu-id="2aa11-110">Content in those containers however, do not inherit the labels for settings such as the label name, visual markings, or encryption.</span></span> <span data-ttu-id="2aa11-111">SharePoint サイトまたはチーム サイトのファイルにラベルを付けるには、[SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にします](sensitivity-labels-sharepoint-onedrive-files.md)。</span><span class="sxs-lookup"><span data-stu-id="2aa11-111">To label files in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).</span></span>
 
-## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a><span data-ttu-id="88f94-112">Microsoft Teams、Office 365 グループ、および SharePoint サイトのパブリック プレビューについて</span><span class="sxs-lookup"><span data-stu-id="88f94-112">About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites</span></span>
+## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a><span data-ttu-id="2aa11-112">Microsoft Teams、Office 365 グループ、および SharePoint サイトのパブリック プレビューについて</span><span class="sxs-lookup"><span data-stu-id="2aa11-112">About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites</span></span>
 
-<span data-ttu-id="88f94-113">Microsoft Teams、Office 365 グループ、および SharePoint サイト向けの機密ラベルは徐々にテナントへと展開され、最終リリース前に変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-113">Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are gradually rolling out to tenants and might change before final release.</span></span>
+<span data-ttu-id="2aa11-113">Microsoft Teams、Office 365 グループ、および SharePoint サイト向けの機密ラベルは徐々にテナントへと展開され、最終リリース前に変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-113">Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are gradually rolling out to tenants and might change before final release.</span></span> <span data-ttu-id="2aa11-114">このパブリック プレビューは、Office 365 コンテンツ配信ネットワーク (CDN) では機能しません。</span><span class="sxs-lookup"><span data-stu-id="2aa11-114">This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).</span></span>
 
-<span data-ttu-id="88f94-114">このパブリック プレビューは、Office 365 コンテンツ配信ネットワーク (CDN) では機能しません。</span><span class="sxs-lookup"><span data-stu-id="88f94-114">This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).</span></span>
-
-## <a name="overview"></a><span data-ttu-id="88f94-115">概要</span><span class="sxs-lookup"><span data-stu-id="88f94-115">Overview</span></span>
-
-<span data-ttu-id="88f94-116">機密ラベルを発行すると、Office 365 全体のユーザーが同じラベルのリストにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="88f94-116">When you publish sensitivity labels, users across Office 365 have access to the same list of labels.</span></span>
-
-<span data-ttu-id="88f94-117">これらの画像は以下について示しています。</span><span class="sxs-lookup"><span data-stu-id="88f94-117">These images show:</span></span>
-
-- <span data-ttu-id="88f94-118">SharePoint から新しいチーム サイトを作成する際のリストの表示内容</span><span class="sxs-lookup"><span data-stu-id="88f94-118">How the list appears when you create a new team site from SharePoint</span></span>
-
-- <span data-ttu-id="88f94-119">Word でリストを表示する場合</span><span class="sxs-lookup"><span data-stu-id="88f94-119">When you view the list in Word</span></span>
-
-<span data-ttu-id="88f94-120">以下に例を示します。</span><span class="sxs-lookup"><span data-stu-id="88f94-120">For example:</span></span>
-
-![SharePoint でチーム サイトを作成するときの機密ラベル](../media/sensitivity-label-new-team-site.png)
+<span data-ttu-id="2aa11-115">このプレビューを有効にして新しい設定の機密ラベルを構成する前に、ユーザーはアプリで機密ラベルを表示および適用できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-115">Before you enable this preview and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps.</span></span> <span data-ttu-id="2aa11-116">たとえば、Word から: </span><span class="sxs-lookup"><span data-stu-id="2aa11-116">For example, from Word:</span></span>
 
 ![Word デスクトップ アプリに表示される機密ラベル](../media/sensitivity-label-word.png)
 
-## <a name="enable-this-preview"></a><span data-ttu-id="88f94-123">このプレビューを有効にする</span><span class="sxs-lookup"><span data-stu-id="88f94-123">Enable this preview</span></span>
+<span data-ttu-id="2aa11-118">このプレビューを有効にして構成すると、ユーザーは追加で機密ラベルを表示し、Microsoft Teams、Office 365 グループ、および SharePoint サイトに適用することができます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-118">After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites.</span></span> <span data-ttu-id="2aa11-119">たとえば、SharePoint から新しいチーム サイトを作成する場合:</span><span class="sxs-lookup"><span data-stu-id="2aa11-119">For example, when you create a new team site from SharePoint:</span></span>
 
-<span data-ttu-id="88f94-124">Microsoft Teams、Office 365 グループ、および SharePoint サイトで機密ラベルのこのプレビューを有効にするには、[Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) (モジュール名 **AzureADPreview**) を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-124">You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) (module name **AzureADPreview**) to enable this preview of sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites:</span></span>
+![SharePoint でチーム サイトを作成するときの機密ラベル](../media/sensitivity-labels-new-team-site.png)
 
-- <span data-ttu-id="88f94-125">以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Installing the Azure AD Module (Azure AD モジュールのインストール)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。</span><span class="sxs-lookup"><span data-stu-id="88f94-125">If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) and follow the instructions to install the public preview release.</span></span>
+## <a name="enable-this-preview-and-synchronize-labels"></a><span data-ttu-id="2aa11-121">このプレビューを有効にしてラベルを同期する</span><span class="sxs-lookup"><span data-stu-id="2aa11-121">Enable this preview and synchronize labels</span></span>
 
-- <span data-ttu-id="88f94-126">Azure AD PowerShell モジュール (AzureAD) の 2.0 一般提供バージョンをインストールしている場合には、PowerShell セッションで `Uninstall-Module AzureAD` を実行してアンインストールし、`Install-Module AzureADPreview` を実行してプレビュー バージョンをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-126">If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.</span></span>
+1. <span data-ttu-id="2aa11-122">この機能は Azure AD 機能を使用するため、Azure AD のドキュメントの指示に従ってプレビューを有効にします: [Assign sensitivity labels to Office 365 groups in Azure Active Directory (preview) (Azure Active Directory の Office 365 グループに機密ラベルを割り当てる (プレビュー))](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。</span><span class="sxs-lookup"><span data-stu-id="2aa11-122">Because this feature uses Azure AD functionality, follow the instructions in the Azure AD documentation to enable the preview: [Assign sensitivity labels to Office 365 groups in Azure Active Directory (preview)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).</span></span>
 
-- <span data-ttu-id="88f94-127">プレビュー バージョンを既にインストールしている場合には、`Install-Module AzureADPreview`を実行しそれがこのモジュールの最新バージョンであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="88f94-127">If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.</span></span>
+2. <span data-ttu-id="2aa11-123">PowerShell セッションで、グローバル管理者特権を持つ職場または学校のアカウントを使用して、セキュリティ/コンプライアンス センターに接続します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-123">In a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges.</span></span> <span data-ttu-id="2aa11-124">手順については、「[Office 365 セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-124">For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
 
-<span data-ttu-id="88f94-128">これで Microsoft Teams、Office 365 グループ、および SharePoint サイトで機密ラベルのプレビューを有効にする準備ができました。</span><span class="sxs-lookup"><span data-stu-id="88f94-128">You're now ready to enable the preview of sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites:</span></span>
-
-1. <span data-ttu-id="88f94-129">PowerShell セッションで、グローバル管理者特権を持つ職場または学校のアカウントを使用して Azure Active Directory に接続します。</span><span class="sxs-lookup"><span data-stu-id="88f94-129">In a PowerShell session, using a work or school account that has global admin privileges, connect to Azure Active Directory.</span></span> <span data-ttu-id="88f94-130">たとえば、以下を実行します。</span><span class="sxs-lookup"><span data-stu-id="88f94-130">For example, run:</span></span>
-    
-    ```powershell
-    Connect-AzureAD
-    ````
-    
-    <span data-ttu-id="88f94-131">詳しい手順については、「[Azure AD への接続](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-131">For full instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).</span></span>
-
-2. <span data-ttu-id="88f94-132">以下のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="88f94-132">Run the following commands:</span></span>
-    
-    ```powershell
-    $setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ)
-    if ($setting -eq $null)
-    {
-    $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b
-    $setting = $template.CreateDirectorySetting()
-    $setting["EnableMIPLabels"] = "True"
-    New-AzureADDirectorySetting -DirectorySetting $setting
-    }
-    else
-    {
-    $setting["EnableMIPLabels"] = "True"
-    Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting
-    }
-    ```
-    
-    > [!NOTE]
-    > <span data-ttu-id="88f94-133">このプレビューを有効にすると、Office 365 は新しいグループおよび SharePoint サイトに古い分類を使用しなくなります。</span><span class="sxs-lookup"><span data-stu-id="88f94-133">Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview.</span></span> <span data-ttu-id="88f94-134">[Azure AD サイト分類](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]) を使用した場合には、既存のグループおよびサイトには古い分類が引き続き表示されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-134">If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications.</span></span> <span data-ttu-id="88f94-135">新しい分類を表示するには、それらを変換します。</span><span class="sxs-lookup"><span data-stu-id="88f94-135">To display the new classifications, convert them.</span></span> <span data-ttu-id="88f94-136">変換する方法については、「[If you used classic Azure AD site classification (従来の Azure AD サイト分類を使用した場合)](#if-you-used-classic-azure-ad-site-classification)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-136">For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification).</span></span> 
-
-3. <span data-ttu-id="88f94-137">同じ PowerShell セッションで、グローバル管理者特権を持つ職場または学校のアカウントを使用して、セキュリティ/コンプライアンス センターに接続します。</span><span class="sxs-lookup"><span data-stu-id="88f94-137">In the same PowerShell session, now connect to the Security & Compliance Center by using a work or school account that has global admin privileges.</span></span> <span data-ttu-id="88f94-138">手順については、「[Office 365 セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-138">For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
-
-4. <span data-ttu-id="88f94-139">ラベルを Office 365 グループで使用できるように、次のコマンドを実行してラベルを Azure AD に同期させます。</span><span class="sxs-lookup"><span data-stu-id="88f94-139">Run the following commands to synchronize your labels to Azure AD, so that they can used with Office 365 groups:</span></span>
+3. <span data-ttu-id="2aa11-125">ラベルを Office 365 グループで使用できるように、次のコマンドを実行してラベルを Azure AD に同期させます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-125">Run the following commands to synchronize your labels to Azure AD, so that they can be used with Office 365 groups:</span></span>
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -110,121 +63,118 @@ ms.locfileid: "42069818"
     Import-PSSession $Session -DisableNameChecking
     Execute-AzureAdLabelSync
     ```
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a><span data-ttu-id="88f94-140">機密ラベルを作成または編集する際に、サイトおよびグループの設定を行う</span><span class="sxs-lookup"><span data-stu-id="88f94-140">Set site and group settings when you create or edit sensitivity labels</span></span>
 
-<span data-ttu-id="88f94-141">プレビューを有効にしたら、以下の手順を使用して機密ラベルを作成または編集します。</span><span class="sxs-lookup"><span data-stu-id="88f94-141">After you enable the preview, use the following steps to create or edit sensitivity labels.</span></span> <span data-ttu-id="88f94-142">すでに定義されたラベルがある場合でも、新しい機密ラベルをサイトおよびグループで機能させるにはこれらの手順を完了させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-142">You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined.</span></span> <span data-ttu-id="88f94-143">これらの設定変更は、同期に最大 24 時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-143">Changes to these settings might take up to 24 hours to synchronize.</span></span>
+## <a name="how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a><span data-ttu-id="2aa11-126">機密ラベルを作成または編集する際に、サイトおよびグループの設定を構成する方法</span><span class="sxs-lookup"><span data-stu-id="2aa11-126">How to configure site and group settings when you create or edit sensitivity labels</span></span>
 
-1. <span data-ttu-id="88f94-144">Microsoft 365 コンプライアンス センターで [**分類**] >  [**機密ラベル**] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="88f94-144">In the Microsoft 365 compliance center, select **Classification** > **Sensitivity labels**.</span></span>
+<span data-ttu-id="2aa11-127">これで、サイトおよびグループで使用する機密ラベルを作成または編集する準備が整いました。</span><span class="sxs-lookup"><span data-stu-id="2aa11-127">You're now ready to create or edit sensitivity labels that you want to be available for sites and groups.</span></span> <span data-ttu-id="2aa11-128">プレビューを有効にすると、秘密度のラベル付けウィザードで新しいページが表示されます: **サイトとグループの設定**</span><span class="sxs-lookup"><span data-stu-id="2aa11-128">Enabling the preview makes a new page visible in the sensitivity labeling wizards: **Site and group settings**</span></span>
 
-2. <span data-ttu-id="88f94-145">[**ラベルを作成**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="88f94-145">Select **Create a label**.</span></span> <span data-ttu-id="88f94-146">ラベルが既にある場合には、次の手順へと進みます。</span><span class="sxs-lookup"><span data-stu-id="88f94-146">If you already have a label, skip to the next step.</span></span>
+<span data-ttu-id="2aa11-129">機密ラベルの作成または編集に関するヘルプが必要な場合は、「[機密ラベルを作成して構成する](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)」の手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-129">If you need help with creating or editing a sensitivity label, see the instructions from [Create and configure sensitivity labels](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).</span></span>
 
-3. <span data-ttu-id="88f94-147">必要なオプションを選択し、[**サイトとグループの設定**] タブで以下を選択します。</span><span class="sxs-lookup"><span data-stu-id="88f94-147">Select the options you want, and then on the **Site and group settings** tab, choose:</span></span>
+<span data-ttu-id="2aa11-130">この新しい [**サイトとグループの設定**] ページで、設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-130">On this new **Site and group settings** page, configure the settings:</span></span>
+
+- <span data-ttu-id="2aa11-131">**Office 365 グループに接続されたチーム サイトのプライバシー**: デフォルト設定の [**パブリック**] は自動的に選択されます。つまり、組織内のすべてのユーザーがこのラベルが適用されているチーム サイトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-131">**Privacy of Office 365 group-connected teams sites**: The default setting of **Public** is automatically selected, which means anyone in your organization can access the team site where this label is applied.</span></span> <span data-ttu-id="2aa11-132">組織内の承認されたメンバーのみがグループのチーム サイトにアクセスできるようにする場合は、[**プライベート**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-132">Select **Private** when you want only approved members in your organization to access the group's team site.</span></span> 
     
-    - <span data-ttu-id="88f94-148">プライバシー (パブリック/プライベート): プライベートとは、組織内の承認されたメンバーのみがグループ内のコンテンツを閲覧できることを意味します。</span><span class="sxs-lookup"><span data-stu-id="88f94-148">Privacy (Public/Private): Private means that only approved members in your organization can see what's inside the group.</span></span> <span data-ttu-id="88f94-149">組織内の他のユーザーは、グループの内容を見ることができません。</span><span class="sxs-lookup"><span data-stu-id="88f94-149">Anyone else in your organization can't see what's in the group.</span></span> [<span data-ttu-id="88f94-150">詳細情報</span><span class="sxs-lookup"><span data-stu-id="88f94-150">Learn more</span></span>](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
-    - <span data-ttu-id="88f94-151">ゲストアクセス: ゲストをグループに追加できるかどうかを制御できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-151">Guest access: You can control if guests can be added to a group.</span></span> [<span data-ttu-id="88f94-152">Office 365 グループでのゲスト アクセスの管理について</span><span class="sxs-lookup"><span data-stu-id="88f94-152">Learn about managing guest access in Office 365 Groups</span></span>](/office365/admin/create-groups/manage-guest-access-in-groups)
-    - <span data-ttu-id="88f94-153">管理されていないデバイス: この設定により、ハイブリッド AD に参加していないデバイスまたは Intune に準拠していないデバイスからの SharePoint コンテンツへのアクセスをブロックまたは制限することができます。</span><span class="sxs-lookup"><span data-stu-id="88f94-153">Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune.</span></span> <span data-ttu-id="88f94-154">非管理対象デバイスを選択した場合、Azure AD にアクセスしてポリシーのセットアップを完了させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-154">If you select Unmanaged devices, you must go to Azure AD to finish setting up the policy.</span></span> <span data-ttu-id="88f94-155">詳細については、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-155">For info, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).</span></span>
-    
-    ![[サイトとグループの設定] タブ](../media/edit-sensitivity-label-site-group.png)
+    <span data-ttu-id="2aa11-133">選択した設定は、グループに構成されている可能性がある以前のプライバシー設定を置き換え、プライバシー値をロックします。よって、チーム サイトまたはグループから最初に機密ラベルを削除することによってのみ、変更できるようになります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-133">The setting selected replaces a previous privacy setting that might be configured for the group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the team site or group.</span></span> <span data-ttu-id="2aa11-134">機密ラベルを削除しても、ラベルからのプライバシー設定は維持され、必要に応じて変更できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="2aa11-134">After you remove the sensitivity label, the privacy setting from the label remains and you can now change it if necessary.</span></span>
+
+- <span data-ttu-id="2aa11-135">**外部ユーザー アクセス**: グループの所有者が[ゲストをグループに追加](/office365/admin/create-groups/manage-guest-access-in-groups)できるかどうかを制御します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-135">**External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).</span></span>
+
+- <span data-ttu-id="2aa11-136">**非管理対象デバイス**: [非管理対象デバイス](/sharepoint/control-access-from-unmanaged-devices)の場合、フル アクセスを許可するか、Web のみのアクセスを許可するか、またはアクセスを完全にブロックします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-136">**Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely.</span></span> 
+
+![[サイトとグループの設定] タブ](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
-> <span data-ttu-id="88f94-157">チーム、グループ、またはサイトにラベルを適用すると、サイトとグループの設定のみが有効になります。</span><span class="sxs-lookup"><span data-stu-id="88f94-157">Only the site and group settings take effect when you apply a label to a team, group, or site.</span></span> <span data-ttu-id="88f94-158">暗号化やコンテンツ マーキングなどのその他の設定は、チーム、グループ、またはサイト内のすべてのコンテンツに適用されるわけではありません。</span><span class="sxs-lookup"><span data-stu-id="88f94-158">Other settings, such as encryption and content marking, aren't applied to all content within the team, group, or site.</span></span>
+> <span data-ttu-id="2aa11-138">チーム、グループ、またはサイトにラベルを適用すると、それらのサイトとグループの設定のみが有効になります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-138">Only these site and group settings take effect when you apply a label to a team, group, or site.</span></span> <span data-ttu-id="2aa11-139">暗号化やコンテンツ マーキングなどのその他のラベル設定は、チーム、グループ、またはサイト内のコンテンツに適用されません。</span><span class="sxs-lookup"><span data-stu-id="2aa11-139">Other label settings, such as encryption and content marking, aren't applied to the content within the team, group, or site.</span></span>
 > 
-> <span data-ttu-id="88f94-159">同様に、ラベルを作成しサイトとグループの設定をオンにしない場合には、ユーザーがチーム、グループ、およびサイトを作成するときにラベルは引き続き使用できますが、いかなる設定も適用せずに分類します。</span><span class="sxs-lookup"><span data-stu-id="88f94-159">Similarly, if you create a label and don't turn on site and group settings, the label will still be available when users create teams, groups, and sites, but it will classify without applying any settings.</span></span>
+> <span data-ttu-id="2aa11-140">同様に、ラベルを作成しそれらのサイトとグループの設定をオンにしない場合には、ユーザーがチーム、グループ、およびサイトを作成するときにラベルは引き続き使用できますが、ラベル名のみが適用されます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-140">Similarly, if you create a label and don't turn on these site and group settings, the label will still be available when users create teams, groups, and sites, but only the label name will be applied.</span></span>
 
-[<span data-ttu-id="88f94-160">機密ラベルの発行の詳細について</span><span class="sxs-lookup"><span data-stu-id="88f94-160">Learn more about publishing sensitivity labels</span></span>](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+<span data-ttu-id="2aa11-141">ラベルがまだ公開されていない場合は、[ラベル ポリシーに追加](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)して公開します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-141">If your label isn't already published, now publish it by [adding it to a label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).</span></span>
 
-## <a name="sensitivity-label-management"></a><span data-ttu-id="88f94-161">機密ラベルの管理</span><span class="sxs-lookup"><span data-stu-id="88f94-161">Sensitivity label management</span></span>
+## <a name="sensitivity-label-management"></a><span data-ttu-id="2aa11-142">機密ラベルの管理</span><span class="sxs-lookup"><span data-stu-id="2aa11-142">Sensitivity label management</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="88f94-162">Microsoft Teams、Office 365 グループ、および SharePoint サイトに使用する機密ラベルを作成、変更、および削除するには、ラベル ポリシーをユーザーに発行する際に慎重な調整が必要です。</span><span class="sxs-lookup"><span data-stu-id="88f94-162">Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users.</span></span> 
+> <span data-ttu-id="2aa11-143">Microsoft Teams、Office 365 グループ、および SharePoint サイトに使用する機密ラベルを作成、変更、および削除するには、ラベル ポリシーをユーザーに発行する際に慎重な調整が必要です。</span><span class="sxs-lookup"><span data-stu-id="2aa11-143">Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users.</span></span> 
 
-<span data-ttu-id="88f94-163">以下のガイダンスを使用して、すべてのユーザーに影響を与える可能性のあるサイトおよびグループの作成エラーを回避します。</span><span class="sxs-lookup"><span data-stu-id="88f94-163">Avoid creation errors for sites and groups that can affect all users by using the following guidance.</span></span>
+<span data-ttu-id="2aa11-144">以下のガイダンスを使用して、すべてのユーザーに影響を与える可能性のあるサイトおよびグループの作成エラーを回避します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-144">Avoid creation errors for sites and groups that can affect all users by using the following guidance.</span></span>
 
-<span data-ttu-id="88f94-164">**ラベルの作成と発行:**</span><span class="sxs-lookup"><span data-stu-id="88f94-164">**Creating and publishing labels:**</span></span>
+<span data-ttu-id="2aa11-145">**ラベルの作成と発行:**</span><span class="sxs-lookup"><span data-stu-id="2aa11-145">**Creating and publishing labels:**</span></span>
 
-<span data-ttu-id="88f94-165">機密ラベルを作成して公開した後、チーム、グループ、およびサイトでユーザーがラベルを表示できるようになるまでに最大 24 時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-165">After a sensitivity label is created and published, it can take up to 24 hours for the label to become visible for users in teams, groups, and sites.</span></span> <span data-ttu-id="88f94-166">以下の手順を使用して、テナント内のすべてのユーザーにラベルを発行します:</span><span class="sxs-lookup"><span data-stu-id="88f94-166">Use the following steps to publish a label for all users in the tenant:</span></span>
+<span data-ttu-id="2aa11-146">機密ラベルを作成して公開した後、チーム、グループ、およびサイトでユーザーがラベルを表示できるようになるまでに最大 24 時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-146">After a sensitivity label is created and published, it can take up to 24 hours for the label to become visible for users in teams, groups, and sites.</span></span> <span data-ttu-id="2aa11-147">以下の手順を使用して、テナント内のすべてのユーザーにラベルを発行します:</span><span class="sxs-lookup"><span data-stu-id="2aa11-147">Use the following steps to publish a label for all users in the tenant:</span></span>
 
-1. <span data-ttu-id="88f94-167">機密ラベルを作成し、テナント内の少数のユーザー アカウントに対してのみ発行します。</span><span class="sxs-lookup"><span data-stu-id="88f94-167">Create the sensitivity label and publish it for just a few user accounts in the tenant.</span></span>
+1. <span data-ttu-id="2aa11-148">機密ラベルを作成し、テナント内の少数のユーザー アカウントに対してのみ発行します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-148">Create the sensitivity label and publish it for just a few user accounts in the tenant.</span></span>
 
-2. <span data-ttu-id="88f94-168">24 時間待ちます。</span><span class="sxs-lookup"><span data-stu-id="88f94-168">Wait for 24 hours.</span></span>
+2. <span data-ttu-id="2aa11-149">24 時間待ちます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-149">Wait for 24 hours.</span></span>
 
-3. <span data-ttu-id="88f94-169">この 24 時間の待ち時間の後、手順 1 で指定したユーザー アカウントのいずれかを使用して、手順 1 で作成したラベルを持つチーム、Office 365 グループ、または SharePoint サイトを作成します。</span><span class="sxs-lookup"><span data-stu-id="88f94-169">After this 24 hours wait, use one of the user accounts you specified in step 1 to create a team, Office 365 group, or SharePoint site with the label that you created in step 1.</span></span>
+3. <span data-ttu-id="2aa11-150">この 24 時間の待ち時間の後、手順 1 で指定したユーザー アカウントのいずれかを使用して、手順 1 で作成したラベルを持つチーム、Office 365 グループ、または SharePoint サイトを作成します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-150">After this 24 hours wait, use one of the user accounts you specified in step 1 to create a team, Office 365 group, or SharePoint site with the label that you created in step 1.</span></span>
 
-4. <span data-ttu-id="88f94-170">手順 3 の作成操作中にエラーが発生しなかった場合、テナント内のすべてのユーザーにラベルを発行します。</span><span class="sxs-lookup"><span data-stu-id="88f94-170">If there are no errors during the creation operation for step 3, publish the label for all users in your tenant.</span></span> <span data-ttu-id="88f94-171">エラーがある場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)へお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="88f94-171">If there are errors, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).</span></span>
+4. <span data-ttu-id="2aa11-151">手順 3 の作成操作中にエラーが発生しなかった場合、テナント内のすべてのユーザーにラベルを発行します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-151">If there are no errors during the creation operation for step 3, publish the label for all users in your tenant.</span></span> <span data-ttu-id="2aa11-152">エラーがある場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)へお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-152">If there are errors, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).</span></span>
 
-<span data-ttu-id="88f94-172">**発行済みラベルの変更および削除:**</span><span class="sxs-lookup"><span data-stu-id="88f94-172">**Modifying and deleting published labels:**</span></span>
+<span data-ttu-id="2aa11-153">**発行済みラベルの変更および削除:**</span><span class="sxs-lookup"><span data-stu-id="2aa11-153">**Modifying and deleting published labels:**</span></span>
 
-<span data-ttu-id="88f94-173">1 つ以上のラベル ポリシーに含まれる機密ラベルを変更または削除すると、これらのアクションによりすべてのチーム、グループ、およびサイトの作成が失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-173">If you modify or delete a sensitivity label that is included in one or more label policies, these actions can result in creation failures for all teams, groups, and sites.</span></span> <span data-ttu-id="88f94-174">この状況を回避するには、以下のガイダンスを使用してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-174">To avoid this situation, use the following guidance:</span></span>
+<span data-ttu-id="2aa11-154">1 つ以上のラベル ポリシーに含まれる機密ラベルを変更または削除すると、これらのアクションによりすべてのチーム、グループ、およびサイトの作成が失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-154">If you modify or delete a sensitivity label that is included in one or more label policies, these actions can result in creation failures for all teams, groups, and sites.</span></span> <span data-ttu-id="2aa11-155">この状況を回避するには、以下のガイダンスを使用してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-155">To avoid this situation, use the following guidance:</span></span>
 
-1. <span data-ttu-id="88f94-175">ラベルを含むすべてのラベル ポリシーから、機密ラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="88f94-175">Remove the sensitivity label from all label policies that include the label.</span></span>
+1. <span data-ttu-id="2aa11-156">ラベルを含むすべてのラベル ポリシーから、機密ラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-156">Remove the sensitivity label from all label policies that include the label.</span></span>
 
-2. <span data-ttu-id="88f94-176">48 時間待ちます。</span><span class="sxs-lookup"><span data-stu-id="88f94-176">Wait for 48 hours.</span></span>
+2. <span data-ttu-id="2aa11-157">48 時間待ちます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-157">Wait for 48 hours.</span></span>
 
-3. <span data-ttu-id="88f94-177">48 時間待ってからチーム、グループ、またはサイトを作成し、ラベルが表示されなくなったことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-177">After the 48 hours wait, try creating a team, group, or site and confirm that the label is no longer visible.</span></span>
+3. <span data-ttu-id="2aa11-158">48 時間待ってからチーム、グループ、またはサイトを作成し、ラベルが表示されなくなったことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-158">After the 48 hours wait, try creating a team, group, or site and confirm that the label is no longer visible.</span></span>
 
-4. <span data-ttu-id="88f94-178">機密ラベルが表示されていない場合は、ラベルを安全に変更または削除できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-178">If the sensitivity label isn't visible, you can now safely modify or delete the label.</span></span> <span data-ttu-id="88f94-179">ラベルがまだ表示されている場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="88f94-179">If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).</span></span>
+4. <span data-ttu-id="2aa11-159">機密ラベルが表示されていない場合は、ラベルを安全に変更または削除できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-159">If the sensitivity label isn't visible, you can now safely modify or delete the label.</span></span> <span data-ttu-id="2aa11-160">ラベルがまだ表示されている場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-160">If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).</span></span>
 
-## <a name="troubleshoot-sensitivity-label-deployment"></a><span data-ttu-id="88f94-180">機密ラベルの展開のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="88f94-180">Troubleshoot sensitivity label deployment</span></span>
+## <a name="assign-sensitivity-labels-to-office-365-groups"></a><span data-ttu-id="2aa11-161">Office 365 グループに機密ラベルを割り当てる</span><span class="sxs-lookup"><span data-stu-id="2aa11-161">Assign sensitivity labels to Office 365 groups</span></span>
 
-### <a name="labels-not-visible-after-publishing"></a><span data-ttu-id="88f94-181">発行後にラベルが表示されない</span><span class="sxs-lookup"><span data-stu-id="88f94-181">Labels not visible after publishing</span></span>
-<span data-ttu-id="88f94-182">これらの設定を有効にした後、または機密ラベルの説明を変更した後でチームまたは Office 365 グループを作成する際に問題が発生した場合には、ラベルを保存し、数時間待ってからチームまたはグループの作成を再試行してみてください。</span><span class="sxs-lookup"><span data-stu-id="88f94-182">If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, save the label, wait a few hours, and then try to create the team or group again.</span></span> <span data-ttu-id="88f94-183">詳細については、「[Schedule roll-out after you create or change a sensitivity label (機密ラベルを作成または変更した後にロールアウトをスケジュールする)](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-183">For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).</span></span>
+<span data-ttu-id="2aa11-162">これで、1 つまたは複数の機密ラベルを Office 365 グループに適用する準備ができました。</span><span class="sxs-lookup"><span data-stu-id="2aa11-162">You're now ready to apply the sensitivity label or labels to Office 365 groups.</span></span> <span data-ttu-id="2aa11-163">手順については、Azure AD のドキュメントに戻ります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-163">Return to the Azure AD documentation for instructions:</span></span>
 
-<span data-ttu-id="88f94-184">それでも SharePoint Online から新しい機密ラベルを表示できない場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)へお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="88f94-184">If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).</span></span>
+- <span data-ttu-id="2aa11-164">「[Assign a label to a new group in Azure portal (Azure ポータルの新しいグループにラベルを割り当てる)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)」</span><span class="sxs-lookup"><span data-stu-id="2aa11-164">[Assign a label to a new group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)</span></span>
 
-### <a name="team-group-or-sharepoint-site-creation-errors"></a><span data-ttu-id="88f94-185">チーム、グループ、または SharePoint サイトの作成エラー</span><span class="sxs-lookup"><span data-stu-id="88f94-185">Team, group, or SharePoint site creation errors</span></span>
-<span data-ttu-id="88f94-186">パブリック プレビュー中に作成エラーが発生した場合、2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="88f94-186">If you experience creation errors during the public preview, you have two options:</span></span>
+-  [<span data-ttu-id="2aa11-165">Assign a label to an existing group in Azure portal (Azure ポータルの既存のグループにラベルを割り当てる)</span><span class="sxs-lookup"><span data-stu-id="2aa11-165">Assign a label to an existing group in Azure portal</span></span>](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
-- <span data-ttu-id="88f94-187">どのユーザーに対しても機密ラベルが必須ではないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-187">Ensure that sensitivity labels are not mandatory for any user.</span></span>
+-  <span data-ttu-id="2aa11-166">「[Remove a label from an existing group in Azure portal (Azure ポータルの既存のグループからラベルを削除する)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).」</span><span class="sxs-lookup"><span data-stu-id="2aa11-166">[Remove a label from an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).</span></span>
 
-- <span data-ttu-id="88f94-188">このページの [[このプレビューを有効にする](#enable-this-preview)] セクションと同じ手順を使用することで、Microsoft Teams、Office 365 グループ、および SharePoint サイトの機密ラベルをオフにできます。</span><span class="sxs-lookup"><span data-stu-id="88f94-188">You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from the [Enable this preview](#enable-this-preview) section on this page.</span></span> <span data-ttu-id="88f94-189">ただし、プレビューを無効にするには、`$setting["EnableMIPLabels"] = "True"`行を検索し、**True** 値を **False** に変更します。</span><span class="sxs-lookup"><span data-stu-id="88f94-189">However, to disable the preview, search for the line `$setting["EnableMIPLabels"] = "True"`, and change the **True** value to **False**.</span></span>
+## <a name="apply-a-sensitivity-label-to-a-new-team"></a><span data-ttu-id="2aa11-167">新しいチームに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="2aa11-167">Apply a sensitivity label to a new team</span></span>
 
-## <a name="apply-a-sensitivity-label-to-a-new-team"></a><span data-ttu-id="88f94-190">新しいチームに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="88f94-190">Apply a sensitivity label to a new team</span></span>
+<span data-ttu-id="2aa11-168">ユーザーは、Microsoft Teams で新しいチームを作成する際に機密ラベルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-168">Users can select sensitivity labels when they create new teams in Microsoft Teams.</span></span> <span data-ttu-id="2aa11-169">ユーザーが機密レベルを選択すると、必要に応じてプライバシー設定が変更されます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-169">When they select the sensitivity level, the privacy setting changes as necessary.</span></span> <span data-ttu-id="2aa11-170">ラベルに対し選択した外部ユーザーのアクセス設定に応じて、ユーザーは組織外のユーザーをチームに追加することができたり、できなかったりします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-170">Depending on the external users access setting you selected for the label, users can or can't add people outside the organization to the team.</span></span>
 
-<span data-ttu-id="88f94-191">ユーザーは、Microsoft Teams で新しいチームを作成する際に機密ラベルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-191">Users can select sensitivity labels when they create new teams in Microsoft Teams.</span></span> <span data-ttu-id="88f94-192">ユーザーが機密レベルを選択すると、必要に応じてプライバシー設定が変更されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-192">When they select the sensitivity level, the privacy setting changes as necessary.</span></span> <span data-ttu-id="88f94-193">ラベルに対し選択したゲスト アクセス設定に応じて、ユーザーは組織外のユーザーをチームに追加することができたり、できなかったりします。</span><span class="sxs-lookup"><span data-stu-id="88f94-193">Depending on the guest access setting you selected for the label, users can or can't add people outside the organization to the team.</span></span>
-
-[<span data-ttu-id="88f94-194">Teams の機密ラベルの詳細について</span><span class="sxs-lookup"><span data-stu-id="88f94-194">Learn more about sensitivity labels for Teams</span></span>](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
+[<span data-ttu-id="2aa11-171">Teams の機密ラベルの詳細について</span><span class="sxs-lookup"><span data-stu-id="2aa11-171">Learn more about sensitivity labels for Teams</span></span>](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
 ![新しいチームを作成する際のプライバシー設定](../media/privacy-setting-new-team.png)
 
-<span data-ttu-id="88f94-196">チームを作成すると、すべてのチャネルの右上隅に機密ラベルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-196">After you create the team, the sensitivity label appears in the upper-right corner of all channels.</span></span>
+<span data-ttu-id="2aa11-173">チームを作成すると、すべてのチャネルの右上隅に機密ラベルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-173">After you create the team, the sensitivity label appears in the upper-right corner of all channels.</span></span>
 
 ![チームに表示される機密ラベル](../media/privacy-setting-teams.png)
 
-<span data-ttu-id="88f94-198">このサービスは、Office 365 グループおよび接続された SharePoint チーム サイトに対して同じ機密ラベルを自動的に適用します。</span><span class="sxs-lookup"><span data-stu-id="88f94-198">The service automatically applies the same sensitivity label to the Office 365 group and the connected SharePoint team site.</span></span>
+<span data-ttu-id="2aa11-175">このサービスは、Office 365 グループおよび接続された SharePoint チーム サイトに対して同じ機密ラベルを自動的に適用します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-175">The service automatically applies the same sensitivity label to the Office 365 group and the connected SharePoint team site.</span></span>
 
-## <a name="apply-a-sensitivity-label-to-a-new-group"></a><span data-ttu-id="88f94-199">新しいグループに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="88f94-199">Apply a sensitivity label to a new group</span></span>
+## <a name="apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web"></a><span data-ttu-id="2aa11-176">Outlook on the web の新しいグループに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="2aa11-176">Apply a sensitivity label to a new group in Outlook on the web</span></span>
 
-<span data-ttu-id="88f94-200">Outlook on the web では、新しい [**機密**] ボックスに発行されたラベルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="88f94-200">In Outlook on the web, the new **Sensitivity** box contains published labels.</span></span> <span data-ttu-id="88f94-201">ユーザーが詳細を知りたい場合には、[ヘルプ] アイコンをクリックすると使用できるラベルおよび関連ポリシーに関する詳細情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-201">If users want more info, they can click the help icon to read details about the available labels and associated policies.</span></span>
+<span data-ttu-id="2aa11-177">Outlook on the web では、新しいグループを作成するときに、公開されたラベルの [**機密**] オプションを選択または変更できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-177">In Outlook on the web, when you create a new group, you can select or change the **Sensitivity** option for published labels:</span></span>
 
 ![グループを作成し、[機密] 下でオプションを選択する](../media/sensitivity-label-new-group.png)
 
-## <a name="apply-a-sensitivity-label-to-a-new-site"></a><span data-ttu-id="88f94-203">新しいサイトに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="88f94-203">Apply a sensitivity label to a new site</span></span>
+## <a name="apply-a-sensitivity-label-to-a-new-site"></a><span data-ttu-id="2aa11-179">新しいサイトに機密ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="2aa11-179">Apply a sensitivity label to a new site</span></span>
 
-<span data-ttu-id="88f94-204">管理者およびエンド ユーザーは、最新のチーム サイトやコミュニケーション サイトを作成する際に機密ラベルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-204">Admins and end users can select sensitivity labels when they create modern team sites and communication sites.</span></span>
+<span data-ttu-id="2aa11-180">管理者およびエンド ユーザーは、[最新のチーム サイトやコミュニケーション サイトを作成する](/sharepoint/create-site-collection)際に機密ラベルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-180">Admins and end users can select sensitivity labels when they [create modern team sites and communication sites](/sharepoint/create-site-collection).</span></span>
 
-[<span data-ttu-id="88f94-205">新しい SharePoint 管理センターでサイトを作成する方法について</span><span class="sxs-lookup"><span data-stu-id="88f94-205">Learn how to create a site in the new SharePoint admin center</span></span>](/sharepoint/create-site-collection)
-
-<span data-ttu-id="88f94-206">ユーザーが最新のチームおよびコミュニケーション サイトを作成すると、規定で機密ラベルがすでに選択されています。</span><span class="sxs-lookup"><span data-stu-id="88f94-206">When users create modern team and communication sites, a sensitivity label is already selected by default.</span></span> <span data-ttu-id="88f94-207">ユーザーは [ヘルプ] アイコンを選択し、ラベルの詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-207">Users can select the help icon to learn more about the labels.</span></span>
+<span data-ttu-id="2aa11-181">ユーザーが最新のチームおよびコミュニケーション サイトを作成すると、規定で機密ラベルがすでに選択されています。</span><span class="sxs-lookup"><span data-stu-id="2aa11-181">When users create modern team and communication sites, a sensitivity label is already selected by default.</span></span> <span data-ttu-id="2aa11-182">ユーザーは [ヘルプ] アイコンを選択し、ラベルの詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-182">Users can select the help icon to learn more about the labels.</span></span>
 
 ![サイトを作成し、[機密] 下でオプションを選択する](../media/sensitivity-label-new-communication-site.png)
 
-<span data-ttu-id="88f94-209">ユーザーがサイトを参照すると、ラベルの名前および適用されているポリシーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-209">When users browse to the site, they can see the name of the label and applied policies.</span></span>
+<span data-ttu-id="2aa11-184">ユーザーがサイトを参照すると、ラベルの名前および適用されているポリシーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-184">When users browse to the site, they can see the name of the label and applied policies.</span></span>
 
 ![機密ラベルが適用されているサイト](../media/sensitivity-label-site.png)
 
-## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a><span data-ttu-id="88f94-211">SharePoint 管理センターで機密ラベルを管理する</span><span class="sxs-lookup"><span data-stu-id="88f94-211">Manage sensitivity labels in the SharePoint admin center</span></span>
+## <a name="view-sensitivity-labels-in-the-sharepoint-admin-center"></a><span data-ttu-id="2aa11-186">SharePoint 管理センターで機密ラベルを表示する</span><span class="sxs-lookup"><span data-stu-id="2aa11-186">View sensitivity labels in the SharePoint admin center</span></span>
 
-<span data-ttu-id="88f94-212">ラベルを表示および編集するには、新しい SharePoint 管理センターの [アクティブなサイト] ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="88f94-212">To view and edit the labels, use the Active sites page in the new SharePoint admin center.</span></span>
+<span data-ttu-id="2aa11-187">適用された機密ラベルを表示するには、新しい SharePoint 管理センターの [**アクティブなサイト**] ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-187">To view the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center.</span></span> <span data-ttu-id="2aa11-188">最初に、[**機密**] 列を追加する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-188">You might need to first add the **Sensitivity** column:</span></span>
 
 ![[アクティブなサイト] ページの [機密] 列](../media/manage-site-sensitivity-labels.png)
 
-<span data-ttu-id="88f94-214">[新しい SharePoint 管理センターでのサイト管理の詳細をご覧ください](/sharepoint/manage-sites-in-new-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="88f94-214">[Learn more about managing sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).</span></span>
+<span data-ttu-id="2aa11-190">[新しい SharePoint 管理センターでのサイト管理の詳細をご覧ください](/sharepoint/manage-sites-in-new-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="2aa11-190">[Learn more about managing sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).</span></span>
 
-## <a name="change-site-and-group-settings-for-a-label"></a><span data-ttu-id="88f94-215">ラベル向けのサイトとグループの設定を変更する</span><span class="sxs-lookup"><span data-stu-id="88f94-215">Change site and group settings for a label</span></span>
+## <a name="change-site-and-group-settings-for-a-label"></a><span data-ttu-id="2aa11-191">ラベル向けのサイトとグループの設定を変更する</span><span class="sxs-lookup"><span data-stu-id="2aa11-191">Change site and group settings for a label</span></span>
 
-<span data-ttu-id="88f94-216">ラベルのサイトとグループの設定を変更するたびに、チーム、サイト、グループが新しい設定を使用できるように、次の PowerShell コマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88f94-216">Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings.</span></span> <span data-ttu-id="88f94-217">ベスト プラクティスとして、ラベルを複数のチーム、グループ、またはサイトに適用した後にラベルのサイトとグループの設定を変更しないようにします。</span><span class="sxs-lookup"><span data-stu-id="88f94-217">As a best practice, don't the change site and group settings for a label after you've applied the label to several teams, groups, or sites.</span></span>
+<span data-ttu-id="2aa11-192">ラベルのサイトとグループの設定を変更するたびに、チーム、サイト、グループが新しい設定を使用できるように、次の PowerShell コマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-192">Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings.</span></span> <span data-ttu-id="2aa11-193">ベスト プラクティスとして、ラベルを複数のチーム、グループ、またはサイトに適用した後にラベルのサイトとグループの設定を変更しないようにします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-193">As a best practice, don't the change site and group settings for a label after you've applied the label to several teams, groups, or sites.</span></span>
 
-1. <span data-ttu-id="88f94-218">次のコマンドを実行して、Office 365 セキュリティ/コンプライアンス センターの PowerShell に接続し、機密ラベルとそれらの GUID のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="88f94-218">Run the following commands to connect to Office 365 Security & Compliance Center PowerShell and get the list of sensitivity labels and their GUIDs.</span></span>
+1. <span data-ttu-id="2aa11-194">次のコマンドを実行して、Office 365 セキュリティ/コンプライアンス センターの PowerShell に接続し、機密ラベルとそれらの GUID のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-194">Run the following commands to connect to Office 365 Security & Compliance Center PowerShell and get the list of sensitivity labels and their GUIDs.</span></span>
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -234,9 +184,9 @@ ms.locfileid: "42069818"
     Get-Label |ft Name, Guid
     ```
 
-2. <span data-ttu-id="88f94-219">変更を行ったラベルの GUID をメモします。</span><span class="sxs-lookup"><span data-stu-id="88f94-219">Make a note of the GUID for the label or labels you have changed.</span></span>
+2. <span data-ttu-id="2aa11-195">変更を行ったラベルの GUID をメモします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-195">Make a note of the GUID for the label or labels you have changed.</span></span>
 
-3. <span data-ttu-id="88f94-220">次に、Exchange Online PowerShell に接続して、Get-UnifiedGroup コマンドレットを実行します。GUID 例の "e48058ea-98e8-4940-8db0-ba1310fd955e" の代わりにラベルの GUID を指定します。</span><span class="sxs-lookup"><span data-stu-id="88f94-220">Now connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":</span></span> 
+3. <span data-ttu-id="2aa11-196">次に、Exchange Online PowerShell に接続して、Get-UnifiedGroup コマンドレットを実行します。GUID 例の "e48058ea-98e8-4940-8db0-ba1310fd955e" の代わりにラベルの GUID を指定します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-196">Now connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":</span></span> 
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -246,95 +196,81 @@ ms.locfileid: "42069818"
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
     ```
 
-4. <span data-ttu-id="88f94-221">各グループについて、GUID 例の "e48058ea-98e8-4940-8db0-ba1310fd955e" の代わりにラベルの GUID を指定して機密ラベルを再適用します。</span><span class="sxs-lookup"><span data-stu-id="88f94-221">For each group, reapply the sensitivity label, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":</span></span>
+4. <span data-ttu-id="2aa11-197">各グループについて、GUID 例の "e48058ea-98e8-4940-8db0-ba1310fd955e" の代わりにラベルの GUID を指定して機密ラベルを再適用します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-197">For each group, reapply the sensitivity label, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":</span></span>
     
     ```powershell
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
     ```
 
-## <a name="support-for-the-new-sensitivity-labels"></a><span data-ttu-id="88f94-222">新しい機密ラベルのサポート</span><span class="sxs-lookup"><span data-stu-id="88f94-222">Support for the new sensitivity labels</span></span>
+## <a name="support-for-the-sensitivity-labels"></a><span data-ttu-id="2aa11-198">機密ラベルのサポート</span><span class="sxs-lookup"><span data-stu-id="2aa11-198">Support for the sensitivity labels</span></span>
 
-<span data-ttu-id="88f94-223">以下のアプリおよびサービスは、このプレビューの機密ラベルをサポートしています:</span><span class="sxs-lookup"><span data-stu-id="88f94-223">The following apps and services support the sensitivity labels in this preview:</span></span>
+<span data-ttu-id="2aa11-199">次のアプリとサービスで、サイトとグループの設定用に構成した機密ラベルを使用できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-199">You can use the sensitivity labels that you've configured for site and group settings with the following apps and services:</span></span>
 
-- <span data-ttu-id="88f94-224">Microsoft 365 コンプライアンス センター</span><span class="sxs-lookup"><span data-stu-id="88f94-224">Microsoft 365 compliance center</span></span>
-- <span data-ttu-id="88f94-225">SharePoint</span><span class="sxs-lookup"><span data-stu-id="88f94-225">SharePoint</span></span>
-- <span data-ttu-id="88f94-226">Outlook on the web</span><span class="sxs-lookup"><span data-stu-id="88f94-226">Outlook on the web</span></span>
-- <span data-ttu-id="88f94-227">Teams</span><span class="sxs-lookup"><span data-stu-id="88f94-227">Teams</span></span>
-- <span data-ttu-id="88f94-228">SharePoint 管理センター</span><span class="sxs-lookup"><span data-stu-id="88f94-228">SharePoint admin center</span></span>
-- <span data-ttu-id="88f94-229">Azure AD 管理センター</span><span class="sxs-lookup"><span data-stu-id="88f94-229">Azure AD admin center</span></span>
+- <span data-ttu-id="2aa11-200">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="2aa11-200">SharePoint Online</span></span>
+- <span data-ttu-id="2aa11-201">Teams</span><span class="sxs-lookup"><span data-stu-id="2aa11-201">Teams</span></span>
+- <span data-ttu-id="2aa11-202">Outlook on the web</span><span class="sxs-lookup"><span data-stu-id="2aa11-202">Outlook on the web</span></span>
+- <span data-ttu-id="2aa11-203">SharePoint 管理センター</span><span class="sxs-lookup"><span data-stu-id="2aa11-203">SharePoint admin center</span></span>
+- <span data-ttu-id="2aa11-204">Azure AD 管理センター</span><span class="sxs-lookup"><span data-stu-id="2aa11-204">Azure AD admin center</span></span>
 
-<span data-ttu-id="88f94-230">以下のアプリおよびサービスを使用して、新しい機密ラベルを用いた Office 365 グループを作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="88f94-230">You can't use the following apps and services to create Office 365 groups with the new sensitivity labels:</span></span>
+<span data-ttu-id="2aa11-205">サイトおよびグループの設定用に構成した機密ラベルを現在使用できない他のアプリとサービスには、次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-205">Other apps and services that you can't currently use the sensitivity labels that you've configured for site and group settings include:</span></span>
 
-- <span data-ttu-id="88f94-231">Outlook for the Mac</span><span class="sxs-lookup"><span data-stu-id="88f94-231">Outlook for the Mac</span></span>
-- <span data-ttu-id="88f94-232">Outlook モバイル</span><span class="sxs-lookup"><span data-stu-id="88f94-232">Outlook mobile</span></span>  
-- <span data-ttu-id="88f94-233">Outlook デスクトップ for Windows</span><span class="sxs-lookup"><span data-stu-id="88f94-233">Outlook desktop for Windows</span></span>
-- <span data-ttu-id="88f94-234">Forms</span><span class="sxs-lookup"><span data-stu-id="88f94-234">Forms</span></span>  
-- <span data-ttu-id="88f94-235">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="88f94-235">Dynamics 365</span></span>  
-- <span data-ttu-id="88f94-236">Yammer</span><span class="sxs-lookup"><span data-stu-id="88f94-236">Yammer</span></span>  
-- <span data-ttu-id="88f94-237">Stream</span><span class="sxs-lookup"><span data-stu-id="88f94-237">Stream</span></span>  
-- <span data-ttu-id="88f94-238">Planner</span><span class="sxs-lookup"><span data-stu-id="88f94-238">Planner</span></span>  
-- <span data-ttu-id="88f94-239">Project</span><span class="sxs-lookup"><span data-stu-id="88f94-239">Project</span></span>  
-- <span data-ttu-id="88f94-240">PowerBI</span><span class="sxs-lookup"><span data-stu-id="88f94-240">PowerBI</span></span>  
-- <span data-ttu-id="88f94-241">Teams 管理センター</span><span class="sxs-lookup"><span data-stu-id="88f94-241">Teams admin center</span></span>  
-- <span data-ttu-id="88f94-242">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="88f94-242">Microsoft 365 admin center</span></span>  
-- <span data-ttu-id="88f94-243">Exchange 管理センター</span><span class="sxs-lookup"><span data-stu-id="88f94-243">Exchange admin center</span></span>
+- <span data-ttu-id="2aa11-206">Outlook for the Mac</span><span class="sxs-lookup"><span data-stu-id="2aa11-206">Outlook for the Mac</span></span>
+- <span data-ttu-id="2aa11-207">Outlook モバイル</span><span class="sxs-lookup"><span data-stu-id="2aa11-207">Outlook mobile</span></span>
+- <span data-ttu-id="2aa11-208">Outlook デスクトップ for Windows</span><span class="sxs-lookup"><span data-stu-id="2aa11-208">Outlook desktop for Windows</span></span>
+- <span data-ttu-id="2aa11-209">Forms</span><span class="sxs-lookup"><span data-stu-id="2aa11-209">Forms</span></span>
+- <span data-ttu-id="2aa11-210">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="2aa11-210">Dynamics 365</span></span>
+- <span data-ttu-id="2aa11-211">Yammer</span><span class="sxs-lookup"><span data-stu-id="2aa11-211">Yammer</span></span>
+- <span data-ttu-id="2aa11-212">Stream</span><span class="sxs-lookup"><span data-stu-id="2aa11-212">Stream</span></span>
+- <span data-ttu-id="2aa11-213">Planner</span><span class="sxs-lookup"><span data-stu-id="2aa11-213">Planner</span></span>
+- <span data-ttu-id="2aa11-214">Project</span><span class="sxs-lookup"><span data-stu-id="2aa11-214">Project</span></span>
+- <span data-ttu-id="2aa11-215">PowerBI</span><span class="sxs-lookup"><span data-stu-id="2aa11-215">PowerBI</span></span>
+- <span data-ttu-id="2aa11-216">Teams 管理センター</span><span class="sxs-lookup"><span data-stu-id="2aa11-216">Teams admin center</span></span>
+- <span data-ttu-id="2aa11-217">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="2aa11-217">Microsoft 365 admin center</span></span>
+- <span data-ttu-id="2aa11-218">Exchange 管理センター</span><span class="sxs-lookup"><span data-stu-id="2aa11-218">Exchange admin center</span></span>
 
-## <a name="if-you-used-classic-azure-ad-site-classification"></a><span data-ttu-id="88f94-244">従来の Azure AD サイト分類を使用した場合</span><span class="sxs-lookup"><span data-stu-id="88f94-244">If you used classic Azure AD site classification</span></span>
 
-<span data-ttu-id="88f94-245">このプレビューを有効にすると、Office 365 は新しいグループおよび SharePoint サイト向けに古い分類をサポートしなくなります。</span><span class="sxs-lookup"><span data-stu-id="88f94-245">Office 365 no longer supports the old classifications for new groups and SharePoint sites when you enable this preview.</span></span> <span data-ttu-id="88f94-246">ただし、既存のグループおよびサイトには変換しない限り古い分類が引き続き表示されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-246">However, existing groups and sites still display the old classifications unless you convert them.</span></span> <span data-ttu-id="88f94-247">古い分類には、おそらく Azure AD PowerShell または PnP コア ライブラリを介して設定した、`ClassificationList`設定用の値を定義した "モダンな" サイト分類が含まれています。</span><span class="sxs-lookup"><span data-stu-id="88f94-247">Old classifications include the "modern" sites classification you set up, possibly through Azure AD PowerShell or the PnP Core library, that defined values for the `ClassificationList` setting.</span></span>
+## <a name="classic-azure-ad-site-classification"></a><span data-ttu-id="2aa11-219">従来の Azure AD サイト分類</span><span class="sxs-lookup"><span data-stu-id="2aa11-219">Classic Azure AD site classification</span></span>
 
-<span data-ttu-id="88f94-248">たとえば、PowerShell の場合には以下のようになります。</span><span class="sxs-lookup"><span data-stu-id="88f94-248">For example, in PowerShell:</span></span>
+<span data-ttu-id="2aa11-220">このプレビューを有効にすると、Office 365 は新しいグループおよび SharePoint サイト向けに古い分類をサポートしなくなります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-220">Office 365 no longer supports the old classifications for new groups and SharePoint sites when you enable this preview.</span></span> <span data-ttu-id="2aa11-221">ただし、既存のグループおよびサイトには、機密ラベルを使用するように変換しない限り、古い分類が引き続き表示されます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-221">However, existing groups and sites still display the old classifications unless you convert them to use sensitivity labels.</span></span> <span data-ttu-id="2aa11-222">古い分類には、おそらく Azure AD PowerShell または PnP コア ライブラリを介して設定した、`ClassificationList`設定用の値を定義した "モダンな" サイト分類が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2aa11-222">Old classifications include the "modern" sites classification you set up, possibly through Azure AD PowerShell or the PnP Core library, that defined values for the `ClassificationList` setting.</span></span>
+
+<span data-ttu-id="2aa11-223">たとえば、PowerShell の場合には以下のようになります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-223">For example, in PowerShell:</span></span>
 
 ```powershell
    ($setting["ClassificationList"])
 ```
 
-<span data-ttu-id="88f94-249">古い分類方法の詳細については、「[SharePoint の "モダン" サイトの分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-249">For more information about the old classification method, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).</span></span>
+<span data-ttu-id="2aa11-224">古い分類方法の詳細については、「[SharePoint の "モダン" サイトの分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-224">For more information about the old classification method, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).</span></span>
 
-<span data-ttu-id="88f94-250">現在の展開に基づき、古い分類を新しい分類に変換するための 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="88f94-250">Based on your current deployment, you have two options to convert your old classifications to the new classifications.</span></span>
+<span data-ttu-id="2aa11-225">古い分類を機密ラベルに変換するには、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="2aa11-225">To convert your old classifications to sensitivity labels, do one of the following:</span></span>
 
-### <a name="if-you-never-used-sensitivity-labels-unified-microsoft-information-protection-labels-for-files-and-email"></a><span data-ttu-id="88f94-251">ファイルおよびメールに機密ラベル (統合 Microsoft Information Protection ラベル) を使用したことがない場合</span><span class="sxs-lookup"><span data-stu-id="88f94-251">If you never used sensitivity labels (unified Microsoft Information Protection labels) for files and email</span></span>
+- <span data-ttu-id="2aa11-226">既存のラベルを使用: 既に公開されている既存の機密ラベルを編集して、サイトおよびグループに必要なラベル設定を指定します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-226">Use existing labels: Specify the label settings you want for sites and groups by editing existing sensitivity labels that are already published.</span></span>
 
-<span data-ttu-id="88f94-252">以下のことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="88f94-252">We recommend that you:</span></span>
+- <span data-ttu-id="2aa11-227">新しいラベルの作成: 既存の分類と同じ名前を持つ新しい機密ラベルを作成および公開して、サイトおよびグループに必要なラベル設定を指定します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-227">Create new labels: Specify the label settings you want for sites and groups by creating and publishing new sensitivity labels that have the same names as your existing classifications.</span></span>
 
-1. <span data-ttu-id="88f94-253">Microsoft 365 コンプライアンス センターで、既存の分類と同じ名前の新しい機密ラベルを作成します。</span><span class="sxs-lookup"><span data-stu-id="88f94-253">Create new sensitivity labels in the Microsoft 365 compliance center that have the same names as your existing classifications.</span></span>
-2. <span data-ttu-id="88f94-254">PowerShell を使用して、既存の Office 365 グループおよび名前のマッピングを使用する SharePoint サイトに新しいラベルを適用します。</span><span class="sxs-lookup"><span data-stu-id="88f94-254">Use PowerShell to apply the new labels to existing Office 365 groups and SharePoint sites using name mapping.</span></span>
-3. <span data-ttu-id="88f94-255">古い分類を削除します。</span><span class="sxs-lookup"><span data-stu-id="88f94-255">Delete the old classifications.</span></span>
+<span data-ttu-id="2aa11-228">その後で以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="2aa11-228">Then:</span></span> 
 
-<span data-ttu-id="88f94-256">新しい機密ラベルをサポートするアプリおよびサービスは、それらを表示します。</span><span class="sxs-lookup"><span data-stu-id="88f94-256">Apps and services that support the new sensitivity labels will show them.</span></span> <span data-ttu-id="88f94-257">新しいラベルを使用して新しいチーム、グループ、およびサイトを作成します。</span><span class="sxs-lookup"><span data-stu-id="88f94-257">You create new teams, groups, and sites with the new labels.</span></span> <span data-ttu-id="88f94-258">ユーザーは引き続き、新しいラベルをサポートしていないアプリおよびサービスからグループを作成できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-258">Users can still create groups from apps and services that don't support the new labels.</span></span> <span data-ttu-id="88f94-259">ただし、ユーザーはこれらのグループにラベルを適用できません。</span><span class="sxs-lookup"><span data-stu-id="88f94-259">However, users can't apply a label to these groups.</span></span> <span data-ttu-id="88f94-260">PowerShell を使用して、これらのグループに新しい機密ラベルを適用します。</span><span class="sxs-lookup"><span data-stu-id="88f94-260">Use PowerShell to apply the new sensitivity labels to these groups.</span></span>
+1. <span data-ttu-id="2aa11-229">PowerShell を使用して、既存の Office 365 グループおよび SharePoint サイトに名前のマッピングを使用して機密ラベルを適用します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-229">Use PowerShell to apply the sensitivity labels to existing Office 365 groups and SharePoint sites by using name mapping.</span></span> <span data-ttu-id="2aa11-230">手順については、次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-230">See the next section for instructions.</span></span>
 
-<span data-ttu-id="88f94-261">古い分類は保持可能です。ただし、PowerShell を使用してこれらのグループに新しい機密ラベルを適用することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="88f94-261">You can keep your old classifications; however, we highly recommend using PowerShell to apply the new sensitivity labels to these groups.</span></span>
+2. <span data-ttu-id="2aa11-231">既存のグループおよびサイトから古い分類を削除します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-231">Remove the old classifications from the existing groups and sites.</span></span>
 
-<span data-ttu-id="88f94-262">新しい機密ラベルをサポートするアプリおよびサービスは、新しいラベルで作成されます。</span><span class="sxs-lookup"><span data-stu-id="88f94-262">Apps and services that support the new sensitivity labels will get created with the new labels.</span></span> <span data-ttu-id="88f94-263">ユーザーが新しいラベルをサポートしないアプリおよびサービスからグループを作成する場合、ユーザーは分類を選択できます。</span><span class="sxs-lookup"><span data-stu-id="88f94-263">When users create groups from apps and services that don't support the new labels, they can select a classification.</span></span>
+<span data-ttu-id="2aa11-232">機密ラベルをまだサポートしていないアプリやサービスでユーザーが新しいグループを作成できないようにすることはできませんが、定期的な PowerShell スクリプトを実行して、ユーザーが古い分類で作成した新しいグループを探し、機密ラベルを使用するようにそれらを変換することができます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-232">Although you can't prevent users from creating new groups in apps and services that don't yet support sensitivity labels, you can run a recurring PowerShell script to look for new groups that users have created with the old classifications, and convert these to use sensitivity labels.</span></span> 
 
-### <a name="if-you-use-sensitivity-labels-unified-microsoft-information-protection-labels-for-files-and-email"></a><span data-ttu-id="88f94-264">ファイルおよびメールに機密ラベル (統合 Microsoft Information Protection ラベル) を使用する場合</span><span class="sxs-lookup"><span data-stu-id="88f94-264">If you use sensitivity labels (unified Microsoft Information Protection labels) for files and email</span></span>
+#### <a name="use-powershell-to-convert-classifications-for-office-365-groups-to-sensitivity-labels"></a><span data-ttu-id="2aa11-233">PowerShell を使用して、Office 365 グループの分類を機密ラベルに変換する</span><span class="sxs-lookup"><span data-stu-id="2aa11-233">Use PowerShell to convert classifications for Office 365 groups to sensitivity labels</span></span>
 
-<span data-ttu-id="88f94-265">このプレビューを有効にしたら Microsoft 365 コンプライアンス センター内の各ラベルに移動し、サイトおよびグループに必要なポリシーを適用します。</span><span class="sxs-lookup"><span data-stu-id="88f94-265">As soon as you enable this preview, go to each label in the Microsoft 365 compliance center and apply the policies you want for sites and groups.</span></span> <span data-ttu-id="88f94-266">ユーザーは、サイトおよびグループで利用可能な既存のラベルの表示を開始します。</span><span class="sxs-lookup"><span data-stu-id="88f94-266">Users will start seeing your existing labels available for sites and groups.</span></span>
+1. <span data-ttu-id="2aa11-234">SharePoint Online 管理シェルのバージョン 16.0.19418.12000 以降を実行していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-234">Ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above.</span></span> <span data-ttu-id="2aa11-235">既に最新バージョンを使用している場合は、手順 4 に進みます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-235">If you already have the latest version, skip to step 4.</span></span>
 
-### <a name="prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups"></a><span data-ttu-id="88f94-267">Office 365 グループのラベルを付け直す前に、SharePoint Online 管理シェルを準備する</span><span class="sxs-lookup"><span data-stu-id="88f94-267">Prepare the SharePoint Online Management Shell before you relabel Office 365 groups</span></span>
+2. <span data-ttu-id="2aa11-236">PowerShell ギャラリーから以前のバージョンの SharePoint Online 管理シェルをインストールした場合、次のコマンドレットを実行してモジュールを更新できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-236">If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.</span></span>
+    
+    ```PowerShell
+    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
 
-<span data-ttu-id="88f94-268">新しいラベルを適用する前に、最新の SharePoint Online 管理シェルを実行していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-268">Before you apply new labels, ensure that you're running the latest SharePoint Online Management Shell.</span></span> <span data-ttu-id="88f94-269">既に最新バージョンをお持ちの場合には、先に進み [Office 365 グループに新しい機密ラベルを付け直してください](#relabel-office-365-groups-with-new-sensitivity-labels)。</span><span class="sxs-lookup"><span data-stu-id="88f94-269">If you already have the latest version, you can go ahead and [Relabel Office 365 groups with new sensitivity labels](#relabel-office-365-groups-with-new-sensitivity-labels).</span></span>
+3. <span data-ttu-id="2aa11-237">Microsoft ダウンロード センターから以前のバージョンの SharePoint Online 管理シェルをインストールした場合は、[**プログラムの追加と削除**] に移動して、SharePoint Online 管理シェルをアンインストールします。 </span><span class="sxs-lookup"><span data-stu-id="2aa11-237">If you have installed a previous version of the SharePoint Online Management Shell from the Microsoft Download Center, go to **Add or remove programs** and uninstall the SharePoint Online Management Shell.</span></span> <span data-ttu-id="2aa11-238">次に、[ダウンロード センター](https://go.microsoft.com/fwlink/p/?LinkId=255251) から最新の SharePoint Online 管理シェルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-238">Then, install the latest SharePoint Online Management Shell from the [Download Center](https://go.microsoft.com/fwlink/p/?LinkId=255251).</span></span>
 
-<span data-ttu-id="88f94-270">プレビューのために SharePoint Online 管理シェルを準備するには:</span><span class="sxs-lookup"><span data-stu-id="88f94-270">To prepare the SharePoint Online Management Shell for the preview:</span></span>
+4. <span data-ttu-id="2aa11-239">Office 365 のグローバル管理者または SharePoint 管理者権限を持つ職場または学校のアカウントを使用して、SharePoint Online 管理シェルへと接続します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-239">Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint Online Management Shell.</span></span> <span data-ttu-id="2aa11-240">方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-240">To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).</span></span>
 
-1. <span data-ttu-id="88f94-271">SharePoint Online 管理シェルの以前のバージョンがインストールされている場合には、[**プログラムの追加と削除**] に移動して “SharePoint Online 管理シェル“ をアンインストールします。</span><span class="sxs-lookup"><span data-stu-id="88f94-271">If you installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall “SharePoint Online Management Shell”.</span></span>
-
-2. <span data-ttu-id="88f94-272">Web ブラウザーで [ダウンロード センター] ページへと移動し、[最新の SharePoint Online 管理シェルをダウンロードします](https://go.microsoft.com/fwlink/p/?LinkId=255251)。</span><span class="sxs-lookup"><span data-stu-id="88f94-272">In a web browser, go to the Download Center page and [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).</span></span>
-
-3. <span data-ttu-id="88f94-273">言語を選択し、[**ダウンロード**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="88f94-273">Select your language and then click **Download**.</span></span>
-
-4. <span data-ttu-id="88f94-274">x64 および x86 の .msi ファイルのいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="88f94-274">Choose between the x64 and x86 .msi file.</span></span> <span data-ttu-id="88f94-275">Windows の 64 ビット版を実行している場合には x64 ファイルを、32 ビット版を実行している場合には x86 ファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="88f94-275">Download the x64 file if you run the 64-bit version of Windows or the x86 file if you’re run the 32-bit version.</span></span> <span data-ttu-id="88f94-276">不明な場合には、「[実行している Windows オペレーティング システムの確認方法](https://support.microsoft.com/help/13443/windows-which-operating-system)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-276">If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system).</span></span>
-
-5. <span data-ttu-id="88f94-277">ファイルをダウンロードしたら、そのファイルを実行し、セットアップ ウィザードの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="88f94-277">After you download the file, run the file and follow the steps in the Setup Wizard.</span></span>
-
-### <a name="relabel-office-365-groups-with-new-sensitivity-labels"></a><span data-ttu-id="88f94-278">新しい機密ラベルで Office 365 グループにラベルを付け直します</span><span class="sxs-lookup"><span data-stu-id="88f94-278">Relabel Office 365 groups with new sensitivity labels</span></span>
-
-1. <span data-ttu-id="88f94-279">SharePoint Online 管理シェルの最新バージョンを使用していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-279">Ensure that you're using the latest version of the SharePoint Online Management Shell.</span></span> <span data-ttu-id="88f94-280">手順については、「[Office 365 グループのラベルを付け直す前に、SharePoint Online 管理シェルを準備する](#prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-280">For instructions, see [Prepare the SharePoint Online Management Shell before you relabel Office 365 groups](#prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups).</span></span>
-
-2. <span data-ttu-id="88f94-281">Office 365 のグローバル管理者または SharePoint 管理者権限を持つ職場または学校のアカウントを使用して、SharePoint Online 管理シェルへと接続します。</span><span class="sxs-lookup"><span data-stu-id="88f94-281">Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint Online Management Shell.</span></span> <span data-ttu-id="88f94-282">方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88f94-282">To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).</span></span>
-
-3. <span data-ttu-id="88f94-283">以下のコマンドを実行し、機密ラベルおよびその GUID のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="88f94-283">Run the following command to get the list of sensitivity labels and their GUIDs.</span></span>
+5. <span data-ttu-id="2aa11-241">以下のコマンドを実行し、機密ラベルおよびその GUID のリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-241">Run the following commands to get the list of sensitivity labels and their GUIDs.</span></span>
 
     ```PowerShell
     Set-ExecutionPolicy RemoteSigned
@@ -344,21 +280,48 @@ ms.locfileid: "42069818"
     Get-Label |ft Name, Guid  
     ```
 
-4. <span data-ttu-id="88f94-284">上書きするラベルの GUID をメモします。</span><span class="sxs-lookup"><span data-stu-id="88f94-284">Make a note of the GUID for the label you want to overwrite.</span></span> <span data-ttu-id="88f94-285">たとえば、"一般" ラベル。</span><span class="sxs-lookup"><span data-stu-id="88f94-285">For example, the "General" label.</span></span>
+6. <span data-ttu-id="2aa11-242">Office 365 グループに適用する機密ラベルの GUID をメモします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-242">Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups.</span></span>
 
-5. <span data-ttu-id="88f94-286">以下のコマンドを使用して、"一般" 分類を持つグループのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="88f94-286">Use the following command to get the list of groups that have the “General” classification.</span></span> <span data-ttu-id="88f94-287">このコマンドを実行すると Exchange Online PowerShell へと接続し、Get-UnifiedGroup コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="88f94-287">When you run this command, you'll connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet.</span></span>
+7. <span data-ttu-id="2aa11-243">次のコマンドを例として使用して、現在 "一般" の分類を持つグループのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-243">Use the following command as an example to get the list of groups that currently have the classification of "General":</span></span>
 
    ```PowerShell
-   Set-ExecutionPolicy RemoteSigned
-   $UserCredential = Get-Credential
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-   Import-PSSession $Session
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. <span data-ttu-id="88f94-288">グループごとに、新しい機密ラベル GUID を追加します。</span><span class="sxs-lookup"><span data-stu-id="88f94-288">For each group, add the new sensitivity label GUID.</span></span>
+6. <span data-ttu-id="2aa11-244">グループごとに、新しい機密ラベル GUID を追加します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-244">For each group, add the new sensitivity label GUID.</span></span> <span data-ttu-id="2aa11-245">例:</span><span class="sxs-lookup"><span data-stu-id="2aa11-245">For example:</span></span>
 
     ```PowerShell
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
+
+## <a name="auditing-sensitivity-label-activities"></a><span data-ttu-id="2aa11-246">機密ラベル アクティビティの監査</span><span class="sxs-lookup"><span data-stu-id="2aa11-246">Auditing sensitivity label activities</span></span>
+
+<span data-ttu-id="2aa11-247">誰かが機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも[優先度が高く](sensitivity-labels.md#label-priority-order-matters)なっている場合、このアクションはブロックされません。</span><span class="sxs-lookup"><span data-stu-id="2aa11-247">If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-labels.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked.</span></span> <span data-ttu-id="2aa11-248">たとえば、「**一般**」ラベルを SharePoint サイトに適用し、誰かがこのサイトに「**社外秘**」というラベルの付けられたドキュメントをアップロードしたとします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-248">For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**.</span></span> <span data-ttu-id="2aa11-249">優先度の高い機密ラベルは、優先順位の低いコンテンツよりも機密性の高いコンテンツを識別するため、この状況はセキュリティ上の懸念になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-249">Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.</span></span>
+
+<span data-ttu-id="2aa11-250">アクションはブロックされませんが、監査されるため、ラベルの優先度にこのようなずれが見られるドキュメントを特定し、必要に応じてアクションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-250">Although the action isn't blocked, it is audited, so you can identify documents that have this misalignment of label priority and take action if needed.</span></span> <span data-ttu-id="2aa11-251">たとえば、アップロードされたドキュメントをサイトから削除または移動します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-251">For example, delete or move the uploaded document from the site.</span></span> 
+
+<span data-ttu-id="2aa11-252">ドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも優先度が低い場合、セキュリティ上の懸念にはなりません。</span><span class="sxs-lookup"><span data-stu-id="2aa11-252">It wouldn't be a security concern if the document has a lower priority sensitivity label than the sensitivity label applied to the site.</span></span> <span data-ttu-id="2aa11-253">たとえば、「**一般**」というラベルの付いたドキュメントが、「**社外秘**」というラベルの付いたサイトにアップロードされている場合です。</span><span class="sxs-lookup"><span data-stu-id="2aa11-253">For example, a document labeled **General** is uploaded to a site labeled **Confidential**.</span></span> <span data-ttu-id="2aa11-254">このシナリオでは、監査イベントは生成されません。</span><span class="sxs-lookup"><span data-stu-id="2aa11-254">In this scenario, an auditing event isn't generated.</span></span>
+
+<span data-ttu-id="2aa11-255">このイベントの監査ログを検索するには、[**ファイルとページのアクティビティ**] カテゴリから [**検出されたドキュメントの機密度の不一致**] を探します。</span><span class="sxs-lookup"><span data-stu-id="2aa11-255">To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category.</span></span> 
+
+<span data-ttu-id="2aa11-256">誰かがサイトまたはグループに対して機密ラベルの追加または削除を行うと、これらのアクティビティも監査されます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-256">When somebody adds or removes a sensitivity label to or from a site or group, these activities are also audited.</span></span> <span data-ttu-id="2aa11-257">これらのイベントは、[[機密ラベル アクティビティ](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)] カテゴリにあります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-257">These events can be found in the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) category.</span></span> 
+
+<span data-ttu-id="2aa11-258">監査ログを検索する手順については、「[セキュリティ/コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-258">For instructions to search the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).</span></span>
+
+## <a name="troubleshoot-sensitivity-label-deployment"></a><span data-ttu-id="2aa11-259">機密ラベルの展開のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="2aa11-259">Troubleshoot sensitivity label deployment</span></span>
+
+<span data-ttu-id="2aa11-260">Microsoft Teams、Office 365 グループ、および SharePoint サイトの機密ラベルに問題がありますか ?</span><span class="sxs-lookup"><span data-stu-id="2aa11-260">Having problems with sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites?</span></span> <span data-ttu-id="2aa11-261">以下を確認してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-261">Check the following:</span></span>
+
+### <a name="labels-not-visible-after-publishing"></a><span data-ttu-id="2aa11-262">発行後にラベルが表示されない</span><span class="sxs-lookup"><span data-stu-id="2aa11-262">Labels not visible after publishing</span></span>
+<span data-ttu-id="2aa11-263">これらの設定を有効にした後、または機密ラベルの説明を変更した後でチームまたは Office 365 グループを作成する際に問題が発生した場合には、ラベルの変更を保存してから数時間待ち、その後チームまたはグループの作成を再試行してみてください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-263">If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, wait a few hours after saving the label changes, and then try to create the team or group again.</span></span> <span data-ttu-id="2aa11-264">詳細については、「[Schedule roll-out after you create or change a sensitivity label (機密ラベルを作成または変更した後にロールアウトをスケジュールする)](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-264">For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).</span></span>
+
+<span data-ttu-id="2aa11-265">それでも SharePoint Online から新しい機密ラベルを表示できない場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)へお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-265">If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).</span></span>
+
+### <a name="team-group-or-sharepoint-site-creation-errors"></a><span data-ttu-id="2aa11-266">チーム、グループ、または SharePoint サイトの作成エラー</span><span class="sxs-lookup"><span data-stu-id="2aa11-266">Team, group, or SharePoint site creation errors</span></span>
+<span data-ttu-id="2aa11-267">パブリック プレビュー中に作成エラーが発生した場合、2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="2aa11-267">If you experience creation errors during the public preview, you have two options:</span></span>
+
+- <span data-ttu-id="2aa11-268">どのユーザーに対しても機密ラベルが必須ではないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="2aa11-268">Ensure that sensitivity labels are not mandatory for any user.</span></span>
+
+- <span data-ttu-id="2aa11-269">[[Enable sensitivity label support in PowerShell (PowerShell で機密ラベルのサポートを有効にする)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)] と同じ手順を使用することで、Microsoft Teams、Office 365 グループ、および SharePoint サイトの機密ラベルをオフにできます。</span><span class="sxs-lookup"><span data-stu-id="2aa11-269">You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).</span></span> <span data-ttu-id="2aa11-270">ただし、プレビューを無効にするには、手順 5 で `$setting["EnableMIPLabels"] = "False"` を使用して機能を無効にします。</span><span class="sxs-lookup"><span data-stu-id="2aa11-270">However, to disable the preview, in step 5, disable the feature by using `$setting["EnableMIPLabels"] = "False"`.</span></span>
+
