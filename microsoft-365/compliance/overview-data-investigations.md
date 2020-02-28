@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
-ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071081"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328079"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査 (プレビュー) の概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "42071081"
 
 ## <a name="permissions"></a>アクセス許可
 
-データ調査にアクセスして運用するには、データ捜査役割グループのメンバーである必要があります。 詳細については、「[データ調査のアクセス許可を割り当てる](permissions.md)」を参照してください。
+データ調査にアクセスして運用するには、データ捜査役割グループのメンバーである必要があります。 詳細については、「[データ調査のアクセス許可を割り当てる](data-investigations-permissions.md)」を参照してください。
 
 ## <a name="data-investigations-preview-workflow"></a>データ調査 (プレビュー) ワークフロー 
 

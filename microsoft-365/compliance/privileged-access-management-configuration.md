@@ -1,5 +1,5 @@
 ---
-title: Office 365 での特権アクセス管理の構成
+title: 特権アクセス管理の概要
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: Office 365 での特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 特権アクセス管理の構成の詳細については、このトピックを使用してください。
+ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601734"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322530"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理の構成
+# <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の概要
 
 >[!IMPORTANT]
 >このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。

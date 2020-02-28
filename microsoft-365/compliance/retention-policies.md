@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106890"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280205"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -275,7 +275,7 @@ Teams の保持機能の最適化に継続的に取り組んでおり、今後�
    > [!NOTE]
    > 以前は、アイテム保持ポリシーでは作成から 30 日未満の Teams コンテンツを削除できませんでしたが、この制限は削除されました。 Teams コンテンツの保持期間は、選択した任意の日数で、最短 1 日から設定することができます。 保持期間が 1 日の場合、保持期間が終了してからメッセージが完全に削除されるまでに最大 3 日を要します。
     
-チームでは、チャット内で共有されるファイルは、ファイルを共有したユーザーの OneDrive アカウントに保存されます。 チャネルにアップロードされたファイルは、チームの SharePoint 内に保存されます。 そのため、チーム内のファイルを保持または削除するには、SharePoint と OneDrive の場所に特に適用されるアイテム保持ポリシーを作成する必要があります。 特定のチームのみのファイルにポリシーを適用する場合は、チーム用の SharePoint サイトおよびチーム内のユーザーの OneDrive アカウントを選択できます。
+Teams では、チャット内で共有されるファイルは、ファイルを共有したユーザーの OneDrive アカウントに保存されます。 チャネルにアップロードされたファイルは、チームの SharePoint 内に保存されます。 そのため、チーム内のファイルを保持または削除するには、OneDrive と Office 365 グループの場所に適用されるアイテム保持ポリシーを作成する必要があります。 特定のユーザーまたはチームだけの Teams で共有されるファイルにポリシーを適用する場合は、OneDrive または Office 365 グループの場所を選択し、特定のユーザーまたはチームを含めることができます。
   
 Teams に適用するアイテム保持ポリシーには、[保持ロック](#locking-a-retention-policy)を使用できます。
   
@@ -402,7 +402,7 @@ SharePoint のサイトでは、[情報管理ポリシー](intro-to-info-mgmt-po
 
 アイテム保持ポリシーを作成するコンプライアンス チームのメンバーには、[セキュリティ &amp;コンプライアンス センター](https://protection.office.com/)へのアクセス許可が必要です。 既定により、テナント管理者はこの場所へのアクセス権を持ち、コンプライアンス責任者やその他のユーザーに[セキュリティ &amp; コンプライアンス センター](https://protection.office.com/)へのアクセス権を付与できます (テナント管理者のすべての権限が付与されるわけではありません)。これを行うには、[セキュリティ &amp; コンプライアンス センター](https://protection.office.com/)の [**権限**] ページに移動し、[**コンプライアンス管理者**] 役割グループを編集して、その役割グループにメンバーを追加することをお勧めします。 
   
-詳細については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。 
+詳細については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。 
 
 これらのアクセス許可は、アイテム保持ポリシーを作成して適用するためにのみ必要です。ポリシーの適用には、コンテンツへのアクセスは不要です。
   

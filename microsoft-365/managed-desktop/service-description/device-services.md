@@ -7,18 +7,18 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b20c3b3be7c4582c7adbfae183698c2725de4e7f
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982488"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328089"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージドデスクトップデバイスサービス
 
 このトピックでは、Microsoft マネージドデスクトップデバイスのサービスとサービスの制限事項を示します。
 
-## <a name="device-services"></a>デバイスサービス
+## <a name="device-services"></a>デバイス サービス
 
 Microsoft は、Microsoft マネージドデスクトップデバイスにこれらのサービスを提供します。 Microsoft マネージドデスクトッププログラムデバイスの詳細については、「 [Microsoft Managed desktop devices](device-list.md)」を参照してください。
 
@@ -26,7 +26,7 @@ Microsoft は、Microsoft マネージドデスクトップデバイスにこれ
  --- | ---
 サポート | サポートエージェントは、デバイス機能に直接関連する質問に回答し、デバイスの問題を診断します。
 インベントリ | すべてのデバイスは、Microsoft Managed Desktop Admin portal でインベントリおよび状態追跡用に追跡されます。
-ファームウェア/ドライバーの更新プログラム | 既定では、Microsoft マネージドデスクトップデバイスは Windows Update からのファームウェアとドライバーの更新プログラムを受け取ります。 すべてのハードウェアパートナーが Windows Update 経由で更新プログラムを展開するわけではありません。これらの更新プログラムは、別途要求できます。
+ファームウェア/ドライバーの更新プログラム | 既定では、Microsoft マネージドデスクトップデバイスは Windows Update からのファームウェアとドライバーの更新プログラムを受け取ります。 すべてのハードウェアパートナーが Windows Update を通じて更新を展開するわけではありません。 更新プログラムが自動で公開されていない場合は、例外が必要であり、顧客が展開する必要があります。
 備品 | デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条項は異なる場合があります。 デバイスを選択する際に選択した保証条件を参照してください。 
 デバイスのセットアップ    | デバイスは、現在のバージョンの Windows で事前構成され、クラウド経由でアプリと構成を受け取ります。 
 

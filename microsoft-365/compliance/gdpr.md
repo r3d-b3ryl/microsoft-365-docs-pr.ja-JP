@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7c2a19a58dd616e2516ea70492f4f65ab211441
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916882"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322556"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 
@@ -56,15 +56,11 @@ GDPR 基準を満たすには、次のタスクが必要です。 実装に関�
 
 上記で説明したように、GDPR の推奨アクション プランとアカウンタビリティ対応準備チェックリストでは、Microsoft の製品とサービスの使用において GDPR 準拠を実装または評価するためのガイドが提供されています。
 
-## <a name="the-gdpr-in-action"></a>実行中の GDPR
-
-このセクションでは、前述の GDPR タスクの完了に関する概要と考慮するポイントについて説明します。 これらのタスクの完了は、Microsoft の構成によって異なる場合があります。
-
-### <a name="data-subject-request-dsr"></a>データ主体の要求 (DSR)
+## <a name="data-subject-request-dsr"></a>データ主体の要求 (DSR)
 
 GDPR では、個人 (またはデータ主体) に対して、個人データの処理に関連した特定の権利が付与されます。それには、不正確なデータを修正する権利、データを抹消する権利、処理を制限する権利、自分のデータを受け取る権利、および自分のデータを別の管理者に送信するという要求を実行する権利が含まれます。 コントローラーには、タイムリーで一貫性のある GDPR 応答を提供する責任があります。 技術的な詳細については、「[データ主体の要求](gdpr-data-subject-requests.md)」を参照してください。  
 
-#### <a name="dsr-faqs"></a>DSR についてよく寄せられる質問
+### <a name="dsr-faqs"></a>DSR についてよく寄せられる質問
 
 **DSR の完了のためには、どのようなアクションが必要ですか?**
 
@@ -105,11 +101,11 @@ GDPR に関連する一連の記事については、こちらを参照してく
 
 オンライン サービスは、管理者であるお客様がデータ主体の要求に対応できるようにする多数の機能を提供しています。 Microsoft のエンタープライズ オンライン サービスおよび管理コントロールは、データ主体の権利要求に応じた個人データの処理に役立ちます。これにより、Microsoft のクラウドに保管された、管理者の管理対象データに含まれる個人データの検出、アクセス、修正、制限、削除、エクスポートが可能になります。 また、オンライン サービスでは、必要に応じて機械可読形式のデータも提供します。
 
-### <a name="data-protection-impact-assessment"></a>データ保護影響評価
+## <a name="data-protection-impact-assessment"></a>データ保護影響評価
 
 GDPR では、データ管理者は「自然人の権利と自由を危険にさらす可能性が高い」操作処理に関して[データ保護影響評価](gdpr-data-protection-impact-assessments.md) (DPIA) を準備する必要があります。 DPIA の作成を必要とする Microsoft の製品とサービスに固有のものはありません。 むしろ、Microsoft 構成の詳細に依存しています。 Office での考慮事項に関する詳細のリストは、「[DPIA の内容](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia)」を参照してください
 
-#### <a name="dpia-faqs"></a>DPIA についてよく寄せられる質問
+### <a name="dpia-faqs"></a>DPIA についてよく寄せられる質問
 
 **DPIA はいつ実施する必要がありますか?**
 
@@ -142,11 +138,11 @@ Microsoft は、エンジニアリング部門および業務部門でプライ�
 
 処理者としての Microsoft には、GDPR に示されている DPIA 要件へのコンプライアンスを確保するよう、管理者を支援する責任があります。 お客様をサポートするために、将来の更新では、このセクションで Microsoft の DPIA 関連セクションの要約が提供される予定です。その目的は、Microsoft サービスを利用している管理者が、提供された要約を活用して独自の DPIA を作成できるようにするためです。
 
-### <a name="breach-notification"></a>違反の通知
+## <a name="breach-notification"></a>違反の通知
 
 GDPR では、個人データ違反が発生した場合のデータの管理者と処理者のための通知要件が規定されています。 データ処理者として、Microsoft は、必ずお客様が GDPR の違反通知要件を満たせるようにしています。 データ コントローラーは、データ プライバシーに対するリスクを評価し、お客様の DPA に通知する必要がある違反かどうかを判断する責任があります。 Microsoft は、その評価に必要な情報を提供しています。 Microsoft が個人データの侵害を検出して対応する方法の詳細については、「[GDPR の下での違反の通知](gdpr-breach-notification.md)」を参照してください。
 
-#### <a name="breach-notification-faqs"></a>違反の通知についてよく寄せられる質問
+### <a name="breach-notification-faqs"></a>違反の通知についてよく寄せられる質問
 
 **GDPR における個人データ違反とは何ですか?**
 
@@ -179,7 +175,7 @@ GDPR では、個人データ違反が発生した場合のデータの管理者
 
 Microsoft は、お客様に速やかに通知するためのポリシーと手順を規定しています。 お客様の DPA への通知要件に応じるため、当社は、個人データ違反が発生したかどうかを判別するために使用したプロセスの説明、違反の性質に関する説明、違反軽減のために行った措置についての説明を提供します。
 
-### <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR に関するアカウンタビリティ対応準備チェックリスト
+## <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR に関するアカウンタビリティ対応準備チェックリスト
 
 これらの[チェックリスト](gdpr-arc.md)は、Microsoft 製品の使用において、GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。 [Microsoft コンプライアンス スコア](compliance-score.md)で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、チェックリスト項目を管理できます。
 

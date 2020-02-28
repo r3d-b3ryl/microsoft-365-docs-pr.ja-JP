@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55c7cb34c5484eaf8f6693be0ce439e33a82550f
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 4d445d4c917a46b12592308f599570725ace8e9d
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266975"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322566"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコアについて
 
@@ -59,7 +59,7 @@ Intune から提供された Microsoft のセキュリティで保護された�
 - すべてのデバイスに高度なセキュリティ構成を要求する
 - 毎週ブロックされたデバイスのレポートを確認する
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>信頼性の高い測定要件を満たしていない改善アクションを削除する
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>信頼性の高い測定要件を満たしていない改善アクションを削除する 
 
 マイクロソフトのセキュリティスコアが意味があり、すべての改善アクションが測定可能で信頼性を備えていることを確認するために、次の改善アクションを削除しています。
 
@@ -93,7 +93,7 @@ Intune から提供された Microsoft のセキュリティで保護された�
 
 ## <a name="march-16th-2020"></a>2020年3月16日
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>信頼性の高い測定要件を満たしていない改善アクションを削除する
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>信頼性の高い測定要件を満たしていない、またはセキュリティに関する有益な表現を提供していない改善アクションを削除する
 
 マイクロソフトのセキュリティスコアが意味があり、すべての改善アクションが測定可能で信頼性を備えていることを確認するために、次の改善アクションを削除しています。
 
@@ -102,6 +102,7 @@ Intune から提供された Microsoft のセキュリティで保護された�
 - Office 365 の安全なリンクを設定して Url を確認する
 - メールボックスの委任を許可しない
 - サイトおよびドキュメントの匿名ゲスト共有リンクを許可する
+- Cloud App Security コンソールを有効にする
 
 ### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Azure AD 向上アクションのセキュリティの既定のサポート
 

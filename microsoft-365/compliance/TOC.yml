@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: はじめに
+- name: 作業の開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -65,7 +65,7 @@
       items:
         - name: 特権アクセス管理の詳細情報
           href: privileged-access-management-overview.md
-        - name: 特権アクセス管理を設定する
+        - name: 特権アクセス管理の概要
           href: privileged-access-management-configuration.md
     - name: ユーザーとデバイス アクセスの保護
       href: protect-access-to-data-and-services.md
@@ -621,14 +621,15 @@
         - name: Bccと拡張配布グループの受信者を保持する
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: データ調査を管理する
-  href: overview-data-investigations.md
   items:
+    - name: データ調査の概要
+      href: overview-data-investigations.md
     - name: データ流出インシデントを管理する
       href: manage-data-spillage-incidents.md
+    - name: データ調査のアクセス許可を割り当てる
+      href: data-investigations-permissions.md
     - name: 新しい調査を作成する
       href: create-new-investigation.md
-    - name: データ調査のアクセス許可を割り当てる
-      href: permissions.md
     - name: 調査でデータ検索する
       href: search-for-data.md
       items:
