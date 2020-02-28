@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 の高度な監査は、新しい監査機能を提供し、組織におけるフォレンシックおよびコンプライアンスの調査を支援します。
-ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170517"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280167"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -51,7 +51,7 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 ## <a name="access-to-crucial-events-for-investigations"></a>調査のための重要なイベントへのアクセス
 
-重要なセキュリティ - セキュリティ関連の重要な監査イベントおよびコンプライアンス関連の監査イベントは、違反の可能性やその他のフォレンジック調査の調査に役立つイベントです。 リリースする最初の重要なイベントは、*MailItemsAccessed* メールボックスの監査イベントです。 このイベントは、メール プロトコルとクライアントがメール データにアクセスしたときにトリガーされます。 MailItemsAccessed イベントは、調査者がデータ違反を識別し、侵害された可能性があるメッセージの範囲を特定するのに役立ちます。 攻撃者がメール メッセージにアクセスすると、MailItemsAccessed イベントは、実際に読み取られたことを示す明示的な信号がない場合でもトリガーされます (つまり、バインドや同期などのアクセスの種類が監査レコードに記録されます)。
+重要なセキュリティ - セキュリティ関連の重要な監査イベントおよびコンプライアンス関連の監査イベントは、違反の可能性やその他のフォレンジック調査の調査に役立つイベントです。 リリースする最初の重要なイベントは、*MailItemsAccessed* メールボックスの監査アクションです。 このアクションは、メール プロトコルとメール クライアントがメール データにアクセスしたときにトリガーされます。 MailItemsAccessed アクションは、調査者がデータ違反を識別し、侵害された可能性があるメッセージの範囲を特定するのに役立ちます。 攻撃者がメール メッセージにアクセスすると、MailItemsAccessed アクションは、メッセージが実際に読み取られたことを示す明示的な信号がない場合でもトリガーされます (つまり、バインドや同期などのアクセスの種類が監査レコードに記録されます)。
 
 新しい MailItemsAccessed メールボックス アクションは、Exchange Online のメールボックスの監査ログインの MessageBind を置き換え、次の改良点を提供します。
 
@@ -63,6 +63,14 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 メールボックスの監査ログインの詳細については、「[メールボックスの監査を管理する](enable-mailbox-auditing.md)」を参照してください。
 
+### <a name="search-for-mailitemsaccessed-audit-records"></a>MailItemsAccessed 監査レコードを検索する
+
+MailItemsAccessed 監査レコードを検索するには、Office 365 セキュリティ/コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md) の **Exchange メールボックス アクティビティ** ドロップダウン リストで **メールボックス アイテムへのアクセス** アクティビティを検索できます。
+
+![監査ログ検索ツールで MailItemsAccessed アクションを検索する](../media/MailItemsAccessedSCC1.png)
+
+Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) または [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) コマンドを実行することもできます。
+
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Office 365 管理アクティビティ API への高帯域幅アクセス
 
 Office 365 管理アクティビティ API を使用して監査ログにアクセスする組織は、発行者レベルの調整制限により制限されていました。 つまり、発行者が複数のお客様に代わってデータをプルする場合、制限はそれらすべてのお客様で共有されていました。
@@ -72,3 +80,53 @@ Office 365 管理アクティビティ API を使用して監査ログにアク�
 すべての組織には、最初に 1 分あたり 2,000 件の要求のベースラインが割り当てられます。 この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 E5 組織は、E5 以外の組織の約 2 倍の帯域幅を利用できます。 また、サービスの正常性を保護するために、最大帯域幅の上限も設定されます。
 
 詳細については、「[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)」の「API 調整」のセクションを参照してください。
+
+## <a name="faqs-for-advanced-audit"></a>高度な監査についてよく寄せられる質問
+
+**高度な監査にはどこからアクセスできますか ?**
+
+高度な監査が組織に展開された後、監査ログ保持ポリシーを作成し、[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com) の監査ログ検索ツールを使用して MailItemsAccessed 監査レコードを検索できます。 今後数週間以内に、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) に高度な監査を展開するよう取り組んでいます。
+
+**高度な監査を利用するには、すべてのユーザーに E5 ライセンスが必要ですか ?**
+
+ユーザーレベルの高度な監査機能を利用するには、ユーザーに E5 ライセンスを割り当てる必要があります。 適切なライセンスをチェックして、ユーザーに機能を公開するための機能がいくつかあります。 たとえば、90 日を超えて E5 ライセンスが割り当てられていないユーザーの監査レコードを保持しようとすると、システムはエラー メッセージを返します。
+
+**E5 サブスクリプションがあり、E5 ライセンスが割り当てられているユーザーがいるにもかかわらず、組織に高度な監査が表示されないのはなぜですか ?**
+
+適切なライセンスが設定されていても、組織で高度な監査機能 (監査ログ保持ポリシーの作成機能や MailItemsAccessed 監査レコードのログなど) が利用できない可能性があります。 これが発生しているのは、高度な監査パッケージが組織にまだ展開されていないためです。 これは一時的なライセンス バックフィルの問題であり、影響を受けている組織では今後数週間で解決されるはずです。 この問題を軽減するには、E5 ユーザーごとに次の手順を実行してください。
+
+1. Microsoft 365 管理センターで、**[ユーザー]、[アクティブなユーザー]** の順に移動し、ユーザーを選択します。
+
+2. ユーザー プロパティのポップアップ ページで、[**ライセンスとアプリ**] をクリックします。
+
+3. **アプリ** セクションを展開し、次のいずれかの操作を行います。
+
+   a. [**Microsoft 365 Advanced Auditing**] チェックボックスが選択されていない場合、選択して [**変更の保存**] をクリックします。 このユーザーの MailItemsAccessed アクションの監査レコードは、24 時間以内に検索可能になります。
+
+   b. [**Microsoft 365 Advanced Auditing**] チェックボックスが選択されている場合、選択を外して [**変更の保存**] をクリックします。 手順 4 を参照してください。
+
+4. 手順 3 でチェックボックスを外した場合は、60 分待ってから手順 3a を繰り返し、Microsoft 365 Advanced Auditing アプリを有効にします。
+
+**組織が監査レコード 1 年間保持のプライベート プレビュー中であった場合はどうなりますか ?**
+
+プレビュー プログラムからの監査保持ポリシーは、カスタム監査保持ポリシーで上書きおよび変更しない限り保持されます。
+
+**組織が監査ログを 1 年以上保持したい場合はどうなりますか ?**
+
+監査記録の保存期間を延長する方法および可能性についてのオプションを検討しています。 [Office 365 User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance?category_id=137187) で監査記録の長期保存についてのフィードバックを提供することができます。
+
+**組織に E5 サブスクリプションがある場合、MailItemsAccessed イベントの監査レコードにアクセスするために何かをする必要はありますか ?**
+
+資格のあるお客様には、MailItemsAccessed イベントにアクセスするためのアクションはありません。 ただし、このトピックで説明したように、ライセンス バックフィルの問題によって発生する遅延により、MailItemsAccessed イベントの監査レコードが監査ログ検索で返されない場合があります。 この場合、MailItemsAccessed 監査レコードの検索セクションの指示に従ってください。
+
+**今年、追加のイベントをリリースする予定はありますか ?**
+
+はい。今後数か月以内に、調査に不可欠な新しいイベントをリリースする予定です。 リリース日が近づいたら、これらの新しいイベントに関する情報を [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap) に投稿します。
+
+**高度な監査の新しいイベントは、Office 365 管理アクティビティ API で利用できますか ?**
+
+はい。 適切なライセンスを持つユーザーの監査レコードが生成されている限り、Office 365 管理アクティビティ API を介してこれらのレコードにアクセスできます。
+
+**より高い帯域幅は、遅延の改善やより高い SLA を意味しますか ?**
+
+現時点では、高帯域幅は、特に大量の監査シグナルおよび重要な消費パターンを持つ組織に対して、より良いパイプラインを提供します。 これにより、遅延が改善される可能性があります。 ただし、高帯域幅に関連する SLA はありません。 標準的な遅延はドキュメント化されており、これらは高度な監査のリリースでは変更されません。

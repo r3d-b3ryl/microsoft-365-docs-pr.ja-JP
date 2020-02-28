@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266743"
+ms.locfileid: "42277224"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -795,6 +795,9 @@ Office 365 監査ログに記録される Microsoft Forms のユーザー アク
 
 下記の説明に別途記載するとおり、一部の操作には追加のアクティビティ パラメーターが含まれます。
 
+> [!NOTE]
+> Forms アクティビティが共同作成者または匿名のレスポンダーによって実行される場合、わずかに異なるログが記録されます。 詳細については、[共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ](#forms-activities-performed-by-co-authors-and-anonymous-responders) セクションを参照してください。
+
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
 |コメントが作成される|CreateComment|フォーム所有者がコメントまたはスコアをクイズに追加する。|
@@ -826,7 +829,23 @@ Office 365 監査ログに記録される Microsoft Forms のユーザー アク
 |回答が送信される|SubmitResponse|ユーザーがフォームへの回答を送信する。 <br><br>プロパティ IsInternalForm:boolean は、回答者がフォーム所有者と同じ組織内にいるかどうかを示します。|
 ||||
 
-### <a name="sensitivity-label-activities"></a>機密ラベル アクティビティ 
+#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ
+
+Forms は、フォームの設計時および回答の分析時の協同作業をサポートします。 フォームの協力者は、*共同作成者* として知られています。 共同作成者は、フォームの削除または移動を除き、フォームの所有者が実行できるすべての操作を実行できます。 また、Forms を使用すると、匿名で回答できるフォームを作成できます。 これは、フォームに回答するためにレスポンダーが組織にサインインする必要がないことを意味します。 
+
+次の表は、共同作成者と匿名のレスポンダーによって実行されたアクティビティの監査アクティビティおよび監査レコードの情報を示しています。
+
+|**アクティビティの種類**|**内部または外部ユーザー**|**ログに記録されたユーザー ID**|**ログインしている組織**|**Forms ユーザーの種類**|
+|:-----|:-----|:-----|:-----|:-----|
+|共同編集アクティビティ|内部|UPN|フォームの所有者の組織|共同作成者|
+|共同編集アクティビティ|外部|UPN<br>|共同作成者の組織<br>|共同作成者|
+|共同編集アクティビティ|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織<br>|共同作成者|
+|回答アクティビティ|外部|UPN<br>|レスポンダーの組織<br>|レスポンダー|
+|回答アクティビティ|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(ユーザー ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織|レスポンダー|
+|回答アクティビティ|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(ユーザー ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織|レスポンダー|
+||||
+
+### <a name="sensitivity-label-activities"></a>機密ラベル アクティビティ
 
 次の表に、SharePoint Online および Teams サイトのラベル付けアクティビティから生じるイベントを一覧表示します。
 
