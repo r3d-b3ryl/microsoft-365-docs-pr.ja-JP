@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: ce0919a1190da06279081089810221e55a8f59b7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088630"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341266"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -342,8 +342,8 @@ Office 365 セキュリティ & コンプライアンスセンターのメッセ
 |`DI=SQ`|メッセージは検疫されました。|
 |`DI=SD`|メッセージは削除されました。|
 |`DI=SJ`|メッセージは受信者の迷惑メール フォルダーに送信されました。|
-|`DI=SN`|メッセージがより危険度の高い配信プールを経由してルーティングされました。 詳細については、「[送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。|
-|`DI=SO`|メッセージは通常の送信用の配信プールを通じて送信されました。|
+|`DI=SN`|メッセージは通常の送信用の配信プールを通じて送信されました。|
+|`DI=SO`|メッセージがより危険度の高い配信プールを経由してルーティングされました。 詳細については、「[送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。|
 |`SFS=[a]|SFS=[b]`|これはスパム ルールが一致したことを示します。|
 |`IPV=CAL`|このメッセージの IP アドレスは接続フィルターの IP 許可一覧に指定されているため、スパム フィルターの通過を許可されました。|
 |`H=<EHLOstring>`|接続している電子メールサーバーの HELO または EHLO 文字列。|

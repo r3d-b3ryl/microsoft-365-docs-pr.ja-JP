@@ -14,14 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 ATP の安全なリンクのしくみについては、この記事をお読みください。'
-ms.openlocfilehash: 7b1c1368b274bbbb6dc7a5b760de4968575962fa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c87eef2afbb3a694d9906de0c6c43bfeb576782b
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599204"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333684"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 の ATP の安全なリンクのしくみ
+> [!IMPORTANT] 
+> Office 365 の ATP の安全なリンクが正しく動作するには、すべての Office 365 サービスが同じバージョンになっている必要があります。
          
 ## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP の安全なリンクが電子メール内の Url と連携する方法
 

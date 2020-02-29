@@ -1,5 +1,5 @@
 ---
-title: 支払い方法を追加、更新、または削除する
+title: お支払い方法を追加、更新、削除する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,14 +24,14 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Microsoft 365 管理センターで支払い方法を管理する方法について説明します。
-ms.openlocfilehash: 7e217f5fcb7f93e91ec0ed3ab6d4a806597fbfb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242522"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341227"
 ---
-# <a name="add-update-or-remove-your-payment-methods"></a>支払い方法を追加、更新、または削除する
+# <a name="add-update-or-remove-your-payment-methods"></a>お支払い方法を追加、更新、削除する
 
 ::: moniker range="o365-worldwide"
 クレジットカードまたはデビットカードまたは銀行口座を使用して、Microsoft から製品やサービスを購入することができます。 支払い情報は、[**支払い方法**] ページで入力するか、購入するときに入力できます。
@@ -42,6 +42,8 @@ ms.locfileid: "42242522"
 > 銀行口座で支払うオプションは、一部の国や地域では使用できません。
 >
 > テナントと同じ国から発行されたクレジットカードを使用する必要があります。
+
+**この記事に記載されているインターフェイスと一致しないものが表示されますか。** その場合は、「[支払い方法の管理](manage-payment-methods.md)」を参照してください。
 
 ## <a name="add-a-payment-method"></a>支払い方法を追加する
 
@@ -56,7 +58,7 @@ ms.locfileid: "42242522"
 
 1. 管理センターで、[**課金請求書** > **&** >支払い<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>] ページに移動します。
 2. [**支払い方法**] ページで、更新するカードまたは銀行口座を選択し、[**編集**] を選択します。
-3. 支払い方法の情報 (カードまたは銀行口座の名前、請求先住所、電話番号、または有効期限の日付) を更新し、[**保存**] を選択します。
+3. お支払い方法の情報 (カード名義、銀行口座名義、請求先住所、電話番号、有効期限など) を更新し、[**保存**] を選択します。
 
 ## <a name="change-a-payment-method"></a>支払い方法を変更する
 

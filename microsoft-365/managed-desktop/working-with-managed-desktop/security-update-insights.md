@@ -1,19 +1,19 @@
 ---
-title: Windows セキュリティ更新プログラムインサイト
+title: Windows セキュリティ更新プログラムの分析情報
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 600491fbdd70315385587eb8cb443a1696c3bee6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257834"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341257"
 ---
-# <a name="windows-security-update-insights"></a>Windows セキュリティ更新プログラムインサイト
+# <a name="windows-security-update-insights"></a>Windows セキュリティ更新プログラムの分析情報
 このビューには、Microsoft マネージドデスクトップデバイスのセキュリティ更新プログラムの状態の概要が表示されます。 
 
 利用状況データを表示するには、[ <strong>Windows セキュリティの更新</strong>] タブを選択します。
@@ -28,7 +28,7 @@ Windows Update のコンテキストで、次の用語を使用してデバイ�
 
 - <strong>アクティブ:</strong>最新のセキュリティ更新プログラムのリリースに対して少なくとも6時間 (連続) 使用されているデバイス。少なくとも5日ごとに Microsoft Intune を使用してチェックインしたデバイス
 - <strong>同期済み:</strong>過去28日以内に Intune でチェックインされたデバイス
-- <strong>同期</strong><i>されていません</i>–過去28日間に Intune を使用してチェックインしていないデバイス
+- <strong>同期がありません:</strong>過去28日間に Intune でチェックイン<i>されていない</i>デバイス
 
 
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: セキュリティの既定値を使用して Office 365 ユーザー用の多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: bc906299e42929dd4dd09b94502a6d463a5971b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257194"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341248"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
@@ -88,11 +88,11 @@ Office 2016 のクライアント アプリケーションはすべて、Active 
 
 2. [**アクティブなユーザー** ] セクションで、[**多要素認証**] をクリックします。
 
-3. [**多要素認証**] ページで、これを1人のユーザーに対して有効にするか、**一括更新**を実行する場合は、[**ユーザー** ] を選択します。
+3. [**多要素認証**] ページで、この設定を1人のユーザーに対して有効にする場合は [**ユーザー** ] を選択し、複数のユーザーを有効にする場合は [**一括更新**] を選択します。
 
 4. **クイック操作**の下にある [**有効化**] をクリックします。
 
-5. ポップアップウィンドウで、[**多要素認証を有効にする**] の [c] をオンにします。
+5. ポップアップウィンドウで、[**多要素認証を有効にする**] をクリックします。
 
 組織に多要素認証を設定した後、ユーザーはデバイスに 2 段階認証を設定する必要があります。 詳細については、「[Office 365 で 2 段階認証をセットアップする](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)」を参照してください。
     
