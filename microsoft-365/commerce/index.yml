@@ -1,0 +1,73 @@
+### YamlMime:Landing
+title: ビジネスサブスクリプションと請求書のドキュメント
+summary: Microsoft を使用して、ビジネスサブスクリプションを購入および管理し、ライセンス管理タスクを実行し、ビジネスアカウントの請求と支払いを管理する方法について説明します。
+metadata:
+  title: ビジネスサブスクリプションと請求書のドキュメント
+  description: Microsoft を使用して、ビジネスサブスクリプションを購入および管理し、ライセンス管理タスクを実行し、ビジネスアカウントの請求と支払いを管理する方法について説明します。
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection: commerce
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  ms.date: 02/27/2020
+  localization_priority: Normal
+  search.appverid: MET150
+  ms.openlocfilehash: 76f86bcd65fe1d5894777d8263f8c48f5fc5493b
+  ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 02/29/2020
+  ms.locfileid: "42341590"
+landingContent:
+- title: 課金と支払いを管理する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 課金内容を表示する
+      url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: 支払方法を管理する
+      url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+    - text: 請求書の内容を理解する
+      url: billing-and-payments/understand-your-invoice.md
+    - text: 課金プロフィールを管理する
+      url: billing-and-payments/manage-billing-profiles.md
+    - text: 請求アカウントを管理する
+      url: manage-billing-accounts.md
+- title: ライセンスを管理する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ユーザーにライセンスを割り当てる
+      url: ../admin/manage/assign-licenses-to-users.md
+    - text: サブスクリプションとライセンスを理解する
+      url: licenses/subscriptions-and-licenses.md
+    - text: サブスクリプションのライセンスを購入する
+      url: licenses/buy-licenses.md
+    - text: サブスクリプションからライセンスを削除する
+      url: licenses/remove-licenses-from-subscription.md
+- title: アップグレード、更新、またはキャンセル
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 別のプランにアップグレードする
+      url: subscriptions/upgrade-to-different-plan.md
+    - text: サブスクリプションを更新する
+      url: subscriptions/renew-your-subscription.md
+    - text: サブスクリプションをキャンセルする
+      url: subscriptions/cancel-your-subscription.md
+    - text: サブスクリプションを再度有効にする
+      url: subscriptions/reactivate-your-subscription.md
+    - text: アカウントの使用を停止する
+      url: close-your-account.md
+- title: 試用する/購入する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft 365 の試用または購入
+      url: try-or-buy-microsoft-365.md
+    - text: 無料試用版からサブスクリプションを購入する
+      url: buy-a-subscription-from-your-free-trial.md
+    - text: 試用期間を延長する
+      url: extend-your-trial.md
+    - text: ドメイン名を購入する
+      url: ../admin/get-help-with-domains/buy-a-domain-name.md
