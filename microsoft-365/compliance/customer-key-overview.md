@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 顧客キーを使用して、組織の暗号化キーを制御し、Office 365 を使用して Microsoft のデータセンターで保存されているデータを暗号化するように構成します。
-ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 顧客キーによって、組織の暗号化キーを制御し、Microsoft のデータ センターにある保存データの暗号化にそれを使用するよう Office 365 を構成できます。
+ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076928"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333654"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Office 365 での顧客キーによるサービスの暗号化
 

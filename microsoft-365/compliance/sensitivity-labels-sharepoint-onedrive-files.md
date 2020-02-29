@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 5d9b5a493b44ef4453906f1601481a6aa89c3884
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 89925858ac749ac6f50b7a049a372cf2f7912698
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288535"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341242"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
@@ -74,11 +74,13 @@ ms.locfileid: "42288535"
     
     1. Azure Information Protection ラベルを機密ラベルに移行し、Microsoft 365 コンプライアンスセンター (または同等のラベル付き管理センター) から公開していることを確認してください。
     
-    2. ファイルをダウンロードし、それらを SharePoint にアップロードします。
+    2. ファイルをダウンロードしてから、それらを SharePoint にアップロードします。
 
 - 暗号化を適用したラベルが暗号化に使用する次のいずれかの構成を持っている場合、SharePoint は暗号化されたファイルを処理できません。
-    - **ユーザーがラベルを適用するときにアクセス許可を割り当てる** **、Word、PowerPoint、および Excel に**ユーザーがアクセス許可を指定できるようにする
+    - ユーザーがラベルと Word、PowerPoint、Excel のチェックボックスを**適用するときにアクセス許可を割り当てること**ができるようにし **、[アクセス許可を指定するようユーザーに要求する]** を選択します。 この設定は、"ユーザー定義の権限" と呼ばれることがあります。
     - **コンテンツへのユーザーアクセスの有効期限**が、 **Never**以外の値に設定されています。
+    
+    これらの暗号化構成のいずれかを使用したラベルの場合、web 上の Office のユーザーにはラベルが表示されません。 また、このプレビューの新機能は、既にこれらの暗号化設定を持つラベル付きドキュメントでは使用できません。 たとえば、これらのドキュメントは、更新された場合でも、検索結果では返されません。
 
 - ユーザーに編集権限を付与する暗号化されたドキュメントの場合、Office アプリの web 版ではコピーをブロックすることはできません。
 
@@ -100,7 +102,7 @@ ms.locfileid: "42288535"
 
 プレビューを有効にする前に、SharePoint Online Management Shell バージョン16.0.19418.12000 以降を実行していることを確認してください。 最新バージョンが既にある場合は、プレビューを有効にすることができます。
 
-1. 以前のバージョンの SharePoint Online Management Shell を PowerShell ギャラリーからインストールした場合は、次のコマンドレットを実行してモジュールを更新できます。
+1. PowerShell ギャラリーから以前のバージョンの SharePoint Online 管理シェルをインストールした場合、次のコマンドレットを実行してモジュールを更新できます。
 
     ```PowerShell
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell
