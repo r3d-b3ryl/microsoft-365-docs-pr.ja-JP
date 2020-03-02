@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: ドメインとは何か、ドメインを購入する方法と、ビジネスの既定のドメインを使用する方法について説明します。
+description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用する方法を理解します。
 ms.custom: okr_smb
 ms.openlocfilehash: 7937e9434f5a198f8a69bec10057d75929ce8eb9
 ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/24/2020
 ms.locfileid: "42255068"
@@ -31,26 +31,26 @@ ms.locfileid: "42255068"
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。 通常は、組織の名前と、会社のような標準のインターネットサフィックスを使用し*ます。<span>com*または*stateuniversity<span> 。edu*。 
+ドメインとは、メール アドレスの **@@ 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。 の後に表示される固有の名前です。 通常は、「*yourbusiness.<span>com*」や「*stateuniversity.<span>edu*」のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。 
   
-Rob@contoso のようなカスタムドメインを使用する *。<span>* Office 365 を備えた com を使用すると、ブランドの信頼性と認識を構築するのに役立ちます。 
+Office 365 で「*rob@contoso.<span>com*」のようなカスタム ドメインを使用すると、ブランドの信頼性や認知度を高めることができます。 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>最適なエクスペリエンスの選択
 
  **新しいドメインを購入する:**
   
-Office 365 を使用して新しいドメインを購入する-すべてが設定されます。 [詳細情報。](buy-a-domain-name.md)
+Office 365 を使用して新しいドメインを購入します。すべてを設定します。 [詳細情報](buy-a-domain-name.md)
   
  **既に所有しているドメインを使用する:**
   
-You@yourcompany のようなドメインを既に所有している場合 *。<span>com*これを追加して、OneDrive および Office アプリをすぐに使用できるようになります。 メールと Skype for Business はわずか数分でセットアップできます。 
+「*you@yourcompany.<span>com*」などのドメインを既に所有している場合は、そのドメインを追加してすぐに OneDrive と Office アプリを使用できます。 メールと Skype for Business はわずか数分でセットアップできます。 
   
 > [!TIP]
 > ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)
   
  **とりあえず既定のドメインを使用する:**
   
-会社のような既定のドメインを使用することができます *。<span>* 今すぐログインして、後でカスタムドメインを追加する com。 既定のドメインを変更したり名前を変更したりすることはできません。そのため、移行前に必要なものを確認してください。 
+「*yourcompany.onmicrosoft.<span>com*」などの既定のドメインを使用してログインし、カスタム ドメインを後で追加することができます。 既定のドメインやその名前を変更することはできません。そのため、先に進む前に、実行する内容をよくご確認ください。 
   
 ## <a name="feeling-stuck"></a>困ったときは
 
