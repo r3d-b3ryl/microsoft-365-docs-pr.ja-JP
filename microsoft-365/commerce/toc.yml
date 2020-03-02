@@ -1,5 +1,5 @@
-- name: 取引の購入および支払いを管理する
-  href: index.md
+- name: ビジネス サブスクリプションを管理する
+  href: index.yml
   expanded: true
   items:
     - name: 試用する/購入する
@@ -20,12 +20,12 @@
       items:
         - name: サブスクリプションをアップグレードする
           href: subscriptions/upgrade-to-different-plan.md
-        - name: サブスクリプションをキャンセルする
-          href: subscriptions/cancel-your-subscription.md
-        - name: サブスクリプションを再度有効にする
-          href: subscriptions/reactivate-your-subscription.md
         - name: サブスクリプションを更新する
           href: subscriptions/renew-your-subscription.md
+        - name: サブスクリプションを再度有効にする
+          href: subscriptions/reactivate-your-subscription.md
+        - name: サブスクリプションをキャンセルする
+          href: subscriptions/cancel-your-subscription.md
         - name: サブスクリプションの有効期限が切れた場合
           href: subscriptions/what-if-my-subscription-expires.md
         - name: サードパーティ製のアプリを管理する
@@ -38,12 +38,12 @@
       items:
         - name: ライセンスを購入する
           href: licenses/buy-licenses.md
-        - name: ライセンスを割り当てる
-          href: ../admin/manage/assign-licenses-to-users.md
-        - name: ライセンスの割り当てを解除する
-          href: ../admin/manage/remove-licenses-from-users.md
         - name: サブスクリプションからライセンスを削除する
           href: licenses/remove-licenses-from-subscription.md
+        - name: ユーザーにライセンスを割り当てる
+          href: ../admin/manage/assign-licenses-to-users.md
+        - name: ユーザーからライセンスの割り当てを解除する
+          href: ../admin/manage/remove-licenses-from-users.md
         - name: サブスクリプションとライセンスを理解する
           href: licenses/subscriptions-and-licenses.md
     - name: 請求と支払い
@@ -76,3 +76,5 @@
       href: manage-partners.md
     - name: アカウントの使用を停止する
       href: close-your-account.md
+    - name: サポートに連絡する
+      href: ../admin/contact-support-for-business-products.md
