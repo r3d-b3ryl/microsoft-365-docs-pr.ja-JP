@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: 台湾の Office 365 for business e 請求書について説明します。
-ms.openlocfilehash: 3253e620236810a51b62fe958f76589309dfbe1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242442"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354668"
 ---
 # <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>Office 365 for business の電子請求書について理解する (台湾)
 
@@ -33,7 +33,7 @@ ms.locfileid: "42242442"
   
 以下に、電子請求書のサンプルコピーが含まれています。
   
-![台湾の電子請求書。](../../admin/media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
+![台湾の電子請求書。](../../media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
   
 ## <a name="what-is-my-tax-rate"></a>税金率
 

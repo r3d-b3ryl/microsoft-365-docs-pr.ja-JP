@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Google Domains でカスタムドメインの DNS レコードを管理するように Office 365 をセットアップする方法について説明します。
-ms.openlocfilehash: 771d38b9a3d08bef75c3ad1958f981539edb6c04
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f6faaa4a7b6540086752e88da2051a73450f4455
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242762"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351968"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-google-domains"></a>Google Domains で Office 365 をセットアップするためにネームサーバーを変更する
 
@@ -58,22 +58,22 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 |||||
 |:-----|:-----|:-----|:-----|
 |**名前** <br/> |**Type** <br/> |**TTL** <br/> |**Data** <br/> |
-|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [ **宛先またはポイント先のアドレス** ] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
+|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. [**追加**] を選択します。
     
 5. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
-2. [**ドメイン**] ページで、確認するドメインを選択します。 
+2. **[ドメイン]** ページで、確認するドメインを選択します。 
     
-3. [**セットアップ**] ページで、[**セットアップの開始**] を選択します。
+3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
 4. [**ドメインの確認**] ページで、[**確認**] を選択します。
     
@@ -100,7 +100,7 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
     
 3. [ **ドメイン**] ページの [ **ネームサーバー**] セクションで、[ **カスタム ネームサーバーを使用**] を選びます。
     
-    ![Google-Domains-BP-Redelegate-1-1](../media/e264bc05-5a56-4962-bcaf-e2d999f62278.png)
+    ![Google-Domains-BP-Redelegate-1-1](../../media/e264bc05-5a56-4962-bcaf-e2d999f62278.png)
   
 4. 現在表示されているページに既に一覧表示されているネームサーバーがあるかどうかに応じて、以下の 2 つの手順のいずれかに進みます。
     
@@ -121,11 +121,11 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
 |**3 番目のネーム サーバー** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**4 番目のネーム サーバー** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-ドメイン-BP-Redelegate-1-2](../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-ドメイン-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
 2. 空の行を作成するには、[ **+ (追加)** ] コントロールを選択します。 
     
-    ![Google-Domains-BP-Redelegate-1-3](../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
+    ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. 他の 3 つのネームサーバー レコードを追加します。
     
@@ -135,7 +135,7 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
     
 4. [**保存**] を選択します。
     
-    ![Google-Domains-BP-Redelegate-1-5](../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
+    ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
 > ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 
@@ -147,11 +147,11 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
     > [!CAUTION]
     > Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、または**ns4.bdm.microsoftonline.com**という名前が付いて*いない*現在のネームサーバーのみを削除します)。 
   
-    ![Google-Domains-BP-Redelegate-1-6-1](../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
+    ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
 2. ネームサーバーを選んで、キーボードの **Delete** キーを押して、1 つずつ削除します。 
     
-    ![Google-Domains-BP-Redelegate-1-6-2](../media/524e64ad-56e6-4254-8a64-e4a4c3230f89.png)
+    ![Google-Domains-BP-Redelegate-1-6-2](../../media/524e64ad-56e6-4254-8a64-e4a4c3230f89.png)
   
 3. [ **ネームサーバー**] セクションの [ **ネームサーバー**] 行に、次の表の値を入力するか、コピーして貼り付けます。 
     
@@ -162,11 +162,11 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
 |**3 番目のネーム サーバー** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**4 番目のネーム サーバー** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-ドメイン-BP-Redelegate-1-7](../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-ドメイン-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
 4. 空の行を作成するには、[ **+ (追加)** ] コントロールを選択します。 
     
-    ![Google-Domains-BP-Redelegate-1-8](../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
+    ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. 他の 2 つのネームサーバー レコードを追加します。
     
@@ -176,7 +176,7 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
     
 6. [**保存**] を選択します。
     
-    ![Google-Domains-BP-Redelegate-1-5](../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
+    ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
 > ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 

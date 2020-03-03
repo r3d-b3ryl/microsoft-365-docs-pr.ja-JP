@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: 'Bluehost で DNS レコードを管理するために Office 365 をセットアップする方法について説明します。 '
-ms.openlocfilehash: 27d73071a08477b0adc372d8a88db2c805fecacf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 081abe977b498ea0cc0a0e2da9b54b00687df530
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241133"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352378"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-bluehost"></a>Bluehost で Office 365 をセットアップするためにネーム サーバーを変更する
 
@@ -40,7 +40,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
   
-1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 You'll be prompted to log in first.
+1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
 2. [ **domains**] ページにある [ **domain**] 領域で、変更するドメインの行を見つけ、そのドメインのチェックボックスを選びます。 
     
@@ -55,23 +55,23 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 |||||
 |:-----|:-----|:-----|:-----|
 |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
-|@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [ **宛先またはポイント先のアドレス** ] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 5. [ **Add record**] を選択します。
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
-2. [**ドメイン**] ページで、確認するドメインを選択します。 
+2. **[ドメイン]** ページで、確認するドメインを選択します。 
     
-3. [**セットアップ**] ページで、[**セットアップの開始**] を選択します。
+3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
 4. [**ドメインの確認**] ページで、[**確認**] を選択します。
     
@@ -88,15 +88,15 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
 > [!IMPORTANT]
 >  次の手順では、リストからその他の不要なネームサーバーを削除する方法と、正しいネームサーバーが表示されていない場合には追加する方法について説明します。 > このセクションの手順を完了すると、次の4つのネームサーバーのみが表示されます。 > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
-1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 You'll be prompted to log in first.
+1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
 2. [**ドメイン**] ページの [ **domain_name** ] 領域で、ドメインのチェックボックスをオンにして、[**ネームサーバー**] を選択します。
     
-    ![Bluehost-BP-Redelegate-1-1](../media/8f384386-197c-4272-9675-82037922dac4.png)
+    ![Bluehost-BP-Redelegate-1-1](../../media/8f384386-197c-4272-9675-82037922dac4.png)
   
 3. [ **Domain_name** ] 領域で、[**カスタムネームサーバーを使用する**] を選択します。
     
-    ![Bluehost-BP-Redelegate-1-2](../media/9fb47d21-c4ce-4eee-af90-c9569870a329.png)
+    ![Bluehost-BP-Redelegate-1-2](../../media/9fb47d21-c4ce-4eee-af90-c9569870a329.png)
   
 4. 現在表示されているページに既に一覧表示されているネームサーバーがあるかどうかに応じて、以下の 2 つの手順のいずれかに進みます。
     
@@ -113,11 +113,11 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
 |**最初の空の行** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**2 つ目の空の行** <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-BP-Redelegate-1-3-1](../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
+   ![Bluehost-BP-Redelegate-1-3-1](../../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
   
 2. [**行の追加**] を選択します。
     
-    ![Bluehost-BP-Redelegate-1-3-2](../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
+    ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
 3. さらに [ **カスタム ネームサーバーの使用**] セクションで、次の表の最初の行の値を、新しい空の行に入力またはコピーして貼り付けます。 
     
@@ -126,13 +126,13 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
 |**3 つ目の空の行** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**4 つ目の空の行** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Bluehost-BP-Redelegate-1-3-3](../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
+    ![Bluehost-BP-Redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
 4. 4番目のネームサーバーレコードを追加するには、[**行の追加**] をもう一度選択し、上記の表の最後の行の値を使用してレコードを作成します。 
     
 5. [**ネームサーバー設定の保存**] を選択します。
     
-    ![Bluehost-BP-Redelegate-1-4](../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
+    ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
 > [!NOTE]
 > ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 
@@ -144,7 +144,7 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
   
 1. 他のネーム サーバーが表示されている場合は、各ネーム サーバーを選び、キーボードの **Delete** キーを押して削除します。 
     
-    ![Bluehost-BP-Redelegate-1-5](../media/d1051c43-f8ff-46d7-af26-3975d3f0f621.png)
+    ![Bluehost-BP-Redelegate-1-5](../../media/d1051c43-f8ff-46d7-af26-3975d3f0f621.png)
   
 2. さらに [ **Use Custom Nameservers**] セクションで、次の表の値を入力またはコピーして貼り付けます。 
     
@@ -153,11 +153,11 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
 |**最初の空の行** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**2 つ目の空の行** <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-BP-Redelegate-1-3](../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
+   ![Bluehost-BP-Redelegate-1-3](../../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
   
 3. [**行の追加**] を選択します。
     
-    ![Bluehost-BP-Redelegate-1-3-2](../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
+    ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
 4. さらに [ **カスタム ネームサーバーの使用**] セクションで、次の表の最初の行の値を、新しい空の行に入力またはコピーして貼り付けます。 
     
@@ -166,13 +166,13 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
 |**3 つ目の空の行** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**4 つ目の空の行** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-BP-Redelegate-1-3-3](../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
+   ![Bluehost-BP-Redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
 5. 4番目のネームサーバーレコードを追加するには、[**行の追加**] をもう一度選択し、上記の表の最後の行の値を使用してレコードを作成します。 
     
 6. [**ネームサーバー設定の保存**] を選択します。
     
-    ![Bluehost-BP-Redelegate-1-4](../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
+    ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
 > [!NOTE]
 > ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 

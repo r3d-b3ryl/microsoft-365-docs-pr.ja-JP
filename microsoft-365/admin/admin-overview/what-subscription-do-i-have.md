@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: '[サブスクリプション] ページにアクセスして、組織のサブスクリプションを確認する方法について説明します。'
 ms.custom: okr_SMB
-ms.openlocfilehash: e8871e5d10d86f7e0f45dc34dd824bae6fb2c007
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a63b0b17333ad12846ba8bac2c83b2d8dfc67a8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241493"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352828"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
@@ -52,13 +52,13 @@ ms.locfileid: "42241493"
 
 2. サブスクリプションが 1 つのみの場合は、[ **サブスクリプション**] ページに、サブスクリプション名とサブスクリプションの情報や状況が表示されます。次のスクリーンショットは、1 つの Office 365 Business サブスクリプションを所有している場合を示しています。
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. 複数のサブスクリプションを取得している場合は、サブスクリプションの詳細情報の隣の列に、購入済みのサブスクリプションの一覧と試用版のサブスクリプションが表示されます。既定では、一覧の上部にあるサブスクリプションが自動的に選択され、そのサブスクリプションの詳細情報が表示されます。
 
     複数のサブスクリプションを持っている場合は、詳細情報を表示する1つのサブスクリプションを選択します。 サブスクリプション カードにより、そのサブスクリプションの情報が更新されます。
 
-    ![状態別にグループ化された複数のサブスクリプションの一覧を表示する、管理センターの [サブスクリプション] ページ。](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![状態別にグループ化された複数のサブスクリプションの一覧を表示する、管理センターの [サブスクリプション] ページ。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > 期限切れまたは無効になっているサブスクリプションがある場合は、それらのサブスクリプションが現在の状態に基づいて一覧表示されます。
@@ -71,13 +71,13 @@ ms.locfileid: "42241493"
 
 2. サブスクリプションが 1 つのみの場合は、[ **サブスクリプション**] ページに、サブスクリプション名とサブスクリプションの情報や状況が表示されます。次のスクリーンショットは、1 つの Office 365 Business サブスクリプションを所有している場合を示しています。
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. 複数のサブスクリプションを取得している場合は、サブスクリプションの詳細情報の隣の列に、購入済みのサブスクリプションの一覧と試用版のサブスクリプションが表示されます。既定では、一覧の上部にあるサブスクリプションが自動的に選択され、そのサブスクリプションの詳細情報が表示されます。
 
     複数のサブスクリプションを持っている場合は、詳細情報を表示する1つのサブスクリプションを選択します。 サブスクリプション カードにより、そのサブスクリプションの情報が更新されます。
 
-    ![状態別にグループ化された複数のサブスクリプションの一覧を表示する、管理センターの [サブスクリプション] ページ。](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![状態別にグループ化された複数のサブスクリプションの一覧を表示する、管理センターの [サブスクリプション] ページ。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > 期限切れまたは無効になっているサブスクリプションがある場合は、それらのサブスクリプションが現在の状態に基づいて一覧表示されます。

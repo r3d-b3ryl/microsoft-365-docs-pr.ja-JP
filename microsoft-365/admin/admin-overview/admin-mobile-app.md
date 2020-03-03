@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Microsoft 365 Admin アプリを入手して、携帯電話またはタブレットからオンライン組織を管理する方法について説明します。
-ms.openlocfilehash: 6f81da66ff8d60f1adc249c1e21542b0174050d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241554"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353038"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 admin モバイルアプリについて
 
 通常、管理者ではありませんか。 その後、 [Microsoft 365 Admin アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)をチェックアウトします。 アプリを使用して、携帯電話またはタブレットからオンライン組織を管理できます。 アプリは、Apple ストアおよび Google Play から入手できます。 <br> 
 
-![管理用モバイルアプリのホームページの画面キャプチャ。検索、メッセージ、正常性、クイックリンクが表示されます。](../media/admin-mobile-app-darkbg.png)
+![管理用モバイルアプリのホームページの画面キャプチャ。検索、メッセージ、正常性、クイックリンクが表示されます。](../../media/admin-mobile-app-darkbg.png)
 
 管理アプリは、コンピューターにアクセスできない場合に組織を管理できるように、80以上の機能を持つ機能豊富なアプリです。 以下に、アプリから実行できるタスクのいくつかを一覧で示します。
 
@@ -57,7 +57,7 @@ ms.locfileid: "42241554"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
  
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問

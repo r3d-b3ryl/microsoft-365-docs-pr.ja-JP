@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: ナビゲーションタブとフィルターを使用してレポートを表示する方法について説明します。
-ms.openlocfilehash: abd3cdf478f5a17d11af99428ec71bddd7eb339a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255412"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355108"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析でレポート間を移動して活用する
 
@@ -34,35 +34,35 @@ ms.locfileid: "42255412"
 
 - 各トップレベルレポートに移動するには、左側のナビゲーションタブ、または**エグゼクティブサマリー**ページの関連する指標を使用します。
 
-    ![左側のナビゲーションタブを表示します。](../media/navigate-usage-analytics1.png)
+    ![左側のナビゲーションタブを表示します。](../../media/navigate-usage-analytics1.png)
 
 - 各トップレベルレポートの上部にあるナビゲーションタブを使用して、そのレベルのさまざまなレポートに移動します。
 
-    ![各レポートの一番上にあるナビゲーションタブを表示します。](../media/navigate-usage-analytics2.png)
+    ![各レポートの一番上にあるナビゲーションタブを表示します。](../../media/navigate-usage-analytics2.png)
 
 - 多くのレポートには、表示する product、AAD 属性、またはアクティビティにフィルターを適用できるスライサーが含まれています。 単一選択と複数選択のどちらも可能です。
 
-    ![スライサーの表示](../media/navigate-usage-analytics3.png)
+    ![スライサーの表示](../../media/navigate-usage-analytics3.png)
 
-    ![スライサーの表示](../media/navigate-usage-analytics4.png)
+    ![スライサーの表示](../../media/navigate-usage-analytics4.png)
 
 
 - データ ポイントにマウス ポインターを移動すると、詳細な情報の吹き出しが表示されます。
 
-    ![ホバーの例を表示します。](../media/navigate-usage-analytics6.png)
+    ![ホバーの例を表示します。](../../media/navigate-usage-analytics6.png)
 
 テンプレートアプリをインスタンス化したユーザーは、必要に応じてレポートをカスタマイズできます。 テンプレートアプリをカスタマイズするには、次のようにします。
 
 - レポートの上部にある [**レポートの編集**] を選択します。
 
-    ![編集レポートを表示します。](../media/navigate-usage-analytics7.png)
+    ![編集レポートを表示します。](../../media/navigate-usage-analytics7.png)
 
 
 - 基になる[データセット](usage-analytics-data-model.md)を利用し、独自のビジュアルを作成します。
 
 - PowerBI Desktop を利用し、独自のデータ ソースを導入します。
 
-レポートを共有するには、[共有] ボタンを選択するだけです。 ![Power BI Share icon](../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) ページの上部にあります。
+レポートを共有するには、[共有] ボタンを選択するだけです。 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) ページの上部にあります。
 
 レポートをカスタマイズする方法については、「 [Microsoft 365 usage analytics でレポートをカスタマイズ](customize-reports.md)する」を参照してください。
 

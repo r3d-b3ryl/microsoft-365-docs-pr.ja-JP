@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Office 365 グループの名前付けポリシーを作成する方法について説明します。
-ms.openlocfilehash: 50ea076e22680a444cb9acf04466a7e7d052bb7a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e2907462d325e4ad421914ae5a0deb5013e695
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241392"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352718"
 ---
 # <a name="office-365-groups-naming-policy"></a>Office 365 グループの名前付けポリシー
 
@@ -125,7 +125,7 @@ Office 365 グループに Azure AD の名前付けポリシーを使用する�
 5. 各行の**属性**と**文字列**を選択してから、属性または文字列を指定します。
 6. 必要なプレフィックスとサフィックスを追加したら、[**保存**] をクリックします。
 
-![Azure Active Directory のグループの名前付けポリシーの設定のスクリーンショット](../media/groups-naming-policy-azure.png)
+![Azure Active Directory のグループの名前付けポリシーの設定のスクリーンショット](../../media/groups-naming-policy-azure.png)
 
 ## <a name="naming-policy-experiences-across-office-365-apps"></a>Office 365 アプリ全体の名前付けポリシーの操作環境
 
@@ -135,7 +135,7 @@ Office 365 グループに Azure AD の名前付けポリシーを使用する�
 
 Web 上の outlook (旧称: Outlook Web App または OWA) は、ユーザーがグループ名またはグループエイリアスを入力したときに表示される名前付けポリシーの装飾名を示しています。 ユーザーがカスタムのブロックする単語を入力すると、ユーザーがその単語を削除できるように、エラー メッセージがブロックされた単語と共に UI に表示されます。 Outlook on the web experience のスナップショットを次に示します。
 
-![Office 365 グループのグループの名前付けポリシーの並べて表示](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![Office 365 グループのグループの名前付けポリシーの並べて表示](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## <a name="outlook-desktop"></a>Outlook デスクトップ
 
@@ -145,19 +145,19 @@ Outlook デスクトップで作成されたグループは、名前付けポリ
 
 ユーザーがチーム名を入力すると、Microsoft Teams に名前付けポリシーを修飾した名前が表示されます。ユーザーがカスタムのブロックする単語を入力すると、ユーザーがその単語を削除できるように、エラー メッセージがブロックされた単語と共に表示されます。
 
-![Microsoft Teams のグループ名前付けポリシーのブロック例](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Microsoft Teams のグループ名前付けポリシーのブロック例](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## <a name="sharepoint"></a>SharePoint
 
 ユーザーがサイト名またはグループの電子メールアドレスを入力すると、SharePoint によって名前付けポリシー名が表示されます。 ユーザーがカスタムのブロックする単語を入力すると、ユーザーがその単語を削除できるように、エラー メッセージがブロックされた単語と共に表示されます。
 
-![グループの名前付けポリシー-SharePoint サイトのブロックされた名前](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![グループの名前付けポリシー-SharePoint サイトのブロックされた名前](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
 ユーザーがグループ名またはグループのエイリアスを入力すると、Microsoft Stream で名前付けポリシーを修飾した名前が表示されます。ユーザーがカスタムのブロックする単語を入力すると、ユーザーがその単語を削除できるように、エラー メッセージがブロックされた単語と共に表示されます。
 
-![Microsoft Stream のグループ名前付けポリシーのブロック例](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![Microsoft Stream のグループ名前付けポリシーのブロック例](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## <a name="outlook-ios-and-android-app"></a>iOS と Android の Outlook アプリ
 
@@ -167,13 +167,13 @@ Outlook アプリで作成されたグループは、名前付けポリシーに
 
 Planner は、名前付けポリシーに準拠します。 Planner には、プラン名を入力するときの名前付けポリシーのプレビューが表示されます。 ユーザーがカスタムのブロックされた単語を入力すると、プランを作成するときにエラーメッセージが表示されるので、ユーザーはブロックされた単語を削除できます。
 
-![グループの名前付けポリシー-新しいプランの作成のブロックされた例](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![グループの名前付けポリシー-新しいプランの作成のブロックされた例](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## <a name="dynamics-365-for-customer-engagement"></a>顧客契約のための Dynamics 365
 
 顧客契約の Dynamics 365 は、名前付けポリシーに準拠しています。 Dynamics 365 は、ユーザーがグループ名またはグループの電子メールエイリアスを入力したときに表示される名前付けポリシーの装飾名を示しています。 ユーザーがカスタムのブロックされた単語を入力すると、ユーザーが削除できるように、エラーメッセージがブロックされた単語と共に表示されます。
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## <a name="school-data-sync-sds"></a>School Data Sync (SDS)
 

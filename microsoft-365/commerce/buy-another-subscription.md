@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: '既にサブスクリプションを所有している場合に、組織のために別の Office 365 for business サブスクリプションを購入する方法について説明します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5f134d69c83e3c3fbb62dbb794e40e22d544ad1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242394"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354648"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>別の一般法人向け Office 365 サブスクリプションを購入する
 
@@ -66,11 +66,11 @@ ms.locfileid: "42242394"
 
     組織で使用できるサブスクリプションが表示されます。 既に購入したサブスクリプションは、次のように識別されます。
 
-    ![この組織に対してサブスクリプションが既に購入されたことを示す見出し。](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![この組織に対してサブスクリプションが既に購入されたことを示す見出し。](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. 購入するサブスクリプションをマウスでポイントするか、またはタップして、[**今すぐ購入**] を選択します。
 
-    ![Microsoft 365 管理センターの [サービスを購入する] ページで、[今すぐ購入] リンクをオンにします。](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Microsoft 365 管理センターの [サービスを購入する] ページで、[今すぐ購入] リンクをオンにします。](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. 必要なユーザーライセンス数を入力して、毎月支払いするか、または年全体に支払うかを選択してから、[**カートに追加**] を選択します。
 
@@ -92,11 +92,11 @@ ms.locfileid: "42242394"
 
     組織で使用できるサブスクリプションが表示されます。 既に購入したサブスクリプションは、次のように識別されます。
 
-    ![この組織に対してサブスクリプションが既に購入されたことを示す見出し。](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![この組織に対してサブスクリプションが既に購入されたことを示す見出し。](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. 購入するサブスクリプションをマウスでポイントするか、またはタップして、[**今すぐ購入**] を選択します。
 
-    ![Microsoft 365 管理センターの [サービスを購入する] ページで、[今すぐ購入] リンクをオンにします。](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Microsoft 365 管理センターの [サービスを購入する] ページで、[今すぐ購入] リンクをオンにします。](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. 必要なユーザーライセンス数を入力して、毎月支払いするか、または年全体に支払うかを選択してから、[**カートに追加**] を選択します。
 

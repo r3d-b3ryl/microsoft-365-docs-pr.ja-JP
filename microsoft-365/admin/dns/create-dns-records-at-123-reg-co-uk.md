@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: ドメインを確認し、電子メール、Skype for Business Online、および 123-reg.co.uk for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: acbc0f1c8a7eb7dcbe5f274d0f2c8b2c403e7de0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 327f55dcedfda6eef31d56af1833a5c5438af2a6
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243026"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351378"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-office-365"></a>123-reg.co.uk で Office 365 用の DNS レコードを作成する
 
@@ -63,29 +63,29 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     ||||
     |:-----|:-----|:-----|
     |**Hostname** <br/> |**Type** <br/> |**Destination TXT/SPF** <br/> |
-    |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [ **宛先またはポイント先のアドレス** ] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
 6. [**追加**] を選択します。
     
 7. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
-2. [**ドメイン**] ページで、確認するドメインを選択します。 
+2. **[ドメイン]** ページで、確認するドメインを選択します。 
     
-3. [**セットアップ**] ページで、[**セットアップの開始**] を選択します。
+3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
 4. [**ドメインの確認**] ページで、[**確認**] を選択します。
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>MX レコードを追加して、自分のドメインのメールを Office 365 で使えるようにする
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>MX レコードを追加して、自分のドメインのメールが Office 365 に届くようにする
 <a name="BKMK_add_MX"> </a>
 
 1. まず、[このリンク](https://www.123-reg.co.uk/secure/cpanel/domain/overview)を使って 123-reg.co.uk でドメイン ページにアクセスします。 最初にログインするように求められます。
@@ -102,17 +102,17 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **注:** Office 365 \<アカウントからドメイン\>キーを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **注:** Office 365 アカウントから自分の\<ドメイン キー\>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![テーブルの値をコピーして貼り付ける](../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
+    ![テーブルの値をコピーして貼り付ける](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
+    ![[追加] を選択します。](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
 7. その他の MX レコードがある場合は、そのレコードの **削除 (ごみ箱)** アイコンを選んでそれぞれ削除します。 
     
-    ![[削除] (ごみ箱アイコン) を選択します。](../media/3be635e6-b591-49af-8430-a158272834b4.png)
+    ![[削除] (ごみ箱アイコン) を選択します。](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Office 365 に必要な 6 つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
@@ -139,11 +139,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
    
-    ![テーブルから値をコピーして貼り付けます。](../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+    ![テーブルから値をコピーして貼り付けます。](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+    ![[追加] を選択します。](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
 7. 他の 5 つの CNAME レコードを追加します。
     
@@ -155,7 +155,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが  *1 つの*  SPF レコードになるようにします。 次に例を示します。 参考にしてください。 SPF レコードを確認するには、[SPF の検証ツール](../setup/domains-faq.md)を使うことができます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが  *1 つの*  SPF レコードになるようにします。 次に例を示します。 参考にしてください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 1. まず、[このリンク](https://www.123-reg.co.uk/secure/cpanel/domain/overview)を使って 123-reg.co.uk でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -173,13 +173,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
-    ![123Reg-BP-4-1](../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
+    ![123Reg-BP-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
+    ![[追加] を選択します。](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 個の SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
 1. まず、[このリンク](https://www.123-reg.co.uk/secure/cpanel/domain/overview)を使って 123-reg.co.uk でドメイン ページにアクセスします。 最初にログインするように求められます。
@@ -202,11 +202,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |_sip _tls|SRV|100|3600|1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
     |_sipfederationtls _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)** <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
-    ![テーブルから値をコピーして貼り付けます。](../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
+    ![テーブルから値をコピーして貼り付けます。](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
+    ![[追加] を選択します。](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
 7. 他の SRV レコードを追加します。
     

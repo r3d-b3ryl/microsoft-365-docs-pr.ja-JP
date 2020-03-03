@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4c7e033eb5c792feeb0b2f96001e7e3f91ab891
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6401b5aaaea4ebeac73e1379efaa0811c5223b0d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255508"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356318"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>サウスジョージアおよび南サンドイッチ諸島のサポートへのお問い合わせ
 

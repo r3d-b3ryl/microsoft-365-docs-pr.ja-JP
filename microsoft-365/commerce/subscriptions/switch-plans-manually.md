@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認して、Office 365 for business サブスクリプションを手動で切り替えます。
-ms.openlocfilehash: 5fe50cbc0a11c4fe9976be07bfb0ab752bae5bba
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257457"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354710"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>一般法人向け Office 365 プランを手動で切り替える
 
@@ -74,7 +74,7 @@ ms.locfileid: "42257457"
 
    **新しい一般法人向け Office 365 サブスクリプションと使用可能なライセンス数**
 
-    ![The subscription page showing the number of licenses for the new subscription.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **各ユーザーに割り当てる十分な数のライセンスがあることを確認する**
 
@@ -100,7 +100,7 @@ ms.locfileid: "42257457"
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
     Office 365 Germany を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブ ユーザー</a>] ページに移動します。
 
@@ -115,7 +115,7 @@ ms.locfileid: "42257457"
     > [!TIP]
     > ユーザーが使用できるサービスを制限するには、そのユーザーで削除するサービスを [ **オフ**] の位置に切り替えます。たとえば、Skype for Business Online 以外のすべてのサービスにユーザーがアクセスできるようにするには、Skype for Business Online サービスを [ **オフ**] の位置に切り替えます。
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. このユーザーが不要になったライセンスを**オフ**の位置に切り替えます。
 
@@ -141,7 +141,7 @@ ms.locfileid: "42257457"
     > - ユーザーが使用できるサービスを制限するには、そのユーザーで削除するサービスを [ **オフ**] の位置に切り替えます。 たとえば、Skype for Business Online 以外のすべてのサービスにユーザーがアクセスできるようにするには、Skype for Business Online サービスを [ **オフ**] の位置に切り替えます。
     > - 選択したユーザーで以前に割り当てられたライセンスは削除されます。
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. [ **既存の製品を置き換える** ] ウィンドウの下部で、[ **置換**] \> [ **閉じる**] の順に選択します。
 

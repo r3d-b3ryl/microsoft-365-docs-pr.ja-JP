@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 一般法人向け Office 365 の請求書、請求書、支払い情報を解釈する方法、および発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 2cb95b49136c186158d3b8ba3fe868d2c863e0de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242425"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354688"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>一般法人向け Office 365 の請求書について
 
@@ -37,11 +37,11 @@ ms.locfileid: "42242425"
   
 請求書は、2 ページあります。1 ページ目は請求書の要約で、請求書に関する一般的な情報、注文、請求額、支払い方法、サポートへの連絡方法について記載されています。
   
-![Page 1 of a sample invoice.](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 2 ページ目には、各サブスクリプションの課金処理に関する詳細が含まれています。
   
-![Page 2 of a sample invoice.](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 請求書に含まれるフィールドと用語の説明については、この記事で後述する「[請求書のフィールドの用語集](#invoice-field-glossary)」を参照してください。
   

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 新しい Office 365 for business サブスクリプションに切り替える方法について説明します。
-ms.openlocfilehash: 22b1d187c18743a467e9e13abbb5d2635b62da40
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257707"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354468"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>別の一般法人向け Office 365 プランに切り替える
 
@@ -95,4 +95,4 @@ ms.locfileid: "42257707"
   
 ## <a name="call-support-to-help-you-switch-plans"></a>プランの切り替えを支援するサポートに連絡する
 
-![電話](../../admin/media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png)に[よる通話のサポート](../../admin/contact-support-for-business-products.md)
+![電話](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png)に[よる通話のサポート](../../admin/contact-support-for-business-products.md)

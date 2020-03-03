@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Office 365 for Business、Microsoft 365 試用版 または有料版サブスクリプションをキャンセルする方法について説明します。
-ms.openlocfilehash: d3590f224757265af3107566023413d276443c46
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241896"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354598"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -64,7 +64,7 @@ ms.locfileid: "42241896"
 
 3. **[その他の操作]** メニューから **[サブスクリプションのキャンセル]** を選択します。
 
-    ![[その他の操作] メニューのクローズアップ。](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![[その他の操作] メニューのクローズアップ。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. 重要な日付を確認し、キャンセル理由に関するフィードバックを入力して、**[サブスクリプションのキャンセル]** を選択します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42241896"
 
 3. **[その他の操作]** メニューから **[サブスクリプションのキャンセル]** を選択します。
 
-    ![[その他の操作] メニューのクローズアップ。](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![[その他の操作] メニューのクローズアップ。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. 重要な日付を確認し、キャンセル理由に関するフィードバックを入力して、**[サブスクリプションのキャンセル]** を選択します。
 

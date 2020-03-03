@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'このチェックリストに従って、Office 365 およびセキュリティで保護されたデータから従業員を削除します。 '
-ms.openlocfilehash: a59ad66f6c188695e6794bd259668b97669f2217
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241595"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353118"
 ---
 # <a name="remove-a-former-employee-from-office-365"></a>Office 365 から元従業員を削除する
   
@@ -44,11 +44,11 @@ ms.locfileid: "42241595"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 従業員を削除するには、次のようにします。
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ユーザー名の横にあるボックスを選択し、[**パスワードのリセット**] を選択します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "42241595"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ユーザーを選択し、[**パスワードのリセット**] を選択します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "42241595"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ユーザーを選択し、[**パスワードのリセット**] を選択します。
 
@@ -167,7 +167,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ブロックする従業員を選択し、[メールの**設定**] を展開します。
 
@@ -183,7 +183,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ブロックする従業員を選択し、[メールの**設定**] を展開します。
 
@@ -211,7 +211,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
     
 4. ユーザーを選択し、[**モバイルデバイス**] で [**詳細の表示**] を選択します。 
     
-5. [**モバイルデバイスの詳細**] ページの **[モバイルデバイス**] で、モバイルデバイスを選択し、[](../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)**データ**![ワイプデバイスのワイプ] を選択して、[**ブロック**] を選択します。 
+5. [**モバイルデバイスの詳細**] ページの **[モバイルデバイス**] で、モバイルデバイスを選択し、[](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)**データ**![ワイプデバイスのワイプ] を選択して、[**ブロック**] を選択します。 
     
 6. [**保存**] を選択します。 
     
@@ -239,7 +239,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. 禁止する従業員を選択し、[**サインインをブロック**する] を選択します。
 
@@ -249,7 +249,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. 禁止する従業員を選択し、[**サインインをブロック**する] を選択します。
 
@@ -293,7 +293,7 @@ Office 365 サブスクリプションに Office 365 のメールが含まれて
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. 禁止する従業員を選択し、[**製品ライセンス**] の横にある [**編集**] を選択します。
 
@@ -303,7 +303,7 @@ Office 365 サブスクリプションに Office 365 のメールが含まれて
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. 禁止する従業員を選択し、[**製品ライセンス**] の横にある [**編集**] を選択します。
 
@@ -370,7 +370,7 @@ Office 365 からユーザーのライセンスを削除すると、ユーザー
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. 削除する従業員の名前を選択します。
 
@@ -380,7 +380,7 @@ Office 365 からユーザーのライセンスを削除すると、ユーザー
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. 削除する従業員の名前を選択します。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: ドメインを確認し、電子メール、Skype for Business Online、および Bluehost for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 9a5cad6778cb66958539a324befee43ddb2dd8b9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0e64ed8787dca9822e71a63c57de7a7a3e2b3fe4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247218"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42350958"
 ---
 # <a name="create-dns-records-at-bluehost-for-office-365"></a>Bluehost で Office 365 用の DNS レコードを作成する
 
@@ -48,7 +48,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
   
-1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 You'll be prompted to log in first.
+1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
 2. [ **domains**] ページにある [ **domain**] 領域で、変更するドメインの行を見つけ、そのドメインのチェックボックスを選びます。 
     
@@ -63,32 +63,32 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     |||||
     |:-----|:-----|:-----|:-----|
     |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
-    |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [ **宛先またはポイント先のアドレス** ] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
 5. [ **Add record**] を選択します。
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
-2. [**ドメイン**] ページで、確認するドメインを選択します。 
+2. **[ドメイン]** ページで、確認するドメインを選択します。 
     
-3. [**セットアップ**] ページで、[**セットアップの開始**] を選択します。
+3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
 4. [**ドメインの確認**] ページで、[**確認**] を選択します。
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>MX レコードを追加して、自分のドメインのメールを Office 365 で使えるようにする
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>MX レコードを追加して、自分のドメインのメールが Office 365 に届くようにする
 <a name="BKMK_add_MX"> </a>
 
-1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 You'll be prompted to log in first.
+1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
 2. [ **domains**] ページにある [ **domain**] 領域で、変更するドメインの行を見つけ、そのドメインのチェックボックスを選びます。 
     
@@ -102,30 +102,30 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Host Record**|**TTL**|**Type**|**Points To**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/>**注:**\<Office 365 アカウントから*ドメインキー* \>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/>**注:** Office 365 アカウントから自分の\<*ドメイン キー*\>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |
    
-   ![ドロップダウンリストから [種類] を選択する](../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
+   ![ドロップダウンリストから [種類] を選択する](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
 5. [ **Add record**] を選択します。
     
-    ![[Add Record] を選択します。](../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
+    ![[Add Record] を選択します。](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
 6. その他の MX レコードが [ **MX (Mail Exchanger)** ] セクションにある場合は、それぞれのレコードを削除します。 
     
     その他の MX レコードのいずれかで、[削除] を選択し**ます。**
     
-    ![追加の MX レコードごとに [削除] を選択します。](../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
+    ![追加の MX レコードごとに [削除] を選択します。](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
 7. 確認ダイアログボックスで、[ **OK]** を選択します。
     
-    ![[OK] を選択します。](../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
+    ![[OK] を選択します。](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
 8. 同じ手順に従って、一覧に表示されているその他の MX レコードをすべて削除します。
     
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Office 365 に必要な 6 つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
-1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 You'll be prompted to log in first.
+1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
 2. [ **domains**] ページにある [ **domain**] 領域で、変更するドメインの行を見つけ、そのドメインのチェックボックスを選びます。 
     
@@ -138,11 +138,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!IMPORTANT]
     > You must delete the existing **autodiscover** record  *before*  adding the **autodiscover** record that is required by Office 365. Bluehost does not allow you to maintain two **autodiscover** records simultaneously. 
   
-    ![[削除] を選択します。](../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
+    ![[削除] を選択します。](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
-5. **[OK]** をクリックします。
+5. [**OK**] を選択します。
     
-    ![[OK] を選択します。](../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
+    ![[OK] を選択します。](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   
 6. 6 つの CNAME レコードの最初のレコードを作成します。
     
@@ -158,11 +158,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |14400  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |14400  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![最初の CNAME レコードを作成する](../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
+    ![最初の CNAME レコードを作成する](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
 7. [ **Add record**] を選択します。
     
-    ![[Add Record] を選択します。](../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
+    ![[Add Record] を選択します。](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
 8. 他の 5 つの CNAME レコードをそれぞれ追加します。
     
@@ -174,9 +174,9 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが  *1 つの*  SPF レコードになるようにします。 次に例を示します。 参考にしてください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが  *1 つの*  SPF レコードになるようにします。 次に例を示します。 参考にしてください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
   
-1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 You'll be prompted to log in first.
+1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
 2. [ **domains**] ページにある [ **domain**] 領域で、変更するドメインの行を見つけ、そのドメインのチェックボックスを選びます。 
     
@@ -192,16 +192,16 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|
     |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
-    ![TXT 値をコピーする](../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
+    ![TXT 値をコピーする](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
 5. [ **Add record**] を選択します。
     
-    ![[Add Record] を選択します。](../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
+    ![[Add Record] を選択します。](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 個の SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
-1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 You'll be prompted to log in first.
+1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
 2. [ **domains**] ページにある [ **domain**] 領域で、変更するドメインの行を見つけ、そのドメインのチェックボックスを選びます。 
     
@@ -220,11 +220,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![新しいレコードの値をコピーする](../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
+    ![新しいレコードの値をコピーする](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
 5. [ **Add record**] を選択します。
     
-    ![[Add Record] を選択します。](../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
+    ![[Add Record] を選択します。](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   
 6. 残りの SRV レコードを追加します。
     

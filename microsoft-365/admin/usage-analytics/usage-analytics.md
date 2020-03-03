@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織が Microsoft 365 サービスを採用して通信および共同作業を行う方法の概要について説明します。
-ms.openlocfilehash: ce55d8374c4fd927914ae3fb63edbdf1f7df4089
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255901"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355278"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 ---
@@ -49,7 +49,7 @@ Microsoft 365 usage analytics には、以下のセクションで説明する�
 
 この要約により、Office の使用パターンと、従業員が共同作業する方法と場所をすばやく理解できます。
 
-![Microsoft 365 利用状況の概要の画像。](../media/office365usage-exec-summary.png)
+![Microsoft 365 利用状況の概要の画像。](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>概要
 

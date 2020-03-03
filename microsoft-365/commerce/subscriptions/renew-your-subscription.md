@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'プロダクトキーを使用して Office 365 for business サブスクリプションを更新し、定期的な請求をオンまたはオフにする方法について説明します。 '
-ms.openlocfilehash: f9b80fa6cc28edbea955575016824532239ec2f9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257474"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354578"
 ---
 # <a name="renew-office-365-for-business"></a>一般法人向け Office 365 サブスクリプションの更新またはライセンスの再認証をする
 
@@ -80,7 +80,7 @@ ms.locfileid: "42257474"
  
 3. **定期的な課金**を有効にするには、トグルを **[オン**] に切り替えます。
 
-    ![定期的な請求書が有効になっているサブスクリプションカードのクローズアップ。](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![定期的な請求書が有効になっているサブスクリプションカードのクローズアップ。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     [**オフ**に切り替えるを使用して、**定期的な課金**を無効にすることができます。
 
@@ -103,7 +103,7 @@ ms.locfileid: "42257474"
  
 3. **定期的な課金**を有効にするには、トグルを **[オン**] に切り替えます。
 
-    ![定期的な請求書が有効になっているサブスクリプションカードのクローズアップ。](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![定期的な請求書が有効になっているサブスクリプションカードのクローズアップ。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     [**オフ**に切り替えるを使用して、**定期的な課金**を無効にすることができます。
 
@@ -122,7 +122,7 @@ ms.locfileid: "42257474"
   
 [Mysubscription が終了すると、データとアクセスはどうなりますか。](what-if-my-subscription-expires.md)
 
-[支払い方法を追加、更新、または削除する](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+[お支払い方法を追加、更新、削除する](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [支払方法を変更する](../billing-and-payments/change-payment-method.md)
   

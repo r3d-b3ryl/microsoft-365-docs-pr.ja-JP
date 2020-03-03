@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 40660f8f04c51c61aeec2144f4e7f3da8fa39fd9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241679"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353268"
 ---
 # <a name="get-started-with-the-roles-page"></a>[ロール] ページで作業を開始する
 
 [役割] ページでは、管理センターでタスクを実行するためのアクセス許可をユーザーに付与できます。 これにより、組織は適切な人物にタスクを分散し、データを安全に保つことができます。
 
-:::image type="content" source="../media/roles-main-page.png" alt-text="管理者の役割を示す図":::
+:::image type="content" source="../../media/roles-main-page.png" alt-text="管理者の役割を示す図":::
 
 > [!TIP]
 > 役割の詳細な説明をお探しですか ? 「 [Azure Active Directory」](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)と「管理者の役割[について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。
@@ -38,7 +38,7 @@ ms.locfileid: "42241679"
 
 管理者リストをエクスポートして、役割で検索してフィルター処理することもできます。
 
-:::image type="content" source="../media/admin-role-page-options.png" alt-text="管理者の役割をフィルターまたはインポートする":::
+:::image type="content" source="../../media/admin-role-page-options.png" alt-text="管理者の役割をフィルターまたはインポートする":::
 
 |||
 |:-----|:-----|
@@ -95,6 +95,6 @@ Teams & Skype admin center にアクセスして管理するユーザーに Team
 
 - [最大3つのロール] を選択し、[**ロールの比較**] を選択して、各ロールが持つアクセス許可を表示します。
 
-:::image type="content" source="../media/compare-roles-list.png" alt-text="管理者の役割の比較を示す図":::
+:::image type="content" source="../../media/compare-roles-list.png" alt-text="管理者の役割の比較を示す図":::
 
 ::: moniker-end

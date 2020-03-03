@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: 'Yammer デバイスの使用状況レポートを取得して、ユーザーが Yammer を使用しているデバイスについて把握します。 '
-ms.openlocfilehash: 5202fd2ebe3e99182ecf7cd2d9bee77be0573cde
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 42fc4b1f9a4d782c50eabd892f6a49d1c474be01
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241728"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353378"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>管理センターの Microsoft 365 レポート-Yammer デバイスの使用状況レポート
 
@@ -50,9 +50,9 @@ Yammer デバイスの使用状況レポートでは、ユーザーが Yammer �
     
 - 各レポートには、このレポートが生成された日付が表示されます。通常、レポートはアクティビティの時刻から 24 から 48 時間の遅延を反映します。
     
-- [ **ユーザー**] グラフでは、デバイスの種類別に毎日使用するユーザー数が表示されます。<br/>![Yammer デバイスの使用状況のグラフのユーザービュー](../media/ecfba1ec-fbea-4491-88da-1fb19b4d5629.png)<br/>![ユーザービューを示す Yammer デバイスの使用状況レポート](../media/f396865a-ad6e-4f8b-a145-cc3865b352f4.png)
+- [ **ユーザー**] グラフでは、デバイスの種類別に毎日使用するユーザー数が表示されます。<br/>![Yammer デバイスの使用状況のグラフのユーザービュー](../../media/ecfba1ec-fbea-4491-88da-1fb19b4d5629.png)<br/>![ユーザービューを示す Yammer デバイスの使用状況レポート](../../media/f396865a-ad6e-4f8b-a145-cc3865b352f4.png)
   
-- [ **分布**] グラフでは、デバイスの種類別にユーザー数が表示されます。<br/>![Yammer デバイスの使用状況レポートの配布ビュー](../media/7a0b152e-2d2b-4d23-8dc2-046be53b724f.png)<br/>![Yammer のデバイス使用状況レポート](../media/780c351d-7a1d-451d-8c16-4c454ef58aa8.png)
+- [ **分布**] グラフでは、デバイスの種類別にユーザー数が表示されます。<br/>![Yammer デバイスの使用状況レポートの配布ビュー](../../media/7a0b152e-2d2b-4d23-8dc2-046be53b724f.png)<br/>![Yammer のデバイス使用状況レポート](../../media/780c351d-7a1d-451d-8c16-4c454ef58aa8.png)
   
 - グラフの下の [ **詳細**] 表には、Yammer デバイスの使用状況の内訳がユーザー レベルごとに表示されます。 
     

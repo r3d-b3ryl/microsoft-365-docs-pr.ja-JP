@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Office 365 のサインアッププロセスを開始する前に把握しておくべき情報について説明します。 '
-ms.openlocfilehash: 40d7084be08187a366733b6de39e1f534a73032e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bd827a4cc57386127083111b0df556786d01f2cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241517"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352958"
 ---
 # <a name="how-to-sign-up-for-office-365---admin-help"></a>Office 365 へのサインアップ方法 - 管理者向けヘルプ
 
@@ -79,7 +79,7 @@ Office 365 ビジネスプランの選択に関する短いビデオをご覧く
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての[製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。
   

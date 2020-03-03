@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Dns レコードを管理するために21Vianet が運用している Office 365 をセットアップする方法について説明します。 1&1 インターネットが DNS ホスティングプロバイダーである場合です。
-ms.openlocfilehash: 907e4fe097634d28ad44e4d44ba8c6ff2da9164d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242930"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352568"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Office 365 をセットアップするためにネームサーバーを変更する&1 IONOS
 
@@ -62,7 +62,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注**: これは例です。 Office 365 の表から [ **宛先またはポイント先のアドレス** ] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注**: これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. [**保存**] を選択し、もう一度**保存**します。 
@@ -71,15 +71,15 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
-2. [**ドメイン**] ページで、確認するドメインを選択します。 
+2. **[ドメイン]** ページで、確認するドメインを選択します。 
     
-3. [**セットアップ**] ページで、[**セットアップの開始**] を選択します。
+3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
 4. [**ドメインの確認**] ページで、[**確認**] を選択します。
     
@@ -124,11 +124,11 @@ Office 365 でドメインをセットアップできるように、NS レコー
 |:-----|:-----|
 |**Name server 1** <br/> |ns1.bdm.microsoftonline.com  <br/> |
    
-   ![[Name server 1] ボックスに値を入力する](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+   ![[Name server 1] ボックスに値を入力する](../../media/34509935-461f-427f-9796-c3cf840bd9be.png)
   
 2. [ **Additional name servers**] ドロップダウン リストで、[ **My secondary name servers**] を選びます。
     
-    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+    ![Choosing My secondary name servers in the list](../../media/7eb14856-86da-45c2-910c-c72312250a18.png)
   
 3. **[Name server 2]、[Name server 3]、[Name server 4]** ボックスに、次の表の値を入力するか、コピーして貼り付けます。 
     
@@ -138,15 +138,15 @@ Office 365 でドメインをセットアップできるように、NS レコー
 |**ネーム サーバー 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**ネーム サーバー 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. [**保存**] を選択します。
     
-    ![[名前サーバーの設定] ページの [保存] を選択する](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+    ![[名前サーバーの設定] ページの [保存] を選択する](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
 5. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。
     
-    ![[DNS 設定の編集] ダイアログボックスの [保存] を選択する](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![[DNS 設定の編集] ダイアログボックスの [保存] を選択する](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 
@@ -158,7 +158,7 @@ Office 365 でドメインをセットアップできるように、NS レコー
   
 1. [ **Name server**] にネームサーバーが既に表示されている場合は、各ネームサーバーを選び、キーボードの **Delete** キーを押して、ネームサーバーを削除します。 
     
-    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+    ![Deleting name servers](../../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
   
 2. **[Name server 1]、[Name server 2]、[Name server 3]、[Name server 4]** ボックスに、次の表の値を入力するか、コピーして貼り付けます。 
     
@@ -169,15 +169,15 @@ Office 365 でドメインをセットアップできるように、NS レコー
 |**ネーム サーバー 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**ネーム サーバー 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![名前サーバーの値を入力する](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+   ![名前サーバーの値を入力する](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
 3. [**保存**] を選択します。
     
-    ![[名前サーバーの設定] ページの [保存] を選択する](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+    ![[名前サーバーの設定] ページの [保存] を選択する](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
 4. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。
     
-    ![[DNS 設定の編集] ダイアログボックスの [保存] を選択する](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![[DNS 設定の編集] ダイアログボックスの [保存] を選択する](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Microsoft 365 管理センターを使用してヘルプを取得する方法について説明します。
-ms.openlocfilehash: 4aa2d46121aa1a817381592a02bbb9b875207427
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2d75add5b34a760358523de6e6f10553c1984abe
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241505"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352978"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -43,7 +43,7 @@ ms.locfileid: "42241505"
                     <a href="what-is-help.md#integrated-help">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -62,7 +62,7 @@ ms.locfileid: "42241505"
                     <a href="what-is-help.md#modern-self-help-powered-by-ai">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -81,7 +81,7 @@ ms.locfileid: "42241505"
                     <a href="what-is-help.md#guides-and-articles">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -98,7 +98,7 @@ ms.locfileid: "42241505"
 ## <a name="integrated-help"></a>統合ヘルプ
 ヘルプは管理センター全体に統合されているため、必要なときに適切に使用できます。 多くのページの上部には、現在のタスクの情報の概要を示すインラインヘルプテキストのほか、詳細な学習のための公式ドキュメントをすばやく見つけることができる記事へのリンクもあります。
 
-![インラインヘルプと記事へのリンクを示す [グループ] ページ](../media/integrated-help.png)
+![インラインヘルプと記事へのリンクを示す [グループ] ページ](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>AI で提供されるモダンセルフヘルプ
 
@@ -106,7 +106,7 @@ Microsoft 365 管理センターの [ヘルプを必要とする] ボタンを�
 
 または、特定の状況で実行する方法がわからない場合は、サポートアシスタントを使用します。 現在、この機能は英語でのみご利用いただけます。 このオプションをオンにするには、[ヘルプを必要とする] ウィンドウの上部にあるトグルボタンを使用します。 サポートアシスタントは、ヘルプを取得するための会話インターフェイスを提供します。 クエリを入力すると、chatbot に質問をして、特定の状況に対する適切な回答を得ることが求められます。 このことは、ソリューションを見つけてタスクを完了するための仮想ヘルパーと考えることができます。
 
-![モダンセルフヘルプ](../media/help-options.png)
+![モダンセルフヘルプ](../../media/help-options.png)
 
 もちろん、人間による回答が最適な場合もあります。 モダンセルフヘルプに回答がない場合は、サポート担当者に連絡するオプションが常に用意されています。
 

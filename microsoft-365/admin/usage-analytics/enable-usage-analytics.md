@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Power BI の Microsoft 365 Usage Analytics テンプレートアプリを使用して、テナントのデータの収集を開始する方法について説明します。
-ms.openlocfilehash: 651a820916f65a1695b7300772b1d2ce8aee92bb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247291"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355008"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
@@ -70,7 +70,7 @@ Power BI をまだ持っていない場合は、 [POWER Bi Pro にサインア�
   
 3. [**アプリ**] タブで、[検索] ボックスに「microsoft 365」と入力し、[ **microsoft 365 usage analytics** \> **Get now**] を選択します。
 
-    [![[今すぐ取得] を選択する](../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![[今すぐ取得] を選択する](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
 4.  アプリがインストールされると、 タイルをクリックして開きます。
 
@@ -80,7 +80,7 @@ Power BI をまだ持っていない場合は、 [POWER Bi Pro にサインア�
     
 7. 次の画面で、**認証方法** \>に**サインイン**して**oAuth2**を選択します。 他の認証方法を選択した場合は、テンプレートアプリへの接続が失敗します。
     
-    ![Choose oAuth2 as authentication method](../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
 8. テンプレートアプリがインスタンス化されると、Microsoft 365 usage analytics ダッシュボードが web 上の Power BI で利用できるようになります。 ダッシュボードの最初の読み込みには、2 ~ 30 分かかります。
   

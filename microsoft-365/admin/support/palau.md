@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6ac4ffdb801f6b66fb96dc4a97fca26da6af3dfe
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 18102f7c49c0412279e646304aceff923e4bbf37
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256100"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357078"
 ---
 # <a name="contact-support-for-palau"></a>Palau のサポートに問い合わせる
 

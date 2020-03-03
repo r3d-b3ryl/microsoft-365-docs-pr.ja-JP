@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: ユーザーが組織を離れたときに、従業員のファイルと電子メールを保存する方法について説明します。
-ms.openlocfilehash: 92e863e3b849f6a89e6d67d805fdb5024879999f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241632"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353198"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>元ユーザーのデータにアクセスしてバックアップを作成する
 
@@ -62,7 +62,7 @@ ms.locfileid: "42241632"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
 
 2. ユーザーを選択します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "42241632"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
 
 2. ユーザーを選択します。
 
@@ -143,15 +143,15 @@ ms.locfileid: "42241632"
     
 2. Outlook で、[**ファイル**] を選択します。
     
-    ![Outlook 2016 のリボンの外観。](../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
+    ![Outlook 2016 のリボンの外観。](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
 3. [**エクスポート&amp; ** \> **インポート/エクスポート**を開く] を選択します。
     
-    ![Backstage ビューの [インポート/エクスポート]](../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Backstage ビューの [インポート/エクスポート]](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. [**ファイルへエクスポート**] を選択し、[**次へ**] を選択します。
     
-    ![インポート/エクスポート ウィンドウの [ファイルへエクスポート] オプション](../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![インポート/エクスポート ウィンドウの [ファイルへエクスポート] オプション](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. [ **Outlook データファイル (.pst)**] を選択し、[**次へ**] を選択します。
     
@@ -160,7 +160,7 @@ ms.locfileid: "42241632"
     > [!NOTE]
     > 一度にエクスポートできるアカウントは 1 つだけです。複数のアカウントをエクスポートする場合は、アカウントがエクスポートされるたびに、上の手順を繰り返します。 
   
-    ![一番上のフォルダーが選択され、[サブフォルダーを含む] がオンになった [Outlook データ ファイルのエクスポート] ダイアログ ボックス](../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![一番上のフォルダーが選択され、[サブフォルダーを含む] がオンになった [Outlook データ ファイルのエクスポート] ダイアログ ボックス](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. [**次へ**] を選択します。
     
@@ -195,7 +195,7 @@ Outlook 2010 で、[電子メール、連絡先、予定表を outlook の .pst 
     
 2. [**別のプログラムまたはファイルからのインポート**] を選択し、[**次へ**] を選択します。
     
-    ![インポート/エクスポート ウィザード](../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![インポート/エクスポート ウィザード](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. [ **Outlook データファイル (.pst)**] を選択し、[**次へ**] を選択します。
     

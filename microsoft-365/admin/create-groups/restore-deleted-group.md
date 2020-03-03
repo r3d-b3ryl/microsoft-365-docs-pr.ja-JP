@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 'Exchange 管理センターを使用して、削除された Office 365 グループを復元する方法について説明します。 '
-ms.openlocfilehash: 98eb00d90f5b607a58cd32728ce43cb4a1de1ff5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c88f10df27e5f3a0af79c93c7d0e347c5646abc9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242594"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352438"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>削除済みの Office 365 グループを復元する
 
@@ -77,9 +77,9 @@ Office 365 グローバル管理者のアクセス許可を持っている必要
       
 4. 復元するグループを選択し、[復元] アイコンを選択します。
     
-    ![復元するグループを選択し、[復元] アイコンを選択します。](../media/restore-group.png)
+    ![復元するグループを選択し、[復元] アイコンを選択します。](../../media/restore-group.png)
   
-5. [更新] を選択します。 ![[更新] アイコン](../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) を選んで、ページの情報を更新します。 使用しているグループは、"アクティブ" として表示されます。 グループに関連付けられているフォームおよびフォームデータも復元されます。
+5. [更新] を選択します。 ![[更新] アイコン](../../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) を選んで、ページの情報を更新します。 使用しているグループは、"アクティブ" として表示されます。 グループに関連付けられているフォームおよびフォームデータも復元されます。
     
 ## <a name="restore-an-office-365-group-using-powershell"></a>PowerShell を使用して Office 365 グループを復元する
 

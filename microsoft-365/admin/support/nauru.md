@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2b0b81963ac2c2bf28e891d36952ef2112154eb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3758167723594916661ef4ffd14bf62e768c0c19
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248594"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357438"
 ---
 # <a name="contact-support-for-nauru"></a>Nauru のサポートに問い合わせる
 

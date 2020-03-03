@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Office 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 5a7a9f9a67e8436a8d4120551e306a68a015bcb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241326"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352588"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 グループの有効期限ポリシー
 
@@ -66,7 +66,7 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 
 すべてのグループに対してポリシーを設定するか、選択したグループのみを設定するか、または **[なし**] を選択して完全にオフにすることができます。 現在、グループごとに異なるポリシーを設定することはできません。
 
-![Azure Active Directory でのグループの有効期限設定のスクリーンショット](../media/azure-groups-expiration-settings.png)
+![Azure Active Directory でのグループの有効期限設定のスクリーンショット](../../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>保持ポリシーを使用した有効期限のしくみ
 
