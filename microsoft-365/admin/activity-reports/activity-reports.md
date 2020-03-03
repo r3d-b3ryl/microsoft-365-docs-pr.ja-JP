@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Office 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: 6962d8ed9632ae2e819f1ea1d0e0950d82ef7ad7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241182"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353968"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのアクティビティ レポート
 
@@ -58,7 +58,7 @@ ms.locfileid: "42241182"
 ::: moniker-end
 
    
-2. ダッシュボード上部の [ **レポートの選択**] を選び、利用可能なすべてのレポートの一覧から選択します。 または、詳細を参照するには、サービス (メール、OneDrive など) のアクティビティ一覧ウィジェットを選択します。 <br/>![Office 365 の使用状況のダッシュボード](../media/usage-report-dashboard.png)
+2. ダッシュボード上部の [ **レポートの選択**] を選び、利用可能なすべてのレポートの一覧から選択します。 または、詳細を参照するには、サービス (メール、OneDrive など) のアクティビティ一覧ウィジェットを選択します。 <br/>![Office 365 の使用状況のダッシュボード](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>レポートを閲覧できるユーザー
 
@@ -164,7 +164,7 @@ ms.locfileid: "42241182"
   
 ユーザー リストは次のように表示されます。
   
-![Office 365 のレポート - 匿名ユーザー リスト](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Office 365 のレポート - 匿名ユーザー リスト](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。この設定は、レポートの API にも適用されます。
   

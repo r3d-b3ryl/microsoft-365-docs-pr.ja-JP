@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Office 365 Business Premium、Office 365 Business Essentials、Office 365 Business、または Office 365 Education サブスクリプションをセットアップする方法について説明します。
-ms.openlocfilehash: 28847b1b2773a0f725a5ac1a99dfc2a807f66b82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247835"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360448"
 ---
 # <a name="set-up-office-365-for-business"></a>一般法人向け Office 365 のセットアップ
 
@@ -168,7 +168,7 @@ Office 365 Germany を使用している場合は、[https://portal.office.de](h
 
 1. [**メール**] を選択します。
 
-2. Outlook のナビゲーション バーで、[**設定**]![設定: プロファイルを更新し、ソフトウェアをインストールし、クラウドに接続します](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> [**オプション**] を選択します。
+2. Outlook のナビゲーション バーで、[**設定**]![設定: プロファイルを更新し、ソフトウェアをインストールし、クラウドに接続します](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> [**オプション**] を選択します。
 
 3. 左側のウィンドウで、[**メール**] を選択し、[**アカウント**] で [**接続されているアカウント**] を選択します。
 

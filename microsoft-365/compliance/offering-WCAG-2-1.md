@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fe40e4a972d205470474c6bcd137712e031b065b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1abc4d885a1d9a1d915bdf5492e3492dc4318a6
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602004"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363023"
 ---
 # <a name="web-content-accessibility-guidelines"></a>Web Content Accessibility Guidelines
 
@@ -51,7 +51,7 @@ Microsoft は、製品またはサービス全体を表す WCAG レポートを�
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft アクセシビリティ適合レポート
 
-[すべての製品およびサービス](https://go.microsoft.com/fwlink/p/?linkid=205097)の WCAG レポートをお読みください。
+[すべての製品およびサービス](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/)の WCAG レポートをお読みください。
 
 ## <a name="resources"></a>リソース
 

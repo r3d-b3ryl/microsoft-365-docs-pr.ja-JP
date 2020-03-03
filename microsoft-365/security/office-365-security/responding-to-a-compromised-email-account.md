@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 侵害された Office 365 電子メール アカウントを認識して対処する方法について説明します
-ms.openlocfilehash: 3aa8be9b53f2aa8f3fc6bf64744b36de5d912645
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598604"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372485"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントへの対応
 
@@ -193,7 +193,7 @@ Office 365 サブスクリプションには、データとユーザーを保護
 
 ## <a name="see-also"></a>関連項目
 
-- [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+- [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [米国インターネット犯罪苦情センター](https://www.ic3.gov/preventiontips.aspx)
 

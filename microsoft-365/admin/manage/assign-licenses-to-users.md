@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: ライセンスをユーザーに割り当てる方法、または新しいサブスクリプションにユーザーを移動する方法について説明します。
-ms.openlocfilehash: c0fc92870d11ef199f37f15f8be34bba9c9fa3ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255060"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362062"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 

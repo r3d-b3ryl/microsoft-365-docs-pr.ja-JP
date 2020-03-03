@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '組織のすべてのユーザーまたは特定のユーザー用に優先受信トレイを構成する方法について説明します。 '
-ms.openlocfilehash: 6762bf4e81254e962171ddc80027273542288f34
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 29f412b82121b8955c2ddabb5d152bbe6b2255e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257074"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360878"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>組織内のすべてのユーザー用に優先受信トレイを構成する
 
@@ -53,7 +53,7 @@ Get-OrganizationConfig
 
 4. **FocusedInboxOn** を探して、現在の設定を表示します。 
     
-    ![優先受信トレイの状態に関する PowerShell からの応答。](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![優先受信トレイの状態に関する PowerShell からの応答。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 次のコマンドレットを実行して、優先受信トレイを無効にします。
     
@@ -75,11 +75,11 @@ Get-OrganizationConfig
 
 ユーザーが Outlook を終了して再起動した後でのみ、優先ビューが表示されます。Outlook を再起動すると、Outlook ユーザー インターフェイスにヒントが表示され、新しい優先受信トレイを使用する選択肢がユーザーに提供されます。
   
-![ユーザーが最初に Outlook on the web を開いたときの優先受信トレイの画像。](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![ユーザーが最初に Outlook on the web を開いたときの優先受信トレイの画像。](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 低優先メールから優先受信トレイに切り替える場合は、その機能を有効にするか ("試してみる")、解除するかを決めることができます。複数の (サポートされている) クライアントを持つユーザーの場合は、各クライアント上で個別に優先受信トレイを有効/無効にすることができます。次のようなヒントが表示されます。
   
-![優先受信トレイがユーザーにロールアウトされてから、Outlook が再度開かれたときの優先受信トレイの画像。](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![優先受信トレイがユーザーにロールアウトされてから、Outlook が再度開かれたときの優先受信トレイの画像。](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 ユーザーが優先受信トレイの使用開始を決定すると、低優先メールは自動的に無効になります。低優先メール フォルダーが標準的なフォルダーに変換されると、ユーザーはそのフォルダーの名前の変更または削除を行えるようになります。
   
@@ -99,7 +99,7 @@ Get-OrganizationConfig
 
 4. FocusedInboxOn を探して、現在の設定を表示します。
     
-    ![優先受信トレイの状態に関する PowerShell からの応答。](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![優先受信トレイの状態に関する PowerShell からの応答。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 次のコマンドレットを実行して、優先受信トレイを無効にします。
     
@@ -117,13 +117,13 @@ Get-OrganizationConfig
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
     
-2. [**メール フロー**] \> [**ルール**] に移動します。 ![EAC 追加アイコン](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)を選択し、[**新しいルールを作成する...**] を選択します。 
+2. [**メール フロー**] \> [**ルール**] に移動します。 ![EAC 追加アイコン](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)を選択し、[**新しいルールを作成する...**] を選択します。 
     
 3. 新しいルールの作成後、[**保存**] を選択してルールを開始します。 
     
     次の図は、"Payroll Department"(給与課) からのすべてのメッセージを優先受信トレイに配信する例を示しています。
     
-    ![優先受信トレイ、給与](../media/focusedinbox-transport-rule.PNG)
+    ![優先受信トレイ、給与](../../media/focusedinbox-transport-rule.PNG)
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>トランスポート ルールを作成する PowerShell を使用して、すべてのユーザーの優先ビューにメール メッセージを直接表示する
 

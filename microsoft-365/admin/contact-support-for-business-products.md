@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 地域/ロケール別にリストされている電話番号、サービス リクエストのオンライン送信、または Microsoft Store にアクセスして、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
-ms.openlocfilehash: 72644e1e55f3432fd9027a5964022f4d989a05da
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241481"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352948"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ
 
@@ -230,7 +230,7 @@ Office 365 では、異なる複数の役割を持つ複数のタイプの管理
 
 この QR コードをスキャンして WeChat でフォローし、21Vianet が運用している Office 365 の最新の更新プログラムを取得します。
 
-![21Vianet が運用している Office 365 の更新プログラムの QR コード](media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![21Vianet が運用している Office 365 の更新プログラムの QR コード](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 
