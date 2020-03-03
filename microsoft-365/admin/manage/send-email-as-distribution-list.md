@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Office 365 で配布リストとしてメールを送信する 方法の詳細をご確認ください。
-ms.openlocfilehash: f165279cf6cfbedda4f122f453c2321c16f412d3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254852"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361742"
 ---
 # <a name="send-email-as-a-distribution-list-in-office-365"></a>Office 365 で配布リストとしてメールを送信する
 
@@ -43,10 +43,10 @@ Office 365 では、ユーザーが配布リストとしてメールを送信で
     
 3. [**返信**] を選択します。 
     
-4. メッセージの下部で、[**その他** \> **の表示元**] を選択します。<br/> ![[詳細] を選択し、[表示] を選択します。](../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. メッセージの下部で、[**その他** \> **の表示元**] を選択します。<br/> ![[詳細] を選択し、[表示] を選択します。](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. `Ina@weewalter.me` -などの差出人のアドレスを右クリックして、[**削除**] を選択します。<br/> ![FROM エイリアスを削除する](../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. `Ina@weewalter.me` -などの差出人のアドレスを右クリックして、[**削除**] を選択します。<br/> ![FROM エイリアスを削除する](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. 次に、support@contoso.com などの配布リストを入力して、メッセージを送信します。 次回、配布リストから返信するときに、そのアドレスが [**差出人**] リストにオプションとして表示されます。<br/>![共有メールボックスのエイリアスが表示されます。](../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. 次に、support@contoso.com などの配布リストを入力して、メッセージを送信します。 次回、配布リストから返信するときに、そのアドレスが [**差出人**] リストにオプションとして表示されます。<br/>![共有メールボックスのエイリアスが表示されます。](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   
 

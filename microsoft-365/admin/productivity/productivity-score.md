@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 863d644a2dc3b7f756c61b8a9c3063a8545c1fb0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257224"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361318"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -39,7 +39,7 @@ Microsoft 365 は、組織がビジネス目標を達成できるようにする
 
 - **テクノロジエクスペリエンス**(近日中に公開されている): 一般的なヘルプデスクの問題を事前に修正し、PC の起動時間とネットワークを向上させて、アプリが正常に機能するように、デバイスエクスペリエンスを最適化するのに役立ちます。  
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 ### <a name="areas-of-scoring"></a>得点の範囲 
 
@@ -84,7 +84,7 @@ Microsoft の生産性スコアにアクセスするためのアクセス許可�
 
 プロダクティビティスコアホームページには、現在のスコアと履歴が、ベンチマークによって補足された各スコアカテゴリ内の分野についての主要な基準として、比率が表示されます。 
 
-![生産性スコアのホームページ](../media/pslanding.png)
+![生産性スコアのホームページ](../../media/pslanding.png)
 
 1.**生産性スコア**がパーセント単位<numerator> / <denominator>で表示されるようにします。また、絶対ポイント (分子) と最大可能なポイントを表示することもできます。  
 1. このピボットを使用すると、注目するスコアカテゴリを選択できます。 プレビューでは、**従業員の操作**だけを表示できますが、すぐに選択範囲が拡張されて、**テクノロジの利便性**が含まれます。 
@@ -113,7 +113,7 @@ Microsoft の生産性スコアにアクセスするためのアクセス許可�
 
 ### <a name="area-detail-page--collaborating-on-content"></a>エリア詳細ページ-コンテンツに関する共同作業 
 
-![Collaborationg on content ページ](../media/pscollab.png)
+![Collaborationg on content ページ](../../media/pscollab.png)
 
 コンテンツページでの共同作業には、生産性スコアのホームページにある主要な洞察が含まれています。 これには、次のコンポーネントがあります。
 
@@ -134,7 +134,7 @@ Microsoft の生産性スコアにアクセスするためのアクセス許可�
 
 ### <a name="area-detail-page--working-anywhere"></a>エリア詳細ページ–作業中の場所 
 
-![Anywhere ページで作業します。](../media/psflexibility.png)
+![Anywhere ページで作業します。](../../media/psflexibility.png)
 
 [作業中の anywhere] ページには、デスクトップ、モバイル、web の2つ以上のプラットフォームで少なくとも1つの生産性向上アプリを使用したユーザー (パーセンテージおよび絶対値) が quantifies されます。 ユーザーは、より多くのアプリやプラットフォームを使用するために、高いスコアを獲得できます。 考慮されているアプリは、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、Skype です。 洞察の基準となるのは、Office 365 ProPlus、Exchange、Yammer、Skype、Teams などに対して有効になっているユーザーです。
 
@@ -147,7 +147,7 @@ Microsoft の生産性スコアにアクセスするためのアクセス許可�
 
 Actionability を促進するために、それぞれの洞察をサポートするインラインアクションには、構成変更や認識キャンペーンになる可能性がある、従業員の利便性を変革させるために役立つインラインアクションがあります。 これらの呼び出しをクリックすると、考えられる [推奨されるアクションパネル] オプションが表示されます。 現在、**コンテンツの共同作業**のアクションが有効になっています。
 
-![[Office ドキュメントでの共同作業] ページ](../media/psactions1.png)
+![[Office ドキュメントでの共同作業] ページ](../../media/psactions1.png)
 
 1. **ビューアクション**は、コンテンツの共同作業に関連するすべてのアクションを一覧表示するウィンドウに送られます。
 1. 共同編集や @mentions などのトピックを使用して、共同**作業を行うようにユーザーに**指導ビデオの一覧を表示します。 
@@ -156,7 +156,7 @@ Actionability を促進するために、それぞれの洞察をサポートす
 
 いずれかの操作ボタンを選択すると、各アクションの概要とドキュメントページへのリンクを含む、推奨される**操作**ウィンドウが右側に表示されます。
 
-![推奨される操作ウィンドウ。](../media/psacttions2.png)
+![推奨される操作ウィンドウ。](../../media/psacttions2.png)
 
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください 

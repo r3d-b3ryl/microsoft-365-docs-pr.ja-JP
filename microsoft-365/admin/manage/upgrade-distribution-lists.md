@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Outlook で1つまたは複数の配布リストを Office 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: 9e6867a5ccdb97586e3d58784a49312e078ae659
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7337d450cf1e9b249b2b9dc2ab66f32f5b1577e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254812"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361712"
 ---
 # <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>Outlook で配布リストを Office 365 グループにアップグレードする
 
@@ -38,11 +38,11 @@ Outlook を使用して配布リストを Office 365 グループにアップグ
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
 
-2. Exchange 管理センターで、[**受信者** \> **グループ**] に移動します。<br/>Office 365 グループにアップグレードする対象である配布リスト ( **配布グループ** とも呼ばれる) があることを示す通知が表示されます。<br/> ![[開始] ボタンを選択する](../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Exchange 管理センターで、[**受信者** \> **グループ**] に移動します。<br/>Office 365 グループにアップグレードする対象である配布リスト ( **配布グループ** とも呼ばれる) があることを示す通知が表示されます。<br/> ![[開始] ボタンを選択する](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. **グループ** ページから 1 つ以上の配布リスト ( **配布グループ** とも呼ばれる) を選びます。<br/>![配布グループを選択する](../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. **グループ** ページから 1 つ以上の配布リスト ( **配布グループ** とも呼ばれる) を選びます。<br/>![配布グループを選択する](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. [アップグレード] アイコンを選択します。<br/>![Office 365 グループへのアップグレードアイコン](../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. [アップグレード] アイコンを選択します。<br/>![Office 365 グループへのアップグレードアイコン](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. [情報] ダイアログで、[**はい**] を選択してアップグレードを確認します。 プロセスがすぐに開始されます。 アップグレードする配布リストのサイズや数に応じて、処理には数分または数時間かかることがあります。<br/>配布リストをアップグレードできない場合は、それを示すダイアログが表示されます。 [アップグレードできない配布リストがあるかどうかを](#which-distribution-lists-cannot-be-upgraded)確認します。
 

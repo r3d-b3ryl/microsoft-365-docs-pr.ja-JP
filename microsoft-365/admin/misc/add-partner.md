@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Office 365 の購入時に、レコードのパートナーとしてサブスクリプションアドバイザーパートナーを追加する方法、パートナーを変更する方法、またはサブスクリプションからパートナーを削除する方法について説明します。
-ms.openlocfilehash: 22b4108db8ecff1af14706ceede746bec8743d54
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248130"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361582"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>サブスクリプション アドバイザー パートナーを追加、変更、または削除する
 
@@ -120,7 +120,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
   
 3. [サブスクリプション] ページで、[**パートナー** ] タブを選択し、追加するパートナーのパートナーネットワーク id を入力します。パートナーのパートナーの id を取得するには、パートナーに依頼します。
     
-4. [**追加**] を選択します。
+4. **[追加]** を選択します。
 
 ::: moniker-end
 

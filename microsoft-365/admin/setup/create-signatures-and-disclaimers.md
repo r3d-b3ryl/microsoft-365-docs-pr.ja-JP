@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織に対して送受信されるすべての電子メールメッセージに電子メール署名、法的免責事項、または開示ステートメントを追加する方法について説明します。
-ms.openlocfilehash: 3d95e92c4994a99ab3426133580d70453a2f83eb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257034"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360668"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "42257034"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>すべてのメッセージに適用される署名を作成する
 
@@ -46,7 +46,7 @@ ms.locfileid: "42257034"
     
 ::: moniker range="o365-worldwide"
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "42257034"
 
 ::: moniker-end
 
-1. Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)でアプリ![起動ツールのアプリ起動ツールのアイコンを選択し、[**管理者**] を選択します。
+1. Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)でアプリ![起動ツールのアプリ起動ツールのアイコンを選択し、[**管理者**] を選択します。
    
     アプリが見つからない場合は、アプリ起動ツールから、[**すべてのアプリ**] を選択して、利用できる Office 365 アプリのアルファベット順の一覧を表示します。そこから、特定のアプリを検索できます。 
     

@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Gmail または別のメールプロバイダーから Office 365 に連絡先、予定表、メールをインポートする方法について説明します。 '
-ms.openlocfilehash: 6281e3b48249a67d3cf2754ebcfcaa9bc1789ef6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2b2f4441772a9d373316ff14f06bcdeb61e5840d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247858"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360708"
 ---
 # <a name="migrate-email-and-contacts-to-office-365"></a>Office 365 へのメールと連絡先の移行
 
@@ -69,7 +69,7 @@ Office 365 を使用してメール、連絡先、予定表を Outlook から .p
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![Outlook 2016 の [ファイル] メニュー](../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Outlook &amp; 2016 で [エクスポート] コマンドを開く](../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Outlook 2016 の [ファイル] メニュー](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Outlook &amp; 2016 で [エクスポート] コマンドを開く](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Outlook で他のメール アカウントを表示する
 
@@ -83,7 +83,7 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
     
 詳細な手順が必要な場合は、「[アカウントの追加](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)」を参照してください。
   
-[![Screenshot showing Outlook account information page in the backstage view.](../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-office-365"></a>メールボックスが複数の場合: 管理者が Office 365 にメール、連絡先、予定表を一括インポートすることが可能
 

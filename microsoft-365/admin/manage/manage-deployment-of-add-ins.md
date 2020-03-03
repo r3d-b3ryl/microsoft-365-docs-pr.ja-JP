@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: acb6febf03e40b37b167113666b3577e0b9fb61e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254964"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361952"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでの Office 365 のアドインの展開を管理する
 
@@ -105,7 +105,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
   
 |**状態**|**状態が発生する原因**|**影響**|
 |:-----|:-----|:-----|
-|**Active**  <br/> |管理者がアドインをアップロードし、ユーザーまたはグループに割り当てました。  <br/> |アドインを割り当てられたユーザーやグループは、関連するクライアントでアドインを表示します。  <br/> |
+|**アクティブ**  <br/> |管理者がアドインをアップロードし、ユーザーまたはグループに割り当てました。  <br/> |アドインを割り当てられたユーザーやグループは、関連するクライアントでアドインを表示します。  <br/> |
 |**オフ**  <br/> |管理者がアドインをオフにした。  <br/> |アドインを割り当てられたユーザーやグループは、そのアドインにアクセスできません。  <br/> アドインの状態が [アクティブ] に変更されると、ユーザーやグループはもう一度アクセスできるようになります。  <br/> |
 |**Deleted**  <br/> |管理者がアドインを削除した。  <br/> |アドインを割り当てられたユーザーやグループは、そのアドインにアクセスできません。  <br/> |
    
@@ -250,7 +250,7 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
   
 アドインがアドイン コマンドをサポートする場合、そのコマンドは Office のリボンに表示されます。次の例では、[ **引用の検索** ] コマンドが [ **引用** ] アドインで表示されています。 
 
-![検索引用を含む Office リボン](../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![検索引用を含む Office リボン](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 展開されたアドインがアドインコマンドをサポートしていない場合や、展開されたすべてのアドインを表示する場合は、 **[マイ**アドイン] で表示できます。 
   
@@ -260,11 +260,11 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
     
 2. Office アドイン ウィンドウの [ **管理による管理者** ] タブを選択します。 
     
-3. 前に展開したアドインをダブルクリックします (この例では [ **引用文献** ])。 <br/>![[Office アドイン] ページの [管理者による管理] タブ](../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. 前に展開したアドインをダブルクリックします (この例では [ **引用文献** ])。 <br/>![[Office アドイン] ページの [管理者による管理] タブ](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>Outlook
 
-1. [**ホーム**] リボンで、[アドインの**取得**] を選択します。<br/>![Outlook の [格納] ボタン](../media/getaddinsicon.png)
+1. [**ホーム**] リボンで、[アドインの**取得**] を選択します。<br/>![Outlook の [格納] ボタン](../../media/getaddinsicon.png)
   
 2. 左側のナビゲーションで、[**管理者管理**] を選択します。
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品および機能の更新プログラムのリリースオプションをセットアップする方法について説明します。
-ms.openlocfilehash: 2d4940003c791e50926eff46aaf6a299e60fb9aa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254925"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361802"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Office 365 で標準または対象指定リリース オプションを設定する
 
@@ -39,7 +39,7 @@ Office 365 では、新しい製品の更新プログラムと機能をリリー
 
 新しいリリースはすべて、最初に機能チームによってテストおよび検証され、次に Office 365 機能チーム全体によって、その後にすべての Microsoft が評価されます。 内部テストと検証が終わったら、次の手順は参加しているお客様に向けた **対象指定リリース** (以前は先行リリースと呼ばれていました) です。 各リリース リングで、Microsoft はフィードバックを収集し、主要な利用状況メトリックを監視することでさらに品質を検証します。 この革新的な一連の検証は、全世界のリリースの信頼性を最大限に高めるためにあります。 各リリースを、次の図で示します。 
   
-![Office 365 のリリース検証リング](../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Office 365 のリリース検証リング](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 重要な更新プログラムについては、Office のお客様には、 [Microsoft 365 ロードマップ](https://products.office.com/business/office-365-roadmap)による通知が最初に行われます。 更新プログラムのロールアウトが近づくにつれて、 [Office 365 メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)を経由して通知されます。
 

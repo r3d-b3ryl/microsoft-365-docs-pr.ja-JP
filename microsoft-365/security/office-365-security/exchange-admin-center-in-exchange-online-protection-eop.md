@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 管理センター (EAC) は、Microsoft Exchange Online Protection (EOP) 向けの Web ベース管理コンソールです。
-ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083286"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372495"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection の Exchange 管理センター
 
@@ -33,7 +33,7 @@ Exchange 管理センター (EAC) は、Microsoft Exchange Online Protection (EO
 
 ## <a name="accessing-the-eac"></a>EACへのアクセスについて
 
-ほとんどの場合、EOP のお客様は、Microsoft 365 管理センターを通じて EAC にアクセスします。 EOP へのリンクは、 **[自分]** タイルの横にある **[管理]** タイルのドロップ ダウン メニューから選択できます。 **[管理]** タイルをクリックし、ドロップ ダウン メニューから **[Exchange Online Protection]** を選択すると、EAC にアクセスできます。
+ほとんどの場合、EOP のお客様は、Microsoft 365 管理センターを通じて EAC にアクセスします。 EOP へのリンクは、 **[自分]** タイルの横にある **[管理]** タイルのドロップ ダウン メニューから選択できます。 [**管理**] タイルをクリックし、ドロップダウンメニューから [ **Exchange Online Protection** ] を選択して、EAC に移動します。
 
 You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.
 

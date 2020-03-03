@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Power BI と、組織内のユーザーがこのビジネス分析サービスをどのように使用できるかについて説明します。
-ms.openlocfilehash: 56a6dd1c90b8dcb810e74c36b5e7f93ab6a0eb2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257304"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361338"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -102,7 +102,7 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
     
 4. 左上にあるアプリ起動ツールのアイコンを選択して、**[管理]** をクリックします。
     
-    ![The Office 365 app launcher with the Admin app highlighted](../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. [**管理者になる**] ページの手順を読んで、[**はい、管理者にする]** を選択します。
     
@@ -187,7 +187,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
     
@@ -201,7 +201,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
     

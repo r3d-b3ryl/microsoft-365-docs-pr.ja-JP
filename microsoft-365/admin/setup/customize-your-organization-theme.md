@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Office 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
-ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280185"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360638"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>組織で使用する Office 365 のテーマをカスタマイズする
 
 Microsoft 365 管理センターでテーマをカスタマイズする方法について説明します。 一般法人向け Office 365 サブスクリプションの管理者は、組織内のすべてのユーザーに対して上部のナビゲーション バーに表示される既定のテーマを変更することができます。 会社のロゴを追加して、ブランドの他の部分と一致するように色を変更することができます。 ユーザーがロゴを選択したときに移動するための宛先リンクを追加することもできます。 Office 365 の [既定のテーマとカスタムテーマ] の結果が表示されます。
   
-![既定の Office 365 テーマとカスタム Office 365 テーマ](../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![既定の Office 365 テーマとカスタム Office 365 テーマ](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>管理センターでテーマをカスタマイズする
 

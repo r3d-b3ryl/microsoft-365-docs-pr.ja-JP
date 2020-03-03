@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 変更管理に役立つメッセージセンターのメッセージを管理する方法について説明します。
-ms.openlocfilehash: f2c7c5324fe77d1d3dc13a235d7a2f391b09a603
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254948"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361932"
 ---
 # <a name="manage-messages-in-message-center"></a>メッセージ センターでメッセージを管理する
 
@@ -51,7 +51,7 @@ ms.locfileid: "42254948"
 
 任意の列見出しを選択して、メッセージを昇順または降順で並べ替えることができます。 たとえば、この図のメッセージは、[ **対応期限**] の日付に基づいて並べ替えられています。
 
-![日付順に分類されたメッセージセンタービュー](../media/message-center-filter-act-by.png)
+![日付順に分類されたメッセージセンタービュー](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ ms.locfileid: "42254948"
  
 任意の列見出しを選択して、メッセージを昇順または降順で並べ替えることができます。 たとえば、この図では、メッセージは [ **Act by** date] で並べ替えられています。
 
-![日付順に分類されたメッセージセンタービュー](../media/message-center-old-admin-center1.png)
+![日付順に分類されたメッセージセンタービュー](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ ms.locfileid: "42254948"
  
 任意の列見出しを選択して、メッセージを昇順または降順で並べ替えることができます。 たとえば、この図では、メッセージは [ **Act by** date] で並べ替えられています。
 
-![日付順に分類されたメッセージセンタービュー](../media/message-center-old-admin-center1.png)
+![日付順に分類されたメッセージセンタービュー](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 

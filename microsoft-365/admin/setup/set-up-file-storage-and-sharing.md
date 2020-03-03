@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: OneDrive とチームサイトを使用してファイルの保存と共有を行う方法について説明します。
-ms.openlocfilehash: ec55e54fb15113589d7c9b68add511d2cfa9bc97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: be3c845710fdf5531b1a3d91b9579c55cdc4d203
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256954"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360498"
 ---
 # <a name="set-up-office-365-file-storage-and-sharing"></a>Office 365 ファイル ストレージと共有をセットアップする
 
@@ -42,7 +42,7 @@ Office 365 でのファイルの保存場所に関する短いビデオをご覧
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="where-you-can-store-documents-in-office-365"></a>Office 365 でドキュメントを保存する場所
 
@@ -52,7 +52,7 @@ Office 365 でのファイルの保存場所に関する短いビデオをご覧
 
 OneDrive およびチームサイトの両方が、自分と従業員に対する anywhere access を提供します。
   
-![Office 365 製品が OneDrive またはチームサイトをどのように使用できるかを示す図](../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Office 365 製品が OneDrive またはチームサイトをどのように使用できるかを示す図](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 OneDrive とチームサイトを一緒に使用するときに、各場所に保存する内容に関する推奨事項を次に示します。
   
@@ -81,7 +81,7 @@ Office 365 ライセンスが割り当てられている (および SharePoint O
 
 3. OneDrive では、チームメンバーは独自のビジネス関連ファイルを保存できます。 個別のファイルまたはフォルダー全体を共有できます。 ファイルまたはフォルダーを選択し、右クリックして、[**共有**] を選択します。
 
-    ![フォルダーの共有](../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![フォルダーの共有](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. [**送信リンク**] ページで、[既定の選択のまま]**リンクを持つすべてのユーザーが表示および編集でき**ます。
 
@@ -89,15 +89,15 @@ Office 365 ライセンスが割り当てられている (および SharePoint O
 
     送信される電子メールのコピーが必要な場合は、リストに電子メールアドレスを追加します。
 
-    ![[リンク] ダイアログボックスを共有して、名前の入力と選択を表示します。](../media/877e6587-db9d-4903-a87b-11e570eee926.png)
+    ![[リンク] ダイアログボックスを共有して、名前の入力と選択を表示します。](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
 5. 共有しようとしているユーザーの入力が完了したら、[**送信**] を選択します。 メールは、招待するユーザーに直ちに送信されます。
 
-    ![名前の一覧を表示するリンクを共有する](../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![名前の一覧を表示するリンクを共有する](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. 電子メールは次のようになります。 
 
-    ![OneDrive フォルダーを共有するためのリンクを含む電子メール](../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![OneDrive フォルダーを共有するためのリンクを含む電子メール](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>オンライングループ作業のためにファイルをチームサイトにアップロードする
 
@@ -138,15 +138,15 @@ Office 365 ライセンスが割り当てられている (および SharePoint O
   
 4. **OneDrive の設定**を取得した場合は、職場または学校のアカウントでサインインします。
 
-    ![OneDrive セットアップ画面](../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![OneDrive セットアップ画面](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. OneDrive をまだ同期していない場合**は、onedrive フォルダー画面が表示さ**れることがあります。 **OneDrive フォルダー**のパスを確認してください。 別のパスを使用する場合は [**場所の変更**] を選択し、[**次へ**] を選択します。
 
-    ![この画面でローカルフォルダーを変更する](../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![この画面でローカルフォルダーを変更する](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. チームサイト内のファイルは、組織の名前の下にあるエクスプローラーの左側のウィンドウに表示されます。 OneDrive のファイルが "OneDrive- \<組織\>の名前" の下に表示されます。
 
-    ![「ローカルフォルダーの同期の内容」を参照してください。](../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![「ローカルフォルダーの同期の内容」を参照してください。](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. コンピューター上のチームのフォルダーにあるファイルを開いて、同期をテストします。 変更を加えてから、[**保存**] を選択します。
 
@@ -191,7 +191,7 @@ Office 365 でユーザーのサードパーティ製ストレージを有効に
 
 4. サードパーティ製のストレージを有効または無効にするには、チェックボックスをオンまたはオフにして、[**変更の保存**] を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [ファイルの保存と共有についてチームサイトをカスタマイズ](customize-team-site.md)します。 このチュートリアルでは、ストレージとコラボレーションの機能をさらに活用する方法について説明します。 
 

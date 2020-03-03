@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179218"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372015"
 ---
 # <a name="insider-risk-management-alerts"></a>Insider リスク管理警告
 
@@ -35,6 +35,9 @@ Insider リスク**警告ダッシュボード**を使用すると、insider の
     - 低重要度アラートの解決にかかった平均時間 (時間、日、または月単位で表示されます)。
 
 ![Insider リスク管理アラートダッシュボード](../media/insider-risk-alerts-dashboard.png)
+
+>[!NOTE]
+>Insider リスク管理では、組み込みの通知調整を使用して、リスク調査を保護し、最適化することができます。 この調整により、ポリシーの警告の負荷が原因となる問題 (データコネクタや DLP ポリシーなど) から保護されます。 その結果、ユーザーの新しい通知を表示するときに遅延が発生することがあります。
 
 ## <a name="alert-status-and-severity"></a>アラートの状態と重大度
 

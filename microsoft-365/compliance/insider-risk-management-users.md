@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: f499cacd0ec63f9a192e2773b3604473d2153545
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179108"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370496"
 ---
 # <a name="insider-risk-management-users"></a>Insider リスク管理ユーザー
 
@@ -30,6 +30,9 @@ Insider リスク管理ユーザーは、1つ以上の insider リスク管理�
 - **ケース**: ユーザーの現在のアクティブなケース。
 
 ![Insider リスク管理ユーザーダッシュボード](../media/insider-risk-users-dashboard.png)
+
+>[!NOTE]
+>ユーザーダッシュボードに表示されるユーザー数は、アクティブな通知と一致するポリシーの量によっては、一部のインスタンスで制限される場合があります。 アラートが生成されたときにアクティブな通知を持つユーザーが表示され、表示されるユーザーの最大数に達した場合、まれに発生することがあります。 このような状況では、表示されていないアクティブな通知を持つユーザーは、既存のユーザー通知がトリアージされているため、ユーザーダッシュボードに追加されます。
 
 ## <a name="view-user-details"></a>ユーザーの詳細を表示する
 

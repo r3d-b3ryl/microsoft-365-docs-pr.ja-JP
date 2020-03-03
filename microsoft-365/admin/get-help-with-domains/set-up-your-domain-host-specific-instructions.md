@@ -1,5 +1,5 @@
 ---
-title: ドメインを設定する (ホストに固有の手順)
+title: ドメインを設定する (ホスト固有の手順)
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: 独自の DNS レコードを管理する方法、または Office 365 で DNS レコードを管理できるようにする方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 2313aa6c629c76a852e38b4da9093576a3b75d6e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: dbd9dda6f84803732777ac75163f031b50419732
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255084"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362142"
 ---
-# <a name="set-up-your-domain-host-specific-instructions"></a>ドメインを設定する (ホストに固有の手順)
+# <a name="set-up-your-domain-host-specific-instructions"></a>ドメインを設定する (ホスト固有の手順)
 
 Office 365 でカスタムドメイン (contoso.com) の使用を開始するには、ドメインを確認して、ドメインの DNS レコードを構成する必要があります。 
   

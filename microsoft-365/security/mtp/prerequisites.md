@@ -1,7 +1,7 @@
 ---
 title: Microsoft Threat Protection の前提条件
 description: Microsoft Threat Protection のライセンス、ハードウェアとソフトウェアの要件、およびその他の構成設定について学習する
-keywords: 要件、前提条件、ハードウェア、ソフトウェア、ブラウザー、MTP、M365、ライセンス
+keywords: 要件、前提条件、ハードウェア、ソフトウェア、ブラウザー、MTP、M365、license、E5、A5、EMS、購入
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,19 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288545"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372055"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
 **適用対象:**
 - Microsoft Threat Protection
-
-
 
 Microsoft の脅威保護をプロビジョニングおよび使用するためのライセンス、ハードウェア要件、ソフトウェア要件、およびその他の構成設定について説明します。
 
@@ -41,8 +39,13 @@ Microsoft の脅威保護を使用するには、次の*いずれか*のライ�
 - Microsoft 365 E5
 - Microsoft 365 E5 Security
 - Office 365 E5 および "Enterprise Mobility + Security E5 (EMS E5)" および Windows E5
+- Microsoft 365 A5
+- Microsoft 365 A5 Security
+- Office 365 A5 および「Enterprise Mobility + Security A5 (EMS A5)」および「Windows A5」
 
-[Microsoft 365 Enterprise service プランを表示する](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
+詳細については、 [Microsoft 365 Enterprise service プランを参照して](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)ください。
+
+> まだライセンスを持っていませんか? [Microsoft 365 サブスクリプションを試用または購入する](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>既存のライセンスを確認する
 Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com/)) に移動して、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。

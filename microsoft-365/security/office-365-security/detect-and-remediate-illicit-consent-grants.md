@@ -2,9 +2,9 @@
 title: Microsoft Office 365 での不正な同意付与の検出と修復
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957152"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363053"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -79,7 +79,7 @@ ms.locfileid: "41957152"
 
 5. [**アプリケーション**] を選択します。
 
-これにより、ユーザーに割り当てられているアプリと、applcations に設定されているアクセス許可が表示されます。
+これにより、ユーザーに割り当てられているアプリと、アプリケーションのアクセス許可が表示されます。
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>ユーザーがアプリケーションアクセスを列挙する手順
 
@@ -102,7 +102,7 @@ ms.locfileid: "41957152"
 
 1. スクリプトを実行するコンピューターに、ローカル管理者権限を使用してサインインします。
 
-2. GitHub から scruipt を実行するフォルダーに[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)スクリプトをダウンロードするか、コピーします。 これは、出力 "permissions" ファイルが書き込まれるフォルダーと同じです。
+2. [Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)スクリプトを GitHub から、スクリプトを実行するフォルダーにダウンロードまたはコピーします。 これは、出力 "permissions" ファイルが書き込まれるフォルダーと同じです。
 
 3. 管理者として PowerShell インスタンスを開き、スクリプトを保存したフォルダーを開きます。
 

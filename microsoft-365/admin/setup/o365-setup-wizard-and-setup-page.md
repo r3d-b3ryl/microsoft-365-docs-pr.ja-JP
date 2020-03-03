@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Office 365 セットアップウィザードとセットアップページの違いについて説明します。
-ms.openlocfilehash: 3aecfc14071bda7948c24a2e161461558f8efd8d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0873e37b849785feb7c70271b97b148f3cea8bd9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256987"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360458"
 ---
 # <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Office 365 セットアップウィザードとセットアップページの違い
 
@@ -39,7 +39,7 @@ Office 365 には、2つのセットアップエクスペリエンスがあり�
 
 アカウントをセットアップするには、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に移動し、左側のナビゲーションウィンドウで [**設定**] を選択して、[**セットアップ**] ページの [**ガイド付きセットアップ**] を選択します。
 
-![Office 365 Business セットアップウィザードを開始する](../media/o365b-guided-setup.png)
+![Office 365 Business セットアップウィザードを開始する](../../media/o365b-guided-setup.png)
 
 セットアップウィザードの指示に従って、次の手順を実行します。
 
@@ -57,7 +57,7 @@ Office 365 には、2つのセットアップエクスペリエンスがあり�
 
 セットアップタスクの完全な一覧が、セットアップウィザードで完了したものを含め、論理的なカテゴリに分類されて表示されます。
 
-![Office 365 for Business のセットアップページ](../media/o365b-setup-page.png)
+![Office 365 for Business のセットアップページ](../../media/o365b-setup-page.png)
 
 タスクの説明、ユーザーへの影響、前提条件、実装作業、セキュリティ、導入の統計などの情報をひとめで把握できるようにするには、「 **View** 」を選択します。
 
@@ -67,4 +67,4 @@ Office 365 には、2つのセットアップエクスペリエンスがあり�
 
 タスクを完了する準備ができたら、[**開始**] を選択して、構成プロセスを順を追って説明します。 タスクを完了すると、[**開始**] ボタンが [**管理**] ボタンに変わり、必要に応じてタスクを管理できるようになります。
 
-![概要情報が表示されたタスクビュー](../media/o365b-at-a-glance.png)
+![概要情報が表示されたタスクビュー](../../media/o365b-at-a-glance.png)

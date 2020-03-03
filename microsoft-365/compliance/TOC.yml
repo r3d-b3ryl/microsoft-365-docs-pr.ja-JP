@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -218,8 +218,9 @@
     - name: 情報ガバナンスの管理
       href: manage-information-governance.md
     - name: データのインポート
-      href: importing-pst-files-to-office-365.md
       items:
+        - name: PST ファイルのインポートの概要
+          href: importing-pst-files-to-office-365.md
         - name: ネットワーク アップロードを使用して PST ファイルをインポートする
           href: use-network-upload-to-import-pst-files.md
         - name: ドライブ送付を使用して PST ファイルをインポートする
@@ -231,8 +232,9 @@
         - name: PST ファイルのインポートに関する FAQ
           href: faqimporting-pst-files-to-office-365.md
     - name: サードパーティのデータをアーカイブする
-      href: archiving-third-party-data.md
       items:
+        - name: サードパーティのデータをアーカイブする方法の概要
+          href: archiving-third-party-data.md
         - name: Facebook データをアーカイブするためのコネクタの設定
           href: archive-facebook-data-with-sample-connector.md
         - name: Twitter データをアーカイブするためのコネクタの設定
@@ -276,8 +278,9 @@
     - name: データを破棄する
       href: disposition-reviews.md
     - name: 非アクティブなメールボックスを管理する
-      href: inactive-mailboxes-in-office-365.md
       items:
+        - name: 非アクティブなメールボックスの概要
+          href: inactive-mailboxes-in-office-365.md
         - name: 非アクティブなメールボックスを作成および管理する
           href: create-and-manage-inactive-mailboxes.md
         - name: 非アクティブなメールボックスの保持期間を変更する
@@ -718,10 +721,13 @@
     - name: メールボックスの監査
       href: enable-mailbox-auditing.md
     - name: 詳細な監査
-      href: advanced-audit.md
       items:
+        - name: 詳細な監査の概要
+          href: advanced-audit.md
         - name: 監査ログの保持ポリシーを管理する
           href: audit-log-retention-policies.md
+        - name: 詳細な監査を使用して、侵害されたアカウントを調査する
+          href: mailitemsaccessed-forensics-investigations.md
     - name: ポリシーを通知する
       href: alert-policies.md
 - name: コンプライアンス リスクの管理

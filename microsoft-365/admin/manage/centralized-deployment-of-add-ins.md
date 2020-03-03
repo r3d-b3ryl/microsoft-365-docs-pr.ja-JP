@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Office の365テナントとユーザーが要件を満たしているかどうかを確認します。これにより、一元展開を使用して Office アドインを展開できます。
-ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284388"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362132"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -32,7 +32,7 @@ ms.locfileid: "42284388"
 一元展開は、Windows、Mac、iOS、Android、およびオンラインの Office アプリをサポートします。
 すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大12時間かかる場合があります。
   
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 アドインを一元展開するには、ユーザーが Office 365 ProPlus (組織 ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションの宛先ディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
 以下の Office および Exchange の特定の要件を確認することも、 [office 365 集中展開の互換性チェック](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)を使用することもできます。
@@ -77,7 +77,7 @@ Office 365 ProPlus を使用するには、ユーザーは Office 365 アカウ�
   
 ライセンス認証レポートを使用しない場合は、ユーザーが Word などの Office アプリケーションを自分のコンピューターで開くように求めることができます。次に、[**ファイル** \> **アカウント**] を選択します。 Under **Product Information**, you should see **Subscription Product** and **Microsoft Office 365 ProPlus**, as shown in the following image.
 
-![Office アプリケーションの製品情報](../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Office アプリケーションの製品情報](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
 Office 365 ProPlus のヘルプについては、「[Office 365 ProPlus でのトラブルシューティングのヒント](https://go.microsoft.com/fwlink/p/?linkid=846339)」を参照してください。
 
@@ -140,18 +140,18 @@ Invoke-CompatibilityCheck
    
 次の例では、Sandra、Sheila、「営業部門」のグループがアドインに割り当てられています。「西海岸営業部門」は入れ子のグループのため、Bert と Fred はアドインに割り当てられていません。
   
-![営業部門の図](../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![営業部門の図](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
    
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>グループにネストされたグループが含まれているかどうかを調べる
 
 グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの [宛先] フィールド**に**グループ名を入力し、解決時にグループ名を選択すると、ユーザーまたはネストしたグループが含まれている場合は、そのグループの名前が表示されます。 次の例では、「テスト グループ」での Outlook 情報先カードの [ **メンバー**] タブには、ユーザーはなく、2 つのサブ グループのみが表示されています。 
   
-![Outlook 連絡先カードの [メンバー] タブ](../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Outlook 連絡先カードの [メンバー] タブ](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
 反対のクエリを実行できます。グループを解決して、任意のグループのユーザーがいないかどうかを表示します。次の例では、「サブ グループ 1」が「テスト グループ」のメンバーである Outlook 情報先カードの [ **メンバーシップ**] タブの下に表示されます。 
   
-![Outlook 連絡先カードの [メンバーシップ] タブ](../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Outlook 連絡先カードの [メンバーシップ] タブ](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
 または、Azure Active Directory Graph API でクエリを実行して、グループ内でのグループ一覧を見つけます。詳細については、「[Operations on groups | Graph API reference (グループに対する操作 | Graph API リファレンス)](https://go.microsoft.com/fwlink/p/?linkid=846342)」を参照してください。
   

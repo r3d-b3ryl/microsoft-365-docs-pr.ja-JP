@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: モバイルデバイスから電子メールにアクセスする方法について説明します。
-ms.openlocfilehash: b50b6986fe44cb19119831774b4357c6efd543d9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255333"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362392"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイルデバイスから電子メールにアクセスするためのオプション
 
@@ -35,7 +35,7 @@ Outlook for Android および iOS 用の Outlook モバイルアプリは、職�
   
 組織では、企業のメール、予定表、および連絡先にアクセスするために、Outlook for Android または iOS モバイルアプリを使用する必要があります。 Android または Outlook for iOS の Outlook をダウンロードしてインストールすると、データの同期が開始されます。
   
-![Outlook を使用して電子メールを同期するメールの例](../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![Outlook を使用して電子メールを同期するメールの例](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
   
 詳細について[は、「iOS または Android 電話機用の outlook モバイルアプリを最適化](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890.aspx)する」をご覧ください。 問題が発生した場合は、 [iOS および Android 用の Outlook ヘルプセンター](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6.aspx)に移動します。 
   

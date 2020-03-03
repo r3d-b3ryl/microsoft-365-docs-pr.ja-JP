@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Azure Active Directory を使用して Office 365 サインインページをカスタマイズします。 サインインページには、イラスト、ロゴ、およびテキストを追加することができます。
-ms.openlocfilehash: 7db1271cd3d009bdbf1a26166f95a99d44087421
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 97d1d1c7dcb5a31395c98295a250913bb8ab69f5
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247883"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360648"
 ---
 # <a name="add-your-company-branding-to-office-365-sign-in-page"></a>会社のブランドを Office 365 サインイン ページに追加する
 
@@ -36,7 +36,7 @@ Office 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite、また�
   
 次の図は、Azure のどのサインイン ページを変更できるかを示しています。
   
-![カスタマイズできる Office 365 サインインページの領域。](../media/screenshotbranding.png)
+![カスタマイズできる Office 365 サインインページの領域。](../../media/screenshotbranding.png)
   
 1. 大きな図やその背景色
     

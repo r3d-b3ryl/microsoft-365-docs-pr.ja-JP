@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
-ms.openlocfilehash: 26b431a65035f2546bb44af2ecf31bfd327e53b6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f51c21261a83e1a0034a67f9f1580dd297a3d583
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255237"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362282"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 
@@ -135,7 +135,7 @@ Office 365 の [**グループ**] ページでは、 SharePoint Online および
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Exchange Online グループと SharePoint Online グループ
 
-ユーザー グループを作成して全員にメールを同時に送信できるようにする場合は、Exchange 管理センターで [**管理**] \> [**Exchange**] \> [**宛先**] \> [**グループ**] の順に移動します。 次に、[**新規**]、[![追加](../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)] の順に選択し、作成するグループの種類を選択します。 
+ユーザー グループを作成して全員にメールを同時に送信できるようにする場合は、Exchange 管理センターで [**管理**] \> [**Exchange**] \> [**宛先**] \> [**グループ**] の順に移動します。 次に、[**新規**]、[![追加](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)] の順に選択し、作成するグループの種類を選択します。 
   
 - **配布グループ**: メッセージをユーザー グループに配布するために使用します。 これは、*メールが有効な配布グループ* (Office 365 では*配布リスト*) とも呼ばれます。 詳細については、「[配布グループの管理](https://technet.microsoft.com/library/bb124513.aspx)」をご覧ください。
     

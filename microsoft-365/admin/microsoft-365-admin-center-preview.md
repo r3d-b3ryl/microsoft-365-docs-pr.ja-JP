@@ -18,12 +18,12 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 新しい Microsoft 365 管理センターについて説明します。
-ms.openlocfilehash: 1506dc63c2ba1e7e8926985b3c5e1cd7d6a11b52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257417"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361602"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>新しい Microsoft 365 管理センターについて
 
@@ -50,9 +50,9 @@ Microsoft 365 管理センターに新機能が追加された際は、管理者
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>新しい管理センターに切り替えと従来の管理センターへの切り替え
 
-- 管理者が新しい Microsoft 365 管理センターを利用できるようになったら、管理者は [ホーム] ページの上部にある [**新しい管理センターを試してみる**] の切り替えを選択することにより参加できます。 管理センターからサインアウトしても選択した設定が保存されるため、次回も新しい管理センターにサインインされます。 <br/><br/>![従来の管理センターでの新しい管理センター用の切り替え](media/admin-center-toggle-off.png) 
+- 管理者が新しい Microsoft 365 管理センターを利用できるようになったら、管理者は [ホーム] ページの上部にある [**新しい管理センターを試してみる**] の切り替えを選択することにより参加できます。 管理センターからサインアウトしても選択した設定が保存されるため、次回も新しい管理センターにサインインされます。 <br/><br/>![従来の管理センターでの新しい管理センター用の切り替え](../media/admin-center-toggle-off.png) 
   
-- 従来の管理センターに戻すには、 [ホーム] ページで切り替えを [**オフ**] にします。 <br/><br/>![オンになっている新しい管理センターの切り替え](media/admin-center-toggle-on.png)
+- 従来の管理センターに戻すには、 [ホーム] ページで切り替えを [**オフ**] にします。 <br/><br/>![オンになっている新しい管理センターの切り替え](../media/admin-center-toggle-on.png)
 
 新しい管理センターにサインインしている間は、各ページの下部にある [**ヘルプが必要ですか?**] ボタンの横にある [**フィードバックの送信**] を選択して、使い心地に関するご意見を Micorosoft にお寄せいただけます。 気に入った点や改善できると思われる点をぜひお知らせください。 また、全体的な印象や新しくリリースされた特定の機能に関するご意見を集めるための、ポップアップ ウィンドウでのアンケートがときどき表示されることがあります。 さらに、この記事の最後にある [**この情報は役に立ちましたか?**] を選択する方法でも、フィードバックを送信できます。
   

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: お客様の連絡先情報を検証して、ICANN 規制に準拠する方法について説明します。
-ms.openlocfilehash: 0c352dc2fcae1707f9f65cbb24659fbd0f525e07
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1173806aee452f8ca698702a67d3c89b575e6418
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248075"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361368"
 ---
 # <a name="icann-verification-of-contact-information"></a>連絡先情報の ICANN 検証
 
@@ -36,6 +36,6 @@ ms.locfileid: "42248075"
 
 この電子メールは、次のようになります。
 
-![電子メールの例](../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
+![電子メールの例](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
 
 

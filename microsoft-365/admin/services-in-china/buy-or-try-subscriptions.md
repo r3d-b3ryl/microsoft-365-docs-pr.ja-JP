@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: 中国で21Vianet が運用している既存の Office 365 アカウントに対して Office 365 サブスクリプションを試用または購入したり、サブスクリプションを追加したり、アドオンを入手したりする方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: b08a26752a5195208d562067ab8e26e4aa8cb2f8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0781430eaf2ccfeed7c31665029d514be9cc5f2e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247955"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360838"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365 のサブスクリプションを購入または試用する
 
@@ -48,11 +48,11 @@ ms.locfileid: "42247955"
 
 2. スタート ページが表示されていない場合は、左上隅の [ **Office 365**] を選びます。
 
-    ![Office 365 のスタート ページに移動するボタン](../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
+    ![Office 365 のスタート ページに移動するボタン](../../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
 
 3. ページ右上隅のナビゲーション バーにある [ **購入**] を選びます。
 
-    ![Office 365 試用版を購入するボタン](../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
+    ![Office 365 試用版を購入するボタン](../../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
 
 4. [ **サブスクリプションの購入**] ページには、購入可能なさまざまなプランが表示されます。 試用中のプランは、 **試用中**バナーで識別できます。
 

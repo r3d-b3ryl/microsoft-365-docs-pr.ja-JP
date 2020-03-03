@@ -19,36 +19,39 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73f76dee8a59229138f906e593a84220c7f70aee
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 73c4c9864713432d318b0b3cec9fbaf395deff45
+ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235216"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42374148"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
 **適用対象:**
 - Microsoft Threat Protection
 
-
-
 Microsoft Threat Protection は、Microsoft Defender Advanced Threat Protection (ATP)、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP の主要機能を統合することで、インシデント対応プロセスを統合します。 この統合されたエクスペリエンスにより、Microsoft 365 セキュリティ センターでアクセスできる強力な機能が追加されました。
 
-## <a name="check-license-eligibility-and-required-permissions"></a>ライセンスの利用資格と必要なアクセス許可を確認する
-Microsoft 365 E5、Microsoft 365 E5 セキュリティ、またはそれと同等のライセンスの組み合わせを使用しているお客様は、Microsoft の脅威保護を使用できます。 詳細については、[ライセンス要件を参照してください](prerequisites.md#licensing-requirements)。
+最適な保護を実現し、Microsoft の脅威保護を最適化するには、ネットワークにすべての該当するサポートされているサービスを展開することをお勧めします。 詳細については、「[サポートされるサービスの展開について](deploy-supported-services.md)」を参照してください。
 
-Microsoft の脅威保護を有効にするには、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)の**グローバル管理者**または**セキュリティ管理者**である必要があります。
+## <a name="check-license-eligibility-and-required-permissions"></a>ライセンスの利用資格と必要なアクセス許可を確認する
+Microsoft 365 E5、E5 セキュリティ、A5、または A5 セキュリティライセンス、あるいはライセンスの有効な組み合わせは、サポートされるサービスへのアクセスを提供し、Microsoft 365 セキュリティセンターで Microsoft の脅威保護を使用することができます。
+
+ライセンスの詳細については、[ライセンス要件を参照して](prerequisites.md#licensing-requirements)ください。
+
+### <a name="check-your-role"></a>役割を確認する
+Microsoft の脅威保護を有効にするには、Azure Active Directory の**グローバル管理者**または**セキュリティ管理者**である必要があります。 [Azure AD でのロールの表示](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>サービスの使用を開始する
 Microsoft の脅威保護は、さまざまな統合サービスからのデータを集約します。 データを一元的に処理および保存して、新しい洞察を識別し、集中管理された応答ワークフローを実現できるようにします。
 
-サービスを有効にする前に、Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com)) では、ナビゲーションウィンドウの [**インシデント**] および [**アクションセンター** ] オプションが表示されません。
+サービスを有効にする前に、「Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com))」では、[**インシデント**]、[**アクションセンター**]、または**** [ナビゲーション] ウィンドウから選択したときに microsoft Threat Protection のウェルカムページが表示されます。 これらのナビゲーションオプションは、Microsoft の脅威保護を使用する資格がない場合は表示されません。
 
-![Microsoft 365 セキュリティセンターのナビゲーションウィンドウのイメージ microsoft の脅威保護](../../media/mtp-off.png)
-機能のない microsoft*365 セキュリティセンターと microsoft の脅威保護がオフになっている*
+![Microsoft](../../media/mtp-welcome.png)
+*365 セキュリティセンター*の microsoft threat protection のウェルカムページに microsoft threat protection が有効になっていない場合に表示される、microsoft threat protection のウェルカムページの画像
 
-Microsoft の脅威保護を有効にするには、ナビゲーションウィンドウで [**設定**] を選択します。 [**[設定] ページ](https://security.microsoft.com/settings)** で、[ **Microsoft Threat Protection** > **オプトイン/オプトアウト**] に移動します。
+Microsoft の脅威保護を有効にするには、単にウェルカムページからプロセスを完了します。 ナビゲーションウィンドウで [**設定**] ([security.microsoft.com/settings](https://security.microsoft.com/settings)) にアクセスし、[ **microsoft threat protection**] を選択することによって、microsoft の脅威保護を有効にすることもできます。
 
 >[!NOTE]
 >ナビゲーションウィンドウに**設定**が表示されない場合や、ページにアクセスできなかった場合は、アクセス許可とライセンスを確認してください。
@@ -63,7 +66,7 @@ Microsoft Defender ATP が組織にプロビジョニングされている場合
 
 - [イベント管理](incidents-overview.md)
 - [自動化された調査と対応](mtp-autoir.md)を管理するアクション センター
-- 既存の [**捜索**] ページへの[高度な捜索](advanced-hunting-overview.md)機能
+- [高度な](advanced-hunting-overview.md)検索機能
 
 ![Microsoft 365 セキュリティセンターのナビゲーションウィンドウと microsoft の脅威保護機能](../../media/mtp-on.png)
 のイメージ microsoft*365 セキュリティセンターとインシデント管理およびその他の microsoft の脅威保護機能*
@@ -75,7 +78,7 @@ Azure ATP データを Microsoft Threat Protection と共有するには、Micro
 ## <a name="turn-off-microsoft-threat-protection"></a>Microsoft Threat Protection を無効にする
 Microsoft Threat Protection を使用しない場合、Microsoft 365 セキュリティ センターの [**設定**]  >  [**Microsoft Threat Protection**]  >  [**オプトイン/オプトアウト**] の順に移動します。 [**Microsoft Threat Protection を有効にする**] の選択を解除し、変更を保存します。
 
-データは完全に削除され、対応する機能は Microsoft 365 セキュリティセンターから削除されます。
+対応する機能は、Microsoft 365 セキュリティセンターから削除されます。
 
 ## <a name="get-assistance"></a>サポートを利用する
 
@@ -85,6 +88,7 @@ Microsoft サポートスタッフは、テナントのサービスおよび関�
 
 - [Microsoft Threat Protection の概要](microsoft-threat-protection.md)
 - [ライセンス要件およびその他の前提条件](prerequisites.md)
+- [サポートされているサービスを展開する](deploy-supported-services.md)
 - [Microsoft Defender ATP の概要](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Office 365 ATP の概要](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security の概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
