@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'ポリシー ヒントは、誰かがコンテンツを使用していて、それが DLP ポリシーと競合している場合に表示される通知または警告です。メール通知とポリシー ヒントを使用して、組織のポリシーに関する認識を高め、ユーザーの教育に役立てることができます。また、業務上の正当な理由がある場合や、ポリシーが誤検知した場合にブロックされないように、ユーザーにポリシーを上書きするオプションを提供することもできます。 '
-ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084045"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409582"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -50,7 +50,7 @@ Office 365 セキュリティ/コンプライアンス センターでは、DLP 
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>ユーザー通知を DLP ポリシーに追加する
 
-DLP ポリシーを作成すると、メール通知とポリシー ヒントはどちらも **[ユーザー通知]** セクションの一部になります。 
+DLP ポリシーを作成するときに、**ユーザー通知**を有効にすることができます。 有効にすると、Microsoft 365 は電子メール通知とポリシーヒントの両方を送信します。 通知メールを送信するユーザー、電子メールテキスト、ポリシーヒントテキストをカスタマイズできます。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
@@ -287,4 +287,4 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)

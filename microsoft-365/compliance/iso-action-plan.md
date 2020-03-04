@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 51f62b9d3828636c0d78e12a9c7bf0d7bed65ce8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 416961ff3b7bbb72636fd7ee0058d86953357195
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41587907"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400994"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -26,7 +26,7 @@ ms.locfileid: "41587907"
 
 ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装するための国際規格です。ISMS には、あらゆる種類の組織における情報資産セキュリティの信頼できる管理に必須とされる、使用される必要な方法と関連する証拠について記載されています。  
 
-この記事は、ISO/IEC 27001 の要件を満たすための取り組みで利用できる、優先順位付けされたアクション プランについて説明しています。このアクション プランは、法令遵守を専門とする Microsoft のパートナーである Protiviti と提携して作成されました。Microsoft Ignite でこのアクション プランを使用する方法については、Maithili Dandige (Microsoft) と Antonio Maio (Protiviti) によるセッション「[Microsoft 365 準拠のパスと情報保護戦略を図化する](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions)」に参加してご確認ください。
+この記事は、ISO/IEC 27001 の要件を満たすための取り組みで利用できる、優先順位付けされたアクション プランについて説明しています。このアクション プランは、法令遵守を専門とする Microsoft のパートナーである Protiviti と提携して作成されました。Microsoft Ignite でこのアクション プランを使用する方法については、Maithili Dandige (Microsoft) と Antonio Maio (Protiviti) によるセッション「[Microsoft 365 準拠のパスと情報保護戦略を図化する](https://myignite.techcommunity.microsoft.com/videos/65720)」に参加してご確認ください。
 
 ## <a name="action-plan-outcomes"></a>アクション プランの結果
 

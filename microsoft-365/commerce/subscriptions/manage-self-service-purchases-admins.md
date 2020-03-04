@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーによって作成されたセルフサービスの購入を管理する方法について説明します。
-ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080334"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409632"
 ---
-# <a name="manage-self-service-purchases-admin"></a>セルフサービス購入を管理する (管理者)
+# <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
 管理者は、組織内のユーザーによって作成されたセルフサービスの購入を表示できます。 セルフサービスの各購入について、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを確認できます。 組織に必要な場合は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 セルフサービス購入または一元的に購入した製品に対して、同じデータ管理とアクセスポリシーを使用できます。
 
@@ -76,7 +76,7 @@ ms.locfileid: "42080334"
 
 5. 手順6で参照するユーザーの一覧をエクスポートするには、「[セルフサービスで購入したサブスクリプションのライセンスを表示](#view-who-has-licenses-for-a-self-service-purchase-subscription)する」の手順を実行します。
 
-6. 他のサブスクリプションにライセンスを持つすべてのユーザーにライセンスを割り当てます。 詳細な手順については、「[ユーザーへのライセンスの割り当て](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)」を参照してください。
+6. 他のサブスクリプションにライセンスを持つすべてのユーザーにライセンスを割り当てます。 詳細な手順については、「[ユーザーへのライセンスの割り当て](../../admin/manage/assign-licenses-to-users.md)」を参照してください。
 
 7. セルフサービス購入サブスクリプションを購入したユーザーに連絡して、それを取り消すように依頼します。
 
@@ -84,4 +84,4 @@ ms.locfileid: "42080334"
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 
-ご質問がある場合やセルフサービス購入に関するヘルプが必要な場合は、[サポートにお問い合わせください](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+ご質問がある場合やセルフサービス購入に関するヘルプが必要な場合は、[サポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。

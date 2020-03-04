@@ -1,5 +1,5 @@
 ---
-title: 請求書を把握する
+title: 請求書の内容を理解する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Microsoft business 製品の請求書を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: bf6f26b2f3bbeb3ac22273eca98b223383b88924
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594698"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409712"
 ---
-# <a name="understand-your-invoice"></a>請求書を把握する
+# <a name="understand-your-invoice"></a>請求書の内容を理解する
 
 請求書には、お客様の請求書の概要と支払い方法が記載されています。 [オンライン請求書](#view-your-online-invoice)は、Microsoft 365 管理センターで確認できます。 また、電子メールで送信するために、ポータブルドキュメント形式 (.pdf) でダウンロードすることもできます。
 
-Office 365 サブスクリプションのみを使用している場合は、「 [View your invoice For office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice)」を参照してください。
+Office 365 サブスクリプションのみを使用している場合は、「 [View your invoice For office 365 for business](view-your-bill-or-invoice.md)」を参照してください。
 
 ## <a name="understand-the-invoice-header"></a>請求書ヘッダーについて
 
@@ -102,14 +102,14 @@ Office 365 サブスクリプションのみを使用している場合は、「
 
 ### <a name="to-view-your-online-invoice"></a>オンライン請求書を表示するには
 
-1. 管理センターで、[**課金請求書** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。
 
 2. 請求書の .pdf バージョンをダウンロードするには、表示する請求書の行にある [**請求書の pdf をダウンロード**する] を選択します。
 
 3. オンライン請求書を表示するには、リストから請求書を選択します。 [請求書の詳細] ページから .pdf をダウンロードすることもできます。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合わせください。
+## <a name="need-help-contact-support"></a>ヘルプが必要な場合 サポートにお問い合わせください。
 
 ご質問がある場合や Azure クレジットについてサポートが必要な場合は、 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">azure サポートを使用してサポートリクエストを作成</a>してください。
 
-Microsoft 365 管理センターで、請求書に関する質問がある場合や、サポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+Microsoft 365 管理センターで、請求書に関する質問がある場合や、サポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。

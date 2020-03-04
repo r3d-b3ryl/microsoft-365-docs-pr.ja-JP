@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Microsoft 365 管理センターで支払い方法を管理する方法について説明します。
-ms.openlocfilehash: 894b1cbf9033521c6978f54d0483fe61c3d6114d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354938"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409702"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>お支払い方法を追加、更新、削除する
 

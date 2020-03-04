@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 E3 から、ビジネスを Microsoft 365 Business に移行する方法について説明します。
-ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065581"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409682"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Office 365 E3 から Microsoft 365 Business への移行 
 
@@ -38,27 +38,27 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 
 次の表は、Microsoft 365 Business と Office 365 E3 の違いを示しています。
 
-| 機能   | Microsoft 365 Business でのサポート | Office 365 E3 のサポート | 
+| 機能    | Microsoft 365 Business でのサポート    | Office 365 E3 のサポート | 
 |:-------|:-----|:-----|
-| **社内**       | | | 
-| Office アプリ<sup>1</sup>   | Office 365 Business   | Office 365 ProPlus | 
-| **クラウド生産性アプリ**       | | | 
-| Exchange Online および Outlook   | メールボックスごとに 50 GB の格納域の制限と無制限の Exchange Online アーカイブ   | メールボックスごとに 100 GB の格納域の制限と無制限の Exchange Online アーカイブ | 
-| Teams | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
-| OneDrive for Business | ユーザーごとに 1 TB のストレージ制限   | 無制限 | 
-| Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
-| StaffHub  | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
-| Outlook カスタマーマネージャー、ミル Eiq  | ![Microsoft 365 Business に含まれている](../media/check-mark.png)  | | 
-| **脅威保護**     | | | 
-| Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](../media/check-mark.png) | 含まれていませんが、に追加できます。 | 
-| **ID 管理**       | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|    ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  | 
-| **デバイスとアプリの管理**     | | |
-| Microsoft Intune、Windows 自動操縦|  ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  |
-| 共有コンピューターのライセンス認証|   ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png)| 
+| **社内**        | | | 
+| Office アプリ<sup>1</sup>    | Office 365 Business    | Office 365 ProPlus | 
+| **クラウド生産性アプリ**        | | | 
+| Exchange Online および Outlook    | メールボックスごとに 50 GB の格納域の制限と無制限の Exchange Online アーカイブ    | メールボックスごとに 100 GB の格納域の制限と無制限の Exchange Online アーカイブ | 
+| Teams    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
+| OneDrive for Business    | ユーザーごとに 1 TB のストレージ制限    | 無制限 | 
+| Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
+| StaffHub    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
+| Outlook カスタマーマネージャー、ミル Eiq    | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | | 
+| **脅威保護**        | | | 
+| Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
+| **ID 管理**        | | | 
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  | 
+| **デバイスとアプリの管理**        | | |
+| Microsoft Intune、Windows 自動操縦|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  |
+| 共有コンピューターのライセンス認証|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png)| 
 | Win 7/8.1 Pro ライセンスから Windows 10 Pro へのアップグレード権限|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    || 
 | **情報保護**        | | |
-|Office 365 データ損失防止|   ![Microsoft 365 Business に含まれている](../media/check-mark.png)|![Office 365 E3 に含まれている](../media/check-mark.png)|
+|Office 365 データ損失防止|    ![Microsoft 365 Business に含まれている](../media/check-mark.png)|![Office 365 E3 に含まれている](../media/check-mark.png)|
 |Azure Information Protection プラン1、Bitlocker 強制|![Microsoft 365 Business に含まれている](../media/check-mark.png)||
 |Azure Information Protection プラン1、機密ラベル|![Microsoft 365 Business に含まれている](../media/check-mark.png)||
 |**クライアントアクセスライセンス (CAL 権限)**|||
@@ -68,7 +68,7 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 
 ## <a name="migration"></a>移行
 
-サブスクリプションを移行するには、「[別のプランに手動で切り替える](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually)」を参照してください。一部のユーザーのみを Microsoft 365 Business に移動する場合は、手順を実行してください。 [すべてのユーザーを自動的にアップグレード](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)したり、パートナーと協力して、E3 サブスクリプションとライセンスを Microsoft 365 Business サブスクリプションに移行したりすることもできます。
+サブスクリプションを移行するには、「[プランを手動で変更](../commerce/subscriptions/change-plans-manually.md)する」を参照してください。一部のユーザーのみを Microsoft 365 Business に移動する場合は、手順を実行してください。 また、[すべてのユーザーを自動的にアップグレード](../commerce/subscriptions/upgrade-to-different-plan.md)したり、パートナーと協力して、E3 サブスクリプションとライセンスを Microsoft 365 Business サブスクリプションに移行したりすることもできます。
 次のセクションでは、移行後に行う必要のある変更点について説明します。
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 サブスクリプションの構成とデータ

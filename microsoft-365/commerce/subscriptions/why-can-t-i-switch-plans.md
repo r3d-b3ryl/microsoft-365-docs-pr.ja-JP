@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: スイッチプランを手動で実行するか、サポートに連絡することになる理由について理解します。
-ms.openlocfilehash: d7c076a5ce003f7d5ce5317f4330857e632e53ad
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a78ce8614dcc7382543bfda5bdfdfb025b6e5077
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243146"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409622"
 ---
 # <a name="why-cant-i-switch-office-365-for-business-plans"></a>なぜ一般法人向け Office 365 プランに切り替えられないのでしょうか?
 
@@ -41,12 +41,12 @@ ms.locfileid: "42243146"
   
 ::: moniker range="o365-worldwide"
 
- **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md) | の購入サブスクリプション | [サブスクリプションと課金](../subscriptions-and-billing.md) | [通話のサポート](../../admin/contact-support-for-business-products.md)を[解約する](cancel-your-subscription.md)
+ **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md) | の購入サブスクリプション | [サブスクリプションと課金](../index.yml) | [通話のサポート](../../admin/contact-support-for-business-products.md)を[解約する](cancel-your-subscription.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md) | の購入サブスクリプション | [サブスクリプションと課金](../subscriptions-and-billing.md) | [通話のサポート](../../admin/contact-support-for-business-products.md)を[解約する](cancel-your-subscription.md)
+ **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md) | の購入サブスクリプション | [サブスクリプションと課金](../index.yml) | [通話のサポート](../../admin/contact-support-for-business-products.md)を[解約する](cancel-your-subscription.md)
 
 ::: moniker-end
 

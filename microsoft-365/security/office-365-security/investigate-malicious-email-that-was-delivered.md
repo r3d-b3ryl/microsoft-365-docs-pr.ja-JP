@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 5fe9e06a582d72b46c4f90f13aee283050a06253
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1cb7c418e9c4ae5f2223748d512e8718f81b010c
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088722"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409752"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査および修復する
 
@@ -32,7 +32,7 @@ ms.locfileid: "42088722"
 
 次の要件が満たされていることを確認してください。
   
-- 組織では、 [Office 365 Advanced Threat Protection](office-365-atp.md)と[ライセンスがユーザーに割り当てら](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)れています。
+- 組織では、 [Office 365 Advanced Threat Protection](office-365-atp.md)と[ライセンスがユーザーに割り当てら](../../admin/manage/assign-licenses-to-users.md)れています。
     
 - [Office 365 監査ログ](../../compliance/turn-audit-log-search-on-or-off.md)は、組織に対して有効になっています。 
     
@@ -48,7 +48,7 @@ ms.locfileid: "42088722"
 |---------|---------|---------|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |Office 365 グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | いいえ   |
 |脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |Office 365 グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       いいえ  |
-|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |Office 365 グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> プレビュー   |   はい      |
+|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |Office 365 グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> プレビュー   |   必要      |
 
 > [!NOTE]
 > *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 Office 365 のグローバル管理者の役割には、Microsoft 365 管理[https://admin.microsoft.com](https://admin.microsoft.com)センター () が割り当てられており、セキュリティ管理者およびセキュリティリーダーの役割が Office 365[https://protection.office.com](https://protection.office.com)Security & コンプライアンスセンター () に割り当てられます。 役割とアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。

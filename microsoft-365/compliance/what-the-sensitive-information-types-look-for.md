@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 368ccef9e5213a7494140d2c305ddafe1e0c3f79
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084336"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409512"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
@@ -366,7 +366,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -500,7 +500,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1054,7 +1054,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1122,7 +1122,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1182,7 +1182,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1220,7 +1220,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Legal entity 
 - Legal entities 
 - Registration Status 
-- ビジネス 
+- Business 
 - Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
@@ -1258,7 +1258,7 @@ Registro de 識別子 Dade (RIC) (新しい形式):
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1781,7 +1781,7 @@ Keyword_canada_phin または Keyword_canada_provinces から少なくとも2つ
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1864,7 +1864,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1923,7 +1923,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1968,7 +1968,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>Format
 
-書式設定または書式設定ができない16桁の数字 (dddddddddddddddd)。 Luhn テストに合格する必要があります。
+書式設定または書式設定なし (dddddddddddddddd) で、Luhn テストに合格する必要がある14から16桁の数字。
 
 ### <a name="pattern"></a>パターン
 
@@ -2260,7 +2260,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2323,7 +2323,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2360,7 +2360,7 @@ Keyword_czech_id_card からのキーワードが見つかりました。
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2402,7 +2402,7 @@ Keyword_denmark_id からのキーワードが見つかりました。
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2436,7 +2436,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2809,7 +2809,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2993,12 +2993,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 次のいずれかのパターンに一致する:
 - 13桁の数字の後にスペースを続け、2桁の数字<br/>
-または
+or
 - 15 桁の連続する数字
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3075,7 +3075,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3216,7 +3216,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3395,7 +3395,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3477,7 +3477,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3520,7 +3520,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3622,7 +3622,7 @@ ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3813,7 +3813,7 @@ Dictionary_icd_9_codes キーワードディクショナリの任意の用語。
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3921,7 +3921,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4430,7 +4430,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4475,7 +4475,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4520,7 +4520,7 @@ Keyword_nz_terms
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4613,7 +4613,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4656,7 +4656,7 @@ Keyword_polish_national_id_passport_number のキーワードを検出した。
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4695,7 +4695,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4821,7 +4821,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4877,7 +4877,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4922,7 +4922,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4975,7 +4975,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5088,7 +5088,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5264,7 +5264,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5412,7 +5412,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5459,7 +5459,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5509,7 +5509,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5607,7 +5607,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -6165,4 +6165,3 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 秒# 
 - SSID 
    
-

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのための Microsoft 365 のステップバイステップのサインアップ。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
-ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080531"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409662"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンのための Microsoft 365 へのサインアップ 
 
@@ -84,13 +84,10 @@ Office 365 for business (Office 365 Business Premium など) への既存のサ�
 4. **どのように表示されますか。** ユーザーの数を入力し、[**次へ**] をクリックします。 プロモーションコードは、招待 URL に既に含まれているため、ここで入力する必要はありません。
 5. [**支払い方法]** ページで、お支払い方法を入力し、[**注文**] を選択します。
 
-これらの手順を完了すると、[新しいライセンス](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)をキャンペーンスタッフに割り当てる準備が整います。 
+これらの手順を完了すると、[新しいライセンス](../admin/manage/assign-licenses-to-users.md)をキャンペーンスタッフに割り当てる準備が整います。
 
 
 ## <a name="whats-next"></a>次の作業
 - Microsoft [365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)をセットアップして、microsoft 365 を設定します。 
 - プランに[ユーザーを追加](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)します。 キャンペーンの候補、すべてのシニアキャンペーンスタッフ、および重要なキャンペーンや関係者の情報にアクセスできるユーザーを含めます。
 - [キャンペーンの強化](m365-campaigns-security-overview.md)
-
-
-

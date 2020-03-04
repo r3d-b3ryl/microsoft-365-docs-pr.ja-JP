@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: 2e84e1d0631403a1f5a40f80886bdae46ada166b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: cee2be9f4d1a0029e48f7c83619bafd00c42c044
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353088"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409472"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -78,19 +78,19 @@ ms.locfileid: "42353088"
 |**Users** <br/> |従業員や学生など、組織内のユーザーを作成して管理します。 アクセス許可レベルを設定することも、そのパスワードをリセットすることもできます。  <br/> |
 |**Groups** <br/> |Office 365 グループ、配布グループ、セキュリティ グループ、または共有メールボックスなど、組織内のグループを作成して管理します。 グループを[作成](../create-groups/create-groups.md)して[管理](../create-groups/manage-groups.md)する方法については、こちらを参照してください。  <br/> |
 |**リソース** <br/> |SharePoint サイト コレクションなどのリソースを作成して管理します。 サイト コレクションを作成する方法については、[こちら](https://support.office.com/article/3a3d7ab9-5d21-41f1-b4bd-5200071dd539.aspx)を参照してください。  <br/> |
-|**支払い** <br/> |組織のサブスクリプションの表示、購入、キャンセルを行います。 過去の請求書を確認したり、個別のユーザーに割り当て済みのライセンス数を確認したりすることもできます。 請求の管理方法については、[こちら](../../commerce/subscriptions-and-billing.md)を参照してください。  <br/> |
+|**支払い** <br/> |組織のサブスクリプションの表示、購入、キャンセルを行います。 過去の請求書を確認したり、個別のユーザーに割り当て済みのライセンス数を確認したりすることもできます。 請求の管理方法については、[こちら](../../commerce/index.yml)を参照してください。  <br/> |
 |**サポート** <br/> | 既存のサービス リクエストを表示するか、新しく作成します。 詳細については、「[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../contact-support-for-business-products.md)」を参照してください。 |
 |[**設定**] <br/> |メール、サイト、および Office スイートなどのアプリのグローバル設定を管理します。 パスワード ポリシーと有効期限を変更します。 contoso.com などのドメイン名を追加して更新します。 組織プロファイルとリリース設定を変更します。 また、パートナーが管理センターにアクセスできるかどうかを選択します。  <br/> |
 |**セットアップ** <br/> |既存のドメインの管理、多要素認証の有効化と管理、管理者のアクセス権の管理、Office 365 へのユーザー メールボックスの移行、機能の更新プログラムの管理を行ったり、ユーザーによる Office アプリのインストールを支援したりします。 |
 |**レポート** <br/> |電子メールの使用や Office ライセンス認証数などに関する詳細レポートでは、組織で Office 365 がどのように使われているかが一目でわかります。新しいアクティビティ レポートの使用方法については、[こちら](../activity-reports/activity-reports.md)を参照してください。  <br/> |
 |**正常性** <br/> |サービスの正常性がひとめでわかるように表示されます。 また、詳細やサービスの正常性の履歴を確認することもできます。 「[サービスの正常性の確認方法](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0)」を参照してください。  <br/> 機能やサービスの今後の変更を確認するには、メッセージ センターを使用します。 そこには、変更の予定とその変更がユーザーにどのような影響を与えるかを理解するための情報を含む、お知らせが投稿されます。 詳細については、「[Office 365 のメッセージ センター](../manage/message-center.md)」を参照してください。  <br/> |
-|**管理センター** <br/> |Exchange、Skype for Business、SharePoint、Yammer、Azure AD の管理センターを個別に開きます。 各管理センターには、そのサービスで利用可能なすべての設定が含まれます。  <br/> たとえば、Exchange 管理センターでは、メール、予定表、配布グループなどのセットアップと管理を行います。SharePoint 管理センターでは、サイト コレクション、サイト設定、OneDrive for Business の作成と管理を行います。Skype for Business 管理センターでは、インスタント メッセージ通知、ダイヤルイン会議、オンライン プレゼンスのセットアップを行います。  <br/> [Exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkID=271807)および [SharePoint 管理センター](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a.aspx)について学びましょう。<br/> **注:** 利用できる管理センターは、プランと地域によって異なります。           |
+|**管理センター** <br/> |Exchange、Skype for Business、SharePoint、Yammer、Azure AD の管理センターを個別に開きます。 各管理センターには、そのサービスで利用可能なすべての設定が含まれます。  <br/> たとえば、Exchange 管理センターでは、メール、予定表、配布グループなどのセットアップと管理を行います。SharePoint 管理センターでは、サイト コレクション、サイト設定、OneDrive for Business の作成と管理を行います。Skype for Business 管理センターでは、インスタント メッセージ通知、ダイヤルイン会議、オンライン プレゼンスのセットアップを行います。  <br/> [Exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkID=271807)および [SharePoint 管理センター](https://docs.microsoft.com/sharepoint/sharepoint-online)について学びましょう。<br/> **注:** 利用できる管理センターは、プランと地域によって異なります。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理センターの一般的なタスク
 
 - ユーザーの管理:[ユーザーを個別に追加する](../add-users/add-users.md)、[ユーザーを削除または復元する](../add-users/delete-a-user.md)、または [ユーザーのパスワードをリセットする](../add-users/reset-passwords.md)。
 
-- 請求書に関するヘルプ: [課金](../../commerce/subscriptions-and-billing.md)
+- 請求書に関するヘルプ: [課金](../../commerce/index.yml)
 
 - アクティビティ レポートの表示: [アクティビティ レポート](../activity-reports/activity-reports.md)
 

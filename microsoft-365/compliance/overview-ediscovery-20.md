@@ -16,16 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の高度な電子情報開示の新バージョンについて説明します。
-ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071058"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400950"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションの概要
 
 Microsoft 365 の高度な電子情報開示ソリューションは、Office 365 の既存の電子情報開示および分析機能に基づいて構築されています。 *Advanced eDiscovery*と呼ばれるこの新しいソリューションは、組織の内部および外部の調査に応答するコンテンツを保持、収集、確認、分析、およびエクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務部門は法的情報保留通知ワークフロー全体を管理して、ケースに関与する保管担当者と通信することもできます。 
+
+> [!NOTE]
+> 上級電子情報開示には、Office 365 または Microsoft 365 E5 Enterprise サブスクリプションが必要です。 高度な電子情報開示ライセンスの詳細については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)」を参照してください。
 
 ## <a name="alignment-with-edrm"></a>EDRM を使用した配置
 

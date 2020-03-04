@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 一般法人向け Office 365 の請求先住所を更新する方法について説明します。課金通知を受け取るために使用するメール アドレスを更新することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: 8cf7a8a8ac3414e8c40a1642b33e36f9b5cdf1a9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354758"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409642"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>一般法人向け Office 365 の請求先住所を変更する
 
@@ -195,5 +195,4 @@ ms.locfileid: "42354758"
 
 [サブスクリプションの代金を支払う](pay-for-your-subscription.md)
 
-[サブスクリプションと課金 - 管理者向けヘルプ](../subscriptions-and-billing.md)
-
+[サブスクリプションと課金 - 管理者向けヘルプ](../index.yml)
