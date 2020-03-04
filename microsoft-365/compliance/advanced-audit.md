@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Microsoft 365 の高度な監査は、新しい監査機能を提供し、組織におけるフォレンシックおよびコンプライアンスの調査を支援します。
-ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
+ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280167"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370486"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
-Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 Microsoft 365 の高度な監査のリリースにより、組織におけるフォレンシックおよびコンプライアンスの調査を支援できる新しい監査機能が追加されました。
+Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 Microsoft 365 の高度な監査のリリースにより、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能が追加されました。
 
 > [!NOTE]
 > 高度な監査は、Office 365 または Microsoft 365 Enterprise E5 サブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン サブスクリプションは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。
@@ -35,7 +35,7 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 ## <a name="long-term-retention-of-audit-logs"></a>監査ログの長期保持
 
-高度な監査は、Exchange、SharePoint、および Azure Active Directory の監査レコードを 1 年間保持します。 これは、アクティビティが発生したサービスを示す**ワークロード** プロパティの**Exchange**、**SharePoint**、または **AzureActiveDirectory** の値を含む任意の監査レコードを 1 年間保持する既定の監査ログの保持ポリシーによって実現されます。 これは、フォレンシックまたはコンプライアンスに関する継続的な調査に役立ちます。 詳細については、「監査ログの保持ポリシーの管理」の「[既定の監査ログの保持ポリシー](audit-log-retention-policies.md#default-audit-log-retention-policy)」セクションを参照してください。
+高度な監査では、Exchange、SharePoint、および Azure Active Directory の監査レコードが 1 年間保持されます。 これは、アクティビティが発生したサービスを示す**ワークロード** プロパティの**Exchange**、**SharePoint**、または **AzureActiveDirectory** の値を含む任意の監査レコードを 1 年間保持する既定の監査ログの保持ポリシーによって実現されます。 これは、フォレンシックまたはコンプライアンスに関する継続的な調査に役立ちます。 詳細については、「監査ログの保持ポリシーの管理」の「[既定の監査ログの保持ポリシー](audit-log-retention-policies.md#default-audit-log-retention-policy)」セクションを参照してください。
 
 ## <a name="audit-log-retention-policies"></a>監査ログの保持ポリシー
 
@@ -61,7 +61,7 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 - MessageBind アクションによって、同じメール メッセージにアクセスしたときに複数の監査レコードが作成され、「ノイズ」が監査されます。 一方、MailItemsAccessed イベントは、少数の監査レコードに集約されます。
 
-メールボックスの監査ログインの詳細については、「[メールボックスの監査を管理する](enable-mailbox-auditing.md)」を参照してください。
+MailItemsAccessed アクティビティの監査レコードの詳細については、「[高度な監査を使用して、侵害されたアカウントを調査する](mailitemsaccessed-forensics-investigations.md)」を参照してください。
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>MailItemsAccessed 監査レコードを検索する
 
@@ -75,7 +75,7 @@ Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations MailItemsAcce
 
 Office 365 管理アクティビティ API を使用して監査ログにアクセスする組織は、発行者レベルの調整制限により制限されていました。 つまり、発行者が複数のお客様に代わってデータをプルする場合、制限はそれらすべてのお客様で共有されていました。
 
-高度な監査のリリースにより、発行者レベルの制限からテナント レベルの制限に移行しています。 その結果、各組織は、監査データにアクセスするために独自に完全に割り当てられた帯域幅を取得します。 帯域幅は静的な定義済みの制限ではありませんが、組織内のシート数などの要因の組み合わせでモデル化され、E5 組織は E5 以外よりも多くの帯域幅を利用できます。
+高度な監査のリリースにより、発行者レベルの制限からテナント レベルの制限に移行します。 その結果、各組織は、監査データにアクセスするために独自に完全に割り当てられた帯域幅を取得します。 帯域幅は静的な定義済みの制限ではありませんが、組織内のシート数などの要因の組み合わせでモデル化され、E5 組織は E5 以外よりも多くの帯域幅を利用できます。
 
 すべての組織には、最初に 1 分あたり 2,000 件の要求のベースラインが割り当てられます。 この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 E5 組織は、E5 以外の組織の約 2 倍の帯域幅を利用できます。 また、サービスの正常性を保護するために、最大帯域幅の上限も設定されます。
 
