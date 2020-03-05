@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Office 365 for Business、Microsoft 365 試用版 または有料版サブスクリプションをキャンセルする方法について説明します。
-ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354598"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415652"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -88,6 +88,19 @@ ms.locfileid: "42354598"
 
 ::: moniker-end
 
+## <a name="what-happens-when-you-cancel-a-subscription"></a>サブスクリプションをキャンセルしたときの処理
+
+用語が終了する前にサブスクリプションを取り消すと、サブスクリプションは直接無効の状態になります。 ほとんどのサブスクリプションで、ほとんどの国と地域では、無効にされた状態は90日に続きます。 管理者は、サブスクリプションが無効な状態にあっても、その組織のデータにアクセスしてバックアップすることができますが、管理者はサブスクリプションをキャンセルする前にデータをバックアップすることをお勧めします。特に、サブスクリプションのみの場合は、その[データをバックアップ](back-up-data-before-switching-plans.md)することをお勧めします。 残されたデータは90日後に削除されることがあり、キャンセル後、180日後に削除されます。
+
+### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合に想定される動作
+  
+- **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。 
+    
+- **ユーザーアクセス**ユーザーは、OneDrive for business などのサービスを使用したり、チームサイトの電子メールやドキュメントなどの顧客データにアクセスしたりすることはできません。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
+    
+ **重要** 一般的な無効期間が終了する前にサブスクリプション データを削除する場合は、プロビジョニングの優先解除を依頼できます。 プロビジョニングの優先解除をリクエストすると、キャンセルから 3 日以内にサブスクリプション データが削除されます。 プロビジョニングの優先解除を利用する場合は、[サポートに連絡してください](../../admin/contact-support-for-business-products.md)。
+  
+詳細については、「[サブスクリプションが終了したときにデータとアクセスがどうなるか](what-if-my-subscription-expires.md)」を参照してください。
 
 ## <a name="other-steps-you-might-have-to-take"></a>必要になる可能性のあるその他の手順
 
@@ -132,5 +145,3 @@ ms.locfileid: "42354598"
 [サブスクリプションを更新する](renew-your-subscription.md)
 
 [サブスクリプションを再度有効にする](reactivate-your-subscription.md)
-
-[別のプランまたはサブスクリプションに切り替える](switch-to-a-different-plan.md)

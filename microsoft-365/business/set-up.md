@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business をセットアップする
+title: Microsoft 365 Business のセットアップ
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,17 +23,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: c370a5b3fd735e704eea56ac1079bb2e5dad4c4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: ドメインとユーザーの追加、セキュリティポリシーの設定など、Microsoft 365 Business のセットアップ手順について説明します。
+ms.openlocfilehash: 4535a32b579b91b6c2bb0e64ec95904be6c08fce
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594271"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417298"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>セットアップウィザードで Microsoft 365 Business をセットアップする
 
@@ -41,11 +42,11 @@ Microsoft 365 Business のセットアップの概要については、このビ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザーを追加し、ポリシーをセットアップする
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Microsoft 365 Business を購入する場合は、所有しているドメインを使用するか、[サインアップ](sign-up.md)中に購入するかを選択できます。
 
@@ -57,7 +58,7 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 
 2. [**セットアップに移動**] を選択してウィザードを開始します。
 
-    ![[セットアップに移動] を選択します。](media/gotosetupinadmincenter.png)
+    ![[セットアップに移動] を選択します。](../media/gotosetupinadmincenter.png)
 
 3. [ **Office アプリのインストール**] ページで、必要に応じて、自分のコンピューターにアプリをインストールすることもできます。
     
@@ -66,14 +67,14 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
     > [!IMPORTANT]
     > サインアップ中にドメインを購入した場合は、ここに [**ドメインの追加**] 手順は表示されません。 代わりに、[[ユーザーの追加](#add-users-and-assign-licenses)] に移動します。
 
-    ![[サインインのカスタマイズ] ページのスクリーンショット。](media/adddomain.png)
+    ![[サインインのカスタマイズ] ページのスクリーンショット。](../media/adddomain.png)
 
     
 4. ウィザードの手順に従って、ドメインを所有していることを確認する[Office 365 用の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)します。 ドメインホストがわかっている場合は、「[ホスト固有の指示](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)」も参照してください。
 
     ホスティングプロバイダーが GoDaddy、または[ドメイン接続](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)を使用して他のホストが有効になっている場合、このプロセスは簡単であり、サインインして Microsoft に代わって認証を行うように自動的に求められます。
 
-    ![[GoDaddy のアクセス確認] ページで、[承認] を選択します。](media/godaddyauth.png)
+    ![[GoDaddy のアクセス確認] ページで、[承認] を選択します。](../media/godaddyauth.png)
 
 ### <a name="add-users-and-assign-licenses"></a>ユーザーを追加して、ライセンスを割り当てる
 
@@ -83,7 +84,7 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 
 ウィザードで追加したユーザーには、Microsoft 365 のビジネスライセンスが自動的に割り当てられます。
 
-![ウィザードの [新しいユーザーの追加] ページのスクリーンショット](media/addnewuserspage.png)
+![ウィザードの [新しいユーザーの追加] ページのスクリーンショット](../media/addnewuserspage.png)
 
 1. Microsoft 365 Business サブスクリプションに既存のユーザーが存在する場合 (たとえば、Azure AD Connect を使用した場合)、すぐにライセンスを割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
 
@@ -101,7 +102,7 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
     - 既存の DNS レコード (既存の web サイトなど) があるが、DNS ホストが[ドメイン接続](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)に対して有効になっている場合は、[**レコードの追加**] を選択します。 [**オンラインサービスの選択**] ページで、すべての既定値をそのまま使用し、[**次へ**] を選択して、DNS ホストのページで [**承認**] を選択します。
     - 他の DNS ホスト (ドメイン接続に対して有効になっていません) に既存の dns レコードがある場合は、独自の DNS レコードを管理して、既存のサービスが常に接続していることを確認する必要があります。 詳細については、「[ドメインの基礎](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)」を参照してください。
 
-        ![レコードのアクティブ化ページ。](media/activaterecords.png)
+        ![レコードのアクティブ化ページ。](../media/activaterecords.png)
 
 2. ウィザードの手順を実行すると、電子メールとその他のサービスが設定されます。
 
@@ -111,14 +112,14 @@ Microsoft 365 Business を購入する場合は、所有しているドメイン
 
 1. **高度なサイバー脅威からの保護を強化**するには、office [365 の事前の脅威保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)で office アプリのファイルとリンクをスキャンできるように、既定値をそのまま使用することをお勧めします。
 
-    ![保護ページの拡大のスクリーンショット。](media/increasetreatprotection.png)
+    ![保護ページの拡大のスクリーンショット。](../media/increasetreatprotection.png)
 
 
 2. [**機密データのリークを防止**する] ページで、既定値をそのまま使用して Office 365 データ損失防止 (DLP) を有効にし、office アプリの機密データを追跡し、誤って組織外で共有されないようにします。
 
 3. [ **Office for mobile のデータを保護**する] ページで、[モバイルアプリの管理] を選択したまま、設定を展開して確認し、[**モバイルアプリ管理ポリシーの作成**] を選択します。
 
-    ![[Office for mobile のデータを保護する] ページのスクリーンショット](media/protectdatainmobile.png)
+    ![[Office for mobile のデータを保護する] ページのスクリーンショット](../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Windows 10 Pc をセキュリティで保護する
