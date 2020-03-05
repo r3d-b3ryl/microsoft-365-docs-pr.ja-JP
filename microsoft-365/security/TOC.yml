@@ -55,6 +55,8 @@
               href: ./mtp/troubleshoot.md
         - name: 使い方ガイド
           items:
+            - name: サポートされるサービスを展開する
+              href: mtp/deploy-supported-services.md
             - name: Microsoft Threat Protection を有効にする
               href: mtp/mtp-enable.md
             - name: インシデント
@@ -83,8 +85,6 @@
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 高度な検出
               items:
-                - name: Microsoft 365 での検出
-                  href: mtp/hunting.md
                 - name: 高度な検出の概要
                   href: mtp/advanced-hunting-overview.md
                 - name: クエリ言語の説明
