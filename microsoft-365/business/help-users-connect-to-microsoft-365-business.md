@@ -1,5 +1,7 @@
 ---
 title: ユーザーが Microsoft 365 Business に接続できるようにする
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -18,27 +20,28 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: ビジネスクラウドスイートのセットアップが完了した後に期待することについて説明します。
-ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+description: ビジネスクラウドスイートのセットアップが完了し、既定のデバイスポリシーが設定されており、適用できる状態になった後に予想される処理について説明します。
+ms.openlocfilehash: 7ec5a5e7e1f3fadbcdb8422ae041544436c185ed
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320190"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547693"
 ---
-# <a name="help-users-connect-to-microsoft-365-business"></a><span data-ttu-id="f5169-103">ユーザーが Microsoft 365 Business に接続できるようにする</span><span class="sxs-lookup"><span data-stu-id="f5169-103">Help users connect to Microsoft 365 Business</span></span>
+# <a name="help-users-connect-to-microsoft-365-business"></a><span data-ttu-id="b69da-103">ユーザーが Microsoft 365 Business に接続できるようにする</span><span class="sxs-lookup"><span data-stu-id="b69da-103">Help users connect to Microsoft 365 Business</span></span>
 
-<span data-ttu-id="f5169-104">セットアップが完了すると、既定のデバイスポリシーが設定され、適用できる状態になります。</span><span class="sxs-lookup"><span data-stu-id="f5169-104">After you complete setup, your default device policies are in place and ready to apply.</span></span> <span data-ttu-id="f5169-105">モバイルデバイスでは、ユーザーが Office アプリをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="f5169-105">On mobile devices, users download Office apps.</span></span> <span data-ttu-id="f5169-106">ユーザーが職場または学校のアカウントでサインインすると、ポリシーが適用されます。</span><span class="sxs-lookup"><span data-stu-id="f5169-106">Policies are then applied when the user signs in with their work or school account.</span></span> <span data-ttu-id="f5169-107">一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。</span><span class="sxs-lookup"><span data-stu-id="f5169-107">There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade.</span></span> <span data-ttu-id="f5169-108">ユーザーがセットアップおよび接続できるようにするには、以下のトピックを参照して共有してください。</span><span class="sxs-lookup"><span data-stu-id="f5169-108">See and share the following topics to help users get set up and connected:</span></span>
+<span data-ttu-id="b69da-104">セットアップが完了すると、既定のデバイスポリシーが設定され、適用できる状態になります。</span><span class="sxs-lookup"><span data-stu-id="b69da-104">After you complete setup, your default device policies are in place and ready to apply.</span></span> <span data-ttu-id="b69da-105">モバイルデバイスでは、ユーザーが Office アプリをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="b69da-105">On mobile devices, users download Office apps.</span></span> <span data-ttu-id="b69da-106">ユーザーが職場または学校のアカウントでサインインすると、ポリシーが適用されます。</span><span class="sxs-lookup"><span data-stu-id="b69da-106">Policies are then applied when the user signs in with their work or school account.</span></span> <span data-ttu-id="b69da-107">一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。</span><span class="sxs-lookup"><span data-stu-id="b69da-107">There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade.</span></span> <span data-ttu-id="b69da-108">ユーザーがセットアップおよび接続できるようにするには、以下のトピックを参照して共有してください。</span><span class="sxs-lookup"><span data-stu-id="b69da-108">See and share the following topics to help users get set up and connected:</span></span>
   
-[<span data-ttu-id="f5169-109">Microsoft 365 Business ユーザーの Windows デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="f5169-109">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
+[<span data-ttu-id="b69da-109">Microsoft 365 Business ユーザーの Windows デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="b69da-109">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
   
-[<span data-ttu-id="f5169-110">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="f5169-110">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+[<span data-ttu-id="b69da-110">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="b69da-110">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
   
-[<span data-ttu-id="f5169-111">Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="f5169-111">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
+[<span data-ttu-id="b69da-111">Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="b69da-111">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
   
 
