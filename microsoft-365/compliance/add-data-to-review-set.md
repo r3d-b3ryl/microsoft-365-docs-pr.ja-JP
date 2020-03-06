@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: 高度な電子情報開示ケースに関連付けられた検索結果を追加します。 アイテムは元の場所からコピーされ、Microsoft によって提供される Azure ストレージの場所にコピーされます。 また、アイテムもインデックスが再作成され、高度な電子情報開示によって画像ファイルの OCR が実行され、レビューと分析のための画像テキストがアップロードされます。
 ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080157"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550463"
 ---
 # <a name="add-search-results-to-a-review-set"></a>検索結果をレビュー セットに追加する
 

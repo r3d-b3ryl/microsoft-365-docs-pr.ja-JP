@@ -18,18 +18,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: ユーザーのデバイスが紛失したり盗難にあった場合に、作業ファイルを保護するために使用できる設定について説明します。
-ms.openlocfilehash: 5f137354b51a0151e57e5e109b1ebbb043c68f60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: ユーザーのデバイスが紛失したり盗難にあった場合に、作業ファイルを保護するために Microsoft 365 Business で使用可能な設定について説明します。
+ms.openlocfilehash: 244e4773f1efa9548dd2126e03a007aefb840b40
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593558"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550169"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>モバイル デバイスの紛失または盗難時の作業ファイルの保護
 
@@ -41,7 +42,7 @@ ms.locfileid: "41593558"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |説明  <br/> |
+|設定  <br/> |説明  <br/> |
 |この日数後、非アクティブなデバイスから作業ファイルを削除する  <br/> |指定した日数にデバイスが使用されていない場合は、デバイスに保存されているすべての作業ファイルが自動的に削除されます。  <br/> |
 |ユーザーにすべての作業ファイルを OneDrive for Business に強制的に保存させる  <br/> |この設定が**オンに**なっている場合、作業ファイルの保存場所として使用できるのは、OneDrive for business のみです。  <br/> |
 |作業ファイルの暗号化  <br/> |作業ファイルが暗号化によって保護されるように、この設定は常に **オン**にします。 デバイスが紛失または盗難にあった場合でも、会社のデータを読み取ることはできません。  <br/> |

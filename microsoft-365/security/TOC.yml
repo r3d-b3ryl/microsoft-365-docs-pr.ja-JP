@@ -43,6 +43,8 @@
               href: mtp/microsoft-threat-protection.md
             - name: Microsoft Threat Protection の新機能
               href: mtp/whats-new.md
+            - name: プレビュー機能
+              href: mtp/preview.md
             - name: Microsoft 365 セキュリティ センター
               href: mtp/overview-security-center.md
             - name: 前提条件

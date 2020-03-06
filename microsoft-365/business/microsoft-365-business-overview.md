@@ -22,23 +22,24 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Microsoft 365 Business の詳細については、こちらを参照してください。
-ms.openlocfilehash: bfda6801bee526084ad11ead819fcd04787d17ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 Business について説明しています。サブスクリプションサービスには、Office 365 に加えて、ビジネスのための高度な保護がサイバーの脅威に対して含まれています。
+ms.openlocfilehash: 508262daa9367ebd3b973a7a519fbb953d719fb1
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065655"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547853"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 
 ## <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは
 
-Microsoft 365 Business は、Office 365 プロダクティビティツールに加えて、ビジネスを脅威から保護し、データを保護し、デバイスを管理するための高度な機能を備えたサブスクリプションサービスです。
+Microsoft 365 Business は、Office 365 プロダクティビティツールと高度な機能を含むサブスクリプションサービスで、サイバーの脅威からビジネスを保護し、データを保護し、デバイスを管理できます。
 
 Microsoft 365 Business の簡単な概要については、このビデオをご覧ください。<br><br>
 

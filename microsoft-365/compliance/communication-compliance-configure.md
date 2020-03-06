@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4f456b44ed0d7b3fb83a20d9c66ab49ff8af4946
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 3e3f16339d25c8cc592e937e30a446ed7e7cd333
+ms.sourcegitcommit: 0d7f27982fe9e18a4df423da23b86e0b15e77c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333667"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42542541"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -113,7 +113,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
     ポリシーウィザードを使用してカスタムポリシーを作成する場合は、次の操作を行います。
 
     - ポリシーに名前と説明を付けます。 ポリシー名は、ポリシーの作成後に変更することはできません。
-    - 組織内のすべてのユーザー、特定のユーザーとグループ、または除外する他のユーザーとグループを含む、監督するユーザーまたはグループを選択します。 -
+    - 組織内のすべてのユーザー、特定のユーザーとグループ、または除外する他のユーザーとグループを含む、監督するユーザーまたはグループを選択します。
     - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーか、[メールが有効なセキュリティ グループ](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)です。 すべてのレビュー担当者は、Exchange Online でホストされているメールボックスを持っている必要があります。
     - Exchange、Microsoft Teams、Skype for Business など、スキャンする通信チャネルを選択します。 また、Microsoft 365 でコネクタを構成した場合は、サードパーティのソースをスキャンすることもできます。
     - 受信、送信、内部通信など、監視する通信方向を選択します。

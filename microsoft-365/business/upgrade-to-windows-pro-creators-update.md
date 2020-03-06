@@ -1,5 +1,7 @@
 ---
 title: Windows デバイスを Windows 10 Pro にアップグレードする
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: 'Windows デバイスを Windows 10 Pro にアップグレードする方法について説明します。 '
-ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+description: Windows デバイスを Windows 10 Pro にアップグレードして、より高度なセキュリティおよびビジネスネットワーク機能を利用できるようにする方法を確認します。
+ms.openlocfilehash: 541169571fb9f58c7f75f610546ec250ffd40afb
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265860"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549939"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows デバイスを Windows 10 Pro にアップグレードする
 
@@ -35,7 +38,7 @@ Windows デバイスを Windows 10 Pro にアップグレードする方法に�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="upgrade-to-windows-10-pro"></a>Windows 10 Pro へのアップグレード
   
@@ -56,6 +59,6 @@ Windows 10 デバイスのセットアップを完了するには、「 [Microso
   
 Android および iOS デバイスの設定を完了するには、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
   
-## <a name="see-also"></a>関連項目
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Microsoft 365 Business のセットアップと使用方法の詳細
 
 [Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

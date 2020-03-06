@@ -20,18 +20,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: 保護ポリシーによって管理されているデバイスをリセットまたはワイプする方法について説明します。
-ms.openlocfilehash: b022d9076b60b0d29771b2ba8f7afc0435bda096
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 保護ポリシーを介して管理されるデバイスから会社のデータを削除する方法と、Windows 10 デバイスを出荷時の設定にリセットする方法について説明します。
+ms.openlocfilehash: f5c9bba6004632964ca01ba2f65e88dafb0ed719
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593843"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550339"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>Microsoft 365 Business で保護されたデバイスを管理する
 

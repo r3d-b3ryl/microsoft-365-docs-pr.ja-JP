@@ -21,17 +21,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Microsoft 365 Business をセットアップする方法について説明します。
-ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 Business、セットアップ方法、およびユーザーのデバイスと Pc を準備して Microsoft 365 Business で保護されるようにする方法について説明します。
+ms.openlocfilehash: f6fd73762c0b57777c19d32886f758875e2e7e6a
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065615"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547733"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
@@ -51,7 +52,7 @@ Microsoft 365 Business は、最大300のライセンスを想定しています
     
 - パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)できます。
     
-## <a name="set-up-microsoft-365-business"></a>Microsoft 365 Business をセットアップする
+## <a name="set-up-microsoft-365-business"></a>Microsoft 365 Business のセットアップ
 
  **Microsoft 365 Business Suite のセットアップの概要**
   

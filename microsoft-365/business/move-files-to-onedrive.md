@@ -17,17 +17,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: OneDrive にファイルを移動する方法について説明します。
-ms.openlocfilehash: 85ff7ad2ecab3646eeb196a380f85983b1403f7a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: いくつかの簡単な手順で、個人の仕事用ファイルや機密会社のファイルを OneDrive for Business に移動する方法について説明します。
+ms.openlocfilehash: 837ec8bb01ed78e7a13ee802afaf845c80544f5d
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065225"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550269"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する
 
@@ -50,6 +51,6 @@ OneDrive for business へのファイルの移動に関する短いビデオを�
     
 ユーザー プロファイルと重要なファイルを転送するには、ForensiT などのサード パーティ製ツールを使用することもできます。OneDrive for Business で作成されたファイルもアップロードする必要があります。
   
-## <a name="see-also"></a>関連項目
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Microsoft 365 Business のセットアップと使用方法の詳細
 
 [Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

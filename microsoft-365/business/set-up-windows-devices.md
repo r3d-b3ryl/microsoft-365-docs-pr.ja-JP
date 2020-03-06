@@ -19,21 +19,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Microsoft 365 Business ユーザー用に Windows 10 Pro を実行している Windows デバイスをセットアップする方法について説明します。 '
-ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 Business ユーザー用に Windows 10 Pro を実行している Windows デバイスをセットアップする方法について説明します。一元管理とセキュリティ制御を有効にします。
+ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42090714"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550019"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーの Windows デバイスをセットアップする
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーの Windows デバイスをセットアップするための前提条件
 
 Microsoft 365 Business ユーザーの Windows デバイスをセットアップするには、すべての Windows デバイスで、Windows 10 Pro バージョン 1703 (Creators Update) が実行されていることを確認します。Windows 10 Pro は、Windows 10 Business を展開するための前提条件です。これは、Windows 10 Pro を補完し、Microsoft 365 Business の一元管理とセキュリティ制御を有効にする一連のクラウド サービスとデバイス管理機能です
   
@@ -121,10 +122,10 @@ Microsoft 365 Business サブスクリプションの一部として、Azure AD 
     
     ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 モバイル デバイスをセットアップするには、「[Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする](set-up-mobile-devices.md)」を参照してください。デバイス保護ポリシーまたはアプリ保護ポリシーを設定するには、「[Microsoft 365 Business を管理する](manage.md)」を参照してください。
   
-## <a name="see-also"></a>関連項目
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Microsoft 365 Business のセットアップと使用方法の詳細
 
 [Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

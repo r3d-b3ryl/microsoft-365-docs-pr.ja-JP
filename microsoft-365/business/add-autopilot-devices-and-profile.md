@@ -17,18 +17,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Windows 自動操縦を使用して、ビジネス用に新しい Windows 10 デバイスをセットアップする方法について説明します。
-ms.openlocfilehash: e5774b1e2079a5249e0f6e9e7142de19268253b5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Windows 自動操縦を使用して、従業員が使用できるように、自社の新しい Windows 10 デバイスをセットアップする方法について説明します。
+ms.openlocfilehash: 8449d5a3672a20b0cd1ba61bbda863073138c04c
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068543"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550389"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
@@ -48,7 +49,7 @@ Windows 自動操縦を使用して、自分の組織のために**新しい**wi
 
 デバイスグループまたはプロファイルをまだ作成していない場合は、まず、ステップバイステップガイドを使用して開始することをお勧めします。 ガイドを使用せずに、[デバイスを追加](create-and-edit-autopilot-devices.md)したり、[プロファイルを割り当て](create-and-edit-autopilot-profiles.md)たりすることもできます。 
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
 
 2. 左側のナビゲーションウィンドウで、[**デバイス** \> **自動操縦**] を選択します。
 
