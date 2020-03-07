@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for Business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
 ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072412"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543428"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -97,7 +97,7 @@ ms.locfileid: "42072412"
 |SharedWithUsersOWSUser|指定したユーザーと共有され、ユーザーの OneDrive for Business サイトの [**自分と共有**] ページに表示されるドキュメント。 これらは、組織内の他のユーザーによって指定されたユーザーが明示的に共有しているドキュメントです。 SharedWithUsersOWSUser プロパティを使用する検索クエリに一致するドキュメントをエクスポートすると、指定されたユーザーとドキュメントを共有しているユーザーの元のコンテンツの場所からドキュメントがエクスポートされます。 詳細については、「[組織内で共有しているサイトコンテンツを検索する](#searching-for-site-content-shared-within-your-organization)」を参照してください。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|両方の例では、Garth 砦と明示的に共有されており、Garth 砦の OneDrive for Business アカウントの [**自分と共有**] ページに表示されるすべての内部ドキュメントを返します。|
 |サイト|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザーについて、OneDrive for Business サイトからアイテムを返します。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
 |Size|アイテムのサイズ (バイト数)。|`size>=1`  <br/> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
-|役職|ドキュメントのタイトル。 Title プロパティは、Microsoft Office ドキュメントで指定されているメタデータです。 ドキュメントのファイル名とは異なります。|`title:"communication plan"`|Office ドキュメントの Title メタデータ プロパティに "communication plan" という語句が含まれるすべてのドキュメント。|
+|タイトル|ドキュメントのタイトル。 Title プロパティは、Microsoft Office ドキュメントで指定されているメタデータです。 ドキュメントのファイル名とは異なります。|`title:"communication plan"`|Office ドキュメントの Title メタデータ プロパティに "communication plan" という語句が含まれるすべてのドキュメント。|
 |||||
    
 ## <a name="searchable-contact-properties"></a>検索可能な連絡先のプロパティ
@@ -126,7 +126,7 @@ ms.locfileid: "42072412"
 |OfficeLocation|**Office**または office の**location**プロパティの値。|
 |OtherAddress|**Other** address プロパティの値。|
 |Surname|" **Last** name/名前" プロパティの名前を指定します。|
-|役職|**役職プロパティの**タイトル。|
+|タイトル|**役職プロパティの**タイトル。|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>検索可能な機密性の高いデータ型
@@ -221,7 +221,7 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
 |**条件**|**説明**|
 |:-----|:-----|
 |設定元|ドキュメントがコピーされた場合に保持される Office ドキュメントの作成者フィールドです。 たとえば、ユーザーがドキュメントを作成し、そのドキュメントを他のユーザーが SharePoint にアップロードした場合、そのドキュメントは元の作成者を保持したままになります。|
-|役職|ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。|
+|タイトル|ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。|
 |作成済み|ドキュメントが作成された日付。|
 |最終更新日時|ドキュメントが最後に変更された日付。|
 |ファイルの種類|ファイルの拡張子。例: .docx、one、.pptx、または .xlsx。 これは、FileExtension サイト プロパティと同じプロパティです。|

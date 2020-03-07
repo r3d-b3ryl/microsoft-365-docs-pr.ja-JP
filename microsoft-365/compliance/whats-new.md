@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 コンプライアンスセンターに新機能を継続的に追加し、学習した問題を修正し、フィードバックに基づいて変更を加えています。 今月の内容を確認してください。
-ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106810"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42552041"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの新機能
 
@@ -31,6 +31,36 @@ ms.locfileid: "42106810"
 > [!TIP]
 > 他の管理センターでは何が起こっているのでしょうか。 次の記事をご覧ください。<br>[Microsoft 365 管理センターの新機能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 また、 [microsoft 365 ロードマップ](https://www.microsoft.com/en-us/microsoft-365/roadmap)を参照して、起動された、展開中の、開発中である、キャンセルされた、または既にリリースされた microsoft 365 の機能について説明します。
+
+## <a name="february-2020"></a>2020 年 2 月
+
+### <a name="insider-risk-management-is-officially-released"></a>Insider リスク管理が正式にリリースされている
+
+ドラムロール (ご記入ください)Insider リスク管理は、次のサブスクリプションを使用する組織で使用できるようになりました。
+
+- [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (有料または試用版)
+- Microsoft 365 Enterprise E3 サブスクリプションと[Microsoft E5 コンプライアンスアドオン](https://go.microsoft.com/fwlink/?linkid=2120432)
+
+プレビューリリース後に、[新しい役割グループ](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)と[ソリューションレベルの設定](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings)を含むいくつかの改善を行いました。
+
+そのため、ソリューションを使用するときにはフィードバックを残して、改善を続けられるようにしてください。
+
+### <a name="records-management"></a>レコード管理
+
+この新しいソリューションは、すべてのレコード管理機能を1つの包括的なものにします。 重要な点としては、SharePoint と OneDrive のレコードバージョン管理の導入やレコードの廃棄証明が挙げられます。
+
+![Microsoft 365 コンプライアンスセンターのレコード管理ページ](../media/mcc-records-management-page.png)
+
+[レコード管理についての詳細情報](records-management.md)
+
+### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>ソリューションスポットライト: Facebook および Twitter のデータコネクタ
+
+データコネクタが先月[リリース](#just-launched)されました。次のコネクタをテストして、正常に動作することを検証するためのヘルプを探しています。
+
+- [Facebook ビジネスページ](archive-facebook-data-with-sample-connector.md) Facebook のビジネスページのデータをインポートし、Microsoft 365 にアーカイブします。 レコード管理や電子情報開示などのコンプライアンスソリューションに役立ちます。
+- [Twitter](archive-twitter-data-with-sample-connector.md)。 Twitter から Microsoft 365 にデータをインポートしてアーカイブします。 レコード管理や電子情報開示などのコンプライアンスソリューションに役立ちます。
+
+これらのコネクタを設定して検証するときには、何がうまくいったのか、何ができなかったのか、また、操作を改善するためにできることについてのフィードバックをお寄せください。
 
 ## <a name="january-2020"></a>2020 年 1 月
 
