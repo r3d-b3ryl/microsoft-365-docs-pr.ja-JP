@@ -130,6 +130,7 @@
 ## 21Vianet が運用している Office 365
 ### [21Vianet が運用している Office 365 について](services-in-china/services-in-china.md)
 ### [サブスクリプションの購入または試用](services-in-china/buy-or-try-subscriptions.md)
+### [21Vianet が運営する Office 365 の Android 用 Office アプリをダウンロードする](services-in-china/download-office-app-for-Android.md)
 ### [21Vianet が運営する Office 365 の iOS 用 Office アプリをダウンロードする](services-in-china/download-office-app-for-iOS.md)
 ### [請求書を表示するか Fapiao を入手する](services-in-china/view-your-bill-or-get-a-fapiao.md)
 ### [Fapiao を申請する](services-in-china/apply-for-a-fapiao.md)
