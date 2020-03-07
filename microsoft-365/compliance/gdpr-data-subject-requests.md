@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: fc5f4f8752d17595cfafaa39626f0d36675d7c82
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916912"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558057"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>データ対象要求と GDPR および CCPA
 
@@ -107,4 +107,4 @@ Microsoft アカウント認証を介してアクセスしたサード パーテ
 
 ## <a name="learn-more"></a>詳細情報
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '選択したエクスポートバッチセッションの詳細情報を表示する方法と、Office 365 Advanced eDiscovery で最終エクスポートセッションを取り消す方法について説明します。  '
-ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069128"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557615"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Office 365 のバッチ履歴を表示して過去の結果をエクスポートする高度な電子情報開示
+# <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>詳細な電子情報開示でのバッチ履歴の表示と過去の結果のエクスポート (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -62,7 +62,7 @@ ms.locfileid: "42069128"
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [結果のエクスポート](export-results-in-advanced-ediscovery.md)
 

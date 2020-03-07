@@ -335,76 +335,105 @@
           items:
             - name: レコード管理のビデオを見る
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
-- name: コンテンツを検索する
-  href: search-for-content.md
+- name: 電子情報開示の管理
   items:
-    - name: コンテンツ検索を使う
-      href: content-search.md
+    - name: コンテンツ検索
       items:
-        - name: コンテンツ検索のキーワード クエリと検索条件
-          href: keyword-queries-and-search-conditions.md
-        - name: コンテンツ検索結果のキーワード統計の表示
-          href: view-keyword-statistics-for-content-search.md
-        - name: コンテンツ検索の結果をエクスポートする
-          href: export-search-results.md
-        - name: コンテンツ検索レポートのエクスポート
-          href: export-a-content-search-report.md
-        - name: メール メッセージを検索して削除する
-          href: search-for-and-delete-messages-in-your-organization.md
-        - name: Office 365 のオンプレミス ユーザーのクラウド ベースのメールボックスを検索する
-          href: search-cloud-based-mailboxes-for-on-premises-users.md
-        - name: 複数のコンテンツ検索を一括編集する
-          href: bulk-edit-content-searches.md
-        - name: ID リスト コンテンツ検索用の CSV ファイルを準備する
-          href: csv-file-for-an-id-list-content-search.md
-        - name: コンテンツ検索を使用してサード パーティのデータを検索する
-          href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: コンテンツ検索クエリでエラーを確認する
-          href: check-your-content-search-query-for-errors.md
-        - name: 失敗したコンテンツ検索をもう一度行う
-          href: retry-failed-content-search.md
-        - name: コンテンツ検索用に Bcc 受信者を保持する
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-    - name: コンテンツ検索について理解する
+        - name: コンテンツ検索の概要
+          href: search-for-content.md
+        - name: コンテンツ検索を使用する
+          href: content-search.md
+          items:
+            - name: キーワードクエリと検索条件
+              href: keyword-queries-and-search-conditions.md
+            - name: 検索結果のキーワード統計を表示する
+              href: view-keyword-statistics-for-content-search.md
+            - name: 検索結果をエクスポートする
+              href: export-search-results.md
+            - name: 検索レポートをエクスポートする
+              href: export-a-content-search-report.md
+            - name: メール メッセージを検索して削除する
+              href: search-for-and-delete-messages-in-your-organization.md
+            - name: オンプレミスユーザーのクラウドベースのメールボックスを検索する
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
+            - name: 複数のコンテンツ検索を一括編集する
+              href: bulk-edit-content-searches.md
+            - name: ID リスト検索用の CSV ファイルを準備する
+              href: csv-file-for-an-id-list-content-search.md
+            - name: サードパーティのデータを検索する
+              href: use-content-search-to-search-third-party-data-that-was-imported.md
+            - name: 検索クエリのエラーを確認する
+              href: check-your-content-search-query-for-errors.md
+            - name: 電子情報開示に関する一般的な問題のトラブルシューティング
+              href: ediscovery-troubleshooting-common-issues.md
+            - name: 失敗した検索を再試行する
+              href: retry-failed-content-search.md
+            - name: 検索に Bcc 受信者を保持する
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+        - name: コンテンツ検索を構成する
+          items:
+            - name: コンテンツ検索のアクセス許可フィルターを構成する
+              href: permissions-filtering-for-content-search.md
+            - name: 検索結果をエクスポートするときにダウンロード速度を上げる
+              href: increase-download-speeds-when-exporting-ediscovery-results.md
+            - name: 検索結果をエクスポートするときに PST ファイルのサイズを変更する
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: 検索結果をエクスポートするときにレポートを無効にする
+              href: disable-reports-when-you-export-content-search-results.md
+        - name: コンテンツ検索を理解する
+          items:
+            - name: コンテンツ検索の制限
+              href: limits-for-content-search.md
+            - name: 部分的にインデックスが作成されたアイテム
+              href: partially-indexed-items-in-content-search.md
+            - name: 部分的にインデックスが作成されたアイテムを調査する
+              href: investigating-partially-indexed-items-in-ediscovery.md
+            - name: 検索結果の重複除外
+              href: de-duplication-in-ediscovery-search-results.md
+            - name: 推定および実際の検索結果の違い
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+        - name: コンテンツ検索 PowerShell スクリプトを実行する
+          items:
+            - name: 対象となるコレクションに対してコンテンツ検索を使用する
+              href: use-content-search-for-targeted-collections.md
+            - name: メールボックスおよび OneDrive アカウントでユーザーの一覧を検索する
+              href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+            - name: 複数の検索を作成、レポート、および削除する
+              href: create-report-on-and-delete-multiple-content-searches.md
+            - name: 検索を複製する
+              href: clone-a-content-search.md
+    - name: コア電子情報開示
       items:
-        - name: コンテンツ検索の制限
-          href: limits-for-content-search.md
-        - name: コンテンツ検索で部分的にインデックスが作成されたアイテム
-          href: partially-indexed-items-in-content-search.md
-        - name: 部分的にインデックスが作成されたアイテムを調査する
-          href: investigating-partially-indexed-items-in-ediscovery.md
-        - name: 電子情報開示検索結果での重複排除
-          href: de-duplication-in-ediscovery-search-results.md
-        - name: 推定されるコンテンツ検索と実際のコンテンツ検索結果の違い
-          href: differences-between-estimated-and-actual-ediscovery-search-results.md
-    - name: コンテンツ検索を構成する
+        - name: eDiscovery ケースを管理する
+          href: ediscovery-cases.md
+        - name: コア電子情報開示リファレンス
+          items:
+            - name: 電子情報開示のアクセス許可を割り当てる
+              href: assign-ediscovery-permissions.md
+            - name: キーワードクエリと検索条件
+              href: keyword-queries-and-search-conditions.md
+            - name: 検索アクセス許可のフィルターを構成する
+              href: permissions-filtering-for-content-search.md
+            - name: コンプライアンスの境界を設定する
+              href: set-up-compliance-boundaries.md
+            - name: スクリプトを使用して電子情報開示の保留リストにユーザーを追加する
+              href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+            - name: 電子情報開示の保留リストに関するレポートを作成する
+              href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: こぼれたデータを検索して削除する
+              href: data-spillage-scenariosearch-and-purge.md
+            - name: 検索に Bcc 受信者を保持する
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: 電子情報開示に関する一般的な問題のトラブルシューティング
+              href: ediscovery-troubleshooting-common-issues.md
+            - name: 失敗した検索を再試行する
+              href: retry-failed-content-search.md
+    - name: Advanced eDiscovery
       items:
-        - name: コンテンツ検索用にアクセス許可フィルターを設定する
-          href: permissions-filtering-for-content-search.md
-        - name: コンテンツ検索の結果をエクスポートするときにダウンロード速度を上げる
-          href: increase-download-speeds-when-exporting-ediscovery-results.md
-        - name: コンテンツ検索の結果をエクスポートするときに PST ファイルのサイズを変更する
-          href: change-the-size-of-pst-files-when-exporting-results.md
-        - name: コンテンツ検索の結果をエクスポートするときにレポートを無効にする
-          href: disable-reports-when-you-export-content-search-results.md
-    - name: コンテンツ検索 で PowerShell スクリプトを使用する
-      items:
-        - name: コンテンツ検索を使用して対象コレクションを検索する
-          href: use-content-search-for-targeted-collections.md
-        - name: コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
-          href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
-        - name: 複数のコンテンツ検索の作成、報告、削除
-          href: create-report-on-and-delete-multiple-content-searches.md
-        - name: コンテンツ検索をコピーする
-          href: clone-a-content-search.md
-- name: 法的調査を管理する
-  href: manage-legal-investigations.md
-  items:
-    - name: ' Microsoft 365 での Advanced eDiscovery ソリューション '
-      href: overview-ediscovery-20.md
-      items:
-        - name: 新しいケースを作成する
-          href: create-new-ediscovery-case.md
+        - name: 高度な電子情報開示の概要
+          href: overview-ediscovery-20.md
+        - name: 高度な電子情報開示の概要
+          href: get-started-with-advanced-ediscovery.md
         - name: カストディアンと作業する
           href: managing-custodians.md
           items:
@@ -443,6 +472,8 @@
               href: create-search-to-collect-data.md
             - name: 検索クエリのビルド
               href: building-search-queries.md
+            - name: キーワードクエリと検索条件
+              href: keyword-queries-and-search-conditions.md
             - name: 検索の統計
               href: search-statistics.md
             - name: 検索結果をレビュー セットに追加する
@@ -496,9 +527,7 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery の参照
           items:
-            - name: ノートをリリースする
-              href: release-notes-ediscovery20.md
-            - name: Advanced eDiscovery を制限する
+            - name: 高度な電子情報開示の制限
               href: limits-ediscovery20.md
             - name: サポートされているファイルの種類
               href: supported-filetypes-ediscovery20.md
@@ -508,121 +537,101 @@
               href: attorney-privilege-detection.md
             - name: 会話レビュー セット
               href: conversation-review-sets.md
+            - name: 電子情報開示のアクセス許可を割り当てる
+              href: assign-ediscovery-permissions.md
+            - name: キーワードクエリと検索条件
+              href: keyword-queries-and-search-conditions.md
+            - name: 検索アクセス許可のフィルターを構成する
+              href: permissions-filtering-for-content-search.md
+            - name: コンプライアンスの境界を設定する
+              href: set-up-compliance-boundaries.md
             - name: 高度な電子情報開示レポート (プレビュー)
               href: advanced-ediscovery-reports.md
             - name: AzCopy のトラブルシューティング
               href: troubleshooting-azcopy.md
-    - name: eDiscovery ケースを管理する
-      href: ediscovery-cases.md
+    - name: 高度な電子情報開示 (クラシック)
       items:
-        - name: Office 365 Advanced eDiscovery
+        - name: 高度な電子情報開示の概要 (クラシック)
           href: office-365-advanced-ediscovery.md
+        - name: 高度な電子情報開示 (クラシック) を使用して作業を開始する
+          href: quick-setup-for-advanced-ediscovery.md
+        - name: ケースを設定する
+          href: set-up-users-and-cases-in-advanced-ediscovery.md
           items:
-            - name: Advanced eDiscovery の概要
-              href: quick-setup-for-advanced-ediscovery.md
-            - name: ケースを設定する
-              href: set-up-users-and-cases-in-advanced-ediscovery.md
-              items:
-                - name: ケースの問題を定義する
-                  href: define-issues-and-assign-users.md
-            - name: ケース データの収集
-              items:
-                - name: Advanced eDiscovery 用に検索結果を準備する
-                  href: prepare-search-results-for-advanced-ediscovery.md
-                - name: 'Advanced eDiscovery にデータを読み込む '
-                  href: prepare-data-for-advanced-ediscovery.md
-                - name: Office 365 以外のコンテンツをケースにインポートする
-                  href: import-non-office-365-data-into-advanced-ediscovery.md
-            - name: ケース データの処理
-              href: run-the-process-module-in-advanced-ediscovery.md
-              items:
-                - name: プロセス モジュールを実行し、データを読み込む
-                  href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
-                - name: プロセス モジュールの結果を表示する
-                  href: view-process-module-results-in-advanced-ediscovery.md
-            - name: ケース データの確認
-              items:
-                - name: ケース データの検索とタグ付け
-                  href: search-and-tagging.md
-                - name: レビュー セットに関する決定を行う
-                  href: decision-based-on-the-results-in-advanced-ediscovery.md
-            - name: ケース データの分析
-              href: analyze-case-data-with-advanced-ediscovery.md
-              items:
-                - name: 高速分析の実行
-                  href: use-express-analysis-in-advanced-ediscovery.md
-                - name: ドキュメントの類似性 (準重複) についての概要
-                  href: understand-document-similarity-in-advanced-ediscovery.md
-                - name: 分析結果を表示する
-                  href: view-analyze-results-in-advanced-ediscovery.md
-            - name: 関連モジュールの使用
-              href: use-relevance-in-advanced-ediscovery.md
-              items:
-                - name: 関連評価の概要
-                  href: assessment-in-relevance-in-advanced-ediscovery.md
-                - name: 関連評価の実行とタグ付け
-                  href: tagging-and-assessment-in-advanced-ediscovery.md
-                - name: 関連トレーニングの設定
-                  href: manage-relevance-setup-in-advanced-ediscovery.md
-                - name: 関連トレーニングの実行とタグ付け
-                  href: tagging-and-relevance-training-in-advanced-ediscovery.md
-                - name: 関連トレーニング プロセスを追跡する
-                  href: track-relevance-analysis-in-advanced-ediscovery.md
-                - name: 関連分析の結果をテストする
-                  href: test-relevance-analysis-in-advanced-ediscovery.md
-                - name: 関連トレーニングの追加データを読み込む
-                  href: set-up-loads-to-add-imported-files.md
-            - name: ケース データのエクスポート
-              href: export-case-data-in-advanced-ediscovery.md
-              items:
-                - name: データのエクスポート
-                  href: export-results-in-advanced-ediscovery.md
-                - name: レポートのフィールドのエクスポート
-                  href: export-report-fields-in-advanced-ediscovery.md
-                - name: バッチ履歴を表示し、過去の結果をエクスポートする
-                  href: view-batch-history-and-export-past-results.md
-            - name: Advanced eDiscovery の構成
-              items:
-                - name: ケースと組織の設定を構成する
-                  href: define-case-and-tenant-settings-in-advanced-ediscovery.md
-                - name: 分析の設定を構成する
-                  href: set-analyze-options-in-advanced-ediscovery.md
-                - name: Ignore Text 設定を構成する
-                  href: set-ignore-text-in-advanced-ediscovery.md
-                - name: 協調表示されたキーワードとその他の関連設定を構成する
-                  href: define-highlighted-keywords-and-advanced-options.md
-            - name: Advanced eDiscovery の参照
-              items:
-                - name: Advanced eDiscovery ユーティリティを使用する
-                  href: use-advanced-ediscovery-utilities.md
-                - name: レポートを実行する
-                  href: run-reports-in-advanced-ediscovery.md
-        - name: スクリプトを使用して電子情報開示ケースの保留リストにユーザーを追加する
-          href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-        - name: 電子情報開示ケースの保留リストのレポートを作成する
-          href: create-a-report-on-holds-in-ediscovery-cases.md
-    - name: 電子情報開示のアクセス許可を指定する
-      href: assign-ediscovery-permissions.md
-    - name: Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
-      href: set-up-compliance-boundaries.md
-    - name: 電子情報開示ソリューション シリーズ - データー流出のシナリオ - 検索と消去
-      href: data-spillage-scenariosearch-and-purge.md
-    - name: 電子情報開示に関する一般的な問題のトラブルシューティング
-      href: ediscovery-troubleshooting-common-issues.md
-    - name: 保留リストを管理する
-      items:
-        - name: 電子情報開示保留リストを作成する
-          href: 'ediscovery-cases.md#step-4-place-content-locations-on-hold'
-        - name: 訴訟ホールドを作成する
-          href: create-a-litigation-hold.md
-        - name: 保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
-          href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
-        - name: 保留中のメールボックスの回復可能なアイテムのクォータを拡大する
-          href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-        - name: Exchange Online メールボックスに保存されている保留の種類を特定する方法
-          href: identify-a-hold-on-an-exchange-online-mailbox.md
-        - name: Bccと拡張配布グループの受信者を保持する
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: ケースの問題を定義する
+              href: define-issues-and-assign-users.md
+        - name: ケース データの収集
+          items:
+            - name: 検索結果を準備する
+              href: prepare-search-results-for-advanced-ediscovery.md
+            - name: ケースにデータを読み込む
+              href: prepare-data-for-advanced-ediscovery.md
+            - name: Office 以外の365コンテンツをケースにインポートする
+              href: import-non-office-365-data-into-advanced-ediscovery.md
+        - name: ケース データの処理
+          href: run-the-process-module-in-advanced-ediscovery.md
+          items:
+            - name: プロセス モジュールを実行し、データを読み込む
+              href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
+            - name: プロセス モジュールの結果を表示する
+              href: view-process-module-results-in-advanced-ediscovery.md
+        - name: ケース データの確認
+          items:
+            - name: ケース データの検索とタグ付け
+              href: search-and-tagging.md
+            - name: レビュー セットに関する決定を行う
+              href: decision-based-on-the-results-in-advanced-ediscovery.md
+        - name: ケース データの分析
+          href: analyze-case-data-with-advanced-ediscovery.md
+          items:
+            - name: 高速分析の実行
+              href: use-express-analysis-in-advanced-ediscovery.md
+            - name: ドキュメントの類似性 (準重複) についての概要
+              href: understand-document-similarity-in-advanced-ediscovery.md
+            - name: 分析結果を表示する
+              href: view-analyze-results-in-advanced-ediscovery.md
+        - name: 関連モジュールの使用
+          href: use-relevance-in-advanced-ediscovery.md
+          items:
+            - name: 関連評価の概要
+              href: assessment-in-relevance-in-advanced-ediscovery.md
+            - name: 関連評価の実行とタグ付け
+              href: tagging-and-assessment-in-advanced-ediscovery.md
+            - name: 関連トレーニングの設定
+              href: manage-relevance-setup-in-advanced-ediscovery.md
+            - name: 関連トレーニングの実行とタグ付け
+              href: tagging-and-relevance-training-in-advanced-ediscovery.md
+            - name: 関連トレーニング プロセスを追跡する
+              href: track-relevance-analysis-in-advanced-ediscovery.md
+            - name: 関連分析の結果をテストする
+              href: test-relevance-analysis-in-advanced-ediscovery.md
+            - name: 関連トレーニングの追加データを読み込む
+              href: set-up-loads-to-add-imported-files.md
+        - name: ケース データのエクスポート
+          href: export-case-data-in-advanced-ediscovery.md
+          items:
+            - name: データのエクスポート
+              href: export-results-in-advanced-ediscovery.md
+            - name: レポートのフィールドのエクスポート
+              href: export-report-fields-in-advanced-ediscovery.md
+            - name: バッチ履歴を表示し、過去の結果をエクスポートする
+              href: view-batch-history-and-export-past-results.md
+        - name: 詳細な電子情報開示の構成 (クラシック)
+          items:
+            - name: ケースと組織の設定を構成する
+              href: define-case-and-tenant-settings-in-advanced-ediscovery.md
+            - name: 分析の設定を構成する
+              href: set-analyze-options-in-advanced-ediscovery.md
+            - name: Ignore Text 設定を構成する
+              href: set-ignore-text-in-advanced-ediscovery.md
+            - name: 協調表示されたキーワードとその他の関連設定を構成する
+              href: define-highlighted-keywords-and-advanced-options.md
+        - name: 高度な電子情報開示 (クラシック) リファレンス
+          items:
+            - name: 高度な電子情報開示 (クラシック) ユーティリティを使用する
+              href: use-advanced-ediscovery-utilities.md
+            - name: レポートを実行する
+              href: run-reports-in-advanced-ediscovery.md
 - name: データ調査を管理する
   items:
     - name: データ調査の概要
@@ -700,6 +709,18 @@
           href: document-metadata-fields.md
         - name: ジョブを管理する
           href: manage-jobs.md
+- name: 保留リストを管理する
+  items:
+    - name: メールボックスに適用されている保留の種類を特定する方法
+      href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: 訴訟ホールドを作成する
+      href: create-a-litigation-hold.md
+    - name: '保持中のメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する'
+      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+    - name: 保留中のメールボックスの回復可能なアイテムのクォータを拡大する
+      href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Bccと拡張配布グループの受信者を保持する
+      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 監査と通知ポリシーを管理する
   items:
     - name: 統合された監査
@@ -726,7 +747,7 @@
           href: advanced-audit.md
         - name: 監査ログの保持ポリシーを管理する
           href: audit-log-retention-policies.md
-        - name: 詳細な監査を使用して、侵害されたアカウントを調査する
+        - name: 高度な監査を使用して、侵害されたアカウントを調査する
           href: mailitemsaccessed-forensics-investigations.md
     - name: ポリシーを通知する
       href: alert-policies.md

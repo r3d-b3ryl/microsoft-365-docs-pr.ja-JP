@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Office 365 Advanced eDiscovery の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマなどの高度な設定を構成する方法について説明します。 '
-ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081271"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557797"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Set Office 365 の詳細な電子情報開示の設定を分析する
 
@@ -48,7 +48,7 @@ Advanced eDiscovery は、モジュール設定を分析するための既定の
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   

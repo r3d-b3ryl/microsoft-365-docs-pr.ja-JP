@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Office 365 Advanced eDiscovery の結果をエクスポートするためのオプションを定義する方法について説明します。これには、エクスポートバッチのパラメーターを指定する手順が含まれます。 '
-ms.openlocfilehash: 9194bc9dc44587fb03798c2107c408d2afb2ae70
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e439753b427a4e4a90e219912f8d3c1fcf4cfff3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074320"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558198"
 ---
-# <a name="export-results-in-office-365-advanced-ediscovery"></a>Office の結果をエクスポートする 365 Advanced eDiscovery
+# <a name="export-results-in-advanced-ediscovery-classic"></a>高度な電子情報開示で結果をエクスポートする (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -68,7 +68,7 @@ ms.locfileid: "42074320"
     
     - 既存のケースに追加した新しいファイルの結果をエクスポートするには、現在のバッチを続行します。 バッチにセッションを作成するには、同じバッチ番号を選択し、[**エクスポートセッションの作成**] をクリックします。このオプションを使用すると、前のバッチと同じパラメーターを増分方式でエクスポートできます。 
     
-    - 新しいバッチにエクスポートするには、 **** ![[追加]](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)アイコンをクリックし、**バッチ名**に新しい名前を入力します (または既定値をそのまま使用します)。または、バッチの**説明**に説明を追加します。 **[OK]** をクリックします。
+    - 新しいバッチにエクスポートするには、 **** ![[追加]](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)アイコンをクリックし、**バッチ名**に新しい名前を入力します (または既定値をそのまま使用します)。または、バッチの**説明**に説明を追加します。 [**OK**] をクリックします。
     
     - バッチ名または説明を編集するには、[**バッチのエクスポート**] で名前を](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)選択し、[編集] ![編集アイコン**をクリックし**てから、フィールドを変更します。
     
@@ -194,7 +194,7 @@ ms.locfileid: "42074320"
    
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [バッチ履歴の表示と過去の結果のエクスポート](view-batch-history-and-export-past-results.md)
   

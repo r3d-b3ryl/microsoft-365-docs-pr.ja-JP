@@ -17,17 +17,17 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 上級電子情報開示ツールを使用して詳細な分析を行うために、Office 365 のセキュリティ & コンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 3ba115cf45aa3be7b9cb43b3a261687e073edba2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 01a09da78198c31ff88b0e539ae9b149b2fbdd02
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071018"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557857"
 ---
-# <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Office 365 アドバンスト eDiscovery 用に検索結果を準備する
+# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>高度な電子情報開示の検索結果を準備する (クラシック)
 
 > [!IMPORTANT]
-> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Office 365 Advanced eDiscovery (*Advanced eDiscovery v1.0* とも呼ばれる) のサポート終了を発表しました。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
+> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は Office 365 Advanced ediscovery *(アドバンスト ediscovery (クラシック)* または*advanced ediscovery v 1.0*とも呼ばれる) の廃止を発表しています。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
 
 セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている検索が正常に実行されると、Office 365 Advanced eDiscovery を使用して検索結果を準備することができます。これにより、大規模な非構造化データセットを分析し、法的訴訟に関連するデータ量を減らすことができます。 高度な電子情報開示機能は次のとおりです。
   
@@ -108,9 +108,9 @@ ms.locfileid: "42071018"
     
 4. 高度な電子情報開示のケースに、コンテナーからの検索結果データを読み込むには、コンテナーを選択し、[**処理**] をクリックします。
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-電子情報開示検索の結果をケースに追加した後、次の手順では、高度な電子情報開示ツールを使用してデータを分析し、特定の訴訟に対応しているコンテンツを特定します。 Advanced eDiscovery の使用方法については、「 [Office 365 Advanced ediscovery](office-365-advanced-ediscovery.md)」を参照してください。
+電子情報開示検索の結果をケースに追加した後、次の手順では、高度な電子情報開示ツールを使用してデータを分析し、特定の訴訟に対応しているコンテンツを特定します。 高度な電子情報開示の使用方法については、「 [Advanced ediscovery (クラシック)](office-365-advanced-ediscovery.md)」を参照してください。
   
 ## <a name="more-information"></a>詳細情報
 

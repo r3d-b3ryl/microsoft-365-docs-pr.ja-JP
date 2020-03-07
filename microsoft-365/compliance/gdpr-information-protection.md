@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0bd09751ae3da311b753906b9c341a52a93b14f6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2b8bfa67a8af8686627e239b06c1025c3e8f3137
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596384"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557947"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>GDPR のための情報保護と Microsoft 365 の機能
 
@@ -60,4 +60,5 @@ Microsoft 365 サービス間での脅威保護を確立します。作業を開
 - [Windows の脅威保護](https://docs.microsoft.com/windows/security/threat-protection/)。Windows Defender Advanced Threat Protection とその他の Windows 10 の機能の詳細について説明します。
 
 ## <a name="learn-more"></a>詳細情報
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

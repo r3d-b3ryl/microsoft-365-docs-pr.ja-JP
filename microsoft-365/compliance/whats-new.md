@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 コンプライアンスセンターに新機能を継続的に追加し、学習した問題を修正し、フィードバックに基づいて変更を加えています。 今月の内容を確認してください。
-ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552041"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557596"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの新機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "42552041"
 
 ### <a name="insider-risk-management-is-officially-released"></a>Insider リスク管理が正式にリリースされている
 
-ドラムロール (ご記入ください)Insider リスク管理は、次のサブスクリプションを使用する組織で使用できるようになりました。
+ドラムロール (ご記入ください)<br>Insider リスク管理は、次のサブスクリプションを使用する組織で使用できるようになりました。
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (有料または試用版)
 - Microsoft 365 Enterprise E3 サブスクリプションと[Microsoft E5 コンプライアンスアドオン](https://go.microsoft.com/fwlink/?linkid=2120432)
@@ -47,7 +47,7 @@ ms.locfileid: "42552041"
 
 ### <a name="records-management"></a>レコード管理
 
-この新しいソリューションは、すべてのレコード管理機能を1つの包括的なものにします。 重要な点としては、SharePoint と OneDrive のレコードバージョン管理の導入やレコードの廃棄証明が挙げられます。
+この新しいソリューションにより、すべてのレコード管理機能が1つの包括的な下に表示されます。 重要な点としては、SharePoint と OneDrive のレコードバージョン管理の導入やレコードの廃棄証明が挙げられます。
 
 ![Microsoft 365 コンプライアンスセンターのレコード管理ページ](../media/mcc-records-management-page.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "42552041"
 
 ### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>ソリューションスポットライト: Facebook および Twitter のデータコネクタ
 
-データコネクタが先月[リリース](#just-launched)されました。次のコネクタをテストして、正常に動作することを検証するためのヘルプを探しています。
+先月[リリース](#just-launched)されたデータコネクタは、次のコネクタをテストするためのヘルプを探しています。
 
 - [Facebook ビジネスページ](archive-facebook-data-with-sample-connector.md) Facebook のビジネスページのデータをインポートし、Microsoft 365 にアーカイブします。 レコード管理や電子情報開示などのコンプライアンスソリューションに役立ちます。
 - [Twitter](archive-twitter-data-with-sample-connector.md)。 Twitter から Microsoft 365 にデータをインポートしてアーカイブします。 レコード管理や電子情報開示などのコンプライアンスソリューションに役立ちます。

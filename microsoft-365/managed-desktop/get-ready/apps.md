@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112661"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557575"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのアプリ
 
@@ -23,7 +23,7 @@ ms.locfileid: "41112661"
 
 Microsoft では、microsoft マネージドデスクトップに参加するために必要な Microsoft 365 E3 または E5 ライセンスと共に、特定の主要なアプリが含まれています。 ただし、これらのアプリが提供されている場合でも、一部の責任とアクションを完了することができます。
 
-また、Microsoft Intune の展開パイプラインを使用して、会社のポータルまたは必要なバックグラウンドインストールを通じて、Microsoft 以外の追加のアプリをエンドユーザーに展開することもできます。 専門知識があれば、必要なアプリを自分で移行できます。Microsoft コンサルティングサービス (MCS) または Microsoft 以外のベンダーのいずれかが、パッケージ化および移行プロジェクトを支援するのに役立ちます。 MCS の使用の詳細については、「 [Microsoft コンサルティングサービスを使用](apps-MCS.md)する」を参照してください。
+また、Microsoft Intune の展開パイプラインを使用して、会社のポータルまたは必要なバックグラウンドインストールを通じて、Microsoft 以外の追加のアプリをエンドユーザーに展開することもできます。 専門知識を持っている場合は、必要なアプリを自分で移行できます。または、Microsoft コンサルティングサービス (MCS) または Microsoft 以外のベンダーが、パッケージ化と移行のプロジェクトにお役立てください。 MCS の使用の詳細については、「 [Microsoft コンサルティングサービスを使用](apps-MCS.md)する」を参照してください。
 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft によって提供されるアプリ

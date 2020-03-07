@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f86e1109b7d2d10e13a7be35336ae485bedd96b6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c6f32258f4997db4cb806141414cffc808e63517
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073864"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558107"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft サポート/プロフェッショナル サービスと GDPR の下での違反の通知
 
@@ -100,4 +100,4 @@ Microsoft はデータ プロセッサとしての立場で、個人データ漏
 
 ## <a name="learn-more"></a>詳細情報
 
-Microsoft プロフェッショナル サービス (<https://aka.ms/pstrust>) の詳細をご確認ください。 
+Microsoft プロフェッショナル サービス (<https://aka.ms/pstrust>) の詳細をご確認ください。

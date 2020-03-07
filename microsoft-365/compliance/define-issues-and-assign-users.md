@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Office 365 Advanced eDiscovery でユーザーを割り当てたり、電子情報開示ケースの問題を削除したりするなど、案件を追加または編集する方法について説明します。
-ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075897"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556975"
 ---
-# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Office 365 で問題を定義してユーザーを割り当てる高度な電子情報開示
+# <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Advanced eDiscovery での問題の定義とユーザーの割り当て (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -76,7 +76,7 @@ ms.locfileid: "42075897"
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [インポートしたファイルを追加するためのロードの設定](set-up-loads-to-add-imported-files.md)
   

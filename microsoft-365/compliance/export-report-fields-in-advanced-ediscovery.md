@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 高度な電子情報開示のエクスポートレポートに含まれるすべてのフィールドについて説明します。
-ms.openlocfilehash: facd93422bbe41a9dc8c5f252cf08eab7fb308f2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594618"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558208"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Office 365 でレポートフィールドをエクスポートする高度な電子情報開示
+# <a name="export-report-fields-in-advanced-ediscovery-classic"></a>詳細な電子情報開示でレポートフィールドをエクスポートする (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -43,7 +43,7 @@ ms.locfileid: "41594618"
 |Native_file_name  <br/> |Processing  <br/> |ネイティブファイル名。フォルダーと拡張子を参照しません。  <br/> |はい  <br/> |はい  <br/> |
 |保管担当者  <br/> |全般  <br/> |ファイルの保管担当者。  <br/> |はい  <br/> |はい  <br/> |
 |Set_ID  <br/> |分析  <br/> |"ND set" または "Email set" id。  <br/> |はい  <br/> |はい  <br/> |
-|Inclusive_type  <br/> |メール  <br/> |次の値に従ってファイルが包含されているかどうかを示します。 0-包含ではない、1-包括、2: 包括的コピー。  <br/> |はい  <br/> |はい  <br/> |
+|Inclusive_type  <br/> |電子メール  <br/> |次の値に従ってファイルが包含されているかどうかを示します。 0-包含ではない、1-包括、2: 包括的コピー。  <br/> |はい  <br/> |はい  <br/> |
 |Marked_as_pivot  <br/> |重複の近似  <br/> |ファイルがピボットかどうかを示します。  <br/> |はい  <br/> |はい  <br/> |
 |Similarity_percent  <br/> |重複の近似  <br/> |ピボットに対する類似性の割合。  <br/> |はい  <br/> |はい  <br/> |
 |Duplicate_subset  <br/> |重複の近似  <br/> |重複したサブセットの一意の識別子。 ファイルが完全にテキストの複製であるかどうかを示します。  <br/> |はい  <br/> |はい  <br/> |
@@ -51,20 +51,20 @@ ms.locfileid: "41594618"
 |Dominant_theme  <br/> |分析  <br/> |ファイルの主なテーマ。  <br/> |はい  <br/> |はい  <br/> |
 |Themes_list  <br/> |テーマ  <br/> |テーマ名のリスト。  <br/> |はい  <br/> |はい  <br/> |
 |ND_set  <br/> |設定  <br/> |Nearduplicate セットの一意の数値識別子。  <br/> |はい  <br/> |はい  <br/> |
-|Email_set  <br/> |メール  <br/> |電子メールセットの一意の数値識別子。  <br/> |はい  <br/> |はい  <br/> |
-|Email_thread  <br/> |メール  <br/> |メールセット内の電子メールの位置について説明します。これは、ルートから現在の電子メールへのすべてのノード Id で構成され、ピリオドで区切られています。  <br/> |はい  <br/> |はい  <br/> |
-|Email_subject  <br/> |メール  <br/> |電子メールの件名。  <br/> |はい  <br/> |はい  <br/> |
-|Email_date_sent  <br/> |メール  <br/> |電子メールが送信された日付。  <br/> |はい  <br/> |はい  <br/> |
-|Email_participants  <br/> |メール  <br/> |電子メールスレッド内のすべての参加者の電子メールアドレス (欠落したリンクを含む)。  <br/> |はい  <br/> |はい  <br/> |
-|Email_participant_domains  <br/> |メール  <br/> |電子メールスレッド内のすべての参加者のドメイン (欠落したリンクを含む)。  <br/> |はい  <br/> |はい  <br/> |
-|Email_sender  <br/> |メール  <br/> |電子メールの送信者の名前またはアドレス。  <br/> |はい  <br/> |はい  <br/> |
-|Email_sender_domain  <br/> |メール  <br/> |電子メールの送信者のドメイン。  <br/> |はい  <br/> |はい  <br/> |
-|Email_to  <br/> |メール  <br/> |電子メールの受信者に送信します。  <br/> |はい  <br/> |はい  <br/> |
-|Email_cc  <br/> |メール  <br/> |電子メールの CC 受信者。  <br/> |はい  <br/> |はい  <br/> |
-|Email_bcc  <br/> |メール  <br/> |電子メールの BCC 受信者。  <br/> |はい  <br/> |はい  <br/> |
-|Email_recipient_domains  <br/> |メール  <br/> |電子メール受信者ドメイン (宛先、CC、および BCC)。  <br/> |はい  <br/> |はい  <br/> |
-|Email_date_received  <br/> |メール  <br/> |電子メールが受信された日付。  <br/> |はい  <br/> |はい  <br/> |
-|Email_action  <br/> |メール  <br/> |値: メールの件名に従ってください。 "Forward" ("FW:")、"Reply" ("RE:" の場合) または "その他" (他の件名テキスト)。  <br/> |はい  <br/> |はい  <br/> |
+|Email_set  <br/> |電子メール  <br/> |電子メールセットの一意の数値識別子。  <br/> |はい  <br/> |はい  <br/> |
+|Email_thread  <br/> |電子メール  <br/> |メールセット内の電子メールの位置について説明します。これは、ルートから現在の電子メールへのすべてのノード Id で構成され、ピリオドで区切られています。  <br/> |はい  <br/> |はい  <br/> |
+|Email_subject  <br/> |電子メール  <br/> |電子メールの件名。  <br/> |はい  <br/> |はい  <br/> |
+|Email_date_sent  <br/> |電子メール  <br/> |電子メールが送信された日付。  <br/> |はい  <br/> |はい  <br/> |
+|Email_participants  <br/> |電子メール  <br/> |電子メールスレッド内のすべての参加者の電子メールアドレス (欠落したリンクを含む)。  <br/> |はい  <br/> |はい  <br/> |
+|Email_participant_domains  <br/> |電子メール  <br/> |電子メールスレッド内のすべての参加者のドメイン (欠落したリンクを含む)。  <br/> |はい  <br/> |はい  <br/> |
+|Email_sender  <br/> |電子メール  <br/> |電子メールの送信者の名前またはアドレス。  <br/> |はい  <br/> |はい  <br/> |
+|Email_sender_domain  <br/> |電子メール  <br/> |電子メールの送信者のドメイン。  <br/> |はい  <br/> |はい  <br/> |
+|Email_to  <br/> |電子メール  <br/> |電子メールの受信者に送信します。  <br/> |はい  <br/> |はい  <br/> |
+|Email_cc  <br/> |電子メール  <br/> |電子メールの CC 受信者。  <br/> |はい  <br/> |はい  <br/> |
+|Email_bcc  <br/> |電子メール  <br/> |電子メールの BCC 受信者。  <br/> |はい  <br/> |はい  <br/> |
+|Email_recipient_domains  <br/> |電子メール  <br/> |電子メール受信者ドメイン (宛先、CC、および BCC)。  <br/> |はい  <br/> |はい  <br/> |
+|Email_date_received  <br/> |電子メール  <br/> |電子メールが受信された日付。  <br/> |はい  <br/> |はい  <br/> |
+|Email_action  <br/> |電子メール  <br/> |値: メールの件名に従ってください。 "Forward" ("FW:")、"Reply" ("RE:" の場合) または "その他" (他の件名テキスト)。  <br/> |はい  <br/> |はい  <br/> |
 |Meeting_Start_Date/Time  <br/> ||会議アイテムが開始された日付と時刻。  <br/> |はい  <br/> |はい  <br/> |
 |Meeting_End_Date/Time  <br/> ||会議アイテムが終了した日付と時刻。  <br/> |はい  <br/> |はい  <br/> |
 |File_relevance_score  <br/> |関連性  <br/> |関連性スコア (0-100)。 問題ごと。  <br/> |はい  <br/> |はい  <br/> |
@@ -114,12 +114,12 @@ ms.locfileid: "41594618"
 |Doc_subject  <br/> |ドキュメント プロパティ  <br/> |ドキュメントのプロパティ: subject。  <br/> |いいえ  <br/> |はい  <br/> |
 |Doc_template  <br/> |ドキュメント プロパティ  <br/> |ドキュメントのプロパティ: テンプレート。  <br/> |いいえ  <br/> |はい  <br/> |
 |Doc_title  <br/> |ドキュメント プロパティ  <br/> |ドキュメントのプロパティ: title。  <br/> |いいえ  <br/> |はい  <br/> |
-|Email_has_attachment  <br/> |メール  <br/> |電子メールに1つ以上の添付ファイルがあるかどうかを示します。  <br/> |いいえ  <br/> |はい  <br/> |
-|Email_importance  <br/> |メール  <br/> |電子メールの重要度プロパティ。  <br/> |いいえ  <br/> |はい  <br/> |
-|Email_level  <br/> |メール  <br/> |電子メールスレッド内の電子メールレベルを示します。 添付ファイルの場合は、添付された電子メールの値。  <br/> |いいえ  <br/> |はい  <br/> |
-|Email_recipients  <br/> |メール  <br/> |電子メール受信者の名前またはアドレス (宛先、CC、および BCC)。  <br/> |いいえ  <br/> |はい  <br/> |
-|Email_security  <br/> |メール  <br/> |電子メールのセキュリティプロパティ。  <br/> |いいえ  <br/> |はい  <br/> |
-|Email_sensitivity  <br/> |メール  <br/> |電子メールの秘密度のプロパティ。  <br/> |いいえ  <br/> |はい  <br/> |
+|Email_has_attachment  <br/> |電子メール  <br/> |電子メールに1つ以上の添付ファイルがあるかどうかを示します。  <br/> |いいえ  <br/> |はい  <br/> |
+|Email_importance  <br/> |電子メール  <br/> |電子メールの重要度プロパティ。  <br/> |いいえ  <br/> |はい  <br/> |
+|Email_level  <br/> |電子メール  <br/> |電子メールスレッド内の電子メールレベルを示します。 添付ファイルの場合は、添付された電子メールの値。  <br/> |いいえ  <br/> |はい  <br/> |
+|Email_recipients  <br/> |電子メール  <br/> |電子メール受信者の名前またはアドレス (宛先、CC、および BCC)。  <br/> |いいえ  <br/> |はい  <br/> |
+|Email_security  <br/> |電子メール  <br/> |電子メールのセキュリティプロパティ。  <br/> |いいえ  <br/> |はい  <br/> |
+|Email_sensitivity  <br/> |電子メール  <br/> |電子メールの秘密度のプロパティ。  <br/> |いいえ  <br/> |はい  <br/> |
 |Export_batch  <br/> |Processing  <br/> |ファイルの最終エクスポートバッチ名。  <br/> |いいえ  <br/> |はい  <br/> |
 |Export_session  <br/> |Processing  <br/> |ファイルの最終エクスポートセッション Id (日付を含む)。  <br/> |いいえ  <br/> |はい  <br/> |
 |Extracted_text_length  <br/> |Processing  <br/> |抽出されたテキストファイルの文字の長さ。  <br/> |いいえ  <br/> |はい  <br/> |
@@ -129,15 +129,15 @@ ms.locfileid: "41594618"
 |Native_SHA_256  <br/> |Processing  <br/> |SHA-256 ネイティブファイルのハッシュ値。  <br/> |いいえ  <br/> |はい  <br/> |
 |O365_authors  <br/> |ドキュメント プロパティ  <br/> |SharePoint または Exchange のいずれかのフィールドから取得した、ネイティブファイルを変更したユーザー。  <br/> |いいえ  <br/> |はい  <br/> |
 |O365_created_by  <br/> |ドキュメント プロパティ  <br/> |ネイティブファイルを作成したユーザー。 SharePoint または Exchange のいずれかのフィールドから取得されます。  <br/> |いいえ  <br/> |はい  <br/> |
-|Parent_node  <br/> |メール  <br/> |電子メールスレッド内のノードを、リンクがない最も近い親ノードに関連付けます。  <br/> |いいえ  <br/> |はい  <br/> |
-|Set_order_inclusives_first  <br/> |メール  <br/> |メールと添付ファイル: 時系列順 (Inclusives first)。 ドキュメント: 最初にピボットと rest を類似性スコアで降順に並べ替えます。  <br/> |いいえ  <br/> |はい  <br/> |
+|Parent_node  <br/> |電子メール  <br/> |電子メールスレッド内のノードを、リンクがない最も近い親ノードに関連付けます。  <br/> |いいえ  <br/> |はい  <br/> |
+|Set_order_inclusives_first  <br/> |電子メール  <br/> |メールと添付ファイル: 時系列順 (Inclusives first)。 ドキュメント: 最初にピボットと rest を類似性スコアで降順に並べ替えます。  <br/> |いいえ  <br/> |はい  <br/> |
 |Tagged_By  <br/> |関連性  <br/> |特定の問題に関連するファイルをタグ付けしたユーザー。  <br/> |いいえ  <br/> |はい  <br/> |
 |Word_count  <br/> |分析  <br/> |文書内の単語数を指定します。  <br/> |いいえ  <br/> |はい  <br/> |
 |
    
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [高度な電子情報開示を使用してケースデータをエクスポートする](export-case-data-in-advanced-ediscovery.md)
   

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ea6f4561a17acc81653e711d81d5c362c959f3ae
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5c8cd9e29b663c79d44a97d039bfdb5975e5d225
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073884"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558158"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Dynamics 365 アカウンタビリティ対応準備チェックリスト
 
@@ -152,5 +152,5 @@ GDPR 関連のドキュメントの詳細については、「https://aka.ms/gdp
 
 ## <a name="learn-more"></a>詳細情報
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Secure Trust Portal](https://aka.ms/gdprgetstarted)

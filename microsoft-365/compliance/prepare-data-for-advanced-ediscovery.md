@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'Microsoft 365 セキュリティ&amp;コンプライアンスセンターを使用して Office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
-ms.openlocfilehash: 028cdb48e5ece2509d175a363c19beb6c2fafa19
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 44ccb6250e28e0fa75f6d1a037236a100fca102c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071034"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557867"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Office 用データを準備する 365 Advanced eDiscovery
+# <a name="prepare-data-for-advanced-ediscovery-classic"></a>高度な電子情報開示用のデータを準備する (クラシック)
 
-このトピックでは、高度な電子情報開示のケースにコンテンツ検索の結果を読み込む方法について説明します。 
+このトピックでは、高度な電子情報開示 (クラシック) のケースにコンテンツ検索の結果を読み込む方法について説明します。 
   
 > [!IMPORTANT]
-> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Office 365 Advanced eDiscovery (*Advanced eDiscovery v1.0* とも呼ばれる) のサポート終了を発表しました。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。  
+> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は Office 365 Advanced ediscovery *(アドバンスト ediscovery (クラシック)* または*advanced ediscovery v 1.0*とも呼ばれる) の廃止を発表しています。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>手順 1: 高度な電子情報開示用に Office 365 データを準備する
 
@@ -67,7 +67,7 @@ ms.locfileid: "42071034"
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [ユーザーおよびケースをセットアップする](set-up-users-and-cases-in-advanced-ediscovery.md)
   

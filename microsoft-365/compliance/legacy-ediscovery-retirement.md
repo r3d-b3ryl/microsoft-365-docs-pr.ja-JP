@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
 ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600564"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543220"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -25,24 +25,24 @@ ms.locfileid: "41600564"
 
 この新しい電子情報開示機能の結果として、Microsoft 365 コンプライアンスセンターでは、Exchange Online および Office 365 での電子メールコンテンツの検索に関連する以下の電子情報開示関連の機能を廃止しています。
 
-- Exchange 管理センターでは、[インプレース電子情報開示](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)と[インプレース保持](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)が行われます。
+- Exchange 管理センターの[インプレース電子情報開示](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)および[インプレース ホールド](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
 - インプレース電子情報開示とインプレース保持をサポートする Exchange Online の PowerShell コマンドレット (これらのコマンドレットは、*get-mailboxsearch*コマンドレットと総称して識別されます)。 これには、次のコマンドレットが含まれます。
 
-  - [Get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
+  - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
 
-  - [Get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
+  - [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
 
-  - [Get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-mailboxsearch)
+  - [Stop-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-mailboxsearch)
 
-  - [Get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
+  - [Set-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
 
    > [!NOTE]
    > [Get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch)および[get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-mailboxsearch)コマンドレットは、他の * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * を破棄した後で使用可能に ただし、特定の日付 (後述) の Microsoft サポートは、これら2つのコマンドレットをサポートしなくなります。
 
-- Exchange Online PowerShell の[検索-メールボックス](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox?view=exchange-ps)コマンドレット。
+- Exchange Online PowerShell の [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox?view=exchange-ps) コマンドレット。
 
-- Exchange Web サービス API の次の操作。
+- Exchange Web Services API での次の操作。
 
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
@@ -71,13 +71,13 @@ ms.locfileid: "41600564"
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 Germany
+- Office 365 ドイツ
 
 ### <a name="timeline-for-retirement"></a>定年後のタイムライン
 
-- 2020年4月1日: 新しい検索と保持を作成することはできませんが、既存の検索を自分のリスクで実行、編集、削除することはできます。 Microsoft サポートは、EAC でのインプレース電子情報開示 & 保持を中止します。
+- 2020 年 4 月 1 日: 新しい検索と保留リストを作成できなくなりますが、ユーザーの自己責任において、既存の検索の実行、編集、および削除は引き続き行えます。 Microsoft サポートは、EAC でのインプレース電子情報開示 & 保持を中止します。
 
-- 2020年7月1日: インプレース電子情報開示 & は、EAC の機能を読み取り専用モードで保持します。 これは、既存の検索と保持を削除できることを意味します。
+- 2020 年 7 月 1 日: Exchange 管理センターのインプレース電子情報開示およびインプレース ホールドが読み取り専用モードに変更されます。 これにより、可能な操作は、既存の検索および保留リストの削除のみになります。
 
 ### <a name="alternative-tools"></a>代替ツール
 
@@ -88,7 +88,7 @@ ms.locfileid: "41600564"
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>Comments</strong></th>
+<th><strong>コメント</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -140,7 +140,7 @@ ms.locfileid: "41600564"
 </tbody>
 </table>
 
-### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>インプレースの電子情報開示とインプレース保持に関する Faq
+### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>インプレース電子情報開示とインプレース ホールドに関するよくある質問
 
 **EAC のインプレース電子情報開示 & 保持のコピー検索結果機能を使用して、弁護士によるレビューのために検索結果を証拠開示用メールボックスにコピーします。現在、どのようなオプションがありますか?**
 
@@ -168,7 +168,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 Germany
+- Office 365 ドイツ
 
 ### <a name="timeline"></a>タイムライン
 
@@ -185,7 +185,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>Comments</strong></th>
+<th><strong>コメント</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -210,7 +210,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 </tr>
 <tr class="odd">
 <td>検索結果を探索メールボックスにコピーする</td>
-<td>None</td>
+<td>なし</td>
 <td>この機能は、Microsoft 365 のすべてのサービスへのアクセスを提供しないので、直接交換することはできません。 代替ソリューションについては、以下の FAQ を参照してください。</td>
 </tr>
 </tbody>
@@ -242,7 +242,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 Germany
+- Office 365 ドイツ
 
 ### <a name="timeline"></a>タイムライン
 
@@ -257,7 +257,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>Comments</strong></th>
+<th><strong>コメント</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -297,7 +297,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 Germany
+- Office 365 ドイツ
 
 ### <a name="timeline"></a>タイムライン
 
@@ -317,7 +317,7 @@ Microsoft 365 の新しい高度な電子情報開示ソリューション (*上
 
 - Office 365 および Microsoft 365 エデュケーション組織
 
-- Office 365 Germany
+- Office 365 ドイツ
 
 ### <a name="timeline"></a>タイムライン
 

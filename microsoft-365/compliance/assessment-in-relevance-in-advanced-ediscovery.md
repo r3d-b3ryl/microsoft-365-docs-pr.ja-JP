@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Office 365 Advanced eDiscovery で関連性のトレーニングを実施して、さまざまな問題があるかどうかを判断するための評価ステージとその役割の概要を説明します。
-ms.openlocfilehash: 87da6fa480d272819894d439ba69081b0d8928d2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 46aef7300a6021e603edb8708ae01d8147b02722
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595984"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556795"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示の評価について理解する
+# <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>高度な電子情報開示で関連性のある評価を理解する (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -55,7 +55,7 @@ ms.locfileid: "41595984"
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [タグ付けと評価](tagging-and-assessment-in-advanced-ediscovery.md)
   

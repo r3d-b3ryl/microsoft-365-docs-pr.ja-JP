@@ -5,6 +5,8 @@ keywords: GDPR アカウンタビリティ対応準備、アカウンタビリ�
 localization_priority: Priority
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 49933990388688ad5f683b13c68447be4d6ce50f
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 26c7e15eab3d66f3daee180f213bf5d66cad15ff
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558084"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558148"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>Microsoft Office 365 に関するアカウンタビリティ対応準備チェックリスト
 
@@ -152,5 +154,5 @@ ms.locfileid: "41558084"
 
 ## <a name="learn-more"></a>詳細情報
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)

@@ -1,5 +1,5 @@
 ---
-title: 新しいデバイスをユーザー自身が登録する
+title: 新しいデバイスを自分で登録する
 description: Microsoft マネージドデスクトップで管理できるようにデバイスを自分で登録する
 ms.prod: w10
 author: jaimeo
@@ -7,14 +7,14 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41003a7137b864b52f823debcd72c72ca55045d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085042"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557555"
 ---
-# <a name="register-new-devices-yourself"></a>新しいデバイスをユーザー自身が登録する
+# <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
 Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Azure Portal で Microsoft Managed Desktop を使用してデバイスを登録できます。
 
@@ -72,7 +72,7 @@ Microsoft マネージドデスクトップは、ハードウェアハッシュ�
 CSV ファイルは、登録用に特定の形式である必要があります。 前の手順でデータを自分で収集した場合は、ファイルが正しい形式になっている必要があります。業者からファイルを取得する場合は、形式を調整する必要があります。
 
 >[!NOTE]
->便宜上、[サンプルの CSV ファイル](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)をダウンロードすることができます。
+>便宜上、[サンプルの CSV ファイル](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv)をダウンロードすることができます。
 
 ファイルには、サンプル 1 (製造元、モデルなど) と**まったく同じ列見出し**を含める必要がありますが、その他の行については独自のデータを含める必要があります。 テンプレートを使用している場合は、メモ帳などのテキスト編集ツールでそのテンプレートを開き、行1のみにデータを入力し、2行以下にデータを入力することを検討します。 
     

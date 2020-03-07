@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'タスクの状態とプロセスの概要を含む、Office 365 のアドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。  '
-ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068845"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557605"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Office 365 のプロセスモジュールの結果の表示の詳細電子情報開示
+# <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>アドバンスド電子情報開示でのプロセスモジュールの結果の表示 (クラシック)
 
 **準備** \> **プロセス**が開始されると、進行状況と結果を表示できるようになります。 
   
@@ -110,7 +110,7 @@ ms.locfileid: "42068845"
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [プロセスモジュールの実行とデータの読み込み](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

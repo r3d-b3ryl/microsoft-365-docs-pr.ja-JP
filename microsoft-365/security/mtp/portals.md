@@ -1,7 +1,7 @@
 ---
 title: Microsoft セキュリティポータルと管理センター
 description: Microsoft 365 セキュリティに関連するさまざまなサービスを管理するための適切な Microsoft 管理センターまたはポータルを見つける
-keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティセンター、管理センター、URL、リンク、MTP、Azure ATP、Office 365 ATP、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、OATP、AATP
+keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティセンター、管理センター、URL、リンク、MTP、Microsoft Defender ATP、Microsoft Defender セキュリティセンター、Azure ATP、Office 365 ATP、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、OATP、AATP、Cloud App Security、Azure AD、セキュリティ & コンプライアンスセンター
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24bfd07b4b7baf9082ef99691fb1048e1f0b655e
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 98bfa8da792bfc5b75d1a2532492c2de6071f1b1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42336916"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558238"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティポータルと管理センター
-[Microsoft 365 セキュリティセンター](overview-security-center.md)は、id、データ、デバイス、アプリのセキュリティを監視および管理するための新しいホームですが、特定の特別なタスクについてはさまざまなポータルにアクセスする必要があります。
+[Microsoft 365 セキュリティセンター](overview-security-center.md)は、id、データ、デバイス、およびアプリのセキュリティを監視および管理するための新しいホームですが、特定の特別なタスクについてはさまざまなポータルにアクセスする必要があります。
 
 > [!TIP] 
 > Microsoft 365 セキュリティセンターからさまざまな関連ポータルにアクセスするには、ナビゲーションウィンドウで [**その他のリソース**] を選択します。

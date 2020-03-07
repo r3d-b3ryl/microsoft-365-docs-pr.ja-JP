@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '分析プロセスの概要を説明します。これにより、Office 365 の Advanced eDiscovery でパラメーター、実行オプション、および結果の表示を設定できます。 '
-ms.openlocfilehash: ff26d0ce28d725cb922c228ff4b6ddf9ab174757
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596124"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556805"
 ---
-# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示を使用してケースデータを分析する
+# <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>上級電子情報開示を使用してケースデータを分析する (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -45,7 +45,7 @@ Analyze を実行する前に、どのロードされたファイルを分析す
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   

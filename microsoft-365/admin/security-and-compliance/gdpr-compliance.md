@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Microsoft 365 Business が一般的なデータ保護規則 (GDPR) プロセスについてどのように役立つかについて説明します。
-ms.openlocfilehash: 1d3b3485625996c0840a630c1b903c866bd01dbe
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a2df3fb52536cd2caca247332bc1c54fbdbe668
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257214"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556965"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR の簡略化: 中小企業向けのガイド
 
@@ -157,7 +157,8 @@ GDPR の準備をするために、次の手順を実行するための推奨事
   
 ## <a name="additional-resources"></a>その他のリソース
 
-[Microsoft Trust Center GDPR の概要](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center GDPR の概要](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)
   
 オフィシャルの Microsoft ブログ: [microsoft の GDPR へのコミットメント](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
   

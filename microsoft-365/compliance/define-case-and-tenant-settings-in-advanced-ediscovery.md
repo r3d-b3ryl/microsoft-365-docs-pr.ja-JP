@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Office 365 Advanced eDiscovery のケースレベルで定義できるラベル、クロスモジュール、およびテナントの設定について説明します。  '
-ms.openlocfilehash: 2d482c7409c546042488ba4f0c7cc74571152e86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f206feaa48f13db48552fb7d1be1445609edeae
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595374"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556945"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示のケースとテナントの設定を定義する
+# <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>高度な電子情報開示でケースとテナントの設定を定義する (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -52,7 +52,7 @@ ms.locfileid: "41595374"
     
   - **ケースページ**
     
-3. [**保存**] をクリックします。
+3. **[保存]** をクリックします。
     
 ## <a name="tenant-settings"></a>テナントの設定
 
@@ -90,7 +90,7 @@ ms.locfileid: "41595374"
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [ユーティリティを使用する](use-advanced-ediscovery-utilities.md)
 

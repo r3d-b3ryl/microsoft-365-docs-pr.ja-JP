@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Office 365 Advanced eDiscovery の関連性トレーニング段階で、40ファイルのトレーニングサンプルをタグ付けして操作する手順について説明します。  '
-ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069575"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557717"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Office 365 のタグ付けと関連性トレーニングの詳細な電子情報開示
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Advanced eDiscovery でのタグ付けと関連性トレーニング (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -50,7 +50,7 @@ ms.locfileid: "42069575"
 |-----|-----|-----|-----|
 |R  <br/> |対応  <br/> |Z  <br/> |Shift + Z  <br/> |
 |NR  <br/> |該当なし  <br/> |X  <br/> |Shift + X  <br/> |
-|Skip  <br/> |Skip  <br/> |C  <br/> |Shift + A  <br/> |
+|スキップ  <br/> |スキップ  <br/> |C  <br/> |Shift + A  <br/> |
    
   - ファイルに複数の問題が存在する場合、1つの問題にタグ付けすると、選択範囲は次の問題に移動します (存在する場合)。 
     
@@ -100,7 +100,7 @@ ms.locfileid: "42069575"
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [関連性の評価について](assessment-in-relevance-in-advanced-ediscovery.md)
   

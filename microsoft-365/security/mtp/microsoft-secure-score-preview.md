@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d4c71b2f3c575f21ee2693c3d371c263813c2324
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087578"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558248"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft セキュリティスコア (プレビュー)
 
@@ -92,11 +92,11 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 より迅速に必要な情報を提供するために、Microsoft の改善アクションがグループに分類されています。
 
-* Identity (azure AD アカウント & の役割、および Azure ATP が近日中の場合)
+* Identity (Azure AD アカウント & の役割)
 * データ (Microsoft Information Protection)
-* デバイス (Microsoft Defender ATP デバイス)
+* デバイス (現時点では改善アクションはありません)
 * アプリ (Office 365 および Microsoft Cloud App Security を含む、電子メールおよびクラウドアプリ)
-* インフラストラクチャ (Azure リソース)
+* インフラストラクチャ (現時点では改善アクションはありません)
 
 [Microsoft セキュリティスコアの概要] ページでは、これらのグループ間のポイントの分割方法と、使用可能なポイントを確認できます。 また、概要ページでは、スコアの合計を表示し、セキュリティで保護されたスコアの傾向をベンチマーク比較によって把握し、スコアを向上させるために実行できる改善措置の優先順位付けを行うことができます。
 
@@ -111,7 +111,7 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 ランク付けは、残っている残りのポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいています。 最も順位の高い向上アクションには、低い問題点、ユーザーへの影響、および複雑さが残った大きなポイントがあります。
 
-### <a name="actions"></a>操作
+### <a name="actions"></a>アクション
 
 特定の改善アクションを選択すると、完全なページポップアップが表示されます。  
 

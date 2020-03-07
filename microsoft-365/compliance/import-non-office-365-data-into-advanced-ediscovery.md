@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: O365 に格納されていないコンテンツを Azure blob にインポートして、AeD で分析できるようにする手順
-ms.openlocfilehash: 7a06bff3abe70e58ab08edcc456bc167229b05f2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 529eb21117ed2cdfbb7f02caf058dbc6863d2d9b
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072984"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557897"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>高度な電子情報開示分析のために Office 365 以外のコンテンツをインポートする
+# <a name="import-non-office-365-content-for-advanced-ediscovery-classic-analysis"></a>Office 以外の365コンテンツをインポートして高度な電子情報開示 (クラシック) 分析を行う
 
 Office 365 の高度な電子情報開示で分析する必要があるすべてのドキュメントが Office 365 に存在するわけではありません。 Advanced 電子情報開示の Office 365 以外のコンテンツインポート機能を使用すると、Office 365 に存在しないドキュメント (PST ファイルを除く) を、ケースにリンクされた Azure ストレージ blob にアップロードし、アドバンスト eDiscovery で分析することができます。 この手順では、非 Office 365 ドキュメントを分析のために上級電子情報開示に移行する方法を示します。
   

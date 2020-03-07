@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Office 365 Advanced eDiscovery で関連性トレーニングを実行する前に、インポートされたファイルを最後に定義したロードまたはバッチファイルに追加する手順を確認します。  '
-ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081100"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557767"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示でインポートされたファイルを追加するためのロードを設定する
+# <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Advanced eDiscovery でインポートされたファイルを追加するためのロードを設定する (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -53,7 +53,7 @@ ms.locfileid: "42081100"
     
 4. [**ファイルの追加**] をクリックします。 ファイルがロードに追加され、確認メッセージが表示されます。 
     
-5. **[OK]** をクリックします。
+5. [**OK**] をクリックします。
     
 ファイルをトレーニングするために、上級電子情報開示の関連性でファイルを処理できるようになりました。
   
@@ -138,7 +138,7 @@ ms.locfileid: "42081100"
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
   
 [問題の定義とユーザーの割り当て](define-issues-and-assign-users.md)
   
