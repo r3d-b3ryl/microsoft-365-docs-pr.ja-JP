@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 6c461cd049cb89a2de0dbfc4cb1a5f8ea28c3ea6
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: eea03384b77dbcea29196c9f8142f748af0bf5be
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543135"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557588"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -35,6 +35,8 @@ ms.locfileid: "42543135"
 秘密度ラベルを使用して組織のデータを保護する準備ができたら、次の手順に従います。
 
 1. **ラベルを作成する。** コンテンツのさまざまなレベルに対する組織の分類方法に従って、秘密度ラベルを作成して名前を付けます。 ユーザーにとって意味のある、一般的な名前または用語を使用します。 分類方法がまだ確率していない場合は、「個人用」、「パブリック」、「一般」、「社外秘」、および「極秘」などのラベル名を使って使用開始することを検討してください。 サブラベルを使用すると、類似したラベルをカテゴリ別にグループ化できます。 ラベルを作成するときは、ユーザーが適切なラベルを選択できるよう、ツールヒントのテキストを使用します。
+    
+    分類法を定義するためのより広範なガイダンスについては、[Service Trust Portal](https://aka.ms/DataClassificationWhitepaper) のホワイト ペーパー「データ分類と秘密度ラベルの分類」をダウンロードしてください。
 
 2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、秘密度の低いコンテンツ (「一般」ラベルなど) には単にヘッダーやフッターを適用し、秘密度のより高いコンテンツ (「社外秘」ラベルなど) には透かし、暗号化、および WIP を適用することができます。
 

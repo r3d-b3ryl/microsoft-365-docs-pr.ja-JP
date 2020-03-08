@@ -5,6 +5,8 @@ keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメ�
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0c0e5b64742b56d950702d67c26b61e1784ac37e
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6bafb00e879831a21fa80a8005e53fff0e5d95f4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558054"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558178"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -43,7 +45,7 @@ GDPR では、欧州連合 (EU) 内の人々に商品やサービスを提供す
 |**領域**|**タスク**|
 |:-----|:-----|
 | **GDPR 要件を理解して、Microsoft の GDPR アドバイザリ パートナーと連携することを検討します。** |• [Microsoft GDPR 評価ツール](https://discover.microsoft.com/gdpr-readiness-assessment)を使用して、準備状況を個人的にベンチマーク評価し、次のステップの推奨事項を確認してください。<br>• 組織の GDPR 評価を実施するために、[Microsoft コンプライアンス スコア](compliance-score.md)を [Microsoft Service Trust Portal](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 内で使用してコンプライアンス リスクを評価および管理します。<br>• Microsoft の [GDPR アドバイザリ パートナー](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/)と協力して、データ主体の要求 (DSR) および DSR からの除外に対応するための社内ガイドラインを確立します。<br>• Microsoft の GDPR アドバイザリ パートナーと協力して、組織の GDPR コンプライアンスのギャップ分析を実施し、GDPR コンプライアンスへの行程を図化するロードマップを作成します。<br>• Microsoft 365 コンプライアンス センターの[GDPR ダッシュボードとデータ サブジェクト要求機能](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c)の使用方法について確認します。 |
-| **DSR に準拠するために、保持している個人データの種類や保管場所を把握します。** |• メールボックス、パブリック フォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、One Drive for Business サイト、Skype for Business の会話を簡単に検索するには、[コンテンツ検索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)と[電子情報開示のケース](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c)を使用します。 [機密情報の種類](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)を使用して EU 市民の個人データを検索する方法をご確認ください<br>• 膨大な量のコンテンツを扱う場合は、機械学習テクノロジによる [Office 365 Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4) を使用して、特定のサブジェクトに関連するドキュメントを、従来のキーワード検索よりも正確かつ迅速に特定します (コンプライアンス調査など)。<br>• Office 365 セキュリティ/コンプライアンス センターを使用して、検索結果のプレビュー、1 つ以上の検索のキーワード統計情報の取得、コンテンツ検索の一括編集、[結果のエクスポート](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278)を行います。|
+| **DSR に準拠するために、保持している個人データの種類や保管場所を把握します。** |• メールボックス、パブリック フォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、One Drive for Business サイト、Skype for Business の会話を簡単に検索するには、[コンテンツ検索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)と[電子情報開示のケース](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c)を使用します。 [機密情報の種類](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)を使用して EU 市民の個人データを検索する方法をご確認ください<br>• 膨大な量のコンテンツを扱う場合は、機械学習テクノロジによる [Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4) (クラシック) を使用して、特定のサブジェクトに関連するドキュメントを、従来のキーワード検索よりも正確かつ迅速に特定します (コンプライアンス調査など)。<br>• Office 365 セキュリティ/コンプライアンス センターを使用して、検索結果のプレビュー、1 つ以上の検索のキーワード統計情報の取得、コンテンツ検索の一括編集、[結果のエクスポート](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278)を行います。|
 
 ## <a name="90-days--enhanced-protections"></a>90 日間 — 保護の強化
 
@@ -68,4 +70,4 @@ GDPR では、欧州連合 (EU) 内の人々に商品やサービスを提供す
 - 情報コミッショナー事務局による[一般データ保護規則 (GDPR) の手引き](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/)
 - 情報コミッショナー事務局による[小規模組織向けの一般データ保護規則 (GDPR) に関する FAQ](https://ico.org.uk/for-organisations/business/guide-to-the-general-data-protection-regulation-gdpr-faqs/)
 - [Microsoft.com/GDPR](https://www.microsoft.com/trustcenter/Privacy/GDPR)
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

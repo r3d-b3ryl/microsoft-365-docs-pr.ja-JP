@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Office 365 セキュリティ&amp;コンプライアンス センターから Office 365 Advanced eDiscovery にアクセスする方法を説明し、Advanced eDiscovery を使用するための一般的なワークフローを確認します。  '
-ms.openlocfilehash: e1af09caf57509bf472a766c9d9124ea969acc4e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1f434fe87fd93ebee03c4300c67214011f646134
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070301"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557847"
 ---
-# <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery のクイック セットアップ
+# <a name="quick-setup-advanced-ediscovery-classic"></a>Advanced eDiscovery (クラシック) のクイック セットアップ
 
 > [!IMPORTANT]
-> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Office 365 Advanced eDiscovery (*Advanced eDiscovery v1.0* とも呼ばれる) のサポート終了を発表しました。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
+> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Office 365 Advanced eDiscovery (*Advanced eDiscovery (クラッシック)* または *Advanced eDiscovery v1.0* とも呼ばれる) のサポート終了を発表しました。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
 
 このセットアップ セクションでは、Microsoft 365 セキュリティ&amp;コンプライアンス センターの電子情報開示管理者に、Advanced eDiscovery を開始する方法を示します。 両方に関して、実際上の知識があるものと想定しています。
   
@@ -73,7 +73,7 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [ユーザーとケースのセットアップ](set-up-users-and-cases-in-advanced-ediscovery.md)
   

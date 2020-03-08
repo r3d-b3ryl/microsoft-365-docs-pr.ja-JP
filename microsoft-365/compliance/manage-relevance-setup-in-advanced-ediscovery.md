@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: ファイルをそれぞれの関連度でスコアリングして分析結果を生成するには、Office 365 Advanced eDiscovery で関連度トレーニングを設定するための推奨事項を参照してください。
-ms.openlocfilehash: 1a88d554d06b575f3efb0d01534008b6c35032e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600504"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557887"
 ---
-# <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery で関連度の設定を管理する
+# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Advanced eDiscovery (クラシック) で関連度の設定を管理する
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -73,7 +73,7 @@ ms.locfileid: "41600504"
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [問題の定義とユーザーの割り当て](define-issues-and-assign-users.md)
   
