@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
-ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
+ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42370486"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551822"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
 Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 Microsoft 365 の高度な監査のリリースにより、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能が追加されました。
 
 > [!NOTE]
-> 高度な監査は、Office 365 または Microsoft 365 Enterprise E5 サブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン サブスクリプションは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。
+> 高度な監査は、Office 365 E5 または Microsoft 365 Enterprise E5 サブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン ライセンスは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。
 
 この記事では、これらの高度な監査機能の概要について説明します。
 
