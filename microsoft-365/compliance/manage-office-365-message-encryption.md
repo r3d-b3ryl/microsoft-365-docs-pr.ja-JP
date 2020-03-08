@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web に [保護] ボタンを表示したり、その他の設定を行ったりすることができます。 この記事のタスクでは、その方法について説明します。
-ms.openlocfilehash: fa328abc36ffa0d22bb2c96114b3bbb3dfa12ed3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 102d57681e049bf803b377fea97cc0fdb11affb2
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600514"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562026"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption を管理する
 
@@ -173,27 +173,15 @@ Office 365 で、[暗号化のみ] オプションを使用してメールおよ
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only"></a>すべての外部受信者が OME ポータルを使用して暗号化されたメールを読み取ることを確認する-Office 365 Advanced Message Encryption のみ
+## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>すべての外部受信者が OME ポータルを使用して暗号化されたメールを読み取ることを確認する
 
-Office 365 の高度なメッセージ暗号化を使用している場合は、カスタムブランド化テンプレートを使用して、受信者が Outlook または web 上の Outlook を使用するのではなく、OME ポータルで暗号化された電子メールを読むように指示するラッパーメールを受信者に送信させることができます。 受信者が受信するメールの使用方法をより細かく制御する場合は、この操作を行うことをお勧めします。 たとえば、外部の受信者が web ポータルで電子メールを表示する場合、電子メールの有効期限を設定し、電子メールを取り消すことができます。 これらの機能は、OME ポータルでのみサポートされています。 メールフロールールを作成するときは、[暗号化] オプションと [転送不可] オプションを使用できます。
+カスタムブランド化テンプレートを使用すると、受信者が Outlook または web 上の Outlook を使用するのではなく、OME ポータルで暗号化された電子メールを読み取ることを指示するラッパーメールを強制的に受信することができます。 受信者が受信するメールの使用方法をより細かく制御する場合は、この操作を行うことをお勧めします。 たとえば、外部の受信者が web ポータルで電子メールを表示する場合、電子メールの有効期限を設定し、電子メールを取り消すことができます。 これらの機能は、OME ポータルでのみサポートされています。 メールフロールールを作成するときは、[暗号化] オプションと [転送不可] オプションを使用できます。
 
-### <a name="create-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email-to-be-revocable-and-expire-in-7-days"></a>カスタムテンプレートを作成して、すべての外部受信者が OME ポータルを使用するようにし、暗号化された電子メールを revocable に、7日間で期限切れにするようにします。
+### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>カスタムテンプレートを使用して、すべての外部受信者が OME ポータルと暗号化された電子メールを強制的に使用するようにする
 
 1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始して Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
 
-2. 新しい-OMEConfiguration コマンドレットを実行します。
-
-   ```powershell
-   New-OMEConfiguration -Identity "<template name>" -ExternalMailExpiryInDays 7
-   ```
-
-   `template name`は、Office 365 メッセージ暗号化カスタムブランド化テンプレートに使用する名前です。 For example,
-
-   ```powershell
-   New-OMEConfiguration -Identity "<One week expiration>" -ExternalMailExpiryInDays 7
-   ```
-
-3. New-transportrule コマンドレットを実行します。
+2. New-transportrule コマンドレットを実行します。
 
    ```powershell
    New-TransportRule -name "<mail flow rule name>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "<option name>" -ApplyRightsProtectionCustomizationTemplate "<template name>"
@@ -205,18 +193,18 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 
    - `option name`は、 `Encrypt`また`Do Not Forward`はのいずれかです。
 
-   - `template name`は、カスタムブランド化テンプレートに指定した名前です`One week expiration`(例:)。
+   - `template name`は、カスタムブランド化テンプレートに指定した名前です`OME Configuration`(例:)。
 
-   [1 週間の有効期限] テンプレートを使用してすべての外部電子メールを暗号化し、暗号化のみのオプションを適用するには、次のようにします。
+   「1週間の販売」テンプレートを使用してすべての外部電子メールを暗号化し、暗号化のみのオプションを適用するには、次のようにします。
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
-   [1 週間の有効期限] テンプレートを使用してすべての外部電子メールを暗号化し、[転送しない] オプションを適用するには、次の手順を実行します。
+   "OME Configuration" テンプレートを使用してすべての外部電子メールを暗号化し、[転送しない] オプションを適用するには、次の手順を実行します。
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>電子メールメッセージと OME ポータルの外観をカスタマイズする

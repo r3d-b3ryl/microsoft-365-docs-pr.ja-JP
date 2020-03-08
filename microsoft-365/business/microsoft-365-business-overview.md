@@ -22,18 +22,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business について説明しています。サブスクリプションサービスには、Office 365 に加えて、ビジネスのための高度な保護がサイバーの脅威に対して含まれています。
-ms.openlocfilehash: 508262daa9367ebd3b973a7a519fbb953d719fb1
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 7b939a9037edbe074a5ef9aa24451fe462016ccb
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547853"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561482"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 

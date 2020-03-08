@@ -21,18 +21,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business、セットアップ方法、およびユーザーのデバイスと Pc を準備して Microsoft 365 Business で保護されるようにする方法について説明します。
-ms.openlocfilehash: f6fd73762c0b57777c19d32886f758875e2e7e6a
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 220fb747e2bc501f3f6d46d967b30d2e5fd79a4a
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547733"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561442"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
 
@@ -98,7 +98,7 @@ Microsoft 365 Business のセットアップの概要については、このビ
 オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルの Active Directory を保持する場合は、「 [Microsoft 365 Business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、 **azure ad に参加**しているデバイスにこれらのリソースへのアクセス権を与えることができます。
   
   
-## <a name="contact-support"></a>サポートに連絡
+## <a name="contact-support"></a>サポートに連絡する
 
  **サポートに連絡する場合:**
   

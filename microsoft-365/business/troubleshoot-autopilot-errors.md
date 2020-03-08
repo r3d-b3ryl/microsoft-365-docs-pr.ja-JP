@@ -20,19 +20,19 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: Microsoft 365 Business で自動操縦デバイスファイルを操作するときに表示される可能性のあるエラーのトラブルシューティング方法について説明します。
-ms.openlocfilehash: 7569f18097a1f5959b3dd491958c78886e1e05d6
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: dc1abd508156c8525859f6ca7e291ab38fc8859c
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547473"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560702"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>AutoPilot デバイス エラーのトラブルシューティング
 
