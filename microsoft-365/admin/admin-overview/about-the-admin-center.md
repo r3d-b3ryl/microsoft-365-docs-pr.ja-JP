@@ -25,7 +25,7 @@ ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
 ms.openlocfilehash: cee2be9f4d1a0029e48f7c83619bafd00c42c044
 ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/04/2020
 ms.locfileid: "42409472"
