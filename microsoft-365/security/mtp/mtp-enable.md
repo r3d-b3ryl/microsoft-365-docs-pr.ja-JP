@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73c4c9864713432d318b0b3cec9fbaf395deff45
-ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
+ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374148"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569175"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -36,7 +36,7 @@ Microsoft Threat Protection は、Microsoft Defender Advanced Threat Protection 
 最適な保護を実現し、Microsoft の脅威保護を最適化するには、ネットワークにすべての該当するサポートされているサービスを展開することをお勧めします。 詳細については、「[サポートされるサービスの展開について](deploy-supported-services.md)」を参照してください。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>ライセンスの利用資格と必要なアクセス許可を確認する
-Microsoft 365 E5、E5 セキュリティ、A5、または A5 セキュリティライセンス、あるいはライセンスの有効な組み合わせは、サポートされるサービスへのアクセスを提供し、Microsoft 365 セキュリティセンターで Microsoft の脅威保護を使用することができます。
+Microsoft 365 E5、E5 セキュリティ、または A5 ライセンス、あるいはライセンスの有効な組み合わせは、サポートされているサービスへのアクセスを提供し、microsoft の脅威保護を Microsoft 365 セキュリティセンターで使用することができます。
 
 ライセンスの詳細については、[ライセンス要件を参照して](prerequisites.md#licensing-requirements)ください。
 
@@ -88,7 +88,7 @@ Microsoft サポートスタッフは、テナントのサービスおよび関�
 
 - [Microsoft Threat Protection の概要](microsoft-threat-protection.md)
 - [ライセンス要件およびその他の前提条件](prerequisites.md)
-- [サポートされているサービスを展開する](deploy-supported-services.md)
+- [サポートされるサービスを展開する](deploy-supported-services.md)
 - [Microsoft Defender ATP の概要](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Office 365 ATP の概要](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security の概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)

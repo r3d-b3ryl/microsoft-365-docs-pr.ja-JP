@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 3e18759387525ec600c24f74c96d6cddf206fc82
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372055"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569047"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -40,8 +40,6 @@ Microsoft の脅威保護を使用するには、次の*いずれか*のライ�
 - Microsoft 365 E5 Security
 - Office 365 E5 および "Enterprise Mobility + Security E5 (EMS E5)" および Windows E5
 - Microsoft 365 A5
-- Microsoft 365 A5 Security
-- Office 365 A5 および「Enterprise Mobility + Security A5 (EMS A5)」および「Windows A5」
 
 詳細については、 [Microsoft 365 Enterprise service プランを参照して](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)ください。
 

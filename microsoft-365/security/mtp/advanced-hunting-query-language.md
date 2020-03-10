@@ -1,7 +1,7 @@
 ---
 title: Microsoft Threat Protection で高度な捜索のクエリ言語について学習する
 description: 最初の脅威の捜索クエリを作成し、一般的な演算子と高度な捜索クエリ言語の他の側面について学習する
-keywords: 高度な検索、脅威の検索、サイバー脅威の検出、microsoft の脅威の保護、microsoft 365、mtp、m365、検索、クエリ、言語、学習、最初のクエリ、テレメトリ、イベント、テレメトリ、カスタムの検出、スキーマ、kusto、演算子、データ型
+keywords: 高度な検索、脅威の探し、サイバーの脅威の検出、microsoft の脅威の防止、microsoft 365、mtp、m365、search、query、language、学べ、first query、テレメトリ、イベント、テレメトリ、カスタム検出、スキーマ、kusto、operators、データ型、powershellダウンロード、クエリの例
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,83 +17,96 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eda9b893057afd54a644f0091bf4e1b421bd5439
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234696"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42567033"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
 **適用対象:**
 - Microsoft Threat Protection
 
-
-
 高度な捜索は、[Kusto クエリ言語](https://docs.microsoft.com/azure/kusto/query/)に基づいています。 Kusto 構文および演算子を使用して、高度な捜索用に特別に構造化された[スキーマ](advanced-hunting-schema-tables.md)内の情報を検索するクエリを作成できます。 これらの概念をよりよく理解するために、最初のクエリを実行します。
 
 ## <a name="try-your-first-query"></a>最初のクエリを試してみる
 
-Microsoft 365 セキュリティ センターで、[**捜索**] に移動して最初のクエリを実行します。 次の例を使用してください。
+Microsoft 365 セキュリティセンターで、「検索 **」に移動**して最初のクエリを実行します。 次の例を使用してください。
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents 
+// Finds PowerShell execution events that could involve a download
+union DeviceProcessEvents, DeviceNetworkEvents
 | where Timestamp > ago(7d)
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
 これは、高度な捜索でどのように見えるかを示します。
 
-![Microsoft Defender ATP の高度な捜索クエリの画像](../../media/advanced-hunting-query-example.png)
+![Microsoft Threat Protection の高度な検索クエリの画像](../../media/advanced-hunting-query-example.png)
 
-クエリは、まず、目的を説明する短いコメントから始まります。 これは、後でクエリを保存し、組織内の他のユーザーと共有することを決定した場合に役立ちます。
+クエリの先頭に短いコメントが追加されました。その目的について説明します。 これは、後でクエリを保存して組織内の他のユーザーと共有する場合に便利です。 
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents
+// Finds PowerShell execution events that could involve a download
 ```
 
-通常、クエリ自体はテーブル名から始まり、続いてパイプ (`|`) で始まる一連の要素が続きます。 この例では、まずテーブル名 `DeviceProcessEvents` を追加し、必要に応じてパイプ要素を追加します。
+通常、クエリ自体はテーブル名から始まり、続いてパイプ (`|`) で始まる一連の要素が続きます。 この例では、まず、2つのテーブル`DeviceProcessEvents`のユニオンを作成`DeviceNetworkEvents`し、を、必要に応じてパイプライン処理された要素を追加します。
 
-最初のパイプ要素は、過去 7 日間に限定された時間フィルターです。 時間範囲をできる限り狭くすることで、クエリが適切に実行され、管理可能な結果が返され、タイムアウトが回避されます。
+```kusto
+union DeviceProcessEvents, DeviceNetworkEvents
+```
+最初のパイプライン処理された要素は、前の7日間を対象範囲とする時間フィルターです。 時間範囲をできる限り狭くすることで、クエリが適切に実行され、管理可能な結果が返され、タイムアウトが回避されます。
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
-時間範囲の直後に、PowerShell アプリケーションを表すファイルを検索します。
+時間範囲の直後には、PowerShell アプリケーションを表すプロセスファイル名の検索が続きます。
 
-```kusto
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
+```
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
-その後、クエリは通常、ファイルをダウンロードするために PowerShell で使用されるコマンド ラインを探します。
+その後、PowerShell を使用してファイルをダウンロードするために通常使用されるコマンドラインの文字列を検索します。
 
 ```kusto
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
 ```
-
-クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義する要素を追加できます。 `project` は特定の列を返し、`top` は結果の数を制限するため、結果が適切に書式設定され、適度に大きく、処理も簡単になります。
+クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義する要素を追加できます。 `project`特定の列を`top`返し、結果の数を制限して、結果が適切に書式設定され、大幅に処理しやすいことを確認するのに役立ちます。
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-[**クエリの実行**] をクリックして結果を確認します。 画面表示を拡大すると、捜索クエリと結果に集中できます。
+[**クエリの実行**] をクリックして結果を確認します。 クエリエディターの右上にある展開アイコンを選択して、お探しのクエリと結果にフォーカスします。
+
+![高度な検索クエリエディターの展開コントロールのイメージ](../../media/advanced-hunting-expand.png)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>高度な捜索のための一般的なクエリ演算子を学習する
 
