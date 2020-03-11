@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678923"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42587296"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -62,8 +62,8 @@ ms.locfileid: "41678923"
 |MarkAsSpamBulkMail|オン|オン|この設定は、PowerShell でのみ使用できます。|
 
 推奨されていない高度なスパムフィルター (ASF) と呼ばれるスパム対策ポリシーには、他にもいくつかのパラメーターがあります。 これらの機能の減価償却のタイムラインの詳細については、このトピックの外に連絡します。
- 
- 標準レベルと厳密なレベルの両方で、これらの設定を**無効**にすることをお勧めします。
+
+標準レベルと厳密なレベルの両方で、これらの設定を**無効**にすることをお勧めします。
 
 |セキュリティ機能の名前|コメント|
 |---------|---------|
@@ -145,10 +145,9 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |スプーフィング対策保護を有効にする|オン|オン||
 |認証されていない送信者を有効にする (タグ付け)|オン|オン||
 |ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合|受信者の迷惑メールフォルダーにメッセージを移動する|メッセージを検疫する||
-|Enableauthenticationsaf Etytip|True|True|この設定は、PowerShell でのみ使用できます。|
-|Enableauthenticationsoftpass Saf Etytip|False|True|この設定は、PowerShell でのみ使用できます。|
 |EnableSuspiciousSafetyTip|False|True|この設定は、PowerShell でのみ使用できます。|
 |TreatSoftPassAsAuthenticated|True|False|この設定は、PowerShell でのみ使用できます。|
+
 
 |詳細設定のセキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|

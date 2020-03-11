@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: ケースのすべてのレビューセットに適用される高度な電子情報開示設定を構成します。 これには、分析と OCR の設定が含まれます。
 ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552072"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42588810"
 ---
 # <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
 

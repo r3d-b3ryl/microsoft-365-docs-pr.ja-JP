@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: メールボックスを非アクティブなメールボックスに変換することにより、元従業員のメールボックスの内容を保持する方法について説明します。 メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 アカウントを削除することによって、これを行うことができます。
-ms.openlocfilehash: b5c6730a30ac0efba8f00abc01c0b2c26bf9e562
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 958572fc922f3bef140773369124b1c45147ad16
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072904"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583044"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 の非アクティブなメールボックスの概要
 
@@ -70,13 +70,21 @@ Office 365 アイテム保持ポリシーの構成の詳細については、[�
 セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている保留リストがメール365ボックスに配置されている場合、そのメールボックスは非アクティブなメールボックスになります。 However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. また、時間ベースの電子情報開示の保持を作成することはできません。 これは、非アクティブなメールボックス内のコンテンツが無期限に保持されるか、ホールドが解除され、非アクティブなメールボックスが削除されるまで保持されることを意味します。 Therefore, we recommend using a Litigation Hold or an Office 365 retention policy for inactive mailboxes.
   
 電子情報開示ケースと保留リストの詳細については、「[電子情報開示ケース](ediscovery-cases.md)」を参照してください。
-  
+
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>非アクティブなメールボックスと Office 365 のラベル
 
 Office 365 のラベルは、ガバナンスのために組織内の電子メール データを分類し、その分類に基づいて保持ルールを実施するのに役立ちます。 ユーザーが手動で、または管理者が自動的に、電子メール アイテムにラベルを適用することができ、電子メール アイテムはそれに割り当てられている 1 つのラベルだけを保持できます。 ユーザーのメールボックス内の1つの電子メールアイテムにラベルが割り当てられている場合 (アイテムを保持または保持してから削除するように設定されている場合)、メールボックスまたはユーザーの Office 365 アカウントが削除されると、そのメールボックスは非アクティブなメールボックスになります。 電子情報開示ケース保持の場合と同様に、ラベルを使用してメールボックスを非アクティブにすることは推奨されません。 代わりに、訴訟ホールド、または Office 365 アイテム保持ポリシーを使用することが推奨されています。 ラベルの場合、ラベルが電子メールアイテムに適用されていて、ユーザーのアカウントを削除したときに、誤って非アクティブなメールボックスを作成していないことを認識できないことがあります。 
   
 ラベルの詳細については、[ラベルの概要](labels.md)を参照してください。
   
+## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>非アクティブなメールボックスと自動拡張アーカイブ
+
+自動拡張アーカイブを使用して構成された非アクティブなメールボックスは、回復または復元できません。 自動拡張アーカイブを使用して非アクティブなメールボックスからデータを復元する必要がある場合は、コンテンツ検索ツールを使用してメールボックスからデータをエクスポートし、別のメールボックスにインポートすることをお勧めします。 非アクティブなメールボックスを検索して検索結果をエクスポートする詳細な手順については、以下を参照してください。
+
+- [Office 365 のコンテンツ検索](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [コンテンツ検索の結果をエクスポートする](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>非アクティブなメールボックスと Exchange MRM アイテム保持ポリシー
 
 メールボックスが非アクティブになっている場合、Exchange アイテム保持ポリシー (メッセージングレコード管理または MRM 機能) がメールボックスに適用されると、削除ポリシー (**削除**保持アクションで構成された保持タグ) は、非アクティブなメールボックスで引き続き処理されます。 つまり、保持期間を過ぎると、削除ポリシーのタグが付けられたアイテムは [回復可能なアイテム] フォルダーに移動されます。 それらのアイテムは保持期間を過ぎると非アクティブなメールボックスから消去されます。 非アクティブなメールボックスの保持期間が指定されていない場合、[回復可能なアイテム] フォルダー内のアイテムは無期限に保持されます。 
