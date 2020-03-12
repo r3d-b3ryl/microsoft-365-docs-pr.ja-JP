@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 733abf925c80f90527b67660b84aea3e0482e906
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078764"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543756"
 ---
 # <a name="communication-compliance-feature-reference"></a>コミュニケーションコンプライアンス機能のリファレンス
 
@@ -65,14 +65,14 @@ Microsoft 365 組織の通信コンプライアンスポリシーは、Microsoft
 
 通信コンプライアンスポリシーを使用すると、次のいずれかまたは複数の通信プラットフォームのメッセージをグループとして、またはスタンドアロンのソースとしてスキャンすることを選択できます。 これらのプラットフォーム間でキャプチャされた通信は、ユーザーが組織を離れていてメールボックスが削除された場合でも、既定では、ポリシーごとに7年間保持されます。
 
-- **Microsoft teams**: パブリックおよびプライベートの microsoft teams チャネルおよび個々のチャットの両方で、チャット通信と関連付けられた添付ファイルをスキャンできます。 Teams チャットの通信コンプライアンスポリシー条件は、24時間ごとに処理され、コミュニケーションコンプライアンスレポートで利用可能になります。 Teams で個々のユーザーチャットとチャネル通信を管理するには、次のグループ管理構成を使用します。
+- **Microsoft teams**: パブリックおよびプライベートの microsoft teams チャネルおよび個々のチャットの両方で、チャット通信と関連付けられた添付ファイルをスキャンできます。 コミュニケーションコンプライアンスポリシーの条件に一致する Teams チャットおよび添付ファイルは、処理に最大24時間かかる場合があります。 Teams で個々のユーザーチャットとチャネル通信を管理するには、次のグループ管理構成を使用します。
 
     - **Teams チャット通信の場合:** 個々のユーザーを割り当てるか、通信コンプライアンスポリシーに[配布グループ](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)を割り当てます。 この設定は、一対一または一対多のユーザー/チャットの関係で使用します。
     - **Teams チャネル通信の場合:** 特定のユーザーが含まれているすべての Microsoft チームチャネルまたは Office 365 グループに、通信コンプライアンスポリシーを割り当てます。 他の Microsoft Teams チャネルまたは Office 365 グループに同じユーザーを追加する場合は、必ずこれらの新しいチャネルとグループをコミュニケーションコンプライアンスポリシーに追加してください。
 
-- **Exchange 電子メール**: Microsoft 365 または Office 365 サブスクリプションの一部として exchange Online でホストされているメールボックスは、すべてメッセージスキャンの対象になります。 通信コンプライアンスポリシーの条件に一致する電子メールと添付ファイルは、コミュニケーションコンプライアンスレポートですぐに利用できます。 通信コンプライアンスに対してサポートされている添付ファイルの種類は、 [Exchange メールフロールールの内容の検査でサポートさ](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)れているファイルの種類と同じです。
+- **Exchange 電子メール**: Microsoft 365 または Office 365 サブスクリプションの一部として exchange Online でホストされているメールボックスは、すべてメッセージスキャンの対象になります。 通信コンプライアンスポリシーの条件に一致する Exchange 電子メールメッセージと添付ファイルは、処理に最大24時間かかる場合があります。 通信コンプライアンスに対してサポートされている添付ファイルの種類は、 [Exchange メールフロールールの内容の検査でサポートさ](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)れているファイルの種類と同じです。
 
-- **Skype For Business online**: Skype For business online のチャット通信と関連付けられた添付ファイルは、監視できます。 Skype for Business Online チャットの通信コンプライアンスポリシー条件は、24時間ごとに処理され、コミュニケーションコンプライアンスレポートで利用可能になります。 コールバック会話は、 [Skype For Business Online に保存された以前の会話](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)からソースされています。  次のグループ管理構成を使用して、Skype for Business Online でのユーザーチャット通信を監督します。
+- **Skype For Business online**: Skype For business online のチャット通信と関連付けられた添付ファイルは、監視できます。 Skype for Business Online チャットの通信コンプライアンスポリシー条件は、処理に最大24時間かかる場合があります。 コールバック会話は、 [Skype For Business Online に保存された以前の会話](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)からソースされています。  次のグループ管理構成を使用して、Skype for Business Online でのユーザーチャット通信を監督します。
 
     - **Skype For Business Online チャット通信の場合**: 個々のユーザーを割り当てるか、または[配布グループ](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)を通信コンプライアンスポリシーに割り当てます。 この設定は、一対一または一対多のユーザー/チャットの関係で使用します。
 
@@ -187,11 +187,11 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 
 |**Field**|**Required**| **詳細** |
 |:-----|:-----|:-----|
-|**テンプレート名** | はい | 修復時に通知ワークフローで選択する通知テンプレートのフレンドリ名。テキスト文字がサポートされています。 |
-| **送信者のアドレス** | はい | サブスクリプションの Active Directory から選択された、ポリシーが一致する従業員にメッセージを送信する1人以上のユーザーまたはグループのアドレス。 |
+|**テンプレート名** | 必要 | 修復時に通知ワークフローで選択する通知テンプレートのフレンドリ名。テキスト文字がサポートされています。 |
+| **送信者のアドレス** | 必要 | サブスクリプションの Active Directory から選択された、ポリシーが一致する従業員にメッセージを送信する1人以上のユーザーまたはグループのアドレス。 |
 | **CC および BCC アドレス** | いいえ | サブスクリプションの Active Directory から選択されたポリシーの一致を通知するオプションのユーザーまたはグループ。 |
 | **Subject** | はい | メッセージの件名行に表示される情報は、テキスト文字をサポートしています。 |
-| **メッセージ本文** | はい | メッセージ本文に表示される情報は、テキストまたは HTML 値をサポートしています。 |
+| **メッセージ本文** | 必要 | メッセージ本文に表示される情報は、テキストまたは HTML 値をサポートしています。 |
 
 ### <a name="html-for-notices"></a>通知用の HTML
 
@@ -286,16 +286,16 @@ Office 365 セキュリティ & コンプライアンスセンターの [**通�
 
 また、監査アクティビティは、統合監査ログまたは[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell コマンドレットを使用して表示することもできます。
 
-たとえば、次の例では、すべての監督レビュー活動 (ポリシーとルール) のアクティビティを返し、それぞれの詳細情報を一覧表示します。
+たとえば、次の例では、すべての監督レビュー活動 (ポリシーとルール) のアクティビティが返されます。
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -Operations SupervisoryReviewTag
 ```
 
 この例では、通信コンプライアンスポリシーの更新アクティビティを返します。
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。

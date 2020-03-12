@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Office 365 グループへのゲストの追加、ゲスト ユーザーの表示、PowerShell を使用したゲスト アクセスの制御を行う方法について説明します。
-ms.openlocfilehash: 02a951b1fbf43c22f12a89663a0aee279b191088
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e4d71919fa5ebfb97a6bab8013fc6bc54ac071a4
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352618"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604004"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Office 365 グループでゲスト アクセスを管理する
 
@@ -43,8 +43,8 @@ ms.locfileid: "42352618"
 
 グループ内のゲスト アクセスは、SharePoint や Teams を含む広範囲のシナリオの一部としてよく使用されます。 これらのサービスには、独自のゲスト共有設定があります。 グループ、SharePoint、Teams 間でゲスト共有をセットアップするための詳細な手順については、次を参照してください。
 
-- [サイトでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [チームでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [サイトでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [チームでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
 
 ## <a name="manage-groups-guest-access"></a>グループのゲスト アクセスを管理する
 

@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: '概要: Skype、OneDrive、SharePoint、および Exchange Online の暗号化について説明します。'
-ms.openlocfilehash: cffaab87049f466794706ad6537e663e43d5de91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601844"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604164"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for business、OneDrive for Business、SharePoint Online、Exchange Online の Office 365 暗号化
 
@@ -32,7 +32,7 @@ Office 365 は、高度なセキュリティで保護された環境で、物理
 
 Skype for Business の顧客データは、会議の参加者によってアップロードされたファイルやプレゼンテーションの形式で保存されている場合があります。 Web 会議サーバーは、256ビットキーを使用して AES を使用して顧客データを暗号化します。 暗号化された顧客データは、ファイル共有に保存されます。 顧客データの各要素は、ランダムに生成された異なる256ビットキーを使用して暗号化されます。 会議で顧客データの一部が共有されている場合、Web 会議サーバーは、HTTPS を介して暗号化された顧客データをダウンロードするよう、会議クライアントに指示します。 対応するキーをクライアントに送信して、顧客データを復号化できるようにします。 Web 会議サーバーは、クライアントが会議の顧客データにアクセスできるようにするために、会議クライアントも認証します。 Web 会議に参加する場合、各会議クライアントは、最初に TLS を介してフロントエンドサーバーの内部で実行されている会議フォーカスコンポーネントを使用して SIP ダイアログを確立します。 会議フォーカスは、Web 会議サーバーによって生成された認証 cookie を会議クライアントに渡します。 その後、会議クライアントは Web 会議サーバーに接続して、サーバーによって認証される認証 cookie を提示します。
 
-## <a name="sharepoint-online-and-onedrive-for-business"></a>Sharepoint Online と OneDrive for Business
+## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online と OneDrive for Business
 
 SharePoint Online のすべての顧客ファイルは、1つのテナントに対して常に排他的な一意のファイルごとのキーによって保護されています。 これらのキーは、SharePoint Online サービスによって作成され、管理されるか、顧客キーが使用されるときに、顧客によって作成および管理されます。 ファイルをアップロードすると、アップロード要求のコンテキスト内で SharePoint Online によって暗号化が実行されてから、Azure ストレージに送信されます。 ファイルがダウンロードされると、SharePoint Online は一意のドキュメント識別子に基づいて Azure ストレージから暗号化された顧客データを取得し、顧客データを復号化してからユーザーに送信します。 Azure ストレージには、お客様のデータを復号化したり、識別したり、理解したりする機能はありません。 すべての暗号化と復号化は、テナントの分離を強制するのと同じシステムで行われます。これは、Azure Active Directory と SharePoint Online です。
 
@@ -76,7 +76,7 @@ SharePoint Online と OneDrive for Business のデータ暗号化の詳細につ
 
 OneDrive for Business と SharePoint Online では、データを入力してデータセンターを終了する2つのシナリオがあります。
 
-- **サーバーとのクライアント通信**インターネット経由での OneDrive for business への通信では、SSL/TLS 接続が使用されます。 すべての SSL 接続は、2048ビットのキーを使用して確立されます。
+- SharePoint Online とインターネットを介した OneDrive for business との**クライアント通信は、** TLS 接続を使用します。
 - **データセンター**間でのデータの移動-データセンター間でデータを移動する主な理由は、geo レプリケーションを使用して障害復旧を可能にすることです。 たとえば、SQL Server のトランザクションログと blob ストレージのデルタは、このパイプに沿って移動します。 このデータは、プライベートネットワークを使用して既に送信されていますが、クラス最高の暗号化を使用してさらに保護されています。
 
 ## <a name="exchange-online"></a>Exchange Online

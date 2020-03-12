@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543220"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605313"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -278,6 +278,13 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 </td>
 </tr>
 <tr class="odd">
+<td>メールボックスからバルクメールを削除する</td>
+<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">メールボックスのアーカイブと削除ポリシーを設定する</span></a></p>
+<p></p></td>
+<td><p>管理者は、ユーザーのアーカイブメールボックスにアイテムを自動的に移動し、メールボックスからアイテムを自動的に削除するアーカイブポリシーと削除ポリシーを作成できます。</p>
+</td>
+</tr>
+<tr class="even">
 <td>検索結果を探索メールボックスにコピーする</td>
 <td> </td>
 <td>この機能は、Microsoft 365 のすべてのサービスへのアクセスを提供しないので、直接交換することはできません。 代替ソリューションについては、「 <strong>get-mailboxsearch コマンドレット</strong>」セクションの faq を参照してください。 </td>

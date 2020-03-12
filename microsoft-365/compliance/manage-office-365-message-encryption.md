@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web に [保護] ボタンを表示したり、その他の設定を行ったりすることができます。 この記事のタスクでは、その方法について説明します。
-ms.openlocfilehash: 102d57681e049bf803b377fea97cc0fdb11affb2
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: c235205535b4871deb1963a9113a82429917b75e
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42562026"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605315"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption を管理する
 
@@ -195,16 +195,16 @@ Office 365 で、[暗号化のみ] オプションを使用してメールおよ
 
    - `template name`は、カスタムブランド化テンプレートに指定した名前です`OME Configuration`(例:)。
 
-   「1週間の販売」テンプレートを使用してすべての外部電子メールを暗号化し、暗号化のみのオプションを適用するには、次のようにします。
+   "OME Configuration" テンプレートを使用してすべての外部電子メールを暗号化し、暗号化のみのオプションを適用するには、次のようにします。
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
    ```
 
    "OME Configuration" テンプレートを使用してすべての外部電子メールを暗号化し、[転送しない] オプションを適用するには、次の手順を実行します。
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
    ```
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>電子メールメッセージと OME ポータルの外観をカスタマイズする

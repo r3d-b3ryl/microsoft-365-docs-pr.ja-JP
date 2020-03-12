@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e3f16339d25c8cc592e937e30a446ed7e7cd333
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 69b3bbbbca98c3ef9e16f1cca4d67122ae14af3f
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42542541"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604204"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "42542541"
 
 ## <a name="before-you-begin"></a>はじめに
 
-通信のコンプライアンスを開始する前に、Microsoft 365 のサブスクリプションを確認する必要があります。 通信コンプライアンスポリシーに含まれているユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Microsoft 365 E5 サブスクリプションに含まれている必要があります。
+通信のコンプライアンスを開始する前に、Microsoft 365 のサブスクリプションを確認する必要があります。 通信コンプライアンスポリシーに含まれるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれているか、Microsoft に含まれている必要があります。365 E5 サブスクリプション。
 
 既存の Microsoft 365 Enterprise E5 プランを保有せずに insider リスク管理を試みる場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の Office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
   
@@ -53,7 +53,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 2. Microsoft Office 365 セキュリティ/コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
 
-3. [**作成**] を選択します。
+3. **[作成]** を選択します。
 
 4. [**名前**] フィールドに、新しい役割グループにフレンドリ名を付けます。 [**次へ**] を選択します。
 

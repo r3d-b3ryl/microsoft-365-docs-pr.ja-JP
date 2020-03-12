@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: 032aa1dacc89aea63cf15080efb80de61e9a6f22
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597814"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605296"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -115,7 +115,8 @@ Office 365 のユーザーは、Outlook for Windows および Mac (2013 およ�
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-PDF 暗号化を使用すると、セキュリティで保護された通信やセキュリティで保護されたコラボレーションを通じて、機密の PDF ドキュメントを保護でき メッセージは、Exchange Online のデータ損失防止 (DLP) ポリシーまたはメールフロールールの OME 保護を継承します。 Outlook または web 上の Outlook ユーザーが保護されたメッセージに保護されていない PDF 添付ファイルを添付している場合、メッセージはメッセージの保護を継承します。 ユーザーが暗号化された添付ファイルを開くことができるのは、保護された Pdf をサポートするアプリケーション (OME ポータルや Azure Information Protection ビューアーなど) だけです。
+PDF 暗号化を使用すると、セキュリティで保護された通信やセキュリティで保護されたコラボレーションを通じて、機密の PDF ドキュメントを保護でき すべての Outlook クライアントで、メッセージと保護されていない PDF 添付ファイルは、Exchange Online のデータ損失防止 (DLP) ポリシーまたはメールフロールールの OME 保護を継承します。 また、web 上の Outlook ユーザーが保護されていない PDF ドキュメントを添付してメッセージに保護を適用すると、メッセージはメッセージの保護を継承します。 ユーザーが暗号化された添付ファイルを開くことができるのは、保護された Pdf をサポートするアプリケーション (OME ポータルや Azure Information Protection ビューアーなど) だけです。
+
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>OneDrive for Business の添付ファイルはサポートされていますか?
 
@@ -123,7 +124,7 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
   
 ## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>保護された電子メールで暗号化された添付ファイルのプレビューをサポートする電子メールクライアント
 
-保護されたメールで添付ファイルが保護されている場合、Outlook クライアントはでを使用してドキュメントを直接プレビューできます。 Outlook では、Office ドキュメント (.Docx、.xlsx、.pptx、doc、xls、ppt) のプレビューをサポートしています。 Web 上の Outlook では、Office ドキュメント (.docx、.xlsx、.pptx) と PDF のプレビューをサポートしています。  
+保護されたメールで添付ファイルが保護されている場合、Outlook クライアントはでを使用してドキュメントを直接プレビューできます。 Outlook では、Office ドキュメント (.docx、.xlsx、.pptx、doc、xls、ppt) のプレビューをサポートしています。 Web 上の Outlook では、Office ドキュメント (.docx、.xlsx、.pptx) と PDF のプレビューをサポートしています。  
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>ポリシーをセットアップすることで、メッセージを自動的に暗号化できますか?
 
@@ -161,7 +162,7 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 
 はい。 共有メールボックスで暗号化されたメッセージがサポートされています。
 
-- 共有メールボックスが、保護されたメールを配布グループの一部として受信した共有の mMailbox では、ユーザーは保護されたメールを開くことができます。
+- 共有メールボックスで保護されたメールを配布グループの一部として受信した場合、ユーザーは共有メールボックスで保護されたメールを開くことができます。
 
 - ユーザーが Outlook for Windows、outlook for Mac、および Outlook on the web を使用している場合は、電子メールから保護を継承する添付ファイルを表示できます。
 
@@ -172,8 +173,8 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 | Outlook on the web | はい | はい                |
 | Outlook for Windows| はい | はい                |
 | Outlook for Mac    | はい | はい                |
-| Outlook for Android| はい | 不要                 |
-| Outlook for iOS    | はい | 不要                 |
+| Outlook for Android| 必要 | いいえ                 |
+| Outlook for iOS    | 必要 | いいえ                 |
 |
 
 現在、次の2つの既知の制限があります。

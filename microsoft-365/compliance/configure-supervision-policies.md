@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e2880679c8520480aeffd640a26730defc298490
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078294"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604194"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Office 365 で監督ポリシーを構成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "42078294"
 監督ポリシーを使って、内部レビューまたは外部レビューによる調査のために従業員の通信をキャプチャします。 監督ポリシーが組織内の通信を監視する方法の詳細については、「[Office 365 の監督ポリシー](supervision-policies.md)」を参照してください。
 
 >[!NOTE]
->監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンス ライセンスか高度なコンプライアンス アドオン付き Office 365 Enterprise E3 ライセンスのいずれかを持っているか、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。
+>監督ポリシーによって監視されるユーザーには、Microsoft 365 E5 コンプライアンスライセンス、高度なコンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれているか、Microsoft の 365 E5 に含まれている必要があります。認証.
 >既存の E5 プランを利用しておらず、監督をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップしてください](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
 以下の手順に従って、Office 365 組織に監督を設定して使用します。

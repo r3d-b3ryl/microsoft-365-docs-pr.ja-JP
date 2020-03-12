@@ -1,0 +1,291 @@
+- name: 管理者のホーム
+  href: admin-home.md
+  items:
+    - name: 概要
+      items:
+        - name: 管理者の概要
+          href: admin-overview/admin-overview.md
+        - name: Office 365 にサインアップする
+          href: admin-overview/sign-up-for-office-365.md
+        - name: ビデオ トレーニング
+          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)'
+        - name: 管理センターについて
+          href: admin-overview/about-the-admin-center.md
+        - name: 取得しているサブスクリプションが不明な場合
+          href: admin-overview/what-subscription-do-i-have.md
+        - name: Office 365 Germany の詳細
+          href: admin-overview/learn-about-office-365-germany.md
+        - name: 管理者モバイル アプリ
+          href: admin-overview/admin-mobile-app.md
+    - name: セットアップ
+      items:
+        - name: セットアップを計画する
+          href: setup/plan-your-setup.md
+        - name: Office 365 をセットアップする
+          href: setup/setup.md
+        - name: '[セットアップ] ウィザードと [セットアップ] ページの違い'
+          href: setup/o365-setup-wizard-and-setup-page.md
+        - name: ドメインを追加する
+          href: setup/add-domain.md
+        - name: ドメイン FAQ
+          href: setup/domains-faq.md
+        - name: アプリケーションをインストールする
+          href: setup/install-applications.md
+        - name: メールと連絡先を移行する
+          href: setup/migrate-email-and-contacts-admin.md
+        - name: Teams をロールアウトする
+          href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
+        - name: ファイル ストレージと共有をセットアップする
+          href: setup/set-up-file-storage-and-sharing.md
+        - name: チーム サイトをカスタマイズする
+          href: setup/customize-team-site.md
+        - name: ユーザーを最新の Office クライアントにアップグレードする
+          href: setup/upgrade-users-to-latest-office-client.md
+        - name: サインイン ページをカスタマイズする
+          href: setup/customize-sign-in-page.md
+        - name: 配布グループの作成
+          href: setup/create-distribution-lists.md
+        - name: 組織のテーマをカスタマイズする
+          href: setup/customize-your-organization-theme.md
+    - name: ユーザーおよび役割
+      items:
+        - name: ユーザーを追加する
+          href: add-users/add-users.md
+        - name: テンプレートを作成して使用し、ユーザーを追加する
+          href: add-users/create-and-use-a-template-to-add-users.md
+        - name: ユーザーを削除する
+          href: add-users/delete-a-user.md
+        - name: ユーザーを復元する
+          href: add-users/restore-user.md
+        - name: パスワードをリセットする
+          href: add-users/reset-passwords.md
+        - name: パスワードを無期限に設定する
+          href: add-users/set-password-to-never-expire.md
+        - name: ユーザーのパスワードをリセットする
+          href: add-users/let-users-reset-passwords.md
+        - name: ユーザーのパスワードを再送信する
+          href: add-users/resend-user-password.md
+        - name: 別のユーザーにメールボックス アクセス許可を付与する
+          href: add-users/give-mailbox-permissions-to-another-user.md
+        - name: ユーザー名とメール アドレスを変更する
+          href: add-users/change-a-user-name-and-email-address.md
+        - name: カスタム ユーザー ビューを作成、編集、削除する
+          href: add-users/create-edit-or-delete-a-custom-user-view.md
+        - name: 新しい従業員を追加する
+          href: add-users/add-new-employee.md
+        - name: 元従業員を削除する
+          href: add-users/remove-former-employee.md
+        - name: 元ユーザーのデータにアクセスしてバックアップを作成する
+          href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+        - name: 管理者ロールについて
+          href: add-users/about-admin-roles.md
+        - name: 管理者の役割を割り当てる
+          href: add-users/assign-admin-roles.md
+        - name: Exchange Online 管理者の役割について
+          href: add-users/about-exchange-online-admin-role.md
+    - name: メール
+      items:
+        - name: Office 365 のメール
+          href: email/email.md
+        - name: Office 365 ユーザーのメール設定
+          href: email/office-365-user-email-settings.md
+        - name: ユーザーに別のメール エイリアスを追加する
+          href: email/add-another-email-alias-for-a-user.md
+        - name: 共有メールボックス
+          items:
+            - name: 共有メールボックスについて
+              href: email/about-shared-mailboxes.md
+            - name: 共有メールボックスを作成する
+              href: email/create-a-shared-mailbox.md
+            - name: 共有メールボックスを構成する
+              href: email/configure-a-shared-mailbox.md
+            - name: ユーザー メールボックスを共有メールボックスに変換する
+              href: email/convert-user-mailbox-to-shared-mailbox.md
+            - name: 共有メールボックスからライセンスを削除する
+              href: email/remove-license-from-shared-mailbox.md
+            - name: 共有メールボックスの問題を解決する
+              href: email/resolve-issues-with-shared-mailboxes.md
+        - name: メール アドレスを変更する
+          href: email/change-email-address.md
+        - name: 優先受信トレイを構成する
+          href: setup/configure-focused-inbox.md
+        - name: 署名と免責事項を作成する
+          href: setup/create-signatures-and-disclaimers.md
+        - name: セキュリティ グループを作成、編集、削除する
+          href: email/create-edit-or-delete-a-security-group.md
+        - name: メール転送を構成する
+          href: email/configure-email-forwarding.md
+        - name: メールによる共同作業
+          href: email/email-collaboration.md
+        - name: ユーザーまたは連絡先を配布グループに追加する
+          href: email/add-user-or-contact-to-distribution-list.md
+        - name: 低優先メール機能を構成する
+          href: email/configure-clutter.md
+    - name: ビジネス データをセキュリティで保護する
+      items:
+        - name: データをセキュリティで保護するトップ 10 の方法
+          href: security-and-compliance/secure-your-business-data.md
+        - name: 多要素認証をセットアップする
+          href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: 多要素認証をセットアップする (Office 2013 を使用)
+          href: security-and-compliance/enable-modern-authentication.md
+        - name: GDPR 準拠
+          href: security-and-compliance/gdpr-compliance.md
+    - name: 管理センターのアクティビティ レポート
+      href: activity-reports/activity-reports.md
+    - name: Power BI の利用状況分析
+      items:
+        - name: 利用状況分析
+          href: usage-analytics/usage-analytics.md
+        - name: 利用状況分析を有効化する
+          href: usage-analytics/enable-usage-analytics.md
+        - name: 利用状況分析の最新バージョンを取得する
+          href: usage-analytics/get-the-latest-version-of-usage-analytics.md
+        - name: レポートを移動して利用する
+          href: usage-analytics/navigate-and-utilize-reports.md
+        - name: 利用状況レポートのアクティブなユーザー
+          href: usage-analytics/active-user-in-usage-reports.md
+        - name: レポートをカスタマイズする
+          href: usage-analytics/customize-reports.md
+        - name: 利用状況分析のデータ モデル
+          href: usage-analytics/usage-analytics-data-model.md
+        - name: 利用状況分析のエラー
+          href: usage-analytics/usage-analytics-errors.md
+    - name: 管理
+      items:
+        - name: Office 365 の管理
+          href: manage/manage.md
+        - name: 連絡先の設定を変更する
+          href: manage/change-contact-preferences.md
+        - name: アドレスや連絡先などを変更する
+          href: manage/change-address-contact-and-more.md
+        - name: 電話番号とメール アドレスを更新する
+          href: manage/update-phone-number-and-email-address.md
+        - name: パスワードの有効期限ポリシーを設定する
+          href: manage/set-password-expiration-policy.md
+        - name: アプリ起動ツールをカスタマイズする
+          href: manage/customize-the-app-launcher.md
+        - name: 一元展開の要件
+          href: manage/centralized-deployment-of-add-ins.md
+        - name: 一元展開を使用してアドインを展開する
+          href: manage/manage-deployment-of-add-ins.md
+        - name: パートナーまたは販売店を検索する
+          href: manage/find-your-partner-or-reseller.md
+        - name: 会議室メールボックスと備品用メールボックス
+          href: manage/room-and-equipment-mailboxes.md
+        - name: 配布リストとしてメールを送信する
+          href: manage/send-email-as-distribution-list.md
+        - name: 配布リストをアップグレードする
+          href: manage/upgrade-distribution-lists.md
+        - name: サイトとファイルを外部で共有する
+          href: manage/share-sites-with-external-users.md
+        - name: 予定表を外部ユーザーと共有する
+          href: manage/share-calendars-with-external-users.md
+        - name: ユーザーにライセンスを割り当てる
+          href: manage/assign-licenses-to-users.md
+        - name: ユーザーからのライセンスの割り当てを解除する
+          href: manage/remove-licenses-from-users.md
+        - name: ライセンスの競合を解決する
+          href: manage/resolve-license-conflicts.md)
+        - name: メッセージ センターでメッセージを管理する
+          href: manage/manage-messages.md)
+    - name: サブスクリプションと課金
+      items:
+        - name: サブスクリプションを管理する
+          href: ../commerce/index.yml
+        - name: 請求書を表示する
+          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+        - name: 支払方法を管理する
+          href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+        - name: サブスクリプションをキャンセルする
+          href: ../commerce/subscriptions/cancel-your-subscription.md
+    - name: ドメイン
+      items:
+        - name: のドメイン
+          href: get-help-with-domains/get-help-with-domains.md
+        - name: ドメインとは
+          href: get-help-with-domains/what-is-a-domain.md
+        - name: ドメイン名を購入する
+          href: get-help-with-domains/buy-a-domain-name.md
+        - name: ドメイン レジストラーを検索する
+          href: get-help-with-domains/find-your-domain-registrar.md
+        - name: DNS の基本
+          href: get-help-with-domains/dns-basics.md
+        - name: DNS レコードの情報
+          href: get-help-with-domains/information-for-dns-records.md
+        - name: 問題の検索と修正
+          href: get-help-with-domains/find-and-fix-issues.md
+        - name: ドメイン接続
+          href: get-help-with-domains/domain-connect.md
+        - name: ドメインを設定する (ホストに固有の手順)
+          href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
+        - name: 任意のドメイン レジストラーでネーム サーバーを変更する
+          href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
+        - name: 任意の DNS ホスティング プロバイダーで DNS レコードを作成する
+          href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+        - name: ドメインを削除する
+          href: get-help-with-domains/remove-a-domain.md
+        - name: データを手動で転送する
+          href: get-help-with-domains/transfer-data-manually.md
+    - name: グループ
+      items:
+        - name: グループの概要
+          href: create-groups/office-365-groups.md
+        - name: グループを比較する
+          href: create-groups/compare-groups.md
+        - name: Office 365 グループを作成する
+          href: create-groups/create-groups.md
+        - name: Office 365 グループを管理する
+          href: create-groups/manage-groups.md
+        - name: Office 365 グループでのガバナンスを計画する
+          href: create-groups/plan-for-groups-governance.md
+        - name: グループの作成を管理する
+          href: create-groups/manage-creation-of-groups.md
+        - name: ドメインを選択してグループを作成する
+          href: create-groups/choose-domain-to-create-groups.md
+        - name: グループの名前付けポリシー
+          href: create-groups/groups-naming-policy.md
+        - name: グループとして、またはグループの代わりに送信することをメンバーに許可する
+          href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
+        - name: グループでメンバーを追加または削除する
+          href: create-groups/add-or-remove-members-from-groups.md
+        - name: Office 365 グループの有効期限ポリシー
+          href: create-groups/office-365-groups-expiration-policy.md
+        - name: 削除されたグループを復元する
+          href: create-groups/restore-deleted-group.md
+        - name: グループでゲスト アクセスを管理する
+          href: create-groups/manage-guest-access-in-groups.md
+        - name: グループで機密度ラベルを使用する
+          href: 'https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?toc=/office365/admin/toc.json'
+    - name: 21Vianet が運用している Office 365
+      items:
+        - name: 21Vianet が運用している Office 365 について
+          href: services-in-china/services-in-china.md
+        - name: サブスクリプションの購入または試用
+          href: services-in-china/buy-or-try-subscriptions.md
+        - name: 21Vianet が運営する Office 365 の Android 用 Office アプリをダウンロードする
+          href: services-in-china/download-office-app-for-Android.md
+        - name: 21Vianet が運営する Office 365 の iOS 用 Office アプリをダウンロードする
+          href: services-in-china/download-office-app-for-iOS.md
+        - name: 請求書を表示するか Fapiao を入手する
+          href: services-in-china/view-your-bill-or-get-a-fapiao.md
+        - name: Fapiao を申請する
+          href: services-in-china/apply-for-a-fapiao.md
+        - name: Azure Information Protection パリティ
+          href: services-in-china/parity-between-azure-information-protection.md
+    - name: 新機能を取得する
+      items:
+        - name: 新しい管理センターについて
+          href: microsoft-365-admin-center-preview.md
+        - name: 新しい管理センターの新機能
+          href: whats-new-in-preview.md
+        - name: 変更内容の最新情報を把握する
+          href: manage/stay-on-top-of-updates.md
+        - name: Office 365 のリリース オプション
+          href: manage/release-options-in-office-365.md
+        - name: メッセージ センター
+          href: manage/message-center.md
+        - name: Microsoft 365 の試用または購入
+          href: ../commerce/try-or-buy-microsoft-365.md
+    - name: 一般法人向け製品のサポートに問い合わせる
+      href: contact-support-for-business-products.md

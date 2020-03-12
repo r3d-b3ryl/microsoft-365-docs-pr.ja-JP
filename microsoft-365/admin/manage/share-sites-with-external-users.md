@@ -21,20 +21,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '組織外のユーザーとサイトやファイルを共有する方法を説明します。 '
-ms.openlocfilehash: cb6faf14806f950f4b9a355e9f0fcdb660ec1d82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254828"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603994"
 ---
 # <a name="share-sites-and-files-externally"></a>サイトとファイルを外部で共有する
 
 組織外のユーザーと共同作業するために、サイト全体または特定のファイルを外部で共有できます。 共有を直接セットアップする場合は、有効にするシナリオを選択します。
 
 - [ゲストと共同でドキュメントの作業をする](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [サイトでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [チームでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [サイトでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [チームでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
   
 ## <a name="deciding-how-to-share-your-content"></a>コンテンツの共有方法の決定
 

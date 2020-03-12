@@ -16,12 +16,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: この資料では、Office 365 の受信トレイに電子メールを送信するときに生じる問題に関して送信者が参照できるトラブルシューティング情報と、Office 365 顧客に対するバルク メールのベスト プラクティスについて取り上げます。
-ms.openlocfilehash: 5a672eacacafdb1d9660c2218aa54ac1947acb32
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72dd0360038e58c2501728d9032fef95f81d90c2
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598164"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604064"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Office 365 に送信されるメールのトラブルシューティング
 
@@ -170,7 +170,7 @@ Office 365 ユーザーにバルク メール キャンペーンを頻繁に行�
 
   `unsubscribe.bulkmailer.com`
 
-  `profiles.excite.com`
+  `profile.excite.com`
 
   `options.yahoo.com`
 

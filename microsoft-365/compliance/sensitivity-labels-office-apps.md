@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 858d2be23dcb3c3f2b0794e735ed8ca61d67b74d
+ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583154"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42594010"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -136,7 +136,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ドキュメントまたは電子メールに既にラベルが付けられている場合、ユーザーはこれらの操作を実行できます。コンテンツが暗号化されていない場合、または[利用状況](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)のエクスポートまたはフルコントロールがある場合です。 
 
-有用なレポートで一貫したラベルを使用するには、ユーザーが排他的にラベルを適用するための適切なラベルとガイダンスを提供します。 以下に例を示します。
+有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 以下に例を示します。
 
 - ユーザーが自分のアクセス許可を割り当てる必要がある例外の場合は、[ユーザーが自分のアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)ためのラベルを提供します。 
 
