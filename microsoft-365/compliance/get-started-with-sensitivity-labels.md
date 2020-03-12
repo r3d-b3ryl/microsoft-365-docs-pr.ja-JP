@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: eea03384b77dbcea29196c9f8142f748af0bf5be
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557588"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583124"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -55,6 +55,9 @@ ms.locfileid: "42557588"
 役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者**の役割または**組織の構成**の役割をこのグループに追加できます。 手順については、「[ユーザーに Office 365 セキュリティ/センター コンプライアンス センターへのアクセスを許可する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。
 
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。
+
+> [!NOTE]
+> [**秘密度ラベル リーダー**] は、現在テナントに展開されている新しい役割で、PowerShell のラベル付けコマンドレットで最初にサポートされ、後に管理者のラベル付けセンターでサポートされます。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>秘密度ラベルの一般的なシナリオ
 
