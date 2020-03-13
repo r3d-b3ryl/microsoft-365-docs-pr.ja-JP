@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Microsoft Azure Active Directory Rights Management Services (RMS) を使用して SharePoint Online IRM を使用して SharePoint リストとドキュメントライブラリを保護する方法について説明します。
-ms.openlocfilehash: f5aae2ba78997a8277989dcc3b5e68e00f0bfcb4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3705c08b64ffbf719dbce91396c86976db14fea0
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069611"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610624"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>SharePoint 管理センターで Information Rights Management (IRM) を設定する
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
 SharePoint Online では、リストおよびライブラリのレベルでファイルに IRM 保護が適用されます。 組織で IRM 保護を使用するには、まず、Rights Management をセットアップしておく必要があります。 IRM は Azure Information Protection の Azure Rights Management サービスを利用して、暗号化と使用制限の割り当てを実施します。 Office 365 のプランには Azure Rights Management が含まれているものと、含まれていないものがあります。 詳細については、「 [Office アプリケーションとサービスが Azure Rights Management をサポートする方法](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)」を参照してください。
   
@@ -68,7 +68,10 @@ SharePoint Online では、次の種類のファイルの暗号化がサポー�
 - Office Open XML 形式の次の Microsoft Office プログラム: Word、Excel、および PowerPoint
     
 - XML Paper Specification (XPS) 形式
-    
+ 
+> [!NOTE]
+> SharePoint はアップロード時にドキュメントを開く必要があるため、IRM 保護を保護されたドキュメント (デジタル署名された PDF ファイルなど) に適用することはできません。 
+
 ## <a name="next-steps"></a>次の手順
 <a name="__toc220831191"> </a>
 
@@ -77,4 +80,3 @@ SharePoint Online の IRM を有効にしたら、[リストとライブラリ�
 SharePoint 用の新しい OneDrive 同期クライアントでは、IRM で保護された SharePoint ドキュメントライブラリと OneDrive の場所の同期がサポートされるようになりました (ライブラリの IRM 設定でドキュメントアクセス権の有効期限が設定されていない場合)。 詳細については、または新しい同期クライアントの展開を開始するには、「 [Windows 用の新しい OneDrive 同期クライアントを展開](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)する」を参照してください。
   
 [ページのトップへ](#introduction)  
-

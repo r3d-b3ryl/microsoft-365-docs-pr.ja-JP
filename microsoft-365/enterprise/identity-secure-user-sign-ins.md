@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: ユーザーの Windows デバイスへのサインインと、Microsoft 365 へのサインインのセキュリティ強化を行うことができます。
 ms.openlocfilehash: c541f5b74fe3ea6e94b002212f21ec8645e8e87e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067294"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544016"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>手順 3: ユーザーのサインインをセキュリティで保護して管理する
 

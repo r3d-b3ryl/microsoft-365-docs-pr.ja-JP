@@ -16,11 +16,11 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601024"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544026"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -82,12 +82,12 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|OneDrive 同期クライアント|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 8.1|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 10|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 7|サポート済み|サポート済み|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 8.1|サポート|サポート済み|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 10|サポート済み|サポート済み|該当なし|該当なし|プレビュー<sup>*</sup>|
 |Windows Phone 10|非サポート|非サポート|サポート対象外|サポート対象外|サポート対象外|
-|Android|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
-|iOS|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
+|Android|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|iOS|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
 |macOS|パブリック プレビュー|パブリック プレビュー|該当なし|該当なし|サポートされていません|
 |Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 

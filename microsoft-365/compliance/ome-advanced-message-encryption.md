@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Office 365 の高度なメッセージ暗号化では、管理者が保護されたメッセージをより多く実行できるようにすることで、組織が法令遵守の義務を満たすことができます。
-ms.openlocfilehash: 580803d7b15608ebb0852896cdbd9a43ee5a2ff4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601804"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610605"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption
 
@@ -45,4 +45,4 @@ Office 365 メッセージの暗号化が既にセットアップされていな
 
 [Office 365 の高度なメッセージ暗号化によって暗号化された電子メールを取り消し](revoke-ome-encrypted-mail.md)ます。 セキュリティで保護された web ポータルから暗号化された電子メールへのアクセスを取り消すことにより、組織の外部で共有される機密メールを制御し、保護を強化します。  
 
-Office 365 の高度なメッセージ暗号化では、カスタムブランド設定テンプレートを適用するたびに、Office 365 は、テンプレートを適用するメールフロールールに適合するラッパーを電子メールに適用します。 メッセージを失効させることができます。また、ユーザーがポータル経由で受信するメッセージに有効期限日を適用することもできます。 つまり、カスタムブランド化テンプレートが適用されている電子メール。 詳細と例については、「すべての[外部受信者が OME ポータルを使用して暗号化されたメールを読み取ることを確認する」 (Office 365 の高度なメッセージ暗号化のみ)](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only)のガイダンスを参照してください。
+Office 365 の高度なメッセージ暗号化では、カスタムブランド設定テンプレートを適用するたびに、Office 365 は、テンプレートを適用するメールフロールールに適合するラッパーを電子メールに適用します。 メッセージを失効させることができます。また、ユーザーがポータル経由で受信するメッセージに有効期限日を適用することもできます。 つまり、カスタムブランド化テンプレートが適用されている電子メール。 詳細と例については、「すべての[外部の受信者が OME ポータルを使用して暗号化されたメールを読み取るようにする](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail)」のガイダンスを参照してください。

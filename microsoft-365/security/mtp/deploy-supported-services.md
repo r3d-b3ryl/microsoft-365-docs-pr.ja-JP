@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 1c06562cc0ff8cdc43efb3a8f62924c435883408
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569054"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610564"
 ---
 # <a name="deploy-supported-services"></a>サポートされるサービスを展開する
 
@@ -71,7 +71,7 @@ Microsoft の脅威保護の完全なメリットを得るために、サポー�
 
 | サービス | プロビジョニング手順 | 初期構成 |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [ライセンスのプロビジョニングを検証し、Microsoft Defender ATP のセットアップを完了する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *プロビジョニングの手順を参照してください。* |
+| Microsoft Defender ATP | [Microsoft Defender ATP 展開ガイド](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *プロビジョニングの手順を参照してください。* |
 | Office 365 ATP | *なし。 Office 365 でプロビジョニングされます。* | [ATP ポリシーを構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [クイックスタート: Azure ATP インスタンスを作成する](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *プロビジョニングの手順を参照してください。* |
 | Microsoft Cloud App Security | *なし* | [クイックスタート: Microsoft Cloud App Security を使い始める](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

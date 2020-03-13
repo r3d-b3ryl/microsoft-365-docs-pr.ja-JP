@@ -1,7 +1,6 @@
 ---
 title: サイトとファイルを外部で共有する
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
 manager: scotv
@@ -21,20 +20,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '組織外のユーザーとサイトやファイルを共有する方法を説明します。 '
-ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603994"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610574"
 ---
 # <a name="share-sites-and-files-externally"></a>サイトとファイルを外部で共有する
 
 組織外のユーザーと共同作業するために、サイト全体または特定のファイルを外部で共有できます。 共有を直接セットアップする場合は、有効にするシナリオを選択します。
 
-- [ゲストと共同でドキュメントの作業をする](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [サイトでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
-- [チームでゲストと共同で作業する](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
+- [ゲストと共同でドキュメントの作業をする](../../solutions/collaborate-on-documents.md)
+- [サイトでゲストと共同で作業する](../../solutions/collaborate-in-site.md)
+- [チームでゲストと共同で作業する](../../solutions/collaborate-as-team.md)
   
 ## <a name="deciding-how-to-share-your-content"></a>コンテンツの共有方法の決定
 

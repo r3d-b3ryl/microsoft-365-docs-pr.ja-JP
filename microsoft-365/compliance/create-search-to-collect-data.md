@@ -16,29 +16,31 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 67b4eb399b422cac032bbfcfe49079e4d55b2d02
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 47d30cb2da91eff1260ffcf07838bd066917b4a1
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077114"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610644"
 ---
 # <a name="create-a-search"></a>検索を作成する
 
 ケースの [**検索**] タブで、[**新規検索**] をクリックしてウィザードに従って、新しい検索を作成できます。
 
-## <a name="name-your-search-and-give-it-a-description"></a>検索の名前を指定して説明を付ける
+![高度な電子情報開示ケースの検索ウィザード](../media/AeDSearch1.png)
+
+## <a name="name-the-search-and-give-it-a-description"></a>検索の名前を指定して説明を付ける
 
 ケースを含む各検索には、一意の名前を付ける必要があります。 必要に応じて、検索の説明を指定できます。 
 
-## <a name="define-your-search-query-and-conditions"></a>検索クエリと条件を定義する
+## <a name="choose-the-custodians-and-custodial-locations-to-search"></a>検索する保管担当者および custodial の場所を選択する
 
-作成済みの条件カードを使用するか、またはキーワードクエリ言語 (KQL) を使用して、キーワードクエリと検索条件を定義することができます。 詳細については、「 [Build search queries](building-search-queries.md)」を参照してください。
-
-## <a name="choose-the-custodians-to-search-from"></a>検索する保管担当者を選択します。
-
-条件を定義したら、検索する場所を選択する必要があります。 1つの方法として、検索するケースに既に追加した保管担当者を指定します。 保管担当者を選択すると、保管担当者にマップされているすべてのデータソースに対して検索を実行します。 ケースに保管担当者を追加し、データソースを管理する方法の詳細については、「 [Work with 保管担当者](managing-custodians.md)」を参照してください。
+ケースに追加した保管担当者を指定して、検索する保管担当者のコンテンツの場所を選択します。 保管担当者を選択すると、保管担当者にマップされているすべてのデータソースに対して検索を実行します。 保管担当者ごとに、選択したデータソースに対して検索を絞り込むオプションもあります。 保管担当者を追加し、データソースを管理する方法の詳細については、「 [Work with 保管担当者](managing-custodians.md)」を参照してください。
 
 ## <a name="choose-non-custodial-locations"></a>Custodial のダイヤル場所を選択する
 
-場合によっては、保管担当者にマップされていないデータソースを検索する必要があります。 この場合、検索する場所を指定するか、特定の Office 365 サービスのすべてのコンテンツの場所を検索する (すべての Exchange メールボックスまたはすべての SharePoint および OneDrive for business サイトを検索するなど) を選択できます。
+場合によっては、保管担当者に関連付けられていないデータソースを検索する必要があります。 この場合は、検索する場所を指定するか、特定の Office 365 サービスのすべてのコンテンツの場所を検索する (すべての Exchange メールボックスまたはすべての SharePoint サイトや OneDrive アカウントを検索するなど) を選択できます。
+
+## <a name="define-the-search-query-and-conditions"></a>検索クエリと条件を定義する
+
+作成済みの条件カードを使用するか、またはキーワードクエリ言語 (KQL) を使用して、キーワードクエリと検索条件を定義することができます。 詳細については、「 [Build search queries](building-search-queries.md)」を参照してください。
