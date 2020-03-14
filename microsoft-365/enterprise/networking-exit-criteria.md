@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise のネットワーク インフラストラクチャの条件を満たしていることを確認します。
 ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066626"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633205"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>フェーズ 1: ネットワーク インフラストラクチャの終了条件
 

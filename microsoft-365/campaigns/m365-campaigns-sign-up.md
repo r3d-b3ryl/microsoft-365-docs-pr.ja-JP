@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのための Microsoft 365 のステップバイステップのサインアップ。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
 ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409662"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633735"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンのための Microsoft 365 へのサインアップ 
 

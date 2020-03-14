@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
 ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068462"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633365"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 

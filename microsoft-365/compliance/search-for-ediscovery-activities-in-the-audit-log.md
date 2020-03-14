@@ -15,11 +15,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: コンプライアンス管理者がセキュリティ & コンプライアンスセンターでコンテンツ検索と電子情報開示ケースタスクを実行するときに記録されるイベントの Office 365 監査ログを検索する方法について説明します。
 ms.openlocfilehash: ef9c40debb8c28f0d017423d29016ca4f52b7a17
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601534"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634155"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Office 365 監査ログで電子情報開示アクティビティを検索する
 
@@ -179,7 +179,7 @@ Office 365 監査ログの検索、必要なアクセス許可、および検索
 |Query  <br/> |コンテンツ検索、クエリベースの保持など、アクティビティに関連付けられている検索クエリ。  <br/> |
 |RecordType  <br/> |レコードによって示される操作の種類。 値が**18**の場合は、[電子情報開示のコマンドレットアクティビティ](#ediscovery-cmdlet-activities)セクションに記載されているアクティビティに関連するイベントを示します。 この値が**24**の場合は、「[[方法] 電子情報開示アクティビティの検索と表示](#how-to-search-for-and-view-ediscovery-activities)」セクションにリストされているアクティビティに関連するイベントを示します。  <br/> |
 |ResultStatus  <br/> |(Operation プロパティで指定された) アクションが正常に終了したかどうかどうかを示します。  <br/> |
-|SecurityComplianceCenterEventType  <br/> |アクティビティがセキュリティ & コンプライアンスセンターイベントであったことを示します。 このプロパティには、すべての電子情報開示アクティビティの値が**0**になります。  <br/> |
+|SecurityComplianceCenterEventType  <br/> |アクティビティがセキュリティ/コンプライアンス センター イベントであることを意味します。 このプロパティには、すべての電子情報開示アクティビティの値が**0**になります。  <br/> |
 |SharepointLocations 場所  <br/> |コンテンツ検索に含まれているか、電子情報開示ケースで保持される SharePoint Online サイト。  <br/> |
 |StartTime  <br/> |電子情報開示アクティビティが開始された日付と時刻 (協定世界時 (UTC))。  <br/> |
 |UserId  <br/> |レコードが記録されるようになった (Operation プロパティで指定された) アクティビティを実行したユーザー。 システムアカウント (NT AUTHORITY\SYSTEM など) によって実行される電子情報開示アクティビティのレコードも、監査ログに含まれていることに注意してください。  <br/> |

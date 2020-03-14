@@ -17,11 +17,11 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066859"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633265"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -132,7 +132,7 @@ Windows 10 および Office 365 ProPlus は、Pc に推奨されるクライア�
 
 次の表では、3つの保護層でこれらの機能を使用するための推奨事項を要約しています。
 
-|保護メカニズム|基準|機密|厳しく規制|
+|保護メカニズム|基準|機密|高度な規制|
 |:-------------------|:-------|:--------|:---------------|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を強制する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
@@ -145,6 +145,6 @@ Windows 10 および Office 365 ProPlus は、Pc に推奨されるクライア�
 
 企業所有のデバイスを Intune またはドメインに参加させて管理し、追加の保護と制御を適用することをお勧めします。 データの機密性に応じて、特定のユーザー人口または特定のアプリに対しては、を使用しないようにすることもできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Id およびデバイスアクセスポリシーを実装するための前提条件](identity-access-prerequisites.md)

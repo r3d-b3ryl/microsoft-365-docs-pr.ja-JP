@@ -1,5 +1,5 @@
 ---
-title: ランサムウェア攻撃からの回復
+title: ランサムウェア攻撃から回復する
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Office 365 管理者は、ランサムウェア攻撃から回復する方法について説明します。
-ms.openlocfilehash: 04cfd2f2417b0c2e084a88f9ee156521339b18c4
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932375"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640019"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Office 365 でランサムウェア攻撃から回復する
 
@@ -74,11 +74,7 @@ OneDrive 同期を一時停止すると、潜在的に感染しているデバ�
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>手順 5: OneDrive for Business のファイルを復元する
 
-OneDrive for Business では、保存したファイルを回復することができます。 次の 2 つの方法があります。
-
-- [OneDrive web サイト](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893)を使用します。
-
-- 多数のファイルが影響を受けた場合は、"サイトコレクションの復元" のサポート要求を作成できます。 この要求では、過去14日以内にファイルを復元できます。
+OneDrive for business のファイルの復元を使用すると、OneDrive 全体を過去30日以内に過去の時点に復元することができます。 詳細については、「 [OneDrive を復元する](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15)」を参照してください。
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除済みメールを復元する
 

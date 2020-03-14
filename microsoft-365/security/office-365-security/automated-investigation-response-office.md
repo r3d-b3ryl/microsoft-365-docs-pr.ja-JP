@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air
 ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288505"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633825"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 

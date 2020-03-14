@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
 ms.custom: air
 ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288475"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634025"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -38,7 +38,7 @@ ms.locfileid: "42288475"
 |1-d     |通知は Office イベントによってトリガーされ、[セキュリティのプレイブック](automated-investigation-response-office.md#security-playbooks)は選択した通知の自動調査を開始します。 <br/><br/>あるいは、セキュリティアナリストは、[脅威エクスプローラー](threat-explorer.md)を使用して自動化され[た調査を開始](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)することもできます。        |
 |pbm-2     |自動調査を実行すると、電子メールとその電子メールに関連するエンティティ (ファイル、Url、受信者) に関する追加データが収集されます。  新しい関連する警告がトリガーされると、調査のスコープが向上する可能性があります。         |
 |1/3     |自動調査の実行中および実行後は、[詳細情報と結果](air-view-investigation-results.md)を表示することができます。 結果には、検出された脅威に対処し、修復を行うためにとることができる[推奨処理](air-remediation-actions.md) が含まれます。 また、すべての調査活動を追跡する[プレイブック ログ](air-view-investigation-results.md#playbook-log)が提供されます。<br/><br/>組織でカスタム レポート ソリューションまたはサード パーティのソリューションを使用している場合は、[Office 365 マネージメント アクティビティ API を使用して](air-custom-reporting.md)自動調査と脅威に関する情報を表示することができます。         |
-|2/4     |セキュリティ運用チームは、[調査結果と推奨事項](air-view-investigation-results.md)を確認し、[修復アクションを承認](air-remediation-actions.md#approve-or-reject-pending-actions)します。 Office 365 では、アクションは自動的には実行されません。 修復処理は、組織のセキュリティチームによる承認時にのみ行われます。         |
+|4      |セキュリティ運用チームは、[調査結果と推奨事項](air-view-investigation-results.md)を確認し、[修復アクションを承認](air-remediation-actions.md#approve-or-reject-pending-actions)します。 Office 365 では、アクションは自動的には実行されません。 修復処理は、組織のセキュリティチームによる承認時にのみ行われます。         |
 
 自動化された調査プロセスにおいて、セキュリティチームは次のことを行うことができます。
 

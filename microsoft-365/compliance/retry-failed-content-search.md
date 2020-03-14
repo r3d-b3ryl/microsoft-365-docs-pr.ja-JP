@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: ''
 description: コンテンツの場所にエラーがあるコンテンツ検索を解決するには、[再試行] ボタンを使用します。
 ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081581"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634175"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 

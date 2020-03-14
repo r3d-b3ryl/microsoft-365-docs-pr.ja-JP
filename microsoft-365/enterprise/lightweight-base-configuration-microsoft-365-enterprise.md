@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise をテストするための軽量なテスト環境を作成します。
 ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067094"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633345"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 

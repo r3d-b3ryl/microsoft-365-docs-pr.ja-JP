@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 監査ログ検索の結果をエクスポートして CSV ファイルにダウンロードした後、Excel の Power Query エディターの JSON 変換機能を使用して、AuditData 列の JSON オブジェクトの各プロパティをそれぞれの列に分割できます。 これは、探している特定の監査データをすばやく見つけるのに役立ちます。
 ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074116"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634925"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 

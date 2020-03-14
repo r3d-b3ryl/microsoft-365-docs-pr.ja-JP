@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: メンバーが Office 365 グループとしてメールを送信できるようにする方法、または Office 365 グループの代理としてメールを送信できるようにする方法について説明します。
 ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352758"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633785"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループに代わって送信または送信できるようにする
 
@@ -47,7 +47,7 @@ ms.locfileid: "42352758"
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2. ユーザーが送信者とし](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)て送信できるようにするグループの [編集グループの編集] アイコンを選択します。 ****![   
+2. ユーザーが送信者とし](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)て送信できるようにするグループの [編集グループの編集] アイコンを選択します。 **Edit**![   
     
 3. [ **グループ委任**] を選びます。
     

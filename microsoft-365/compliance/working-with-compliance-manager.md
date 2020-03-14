@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft 製品に関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
 ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083897"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634135"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー) を使用する
 
@@ -416,7 +416,7 @@ Office 365 および ISO 27001 の評価の例を次に示します。 最初の
 
 1. テンプレート-評価
 2. ControlFamily
-3. 操作
+3. アクション
 4. Ownership
 5. Dimensions
 
@@ -596,7 +596,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 
 ![コンプライアンスマネージャー評価 Excel レポート](../media/compliance-manager-assessment-report.png)
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 次の表では、各コンプライアンスマネージャーのアクセス許可と、ユーザーが実行できる操作について説明します。 この表は、各アクセス許可が割り当てられている役割も示しています。
 

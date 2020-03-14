@@ -1,5 +1,5 @@
 ---
-title: 'Office 365 で提供された悪意のある電子メールの検索と調査、修復、救済、修復、 '
+title: Office 365 で提供された悪意のある電子メールの検索と調査、修復、修復、修復、脅威の保護、脅威エクスプローラー、保護
 keywords: TIMailData-インライン、セキュリティインシデント、インシデント、ATP PowerShell、電子メールマルウェア、侵害されたユーザー、電子メールフィッシング、電子メールマルウェア、電子メールヘッダーの読み取り、ヘッダーの読み取り、電子メールのヘッダーを開く
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 1cb7c418e9c4ae5f2223748d512e8718f81b010c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 178bdbfd97bea654959cf71da560a80e686a5fde
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409752"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632918"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査および修復する
 
@@ -48,7 +48,7 @@ ms.locfileid: "42409752"
 |---------|---------|---------|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |Office 365 グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | いいえ   |
 |脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |Office 365 グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       いいえ  |
-|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |Office 365 グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> プレビュー   |   必要      |
+|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |Office 365 グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> プレビュー   |   はい      |
 
 > [!NOTE]
 > *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 Office 365 のグローバル管理者の役割には、Microsoft 365 管理[https://admin.microsoft.com](https://admin.microsoft.com)センター () が割り当てられており、セキュリティ管理者およびセキュリティリーダーの役割が Office 365[https://protection.office.com](https://protection.office.com)Security & コンプライアンスセンター () に割り当てられます。 役割とアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
@@ -56,6 +56,9 @@ ms.locfileid: "42409752"
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>配信された疑わしいメールを見つけて削除する
 
 脅威エクスプローラーは、メッセージの検索と削除、悪意のある電子メールの送信者の IP アドレスの識別、さらなる調査のためのインシデントの開始など、複数の目的に使用できる強力なレポートです。 次の手順では、エクスプローラーを使用して受信者のメールボックスから悪意のある電子メールを検索し、削除する方法について説明します。
+
+> [!NOTE]
+> 現在、エクスプローラーでの既定の検索には Zapped の項目は含まれていません。  これは、マルウェアまたはフィッシングのようなビューなど、すべてのビューに適用されます。 Zapped アイテムを含めるには、' 配信アクション ' セットを追加して、「削除による ZAP」を含める必要があります。 すべてのオプションを含めると、Zapped アイテムを含むすべての配信アクションの結果が表示できます。
 
 1. [**脅威エクスプローラー] に移動**し[https://protection.office.com](https://protection.office.com)ます。「Office 365 の職場または学校アカウントを使用してサインインする」に移動します。 これにより、セキュリティ&amp;コンプライアンスセンターに移動します。
 

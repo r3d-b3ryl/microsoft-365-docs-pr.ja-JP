@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる組み込みの分類子がいくつか用意されています。 このトピックでは、これらの分類子の使用を準備する方法について説明します。
 ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266733"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634465"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>組み込みの分類子を使用する (プレビュー)
 

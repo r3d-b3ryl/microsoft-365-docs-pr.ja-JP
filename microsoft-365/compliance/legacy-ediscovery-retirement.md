@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
 ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42605313"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634835"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -71,7 +71,7 @@ ms.locfileid: "42605313"
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 ドイツ
+- Office 365 Germany
 
 ### <a name="timeline-for-retirement"></a>定年後のタイムライン
 
@@ -168,7 +168,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 ドイツ
+- Office 365 Germany
 
 ### <a name="timeline"></a>タイムライン
 
@@ -242,7 +242,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 ドイツ
+- Office 365 Germany
 
 ### <a name="timeline"></a>タイムライン
 
@@ -304,7 +304,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 
 - Office 365 および Microsoft 365 Government 組織。これには GCC、GCC High、DoD が含まれます。
 
-- Office 365 ドイツ
+- Office 365 Germany
 
 ### <a name="timeline"></a>タイムライン
 
@@ -324,7 +324,7 @@ Microsoft 365 の新しい高度な電子情報開示ソリューション (*上
 
 - Office 365 および Microsoft 365 エデュケーション組織
 
-- Office 365 ドイツ
+- Office 365 Germany
 
 ### <a name="timeline"></a>タイムライン
 

@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
 ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084648"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634065"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 

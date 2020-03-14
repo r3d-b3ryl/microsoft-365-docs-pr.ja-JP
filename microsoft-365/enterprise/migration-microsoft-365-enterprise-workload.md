@@ -13,11 +13,11 @@ ms.collection:
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
 ms.openlocfilehash: 06cacbb45a98bb62f53866b0d2ab7ba393e609a0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066816"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633245"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 

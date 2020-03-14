@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569175"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633905"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -46,7 +46,7 @@ Microsoft の脅威保護を有効にするには、Azure Active Directory の**
 ## <a name="start-using-the-service"></a>サービスの使用を開始する
 Microsoft の脅威保護は、さまざまな統合サービスからのデータを集約します。 データを一元的に処理および保存して、新しい洞察を識別し、集中管理された応答ワークフローを実現できるようにします。
 
-サービスを有効にする前に、「Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com))」では、[**インシデント**]、[**アクションセンター**]、または**** [ナビゲーション] ウィンドウから選択したときに microsoft Threat Protection のウェルカムページが表示されます。 これらのナビゲーションオプションは、Microsoft の脅威保護を使用する資格がない場合は表示されません。
+サービスを有効にする前に、「Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com))」では、[**インシデント**]、[**アクションセンター**]、または**Hunting** [ナビゲーション] ウィンドウから選択したときに microsoft Threat Protection のウェルカムページが表示されます。 これらのナビゲーションオプションは、Microsoft の脅威保護を使用する資格がない場合は表示されません。
 
 ![Microsoft](../../media/mtp-welcome.png)
 *365 セキュリティセンター*の microsoft threat protection のウェルカムページに microsoft threat protection が有効になっていない場合に表示される、microsoft threat protection のウェルカムページの画像

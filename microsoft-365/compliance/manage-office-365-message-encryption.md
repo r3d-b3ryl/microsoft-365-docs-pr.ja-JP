@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web に [保護] ボタンを表示したり、その他の設定を行ったりすることができます。 この記事のタスクでは、その方法について説明します。
 ms.openlocfilehash: c235205535b4871deb1963a9113a82429917b75e
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42605315"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634345"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption を管理する
 

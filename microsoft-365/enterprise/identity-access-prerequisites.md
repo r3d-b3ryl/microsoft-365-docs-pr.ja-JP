@@ -16,11 +16,11 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544026"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633605"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -82,12 +82,12 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|OneDrive 同期クライアント|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|サポート済み|サポート済み|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 8.1|サポート|サポート済み|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 10|サポート済み|サポート済み|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 7|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 8.1|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 10|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
 |Windows Phone 10|非サポート|非サポート|サポート対象外|サポート対象外|サポート対象外|
-|Android|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
-|iOS|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|Android|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
+|iOS|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
 |macOS|パブリック プレビュー|パブリック プレビュー|該当なし|該当なし|サポートされていません|
 |Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 
@@ -117,7 +117,7 @@ Azure AD では、事前に構成された条件付きアクセスポリシー�
 - 管理者アカウントを使用するのは管理者のみです。 管理者は、管理者が通常使用しないユーザーアカウントを持っていて、自分のジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 [Office 365 の管理者](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)の役割には、office 365 サービスよりもはるかに多くの特権があります。
 - この[記事](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)で説明されているように、Azure AD で特権アカウントを保護するためのベストプラクティスに従います。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [共通 id およびデバイスアクセスポリシーを構成する](identity-access-policies.md)
 

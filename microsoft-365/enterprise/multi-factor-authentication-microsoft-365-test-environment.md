@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 description: Microsoft 365 エンタープライズテスト環境でスマートフォンに送信されるテキストメッセージを使用して、多要素認証を構成します。
 ms.openlocfilehash: ea2041a463b224781df101251dab0f4d9f0e8753
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066734"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633195"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境用の多要素認証
 
@@ -60,7 +60,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
   
 1. ブラウザーのプライベートインスタンスを個別に開き、Microsoft 365 管理センター ([https://portal.microsoft.com](https://portal.microsoft.com)) に移動して、全体管理者アカウントでサインインします。
     
-2. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
+2. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
 3. [アクティブなユーザー] ウィンドウで、[**多要素認証**] をクリックします。
     
@@ -82,7 +82,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     
 2. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、User 2 のアカウント名とパスワードを使用してサインインします。
     
-3. サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。 **[次へ]** をクリックします。
+3. サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。 [ **次へ**] をクリックします。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -92,7 +92,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     
    - [**メソッド**] の [**テキストメッセージでコードを送信する**] をクリックします。
     
-5. **[次へ]** をクリックします。
+5. [ **次へ**] をクリックします。
     
 6. スマート フォンで受信したテキスト メッセージに記載されている確認コードを入力して、**[確認]** をクリックします。
     

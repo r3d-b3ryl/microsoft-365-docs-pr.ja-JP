@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 69b3bbbbca98c3ef9e16f1cca4d67122ae14af3f
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 027189a10e34687833e6a266d5fe4382a1e14e3a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604204"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632898"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -107,7 +107,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
     - ポリシー名を確認または更新します。 ポリシー名は、ポリシーの作成後に変更することはできません。
     - 除外するユーザーやグループの選択などを含めて、監督するユーザーまたはグループを選択します。
-    - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーか、[メールが有効なセキュリティ グループ](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)です。 すべてのレビュー担当者は、Exchange Online でホストされているメールボックスを持っている必要があります。
+    - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーか、[メールが有効なセキュリティ グループ](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)です。 すべてのレビュー担当者は、Exchange Online でホストされているメールボックスを持っている必要があります。 ここに追加されたレビュー担当者は、アラートを調査および修復ワークフローでエスカレーションする際に選択できるレビュー担当者です。
     - 制限された条件フィールド (通常は、ポリシーに適用する機密情報の種類またはキーワードディクショナリ) を選択します。
 
     ポリシーウィザードを使用してカスタムポリシーを作成する場合は、次の操作を行います。

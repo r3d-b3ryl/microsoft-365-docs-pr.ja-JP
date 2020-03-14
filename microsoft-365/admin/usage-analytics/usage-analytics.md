@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織が Microsoft 365 サービスを採用して通信および共同作業を行う方法の概要について説明します。
 ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355278"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633425"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 ---
@@ -83,7 +83,7 @@ Microsoft 365 の概要レポートには、次のレポートが含まれてい
 
 ユーザーアクティビティレポートは、特定の個別のサービスで使用できます。 これらのレポートは、Active Directory 属性で結合されたユーザーレベルの詳細な利用状況データを提供します。 また、部署導入レポートを使用すると、Active Directory の属性によってスライスすることができます。これにより、すべての個別のサービスにわたってアクティブなユーザーが表示されます。 すべての指標は、最新の完全な月を集計しています。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレートアプリは購入によって利用できるようになりますか。または無料ですか。
 

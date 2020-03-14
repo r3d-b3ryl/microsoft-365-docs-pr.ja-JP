@@ -30,11 +30,11 @@ search.appverid:
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加、セキュリティポリシーの設定など、Microsoft 365 Business のセットアップ手順について説明します。
 ms.openlocfilehash: 99994b6f1e9e817b4858aeafe4ce3ceaaf4c3c37
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561192"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633875"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>セットアップウィザードで Microsoft 365 Business をセットアップする
 
@@ -42,7 +42,7 @@ Microsoft 365 Business のセットアップの概要については、このビ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザーを追加し、ポリシーをセットアップする
 

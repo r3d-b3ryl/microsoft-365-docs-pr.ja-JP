@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e18759387525ec600c24f74c96d6cddf206fc82
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569047"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633955"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -53,6 +53,9 @@ Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 Microsoft Edge、Internet Explorer 11、または任意の HTML 5 準拠の web ブラウザーを使用して、microsoft 365 セキュリティセンターの Microsoft 脅威保護にアクセスします。
+
+## <a name="microsoft-threat-protection-for-us-government-community-cloud-and-us-government-community-cloud-high-gcc-high-customers"></a>米国政府機関向けの Microsoft の脅威保護コミュニティクラウドおよび米国政府機関向けコミュニティクラウド高 (GCC 高) お客様
+現時点では、マイクロソフトの脅威保護は、アメリカ GCC および GCC 高のお客様は利用できません。 
 
 ## <a name="related-topics"></a>関連項目
 - [Microsoft Threat Protection の概要](microsoft-threat-protection.md)

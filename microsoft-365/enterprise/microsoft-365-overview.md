@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
 ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066896"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633305"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -76,7 +76,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 組織全体を Microsoft 365 for enterprise の製品とサービスに移行する方法をより深く理解するには、移行の[ポスター](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)をダウンロードしてください。
 
-[![Microsoft 365 への移行ポスターの画像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![「Microsoft 365への移行」ポスターの画像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 このポスター (見開き 2 ページ) で簡単に既存のインフラストラクチャのインベントリを作成し、Microsoft 365 Enterprise に対応する製品またはサービスに移行するためのガイダンスへとアクセスします。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 

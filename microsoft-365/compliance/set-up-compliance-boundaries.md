@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する、Office 365 組織内の論理的な境界を作成します。 コンプライアンス境界では、検索アクセス許可フィルター (コンプライアンスセキュリティフィルターとも呼ばれます) を使用して、特定のユーザーが検索できるメールボックス、SharePoint サイト、および OneDrive アカウントを制御します。
 ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557742"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634145"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 

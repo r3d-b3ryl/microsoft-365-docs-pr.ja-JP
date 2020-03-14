@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: セキュリティ & コンプライアンスセンターで複数のコンテンツ検索の統計情報を表示および比較するには、検索統計機能を使用します。 検索クエリを作成または編集するときにキーワードリストを構成して、各キーワードまたはキーワードフレーズに一致するアイテムの数を示す拡張統計を取得することもできます。
 ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068968"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634125"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>コンテンツ検索結果のキーワード統計の表示
 

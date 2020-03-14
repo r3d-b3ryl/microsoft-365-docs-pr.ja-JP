@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for Business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
 ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543428"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634365"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -85,7 +85,7 @@ ms.locfileid: "42543428"
 |:-----|:-----|:-----|:-----|
 |設定元|ドキュメントがコピーされた場合に保持される Office ドキュメントの作成者フィールドです。 たとえば、ユーザーがドキュメントを作成し、そのドキュメントを他のユーザーが SharePoint にアップロードした場合、そのドキュメントは元の作成者を保持したままになります。 このプロパティには、必ずユーザーの表示名を使用してください。|`author:"Garth Fort"`|Garth Fort によって作成されたすべてのドキュメント。|
 |ContentType|アイテム、ドキュメント、ビデオなどのアイテムの SharePoint コンテンツタイプ。|`contenttype:document`|すべてのドキュメントが返されます。|
-|作成済み|アイテムが作成された日付。|`created\>=06/01/2016`|2016年6月1日以降に作成されたすべてのアイテム。|
+|Created|アイテムが作成された日付。|`created\>=06/01/2016`|2016年6月1日以降に作成されたすべてのアイテム。|
 |CreatedBy|アイテムを作成またはアップロードした人。 このプロパティには、必ずユーザーの表示名を使用してください。|`createdby:"Garth Fort"`|Garth Fort によって作成またはアップロードされたすべてのアイテム。|
 |DetectedLanguage|アイテムの言語。|`detectedlanguage:english`|英語のすべてのアイテム。|
 |DocumentLink|SharePoint または OneDrive for business サイトの特定のフォルダーのパス (URL)。 このプロパティを使用する場合は、指定したフォルダーが配置されているサイトを検索するようにしてください。  <br/> Documentlink プロパティに指定したフォルダーのサブフォルダーにあるアイテムを返すには、指定したフォルダー\*の URL にを追加する必要があります。例えば`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Documentlink プロパティを検索する方法と、スクリプトを使用して特定のサイト上のフォルダーの documentlink Url を取得する方法の詳細については、「[対象化コレクション用に Office 365 のコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business フォルダー内のすべてのアイテムを返します。 2番目の例では、指定されたサイトフォルダー (およびすべてのサブフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
@@ -93,9 +93,9 @@ ms.locfileid: "42543428"
 |FileName|ファイルの名前。|`filename:"marketing plan"`  <br/> `filename:estimate`|最初の例では、タイトルに "marketing plan" と完全一致する語句が含まれるファイルが返されます。2 番目の例では、ファイル名に "estimate" という単語を含むファイルが返されます。|
 |LastModifiedTime|アイテムが最後に変更された日付。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|最初の例では、2016年5月1時以降に変更されたアイテムを返します。 2番目の例では、2016年5月1日から2016年6月1日までの間に変更されたアイテムを返します。|
 |ModifiedBy|アイテムを最後に変更した人。 このプロパティには、必ずユーザーの表示名を使用してください。|`modifiedby:"Garth Fort"`|Garth Fort によって最後に変更されたすべてのアイテム。|
-|Path|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。  <br/> Path プロパティに指定したサイト内のフォルダーにあるアイテムを返すには、指定したサイト\*の URL を追加する必要があります。例えば`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注:** OneDrive の`Path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 検索クエリで別のサイトプロパティを使用して、OneDrive フォルダーのメディアファイルを検索します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムを返します。 2番目の例では、指定したサイト (およびサイト内のフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
+|パス|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。  <br/> Path プロパティに指定したサイト内のフォルダーにあるアイテムを返すには、指定したサイト\*の URL を追加する必要があります。例えば`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注:** OneDrive の`Path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 検索クエリで別のサイトプロパティを使用して、OneDrive フォルダーのメディアファイルを検索します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムを返します。 2番目の例では、指定したサイト (およびサイト内のフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
 |SharedWithUsersOWSUser|指定したユーザーと共有され、ユーザーの OneDrive for Business サイトの [**自分と共有**] ページに表示されるドキュメント。 これらは、組織内の他のユーザーによって指定されたユーザーが明示的に共有しているドキュメントです。 SharedWithUsersOWSUser プロパティを使用する検索クエリに一致するドキュメントをエクスポートすると、指定されたユーザーとドキュメントを共有しているユーザーの元のコンテンツの場所からドキュメントがエクスポートされます。 詳細については、「[組織内で共有しているサイトコンテンツを検索する](#searching-for-site-content-shared-within-your-organization)」を参照してください。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|両方の例では、Garth 砦と明示的に共有されており、Garth 砦の OneDrive for Business アカウントの [**自分と共有**] ページに表示されるすべての内部ドキュメントを返します。|
-|サイト|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザーについて、OneDrive for Business サイトからアイテムを返します。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
+|Site|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザーについて、OneDrive for Business サイトからアイテムを返します。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
 |Size|アイテムのサイズ (バイト数)。|`size>=1`  <br/> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
 |タイトル|ドキュメントのタイトル。 Title プロパティは、Microsoft Office ドキュメントで指定されているメタデータです。 ドキュメントのファイル名とは異なります。|`title:"communication plan"`|Office ドキュメントの Title メタデータ プロパティに "communication plan" という語句が含まれるすべてのドキュメント。|
 |||||
@@ -222,7 +222,7 @@ SharePoint および OneDrive for Business サイトでドキュメントを検�
 |:-----|:-----|
 |設定元|ドキュメントがコピーされた場合に保持される Office ドキュメントの作成者フィールドです。 たとえば、ユーザーがドキュメントを作成し、そのドキュメントを他のユーザーが SharePoint にアップロードした場合、そのドキュメントは元の作成者を保持したままになります。|
 |タイトル|ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。|
-|作成済み|ドキュメントが作成された日付。|
+|Created|ドキュメントが作成された日付。|
 |最終更新日時|ドキュメントが最後に変更された日付。|
 |ファイルの種類|ファイルの拡張子。例: .docx、one、.pptx、または .xlsx。 これは、FileExtension サイト プロパティと同じプロパティです。|
 |||

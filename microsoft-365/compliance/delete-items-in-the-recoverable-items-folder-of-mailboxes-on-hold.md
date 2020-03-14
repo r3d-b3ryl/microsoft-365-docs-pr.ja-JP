@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: "管理者向け: でアイテムを削除する \n\nExchange Online メールボックスの er の回復可能なアイテムフォルダー (そのメールボックスが法的情報保持に配置されている場合でも)。 これは、Office 365 に誤ってこぼれたデータを削除する効果的な方法です。"
 ms.openlocfilehash: 5c8614c0faf8ea0f807b09cb24ccd3409dd7facb
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409652"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635065"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 

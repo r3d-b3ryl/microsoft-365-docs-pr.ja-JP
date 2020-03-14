@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Yammer グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
 ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543223"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634445"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 

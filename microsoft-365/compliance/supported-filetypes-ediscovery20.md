@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧。 これには、高度な電子情報開示の OCR 機能でサポートされているイメージファイルの種類の一覧が含まれています。
 ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543716"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634635"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高度な電子情報開示でサポートされているファイルの種類
 
@@ -56,7 +56,7 @@ ms.locfileid: "42543716"
 | アプリケーション/x-msaccess.exe | はい | はい | はい | 不要 | いいえ | .mdb |
 ||||||||
 
-## <a name="email"></a>メール
+## <a name="email"></a>電子メール
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

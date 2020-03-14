@@ -1,7 +1,7 @@
 ---
 title: Microsoft セキュア スコア
-description: Microsoft 365 セキュリティセンターの Microsoft セキュリティスコア、詳細情報の計算方法、およびセキュリティ管理者が期待できるセキュリティについて説明します。
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティで保護されたスコア、セキュリティセンター、改善アクション
+description: Microsoft 365 セキュリティ センターの Microsoft セキュア スコアについて、詳細をどのように計算するか、セキュリティ管理者がどんなことを期待できるかについて説明します。
+keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善アクション
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544436"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633995"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -38,7 +38,7 @@ Microsoft セキュリティスコアは、組織のセキュリティに関す�
 
 さらに、 [Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)を通じて、推奨事項やスコアにアクセスできます。 [セキュリティで保護されたスコアリソースの種類](https://go.microsoft.com/fwlink/?linkid=2092996)について説明します。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>動作のしくみ
 
 推奨されるセキュリティ機能を構成するためのポイント、セキュリティ関連タスクの実行 (レポートの表示など)、またはサードパーティ製のアプリケーションまたはソフトウェアを使用した改善アクションへの対応を行います。 一部の改善アクションでは、完全に完了した時点でポイントが提供されます。一部のデバイスまたはユーザーに対して完了した場合は、一部の機能を提供します。
 
@@ -89,11 +89,11 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 より迅速に必要な情報を提供するために、Microsoft の改善アクションがグループに分類されています。
 
-* Identity (azure AD アカウント & の役割、および Azure ATP が近日中の場合)
+* Identity (Azure AD アカウント & の役割)
 * データ (Microsoft Information Protection)
-* デバイス (Microsoft Defender ATP デバイス、近日公開予定)
+* デバイス (現時点では改善アクションはありません)
 * アプリ (Office 365 および Microsoft Cloud App Security を含む、電子メールおよびクラウドアプリ)
-* インフラストラクチャ (Azure リソース)
+* インフラストラクチャ (現時点では改善アクションはありません)
 
 [Microsoft セキュリティスコアの概要] ページでは、これらのグループ間のポイントの分割方法と、使用可能なポイントを確認できます。 また、概要ページでは、スコアの合計を表示し、セキュリティで保護されたスコアの傾向をベンチマーク比較によって把握し、スコアを向上させるために実行できる改善措置の優先順位付けを行うことができます。
 
@@ -194,8 +194,8 @@ Microsoft のセキュリティに関する評価をより良いものにする�
 
 改善アクションを追加しました。
 
-- すべてのユーザーが、セキュリティで保護されたアクセスに対して多要素認証を完了できるようにする
-- 管理役割に MFA を必要とする
+- 安全なアクセスのため、すべてのユーザーが多要素認証を行えるようにする
+- 管理者の役割に MFA を要求する
 
  これらの新しい改善アクションでは、ユーザーまたは管理者による複数要素認証 (MFA) をディレクトリに登録し、組織のニーズに合ったポリシーの適切なセットを確立する必要があります。 主な目標は柔軟性にありますが、すべてのユーザーと管理者が複数の要因またはリスクベースの id 確認プロンプトで認証できるようにします。 これには、スコープ決定を適用する複数のポリシーを作成するか、または Microsoft が MFA のユーザーをチャレンジするタイミングを決定するセキュリティの既定値 (3 月16日) を設定するという形をとることができます。
 

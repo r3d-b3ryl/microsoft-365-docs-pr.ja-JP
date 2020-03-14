@@ -23,11 +23,11 @@ ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: FAQ でのご質問にお答えするかたちで Office 365 のドメインについてご説明します。
 ms.custom: okr_smb
 ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257017"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633185"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 

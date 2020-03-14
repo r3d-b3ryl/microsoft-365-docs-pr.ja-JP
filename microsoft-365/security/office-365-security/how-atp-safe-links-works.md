@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 ATP の安全なリンクのしくみについては、この記事をお読みください。'
 ms.openlocfilehash: c87eef2afbb3a694d9906de0c6c43bfeb576782b
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333684"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633975"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 の ATP の安全なリンクのしくみ
 > [!IMPORTANT] 

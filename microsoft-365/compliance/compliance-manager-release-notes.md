@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
 ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078654"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635145"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>コンプライアンスマネージャーのリリースノート (プレビュー)
 
@@ -48,7 +48,7 @@ ms.locfileid: "42078654"
 
 - **スコープ内にない**とマークされたアクションアイテムの場合、アクションアイテムに割り当てられているスコアは、コンプライアンススコアの計算から除外されません。 **スコープにない**アクションアイテムは、コンプライアンススコアを増加しません。
 
-### <a name="secure-score"></a>セキュリティ スコア
+### <a name="secure-score"></a>セキュア スコア
 
 - セキュリティで保護されたスコアの結果は、一部の Microsoft 365 および Office 365 サブスクリプションの一部のアクションアイテムでは利用できません。 このような場合は、セキュリティで保護されたスコアの結果を検出できません**でした**。
 - セキュリティで保護されたスコアの結果が、対応するポリシーおよび完了していないアクションアイテムに対して返されることがあります。

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft コンプライアンススコアを使用すると、組織はリスク評価を簡略化および自動化し、リスクに対処するための推奨される処置を提案します。
 ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078526"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635115"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft コンプライアンススコア (プレビュー)
 

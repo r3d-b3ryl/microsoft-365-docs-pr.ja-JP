@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Office 365 で迷惑メールを過剰に取得する スパムフィルターとスパム対策ポリシー設定をカスタマイズできます。
 ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599864"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633835"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 メールのスパム対策保護
 
@@ -69,7 +69,7 @@ Office 365 でスパム、フィッシング、およびスプーフィングに
 
  **エンドユーザー**による管理の設定: エンドユーザーが自分のスパム設定を管理する方法については、「[迷惑メールフィルターの概要」](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (Microsoft Outlook ユーザーの場合) または「[迷惑メールとフィッシング](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)(web 上の outlook の場合)」を参照してください。 EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。
 
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [ブログ: スパムとフィッシングが Office 365 によって取得されるのはなぜですか?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 

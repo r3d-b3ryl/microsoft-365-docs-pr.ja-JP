@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用します。
 ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081909"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634085"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 

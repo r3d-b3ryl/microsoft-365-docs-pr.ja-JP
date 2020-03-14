@@ -8,11 +8,11 @@ ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012262"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632985"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>構成可能な設定のリファレンス-Microsoft マネージドデスクトップ
 
@@ -21,7 +21,7 @@ ms.locfileid: "38012262"
 ## <a name="desktop-background-picture"></a>デスクトップの背景画像
 組織内の Microsoft マネージドデスクトップデバイスのデスクトップの背景画像をカスタマイズできます。 これを使用して、会社ブランドまたはマーケティング資料を適用することができます。 
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 デスクトップの背景画像では、これらの要件を満たす必要があります。
 - 画像ファイル形式-.jpg、jpeg、または .png
@@ -40,7 +40,7 @@ ms.locfileid: "38012262"
 ## <a name="browser-start-pages"></a>ブラウザーの開始ページ
 ユーザーが Microsoft Edge を起動すると、ブラウザーのスタートページが個々のタブに表示されます。 ユーザーが頻繁に使用するサイトのセットを簡単に開くことができるようにするには、各サイトのブラウザーのスタートページを追加します。 
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 ブラウザーの開始ページには、イントラネットまたはインターネットサイト用の完全修飾ドメイン名 (FQDN) を指定する必要があります。 内部サイトが構成されている場合、これらのサイトへのアクセスが許可されるのは、社内ネットワークに接続されている場合、または VPN 接続を使用して接続している場合のみであることをユーザーに知らせてください。 
 
@@ -61,7 +61,7 @@ Microsoft Edge との互換性の問題があることがわかっている特�
 
 Https://の場所、またはエンタープライズモードサイトリストをホストしている内部共有の場所を指定できます。 
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 エンタープライズモードのサイトリストファイルでは、これらの要件を満たす必要があります。
 - ファイル形式-[ファイルの要件](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)を満たす XML ファイル
@@ -92,7 +92,7 @@ Https://の場所、またはエンタープライズモードサイトリスト
 - ゾーン3–インターネットゾーン
 - ゾーン 4-制限付きサイトゾーン
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 信頼済みサイトごとにイントラネットまたはインターネットサイトの完全修飾ドメイン名 (FQDN) を指定します。 
 
@@ -124,7 +124,7 @@ Microsoft マネージドデスクトップポータルで追加するプロキ�
 > [!NOTE]
 > 既定のプロキシ例外リストの更新は、常に顧客展開より優先されます。 これは、既定のプロキシ例外リストの展開が存在する場合に、段階的な展開が一時停止することを意味します。  
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 プロキシサーバーおよびプロキシサイトの例外については、これらの要件を満たす必要があります。
 - 有効なサーバーアドレスとポート番号である必要があります。
@@ -142,6 +142,6 @@ Microsoft マネージドデスクトップポータルで追加するプロキ�
 6. 追加する各信頼済みサイトについて、手順1-5 を繰り返します。 
 7. 変更を保存してテストグループに展開するには、[**ステージ展開**] を選択します。
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他のリソース
 - [構成可能な設定の概要](config-setting-overview.md) 
 - [構成可能な設定を展開する](config-setting-deploy.md)

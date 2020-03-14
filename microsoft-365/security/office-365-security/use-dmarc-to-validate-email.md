@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、Office 365 の組織から送信されたメッセージを検証する方法について説明します。
 ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957352"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633435"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 で電子メールを検証する
 

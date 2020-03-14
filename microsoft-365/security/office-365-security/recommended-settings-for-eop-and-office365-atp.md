@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
 ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42587296"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632945"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 

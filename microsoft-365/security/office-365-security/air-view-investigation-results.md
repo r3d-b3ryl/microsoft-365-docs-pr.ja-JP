@@ -16,11 +16,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Office 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
 ms.openlocfilehash: 638559efe5f7028a647b466c030a339c677601ce
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179258"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633845"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の詳細と結果
 
@@ -85,7 +85,7 @@ ms.locfileid: "42179258"
 
 調査の状態は、分析と処理の進捗状況を示します。 調査が実行されると、状態の表示が変わり、脅威が検出されたかどうかと、処理が承認されているかどうかが示されるようになります。 
 
-|状態  |意味  |
+|ステータス  |意味  |
 |---------|---------|
 |開始中 | すぐに開始するために、調査がキューに入れられる |
 |実行中 | 調査が開始され、分析を実行しています |
@@ -96,7 +96,7 @@ ms.locfileid: "42179258"
 |修復済み | 調査が完了し、完全に修復されました (すべてのアクションが承認されました) |
 |一部修復済み | 調査が終了し、推奨されるアクションのいくつかが承認された |
 |ユーザーにより終了 | 管理者が調査を終了した |
-|Failed | 調査中にエラーが発生し、脅威の結論に達しませんでした |
+|失敗 | 調査中にエラーが発生し、脅威の結論に達しませんでした |
 |調整によってキューに入れられる | 調査は、システム処理の制限 (サービスのパフォーマンスを保護するため) による分析を待機しています。 |
 |調整による終了 | 調査のボリュームとシステム処理の制限により、十分な時間内に調査を完了できませんでした。 エクスプローラーで電子メールを選択し、[調査] アクションを選択することによって、調査を retrigger することができます。 |
 
@@ -246,7 +246,7 @@ ms.locfileid: "42179258"
 - 結果の CSV ファイルへのエクスポート。
 - ビューのフィルタリング。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [保留中のアクションを確認して承認する](air-remediation-actions.md)
 

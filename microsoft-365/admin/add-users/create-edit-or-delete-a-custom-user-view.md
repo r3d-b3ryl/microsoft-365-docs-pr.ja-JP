@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: フィルターを使用して Office 365 のカスタムユーザービューを作成、編集、または削除する方法について説明します。
 ms.openlocfilehash: ba03d3da3e8bfdc4f2a661d1dc59845a8a22609f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241643"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632955"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Office 365 でカスタム ユーザー ビューを作成、編集、削除する
 

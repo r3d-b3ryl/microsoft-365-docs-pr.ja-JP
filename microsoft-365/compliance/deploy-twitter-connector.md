@@ -14,11 +14,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Twitter データをインポートおよびアーカイブするためのネイティブコネクタを Microsoft 365 にセットアップできます。 このデータを Microsoft 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
 ms.openlocfilehash: 80c3ca71204b6050a1944250c20df4ff13bbd71e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075705"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635015"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>コネクタをアーカイブ Twitter データに展開する
 
@@ -38,7 +38,7 @@ ms.locfileid: "42075705"
 
    ![新しいアプリの登録を作成する](../media/TCimage03.png)
 
-4. アプリケーションを登録します。 [**リダイレクト URI (オプション)**] で**** 、[アプリケーションの種類] ドロップダウンリストから`https://portal.azure.com` [WEB] を選択し、URI のボックスに入力します。
+4. アプリケーションを登録します。 [**リダイレクト URI (オプション)**] で**Web** 、[アプリケーションの種類] ドロップダウンリストから`https://portal.azure.com` [WEB] を選択し、URI のボックスに入力します。
 
    ![リダイレクトhttps://portal.azure.com URI の種類 ](../media/TCimage04.png)
 

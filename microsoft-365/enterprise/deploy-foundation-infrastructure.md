@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Microsoft 365 Enterprise 基盤インフラストラクチャを組織に展開するための主要なフェーズ (コア展開とも呼ばれます) について理解します。
 ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067980"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633615"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise 基盤インフラストラクチャ
 

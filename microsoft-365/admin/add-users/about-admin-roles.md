@@ -21,11 +21,11 @@ ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
 ms.custom: okr_smb
 ms.openlocfilehash: b0aa799112fb2b714f369237958b583dfb8e8baa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241703"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632975"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
