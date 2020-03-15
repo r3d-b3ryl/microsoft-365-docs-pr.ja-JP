@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の ID ベースのサービスとインフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: 3fd4d0a1df50d55cb7a21668b609341d0c01aa35
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544066"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637290"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>フェーズ 2: ID インフラストラクチャの終了条件
 

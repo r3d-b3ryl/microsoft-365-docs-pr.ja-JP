@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 情報保護フレームワークの秘密度ラベルを使用して、組織のデータを分類して保護し、ユーザーの生産性とコラボレーション機能を損なわないようにします。 これらのラベルは、フッターや透かしなどの暗号化の視覚的マーキングを含む保護設定を適用できます。
-ms.openlocfilehash: 3b8e5e39ef6e2cb2e452fbf1764d53bd51ad24d8
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 7593774b4cb0786cc82988442bbca522ce534cc8
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543157"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634645"
 ---
 # <a name="learn-about-sensitivity-labels"></a>機密度ラベルの詳細
 
@@ -190,6 +190,9 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 ラベルの展開に Azure Information Protection を使用している場合は、秘密度ラベルを使用する前に、次のセクションを参考にしてください。
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
+
+> [!NOTE]
+> Azure ポータルでの Azure Information Protection ラベルのラベル管理は、**2021 年 3 月 31 日**に廃止されます。 詳細については、公式の「[廃止のお知らせ](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)」を参照してください。
 
 テナントがまだ[統合ラベル付けプラットフォーム](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上にないことが理由で Azure Information Protection ラベルを使用している場合は、統合ラベル付けを有効にするまでは秘密度ラベルを作成しないことをお勧めします。 このシナリオでは、Azure ポータルに表示されるラベルは、秘密度ラベルではなく、Azure Information Protection のラベルになります。 これらのラベルは、Windows コンピューター上の Azure Information Protection クライアント (クラシック) で使用できますが、macOS、iOS、または Android を実行しているデバイスでは使用できません。 この問題を解決するには、[これらのラベルを秘密度ラベルに移行](/azure/information-protection/configure-policy-migrate-labels)させます。 
 

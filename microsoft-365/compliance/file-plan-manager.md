@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074215"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634425"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
@@ -144,7 +144,7 @@ ms.locfileid: "42074215"
    |RetentionAction|文字列|このプロパティは、RetentionDuration プロパティで指定された値の有効期限が切れた後に実行するアクションを指定します。 有効な値は次のとおりです。</br>**Delete**: RetentionDuration プロパティで指定された値よりも古いアイテムが削除されます。</br>**Keep**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了しても何もしません。 </br>**KeepAndDelete**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了したらそれらを削除します。   |
    |RetentionDuration|文字列|プロパティは、コンテンツを保持する日数を指定します。 有効な値は次のとおりです。</br>**Unlimited**: アイテムは無期限に保持されます。 </br>***n***: 正の整数です。(例: **365**) 
    |RetentionType|文字列|プロパティは、コンテンツ作成日、イベント日、ラベルが付けられた (タグが付けされた) 日、または最終変更日のいずれから保持期間を計算するかを指定します。 有効な値は次のとおりです。</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|このプロパティが入力されている場合、保持期間が終了すると、廃棄のレビューがトリガーされます。 プロパティは、**Delete** および **KeepAndDelete** の保持期間用アクションのレビュー担当者の電子メール アドレスを指定します。 個々のユーザー、配布グループまたはセキュリティ グループ、または Office 365 グループの電子メール アドレスを含めることができます。 複数のメール アドレスをコンマで区切って指定できます。|
+   |ReviewerEmail|SmtpAddress|このプロパティが入力されている場合、保持期間が終了すると、廃棄のレビューがトリガーされます。 プロパティは、**Delete** および **KeepAndDelete** の保持期間用アクションのレビュー担当者の電子メール アドレスを指定します。 個々のユーザー、配布グループまたはセキュリティ グループのメール アドレスを含めることができます。 複数のメール アドレスをセミコロンで区切って指定できます。|
    |ReferenceId|文字列|このプロパティは、**参照 ID** ファイル計画記述子に表示される値を指定します。| 
    |DepartmentName|文字列|このプロパティは、**業務/部署**ファイル計画記述子に表示される値を指定します。|
    |カテゴリ|文字列|このプロパティは、**カテゴリ** ファイル計画記述子に表示される値を指定します。|
