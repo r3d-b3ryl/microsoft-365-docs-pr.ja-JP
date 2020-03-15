@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 非エンタープライズ組織向けの、エンタープライズ向け Microsoft 365 基礎インフラストラクチャの簡略化されたフェーズを説明します。
-ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068174"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612647"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ組織のためのエンタープライズ向け Microsoft 365 の基礎インフラストラクチャ
 
@@ -292,7 +292,7 @@ Intune ポリシーでは、デバイス コンプライアンスとアプリ保
 
   財務情報や法的情報、新しい製品やサービスに関する研究開発データなどがあります。
 
-- 厳しく規制
+- 高度な規制
 
   顧客やパートナーの個人を特定できる情報、組織の戦略計画または知的財産などがあります。
 
@@ -371,7 +371,7 @@ Intune ポリシーでは、デバイス コンプライアンスとアプリ保
 
 Microsoft 365 管理センターで、複数の Azure AD グループにユーザー アカウントを追加できます。 ユーザー アカウントのプロパティで、**[グループの管理] > [メンバーシップの追加]** の順にクリックします。
 
-Powershell を使用する場合は、この[ダウンロード可能な Excel ブック](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)を参照してください。指定したユーザー アカウントと選択したグループ名に基づいて PowerShell コマンドが生成されます。
+Powershell を使用する場合は、この[ダウンロード可能な Excel ブック](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)を参照してください。指定したユーザー アカウントと選択したグループ名に基づいて PowerShell コマンドが生成されます。
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>クラウド専用ユーザー アカウントを持っている新入社員
 
