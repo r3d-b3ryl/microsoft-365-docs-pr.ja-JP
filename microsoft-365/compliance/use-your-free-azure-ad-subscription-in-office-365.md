@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 組織の Office 365 の有料サブスクリプションに含まれる、Azure Active Directory にアクセスする方法について説明します。
-ms.openlocfilehash: fe3829d349e5721ebdcf0688c1f5b2bd3c9f7f45
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 40ed5808f6e921a3649af408ee078dba64167bb3
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604094"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610594"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Office 365 で無料の Azure Active Directory サブスクリプションを使用する
 
@@ -29,7 +29,11 @@ ms.locfileid: "42604094"
 
 ## <a name="before-you-begin"></a>はじめに
 
-現在ログオンしている資格情報が Azure に渡されないようにするため、プライベート ブラウズ セッション (通常のセッションではありません) を使用して Azure portal にアクセスします (以下の手順 1)。Microsoft Edge、Internet Explorer または Mozilla FireFox で InPrivate ブラウズ セッションを開くには、CTRL + SHIFT + P キーを押してください。Google Chrome でプライベート ブラウズ セッションを開くには (シークレット ウィンドウと呼ばれます)、CTRL + SHIFT + N キーを押します。
+(通常のセッションではなく) プライベート ブラウジング セッションを使用して、Azure portal (以下の手順 1 参照) にアクセスします。これにより、現在のログオンに使用している資格情報が Azure に渡されません。プライベート ブラウジング セッションを開始するには:
+
+- Microsoft Edge (レガシ バージョン)、Internet Explorer、または Mozilla FireFox では、`CTRL+SHIFT+P` を押します。
+
+- Microsoft Edge (最新バージョン) または Google Chrome では、`CTRL+SHIFT+N` を押します。
 
 ## <a name="access-azure-active-directory"></a>Azure Active Directory にアクセスする
 
