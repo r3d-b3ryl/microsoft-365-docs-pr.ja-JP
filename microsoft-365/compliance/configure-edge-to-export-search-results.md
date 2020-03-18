@@ -11,25 +11,24 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft Edge を使用して、セキュリティ/コンプライアンスセンターでコンテンツ検索および電子情報開示から検索結果をエクスポートするには、ClickOnce サポートを有効にする必要があります。
-ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft Edge の最新バージョンを使用して、セキュリティ/コンプライアンスセンターでコンテンツ検索と電子情報開示から検索結果をダウンロードするには、ClickOnce サポートを有効にする必要があります。
+ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078584"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710346"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Microsoft Edge で Office 365 eDiscovery エクスポートツールを使用する
 
-Microsoft Edge に対する最近の変更の結果として、ClickOnce のサポートは既定で有効になっていません。 Microsoft Office 365 eDiscovery エクスポートツールを引き続き使用して、コンテンツ検索や電子情報開示の検索結果をダウンロードするには、microsoft [Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)を使用するか、microsoft Edge で ClickOnce サポートを有効にする必要があります。
+最新バージョンの Microsoft Edge に対する最近の変更の結果として、ClickOnce サポートは既定で有効になりません。 Microsoft Office 365 eDiscovery エクスポートツールを引き続き使用して、コンテンツ検索や電子情報開示の検索結果をダウンロードするには、microsoft [Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)を使用するか、microsoft Edge の最新バージョンで ClickOnce サポートを有効にする必要があります。
 
-## <a name="how-to-enable-clickonce-support-in-microsoft-edge"></a>Microsoft Edge で ClickOnce サポートを有効にする方法
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>Microsoft Edge で ClickOnce サポートを有効にする
 
-1. Microsoft Edge で、 **edge://flags/#edge**に移動します。
+1. Microsoft Edge で、 **[edge://flags/#edge]** に移動します。
 
 2. ドロップダウンリストで既存の値が**Default**または**Disabled**に設定されている場合は、[**有効**] に変更します。
-    
+
    ![](../media/ClickOnceimage1.png)
 
 3. ブラウザーウィンドウの一番下までスクロールし、[**再起動**] をクリックして、エッジを再起動します。
@@ -40,7 +39,7 @@ Microsoft Edge に対する最近の変更の結果として、ClickOnce のサ�
 
 ![](../media/ClickOnceimage3.png)
 
-## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a>Office 365 eDiscovery エクスポートツールをインストールして実行する
+## <a name="install-and-run-the-ediscovery-export-tool"></a>電子情報開示エクスポートツールをインストールして実行する
 
 1. コンテンツ検索または電子情報開示ケースのエクスポートのポップアップページにある [**結果のダウンロード**] をクリックします。
 

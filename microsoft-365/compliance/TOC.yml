@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 開始
+- name: 使用を開始する
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -74,7 +74,7 @@
 - name: 情報保護の管理
   href: protect-information.md
   items:
-    - name: 機密ラベル
+    - name: 機密度ラベル
       items:
         - name: 機密度ラベルの詳細
           href: sensitivity-labels.md
@@ -352,6 +352,8 @@
               href: export-search-results.md
             - name: 検索レポートをエクスポートする
               href: export-a-content-search-report.md
+            - name: Microsoft Edge を使用して検索結果をダウンロードする
+              href: configure-edge-to-export-search-results.md
             - name: メール メッセージを検索して削除する
               href: search-for-and-delete-messages-in-your-organization.md
             - name: オンプレミスユーザーのクラウドベースのメールボックスを検索する
@@ -428,6 +430,8 @@
               href: ediscovery-troubleshooting-common-issues.md
             - name: 失敗した検索を再試行する
               href: retry-failed-content-search.md
+            - name: Microsoft Edge を使用して検索結果をダウンロードする
+              href: configure-edge-to-export-search-results.md
     - name: Advanced eDiscovery
       items:
         - name: 高度な電子情報開示の概要
@@ -549,7 +553,7 @@
               href: advanced-ediscovery-reports.md
             - name: AzCopy のトラブルシューティング
               href: troubleshooting-azcopy.md
-    - name: 高度な電子情報開示 (クラシック)
+    - name: Advanced eDiscovery (クラシック)
       items:
         - name: 高度な電子情報開示の概要 (クラシック)
           href: office-365-advanced-ediscovery.md

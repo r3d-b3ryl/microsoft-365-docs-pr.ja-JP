@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報の障壁をトラブルシューティングするためのガイドとして使用してください。
-ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600594"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692664"
 ---
 # <a name="troubleshooting-information-barriers"></a>情報障壁のトラブルシューティング
 
@@ -146,7 +146,7 @@ Policy application コマンドレットを実行すると、組織内のすべ�
 
 2. 前の手順の結果に応じて、次のいずれかの手順を実行します。
   
-    |状態  |次の手順  |
+    |ステータス  |次の手順  |
     |---------|---------|
     |**未開始**     |**InformationBarrierPoliciesApplication**コマンドレットが実行されてから45分以上経過している場合は、監査ログを調べて、ポリシー定義にエラーがないかどうか、またはアプリケーションが開始されていない理由を確認してください。 |
     |**失敗**     |アプリケーションに障害が発生した場合は、監査ログを確認します。 また、セグメントとポリシーも確認してください。 複数のセグメントに割り当てられているユーザーはいますか? セグメントに複数の poliicy が割り当てられているかどうか。 必要に応じて、[セグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment)するか、または[ポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication**コマンドレットを再度実行します。  |
@@ -171,11 +171,46 @@ Policy application コマンドレットを実行すると、組織内のすべ�
 
 3. [ユーザーアカウント、セグメント、ポリシー、またはポリシーアプリケーションの状態を表示](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)します。
 
+## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>問題: 情報バリアポリシーが指定したすべてのユーザーに適用されない
+
+セグメントを定義し、定義された情報バリアポリシーを適用した後、それらのポリシーを適用しようとすると、そのポリシーは一部の受信者に適用されますが、他の受信者には適用されない場合があります。
+`Get-InformationBarrierPoliciesApplicationStatus`コマンドレットを実行するときは、次のようなテキストの出力を検索します。
+
+> 独自性`<application guid>`
+>
+> 受信者の合計: 81527
+>
+> 失敗した受信者: 2
+>
+> エラーのカテゴリ: なし
+>
+> 状態: 完了
+
+### <a name="what-to-do"></a>行うこと
+
+1. の`<application guid>`監査ログで検索します。 この PowerShell コードをコピーして、変数に対して変更することができます。
+
+```powershell
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
+```
+
+2. `"UserId"`および`"ErrorDetails"`フィールドの値について、監査ログからの詳細な出力を確認します。 これにより、エラーが発生した理由がわかります。 この PowerShell コードをコピーして、変数に対して変更することができます。
+
+```powershell
+   $DetailedLogs[1] |fl
+```
+ 次に例を示します。
+
+> "UserId": User1
+> 
+>"ErrorDetails": "Status: IBPolicyConflict"。 エラー: IB segment "segment id1" および IB segment "segment id2" が競合しており、受信者に割り当てることができません。 
+
+3. 通常、ユーザーが複数のセグメントに含まれていることがわかります。 これを修正するには、 `-UserGroupFilter`の`OrganizationSegments`値を更新します。
+
+4. これらの手順[情報障壁ポリシー](information-barriers-policies.md#part-3-apply-information-barrier-policies)を使用して、情報バリアポリシーを再適用します。
+
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
 
 [情報障壁](information-barriers.md)
-
-
-
