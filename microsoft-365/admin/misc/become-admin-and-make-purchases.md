@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '組織のために Office 365 サブスクリプションを管理および取得する方法について説明します。 '
-ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361552"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857417"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>管理者になって、組織の Office 365 を購入する
 
@@ -87,7 +87,7 @@ Microsoft では、IT 部門による正式な展開を待つことなく、簡�
 |ライセンスの追加または削除  <br/> |Office 365 を使用していないユーザーの[ライセンスを追加](../../commerce/licenses/buy-licenses.md)したり、組織の office 365 サブスクリプションを使用しないユーザーの[ライセンスを削除](../manage/remove-licenses-from-users.md)したりすることができます。  <br/> |
 |既にサインアップしている他のユーザーに連絡する  <br/> |他のユーザーに連絡して、自分がそのユーザーの Office 365 を管理していること、およびアップグレードされていることを知らせます。[こちらの手順に従って](../add-users/add-users.md)、 **アクティブ ユーザー**とそのメールアドレスの一覧を表示します。<br/> |
 |Office 365 を使い始める  <br/> |[Office 365 ラーニング センター](https://support.office.com/learn/office365-for-business) にアクセスして、サインイン、メールのチェック、ドキュメントの共有などの方法を確認してください。管理者とユーザーは、このサイトを使用して Office 365 を使い始めることができます。  <br/> |
-|Office 365 サブスクリプションを管理する  <br/> |[Office 365 Admin ヘルプセンター](../admin-home.md)にアクセスして、ユーザーの追加と削除、パスワードのリセット、モバイルデバイスの設定などの一般的な管理タスクについて説明します。  <br/> |
+|Office 365 サブスクリプションを管理する  <br/> |[Office 365 Admin ヘルプセンター](../admin-home.yml)にアクセスして、ユーザーの追加と削除、パスワードのリセット、モバイルデバイスの設定などの一般的な管理タスクについて説明します。  <br/> |
 
 ## <a name="still-need-help"></a>さらにサポートが必要な場合
 

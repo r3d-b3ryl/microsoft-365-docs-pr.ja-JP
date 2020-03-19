@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: f54ec3c0b318acaf6c81d26f32cfde5e87585a13
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: f7ae1a285e22ad18d292d37aab0bba0b4a441461
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261994"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857453"
 ---
 # <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Microsoft の脅威保護の自動化された調査と応答 (AIR) 機能
 
 **適用対象:**
 - Microsoft Threat Protection
 
-セキュリティ警告がトリガーされた場合、組織のセキュリティ運用チームはこれらの警告を調査し、組織を保護するための手順を実行する必要があります。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 Microsoft の脅威保護の自動化された調査と対応 (AIR) 機能が役立ちます。 空気は、セキュリティ運用センターで仮想アナリストを持つようなものです。
+セキュリティの警告がトリガーされたときに、そのような警告を確認し、組織を保護するための手順を実行することは、セキュリティ運用チームにかかっています。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 Microsoft の脅威保護の自動化された調査と対応 (AIR) 機能が役立ちます。 空気は、セキュリティ運用センターで仮想アナリストを持つようなものです。
 
 ## <a name="your-virtual-analyst"></a>仮想アナリスト
 
-組織のレベル 1 またはレベル 2 のセキュリティ運用チームは、仮想アナリストを使用することができます。 仮想アナリストは、セキュリティ運用チームであれば実行するであろう脅威の調査と修復の最適な手順を模倣して実行します。 仮想アシスタントは、処理能力の制限なしに24時間年中無休で作業することが可能で、調査と脅威の修復を大量に処理することができます。 このような仮想アシスタントを使用すると、対応するまでの時間を大幅に短縮できます。その結果、セキュリティ運用チームでは、その他の重要な戦略的プロジェクトに取り組むための時間的余裕が生まれます。 これは、決して仮定のシナリオではありません。 このような仮想アナリストは、Microsoft Threat Protection スイートの一部として提供されており、*自動調査と対応* (AIR) と呼ばれています。
+組織のレベル 1 またはレベル 2 のセキュリティ運用チームは、仮想アナリストを使用することができます。 仮想アナリストは、セキュリティ運用チームであれば実行するであろう脅威の調査と修復の最適な手順を模倣して実行します。 仮想アシスタントは、処理能力の制限なしに24時間年中無休で作業することが可能で、調査と脅威の修復を大量に処理することができます。 このような仮想アシスタントを使用すると、対応するまでの時間を大幅に短縮できます。その結果、セキュリティ運用チームでは、その他の重要な戦略的プロジェクトに取り組むための時間的余裕が生まれます。 このシナリオがサイエンスのように聞こえる場合は、そうではありません。 このような仮想アナリストは、Microsoft Threat Protection スイートの一部として提供されており、*自動調査と対応* (AIR) と呼ばれています。
 
 セキュリティ運用チームは AIR を使用することで、セキュリティの警告やインシデントへの組織の対応能力を大幅に向上させることが可能です。 AIR を使用すると、調査と修復アクションでのコストを削減でき、脅威対策スイートを最大限に活用できます。 セキュリティ運用チームを支援する以下の操作が AIR により実行されます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "42261994"
 |デバイス (エンドポイントとも呼ばれます)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |メールの内容 (メールボックス内のファイルとメッセージ)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-各調査では、調査対象の証拠それぞれについて判定 (*Malicious (悪意のある)*、 *Suspicious (疑わしい)*、または *Clean (クリーン)*) が作成されます。 脅威の種類および出された判定に応じて、修復アクションが自動的に、または組織のセキュリティ運用チームの承認を受けて実行されます。 保留中および完了済みのアクションは、[アクション センター](mtp-action-center.md)に一覧表示されます。
+各調査では、調査対象の証拠それぞれについて判定 (*Malicious (悪意のある)*、 *Suspicious (疑わしい)*、または *Clean (クリーン)*) が作成されます。 脅威の種類および結果の verdict に応じて、修復アクションは自動的に、または組織のセキュリティ運用チームによる承認時に発生します。 保留中および完了済みのアクションは、[アクション センター](mtp-action-center.md)に一覧表示されます。
 
 > [!TIP]
 > Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
@@ -68,11 +68,11 @@ ms.locfileid: "42261994"
 
 | | |
 |--|--|
-|サブスクリプションの要件 |- Microsoft 365 E5 または Microsoft 365 E3 と Identity & Threat Protection<br/>- [Microsoft 365 のプラン](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans) を参照してください|
+|サブスクリプションの要件 |以下のいずれか: <br/>-Microsoft 365 E5 <br/>-Microsoft 365 A5 <br/>-Microsoft 365 E5 セキュリティ<br/>-Microsoft 365 A5 セキュリティ<br/>-Office 365 E5 プラス Enterprise Mobility + Security E5 + Windows E5<br/><br/>[Microsoft の脅威保護ライセンス要件](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements)を参照してください。|
 |ネットワーク要件 |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) がオン<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) が構成済み<br/>- [MCAS が Azure ATP と統合済み](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
-|Windows コンピューターの要件 |- Windows 10、バージョン 1709 以降がインストール済み (「[Windows 10 リリース情報](https://docs.microsoft.com/windows/release-information/)」を参照してください)<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) が構成済み <br/>- [Windows Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)が構成済み |
+|Windows コンピューターの要件 |-Windows 10、バージョン1709以降がインストールされている (「 [windows 10 リリース情報](https://docs.microsoft.com/windows/release-information/)」を参照) 次の脅威保護サービスが構成されている。<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Windows Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
 |電子メールコンテンツと Office ファイルの保護 |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)の構成 |
-|アクセス許可 |- AIR を*構成*するユーザーには、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで、**グローバル管理者**または**セキュリティ管理者**の役割が割り当てられている必要があります。<br/><br/>- AIR の機能を*使用*する方法については、「[アクション センターのタスクに必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)」を参照してください。 |
+|アクセス許可 |- AIR を構成するユーザーには、Azure Active Directory (https://portal.azure.com) または Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで、[グローバル管理者](https://portal.azure.com)またはセキュリティ管理者の役割が割り当てられている必要があります。<br/><br/>- AIR の機能を使用する方法については、「[アクション センターのタスクに必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)」を参照してください。 |
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Office 365 でドメイン名を購入する方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 8b2b23e2e699723d54ecb7ca2807296641178664
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1982ac054ca64f2442e108b457553a58ebcb234c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255164"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857441"
 ---
 # <a name="buy-a-domain-name-in-office-365"></a>Office 365 でドメイン名を購入する
 
@@ -37,7 +37,7 @@ ms.locfileid: "42255164"
   
 ### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして [設定\> ] の\>ドメインでドメインを購入する
 
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
 3. [**ドメイン**] ページで、[**ドメインの購入**] を選択します。
     
@@ -68,7 +68,7 @@ ms.locfileid: "42255164"
 > [ドメインの**購入**] を選択すると、microsoft パートナーから購入/管理されたテナントがある場合は、microsoft パートナーの web サイトにリダイレクトされることがあります。
 
 ### <a name="domain-privacy"></a>ドメインのプライバシー
-ドメインの購入には、無料のドメインのプライバシーサブスクリプションが提供されます。 これにより、連絡先情報は、ICANN private を使用してドメインの登録に添付されたままになります。 [詳細情報。](https://whois.icann.org/en/privacy-and-proxy-services)
+ドメインの購入には、無料のドメインのプライバシーサブスクリプションが提供されます。 これにより、連絡先情報は、ICANN private を使用してドメインの登録に添付されたままになります。 [詳細情報](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>別のドメイン レジストラーからドメインを購入する
 [GoDaddy](https://www.godaddy.com)以外のドメインレジストラーからドメインを購入する場合は、自動セットアップ (ドメイン接続) をサポートする以下のいずれかを使用することをお勧めします。 
@@ -121,4 +121,4 @@ Office 365 でドメインをセットアップするには、ドメインを所
 
 [ドメイン FAQ](../setup/domains-faq.md)
 
-[Office 365 のドメインに関するヘルプ](get-help-with-domains.md)
+[Office 365 のドメインに関するヘルプ](get-help-with-domains.yml)
