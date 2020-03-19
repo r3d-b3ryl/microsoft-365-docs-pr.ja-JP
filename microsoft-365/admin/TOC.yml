@@ -1,5 +1,5 @@
 - name: 管理者のホーム
-  href: admin-home.md
+  href: admin-home.yml
   items:
     - name: 概要
       items:
@@ -8,7 +8,7 @@
         - name: Office 365 にサインアップする
           href: admin-overview/sign-up-for-office-365.md
         - name: ビデオ トレーニング
-          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)'
+          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
         - name: 管理センターについて
           href: admin-overview/about-the-admin-center.md
         - name: 取得しているサブスクリプションが不明な場合
@@ -49,7 +49,7 @@
           href: setup/customize-your-organization-theme.md
     - name: ユーザーおよび役割
       items:
-        - name: ユーザーを追加する
+        - name: ユーザーの追加
           href: add-users/add-users.md
         - name: テンプレートを作成して使用し、ユーザーを追加する
           href: add-users/create-and-use-a-template-to-add-users.md
@@ -83,10 +83,10 @@
           href: add-users/assign-admin-roles.md
         - name: Exchange Online 管理者の役割について
           href: add-users/about-exchange-online-admin-role.md
-    - name: メール
+    - name: 電子メール
       items:
         - name: Office 365 のメール
-          href: email/email.md
+          href: email/email.yml
         - name: Office 365 ユーザーのメール設定
           href: email/office-365-user-email-settings.md
         - name: ユーザーに別のメール エイリアスを追加する
@@ -154,7 +154,7 @@
     - name: 管理
       items:
         - name: Office 365 の管理
-          href: manage/manage.md
+          href: manage/manage.yml
         - name: 連絡先の設定を変更する
           href: manage/change-contact-preferences.md
         - name: アドレスや連絡先などを変更する
@@ -186,9 +186,9 @@
         - name: ユーザーからのライセンスの割り当てを解除する
           href: manage/remove-licenses-from-users.md
         - name: ライセンスの競合を解決する
-          href: manage/resolve-license-conflicts.md)
+          href: manage/resolve-license-conflicts.md
         - name: メッセージ センターでメッセージを管理する
-          href: manage/manage-messages.md)
+          href: manage/manage-messages.md
     - name: サブスクリプションと課金
       items:
         - name: サブスクリプションを管理する
@@ -202,7 +202,7 @@
     - name: ドメイン
       items:
         - name: のドメイン
-          href: get-help-with-domains/get-help-with-domains.md
+          href: get-help-with-domains/get-help-with-domains.yml
         - name: ドメインとは
           href: get-help-with-domains/what-is-a-domain.md
         - name: ドメイン名を購入する

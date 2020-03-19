@@ -1,11 +1,11 @@
 ---
-title: Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
+title: Office 36 でのエンドユーザースパム通知
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: 管理者がユーザーの通知を有効にした場合、スパム、大量、またはフィッシングメッセージとして識別されたメールボックスに送信されたメッセージを一覧表示する通知メッセージを受け取ります。 通知された後にメッセージを解放または報告することができます。
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: 管理者がスパム対策ポリシーでエンドユーザーのスパム通知を有効にすると、メッセージの受信者は検疫済みメッセージに関する定期的な通知を受信します。
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722038"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857147"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a><span data-ttu-id="9cd66-104">Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する</span><span class="sxs-lookup"><span data-stu-id="9cd66-104">Use user spam notifications to release and report quarantined messages in Office 365</span></span>
+# <a name="end-user-spam-notifications-in-office-365"></a><span data-ttu-id="8201b-103">Office 365 でのエンドユーザースパム通知</span><span class="sxs-lookup"><span data-stu-id="8201b-103">End-user spam notifications in Office 365</span></span>
 
-<span data-ttu-id="9cd66-105">管理者がユーザーに対してスパム通知を有効にすると、スパム、一括、またはフィッシングとして識別されたメールボックス宛てのメッセージを一覧表示する通知メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9cd66-105">If your admin enables spam notifications for users, you'll receive a notification message that lists messages addressed to your mailbox that were identified as spam, bulk, or phish and quarantined instead.</span></span>
+<span data-ttu-id="8201b-104">検疫は、exchange online またはスタンドアロンの exchange online Protection (EOP) 組織内のメールボックスを使用する Office 365 組織で潜在的に危険または不要なメッセージを保持します。 exchange online メールボックスはありません。</span><span class="sxs-lookup"><span data-stu-id="8201b-104">Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.</span></span> <span data-ttu-id="8201b-105">詳細については、「 [Quarantine In Office 365](quarantine-email-messages.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8201b-105">For more information, see [Quarantine in Office 365](quarantine-email-messages.md).</span></span>
 
-> [!TIP]
-> <span data-ttu-id="9cd66-106">管理者がこの機能を有効にする場合は、[既定のスパム対策ポリシーを変更](configure-your-spam-filter-policies.md)するときにオプションを選択できます。</span><span class="sxs-lookup"><span data-stu-id="9cd66-106">If you're an administrator and want to enable this feature, you can choose the option when you [modify a default anti-spam policy](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="8201b-106">既定では、エンドユーザーのスパム通知はスパム対策ポリシーで無効になっています。</span><span class="sxs-lookup"><span data-stu-id="8201b-106">By default, end-user spam notifications are disabled in anti-spam policies.</span></span> <span data-ttu-id="8201b-107">管理者が[エンドユーザーのスパム通知を有効](configure-your-spam-filter-policies.md)にした場合、メッセージの受信者は、スパム、バルクメール、または (4 月 2020) フィッシングとして検疫されたメッセージに関する定期的な通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="8201b-107">When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md), message recipients will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April, 2020) phishing.</span></span>
 
-<span data-ttu-id="9cd66-107">受信するメッセージには、スパム検疫済みメッセージの数と、リスト内の最後のメッセージの日付と時刻 (世界協定時刻または UTC) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="9cd66-107">The message you receive includes the number of spam-quarantined messages you have, and the date and time (in Universal Coordinated Time or UTC) of the last message in the list.</span></span> <span data-ttu-id="9cd66-108">一覧には、各メッセージの次の情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="9cd66-108">The list includes the following for each message:</span></span>
+> [!NOTE]
+> <span data-ttu-id="8201b-108">2019年10月に、検疫済みメッセージをエンドユーザーのスパム通知から直接解放する機能が削除されました。</span><span class="sxs-lookup"><span data-stu-id="8201b-108">In October 2019, we removed the ability to release quarantined messages directly from end-user spam notifications.</span></span> <span data-ttu-id="8201b-109">その代わりに、ユーザーは Office 365 セキュリティ & コンプライアンスセンターに移動して、検疫済みメッセージを (直接、または通知で [**レビュー** ] をクリックすることで) 解放できるようになります。</span><span class="sxs-lookup"><span data-stu-id="8201b-109">Instead, users can now go to the Office 365 Security & Compliance Center to release their quarantined messages (either directly, or by clicking **Review** in the notification).</span></span> <span data-ttu-id="8201b-110">詳細については、「 [Office 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8201b-110">For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).</span></span> <br/><br/> <span data-ttu-id="8201b-111">高信頼フィッシング、マルウェア、またはメールフロールール (トランスポートルールとも呼ばれます) として検疫されたメッセージは、管理者のみが使用できます。</span><span class="sxs-lookup"><span data-stu-id="8201b-111">Messages that were quarantined as high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins.</span></span> <span data-ttu-id="8201b-112">詳細については、「 [Office 365 の管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8201b-112">For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).</span></span>
 
-- <span data-ttu-id="9cd66-109">**送信者**検疫済みメッセージの送信名と電子メールアドレス。</span><span class="sxs-lookup"><span data-stu-id="9cd66-109">**Sender** The send name and email address of the quarantined message.</span></span>
+<span data-ttu-id="8201b-113">エンドユーザーのスパム通知には、検疫済みメッセージごとに次の情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="8201b-113">An end-user spam notification contains the following information for each quarantined message:</span></span>
 
-- <span data-ttu-id="9cd66-110">**件名** 検疫されたメッセージの件名テキスト。</span><span class="sxs-lookup"><span data-stu-id="9cd66-110">**Subject** The subject line text of the quarantined message.</span></span>
+- <span data-ttu-id="8201b-114">**Sender**: 検疫されたメッセージの送信者名と電子メールアドレス。</span><span class="sxs-lookup"><span data-stu-id="8201b-114">**Sender**: The send name and email address of the quarantined message.</span></span>
 
-- <span data-ttu-id="9cd66-111">**日付** メッセージが検疫された日付と時刻 (UTC)。</span><span class="sxs-lookup"><span data-stu-id="9cd66-111">**Date** The date and time (in UTC) that the message was quarantined.</span></span>
+- <span data-ttu-id="8201b-115">**Subject**: 検疫されたメッセージの件名のテキスト。</span><span class="sxs-lookup"><span data-stu-id="8201b-115">**Subject**: The subject line text of the quarantined message.</span></span>
 
-<span data-ttu-id="9cd66-112">以下に、検疫済みメッセージを使用して実行できるアクションを示します。</span><span class="sxs-lookup"><span data-stu-id="9cd66-112">These are the actions that you can take with a quarantined message:</span></span>
+- <span data-ttu-id="8201b-116">**日付**: メッセージが検疫された日付と時刻 (UTC)。</span><span class="sxs-lookup"><span data-stu-id="8201b-116">**Date**: The date and time (in UTC) that the message was quarantined.</span></span>
 
-- <span data-ttu-id="9cd66-113">[**送信者をブロック**する] Office 365 で、受信拒否リストに送信者を追加する場合。</span><span class="sxs-lookup"><span data-stu-id="9cd66-113">**Block Sender** if you want Office 365 to add the sender to your blocked senders list.</span></span>
+- <span data-ttu-id="8201b-117">[**送信者のブロック**]: このリンクをクリックして、受信拒否リストに送信者を追加します。</span><span class="sxs-lookup"><span data-stu-id="8201b-117">**Block Sender**: Click this link to add the sender to your Blocked Senders list.</span></span>
 
-- <span data-ttu-id="9cd66-114">メッセージがスパムではなく、Office 365 がメールボックスにメッセージを送信する場合は、**リリースを解放**します。</span><span class="sxs-lookup"><span data-stu-id="9cd66-114">**Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.</span></span>
+- <span data-ttu-id="8201b-118">**レビュー**: このリンクをクリックすると、セキュリティ & コンプライアンスセンターの検疫に移動し、検疫済みメッセージをリリース、削除、または報告することができます。</span><span class="sxs-lookup"><span data-stu-id="8201b-118">**Review**: Click this link to go the the Quarantine in the Security & Compliance Center, where you can release, delete or report your quarantined messages.</span></span>
 
-- <span data-ttu-id="9cd66-115">プレビューやリリースなどの他のアクションを実行する場合は、セキュリティ/コンプライアンスセンター内の検疫ポータルに移動することを**確認**してください。</span><span class="sxs-lookup"><span data-stu-id="9cd66-115">**Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.</span></span>
-
-<span data-ttu-id="9cd66-116">以下の点にご注意ください。</span><span class="sxs-lookup"><span data-stu-id="9cd66-116">Be aware of the following:</span></span>
-
-- <span data-ttu-id="9cd66-117">メールフロールールに一致したために検疫されたマルウェアと信頼性の高いフィッシングメッセージとメッセージは、ユーザーのスパム通知に含まれません。</span><span class="sxs-lookup"><span data-stu-id="9cd66-117">Malware and high confidence phishing messages and messages that are quarantined because they matched a mail flow rule are not included in user spam notifications.</span></span> 
-
-- <span data-ttu-id="9cd66-118">メッセージを解放して、誤検知 (迷惑メールではない) として報告することができるのは1回だけです。</span><span class="sxs-lookup"><span data-stu-id="9cd66-118">You can only release a message and report it as a false positive (not junk) once.</span></span>
+![エンドユーザーのスパム通知の例](../../media/end-user-spam-notification.png)
