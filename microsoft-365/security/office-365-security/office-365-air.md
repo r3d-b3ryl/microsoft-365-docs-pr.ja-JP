@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
 ms.custom: air
-ms.openlocfilehash: 8871329d254057a0f9d6f10d3ae7acc10139832e
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 45a2bc0e581916493a0170a5f86c152d02403efe
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710536"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826351"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -47,7 +47,7 @@ ms.locfileid: "42710536"
 
     組織でカスタム レポート ソリューションまたはサード パーティのソリューションを使用している場合は、[Office 365 マネージメント アクティビティ API を使用して](air-custom-reporting.md)自動調査と脅威に関する情報を表示することができます。
 
-4. セキュリティ運用チームは、[調査結果と推奨事項](air-view-investigation-results.md)を確認し、[修復処置を承認または拒否](air-remediation-actions.md#approve-or-reject-pending-actions)します。 
+4. セキュリティ運用チームは、[調査結果と推奨事項](air-view-investigation-results.md)を確認し、[修復処置を承認または拒否](air-review-approve-pending-completed-actions.md)します。 
 
     保留中の修復操作が承認 (却下) されると、自動調査が完了します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "42710536"
 
 - [調査の結果の詳細を表示する](air-view-investigation-results.md#view-details-of-an-investigation)
 
-- [調査の結果としてアクションを確認して承認する](air-remediation-actions.md#approve-or-reject-pending-actions)
+- [調査の結果としてアクションを確認して承認する](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
 > 詳細については、「[エアのしくみ](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)」を参照してください。

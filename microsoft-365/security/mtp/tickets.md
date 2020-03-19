@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
+ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086940"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42836882"
 ---
 # <a name="manage-tickets-through-servicenow"></a>ServiceNow を介してチケットを管理する
 
@@ -141,6 +141,10 @@ ServiceNow でユーザーテーブル **(メニュー > ユーザー管理 > �
 
 1. Azure Active Directory のセキュリティ管理者特権を持つユーザーを作成します。 ユーザーは、インストールチェックリストから作成した統合ユーザーと同じ名前とメールアドレスを持っている必要があります。 ログインして接続が完了したら、セキュリティ管理者の役割を削除できます。
 2. このユーザーとして Microsoft 365 セキュリティセンターにログインし、セットアップ手順に従います。
+
+### <a name="ip-filtering"></a>IP フィルタリング
+
+IP フィルタリングを有効にしている場合は、IP アドレスを明示的に許可する必要があります。 ServiceNow で IP 範囲を許可する方法については、「 [Ip アドレスのアクセス制御](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html)」を参照してください。 許可する IP アドレスの一覧については、「 [AZURE ip の範囲とサービスタグ-パブリッククラウド](https://www.microsoft.com/en-us/download/details.aspx?id=56519)」を参照してください。
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>インストールは完了しましたが、チケットが表示されず、共有できません
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Office 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
-ms.openlocfilehash: fc50519190abe1b827bd3a5f93a6a82f8c22f0b6
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640029"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826329"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>組織で使用する Office 365 のテーマをカスタマイズする
 
@@ -64,9 +64,9 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
     
 4. [**変更の保存**] を選択します。
     
-管理センターに新しいテーマがすぐに表示されます。しばらくすると、Outlook、SharePoint、iOS および Android 用の SharePoint モバイルアプリのページなど、Office 365 全体に表示されます。 次の画像は、Sharepoint モバイルアプリ用にカスタマイズできるテーマ要素を強調表示します。
+管理センターに新しいテーマがすぐに表示されます。しばらくすると、Outlook、SharePoint、 [iOS 用の sharepoint モバイルアプリ](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)、および[sharepoint Mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)のページを含む、Office 365 全体に表示されます。 カスタマイズされたテーマが管理センターから変更された例については、次の図を参照してください。
 
-![SharePoint モバイルアプリ用の既定の Office 365 テーマとカスタム Office 365 テーマ]()
+![m365-テーマ-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
 カスタム アイコンまたはカスタム カラーはいつでも削除できます。 [テーマ] ページに戻り、[**カスタムテーマの削除**] を選択します。
   

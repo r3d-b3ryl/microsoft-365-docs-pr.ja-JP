@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: '各地域において一般法人向け Office 365 サブスクリプションに課せられる税額について説明します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 88997eb69cbbee1b7ec4520773c167609434e0a4
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710560"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826315"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -90,7 +90,7 @@ ms.locfileid: "42710560"
 
 ## <a name="what-tax-will-i-be-charged"></a>請求される税金
 
-ここでは、下記の各地域で課せられる税について説明します。適切な文書をサポートに提出すると、[税金控除ステータスを申請する](apply-for-tax-exempt-status.md)こともできます。
+ここでは、下記の各地域で課せられる税について説明します。適切な文書をサポートに提出すると、[税金控除ステータスを申請する](tax-information.md#apply-for-tax-exempt-status)こともできます。
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
 
@@ -160,7 +160,7 @@ ms.locfileid: "42710560"
 
 売上税は、単価に対して計算されてから集計されます。
 
-次に例を示します。
+例:
 
 >*(単価 X 税率)X 数量 = 総売上税*
 

@@ -1,11 +1,11 @@
 ---
-title: Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
+title: Office 36 でのエンドユーザースパム通知
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: 管理者がユーザーの通知を有効にした場合、スパム、大量、またはフィッシングメッセージとして識別されたメールボックスに送信されたメッセージを一覧表示する通知メッセージを受け取ります。 通知された後にメッセージを解放または報告することができます。
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: 管理者がスパム対策ポリシーでエンドユーザーのスパム通知を有効にすると、メッセージの受信者は検疫済みメッセージに関する定期的な通知を受信します。
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722038"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857147"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
+# <a name="end-user-spam-notifications-in-office-365"></a>Office 365 でのエンドユーザースパム通知
 
-管理者がユーザーに対してスパム通知を有効にすると、スパム、一括、またはフィッシングとして識別されたメールボックス宛てのメッセージを一覧表示する通知メッセージが表示されます。
+検疫は、exchange online またはスタンドアロンの exchange online Protection (EOP) 組織内のメールボックスを使用する Office 365 組織で潜在的に危険または不要なメッセージを保持します。 exchange online メールボックスはありません。 詳細については、「 [Quarantine In Office 365](quarantine-email-messages.md)」を参照してください。
 
-> [!TIP]
-> 管理者がこの機能を有効にする場合は、[既定のスパム対策ポリシーを変更](configure-your-spam-filter-policies.md)するときにオプションを選択できます。
+既定では、エンドユーザーのスパム通知はスパム対策ポリシーで無効になっています。 管理者が[エンドユーザーのスパム通知を有効](configure-your-spam-filter-policies.md)にした場合、メッセージの受信者は、スパム、バルクメール、または (4 月 2020) フィッシングとして検疫されたメッセージに関する定期的な通知を受信します。
 
-受信するメッセージには、スパム検疫済みメッセージの数と、リスト内の最後のメッセージの日付と時刻 (世界協定時刻または UTC) が含まれます。 一覧には、各メッセージの次の情報が含まれています。
+> [!NOTE]
+> 2019年10月に、検疫済みメッセージをエンドユーザーのスパム通知から直接解放する機能が削除されました。 その代わりに、ユーザーは Office 365 セキュリティ & コンプライアンスセンターに移動して、検疫済みメッセージを (直接、または通知で [**レビュー** ] をクリックすることで) 解放できるようになります。 詳細については、「 [Office 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。 <br/><br/> 高信頼フィッシング、マルウェア、またはメールフロールール (トランスポートルールとも呼ばれます) として検疫されたメッセージは、管理者のみが使用できます。 詳細については、「 [Office 365 の管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」を参照してください。
 
-- **送信者**検疫済みメッセージの送信名と電子メールアドレス。
+エンドユーザーのスパム通知には、検疫済みメッセージごとに次の情報が含まれています。
 
-- **件名** 検疫されたメッセージの件名テキスト。
+- **Sender**: 検疫されたメッセージの送信者名と電子メールアドレス。
 
-- **日付** メッセージが検疫された日付と時刻 (UTC)。
+- **Subject**: 検疫されたメッセージの件名のテキスト。
 
-以下に、検疫済みメッセージを使用して実行できるアクションを示します。
+- **日付**: メッセージが検疫された日付と時刻 (UTC)。
 
-- [**送信者をブロック**する] Office 365 で、受信拒否リストに送信者を追加する場合。
+- [**送信者のブロック**]: このリンクをクリックして、受信拒否リストに送信者を追加します。
 
-- メッセージがスパムではなく、Office 365 がメールボックスにメッセージを送信する場合は、**リリースを解放**します。
+- **レビュー**: このリンクをクリックすると、セキュリティ & コンプライアンスセンターの検疫に移動し、検疫済みメッセージをリリース、削除、または報告することができます。
 
-- プレビューやリリースなどの他のアクションを実行する場合は、セキュリティ/コンプライアンスセンター内の検疫ポータルに移動することを**確認**してください。
-
-以下の点にご注意ください。
-
-- メールフロールールに一致したために検疫されたマルウェアと信頼性の高いフィッシングメッセージとメッセージは、ユーザーのスパム通知に含まれません。 
-
-- メッセージを解放して、誤検知 (迷惑メールではない) として報告することができるのは1回だけです。
+![エンドユーザーのスパム通知の例](../../media/end-user-spam-notification.png)

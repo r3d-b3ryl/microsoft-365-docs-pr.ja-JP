@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633955"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857181"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -34,12 +34,20 @@ ms.locfileid: "42633955"
 Microsoft の脅威保護をプロビジョニングおよび使用するためのライセンス、ハードウェア要件、ソフトウェア要件、およびその他の構成設定について説明します。
 
 ## <a name="licensing-requirements"></a>ライセンス要件
-Microsoft の脅威保護を使用するには、次の*いずれか*のライセンスまたはライセンスの組み合わせが必要です。
+Microsoft の脅威保護を使用するには、1つのライセンスまたはライセンスの組み合わせが必要です。
 
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5 および "Enterprise Mobility + Security E5 (EMS E5)" および Windows E5
-- Microsoft 365 A5
+### <a name="single-license"></a>単一のライセンス
+次の*いずれか*のライセンスを使用できます。
+
+- Microsoft 365 E5 または A5
+- Microsoft 365 E5 セキュリティまたは A5 セキュリティ
+
+### <a name="combination-of-licenses"></a>ライセンスの組み合わせ
+また、Office 365、 *Enterprise Mobility + Security (EMS)*、および Windows に対して、E5 または A5 サブスクリプションのライセンスを組み合わせて使用することもできます。 ライセンスの組み合わせには、これらのライセンスの*すべて*が含まれている必要があります。
+
+- Office 365 E5 または A5
+- *Enterprise Mobility + Security (EMS)* E5 または A5
+- Windows E5 または A5
 
 詳細については、 [Microsoft 365 Enterprise service プランを参照して](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)ください。
 

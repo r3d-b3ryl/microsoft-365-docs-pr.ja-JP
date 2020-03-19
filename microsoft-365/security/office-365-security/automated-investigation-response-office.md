@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air
-ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633825"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826405"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -30,7 +30,7 @@ ms.locfileid: "42633825"
 
 ## <a name="at-a-high-level"></a>高レベル
 
-アラートがトリガーされると、セキュリティのプレイブックが有効になります。 状況に応じて、自動化された[調査プロセス](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)を開始できます。 自動化された調査の最中および実行後に、[修復アクション](air-remediation-actions.md)をお勧めします。 Office 365 Advanced Threat Protection では、アクションは自動的には行われません。 セキュリティ運用チームは、各修復アクションをレビューし、[承認または拒否](air-remediation-actions.md#approve-or-reject-pending-actions)します。この操作が完了すると、各調査が完了します。 これらのすべてのアクティビティは、Office 365 セキュリティ & コンプライアンスセンターで追跡および表示できます (「[調査の詳細を表示する](air-view-investigation-results.md#view-details-of-an-investigation)」を参照してください)。
+アラートがトリガーされると、セキュリティのプレイブックが有効になります。 状況に応じて、自動化された[調査プロセス](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)を開始できます。 自動化された調査の最中および実行後に、[修復アクション](air-remediation-actions.md)をお勧めします。 Office 365 Advanced Threat Protection では、アクションは自動的には行われません。 セキュリティ運用チームは、各修復アクションをレビューし、[承認または拒否](air-review-approve-pending-completed-actions.md)します。この操作が完了すると、各調査が完了します。 これらのすべてのアクティビティは、Office 365 セキュリティ & コンプライアンスセンターで追跡および表示できます (「[調査の詳細を表示する](air-view-investigation-results.md#view-details-of-an-investigation)」を参照してください)。
 
 次のセクションでは、警告、セキュリティプレイブック、および動作の例の詳細について説明します。
 

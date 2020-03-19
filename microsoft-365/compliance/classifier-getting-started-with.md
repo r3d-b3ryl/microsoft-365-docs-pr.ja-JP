@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable クラシファイアは、コンテンツのさまざまな種類を認識するために学習することができます。 分類子がトレーニングされると、結果が正確であることを確認できます。 次に、これを使用して組織のコンテンツを検索し、それを分類して、保持または機密ラベルを適用したり、データ損失防止 (DLP) またはアイテム保持ポリシーに含めたりします。
-ms.openlocfilehash: 159f0935a2191c668c317fac17096a9427a0f889
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6706fe25194191d57ffd91f07f13d22fe5ec6cfd
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409722"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826258"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -36,7 +36,7 @@ ms.locfileid: "42409722"
 - キーワードまたはメタデータ値 (キーワードクエリ言語)
 - ソーシャルセキュリティ、クレジットカード、または銀行口座番号[(機密情報の種類)](what-the-sensitive-information-types-look-for.md)など、以前に識別された機密情報のパターンを使用する
 - テンプレートのバリエーションであるためにアイテムを認識する[(ドキュメントのフィンガープリント)](document-fingerprinting.md)
-- 正確な文字列の存在[(正確なデータ一致)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)を使用します。
+- 正確な文字列の存在[(正確なデータ一致)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)の使用
 
 機密情報と保持ラベルを自動的に適用して、[データ損失防止 (DLP)](data-loss-prevention-policies.md)と[アイテム保持ポリシー](retention-policies.md)でコンテンツを使用できるようにすることができます。
 
@@ -67,7 +67,17 @@ Microsoft 365 には、次の6つの組み込み分類子が付属していま�
 
 - **不快な言葉**: profanities、slurs、taunts、および偽装式を含むテキストアイテムを検出します (これは、より不快な用語と同じ意味を持つ式です)。
 - **履歴書**: 申請者の個人、教育、専門資格、作業経験、その他の個人を特定できる情報のテキストアカウントであるアイテムを検出します。
-- **SourceCode**: 広く使用されているコンピュータプログラミング言語で記述された命令およびステートメントのセットを含むアイテムを検出します。
+- **ソースコード**: GitHub で使用されている上位25台のコンピュータプログラミング言語で記述された命令およびステートメントのセットを含むアイテムを検出します。
+
+|言語名|||||
+|---------|---------|---------|---------|---------|
+|『|C        |C#       |+     |Clojure  |
+|CoffeeScript|CSS     |移動       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|Perl     |PHP      |Python   |R        |Ruby     |
+|スケール a    |Shell    |実現    |テックス      |Vim スクリプト|
+
+
 - **嫌がらせ**: 次の特徴に基づいて、1人または複数の個人を対象とした不快感のある言語のテキストアイテムの特定のカテゴリを検出します。競合、ethnicity、宗教、国内原産者、性別、性的なオリエンテーション、年齢、障碍。
 - **不適切な用語**: 多くの人々を embarrass する式を含む、不快感を与える言語のテキストアイテムの特定のカテゴリを検出します。
 - **脅威**: 暴力をコミットする脅威に関連する、不快感を与える、個人またはプロパティに対する物理的な損傷または損害をもたらす、不快な言語のテキストアイテムの特定のカテゴリを検出します。

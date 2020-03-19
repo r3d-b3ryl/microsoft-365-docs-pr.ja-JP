@@ -16,12 +16,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Exchange Online Protection のホストされた検疫について説明します。
-ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea803a4681a12647f57cf17839d26fb391222364
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598654"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856883"
 ---
 # <a name="quarantine"></a>Quarantine
 
@@ -29,7 +29,7 @@ ms.locfileid: "41598654"
 
 - [検疫に関する FAQ](quarantine-faq.md) - 管理者およびエンド ユーザーの両方のための検疫に関する一般的な質問と回答を提供します。
 
-- [管理者として検疫済みメッセージを検索して解放](find-and-release-quarantined-messages-as-an-administrator.md)する: 管理者が Exchange 管理センター (EAC) 内の検疫にあるメッセージを検索して解放し、必要に応じて、そのメッセージを誤検知 (迷惑メールではない) メッセージとして Microsoft に報告する方法について説明します。
+- [管理者として検疫済みメッセージおよびファイルを管理する (Office 365](manage-quarantined-messages-and-files.md)): 管理者が Exchange 管理センター (EAC) 内の検疫にあるメッセージを検索して解放し、必要に応じて、そのメッセージを誤検知 (迷惑メールではない) メッセージとして Microsoft に報告する方法について説明します。
 
 - [Office のユーザーとして検疫済みメッセージを検索して解放する 365](find-and-release-quarantined-messages-as-a-user.md): エンドユーザーが、スパム検疫のユーザーインターフェイスで自分のスパム検疫メッセージを検索して解放し、それらを迷惑メールではないとして Microsoft に報告する方法について説明します。
 

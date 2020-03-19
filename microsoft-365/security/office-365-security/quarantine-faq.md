@@ -2,8 +2,8 @@
 title: 検疫に関する FAQ
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -15,62 +15,62 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: このトピックでは、ホストされた検疫についてのよく寄せられる質問 (FAQ) とその回答を紹介します。
-ms.openlocfilehash: b4112bf785a6ee2f4c833ab08d2c199388585093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Office 365 の検疫に関してよく寄せられる質問への回答。
+ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598664"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856907"
 ---
-# <a name="quarantine-faq"></a>検疫に関する FAQ
+# <a name="quarantine-faq-in-office-365"></a>Office 365 の検疫に関する FAQ
 
-このトピックでは、ホストされた検疫についてのよく寄せられる質問 (FAQ) とその回答を紹介します。回答は Microsoft Exchange Online および Exchange Online Protection のお客様を対象としています。
+このトピックでは、exchange online またはスタンドアロンの exchange online Protection (EOP) のお客様が Exchange online メールボックスを使用していない場合に、メールボックスを持つ Office 365 ユーザーの検疫に関してよく寄せられる質問と回答を示します。
 
- **Q: 検疫でマルウェアによって検疫されたメッセージを管理するにはどうすればよいですか?**
+## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Q: マルウェア用に検疫されたメッセージを管理するにはどうすればよいですか?
 
-セキュリティ & コンプライアンスセンターを使用して、検疫に送信されたメッセージを表示および操作するには、マルウェアが含まれている必要があります。 詳細については、「[Office 365 でのメール メッセージの検疫](quarantine-email-messages.md)」を参照してください。
+管理者のみが、マルウェア用に検疫されたメッセージを管理できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理](manage-quarantined-messages-and-files.md)」を参照してください。
 
- **Q. スパム検疫済みメッセージを検疫に送るには、どのようにサービスを構成しますか?**
+## <a name="q-how-do-i-quarantine-spam"></a>Q: スパムの検疫方法を教えてください。
 
-A. 既定では、コンテンツ フィルターで処理されたメッセージは受信者の迷惑メール フォルダーに送信されます。しかし管理者は、代わりにコンテンツ フィルター ポリシーを構成することで、スパム検疫済みメッセージを検疫に送ることができます。コンテンツ フィルターで処理されたメッセージに対して実行できるさまざまな操作の詳細については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+A. 既定では、スパムフィルターによってスパムまたはバルクメールとして分類されるメッセージは、ユーザーのメールボックスに配信され、[迷惑メール] フォルダーに移動されます。 ただし、スパムまたはバルクメールメッセージを検疫するスパム対策ポリシーを作成して構成することができます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
- **Q. このサービスには、スパム検疫メッセージの管理者およびエンド ユーザー管理はありますか?**
+## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>Q: ユーザーに検疫へのアクセスを許可する方法を教えてください。
 
-A. 管理者は、セキュリティ/コンプライアンスセンター (SCC) で検疫されたすべての電子メールメッセージの詳細を検索して表示することができます。 メッセージを検索したら、特定のユーザーに解放し、さらにオプションとして Microsoft スパム分析チームに誤検知 (迷惑メールではない) として報告することもできます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理](manage-quarantined-messages-and-files.md)」を参照してください。
+A. ユーザーは、検疫で自分のメッセージにアクセスするための有効なアカウントを持っている必要があります。 スタンドアロン EOP では、ユーザーが EOP のメールユーザーとして表されている必要があります (手動で作成またはディレクトリ同期経由で作成されます)。 スタンドアロン EOP 環境でのユーザーの管理の詳細については、「 [Manage mail users IN EOP](manage-mail-users-in-eop.md)」を参照してください。
 
-エンド ユーザーとして、自分のスパム検疫メッセージを以下を通じて管理することができます。
+## <a name="q-what-messages-can-end-users-access-in-quarantine"></a>Q: エンドユーザーが検疫でアクセスできるメッセージは何ですか。
 
-- スパム検疫ユーザー インターフェース。 詳細については、「 [Office 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。
+A. ユーザーは、スパム、バルクメール、および (2020 年4月) の受信者であるフィッシングメッセージにアクセスできます。 エンドユーザーは、メールフロールール (トランスポートルールとも呼ばれる) でホストされた**検疫アクションにメッセージを配信**するため、検疫されたマルウェア、信頼性の高いフィッシング、またはメッセージを検疫済みメッセージにアクセスできません。 検疫済みメッセージにアクセスするユーザーの詳細については、「 [Office 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。
 
- **Q: エンドユーザーの検疫へのアクセスを許可するにはどうすればよいですか?**
+## <a name="q-how-long-are-messages-kept-in-the-quarantine"></a>Q: 検疫内のメッセージはどのくらいの期間保持されますか?
 
-A. エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。 社内メールボックスを保護している EOP のお客様は、ディレクトリ同期または EAC を使用して作成された有効な電子メールユーザーである必要があります。 ユーザーの管理の詳細については、EOP 管理者が[EOP でメールユーザーを管理](manage-mail-users-in-eop.md)する」を参照してください。 EOP スタンドアロンのお客様の場合は、ディレクトリ同期を使用し、ディレクトリベースのエッジブロックを有効にすることをお勧めします。詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。
+A. スパム対策ポリシーを使用して、スパム、フィッシング、およびバルクメールメッセージを検疫に保持する期間を構成します。 既定値は30日で、これも最大数です。 詳細については、「 [Office のスパム対策ポリシーを構成する 365](configure-your-spam-filter-policies.md) 」を参照してください。
 
- **Q. エンドユーザーが検疫でアクセスできるメッセージ**
+メールフロールールアクションによって検疫されたメッセージは、ホストされた**検疫にメッセージを配信する**ため、メッセージは30日間検疫に保持されます。 この期間を構成することはできません。
 
-A. エンドユーザーは、自分のフィッシング、スパム、およびバルクメールにアクセスできます。 エンドユーザーは、自分のマルウェア、高信頼フィッシング、またはメールフロールール (トランスポートルールとも呼ばれます) に一致するメッセージにアクセスできません。これらは、管理者検疫でのみ使用できます。 
+期間が過ぎると、メッセージは削除され、復元することはできません。
 
- **Q. メッセージが検疫内に保存される期間はどのくらいですか。**
+## <a name="q-can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a>Q: 一度に複数の検疫済みメッセージを解放またはレポートすることはできますか。
 
-A. 既定では、スパム検疫メッセージは30日間検疫に保存されますが、メールフロールールと一致した検疫メッセージは、既定のコンテンツフィルターポリシーで設定された保持期間に基づいて最大30日間検疫に保持されます。 この期間が経過したら、メッセージは削除され、取得不能になります。 メールフロールールと一致した検疫済みメッセージの保持期間は構成できません。 ただし、スパム検疫メッセージの保持期間は、コンテンツ フィルター ポリシーの **[次の期間スパムを保持する (日)]** の設定によって短縮できます。 詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+A. セキュリティ & コンプライアンスセンターでは、一度に最大100のメッセージを選択して解放することができます。
 
- **Q. 一度に複数の検疫メッセージを解放または報告できますか。**
+管理者は、Exchange Online PowerShell またはスタンドアロン Exchange Online Protection PowerShell で Get-quarantinemessage および[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage)コマンドレットを使用して、検疫[済み](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)メッセージを一括で検索して解放し、誤検知を一括で報告することができます。
 
-A. はい。検疫ポータルで一度に最大100のメッセージを解放することができます。 さらに、管理者はリモート Windows PowerShell スクリプトを作成してこのタスクを実行できます。 メッセージを検索する場合は [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) コマンドレットを使用し、それらを解放する場合は [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) コマンドレットを使用します。
+## <a name="q-are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Q: 検疫されたメッセージを検索する場合、ワイルドカードはサポートされていますか? 特定のドメインの隔離されたメッセージを検索できますか。
 
- **Q. 隔離されたメッセージを検索する場合にワイルドカードはサポートされますか。特定のドメインの隔離されたメッセージを検索できますか。**
+A. セキュリティ & コンプライアンスセンターでは、ワイルドカードはサポートされていません。 たとえば、送信者を検索する場合は、完全な電子メールアドレスを指定する必要があります。 ただし、Exchange Online の PowerShell または Exchange Online Protection の PowerShell でワイルドカードを使用することができます。
 
-A. Exchange 管理センターで検索条件を指定する場合、ワイルドカードはサポートされません。たとえば、送信者を検索する場合には、完全な電子メール アドレスを指定する必要があります。
-
-リモート Windows PowerShell を使用すれば、管理者は [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) コマンドレットで指定して、特定のドメイン (contoso.com など) の隔離されたメッセージを検索できます。
+たとえば、次のコマンドを実行して、ドメイン contoso.com のすべての送信者からスパム検疫済みメッセージを検索します。
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
 ```
 
-この結果は、[Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) コマンドレットに渡すことができます。メッセージをすべての受信者に解放するために、ReleaseToAll パラメーターを組み込みます。いったんメッセージが解放されると、再び解放することはできません。
+その後、次のコマンドを実行して、これらのメッセージを元の受信者すべてに解放します。
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
 ```
+
+メッセージを解放した後で、再度解放することはできません。

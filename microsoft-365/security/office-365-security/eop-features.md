@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
-ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599374"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857347"
 ---
 # <a name="eop-features"></a>EOP の機能
 
@@ -48,9 +48,9 @@ ms.locfileid: "41599374"
 |Outlook on the web を使用したスパムおよび非スパムの送信迷惑メールの報告|迷惑メール報告の Outlook を使用して、スパムメッセージと非スパムメッセージを Microsoft に送信することができます。 詳細については、「 [Outlook on the web で迷惑メールとフィッシング詐欺を報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)」を参照してください。  <br/><br/> 現在、この機能は、Exchange Server 2013 SP1 以降のメールボックスが EOP によってフィルター処理されている web 上の Outlook で使用できます。 Web 上の Exchange Online Outlook のお客様は、近い将来にこの機能を利用できます。|
 |エンドユーザー スパム検疫通知|エンド ユーザーは、各自のスパム検疫メッセージを解放し、オプションとして、エンドユーザーのスパム通知メッセージを介して迷惑メールではないメールとして報告できます。 このような通知メールは、管理者によって構成および有効化される必要があります。詳細については、「 [Exchange Online でのエンドユーザースパム通知の構成](configure-end-user-spam-notifications-in-exchange-online.md)」または「 [EOP でのエンドユーザースパム通知の構成](configure-end-user-spam-notifications-in-eop.md)」を参照してください。|
 |エンドユーザー スパム検疫通知頻度|この頻度は、既定では 3 日であり、1 ～ 15 日の範囲で構成できます。|
-|エンドユーザー スパム検疫通知の言語の構成機能 (管理者向け)|これは、エンドユーザーおよび管理者が使用できます。 詳細については、「[管理者として検疫済みメッセージを検索および解放](find-and-release-quarantined-messages-as-an-administrator.md)する」または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
-|検疫内のメッセージへの Web ページ経由のアクセスと管理|これは、エンドユーザーおよび管理者が使用できます。 詳細については、「[管理者として検疫済みメッセージを検索および解放](find-and-release-quarantined-messages-as-an-administrator.md)する」または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
-|検疫を検索する機能|特定のスパム メッセージの検疫を検索する機能は、管理者とエンドユーザーの両方が使用できます。 詳細については、「[管理者として検疫済みメッセージを検索および解放](find-and-release-quarantined-messages-as-an-administrator.md)する」または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
+|エンドユーザー スパム検疫通知の言語の構成機能 (管理者向け)|これは、エンドユーザーおよび管理者が使用できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理」](manage-quarantined-messages-and-files.md)または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
+|検疫内のメッセージへの Web ページ経由のアクセスと管理|これは、エンドユーザーおよび管理者が使用できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理」](manage-quarantined-messages-and-files.md)または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
+|検疫を検索する機能|特定のスパム メッセージの検疫を検索する機能は、管理者とエンドユーザーの両方が使用できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理」](manage-quarantined-messages-and-files.md)または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
 |Exchange 管理センターからのスパム検疫済みメッセージ ヘッダーを表示する|検疫内のメッセージを表示した後で、メッセージ ヘッダー テキストをコピーして[メッセージ ヘッダー アナライザー](https://testconnectivity.microsoft.com/?tabid=mha)に貼り付けます。メッセージ ヘッダー アナライザーはメッセージがどうなったかについて説明します。    |
 |**マルウェア対策保護**||
 |マルウェア対策保護の複数のエンジン|複数のマルウェア対策エンジンは、常にお客様を自動的に保護します。|

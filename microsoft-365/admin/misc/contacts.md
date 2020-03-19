@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 管理センターで連絡先を作成し、グローバルアドレス一覧を管理する方法について説明します。
-ms.openlocfilehash: e1bb5c71a15c8e278b087339e469dcba50003795
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248098"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857393"
 ---
 # <a name="quick-help-contacts"></a>クイック ヘルプ:連絡先
 
@@ -61,4 +61,4 @@ Windows PowerShell と CSV (コンマ区切り値) ファイルを使用して�
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>疑問が解決しない場合はどうすればよいですか?
 
-[管理ヘルプ](../admin-home.md) に回答がないかを確認するか、以下でフィードバックをお送りください。
+[管理ヘルプ](../admin-home.yml) に回答がないかを確認するか、以下でフィードバックをお送りください。

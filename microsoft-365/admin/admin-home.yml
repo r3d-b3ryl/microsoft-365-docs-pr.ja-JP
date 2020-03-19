@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Microsoft 365 管理者 documation
+summary: Microsoft 365 管理者が利用できるリソースについて説明します。
+metadata:
+  title: Microsoft 365 管理者 documation
+  description: Microsoft 365 管理者が利用できるリソースについて説明します。
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/05/2020
+  ms.openlocfilehash: 9baffa7688223c57c5ef863d9d39beed7bc38f62
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857630"
+landingContent:
+- title: 管理センターについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 管理センターとは
+      url: admin-overview/admin-overview.md
+  - linkListType: whats-new
+    links:
+    - text: 新機能を取得する
+      url: manage/stay-on-top-of-updates.md
+- title: 概要
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: セットアップを計画する
+      url: setup/plan-your-setup.md
+    - text: Office 365 をセットアップする
+      url: setup/setup.md
+    - text: Office 365 にドメインを追加する
+      url: setup/add-domain.md
+    - text: Office 365 へのメールと連絡先の移行
+      url: setup/migrate-email-and-contacts-admin.md
+    - text: Office 365 ファイル ストレージと共有をセットアップする
+      url: setup/set-up-file-storage-and-sharing.md
+    - text: ユーザーの追加
+      url: add-users/add-users.md
+    - text: 多要素認証をセットアップする
+      url: security-and-compliance/set-up-multi-factor-authentication.md
+- title: トラブルシューティング
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Office のインストールの問題を解決する
+      url: https://support.office.com/article/troubleshoot-installing-office-35ff2def-e0b2-4dac-9784-4cf212c1f6c2
+    - text: Microsoft サポート/回復アシスタントで Outlook と Office 365 の問題を解決する
+      url: https://support.office.com/article/about-the-microsoft-support-and-recovery-assistant-e90bb691-c2a7-4697-a94f-88836856c72f
+    - text: メールの問題を解決する
+      url: https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues
+    - text: OneDrive for Business の同期の問題を解決する
+      url: https://go.microsoft.com/fwlink/?linkid=866431
+- title: 登録
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 無料試用版からサブスクリプションを購入する
+      url: https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial
+    - text: サブスクリプションをキャンセルする
+      url: https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription?
+- title: 詳細情報
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Microsoft Teams ドキュメント
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Office 365 Enterprise ドキュメント
+      url: https://docs.microsoft.com/Office365/Enterprise
+    - text: Office 365 トレーニング センター
+      url: https://support.office.com/office-training-center
+    - text: Microsoft 365 の使用を開始する
+      url: https://docs.microsoft.com/en-us/learn/m365/

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる組み込みの分類子がいくつか用意されています。 このトピックでは、これらの分類子の使用を準備する方法について説明します。
-ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b8e4b51300bee86682924245bbf530e1e954b483
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634465"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826248"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>組み込みの分類子を使用する (プレビュー)
 
@@ -27,7 +27,16 @@ Microsoft では、非常に大規模なサンプルデータセットを使用�
 
 - **不快な言葉**: profanities、slurs、taunts、および偽装式を含むテキストアイテムを検出します (これは、より不快な用語と同じ意味を持つ式です)。
 - **履歴書**: 申請者の個人、教育、専門資格、作業経験、その他の個人を特定できる情報のテキストアカウントであるアイテムを検出します。
-- **SourceCode**: 広く使用されているコンピュータプログラミング言語で記述された命令およびステートメントのセットを含むアイテムを検出します。
+- **ソースコード**: GitHub で使用されている上位25台のコンピュータプログラミング言語で記述された命令およびステートメントのセットを含むアイテムを検出します。
+
+|言語名|||||
+|---------|---------|---------|---------|---------|
+|『|C        |C#       |+     |Clojure  |
+|CoffeeScript|CSS     |移動       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|Perl     |PHP      |Python   |R        |Ruby     |
+|スケール a    |Shell    |実現    |テックス      |Vim スクリプト|
+
 - **嫌がらせ**: 次の特徴に基づいて、1人または複数の個人を対象とした不快感のある言語のテキストアイテムの特定のカテゴリを検出します。競合、ethnicity、宗教、国内原産者、性別、性的なオリエンテーション、年齢、障碍。
 - **不適切な用語**: 多くの人々を embarrass する式を含む、不快感を与える言語のテキストアイテムの特定のカテゴリを検出します。
 - **脅威**: 暴力をコミットする脅威、または人またはプロパティに物理的な危害または損傷を与える脅威に関連する、不快感を与える言語のテキストアイテムの特定のカテゴリを検出します。

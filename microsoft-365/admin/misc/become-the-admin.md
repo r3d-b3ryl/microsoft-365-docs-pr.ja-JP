@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Office 365 で管理されていないテナントを電子メールとドメインの所有権を引き継ぐために確認する方法について説明します。
-ms.openlocfilehash: e3c89e122264808e2a8631c07269ea263c87fdaa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0f7932b9ba727db62f81ac15b99a5f5ca276f09f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248099"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857405"
 ---
 # <a name="perform-an-internal-admin-takeover-in-office-365"></a>Office 365 での内部管理者の引き継ぎの実行
 
@@ -71,7 +71,7 @@ YouTube: [Power BI と Office 365 で IT 管理者を引き継ぐための 3 つ
 
 [Azure AD での管理の引き継ぎ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Office 365 のドメインに関するヘルプ](../get-help-with-domains/get-help-with-domains.md)
+[Office 365 のドメインに関するヘルプ](../get-help-with-domains/get-help-with-domains.yml)
 
 [組織でのセルフサービスサインアップの使用](self-service-sign-up.md)
   

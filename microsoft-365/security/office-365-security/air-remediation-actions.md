@@ -15,47 +15,33 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の修復アクションについて説明します。
-ms.openlocfilehash: 0db49a28fb90bcddcdd874ac54216957e4be5fa1
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 2efe0124304a9f9dcfdc92b548c850882ad507a0
+ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288515"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42836860"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 での自動調査の後の修復アクション
 
 ## <a name="remediation-actions"></a>修復アクション
 
-Office 365 の[自動調査および応答機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)高度な脅威保護には、特定の修復アクションが含まれています。 自動化された調査を実行している場合や、完了した場合は、通常、セキュリティ運用チームによる承認を必要とする1つ以上の修復アクションが表示されます。 
+Office 365 の[自動調査および応答機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)(AIR) [Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) プラン2には、特定の修復アクションが含まれています。 自動化された調査を実行している場合や、完了した場合は、通常、セキュリティ運用チームによる承認を必要とする1つ以上の修復アクションが表示されます。 
 
-次の表に、 [Office 365 Advanced Threat Protection](office-365-atp.md)で現在利用可能な修復処置の概要を示します。 
+次の表に、Office 365 ATP で現在利用可能な修復アクションの概要を示します。 
 
 |アクション | 説明 |
 |-----|-----|
-|URL のブロック (クリック時) |悪意のある Url を含む電子メールやドキュメントを保護します。 これにより、ユーザーが既存の Office ファイルまたは古い電子メールメッセージ内のリンクをクリックしたときに、悪意のあるリンクや関連する web ページが[安全なリンク](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)でブロックされるようになります。 |
-|電子メールの削除 (ソフト)  |ユーザーのメールボックスから特定の電子メールメッセージを削除する|
-|削除済みメールクラスターの回復  |すべてのユーザーのメールボックスからのクエリに一致する悪意のある電子メールメッセージを削除します。|
+|URL のブロック (クリック時) |悪意のある Url を含む電子メールメッセージやドキュメントを保護します。 これにより、ユーザーが既存の Office ファイルまたは古い電子メールメッセージ内のリンクをクリックしたときに、悪意のあるリンクや関連する web ページが[安全なリンク](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)でブロックされるようになります。 |
+|電子メールの削除 (ソフト)  |ユーザーのメールボックスから特定の電子メールメッセージを削除します。 <br/>削除済みメッセージは、ユーザーの回復可能なアイテムフォルダーに移動され、削除済みアイテムの保存期間が経過するまで保持されます。 |
+|削除済みメールクラスターの回復  |すべてのユーザーのメールボックスからのクエリに一致する悪意のある電子メールメッセージを削除します。 <br/>削除済みメッセージは、ユーザーの [回復可能なアイテム] フォルダーに移動され、削除済みアイテムの保存期間が経過するまで保持されます。 |
 |外部メール転送の無効化 |特定のエンドユーザーのメールボックスから転送ルールを削除します。|
 
-## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) します。
+> [!NOTE]
+> Office 365 ATP では、修復アクションは自動的には実行されません。 修復処理は、組織のセキュリティチームによる承認時にのみ行われます。 
 
-![AIR の調査処理 ページ](../../media/air-investigationactionspage.png)
+## <a name="next-steps"></a>次の手順
 
-[調査の詳細](air-view-investigation-results.md)を表示している間に、保留中の修復処理を承認または拒否することができます。 自動化された調査が完了するように、この手順をできるだけ早く実行することをお勧めします。
+- [Office 365 の自動調査の後に、保留中または完了した修復アクションを表示する](air-review-approve-pending-completed-actions.md)
 
-> [!IMPORTANT]
-> 修復アクションを承認または拒否するには、適切なアクセス許可が必要です。 [AIR 機能を使用するには、必要なアクセス許可を](office-365-air.md#required-permissions-to-use-air-capabilities)参照してください。
-
-1. [**操作**] タブを選択します。
-
-2. リストからアイテムを選択します。 (これにより、[承認] ボタンと [拒否] ボタンが有効になります)。
-
-3. 選択したアイテムの利用可能な情報を確認し、その操作を承認または拒否します。 
- - **承認**は修復を開始することを許可します。
- - **却下**にはその他のアクションはありません
-
-## <a name="next-steps"></a>次のステップ
-
-- [侵害されたユーザーセキュリティのプレイブックについて](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly)
-
-- [ATP レポートを表示する](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)
+- [Office 365 の自動調査の詳細と結果](air-view-investigation-results.md)

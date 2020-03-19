@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Microsoft 365 管理センターで Office 365 にドメインを追加するには、 DNS ホストで DNS レコードを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: 4170fd74ae734a6fda9e535c17086997b1db6f6b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-ms.translationtype: HT
+ms.openlocfilehash: 86ca8f986624ad37f780961cb58923ea0a1b2308
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247922"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857381"
 ---
 # <a name="add-a-domain-to-office-365"></a>Office 365 にドメインを追加する
 
@@ -112,4 +112,4 @@ ms.locfileid: "42247922"
 
 [ドメインを設定する (ホスト固有の手順)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Office 365 のドメインに関するヘルプ](../get-help-with-domains/get-help-with-domains.md)
+[Office 365 のドメインに関するヘルプ](../get-help-with-domains/get-help-with-domains.yml)
