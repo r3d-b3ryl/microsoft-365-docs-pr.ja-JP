@@ -47,12 +47,14 @@
           href: get-ready/prerequisites.md
         - name: ネットワークを準備する
           href: get-ready/network.md
-        - name: Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する
+        - name: オンプレミス リソースへのアクセスを準備する
           href: get-ready/authentication.md
-        - name: Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
+        - name: マップ済みドライブを準備する
           href: get-ready/mapped-drives.md
-        - name: Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する
+        - name: 証明書とネットワーク プロファイルを準備する
           href: get-ready/certs-wifi-lan.md
+        - name: 印刷リソースを準備する
+          href: get-ready/printing.md
         - name: アプリを準備する
           href: get-ready/apps.md
           items:

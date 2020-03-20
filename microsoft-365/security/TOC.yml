@@ -372,16 +372,16 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: キャンペーン ビュー
               href: ./office-365-security/campaigns.md
-            - name: 脅威の分析によって最新の攻撃行動を理解する
-              href: ./mtp/latest-attack-campaigns.md
             - name: 自動調査および対応
               items:
                 - name: AIR の概要
                   href: ./office-365-security/office-365-air.md
+                - name: 修復アクション
+                  href: ./office-365-security/air-remediation-actions.md
                 - name: 自動調査の詳細と結果を表示する
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: 保留中のアクションを承認または拒否する
-                  href: ./office-365-security/air-remediation-actions.md
+                - name: 保留中のアクションをレビューして承認 (または拒否) する
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
                 - name: AIR をカスタム ソリューションまたはサードパーティのソリューションと統合する
                   href: ./office-365-security/air-custom-reporting.md
             - name: 侵害されたユーザー アカウントをすばやく検出して対処する
@@ -390,6 +390,8 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: ATP レポートを表示して閲覧する
               href: ./office-365-security/view-reports-for-atp.md
+            - name: 脅威の分析によって最新の攻撃行動を理解する
+              href: ./mtp/latest-attack-campaigns.md
             - name: ATP の安全なリンク機能の警告ページとは?
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: 脅威トラッカーを使用する
