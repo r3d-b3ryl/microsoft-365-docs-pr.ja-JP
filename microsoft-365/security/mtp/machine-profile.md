@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857696"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895465"
 ---
 # <a name="machine-profile-page"></a>コンピュータープロファイルページ
 
@@ -29,9 +29,7 @@ Microsoft 365 セキュリティポータルは、コンピュータープロフ
 
 ## <a name="navigating-the-machine-profile-page"></a>[コンピュータープロファイル] ページのナビゲーション
 
-[コンピュータープロファイル] ページにアクセスするには、[コンピューター] リストでデバイス名を直接選択するか、[マシン] リストのポップアップで [**コンピューターを開く] ページ**を選択します。
-
-ページを開いたら、3つのセクションに分割されていることがわかります。
+コンピュータープロファイルページは3つのセクションに分かれています。
 
 ![(1) タブ領域 (2) サイドバーと (3) アクションが赤で強調表示されているコンピュータープロファイルページのイメージ](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

@@ -1,11 +1,11 @@
 ---
-title: メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
+title: メッセージ内の SCL にメールフロールールを使用する
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,56 +16,55 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でメッセージの SCL を設定する方法について説明します。
-ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081982"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895097"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
-電子メールメッセージのスパム信頼レベル (SCL) を設定するメールフロールール (トランスポートルールとも呼ばれます) を作成できます。 SCL は、メッセージがスパムである可能性がどの程度かを測定します。 スパムとは、迷惑な (通常は不要な) 電子メール メッセージです。 メッセージに対するアクションは、メッセージの SCL 評価によって異なります。 たとえば、同僚からのメッセージはスパムでないと信頼できるため、社内ユーザーからのメッセージの場合はスパム コンテンツ フィルターをバイパスできます。 メールフロールールを使用してメッセージの SCL 値を設定すると、スパムの処理の制御が強化されます。
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 お客様の場合、EOP では、スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) を使用してスキャンします。スパムの受信メッセージ。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
- **始める前に把握しておくべき情報**
+特定のメッセージをスパムフィルターによってもスキャンされる前に、スパムとしてマークしたり、スパムフィルター処理をスキップするようメッセージをマークしたりするには、メールフロールール (トランスポートルールとも呼ばれます) を作成して、メッセージを識別し、スパム信頼レベル (SCL) を設定できます。 SCL の詳細については、「 [Office 365 のスパム信頼レベル (SCL)](spam-confidence-levels.md)」を参照してください。
 
-- この手順の予想所要時間:10 分。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「 [Exchange Online の機能のアクセス](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)許可」の「メールフロールール」、または「 [EOP の機能のアクセス許可](feature-permissions-in-eop.md)」を参照してください。
+- これらの手順を実行する前に、Exchange Online でアクセス許可を割り当てる必要があります。 具体的には、既定では、**組織の管理**、**コンプライアンス管理**、および**レコード管理**の役割に割り当てられている**トランスポートルール**の役割が割り当てられている必要があります。 詳細については、「[Exchange Online で役割グループを管理する](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
 
-- このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
+- Exchange Online で EAC を開くには、「exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center)」を参照してください。
 
-### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>メッセージの SCL を設定するメールフロールールを作成するには
+- Exchange Online のメールフロールールの詳細については、「[メールフロールール (トランスポートルール) (Exchange online)](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 」を参照してください。
 
-1. Exchange 管理センター (EAC) で、 **[メール フロー]** \> **[ルール]** を選択します。
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>EAC を使用して、メッセージの SCL を設定するメールフロールールを作成する
 
-2. **[新規作成]**![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif) を選択し、 **[新しいルールの作成]** を選択します。
+1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-3. ルールの名前を指定します。
+2. [追加] アイコン](../../media/ITPro-EAC-AddIcon.png) **をクリックし**、[**新しいルールの作成**] を選択します。 ![
 
-4. **[その他のオプション]** を選択し、 **[このルールを適用する条件]** で、このルールに設定するアクション (つまり、SCL 値の設定) をトリガーする条件を指定します。
+3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
-   たとえば、 **[送信者]** \> **[外部/内部である]** を設定し、 **[送信者の場所の選択]** ダイアログ ボックスで **[組織内]**、 **[OK]** の順に選択します。<br/>
-   ![送信者の場所の選択](../../media/EOP-ETR-SetSCL-1.jpg)
+   - [**名前**]: わかりやすい一意のルールの名前を入力します。
 
-5. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** \> **[SCL (Spam Confidence Level) の設定]** の順に選択します。
+   - [**その他のオプション**] をクリックします。
 
-6. [ **SCL の指定**] ボックスで、次のいずれかの値を選択し、[ **OK]** を選択します。
+   - [次の**場合、このルールを適用**する]: メッセージを識別する1つまたは複数の条件を選択します。 詳細については、「 [Exchange Online のメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
 
-   - **スパムフィルターをバイパス**する: SCL を-1 に設定します。これは、コンテンツフィルターが実行されないことを意味します。
+   - **次の操作を行い**ます。 [ \> **メッセージのプロパティを変更する**] [**スパム信頼レベル (SCL) を設定**する] を選択します。 表示される [ **SCL の指定**] ダイアログで、次のいずれかの値を構成します。
 
-   - **0-4**: 追加の処理のために、メッセージはコンテンツフィルターに渡されます。
+   - **スパムフィルターをバイパス**する: SCL を-1 に設定します。これは、メッセージがスパムフィルター処理をスキップすることを意味します。
 
-   - **5-6**: 適用可能なコンテンツフィルターポリシーの**スパム**に対して指定されたアクションが適用されます。 既定では、メッセージは受信者の迷惑メール フォルダーに送られます。
+     > [!CAUTION]
+     > メッセージでスパムフィルターをスキップすることについて慎重に検討してください。 攻撃者はこの脆弱性を利用して、フィッシングやその他の悪意のあるメッセージを組織に送信することができます。 メールフロールールには、送信者の電子メールアドレスまたはドメインだけではなく、より多くの情報が必要です。 詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
-   - **7-9**: 適用可能なコンテンツフィルターポリシーで、**精度の高いスパム**に対して指定されたアクションが適用されます。 既定では、メッセージは受信者の迷惑メール フォルダーに送られます。
+   - **0 ~ 4**: メッセージは、スパムフィルタリングを介して送信され、追加の処理が行われます。
 
-   コンテンツ フィルター ポリシーの構成の詳細については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。サービスの SCL 値の詳細については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。
+   - **5 または 6**: メッセージは**スパム**としてマークされます。 スパム対策ポリシーで verdicts**スパム**フィルター処理用に構成したアクションがメッセージに適用されます (既定値は **[迷惑メールフォルダーにメッセージを移動**します)]。
 
-7. ルールのその他のプロパティを指定し、 **[保存]** を選択します。
+   - **7 ~ 9**: メッセージは、**信頼度の高いスパム**としてマークされます。 迷惑メール対策ポリシーで、**高信頼度の高いスパム**フィルター処理に対して構成したアクションがメッセージに適用されます (既定値は **[迷惑メールフォルダーにメッセージを移動**] です)。
 
-   > [!TIP]
-   > このルールで選択または指定できるその他のプロパティの詳細については、「 [EAC を使用してメールフロールールを作成する](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules)」を参照してください。
+4. ルールに必要な追加のプロパティを指定します。 完了したら、**[保存]** をクリックします。
 
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

@@ -1,8 +1,7 @@
 ---
 title: 管理センターで Office 365 グループを作成する
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,46 +19,23 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Office 365 グループを作成および削除する方法、グループメンバーを追加および削除する方法、およびグループの動作をカスタマイズする方法について説明します。
-ms.openlocfilehash: 169eef8121471c4268c652c942ce5788feb08e52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241397"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894613"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで Office 365 グループを作成する
   
 ユーザーは Outlook または他のアプリから管理者として Office 365 グループを作成できますが、グループの作成または削除、メンバーの追加または削除、および動作方法のカスタマイズが必要な場合があります。 これを行うには、「Microsoft 365 管理センター」をご記入ください。 
 
 > [!TIP]
-> Office 365 に接続された Yammer グループは Yammer で作成する必要がありますが、他の Office の365グループと同様に、Microsoft 365 管理センターで管理することができます。 詳細については、「[Yammer と Office 365 グループ](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)」を参照してください。 
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
-::: moniker-end
+> Office 365 に接続された Yammer グループは Yammer で作成する必要がありますが、他の Office の365グループと同様に、Microsoft 365 管理センターで管理することができます。 詳細については、「 [Yammer And Office 365 groups](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)」を参照してください。 
 
 ## <a name="create-an-office-365-group"></a>Office 365 グループを作成する
 
-::: moniker range="o365-worldwide"
-
-1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)で、[**グループ** > **グループ**] ページに移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)で、[**グループ** > **グループ**] ページに移動します。 
-
-::: moniker-end
+1. 管理センターで、[**グループ**] を展開し、[**グループ**] をクリックします。
 
 2. [**グループの追加**] を選択します。
   
@@ -80,11 +56,10 @@ ms.locfileid: "42241397"
 グループが作成されたら、メンバーを追加し、その他の設定を構成できます。
 
 ::: moniker range="o365-worldwide"
-  
+
 ユーザーは[自分で自分を追加](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
 
-
-1. 管理センターで、新しいグループが表示されるようにページを更新し、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] を選択して、メンバーを追加するグループの名前を選択します。
+1. 管理センターで、新しいグループが表示されるようにページを更新し、メンバーを追加するグループの名前を選択します。
     
 2. [**メンバー**] タブで [**すべてのメンバーの表示と管理**] を選択します。 
 
@@ -101,11 +76,9 @@ ms.locfileid: "42241397"
 ::: moniker range="o365-germany"
 
 ユーザーは[自分で自分を追加](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
-
 1. 管理センターで、新しいグループが表示されるようにページを更新し、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] を選択して、メンバーを追加するグループを選択します。
     
 2. [**メンバー**] の横にある [**編集**] を選択します。
-
 3. [**メンバーの追加**] を選択します。
     
 4. 追加するユーザーを選択し、[**保存**] を選択します。
@@ -119,11 +92,9 @@ ms.locfileid: "42241397"
 ::: moniker range="o365-21vianet"
 
 ユーザーは[自分で自分を追加](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
-
 1. 管理センターで、新しいグループが表示されるようにページを更新し、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] を選択して、メンバーを追加するグループを選択します。
     
 2. [**メンバー**] の横にある [**編集**] を選択します。
-
 3. [**メンバーの追加**] を選択します。
     
 4. 追加するユーザーを選択し、[**保存**] を選択します。
@@ -133,8 +104,6 @@ ms.locfileid: "42241397"
 グループが、割り当てられたメンバーと共に Outlook に表示されます。
   
 ::: moniker-end
-
-
 
 ## <a name="who-can-delete-email-from-the-group-inbox"></a>グループの受信トレイからメールを削除できるのは誰ですか?
 
@@ -146,15 +115,12 @@ ms.locfileid: "42241397"
 
 ## <a name="next-step-manage-your-group"></a>次の手順: グループを管理する
 
-新しいグループを作成してメンバーを追加すると、グループをさらに詳細に構成できます。たとえば、グループ名や説明の編集、所有者またはメンバーの変更、外部の送信者がグループに電子メールを送信できるかどうかの指定、グループのコピーを送信するかどうかの指定などができます。メンバーへの会話。 「 [Office 365 グループの管理」を](manage-groups.md)参照してください。
+新しいグループを作成してメンバーを追加すると、グループをさらに詳細に構成できます。たとえば、グループ名や説明の編集、所有者またはメンバーの変更、外部の送信者がグループに電子メールを送信できるかどうかの指定、グループのコピーを送信するかどうかの指定などができます。メンバーへの会話。 詳細について[は、「Office 365 グループの管理](manage-groups.md)」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
-
-[Office 365 グループを管理する](manage-groups.md)
 
 [Office 365 グループへのゲストアクセスを管理する](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
 [Office 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
 
 [配布リストを Office 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
-

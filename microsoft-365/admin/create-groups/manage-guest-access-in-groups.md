@@ -1,12 +1,10 @@
 ---
 title: Office 365 グループでゲスト アクセスを管理する
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Office 365 グループへのゲストの追加、ゲスト ユーザーの表示、PowerShell を使用したゲスト アクセスの制御を行う方法について説明します。
-ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610615"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894505"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Office 365 グループでゲスト アクセスを管理する
 
@@ -35,7 +33,7 @@ ms.locfileid: "42610615"
 
 > [!Note]
 > ネイティブ モードまたは [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) にある Yammer Enterprise ネットワークは、ネットワークのゲストをサポートしていません。
-> Office 365 接続 Yammer グループは、現在ゲスト アクセスをサポートしていません。ただし、接続されていない外部グループを Yammer ネットワークに作成することはできます。 手順については。「[Yammer の外部グループを作成して管理する](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)」を参照してください。
+> Office 365 Connected Yammer グループは現在ゲストアクセスをサポートしていませんが、Yammer ネットワークに接続されていない外部グループを作成することができます。 手順については。「[Yammer の外部グループを作成して管理する](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)」を参照してください。
 
 ### <a name="edit-guest-information"></a>ゲスト情報を編集する
 
@@ -50,11 +48,9 @@ ms.locfileid: "42610615"
 
 グループのゲスト アクセスを有効または無効にするには、Microsoft 365 管理センターで行うことができます。
 
-1. 管理センターで、 [**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービスとアドイン</a>] ページの順に移動します。
-
-2. [**Office 365 グループ**] を選択します。
+1. 管理センターで、[**設定** \> ]**設定**に移動して、[ **Office 365 グループ**] を選択します。
   
-3. [**Office 365 グループ**] ページで、組織外のユーザーにグループ リソースへのアクセスを許可するか、またはグループ所有者が組織外のユーザーをグループに追加できるようにするかを選択します。
+2. [**Office 365 グループ**] ページで、組織外のユーザーにグループ リソースへのアクセスを許可するか、またはグループ所有者が組織外のユーザーをグループに追加できるようにするかを選択します。
 
 ## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>管理センターから Office 365 グループにゲストを追加する
 
@@ -62,7 +58,7 @@ ms.locfileid: "42610615"
   
 1. 管理センターで、[**グループ**]  >  [**グループ**] ページに移動します。
   
-2. ゲストを追加するグループを選択し、[**メンバー**] タブで [**すべてのメンバーの表示と管理**] を選択します。 
+2. ゲストを追加するグループをクリックし、[**メンバー** ] タブの [**すべて表示] および [メンバーを管理**する] を選択します。 
   
 4. [**メンバーを追加**] を選択し、追加するゲストの名前を選択します。
     
@@ -76,9 +72,9 @@ ms.locfileid: "42610615"
 
 ほとんどのグループへのゲスト アクセスを許可したいが、ゲスト アクセスを防止する必要がある場合は、Microsoft PowerShell を使用して個々のグループのゲスト アクセスをブロックすることができます。
 
-グループレベルのゲスト アクセス設定を変更するには、[Graph 用 Azure Active Directory PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview**) のプレビュー バージョンを使用する必要があります。
+グループレベルのゲストアクセス設定を変更するには、 [Graph 用の Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (モジュール名**AzureADPreview**) のプレビューバージョンを使用する必要があります。
 
-- 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Azure AD モジュールのインストール](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
+- 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Installing the Azure AD Module (Azure AD モジュールのインストール)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
 
 - Azure AD PowerShell モジュール (AzureAD) の 2.0 一般提供バージョンをインストールしている場合には、PowerShell セッションで `Uninstall-Module AzureAD` を実行してアンインストールし、`Install-Module AzureADPreview` を実行してプレビュー バージョンをインストールする必要があります。
 

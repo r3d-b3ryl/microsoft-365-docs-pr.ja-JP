@@ -1,7 +1,6 @@
 ---
 title: Office 365 グループを作成できるユーザーを管理する
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -22,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Office 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 0da8aded4b7a55975a9327cc4f29ff8679b3ccf2
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352638"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894553"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Office 365 グループを作成できるユーザーを管理する
 
   
 Office 365 グループは簡単に作成できるため、ユーザーが他のユーザーの代理でグループの作成を依頼されることはあまりありません。 ただし、業務によっては、グループを作成できるユーザーを制御したい場合があります。
   
-この記事では、次に示す、**グループを使用するすべての Office 365 サービスで**グループを作成できないようにする方法について説明します。 
+この記事では、次のようなグループを使用するすべての Office 365 サービスでグループを作成する機能を無効にする方法について説明します。
   
 - Outlook
     
@@ -92,7 +91,7 @@ Office 365 グループの作成を特定のセキュリティグループのメ
 上記の役割の管理者は、このグループのメンバーである必要はなく、グループを作成することができます。
 
 > [!IMPORTANT]
-> グループを作成できるユーザーを制限するには、必ず **セキュリティー グループ** を使用してください。 Office 365 グループを使用しようとすると、SharePoint がセキュリティ グループをチェックするため、メンバーは SharePoint からグループを作成することができません。 
+> グループを作成できるユーザーを制限するには、必ず **セキュリティー グループ** を使用してください。 Office 365 グループを使用しようとしても、メンバーはセキュリティグループをチェックするため、SharePoint からグループを作成することはできません。 
     
 1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
 
@@ -100,62 +99,21 @@ Office 365 グループの作成を特定のセキュリティグループのメ
 
 3. グループの種類として [**セキュリティ**] を選択します。 グループの名前は覚えておいてください。 後で必要になります。
   
-4. セキュリティ グループの設定を完了し、組織内でのグループの作成を許可するユーザーまたは他のセキュリティ グループを追加します。
+4. セキュリティグループの設定を終了し、組織内でグループを作成できるユーザーまたは他のセキュリティグループを追加します。
     
 詳細については、「[Microsoft 365 管理センターでのセキュリティ グループの作成、編集、または削除](../email/create-edit-or-delete-a-security-group.md)」を参照してください。
-  
-## <a name="step-2-install-the-preview-version-of-the-azure-active-directory-powershell-for-graph"></a>手順 2: Graph 用 Azure Active Directory PowerShell のプレビュー バージョンをインストールする
+ 
+## <a name="step-2-run-powershell-commands"></a>手順 2: PowerShell コマンドを実行する
 
-ここでは、Graph 用 Azure Active Directory PowerShell のプレビュー バージョンが必要です。 GA バージョンでは動作しません。
+グループレベルのゲスト アクセス設定を変更するには、[Graph 用 Azure Active Directory PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview**) のプレビュー バージョンを使用する必要があります。
+
+- 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Azure AD モジュールのインストール](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
+
+- Azure AD PowerShell モジュール (AzureAD) の 2.0 一般提供バージョンをインストールしている場合には、PowerShell セッションで `Uninstall-Module AzureAD` を実行してアンインストールし、`Install-Module AzureADPreview` を実行してプレビュー バージョンをインストールする必要があります。
+
+- プレビュー バージョンを既にインストールしている場合には、`Install-Module AzureADPreview`を実行しそれがこのモジュールの最新バージョンであることを確認します。
 
 
-> [!IMPORTANT]
-> 同じコンピューターにプレビュー バージョンと GA バージョンの両方を同時にインストールすることはできません。 このモジュールは、windows 10、Windows Server 2016 にインストールできます。
-
-  
-最適な対応方法として、 *常に*  最新のバージョンにしておくことをお勧めします。古い AzureADPreview バージョンまたは古い AzureAD バージョンをアンインストールして、最新のバージョンを取得してください。 
-  
-1. 検索バーに「Windows PowerShell」と入力します。
-    
-2. **[Windows PowerShell]** を右クリックし、**[管理者として実行]** を選択します。
-    
-    ![[管理者として実行] で PowerShell を開く。](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
-    
-3. ポリシーを RemoteSigned に設定するには、 [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)を使用します。
-    
-    ```
-    Set-ExecutionPolicy RemoteSigned
-    ```
-  
-4. インストール済みモジュールを確認します。
-    
-    ```
-    Get-InstalledModule -Name "AzureAD*"
-    ```
-
-5. AzureADPreview または AzureAD の以前のバージョンをアンインストールするには、次のコマンドを実行します。
-  
-    ```
-    Uninstall-Module AzureADPreview
-    ```
-
-    または
-  
-    ```
-    Uninstall-Module AzureAD
-    ```
-
-6. AzureADPreview の最新のバージョンをインストールするには、次のコマンドを実行します。
-  
-    ```
-    Install-Module AzureADPreview
-    ```
-
-    信頼されていないリポジトリに関するメッセージに対して「**Y**」と入力します。新しいモジュールのインストールには 1 分ほどかかります。
-
-下の手順 3 のために、PowerShell ウィンドウを開いたままにしておきます。
-  
-## <a name="step-3-run-powershell-commands"></a>手順 3: PowerShell コマンドを実行する
 
 下のスクリプトを、Notepad などのテキスト エディターまたは [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise) にコピーます。
 

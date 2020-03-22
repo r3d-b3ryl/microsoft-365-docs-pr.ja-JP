@@ -1,8 +1,7 @@
 ---
 title: Office 365 グループのガバナンスを計画する
 ms.reviewer: johasand
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Office 365 グループのガバナンスを計画する方法について説明します。
-ms.openlocfilehash: b79da69995446aa7e61eea4d836e322743a7d2bb
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2608f3803e13319a349e9a915392778b9793e847
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352908"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894735"
 ---
 # <a name="plan-for-governance-in-office-365-groups"></a>Office 365 グループでのガバナンスを計画する
 
@@ -38,65 +37,60 @@ Office 365 グループには、組織が必要とする可能性のあるガバ
 
 ユーザーは、IT が提供するツールがニーズに合わないと思った場合、自分のシナリオに対応するお気に入りのコンシューマー アプリをダウンロードすることになるでしょう。 このプロセスにより、ユーザーはすぐに使い始めることができますが、複数のログイン、共有の困難さ、コンテンツの閲覧場所の不足など、組織全体でユーザー エクスペリエンスが低下します。 この概念は「シャドウ IT」と呼ばれ、組織に重大なリスクをもたらします。 これにより、ユーザー アクセスを均一に管理し、セキュリティとサービス コンプライアンスのニーズを保証できる機能が減ります。
 
-Office 365 のグループは、共同作業に必要な多くのツールを単一のステップで提供することにより、ユーザーを支援し、シャドウ IT のリスクを軽減します。 Office 365 のグループを使用すると、共同作業するチームメイトを選定し、それらのメンバーが共有するリソースでの共同作業を簡単にセットアップすることができます。 リソースに手動で権限を割り当てることは、過去のことです。グループにメンバーを追加すると、グループが提供するすべてのアセットに必要な権限が自動的に付与されるためです。
+Office 365 のグループは、共同作業に必要な多くのツールを単一のステップで提供することにより、ユーザーを支援し、シャドウ IT のリスクを軽減します。 Office 365 グループでは、共同作業を希望するユーザーのセットを選択し、それらのユーザーが共有するリソースのコレクションを簡単にセットアップできます。 リソースに対するアクセス許可を手動で割り当てることは、グループにメンバーを追加することによって、グループが提供するすべての資産に対して必要なアクセス許可を自動的に付与することです。
 
 ## <a name="technical-architecture"></a>テクニカル アーキテクチャ
 
-Office 365 グループがサポートする主なコミュニケーションの方式は 3 つあります。グループは次のエクスペリエンスの範囲内で作成可能であり、Office 365 スイート全体で使用できます。
-- [Outlook](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): グループの受信トレイと予定表が共有される電子メールを通じた共同作業
-- [Microsoft Teams](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): 特定のサブグループごとに編成された、さまざまなトピックについての非公式でリアルタイムの会話ができる、永続的なチャットベースのワークスペース
-- [Yammer](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): 共同作業のためのエンタープライズ ソーシャル エクスペリエンス
+Office 365 グループでサポートされている3つの主要な通信方法があります。これらのエクスペリエンス内でグループを作成して、Office 365 全体で使用することができます。
+- Outlook: グループの受信トレイと予定表が共有される電子メールを通じた共同作業
+- Microsoft Teams: 特定のサブグループによって開催される、さまざまなトピックに関する非公式でリアルタイム会話を可能にする常設チャットベースのワークスペース。
+- Yammer: 共同作業のためのエンタープライズ ソーシャル エクスペリエンス
 
 > [!NOTE]
-> その他のチームワーク アプリケーション (SharePoint、Planner、Stream など) で新しいグループを作成すると、Microsoft Teams に接続する能力を備えた Outlook コミュニケーション方式のグループが作成されます。
+> 他のチームワークアプリケーションを使用して新しいグループを作成します。たとえば、SharePoint、Planner、Stream などのグループは、Outlook の受信トレイと Microsoft Teams への接続機能を備えています。
 
-グループが作成された場所に応じて、次のような特定のリソースが自動的にプロビジョニングされます。
-- [受信トレイ](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22): メンバー間の電子メールによる会話用。この受信トレイには、メール アドレスがあり、従来の配布リストと同じようにグループの部外者 (さらには組織の部外者) からのメッセージも受け入れるように設定できます。
+グループの作成場所に応じて、次のような特定のリソースが自動的にプロビジョニングされます。
+- [受信トレイ](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)-グループメンバー間の電子メールスレッドの場合。この受信トレイにはメールアドレスが設定されており、従来の配布リストのように、グループ外のユーザーや組織外からのメッセージを受け付けるように設定できます。
  - [予定表](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a): グループに関連したスケジュール済みイベント用
-- [SharePoint チーム サイト](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e): グループに関連する情報、リンクおよびコンテンツの中央リポジトリ
-- [SharePoint ドキュメント ライブラリ](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403): グループがファイルを保存および共有するための中心的な場所
-- [OneNote ノートブック](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97): アイデア、調査結果、および情報の収集用
+- [SharePoint チームサイト](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)–グループに関連する情報、リンク、およびコンテンツの中央リポジトリ
+- [SharePoint ドキュメントライブラリ](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403)–グループがファイルを保存および共有するための一元的な場所
+- [OneNote ノートブック](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)–アイデア、研究、情報を収集するためのものです。
 - [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc): グループのメンバーへのプロジェクト タスクの割り当ておよび管理用
-- [Yammer グループ](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): 会話と情報共有のための共通の場所
+- [Yammer グループ](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)–会話を行い、情報を共有するための共通の場所
 - Microsoft Teams: Office 365 のチャット ベースのワークスペース
 
 それぞれのグループに対して作成されるリソースの詳細については、「[Office 365 グループの概要](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
 
 > [!NOTE]
-> Yammer または Teams によって作成された新しい Office 365 グループは、そのグループのユーザー間の主なコミュニケーションが各自の個別のクライアントで行われるため、Outlook やアドレス帳には表示されません。
-
-> [!IMPORTANT]
-> 新しい Yammer グループの作成時に、Office 365 グループはグループ メールボックスや予定表リソースを作成しません。そのため、Yammer グループは Microsoft Teams に接続することができません。「[Yammer とグループ](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)」を参照してください。
+> Yammer または Teams によって作成された新しい Office 365 グループは、そのグループのユーザー間の主なコミュニケーションが各自の個別のクライアントで行われるため、Outlook やアドレス帳には表示されません。 Yammer グループを Microsoft Teams に接続することはできません。
 
 ## <a name="where-to-start-a-conversation"></a>会話を開始する場所
 Office 365 には、会話する場所が複数あります。会話を開始する場所について理解することは、組織がコミュニケーションの戦略を定義する際に役立ちます。
 
-![画像の説明](../../media/02.png)
+![画像の説明](../../media/03.png)
 
 - Teams: チャット ベースのワークスペース (高速なコミュケーション) – 内部ループ
    - 日常的に作業するメンバーとの共同作業のために作成されています
   - 単一のエクスペリエンスでユーザーが簡単に情報を得られるようにします
   - タブ、コネクタおよびボットを追加します
-  - ライブ チャット、音声会議/ビデオ会議、記録された会議。
+  - Live chat、音声ビデオ会議、レコーディングされた会議
 
 - Yammer: 組織全体をつなぐ (エンタープライズ ソーシャル) – 外部ループ
-  - 実践コミュニティ: 共通の関心事項や専門知識を共有しているが、日常的に共同作業するとは限らないメンバーによる部門間交流グループ
+  - 共通の利息や専門知識を共有しているが、必ずしも日常的に共同作業するわけではないユーザーの、社内で働くグループのコミュニティ。
   - リーダーのつながり、学習コミュニティ、役割ベースのコミュニティ
 
-- Outlook Groups: 最新の DL (メール ベースの共同作業)
+- Outlook グループ: モダン DL (電子メールベースのコラボレーション)
   - 対象とするコミュニケーションにとってユビキタス
-  - Office 365 グループに DL をアップグレードする: [アップグレードが必要な理由](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  - DLs を Office 365 グループにアップグレードする-[アップグレードが必要な理由](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
-- SharePoint: すべての Office 365 グループに対応する中心的なコンテンツ共同作業のエクスペリエンス
-  - すべてのグループは、SharePoint チーム サイトに接続されます
+- SharePoint –すべての Office 365 グループの主要なコンテンツコラボレーション環境
+  - すべてのグループが接続された SharePoint チームサイトを取得する
   - コンテンツの共有、カスタマイズしたページの作成およびニュースの執筆
-  - 既存の SharePoint チーム サイトから新しい Office 365 グループへの[接続](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview)
-
-![画像の説明](../../media/03.png)
+  - 既存の SharePoint チームサイトを新しい Office 365 グループに[接続](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview)する
 
 ##  <a name="managing-and-governing-office-365-at-scale"></a>大規模な Office 365 の管理とガバナンス
 
-Office 365 グループには、組織が必要とする可能性のあるガバナンス機能を実装するための豊富なツールのセットが用意されています。次の各セクションでは、その機能とお勧めのベスト プラクティスについて説明し、ガバナンスに関する組織の要件と、その要件を満たす方法を判断する際に適切な質問をするためのガイドを示します。
+Office 365 グループには、組織が必要とする可能性があるすべてのガバナンス機能を実装するための豊富なツールセットがあります。 次のセクションでは、機能について説明し、ベストプラクティスを推奨し、ガバナンスの要件を決定するための適切な質問とそれらを満たす方法についてのガイダンスを提供します。
 
 **このセクションの内容**:
 - [Office 365 グループを作成できるユーザーを制御する](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#control-who-can-create-office-365-groups)
@@ -108,18 +102,18 @@ Office 365 グループには、組織が必要とする可能性のあるガバ
 - [従来の共同作業ツールをアップグレードする](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#upgrade-traditional-collaboration-tools)
 - [グループのレポート](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#groups-reporting)
 
-### <a name="control-who-can-create-office-365-groups"></a>Office 365 グループを作成できるユーザーを制御する
-グループは、エンド ユーザーが複数のエンド ポイント (Outlook、SharePoint、Microsoft Teams などの環境) から作成できます。
+### <a name="control-who-can-create-office-365-groups"></a><a name="control-who-can-create-office-365-groups"></a>Office 365 グループを作成できるユーザーを制御する
+エンドユーザーは、Outlook、SharePoint、Teams、その他の環境を含む複数のエンドポイントからグループを作成できます。
 
 ![画像の説明](../../media/04.png)
 > [!Tip]
 >- グループの所有者に裁量を委ねるセルフサービスについて特に考慮に入れます。
 >- グループの要求方法を文書化して伝えます。
 >- クラウドへの移行過程でグループを作成できるユーザーについて再考します。
->- グループの作成を制御するセキュリティ グループを構成するために、動的メンバーシップを使用することを検討します。
->- 動的メンバーシップによって管理できるグループ シナリオを評価して、その他のグループにはセルフサービスを許可します。
+>- 動的メンバーシップを使用して、グループの作成を制御するセキュリティグループのメンバーを構成することを検討してください。
+>- 動的メンバーシップを介して管理できるグループシナリオを評価し、rest に対してセルフサービスを許可します。
 
-グループのプロビジョニングには 3 つの主要なモデル (オープン、IT 主導、制御) があります。次の表では、それぞれのモデルの長所について説明します。
+グループでのプロビジョニングには、オープン、IT 主導、および制御の3つの主要なモデルがあります。 次の表では、各モデルの利点について説明します。
 
 | モデル          | 長所                                                   |
 | -------------- | ------------------------------------------------------------ |
@@ -132,18 +126,18 @@ Office 365 グループには、組織が必要とする可能性のあるガバ
 |         |         |         |
 |---------|---------|---------|
 |![画像の説明](../../media/decision_point.png)|判断のポイント|<ul><li>組織の要件に適したプロビジョニング モデルは何か?</li><li>組織はグループの作成を管理者に限定する必要があるか?</li><li>組織はグループの作成をセキュリティ グループのメンバーに限定する必要があるか?</li><li>組織はユーザーの属性 (所属部署など) に基づいて一部のグループを動的に作成する必要があるか?</li></ul>|
-|![画像の説明](../../media/next_steps.png)|次のステップ|<ul><li>グループおよびチームの作成に関する組織の要件を文書化します。</li><li>該当する要件をグループのロールアウトの一部として実装する計画を立てます。</li><li>ユーザーにポリシーについて通達および公開して、ユーザーが要求できる行動を知らせます</li><li>該当する場合は動的メンバーシップを実装する計画を立てます。</li></ul>|
+|![画像の説明](../../media/next_steps.png)|次の手順|<ul><li>グループおよびチームの作成に関する組織の要件を文書化します。</li><li>該当する要件をグループのロールアウトの一部として実装する計画を立てます。</li><li>ユーザーにポリシーについて通達および公開して、ユーザーが要求できる行動を知らせます</li><li>該当する場合は動的メンバーシップを実装する計画を立てます。</li></ul>|
 
 > [!Important]
 > グループおよびチームの作成を制限すると、多くの Office 365 サービスは、そのサービスが機能するためのグループの作成が必要になり、ユーザーの生産性が低下することがあります。詳細については、「[Office 365 グループの作成ユーザーを制御する理由](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)」を参照してください。
 
-#### <a name="resources"></a>*資料*
+#### <a name="resources"></a>*リソース*
 - [Office 365 グループを作成できるユーザーを管理する](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide)
 - [オブジェクトの属性に基づいて動的にグループを作成する](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-with-advanced-rules)
 - [Outlook 用の Office 365 グループの既定の設定をパブリックまたはプライベートに変更する方法](https://support.office.com/article/office-365-groups-in-outlook-private-by-default-36236e39-26d3-420b-b0ac-8072d2d2bedc)
 - [セキュリティ グループとチーム メンバーシップを同期する](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Syncing-Security-Groups-with-team-membership/ba-p/241959)
 
-### <a name="group-soft-delete-and-restore"></a>グループの論理的な削除と復元
+### <a name="group-soft-delete-and-restore"></a><a name="group-soft-delete-and-restore"></a>グループの論理的な削除と復元
 Office 365 グループを削除した場合、既定では、その後 30 日間は保持されます。グループを引き続き復元できるため、この 30 日の期間は "論理的な削除" と呼ばれます。30 日後、グループおよび関連付けられているコンテンツは完全に削除され、復元することはできません。
 
 > [!Tip]
@@ -164,7 +158,7 @@ Office 365 グループを削除した場合、既定では、その後 30 日�
 - [Azure Active Directory で削除された Office 365 グループを復元する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 
-### <a name="group-naming-policy"></a>グループの名前付けポリシー
+### <a name="group-naming-policy"></a><a name="group-naming-policy"></a>グループの名前付けポリシー
 名前付けポリシーにより、管理者やユーザーはグループの機能、メンバーシップ、地域、グループの作成者を特定しやすくなります。名前付けポリシーは、アドレス帳のグループの分類にも役立ちます。ポリシーを使用すると、グループの名前やエイリアスに特定の単語が使用されないようにブロックできます。
 
 > [!Tip]
@@ -182,14 +176,14 @@ Office 365 グループを削除した場合、既定では、その後 30 日�
 > [!Important]
 >名前付けポリシーは、すべてのグループのワークロード (Outlook、Microsoft Teams、SharePoint、Planner、Yammer など) で作成されたグループに適用されます。グループ名とグループのエイリアスのどちらにも適用されます。名前付けポリシーは、ユーザーによるグループの作成時、または既存のグループのグループ名やエイリアスの編集時に適用されます。
 
-#### <a name="resources"></a>*資料*
+#### <a name="resources"></a>*リソース*
 - [Office 365 グループの名前付けポリシー](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy)
 - [Azure Active Directory での Office 365 グループの名前付けポリシーの強制](https://go.microsoft.com/fwlink/?linkid=868340)
 - [グループ設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?linkid=868341)
 - [グループの名前付けのプレビュー機能](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/NamingPolicy)
 
-### <a name="group-expiration-policy"></a>グループの有効期限ポリシー
-管理者はグループの有効期間を指定できます。有効期間の終了日に達していて更新されなかったグループは削除されます。有効期間はグループの作成時、または最終更新日から始まります。グループの所有者には、有効期限が切れる前に自動的に電子メールが送信され、グループの有効期間を別の期間に更新できます。
+### <a name="group-expiration-policy"></a><a name="group-expiration-policy"></a>グループの有効期限ポリシー
+管理者は、有効期限を指定し、その期間の最後に到達して更新されていないすべてのグループを削除することができます。 有効期限は、グループが作成された時点、または最後に更新された日付から始まります。 グループの所有者は、有効期限が切れる前に、別の有効期限が切れるまでグループを更新できるように、メールを自動的に送信します。 アクティブなグループが自動的に更新されます。
 
 グループを有効期限切れに設定した場合:
 - 有効期限が近づくと、グループの所有者にグループを更新するための通知が送られます
@@ -206,8 +200,8 @@ Office 365 グループを削除した場合、既定では、その後 30 日�
 
 |         |         |         |
 |---------|---------|---------|
-|![画像の説明](../../media/decision_point.png)|判断のポイント|<ul><li>組織はチームに有効期限日を指定することを必要としていますか?</li><li>孤立したグループの処理に関する戦略を決めますか?</li></ul>|
-|![画像の説明](../../media/next_steps.png)|次のステップ|<ul><li>グループの有効期限、データ保持、およびアーカイブに関する組織の要件を文書化します。</li><li>該当する要件をグループのロールアウトの一部に実装する計画を立てます。</li><li>所有者が単独または所有者が存在しないグループについてレポートするカスタム ジョブを実装する計画を立てます。 </li></ul>|
+|![画像の説明](../../media/decision_point.png)|判断のポイント|<ul><li>組織はチームに有効期限日を指定することを必要としていますか?</li><li>孤立グループを処理する戦略を決定します。</li></ul>|
+|![画像の説明](../../media/next_steps.png)|次の手順|<ul><li>グループの有効期限、データ保持、およびアーカイブに関する組織の要件を文書化します。</li><li>該当する要件をグループのロールアウトの一部に実装する計画を立てます。</li><li>所有者が単独または所有者が存在しないグループについてレポートするカスタム ジョブを実装する計画を立てます。 </li></ul>|
 
 > [!Important]
 >有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
@@ -216,7 +210,7 @@ Office 365 グループを削除した場合、既定では、その後 30 日�
 - [Office 365 グループの有効期限ポリシー](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 - [Office 365 グループの有効期限ポリシーの構成](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
-### <a name="group-guest-access"></a>グループのゲスト アクセス
+### <a name="group-guest-access"></a><a name="group-guest-access"></a>グループのゲスト アクセス
 管理者は、Office 365 グループへのゲスト アクセスを組織全体に対して許可するか、個々の Office 365 グループに対して許可するかを制御できます。また、グループにゲストを追加できるユーザーを制御することもできます。
 >[!Tip]
 >- ゲスト アクセスはテナント レベルで有効化します。必要に応じて、特定のグループへのゲスト アクセスをブロックします。
@@ -229,16 +223,15 @@ Office 365 グループを削除した場合、既定では、その後 30 日�
 |![画像の説明](../../media/next_steps.png)|次のステップ|<ul><li>特定の分類されたグループに対するゲスト/外部アクセスの要件 (保持期間や発生回数などを含む) を文書化します。</li><li>利用規約とアクセス レビューが必要になるグループについての組織の要件を文書化します。 </li><li>レビューを実行して、内部ユーザーとゲスト ユーザーの両方のグループ メンバーシップを効率的に管理します。</li></ul>|
 
 
-#### <a name="resources"></a>*資料*
+#### <a name="resources"></a>*リソース*
+- [組織外のユーザーとの共同作業](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 - [Office 365 グループでゲスト アクセスを管理する](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups)
 - [Office 365 グループのゲスト アクセス](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
-- [Office 365 グループのゲスト アクセス: 管理者ヘルプ](https://support.office.com/article/Guest-access-to-Office-365-groups-Admin-Help-7c713d74-a144-4eab-92e7-d50df526ff96)
 - [Azure AD アクセス レビュー](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 - [Azure Active Directory Terms of Use 機能](https://docs.microsoft.com/azure/active-directory/active-directory-tou)
 - [Google フェデレーション](https://docs.microsoft.com/azure/active-directory/b2b/google-federation)
-- [Microsoft Teams でゲスト アクセスを許可する](https://docs.microsoft.com/microsoftteams/teams-dependencies)
 
-### <a name="group-policies--information-protection"></a>グループのポリシーと情報保護
+### <a name="group-policies--information-protection"></a><a name="group-policies--information-protection"></a>グループのポリシーと情報保護
 Office 365 グループは、Office 365 の高度なセキュリティ機能とコンプライアンス機能に基づいて構築されていて、分類、監査とレポート作成、コンプライアンス コンテンツ検索、電子情報開示、訴訟ホールド、および保持ポリシーをサポートしています。
 >[!Tip]
 >- 組織のニーズに合わせて、分類、使用上のガイドライン、およびラベルを構成します。
@@ -248,8 +241,8 @@ Office 365 グループは、Office 365 の高度なセキュリティ機能と�
 
 |         |         |         |
 |---------|---------|---------|
-|![画像の説明](../../media/decision_point.png)|判断のポイント|<ul><li>組織には、すべてのユーザーに通達する必要のある特定の使用に関する要件がありますか?</li><li>組織はすべてのコンテンツの分類を必要としていますか?</li><li>組織はコンテンツを一定期間保持することを必要としていますか?</li><li>組織はグループに適用する特定のデータ保持ポリシーを必要としていますか?</li><li>組織は、コンテンツを保持するためにアクティブでないグループをアーカイブする機能を必要としますか?</li><li>グループ作成者は、チームに組織固有の分類を割り当てる機能を必要としますか?</li></ul>|
-|![画像の説明](../../media/next_steps.png)|次のステップ|<ul><li>グループの使用に関する組織のガイドラインを文書化します</li><li>分類に関する組織の要件を文書化します。</li><li>分類 (秘密度、保持、ゲスト アクセスなど) に基づいて強制適用するポリシーを決定します。</li><li>組織の秘密度のラベルと、それに割り当てる保護設定を定義します。</li><li>ユーザーとグループが確認できるラベルを制御するためのラベル ポリシーを定義します。</li><li>[グループの機密度ラベルのプレビュー](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)を設定し、組織内のグループの分類を開始します。</li><li>該当する要件をグループのロールアウトの一部として実装する計画を立てます。</li></ul>|
+|![画像の説明](../../media/decision_point.png)|判断のポイント|<ul><li>組織には、すべてのユーザーに通達する必要のある特定の使用に関する要件がありますか?</li><li>組織はすべてのコンテンツの分類を必要としていますか?</li><li>組織はコンテンツを一定期間保持することを必要としていますか?</li><li>組織で特定のデータ保持ポリシーをグループに適用する必要があるかどうか。</li><li>組織は、コンテンツを保持するためにアクティブでないグループをアーカイブする機能を必要としますか?</li><li>グループ作成者は、チームに組織固有の分類を割り当てる機能を必要としますか?</li></ul>|
+|![画像の説明](../../media/next_steps.png)|次の手順|<ul><li>グループの組織の使用ガイドラインを文書化する</li><li>分類に関する組織の要件を文書化します。</li><li>機密保持、保存、ゲストアクセスなどの分類に基づいて、適用するポリシーを決定します。</li><li>組織の秘密度のラベルと、それに割り当てる保護設定を定義します。</li><li>ユーザーとグループが確認できるラベルを制御するためのラベル ポリシーを定義します。</li><li>[グループの機密度ラベルのプレビュー](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)を設定し、組織内のグループの分類を開始します。</li><li>該当する要件をグループのロールアウトの一部として実装する計画を立てます。</li></ul>|
 
 
 #### <a name="resources"></a>*資料*
@@ -265,7 +258,7 @@ Office 365 グループは、Office 365 の高度なセキュリティ機能と�
 - [Office 365 セキュリティ/コンプライアンス センターでコンテンツ検索を実行する](https://docs.microsoft.com/Office365/SecurityCompliance/content-search)
 - [PowerShell を使用して保持ラベルを一括で作成および発行する](https://docs.microsoft.com/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 
-### <a name="upgrade-traditional-collaboration-tools"></a>従来の共同作業ツールをアップグレードする
+### <a name="upgrade-traditional-collaboration-tools"></a><a name="upgrade-traditional-collaboration-tools"></a>従来の共同作業ツールをアップグレードする
 長年にわたり、組織は社内と社外の両方の職員グループとのコミュニケーションおよび共同作業を配布グループに頼ってきました。現在では、Outlook の Office 365 グループによって、これまで以上に強力なコラボレーションのためのソリューションが提供されています。さらに、既存の SharePoint サイトをモダン化するために Office 365 グループをサイトに接続することもできます。
 
 >[!Tip]
@@ -274,20 +267,19 @@ Office 365 グループは、Office 365 の高度なセキュリティ機能と�
 
 |         |         |         |
 |---------|---------|---------|
-|![画像の説明](../../media/decision_point.png)|判断のポイント|<ul><li>組織にはアップグレードの[対象にならない](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade)配布リストがありますか?<li>配布リストの最適な移行先としてのグループの種類は判別できていますか?</li></ul>|
-|![画像の説明](../../media/next_steps.png)|次のステップ|<ul><li>Office 365 グループへのアップグレードの候補になる配布リストを特定します。</li><li>既存の SharePoint チーム サイトを分析して、グループへの接続準備が整っているサイトを確かめます。</li><li>社内の別のチームに配布グループをアップグレードしたことと、そのアップグレードを成功に導いた手順について知らせます。</li></ul>|
+|![画像の説明](../../media/decision_point.png)|判断のポイント|<ul><li>組織にはアップグレードの[対象にならない](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade)配布リストがありますか?<li>移行先の配布リストとなるグループの種類を決定します。</li></ul>|
+|![画像の説明](../../media/next_steps.png)|次の手順|<ul><li>Office 365 グループへのアップグレードの候補になる配布リストを特定します。</li><li>既存の SharePoint チーム サイトを分析して、グループへの接続準備が整っているサイトを確かめます。</li><li>社内の別のチームに配布グループをアップグレードしたことと、そのアップグレードを成功に導いた手順について知らせます。</li></ul>|
 
 
 #### <a name="resources"></a>*資料*
-- [配布リスト (DL) を Outlook のグループにアップグレードする](https://aka.ms/whyupgradedls):
-- [DL を Outlook のグループにアップグレードする理由](https://aka.ms/whyupgradedls)
-- 1 回のクリックでアップグレードする方法 (Exchange 管理センターまたは [PowerShell スクリプト](https://support.office.com/article/Migrate-distribution-lists-to-Office-365-Groups-Admin-help-787d7a75-e201-46f3-a242-f698162ff09f?ui=en-US&rs=en-US&ad=US)を使用)
+- [配布リスト (DL) を Outlook のグループにアップグレードする](https://aka.ms/whyupgradedls)
+- 1 回のクリックでアップグレードする方法 (Exchange 管理センターまたは [PowerShell スクリプト](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)を使用)
 - [配布リストを Office 365 グループに移行する: 管理者ヘルプ](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 - [既存の SharePoint サイトを Office 365 グループに接続する:](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
 - [スキャナー データの分析と使用](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group-scanner)
 - [SharePoint Modernization Scanner](https://github.com/SharePoint/sp-dev-modernization/tree/master/Tools/SharePoint.Modernization) (GitHub にあるツール)
 
-### <a name="groups-reporting"></a>グループのレポート
+### <a name="groups-reporting"></a><a name="groups-reporting"></a>グループのレポート
 Office 365 のレポート ダッシュボードには、組織内の Office 365 製品全体にわたるアクティビティの概要が示されます。これにより、個別の製品レベルのレポートに向けてドリル インして、各製品の範囲内でのアクティビティに関する詳細な所見が得られます。
 > [!TIP]
 >- グループ アクティビティ レポートを使用して、組織内の Office 365 グループのアクティビティに関する洞察を得て、作成され、使用されているグループの数を確認できます。
@@ -319,26 +311,26 @@ Office 365 グループは、組織が必要とする可能性のあるガバナ
 **次の組織プロファイルについて検討してください。**
 - 小規模企業
 - 中規模企業
-- 規制下または企業
+- 規制またはエンタープライズ
 
 ### <a name="small-business"></a>小規模企業
 Exchange Online と SharePoint Online 以上のライセンス (Business Essentials と Business Premium のプラン、および Azure Active Director Premium のライセンスがない Enterprise E1、E3、および E5 のプランを含む) を使用して Office 365 を展開した組織を検討します。
 
 | ステージ | 説明 |
 | --------------- | ------------------------------------------------------------ |
-| ガイダンス |<ul><li>セルフサービスのプロビジョニング モデルを検討します</li><li> Outlook および SharePoint サイトのグループは、[既定でプライベート](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395)になります。</li><li> グループは、既存の配布リスト (DL) を 1 つずつアップグレードするか、PowerShell を使用して一括でアップグレードすることで作成できます。「[配布リストを Office 365 グループにアップグレードする](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F)」を参照してください。</li><li> ゲスト アクセスは有効にしますが、ゲストの許可/禁止ドメインを使用して管理します。</li><li> グループのレポートを使用して、ユーザーによるグループの使用方法に関する所見を得ます。</li><li> 誰もが共同作業のための 1 つのチームの一員になれる手段として、組織全体のチームである Microsoft Teams を作成することを検討します。 </li></ul>|
-| 次のステップ      |<ul><li>[JSON スキーマ リファレンス](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)で定義されているアクションを使用するコントロールに、既定のデザインを定義するために [サイト デザインとサイト スクリプト](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview)の使用を検討します。</li><li>[グループのレポート](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)をレビューします</li><li>すべてのグループおよび非アクティブ/アクティブ グループを追跡します</li><li>使用されている Exchange ストレージと SharePoint ストレージの両方を追跡します</li><li>グループ メールボックスの会話のすべてにわたるアクティビティ、グループのサイト/ファイルのアクティビティなどを表示します。</li></ul> |
+| ガイダンス |<ul><li>セルフサービスのプロビジョニングモデルを検討します。</li><li> Outlook および SharePoint サイトのグループは、[既定でプライベート](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395)になります。</li><li> グループは、既存の配布リスト (DL) を 1 つずつアップグレードするか、PowerShell を使用して一括でアップグレードすることで作成できます。「[配布リストを Office 365 グループにアップグレードする](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F)」を参照してください。</li><li> ゲスト アクセスは有効にしますが、ゲストの許可/禁止ドメインを使用して管理します。</li><li> グループのレポートを使用して、ユーザーによるグループの使用方法に関する所見を得ます。</li><li> すべてのユーザーが共同作業のために1つのチームの一員になるように、組織全体のチーム Microsoft Teams チームを作成することを検討してください。 </li></ul>|
+| 次のステップ      |<ul><li>[JSON スキーマ リファレンス](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)で定義されているアクションを使用するコントロールに、既定のデザインを定義するために [サイト デザインとサイト スクリプト](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview)の使用を検討します。</li><li>[グループレポート](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)を確認します。</li><li>グループ合計および非アクティブ/アクティブグループを追跡します。</li><li>使用されている Exchange と SharePoint の両方の記憶域を追跡します。</li><li>グループ メールボックスの会話のすべてにわたるアクティビティ、グループのサイト/ファイルのアクティビティなどを表示します。</li></ul> |
 
 ### <a name="medium-sized-business"></a>中規模ビジネス
 上記の推奨事項のほかに、Azure Active Directory Premium P1 以上のライセンスで Enterprise E3/E5 を使用して Office 365 を展開する中規模ビジネスでは、次の点を考慮します。
 
 | ステージ | 説明 |
 | --------------- | ------------------------------------------------------------ |
-| ガイダンス |<ul><li>Open または IT 主導のプロビジョニング モデルを決定します。</li><li> 部署などの Azure AD 属性に基づいて、[動的メンバーシップの規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)に関連付けられた特定のグループを作成することを検討します</li><li> 高機密、社外秘 (既定)、一般など、組織内の分類を定義します。</li><li>  保持や機密性などの分類に基づいてポリシーを定義します。</li><li> SharePoint は、すべての Office 365 グループのコンテンツ サービスです。[3 層の保護 (ベースライン、機密、高機密) を目的とした SharePoint Online サイトの設計と展開](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection)を検討します。これら 3 層の保護の詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)」を参照してください。</li><li> 既定では、パブリック グループとプライベート グループの両方が GAL にリストされます。 GAL に表示するグループ、特に Microsoft Teams の外部で作成されたグループを決定します。  [Set-UnifiedGroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx) コマンドレットの「HiddenFromAddressListsEnabled」または「HidefromExchangeClients」を使用して、特定のグループを非表示にする </li></ul> |
+| ガイダンス |<ul><li>Open または IT 主導のプロビジョニング モデルを決定します。</li><li> 部署などの Azure AD 属性に基づいて、[動的メンバーシップの規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)に関連付けられた特定のグループを作成することを検討します</li><li> 高機密、社外秘 (既定)、一般など、組織内の分類を定義します。</li><li>  保持や機密性などの分類に基づいてポリシーを定義します。</li><li> SharePoint は、すべての Office 365 グループのコンテンツ サービスです。[3 層の保護 (ベースライン、機密、高機密) を目的とした SharePoint Online サイトの設計と展開](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection)を検討します。これら 3 層の保護の詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)」を参照してください。</li><li> 既定では、パブリック グループとプライベート グループの両方が GAL にリストされます。 GAL に表示するグループ、特に Microsoft Teams の外部で作成されたグループを決定します。  特定のグループを非表示にするには、 [set-unifiedgroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx)コマンドレットの "HiddenFromAddressListsEnabled" または "HidefromExchangeClients" を使用します。</li></ul> |
 | 次のステップ      |<ul><li>[使用方法のガイドライン](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets) を定義して、グループを効果的に維持するために役立つベスト プラクティスや、内部コンテンツのポリシーについてユーザーを教育します。たとえば、分類、ポリシー、手順を理解させることなどです。</li><li>グループのライフサイクル期間 (有効期限ポリシー) を定義します。この期間でグループは更新される必要があり、そうでない場合は削除されます。</li><li>分類に基づいてポリシーを実装するために、次に示すカスタム ジョブの作成を検討します。</li><li>プライバシーをプライベートに設定します。</li><li>外部のメンバーシップ/共有を無効にします。 </li><li>電子メールを送信して、[所有者のいない](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)グループのグループ メンバーに通知します。</li><li>所有権ポリシーを強制します (最低 2 人の所有者)。</li><li> 分類に基づいて、グループのアイテム保持ポリシーを定義します。 </li><li>アイテム保持ポリシーの概要。</li><li>PowerShell を使用して、分類と [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps) でグループを識別します。</li><li>[JSON スキーマ リファレンス](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)で定義されているアクションを使ったコントロールを定義するために、サイト デザインとサイト スクリプトの使用を検討します。</li><li>[サイト デザインと Microsoft Flow を使用して簡単なサイト ディレクトリを作成する](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial)ことを検討してください。 このサイト デザインを使用してサイトが作成されると、サイトの詳細情報が取り込まれ、リストに書き込まれます。 </li></ul>|
 
-### <a name="regulated-or-enterprise"></a>規制下または企業
-上記の推奨事項のほかに、Azure Active Directory Premium P1/P2 以上のライセンスで Enterprise E3/E5 を使用して Office 365 を展開する、政府、金融サービス、医療など高度な規制下にある組織や大規模な企業では、次の点を考慮します。
+### <a name="regulated-or-enterprise"></a>規制またはエンタープライズ
+上記の推奨事項に加えて、Azure Active Directory Premium P1/P2 ライセンスを使用して、少なくとも Enterprise E3/E5 を使用して Office 365 を展開した政府機関、金融サービス、医療機関のような、厳しく規制された、または大規模な企業の場合は、次のことを考慮してください。
 
 | ステージ | 説明 |
 | --------------- | ------------------------------------------------------------ |
@@ -355,14 +347,14 @@ Azure Active Directory を使用して、さまざまなグループに関連す
 | ------------------- | ---------------------------------------------- | ------------------------------------- | ------------ |
 | グループの名前付けポリシー | プレフィックス サフィックスに基づくカスタム ブロックの単語を使用します。 | P1                                    |      TBD     |
 | グループの分類 | チームに分類を割り当てます。 | P1                                    |   TBD        |
-| グループのゲスト アクセス | ゲストがグループに追加されることを許可または禁止します。 | 不要                                    |  TBD        |
+| グループのゲスト アクセス | ゲストがグループに追加されることを許可または禁止します。 | いいえ                                    |  TBD        |
 | グループの作成 | チームの作成を管理者に限定します。 | 不要                                    |   TBD        |
 | グループの作成 | チームの作成をセキュリティ グループのメンバーに限定します。 | P1                                    |     TBD      |
 | グループの使用方法のガイドライン | すべてのグループ作成のエンドポイントに表示される、「グループの使用方法のガイドライン」にリンクを設定します。 | P1                                    |   TBD        |
-| 非表示のメンバーシップ | グループのメンバーでないユーザーから、Office 365 グループのメンバーを非表示にします。 | 不要                                    |   TBD        |
+| 非表示のメンバーシップ | グループのメンバーでないユーザーから、Office 365 グループのメンバーを非表示にします。 | いいえ                                    |   TBD        |
 | 有効期限ポリシー | 有効期限ポリシーを設定することにより、Office 365 グループのライフ サイクルを管理します。 | P1                                    |  TBD        |
-| グループのアクティビティ レポート | 組織内の Office 365 グループのアクティビティに関する詳細を分析したり、作成中および使用中の Office 365 グループの数を確認できます。 | 不要                                    |    TBD       |
-| アイテム保持ポリシー | セキュリティ/コンプライアンス センターで Office 365 グループのアイテム保持ポリシーを設定して、特定の期間内のデータを保持または削除します。**注:** この機能を使用するには、Office 365 Enterprise E3 以上のライセンスが必要です。 | 不要                                    |    TBD       |
+| グループのアクティビティ レポート | 組織内の Office 365 グループのアクティビティに関する詳細を分析したり、作成中および使用中の Office 365 グループの数を確認できます。 | いいえ                                    |    TBD       |
+| アイテム保持ポリシー | セキュリティ/コンプライアンス センターで Office 365 グループのアイテム保持ポリシーを設定して、特定の期間内のデータを保持または削除します。**注:** この機能を使用するには、Office 365 Enterprise E3 以上のライセンスが必要です。 | いいえ                                    |    TBD       |
 | データ損失防止ポリシー | Office 365 グループに接続されたサイト全体で機密情報を特定し、偶発的な共有を回避します。**注:** この機能を使用するには、Office 365 Enterprise E3 以上のライセンスが必要です。 | 不要                                    |     TBD      |
 | アーカイブと復元 | チームがアクティブでなくなったときにチームをアーカイブして、参照用または将来再アクティブ化するために保持します。 | 不要                                    |   TBD        |
 | アクセス レビュー | レビューを実行して、内部ユーザーとゲスト ユーザーの両方のグループ メンバーシップを効率的に管理します | P2                                    |   TBD       |

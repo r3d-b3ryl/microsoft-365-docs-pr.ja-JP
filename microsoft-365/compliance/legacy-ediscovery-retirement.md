@@ -10,14 +10,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: 761378f848c358f2234576ac87507b91c55f4ccf
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857370"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894854"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -46,11 +45,13 @@ ms.locfileid: "42857370"
 
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
+   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
+   
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
    
-   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
+
 
 - [Office 365 Advanced ediscovery](office-365-advanced-ediscovery.md)V2.0 (Office 365 Security & コンプライアンスセンターの電子情報開示ケースによってアクセスされる先進電子情報開示の最初のバージョン)。
 
@@ -212,7 +213,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 </tr>
 <tr class="odd">
 <td>検索結果を探索メールボックスにコピーする</td>
-<td>None</td>
+<td>なし</td>
 <td>この機能は、Microsoft 365 のすべてのサービスへのアクセスを提供しないので、直接交換することはできません。 代替ソリューションについては、以下の FAQ を参照してください。</td>
 </tr>
 </tbody>
@@ -294,9 +295,9 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 </tbody>
 </table>
 
-## <a name="getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api"></a>EWS API の GetSearchableMailboxes、および GetHoldOnMailboxes 操作
+## <a name="exchange-web-services-api-operations"></a>Exchange Web サービス API の操作
 
-これら3つの exchange Web サービス api は、exchange 管理センターのインプレース電子情報開示 & 保持機能、および** \*** exchange Online PowerShell の get-mailboxsearch コマンドレットで使用されます。 また、他の従来の電子情報開示ツールを撤去する際にも廃止されます。
+Exchange Web サービス API のこれらの操作は、exchange 管理センターのインプレース電子情報開示 & 保持機能、および** \*** exchange Online PowerShell の get-mailboxsearch コマンドレットで使用されます。 また、他の従来の電子情報開示ツールを撤去する際にも廃止されます。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
 
@@ -310,7 +311,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 
 ### <a name="timeline"></a>タイムライン
 
-- 2020年4月1日: GetSearchableMailboxes および GetHoldOnMailboxes 操作は使用できなくなり、Microsoft サポートがサポートを提供しなくなります。
+- 2020年4月1日: GetSearchableMailboxes ボックス、Searchemail メールボックス、SetHoldOnMailboxes、および GetHoldOnMailboxes 操作を使用できなくなり、Microsoft サポートからサポートが提供されなくなります。
 
 ## <a name="advanced-ediscovery-v10"></a>高度な電子情報開示 v2.0 v 1.0
 

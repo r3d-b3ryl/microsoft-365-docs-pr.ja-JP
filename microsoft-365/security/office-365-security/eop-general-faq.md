@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: ここでは、Microsoft Exchange Online Protection (EOP) のクラウド ホスト型電子メール フィルター サービスについてよく寄せられる質問を紹介します。その他のよく寄せられる質問 (FAQ) については、以下のリンクを参照してください。
-ms.openlocfilehash: 03fb070b2a40ad1e363138124eb0225e64fd5702
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599384"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893684"
 ---
 # <a name="eop-general-faq"></a>EOP の一般的な FAQ
 
@@ -28,8 +28,6 @@ ms.locfileid: "41599384"
 - [代理管理に関する FAQ](delegated-administration-faq.md)
 
 - [スパム対策保護に関してよく寄せられる質問](anti-spam-protection-faq.md)
-
-- [Exchange Online の差出人セーフ リストと受信拒否リスト](safe-sender-and-blocked-sender-lists-faq.md)
 
 - [検疫に関する FAQ](quarantine-faq.md)
 

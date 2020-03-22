@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: セキュリティ & コンプライアンスセンターを使用して、組織内の電子情報開示ケースを作成および管理します。ケースにメンバーを割り当てたり、コンテンツの場所を保持に配置したり、ケースに関連付けられたコンテンツ検索を実行したり、検索結果をエクスポートしたりすることができます。Office 365 Advanced eDiscovery で詳細な分析を行うためにケースデータを準備することもできます。
-ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634955"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894966"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターの電子情報開示のケースを管理する
 
@@ -551,7 +551,14 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
   |組織のケース保留の最大数  <br/> |10,000  <br/> |
   |1 つのケース保留のメールボックスの最大数  <br/> |1,000  <br/> |
   |1 つのケース保留の SharePoint および OneDrive for Business サイトの最大数  <br/> |100  <br/> |
-   
+  |電子情報開示のホームページに表示されるケースの最大数と、ケース内で保持、検索、およびエクスポートタブに表示されるアイテムの最大数。 <sup>1</sup> |1,000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup> 1000 ケース、ホールド、検索、またはエクスポートの一覧を表示するには、対応する Office 365 Security & コンプライアンス PowerShell コマンドレットを使用できます。<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **Advanced eDiscovery のケース管理ページで作成されたケースについて** 以前の高度な電子情報開示ケースの一覧にアクセスするには、セキュリティ & コンプライアンスセンターの [**電子情報開示**] ページの下部にあるリンクをクリックします。 ただし、以前のケースで作業を行うには、Office 365 サポートに連絡して、セキュリティ & コンプライアンスセンターで、ケースを新しい電子情報開示ケースに移行するよう要求する必要があります。 
     
 - **電子情報開示管理者を作成する理由。** 前述のとおり、電子情報開示管理者は、組織内のすべての電子情報開示ケースを表示したり、これらのケースにアクセスしたりできる、電子情報開示マネージャー役割グループのメンバーです。すべての電子情報開示ケースにアクセスする能力には、2 つの重要な目的があります。

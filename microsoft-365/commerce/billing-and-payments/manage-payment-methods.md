@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 管理センターで支払い方法を管理する方法について説明します。
-ms.openlocfilehash: 61c6d0b4fb21762eaeee96d8923eda7702fc70bb
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341597"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894843"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
 
@@ -35,6 +35,15 @@ Microsoft からビジネス製品またはサービスを購入する場合は�
 > 銀行口座で支払うオプションは、一部の国や地域では使用できません。
 >
 > テナントと同じ国から発行された支払い方法を使用する必要があります。
+
+## <a name="add-a-payment-method"></a>支払い方法を追加する
+
+支払い方法を追加しても、サブスクリプションがそれに関連付けられることはありません。 支払い方法に1つのサブスクリプションを割り当てるには、「 [1 つのサブスクリプションの支払い方法を変更](#change-a-payment-method-for-a-single-subscription)する」を参照してください。 別の支払い方法を使用しているすべてのサブスクリプションを新しい支払い方法で置き換える場合は、「[支払い方法を置き換える](#replace-a-payment-method)」を参照してください。
+
+1. 管理センターで、[**課金請求書** > **&** > 支払い<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>] ページに移動します。
+2. [**お支払方法の追加**] を選択します。
+3. [**支払い方法**] ページで、ドロップダウン メニューから支払い方法を選択します。
+4. 新しいカードまたは銀行口座の情報を入力し、[**追加**] を選択します。
 
 ## <a name="update-payment-method-details"></a>支払い方法の詳細を更新する
 
@@ -64,7 +73,7 @@ Microsoft からビジネス製品またはサービスを購入する場合は�
 
 1つのサブスクリプションの支払いに使用する支払い方法を変更できます。
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] のページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
 2. [**サブスクリプション**] タブで、別の支払い方法で支払う対象のサブスクリプションを選択します。 
 3. [**請求**] の下で支払い方法の横にある [**編集**] を選択します。
 4. 既存の支払い方法の横にある [**変更**] を選択します。
@@ -97,7 +106,7 @@ Microsoft からビジネス製品またはサービスを購入する場合は�
 5. 新しい支払い方法を追加するには、[**支払い方法の追加**] を選択します。
 6. 追加する支払い方法の種類を選択し、アカウント情報を入力してから [**保存**] を選択します。
 7. 新しい支払い方法は、ドロップダウンリストで既に選択されています。 [**次へ**] を選択します。
-8. **[削除]** を選択します。
+8. [**削除**] を選択します。
 
 ## <a name="troubleshoot-payment-methods"></a>支払い方法のトラブルシューティング
 

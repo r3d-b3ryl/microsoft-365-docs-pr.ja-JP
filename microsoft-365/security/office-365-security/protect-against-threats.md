@@ -17,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: この記事をガイドとして使用して、今すぐ脅威保護機能を構成します。
-ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: da920083b521e905633473efbabc5930ad7a6770
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598684"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895313"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
 
@@ -31,7 +31,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 > [!IMPORTANT]
 > **ポリシーの種類ごとに最初に推奨される設定が含まれています。ただし、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもでき**ます。 使用しているポリシーまたは変更がデータセンターによって処理されるまで約30分間待機します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -73,7 +73,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
     - [**一般的な添付ファイルの種類のフィルター** ] セクションで、 **[オン**] を選択します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 マルウェア対策ポリシーオプションの詳細については、「[マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
@@ -101,7 +101,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
    - [**適用先**] セクションで、[**受信者ドメイン**] を選択します。 次に、ドメインを選択し、[**追加**] を選択して、[ **OK]** をクリックします。
 
-5. [**保存**] をクリックします。
+5. **[保存]** をクリックします。
 
 6. (**推奨の追加手順**)グローバル管理者または SharePoint Online 管理者は、 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行して、Office 365 環境の**DisallowInfectedFileDownload**パラメーターを*true*に設定します。 (これにより、ユーザーが悪意を持って検出されたファイルを開く、移動、コピー、または共有できなくなります)。
 
@@ -135,7 +135,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
    - [**適用先**] セクションで、[**受信者ドメイン**] を選択します。 次に、ドメインを選択し、[**追加**] を選択して、[ **OK]** をクリックします。
 
-6. [**保存**] をクリックします。
+6. **[保存]** をクリックします。
 
 詳細については、「[Office 365 ATP の安全なリンク ポリシーを設定する](set-up-atp-safe-links-policies.md)」をご覧ください。
 
@@ -187,9 +187,9 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
    - [**許可するリスト**] セクションで、許可された送信者とドメインを確認し、必要に応じて編集します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
-スパム対策ポリシーオプションの詳細については、「[スパム対策](configure-the-anti-spam-policies.md)ポリシーを構成する」を参照してください。
+スパム対策ポリシーのオプションの詳細については、「 [Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
 ## <a name="part-5---additional-settings-to-configure"></a>パート 5-構成する追加の設定
 

@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
-ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081963"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895085"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
 
@@ -58,4 +58,4 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
     > [!NOTE]
     > 最大24時間かかる場合があります。制限が削除されるまでに、結果が大幅に異なる場合があります。
 
-[Office 365 で電子メールがスパムとしてマークされない](prevent-email-from-being-marked-as-spam.md )ようにする方法と、IP が blacklisted されないように[office 365 で送信スパムを制御](outbound-spam-controls.md)する方法についてお読みください。
+IP が blacklisted されないようにするには、「office 365 での[安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」および「[送信スパム365保護](outbound-spam-controls.md)」を参照してください。

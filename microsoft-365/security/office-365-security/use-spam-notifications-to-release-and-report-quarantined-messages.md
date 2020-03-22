@@ -18,12 +18,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 管理者がスパム対策ポリシーでエンドユーザーのスパム通知を有効にすると、メッセージの受信者は検疫済みメッセージに関する定期的な通知を受信します。
-ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 6cde4681d7ea3ef5795201e9a2816b7224ad36f6
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857147"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895061"
 ---
 # <a name="end-user-spam-notifications-in-office-365"></a>Office 365 でのエンドユーザースパム通知
 
@@ -32,7 +32,7 @@ ms.locfileid: "42857147"
 既定では、エンドユーザーのスパム通知はスパム対策ポリシーで無効になっています。 管理者が[エンドユーザーのスパム通知を有効](configure-your-spam-filter-policies.md)にした場合、メッセージの受信者は、スパム、バルクメール、または (4 月 2020) フィッシングとして検疫されたメッセージに関する定期的な通知を受信します。
 
 > [!NOTE]
-> 2019年10月に、検疫済みメッセージをエンドユーザーのスパム通知から直接解放する機能が削除されました。 その代わりに、ユーザーは Office 365 セキュリティ & コンプライアンスセンターに移動して、検疫済みメッセージを (直接、または通知で [**レビュー** ] をクリックすることで) 解放できるようになります。 詳細については、「 [Office 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。 <br/><br/> 高信頼フィッシング、マルウェア、またはメールフロールール (トランスポートルールとも呼ばれます) として検疫されたメッセージは、管理者のみが使用できます。 詳細については、「 [Office 365 の管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」を参照してください。
+> 2019年10月に、検疫済みメッセージをエンドユーザーのスパム通知から直接解放する機能が削除されました。 その代わりに、ユーザーは Office 365 セキュリティ & コンプライアンスセンターに移動して、検疫済みメッセージを (直接、または通知で [**レビュー** ] をクリックすることで) 解放できるようになります。 詳細については、「 [Office 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。 <br/><br/> 高信頼フィッシング、マルウェア、またはメールフロールール (トランスポートルールとも呼ばれます) として検疫されたメッセージは、管理者のみが使用できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理](manage-quarantined-messages-and-files.md)」を参照してください。
 
 エンドユーザーのスパム通知には、検疫済みメッセージごとに次の情報が含まれています。
 

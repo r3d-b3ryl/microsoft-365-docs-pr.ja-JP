@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633995"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895431"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -38,7 +38,7 @@ Microsoft セキュリティスコアは、組織のセキュリティに関す�
 
 さらに、 [Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)を通じて、推奨事項やスコアにアクセスできます。 [セキュリティで保護されたスコアリソースの種類](https://go.microsoft.com/fwlink/?linkid=2092996)について説明します。
 
-## <a name="how-it-works"></a>動作のしくみ
+## <a name="how-it-works"></a>メカニズム
 
 推奨されるセキュリティ機能を構成するためのポイント、セキュリティ関連タスクの実行 (レポートの表示など)、またはサードパーティ製のアプリケーションまたはソフトウェアを使用した改善アクションへの対応を行います。 一部の改善アクションでは、完全に完了した時点でポイントが提供されます。一部のデバイスまたはユーザーに対して完了した場合は、一部の機能を提供します。
 
@@ -108,7 +108,7 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 ランク付けは、残っている残りのポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいています。 最も順位の高い向上アクションには、低い問題点、ユーザーへの影響、および複雑さが残った大きなポイントがあります。
 
-### <a name="actions"></a>アクション
+### <a name="actions"></a>操作
 
 [採点なし] というラベルの付いたアクションは、Microsoft セキュリティスコアで追跡されません。 それでもアクションを実行することはできますが、スコアに影響を与えることはありません。 将来的に Microsoft セキュリティスコアによってアクションが追跡され、既に完了している場合は、その変更がセキュリティスコアに自動的に反映されます。
 
@@ -140,13 +140,41 @@ Microsoft のセキュリティに関する評価をより良いものにする�
 
 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-### <a name="removed-not-scored-improvement-actions"></a>"採点なし" の改善アクションを削除しました
+### <a name="march-2020"></a>2020 年 3 月
+
+#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Azure AD の改善アクションに関するセキュリティの既定群をサポートする
+
+Microsoft セキュア スコアは、[Azure AD のセキュリティの既定群](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)をサポートするように改善アクションを更新します。これにより、構成済みのセキュリティ設定を使用して、一般的な攻撃から組織を保護することが簡単にできるようになります。
+
+これは、次の改善アクションに影響します。
+
+- 安全なアクセスのため、すべてのユーザーが多要素認証を行えるようにする
+- 管理者の役割に MFA を要求する
+- レガシ認証をブロックするポリシーを有効にする
+
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>信頼性の高い測定要件を満たしていない改善アクションを削除したか、セキュリティに関する有益な表現を提供していません。
+
+Microsoft セキュリティ スコアが有意義であり、すべての改善アクションが測定可能かつ信頼性の高いものになるよう、次の改善アクションについては削除します。
+
+- OneDrive for Business でユーザー ドキュメントを保存する
+- Office 365 ATP の安全な添付ファイルに関するポリシーを設定する
+- Office 365 の安全なリンクをセットアップして URL を確認する
+- メールボックスの委任を許可しない
+- サイトとドキュメントの匿名ゲストの共有リンクを許可する
+- Cloud App Security コンソールを有効にする
+- 外部共有リンクの有効期限を構成する
+- 監査データの記録を有効にする
+- 危険かつ準拠していないシャドウ IT アプリケーションを検出する
+- 環境に接続されたリスクの高い OAuth アプリケーションをブロック & アクセス許可を確認する
+- SharePoint online ドキュメントライブラリのバージョン管理を設定する
+
+#### <a name="removed-not-scored-improvement-actions"></a>"採点なし" の改善アクションを削除しました
 
 セキュリティで保護されたスコアの原則の1つは、スコアが標準化され、関連性が簡単であるということです。 測定できない、または実用的でない改善アクションが発生すると、混乱が生じています。 Microsoft セキュリティスコアは、すべての推奨事項がスコアに明確な影響を与える場合にのみ意味を持ちます。 スコアの向上アクションは測定できません。  
 
 このような理由により、スコアされなかったすべての改善アクションが削除されました。 パーツに必要な操作はありません。
 
-### <a name="removed-device-improvement-actions"></a>デバイス向上アクションを削除しました
+#### <a name="removed-device-improvement-actions"></a>デバイス向上アクションを削除しました
 
 「Microsoft Secure Score devices」カテゴリの改善アクションを評価した後、これらのアクションは、デバイスの構成状態ではなく、現在ポリシーの状態を評価していると判断されました。 構成はセキュリティの姿勢に直接関連しているため、既存のデバイスアクションが組織の姿勢を完全には表示していないと判断されました。  診断データを直接使用してデバイスのセキュリティに関する姿勢をより完全に表現する一連の推奨事項を提供しているため、現在のアクションをデバイスカテゴリで削除します。
 
@@ -173,16 +201,7 @@ Microsoft のセキュリティに関する評価をより良いものにする�
 - すべてのデバイスに高度なセキュリティ構成を要求する
 - 毎週ブロックされたデバイスのレポートを確認する
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>信頼性の高い測定要件を満たしていない改善アクションを削除しました
-
-マイクロソフトのセキュリティスコアが意味があり、すべての改善アクションが測定可能で信頼性を備えていることを確認するため、次の改善アクションを削除しました。
-
-- 監査データの記録を有効にする
-- 危険かつ準拠していないシャドウ IT アプリケーションを検出する
-- 環境に接続されたリスクの高い OAuth アプリケーションをブロック & アクセス許可を確認する
-- SharePoint online ドキュメントライブラリのバージョン管理を設定する
-
-### <a name="mfa-improvement-action-updates"></a>MFA 向上アクションの更新
+#### <a name="mfa-improvement-action-updates"></a>MFA 向上アクションの更新
 
 ビジネスに適したポリシーを適用しているときに、最高レベルのセキュリティを確保するための企業の必要性を反映するために、Microsoft セキュリティスコアでは多要素認証を中心とした3つの改善アクションが削除され、2つ追加されました。
 
@@ -199,7 +218,7 @@ Microsoft のセキュリティに関する評価をより良いものにする�
 
  これらの新しい改善アクションでは、ユーザーまたは管理者による複数要素認証 (MFA) をディレクトリに登録し、組織のニーズに合ったポリシーの適切なセットを確立する必要があります。 主な目標は柔軟性にありますが、すべてのユーザーと管理者が複数の要因またはリスクベースの id 確認プロンプトで認証できるようにします。 これには、スコープ決定を適用する複数のポリシーを作成するか、または Microsoft が MFA のユーザーをチャレンジするタイミングを決定するセキュリティの既定値 (3 月16日) を設定するという形をとることができます。
 
-### <a name="removed-review-improvement-actions"></a>"レビュー" の改善アクションを削除しました
+#### <a name="removed-review-improvement-actions"></a>"レビュー" の改善アクションを削除しました
 
 セキュリティで保護されたスコアの原則の1つは、スコアが標準化され、関連性が簡単であるということです。 測定できない、または実用的でない改善アクションが発生すると、混乱が生じています。 1つの Microsoft セキュリティスコアは、すべての推奨事項がスコアに明確な影響を与える場合にのみ意味を持ちます。 改善アクションのレビューは、他の改善アクションと同じ基準として測定されるわけではありません。  
 

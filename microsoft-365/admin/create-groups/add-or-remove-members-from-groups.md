@@ -1,8 +1,7 @@
 ---
 title: Office 365 グループのメンバーを追加または削除する
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -21,25 +20,19 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Microsoft 365 管理センターで、グループにメンバーを追加したり、グループからメンバーを削除したり、グループ所有者の状態を管理したりする方法について説明します。
-ms.openlocfilehash: b2c6e33be368dc08893d27ef291bb801b784bb98
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241427"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894713"
 ---
 # <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>管理センターを使用して Office 365 グループのメンバーを追加および削除する
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。 
-
-::: moniker-end
-
 Office 365 では、グループメンバーは、通常、グループを作成し、参加するグループに自らを追加するか、グループ所有者に招待します。 グループの所有権が変更された場合、またはメンバーを追加または削除することを決定した場合は、管理者としてその変更を行うこともできます。 これらの変更を行うことができるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Office 365 グループとは](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
-  
- **ヒント**: 管理者でない場合は、 [Outlook を使用してメンバーを追加または削除](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)できます。 
+
+> [!TIP]
+> 管理者でない場合は、 [Outlook を使用してメンバーを追加または削除](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)できます。 
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>管理センターでグループにメンバーを追加する
 
@@ -89,7 +82,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。  
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
     
 2. ユーザーを選択します。
     
@@ -178,7 +171,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
 
 ::: moniker-end
 
-## <a name="manage-group-owner-status"></a>グループ所有者のステータスを管理する
+## <a name="manage-group-owner-status"></a>グループの所有者の状態を管理する
 
 既定では、グループを作成したユーザーが、グループの所有者になります。多くの場合、グループには、バックアップ サポートやその他の理由のために複数の所有者がいます。メンバーを所有者ステータスに昇格させたり、所有者をメンバー ステータスに降格させたりすることができます。
   

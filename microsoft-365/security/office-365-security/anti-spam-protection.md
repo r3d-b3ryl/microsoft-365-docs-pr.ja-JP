@@ -1,11 +1,11 @@
 ---
-title: Office 365 メールのスパム対策保護
+title: スパム対策保護
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,79 +16,99 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Office 365 で迷惑メールを過剰に取得する スパムフィルターとスパム対策ポリシー設定をカスタマイズできます。
-ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Office 365 で迷惑メールを過剰に取得する スパムフィルターとスパム対策の設定はカスタマイズできます。
+ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633835"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894072"
 ---
-# <a name="office-365-email-anti-spam-protection"></a>Office 365 メールのスパム対策保護
-
-Office 365 で懸念されるスパム数 Office 365 または Exchange Online Protection (EOP) サービスに複数のスパムフィルターを作成しています。そのため、最初のメッセージを受信した時点からメールを保護することができます。 Office 365 でスパムを防止するために、組織内の特定の問題に対処するために保護設定を変更する必要があります (たとえば、特定の送信者から多数のスパムを受信している場合など)。または、設定を微調整して、それらの情報が表示されるようにしてください。お客様の組織のニーズを満たすように調整します。 これを行うには、Office 365 セキュリティ&amp;コンプライアンスセンターでスパム対策設定を変更することができます。
-
-この記事は、Office 365 管理者を対象としています。 管理者ではなく、Office 365 ユーザーで、受信したスパムを処理する方法について知りたい場合は、お探しの記事に記載されている内容ではありません。 代わりに、Outlook for PC または Outlook for Mac を使用している場合は、[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)から始めます。 Outlook on the web を使用する場合は、まず「[迷惑メールとフィッシングについて](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)」を参照してください。
-
-## <a name="these-options-help-you-prevent-spam-in-office-365"></a>これらのオプションは、Office 365 でスパムを防止するのに役立ちます。
-
- **接続フィルター**: 接続フィルターを使用すると、Office 365 は、メッセージの受信を許可する前に、送信者の評価をチェックします。 許可リストまたは差出人セーフリストを作成して、特定の IP アドレスまたは IP アドレスの範囲から送信されたすべてのメッセージを受信するようにすることができます。 また、禁止一覧と呼ばれる、メッセージをブロックする IP アドレスの一覧を作成することもできます。 詳細については、「[接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)」を参照してください。 Office 365 でスパムを懸念している場合は、接続フィルターを使用してスパムを防止します。
-
-Office 365 Enterprise E5 を使用しているか、Advanced Threat Protection (ATP) ライセンスを購入しているお客様の場合、接続フィルターは、ドメインをスプーフィングしている送信者の許可と禁止の一覧を作成するために、スプーフィングインテリジェンスによって使用されます。 詳細については、「[スプーフィングインテリジェンスの詳細](learn-about-spoof-intelligence.md)」を参照してください。
-
- **スパムフィルター**: Office 365 は、スパムフィルタリングを使用して、スパムと一貫性のあるメッセージ特性をチェックします。 スパムとして識別されたメッセージに実行する処理を選択し、特定の言語で記述されたメッセージ、または特定の国や地域から送信されたメッセージをフィルターするかどうかを選択できます。 高度なスパム フィルター オプションを有効にして、スパム フィルターに対する積極的なアプローチを実行することもできます。 さらに、エンド ユーザーのスパム通知を構成すると、ユーザー宛てのメッセージが検疫に送信された場合にユーザーに通知が送信されます。 (検疫にメッセージを送信することは、構成可能なアクションの1つです。)これらの通知から、エンドユーザーは誤検知をリリースし、それらを分析のために Microsoft に報告することができます。 詳細については、「[スパム フィルター ポリシーを構成する](configure-your-spam-filter-policies.md)」 を参照してください。 Office 365 でスパムを防止するために、スパムフィルター処理を使用します。 Office 365 ではスパムの数が多くなりすぎる場合は、接続フィルターを使用してスパムの防止に役立ちます。
+# <a name="anti-spam-protection-in-office-365"></a>Office 365 でのスパム対策保護
 
 > [!NOTE]
-> EOP スタンドアロンのお客様の場合、既定では、EOP スパムフィルターはスパム検出メッセージを各受信者の迷惑メールフォルダーに送信します。 ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするには、EOP によって追加されたスパムヘッダーを検出するために、オンプレミスサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「[スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+> このトピックは、Office 365 管理者を対象としています。 エンドユーザーのトピックについては、「[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」と「[迷惑メールおよびフィッシングについ](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)て」を参照してください。
 
-## <a name="extra-information-if-you-receive-too-much-spam-in-office-365"></a>Office 365 で受信するスパムの数が多すぎる場合のその他の情報
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 顧客の場合、電子メールメッセージは EOP によってスパム (迷惑メール) から自動的に保護されます。
 
-次のビデオでは、EOP でスパムフィルターを構成する方法の概要を説明します。
+Microsoft のメールの安全性ロードマップには、他に例を見ない製品間のアプローチが含まれます。 EOP のスパム対策およびフィッシング対策テクノロジは、電子メールプラットフォーム全体に適用され、ユーザーに最新のスパム対策およびフィッシング対策ツールと、ネットワーク全体での技術革新を提供します。 EOP の目標は、包括的で使用可能なメール サービスを提供し、迷惑メール、詐欺目的のメールの脅威 (フィッシング)、マルウェアを検出し、それらからユーザーを保護することです。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
+メールの使用が増えるにつれ、メールの不正使用も増えました。 監視されていない迷惑メールによって、受信トレイとネットワークに余分な負荷が掛かり、ユーザー満足度に影響を及ぼし、正当なメール通信の効果が阻害されます。 これが Microsoft がスパム対策テクノロジへの投資を継続する理由です。 簡単に言えば、迷惑メールを格納して、フィルター処理することから始めます。
 
-詳細については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」トピックを参照してください。
+## <a name="anti-spam-technologies-in-eop"></a>EOP のスパム対策テクノロジ
 
-## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Office 365 で送信メッセージを確認してスパムを防ぐ
+迷惑メールを減らすために、EOP には、独自のスパムフィルタリングテクノロジを使用して正当な電子メールから迷惑メールを識別し、分離する迷惑メール保護が含まれています。 EOP スパムフィルターは、既知のスパムおよびフィッシングの脅威から、およびコンシューマープラットフォームの Outlook.com からのユーザーフィードバックを学習します。 迷惑メール分類プログラムの EOP ユーザーからの継続的なフィードバックにより、EOP テクノロジが絶えずトレーニングおよび改善されるようにしています。
 
- **送信フィルター**: Office 365 は、ユーザーがスパムを送信していないかどうかも確認します。 たとえば、ユーザーのコンピューターがスパムメッセージを送信するマルウェアに感染する可能性があるため、*送信フィルター*と呼ばれる保護を構築しています。 送信フィルターを無効にすることはできませんが、「[送信スパムポリシーを構成](configure-the-outbound-spam-policy.md)する」で説明されている設定を構成できます。 Office 365 で多くのスパムを懸念している場合は、送信フィルターを使用して Exchange Online でスパムを防止します。
+EOP のスパム対策設定は、次のテクノロジで構成されています。
 
-## <a name="beyond-the-basics-more-ways-to-prevent-spam-in-office-365"></a>基本的な機能: Office 365 でスパム対策を防ぐ方法
+- **接続フィルター**: 受信電子メールの送信元サーバーを、Ip 許可一覧、Ip 禁止一覧、および*セーフリスト*(Microsoft が管理する信頼できる差出人の動的で、編集不能な一覧) を介して早い段階で特定します。 これらの設定は、接続フィルターポリシーで構成します。 詳細について[は、「Configure connection filtering In Office 365」を](configure-the-connection-filter-policy.md)参照してください。
 
- **メールフロールール**: 組み込みのスパムフィルターを超えて、ビジネスポリシーに基づくカスタムルールを作成する場合、_[メールフロールール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)_(_トランスポートルール_とも呼ばれます) は、Office 365 でスパムを防止するのに役立つ別のフィルターです。 たとえば、メールフロールールを使用すると、「[メールフロールールを使用してメッセージにスパム信頼レベル (scl) を設定](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)する」の説明に従って、特定の条件に一致するメッセージに対してスパム信頼レベル (scl) の値を設定できます。
+  > [!NOTE]
+  > スプーフィングインテリジェンスは、接続フィルターを使用して、電子メールドメインをスプーフィングしている送信者の許可とブロックの一覧を作成します。 詳細については、「 [Office 365 のスプーフィングインテリジェンスの詳細](learn-about-spoof-intelligence.md)」を参照してください。
 
- **電子メール認証**ドメインネームシステム (DNS) を使用して、電子メールメッセージの送信者に関する検証可能な情報を電子メールメッセージに追加する手法を、電子メール認証と呼びます。 より高度な Office 365 管理者は、これらの電子メール認証方法を利用できます。
+- **スパムフィルター処理 (コンテンツフィルター)**: EOP は、スパムフィルター verdicts**スパム**、**信頼度の高いスパム**、**バルクメール**、**フィッシング電子**メール、および**信頼度の高いフィッシング電子メール**を使用してメッセージを分類します。 これらの verdicts に基づいて実行するアクションを構成することができ、配信される代わりに検疫されたメッセージのエンドユーザー通知オプションを構成できます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
-- **Sender Policy Framework (spf)**: spf は、送信側ドメインの申し立て所有者に対して送信者の IP アドレスを確認することによって、電子メールメッセージの送信元を検証します。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
+  > [!NOTE]
+  > 既定では、スパムフィルターは、受信者の迷惑メールフォルダーにスパムとしてマークされたメッセージを送信するように構成されています。 ただし、EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、メッセージに追加される EOP スパムヘッダーを認識するように、社内 Exchange 組織内の2つのメールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「 [Configure STANDALONE EOP to the Spam Email folder to the hybrid 環境」](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)を参照してください。
 
-- **Domainkeys で識別されたメール (dkim)**: dkim を使用すると、送信する電子メールのメッセージヘッダー内の電子メールメッセージにデジタル署名を添付することができます。 ドメインから電子メールを受信する電子メールシステムこのデジタル署名を使用して、受信した受信メールが正当であるかどうかを判断します。 DKIM と Office 365 の詳細については、「 [DKIM を使用して、office 365 のカスタムドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)」を参照してください。
+- **送信スパムフィルター**: EOP は、送信メッセージのコンテンツまたは送信メッセージの制限を超えて、ユーザーがスパムを送信しないようにすることも確認します。 詳細については、「 [Office 365 で送信スパムフィルターを構成する](configure-the-outbound-spam-policy.md)」を参照してください。
 
-- **ドメインベースのメッセージの認証、報告、および準拠 (DMARC)**: DMARC はメールシステムの受信をサポートします。 SPF または dkim チェックに失敗したメッセージの処理方法を決定し、電子メールパートナーに対して別のレベルの信頼を提供します。 DMARC のセットアップの詳細については、「 [USE DMARC to validate email In Office 365](use-dmarc-to-validate-email.md)」を参照してください。
+- **スプーフィングインテリジェンス**: 詳細については、「 [Office 365 のスプーフィングインテリジェンスの詳細](learn-about-spoof-intelligence.md)」を参照してください。
 
-Office 365 でスパム、フィッシング、およびスプーフィングについて懸念している場合は、SPF、DKIM、DMARC を一緒に使用して、スパムや不要なスプーフィングを防止します。
+## <a name="manage-errors-in-spam-filtering"></a>スパムフィルター処理でエラーを管理する
 
- **エンドユーザー**による管理の設定: エンドユーザーが自分のスパム設定を管理する方法については、「[迷惑メールフィルターの概要」](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (Microsoft Outlook ユーザーの場合) または「[迷惑メールとフィッシング](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)(web 上の outlook の場合)」を参照してください。 EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。
+適切なメッセージをスパム (誤検知とも呼ばれます) として識別したり、スパムを受信トレイに配信することができます。 次のセクションの推奨事項を使用して、発生したことを確認し、今後の事態を防ぐことができます。
 
-## <a name="for-more-information"></a>詳細情報
+次に、どちらのシナリオにも当てはまるベストプラクティスをいくつか示します。
 
-[ブログ: スパムとフィッシングが Office 365 によって取得されるのはなぜですか?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
+- 誤分類メッセージを常に Microsoft に送信します。 管理者は、[[送信エクスプローラー](admin-submission.md)] を使用できます。または、ユーザーは[レポートメッセージアドイン](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用してメッセージを報告できます。
 
-[スパム対策保護に関してよく寄せられる質問](anti-spam-protection-faq.md)
+- **スパム対策メッセージヘッダーを調べる**: これらの値は、メッセージがスパムとしてマークされた理由、またはスパムフィルター処理をスキップした理由を示します。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
-[セーフリストまたはその他の手法で誤検知の電子メールがスパムとしてマークされないようにする](prevent-email-from-being-marked-as-spam.md)
+- **MX レコードのポイント先を office 365 に**します。 EOP が最高の保護を提供するためには、まず office 365 に電子メールを配信することをお勧めします。 手順については、「[任意の dns ホスティングプロバイダーで Office 365 用の dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
 
-[迷惑メールをブロックするために Office 365 スパムフィルターを設定する方法](reduce-spam-email.md)
+  MX レコードが他の場所 (たとえば、サードパーティのスパム対策ソリューションまたはアプライアンス) を指している場合、EOP が正確なスパムフィルタリングを提供するのは困難です。 このシナリオでは、コネクタ (_スキップリスト_とも呼ばれます) の拡張フィルター処理を構成する必要があります。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
-[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)
+- **電子メール認証の使用**: 電子メールドメインを所有している場合は、そのドメイン内の送信者からのメッセージが正当であることを確認するために DNS を使用できます。 EOP でスパムや不要なスプーフィングを防止するために、次のすべての電子メール認証方法を使用します。
 
-[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)
+  - **SPF**: Sender Policy Framework は、送信側ドメインの所有者に対してメッセージの送信元 IP アドレスを確認します。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
 
-[バックスキャター メッセージと EOP](backscatter-messages-and-eop.md)
+  - **Dkim**: domainkeys が識別されたメールは、自分のドメインから送信されたメッセージのメッセージヘッダーにデジタル署名を追加します。 詳細については、「 [DKIM を使用して、Office 365 でカスタムドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)」を参照してください。
 
-## <a name="more-resources"></a>その他のリソース
+  - **DMARC**: ドメインベースのメッセージの認証、レポート、および準拠宛先メールシステムは、SPF または dkim チェックに失敗したメッセージに対する処理を決定し、電子メールパートナーに対して別のレベルの信頼を提供します。 詳細については、「 [USE DMARC to validate email In Office 365](use-dmarc-to-validate-email.md)」を参照してください。
 
-[Office 365 コミュニティ フォーラムで情報を入手](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- **バルクメール設定の確認**: スパム対策ポリシーで構成する一括準拠レベル (BCL) しきい値は、バルクメール (_灰色のメール_とも呼ばれる) がスパムとしてマークされているかどうかを決定します。 既定でオンになっている_MarkAsSpamBulkMail_の PowerShell のみの設定は、結果にも影響します。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
-[管理者向け: サインインとサービス リクエストの作成](https://portal.office.com/AdminPortal/Home?ref=support)
+### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>受信トレイへのスパムの配信を禁止する
 
-[AContact support for business products-管理者向けヘルプ](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)
+- **組織の設定を確認**します。メッセージがスパムフィルターをスキップできるようにする設定 (たとえば、スパム対策ポリシーの [許可されたドメイン] の一覧に独自のドメインを追加する場合など) に注目してください。 推奨される設定については、「 [office 365 で](create-safe-sender-lists-in-office-365.md)[の EOP と OFFICE 365 の ATP セキュリティの推奨設定](recommended-settings-for-eop-and-office365-atp.md)」および「安全な送信者のリストの作成」を参照してください。
+
+- **ユーザーのメールボックスで迷惑メールルールが有効になっていることを確認し**ます。既定では有効になっていますが、迷惑メールとしてマークされているメッセージが [迷惑メール] フォルダーに移動できない場合。 詳細については、「 [Office 365 の Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+
+- **利用可能な受信拒否リストを使用する**: 詳細については、「 [Office 365 でブロックされる送信者リストを作成](create-block-sender-lists-in-office-365.md)する」を参照してください。
+
+- **バルクメールからの登録解除**ユーザーがサインアップしたもの (ニュースレター、製品アナウンスなど) についてのメッセージで、よく知られたソースからの登録解除リンクが含まれている場合は、購読を中止するように依頼することを検討してください。
+
+- **スタンドアロン EOP: EOP スパムフィルタリング verdicts のオンプレミスの exchange でのメールフロールールの作成**: EOP がオンプレミスの exchange メールボックスを保護するために、オンプレミス exchange のメールフロールール (トランスポートルールとも呼ばれる) を構成して、迷惑メールルールがメッセージを迷惑メールフォルダーに移動できるようにする必要があります。 詳細については、「 [Configure STANDALONE EOP to the Spam Email folder to the hybrid 環境」](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)を参照してください。
+
+### <a name="prevent-good-email-from-being-identified-as-spam"></a>適切な電子メールがスパムと識別されないようにする
+
+誤検知を防止するために、次の手順を実行することができます。
+
+- **ユーザーの Outlook 迷惑メールフィルターの設定を確認**します。
+
+  - **Outlook 迷惑メールフィルターが無効になっていることを確認**する: Outlook の迷惑メールフィルターが既定値の [**自動フィルター処理なし**] に設定されている場合、outlook は massages をスパムとして分類しようとしません。  Outlook の迷惑メールフィルターでは、**低**または**高**に設定されている場合、迷惑メールフォルダーにスパムを識別して移動するための独自の SmartScreen フィルターテクノロジを使用しているため、誤検知を受けることができます。 Microsoft は、Exchange および Outlook 11 月2016日に、SmartScreen フィルターのスパム定義の更新プログラムの生成を停止しました。 既存の SmartScreen スパム定義は残されていましたが、その有効性は時間とともに低下する可能性があります。
+
+  - [ **Outlook のセーフリストのみ] 設定が無効になっていることを確認し**ます。この設定を有効にすると、ユーザーの差出人セーフリストまたは宛先セーフリストに含まれる送信者からのメッセージのみが受信トレイに配信されます。他のすべてのユーザーからのメールは、自動的に [迷惑メール] フォルダーに移動されます。
+
+  これらの設定の詳細については、「 [Configure 迷惑メール設定を Exchange Online メールボックスの Office 365 で構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+
+- **利用可能な差出人セーフリストを使用**します。詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
+
+- 「Exchange Online サービスの説明」の「[受信および送信の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)」で説明されているように **、ユーザーが送信と受信の制限内にあることを確認**します。
+
+- **スタンドアロン EOP: ディレクトリ同期を使用**する: スタンドアロン EOP を使用してオンプレミスの Exchange 組織を保護する場合は、ディレクトリ同期を使用してユーザー設定をサービスと同期させる必要があります。 こうすることで、ユーザーの信頼できる差出人のリストが EOP に適用されます。 詳しくは、「[ディレクトリ同期を使用してメール ユーザーを管理する](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)」 を参照してください。
+
+## <a name="anti-spam-legislation"></a>スパム対策法
+
+Microsoft では、新しいテクノロジと自主規制の開発には効果的な政府の政策と法的枠組みによるサポートが必要であると考えています。 迷惑メールが世界中にまん延するにつれ、商用メールを規制する動きが多くの立法機関で活発化してきました。 現在、多くの国でスパム対策法が適用されています。 米国では、迷惑メールに対応した連邦法と州法が制定されており、この補完的なアプローチによって迷惑メールを減少させ、正規の電子商取引を促進しています。 CAN-SPAM 法では、詐欺メールや偽装メールを阻止するためのさまざまなツールが提供されています。

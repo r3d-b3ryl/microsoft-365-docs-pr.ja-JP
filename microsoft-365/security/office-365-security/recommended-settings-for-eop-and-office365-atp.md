@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632945"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895229"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "42632945"
 セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP と Office 365 ATP には、**標準**と**Strict**の2つのセキュリティレベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのメールフィルター構成は、ほとんどの状況で、不要なメールが従業員の受信トレイに届くことを防ぐために役立ちます。
 
 > [!IMPORTANT]
-> フィルター処理を正常に機能させるには、メールボックスで迷惑メールの構成を有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合はオンにしてください。 詳細については[、「set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) 」を参照してください。 
+> フィルター処理を正しく動作させるには、メールボックスで迷惑メールルールを有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合は、それをチェックする必要があります。 詳細については、「 [Office 365 の Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
 このトピックでは、Office 365 ユーザーを保護するために Microsoft が推奨する設定について説明します。
 
@@ -43,64 +43,80 @@ ms.locfileid: "42632945"
 
 ### <a name="eop-anti-spam-policy-settings"></a>EOP スパム対策ポリシーの設定
 
-|セキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|スパム検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|信頼度の高いスパム検出アクション|検疫メッセージ|検疫メッセージ||
-|フィッシング電子メールの検出アクション|検疫メッセージ|検疫メッセージ||
-|高信頼フィッシング電子メール検出アクション|検疫メッセージ|検疫メッセージ||
-|電子メールの一括検出アクション|迷惑メールフォルダーにメッセージを移動する|検疫メッセージ||
-|バルクメールしきい値をに設定する|6 |4 |現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照してください。|
-|検疫の保存期間|30 日間|30 日間||
-|安全性に関するヒント|オン|オン||
-|許可された送信者|なし|なし||
-|許可される送信者ドメイン|なし|なし|自分が所有する (_承認済みドメイン_とも呼ばれる) ドメインを許可された送信者の一覧に追加する必要はありません。 実際には、悪意のある俳優が、フィルターによって除外されるメールを送信するような機会を作成するため、高いリスクと見なされます。[**スパム対策設定**] ページの [セキュリティ & コンプライアンスセンター] で[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。|
-|受信拒否リスト|なし|なし||
-|受信拒否ドメイン|なし|なし||
-|エンドユーザーのスパム通知の頻度|有効|有効|3 日間|
-|ゼロ時間自動削除|オン|オン|スパムとフィッシング ZAP の両方|
-|MarkAsSpamBulkMail|オン|オン|この設定は、PowerShell でのみ使用できます。|
+スパム対策ポリシーを作成して構成するには、「 [Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
-推奨されていない高度なスパムフィルター (ASF) と呼ばれるスパム対策ポリシーには、他にもいくつかのパラメーターがあります。 これらの機能の減価償却のタイムラインの詳細については、このトピックの外に連絡します。
+|||||
+|---|---|---|---|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**Comment**|
+|**スパム**検出アクション <br/><br/> _SpamAction_|**迷惑メールフォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`||
+|**信頼度の高いスパム**検出アクション <br/><br/> _HighConfidenceSpamAction_|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
+|**フィッシング電子メール**の検出アクション <br/><br/> _PhishSpamAction_|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
+|**高信頼フィッシング電子メール**検出アクション <br/><br/> _HighConfidencePhishAction_|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
+|**電子メールの一括**検出アクション <br/><br/> _BulkSpamAction_|**迷惑メールフォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`||
+|バルクメールのしきい値 <br/><br/> _BulkThreshold_|6 |4 |現在、既定値は7ですが、これは6に変更することをお勧めします。 詳細については、「 [Office 365 のバルク苦情レベル (BCL)](bulk-complaint-level-values.md)」を参照してください。|
+|検疫の保存期間 <br/><br/> _QuarantineRetentionPeriod_|30 日間|30 日間||
+|**安全性に関するヒント** <br/><br/> _InlineSafetyTipsEnabled_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|許可された送信者 <br/><br/> _AllowedSenders_|なし|なし||
+|許可される送信者ドメイン <br/><br/> _AllowedSenderDomains_|なし|なし|自分が所有する (_承認済みドメイン_とも呼ばれる) ドメインを許可された送信者の一覧に追加する必要はありません。 実際には、悪意のある俳優が、フィルターによって除外されるメールを送信するような機会を作成するため、高いリスクと見なされます。[**スパム対策設定**] ページの [セキュリティ & コンプライアンスセンター] で[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。|
+|受信拒否リスト <br/><br/> _BlockedSenders_|なし|なし||
+|受信拒否された送信者ドメイン <br/><br/> _BlockedSenderDomains_|なし|なし||
+|**[エンド ユーザーのスパム通知を有効にする]**  このポリシーでエンド ユーザーのスパム通知を有効にするには、このチェック ボックスをオンにします。 <br/><br/> _EnableEndUserSpamNotifications_|有効 <br/><br/> `$true`|有効 <br/><br/> `$true`||
+|**エンドユーザーのスパム通知を毎日送信する (日数)** <br/><br/> _EndUserSpamNotificationFrequency_|3 日間|3 日間||
+|**スパム ZAP** <br/><br/> _SpamZapEnabled_|有効 <br/><br/> `$true`|有効 <br/><br/> `$true`||
+|**フィッシング ZAP** <br/><br/> _PhishZapEnabled_|有効 <br/><br/> `$true`|有効 <br/><br/> `$true`||
+|_MarkAsSpamBulkMail_|オン|オン|この設定は、PowerShell でのみ使用できます。|
+|
 
-標準レベルと厳密なレベルの両方で、これらの設定を**無効**にすることをお勧めします。
+使用されなくなっているスパム対策ポリシーには、他にもいくつかの高度なスパムフィルター (ASF) 設定があります。 これらの機能の減価償却のタイムラインの詳細については、このトピックの外に連絡します。
 
-|セキュリティ機能の名前|コメント|
-|---------|---------|
-|IncreaseScoreWithImageLinks||
-|IncreaseScoreWithNumericIps||
-|IncreaseScoreWithRedirectToOtherPort||
-|IncreaseScoreWithBizOrInfoUrls||
-|MarkAsSpamEmptyMessages||
-|MarkAsSpamJavaScriptInHtml||
-|MarkAsSpamFramesInHtml||
-|MarkAsSpamObjectTagsInHtml||
-|MarkAsSpamEmbedTagsInHtml||
-|MarkAsSpamFormTagsInHtml||
-|MarkAsSpamWebBugsInHtml||
-|MarkAsSpamSensitiveWordList||
-|MarkAsSpamFromAddressAuthFail||
-|MarkAsSpamNdrBackscatter||
-|MarkAsSpamSpfRecordHardFail||
+**標準**レベルと**厳密**なレベルの両方で、これらの ASF 設定を**オフ**にすることをお勧めします。 ASF 設定の詳細については、「 [Office 365 の高度なスパムフィルター (ASF) 設定](advanced-spam-filtering-asf-options.md)」を参照してください。
 
-#### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 送信スパムフィルターポリシーの設定
+|||
+|----|---|
+|**セキュリティ機能の名前**|**コメント**|
+|**リモートサイトへの画像リンク**(_IncreaseScoreWithImageLinks_)||
+|**URL の数値の IP アドレス**(_IncreaseScoreWithNumericIps_)||
+|**UL リダイレクト (その他のポート**) (_IncreaseScoreWithRedirectToOtherPort_)||
+|**.Url または info web サイトへの URL** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**空のメッセージ**(_MarkAsSpamEmptyMessages_)||
+|**HTML の JavaScript または VBScript** (_MarkAsSpamJavaScriptInHtml_)||
+|**HTML の Frame または IFrame タグ**(_MarkAsSpamFramesInHtml_)||
+|**HTML のオブジェクトタグ**(_MarkAsSpamObjectTagsInHtml_)||
+|**HTML にタグを埋め込む**(_MarkAsSpamEmbedTagsInHtml_)||
+|**HTML の Form タグ**(_MarkAsSpamFormTagsInHtml_)||
+|**HTML での Web バグ**(_MarkAsSpamWebBugsInHtml_)||
+|**機密単語リストを適用**する (_MarkAsSpamSensitiveWordList_)||
+|**SPF レコード: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
+|**条件付き送信者 ID フィルター: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
+|**NDR バック散布**(_MarkAsSpamNdrBackscatter_)||
+|
 
-|セキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|送信スパムポリシーの受信者の制限-外部時間の制限|500|400||
-|送信スパムポリシーの受信者の制限-内部時間の制限|1000|800||
-|送信スパムポリシー受信者の制限-毎日の制限|1000|800||
-|ユーザーが制限を超えた場合のアクション|ユーザーがメールを送信するのを制限する|ユーザーがメールを送信するのを制限する||
+#### <a name="eop-outbound-spam-policy-settings"></a>EOP 送信スパムポリシーの設定
+
+送信スパムポリシーを作成して構成するには、「 [Office 365 で送信スパムフィルターを構成](configure-the-outbound-spam-policy.md)する」を参照してください。
+
+||||
+|---|---|---|---|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**Comment**|
+|**ユーザーあたりの最大受信者数: 外部時間の制限** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**ユーザーあたりの最大受信者数: 内部時間の制限** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**ユーザーあたりの最大受信者数: 毎日の制限** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**ユーザーが制限を超えた場合のアクション** <br/><br/> _ActionWhenThresholdReached_|**ユーザーがメールを送信するのを制限する** <br/><br/> `BlockUser`|**ユーザーがメールを送信するのを制限する** <br/><br/> `BlockUser`||
+|
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP マルウェア対策ポリシー設定
 
-|セキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|マルウェア検出応答|いいえ|いいえ|マルウェアが電子メールの添付ファイルで検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
-|不審なファイルの種類をブロックするための "一般的な添付ファイルの種類のフィルター"|オン|オン||
-|マルウェアのゼロ時間の自動削除|オン|オン||
-|配信されていないメッセージの内部送信者に通知する|無効|無効||
-|配信されていないメッセージの外部送信者に通知する|無効|無効||
+マルウェア対策ポリシーを作成して構成するには、「 [configure マルウェア対策ポリシーを Office 365 で構成](configure-anti-malware-policies.md)する」を参照してください。
+
+|||||
+|---|---|---|---|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**Comment**|
+|**受信者にメッセージが検疫されたことを通知するかどうか。** <br/><br/> _操作_|いいえ <br/><br/> _DeleteMessage_|いいえ <br/><br/> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
+|**一般的な添付ファイルの種類のフィルター** <br/><br/> _EnableFileFilter_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|この設定では、添付ファイルの内容に関係なく、実行可能な添付ファイルが含まれているファイルの種類に基づいてメッセージを検疫します。|
+|**マルウェアのゼロ時間の自動削除** <br/><br/> _ZapEnabled_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|配信されていないメッセージの**内部送信者に通知**する <br/><br/> _EnableInternalSenderNotifications_|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`||
+|配信されていないメッセージの**外部送信者に通知**する <br/><br/> _EnableExternalSenderNotifications_|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`||
+|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP フィッシング対策ポリシー設定
 

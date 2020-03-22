@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b715cd2dcbc41e2aa5a4ae829677dfe250394346
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235136"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894266"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft Threat Protection データのセキュリティとプライバシー
 
@@ -33,12 +33,9 @@ ms.locfileid: "42235136"
 
 
 
-Microsoft Threat Protection プレビューを使用すると、次の条件に同意したことになります。
+Microsoft の脅威保護を使用して、次の条項に同意します。
 
-該当する顧客データ (オンライン サービスの使用条件 (「OST」) と定義されている) は、他の Microsoft サービスから Microsoft Threat Protection に転送され、Microsoft Threat Protection から該当する Microsoft サービスに転送されます。 このプレビューの期間中、Microsoft Threat Protection での顧客データの使用は、Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) のデータ処理標準とコミットメントに従います。 お客様は、このような取り組みが、顧客データの転送元のサービスと異なる場合があることを確認します。 さらに、Microsoft Threat Protection に保存された顧客データは、Microsoft Defender ATP の顧客データの保存用に選択した地域に保存されます。これは、他のサービスに関連して選択した地域とは異なる場合があります。 Microsoft は、[Microsoft トラスト センター](https://www.microsoft.com/trust-center)にあるMicrosoft トラスト センターの「データの場所」セクションに記載されている場合を除き、地域外に顧客データを転送しません。
-
-さらに、どのユーザーが Microsoft Threat Protection にアクセスできるかを決定する間、Microsoft Threat Protection は現在、役割ベースのアクセス制御 (「RBAC」) を許可していません。 お客様は、Microsoft Threat Protection が RBAC をサポートする Microsoft サービスからデータを受信する限り、そのサービスのアクセス レベルは Microsoft Threat Protection には適用されないことを確認します。
-
+Microsoft の脅威保護 (MTP) を有効にすると、次の条件に同意したことになります。 オンラインサービス利用規約 (OST) で定義されている該当する顧客データは、他の Microsoft サービスから MTP に転送されます。 MTP で顧客データを使用することにより、Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) のデータ処理の標準とコミットメントが適用されます。 お客様は、このような取り組みが、顧客データの転送元のサービスと異なる場合があることを確認します。 さらに、MTP に格納された顧客データは、MDATP 顧客データのストレージとして選択した Geo に保存されます。これは、他のサービスとの接続で選択した Geo とは異なる場合があります。 Microsoft の[セキュリティセンター](https://www.microsoft.com/trust-center)の [データの場所] セクションに記載されている場合を除き、microsoft は、このような地域外にお客様のデータを転送しません。
 
 特定の製品のデータ ストレージとプライバシーの詳細については、以下を参照してください。
 - [Microsoft Defender ATP のデーター ストレージとプライバシー](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

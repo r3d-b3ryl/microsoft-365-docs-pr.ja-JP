@@ -1,8 +1,7 @@
 ---
 title: Office 365 グループの有効期限ポリシー
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -19,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Office 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352588"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894517"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 グループの有効期限ポリシー
 
 Office 365 グループの使用率が向上したことで、管理者とユーザーは、未使用のグループをクリーンアップする方法が必要になります。 有効期限ポリシーは、非アクティブなグループをシステムから削除して、クリーナーを作成するのに役立ちます。
 
-グループの有効期限が切れると、関連付けられているすべてのサービス (メールボックス、プランナー、SharePoint サイトなど) も削除されます。
+グループの有効期限が切れると、関連付けられているすべてのサービス (メールボックス、プランナー、SharePoint サイト、チームなど) も削除されます。
 
 グループの有効期限が切れた場合、"削除済み" となることを意味します。これは、最大30日間復旧できます。
 
@@ -44,7 +43,7 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 > [!IMPORTANT]
 > 有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
 
-既定では、有効期限はオフになっていることに注意してください。 この機能を使用する場合は、管理者がテナントに対して有効にする必要があります。
+既定では、有効期限はオフになっていることに注意してください。 管理者は、組織で使用する必要がある場合に、そのユーザーを有効にする必要があります。
 
 > [!NOTE]
 > Office 365 グループの有効期限ポリシーを構成して使用するには、その有効期限ポリシーが適用されているすべてのグループのメンバーに対して、必ずしも Azure AD Premium ライセンスを割り当てる必要はありません。 詳細については、「 [Azure Active Directory Premium の](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)概要」を参照してください。
@@ -62,7 +61,7 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 
 グループの有効期間は日単位で指定し、180、365、または指定したカスタム値に設定できます。 カスタム値は、少なくとも30日である必要があります。
 
-グループに所有者がいない場合は、指定された管理者に有効期限のメールが送られます。
+グループに所有者がいない場合、有効期限メールは指定された管理者に送られます。
 
 すべてのグループに対してポリシーを設定するか、選択したグループのみを設定するか、または **[なし**] を選択して完全にオフにすることができます。 現在、グループごとに異なるポリシーを設定することはできません。
 

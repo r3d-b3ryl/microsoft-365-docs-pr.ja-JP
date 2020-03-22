@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: EOP および Office 365 スパムフィルターによってフィルター処理された電子メールメッセージの安全のヒントを紹介します。
-ms.openlocfilehash: 1fddb38be711a9d43e85adea34fe14eb9e7a85ef
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082344"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895193"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 でのメール メッセージの安全性に関するヒント
 
@@ -58,11 +58,6 @@ Exchange Online Protection (EOP) と Office 365 は、スパム、フィッシ�
 
 ## <a name="working-with-safety-tips"></a>安全に関するヒントの使用
 
-セキュリティヒントは、すべてのメッセージが受信するわけではありませんが、Outlook on the web では常に有効になります。 Office 365 管理者は、Outlook などの他の電子メールクライアントに対して安全のヒントを無効にすることができます。 詳細については、「 [Office 365 の安全なヒントを有効または無効](enable-or-disable-safety-tips.md)にする」を参照してください。
+セキュリティヒントは、すべてのメッセージが受信するわけではありませんが、Outlook on the web では常に有効になります。 Office 365 管理者は、Outlook などの他の電子メールクライアントに対して安全のヒントを無効にすることができます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
 Office 365 と EOP がどのようにメッセージに分類されているか (つまり、スパムではないか、または正当でないか) に同意しない場合は、分析のためにメッセージを送信して、快適な操作を行うことができます。 詳細については、「 [Outlook on the web で迷惑メールとフィッシング詐欺を報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)」を参照してください。 また、安全性ヒントの [フィードバック] リンクをクリックして、ご意見を Microsoft に直接送信し、改善を支援することもできます。
-
-## <a name="see-also"></a>関連項目
-
-[Office 365 で安全性のヒントを有効または無効にする](enable-or-disable-safety-tips.md)
-

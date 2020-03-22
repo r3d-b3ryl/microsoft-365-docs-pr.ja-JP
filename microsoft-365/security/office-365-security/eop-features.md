@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
-ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 857c2c4dd62f036cda78cd9fee61e2ce464d35cc
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857347"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893708"
 ---
 # <a name="eop-features"></a>EOP の機能
 
@@ -30,23 +30,23 @@ ms.locfileid: "42857347"
 |:-----|:-----|
 |**機能**|**説明**|
 |**スパム対策保護**||
-|受信スパム検出|受信スパム対策保護機能は常に有効であり、無効にすることはできません。接続フィルターやコンテンツ フィルター ポリシーを使用して、カスタムの設定を構成できます。  <br/><br/> EOP スタンドアロンのお客様の場合、既定では、EOP コンテンツフィルターはスパム検出メッセージを各受信者の迷惑メールフォルダーに送信します。 ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするために、EOP によって追加されたスパムヘッダーを検出するために、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「[スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。|
+|受信スパム検出|受信スパム対策保護機能は常に有効であり、無効にすることはできません。接続フィルターやコンテンツ フィルター ポリシーを使用して、カスタムの設定を構成できます。  <br/><br/> EOP スタンドアロンのお客様の場合、既定では、EOP コンテンツフィルターはスパム検出メッセージを各受信者の迷惑メールフォルダーに送信します。 ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするために、EOP によって追加されたスパムヘッダーを検出するために、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「 [Configure STANDALONE EOP to the Spam Email folder to the hybrid 環境」](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)を参照してください。|
 |送信スパム検出|送信電子メールを送信するサービスを使用している場合は送信スパム対策保護機能が常時有効になっているため、このサービスを利用している組織と対象受信者は保護されます。 送信スパム フィルターは、受信フィルターと同様、接続フィルターとコンテンツ フィルターで構成されています。 送信スパム フィルターの設定は構成できませんが、疑わしい送信メッセージとブロックされた送信メッセージを管理者に通知するよう構成するために使用する送信スパム ポリシーの設定が存在します。 詳細については、「 [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)」を参照してください。|
-|NDR バックスキャター保護|Ndr バック散布の詳細については、「 [Advanced spam filtering options](advanced-spam-filtering-asf-options.md) 」および「[バックスキャター messages and EOP](backscatter-messages-and-eop.md)」の「ndr バックスキャター」設定を参照してください。|
+|NDR バックスキャター保護|Ndr バック散布の詳細については、「 [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md) 」および「[バックスキャター messages and EOP](backscatter-messages-and-eop.md)」の「ndr バックスキャター」設定を参照してください。|
 |バルク メール フィルタリング|EOP にはバルク メール メッセージを識別するための強力な検出方法があります。 ユーザー インターフェイス経由でバルク メール メッセージをマークするようにサービスを構成できます。 メールフロールールを作成して、バルクメールメッセージヘッダースタンプを検索することによって、より積極的にバルクメールをフィルター処理することもできます。 バルクメールの詳細については、「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」および関連するサブトピックを参照してください。|
 |悪意のある URL 禁止リスト|EOP では、メッセージ内の既知の悪意のあるリンクを検出するため、いくつかの URL 禁止リストを使用しています。|
 |フィッシング対策保護|EOP には既知のスパム発信者 750,000 名のドメインが含まれています。|
 |**スパム管理**||
 |接続フィルター「IP 許可一覧」および「IP 禁止一覧」構成機能|この接続フィルターで指定する IP アドレスは、単一の IP アドレスと CIDR IP アドレス範囲で記述できます。 このサービスは IPv6 アドレスもサポートしています。 詳細については、「[接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)」を参照してください。|
-|ユーザー、グループ、またはドメインごとにコンテンツ フィルター ポリシーをカスタマイズする機能|よりきめ細かく制御する場合は、カスタム コンテンツ フィルター ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「[スパム フィルター ポリシーを構成する](configure-your-spam-filter-policies.md)」 を参照してください。|
-|コンテンツによりフィルター処理されたメッセージに対するアクションを構成する機能|複数の構成可能なアクションがあります。 たとえば、コンテンツによりフィルターされたメッセージを削除したり、[迷惑メール] フォルダーまたは検疫にそれらのメッセージを送信したりできます。 詳細については、「[スパム フィルター ポリシーを構成する](configure-your-spam-filter-policies.md)」 を参照してください。|
-|スパム メールを積極的にフィルター処理する拡張オプションの構成機能|詳細については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」および「 [Advanced spam filtering options](advanced-spam-filtering-asf-options.md) (各オプションの機能に関する具体的な詳細情報を提供します)」を参照してください。|
-|国際スパム フィルタリング|EOP を構成して、特定の言語で書かれたメッセージまたは特定の国や地域から送信されたメッセージをフィルターできます。 最大 86 言語、250 地域を構成できます。 サービスが信頼度の高いスパムに対して構成されたアクションを適用します。 詳細については、「[スパム フィルター ポリシーを構成する](configure-your-spam-filter-policies.md)」 を参照してください。|
-|Outlook または web 上の Outlook (旧称 Outlook Web App) を使用してスパムを管理する|管理者およびエンド ユーザーは、安全な送信者の一覧および受信拒否送信者の一覧を作成できます。 詳細情報: <br/>• **Web 上の Outlook**: [[ブロックまたは許可 (迷惑メール設定)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)] を参照してください。  <br/>• **Outlook**: 「[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。 <br/><br/> EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。|
+|ユーザー、グループ、またはドメインごとにコンテンツ フィルター ポリシーをカスタマイズする機能|よりきめ細かく制御する場合は、カスタム コンテンツ フィルター ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。|
+|コンテンツによりフィルター処理されたメッセージに対するアクションを構成する機能|複数の構成可能なアクションがあります。 たとえば、コンテンツによりフィルターされたメッセージを削除したり、[迷惑メール] フォルダーまたは検疫にそれらのメッセージを送信したりできます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。|
+|スパム メールを積極的にフィルター処理する拡張オプションの構成機能|詳細については、「 [office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する (構成場所)」および「 [Office 365 の高度なスパムフィルター (ASF) 設定](advanced-spam-filtering-asf-options.md)(各オプションの機能に関する具体的な詳細情報を提供します)」を参照してください。|
+|国際スパム フィルタリング|EOP を構成して、特定の言語で書かれたメッセージまたは特定の国や地域から送信されたメッセージをフィルターできます。 最大 86 言語、250 地域を構成できます。 サービスが信頼度の高いスパムに対して構成されたアクションを適用します。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。|
+|Outlook または web 上の Outlook (旧称 Outlook Web App) を使用してスパムを管理する|管理者およびエンド ユーザーは、安全な送信者の一覧および受信拒否送信者の一覧を作成できます。 詳細情報: <br/>* **Web 上の Outlook**:[ブロックまたは許可 (迷惑メール設定)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)を参照してください。  <br/>* **Outlook**: 「[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。 <br/><br/> EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。|
 |Microsoft Office Outlook の迷惑メール報告アドイン経由のスパム報告|解析用に Microsoft にスパム メッセージを報告するためのアドインを Outlook にダウンロードできます。 このツールのダウンロードと使用の詳細については、「[レポートメッセージアドインを有効にする](enable-the-report-message-add-in.md)」を参照してください。 <br/><br/> EOP を使用して Exchange Server 2013 以降を使用している場合は、「 [web 上の outlook で迷惑メールとフィッシング詐欺を報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)する」に記載されているように、web 上の outlook で右クリックしてスパムメッセージを送信することもできます。|
 |電子メール エイリアスを使用したスパムおよび非スパムの報告|スパム (迷惑メール) メッセージと非スパム (非迷惑メール) メッセージを電子メール経由で Microsoft に報告できます。 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。|
 |Outlook on the web を使用したスパムおよび非スパムの送信迷惑メールの報告|迷惑メール報告の Outlook を使用して、スパムメッセージと非スパムメッセージを Microsoft に送信することができます。 詳細については、「 [Outlook on the web で迷惑メールとフィッシング詐欺を報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)」を参照してください。  <br/><br/> 現在、この機能は、Exchange Server 2013 SP1 以降のメールボックスが EOP によってフィルター処理されている web 上の Outlook で使用できます。 Web 上の Exchange Online Outlook のお客様は、近い将来にこの機能を利用できます。|
-|エンドユーザー スパム検疫通知|エンド ユーザーは、各自のスパム検疫メッセージを解放し、オプションとして、エンドユーザーのスパム通知メッセージを介して迷惑メールではないメールとして報告できます。 このような通知メールは、管理者によって構成および有効化される必要があります。詳細については、「 [Exchange Online でのエンドユーザースパム通知の構成](configure-end-user-spam-notifications-in-exchange-online.md)」または「 [EOP でのエンドユーザースパム通知の構成](configure-end-user-spam-notifications-in-eop.md)」を参照してください。|
+|エンドユーザー スパム検疫通知|Mor は情報については、「 [Office 365 でのエンドユーザースパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。|
 |エンドユーザー スパム検疫通知頻度|この頻度は、既定では 3 日であり、1 ～ 15 日の範囲で構成できます。|
 |エンドユーザー スパム検疫通知の言語の構成機能 (管理者向け)|これは、エンドユーザーおよび管理者が使用できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理」](manage-quarantined-messages-and-files.md)または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
 |検疫内のメッセージへの Web ページ経由のアクセスと管理|これは、エンドユーザーおよび管理者が使用できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理」](manage-quarantined-messages-and-files.md)または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|

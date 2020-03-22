@@ -16,12 +16,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: お客様が迷惑メールとバルクメールメッセージの違いを askwhat ことがありますか。このトピックの目的は、Exchange Online と Exchange Online Protection (EOP) の両方で使用可能なさまざまなオプションについて説明し、その違いを説明することです。
-ms.openlocfilehash: a427fd7a37ec4a5b9828a0f78a32d6e5fd54d69b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 55924ac5e83ca109fd66d1723cdb7c5f43f20df6
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597984"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895037"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>迷惑メールとバルク メールの違い
 
@@ -32,7 +32,7 @@ ms.locfileid: "41597984"
 迷惑メール メッセージは "スパム" メッセージで、サービスによってフィルター処理される未承諾 (かつ通常は不要な) 電子メール メッセージです。既定で、サービスは、送信元の IP アドレスの評価に基づいてスパム メッセージを拒否します。ただし、そのメッセージが IP 検査を通過しても、コンテンツ フィルターでスパムに分類された場合は、宛先になっている受信者の迷惑メール フォルダーに送信されます。 
   
 > [!NOTE]
-> 「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」に記載されているように、コンテンツ フィルター処理されたメッセージに対して実行されるアクションは、Exchange 管理センター (EAC) のコンテンツ フィルター ポリシーを介して構成することができます。また、スパム分類に同意できない場合は、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」に記載されているように、スパムまたは非スパムであると思われるメッセージをいくつかの方法で Microsoft に報告することができます。 
+> コンテンツフィルター処理されたメッセージに対して実行される操作は、「 [Configure スパム対策ポリシーを Office 365 で構成する](configure-your-spam-filter-policies.md)」の説明に従って、Exchange 管理センター (EAC) のコンテンツフィルターポリシーを使用して構成できます。 また、スパム分類に同意できない場合は、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」に記載されているように、スパムまたは非スパムであると思われるメッセージをいくつかの方法で Microsoft に報告することができます。 
   
  **バルク メールとは何か**
   
@@ -44,6 +44,6 @@ ms.locfileid: "41597984"
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>コンテンツ フィルター ポリシーのバルク メールの秘密度の制御を有効にします。
 
-バルクメールメッセージに関する会社のポリシーに応じて、管理者はバルクメールを割り当てるしきい値を選択できます。 この設定は、EAC のコンテンツフィルターポリシーを使用して構成できます。 手順については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 しきい値は1-9 から選択できます。1の場合、1はスパムとして最も多くのバルクメールをマークし、9では大量の電子メールを配信することができます。 その後、メッセージを受信者の迷惑メール フォルダーに送信するなどの構成されたアクションをサービスが実行します。 
+バルクメールメッセージに関する会社のポリシーに応じて、管理者はバルクメールを割り当てるしきい値を選択できます。 この設定は、EAC のコンテンツフィルターポリシーを使用して構成できます。 手順については、「 [Office 365 でスパム対策ポリシーを構成する」](configure-your-spam-filter-policies.md)を参照してください。 しきい値は1-9 から選択できます。1の場合、1はスパムとして最も多くのバルクメールをマークし、9では大量の電子メールを配信することができます。 その後、メッセージを受信者の迷惑メール フォルダーに送信するなどの構成されたアクションをサービスが実行します。 
   
 

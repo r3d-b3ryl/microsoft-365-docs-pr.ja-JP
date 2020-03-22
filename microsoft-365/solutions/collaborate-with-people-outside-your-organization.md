@@ -10,14 +10,23 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 組織外のユーザーとのグループ作業用に Microsoft 365 を構成する方法について説明します。
-ms.openlocfilehash: eb6bbdc4dd0520f240edbdebde6851ec917cd0d9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604604"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894955"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
+
+Microsoft 365 の外部共有機能を使用すると、組織内のユーザーが、自分のディレクトリにアカウントを持っていないパートナー、ベンダー、顧客、および他のユーザーと共同作業を行う機会を得ることができます。 組織外のユーザーや個別のファイルに対して、チームまたはサイト全体を共有することができます。
+
+組織外のユーザーとの共同作業は、次の2つの主要コンポーネントで構成されます。
+
+- **共有を有効**にする-Azure Active Directory、Teams、Office 365 グループ、および SharePoint の間で共有コントロールを構成して、組織に対して必要なレベルの共有を許可します。
+- **追加のセキュリティを有効**にします。組織外のユーザーによる認証を要求するように基本の共有機能を構成することはできますが、Microsoft 365 には、データを保護し、外部共有している間にガバナンスポリシーを維持するために役立つ、多くの追加のセキュリティおよびコンプライアンス機能が用意されています。
+
+## <a name="enable-sharing"></a>共有を有効にする
 
 Microsoft 365 では、既定では、組織外のユーザーとの共有は SharePoint と OneDrive で有効になっていますが、Teams では無効になっています。 SharePoint および OneDrive の外部共有シナリオの多くは、それ以上の構成を行わなくても動作します。 使用しているシナリオの設定を確認するか、または新しいシナリオを有効にするには、次のオプションのいずれかを選択します。
 
@@ -27,7 +36,7 @@ Microsoft 365 では、既定では、組織外のユーザーとの共有は Sh
 
 Microsoft 365 で使用可能なゲスト共有設定の包括的な説明については、「 [microsoft 365 ゲスト共有設定のリファレンス](microsoft-365-guest-settings.md)」を参照してください。
 
-## <a name="secure-your-environment"></a>環境をセキュリティで保護する
+## <a name="enable-additional-security"></a>追加のセキュリティを有効にする
 
 組織外のユーザーとの共有に使用するシナリオを有効にしたら、偶発的または故意に不適切な共有からコンテンツを保護するための追加の保護機能を検討します。
 

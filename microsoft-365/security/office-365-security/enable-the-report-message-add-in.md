@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、Outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086393"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893756"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -32,20 +32,20 @@ ms.locfileid: "42086393"
 
 Outlook 用のレポートメッセージアドインと web 上の Outlook (旧称 Outlook Web App) を使用すると、ユーザーは、安全であるか悪意のある電子メールであっても、分析のために Microsoft と関連会社に対して、誤って分類されたメールを簡単に報告できます。 Microsoft では、これらの送信を使用して、電子メール保護テクノロジの有効性を向上させています。 さらに、組織で[Office 365 Advanced Threat Protection プラン 1](office-365-atp.md)または[Plan 2](office-365-ti.md)を使用している場合は、レポートメッセージアドインにより、組織のセキュリティチームに対して、セキュリティポリシーの確認と更新に使用できる有用な情報が提供されます。
 
-たとえば、ユーザーが大量のメッセージをフィッシングとして報告しているとします。 この情報は、[セキュリティダッシュボード](security-dashboard.md)やその他のレポートに表示されます。 組織のセキュリティチームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があることを示すものとして使用できます。 または、レポートメッセージアドインを使用して迷惑メールではないというフラグが付いたメッセージを多数報告している場合は、組織のセキュリティチームが[スパム対策ポリシー](configure-the-anti-spam-policies.md)を調整する必要があります。
+たとえば、ユーザーが大量のメッセージをフィッシングとして報告しているとします。 この情報は、[セキュリティダッシュボード](security-dashboard.md)やその他のレポートに表示されます。 組織のセキュリティチームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があることを示すものとして使用できます。 または、レポートメッセージアドインを使用して迷惑メールではないというフラグが付いたメッセージを多数報告している場合は、組織のセキュリティチームが[スパム対策ポリシー](configure-your-spam-filter-policies.md)を調整する必要があります。
 
 レポートメッセージアドインは、ほとんどの Office 365 サブスクリプションと、次の製品で機能します。
 
- - Outlook on the web
- - Outlook 2013 SP1
- - Outlook 2016
- - Outlook 2016 for Mac
- - Office 365 ProPlus に含まれている Outlook
+- Outlook on the web
+- Outlook 2013 SP1
+- Outlook 2016
+- Outlook 2016 for Mac
+- Office 365 ProPlus に含まれている Outlook
 
 レポートメッセージアドインは現在、次の場合には使用できません。
 
- - オンプレミスの Exchange 組織内のメールボックス
- - GCC、GCC HIGH、または DoD サブスクリプション
+- オンプレミスの Exchange 組織内のメールボックス
+- GCC、GCC HIGH、または DoD サブスクリプション
 
 既存の web ブラウザーでは、レポートメッセージアドインが動作するように十分である必要があります。ただし、アドインが使用できない、または正常に動作しないことが判明した場合は、別のブラウザーを試してみてください。
 

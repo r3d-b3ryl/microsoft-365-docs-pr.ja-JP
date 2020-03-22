@@ -1,8 +1,7 @@
 ---
 title: Office 365 グループを作成するときに使うドメインを選ぶ
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'PowerShell を使用して電子メールアドレスポリシーを構成することによって、Office 365 グループを作成するときに使用するドメインを選択する方法について説明します。 '
-ms.openlocfilehash: 55fc99cd201e66166e7da164777cfba2f763609c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241409"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894647"
 ---
 # <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Office 365 グループを作成するときに使うドメインを選ぶ
 
@@ -113,7 +112,7 @@ EAP を変更しても、プロビジョニング済みのグループには影�
     
 - 管理者とユーザーは、グループを作成するときにドメインを変更することもできます。
     
-- ユーザーのグループは、既に用意されている標準クエリ (ユーザーのプロパティ) を使用して決定されます。サポートされているフィルター可能なプロパティについては、「[-RecipientFilter パラメーターのフィルター可能なプロパティ](https://go.microsoft.com/fwlink/p/?LinkId=785918)」を参照してください。 
+- ユーザーのグループは、既に用意されている標準クエリ (ユーザーのプロパティ) を使用して決定されます。 サポートされているフィルター可能なプロパティについて[は、-受信者フィルターパラメーターのフィルター処理されたプロパティを](https://go.microsoft.com/fwlink/p/?LinkId=785918)確認してください。 
     
 - グループに EAP を構成しないと、グループの作成で既定の承認済みドメインが選択されます。
     

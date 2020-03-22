@@ -1,11 +1,11 @@
 ---
-title: 送信スパム ポリシーを構成する
+title: 送信スパムフィルターを構成する
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,99 +16,481 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
-ms.openlocfilehash: 0fa5ec23eee6144864f16b52d452d02f38b554d7
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e788310ae8fd3c0da7f1a39fbba2dc0d6e369d30
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957342"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893965"
 ---
-# <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを設定する
+# <a name="configure-outbound-spam-filtering-in-office-365"></a>Office 365 で送信スパムフィルターを構成する
 
-送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。 受信フィルターと同様に、送信スパムフィルターは、接続フィルターとコンテンツフィルターで構成され、特定のコントロールで送信メッセージを処理することができます。 送信スパムフィルターポリシー設定の種類:
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 お客様の場合、EOP を介して送信される送信電子メールメッセージは自動的にチェックされ、スパムや異常をチェックします。送信アクティビティ。
 
-- 既定値: 既定の送信スパムフィルターポリシーを使用して、企業全体のスパムフィルター設定を構成します。 このポリシーは名前を変更できません。また、常にオンになります。
+組織内のユーザーからの送信スパムは、通常、侵害されたアカウントを示しています。 疑わしい送信メッセージは、スパムの信頼レベルまたは SCL に関係なく、スパムとしてマークされ、[高リスクの配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してサービスの評価を保護します (つまり、Office 365 ソースの電子メールサーバーが IP 禁止一覧に保持されたままになります)。 管理者は、疑わしい送信電子メールアクティビティとブロックされたユーザーに対して通知[ポリシー](../../compliance/alert-policies.md)を使用して自動的に通知を受け取ります。
 
-- カスタム: カスタム送信スパムフィルターポリシーを細分化して、組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは、常に、既定のポリシーより優先されます。 各カスタムポリシーの優先度を変更することによって、カスタムポリシーを実行する順序を変更することができます。ただし、ユーザーが複数のポリシーと一致する場合は、最上位の優先度 (つまり、0に最も近い) ポリシーが適用されます。
+EOP では、スパムに対する組織の全体的な防衛の一環として、送信スパムポリシーを使用しています。 詳細については、「 [Office 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
-<a name="sectionSection0"> </a>
+管理者は、既定の送信スパムポリシーを表示、編集、および構成することはできますが、削除することはできません。 よりきめ細かく制御する場合は、組織内の特定のユーザー、グループ、またはドメインに適用するカスタムの送信スパムポリシーを作成することもできます。 カスタムポリシーは、常に既定のポリシーより優先されますが、カスタムポリシーの優先度 (実行順序) を変更することもできます。
 
-- 予想所要時間 : 5 分
+送信スパムポリシーを構成するには、Office 365 Security & コンプライアンスセンターまたは PowerShell (Office 365 お客様の場合は Exchange Online PowerShell) を使用します。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
 
-- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」の「スパム対策」のエントリを参照してください。
+## <a name="outbound-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Office 365 セキュリティ & コンプライアンスセンター vs Exchange online PowerShell または Exchange Online Protection PowerShell の送信スパムポリシー
 
-- リモート PowerShell でこのトピックの手順を実行することもできます。 [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) コマンドレットを使用して設定を確認し、[Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) を使用して送信スパム ポリシー設定を編集します。
+EOP の送信スパムポリシーの基本的な要素は次のとおりです。
 
-  Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 Exchange Online Protection PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- **送信スパムフィルターポリシー**: 送信スパムフィルター verdicts のアクションと通知オプションを指定します。
 
-## <a name="use-the-security--compliance-center-scc-to-edit-the-default-outbound-spam-policy"></a>セキュリティ & コンプライアンスセンター (SCC) を使用して既定の送信スパムポリシーを編集する
+- **送信スパムフィルタールール**: 送信スパムフィルターポリシーの優先順位と受信者フィルター (ポリシーが適用されるユーザー) を指定します。
 
-既定の送信スパム ポリシーを編集するには、次の手順を使用します。
+セキュリティ & コンプライアンスセンターで送信スパムポリシーを管理する場合、この2つの要素の違いは明白ではありません。
 
-### <a name="to-configure-the-default-outbound-spam-policy"></a>既定の送信スパム ポリシーを構成する方法
+- セキュリティ & コンプライアンスセンターで送信スパムポリシーを作成すると、実際には、両方に同じ名前を使用して、送信スパムフィルタールールと関連する送信スパムフィルターポリシーを同時に作成しています。
 
-1. SCC で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
+- セキュリティ & コンプライアンスセンターで送信スパムポリシーを変更すると、名前、優先度、有効または無効に関連する設定、および受信者フィルターによって送信スパムフィルタールールが変更されます。 他のすべての設定は、関連する送信スパムフィルターポリシーを変更します。
 
-2. [**送信スパムフィルターポリシー (ALWAYS ON)** ] セクションを展開し、[**ポリシーの編集**] をクリックします。
+- 送信スパムポリシーをセキュリティ & コンプライアンスセンターから削除すると、送信スパムフィルタールールとそれに関連付けられた送信スパムフィルターポリシーが削除されます。
 
-3. [**通知**] セクションを展開し、送信メッセージに関する次のチェックボックスをオンにして、[**ユーザーの追加**] を選択して、関連付けられた電子メールアドレスまたはアドレスを付随するダイアログボックスに追加します。 (これらは、有効な SMTP 宛先として解決される場合は、配布リストになります)。
+Exchange Online PowerShell またはスタンドアロンの Exchange Online Protection の PowerShell では、送信スパムフィルターポリシーと送信スパムフィルタールールの違いが明らかです。 送信スパムフィルターポリシーを管理するには、 ** \*-set-hostedcontentfilterpolicy**コマンドレットを使用して、 ** \*-disable-hostedcontentfilterrule**コマンドレットを使用して送信スパムフィルタールールを管理します。
 
-   - **疑わしいすべての送信電子メールメッセージのコピーを次の電子メールアドレスまたはアドレスに送信**します。これらは、フィルターによってスパムとしてマークされたメッセージです (SCL レベルに関係なく)。 フィルターによって拒否されませんが、より危険度の高い配信プールでルーティングされます。 複数のアドレスはセミコロンで区切ります。 指定された受信者はブラインド カーボン コピー (BCC) アドレスとしてメッセージを受け取ることに注意してください (差出人フィールドと宛先フィールドは元の送信者と受信者です)。
+- PowerShell では、送信スパムフィルターポリシーを最初に作成してから、ルールが適用されるポリシーを識別する送信スパムフィルタールールを作成します。
 
-   - 送信**者が送信スパムの送信をブロックされている場合は、次の電子メールアドレスに通知を送信**します。複数のアドレスはセミコロンで区切ります。
+- PowerShell では、送信スパムフィルターポリシーと送信スパムフィルタールールの設定を個別に変更します。
 
-   特定のユーザーが大量のスパムまたはその他の送信の異常を検出した場合、ユーザーは電子メールメッセージの送信を制限され、指定された電子メールアドレスに通知が送信されます。
+- 送信スパムフィルターポリシーを PowerShell から削除すると、対応する送信スパムフィルタールールは自動的には削除されません。また、その逆も同様です。
 
-   この設定の使用を指定したドメインの管理者は、このユーザーによるメッセージ送信がブロックされていることを通知されます。  この通知がどのように表示されるかを確認するには、「[送信者が送信スパムの送信をブロックされる場合の通知例](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)」をご覧ください。
+### <a name="default-outbound-spam-policy"></a>既定の送信スパムポリシー
 
-   > [!NOTE]
-   > ユーザーが制限されていることを示すシステム警告も生成されます。 アラートの詳細とユーザーを回復する方法については、「制限され[たユーザーポータルからユーザーを削除する (スパムメールを送信した後](removing-user-from-restricted-users-portal-after-spam.md))」を参照してください。
+すべての組織には、Default という名前の組み込みの送信スパムポリシーがあります。これらのプロパティは次のとおりです。
 
-4. [**受信者の制限**] セクションを展開して、内部および外部の受信者の1時間ごとに、1日あたりの最大数と共に、ユーザーが送信できる受信者の最大数を指定します。
+- Default という名前の送信スパムフィルターポリシーは、ポリシーに関連付けられた送信スパムフィルタールール (受信者フィルター) がない場合でも、組織内のすべての受信者に適用されます。
 
-   > [!NOTE]
-   > 入力の最大数は1万です。 詳細については[、「Exchange online 内の受信および送信の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)」を参照してください。
+- Default という名前のポリシーでは、変更できないカスタムの優先度の値が**最低**です (ポリシーは常に最後に適用されます)。 作成するカスタムポリシーは、常に Default という名前のポリシーよりも高い優先順位を持ちます。
 
-7. ユーザーが指定した制限を超えた場合に実行する**アクション**を指定します。  可能なアクションは次のとおりです。
+- Default という名前のポリシーが既定のポリシーである ( **IsDefault**プロパティ`True`の値がである) ため、既定のポリシーを削除することはできません。
 
-   - **ユーザーが次の日までメールを送信**できないように制限します。  送信の制限 (内部、外部、または毎日) を超えると、管理者のための通知が生成されます。ユーザーは、UTC 時間に基づいて、次の日まで追加の電子メールを送信することはできません。 管理者がこのブロックを上書きすることはできません。
+送信スパムフィルター処理の有効性を高めるために、特定のユーザーまたはユーザーグループに適用される厳密な設定を使用して、カスタムの送信スパムポリシーを作成することができます。
 
-   - **ユーザーがメールを送信**できないように制限します。  送信の制限 (内部、外部、または毎日) を超えると、管理者に対して通知が生成され、管理者が制限を削除するまで、ユーザーはそれ以上メールを送信できなくなります。  このような場合、ユーザーは [制限された[ユーザー] ページ](removing-user-from-restricted-users-portal-after-spam.md)に一覧表示されます。  リストから削除されると、その日に対してユーザーが再度制限されることはありません。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-   - **アクション/アラートのみ**。 送信制限を超えた場合 (内部、外部、または毎日) は、管理者に対して通知が生成されますが、ユーザーを制限するアクションは実行されません。
+- セキュリティ & コンプライアンスセンターに<https://protection.office.com/>表示されます。 [**スパム対策設定**] ページに直接移動するには<https://protection.office.com/antispam>、を使用します。
 
-6. [**適用先**] セクションを展開し、このポリシーを適用するユーザー、グループ、およびドメインを指定する条件ベースのルールを作成します。 それぞれが一意の条件であれば、複数の条件を作成できます。  注: 複数の条件が指定されている場合、ユーザーはすべての条件を満たす必要があります。  
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection の PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-   - ユーザーを選択するに**は**、[送信者] を選択します。 次のダイアログボックスで、ユーザー選択リストから会社の1人または複数の送信者を選択し、[追加] をクリックします。 リスト上にない送信者を追加するには、電子メール アドレスを入力してから [名前の確認] をクリックします。 選択が完了したら、 [OK] をクリックして、メイン画面に戻ります。
+- これらの手順を実行する前に、アクセス許可を割り当てる必要があります。 送信スパムポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 送信スパムポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-   - [グループ] を選択するには、[**送信者がメンバー**である] を選択します。 その後、それに続くダイアログ ボックスでグループを選択または指定します。 [OK] をクリックして、メイン画面に戻ります。
+- 送信スパムポリシーの推奨設定については、「 [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)」を参照してください。
 
-   - [ドメイン] を選択するには、[**送信者ドメイン**] を選択します。 その後、それに続くダイアログ ボックスでドメインを追加します。 [OK] をクリックして、メイン画面に戻ります。
+- **電子メール送信の制限**が設定されている既定の[警告ポリシー](../../compliance/alert-policies.md) 、**疑わしい電子メール送信パターンが検出さ**れたこと、および電子メールが送信**Global admins**を拒否したことによって、電子メール通知が通常の送信電子メールアクティビティやブロックされたユーザーについて**は、送信**スパムによる**もの**であることを示します。 詳細については、「制限され[たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。 送信スパムポリシーの通知オプションではなく、これらのアラートポリシーを使用することをお勧めします。
 
-   ルール内で例外を作成できます。 たとえば、特定のドメインを除くすべてのドメインからのメッセージをフィルター処理できます。 [例外の追加] をクリックしてから、他の条件の作成方法と同じように例外条件を作成します。
+## <a name="use-the-security--compliance-center-to-create-outbound-spam-policies"></a>セキュリティ & コンプライアンスセンターを使用して送信スパムポリシーを作成する
 
-   送信スパムポリシーのグループへの適用は、メールが有効なセキュリティグループに対してのみサポートされています。
+セキュリティ & コンプライアンスセンターでカスタムの送信スパムポリシーを作成すると、両方に同じ名前を使用して、スパムフィルタールールと関連するスパムフィルターポリシーが同時に作成されます。
 
-7. **[保存]** をクリックします。
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
 
-## <a name="to-create-a-custom-policy-for-a-specific-set-of-users"></a>特定のユーザーセットのカスタムポリシーを作成するには
+2. [**スパム対策設定**] ページで、[**送信ポリシーの作成**] をクリックします。
 
-1. SCC で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
+3. [**送信スパムフィルターポリシー** ] が表示されたら、次の設定を構成します。
 
-2. [**送信ポリシーの作成**] ボタンをクリックします。
+   - [**名前**]: わかりやすい一意のポリシー名を入力します。
 
-3. [**通知**] セクションを展開し、送信メッセージに関する次のチェックボックスをオンにして、[**ユーザーの追加**] を選択して、関連付けられた電子メールアドレスまたはアドレスを付随するダイアログボックスに追加します。
+   - **説明**: ポリシーの説明 (オプション) を入力します。
 
-4. [**受信者の制限**] セクションを展開して、ユーザーが送信できる受信者の最大数、内部および外部の受信者の場合は1時間ごと、1日あたりの最大数を指定します。
+4. オプション[**通知**] セクションを展開して、疑わしい送信電子メールメッセージのコピーと通知を受信する必要がある追加のユーザーを構成します。
 
-7. ユーザーが指定した制限を超えた場合に実行する**アクション**を指定します。
+   - **疑わしい送信電子メールメッセージのコピーを特定のユーザーに送信**する: この設定を行うと、指定されたユーザーが Bcc 受信者として疑わしい送信メッセージに追加されます。 この設定を有効にするには:
 
-6. [**適用先**] セクションを展開し、このポリシーを適用するユーザー、グループ、およびドメインを指定する条件ベースのルールを作成します。 それぞれが一意の条件であれば、複数の条件を作成できます。  
+     a. チェックボックスをオンにして、設定を有効にします。
 
-8. [**保存**] をクリックします。
+     b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
 
-## <a name="for-more-information"></a>詳細情報
+     c. 送信者の電子メールアドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
+
+     d. [追加] アイコン ![をクリックして、DAG を作成します。](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
+
+        必要な回数だけこれらの手順を繰り返します。
+
+        追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するに![は、](../../media/scc-remove-icon.png)[削除] ボタンをクリックします。
+
+     e.  完了したら、**[保存]** をクリックします。
+
+     この設定を無効にするには、このチェックボックスをオフにします。
+
+   - 送信**スパムの送信によって送信者がブロックされた場合に、特定のユーザーに通知し**ます。
+
+     > [!NOTE]
+     > ユーザーが [**受信者の制限**] セクションの制限を超えたためにユーザーがブロックされた**Global admins**場合は、ユーザーによって [**送信メールが電子メール**によって制限されました] という名前の既定の[警告ポリシー](../../compliance/alert-policies.md)が、既に**tenantadmins**グループのメンバーに電子メール通知を送信します。 送信スパムポリシーのこの設定ではなく、通知ポリシーを使用して、管理者およびその他のユーザーに通知することをお勧めします。 手順については、「制限され[たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。
+
+     この設定を有効にするには:
+
+     a. チェックボックスをオンにして、設定を有効にします。
+
+     b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
+
+     c. 送信者の電子メールアドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
+
+     d. [追加] アイコン ![をクリックして、DAG を作成します。](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
+
+        必要な回数だけこれらの手順を繰り返します。
+
+        追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するに![は、](../../media/scc-remove-icon.png)[削除] ボタンをクリックします。
+
+     e.  完了したら、**[保存]** をクリックします。
+
+     この設定を無効にするには、このチェックボックスをオフにします。
+
+5. オプション[**受信者の制限**] セクションを展開して、疑わしい送信電子メールメッセージの制限およびアクションを構成します。
+   - **ユーザーあたりの最大受信者数**
+
+     有効な値は、0 ~ 1万です。 既定値は0です。これは、サービスの既定値が使用されることを意味します。 詳細については、「 [Office での制限を送信365のオプション](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。
+
+     - **外部の時間**単位の制限: 1 時間あたりの外部受信者の最大数。
+
+     - [内部最大時間**制限**数: 1 時間あたりの内部受信者の最大数。
+
+     - **Daily limit**: 1 日あたりの受信者の最大合計数。
+
+   - **ユーザーが上記の制限を超えた場合の対処**:**受信者の制限**のいずれかを超えた場合に実行するアクションを構成します。 すべての操作について、ユーザーが**電子メール**通知ポリシーを送信することを制限しています (これで、送信スパムポリシーで送信スパムの設定**を送信するために送信者がブロックされている場合**は、特定のユーザーに対して特定のユーザーに指定された受信者が電子メール通知を受信します。
+
+     - **ユーザーが次の日までメールを送信**できないように制限します。これは既定値です。 電子メール通知が送信され、ユーザーは UTC 時間に基づいて、次の日までメッセージを送信できなくなります。 管理者がこのブロックを上書きする方法はありません。
+
+       - [**ユーザーが電子メールを送信**できないようにする] という名前のアクティビティアラートは、管理者に電子メールを介して通知を送信します ([通知の**表示**] ページ)。
+
+       - ポリシーの送信スパム設定の**送信によって送信者がブロックされた場合**、[特定のユーザーを通知する] で指定されたすべての受信者にも通知されます。
+
+       - このユーザーは、UTC 時間に基づいて、次の日まで、それ以上のメッセージを送信できなくなります。 管理者がこのブロックを上書きする方法はありません。
+
+     - **ユーザーがメールを送信する**のを制限する: 電子メール通知が送信され、ユーザーはセキュリティ & コンプライアンスセンターの**<https://sip.protection.office.com/restrictedusers> [制限付きユーザー]** ポータルに追加され、ユーザーは管理者によって**制限付きユーザー**ポータルから削除されるまで電子メールを送信できません。管理者がリストからユーザーを削除した後は、その日に対してユーザーが再度制限されることはありません。 手順については、「[迷惑メールの送信後に制限付きユーザーポータルからユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)」を参照してください。
+
+     - **アクションなし、通知のみ**: 電子メール通知が送信されます。
+
+6. 要する[**適用先**] セクションを展開して、ポリシーが適用される内部送信者を特定します。
+
+    条件または例外は1回だけ使用できますが、条件または例外には複数の値を指定できます。 同じ条件または例外の複数の値を使用するか、ロジック (たとえば、 _ \<sender1\> _または_ \<sender2\>_) を使用します。 さまざまな条件や例外、およびロジック ( _ \<sender1\> _ 、 _ \<グループ\>1 のメンバー_など) を使用します。
+
+    使用可能なすべての条件を表示するには、[**条件を**3 回追加する] をクリックするのが最も簡単です。 構成しない![条件を](../../media/scc-remove-icon.png)削除するには、[削除] ボタンをクリックします。
+
+    - **送信者ドメイン**: 構成された1つ以上の承認済みドメインで Office 365 に送信者を指定します。 [タグの**追加**] ボックスをクリックして、ドメインを表示および選択します。 複数のドメインが使用可能な場合は、[**タグの追加**] ボックスを再度クリックして、追加のドメインを選択します。
+
+    - **Sender is**: 組織内の1人または複数のユーザーを指定します。 [タグの**追加**] をクリックし、入力を開始して、リストにフィルターを適用します。 [**タグの追加**] ボックスをもう一度クリックして、追加の送信者を選択します。
+
+    - **送信者が次のメンバーの場合**: 組織内の1つまたは複数のグループを指定します。 [タグの**追加**] をクリックし、入力を開始して、リストにフィルターを適用します。 [**タグの追加**] ボックスをもう一度クリックして、追加の送信者を選択します。
+
+    - 次の**場合を除き**、ルールの例外を追加するには、[条件を3回**追加**する] をクリックして、使用可能な例外をすべて表示します。 設定と動作は条件とまったく同じです。
+
+7. 完了したら、**[保存]** をクリックします。
+
+## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>セキュリティ & コンプライアンスセンターを使用して、送信スパムポリシーを表示する
+
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
+
+2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、送信スパムポリシーを展開します。
+
+   - **送信スパムフィルターポリシー**という名前の既定のポリシー。
+
+   - 作成したカスタムポリシーで、[**種類**] 列の値が [**カスタム送信スパムポリシー**] になっています。
+
+3. ポリシー設定は、表示される拡張されたポリシーの詳細に表示されるか、[**ポリシーの編集**] をクリックできます。
+
+## <a name="use-the-security--compliance-center-to-modify-outbound-spam-policies"></a>セキュリティ & コンプライアンスセンターを使用して送信スパムポリシーを変更する
+
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
+
+2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、送信スパムポリシーを展開します。
+
+   - **送信スパムフィルターポリシー**という名前の既定のポリシー。
+
+   - 作成したカスタムポリシーで、[**種類**] 列の値が [**カスタム送信スパムポリシー**] になっています。
+
+3. [**ポリシーの編集**] をクリックします。
+
+カスタムの送信スパムポリシーの場合、表示されるポップアップで使用可能な設定は、「[セキュリティ & コンプライアンスセンターを使用して送信スパムポリシーを作成する](#use-the-security--compliance-center-to-create-outbound-spam-policies)」セクションに記載されている設定と同じです。
+
+"**送信スパムフィルターポリシー**" という名前の既定の送信スパムポリシーの場合、[**適用先**] セクションは利用できません (ポリシーはすべてのユーザーに適用されます)。また、ポリシーの名前を変更することはできません。
+
+ポリシーを有効または無効にしたり、ポリシーの優先順位を設定したり、エンドユーザーの検疫通知を構成したりするには、以下のセクションを参照してください。
+
+### <a name="enable-or-disable-outbound-spam-policies"></a>送信スパムポリシーを有効または無効にする
+
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
+
+2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、作成したカスタムポリシーを展開します ([**種類**] 列の値は、**カスタムの送信スパムポリシー**です)。
+
+3. 表示される拡張されたポリシーの詳細で、 **[オン**] 列の値を確認します。
+
+   [トグル] を左に移動して、ポリシーを無効にします。 ![オフに切り替える](../../media/scc-toggle-off.png)
+
+   [トグル] を右に移動して、ポリシーを有効にします。 ![トグルオン](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+
+既定の送信スパムポリシーを無効にすることはできません。
+
+### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>カスタム送信スパムポリシーの優先度を設定する
+
+既定では、送信スパムポリシーには、作成された順序に基づく優先度が与えられます (新しいポリシーは、以前のポリシーよりも優先度が低いです)。 優先度の低い値は、ポリシーの優先度が高い (0 が最高である) ことを示し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは優先度の低いポリシーよりも先に処理されます)。 2 つのポリシーに同じ優先度を設定することはできません。
+
+カスタム送信スパムポリシーは、処理順に表示されます (最初のポリシーの**優先度**値は0です)。 "**送信スパムフィルターポリシー** " という名前の既定の送信スパムポリシーは、優先度の値が**低い**ので、これを変更することはできません。
+
+ポリシーの優先度を変更するには、リスト内でポリシーを上下に移動します (セキュリティ & コンプライアンスセンターで**優先度**番号を直接変更することはできません)。
+
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
+
+2. [**スパム対策設定**] ページで、[**種類**] 列の値が**カスタム送信スパムポリシー**であるポリシーを探します。 [**優先度**] 列の値に注目してください。
+
+   - 優先度が最も高いカスタムの送信スパムポリシーには![、値の](../../media/ITPro-EAC-DownArrowIcon.png)下矢印アイコン**0**があります。
+
+   - 最も低い優先度を持つカスタムの送信スパムポリシーに![は、上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) **n** ( ![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) **3**) の値が設定されています。
+
+   - ユーザー設定の送信スパムポリシーが3つ以上ある場合、最高の優先度と最も低い優先![順位の間](../../media/ITPro-EAC-UpArrowIcon.png)![のポリシーは](../../media/ITPro-EAC-DownArrowIcon.png) 、上矢印アイコンの![下矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png)![ **n** (たとえば](../../media/ITPro-EAC-DownArrowIcon.png) 、上矢印アイコンを下矢印アイコン**2**) に設定します。
+
+3. [追加] アイコン ![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) or ![下矢印アイコン](../../media/ITPro-EAC-DownArrowIcon.png) を押して、カスタムの送信スパムポリシーを優先順位一覧で上または下に移動します。
+
+## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a>セキュリティ & コンプライアンスセンターを使用して送信スパムポリシーを削除する
+
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>のスパム**対策**] に移動します。
+
+2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、削除するカスタムポリシーを展開します ( **Type**列は**カスタム送信スパムポリシー**です)。
+
+3. 表示される拡張されたポリシーの詳細で、[**ポリシーの削除**] をクリックします。
+
+4. 表示される警告ダイアログで [**はい**] をクリックします。
+
+既定のポリシーを削除することはできません。
+
+## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-outbound-spam-policies"></a>Exchange Online PowerShell または Exchange Online Protection PowerShell を使用して送信スパムポリシーを構成する
+
+### <a name="use-powershell-to-create-outbound-spam-policies"></a>PowerShell を使用して送信スパムポリシーを作成する
+
+PowerShell で送信スパムポリシーを作成するには、2つの手順からなるプロセスがあります。
+
+1. 送信スパムフィルターポリシーを作成します。
+
+2. ルールを適用する送信スパムフィルターポリシーを指定する送信スパムフィルタールールを作成します。
+
+ **注**:
+
+- 新しい送信スパムフィルタールールを作成して、関連付けられていない既存の送信スパムフィルターポリシーをそれに割り当てることができます。 送信スパムフィルタールールは、複数の送信スパムフィルターポリシーに関連付けることはできません。
+
+- ポリシーを作成するまでは、セキュリティ & コンプライアンスセンターでは使用できない PowerShell の新しい送信スパムフィルターポリシーに対して、次の設定を構成できます。
+
+  - 新しいポリシーを無効として作成します ( **HostedOutboundSpamFilterRule**コマンドレットでは_有効_ `$false` )。
+
+  - **HostedOutboundSpamFilterRule**コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _ \<番号\>_)。
+
+- PowerShell で作成した新しい送信スパムフィルターポリシーは、そのポリシーをスパムフィルタールールに割り当てるまで、セキュリティ & コンプライアンスセンターに表示されません。
+
+#### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>手順 1: PowerShell を使用して送信スパムフィルターポリシーを作成する
+
+送信スパムフィルターポリシーを作成するには、次の構文を使用します。
+
+```PowerShell
+New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
+```
+
+この例では、次の設定を使用して Contoso 重役という新しい送信スパムフィルターポリシーを作成します。
+
+- 受信者数の制限は、既定値より小さい値に制限されます。 詳細については、「 [Office での制限を送信365のオプション](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。
+
+- いずれかの制限に達すると、ユーザーはメッセージを送信できなくなります。
+
+```PowerShell
+New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy)」を参照してください。
+
+#### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>手順 2: PowerShell を使用して送信スパムフィルタールールを作成する
+
+送信スパムフィルタールールを作成するには、次の構文を使用します。
+
+```PowerShell
+New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
+```
+
+この例では、次の設定を使用して Contoso 重役という新しい送信スパムフィルタールールを作成します。
+
+- Contoso エグゼクティブという名前の送信スパムフィルターポリシーがルールに関連付けられている。
+
+- ルールは、Contoso 重役グループというグループのメンバーに適用されます。
+
+```PowerShell
+New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>PowerShell を使用して送信スパムフィルターポリシーを表示する
+
+すべての送信スパムフィルターポリシーの要約リストを返すには、次のコマンドを実行します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy
+```
+
+特定の送信スパムフィルターポリシーの詳細情報を戻すには、次の構文を使用します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" | Format-List [<Specific properties to view>]
+```
+
+この例では、重役という送信スパムフィルターポリシーのすべてのプロパティ値を返します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy)」を参照してください。
+
+### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを表示する
+
+既存の送信スパムフィルタールールを表示するには、次の構文を使用します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+```
+
+すべての送信スパムフィルタールールの要約リストを返すには、次のコマンドを実行します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule
+```
+
+有効または無効なルールで一覧をフィルター処理するには、次のコマンドを実行します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -State Disabled
+```
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -State Enabled
+```
+
+特定の送信スパムフィルタールールに関する詳細情報を戻すには、次の構文を使用します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -Identity "<RuleName>" | Format-List [<Specific properties to view>]
+```
+
+この例では、Contoso 重役という送信スパムフィルタールールのすべてのプロパティ値を返します。
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>PowerShell を使用して送信スパムフィルターポリシーを変更する
+
+このトピックで前述した「[手順 1: powershell を使用して送信スパムフィルターポリシーを作成](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy)する」の説明に従って、ポリシーの作成時に powershell のマルウェアフィルターポリシーを変更する場合にも、同じ設定を使用できます。
+
+**注**: 送信スパムフィルターポリシーの名前を変更することはできません ( **HostedOutboundSpamFilterPolicy**コマンドレットに_Name_パラメーターがありません)。 セキュリティ & コンプライアンスセンターで送信スパムポリシーの名前を変更する場合は、送信スパムフィルター_ルール_の名前のみを変更しています。
+
+送信スパムフィルターポリシーを変更するには、次の構文を使用します。
+
+```PowerShell
+Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy)」を参照してください。
+
+### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを変更する
+
+PowerShell で送信スパムフィルタールールを変更するときには使用できない唯一の設定は、無効にされたルールを作成できる_有効_なパラメーターです。 既存の送信スパムフィルタールールを有効または無効にするには、次のセクションを参照してください。
+
+それ以外の場合は、PowerShell で送信スパムフィルタールールを変更するときに、追加の設定を使用することはできません。 このトピックで前述した「[手順 2: PowerShell を使用して送信スパムフィルタールールを作成する](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule)」で説明されているように、ルールを作成する場合にも同じ設定を使用できます。
+
+送信スパムフィルタールールを変更するには、次の構文を使用します。
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを有効または無効にする
+
+PowerShell で送信スパムフィルタールールを有効または無効にすると、送信スパムポリシー全体 (送信スパムフィルタールールおよび割り当てられた送信スパムフィルターポリシー) が有効または無効になります。 既定の送信スパムポリシーを有効または無効にすることはできません (常にすべての受信者に適用されます)。
+
+PowerShell で送信スパムフィルタールールを有効または無効にするには、次の構文を使用します。
+
+```PowerShell
+<Enable-HostedOutboundSpamFilterRule | Disable-HostedOutboundSpamFilterRule> -Identity "<RuleName>"
+```
+
+この例では、Marketing Department という名前の送信スパムフィルタールールを無効にします。
+
+```PowerShell
+Disable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+この例では、同じルールを有効化します。
+
+```PowerShell
+Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule) 」および「 [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールの優先度を設定する
+
+ルールに設定できる優先度の最高値値は 0 です。 設定できる最低値はルールの数に依存します。 たとえば、ルールが五つある場合、使用できる優先度の値は 0 から 4 です。 既存の一つのルールの優先度を変更すると、他のルールにも連鎖的な影響が起こりえます。 たとえば、5つのカスタムルール (優先度 0 ~ 4) があり、ルールの優先度を2に変更した場合、優先度2の既存のルールは優先度3に変更され、優先度3のルールは優先度4に変更されます。
+
+PowerShell で送信スパムフィルタールールの優先度を設定するには、次の構文を使用します。
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
+```
+
+この例では、Marketing Department というルールの優先度を 2 に設定しています。優先度が 2 以下のすべての既存のルールは、優先度が 1 ずつ下がります (優先度番号が 1 ずつ増加します)。
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
+```
+
+**注**:
+
+- 新しいルールの作成時に優先度を設定するには、代わりに**HostedOutboundSpamFilterRule**コマンドレットで_priority_パラメーターを使用します。
+
+- 既定の送信スパムフィルターポリシーには、対応するスパムフィルタールールがありません。また、常に、未設定の優先度の値が**最低**になっています。
+
+### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>PowerShell を使用して送信スパムフィルターポリシーを削除する
+
+PowerShell を使用して送信スパムフィルターポリシーを削除しても、それに対応する送信スパムフィルタールールは削除されません。
+
+PowerShell で送信スパムフィルターポリシーを削除するには、次の構文を使用します。
+
+```PowerShell
+Remove-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>"
+```
+
+この例では、Marketing Department という名前の送信スパムフィルターポリシーを削除します。
+
+```PowerShell
+Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy)」を参照してください。
+
+### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを削除する
+
+PowerShell を使用して送信スパムフィルタールールを削除しても、対応する送信スパムフィルターポリシーは削除されません。
+
+PowerShell で送信スパムフィルタールールを削除するには、次の構文を使用します。
+
+```PowerShell
+Remove-HostedOutboundSpamFilterRule -Identity "<PolicyName>"
+```
+
+この例では、Marketing Department という名前の送信スパムフィルタールールを削除します。
+
+```PowerShell
+Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule)」を参照してください。
+
+
+## <a name="for-more-information"></a>関連情報
 
 [迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
 

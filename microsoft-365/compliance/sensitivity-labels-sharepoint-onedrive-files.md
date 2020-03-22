@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 288f70ccfcd7852102dc5261e225e9e84182b365
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 840087be38c6e50244437fea63de655d8cd9363e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826216"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894302"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
@@ -124,12 +124,15 @@ ms.locfileid: "42826216"
 プレビューを有効にするには、Set-spotenant コマンドレットを使用します。
 
 1. Office 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
+    
+    注: Office 365 複数地域を使用している場合は、-Url パラメーターと[connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)を使用して、地理的な場所の1つに対して SharePoint Online 管理センターサイトの Url を指定します。
 
 2. 次のコマンドを実行します。
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
+3. Office 365 の複数地域: 残りの各地域の場所について、手順1と2を繰り返します。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>機密ラベルを作成または変更した後のロールアウトをスケジュールする
 

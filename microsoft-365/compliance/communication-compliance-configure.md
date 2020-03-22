@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 027189a10e34687833e6a266d5fe4382a1e14e3a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5f105912c5163b69368683cd4c6eaebf96250e3c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632898"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894832"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -83,7 +83,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 | **ポリシー メンバー** | **サポートされているグループ** | **サポートされていないグループ** |
 |:-----|:-----|:-----|
 |監督対象ユーザー <br> 非監督対象ユーザー | 配布グループ <br> Office 365 グループ | 動的配布グループ |
-| レビュー担当者 | メールが有効なセキュリティ グループ  | 配布グループ <br> 動的配布グループ |
+| レビュー担当者 | なし | 配布グループ <br> 動的配布グループ <br> メールが有効なセキュリティ グループ |
   
 監督対象ユーザーの Office 365 グループを選択すると、ポリシーは共有 Office 365 メールボックスのコンテンツおよびグループに関連付けられた Microsoft Teams チャネルを監視します。 配布リストを選択すると、ポリシーは個々のユーザー メールボックスを監視します。
 
