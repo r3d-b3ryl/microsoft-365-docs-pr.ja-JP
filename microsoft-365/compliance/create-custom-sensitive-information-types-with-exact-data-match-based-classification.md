@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exact Data Match に基づく分類を使って、カスタムの機密情報の種類を作成します。
-ms.openlocfilehash: 044801416c7db4ddec8936a496862c432a63acde
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f4ebd34104cd4f3c5b3976a10e8bf64da990342c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077607"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894944"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -76,49 +76,49 @@ EDM ベースの分類をセットアップおよび構成するには、機密�
 
 3. 機密情報のデータベースのスキーマを .xml 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を  **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。 
 
-`\<Field name="" searchable=""/\>`
+      `\<Field name="" searchable=""/\>`
 
--  *Field name*  の値に列名を使用します。
--  *searchable="true"*  を使用して、最大 5 つのフィールドで検索可能にします。 少なくとも 1 つのフィールドを検索可能に指定する必要があります。
+      -  *Field name*  の値に列名を使用します。
+      -  *searchable="true"*  を使用して、最大 5 つのフィールドで検索可能にします。 少なくとも 1 つのフィールドを検索可能に指定する必要があります。
 
-たとえば、次の .xml ファイルは患者の記録のデータベースのスキーマを定義します。検索可能として指定された 5 つのフィールドは、 *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB* です。
+      たとえば、次の .xml ファイルは患者の記録のデータベースのスキーマを定義します。検索可能として指定された 5 つのフィールドは、 *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB* です。
 
-(この例は、コピー、変更、使用することができます。)
+      (この例は、コピー、変更、使用することができます。)
 
- ```xml
-<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
-      <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-            <Field name="PatientID" searchable="true" />
-            <Field name="MRN" searchable="true" />
-            <Field name="FirstName" />
-            <Field name="LastName" />
-            <Field name="SSN" searchable="true" />
-            <Field name="Phone" searchable="true" />
-            <Field name="DOB" searchable="true" />
-            <Field name="Gender" />
-            <Field name="Address" />
-      </DataStore>
-</EdmSchema>
-```
+      ```xml
+      <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+            <DataStore name="PatientRecords" description="Schema for patient records" version="1">
+                  <Field name="PatientID" searchable="true" />
+                  <Field name="MRN" searchable="true" />
+                  <Field name="FirstName" />
+                  <Field name="LastName" />
+                  <Field name="SSN" searchable="true" />
+                  <Field name="Phone" searchable="true" />
+                  <Field name="DOB" searchable="true" />
+                  <Field name="Gender" />
+                  <Field name="Address" />
+            </DataStore>
+      </EdmSchema>
+      ```
 
 4. [Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
 5. データベース スキーマをアップロードするには、次のコマンドレットを 1 つずつ実行します。
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-次のように、確認を求められます。
+      次のように、確認を求められます。
 
-> 確認
->
-> この操作を実行しますか?
->
-> データストア ' patientrecords ' の新しい EDM スキーマがインポートされます。
->
-> \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
+      > 確認
+      >
+      > この操作を実行しますか?
+      >
+      > データストア ' patientrecords ' の新しい EDM スキーマがインポートされます。
+      >
+      > \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
 
 > [!TIP]
 > 確認なしで変更を行う場合は、手順 5 で次のコマンドレットを代わりに使用します: New-DlpEdmSchema -FileData $edmSchemaXml
@@ -138,26 +138,26 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 3. データベース スキーマを更新するには、次のコマンドレットを 1 つずつ実行します。
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-次のように、確認を求められます。
+      次のように、確認を求められます。
 
-> 確認
->
-> この操作を実行しますか?
->
-> データストア ' patientrecords ' の EDM スキーマが更新されます。
->
-> \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
+      > 確認
+      >
+      > この操作を実行しますか?
+      >
+      > データストア ' patientrecords ' の EDM スキーマが更新されます。
+      >
+      > \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
 
-> [!TIP]
-> 確認なしで変更を行う場合は、手順 3 で次のコマンドレットを代わりに使用します: Set-DlpEdmSchema -FileData $edmSchemaXml
+      > [!TIP]
+      > 確認なしで変更を行う場合は、手順 3 で次のコマンドレットを代わりに使用します: Set-DlpEdmSchema -FileData $edmSchemaXml
 
-> [!NOTE]
-> 追加機能を使用して EDMSchema を更新するには、10 から 60 分かかることがあります。 追加機能を使用する手順を実行する前に、更新プログラムを完了する必要があります。
+      > [!NOTE]
+      > 追加機能を使用して EDMSchema を更新するには、10 から 60 分かかることがあります。 追加機能を使用する手順を実行する前に、更新プログラムを完了する必要があります。
 
 ## <a name="removing-the-schema-for-edm-based-classification"></a>EDM ベースの分類のスキーマを削除する
 
@@ -167,89 +167,89 @@ Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 
 2. 次の PowerShell コマンドレットを実行して、「patientrecords」のデータ ストア名を削除するものに置き換えます。
 
-```powershell
-Remove-DlpEdmSchema -Identity patientrecords
-```
+      ```powershell
+      Remove-DlpEdmSchema -Identity patientrecords
+      ```
 
-次のように、確認を求められます。
+      次のように、確認を求められます。
 
-> 確認
->
-> この操作を実行しますか?
->
-> データストア ' patientrecords ' の EDM スキーマが削除されます。
->
-> \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
+      > 確認
+      >
+      > この操作を実行しますか?
+      >
+      > データストア ' patientrecords ' の EDM スキーマが削除されます。
+      >
+      > \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
 
-> [!TIP]
->  確認なしで変更を行う場合は、手順 2 で次のコマンドレットを代わりに使用します: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+      > [!TIP]
+      >  確認なしで変更を行う場合は、手順 2 で次のコマンドレットを代わりに使用します: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
 
 ### <a name="set-up-a-rule-package"></a>ルール パッケージを設定する
 
 1. 次の例のように、.xml 形式 (Unicode エンコード) でルール パッケージを作成します。 (この例は、コピー、変更、使用することができます。)
 
-ルール パッケージをセットアップするときに、.csv ファイルと **edm .xml** ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
+      ルール パッケージをセットアップするときに、.csv ファイルと **edm .xml** ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
 
-- **RulePack id & ExactMatch id**:  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  を使用して GUID を作成します。
+      - **RulePack id & ExactMatch id**:  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  を使用して GUID を作成します。
 
-- **Datastore**: このフィールドは、使用する EDM ルックアップデータストアを指定します。 設定済みの EDM スキーマのデータソース名を指定します。
+      - **Datastore**: このフィールドは、使用する EDM ルックアップデータストアを指定します。 設定済みの EDM スキーマのデータソース名を指定します。
 
-- **idMatch**: このフィールドは、EDM の主要素を示します。
-  - 検索結果: ルックアップで使用するフィールドを指定します。 データストアの EDM スキーマで検索可能なフィールド名を指定します。
-  - 分類: このフィールドでは、EDM ルックアップをトリガーする、機密情報の種類を指定します。 既存の組み込みまたはカスタム分類の名前または GUID を指定できます。
+      - **idMatch**: このフィールドは、EDM の主要素を示します。
+        - 検索結果: ルックアップで使用するフィールドを指定します。 データストアの EDM スキーマで検索可能なフィールド名を指定します。
+        - 分類: このフィールドでは、EDM ルックアップをトリガーする、機密情報の種類を指定します。 既存の組み込みまたはカスタム分類の名前または GUID を指定できます。
 
-- **Match:** このフィールドは、近接 idMatch で見つかった追加の証拠を示します。
-  - Matches: データストアの EDM スキーマで検索可能なフィールド名を指定します。
-- **リソース:** このセクションでは、複数のローカルでの機密情報の種類の名前と説明を指定します。
-  - idRef: ExactMatch id の GUID を指定します。
-  - スキーマの名前と説明を編集する: 必要に応じてカスタマイズします。
+      - **Match:** このフィールドは、近接 idMatch で見つかった追加の証拠を示します。
+        - Matches: データストアの EDM スキーマで検索可能なフィールド名を指定します。
+      - **リソース:** このセクションでは、複数のローカルでの機密情報の種類の名前と説明を指定します。
+        - idRef: ExactMatch ID の GUID を指定します。
+        - 名前と説明: 必要に応じてカスタマイズします。
 
-```xml
-<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
-  <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
-    <Version build="0" major="2" minor="0" revision="0" />
-    <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
-    <Details defaultLangCode="en-us">
-      <LocalizedDetails langcode="en-us">
-        <PublisherName>IP DLP</PublisherName>
-        <Name>Health Care EDM Rulepack</Name>
-        <Description>This rule package contains the EDM sensitive type for health care sensitive types.</Description>
-      </LocalizedDetails>
-    </Details>
-  </RulePack>
-  <Rules>
-    <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
-    <LocalizedStrings>
-      <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB371">
-        <Name default="true" langcode="en-us">Patient SSN Exact Match.</Name>
-        <Description default="true" langcode="en-us">EDM Sensitive type for detecting Patient SSN.</Description>
-      </Resource>
-    </LocalizedStrings>
-  </Rules>
-</RulePackage>
-```
+      ```xml
+      <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+        <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
+          <Version build="0" major="2" minor="0" revision="0" />
+          <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
+          <Details defaultLangCode="en-us">
+            <LocalizedDetails langcode="en-us">
+              <PublisherName>IP DLP</PublisherName>
+              <Name>Health Care EDM Rulepack</Name>
+              <Description>This rule package contains the EDM sensitive type for health care sensitive types.</Description>
+            </LocalizedDetails>
+          </Details>
+        </RulePack>
+        <Rules>
+          <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
+            <Pattern confidenceLevel="65">
+              <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+            </Pattern>
+            <Pattern confidenceLevel="75">
+              <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+              <Any minMatches ="3" maxMatches ="100">
+                <match matches="PatientID" />
+                <match matches="MRN"/>
+                <match matches="FirstName"/>
+                <match matches="LastName"/>
+                <match matches="Phone"/>
+                <match matches="DOB"/>
+              </Any>
+            </Pattern>
+          </ExactMatch>
+          <LocalizedStrings>
+            <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB371">
+              <Name default="true" langcode="en-us">Patient SSN Exact Match.</Name>
+              <Description default="true" langcode="en-us">EDM Sensitive type for detecting Patient SSN.</Description>
+            </Resource>
+          </LocalizedStrings>
+        </Rules>
+      </RulePackage>
+      ```
 
 1. 次の PowerShell コマンドレットを 1 つずつ実行して、ルール パッケージをアップロードします。
 
-```powershell
-$rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
-New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
-```
+      ```powershell
+      $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
+      New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
+      ```
 
 この時点で、EDM ベースの分類がセットアップされています。 次の手順では、機密データにインデックスを付け、インデックス付きのデータをアップロードします。
 
@@ -304,8 +304,8 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 1. [EDM アップロード エージェント](https://go.microsoft.com/fwlink/?linkid=2088639)をダウンロードしてインストールします。 既定では、インストール場所は、[ **C:\\Program Files\\Microsoft\\EdmUploadAgent**] になります。
 
-> [!TIP]
-> サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
+      > [!TIP]
+      > サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
 
 2. EDM アップロード エージェントを承認するには、管理者として Windows コマンド プロンプトを開き、次のコマンドを実行します。
 
@@ -331,7 +331,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-次に例を示します。
+例:
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
@@ -339,7 +339,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-次に例を示します。 
+例:
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
@@ -361,16 +361,16 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 2. 機密情報データを Microsoft Excel などのアプリに再度エクスポートし、ファイルを .csv 形式で保存します。 「 [機密データのインデックスを作成しアップロードする](#index-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したファイル名と場所と同じものを使用してください。
 
-> [!NOTE]
-> .csv ファイルの構造 (フィールド名) に変更がない場合は、データを更新する際に、データベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
+      > [!NOTE]
+      > .csv ファイルの構造 (フィールド名) に変更がない場合は、データを更新する際に、データベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
 
 3.  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) を使用して、 [機密データのインデックスを作成しアップロードする](#index-and-upload-the-sensitive-data)  手順の、手順 2 と 3 を自動化します。 タスクのスケジュールを設定するにはいくつかの方法があります。
 
-| **方法**             | **操作**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows PowerShell     |  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) のドキュメントと、この記事の  [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler) を参照してください。 |
-| タスク スケジューラ API     |  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) ドキュメントを参照してください                                                                                                                                                                                                                                                                                |
-| Windows のユーザー インターフェイス | Windows の場合、 **[スタート]** をクリックし、「タスクスケジューラ」と入力します。 次に、結果のリストで  **[タスク スケジューラ]** を右クリックし、 **[管理者として実行]** を選択します。                                                                                                                                                                                                                                                                           |
+      | **方法**             | **操作**                                                                                                                                                                                                                                                                                                                                                                                                                     |
+      | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      | Windows PowerShell     |  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) のドキュメントと、この記事の  [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler) を参照してください。 |
+      | タスク スケジューラ API     |  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) ドキュメントを参照してください                                                                                                                                                                                                                                                                                |
+      | Windows のユーザー インターフェイス | Windows の場合、 **[スタート]** をクリックし、「タスクスケジューラ」と入力します。 次に、結果のリストで  **[タスク スケジューラ]** を右クリックし、 **[管理者として実行]** を選択します。                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>タスク スケジューラの PowerShell スクリプトの例
 
@@ -473,7 +473,9 @@ Office 365 DLP for Exchange Online (メール)、OneDrive for Business (ファ�
 
 9.  **[名前]**  セクションで、ルールの名前と説明を指定します。
 
-10.  **[条件]**  セクションの、 **[+ 条件の追加]**  リストで、 **[機密情報の種類を含むコンテンツ]** を選択します。<br/>![[機密情報の種類を含むコンテンツ]](../media/edm-dlp-newrule-conditions.png)<br/>
+10.  **[条件]**  セクションの、 **[+ 条件の追加]**  リストで、 **[機密情報の種類を含むコンテンツ]** を選択します。
+
+      ![機密情報の種類を含むコンテンツ](../media/edm-dlp-newrule-conditions.png)
 
 11. ルール パッケージのセットアップ時に作成した機密情 報の種類を検索し、 **[+ 追加]** を選択します。  
      **[完了]** を選択します。
