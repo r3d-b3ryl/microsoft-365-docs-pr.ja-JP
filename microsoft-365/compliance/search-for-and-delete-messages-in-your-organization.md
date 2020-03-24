@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Office 365 セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634165"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710516"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Office 365 組織でのメール メッセージの検索と削除
+# <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
 **この記事は管理者向けです。メールボックスで削除するアイテムを探している場合は、「[クイック検索を使ってメッセージまたはアイテムを検索する](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)」を参照してください。**|
    
 Office 365 のコンテンツ検索機能を使って、組織のすべてのメールボックスにあるメール メッセージを検索し削除できます。 この機能を使用して、次のように有害な、またはリスクが高い可能性があるメールを検索し、削除することができます。
   
 - 危険性のある添付ファイルやウイルスを含むメッセージ
-    
+
 - フィッシング メッセージ
-    
+
 - 機密データを含むメッセージ
-    
+
 > [!CAUTION]
-> 検索と消去は、必要なアクセス許可が割り当てられていれば、誰でも組織のメールボックスからメール メッセージを削除できる強力な機能です。 
+> 検索と消去は、必要なアクセス許可が割り当てられていれば、誰でも組織のメールボックスからメール メッセージを削除できる強力な機能です。
   
 ## <a name="before-you-begin"></a>始める前に
 
