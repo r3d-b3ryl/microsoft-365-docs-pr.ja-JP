@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a859aa201b43813d6c66a797cbfee160051d5103
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 9d7f6ee67e231ce7aa9bce1decc4de2f2d5a6d41
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235066"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929506"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -95,8 +95,9 @@ DeviceProcessEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 ## <a name="related-topics"></a>関連項目
-- [積極的に脅威を検索する](advanced-hunting-overview.md)
+- [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
-- [共有クエリを使う](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を検索する](advanced-hunting-query-emails-devices.md)
+- [クエリ結果を操作する](advanced-hunting-query-results.md)
+- [共有クエリを使用する](advanced-hunting-shared-queries.md)
+- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

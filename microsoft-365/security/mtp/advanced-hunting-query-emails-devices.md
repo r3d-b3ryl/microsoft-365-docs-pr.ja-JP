@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0bbcef72fa305819c9f8e0813cfcdfd6c2b0fff3
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234726"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928986"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>デバイスとメール全体で脅威を捜索する
 
@@ -94,8 +94,9 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>関連項目
-- [積極的に脅威を検索する](advanced-hunting-overview.md)
+- [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
+- [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

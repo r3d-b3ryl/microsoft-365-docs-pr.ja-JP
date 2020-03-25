@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2e7999fef43adb372947d9edf92b84ac67f347fe
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235006"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929042"
 ---
-# <a name="devicenetworkevents"></a>DeviceNetworkEvents 孔
+# <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -46,7 +46,7 @@ ms.locfileid: "42235006"
 | `RemoteUrl` | string | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `LocalIP` | 文字列 | 通信時に使用されるローカルコンピューターに割り当てられた IP アドレス |
 | `LocalPort` | int | 通信時に使用されるローカルコンピューターの TCP ポート |
-| `Protocol` | string | 使用されている IP プロトコル (TCP または UDP) |
+| `Protocol` | string | 通信中に使用されるプロトコル |
 | `LocalIPType` | string | IP アドレスの種類 (例: Public、Private、Reserved、Loopback、Teredo、FourToSixMapping、ブロードキャスト) |
 | `RemoteIPType` | string | IP アドレスの種類 (例: Public、Private、Reserved、Loopback、Teredo、FourToSixMapping、ブロードキャスト) |
 | `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
