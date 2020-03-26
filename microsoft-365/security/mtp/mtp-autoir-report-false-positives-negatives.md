@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262004"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955663"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査と応答機能で誤検知/否定を処理する
 
@@ -52,13 +52,13 @@ Microsoft の脅威保護ミスの自動化された[調査と応答機能](mtp-
 
 |シナリオ |サービス |行うこと |
 |--------|--------|--------|
-|-警告が正規の使用によってトリガーされる <br/>-警告が正確でない    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Cloud App Security ポータルで通知を管理する](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+|-警告が正規の使用によってトリガーされる <br/>-警告が正確でない    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> または <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Cloud App Security ポータルで通知を管理する](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
 |ファイル、IP アドレス、URL、またはドメインが安全であっても、デバイスのマルウェアとして扱われる|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |["許可" アクションを含むカスタムインジケーターを作成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>デバイスで実行された修復アクションを元に戻す
 
-修復アクションがデバイス (Windows 10 デバイスなど) に対して実行され、そのアイテムが実際にクリーンである場合、セキュリティ操作チームは[アクションセンター](mtp-action-center.md)で修復アクションを取り消すことができます。
+修復アクションがデバイス (Windows 10 デバイスなど) に対して実行され、そのアイテムが実際には脅威ではない場合、セキュリティ操作チームは[アクションセンター](mtp-action-center.md)の修復アクションを取り消すことができます。
 
 > [!IMPORTANT]
 > 次のタスクを実行する前に、[必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)があることを確認してください。

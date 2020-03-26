@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894854"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955546"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -135,7 +135,13 @@ ms.locfileid: "42894854"
 <p>
 <p>または、検索結果を PST ファイルにエクスポートし、Microsoft 365 インポートサービスを使用して Pst を探索メールボックスにインポートすることもできます。 詳細な手順については、「<a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">ネットワークアップロードを使用して PST ファイルを Office 365 にインポートする</a>」を参照してください。
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>あるメールボックスから別のメールボックスにメッセージをコピーする</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">メールボックスへのアクセス許可の割り当て</a></td>
+  <td>他のユーザーの電子メールにアクセスできるようにする (従業員が組織を離れたときに、別のユーザーに元従業員の電子メールへのアクセス権を付与する必要がある場合など) には、そのユーザーに元従業員のアクセス許可を割り当てることをお勧めします。メール. そのため、メールボックスアイテムを別のユーザーのメールボックスまたは共有メールボックスにコピーするのではなく、移動元のメールボックスにアクセスするためのユーザー権限のみを割り当てます。</td>
+  
+  </tr>
+<tr class="odd">
 <td>回復可能なアイテムフォルダーからアイテムを復元する</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">復元-回復した Ableitems</td>
   <td>アイテムの削除済みアイテムの保存期間が期限切れになっていない限り、メールボックス内の完全に削除されたアイテム (<i>回復可能な</i>アイテムとも呼ばれる) を復元することができます。 詳細については、「 <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Exchange Online の回復可能なアイテムフォルダー</a>」を参照してください。</td>
@@ -216,6 +222,13 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 <td>なし</td>
 <td>この機能は、Microsoft 365 のすべてのサービスへのアクセスを提供しないので、直接交換することはできません。 代替ソリューションについては、以下の FAQ を参照してください。</td>
 </tr>
+  <tr class=even>
+  <td>あるメールボックスから別のメールボックスにメッセージをコピーする</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">メールボックスへのアクセス許可の割り当て</a></td>
+  <td>他のユーザーの電子メールにアクセスできるようにする (従業員が組織を離れたときに、別のユーザーに元従業員の電子メールへのアクセス権を付与する必要がある場合など) には、そのユーザーに元従業員のアクセス許可を割り当てることをお勧めします。メール. そのため、メールボックスアイテムを別のユーザーのメールボックスまたは共有メールボックスにコピーするのではなく、移動元のメールボックスにアクセスするためのユーザー権限のみを割り当てます。</td>
+  
+  </tr>
+
 </tbody>
 </table>
 

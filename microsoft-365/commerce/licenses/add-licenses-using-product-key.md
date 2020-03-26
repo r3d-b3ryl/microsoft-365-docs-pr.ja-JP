@@ -23,20 +23,20 @@ search.appverid:
 - BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Office 365 サブスクリプションにライセンスを追加する方法について説明します。
-ms.openlocfilehash: 93c2929ae575282716cad7b6f64519f5974e3158
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: サブスクリプションにライセンスを追加する方法について説明します。
+ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242345"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951948"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクトキーを使用するためにライセンスを追加するか、有料のサブスクリプションを拡張する
 
 プリペイドライセンスは、25文字の英数字コードとして発行されます。 必要なライセンスの購入が完了すると、ライセンスをサブスクリプションに追加できます。 プロダクトキーを使用して、サブスクリプションの有効期限を延長することもできます。
 
 > [!NOTE]
-> 新しいプロダクトキーを購入しない場合は、クレジットカードまたは銀行口座をサブスクリプションに追加して、より多くのライセンスを購入するか、サブスクリプションの有効期限を延長するかをいつでも選択できます。 詳細については、「 [Office 365 for business の更新](../subscriptions/renew-your-subscription.md)」を参照してください。
+> 新しいプロダクトキーを購入しない場合は、クレジットカードまたは銀行口座をサブスクリプションに追加して、より多くのライセンスを購入するか、サブスクリプションの有効期限を延長するかをいつでも選択できます。 詳細については、「[サブスクリプションの更新](../subscriptions/renew-your-subscription.md)」を参照してください。
   
 ## <a name="add-licenses-to-your-subscription"></a>サブスクリプションにライセンスを追加する
 
@@ -45,7 +45,7 @@ ms.locfileid: "42242345"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. ライセンスを追加するサブスクリプションを検索します。 [**ライセンス**] セクションで、[**さらにライセンスを追加する**] を選択します。
 
@@ -62,7 +62,7 @@ ms.locfileid: "42242345"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. ライセンスを追加するサブスクリプションを検索します。 [**その他のアクション**] ドロップダウンリストを選択し、[**トークンを使用してライセンスを更新または追加**する] を選択します。
 
@@ -105,7 +105,7 @@ ms.locfileid: "42242345"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. 拡張するサブスクリプションを検索します。 [**課金**] セクションで、[**終了日を延長する**] を選択します。
 
@@ -122,7 +122,7 @@ ms.locfileid: "42242345"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. 拡張するサブスクリプションを検索します。 [**その他のアクション**] ドロップダウンリストを選択し、[**トークンを使用してライセンスを更新または追加**する] を選択します。
 
@@ -141,7 +141,7 @@ ms.locfileid: "42242345"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. 拡張するサブスクリプションを検索します。 [**その他のアクション**] ドロップダウンリストを選択し、[**トークンを使用してライセンスを更新または追加**する] を選択します。
 

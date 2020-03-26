@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise 基盤インフラストラクチャを組織に展開するための主要なフェーズ (コア展開とも呼ばれます) について理解します。
-ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633615"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951960"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise 基盤インフラストラクチャ
 
@@ -73,7 +73,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 [![Microsoft 365 Enterprise 基盤インフラストラクチャ ポスター用の画像](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
-ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)をクリックします。
+ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)をクリックします。
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>インフラストラクチャの構成とユーザー ロールアウト

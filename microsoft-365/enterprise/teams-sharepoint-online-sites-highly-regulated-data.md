@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: セキュリティで保護された SharePoint チーム サイトを作成して、最も重要な機密ファイルを保存します。
-ms.openlocfilehash: c74a2bc59a6ef9d16ecd0dfbed06d577bd98649b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085063"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951984"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>厳しく規制されたデータ用の SharePoint サイト
 
@@ -75,7 +75,7 @@ Microsoft 365 Enterprise には、一連のクラウドベースのサービス�
 
 [![厳しく規制されたデータ用の SharePoint サイトのポスター](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 
 ## <a name="identity-and-device-access-prerequisites"></a>ID とデバイス アクセスの前提条件

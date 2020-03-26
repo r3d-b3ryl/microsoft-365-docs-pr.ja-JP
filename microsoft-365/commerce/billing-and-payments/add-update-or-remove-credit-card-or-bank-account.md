@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Microsoft 365 管理センターで支払い方法を管理する方法について説明します。
-ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409702"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952008"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>お支払い方法を追加、更新、削除する
 
@@ -66,7 +66,7 @@ ms.locfileid: "42409702"
 
 ### <a name="change-the-payment-method-used-for-a-single-subscription"></a>単一のサブスクリプションに使用する支払い方法を変更する
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 2. 新しいカードまたは銀行口座に対して支払う必要があるサブスクリプションを選択します。 [**請求**] の下で支払い方法の横にある [**編集**] を選択します。
 3. 既存の支払い方法の横にある [**変更**] を選択します。
 4. ドロップダウンメニューから別の支払い方法を選択するか、支払い方法を追加します。
@@ -158,9 +158,7 @@ ms.locfileid: "42409702"
 この記事で説明されているタスクを実行するには、グローバル管理者または請求管理者である必要があります。
   
  **管理者ではない場合**: 詳細については、IT 管理者に問い合わせてください。[自分のビジネスで管理者権限を持つユーザー](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **Office 365 Home または Personal の**場合は、 [Microsoft アカウントにリンクされている支払い方法またはクレジットカードを変更](https://support.microsoft.com/help/4026594)するを参照してください。
-  
+
 > [!NOTE]
 > 銀行口座で支払うオプションは、一部の国や地域では使用できません。
 >
@@ -168,7 +166,7 @@ ms.locfileid: "42409702"
 
 ## <a name="add-a-credit-card-or-bank-account"></a>クレジットカードまたは銀行口座を追加する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 新しいクレジットカードまたは銀行口座で支払う必要のあるサブスクリプションを選択し、[**支払いの詳細の更新**] を選択します。
 
@@ -181,7 +179,7 @@ ms.locfileid: "42409702"
 4. 新しいクレジットカードまたは銀行口座の情報を入力し、[**送信**] を選択します。
 
     > [!NOTE]
-    > 新しいクレジットカードまたは銀行口座は、手順2で選択した Office 365 サブスクリプションに対してのみ使用されます。 新しいクレジット カードを使用するその他のサブスクリプションがある場合、各サブスクリプションの支払いに使用するクレジット カードを変更するには、この記事の手順に従います。
+    > 新しいクレジットカードまたは銀行口座は、手順2で選択したサブスクリプションに対してのみ使用されます。 新しいクレジット カードを使用するその他のサブスクリプションがある場合、各サブスクリプションの支払いに使用するクレジット カードを変更するには、この記事の手順に従います。
 
 ::: moniker-end
 
@@ -192,14 +190,12 @@ ms.locfileid: "42409702"
   
  **管理者ではない場合** は、IT 管理者にお問い合わせください。 [社内の管理者アカウントをお持ちの場合](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
   
- **Office 365 Home または Personal の**場合は、 [Microsoft アカウントにリンクされている支払い方法またはクレジットカードを変更](https://support.microsoft.com/help/4026594)するを参照してください。
-  
 > [!NOTE]
 > 銀行口座で支払うオプションは、一部の国や地域では使用できません。
 >
 > テナントと同じ国から発行されたクレジットカードを使用する必要があります。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 新しいクレジットカードまたは銀行口座で支払う必要のあるサブスクリプションを選択し、[**支払いの詳細の更新**] を選択します。
 
@@ -212,7 +208,7 @@ ms.locfileid: "42409702"
 4. 新しいクレジットカードまたは銀行口座の情報を入力し、[**送信**] を選択します。
 
     > [!NOTE]
-    > 新しいクレジットカードまたは銀行口座は、手順2で選択した Office 365 サブスクリプションに対してのみ使用されます。 新しいクレジット カードを使用するその他のサブスクリプションがある場合、各サブスクリプションの支払いに使用するクレジット カードを変更するには、この記事の手順に従います。
+    > 新しいクレジットカードまたは銀行口座は、手順2で選択したサブスクリプションに対してのみ使用されます。 新しいクレジット カードを使用するその他のサブスクリプションがある場合、各サブスクリプションの支払いに使用するクレジット カードを変更するには、この記事の手順に従います。
 
 ::: moniker-end
 
@@ -223,7 +219,7 @@ ms.locfileid: "42409702"
 > 既存のクレジット カードの番号は変更できません。 クレジットカード番号が変更されている場合は、新しいクレジットカードまたは銀行口座として追加します。 次に、サブスクリプションの支払いオプションとしてそのアカウントを選択し、既存のクレジットカードを削除します。
 > テナントと同じ国から発行されたクレジットカードを使用する必要があります。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 更新するクレジットカード銀行口座で購入したサブスクリプションを選択し、[**支払い詳細の更新**] を選択します。
 
@@ -251,7 +247,7 @@ ms.locfileid: "42409702"
 > 既存のクレジット カードの番号は変更できません。 クレジットカード番号が変更されている場合は、新しいクレジットカードまたは銀行口座として追加します。 次に、サブスクリプションの支払いオプションとしてそのアカウントを選択し、既存のクレジットカードを削除します。
 > テナントと同じ国から発行されたクレジットカードを使用する必要があります。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 更新するクレジットカード銀行口座で購入したサブスクリプションを選択し、[**支払い詳細の更新**] を選択します。
 
@@ -275,7 +271,7 @@ ms.locfileid: "42409702"
 ::: moniker range="o365-21vianet"
 ## <a name="remove-a-credit-card-or-bank-account"></a>新しいクレジット カードを削除する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 任意のサブスクリプションを選び、[**支払いの詳細の更新**] を選択します。
 
@@ -300,7 +296,7 @@ ms.locfileid: "42409702"
 ::: moniker range="o365-germany"
 ## <a name="remove-a-credit-card-or-bank-account"></a>新しいクレジット カードを削除する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 任意のサブスクリプションを選び、[**支払いの詳細の更新**] を選択します。
 
@@ -325,7 +321,7 @@ ms.locfileid: "42409702"
 ::: moniker range="o365-21vianet"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>サブスクリプションの支払いに使用するクレジットカードまたは銀行口座を変更する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 新しいクレジットカードまたは銀行口座で支払う必要のあるサブスクリプションを選択し、[支払いの**詳細の更新**] を選択します。
 
@@ -342,7 +338,7 @@ ms.locfileid: "42409702"
 ::: moniker range="o365-germany"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>サブスクリプションの支払いに使用するクレジットカードまたは銀行口座を変更する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 新しいクレジットカードまたは銀行口座で支払う必要のあるサブスクリプションを選択し、[支払いの**詳細の更新**] を選択します。
 

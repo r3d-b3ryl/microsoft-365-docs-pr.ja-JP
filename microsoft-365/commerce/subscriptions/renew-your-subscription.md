@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'プロダクトキーを使用して Office 365 for business サブスクリプションを更新し、定期的な請求をオンまたはオフにする方法について説明します。 '
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633705"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959218"
 ---
 # <a name="renew-office-365-for-business"></a>一般法人向け Office 365 サブスクリプションの更新またはライセンスの再認証をする
 
 この記事の情報は、支払い済みのほとんどの 一般法人向け Office 365 サブスクリプションに適用されます。
   
-小売り店または Office 365 パートナーから購入したプロダクトキーを使用して更新するには、「 [Efind」と「プロダクトキーを入力](../enter-your-product-key.md)してください」を参照してください。
+小売り店または Office 365 パートナーから購入したプロダクトキーを使用して更新するには、「[プロダクトキーを検索して入力](../enter-your-product-key.md)する」を参照してください。
 
 > [!NOTE]
 > 銀行口座による支払いは、一部の国や地域では使用できません。
@@ -120,7 +120,7 @@ ms.locfileid: "42633705"
   
 [クレジット カードまたは銀行口座を追加、更新、または削除する](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[Mysubscription が終了すると、データとアクセスはどうなりますか。](what-if-my-subscription-expires.md)
+[サブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)
 
 [お支払い方法を追加、更新、削除する](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 

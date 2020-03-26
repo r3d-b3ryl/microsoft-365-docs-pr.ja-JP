@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084313"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959184"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -38,45 +38,23 @@ ms.locfileid: "42084313"
 
 ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ルールは、[一般的な id およびデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクします。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|More information|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
 |        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに Exchange Online を含める|
 |        |[アプリ保護ポリシーを定義する](identity-access-policies.md#high-risk-users-must-change-password)|Outlook がアプリの一覧に含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新してください。|
-|        |[承認済みアプリの要求](identity-access-policies.md#require-approved-apps)|クラウドアプリの一覧に Exchange Online を含める|
+|        |[Intune アプリ保護ポリシーをサポートするアプリを要求する](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|クラウドアプリの一覧に Exchange Online を含める|
 |        |[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|クラウドアプリの一覧に Exchange Online を含める|
 |        |[ActiveSync クライアントをブロックする](#block-activesync-clients)|この新しいポリシーを追加する| 
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| クラウドアプリの割り当てに Exchange Online を含める|
 |         |[準拠*して*いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に Exchange Online を含める|
-|**厳しく規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
+|**高度な規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントをブロックする
 
-このポリシーでは、ActiveSync クライアントが他の条件付きアクセスルールをバイパスできないようにします。 ルール構成は、ActiveSync クライアントにのみ適用されます。 [承認された**クライアントアプリを必要と**する] を選択すると、このポリシーは ActiveSync クライアントをブロックします。 このポリシーを構成するには
+このポリシーでは、ActiveSync クライアントが他の条件付きアクセスルールをバイパスできないようにします。 ルール構成は、ActiveSync クライアントにのみ適用されます。 [**[アプリ保護ポリシーを必須](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** にする] を選択すると、このポリシーによって ActiveSync クライアントがブロックされます。 このポリシーの作成の詳細については、「[条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」を参照してください。
 
-1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインします。 サインインに成功すると、Azure ダッシュボードが表示されます。
-
-2. 左側のメニューから **[Azure Active Directory]** を選びます。
-
-3. **[セキュリティ]** セクションで、**[条件付きアクセス]** を選びます。
-
-4. **[新しいポリシー]** を選びます。
-
-5. ポリシー名を入力し、ポリシーを適用する **[ユーザーとグループ]** を選びます。
-
-6. **[クラウド アプリ]** を選びます。
-
-7. **[アプリの選択**] を選択し、[ **Office 365 Exchange Online**] を選択します。 **[選択**して**完了**] を選択します。
-
-8. [**条件**] を選択してから、[**クライアントアプリ**] を選択します。
-
-9. [**構成**] で、[**はい]** を選択します。 [**モバイルアプリ] と [デスクトップクライアント**] および [ **Exchange ActiveSync クライアント**] のみをチェックします。 [**完了**] を選択します。
-
-10. **[アクセス制御]** セクションから **[許可]** を選びます。
-
-11. [**アクセス許可の付与**] を選択し、[**承認済みクライアントアプリの要求**] を選択します。  複数のコントロールの場合は、[選択した**コントロールを必要とする**] を選択し、[**選択**] を選択します。
-
-12. **[作成]** を選択します。
+1. 「[シナリオ 1: Office 365 アプリは、アプリ保護ポリシーを使用して承認済みアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)とする」の「手順 2: exchange Online の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
 
 ## <a name="setup-office-365-message-encryption"></a>Office 365 メッセージの暗号化のセットアップ
 

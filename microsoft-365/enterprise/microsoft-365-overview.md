@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
-ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633305"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951996"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -69,7 +69,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 [![Microsoft 365 Enterprise ポスター用の画像](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
-ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)をクリックします。
+ポスターのコピーをダウンロードするには、[ここ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf)をクリックします。
 
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
@@ -80,7 +80,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 このポスター (見開き 2 ページ) で簡単に既存のインフラストラクチャのインベントリを作成し、Microsoft 365 Enterprise に対応する製品またはサービスに移行するためのガイダンスへとアクセスします。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 および Office 2010 のクライアントとサーバーのサポート終了を回避する
 
@@ -100,7 +100,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 この1ページのポスターは、Microsoft 365 for enterprise で推奨されるパスとサポートを使用して、Windows 7 および Office 2010 のクライアントおよびサーバー製品のサポートが終了するのを防ぐための、さまざまなパスを簡単に理解する方法を示しています。
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="deploy"></a>展開
 

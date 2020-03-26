@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air
-ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826405"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955576"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -92,7 +92,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>例: ユーザーから報告されたフィッシング メッセージによる調査プレイブックの起動
 
-組織内のユーザーが電子メールメッセージを送信し、 [outlook または Outlook Web App 用のレポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して Microsoft に報告すると、レポートはシステムにも送信され、ユーザーがレポートビューでエクスプローラーに表示されます。 ユーザーから報告されたこのメッセージによりシステム ベースの情報アラートがトリガーされ、これにより調査プレイブックが自動的に起動します。
+組織内のユーザーが、フィッシング詐欺であると思われる電子メールを受信したとします。 このようなメッセージを報告するためのトレーニングを受けたユーザーは、 [outlook または Outlook Web App 用のレポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して、分析のために Microsoft に送信します。 送信は、システムにも送信さ**れ、[送信] ビューの**エクスプローラーに表示されます (以前はユーザーによって**報告**されたビューと呼ばれています)。 さらに、ユーザーによって報告されたメッセージがシステムベースの情報通知をトリガーするようになります。これにより、調査のプレイブックが自動的に起動します。
 
 ルート調査フィーズでは、メールのさまざまな側面が評価されます。 これらには以下が含まれます。
 - 可能性のある脅威の種類の特定
@@ -121,13 +121,13 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 アラートによりトリガーされる自動調査に加え、組織のセキュリティ オペレーション チームは[脅威エクスプローラー](threat-explorer.md)内のビューから自動調査をトリガーすることができます。
 
-たとえば、ユーザーから報告されたメッセージに関するデータをエクスプローラーで確認しているとします。 結果のリストで項目を選択してから、[操作] メニューから [**調査**] をクリックします (適切な修復権限がある場合を想定しています)。
+たとえば、脅威エクスプローラーの**マルウェア**表示を使用しているとします。 グラフの下にあるタブを使用して、[**電子メール**] タブを選択します。リストで1つ以上のアイテムを選択すると、[ **+ Actions** ] ボタンがアクティブになります。 
 
-![エクスプローラーでのユーザーから報告されたメッセージと [調査] ボタン](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="選択されたメッセージを含むエクスプローラー":::
 
-別の例として、マルウェアが含まれているとして検出されたメール メッセージに関するデータを確認しているとします。マルウェアが含まれているとして、複数のメール メッセージが検出されています。 [**メール**] タブを選択し、1 つまたは複数のメール メッセージを選択し、[**処理**] メニューで [**調査**] を選択します。 
+[ **Actions** ] メニューを使用して、**トリガー調査**を選択できます。
 
-![マルウェアの調査をエクスプローラーで開始する](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="選択されたメッセージの [アクション] メニュー":::
 
 アラートによってトリガーされるプレイブックと同様、エクスプローラーのビューからトリガーされる自動調査には、ルート調査、脅威を特定して相関関連を特定するための手順、これらの脅威を軽減するための推奨処置が含まれます。
 

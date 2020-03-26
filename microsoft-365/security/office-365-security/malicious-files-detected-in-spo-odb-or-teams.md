@@ -2,8 +2,8 @@
 title: SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: SharePoint、OneDrive、Teams で検出された悪意のあるファイルに関する情報を表示する方法と、それらのファイルに対してアクションを実行する方法について説明します。
-ms.openlocfilehash: 49c7e1668602a63b8b82339ad0cc7823146212a4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599014"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955557"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する
 
@@ -53,13 +53,13 @@ Office 365 ATP によって検出されたファイルの状態と詳細情報�
     
 4. 使用可能なアクションを選択します。
     
-  - ファイルのブロックを解除するには、[**ファイルの解放**] を選択します。 
-    
-    Microsoft への誤検知としてファイルを報告するには、[ **microsoft にレポートを送信**する] を選択します。 
-    
-  - [**ファイルのダウンロード**] を選択して、ファイルをさらに調査します。 
-    
-  - 検疫されたアイテムのリストからファイルを削除するには、[**検疫から削除**] を選択します。 このオプションを選択する場合は、SharePoint Online、OneDrive for Business、または Microsoft Teams の対応するライブラリからもファイルを削除する必要があります。 このオプションでは、ファイルが開かれたり共有されたりすることはブロックされません。 
+    - ファイルのブロックを解除するには、[**ファイルの解放**] を選択します。 
+
+      Microsoft への誤検知としてファイルを報告するには、[ **microsoft にレポートを送信**する] を選択します。 
+
+    - [**ファイルのダウンロード**] を選択して、ファイルをさらに調査します。 
+
+    - 検疫されたアイテムのリストからファイルを削除するには、[**検疫から削除**] を選択します。 このオプションを選択する場合は、SharePoint Online、OneDrive for Business、または Microsoft Teams の対応するライブラリからもファイルを削除する必要があります。 このオプションでは、ファイルが開かれたり共有されたりすることはブロックされません。 
     
 5. [**閉じる**] を選択して、選択したアイテムの詳細を閉じます。 
   

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067961"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951936"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Microsoft 365 Enterprise の展開
 
@@ -95,7 +95,7 @@ TLGs を使用すると、複雑な構成、ワークロード、またはエン
 
 このポスター (見開き 2 ページ) で簡単に既存のインフラストラクチャのインベントリを作成し、Microsoft 365 Enterprise に対応する製品またはサービスに移行するためのガイダンスへとアクセスします。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
-[移行ポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
+[移行ポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="how-did-others-do-it"></a>他のユーザーはどのように活用しましたか？
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の ID インフラストラクチャを展開する手順。
-ms.openlocfilehash: f32df9a35e09b438b5034ad963523879a639a3fc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067330"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952032"
 ---
 # <a name="phase-2-identity"></a>フェーズ 2: ID
 
@@ -44,7 +44,7 @@ Microsoft 365 Enterprise の ID モデルと認証の概要については、こ
 
 この 2 ページのポスターで、Microsoft 365 Enterprise の ID の概念と構成をすばやく把握できます。
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/identity-infrastructure/M365E-ID-Infra.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>Microsoft 365 Enterprise の ID インフラストラクチャを計画および展開する 
 

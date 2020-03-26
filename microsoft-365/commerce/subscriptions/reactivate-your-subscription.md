@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: Office 365 の期限が切れたとき、または Microsoft が無効にされた場合、または途中でキャンセルした場合に、Office のサブスクリプションを再アクティブ化する方法について説明します。
-ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: サブスクリプションの有効期限が切れたとき、または Microsoft が無効にされた場合、または途中でキャンセルした場合に、サブスクリプションを再アクティブ化する方法について説明します。
+ms.openlocfilehash: 6126c9ccc05a1ee0927f928b045bd1c383479893
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354608"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952044"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
@@ -43,7 +43,7 @@ ms.locfileid: "42354608"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. [ **Products & services** ] ページで、再アクティブ化するサブスクリプションを検索します。 [**課金**] セクションで、[**再アクティブ化**] を選択します。
   
@@ -63,7 +63,7 @@ ms.locfileid: "42354608"
 
 ::: moniker range="o365-germany"
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 再アクティブ化するサブスクリプションを検索し、[**再アクティブ化**] を選択します。
 
@@ -84,7 +84,7 @@ ms.locfileid: "42354608"
 
 ::: moniker range="o365-21vianet"
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 再アクティブ化するサブスクリプションを検索し、[**再アクティブ化**] を選択します。
 
