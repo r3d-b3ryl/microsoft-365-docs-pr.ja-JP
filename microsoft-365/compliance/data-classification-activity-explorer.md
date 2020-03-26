@@ -1,5 +1,5 @@
 ---
-title: データ分類アクティビティ エクスプローラーを使用する
+title: アクティビティ エクスプローラーの使用を開始する (プレビュー)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 68304bc75d33c993db52895828ec49e3b5203a4c
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076772"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929461"
 ---
-# <a name="view-activity-on-your-labeled-content-preview"></a>ラベル付きコンテンツのアクティビティを表示する (プレビュー)
+# <a name="get-started-with-activity-explorer-preview"></a>アクティビティ エクスプローラーの使用を開始する (プレビュー)
 
 データ分類の概要およびコンテンツ エクスプローラーのタブにより、どのコンテンツが検出されてラベルが付けられているか、およびそのコンテンツのある場所に対する可視性が与えられます。 アクティビティ エクスプローラーでは、ラベル付きコンテンツに対して実行される内容を監視できるようにすることで、こうした一連の機能性を完全なものにします。 アクティビティ エクスプローラーでは、履歴ビューを提供します。
 

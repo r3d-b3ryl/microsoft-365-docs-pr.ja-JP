@@ -1,5 +1,5 @@
 ---
-title: データ分類コンテンツ エクスプローラー (プレビュー)
+title: コンテンツ エクスプローラーの使用を開始する (プレビュー)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 91246a701e1c5a030f4c9c53e25e56c137e7569b
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409692"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929409"
 ---
-# <a name="using-data-classification-content-explorer-preview"></a>データ分類コンテンツ エクスプローラー (プレビュー)
+# <a name="get-started-with-content-explorer-preview"></a>コンテンツ エクスプローラーの使用を開始する (プレビュー)
 
 データ分類コンテンツ エクスプローラーにより、概要ページで要約されたアイテムをネイティブに表示することができます。
 

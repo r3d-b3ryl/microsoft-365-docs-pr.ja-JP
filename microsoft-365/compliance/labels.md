@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634305"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929451"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -261,14 +261,14 @@ Office 365 グループのコンテンツを保持するには、Office 365 グ�
     
 - [作成したクエリに一致する特定のキーワード](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [トレーニング可能な分類子のマッチ](#auto-apply-labels-to-content-by-using-trainable-classifers)
+- [トレーニング可能な分類子の一致](#auto-apply-labels-to-content-by-using-trainable-classifiers)
     
 ![自動適用ラベルの [条件選択] ページ](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 構成した条件に一致するすべてのコンテンツに保持ラベルを自動的に適用するには、最大 7 日かかります。
   
 > [!TIP]
-> SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、「[保持ラベルを使用した SharePoint ドキュメントのライフサイクルの管理](auto-apply-retention-labels-scenario.md)」を参照してください。
+> SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、「[保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)」を参照してください。
 
 ### <a name="auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information"></a>特定の種類の機密情報によるコンテンツへの保持ラベルの自動適用
 
@@ -311,9 +311,9 @@ Office 365 グループのコンテンツを保持するには、Office 365 グ�
 ![クエリ エディター](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
 
-トレーニング可能な分類子のオプションを選択すると、組み込み分類子またはカスタム分類子のいずれかを選択できます。 組み込み分類子には、**攻撃的言語**、**履歴書**、**ソース コード**、**標的型攻撃**、**冒とく**、および**脅威**が含まれます。
+トレーニング可能な分類子のオプションを選択すると、組み込み分類子またはカスタム分類子のいずれかを選択できます。 組み込み分類子には、**攻撃的言語**、**履歴書**、**ソース コード**、**個人を標的にしたハラスメント**、**冒とく**、および**脅威**が含まれます。
 
 ![トレーニング可能な分類子の選択](../media/retention-label-classifers.png)
 
