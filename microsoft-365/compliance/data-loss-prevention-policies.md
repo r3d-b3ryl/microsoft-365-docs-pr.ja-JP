@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826292"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -179,6 +179,8 @@ OneDrive for Business アカウントにおけるポリシー ヒントの表示
 ルールが一致する場合は、イベントの詳細を含むインシデント レポートをコンプライアンス担当者 (または選択したユーザー) に送信できます。 このレポートには、一致したアイテム、ルールに一致した実際のコンテンツ、コンテンツの最終変更者の名前が含まれます。 メール メッセージの場合、レポートには添付ファイルとして、DLP ポリシーに適合する元のメッセージも含まれます。
   
 ![インシデント レポートを構成するためのページ](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+
+DLP は、SharePoint Online や OneDrive for Business のアイテムとは異なる方法でメールをスキャンします。 SharePoint Online や OneDrive for Business では、DLP は新しいアイテムだけでなく既存のアイテムもスキャンして、一致が検出される場合は常にインシデント レポートを生成します。 Exchange Online では、DLP は新しいメール メッセージのみをスキャンして、ポリシーとの一致が検出されるとレポートを生成します。 DLP は、メールボックスやアーカイブに保存されている既存のメール アイテムについては、スキャンや一致検出を***実行しません***。
   
 ## <a name="grouping-and-logical-operators"></a>グループ化と論理演算子
 

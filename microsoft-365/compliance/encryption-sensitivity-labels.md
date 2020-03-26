@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634915"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826238"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -59,7 +59,7 @@ ms.locfileid: "42634915"
 - [**Remove**] (削除): ドキュメントまたはメールが暗号化されている場合は、暗号化が削除されます。
 
 > [!NOTE]
-> [**Remove**] (削除) オプションは、Azure Information Protection 統合ラベル付けクライアントでのみサポートされています。 組み込みのラベル付け機能を使用した場合、同オプションのラベルが Office アプリに表示されますが、これを選択した場合の暗号化の動作は、[**None**] (なし) の動作と同じになります。
+> [**Remove**] (削除) オプションは、Azure Information Protection 統合ラベル付けクライアントでのみサポートされています。 組み込みのラベル付け機能を使用した場合、同オプションのラベルが Office アプリとサービスに表示されますが、これを選択した場合の暗号化の動作は、[**None**] (なし) の動作と同じになります。
 
 暗号化オプションの構成:
 

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本のスパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。
-ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086276"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857359"
 ---
 # <a name="configure-your-spam-filter-policies"></a>スパム フィルター ポリシーの設定
 スパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。 スパム フィルター ポリシー設定は、受信メッセージのみに適用され、次の 2 つの種類があります。
@@ -83,7 +83,7 @@ ms.locfileid: "42086276"
    - **[メッセージを隔離する]:** メッセージを本来の受信者に送信せず、検疫に送信します。 これは、フィッシングに対する既定のアクションです。 このオプションを選択した場合は、 **[次の期間スパムを保持する (日)]** 入力ボックスで、スパム メッセージを検疫する日数を指定します。 (その時間が経過すると、自動的に削除されます。 既定値は 30 日で、これが最大値です。 最小値は 1 日です)。
 
      > [!TIP]
-     > 管理者が検疫内のメール メッセージを管理する方法の詳細については、「[検疫](quarantine.md)」と「[管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」を参照してください。 <br/><br/> ユーザーのスパム通知メッセージを構成する方法については、「[EOP でのエンドユーザー スパム通知の構成](configure-end-user-spam-notifications-in-eop.md)」または「[Exchange Online エンドユーザー スパム通知の構成](configure-end-user-spam-notifications-in-exchange-online.md)」を参照してください。
+     > 管理者が検疫内のメール メッセージを管理する方法の詳細については、「[検疫](quarantine.md)」および「[Office 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。 <br/><br/> ユーザーのスパム通知メッセージを構成する方法については、「[EOP でのエンドユーザー スパム通知の構成](configure-end-user-spam-notifications-in-eop.md)」または「[Exchange Online エンドユーザー スパム通知の構成](configure-end-user-spam-notifications-in-exchange-online.md)」を参照してください。
 
    - **[しきい値の選択]** を設定して、メッセージのバルク苦情レベル (BCL) に基づいてバルク メールをスパムとして扱う方法を決定します。 1 から 9 までのしきい値の設定を選択できます。1 はほとんどのバルク メールをスパムとして指定し、9 はほとんどのバルク メールの配信を許可します。 その後、メッセージを受信者の迷惑メール フォルダーに送信するなどの構成されたアクションをサービスが実行します。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」および「[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
 
