@@ -2,10 +2,10 @@
 title: Office 365 のユーザーとして検疫済みメッセージを検索して解放する
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 05/19/2018
+ms.date: ''
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,104 +16,164 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: Office 365 のユーザーとして、自分のスパム検疫メッセージを次の 2 つのうちいずれかの方法で管理できます。1 つは送信されたスパム通知に直接応答する方法 (管理者がこの機能を設定している場合) で、もう 1 つはセキュリティ &amp; コンプライアンス センターでスパム検疫機能を使用する方法です。
-ms.openlocfilehash: 277af18d2061e8bd13386ab96e37d982d68e0b52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Office 365 のユーザーは、検疫されたメッセージ (本人が受信者で、スパム フィルターによりスパムまたはバルク メールとして検疫されたメッセージ) を表示、解放、削除することができます。 検疫されたメッセージの表示と管理は、セキュリティ/コンプライアンス センターで行います。
+ms.openlocfilehash: e74358d57b96c8655fbf6a3f7f0b6eedb5e65ede
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599294"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857335"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a><span data-ttu-id="89506-103">Office 365 のユーザーとして検疫済みメッセージを検索して解放する</span><span class="sxs-lookup"><span data-stu-id="89506-103">Find and release quarantined messages as a user in Office 365</span></span>
+# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a><span data-ttu-id="4d14a-104">Office 365 のユーザーとして検疫済みメッセージを検索して解放する</span><span class="sxs-lookup"><span data-stu-id="4d14a-104">Find and release quarantined messages as a user in Office 365</span></span>
 
-<span data-ttu-id="89506-104">Office 365 のユーザーとして、自分に配信されずに検疫に送られたメッセージを次の 2 つのうちいずれかの方法で管理できます。1 つは [送信されたスパム通知に直接応答する方法](use-spam-notifications-to-release-and-report-quarantined-messages.md) (管理者がこの機能を設定している場合) で、もう 1 つはセキュリティ &amp; コンプライアンス センターでスパム検疫機能を使用する方法です。</span><span class="sxs-lookup"><span data-stu-id="89506-104">As an Office 365 user, you can manage messages that were sent to quarantine instead of sent to you in one of two ways: by [responding to spam notifications sent to you directly](use-spam-notifications-to-release-and-report-quarantined-messages.md) (if your admin has set this up), or by using the Security &amp; Compliance Center.</span></span>
+<span data-ttu-id="4d14a-105">検疫を実行すると、Exchange Online メールボックスを使用している Office 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織の危険な可能性のあるメッセージや不要なメッセージが保持されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-105">Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.</span></span> <span data-ttu-id="4d14a-106">詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d14a-106">For more information, see [Quarantine in Office 365](quarantine-email-messages.md).</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="89506-105">管理者の場合は、組織内の他のユーザーのために [検疫済みメッセージを管理する](manage-quarantined-messages-and-files.md) ことができます。</span><span class="sxs-lookup"><span data-stu-id="89506-105">If you're an admin, you can [manage quarantined messages](manage-quarantined-messages-and-files.md) for other people in your organization.</span></span>
+<span data-ttu-id="4d14a-107">ユーザーは、本人が受信者で、スパム、バルク メール、または (2020 年 4 月以降) フィッシングとして検疫された検疫済みメッセージを表示、解放、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-107">As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing.</span></span> <span data-ttu-id="4d14a-108">誤検知を Microsoft に報告することもできます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-108">You can also report false positives to Microsoft.</span></span>
 
-## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a><span data-ttu-id="89506-106">自分に配信されずに検疫に送信されたメッセージを表示する</span><span class="sxs-lookup"><span data-stu-id="89506-106">View messages that were sent to quarantine instead of to you</span></span>
+<span data-ttu-id="4d14a-109">検疫されたメッセージの表示と管理は、セキュリティ/コンプライアンス センターで行います。</span><span class="sxs-lookup"><span data-stu-id="4d14a-109">You view and manage your quarantined messages in the Security & Compliance Center.</span></span>
 
-1. <span data-ttu-id="89506-107">Office 365 にサインインし、職場または学校のアカウントを使用して[セキュリティ/コンプライアンス センター](../../compliance/go-to-the-securitycompliance-center.md)に移動します。</span><span class="sxs-lookup"><span data-stu-id="89506-107">Sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) using your work or school account.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="4d14a-110">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="4d14a-110">What do you need to know before you begin?</span></span>
 
-2. <span data-ttu-id="89506-108">左側の [**脅威の管理**] を展開し、[**確認**] を選択して、[**検疫**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="89506-108">On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.</span></span>
+- <span data-ttu-id="4d14a-111">Office 365 セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com> にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-111">To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>.</span></span> <span data-ttu-id="4d14a-112">検疫ページを直接開くには、<https://protection.office.com/quarantine> にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-112">To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.</span></span>
 
-    > [!TIP]
-    > <span data-ttu-id="89506-109">[**検疫**] ページ (セキュリティ &amp; コンプライアンス センター内) に直接移動するには、次の URL を使用します。[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)</span><span class="sxs-lookup"><span data-stu-id="89506-109">To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)</span></span>
+- <span data-ttu-id="4d14a-113">管理者は、どれ程の期間メッセージを保持してから完全に削除するかを設定できます (スパム対策ポリシー)。</span><span class="sxs-lookup"><span data-stu-id="4d14a-113">Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies).</span></span> <span data-ttu-id="4d14a-114">検疫期間が切れたメッセージは回復できません。</span><span class="sxs-lookup"><span data-stu-id="4d14a-114">Messages that have expired from quarantine are unrecoverable.</span></span> <span data-ttu-id="4d14a-115">詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d14a-115">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="89506-110">既定では、セキュリティ &amp; コンプライアンス センターには、スパムとして検疫されたすべてのメール メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="89506-110">By default, the Security &amp; Compliance Center displays all email messages that have been quarantined as spam.</span></span> <span data-ttu-id="89506-111">メッセージは、受信の [**日付**] に基づいて、最新のものから順に並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="89506-111">The messages are sorted from newest to oldest based on the **Date** the message was received.</span></span> <span data-ttu-id="89506-112">各メッセージに [**送信者**]、[**件名**]、および有効期限 ([**有効期限**]) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="89506-112">**Sender**, **Subject**, and the expiration date (under **Expires** ) are also displayed for each message.</span></span> <span data-ttu-id="89506-113">特定のフィールドで並べ替えるには、その列見出しをクリックします。列見出しをもう一度クリックすると、逆の順番に並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="89506-113">You can sort on a field by clicking the corresponding column header; click a column header a second time to reverse the sort order.</span></span>
+- <span data-ttu-id="4d14a-116">管理者は、スパム対策ポリシーで[ エンドユーザー スパム通知を有効にする](configure-your-spam-filter-policies.md)こともできます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-116">Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md) in anti-spam policies.</span></span> <span data-ttu-id="4d14a-117">2019 年 10 月より、検疫されたメッセージをこのような通知から直接開放することはできなくなっています。</span><span class="sxs-lookup"><span data-stu-id="4d14a-117">As of October 2019, you can no longer release quarantined messages directly from these notifications.</span></span> <span data-ttu-id="4d14a-118">通知の **[レビュー]** をクリックすると、セキュリティ/コンプライアンス センターの [検疫] に移動できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-118">You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center.</span></span> <span data-ttu-id="4d14a-119">詳細については、「[Office 365 でのエンドユーザースパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d14a-119">For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).</span></span>
 
-<span data-ttu-id="89506-114">検疫済みメッセージの一覧を表示することも、フィルターを使用して特定のメッセージを検索することもできます。</span><span class="sxs-lookup"><span data-stu-id="89506-114">You can view a list of all quarantined messages, or you can search for specific messages by filtering.</span></span> <span data-ttu-id="89506-115">一括操作は 100 件以下のアイテムにのみ実行できます。そのため、100 件を越える場合は、フィルターを使って結果セットを小さくすることができます。</span><span class="sxs-lookup"><span data-stu-id="89506-115">You can only do bulk operations on up to 100 items, so filtering can also help reduce your result set if you have more than that.</span></span> <span data-ttu-id="89506-116">ドロップダウン リストからオプションを選択することで、メッセージを 1 つの検疫理由についてすばやくフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="89506-116">You can quickly filter messages for a single quarantine reason by choosing an option from the drop-down list.</span></span> <span data-ttu-id="89506-117">オプションは以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="89506-117">Options include:</span></span>
+- <span data-ttu-id="4d14a-120">高確度フィッシング、マルウェアとして検疫されるか、メール フロー ルール (別名: トランスポート ルール) により検疫されたメッセージは、管理者のみが管理できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-120">Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins.</span></span> <span data-ttu-id="4d14a-121">詳細については、「[Office 365 の管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d14a-121">For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).</span></span>
 
-- <span data-ttu-id="89506-118">スパムと識別されたメール。</span><span class="sxs-lookup"><span data-stu-id="89506-118">Mail identified as spam.</span></span> <span data-ttu-id="89506-119">検疫済みメッセージは既定で表示されます。</span><span class="sxs-lookup"><span data-stu-id="89506-119">These quarantined messages are shown by default.</span></span>
+- <span data-ttu-id="4d14a-122">あるメッセージを開放して、それを誤検知 (迷惑メールではない) として報告できるのは一度だけです。</span><span class="sxs-lookup"><span data-stu-id="4d14a-122">You can only release a message and report it as a false positive (not junk) once.</span></span>
 
-- <span data-ttu-id="89506-120">バルク メールと識別されたメール。</span><span class="sxs-lookup"><span data-stu-id="89506-120">Mail identified as bulk mail.</span></span>
+## <a name="view-your-quarantined-messages"></a><span data-ttu-id="4d14a-123">検疫済みメッセージを表示する</span><span class="sxs-lookup"><span data-stu-id="4d14a-123">View your quarantined messages</span></span>
 
-<span data-ttu-id="89506-121">特定の検疫済みメッセージを見つけたら、メッセージをダブルクリックして詳細を表示し、処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="89506-121">After you find a specific quarantined message, click the message to view details about it, and take actions.</span></span> <span data-ttu-id="89506-122">メッセージは、メールボックスに解放、プレビュー、ダウンロード、または直ちに検疫から削除できます。</span><span class="sxs-lookup"><span data-stu-id="89506-122">You can release the message to your mailbox, preview the message, download the message, or delete the message from quarantine immediately.</span></span>
+1. <span data-ttu-id="4d14a-124">セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[レビュー]** \> **[検疫]** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-124">In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="89506-123">他のユーザーに送信された検疫済みメッセージを処理するには、Office 365 の管理者アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="89506-123">You must have admin permissions in Office 365 to work with quarantined messages that were sent to other users.</span></span>
+2. <span data-ttu-id="4d14a-125">使用できる列見出しをクリックすると、結果を並べ替えることができます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-125">You can sort the results by clicking on an available column header.</span></span> <span data-ttu-id="4d14a-126">**[列の変更]** をクリックして、最大で 7 列まで表示できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-126">Click **Modify columns** to show a maximum of seven columns.</span></span> <span data-ttu-id="4d14a-127">既定値にはアスタリスク (<sup>\*</sup>) が付いています。</span><span class="sxs-lookup"><span data-stu-id="4d14a-127">The default values are marked with an asterisk (<sup>\*</sup>):</span></span>
 
-## <a name="to-filter-and-find-quarantined-messages"></a><span data-ttu-id="89506-124">検疫済みメッセージのフィルター処理と検索</span><span class="sxs-lookup"><span data-stu-id="89506-124">To filter and find quarantined messages</span></span>
+   - <span data-ttu-id="4d14a-128">**[Received](受信日時)**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="4d14a-128">**Received**<sup>\*</sup></span></span>
 
-<span data-ttu-id="89506-125">検疫されたアイテムが多数ある場合は、扱いやすい数に減らすためフィルター処理を行えます。</span><span class="sxs-lookup"><span data-stu-id="89506-125">If you have a lot of quarantined items, you can reduce the number to a manageable set by filtering them.</span></span>
+   - <span data-ttu-id="4d14a-129">**[送信者]**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="4d14a-129">**Sender**<sup>\*</sup></span></span>
 
-1. <span data-ttu-id="89506-126">[**検疫**] ページで、[**迷惑メール**] 検閲メッセージと [**バルク メール**] 検閲メッセージのどちらを表示するのかを選択します。</span><span class="sxs-lookup"><span data-stu-id="89506-126">On the **Quarantine** page, choose whether you want to view **spam** or **bulk** quarantined messages.</span></span>
+   - <span data-ttu-id="4d14a-130">**[件名]**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="4d14a-130">**Subject**<sup>\*</sup></span></span>
 
-2. <span data-ttu-id="89506-127">[**結果の並べ替え基準**] で、該当するフィルターを設定して条件の任意の組み合わせを選びます (ここではワイルドカードを使用できません)。</span><span class="sxs-lookup"><span data-stu-id="89506-127">Under **Sort results by**, choose any combination of conditions by setting the appropriate filter or filters (you can't use wildcards at this time).</span></span> <span data-ttu-id="89506-128">選択できる条件はいくつかあり、次を含みます。</span><span class="sxs-lookup"><span data-stu-id="89506-128">There are several conditions you can choose, including the following:</span></span>
+   - <span data-ttu-id="4d14a-131">**[検疫の理由]**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="4d14a-131">**Quarantine reason**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="89506-129">[**メッセージ ID**] メッセージ ID がわかっている特定のメッセージを選択するときに使用します。</span><span class="sxs-lookup"><span data-stu-id="89506-129">**Message ID**: Use this to select a specific message when you know the message ID.</span></span>
+   - <span data-ttu-id="4d14a-132">**[開放済み?]**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="4d14a-132">**Released?**<sup>\*</sup></span></span>
 
-     <span data-ttu-id="89506-130">たとえば、目的のメッセージの送信者または宛先が組織内のユーザーで、宛先に届かない場合、メッセージ追跡を使用してメッセージを検索できます (「[セキュリティ/コンプライアンス センターのメッセージ追跡](message-trace-scc.md)」を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="89506-130">For example, if a specific message is sent by, or intended for, a user in your organization, but it never reached its destination, you can search for the message by using a message trace (see [Message trace in the Security & Compliance Center](message-trace-scc.md)).</span></span> <span data-ttu-id="89506-131">メッセージがメール フロー ルールと一致したため、またはスパムとして識別されたために検疫に送信されたことが判明した場合は、そのメッセージのメッセージ ID を指定することで、検疫内でそのメッセージを簡単に見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="89506-131">If you discover that the message was sent to quarantine, perhaps because it matched a mail flow rule or was identified as spam, you can then easily find this message in quarantine by specifying its Message ID.</span></span> <span data-ttu-id="89506-132">完全なメッセージ ID 文字列を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="89506-132">Be sure to include the full Message ID string.</span></span> <span data-ttu-id="89506-133">メッセージ ID には、次のように、山かっこ (\<\>) が含まれる場合もあります。</span><span class="sxs-lookup"><span data-stu-id="89506-133">This might include angle brackets (\<\>), for example:</span></span>
+   - <span data-ttu-id="4d14a-133">**[ポリシーの種類]**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="4d14a-133">**Policy type**<sup>\*</sup></span></span>
 
-     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
+   - <span data-ttu-id="4d14a-134">**[有効期限]**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="4d14a-134">**Expires**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="89506-134">[**送信者のメール アドレス**] 1 つの送信者のメール アドレスによってフィルター処理する場合に選択します。</span><span class="sxs-lookup"><span data-stu-id="89506-134">**Sender email address**: Choose to filter by a single sender email address.</span></span>
+   - <span data-ttu-id="4d14a-135">**[受信者]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-135">**Recipient**</span></span>
 
-   - <span data-ttu-id="89506-135">[**受信者のメール アドレス**] 1 つの受信者のメール アドレスによってフィルター処理する場合に選択します。</span><span class="sxs-lookup"><span data-stu-id="89506-135">**Recipient email address**: Choose to filter by a single recipient email address.</span></span>
+   - <span data-ttu-id="4d14a-136">**[メッセージ ID]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-136">**Message ID**</span></span>
 
-   - <span data-ttu-id="89506-136">[**件名**] 検索するメール アドレスの件名を入力します。</span><span class="sxs-lookup"><span data-stu-id="89506-136">**Subject**: Enter the subject of an email address you want to find.</span></span>
+   - <span data-ttu-id="4d14a-137">**[ポリシー名]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-137">**Policy name**</span></span>
 
-   - <span data-ttu-id="89506-137">[**日付範囲**] メッセージが検疫に送られた日付を使用してフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="89506-137">**Date range**: You can choose to filter by the date the message was sent to quarantine.</span></span> <span data-ttu-id="89506-138">日付または日付範囲を指定することができます (時間も指定できます)。</span><span class="sxs-lookup"><span data-stu-id="89506-138">You can specify the date or a date range, including the time.</span></span>
+   - <span data-ttu-id="4d14a-138">**[サイズ]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-138">**Size**</span></span>
 
-   - <span data-ttu-id="89506-139">[**有効期限**] 有効期限によってフィルター処理する場合は、[**高度なフィルター**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="89506-139">**Expiration date**: To filter by expiration date, choose **Advanced filter**.</span></span> <span data-ttu-id="89506-140">24 時間以内 ([**今日**])、48 時間以内 ([**2 日以内**])、1 週間以内 ([**7 日以内**]) に検疫から削除されるメッセージを選択することができます。また、任意の期間を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="89506-140">You can select messages that will be deleted from quarantine within the next 24 hours ( **Today**), within the next 48 hours ( **Next 2 days**), within the next week ( **Next 7 days**), or you can select a custom time interval.</span></span>
+   - <span data-ttu-id="4d14a-139">**[方向]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-139">**Direction**</span></span>
 
-     > [!IMPORTANT]
-     > <span data-ttu-id="89506-141">既定では、迷惑メール メッセージとバルク メール メッセージは、検疫に 30 日間保持されます。</span><span class="sxs-lookup"><span data-stu-id="89506-141">By default, spam and bulk messages are kept in quarantine for 30 days.</span></span> <span data-ttu-id="89506-142">ただし、この期間は設定可能なため、管理者が異なる検疫期間を設定している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="89506-142">However, this time period is configurable and your admin might have set a different quarantine retention period.</span></span> <span data-ttu-id="89506-143">Office 365 で検疫からメッセージが削除されると、元に戻すことはできません。</span><span class="sxs-lookup"><span data-stu-id="89506-143">When Office 365 deletes a message from quarantine, you can't get it back.</span></span>
+   <span data-ttu-id="4d14a-140">完了したら、**[保存]** をクリックして、**[既定値に設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-140">When you're finished, click **Save**, or click **Set to default**.</span></span>
 
-## <a name="view-details-for-a-specific-message"></a><span data-ttu-id="89506-144">特定のメッセージの詳細情報を表示する</span><span class="sxs-lookup"><span data-stu-id="89506-144">View details for a specific message</span></span>
+3. <span data-ttu-id="4d14a-141">結果をフィルター処理するには、**[フィルター]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-141">To filter the results, click **Filter**.</span></span> <span data-ttu-id="4d14a-142">使用できるフィルターは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="4d14a-142">The available filters are:</span></span>
 
-<span data-ttu-id="89506-145">メッセージを選択すると、ページの右側にあるウィンドウにメッセージのプロパティの概要が表示されます。</span><span class="sxs-lookup"><span data-stu-id="89506-145">After you select a message, you'll see a summary of the message properties in a pane on the right side of the page.</span></span>
+   - <span data-ttu-id="4d14a-143">**[期限切れ日時]**: 検疫の期限が切れるタイミングでメッセージをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-143">**Expires time**: Filter messages by when they will expire from quarantine:</span></span>
 
-- <span data-ttu-id="89506-146">[**メッセージ ID**] メッセージの一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="89506-146">**Message ID**: The unique identifier for the message.</span></span>
+     - <span data-ttu-id="4d14a-144">**[今日]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-144">**Today**</span></span>
 
-- <span data-ttu-id="89506-147">[**送信者のアドレス**] メッセージの送信者。</span><span class="sxs-lookup"><span data-stu-id="89506-147">**Sender Address**: Who sent the message.</span></span>
+     - <span data-ttu-id="4d14a-145">**[今後 2 日間]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-145">**Next 2 days**</span></span>
 
-- <span data-ttu-id="89506-148">[**受信日**] メッセージを受信した日付。</span><span class="sxs-lookup"><span data-stu-id="89506-148">**Received**: The date the message was received.</span></span>
+     - <span data-ttu-id="4d14a-146">**[今後 7 日間]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-146">**Next 7 days**</span></span>
 
-- <span data-ttu-id="89506-149">[**件名**] メッセージの件名欄のテキスト。</span><span class="sxs-lookup"><span data-stu-id="89506-149">**Subject**: The text of the Subject line in the message.</span></span>
+     - <span data-ttu-id="4d14a-147">**[カスタム]**: **[開始日]** と **[終了日]** を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-147">**Custom**: Enter a **Start date** and **End date**.</span></span>
 
-- <span data-ttu-id="89506-150">[**検疫の理由**] メッセージが [**迷惑メール**] または [**バルク メール**] として識別されたかを表示します。</span><span class="sxs-lookup"><span data-stu-id="89506-150">**Quarantine reason**: Shows if a message has been identified as **Spam** or **Bulk**.</span></span>
+   - <span data-ttu-id="4d14a-148">**[受信日時]**: **[開始日]** と **[終了日]** を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-148">**Received time**: Enter a **Start date** and **End date**.</span></span>
 
-- <span data-ttu-id="89506-151">[**有効期限**] 検疫からメッセージが削除される日付。</span><span class="sxs-lookup"><span data-stu-id="89506-151">**Expires**: The date when the message will be deleted from quarantine.</span></span>
+   - <span data-ttu-id="4d14a-149">**[検疫の理由]**:</span><span class="sxs-lookup"><span data-stu-id="4d14a-149">**Quarantine reason**:</span></span>
 
-- <span data-ttu-id="89506-152">[**解放済み**] メッセージが解放されたすべてのメール アドレス (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="89506-152">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
+     - <span data-ttu-id="4d14a-150">**[バルク]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-150">**Bulk**</span></span>
 
-- <span data-ttu-id="89506-153">[**未解放**] メッセージがまだ解放されていないすべてのメール アドレス (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="89506-153">**Not yet released to**: All email addresses (if any) to which the message has not been released.</span></span> <span data-ttu-id="89506-154">メッセージをメールボックスに解放する場合、[**解放**] を選択できます (メッセージの解放の詳細については、次のセクションを参照してください)。</span><span class="sxs-lookup"><span data-stu-id="89506-154">You can choose **Release** if you want to release the message to your mailbox (more about releasing messages in the next section).</span></span>
+     - <span data-ttu-id="4d14a-151">**[スパム]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-151">**Spam**</span></span>
 
-<span data-ttu-id="89506-155">メッセージについてさらに詳しい情報を確認するには、次のいずれかのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="89506-155">You can get even more details about the message by choosing one of the following options:</span></span>
+     - <span data-ttu-id="4d14a-152">**[フィッシング]** (2020 年 4 月以降)</span><span class="sxs-lookup"><span data-stu-id="4d14a-152">**Phish** (As of April, 2020)</span></span>
 
-- <span data-ttu-id="89506-156">[**メッセージ ヘッダーを表示**] これを選択するとメッセージ ヘッダー テキストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="89506-156">**View message header**: Choose this to see the message header text.</span></span> <span data-ttu-id="89506-157">ヘッダーを詳しく分析するには、メッセージ ヘッダー テキストをクリップボードにコピーし、[**Microsoft メッセージ ヘッダー アナライザー**] を選択して、リモート接続アナライザーに移動します (このタスクを実行するために Office 365 を閉じたくない場合は、右クリックして [新しいタブで開く] を選択します)。</span><span class="sxs-lookup"><span data-stu-id="89506-157">To analyze the header in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose Open in a new tab if you don't want to leave Office 365 to complete this task).</span></span> <span data-ttu-id="89506-158">メッセージ ヘッダーを [Microsoft メッセージ ヘッダー アナライザー] セクションのページに貼り付け、[ヘッダーを分析] を選択します。</span><span class="sxs-lookup"><span data-stu-id="89506-158">Paste the message header onto the page in the Message Header Analyzer section, and choose Analyze headers.</span></span>
+   <span data-ttu-id="4d14a-153">フィルターをクリアするには、**[クリア]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-153">To clear the filter, click **Clear**.</span></span> <span data-ttu-id="4d14a-154">フィルターのポップアップを非表示にするには、**[フィルター]** をもう一度クリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-154">To hide the filter flyout, click **Filter** again.</span></span>
 
-- <span data-ttu-id="89506-159">[**メッセージのプレビュー**] メッセージ本文の raw バージョンまたは HTML バージョンを表示できます。</span><span class="sxs-lookup"><span data-stu-id="89506-159">**Preview message**: Lets you see raw or HTML versions of the message body text.</span></span> <span data-ttu-id="89506-160">HTML ビューでは、リンクは無効です。</span><span class="sxs-lookup"><span data-stu-id="89506-160">In the HTML view, links are disabled.</span></span>
+4. <span data-ttu-id="4d14a-155">**[結果の並べ替え]** (既定では **[メッセージ ID]** ボタン) および対応する値を使用して、特定のメッセージを検索します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-155">Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages.</span></span> <span data-ttu-id="4d14a-156">ワイルドカードはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4d14a-156">Wildcards aren't supported.</span></span> <span data-ttu-id="4d14a-157">次の値に基づいて検索できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-157">You can search by the following values:</span></span>
 
-## <a name="manage-your-quarantined-messages"></a><span data-ttu-id="89506-161">検疫されたメッセージを管理する</span><span class="sxs-lookup"><span data-stu-id="89506-161">Manage your quarantined messages</span></span>
+   - <span data-ttu-id="4d14a-158">**[メッセージ ID]**: メッセージのグローバル一意識別子。</span><span class="sxs-lookup"><span data-stu-id="4d14a-158">**Message ID**: The globally unique identifier of the message.</span></span> <span data-ttu-id="4d14a-159">一覧でメッセージを選択すると、表示される **[詳細]** ポップアップ ウィンドウに **[メッセージ ID]** 値が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-159">If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears.</span></span> <span data-ttu-id="4d14a-160">管理者は、[メッセージ追跡](message-trace-scc.md)を使用して、メッセージとそれに対応する [メッセージ ID] 値を検索できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-160">Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.</span></span>
 
-<span data-ttu-id="89506-162">メッセージまたはメッセージのグループを選択した後に選択できる検疫内のメッセージを管理するための選択肢にはいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="89506-162">After you select a message or group of messages, you have several options for managing messages in quarantine.</span></span>
+   - <span data-ttu-id="4d14a-161">**[送信者のメール アドレス]**: 単一の送信者のメール アドレス。</span><span class="sxs-lookup"><span data-stu-id="4d14a-161">**Sender email address**: A single sender's email address.</span></span>
 
-- <span data-ttu-id="89506-163">何もしない。</span><span class="sxs-lookup"><span data-stu-id="89506-163">Do nothing.</span></span> <span data-ttu-id="89506-164">何もしないことを選択すると、メッセージは有効期限日に Office 365 によって自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="89506-164">If you choose to do nothing, the message will be deleted by Office 365 automatically upon expiration.</span></span> <span data-ttu-id="89506-165">Office 365 によりメッセージが検疫から削除されると、元に戻すことはできないのでご注意ください。</span><span class="sxs-lookup"><span data-stu-id="89506-165">Remember, when Office 365 deletes a message from quarantine, you can't get it back.</span></span>
+   - <span data-ttu-id="4d14a-162">**[受信者のメール アドレス]**: 単一の受信者のメール アドレス。</span><span class="sxs-lookup"><span data-stu-id="4d14a-162">**Recipient email address**: A single recipient's email address.</span></span>
 
-- <span data-ttu-id="89506-166">[**メッセージの解放**] メッセージがメールボックスに送信されるように、検疫されたメッセージ (または一連のメッセージ) を解放します。</span><span class="sxs-lookup"><span data-stu-id="89506-166">**Release message**: Release a quarantined message (or set of messages) so that the message is sent to your mailbox.</span></span> <span data-ttu-id="89506-167">メッセージを解放する際は、メッセージを分析のために Microsoft に報告するオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="89506-167">When you release a message, you have the option to report the message to Microsoft for analysis.</span></span>
+   - <span data-ttu-id="4d14a-163">**[件名]**: メッセージの件名全体を使用します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-163">**Subject**: Use the entire subject of the message.</span></span> <span data-ttu-id="4d14a-164">この検索では大文字と小文字は区別されません。</span><span class="sxs-lookup"><span data-stu-id="4d14a-164">The search is not case-sensitive.</span></span>
 
-    <span data-ttu-id="89506-168">メッセージを報告する (「メッセージを誤検出として報告する」とも呼ばれます) オプションを選択すると、メッセージは Microsoft スパム分析チームに報告されます。</span><span class="sxs-lookup"><span data-stu-id="89506-168">When you choose to report a message, also called reporting a message as a false positive, the message is reported to the Microsoft Spam Analysis Team.</span></span> <span data-ttu-id="89506-169">チームは誤検出メッセージを評価および分析し、分析結果に応じて、これらのメッセージの配信が許可されるようにサービス全体のスパム コンテンツ フィルター ルールを調整する場合があります。</span><span class="sxs-lookup"><span data-stu-id="89506-169">The team evaluates and analyzes false positive messages, and, depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow these messages through.</span></span>
+   <span data-ttu-id="4d14a-165">検索条件を入力したら、![[更新] ボタン](../media/scc-quarantine-refresh.png) **[更新]** をクリックすると、結果がフィルター処理されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-165">After you've entered the search criteria, click ![Refresh button](../media/scc-quarantine-refresh.png) **Refresh** to filter the results.</span></span>
 
-- <span data-ttu-id="89506-170">[**検疫から削除**] メッセージはメールボックスに解放されずに、検疫から直ちに削除されます。</span><span class="sxs-lookup"><span data-stu-id="89506-170">**Remove from quarantine**: Deletes the message immediately from quarantine without releasing the message to your mailbox.</span></span>
+<span data-ttu-id="4d14a-166">特定の検疫済みメッセージを見つけたら、そのメッセージを選択して詳細を表示し、処理を実行します (メッセージの表示、解放、ダウンロード、または削除など)。</span><span class="sxs-lookup"><span data-stu-id="4d14a-166">After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).</span></span>
+
+### <a name="export-message-results"></a><span data-ttu-id="4d14a-167">メッセージ結果をエクスポートする</span><span class="sxs-lookup"><span data-stu-id="4d14a-167">Export message results</span></span>
+
+1. <span data-ttu-id="4d14a-168">目的のメッセージを選択し、**[結果のエクスポート]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-168">Select the messages you're interested in, and click **Export results**.</span></span>
+
+2. <span data-ttu-id="4d14a-169">ブラウザー ウィンドウを開いたままにするように警告する確認メッセージで、**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-169">Click **Yes** in the confirmation message that warns you to keep the browser window open.</span></span>
+
+3. <span data-ttu-id="4d14a-170">エクスポートの準備ができたら、.csv ファイルに名前を付けて、ダウンロード場所を選択できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-170">When your export is ready, you can name and choose the download location for the .csv file.</span></span>
+
+### <a name="view-quarantined-message-details"></a><span data-ttu-id="4d14a-171">検疫済みメッセージの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="4d14a-171">View quarantined message details</span></span>
+
+<span data-ttu-id="4d14a-172">一覧でメール メッセージを選択すると、**[詳細]** ポップアップ ウィンドウにメッセージに関する次の詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-172">When you select an email message in the list, the following message details appear in the **Details** flyout pane:</span></span>
+
+- <span data-ttu-id="4d14a-173">**[メッセージ ID]**: メッセージのグローバル一意識別子。</span><span class="sxs-lookup"><span data-stu-id="4d14a-173">**Message ID**: The globally unique identifier for the message.</span></span>
+
+- <span data-ttu-id="4d14a-174">**[送信者のアドレス]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-174">**Sender address**</span></span>
+
+- <span data-ttu-id="4d14a-175">**[Received](受信日時)**: メッセージを受信した日時。</span><span class="sxs-lookup"><span data-stu-id="4d14a-175">**Received**: The date/time when the message was received.</span></span>
+
+- <span data-ttu-id="4d14a-176">**[件名]**</span><span class="sxs-lookup"><span data-stu-id="4d14a-176">**Subject**</span></span>
+
+- <span data-ttu-id="4d14a-177">**[検疫の理由]**: メッセージが **[スパム]**、**[バルク]**、**[フィッシング]** (2020 年 4 月以降) のいずれとして識別されたかを表示します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-177">**Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or (as of April, 2020) **Phish**.</span></span>
+
+- <span data-ttu-id="4d14a-178">**[受信者]**: メッセージに複数の受信者が含まれている場合は、**[メッセージのプレビュー]** か **[メッセージ ヘッダーを表示]** をクリックして受信者の完全な一覧を表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d14a-178">**Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.</span></span>
+
+- <span data-ttu-id="4d14a-179">**[有効期限]**: 検疫からメッセージが自動的に完全に削除される日時。</span><span class="sxs-lookup"><span data-stu-id="4d14a-179">**Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.</span></span>
+
+- <span data-ttu-id="4d14a-180">**[解放済み]**: メッセージが解放されたすべてのメール アドレス (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="4d14a-180">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
+
+- <span data-ttu-id="4d14a-181">**[未解放]**: メッセージがまだ解放されていないすべてのメール アドレス (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="4d14a-181">**Not yet released to**: All email addresses (if any) to which the message has not yet been released.</span></span>
+
+### <a name="take-action-on-quarantined-email"></a><span data-ttu-id="4d14a-182">検疫済みメールを処理する</span><span class="sxs-lookup"><span data-stu-id="4d14a-182">Take action on quarantined email</span></span>
+
+<span data-ttu-id="4d14a-183">メッセージを選択すると、**[詳細]** ポップアップ ウィンドウに、そのメッセージに関してどんな操作を実行するかを選択するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-183">After you select a message, you have options for what to do with the messages in the **Details** flyout pane:</span></span>
+
+- <span data-ttu-id="4d14a-184">**[メッセージの解放]**: 表示されるポップアップ ウィンドウで、**[メッセージを分析のために Microsoft に報告する]** かどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-184">**Release message**: In the flyout pane that appears, choose whether to **Report messages to Microsoft for analysis**.</span></span> <span data-ttu-id="4d14a-185">これは既定で有効になっており、誤って検疫されたメッセージが誤検知として報告されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-185">This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive.</span></span>
+
+  <span data-ttu-id="4d14a-186">完了したら、**[メッセージの解放]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-186">When you're finished, click **Release messages**.</span></span>
+
+- <span data-ttu-id="4d14a-187">**[メッセージ ヘッダーを表示]**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-187">**View message header**: Choose this link to see the message header text.</span></span> <span data-ttu-id="4d14a-188">ヘッダー フィールドと値を詳しく分析するには、メッセージ ヘッダー テキストをクリップボードにコピーし、**[Microsoft メッセージ ヘッダー アナライザー]** を選択して、リモート接続アナライザーに移動します (このタスクを実行するために Office 365 を閉じたくない場合は、右クリックして **[新しいタブで開く]** を選択します)。</span><span class="sxs-lookup"><span data-stu-id="4d14a-188">To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task).</span></span> <span data-ttu-id="4d14a-189">メッセージ ヘッダーを [Microsoft メッセージ ヘッダー アナライザー] セクションのページに貼り付け、**[ヘッダーを分析]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-189">Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:</span></span>
+
+- <span data-ttu-id="4d14a-190">**[メッセージのプレビュー]**: 表示されるポップアップ ウィンドウで、次のいずれかのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-190">**Preview message**: In the flyout pane that appears, choose one of the following options:</span></span>
+
+  - <span data-ttu-id="4d14a-191">**[ソースを表示]**: すべてのリンクが無効になったメッセージ本文の HTML バージョンを表示します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-191">**Source view**: Shows the HTML version of the message body with all links disabled.</span></span>
+  
+  - <span data-ttu-id="4d14a-192">**[テキスト表示]**: プレーン テキストでメッセージ本文を表示します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-192">**Text view**: Shows the message body in plain text.</span></span>
+
+- <span data-ttu-id="4d14a-193">**[メッセージをダウンロード]**: 表示されるポップアップ ウィンドウで、**[このメッセージをダウンロードするリスクを理解しています]** を選択して、メッセージのローカル コピーを .eml 形式で保存します。</span><span class="sxs-lookup"><span data-stu-id="4d14a-193">**Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.</span></span>
+
+- <span data-ttu-id="4d14a-194">**[検疫から削除]**: 表示される警告で **[はい]** をクリックすると、メッセージは直ちに削除されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-194">**Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.</span></span>
+
+<span data-ttu-id="4d14a-195">完了したら、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-195">When you're finished, click **Close**.</span></span>
+
+<span data-ttu-id="4d14a-196">メッセージを解放も削除もしないと、既定の検疫保持期間が経過した後に削除されます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-196">If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.</span></span>
+
+#### <a name="take-action-on-multiple-quarantined-email-messages"></a><span data-ttu-id="4d14a-197">複数の検疫済みメール メッセージを処理する</span><span class="sxs-lookup"><span data-stu-id="4d14a-197">Take action on multiple quarantined email messages</span></span>
+
+<span data-ttu-id="4d14a-198">一覧で複数の検疫済みメッセージを選択すると (最大 100)、**[一括処理]** ポップアップ ウィンドウが表示され、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-198">When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:</span></span>
+
+- <span data-ttu-id="4d14a-199">**[メッセージの解放]**: このオプションは、**[特定の受信者にメッセージを解放する]** を選択できない点以外は単一のメッセージを開放する場合と同様です。**[すべての受信者にメッセージを解放する]** か **[他のユーザーにメッセージを解放する]** のみを選択できます。</span><span class="sxs-lookup"><span data-stu-id="4d14a-199">**Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.</span></span>
+
+- <span data-ttu-id="4d14a-200">**[メッセージの削除]**: 表示される警告で **[はい]** をクリックすると、メッセージは直ちに削除され、元の受信者には送信されません。</span><span class="sxs-lookup"><span data-stu-id="4d14a-200">**Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.</span></span>
+
+<span data-ttu-id="4d14a-201">完了したら、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d14a-201">When you're finished, click **Close**.</span></span>

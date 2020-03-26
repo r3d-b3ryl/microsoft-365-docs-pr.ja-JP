@@ -68,9 +68,13 @@
                 - name: インシデントの優先度を設定する
                   href: mtp/incident-queue.md
                 - name: インシデントを調査する
-                  href: mtp/investigate-incidents.md
-                - name: インシデントを管理する
-                  href: mtp/manage-incidents.md
+                  items:
+                    - name: インシデントを調査する
+                      href: mtp/investigate-incidents.md
+                    - name: インシデントを管理する
+                      href: mtp/manage-incidents.md
+                    - name: マシンのプロファイル ページ
+                      href: mtp/machine-profile.md
             - name: 自動調査および対応
               items:
                 - name: AIR の概要
@@ -554,9 +558,6 @@
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
                 - name: Quarantine
                   href: ./office-365-security/quarantine.md
-                  items:
-                    - name: 管理者として検疫済みメッセージを検索して解放する
-                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
                 - name: トラブルシューティングとサポート情報
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items:
