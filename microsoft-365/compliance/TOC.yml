@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 使用を開始する
+- name: 作業の開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -201,13 +201,13 @@
     - name: データの分類を理解する (プレビュー)
       href: data-classification-overview.md
       items:
-        - name: ラベル付きコンテンツの表示 (プレビュー)
+        - name: コンテンツエクスプローラーを使い始める (プレビュー)
           href: data-classification-content-explorer.md
-        - name: ラベル アクティビティを表示する (プレビュー)
+        - name: アクティビティエクスプローラーを使い始める (プレビュー)
           href: data-classification-activity-explorer.md
         - name: データ分類パブリック プレビューのリリース ノート (プレビュー)
           href: data-classification-pub-preview-relnotes.md
-        - name: トレーニング可能な分類子の使用を開始する (プレビュー)
+        - name: Trainable 分類子を使用して作業を開始する (プレビュー)
           href: classifier-getting-started-with.md
         - name: 組み込みの分類子を使用する (プレビュー)
           href: classifier-using-a-ready-to-use-classifier.md
@@ -243,6 +243,8 @@
           href: archive-linkedin-data.md
         - name: コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
           href: archive-instant-bloomberg-data.md
+        - name: コネクタを設定してアーカイブ ICE チャットデータ (プレビュー)
+          href: archive-icechat-data.md
         - name: HR データをインポートするためのコネクタの設定
           href: import-hr-data.md
         - name: パートナーと共同作業でサードパーティーのデータをアーカイブする
@@ -816,6 +818,10 @@
           href: gdpr-for-office-online-server.md
         - name: オンプレミスの Windows Server ファイル共有の GDPR 対応
           href: gdpr-for-on-premises-file-shares.md
+    - name: 業界固有のガイダンス
+      items:
+        - name: 金融サービスのセキュリティとコンプライアンス
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: 法令遵守アクション プラン
   items:
     - name: ISO - 推奨アクション プラン
