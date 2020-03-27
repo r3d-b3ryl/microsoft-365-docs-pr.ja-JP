@@ -18,23 +18,23 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Office 365 で非アクティブなメールボックスを作成するには、ホールドまたは Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 ユーザーアカウントを削除します。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
-ms.openlocfilehash: 845ed0307081390c976cf3ac27671a858d99d433
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4759f33a95420b3f7e082d0426a26ad8ba5e94a3
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077642"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978177"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Office 365 で非アクティブなメールボックスを作成および管理する
 
 Office 365 により、削除済みメールボックスの内容を保持することができます。 この機能は[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)と呼ばれます。 Inactive mailboxes allow you to retain former employees' email after they leave your organization. メールボックスは、対応する Office 365 ユーザーアカウントが削除される前に、訴訟ホールドまたは Office 365 アイテム保持ポリシー (Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで作成されたもの) がメールボックスに適用されると、非アクティブになります。 The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. これにより、管理者、コンプライアンス責任者、およびレコード管理者は、コンテンツ検索を使用して、非アクティブなメールボックスのコンテンツを検索してエクスポートすることができます。 非アクティブなメールボックスはメールを受信することができず、組織の共有アドレス帳にもその他のリストにも表示されません。
   
 > [!IMPORTANT]
-> メールボックスのコンテンツを保持するためのさまざまな方法に投資し続けるので、Exchange 管理センターでのインプレースホールドの廃止を発表しています。 つまり、訴訟ホールドと Office 365 アイテム保持ポリシーを使用して、非アクティブなメールボックスを作成する必要があります。 2020年4月1日以降、Exchange Online に新しいインプレースホールドを作成することはできません。 ただし、非アクティブなメールボックスに設定されたインプレースホールドの保持期間を変更することはできます。 ただし、2020年7月1日以降、保持期間を変更することはできません。 インプレースホールドを削除しても、非アクティブなメールボックスを削除することはできません。 インプレース保持されている既存の非アクティブなメールボックスは、保留が解除されるまで保持されます。 インプレースホールドが廃止された場合の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
+> メールボックスのコンテンツを保持するためのさまざまな方法に投資し続けるので、Exchange 管理センターでのインプレースホールドの廃止を発表しています。 つまり、訴訟ホールドと Office 365 アイテム保持ポリシーを使用して、非アクティブなメールボックスを作成する必要があります。 2020年7月1日以降、Exchange Online に新しいインプレースホールドを作成することはできません。 ただし、非アクティブなメールボックスに設定されたインプレースホールドの保持期間を変更することはできます。 ただし、2020年10月1日以降、保持期間を変更することはできません。 インプレースホールドを削除しても、非アクティブなメールボックスを削除することはできません。 インプレース保持されている既存の非アクティブなメールボックスは、保留が解除されるまで保持されます。 インプレースホールドが廃止された場合の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-- メールボックスを非アクティブにするには、メールボックスを削除する前に、訴訟ホールドまたは Office 365 のアイテム保持ポリシーをメールボックスに適用できるように、Exchange Online プラン2のライセンスを割り当てる必要があります。 Exchange Online プラン2のライセンスは、Office 365 Enterprise E3 および E5 サブスクリプションの一部です。 メールボックスに Exchange online プラン1または Exchange Online キオスクライセンス (それぞれ、Office 365 E1 および F1 サブスクリプションの一部) が割り当てられている場合は、メールボックス b に保留を適用できるように、別の Exchange Online アーカイブライセンスを割り当てる必要があります。efore を削除します。 詳細については、「[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)」をご覧ください。
+- メールボックスを非アクティブにするには、メールボックスを削除する前に、訴訟ホールドまたは Office 365 のアイテム保持ポリシーをメールボックスに適用できるように、Exchange Online プラン2のライセンスを割り当てる必要があります。 Exchange Online プラン2のライセンスは、Office 365 Enterprise E3 および E5 サブスクリプションの一部です。 メールボックスに Exchange online プラン1または Exchange Online キオスクライセンス (それぞれ、Office 365 E1 および F1 サブスクリプションの一部) が割り当てられている場合は、メールボックスに保留リストを適用できるように、メールボックスに別の Exchange Online アーカイブライセンスを割り当てる必要があります。削除される前。 詳細については、「[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)」をご覧ください。
 
 - 削除された Exchange Online メールボックスに関連付けられたライセンスは、対応する Office 365 ユーザーアカウントを削除した後に使用できるようになります。 その後、[これらのライセンスを別のユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)ことができます。 
 

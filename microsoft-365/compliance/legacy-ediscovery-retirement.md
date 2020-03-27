@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955546"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978167"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
+
+> [!IMPORTANT]
+> Microsoft は、衛生衛生状況を評価しており、お客様に対する影響について理解しています。 Sdl は、強力なパートナーと責任を持つグローバル市民を求めています。 お客様が直面している多くの負荷の1つを簡単にするために、以下に示す従来の電子情報開示ツールの定期退職を3か月延期します。 **更新された退職日は次のように反映されます。**
 
 長年、Microsoft では、Exchange Online からの電子メールコンテンツの検索、プレビュー、およびエクスポートを可能にする電子情報開示ツールを提供しています。 ただし、これらのツールは、SharePoint Online や Office 365 グループなど、他の Office 365 サービスで Exchange 以外のコンテンツを検索する効果的な方法を提供しなくなりました。 このことを説明するために、Microsoft は、さまざまな Office 365 コンテンツを検索するのに役立つその他の電子情報開示ツールを提供しています。 また、マイクロソフトは、 [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)で最新の強力な電子情報開示機能を組み込むために努力してきました。 これにより、組織は、Exchange Online などの多くの Office 365 サービスにわたって、法律、内部、およびその他のドキュメント要求に対応することができます。
 
@@ -78,9 +81,9 @@ ms.locfileid: "42955546"
 
 ### <a name="timeline-for-retirement"></a>定年後のタイムライン
 
-- 2020 年 4 月 1 日: 新しい検索と保留リストを作成できなくなりますが、ユーザーの自己責任において、既存の検索の実行、編集、および削除は引き続き行えます。 Microsoft サポートは、EAC でのインプレース電子情報開示 & 保持を中止します。
+- 2020年7月1日: 新しい検索と保持を作成することはできませんが、既存の検索の実行、編集、および削除は、自分の責任で行うことができます。 Microsoft サポートは、EAC でのインプレース電子情報開示 & 保持を中止します。
 
-- 2020 年 7 月 1 日: Exchange 管理センターのインプレース電子情報開示およびインプレース ホールドが読み取り専用モードに変更されます。 これにより、可能な操作は、既存の検索および保留リストの削除のみになります。
+- 2020年10月1日: インプレース電子情報開示 & は、EAC の機能を読み取り専用モードで保持します。 これにより、可能な操作は、既存の検索および保留リストの削除のみになります。
 
 ### <a name="alternative-tools"></a>代替ツール
 
@@ -181,9 +184,9 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 
 ### <a name="timeline"></a>タイムライン
 
-- 2020年4月1日: **get-mailboxsearch**を使用してインプレース電子情報開示検索とインプレース保持を新たに作成することはできませんが、コマンドレットを使用して、既存の検索を実行、編集、および削除することができます。 Microsoft サポートでは、これらの種類の検索と保留リストのサポートが提供されなくなりました。
+- 2020年7月1日: **get-mailboxsearch**を使用してインプレース電子情報開示検索とインプレース保持を新たに作成することはできませんが、コマンドレットを使用して、既存の検索を実行、編集、および削除することができます。 Microsoft サポートでは、これらの種類の検索と保留リストのサポートが提供されなくなりました。
 
-- 2020年7月1日: 前述したように、インプレース電子情報開示 & は EAC の機能を読み取り専用モードで保持します。 これはまた、 **get-mailboxsearch**、 **get-mailboxsearch**、または**get-mailboxsearch**コマンドレットを使用できないことを意味します。 既存の検索と保持を取得して削除することはできません。
+- 2020年10月1日: 前述したように、インプレース電子情報開示 & は EAC の機能を読み取り専用モードで保持します。 これはまた、 **get-mailboxsearch**、 **get-mailboxsearch**、または**get-mailboxsearch**コマンドレットを使用できないことを意味します。 既存の検索と保持を取得して削除することはできません。
 
 ### <a name="alternative-tools"></a>代替ツール
 
@@ -262,7 +265,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 
 ### <a name="timeline"></a>タイムライン
 
--  2020年4月1日:**検索-メールボックス**コマンドレットが使用できなくなり、Microsoft サポートからサポートが提供されなくなります。
+-  2020年7月1日:**検索-メールボックス**コマンドレットが使用できなくなり、Microsoft サポートからサポートが提供されなくなります。
 
 ### <a name="alternative-tools"></a>代替ツール
 
@@ -324,7 +327,7 @@ Exchange Web サービス API のこれらの操作は、exchange 管理セン�
 
 ### <a name="timeline"></a>タイムライン
 
-- 2020年4月1日: GetSearchableMailboxes ボックス、Searchemail メールボックス、SetHoldOnMailboxes、および GetHoldOnMailboxes 操作を使用できなくなり、Microsoft サポートからサポートが提供されなくなります。
+- 2020年7月1日: GetSearchableMailboxes ボックス、Searchemail メールボックス、SetHoldOnMailboxes、および GetHoldOnMailboxes 操作を使用できなくなり、Microsoft サポートからサポートが提供されなくなります。
 
 ## <a name="advanced-ediscovery-v10"></a>高度な電子情報開示 v2.0 v 1.0
 
@@ -332,7 +335,7 @@ Advanced eDiscovery v2.0 は、[ **advanced ediscovery を**中止していま�
 
 Microsoft 365 の新しい高度な電子情報開示ソリューション (*上級電子情報開示*v2.0 とも呼ばれる) は、元のソリューションのすべての機能を提供していますが、他の Microsoft 365 サービスのコンテンツを特定し、そのコンテンツを収集して、レビュー担当者が fast search クエリ、タグ付け、および分析機能を利用して関連するドキュメントを選別できる 上級電子情報開示では、Microsoft および Microsoft 以外のファイルの種類の処理機能とネイティブビューアーが向上しています。[ここ](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20)では、ファイルの種類の完全なリストと、サポートされているメタデータフィールドについて[説明します](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 また、新しい高度な電子情報開示ソリューションは、強力な電子情報開示ケース内で、さまざまなサービスのコンテンツに保持を適用したり、保留リストのユーザーに通知したり、保管担当者応答を追跡したりする強力な保管担当者ホールド管理機能を提供します。
 
-現時点では、新しい高度な電子情報開示の機能への電子情報開示ワークフローの移行を開始することをお勧めします。 既存のケースでは引き続き Advanced eDiscovery v2.0 にアクセスできますが、Microsoft サポートは2020年7月1日以降、サポートを提供しません。 詳細については、次のタイムラインを参照してください。
+現時点では、新しい高度な電子情報開示の機能への電子情報開示ワークフローの移行を開始することをお勧めします。 既存のケースでは引き続き Advanced eDiscovery v2.0 にアクセスできますが、Microsoft サポートでは、2020年10月1日以降のサポートは提供されません。 詳細については、次のタイムラインを参照してください。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
     
@@ -344,9 +347,9 @@ Microsoft 365 の新しい高度な電子情報開示ソリューション (*上
 
 ### <a name="timeline"></a>タイムライン
 
-- 2020年4月1日: 新しい Advanced eDiscovery v2.0 のケースを作成することはできません。
+- 2020年7月1日: 新しい Advanced eDiscovery v2.0 のケースを作成することはできません。
 
-- 2020年7月1日: 新しいデータ (高度な電子情報開示の検索結果を準備する) をいつでも追加することはできません。 既存のケースでは、ユーザー自身のリスクで引き続きデータを操作できます。 Microsoft サポートからサポートが提供されなくなります。 
+- 2020年10月1日: 新しいデータ (高度な電子情報開示の検索結果を準備する) をいつでも追加することはできません。 既存のケースでは、ユーザー自身のリスクで引き続きデータを操作できます。 Microsoft サポートからサポートが提供されなくなります。 
 
 ### <a name="alternative-tools"></a>代替ツール
 

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 772c4c5785115995593a4946bfbac49312ad15f3
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959230"
+ms.locfileid: "42978268"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -41,7 +41,7 @@ ms.locfileid: "42959230"
 これらのタスクを実行するための時間を提供するために、この表に記載されている順序で基準ポリシーを実装することをお勧めします。 ただし、機密性が高く規制された保護のための MFA ポリシーは、いつでも実装できます。
 
 
-|保護レベル|ポリシー|More information|
+|保護レベル|ポリシー|詳細情報|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](#require-mfa-based-on-sign-in-risk)| |
 |        |[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスルールをバイパスすることができます。そのため、これらをブロックすることが重要です。|
@@ -199,7 +199,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 [Id とデバイスのアクセス構成](microsoft-365-policies-configurations.md)で説明されている原則を使用して、ベースラインおよび機密保護層がレベル2エンタープライズ拡張データ保護設定と緊密にマッピングされます。 高度な規制保護層は、レベル3エンタープライズ高データ保護設定に厳密にマップされます。
 
-|保護レベル |アプリ保護ポリシー  |More information  |
+|保護レベル |アプリ保護ポリシー  |詳細情報  |
 |---------|---------|---------|
 |ベースライン     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。         |
 |機密     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。        |
@@ -217,7 +217,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
    > [!NOTE]
    > このポリシーにより、モバイルユーザーは適用可能なアプリを使用してすべての Office エンドポイントにアクセスできます。
 
-2. Exchange Online へのモバイルアクセスを有効にする場合は、[ActiveSync クライアントをブロックする] (セキュリティで保護された電子メール-ブロック-ActiveSync-クライアント) を実装します。これにより、Exchange ActiveSync クライアントは、基本認証を活用して Exchange Online に接続することができなくなります。
+2. Exchange Online へのモバイルアクセスを有効にする場合は、[ブロック ActiveSync クライアント](secure-email-recommended-policies.md#block-activesync-clients)を実装します。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
 
    上記のポリシーでは、[承認済みクライアントアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)とする grant controls を活用し、[アプリ保護ポリシーを必須](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)にします。
 

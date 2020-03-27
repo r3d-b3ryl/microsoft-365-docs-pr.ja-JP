@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928998"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982013"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -57,8 +57,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 これは、高度な捜索でどのように見えるかを示します。
 
-![Microsoft Threat Protection の高度な検索クエリの画像](../../media/advanced-hunting-query-example.png)
+![Microsoft Threat Protection の高度な検索クエリの画像](../../media/advanced-hunting-query-example-2.png)
 
+### <a name="describe-the-query-and-specify-the-tables-to-search"></a>クエリについて説明し、検索するテーブルを指定する
 クエリの先頭に短いコメントが追加されました。その目的について説明します。 これは、後でクエリを保存して組織内の他のユーザーと共有する場合に便利です。 
 
 ```kusto
@@ -70,12 +71,14 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+### <a name="set-the-time-range"></a>時間の範囲を設定する
 最初のパイプライン処理された要素は、前の7日間を対象範囲とする時間フィルターです。 時間範囲をできる限り狭くすることで、クエリが適切に実行され、管理可能な結果が返され、タイムアウトが回避されます。
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
+### <a name="check-specific-processes"></a>特定のプロセスを確認する
 時間範囲の直後には、PowerShell アプリケーションを表すプロセスファイル名の検索が続きます。
 
 ```
@@ -83,20 +86,23 @@ union DeviceProcessEvents, DeviceNetworkEvents
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
+### <a name="search-for-specific-command-strings"></a>特定のコマンド文字列を検索する
 その後、PowerShell を使用してファイルをダウンロードするために通常使用されるコマンドラインの文字列を検索します。
 
 ```kusto
 // Suspicious commands
 | where ProcessCommandLine has_any("WebClient",
- "DownloadFile",
- "DownloadData",
- "DownloadString",
-"WebRequest",
-"Shellcode",
-"http",
-"https")
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
 ```
-クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義する要素を追加できます。 `project`特定の列を`top`返し、結果の数を制限して、結果が適切に書式設定され、大幅に処理しやすいことを確認するのに役立ちます。
+
+### <a name="customize-result-columns-and-length"></a>結果の列と長さをカスタマイズする 
+クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義する要素を追加できます。 `project`特定の列を返し`top` 、結果の数を制限します。 これらの演算子を使用すると、結果が適切に書式設定されており、処理がかなり簡単になります。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -104,9 +110,12 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-[**クエリの実行**] をクリックして結果を確認します。 クエリエディターの右上にある展開アイコンを選択して、お探しのクエリと結果にフォーカスします。
+[**クエリの実行**] をクリックして結果を確認します。 クエリエディターの右上にある展開アイコンを選択して、お探しのクエリと結果にフォーカスします。 
 
 ![高度な検索クエリエディターの展開コントロールのイメージ](../../media/advanced-hunting-expand.png)
+
+>[!TIP]
+>クエリ結果をグラフとして表示し、フィルターをすばやく調整することができます。 ガイダンスについては、「[クエリ結果の使用方法](advanced-hunting-query-results.md)」を参照してください。
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>高度な捜索のための一般的なクエリ演算子を学習する
 

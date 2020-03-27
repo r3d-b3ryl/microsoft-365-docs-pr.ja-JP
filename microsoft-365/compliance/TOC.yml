@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 使用を開始する
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: コミュニケーションコンプライアンスの機能リファレンス
           href: communication-compliance-feature-reference.md
+        - name: ケーススタディ-Contoso 社が迅速に不快な言語ポリシーを構成する
+          href: communication-compliance-case-study.md
         - name: Office 365 の監視ポリシー
           href: supervision-policies.md
         - name: Office 365 の監視ポリシーを構成する
@@ -74,7 +76,7 @@
 - name: 情報保護の管理
   href: protect-information.md
   items:
-    - name: 機密度ラベル
+    - name: 機密ラベル
       items:
         - name: 機密度ラベルの詳細
           href: sensitivity-labels.md
@@ -201,9 +203,9 @@
     - name: データの分類を理解する (プレビュー)
       href: data-classification-overview.md
       items:
-        - name: コンテンツエクスプローラーを使い始める (プレビュー)
+        - name: コンテンツ エクスプローラーの使用を開始する (プレビュー)
           href: data-classification-content-explorer.md
-        - name: アクティビティエクスプローラーを使い始める (プレビュー)
+        - name: アクティビティ エクスプローラーの使用を開始する (プレビュー)
           href: data-classification-activity-explorer.md
         - name: データ分類パブリック プレビューのリリース ノート (プレビュー)
           href: data-classification-pub-preview-relnotes.md
@@ -638,6 +640,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: レポートを実行する
               href: run-reports-in-advanced-ediscovery.md
+    - name: 従来の電子情報開示ツールの廃止
+      href: legacy-ediscovery-retirement.md
 - name: データ調査を管理する
   items:
     - name: データ調査の概要

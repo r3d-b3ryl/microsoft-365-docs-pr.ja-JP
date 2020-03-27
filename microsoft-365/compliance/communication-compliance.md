@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179238"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982050"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 
@@ -53,7 +53,7 @@ Microsoft 365 のコミュニケーションコンプライアンスポリシー
 
 - **コンプライアンス**
 
-    ほとんどの組織では、通常の運用手順の一部として、何らかの種類の法令遵守標準に準拠する必要があります。 これらの規則では、多くの場合、組織にとって適切な種類の監督または監視プロセスを実装する必要があります。 金融業界の規制当局 (FINRA) ルール3110は、組織が従業員のコミュニケーションとそれが関与する企業の種類をスキャンするための監視手順を実施する必要があることを示しています。 もう1つの例として、組織内のブローカーディーラーの通信をレビューして、潜在的な金銭 la、collusion、または bribery アクティビティから保護する必要がある場合があります。 コミュニケーションコンプライアンスポリシーを使用すると、組織は企業の通信をスキャンしてレポートするためのプロセスを提供することで、これらの要件を満たすことができます。
+    ほとんどの組織では、通常の運用手順の一部として、何らかの種類の法令遵守標準に準拠する必要があります。 これらの規則では、多くの場合、組織にとって適切な種類の監督または監視プロセスを実装する必要があります。 金融業界の規制当局 (FINRA) ルール3110は、組織が従業員のコミュニケーションとそれが関与する企業の種類をスキャンするための監視手順を実施する必要があることを示しています。 もう1つの例として、組織内のブローカーディーラーの通信をレビューして、潜在的な金銭 la、collusion、または bribery アクティビティから保護する必要がある場合があります。 コミュニケーションコンプライアンスポリシーを使用すると、組織は企業の通信をスキャンしてレポートするためのプロセスを提供することで、これらの要件を満たすことができます。 金融機関のサポートの詳細については、「 [US バンキングおよびキャピタルマーケット向けの重要なコンプライアンスとセキュリティに関する考慮事項](../solutions/financial-services-secure-collaboration.md)」を参照してください。
 
 ## <a name="new-enhancements"></a>新しい機能強化
 
@@ -155,4 +155,4 @@ Microsoft 365 コンプライアンスセンターでは、次のポリシーテ
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-Microsoft 365 組織の通信コンプライアンスを構成するには、「 [microsoft 365 の通信コンプライアンスを構成](communication-compliance-configure.md)する」を参照してください。
+Microsoft 365 組織の通信コンプライアンスを構成する方法については、「 [microsoft 365 の通信コンプライアンスを構成](communication-compliance-configure.md)する」または「 [Contoso のケーススタディ](communication-compliance-case-study.md)」を参照してください。また、Microsoft Teams および Exchange Online の通信で不快な言語を監視するための通信コンプライアンスポリシーを迅速に構成した方法を確認してください。
