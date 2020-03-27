@@ -73,8 +73,6 @@
                       href: mtp/investigate-incidents.md
                     - name: インシデントを管理する
                       href: mtp/manage-incidents.md
-                    - name: マシンのプロファイル ページ
-                      href: mtp/machine-profile.md
             - name: 自動調査および対応
               items:
                 - name: AIR の概要
@@ -95,13 +93,28 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: クエリ言語の説明
                   href: mtp/advanced-hunting-query-language.md
+                - name: クエリ結果を操作する
+                  href: mtp/advanced-hunting-query-results.md
                 - name: 共有クエリを使用する
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: デバイスとメールでの検出
                   href: mtp/advanced-hunting-query-emails-devices.md
-                - name: スキーマを理解する
-                  href: mtp/advanced-hunting-schema-tables.md
+                - name: データ スキーマ
                   items:
+                    - name: スキーマを理解する
+                      href: mtp/advanced-hunting-schema-tables.md
+                    - name: AlertInfo
+                      href: mtp/advanced-hunting-alertinfo-table.md
+                    - name: AlertEvidence
+                      href: mtp/advanced-hunting-alertevidence-table.md
+                    - name: AccountInfo
+                      href: mtp/advanced-hunting-accountinfo-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: DeviceInfo
                       href: mtp/advanced-hunting-deviceinfo-table.md
                     - name: DeviceNetworkInfo
@@ -122,12 +135,6 @@
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfoBeta
                       href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
-                    - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
-                    - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -136,8 +143,20 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
+                    - name: AppFileEvents
+                      href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: IdentityLogonEvents
+                      href: mtp/advanced-hunting-identitylogonevents-table.md
+                    - name: IdentityQueryEvents
+                      href: mtp/advanced-hunting-identityqueryevents-table.md
                 - name: クエリのベスト プラクティスを適用する
                   href: mtp/advanced-hunting-best-practices.md
+                - name: カスタム検出
+                  items:
+                    - name: カスタム検出の概要
+                      href: mtp/custom-detections-overview.md
+                    - name: 検出ルールの作成と管理
+                      href: mtp/custom-detection-rules.md
             - name: セキュア スコア
               items:
                 - name: セキュア スコア
@@ -199,70 +218,58 @@
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: SharePoint Online のウイルス検出
                       href: ./office-365-security/virus-detection-in-spo.md
-                - name: 高度なスパム フィルター処理オプション
-                  href: ./office-365-security/advanced-spam-filtering-asf-options.md
-                - name: 送信メッセージにおける危険度の高い配信プール
-                  href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: スパム対策保護に関するよく寄せられる質問
-                  href: ./office-365-security/anti-spam-protection-faq.md
-                - name: スパム フィルターのルールとスパム フィルター ポリシーで無効な文字の使用を避ける
-                  href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
-                - name: Exchange Online の差出人セーフ リストと受信拒否リスト
-                  href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
-                - name: Office 365 でのメール メッセージの安全性に関するヒント
-                  href: ./office-365-security/safety-tips-in-office-365.md
-                - name: 送信者が送信スパムの送信をブロックされる場合の通知例
-                  href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
-                - name: エンド ユーザーのスパム通知を使ってスパム検疫済みメッセージを解放して報告する
-                  href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
-                - name: Office 365 に送信される迷惑メールへの対処
-                  href: ./office-365-security/fighting-junk-email.md
-                - name: Office 365 メールのスパム対策保護
+                - name: スパム対策保護
                   href: ./office-365-security/anti-spam-protection.md
+                  items:
+                    - name: スパム対策保護に関するよく寄せられる質問
+                      href: ./office-365-security/anti-spam-protection-faq.md
+                    - name: スパム対策ポリシーの構成
+                      href: ./office-365-security/configure-your-spam-filter-policies.md
+                    - name: 接続フィルター ポリシーを設定する
+                      href: ./office-365-security/configure-the-connection-filter-policy.md
+                    - name: 受信拒否リストの作成
+                      href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+                    - name: 信頼できる差出人リストの作成
+                      href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
+                    - name: スパム信頼度レベル (SCL)
+                      href: ./office-365-security/spam-confidence-levels.md
+                    - name: バルク苦情レベル (SCL)
+                      href: ./office-365-security/bulk-complaint-level-values.md
+                    - name: Exchange Online のメールボックスで迷惑メール設定を構成する
+                      href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+                    - name: エンドユーザー スパム通知
+                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
+                    - name: メール フロー ルールを使用してメッセージの SCL を設定する
+                      href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+                    - name: 高度なスパム フィルター (ASF) の設定
+                      href: ./office-365-security/advanced-spam-filtering-asf-options.md
+                    - name: 迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する
+                      href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: 送信スパム保護
+                  href: ./office-365-security/outbound-spam-controls.md
+                  items:
+                    - name: 送信スパム フィルターの構成
+                      href: ./office-365-security/configure-the-outbound-spam-policy.md
+                    - name: 送信メッセージにおける危険度の高い配信プール
+                      href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+                    - name: 制限されたユーザー ポータルからブロックされたユーザーを削除する
+                      href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: スパム対策メッセージ ヘッダー
+                  href: ./office-365-security/anti-spam-message-headers.md
                 - name: ポリシーと保護を組み合わせる方法
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
-                - name: Office 365 で迷惑メールを減らす方法
-                  href: ./office-365-security/reduce-spam-email.md
-                - name: Office 365 で送信スパムを制御する
-                  href: ./office-365-security/outbound-spam-controls.md
-                - name: 検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする
-                  href: ./office-365-security/reduce-spam-email.md
                 - name: ゼロアワー自動消去 - スパムまたはマルウェアからの保護
                   href: ./office-365-security/zero-hour-auto-purge.md
-                - name: スパムが各ユーザーの 迷惑メール フォルダーに転送されるようにする
-                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: メール メッセージの安全性に関するヒント
+                  href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 迷惑メール メッセージを Microsoft に報告する
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-                - name: バルク メーラーの差出人セーフ リストを管理する
-                  href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: スパム対策ポリシーを設定する
-                  href: ./office-365-security/configure-the-anti-spam-policies.md
-                - name: Create-block-sender-lists-in-office-365
-                  href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                - name: Create-safe-sender-lists-in-office-365
-                  href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
-                - name: スパム フィルター ポリシーの設定
-                  href: ./office-365-security/configure-your-spam-filter-policies.md
-                - name: 接続フィルター ポリシーを設定する
-                  href: ./office-365-security/configure-the-connection-filter-policy.md
-                - name: 送信スパム ポリシーを設定する
-                  href: ./office-365-security/configure-the-outbound-spam-policy.md
-                - name: 迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
-                  href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
-                - name: Spam Confidence Levels
-                  href: ./office-365-security/spam-confidence-levels.md
-                - name: Exchange Online のエラー コード 5.7.7xx を修正する
-                  href: ./office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md
-                - name: メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
-                  href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                 - name: スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Office 365 での管理者による送信
                   href: ./office-365-security/admin-submission.md
                 - name: 無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: スパム対策メッセージ ヘッダー
-                  href: ./office-365-security/anti-spam-message-headers.md
             - name: Office 365 でのフィッシング対策保護
               href: ./office-365-security/anti-phishing-protection.md
               items:
@@ -290,10 +297,6 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: EOP スタンドアロンで迷惑メールをブロックする
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: EOP でのエンドユーザー スパム通知の構成
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Exchange Online エンドユーザー スパム通知の構成
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Outlook on the web で迷惑メールとフィッシング詐欺を報告する
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Exchange Online Protection を使用して社内のメールボックスを保護する
@@ -304,17 +307,15 @@
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
                 - name: 迷惑メールとバルク メールの違い
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-            - name: Office 365 でメール メッセージを検疫する
+            - name: 検疫
               href: ./office-365-security/quarantine-email-messages.md
               items:
+                - name: 検疫に関する FAQ
+                  href: ./office-365-security/quarantine-faq.md
                 - name: 管理者として検疫済みメッセージとファイルを管理する
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: ユーザーとして検疫済みメッセージを検索して解放する
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
-                - name: Office 365 の検疫に関する FAQ
-                  href: ./office-365-security/quarantine-faq.md
-                - name: Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
-                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: メールの検証と認証
               items:
                 - name: Office 365 で SPF を使用して、スプーフィングを防止する方法
@@ -347,8 +348,6 @@
                       href: ./office-365-security/set-up-and-download-a-custom-report.md
                     - name: 既存のレポートをダウンロードする
                       href: ./office-365-security/download-existing-reports.md
-                - name: Office 365 で安全性のヒントを有効または無効にする
-                  href: ./office-365-security/enable-or-disable-safety-tips.md
                 - name: 悪意のあるファイルの情報を表示する
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
@@ -556,8 +555,6 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Office 365 でのメール フロー インテリジェンス
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantine
-                  href: ./office-365-security/quarantine.md
                 - name: トラブルシューティングとサポート情報
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items:
@@ -596,6 +593,6 @@
         - name: Office 365 Enterprise
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
         - name: Office 365 for Business
-          href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'
+          href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
     - name: Microsoft 365 コンプライアンス
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'
