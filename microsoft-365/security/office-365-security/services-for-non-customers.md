@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
-ms.openlocfilehash: f6dc3cdb4ffb20fba1dbaa8d57d5041bf1cdbeae
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e7985aed7c0b5b5c14c64d49e70ec6c731cb8b9
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598394"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032794"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Office 365 にメールを送信するユーザー以外に対するサービス
 
@@ -60,4 +60,4 @@ Microsoft は、Office 365 受信トレイに電子メールを送信するユ�
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Exchange Online からの迷惑メールの不正使用とスパムの報告
 
-ある場合、当社の使用条件およびポリシーに違反した迷惑メールをサード パーティーが送信するのに Office 365 が使用されることがあります。 Office 365 から迷惑メールを受信する場合、そうしたメッセージに関して [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) に報告できます。 RFC 5322 や ARF 形式でメッセージ ヘッダー全体を含め、問題のあるメッセージを添付してください。 Outlook on the web ユーザーは、組み込みツールを使用して迷惑メールを報告できます。 詳しくは、「[Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)」をご覧ください。
+ある場合、当社の使用条件およびポリシーに違反した迷惑メールをサード パーティーが送信するのに Office 365 が使用されることがあります。 Office 365 から迷惑メールを受信した場合は、これらのメッセージを Microsoft に報告できます。 手順については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。

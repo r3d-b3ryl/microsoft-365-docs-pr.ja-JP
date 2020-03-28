@@ -245,8 +245,6 @@
           href: archive-linkedin-data.md
         - name: コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
           href: archive-instant-bloomberg-data.md
-        - name: コネクタを設定してアーカイブ ICE チャットデータ (プレビュー)
-          href: archive-icechat-data.md
         - name: HR データをインポートするためのコネクタの設定
           href: import-hr-data.md
         - name: パートナーと共同作業でサードパーティーのデータをアーカイブする

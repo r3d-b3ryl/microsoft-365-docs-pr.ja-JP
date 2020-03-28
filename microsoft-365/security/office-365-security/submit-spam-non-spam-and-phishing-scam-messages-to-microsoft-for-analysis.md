@@ -1,5 +1,5 @@
 ---
-title: スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
+title: 分析のためにメッセージを手動で Microsoft に送信する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,101 +16,138 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893648"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032806"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のためにメッセージを手動で Microsoft に送信する
 
-組織内のユーザーが迷惑メール (スパム) またはフィッシング詐欺メッセージを受信トレイで受信する場合や、迷惑メールとしてマークされているために正当な電子メールメッセージを受信しない場合は、ストレスが発生する可能性があります。 より正確になるように、スパムフィルターを常に微調整しています。 この処理は、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することによって、ユーザーが支援します。 "誤負" は、スパムとして識別されていないものの、スパムメッセージであることを示します。 "偽陽性" は、誤ってスパムとして識別された正当な電子メールメッセージです。
+> [!NOTE]
+> Office 365 組織の管理者が Exchange Online メールボックスを使用している場合は、Office 365 セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「[管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
+
+組織内のユーザーが迷惑メール (スパム) またはフィッシングメッセージを受信トレイで受信する場合や、迷惑メールとしてマークされているために正当な電子メールメッセージを受信しない場合は、ストレスがかかることがあります。 より正確になるように、スパムフィルターを常に微調整しています。
+
+この処理を支援するには、誤検知 (不良としてマークされた良好な電子メール)、誤検知 (無効なメールが許可されている)、および Microsoft に対するフィッシングメッセージを分析用に送信します。
 
 > [!NOTE]
 > 大量の送信が送信されるため、分析のすべての要求に応答できない場合があります。
 
-管理者は、電子メール、url、添付ファイルをレビュー用に Microsoft に送信できます。 「 [Office 365 ATP」の「管理者の提出」を](admin-submission.md)参照してください。
+## <a name="submit-false-negatives-to-microsoft"></a>誤検知を Microsoft に送信する
 
-## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>スパム フィルターを通過した迷惑メールまたはフィッシング詐欺メッセージを送信する
+> [!TIP]
+> 次の手順を使用して誤検知を報告する代わりに、Outlook および web 上の Outlook (旧称 Outlook Web App) のユーザーは Microsoft Outlook 用のレポートメッセージアドインを使用できます。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。
 
-スパムフィルターを通過して、迷惑メールまたはフィッシング詐欺メールとして分類されるメッセージを受信した場合は、必要に応じて Microsoft スパム分析チームと Microsoft のフィッシング分析チームに "偽否定的" メッセージを送信できます。 アナリストはメッセージを確認し、分類基準を満たす場合は、サービス全体のフィルターに追加します。
+スパムまたはフィッシングとして識別されたスパムフィルタリングを通過したメッセージを受信した場合は、そのメッセージを Microsoft スパム分析および Microsoft フィッシング分析チームに適宜送信することができます。 アナリストはメッセージを確認し、分類基準を満たす場合は、サービス全体のフィルターに追加します。
 
-組織全体に適用されるスパム設定については、「 [Office 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。 この記事には、誤検知を防止するためのヒントが記載されています。
+1. 次のいずれかの受信者を使用して、新しい空の電子メールメッセージを作成します。
 
-迷惑メール メッセージを送信するには、次のようにします。
+   - **迷惑メール**:`junk@office365.microsoft.com`
 
-- Outlook および web 上の Outlook では、Microsoft Outlook 用のレポートメッセージアドインを使用します。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。
+   - **フィッシング**:`phish@office365.microsoft.com`
 
-- 次の手順で説明するように、電子メールを使用して、迷惑メールまたはフィッシング詐欺として分類されるメッセージを Microsoft に送信することもできます。
-
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>メールを使用して Microsoft に迷惑メール (スパム) またはフィッシング詐欺メッセージを送信する
-
-Microsoft に迷惑メールまたはフィッシング詐欺メッセージを送信するには:
-
-1. 空の電子メールメッセージを作成します。
-
-2. 次のように、メッセージをレビューする Microsoft チームにメッセージを送信します。
-
-   - 迷惑メールメッセージの場合: junk@office365.microsoft.com
-
-   - フィッシング詐欺メッセージの場合: phish@office365.microsoft.com
-
-3. 迷惑メールまたはフィッシング詐欺メッセージをコピーして、新しいメッセージに添付ファイルとして貼り付けます。
+2. 迷惑メールまたはフィッシングメッセージを新しいメッセージにドラッグアンドドロップします。 これにより、迷惑メールまたはフィッシングメッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
 
    > [!NOTE]
-   > * 新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類であることを確認してください。フィッシング詐欺メッセージまたは迷惑メールメッセージのいずれかです。 <br/><br/>* 新しいメッセージの本文は空のままにします。 <br/><br/>* 添付されたメッセージの場合は、.msg (既定の Outlook 形式) または .eml (Web 形式の既定の Outlook) の形式を使用します。
+   > <ul><li>新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類であることを確認してください。フィッシング詐欺メッセージまたは迷惑メールメッセージのいずれかです。</li><li>新しいメッセージの本文は空のままにします。<li></li>添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。</li></ul>
 
-4. [**送信**] をクリックします。
+3. 完了したら、[**送信**] をクリックします。
 
-## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>通過が許可されるはずだったのに迷惑メールとタグ付けされたメッセージを提出する
+> [!TIP]
+> 管理者は、スパムとして misidentified されている特定のメッセージをブロックするいくつかの方法を用意しています。 詳細については、「 [Office 365 でブロックされる送信者のリストを作成する](create-block-sender-lists-in-office-365.md)」を参照してください。
 
-メッセージが誤って迷惑メールとして識別された場合は、「偽陽性」メッセージを Microsoft スパム分析チームに送信できます。 アナリストは、メッセージの評価と分析を行います。 分析結果によっては、このメッセージが許可されるようにサービス全体のスパム コンテンツ フィルター ルールが調整されることがあります。
+## <a name="submit-false-positives-to-microsoft"></a>誤検知を Microsoft に送信する
 
-管理者は、組織全体に適用されるその他のスパム設定情報を確認できます。 「 [Office の信頼できる差出人のリストを作成する365」を](create-safe-sender-lists-in-office-365.md)参照してください。 管理者レベルの制御権限を持っている場合に誤検出防止に役立つ情報を記載しています。
+> [!TIP]
+> 次の手順を使用して誤検知を報告するのではなく、Outlook および web 上の Outlook のユーザーは Microsoft Outlook 用のレポートメッセージアドインを使用できます。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。
 
-スパムではないメッセージを送信するには、次のようにします。
+メッセージが誤ってスパムとして識別された場合は、メッセージを Microsoft スパム分析チームに送信できます。 アナリストはメッセージを評価し、(分析の結果に応じて) サービス全体のフィルターを調整して、メッセージを通過できるようにすることができます。
 
-- コンテンツフィルターを構成するときに **[迷惑メールフォルダーにメッセージを移動**する] アクションを使用すると (これが既定の動作です)、ユーザーは、outlook または web 上の outlook (旧称 Outlook web App) の迷惑メールフォルダーにある誤検知メッセージを解放することができます。
+1. 受信者としての`not_junk@office365.microsoft.com`新しい空の電子メールメッセージを作成します。
 
-  - Outlook ユーザーは、**迷惑メール**ではない右クリックメニューオプションを使用して誤検知メッセージを解放できます。 ただし、この記事の手順に示されているように、電子メールでメッセージを Microsoft に送信する必要があります。
+2. Misidentified メッセージを新しいメッセージにドラッグアンドドロップします。 これにより、misidentified メッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
 
-  - Outlook on the web ユーザーは、偽陽性のメッセージを解放して、**迷惑メールではないとしてマーク**を付けて、分析のために Microsoft に送信することができます。 これを行う方法の詳細については、「 [Outlook on the web で迷惑メールとフィッシング詐欺を報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)する」を参照してください。
+   > [!NOTE]
+   > <ul><li>新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類であることを確認してください。フィッシング詐欺メッセージまたは迷惑メールメッセージのいずれかです。</li><li>新しいメッセージの本文は空のままにします。<li></li>添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。</li></ul>
 
-- コンテンツフィルターを構成するときに、 **[迷惑メールフォルダーにメッセージを移動**する] アクションの代わりに [メッセージの**検疫**] アクションを使用すると、次のようになります。
+3. 完了したら、[**送信**] をクリックします。
 
-  - 管理者はスパムとして隔離されたメッセージを解放し、そのメッセージを誤検知メッセージとして Exchange 管理センターから報告できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理](manage-quarantined-messages-and-files.md)」を参照してください。
+> [!TIP]
+> 管理者は、特定のメッセージがスパムフィルタリングをスキップできるようにするいくつかの方法があります。 詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
-  - ユーザーは、次のチャネルを使用して、自分のスパム検疫済みメッセージを解放し、誤検知として報告することができます。
+## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Microsoft に報告されたメッセージのコピーを受信するためのメールフロールールを作成する
 
-  - Exchange 管理センター (EAC) ユーザー インターフェイス。 詳細については、「[Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。
+このトピックで説明する方法を使用して Microsoft に報告された電子メールメッセージを検索するメールフロールール (トランスポートルールとも呼ばれます) を作成し、これらのレポートされたメッセージのコピーを受信するように Bcc 受信者を構成することができます。
 
-  - エンドユーザー スパム通知メッセージ (管理者が有効にしている場合)。
+メールフロールールは、Exchange 管理センター (EAC) および PowerShell (Office 365 お客様の場合は Exchange Online PowerShell) で作成できます。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
 
-- スパムとして分類されるべきでないメッセージを Microsoft にメールで送信することもできます。 その場合は、以下の手順を必ず実行してください。
+### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-### <a name="use-email-to-submit-false-positive-messages"></a>電子メールで誤検知メッセージを提出する
+- これらの手順を実行する前に、Exchange Online でアクセス許可を割り当てる必要があります。 具体的には、既定では、**組織の管理**、**コンプライアンス管理**、および**レコード管理**の役割に割り当てられている**トランスポートルール**の役割が割り当てられている必要があります。 詳細については、「[Exchange Online で役割グループを管理する](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
 
-「[メールを使用して迷惑 (スパム) またはフィッシング詐欺メッセージを Microsoft に送信する](#use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft)」に記載されている同じ手順を使用しますが、メッセージを not_junk@office365.microsoft.com に送信します。
+- Exchange Online で EAC を開くには、「exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center)」を参照してください。
 
-## <a name="spam-evaluation-and-rules-deployment"></a>スパム評価とルールの展開
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection の PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-スパム分析チームは、送信したメッセージを調査し、今後の迷惑メールを防ぐためにスパムフィルターを調整します。 そのため、Office 365 スパムフィルターは常に見直されています。 提出されたすべてのアイテムは、ネットワーク規模のレベルで評価されます。 False 肯定提出は、スパムフィルターを通過できるようになる可能性があるルールの調整を調査および評価します。 そのため、サービスに誤検知と、偽の否定 (迷惑メールではない) について通知することは、自分やグローバルネットワークを使用するすべてのお客様にとって有益です。 スパムチームは、送信された各メッセージ内の次のようなインジケーターをチェックします。
+- Exchange Online およびスタンドアロン EOP のメールフロールールの詳細については、以下のトピックを参照してください。
 
-- 送信元アドレス
+  - [Exchange Online のメール フロー ルール (トランスポート ルール)](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-- 送信 IP アドレス
+  - [Exchange Online のメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-- キーワード
+  - [Exchange Online でのメール フロー ルールの処理](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- 語句
+### <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>EAC を使用して、報告されたメッセージのコピーを受信するメールフロールールを作成する
 
-- 送信頻度
+1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-- その他の傾向やパターン
+2. [追加] アイコン](../../media/ITPro-EAC-AddIcon.png) **をクリックし**、[**新しいルールの作成**] を選択します。 ![
 
-この情報を確認した後、スパムチームは、サービスのスパムフィルタリングレイヤーに変更を加える可能性があります。 スパムチームの詳細については、次の英語のみのビデオをご覧ください。
+3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
-[Microsoft Exchange スパムチームビデオ](https://youtu.be/-TpX_-GMC7o?hd=1)
+   - [**名前**]: わかりやすい一意のルールの名前を入力します。 たとえば、Microsoft に報告される Bcc メッセージ。
 
-スパム評価は、スパムの発信元の言語や文字セットに関係なく適用される継続的なプロセスです。スパム メッセージはあいまいであったり、件名やメッセージ本文のテキストがないことがあるため、スパム チームは、その他のメッセージの特性を使用してフィルター処理を行います。つまり、スパム チームが特定のメッセージをスパムとして設定し、そのルール ベースに必要な変更を行った場合、メッセージの特徴がフィルターを回避できるほど大きく変わらない限り、メッセージはブロックされます。新しいスパム ルールは継続的にデプロイされます。個々の提出についてルールがデプロイされる時期は、提出の量と質によって異なります。新しいスパム ルールはすべてのユーザーに対してグローバルに設定されるため、個々のスパムの提出が必ずしも新しいスパム ルールになるとは限りません。
+   - [**その他のオプション**] をクリックします。
+
+   - [次の**場合にこのルールを適用**する]:**受信者** \> **のアドレスに次のいずれかの単語が含まれ**ます。表示される [**単語または語句の指定**] ダイアログで、次のいずれかの値を入力し、[ ![追加] アイコン](../../media/ITPro-EAC-AddIcon.png)をクリックして、すべての値を入力するまで繰り返します。 **Add**
+
+     - `junk@office365.microsoft.com`
+     - `abuse@messaging.microsoft.com`
+     - `phish@office365.microsoft.com`
+     - `false_positive@messaging.microsoft.com`
+
+     エントリを編集するには、エントリを選択し、 **[編集]** ![[編集] アイコン](../../media/ITPro-EAC-EditIcon.png)をクリックします。 エントリを削除するには、エントリを選択し、 **[削除]** ![[削除] アイコン](../../media/ITPro-EAC-DeleteIcon.png)をクリックします。
+
+     完了したら、 **[OK]** をクリックします。
+
+   - **次の手順を実行**します。 [**受信者** \> **を Bcc ボックスに追加する**] を選択します。 表示されるダイアログで、追加する受信者を見つけて選択します。 完了したら、 **[OK]** をクリックします。
+
+4. ルールを監査したり、ルールをテストしたり、特定の期間にルールをアクティブ化したり、その他の設定を行ったりするには、追加の選択を行うことができます。 ルールを適用する前に、ルールをテストすることをお勧めします。
+
+5. 完了したら、**[保存]** をクリックします。
+
+### <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>PowerShell を使用して、報告されたメッセージのコピーを受信するメールフロールールを作成する
+
+この例では、このトピックで説明する方法を使用して Microsoft に報告された電子メールメッセージを検索し、Bcc 受信者としてユーザー laura@contoso.com および julia@contoso.com を追加する Bcc メッセージという名前の新しいメールフロールールを作成します。
+
+```powershell
+New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
+```
+
+詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)」を参照してください。
+
+### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
+
+レポートされたメッセージのコピーを受信するメールフロールールが構成されていることを確認するには、次のいずれかの手順を実行します。
+
+- EAC で、 \> [**メールフロー** \> **ルール** \> ] に移動し、[**編集]** ![編集](../../media/ITPro-EAC-EditIcon.png)アイコンをクリックして設定を確認します。
+
+- PowerShell で、次のコマンドを実行して設定を確認します。
+
+  ```powershell
+  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
+  ```
+
+- テストメッセージをレポート電子メールアドレスのいずれかに送信し、結果を確認します。

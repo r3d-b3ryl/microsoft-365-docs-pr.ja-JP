@@ -2,10 +2,10 @@
 title: Office 365、O365 提出、Office 365 スパムの問題、O365 誤検出、office 365 での送信フィッシング、office 365 での電子メールの送信、メールの送信、メールをスキャン、フィッシングに関する Microsoft scan を使用している、microsoft scan for スパム、送信電子メール、電子メールの送信、dodgy メール、誤ったアクターメール、疑わしい、信頼できないメール、レポートフィッシング電子メール、microsoft への電子メールの報告、詐欺メールを microsoft に報告する、microsoft への電子メールの報告、microsoft への電子メールの報告、スパム受信トレイ内のメール office 365、電子メール office のウイルス365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 08/06/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,19 +15,30 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 疑わしいメール、疑わしいフィッシングメール、スパム、およびその他の潜在的に有害なメッセージ、Url、およびその他の潜在的な問題のあるメールを、Office 365 テナントから Microsoft にスキャンするために提出する方法について説明します。
-ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 539d09f03a8a9c5956f2d1e3584f893b0e4ffbb4
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083637"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033616"
 ---
-# <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>フィッシングの疑いのあるスパム、、Url、およびファイルを Microsoft for Office 365 スキャンに提出する方法
+# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者提出を使用して、疑いのあるスパム、フィッシング、Url、およびファイルを Microsoft に送信する
 
-管理者は、Microsoft が Office 365 でスキャンするファイルまたはネットワークメッセージ ID、Url、ファイルを使用して、メールを送信できます。
-更新された提出物セクションには、ユーザーが報告したメッセージと、EOP を使用しているすべてのお客様が利用できます。
+Exchange Online のメールボックスを使用する Office 365 組織の管理者である場合は、Office 365 セキュリティ & コンプライアンスセンターの送信ポータルを使用して、電子メールメッセージ、Url、添付ファイルをスキャン用に Microsoft に送信できます。
 
 電子メールを送信すると、受信メールがテナントに許可されている可能性のあるポリシーや、メール内のすべての Url と添付ファイルの調査に関する情報が得られます。 メールが許可されているポリシーには、個々のユーザーの信頼できる差出人のリストと、Exchange メールフロールール (トランスポートルールとも呼ばれる) などのテナントレベルのポリシーが含まれます。
+
+その他の方法で、電子メールメッセージ、Url、添付ファイルを Microsoft に提出する方法については、 
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+
+- セキュリティ & コンプライアンスセンターに<https://protection.office.com/>表示されます。 **送信**ページに直接移動するには、 <https://protection.office.com/reportsubmission>を使用します。
+
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection の PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+
+- これらの手順を実行する前に、アクセス許可を割り当てる必要があります。 スパム対策ポリシーを追加、変更、および削除するには、**組織の管理**、**セキュリティ管理者**、または**セキュリティリーダー**の役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+
+- ユーザーがメッセージやファイルを Microsoft に送信する方法の詳細については、「 [microsoft にレポートメッセージとファイルを](report-junk-email-messages-to-microsoft.md)送信する」を参照してください。
 
 ## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>Office 365 スキャンに対して疑わしいコンテンツを Microsoft に送信する方法
 
@@ -41,7 +52,7 @@ Microsoft にコンテンツを送信するには、送信ページの左上に�
 
 2. ポリシーチェックの実行対象となる受信者を指定します。 ポリシーチェックは、ユーザーまたはテナントレベルのポリシーによって、電子メールがスキャンをバイパスしたかどうかを判断します。
 
-3. 電子メールがブロックされているかどうかを指定します。 メールがブロックされている必要がある場合は、スパム、フィッシング、またはマルウェアとしてブロックされているかどうかを指定します。 可能な種類がわからない場合は、最適な judgement を使用してください。
+3. 電子メールがブロックされているかどうかを指定します。 メールがブロックされている必要がある場合は、スパム、フィッシング、またはマルウェアとしてブロックされているかどうかを指定します。 可能な種類がわからない場合は、最適な判断を行ってください。
 
    - 送信時のポリシーによってフィルターがバイパスされた場合は、そのポリシーに関する情報が表示されます。
 
@@ -66,11 +77,3 @@ Microsoft にコンテンツを送信するには、送信ページの左上に�
 1. ファイルを送信するには、ポップアップ**からファイルを選択し**、スキャンしたいファイルをアップロードします。
 
 2. [**送信**] ボタンをクリックします。
-
-## <a name="related-topics"></a>関連項目
-
-[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)
-
-[Office 365 で脅威から保護する](protect-against-threats.md)
-
-[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)

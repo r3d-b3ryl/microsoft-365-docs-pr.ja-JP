@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a179a3ccfc28b16aaa500d9222f69660bbc4c4df
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982040"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029893"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "42982040"
 
 コミュニケーションコンプライアンスポリシーを使用して、内部または外部のレビューアーによる調査のために従業員の通信をキャプチャします。 通信コンプライアンスポリシーが組織内の通信の監視にどのように役立つかについては、「 [Microsoft 365 の通信コンプライアンスポリシー](communication-compliance.md)」を参照してください。 Contoso 社が Microsoft Teams および Exchange Online の通信で不快な言葉を監視するために、どのように通信コンプライアンスポリシーを構成したかを確認したい場合は、この[ケーススタディ](communication-compliance-case-study.md)をご確認ください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 通信のコンプライアンスを開始する前に、Microsoft 365 のサブスクリプションを確認する必要があります。 通信コンプライアンスポリシーに含まれるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれているか、Microsoft に含まれている必要があります。365 E5 サブスクリプション。
 
@@ -73,7 +73,6 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 監査を有効にするための詳細な手順については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 
-
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>手順 3 (省略可能): 通信コンプライアンス用にグループをセットアップする
 
  通信コンプライアンスポリシーを作成する場合は、通信をレビューしたユーザーとレビューを実行するユーザーを定義します。 ポリシーでは、メール アドレスを使って、個人または複数人のグループを指定します。 セットアップを簡単にするために、コミュニケーションをレビューしたユーザーのためのグループを作成できます。 グループを使用している場合は、複数必要になる場合があります。 たとえば、2つの異なるユーザーグループ間の通信を監視する場合、または、監視されないグループを指定する場合などです。
@@ -90,11 +89,13 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 グループの設定の詳細については、次の記事を参照してください。
 
 - [配布グループを作成して管理する](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [メールが有効なセキュリティ グループの管理](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Overview of Office 365 Groups (Office 365 グループの概要)](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>手順 4 (必須): 通信コンプライアンスポリシーを作成する
   
+>[!Important]
+>PowerShell を使用して通信コンプライアンスポリシーを作成および管理することはサポートされていません。 これらのポリシーを作成および管理するには、 [Microsoft 365 コミュニケーションコンプライアンスソリューション](https://compliance.microsoft.com/supervisoryreview)のポリシー管理コントロールを使用する必要があります。
+
 1. Microsoft 365 [https://compliance.microsoft.com](https://compliance.microsoft.com)組織の管理者アカウントの資格情報を使用してサインインします。
 
 2. Microsoft 365 コンプライアンスセンターで、[**通信コンプライアンス**] を選択します。
@@ -107,14 +108,14 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
     - ポリシー名を確認または更新します。 ポリシー名は、ポリシーの作成後に変更することはできません。
     - 除外するユーザーやグループの選択などを含めて、監督するユーザーまたはグループを選択します。
-    - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーか、[メールが有効なセキュリティ グループ](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)です。 すべてのレビュー担当者は、Exchange Online でホストされているメールボックスを持っている必要があります。 ここに追加されたレビュー担当者は、アラートを調査および修復ワークフローでエスカレーションする際に選択できるレビュー担当者です。
+    - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーで、すべての校閲者が Exchange Online でホストされたメールボックスを持っている必要があります。 ここに追加されたレビュー担当者は、アラートを調査および修復ワークフローでエスカレーションする際に選択できるレビュー担当者です。
     - 制限された条件フィールド (通常は、ポリシーに適用する機密情報の種類またはキーワードディクショナリ) を選択します。
 
     ポリシーウィザードを使用してカスタムポリシーを作成する場合は、次の操作を行います。
 
     - ポリシーに名前と説明を付けます。 ポリシー名は、ポリシーの作成後に変更することはできません。
     - 組織内のすべてのユーザー、特定のユーザーとグループ、または除外する他のユーザーとグループを含む、監督するユーザーまたはグループを選択します。
-    - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーか、[メールが有効なセキュリティ グループ](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)です。 すべてのレビュー担当者は、Exchange Online でホストされているメールボックスを持っている必要があります。
+    - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーで、すべての校閲者が Exchange Online でホストされたメールボックスを持っている必要があります。
     - Exchange、Microsoft Teams、Skype for Business など、スキャンする通信チャネルを選択します。 また、Microsoft 365 でコネクタを構成した場合は、サードパーティのソースをスキャンすることもできます。
     - 受信、送信、内部通信など、監視する通信方向を選択します。
     - 通信コンプライアンスポリシーの[条件](communication-compliance-feature-reference.md#ConditionalSettings)を定義します。 [メッセージ アドレス]、[キーワード]、[ファイルの種類]、および [サイズの一致条件] の中から選ぶことができます。

@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 管理者は、Office 365 および EOP で使用可能なオプションについて学び、受信メッセージをブロックすることができます。
-ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893864"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033424"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Office 365 でブロックされる送信者のリストを作成する
 
@@ -30,12 +30,12 @@ Exchange Online または exchange online メールボックスを持たない�
 
 2. ブロックされる送信者の一覧または禁止されたドメインリスト (スパム対策ポリシー)
 
-3. Mai フロールール
+3. メール フロー ルール
 
 4. IP 禁止一覧 (接続フィルター)
 
 > [!NOTE]
-> 誤検知を解決するために、組織全体のブロック設定を使用することはできますが (迷惑メールは失われます)、それらのメッセージを分析のために Microsoft に送信する必要があります。 ブロックリストを使用して誤検知を管理すると、管理オーバーヘッドが大幅に向上します。 ブロックリストを使用して迷惑メールを切り替えるする場合は、準備完了時に、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)する」のトピックを保持する必要があります。
+> 誤検知を解決するために、組織全体のブロック設定を使用することはできますが (迷惑メールは失われます)、それらのメッセージを分析のために Microsoft に送信する必要があります。 ブロックリストを使用して誤検知を管理すると、管理オーバーヘッドが大幅に向上します。 ブロックリストを使用して、不在時のスパムを切り替えるする場合は、準備完了時に、トピック[レポートのメッセージとファイルを Microsoft に](report-junk-email-messages-to-microsoft.md)保持する必要があります。
 
 一方、[_差出人セーフリスト_] を使用して特定の送信元からの電子メールを常に許可するには、いくつかのオプションもあります。 詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
@@ -50,7 +50,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>ブロックする送信者リストまたは禁止ドメインリストを使用する
 
-複数のユーザーが影響を受ける場合、範囲は広くなるため、次の最適なオプションは、[迷惑メール対策] ポリシーの [送信者リストまたはブロックされたドメインリスト] に制限されます。 リストの送信者からのメッセージが**スパム**としてマークされ、**スパム**フィルター verdict に対して構成したアクションがメッセージに対して実行されます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+複数のユーザーが影響を受ける場合、範囲は広くなるため、次の最適なオプションは、[迷惑メール対策] ポリシーの [送信者リストまたはブロックされたドメインリスト] に制限されます。 リストの送信者からのメッセージが**スパム**としてマークされ、**スパム**フィルター verdict に対して構成したアクションがメッセージに対して実行されます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 これらのリストの最大数は、約1000エントリです。ただし、ポータルには30個のエントリしか入力できません。 30個を超えるエントリを追加するには、PowerShell を使用する必要があります。
 

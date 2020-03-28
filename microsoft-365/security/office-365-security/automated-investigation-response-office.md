@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air
-ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955576"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033448"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -92,7 +92,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>例: ユーザーから報告されたフィッシング メッセージによる調査プレイブックの起動
 
-組織内のユーザーが、フィッシング詐欺であると思われる電子メールを受信したとします。 このようなメッセージを報告するためのトレーニングを受けたユーザーは、 [outlook または Outlook Web App 用のレポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して、分析のために Microsoft に送信します。 送信は、システムにも送信さ**れ、[送信] ビューの**エクスプローラーに表示されます (以前はユーザーによって**報告**されたビューと呼ばれています)。 さらに、ユーザーによって報告されたメッセージがシステムベースの情報通知をトリガーするようになります。これにより、調査のプレイブックが自動的に起動します。
+組織内のユーザーが、フィッシング詐欺であると思われる電子メールを受信したとします。 このようなメッセージを報告するようにトレーニングされたユーザーは、[レポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して、分析のために Microsoft に送信します。 送信は、システムにも送信さ**れ、[送信] ビューの**エクスプローラーに表示されます (以前はユーザーによって**報告**されたビューと呼ばれています)。 さらに、ユーザーによって報告されたメッセージがシステムベースの情報通知をトリガーするようになります。これにより、調査のプレイブックが自動的に起動します。
 
 ルート調査フィーズでは、メールのさまざまな側面が評価されます。 これらには以下が含まれます。
 - 可能性のある脅威の種類の特定

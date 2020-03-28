@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Office 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353968"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029862"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのアクティビティ レポート
 
@@ -75,6 +75,10 @@ ms.locfileid: "42353968"
 - グローバル閲覧者
     
 - レポート閲覧者
+
+- Teams サービス管理者
+
+- Teams 通信管理者
     
 詳しくは、「[管理者ロールについて](../add-users/about-admin-roles.md)」および「[管理者ロールを割り当てる](../add-users/assign-admin-roles.md)」をご覧ください。
   

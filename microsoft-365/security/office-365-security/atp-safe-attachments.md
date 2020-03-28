@@ -17,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60a5a95af846fe6dbe8c2c7aa6dced9deaae1a2d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599814"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033460"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP の安全な添付ファイル
 
@@ -68,4 +68,4 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
 
 - Microsoft に分析を求めるファイルを受信した場合は、「[マルウェア分析用のファイルを送信](https://aka.ms/wdsi/submit)する」を参照してください。
 
-- Microsoft に送信する電子メールメッセージ (添付ファイルの有無にかかわらず) を受信した場合は、[レポートメッセージアドイン](enable-the-report-message-add-in.md)を使用します。
+- Microsoft に送信する電子メールメッセージ (添付ファイルの有無にかかわらず) を受信した場合は、「[レポートメッセージとファイルを microsoft に報告](report-junk-email-messages-to-microsoft.md)する」を参照してください。

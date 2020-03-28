@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft は、さまざまなポリシー、手順を開発し、業界のベストプラクティスをいくつか採用して、ユーザーを不適切な迷惑メールや悪意のあるメールから保護しています。
-ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598614"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033748"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 
@@ -89,7 +89,7 @@ Microsoft は、インターネットと電子メールのエコシステムを�
 
 ## <a name="abuse-and-spam-reporting"></a>迷惑行為とスパムの報告
 
-迷惑メールや不適切な迷惑メールを報告するには、 [Outlook on the web で迷惑メールとフィッシング詐欺を報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)してください。 これらの種類の通信を送信することは、Microsoft ポリシーに違反するものであり、確認レポートに基づいて適切な処置が取られます。
+不正な迷惑メール、迷惑メールを報告する方法については、「 [Microsoft へのレポートメッセージとファイル](report-junk-email-messages-to-microsoft.md)」を参照してください。 これらの種類の通信を送信することは、Microsoft ポリシーに違反するものであり、確認されたレポートに対して適切な処置が行われます。
 
 ## <a name="law-enforcement"></a>法的処置
 

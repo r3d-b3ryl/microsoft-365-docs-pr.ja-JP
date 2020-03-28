@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978167"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024357"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
 > [!IMPORTANT]
-> Microsoft は、衛生衛生状況を評価しており、お客様に対する影響について理解しています。 Sdl は、強力なパートナーと責任を持つグローバル市民を求めています。 お客様が直面している多くの負荷の1つを簡単にするために、以下に示す従来の電子情報開示ツールの定期退職を3か月延期します。 **更新された退職日は次のように反映されます。**
+> Microsoft は、衛生衛生状況を評価しており、お客様に対する影響について理解しています。 Sdl は、強力なパートナーと責任を持つグローバル市民を求めています。 お客様が直面している多くの状況の1つを簡単にするために、この記事で説明した従来の電子情報開示ツールを3か月で延期する予定です。 **更新された退職日は次のように反映されます。**
 
 長年、Microsoft では、Exchange Online からの電子メールコンテンツの検索、プレビュー、およびエクスポートを可能にする電子情報開示ツールを提供しています。 ただし、これらのツールは、SharePoint Online や Office 365 グループなど、他の Office 365 サービスで Exchange 以外のコンテンツを検索する効果的な方法を提供しなくなりました。 このことを説明するために、Microsoft は、さまざまな Office 365 コンテンツを検索するのに役立つその他の電子情報開示ツールを提供しています。 また、マイクロソフトは、 [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)で最新の強力な電子情報開示機能を組み込むために努力してきました。 これにより、組織は、Exchange Online などの多くの Office 365 サービスにわたって、法律、内部、およびその他のドキュメント要求に対応することができます。
 

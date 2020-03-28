@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: 8c37ea146447a7b38b10224db94f9995fd985e6e
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 2b77d273cdc589409506dc709669536fcea6c006
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826182"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030126"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -68,7 +68,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 |[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | プレビュー:[月次チャネル (対象指定)](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | プレビュー: [Office Insider](https://office.com/insider)        | レビュー   | レビュー         | レビュー                                                        |
+|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [月次チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)(2003 以降) へのロールアウト | [月次チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)へのロールアウト (16.35 +)   | レビュー   | レビュー         | レビュー                                                        |
 |[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)                                  | レビュー | レビュー | レビュー | [プレビュー](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -79,19 +79,19 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 
 |機能                                                                                                        |Windows デスクトップ上の Outlook |Outlook on Mac デスクトップ  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[ラベルを手動で適用、変更、または削除する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
+|[ラベルを手動で適用、変更、または削除する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
 |[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
-|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト                       | レビュー                    | レビュー           | レビュー               | はい |
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)へのロールアウト                       | レビュー                    | レビュー           | レビュー               | 必要 |
 |
 
-## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベルクライアントと Azure Information Protection クライアント
+## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 組み込みのラベルクライアントとその他のラベルソリューション
 
 Office 組み込みのラベルクライアントは、次の管理センターから、機密ラベルと機密ラベルポリシー設定をダウンロードします。
 
@@ -99,19 +99,25 @@ Office 組み込みのラベルクライアントは、次の管理センター�
 - Microsoft 365 セキュリティ センター
 - Office 365 セキュリティ/コンプライアンス センター
 
-Office の組み込みラベルクライアントを使用するには、リストされた管理センターの1つからユーザーに対して発行された1つ以上の[ラベルポリシー](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)が必要です。
+Office 組み込みのラベルクライアントを使用するには、リストされた管理センターの1つと、[サポートされているバージョンの office](#support-for-sensitivity-label-capabilities-in-apps)に対して、1つ以上の[ラベルポリシーを発行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)する必要があります。
 
-ただし、ユーザーが ([ユニファイドラベルクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)または[クラシッククライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)) インストールされている Azure Information Protection クライアントの1つである場合、既定では、組み込みのラベルクライアントは Office アプリで無効になっています。 Office アプリ用の Azure Information Protection クライアントではなく、組み込みのラベルを使用するには、Azure Information Protection 用の Office アドインを無効にするかアンインストールします。
+これらの条件の両方が満たされている場合に、Office の組み込みラベルクライアントを無効にする必要がある場合は、次のグループポリシー設定を使用します。
 
-1. 次のオプションのいずれかを実行します。
-    
-    - **複数のコンピューターの場合:**[ **Office の秘密度機能を使用して、機密ラベルを適用して表示する**] グループポリシー設定を構成します。 [**ユーザーの構成]/[管理用テンプレート]/[Microsoft Office 2016/セキュリティ設定**] の下にあるこの設定を見つけます。 この設定は、グループポリシーまたは[Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)を使用して展開します。
-    
-    - **1 台のコンピューターの場合:** 1台のコンピューターで Azure Information Protection アドインを[完全に無効](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)にしたり、削除したりする方法については、「Office プログラムでアドインを表示、管理、およびインストールする」を参照してください。
+1. [**ユーザーの構成]/[管理用テンプレート]、[Microsoft Office 2016** ]、[セキュリティ設定] の順に移動します。
 
-2. すべての Office アプリケーションを再起動します。
+2. [ **Office の秘密度] 機能を使用して、機密ラベルを適用して0に表示するように設定し**ます。 **0** 
+ 
+グループポリシーまたは[Office cloud Policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。 この設定は、Office アプリが再起動されたときに有効になります。
 
-この Office アドインを無効にするかアンインストールすると、Office アプリの外部でファイルに引き続きラベルを付けることができるように、Azure Information Protection クライアントがインストールされたままになります。 たとえば、ファイルエクスプローラーや PowerShell を使用します。
+### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベルクライアントと Azure Information Protection クライアント
+
+ユーザーが Azure Information Protection クライアントのいずれか ([ユニファイドラベルクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)または[クラシッククライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)) をインストールしている場合、既定では、組み込みのラベルクライアントは Office アプリで無効になっています。 
+
+Office アプリ用の Azure Information Protection クライアントではなく、組み込みのラベルを使用するには、前のセクションの手順を使用しますが、グループポリシー設定を設定するには、 **office の秘密度機能を使用**して、機密ラベルを**1**に適用および表示します。 
+
+または、Office アドイン、 **Azure Information Protection**を無効化または削除します。 この方法は、単一のコンピューターとアドホックテストに適しています。 手順については、「 [Office プログラムでアドインを表示、管理、およびインストール](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)する」を参照してください。 
+
+この Office アドインを無効にするか削除すると、Office アプリの外部でファイルに引き続きラベルを付けることができるように、Azure Information Protection クライアントがインストールされたままになります。 たとえば、ファイルエクスプローラーや PowerShell を使用します。
 
 Azure Information Protection クライアントおよび Office 組み込みのラベルクライアントによってサポートされる機能については、「Azure Information Protection のドキュメントで[Windows コンピューターに使用するラベル付けクライアントを選択する](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)」を参照してください。
 

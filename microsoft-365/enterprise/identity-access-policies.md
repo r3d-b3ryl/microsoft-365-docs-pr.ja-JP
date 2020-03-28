@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978268"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022923"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -225,18 +225,22 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 ## <a name="define-device-compliance-policies"></a>デバイスコンプライアンスポリシーの定義
 
-デバイスコンプライアンスポリシーは、準拠としてマークするためにデバイスが従う必要がある要件を定義します。 Azure ポータル内から Intune デバイスコンプライアンスポリシーを作成します。 
+デバイスコンプライアンスポリシーは、準拠としてマークするためにデバイスが従う必要がある要件を定義します。 Microsoft エンドポイントマネージャー管理センター内から Intune デバイスコンプライアンスポリシーを作成します。
 
 プラットフォームごとにポリシーを作成します。
-- Android
-- Android enterprise
-- iOS
+- Android デバイス管理者
+- Android Enterprise
+- iOS/iPadOS
 - macOS
 - この設定は、次の種類のデバイスで使用できます。
 - Windows 8.1 以降
 - Windows 10 以降
 
-デバイスコンプライアンスポリシーを作成するには、管理者の資格情報を使用して Microsoft Azure portal にログインしてから、[ **Intune > デバイスのコンプライアンス**] に移動します。 [**ポリシーの作成**] を選択します。
+デバイスコンプライアンスポリシーを作成するには、管理者の資格情報を使用して[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にログインし、[**デバイス** > **コンプライアンスポリシー** > の**ポリシー**] に移動します。 [**ポリシーの作成**] を選択します。
+
+デバイスコンプライアンスポリシーを展開するには、ユーザーグループに割り当てる必要があります。 ポリシーは、作成して保存した後に割り当てます。 管理センターで、ポリシーを選択し、[**割り当て**] を選択します。 ポリシーを受信するグループを選択したら、[**保存**] を選択してそのグループの割り当てを保存し、ポリシーを展開します。
+
+Intune でコンプライアンスポリシーを作成する詳細な手順については、「Intune ドキュメントの「 [Microsoft intune でコンプライアンスポリシーを作成](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)する」を参照してください。
 
 Windows 10 では、次の設定をお勧めします。
 
@@ -255,8 +259,6 @@ Windows 10 では、次の設定をお勧めします。
 |:---|:---------|:-----|:----|
 |オペレーティング システムのバージョン|すべて|未構成||
 
-上記のすべてのポリシーを展開済みと見なすには、ユーザー グループを対象にする必要があります。 これを行うには、ポリシーを (保存時に) [**ポリシー** ] セクションの [**展開の管理**] ([追加] と同じレベル) を選択して作成します。
-
 **システム セキュリティ**
 
 |型|[プロパティ]|値|注|
@@ -273,9 +275,9 @@ Windows 10 では、次の設定をお勧めします。
 |デバイスのセキュリティ|ウォール|必須||
 ||ウイルス対策|必須||
 ||ウェア|必須|この設定には、Windows セキュリティセンターに登録されたスパイウェア対策ソリューションが必要です|
-|守護|Windows Defender マルウェア対策|必須||
-||Windows Defender マルウェア対策の最小バージョン||Windows 10 デスクトップでのみサポートされています。 Microsoft では、最新バージョン以降のバージョンを5つ以下にすることをお勧めします。|
-||Windows Defender マルウェア対策の署名が最新の状態になっています|必須||
+|守護|Microsoft Defender マルウェア対策|必須||
+||Microsoft Defender マルウェア対策の最小バージョン||Windows 10 デスクトップでのみサポートされています。 Microsoft では、最新バージョン以降のバージョンを5つ以下にすることをお勧めします。|
+||Microsoft Defender マルウェア対策の署名が最新の状態になっています|必須||
 ||リアルタイム保護|必須|Windows 10 デスクトップでのみサポートされています。|
 
 **Microsoft Defender ATP**
@@ -283,6 +285,7 @@ Windows 10 では、次の設定をお勧めします。
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
 |Microsoft Defender Advanced Threat Protection ルール|デバイスがコンピューターのリスクスコアの下または下にある必要があります。|中||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>準拠 Pc を必要とする (ただし、準拠する電話やタブレットではない)
 準拠している Pc を必要とするポリシーを追加する前に、管理するデバイスを Intune に登録してください。 デバイスが目的のユーザーを所有していることを保証するために、デバイスを Intune に登録する前に、多要素認証を使用することをお勧めします。 

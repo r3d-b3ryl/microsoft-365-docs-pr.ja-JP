@@ -15,16 +15,16 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でのメールフロールールをバルクメールフィルターに使用する方法について説明します。
-ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895049"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033640"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>メールフロールールを使用して Office 365 でバルクメールをフィルター処理する
 
-Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 お客様の場合、EOP では、スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) を使用してスキャンします。スパムおよびバルクメールの受信メッセージ (灰色のメールとも呼ばれます)。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 お客様の場合、EOP では、スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) を使用してスキャンします。スパムおよびバルクメールの受信メッセージ (灰色のメールとも呼ばれます)。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 バルクメールをフィルター処理するためのその他のオプションが必要な場合は、メールフロールール (トランスポートルールとも呼ばれる) を作成して、バルクメールでよく見られるテキストパターンや語句を検索し、それらのメッセージをスパムとしてマークします。 バルクメールの詳細については、Office 365 の「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」および「[バルク苦情レベル (BCL)](bulk-complaint-level-values.md)」を参照してください。
 
@@ -66,7 +66,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
    - [次の**場合、このルールを適用**する]: 正規表現 (RegEx) または単語または語句を使用したメッセージのコンテンツを検索するには、次のいずれかの設定を構成します。
 
-     - **件名** \>または本文が次の**テキストパターンと一致**する場合: 表示された [**単語または語句の指定**] ダイアログボックスで、次のいずれ](../../media/ITPro-EAC-AddIcon.png)かの値を入力し、[ ![追加] アイコン**をクリックし**て、必要な回数だけ繰り返します。
+     - **件名** \>または本文が次の**テキストパターンと一致**する場合: 表示された [**単語または語句の指定**] ダイアログボックスで、次のいずれ](../../media/ITPro-EAC-AddIcon.png)かの値を入力し **、[** ![追加] アイコンをクリックして、すべての値を入力するまで繰り返します。
 
        - `If you are unable to view the content of this email\, please`
 
@@ -96,7 +96,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
        完了したら、 **[OK]** をクリックします。
 
-     - **件名または本文** \>に次**のいずれかの単語が含ま**れている場合: 表示される [**単語または語句の指定**] ダイアログボックスで、次](../../media/ITPro-EAC-AddIcon.png)のいずれかの値を入力し、[ ![追加] アイコン**をクリックし**て、必要な回数だけ繰り返します。
+     - **件名** \>または本文に次**のいずれかの単語が含ま**れている場合: 表示される [**単語または語句の指定**] ダイアログボックスで、次](../../media/ITPro-EAC-AddIcon.png)のいずれかの値を入力し **、[** ![追加] アイコンをクリックして、すべての値を入力するまで繰り返します。
 
        - `to change your preferences or unsubscribe`
 
@@ -138,7 +138,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
    完了したら、[**保存**] をクリックします。
 
-## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>PowerShell を使用して、バルクメールをフィルター処理するメールフロールールを作成する
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>PowerShell を使用してバルクメールをフィルター処理するメールフロールールを作成する
 
 次の構文を使用して、1つまたは両方のメールフロールール (正規表現と単語の比較) を作成します。
 

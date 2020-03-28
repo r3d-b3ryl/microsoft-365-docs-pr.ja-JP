@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
-ms.openlocfilehash: 9c027d6c1ded10becd7c73dc3468270ff50edb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599344"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032866"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,12 +63,8 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
 
 EOP エンド ユーザーによるスパム管理を支援するためのヘルプ コンテンツは、次のトピックで構成されます。
 
-- [ユーザーとして検疫済みメッセージを検索して解放](find-and-release-quarantined-messages-as-a-user.md)する: エンドユーザーがスパム検疫ユーザーインターフェイスで自分のスパム検疫メッセージを見つけてリリースする方法を説明し、オプションで、それらを迷惑メールではないとして Microsoft に報告する方法について説明します。
+- [メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)
 
-- [スパム、非スパム、フィッシング詐欺メッセージを分析のために microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): エンドユーザーがスパム (迷惑メール) メッセージと非スパム (迷惑メールではない) メッセージを microsoft に送信するさまざまな方法について説明します。 このトピックには、Microsoft Outlook および web 上の Outlook (旧称 Outlook Web App) で使用可能なレポートツールへのリンクが含まれています。
-
-- [マルウェアおよびマルウェア以外の Microsoft による分析の提出](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): エンドユーザーがフィルターを通過したマルウェアを送信したり、マルウェアとして誤って識別されたファイルを送信したりする方法について説明します。
-
-- エンドユーザーは、Outlook または web 上の Outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。 禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
+- エンドユーザーは、Outlook または web 上の Outlook で、自分の信頼できる差出人のリストまたは受信拒否リストに送信者を追加できます。 管理者は、ユーザーメールボックス内のこれらのリストを変更することもできます。 詳細については、「 [Outlook での迷惑メール設定につい](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)て」を参照してください。
 
 - 「[EOP のヘルプとサポート](help-and-support-for-eop.md)」 ヘルプおよびテクニカル サポートの入手方法について説明しています。

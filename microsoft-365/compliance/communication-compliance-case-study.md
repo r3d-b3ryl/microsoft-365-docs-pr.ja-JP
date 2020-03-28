@@ -1,5 +1,5 @@
 ---
-title: ケーススタディ-Contoso 社が迅速に不快な言語ポリシーを構成する
+title: ケーススタディ-Contoso 社が Microsoft Teams および Exchange の通信に対して不快な言語ポリシーを迅速に構成する
 description: Contoso 社のケーススタディと、Microsoft Teams および Exchange Online コミュニケーションで不快な言葉を監視するための通信コンプライアンスポリシーを迅速に構成する方法
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6b5ce3b9ca738ddf94edbb035daeb730f5e3f96a
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 6f23bece83f0c0fc25ddb26b8ceddcb1c956bc5e
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982388"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024347"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy"></a>ケーススタディ-Contoso 社が迅速に不快な言語ポリシーを構成する
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>ケーススタディ-Contoso 社が Microsoft Teams および Exchange の通信に対して不快な言語ポリシーを迅速に構成する
 
 Microsoft 365 の通信コンプライアンスは、組織内の不適切なメッセージに対する修復措置を検出、取得、および解決するのに役立つため、コミュニケーションリスクを最小限に抑えることができます。 定義済みおよびカスタムのポリシーを使用すると、ポリシーの一致に関する内部通信と外部通信をスキャンして、指定したレビュー担当者がそれらを調査できるようにすることができます。 レビューアーは、組織内のスキャンされた電子メール、Microsoft Teams、またはサードパーティのコミュニケーションを調査し、適切な修復処置を行って、組織のメッセージ標準に準拠していることを確認できます。
 

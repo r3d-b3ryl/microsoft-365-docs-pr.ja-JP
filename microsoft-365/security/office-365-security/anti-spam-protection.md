@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Office 365 で迷惑メールを過剰に取得する スパムフィルターとスパム対策の設定はカスタマイズできます。
-ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: bb2b714273af5177d8c69c4b89b0daec87c31650
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894072"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033472"
 ---
 # <a name="anti-spam-protection-in-office-365"></a>Office 365 でのスパム対策保護
 
@@ -46,7 +46,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
   > [!NOTE]
   > スプーフィングインテリジェンスは、接続フィルターを使用して、電子メールドメインをスプーフィングしている送信者の許可とブロックの一覧を作成します。 詳細については、「 [Office 365 のスプーフィングインテリジェンスの詳細](learn-about-spoof-intelligence.md)」を参照してください。
 
-- **スパムフィルター処理 (コンテンツフィルター)**: EOP は、スパムフィルター verdicts**スパム**、**信頼度の高いスパム**、**バルクメール**、**フィッシング電子**メール、および**信頼度の高いフィッシング電子メール**を使用してメッセージを分類します。 これらの verdicts に基づいて実行するアクションを構成することができ、配信される代わりに検疫されたメッセージのエンドユーザー通知オプションを構成できます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+- **スパムフィルター処理 (コンテンツフィルター)**: EOP は、スパムフィルター verdicts**スパム**、**信頼度の高いスパム**、**バルクメール**、**フィッシング電子**メール、および**信頼度の高いフィッシング電子メール**を使用してメッセージを分類します。 これらの verdicts に基づいて実行するアクションを構成することができ、配信される代わりに検疫されたメッセージのエンドユーザー通知オプションを構成できます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
   > [!NOTE]
   > 既定では、スパムフィルターは、受信者の迷惑メールフォルダーにスパムとしてマークされたメッセージを送信するように構成されています。 ただし、EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、メッセージに追加される EOP スパムヘッダーを認識するように、社内 Exchange 組織内の2つのメールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「 [Configure STANDALONE EOP to the Spam Email folder to the hybrid 環境」](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)を参照してください。
@@ -61,7 +61,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 次に、どちらのシナリオにも当てはまるベストプラクティスをいくつか示します。
 
-- 誤分類メッセージを常に Microsoft に送信します。 管理者は、[[送信エクスプローラー](admin-submission.md)] を使用できます。または、ユーザーは[レポートメッセージアドイン](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用してメッセージを報告できます。
+- 誤分類メッセージを常に Microsoft に送信します。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 - **スパム対策メッセージヘッダーを調べる**: これらの値は、メッセージがスパムとしてマークされた理由、またはスパムフィルター処理をスキップした理由を示します。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
@@ -77,7 +77,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
   - **DMARC**: ドメインベースのメッセージの認証、レポート、および準拠宛先メールシステムは、SPF または dkim チェックに失敗したメッセージに対する処理を決定し、電子メールパートナーに対して別のレベルの信頼を提供します。 詳細については、「 [USE DMARC to validate email In Office 365](use-dmarc-to-validate-email.md)」を参照してください。
 
-- **バルクメール設定の確認**: スパム対策ポリシーで構成する一括準拠レベル (BCL) しきい値は、バルクメール (_灰色のメール_とも呼ばれる) がスパムとしてマークされているかどうかを決定します。 既定でオンになっている_MarkAsSpamBulkMail_の PowerShell のみの設定は、結果にも影響します。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+- **バルクメール設定の確認**: スパム対策ポリシーで構成する一括準拠レベル (BCL) しきい値は、バルクメール (_灰色のメール_とも呼ばれる) がスパムとしてマークされているかどうかを決定します。 既定でオンになっている_MarkAsSpamBulkMail_の PowerShell のみの設定は、結果にも影響します。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>受信トレイへのスパムの配信を禁止する
 

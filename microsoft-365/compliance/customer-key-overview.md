@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーによって、組織の暗号化キーを制御し、Microsoft のデータ センターにある保存データの暗号化にそれを使用するよう Office 365 を構成できます。
-ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: df47f0df0f30de3529982099cb59efe2a741cd34
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333654"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029873"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Office 365 での顧客キーによるサービスの暗号化
 
@@ -49,7 +49,7 @@ Office 365 では、BitLocker および Distributed Key Manager (DKM) によっ�
 
 ## <a name="about-the-data-encryption-policy-dep"></a>データ暗号化ポリシーについて (DEP)
 
-データ暗号化ポリシーは、提供するキーと、Microsoft によって保護された可用性キーを使用して、データを暗号化するための暗号化階層を定義します。 PowerShell コマンドレットを使用して DEPs を作成します。これは、サービスごとに異なります。また、アプリケーションデータを暗号化するために割り当てます。 例:
+データ暗号化ポリシーは、提供するキーと、Microsoft によって保護された可用性キーを使用して、データを暗号化するための暗号化階層を定義します。 サービスごとに異なる PowerShell コマンドレットを使用して DEPs を作成し、アプリケーションデータを暗号化するように DEPs を割り当てます。 例:
 
 **Exchange Online と Skype For business**テナントごとに最大 50 DEPs を作成できます。 Azure Key Vault で DEPs を顧客キーに関連付け、DEPs を個々のメールボックスに割り当てます。 メールボックスに DEP を割り当てると、次のようになります。
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 情報バリアを使用して、組織内の Microsoft Teams を使用して通信のコンプライアンスを確保します。
-ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692654"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029841"
 ---
 # <a name="learn-about-information-barriers"></a>情報バリアについて
 
@@ -28,10 +28,13 @@ Microsoft クラウドサービスには、強力なコミュニケーション�
 
 情報バリアは、Microsoft Teams から展開されるようになっています。 [サブスクリプション](#required-licenses-and-permissions)に情報の障壁が含まれている場合、コンプライアンス管理者または情報バリア管理者は、Microsoft Teams のユーザーグループ間の通信を許可または禁止するポリシーを定義できます。 情報バリアポリシーは、次のような状況で使用できます。
 
-- 1日の販売者は、マーケティングチームで他のユーザーを呼び出すことはできません
-- 機密企業情報に従事している財務担当者は、組織内の特定のグループからの通話を受信できません
-- 組織内の特定のグループに属するユーザーとの通信を行うことができません。
-- 研究チームは、製品開発チームとの通話またはオンラインチャットのみを行うことができます。
+- 営業担当営業グループのユーザーがマーケティングチームと通信することはできません。
+- 機密企業情報を扱う財務担当者は、組織内の特定のグループと通信することはできません。
+- 組織内の特定のグループに属するユーザーとの通信を、取引先機密資料を含む内部チームに対して行うことはできません。
+- 研究チームは、製品開発チームとの通話またはオンラインチャットのみを行います。
+
+> [!IMPORTANT]
+> 情報の障壁は、2つの方法の制限***のみをサポート***します。 マーケティングなどの1つの方法の制限は、マーケティングとは通信できませんが、営業***はサポート***されていません。
 
 これらのすべてのシナリオ例 (およびその他) については、Microsoft Teams での通信を禁止または許可するように情報バリアポリシーを定義できます。 このようなポリシーを使用すると、ユーザーが不要な通話やチャットを行うことができなくなり、Microsoft Teams 内の特定のグループとのみ通信できるようになります。 情報バリアポリシーが有効になっていると、そのポリシーの対象となっているユーザーが Microsoft Teams 内の他のユーザーと通信しようとするたびに、チェックが行われて、通信 (情報バリアポリシーによって定義されている) を回避 (または許可) します。 情報の障壁に関するユーザーの作業の詳細については、「 [Microsoft Teams の情報障壁](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)」を参照してください。
 

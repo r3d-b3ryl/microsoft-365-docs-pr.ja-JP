@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710506"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029883"
 ---
 # <a name="define-information-barrier-policies"></a>情報障壁ポリシーの定義
 
@@ -247,7 +247,7 @@ ms.locfileid: "42710506"
 
     文`Start-InformationBarrierPoliciesApplication`
 
-    約30時間後に、組織のポリシーがユーザーごとに適用されます。 組織の規模が大きい場合、このプロセスが完了するまでに24時間以上かかることがあります。 (一般的なガイドラインとして、5000のユーザーアカウントを処理するのには1時間かかります)。
+    システムがポリシー `Start-InformationBarrierPoliciesApplication`の適用を開始できるように、30分間実行した後。 システムは、ユーザーごとにポリシーユーザーを適用します。 一般に、システムでは、1時間あたり5000のユーザーアカウントに関する情報を処理します。
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>ユーザーアカウント、セグメント、ポリシー、またはポリシーアプリケーションの状態を表示する
 

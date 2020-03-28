@@ -16,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: daabb84115f1f993fd01891bcef74c23f0391bb4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894060"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033496"
 ---
 # <a name="anti-spam-protection-in-office-365-faq"></a>Office 365 のスパム対策保護に関する FAQ
 
@@ -42,7 +42,9 @@ A. **受信メッセージの場合:** スパムの大部分は、送信元の�
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Q. ゼロ日のスパムバリアントとは何ですか。サービスによってどのように処理されますか。
 
-A. ゼロ日のスパムの亜種は、まだ取得または分析されていない最初世代のスパムのバリアントです。そのため、スパム対策フィルターは、それを検出するために利用できる情報をまだ持っていません。 スパムの分類の基準を満たしている場合、スパムの1日のサンプルを取得して分析した後、スパムの分類の条件を満たす場合は、スパム対策フィルターを検出し、"0 日" とは見なされなくなりました。 (**注:** サービスの品質向上に役立てるために、スパムの送信が0日であるというメッセージが表示された場合は、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために microsoft](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)に送信する」で説明されている方法のいずれかを使用して、マイクロソフトにメッセージを送信してください。
+A. ゼロ日のスパムの亜種は、まだ取得または分析されていない最初世代のスパムのバリアントです。そのため、スパム対策フィルターは、それを検出するために利用できる情報をまだ持っていません。 スパムの分類の基準を満たしている場合、スパムの1日のサンプルを取得して分析した後、スパムの分類の条件を満たす場合は、スパム対策フィルターを検出し、"0 日" とは見なされなくなりました。
+
+**注:** スパムの送信がゼロであるというメッセージが表示される場合は、サービスの品質向上のために、「[レポートメッセージとファイル](report-junk-email-messages-to-microsoft.md)」に記載されているいずれかの方法を使用して、メッセージを microsoft に送信してください。
 
 ## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>Q. スパム対策保護を提供するサービスを構成する必要はありますか?
 
@@ -72,7 +74,7 @@ A. はい。このサービスには、メッセージ内の Url を確認する
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>Q. サービス使用中の顧客が Microsoft へ偽陰性 (スパム) メッセージおよび偽陽性 (スパムでない) メッセージを送信するにはどうしますか。
 
-A. スパムとスパムではないメッセージを分析のために Microsoft に送信するには、いくつかの方法があります。 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。
+A. スパムとスパムではないメッセージを分析のために Microsoft に送信するには、いくつかの方法があります。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="q-can-i-get-spam-reports"></a>Q. スパム報告を取得できますか?
 

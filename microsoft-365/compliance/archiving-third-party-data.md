@@ -16,28 +16,28 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理者は、ソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 組織のメールボックスにサードパーティのデータをインポートできます。 これにより、Microsoft 365 の Facebook、Twitter、およびその他のサードパーティのデータソースからデータをアーカイブすることができます。 その後、Microsoft 365 コンプライアンス機能 (法的情報保留、電子情報開示、インプレースアーカイブ、アイテム保持ポリシーなど) を使用して、サードパーティのデータを適用することができます。
-ms.openlocfilehash: ac732110dac8d590ac30cfb062251d2e970bdd3d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72afb48f74a30bac2904e857a33487a83eba48cd
+ms.sourcegitcommit: f9b5eca20e025acc36635cbd1786ff3407295857
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596004"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43027657"
 ---
 # <a name="archive-third-party-data"></a>サードパーティのデータをアーカイブする
 
 Microsoft 365 では、管理者がソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 組織のメールボックスにサードパーティのデータをインポートしてアーカイブすることができます。 Microsoft 365 にインポートできるサードパーティのデータソースの例には、次のサービスが含まれています。 
   
-- **ソーシャル:** Facebook、LinkedIn、Twitter、Yammer 
+- **ソーシャル:** Facebook、LinkedIn、Twitter、Yammer
 
-- **インスタントメッセージング:** Yahoo! メッセンジャー、GoogleTalk、および Cisco Jabber 
+- **インスタントメッセージング:** Yahoo メッセンジャーと GoogleTalk
 
-- **ドキュメントの共同作業:** Box および DropBox 
+- **ドキュメントの共同作業:** Box および DropBox
 
-- **縦型の業種:** 顧客関係管理 (Salesforce チャターなど)、金融サービス (Bloomberg、Thomson Reuters など) 
+- **縦型の業種:** 顧客関係管理 (Salesforce チャターなど)、金融サービス (Bloomberg、Thomson Reuters など)
 
-- **SMS/テキストメッセージング:** BlackBerry 
+- **SMS/テキストメッセージング:** BlackBerry
 
-サードパーティのデータがインポートされた後は、訴訟ホールド、&mdash;電子情報開示、インプレースアーカイブ、監査、通信コンプライアンス、およびアイテム保持ポリシー&mdash;などの Microsoft 365 コンプライアンス機能をこのデータに適用することができます。 たとえば、メールボックスが訴訟ホールドの対象となっている場合、サードパーティのデータは保持されます。 Microsoft eDiscovery ツールを使用して、サードパーティのデータを検索できます。 また、Microsoft データの場合と同じように、アーカイブポリシーとアイテム保持ポリシーをサードパーティデータに適用することができます。 簡単に言えば、Microsoft 365 でサードパーティのデータをアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
+サードパーティのデータがインポートされた後は、訴訟ホールド、電子情報開示、インプレースアーカイブ、監査、通信コンプライアンス、およびアイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能をこのデータに適用することができます。 たとえば、メールボックスが訴訟ホールドの対象となっている場合、サードパーティのデータは保持されます。 Microsoft eDiscovery ツールを使用して、サードパーティのデータを検索できます。 また、Microsoft データの場合と同じように、アーカイブポリシーとアイテム保持ポリシーをサードパーティデータに適用することができます。 簡単に言えば、Microsoft 365 でサードパーティのデータをアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
 Microsoft 365 でサードパーティのデータをインポートしてアーカイブする方法は2つあります。
 

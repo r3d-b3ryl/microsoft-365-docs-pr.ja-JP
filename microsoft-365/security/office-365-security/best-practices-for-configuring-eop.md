@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベスト プラクティス推奨に従って正しく設定し、一般的な構成エラーを防止してください。
-ms.openlocfilehash: b4b1f02e3b034b7e89d605a2164b6add3f20dae5
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887304"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033436"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>EOP および Office 365 ATP を構成するためのベストプラクティス
 
@@ -61,11 +61,9 @@ Exchange Online Protection (EOP) のベスト プラクティス推奨に従っ�
 
 管理センターのレポートを使用して、一般的な問題と傾向をトラブルシューティングします。 メッセージについて単一の固有なデータを探すには、メッセージ トレース ツールを使用します。 レポートの詳細については、「[Exchange Online Protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md)」を参照してください。 メッセージ追跡ツールの詳細について[は、「Security & コンプライアンスセンター」の「メッセージ追跡」](message-trace-scc.md)を参照してください。
 
-## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>誤検知と誤検知を Microsoft に報告する
+## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>誤検知と誤否定を Microsoft に報告する
 
-管理者は、管理者の送信ポータルを使用して、誤検知 (スパム) と誤検知 (非スパム) を Microsoft に送信する必要があります。 メール、ファイル、および Url を送信すると、管理者はエンドユーザーにメッセージを配信した理由を特定することができます。 詳細については、「問題の疑いがある[スパム、フィッシング、url、およびファイルを office 365 スキャン用に Microsoft に提出する方法](admin-submission.md)」を参照してください。
-
-エンドユーザーは、指定された verdicts に同意しない場合に、偽陽性 (スパム) と誤検知 (非スパム) を Microsoft に直接報告して分析することもできます。 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。
+すべてのユーザーのサービスでスパムフィルター処理を改善するために、誤検知 (不良としてマークされている良好な電子メール) と誤検知 (無効な電子メールが許可されている) を分析のために Microsoft に報告する必要があります。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="create-mail-flow-rules"></a>メール フロー ルールを作成する
 

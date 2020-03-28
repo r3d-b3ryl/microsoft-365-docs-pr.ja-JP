@@ -1,5 +1,5 @@
 ---
-title: 迷惑メール メッセージを Microsoft に報告する
+title: スパム、非スパム、フィッシングメッセージを Microsoft に報告する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,55 +16,25 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 用迷惑メール報告アドインでは、次のような複数の方法で迷惑メール メッセージを報告できます。
-ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b7e7ed56f171ee3b74b36ed7c10c46286fb1e570
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895181"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033664"
 ---
-# <a name="report-junk-email-messages-to-microsoft"></a>迷惑メール メッセージを Microsoft に報告する
+# <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
-Microsoft Office Outlook 用迷惑メール報告アドインでは、次のような複数の方法で迷惑メール メッセージを報告できます。
+Office 365 のユーザーおよび管理者 Exchange Online にメールボックスがある組織、または Exchange online のメールボックスを送信していないスタンドアロンの Exchange Online Protection (EOP) 組織では、メッセージを報告するためのいくつかの異なる方法があります。ファイルを Microsoft に。
 
-- Outlook リボンから報告する
+|||
+|---|---|
+|**メソッド**|**説明**|
+|[管理者提出を使用して、疑いのあるスパム、フィッシング、Url、およびファイルを Microsoft に送信する](admin-submission.md)|これは、Exchange Online メールボックス (スタンドアロン EOP では使用できません) を持つ組織での管理者のための推奨レポート方法です。|
+|[Office 365 でレポートメッセージアドインを有効にする](enable-the-report-message-add-in.md)|Outlook、outlook for Mac、および Outlook on the web で動作します。 このアドインは推奨されています。 <br/><br/> ライセンスに応じて、報告されたメッセージは[自動調査と応答 (AIR) の結果](air-view-investigation-results.md)、[ユーザーが報告したメッセージレポート](view-email-security-reports.md#user-reported-messages-report)および[脅威エクスプローラー](threat-explorer-views.md#email--submissions)で利用できます。|
+|[Office 365 で Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する](junk-email-reporting-add-in-for-microsoft-outlook.md)|Outlook でのみ動作します。|
+|[Office 365 の Outlook on the web で迷惑メールとフィッシング詐欺メールを報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Exchange Online のメールボックスを使用する組織では、web 上の Outlook の組み込み機能を使用します (スタンドアロン EOP では使用できません)。|
+|[マルウェアおよびマルウェアでないものを分析のために Microsoft に提出する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Microsoft セキュリティインテリジェンスサイトを使用して、添付ファイルやその他のファイルを送信します。|
+|
 
-- 受信トレイから報告する
-
-- 開いた電子メール メッセージから報告する
-
-迷惑メール報告アドインは、Microsoft Exchange Online Protection (EOP) サービスにレポートを送信するために役立ちます。 メールボックスがサービスによって保護されていない場合、迷惑メールのレポートを送信しても、スパム フィルターは影響を受けません。 管理者は、「 [office 365 の信頼できる差出人のリストを作成](create-safe-sender-lists-in-office-365.md)する」と「 [office 365 でブロックされる送信者の一覧を作成](create-block-sender-lists-in-office-365.md)する」に記載されている組織全体に適用されるスパム設定について説明します。 これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
-
-> [!TIP]
-> また、 [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)電子メールアドレスを使用して、 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)の電子メールアドレスと誤検知 (非スパム) メッセージを使用して、スパムメッセージを Microsoft に直接送信することもできます。 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。
-
-### <a name="to-report-junk-email-messages-from-outlook"></a>Outlook から迷惑メールメッセージを報告するには
-
-[レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-### <a name="to-report-junk-email-messages-from-your-inbox"></a>受信トレイから迷惑メール メッセージを報告するには
-
-1. 迷惑メールとして報告するメッセージを右クリックします。
-
-2. **[迷惑メール]** を選択し、 **[迷惑メールの報告]** をクリックします。
-    ![受信トレイから迷惑メール メッセージを報告する](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
-
-3. **[Microsoft Junk E-mail Reporting Add-in]** ダイアログ ボックスが開きます。 選択したメッセージを迷惑メールとして送信する場合は、 **[はい]** をクリックします。
-    ![迷惑メールとして報告することの確認](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > 迷惑メール メッセージの送信時にこの確認メッセージを表示しない場合は、 **[今後、このメッセージを表示しない]** チェック ボックスをオンにします。
-
-選択したメッセージが、分析用に Microsoft に送信され、迷惑メール フォルダーに移動されます。メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
-
-### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>開いたメッセージから迷惑メール メッセージを報告するには
-
-1. 迷惑メール メッセージが開いた状態で、メッセージ リボンの **[迷惑メールの報告]** ボタンをクリックします。 たとえば、 **[迷惑メール** \> **レポート迷惑** ![メール] をクリックすると、メッセージ内から迷惑メールを受信します。](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
-
-2. **[Microsoft Junk E-mail Reporting Add-in]** ダイアログ ボックスが開きます。 選択したメッセージを迷惑メールとして送信する場合は、 **[はい]** をクリックします。
-    ![迷惑メールとして報告することの確認](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > 迷惑メール メッセージの送信時にこの確認メッセージを表示しない場合は、 **[今後、このメッセージを表示しない]** チェック ボックスをオンにします。
-
-選択したメッセージが、分析用に Microsoft に送信され、迷惑メール フォルダーに移動されます。メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
+スパムまたはフィッシングメッセージが配信されずに検疫された場合、ユーザーは Office 365 セキュリティ & コンプライアンスセンターの検疫ポータルから Microsoft にメッセージを報告できます。 詳細については、「 [Office 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。

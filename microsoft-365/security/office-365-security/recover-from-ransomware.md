@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Office 365 管理者は、ランサムウェア攻撃から回復する方法について説明します。
-ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640019"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032878"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Office 365 でランサムウェア攻撃から回復する
 
@@ -122,7 +122,7 @@ OneDrive for business のファイルの復元を使用すると、OneDrive 全�
 
 ### <a name="submit-email-messages-to-microsoft"></a>Microsoft に電子メールメッセージを送信する
 
-ランサムウェアを含むフィッシングメッセージを報告するには、 [「スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)」の手順に従ってください。
+複数の方法のいずれかを使用して、ランサムウェアを含むフィッシングメッセージを報告できます。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

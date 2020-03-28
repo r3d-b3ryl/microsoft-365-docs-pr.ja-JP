@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージがどのように使用されたのかや、今後のフィッシング対策メッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082026"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033652"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Office 365 でフィッシング対策保護を調整する
 
@@ -39,11 +39,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>フィッシングメッセージを Microsoft に報告する
 
-フィッシングメッセージの報告は、Office 365 のすべてのお客様を保護するために使用されるフィルターを調整するのに役立ちます。
-
-フィッシングメッセージを新しい、それ以外の空のメッセージの_添付ファイルとして_ **phish@office365.microsoft.com**に送信します。 元のメッセージを転送するだけではありません。それ以外の場合は、元のメッセージヘッダーを調べることはできません。 または、Outlook または web 上の Outlook (旧称 Outlook Web App) で[レポートメッセージ](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in)アドインを使用することもできます。
-
-詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。
+フィッシングメッセージの報告は、Office 365 のすべてのお客様を保護するために使用されるフィルターを調整するのに役立ちます。 手順については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="inspect-the-message-headers"></a>メッセージヘッダーを検査する
 

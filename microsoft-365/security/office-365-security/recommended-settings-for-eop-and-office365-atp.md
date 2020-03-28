@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895229"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032854"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -190,12 +190,11 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |検出時に添付ファイルをリダイレクトする|有効|有効|添付ファイルがマルウェアであるかどうかを判断する方法を把握しているセキュリティ管理者の電子メールアドレスにリダイレクトする|
 |添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合の、ATP の安全な添付ファイル応答|有効|有効||
 
-
 ## <a name="related-topics"></a>関連項目
 
 - **Exchange メールフロー/Exchange トランスポートルール**のベストプラクティスについては、こちらを参照してください。 詳細については、[この記事](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop)を参照してください。
 
-- 疑わしいメール、スパムの疑いがあるスパム、フィッシング、または Url をスキャン用に Microsoft に送信します。 [この記事](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)に記載されている**管理者の送信**手順を使用します。
+- 管理者とユーザーは、誤検知 (不良としてマークされている正常なメール) と誤検知 (無効な電子メールを許可) を分析のために Microsoft に送信できます。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 - [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を**セットアップする方法**、および[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を**構成**する方法に関する情報については、次のリンクを使用してください。 (「[365 Office での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ指示を参照してください。
 
