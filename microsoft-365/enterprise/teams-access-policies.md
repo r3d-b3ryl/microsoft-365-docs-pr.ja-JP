@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 052edafa64f2704fb5a6df525b0ad5609ddc72b9
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959196"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035101"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Teams のチャット、グループ、およびファイルを保護するためのポリシーの推奨事項
 
@@ -50,7 +50,7 @@ Microsoft Teams の使用を開始するために、依存サービスを有効�
 Teams のクラウドアプリの割り当てに含める依存サービスは次のとおりです。
 
 - Microsoft Teams
-- Sharepoint Online と OneDrive for Business
+- SharePoint Online と OneDrive for Business
 - Exchange Online
 - Skype for Business Online
 - Microsoft Stream (会議のレコーディング)
@@ -63,8 +63,8 @@ Teams のクラウドアプリの割り当てに含める依存サービスは�
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|アプリの一覧に Teams および依存サービスが含まれていることを確認してください。 Teams にはゲストアクセスと外部アクセスのルールが含まれています。これについては、この記事の後半で説明します。|
 |        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに Teams および依存するサービスを含めます。|
 |        |[リスクの高いユーザーがパスワードを変更する必要がある](identity-access-policies.md#high-risk-users-must-change-password)|リスクの高いアクティビティがアカウントに対して検出された場合に、サインイン時に Teams ユーザーがパスワードを変更することを強制します。 アプリの一覧に Teams および依存サービスが含まれていることを確認してください。|
-|        |[アプリ保護ポリシーを定義する](identity-access-policies.md#define-app-protection-policies)|アプリの一覧に Teams および依存サービスが含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新します。|
-|        |[Intune アプリ保護ポリシーをサポートするアプリを要求する](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|このポリシーに Teams および依存するサービスを含めます。|
+|        |[アプリデータ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|アプリの一覧に Teams および依存サービスが含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新します。|
+|        |[承認済みアプリとアプリ保護を必要とする](identity-access-policies.md#require-approved-apps-and-app-protection)|このポリシーに Teams および依存するサービスを含めます。|
 |        |[デバイスコンプライアンスポリシーの定義](identity-access-policies.md#define-device-compliance-policies)|このポリシーに Teams および依存するサービスを含めます。|
 |        |[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|このポリシーに Teams および依存するサービスを含めます。|
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams にはゲストアクセスと外部アクセスのルールが含まれています。これについては、この記事の後半で説明します。 このポリシーに Teams および依存するサービスを含めます。|

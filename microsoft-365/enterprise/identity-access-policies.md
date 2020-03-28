@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
-ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
+ms.openlocfilehash: eb06db140e4e3c9c245b7689edecf4b0cb86b674
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43022923"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035152"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -31,8 +31,8 @@ ms.locfileid: "43022923"
 
 次の図は、推奨されるポリシーセットを示しています。 この図は、各ポリシーが適用される保護層と、それらのポリシーが Pc、電話、タブレット、または両方のカテゴリのデバイスに適用されるかどうかを示しています。 また、これらのポリシーが構成されている場所も示されます。
 
-![Id とデバイスのアクセスを構成するための一般的なポリシー](../media/Identity_device_access_policies_byplan.png)
-
+[![Id とデバイスのアクセス](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+を構成するための一般的なポリシー[この画像の大規模なバージョンの表示](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 この記事の残りの部分では、これらのポリシーを構成する方法について説明します。 
 
@@ -46,8 +46,8 @@ ms.locfileid: "43022923"
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](#require-mfa-based-on-sign-in-risk)| |
 |        |[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスルールをバイパスすることができます。そのため、これらをブロックすることが重要です。|
 |        |[リスクの高いユーザーがパスワードを変更する必要がある](#high-risk-users-must-change-password)|アカウントに対して高リスクのアクティビティが検出された場合に、サインイン時にユーザーにパスワードを変更することを強制します。|
-|        |[アプリ保護ポリシーを定義する](#define-app-protection-policies)|プラットフォームごとに1つのポリシー (iOS、Android、Windows)。|
-|        |[Intune アプリ保護ポリシーをサポートするアプリを要求する](#require-apps-that-support-intune-app-protection-policies)|携帯電話とタブレットにモバイルアプリの保護を適用する|
+|        |[アプリデータ保護ポリシーを適用する](#apply-app-data-protection-policies)|プラットフォームごとに1つのポリシー (iOS、Android、Windows)。 Intune App Protection ポリシー (アプリ) は、レベル1からレベル3までの事前に定義された保護のセットです。|
+|        |[承認済みアプリとアプリ保護を必要とする](#require-approved-apps-and-app-protection)|携帯電話とタブレットにモバイルアプリの保護を適用する|
 |        |[デバイスコンプライアンスポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに1つのポリシー|
 |        |[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Pc の Intune 管理を強制する|
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](#require-mfa-based-on-sign-in-risk)| |
@@ -186,14 +186,14 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 > [!NOTE]
 > **[**] を選択して、このポリシーを有効にしてください。 ポリシーをテストする[場合](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)は、[対象] ツールを使用することも検討してください。
 
-## <a name="define-app-protection-policies"></a>アプリ保護ポリシーを定義する
+## <a name="apply-app-data-protection-policies"></a>アプリデータ保護ポリシーを適用する
 アプリ保護ポリシー (APP) は、どのアプリが許可されるか、組織のデータによって実行できるアクションを定義します。 APP で利用可能な選択肢は、組織が特定のニーズに合わせて保護を調整できるようにすることです。 一部のシナリオでは、完全なシナリオを実装するために必要なポリシー設定がわからない場合があります。 組織がモバイルクライアントエンドポイント強化の優先順位を設定するために、Microsoft では、iOS および Android のモバイルアプリ管理用のアプリデータ保護フレームワークに対して分類を導入しています。 
 
 アプリデータ保護フレームワークは3つの異なる構成レベルに編成されており、各レベルは前のレベルから構築されています。 
 
-- エンタープライズ基本データ保護によって、アプリが PIN で保護され、暗号化され、選択的なワイプ操作が実行されます。 Android デバイスの場合、このレベルでは Android デバイスの構成証明を検証します。 これは、Exchange Online メールボックスポリシーに類似のデータ保護制御を提供するエントリレベルの構成で、これをアプリに紹介します。 
-- エンタープライズ拡張データ保護アプリデータ漏洩防止メカニズムと最小 OS 要件について説明します。 これは、職場または学校データにアクセスするほとんどのモバイルユーザーに適用される構成です。 
-- エンタープライズ高データ保護高度なデータ保護メカニズム、拡張 PIN 構成、およびアプリのモバイル脅威の防御が導入されています。 この構成は、高リスクデータにアクセスするユーザーに適しています。 
+- **エンタープライズ基本データ保護**(レベル 1) は、アプリが PIN で保護され、暗号化され、選択的なワイプ操作を実行することを保証します。 Android デバイスの場合、このレベルでは Android デバイスの構成証明を検証します。 これは、Exchange Online メールボックスポリシーに類似のデータ保護制御を提供するエントリレベルの構成で、これをアプリに紹介します。 
+- **エンタープライズ拡張データ保護**(レベル 2) アプリデータ漏洩防止メカニズムおよび最小 OS 要件について説明します。 これは、職場または学校データにアクセスするほとんどのモバイルユーザーに適用される構成です。 
+- **エンタープライズ高データ保護**(レベル 3) は、高度なデータ保護機構、強化された PIN 構成、およびアプリモバイル脅威の防御を導入しています。 この構成は、高リスクデータにアクセスするユーザーに適しています。 
 
 各構成レベルおよび保護する必要のある最小アプリケーションについての特定の推奨事項を確認するには、「[アプリ保護ポリシーを使用してデータ保護フレームワーク](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)を確認する」を参照してください。 
 
@@ -206,22 +206,39 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 |厳しい規制     | [レベル3エンタープライズ高データ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | レベル3で適用されるポリシー設定には、レベル1および2に推奨されているすべてのポリシー設定が含まれています。さらに、レベル2よりも高度な制御を実装するために、以下のポリシー設定を追加または更新します。        |
 
 データ保護フレームワーク設定を使用して、Microsoft エンドポイントマネージャー内で各プラットフォーム (iOS および Android) に対して新しいアプリ保護ポリシーを作成するには、管理者は次のことを行うことができます。
-1. 「 [Microsoft Intune でアプリ保護ポリシーを作成および展開する方法](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)」の手順に従って、ポリシーを手動で作成します。
+1. 「 [Microsoft Intune でアプリ保護ポリシーを作成および展開する方法](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)」の手順に従って、ポリシーを手動で作成します。 
 2. [Intune の PowerShell スクリプト](https://github.com/microsoftgraph/powershell-intune-samples)を使用して、サンプルの[Intune アプリ保護ポリシー構成フレームワーク JSON テンプレート](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies)をインポートします。
 
-## <a name="require-apps-that-support-intune-app-protection-policies"></a>Intune アプリ保護ポリシーをサポートするアプリを要求する
-条件付きアクセスを使用すると、組織は、承認された (モダン認証対応の) iOS および Android クライアントアプリに対して Intune アプリ保護ポリシーを適用してアクセスを制限できます。 複数の条件付きアクセスポリシーが必要であり、各ポリシーですべての潜在的なユーザーを対象としています。 これらのポリシーの作成の詳細については、「[条件付きアクセスでのクラウドアプリへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」を参照してください。
+## <a name="require-approved-apps-and-app-protection"></a>承認済みアプリとアプリ保護を必要とする
+Intune で適用したアプリ保護ポリシーを適用するには、承認済みのクライアントアプリとアプリ保護ポリシーで設定された条件を要求する条件付きアクセスルールを作成する必要があります。 
 
-1. 「シナリオ 1: office 365 アプリで Office 365 の Azure AD 条件付きアクセスポリシーを構成する」では、「[アプリ保護ポリシーで承認済みアプリが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)です。これにより、IOS および Android 用の Outlook が許可されますが、OAuth 対応 exchange ActiveSync クライアントは exchange Online に接続できなくなります。
+アプリ保護ポリシーを適用するには、「[条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」で説明されている一連のポリシーが必要です。 これらのポリシーは、この推奨される id とアクセス構成ポリシーのセットに含まれています。
+
+承認済みアプリとアプリ保護を必要とする条件付きアクセスルールを作成するには、365「[シナリオ 1: office 365 アプリには、アプリ保護ポリシーを使用して承認済みアプリが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)です。これにより、IOS および Android 用の Outlook が許可されますが、OAuth 対応 exchange ActiveSync クライアントは exchange Online に接続できなくなります。
 
    > [!NOTE]
    > このポリシーにより、モバイルユーザーは適用可能なアプリを使用してすべての Office エンドポイントにアクセスできます。
 
-2. Exchange Online へのモバイルアクセスを有効にする場合は、[ブロック ActiveSync クライアント](secure-email-recommended-policies.md#block-activesync-clients)を実装します。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
+Exchange Online へのモバイルアクセスを有効にしている場合は、[ブロック ActiveSync クライアント](secure-email-recommended-policies.md#block-activesync-clients)を実装します。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。 このポリシーは、この記事の上部にある図には示されていません。 [メールを保護するためのポリシーの推奨事項](secure-email-recommended-policies.md)について説明します。
 
-   上記のポリシーでは、[承認済みクライアントアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)とする grant controls を活用し、[アプリ保護ポリシーを必須](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)にします。
+ これらのポリシーは、承認された[クライアントアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)とする grant controls を活用し、[アプリ保護ポリシーを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)とします。
 
-3. IOS および Android デバイス上の他のクライアントアプリについては、従来の認証を無効にします。 詳細については、「[モダン認証をサポートしていないクライアントをブロックする](#block-clients-that-dont-support-modern-authentication)」を参照してください。
+最後に、iOS および Android デバイス上の他のクライアントアプリに対して従来の認証をブロックすることで、これらのクライアントが条件付きアクセスルールをバイパスできないようにします。 この記事のガイダンスに従っている場合は、[先進認証をサポートしていないブロッククライアントが](#block-clients-that-dont-support-modern-authentication)既に構成されています。
+
+<!---
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+
+   > [!NOTE]
+   > This policy ensures mobile users can access all Office endpoints using the applicable apps.
+
+2. If enabling mobile access to Exchange Online, implement [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
+
+   The above policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+
+3. Disable legacy authentication for other client apps on iOS and Android devices. For more information, see [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
+-->
 
 ## <a name="define-device-compliance-policies"></a>デバイスコンプライアンスポリシーの定義
 

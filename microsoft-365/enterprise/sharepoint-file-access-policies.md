@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084209"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035125"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -47,13 +47,13 @@ ms.locfileid: "42084209"
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 |        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに SharePoint Online を含める|
-|        |[アプリ保護ポリシーを定義する](identity-access-policies.md#define-app-protection-policies)|アプリの一覧に推奨されるアプリがすべて含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新してください。|
+|        |[アプリデータ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|アプリの一覧に推奨されるアプリがすべて含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新してください。|
 |        |[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|クラウドアプリの一覧に SharePoint Online を含める|
 |        |[SharePoint Online で適用されるアプリの制限を使用する](#use-app-enforced-restrictions-in-sharepoint-online)|この新しいポリシーを追加します。 これにより、Azure AD は、SharePoint Online で指定された設定を使用するように指示されます。 このルールはすべてのユーザーに適用されますが、SharePoint Online アクセスポリシーに含まれるサイトへのアクセスのみに影響します。|
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 |         |[準拠*して*いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に SharePoint Online を含める|
 ||[Sharepoint Online のアクセス制御ポリシー](#sharepoint-online-access-control-policies): 管理されていないデバイスからの特定の SharePoint サイトへのブラウザー専用アクセスを許可する|これにより、ファイルの編集とダウンロードができなくなります。 PowerShell を使用してサイトを指定する|
-|**厳しく規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
+|**高度な規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 ||[Sharepoint Online のアクセス制御ポリシー](#use-app-enforced-restrictions-in-sharepoint-online): 管理されていないデバイスから特定の SharePoint サイトへのアクセスをブロックする|PowerShell を使用してサイトを指定する|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>SharePoint Online でアプリに強制される制限を使用する
