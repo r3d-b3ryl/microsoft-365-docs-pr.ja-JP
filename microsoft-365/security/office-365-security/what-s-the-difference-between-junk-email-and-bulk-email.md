@@ -2,10 +2,10 @@
 title: 迷惑メールとバルク メールの違い
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 1/7/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,35 +15,36 @@ search.appverid:
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
-description: お客様が迷惑メールとバルクメールメッセージの違いを askwhat ことがありますか。このトピックの目的は、Exchange Online と Exchange Online Protection (EOP) の両方で使用可能なさまざまなオプションについて説明し、その違いを説明することです。
-ms.openlocfilehash: 55924ac5e83ca109fd66d1723cdb7c5f43f20df6
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: このトピックでは、迷惑メール (スパム) とバルクメールの違い、および Office 365 の関連するコントロールについて説明します。
+ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895037"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033628"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a><span data-ttu-id="5754a-103">迷惑メールとバルク メールの違い</span><span class="sxs-lookup"><span data-stu-id="5754a-103">What's the difference between junk email and bulk email?</span></span>
+# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a><span data-ttu-id="3450b-103">迷惑メールとバルク メールの違い</span><span class="sxs-lookup"><span data-stu-id="3450b-103">What's the difference between junk email and bulk email?</span></span>
 
-<span data-ttu-id="5754a-p101">お客様から「迷惑メール メッセージとバルク メール メッセージの違いは何ですか」という質問を受けることがよくあります。このトピックの目的は、この違いを説明することと、Exchange Online と Exchange Online Protection (EOP) の両方で使用可能なさまざまなオプションに関する情報を提供することです。</span><span class="sxs-lookup"><span data-stu-id="5754a-p101">Customers sometimes ask "what's the difference between junk email and bulk email messages?" The purpose of this topic is to explain the difference and to provide information about the different options that are available for both in Exchange Online and Exchange Online Protection (EOP).</span></span>
-  
- <span data-ttu-id="5754a-106">**迷惑メールとは何か**</span><span class="sxs-lookup"><span data-stu-id="5754a-106">**What's junk email?**</span></span>
-  
-<span data-ttu-id="5754a-p102">迷惑メール メッセージは "スパム" メッセージで、サービスによってフィルター処理される未承諾 (かつ通常は不要な) 電子メール メッセージです。既定で、サービスは、送信元の IP アドレスの評価に基づいてスパム メッセージを拒否します。ただし、そのメッセージが IP 検査を通過しても、コンテンツ フィルターでスパムに分類された場合は、宛先になっている受信者の迷惑メール フォルダーに送信されます。</span><span class="sxs-lookup"><span data-stu-id="5754a-p102">Junk email messages are "spam" messages, which are unsolicited (and typically unwanted) email messages that are filtered by the service. By default, the service rejects the spam message based on the reputation of the sending IP address. However, if it passes IP inspection but is classified as spam by the content filters, the message is sent to the Junk Email folder of the intended recipients.</span></span> 
-  
-> [!NOTE]
-> <span data-ttu-id="5754a-110">コンテンツフィルター処理されたメッセージに対して実行される操作は、「 [Configure スパム対策ポリシーを Office 365 で構成する](configure-your-spam-filter-policies.md)」の説明に従って、Exchange 管理センター (EAC) のコンテンツフィルターポリシーを使用して構成できます。</span><span class="sxs-lookup"><span data-stu-id="5754a-110">The action performed on content-filtered messages is configurable via content filter policies in the Exchange admin center (EAC), as described in [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span> <span data-ttu-id="5754a-111">また、スパム分類に同意できない場合は、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」に記載されているように、スパムまたは非スパムであると思われるメッセージをいくつかの方法で Microsoft に報告することができます。</span><span class="sxs-lookup"><span data-stu-id="5754a-111">Also, if you disagree with the spam classification, you can report messages that you consider to be spam or non-spam to Microsoft in several ways, as described in [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).</span></span> 
-  
- <span data-ttu-id="5754a-112">**バルク メールとは何か**</span><span class="sxs-lookup"><span data-stu-id="5754a-112">**What's bulk email?**</span></span>
-  
-<span data-ttu-id="5754a-p104">グレー メールとも呼ばれるバルク メールは、分類がより困難な電子メール メッセージのことです。迷惑メールは「常にある脅威」であるのに対して、バルク メールは、通常、繰り返し送られてくるわけではない広告メッセージまたはマーケティング メッセージで構成されます。バルク メールは一部のユーザーによって要求されたものであり、事実、彼らは意図的にそれらのメッセージの受信を申し込んでいるのに対して、それ以外のユーザーはその種のメッセージをスパムと見なしています。たとえば、一部のユーザーは Contoso Corporation からの広告メールまたは次回のサイバー セキュリティに関するカンファレンスの招待状を受信したいと思っているのに対して、その他のユーザーはそのような電子メールをスパムと見なしている場合です。</span><span class="sxs-lookup"><span data-stu-id="5754a-p104">Bulk email, also referred to as gray mail, is a type of email message that's more difficult to classify. Whereas junk email is a constant threat, bulk email is typically comprised of an advertisement or marketing message that's not likely to get sent repeatedly. Bulk email is wanted by some users, and in fact they may have deliberately signed up to receive these messages, while other users may consider these types of messages to be spam. For example, some users want to receive advertising emails from the Contoso Corporation or invitations to an upcoming conference on cyber security, while other users consider such emails to be spam.</span></span>
-  
-## <a name="how-to-manage-bulk-email"></a><span data-ttu-id="5754a-117">バルク メールの管理方法</span><span class="sxs-lookup"><span data-stu-id="5754a-117">How to manage bulk email</span></span>
+<span data-ttu-id="3450b-104">Office 365 exchange online またはスタンドアロン Exchange Online Protection (EOP) のお客様が Exchange online メールボックスを使用していない場合は、「迷惑メールとバルクメールの違いは何ですか」という質問があります。</span><span class="sxs-lookup"><span data-stu-id="3450b-104">Office 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes sometimes ask: "what's the difference between junk email and bulk email?"</span></span> <span data-ttu-id="3450b-105">このトピックでは、EOP で使用できるコントロールとその違いについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3450b-105">This topic explains the difference and describes the controls that are available in EOP.</span></span>
 
-<span data-ttu-id="5754a-p105">バルク メールの管理方法は簡単に結論を出すことができません。すべてのバルク メールをスパムとして分類した場合は、そのメールを必要とするユーザーがそれに反対して、間違ってスパムにマークされた誤検知 (非スパム) メッセージとして提出する可能性があります。一方、すべてのバルク メールを通過させた場合は、そのメールを必要としないユーザーがそれに反対して、間違って受信トレイに到着した、見逃されたスパム メッセージ (偽陰性) として提出する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5754a-p105">How to manage bulk email isn't a clear cut decision, because if all bulk email is classified as spam, the users that want it may complain and submit it as a false positive (non-spam) message that was wrongly marked as spam. On the other hand, if all bulk email is let through, the users that don't want it may complain and submit it as a missed spam message (false negative) that wrongly arrived in their inbox.</span></span>
-  
-### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a><span data-ttu-id="5754a-120">コンテンツ フィルター ポリシーのバルク メールの秘密度の制御を有効にします。</span><span class="sxs-lookup"><span data-stu-id="5754a-120">Enable bulk mail sensitivity control in the content filter policy</span></span>
+- <span data-ttu-id="3450b-106">**迷惑メール**とは、迷惑メールで、未承諾のメッセージ (正しく識別された場合) をいいます。</span><span class="sxs-lookup"><span data-stu-id="3450b-106">**Junk email** is spam, which are unsolicited and universally unwanted messages (when identified correctly).</span></span> <span data-ttu-id="3450b-107">既定では、EOP は、送信元の電子メールサーバーの評価に基づいてスパムを拒否します。</span><span class="sxs-lookup"><span data-stu-id="3450b-107">By default, the EOP rejects spam based on the reputation of the source email server.</span></span> <span data-ttu-id="3450b-108">メッセージが送信元 IP 検査に合格した場合は、スパムフィルタリングに送信されます。</span><span class="sxs-lookup"><span data-stu-id="3450b-108">If a message passes source IP inspection, it's sent to spam filtering.</span></span> <span data-ttu-id="3450b-109">メッセージがスパムフィルター処理によってスパムとして分類されている場合、メッセージは (既定では) 目的の受信者に配信され、その迷惑メールフォルダーに移動されます。</span><span class="sxs-lookup"><span data-stu-id="3450b-109">If the message is classified as spam by spam filtering, the message is (by default) delivered to the intended recipients and moved to their Junk Email folder.</span></span>
 
-<span data-ttu-id="5754a-121">バルクメールメッセージに関する会社のポリシーに応じて、管理者はバルクメールを割り当てるしきい値を選択できます。</span><span class="sxs-lookup"><span data-stu-id="5754a-121">Depending on your company's policy on bulk email messages, admins can select a threshold to assign the bulk email.</span></span> <span data-ttu-id="5754a-122">この設定は、EAC のコンテンツフィルターポリシーを使用して構成できます。</span><span class="sxs-lookup"><span data-stu-id="5754a-122">The setting is configurable via content filter policies in the EAC.</span></span> <span data-ttu-id="5754a-123">手順については、「 [Office 365 でスパム対策ポリシーを構成する」](configure-your-spam-filter-policies.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5754a-123">Check out [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) for the steps.</span></span> <span data-ttu-id="5754a-124">しきい値は1-9 から選択できます。1の場合、1はスパムとして最も多くのバルクメールをマークし、9では大量の電子メールを配信することができます。</span><span class="sxs-lookup"><span data-stu-id="5754a-124">You can choose a threshold setting from 1-9, where 1 marks most bulk email as spam, and 9 allows most bulk email to be delivered.</span></span> <span data-ttu-id="5754a-125">その後、メッセージを受信者の迷惑メール フォルダーに送信するなどの構成されたアクションをサービスが実行します。</span><span class="sxs-lookup"><span data-stu-id="5754a-125">The service then performs the configured action, such as sending the message to the recipient's Junk Email folder.</span></span> 
-  
+  - <span data-ttu-id="3450b-110">スパムフィルタリング verdicts に対して実行するアクションを構成できます。</span><span class="sxs-lookup"><span data-stu-id="3450b-110">You can configure the actions to take on spam filtering verdicts.</span></span> <span data-ttu-id="3450b-111">手順については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3450b-111">For instructions, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
+  - <span data-ttu-id="3450b-112">スパムフィルター verdict を使用していない場合は、「[レポートメッセージとファイル](report-junk-email-messages-to-microsoft.md)」で説明されているように、スパムとして、または迷惑メールではないと思われるメッセージをいくつかの方法で報告することができます。</span><span class="sxs-lookup"><span data-stu-id="3450b-112">If you disagree with the spam filtering verdict, you can report messages that you consider to be spam or non-spam to Microsoft in several ways, as described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).</span></span>
+
+- <span data-ttu-id="3450b-113">**バルクメール**(_灰色のメール_とも呼ばれます) では、分類がより困難です。</span><span class="sxs-lookup"><span data-stu-id="3450b-113">**Bulk email** (also known as _gray mail_), is more difficult to classify.</span></span> <span data-ttu-id="3450b-114">スパムは常に脅威ですが、バルクメールは1回限りの広告またはマーケティングメッセージであることがよくあります。</span><span class="sxs-lookup"><span data-stu-id="3450b-114">Whereas spam is a constant threat, bulk email is often one-time advertisements or marketing messages.</span></span> <span data-ttu-id="3450b-115">ユーザーによっては、バルクメールメッセージを必要としており (実際には、それらを受信するように故意にサインアップしている)、他のユーザーはバルクメールをスパムと考えています。</span><span class="sxs-lookup"><span data-stu-id="3450b-115">Some users want bulk email messages (and in fact, they have deliberately signed up to receive them), while other users consider bulk email to be spam.</span></span> <span data-ttu-id="3450b-116">たとえば、一部のユーザーは、Contoso Corporation からの広告メッセージや、サイバーセキュリティに関する今後の会議への招待を受信したいと考えていますが、他のユーザーはこれらの同じメッセージをスパムと考えています。</span><span class="sxs-lookup"><span data-stu-id="3450b-116">For example, some users want to receive advertising messages from the Contoso Corporation or invitations to an upcoming conference on cyber security, while other users consider these same messages to be spam.</span></span>
+
+  <span data-ttu-id="3450b-117">バルクメールを識別する方法の詳細については、「 [Office 365 のバルク苦情レベル (BCL)](bulk-complaint-level-values.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3450b-117">For more information about how bulk email is identified, see [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).</span></span>
+
+## <a name="how-to-manage-bulk-email"></a><span data-ttu-id="3450b-118">バルク メールの管理方法</span><span class="sxs-lookup"><span data-stu-id="3450b-118">How to manage bulk email</span></span>
+
+<span data-ttu-id="3450b-119">バルクメールには反力が混在しているため、すべての組織に適用される一般的なガイダンスはありません。</span><span class="sxs-lookup"><span data-stu-id="3450b-119">Because of the mixed reaction to bulk email, there isn't universal guidance that applies to every organization.</span></span>
+
+<span data-ttu-id="3450b-120">スパム対策ポリシーには、バルクメールをスパムとして識別するために使用される既定の BCL しきい値があります。</span><span class="sxs-lookup"><span data-stu-id="3450b-120">Anti-spam polices have a default BCL threshold that's used to identify bulk email as spam.</span></span> <span data-ttu-id="3450b-121">管理者は、しきい値を増減できます。</span><span class="sxs-lookup"><span data-stu-id="3450b-121">Admins can increase or decrease the threshold.</span></span> <span data-ttu-id="3450b-122">詳細については、次のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="3450b-122">For more information, see the following topics:</span></span>
+
+- <span data-ttu-id="3450b-123">[Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)します。</span><span class="sxs-lookup"><span data-stu-id="3450b-123">[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
+
+- [<span data-ttu-id="3450b-124">EOP スパム対策ポリシーの設定</span><span class="sxs-lookup"><span data-stu-id="3450b-124">EOP anti-spam policy settings</span></span>](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+
+<span data-ttu-id="3450b-125">ユーザーがバルクメールの受信について苦情を受けているのに、EOP でスパムフィルター処理を通過する、よく知られた送信者からのメッセージであるという、見落としやすいもう1つのオプションは、ユーザーが一括メールメッセージの登録解除オプションを確認する必要がある場合です。</span><span class="sxs-lookup"><span data-stu-id="3450b-125">Another option that's easy to overlook: if a user complains about receiving bulk email, but the messages are from reputable senders that pass spam filtering in EOP, have the user check for a unsubscribe option in the bulk email message.</span></span>

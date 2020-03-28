@@ -1,5 +1,5 @@
 ---
-title: 迷惑メール メッセージを Microsoft に報告する
+title: スパム、非スパム、フィッシングメッセージを Microsoft に報告する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,55 +16,25 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 用迷惑メール報告アドインでは、次のような複数の方法で迷惑メール メッセージを報告できます。
-ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b7e7ed56f171ee3b74b36ed7c10c46286fb1e570
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895181"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033664"
 ---
-# <a name="report-junk-email-messages-to-microsoft"></a><span data-ttu-id="2e348-103">迷惑メール メッセージを Microsoft に報告する</span><span class="sxs-lookup"><span data-stu-id="2e348-103">Report junk email messages to Microsoft</span></span>
+# <a name="report-messages-and-files-to-microsoft"></a><span data-ttu-id="1935a-103">メッセージとファイルを Microsoft に報告する</span><span class="sxs-lookup"><span data-stu-id="1935a-103">Report messages and files to Microsoft</span></span>
 
-<span data-ttu-id="2e348-104">Microsoft Office Outlook 用迷惑メール報告アドインでは、次のような複数の方法で迷惑メール メッセージを報告できます。</span><span class="sxs-lookup"><span data-stu-id="2e348-104">The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers several ways for you to report junk email messages:</span></span>
+<span data-ttu-id="1935a-104">Office 365 のユーザーおよび管理者 Exchange Online にメールボックスがある組織、または Exchange online のメールボックスを送信していないスタンドアロンの Exchange Online Protection (EOP) 組織では、メッセージを報告するためのいくつかの異なる方法があります。ファイルを Microsoft に。</span><span class="sxs-lookup"><span data-stu-id="1935a-104">Users and admins in Office 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes to submit email messages have several different methods for reporting messages and files to Microsoft.</span></span>
 
-- <span data-ttu-id="2e348-105">Outlook リボンから報告する</span><span class="sxs-lookup"><span data-stu-id="2e348-105">From the Outlook ribbon</span></span>
+|||
+|---|---|
+|<span data-ttu-id="1935a-105">**メソッド**</span><span class="sxs-lookup"><span data-stu-id="1935a-105">**Method**</span></span>|<span data-ttu-id="1935a-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="1935a-106">**Description**</span></span>|
+|[<span data-ttu-id="1935a-107">管理者提出を使用して、疑いのあるスパム、フィッシング、Url、およびファイルを Microsoft に送信する</span><span class="sxs-lookup"><span data-stu-id="1935a-107">Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft</span></span>](admin-submission.md)|<span data-ttu-id="1935a-108">これは、Exchange Online メールボックス (スタンドアロン EOP では使用できません) を持つ組織での管理者のための推奨レポート方法です。</span><span class="sxs-lookup"><span data-stu-id="1935a-108">This is the recommended reporting method for admins in organizations with Exchange Online mailboxes (not available in standalone EOP).</span></span>|
+|[<span data-ttu-id="1935a-109">Office 365 でレポートメッセージアドインを有効にする</span><span class="sxs-lookup"><span data-stu-id="1935a-109">Enable the Report Message add-in in Office 365</span></span>](enable-the-report-message-add-in.md)|<span data-ttu-id="1935a-110">Outlook、outlook for Mac、および Outlook on the web で動作します。</span><span class="sxs-lookup"><span data-stu-id="1935a-110">Works with Outlook, Outlook for Mac, and Outlook on the web.</span></span> <span data-ttu-id="1935a-111">このアドインは推奨されています。</span><span class="sxs-lookup"><span data-stu-id="1935a-111">This is the recommended add-in.</span></span> <br/><br/> <span data-ttu-id="1935a-112">ライセンスに応じて、報告されたメッセージは[自動調査と応答 (AIR) の結果](air-view-investigation-results.md)、[ユーザーが報告したメッセージレポート](view-email-security-reports.md#user-reported-messages-report)および[脅威エクスプローラー](threat-explorer-views.md#email--submissions)で利用できます。</span><span class="sxs-lookup"><span data-stu-id="1935a-112">Depending on your license, the reported messages are available in [Automated investigation and response (AIR) results](air-view-investigation-results.md), the [User-reported messages report](view-email-security-reports.md#user-reported-messages-report) and [Threat Explorer](threat-explorer-views.md#email--submissions).</span></span>|
+|[<span data-ttu-id="1935a-113">Office 365 で Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する</span><span class="sxs-lookup"><span data-stu-id="1935a-113">Install and use the Junk Email Reporting add-in for Microsoft Outlook in Office 365</span></span>](junk-email-reporting-add-in-for-microsoft-outlook.md)|<span data-ttu-id="1935a-114">Outlook でのみ動作します。</span><span class="sxs-lookup"><span data-stu-id="1935a-114">Only works in Outlook.</span></span>|
+|[<span data-ttu-id="1935a-115">Office 365 の Outlook on the web で迷惑メールとフィッシング詐欺メールを報告する</span><span class="sxs-lookup"><span data-stu-id="1935a-115">Report junk and phishing email in Outlook on the web in Office 365</span></span>](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|<span data-ttu-id="1935a-116">Exchange Online のメールボックスを使用する組織では、web 上の Outlook の組み込み機能を使用します (スタンドアロン EOP では使用できません)。</span><span class="sxs-lookup"><span data-stu-id="1935a-116">Use the built-in capabilities in Outlook on the web for organizations with Exchange Online mailboxes (not available in standalone EOP).</span></span>|
+|[<span data-ttu-id="1935a-117">マルウェアおよびマルウェアでないものを分析のために Microsoft に提出する</span><span class="sxs-lookup"><span data-stu-id="1935a-117">Submit malware and non-malware to Microsoft for analysis</span></span>](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|<span data-ttu-id="1935a-118">Microsoft セキュリティインテリジェンスサイトを使用して、添付ファイルやその他のファイルを送信します。</span><span class="sxs-lookup"><span data-stu-id="1935a-118">Use the Microsoft Security Intelligence site to submit attachments and other files.</span></span>|
+|
 
-- <span data-ttu-id="2e348-106">受信トレイから報告する</span><span class="sxs-lookup"><span data-stu-id="2e348-106">From your Inbox</span></span>
-
-- <span data-ttu-id="2e348-107">開いた電子メール メッセージから報告する</span><span class="sxs-lookup"><span data-stu-id="2e348-107">From within an opened email message</span></span>
-
-<span data-ttu-id="2e348-108">迷惑メール報告アドインは、Microsoft Exchange Online Protection (EOP) サービスにレポートを送信するために役立ちます。</span><span class="sxs-lookup"><span data-stu-id="2e348-108">The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service.</span></span> <span data-ttu-id="2e348-109">メールボックスがサービスによって保護されていない場合、迷惑メールのレポートを送信しても、スパム フィルターは影響を受けません。</span><span class="sxs-lookup"><span data-stu-id="2e348-109">If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters.</span></span> <span data-ttu-id="2e348-110">管理者は、「 [office 365 の信頼できる差出人のリストを作成](create-safe-sender-lists-in-office-365.md)する」と「 [office 365 でブロックされる送信者の一覧を作成](create-block-sender-lists-in-office-365.md)する」に記載されている組織全体に適用されるスパム設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="2e348-110">Administrators can learn about more spam settings that apply to a whole organization at [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).</span></span> <span data-ttu-id="2e348-111">これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。</span><span class="sxs-lookup"><span data-stu-id="2e348-111">These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.</span></span>
-
-> [!TIP]
-> <span data-ttu-id="2e348-112">また、 [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)電子メールアドレスを使用して、 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)の電子メールアドレスと誤検知 (非スパム) メッセージを使用して、スパムメッセージを Microsoft に直接送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="2e348-112">You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive (non-spam) messages by using the [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) email address.</span></span> <span data-ttu-id="2e348-113">詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2e348-113">For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).</span></span>
-
-### <a name="to-report-junk-email-messages-from-outlook"></a><span data-ttu-id="2e348-114">Outlook から迷惑メールメッセージを報告するには</span><span class="sxs-lookup"><span data-stu-id="2e348-114">To report junk email messages from Outlook</span></span>
-
-[<span data-ttu-id="2e348-115">レポートメッセージアドインを使用する</span><span class="sxs-lookup"><span data-stu-id="2e348-115">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-### <a name="to-report-junk-email-messages-from-your-inbox"></a><span data-ttu-id="2e348-116">受信トレイから迷惑メール メッセージを報告するには</span><span class="sxs-lookup"><span data-stu-id="2e348-116">To report junk email messages from your Inbox</span></span>
-
-1. <span data-ttu-id="2e348-117">迷惑メールとして報告するメッセージを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="2e348-117">Right-click the message or messages that you want to report as junk.</span></span>
-
-2. <span data-ttu-id="2e348-118">**[迷惑メール]** を選択し、 **[迷惑メールの報告]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2e348-118">Select **Junk** and then click **Report Junk**.</span></span>
-    <span data-ttu-id="2e348-119">![受信トレイから迷惑メール メッセージを報告する](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)</span><span class="sxs-lookup"><span data-stu-id="2e348-119">![Report junk messages from your Inbox](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)</span></span>
-
-3. <span data-ttu-id="2e348-120">**[Microsoft Junk E-mail Reporting Add-in]** ダイアログ ボックスが開きます。</span><span class="sxs-lookup"><span data-stu-id="2e348-120">The **Microsoft Junk E-mail Reporting Add-in** dialog box opens.</span></span> <span data-ttu-id="2e348-121">選択したメッセージを迷惑メールとして送信する場合は、 **[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2e348-121">If you're sure that you want to submit the messages you selected as junk, click **Yes**.</span></span>
-    <span data-ttu-id="2e348-122">![迷惑メールとして報告することの確認](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span><span class="sxs-lookup"><span data-stu-id="2e348-122">![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="2e348-123">迷惑メール メッセージの送信時にこの確認メッセージを表示しない場合は、 **[今後、このメッセージを表示しない]** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="2e348-123">If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.</span></span>
-
-<span data-ttu-id="2e348-p105">選択したメッセージが、分析用に Microsoft に送信され、迷惑メール フォルダーに移動されます。メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="2e348-p105">The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
-
-### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a><span data-ttu-id="2e348-126">開いたメッセージから迷惑メール メッセージを報告するには</span><span class="sxs-lookup"><span data-stu-id="2e348-126">To report a junk email message from within an opened message</span></span>
-
-1. <span data-ttu-id="2e348-127">迷惑メール メッセージが開いた状態で、メッセージ リボンの **[迷惑メールの報告]** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="2e348-127">From within an opened message, click the **Report Junk** button on the message ribbon.</span></span> <span data-ttu-id="2e348-128">たとえば、 \*\*[迷惑メール\*\* \> **レポート迷惑** ![メール] をクリックすると、メッセージ内から迷惑メールを受信します。](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)</span><span class="sxs-lookup"><span data-stu-id="2e348-128">For example, click **Junk** \> **Report Junk** ![Report a junk email from within a message](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)</span></span>
-
-2. <span data-ttu-id="2e348-129">**[Microsoft Junk E-mail Reporting Add-in]** ダイアログ ボックスが開きます。</span><span class="sxs-lookup"><span data-stu-id="2e348-129">The **Microsoft Junk E-mail Reporting Add-in** dialog box opens.</span></span> <span data-ttu-id="2e348-130">選択したメッセージを迷惑メールとして送信する場合は、 **[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2e348-130">If you're sure that you want to submit the message you selected as junk, click **Yes**.</span></span>
-    <span data-ttu-id="2e348-131">![迷惑メールとして報告することの確認](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span><span class="sxs-lookup"><span data-stu-id="2e348-131">![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="2e348-132">迷惑メール メッセージの送信時にこの確認メッセージを表示しない場合は、 **[今後、このメッセージを表示しない]** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="2e348-132">If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.</span></span>
-
-<span data-ttu-id="2e348-p108">選択したメッセージが、分析用に Microsoft に送信され、迷惑メール フォルダーに移動されます。メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="2e348-p108">The selected message will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the message has been submitted, open your **Sent Items** folder to view the submitted message.</span></span>
+<span data-ttu-id="1935a-119">スパムまたはフィッシングメッセージが配信されずに検疫された場合、ユーザーは Office 365 セキュリティ & コンプライアンスセンターの検疫ポータルから Microsoft にメッセージを報告できます。</span><span class="sxs-lookup"><span data-stu-id="1935a-119">If the spam or phishing messages were quarantined instead of delivered, users can report the messages to Microsoft from the Quarantine portal in the Office 365 Security & Compliance Center.</span></span> <span data-ttu-id="1935a-120">詳細については、「 [Office 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1935a-120">For details, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).</span></span>
