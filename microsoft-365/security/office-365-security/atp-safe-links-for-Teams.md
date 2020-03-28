@@ -2,7 +2,7 @@
 title: Office 365 では、Teams、safelinks、安全なリンク、悪意のあるリンク、office 365 ATP、Teams の安全なリンク、ユーザーが無効なリンクをクリックするのを停止する悪意のあるリンク
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 02/28/2020
 ms.topic: overview
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: クリックしたときに Teams が安全なリンクにアクセスできるようになります。 1対1のチャット、グループ間、またはチャネル内のチャットを使用しているかどうか、および Office 365 ATP へのサブスクリプションがある場合は、このセーフティ機能を有効にして使用することができます。
-ms.openlocfilehash: ba7ef2ae63b788ec94fbbb15c3c00312177a59d5
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341610"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030143"
 ---
 <!--06/21/2019-->
 
@@ -30,7 +30,7 @@ ms.locfileid: "42341610"
 
 作業を管理するための Office 365 クラウドベースのアプリケーションである Microsoft Teams は、既に安全な添付ファイル (Office 365) を使用していますが、これでクリック時に安全なリンクにアクセスできるようになります。 1対1のチャット、グループ間、またはチャネル内のチャットを使用しているかどうか、および Office 365 ATP へのサブスクリプションがある場合は、この安全策を有効にして使用することができます。
 
-そのしくみは次のとおりです。 
+次に、動作のしくみを示します。 
 
 1. Teams アプリケーションを起動すると、Office 365 は、ユーザーが Office 365 ATP を使用している組織に所属しており、ユーザーが Microsoft Teams の保護が有効になっているアクティブな安全リンクポリシーの一部であることを確認します。
 
