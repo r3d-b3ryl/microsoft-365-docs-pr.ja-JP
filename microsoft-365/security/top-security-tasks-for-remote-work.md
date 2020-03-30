@@ -1,5 +1,5 @@
 ---
-title: セキュリティチームが自宅からの作業をサポートするためのトップ12タスク
+title: 自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: 73f2ae19a7424d392bb365d7a24a83532a1950bf
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
+ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036390"
+ms.locfileid: "43037478"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -116,7 +116,7 @@ Office 365 ATP:
 Office 365 ATP と Azure ATP が構成されたので、これらの機能の組み合わせた信号を1つのダッシュボードで表示できます。 [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) により、アラート、インシデント、自動化された調査と応答、およびワークロード全体にわたる高度な検索が実現されます (Azure ATP、OFFICE 365 Atp、MICROSOFT Defender ATP、および Microsoft Cloud App Security) は、 [security.microsoft.com](https://security.microsoft.com)の単一のウィンドウに表示されます。 
 <br>
 
-![MTP ダッシュボードの図](../media/top-10-security-remote-work-mtp-dashboard.png)
+![MTP ダッシュボードの図](../media/top-ten-security-remote-work-mtp-dashboard.png)
 <br><br>
 1つ以上の advanced threat protection サービスを構成した後、MTP を有効にします。 新機能は、継続的に MTP に追加されます。プレビュー機能を受信するには、をオプトインすることを検討してください。
 
@@ -128,7 +128,7 @@ Office 365 ATP と Azure ATP が構成されたので、これらの機能の組
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: 電話とタブレットの Intune モバイルアプリ保護を構成する
 
 Microsoft Intune モバイルアプリケーション管理 (MAM) を使用すると、これらのデバイスを管理することなく、電話やタブレットで組織のデータを管理および保護することができます。 次に、動作のしくみを示します。
-- デバイス上のどのアプリを管理するか、およびどの動作を許可するかを決定する App Protection Policy (APP) を作成します (管理対象アプリからデータを管理されていないアプリにコピーすることを防止するなど)。 Platorm (iOS、Android) ごとに1つのポリシーを作成します。
+- デバイス上のどのアプリを管理するか、どのような動作を許可するかを決定する App Protection Policy (APP) を作成します (たとえば、マネージアプリからのデータが管理対象アプリにコピーされるのを防ぐなど)。 Platorm (iOS、Android) ごとに1つのポリシーを作成します。
 - アプリ保護ポリシーを作成したら、承認済みアプリとアプリデータ保護を必要とするように、Azure AD で条件付きアクセスルールを作成して、これらのポリシーを適用します。
 
 アプリ保護ポリシーには多くの設定が含まれています。 幸いなことに、各設定について学習し、オプションを比較する必要はありません。 Microsoft では、開始点を推奨することで、設定の構成を簡単に適用できます。 [アプリ保護ポリシーを使用するデータ保護フレームワーク](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)には、選択可能な3つのレベルが含まれています。 
@@ -181,7 +181,7 @@ VPN コンセントレーター、中央ネットワーク出口装置 (プロ�
 
 詳細については、ドキュメントの次のリソースを参照してください。
 - [概要: VPN 分割トンネリングを使用してリモートユーザーの Office 365 接続を最適化する](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Office 365 の VPN 分割トンネリングの実装](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Office 365 向け VPN スプリット トンネリングの実装](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 このトピックに関する最近のブログ記事:
 - [リモートスタッフの Office 365 トラフィックをすばやく最適化する方法 & インフラストラクチャの負荷を軽減する](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
