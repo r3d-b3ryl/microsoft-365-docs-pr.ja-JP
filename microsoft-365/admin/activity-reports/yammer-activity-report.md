@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Yammer アクティビティレポートを取得して、Yammer を使用してメッセージを投稿したり、メッセージを読んだりするユーザーの数について理解します。
-ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353518"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047025"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>管理センターでの Office 365 レポート-Yammer アクティビティレポート
 
 Microsoft 365 admin として、**レポート**ダッシュボードには、組織内の製品の使用状況に関するデータが表示されます。 [管理センターのアクティビティレポートを](activity-reports.md)チェックアウトします。 **Yammer アクティビティ レポート** では、Yammer を使用してメッセージの投稿、「いいね!」の評価、または閲覧を行った一意のユーザー数や、組織全体で生成されたアクティビティの量を確認することで、Yammer に対する組織の関与レベルを把握することができます。 
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>Yammer のアクティビティ レポートにアクセスする方法
 

@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: メールボックス使用状況レポートを取得して、ユーザーのメールボックスを持つユーザーのアクティビティについて把握する方法について説明します。
-ms.openlocfilehash: d7d36359801fe72ac1c3ffc210c7795030f0b2e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241307"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046929"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>管理センターでの Microsoft 365 レポート-メールボックスの使用状況
 
 **メールボックスの使用状況レポート**には、電子メールの送信、読み取り、予定の作成、会議の出席、会議への出席、会議の辞退、会議のキャンセル活動に基づく、ユーザーのメールボックスとアクティビティのレベルに関する情報が表示されます。 また、各ユーザーのメールボックスが使用している記憶域の容量と、憶域のクォータに近づいているメールボックスの数についても表示されます。 
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>メールボックスの使用状況レポートを取得する方法
 

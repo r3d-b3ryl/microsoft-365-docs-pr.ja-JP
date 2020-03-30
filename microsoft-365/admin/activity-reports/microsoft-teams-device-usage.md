@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: Office 365 レポートから Microsoft Teams アプリの使用状況レポートを取得することによって、組織で使用される Microsoft Teams アプリの洞察を得ることができます。
-ms.openlocfilehash: 872cde92ccd66f4de5199a5035eaaa83b79f0cc0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b0937e4366f1b10b0908ee8764986f2ded2999ec
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353658"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046965"
 ---
 # <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>管理センターの Office 365 レポート-Microsoft Teams デバイスの使用状況
 
 Office 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft Teams アプリの使用状況レポートでは、組織で使用されている Microsoft Teams アプリについての洞察を得ることができます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Microsoft Teams アプリの使用状況レポートを取得する手順
 

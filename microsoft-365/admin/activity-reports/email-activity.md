@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Microsoft 365 管理センターの Microsoft 365 Reports dashboard を使用して電子メールアクティビティレポートを取得する方法について説明します。
-ms.openlocfilehash: 34cacd3a1c4682a53fdefd8f3fe26c38651676df
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2cdf20014b04010e1912fbc41ec6f4ce61eaaca1
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353848"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046833"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>管理センターの Microsoft 365 レポート-電子メールアクティビティ
 
@@ -32,7 +32,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 たとえば、[レポート] ページで組織内のメール トラフィックの概要ビューを表示し、そこから [メール アクティビティ] ウィジェットに移って組織内のメール アクティビティの傾向とユーザーごとの詳細を把握できます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。 
 
 ## <a name="how-to-get-to-the-email-activity-report"></a>メール アクティビティ レポートを表示する方法
 

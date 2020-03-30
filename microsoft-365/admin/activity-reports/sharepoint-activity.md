@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Sharepoint アクティビティの使用状況レポートを取得して、すべての SharePoint ユーザー、共有ファイル数、ストレージ使用率のアクティビティについて把握します。
-ms.openlocfilehash: df025d41a2c570761fd59e228eebb277c922e06e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a3c8d73707ef09c3702450ebddab6e43c159638c
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353428"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047049"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>管理センターの Microsoft 365 レポート-SharePoint アクティビティ
 
@@ -39,7 +39,7 @@ Microsoft 365 管理者としての**レポート**ダッシュボードには�
 各 SharePoint サイトに対するアクティビティの量と記憶域の使用率を把握する場合は、[SharePoint サイトの利用状況レポート](sharepoint-site-usage.md)を使用します。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
  
 ## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>SharePoint アクティビティ レポートにアクセスする方法
 

@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: 組織の OneDrive 使用状況レポートを取得し、すべての OneDrive ユーザーのアクティビティ、共有ファイル数、および記憶域の使用率を把握します。
-ms.openlocfilehash: b51071fe8c91b0064d6680b628b58df1f370c73d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353588"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047087"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>管理センターの Microsoft 365 レポート-OneDrive for Business アクティビティ
 
@@ -40,7 +40,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 各 OneDrive アカウントに対するアクティビティの量と記憶域の使用率を把握する場合は、[OneDrive 利用状況レポート](onedrive-for-business-usage.md)を使用できます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>OneDrive アクティビティ レポートの作成方法
 

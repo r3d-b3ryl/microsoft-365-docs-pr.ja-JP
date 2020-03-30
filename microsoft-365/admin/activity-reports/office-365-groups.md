@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: グループとそのアクティビティについて知るために、Microsoft 365 groups レポートを取得します。
-ms.openlocfilehash: b76bd83dfbd215a6645bd73b2f9b2fb4be0c493b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 23b72d960a693ddeb8b05d261bd90f180b7c731d
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353668"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047133"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターの microsoft 365 レポート-Microsoft 365 グループ
 
 Microsoft 365 **Reports** dashboard には、組織内の製品全体にわたるアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft 365 groups レポートでは、組織内のグループのアクティビティについての洞察を得て、作成され、使用されているグループの数を確認できます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
   
 ## <a name="how-to-get-to-the-groups-report"></a>グループ レポートを作成する方法
 

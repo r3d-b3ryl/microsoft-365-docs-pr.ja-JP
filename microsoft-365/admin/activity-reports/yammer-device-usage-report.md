@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: 'Yammer デバイスの使用状況レポートを取得して、ユーザーが Yammer を使用しているデバイスについて把握します。 '
-ms.openlocfilehash: 42fc4b1f9a4d782c50eabd892f6a49d1c474be01
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1dfd72c8974aa10b3774d2cdb17ac1bf82b9501b
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353378"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047013"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>管理センターの Microsoft 365 レポート-Yammer デバイスの使用状況レポート
 
@@ -31,7 +31,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 Yammer デバイスの使用状況レポートでは、ユーザーが Yammer を使用しているデバイスについての情報を示します。デバイスの種類別に毎日使用するユーザー数を表示したり、デバイスの種類別にユーザー数を表示したりします。どちらも選択した期間で表示できます。また、ユーザーごとの詳細を表示することもできます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。 
   
 ## <a name="how-do-i-get-to-the-yammer-device-usage-report"></a>Yammer デバイスの使用状況レポートの作成方法
 

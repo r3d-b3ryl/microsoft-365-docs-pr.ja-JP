@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: Yammer グループアクティビティレポートを取得して、組織で作成され、使用されている Yammer グループの数とそのアクティビティを把握します。
-ms.openlocfilehash: 69b9be1b6f632f0e6fa212e5be6209097ccb6669
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 117217f8dd275432342afd0381b39e93de23b92f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353328"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047073"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>管理センターの Office 365 レポート-Yammer groups アクティビティレポート
 
 Office 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Yammer グループ アクティビティ レポートでは、組織内の Yammer グループのアクティビティに関する詳細を取得し、作成されて使われている Yammer グループの数を確認できます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
 
 ## <a name="how-to-get-to-the-yammer-groups-activity-report"></a>Yammer のグループ アクティビティ レポートにアクセスする方法
 

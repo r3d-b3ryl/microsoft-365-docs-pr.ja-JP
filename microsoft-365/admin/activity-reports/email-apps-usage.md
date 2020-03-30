@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Exchange Online に接続している電子メールアプリと、ユーザーが使用している Outlook のバージョンを確認するために、電子メールアプリの使用状況レポートを取得する方法について説明します。
-ms.openlocfilehash: bb75b28e41de37d4f21acedd4705db71f6c2c303
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5bdd62d150cf103cd3c3520cf5a0c593dceb8e66
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353788"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046857"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>管理センターの Microsoft 365 レポート-電子メールアプリの使用状況
 
 Microsoft 365 **Reports** dashboard には、組織内の製品全体にわたるアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 [電子メールアプリの使用状況] レポートには、Exchange Online に接続している電子メールアプリの数が表示されます。 それにより、サポートされていないバージョンを使用しているユーザーを、サポートされているバージョンの Outlook をインストールするようにフォローアップできます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
  
 ## <a name="how-to-get-to-the-email-apps-report"></a>電子メールアプリレポートを取得する方法
 

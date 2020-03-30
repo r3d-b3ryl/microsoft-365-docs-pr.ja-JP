@@ -2,8 +2,8 @@
 title: Office 365 でカスタム ユーザー ビューを作成、編集、削除する
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: フィルターを使用して Office 365 のカスタムユーザービューを作成、編集、または削除する方法について説明します。
-ms.openlocfilehash: ba03d3da3e8bfdc4f2a661d1dc59845a8a22609f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632955"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047061"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Office 365 でカスタム ユーザー ビューを作成、編集、削除する
 
@@ -89,6 +89,13 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 - **ライセンス未付与のユーザー** ライセンスが付与されていないすべてのユーザーを表示するには、このボックスをオンにします。このビューの結果には、Exchange メールボックスは持っていてもライセンスを持たないユーザーも含まれる場合があります。特にこのようなユーザーを追跡するには、[ **Exchange のメールボックスまたはアーカイブはあるがライセンスがないユーザー**] フィルターを使用します。このビューの結果には、Exchange アーカイブは持っていてもライセンスを持たないユーザーも含まれる場合があります。
     
 - **Exchange のメールボックスまたはアーカイブはあるがライセンスがないユーザー**Exchange Online で作成され、Exchange メールボックスはあるが、Office 365 ライセンスが割り当てられていないユーザー アカウントを表示するには、このボックスをオンにします。このフィルターの結果には、Exchange アーカイブが割り当てられたユーザーが含まれます。 
+
+> [!NOTE]
+> **Exchange メールボックスフィルターを使用してライセンスのないユーザー**は、次の場合に機能します。
+1. メールボックスは、最近**共有**から**ユーザー**に変換されており、ライセンスを持っていません。
+2. メールボックスは Office 365 に最近移行されましたが、ライセンスが割り当てられていません。
+3. メールボックスは PowerShell を使用して作成されており、ライセンスが割り当てられていません。
+4. オンプレミスで作成された新しいメールボックスが、そのユーザー用にプロビジョニングされます。
     
 > [!TIP]
 > 2,000 を超えるユーザーを返すカスタム ビューを作成すると、結果のユーザー一覧は並べ替えられません。 この場合は、検索ボックスを使用してユーザーを検索するか、カスタムビューを編集して検索を絞り込んでください。 
@@ -97,7 +104,7 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
     
 2. [**アクティブなユーザー** ] ページで、[**フィルター** ] を選択し、[**新しいフィルター**] を選択します。
   
@@ -107,7 +114,7 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
 
 2. [**アクティブなユーザー** ] ページで、[**ビュー** ] を選択し、[**カスタムビューの追加**] を選択します。
   
@@ -118,7 +125,7 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
 
 2. [**アクティブなユーザー** ] ページで、[**ビュー** ] を選択し、[**カスタムビューの追加**] を選択します。
   
@@ -131,7 +138,7 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
     
 2. [**アクティブなユーザー** ] ページで、[**フィルター**] を選択し、変更するフィルターを選択して、[**フィルターの編集**] を選択します。 
     
@@ -144,7 +151,7 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
 
 2. [**アクティブなユーザー** ] ページで、[**ビュー**] を選択し、変更するフィルターを選択してから、[**このビューの編集**] を選択します。 
     
@@ -157,7 +164,7 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
 
 2. [**アクティブなユーザー** ] ページで、[**ビュー**] を選択し、変更するフィルターを選択してから、[**このビューの編集**] を選択します。 
     
@@ -170,4 +177,3 @@ Office 365 の全体管理者またはユーザー管理の管理者は、一部
 
 
      
-

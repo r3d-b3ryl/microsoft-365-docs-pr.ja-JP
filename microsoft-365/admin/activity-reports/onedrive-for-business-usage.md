@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 0de3b312-c4e8-4e4b-a02d-32b2f726a680
 description: 'OneDrive for Business の使用状況レポートを取得して、組織全体で使用されているファイルと記憶域の合計数を確認します。 '
-ms.openlocfilehash: 8bbf904faf1afe28f4a8a83209f681a44eaa932f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4c7cfaeed03627b6dfab6c694f3a5e858b125c40
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353558"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047109"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>管理センターの Microsoft 365 レポート-OneDrive for Business の使用状況
 
@@ -35,7 +35,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 たとえば、ダッシュボードの OneDrive カードには、組織内で使用されているファイルの総数とストレージについて OneDrive for Business から得た値の概要が表示されます。これを詳細に調べて、アクティブな OneDrive アカウントの傾向や、ユーザーが操作しているファイル数と使用しているストレージの傾向を把握できます。このレポートには、各ユーザーの OneDrive ごとの詳細も表示されます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバルリーダー、またはレポート閲覧者である必要があります。 
+> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
  
 ## <a name="how-do-i-get-to-the-onedrive-usage-report"></a>OneDrive の利用状況レポートの作成方法
 
