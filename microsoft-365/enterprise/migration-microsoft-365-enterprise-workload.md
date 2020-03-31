@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 3a501ec7919972e5b8b289bbddb3bf7e6ae9a8f0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952020"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053085"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -30,7 +30,7 @@ ms.locfileid: "42952020"
 - デバイス上の Windows 7 および Windows 8.1 から Windows 10 Enterprise
 
 >[!Note]
->Windows 7 は、**2020 年 1 月 14 日**にサポート終了になります。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
+>Windows 7 は、**2020 年 1 月 14 日**にサポート終了になりました。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
 >
 
 時経つうちにこれらすべての移行が完了すれば、組織内のチームワークと創造性を引き出す安全で統合された[最新の職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)環境に組織を近づけることができます。これはすべて Microsoft 365 Enterprise によって成し遂げることができます。 
@@ -145,7 +145,7 @@ Office 2016 リリースのサーバー製品については、サポートの�
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 および 8.1 の移行
 
-Windows 7 は、**2020 年 1 月 14 日**にサポート終了になります。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
+Windows 7 は、**2020 年 1 月 14 日**にサポート終了になりました。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
 
 その他の方法については、「[Windows 10 展開のシナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)」をご覧ください。 自分で[Windows 10 の展開を計画](https://aka.ms/planforwin10deployment)することもできます。
 
