@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3f60c40ecd1810d630a4607d6b0915d6f3089a99
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372045"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058907"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
@@ -45,7 +45,7 @@ Microsoft 365 セキュリティ センターには以下のものが含まれ�
 
 * **自宅**–組織の全体的なセキュリティの健全性を一目で確認できます。
 * **インシデント**-エンティティの個々の通知に表示されるドットを接続することによって、より広範な攻撃のストーリーを参照できます。 攻撃が開始された場所、影響を受けているデバイス、脅威が発生した場所を正確に把握できます。
-* **アラート**– Microsoft Cloud App Security、OFFICE 365 ATP、azure AD、azure Atp、MICROSOFT Defender atp などのアラートを含む、microsoft 356 環境全体のすべての通知をより詳細に把握できます。 E3 および E5 のお客様が使用できます。  
+* **アラート**– Microsoft Cloud App Security、OFFICE 365 ATP、azure AD、azure Atp、MICROSOFT Defender atp などのアラートを含む、microsoft 365 環境全体のすべての通知をより詳細に把握できます。 E3 および E5 のお客様が使用できます。  
 * **アクションセンター** -セキュリティチームが手動で対処する必要のあるアラートの量を減らし、セキュリティ運用チームがより高度な脅威やその他の高価値イニシアティブに集中できるようにします。
 * **レポート**–ユーザー、デバイス、アプリなどをより適切に保護するために必要な詳細情報と情報を取得します。
 * **セキュア スコア** - Microsoft セキュア スコアを使用して、全体的なセキュリティ体制を改善します。 このページには、有効にしたさまざまなセキュリティ機能の概要と、改善するための推奨事項が記載されています。

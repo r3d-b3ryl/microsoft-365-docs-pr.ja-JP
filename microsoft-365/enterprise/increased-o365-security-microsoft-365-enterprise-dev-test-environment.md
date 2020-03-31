@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の Microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: 465e9df40e8dfe9883a81d352eabff17151df8f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067264"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058883"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズテスト環境の Microsoft 365 セキュリティの強化
 
@@ -56,7 +56,7 @@ ms.locfileid: "42067264"
   - シミュレートされたエンタープライズ Microsoft 365 テスト環境を使用している場合は、 [Azure portal](https://portal.azure.com)を使用して client1 仮想マシンに接続し、client1 からサインインします。
  
 2. 新しい**Microsoft 365 管理センター**のタブで、左側のナビゲーションウィンドウの [**管理センター** ] の下にある [ **SharePoint**] をクリックします。
-3. [新しい**SharePoint 管理センター** ] タブで、[**アクセス制御**] をクリックします。
+3. [新しい**SharePoint 管理センター** ] タブで、[**ポリシー > アクセス制御**] をクリックします。
 4. [**モダン認証をサポートしていないアプリ**] をクリックし、[**アクセスをブロック**する] を選択して、[**保存**] をクリックします。
 
 
