@@ -15,15 +15,16 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- remotework
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f23bece83f0c0fc25ddb26b8ceddcb1c956bc5e
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024347"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053074"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>ケーススタディ-Contoso 社が Microsoft Teams および Exchange の通信に対して不快な言語ポリシーを迅速に構成する
 
@@ -40,7 +41,7 @@ Contoso Corporation は、不快感を与える言葉を監視するポリシー
 
 ## <a name="step-1---planning-for-communication-compliance"></a>手順 1-通信のコンプライアンスを計画する
 
-Contoso 社の IT 管理者およびコンプライアンスの専門家は、Microsoft 365 のコンプライアンスソリューションに関するオンラインウェビナーに参加しており、コミュニケーションコンプライアンスポリシーが、workplace を削減するために更新された企業ポリシー要件を満たすために役立つことを決定しました。嫌がらせ. 共同作業では、Exchange Online で送信された電子メールメッセージ内の Microsoft Teams で送信されるチャットに対して、不快な言葉を監視する通信コンプライアンスポリシーを作成して有効にする計画が策定されました。 プランには、次の内容が含まれます。
+Contoso 社の IT 管理者およびコンプライアンスの専門家は、Microsoft 365 のコンプライアンスソリューションに関するオンラインウェビナーに参加しており、コミュニケーションコンプライアンスポリシーが、workplace 嫌がらせを削減するために更新された企業ポリシー要件を満たすのを支援することを決定しました。 共同作業では、Exchange Online で送信された電子メールメッセージ内の Microsoft Teams で送信されるチャットに対して、不快な言葉を監視する通信コンプライアンスポリシーを作成して有効にする計画が策定されました。 プランには、次の内容が含まれます。
 
 - 通信コンプライアンス機能にアクセスする必要がある IT 管理者。
 - コミュニケーションポリシーを作成および管理する必要があるコンプライアンススペシャリスト。
