@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0cd96d9b7d769f75d5b7f26bb364cf517844e29d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
+ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602524"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068575"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>米国国防総省 (DoD) の影響レベル2、4、および5の仮承認
 
@@ -35,8 +35,8 @@ DoD Cloud Service のサポートによって、SRG のポリシー、セキュ�
 
 Microsoft の官公庁クラウドサービスは、影響レベル2から5までの米国国防総省の要件を満たしています。米国国防総省は、Microsoft Cloud のコスト削減と厳重なセキュリティによる恩恵を受けることができます。 Azure Government、Office 365 米国政府、および Dynamics 365 Government を含む保護されたサービスを展開することで、防衛機関は、準拠しているサービスの豊富なアレイを使用できます。
 
-- Microsoft クラウドでの DoD DISA L2、L4、L5 の利点について説明します。[防御部門をダウンロードする Backgrounder](https://aka.ms/disa-backgrounder)
-- Azure セキュリティおよびコンプライアンスブループリントを使用して DoD DISA L2、L4、L5 展開を高速化する方法について説明します。 [Azure DoD レベル5のセキュリティ制御の実装をダウンロード](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)する
+- DoD DISA L2 の利点について説明します。 Microsoft Cloud では L4 をダウンロードしてください。[防御部門をダウンロードする Backgrounder](https://aka.ms/disa-backgrounder)
+- Microsoft [Azure Dod ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)を使用して、DoD を迅速に展開し、L4 を展開する方法について説明します。
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影響レベル5の暫定認証
 
@@ -75,7 +75,7 @@ FedRAMP の承認に基づいて、クラウドサービスのサポートに Do
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 米国政府](https://aka.ms/d365-compliance-list)
 - [Office 365 米国政府機関](https://aka.ms/o365-compliance-framework)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -83,17 +83,17 @@ DoD PA が付与されると、Microsoft cloud services が毎年監視および
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>Azure での DoD ソリューションの展開を迅速に追跡する
 
-Azure のセキュリティとコンプライアンス部門の防御の青写真を使用して、government のクラウドの利点を活用することについて、すぐに開始します。 この青写真は、今日の DoD 準拠ソリューションの構築を開始するためのツールとガイダンスを提供します。 [Azure DoD 青写真の使用を開始](https://aka.ms/Azure-Blueprint-DoD-NIST)します。
+Azure のセキュリティとコンプライアンス部門の防御の青写真を使用して、government のクラウドの利点を活用することについて、すぐに開始します。 この青写真は、今日の DoD 準拠ソリューションの構築を開始するためのツールとガイダンスを提供します。 [Azure DoD 青写真の使用を開始](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**Microsoft のコンプライアンスを自分の組織の認定プロセスに利用できますか?**
+**組織の認定プロセスにおいて Microsoft のコンプライアンスを使用できますか?**
 
 はい。 すべての DoD 機関は、DoD 認証を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書に頼ることができます。 (これは、DoD をサポートし、クラウドサービスを必要とする他の組織にも適用されます)。ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
 
 **Microsoft の DoD 認定資格は、NIST 800 –171の要件を満たしていますか?**
 
-2016年10月に、国防総省 (DoD) は、「対象となる防衛情報」を通じて処理、保存、または送信するすべての DoD 請負業者に適用される、連邦防御法補足 (DFARS) 句を実装する最終規則を規定しています。情報システム。 このようなシステムは、NIST SP 800 –171で規定されているセキュリティ要件を満たしている必要があります。[連邦情報システムや組織内の規制](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)されていない未分類情報を保護すること、または DoD 契約責任者によって承認された「代替、同等の効果的なセキュリティ対策」。 また、DoD 請負業者は、対象となる防御情報を処理、保存、または送信するために外部クラウドサービスプロバイダーを使用する必要があります。このプロバイダーは、FedRAMP の適度なベースラインと同等のセキュリティ要件を満たしている必要があります。
+2016年10月に、国防総省 (DoD) は、情報システムを使用して、"対象となる防衛情報" を処理、保存、または送信するすべての DoD 請負業者に適用される、連邦防御 (promulgated) 句を実装する最終規則を示しています。 このようなシステムは、NIST SP 800 –171で規定されているセキュリティ要件を満たしている必要があります。[連邦情報システムや組織内の規制](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)されていない未分類情報を保護すること、または DoD 契約責任者によって承認された「代替、同等の効果的なセキュリティ対策」。 また、DoD 請負業者は、対象となる防御情報を処理、保存、または送信するために外部クラウドサービスプロバイダーを使用する必要があります。このプロバイダーは、FedRAMP の適度なベースラインと同等のセキュリティ要件を満たしている必要があります。
 
 次の Microsoft クラウドサービスは、FedRAMP の中程度の承認を受信しています。 Azure、Azure Government、Dynamics 365 米国政府、Office 365 MT、Office 365 米国政府機関、および Office 365 米国政府機関による防御。
 
