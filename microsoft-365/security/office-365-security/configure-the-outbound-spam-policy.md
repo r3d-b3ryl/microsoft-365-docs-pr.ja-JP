@@ -1,5 +1,5 @@
 ---
-title: 送信スパムフィルターを構成する
+title: 送信スパム フィルターの構成
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,16 +16,16 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
-ms.openlocfilehash: e788310ae8fd3c0da7f1a39fbba2dc0d6e369d30
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3800134855d42870992105e66313100ee0d77cd5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893965"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081474"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>Office 365 で送信スパムフィルターを構成する
 
-Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 お客様の場合、EOP を介して送信される送信電子メールメッセージは自動的にチェックされ、スパムや異常をチェックします。送信アクティビティ。
+Exchange Online または exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) のお客様の場合、Office 365 をご利用のお客様は、EOP を経由して送信される送信電子メールメッセージがスパムと通常の送信アクティビティに対して自動的にチェックされます。
 
 組織内のユーザーからの送信スパムは、通常、侵害されたアカウントを示しています。 疑わしい送信メッセージは、スパムの信頼レベルまたは SCL に関係なく、スパムとしてマークされ、[高リスクの配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してサービスの評価を保護します (つまり、Office 365 ソースの電子メールサーバーが IP 禁止一覧に保持されたままになります)。 管理者は、疑わしい送信電子メールアクティビティとブロックされたユーザーに対して通知[ポリシー](../../compliance/alert-policies.md)を使用して自動的に通知を受け取ります。
 
@@ -243,7 +243,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
    - ユーザー設定の送信スパムポリシーが3つ以上ある場合、最高の優先度と最も低い優先![順位の間](../../media/ITPro-EAC-UpArrowIcon.png)![のポリシーは](../../media/ITPro-EAC-DownArrowIcon.png) 、上矢印アイコンの![下矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png)![ **n** (たとえば](../../media/ITPro-EAC-DownArrowIcon.png) 、上矢印アイコンを下矢印アイコン**2**) に設定します。
 
-3. [追加] アイコン ![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) or ![下矢印アイコン](../../media/ITPro-EAC-DownArrowIcon.png) を押して、カスタムの送信スパムポリシーを優先順位一覧で上または下に移動します。
+3. [追加] アイコン ![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) または ![下矢印アイコン](../../media/ITPro-EAC-DownArrowIcon.png) を押して、カスタムの送信スパムポリシーを優先順位一覧で上または下に移動します。
 
 ## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a>セキュリティ & コンプライアンスセンターを使用して送信スパムポリシーを削除する
 
@@ -489,10 +489,9 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule)」を参照してください。
 
-
 ## <a name="for-more-information"></a>関連情報
 
-[迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+[Office 365 の制限付きユーザーポータルからブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 

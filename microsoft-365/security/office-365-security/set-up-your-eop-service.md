@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「Configure mail flow using connectors in Office 365」をご覧ください。
-ms.openlocfilehash: 5a28bc606b22b044515e737bf1ddf8250452f250
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895145"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081234"
 ---
 # <a name="set-up-your-eop-service"></a>EOP サービスを設定する
 
@@ -62,8 +62,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>手順 4: 受信ポート 25 SMTP アクセスを許可する
 
-コネクタを構成した後、DNS レコードの更新が伝達されるよう 72 時間待ちます。この後、ファイアウォールまたはメール サーバーで、EOP データセンターからの (具体的には [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges
-) に一覧表示されている IP アドレスからの) メールだけを受信するように、受信用ポート 25 の SMTP トラフィックを制限します。これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
+コネクタを構成した後、DNS レコードの更新が伝達されるよう 72 時間待ちます。この後、ファイアウォールまたはメール サーバーで、EOP データセンターからの (具体的には [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) に一覧表示されている IP アドレスからの) メールだけを受信するように、受信用ポート 25 の SMTP トラフィックを制限します。これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
 
 > [!TIP]
 > SMTP サーバーの設定を、60 秒で接続タイムアウトが発生するように構成します。 この設定は、大規模な添付ファイルで送信されたメッセージの場合など、遅延が発生する場合がほとんどの場合に使用できます。
@@ -72,7 +71,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 スパム (迷惑) メールがそれぞれのユーザーの迷惑メール フォルダーに正しくルーティングされることを保証するには、一組の構成手順を実行する必要があります。 この手順は、[ハイブリッド環境の迷惑メールフォルダーにスパムを配信するように、[スタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)] で提供されています。
 
-メッセージをそれぞれのユーザーの迷惑メール フォルダーに移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集すると別のアクションを選択できます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+メッセージをそれぞれのユーザーの迷惑メール フォルダーに移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集すると別のアクションを選択できます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メールフロールール (トランスポートルール) を使用して、Office 365 組織を通過するメッセージを識別し、処理を行うことができます。
-ms.openlocfilehash: 42b55893a9884b547a0d2d36e901169153d290d7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599024"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081426"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection のメール フロー ルール (トランスポート ルール)
 
@@ -71,7 +71,7 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 
 次の表は、複数の条件、条件の値、例外、アクションが、ルールでどのように処理されるのかを説明しています。
 
-|**コンポーネント**|**ロジック**|**Comments**|
+|**コンポーネント**|**ロジック**|**コメント**|
 |:-----|:-----|:-----|
 |コメント|AND|メッセージは、ルールのすべての条件に一致しなければなりません。別々の条件に一致させる必要がある場合は、条件ごとに個別のルールを使用します。たとえば、ファイルが添付されたメッセージと、特定のテキストを含んでいるメッセージに同じ免責事項を追加するには、それぞれの条件ごとに 1 つのルールを作成します。EAC においては、ルールは簡単にコピーできます。|
 |メッセージは、ルールのすべての条件に一致しなければなりません。別々の条件に一致させる必要がある場合は、条件ごとに個別のルールを使用します。たとえば、ファイルが添付されたメッセージと、コンテンツがパターンと一致するメッセージに同じ免責事項を追加するには、それぞれの条件ごとに 1 つのルールを作成します。ルールは簡単にコピーできます。|または|条件によっては、複数の値を指定できる場合もあります。メッセージは指定された値の任意の 1 つ (すべてではない) に一致する必要があります。たとえば、メール メッセージの件名が「株価情報」で、 **[件名に次のいずれかの語が含まれている場合]** という条件が「 Contoso」または「株」のいずれかの単語に一致するよう構成されていたとすると、件名に値が少なくとも 1 つは含まれているので、この条件は満たされています。  |
@@ -107,14 +107,14 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 
 |**メッセージの種類**|**ルールを適用可能か**|
 |:-----|:-----|
-|**通常のメッセージ**: 単一のリッチテキスト形式 (RTF)、HTML、プレーンテキストのメッセージ本文、またはメッセージ本文のマルチパートまたは代替セットが含まれるメッセージ。|はい|
+|**通常のメッセージ**: 単一のリッチテキスト形式 (RTF)、HTML、プレーンテキストのメッセージ本文、またはメッセージ本文のマルチパートまたは代替セットが含まれるメッセージ。|必要|
 |**Office 365 メッセージ暗号化**: office 365 での Office 365 メッセージの暗号化によって暗号化されたメッセージ。 詳細については、「[Office 365 での暗号化](https://docs.microsoft.com/microsoft-365/compliance/encryption)」をご覧ください。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> 暗号化されたメッセージの内容を検査または変更するルールについては、トランスポート復号化が有効になっていることを確認する必要があります (必須またはオプション)。既定値はオプションです。 詳細については、「 [Office 365 で電子メールメッセージを暗号化または暗号化解除するルールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)」を参照してください。|
 |**S/MIME 暗号化されたメッセージ**|ルールは、エンベロープ ヘッダーにのみアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> メッセージ コンテンツの検査を必要とする条件を使用したルール、またはメッセージのコンテンツを変更するアクションを処理することはできません。|
 |**RMS で保護されたメッセージ**: Active Directory Rights management サービス (AD RMS) または Azure Rights MANAGEMENT (RMS) ポリシーが適用されているメッセージ。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <br/><br/> RMS で保護されたメッセージの内容を検査または変更するルールについては、トランスポート復号化が有効になっていることを確認する必要があります (必須または任意、既定値はオプション)。|
-|**クリア署名付きメッセージ**: 署名されているが、暗号化されていないメッセージ。|はい|
-|**UM メッセージ**: ボイスメール、fax、不在着信通知などのユニファイドメッセージングサービスによって作成または処理されたメッセージ、および Microsoft Outlook voice Access を使用して作成または転送されたメッセージ。|はい|
-|**匿名メッセージ**: 匿名送信者によって送信されたメッセージ。|はい|
-|**閲覧レポート**: 送信者からの開封確認要求に対する応答として生成されるレポート。 閲覧レポートには、または`IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead`のメッセージクラスがあります。|はい|
+|**クリア署名付きメッセージ**: 署名されているが、暗号化されていないメッセージ。|必要|
+|**UM メッセージ**: ボイスメール、fax、不在着信通知などのユニファイドメッセージングサービスによって作成または処理されたメッセージ、および Microsoft Outlook voice Access を使用して作成または転送されたメッセージ。|必要|
+|**匿名メッセージ**: 匿名送信者によって送信されたメッセージ。|必要|
+|**閲覧レポート**: 送信者からの開封確認要求に対する応答として生成されるレポート。 閲覧レポートには、または`IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead`のメッセージクラスがあります。|必要|
 
 ## <a name="what-else-should-i-know"></a>その他の注意事項
 
@@ -126,6 +126,6 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 
 [メールフロールールを使用して Exchange Online のメッセージの添付ファイルを検査する](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-[Office 365 での電子メールの暗号化](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
+[Office 365 での電子メールの暗号化](../../compliance/email-encryption.md)
 
 [ジャーナル、トランスポート、受信トレイのルール上の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

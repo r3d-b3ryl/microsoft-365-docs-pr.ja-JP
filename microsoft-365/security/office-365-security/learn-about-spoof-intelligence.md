@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: '[スパム対策設定] ページ&amp;のセキュリティコンプライアンスセンターのスプーフィングインテリジェンスを使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。 スプーフィングインテリジェンスは、Office 365 Enterprise E5 の一部として、または Advanced Threat Protection と Exchange Online Protection の一部として別途利用できます。'
-ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082971"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081462"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスをもっとよく知る
 
@@ -101,7 +101,7 @@ ms.locfileid: "42082971"
 
 6. [**保存**] を選択して変更を保存します。
 
-Office 365 Enterprise E5 サブスクリプションを使用している場合、または Advanced Threat Protection をアドオンとして別途購入している場合は、[スプーフィングインテリジェンスの洞察](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight)を通じてドメインをスプーフィングしている送信者を管理することもできます。
+Office 365 Enterprise E5 サブスクリプションを使用している場合、または Advanced Threat Protection をアドオンとして別途購入している場合は、[スプーフィングインテリジェンスの洞察](walkthrough-spoof-intelligence-insight.md)を通じてドメインをスプーフィングしている送信者を管理することもできます。
 
 ## <a name="configuring-the-anti-spoofing-policy"></a>スプーフィング対策ポリシーの構成
 <a name="Managespooflist"> </a>

@@ -11,13 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- remotework
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
-ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
+ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43037478"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081306"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -165,8 +166,8 @@ Microsoft 365 E5 プランを使用していて、リスクベースの MFA に�
 - [Apple Business Manager (ABM) の Apple 社の会社のデバイス登録機能を使用して、Intune に iOS/iPadOS デバイスを登録する](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 デバイスを登録した後、[一般的な id およびデバイスアクセスポリシー](../enterprise/identity-access-policies.md)のガイダンスを使用して、これらのポリシーを作成します。
-- [デバイスコンプライアンスポリシーの定義](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- 準拠している[pc を必要とする](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)(条件付きアクセスルール)
+- [デバイスコンプライアンスポリシーの定義](../enterprise/identity-access-policies.md#define-device-compliance-policies): Windows 10 の推奨設定では、ウイルス対策保護が必要になります。 Microsoft 365 E5 がある場合は、Microsoft Defender Advanced Threat Protection を使用して従業員のデバイスの正常性を監視します。 他のオペレーティングシステムのコンプライアンスポリシーには、ウイルス対策保護とエンドポイント保護ソフトウェアが含まれていることを確認してください。 
+- 準拠している[pc を必要と](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)する—これは、デバイスコンプライアンスポリシーを強制する Azure AD の条件付きアクセスルールです。
 
 1つの組織のみがデバイスを管理できるので、Azure AD の条件付きアクセスルールからゲストアカウントを除外するようにしてください。 デバイスコンプライアンスを必要とするポリシーからゲストおよび外部ユーザーを除外しない場合、これらのポリシーによってこれらのユーザーがブロックされます。 詳細については、「[一般ポリシーを更新してゲストおよび外部アクセスを許可および保護する](../enterprise/identity-access-policies-guest-access.md)」を参照してください。
 
@@ -174,7 +175,7 @@ Microsoft 365 E5 プランを使用していて、リスクベースの MFA に�
 
 従業員の大規模な従業員が自宅からすぐに使用できるようにしている場合、この突然の接続パターンの切り替えは企業ネットワークインフラストラクチャに大きな影響を与える可能性があります。 多くのネットワークは、クラウドサービスを採用する前に拡張および設計されていました。 多くの場合、ネットワークはリモートワーカーに対する耐性がありますが、すべてのユーザーが同時にリモートで使用するようには設計されていません。
 
-VPN コンセントレーター、中央ネットワーク出口装置 (プロキシやデータ損失防止デバイスなど)、中央インターネット帯域幅、バックサーキット MPLS 回線、NAT 機能などのネットワーク要素は、負荷が大きいため、非常に高い負荷の下に突然配置されます。それらを使用したビジネス全体。 最終的には、自宅からの作業に適応しているユーザーにとって、パフォーマンスと生産性が低下し、ユーザーの利便性が低くなります。
+VPN コンセントレーター、中央ネットワーク出口装置 (プロキシ、データ損失防止デバイスなど)、中央のインターネット帯域幅、バックサーキット MPLS 回線、NAT 機能などのネットワーク要素は、それらを使用したビジネス全体の負荷に起因して、非常に高い負荷をかけた場所に突然配置されます。 最終的には、自宅からの作業に適応しているユーザーにとって、パフォーマンスと生産性が低下し、ユーザーの利便性が低くなります。
 
 従来、企業ネットワークを介したトラフィックのルーティングによって提供された保護の一部は、ユーザーがアクセスしているクラウドアプリによって提供されます。 この記事のこの手順に達した場合は、Microsoft 365 サービスとデータ用の高度なクラウドセキュリティコントロールのセットを実装しています。 これらのコントロールが配置されているため、リモートユーザーのトラフィックを Office 365 に直接ルーティングする準備ができている場合があります。 引き続き他のアプリケーションへのアクセスに VPN リンクが必要な場合は、分割トンネリングを実装することで、パフォーマンスとユーザーの利便性を大幅に向上させることができます。 Oガントの設定に同意したら、適切に調整されたネットワークチームで、1日以内にこれを実現できます。
 

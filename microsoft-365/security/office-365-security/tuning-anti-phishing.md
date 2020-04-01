@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージがどのように使用されたのかや、今後のフィッシング対策メッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033652"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081210"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Office 365 でフィッシング対策保護を調整する
 
@@ -45,7 +45,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 フィッシングメッセージのヘッダーを調べて、より多くのフィッシングメッセージが送られないようにすることができるかどうかを確認できます。 言い換えると、メッセージヘッダーを調べると、でフィッシングメッセージを許可する責任がある、組織内のすべての設定を識別するのに役立ちます。
 
-具体的には、メッセージヘッダーの**スパム対策**ヘッダーフィールドを調べて、スパムフィルター Verdict (sfv) の値で、スキップされたスパムまたはフィッシングのフィルター処理が表示されることを確認する必要があります。 フィルター処理をスキップするメッセージには、 `SCL:-1`のエントリがあります。これは、サービスによって決定されたスパムまたはフィッシング verdicts を上書きすることによって、このメッセージが許可される設定の1つになります。 メッセージヘッダーと、使用可能なすべてのスパム対策およびフィッシングメッセージヘッダーの完全な一覧を取得する方法の詳細については、「[スパム対策メッセージヘッダー](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-message-headers)」を参照してください。
+具体的には、メッセージヘッダーの**スパム対策**ヘッダーフィールドを調べて、スパムフィルター Verdict (sfv) の値で、スキップされたスパムまたはフィッシングのフィルター処理が表示されることを確認する必要があります。 フィルター処理をスキップするメッセージには、 `SCL:-1`のエントリがあります。これは、サービスによって決定されたスパムまたはフィッシング verdicts を上書きすることによって、このメッセージが許可される設定の1つになります。 メッセージヘッダーおよび使用可能なすべてのスパム対策およびフィッシングメッセージヘッダーの完全な一覧を取得する方法の詳細については、「 [Office 365 のスパム対策メッセージヘッダー](anti-spam-message-headers.md)」を参照してください。
 
 ## <a name="best-practices-to-stay-protected"></a>保護を維持するためのベストプラクティス
 
@@ -61,7 +61,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
   - SPF レコードが、ドメイン内の送信者の電子メールの_すべて_のソースを識別していることを確認します (サードパーティのサービスを忘れないでください)。
 
-  - ハード fail (\-) を使用して、承認されていない送信者が電子メールシステムによって拒否されるようにします。 [スプーフィングインテリジェンス](https://docs.microsoft.com/office365/securitycompliance/learn-about-spoof-intelligence)を使用すると、ドメインを使用している送信者を特定し、SPF レコードに承認されたサードパーティの送信者を含めることができます。
+  - ハード fail (\-) を使用して、承認されていない送信者が電子メールシステムによって拒否されるようにします。 [スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用すると、ドメインを使用している送信者を特定し、SPF レコードに承認されたサードパーティの送信者を含めることができます。
 
   構成手順については、以下を参照してください。
   
@@ -71,8 +71,8 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
   - [DMARC を使用して Office 365 で電子メールを検証する](use-dmarc-to-validate-email.md)
 
-- 可能な限り、自分のドメインのメールを Office 365 に直接配信することをお勧めします。 言い換えると、Office 365 ドメインの MX レコードを Office 365 にポイントします。 Exchange Online Protection (EOP) は、メールが Office 365 に直接配信される場合に、クラウドユーザーに最高の保護を提供することができます。 EOP の前にサードパーティの電子メールの検疫システムを使用する必要がある場合は、[ここに記載](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)されているガイダンスに従っていることを確認してください。
+- 可能な限り、自分のドメインのメールを Office 365 に直接配信することをお勧めします。 言い換えると、Office 365 ドメインの MX レコードを Office 365 にポイントします。 Exchange Online Protection (EOP) は、メールが Office 365 に直接配信される場合に、クラウドユーザーに最高の保護を提供することができます。 EOP の前にサードパーティの電子メールの検疫システムを使用する必要がある場合は、コネクタの拡張フィルターを使用します。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
-- 複数要素認証 (MFA) は、侵害されたアカウントを防止するための最適な方法です。 すべてのユーザーに対して MFA を有効にすることを強くお勧めします。 段階的なアプローチの場合は、すべてのユーザーに対して MFA を有効にする前に、最も機密性の高いユーザー (管理者、役員など) に対して MFA を有効にすることから始めます。 手順については、「[多要素認証をセットアップ](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)する」を参照してください。
+- 複数要素認証 (MFA) は、侵害されたアカウントを防止するための最適な方法です。 すべてのユーザーに対して MFA を有効にすることを強くお勧めします。 段階的なアプローチの場合は、すべてのユーザーに対して MFA を有効にする前に、最も機密性の高いユーザー (管理者、役員など) に対して MFA を有効にすることから始めます。 手順については、「[多要素認証をセットアップ](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)する」を参照してください。
 
 - 外部の受信者へのルールの転送は、多くの場合、攻撃者がデータを抽出するために使用します。 「 [Microsoft セキュリティスコア](../mtp/microsoft-secure-score.md)」の「**メールボックス転送ルールを確認**する」を使用して、外部の受信者に対する転送ルールを見つけて、それを防止します。 詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)する」を参照してください。

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードについて学ぶことができます。
-ms.openlocfilehash: 36183f6b5f664a8d5a971f9e141b0607fa66a0bb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082933"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081438"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
@@ -64,7 +64,7 @@ ms.locfileid: "42082933"
 
 Office 365 のグローバル管理者の役割の詳細については、「 [office 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
 
-セキュリティ & コンプライアンスセンターの役割をユーザーに割り当てる方法については、「[ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)」を参照してください。
+セキュリティ & コンプライアンスセンターの役割をユーザーに割り当てる方法については、「[ユーザーに Office 365 セキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>メールフローダッシュボードの検索先
 
