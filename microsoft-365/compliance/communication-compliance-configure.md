@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029893"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100880"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -34,11 +34,23 @@ ms.locfileid: "43029893"
 
 ## <a name="before-you-begin"></a>はじめに
 
-通信のコンプライアンスを開始する前に、Microsoft 365 のサブスクリプションを確認する必要があります。 通信コンプライアンスポリシーに含まれるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれているか、Microsoft に含まれている必要があります。365 E5 サブスクリプション。
+コミュニケーションの法令遵守を開始する前に、 [Microsoft 365 のサブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 通信コンプライアンスにアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
+
+- Microsoft 365 E5 サブスクリプション (有料または試用版)
+- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンスアドオン
+- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider リスク管理アドオン
+- Microsoft 365 A5 サブスクリプション (有料または試用版)
+- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンスアドオン
+- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Insider リスク管理アドオン
+- Office 365 Enterprise E5 サブスクリプション (有料または試用版)
+- Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced コンプライアンスアドオン
+
+通信コンプライアンスポリシーに含まれているユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
+
+>[!IMPORTANT]
+>Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。
 
 既存の Microsoft 365 Enterprise E5 プランを保有せずに insider リスク管理を試みる場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の Office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
-  
-Microsoft 365 組織の通信コンプライアンスをセットアップして使用するには、次の手順を実行します。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>手順 1 (必須): 通信のコンプライアンスのためのアクセス許可を有効にする
 

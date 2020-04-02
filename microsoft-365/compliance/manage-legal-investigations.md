@@ -1,5 +1,5 @@
 ---
-title: Office 365 で法的調査を管理する
+title: Microsoft 365 で法的調査を管理する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Office 365 のセキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、組織の法的調査を管理します。 E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
-ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Microsoft 365 コンプライアンスセンターの電子情報開示ケースを使用して、組織の法的調査を管理します。 E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
+ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600534"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097200"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Office 365 で法的調査を管理する
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 
 組織には、組織内の特定の役員または他の従業員に関連する訴訟に対応する理由が多数あります。 これにより、電子メール、ドキュメント、インスタントメッセージの会話、ユーザーが毎日の作業タスクで使用したその他のコンテンツの場所について、調査に関する詳細情報をすばやく見つけて保持することができます。 セキュリティ/コンプライアンスセンターの電子情報開示ケースツールを使用すると、このような他の多くの操作を実行できます。
   
@@ -52,9 +52,9 @@ ms.locfileid: "41600534"
 
 Microsoft 365 の高度な電子情報開示ソリューションは、Office 365 の既存の電子情報開示および分析機能に基づいて構築されています。 *Advanced eDiscovery*と呼ばれるこの新しいソリューションは、組織の内部および外部の調査に応答するコンテンツを保持、収集、確認、分析、およびエクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務部門は法的情報保留通知ワークフロー全体を管理して、ケースに関与する保管担当者と通信することもできます。
 
-上級電子情報開示では、Office 365 または Microsoft 365 組織の E5 サブスクリプションが必要です。 または、E3 ライセンスを持つユーザーが高度なコンプライアンスアドオンサブスクリプションを必要とするため、保管担当者として高度な電子情報開示ケースで管理することができます。
+高度な電子情報開示では、Microsoft 365 または Office 365 組織の E5 サブスクリプションが必要です。 ライセンスの詳細については、「 [Advanced eDiscovery の概要](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)」を参照してください。
 
-高度な電子情報開示における組み込みワークフローの概要を次に示します。 詳細については、「[Microsoft 365 の Advanced eDiscovery ソリューションの概要](overview-ediscovery-20.md)」を参照してください。
+高度な電子情報開示における組み込みワークフローの概要を次に示します。 詳細については、「 [Advanced eDiscovery ワークフローを調査する](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow)」を参照してください。
 
 - [ケースを作成](create-new-ediscovery-case.md)して開始する
 

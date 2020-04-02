@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 86a74051b4febbf469449a35cd14620f3e78932c
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288608"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100901"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
 
@@ -43,12 +43,16 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 
 [プレビュー環境] 設定をオンにして、最初の機能を試すことができます。
 
-1. ナビゲーションウィンドウで、[**設定** > の**プレビュー機能**] を選択します。
+1. ナビゲーションウィンドウで、[**設定**] を選択します。
 
-2. [**プレビュー機能を有効にする**] を選択します。 
+2. [ **Microsoft Threat Protection**] を選択します。
+
+
+3.  > [**プレビュー機能の選択]****プレビュー機能を有効に**します。 
 
 3. [**保存**] を選択します。
 
 
 ## <a name="preview-features"></a>プレビュー機能
 このセクションには、お試しになるように、プレビュー版の機能の一覧が更新されます。 
+

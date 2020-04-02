@@ -12,30 +12,32 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4b8bd0f8d540434410d9ebc2365789a669f455e1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634775"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097196"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Insider リスク管理の概要
 
 Insider リスク管理ポリシーを使用して、組織内のリスクの通知に対してアクションを実行する危険性のあるアクティビティおよび管理ツールを特定します。 前提条件を設定して内部のリスク管理ポリシーを構成するには、次の手順を実行します。
 
 >[!IMPORTANT]
->Microsoft 365 insider リスク管理ソリューションは、お客様がユーザーレベルで内部ガバナンスを促進できるようにするためのテナントレベルのオプションを提供します。 テナントレベルの管理者は、組織のメンバーに対してこのソリューションへのアクセスを提供するためのアクセス許可を設定したり、Microsoft 365 コンプライアンスセンターでデータコネクタを設定して、ユーザーレベルの id をサポートするために関連データをインポートすることができます。リスクの高い活動。 お客様は、個人ユーザーに関連する洞察を認識します。雇用に関連する大きなの動作、文字、またはパフォーマンスは、管理者が計算し、組織内の他のユーザーが利用できるようにすることができます。
+>Microsoft 365 insider リスク管理ソリューションは、お客様がユーザーレベルで内部ガバナンスを促進できるようにするためのテナントレベルのオプションを提供します。 テナントレベルの管理者は、組織のメンバーに対してこのソリューションへのアクセスを提供するためのアクセス許可を設定し、Microsoft 365 コンプライアンスセンターでデータコネクタをセットアップして、関連データをインポートし、潜在的なリスクのあるアクティビティのユーザーレベル id をサポートすることができます。 お客様は、個人ユーザーに関連する洞察を認識します。雇用に関連する大きなの動作、文字、またはパフォーマンスは、管理者が計算し、組織内の他のユーザーが利用できるようにすることができます。
 
 組織内でのリスク管理に関して insider リスクポリシーがどのように役立つかの詳細については、「 [Microsoft 365 の「insider リスク管理](insider-risk-management.md)」を参照してください。
 
 ## <a name="before-you-begin"></a>はじめに
 
-Insider のリスク管理を開始する前に、 [Microsoft 365 のサブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)を確認する必要があります。 Insider リスク管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションを所有している必要があります。
+Insider リスク管理を開始する前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 Insider リスク管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 
 - Microsoft 365 E5 サブスクリプション (有料または試用版)
-- Microsoft 365 Enterprise E3 サブスクリプションと[Microsoft E5 コンプライアンスアドオン](https://signup.microsoft.com/signup/?offerid=57806d24-4357-4eff-b0a3-4054ebdf2abe&DL=INFORMATION_PROTECTION_COMPLIANCE&ali=1)
+- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンスアドオン
+- Microsoft 365 A5 サブスクリプション (有料または試用版)
+- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンスアドオン
 
-Insider リスク管理ポリシーに含まれるユーザーは、Microsoft 365 E5 コンプライアンスライセンスを所有しているか、Microsoft 365 E5 サブスクリプションに含まれている必要があります。
+Insider リスク管理ポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
 
 既存の Microsoft 365 Enterprise E5 プランを保有せずに insider リスク管理を試みる場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の Office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
 
@@ -56,7 +58,7 @@ Insider リスク管理ポリシーに含まれるユーザーは、Microsoft 36
 
 ユーザーを insider リスク管理役割グループに追加するには、次の手順を実行します。
 
-1. Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions)組織の管理者アカウントの資格情報を使用してサインインします。
+1. Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions)組織の管理者アカウントの資格情報を使用してサインインします。 "" "" "" "
 
 2. Microsoft Office 365 セキュリティ/コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
 
@@ -87,17 +89,17 @@ Insider リスク管理は、サードパーティのリスク管理および人
 組織の Microsoft 365 HR コネクタを構成する手順については、「 [hr データをインポートするためのコネクタのセットアップ](import-hr-data.md)」トピックを参照してください。 HR コネクタを構成した後、これらの構成手順に戻ります。
 
 >[!IMPORTANT]
->"*新入社員データ盗難*テンプレート" を使用してポリシーを構成する場合は、ポリシーテンプレートの完全な信号検出機能を使用するように HR コネクタを構成する必要があります。 組織に複数の HR コネクタを構成すると、insider リスク管理はすべての人事コネクタから指標を自動的に取得します。
+>「 *Emplo'ee データの盗用を防止*する」テンプレートを使用して p' ライセンスを構成する場合は、ポリシーテンプレートの完全な信号検出機能を使用するように HR コネクタを構成する必要があります。 組織に複数の HR コネクタを構成すると、insider リスク管理はすべての人事コネクタから指標を自動的に取得します。
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>データ損失防止 (DLP) ポリシーを構成する
 
-Insider リスク管理は、不要な関係者への機密情報の意図的または偶発的な公開を特定するのに役立つ DLP ポリシーの使用をサポートしています。 *データリーク*テンプレートで insider リスク管理ポリシーを構成する場合は、ポリシーに特定の DLP ポリシーを割り当てる必要があります。 このポリシーにより、機密情報のアラートインジケーターは、組織内のリスク管理の範囲全体を構成するうえで重要な要素となります。
+Insider リスク担当者が、DLP ポリシーを使用して、不要な関係者への機密情報の意図的または偶発的な公開を識別するのを支援します。 *データリーク*テンプレートで insider リスク管理ポリシーを構成する場合は、ポリシーに特定の DLP ポリシーを割り当てる必要があります。 このポリシーにより、機密情報のアラートインジケーターは、組織内のリスク管理の範囲全体を構成するうえで重要な要素となります。
 
-組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。 DLP ポリシーを構成した後、これらの構成手順に戻ります。
+組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。 DLP ポリシーを構成した後、これらの構成 "" "" "" "" "" "" "" の構成に戻ります。
 
 >[!IMPORTANT]
 >*データリーク*テンプレートを使用してポリシーを構成する場合、ポリシーテンプレートの完全な信号検出機能を使用するには、少なくとも1つの DLP ポリシーを構成する必要があります。 組織に複数の DLP ポリシーを構成する場合は、DLP ポリシーごとに内部者のリスク管理ポリシーを割り当てる必要があります。
-
+""""""""
 ## <a name="step-4-required-configure-insider-risk-settings"></a>手順 4 (必須): insider のリスク設定を構成する
 
 [Insider のリスク設定](insider-risk-management-policies.md#policy-settings)は、ポリシーの作成時に選択したテンプレートに関係なく、すべての内部のリスク管理ポリシーに適用されます。 設定は、すべての [insider リスクの管理] タブの上部にある [ **insider リスク設定**] コントロールを使用して構成します。 これらの設定は、プライバシー、インジケーター、監視ウィンドウ、およびインテリジェントな検出を制御します。

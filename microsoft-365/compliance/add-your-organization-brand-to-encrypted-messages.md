@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 4/1/2020
 search.appverid:
 - MET150
 - MOE150
@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 のグローバル管理者は、組織の暗号化された電子メールメッセージと暗号化ポータルの内容に組織のブランド化を適用することができます。
-ms.openlocfilehash: 23b6cd205c4ae3a0ca08aab2209e0152a3f78b63
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5a3f5426fecd6ce5df6ace5b0080de33fb50e21f
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079981"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106019"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>暗号化されたメッセージに組織のブランドを追加する
 
@@ -32,6 +32,8 @@ Exchange Online または Exchange Online Protection 管理者は、企業ブラ
 - 暗号化メッセージを含む電子メールの導入部のテキスト
 
 - 暗号化メッセージを含む電子メールの免責事項のテキスト
+
+- 組織のプライバシーに関する声明の URL
 
 - OME ポータルに表示されるテキスト
 
@@ -80,6 +82,7 @@ Windows PowerShell を使用して、一度に1つのブランド化テンプレ
 |送信者の名前と電子メールアドレスの横のテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |[メッセージの読み取り] ボタンに表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
 |[メッセージの読み取り] ボタンの下に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|プライバシーに関する声明のリンクの URL|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PrivacyStatementURL "<URL>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
 |暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
 |暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
 |このカスタムテンプレートのワンタイムパスコードで認証を有効または無効にするには|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **例:** <br/>このカスタムテンプレートで1回限りのパスコードを有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> このカスタムテンプレートで1回限りのパスコードを無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
@@ -99,7 +102,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
 
-   For example,
+   以下に例を示します。
 
    ```powershell
    New-OMEConfiguration -Identity "Custom branding template"
@@ -138,7 +141,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
    Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
    ```
 
-   For example,
+   以下に例を示します。
 
    ```powershell
    Remove-OMEConfiguration -Identity "Branding template 1"

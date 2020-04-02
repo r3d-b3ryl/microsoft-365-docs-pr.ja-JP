@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
-ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634975"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105664"
 ---
 # <a name="overview-of-disposition-reviews"></a>廃棄レビューの概要
+
+>*[セキュリティ & コンプライアンスのための Microsoft 365 ライセンスガイダンス](https://aka.ms/ComplianceSD)。*
 
 コンテンツが保存期間の最後に達すると、いくつかの理由から、そのコンテンツを確認して、安全に削除できるかどうかを判断する必要があります (「廃棄済み」)。 たとえば、次のことを行う必要があります。
   
@@ -51,9 +53,6 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
     
 - レビュー担当者は、保留中または完了した処理のいずれかを表示し、その一覧を .csv ファイルとしてエクスポートできます。
 
-> [!NOTE]
-> 廃棄レビューには、Office 365 Enterprise E5 サブスクリプションが必要です。
-  
 廃棄レビューには、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、および Office 365 グループのコンテンツを含めることができます。 これらの場所の廃棄レビューを待機しているコンテンツは、レビュー担当者がコンテンツを完全に削除することを選択した場合にのみ削除されます。
   
 ![セキュリティ/コンプライアンスセンターの [配置] ページ](../media/Retention-Dispositions-v2-page.png)

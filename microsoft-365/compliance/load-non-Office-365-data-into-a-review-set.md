@@ -16,25 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高度な電子情報開示ケースのレビューセットに Office 365 以外のデータをインポートします。
-ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 816519fcaa8dc5172dbb5c369a3ec191585d3647
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072211"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097230"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>レビュー セットに Office 365 以外のデータを読み込む
 
 上級電子情報開示で分析する必要があるすべてのドキュメントが Office 365 にあるわけではありません。 Advanced eDiscovery で Office 365 以外のデータインポート機能を使用すると、Office 365 にないドキュメントをレビューセットにアップロードできます。 この記事では、非 Office 365 ドキュメントを分析のために上級電子情報開示に移行する方法について説明します。
 
->[!Note]
->高度な電子情報開示では、組織の Microsoft 365 または Office 365 E5 サブスクリプション、および Advanced コンプライアンスアドオンサブスクリプションを備えた E3 サブスクリプションが必要です。 その計画がなく、高度な電子情報開示を試行する必要がある場合は、Office 365 Enterprise E5 の試用版にサインアップすることができます。
-
 ## <a name="before-you-begin"></a>はじめに
 
 この記事に記載されている「Office 以外の365をアップロードする」機能を使用するには、次のものが必要です。
 
-- Office に対応していない365コンテンツに関連付ける必要があるすべての保管担当者には、E5 ライセンスが割り当てられているか、または Advanced コンプライアンスアドオンライセンスを備えた E3 ライセンスが必要です。
+- Office 以外の365コンテンツに関連付ける必要があるすべての保管担当者に、適切なライセンスが割り当てられている必要があります。 詳細については、「 [Advanced eDiscovery の概要](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)」を参照してください。
 
 - 既存の高度な電子情報開示ケース。
 
@@ -61,7 +58,7 @@ ms.locfileid: "42072211"
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Office 以外の365コンテンツを上級電子情報開示にアップロードする
 
-1. 電子情報開示マネージャーまたは電子情報開示管理者として、Advanced eDiscovery を開き、Office 以外の365データのアップロード先となるケースを開きます。  
+1. 電子情報開示マネージャーまたは電子情報開示管理者として、Advanced eDiscovery を開いて、Office 以外の365データがアップロードされるケースに進みます。  
 
 2. [**チェックセット**] をクリックし、[Office 以外の365データをアップロードするレビューセット] を選択します。  レビューセットを持っていない場合は、作成できます。 
  
@@ -81,9 +78,9 @@ ms.locfileid: "42072211"
 
    ![Office 以外の365インポート: ファイルのアップロード](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a.  [**ファイルの場所のパス**] ボックスで、アップロードする Office 365 以外のデータを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
+   a. [**ファイルの場所のパス**] ボックスで、アップロードする Office 365 以外のデータを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
 
-   b.  [**クリップボードにコピー** ] をクリックして、ボックスに表示されているコマンドをコピーします。
+   b. [**クリップボードにコピー** ] をクリックして、ボックスに表示されているコマンドをコピーします。
 
 7. Windows コマンドプロンプトを起動し、前の手順でコピーしたコマンドを貼り付け、 **enter**キーを押して、azcopy コマンドを開始します。  コマンドを開始すると、Office 以外の365ファイルは、手順4で準備した Azure ストレージの場所にアップロードされます。
 

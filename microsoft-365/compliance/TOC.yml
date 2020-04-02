@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 使用を開始する
+- name: 作業の開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -495,14 +495,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: ケース データを確認する
           items:
+            - name: レビューセットダッシュボード (プレビュー) を使用する
+              href: advanced-ediscovery-dashboard.md
             - name: レビュー セット内のドキュメントを表示する
               href: view-documents-in-review-set.md
             - name: レビュー セット内のデータをクエリする
               href: review-set-search.md
             - name: レビュー セット内のドキュメントをタグ付けする
               href: tagging-documents.md
-            - name: レビューセットダッシュボード (プレビュー) を使用する
-              href: advanced-ediscovery-dashboard.md
         - name: ケース データを分析する
           href: analyzing-data-in-review-set.md
           items:

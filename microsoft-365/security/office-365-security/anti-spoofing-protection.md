@@ -2,8 +2,8 @@
 title: Office 365 でのスプーフィング対策保護
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5d4b9f0c94a68d457aa59b768444746627dffb9d
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087151"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081366"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -61,7 +61,7 @@ Microsoft のスプーフィング対策テクノロジは、最初に Office 36
 
 上記のメッセージは Microsoft から発信されたものですが、その一方で、ユーザーは今までにフィッシング メッセージを何度も受け取っています。そのメッセージは、リンクをクリックするように誘導して、認証情報を提出させたり、マルウェアをダウンロードさせたり、機密コンテンツを含めてメッセージに返信させたりしようとします。 本物と偽物のパスワード リセットを見分けることが難しいため、多くのユーザーは、こうしたメッセージを無視したり、スパムとして報告したり、間違ったフィッシング詐欺として Microsoft に不要な報告を返したりします。
 
-スプーフィングを阻止するために、電子メールのフィルター処理分野の業界は、電子メール認証のプロトコル ([SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、[DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、[DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) など) を開発しました。 DMARC は、スプーフィングがメッセージの送信者を調べることを防ぎます。 つまり、ユーザーがメール クライアントで見る送信者です (上記の例ではservice.outlook.com、outlook.com、および accountprotection.microsoft.com です)。 さらに、ユーザーは、ドメインが SPF または DKIM を通過したことも確認できます。これは、ドメインが認証されたため、スプーフィングされていないことを意味します。 詳細な説明については、この記事で後述するセクション「*電子メール認証がスプーフィングの阻止には不十分なことがある理由*」を参照してください。
+スプーフィングを阻止するために、電子メールのフィルター処理分野の業界は、電子メール認証のプロトコル ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、[DKIM](use-dkim-to-validate-outbound-email.md)、[DMARC](use-dmarc-to-validate-email.md) など) を開発しました。 DMARC は、スプーフィングがメッセージの送信者を調べることを防ぎます。 つまり、ユーザーがメール クライアントで見る送信者です (上記の例ではservice.outlook.com、outlook.com、および accountprotection.microsoft.com です)。 さらに、ユーザーは、ドメインが SPF または DKIM を通過したことも確認できます。これは、ドメインが認証されたため、スプーフィングされていないことを意味します。 詳細な説明については、この記事で後述するセクション「*電子メール認証がスプーフィングの阻止には不十分なことがある理由*」を参照してください。
 
 ただし、電子メール認証レコードはオプションであり、必須ではないという問題があります。 そのため、microsoft.com や skype.com などの強力な認証ポリシーを公開しているドメインはスプーフィングから保護されますが、公開している認証ポリシーが弱いドメインや認証ポリシーがまったく存在しないドメインはスプーフィングの対象になります。 2018 年 3 月の時点で、Fortune 500 の企業のうち強力な電子メール認証ポリシーを公開しているドメインは 9% のみです。 残りの 91% はフィッシャーによってスプーフィングされる可能性があり、その他のポリシーを使用する電子メール フィルターで検出されないと、エンド ユーザーとデバイスに配信されてしまいます。
 
@@ -89,10 +89,9 @@ Microsoft の一般発表については、「[大量のフィッシング詐欺
 
 SPF、DKIM、および DMARC は、いずれも単独で役立つものですが、メッセージに明示的な認証レコードが存在していないときには、認証の状態を十分に伝達しません。 そのため、Microsoft は、複数のシグナルを 1 つの値に結合する複合認証 (略称: compauth) というアルゴリズムを開発しました。 Office 365 のユーザーは、メッセージのヘッダーに含まれる *Authentication-Results* ヘッダーに compauth の値がスタンプされます。
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**CompAuth の結果**|**説明**|
@@ -632,7 +631,7 @@ Microsoft のスプーフィング対策テクノロジは、最初に Office 36
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>スパムまたは非スパムのメッセージについて、どのように Microsoft に報告すればよいですか
 
-[Outlook 用の迷惑メール報告アドイン](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できます。このアドインをインストールしていない場合は、[スパム、非スパム、およびフィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)こともできます。
+「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>ドメイン管理者ですが、把握できていない送信者がいます
 
@@ -650,9 +649,11 @@ Microsoft のスプーフィング対策テクノロジは、最初に Office 36
 
 ほとんどすべての大規模電子メール レシーバーが、従来型の SPF、DKIM、および DMARC を実装してます。 一部のレシーバーは、そうした標準のものよりも厳密な別のチェックを実施していますが、認証されていない電子メールをブロックしてスプーフィングとして扱う Office 365 に匹敵するものはわずかしかありません。 ただし、この業界のほとんどが、特にフィッシング詐欺の問題を理由に、この種の電子メールに対する厳しさを増しています。
 
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>スプーフィング対策を有効にしていても、"SPF Hard Fail" に対して高度な迷惑メール フィルターのオプションを有効にする必要がありますか
+### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>スプーフィング対策を有効にした場合でも、高度なスパム フィルター (ASF) 設定「SPF レコード: Hard Fail」(_MarkAsSpamSpfRecordHardFail_) を有効にする必要がありますか?
 
-いいえ。このオプションは不要になりました。スプーフィング対策機能では、SPF hard fail だけでなく、それよりも広範な条件のセットが考慮されます。 スプーフィング対策を有効にしているときに、SPF Hard Fail オプションも有効にすると、誤検出が多くなく可能性があります。 この機能は無効にすることをお勧めします。この機能によって、追加で捕捉されるスパムやフィッシングはほとんどなく、多くの場合に誤検出が発生します。
+いいえ。このオプションは不要になりました。スプーフィング対策機能では、SPF hard fail だけでなく、それよりも広範な条件のセットが考慮されます。 スプーフィング対策を有効にしているときに、**SPF レコード: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) も有効にすると、誤検出が多くなる可能性があります。
+
+この機能は無効にすることをお勧めします。この機能によって、追加で捕捉されるスパムやフィッシングはほとんどなく、多くの場合に誤検出が発生します。 詳細については、「[Office 365 の高度なスパム フィルター (ASF) の設定](advanced-spam-filtering-asf-options.md)」を参照してください。
 
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>センダー リライティング スキーム (SRS) は転送された電子メールの問題修正に役立ちますか
 
