@@ -255,12 +255,14 @@
                 - name: メッセージとファイルを Microsoft に報告する
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                   items:
-                    - name: 管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
+                    - name: 管理者の送信を使用する
                       href: ./office-365-security/admin-submission.md
                     - name: レポート メッセージ アドインを有効にする
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: 迷惑メール報告アドインのインストールと使用
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+                    - name: Outlook on the web で迷惑メールとフィッシング詐欺を報告する
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: メッセージを手動で Microsoft に送信する
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: マルウェアおよびマルウェアでないファイルを Microsoft に提出する
@@ -343,8 +345,6 @@
             - name: EOP とは何ですか?
               href: ./office-365-security/what-is-eop.md
               items:
-                - name: IPv6 経由の匿名受信電子メール メッセージのサポート
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: EOP スタンドアロンで迷惑メールをブロックする
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: Exchange Online Protection を使用して社内のメールボックスを保護する
@@ -443,6 +443,8 @@
           items:
             - name: セキュリティ/コンプライアンス センター のメッセージ追跡
               href: ./office-365-security/message-trace-scc.md
+            - name: IPv6 経由の匿名受信メールのサポートを追加する
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
               href: ./office-365-security/view-email-security-reports.md
             - name: セキュリティ/コンプライアンス センター のメール フロー インサイト

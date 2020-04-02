@@ -1,78 +1,78 @@
 - name: ビジネス サブスクリプションを管理する
   href: index.yml
-  expanded: true
+- name: Microsoft 365 Admin ヘルプ センター
+  href: ../admin/admin-home.md
+- name: 試用する/購入する
   items:
-    - name: 試用する/購入する
-      items:
-        - name: Office 365 試用版にサインアップする
-          href: sign-up-for-office-365-trial.md
-        - name: Microsoft 365 の試用または購入
-          href: try-or-buy-microsoft-365.md
-        - name: 試用期間を延長する
-          href: extend-your-trial.md
-        - name: 別のサブスクリプションを購入する
-          href: buy-another-subscription.md
-        - name: アドオンを購入または編集する
-          href: buy-or-edit-an-add-on.md
-        - name: 記憶領域を追加する
-          href: add-storage-space.md
-    - name: サブスクリプションを管理する
-      items:
-        - name: サブスクリプションをアップグレードする
-          href: subscriptions/upgrade-to-different-plan.md
-        - name: サブスクリプションを更新する
-          href: subscriptions/renew-your-subscription.md
-        - name: サブスクリプションを再度有効にする
-          href: subscriptions/reactivate-your-subscription.md
-        - name: サブスクリプションをキャンセルする
-          href: subscriptions/cancel-your-subscription.md
-        - name: サブスクリプションの有効期限が切れた場合
-          href: subscriptions/what-if-my-subscription-expires.md
-        - name: サードパーティ製のアプリを管理する
-          href: manage-saas-apps.md
-        - name: セルフサービスによる購入を管理する (ユーザー)
-          href: subscriptions/manage-self-service-purchases-users.md
-        - name: セルフサービスによる購入を管理する (管理者)
-          href: subscriptions/manage-self-service-purchases-admins.md
-    - name: ライセンスを管理する
-      items:
-        - name: サブスクリプション ライセンスを管理する
-          href: licenses/buy-licenses.md
-        - name: ユーザーにライセンスを割り当てる
-          href: ../admin/manage/assign-licenses-to-users.md
-        - name: ユーザーからライセンスの割り当てを解除する
-          href: ../admin/manage/remove-licenses-from-users.md
-        - name: サブスクリプションとライセンスを理解する
-          href: licenses/subscriptions-and-licenses.md
-    - name: 請求と支払い
-      items:
-        - name: 請求書を表示する
-          href: billing-and-payments/view-your-bill-or-invoice.md
-        - name: 請求書の内容を理解する
-          href: billing-and-payments/understand-your-invoice.md
-        - name: 支払方法を管理する
-          href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
-        - name: サブスクリプションを支払う
-          href: billing-and-payments/pay-for-your-subscription.md
-        - name: 支払い方法を変更する
-          href: billing-and-payments/change-payment-method.md
-        - name: 支払い頻度の変更
-          href: billing-and-payments/change-payment-frequency.md
-        - name: 課金プロフィールを管理する
-          href: billing-and-payments/manage-billing-profiles.md
-        - name: 請求先住所を変更する
-          href: billing-and-payments/change-your-billing-addresses.md
-        - name: 支払サービス ディレクティブ 2 および強力な顧客認証
-          href: billing-and-payments/psd2.md
-    - name: 請求アカウント
-      items:
-        - name: 請求アカウントを管理する
-          href: manage-billing-accounts.md
-        - name: テナントと自分の請求アカウントを関連付ける
-          href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-    - name: 自分のパートナーとの関係を管理します。
-      href: manage-partners.md
-    - name: アカウントの使用を停止する
-      href: close-your-account.md
-    - name: サポートに連絡する
-      href: ../admin/contact-support-for-business-products.md
+    - name: Office 365 試用版にサインアップする
+      href: sign-up-for-office-365-trial.md
+    - name: Microsoft 365 の試用または購入
+      href: try-or-buy-microsoft-365.md
+    - name: 試用期間を延長する
+      href: extend-your-trial.md
+    - name: 別のサブスクリプションを購入する
+      href: buy-another-subscription.md
+    - name: アドオンを購入または編集する
+      href: buy-or-edit-an-add-on.md
+    - name: 記憶領域を追加する
+      href: add-storage-space.md
+- name: サブスクリプションを管理する
+  items:
+    - name: サブスクリプションをアップグレードする
+      href: subscriptions/upgrade-to-different-plan.md
+    - name: サブスクリプションを更新する
+      href: subscriptions/renew-your-subscription.md
+    - name: サブスクリプションを再度有効にする
+      href: subscriptions/reactivate-your-subscription.md
+    - name: サブスクリプションをキャンセルする
+      href: subscriptions/cancel-your-subscription.md
+    - name: サブスクリプションの有効期限が切れた場合
+      href: subscriptions/what-if-my-subscription-expires.md
+    - name: サードパーティ製のアプリを管理する
+      href: manage-saas-apps.md
+    - name: セルフサービスによる購入を管理する (ユーザー)
+      href: subscriptions/manage-self-service-purchases-users.md
+    - name: セルフサービスによる購入を管理する (管理者)
+      href: subscriptions/manage-self-service-purchases-admins.md
+- name: ライセンスを管理する
+  items:
+    - name: サブスクリプション ライセンスを管理する
+      href: licenses/buy-licenses.md
+    - name: ユーザーにライセンスを割り当てる
+      href: ../admin/manage/assign-licenses-to-users.md
+    - name: ユーザーからライセンスの割り当てを解除する
+      href: ../admin/manage/remove-licenses-from-users.md
+    - name: サブスクリプションとライセンスを理解する
+      href: licenses/subscriptions-and-licenses.md
+- name: 請求と支払い
+  items:
+    - name: 請求書を表示する
+      href: billing-and-payments/view-your-bill-or-invoice.md
+    - name: 請求書の内容を理解する
+      href: billing-and-payments/understand-your-invoice.md
+    - name: 支払方法を管理する
+      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+    - name: サブスクリプションを支払う
+      href: billing-and-payments/pay-for-your-subscription.md
+    - name: 支払い方法を変更する
+      href: billing-and-payments/change-payment-method.md
+    - name: 支払い頻度の変更
+      href: billing-and-payments/change-payment-frequency.md
+    - name: 課金プロフィールを管理する
+      href: billing-and-payments/manage-billing-profiles.md
+    - name: 請求先住所を変更する
+      href: billing-and-payments/change-your-billing-addresses.md
+    - name: 支払サービス ディレクティブ 2 および強力な顧客認証
+      href: billing-and-payments/psd2.md
+- name: 請求アカウント
+  items:
+    - name: 請求アカウントを管理する
+      href: manage-billing-accounts.md
+    - name: テナントと自分の請求アカウントを関連付ける
+      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+- name: 自分のパートナーとの関係を管理します。
+  href: manage-partners.md
+- name: アカウントの使用を停止する
+  href: close-your-account.md
+- name: サポートに連絡する
+  href: ../admin/contact-support-for-business-products.md
