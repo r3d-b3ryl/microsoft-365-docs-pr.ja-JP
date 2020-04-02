@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Microsoft 365 管理センターで支払い方法を管理する方法について説明します。
-ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952008"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106050"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>お支払い方法を追加、更新、削除する
 
@@ -234,7 +234,7 @@ ms.locfileid: "42952008"
   
 4. クレジットカード情報 (クレジットカードの名前または銀行口座、請求先住所) を更新します。 電話番号または有効期限) 必要に応じて、[**送信**] を選択します。
 
-5. 確認メッセージが表示されます。 表示されない場合は、「[クレジット カードのトラブルシューティング](#troubleshooting-credit-cards-and-bank-accounts)」を参照してください。
+5. 確認メッセージが表示されます。 含まれていない場合は、この記事の後半の「クレジットカードと銀行口座のトラブルシューティング」を参照してください。
 
     ![確認メッセージ: 「お支払い方法が正常に更新されました。」](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -262,7 +262,7 @@ ms.locfileid: "42952008"
   
 4. クレジットカード情報 (クレジットカードの名前または銀行口座、請求先住所) を更新します。 電話番号または有効期限) 必要に応じて、[**送信**] を選択します。
 
-5. 確認メッセージが表示されます。 表示されない場合は、「[クレジット カードのトラブルシューティング](#troubleshooting-credit-cards-and-bank-accounts)」を参照してください。
+5. 確認メッセージが表示されます。 含まれていない場合は、この記事の後半の「クレジットカードと銀行口座のトラブルシューティング」を参照してください。
 
     ![確認メッセージ: 「お支払い方法が正常に更新されました。」](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 

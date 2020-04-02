@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 地域/ロケール別にリストされている電話番号、サービス リクエストのオンライン送信、または Microsoft Store にアクセスして、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
-ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352948"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106062"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ
 
@@ -95,7 +95,7 @@ Office 365 または Microsoft 365 Business サポートの電話番号が上記
 
 ### <a name="community-and-self-service-support-options"></a>コミュニティおよびセルフサービス サポート
 
-セルフサービス サポートは 21Vianet が運用している Office 365 のすべてのお客様が利用できます。[Office 365 コミュニティ](https://go.microsoft.com/fwlink/p/?linkid=842838)では、トラブルシューティング用のツールやビデオ、ヘルプ用の記事やビデオ、およびフォーラムや Wiki などが利用できます。セルフヘルプ リソースの詳細については、「[21Vianet が運用している Office 365 の詳細](/services-in-china/services-in-china.md)」を参照してください。
+セルフサービス サポートは 21Vianet が運用している Office 365 のすべてのお客様が利用できます。[Office 365 コミュニティ](https://go.microsoft.com/fwlink/p/?linkid=842838)では、トラブルシューティング用のツールやビデオ、ヘルプ用の記事やビデオ、およびフォーラムや Wiki などが利用できます。セルフヘルプ リソースの詳細については、「[21Vianet が運用している Office 365 の詳細](services-in-china/services-in-china.md)」を参照してください。
 
 ### <a name="pre-sales-support"></a>販売前サポート
 

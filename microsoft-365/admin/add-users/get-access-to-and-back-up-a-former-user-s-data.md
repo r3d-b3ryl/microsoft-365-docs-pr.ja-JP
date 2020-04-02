@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 従業員が辞職したときに、そのファイルやメールを保存する方法について説明します。
-ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
-ms.translationtype: HT
+ms.openlocfilehash: 2b608b51060e746d0b69fd887882b51735578496
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353198"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105761"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>元ユーザーのデータにアクセスしてバックアップを作成する
 
@@ -100,23 +100,27 @@ ms.locfileid: "42353198"
 
 ::: moniker range="o365-worldwide"
 
-1. 全体管理者または SharePoint 管理者として<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にサインインします。 
+1. グローバル管理者または SharePoint 管理者として、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にサインインします。 
+
+    管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 全体管理者または SharePoint 管理者として<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にサインインします。
+1. グローバル管理者または SharePoint 管理者として、<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にサインインします。
+
+    管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 全体管理者または SharePoint 管理者として<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にサインインします。
+1. グローバル管理者または SharePoint 管理者として、<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にサインインします。
+
+    管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
 
 ::: moniker-end
-
-   管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
 
 2. 左側のウィンドウで、[**管理センター**] \> [**SharePoint**] の順に選択します。 (場合によっては、管理センターのリストを表示するために **[すべて表示]** を選択する必要があります。)
 
@@ -162,7 +166,7 @@ ms.locfileid: "42353198"
   
     ![一番上のフォルダーが選択され、[サブフォルダーを含む] がオンになっている [Outlook データ ファイルのエクスポート] ダイアログ ボックス](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. [**次へ**] を選択します。
+7. **[次へ]** を選択します。
     
 8. [**参照**] を選択して、Outlook データ ファイル (.pst) の保存場所を選択します。 *ファイル名*を入力して [**OK**] を選択し、続行します。 
     
@@ -181,6 +185,10 @@ Outlook により、エクスポートがすぐに開始されます。ただし
     
 Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)」方法を参照してください。 
   
+  
+  > [!NOTE]
+  > 既定では、メールは12か月の間オフラインで利用できます。 必要に応じて、「[オフラインで利用可能なデータを増やす](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized)方法」を参照してください。
+ 
 ## <a name="give-another-user-access-to-a-former-users-email"></a>元のユーザーのメールへのアクセス権を別のユーザーに付与する 
 
 元従業員のメール メッセージ、予定表、タスク、連絡先に他の従業員がアクセスできるようにするには、情報を他の従業員の Outlook 受信トレイにインポートします。
@@ -210,6 +218,9 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 8. アイテムのインポートに関するオプションを設定します。 通常、既定の設定を変更する必要はありません。
     
 9. [**完了**] を選択します。
+
+> [!NOTE]
+> 既存のユーザーの OneDrive および電子メールデータにアクセスする場合、手順は変わりません。
     
 > [!TIP]
 > Outlook データ ファイル (.pst) からいくつかのアイテムのみをインポートまたは復元する場合は、Outlook データ ファイルを開くことができます。 次に、ナビゲーション ウィンドウで、Outlook データ ファイル フォルダーから既存の Outlook フォルダーにアイテムをドラッグします。 
@@ -224,4 +235,3 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
   
 [OneDrive の保持と削除](/onedrive/retention-and-deletion)
   
-

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Microsoft パワーアプリ、Microsoft Flow、および財務の Dynamics 365 など、Office 365 セルフサービスサインアップおよび使用可能なセルフサービスプログラムについて説明します。
 ms.custom: okr_SMB
-ms.openlocfilehash: 24a300540237dc1cb7810ca712ead5ef7d4bea83
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: fa7e6dcb4c40a7a41599b7c1a81fa596868d8e2d
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058895"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106114"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
@@ -56,7 +56,6 @@ ms.locfileid: "43058895"
 |**Power BI** <br/> |Power BI を使用すると、ユーザーはデータを表示したり、探索を共有したり、直観的な新しい方法で共同作業したりできます。 <br/> 組織が既に Office 365 に加入している場合は、さらに「Power BI Pro ユーザーの試用版」のライセンスが表示されることがあります。これは、ユーザーに限定され、高度な機能へのアクセスを無料で提供します。  <br/> |[組織内の Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**RMS (Rights Management Services)** <br/> |個人用の RMS は、Azure Rights Management (Azure RMS) で保護された機密性の高いファイルが送信されているが、IT 部門が Azure Rights Management (Azure RMS)、Active Directory Rights Management Services (AD RMS) のいずれも実装していない組織に所属するユーザーのための無料のセルフサービス サブスクリプションです。  <br/> |[個人用の RMS と Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management ポータル](https://portal.azure.com/) したがって、お客様は、特定の権利保護されたドキュメントを開くことができるかどうかをチェックできます。  <br/> |
 |**Microsoft Power Apps** <br/> |PowerApps では、管理者が作成したアプリ、または他のユーザーが作成して共有したアプリを実行することで組織データを管理することができます。アプリはスマートフォンなどのモバイル デバイスで動作します。または Dynamics 365 を開くことによって、ブラウザで実行することもできます。無限の多様性を備えるアプリを作成することができます。すべて、C# などのプログラミング言語は必要ありません。  <br/> |[PowerApps のセルフサービス サインアップ](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
-|**Microsoft Flow** <br/> |Microsoft Flow は、お気に入りのアプリとサービス間のワークフローの自動化に役立つ製品です。ファイルの同期、通知の受信、データ収集などを行うことができます。  <br/> |[Microsoft Flow の登録とサインイン](https://go.microsoft.com/fwlink/p/?linkid=841468) <br/> |[Microsoft Flow](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Dynamics 365 for Financials** <br/> |中小企業向けの完全なビジネス ソリューションおよび財務管理ソリューションを提供します。Dynamics 365 for Financials を使用することで、使用開始の 1 日目から注文、販売、請求書やレポートの作成が容易になります。  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**Microsoft Dynamics 365 for Operations** <br/> |ビジネスのスピードを加速できます。Dynamics 365 for Operations の完全な ERP ツールは、グローバルなスケーラビリティとデジタル インテリジェンスを提供し、企業のペースに応じた成長をサポートします。  <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
 |**Microsoft AppSource** <br/> |Microsoft AppSource は、Microsoft クラウド プラットフォーム上に構築された SaaS (サービスとしてのソフトウェア) のビジネス アプリを対象としています。AppSource では、Azure、Dynamics 365、Office 365、Power BI などの Microsoft 製品の機能を拡張する数百のアプリ、アドオン、コンテンツ パックを扱っています。  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
@@ -65,4 +64,5 @@ ms.locfileid: "43058895"
 |**Microsoft ボリュームライセンスサービスセンター** <br/> |Microsoft ボリュームライセンスサービスセンターには、Enterprise で購入したライセンス、選択、教育 (キャンパスまたは学校)、オープン価値、オープンライセンス、ISV ロイヤリティアグリーメントが表示されます。  <br/> |[VLSC のトレーニングとリソース](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[ボリュームライセンスサービスセンター](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft Education Edition** <br/> |学習目的のプラットフォームとして Minecraft を使用することで、教師は各学生のモチベーションやインスピレーションを奮起させ、学習意欲を高めることができます。教師コミュニティに参加して、Minecraft の使用方法を学び、学生の潜在能力を開花させてください。  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |組織全体でビデオをアップロードおよび共有して、コミュニケーション力、共同作業、学習の向上を実現します。  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
+|**Power Automate** <br/> |Power オートメーションは、ファイルを同期したり、通知を取得したり、データを収集したりするための、お気に入りのアプリとサービス間の自動化されたワークフローを設定するのに役立つ製品です。  <br/> |[電源自動化のためのサインアップとサインイン](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**パワー仮想エージェント** <br/> |パワー仮想エージェントは、データ科学者や開発者を必要とせずに、ガイド付きのコーディングされていないグラフィカルインターフェイスを使用して、チームが強力なボットを簡単に作成できるようにします。 パワー仮想エージェントは、現在業界での bot が構築する主な問題の多くを解決します。 該当分野の専門家と bot を構築する開発チームのギャップを排除し、teams を認識し、チーム間で問題を認識して、それに対処するために bot の待機時間を長くします。  <br/> |[ライセンスとアクセスの詳細](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[パワー仮想エージェントにサインアップする](https://aka.ms/TryPVA) <br/> |

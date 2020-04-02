@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
-ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42230070"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106186"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -36,6 +35,7 @@ ms.locfileid: "42230070"
 
 ## <a name="januaryfebruary-2020"></a>2020年1月/年2月
 
+- [Office 365 ATP のキャンペーンビューの一般的な利用可能性](campaigns.md)
 - セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索してフィルター処理できるようにするための[脅威エクスプローラー](threat-explorer.md)の機能拡張。
     - 配信場所と特別なアクション
     - 方向性 (受信、送信、または組織内)
