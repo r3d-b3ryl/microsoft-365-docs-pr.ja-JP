@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 または Microsoft 組織でレコード管理戦略を実装するには、コンテンツをレコードとして宣言する保持ラベルを使用します。 次に、保持レコードラベルを公開または自動適用します。
-ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42586729"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106145"
 ---
 # <a name="overview-of-records"></a>レコードの概要
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 Microsoft 365 でレコードを管理することで、組織は企業のポリシー、法的および規制上の義務を順守し、リスクおよび法的責任を軽減できます。
 
@@ -79,10 +81,6 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
    ![[このラベルを使用して、コンテンツをレコードに分類する] チェックボックスをクリックします](../media/recordversioning6.png)
 
 3. 保持ラベルを SharePoint サイトおよび/または OneDrive アカウントに[公開](labels.md#how-retention-labels-work-with-retention-label-policies)または[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
-
-> [!NOTE]
-> [保持ラベル](labels.md)を使用してアイテムをレコードとして宣言するには、この場所でコンテンツを編集する権限を持つユーザーごとに Office 365 Enterprise E5 ライセンス、または同等のライセンスが必要です。 読み取り専用アクセス権を持つユーザーは、ライセンスを必要としません。
-
 
 ### <a name="applying-a-retention-label-to-content"></a>コンテンツに保持ラベルを適用する
 

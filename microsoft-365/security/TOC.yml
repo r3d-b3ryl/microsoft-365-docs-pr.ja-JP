@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: タイム ゾーンを設定する
                   href: mtp/mtp-time-zone.md
+            - name: フィードバックの提供
+              href: mtp/feedback.md
             - name: ServiceNow を介してチケットを管理する
               href: ./mtp/tickets.md
     - name: Office 365 セキュリティ

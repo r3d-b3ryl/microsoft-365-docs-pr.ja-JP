@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザーのファイルと設定を移行する方法について説明します。
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085292"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113543"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>手順 4: ユーザーのファイルと設定の移行
 
@@ -49,7 +49,7 @@ ms.locfileid: "42085292"
 
 これが組織の選択肢の 1 つになるかどうかは、計画している移行の規模によって決まります。明らかなことは、ユーザーと直接作業して、そのニーズを理解し、新しい PC や更新された PC にファイルをコピーするための時間と物には限度があることです。
 
-手動による移行を選択する場合は、そのためのタスクが Windows 7 のサポートが終了する 2020 年 1 月までに完了するかどうかを判断する必要があります。その確信がない場合は、次に示す自動化オプションの 1 つを調べるか、支援のための増員を求めてください。
+手動で移行する場合は、次のいずれかの自動オプションを使用するか、他のユーザーに支援を依頼します。
 
 ## <a name="automated-migration-using-usmt"></a>USMT を使用した移行の自動化 
 
@@ -89,8 +89,8 @@ Windows 10 には、標準インストールの一部として多数の便利な
 
 ## <a name="next-step"></a>次の手順
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[手順 5: セキュリティとコンプライアンスに関する考慮事項](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[手順 5: セキュリティとコンプライアンスに関する考慮事項](https://aka.ms/mdd5)
 
 ## <a name="previous-step"></a>前の手順
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[手順 3: Office および LOB アプリの配信](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[手順 3: Office および LOB アプリの配信](https://aka.ms/mdd3)

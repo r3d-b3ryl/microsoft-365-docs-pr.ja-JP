@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634425"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105644"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。 
 
@@ -33,11 +35,7 @@ ms.locfileid: "42634425"
 
 ## <a name="accessing-file-plan-manager"></a>ファイル計画マネージャーへのアクセス
 
-ファイル計画マネージャーにアクセスするには次の 2 つの要件があります。
-
-- Office 365 Enterprise E5 サブスクリプション。
-
-- 次のいずれかのセキュリティおよびコンプライアンス センターの役割がユーザーに割り当てられている状態。
+ファイル計画マネージャーにアクセスするには、次のいずれかの管理者役割が必要です。
     
     - 保持マネージャー
     

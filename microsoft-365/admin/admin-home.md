@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Microsoft 365 管理者が利用できるリソースについて説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: b087007d99c16f06cfdacaf8021e32a9566da5d5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046917"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105695"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 Admin ヘルプ センター
 
@@ -41,11 +41,11 @@ ms.locfileid: "43046917"
                         <h3>Office 365 から Microsoft 365 へ</h3>
                         <p>Microsoft では、Office 365 と Microsoft 365 のサブスクリプション名の一部を変更することになりました。 お客様に操作していただくことは何もありません。 サービス、アプリ、機能、そしてサブスクリプションの料金も、今までと変わりません。 サブスクリプション名は、Microsoft 365 管理センターで自動的に更新され、請求明細書は 2020 年 4 月 21 日以降に更新されます。</p>
                         <ul>
-                            <li><p>Office 365 Business Essentials から Microsoft 365 Business Basic へ</p></li>
-                            <li><p>Office 365 Business Premium から Microsoft 365 Business Standard へ</p></li>
-                            <li><p>Microsoft 365 Business から Microsoft 365 Business Premium へ</p></li>
-                            <li><p>Office 365 Business から Microsoft 365 Apps for business へ</p></li>
-                            <li><p>Office 365 ProPlus は Microsoft 365 Apps for enterprise へ</p></li>
+                            <li><p><b>Office 365 Business Essentials</b> から <b>Microsoft 365 Business Basic</b> になりました。</p></li>
+                            <li><p><b>Office 365 Business Premium</b> から <b>Microsoft 365 Business Standard</b> になりました。</p></li>
+                            <li><p><b>Microsoft 365 Business</b> から <b>Microsoft 365 Business Premium</b> になりました。</p></li>
+                            <li><p><b>Office 365 Business</b> から <b>Microsoft 365 Apps for business</b> になりました。</p></li>
+                            <li><p><b>Office 365 ProPlus</b> から <b>Microsoft 365 Apps for enterprise</b> になりました。</p></li>
                         </ul>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">詳細情報</a></p>
                     </div>
@@ -149,7 +149,7 @@ ms.locfileid: "43046917"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/microsoft-365/#pivot=home&panel=home-all">
+        <a href="https://docs.microsoft.com/microsoft-365">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

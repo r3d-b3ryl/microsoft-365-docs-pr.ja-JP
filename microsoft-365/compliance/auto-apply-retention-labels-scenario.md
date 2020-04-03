@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: このソリューション シナリオは、Office 365 保持ラベルを使用して SharePoint Online に保存されている製品関連ドキュメントのライフサイクルを管理する方法を示します。 これは、ドキュメントを使用してコンテンツを分類し、特に Office 365 の保持ラベルを自動適用し、イベント ベースの保持を設定することによって行われます。
-ms.openlocfilehash: aa73feecbfaa830b2297a5c64f653c4da4d4b325
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079497"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106039"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 この記事では、Office 365 保持ラベルを使用して、特にラベルを自動適用してイベント ベースの保持を構成することにより、SharePoint Online に保存されている製品関連ドキュメントのライフサイクルを管理する方法について説明します。 自動適用機能は、SharePoint メタデータを使用してドキュメント分類を活用します。 この記事のシナリオは製品関連のドキュメントに基づいていますが、他のシナリオにも同じ概念を使用できます。 たとえば、石油およびガス産業では、石油基地、坑井検層、生産ライセンスなどの物理的資産に関連するドキュメントのライフサイクルを管理できます。 金融サービス業界では、銀行口座、住宅ローン、または保険契約に関連するドキュメントを管理できます。 公的機関では、建設許可または税務フォームに関連する文書を管理できます。
 
