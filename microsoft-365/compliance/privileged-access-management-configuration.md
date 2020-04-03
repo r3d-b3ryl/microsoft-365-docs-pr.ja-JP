@@ -17,19 +17,36 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322530"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115993"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の概要
 
->[!IMPORTANT]
->このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。
+このトピックでは、Office 365 組織で特権アクセス管理を有効にして構成する手順を説明します。 Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。
 
-このトピックでは、Office 365 組織で特権アクセス管理を有効にして構成する手順を説明します。 Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。 
+## <a name="before-you-begin"></a>はじめに
+
+特権アクセス管理を使い始める前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 特権アクセス管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
+
+- Microsoft 365 E5 サブスクリプション (有料または試用版)
+- Microsoft 365 E3 サブスクリプション (または Office 365 E3 サブスクリプション + Enterprise Mobility and Security E3 サブスクリプション) + Microsoft 365 E5 コンプライアンスアドオン
+- Microsoft 365、Office 365、Exchange、SharePoint、または OneDrive for Business のサブスクリプション + Microsoft 365 E5 Insider リスク管理アドオン  
+- Microsoft 365 A5 サブスクリプション (有料または試用版)
+- Microsoft 365 A3 サブスクリプション (または Office 365 A3 サブスクリプション + Enterprise Mobility and Security A3 サブスクリプション) + Microsoft A5 コンプライアンスアドオン
+- 任意の Microsoft 365、Office 365、Exchange、SharePoint、または OneDrive for エデュケーションサブスクリプション + Microsoft 365 A5 Insider リスク管理アドオン
+- Office 365 Enterprise E5 サブスクリプション (有料または試用版)
+- Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced コンプライアンスアドオン (新しいサブスクリプションでは使用できなくなりました)。メモを参照してください。
+
+特権アクセス管理要求を送信および応答するユーザーには、上記のいずれかのライセンスが割り当てられている必要があります。
+
+>[!IMPORTANT]
+>Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。
+
+既存の Microsoft 365 Enterprise E5 プランを持っておらず、特権アクセス管理を実行する場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の Office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
 
 ## <a name="enable-and-configure-privileged-access-management"></a>特権アクセス管理を有効にして構成する
 
@@ -103,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 ```
 
 >[!NOTE]
->システムアカウント機能を使用して、組織内の特定のオートメーションが特権アクセスに依存せずに機能できるようにすることができます。ただし、このような除外は例外的に行うことをお勧めします。普段は。
+>システムアカウント機能を使用して、組織内の特定のオートメーションが特権アクセスに依存せずに機能できるようにすることができます。ただし、そのような除外を定期的に行うことをお勧めします。
 
 <a name="step3"> </a>
 

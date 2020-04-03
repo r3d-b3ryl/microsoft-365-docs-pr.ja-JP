@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Office 365 for Business、Microsoft 365 試用版 または有料版サブスクリプションをキャンセルする方法について説明します。
-ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
+ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415652"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117946"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -94,13 +94,14 @@ ms.locfileid: "42415652"
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合に想定される動作
   
-- **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。 
-    
+- **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。
+
 - **ユーザーアクセス**ユーザーは、OneDrive for business などのサービスを使用したり、チームサイトの電子メールやドキュメントなどの顧客データにアクセスしたりすることはできません。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
-    
- **重要** 一般的な無効期間が終了する前にサブスクリプション データを削除する場合は、プロビジョニングの優先解除を依頼できます。 プロビジョニングの優先解除をリクエストすると、キャンセルから 3 日以内にサブスクリプション データが削除されます。 プロビジョニングの優先解除を利用する場合は、[サポートに連絡してください](../../admin/contact-support-for-business-products.md)。
-  
+
 詳細については、「[サブスクリプションが終了したときにデータとアクセスがどうなるか](what-if-my-subscription-expires.md)」を参照してください。
+
+> [!IMPORTANT]
+> 一般的な無効期間が終了する前にサブスクリプションデータを削除する場合は、アカウントを[閉じる](../close-your-account.md)ことができます。
 
 ## <a name="other-steps-you-might-have-to-take"></a>必要になる可能性のあるその他の手順
 

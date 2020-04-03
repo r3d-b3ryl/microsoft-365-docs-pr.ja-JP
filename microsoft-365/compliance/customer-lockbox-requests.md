@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076863"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113564"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
-この記事では、現在使用可能な機能の展開と構成に関するガイダンスを提供します。この機能は、Microsoft 365 E5、Office 365 E5、情報の保護とコンプライアンス、または高度なコンプライアンスアドオンサブスクリプションを持つ組織でのみ利用できます。 Customer ロックボックスは、Exchange Online、SharePoint Online、OneDrive for business のデータにアクセスするための要求をサポートしています。 他の Office 365 サービスのサポートを推奨するには、 [office 365 UserVoice](https://office365.uservoice.com/)で要求を送信してください。
+この記事では、お客様のロックボックスの展開と構成に関するガイダンスを示します。 Customer ロックボックスは、Exchange Online、SharePoint Online、OneDrive for business のデータにアクセスするための要求をサポートしています。 他の Office 365 サービスのサポートを推奨するには、 [office 365 UserVoice](https://office365.uservoice.com/)で要求を送信してください。
+
+Microsoft 365 のコンプライアンスの提供 (2020 年4月1日現在) を利用してユーザーにライセンスを付与するためのオプションを確認するには、「 [microsoft 365 ライセンスガイダンス (セキュリティ & 法令遵守](https://aka.ms/ComplianceSD)」を参照してください。
 
 カスタマーロックボックスを使用すると、明示的な承認なしにサービス操作を実行するために、Microsoft がコンテンツにアクセスできなくなります。 お客様のロックボックスによって、コンテンツにアクセスする要求の承認ワークフローに入ります。
 
@@ -122,7 +124,7 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 
     a. **アクティビティ**-検索ですべてのアクティビティの監査レコードが返されるようにするには、このフィールドを空白のままにします。 これは、カスタマーロックボックス要求と、Microsoft のエンジニアによって実行される対応するアクティビティに関連する監査レコードを返すために必要です。
 
-    b.  **開始**日と**終了日**-その期間内に発生したイベントを表示する日付と時刻の範囲を選択します。
+    b. **開始**日と**終了日**-その期間内に発生したイベントを表示する日付と時刻の範囲を選択します。
 
     c. **ユーザー** -このフィールドは空白のままにします。
 
@@ -152,7 +154,7 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 | IP アドレス | 承認者が要求を承認または拒否するために使用したコンピューターの IP アドレス。 |
 | ユーザー       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
 | アクティビティ   | AccessToCustomerDataRequest;これは、顧客のロックボックス要求を承認または拒否するときに記録される監査アクティビティです。                                |
-| 項目       | 顧客のロックボックス要求の Guid                             |
+| アイテム       | 顧客のロックボックス要求の Guid                             |
 
 次のスクリーンショットは、承認された顧客ロックボックス要求に対応する監査ログレコードの例を示しています。 顧客のロックボックス要求が拒否された場合、 **Approvaldecision**パラメーターの値は**Deny**になります。
 
@@ -171,7 +173,7 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 | IP アドレス | Microsoft エンジニアが使用したコンピューターの IP アドレス。 |
 | ユーザー       | Microsoft Operator;この値は、このレコードが顧客のロックボックス要求に関連付けられていることを示します。                                  |
 | アクティビティ   | Microsoft エンジニアによって実行されたアクティビティの名前。|
-| 項目       | \<必須\>                                             |
+| アイテム       | \<必須\>                                             |
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

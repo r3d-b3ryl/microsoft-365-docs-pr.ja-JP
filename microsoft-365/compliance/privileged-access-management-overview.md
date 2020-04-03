@@ -17,17 +17,14 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 547f3f3179252c767d56b45d4ad64d67b3c82b7d
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070979"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116027"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理
-
-> [!IMPORTANT]
-> このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。
 
 特権アクセス管理を使用すると、Office 365 の特権のある管理タスクに対して詳細なアクセス制御を行うことができます。 これにより、既存の特権のある管理者アカウントを使用して機密性の高いデータにアクセスしたり、重要な構成設定にアクセスしたりすることにより、組織を侵害から保護することができます。 特権アクセス管理では、ユーザーはジャストインタイムアクセスを要求して、高度に範囲指定された、時間の制限のある承認ワークフローを通じて、昇格された権限のあるタスクを完了させる必要があります。 この構成では、機密性の高いデータまたは重要な構成設定が公開されていない限り、ユーザーはすぐにタスクを実行することができるようになります。 Office 365 で特権アクセス管理を有効にすることで、組織はゼロに立った権限で運用し、管理アクセスの脆弱性に対する防御層を提供できます。
 
@@ -77,7 +74,7 @@ Office 365 での特権アクセス管理は、**タスク**レベルで定義�
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Office 365 では、どの Sku で特権アクセスを使用できますか?
 
-特権アクセス管理は、Office 365 E5 および高度なコンプライアンス Sku を使用しているお客様が利用できます。
+特権アクセス管理は、Microsoft 365 および Office 365 のサブスクリプションとアドオンを幅広く選択しているお客様に利用できます。 詳細については[、「特権アクセス管理の概要](privileged-access-management-configuration.md)」を参照してください。
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>特権アクセスが Exchange を超えて Office 365 ワークロードをサポートするのはいつですか?
 
