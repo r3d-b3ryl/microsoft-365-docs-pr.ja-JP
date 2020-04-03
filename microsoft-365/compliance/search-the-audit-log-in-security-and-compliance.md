@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634755"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955686"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -311,7 +311,8 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams アクティビティ](#microsoft-teams-activities)|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Yammer アクティビティ](#yammer-activities)|
 |[Microsoft Power Automate のアクティビティ](#microsoft-power-automate-activities)|[Microsoft Power Apps のアクティビティ](#microsoft-power-apps-activities)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
-|[Microsoft Forms アクティビティ](#microsoft-forms-activities)|[機密ラベル アクティビティ](#sensitivity-label-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)||
+|[コンテンツ エクスプローラー アクティビティ](#content-explorer-activities)|[検疫アクティビティ](#quarantine-activities)|[Microsoft Forms アクティビティ](#microsoft-forms-activities)
+|[機密ラベル アクティビティ](#sensitivity-label-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
@@ -802,7 +803,29 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream アクティビティ
 
-監査ログで Microsoft Stream 内のアクティビティを検索できます。これらのアクティビティには、ユーザーによって実行される動画関連アクティビティ、グループ チャネル アクティビティ、管理アクティビティ (ユーザーの管理、組織設定の管理、レポートのエクスポートなど) が含まれます。これらのアクティビティについては、「[Microsoft Stream の監査ログ](https://docs.microsoft.com/stream/audit-logs)」の「Microsoft Stream に記録されるアクティビティ」セクションを参照してください。
+監査ログで Microsoft Stream のアクティビティを検索できます。 これらのアクティビティには、ユーザーが実行するビデオ アクティビティ、グループ チャネル アクティビティ、管理アクティビティ (ユーザーの管理、組織の設定の管理、レポートのエクスポートなど) が含まれます。 これらのアクティビティの詳細については、「[Microsoft Stream の監査ログ](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream)」の「Stream に記録されたアクション」を参照してください。
+
+### <a name="content-explorer-activities"></a>コンテンツ エクスプローラー アクティビティ
+
+Office 365 監査ログに記録されるコンテンツ エクスプローラーのアクティビティの一覧を次の表に記載します。 コンテンツ エクスプローラーは、Microsoft 365 コンプライアンス センターの [データ分類ツール] でアクセスできます。 詳細については、「[コンテンツ エクスプローラーの使用を開始する (プレビュー)](data-classification-content-explorer.md)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|項目がアクセスされました|LabelContentExplorerAccessedItem|管理者 (またはコンテンツ エクスプローラー コンテンツ ビューアー役割グループのメンバーであるユーザー) は、コンテンツ エクスプローラーを使用して電子メール メッセージまたは SharePoint/OneDrive ドキュメントを表示します。|
+||||
+
+### <a name="quarantine-activities"></a>検疫アクティビティ
+
+次の表に、監査ログで検索できる検疫アクティビティを示します。 検疫の詳細については、「[Office 365 でのメール メッセージの検疫](../security/office-365-security/quarantine-email-messages.md)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|削除された検疫メッセージ|QuarantineDelete|ユーザーが有害と見なされたメール メッセージを削除しました。|
+|エクスポートされた検疫メッセージ|QuarantineExport|ユーザーが有害と見なされたメール メッセージをエクスポートしました。|
+|プレビューされた検疫メッセージ|QuarantinePreview|ユーザーが有害と見なされたメール メッセージをプレビューしました。|
+|解放された検疫メッセージ|QuarantineRelease|ユーザーが有害と見なされたメール メッセージを検疫から解放しました。|
+|表示された検疫メッセージのヘッダー|QuarantineViewHeader|ユーザーが有害と見なされたメール メッセージのヘッダーを表示しました。|
+||||
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Forms アクティビティ
 
