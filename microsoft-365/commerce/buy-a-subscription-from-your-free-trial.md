@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 一般法人向け Office 365 のサブスクリプションを購入しましょう。 試用版と同じ種類のサブスクリプションを購入することも、別のプランを購入することもできます。
-ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
-ms.translationtype: HT
+ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549804"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142289"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>無料試用版から一般法人向け Office 365 のサブスクリプションを購入する
 
@@ -98,9 +98,6 @@ Office 365 を試したら、次に必要なのは購入手続きです。試用
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
 
 2. [**サービスを購入する**] ページで、購入するサブスクリプションを選んで、[**購入**] を選びます。
@@ -139,7 +136,6 @@ Office 365 を試したら、次に必要なのは購入手続きです。試用
 
 ::: moniker range="o365-21vianet"
 
-
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. [**サブスクリプション**] ページで、[**サブスクリプションの追加**] を選択します。
@@ -159,7 +155,6 @@ Office 365 を試したら、次に必要なのは購入手続きです。試用
 8. [確認] ページで、[**管理者ホームに移動する**] を選びます。
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>関連記事
 

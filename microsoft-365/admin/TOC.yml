@@ -1,5 +1,5 @@
 - name: 管理者のホーム
-  href: admin-home.yml
+  href: admin-home.md
   items:
     - name: 概要
       items:
@@ -83,10 +83,10 @@
           href: add-users/assign-admin-roles.md
         - name: Exchange Online 管理者の役割について
           href: add-users/about-exchange-online-admin-role.md
-    - name: 電子メール
+    - name: メール
       items:
         - name: Office 365 のメール
-          href: email/email.yml
+          href: email/email.md
         - name: Office 365 ユーザーのメール設定
           href: email/office-365-user-email-settings.md
         - name: ユーザーに別のメール エイリアスを追加する
@@ -154,7 +154,7 @@
     - name: 管理
       items:
         - name: Office 365 の管理
-          href: manage/manage.yml
+          href: manage/manage.md
         - name: 連絡先の設定を変更する
           href: manage/change-contact-preferences.md
         - name: アドレスや連絡先などを変更する
@@ -187,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: ライセンスの競合を解決する
           href: manage/resolve-license-conflicts.md
-        - name: メッセージ センターでメッセージを管理する
-          href: manage/manage-messages.md
+        - name: 新機能を使用して新しい機能を表示または非表示にする
+          href: manage/show-hide-new-features.md
     - name: サブスクリプションと課金
       items:
         - name: サブスクリプションを管理する
@@ -202,7 +202,7 @@
     - name: ドメイン
       items:
         - name: のドメイン
-          href: get-help-with-domains/get-help-with-domains.yml
+          href: get-help-with-domains/get-help-with-domains.md
         - name: ドメインとは
           href: get-help-with-domains/what-is-a-domain.md
         - name: ドメイン名を購入する
@@ -227,7 +227,7 @@
           href: get-help-with-domains/remove-a-domain.md
         - name: データを手動で転送する
           href: get-help-with-domains/transfer-data-manually.md
-    - name: グループ
+    - name: Groups
       items:
         - name: グループの概要
           href: create-groups/office-365-groups.md

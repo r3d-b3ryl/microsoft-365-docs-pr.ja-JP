@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b6c4e737d0bcc9f7373a669e8dcd20661733b294
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634065"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142710"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
@@ -31,7 +31,8 @@ ms.locfileid: "42634065"
 ![高度な脅威保護がどのように動作しているかを確認するダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 電子メールのセキュリティレポートには、次のようなものがあります。
-- [侵害されたユーザーレポート (**新!**)](#compromised-users-report-new)
+- [URL の脅威保護レポート](#url-threat-protection-report-new)(**新**機能)
+- [侵害されたユーザーレポート](#compromised-users-report)
 - [暗号化レポート](#encryption-report)
 - [脅威保護の状態レポート](#threat-protection-status-report) 
 - [マルウェア検出レポート](#malware-detections-report) 
@@ -43,9 +44,30 @@ ms.locfileid: "42634065"
 - [ユーザーによって報告されたメッセージレポート](#user-reported-messages-report)
 
 
-## <a name="compromised-users-report-new"></a>侵害されたユーザーレポート (**新!**) 
+## <a name="url-threat-protection-report-new"></a>URL の脅威保護レポート (**新**機能)
 
-このレポートは、Exchange Online Protection を使用しているすべてのユーザーが、疑わしいユーザーまたは制限されたユーザーとしてマークされたユーザーアカウント数を示しています。ユーザーアカウントが問題になっている可能性がある状態のいずれかを入力するか、またはそれ以外の場合にも使用できます。セキュリティ. 侵害されたユーザーレポートによって、不審または制限付きの状態でマークされたアカウントでスパイクや傾向を特定でき、セキュリティとテナントの wellness に関する問題が発生する可能性があります。
+次のものを持つすべてのユーザーが URL の脅威保護レポートを利用できます。
+
+- Exchange Online Protection*と*Advanced Threat protection アドオン (プラン 1*または*プラン 2) 
+- Microsoft 365 E5 サブスクリプション
+
+これは、2つの集計ビューを持つ ' クリック中心 ' レポートです。
+ 
+1. 最初のビューは、 *url クリック保護アクション*によって指定されます。これは、テナント内のユーザーによる url クリック数の表示、およびクリックの結果を表示することに重点を置いています。 ここをクリックすると、ユーザーが悪意のある web サイトに対する禁止ページをクリックしたことが示されます (これは、安全なリンクポリシー内で管理者によって無効にされる場合があります)。
+ 
+2. 2番目のビューは *[url] をクリックし*ます。これは、電子メールクライアントや Microsoft Word など、現在安全なリンクをサポートしているさまざまなアプリケーションでクリックされた url の数を示します。 両方の集計ビューのデータは、4時間ごとに更新されます。
+
+URL の脅威保護レポートの詳細表には、テナント内で発生するすべてのクリックがほぼリアルタイムで表示されます。また、*ユーザー名*、 *url*、*ネットワークメッセージ ID* (URL が電子メールからクリックされた場合) などの調査情報や、調査や分析に役立つその他の情報が含まれます。  
+
+既定では、このレポートには、安全なリンクによってブロックされた Url からのクリックに関するデータのみが表示されますが、フィルターで [*許可さ*れた url] チェックボックスをオンにすると、すべての url クリックに関する情報を表示することもできます。  
+
+このレポートには、[安全なリンク] ポリシーを適用したユーザーからのクリックのデータは含まれません。 [*ユーザーのクリックを追跡*しない] オプションが選択されています。
+
+![アクションの URL の脅威保護レポートの図。](../../media/tp-URLThreatProRpt1.PNG)
+
+## <a name="compromised-users-report"></a>侵害されたユーザーレポート 
+
+このレポートは、Exchange Online Protection を使用しているすべてのユーザーが、疑わしいユーザーまたは制限されたユーザーとしてマークされたユーザーアカウント数を示しています。データは、ユーザーアカウントが問題を示しているか、侵害されている可能性がある状態のいずれかを入力します。 侵害されたユーザーレポートによって、不審または制限付きの状態でマークされたアカウントでスパイクや傾向を特定でき、セキュリティとテナントの wellness に関する問題が発生する可能性があります。
 
 ![危険にさらされているユーザーは、Office 365 に表示されたとおりに報告されます。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: FAQ でのご質問にお答えするかたちで Office 365 のドメインについてご説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633185"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142505"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
@@ -285,9 +285,9 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>"onmicrosoft.com" ドメインがあるのはなぜですか?
 
-サービスにサインアップすると、Office 365 では、*contoso.onmicrosoft.com* のようなドメインが作成されます。サインアップ時に作成するユーザー ID には、*alan@contoso.onmicrosoft.com* のようなドメインが含まれています。 
+Office 365 は、 _contoso.onmicrosoft.com_のように、サービスを使用してサインアップするときに、ドメインを作成します。サインアップ時に作成するユーザー ID には、 _alan\@contoso.onmicrosoft.com_などのドメインが含まれています。 
   
- ***alan\@contoso.com* のように表示されるメール アドレスを希望する場合は、**[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
+ ___alan\@contoso.com_ のように表示されるメール アドレスを希望する場合は、__[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません** 。たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.com の場合、fabrikam.onmicrosoft.com に変更することはできません。別の onmicrosoft.com ドメインを使うには、Office 365 で新しいサブスクリプションを開始する必要があります。 
     
@@ -300,11 +300,12 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>"onmicrosoft.de" ドメインがあるのはなぜですか?
 
-サービスにサインアップすると、Office 365 では、*contoso.onmicrosoft.de* のようなドメインが作成されます。サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de* のようなドメインが含まれています。 
+Office 365 は、 *contoso.onmicrosoft.de*のように、サービスを使用してサインアップするときに、ドメインを作成します。サインアップ時に作成するユーザー ID には、"alan@contoso.onmicrosoft.de" のようなドメインが含まれています。 
   
- ***alan@contoso.de* のように表示されるメール アドレスを希望する場合は、**[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
+自分のメールが "alan@contoso.de" のように表示されるようにする場合は、[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「 [Office 365 にユーザーとドメインを追加](add-domain.md)する」の手順に従ってください。 
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません**。たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.de の場合、fabrikam.onmicrosoft.de に変更することはできません。別の onmicrosoft.de ドメインを使うには、Office 365 で新しいサブスクリプションを開始する必要があります。 
     
@@ -444,7 +445,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
         
     4. もう 1 つのメール システム上のユーザーへのメール送信をテストします。例えば、ユーザー C にメールを送信します。このメールは、元のサーバーにあるユーザー C のメールボックスに送信されるはずです。
         
-    5. 外部のアカウントから、またはもう 1 つのメール システム上の従業員のメール アカウントからのメールについて、もう 1 つのメール システムで転送が正しく設定されていることを確認します。たとえば、ユーザー C の元のサーバーのアカウントまたは Hotmail アカウントからユーザー A にメールを送り、ユーザー A の Office 365 メールボックスに届くことを確認します。
+    5. 外部アカウントから、または他の電子メールシステムの従業員の電子メールアカウントから、他のメールシステムで転送が正しく設定されていることを確認します。たとえば、User C の元のサーバーアカウントまたは Hotmail アカウントから、ユーザー A に電子メールを送信して、そのメールがユーザー A の Office 365 メールボックスに届くことを確認します。
         
 9. メールボックスのコンテンツの移動
     

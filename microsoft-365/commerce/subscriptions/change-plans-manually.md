@@ -21,17 +21,14 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、サブスクリプションとアクティブの両方が表示されていることを確認して、手動でサブスクリプションを変更します。
-ms.openlocfilehash: 0042e0fd2fa5ac10be512246c252bc1d0f679709
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241890"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142153"
 ---
 # <a name="change-plans-manually"></a>プランを手動で変更する
-
-> [!NOTE]
-> この記事は、新しい管理センターに適用されます。 新しい管理センターは、Microsoft 365 のすべての管理者が利用でき、ホームページの上部にある [**新しい管理センター**の切り替え] を選択して選択することができます。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。 以前の管理センターに関する記事を表示するには、「 [Office 365 for business プランを手動で切り替える](switch-plans-manually.md)」を参照してください。
 
 ## <a name="step-1-decide-how-to-change-plans"></a>手順 1: プランの変更方法を決定する
 
@@ -52,7 +49,7 @@ ms.locfileid: "42241890"
 
 **購入済みですか?** ユーザーを移動するサブスクリプションが既にある場合は、この手順を省略して、このトピックの「[新しいサブスクリプションとライセンスを確認](#step-3-check-your-new-subscription-and-licenses)する」に進みます。
 
-または
+OR
 
 **新しいサブスクリプションとライセンスを購入する:** 「 [別の一般法人向け Office 365 を購入する](../buy-another-subscription.md)」の手順に従って新しいサブスクリプションを購入します。
 
@@ -61,7 +58,7 @@ ms.locfileid: "42241890"
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. **両方のサブスクリプションが一覧表示され、アクティブであることを確認する**ユーザーを移行するサブスクリプションと、ユーザーを移動するサブスクリプションが一緒に表示されている必要があります。 最初に確認したときに新しいサブスクリプションが表示されない場合は、後でもう一度確認してみてください。 両方のサブスクリプションがアクティブであることを確認してください。 新しいサブスクリプションが一覧に表示されない、またはアクティブではない場合は[新しいサブスクリプションが一覧に表示されない、またはアクティブではない](#the-new-subscription-isnt-listed-or-isnt-active)を参照してください。
 
@@ -86,7 +83,7 @@ ms.locfileid: "42241890"
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [**アクティブなユーザー** ] ページで、ライセンスを割り当てるユーザーを選択します。
 
@@ -94,7 +91,7 @@ ms.locfileid: "42241890"
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. 既存のライセンスを置換するユーザーの名前の横にある円を選択します。
 
@@ -117,4 +114,5 @@ ms.locfileid: "42241890"
 一部のユーザーのみを別のサブスクリプションに移動した場合は、不要になった[ライセンスを削除](../licenses/remove-licenses-from-subscription.md)します。
 
 ## <a name="call-support-to-help-you-change-plans"></a>プランを変更するためのサポートへのお問い合わせ
+
 [Microsoft サポートに連絡する](../../admin/contact-support-for-business-products.md)

@@ -22,24 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: アドオンを購入して、Office 365 for business サブスクリプションに追加機能を追加する方法について説明します。 アドオンを更新および削除することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354808"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142277"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>一般法人向け Office 365 向けのアドオンを購入または編集する
 
 一般法人向け Office 365 プランによっては、サブスクリプションに対してアドオンを購入できます。アドオンを利用することで、サブスクリプションに機能を追加することができます。
-
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
-::: moniker-end 
 
 ## <a name="buy-an-add-on"></a>アドオンを購入する
 
@@ -57,7 +49,7 @@ ms.locfileid: "42354808"
 
 6. 価格情報を確認し、[**次へ**] を選択します。
 
-7. 支払い情報を入力し、[**注文** \> ] [**管理者のホーム] に移動**します。
+7. 支払情報を入力して、**[注文**] \> [**管理者ホームに移動する**] の順に選びます。
 
 ::: moniker-end
 
@@ -79,7 +71,7 @@ ms.locfileid: "42354808"
 
 7. 価格情報を確認し、[**次へ**] を選択します。
 
-8. 支払い情報を入力し、[**注文** \> ] [**管理者のホーム] に移動**します。
+8. 支払情報を入力して、**[注文**] \> [**管理者ホームに移動する**] の順に選びます。
 
 ::: moniker-end
 
@@ -101,24 +93,23 @@ ms.locfileid: "42354808"
 
 7. 価格情報を確認し、[**次へ**] を選択します。
 
-8. 支払い情報を入力し、[**注文** \> ] [**管理者のホーム] に移動**します。
+8. 支払情報を入力して、**[注文**] \> [**管理者ホームに移動する**] の順に選びます。
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>アドオンを更新する
 
-アドオンの更新に使用する手順は、アドオンが従来のアドオンであるか、スタンドアロンのアドオンであるかによって異なります。 
+アドオンの更新に使用する手順は、アドオンが従来のアドオンであるか、スタンドアロンのアドオンであるかによって異なります。
 
 *従来*のアドオンは、特定のサブスクリプションにリンクされています。 サブスクリプションを取り消すと、関連するアドオンも取り消されます。
   
-*スタンドアロンアドオン*は、特定のサブスクリプションにリンクされていません。 スタンドアロンアドオンは、[**サブスクリプション**] ページ (または新しい管理センターの [ **Products & services** ] ページ) に個別のサブスクリプションとして表示され、独自の有効期限が設定されます。 その他のサブスクリプションを管理するのと同じ方法で、スタンドアロンのアドオンを管理します。
+*スタンドアロンアドオン*は、特定のサブスクリプションにリンクされていません。 スタンドアロンアドオンは、[ **Products & services** ] ページに個別のサブスクリプションとして表示され、独自の有効期限日があります。 その他のサブスクリプションを管理するのと同じ方法で、スタンドアロンのアドオンを管理します。
   
 ### <a name="update-a-traditional-add-on"></a>従来のアドオンを更新する
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. [ **Products & services** ] ページで、アドオンを更新するサブスクリプションを選択します。
 
@@ -130,10 +121,9 @@ ms.locfileid: "42354808"
 
 ::: moniker-end
 
-
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、アドオンを更新するサブスクリプションを選択します。
 
@@ -156,7 +146,7 @@ ms.locfileid: "42354808"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、アドオンを更新するサブスクリプションを選択します。
 
@@ -175,14 +165,13 @@ ms.locfileid: "42354808"
   
     ![[ライセンスの追加または削除] ダイアログ ボックスの [ライセンスの総数] ボックスと [送信] ボタン。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
-
 ::: moniker-end
 
 ### <a name="update-a-standalone-add-on"></a>スタンドアロンアドオンを更新する
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. [ **Products & services** ] ページで、更新するアドオンサブスクリプションを選択し、[**ライセンスの追加/削除**] を選択します。
 
@@ -192,7 +181,7 @@ ms.locfileid: "42354808"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、更新するアドオンサブスクリプションを選択し、[**ライセンスの追加/削除**] を選択します。
 
@@ -207,7 +196,7 @@ ms.locfileid: "42354808"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、更新するアドオンサブスクリプションを選択し、[**ライセンスの追加/削除**] を選択します。
 
@@ -219,7 +208,6 @@ ms.locfileid: "42354808"
     ![[ライセンスの追加または削除] ダイアログ ボックスの [ライセンスの総数] ボックスと [送信] ボタン。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
-
 
 ## <a name="remove-an-add-on"></a>アドオンを削除する
 
@@ -231,8 +219,6 @@ ms.locfileid: "42354808"
   
 Skype for Business アドオンの詳細については、「[Skype for Business と Microsoft Teams のアドオン ライセンス](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)」を参照してください。
   
-****
-
 |**アドオン**|**利用可能なサブスクリプション**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |

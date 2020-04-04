@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 一般法人向け Office 365 の請求書、請求書、支払い情報を解釈する方法、および発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354688"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142301"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>一般法人向け Office 365 の請求書について
 
@@ -64,7 +64,7 @@ ms.locfileid: "42354688"
 次の表は、請求書に表示されるフィールドについて説明しています。請求書で支払うか、クレジット カードで支払うかに応じて、請求書に表示されないフィールドもあります。
   
 > [!NOTE]
-> 銀行口座による支払いは、一部の国や地域では使用できません。
+> 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
   
 |**名前**|**説明**|
 |:-----|:-----|
@@ -104,9 +104,7 @@ ms.locfileid: "42354688"
 
 ::: moniker range="o365-worldwide"
 
-### <a name="use-the-new-admin-center-to-change-your-purchase-order-number"></a>新しい管理センターを使用して購入注文番号を変更する
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. **表**形式のビューの場合は、[**カード**] を選択してビューを切り替えます。
 
@@ -116,21 +114,11 @@ ms.locfileid: "42354688"
 
 5. [**支払い詳細の編集**] ウィンドウの下部で、PO 番号を入力し、[**保存**] を選択します。
 
-### <a name="use-the-old-admin-center-to-change-your-purchase-order-number"></a>以前の管理センターを使用して注文番号を変更する
-
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">サブスクリプション</a>] ページに移動します。
-
-2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の更新**] を選択します。
-
-3. [**支払い詳細の更新**] ウィンドウで、[**いいえ**] を選択します。
-
-4. [**支払い詳細の更新**] ウィンドウの下部で、PO 番号を入力し、[**送信**] を選択して、[**閉じる**] を選択します。
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 
@@ -140,7 +128,7 @@ ms.locfileid: "42354688"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 

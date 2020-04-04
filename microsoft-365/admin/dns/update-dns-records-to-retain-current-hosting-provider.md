@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: カスタムドメインの DNS レコードを管理するように Office 365 を設定している場合、Office 365 の外部でホストされている既存のパブリック web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: b92e778fb2fe0353a0d1d6bf83a4c617ab4541e2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3e71925f9b50e5520bd383aa5318db513202f6ec
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362412"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142541"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
@@ -34,7 +34,7 @@ ms.locfileid: "42362412"
  **Office 365 が DNS レコードを管理する場合** 、Office 365 の外部でホストされている既存の一般向け Web サイトにトラフィックをルーティングするには、ドメインを Office 365 に追加した後で、次のように操作します。 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで DNS レコードを更新する
-1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
 
 2. [ **ドメイン** ] ページで、ドメインの一覧から、Web サイトで使用しているドメインを選択し、管理ウィンドウで [ **DNS 設定** ] を選択します。 
     

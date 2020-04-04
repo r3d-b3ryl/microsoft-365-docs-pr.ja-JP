@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 一般法人向け Office 365 の請求先住所を更新する方法について説明します。課金通知を受け取るために使用するメール アドレスを更新することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409642"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142313"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>一般法人向け Office 365 の請求先住所を変更する
 
@@ -61,9 +61,6 @@ ms.locfileid: "42409642"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
 ::: moniker-end
 
@@ -111,7 +108,7 @@ ms.locfileid: "42409642"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">製品とサービス</a>] ページの順に移動します。
+1. 管理センターの [**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払いの詳細の変更**] を選択します。
 
@@ -176,12 +173,24 @@ ms.locfileid: "42409642"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>別の管理者の連絡用メール アドレスを変更する
 
 組織内の他のグローバル カタログや課金管理者の連絡用メール アドレスを変更することもできます。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
 
-    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
+::: moniker-end
 
-    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">課金に関する通知</a>] ページに移動します。
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで **、課金の** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">請求の通知</a>ページに移動します。
+
+::: moniker-end
 
 2. [**課金に関する通知**] ページで、変更する管理者を選択します。
 
@@ -194,5 +203,3 @@ ms.locfileid: "42409642"
 [請求書を把握する](understand-your-invoice2.md)
 
 [サブスクリプションの代金を支払う](pay-for-your-subscription.md)
-
-[サブスクリプションと課金 - 管理者向けヘルプ](../index.yml)

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Office 365 for Business、Microsoft 365 試用版 または有料版サブスクリプションをキャンセルする方法について説明します。
-ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
-ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
+ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117946"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142165"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -42,9 +42,6 @@ ms.locfileid: "43117946"
 サブスクリプションで使用する独自のドメイン名を追加した場合、サブスクリプションをキャンセルする前に、ドメインを削除する必要があります。詳細については、「[Office 365 からドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
