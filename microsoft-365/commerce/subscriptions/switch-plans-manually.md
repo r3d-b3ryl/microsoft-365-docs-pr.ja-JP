@@ -22,18 +22,20 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認して、Office 365 for business サブスクリプションを手動で切り替えます。
-ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354710"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142105"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>一般法人向け Office 365 プランを手動で切り替える
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> この記事は、古い管理センターに適用されます。 新しい管理センターに関する記事を表示するには、「[プランを手動で変更](change-plans-manually.md)する」を参照してください。 新しい管理センターは、Microsoft 365 のすべての管理者が利用でき、ホームページの上部にある [**新しい管理センター**の切り替え] を選択して選択することができます。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
+> この記事は、古い管理センターに適用されます。 新しい管理センターに関する記事を表示するには、「[プランを手動で変更](change-plans-manually.md)する」を参照してください。 すべての Microsoft 365 管理者が新しい管理センターを利用できます。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
+
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>手順 1: プランを切り替える方法を決定する

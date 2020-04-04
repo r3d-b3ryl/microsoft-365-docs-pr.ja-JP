@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 無料試用版を入手する方法、または Microsoft 365 のサブスクリプションを購入する方法について説明します。
-ms.openlocfilehash: 1b494457b20a1e75ad002b2832fd69ad0a284b53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257667"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141625"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用または購入する
 
@@ -42,9 +42,6 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
 1. 管理センターにサインインし[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)て、**請求** \> **書購入サービス**に移動します。
 
 2. [**サービスを購入**する] ページには、組織で使用可能なサブスクリプションが一覧表示されます。 試用または購入する Microsoft 365 プランを選択します。
@@ -56,7 +53,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
   
 4. 購入した場合は、必要なユーザーライセンス数を入力して、毎月または年間の支払いを行うかどうかを選択し、[**今すぐチェックアウト**] を選択します。
 
-5. カートが表示されます。 価格情報を確認し、[**次へ**] を選択します。
+5. カートが開きます。 価格情報を確認し、[**次へ**] を選択します。
 
 6. 支払い情報を入力し、[**注文**] を選択します。
 
@@ -70,16 +67,13 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 
 11. [**注文の受領書**] ページで、[**続行**] を選択します。
 
-#### <a name="not-using-the-new-admin-center-yet"></a>新しい管理センターをまだ使用していない場合
-
-新しい管理センターをオフにしている場合は、この記事のビデオを参照して、試用版の Microsoft 365 サブスクリプションにサインアップする方法について確認してください。[サブスクリプションに](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)サインアップする
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 1. 管理センターにサインインし[https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)て、**請求** \> **書購入サービス**に移動します。
 
-2. [**サービスを購入**する] ページには、組織で使用可能なサブスクリプションが一覧表示されます。 
+2. [**サービスを購入**する] ページには、組織で使用可能なサブスクリプションが一覧表示されます。
 
 3. Microsoft 365 プランの下にある省略記号を選択してから、[**無料試用版の開始**] を選択すると、1か月のユーザーライセンスが25個、[**今すぐ購入**] を選択できます。
 
@@ -88,7 +82,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
   
 4. 購入した場合は、必要なユーザーライセンス数を入力して、毎月または年間の支払いを行うかどうかを選択し、[**今すぐチェックアウト**] を選択します。
 
-5. カートが表示されます。 価格情報を確認し、[**次へ**] を選択します。
+5. カートが開きます。 価格情報を確認し、[**次へ**] を選択します。
 
 6. 支払い情報を入力し、[**注文**] を選択します。
 
@@ -105,6 +99,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
 1. 管理センターにサインインし[https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)て、**請求** \> **書購入サービス**に移動します。
 
 2. [**サービスを購入**する] ページには、組織で使用可能なサブスクリプションが一覧表示されます。 
@@ -116,7 +111,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
   
 4. 購入した場合は、必要なユーザーライセンス数を入力して、毎月または年間の支払いを行うかどうかを選択し、[**今すぐチェックアウト**] を選択します。
 
-5. カートが表示されます。 価格情報を確認し、[**次へ**] を選択します。
+5. カートが開きます。 価格情報を確認し、[**次へ**] を選択します。
 
 6. 支払い情報を入力し、[**注文**] を選択します。
 
@@ -132,7 +127,6 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 
 ::: moniker-end
 
-
 ## <a name="next-steps"></a>次のステップ
 
 新しいサブスクリプションを取得したら、そのサブスクリプションを使用するユーザーにライセンスを割り当てる必要があります。 その方法については、「[ユーザーへのライセンスの割り当て](../admin/manage/assign-licenses-to-users.md)」を参照してください。
@@ -144,4 +138,3 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 [一般法人向け Office 365 向けのアドオンを購入または編集する](buy-or-edit-an-add-on.md)
 
 [サブスクリプションのストレージ領域を追加する](add-storage-space.md)
-

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 地域/ロケール別にリストされている電話番号、サービス リクエストのオンライン送信、または Microsoft Store にアクセスして、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
-ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4bb35f6d8c2895ec7adf37c6b4e149962fb616bc
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106062"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142553"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ
 
@@ -40,10 +40,7 @@ ms.locfileid: "43106062"
 
 サービス リクエストをオンラインで開始して時間を節約します。ソリューションの検索をお手伝い、またはエキスパートから電子メールまたは電話で連絡するよう手配いたします。[初期対応までの応答時間をご確認ください](https://go.microsoft.com/fwlink/p/?LinkId=518251)。
 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。その場合は、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。その場合は、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。
 
 2. [**ヘルプが必要ですか?**] ボタンを選択します。 
 
@@ -80,8 +77,6 @@ Office 365 または Microsoft 365 Business サポートの電話番号が上記
 2. 地域を入力して検索を行い、お近くの Microsoft Store を見つけます。
 
 3. Microsoft Store を選択し、[**Schedule service appointment now**] (今すぐサービスの予約をする) を選択します。
-
----
 
 ::: moniker-end
 

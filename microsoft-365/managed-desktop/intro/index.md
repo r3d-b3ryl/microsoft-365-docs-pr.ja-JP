@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204236"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142685"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -67,13 +67,14 @@ Microsoft マネージドデスクトップでは、登録されたデバイス�
 ## <a name="need-more-details"></a>詳細が必要な場合
 Microsoft マネージドデスクトップの価値 (顧客ストーリーを含む) の詳細については、「 [Microsoft Managed desktop](https://aka.ms/mmd)」を参照してください。 詳細については、[ロードマップ](https://aka.ms/AA6jiam)とダウンロード可能な[1 ページの概要](https://aka.ms/AA6ob3h)を参照してください。 最新のニュースについては、Microsoft マネージドデスクトップ[ブログ](https://aka.ms/AA6l2dd)を参照してください。
 
-Microsoft の管理されたデスクトップが組織に適していると思われる場合は、サービスについての詳細を説明する追加ドキュメント、登録のために組織を準備する方法、サービスを開始する方法、およびその後の継続的な操作について詳しく説明します。必要に応じて、お客様とエンドユーザーが簡単にヘルプを利用できるようにする方法を含みます。 すでにオンボードでの準備が整っている場合は、「お客様の[地域のアカウントチーム](https://pages.email.office.com/contactmmd/)に連絡」を開始してください。
+Microsoft の管理されたデスクトップが組織に適している場合は、サービスの詳細について説明する追加ドキュメント、登録する組織の準備方法、サービスの開始方法、および必要に応じてエンドユーザーが簡単にヘルプを取得する方法を含む、その後の継続的な操作について詳しく説明します。 すでにオンボードでの準備が整っている場合は、「お客様の[地域のアカウントチーム](https://pages.email.office.com/contactmmd/)に連絡」を開始してください。
 
 **その他の概要と背景**主に技術担当者とビジネス上の意思決定者にとって、これらのトピックでは、組織と Microsoft の間の役割と責任、Microsoft マネージドデスクトップで使用されているテクノロジ、および ITIL フレームワークの一部として幅広い戦略にサービスを組み込む方法について詳細に説明しています。
 
 - [Microsoft マネージドデスクトップの役割と責任](roles-and-responsibilities.md)
 - [Microsoft マネージドデスクトップテクノロジ](technologies.md)
 - [Microsoft マネージド デスクトップと ITIL (IT インフラストラクチャ ライブラリ)](../MMD-and-ITSM.md)
+- [コンプライアンス](compliance.md)
 - [Microsoft マネージド デスクトップ サービスの説明](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **登録の準備をする**これらのトピックでは、組織での登録の準備に必要な手順について説明します。これには、環境が重要な前提条件を満たしていることの確認、ネットワークの構成、証明書の設定、アプリの準備などが含まれます。

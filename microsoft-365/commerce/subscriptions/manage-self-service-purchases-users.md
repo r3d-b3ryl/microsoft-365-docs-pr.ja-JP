@@ -1,5 +1,5 @@
 ---
-title: セルフサービス購入を管理する (ユーザー)
+title: セルフサービスによる購入を管理する (ユーザー)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,29 +14,26 @@ ms.collection:
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: cdc50144179dd4c0f9b6355501167e9420ff0b50
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080324"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142141"
 ---
-# <a name="manage-self-service-purchases-users"></a>セルフサービス購入を管理する (ユーザー)
+# <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
 ユーザーとして、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てることができます。 自分が行ったセルフサービス購入については、支払いを担当します。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin.microsoft.com</a>では、Microsoft 365 管理センターでサブスクリプションを管理できます。
-
-> [!NOTE]
-> 新しい管理センターの環境を有効にする必要があります。
 
 管理者は、購入したサブスクリプションに対して読み取り専用のビューを持っています。 購入したサブスクリプションごとに、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを表示することができます。
 
 ## <a name="view-your-subscriptions"></a>サブスクリプションを表示する
 
-購入したすべてのセルフサービス購入されたサブスクリプションの一覧を表示できます。 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] のページに移動します。
+購入したすべてのセルフサービス購入されたサブスクリプションの一覧を表示できます。 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>ライセンスをさらに購入または減らす方法
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] のページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
 
 2. 購入するサブスクリプションを検索するか、ライセンスを減らす必要があります。
 
@@ -55,7 +52,7 @@ ms.locfileid: "42080324"
 
 3. [**ライセンスの割り当て**] を選択します。
 
-4. [**ユーザーへのライセンスの割り当て**] ウィンドウで、名前の入力を開始し、結果からそれを選択してリストに追加します。 一度に最大20人のユーザーを追加できます。
+4. [**ユーザーにライセンスを割り当てる**] ウィンドウで、名前の入力を開始し、結果から名前を選択して一覧に追加します。 最大 20 人のユーザーを同時に追加することができます。
 
     > [!NOTE]
     > ライセンスは、組織内のユーザーにのみ割り当てることができます。
@@ -76,7 +73,7 @@ ms.locfileid: "42080324"
 
 ## <a name="cancel-a-subscription"></a>サブスクリプションをキャンセルする
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] のページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
 
 2. キャンセルするサブスクリプションを検索します。
 
@@ -121,7 +118,7 @@ ms.locfileid: "42080324"
 
 2. [**請求書**] で、表示する請求書を選択します。
 
-## <a name="need-help-contact-us"></a>ヘルプが必要な場合 ご連絡ください。
+## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 

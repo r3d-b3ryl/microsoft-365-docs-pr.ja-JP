@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'プロダクトキーを使用して Office 365 for business サブスクリプションを更新し、定期的な請求をオンまたはオフにする方法について説明します。 '
-ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959218"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142117"
 ---
 # <a name="renew-office-365-for-business"></a>一般法人向け Office 365 サブスクリプションの更新またはライセンスの再認証をする
 
@@ -47,9 +47,6 @@ ms.locfileid: "42959218"
 プロダクト キーを使用してサブスクリプションを前払いした場合、サブスクリプション期間の最後にサブスクリプションの有効期限が切れます。 **定期的な課金**を有効にして、クレジットカードまたは銀行口座の情報を提供することにより、サブスクリプションが毎年、サブスクライブした日に請求されるようになります。 また、月ごとに支払うか、または1年全体の支払いを行うかを選択することもできます。 最初のサブスクリプション期間が終了するまで、クレジット カードや銀行口座への請求は行われません。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
 
@@ -117,9 +114,7 @@ ms.locfileid: "42959218"
 ## <a name="related-articles"></a>関連記事
 
 [サブスクリプションを再度有効にする](reactivate-your-subscription.md)
-  
-[クレジット カードまたは銀行口座を追加、更新、または削除する](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
+
 [サブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)
 
 [お支払い方法を追加、更新、削除する](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

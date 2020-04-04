@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 概要
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -18,7 +18,7 @@
       href: plan-for-security-and-compliance.md
 - name: Insider のリスクを管理する
   items:
-    - name: Insider リスク管理
+    - name: インサイダー リスクの管理
       items:
         - name: Insider リスク管理について
           href: insider-risk-management.md
@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: ' 機密情報のDLP 関数'
           href: what-the-dlp-functions-look-for.md
+    - name: M365 での暗号化
+      href: encryption.md
     - name: カスタマー キー
       items:
         - name: Office 365 での顧客キーによるサービスの暗号化
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: SharePoint 管理センターで IRM を設定する
+      href: set-up-irm-in-sp-admin-center.md
     - name: データの分類を理解する (プレビュー)
       href: data-classification-overview.md
       items:
@@ -765,26 +769,26 @@
       href: get-started-with-service-trust-portal.md
     - name: コンプライアンス スコアとコンプライアンス マネージャー
       items:
-        - name: コンプライアンス スコア (プレビュー)
+        - name: コンプライアンススコア (プレビュー)
           href: compliance-score.md
-        - name: コンプライアンス スコアを設定する (プレビュー)
+        - name: コンプライアンススコアを設定する (プレビュー)
           href: compliance-score-setup.md
-        - name: コンプライアンス スコアを使用する (プレビュー)
+        - name: コンプライアンススコアの処理 (プレビュー)
           href: working-with-compliance-score.md
-        - name: コンプライアンス スコアの計算 (プレビュー)
+        - name: コンプライアンススコアの計算 (プレビュー)
           href: compliance-score-methodology.md
-        - name: コンプライアンス スコアのリリース ノート (プレビュー)
+        - name: コンプライアンススコアリリースノート (プレビュー)
           href: compliance-score-release-notes.md
         - name: コンプライアンススコア FAQ (プレビュー)
           href: compliance-score-faq.md
-        - name: コンプライアンス マネージャー (プレビュー)
+        - name: コンプライアンスマネージャー (プレビュー)
           href: compliance-manager-overview.md
           items:
-            - name: コンプライアンス マネージャー (プレビュー) の新機能
+            - name: コンプライアンスマネージャー (プレビュー) リリースノート
               href: compliance-manager-release-notes.md
-            - name: コンプライアンス マネージャー (プレビュー) と共同作業する
+            - name: コンプライアンスマネージャーを使用する (プレビュー)
               href: working-with-compliance-manager.md
-            - name: コンプライアンスマネージャー (クラシック)
+            - name: コンプライアンス マネージャー (クラシック)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR データ主体の要求ツール
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
