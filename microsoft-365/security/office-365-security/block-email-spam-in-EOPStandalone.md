@@ -18,12 +18,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 迷惑メールの検出漏れを防ぐための EOP スタンドアロンの管理者向けドキュメント
-ms.openlocfilehash: 6261c183d39b84435110616491f5bd0b2f3f891b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b3b4005016d8a4192241299cac50eddf59f332d5
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086590"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895419"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>以下の設定により Office 365 のスパム対策フィルターをカスタマイズする
 
@@ -41,13 +41,13 @@ ms.locfileid: "42086590"
 
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>メール フロー ルール (トランスポート ルール) またはスパム フィルターでバルク メールをブロックする
 
-スパムは主に、ニュースレターやプロモーションなどのバルク メールでしょうか。[メール フロー ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)か、スパム フィルターの[高度なスパム フィルター処理オプション](advanced-spam-filtering-asf-options.md)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズできます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。ここで示すとおり、**[Spam and bulk mail actions]** (スパムおよびバルク メール操作) をクリックして設定を調整します。
+スパムが主にニュースレターやプロモーションなどのバルク メールの場合、[メール フロー ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)か、スパム フィルターの [Office 365 の高度なスパム フィルター (ASF) の設定](advanced-spam-filtering-asf-options.md)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズすることができます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。下記に示すとおり、**[Spam and bulk mail actions]** (スパムおよびバルク メール操作) をクリックして設定を調整します。
 
 ![Exchange Online でバルク メール フィルターを設定する](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>スパム フィルター禁止一覧を使用して迷惑メールをブロックする
 
-[スパム フィルター ポリシーを構成](configure-your-spam-filter-policies.md)して、スパム フィルターの送信者禁止一覧に送信者アドレスを追加するか、ドメイン禁止一覧にドメインを追加します。スパム フィルター禁止一覧に記載の送信者やドメインからのメールはスパムとしてマークされます。
+[Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)して、スパム フィルターの送信者禁止一覧に送信者アドレスを追加するか、ドメイン禁止一覧にドメインを追加します。スパム フィルター禁止一覧にある送信者やドメインからのメールはスパムとしてマークされます。
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>メール ユーザーは、Office 365 のスパム フィルターを使用して、確実に検出漏れや迷惑メールをブロックすることもできます。
 
@@ -56,7 +56,7 @@ Office 365 のスパム対策を活用すれば、[Outlook](https://support.offi
 ![Outlook on the web で送信者をブロックする](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
-> 差出人セーフ リストについて詳しくは、「[Exchange Online の差出人セーフ リストと受信拒否リスト](safe-sender-and-blocked-sender-lists-faq.md)」を参照してください。
+> 差出人セーフ リストの詳細については、「[Office 365 で信頼できる差出人リストを作成する](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>EOP のみのユーザー: ディレクトリ同期のセットアップ
 
@@ -76,11 +76,11 @@ EOP サービスは、情報がサービスと共有されている場合、ユ�
 
 2. SCL -1 とマークされたすべてのメッセージで SCL を更新するには、次のコマンドを実行してコンテンツでフィルタリングされたスパム メッセージを迷惑メール フォルダーにルーティングします。
 
-  ```powershell
-  New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SCL:-1" -SetSCL 0
-  ```
+   ```powershell
+   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SCL:-1" -SetSCL 0
+   ```
 
-    SCL はオンプレミス Exchange サーバーでは 0 なので、非スパムはユーザーの受信トレイに配信されますが、ユーザーのローカルの受信拒否リストによって迷惑メール フォルダーに送信されことも可能です。EOP でスパム検疫を使用している場合も、ユーザーのセーフ リストに記載されている送信者がスパムとして識別され、検疫に送られる可能性があります。ただし、ローカルのメールボックスで迷惑メール フォルダーを使用している場合、この操作で、安全な送信者用の受信トレイへの配信が可能になります。
+   SCL はオンプレミス Exchange サーバーでは 0 なので、非スパムはユーザーの受信トレイに配信されますが、ユーザーのローカルの受信拒否リストによって迷惑メール フォルダーに送信されことも可能です。EOP でスパム検疫を使用している場合も、ユーザーのセーフ リストに記載されている送信者がスパムとして識別され、検疫に送られる可能性があります。ただし、ローカルのメールボックスで迷惑メール フォルダーを使用している場合、この操作で、安全な送信者用の受信トレイへの配信が可能になります。
 
 > [!WARNING]
 > メール フロー ルールを使用して SCL 値を 0 (または -1 以外の値) に変更すると、すべての Outlook の迷惑メール オプションがメッセージに適用されます。これは、ブロック リストおよびセーフ リストが尊重されるようになることを意味しますが、ブロック リストやセーフ リストにアドレスが記載されていないメッセージは、クライアント側の迷惑メール フィルター処理によって迷惑メールとしてマークされる可能性があるということも意味します。Outlook にブロック リストとセーフ リストを処理させる必要があるものの、クライアント側の迷惑メール フィルターは使用したくない場合は、Outlook の迷惑メール オプションでオプションを「自動フィルター処理なし」に設定する必要があります。最新バージョンの Outlook では、「自動フィルター処理なし」が既定のオプションですが、クライアント側の迷惑メール フィルターがメッセージに適用されないようにするために、この設定になっていることを確認する必要があります。管理者は、「[Outlook: 迷惑メールの UI とフィルター処理機構を無効にするポリシー設定](https://support.microsoft.com/kb/2180568)」の手順に従って、Outlook の迷惑メール フィルター処理を無効にすることができます。
@@ -88,5 +88,3 @@ EOP サービスは、情報がサービスと共有されている場合、ユ�
 ## <a name="see-also"></a>関連項目
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
-
-[セーフリストまたはその他の手法で誤検知の電子メールがスパムとしてマークされないようにする](prevent-email-from-being-marked-as-spam.md)

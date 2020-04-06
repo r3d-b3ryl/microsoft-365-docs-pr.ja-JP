@@ -1,11 +1,11 @@
 ---
-title: スパム フィルター ポリシーの設定
+title: スパム フィルター ポリシーの構成
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/05/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,168 +16,619 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本のスパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。
-ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: a497dc4cbce877c0aa6113e32223235ffebbfd41
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857359"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894208"
 ---
-# <a name="configure-your-spam-filter-policies"></a>スパム フィルター ポリシーの設定
-スパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。 スパム フィルター ポリシー設定は、受信メッセージのみに適用され、次の 2 つの種類があります。
+# <a name="configure-anti-spam-policies-in-office-365"></a>Office 365 でのスパム対策ポリシーの構成
 
-  - 既定: 既定のスパム フィルター ポリシーは、企業全体のスパム フィルター設定を構成するために使用します。 このポリシーは名前を変更できません。また、常にオンになります。
+Exchange Online のメールボックスを使用している Office 365 のお客様、または Exchange Online のメールボックスを使用していないもののスタンドアロンの Exchange Online Protection (EOP) をお使いのお客様の場合、受信メール メッセージは EOP によってスパムから自動的に保護されます。 EOP では、スパムに対する組織の全体的防御の一環として、スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれます) を使用します。 詳細については、「[Office 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。
 
-  - カスタム: カスタム スパム フィルター ポリシーは、よりきめ細かく設定でき、組織内の特定のユーザー、グループ、ドメインに適用できます。 カスタム ポリシーは、常に、既定のポリシーより優先されます。 各カスタム ポリシーの優先順位を変更することにより、カスタム ポリシーを実行する順序を変更できます。ただし、複数のポリシーが抽出条件セットを満たす場合は、最も優先度が高い (つまり、0 に最も近い) ポリシーのみが適用されます。
+管理者は、既定のスパム対策ポリシーの表示、編集、構成を行うことができます (削除はできません)。 より細かく設定できるように、カスタムのスパム対策保護ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-## <a name="what-you-must-know-before-you-begin"></a>始める前に把握しておくべき情報
+スパム対策ポリシーの構成は、Office 365 セキュリティ/コンプライアンス センターで、または PowerShell (Office 365 のお客様の場合は Exchange Online PowerShell、スタンドアロンの EOP お客様の場合は Exchange Online Protection PowerShell) で行います。
 
-予想所要時間 : 30 分
+## <a name="anti-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Office 365 セキュリティ/コンプライアンス センターと Exchange Online PowerShell または Exchange Online Protection PowerShell のスパム対策ポリシーの比較
 
-この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可については、「[Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)」の「スパム対策」のエントリを参照してください。
+EOP のスパム対策ポリシーの基本的な要素は次のとおりです。
 
-スパム フィルターポリシー設定はすべて、セキュリティ/コンプライアンス センター (SCC) にあります。 詳細については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス](../../compliance/go-to-the-securitycompliance-center.md)」を参照してください。 スパム対策の設定ページは、SCC \> **[脅威の管理]** \> **[ポリシー]** \> **[スパム対策]** セクションにあります。
+- **スパム フィルター ポリシー**: スパム フィルター判定のアクションと通知オプションを指定します。
 
-## <a name="access-and-create-spam-filter-policies"></a>スパム フィルター ポリシーへのアクセスと作成
+- **スパム フィルター ルール**: スパム フィルター ポリシーの優先順位と受信者フィルター (ポリシーが適用される対象者) を指定します。
 
-[スパム対策] 設定ページでは、既定の設定を [標準] タブで表示できます。これらの設定を変更するには、**[カスタム]** タブに切り替えます。既定のスパム フィルター ポリシーに含まれる既定の設定の一部を表示して、設定することができます。
+これら 2 つの要素の違いは、セキュリティ/コンプライアンス センターでスパム対策を管理する際には明白ではありませんが、以下の違いがあります。
 
-さらに多くのカスタム設定を有効にしたり、カスタム ポリシーを追加したりするには、**[カスタム設定]** セレクターを **[オン]** に変更して、カスタム スパム フィルター ポリシーを有効にします。 既存のカスタム ポリシーは、ここから展開することにより表示できます。
+- セキュリティ/コンプライアンス センターでスパム対策ポリシーを作成する場合、実際にはスパム フィルター ルール、および関連付けられているスパム フィルター ポリシーの両方に同じ名前を使用して同時に作成しています。
 
-## <a name="configure-custom-spam-filter-policy-settings"></a>カスタム スパム フィルター ポリシー設定の構成
+- セキュリティ/コンプライアンス センターでスパム対策ポリシーを変更する場合、名前、優先順位、有効/無効の切り替え、そして受信者フィルターに関連する設定の変更は、実際にはスパム フィルター ルールを変更しています。 他のすべての設定は、関連付けられているスパム フィルター ポリシーを変更します。
 
-1. ポリシーを編集する場合は、**[ポリシーの編集]** を選択してクリックします。それ以外の場合は、**[ポリシーの作成]** をクリックします。
+- セキュリティ/コンプライアンス センターからスパム対策ポリシーを削除すると、スパム フィルター ルールおよび関連付けられたスパム フィルター ポリシーが削除されます。
 
-2. カスタム ポリシーには一意の名前を指定できますが、既定のポリシーは名前を変更できません。 必要に応じて、ポリシーに詳細な説明を指定することもできます。
+Exchange Online PowerShell またはスタンドアロンの Exchange Online Protection PowerShell では、スパム フィルター ポリシーとスパム フィルター ルールの違いは明白です。 スパム フィルター ポリシーは **\*-HostedContentFilterPolicy** コマンドレットを使用して管理し、スパム フィルター ルールは **\*-HostedContentFilterRule** コマンドレットを使用して管理します。
 
-3. **[スパムおよびバルクのアクション]** セクションで、次の操作を行います:
+- PowerShell では、最初にスパム フィルター ポリシーを作成し、それからルールが適用されるポリシーを特定するスパム フィルター ルールを作成します。
 
-   - **スパム**、**高確度スパム**、**高確度フィッシング詐欺メール**、**フィッシング詐欺メール**、**バルク メール** の種類ごとに適した操作を選択します。 使用できる値は次のとおりです:
+- PowerShell では、スパム フィルター ポリシーとスパム フィルター ルールの設定は別々に変更します。
 
-     - [**迷惑メール フォルダーにメッセージを移動する**]: 指定された受信者の迷惑メール フォルダーにメッセージを送信します。 これは、スパム、高確度迷惑メール、バルクに対する既定のアクションです。
+- PowerShell からスパム フィルター ポリシーを削除しても、対応しているスパム フィルター ルールは自動で削除されず、逆もまた同様です。
 
-       > [!NOTE]
-       > このアクションをオンプレミスのメールボックスで使用するには、EOP によって追加されたスパム ヘッダーを検出するように、オンプレミス サーバー上に 2 つの Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[スパムが各ユーザーの迷惑メール フォルダーに転送されるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 この手順は、Exchange Online Protection (EOP) のスタンドアロンのお客様にとって重要です。
+### <a name="default-anti-spam-policy"></a>既定のスパム対策ポリシー
 
-     - [**X-ヘッダーを追加する**]: 指定した受信者にメッセージを送信しますが、そのメッセージがスパムとして識別されるように、X-ヘッダー テキストをメッセージ ヘッダーに追加します。 このテキストを目印として使用することにより、必要に応じて、受信トレイのルールを作成したり、ダウンストリーム デバイスを使用してメッセージに対する処理を実行したりできます。 既定の X-ヘッダー テキストは **This message appears to be spam** です。
-     
-       X-ヘッダー テキストをカスタマイズするには、**[この X-ヘッダー テキストを追加する]** 入力ボックスを使用します。 X-ヘッダー テキストをカスタマイズする場合は、次の条件に注意してください。
+各組織には Default という名前の組み込みのスパム対策ポリシーがあり、以下の特徴があります。
 
-       - \< *ヘッダー*  \> という形式でヘッダーのみを指定 (\<  *ヘッダー*  \> 内にスペースなし) した場合は、カスタム テキストにコロンが付加され、その後に既定のテキストが続きます。 たとえば、「This-is-my-custom-header」と指定した場合は、X-ヘッダー テキストに "This-is-my-custom-header: This message appears to be spam" と表示されます。
+- ポリシーに関連付けられているスパム フィルター ルール (受信者フィルター) がない場合でも、Default という名前のスパム フィルター ポリシーは組織内の全受信者に適用されます。
 
-       - カスタム ヘッダー テキスト内にスペースを含めたりコロンを自分で追加した場合 (「X This is my custom header」や「X-This-is-my-custom-header:」など) は、X-ヘッダー テキストは既定の "X-This-Is-Spam: This message appears to be spam" に戻されます。
+- Default という名前のポリシーにはカスタムの優先順位の値 **Lowest** が設定されており、変更することはできません (このポリシーは常に最後に適用されます)。 作成するどのカスタム ポリシーも、Default という名前のポリシーより高い優先順位を持ちます。
 
-       - \<*ヘッダー*\>:\<*値*\>という形式でヘッダー テキストを指定することはできません。 このように指定した場合は、コロンの前後の両方の値が無視され、代わりに既定の X-ヘッダー テキストが次のように表示されます。"X-This-Is-Spam: This message appears to be spam"
+- Default という名前のポリシーは既定のポリシー (**IsDefault** のプロパティが `True` の値になっている) であり、既定のポリシーを削除することはできません。
 
-       - メールボックスの迷惑メールの設定により、この X-ヘッダーが追加されたメールがメールボックスの迷惑メール フォルダーに移動される場合があることにご注意ください。 これを変更するには、Set-MailboxJunkEmailConfiguration を使用してこの機能を無効にします。
+スパム フィルター処理の有効性を高めるために、特定のユーザーまたはユーザー グループに適用される、より厳密な設定を持つカスタムのスパム対策ポリシーを作成できます。
 
-   - **[件名行の先頭にテキストを追加する]:** 本来の受信者にメッセージを送信しますが、**[件名の先頭にこのテキストを追加する]** テキストボックスに指定したテキストが件名行の先頭に追加されます。 このテキストを目印にすると、必要に応じてメッセージをフィルター処理またはルーティングする規則をオプションで作成できます。
-    
-     > [!NOTE]
-     > メッセージは引き続き [迷惑メール] フォルダーにルーティングされます。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-   - **[電子メール アドレスにメッセージをリダイレクトする]:** メッセージを本来の受信者に送信せず、指定されたメール アドレスに送信します。 "リダイレクト" アドレスを **[このメール アドレスにリダイレクトする]** ボックスに指定してください。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。
 
-   - **[メッセージを削除する]:** 添付ファイルすべてを含め、メッセージ全体が削除されます。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-   - **[メッセージを隔離する]:** メッセージを本来の受信者に送信せず、検疫に送信します。 これは、フィッシングに対する既定のアクションです。 このオプションを選択した場合は、 **[次の期間スパムを保持する (日)]** 入力ボックスで、スパム メッセージを検疫する日数を指定します。 (その時間が経過すると、自動的に削除されます。 既定値は 30 日で、これが最大値です。 最小値は 1 日です)。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スパム対策ポリシーを追加、変更、削除するには、「**組織の管理**」または「**セキュリティ管理者**」役割グループのメンバーである必要があります。 スパム対策ポリシーに読み取り専用でアクセスするには、「**セキュリティ閲覧者**」役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
-     > [!TIP]
-     > 管理者が検疫内のメール メッセージを管理する方法の詳細については、「[検疫](quarantine.md)」および「[Office 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。 <br/><br/> ユーザーのスパム通知メッセージを構成する方法については、「[EOP でのエンドユーザー スパム通知の構成](configure-end-user-spam-notifications-in-eop.md)」または「[Exchange Online エンドユーザー スパム通知の構成](configure-end-user-spam-notifications-in-exchange-online.md)」を参照してください。
+- マルウェア対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
 
-   - **[しきい値の選択]** を設定して、メッセージのバルク苦情レベル (BCL) に基づいてバルク メールをスパムとして扱う方法を決定します。 1 から 9 までのしきい値の設定を選択できます。1 はほとんどのバルク メールをスパムとして指定し、9 はほとんどのバルク メールの配信を許可します。 その後、メッセージを受信者の迷惑メール フォルダーに送信するなどの構成されたアクションをサービスが実行します。 詳細については、「[バルク苦情レベルの値](bulk-complaint-level-values.md)」および「[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
+## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>セキュリティ/コンプライアンス センターを使用してスパム対策ポリシーを作成する
 
-4. **[スパムのプロパティ]** ページで、次のように構成することにより、ポリシーのテスト モードオプションを設定できます。
+セキュリティ/コンプライアンス センターでスパム対策ポリシーを作成する場合、実際にはスパム フィルター ルール、および関連付けられているスパム フィルター ポリシーの両方に同じ名前を使用して同時に作成しています。
 
-   - **[なし]** メッセージにテスト モード アクションを行いません。 これが既定です。
+1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
-   - **[既定のテスト X-ヘッダー テキストの追加]** このオプションを選択すると、指定された受信者にメッセージを送信しますが、メッセージが特定の高度なスパム フィルタリング オプションに一致したことを示す特別な X-ヘッダーをメッセージに追加することもします。
+2. **[スパム対策の設定]** ページの **[ポリシーの作成]** をクリックします。
 
-   - **[次のアドレスに Bcc メッセージを送信]** このオプションを選択すると、入力ボックスで指定したメール アドレスにメッセージのブラインド カーボン コピーが送信されます。 <br/><br/>それぞれに関連付けられた各オプションと X-ヘッダーのテキストに関する説明を含む、詳細なスパム フィルターのオプションについては、「[高度なスパム フィルター処理オプション](advanced-spam-filtering-asf-options.md)」を参照してください。
+3. 開いた **[新しいスパム フィルター ポリシー]** ポップアップで、次の設定を構成します。
 
-5. カスタム ポリシーの場合にのみ、**[適用先]** メニュー項目をクリックしてから、このポリシーを適用するユーザー、グループ、ドメインを指定する条件ベースのルールを作成します。 それぞれが一意の条件であれば、複数の条件を作成できます。
+   - **[名前]**: わかりやすい一意のポリシー名を入力します。 以下の文字は使用しないでください: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`
 
-   - ユーザーを選択するには、 **[受信者が次の場合]** を選択します。次のダイアログ ボックスで、ユーザー選択リストから会社の 1 人または複数の送信者を選択し、 **[追加]** をクリックします。リスト上にない送信者を追加するには、電子メール アドレスを入力してから **[名前の確認]** をクリックします。このボックスでは、ワイルドカードを使って、複数の電子メール アドレスを指定することもできます (例: \*@ _domainname_)。選択が完了したら、 **[OK]** をクリックして、メイン画面に戻ります。
+      これらの文字が含まれているスパム対策ポリシーを、Exchange 管理センター (EAC) で以前に作成した場合は、PowerShell でそのスパム対策ポリシーの名前を変更する必要があります。 手順については、このトピックで後述する「[PowerShell を使用してスパム フィルター ルールを変更する](#use-powershell-to-modify-spam-filter-rules)」を参照してください。
 
-   - グループを選択するには、**[受信者が次のメンバーの場合]** を選択します。その後、それに続くダイアログ ボックスでグループを選択または指定します。**[OK]** をクリックして、メイン画面に戻ります。
+   - **[説明]**: ポリシーについての説明を入力します (オプション)。
 
-   - ドメインを選択するには、**[受信者のドメインが次の場合]** を選択します。その後、それに続くダイアログ ボックスでドメインを追加します。**[OK]** をクリックして、メイン画面に戻ります。
+4. (オプション) **[迷惑メールおよびバルク メールの処理]** セクションを展開し、以下の設定を確認または構成します。
 
-     ルール内で例外を作成できます。たとえば、特定のドメインを除くすべてのドメインからのメッセージをフィルター処理できます。**[例外の追加]** をクリックしてから、他の条件の作成方法と同じように例外条件を作成します。
+   - **スパムとバルク メールを受信するためのアクションを選択します**: 以下のスパム対策フィルター判定に基づき、メッセージに対して行うアクションを選択または確認します。
 
-     グループへのスパム ポリシーの適用は、**メールが有効なセキュリティ グループ**でのみサポートされます。
+     - **スパム**
+     - **高確度迷惑メール**
+     - **フィッシング詐欺メール**
+     - **高確度フィッシング詐欺メール**
+     - **バルク メール**
 
-6. **[保存]** をクリックします。 ポリシー設定の概要が右側のウィンドウに表示されます。
+     次の表で、スパム対策フィルター判定に使用可能なアクションを説明します。
 
-既定のポリシーは、無効にしたり削除したりすることはできません。また、カスタム ポリシーの方が既定のポリシーより常に優先されます。 カスタム ポリシーは、**[有効]** 列のチェックボックスをオンまたはオフにすることにより、有効または無効にできます。 既定では、すべてのポリシーが有効になっています。 カスタム ポリシーを削除するには、そのポリシーを選択して、[**削除**] ![削除アイコン](../../media/ITPro-EAC-DeleteIcon.gif) をクリックしてから、そのポリシーを削除することを確定します。
+     - チェック マーク ( ![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) は、アクションが使用可能であることを示します (すべてのアクションがすべてのスパム対策フィルター判定に使用できるわけではありません)。
+     - チェック マークの後にアスタリスク ( <sup>\*</sup> ) がある場合、スパム対策フィルター判定の既定のアクションであることを示しています。
 
-> [!TIP]
-> ![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.gif) 上矢印と ![下矢印アイコン](../../media/ITPro-EAC-DownArrowIcon.gif) 下矢印をクリックすると、カスタム ポリシーの優先度 (実行順序) を変更できます。 **[優先度]** が **0** のポリシーが最初に処理され、次に優先度が **1** のポリシー、次に **2** のポリシーというように順番に処理されます。
+    |||||||
+    |:---|:---:|:---:|:---:|:---:|:---:|
+    ||**スパム**|**高<br/>確度<br/>迷惑メール**|**フィッシング詐欺<br/>メール**|**高<br/>確度<br/>フィッシング詐欺<br/>メール**|**バルク<br/> メール**|
+    |**メッセージを迷惑メール フォルダーに移動する**: メッセージはメールボックスに配信され、[迷惑メール] フォルダーに移動されます。<sup>1</sup>|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+    |**X-ヘッダーを追加する**: X-ヘッダーをメッセージ ヘッダーに追加し、そのメッセージをメールボックスに配信します。 <br/> 後で **[この X ヘッダーのテキストを追加する]** ボックスに、X-ヘッダーのフィールド名 (値ではなく) を入力します。 <br/><br/> **スパム**および**高確度迷惑メール**判定の場合、メッセージは [迷惑メール] フォルダーに移動されます。<sup>1、2</sup>|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+    |**件名行の先頭にテキストを追加する**: メッセージの件名行の先頭にテキストを追加します。 メッセージはメールボックスに配信され、[迷惑メール] フォルダーに移動されます。<sup>1、2</sup> <br/> テキストを後で **[件名行の先頭にこのテキストを追加する]** ボックスに入力します。|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**[メッセージをメール アドレスにリダイレクトする]:** メッセージを本来の受信者の代わりに他の受信者に送信します。 <br/> 後で、受信者を **[このメール アドレスにリダイレクトする]** ボックスに指定してください。|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**[メッセージの削除]:** 添付ファイルすべてを含め、メッセージ全体が確認なしで削除されます。|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**[メッセージを隔離する]:** メッセージを本来の受信者に送信せず、検疫に送信します。 <br/> 後で、検疫でメッセージを保持する期間を **[検疫]** ボックスに指定します。|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**アクションなし**|||||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |
 
-## <a name="use-powershell-to-configure-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを構成する
+    > <sup>1</sup> Exchange Online では、受信トレイで迷惑メール ルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定では有効)。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。<br/>EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。<br/><br/><sup>2</sup> この値を、メール フロー ルール (トランスポート ルールとも言う) の条件として、メッセージのフィルター処理やルーティングに使用することができます。
 
-PowerShell でスパム フィルター ポリシーを構成して適用することもできます。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+   - **しきい値を選択**: **[バルク メール]** スパム対策フィルター判定に指定されたアクションをトリガーするメッセージの Bulk Complaint Level (BCL) を指定します (アクションは、指定された値以上ではなく、指定された値より大きい場合にトリガーされます)。 値が大きければ大きいほど、そのメッセージの信頼度は低い (迷惑メールである可能性が高い) ことを示します。 既定の値は 7 です。 詳細については、「[Office 365 の Bulk Complaint Level (BCL)](bulk-complaint-level-values.md)」および「[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
 
-- [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterpolicy) スパム フィルター設定を表示します。
+     既定では、スパム対策ポリシーでの PowerShell のみの設定である _MarkAsSpamBulkMail_ は、`On` です。 この設定は、**バルク メール** フィルター判定の結果に大きく影響します。
 
-- [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy) スパム フィルター設定を編集します。
+     - **_MarkAsSpamBulkMail_ が [On]**: しきい値よりも高い BCL は、フィルター判定「**スパム**」に相当する SCL 6 に変換され、**バルク メール** フィルター判定に指定されたアクションがメッセージに対して実行されます。
 
-- [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) カスタム スパム フィルター ポリシーを新規作成します。
+     - **_MarkAsSpamBulkMail_ が [Off]**: メッセージには BCL がスタンプされますが、**バルク メール** フィルター判定に対して_何のアクションも実行されません_。 実際には、BCL しきい値と**バルク メール** フィルター判定アクションは無関係です。
 
-- [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterpolicy) カスタム スパム フィルター ポリシーを削除します。
+   - **検疫**: スパム対策フィルター判定のアクションとして **[メッセージを検疫]** を選択した場合に、メッセージを検疫に保持する期間を指定します。 期間が終了すると、メッセージは削除されます。 既定値は 30 日です。 有効な値は 1 日から 30 日です。 検疫の詳細については、以下のトピックを参照してください。
 
-カスタム スパム フィルター ポリシーをユーザー、グループ、ドメインに適用するには、[New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterrule) コマンドレット (カスタム ポリシーに適用可能な新しいフィルター ルールを作成する場合) または [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule) コマンドレット (カスタム ポリシーに適用可能な既存のフィルター ルールを編集する場合) を使用します。ポリシーに適用するルールを有効または無効にするには、 [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedcontentfilterrule) コマンドレットまたは [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedcontentfilterrule) コマンドレットを使用します。
+     - [Office 365 の検疫](quarantine-email-messages.md)
+     - [Office 365 の管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md)
+     - [Office 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
-## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
+   - **この X-ヘッダー テキストを追加する**: このボックスは、**[X-ヘッダーの追加]** を、スパム対策フィルター判定のアクションとして選択した場合にのみ必要で、選択可能になります。 指定する値は、メッセージ ヘッダーに追加されるヘッダー フィールドの*名前*です。 ヘッダー フィールドの*値*は常に `This message appears to be spam` です。
 
-スパムが適切に検出され、処理されるようにするために、サービスを通して GTUBE メッセージを送信できます。EICAR ウイルス対策テスト ファイルと同様、GTUBE はサービスが受信スパムを検出することを検証できるテストを行います。GTUBE メッセージはスパム フィルターで常にスパムとして検出されるはずで、メッセージに対して実行されるアクションは構成された設定に一致するはずです。
+     最大の長さは 255 文字で、値にスペースやコロン (:) を含めることはできません。
 
-メール メッセージに 1 行で以下の GTUBE テキストを含めます。空白文字や改行は含めません。
+     たとえば、値 `X-This-is-my-custom-header` を入力すると、メッセージに追加される X-ヘッダーは `X-This-is-my-custom-header: This message appears to be spam.` です。
+
+     スペースまたはコロン (:) を含む値を入力した場合、入力した値は無視され、既定の X-ヘッダー (`X-This-Is-Spam: This message appears to be spam.`) がメッセージに追加されます。
+
+   - **件名行の先頭にこのテキストを追加する**: このボックスは、**[件名行の先頭にテキストを追加する]** を、スパム対策フィルター判定のアクションとして選択した場合にのみ必要で、選択可能になります。 メッセージの件名行の先頭に追加するテキストを入力します。
+
+   - **このメール アドレスにリダイレクトする**: このボックスは、**[メール アドレスにリダイレクトする]** を、スパム対策フィルター判定のアクションとして選択した場合にのみ必要で、選択可能になります。 メッセージの配信先のメール アドレスを入力します。 複数の値をセミコロン (;) で区切って入力できます。
+
+   - **安全性のヒント**: 既定で [安全性のヒント] は有効になっていますが、これらは **オン**になっているチェックボックスをオフにすることで無効にできます。 安全性のヒントの詳細については、「[Office 365 でのメール メッセージの安全性のヒント](safety-tips-in-office-365.md)」を参照してください。
+
+   **[ゼロアワー自動消去]** 設定: Exchange Online のメールボックスに既に配信されたメッセージを ZAP が検出し、アクションを実行します。 ZAP の詳細については、「[ゼロアワー自動消去 - スパムまたはマルウェアからの保護](zero-hour-auto-purge.md)」を参照してください。
+
+   - **Spam ZAP**: 既定では、ZAP はスパム検出に対して有効になっていますが、**オン**になっているチェックボックスをオフにすることで無効にできます。
+
+   - **フィッシング詐欺に対する ZAP**: 既定では、ZAP はフィッシング検出に対して有効になっていますが、**オン**になっているチェックボックスをオフにすることで無効にできます。
+
+5. (オプション) **[受信許可一覧]** セクションを展開すると、スパム対策フィルター処理をスキップできるメッセージ送信者を、メール アドレスごと、またはメール ドメインごとに構成できます。
+
+   > [!CAUTION]
+   > <ul><li>その場合、ドメインを追加する前に慎重に検討してください。 詳細については、「[Office 365 での信頼できる差出人リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。</li><li>承認済みドメイン (自分が所有しているドメイン) や一般的なドメイン (microsoft.com や office.com など) は、決して、許可するドメインのリストに追加しないでください。 そのようにすると、攻撃者は組織にスパム フィルターをバイパスするメールを送信できるようになります。</li></ul>
+
+   - **受信許可**: **[編集]** をクリックします。 表示される **[許可された送信者一覧]** ポップアップで、以下の手順を実行します。
+
+      a. 送信者の電子メール アドレスを入力します。 複数のメール アドレスをセミコロン (;) で区切って指定できます。
+
+      b. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) をクリックして送信者を追加します。
+
+      必要な回数だけこれらの手順を繰り返します。
+
+      追加した送信者が、ポップアップの **[受信許可送信者]** セクションに表示されます。 送信者を削除するには、![[削除] アイコン](../../media/scc-remove-icon.png)をクリックします。
+
+      完了したら、**[保存]** をクリックします。
+
+   - **ドメインを許可**: **[編集]** をクリックします。 表示される **[許可されているドメイン一覧]** ポップアップで、以下の手順を実行します。
+
+      a. ドメインを入力します。 複数のドメインをセミコロン (;) で区切って指定できます。
+
+      b. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) をクリックしてドメインを追加します。
+
+      必要な回数だけこれらの手順を繰り返します。
+
+      追加したドメインが、ポップアップの **[受信許可ドメイン]** セクションに表示されます。 ドメインを削除するには、![[削除] アイコン](../../media/scc-remove-icon.png)をクリックします。
+
+      完了したら、**[保存]** をクリックします。
+
+6. (オプション) **[受信拒否一覧]** セクションを展開すると、常に高確度迷惑メールとマークされるメッセージ送信者をメール アドレスごと、またはメール ドメインごとに構成できます。
+
+   > [!NOTE]
+   > 手動でのドメインの受信拒否は危険ではありませんが、管理作業の負荷が増大する可能性があります。 詳細については、「[Office 365 での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
+
+   - **受信拒否**: **[編集]** をクリックします。 表示される **[受信拒否リスト一覧]** で、以下の手順を実行します。
+
+      a. 送信者の電子メール アドレスを入力します。 複数のメール アドレスをセミコロン (;) で区切って指定できます。 ワイルドカード (*) は使用できません。
+
+      b. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) をクリックして送信者を追加します。
+
+      必要な回数だけこれらの手順を繰り返します。
+
+      追加した送信者が、ポップアップの **[ブロックする差出人]** セクションに表示されます。 送信者を削除するには、![[削除] ボタン](../../media/scc-remove-icon.png)をクリックします。
+
+      完了したら、**[保存]** をクリックします。
+
+   - **ドメインをブロック**: **[編集]** をクリックします。 表示される **[ブロックされたドメイン一覧]** ポップアップで、以下の手順を実行します。
+
+      a. ドメインを入力します。 複数のドメインをセミコロン (;) で区切って指定できます。 ワイルドカード (*) は使用できません。
+
+      b. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) をクリックしてドメインを追加します。
+
+      必要な回数だけこれらの手順を繰り返します。
+
+      追加したドメインが、ポップアップの **[ブロックされたドメイン]** リストに表示されます。 ドメインを削除するには、![[削除] ボタン](../../media/scc-remove-icon.png)をクリックします。
+
+      完了したら、**[保存]** をクリックします。
+
+7. (オプション) **[海外からの迷惑メール]** セクションを展開すると、スパム対策フィルター処理によってブロックされる電子メールの言語や発信国を設定できます。
+
+   - **次の言語で書かれたメール メッセージをフィルターします**: この設定は既定では無効になっています (**状態: OFF**)。 **[編集]** をクリックします。 表示される **[海外からの迷惑メールの設定]** ポップアップで、次の設定を構成します。
+
+     - **次の言語で書かれたメール メッセージをフィルターします**: この設定を有効にするには、チェックボックスをオンにします。 この設定を無効にするには、チェック ボックスをオフにします。
+
+     - ボックス内をクリックし、言語の*名前*の入力を始めます。 フィルター処理の対象となる、サポートされている言語のリストが、対応する ISO 639-2 の言語コードと共に表示されます。 探している言語が見つかったら、それを選択します。 必要な回数だけこの手順を繰り返します。
+
+       選択した言語のリストがポップアップに表示されます。 言語を削除するには、 ![[削除] ボタンをクリックします](../../media/scc-remove-icon.png)。
+
+     完了したら、**[保存]** をクリックします。
+
+   - **次の国または地域から送信されたメール メッセージをフィルターします**: この設定は、既定では無効になっています (**状態: OFF**)。 有効にするには、**[編集]** をクリックします。 表示される **[海外からの迷惑メールの設定]** ポップアップで、次の設定を構成します。
+
+     - **次の国または地域から送信されたメール メッセージをフィルターします**: この設定を有効にするには、チェックボックスをオンにします。 この設定を無効にするには、チェック ボックスをオフにします。
+
+     - ボックス内をクリックし、国または地域の*名前*の入力を始めます。 フィルター処理の対象となる、サポートされている国のリストが、対応する ISO 3166-1 の 2 文字の国コードと共に表示されます。 探している国や地域が見つかったら、それを選択します。 必要な回数だけこの手順を繰り返します。
+
+       選択した国のリストがポップアップに表示されます。 国または地域を削除するには、 ![[削除] ボタンをクリックします](../../media/scc-remove-icon.png)。
+
+     完了したら、**[保存]** をクリックします。
+
+8. オプションの **[迷惑メールのプロパティ]** セクションには、既定では無効になっている高度なスパム フィルター (ASF) 設定が含まれます。 ASF の設定は廃止の処理中です。この機能はフィルター処理スタックの別の部分に組み込まれます。 これらの ASF 設定はすべて、スパム対策ポリシーでオフにしておくことをお勧めします。
+
+   これらの設定の詳細については、「[Office 365 での高度なスパム フィルターの設定](advanced-spam-filtering-asf-options.md)」を参照してください。
+
+9. (必須) **[適用先]** セクションを展開して、ポリシーの適用先にする内部受信者を特定します。
+
+    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合は、OR ロジック (たとえば、_\<recipient1\>_ or _\<recipient2\>_) を使用します。 別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ and _\<member of group 1\>_) を使用します。
+
+    使用可能なすべての条件を表示するには、**[条件の追加]** を 3 回クリックするのが最も簡単です。 構成しない条件を削除するには、![[削除] ボタン](../../media/scc-remove-icon.png)をクリックします。
+
+    - **受信者のドメインが次の場合**: Office 365 で構成済みの 1 つ以上の承認済みドメイン内の受信者を指定します。 **[タグの追加]** ボックスをクリックして、ドメインを表示および選択します。 複数のドメインが利用可能な場合は、**[タグの追加]** ボックスをもう一度クリックして、追加のドメインを選択します。
+
+    - **受信者が次の場合**: 組織内の 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先を指定します。 **[タグの追加]** をクリックして、リストをフィルター処理するための入力を始めます。 **[タグの追加]** ボックスをもう一度クリックして、追加の受信者を選択します。
+
+    - **受信者が次のメンバーの場合**: 組織内の 1 つ以上のグループを指定します。 **[タグの追加]** をクリックして、リストをフィルター処理するための入力を始めます。 **[タグの追加]** ボックスをもう一度クリックして、追加の受信者を選択します。
+
+    - **次の場合を除く**: ルールの例外を追加するには、**[条件の追加]** を 3 回クリックして、使用可能なすべての例外を表示します。 設定と動作は、条件とまったく同じです。
+
+10. 完了したら、**[保存]** をクリックします。
+
+## <a name="use-the-security--compliance-center-to-view-anti-spam-policies"></a>セキュリティ/コンプライアンス センターを使用してスパム対策ポリシーを表示する
+
+1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
+
+2. **[迷惑メール対策の設定]** ページで、![[展開] アイコン](../../media/scc-expand-icon.png)をクリックして、迷惑メール対策ポリシーを展開します。
+
+   - 既定のポリシーには **[既定のスパム フィルター ポリシー]** という名前が付いています。
+
+   - ユーザーが作成したカスタム ポリシーの場合、**[種類]** 列の値が **[Custom anti-spam policy]** (カスタム迷惑メール対策ポリシー) になっています。
+
+3. 重要なポリシー設定は、ポリシー詳細を拡張すると表示されます。 詳細を表示するには、**[ポリシーの編集]** をクリックします。
+
+## <a name="use-the-security--compliance-center-to-modify-anti-spam-policies"></a>セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを変更する
+
+1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
+
+2. **[迷惑メール対策の設定]** ページで、![[展開] アイコン](../../media/scc-expand-icon.png)をクリックして、迷惑メール対策ポリシーを展開します。
+
+   - 既定のポリシーには **[既定のスパム フィルター ポリシー]** という名前が付いています。
+
+   - ユーザーが作成したカスタム ポリシーの場合、**[種類]** 列の値が **[Custom anti-spam policy]** (カスタム迷惑メール対策ポリシー) になっています。
+
+3. **[ポリシーの編集]** をクリックします。
+
+カスタム迷惑メール対策ポリシーの場合、表示されるポップアップで使用できる設定は、「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」セクションで説明した設定と同じです。
+
+「**既定の迷惑メール対策ポリシー**」という名前の付いた既定の迷惑メール対策ポリシーの場合、**[適用先]** セクションは選択できず (ポリシーは全員に適用される)、ポリシーの名前を変更することもできません。
+
+ポリシーを有効または無効にするには、ポリシーの優先順位を設定するか、またはエンドユーザーの検疫通知を構成します。後続の各セクションをご覧ください。
+
+### <a name="enable-or-disable-anti-spam-policies"></a>迷惑メール対策の有効化または無効化
+
+1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
+
+2. **[迷惑メール対策の設定]** ページで ![[展開] アイコン](../../media/scc-expand-icon.png) をクリックすると、作成したカスタム ポリシーが展開されます (**[種類]** 列の値は **[カスタム迷惑メール対策ポリシー]**)。
+
+3. 展開して表示されたポリシー詳細で、**[On]** 列の値をメモします。
+
+   ポリシーを無効にするには、左に切り替えます。 ![オフに切り替え](../../media/scc-toggle-off.png)
+
+   ポリシーを有効にするには、右に切り替えます。 ![オンに切り替え](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+
+既定の迷惑メール対策ポリシーを無効にすることはできません。
+
+### <a name="set-the-priority-of-custom-anti-spam-policies"></a>カスタム迷惑メール対策ポリシーの優先度を設定する
+
+既定では、迷惑メール対策ポリシーには、ポリシーの作成順序に基づいた優先度が設定されます (新しいポリシーの優先度が古いポリシーよりも低くなります)。 優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。 2 つのポリシーが同じ優先度を持つことはできません。
+
+カスタム迷惑メール対策ポリシーは、処理される順に表示されます (最初のポリシーの値は **優先度** が 0)。 「**既定のスパム フィルター ポリシー**」という名前の付いた既定の迷惑メール対策ポリシーには値 **[Lowest]** が付いており、変更することはできません。
+
+ **注**: セキュリティ/コンプライアンス センターでは、スパム対策ポリシーの作成後にその優先度のみを変更できます。 PowerShell では、スパム フィルター ルールの作成時に既定の優先度を上書きできます (この上書きが既存のルールの優先度に影響を与えることがあります)。
+
+ポリシーの優先度を変更するには、リスト内で上下に移動させます (セキュリティ/コンプライアンス センター内で直接、**優先順位**番号を変更することはできません)。
+
+1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
+
+2. **[迷惑メール対策の設定]** ページで、**[種類]** 列の値が **[カスタム迷惑メール対策ポリシー]** のポリシーを検索します。 **[優先度]** 列の値に注目します。
+
+   - 最も高い優先度を持つカスタム迷惑メール対策ポリシーの値は ![下矢印アイコン](../../media/ITPro-EAC-DownArrowIcon.png) **0** です。
+
+   - 最も低い優先度を持つカスタム迷惑メール対策ポリシーの値は ![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) **n** です (たとえば、「![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) **3**」)。
+
+   - 3 つ以上のカスタム迷惑メール対策ポリシーがある場合、最も高い優先度と最も低い優先度の間のポリシーの値は、![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png)![下矢印アイコン](../../media/ITPro-EAC-DownArrowIcon.png) **n** になります (たとえば、![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png)![下矢印アイコン](../../media/ITPro-EAC-DownArrowIcon.png) **2**)。
+
+3. 上 ![矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) または ![下矢印アイコンをクリックして](../../media/ITPro-EAC-DownArrowIcon.png) ポリシー リスト内のカスタム迷惑メール対策ポリシーを上下に移動します。
+
+### <a name="configure-end-user-spam-notifications"></a>エンドユーザーの迷惑メール通知の構成
+
+スパム対策フィルター判定によりメッセージが検疫された場合に、受信者に送信されたメッセージに対する処理を知らせるために、エンドユーザーの迷惑メール通知を構成できます。 これらの通知の詳細については、「[Office 365 でのエンドユーザーの迷惑メール通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。
+
+1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
+
+2. **[迷惑メール対策の設定]** ページで、![[展開] アイコン](../../media/scc-expand-icon.png)をクリックして、迷惑メール対策ポリシーを展開します。
+
+   - 既定のポリシーには **[既定のスパム フィルター ポリシー]** という名前が付いています。
+
+   - ユーザーが作成したカスタム ポリシーの場合、**[種類]** 列の値が **[Custom anti-spam policy]** (カスタム迷惑メール対策ポリシー) になっています。
+
+3. 展開して表示されたポリシー詳細で、**[エンドユーザーのスパム通知を構成する]** をクリックします。
+
+4. **\<[ポリシー名]\>** ダイアログが開いたら、以下の設定を行います。
+
+   - **エンドユーザーのスパム通知を有効にする**: 通知を有効にするには、このチェックボックスをオンにします。 通知を無効にするには、チェックボックスをオフにします。
+
+   - **エンドユーザーの迷惑メール通知の送信間隔 (日)**: 通知が送信される頻度を選択します。 既定値は 3 日です。 1 日から 15 日まで入力できます。
+
+   - **通知言語**: ドロップダウンをクリックして、リストから使用可能な言語を選びます。 既定値は **Default** で、エンドユーザーへの検疫通知では EOP 組織の既定の言語が使用されます。
+
+   完了したら、**[保存]** をクリックします。
+
+## <a name="use-the-security--compliance-center-to-remove-anti-spam-policies"></a>セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを削除する
+
+1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
+
+2. **[迷惑メール対策の設定]** ページで、![[展開] アイコン](../../media/scc-expand-icon.png)をクリックし、削除するカスタム ポリシーを展開します (**[種類]** 列の値は **[カスタム迷惑メール対策ポリシー]**)。
+
+3. 展開されたポリシー詳細で、**[ポリシーの削除]** をクリックします。
+
+4. 警告ダイアログが表示されたら、**[はい]** をクリックします。
+
+既定のポリシーは削除できません。
+
+## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-anti-spam-policies"></a>Exchange Online PowerShell または Exchange Online Protection PowerShell を使用して迷惑メール対策ポリシーを構成する
+
+次の迷惑メール対策ポリシー設定は、PowerShell でのみ使用できます。
+
+- _MarkAsSpamBulkMail_ パラメーター (既定は `On`)。 この設定の影響については、このトピックで前述した「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」で説明されています。
+
+- 次の設定は、エンドユーザーの迷惑メール検疫通知の設定です。
+
+  - _DownloadLink_ パラメーター。これにより、Outlook の迷惑メール報告ツールへのリンクを表示または非表示にできます。
+
+  - _EndUserSpamNotificationCustomSubject_ パラメーター。これにより、通知の件名行をカスタマイズできます。
+
+### <a name="use-powershell-to-create-anti-spam-policies"></a>PowerShell を使用して迷惑メール対策ポリシーを作成する
+
+PowerShell では、2 段階の手順で迷惑メール対策ポリシーを作成します。
+
+1. スパム フィルター ポリシーを作成する。
+
+2. スパム フィルター ルールの適用先とするスパム フィルター ポリシーを指定するルールを作成する。
+
+ **注**:
+
+- 新しいスパム フィルター ルールを作成して、既存の関連付けされていないスパム フィルター ポリシーをそれに割り当てることができます。 1 つのスパム フィルター ルールを複数のスパム フィルター ポリシーに関連付けることはできません。
+
+- ポリシーを作成してからでなければセキュリティ/コンプライアンス センターで使用できない次の設定を、PowerShell で新しいスパム フィルター ポリシーに構成できます。
+
+  - 新しいポリシーを無効化された状態で作成する (**New-HostedContentFilterRule** コマンドレットで _Enabled_`$false` を指定)。
+
+  - 作成時にポリシーの優先度を設定する (**New-HostedContentFilterRule** コマンドレットで _Priority_ _\<Number\>_ を指定)。
+
+- ポリシーをスパム フィルター ルールに割り当てるまでは、PowerShell で作成した新しいスパム フィルター ポリシーをセキュリティ/コンプライアンス センターに表示することはできません。
+
+#### <a name="step-1-use-powershell-to-create-a-spam-filter-policy"></a>手順 1: PowerShell を使用してスパム フィルター ポリシーを構成する
+
+スパム フィルター ポリシーを作成するには、次の構文を使用します。
+
+```PowerShell
+New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
+```
+
+この例では、次のような設定で Contoso Executives という名前のスパム フィルター ポリシーを作成します。
+
+- スパム対策フィルター判定が「スパム」または「高確度スパム」の場合は、メッセージを検疫します。
+
+- BCL 6 で、「バルク メール」スパム対策フィルター判定のアクションがトリガーされます。
+
+```PowerShell
+New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamAction Quarantine -SpamAction Quarantine -BulkThreshold 6
+```
+
+> [!NOTE]
+> **New-HostedContentFilterPolicy** と **Set-HostedContentFilterPolicy** には古い _ZapEnabled_ パラメーターと、新しい _PhishZapEnabled_ および _SpamZapEnabled_ パラメーターが含まれています。 _ZapEnabled_ パラメーターは 2020 年 2 月に廃止されました。 _PhishZapEnabled_ および _SpamZapEnabled_ パラメーターでは、値を _ZapEnabled_ パラメーターから継承して使っていました。 ただし、コマンドで _PhishZapEnabled_ や _SpamZapEnabled_ パラメーターを使用する場合や、セキュリティ/コンプライアンス センターで **[Spam ZAP]** (迷惑メールに対する ZAP) 設定や **[フィッシング詐欺に対する ZAP]** 設定を使用する場合、_ZapEnabled_ パラメーターの値は無視されます。 つまり、_ZapEnabled_ パラメーターは使用せず、代わりに _PhishZapEnabled_ および _SpamZapEnabled_ パラメーターを使用します。
+
+構文とパラメーターの詳細については、「[New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy)」を参照してください。
+
+#### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>手順 2: PowerShell を使用してスパム フィルター ルールを作成する
+
+スパム フィルター ルールを作成するには、次の構文を使用します。
+
+```PowerShell
+New-HostedContentFilterRule -Name "<RuleName>" -HostedContentFilterPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
+```
+
+この例では、次に示す設定で Contoso Executives という新しいスパム フィルター ルールを作成します。
+
+- Contoso Executives という名前のスパム フィルター ポリシーがルールに関連付けられています。
+
+- ルールは Contoso Executives Group という名前のグループのメンバーに適用されます。
+
+```PowerShell
+New-HostedContentFilterRule -Name "Contoso Executives" -HostedContentFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
+```
+
+構文とパラメーターの詳細については、「[New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-view-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを表示する
+
+すべてのスパム フィルター ポリシーの要約リストを返すには、次のコマンドを実行します。
+
+```PowerShell
+Get-HostedContentFilterPolicy
+```
+
+特定のスパム フィルター ポリシーに関する詳細情報を返すには、次の構文を使用します。
+
+```PowerShell
+Get-HostedContentFilterPolicy -Identity "<PolicyName>" | Format-List [<Specific properties to view>]
+```
+
+この例では、Executives というスパム フィルター ポリシーのすべてのプロパティの値を戻します。
+
+```PowerShell
+Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
+```
+
+構文とパラメーターの詳細については、「[Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterpolicy)」を参照してください。
+
+### <a name="use-powershell-to-view-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールを表示する
+
+既存のスパム フィルター ルールを表示するには、次の構文を使用します。
+
+```PowerShell
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+```
+
+すべてのスパム フィルター ルールの要約リストを返すには、次のコマンドを実行します。
+
+```PowerShell
+Get-HostedContentFilterRule
+```
+
+ルールを有効または無効にしてリストをフィルター処理するには、次のコマンドを実行します。
+
+```PowerShell
+Get-HostedContentFilterRule -State Disabled
+```
+
+```PowerShell
+Get-HostedContentFilterRule -State Enabled
+```
+
+特定のスパム フィルター ルールの詳細情報を返すには、次の構文を使用します。
+
+```PowerShell
+Get-HostedContentFilterRule -Identity "<RuleName>" | Format-List [<Specific properties to view>]
+```
+
+この例では、Contoso Executives というスパム フィルター ルールのすべてのプロパティの値を返します。
+
+```PowerShell
+Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
+```
+
+構文とパラメーターの詳細については、「[Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-modify-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを変更する
+
+以下の項目以外には、このトピックで前述の「[手順 1: PowerShell を使用してスパム フィルター ポリシーを作成する](#step-1-use-powershell-to-create-a-spam-filter-policy)」で説明されたようにポリシーを作成したときと同じ設定を、PowerShell を使ってスパム フィルター ポリシーを変更するときに使用できます。
+
+- 特定のポリシーを既定のポリシー (全員に適用され、常に **Lowest** 優先度を持ち、削除することはできない) に切り替える _MakeDefault_ スイッチは、PowerShell でスパム フィルター ポリシーを変更するときにのみ使用できます。
+
+- スパム フィルター ポリシーの名前を変更することはできません (**Set-HostedContentFilterPolicy** コマンドレットには _Name_ パラメーターがありません)。 セキュリティ/コンプライアンス センターでスパム対策ポリシーの名前を変更する場合は、スパム フィルター _ルール_の名前を変更するだけになります。
+
+スパム フィルター ポリシーを変更するには、次の構文を使用します。
+
+```PowerShell
+Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
+```
+
+構文とパラメーターの詳細については、「[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)」を参照してください。
+
+### <a name="use-powershell-to-modify-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールを変更する
+
+PowerShell でスパム フィルター ルールを変更するときに使用できない唯一の設定は、無効なルールの作成を可能にする _Enabled_ パラメーターです。 既存のスパム フィルター ルールを有効または無効にするには、次のセクションを参照してください。
+
+それ以外は、PowerShell でスパム フィルター ルールを変更する際に利用可能な追加の設定はありません。 このトピックで前述の「[手順 2: PowerShell を使用してスパム フィルター ルールを作成する](#step-2-use-powershell-to-create-a-spam-filter-rule)」セクションでルールを作成したときと同じ設定を使用できます。
+
+スパム フィルター ルールを変更するには、次の構文を使用します。
+
+```PowerShell
+Set-HostedContentFilterRule -Identity "<RuleName>" <Settings>
+```
+
+この例では、セキュリティ/コンプライアンス センターで問題を発生させる可能性がある `{Fabrikam Spam Filter}` という名前の既存のスパム フィルター ルールの名前を変更します。
+
+```powershell
+Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
+```
+
+構文とパラメーターの詳細については、「[Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-enable-or-disable-spam-filter-rules"></a>PowerShell を使ってスパム フィルター ルールを有効または無効にする
+
+PowerShell でスパム フィルター ルールを有効または無効にすると、すべての迷惑メール対策ポリシー (スパム フィルター ルールおよび割り当てられているスパム フィルター ポリシー) が有効または無効になります。 既定の迷惑メール対策ポリシーを有効または無効にすることはできません (常にすべての受信者に適用されます)。
+
+PowerShell でスパム フィルター ルールを有効または無効にするには、次の構文を使用します。
+
+```PowerShell
+<Enable-HostedContentFilterRule | Disable-HostedContentFilterRule> -Identity "<RuleName>"
+```
+
+この例では、Marketing Department というスパム フィルター ルールを無効化します。
+
+```PowerShell
+Disable-HostedContentFilterRule -Identity "Marketing Department"
+```
+
+この例では、同じルールを有効化します。
+
+```PowerShell
+Enable-HostedContentFilterRule -Identity "Marketing Department"
+```
+
+構文とパラメーターの詳細については、「[Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedcontentfilterrule)」と「[Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedcontentfilterrule)」を参照してください。
+
+### <a name="use-powershell-to-set-the-priority-of-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールの優先度を設定する
+
+ルールに設定できる優先度の最高値値は 0 です。 設定できる最低値はルールの数に依存します。 たとえば、ルールが五つある場合、使用できる優先度の値は 0 から 4 です。 既存の一つのルールの優先度を変更すると、他のルールにも連鎖的な影響が起こりえます。 たとえば、カスタム ルールが 5 つあって (優先度 0 から 4)、1 つのルールの優先度を 2 に変更した場合には、既存の優先度 2 のルールは優先度 3 に変更され、優先度 3 は優先度 4 に変更されます。
+
+PowerShell でスパム フィルター ルールの優先度を設定するには、次の構文を使用します。
+
+```PowerShell
+Set-HostedContentFilterRule -Identity "<RuleName>" -Priority <Number>
+```
+
+この例では、Marketing Department というルールの優先度を 2 に設定しています。優先度が 2 以下のすべての既存のルールは、優先度が 1 ずつ下がります (優先度番号が 1 ずつ増加します)。
+
+```PowerShell
+Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
+```
+
+**注**:
+
+- 新しく作成したルールの優先度を設定するには、_New-HostedContentFilterRule_ コマンドレットの **Priority** パラメーターを使用します。
+
+- 既定のスパム フィルター ポリシーには、対応するスパム フィルター ルールがありません。また、常に、**Lowest** の優先度が設定されており、変更はできません。
+
+### <a name="use-powershell-to-remove-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを削除する
+
+PowerShell を使用してスパム フィルター ポリシーを削除しても、それに対応するスパム フィルター ルールは削除されません。
+
+PowerShell でスパム フィルター ポリシーを削除するには、次の構文を使用します。
+
+```PowerShell
+Remove-HostedContentFilterPolicy -Identity "<PolicyName>"
+```
+
+この例では、Marketing Department というスパム フィルター ポリシーを削除します。
+
+```PowerShell
+Remove-HostedContentFilterPolicy -Identity "Marketing Department"
+```
+
+構文とパラメーターの詳細については、「[Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterpolicy)」を参照してください。
+
+### <a name="use-powershell-to-remove-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールを削除する
+
+PowerShell を使用してスパム フィルター ルールを削除しても、それに対応するスパム フィルター ポリシーは削除されません。
+
+PowerShell でスパム フィルター ルールを削除するには、次の構文を使用します。
+
+```PowerShell
+Remove-HostedContentFilterRule -Identity "<PolicyName>"
+```
+
+この例では、Marketing Department というスパム フィルター ルールを削除します。
+
+```PowerShell
+Remove-HostedContentFilterRule -Identity "Marketing Department"
+```
+
+構文とパラメーターの詳細については、「[Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterrule)」を参照してください。
+
+## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
+
+### <a name="send-a-gtube-message-to-test-your-spam-policy-settings"></a>GTUBE メッセージを送信して迷惑メール対策ポリシーの設定をテストする
+
+> [!NOTE]
+> これらの手順は、GTUBE メッセージを送信している電子メール組織が、送信スパムをスキャンしない場合にのみ機能します。 送信スパムをスキャンしている場合には、テスト メッセージは送信されません。
+
+Generic Test for Unsolicited Bulk Email (GTUBE) は、テスト メッセージに組み込んで組織のスパム対策設定を検証するための文字列です。 GTUBE メッセージは、マルウェア設定をテストするための European Institute for Computer Antivirus Research (EICAR) テキスト ファイルと似ています。
+
+次の GTUBE テキストを、スペースや改行なしで 1 行で電子メール メッセージに入れます。
 
 ```text
 XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
 
-## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>スパム フィルター ポリシーを微調整して誤検知や検出漏れを回避する
-
-スパム フィルター処理に対してより積極的なアプローチが求められる場合は、高度なスパム フィルター処理を有効にできます。 組織全体に適用される一般的なスパム設定については、「[Office 365 で問題ないメールが迷惑メールとしてマークされるのを防ぐ方法](prevent-email-from-being-marked-as-spam.md)」または「[検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする](reduce-spam-email.md)」を参照してください。 これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
-
 ## <a name="allowblock-lists"></a>許可リストと禁止リスト
 
 メッセージがフィルターを通過してしまう場合や、システムが処理に追いつくために時間がかかる場合があります。 このような場合のために、スパム対策ポリシーには、現在の判定を上書きするために使用できる許可リストと禁止リストが用意されています。 このオプションは、リストが管理不能なほどにならないよう、控えめに使用する必要があります。また、フィルター処理スタックがその本来の処理を実行すべきであるので、一時的に使用することをお勧めします。
 
-許可リストと禁止リストは、どちらも任意のユーザーのスパム対策ポリシーの一部として構成されます。
-
-1. **[許可リスト]** セクションでは、常に受信トレイにメールが配信されるエントリ (送信者やドメインなど) を指定できます。 これらのエントリからのメールは、迷惑メール フィルターによって処理されません。
-
-   - 信頼できる送信者を [受信許可送信者一覧] に追加します。 **[編集]**![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックし、選択ダイアログ ボックスで、許可する送信者のアドレスを追加します。 複数のエントリを区切るには、セミコロンまたは改行を使用します。 **[保存]** をクリックして、**[許可リスト]** ページに戻ります。
-
-   - 信頼できるドメインを [受信許可ドメイン一覧] に追加します。 **[編集]**![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックし、選択ダイアログ ボックスで、許可するドメインを追加します。 複数のエントリを区切るには、セミコロンまたは改行を使用します。 **[保存]** をクリックして、**[許可リスト]** ページに戻ります。
-
-   > [!CAUTION]
-   > 承認済みドメイン (自分が所有しているドメイン) や、Microsoft.com や office.com などの一般的なドメインは、許可リストに追加しないでください。 許可リストにこれらを追加すると、お客様の組織に対して、なりすましメールの送信者が無制限にメールを送信することが可能になります。
-
-2. [**受信拒否一覧**] ページで、送信者やドメインなどのエントリを指定すると、それらのエントリからのメールが常にスパムとしてマークされます。サービスにより、これらのエントリに一致する電子メールに対して、構成された精度の高いスパム処理が適用されます。
-
-   - 望ましくない送信者を [受信拒否送信者一覧] に追加します。 **[編集]**![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックし、選択ダイアログ ボックスで、禁止する送信者のアドレスを追加します。 複数のエントリを区切るには、セミコロンまたは改行を使用します。 **[保存]** をクリックして、**[禁止リスト]** ページに戻ります。
-
-   - 望ましくないドメインを [受信拒否ドメイン一覧] に追加します。 **[編集]**![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックし、選択ダイアログ ボックスで、禁止するドメインを追加します。 複数のエントリを区切るには、セミコロンまたは改行を使用します。 **[保存]** をクリックして、**[禁止リスト]** ページに戻ります。
-   
-     > [!NOTE]
-     > スパム フィルター ポリシーでは、ドメイン全体または特定の送信者をブロックできますが、ワイルドカード (\*) を使用することはできません。 
-
 > [!TIP]
 > 組織の判定が、このサービスが提供する判定と一致しない場合があります。 そのような場合、許可リストと禁止リストを永続的に保持することがあります。 ただし、ドメインをかなりの期間にわたって許可リストに追加するような場合は、送信者のドメインが認証済みであることを確認するように送信者に伝える必要があります。認証済みでない場合は、DMARC 拒否に設定する必要があります。
-
-## <a name="for-more-information"></a>関連情報
-<a name="sectionSection6"> </a>
-
-[DMARC のドメインのセットアップ](use-dmarc-to-validate-email.md)
-
-[検疫](quarantine.md)
-
-[Office 365 で問題ないメールが迷惑メールとしてマークされるのを防ぐ方法](prevent-email-from-being-marked-as-spam.md)
-
-[Office 365 で迷惑メールを減らす方法](reduce-spam-email.md)
-
-[Spam Confidence Level](spam-confidence-levels.md)

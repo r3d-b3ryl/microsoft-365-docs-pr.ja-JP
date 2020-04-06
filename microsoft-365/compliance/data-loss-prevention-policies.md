@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826292"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894888"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -88,6 +88,9 @@ DLP ポリシーは、Office 365 全体で機密情報を検出して保護で�
 特定の SharePoint サイトまたは OneDrive アカウントを含めるか、除外するかを選択した場合、DLP ポリシーに含めることができるのは、100 を超えることはできません。 こうした制限はありますが、組織全体のポリシーまたは場所全体に適用されるポリシーを適用することで、この制限を超えることができます。
   
 ### <a name="rules"></a>ルール
+
+> [!NOTE]
+> DLP ポリシーの既定の動作では、アラートが構成されていない場合、アラートまたはトリガーは実行されません。 既定の情報の種類にのみ適用されます。 ユーザー設定の情報の種類の場合、ポリシーにアクションが定義されていない場合でも、システムはアラートを発します。
 
 ルールとは、組織のコンテンツにビジネス要件を適用するものです。 ポリシーには 1 つ以上のルールが含まれ、各ルールには、条件とアクションが含まれます。 ルールごとに、条件を満たすとアクションが自動的に実行されます。 ルールは、各ポリシー内の最も高位のルールから順に実行されます。
   
@@ -423,16 +426,16 @@ DLP ポリシーを作成するときは、完全に適用する前に、影響�
 2. **通知とポリシー ヒントを利用するテスト モードに移行**して、コンプライアンス ポリシーについてユーザーを教育し、適用されるルールに対して準備できるようにします。この段階で、ルールをさらに精緻化できるように、ユーザーに誤検知を報告するよう依頼することもできます。 
     
 3. **ポリシーの完全な適用を開始**し、ルールのアクションが適用され、コンテンツが保護されるようにします。 DLP レポートやインシデント レポート、通知を引き続き監視して、結果が計画どおりであることを確認します。 
-    
-![テスト モードを使用しポリシーで有効化するオプション](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
-  
-いつでも DLP ポリシーを無効にできます。ポリシーのすべてのルールに反映されます。 ただし、ルール エディターで状態を切り替えることで、各ルールを個別に無効にできます。
-  
-![ポリシー内のルールを無効にするオプション](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-ポリシー内の複数のルールの優先順位を変更することもできます。 変更するには、編集のためのポリシーを開きます。 ルールの行では、省略記号 (**...**) を選択し、[**下へ移動**] または [**最後へ移動**] などのオプションを選択します。
+    ![テスト モードを使用しポリシーで有効化するオプション](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-![ルールの優先順位を設定する](../media/dlp-set-rule-priority.png)
+    いつでも DLP ポリシーを無効にできます。ポリシーのすべてのルールに反映されます。 ただし、ルール エディターで状態を切り替えることで、各ルールを個別に無効にできます。
+
+    ![ポリシー内のルールを無効にするオプション](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+    ポリシー内の複数のルールの優先順位を変更することもできます。 変更するには、編集のためのポリシーを開きます。 ルールの行では、省略記号 (**...**) を選択し、[**下へ移動**] または [**最後へ移動**] などのオプションを選択します。
+
+    ![ルールの優先順位を設定する](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP レポート
 
@@ -534,9 +537,9 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     
 2. DLP レポート用のいずれかのコマンドレットを使用します。
     
-  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
-    
-  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>詳細情報
 
@@ -554,4 +557,3 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
     
-
