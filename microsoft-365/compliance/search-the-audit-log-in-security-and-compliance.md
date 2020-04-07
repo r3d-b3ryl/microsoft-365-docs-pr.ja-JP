@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955686"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151442"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -588,9 +588,9 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |:-----|:-----|:-----|
 |ユーザーの追加|Add user|Office 365 ユーザー アカウントが作成されました。|
 |ユーザー ライセンスの変更|ユーザー ライセンスを変更します|ユーザーに割り当てられたライセンスが変更されました。変更されたライセンスを表示するには、対応する "**ユーザーが更新されました**" アクティビティを参照してください。|
-|ユーザー パスワードが変更されました|Change user password|管理者がユーザーのパスワードを変更しました。|
+|ユーザー パスワードが変更されました|Change user password|ユーザーがパスワードを変更します。 ユーザーがパスワードをリセットするには、組織内のすべてのユーザーまたは選択したユーザーに対して、セルフサービスパスワードリセットを有効にする必要があります。 Azure Active Directory でセルフサービスのパスワードリセットアクティビティを追跡することもできます。 詳細情報については、[Azure ADパスワード管理に関するレポート　オプション](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting)をご覧ください。
 |ユーザーの削除|Delete user|Office 365 ユーザー アカウントが削除されました。|
-|パスワードの再設定|Reset user password|管理者がユーザーのパスワードを再設定しました。|
+|パスワードの再設定|Reset user password|管理者がユーザーのパスワードを再設定します。|
 |ユーザーへパスワードの変更を強制するプロパティの設定|Set force change user password|管理者が、ユーザーが次に Office 365 にサインインしたときにパスワードを強制的に変更させるプロパティを設定しました。|
 |ライセンス プロパティの設定|Set license properties|管理者が、ユーザーに割り当てられたライセンスのプロパティを変更しました。|
 |ユーザーの更新|ユーザーを更新する|管理者がユーザー アカウントの 1 つ以上のプロパティを変更しました。更新可能なユーザー プロパティの一覧については、「[Azure Active Directory 監査レポート イベント](https://go.microsoft.com/fwlink/p/?LinkID=616549)」の「ユーザー属性の更新」セクションを参照してください。|
@@ -807,7 +807,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 
 ### <a name="content-explorer-activities"></a>コンテンツ エクスプローラー アクティビティ
 
-Office 365 監査ログに記録されるコンテンツ エクスプローラーのアクティビティの一覧を次の表に記載します。 コンテンツ エクスプローラーは、Microsoft 365 コンプライアンス センターの [データ分類ツール] でアクセスできます。 詳細については、「[コンテンツ エクスプローラーの使用を開始する (プレビュー)](data-classification-content-explorer.md)」を参照してください。
+Office 365 監査ログに記録されるコンテンツ エクスプローラーのアクティビティの一覧を次の表に記載します。 コンテンツ エクスプローラーは、Microsoft 365 コンプライアンス センターの [データ分類ツール] でアクセスできます。 詳細については、「[データ分類コンテンツ エクスプローラーの使用](data-classification-content-explorer.md)」を参照してください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
