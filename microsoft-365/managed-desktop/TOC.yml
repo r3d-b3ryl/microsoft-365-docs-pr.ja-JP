@@ -10,6 +10,8 @@
           href: intro/technologies.md
         - name: Microsoft マネージド デスクトップと ITIL (IT インフラストラクチャ ライブラリ)
           href: MMD-and-ITSM.md
+        - name: コンプライアンス
+          href: intro/compliance.md
     - name: Microsoft マネージド デスクトップ サービスの説明
       href: service-description/index.md
       items:
