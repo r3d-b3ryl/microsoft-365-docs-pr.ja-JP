@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6ffe912cd9926585181af54cc85c144aef4ce866
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f44d7cd5b919fb06ffb10c39e632956005231e01
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142673"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153752"
 ---
 # <a name="compliance"></a>コンプライアンス
 
@@ -33,7 +33,7 @@ Microsoft マネージドデスクトップでは、次の資格が得られま�
 - [サービス組織の制御 (SOC) 1、2、3](../../compliance/offering-SOC.md)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](../../compliance/offering-PCI-DSS.md)
 
-## <a name="auditor-reports-and-client-certificates"></a>監査者レポートとクライアント証明書
+## <a name="auditor-reports-and-compliance-certificates"></a>監査者レポートとコンプライアンス証明書
 
 [Service Trust Portal (STP)](https://servicetrust.microsoft.com/)には、Microsoft クラウドサービスの提供に関する情報を提供する中心的なリポジトリであるコントロールと技術の要件を含む、関連情報を見つけることができます。 [監査レポート]、[コンプライアンス証明書] など、STP の [[監査レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)] セクションからダウンロードできます。
 

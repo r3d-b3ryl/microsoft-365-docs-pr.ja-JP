@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 E3 から、ビジネスを Microsoft 365 Business に移行する方法について説明します。
-ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409682"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153534"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Office 365 E3 から Microsoft 365 Business への移行 
 
@@ -52,7 +52,7 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 | **脅威保護**        | | | 
 | Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
 | **ID 管理**        | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  | 
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  | 
 | **デバイスとアプリの管理**        | | |
 | Microsoft Intune、Windows 自動操縦|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    |  |
 | 共有コンピューターのライセンス認証|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png)| 

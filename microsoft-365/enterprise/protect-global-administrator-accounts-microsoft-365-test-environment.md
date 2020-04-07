@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 次の手順を使用して、Microsoft 365 Enterprise テスト環境の全体管理者アカウントを保護します。
-ms.openlocfilehash: 9452ac7bafec416833ece9cbcb645bd7eeee21cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e6b93e3888873b6d78fec1802d179ed9624ffa63
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084326"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153870"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保護する
 
@@ -55,7 +55,7 @@ Microsoft 365 Enterprise テスト環境で全体管理者アカウントを保�
 2. [**ユーザー > アクティブユーザー**] をクリックし、[**ユーザーの追加**] をクリックします。
 3. [**ユーザーの追加**] ウィンドウで、[**名前**]、[**表示名**]、および [ユーザー**名**] に**DedicatedAdmin**入力します。
 4. [**パスワード**] をクリックし、[**パスワードの作成を許可**する] をクリックして、強力なパスワードを入力します。 この新しいアカウントのパスワードを安全な場所に記録します。
-5. **[次へ]** をクリックします。
+5. [ **次へ**] をクリックします。
 6. [**製品ライセンスの割り当て**] ウィンドウで、[ **Microsoft 365 e5** ] または [ **Office 365 E5**] を選択し、[**次へ**] をクリックします。
 7. [**オプションの設定**] ウィンドウで、[**役割**] をクリックし、[**管理センター** ] [アクセス] および [**グローバル管理者**] を選択します。[**次へ**] をクリックします。
 8. [**ほぼ完了**] ウィンドウで、[**追加の完了**] をクリックし、[**閉じる**] をクリックします。

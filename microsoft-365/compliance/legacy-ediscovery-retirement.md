@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Office 365 Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
+ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024357"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43158438"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -53,10 +53,8 @@ ms.locfileid: "43024357"
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
-   
 
-
-- [Office 365 Advanced ediscovery](office-365-advanced-ediscovery.md)V2.0 (Office 365 Security & コンプライアンスセンターの電子情報開示ケースによってアクセスされる先進電子情報開示の最初のバージョン)。
+- Office [365 Advanced ediscovery v 1.0](office-365-advanced-ediscovery.md)。これは、Office 365 セキュリティ & コンプライアンスセンターの主要な電子情報開示ケースによってアクセスされる、高度な電子情報開示の最初のバージョンです。 高度な電子情報開示 v2.0 の廃止は、コア電子情報開示ケースの作成と管理の能力に影響を与えません。
 
 > [!NOTE]
 > 廃止される電子情報開示の機能は、クラウドベースのバージョンの Microsoft 365 および Office 365 にのみ適用されます。 オンプレミスバージョンの Exchange と SharePoint の電子情報開示機能は、今後の通知まで引き続きサポートされます。
@@ -141,7 +139,7 @@ ms.locfileid: "43024357"
 <tr class=even>
   <td>あるメールボックスから別のメールボックスにメッセージをコピーする</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">メールボックスへのアクセス許可の割り当て</a></td>
-  <td>他のユーザーの電子メールにアクセスできるようにする (従業員が組織を離れたときに、別のユーザーに元従業員の電子メールへのアクセス権を付与する必要がある場合など) には、そのユーザーに元従業員のアクセス許可を割り当てることをお勧めします。メール. そのため、メールボックスアイテムを別のユーザーのメールボックスまたは共有メールボックスにコピーするのではなく、移動元のメールボックスにアクセスするためのユーザー権限のみを割り当てます。</td>
+  <td>他のユーザーの電子メールにアクセスできるようにする (従業員が組織を離れたときに、別のユーザーに元従業員の電子メールへのアクセス権を付与する必要がある場合など) には、元従業員のメールボックスにアクセスするためのアクセス許可を割り当てることをお勧めします。 そのため、メールボックスアイテムを別のユーザーのメールボックスまたは共有メールボックスにコピーするのではなく、移動元のメールボックスにアクセスするためのユーザー権限のみを割り当てます。</td>
   
   </tr>
 <tr class="odd">
@@ -222,13 +220,13 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 </tr>
 <tr class="odd">
 <td>検索結果を探索メールボックスにコピーする</td>
-<td>なし</td>
+<td>None</td>
 <td>この機能は、Microsoft 365 のすべてのサービスへのアクセスを提供しないので、直接交換することはできません。 代替ソリューションについては、以下の FAQ を参照してください。</td>
 </tr>
   <tr class=even>
   <td>あるメールボックスから別のメールボックスにメッセージをコピーする</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">メールボックスへのアクセス許可の割り当て</a></td>
-  <td>他のユーザーの電子メールにアクセスできるようにする (従業員が組織を離れたときに、別のユーザーに元従業員の電子メールへのアクセス権を付与する必要がある場合など) には、そのユーザーに元従業員のアクセス許可を割り当てることをお勧めします。メール. そのため、メールボックスアイテムを別のユーザーのメールボックスまたは共有メールボックスにコピーするのではなく、移動元のメールボックスにアクセスするためのユーザー権限のみを割り当てます。</td>
+  <td>他のユーザーの電子メールにアクセスできるようにする (従業員が組織を離れたときに、別のユーザーに元従業員の電子メールへのアクセス権を付与する必要がある場合など) には、元従業員のメールボックスにアクセスするためのアクセス許可を割り当てることをお勧めします。 そのため、メールボックスアイテムを別のユーザーのメールボックスまたは共有メールボックスにコピーするのではなく、移動元のメールボックスにアクセスするためのユーザー権限のみを割り当てます。</td>
   
   </tr>
 
@@ -331,14 +329,28 @@ Exchange Web サービス API のこれらの操作は、exchange 管理セン�
 
 ## <a name="advanced-ediscovery-v10"></a>高度な電子情報開示 v2.0 v 1.0
 
-Advanced eDiscovery v2.0 は、[ **advanced ediscovery を**中止しています] をクリックして電子情報開示の場合に使用できる高度な電子情報開示のバージョンです。 この機能は、Microsoft 365 コンプライアンスセンターの新しい[高度な電子情報開示ソリューション](https://aka.ms/edisco)に置き換えられました。
+Advanced eDiscovery v2.0 は、[ **Advanced ediscovery に切り替え**] をクリックすることで、コア電子情報開示のケースで利用可能なアドバンスト ediscovery のバージョンで、廃止される予定です。 この機能は、Microsoft 365 コンプライアンスセンターの新しい[高度な電子情報開示ソリューション](https://aka.ms/edisco)に置き換えられました。
+
+組織が Advanced eDiscovery v2.0 を使用しているかどうかを判断するには、次のようにします。
+
+1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)に移動します。
+
+2. セキュリティ & コンプライアンスセンターの左側のナビゲーションウィンドウで、[電子情報開示 **> 電子**情報開示] をクリックし、コア電子情報開示ケースを開きます。
+
+3. [**高度な電子情報開示に切り替え**] ボタンが表示されている場合は、それをクリックすると、[advanced ediscovery] の1.0 バージョンに移動します。これは廃止されています。 コア電子情報開示でケースを作成して管理する機能は影響を受けません。 高度な電子情報開示のサポート案件データを追加および分析する機能 ([ **Advanced ediscovery への切り替え**] をクリックする) は廃止されています。
 
 Microsoft 365 の新しい高度な電子情報開示ソリューション (*上級電子情報開示*v2.0 とも呼ばれる) は、元のソリューションのすべての機能を提供していますが、他の Microsoft 365 サービスのコンテンツを特定し、そのコンテンツを収集して、レビュー担当者が fast search クエリ、タグ付け、および分析機能を利用して関連するドキュメントを選別できる 上級電子情報開示では、Microsoft および Microsoft 以外のファイルの種類の処理機能とネイティブビューアーが向上しています。[ここ](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20)では、ファイルの種類の完全なリストと、サポートされているメタデータフィールドについて[説明します](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 また、新しい高度な電子情報開示ソリューションは、強力な電子情報開示ケース内で、さまざまなサービスのコンテンツに保持を適用したり、保留リストのユーザーに通知したり、保管担当者応答を追跡したりする強力な保管担当者ホールド管理機能を提供します。
+
+Advanced eDiscovery v2.0 にアクセスするには、次のようにします。
+
+1. [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)に移動します。
+
+2. Microsoft 365 コンプライアンスセンターの左側のナビゲーションウィンドウで、[**すべて表示**] をクリックし、[**電子情報開示 > 詳細**] をクリックします。
 
 現時点では、新しい高度な電子情報開示の機能への電子情報開示ワークフローの移行を開始することをお勧めします。 既存のケースでは引き続き Advanced eDiscovery v2.0 にアクセスできますが、Microsoft サポートでは、2020年10月1日以降のサポートは提供されません。 詳細については、次のタイムラインを参照してください。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
-    
+
 - Office 365 と Microsoft 365 エンタープライズ組織
 
 - Office 365 および Microsoft 365 エデュケーション組織

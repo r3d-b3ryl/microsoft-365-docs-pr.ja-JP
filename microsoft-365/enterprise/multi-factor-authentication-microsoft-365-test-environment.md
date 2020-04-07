@@ -15,18 +15,18 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 エンタープライズテスト環境でスマートフォンに送信されるテキストメッセージを使用して、多要素認証を構成します。
-ms.openlocfilehash: ea2041a463b224781df101251dab0f4d9f0e8753
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b17c6b3b39bebaff2737ea5e9bb198beef00844c
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633195"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153882"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境用の多要素認証
 
 *このテストラボ ガイドは、Microsoft 365 Enterprise および Office 365 Enterprise テスト環境に使用できます。*
 
-サブスクリプションに対して Azure AD テナントを使用する Microsoft 365 またはサービスやアプリケーションにサインインするための追加のレベルのセキュリティについては、Azure 多要素認証を有効にすることができます。これには、ユーザー名とパスワードだけを使用して確認することができます。分割払. 
+サブスクリプションに対して Azure AD テナントを使用する Microsoft 365 または任意のサービスまたはアプリケーションにサインインするための追加のセキュリティレベルについては、Azure 多要素認証を有効にすることができます。これには、アカウントを確認するために、ユーザー名とパスワードだけを必要とします。 
 
 多要素認証では、ユーザーは電話での通話を承認する必要があり、テキストメッセージで送信された検証コードを入力するか、またはパスワードを正しく入力した後にスマートフォンでアプリパスワードを指定する必要があります。 この第 2 の認証要素が満たされた後でのみ、ユーザーはサインインできます。 
   

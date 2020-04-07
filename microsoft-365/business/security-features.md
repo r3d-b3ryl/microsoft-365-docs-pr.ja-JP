@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Pc、電話、タブレットでデータを保護するために Microsoft 365 Business に付属するセキュリティ機能について説明します。
-ms.openlocfilehash: 85f9b50225c3dbdb0c1b76c33d516aaa03bec773
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 3f638a3287c06ded7bf4c29c647e62cbf3fca969
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561262"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153800"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business security and コンプライアンス機能
 
@@ -74,11 +74,11 @@ Microsoft 365 Business の高度な機能を使用すると、サイバー脅威
 
 - **[Azure portal の Intune のすべての機能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    Azure portal で Intune 管理センターにアクセスすると、MacOS デバイス、iPhone、Android デバイスの管理などの追加のセキュリティ機能を、Microsoft では利用できない Windows のアドバンストデバイス管理と共にセットアップすることができます。365 Business 管理センター
-- **Azure AD P1 プランと同じ[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
+    Azure portal で Intune 管理センターにアクセスすると、Microsoft 365 Business 管理センターでは利用できない、Windows のアドバンストデバイス管理とともに、MacOS デバイス、iPhone、Android デバイスの管理など、追加のセキュリティ機能を設定できます。
+- **Azure AD Premium P1 プランと同じ[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
 
-    条件付きアクセスでは、サインインリスクから組織を保護したり、予期しないネットワークまたはロケールからのアクセス試行、危険なデバイスの種類からのアクセス試行などを行ったりすることができます。 条件付きアクセスポリシーは、最初の認証が完了した後に適用され、最初の認証イベントからの信号を使用して、試行されたアクセスを承認するか、拒否するか、またはより多くの証明書を (たとえば、2番目の形式の識別) する必要があるかを判断します。が必要です。
+    条件付きアクセスでは、サインインリスクから組織を保護したり、予期しないネットワークまたはロケールからのアクセス試行、危険なデバイスの種類からのアクセス試行などを行ったりすることができます。 条件付きアクセスポリシーは、最初の認証が完了した後に適用され、最初の認証イベントからの信号を使用して、試行されたアクセスを承認するか、拒否するか、または、より多くの証明 (たとえば、2番目の形式の識別) を必要とするかを決定します。
 
     含まれている条件付きアクセス機能は次のとおりです。
 

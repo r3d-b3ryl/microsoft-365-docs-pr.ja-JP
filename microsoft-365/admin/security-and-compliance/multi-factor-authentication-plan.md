@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 での多要素認証について、および設定するために従う必要のある手順について説明します。
-ms.openlocfilehash: 2e2cbc9d6d966a9858fafb62f08d26893c9f4353
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e3886387740fe904b9c9458f7b1abf736c3ef83f
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361178"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153570"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 展開用の多要素認証の計画
 
@@ -61,8 +61,8 @@ Office 365 をクラウドのみで展開しているか、シングル サイ�
   
 |**Office 365 テナントを管理する場所**|**MFA の第 2 要素のオプション**|
 |:-----|:-----|
-|クラウドのみ  <br/> |Azure Active Directory MFA (テキストまたは電話)  <br/> |
-|ハイブリッド セットアップ、オンプレミスで管理  <br/> | ユーザー ID をオンプレミスで管理する場合、次のような選択肢があります。  <br/>  物理または仮想スマート カード (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677) (AD FS 用モジュール)  <br/>  Azure AD MFA  <br/> |
+|クラウドのみ  <br/> |Azure 多要素認証 (テキストまたは電話通話)  <br/> |
+|ハイブリッド セットアップ、オンプレミスで管理  <br/> | ユーザー ID をオンプレミスで管理する場合、次のような選択肢があります。  <br/>  物理または仮想スマートカード (AD FS を使用している場合)  <br/> [Azure 多要素認証](https://go.microsoft.com/fwlink/p/?LinkId=526677)(AD FS のモジュール)  <br/>  Azure Active Directory (Azure AD) 多要素認証  <br/> |
    
   
 次の図は、最新の Windows 版 Office 2013 のデバイス アプリで MFA を使用してユーザーがどのようにサインインするかを示しています。 Office 2013 デバイス アプリは、[Active Directory Authentication Library (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684) を使用して多要素認証をサポートしています。 Azure AD は、ユーザーがサインインする Web ページをホストします。 ID プロバイダーは、Azure AD の場合も、AD FS などのフェデレーション ID プロバイダーの場合もあります。 フェデレーション ユーザーを認証する場合は、次の手順に従います。
@@ -127,7 +127,7 @@ MFA を有効にするには、次の手順をすべて実行する必要があ�
     
   - [Windows デバイス上の Office 2013 で先進認証を有効にします](enable-modern-authentication.md) 。 
     
-  - サードパーティのディレクトリ サービスを使用して Azure MFA をセットアップします。
+  - サードパーティ製のディレクトリサービスを使用して Azure 多要素認証を設定します。
     
     このプログラムに対して使用される特定の id プロバイダーの情報については、「 [Azure 多要素認証」および「サードパーティ VPN ソリューションによる高度なシナリオ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」を参照してください。 
     
@@ -136,7 +136,7 @@ MFA を有効にするには、次の手順をすべて実行する必要があ�
 3. それぞれのユーザーに MFA を使ったサインイン方法を説明します。[2 段階認証で Office 365 にサインインする](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
     
 > [!IMPORTANT]
-> 先進認証が有効になっていない Office 2013 が実行されているデバイスをユーザーが使用している場合、ユーザーに対して Azure AD MFA を有効にしても、それらのデバイスではアプリケーション パスワードを使用する必要があります。 アプリケーション パスワード、パスワードを使用するタイミング、場所、方法については、「[Azure Multi-Factor Authentication でのアプリケーション パスワード](https://go.microsoft.com/fwlink/p/?LinkId=528178)」を参照してください。 
+> ユーザーが Azure 多要素認証を有効にしていて、モダン認証が有効になっていない Office 2013 を実行しているデバイスがある場合は、それらのデバイスで AppPasswords を使用する必要があります。 アプリケーション パスワード、パスワードを使用するタイミング、場所、方法については、「[Azure Multi-Factor Authentication でのアプリケーション パスワード](https://go.microsoft.com/fwlink/p/?LinkId=528178)」を参照してください。 
   
 ## <a name="faq"></a>FAQ
 
@@ -148,7 +148,7 @@ MFA を有効にするには、次の手順をすべて実行する必要があ�
   
  **Azure Multi-Factor Authentication のトラブルシューティング**
   
-「[Azure Multi-Factor Authentication についてよく寄せられる質問](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)」を参照してください。
+「 [Azure 多要素認証のトラブルシューティング](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)」を参照してください。
   
 [AD FS を運用している組織のモダン認証によるサインイン問題のトラブルシューティング](https://support.microsoft.com/kb/3052203/)
   

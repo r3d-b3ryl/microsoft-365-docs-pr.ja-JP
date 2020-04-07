@@ -15,20 +15,26 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: 595381984390321ed810af61f6234428f31551f3
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4cb08f79bd45199b443332fc80b1d595ee3f17cb
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106093"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151408"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
->*[セキュリティ & コンプライアンスのための Microsoft 365 ライセンスガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 Microsoft 365 コンプライアンスセンターまたは同等のラベル付けセンターから機密ラベルが[公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)されている場合は、作成または編集時にデータを分類して保護するために、ユーザーが Office アプリに表示され始めます。
 
 この記事の情報を使用して、Office アプリの機密ラベルを正常に管理するのに役立ちます。 たとえば、組み込みのラベルをサポートするために必要な最小限のバージョンのアプリを特定し、Azure Information Protection のユニファイドラベルクライアントと他のアプリやサービスとの互換性について理解します。
+
+## <a name="labeling-client-for-desktop-apps"></a>デスクトップアプリ用のクライアントにラベルを付ける
+
+Windows と Mac 用の Office デスクトップアプリに組み込まれている機密ラベルを使用するには、サブスクリプション版の Office を使用する必要があります。 このラベル付けクライアントは、office 2016 または Office 2019 などのスタンドアロンエディションの Office をサポートしていません。
+
+これらのスタンドアロンエディションの Windows コンピューターで機密ラベルを使用するには、 [Azure Information Protection のユニファイドラベルクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)をインストールします。
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>アプリでの機密ラベル機能のサポート
 
@@ -116,7 +122,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 - ドキュメントの場合:**ファイル** > **情報** > **保護ドキュメント** > に**よるアクセスの制限**
 - 電子メールの場合: [**オプション**] タブから [**暗号化**] を > 
   
-ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 次に例を示します。
+ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 以下に例を示します。
 
 - ユーザーが**機密 \ All Employees**ラベルをドキュメントに適用します。このラベルは、組織内のすべてのユーザーの暗号化設定を適用するように構成されています。 このユーザーは、組織外のユーザーへのアクセスを制限するように IRM 設定を手動で構成します。 最終的には、"**社外秘**" というラベルが付けられた文書が作成されますが、組織内のユーザーは意図したとおりに開くことができません。
 
@@ -126,7 +132,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ドキュメントまたは電子メールに既にラベルが付けられている場合、ユーザーはこれらの操作を実行できます。コンテンツが暗号化されていない場合、または[利用状況](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)のエクスポートまたはフルコントロールがある場合です。 
 
-有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 次に例を示します。
+有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 以下に例を示します。
 
 - ユーザーが自分のアクセス許可を割り当てる必要がある例外の場合は、[ユーザーが自分のアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)ためのラベルを提供します。 
 

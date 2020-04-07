@@ -1,6 +1,6 @@
 ---
-title: フェーズ 5-モバイルデバイス管理
-description: Microsoft 365 Enterprise には、Microsoft Intune を使用したモバイルデバイス管理が含まれます。 要件と前提条件を確認し、Azure Active Directory リソースを使用して Intune を設定し、iOS、macOS、Android、および Windows デバイスを登録し、アプリを展開し、構成プロファイルを作成し、コンプライアンスポリシーを使用して、モバイルの条件付きアクセスを有効にします。Microsoft 365 Enterprise を使用したデバイス管理。
+title: フェーズ 5 - モバイル デバイス管理
+description: Microsoft 365 Enterprise には、Microsoft Intune を使用したモバイルデバイス管理が含まれます。 要件と前提条件を確認し、Azure Active Directory リソースを使用して Intune を設定し、iOS、macOS、Android、および Windows デバイスを登録し、アプリを展開し、構成プロファイルを作成し、コンプライアンスポリシーを使用して、Microsoft 365 Enterprise でモバイルデバイス管理の条件付きアクセスを有効にします。
 keywords: Microsoft 365、Microsoft 365 Enterprise、Microsoft 365 ドキュメント、モバイルデバイス管理、Intune
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066767"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153894"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>フェーズ 5: Microsoft 365 Enterprise のモバイルデバイス管理
 

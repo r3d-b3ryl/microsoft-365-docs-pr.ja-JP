@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business について説明しています。サブスクリプションサービスには、Office 365 に加えて、ビジネスのための高度な保護がサイバーの脅威に対して含まれています。
-ms.openlocfilehash: 7b939a9037edbe074a5ef9aa24451fe462016ccb
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: fccd0403131d8afe41608c4a195b53db959e7e91
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561482"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153820"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 Business の概要
 
@@ -45,7 +45,7 @@ Microsoft 365 Business の簡単な概要については、このビデオをご
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。 
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。 
 
 Microsoft 365 Business は、最大300のライセンスを想定しています。 その他のライセンスが必要な場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。
 
@@ -76,7 +76,7 @@ Microsoft 365 Business は、次のような**脅威からの保護**に貢献�
 
 - Machine learning モデルと偽装検出を使用して高度な攻撃 (ATP のフィッシング対策知性) に対する保護を提供する、フィッシング対策ポリシーを有効にします。 
 
-- 信頼できない場所からのアクセスを無効にしたり、office ネットワークなどの信頼できる場所 (信頼された Ip や条件付きアクセスなど) から多要素認証をバイパスしたりする高度なポリシーを設定します。 
+- 信頼できない場所からのアクセスを無効にしたり、office ネットワークなどの信頼できる場所 (信頼できる Ip や条件付きアクセスなど) から多要素認証をバイパスしたりする高度なポリシーを設定します。 
 
 - 組織のすべての Windows 10 デバイスでマルウェア保護を適用し、ランサムウェアによって行われた変更から重要なシステムフォルダー内のファイルを保護します (Windows Defender)
 

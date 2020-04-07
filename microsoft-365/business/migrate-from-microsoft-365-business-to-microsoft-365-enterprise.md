@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 9e9cfcf2212faa69f600267e4f9bfd2391e3f4e5
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 0d636c0572850a53612bf756508c4b57f1b3e4eb
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409672"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153522"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Microsoft 365 Business から Microsoft 365 E3 への移行
 
@@ -61,10 +61,10 @@ Microsoft 365 Business は、お客様の中小企業に必要なすべての機
 | 攻撃対象領域の削減機能    | [このリストを表示する](#threat-protection) | Microsoft Edge のハードウェアベースの分離のエンタープライズ管理 | 
 | Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
 | **ID 管理**        | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | Cloud App Discovery、Azure AD Connect Health    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | Azure AD Office 365 apps シングルサインオン (SSO): ユーザーごとに10個のアプリ (Salesforce などのギャラリー SaaS アプリ) * | ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: 制限なし (Azure AD アプリケーションプロキシと、セルフサービスアプリ統合テンプレートを使用したギャラリー以外のアプリを使用したオンプレミスアプリ)    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Azure AD Premium P1 SSO: 制限なし (Azure AD アプリケーションプロキシと、セルフサービスアプリ統合テンプレートを使用したギャラリー以外のアプリを使用したオンプレミスアプリ)    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | **デバイスとアプリの管理**        | | | 
 | Microsoft Intune、Windows 自動操縦|     ![Microsoft 365 Business に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 |仮想デスクトップアクセス (VDA)    |  |     ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 

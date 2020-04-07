@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理者は、組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みのアイテムを復元します。 '
-ms.openlocfilehash: 1496518dac518b98fb2fc3186610f83df70fca3c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ac11a05dd9ea7a0c569e131e7939a0e4e9293dea
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241698"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151366"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
@@ -41,7 +41,7 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
     
 - メールボックスの機能をセットアップします。たとえば、メールボックス共有ポリシーを設定すると、ユーザーが予定表や連絡先の情報を組織外の人とどのように共有できるかを指定できます。 
     
-- ユーザーのメールボックスで、"[メールボックス所有者として送信する](https://support.office.com/article/2B828C5F-41AB-4904-97B9-3B63D8129C4E.aspx)" 権限および "[代理人として送信する](https://support.office.com/article/C5E7749D-244E-477F-998E-55D3876C22EC.aspx)" 権限を代理人に付与します。たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。 
+- ユーザーのメールボックスで、"[メールボックス所有者として送信する](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" 権限および "[代理人として送信する](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" 権限を代理人に付与します。たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。 
     
 - ユーザーのグループが共通の電子メールアドレスからメールを監視して送信できるように、[共有メールボックスを作成](../email/create-a-shared-mailbox.md)します。 
     

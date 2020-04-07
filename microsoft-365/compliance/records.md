@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 または Microsoft 組織でレコード管理戦略を実装するには、コンテンツをレコードとして宣言する保持ラベルを使用します。 次に、保持レコードラベルを公開または自動適用します。
-ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106145"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153835"
 ---
 # <a name="overview-of-records"></a>レコードの概要
 
@@ -107,9 +107,6 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 <br/><br/>
 
 ![レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ](../media/recordversioning8.png)
-
-> [!NOTE]
-> レコードのバージョン管理には、SharePoint サイトまたは OneDrive アカウントでレコードとして宣言されているコンテンツを編集する権限を持つユーザーごとに Office 365 Enterprise E5 ライセンスが必要です。 読み取り専用アクセス権を持つユーザーは、このライセンスを必要としません。
 
 ### <a name="locking-and-unlocking-a-record"></a>レコードのロックおよびロック解除
 

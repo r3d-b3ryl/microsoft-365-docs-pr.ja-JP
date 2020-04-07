@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理者の役割をユーザーまたは複数のユーザーに割り当てて、管理センターで特定のタスクを実行できるようにする方法について説明します。
-ms.openlocfilehash: 431c51ea4859899ba9762d6f4c5b7bf1e9ba3d8a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9c10ef7d6dade3d826c9c291e58b3e8e2a58f2a6
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241667"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151379"
 ---
 # <a name="assign-admin-roles"></a>管理者の役割を割り当てる
 
@@ -45,7 +45,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ::: moniker range="o365-worldwide"
 
@@ -84,7 +84,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。 
 
@@ -96,7 +96,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。 
 
@@ -126,7 +126,7 @@ PowerShell がわかっている場合は、「PowerShell を使用して[ユー
 
 [PowerShell を使用してユーザーアカウントに役割を割り当てる](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
-[パートナー関係を承認または削除する](https://support.office.com/article/201ccb3b-6011-4bf1-a6b2-84e7cc1ee2d0.aspx)
+[パートナー関係を承認または削除する](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)
 
 [Exchange 管理センターを使用して、別の電子メールアドレスを追加する](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
 

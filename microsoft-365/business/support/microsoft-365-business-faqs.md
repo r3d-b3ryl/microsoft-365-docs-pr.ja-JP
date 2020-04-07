@@ -12,18 +12,18 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: edb6476b7711bd17a1dd926d93bdf27d734ea9a9
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594230"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153620"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 ビジネスでよく寄せられる質問
 
 ## <a name="general"></a>全般
 
-### <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは 
+### <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは何ですか。 
 Microsoft 365 は、小規模から中規模企業向けに、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 内容は以下のとおりです。
 
 **ビジネス生産性とコラボレーションツールのセット** 
@@ -37,7 +37,7 @@ Microsoft 365 は、小規模から中規模企業向けに、クラス最高の
 -  Exchange Online アーカイブを使用して、データの保護、保持、バックアップを行うことができます。  
 -   Office および Intune アプリ保護を使用するその他のモバイルアプリのアプリ保護。 
 -  Intune デバイス管理を使用した Windows 10 Pc、MacOS、モバイルデバイスのデバイス管理。 
--  多要素認証、セルフサービスのパスワードのリセット、および条件付きアクセスを使用した id 保護。
+-  多要素認証 (MFA)、セルフサービスのパスワードのリセット、および条件付きアクセスを使用した id 保護。
 -  デバイス間での一貫&mdash;したセキュリティ構成。複数のデバイス間で企業データを保護します。Windows Defender。常に最新の状態になっています。 
  
  
@@ -67,7 +67,7 @@ Microsoft 365 Business は、Microsoft から直接購入した場合、_年間�
 ### <a name="is-there-a-cap-to-how-many-microsoft-365-business-seats-a-customer-can-have"></a>Microsoft 365 Business では、利用可能なシート数に上限はありますか。 
 Microsoft 365 Business は、小規模から中規模の IT の複雑さの要件を持つ中小企業向けに設計されています。 お客様は、組織で最大300の Microsoft 365 Business ライセンスを購入できます。 お客様は、クラウドサブスクリプションを混在させることができます。 その結果、お客様は IT 要件に応じて、Microsoft 365 Enterprise のライセンスを同じアカウントに追加することができます。 
  
-複数のサブスクリプションの種類で構成される環境をお客様が検討している場合は、Microsoft 365 Business および Microsoft 365 Enterprise の使用方法として、さまざまなサブスクリプションを管理およびセキュリティ保護するための最善の方法を決定するために、信頼できる IT アドバイザーと連携する必要があります。アプリケーションとデータをセキュリティで保護し、管理するためのさまざまな機能。
+複数のサブスクリプションの種類で構成される環境をお客様が検討する場合は、Microsoft 365 Business および Microsoft 365 Enterprise のように、さまざまなサブスクリプションを管理およびセキュリティ保護するために、さまざまな機能を使用して、アプリケーションとデータをセキュリティで保護し、管理することができます。
 
 ### <a name="can-i-combine-microsoft-365-business-with-other-microsoft-subscription-offerings"></a>Microsoft 365 Business と他の Microsoft サブスクリプションのサービスを組み合わせることはできますか。 
 はい。お客様は、Microsoft 365 Business のサブスクリプションと、Azure、Dynamics 365、Enterprise Mobility + Security、Office 365 のプランやアドオンを組み合わせることができます。
@@ -136,8 +136,8 @@ Microsoft 365 Business の展開を成功させる一番の近道は、Microsoft
 はい、Microsoft 365 Business サブスクライバーは、iOS、Android、MacOS、その他のクロスプラットフォームデバイス管理のための完全な Intune 機能を使用するライセンスを持っています。 サードパーティ製のアプリ管理や Wi-fi プロファイルの構成など、Microsoft 365 Business の簡略化された管理コンソールでは利用できない機能は、完全な Intune コンソールで管理できます。 
   
 
-### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory Premium P1 は Microsoft 365 Business に付属していますか? 
-Microsoft 365 Business には、AD 書き戻し、Azure MFA、および条件付きアクセスを使用したセルフサービスのパスワードのリセットなどの Azure AD Premium P1 (AADP P1) 機能が選択されています。 AADP P1 の全体は含まれていません。 詳細については、 [Microsoft 365 Business Service の説明](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148)を参照してください。
+### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory (Azure AD) Premium P1 には、Microsoft 365 Business が付属していますか? 
+Microsoft 365 Business には、azure ad 書き戻し、Azure 多要素認証、および条件付きアクセスを使用した、セルフサービスのパスワードのリセットなどの Azure AD Premium P1 機能を選択します。 Azure AD Premium P1 の全体は含まれていません。 詳細については、 [Microsoft 365 Business Service の説明](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148)を参照してください。
  
  
 ### <a name="does-microsoft-365-business-allow-customers-to-manage-macs"></a>Microsoft 365 Business で、ユーザーは Mac を管理できますか。 
@@ -146,7 +146,7 @@ Intune では、iOS、Android、Windows、および MacOS デバイスを安全�
 ### <a name="what-is-windows-autopilot"></a>Windows AutoPilot とは何ですか。 
 Windows AutoPilot は、新しい Windows 10 PC の展開を効率化するサービスです。 このプロセスは、Microsoft 365 Business の集中管理コントロールを活用することにより、エンド&mdash;ユーザーが初めて Microsoft 365&mdash;business にログオンするときに、デバイスに触れることなく実行できます。 Windows 10 Professional Creators Update (以降) を実行しており、工場出荷時の設定にリセットされた既存の PC に対して、Windows AutoPilot を使用することもできます。 Windows 自動操縦の詳細については、 <a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">2017 年6月のブログ投稿</a>を参照してください。
 
-## <a name="compatibility"></a>Compatibility
+## <a name="compatibility"></a>互換性
 
 ### <a name="can-i-add-office-365-add-ons-to-microsoft-365-business"></a>Office 365 のアドオンを Microsoft 365 Business に追加することはできますか。 
 Office 365 Business Premium に追加できるすべてのアドオンは、Microsoft 365 Business に追加することができます。 これは、Office 365 Cloud App Security、Advanced コンプライアンス、脅威インテリジェンス、MyAnalytics、PowerBI Pro、および電話会議を購入できることを意味します。 
@@ -163,7 +163,7 @@ Office 365 Business Premium に追加できるすべてのアドオンは、Micr
 Microsoft パートナーではない IT サービス プロバイダーの詳細については、Microsoft クラウド ソリューション プロバイダー プログラム ([https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business)) で詳細を参照できます。
 
 ### <a name="where-can-i-learn-how-to-sell-microsoft-365-business"></a>Microsoft 365 Business を販売する方法はどこで学習できますか。 
-現在 Office 365 を販売しているパートナーは、同様のコンサルティング形式の販売方法で Microsoft 365 Business を販売できます。 さらに、お客様の既存のデスクトップ環境、Active Directory の相互依存、モビリティ、およびセキュリティのニーズを把握するために、セールスチームにより多くのリソースとトレーニングを導入しています。 Microsoft 365 の完全な価値を効果的に伝達する顧客に関係のある方法でビジネスを行います。 これらのリソースについては、Office パートナー ポータル ([https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business)) を参照してください。 
+現在 Office 365 を販売しているパートナーは、同様のコンサルティング形式の販売方法で Microsoft 365 Business を販売できます。 さらに、お客様の既存のデスクトップ環境、Active Directory の相互依存、モビリティ、およびセキュリティのニーズを把握するために、セールスチームにより多くのリソースとトレーニングを導入しています。お客様にとって適切な方法で Microsoft 365 Business のすべての価値を効果的に伝えます。 これらのリソースについては、Office パートナー ポータル ([https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business)) を参照してください。 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Microsoft 365 Business はパートナーの収益性の向上にどのように役立ちますか。 
 Microsoft 365 Business によって、パートナーは運用効率の向上によりコストを削減し、追加のサービスの販売により収益を増加させることができます。 Forrester Research による、2017 年 6 月の Microsoft 365 Business に関する Total Economic Impact (TEI) 調査 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI) では、Microsoft 365 Business がパートナーの収益性に良い影響を与えることが示されています。 
@@ -183,13 +183,13 @@ Microsoft 365 Business を使用すると、パートナーは、追加のサー
 Microsoft 365 Business に含まれている新しい Windows 自動操縦機能を使用すると、展開のロジスティックスとコストが原因で新しい Windows デバイスを販売することに消極されているパートナーが、この機会を魅力的に見つけ出すことができます。 オンプレミスとモバイルデバイスのセキュリティに自信を持っているお客様も、Dynamics 365 などのより多くのサービスに投資する可能性が高くなります。 
  
 ### <a name="should-partners-sell-microsoft-365-business-over-other-plans-from-microsoft"></a>パートナーは、Microsoft の他のプランよりも Microsoft 365 Business を販売する必要がありますか。 
-Microsoft クラウド ソリューション プロバイダーは、常に、顧客のビジネス ニーズと予算に最適なプランを販売する必要があります。 たとえば、お客様がプライバシーおよびセキュリティの規制に準拠している必要がある場合、CSP は Microsoft 365 Business に加えて、お客様が要件を満たすことを支援するアドオンや、Microsoft 365 Business で提供される高度なセキュリティと管理を提案することがあります。エンタープライズ Sku。 
+Microsoft クラウド ソリューション プロバイダーは、常に、顧客のビジネス ニーズと予算に最適なプランを販売する必要があります。 たとえば、お客様がプライバシーおよびセキュリティの規制に準拠する必要がある場合、CSP は Microsoft 365 Business に加えて、お客様が要件を満たしているか、Microsoft 365 Business Enterprise Sku で提供される高度なセキュリティと管理を提案することができるアドオンを販売することがあります。 
  
 ### <a name="some-of-my-customers-have-devices-that-arent-genuine-will-microsoft-365-business-make-these-devices-genuine"></a>一部のお客様は正規品ではないデバイスを所有しています。Microsoft 365 Business によってこれらのデバイスは正規品になりますか。 
 Microsoft 365 Business は、正規品ではない正規のバージョンの Windows を正規品にすることはありません。 Microsoft 365 Business は、正規の Windows 7、8、または 8.1 Pro を実行しているお客様が Windows 10 Pro の最新の正規バージョンにアップグレードできるように、アップグレードの特典を提供しています。 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-help-customers-with-their-compliance-obligations"></a>GDPR とは何ですか。Microsoft 365 Business では、顧客のコンプライアンスの義務をどのように支援しますか。
-一般データ保護規則 (GDPR) は、欧州連合 (EU) の居住者が各自の "個人データ" をより細かく管理できるようにする包括的な新しいプライバシー法であり、組織はその個人データの整合性を維持する必要があります。 GDPR には、個人データ処理の GDPR 要件を満たすサードパーティのデータプロセッサのみを使用するように、EU 住民に結び付けられた個人データを制御または処理する組織が必要です。 2017 年 3 月、Microsoft は、これらの保証を提供する契約上の保証を利用できるようにしました。 Microsoft が追加の GDPR 義務に対応しているかどうかについての質問があるお客様は、Microsoft 365 Business で利用可能な高度なコンプライアンスおよびセキュリティ機能 (たとえば、Azure Information Protection、データ) について学習する必要があります。損失防止、Advanced Threat Protection など) およびその他のスイート (Microsoft 365 Enterprise E5 など)。 詳細については、[www.microsoft.com/gdpr](https://www.microsoft.com/gdpr) を参照してください。
+一般データ保護規則 (GDPR) は、欧州連合 (EU) の居住者が各自の "個人データ" をより細かく管理できるようにする包括的な新しいプライバシー法であり、組織はその個人データの整合性を維持する必要があります。 GDPR には、個人データ処理の GDPR 要件を満たすサードパーティのデータプロセッサのみを使用するように、EU 住民に結び付けられた個人データを制御または処理する組織が必要です。 2017 年 3 月、Microsoft は、これらの保証を提供する契約上の保証を利用できるようにしました。 Microsoft が追加の GDPR 義務をどのように支援するかについての質問があるお客様は、Microsoft 365 Business (たとえば、Azure Information Protection、データ損失防止、Advanced Threat Protection など) やその他のスイート (Microsoft 365 Enterprise E5 など) で利用できる高度なコンプライアンスおよびセキュリティ機能について学習する必要があります。 詳細については、[www.microsoft.com/gdpr](https://www.microsoft.com/gdpr) を参照してください。
 
 
 ## <a name="footnotes"></a>脚注

@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Microsoft 365 管理センターの Microsoft 365 レポートダッシュボードを使用して Microsoft Forms アクティビティレポートを取得する方法について説明します。
-ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 28520bf931df9f909a933be19800ee45fd863cd6
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046941"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151419"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>管理センターフォームアクティビティの Microsoft 365 レポート
 
@@ -41,9 +41,9 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
     
 2. **[レポートの選択**] ドロップダウンから、[**フォーム** \> **アクティビティ**] を選択します。
 
-## <a name="interpret-the-email-activity-report"></a>メール アクティビティ レポートの内容を理解する
+## <a name="interpret-the-forms-activity-report"></a>フォームアクティビティレポートを解釈する
 
-[ **アクティビティ**] と [ **ユーザー**] のグラフを見ると、ユーザーのメール アクティビティを把握できます。 
+[**アクティビティ**] グラフと [**ユーザー** ] グラフを見ると、ユーザーのフォームアクティビティを表示することができます。 
 
 ![フォームアクティビティレポート](../../media/adminformsactivity.png)
 
