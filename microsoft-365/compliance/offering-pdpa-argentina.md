@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7419bc37b40bb7e2b9b2726c4672d7d8d481ab8b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80e9ab25fda70ae723b844691dc129d0b604921
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597914"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313782"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>個人データ保護法 (PDPA) アルゼンチン
 
 ## <a name="about-the-pdpa"></a>PDPA について
 
-アルゼンチン憲法に従い、[個人データ保護法第 25.326 号](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) が 2,000 年に執行されたことで、個人データのプライバシーが保護され、公共データベース、私的データベース、レジストリに保管されているすべての情報に個人がアクセスできるようになりました。 内閣官房長官下の、アルゼンチンの公開情報へのアクセス機関 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)、AAIP) がこの法の執行を管轄します。
+アルゼンチン憲法に従い、[個人データ保護法第 25.326 号](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) が 2,000 年に執行されたことで、個人データのプライバシーが保護され、公共データベース、私的データベース、レジストリに保管されているすべての情報に個人がアクセスできるようになりました。 内閣官房長官下の、アルゼンチンの公開情報へのアクセス機関 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)、AAIP) がこの法の執行を管轄します。
 
 PDPA は、データ プライバシーを保護するために欧州の立法モデルに準拠しており、アルゼンチンは中南米で初めて欧州からのデータ転送に関する適性な必要条件を満たした国です。
 

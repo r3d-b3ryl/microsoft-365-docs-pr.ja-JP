@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise 基盤インフラストラクチャを組織に展開するための主要なフェーズ (コア展開とも呼ばれます) について理解します。
-ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951960"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153846"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise 基盤インフラストラクチャ
 
@@ -88,7 +88,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 | フェーズ | 結果 |
 |:-------|:-----|
-| ID | アカウント同期と ID ベースの条件付きアクセス ポリシーのグループ。 |
+| Identity | アカウント同期と ID ベースの条件付きアクセス ポリシーのグループ。 |
 | Windows 10 Enterprise | Windows 7 または Windows 8.1 を実行しているコンピューターを Windows 10 Enterprise に自動的にアップグレードするためのグループ。 |
 | Office 365 ProPlus | Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Office 365 ProPlus を自動的に展開するためのグループ。 |
 | モバイル デバイス管理 | デバイス登録とデバイス ベースの条件付きアクセス ポリシーのグループ。 |
@@ -98,7 +98,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 | フェーズ | ロールアウト アクション |
 |:-------|:-----|
-| ID | ID ベースの条件付きアクセス ポリシーのグループにユーザー アカウントを追加します。 |
+| Identity | ID ベースの条件付きアクセス ポリシーのグループにユーザー アカウントを追加します。 |
 | Windows 10 Enterprise | グループにアカウントを追加して、Windows 7 または Windows 8.1 を使用しているユーザーに Windows 10 Enterprise を自動的に展開します。 |
 | Office 365 ProPlus | ユーザー アカウントをグループに追加して、Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Office 365 ProPlus を自動的に展開します。 |
 | モバイル デバイス管理 | デバイス登録とデバイス ベースの条件付きアクセス ポリシーのグループにアカウントを追加します。 |

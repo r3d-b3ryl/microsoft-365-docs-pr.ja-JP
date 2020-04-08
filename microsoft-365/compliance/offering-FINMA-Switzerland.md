@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99d4b1b07c86989bce0da08324014bda7a8a7d5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602414"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313762"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>金融市場監督当局 (FINMA) スイス
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602414"
 
 [金融市場監督当局](https://www.finma.ch/en) ([EidgenössischeFinanzmarktaufsicht](https://www.finma.ch/de/)、FINMA) は、スイスの独立した金融市場の規制当局であり、スイスの金融市場が効果的に機能することを保証する責任があります。 銀行、保険会社、取引所、証券会社、その他の金融機関に対する慎重な監督を行っています。
 
-FINMA は「[2018 年 3 月期のアウトソーシング (Circular 2018/3 Outsourcing) – 銀行と保険会社](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en)」を発行し、銀行、証券会社、保険会社がサービス プロバイダーに会社の事業活動に重要な機能をアウトソーシングする際に従うべき要件を定義しました。 事業活動をアウトソーシングする企業はすべて、FINMA に対して、アウトソーシングされた機能自体を実施した場合と同様に責任を負います。
+FINMA は「[2018 年 3 月期のアウトソーシング (Circular 2018/3 Outsourcing) – 銀行と保険会社](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en)」を発行し、銀行、証券会社、保険会社がサービス プロバイダーに会社の事業活動に重要な機能をアウトソーシングする際に従うべき要件を定義しました。 事業活動をアウトソーシングする企業はすべて、FINMA に対して、アウトソーシングされた機能自体を実施した場合と同様に責任を負います。
 
 ## <a name="microsoft-and-finma"></a>Microsoft と FINMA
 
