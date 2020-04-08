@@ -11,15 +11,30 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 238c4cd0c74854def600af876f93c52e6480ebb5
-  ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
+  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/18/2020
-  ms.locfileid: "41233668"
+  ms.lasthandoff: 04/07/2020
+  ms.locfileid: "43165913"
+productDirectory:
+  title: Microsoft 365 Business を使用したリモート作業のセキュリティ保護
+  items:
+  - title: 新機能
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 は Microsoft 365 Business に送られます。
+    url: https://aka.ms/aadp1smbblog
+  - title: パートナーウェビナーを見る
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: COVID-19 と連携するように SMB のお客様を保護します。
+    url: https://aka.ms/M365v253PAL-Register
+  - title: 買い
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: パートナーを購入またはご連絡いただくには、リンクをクリックしてください。
+    url: https://aka.ms/m365bweb
 conceptualContent:
   items:
-  - title: Microsoft 365 Business とは
+  - title: Microsoft 365 Business とは何ですか。
     links:
     - url: microsoft-365-business-overview.md
       itemType: overview
@@ -36,7 +51,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: FAQ
-  - title: Microsoft 365 Business をセットアップする
+  - title: Microsoft 365 Business のセットアップ
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -85,7 +100,7 @@ conceptualContent:
       text: Office 365 Advanced Threat Protection
     - url: set-up-mfa.md
       itemType: how-to-guide
-      text: セットアップ MFA
+      text: MFA をセットアップする
     - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
       itemType: how-to-guide
       text: ランサムウェアから保護する
@@ -119,7 +134,7 @@ conceptualContent:
       text: PC & モバイルデバイス
     - url: remove-company-data.md
       itemType: how-to-guide
-      text: 会社のデータを削除する
+      text: 会社データを削除する
     - url: reset-devices-to-factory-settings.md
       itemType: how-to-guide
       text: ワイプとリセット
@@ -173,10 +188,10 @@ conceptualContent:
       text: Microsoft 365 Business へのサインアップ
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
-      text: Office 365 Business Premium からの移行
+      text: Office 365 Business Premium から移行する
     - url: migrate-from-e3.md
       itemType: how-to-guide
-      text: Office 365 E3 からの移行
+      text: Office 365 E3 から移行する
     - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
       itemType: how-to-guide
       text: Microsoft 365 Enterprise E3 への移行

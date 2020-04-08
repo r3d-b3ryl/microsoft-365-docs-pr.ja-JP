@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 から Windows 10 に大規模な組織向けの自動アップグレード
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085628"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113483"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Windows 7 から Windows 10 に大規模な組織向けの自動インプレース アップグレード
 
-Windows 7 を実行している PC のセキュリティ更新プログラムやサポートは、2020 年 1 月 14 日以降は提供されなくなります。 期限前に Windows 7 から Windows 10 へ移行し、複数のオプションを展開するために、Windows 7 から Windows 10 に移行するための最も簡単な方法をご説明します。 簡単に移行するには、既存の PC のインプレース アップグレードを行ういます。これにより、デスクトップ展開プロセスのいくつかの問題を減らすことができます。
+2020 年 1 月 14 日以降 Windows 7 を実行している PC のセキュリティ更新プログラムやサポートは提供されていません。 Windows 7 から Windows 10 へ移行する際に、いくつかの展開オプションがあるため、Windows 7 から Windows 10 に移行するための最も簡単な方法をご説明します。 簡単に移行するには、既存の PC のインプレース アップグレードを行ういます。これにより、デスクトップ展開プロセスのいくつかの問題を減らすことができます。
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ Windows 7 を実行している PC のセキュリティ更新プログラムや
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>インプレース アップグレードの信頼性、保護対策、および規模
 
-インプレース アップグレードは、ファイルの移行やアプリケーションの再インストールをせずに、Windows 7 以降を実行している既存のデバイスを Windows 10 に移行できる信頼できる方法です。 インプレース アップグレードの後も、ユーザーのファイル、設定、使用可能なアプリは、以前の Windows 7 インストールと一致します。 この機会に既存のアプリや設定をクリーンアップする場合、Windows 7 のサポート期間が終了する 2020 年 1 月が近づいているため、その他のオプションを実行する時間がありません。 アップグレードは、同じ条件のアーキテクチャ (32 ビットから 32 ビット、または 64 ビットから 64 ビット) から移行する場合や、同じ条件の Windows (Professional から Pro または Enterprise から Enterprise) のエディションから移行する場合にも機能します。
+インプレース アップグレードは、ファイルの移行やアプリケーションの再インストールをせずに、Windows 7 以降を実行している既存のデバイスを Windows 10 に移行できる信頼できる方法です。 インプレース アップグレードの後も、ユーザーのファイル、設定、使用可能なアプリは、以前の Windows 7 インストールと一致します。 アップグレードは、同じ条件のアーキテクチャ (32 ビットから 32 ビット、または 64 ビットから 64 ビット) から移行する場合や、同じ条件の Windows (Professional から Pro または Enterprise から Enterprise) のエディションから移行する場合にも機能します。
 
 アップグレードプロセスの既定では、以前の Windows のインストールがアップグレードの一部としてバックアップされます。そのため、アップグレードに失敗した場合、またはデバイスやアプリケーションが正常にアップグレード後に機能しない場合は、Windows 7 に戻すことができます。 既定では、アップグレードされた PC は 10 日間の猶予があるため、必要に応じて Windows 7 にロールバックすることができます。
 
@@ -106,4 +106,4 @@ Configuration Manager 展開タスク シーケンス用の [キャッシュ前�
 
 互換性スキャン機能付きのキャッシュ前のシーケンスをコレクション内の多数の PC に展開したら、デバイス準備状況のログファイルの解析を開始できます。 上記の出力を使用する場合は、\# "展開準備完了" として 1 (0xC1900210) を、および \#ディスク領域を解放することで 4 (0xC190020E) を実行できます。 ここでは、削除する内容について注意する必要がありますが、Windows の更新プログラムのクリーンアップ、ごみ箱、一時ファイルを起動することができます。多くの場合、アップグレードを成功させるために十分な空き領域が用意されます。 PC がインプレース アップグレードの準備ができていることがわかってから、必要に応じて、互換性スキャンを実行できます。 詳細については、「Windows セットアップ コマンドラインのオプション」を参照してください。<https://aka.ms/setupswitches>
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[デスクトップ展開センター](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[デスクトップ展開センター](https://aka.ms/howtoshift)
