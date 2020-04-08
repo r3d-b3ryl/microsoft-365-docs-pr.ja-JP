@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
 ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/07/2020
 ms.locfileid: "43163900"
@@ -50,7 +50,7 @@ ms.locfileid: "43163900"
 
 <span data-ttu-id="5f9fe-125">多くの場合、2進数でスコアが獲得されます。たとえば、新しいポリシーを作成したり、特定の設定を有効にしたりするなど、改善アクションを実装すると、ポイントの100% が得られます。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-125">Most are scored in a binary fashion — if you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points.</span></span> <span data-ttu-id="5f9fe-126">その他の改善アクションについては、構成全体のパーセンテージとしてポイントが指定されています。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-126">For other improvement actions, points are given as a percentage of the total configuration.</span></span> <span data-ttu-id="5f9fe-127">たとえば、すべてのユーザーが多要素認証を使用していて、保護されているユーザーの合計数が100の場合、[改善] アクションで30ポイント獲得した場合、2ポイント前後の部分的なスコアが与えられます (5 つの保護/100 合計 \* 30 最大 pts = 2 pts パーシャルスコア)。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-127">For example, if the improvement action states you get 30 points by protecting all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total \* 30 max pts = 2 pts partial score).</span></span>
 
-### <a name="products-included-in-secure-score"></a><span data-ttu-id="5f9fe-128">セキュリティで保護されたスコアに含まれる製品</span><span class="sxs-lookup"><span data-stu-id="5f9fe-128">Products included in Secure Score</span></span>
+### <a name="products-included-in-secure-score"></a><span data-ttu-id="5f9fe-128">セキュア スコアに含まれる製品</span><span class="sxs-lookup"><span data-stu-id="5f9fe-128">Products included in Secure Score</span></span>
 
 <span data-ttu-id="5f9fe-129">現時点では、Office 365 (SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、および Cloud App Security に関する推奨事項が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-129">Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, and Cloud App Security.</span></span> <span data-ttu-id="5f9fe-130">Azure ATP、Microsoft Defender ATP など、他のセキュリティ製品の推奨事項は近日中に公開されています。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-130">Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon.</span></span> <span data-ttu-id="5f9fe-131">推奨事項では、各製品に関連付けられているすべての攻撃対象が網羅されるわけではありませんが、適切な基準になっています。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-131">The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline.</span></span> <span data-ttu-id="5f9fe-132">また、改善アクションをサードパーティの対象としてマークすることもできます。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-132">You can also mark the improvement actions as covered by a third party.</span></span>
 
@@ -83,8 +83,8 @@ ms.locfileid: "43163900"
 
 <span data-ttu-id="5f9fe-152">Graph API にアクセスするには、役割に加えて、次のいずれかのスコープを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-152">To access the Graph API, you need to have one of the following scopes in addition to a role:</span></span>
 
-* <span data-ttu-id="5f9fe-153">SecurityEvents (読み取り専用の役割の場合)</span><span class="sxs-lookup"><span data-stu-id="5f9fe-153">SecurityEvents.Read.All (for read-only role)</span></span>
-* <span data-ttu-id="5f9fe-154">SecurityEvents. すべて (読み取りおよび書き込みの役割)</span><span class="sxs-lookup"><span data-stu-id="5f9fe-154">SecurityEvents.ReadWrite.All (for read and write role)</span></span>
+* <span data-ttu-id="5f9fe-153">SecurityEvents.Read.All (読み取り専用の役割の場合)</span><span class="sxs-lookup"><span data-stu-id="5f9fe-153">SecurityEvents.Read.All (for read-only role)</span></span>
+* <span data-ttu-id="5f9fe-154">SecurityEvents.ReadWrite.All (読み取りおよび書き込みの役割)</span><span class="sxs-lookup"><span data-stu-id="5f9fe-154">SecurityEvents.ReadWrite.All (for read and write role)</span></span>
 
 ## <a name="gain-visibility-into-your-security-posture"></a><span data-ttu-id="5f9fe-155">セキュリティに関する姿勢を把握する</span><span class="sxs-lookup"><span data-stu-id="5f9fe-155">Gain visibility into your security posture</span></span>
 
@@ -106,7 +106,7 @@ ms.locfileid: "43163900"
 
 <span data-ttu-id="5f9fe-166">[向上したアクション] タブには、発生する可能性のある攻撃対象範囲とその状態 (完了、未完了、サードパーティによる解決、無視) について説明するセキュリティ上の推奨事項が一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-166">The improvement actions tab lists the security recommendations that address possible attack surfaces, along with their status (completed, not completed, resolved through third party, and ignored).</span></span> <span data-ttu-id="5f9fe-167">すべての改善アクションを検索、フィルター、およびグループ化することができます。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-167">You can search, filter, and group all the improvement actions.</span></span>
 
-### <a name="ranking"></a><span data-ttu-id="5f9fe-168">付け</span><span class="sxs-lookup"><span data-stu-id="5f9fe-168">Ranking</span></span>
+### <a name="ranking"></a><span data-ttu-id="5f9fe-168">ランク付け</span><span class="sxs-lookup"><span data-stu-id="5f9fe-168">Ranking</span></span>
 
 <span data-ttu-id="5f9fe-169">ランク付けは、残っている残りのポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいています。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-169">Ranking is based on the number of remaining points left to achieve, implementation difficulty, user impact, and complexity.</span></span> <span data-ttu-id="5f9fe-170">最も順位の高い向上アクションには、低い問題点、ユーザーへの影響、および複雑さが残った大きなポイントがあります。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-170">The highest ranked improvement actions have a large number of points remaining with low difficulty, user impact, and complexity.</span></span>
 
@@ -170,7 +170,7 @@ ms.locfileid: "43163900"
 - <span data-ttu-id="5f9fe-222">環境に接続されたリスクの高い OAuth アプリケーションをブロック & アクセス許可を確認する</span><span class="sxs-lookup"><span data-stu-id="5f9fe-222">Review permissions & block risky OAuth applications connected to your environment</span></span>
 - <span data-ttu-id="5f9fe-223">SharePoint online ドキュメントライブラリのバージョン管理を設定する</span><span class="sxs-lookup"><span data-stu-id="5f9fe-223">Set up versioning on SharePoint online document libraries</span></span>
 
-#### <a name="removed-not-scored-improvement-actions"></a><span data-ttu-id="5f9fe-224">"採点なし" の改善アクションを削除しました</span><span class="sxs-lookup"><span data-stu-id="5f9fe-224">Removed "not scored" improvement actions</span></span>
+#### <a name="removed-not-scored-improvement-actions"></a><span data-ttu-id="5f9fe-224">[スコア未計算] の改善のための処置を削除済み</span><span class="sxs-lookup"><span data-stu-id="5f9fe-224">Removed "not scored" improvement actions</span></span>
 
 <span data-ttu-id="5f9fe-225">セキュリティで保護されたスコアの原則の1つは、スコアが標準化され、関連性が簡単であるということです。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-225">One of the principles of Secure Score is that the score should be standardized and easy to relate to.</span></span> <span data-ttu-id="5f9fe-226">測定できない、または実用的でない改善アクションが発生すると、混乱が生じています。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-226">Having improvement actions that are not measurable or actionable has been causing confusion.</span></span> <span data-ttu-id="5f9fe-227">Microsoft セキュリティスコアは、すべての推奨事項がスコアに明確な影響を与える場合にのみ意味を持ちます。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-227">Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score.</span></span> <span data-ttu-id="5f9fe-228">スコアの向上アクションは測定できません。</span><span class="sxs-lookup"><span data-stu-id="5f9fe-228">Not scored improvement actions are not measurable.</span></span>  
 
