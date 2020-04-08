@@ -1,5 +1,7 @@
 ---
 title: EU パスポート番号
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0032d3e50d7dab0b696d9000242e70956469052e
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805950"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41592118"
 ---
 # <a name="eu-passport-number"></a>EU パスポート番号
 
@@ -39,7 +41,7 @@ ms.locfileid: "40805950"
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -78,7 +80,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -117,7 +119,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -156,7 +158,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -195,7 +197,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -234,7 +236,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -273,7 +275,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -312,7 +314,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -363,7 +365,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -402,7 +404,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -445,7 +447,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -488,7 +490,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -531,7 +533,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -570,7 +572,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -609,7 +611,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -648,7 +650,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -687,7 +689,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -734,7 +736,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -773,7 +775,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -812,7 +814,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -857,7 +859,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>Checksum
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -902,7 +904,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>Checksum
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -939,5 +941,5 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ## <a name="see-also"></a>関連項目
 
-[機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
+[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
 

@@ -1,5 +1,7 @@
 ---
 title: EU 社会保障番号または同等の ID
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号または同等の ID の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1f2d1d9c61f27fb47b0c7ac0ce544b17175d4254
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805930"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41591228"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>EU 社会保障番号または同等の ID
 
@@ -39,7 +41,7 @@ ms.locfileid: "40805930"
     
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -108,7 +110,7 @@ versicherungsnummer
   
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -189,7 +191,7 @@ numéronational#
     
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -268,7 +270,7 @@ osobni identifikacijski broj
     
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -343,7 +345,7 @@ rodne cislo
     
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -422,7 +424,7 @@ personnummer
     
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -519,7 +521,7 @@ hetu
   
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -614,7 +616,7 @@ magyar áfa szám
     
 ### <a name="checksum"></a>Checksum
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -673,5 +675,5 @@ identifikationsnumret#
   
 ## <a name="see-also"></a>関連項目
 
-[機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
+[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
 

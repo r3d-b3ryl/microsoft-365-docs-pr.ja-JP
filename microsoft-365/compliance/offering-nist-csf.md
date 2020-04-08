@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222009"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170909"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -37,7 +37,7 @@ NIST Cybersecurity Framework (CSF) は、Cybersecurity 関連のリスクを管�
 
 コンプライアンススコアと Azure セキュリティおよびコンプライアンス青写真を使用して、NIST Cybersecurity Framework の展開を促進する方法について説明します。
 
-- [Azure セキュリティおよびコンプライアンスブループリントをダウンロードする-NIST CSF リスク評価チェックリスト](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Azure セキュリティおよびコンプライアンスブループリントをダウンロードする-NIST CSF リスク評価チェックリスト](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
 - [コンプライアンススコアの NIST CSF 評価 Office 365 の詳細情報](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
@@ -68,7 +68,7 @@ Cybersecurity は、デジタル変換の時代に、重要な管理上の問題
 
 **には、Azure Government、Dynamics 365、および Office 365 が NIST CSF 要件をサポートしていることを検証した独立した査定官がありますか?**
 
-はい。サードパーティの評価組織には、重要なインフラストラクチャを改善するためのフレームワークで定義されているように、Azure Government cloud service サービスが NIST Cybersecurity Framework (CSF) リスク管理プラクティスに準拠していることが attested されています。Cybersecurity、バージョン1.0、2014年2月12日。 NIST CSF は FedRAMP 中程度のコントロールフレームワークにマップされており、独立評価では、FedRAMP の適度なベースラインに対して Dynamics 365 を評価しています。 また、Office 365 は、2018年6月の HITRUST から、 [NIST の NIST CSF レター](https://aka.ms/O365NISTCSFcertification)を取得しています。
+はい。サードパーティの評価組織には、重要なインフラストラクチャ Cybersecurity、バージョン1.0、2014年2月12日を改善するためのフレームワークで定義されているように、attested の Cybersecurity Framework (CSF) リスク管理プラクティスに準拠していることがあります。 NIST CSF は FedRAMP 中程度のコントロールフレームワークにマップされており、独立評価では、FedRAMP の適度なベースラインに対して Dynamics 365 を評価しています。 また、Office 365 は、2018年6月の HITRUST から、 [NIST の NIST CSF レター](https://aka.ms/O365NISTCSFcertification)を取得しています。
 
 **Microsoft クラウドサービスによるフレームワークへの準拠をどのように示しますか?**
 
@@ -88,7 +88,7 @@ FedRAMP 認定のためにサードパーティによって作成された正式
 
 **Office 365 の範囲内のサービスとは何ですか。**
 
-NIST CSF 認定のスコープ内サービスには、Exchange Online のアーカイブ、Exchange Online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、MicrosoftTeams、office ProPlus in Office 365 マルチテナントクラウドおよび Office 365 GCC。
+NIST CSF 認定のスコープ内サービスには、Exchange Online のアーカイブ、Exchange Online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft Teams、office ProPlus in Office 365 マルチテナントクラウドおよび Office 365 GCC があります。
 
 > [!NOTE]
 > Office 365 ProPlus を使用すると、ローミング設定、ライセンス、OneDrive コンシューマークラウドストレージなどのさまざまなクラウドサービスへのアクセスが可能になり、将来的に追加のクラウドサービスにアクセスできるようになります。 ローミングの設定とライセンスは、HITRUST の標準をサポートします。 OneDrive コンシューマークラウドストレージではサポートされておらず、Office 365 ProPlus を介してアクセスできるその他のクラウドサービスも今後提供される可能性があるため、Microsoft はこれらの標準をサポートしていない場合もあります。 *

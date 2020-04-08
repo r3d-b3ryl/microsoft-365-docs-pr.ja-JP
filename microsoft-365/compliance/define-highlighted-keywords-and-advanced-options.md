@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'ユーザー定義のキーワードを関連性に追加して、Office 365 の高度な電子情報開示でのタグ付けとコストパラメータを指定する際に関連ファイルを特定する方法について説明します。  '
-ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075934"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42556765"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
+# <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する (クラシック)
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -74,7 +74,7 @@ ms.locfileid: "42075934"
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [問題の定義とユーザーの割り当て](define-issues-and-assign-users.md)
   

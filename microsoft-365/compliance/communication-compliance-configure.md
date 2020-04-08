@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31444d677e7cd775f5364796c6821cb82b6dc654
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: d4a98383e88634f1e87606df5bcd1d066254081f
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113574"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170931"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
 
@@ -48,7 +48,7 @@ ms.locfileid: "43113574"
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced コンプライアンスアドオン (新しいサブスクリプションでは使用できなくなりました)。メモを参照してください。
 
-通信コンプライアンスポリシーに含まれているユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
+通信コンプライアンスポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
 
 >[!IMPORTANT]
 >Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。

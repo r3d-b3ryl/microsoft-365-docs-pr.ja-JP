@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053074"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165936"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>ケーススタディ-Contoso 社が Microsoft Teams および Exchange の通信に対して不快な言語ポリシーを迅速に構成する
 
@@ -53,10 +53,21 @@ Contoso 社の IT 管理者およびコンプライアンスの専門家は、Mi
 最初の手順は、Contoso 社の Microsoft 365 ライセンスに、コミュニケーションコンプライアンスソリューションのサポートが含まれていることを確認することです。 通信コンプライアンスにアクセスして使用するために、Contoso 社の IT 管理者は Contoso に次のいずれかの情報が含まれていることを確認する必要があります。
 
 - Microsoft 365 E5 サブスクリプション (有料または試用版)
-- Office 365 Enterprise E3 ライセンス (高度なコンプライアンス アドオン付き)
+- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンスアドオン
+- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider リスク管理アドオン
+- Microsoft 365 A5 サブスクリプション (有料または試用版)
+- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンスアドオン
+- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Insider リスク管理アドオン
+- Microsoft 365 G5 サブスクリプション (有料または試用版)
+- Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 コンプライアンスアドオン
+- Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 Insider リスク管理アドオン
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
+- Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced コンプライアンスアドオン (新しいサブスクリプションでは使用できなくなりました)。メモを参照してください。
 
-また、通信コンプライアンスポリシーに含まれているユーザーが上記のいずれかのライセンスに割り当てられていることを確認する必要もあります。
+また、通信コンプライアンスポリシーに含まれているユーザーに上記のいずれかのライセンスを割り当てる必要があることも確認する必要があります。
+
+>[!IMPORTANT]
+>Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。
 
 Contoso 社の IT 管理者は、次の手順を実行して Contoso のライセンスサポートを確認します。
 

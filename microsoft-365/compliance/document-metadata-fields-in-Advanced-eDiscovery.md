@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の Advanced eDiscovery のケースで、レビューセット内のドキュメントのメタデータフィールドを定義します。
-ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
-ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
+ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "42651841"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941239"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高度な電子情報開示のドキュメントメタデータフィールド
 
@@ -34,6 +34,9 @@ ms.locfileid: "42651841"
 - エクスポートされた**フィールド名:** ドキュメントがエクスポートされるときに含まれるメタデータフィールドの名前を指定します。  空白セルは、フィールドがエクスポートされたメタデータに含まれていないことを示します。
 
 - **説明:** メタデータフィールドの説明。
+
+> [!NOTE]
+> [レビューセット検索](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)の**キーワード**フィールドは、キーワードクエリ言語 (kql) を使用します。 [検索可能な**フィールド名]** 列に表示されているフィールドは、校閲セットの検索の [**キーワード**] フィールドで使用して、クエリビルダーを使用しなくても複雑なクエリを作成できます。 KQL の詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](https://go.microsoft.com/fwlink/?LinkId=269603)」を参照してください。
 
 |**フィールド名**と**表示フィールド名**|**検索可能なフィールド名**|**エクスポートされたフィールド名**|**説明**|
 |:-----|:-----|:-----|:-----|

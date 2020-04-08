@@ -16,10 +16,10 @@ search.appverid:
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '分析プロセスの概要を説明します。これにより、Office 365 の Advanced eDiscovery でパラメーター、実行オプション、および結果の表示を設定できます。 '
 ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42556805"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>上級電子情報開示を使用してケースデータを分析する (クラシック)
@@ -45,7 +45,7 @@ Analyze を実行する前に、どのロードされたファイルを分析す
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   
