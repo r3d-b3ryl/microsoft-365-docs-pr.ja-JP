@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 74c1ceb8e9d2193e7ad7afd2b339d29d54780517
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165925"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189011"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでの Office 365 のアドインの展開を管理する
 
@@ -75,7 +75,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 7. アドインが展開されると、緑色の目盛りが表示されます。 ページ上の指示に従って、アドインが正常に展開されたことをテストできます。
 
 > [!NOTE]
-> アプリのリボンにアドインアイコンが表示されるように、ユーザーが Office を再起動する必要がある場合があります。 Outlook アドインは、ユーザーのリボンに表示されるまでに最大12時間かかることがあります。
+> アプリのリボンにアドインアイコンが表示されるように、ユーザーが Office を再起動する必要がある場合があります。 Outlook アドインは、ユーザーのリボンに表示されるまでに最大24時間かかる場合があります。
     
 8. 完了したら、[**次へ**] を選択します。 自分だけに展開した場合は、他のユーザーに展開するために、[**アドインにアクセスできるユーザーを変更**する] を選択できます。
 

@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Office の365テナントとユーザーが要件を満たしているかどうかを確認します。これにより、一元展開を使用して Office アドインを展開できます。
-ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362132"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189024"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
 一元展開は、ほとんどのお客様が office 365 組織内のユーザーやグループに Office アドインを展開するための、推奨される最も豊富な方法です。 管理者である場合は、このガイダンスを使用して、一括展開を使用できるようにテナントとユーザーが要件を満たしているかどうかを判断します。
 一元展開は、Windows、Mac、iOS、Android、およびオンラインの Office アプリをサポートします。
-すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大12時間かかる場合があります。
+すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大24時間かかる場合があります。
   
 ## <a name="requirements"></a>Requirements
 
@@ -56,7 +56,7 @@ ms.locfileid: "42362132"
 - Word、Excel、PowerPoint のアドインでは、ユーザーが次のいずれかを使用している必要があります。
   - Windows デバイスでは、バージョン1704以降の Office 365 ProPlus。
   - Mac では、バージョン15.34 以降。
-      - IOS (iPad のみ)、バージョン2.9.18010804 以降。
+
 - Outlook の場合、ユーザーは次のいずれかを使用する必要があります。 
   - バージョン1701以降の Office 365 ProPlus。
   - バージョン1808以降の Office Professional Plus 2019 または Office Standard 2019。

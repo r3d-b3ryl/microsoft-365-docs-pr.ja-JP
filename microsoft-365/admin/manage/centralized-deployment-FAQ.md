@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターからの一元展開についてよく寄せられる質問に対する回答を確認してください。
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166495"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188968"
 ---
 # <a name="centralized-deployment-faq"></a>一元展開の FAQ
 
@@ -33,7 +33,7 @@ ms.locfileid: "43166495"
 
 アドインを一元展開するには、ユーザーが Office 365 ProPlus (組織のログイン資格情報を使用して Office にサインインしており、Exchange Online メールボックスを持っている必要があります) を使用する必要があります。 サブスクリプションディレクトリは、Azure Active Directory に存在するか、フェデレーションされている必要があります。  
  
-一元展開は、Outlook Online メールボックスに対してのみサポートされます。 オンプレミスの Exchange メールボックスへの展開はサポートされていません。
+一元展開は、オンラインメールボックスでのみサポートされます。 オンプレミスの Exchange メールボックスへの展開はサポートされていません。
  
 [Office 365 集中展開互換チェック](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) を使用して、サブスクリプションが対象になるかどうかを判断できます。 
   
@@ -47,7 +47,7 @@ ms.locfileid: "43166495"
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>アドインがすべてのユーザーに対して表示されるまでにどのくらいの時間がかかりますか?  
 
-すべてのユーザーに対してアドインが表示されるまで、最大12時間かかる場合があります。 これには、アドインの更新に対して同じ時間、オン/オフの切り替え、またはアドインの削除による変更を行うことができます。 
+すべてのユーザーに対してアドインが表示されるまでに最大24時間かかる場合があります。 これには、アドインの更新に対して同じ時間、オン/オフの切り替え、またはアドインの削除による変更を行うことができます。 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>管理者として、組織のアドインへのユーザーアクセスを管理するにはどうすればよいですか?
 
