@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 での多要素認証について、および設定するために従う必要のある手順について説明します。
-ms.openlocfilehash: e3886387740fe904b9c9458f7b1abf736c3ef83f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: be3b355f4487e2df5c2e20c9911c3bb421d5f7e1
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153570"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170942"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 展開用の多要素認証の計画
 
@@ -65,7 +65,7 @@ Office 365 をクラウドのみで展開しているか、シングル サイ�
 |ハイブリッド セットアップ、オンプレミスで管理  <br/> | ユーザー ID をオンプレミスで管理する場合、次のような選択肢があります。  <br/>  物理または仮想スマートカード (AD FS を使用している場合)  <br/> [Azure 多要素認証](https://go.microsoft.com/fwlink/p/?LinkId=526677)(AD FS のモジュール)  <br/>  Azure Active Directory (Azure AD) 多要素認証  <br/> |
    
   
-次の図は、最新の Windows 版 Office 2013 のデバイス アプリで MFA を使用してユーザーがどのようにサインインするかを示しています。 Office 2013 デバイス アプリは、[Active Directory Authentication Library (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684) を使用して多要素認証をサポートしています。 Azure AD は、ユーザーがサインインする Web ページをホストします。 ID プロバイダーは、Azure AD の場合も、AD FS などのフェデレーション ID プロバイダーの場合もあります。 フェデレーション ユーザーを認証する場合は、次の手順に従います。
+次の図は、最新の Windows 版 Office 2013 のデバイス アプリで MFA を使用してユーザーがどのようにサインインするかを示しています。 Office 2013 デバイスアプリは、 [Active Directory 認証ライブラリ (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684)を使用して多要素認証をサポートしています。 Azure AD は、ユーザーがサインインする Web ページをホストします。 ID プロバイダーは、Azure AD の場合も、AD FS などのフェデレーション ID プロバイダーの場合もあります。 フェデレーション ユーザーを認証する場合は、次の手順に従います。
   
 1. Azure AD では、Office 365 テナントのレコードで示された ID プロバイダーがホストする、サインイン用の Web ページにユーザーをリダイレクトします。 この ID プロバイダーは、ユーザーのサインイン名に指定されたドメインに基づいて決定されます。
     

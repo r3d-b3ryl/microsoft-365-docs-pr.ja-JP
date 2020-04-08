@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
-ms.openlocfilehash: 104be669dcb6d22cba00974075418e2d14ed629c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894230"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163912"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の詳細と結果
 
@@ -85,20 +85,18 @@ ms.locfileid: "42894230"
 
 調査の状態は、分析と処理の進捗状況を示します。 調査が実行されると、状態の表示が変わり、脅威が検出されたかどうかと、処理が承認されているかどうかが示されるようになります。 
 
-|ステータス  |意味  |
+|状態  |意味  |
 |---------|---------|
-|開始中 | すぐに開始するために、調査がキューに入れられる |
-|実行中 | 調査が開始され、分析を実行しています |
-|脅威は見つかりませんでした | 調査が完了しました。脅威は見つかりませんでした |
-|システムによる終了 | 調査が閉じられず、7日後に期限切れになった |
-|保留中のアクション | この調査では、推奨される処置によって脅威を検出しました。  最初の脅威と推奨されるアクションが検出された後も調査を続行します。そのため、アナライザーが進行中であるかどうかを確認するには、アクションを承認する前にログをチェックする必要があります。 |
-|脅威が検出されました | 調査では脅威を検出しましたが、脅威には AIR 内で使用可能なアクションがありません。  これらは、方向の AIR アクションがまだないユーザー操作です。 |
-|修復済み | 調査が完了し、完全に修復されました (すべてのアクションが承認されました) |
-|一部修復済み | 調査が終了し、推奨されるアクションのいくつかが承認された |
-|ユーザーにより終了 | 管理者が調査を終了した |
-|失敗 | 調査中にエラーが発生し、脅威の結論に達しませんでした |
-|調整によってキューに入れられる | 調査は、システム処理の制限 (サービスのパフォーマンスを保護するため) による分析を待機しています。 |
-|調整による終了 | 調査のボリュームとシステム処理の制限により、十分な時間内に調査を完了できませんでした。 エクスプローラーで電子メールを選択し、[調査] アクションを選択することによって、調査を retrigger することができます。 |
+|開始中 | 調査がトリガーされ、実行の開始を待機しています。 これは最初の手順です。  |
+|実行中 | 調査プロセスが開始され、進行中です。 この状態は、[保留中のアクション](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)が承認されたときにも発生します。 |
+|脅威は見つかりませんでした | 調査が終了し、脅威 (ユーザーアカウント、電子メールメッセージ、URL、またはファイル) が特定されませんでした。 <br/><br/>**ヒント**: 何かが失われていると疑われる場合 (誤否定など)、[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)を使用して操作を行うことができます。 |
+|システムによる終了 | 調査が停止しました。 これは、さまざまな理由で発生する可能性があります。 最も一般的な原因は次の2つです。<br/>-調査の保留中のアクションが期限切れになった。 1週間の承認を待機した後、保留中のアクションがタイムアウトします。 <br/>-アクションが多すぎます。 たとえば、悪意のある Url をクリックしているユーザーが多すぎると、調査を停止させることができるように、すべてのアナライザーを実行する調査の能力を超えることがあります。 <br/><br/>**ヒント**: 操作が実行される前に調査が停止した場合は、[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)を使用して脅威を見つけて解決します。  |
+|保留中のアクション | 調査で、悪意のある電子メール、悪意のある URL、危険なメールボックスの設定などの脅威、および脅威が[承認](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)待ちであることを修復するアクションを検出しました。<br/><br/>保留中のアクションの状態は、対応するアクションを含む脅威が見つかった場合にトリガーされます。ただし、調査が完全に完了していない可能性があることに注意してください。  [調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)を調べて、他の項目がまだ完了待ち状態かどうかを確認します。 |
+|修復済み | 調査が終了し、すべてのアクションが承認されました (完全に修復済み)。<br/><br/>**注**: 承認された修復アクションには、アクションを実行できないエラーが発生することがあります。 調査の状態は変更されません。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
+|一部修復済み | 調査で修復が行われ、一部が承認され、完了しています。 その他のアクションはまだ[保留中](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)です。 |
+|失敗 | 少なくとも1つの調査アナライザーで、正常に完了できなかった問題が発生しました。 <br/><br/>**注**: 修復処置が承認された後に調査が失敗した場合でも、修復アクションが正常に完了している可能性があります。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
+|調整によってキューに入れられる | 調査はキューに保持されています。 他の調査が完了すると、キュー調査が開始されます。 これにより、サービスのパフォーマンスが低下しないようになります。 <br/><br/>**ヒント**: 保留中のアクションは、実行できる新しい調査の数を制限できます。 [保留中のアクションを承認 (または拒否)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)していることを確認します。 |
+|調整による終了 | 調査が長時間に保持されている場合は、停止されます。 <br/><br/>**ヒント**:[脅威エクスプローラーから調査を開始](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)できます。 |
 
 ### <a name="investigation-graph"></a>調査グラフ
 

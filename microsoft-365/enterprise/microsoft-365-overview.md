@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
-ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113519"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175192"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -45,7 +45,7 @@ Microsoft 365 for enterprise は、3つのプランで利用できます。
 |:-------|:-----|
 | E3 | Microsoft 365 内のコア製品と機能にアクセスして、職場の生産性を向上させ、技術革新を促進します。 |
 | E5 | 高度な脅威保護、セキュリティ、コラボレーションツールなど、Microsoft 365 内の最新の製品と機能にアクセスします。 E3's のすべての機能に加え、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。 |
-| F1 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
+| F3 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
 |||
 
 Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。
@@ -55,7 +55,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 これらのオファーリングには、Microsoft 365 E5 に含まれている追加機能が含まれています。
 
-詳細については、「[各プランの特徴と機能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
+各プランに含まれているものの詳細については、「 [Microsoft Office outlook を使用して企業を変換する 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)」を参照してください。
 
 ## <a name="get-the-big-picture"></a>大きな画像を取得する
 

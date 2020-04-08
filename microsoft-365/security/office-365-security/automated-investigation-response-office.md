@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air
-ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033448"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170954"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
 
@@ -75,7 +75,7 @@ ms.locfileid: "43033448"
 
 フェーズ1には、管理者によってトリガーされた電子メール調査のサポート ([脅威エクスプローラー](threat-explorer.md)を使用) も含まれています。
 
-現在進行中のフェーズ 2 では、次のプレイブックが **パブリック プレビュー**中です。処理に関する推奨事項が提供され、セキュリティ管理者が問題を調査するのに役立っています。　
+フェーズ2が現在進行中で、次のプレイブックが**公開プレビュー**に含まれており、アクションに関する推奨事項と、問題を調査するセキュリティ管理者を支援します。
 - ユーザーから報告された侵害の発生 (パブリック プレビュー)
 
 追加のプレイブックは、出来上がり次第公開されます。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap) にアクセスすると、準備中および近日公開予定のプレイブックを確認できます。

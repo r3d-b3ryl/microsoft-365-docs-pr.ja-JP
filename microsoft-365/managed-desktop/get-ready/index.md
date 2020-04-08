@@ -6,15 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "37595593"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップへの登録準備
 
-これらのトピックでは、組織で登録の準備に必要な手順について説明します。環境が重要な前提条件を満たしていることの確認、ネットワークの構成、証明書の設定、およびアプリの準備のためのサーバー.
+これらのトピックでは、組織での登録の準備に必要な手順について説明します。これには、環境が重要な前提条件を満たしていることの確認、ネットワークの構成、証明書の設定、およびサービスに含めるアプリの準備などが含まれます。
 
 - [Microsoft マネージド デスクトップの前提条件](prerequisites.md)
 - [Microsoft マネージドデスクトップのネットワーク構成](network.md)
