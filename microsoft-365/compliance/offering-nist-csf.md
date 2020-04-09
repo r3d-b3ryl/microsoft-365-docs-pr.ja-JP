@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 5d30073d611edf60ced4d926fdae0708d555cb6f
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170909"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188987"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -35,12 +35,9 @@ Cybersecurity は、[重要なインフラストラクチャを改善するた�
 
 NIST Cybersecurity Framework (CSF) は、Cybersecurity 関連のリスクを管理するための標準、ガイドライン、ベストプラクティスで構成される自発的なフレームワークです。 Microsoft クラウドサービスは、独立したサードパーティの FedRAMP の適度な監査と高基準の監査を行い、FedRAMP 標準に従って認定されています。 また、HITRUST によって実行された検証済み評価により、セキュリティおよびプライバシーに関する標準の開発および認定組織のため、Office 365 は、NIST CSF で指定された目標に対して認定されています。
 
-コンプライアンススコアと Azure セキュリティおよびコンプライアンス青写真を使用して、NIST Cybersecurity Framework の展開を促進する方法について説明します。
+コンプライアンススコアを使用して、NIST Cybersecurity Framework の展開を促進する[方法について説明](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)します。
 
-- [Azure セキュリティおよびコンプライアンスブループリントをダウンロードする-NIST CSF リスク評価チェックリスト](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
-- [コンプライアンススコアの NIST CSF 評価 Office 365 の詳細情報](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
-
-## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となるマイクロソフトのクラウド サービス
 
 - [Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365 for Government](https://aka.ms/d365-compliance-list)
@@ -54,9 +51,10 @@ Office 365 の NIST CSF 認定は、2年間有効です。
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>Azure で NIST CSF ソリューションをすばやく構築する
 
-NIST Cybersecurity Framework (CSF) 標準は、クラウドでは困難になることがあります。 幸いなことに、Azure では、Azure Security and コンプライアンス NIST CSF の青写真を開始することができます。 この青写真は、今日の NIST の CSF 準拠ソリューションの構築を開始するためのツールとガイダンスを提供します。
+NIST Cybersecurity Framework (CSF) 標準は、クラウドでは困難になることがあります。 現時点では、使用を開始するのに役立つ新しい青写真サンプルを FedRAMP の中、または FedRAMP に使用できます。 新しい NIST CSF コントロールは、これらの FedRAMP のベースラインのコントロールから開発されています。
 
-- [Azure NIST CSF ブループリントの使用を開始する](https://aka.ms/Azure-Blueprint-DoD-NIST)
+- [FedRAMP 中規模青写真サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-m/)
+- [FedRAMP の青写真の概要サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-h/)
 
 ## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>コンプライアンススコアで NIST CSF を使用して Office 365 でリスク評価を実行する
 
@@ -99,7 +97,7 @@ Microsoft は、その他のクラウドサービスプロバイダーと比較�
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[NIST CSF テンプレート](https://go.microsoft.com/fwlink/?linkid=2117917)を選択して、組織がこの規制の要件を満たすことができるようにします。
+[Microsoft コンプライアンススコア](compliance-score.md)は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能で、組織の法令遵守状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[NIST CSF テンプレート](https://go.microsoft.com/fwlink/?linkid=2117917)を選択して、組織がこの規制の要件を満たすことができるようにします。
 
 ## <a name="resources"></a>リソース
 

@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 概要
+- name: 作業の開始
   items:
     - name: コンプライアンス センターの新機能
       href: whats-new.md
@@ -151,6 +151,8 @@
           href: what-the-dlp-functions-look-for.md
     - name: M365 での暗号化
       href: encryption.md
+    - name: Office 365 でのサービスの暗号化
+      href: office-365-service-encryption.md
     - name: カスタマー キー
       items:
         - name: Office 365 での顧客キーによるサービスの暗号化

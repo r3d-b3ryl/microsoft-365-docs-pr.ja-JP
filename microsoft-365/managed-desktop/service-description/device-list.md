@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c781d86c13165ac51dfee57b1c2cf3e9e536d3d5
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284358"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198363"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -46,10 +46,11 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 | [HP EliteBook x360 830 G6 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU | 2020年11月30日 | 2023年11月30日 |
 | **\*[HP のエリート x2 G4 タブレット](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB/Intel i5/8 GB RAM | 5VS03AV の SKU | 2021年7月31日 | 2024年7月31日 |
 | **\*[HP EliteBook x360 1030 G4 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB/Intel i5/8 GB RAM | 5VS01AV の SKU | 2021年2月28日 | 2024年2月28日 |
-| **\*[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040)** | 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | 2020年11月30日 | 2023年11月30日 |
+|[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040) | 256 GB/Intel i5/8 GB RAM | 5VS01AV の SKU| 2020年11月30日 | 2023年11月30日 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
 | [AIO の HP EliteOne 800 G4 23.8](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | 2020年7月18日 | 2023年7月18日 |
+| **\*[HP エリート DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html--1#!&tab=features)** | 256 GB/Intel i5/8 GB RAM | 9MZ21AV の SKU | 2020年12月31日 | 2023年12月31日 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 5VS04AV、IR カメラまたは指紋リーダが必要な SKU | 2020年6月6日 | 2023年6月6日 |
 | [HP Z2 Mini G4 ワークステーション](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB RAM | 8QR48AV の SKU| 2021年1月31日 | 2024年1月31日 |
 |[HP ZBook 14u/15u G6 モバイルワークステーション](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB RAM | 5VS02AV、IR カメラが必要な SKU | 2020年11月30日 | 2023年11月30日 |

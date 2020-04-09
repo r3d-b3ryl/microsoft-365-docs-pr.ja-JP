@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: 59adebd9b61761f05156247bbb6c4cb27b42c52b
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106009"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189062"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -373,7 +373,7 @@ Outlook 2010 以降では、保持ラベルまたはアイテム保持ポリシ�
 
 保持ラベルはコンテンツに対して保持アクションを強制できます。また、保持ラベルをデータ損失防止 (DLP) ポリシーで条件として使用できます。DLP ポリシーは特定のラベルを含むコンテンツに対して、アクセスを制限するなどの他のアクションを強制できます。 
   
-詳細については、「[DLP ポリシーにおける条件としてのラベルの使用](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy)」を参照してください。
+詳細については、「[DLP ポリシーにおける条件としてのラベルの使用](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)」を参照してください。
   
 ## <a name="monitor-retention-labels"></a>保持ラベルの監視
 

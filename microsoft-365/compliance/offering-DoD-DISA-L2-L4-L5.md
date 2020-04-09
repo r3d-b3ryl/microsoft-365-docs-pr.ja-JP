@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
-ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
+ms.openlocfilehash: c68e51fd0efe415458942736a8d19ae1c12adc3c
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068575"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189080"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>米国国防総省 (DoD) の影響レベル2、4、および5の仮承認
 
@@ -36,7 +36,7 @@ DoD Cloud Service のサポートによって、SRG のポリシー、セキュ�
 Microsoft の官公庁クラウドサービスは、影響レベル2から5までの米国国防総省の要件を満たしています。米国国防総省は、Microsoft Cloud のコスト削減と厳重なセキュリティによる恩恵を受けることができます。 Azure Government、Office 365 米国政府、および Dynamics 365 Government を含む保護されたサービスを展開することで、防衛機関は、準拠しているサービスの豊富なアレイを使用できます。
 
 - DoD DISA L2 の利点について説明します。 Microsoft Cloud では L4 をダウンロードしてください。[防御部門をダウンロードする Backgrounder](https://aka.ms/disa-backgrounder)
-- Microsoft [Azure Dod ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)を使用して、DoD を迅速に展開し、L4 を展開する方法について説明します。
+- [Azure Dod 青写真](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy)を使用した、dod の展開を促進する方法について説明します。
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影響レベル5の暫定認証
 
@@ -58,7 +58,7 @@ FedRAMP の承認に基づいて、クラウドサービスのサポートに Do
 
 影響レベル2は、制御されていない未分類情報 (公開リリースに対して承認されるデータ) を対象としています。 また、"ミッションクリティカル" とは見なされませんが、最小限のレベルのアクセス制御を必要とするその他の未分類の情報についても説明します。 この承認により、連邦政府のお客様は、範囲内の Microsoft クラウドサービスに機密情報や基本的な防衛アプリケーションと web サイトを展開できます。
 
-## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となるマイクロソフトのクラウド サービス
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>DoD 影響レベル5の対象となるサービス
 
@@ -83,7 +83,7 @@ DoD PA が付与されると、Microsoft cloud services が毎年監視および
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>Azure での DoD ソリューションの展開を迅速に追跡する
 
-Azure のセキュリティとコンプライアンス部門の防御の青写真を使用して、government のクラウドの利点を活用することについて、すぐに開始します。 この青写真は、今日の DoD 準拠ソリューションの構築を開始するためのツールとガイダンスを提供します。 [Azure DoD 青写真の使用を開始](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)します。
+米国国防総省の青写真サンプルを使用して、government のクラウドの利点を活用することができます。 この青写真は、今日の DoD 準拠ソリューションの構築を開始するためのツールとガイダンスを提供します。 [DoD L4 用の Azure 青写真の使用を開始](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

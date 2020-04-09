@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: 2db16773b305e2e5f929e96fb3ca0e7bfe541990
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081270"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198385"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -173,7 +173,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。
+2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。 (旧称これは **、ユーザーによって報告**されたものです。)
 
    ![エクスプローラーの [表示] メニュー](../../media/ExplorerViewMenuEmailUserReported.png)
 
@@ -234,3 +234,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 - **リアルタイムの検出**レポートは OFFICE 365 atp plan 1 で利用できますが、**脅威エクスプローラー**は office 365 atp plan 2 で利用できます。
 - **リアルタイムの検出**レポートを使用すると、検出がリアルタイムで表示されます。 **脅威エクスプローラー**も同様ですが、特定の攻撃に関する追加の詳細を表示することもできます。
+- **すべての電子メール**ビューは、**脅威エクスプローラー**で使用できます (**リアルタイムの検出**レポートには含まれません)。
+- 他のフィルター処理機能および使用可能なアクションは、**脅威エクスプローラー**に含まれています。
+
+詳細については、「 [Office 365 Atp サービスの説明: Advanced Threat Protection (ATP) プランで利用できる機能](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。

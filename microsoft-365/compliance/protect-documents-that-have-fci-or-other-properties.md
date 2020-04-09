@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (FCI) の分類プロパティ、SharePoint のドキュメントプロパティ、またはドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既に存在します。サードパーティ製のシステムによって適用されます。 これが組織を説明している場合は、Office 365 で、Windows Server FCI または他のシステムによってドキュメントに適用されたプロパティを認識する DLP ポリシーを作成して、特定の FCI またはその他の Office ドキュメントに DLP ポリシーを適用できるようにすることができます。プロパティの値。
-ms.openlocfilehash: bfcbc30af3a3dac304dc57551e6246ec9e6554c0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (FCI) の分類プロパティ、SharePoint のドキュメントプロパティ、またはサードパーティシステムによって適用されるドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既にあります。 これが組織を説明している場合は、Office 365 で、Windows Server FCI または他のシステムによってドキュメントに適用されたプロパティを認識する DLP ポリシーを作成して、特定の FCI またはその他のプロパティ値を持つ Office ドキュメントに DLP ポリシーを適用できるようにすることができます。
+ms.openlocfilehash: 32d40c110ca67e15c1be3443999c75c0e36d323e
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070629"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193495"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
@@ -34,7 +34,7 @@ Office 365 でデータ損失防止 (DLP) ポリシーを使用すると、機�
   
 DLP ポリシーは、特定のプロパティの名前と値のペアを探すだけです。対象プロパティに SharePoint 検索の対応する管理プロパティが含まれる場合には、任意のドキュメント プロパティを使用できます。たとえば、SharePoint のサイト コレクションが [**旅行レポート**] という名前のコンテンツの種類を使用し、[**顧客**] という必須フィールドが指定されているとします。ユーザーが旅行レポートを作成するたびに、顧客名を入力する必要が生じます。このプロパティの名前と値のペアを DLP ポリシーでも使用できます。たとえば、[**顧客**] フィールドに [**Contoso**] が含まれるときに外部ユーザーによるドキュメントへのアクセスをブロックするルールを作成できます。
   
-特定の Office 365 ラベルを含むコンテンツに DLP ポリシーを適用する場合は、ここに記載されている手順に従ってはいけないことに注意してください。 代わりに、 [DLP ポリシーの条件としてラベルを使用](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy)する方法について説明します。
+特定の Office 365 ラベルを含むコンテンツに DLP ポリシーを適用する場合は、ここに記載されている手順に従ってはいけないことに注意してください。 代わりに、 [DLP ポリシーの条件として保持ラベルを使用](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)する方法について説明します。
   
 ## <a name="before-you-create-the-dlp-policy"></a>DLP ポリシーを作成する前に
 
@@ -96,7 +96,7 @@ Condition**ドキュメントプロパティにこれらの値のいずれかが
   
 これらのコマンドレットの詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. を使用`New-DlpCompliancePolicy`してポリシーを作成します。
 
@@ -124,7 +124,7 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
   
 ## <a name="after-you-create-the-dlp-policy"></a>DLP ポリシーを作成した後に
 
-前のセクションの手順を実行すると、そのプロパティを使用してコンテンツを迅速に検出する DLP ポリシーが作成されます。ただし、そのコンテンツが新しくアップロードされた場合 (コンテンツのインデックスが作成されます)、またはそのコンテンツが古く、編集された (コンテンツの再インデックスが作成される) 場合のみです。.
+前のセクションの手順を実行すると、そのプロパティを使用してコンテンツを迅速に検出する DLP ポリシーが作成されます。ただし、そのコンテンツが新しくアップロードされた場合 (コンテンツのインデックスが作成されます)、またはそのコンテンツが古く、編集された (コンテンツの再インデックスが作成される) 場合のみです。
   
 対象プロパティが含まれるコンテンツを検出するには、ライブラリ、サイト、サイト コレクションの再インデックス付けを手動で要求し、対象プロパティが含まれるコンテンツすべてを DLP ポリシーが認識するようにできます。SharePoint Online では、定義されているクロール スケジュールに基づいてコンテンツは自動的にクロールされます。クローラーは、最後にクロールされて以降に変更が加えられたコンテンツを取得して、インデックスを更新します。スケジュールされたクロールが次に実行される前にコンテンツを保護する DLP ポリシーが必要となる場合には、以下の手順を実行できます。
   

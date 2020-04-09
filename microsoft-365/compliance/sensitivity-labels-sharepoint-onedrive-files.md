@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: d0496a194cc734304f8ba6f09e6497c8d4f233bc
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+ms.openlocfilehash: 8f57a680bf5cbd53153cedc339b35bc2712c3f73
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126024"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188981"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
->*[セキュリティ & コンプライアンスのための Microsoft 365 ライセンスガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 このプレビューの前に、Office の web 上に[機密ラベル](sensitivity-labels.md)を適用することができませんでした。 リボンに [**秘密度**] オプションが表示されていないか、またはステータスバーに適用されたラベル名が表示されていません。 さらに、デスクトップアプリを使用してファイルにラベルを付け、それらを SharePoint または Onedrive に保存した場合、ラベルが暗号化を適用した場合、サービスはこれらのファイルのコンテンツを処理できませんでした。 このような状況では、共同編集、電子情報開示、データ損失防止、検索、Delve、その他のコラボレーション機能は使用できません。 
 
@@ -163,3 +163,7 @@ Microsoft 365 コンプライアンスセンターで機密ラベルを作成ま
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $false
     ```
+
+## <a name="next-steps"></a>次の手順
+
+SharePoint と OneDrive で Office ファイルの機密ラベルを有効にしたので、自動ラベル付けポリシーを使用してこれらのファイルに自動的にラベル付けすることを検討してください。 詳細については、「[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」を参照してください。
