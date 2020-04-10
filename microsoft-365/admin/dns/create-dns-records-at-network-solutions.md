@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Office 365 のネットワークソリューションで、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: f94ad49f443e609aa28d634d05604601c7d5e576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6bbe954f763e0cb06e9bf32b991e60da34393c57
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42348538"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211124"
 ---
 # <a name="create-dns-records-at-network-solutions-for-office-365"></a>Network Solutions で Office 365 用の DNS レコードを作成する
 
@@ -158,7 +158,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    |**Priority**|**TTL**|**Mail Server**|
+    |**[優先度]**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
     |10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |3600  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Office 365 アカウントから* \<ドメイン\>キー*を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        

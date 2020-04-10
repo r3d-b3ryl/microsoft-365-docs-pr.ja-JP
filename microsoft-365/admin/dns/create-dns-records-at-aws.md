@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Office 365 の Amazon Web Services (AWS) で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: baba7bb7275303604d241166f4dc1d2af77b3f17
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f71e6fa5ce69d789cc7695d30e6447ae281a0e3f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351478"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211849"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>Amazon Web Services (AWS) for Office 365 で DNS レコードを作成する
 
@@ -68,7 +68,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     |**名前** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
     |(Leave this field empty.)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |単純  <br/> |
    
-6. [**作成**] を選択します。
+6. **[作成]** を選択します。
     
 7. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -109,7 +109,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![AWS-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
-6. [**作成**] を選択します。
+6. **[作成]** を選択します。
     
     ![AWS-BP-Configure-2-2](../../media/1c050c72-c04f-48d5-a8e9-44cd83ddd33e.png)
   
@@ -157,7 +157,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![AWS-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
-6. [**作成**] を選択します。
+6. **[作成]** を選択します。
     
     ![AWS-BP-Configure-3-2](../../media/33964846-5282-44a4-b241-62ce02b96735.png)
   
@@ -219,7 +219,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![AWS-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   
-6. [**作成**] を選択します。
+6. **[作成]** を選択します。
     
     ![AWS-BP-Configure-5-2](../../media/1bf5dc58-a46b-47a5-bd69-7c2147dd4e50.png)
   

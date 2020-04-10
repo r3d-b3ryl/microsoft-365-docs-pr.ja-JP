@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Gmail または別のメールプロバイダーから Office 365 に連絡先、予定表、メールをインポートする方法について説明します。 '
-ms.openlocfilehash: 2b2f4441772a9d373316ff14f06bcdeb61e5840d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6decee3fd45d11ed1e71e71e0cf7191ccec6aa3d
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360708"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212187"
 ---
 # <a name="migrate-email-and-contacts-to-office-365"></a>Office 365 へのメールと連絡先の移行
 
@@ -53,9 +53,9 @@ Office 365 でメール、連絡先、予定表を Gmail から Outlook にイ�
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-from-outlook-desktop"></a>Outlook からのインポート (デスクトップ)
+### <a name="import-from-outlook-desktop"></a>Outlook からのインポート (デスクトップ) ' '
 
-Office 365 を使用してメール、連絡先、予定表を Outlook から .pst ファイルにエクスポートし、そのファイルを Outlook にインポートするには、次の手順を実行します。
+[方法] 電子メール、連絡先、予定表を Outlook から .pst ファイルにエクスポートし、Office 365 を使用してそのファイルを Outlook にインポートする手順は次のとおりです。
   
 1. [メール、連絡先、予定表をエクスポートする](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     

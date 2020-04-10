@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/13/2017
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Office 365 で電子情報開示ツールを使用して検索を実行すると、予想および実際の検索結果が異なる理由を理解します。 '
-ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198374"
+ms.locfileid: "43204069"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 での見積もりおよび実際の電子情報開示の検索結果の相違点
 
 このトピックは、次のいずれかの Microsoft eDiscovery ツールを使用して実行できる検索に適用されます。 
 
 - セキュリティ & コンプライアンスセンターでのコンテンツ検索  <br/>  
+- コア電子情報開示ケースに関連付けられている検索
 - Exchange 管理センター (EAC) のインプレース電子情報開示  <br/>  
 - SharePoint Online の電子情報開示センター  <br/> 
    
@@ -83,5 +84,3 @@ SharePoint Online の電子情報開示センターでは、電子情報開示�
   
 > [!NOTE]
 > 検索結果をエクスポートするとき、またはレポートをダウンロードするときに、**暗号化されているアイテムまたは認識され**ていない形式のオプションを選択しないと、インデックスエラーレポートがダウンロードされますが、エントリは含まれません。 インデックスエラーが発生していないことを意味します。 これは、インデックスを持たないアイテムがエクスポートに含まれていないことを意味します。 
-  
-

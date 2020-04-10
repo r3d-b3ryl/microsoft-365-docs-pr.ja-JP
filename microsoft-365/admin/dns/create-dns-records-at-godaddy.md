@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: ドメインを確認し、電子メール、Skype for Business Online、および GoDaddy for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: e037e989a51a95b16077d1edfcdff4b341ee3b80
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: eceab4659dfc01d6a731c4ed07f27bb29214e5fb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349238"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211741"
 ---
 # <a name="create-dns-records-at-godaddy-for-office-365"></a>GoDaddy で Office 365 用の DNS レコードを作成する
 
@@ -59,7 +59,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. **[追加]** を選択します。
+3. [**追加**] を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -110,7 +110,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. **[追加]** を選択します。
+3. [**追加**] を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -141,7 +141,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. **[追加]** を選択します。
+3. [**追加**] を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -184,7 +184,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. **[追加]** を選択します。
+3. [**追加**] を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -218,7 +218,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. **[追加]** を選択します。
+3. [**追加**] を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: ドメインを確認して、電子メール、Skype for Business Online、および Office 365 用のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: cb0b26081e5946ed2558d090c976847197ed7eb8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a5a41e5c1eba9d99d1927192472da7746277dd38
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42249146"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211717"
 ---
 # <a name="create-dns-records-at-hostgator-for-office-365"></a>Hostgator で Office 365 用の DNS レコードを作成する
 
@@ -64,7 +64,7 @@ Office 365 での Web サイト向け Web ホスティングと DNS の詳細に
 6. [ **Save Name Servers**] を選びます。
     
   
-## <a name="add-a-txt-record-for-verification"></a>確認用に TXT レコードを追加する
+## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 <a name="BKMK_verify"> </a>
 
 > [!IMPORTANT]
@@ -91,28 +91,28 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [ **宛先またはポイント先のアドレス** ] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. [ **Add Record** ] を選択します。
     
 5. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
-2. [**ドメイン**] ページで、確認するドメインを選択します。 
+2. **[ドメイン]** ページで、確認するドメインを選択します。 
     
-3. [**セットアップ**] ページで、[**セットアップの開始**] を選択します。
+3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
 4. [**ドメインの確認**] ページで、[**確認**] を選択します。
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>MX レコードを追加して、自分のドメインのメールを Office 365 で使えるようにする
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>MX レコードを追加して、自分のドメインのメールが Office 365 に届くようにする
 <a name="BKMK_add_MX"> </a>
 
 > [!IMPORTANT]
@@ -186,7 +186,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが 1 つの SPF レコードになるようにします。 次に例を示します。 参考にしてください。 SPF レコードを確認するには、[SPF の検証ツール](../setup/domains-faq.md)を使うことができます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが 1 つの SPF レコードになるようにします。 次に例を示します。 参考にしてください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > この手順を進める前に、この記事の最初のセクション「[ドメインがホスティング アカウントを指すようにする](#point-your-domain-to-your-hosting-account)」に記載されている手順の操作を行う必要があります。 
@@ -210,7 +210,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 4. [ **Add Record** ] を選択します。
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 個の SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]

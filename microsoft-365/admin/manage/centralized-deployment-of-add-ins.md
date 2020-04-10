@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Office の365テナントとユーザーが要件を満たしているかどうかを確認します。これにより、一元展開を使用して Office アドインを展開できます。
-ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: a3005d02522d0a2b22b1ca337d8f49ce7fa20fb3
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189024"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209750"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -32,7 +32,7 @@ ms.locfileid: "43189024"
 一元展開は、Windows、Mac、iOS、Android、およびオンラインの Office アプリをサポートします。
 すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大24時間かかる場合があります。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 アドインを一元展開するには、ユーザーが Office 365 ProPlus (組織 ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションの宛先ディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
 以下の Office および Exchange の特定の要件を確認することも、 [office 365 集中展開の互換性チェック](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)を使用することもできます。

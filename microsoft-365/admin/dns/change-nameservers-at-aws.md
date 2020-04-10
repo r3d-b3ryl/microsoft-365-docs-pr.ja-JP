@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: 'Amazon Web サービス (AWS) で DNS レコードを管理するように Office 365 をセットアップする方法について説明します。 '
-ms.openlocfilehash: 9500522478c22277c57772ef64b4d0a4b87e8c44
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a7125cf0add8200fe152c426f47e7f27a8f6226c
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352488"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212355"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-amazon-web-services-aws"></a>ネームサーバーを変更して Amazon Web Services (AWS) で Office 365 をセットアップする
 
@@ -61,7 +61,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 |**名前** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
 |(このフィールドは空のままにします)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)  <br/>  |Simple <br/> |
    
-6. [**作成**] を選択します。
+6. **[作成]** を選択します。
     
 7. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     

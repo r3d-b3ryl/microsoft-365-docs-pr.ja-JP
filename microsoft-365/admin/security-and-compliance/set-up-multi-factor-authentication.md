@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: セキュリティの既定値を使用して Office 365 ユーザー用の多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153558"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204024"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
@@ -68,11 +68,11 @@ ms.locfileid: "43153558"
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>ベースライン ポリシーからセキュリティの既定値に移行する
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)で、[**設定**] を選択します。
+1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)で、[**すべて表示**] を選択し、[**管理センター**] の下にある [ **Azure Active Directory** ] を選択します。
 
-2. [**サインインとセキュリティ**] の横の [**サインインのセキュリティを強化する**] で [**表示**] を選択します。
+2. **Azure active directory 管理センター**で、[ **azure active directory** > **セキュリティ**] を選択します。
 
-3. [**サインインのセキュリティを強化する**] で、[**管理**] を選択します。 
+3. [**セキュリティ] |**[作業の開始] ページで、[**条件付きアクセス**] を選択します。 
 
 4. [**Azure portal 条件付きアクセス - ポリシー**] ページで、[**オン**]になっているベースライン ポリシーをそれぞれ選び、[**オフ**]に設定します。
 5. [[Azure Active Directory のプロパティ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)] ページにアクセスします。

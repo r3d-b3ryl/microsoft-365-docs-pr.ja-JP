@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Office 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894517"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212059"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 グループの有効期限ポリシー
 
@@ -38,7 +38,7 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 アクティブに使用されているグループは自動的に更新されます。 次のいずれかのアクションを実行すると、グループが自動的に更新されます。
 - SharePoint-ファイルの表示、編集、ダウンロード、移動、共有、またはアップロードを行います。
 - Outlook-グループのメッセージと同じように、グループからのメッセージの読み取りまたは書き込み。メッセージ (web 上の Outlook)。
-- Teams チャネルを訪れます。
+- Teams にアクセスする teams channe '。
 
 > [!IMPORTANT]
 > 有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
@@ -50,7 +50,7 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 
 ## <a name="who-can-configure-and-use-the-office-365-groups-expiration-policy"></a>Office 365 グループの有効期限ポリシーを構成して使用できるユーザー
 
-|Role|できること|
+|ロール|できること|
 |---------|---------|
 |Office 365 のグローバル管理者 (Azure、会社の管理者の場合)、ユーザー管理者|Office 365 グループの有効期限ポリシー設定を作成、読み取り、更新、または削除します。|
 |ユーザー|自分が所有する Office 365 グループを更新または[復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
@@ -85,4 +85,4 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 
 [孤立グループに新しい所有者を割り当てる](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Office 365 グループの有効期限を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Office 365 グループの有効期限を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

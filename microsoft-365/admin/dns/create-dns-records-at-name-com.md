@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: ドメインを確認し、電子メール、Skype for Business Online、および name.com for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: f21a40f543ff3a9faffe6ffba98f4d541b2a7a7b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f39cf9f241851e555ea23ca7b63453796a5f471b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349981"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211657"
 ---
 # <a name="create-dns-records-at-namecom-for-office-365"></a>name.com で Office 365 用の DNS レコードを作成する
 
@@ -66,7 +66,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**型** <br/> |**Host** <br/> |**応答** <br/> |**TTL** <br/> |
+    |**種類** <br/> |**Host** <br/> |**応答** <br/> |**TTL** <br/> |
     |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。Office 365 の表から [ **宛先またはポイント先のアドレス** ] の値を指定してください。           [情報の取得方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
    
     ![名前-BP-検証-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
@@ -117,7 +117,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**型**|**Host**|**応答**|**TTL**|**優先度**|
+    |**種類**|**Host**|**応答**|**TTL**|**優先度**|
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Office 365 アカウントから* \<ドメイン\>キー*を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |
    
@@ -160,7 +160,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [ **Type**] の値を選びます。) 
     
-    |**型**|**Host**|**応答**|**TTL**|
+    |**種類**|**Host**|**応答**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |既定値 (300) を使用します。  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |既定値 (300) を使用します。  <br/> |
@@ -202,7 +202,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**型**|**Host**|**応答**|**TTL**|
+    |**種類**|**Host**|**応答**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |Use the default value (300).  <br/> |
    

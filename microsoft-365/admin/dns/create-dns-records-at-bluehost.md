@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: ドメインを確認し、電子メール、Skype for Business Online、および Bluehost for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 0e64ed8787dca9822e71a63c57de7a7a3e2b3fe4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8d8217aa3b87e103f37063248899467d79b6cf18
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350958"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211837"
 ---
 # <a name="create-dns-records-at-bluehost-for-office-365"></a>Bluehost で Office 365 用の DNS レコードを作成する
 
@@ -140,7 +140,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
   
     ![[削除] を選択します。](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
     
     ![[OK] を選択します。](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   

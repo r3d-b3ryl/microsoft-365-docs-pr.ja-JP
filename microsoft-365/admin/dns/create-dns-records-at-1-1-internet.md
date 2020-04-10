@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを 1&1 IONOS for Office 365 で設定する方法について説明します。
-ms.openlocfilehash: d4ff6bea0d96402c34b1d1ae302510a6e718c38d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e31c9d9d08e29156ff6197c030de6b0f4169b5f4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352058"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211873"
 ---
 # <a name="create-dns-records-at-11-ionos-for-office-365"></a>Office 365 用の 1&1 IONOS で DNS レコードを作成する
 
@@ -267,7 +267,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Choose the **Type** value from the drop-down list.) <br/>
     
-    |**型**|**Prefix**|**Name Value**|
+    |**種類**|**Prefix**|**Name Value**|
     |:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           | 
     

@@ -6,7 +6,7 @@ ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理者の役割をユーザーまたは複数のユーザーに割り当てて、管理センターで特定のタスクを実行できるようにする方法について説明します。
-ms.openlocfilehash: 9c10ef7d6dade3d826c9c291e58b3e8e2a58f2a6
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 3f22ef22571dd04dd3364a95ed860f53b8ff207b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151379"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211921"
 ---
 # <a name="assign-admin-roles"></a>管理者の役割を割り当てる
 
@@ -84,7 +84,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。 
 
@@ -96,7 +96,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。 
 

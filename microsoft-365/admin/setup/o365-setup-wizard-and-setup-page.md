@@ -6,7 +6,7 @@ ms.author: v-sharos
 author: shars
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Office 365 セットアップウィザードとセットアップページの違いについて説明します。
-ms.openlocfilehash: 0873e37b849785feb7c70271b97b148f3cea8bd9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fb4cf29b2cab493e0240cf9cfef4cbabeb45087c
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360458"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209702"
 ---
 # <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Office 365 セットアップウィザードとセットアップページの違い
 
@@ -49,7 +49,7 @@ Office 365 には、2つのセットアップエクスペリエンスがあり�
 
 3. 新しいユーザーを追加してライセンスを割り当て、Office 365 アプリをダウンロードしてインストールできるようにします。
 
-4. ドメインを接続します。
+4. Connect' 自分のドメイン。
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>[セットアップ] ページを使用して構成を完了し管理する
 

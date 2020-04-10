@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 でアドバンスト電子情報開示の使用を開始する方法について説明します。 いくつかの簡単な手順を完了したら、Advanced eDiscovery ツールを使用する準備ができました。 最初の手順として、ケースを作成し、高度な電子情報開示の機能と機能の使用を開始します。
-ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43100870"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204047"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>高度な電子情報開示の概要
 
@@ -173,4 +173,4 @@ Microsoft 365 の高度な電子情報開示では、組織の内部および外
 
    - [ケースデータを分析](analyzing-data-in-review-set.md)します。 高度な電子情報開示の分析機能は強力です。 レビューセット内のデータに対して分析を実行した後、ほぼ重複検出、電子メールスレッド、およびテーマなどの分析を実行して、レビューするドキュメントの量を減らすことができます。 また、分析の実行結果を要約する分析レポートも生成します。 前述のように、analytics を実行[すると、弁護士クライアント特権検出モデル](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)も実行されます。
 
-5. **ケースデータをエクスポートおよびダウンロード**します。 ケースデータを収集、レビュー、および分析した後の最後の手順は、外部レビューのために高度な電子情報開示から、または調査チームの外部のユーザーによってレビューされるように、高度な電子情報開示からエクスポートすることです。 データのエクスポートは、2つの手順で行います。 最初の手順として、レビューセットをエクスポートし、別の Azure ストレージの場所 (Microsoft または組織によって管理されているもの) に[エクスポート](export-documents-from-review-set.md)します。 次に、Azure ストレージエクスプローラーを使用してデータをローカルコンピューターに[ダウンロード](download-export-jobs.md)します。 エクスポートされたデータファイルに加えて、エクスポートパッケージの格納にはエクスポートレポート、概要レポート、およびエラーレポートも含まれます。
+5. **ケースデータをエクスポートおよびダウンロード**します。 ケースデータを収集、レビュー、および分析した後の最後の手順は、外部レビューのために高度な電子情報開示から、または調査チームの外部のユーザーによってレビューされるように、高度な電子情報開示からエクスポートすることです。 データのエクスポートは、2つの手順で行います。 最初の手順として、データをレビューセットから[エクスポート](export-documents-from-review-set.md)し、別の Azure ストレージの場所 (Microsoft または組織で管理されている) にコピーします。 次に、Azure ストレージエクスプローラーを使用してデータをローカルコンピューターに[ダウンロード](download-export-jobs.md)します。 エクスポートされたデータファイルに加えて、エクスポートパッケージの格納にはエクスポートレポート、概要レポート、およびエラーレポートも含まれます。

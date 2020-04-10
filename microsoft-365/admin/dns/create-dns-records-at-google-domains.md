@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: ドメインを確認して、Office 365 用の Google Domains で電子メール、Lync、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 5b72753dfdf44fa15cd0dffaa4baf61e843cf532
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f0a9a42127fc5b722679013b899255f77840d670
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349698"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211729"
 ---
 # <a name="create-dns-records-at-google-domains-for-office-365"></a>Google Domains で Office 365 用の DNS レコードを作成する
 
@@ -119,11 +119,11 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**Type**|**TTL**|**Data**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **0** は MX 優先度の値です。 MX 値の先頭に追加して、値の残りの部分からスペースで区切ってください。  <br/> **注:** Office 365 アカウントから自分の\<*ドメイン キー*\>を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          優先度の詳細については、「[MX 優先度とは何ですか?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **0** は MX 優先度の値です。 MX 値の先頭に追加して、値の残りの部分からスペースで区切ってください。  <br/> **注:** Office 365 アカウントから自分の\<*ドメイン キー*\>を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |
    
     ![[Custom resource records] セクションに値を入力するか貼り付けます。](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
-5. **[追加]** を選択します。
+5. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
@@ -167,7 +167,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[Custom resource records] セクションに値を入力するか貼り付けます。](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
-4. **[追加]** を選択します。
+4. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
@@ -246,7 +246,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[Custom resource records] セクションに値を入力するか貼り付けます。](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスを使用している Office 365 のドメインの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 157c33a52403efbefe673bf11465de525ffb4f33
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 74c9a940f8d6f52c31712357557ea8cfda76e6bb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351158"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211825"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-office-365"></a>Crazy Domains で Office 365 用の DNS レコードを作成する
 
@@ -72,7 +72,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     
     ![CrazyDomains-検証-1-1](../../media/f0ffdefb-d7a5-47df-bb5e-bf8a3bcc9b01.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-検証-1-2](../../media/b0cd623a-67f7-4bae-a5b5-507f5a106123.png)
   
@@ -139,7 +139,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-2-1](../../media/63f7ab77-e686-4e7b-a3a2-1ac28a02d5f3.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-2-2](../../media/a60680a1-2513-498c-b42f-8ffa575ee48e.png)
   
@@ -198,7 +198,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-3-1](../../media/2f02538b-fc79-46d2-a2b7-1022eaf0fb08.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-3-2](../../media/4c5929cf-1c21-4af9-899b-e36091f0f14d.png)
   
@@ -260,7 +260,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-4-1](../../media/7f2461e2-0468-49bd-9eb0-981e9b2f72d6.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-4-2](../../media/64ef9e1f-676d-46e2-9253-a83d9bcd1c4e.png)
   
@@ -303,7 +303,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-5-1](../../media/156acebc-7f6d-4b5e-8493-6bc62ca0ee27.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-5-2](../../media/6a711df7-4215-49b2-b58f-1cf1a242b383.png)
   

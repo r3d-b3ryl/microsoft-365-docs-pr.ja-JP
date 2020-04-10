@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: '職場または学校のメールを使用して、IT 部門を伴わずに Microsoft online services にサインアップする方法について説明します。 '
-ms.openlocfilehash: c12f379dadd6a3f0bab16f6b49ff462c3becbd75
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 261e1344455602cdf36f38ba647408078bd8dd09
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248042"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209690"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>ドメインは、他のユーザーがサインアップした場合に使用されている可能性があります。
 

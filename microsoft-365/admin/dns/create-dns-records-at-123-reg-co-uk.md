@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: ドメインを確認し、電子メール、Skype for Business Online、および 123-reg.co.uk for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 327f55dcedfda6eef31d56af1833a5c5438af2a6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 521426f039ac02e8c4566f5901fee49679de4e70
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351378"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211861"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-office-365"></a>123-reg.co.uk で Office 365 用の DNS レコードを作成する
 
@@ -106,7 +106,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![テーブルの値をコピーして貼り付ける](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
@@ -141,7 +141,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![テーブルから値をコピーして貼り付けます。](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
@@ -175,7 +175,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![123Reg-BP-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
@@ -204,7 +204,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![テーブルから値をコピーして貼り付けます。](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   

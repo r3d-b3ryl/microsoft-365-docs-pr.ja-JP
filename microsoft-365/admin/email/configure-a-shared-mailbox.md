@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを作成したら、電子メールの転送や自動応答など、ユーザーの設定を構成することができます。 後で、メールボックス名やメンバーなどのその他の設定を変更する必要がある場合があります。
-ms.openlocfilehash: edea829a8578387459afe3ce4889dfa620f95956
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255301"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212023"
 ---
 # <a name="configure-a-shared-mailbox"></a>共有メールボックスを構成する
 
@@ -35,19 +35,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
@@ -89,19 +89,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
@@ -126,19 +126,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
@@ -155,19 +155,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
@@ -184,19 +184,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
@@ -212,19 +212,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
@@ -244,19 +244,19 @@ ms.locfileid: "42255301"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共有メールボックス</a>] ページに移動します。
+1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** > **共有メールボックス**] ページに移動します。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
 
 ::: moniker-end
 

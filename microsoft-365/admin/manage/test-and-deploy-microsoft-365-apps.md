@@ -6,23 +6,23 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリポータルから、組織内のユーザーおよびグループに対して Microsoft および Microsoft パートナーアプリを検索、テスト、および展開します。
-ms.openlocfilehash: 4cd8c71b521c80f8a3043cf13427132b3ec3e750
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363067"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212271"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Microsoft 365 アプリを Microsoft 365 管理センターでテストおよび展開する
 
-Microsoft 365 管理センターを使用すると、1つの場所から Microsoft および Microsoft パートナーのアプリを柔軟に展開できます。 統合アプリポータルから、購入済みのアプリやライセンス付きのアプリを検索、テスト、および完全に展開する機能により、ビジネスサービスを定期的に更新して実行するために組織で必要となる利便性とメリットが得られます。より.  
+Microsoft 365 管理センターを使用すると、1つの場所から Microsoft および Microsoft パートナーのアプリを柔軟に展開できます。 統合アプリポータルを使用して、Microsoft と Microsoft パートナーが購入してライセンスされたアプリを検索、テスト、および完全に展開することができます。ビジネスサービスを定期的に更新し、効率的に実行するために組織が必要とする利便性とメリットがあります。  
 
 組織で Microsoft 365 アプリの購入とライセンス認証の詳細については、「microsoft [365 管理センターから microsoft 365 アプリを管理および展開する](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)」というブログ投稿を参照してください。
   

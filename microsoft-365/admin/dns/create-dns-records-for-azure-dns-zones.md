@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: ドメインを確認し、電子メール、Skype for Business Online、および Azure DNS zones で Office 365 の他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 30e54da8ffd51165b1cc0d2eb82d9d02eefdaf4d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1c9ac04f74b205fa4a099fca634a41207e8083ba
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362742"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211052"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Azure DNS ゾーンの DNS レコードを作成する
 
@@ -113,7 +113,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
    
     ![Azure-BP-検証-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
   
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -163,7 +163,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![Azure-BP-構成-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
     
     ![Azure-BP-構成-2-2](../../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
   
@@ -215,7 +215,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![Azure-BP-構成-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
   
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
     
     ![Azure-BP-構成-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
@@ -295,7 +295,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![Azure-BP-構成-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
     
     ![Azure-BP-構成-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   

@@ -7,7 +7,7 @@ author: pebaum
 manager: mnirkhe
 ms.date: 2/14/2018
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '組織のために Office 365 サブスクリプションを管理および取得する方法について説明します。 '
-ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: de7528d79353ec5e674c349e328dd81c32725669
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857417"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212259"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>管理者になって、組織の Office 365 を購入する
 
@@ -62,7 +62,7 @@ Microsoft では、IT 部門による正式な展開を待つことなく、簡�
 |||
 |:-----|:-----|
 |![ピンクの丸の番号 1](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**サインアップする** 管理者になるには、職場のメールアドレスを使用して、事前に Skype 会議 にサインアップしておく必要があります。  <br/> |
-|![ピンクの丸の番号 2](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**ウィザードを実行する** サインアップしたら、次のいずれかの方法で、ウィザードを実行します。  <br/>  アプリ起動ツールで [**管理者**] を選択した後に表示される [**管理者になる**] ウィザードを実行します。  <br/>  または  <br/>  [Skype 会議で**office 365 にアップグレード**する] を選択し、アップグレードする office 365 サブスクリプションを選択します。  <br/> |
+|![ピンクの丸の番号 2](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**ウィザードを実行する** サインアップしたら、次のいずれかの方法で、ウィザードを実行します。  <br/>  アプリ起動ツールで [**管理者**] を選択した後に表示される [**管理者になる**] ウィザードを実行します。  <br/>  OR  <br/>  [Skype 会議で**office 365 にアップグレード**する] を選択し、アップグレードする office 365 サブスクリプションを選択します。  <br/> |
 |![ピンクの丸の番号 3](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**ドメインの所有権を確認する** 次に、組織のメール アドレスに関連付けられているドメイン名 (contoso.com など) を自分が所有または管理していることを Office 365 に証明します。これを行う権限を持っているのは、ドメイン名の所有者だけです。  <br/> |
 |![ピンクの丸の番号 4](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**ライセンスを購入する** ウィザードの最後の手順で、仕事用のメールを使用して Skype 会議 にサインアップしている組織内の各ユーザーに、Office 365 ライセンスを購入します。  <br/> たとえば、2 人のユーザーが仕事用のメールを使用して Skype 会議 にサインアップしている場合は、各ユーザーに 1 つずつ、2 つのライセンスを購入する必要があります。  <br/> > [!NOTE]> ライセンスを購入するまで、Office 365 を管理することはできません。           |
 
@@ -87,7 +87,7 @@ Microsoft では、IT 部門による正式な展開を待つことなく、簡�
 |ライセンスの追加または削除  <br/> |Office 365 を使用していないユーザーの[ライセンスを追加](../../commerce/licenses/buy-licenses.md)したり、組織の office 365 サブスクリプションを使用しないユーザーの[ライセンスを削除](../manage/remove-licenses-from-users.md)したりすることができます。  <br/> |
 |既にサインアップしている他のユーザーに連絡する  <br/> |他のユーザーに連絡して、自分がそのユーザーの Office 365 を管理していること、およびアップグレードされていることを知らせます。[こちらの手順に従って](../add-users/add-users.md)、 **アクティブ ユーザー**とそのメールアドレスの一覧を表示します。<br/> |
 |Office 365 を使い始める  <br/> |[Office 365 ラーニング センター](https://support.office.com/learn/office365-for-business) にアクセスして、サインイン、メールのチェック、ドキュメントの共有などの方法を確認してください。管理者とユーザーは、このサイトを使用して Office 365 を使い始めることができます。  <br/> |
-|Office 365 サブスクリプションを管理する  <br/> |[Office 365 Admin ヘルプセンター](../admin-home.yml)にアクセスして、ユーザーの追加と削除、パスワードのリセット、モバイルデバイスの設定などの一般的な管理タスクについて説明します。  <br/> |
+|Office 365 サブスクリプションを管理する  <br/> |[Office 365 Admin ヘルプセンター](../admin-home.md)にアクセスして、ユーザーの追加と削除、パスワードのリセット、モバイルデバイスの設定などの一般的な管理タスクについて説明します。  <br/> |
 
 ## <a name="still-need-help"></a>さらにサポートが必要な場合
 

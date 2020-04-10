@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: クリックしたときに Teams が安全なリンクにアクセスできるようになります。 1対1のチャット、グループ間、またはチャネル内のチャットを使用しているかどうか、および Office 365 ATP へのサブスクリプションがある場合は、このセーフティ機能を有効にして使用することができます。
-ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030143"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212547"
 ---
 <!--06/21/2019-->
 
@@ -35,6 +35,9 @@ ms.locfileid: "43030143"
 1. Teams アプリケーションを起動すると、Office 365 は、ユーザーが Office 365 ATP を使用している組織に所属しており、ユーザーが Microsoft Teams の保護が有効になっているアクティブな安全リンクポリシーの一部であることを確認します。
 
 2. 上記の条件に該当する場合、Url は、チャット、グループチャット、チャネル、およびそのユーザーのタブでクリックしたときに検証されます。
+
+> [!NOTE]
+> 「安全なリンク」では、ゲストユーザー、フェデレーションユーザー、テナントユーザーから送信されたリンクからユーザーを保護します。 ログインしているユーザーに Teams の安全なリンクが有効になっている場合は、安全なリンク保護が適用されます。
  
 ## <a name="what-will-users-experience"></a>ユーザーにはどのような状況がありますか? 
 

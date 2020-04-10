@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Office 365 の DNS レコードを作成するために必要な値と情報を検索する方法について説明します。 '
 ms.custom: okr_smb
-ms.openlocfilehash: d6093dd8a7e8d901be7b172a31dcd0e56c549ab3
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 2490532894ef00bab5de3f406b0c104529423382
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43188995"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210382"
 ---
 # <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Office 365 の DNS レコードの作成に必要な情報を収集する
 

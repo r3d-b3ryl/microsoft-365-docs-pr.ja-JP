@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: ドメインを確認し、電子メール、Skype for Business Online、および Register365 for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 7f9398e14ea5280948829b263d4cd66d61fab682
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 66c5c29d533b6897280ff99c449988c160022cf8
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362852"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211088"
 ---
 # <a name="create-dns-records-at-register365-for-office-365"></a>Register365 で Office 365 用の DNS レコードを作成する
 

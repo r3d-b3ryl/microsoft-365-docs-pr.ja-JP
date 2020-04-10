@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: ドメインを確認し、電子メール、Skype for Business Online、および easyDNS for Office 365 のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: f55f39f36b8abaee2d500c87ccf1e0089caecc9d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255372"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210554"
 ---
 # <a name="create-dns-records-at-easydns-for-office-365"></a>EasyDNS for Office 365 で DNS レコードを作成する
 
@@ -54,11 +54,11 @@ ms.locfileid: "42255372"
     
 7. 数分待ってから続行すると、作成したレコードがインターネット経由で伝達され、Office 365 によって検出されるようになります。
     
-8. Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+8. これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
     
-9. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+9. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
-10. [**ドメイン**] ページで、確認するドメインを選択します。 
+10. **[ドメイン]** ページで、確認するドメインを選択します。 
     
 11. [**セットアップ**] ページで、[セットアップの開始] を選択し**ます。**
     
@@ -125,7 +125,7 @@ ms.locfileid: "42255372"
     
 6. レコードが正しいことを確認してから、[**確認**] を選択してください。 
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 個の SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 つの SRV レコードを追加する
 
 注: SRV レコードは現在、easyDNS ' ドメインおよびサービスレベルでは使用できません。 SRV レコードを追加するには、easyDNS を使用して、より高いサービスレベルにアップグレードする必要がある場合があります。 
   

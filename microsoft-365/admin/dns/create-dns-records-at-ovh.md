@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: ドメインを確認し、電子メール、Skype for Business Online、および Office 365 用のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 4857addd7dfd096c1ddd6e59f1f17ace76b75a9e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354348"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211112"
 ---
 # <a name="create-dns-records-at-ovh-for-office-365"></a>OVH for Office 365 で DNS レコードを作成する
 
@@ -147,7 +147,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![メールの "差し込み" MX レコード](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
-7. [**次へ**] を選択します。
+7. **[次へ]** を選択します。
     
     ![OVH MX record select Next](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
@@ -198,7 +198,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     !["はい" CNAME レコード](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
-7. [**次へ**] を選択します。
+7. **[次へ]** を選択します。
     
     ![OVH Add CNAME values and select Next](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
@@ -240,7 +240,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[詳細] SPF の TXT レコードを追加する](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
-7. [**次へ**] を選択します。
+7. **[次へ]** を選択します。
     
     ![[追加] SPF の TXT レコードを追加し、[次へ] を選択します。](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
@@ -282,7 +282,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
        
     !["はい" SRV レコード](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
-7. [**次へ**] を選択します。
+7. **[次へ]** を選択します。
     
     ![OVH SRV record select Next](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   
