@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本のスパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。
-ms.openlocfilehash: a497dc4cbce877c0aa6113e32223235ffebbfd41
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894208"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204102"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Office 365 でのスパム対策ポリシーの構成
 
@@ -75,7 +75,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 - これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スパム対策ポリシーを追加、変更、削除するには、「**組織の管理**」または「**セキュリティ管理者**」役割グループのメンバーである必要があります。 スパム対策ポリシーに読み取り専用でアクセスするには、「**セキュリティ閲覧者**」役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
-- マルウェア対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
+- スパム対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>セキュリティ/コンプライアンス センターを使用してスパム対策ポリシーを作成する
 

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Office 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151431"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204058"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのアクティビティ レポート
 
@@ -87,6 +87,7 @@ ms.locfileid: "43151431"
 サブスクリプションに応じて、以下のレポートを利用できます。
   
 - [メール アクティビティ](email-activity.md)
+- [フォームのアクティビティ](forms-activity.md)
     
 - [メールボックス使用状況](mailbox-usage.md)
     
@@ -101,6 +102,7 @@ ms.locfileid: "43151431"
 - [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity.md)
   
 - [OneDrive for Business の利用状況](onedrive-for-business-usage.md)
+- [ProPlus の利用状況](microsoft365-apps-usage.md)
   
 - [SharePoint サイトの利用状況](sharepoint-site-usage.md)
   
