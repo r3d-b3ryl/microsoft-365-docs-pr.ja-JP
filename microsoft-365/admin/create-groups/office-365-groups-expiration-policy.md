@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Office 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212059"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225921"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 グループの有効期限ポリシー
 
@@ -38,7 +38,7 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 アクティブに使用されているグループは自動的に更新されます。 次のいずれかのアクションを実行すると、グループが自動的に更新されます。
 - SharePoint-ファイルの表示、編集、ダウンロード、移動、共有、またはアップロードを行います。
 - Outlook-グループのメッセージと同じように、グループからのメッセージの読み取りまたは書き込み。メッセージ (web 上の Outlook)。
-- Teams にアクセスする teams channe '。
+- Teams チャネルを訪れます。
 
 > [!IMPORTANT]
 > 有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
