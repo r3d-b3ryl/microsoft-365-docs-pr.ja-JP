@@ -15,20 +15,38 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
-ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163912"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225977"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の詳細と結果
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)で自動化された[調査](office-365-air.md)が行われると、その調査の詳細が自動調査プロセスの間に利用可能になります。 必要なアクセス許可を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 調査の詳細ビューでは最新の状態が表示され、保留中のアクションを承認する機能が提供されます。 
 
+## <a name="investigation-status"></a>調査の状態
+
+調査の状態は、分析と処理の進捗状況を示します。 調査が実行されると、状態の表示が変わり、脅威が検出されたかどうかと、処理が承認されているかどうかが示されるようになります。 
+
+|状態  |意味  |
+|---------|---------|
+|開始中 | 調査がトリガーされ、実行の開始を待機しています。  |
+|実行中 | 調査プロセスが開始され、進行中です。 この状態は、[保留中のアクション](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)が承認されたときにも発生します。 |
+|脅威は見つかりませんでした | 調査が終了し、脅威 (ユーザーアカウント、電子メールメッセージ、URL、またはファイル) が特定されませんでした。 <br/><br/>**ヒント**: 何かが失われていると疑われる場合 (誤否定など)、[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)を使用して操作を行うことができます。 |
+|脅威が検出されました |自動調査で問題が検出されましたが、その問題を解決するための特定の修復処置はありません。<br/><br/> 検出された脅威の状態は、一部の種類のユーザーアクティビティを識別したが、クリーンアップアクションを使用できない場合に発生する可能性があります。 例としては、次のいずれかのユーザーアクティビティが挙げられます。 <br/>-[データ損失防止](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies)(DLP) イベント <br/>-異常を送信している電子メール <br/>-送信されたマルウェア <br/>-送信されたフィッシング<br/>この調査では、修復する悪意のある Url、ファイル、または電子メールメッセージが見つかりません。また、転送ルールや委任をオフにするなど、修正するメールボックスアクティビティはありません。 <br/><br/>**ヒント**: 何かが失われていると疑われる場合 (誤否定など)、[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)を使用して調査し、アクションを実行することができます。 |
+|システムによる終了 | 調査が停止しました。 調査は、いくつかの理由で停止することがあります。<br/>-調査の保留中のアクションが期限切れになった。 1週間の承認を待機した後、保留中のアクションがタイムアウトします。 <br/>-アクションが多すぎます。 たとえば、悪意のある Url をクリックしているユーザーが多すぎると、調査を停止させることができるように、すべてのアナライザーを実行する調査の能力を超えることがあります。 <br/><br/>**ヒント**: 操作が実行される前に調査が停止した場合は、[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)を使用して脅威を見つけて解決します。  |
+|保留中のアクション | 調査で、悪意のある電子メール、悪意のある URL、危険なメールボックスの設定などの脅威、および脅威が[承認](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)待ちであることを修復するアクションを検出しました。<br/><br/>保留中のアクションの状態は、対応するアクションを含む脅威が見つかった場合にトリガーされます。 ただし、保留中のアクションのリストは、調査を実行すると増加する可能性があります。 [調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)を調べて、他の項目がまだ完了待ち状態かどうかを確認します。 |
+|修復済み | 調査が終了し、すべてのアクションが承認されました (完全に修復済み)。<br/><br/>**注**: 承認された修復アクションには、アクションを実行できないエラーが発生することがあります。 修復アクションが正常に完了したかどうかに関係なく、調査状況は変わりません。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
+|一部修復済み | 調査で修復が行われ、一部が承認され、完了しています。 その他のアクションはまだ[保留中](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)です。 |
+|失敗 | 少なくとも1つの調査アナライザーで、正常に完了できなかった問題が発生しました。 <br/><br/>**注**: 修復処置が承認された後に調査が失敗した場合でも、修復アクションが正常に完了している可能性があります。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
+|調整によってキューに入れられる | 調査はキューに保持されています。 他の調査が完了すると、キュー調査が開始されます。 調整によって、サービスのパフォーマンスが低下しないようにします。 <br/><br/>**ヒント**: 保留中のアクションは、実行できる新しい調査の数を制限できます。 [保留中のアクションを承認 (または拒否)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)していることを確認します。 |
+|調整による終了 | 調査が長時間に保持されている場合は停止します。 <br/><br/>**ヒント**:[脅威エクスプローラーから調査を開始](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)できます。 |
+
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
+1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. 次のいずれかの操作を行います。
 
@@ -50,7 +68,7 @@ ms.locfileid: "43163912"
 
 特定の種類の通知では、Office 365 で自動調査がトリガーされます。 詳細については、「 [Alerts](automated-investigation-response-office.md#alerts)」を参照してください。 次の手順を使用して、自動調査に関連付けられている通知の詳細を表示します。
 
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
+1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。 
 
 2. [**脅威管理** > の**調査**] に移動します。
 
@@ -83,20 +101,6 @@ ms.locfileid: "43163912"
 - フィルターの適用。 [**調査の種類**]、[**時間の範囲**]、[**状態**] から選択するか、これらの組み合わせを選択します。
 - データの .CSV ファイルへのエクスポート。
 
-調査の状態は、分析と処理の進捗状況を示します。 調査が実行されると、状態の表示が変わり、脅威が検出されたかどうかと、処理が承認されているかどうかが示されるようになります。 
-
-|状態  |意味  |
-|---------|---------|
-|開始中 | 調査がトリガーされ、実行の開始を待機しています。 これは最初の手順です。  |
-|実行中 | 調査プロセスが開始され、進行中です。 この状態は、[保留中のアクション](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)が承認されたときにも発生します。 |
-|脅威は見つかりませんでした | 調査が終了し、脅威 (ユーザーアカウント、電子メールメッセージ、URL、またはファイル) が特定されませんでした。 <br/><br/>**ヒント**: 何かが失われていると疑われる場合 (誤否定など)、[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)を使用して操作を行うことができます。 |
-|システムによる終了 | 調査が停止しました。 これは、さまざまな理由で発生する可能性があります。 最も一般的な原因は次の2つです。<br/>-調査の保留中のアクションが期限切れになった。 1週間の承認を待機した後、保留中のアクションがタイムアウトします。 <br/>-アクションが多すぎます。 たとえば、悪意のある Url をクリックしているユーザーが多すぎると、調査を停止させることができるように、すべてのアナライザーを実行する調査の能力を超えることがあります。 <br/><br/>**ヒント**: 操作が実行される前に調査が停止した場合は、[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)を使用して脅威を見つけて解決します。  |
-|保留中のアクション | 調査で、悪意のある電子メール、悪意のある URL、危険なメールボックスの設定などの脅威、および脅威が[承認](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)待ちであることを修復するアクションを検出しました。<br/><br/>保留中のアクションの状態は、対応するアクションを含む脅威が見つかった場合にトリガーされます。ただし、調査が完全に完了していない可能性があることに注意してください。  [調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)を調べて、他の項目がまだ完了待ち状態かどうかを確認します。 |
-|修復済み | 調査が終了し、すべてのアクションが承認されました (完全に修復済み)。<br/><br/>**注**: 承認された修復アクションには、アクションを実行できないエラーが発生することがあります。 調査の状態は変更されません。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
-|一部修復済み | 調査で修復が行われ、一部が承認され、完了しています。 その他のアクションはまだ[保留中](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)です。 |
-|失敗 | 少なくとも1つの調査アナライザーで、正常に完了できなかった問題が発生しました。 <br/><br/>**注**: 修復処置が承認された後に調査が失敗した場合でも、修復アクションが正常に完了している可能性があります。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
-|調整によってキューに入れられる | 調査はキューに保持されています。 他の調査が完了すると、キュー調査が開始されます。 これにより、サービスのパフォーマンスが低下しないようになります。 <br/><br/>**ヒント**: 保留中のアクションは、実行できる新しい調査の数を制限できます。 [保留中のアクションを承認 (または拒否)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)していることを確認します。 |
-|調整による終了 | 調査が長時間に保持されている場合は、停止されます。 <br/><br/>**ヒント**:[脅威エクスプローラーから調査を開始](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)できます。 |
 
 ### <a name="investigation-graph"></a>調査グラフ
 
@@ -112,7 +116,7 @@ ms.locfileid: "43163912"
 
 ### <a name="alert-investigation"></a>アラートの調査
 
-調査の [**アラート**] タブでは、調査に関連するアラートが表示されます。 詳細には、調査に関連する、高リスクなサインイン、DLP ポリシー違反など、調査とその他の関連するアラートをトリガーしたアラートが含まれます。 このページでは、セキュリティ アナリストは、個々のアラートの詳細情報を表示することもできます。
+調査の [**アラート**] タブでは、調査に関連するアラートが表示されます。 詳細には、調査に関連する、高リスクなサインイン、 [DLP ポリシー](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies)違反など、調査とその他の関連するアラートをトリガーしたアラートが含まれます。 このページでは、セキュリティ アナリストは、個々のアラートの詳細情報を表示することもできます。
 
 ![AIR アラート ページ](../../media/air-investigationalertspage.png)
 
@@ -135,7 +139,7 @@ ms.locfileid: "43163912"
 - 類似性クラスターとは、送信者およびコンテンツ属性が似ている電子メールを探すことで識別される電子メールメッセージのことです。 これらのクラスターは、元の検出結果に基づいて、悪意のあるコンテンツについて評価されます。 悪意のある電子メールを検出するのに十分な数の電子メールクラスターが悪意のあるものと見なされます。
 - インジケータークラスターは、元の電子メールから同じインジケーターエンティティ (ファイルハッシュまたは URL) を探すことで識別される電子メールメッセージです。 元のファイルまたは URL のエンティティが悪意のあるものであると特定されると、AIR によりそのエンティティを含むメール メッセージのクラスター全体にインジケーター判定が適用されます。 マルウェアとして識別されたファイルは、そのファイルを含む電子メールメッセージのクラスターがマルウェアの電子メールメッセージとして扱われることを意味します。
 
-クラスタリングの目的は、攻撃またはキャンペーンの一部として同じ送信者によって送信された他の関連する電子メールメッセージを探して検索することです。  場合によっては、正当な電子メールによって調査が発生することがあります (ユーザーがマーケティング電子メールを報告するなど)。  このようなシナリオでは、電子メールのクラスターが悪意のある電子メールクラスターではないことを特定する必要があります。適切な場合は、脅威を示しておらず、電子メールの削除もお勧めし**ません**。
+クラスタリングの目的は、攻撃またはキャンペーンの一部として同じ送信者によって送信された他の関連する電子メールメッセージを探して検索することです。  場合によっては、正当な電子メールによって調査が発生することがあります (たとえば、ユーザーがマーケティング電子メールを報告するなど)。  このようなシナリオでは、電子メールのクラスターが悪意のある電子メールクラスターではないことを特定する必要があります。適切な場合は、脅威を示しておらず、電子メールの削除もお勧めし**ません**。
 
 [**メール**] タブには、ユーザーから報告されたメールの詳細、最初に報告されたメール、マルウェア/フィッシングとしてゼロアワー自動消去されたメール メッセージなど、調査に関連するメール アイテムも表示されます。
 
@@ -244,7 +248,7 @@ ms.locfileid: "43163912"
 - 結果の CSV ファイルへのエクスポート。
 - ビューのフィルタリング。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [保留中のアクションを確認して承認する](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
 

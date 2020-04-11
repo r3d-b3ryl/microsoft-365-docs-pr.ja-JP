@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、および Teams の各ファイルに対して、Office 365 の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: a360c2c7a6876669ce5d2ae6b52a730a3c7f45a5
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: af3ade4ed411a390d1501d3f3fe15ba3111e14d3
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091290"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225944"
 ---
 # <a name="set-up-customer-key-for-office-365"></a>Office 365 の顧客キーを設定する
 
@@ -31,7 +31,9 @@ Office 365 の顧客キーを使用するには、事前に Azure をセット�
   
 ## <a name="before-you-set-up-customer-key"></a>顧客キーを設定する前に
 
-開始する前に、組織に適したライセンスを持っていることを確認してください。 Office 365 の顧客キーは、Office 365 E5 または Advanced コンプライアンス SKU で提供されます。 このトピックの概念と手順を理解するには、「 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 」のドキュメントを参照してください。 また、「[テナント](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100))」など、Azure で使用される用語について理解しておいてください。
+開始する前に、組織に適したライセンスを持っていることを確認してください。 2020年4月1日以降、Office 365 の顧客キーが Office 365 E5、M365 E5、M365 E5 コンプライアンス、および M365 E5 情報保護 & ガバナンス Sku で提供されます。 Office 365 Advanced コンプライアンス SKU は、調達の新しいライセンスでは使用できなくなりました。 既存の Office 365 Advanced コンプライアンスライセンスは引き続きサポートされます。
+
+このトピックの概念と手順を理解するには、「 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 」のドキュメントを参照してください。 また、「azure [AD テナント](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)」などの、azure で使用される用語について理解しておいてください。
 
 FastTrack は、顧客キーの登録に使用する必要なテナントおよびサービス構成情報を収集するためにのみ使用されます。 カスタマーキー提供は FastTrack を通じて公開されるため、パートナーは同じ方法で必要な情報を送信することができます。 FastTrack を使用すると、提供されているデータのアーカイブも容易になります。
   
@@ -176,7 +178,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する Azure �
 キーコンテナーの作成には、Azure リソースグループの作成も必要です。これは、キーコンテナーにはストレージ容量が必要です (非常に小さい)。また、キーヴォールトログが有効になっている場合は、保存されたデータも生成します。 ベストプラクティスとして、Microsoft では、個別の管理者を使用して各リソースグループを管理することをお勧めします。管理者は、関連するすべての顧客キーリソースを管理する一連の管理者と連携しています。
   
 > [!IMPORTANT]
-> 可用性を最大限にするには、Office 365 サービスの近くにある地域にキーコンテナーが存在する必要があります。 たとえば、北米に Exchange Online 組織がある場合は、北アメリカにキーコンテナーを配置します。 Exchange Online 組織がヨーロッパの場合は、重要な資格を欧州に配置します。<br/>キーコンテナーに共通のプレフィックスを使用します。また、重要な資格情報の使用およびスコープの省略形を含めることもできます (たとえば、コンテナーが北米に配置される Contoso SharePoint サービスの場合は、名前のペアが O365SP-NA-VaultA1 となり、Contoso-O365SP-VaultA2。 コンテナー名は Azure 内のグローバルに一意の文字列なので、目的の名前が他の Azure のお客様によって既に要求されている場合は、目的の名前のバリエーションを試す必要があります。 2017年7月の資格情報を変更することはできません。そのため、セットアップに関する計画を作成し、2番目のユーザーを使用して計画が正常に実行されることを確認することをお勧めします。<br/>可能な場合は、ペアになっていない地域にコンテナーを作成します。 ペアになっている Azure 領域は、サービス障害ドメイン間で高可用性を提供します。 そのため、地域のペアは、互いのバックアップ地域と考えることができます。 これは、1つの領域に配置されている Azure リソースが、ペア化された領域を通じて自動的にフォールトトレランスを獲得することを意味します。 このため、領域がペアになっているデータ暗号化ポリシーで使用される2つの資格情報領域を選択すると、2つの空き領域が使用されることになります。 ほとんどの地域には2つの地域があるため、ペアになっていない地域を選択することはまだできません。 可能であれば、データ暗号化ポリシーで使用する2つの資格情報に対して2つのペアでない地域を選択します。 これは、合計4つの可用性の領域からメリットを得られます。 詳細については、「 [Business 継続性と障害復旧 (BCDR)](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 」を参照してください。現在の地域のペアの一覧については、「Azure ペアリング領域」を参照してください。
+> 可用性を最大限にするには、Office 365 サービスの近くにある地域にキーコンテナーが存在する必要があります。 たとえば、北米に Exchange Online 組織がある場合は、北アメリカにキーコンテナーを配置します。 Exchange Online 組織がヨーロッパの場合は、重要な資格を欧州に配置します。<br/>キーコンテナーに共通のプレフィックスを使用します。また、重要な資格情報の使用およびスコープの省略形を含みます (たとえば、コンテナーが北米に配置される Contoso SharePoint サービスの場合は、名前の組み合わせが O365SP-NA-VaultA1 および O365SP-NA-VaultA2 になります。 コンテナー名は Azure 内のグローバルに一意の文字列なので、目的の名前が他の Azure のお客様によって既に要求されている場合は、目的の名前のバリエーションを試す必要があります。 2017年7月の資格情報を変更することはできません。そのため、セットアップに関する計画を作成し、2番目のユーザーを使用して計画が正常に実行されることを確認することをお勧めします。<br/>可能な場合は、ペアになっていない地域にコンテナーを作成します。 ペアになっている Azure 領域は、サービス障害ドメイン間で高可用性を提供します。 そのため、地域のペアは、互いのバックアップ地域と考えることができます。 これは、1つの領域に配置されている Azure リソースが、ペア化された領域を通じて自動的にフォールトトレランスを獲得することを意味します。 このため、領域がペアになっているデータ暗号化ポリシーで使用される2つの資格情報領域を選択すると、2つの空き領域が使用されることになります。 ほとんどの地域には2つの地域があるため、ペアになっていない地域を選択することはまだできません。 可能であれば、データ暗号化ポリシーで使用する2つの資格情報に対して2つのペアでない地域を選択します。 これは、合計4つの可用性の領域からメリットを得られます。 詳細については、「 [Business 継続性と障害復旧 (BCDR)](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 」を参照してください。現在の地域のペアの一覧については、「Azure ペアリング領域」を参照してください。
   
 ### <a name="assign-permissions-to-each-key-vault"></a>各キーコンテナーにアクセス許可を割り当てる
 
@@ -209,7 +211,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する Azure �
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
    ```
 
-   ここで、
+   詳細は次のとおりです。
 
     - [*コンテナー名*は、作成したキーコンテナーの名前です。
 
@@ -235,7 +237,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する Azure �
   
 キーコンテナーでの論理削除を有効にするには、次の手順を実行します。
   
-1. Windows Powershell を使用して、Azure サブスクリプションにサインインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps)してサインインする」を参照してください。
+1. Windows PowerShell を使用して、Azure サブスクリプションにサインインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps)してサインインする」を参照してください。
 
 2. [-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault)コマンドレットを実行します。 この例では、次のように、ソフトウェアの削除を有効にするキーコンテナーの名前を*vault name*にします。
 
@@ -262,7 +264,7 @@ Azure Key Vault にキーを追加するには、2つの方法があります。
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
-ここで、
+詳細は次のとおりです。
 
 - "*コンテナー名*" は、キーを作成するキーコンテナーの名前です。
 
@@ -273,7 +275,7 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
   
 - キーを HSM で保護する場合は、 _Destination_パラメーターの値として**hsm**を指定する必要があります。そうでない場合は、**ソフトウェア**を指定します。
 
-For example,
+以下に例を示します。
   
 ```powershell
 Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
@@ -424,7 +426,7 @@ DEP を作成するには、次の手順を実行します。
    New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
-   ここで、
+   詳細は次のとおりです。
 
    - *PolicyName*は、ポリシーに使用する名前です。 名前にスペースを含めることはできません。 たとえば、USA_mailboxes のようにします。
 
