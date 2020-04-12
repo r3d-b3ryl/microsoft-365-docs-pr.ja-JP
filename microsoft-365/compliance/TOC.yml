@@ -830,6 +830,8 @@
       items:
         - name: 金融サービスのセキュリティとコンプライアンス
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: エネルギーサービスのセキュリティとコンプライアンス
+          href: ../solutions/energy-secure-collaboration.md
 - name: 法令遵守アクション プラン
   items:
     - name: ISO - 推奨アクション プラン
