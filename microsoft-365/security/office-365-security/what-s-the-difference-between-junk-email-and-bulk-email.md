@@ -16,12 +16,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、迷惑メールとバルクメールの違い、および Office 365 の関連するコントロールについて説明します。
-ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033628"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230958"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>迷惑メールとバルク メールの違い
 
@@ -41,7 +41,7 @@ Office 365 の、Exchange Online にメールボックスを持つお客様や�
 
 バルクメールへの反応が多様であるため、すべての組織に適用される汎用的なガイダンスはありません。
 
-スパム対策ポリシーには、バルクメールを迷惑メールとして識別するために使用される既定の BCL しきい値があります。 管理者はしきい値を増減できます。 詳細については、次のトピックをご覧ください。
+スパム対策ポリシーには、バルクメールをスパムとして識別するために使用される既定の BCL のしきい値があります。 管理者はしきい値を増減できます。 詳細については、次のトピックをご覧ください。
 
 - 「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」。
 

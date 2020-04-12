@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: 86aa69b813641654a0f4b5e2b4049358aeace4df
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193484"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230982"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
@@ -149,7 +149,7 @@ ATP の安全なリンクポリシーを設定または編集すると、いく�
 |**ユーザーが元の URL にクリックできないようにする** <br/> |このオプションが選択されている場合、ユーザーは、悪意があると判断された URL に[警告ページ](atp-safe-links-warning-pages.md)をスキップすることはできません。  <br/> |
 |**次の Url を書き換えないでください。** <br/> |Url をそのまま残します。 組織内の特定の電子メール受信者グループに対して、スキャンを必要としない安全な Url のカスタムリストを保持します。  追加の詳細については、「 [ATP Safe Links を使用してカスタムの url リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)」を参照してください\*。これには、ワイルドカードのアスタリスク () のサポートに関する最新の変更が含まれています。  <br/> |
    
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ATP の安全なリンクポリシーを設定すると、レポートを表示することによって、ATP が組織でどのように機能するかを確認できます。 詳細については、以下のリソースを参照してください。
 

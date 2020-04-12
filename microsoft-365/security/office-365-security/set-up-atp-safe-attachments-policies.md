@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 安全な添付ファイルのポリシーを定義して、電子メール内の悪意のあるファイルから組織を保護します。
-ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 860e733bda8f16eff8e36e42055c7ea7fa88e343
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637320"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230970"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 の ATP の安全な添付ファイルのポリシーを設定する
 
@@ -47,7 +47,7 @@ ms.locfileid: "42637320"
 
   |||
   |---|---|
-  |**ロール**|**参照先/割り当て方法**|
+  |**役割**|**参照先/割り当て方法**|
   |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。|
   |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online 組織の管理、Exchange Online の検疫管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください)|
@@ -83,7 +83,7 @@ ms.locfileid: "42637320"
 
 6. **[保存]** を選択します。
 
-組織に複数の ATP の安全な添付ファイルポリシーをセットアップすることを検討してください。 これらのポリシーは、[ **ATP Safe Attachments** ] ページに表示されている順序で適用されます。 ポリシーを定義または編集した後、ポリシーが Microsoft データセンター全体で有効になるまで、少なくとも30分待ってください。
+組織に複数の ATP の安全な添付ファイルポリシーをセットアップすることを検討してください。 これらのポリシーは、[ **ATP Safe Attachments** ] ページに表示されている順序で適用されます。 ポリシーを定義または編集した後、ポリシーが Microsoft データセンター全体で有効になるまで、少なくとも30分許可します。
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>手順 3: ATP の安全な添付ファイルポリシーのオプションについて学習する
 
