@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: 基本のスパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。
-ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: 管理者が、Exchange Online および Exchange online Protection (EOP) で迷惑メール対策ポリシーを作成、変更、削除する方法を説明します。
+ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204102"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43231018"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Office 365 でのスパム対策ポリシーの構成
 
@@ -39,7 +39,7 @@ EOP のスパム対策ポリシーの基本的な要素は次のとおりです�
 
 - **スパム フィルター ルール**: スパム フィルター ポリシーの優先順位と受信者フィルター (ポリシーが適用される対象者) を指定します。
 
-これら 2 つの要素の違いは、セキュリティ/コンプライアンス センターでスパム対策を管理する際には明白ではありませんが、以下の違いがあります。
+これら 2 つの要素の違いは、セキュリティ/コンプライアンス センターでスパム対策を管理する際には明白ではありません。
 
 - セキュリティ/コンプライアンス センターでスパム対策ポリシーを作成する場合、実際にはスパム フィルター ルール、および関連付けられているスパム フィルター ポリシーの両方に同じ名前を使用して同時に作成しています。
 
@@ -280,7 +280,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 3. **[ポリシーの編集]** をクリックします。
 
-カスタム迷惑メール対策ポリシーの場合、表示されるポップアップで使用できる設定は、「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」セクションで説明した設定と同じです。
+表示されるフライアウトの設定は、「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」セクションで説明した設定と同じです。
 
 「**既定の迷惑メール対策ポリシー**」という名前の付いた既定の迷惑メール対策ポリシーの場合、**[適用先]** セクションは選択できず (ポリシーは全員に適用される)、ポリシーの名前を変更することもできません。
 
@@ -302,7 +302,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>カスタム迷惑メール対策ポリシーの優先度を設定する
 
-既定では、迷惑メール対策ポリシーには、ポリシーの作成順序に基づいた優先度が設定されます (新しいポリシーの優先度が古いポリシーよりも低くなります)。 優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。 2 つのポリシーが同じ優先度を持つことはできません。
+既定では、迷惑メール対策ポリシーには、ポリシーの作成順序に基づいた優先度が設定されます (新しいポリシーは古いポリシーよりも優先度が低くなります)。 優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。 2 つのポリシーが同じ優先度を持つことはできません。
 
 カスタム迷惑メール対策ポリシーは、処理される順に表示されます (最初のポリシーの値は **優先度** が 0)。 「**既定のスパム フィルター ポリシー**」という名前の付いた既定の迷惑メール対策ポリシーには値 **[Lowest]** が付いており、変更することはできません。
 
@@ -460,7 +460,7 @@ Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 既存のスパム フィルター ルールを表示するには、次の構文を使用します。
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 すべてのスパム フィルター ルールの要約リストを返すには、次のコマンドを実行します。
@@ -495,7 +495,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを変更する
 
-以下の項目以外には、このトピックで前述の「[手順 1: PowerShell を使用してスパム フィルター ポリシーを作成する](#step-1-use-powershell-to-create-a-spam-filter-policy)」で説明されたようにポリシーを作成したときと同じ設定を、PowerShell を使ってスパム フィルター ポリシーを変更するときに使用できます。
+以下の項目以外には、、PowerShell を使ってスパム フィルター ポリシーを変更する場合も、このトピックで前述の「[手順 1: PowerShell を使用してスパム フィルター ポリシーを作成する](#step-1-use-powershell-to-create-a-spam-filter-policy)」で説明したポリシーを作成する場合と同じ設定を使用できます。
 
 - 特定のポリシーを既定のポリシー (全員に適用され、常に **Lowest** 優先度を持ち、削除することはできない) に切り替える _MakeDefault_ スイッチは、PowerShell でスパム フィルター ポリシーを変更するときにのみ使用できます。
 
