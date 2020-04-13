@@ -64,6 +64,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 支払サービス ディレクティブ 2 および強力な顧客認証
       href: billing-and-payments/psd2.md
+    - name: 税金情報
+      href: billing-and-payments/tax-information.md
 - name: 請求アカウント
   items:
     - name: 請求アカウントを管理する
