@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/22/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合し、より詳細な脅威管理情報を表示します。
-ms.openlocfilehash: 8096a950e66ed94d6e056f40b737d89d48cb811e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a2634a70bdbdd21efe2c59721e5532500eb4e4cc
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088765"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284229"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する
 
@@ -30,7 +30,7 @@ ms.locfileid: "42088765"
   
 次の図は、Microsoft Defender ATP 統合が有効になっている場合に表示される [**デバイス**] タブを示しています。
   
-![Microsoft Defender ATP が有効になっている場合は、アラートがあるコンピューターの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![Microsoft Defender ATP が有効になっている場合は、アラートがあるデバイスの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 この例では、電子メールメッセージの受信者に4つのデバイスがあり、1つに通知があることがわかります。 デバイスのリンクをクリックすると、Microsoft Defender セキュリティセンターにそのページが表示されます。
   
@@ -44,22 +44,21 @@ ms.locfileid: "42088765"
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>Microsoft Defender ATP を使用して Office 365 ATP を統合するには
 
-Microsoft Defender ATP との Office 365 ATP の統合は、セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方を使用してセットアップされています。
+Microsoft Defender ATP との Office 365 ATP の統合は、Office 365 Security & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方を使用してセットアップされています。
   
-1. Office 365 全体管理者またはセキュリティ管理者として[https://protection.office.com](https://protection.office.com) 、に移動して、office 365 の職場または学校アカウントでサインインします。
+1. Office 365 全体管理者またはセキュリティ管理者として[https://protection.office.com](https://protection.office.com) 、に移動して、サインインします。
     
 2. [**脅威管理** \> **エクスプローラー**] を選択します。<br>![脅威管理メニューのエクスプローラー](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. 画面の右上にある [ **Wdatp 設定**] を選択します。
     
-4. [Windows Defender ATP 接続] ダイアログボックスで、[Windows ATP への接続] をオンにします。<br>![Microsoft Defender ATP 接続](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. [Microsoft Defender ATP 接続] ダイアログボックスで、[ **WINDOWS ATP への接続**] をオンにします。<br>![Microsoft Defender ATP 接続](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
-5. Microsoft Defender セキュリティセンターで接続を有効にします。
+5. Microsoft Defender セキュリティセンター ([https://securitycenter.windows.com](https://securitycenter.windows.com)) で接続を有効にします。
 
-  
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 の脅威の調査と対応](office-365-ti.md)
+[Office 365 の脅威の調査および応答機能](office-365-ti.md)
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   

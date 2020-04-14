@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894305"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240286"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
@@ -127,7 +127,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- ID 
+- Identity 
 - 識別国の Id カード 
 - DNI 
 - 個人の NIC National レジストリ 
@@ -213,12 +213,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 桁の数字 
 - 5 つの数字または文字 (大文字小文字を区別しない)
 
-または
+OR
 
 - 1 ～ 2 桁の省略可能な文字 (大文字小文字の区別なし)  
 - 4 ～ 9 桁の数字
 
-または
+OR
 
 - 9 桁の数字または文字 (大文字小文字の区別なし)
 
@@ -1077,7 +1077,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
-- ID
+- Identity
 - レジスタ
 - Fim 
 - ID 
@@ -1087,7 +1087,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 識別子
 - Registratie
 - 識別子 
-- Carte d’identité 
+- 個別の d'identité 
 - numéro d'immatriculation
 - numéro d'identification
 - 識別子 
@@ -2104,7 +2104,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- 日付 d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -2306,7 +2306,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 9桁の数字 (古い形式):
 - 9 桁の数字
 
-または
+OR
 
 - 生年月日を表す6桁の数字
 - スラッシュ 1 つ 
@@ -2315,7 +2315,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 10桁の数字 (新しい形式):
 - 10 桁の数字
 
-または
+OR
 
 - 生年月日を表す6桁の数字
 - スラッシュ 1 つ  
@@ -2838,12 +2838,32 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="finland-passport-number"></a>フィンランドのパスポート番号
 
-次の9つの文字と数字のパターンの組み合わせを書式設定します。9桁の文字 (大文字小文字を区別しない)、7桁のチェックサムを定義しません。 DLP ポリシーは75% で、この種類の機密情報がある場合に、300文字の近接: 正規表現 Regex_finland_passport_number は、このパターンに一致するコンテンツを検出します。
-Keyword_finland_passport_number からのキーワードが見つかりました。
+### <a name="format"></a>Format
+9 桁の文字と数字の組み合わせ
+
+### <a name="pattern"></a>パターン
+9桁の文字と数字の組み合わせ: 2 文字 (大文字小文字を区別しない) 7 桁の数字
+
+### <a name="checksum"></a>Checksum
+いいえ
+
+### <a name="definition"></a>定義
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 Regex_finland_passport_number は、このパターンに一致するコンテンツを検索します。
+- Keyword_finland_passport_number からのキーワードが見つかりました。
 <!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+```xml
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
 </Entity>
-キーワード Keyword_finland_passport_number Passport Passi
+```
+### <a name="keywords"></a>キーワード
+- Keyword_finland_passport_number
+- サインアウト
+- Passi
    
 ## <a name="france-drivers-license-number"></a>フランスの運転免許証番号
 
@@ -2993,7 +3013,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 次のいずれかのパターンに一致する:
 - 13桁の数字の後にスペースを続け、2桁の数字<br/>
-or
+または
 - 15 桁の連続する数字
 
 ### <a name="checksum"></a>Checksum
@@ -3618,7 +3638,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 各国の形式は少し異なります。 IBAN 機密情報の種類には、次の60国が含まれています。
 
-ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、hu、gl、gr、hr、、ie、il、、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg
+ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、gi、gl、gr、hr、hu、ie、[il]、[it]、[]、[(it)]、[(kz)]、[、li、lt、lu、lv、mc]、[]、[いいえ]、[mr]、[]、[]、[、]
 
 ### <a name="checksum"></a>Checksum
 
@@ -5671,7 +5691,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6 桁の数字
 - 「A」、「B」、「C」、または「d」 (プレフィックスと同様に、サフィックスには特定の文字のみ指定できます。大文字と小文字は区別されません)
 
-または
+OR
 
 - 2文字
 - スペースまたはダッシュ

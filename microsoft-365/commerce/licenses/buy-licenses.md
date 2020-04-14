@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Office 365 for business サブスクリプションのライセンスを追加および削除する方法について説明します。
-ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142177"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240289"
 ---
 # <a name="manage-subscription-licenses"></a>サブスクリプション ライセンスを管理する
 
@@ -38,9 +38,9 @@ ms.locfileid: "43142177"
 
 ユーザーに割り当てられているライセンスは、サブスクリプションから削除することはできません。 現在他のユーザーに割り当てられているライセンスを削除する場合は、サブスクリプションからライセンスを削除する前に、[ユーザーからライセンスを削除](../../admin/manage/remove-licenses-from-users.md)する必要があります。
 
-::: moniker range="o365-worldwide"
+## <a name="add-or-remove-licenses-for-your-business-subscription"></a>ビジネス向けサブスクリプションのライセンスを追加または削除する
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>お客様のビジネス向けサブスクリプションのためのライセンス購入について知っておくべきこと
+::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
