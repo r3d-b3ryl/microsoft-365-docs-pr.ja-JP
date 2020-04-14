@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a3379043108340391764781f52b6a1bc3e05cf3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b4699ca9fda4f8d5364dff0fdabd868b886540b3
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601934"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165902"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 
@@ -40,7 +40,7 @@ Microsoft は、ライフ サイエンス製品およびサービスの研究、
 
 これらの標準とベスト プラクティスは GxP 規制への準拠に特に焦点を合わせていませんが、目的は類似しており、Microsoft クラウド サービスに保存されたデータの機密性、整合性、可用性を保証します。
 
-Microsoft は、ライフ サイエンス業界向けの品質保証および規制GxPコンプライアンスに特化した独立組織である [Montrium](https://www.montrium.com/)を保持し、Microsoft の GxP 資格審査を実施しました。 作成された認定ガイドライン ([ Azure ](https://aka.ms/gxpcompliance)および[ Office 365 ](https://aka.ms/o365-qualification-guideline)) は、クラウド サービスを使用して GxP 規制のコンピューター システムをホストおよびサポートすることを計画しているライフ サイエンス企業を対象としています。 ガイドラインでは、GxP 要件を満たすために Microsoft と顧客が分担する責任を特定し、範囲内の Microsoft クラウド サービスを利用する顧客が GxP コンピューター システムの制御を維持するために確立できるアクティビティと制御を推奨します。
+Microsoft は、ライフ サイエンス業界向けの品質保証および規制GxPコンプライアンスに特化した独立組織である [Montrium](https://www.montrium.com/)を保持し、Microsoft の GxP 資格審査を実施しました。 作成された認定ガイドライン ([ Azure ](https://aka.ms/gxpcompliance)および[ Office 365 ](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)) は、クラウド サービスを使用して GxP 規制のコンピューター システムをホストおよびサポートすることを計画しているライフ サイエンス企業を対象としています。 ガイドラインでは、GxP 要件を満たすために Microsoft と顧客が分担する責任を特定し、範囲内の Microsoft クラウド サービスを利用する顧客が GxP コンピューター システムの制御を維持するために確立できるアクティビティと制御を推奨します。
 
 Azure および Office 365 で GxP ソリューションを構築するライフ サイエンス組織は、クラウドの効率性を活用しながら、患者の安全性、製品品質、データの整合性を保護できます。 また、顧客は、特定のレベルでデータのプライバシーと整合性を強化するセキュリティおよびガバナンス テクノロジー、運用上の慣行、コンプライアンス ポリシーの複数のレイヤーの恩恵を受けます。
 
@@ -53,7 +53,7 @@ Azure および Office 365 で GxP ソリューションを構築するライフ
 
 - [Azure GxP ガイドライン](https://aka.ms/gxpcompliance): GxP のベストプラクティスと規制に準拠した、Azure を使用するための包括的なツールセット。
 - [GxP システムで Azure を使用する](https://aka.ms/GXP-Azure-Strategies): ライフサイエンス企業が GxP アプリケーションを構築するための戦略を確立するのに役立ちます。
-- FDA CFR Title 21 第 11 部のガイド：電子記録の FDA ガイドラインに準拠する[ Azure ](https://aka.ms/Azure-FDA-Guidelines)および[ Office 365 ](https://aka.ms/o365-qualification-guideline)認定戦略の確立に関するヘルプをご覧ください。
+- FDA CFR Title 21 第 11 部のガイド：電子記録の FDA ガイドラインに準拠する[ Azure ](https://aka.ms/Azure-FDA-Guidelines)および[ Office 365 ](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)認定戦略の確立に関するヘルプをご覧ください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
