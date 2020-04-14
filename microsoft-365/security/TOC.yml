@@ -199,8 +199,10 @@
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新しい Microsoft 365 セキュリティ センター
               href: ./mtp/overview-security-center.md
-            - name: セキュリティ/コンプライアンス センターのアクセス許可
+            - name: Office 365 セキュリティ/コンプライアンス センターのアクセス許可
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+            - name: Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
+              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: ユーザーにセキュリティ センターへのアクセス権を付与する
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: 脅威から保護する
