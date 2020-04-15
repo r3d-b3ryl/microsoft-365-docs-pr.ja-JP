@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 での多要素認証について、および設定するために従う必要のある手順について説明します。
-ms.openlocfilehash: be3b355f4487e2df5c2e20c9911c3bb421d5f7e1
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 715baeb0355ab203e890f2c87cf0751eff69e7f8
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170942"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503997"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 展開用の多要素認証の計画
 
-多要素認証 (MFA) では、複数の確認方法を使用することが求められ、ユーザーのサインインとトランザクションに加えてもう 1 つのセキュリティ レイヤーを追加する認証方法です。 この方法では、次のうち 2 つ以上の確認方法が必要になります。
+多要素認証 (MFA) では、複数の確認方法を使用することが求められ、ユーザーのサインインとトランザクションに加えてもう 1 つのセキュリティ レイヤーを追加する認証方法です。 これは、次のようなユーザーアカウントのパスワード以外の情報を使用して、追加の確認手順が必要になります。
   
 - ランダムに生成されるパス コード
     
@@ -39,11 +39,11 @@ ms.locfileid: "43170942"
     
 - 生体認証デバイス 
     
-## <a name="multi-factor-authentication-in-office-365"></a>Office 365 の多要素認証
+## <a name="mfa-in-office-365"></a>Office 365 の MFA
 
-Office 365 では、複数要素認証を使用して、セキュリティを強化し、Microsoft 365 管理センターから管理することができます。 Office 365 では、次のような Azure 多要素認証機能のサブセットがサブスクリプションの一部として提供されています。 
+Office 365 は、特別なサインインセキュリティに MFA を使用し、Microsoft 365 管理センターからの個々のユーザーアカウントに対して管理できます。 Office 365 には、サブスクリプションの一部として、次のような Azure 多要素認証機能のサブセットが用意されています。 
   
-- エンド ユーザーに対して多要素認証を有効にする、または強制する
+- エンドユーザーに対して MFA を有効にし、適用する機能
     
 - 第 2 認証要素としてモバイル アプリ (オンラインおよびワンタイム パスワード [OTP]) を使用する
     
@@ -51,21 +51,24 @@ Office 365 では、複数要素認証を使用して、セキュリティを強
     
 - 第 2 認証要素としてショート メッセージ サービス (SMS) のメッセージを使用する
     
-- ブラウザー以外のクライアント (Microsoft Lync 2013 コミュニケーション ソフトウェアなど) のアプリケーション パスワード
+- 非ブラウザークライアントのアプリケーションパスワード (たとえば、Microsoft Lync 2013 通信ソフトウェア)
     
 - 電話認証時の既定の案内応答
     
 追加された機能の一覧については、「[バージョンごとの機能の比較](https://go.microsoft.com/fwlink/?LinkId=506927)」を参照してください。 Azure Multi-Factor Authentication サービスを購入すると、すべての機能をいつでも利用できます。 
   
-Office 365 をクラウドのみで展開しているか、シングル サインオンと Active Directory フェデレーション サービス (AD FS) に対応するハイブリッドをセットアップしているかに応じて、利用できる機能のサブセットは異なります。 
+Office 365 または Active Directory フェデレーションサービス (AD FS) を使用したフェデレーション認証のどちらに対しても、クラウド専用またはハイブリッド id を使用しているかどうかに応じて、さまざまな機能のサブセットを取得できます。 
   
-|**Office 365 テナントを管理する場所**|**MFA の第 2 要素のオプション**|
-|:-----|:-----|
-|クラウドのみ  <br/> |Azure 多要素認証 (テキストまたは電話通話)  <br/> |
-|ハイブリッド セットアップ、オンプレミスで管理  <br/> | ユーザー ID をオンプレミスで管理する場合、次のような選択肢があります。  <br/>  物理または仮想スマートカード (AD FS を使用している場合)  <br/> [Azure 多要素認証](https://go.microsoft.com/fwlink/p/?LinkId=526677)(AD FS のモジュール)  <br/>  Azure Active Directory (Azure AD) 多要素認証  <br/> |
+|**Office 365 テナントの管理場所**| **MFA の第2要素オプション**|
+
+|:-----|:-----| |クラウドのみ  <br/> |Azure 多要素認証 (テキストまたは電話通話)  <br/> | |ハイブリッドセットアップ、オンプレミスで管理  <br/> |オンプレミスでユーザー id を管理する場合は、次の選択肢があります。  <br/>  物理または仮想スマートカード (AD FS を使用している場合)  <br/> [Azure 多要素認証](https://go.microsoft.com/fwlink/p/?LinkId=526677)(AD FS のモジュール)  <br/>  Azure Active Directory (Azure AD) 多要素認証  <br/> |
    
   
-次の図は、最新の Windows 版 Office 2013 のデバイス アプリで MFA を使用してユーザーがどのようにサインインするかを示しています。 Office 2013 デバイスアプリは、 [Active Directory 認証ライブラリ (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684)を使用して多要素認証をサポートしています。 Azure AD は、ユーザーがサインインする Web ページをホストします。 ID プロバイダーは、Azure AD の場合も、AD FS などのフェデレーション ID プロバイダーの場合もあります。 フェデレーション ユーザーを認証する場合は、次の手順に従います。
+次の図は、最新の Windows 版 Office 2013 のデバイス アプリで MFA を使用してユーザーがどのようにサインインするかを示しています。 
+
+![Office 2013 デバイス アプリ用の先進認証。](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+
+Office 2013 デバイスアプリは、 [Active Directory 認証ライブラリ (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684)を使用して多要素認証をサポートしています。 Azure AD は、ユーザーがサインインする Web ページをホストします。 ID プロバイダーは、Azure AD の場合も、AD FS などのフェデレーション ID プロバイダーの場合もあります。 フェデレーション ユーザーを認証する場合は、次の手順に従います。
   
 1. Azure AD では、Office 365 テナントのレコードで示された ID プロバイダーがホストする、サインイン用の Web ページにユーザーをリダイレクトします。 この ID プロバイダーは、ユーザーのサインイン名に指定されたドメインに基づいて決定されます。
     
@@ -75,11 +78,8 @@ Office 365 をクラウドのみで展開しているか、シングル サイ�
     
 4. Azure AD は Office デバイス アプリに JSON Web トークン (JWT) を返し、デバイス アプリは JWT を使用して Office 365 で認証されます。 
     
-次の図に詳細を示します。
   
-![Office 2013 デバイス アプリ用の先進認証。](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
-  
-## <a name="software-requirements"></a>ソフトウェア要件
+## <a name="requirements-for-office-2013-client-apps"></a>Office 2013 クライアントアプリの要件
 
 Office 2013 クライアント アプリで MFA を有効にするには、[クイック実行ベースのインストール](#click-to-run-based-installations)か、[MSI ベースのインストール](#msi-based-installations)かに基づいて、次のソフトウェアがインストールされている必要があります (以下に記載されているバージョンまたはそれ以降のバージョン)。
   
@@ -89,13 +89,15 @@ Office のインストールがクイック実行または MSI ベースかど�
     
 2. [**ファイル**] メニューの [ **Office アカウント**] をクリックします。
     
-3. Outlook 2013 のクイック実行インストールの場合、[ **更新オプション**] アイテムが表示されます。MSI ベースのインストールの場合、[ **更新オプション**] アイテムは表示されません。 
+3. Outlook 2013 のクイック実行インストールの場合、[ **更新オプション**] アイテムが表示されます。 MSI ベースのインストールの場合、[ **更新オプション**] アイテムは表示されません。 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Office 2013 のインストールがクイック実行または MSI ベースかどうかを確認する方法](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+
+詳細については、「[モダン認証 wiki の FAQ](https://go.microsoft.com/fwlink/p/?LinkId=530064)」の記事を参照してください。
   
 ### <a name="click-to-run-based-installations"></a>クイック実行ベースのインストール
 
-クイック実行ベースのインストールの場合、次のソフトウェアがインストールされている必要があります (以下に記載されているファイル バージョンまたはそれ以降のファイル バージョン)。ファイル バージョンが記載されているバージョンよりも古い場合は、次の手順に従って更新します。
+クイック実行ベースのインストールの場合、次のソフトウェアがインストールされている必要があります。ファイルのバージョンは、以下のファイルバージョンになります。 ファイル バージョンが記載されているバージョンよりも古い場合は、次の手順に従って更新します。
   
 |**ファイル名**|**パスをコンピューターにインストールする**|**ファイル バージョン**|
 |:-----|:-----|:-----|
@@ -121,30 +123,24 @@ MSI ベースのインストールの場合、次のソフトウェアがイン�
    
 ## <a name="enable-mfa"></a>MFA を有効にする
 
-MFA を有効にするには、次の手順をすべて実行する必要があります。
+Office 365 サブスクリプションで MFA を有効にするには、次の手順を実行します。
   
-1. クライアントの先進認証を有効にします。
+1. 必要に応じ[て、Windows デバイスで Office 2013 の先進認証を有効](enable-modern-authentication.md)にします。
     
-  - [Windows デバイス上の Office 2013 で先進認証を有効にします](enable-modern-authentication.md) 。 
+2. フェデレーション認証の場合は、サードパーティ製のディレクトリサービスを使用して Azure 多要素認証を設定します。
     
-  - サードパーティ製のディレクトリサービスを使用して Azure 多要素認証を設定します。
+    このプログラムに受け入れられる特定の id プロバイダーの情報については[、「Azure 多要素認証」および「サードパーティ VPN ソリューションを使用した高度なシナリオ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」を参照してください。 
     
-    このプログラムに対して使用される特定の id プロバイダーの情報については、「 [Azure 多要素認証」および「サードパーティ VPN ソリューションによる高度なシナリオ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」を参照してください。 
+3. [Office 365 に対して多要素認証をセットアップ](set-up-multi-factor-authentication.md)します。
     
-2. [Office 365 用の多要素認証をセットアップします](set-up-multi-factor-authentication.md)
-    
-3. それぞれのユーザーに MFA を使ったサインイン方法を説明します。[2 段階認証で Office 365 にサインインする](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
+4. [Office 365 ユーザーアカウントに MFA](https://support.office.com/article/set-up-2-step-verification-for-office-365-ace1d096-61e5-449b-a875-58eb3d74de14)をセットアップする方法をユーザーに知らせます。 2番目の認証方法を設定した後、今後のサインインには MFA が必要になります。
     
 > [!IMPORTANT]
-> ユーザーが Azure 多要素認証を有効にしていて、モダン認証が有効になっていない Office 2013 を実行しているデバイスがある場合は、それらのデバイスで AppPasswords を使用する必要があります。 アプリケーション パスワード、パスワードを使用するタイミング、場所、方法については、「[Azure Multi-Factor Authentication でのアプリケーション パスワード](https://go.microsoft.com/fwlink/p/?LinkId=528178)」を参照してください。 
+> ユーザーが Azure 多要素認証を有効にしており、モダン認証が有効になっていない Office 2013 を実行しているデバイスがある場合は、アプリパスワードを使用する必要があります。 アプリのパスワードとその使用方法/場所については、「 [Azure Multi_Factor 認証を](https://go.microsoft.com/fwlink/p/?LinkId=528178)使用したアプリパスワード」を参照してください。 
   
-## <a name="faq"></a>FAQ
-
-[Wiki の記事「先進認証についてよく寄せられる質問」](https://go.microsoft.com/fwlink/p/?LinkId=530064)
+## <a name="known-issues"></a>既知の問題
   
- **既知の問題**
-  
-[Office 2013 と Office 365 ProPlus の先進認証: 導入前の注意事項](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[Office 2013 および Office 365 ProPlus モダン認証: オンボードの前に知っておくべきこと](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Azure Multi-Factor Authentication のトラブルシューティング**
   

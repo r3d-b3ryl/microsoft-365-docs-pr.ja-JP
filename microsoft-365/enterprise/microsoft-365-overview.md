@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
-ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175192"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504093"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -84,15 +84,14 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 および Office 2010 のクライアントとサーバーのサポート終了を回避する
 
-次の製品は、 **2020 年1月14日**のサポート終了に到達しました。
-
-- [Windows 7](https://aka.ms/win7upgrade)
+[Windows 7](https://aka.ms/win7upgrade) **は、2020年1月14日**にサポート終了になりました。
 
 次の製品は、 **2020 年10月 13**日のサポート終了までになります。
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)は **、2021年4月 13**日のサポート終了に到達します。
 
 これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)をご覧ください。
 

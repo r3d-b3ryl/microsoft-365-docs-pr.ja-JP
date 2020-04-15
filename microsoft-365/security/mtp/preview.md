@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113461"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503985"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
 
@@ -54,8 +54,9 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 
 [**プレビュー機能を有効に**する] チェックボックスがオンになっている場合は、プレビュー機能が有効になっていることを確認できます。 
 
-
-
 ## <a name="preview-features"></a>プレビュー機能
-このセクションには、お試しになるように、プレビュー版の機能の一覧が更新されます。 
+現在、次の機能と拡張機能をプレビューで利用できます。
 
+- **[ユーザー設定の検出](custom-detections-overview.md)**: 高度な検索クエリを使用して、違反のアクティビティやその他の重要なアイテムを定期的に検索するルールを作成します。 通知をトリガーするクエリと、指定された応答アクションに一致します。
+
+- **[Id およびアプリテーブル](advanced-hunting-schema-tables.md)**—高度な検索スキーマにある、ユーザーの認証[イベント、Active](advanced-hunting-identityqueryevents-table.md)Directory クエリ、アプリ[関連のアクティビティ](advanced-hunting-identitylogonevents-table.md)に関する可視性を高める[AppFileEvents](advanced-hunting-appfileevents-table.md)ことができます。
