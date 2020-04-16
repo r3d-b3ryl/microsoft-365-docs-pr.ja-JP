@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058907"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516913"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
@@ -60,6 +60,7 @@ Microsoft 365 セキュリティ センターには以下のものが含まれ�
 - 警告のドットを[インシデント](incident-queue.md)で接続する
 - [自動調査と修復](mtp-autoir.md)を使用して脅威を自動的に修復する
 -  [Microsoft セキュリティスコア](microsoft-secure-score.md)を使用してセキュリティの姿勢 holistically を確認して改善する
+- ネットワーク上の[デバイス](device-profile.md)を表示する
 - Id、データ、デバイス、アプリ、およびインフラストラクチャの状態を[報告](monitoring-and-reporting.md)する
 - メール、データ、デバイス、およびアカウントに影響する侵入行為および違反アクティビティの[脅威を事前に探し](advanced-hunting-overview.md)ます。
 - 脅威分析に関する[最新の攻撃キャンペーン](latest-attack-campaigns.md)および手法を理解する

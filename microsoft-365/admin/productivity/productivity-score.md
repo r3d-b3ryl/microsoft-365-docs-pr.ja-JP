@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361318"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516867"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -39,7 +39,7 @@ Microsoft 365 は、組織がビジネス目標を達成できるようにする
 
 - **テクノロジエクスペリエンス**(近日中に公開されている): 一般的なヘルプデスクの問題を事前に修正し、PC の起動時間とネットワークを向上させて、アプリが正常に機能するように、デバイスエクスペリエンスを最適化するのに役立ちます。  
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>動作のしくみ
 
 ### <a name="areas-of-scoring"></a>得点の範囲 
 
@@ -159,7 +159,7 @@ Actionability を促進するために、それぞれの洞察をサポートす
 ![推奨される操作ウィンドウ。](../../media/psacttions2.png)
 
 
-## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください 
+## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。 
 
 私的なプレビュープログラムを利用してフィードバックを glean、な学習事項を使用して製品を共同で作成していきます。 製品内の**フィードバック**セクションを使用して、ProductivityScorePreview@service.microsoft.com の生産性スコアチームに連絡することができます。
 

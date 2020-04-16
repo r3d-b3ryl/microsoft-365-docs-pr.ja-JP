@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142685"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516811"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -65,7 +65,7 @@ Microsoft マネージドデスクトップでは、登録されたデバイス�
 
 
 ## <a name="need-more-details"></a>詳細が必要な場合
-Microsoft マネージドデスクトップの価値 (顧客ストーリーを含む) の詳細については、「 [Microsoft Managed desktop](https://aka.ms/mmd)」を参照してください。 詳細については、[ロードマップ](https://aka.ms/AA6jiam)とダウンロード可能な[1 ページの概要](https://aka.ms/AA6ob3h)を参照してください。 最新のニュースについては、Microsoft マネージドデスクトップ[ブログ](https://aka.ms/AA6l2dd)を参照してください。
+Microsoft マネージドデスクトップの価値 (顧客ストーリーを含む) の詳細については、「 [Microsoft Managed desktop](https://aka.ms/mmd)」を参照してください。 詳細については、「[ロードマップ](https://aka.ms/AA6jiam)」、「 [Forrester Total 経済影響ケーススタディ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)」、および「ダウンロード可能な[1 ページの概要](https://aka.ms/AA6ob3h)」を参照してください。 最新のニュースについては、Microsoft マネージドデスクトップ[ブログ](https://aka.ms/AA6l2dd)を参照してください。
 
 Microsoft の管理されたデスクトップが組織に適している場合は、サービスの詳細について説明する追加ドキュメント、登録する組織の準備方法、サービスの開始方法、および必要に応じてエンドユーザーが簡単にヘルプを取得する方法を含む、その後の継続的な操作について詳しく説明します。 すでにオンボードでの準備が整っている場合は、「お客様の[地域のアカウントチーム](https://pages.email.office.com/contactmmd/)に連絡」を開始してください。
 

@@ -2,11 +2,10 @@
 title: ビジネスユーザーの Office 365 を最新の Office クライアントにアップグレードする
 f1.keywords:
 - NOCSH
-ms.author: janellem
-author: janellem
-manager: eliree
+ms.author: kwekuako
+author: kwekuako
+manager: scotv
 audience: Admin
-ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: ユーザーを最新の Office クライアントにアップグレードする方法について説明します。
-ms.openlocfilehash: 3d9c92a5362889db69926552848ba4c71d7c4c42
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360408"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521463"
 ---
 # <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>ビジネスユーザーの Office 365 を最新の Office クライアントにアップグレードする
 
@@ -47,7 +46,7 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
 
  管理者ではなく、[自宅向けの office](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)製品を所有している場合は、「office を[アップグレードする方法](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)について」を参照してください。以前のバージョンの Office をアップグレードする方法については、「office のアップグレード方法」を参照してください。
 
-## <a name="getting-ready-to-upgrade"></a>アップグレードの準備をする
+## <a name="get-ready-to-upgrade"></a>アップグレードの準備をする
 
 管理者は、組織内のどのバージョンの Office ユーザーがインストールできるかを制御します。 Office 2010、Office 2013、または Office 2016 を最新バージョンにアップグレードするなど、以前のバージョンの Office を実行している組織内のユーザーが、セキュリティと生産性の向上を活かすことができるようにすることを強くお勧めします。
 
@@ -90,7 +89,7 @@ Office を含むサブスクリプションに切り替えてください。 「
 
  - Office の個別の1回の購入を購入します。 「 [Office Home &amp; Business](https://products.office.com/home-and-business)または[office Professional](https://products.office.com/professional) 」を参照してください。
 
-     または
+     OR
 
  - ボリュームライセンスを使用して、Office の複数のコピーを購入します。 「[ボリューム ライセンスで提供されるスイート製品の比較](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)」をご覧ください。
 

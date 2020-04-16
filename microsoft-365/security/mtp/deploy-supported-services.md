@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857477"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521482"
 ---
 # <a name="deploy-supported-services"></a>サポートされるサービスを展開する
 
@@ -42,8 +42,8 @@ Microsoft 365 E5、E5 セキュリティ、A5、または A5 セキュリティ�
 | ------ | ------ |
 | Microsoft Defender ATP | 強力な動作センサー、クラウド分析、脅威インテリジェンスに基づいて構築されたエンドポイント保護スイート |
 | Office 365 ATP | Office 365 でのアプリとデータの高度な保護 (電子メールやその他のコラボレーションツールを含む) |
-| Azure ATP | 高度な脅威、侵害された id、および悪意のある内部者からの保護された Active Directory シグナルを使用した保護 |
-| Microsoft Cloud App Security | Microsoft およびサードパーティのクラウドサービスにわたって脅威を識別し、combats ます。 |
+| Azure ATP | 高度な脅威、侵害された id、および悪意のある内部者に対して、関連付けられた Active Directory シグナルを使用した防御 |
+| Microsoft Cloud App Security | Microsoft およびサードパーティ製のクラウドサービスの脅威を特定し、戦闘する |
 
 ## <a name="deployed-services-and-functionality"></a>展開されたサービスと機能
 Microsoft の脅威保護では、より多くのサポートされるサービスを展開することにより、可視性、相互関係、および修復が向上します。
@@ -64,7 +64,7 @@ Microsoft の脅威保護の完全なメリットを得るために、サポー�
 | Microsoft Defender ATP | -エンドポイントの状態と生のイベント<br />-ウイルス対策、EDR、攻撃対象領域の削減を含むエンドポイントの検出と通知<br />-エンドポイントで監視されたファイルやその他のエンティティに関する情報 | エンドポイント |
 | Office 365 ATP | -メールとメールボックスの状態および生のイベント<br />-電子メール、添付ファイル、およびリンクの検出 | -メールボックス<br />-Office 365 アカウント |
 | Azure ATP | -Active Directory シグナル (認証イベントを含む)<br />-Id 関連の動作の検出 | ID |
-| Microsoft Cloud App Security | -承認されていないクラウドアプリ & サービスの検出 (シャドウ IT)<br />-クラウドアプリへのデータの公開<br />-脅威アクティビティに関連するクラウドアプリ | クラウド アプリ |
+| Microsoft Cloud App Security | -承認されていないクラウドアプリおよびサービスの検出 (シャドウ IT)<br />-クラウドアプリへのデータの公開<br />-クラウドアプリに関連付けられている脅威アクティビティ | クラウド アプリ |
 
 ## <a name="deploy-the-services"></a>サービスを展開する
 通常、各サービスを展開するには、テナントに対するプロビジョニングと、いくつかの初期構成が必要です。 これらの各サービスの展開方法については、次の表を参照してください。
