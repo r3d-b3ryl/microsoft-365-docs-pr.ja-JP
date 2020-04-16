@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 4c66e2c398adfc67ec28661ed654ca891a846534
   ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 03/19/2020
   ms.locfileid: "42857323"
@@ -45,7 +45,7 @@ additionalContent:
     summary: カードを選択して、Microsoft 365 の詳細をご覧ください。
     items:
     - title: Microsoft 365 管理センター
-      summary: 組織の Office 365 および Microsoft 365 サービスをセットアップして管理します。
+      summary: 組織の Office 365 と Microsoft 365 のサービスをセットアップして管理します。
       url: ./admin/admin-home.yml
     - title: Microsoft 365 Business
       summary: 中小企業向けに設計されています。 Excel や Outlook のような Windows アプリと Office アプリの最新バージョンを使用して会社を経営します。 すべてのビジネス デバイスに及ぶデータ保護とセキュリティを活用しましょう。
