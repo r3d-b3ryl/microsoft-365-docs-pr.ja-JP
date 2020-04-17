@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のドキュメントやメールを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: cbc2b0ef084d20d4e11ebdb03a9707e172f8a971
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 196efe65eda1265d6f2c0578d1f444709dadb26c
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105634"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516822"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -131,7 +131,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 3. [**ラベルの発行**] を選択し、[**ポリシーの作成] ウィザード**を起動します。
 
 4. [**発行する秘密度ラベルの選択**] をクリックします。 アプリとサービスで使用するラベルを選択し、[**追加**] を選択します。
-
+    
+    サブラベルを選択する場合は、必ず親ラベルも選択してください。
+    
 5. 選択したラベルを確認し、変更する場合は [**編集**] を選択します。 それ以外の場合は、[**次へ**] を選択します。
 
 6. 指示に従ってポリシー設定を構成します。

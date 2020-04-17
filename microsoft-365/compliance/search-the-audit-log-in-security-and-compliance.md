@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151442"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521493"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -694,7 +694,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |レビュー セット検索の削除|DeleteWorkingSetSearch|ユーザーが、レビュー セット内の検索クエリを削除しました。|
 |タグの削除|DeleteTag|ユーザーが、レビュー セット内のタグまたはタグ グループを削除しました。|
 |ダウンロードしたドキュメント|DownloadDocument|ユーザーが、レビュー セットからドキュメントをダウンロードしました。|
-|タグの編集|DownloadDocument|ユーザーが、レビュー セット内のタグを変更しました。|
+|タグの編集|UpdateTag|ユーザーが、レビュー セット内のタグを変更しました。|
 |レビュー セットからのドキュメントのエクスポート|ExportJob|ユーザーが、レビュー セットからドキュメントをエクスポートしました。|
 |ケースの設定の変更|UpdateCaseSettings|ユーザーがケースの設定を変更しました。 ケースの設定には、ケース情報、アクセス許可、検索と分析の動作を制御する設定などがあります。|
 |レビュー セット検索の変更|UpdateWorkingSetSearch|ユーザーが、レビュー セット内の検索クエリを編集しました。|
@@ -891,9 +891,9 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 |:-----|:-----|:-----|
 |サイトに適用された機密ラベル|SensitivityLabelApplied|機密ラベルが SharePoint または Teams サイトに適用されました。|
 |サイトから削除された機密ラベル|SensitivityLabelRemoved|SharePoint または Teams サイトから機密ラベルが削除されました。|
-|ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Office on the web を使用して、機密ラベルがドキュメントに適用されました。|
-|ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged|Office on the web を使用して、異なる機密ラベルがドキュメントに適用されました。|
-|ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Office on the web を使用して、機密ラベルがドキュメントから削除されました。|
+|ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Office on the web または自動ラベル付けポリシーを使用して、機密ラベルがドキュメントに適用されました。|
+|ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged|Office on the web または自動ラベル付けポリシーを使用して、異なる機密ラベルがドキュメントに適用されました。|
+|ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Office on the web または自動ラベル付けポリシーを使用して、機密ラベルがドキュメントから削除されました。|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ
