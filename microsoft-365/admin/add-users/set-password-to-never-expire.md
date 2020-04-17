@@ -21,39 +21,39 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Windows PowerShell を使用して、一部のユーザーパスワードを期限切れにしないように設定する方法について説明します。
-ms.openlocfilehash: 04fb2b0c17f695c41df2f8b1277c7918054ae9fe
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 2645e6d5f307a5e5ce8fab5f3a848bf4a539b031
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240237"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540893"
 ---
-# <a name="set-an-individual-users-password-to-never-expire"></a><span data-ttu-id="b2483-103">個別のユーザーのパスワードを無期限に設定する</span><span class="sxs-lookup"><span data-stu-id="b2483-103">Set an individual user's password to never expire</span></span>
+# <a name="set-an-individual-users-password-to-never-expire"></a><span data-ttu-id="d6c83-103">個別のユーザーのパスワードを無期限に設定する</span><span class="sxs-lookup"><span data-stu-id="d6c83-103">Set an individual user's password to never expire</span></span>
 
-## <a name="set-the-password-expiration-policy-for-your-organization"></a><span data-ttu-id="b2483-104">組織のパスワード有効期限ポリシーを設定します。</span><span class="sxs-lookup"><span data-stu-id="b2483-104">Set the password expiration policy for your organization</span></span>
+## <a name="set-the-password-expiration-policy-for-your-organization"></a><span data-ttu-id="d6c83-104">組織のパスワード有効期限ポリシーを設定します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-104">Set the password expiration policy for your organization</span></span>
 
-1. <span data-ttu-id="b2483-105">管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b2483-105">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.</span></span>
-2. <span data-ttu-id="b2483-106">[**パスワードポリシー** ] の横にある [**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b2483-106">Next to **Password policy** select **Edit**.</span></span> 
-3. <span data-ttu-id="b2483-107">パスワードが期限切れにならないように設定されている場合は、[**オフ**] に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="b2483-107">If passwords are set to never expire, set the toggle to **Off**.</span></span> <span data-ttu-id="b2483-108">パスワードが期限切れになるまでの日数を指定するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b2483-108">You'll get the option to specify the number of days until passwords expire.</span></span>
+1. <span data-ttu-id="d6c83-105">管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-105">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.</span></span>
+2. <span data-ttu-id="d6c83-106">[**パスワードポリシー** ] の横にある [**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-106">Next to **Password policy** select **Edit**.</span></span> 
+3. <span data-ttu-id="d6c83-107">パスワードが期限切れにならないように設定されている場合は、[**オフ**] に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="d6c83-107">If passwords are set to never expire, set the toggle to **Off**.</span></span> <span data-ttu-id="d6c83-108">パスワードが期限切れになるまでの日数を指定するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d6c83-108">You'll get the option to specify the number of days until passwords expire.</span></span>
 
-## <a name="set-the-password-expiration-policy-for-individual-users"></a><span data-ttu-id="b2483-109">個々のユーザーのパスワードの有効期限ポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="b2483-109">Set the password expiration policy for individual users</span></span>
+## <a name="set-the-password-expiration-policy-for-individual-users"></a><span data-ttu-id="d6c83-109">個々のユーザーのパスワードの有効期限ポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="d6c83-109">Set the password expiration policy for individual users</span></span>
 
-<span data-ttu-id="b2483-110">Microsoft クラウドサービスのグローバル管理者は、Azure Active Directory PowerShell for Graph を使用して、特定のユーザーに対してパスワードを無期限に設定することができます。</span><span class="sxs-lookup"><span data-stu-id="b2483-110">A global admin for a Microsoft cloud service can use the Azure Active Directory PowerShell for Graph to set passwords not to expire for specific users.</span></span> <span data-ttu-id="b2483-111">また、AzureAD コマンドレットを使用して、無期限の構成を削除したり、どのユーザーのパスワードが期限切れにならないかを確認したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="b2483-111">You can also use AzureAD cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.</span></span>
+<span data-ttu-id="d6c83-110">Microsoft クラウドサービスのグローバル管理者は、 [Azure Active Directory PowerShell For Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)を使用して、特定のユーザーに対してパスワードを無期限に設定することができます。</span><span class="sxs-lookup"><span data-stu-id="d6c83-110">A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) to set passwords not to expire for specific users.</span></span> <span data-ttu-id="d6c83-111">また、 [AzureAD](https://docs.microsoft.com/powershell/module/Azuread)コマンドレットを使用して、無期限の構成を削除したり、どのユーザーのパスワードが期限切れにならないかを確認したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="d6c83-111">You can also use [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.</span></span>
 
-<span data-ttu-id="b2483-112">このガイドは、Intune や Office 365 などの他のプロバイダーに適用されます。これは、id およびディレクトリサービスのために Azure AD にも依存しています。</span><span class="sxs-lookup"><span data-stu-id="b2483-112">This guide applies to other providers, such as Intune and Office 365, which also rely on Azure AD for identity and directory services.</span></span> <span data-ttu-id="b2483-113">ポリシーの変更可能な部分は、パスワードの有効期限のみです。</span><span class="sxs-lookup"><span data-stu-id="b2483-113">Password expiration is the only part of the policy that can be changed.</span></span>
+<span data-ttu-id="d6c83-112">このガイドは、Intune や Office 365 などの他のプロバイダーに適用されます。これは、id およびディレクトリサービスのために Azure AD にも依存しています。</span><span class="sxs-lookup"><span data-stu-id="d6c83-112">This guide applies to other providers, such as Intune and Office 365, which also rely on Azure AD for identity and directory services.</span></span> <span data-ttu-id="d6c83-113">ポリシーの変更可能な部分は、パスワードの有効期限のみです。</span><span class="sxs-lookup"><span data-stu-id="d6c83-113">Password expiration is the only part of the policy that can be changed.</span></span>
 
-<span data-ttu-id="b2483-114">Graph の Azure AD PowerShell の詳細については、「 [Azure Active Directory powershell For graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2483-114">For more information about Azure AD PowerShell for Graph, see [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).</span></span>
+<span data-ttu-id="d6c83-114">Graph の Azure AD PowerShell の詳細については、「 [Azure Active Directory powershell For graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d6c83-114">For more information about Azure AD PowerShell for Graph, see [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b2483-115">ディレクトリ同期によって同期されていないユーザーアカウントのパスワードのみ、期限切れにならないように構成できます。</span><span class="sxs-lookup"><span data-stu-id="b2483-115">Only passwords for user accounts that are not synchronized through directory synchronization can be configured to not expire.</span></span> <span data-ttu-id="b2483-116">ディレクトリ同期の詳細については、「 [CONNECT ad With AZURE ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2483-116">For more information about directory synchronization, see [Connect AD with Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).</span></span>
+> <span data-ttu-id="d6c83-115">ディレクトリ同期によって同期されていないユーザーアカウントのパスワードのみ、期限切れにならないように構成できます。</span><span class="sxs-lookup"><span data-stu-id="d6c83-115">Only passwords for user accounts that are not synchronized through directory synchronization can be configured to not expire.</span></span> <span data-ttu-id="d6c83-116">ディレクトリ同期の詳細については、「 [CONNECT ad With AZURE ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d6c83-116">For more information about directory synchronization, see [Connect AD with Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).</span></span>
 
-### <a name="how-to-check-the-expiration-policy-for-a-password"></a><span data-ttu-id="b2483-117">パスワードの有効期限ポリシーを確認する方法</span><span class="sxs-lookup"><span data-stu-id="b2483-117">How to check the expiration policy for a password</span></span>
+### <a name="how-to-check-the-expiration-policy-for-a-password"></a><span data-ttu-id="d6c83-117">パスワードの有効期限ポリシーを確認する方法</span><span class="sxs-lookup"><span data-stu-id="d6c83-117">How to check the expiration policy for a password</span></span>
 
-<span data-ttu-id="b2483-118">AzureAD モジュールの Set-azureaduser コマンドの詳細については、「 [set-azureaduser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)」という参照記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2483-118">For more information about the Get-AzureADUser command in the AzureAD module, see the reference article [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).</span></span>
+<span data-ttu-id="d6c83-118">AzureAD モジュールの Set-azureaduser コマンドの詳細については、「 [set-azureaduser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)」という参照記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d6c83-118">For more information about the Get-AzureADUser command in the AzureAD module, see the reference article [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).</span></span>
 
-<span data-ttu-id="b2483-119">次のいずれかのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-119">Run one of the following commands:</span></span>
+<span data-ttu-id="d6c83-119">次のいずれかのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-119">Run one of the following commands:</span></span>
 
-- <span data-ttu-id="b2483-120">単一のユーザーのパスワードが期限切れにならないように設定されているかどうかを確認するには、UPN (たとえば、 *user@contoso.onmicrosoft.com*) またはチェックするユーザーのユーザー ID を使用して、次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-120">To see if a single user's password is set to never expire, run the following cmdlet by using the UPN (for example, *user@contoso.onmicrosoft.com*) or the user ID of the user you want to check:</span></span>
+- <span data-ttu-id="d6c83-120">単一のユーザーのパスワードが期限切れにならないように設定されているかどうかを確認するには、UPN (たとえば、 *user@contoso.onmicrosoft.com*) またはチェックするユーザーのユーザー ID を使用して、次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-120">To see if a single user's password is set to never expire, run the following cmdlet by using the UPN (for example, *user@contoso.onmicrosoft.com*) or the user ID of the user you want to check:</span></span>
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -61,7 +61,7 @@ ms.locfileid: "43240237"
     }
     ```
 
-    <span data-ttu-id="b2483-121">例:</span><span class="sxs-lookup"><span data-stu-id="b2483-121">Example:</span></span>
+    <span data-ttu-id="d6c83-121">例:</span><span class="sxs-lookup"><span data-stu-id="d6c83-121">Example:</span></span>
 
     ```powershell
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{
@@ -69,7 +69,7 @@ ms.locfileid: "43240237"
     }
     ```  
 
-- <span data-ttu-id="b2483-122">すべてのユーザーの**パスワードの有効期限**が設定されていないことを確認するには、次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-122">To see the **Password never expires** setting for all users, run the following cmdlet:</span></span>
+- <span data-ttu-id="d6c83-122">すべてのユーザーの**パスワードの有効期限**が設定されていないことを確認するには、次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-122">To see the **Password never expires** setting for all users, run the following cmdlet:</span></span>
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -77,7 +77,7 @@ ms.locfileid: "43240237"
      }
     ```
 
-- <span data-ttu-id="b2483-123">**ReportPasswordNeverExpires**という名前の現在のユーザーのデスクトップに Html で PasswordNeverExpires を持つすべてのユーザーのレポートを取得するには</span><span class="sxs-lookup"><span data-stu-id="b2483-123">To get a report of all the users with PasswordNeverExpires in Html on the desktop of the current user with name  **ReportPasswordNeverExpires.html**</span></span>
+- <span data-ttu-id="d6c83-123">**ReportPasswordNeverExpires**という名前の現在のユーザーのデスクトップに Html で PasswordNeverExpires を持つすべてのユーザーのレポートを取得するには</span><span class="sxs-lookup"><span data-stu-id="d6c83-123">To get a report of all the users with PasswordNeverExpires in Html on the desktop of the current user with name  **ReportPasswordNeverExpires.html**</span></span>
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -85,7 +85,7 @@ ms.locfileid: "43240237"
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- <span data-ttu-id="b2483-124">**ReportPasswordNeverExpires**という名前の現在のユーザーのデスクトップに Csv で PasswordNeverExpires を持つすべてのユーザーのレポートを取得するには</span><span class="sxs-lookup"><span data-stu-id="b2483-124">To get a report of all the users with PasswordNeverExpires in CSV on the desktop of the current user with name **ReportPasswordNeverExpires.csv**</span></span>
+- <span data-ttu-id="d6c83-124">**ReportPasswordNeverExpires**という名前の現在のユーザーのデスクトップに Csv で PasswordNeverExpires を持つすべてのユーザーのレポートを取得するには</span><span class="sxs-lookup"><span data-stu-id="d6c83-124">To get a report of all the users with PasswordNeverExpires in CSV on the desktop of the current user with name **ReportPasswordNeverExpires.csv**</span></span>
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -93,37 +93,37 @@ ms.locfileid: "43240237"
     } | ConvertTo-Csv -NoTypeInformation | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.csv
     ```
 
-### <a name="set-a-password-to-expire"></a><span data-ttu-id="b2483-125">パスワードの有効期限を設定する</span><span class="sxs-lookup"><span data-stu-id="b2483-125">Set a password to expire</span></span>
+### <a name="set-a-password-to-expire"></a><span data-ttu-id="d6c83-125">パスワードの有効期限を設定する</span><span class="sxs-lookup"><span data-stu-id="d6c83-125">Set a password to expire</span></span>
 
-<span data-ttu-id="b2483-126">次のいずれかのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-126">Run one of the following commands:</span></span>
+<span data-ttu-id="d6c83-126">次のいずれかのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-126">Run one of the following commands:</span></span>
 
-- <span data-ttu-id="b2483-127">パスワードの有効期限が切れるように1人のユーザーのパスワードを設定するには、UPN またはユーザーのユーザー ID を使用して次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-127">To set the password of one user so that the password expires, run the following cmdlet by using the UPN or the user ID of the user:</span></span>
+- <span data-ttu-id="d6c83-127">パスワードの有効期限が切れるように1人のユーザーのパスワードを設定するには、UPN またはユーザーのユーザー ID を使用して次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-127">To set the password of one user so that the password expires, run the following cmdlet by using the UPN or the user ID of the user:</span></span>
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
     ```
 
-- <span data-ttu-id="b2483-128">組織内のすべてのユーザーのパスワードを期限切れになるように設定するには、次のコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="b2483-128">To set the passwords of all users in the organization so that they expire, use the following cmdlet:</span></span>
+- <span data-ttu-id="d6c83-128">組織内のすべてのユーザーのパスワードを期限切れになるように設定するには、次のコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-128">To set the passwords of all users in the organization so that they expire, use the following cmdlet:</span></span>
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-### <a name="set-a-password-to-never-expire"></a><span data-ttu-id="b2483-129">パスワードを無期限に設定する</span><span class="sxs-lookup"><span data-stu-id="b2483-129">Set a password to never expire</span></span>
+### <a name="set-a-password-to-never-expire"></a><span data-ttu-id="d6c83-129">パスワードを無期限に設定する</span><span class="sxs-lookup"><span data-stu-id="d6c83-129">Set a password to never expire</span></span>
 
-<span data-ttu-id="b2483-130">次のいずれかのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-130">Run one of the following commands:</span></span>
+<span data-ttu-id="d6c83-130">次のいずれかのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-130">Run one of the following commands:</span></span>
 
-- <span data-ttu-id="b2483-131">1人のユーザーのパスワードを無期限に設定するには、UPN またはユーザーのユーザー ID を使用して次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-131">To set the password of one user to never expire, run the following cmdlet by using the UPN or the user ID of the user:</span></span>
+- <span data-ttu-id="d6c83-131">1人のユーザーのパスワードを無期限に設定するには、UPN またはユーザーのユーザー ID を使用して次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-131">To set the password of one user to never expire, run the following cmdlet by using the UPN or the user ID of the user:</span></span>
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- <span data-ttu-id="b2483-132">組織内のすべてのユーザーのパスワードを期限切れにならないように設定するには、次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="b2483-132">To set the passwords of all the users in an organization to never expire, run the following cmdlet:</span></span>
+- <span data-ttu-id="d6c83-132">組織内のすべてのユーザーのパスワードを期限切れにならないように設定するには、次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6c83-132">To set the passwords of all the users in an organization to never expire, run the following cmdlet:</span></span>
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> <span data-ttu-id="b2483-133">パスワードは`pwdLastSet`属性`-PasswordPolicies DisablePasswordExpiration`に基づいてエージングが設定されています。</span><span class="sxs-lookup"><span data-stu-id="b2483-133">Passwords set to `-PasswordPolicies DisablePasswordExpiration` still age based on the `pwdLastSet` attribute.</span></span> <span data-ttu-id="b2483-134">ユーザーのパスワードの有効期限が切れないように設定してから90日後に移行すると、パスワードの有効期限が切れます。</span><span class="sxs-lookup"><span data-stu-id="b2483-134">If you set the user passwords to never expire and then 90+ days go by, the passwords expire.</span></span> <span data-ttu-id="b2483-135">`pwdLastSet`属性に基づいて、有効期限を`-PasswordPolicies None`変更した場合、90日より`pwdLastSet`前のパスワードについては、次にサインインするときにユーザーを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2483-135">Based on the `pwdLastSet` attribute, if you change the expiration to `-PasswordPolicies None`, all passwords that have a `pwdLastSet` older than 90 days require the user to change them the next time they sign in.</span></span> <span data-ttu-id="b2483-136">この変更によって、多数のユーザーに影響を与える可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b2483-136">This change can affect a large number of users.</span></span>
+> <span data-ttu-id="d6c83-133">パスワードは`pwdLastSet`属性`-PasswordPolicies DisablePasswordExpiration`に基づいてエージングが設定されています。</span><span class="sxs-lookup"><span data-stu-id="d6c83-133">Passwords set to `-PasswordPolicies DisablePasswordExpiration` still age based on the `pwdLastSet` attribute.</span></span> <span data-ttu-id="d6c83-134">ユーザーのパスワードの有効期限が切れないように設定してから90日後に移行すると、パスワードの有効期限が切れます。</span><span class="sxs-lookup"><span data-stu-id="d6c83-134">If you set the user passwords to never expire and then 90+ days go by, the passwords expire.</span></span> <span data-ttu-id="d6c83-135">`pwdLastSet`属性に基づいて、有効期限を`-PasswordPolicies None`変更した場合、90日より`pwdLastSet`前のパスワードについては、次にサインインするときにユーザーを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d6c83-135">Based on the `pwdLastSet` attribute, if you change the expiration to `-PasswordPolicies None`, all passwords that have a `pwdLastSet` older than 90 days require the user to change them the next time they sign in.</span></span> <span data-ttu-id="d6c83-136">この変更によって、多数のユーザーに影響を与える可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d6c83-136">This change can affect a large number of users.</span></span>

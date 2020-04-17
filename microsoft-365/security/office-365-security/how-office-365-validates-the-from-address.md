@@ -2,10 +2,10 @@
 title: Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,217 +16,115 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 'フィッシングを防止するために、Office 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
-ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Office 365 の受信メッセージ用の電子メールアドレスの要件に関する Lear。 2017年11月現在、このサービスでは、スプーフィングを防止するために RFC 準拠のアドレスが必要になりました。
+ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599184"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529003"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a><span data-ttu-id="68802-103">Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法</span><span class="sxs-lookup"><span data-stu-id="68802-103">How Office 365 validates the From address to prevent phishing</span></span>
+# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a><span data-ttu-id="8d87f-104">Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法</span><span class="sxs-lookup"><span data-stu-id="8d87f-104">How Office 365 validates the From address to prevent phishing</span></span>
 
-<span data-ttu-id="68802-104">Office 365 と Outlook.com 電子メールアカウントには、次第に大量のフィッシング攻撃があります。</span><span class="sxs-lookup"><span data-stu-id="68802-104">Office 365 and Outlook.com email accounts receive an increasingly large number of phishing attacks.</span></span> <span data-ttu-id="68802-105">Phishers を使用する方法の1つは、 [RFC 5322](https://tools.ietf.org/html/rfc5322)に準拠していない From: アドレスの値を持つメッセージを送信することです。</span><span class="sxs-lookup"><span data-stu-id="68802-105">One technique phishers use is to send messages that have values for the From: address that are not compliant with [RFC 5322](https://tools.ietf.org/html/rfc5322).</span></span> <span data-ttu-id="68802-106">From: アドレスは、5322.from アドレスとも呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="68802-106">The From: address is also called the 5322.From address.</span></span> <span data-ttu-id="68802-107">この種のフィッシングを防止するために、Office 365 と Outlook.com は、この記事で説明されているように、RFC 準拠の差出人: アドレスを含むようにサービスによって受信されるメッセージを要求します。</span><span class="sxs-lookup"><span data-stu-id="68802-107">To help prevent this type of phishing, Office 365 and Outlook.com require messages received by the service to include an RFC-compliant From: address as described in this article.</span></span>
+<span data-ttu-id="8d87f-105">Office 365 の電子メールアカウントには、次第に大量のフィッシング攻撃があります。</span><span class="sxs-lookup"><span data-stu-id="8d87f-105">Office 365 email accounts receive an increasingly large number of phishing attacks.</span></span> <span data-ttu-id="8d87f-106">[スプーフィング (偽造) された送信者電子メールアドレス](anti-spoofing-protection.md)を使用することに加えて、多くの場合、攻撃者は、インターネット標準に違反した From アドレスの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8d87f-106">In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards.</span></span> <span data-ttu-id="8d87f-107">この種のフィッシングを防止するために、Office 365 と Outlook.com では、このトピックで説明するように、受信メッセージに RFC 準拠の差出人のアドレスを含めるように要求されています。</span><span class="sxs-lookup"><span data-stu-id="8d87f-107">To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic.</span></span> <span data-ttu-id="8d87f-108">この強制は、2017年11月に有効になっています。</span><span class="sxs-lookup"><span data-stu-id="8d87f-108">This enforcement was enabled in November 2017.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="68802-108">この記事に記載されている情報では、電子メールアドレスの一般的な形式を基本的に理解しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="68802-108">The information in this article requires you to have a basic understanding of the general format of email addresses.</span></span> <span data-ttu-id="68802-109">詳細については、rfc [5322](https://tools.ietf.org/html/rfc5322) (特にセクション3.2.3、3.4、および 3.4.1)、rfc [5321](https://tools.ietf.org/html/rfc5321)、および[rfc 3696](https://tools.ietf.org/html/rfc3696)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68802-109">For more information, see [RFC 5322](https://tools.ietf.org/html/rfc5322) (particularly sections 3.2.3, 3.4, and 3.4.1), [RFC 5321](https://tools.ietf.org/html/rfc5321), as well as [RFC 3696](https://tools.ietf.org/html/rfc3696).</span></span> <span data-ttu-id="68802-110">この記事では、5322.from アドレスのポリシーの適用について説明します。</span><span class="sxs-lookup"><span data-stu-id="68802-110">This article is about policy enforcement for the 5322.From address.</span></span> <span data-ttu-id="68802-111">この記事では、5321.mailfrom の MailFrom アドレスについては説明しません。</span><span class="sxs-lookup"><span data-stu-id="68802-111">This article is not about the 5321.MailFrom address.</span></span>
+<span data-ttu-id="8d87f-109">**注**:</span><span class="sxs-lookup"><span data-stu-id="8d87f-109">**Notes**:</span></span>
 
-<span data-ttu-id="68802-112">残念ながら、インターネット上に従来の電子メールサーバーがいくつか存在していても、引き続き "正当な" 電子メールメッセージを送信しています。アドレスが不明であるか、無効である。</span><span class="sxs-lookup"><span data-stu-id="68802-112">Unfortunately, there are still some legacy email servers on the Internet that continue to send "legitimate" email messages that have a missing or malformed From: address.</span></span> <span data-ttu-id="68802-113">これらの従来のシステムを使用する組織から定期的に電子メールを受信する場合は、最新のセキュリティ標準に準拠するようにメールサーバーを更新するように組織を促します。</span><span class="sxs-lookup"><span data-stu-id="68802-113">If you regularly receive email from organizations that use these legacy systems, encourage those organizations to update their mail servers to comply with modern security standards.</span></span>
+- <span data-ttu-id="8d87f-110">このトピックで説明されているように、アドレスが正しくない組織から電子メールを定期的に受信している場合は、最新のセキュリティ標準に準拠するように電子メールサーバーを更新するように組織を促します。</span><span class="sxs-lookup"><span data-stu-id="8d87f-110">If you regularly receive email from organizations that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.</span></span>
 
-<span data-ttu-id="68802-114">Microsoft は、2017年11月9日にこの記事に記載されているポリシーの適用を開始します。</span><span class="sxs-lookup"><span data-stu-id="68802-114">Microsoft will start rolling out enforcement of the policies described in this article on November 9, 2017.</span></span>
+- <span data-ttu-id="8d87f-111">関連する Sender フィールド (代理人とメーリングリストで使用) は、これらの要件の影響を受けません。</span><span class="sxs-lookup"><span data-stu-id="8d87f-111">The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements.</span></span> <span data-ttu-id="8d87f-112">詳細については、次のブログ投稿を参照してください。[電子メールの ' sender ' を参照するとどういう](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)ことですか。</span><span class="sxs-lookup"><span data-stu-id="8d87f-112">For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).</span></span>
 
-## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a><span data-ttu-id="68802-115">Office 365 がフィッシング攻撃を防止するために有効な From: アドレスの使用を強制する方法</span><span class="sxs-lookup"><span data-stu-id="68802-115">How Office 365 enforces the use of a valid From: address to prevent phishing attacks</span></span>
+## <a name="an-overview-of-email-message-standards"></a><span data-ttu-id="8d87f-113">電子メールメッセージの標準の概要</span><span class="sxs-lookup"><span data-stu-id="8d87f-113">An overview of email message standards</span></span>
 
-<span data-ttu-id="68802-116">Office 365 は、フィッシング攻撃からの保護を強化するために、受信したメッセージ内の From: アドレスの使用を強制する方法に変更を加えています。</span><span class="sxs-lookup"><span data-stu-id="68802-116">Office 365 is making changes to the way it enforces the use of the From: address in messages it receives in order to better protect you from phishing attacks.</span></span> <span data-ttu-id="68802-117">この記事の内容:</span><span class="sxs-lookup"><span data-stu-id="68802-117">In this article:</span></span>
+<span data-ttu-id="8d87f-114">標準的な SMTP 電子メール メッセージは、*メッセージ エンベロープ*とメッセージのコンテンツで構成されます。</span><span class="sxs-lookup"><span data-stu-id="8d87f-114">A standard SMTP email message consists of a *message envelope* and message content.</span></span> <span data-ttu-id="8d87f-115">メッセージエンベロープには、SMTP サーバー間でメッセージを送信および配信するために必要な情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="8d87f-115">The message envelope contains information that's required for transmitting and delivering the message between SMTP servers.</span></span> <span data-ttu-id="8d87f-116">メッセージのコンテンツには、総称して "*メッセージ ヘッダー*" と呼ばれるメッセージ ヘッダー フィールドと、メッセージ本文があります。</span><span class="sxs-lookup"><span data-stu-id="8d87f-116">The message content contains message header fields (collectively called the *message header*) and the message body.</span></span> <span data-ttu-id="8d87f-117">メッセージエンベロープは[rfc 5321](https://tools.ietf.org/html/rfc5321)で説明されており、メッセージヘッダーについては[rfc 5322](https://tools.ietf.org/html/rfc5322)で説明されています。</span><span class="sxs-lookup"><span data-stu-id="8d87f-117">The message envelope is described in [RFC 5321](https://tools.ietf.org/html/rfc5321), and the message header is described in [RFC 5322](https://tools.ietf.org/html/rfc5322).</span></span> <span data-ttu-id="8d87f-118">メッセージの送信プロセスによって生成されたメッセージエンベロープがメッセージの一部ではないため、受信者に実際のメッセージエンベロープが表示されることはありません。</span><span class="sxs-lookup"><span data-stu-id="8d87f-118">Recipients never see the actual message envelope because it's generated by the message transmission process, and it isn't actually part of the message.</span></span>
 
-- [<span data-ttu-id="68802-118">すべてのメッセージに有効な差出人: アドレスを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="68802-118">All messages must include a valid From: address</span></span>](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
+- <span data-ttu-id="8d87f-119">`5321.MailFrom`アドレス ( **MAIL FROM** address、P1 sender、または envelope sender とも呼ばれます) は、メッセージの SMTP 送信で使用される電子メールアドレスです。</span><span class="sxs-lookup"><span data-stu-id="8d87f-119">The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message.</span></span> <span data-ttu-id="8d87f-120">通常、この電子メールアドレスは、メッセージヘッダーの**リターンパス**ヘッダーフィールドに記録されます (ただし、送信者は別の**リターンパス**電子メールアドレスを指定することもできます)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-120">This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).</span></span>
 
-- [<span data-ttu-id="68802-119">表示名を含めない場合の From: アドレスの形式</span><span class="sxs-lookup"><span data-stu-id="68802-119">Format of the From: address if you don't include a display name</span></span>](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
+- <span data-ttu-id="8d87f-121">`5322.From` (From アドレスまたは P2 送信者とも呼ばれる) は、[送信**元**アドレス] フィールドの電子メールアドレスであり、電子メールクライアントに表示される送信者の電子メールアドレスです。</span><span class="sxs-lookup"><span data-stu-id="8d87f-121">The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.</span></span> <span data-ttu-id="8d87f-122">From アドレスは、このトピックに記載されている要件の焦点です。</span><span class="sxs-lookup"><span data-stu-id="8d87f-122">The From address is the focus of the requirements in this topic.</span></span>
 
-- [<span data-ttu-id="68802-120">表示名が含まれている場合の From: アドレスの形式</span><span class="sxs-lookup"><span data-stu-id="68802-120">Format of the From: address if you include a display name</span></span>](how-office-365-validates-the-from-address.md#FormatDisplayName)
+<span data-ttu-id="8d87f-123">From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクション3.2.3、3.4、3.4.1、 [rfc 3696](https://tools.ietf.org/html/rfc3696)) にわたって詳細に定義されています。</span><span class="sxs-lookup"><span data-stu-id="8d87f-123">The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)).</span></span> <span data-ttu-id="8d87f-124">アドレス指定には多くのバリエーションがあり、どのような意味があるかは無効です。</span><span class="sxs-lookup"><span data-stu-id="8d87f-124">There are many variations on addressing and what's considered valid or invalid.</span></span> <span data-ttu-id="8d87f-125">簡単にするために、次の形式と定義をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="8d87f-125">To keep it simple, we recommend the following format and definitions:</span></span>
 
-- [<span data-ttu-id="68802-121">有効で無効な From: アドレスの追加例</span><span class="sxs-lookup"><span data-stu-id="68802-121">Additional examples of valid and invalid From: addresses</span></span>](how-office-365-validates-the-from-address.md#Examples)
+`From: "Display Name" <EmailAddress>`
 
-- [<span data-ttu-id="68802-122">カスタムドメインに対する自動返信を抑制して、From: ポリシーを破損させます。</span><span class="sxs-lookup"><span data-stu-id="68802-122">Suppress auto-replies to your custom domain without breaking the From: policy</span></span>](how-office-365-validates-the-from-address.md#SuppressAutoReply)
+- <span data-ttu-id="8d87f-126">[**表示名**: 電子メールアドレスの所有者を説明する省略可能な語句です。</span><span class="sxs-lookup"><span data-stu-id="8d87f-126">**Display Name**: An optional phrase that describes the owner of the email address.</span></span>
 
-- [<span data-ttu-id="68802-123">Office 365 From: address 強制ポリシーの上書き</span><span class="sxs-lookup"><span data-stu-id="68802-123">Overriding the Office 365 From: address enforcement policy</span></span>](how-office-365-validates-the-from-address.md#Override)
+  - <span data-ttu-id="8d87f-127">表示名は常に二重引用符 (") で囲むようにすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="8d87f-127">We recommend that you always enclose the display name in double quotation marks (") as shown.</span></span> <span data-ttu-id="8d87f-128">表示名にコンマが含まれている場合は、RFC 5322 ごとに文字列を二重引用符で囲む_必要があり_ます。</span><span class="sxs-lookup"><span data-stu-id="8d87f-128">If the display name contains a comma, you _must_ enclose the string in double quotation marks per RFC 5322.</span></span>
+  - <span data-ttu-id="8d87f-129">[差出人] アドレスに表示名を指定する場合は、EmailAddress の値を山かっこ (< >) で囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="8d87f-129">If the From address includes a display name, the EmailAddress value must be enclosed in angle brackets (< >) as shown.</span></span>
+  - <span data-ttu-id="8d87f-130">Microsoft では、表示名と電子メールアドレスの間にスペースを挿入することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="8d87f-130">Microsoft strongly recommends that you insert a space between the display name and the email address.</span></span>
 
-- [<span data-ttu-id="68802-124">Office 365 で cybercrimes を防止し、保護するためのその他の方法</span><span class="sxs-lookup"><span data-stu-id="68802-124">Other ways to prevent and protect against cybercrimes in Office 365</span></span>](how-office-365-validates-the-from-address.md#OtherProtection)
+- <span data-ttu-id="8d87f-131">**EmailAddress**: 電子メールアドレスの形式`local-part@domain`は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="8d87f-131">**EmailAddress**: An email address uses the format `local-part@domain`:</span></span>
 
-<span data-ttu-id="68802-125">他のユーザーの代理としての送信は、この変更の影響を受けません。詳細については、「「[メールの送信者」を参照して](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)ください」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68802-125">Sending on behalf of another user is not affected by this change, for more details, read Terry Zink's blog "[What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)".</span></span>
+  - <span data-ttu-id="8d87f-132">**ローカルパート**: アドレスに関連付けられているメールボックスを識別する文字列。</span><span class="sxs-lookup"><span data-stu-id="8d87f-132">**local-part**: A string that identifies the mailbox associated with the address.</span></span> <span data-ttu-id="8d87f-133">この値は、ドメイン内で一意です。</span><span class="sxs-lookup"><span data-stu-id="8d87f-133">This value is unique within the domain.</span></span> <span data-ttu-id="8d87f-134">多くの場合、メールボックスの所有者のユーザー名または GUID が使用されます。</span><span class="sxs-lookup"><span data-stu-id="8d87f-134">Often, the mailbox owner's username or GUID is used.</span></span>
+  - <span data-ttu-id="8d87f-135">**ドメイン**: 電子メールアドレスのローカル部分で識別されたメールボックスをホストする電子メールサーバーの完全修飾ドメイン名 (FQDN)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-135">**domain**: The fully qualified domain name (FQDN) of the email server that hosts the mailbox identified by the local-part of the email address.</span></span>
 
-### <a name="all-messages-must-include-a-valid-from-address"></a><span data-ttu-id="68802-126">すべてのメッセージに有効な差出人: アドレスを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="68802-126">All messages must include a valid From: address</span></span>
-<span data-ttu-id="68802-127"><a name="MustIncludeFromAddress"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-127"><a name="MustIncludeFromAddress"> </a></span></span>
+  <span data-ttu-id="8d87f-136">EmailAddress の値に関するその他の考慮事項を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8d87f-136">These are some additional considerations for the EmailAddress value:</span></span>
 
-<span data-ttu-id="68802-128">一部の自動メッセージには、送信時に From: アドレスは含まれません。</span><span class="sxs-lookup"><span data-stu-id="68802-128">Some automated messages don't include a From: address when they are sent.</span></span> <span data-ttu-id="68802-129">以前は、Office 365 または Outlook.com が From: アドレスなしでメッセージを受信すると、サービスは次の既定の From: address をメッセージに追加して、そのメッセージを配信できるようにします。</span><span class="sxs-lookup"><span data-stu-id="68802-129">In the past, when Office 365 or Outlook.com received a message without a From: address, the service added the following default From: address to the message in order to make it deliverable:</span></span>
+  - <span data-ttu-id="8d87f-137">電子メールアドレスは1つだけです。</span><span class="sxs-lookup"><span data-stu-id="8d87f-137">Only one email address.</span></span>
+  - <span data-ttu-id="8d87f-138">角かっこは、スペースで区切り文字として使用しないことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="8d87f-138">We recommend that you do not separate the angle brackets with spaces.</span></span>
+  - <span data-ttu-id="8d87f-139">電子メールアドレスの後に追加のテキストを含めないでください。</span><span class="sxs-lookup"><span data-stu-id="8d87f-139">Don't include additional text after the email address.</span></span>
 
-```
-From: <>
-```
+## <a name="examples-of-valid-and-invalid-from-addresses"></a><span data-ttu-id="8d87f-140">有効な/無効なアドレスの例</span><span class="sxs-lookup"><span data-stu-id="8d87f-140">Examples of valid and invalid From addresses</span></span>
 
-<span data-ttu-id="68802-130">2017年11月9日以降、Office 365 はデータセンターとメールサーバーへの変更をロールアウトします。これにより、From: アドレスのないメッセージは Office 365 または Outlook.com によって受け入れられなくなり、新しいルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="68802-130">Starting November 9, 2017, Office 365 will be rolling out changes to its datacenters and mail servers which will enforce a new rule where messages without a From: address will no longer be accepted by Office 365 or Outlook.com.</span></span> <span data-ttu-id="68802-131">その代わりに、Office 365 で受信したすべてのメッセージには、有効な差出人: アドレスが既に含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="68802-131">Instead, all messages received by Office 365 must already contain a valid From: address.</span></span> <span data-ttu-id="68802-132">それ以外の場合は、Outlook.com と Office 365 の迷惑メールフォルダーまたは削除済みアイテムフォルダーにメッセージが送信されます。</span><span class="sxs-lookup"><span data-stu-id="68802-132">Otherwise, the message will be sent to either the Junk Email or Deleted Items folders in Outlook.com and Office 365.</span></span>
+<span data-ttu-id="8d87f-141">以下は、有効な電子メールアドレスです。</span><span class="sxs-lookup"><span data-stu-id="8d87f-141">The following From email addresses are valid:</span></span>
 
-### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a><span data-ttu-id="68802-133">構文の概要: Office 365 の From: アドレスの有効な形式</span><span class="sxs-lookup"><span data-stu-id="68802-133">Syntax overview: Valid format for the From: address for Office 365</span></span>
-<span data-ttu-id="68802-134"><a name="SyntaxOverviewFromAddress"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-134"><a name="SyntaxOverviewFromAddress"> </a></span></span>
+- `From: sender@contoso.com`
 
-<span data-ttu-id="68802-135">From: アドレスの値の形式は、いくつかの Rfc で詳細に定義されています。</span><span class="sxs-lookup"><span data-stu-id="68802-135">The format for the value of the From: address is defined in detail across several RFCs.</span></span> <span data-ttu-id="68802-136">アドレス指定には、さまざまなバリエーションがあり、有効または無効と見なすことができます。</span><span class="sxs-lookup"><span data-stu-id="68802-136">There are many variations on addressing and what may be considered valid or invalid.</span></span> <span data-ttu-id="68802-137">簡単にするために、Microsoft は次の形式と定義を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="68802-137">To keep it simple, Microsoft recommends that you use the following format and definitions:</span></span>
+- `From: <sender@contoso.com>`
 
-```
-From: "displayname " <emailaddress >
-```
+- <span data-ttu-id="8d87f-142">`From: < sender@contoso.com >`(角かっこと電子メールアドレスの間にスペースがあるため、この方法は推奨されません)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-142">`From: < sender@contoso.com >` (Not recommended because there are spaces between the angle brackets and the email address.)</span></span>
 
-<span data-ttu-id="68802-138">ここで、</span><span class="sxs-lookup"><span data-stu-id="68802-138">Where:</span></span>
+- `From: "Sender, Example" <sender.example@contoso.com>`
 
-- <span data-ttu-id="68802-139">オプション *displayname*は、電子メールアドレスの所有者を説明する語句です。</span><span class="sxs-lookup"><span data-stu-id="68802-139">(Optional)  *displayname*  is a phrase that describes the owner of the email address.</span></span> <span data-ttu-id="68802-140">たとえば、これは、メールボックスの名前よりも、送信者を示すユーザーフレンドリな名前になることがあります。</span><span class="sxs-lookup"><span data-stu-id="68802-140">For example, this might be a more user-friendly name to describe the sender than the name of the mailbox.</span></span> <span data-ttu-id="68802-141">表示名の使用はオプションです。</span><span class="sxs-lookup"><span data-stu-id="68802-141">Using a display name is optional.</span></span> <span data-ttu-id="68802-142">ただし、表示名の使用を選択する場合は、表示されているとおり常に引用符で囲むことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="68802-142">However, if you choose to use a display name, Microsoft recommends that you always enclose it within quotation marks as shown.</span></span>
+- `From: "Office 365" <sender@contoso.com>`
 
-- <span data-ttu-id="68802-143">要する *emailaddress*は次のもので構成されます。</span><span class="sxs-lookup"><span data-stu-id="68802-143">(Required)  *emailaddress*  is made up of:</span></span>
+- <span data-ttu-id="8d87f-143">`From: Office 365 <sender@contoso.com>`(表示名が二重引用符で囲まれていないため、推奨されません)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-143">`From: Office 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)</span></span>
 
-  ```
-  local-part @domain
-  ```
+<span data-ttu-id="8d87f-144">次の電子メールアドレスは無効です。</span><span class="sxs-lookup"><span data-stu-id="8d87f-144">The following From email addresses are invalid:</span></span>
 
-    <span data-ttu-id="68802-144">ここで、</span><span class="sxs-lookup"><span data-stu-id="68802-144">Where:</span></span>
+- <span data-ttu-id="8d87f-145">**From アドレスなし**: 一部の自動メッセージに差出人住所が含まれていません。</span><span class="sxs-lookup"><span data-stu-id="8d87f-145">**No From address**: Some automated messages don't include a From address.</span></span> <span data-ttu-id="8d87f-146">以前は、Office 365 または Outlook.com が差出人アドレスを持たないメッセージを受信すると、サービスによってメッセージが配信されるように、次の既定の From: address が追加されました。</span><span class="sxs-lookup"><span data-stu-id="8d87f-146">In the past, when Office 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:</span></span>
 
-  - <span data-ttu-id="68802-145">要する *local part*は、アドレスに関連付けられているメールボックスを識別する文字列です。</span><span class="sxs-lookup"><span data-stu-id="68802-145">(Required)  *local-part*  is a string that identifies the mailbox associated with the address.</span></span> <span data-ttu-id="68802-146">これは、ドメイン内で一意です。</span><span class="sxs-lookup"><span data-stu-id="68802-146">This is unique within the domain.</span></span> <span data-ttu-id="68802-147">多くの場合、メールボックス所有者のユーザー名または GUID は、ローカル部分の値として使用されます。</span><span class="sxs-lookup"><span data-stu-id="68802-147">Often, the mailbox owner's username or GUID is used as the value for the local-part.</span></span>
+  `From: <>`
 
-  - <span data-ttu-id="68802-148">要する *domain*は、電子メールアドレスのローカル部分で識別されるメールボックスをホストするメールサーバーの完全修飾ドメイン名 (FQDN) です。</span><span class="sxs-lookup"><span data-stu-id="68802-148">(Required)  *domain*  is the fully-qualified domain name (FQDN) of the mail server that hosts the mailbox identified by the local-part of the email address.</span></span>
+  <span data-ttu-id="8d87f-147">これで、空の差出人アドレスを持つメッセージは受け付けられなくなりました。</span><span class="sxs-lookup"><span data-stu-id="8d87f-147">Now, messages with a blank From address are no longer accepted.</span></span>
 
-### <a name="format-of-the-from-address-if-you-dont-include-a-display-name"></a><span data-ttu-id="68802-149">表示名を含めない場合の From: アドレスの形式</span><span class="sxs-lookup"><span data-stu-id="68802-149">Format of the From: address if you don't include a display name</span></span>
-<span data-ttu-id="68802-150"><a name="FormatNoDisplayName"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-150"><a name="FormatNoDisplayName"> </a></span></span>
+- <span data-ttu-id="8d87f-148">`From: Office 365 sender@contoso.com`(表示名は存在しますが、電子メールアドレスは角かっこで囲まれていません)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-148">`From: Office 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)</span></span>
 
-<span data-ttu-id="68802-151">表示名が含まれていない電子メールアドレスが1つだけ含まれている場合は、次のように設定します。</span><span class="sxs-lookup"><span data-stu-id="68802-151">A properly formatted From: address that does not include a display name includes only a single email address with or without angle brackets.</span></span> <span data-ttu-id="68802-152">Microsoft では、山かっこをスペースで区切らないことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="68802-152">Microsoft recommends that you do not separate the angle brackets with spaces.</span></span> <span data-ttu-id="68802-153">また、電子メールアドレスの後に何も含めないでください。</span><span class="sxs-lookup"><span data-stu-id="68802-153">In addition, don't include anything after the email address.</span></span>
+- <span data-ttu-id="8d87f-149">`From: "Office 365" <sender@contoso.com> (Sent by a process)`(電子メールアドレスの後のテキスト)</span><span class="sxs-lookup"><span data-stu-id="8d87f-149">`From: "Office 365" <sender@contoso.com> (Sent by a process)` (Text after the email address.)</span></span>
 
-<span data-ttu-id="68802-154">次の例は有効です。</span><span class="sxs-lookup"><span data-stu-id="68802-154">The following examples are valid:</span></span>
+- <span data-ttu-id="8d87f-150">`From: Sender, Example <sender.example@contoso.com>`(表示名にはコンマが含まれていますが、二重引用符で囲まれていません)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-150">`From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but is not enclosed in double quotation marks.)</span></span>
 
-```
-From: sender@contoso.com
-```
+- <span data-ttu-id="8d87f-151">`From: "Office 365 <sender@contoso.com>"`(全体の値が誤って二重引用符で囲まれています。)</span><span class="sxs-lookup"><span data-stu-id="8d87f-151">`From: "Office 365 <sender@contoso.com>"` (The whole value is incorrectly enclosed in double quotation marks.)</span></span>
 
-```
-From: <sender@contoso.com>
-```
+- <span data-ttu-id="8d87f-152">`From: "Office 365 <sender@contoso.com>" sender@contoso.com`(表示名は存在しますが、電子メールアドレスは角かっこで囲まれていません)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-152">`From: "Office 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)</span></span>
 
-<span data-ttu-id="68802-155">次の例は有効ですが、角かっこと電子メールアドレスの間にスペースが含まれているため、推奨されていません。</span><span class="sxs-lookup"><span data-stu-id="68802-155">The following example is valid but not recommended because it contains spaces between the angle brackets and the email address:</span></span>
+- <span data-ttu-id="8d87f-153">`From: Office 365<sender@contoso.com>`(表示名と左山かっこの間にスペースはありません)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-153">`From: Office 365<sender@contoso.com>` (No space between the display name and the left angle bracket.)</span></span>
 
-```
-From: < sender@contoso.com >
-```
+- <span data-ttu-id="8d87f-154">`From: "Office 365"<sender@contoso.com>`(閉じる二重引用符と左山かっこの間にスペースを入れることはできません)。</span><span class="sxs-lookup"><span data-stu-id="8d87f-154">`From: "Office 365"<sender@contoso.com>` (No space between the closing double quotation mark and the left angle bracket.)</span></span>
 
-<span data-ttu-id="68802-156">次の例は、電子メールアドレスの後にテキストが含まれているため、無効です。</span><span class="sxs-lookup"><span data-stu-id="68802-156">The following example is invalid because it contains text after the email address:</span></span>
+## <a name="suppress-auto-replies-to-your-custom-domain"></a><span data-ttu-id="8d87f-155">カスタムドメインへの自動返信を抑制する</span><span class="sxs-lookup"><span data-stu-id="8d87f-155">Suppress auto-replies to your custom domain</span></span>
 
-```
-From: "Office 365" <sender@contoso.com> (Sent by a process)
+<span data-ttu-id="8d87f-156">この値`From: <>`を使用して自動応答を抑制することはできません。</span><span class="sxs-lookup"><span data-stu-id="8d87f-156">You can't use the value `From: <>` to suppress auto-replies.</span></span> <span data-ttu-id="8d87f-157">代わりに、カスタムドメインの null MX レコードを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8d87f-157">Instead, you need to set up a null MX record for your custom domain.</span></span> <span data-ttu-id="8d87f-158">応答サーバーがメッセージを送信できる公開アドレスがないため、自動応答 (およびすべての返信) は自然に抑制されます。</span><span class="sxs-lookup"><span data-stu-id="8d87f-158">Auto-replies (and all replies) are naturally suppressed because there is no published address that the responding server can send messages to.</span></span>
+
+- <span data-ttu-id="8d87f-159">電子メールを受信できない電子メールドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="8d87f-159">Choose an email domain that can't receive email.</span></span> <span data-ttu-id="8d87f-160">たとえば、プライマリドメインが contoso.com の場合は、noreply.contoso.com を選択することができます。</span><span class="sxs-lookup"><span data-stu-id="8d87f-160">For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.</span></span>
+
+- <span data-ttu-id="8d87f-161">このドメインの null MX レコードは、1つのピリオドで構成されます。</span><span class="sxs-lookup"><span data-stu-id="8d87f-161">The null MX record for this domain consists of a single period.</span></span>
+
+<span data-ttu-id="8d87f-162">以下に例を示します。</span><span class="sxs-lookup"><span data-stu-id="8d87f-162">For example:</span></span>
+
+```text
+noreply.contoso.com IN MX .
 ```
 
-### <a name="format-of-the-from-address-if-you-include-a-display-name"></a><span data-ttu-id="68802-157">表示名が含まれている場合の From: アドレスの形式</span><span class="sxs-lookup"><span data-stu-id="68802-157">Format of the From: address if you include a display name</span></span>
-<span data-ttu-id="68802-158"><a name="FormatDisplayName"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-158"><a name="FormatDisplayName"> </a></span></span>
+<span data-ttu-id="8d87f-163">MX レコードのセットアップの詳細については、「[任意の dns ホスティングプロバイダーで Office 365 用の dns レコードを作成](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8d87f-163">For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span></span>
 
-<span data-ttu-id="68802-159">From: 表示名の値を含むアドレスでは、次のルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="68802-159">For From: addresses that include a value for the display name, the following rules apply:</span></span>
+<span data-ttu-id="8d87f-164">Null MX の公開の詳細については、「 [RFC 7505](https://tools.ietf.org/html/rfc7505)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8d87f-164">For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).</span></span>
 
-- <span data-ttu-id="68802-160">送信者のアドレスに表示名が含まれており、表示名にコンマが含まれている場合は、表示名を引用符で囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="68802-160">If the sender address includes a display name, and the display name includes a comma, then the display name must be enclosed within quotation marks.</span></span> <span data-ttu-id="68802-161">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="68802-161">For example:</span></span>
+## <a name="override-from-address-enforcement"></a><span data-ttu-id="8d87f-165">アドレスの強制/無効化</span><span class="sxs-lookup"><span data-stu-id="8d87f-165">Override From address enforcement</span></span>
 
-    <span data-ttu-id="68802-162">次の例は有効です。</span><span class="sxs-lookup"><span data-stu-id="68802-162">The following example is valid:</span></span>
+<span data-ttu-id="8d87f-166">受信電子メールの From アドレス要件をバイパスするには、「 [Office 365 の安全な送信者リストを作成](create-safe-sender-lists-in-office-365.md)する」の説明に従って、IP 許可一覧 (接続フィルター) またはメールフロールール (トランスポートルールとも呼ばれます) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="8d87f-166">To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
 
-  ```
-  From: "Sender, Example" <sender.example@contoso.com>
-  ```
+<span data-ttu-id="8d87f-167">Office 365 から送信する送信電子メールについては、From アドレスの要件を無効にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="8d87f-167">You can't override the From address requirements for outbound email that you send from Office 365.</span></span> <span data-ttu-id="8d87f-168">さらに、Outlook.com では、サポートによっても、あらゆる種類の上書きを許可しません。</span><span class="sxs-lookup"><span data-stu-id="8d87f-168">In addition, Outlook.com will not allow overrides of any kind, even through support.</span></span>
 
-    <span data-ttu-id="68802-163">次の例は無効です。</span><span class="sxs-lookup"><span data-stu-id="68802-163">The following example is not valid:</span></span>
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a><span data-ttu-id="8d87f-169">Office 365 で cybercrimes を防止し、保護するためのその他の方法</span><span class="sxs-lookup"><span data-stu-id="8d87f-169">Other ways to prevent and protect against cybercrimes in Office 365</span></span>
 
-  ```
-  From: Sender, Example <sender.example@contoso.com>
-  ```
-
-    <span data-ttu-id="68802-164">表示名にコンマが含まれている場合は、RFC 5322 に従って、表示名が引用符で囲まれていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="68802-164">Not enclosing the display name in quotation marks if that display name includes a comma is invalid according to RFC 5322.</span></span>
-
-    <span data-ttu-id="68802-165">表示名の中にコンマが含まれているかどうかに関係なく、ベストプラクティスとして、表示名を引用符で囲みます。</span><span class="sxs-lookup"><span data-stu-id="68802-165">As a best practice, put quote marks around the display name regardless of whether or not there is a comma within the display name.</span></span>
-
-- <span data-ttu-id="68802-166">送信者のアドレスに表示名が含まれている場合は、その電子メールアドレスを山かっこで囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="68802-166">If the sender address includes a display name, then the email address must be enclosed within angle brackets.</span></span>
-
-    <span data-ttu-id="68802-167">ベストプラクティスとして、表示名と電子メールアドレスの間にスペースを挿入することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="68802-167">As a best practice, Microsoft strongly recommends that you insert a space between the display name and the email address.</span></span>
-
-### <a name="additional-examples-of-valid-and-invalid-from-addresses"></a><span data-ttu-id="68802-168">有効で無効な From: アドレスの追加例</span><span class="sxs-lookup"><span data-stu-id="68802-168">Additional examples of valid and invalid From: addresses</span></span>
-<span data-ttu-id="68802-169"><a name="Examples"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-169"><a name="Examples"> </a></span></span>
-
-- <span data-ttu-id="68802-170">有効な</span><span class="sxs-lookup"><span data-stu-id="68802-170">Valid:</span></span>
-
-  ```
-  From: "Office 365" <sender@contoso.com>
-  ```
-
-- <span data-ttu-id="68802-171">無効</span><span class="sxs-lookup"><span data-stu-id="68802-171">Invalid.</span></span> <span data-ttu-id="68802-172">電子メールアドレスは、山かっこで囲まれていません。</span><span class="sxs-lookup"><span data-stu-id="68802-172">The email address is not enclosed with angle brackets:</span></span>
-
-  ```
-  From: Office 365 sender@contoso.com
-  ```
-
-- <span data-ttu-id="68802-173">有効ですが、推奨されていません。</span><span class="sxs-lookup"><span data-stu-id="68802-173">Valid, but not recommended.</span></span> <span data-ttu-id="68802-174">表示名が引用符で囲まれていません。</span><span class="sxs-lookup"><span data-stu-id="68802-174">The display name is not in quotes.</span></span> <span data-ttu-id="68802-175">ベストプラクティスとして、表示名を常に引用符で囲みます。</span><span class="sxs-lookup"><span data-stu-id="68802-175">As a best practice, always put quotation marks around the display name:</span></span>
-
-  ```
-  From: Office 365 <sender@contoso.com>
-  ```
-
-- <span data-ttu-id="68802-176">無効</span><span class="sxs-lookup"><span data-stu-id="68802-176">Invalid.</span></span> <span data-ttu-id="68802-177">表示名だけでなく、すべてが引用符で囲まれています。</span><span class="sxs-lookup"><span data-stu-id="68802-177">Everything is enclosed within quotation marks, not just the display name:</span></span>
-
-  ```
-  From: "Office 365 <sender@contoso.com>"
-  ```
-
-- <span data-ttu-id="68802-178">無効</span><span class="sxs-lookup"><span data-stu-id="68802-178">Invalid.</span></span> <span data-ttu-id="68802-179">電子メールアドレスは、山かっこで囲まれていません。</span><span class="sxs-lookup"><span data-stu-id="68802-179">There are no angle brackets around the email address:</span></span>
-
-  ```
-  From: "Office 365 <sender@contoso.com>" sender@contoso.com
-  ```
-
-- <span data-ttu-id="68802-180">無効</span><span class="sxs-lookup"><span data-stu-id="68802-180">Invalid.</span></span> <span data-ttu-id="68802-181">表示名と左山かっこの間にスペースはありません。</span><span class="sxs-lookup"><span data-stu-id="68802-181">There is no space between the display name and left angle bracket:</span></span>
-
-  ```
-  From: Office 365<sender@contoso.com>
-  ```
-
-- <span data-ttu-id="68802-182">無効</span><span class="sxs-lookup"><span data-stu-id="68802-182">Invalid.</span></span> <span data-ttu-id="68802-183">[表示名] と [左山かっこ] の前後には、二重引用符の間にスペースを入れることはできません。</span><span class="sxs-lookup"><span data-stu-id="68802-183">There is no space between the closing quotation mark around the display name and the left angle bracket.</span></span>
-
-  ```
-  From: "Office 365"<sender@contoso.com>
-  ```
-
-### <a name="suppress-auto-replies-to-your-custom-domain-without-breaking-the-from-policy"></a><span data-ttu-id="68802-184">カスタムドメインに対する自動返信を抑制して、From: ポリシーを破損させます。</span><span class="sxs-lookup"><span data-stu-id="68802-184">Suppress auto-replies to your custom domain without breaking the From: policy</span></span>
-<span data-ttu-id="68802-185"><a name="SuppressAutoReply"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-185"><a name="SuppressAutoReply"> </a></span></span>
-
-<span data-ttu-id="68802-186">新しい from: policy 執行を使用すると、次\< \>のものを使用できなくなります。自動応答を抑制します。</span><span class="sxs-lookup"><span data-stu-id="68802-186">With the new From: policy enforcement, you can no longer use From: \<\> to suppress auto-replies.</span></span> <span data-ttu-id="68802-187">代わりに、カスタムドメインの null MX レコードを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="68802-187">Instead, you need to set up a null MX record for your custom domain.</span></span>
-
-<span data-ttu-id="68802-188">メールエクスチェンジャー (MX) レコードは、ドメインのメールを受信するメールサーバーを識別する、DNS 内のリソースレコードです。</span><span class="sxs-lookup"><span data-stu-id="68802-188">The mail exchanger (MX) record is a resource record in DNS that identifies the mail server that receives mail for your domain.</span></span> <span data-ttu-id="68802-189">応答サーバーがメッセージを送信できる公開アドレスがないため、自動応答 (およびすべての返信) は自然に抑制されます。</span><span class="sxs-lookup"><span data-stu-id="68802-189">Auto-replies (and all replies) are naturally suppressed because there is no published address to which the responding server can send messages.</span></span>
-
-<span data-ttu-id="68802-190">カスタムドメイン用の null MX レコードを設定する場合:</span><span class="sxs-lookup"><span data-stu-id="68802-190">When you set up a null MX record for your custom domain:</span></span>
-
-- <span data-ttu-id="68802-191">電子メールを受信しないメッセージの送信元のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="68802-191">Choose a domain from which to send messages that doesn't accept (receive) email.</span></span> <span data-ttu-id="68802-192">たとえば、プライマリドメインが contoso.com の場合は、noreply.contoso.com を選択することができます。</span><span class="sxs-lookup"><span data-stu-id="68802-192">For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.</span></span>
-
-- <span data-ttu-id="68802-193">ドメインの null MX レコードを設定します。</span><span class="sxs-lookup"><span data-stu-id="68802-193">Set up the null MX record for your domain.</span></span> <span data-ttu-id="68802-194">Null MX レコードは、次の例のように1つのドットで構成されます。</span><span class="sxs-lookup"><span data-stu-id="68802-194">A null MX record consists of a single dot, for example:</span></span>
-
-  ```
-  noreply.contoso.com IN MX .
-  ```
-
-<span data-ttu-id="68802-195">Null MX の公開の詳細については、「 [RFC 7505](https://tools.ietf.org/html/rfc7505)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68802-195">For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).</span></span>
-
-### <a name="overriding-the-office-365-from-address-enforcement-policy"></a><span data-ttu-id="68802-196">Office 365 From: address 強制ポリシーの上書き</span><span class="sxs-lookup"><span data-stu-id="68802-196">Overriding the Office 365 From: address enforcement policy</span></span>
-<span data-ttu-id="68802-197"><a name="Override"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-197"><a name="Override"> </a></span></span>
-
-<span data-ttu-id="68802-198">新しいポリシーのロールアウトが完了したら、次のいずれかの方法を使用して、Office 365 から受信する受信メールに対してのみこのポリシーをバイパスできます。</span><span class="sxs-lookup"><span data-stu-id="68802-198">Once roll out of the new policy is complete, you can only bypass this policy for inbound mail you receive from Office 365 by using one of the following methods:</span></span>
-
-- <span data-ttu-id="68802-199">IP 許可一覧</span><span class="sxs-lookup"><span data-stu-id="68802-199">IP allow lists</span></span>
-
-- <span data-ttu-id="68802-200">Exchange Online のメールフロールール</span><span class="sxs-lookup"><span data-stu-id="68802-200">Exchange Online mail flow rules</span></span>
-
-<span data-ttu-id="68802-201">Microsoft は、From: ポリシーの強制を上書きすることを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="68802-201">Microsoft strongly recommends against overriding the enforcement of the From: policy.</span></span> <span data-ttu-id="68802-202">このポリシーを無効にすると、スパム、フィッシング、その他の cybercrimes にさらされるリスクが高まります。</span><span class="sxs-lookup"><span data-stu-id="68802-202">Overriding this policy can increase your organization's risk of exposure to spam, phishing, and other cybercrimes.</span></span>
-
-<span data-ttu-id="68802-203">Office 365 で送信する送信メールに対してこのポリシーを上書きすることはできません。</span><span class="sxs-lookup"><span data-stu-id="68802-203">You cannot override this policy for outbound mail you send in Office 365.</span></span> <span data-ttu-id="68802-204">さらに、Outlook.com では、サポートによっても、あらゆる種類の上書きを許可しません。</span><span class="sxs-lookup"><span data-stu-id="68802-204">In addition, Outlook.com will not allow overrides of any kind, even through support.</span></span>
-
-### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a><span data-ttu-id="68802-205">Office 365 で cybercrimes を防止し、保護するためのその他の方法</span><span class="sxs-lookup"><span data-stu-id="68802-205">Other ways to prevent and protect against cybercrimes in Office 365</span></span>
-<span data-ttu-id="68802-206"><a name="OtherProtection"> </a></span><span class="sxs-lookup"><span data-stu-id="68802-206"><a name="OtherProtection"> </a></span></span>
-
-<span data-ttu-id="68802-207">フィッシング、スパム、データ侵害、その他の脅威などの cybercrimes に対して組織を強化する方法の詳細については、「 [Office 365 のセキュリティのベストプラクティス](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68802-207">For more information on how you can strengthen your organization against cybercrimes like phishing, spamming, data breaches, and other threats, see [Security best practices for Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).</span></span>
-
-## <a name="related-topics"></a><span data-ttu-id="68802-208">関連項目</span><span class="sxs-lookup"><span data-stu-id="68802-208">Related Topics</span></span>
-
-[<span data-ttu-id="68802-209">バックスキャター メッセージと EOP</span><span class="sxs-lookup"><span data-stu-id="68802-209">Backscatter messages and EOP</span></span>](backscatter-messages-and-eop.md)
+<span data-ttu-id="8d87f-170">フィッシング、スパム、データ侵害、およびその他の脅威から組織を強化する方法の詳細については、「[上位10の方法で Office 365 と Microsoft 365 のビジネスプランを保護する](../../admin/security-and-compliance/secure-your-business-data.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8d87f-170">For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../../admin/security-and-compliance/secure-your-business-data.md).</span></span>
