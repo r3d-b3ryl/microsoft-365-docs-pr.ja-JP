@@ -24,12 +24,12 @@ description: 一般法人向け Office 365 サブスクリプションの支払�
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633715"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540905"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>一般法人向け Office 365 サブスクリプションを支払う
 
@@ -276,9 +276,23 @@ ms.locfileid: "42633715"
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>請求明細書をメールで受け取るには
 
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
 
-    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。
+
+::: moniker-end
 
 2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 

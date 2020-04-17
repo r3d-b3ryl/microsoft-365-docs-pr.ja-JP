@@ -1,5 +1,5 @@
 ---
-title: EOP および Office 365 に関する Microsoft の推奨事項、推奨事項、Sender Policy Framework、ドメインベースのメッセージの報告と適合性、DomainKeys で識別されたメール、手順、使用方法、セキュリティ基準、EOP のベースラインATP、段取り ATP、セットアップ EOP、ATP の構成、EOP、セキュリティ構成の構成
+title: EOP および Office 365 のための Microsoft の推奨事項、推奨事項、Sender Policy Framework、ドメインベースのメッセージの報告と適合性、DomainKeys で識別されたメール、手順、EOP の基準、セキュリティ基準、セットアップ EOP、atp の構成、および構成 EOP、セキュリティ構成
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1f20c8c09f3e690cc65e494ec6a372c95ac7171b
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032854"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537439"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "43032854"
 セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP と Office 365 ATP には、**標準**と**Strict**の2つのセキュリティレベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのメールフィルター構成は、ほとんどの状況で、不要なメールが従業員の受信トレイに届くことを防ぐために役立ちます。
 
 > [!IMPORTANT]
-> フィルター処理を正しく動作させるには、メールボックスで迷惑メールルールを有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合は、それをチェックする必要があります。 詳細については、「 [Office 365 の Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+> フィルター処理を正しく動作させるには、メールボックスで迷惑メールルールを有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合は、それをチェックする必要があります。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
 このトピックでは、Office 365 ユーザーを保護するために Microsoft が推奨する設定について説明します。
 
@@ -41,13 +41,13 @@ ms.locfileid: "43032854"
 
 スパム対策、マルウェア対策、およびフィッシング対策は、管理者が構成できる EOP の機能です。 次の構成をお勧めします。
 
-### <a name="eop-anti-spam-policy-settings"></a>EOP スパム対策ポリシーの設定
+### <a name="eop-anti-spam-policy-settings"></a>「EOP のスパム対策ポリシーの設定」
 
 スパム対策ポリシーを作成して構成するには、「 [Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
 |||||
 |---|---|---|---|
-|**セキュリティ機能の名前**|**Standard**|**Strict**|**Comment**|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**コメント**|
 |**スパム**検出アクション <br/><br/> _SpamAction_|**迷惑メールフォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`||
 |**信頼度の高いスパム**検出アクション <br/><br/> _HighConfidenceSpamAction_|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
 |**フィッシング電子メール**の検出アクション <br/><br/> _PhishSpamAction_|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
@@ -57,7 +57,7 @@ ms.locfileid: "43032854"
 |検疫の保存期間 <br/><br/> _QuarantineRetentionPeriod_|30 日間|30 日間||
 |**安全性に関するヒント** <br/><br/> _InlineSafetyTipsEnabled_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |許可された送信者 <br/><br/> _AllowedSenders_|なし|なし||
-|許可される送信者ドメイン <br/><br/> _AllowedSenderDomains_|なし|なし|自分が所有する (_承認済みドメイン_とも呼ばれる) ドメインを許可された送信者の一覧に追加する必要はありません。 実際には、悪意のある俳優が、フィルターによって除外されるメールを送信するような機会を作成するため、高いリスクと見なされます。[**スパム対策設定**] ページの [セキュリティ & コンプライアンスセンター] で[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。|
+|許可される送信者ドメイン <br/><br/> _AllowedSenderDomains_|なし|なし|自分が所有する (_承認済みドメイン_とも呼ばれる) ドメインを許可された送信者の一覧に追加する必要はありません。 実際には、悪意のある俳優が、フィルターによって除外されるメールを送信するような機会を作成するため、高いリスクと見なされます。[**スパム対策設定**] ページの [セキュリティ & コンプライアンスセンター] で[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の電子メールドメインにある送信者の電子メールアドレスをスプーフィングしている、または外部ドメインの送信者の電子メールアドレスをスプーフィングしているすべての送信者を確認します。|
 |受信拒否リスト <br/><br/> _BlockedSenders_|なし|なし||
 |受信拒否された送信者ドメイン <br/><br/> _BlockedSenderDomains_|なし|なし||
 |**[エンド ユーザーのスパム通知を有効にする]**  このポリシーでエンド ユーザーのスパム通知を有効にするには、このチェック ボックスをオンにします。 <br/><br/> _EnableEndUserSpamNotifications_|有効 <br/><br/> `$true`|有効 <br/><br/> `$true`||
@@ -97,7 +97,7 @@ ms.locfileid: "43032854"
 
 ||||
 |---|---|---|---|
-|**セキュリティ機能の名前**|**Standard**|**Strict**|**Comment**|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**コメント**|
 |**ユーザーあたりの最大受信者数: 外部時間の制限** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**ユーザーあたりの最大受信者数: 内部時間の制限** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
 |**ユーザーあたりの最大受信者数: 毎日の制限** <br/><br/> _RecipientLimitPerDay_|1000|800||
@@ -110,7 +110,7 @@ ms.locfileid: "43032854"
 
 |||||
 |---|---|---|---|
-|**セキュリティ機能の名前**|**Standard**|**Strict**|**Comment**|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**コメント**|
 |**受信者にメッセージが検疫されたことを通知するかどうか。** <br/><br/> _操作_|いいえ <br/><br/> _DeleteMessage_|いいえ <br/><br/> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |**一般的な添付ファイルの種類のフィルター** <br/><br/> _EnableFileFilter_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|この設定では、添付ファイルの内容に関係なく、実行可能な添付ファイルが含まれているファイルの種類に基づいてメッセージを検疫します。|
 |**マルウェアのゼロ時間の自動削除** <br/><br/> _ZapEnabled_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
@@ -118,13 +118,17 @@ ms.locfileid: "43032854"
 |配信されていないメッセージの**外部送信者に通知**する <br/><br/> _EnableExternalSenderNotifications_|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`||
 |
 
-### <a name="eop-anti-phishing-policy-settings"></a>EOP フィッシング対策ポリシー設定
+### <a name="eop-default-anti-phishing-policy-settings"></a>EOP の既定のフィッシング対策ポリシー設定
 
-|セキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|スプーフィング対策保護を有効にする|オン|オン||
-|認証されていない送信者を有効にする (タグ付け)|オン|オン||
-|ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合|受信者の迷惑メールフォルダーにメッセージを移動する|メッセージを検疫する||
+これらの設定は、Exchange Online メールボックスを使用した Office 365 組織でのみ構成できます。 これらの設定を構成するには、 [EOP の「既定のフィッシング対策ポリシーを構成](configure-anti-phishing-policies-eop.md)する」を参照してください。
+
+|||||
+|---|---|---|---|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**コメント**|
+|**スプーフィング対策保護を有効にする** <br/><br/> _EnableAntispoofEnforcement_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|**認証されていない送信者を有効にする** <br/><br/> _Enable/認証 Atedsender_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Outlook の送信者の写真に、未識別のスプーフィングされた送信者を示す疑問符 (?) を追加します。 詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。|
+|**ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合** <br/><br/> _AuthenticationFailAction_|**受信者の迷惑メールフォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**メッセージを検疫する** <br/><br/> `Quarantine`|これは、[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)の受信拒否リストに適用されます。|
+|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Office 365 Advanced Threat Protection セキュリティ
 
@@ -139,35 +143,47 @@ EOP に Office 365 ATP サブスクリプションを追加した場合は、次
 
 ### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP のフィッシング対策ポリシー設定
 
-EOP のお客様は、前述したように基本的なフィッシング対策を行いますが、Office 365 ATP には、攻撃を防止、検出、修復するのに役立つ機能と制御が追加されています。
+EOP のお客様は、前述したように基本的なフィッシング対策を行いますが、Office 365 ATP には、攻撃を防止、検出、修復するのに役立つ機能と制御が追加されています。 これらのポリシーを作成して構成するには、「 [Office 365 で ATP のフィッシング対策ポリシーを構成](configure-atp-anti-phishing-policies.md)する」を参照してください。
 
-|偽装セキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|(偽装ポリシーの編集)保護するユーザーを追加する|オン|オン|組織によって異なりますが、主要な役割でユーザーを追加することをお勧めします。 内部的には、CEO、CFO、その他のシニアリーダーである可能性があります。 外部には、協議会のメンバーまたは取締役会を含めることができます。|
-|(偽装ポリシーの編集)自分が所有しているドメインを自動的に追加する|オン|オン||
-|(偽装ポリシーの編集)カスタムドメインを含める|オン|オン|組織によって異なりますが、自分が所有していない大部分のドメインを追加することをお勧めします。|
-|指定した偽装ユーザーによって電子メールが送信された場合|メッセージを検疫する|メッセージを検疫する||
-|指定した偽装ドメインによって電子メールが送信される場合|メッセージを検疫する|メッセージを検疫する||
-|偽装ユーザーのヒントを表示する|オン|オン||
-|偽装ドメインのヒントを表示する|オン|オン||
-|通常と異なる文字にヒントを表示する|オン|オン||
-|メールボックスインテリジェンスを有効にする|オン|オン||
-|メールボックスインテリジェンスベースの偽装保護を有効にする|オン|オン||
-|メールボックスインテリジェンスで保護された偽装ユーザーによって電子メールが送信される場合|受信者の迷惑メールフォルダーにメッセージを移動する|メッセージを検疫する||
-|(偽装ポリシーの編集)信頼できる差出人とドメインを追加する|なし|なし|組織によって異なりますが、誤ってフィッシングとしてマークされるユーザーまたはドメインを追加することをお勧めします。|
+#### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの偽装設定
 
-|スプーフィングセキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|スプーフィング対策保護を有効にする|オン|オン||
-|認証されていない送信者を有効にする (タグ付け)|オン|オン||
-|ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合|受信者の迷惑メールフォルダーにメッセージを移動する|メッセージを検疫する||
-|EnableSuspiciousSafetyTip|False|True|この設定は、PowerShell でのみ使用できます。|
-|TreatSoftPassAsAuthenticated|True|False|この設定は、PowerShell でのみ使用できます。|
+|||||
+|---|---|---|---|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**コメント**|
+|保護されたユーザー:**保護するユーザーを追加する** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|オン <br/><br/> `$true` <br/><br/> \<ユーザーのリスト\>|オン <br/><br/> `$true` <br/><br/> \<ユーザーのリスト\>|組織によって異なりますが、主要な役割でユーザーを追加することをお勧めします。 内部的には、CEO、CFO、その他のシニアリーダーである可能性があります。 外部には、協議会のメンバーまたは取締役会を含めることができます。|
+|保護されたドメイン:**自分が所有しているドメインを自動的に追加する** <br/><br/> _Enable組織 Domainsprotection_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|保護されたドメイン:**カスタムドメインを含める** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|オン <br/><br/> `$true` <br/><br/> \<ドメインの一覧\>|オン <br/><br/> `$true` <br/><br/> \<ドメインの一覧\>|組織によって異なりますが、自分が所有していないドメインを追加することをお勧めします。|
+|保護されたユーザー:**偽装ユーザーによって電子メールが送信される場合** <br/><br/> _され_|**メッセージを検疫する** <br/><br/> `Quarantine`|**メッセージを検疫する** <br/><br/> `Quarantine`||
+|保護されたドメイン:**偽装ドメインによって電子メールが送信される場合** <br/><br/> _され_|**メッセージを検疫する** <br/><br/> `Quarantine`|**メッセージを検疫する** <br/><br/> `Quarantine`||
+|**偽装ユーザーのヒントを表示する** <br/><br/> _Enablesimilarユーザーヒント Etytips_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|**偽装ドメインのヒントを表示する** <br/><br/> _Enablesimilardomainssaf Etytips_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|**通常と異なる文字にヒントを表示する** <br/><br/> _EnableUnusualCharactersSafetyTips_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|**メールボックスインテリジェンスを有効にする** <br/><br/> _EnableMailboxIntelligence_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|**メールボックスインテリジェンスベースの偽装保護を有効にする** <br/><br/> _EnableMailboxIntelligenceProtection_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|**メールボックスインテリジェンスで保護された偽装ユーザーによって電子メールが送信される場合** <br/><br/> _MailboxIntelligenceProtectionAction_|**受信者の迷惑メールフォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**メッセージを検疫する** <br/><br/> `Quarantine`||
+|**信頼された差出人** <br/><br/> _ExcludedSenders_|なし|なし|組織によって異なりますが、誤ってフィッシングとしてマークされるユーザーを追加することをお勧めします。|
+|**信頼されたドメイン** <br/><br/> _ExcludedDomains_|なし|なし|組織によって異なりますが、誤ってフィッシングとしてマークされるドメインを追加することをお勧めします。これは、偽装のみで、他のフィルターにはないためです。|
+|
 
+#### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーのスプーフィング設定
 
-|詳細設定のセキュリティ機能の名前|標準|Strict|コメント|
-|---------|---------|---------|---------|
-|高度なフィッシングしきい値|2-アグレッシブ|3つ以上のアグレッシブ||
+これらは、 [EOP のスパム対策ポリシー設定](#eop-anti-spam-policy-settings)で使用可能な設定と同じであることに注意してください。
+
+|||||
+|---|---|---|---|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**コメント**|
+|**スプーフィング対策保護を有効にする** <br/><br/> _EnableAntispoofEnforcement_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
+|**認証されていない送信者を有効にする** <br/><br/> _Enable/認証 Atedsender_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Outlook の送信者の写真に、未識別のスプーフィングされた送信者を示す疑問符 (?) を追加します。 詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。|
+|**ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合** <br/><br/> _AuthenticationFailAction_|**受信者の迷惑メールフォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**メッセージを検疫する** <br/><br/> `Quarantine`|これは、[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)の受信拒否リストに適用されます。|
+|
+
+#### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの詳細設定
+
+|||||
+|---|---|---|---|
+|**セキュリティ機能の名前**|**Standard**|**Strict**|**コメント**|
+|**高度なフィッシングしきい値** <br/><br/> _PhishThresholdLevel_|**2-アグレッシブ** <br/><br/> `2`|**3つ以上のアグレッシブ** <br/><br/> `3`||
+|
 
 ### <a name="safe-links-settings"></a>安全なリンクの設定
 

@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 1ef61f2a5e59db5c45a37bd9f8995b8c70675f30
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032842"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537403"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -33,7 +33,7 @@ ms.locfileid: "43032842"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-組織の Office 365 サブスクリプションに含まれているものに応じて、セキュリティダッシュボードには、脅威管理の概要、脅威の保護の状態、グローバルな週次の脅威の検出、マルウェアなど、いくつかのウィジェットが含まれています。次のセクション。
+組織の Office 365 サブスクリプションに含まれるものに応じて、セキュリティダッシュボードには、次のセクションで説明するように、脅威の管理の概要、脅威の保護の状態、グローバルな週次の脅威検出、マルウェアなど、いくつかのウィジェットが含まれています。
 
 セキュリティダッシュボードを表示するには、 [Office 365 セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)で、[**脅威管理** \> ]**ダッシュボード**に移動します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "43032842"
 |---|---|
 |**サブスクリプションに含まれるもの**|**これらの詳細が表示できます。**|
 |EOP ではないが、Office 365 ATP|EOP によって検出およびブロックされた悪意のある電子メール。<br><br> 「[脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。|
-|Office 365 ATP|EOP および Office 365 ATP により、悪意のあるコンテンツや悪意のある電子メールが検出されブロックされる<br><br>マルウェア対策エンジン、[ゼロ時間自動削除](zero-hour-auto-purge.md)、atp 機能 ([安全なリンク](atp-safe-links.md)、[安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](atp-anti-phishing.md)など) によってブロックされた一意の電子メールメッセージの集計数。<br><br>「[脅威保護の状態レポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。|
+|Office 365 ATP|EOP および Office 365 ATP により、悪意のあるコンテンツや悪意のある電子メールが検出されブロックされる<br><br>マルウェア対策エンジン、[ゼロ時間自動削除](zero-hour-auto-purge.md)、atp 機能 ([安全なリンク](atp-safe-links.md)、[安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)など) によってブロックされた一意の電子メールメッセージの集計数。<br><br>「[脅威保護の状態レポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。|
 |
 
 脅威保護状態ウィジェットを表示またはアクセスするには、Advanced Threat Protection レポートを表示する権限が必要です。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 0e51e52db4e569716954aada1c5cea35ddc6dd0a
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288595"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528371"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -31,7 +31,7 @@ ms.locfileid: "42288595"
 
 
 
-Microsoft の脅威保護は、エンドポイント、id、電子メール、およびアプリケーションによってネイティブに統合する、統合された事前違反のエンタープライズ防衛スイートであり、高度な攻撃を検出、阻止、調査、および自動応答します。  
+Microsoft Threat Protection は、統合された事前違反および事後侵害のエンタープライズ防衛スイートであり、エンドポイント、id、電子メール、およびアプリケーション間の応答をネイティブに調整し、高度な攻撃から統合された保護を提供します。
 
 統合された Microsoft の脅威保護ソリューションを使用することで、セキュリティ担当者は、これらの各製品が脅威のすべての範囲と影響を受信して判断することを伝える脅威に対して協力することができます。環境にどのように対応したか、どのような影響を受けるか、どのように組織にどのように影響しているか。 Microsoft の脅威保護は、攻撃を阻止または停止したり、影響を受けるメールボックス、エンドポイント、ユーザー id を自己回復させるための自動操作を行います。  
 
@@ -77,7 +77,7 @@ Microsoft の脅威保護の製品間の機能には、次のようなものが�
 - **クロス積脅威**検索-セキュリティチームは、さまざまな保護製品によって収集された生データに対して独自のカスタムクエリを作成することによって、組織の独自の知識を活用して、侵害の兆候を探すことができます。 Microsoft の脅威保護では、エンドポイントと Office 365 の ATP データに対して、30日間の履歴生信号およびアラートデータに対するクエリベースのアクセスが提供されています。 
 
 
-## <a name="get-started"></a>概要
+## <a name="get-started"></a>作業の開始
 Microsoft 365 セキュリティセンターの[security.microsoft.com](https://security.microsoft.com)でサービスを有効にするには、Microsoft の脅威保護ライセンスの要件を満たす必要があります。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

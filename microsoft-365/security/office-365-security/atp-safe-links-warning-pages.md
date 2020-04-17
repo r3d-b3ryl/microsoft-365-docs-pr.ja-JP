@@ -16,22 +16,22 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection が機能している場合に表示される可能性がある警告ページの概要を取得します。
-ms.openlocfilehash: ef2f0fd59c7d5f8e62b0f562097fafd01d669459
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086716"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528859"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP の安全なリンクの警告ページ
 
 > [!IMPORTANT]
 > この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook の安全なリンクに関する情報を探している場合は、「[Outlook.com の高度なセキュリティ](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) (atp) は、 [atp の安全なリンク](atp-safe-links.md)、Atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を使用して、組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (Url) はチェックされます。 URL が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても URL を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。 
-  
+[Office 365 Advanced Threat Protection](office-365-atp.md) (atp) は、 [atp の安全なリンク](atp-safe-links.md)、Atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を使用して、組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (Url) はチェックされます。 URL が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても URL を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。
+
 この記事では、表示される可能性がある警告ページの例と、警告ページに対する最新の更新プログラムを確認しています。
-  
+
 ## <a name="examples-of-warning-pages"></a>警告ページの例
 
 ### <a name="atp-is-scanning-the-link"></a>ATP がリンクをスキャンしています
@@ -113,4 +113,3 @@ Office 365 ATP のために最近更新された警告ページがいくつか�
 更新された警告ページ:
 
 ![エラーが発生しました](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
-   

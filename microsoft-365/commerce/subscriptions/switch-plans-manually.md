@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認して、Office 365 for business サブスクリプションを手動で切り替えます。
-ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142105"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540845"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>一般法人向け Office 365 プランを手動で切り替える
 
@@ -64,11 +64,23 @@ ms.locfileid: "43142105"
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
 
+::: moniker range="o365-worldwide"
+
 1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
 
-    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+::: moniker-end
 
-    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+::: moniker range="o365-germany"
+
+1. 管理センターの **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターの **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+::: moniker-end
 
 2. **両方のサブスクリプションが一覧表示され、アクティブであることを確認する**
 
@@ -102,11 +114,23 @@ ms.locfileid: "43142105"
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
-    Office 365 Germany を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブ ユーザー</a>] ページに移動します。
+::: moniker-end
 
-    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブ ユーザー</a>] ページに移動します。
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+
+::: moniker-end
 
 2. [ **アクティブなユーザー**] ページで、ライセンスを割り当てるユーザーの名前の横にあるボックスをオンにします。
 
@@ -125,11 +149,23 @@ ms.locfileid: "43142105"
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a> ] ページに移動するか、[ \> **アクティブな**ユーザー]**を選択し**ます。
 
-    Office 365 Germany を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブ ユーザー</a>] ページに移動します。
+::: moniker-end
 
-    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブ ユーザー</a>] ページに移動します。
+::: moniker range="o365-germany"
+
+1. 管理センターで、[**ユーザー** >の<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a> ] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+
+::: moniker-end
 
 2. 既存のライセンスを置き換えるユーザー名の横のチェック ボックスをオンにします。
 

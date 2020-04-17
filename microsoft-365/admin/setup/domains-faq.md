@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: FAQ でのご質問にお答えするかたちで Office 365 のドメインについてご説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212199"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540869"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
@@ -106,12 +106,24 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 *Whois* クエリ上では Office 365 で購入したドメイン レジストラーが Wild West Domains LLC として表示されることにご注意ください。 ただし Office 365 で購入したドメインに関しては Office 365 にのみお問い合わせ可能です。
   
 以下の手順に従って Office 365 からコードを取得し、その後別のドメイン レジストラーの Web サイトで、そのレジストラーへのドメイン名の移行を設定します。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
-    
-    Office 365 Germany を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">ドメイン</a>] ページに移動します。 
-    
-    21Vianet が運営する Office 365 を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">ドメイン</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
     
 2. [**ドメイン**] ページで、別のドメイン レジストラーへ移行させる Office 365 ドメインを選択し、[**ドメインの移行**]  >  [**ドメインの移行の有効化**] の順に選択します。
        
@@ -136,12 +148,24 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 2. レジストラーの Web サイトで、ネームサーバー レコードの更新を行うエリアを見つけ、ネームサーバーのポイント先をドメインの DNS ホストに更新します (DNS ホストがドメイン レジストラーであることもよくあります)。
     
 3. リンクにアクセスし、ドメインのセットアップ ウィザードに移動します。
-    
+
+::: moniker range="o365-worldwide"
+
 4. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
-    
-    Office 365 Germany を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">ドメイン</a>] ページに移動します。 
-    
-    21Vianet が運営する Office 365 を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">ドメイン</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+4. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+4. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。
+
+::: moniker-end
     
 5. [**ドメイン**] ページで、切り替えを行うドメインを選び、[**DNSの管理**] を選択します。
     
@@ -153,12 +177,24 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
     
 
 ### <a name="change-dns-management-to-office-365"></a>DNS 管理を Office 365 に変更する
-  
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
-    
-    Office 365 Germany を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">ドメイン</a>] ページに移動します。 
-    
-    21Vianet が運営する Office 365 を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">ドメイン</a>] ページに移動します。
+
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**設定** \> ] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。
+
+::: moniker-end
     
 2. [**ドメイン**] ページで、切り替えを行うドメインを選び、[**DNS の管理**] を選択します。
     
@@ -221,12 +257,24 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Office 365 の既定のドメインを設定または変更する方法
 
 既定のドメインを選択するには、1 つ以上のカスタム ドメインが Office 365 に追加されている必要があります。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
-    
-    Office 365 Germany を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">ドメイン</a>] ページに移動します。 
-    
-    21Vianet が運営する Office 365 を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">ドメイン</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。
+
+::: moniker-end
     
 2. [**ドメイン**] ページで、新しいメール アドレスの既定として設定するドメインを選択します。 
     

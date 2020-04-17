@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: c854021eaf6c5d252f36961fde427c5532ba1ef6
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284264"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537511"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -186,7 +186,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
    ![ユーザーによって報告されるフィッシング](../../media/EmailUserReportedReportType.png)
 
-レポートが更新され、組織内のユーザーがフィッシングとして報告した電子メールメッセージに関するデータが表示されます。 この情報を使用して、さらに分析を行い、必要に応じて、 [ATP のフィッシング対策ポリシー](set-up-anti-phishing-policies.md)を調整することができます。
+レポートが更新され、組織内のユーザーがフィッシングとして報告した電子メールメッセージに関するデータが表示されます。 この情報を使用して、さらに分析を行い、必要に応じて、 [ATP のフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を調整することができます。
 
 ## <a name="start-automated-investigation-and-response"></a>自動調査と応答の開始
 

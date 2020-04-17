@@ -2,10 +2,10 @@
 title: Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,217 +16,115 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 'フィッシングを防止するために、Office 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
-ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Office 365 の受信メッセージ用の電子メールアドレスの要件に関する Lear。 2017年11月現在、このサービスでは、スプーフィングを防止するために RFC 準拠のアドレスが必要になりました。
+ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599184"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529003"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 
-Office 365 と Outlook.com 電子メールアカウントには、次第に大量のフィッシング攻撃があります。 Phishers を使用する方法の1つは、 [RFC 5322](https://tools.ietf.org/html/rfc5322)に準拠していない From: アドレスの値を持つメッセージを送信することです。 From: アドレスは、5322.from アドレスとも呼ばれます。 この種のフィッシングを防止するために、Office 365 と Outlook.com は、この記事で説明されているように、RFC 準拠の差出人: アドレスを含むようにサービスによって受信されるメッセージを要求します。
+Office 365 の電子メールアカウントには、次第に大量のフィッシング攻撃があります。 [スプーフィング (偽造) された送信者電子メールアドレス](anti-spoofing-protection.md)を使用することに加えて、多くの場合、攻撃者は、インターネット標準に違反した From アドレスの値を使用します。 この種のフィッシングを防止するために、Office 365 と Outlook.com では、このトピックで説明するように、受信メッセージに RFC 準拠の差出人のアドレスを含めるように要求されています。 この強制は、2017年11月に有効になっています。
 
-> [!NOTE]
-> この記事に記載されている情報では、電子メールアドレスの一般的な形式を基本的に理解しておく必要があります。 詳細については、rfc [5322](https://tools.ietf.org/html/rfc5322) (特にセクション3.2.3、3.4、および 3.4.1)、rfc [5321](https://tools.ietf.org/html/rfc5321)、および[rfc 3696](https://tools.ietf.org/html/rfc3696)を参照してください。 この記事では、5322.from アドレスのポリシーの適用について説明します。 この記事では、5321.mailfrom の MailFrom アドレスについては説明しません。
+**注**:
 
-残念ながら、インターネット上に従来の電子メールサーバーがいくつか存在していても、引き続き "正当な" 電子メールメッセージを送信しています。アドレスが不明であるか、無効である。 これらの従来のシステムを使用する組織から定期的に電子メールを受信する場合は、最新のセキュリティ標準に準拠するようにメールサーバーを更新するように組織を促します。
+- このトピックで説明されているように、アドレスが正しくない組織から電子メールを定期的に受信している場合は、最新のセキュリティ標準に準拠するように電子メールサーバーを更新するように組織を促します。
 
-Microsoft は、2017年11月9日にこの記事に記載されているポリシーの適用を開始します。
+- 関連する Sender フィールド (代理人とメーリングリストで使用) は、これらの要件の影響を受けません。 詳細については、次のブログ投稿を参照してください。[電子メールの ' sender ' を参照するとどういう](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)ことですか。
 
-## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a>Office 365 がフィッシング攻撃を防止するために有効な From: アドレスの使用を強制する方法
+## <a name="an-overview-of-email-message-standards"></a>電子メールメッセージの標準の概要
 
-Office 365 は、フィッシング攻撃からの保護を強化するために、受信したメッセージ内の From: アドレスの使用を強制する方法に変更を加えています。 この記事の内容:
+標準的な SMTP 電子メール メッセージは、*メッセージ エンベロープ*とメッセージのコンテンツで構成されます。 メッセージエンベロープには、SMTP サーバー間でメッセージを送信および配信するために必要な情報が含まれています。 メッセージのコンテンツには、総称して "*メッセージ ヘッダー*" と呼ばれるメッセージ ヘッダー フィールドと、メッセージ本文があります。 メッセージエンベロープは[rfc 5321](https://tools.ietf.org/html/rfc5321)で説明されており、メッセージヘッダーについては[rfc 5322](https://tools.ietf.org/html/rfc5322)で説明されています。 メッセージの送信プロセスによって生成されたメッセージエンベロープがメッセージの一部ではないため、受信者に実際のメッセージエンベロープが表示されることはありません。
 
-- [すべてのメッセージに有効な差出人: アドレスを含める必要があります。](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
+- `5321.MailFrom`アドレス ( **MAIL FROM** address、P1 sender、または envelope sender とも呼ばれます) は、メッセージの SMTP 送信で使用される電子メールアドレスです。 通常、この電子メールアドレスは、メッセージヘッダーの**リターンパス**ヘッダーフィールドに記録されます (ただし、送信者は別の**リターンパス**電子メールアドレスを指定することもできます)。
 
-- [表示名を含めない場合の From: アドレスの形式](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
+- `5322.From` (From アドレスまたは P2 送信者とも呼ばれる) は、[送信**元**アドレス] フィールドの電子メールアドレスであり、電子メールクライアントに表示される送信者の電子メールアドレスです。 From アドレスは、このトピックに記載されている要件の焦点です。
 
-- [表示名が含まれている場合の From: アドレスの形式](how-office-365-validates-the-from-address.md#FormatDisplayName)
+From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクション3.2.3、3.4、3.4.1、 [rfc 3696](https://tools.ietf.org/html/rfc3696)) にわたって詳細に定義されています。 アドレス指定には多くのバリエーションがあり、どのような意味があるかは無効です。 簡単にするために、次の形式と定義をお勧めします。
 
-- [有効で無効な From: アドレスの追加例](how-office-365-validates-the-from-address.md#Examples)
+`From: "Display Name" <EmailAddress>`
 
-- [カスタムドメインに対する自動返信を抑制して、From: ポリシーを破損させます。](how-office-365-validates-the-from-address.md#SuppressAutoReply)
+- [**表示名**: 電子メールアドレスの所有者を説明する省略可能な語句です。
 
-- [Office 365 From: address 強制ポリシーの上書き](how-office-365-validates-the-from-address.md#Override)
+  - 表示名は常に二重引用符 (") で囲むようにすることをお勧めします。 表示名にコンマが含まれている場合は、RFC 5322 ごとに文字列を二重引用符で囲む_必要があり_ます。
+  - [差出人] アドレスに表示名を指定する場合は、EmailAddress の値を山かっこ (< >) で囲む必要があります。
+  - Microsoft では、表示名と電子メールアドレスの間にスペースを挿入することを強くお勧めします。
 
-- [Office 365 で cybercrimes を防止し、保護するためのその他の方法](how-office-365-validates-the-from-address.md#OtherProtection)
+- **EmailAddress**: 電子メールアドレスの形式`local-part@domain`は次のとおりです。
 
-他のユーザーの代理としての送信は、この変更の影響を受けません。詳細については、「「[メールの送信者」を参照して](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)ください」を参照してください。
+  - **ローカルパート**: アドレスに関連付けられているメールボックスを識別する文字列。 この値は、ドメイン内で一意です。 多くの場合、メールボックスの所有者のユーザー名または GUID が使用されます。
+  - **ドメイン**: 電子メールアドレスのローカル部分で識別されたメールボックスをホストする電子メールサーバーの完全修飾ドメイン名 (FQDN)。
 
-### <a name="all-messages-must-include-a-valid-from-address"></a>すべてのメッセージに有効な差出人: アドレスを含める必要があります。
-<a name="MustIncludeFromAddress"> </a>
+  EmailAddress の値に関するその他の考慮事項を次に示します。
 
-一部の自動メッセージには、送信時に From: アドレスは含まれません。 以前は、Office 365 または Outlook.com が From: アドレスなしでメッセージを受信すると、サービスは次の既定の From: address をメッセージに追加して、そのメッセージを配信できるようにします。
+  - 電子メールアドレスは1つだけです。
+  - 角かっこは、スペースで区切り文字として使用しないことをお勧めします。
+  - 電子メールアドレスの後に追加のテキストを含めないでください。
 
-```
-From: <>
-```
+## <a name="examples-of-valid-and-invalid-from-addresses"></a>有効な/無効なアドレスの例
 
-2017年11月9日以降、Office 365 はデータセンターとメールサーバーへの変更をロールアウトします。これにより、From: アドレスのないメッセージは Office 365 または Outlook.com によって受け入れられなくなり、新しいルールが適用されます。 その代わりに、Office 365 で受信したすべてのメッセージには、有効な差出人: アドレスが既に含まれている必要があります。 それ以外の場合は、Outlook.com と Office 365 の迷惑メールフォルダーまたは削除済みアイテムフォルダーにメッセージが送信されます。
+以下は、有効な電子メールアドレスです。
 
-### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a>構文の概要: Office 365 の From: アドレスの有効な形式
-<a name="SyntaxOverviewFromAddress"> </a>
+- `From: sender@contoso.com`
 
-From: アドレスの値の形式は、いくつかの Rfc で詳細に定義されています。 アドレス指定には、さまざまなバリエーションがあり、有効または無効と見なすことができます。 簡単にするために、Microsoft は次の形式と定義を使用することをお勧めします。
+- `From: <sender@contoso.com>`
 
-```
-From: "displayname " <emailaddress >
-```
+- `From: < sender@contoso.com >`(角かっこと電子メールアドレスの間にスペースがあるため、この方法は推奨されません)。
 
-ここで、
+- `From: "Sender, Example" <sender.example@contoso.com>`
 
-- オプション *displayname*は、電子メールアドレスの所有者を説明する語句です。 たとえば、これは、メールボックスの名前よりも、送信者を示すユーザーフレンドリな名前になることがあります。 表示名の使用はオプションです。 ただし、表示名の使用を選択する場合は、表示されているとおり常に引用符で囲むことをお勧めします。
+- `From: "Office 365" <sender@contoso.com>`
 
-- 要する *emailaddress*は次のもので構成されます。
+- `From: Office 365 <sender@contoso.com>`(表示名が二重引用符で囲まれていないため、推奨されません)。
 
-  ```
-  local-part @domain
-  ```
+次の電子メールアドレスは無効です。
 
-    ここで、
+- **From アドレスなし**: 一部の自動メッセージに差出人住所が含まれていません。 以前は、Office 365 または Outlook.com が差出人アドレスを持たないメッセージを受信すると、サービスによってメッセージが配信されるように、次の既定の From: address が追加されました。
 
-  - 要する *local part*は、アドレスに関連付けられているメールボックスを識別する文字列です。 これは、ドメイン内で一意です。 多くの場合、メールボックス所有者のユーザー名または GUID は、ローカル部分の値として使用されます。
+  `From: <>`
 
-  - 要する *domain*は、電子メールアドレスのローカル部分で識別されるメールボックスをホストするメールサーバーの完全修飾ドメイン名 (FQDN) です。
+  これで、空の差出人アドレスを持つメッセージは受け付けられなくなりました。
 
-### <a name="format-of-the-from-address-if-you-dont-include-a-display-name"></a>表示名を含めない場合の From: アドレスの形式
-<a name="FormatNoDisplayName"> </a>
+- `From: Office 365 sender@contoso.com`(表示名は存在しますが、電子メールアドレスは角かっこで囲まれていません)。
 
-表示名が含まれていない電子メールアドレスが1つだけ含まれている場合は、次のように設定します。 Microsoft では、山かっこをスペースで区切らないことをお勧めします。 また、電子メールアドレスの後に何も含めないでください。
+- `From: "Office 365" <sender@contoso.com> (Sent by a process)`(電子メールアドレスの後のテキスト)
 
-次の例は有効です。
+- `From: Sender, Example <sender.example@contoso.com>`(表示名にはコンマが含まれていますが、二重引用符で囲まれていません)。
 
-```
-From: sender@contoso.com
-```
+- `From: "Office 365 <sender@contoso.com>"`(全体の値が誤って二重引用符で囲まれています。)
 
-```
-From: <sender@contoso.com>
-```
+- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`(表示名は存在しますが、電子メールアドレスは角かっこで囲まれていません)。
 
-次の例は有効ですが、角かっこと電子メールアドレスの間にスペースが含まれているため、推奨されていません。
+- `From: Office 365<sender@contoso.com>`(表示名と左山かっこの間にスペースはありません)。
 
-```
-From: < sender@contoso.com >
-```
+- `From: "Office 365"<sender@contoso.com>`(閉じる二重引用符と左山かっこの間にスペースを入れることはできません)。
 
-次の例は、電子メールアドレスの後にテキストが含まれているため、無効です。
+## <a name="suppress-auto-replies-to-your-custom-domain"></a>カスタムドメインへの自動返信を抑制する
 
-```
-From: "Office 365" <sender@contoso.com> (Sent by a process)
+この値`From: <>`を使用して自動応答を抑制することはできません。 代わりに、カスタムドメインの null MX レコードを設定する必要があります。 応答サーバーがメッセージを送信できる公開アドレスがないため、自動応答 (およびすべての返信) は自然に抑制されます。
+
+- 電子メールを受信できない電子メールドメインを選択します。 たとえば、プライマリドメインが contoso.com の場合は、noreply.contoso.com を選択することができます。
+
+- このドメインの null MX レコードは、1つのピリオドで構成されます。
+
+以下に例を示します。
+
+```text
+noreply.contoso.com IN MX .
 ```
 
-### <a name="format-of-the-from-address-if-you-include-a-display-name"></a>表示名が含まれている場合の From: アドレスの形式
-<a name="FormatDisplayName"> </a>
-
-From: 表示名の値を含むアドレスでは、次のルールが適用されます。
-
-- 送信者のアドレスに表示名が含まれており、表示名にコンマが含まれている場合は、表示名を引用符で囲む必要があります。 次に例を示します。
-
-    次の例は有効です。
-
-  ```
-  From: "Sender, Example" <sender.example@contoso.com>
-  ```
-
-    次の例は無効です。
-
-  ```
-  From: Sender, Example <sender.example@contoso.com>
-  ```
-
-    表示名にコンマが含まれている場合は、RFC 5322 に従って、表示名が引用符で囲まれていないことを示します。
-
-    表示名の中にコンマが含まれているかどうかに関係なく、ベストプラクティスとして、表示名を引用符で囲みます。
-
-- 送信者のアドレスに表示名が含まれている場合は、その電子メールアドレスを山かっこで囲む必要があります。
-
-    ベストプラクティスとして、表示名と電子メールアドレスの間にスペースを挿入することを強くお勧めします。
-
-### <a name="additional-examples-of-valid-and-invalid-from-addresses"></a>有効で無効な From: アドレスの追加例
-<a name="Examples"> </a>
-
-- 有効な
-
-  ```
-  From: "Office 365" <sender@contoso.com>
-  ```
-
-- 無効 電子メールアドレスは、山かっこで囲まれていません。
-
-  ```
-  From: Office 365 sender@contoso.com
-  ```
-
-- 有効ですが、推奨されていません。 表示名が引用符で囲まれていません。 ベストプラクティスとして、表示名を常に引用符で囲みます。
-
-  ```
-  From: Office 365 <sender@contoso.com>
-  ```
-
-- 無効 表示名だけでなく、すべてが引用符で囲まれています。
-
-  ```
-  From: "Office 365 <sender@contoso.com>"
-  ```
-
-- 無効 電子メールアドレスは、山かっこで囲まれていません。
-
-  ```
-  From: "Office 365 <sender@contoso.com>" sender@contoso.com
-  ```
-
-- 無効 表示名と左山かっこの間にスペースはありません。
-
-  ```
-  From: Office 365<sender@contoso.com>
-  ```
-
-- 無効 [表示名] と [左山かっこ] の前後には、二重引用符の間にスペースを入れることはできません。
-
-  ```
-  From: "Office 365"<sender@contoso.com>
-  ```
-
-### <a name="suppress-auto-replies-to-your-custom-domain-without-breaking-the-from-policy"></a>カスタムドメインに対する自動返信を抑制して、From: ポリシーを破損させます。
-<a name="SuppressAutoReply"> </a>
-
-新しい from: policy 執行を使用すると、次\< \>のものを使用できなくなります。自動応答を抑制します。 代わりに、カスタムドメインの null MX レコードを設定する必要があります。
-
-メールエクスチェンジャー (MX) レコードは、ドメインのメールを受信するメールサーバーを識別する、DNS 内のリソースレコードです。 応答サーバーがメッセージを送信できる公開アドレスがないため、自動応答 (およびすべての返信) は自然に抑制されます。
-
-カスタムドメイン用の null MX レコードを設定する場合:
-
-- 電子メールを受信しないメッセージの送信元のドメインを選択します。 たとえば、プライマリドメインが contoso.com の場合は、noreply.contoso.com を選択することができます。
-
-- ドメインの null MX レコードを設定します。 Null MX レコードは、次の例のように1つのドットで構成されます。
-
-  ```
-  noreply.contoso.com IN MX .
-  ```
+MX レコードのセットアップの詳細については、「[任意の dns ホスティングプロバイダーで Office 365 用の dns レコードを作成](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)する」を参照してください。
 
 Null MX の公開の詳細については、「 [RFC 7505](https://tools.ietf.org/html/rfc7505)」を参照してください。
 
-### <a name="overriding-the-office-365-from-address-enforcement-policy"></a>Office 365 From: address 強制ポリシーの上書き
-<a name="Override"> </a>
+## <a name="override-from-address-enforcement"></a>アドレスの強制/無効化
 
-新しいポリシーのロールアウトが完了したら、次のいずれかの方法を使用して、Office 365 から受信する受信メールに対してのみこのポリシーをバイパスできます。
+受信電子メールの From アドレス要件をバイパスするには、「 [Office 365 の安全な送信者リストを作成](create-safe-sender-lists-in-office-365.md)する」の説明に従って、IP 許可一覧 (接続フィルター) またはメールフロールール (トランスポートルールとも呼ばれます) を使用できます。
 
-- IP 許可一覧
+Office 365 から送信する送信電子メールについては、From アドレスの要件を無効にすることはできません。 さらに、Outlook.com では、サポートによっても、あらゆる種類の上書きを許可しません。
 
-- Exchange Online のメールフロールール
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Office 365 で cybercrimes を防止し、保護するためのその他の方法
 
-Microsoft は、From: ポリシーの強制を上書きすることを強くお勧めします。 このポリシーを無効にすると、スパム、フィッシング、その他の cybercrimes にさらされるリスクが高まります。
-
-Office 365 で送信する送信メールに対してこのポリシーを上書きすることはできません。 さらに、Outlook.com では、サポートによっても、あらゆる種類の上書きを許可しません。
-
-### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Office 365 で cybercrimes を防止し、保護するためのその他の方法
-<a name="OtherProtection"> </a>
-
-フィッシング、スパム、データ侵害、その他の脅威などの cybercrimes に対して組織を強化する方法の詳細については、「 [Office 365 のセキュリティのベストプラクティス](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)」を参照してください。
-
-## <a name="related-topics"></a>関連項目
-
-[バックスキャター メッセージと EOP](backscatter-messages-and-eop.md)
+フィッシング、スパム、データ侵害、およびその他の脅威から組織を強化する方法の詳細については、「[上位10の方法で Office 365 と Microsoft 365 のビジネスプランを保護する](../../admin/security-and-compliance/secure-your-business-data.md)」を参照してください。

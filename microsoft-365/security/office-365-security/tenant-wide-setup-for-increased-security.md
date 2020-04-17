@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Office 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について説明します。 セキュリティのニーズによっては、より多くのセキュリティを必要とする場合があります。 これらの推奨事項を出発点として使用します。
-ms.openlocfilehash: 737a58c21811bf4d798c18f000c0e477b5667cef
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 56b2dad90b15c1d084edaa4477301e8ac4d4442d
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081258"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529015"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを設定する
 
@@ -39,12 +39,12 @@ Microsoft 365 セキュリティセンターには、環境を保護する機能
 ||||
 |---|---|---|
 |**領域**|**既定のポリシーが含まれています**|**推奨事項**|
-|**フィッシング対策**|必要| カスタムドメインがある場合は、CEO などの最も重要なユーザーの電子メールアカウントを保護し、ドメインを保護するために、フィッシング対策ポリシーを作成します。 「[フィッシング対策ポリシーを設定](set-up-anti-phishing-policies.md)する」および「例: ユーザーとドメインを保護するためのフィッシング対策ポリシー」の例を使用してポリシーを作成します。|
-|**マルウェア対策エンジン**|必要| 既定のポリシーを編集します。 <br/> &ensp;&ensp;* 一般的な添付ファイルの種類のフィルター— [オン] <br/><br/> また、カスタムマルウェアフィルターポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することもできます。 <br/><br/> 詳しくは、以下の資料を参照してください。 <br/> &ensp;&ensp;* [マルウェア対策保護](anti-malware-protection.md) <br/> &ensp;&ensp;* [マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
+|**フィッシング対策**|はい|カスタムドメインがある場合は、既定のフィッシング対策ポリシーを構成して、CEO などの最も重要なユーザーの電子メールアカウントを保護し、ドメインを保護します。 [Office 365 のフィッシング対策ポリシー](set-up-anti-phishing-policies.md)を確認し、「 [CONFIGURE the default EOP in](configure-anti-phishing-policies-eop.md) the [office 365」](configure-atp-anti-phishing-policies.md)を参照してください。|
+|**マルウェア対策エンジン**|はい| 既定のポリシーを編集します。 <br/> &ensp;&ensp;* 一般的な添付ファイルの種類のフィルター— [オン] <br/><br/> また、カスタムマルウェアフィルターポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することもできます。 <br/><br/> 詳しくは、以下の資料を参照してください。 <br/> &ensp;&ensp;* [マルウェア対策保護](anti-malware-protection.md) <br/> &ensp;&ensp;* [マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
 |**ATP の安全な添付ファイル機能**|いいえ| 「安全な添付ファイル」のメインページで、このボックスをオンにして、SharePoint、OneDrive、Microsoft Teams のファイルを保護します。 <br/> &ensp;&ensp;* SharePoint、OneDrive、Microsoft Teams の ATP を有効にする <br/><br/> 次の設定を使用して、新しい安全な添付ファイルポリシーを追加します。 <br/> &ensp;&ensp;* ブロック-検出されたマルウェアを使用して、現在の電子メールと添付ファイルをブロックします (このオプションを選択します) <br/> &ensp;&ensp;* リダイレクトを有効にする-(このボックスをオンにして、管理者や検疫アカウントなどの電子メールアドレスを入力してください) <br/> &ensp;&ensp;* 添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合は、上記の選択を適用します (このチェックボックスをオンにします)。 <br/> &ensp;&ensp;* 適用対象-受信者ドメインは (ドメインを選択します) <br/><br/>詳細情報: [Office 365 の ATP の安全な添付ファイルのポリシーを設定](set-up-atp-safe-attachments-policies.md)する|
-|**ATP の安全なリンク**|必要| この設定を組織全体の既定のポリシーに追加します。 <br/> &ensp;&ensp;* 安全なリンクの使用: Office 365 ProPlus、Office for iOS および Android (このオプションを選択してください)。 <br/><br/>特定の受信者に推奨されるポリシー: <br/> &ensp;&ensp;* ユーザーがリンクをクリックしたときに、既知の悪意のあるリンクの一覧に対して、Url が書き換えられ、チェックされます (このオプションを選択します)。 <br/> &ensp;&ensp;* 安全な添付ファイルを使用して、ダウンロード可能なコンテンツをスキャンします (このチェックボックスをオンにします)。 <br/> &ensp;&ensp;* 適用対象-受信者ドメインは (ドメインを選択します)。 <br/><br/> 詳細については、「 [Office 365 の ATP の安全なリンク](atp-safe-links.md)」を参照してください。|
-|**スパム対策 (メールフィルター)**|必要| 監視対象: <br/> &ensp;&ensp;* スパムが多すぎます-カスタム設定を選択し、既定のスパムフィルターポリシーを編集します。 <br/> &ensp;&ensp;* スプーフィングインテリジェンス—ドメインをスプーフィングしている送信者を確認します。 これらの送信者を禁止または許可します。 <br/><br/>詳細については[、「Office 365 電子メールのスパム対策保護](anti-spam-protection.md)」を参照してください。|
-|***電子メール認証***|必要|電子メール認証は、ドメインネームシステム (DNS) を使用して、電子メールの送信者に関する検証可能な情報を電子メールメッセージに追加します。 Office 365 は、既定のドメイン (onmicrosoft.com) に対して電子メール認証を設定しますが、Office 365 管理者はカスタムドメインに対して電子メール認証を使用することもできます。 3つの認証方法が使用されます。 <br/><br/> &ensp;&ensp;* Sender Policy Framework (または SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの場合は、「 [Set UP SPF In Office 365」を参照してスプーフィングを防止](set-up-spf-in-office-365-to-help-prevent-spoofing.md)してください。 <br/> &ensp;&ensp;* DomainKeys で識別されたメール (DKIM)。 <br/> &ensp;&ensp;&ensp;&ensp;-「 [DKIM を使用して、Office 365 でカスタムドメインから送信される送信電子メールを検証する」を](use-dkim-to-validate-outbound-email.md)参照してください。 <br/>&ensp;&ensp;&ensp;&ensp;-DKIM を構成した後、セキュリティセンターでそれを有効にします。<br/> &ensp;&ensp;* ドメインベースのメッセージ認証、レポート、および準拠 (DMARC)。 <br/> &ensp;&ensp;&ensp;&ensp;-DMARC セットアップの場合は、 [DMARC を使用して Office 365 で電子メールを検証](use-dmarc-to-validate-email.md)します。|
+|**ATP の安全なリンク**|はい| この設定を組織全体の既定のポリシーに追加します。 <br/> &ensp;&ensp;* 安全なリンクの使用: Office 365 ProPlus、Office for iOS および Android (このオプションを選択してください)。 <br/><br/>特定の受信者に推奨されるポリシー: <br/> &ensp;&ensp;* ユーザーがリンクをクリックしたときに、既知の悪意のあるリンクの一覧に対して、Url が書き換えられ、チェックされます (このオプションを選択します)。 <br/> &ensp;&ensp;* 安全な添付ファイルを使用して、ダウンロード可能なコンテンツをスキャンします (このチェックボックスをオンにします)。 <br/> &ensp;&ensp;* 適用対象-受信者ドメインは (ドメインを選択します)。 <br/><br/> 詳細については、「 [Office 365 の ATP の安全なリンク](atp-safe-links.md)」を参照してください。|
+|**スパム対策 (メールフィルター)**|はい| 監視対象: <br/> &ensp;&ensp;* スパムが多すぎます-カスタム設定を選択し、既定のスパムフィルターポリシーを編集します。 <br/> &ensp;&ensp;* スプーフィングインテリジェンス—ドメインをスプーフィングしている送信者を確認します。 これらの送信者を禁止または許可します。 <br/><br/>詳細については[、「Office 365 電子メールのスパム対策保護](anti-spam-protection.md)」を参照してください。|
+|***電子メール認証***|はい|電子メール認証は、ドメインネームシステム (DNS) を使用して、電子メールの送信者に関する検証可能な情報を電子メールメッセージに追加します。 Office 365 は、既定のドメイン (onmicrosoft.com) に対して電子メール認証を設定しますが、Office 365 管理者はカスタムドメインに対して電子メール認証を使用することもできます。 3つの認証方法が使用されます。 <br/><br/> &ensp;&ensp;* Sender Policy Framework (または SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの場合は、「 [Set UP SPF In Office 365」を参照してスプーフィングを防止](set-up-spf-in-office-365-to-help-prevent-spoofing.md)してください。 <br/> &ensp;&ensp;* DomainKeys で識別されたメール (DKIM)。 <br/> &ensp;&ensp;&ensp;&ensp;-「 [DKIM を使用して、Office 365 でカスタムドメインから送信される送信電子メールを検証する」を](use-dkim-to-validate-outbound-email.md)参照してください。 <br/>&ensp;&ensp;&ensp;&ensp;-DKIM を構成した後、セキュリティセンターでそれを有効にします。<br/> &ensp;&ensp;* ドメインベースのメッセージ認証、レポート、および準拠 (DMARC)。 <br/> &ensp;&ensp;&ensp;&ensp;-DMARC セットアップの場合は、 [DMARC を使用して Office 365 で電子メールを検証](use-dmarc-to-validate-email.md)します。|
 |
 
 > [!NOTE]
@@ -86,7 +86,7 @@ SharePoint チームサイトを保護レベルを高くして構成する場合
 ||||
 |---|---|---|
 |**領域**|**既定のポリシーが含まれています**|**推奨事項**|
-|**共有**(SharePoint Online と OneDrive for business)|必要|既定では、外部共有が有効になっています。 これらの設定をお勧めします。 <br/>* 認証済み外部ユーザーへの共有と匿名アクセスリンクの使用を許可します (既定の設定)。 <br/> * 匿名アクセスリンクの有効期限がこの日数を過ぎています。 必要に応じて、30日などの数値を入力します。 <br/>* 既定のリンクの種類— [内部] (組織内のユーザーのみ) を選択します。 匿名リンクを使用して共有を希望するユーザーは、[共有] メニューからこのオプションを選択する必要があります。 <br/><br/> 詳細情報:[外部共有の概要](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
+|**共有**(SharePoint Online と OneDrive for business)|はい|既定では、外部共有が有効になっています。 これらの設定をお勧めします。 <br/>* 認証済み外部ユーザーへの共有と匿名アクセスリンクの使用を許可します (既定の設定)。 <br/> * 匿名アクセスリンクの有効期限がこの日数を過ぎています。 必要に応じて、30日などの数値を入力します。 <br/>* 既定のリンクの種類— [内部] (組織内のユーザーのみ) を選択します。 匿名リンクを使用して共有を希望するユーザーは、[共有] メニューからこのオプションを選択する必要があります。 <br/><br/> 詳細情報:[外部共有の概要](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 
 SharePoint 管理センターと OneDrive for Business 管理センターには、同じ設定が含まれています。 どちらの管理センターの設定も、両方に適用されます。

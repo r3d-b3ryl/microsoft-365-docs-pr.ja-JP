@@ -17,12 +17,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、ダッシュボードから洞察に移動する方法について説明します。
-ms.openlocfilehash: 8f6a75e02f00cbc62e4907ea3a0ff54c72110a21
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52fc933133cee4b060a08516b64a46c1c24a13cb
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083171"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537499"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>ウォークスルー - ダッシュボードからインサイトへの移動
 
@@ -42,7 +42,7 @@ ms.locfileid: "42083171"
     
 4. リスト内の項目を選択すると、検出された類似の電子メールメッセージなどの追加情報が表示される詳細ウィンドウが開きます。 (リスト内の項目をクリックし、情報と推奨事項を確認します)。<br>![アイテムを選択すると詳細ウィンドウが開きます。](../../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. ウィンドウの上部に、組織の許可された送信者リストに送信者を追加するオプションがあります。 (この操作を実行するまで、[**送信者許可リストに追加**] を選択しないでください。 [スプーフィングインテリジェンスの詳細について説明](learn-about-spoof-intelligence.md)します)。<br>![送信者を承認できる](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. ウィンドウの上部に、組織の許可された送信者リストに送信者を追加するオプションがあります。 (この操作を実行するまで、[**送信者許可リストに追加**] を選択しないでください。 [Office 365 でスプーフィングインテリジェンスを構成](learn-about-spoof-intelligence.md)します。)<br>![送信者を承認できる](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 この方法では、ダッシュボードから洞察および推奨されるアクションに移行できます。
   

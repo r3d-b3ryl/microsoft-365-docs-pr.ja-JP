@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895443"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541109"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft セキュア スコアの新機能
 
@@ -36,15 +36,15 @@ ms.locfileid: "42895443"
 
 Microsoft セキュリティ スコアが有意義であり、すべての改善アクションが測定可能かつ信頼性の高いものになるよう、次の改善アクションについては削除します。
 
-- 過去30日間に使用されていないアカウントの削除/ブロック
-- グローバル管理者を5名未満で指定する
 - ドキュメントへの IRM による保護の適用
 - データ損失防止ポリシーの適用
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>プレビューバージョンでのコントロールサポートの追加
+### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>プレビューバージョンでの Azure AD 向上アクションの追加
+
 - ユーザーが管理されていないアプリケーションに同意を付与できないようにする (現時点でリリースされているバージョンで利用可能)
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>その他の Microsoft Cloud App Security 向上アクションのサポート
+### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>プレビューバージョンでの Azure ATP 向上アクションの追加
+
 - ドメインコントローラーで印刷スプーラーサービスを無効にする
 - セキュリティで保護されていない Kerberos 委任を変更して偽装を防止する
 - Microsoft LAPS を使用してローカル管理者パスワードを保護および管理する
@@ -56,5 +56,6 @@ Microsoft セキュリティ スコアが有意義であり、すべての改善
 - 従来のプロトコル通信を停止する
 - 暗号使用率の低い停止
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Microsoft Defender ATP & 脆弱性管理 (TVM) のセキュリティに関する推奨事項のサポート
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>プレビューバージョンでの Microsoft Defender ATP & 脆弱性管理 (TVM) セキュリティ推奨事項のサポート
+
 - リリースされた TVM で提供されるすべてのセキュリティの推奨事項は、Microsoft セキュリティスコアでも利用できるようになりました。

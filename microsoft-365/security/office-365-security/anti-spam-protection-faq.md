@@ -1,11 +1,10 @@
 ---
-title: Office 365 のスパム対策保護に関する FAQ
+title: スパム対策保護 FAQ
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,15 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Exchange Online およびスタンドアロン Exchange Online Protection (EOP) でのスパム対策保護についてよく寄せられる質問と回答を管理者に説明します。
+ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033496"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528315"
 ---
-# <a name="anti-spam-protection-in-office-365-faq"></a>Office 365 のスパム対策保護に関する FAQ
+# <a name="anti-spam-protection-faq-in-office-365"></a>Office 365 のスパム対策保護に関する FAQ
 
 このトピックでは、exchange online またはスタンドアロンの exchange online Protection (EOP) のお客様が Exchange online メールボックスを使用していない場合に、メールボックスを持つ Office 365 ユーザーのスパム対策保護に関するよく寄せられる質問と回答について説明します。
 
@@ -31,14 +30,16 @@ ms.locfileid: "43033496"
 
 マルウェア対策保護に関する質問と回答については、「[マルウェア対策保護](anti-malware-protection-faq-eop.md)に関する faq」を参照してください。
 
+スプーフィング対策保護に関する質問と回答については、「[スプーフィング対策保護](anti-spoofing-protection-faq.md)に関する FAQ」を参照してください。
+
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>Q. 既定では、スパム検出メッセージはどのように処理されますか?
 
-A. **受信メッセージの場合:** スパムの大部分は、送信元の電子メールサーバーの IP アドレスに基づいて、接続フィルターによって削除されます。 スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) は、メッセージを検査し、スパム、一括、またはフィッシングとして分類します。 既定では、スパムまたは一括として分類されるメッセージは、受信者の迷惑メールフォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されます) を変更することも、特定のユーザーグループに対して厳密な設定を使用してカスタムのスパム対策ポリシーを作成することもできます (たとえば、エグゼクティブに送信されるスパムを検疫できます)。 詳細については、「 [Office 365 のスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」および「[推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
+A. **受信メッセージの場合**: スパムの大部分は、送信元の電子メールサーバーの IP アドレスに基づいて、接続フィルターによって削除されます。 スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) は、メッセージを検査し、スパム、一括、またはフィッシングとして分類します。 既定では、スパムまたは一括として分類されるメッセージは、受信者の迷惑メールフォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されます) を変更することも、特定のユーザーグループに対して厳密な設定を使用してカスタムのスパム対策ポリシーを作成することもできます (たとえば、エグゼクティブに送信されるスパムを検疫できます)。 詳細については、「 [Office 365 のスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」および「[推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
 
 > [!IMPORTANT]
-> EOP が社内メールボックスを保護するハイブリッド展開では、オンプレミスの Exchange 組織内の2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成して、メッセージに追加される EOP スパムフィルタリングヘッダーを検出する必要があります。 詳細については、「 [Configure STANDALONE EOP to the Spam Email folder to the hybrid 環境」](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)を参照してください。
+> EOP が社内メールボックスを保護するハイブリッド展開では、オンプレミスの Exchange 組織内の2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成して、メッセージに追加される EOP スパムフィルタリングヘッダーを検出する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
 
- **送信メッセージの場合:** メッセージは、[危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してルーティングされるか、配信不能レポート (NDR またはバウンスメッセージとも呼ばれる) で送信者に返されます。 送信スパム保護の詳細については、「 [Office 365 の送信スパム制御](outbound-spam-controls.md)」を参照してください。
+ **送信メッセージの場合**: メッセージは、[危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してルーティングされるか、配信不能レポート (NDR またはバウンスメッセージとも呼ばれる) で送信者に返されます。 送信スパム保護の詳細については、「 [Office 365 の送信スパム制御](outbound-spam-controls.md)」を参照してください。
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Q. ゼロ日のスパムバリアントとは何ですか。サービスによってどのように処理されますか。
 
@@ -56,7 +57,7 @@ A. サービスにサインアップしてドメインを追加すると、ス�
 
 [マルウェア対策ポリシーを構成する](configure-the-connection-filter-policy.md)
 
-[Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)
+[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)
 
 [送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベスト プラクティス推奨に従って正しく設定し、一般的な構成エラーを防止してください。
-ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033436"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528619"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>EOP および Office 365 ATP を構成するためのベストプラクティス
 
@@ -53,7 +53,7 @@ Exchange Online Protection (EOP) のベスト プラクティス推奨に従っ�
 |メールボックスへの SMTP 認証済み送信|無効|無効||
 |メールボックスへの EWS 接続|無効|無効||
 |[PowerShell 接続](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|無効|無効|メールボックスユーザーまたはメールユーザー ([取得ユーザー](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)のコマンドレットによって返されるユーザーオブジェクト) に対して使用できます。|
-|スプーフィングインテリジェンスを使用して、可能な場合には送信者をホワイトリストする|はい|はい||
+|[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、可能な場合には送信者をホワイトリストする|はい|はい||
 |ディレクトリベースのエッジブロック (DBEB)|有効|有効|ドメインの種類 = 権限あり|
 |[すべての管理者アカウントに対して多要素認証をセットアップする](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|有効|有効||
 

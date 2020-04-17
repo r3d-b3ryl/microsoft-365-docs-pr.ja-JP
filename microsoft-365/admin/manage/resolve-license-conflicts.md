@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Office 365 for business サブスクリプションのライセンスの競合を解決する方法について説明します。
-ms.openlocfilehash: 9dbd483b01566039cb227cd3d2f086c3f6e34be5
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212295"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540917"
 ---
 # <a name="resolve-license-conflicts-in-office-365-for-business"></a>一般法人向け Office 365 のライセンスの競合を解決する
 
@@ -33,11 +33,24 @@ ms.locfileid: "43212295"
   
 ## <a name="how-do-i-view-license-conflicts"></a>ライセンスの競合を確認する方法
 
-1. 管理センターで、[**課金** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+::: moniker range="o365-worldwide"
 
-    Office 365 ドイツを使用している場合は、[この<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページにアクセスしてください。
+1. 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 
-    21Vianet が運用している Office 365 を使用している場合は、[この<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページにアクセスしてください。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
+
 
 2. 競合に関する情報については、[**状態**] 列を確認してください。 競合がある場合は、1人以上のユーザーが有効なライセンスを必要としているという警告メッセージが表示されます。
 

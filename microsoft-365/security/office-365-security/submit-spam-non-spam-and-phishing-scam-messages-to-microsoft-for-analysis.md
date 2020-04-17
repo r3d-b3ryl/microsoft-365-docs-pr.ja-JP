@@ -2,8 +2,8 @@
 title: 分析のためにメッセージを手動で Microsoft に送信する
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 77807f710743d98dc2e1564f804b6a67add67def
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032806"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529051"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のためにメッセージを手動で Microsoft に送信する
 
@@ -51,7 +51,7 @@ ms.locfileid: "43032806"
 2. 迷惑メールまたはフィッシングメッセージを新しいメッセージにドラッグアンドドロップします。 これにより、迷惑メールまたはフィッシングメッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
 
    > [!NOTE]
-   > <ul><li>新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類であることを確認してください。フィッシング詐欺メッセージまたは迷惑メールメッセージのいずれかです。</li><li>新しいメッセージの本文は空のままにします。<li></li>添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。</li></ul>
+   > <ul><li>新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類であることを確認してください。フィッシング詐欺メッセージまたは迷惑メールメッセージのいずれかです。</li><li>新しいメッセージの本文は空のままにします。</li><li>添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。</li></ul>
 
 3. 完了したら、[**送信**] をクリックします。
 
@@ -70,7 +70,7 @@ ms.locfileid: "43032806"
 2. Misidentified メッセージを新しいメッセージにドラッグアンドドロップします。 これにより、misidentified メッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
 
    > [!NOTE]
-   > <ul><li>新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージが同じ種類であることを確認してください。フィッシング詐欺メッセージまたは迷惑メールメッセージのいずれかです。</li><li>新しいメッセージの本文は空のままにします。<li></li>添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。</li></ul>
+   > <ul><li>新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージの種類が同一であることを確認してください。フィッシングメッセージと迷惑メールメッセージのいずれかです。</li><li>新しいメッセージの本文は空のままにします。</li><li>添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。</li></ul>
 
 3. 完了したら、[**送信**] をクリックします。
 
@@ -89,7 +89,7 @@ ms.locfileid: "43032806"
 
 - Exchange Online で EAC を開くには、「exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center)」を参照してください。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection の PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - Exchange Online およびスタンドアロン EOP のメールフロールールの詳細については、以下のトピックを参照してください。
 

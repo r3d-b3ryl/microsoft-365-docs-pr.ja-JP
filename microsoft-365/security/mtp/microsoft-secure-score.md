@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
-ms.translationtype: HT
+ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163900"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541097"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -168,6 +168,8 @@ Microsoft セキュリティ スコアが有意義であり、すべての改善
 - 危険な非準拠のシャドウ IT アプリケーションを検出する
 - アクセス許可を確認し、環境に接続されたリスクの高い OAuth アプリの接続をブロックする
 - SharePoint Online ドキュメント ライブラリでバージョン管理を設定する
+- 過去30日間に使用されていないアカウントの削除/ブロック
+- グローバル管理者を5名未満で指定する
 
 #### <a name="removed-not-scored-improvement-actions"></a>[スコア未計算] の改善のための処置を削除済み
 
