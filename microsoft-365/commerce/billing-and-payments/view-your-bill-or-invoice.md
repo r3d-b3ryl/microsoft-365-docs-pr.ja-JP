@@ -25,12 +25,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
-ms.openlocfilehash: 5982e65ce9720b85d29126986cfcb8123b4aef5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255893"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540857"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -50,10 +50,23 @@ ms.locfileid: "42255893"
   
 ## <a name="view-a-bill-or-invoice"></a>課金内容または請求書を表示する
 
+::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">請求と支払い</a>] ページの順に移動します。
 
-    Office 365 Germany を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">請求と支払い</a>] ページに移動します。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">請求と支払い</a>] ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">請求と支払い</a>] ページの順に移動します。
+
+::: moniker-end
 
 2. ドロップダウン リストから日付範囲を選択し、表示する注文を選択します。
 

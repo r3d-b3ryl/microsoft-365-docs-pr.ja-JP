@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のドキュメントやメールを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 196efe65eda1265d6f2c0578d1f444709dadb26c
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 39e83c74d2df8d0efe12225600813ef8007833e2
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516822"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528350"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -138,7 +138,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 6. 指示に従ってポリシー設定を構成します。
     
-    設定の詳細については、「概要」の「[ラベル ポリシーでできること](sensitivity-labels.md#what-label-policies-can-do)」を参照してください。
+    これらの設定の詳細については、概要情報の「[ラベル ポリシーでできること](sensitivity-labels.md#what-label-policies-can-do)」を参照してください。
 
 7. 異なるユーザーや場所に対して、異なるポリシー設定が必要な場合は、次の手順を繰り返します。 たとえば、ユーザーのグループにラベルを追加したり、ユーザーのサブセットに別の既定のラベルを作成したりできます。
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: 29e9c0ea6e7c63ff8b90057b2c88aafd834ec4dc
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: ca6b3a76efcc25ab19b05bf841e506c6a5aab375
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105674"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540834"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -155,12 +155,15 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 アクセス許可を割り当てるときには、次の選択が可能です。
 
 - 組織内のすべてのユーザー (すべてのテナント メンバー)。この設定ではゲスト アカウントが除外されます。
-- すべての認証されたユーザー。 選択する前に、この設定の[要件と制限事項](#requirements-and-limitations-for-add-any-authenticated-users)を理解しておいてください。
-- 特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、Office 365 グループ、または動的配布グループ。 
-- 任意のメール アドレスまたはドメイン。 この組織の任意のドメイン名を入力して、Azure AD を使用する別の組織のすべてのユーザーを指定するには、このオプションを使用します。 **gmail.com**、**hotmail.com**、**outlook.com** などのドメイン名を入力することにより、ソーシャル プロバイダーに対してこのオプションを使用することもできます。
 
-> [!NOTE]
-> Azure AD を使用する組織のドメインを指定した場合、その特定のドメインへのアクセスを制限することはできません。 代わりに、Azure AD の検証済みドメインはすべて、指定したドメイン名を所有するテナントに自動的に含まれます。
+- すべての認証されたユーザー。 選択する前に、この設定の[要件と制限事項](#requirements-and-limitations-for-add-any-authenticated-users)を理解しておいてください。
+
+- Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、Office 365 グループ、または動的配布グループ、または[動的配布グループ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) を使用することはできません。
+
+- 任意のメール アドレスまたはドメイン。 この組織の任意のドメイン名を入力して、Azure AD を使用する別の組織のすべてのユーザーを指定するには、このオプションを使用します。 **gmail.com**、**hotmail.com**、**outlook.com** などのドメイン名を入力することにより、ソーシャル プロバイダーに対してこのオプションを使用することもできます。
+    
+    > [!NOTE]
+    > Azure AD を使用する組織のドメインを指定した場合、その特定のドメインへのアクセスを制限することはできません。 代わりに、Azure AD の検証済みドメインはすべて、指定したドメイン名を所有するテナントに自動的に含まれます。
 
 すべてのテナント メンバーを選択する場合やディレクトリを参照する場合は、ユーザーまたはグループに電子メール アドレスが必要になります。
 

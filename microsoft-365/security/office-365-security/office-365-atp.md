@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612607"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528607"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -45,9 +45,11 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 
 次の表は、各プランに含まれる機能をまとめたものです。
 
-|Office 365 ATP プラン 1 |Office 365 ATP プラン 2|
-|---------|---------|
-|構成、保護、および検出機能:<br/>- [安全な添付ファイル](atp-safe-attachments.md)<br/>- [安全なリンク](atp-safe-links.md)<br/>- [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)<br/>- [高度なフィッシング対策による保護](atp-anti-phishing.md)<br/>- [リアルタイムの検出](threat-explorer.md)     |Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:<br/>- [脅威トラッカー](threat-trackers.md)<br/>- [脅威エクスプローラー](threat-explorer.md)<br/>- [自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [攻撃シミュレータ](attack-simulator.md)|
+|||
+|---|---|
+|**Office 365 ATP プラン 1**|**Office 365 ATP プラン 2**|
+|構成、保護、および検出機能:<br/>[安全な添付ファイル](atp-safe-attachments.md)<br/>[安全なリンク](atp-safe-links.md)<br/>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)<br/>[ATPのフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>[リアルタイムの検出](threat-explorer.md)|Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:<br/>[脅威トラッカー](threat-trackers.md)<br/>[脅威エクスプローラー](threat-explorer.md)<br/>[自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻撃シミュレータ](attack-simulator.md)|
+|
 
 - Office 365 ATP プラン 2 は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。
 
@@ -72,7 +74,7 @@ Office 365 ATP を使用して、組織のセキュリティ チームは、Offi
 
 - **[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)**: チーム サイトやドキュメント ライブラリ内で悪意のあるファイルを特定してブロックすることで、ユーザーが共同作業でファイルを共有する際に組織を保護します。 詳細については、「[SharePoint、OneDrive、Microsoft の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)」を参照してください。
 
-- **[ATP のフィッシング詐欺対策保護](atp-anti-phishing.md)**: ユーザーおよびカスタム ドメインの偽装を検出します。 この機能は、コンピューターの学習モデルや高度な偽装検出アルゴリズムを適用してフィッシング攻撃に回避します。 詳細については、「[Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする](set-up-anti-phishing-policies.md)」を参照してください。
+- **[ATP のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**: ユーザー、内部およびカスタム ドメインの偽装を検出します。 この機能は、コンピューターの学習モデルや高度な偽装検出アルゴリズムを適用してフィッシング攻撃に回避します。 詳細については、[「Office 365で ATP のフィッシング詐欺対策ポリシーを構成する」](configure-atp-anti-phishing-policies.md)を参照してください。
 
 ## <a name="view-office-365-atp-reports"></a>Office 365 ATP レポートを表示する
 
