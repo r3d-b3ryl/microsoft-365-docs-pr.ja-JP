@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: タイム ゾーンを設定する
                   href: mtp/mtp-time-zone.md
+            - name: デバイス プロファイルを表示する
+              href: 'mtp:/device-profile.md'
             - name: フィードバックの提供
               href: mtp/feedback.md
             - name: ServiceNow を介してチケットを管理する
