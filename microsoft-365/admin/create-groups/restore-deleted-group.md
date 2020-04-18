@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除された Office 365 グループを復元する方法について説明します。
-ms.openlocfilehash: 31d6481f87d7da219e042eefa8f004425caee133
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 2efd8c35286d224c6a3ed185043c82ab4b8e954e
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583164"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547534"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>削除済みの Office 365 グループを復元する
 
@@ -61,7 +61,7 @@ Office 365 グループの所有者である場合は、次の手順に従って
 
 グローバル管理者またはグループ管理者の場合は、次のように、削除されたグループを Microsoft 365 管理センターで復元できます。
 
-1. [https://admin.microsoft.com](Go to the admin center at https://admin.microsoft.com) の管理センターにアクセスします。
+1. [管理センター](https://admin.microsoft.com)に移動します。
 2. [**グループ**] を展開し、[**削除済みグループ**] をクリックします。
 3. 復元するグループを選択し、[**グループの復元**] をクリックします。
   

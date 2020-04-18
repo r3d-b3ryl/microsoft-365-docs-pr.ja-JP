@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Office 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 9016b96821dd9d40a0fb65574ce96d7badd0c2bd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212083"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547588"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Office 365 グループを作成できるユーザーを管理する
 
@@ -79,6 +79,9 @@ Office 365 グループの作成を特定のセキュリティグループのメ
 
 - これらのグループ作成の設定を管理している管理者
 - グループの作成が許可されているセキュリティグループのメンバー
+
+> [!NOTE]
+> Azure ライセンスの割り当て方法の詳細については[、「Azure Active Directory ポータルでライセンスを割り当てるまたは削除](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)する」を参照してください。
 
 以下のユーザーは Azure AD Premium ライセンスまたは Azure AD Basic EDU のライセンスが割り当てられている必要はありません。
 

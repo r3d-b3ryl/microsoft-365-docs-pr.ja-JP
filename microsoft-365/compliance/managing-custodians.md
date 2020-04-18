@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced 電子情報開示の保管担当者管理ツールを使用すると、法的訴訟で関心のある人物に関連付けられているデータを識別、保持、および収集することに関するワークフローを管理できます。
-ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400914"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551244"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Advanced eDiscovery で保管担当者を操作する
 
@@ -38,7 +38,3 @@ ms.locfileid: "42400914"
 - [ケースで保管担当者を管理する](manage-new-custodians.md)
 
 - [カストディアンのアクティビティを表示する](view-custodian-activity.md)
-
-## <a name="advanced-ediscovery-permissions"></a>高度な電子情報開示のアクセス許可
-
-Advanced eDiscovery では、組み込みの電子情報開示マネージャーの役割グループを使用して、高度な電子情報開示でエンドツーエンドのワークフローを管理できるように、必要なアクセス許可を法的調査官に割り当てることができます。 または、高度な電子情報開示のケースで特定の操作を実行するために必要な役割のサブセットを使用して、カスタムの役割グループを作成することもできます。 電子情報開示関連のロールの詳細については、「[セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。

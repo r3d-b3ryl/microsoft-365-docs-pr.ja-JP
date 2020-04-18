@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 4ce9e06bb98fb391bb9eb5ffa01491e0c85eba1f
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240302"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551148"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -58,7 +58,6 @@ ms.locfileid: "43240302"
     
     SharePoint と OneDrive の自動ラベル付けに固有:
     - テナント内で 1 日あたり最大 25,000 個の自動的にラベル付けされたファイル (Word、PowerPoint、または Excel)
-        - ライセンスが割り当てられたユーザー 1 人につき 1 日あたり最大 5 つの自動的にラベル付けされたファイル
     - すべてのポリシー全体で最大 10 のサイト コレクション
     - テナント全体で最大 10 のポリシー
 
