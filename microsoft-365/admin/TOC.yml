@@ -5,7 +5,7 @@
       items:
         - name: 管理者の概要
           href: admin-overview/admin-overview.md
-        - name: Office 365 にサインアップする
+        - name: Office 365 のサインアップ
           href: admin-overview/sign-up-for-office-365.md
         - name: ビデオ トレーニング
           href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
@@ -25,9 +25,9 @@
           href: setup/setup.md
         - name: '[セットアップ] ウィザードと [セットアップ] ページの違い'
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: ドメインを追加する
+        - name: ドメインの追加
           href: setup/add-domain.md
-        - name: ドメイン FAQ
+        - name: ドメインに関する FAQ
           href: setup/domains-faq.md
         - name: アプリケーションをインストールする
           href: setup/install-applications.md
@@ -79,7 +79,7 @@
           href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
         - name: 管理者ロールについて
           href: add-users/about-admin-roles.md
-        - name: 管理者の役割を割り当てる
+        - name: 管理者ロールを割り当てる
           href: add-users/assign-admin-roles.md
         - name: Exchange Online 管理者の役割について
           href: add-users/about-exchange-online-admin-role.md
@@ -143,7 +143,7 @@
           href: usage-analytics/get-the-latest-version-of-usage-analytics.md
         - name: レポートを移動して利用する
           href: usage-analytics/navigate-and-utilize-reports.md
-        - name: 利用状況レポートのアクティブなユーザー
+        - name: 利用状況レポートのアクティブ ユーザー
           href: usage-analytics/active-user-in-usage-reports.md
         - name: レポートをカスタマイズする
           href: usage-analytics/customize-reports.md
@@ -169,7 +169,7 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: 一元展開を使用してアドインを展開する
           href: manage/manage-deployment-of-add-ins.md
-        - name: 一元展開の FAQ
+        - name: 一元展開に関する FAQ
           href: manage/centralized-deployment-FAQ.md
         - name: パートナーまたは販売店を検索する
           href: manage/find-your-partner-or-reseller.md
@@ -185,11 +185,11 @@
           href: manage/share-calendars-with-external-users.md
         - name: ユーザーにライセンスを割り当てる
           href: manage/assign-licenses-to-users.md
-        - name: ユーザーからのライセンスの割り当てを解除する
+        - name: ユーザーからライセンスの割り当てを解除する
           href: manage/remove-licenses-from-users.md
         - name: ライセンスの競合を解決する
           href: manage/resolve-license-conflicts.md
-        - name: 新機能を使用して新しい機能を表示または非表示にする
+        - name: 新機能管理を使用して新機能を表示または非表示にする
           href: manage/show-hide-new-features.md
     - name: サブスクリプションと課金
       items:
@@ -203,7 +203,7 @@
           href: ../commerce/subscriptions/cancel-your-subscription.md
     - name: ドメイン
       items:
-        - name: のドメイン
+        - name: Office 365 のドメイン
           href: get-help-with-domains/get-help-with-domains.md
         - name: ドメインとは
           href: get-help-with-domains/what-is-a-domain.md
@@ -269,7 +269,7 @@
           href: services-in-china/download-office-app-for-Android.md
         - name: 21Vianet が運営する Office 365 の iOS 用 Office アプリをダウンロードする
           href: services-in-china/download-office-app-for-iOS.md
-        - name: 請求書を表示するか Fapiao を入手する
+        - name: 課金内容を表示または領収書を入手する
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Fapiao を申請する
           href: services-in-china/apply-for-a-fapiao.md
@@ -289,5 +289,5 @@
           href: manage/message-center.md
         - name: Microsoft 365 の試用または購入
           href: ../commerce/try-or-buy-microsoft-365.md
-    - name: 一般法人向け製品のサポートに問い合わせる
+    - name: ビジネス製品のサポートに問い合わせる
       href: contact-support-for-business-products.md

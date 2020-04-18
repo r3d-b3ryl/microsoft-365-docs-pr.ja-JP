@@ -283,27 +283,30 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-            - name: Office 365 でのフィッシング対策保護
+            - name: フィッシング対策保護
               href: ./office-365-security/anti-phishing-protection.md
               items:
-                - name: フィッシング対策保護の調整
-                  href: ./office-365-security/tuning-anti-phishing.md
-                - name: Office 365 の ATP フィッシング対策機能
-                  href: ./office-365-security/atp-anti-phishing.md
-                - name: フィッシング対策および ATP フィッシング対策ポリシーを設定する
+                - name: フィッシング詐欺対策ポリシー
                   href: ./office-365-security/set-up-anti-phishing-policies.md
+                  items:
+                    - name: EOP で既定のフィッシング詐欺対策ポリシーを設定する
+                      href: ./office-365-security/configure-anti-phishing-policies-eop.md
+                    - name: ATP フィッシング詐欺対策ポリシーを設定する
+                      href: ./office-365-security/configure-atp-anti-phishing-policies.md
                 - name: Office 365 がフィッシング詐欺を防ぐために差出人アドレスを検証する方法
                   href: ./office-365-security/how-office-365-validates-the-from-address.md
-            - name: Office 365 のスプーフィング対策保護
+                - name: フィッシング対策保護の調整
+                  href: ./office-365-security/tuning-anti-phishing.md
+            - name: スプーフィング対策保護
               href: ./office-365-security/anti-spoofing-protection.md
               items:
-                - name: スプーフィング インテリジェンスをもっとよく知る
+                - name: スプーフィング対策保護に関する FAQ
+                  href: ./office-365-security/anti-spoofing-protection-faq.md
+                - name: スプーフィング インテリジェンスを設定する
                   href: ./office-365-security/learn-about-spoof-intelligence.md
-                - name: スプーフィング インテリジェンス分析のチュートリアル
+                - name: ATP スプーフィング インテリジェンス分析のチュートリアル
                   href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
-                - name: Outlook.com および Outlook on the web で不審なメッセージを特定する
-                  href: ./office-365-security/unverified-sender-feature.md
-            - name: 検疫
+            - name: Quarantine
               href: ./office-365-security/quarantine-email-messages.md
               items:
                 - name: 検疫に関する FAQ
@@ -314,7 +317,8 @@
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
                 - name: エンド ユーザー スパム通知
                   href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
-            - name: メールの検証と認証
+            - name: メール認証
+              href: ./office-365-security/email-validation-and-authentication.md
               items:
                 - name: Office 365 で SPF を使用して、スプーフィングを防止する方法
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
