@@ -61,4 +61,4 @@ ms.locfileid: "42857393"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a><span data-ttu-id="8ee3d-126">疑問が解決しない場合はどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="8ee3d-126">What if my question still hasn't been answered?</span></span>
 
-<span data-ttu-id="8ee3d-127">[管理ヘルプ](../admin-home.yml) に回答がないかを確認するか、以下でフィードバックをお送りください。</span><span class="sxs-lookup"><span data-stu-id="8ee3d-127">Visit the rest of our [admin help](../admin-home.yml) or give us your feedback below.</span></span>
+<span data-ttu-id="8ee3d-127">[管理ヘルプ](../admin-home.md) に回答がないかを確認するか、以下でフィードバックをお送りください。</span><span class="sxs-lookup"><span data-stu-id="8ee3d-127">Visit the rest of our [admin help](../admin-home.md) or give us your feedback below.</span></span>
