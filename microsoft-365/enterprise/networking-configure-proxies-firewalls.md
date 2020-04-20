@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Office 365 が稼働している信頼できる場所にトラフィックをバイパスするのに必要となる Web ブラウザーとエッジ デバイスについて理解し、構成します。
-ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066690"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504081"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>手順 4: トラフィック バイパスを構成する
 
@@ -54,6 +54,13 @@ Microsoft では、次の方法を推奨しています。
 
 なお、バイパスするのは、Microsoft 365 で "最適化" および "許可" カテゴリに含まれるエンドポイントに対するトラフィックのための通常のプロキシとネットワーク セキュリティ処理のみです。他のすべての一般的なインターネット トラフィックは、プロキシ処理され、既存のネットワーク セキュリティ処理の対象になります。
 
+## <a name="optimizing-traffic-for-remote-workers-that-use-vpn-connections"></a>VPN 接続を使用するリモート ワーカーのためにトラフィックを最適化する
+
+リモート ワーカーが組織のイントラネット上のリソースにアクセスするには、一般的に仮想プライベート ネットワーク (VPN) 接続を使用します。 従来の VPN 接続では、インターネット トラフィックを含むすべてのトラフィックが組織のイントラネットにルーティングされます。 インターネット トラフィックは、組織のエッジ ネットワークとパケット処理デバイスにルーティングされます。 このトラフィックの移動と処理には遅延が発生しやすく、遅延によってパフォーマンスが大幅に低下し、リモート ワークの生産性に影響する可能性があります。 
+
+スプリット トンネリングは、VPN 接続でトラフィックをイントラネットに送信するのではなく、指定したトラフィックをインターネット経由でルーティングする VPN 接続の機能です。 リモート ワーカーが Teams、SharePoint Online、Exchange Online などの極めて重要な Microsoft 365 サービスに最適なパフォーマンスでアクセスできるようにするには、トラフィックを最適化カテゴリの Office 365 エンドポイントにインターネット経由で直接送信するように、スプリット トンネリング VPN 接続を構成します。 
+
+詳細については、[VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)をご覧ください。
 
 中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step4)を確認できます。
 

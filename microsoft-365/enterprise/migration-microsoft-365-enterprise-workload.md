@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 9fd35e4595b19d5ddd3db0f64ea7dedf303d6818
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113502"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504055"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -116,10 +116,9 @@ Office 2007 リリースのサーバー製品を Office 2010、Office 2013、ま
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-次の Office 2010 リリースのサーバー製品については、サポートの終了は **2020 年 10 月 13 日**になります。
+[Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) のサポートは、**2020 年 10 月 13 日**に終了します。
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) のサポートは、**2021 年 4 月 13 日**に終了します。
 
 Office 2010 リリースのこれらのサーバー製品を Office 2013 または Office 2016 リリースのサーバー製品にアップグレードするのではなく、以下を行うことを検討してください。
 

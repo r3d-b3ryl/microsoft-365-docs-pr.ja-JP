@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするインフラストラクチャとセキュリティを構成します。
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053109"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504125"
 ---
 # <a name="empower-remote-workers"></a>リモート ワーカーを支援する
 
@@ -99,10 +99,10 @@ ms.locfileid: "43053109"
 
 ![リモート ワーカーの ID 要素](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-[フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md) の場合、次を展開します。
+[フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md):
 
-- Windows 10 Enterprise で新しいデバイスを展開し、Windows 7 または Windows 8.1 デバイスを Windows 10 Enterprise にアップグレードするためのインフラストラクチャ
-- ID、脅威、および情報保護のための包括的なセキュリティ機能の有効化
+- インフラストラクチャを展開して、Windows 10 Enterprise で新しいデバイスを展開し、Windows 7 または Windows 8.1 デバイスを Windows 10 Enterprise にアップグレードする
+- ID、脅威、および情報保護のための包括的なセキュリティ機能を有効化する
 
 次に、Windows 10 Enterprise デバイスの構成を示します。
 
@@ -206,6 +206,12 @@ ms.locfileid: "43053109"
 ### <a name="user-adoption-results"></a>ユーザーによる採用の結果
 
 リモート ワーカーは、Windows 10 Enterprise または他のデバイスと Office 365 ProPlus を使用して、安全な環境で共有 Microsoft 365 Enterprise クラウド サービスとリソースにアクセスして作業し、リアルタイムで会議、作成、コラボレーションを行うことができます。
+
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>リモート ワーカーをサポートするために Microsoft が提供しているその他の機能
+
+[Azure ポイント対サイト VPN 接続](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about)を使用すると、Azure 仮想ネットワーク内で稼働しているサーバーにリモート ワーカーを接続できます。
+
+[Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) を使用すると、Azure でホストされているデスクトップおよびアプリを仮想化できます。
 
 ## <a name="see-also"></a>関連項目
 
