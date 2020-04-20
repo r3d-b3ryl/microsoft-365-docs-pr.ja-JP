@@ -46,7 +46,7 @@ additionalContent:
     items:
     - title: Microsoft 365 管理センター
       summary: 組織の Office 365 と Microsoft 365 のサービスをセットアップして管理します。
-      url: ./admin/admin-home.yml
+      url: ./admin/admin-home.md
     - title: Microsoft 365 Business
       summary: 中小企業向けに設計されています。 Excel や Outlook のような Windows アプリと Office アプリの最新バージョンを使用して会社を経営します。 すべてのビジネス デバイスに及ぶデータ保護とセキュリティを活用しましょう。
       url: ./business/index.yml
