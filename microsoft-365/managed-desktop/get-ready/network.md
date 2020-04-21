@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 48da8a0e6629ff64b42c413d4959fb440b77aae3
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633155"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583335"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのネットワーク構成
 
@@ -57,7 +57,7 @@ Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョ�
 配信の最適化 | [Windows 10 更新プログラムの配信最適化を構成する](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、 [Active directory および Active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune のネットワークエンドポイント](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---

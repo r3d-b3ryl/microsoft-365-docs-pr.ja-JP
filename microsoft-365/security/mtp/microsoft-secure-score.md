@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541097"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583383"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -137,11 +137,9 @@ Microsoft セキュア スコアは、システム構成、ユーザーの行動
 
 ## <a name="whats-new"></a>新機能
 
-Microsoft セキュア スコアがお客様のセキュリティ体制をよりよく反映するように、いくつかの変更を加えました。
+Microsoft セキュア スコアがお客様のセキュリティ体制をよりよく反映するように、いくつかの変更を加えました。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
-
-### <a name="march-2020"></a>2020 年 3 月
+### <a name="january---march-2020"></a>2020年1月
 
 #### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Azure AD の改善のための処置に関するセキュリティの既定群をサポートする
 

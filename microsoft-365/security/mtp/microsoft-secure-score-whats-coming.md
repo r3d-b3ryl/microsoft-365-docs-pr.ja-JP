@@ -17,16 +17,16 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 234ae17ab31d56d1bbd65f1aa8ed29475e9cd155
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541109"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583717"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft セキュア スコアの新機能
 
-お客様により優れたセキュリティ体制を提供し、使いやすさを向上させるために、Microsoft セキュア スコアは近日中に変化が加えられます。 お客様のスコアと最大可能スコアが新しくなります。 ただし、これによりセキュリティ体制が変わるわけではありません。
+Microsoft のセキュリティ[スコア](microsoft-secure-score.md)をより良いものにして、セキュリティの状況をより良くし、利便性を向上させるために、近い将来にいくつかの変更を加えています。 お客様のスコアと最大可能スコアが新しくなります。 ただし、これによりセキュリティ体制が変わるわけではありません。
 
 最近の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score.md#whats-new)」を参照してください。
 
@@ -39,11 +39,15 @@ Microsoft セキュリティ スコアが有意義であり、すべての改善
 - ドキュメントへの IRM による保護の適用
 - データ損失防止ポリシーの適用
 
-### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>プレビューバージョンでの Azure AD 向上アクションの追加
+### <a name="adding-azure-ad-improvement-action-to-preview"></a>Azure AD 向上アクションをプレビューに追加する
+
+[Microsoft Secure Score のプレビューリリース](microsoft-secure-score-preview.md)に、次の Azure Active Directory 改善アクションを追加します。
 
 - ユーザーが管理されていないアプリケーションに同意を付与できないようにする (現時点でリリースされているバージョンで利用可能)
 
-### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>プレビューバージョンでの Azure ATP 向上アクションの追加
+### <a name="adding-azure-atp-improvement-actions-to-preview"></a>Azure ATP 向上アクションをプレビューに追加する
+
+[Microsoft Secure Score のプレビューリリース](microsoft-secure-score-preview.md)に、次の Azure Advanced Threat Protection の向上アクションを追加します。
 
 - ドメインコントローラーで印刷スプーラーサービスを無効にする
 - セキュリティで保護されていない Kerberos 委任を変更して偽装を防止する
@@ -56,6 +60,6 @@ Microsoft セキュリティ スコアが有意義であり、すべての改善
 - 従来のプロトコル通信を停止する
 - 暗号使用率の低い停止
 
-### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>プレビューバージョンでの Microsoft Defender ATP & 脆弱性管理 (TVM) セキュリティ推奨事項のサポート
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-preview"></a>プレビューでの Microsoft Defender ATP の脅威 & 脆弱性管理 (TVM) セキュリティに関する推奨事項のサポート
 
-- リリースされた TVM で提供されるすべてのセキュリティの推奨事項は、Microsoft セキュリティスコアでも利用できるようになりました。
+また、TVM によって提供されるリリースされたすべてのセキュリティの推奨事項は、 [Microsoft セキュリティスコアのプレビューリリース](microsoft-secure-score-preview.md)でも利用できるようになります。
