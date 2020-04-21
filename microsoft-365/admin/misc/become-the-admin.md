@@ -1,5 +1,5 @@
 ---
-title: Office 365 での内部管理者の引き継ぎの実行
+title: 内部管理者の引き継ぎを実行する
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Office 365 で管理されていないテナントを電子メールとドメインの所有権を引き継ぐために確認する方法について説明します。
-ms.openlocfilehash: 3c732d55c533c72983aaa59e39e7bb8ff130f280
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Microsoft 365 で管理されていないテナントを電子メールとドメインの所有権を引き継ぐために確認する方法について説明します。
+ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212247"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627946"
 ---
-# <a name="perform-an-internal-admin-takeover-in-office-365"></a>Office 365 での内部管理者の引き継ぎの実行
+# <a name="perform-an-internal-admin-takeover"></a>内部管理者の引き継ぎを実行する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
 
@@ -67,11 +67,11 @@ ms.locfileid: "43212247"
   
 ## <a name="related-articles"></a>関連記事
 
-YouTube: [Power BI と Office 365 で IT 管理者を引き継ぐための 3 つの手順](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [POWER BI および Microsoft 365 に関して IT 管理者を引き継ぐための3つの手順](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Azure AD での管理の引き継ぎ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Office 365 のドメインに関するヘルプ](../get-help-with-domains/get-help-with-domains.md)
+[ドメインに関するヘルプを取得する](../get-help-with-domains/get-help-with-domains.md)
 
 [組織でのセルフサービスサインアップの使用](self-service-sign-up.md)
   

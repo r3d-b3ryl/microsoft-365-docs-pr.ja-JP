@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 企業が直面するセキュリティ上の脅威と、従業員がデータ、アカウント、およびデバイスを保護するための簡単な方法について説明します。
-ms.openlocfilehash: 86711cd32878917931a1eb1f67e7c08f7ed8ba57
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 4fafa348977d2eefe11cab865bacc999d625dc47
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561597"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627670"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>小規模企業向けのセキュリティ情報の図
 
-**概要:** ビジネス上の脅威に関する基本的な用語と、データ、アカウント、およびデバイスを保護するためにできることについて説明します。 Office 365 for business または Microsoft 365 Business の管理者として、ビジネスをより安全なものにするためのアクションを実行します。また、ビジネスデータとデバイスを安全に保つ方法については、すべての従業員にお問い合わせください。
+**概要:** ビジネス上の脅威に関する基本的な用語と、データ、アカウント、およびデバイスを保護するためにできることについて説明します。 Microsoft 365 for business の管理者として、ビジネスをより安全なものにするためのアクションを実行します。また、ビジネスデータとデバイスを安全に保つ方法については、すべての従業員にお問い合わせください。
 
 次の PowerPoint および PDF のリンクは、タブロイド形式 (元帳、11 x 17、または A3 とも呼ばれます) でダウンロードおよび印刷できます。
 

@@ -1,5 +1,5 @@
 ---
-title: Hostgator で Office 365 をセットアップするためにネームサーバーを変更する
+title: Hostgator を使用して Microsoft をセットアップするためにネームサーバーを変更する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
-description: Hostgator でカスタムドメインの DNS レコードを管理するように Office 365 をセットアップする方法について説明します。
-ms.openlocfilehash: d592fc77513107679206a4ac187116c7d6fb794f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Hostgator でカスタムドメインの DNS レコードを管理するように Microsoft をセットアップする方法について説明します。
+ms.openlocfilehash: 09f0409ed2a5f81b450c9aae7bb3699373ce6f22
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212331"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629889"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-hostgator"></a>Hostgator で Office 365 をセットアップするためにネームサーバーを変更する
+# <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>Hostgator で Microsoft 365 をセットアップするためにネームサーバーを変更する
 
- **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。
   
-Office 365 に Office 365 DNS レコードを管理させる場合は、次の手順に従います ([Hostgator で Office 365 のすべての DNS レコードを管理する](create-dns-records-at-hostgator.md)こともできます)。
+Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ[て、すべての MICROSOFT DNS レコードを Hostgator で管理](create-dns-records-at-hostgator.md)できます。)
   
     
 ## <a name="point-your-domain-to-your-hosting-account"></a>ドメインがホスティング アカウントを指すようにします。
@@ -70,7 +70,7 @@ Office 365 に Office 365 DNS レコードを管理させる場合は、次の�
 > [!IMPORTANT]
 > この手順を実行する前に、この記事の最初のセクションの手順を実行してから、[ドメインがホスティングアカウントを指すよう](#point-your-domain-to-your-hosting-account)にする必要があります。
   
-Office 365 でドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Office 365 に対してドメインを所有していることを確認することができます。
+ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。
@@ -80,7 +80,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     (Hostgator でホストされる各アカウントに一意の cPanel アドレスが割り当てられます。 cPanel アドレスは、以下のような形式になります。https://YourSiteAddress:secure-port-number。 Hostgator から届くサインアップ メールで、そのアドレスが指定されます。)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Office 365 の使用を開始するには、Hostgator からホスティングアカウントを購入するか、Office 365 をポイントするように[ドメインのネームサーバー (NS) レコードを変更](#change-your-domains-nameserver-ns-records)します。 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 開始するには、Hostgator からホスティングアカウントを購入するか、Microsoft をポイントするように[ドメインのネームサーバー (NS) レコードを変更](#change-your-domains-nameserver-ns-records)することができます。 
   
 2. [**コントロールパネル**] ページの [**ドメイン**] 領域で、[ **Advanced DNS Zone Editor**] を選択します。
     
@@ -93,15 +93,15 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-|Use your  *domain_name*  . (for example, fourthcoffee.com.)  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|Use your  *domain_name*  . (for example, fourthcoffee.com.)  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. [ **Add Record** ] を選択します。
     
 5. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
+これで、ドメインレジストラーのサイトでレコードが追加されました。 Microsoft に戻って、レコードの検索を要求します。
   
-Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
+Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
   
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
@@ -110,17 +110,17 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
-4. [**ドメインの確認**] ページで、[**確認**] を選択します。
+4. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
-> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
 
-Office 365 でドメインをセットアップするには、Office 365 のプライマリ ネーム サーバーとセカンダリ ネーム サーバーを参照するように、ドメインの NS レコードをドメイン レジストラーで変更します。これで、ドメインの DNS レコードを更新するように Office 365 で設定されます。メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
+Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを Office 365 のネーム サーバーをポイントするように変更すると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。たとえば、この変更後、ドメイン (rob@ *your_domain*  .com など) に送信されるすべてのメールは、Office 365 に送信されるようになります。
+> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*など) は、この変更を行った後に Microsoft に送られ始めます。
   
 > [!IMPORTANT]
 > 次の手順では、リストからその他の不要なネームサーバーを削除する方法と、正しいネームサーバーが表示されていない場合には追加する方法について説明します。 このセクションの手順を完了すると、次の4つのネームサーバーのみが一覧表示されます。 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、および**ns4.bdm.microsoftonline.com**。
@@ -179,4 +179,4 @@ Office 365 でドメインをセットアップするには、Office 365 のプ�
     ![Hostgator-BP-Redelegate-1-8](../../media/bd6b0dfa-5d39-4805-970d-7ab153cff117.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。
+> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。

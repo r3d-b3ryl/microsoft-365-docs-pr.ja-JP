@@ -1,5 +1,5 @@
 ---
-title: Office 365 の DNS レコードの作成に必要な情報を収集する
+title: DNS レコードの作成に必要な情報を収集する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Office 365 の DNS レコードを作成するために必要な値と情報を検索する方法について説明します。 '
+description: 'Microsoft 365 の DNS レコードを作成するために必要な値と情報を検索する方法について説明します。 '
 ms.custom: okr_smb
-ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540881"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628448"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Office 365 の DNS レコードの作成に必要な情報を収集する
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードの作成に必要な情報を収集する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
@@ -61,9 +61,9 @@ ms.locfileid: "43540881"
     
 5. 「[任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動し、レジストラーのリストから dns ホストを選択し、手順を追って説明します。
     
-6. DNS ホストで TXT レコード (または MX レコード) を作成する手順を実行し、Office 365 でドメインを確認します。
+6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従い、Microsoft 365 でドメインを再度確認します。
 
-7. Office 365 でドメインが検証されたら、DNS ホストから TXT レコード (または MX レコード) を削除します。
+7. Microsoft 365 でドメインが検証されたら、DNS ホストから TXT レコード (または MX レコード) を削除します。
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>手順 2: メールの MX レコード値を検索する
 

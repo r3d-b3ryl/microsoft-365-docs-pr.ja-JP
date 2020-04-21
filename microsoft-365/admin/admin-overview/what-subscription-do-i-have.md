@@ -1,5 +1,5 @@
 ---
-title: 取得している一般法人向け Office 365 サブスクリプションの種類を調べる方法
+title: 取得しているサブスクリプションが不明な場合
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,25 +22,25 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: '[サブスクリプション] ページにアクセスして、組織のサブスクリプションを確認する方法について説明します。'
 ms.custom: okr_SMB
-ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409502"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621432"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
 管理者である場合は、管理センターにアクセスすることによって、組織のサブスクリプションを確認できます。
   
- **管理者ではない場合**: [Office 365 のビジネス製品またはライセンスがある](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)かどうかを確認する
+ **管理者ではない場合**: [Microsoft 365 for business 製品またはライセンスの種類を](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)参照してください。
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. サブスクリプションは、サブスクリプション名、サブスクリプションに関する情報、およびその状態と共に、[ **Products & services** ] ページに表示されます。 縮小表示を表示するには、[**テーブルビュー**] を選択します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "42409502"
 
 1. 管理センターで、[**課金** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。  
 
-2. サブスクリプションが 1 つのみの場合は、[ **サブスクリプション**] ページに、サブスクリプション名とサブスクリプションの情報や状況が表示されます。次のスクリーンショットは、1 つの Office 365 Business サブスクリプションを所有している場合を示しています。
+2. サブスクリプションが 1 つのみの場合は、[ **サブスクリプション**] ページに、サブスクリプション名とサブスクリプションの情報や状況が表示されます。 次のスクリーンショットでは、Microsoft 365 Apps for business サブスクリプションがあることがわかります。
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -69,7 +69,7 @@ ms.locfileid: "42409502"
 
 1. 管理センターで、[**課金** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。  
 
-2. サブスクリプションが 1 つのみの場合は、[ **サブスクリプション**] ページに、サブスクリプション名とサブスクリプションの情報や状況が表示されます。次のスクリーンショットは、1 つの Office 365 Business サブスクリプションを所有している場合を示しています。
+2. サブスクリプションが 1 つのみの場合は、[ **サブスクリプション**] ページに、サブスクリプション名とサブスクリプションの情報や状況が表示されます。 次のスクリーンショットでは、Microsoft 365 Apps for business サブスクリプションがあることがわかります。
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

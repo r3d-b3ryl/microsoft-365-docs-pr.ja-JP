@@ -23,21 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: '最初の電子メールアドレスを、tom@fourthcoffee.com のようなわかりやすい電子メールアドレスに変更します。 これを行うには、ドメイン名を購入して、Office 365 に追加する必要があります。 '
-ms.openlocfilehash: dc0ab64003b48eec50bf34e60d8a6df463b4fe89
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '最初の電子メールアドレスを、tom@fourthcoffee.com のようなわかりやすい電子メールアドレスに変更します。 これを行うには、ドメイン名を購入して、Microsoft 365 に追加する必要があります。 '
+ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212035"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629061"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
- **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
 ::: moniker range="o365-worldwide"
 
-Office 365 の最初のメール アドレスには tom@fourthcoffee.onmicrosoft.com のように .onmicrosoft.com が含まれます。 これを tom@fourthcoffee.com のようなわかりやすいアドレスに変更できます。このためには、自分のドメイン (例: fourthcoffee.com) を持っている必要があります。既に持っている場合は、それをご利用いただけます。持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
+Microsoft 365 の最初の電子メールアドレス onmicrosoft.com は、tom@fourthcoffee.onmicrosoft.com のようになります。 これを tom@fourthcoffee.com のようなわかりやすいアドレスに変更できます。 このためには、自分のドメイン (例: fourthcoffee.com) を持っている必要があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Office 365 ドイツの最初の電子メールアドレスには、tom@fourthco
 
 ::: moniker-end
 
-セットアップ中にドメインの MX レコードを更新することによって、ドメインのメールが Office 365 に届くように変更すると、そのドメインに送信されたすべてのメールが Office 365 に送信されるようなります。MX レコードを変更する前に、ドメインにメールを持つすべてのユーザーを Office 365 に追加し、メールボックスを作成したことを確認してください。ドメインのすべてのユーザーのメールを Office 365 に移動したくない場合は、[代わりに、少数のメール アドレスで Office 365 を試験運用する](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)手順を実行します。
+セットアップ時にドメインの MX レコードを更新することによって、ドメインの電子メールを Microsoft 365 にするように変更すると、そのドメインに送信されるすべての電子メールが Microsoft 365 に送られ始めます。 MX レコードを変更する前に、自分のドメインに電子メールを持っているすべてのユーザーに対して、Microsoft 365 でユーザーを追加し、メールボックスを作成していることを確認してください。 ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくありませんか。 [代わりに、少数のメールアドレスを使用して Microsoft 365 をパイロット](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)処理する手順を実行することができます。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してカスタムドメインを使用するように電子メールアドレスを変更する
 
@@ -83,12 +83,12 @@ Office 365 ドイツの最初の電子メールアドレスには、tom@fourthco
     
 4. 自分がドメインを所有していることを確認して、メール アドレスを変更する手順に従います。
     
-Office 365 でドメインを正しくセットアップするすべての手順が表示されます。
+Microsoft 365 のドメインですべての設定を適切に設定するようにガイドされます。
 
 > [!NOTE]
-> Exchange ライセンスを使用していない場合は、ドメインを使用して Office 365 テナントからメールを送受信することはできません。
+> Exchange ライセンスを使用していない場合、ドメインを使用して Microsoft 365 テナントからメールを送受信することはできません。
   
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 を使用したドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)
+[Microsoft 365 を使用してカスタムドメインを購入する](../get-help-with-domains/buy-a-domain-name.md)
  

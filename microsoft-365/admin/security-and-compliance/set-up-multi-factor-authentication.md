@@ -1,5 +1,5 @@
 ---
-title: Office 365 ユーザー用の多要素認証を設定する
+title: ユーザーに多要素認証をセットアップする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,21 +20,21 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: セキュリティの既定値を使用して Office 365 ユーザー用の多要素認証を設定する方法について説明します。
+description: セキュリティの既定値を使用してユーザーに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 7e48f72f2fd8cfc5042bd15f994cc98bfa5fca8c
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 4a829aa597596564b9c2f468e72f3a766b198372
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503973"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627682"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
 > [!IMPORTANT]
-> 2019年10月21日以降にサブスクリプションまたは試用版を購入した場合に、多要素認証 (MFA) を予期せずに要求されると、サブスクリプションに対して[セキュリティの既定値](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)が自動的に有効になります。
+> 2019年10月21日以降にサブスクリプションまたは試用版を購入した場合に、MFA を予期せずに要求されると、サブスクリプションに対して[セキュリティの既定値](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)が自動的に有効になります。
 
-新しい法人向け Office 365 または Microsoft 365 Business のすべてのサブスクリプションは、自動的にセキュリティの既定値が有効になっています。 これは、すべてのユーザーが MFA を設定し、モバイルデバイスに Microsoft Authenticator アプリをインストールする必要があることを意味します。 詳細については、「[Office 365 で 2 段階認証をセットアップする](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)」を参照してください。  
+すべての新しい Microsoft 365 サブスクリプションのセキュリティの既定値が自動的に有効になります。 つまり、すべてのユーザーが多要素認証 (MFA) を設定し、モバイル デバイスに Authenticator アプリをインストールする必要があります。 詳細については、「 [Microsoft 365 の2段階認証をセットアップする](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)」を参照してください。  
 
 サインインするたびに追加の認証を実行するには、次にあげる 9 個の管理者ロールが必要になります。
 
@@ -48,13 +48,13 @@ ms.locfileid: "43503973"
 - ユーザー管理者
 - 認証管理者
 
-他のすべてのユーザーは、必要に応じて追加認証を求められます。 詳細については、「[セキュリティの既定とは](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
+他のすべてのユーザーは、必要に応じて追加認証を求められます。 詳細については、「[セキュリティの既定値とは](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
 
 > [!NOTE]
-> MFA を設定または変更するには、Office 365 のグローバル管理者である必要があります。 <br><br>
+> 多要素認証を設定または変更するには、グローバル管理者である必要があります。 <br><br>
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-以前にベースライン ポリシーを使用して MFA をセットアップしている場合は、[それらをオフにして、セキュリティの既定値をオンにする必要があります](#move-from-baseline-policies-to-security-defaults)。 ただし、Microsoft 365 Business またはサブスクリプションに[Azure Active Directory Premium P1 または Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/)が搭載されている場合は、[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)ポリシーを設定することもできます。 条件付きアクセスポリシーを使用するには、[先進認証](#enable-modern-authentication-for-your-organization)が有効になっていることを確認する必要があります。
+以前にベースライン ポリシーを使用して MFA をセットアップしている場合は、[それらをオフにして、セキュリティの既定値をオンにする必要があります](#move-from-baseline-policies-to-security-defaults)。 ただし、Microsoft 365 Business を所有している場合、またはサブスクリプションに [Azure Active Directory Premium 1、または Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/) が含まれている場合は、[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) ポリシーを設定することもできます。 条件付きアクセスポリシーを使用するには、[先進認証](#enable-modern-authentication-for-your-organization)が有効になっていることを確認する必要があります。
 
 > [!TIP]
 > ユーザーに Authenticator アプリをセットアップする方法を説明するには、「[Office 365 で Microsoft Authenticator を使用する](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1)」をご覧ください。
@@ -64,15 +64,15 @@ ms.locfileid: "43503973"
 1. グローバル管理者の資格情報を使用して、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)にサインインします。
 2. [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) にアクセスします。
 3. ページの下部で、[**セキュリティの既定値の管理**] を選択します。
-4. セキュリティの既定値を有効にする場合は [**はい]** 、セキュリティの既定値を無効にする場合は [**いいえ**] を選択し、[**保存**] を選択
+4. セキュリティの規定値を有効にするには [**はい**] を選択し、セキュリティの規定値を無効にするには [**いいえ**] を選択します。
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>ベースライン ポリシーからセキュリティの既定値に移行する
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)で、[**すべて表示**] を選択し、[**管理センター**] の下にある [ **Azure Active Directory** ] を選択します。
+1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)で、[**設定**] を選択します。
 
-2. **Azure active directory 管理センター**で、[ **azure active directory** > **セキュリティ**] を選択します。
+2. [**サインインとセキュリティ**] の横の [**サインインのセキュリティを強化する**] で [**表示**] を選択します。
 
-3. [**セキュリティ] |**[作業の開始] ページで、[**条件付きアクセス**] を選択します。 
+3. [**サインインのセキュリティを強化する**] で、[**管理**] を選択します。 
 
 4. [**条件付きアクセスポリシー** ] ページで、にある各基準ポリシーを選択し、 **[****オフ**] に設定します。
 5. [[Azure Active Directory のプロパティ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)] ページにアクセスします。
@@ -80,7 +80,7 @@ ms.locfileid: "43503973"
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>組織の先進認証を有効にする
 
-Office 2016 のクライアント アプリケーションはすべて、Active Directory Authentication Library (ADAL) を使用して MFA をサポートします。 つまり、Office 2016 クライアントでは、アプリ パスワードは必要ありません。 ただし、Office 365 サブスクリプションが ADAL または先進認証に対して有効になっていることを確認する必要があります。
+Office 2016 のクライアント アプリケーションはすべて、Active Directory Authentication Library (ADAL) を使用して MFA をサポートします。 つまり、Office 2016 クライアントでは、アプリ パスワードは必要ありません。 ただし、Microsoft 365 サブスクリプションが ADAL に対して有効になっていること、または先進認証が有効になっていることを確認する必要があります。
 
 1. 先進認証を有効にするには、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)で **[設定]** \> **[設定]** の順に選択し、次に **[サービス]** タブのリストから **[先進認証]** を選択します。
 
@@ -89,12 +89,11 @@ Office 2016 のクライアント アプリケーションはすべて、Active 
     ![チェックボックスをオンにした状態の [先進認証] パネル](../../media/enablemodernauth.png)
     
 > [!IMPORTANT]
-> 2017 年 8 月に、Skype for Business Online と Exchange Online を含むすべての新しい Office 365 テナントには、既定で先進認証が有効になっています。 Skype for Business Online の先進認証状態を確認するには、グローバル管理者の資格情報を使用して Skype for Business Online PowerShell を使用します。 Get-CsOAuthConfiguration を実行して、-ClientADALAuthOverride の出力を確認します。 -ClientADALAuthOverride が「許可」の場合は、先進認証が有効になります。
-
+> 2017年8月現在、Skype for Business online と Exchange online を含むすべての新しい Microsoft 365 サブスクリプションでは、先進認証が既定で有効になっています。 Skype for Business Online の先進認証状態を確認するには、グローバル管理者の資格情報を使用して Skype for Business Online PowerShell を使用します。 Get-CsOAuthConfiguration を実行して、-ClientADALAuthOverride の出力を確認します。 -ClientADALAuthOverride が「許可」の場合は、先進認証が有効になります。
 Exchange Online の MA 状態を確認するには、「[Exchange Online で先進認証を有効にする](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365とMicrosoft 365 Businessプランを安全にする10の方法](secure-your-business-data.md)
+[Microsoft 365 for business プランをセキュリティで保護するための10位の方法](secure-your-business-data.md)
 
 [Windows デバイスの Office 2013 の先進認証を有効にする](enable-modern-authentication.md)

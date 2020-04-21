@@ -26,14 +26,14 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理者の役割をユーザーまたは複数のユーザーに割り当てて、管理センターで特定のタスクを実行できるようにする方法について説明します。
-ms.openlocfilehash: 3f22ef22571dd04dd3364a95ed860f53b8ff207b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211921"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618790"
 ---
-# <a name="assign-admin-roles"></a>管理者の役割を割り当てる
+# <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
 Microsoft business サブスクリプションを購入したユーザーである場合は、グローバル管理者になります。これは、サブスクリプション内の製品を無制限に制御でき、ほとんどのデータにアクセスできることを意味します。
 
@@ -45,7 +45,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ::: moniker range="o365-worldwide"
 
@@ -54,7 +54,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker-end
 
-## <a name="assign-admin-roles"></a>管理者の役割を割り当てる 
+## <a name="assign-admin-roles"></a>管理者ロールを割り当てる 
 
 ::: moniker range="o365-worldwide"
 
@@ -84,7 +84,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。 
 
@@ -96,7 +96,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。 
 
@@ -126,7 +126,7 @@ PowerShell がわかっている場合は、「PowerShell を使用して[ユー
 
 [PowerShell を使用してユーザーアカウントに役割を割り当てる](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
-[パートナー関係を承認または削除する](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)
+[パートナー関係を承認または削除する](../misc/add-partner.md)
 
 [Exchange 管理センターを使用して、別の電子メールアドレスを追加する](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
 

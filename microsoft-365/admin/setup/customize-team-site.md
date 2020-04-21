@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: チームサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212211"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627620"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有についてチームサイトをカスタマイズする
 
-少数の従業員を含む小規模な企業では、ファイル共有とオンライングループ作業を設定して容易にするための最適な方法の1つとして、OneDrive と SharePoint チームサイトを一緒に使用することが挙げられます。 Office 365 グループに接続されたチームサイトを作成することをお勧めします。 チャットを使用する場合は、Microsoft Teams でチームを作成することによって、このサイトを作成できます。 Teams の詳細については、「[ビデオ: Microsoft Teams とは](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx)」を参照してください。 Teams を使用しない場合は、SharePoint の開始ページからチームサイトを作成することができます。 
+少数の従業員を含む小規模な企業では、ファイル共有とオンライングループ作業を設定して容易にするための最適な方法の1つとして、OneDrive と SharePoint チームサイトを一緒に使用することが挙げられます。 Microsoft 365 グループに接続されたチームサイトを作成することをお勧めします。 チャットを使用する場合は、Microsoft Teams でチームを作成することによって、このサイトを作成できます。 Teams の詳細については、「[ビデオ: Microsoft Teams とは](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx)」を参照してください。 Teams を使用しない場合は、SharePoint の開始ページからチームサイトを作成することができます。 
   
 [SharePoint チーム サイトとは](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -76,7 +76,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 リストに大量のデータを格納している場合は、「 [SharePoint での大規模なリストとライブラリの管理](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)」を参照してください。
   
-サイトへの予定表の追加に関するビデオを表示するには、「 [Office 365 で共有の予定表を作成する](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)」を参照してください。
+サイトへの予定表の追加に関するビデオを表示するには、「[共有の予定表を作成する](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)」を参照してください。
 
 ## <a name="organize-sites-into-hubs"></a>サイトをハブに編成する
 
@@ -92,7 +92,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
 
 ストレージと整理は最初に行いますが、チームや外部クライアントとの共有も重要です。 ここでは、ユーザーを管理し、データを共有するのに役立つトピックへのリンクを示します。 
   
-チームでのファイル共有については、「 [Office 365 で SharePoint ファイルまたはフォルダーを共有](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)する」を参照してください。
+チームとのファイル共有については、「 [Microsoft 365 で SharePoint ファイルまたはフォルダーを共有](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)する」を参照してください。
   
 チーム外での共有について理解するには、「[外部共有の概要](/sharepoint/external-sharing-overview)」を参照してください。
   
@@ -102,7 +102,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 [グループについて理解し、管理](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx)するためのビデオを表示します。 
   
-Office 365 グループにユーザーを追加するには、「ユーザーを個別に追加する」[または「一括で office 365-管理者向けヘルプ」を](../add-users/add-users.md)参照してください。
+Microsoft 365 グループにユーザーを追加するには、「ユーザーを個別に追加する」[または「一括で microsoft 365-管理者向けヘルプ」を](../add-users/add-users.md)参照してください。
   
 [アクセス要求のセットアップと管理](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx)を使用してアクセス要求を処理する方法について説明します。
   
@@ -110,11 +110,11 @@ Office 365 グループにユーザーを追加するには、「ユーザーを
 
 - **タブレットとスマートフォンで Office アプリをセットアップします。** この操作を行うと、チーム サイトに保存されているファイルをタブレットやスマートフォンから編集できるようになります。Office アプリをタブレットやスマートフォンにインストールしない場合、チーム サイトのファイルを表示することはできますが、編集はできません。 
     
-  - [Office 365 で Android 上に Office をインストールしてセットアップする](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Microsoft 365 を使用して Android に Office をインストールしてセットアップする](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [Office 365 で iPhone または iPad 上に Office をインストールしてセットアップする](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Microsoft 365 を使用して Office を iPhone または iPad にインストールしてセットアップする](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Windows Phone の Office をセットアップして Office 365 と連携させる](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Microsoft 365 を使用して Windows Phone で Office をセットアップする](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [作業ファイルの保存、同期、共有を行う (OneDrive for Business)](https://go.microsoft.com/fwlink/?LinkID=511458)
     

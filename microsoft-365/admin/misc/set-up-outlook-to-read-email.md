@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Windows と Mac の両方に対して Outlook で電子メールアカウントをセットアップする方法と、Office アプリのインストールおよびオンラインでのメールへのアクセスについて説明します。
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361238"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627790"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Outlook でメールの閲覧を設定する
 
-Office 365 サブスクリプションには Web ベースの Outlook が付属しますが、サブスクリプションに Office クライアント アプリが含まれる場合、Outlook も提供されるので、それを自分のコンピューターやデバイスにインストールできます。
+Microsoft 365 サブスクリプションには web ベースの Outlook が付属していますが、サブスクリプションに Office クライアントアプリが含まれている場合は、Outlook を使用して個人用のコンピューターまたはデバイスにインストールすることもできます。
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Outlook でメール アカウントを設定する
 
@@ -62,15 +62,15 @@ Office 365 サブスクリプションには Web ベースの Outlook が付属�
   
 ## <a name="how-do-i-access-my-mail-online"></a>メールにオンライン アクセスするには、どうすればよいですか。
 
-Office 365 にサインインした後、[ **Outlook**] を選択します。
+Microsoft 365 にサインインした後、[ **Outlook**] を選択します。
   
-![Outlook アプリが強調表示されている Office 365 ホームページ](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Outlook アプリが強調表示されている Microsoft 365 ホームページ](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-アプリが見つからない場合は、アプリ起動ツールから、[**すべてのアプリ**] を選択して、利用できる Office 365 アプリのアルファベット順の一覧を表示します。そこから、特定のアプリを検索できます。 
+探しているアプリが見つかりませんか? アプリ起動ツールで [**すべてのアプリ**] を選択すると、使用可能な Microsoft 365 アプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>自分のサブスクリプションに Office アプリが含まれていることはどうすれば確認できますか。
 
-Office 365 Business Premium と Office 365 Business に Office アプリが含まれています。 詳細については、「[Office 365 Business プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)」または「[Office 365 Enterprise プラン](https://go.microsoft.com/fwlink/p/?LinkId=800029)」を参照してください。
+Microsoft 365 Business Standard および Microsoft 365 のビジネス向けアプリには、Office アプリが含まれています。 詳細については、「 [Microsoft 365 for business プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)」または「 [Office 365 Enterprise プラン](https://go.microsoft.com/fwlink/p/?LinkId=800029)」を参照してください。
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>サブスクリプションの種類はどのような方法で確認できますか。
 

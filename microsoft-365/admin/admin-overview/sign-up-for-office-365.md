@@ -1,5 +1,5 @@
 ---
-title: Office 365 へのサインアップ方法 - 管理者向けヘルプ
+title: 管理者向けのサインアップヘルプ
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,20 +26,20 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Office 365 のサインアッププロセスを開始する前に把握しておくべき情報について説明します。 '
-ms.openlocfilehash: bd827a4cc57386127083111b0df556786d01f2cc
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 45f7603df814e2088506929d309266ef19ffc7ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352958"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623896"
 ---
-# <a name="how-to-sign-up-for-office-365---admin-help"></a>Office 365 へのサインアップ方法 - 管理者向けヘルプ
+# <a name="how-to-sign-up---admin-help"></a>管理者向けのサインアップヘルプ
 
 ::: moniker range="o365-worldwide"
 
-Office 365 for business にサインアップすると、チームは、お客様のビジネスで最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができます。
+Microsoft 365 for business にサインアップすることで、チームは、お客様のビジネスで最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができます。
   
-3つの Office 365 for business プランの概要を簡単に確認するか、または下にスクロールして詳細情報を確認してください。
+3つの Microsoft 365 for business プランの概要を簡単に確認するか、下にスクロールして詳細情報を参照してください。
 <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
@@ -48,7 +48,7 @@ Office 365 for business にサインアップすると、チームは、お客�
 
 ::: moniker range="o365-germany"
 
-Office 365 for business にサインアップすると、チームは、お客様のビジネスで最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができます。
+Microsoft 365 for business にサインアップすることで、チームは、お客様のビジネスで最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができます。
   
 お客様のビジネスに最適な3つのプランの概要を簡単にご覧ください。 または下にスクロールして詳細を確認してください。
 <br><br>
@@ -59,7 +59,7 @@ Office 365 for business にサインアップすると、チームは、お客�
 
 ::: moniker range="o365-21vianet"
 
-21Vianet が運用している Office 365 は、中国のセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft は、サービス自体を運用していません。 21Vianet は、サービスの配信を提供し、管理します。 21Vianet は、中国の最大のキャリア中立インターネットデータセンターサービスプロバイダーで、ホスティング、管理されたネットワークサービス、およびクラウドコンピューティングインフラストラクチャサービスを提供します。 Microsoft テクノロジにライセンスを付与することにより、21Vianet はローカルの Office 365 データセンターを利用して、中国にデータを保持しながら Office 365 サービスを使用することができます。 21Vianet は、サブスクリプションと課金サービスに加えて、サポートも提供します。
+21Vianet が運用している Office 365 は、中国のセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft は、サービス自体を運用していません。 21Vianet は、サービスの配信を提供し、管理します。 21Vianet は、中国の最大のキャリア中立インターネットデータセンターサービスプロバイダーで、ホスティング、管理されたネットワークサービス、およびクラウドコンピューティングインフラストラクチャサービスを提供します。 Microsoft テクノロジにライセンスを付与することにより、21Vianet がローカルの Microsoft データセンターを利用して、中国にデータを保持しながら Microsoft サービスを使用することができます。 21Vianet は、サブスクリプションと課金サービスに加えて、サポートも提供します。
   
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
@@ -75,11 +75,11 @@ Office 365 for business にサインアップすると、チームは、お客�
 
 購入する前に、サインアップする計画についてご検討ください。 これにより、後で発生する問題を防ぐことができます。
 
-Office 365 ビジネスプランの選択に関する短いビデオをご覧ください。<br><br>
+Microsoft 365 for business プランの選択に関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての[製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。
   
@@ -129,9 +129,9 @@ Office 365 ビジネスプランの選択に関する短いビデオをご覧く
   - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
 
     > [!NOTE]
-    > ここで入力するメール アドレスは、Office 365 メール アドレスではありません (後述のログオン名)。このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
+    > ここで入力する電子メールアドレスは、Microsoft 365 のメールアドレス (下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
   
-- **サインイン名 (ユーザー ID):** これは、すぐに開始できるように、最初の Office 365 メールアドレスになります。
+- **サインイン名 (ユーザー ID):** これは、すぐに開始できるように、最初の Microsoft 365 メールアドレスになります。
 
     これは、サインインに使用するメールアドレスです。 たとえば会社名が「Fourth Coffee」の場合には、ユーザー ID として rob@fourthcoffee.onmicrosoft.com を選ぶことができます。
 
@@ -146,4 +146,4 @@ Office 365 ビジネスプランの選択に関する短いビデオをご覧く
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

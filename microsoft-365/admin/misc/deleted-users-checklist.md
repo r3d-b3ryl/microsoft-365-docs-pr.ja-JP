@@ -19,25 +19,25 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: ユーザーの Office 365 アカウントを削除する際には、このチェックリストに従ってください。
-ms.openlocfilehash: 039cf832d1af8f93ed46a13f4a549aad3f11ef63
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: ユーザーの Microsoft 365 アカウントを削除する際には、このチェックリストに従ってください。
+ms.openlocfilehash: 822662e2e7900640663be8b637f6dc04984b79ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361428"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627874"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>クイック ヘルプ:削除されたユーザーのチェックリスト
 
 組織からユーザーを削除する場合があります。たとえば、組織を離れたユーザーを削除することができます。ユーザーの削除を行う前と後に行うべきことがいくつかあります。このクイック チェックリストは、その手順を示します。
   
-## <a name="remove-the-office-365-license-from-the-user"></a>ユーザーから Office 365 ライセンスを削除する
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>ユーザーから Microsoft 365 ライセンスを削除する
 
 ユーザーからライセンスを削除するには、ホームページまたは [**アクティブなユーザー** ] ページでユーザーを検索してから、そのユーザーを選択します。 [**ライセンスとアプリ**] タブで、ユーザーから削除するライセンスのチェックボックスをオフにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
   
 ## <a name="block-sign-in"></a>サインインのブロック
 
-Office 365 組織にサインインできないように、ユーザーをブロックすることができます。 ホーム ページで、または [ **アクティブなユーザー**] ページからユーザーを検索して選択できます。 ウィンドウの上部にあるユーザー名の下で、[**このユーザーをブロック**する] アイコンを選択し、[**このユーザーのサインインをブロック**する] チェックボックスをオンにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
+ユーザーが組織にサインインできないようにブロックすることができます。 ホーム ページで、または [ **アクティブなユーザー**] ページからユーザーを検索して選択できます。 ウィンドウの上部にあるユーザー名の下で、[**このユーザーをブロック**する] アイコンを選択し、[**このユーザーのサインインをブロック**する] チェックボックスをオンにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
   
 ## <a name="get-their-data"></a>ユーザーのデータを取得する
 
@@ -49,7 +49,7 @@ Office 365 組織にサインインできないように、ユーザーをブロ
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>解除したライセンスの処置
 
-新しい従業員または組織に参加した人がいる場合は、その人が Office 365 を使えるようにこのライセンスを割り当てることができます。 ホーム ページで、または [ **アクティブなユーザー**] ページからユーザーを検索して選択できます。 [**ライセンスとアプリ**] タブで、新しいユーザーに追加するライセンスのチェックボックスをオンにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
+組織に参加している新しい従業員または個人がある場合は、このライセンスを割り当てて、Microsoft 365 を使用できるようにすることができます。 ホーム ページで、または [ **アクティブなユーザー**] ページからユーザーを検索して選択できます。 [**ライセンスとアプリ**] タブで、新しいユーザーに追加するライセンスのチェックボックスをオンにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>ライセンスを削除してライセンス料金が発生しないようにする
 

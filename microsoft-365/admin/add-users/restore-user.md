@@ -1,5 +1,5 @@
 ---
-title: Office 365 でユーザーを復元する
+title: ユーザーを復元する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,27 +21,27 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 削除された Office 365 ユーザーアカウントおよびすべての関連データを復元する方法について説明します。
-ms.openlocfilehash: 385f7938f5e0ce1f3a580d40830124f77454f64d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 削除されたユーザーアカウントとすべての関連データを復元する方法について説明します。
+ms.openlocfilehash: 78766f1f6708665271361d542372aa945b0a7e29
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241572"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624060"
 ---
-# <a name="restore-a-user-in-office-365"></a>Office 365 でユーザーを復元する
+# <a name="restore-a-user"></a>ユーザーを復元する
    
 ユーザー アカウントを削除してから 30 日以内に復元すると、そのアカウントと関連するすべてのデータが復元されます。ユーザーは同じ職場や学校のアカウントでサインインできます。ユーザーのメールボックスは完全に復元されます。特定のユーザー アカウントを復元できなくなるまでの残り時間を知るには、[サポートにお問い合わせください](../contact-support-for-business-products.md)。
   
 いくつかのヒントをご紹介します。
   
-- アカウントに割り当てる Office 365 ライセンスが利用できることをご確認ください。
+- アカウントに割り当てるためのライセンスが利用可能であることを確認します。
     
 - Active Directory を使用している場合、ユーザー アカウントを復元する手順については、「[Office 365、Azure、Intune で削除済みのユーザー アカウントをトラブルシューティングする方法](https://support.microsoft.com/kb/2619308)」を参照してください。 
     
 ## <a name="restore-one-or-more-user-accounts"></a>1 つ以上のユーザー アカウントを復元する
 
-これらの手順を実行するには、Office 365 のグローバル管理者またはユーザー管理の管理者である必要があります。 
+これらの手順を実行するには、Microsoft 365 のグローバル管理者またはユーザー管理の管理者である必要があります。 
   
  
 ::: moniker range="o365-worldwide"
@@ -117,7 +117,7 @@ ms.locfileid: "42241572"
 
 プロキシ アドレスを含むユーザー アカウントを削除し、同じプロキシ アドレスを別のアカウントに割り当てた後、削除したアカウントを復元しようとすると、プロキシ アドレスの競合が発生します。この問題を解決するには、次の手順に従ってください。
   
-Office 365 でこれを行うには、[管理者権限](about-admin-roles.md)が必要です。 
+これを行うには、Microsoft 365 で[管理者アクセス許可](about-admin-roles.md)を持っている必要があります。 
   
 
 ::: moniker range="o365-worldwide"
@@ -148,4 +148,3 @@ Office 365 でこれを行うには、[管理者権限](about-admin-roles.md)が
 
 [ユーザーの削除](delete-a-user.md)
   
-

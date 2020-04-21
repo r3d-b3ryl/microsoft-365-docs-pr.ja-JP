@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633605"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625208"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -73,7 +73,7 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 |**iOS**|Outlook for iOS|[最新](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[最新](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
-|**Linux**|非サポート||
+|**Linux**|サポート対象外||
 |||
 
 
@@ -82,22 +82,22 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|OneDrive 同期クライアント|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 8.1|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 10|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows Phone 10|非サポート|非サポート|サポート対象外|サポート対象外|サポート対象外|
-|Android|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
-|iOS|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
+|Windows 7|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 8.1|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 10|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows Phone 10|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
+|Android|サポート|サポート|サポート|サポート|N/A|
+|iOS|サポート|サポート|サポート|サポート|N/A|
 |macOS|パブリック プレビュー|パブリック プレビュー|該当なし|該当なし|サポートされていません|
-|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
+|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
 
 <sup>*</sup>[OneDrive 同期クライアント](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e)での条件付きアクセスの使用方法について説明します。
 
-### <a name="office-365-client-support"></a>Office 365 クライアント サポート
-Office 365 クライアントサポートの詳細については、次の記事を参照してください。
-- [Office 365 クライアントアプリケーションのサポート-条件付きアクセス](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Office 365 クライアントアプリケーションのサポート-モバイルアプリケーション管理](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Office 365 クライアントアプリのサポート-モダン認証](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+### <a name="microsoft-365-client-support"></a>Microsoft 365 クライアントサポート
+クライアントサポートの詳細については、次の記事を参照してください。
+- [Microsoft 365 クライアントアプリケーションのサポート-条件付きアクセス](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Microsoft 365 クライアントアプリケーションのサポート-モバイルアプリケーション管理](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Microsoft 365 クライアントアプリのサポート-モダン認証](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>管理者アカウントを保護する
 Azure AD では、事前に構成された条件付きアクセスポリシーを使用して管理者アクセスの保護を開始する簡単な方法を提供します。 Azure AD で、**条件付きアクセス**に移動して、このポリシーを探します。**ベースラインポリシー: 管理者に MFA を必須にする (プレビュー)**。 このポリシーを選択し、[**すぐにポリシーを使用する**] を選択します。 
@@ -114,10 +114,10 @@ Azure AD では、事前に構成された条件付きアクセスポリシー�
 その他の推奨事項を以下に示します。
 - Azure AD Privileged Identity Management を利用し、永続的管理者アカウントの数を減らします。 「 [PIM の使用を開始する」を](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)参照してください。 
 - [Office 365 で特権アクセス管理を使用](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)して、既存の特権のある管理者アカウントを使用して機密性の高いデータにアクセスしたり、重要な構成設定にアクセスしたりすることができる侵害から組織を保護します。 
-- 管理者アカウントを使用するのは管理者のみです。 管理者は、管理者が通常使用しないユーザーアカウントを持っていて、自分のジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 [Office 365 の管理者](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)の役割には、office 365 サービスよりもはるかに多くの特権があります。
+- 管理者アカウントを使用するのは管理者のみです。 管理者は、管理者が通常使用しないユーザーアカウントを持っていて、自分のジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 [Microsoft 365 の管理者](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)の役割には、microsoft 365 サービスよりもはるかに多くの特権があります。
 - この[記事](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)で説明されているように、Azure AD で特権アカウントを保護するためのベストプラクティスに従います。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [共通 id およびデバイスアクセスポリシーを構成する](identity-access-policies.md)
 

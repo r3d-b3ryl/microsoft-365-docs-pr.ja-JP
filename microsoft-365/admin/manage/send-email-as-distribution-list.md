@@ -1,5 +1,5 @@
 ---
-title: Office 365 で配布リストとしてメールを送信する
+title: 配布リストとしてメールを送信する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Office 365 で配布リストとしてメールを送信する 方法の詳細をご確認ください。
-ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Microsoft 365 で配布リストとしてメールを送信する方法について説明します。
+ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361742"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628066"
 ---
-# <a name="send-email-as-a-distribution-list-in-office-365"></a>Office 365 で配布リストとしてメールを送信する
+# <a name="send-email-as-a-distribution-list"></a>配布リストとしてメールを送信する
 
-Office 365 では、ユーザーが配布リストとしてメールを送信できます。配布リストのメンバーであるユーザーが配布リストに送信されたメッセージに返信すると、メールは個別のユーザーからではなく、配布リストからであることが表示されます。このトピックでは、この操作を行う方法を示します。
+Microsoft 365 では、電子メールを配布リストとして送信できます。 配布リストのメンバーであるユーザーが配布リストに送信されたメッセージに返信すると、メールは個別のユーザーからではなく、配布リストからであることが表示されます。 このトピックでは、この操作を行う方法を示します。
   
 ## <a name="send-email-as-a-distribution-list"></a>配布リストとしてメールを送信する
 
-これらの手順を実行する前に、Office 365 配布リストにが追加されており、それに対して送信者アクセス許可が付与されていることを確認してください。
+これらの手順を実行する前に、Microsoft 365 配布リストにが追加されており、それに対する送信者アクセス許可が付与されていることを確認してください。
   
- **管理者**: 「 [office 365 ユーザーまたは連絡先をリストに追加](../email/add-user-or-contact-to-distribution-list.md)し、[メンバーが office 365 グループのトピックとして電子メールを送信できるように](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)し、配布リストに正しいユーザーを追加することを許可する」の手順に従っていることを確認してください。
+ **管理者**: 「 [microsoft 365 のユーザーまたは連絡先をリストに追加](../email/add-user-or-contact-to-distribution-list.md)し、[メンバーが microsoft 365 のグループのトピックとして電子メールを送信できるように](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)し、配布リストに正しいユーザーを追加することを許可する」の手順に従っていることを確認してください。
   
 1. Outlook on the web を開き、受信トレイに移動します。 
     

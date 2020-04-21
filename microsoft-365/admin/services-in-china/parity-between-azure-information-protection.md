@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用している Office 365 の Azure Information Protection と、中国のお客様に対して構成する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: a4eb8c3370a123b939fdccc53eec3905f79ee806
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3d24b450cc9ba9a6427732d408e35af1394b4a34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247939"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627656"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet が運用している Office 365 の Azure Information Protection 間のパリティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "42247939"
 
 次に示すのは、21Vianet が運用している Office 365 用の Azure Information Protection と、2007年 7 2019 月の商用オファーリングの間の既存のギャップです。
 
-- Information Rights Management (IRM) は、Office 365 ProPlus (ビルド11731.10000 以降) に対してのみサポートされています。 Office 2010、Office 2013、およびその他の Office 2016 バージョンはサポートされていません。
+- Information Rights Management (IRM) は、Microsoft 365 Apps for enterprise (ビルド11731.10000 以降) に対してのみサポートされています。 Office 2010、Office 2013、およびその他の Office 2016 バージョンはサポートされていません。
 
 - Active Directory Rights Management サービス (AD RMS) から Azure Information Protection への移行は現在使用できません。
   

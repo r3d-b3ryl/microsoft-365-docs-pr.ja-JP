@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 のライセンスの競合を解決する
+title: ライセンスの競合を解決する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Office 365 for business サブスクリプションのライセンスの競合を解決する方法について説明します。
-ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Microsoft 365 for business サブスクリプションのライセンスの競合を解決する方法について説明します。
+ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540917"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628090"
 ---
-# <a name="resolve-license-conflicts-in-office-365-for-business"></a>一般法人向け Office 365 のライセンスの競合を解決する
+# <a name="resolve-license-conflicts"></a>ライセンスの競合を解決する
 
 新しいユーザーを作成する前に、サブスクリプションに必要なライセンスを購入することをお勧めします。 ユーザー アカウントを作成したとき、新しい ユーザーにライセンスを割り当てることができます。 すべてのライセンスをユーザーに既に割り当てているが、一部のライセンスの期限が切れている場合、あるいは既にユーザーに割り当てられているライセンスを削除するとき、ライセンスの競合が発生します。 詳細については、「[サブスクリプションからライセンスを削除する](../../commerce/licenses/remove-licenses-from-subscription.md)」を参照してください。
   

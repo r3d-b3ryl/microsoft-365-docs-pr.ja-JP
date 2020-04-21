@@ -24,15 +24,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Microsoft 365 Business の自動操縦を使用してデバイスをアップロードする方法について説明します。 プロファイルは、デバイスまたはデバイスのグループに割り当てることができます。
-ms.openlocfilehash: 640e4af7cccde83c87d90a875c1d44dead7255ca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 Business Premium で自動操縦を使用してデバイスをアップロードする方法について説明します。 プロファイルは、デバイスまたはデバイスのグループに割り当てることができます。
+ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065986"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627396"
 ---
-# <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスの作成と編集
+# <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスを作成し編集する
 
 ## <a name="upload-a-list-of-devices"></a>デバイスの一覧をアップロードする
 
@@ -44,7 +44,7 @@ ms.locfileid: "42065986"
     
 - Windows の標準外の機能を使用していない新しいデバイス
 
-1. Microsoft 365 Business 管理センターで、[**デバイス** \> **自動操縦**] を選択します。
+1. Microsoft 365 管理センターで、[**デバイス** \> **自動操縦**] を選択します。
   
 2. [**自動操縦**] ページで、[**デバイス**] タブの [ \> **デバイスの追加**] を選択します。
     

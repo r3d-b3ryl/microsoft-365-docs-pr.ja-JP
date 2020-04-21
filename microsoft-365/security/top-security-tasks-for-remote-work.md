@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225955"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630799"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
 [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/)が主に自宅ベースの従業員をサポートしていて、突然お客様をサポートしている場合は、組織ができる限り安全に機能していることを確認することをお勧めします。 この記事では、セキュリティチームができる限り迅速に最も重要なセキュリティ機能を実装できるように、タスクに優先順位を付けます。 
 
 Microsoft のビジネスプランのいずれかを使用している小規模または中規模の組織の場合は、代わりに次のリソースを参照してください。
-- [Office 365とMicrosoft 365 Businessプランを安全にする10の方法](../admin/security-and-compliance/secure-your-business-data.md) 
+- [Office 365 および Microsoft 365 for business プランをセキュリティで保護するための10の方法のトップ](../admin/security-and-compliance/secure-your-business-data.md) 
 - [Microsoft 365 for a キャンペーン](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide)(Microsoft 365 Business の推奨セキュリティ構成を含む)
 
   
@@ -36,7 +36,7 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 ||**タスク**| すべての Office 365 Enterprise プラン|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1-d      |[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|pbm-2     | [Office 365 で脅威から保護する](#2-protect-against-threats-in-office-365) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|pbm-2     | [脅威からの保護](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |1/3      |  [Office 365 Advanced Threat Protection を構成する](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Azure Advanced Threat Protection (ATP) を構成する](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [Microsoft Advanced Threat Protection を有効にする](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -45,7 +45,7 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 |8       |  [Pc をデバイス管理に登録し、準拠している Pc を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [クラウド接続のためにネットワークを最適化する](#9-optimize-your-network-for-cloud-connectivity)  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [ユーザーをトレーニングする](#10-train-users) |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|# |[Microsoft Cloud App Security を使い始める](#11-get-started-with-microsoft-cloud-app-security) |   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|# |[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[脅威を監視し、処理を実行する](#12-monitor-for-threats-and-take-action) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -65,16 +65,16 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 
 |計画  |推奨事項  |
 |---------|---------|
-|Office 365 プラン (Azure AD P1 または P2 なし)     |[AZURE AD でセキュリティの既定値を有効に](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)します。 Azure AD のセキュリティの既定では、ユーザーと管理者に MFA が含まれています。   |
+|Microsoft 365 プラン (Azure AD P1 または P2 なし)     |[AZURE AD でセキュリティの既定値を有効に](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)します。 Azure AD のセキュリティの既定では、ユーザーと管理者に MFA が含まれています。   |
 |Microsoft 365 E3 (Azure AD P1 を使用)     | [一般的な条件付きアクセスポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を必須にする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (Azure AD P2 を使用)     | Azure AD Id 保護の利点を活用して、次の2つのポリシーを作成して、Microsoft の[推奨される条件付きアクセスポリシーと関連するポリシーセットの](../enterprise/identity-access-policies.md)実装を開始します。<br> - [サインインリスクが中または高の場合は MFA を必須にする](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [モダン認証をサポートしていないクライアントをブロックする](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [リスクの高いユーザーがパスワードを変更する必要がある](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
   
-## <a name="2-protect-against-threats-in-office-365"></a>2: Office 365 で脅威から保護する
+## <a name="2-protect-against-threats"></a>2: 脅威から保護します。
 
-すべての Office 365 プランには、さまざまな脅威保護機能が含まれています。 これらの機能に対する Bumping の保護は、数分で済みます。
+すべての Microsoft 365 プランには、さまざまな脅威保護機能が含まれています。 これらの機能に対する Bumping の保護は、数分で済みます。
 - マルウェア対策保護
 - 悪意のある Url およびファイルからの保護
 - フィッシング対策保護
@@ -181,11 +181,11 @@ VPN コンセントレーター、中央ネットワーク出口装置 (プロ�
 
 
 詳細については、ドキュメントの次のリソースを参照してください。
-- [概要: VPN 分割トンネリングを使用してリモートユーザーの Office 365 接続を最適化する](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [概要: VPN 分割トンネリングを使用してリモートユーザーの接続を最適化する](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [Office 365 向け VPN スプリット トンネリングの実装](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 このトピックに関する最近のブログ記事:
-- [リモートスタッフの Office 365 トラフィックをすばやく最適化する方法 & インフラストラクチャの負荷を軽減する](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [リモートスタッフのトラフィックをすばやく最適化する方法 & インフラストラクチャの負荷を軽減する](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [セキュリティ担当者のための別の方法と、今日の独自のリモート作業シナリオで先進のセキュリティ制御を実現する方法](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 
@@ -239,7 +239,7 @@ Microsoft 365 には、状態を監視し、適切な操作を実行するいく
 - [レポートを監視し、表示する](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [Microsoft 365 のセキュリティポータルを参照してください。](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 おめでとうございます! 最も重要なセキュリティ保護の一部を迅速に実装し、組織のセキュリティをさらに強化しています。 これで、脅威保護機能 (Microsoft Defender Advanced Threat Protection を含む)、データ分類と保護機能、および管理アカウントの保護をさらに進める準備ができました。 Microsoft 365 のセキュリティに関する推奨事項の詳細については、「 [microsoft 365 security For Business 意思決定者 (bdm)](Microsoft-365-security-for-bdm.md)」を参照してください。 
 

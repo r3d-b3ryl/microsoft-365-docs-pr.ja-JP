@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Exchange PowerShell を使用して、組織内のすべてまたは特定のユーザーの低優先メール機能を有効または無効にする方法について説明します。 '
-ms.openlocfilehash: 65aa614095ecbebaad3d7eb38af1e74166ce20ac
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b71fe20133c78974dc7d1c97a061121eded9f221
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255285"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628929"
 ---
 # <a name="configure-clutter-for-your-organization"></a>組織での低優先メールの構成
 
 > [!TIP]
 > [優先受信トレイ](../setup/configure-focused-inbox.md) が低優先メールに置き換わります。 詳細については[、「優先受信トレイに関する更新」および「低優先メール](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)機能」を参照してください。
   
-管理者は、Office 365 の低優先メール機能を管理する必要がある場合があります。 組織内のユーザーに低優先メール機能を有効/無効にするには、Exchange PowerShell を使用する必要があります。 (以下の手順を使用して、この機能をオン/オフにすることができます。 [Outlook での低優先/低優先メール機能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)) 
+管理者は、Microsoft 365 の低優先メール機能を管理する必要がある場合があります。 組織内のユーザーに低優先メール機能を有効/無効にするには、Exchange PowerShell を使用する必要があります。 (以下の手順を使用して、この機能をオン/オフにすることができます。 [Outlook での低優先/低優先メール機能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)) 
   
 Exchange PowerShell の使用の詳細については、 [「Powershell を使用](https://go.microsoft.com/fwlink/?LinkID=402831)して exchange online と Exchange [Online powershell に接続する](https://go.microsoft.com/fwlink/?LinkID=722415)」をご覧ください。 少なくとも Exchange サービス管理者の役割を持ち、PowerShell を使用して Exchange Online に接続できるアカウントを持っている必要があります。 
   
@@ -59,7 +59,7 @@ PowerShell を使用してユーザーを一括作成する場合、各ユーザ
 
 管理者は、Exchange PowerShell を使用して低優先メール機能を再度有効にすることができます。 この操作が行われると、優先受信トレイは無効になり、低優先メールが再び有効になります。 
   
- **一般法人向けの Office 365 サブスクリプションで、Outlook on the web を使用している場合:**
+ **Microsoft 365 Business Premium サブスクリプションを使用して web 上の Outlook を使用している場合:**
   
 - ユーザーの低優先メールが現在有効になっている場合: 
     

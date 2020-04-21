@@ -11,16 +11,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードについて学ぶことができます。
-ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081438"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630469"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
-管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードを使用して、Office 365 組織のメールフローに関連する問題を修正する傾向、洞察、およびアクションを発見できます。
+管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードを使用して、傾向、洞察を見つけて、組織内のメールフローに関連する問題を解決するアクションを実行できます。
 
 メールフローダッシュボードで使用できる洞察、レポート、およびウィジェットは次のとおりです。
 
@@ -50,9 +50,9 @@ ms.locfileid: "43081438"
 
 メールフローダッシュボードは次のように使用できます。
 
-- **Office 365 グローバル管理者**ロールのメンバー。
+- **グローバル管理者**ロールのメンバ。
 
-- **Office 365 Exchange 管理者**ロールのメンバー。
+- **Exchange 管理者**の役割のメンバー。
 
 - セキュリティ & コンプライアンスセンターの**メールフロー管理者ロール**のメンバー。 この役割が、グローバル管理者または Exchange 管理者の役割のメンバーではないユーザーに明示的に割り当てられている場合:
 
@@ -60,11 +60,11 @@ ms.locfileid: "43081438"
 
   - ユーザーには、メールフローダッシュボードに対する読み取り専用アクセス許可のみが付与されます。
 
-  - ユーザーは Office 365 管理ポータルにアクセスできません。
+  - ユーザーは、Microsoft 365 管理センターへのアクセス権を持ちません。
 
-Office 365 のグローバル管理者の役割の詳細については、「 [office 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
+グローバル管理者ロールの詳細については、「 [Microsoft 365 管理者ロールについ](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
 
-セキュリティ & コンプライアンスセンターの役割をユーザーに割り当てる方法については、「[ユーザーに Office 365 セキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+セキュリティ & コンプライアンスセンターの役割をユーザーに割り当てる方法については、「[ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>メールフローダッシュボードの検索先
 
@@ -72,4 +72,4 @@ Office 365 のグローバル管理者の役割の詳細については、「 [o
 
 2. [**メールフロー** ] を展開し、[**ダッシュボード**] を選択します。
 
-   ![Office 365 セキュリティ & コンプライアンスセンターのメールフローダッシュボード](../../media/mail-flow-dashboard-v2.png)
+   ![セキュリティ & コンプライアンスセンターのメールフローダッシュボード](../../media/mail-flow-dashboard-v2.png)

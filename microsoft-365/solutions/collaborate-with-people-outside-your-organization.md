@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 組織外のユーザーとのグループ作業用に Microsoft 365 を構成する方法について説明します。
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894955"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630727"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -23,7 +23,7 @@ Microsoft 365 の外部共有機能を使用すると、組織内のユーザー
 
 組織外のユーザーとの共同作業は、次の2つの主要コンポーネントで構成されます。
 
-- **共有を有効**にする-Azure Active Directory、Teams、Office 365 グループ、および SharePoint の間で共有コントロールを構成して、組織に対して必要なレベルの共有を許可します。
+- **共有を有効**にする-Azure Active Directory、Teams、Microsoft 365 グループ、および SharePoint の間で共有コントロールを構成して、組織で必要とされるレベルの共有を許可します。
 - **追加のセキュリティを有効**にします。組織外のユーザーによる認証を要求するように基本の共有機能を構成することはできますが、Microsoft 365 には、データを保護し、外部共有している間にガバナンスポリシーを維持するために役立つ、多くの追加のセキュリティおよびコンプライアンス機能が用意されています。
 
 ## <a name="enable-sharing"></a>共有を有効にする
@@ -46,7 +46,7 @@ Microsoft 365 で使用可能なゲスト共有設定の包括的な説明につ
 
 ## <a name="collaborate-with-partner-companies"></a>パートナー企業との共同作業
 
-他の組織から多数のゲストが参加している大規模なプロジェクトで作業している場合、またはゲストが頻繁に変更されている、継続的なベンダーの関係がある場合は、Azure Active Directory の資格管理を使用してゲスト管理を簡略化できます。パートナー企業がその責任で共有できるようにします。 詳細について[は、「管理されたゲストでの B2B エクストラネットの作成](b2b-extranet.md)」を参照してください。
+他の組織から多数のゲストが関係する大規模なプロジェクトで作業している場合や、ゲストが頻繁に変更される可能性のある継続的なベンダーの関係がある場合は、Azure Active Directory の資格管理を使用して、ゲスト管理を簡略化し、パートナー会社がその責任で共有できるようにすることができます。 詳細について[は、「管理されたゲストでの B2B エクストラネットの作成](b2b-extranet.md)」を参照してください。
 
 ## <a name="limit-sharing"></a>共有を制限する
 

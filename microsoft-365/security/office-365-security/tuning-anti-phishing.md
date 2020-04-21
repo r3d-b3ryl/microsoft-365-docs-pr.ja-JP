@@ -1,5 +1,5 @@
 ---
-title: Office 365 でフィッシング対策保護を調整する
+title: フィッシング対策保護の調整
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,20 +12,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージがどのように使用されたのかや、今後のフィッシングメッセージを回避するために何を行う必要があるかを特定する方法を学習できます。
-ms.openlocfilehash: 93fdc17379627a2d595a3861ae3f8f1f9dcefeeb
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: a27d41b01069e763ea2b3baab6576c8046b0f8e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528991"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631135"
 ---
-# <a name="tune-anti-phishing-protection-in-office-365"></a>Office 365 でフィッシング対策保護を調整する
+# <a name="tune-anti-phishing-protection"></a>フィッシング対策保護の調整
 
-Office 365 には、既定で有効になっているさまざまなフィッシング対策機能が用意されていますが、一部のフィッシングメッセージが依然としてメールボックスに届く可能性があります。 このトピックでは、フィッシングメッセージが通過した理由を検出するために実行できることと、誤って事態を発生さ_せず_に、Exchange Online 組織のフィッシング対策設定を調整する方法について説明します。
+Microsoft 365 には、既定で有効になっているさまざまなフィッシング対策機能が付属していますが、一部のフィッシングメッセージは依然としてメールボックスに到達する可能性があります。 このトピックでは、フィッシングメッセージが通過した理由を検出するために実行できることと、誤って事態を発生さ_せず_に、Exchange Online 組織のフィッシング対策設定を調整する方法について説明します。
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>最初に、侵害されたアカウントを処理して、より多くのフィッシングメッセージを取得することを禁止していることを確認してください。
 
-フィッシングメッセージの結果として受信者のアカウントが侵害された場合は、「 [Office 365 で侵害された電子メールアカウントに応答する](responding-to-a-compromised-email-account.md)」の手順を実行します。
+フィッシングメッセージの結果として受信者のアカウントが侵害された場合は、「 [Microsoft 365 で侵害された電子メールアカウントに応答する](responding-to-a-compromised-email-account.md)」の手順を実行します。
 
 サブスクリプションに Advanced Threat Protection (ATP) が含まれている場合は、 [Office 365 脅威インテリジェンス](office-365-ti.md)を使用して、フィッシングメッセージを受信した他のユーザーを識別できます。 フィッシングメッセージをブロックするための追加のオプションがあります。
 
@@ -39,7 +39,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>フィッシングメッセージを Microsoft に報告する
 
-フィッシングメッセージの報告は、Office 365 のすべてのお客様を保護するために使用されるフィルターを調整するのに役立ちます。 手順については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+フィッシングメッセージの報告は、Microsoft 365 のすべてのお客様を保護するために使用されるフィルターを調整するのに役立ちます。 手順については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="inspect-the-message-headers"></a>メッセージヘッダーを検査する
 
@@ -49,15 +49,15 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 ## <a name="best-practices-to-stay-protected"></a>保護を維持するためのベストプラクティス
 
-- Office 365 組織のセキュリティ設定を評価するために、月単位で、[セキュリティで保護されたスコア](../mtp/microsoft-secure-score.md)を実行します。
+- 組織のセキュリティ設定を評価するために、月単位で、[セキュリティで保護されたスコア](../mtp/microsoft-secure-score.md)を実行します。
 
 - [スプーフィングインテリジェンスレポート](learn-about-spoof-intelligence.md)を定期的にレビューし、疑わしいメッセージをユーザーの迷惑メールフォルダーに配信する代わりに、[スプーフィングインテリジェンスを構成](set-up-anti-phishing-policies.md#spoof-settings)して、疑わしいメッセージを**検疫**します。
 
 - [脅威保護状態レポート](view-reports-for-atp.md#threat-protection-status-report)を定期的に確認します。
 
-- ユーザーによっては、スパム対策ポリシーで許可された送信者または許可されたドメインの一覧に独自のドメインを配置することによって、フィッシングメッセージを不用意に許可することがあります。 これを行う場合は、細心の注意を払う必要があります。 この構成では、一部の正当なメッセージが許可されますが、通常は Office 365 スパムまたはフィッシングフィルターによってブロックされる悪意のあるメッセージも許可されます。
+- ユーザーによっては、スパム対策ポリシーの [送信者を許可する] または [ドメインを許可する] の一覧に独自のドメインを設定することで、フィッシングメッセージを誤って許可することがあります。 これを行う場合は、細心の注意を払う必要があります。 この構成では、一部の正当なメッセージが許可されますが、通常はスパムやフィッシングフィルターによってブロックされる悪意のあるメッセージも許可されます。
 
-  ドメイン内の送信者によっ365て禁止されている正当なメッセージ (誤検知) を処理する最善の方法は、Office 365 の_すべて_の電子メールドメインについて、DNS の SPF、dkim、および DMARC レコードを完全に完全に構成することです。
+  ドメイン内の送信者に365よってブロックされる正当なメッセージを処理するための最善の方法は、_すべて_の電子メールドメインについて、DNS の SPF、dkim、および DMARC レコードを完全に完全に構成することです。
 
   - SPF レコードが、ドメイン内の送信者の電子メールの_すべて_のソースを識別していることを確認します (サードパーティのサービスを忘れないでください)。
 
@@ -65,11 +65,11 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
   構成手順については、以下を参照してください。
   
-  - [スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [スプーフィングを防止するために SPF をセットアップする](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  - [DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)
+  - [DKIM を使用して、カスタムドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)
 
-  - [DMARC を使用して Office 365 で電子メールを検証する](use-dmarc-to-validate-email.md)
+  - [DMARC を使用してメールを検証する](use-dmarc-to-validate-email.md)
 
 - 可能な限り、自分のドメインのメールを Office 365 に直接配信することをお勧めします。 言い換えると、Office 365 ドメインの MX レコードを Office 365 にポイントします。 Exchange Online Protection (EOP) は、メールが Office 365 に直接配信される場合に、クラウドユーザーに最高の保護を提供することができます。 EOP の前にサードパーティの電子メールの検疫システムを使用する必要がある場合は、コネクタの拡張フィルターを使用します。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 

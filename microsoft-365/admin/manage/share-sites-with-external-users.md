@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '組織外のユーザーとサイトやファイルを共有する方法を説明します。 '
-ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610574"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628030"
 ---
 # <a name="share-sites-and-files-externally"></a>サイトとファイルを外部で共有する
 
@@ -54,7 +54,7 @@ ms.locfileid: "42610574"
 |ドキュメントを共有するが、認証を要求しない。  <br/> |機密でも極秘でもないドキュメントへのリンクを組織外の人々と共有し、これを表示したり、フィードバックで更新したりできるようにする。 これらのユーザーは、サイト上のコンテンツへのアクセスを必要としない。  <br/> |
    
 > [!IMPORTANT]
-> 外部共有を無効にすると、現在アクセスできる組織外のユーザーはアクセスできなくなります。 後で外部共有を再び有効にすると、これらのユーザーがアクセスできるようになります。 ユーザーが共有コンテンツにアクセスできないようにするには、[Office 365 グループからそのユーザーを削除するか](/office365/admin/create-groups/add-or-remove-members-from-groups)、サイトからアクセス許可を削除するか、[ユーザーとのファイルまたはフォルダーの共有を停止](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)します。 
+> 外部共有を無効にすると、現在アクセスできる組織外のユーザーはアクセスできなくなります。 後で外部共有を再び有効にすると、これらのユーザーがアクセスできるようになります。 ユーザーが共有コンテンツにアクセスできないようにするには、そのユーザーを[Microsoft 365 グループから削除](/office365/admin/create-groups/add-or-remove-members-from-groups)するか、サイトからアクセス許可を削除するか、または[ファイルまたはフォルダーの共有を停止](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)します。 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>組織レベルで外部共有を有効にする
 

@@ -1,5 +1,5 @@
 ---
-title: Yahoo! Small Business で Office 365 用の DNS レコードを作成する
+title: Yahoo! Small Business for Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: Yahoo! で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを設定する方法について説明します。 Office 365 用 Small Business。
-ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Yahoo! で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを設定する方法について説明します。 Microsoft の中小企業。
+ms.openlocfilehash: 12efa8f7056f0d06cbf78b2486ea67dc85d2e705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211040"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629157"
 ---
-# <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>Yahoo! Small Business で Office 365 用の DNS レコードを作成する
+# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Yahoo! Small Business for Microsoft
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
   
@@ -89,5 +89,5 @@ Aabaco にアカウントを作成するには、この記事の手順を実行�
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-Aabaco アカウントを作成したので、[Aabaco Small Business に Office 365 用 DNS レコードを作成](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)できます。
+Aabaco アカウントの作成が完了したので、 [Microsoft の Aabaco Small Business で DNS レコードを作成](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)することができます。
   

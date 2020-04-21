@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Windows 自動操縦を使用して、従業員が使用できるように、自社の新しい Windows 10 デバイスをセットアップする方法について説明します。
-ms.openlocfilehash: 3b1cf297914862aaa74fdf9a8bb7290d00f73b1d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561582"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627496"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
@@ -49,7 +49,7 @@ Windows 自動操縦を使用して、自分の組織のために**新しい**wi
 
 デバイスグループまたはプロファイルをまだ作成していない場合は、まず、ステップバイステップガイドを使用して開始することをお勧めします。 ガイドを使用せずに、[デバイスを追加](create-and-edit-autopilot-devices.md)したり、[プロファイルを割り当て](create-and-edit-autopilot-profiles.md)たりすることもできます。 
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
 
 2. 左側のナビゲーションウィンドウで、[**デバイス** \> **自動操縦**] を選択します。
 
@@ -81,7 +81,7 @@ Windows 自動操縦を使用して、自分の組織のために**新しい**wi
     
     - 会社のブランドを含む、サインイン エクスペリエンスを作成します。
     
-    - デバイスを Azure Active Directory アカウントに接続し、Microsoft 365 Business によって管理されるように自動的に登録します。
+    - デバイスを Azure Active Directory アカウントに接続し、Microsoft 365 Business Premium によって管理されるように自動的に登録します。
     
     詳細については、「[自動操縦プロファイルの設定につい](autopilot-profile-settings.md)て」を参照してください。 
     

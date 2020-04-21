@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用する方法を理解します。
 ms.custom: okr_smb
-ms.openlocfilehash: 65eae949ccc29e92821afc75e90781f7827442dd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 1e92247deaabf292fa82024d6654aefda7a73f6e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209726"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628258"
 ---
 # <a name="what-is-a-domain"></a>ドメインとは
 
@@ -33,17 +33,17 @@ ms.locfileid: "43209726"
   
 ドメインとは、メール アドレスの **@@ 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。 の後に表示される固有の名前です。 通常は、「*yourbusiness.<span>com*」や「*stateuniversity.<span>edu*」のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。 
   
-Office 365 で「*rob@contoso.<span>com*」のようなカスタム ドメインを使用すると、ブランドの信頼性や認知度を高めることができます。 
+Rob@contoso のようなカスタムドメインを使用する *。<span>* Microsoft 365 を使用している com は、ブランドの信頼度を築き、認識するために役立ちます。 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>最適なエクスペリエンスの選択
 
  **新しいドメインを購入する:**
   
-Office 365 を使用して新しいドメインを購入します。すべてを設定します。 [詳細情報](buy-a-domain-name.md)
+Microsoft 365 を使用して新しいドメインを購入する-すべてが設定されます。 [詳細情報](buy-a-domain-name.md)
   
  **既に所有しているドメインを使用する:**
   
-「*you@yourcompany.<span>com*」などのドメインを既に所有している場合は、そのドメインを追加してすぐに OneDrive と Office アプリを使用できます。 メールと Skype for Business はわずか数分でセットアップできます。 
+You@yourcompany のようなドメインを既に所有している場合 *。<span>com*これを追加して OneDrive や Microsoft アプリをすぐに使用することができます。 メールと Skype for Business はわずか数分でセットアップできます。 
   
 > [!TIP]
 > ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)
@@ -54,6 +54,6 @@ Office 365 を使用して新しいドメインを購入します。すべてを
   
 ## <a name="feeling-stuck"></a>困ったときは
 
-「[一般法人向け Office 365 のサポートへのお問い合わせ](../contact-support-for-business-products.md)」を参照して Office 365 サポートにお問い合わせください。
+Microsoft サポートに連絡[する-ドメインの設定に関するヘルプを取得する](../contact-support-for-business-products.md)
   
 

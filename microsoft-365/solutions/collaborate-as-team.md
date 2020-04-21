@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Teams でゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 54bf52eebc77e1cce8e1c05a708572d7d1e7fdae
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604740"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630751"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
@@ -68,17 +68,17 @@ Teams ゲストアクセス設定を設定するには
 > [!NOTE]
 > Teams のゲスト設定が有効になるまでに最大で24時間かかる場合があります。
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 グループのゲスト設定
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 グループのゲスト設定
 
-Teams では、チームメンバーシップに Office 365 グループを使用します。 Teams でゲストアクセスを機能させるには、Office 365 グループのゲスト設定をオンにする必要があります。
+Teams では、チームメンバーシップに Microsoft 365 グループを使用します。 Teams でゲストアクセスを機能させるには、Microsoft 365 Groups のゲスト設定をオンにする必要があります。
 
-![Microsoft 365 管理センターにおける Office 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 グループのゲスト設定 Microsoft 365 管理センターのスクリーンショット](../media/office-365-groups-guest-settings.png)
 
-Office 365 グループのゲスト設定を設定するには
+Microsoft 365 グループのゲスト設定を設定するには
 
 1. Microsoft 365 管理センターの左側のナビゲーションで、[**設定**] を展開します。
 2. [**サービス] [& アドイン**] をクリックします。
-3. リストで、[ **Office 365 グループ**] をクリックします。
+3. 一覧で、[ **Microsoft 365 Groups**] をクリックします。
 4. [組織外のユーザーにグループの**コンテンツへのアクセス**を許可する] および [**グループの所有者に組織外のユーザーをグループに追加する**] チェックボックスの両方がオンになっていることを確認します。
 5. 変更を加えた場合は、[**変更の保存**] をクリックします。
 
@@ -173,6 +173,6 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)

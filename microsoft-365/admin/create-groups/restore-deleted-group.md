@@ -1,5 +1,5 @@
 ---
-title: 削除された Office 365 グループを復元する
+title: 削除されたグループを復元する
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: 削除された Office 365 グループを復元する方法について説明します。
-ms.openlocfilehash: 2efd8c35286d224c6a3ed185043c82ab4b8e954e
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: 削除された Microsoft 365 グループを復元する方法について説明します。
+ms.openlocfilehash: a0e7aef090528b3fa183fe08f9c4d06c86f94a10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547534"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630033"
 ---
-# <a name="restore-a-deleted-office-365-group"></a>削除済みの Office 365 グループを復元する
+# <a name="restore-a-deleted-group"></a>削除されたグループを復元する
 
 グループを削除した場合、既定では30日間保持されます。 この30日の期間は、引き続きグループを復元できるため、"ソフト削除" と見なされます。 30日後、グループとそれに関連するコンテンツは完全に削除され、復元することはできません。
 
 グループを復元すると、次のコンテンツが復元されます。
   
-- Azure Active Directory (AD) Office 365 のグループオブジェクト、プロパティ、およびメンバー。
+- Azure Active Directory (AD) Microsoft 365 グループオブジェクト、プロパティ、およびメンバー。
     
 - グループの電子メールアドレス。
     
@@ -46,13 +46,14 @@ ms.locfileid: "43547534"
     
 - Teams
 
-- Yammer グループおよびグループコンテンツ (Yammer から Office 365 グループが作成されている場合)
+- Yammer グループとグループのコンテンツ (Yammer から Microsoft 365 グループが作成されている場合)
 
 ## <a name="restore-a-group-that-you-own-by-using-outlook"></a>Outlook を使用して自分が所有するグループを復元する
 
-Office 365 グループの所有者である場合は、次の手順に従ってグループを自分の Outlook で復元できます。
+Microsoft 365 グループの所有者である場合は、次の手順に従ってグループを自分の Outlook で復元できます。
 
 1. [[削除さ](https://outlook.office.com/people/group/deleted)れたグループ] ページで、[**グループ**] ノードの下の [**グループの管理**] オプションを選択し、[**削除済み**] を選択します。
+
 2. 復元するグループの横にある [**復元**] タブをクリックします。
 
 削除されたグループがここに表示されない場合は、管理者に問い合わせてください。
@@ -65,7 +66,7 @@ Office 365 グループの所有者である場合は、次の手順に従って
 2. [**グループ**] を展開し、[**削除済みグループ**] をクリックします。
 3. 復元するグループを選択し、[**グループの復元**] をクリックします。
   
-## <a name="permanently-delete-an-office-365-group"></a>Office 365 グループを完全に削除する
+## <a name="permanently-delete-a-microsoft-365-group"></a>Microsoft 365 グループを完全に削除する
 
 場合によっては、30日間のソフト削除期間が経過するのを待たずに、グループを完全に削除する必要があります。 それを行うには、PowerShell を起動し、次のコマンドを実行して、グループのオブジェクト ID を取得します。
   
@@ -86,13 +87,13 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 
 グループが正常に削除されたことを確認するには、 *Get AzureADMSDeletedGroup*  コマンドレットをもう一度実行して、グループが論理的に削除されたグループの一覧に表示されなくなったことを確認します。グループとそのすべてのデータが完全に削除されるまで 24 時間ほどかかる場合があります。 
   
-## <a name="got-questions-about-office-365-groups"></a>Office 365 についてご質問がある場合
+## <a name="got-questions-about-microsoft-365-groups"></a>Microsoft 365 グループに関する質問
 
-[Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)を参照して、Office 365 グループに関する質問を投稿し、会話に参加してください。 
+Microsoft[技術コミュニティ](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)にアクセスして、microsoft 365 グループに関する質問を投稿し、会話に参加してください。 
   
 ## <a name="related-articles"></a>関連記事
 
-[PowerShell で Office 365 グループを管理する](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
   
 [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   

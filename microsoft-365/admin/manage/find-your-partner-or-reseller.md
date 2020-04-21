@@ -1,5 +1,5 @@
 ---
-title: Office 365 パートナーまたは販売店をさがす
+title: パートナーまたは販売店を検索する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,23 +21,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: '新しい Office 365 パートナーを検索する方法、または過去に協力してきたパートナーの連絡先情報を取得する方法について説明します。 '
-ms.openlocfilehash: 86c61b6217a1be6106334cb1378a23d8cbd8c2b8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '新しい Microsoft 365 パートナーを検索する方法と、過去に協力してきたパートナーの連絡先情報を取得する方法について説明します。 '
+ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254973"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628186"
 ---
-# <a name="find-your-office-365-partner-or-reseller"></a>Office 365 パートナーまたは販売店をさがす
+# <a name="find-your-partner-or-reseller"></a>パートナーまたは販売店を検索する
 
-管理者は、パートナーと協力して、Microsoft Open Volume Licensing プログラムを使用して Office 365 サブスクリプションの購入、アクティブ化、更新を行うことができます。 
+管理者は、パートナーと協力して microsoft の Open Volume Licensing プログラムを使用して Microsoft 365 サブスクリプションを購入、アクティブ化、および更新することができます。 
   
  **開いているボリュームライセンスがあるかどうかがわからない場合** [Microsoft Open Programs の概要](https://go.microsoft.com/fwlink/p/?LinkId=613298)を確認します。
   
 ## <a name="find-a-new-partner-or-reseller"></a>新しいパートナーまたは販売店をさがす
 
-Office 365 をオープン ボリューム ライセンスで購入または更新する準備ができた場合、またはパートナーとの作業について単に詳細が必要な場合は、次のオプションを選択します。 
+Open Volume Licensing を使用して Microsoft 365 を購入または更新する準備ができている場合、またはパートナーとの共同作業に関する詳細情報が必要な場合は、次のオプションを選択してください。 
   
 - [Microsoft PinPoint を使用してパートナーを検索する](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     

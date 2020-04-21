@@ -1,5 +1,5 @@
 ---
-title: Hostgator で Office 365 用の DNS レコードを作成する
+title: Microsoft の Hostgator で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: ドメインを確認して、電子メール、Skype for Business Online、および Office 365 用のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: a5a41e5c1eba9d99d1927192472da7746277dd38
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Hostgator にあるその他のサービスの DNS レコードをセットアップする方法について説明します。
+ms.openlocfilehash: 9ac14d516dff6e84dd0fb06a6632376d475689fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211717"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629529"
 ---
-# <a name="create-dns-records-at-hostgator-for-office-365"></a>Hostgator で Office 365 用の DNS レコードを作成する
+# <a name="create-dns-records-at-hostgator-for-microsoft"></a>Microsoft の Hostgator で DNS レコードを作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
   
@@ -36,12 +36,12 @@ ms.locfileid: "43211717"
 > [!IMPORTANT]
 > この記事に記載されている他の手順のいずれかを使用して DNS レコードを追加する前に、最初の procedurebelow を実行して、[ドメインをホスティングアカウントにする](#point-your-domain-to-your-hosting-account)必要があります。 
 
-これらの変更のすべてを Hostgator で行うと、使用しているドメインが、Office 365 のサービスで機能するように設定されます。
+Hostgator でこれらの変更をすべて行った後、ドメインは Microsoft サービスで機能するように設定されます。
   
-Office 365 での Web サイト向け Web ホスティングと DNS の詳細については、「[Office 365 でのパブリック Web サイトの使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)」を参照してください。
+Microsoft を使用した web サイトのホストと DNS の詳細については、「 [microsoft とのパブリック web サイトの使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)」を参照してください。
   
 > [!NOTE]
-> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
   
 ## <a name="point-your-domain-to-your-hosting-account"></a>ドメインがホスティング アカウントを指すようにする
 <a name="BKMK_PointDomain"> </a>
@@ -68,9 +68,9 @@ Office 365 での Web サイト向け Web ホスティングと DNS の詳細に
 <a name="BKMK_verify"> </a>
 
 > [!IMPORTANT]
-> この手順の前に、まず、この記事の最初のセクション「[ドメインをホスティング アカウントにポイントする](#point-your-domain-to-your-hosting-account)」の操作を行う必要があります。 
+> この手順を進める前に、この記事の最初のセクション「[ドメインがホスティング アカウントを指すようにする](#point-your-domain-to-your-hosting-account)」に記載されている手順の操作を行う必要があります。 
   
-Office 365 でドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Office 365 に対してドメインを所有していることを確認することができます。
+ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -80,7 +80,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
-    > cPanel をドメインに関連付けるには、Hostgator でのホスティング アカウントが必要です。 Office 365 を使い始めるには、Hostgator からホスティング アカウントを購入するか、[ネームサーバーの再委任を行ってポイント先を Office 365 にします](change-nameservers-at-hostgator.md)。 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
   
 2. [**コントロールパネル**] ページの [**ドメイン**] 領域で、[ **Advanced Zone Editor**] を選択します。
     
@@ -91,15 +91,15 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. [ **Add Record** ] を選択します。
     
 5. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
+これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft に戻ってレコードを要求します。
   
-Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
+Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
   
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -107,12 +107,12 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
-4. [**ドメインの確認**] ページで、[**確認**] を選択します。
+4. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
-> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>MX レコードを追加して、自分のドメインのメールが Office 365 に届くようにする
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにする
 <a name="BKMK_add_MX"> </a>
 
 > [!IMPORTANT]
@@ -123,7 +123,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
-    > cPanel をドメインに関連付けるには、Hostgator でのホスティング アカウントが必要です。 Office 365 を使い始めるには、Hostgator からホスティング アカウントを購入するか、[ネームサーバーの再委任を行ってポイント先を Office 365 にします](change-nameservers-at-hostgator.md)。 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
   
 2. [**コントロールパネル**] ページの [**電子メール**] 領域で、[ **MX Entry**] を選択します。
     
@@ -136,7 +136,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:**\< Office 365 アカウントから*ドメインキー* \>を取得します。    [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:**\< Microsoft アカウントから*ドメインキー* \>を取得します。    [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. [ **Add New Record**] を選択します。
    
@@ -144,7 +144,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
 7. その他の MX レコードが [ **MX Records**] セクションにある場合は、それぞれのレコードを削除します。 
 
     
-## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Office 365 に必要な 6 つの CNAME レコードを追加する
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な6つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
 > [!IMPORTANT]
@@ -155,7 +155,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
-    > cPanel をドメインに関連付けるには、Hostgator でのホスティング アカウントが必要です。 Office 365 を使い始めるには、Hostgator からホスティング アカウントを購入するか、[ネームサーバーの再委任を行ってポイント先を Office 365 にします](change-nameservers-at-hostgator.md)。 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
   
 2. [**コントロールパネル**] ページの [**ドメイン**] 領域で、[ **Advanced Zone Editor**] を選択します。
     
@@ -186,7 +186,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが 1 つの SPF レコードになるようにします。 次に例を示します。 参考にしてください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインに対して既に SPF レコードがある場合は、Microsoft 用に新しいを作成しないでください。 代わりに、値のセットを含む1つの SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 これらの[外部ドメインネームシステムレコードを Microsoft に対して](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)確認します。 SPF レコードを確認するには、[SPF の検証ツール](../setup/domains-faq.md)を使うことができます。 
   
 > [!IMPORTANT]
 > この手順を進める前に、この記事の最初のセクション「[ドメインがホスティング アカウントを指すようにする](#point-your-domain-to-your-hosting-account)」に記載されている手順の操作を行う必要があります。 
@@ -196,7 +196,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
-    > cPanel をドメインに関連付けるには、Hostgator でのホスティング アカウントが必要です。 Office 365 を使い始めるには、Hostgator からホスティング アカウントを購入するか、[ネームサーバーの再委任を行ってポイント先を Office 365 にします](change-nameservers-at-hostgator.md)。 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
   
 2. [**コントロールパネル**] ページの [**ドメイン**] 領域で、[ **Advanced Zone Editor**] を選択します。
     
@@ -210,7 +210,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. [ **Add Record** ] を選択します。
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Office 365 に必要な 2 つの SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft に必要な2つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -221,7 +221,7 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
-    > cPanel をドメインに関連付けるには、Hostgator でのホスティング アカウントが必要です。 Office 365 を使い始めるには、Hostgator からホスティング アカウントを購入するか、[ネームサーバーの再委任を行ってポイント先を Office 365 にします](change-nameservers-at-hostgator.md)。 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
   
 2. [**コントロールパネル**] ページの [**ドメイン**] 領域で、[ **Advanced Zone Editor**] を選択します。
 
@@ -246,4 +246,4 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     [ **Add a record** ] セクションで、表の次の行の値を使用してレコードを作成し、[ **add record** ] をもう一度選択してそのレコードを完成させます。 
     
 > [!NOTE]
-> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 

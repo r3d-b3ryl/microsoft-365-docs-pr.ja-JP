@@ -1,5 +1,5 @@
 ---
-title: Office 365 で標準または対象指定リリース オプションを設定する
+title: 標準または対象指定リリースオプションを設定する
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,30 +21,30 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品および機能の更新プログラムのリリースオプションをセットアップする方法について説明します。
-ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361802"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628114"
 ---
-# <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Office 365 で標準または対象指定リリース オプションを設定する
+# <a name="set-up-the-standard-or-targeted-release-options"></a>標準または対象指定リリースオプションを設定する
 
-Office 365 では、新しい製品の更新プログラムと機能をリリースと同時に受信できます。数年ごとに高い費用をかけて更新を行う必要はありません。組織でこれらの更新プログラムを受信する方法を管理できます。たとえば、組織で先に更新プログラムを受信するように先行リリースにサインアップできます。お客様は、特定の個人のみがその更新プログラムを受信するということを指定できます。そうでなければ、既定のリリース スケジュールどおりのままにして、後で更新プログラムを受信することもできます。この記事では、さまざまなリリース オプションと、組織に使用する方法について説明します。
+Microsoft 365 では、数年ごとに費用のかかる更新プログラムを実行する代わりに、新しい製品の更新プログラムと機能が提供されます。 組織がこれらの更新を受信する方法を管理できます。 たとえば、初期リリースにサインアップして、組織が最初に更新を受け取るようにすることができます。 特定の個人のみが更新を受信するように指定できます。 または、[既定のリリーススケジュール] をそのまま使用し、更新プログラムを後で受け取ることができます。 この記事では、さまざまなリリースオプションと、それらを組織で使用する方法について説明します。
   
 > [!IMPORTANT]
-> この記事で説明する Office 365 更新プログラムは、Office 365、SharePoint Online、Exchange Online に適用されますが、Skype for Business、および関連のサービスには適用されません。これらのリリース オプションは、Office 365 への変更をリリースするための、対象を限定したベスト エフォート型の方法ですが、常に、またすべての更新プログラムに対して保証されるわけではありません。 
+> この記事に記載されている Microsoft 365 更新プログラムは、Microsoft 365、SharePoint Online、および Exchange Online に適用されます。 これらは、Skype for Business および関連するサービスには適用されません。 これらのリリースオプションは、Microsoft 365 への変更をリリースするための最善の方法ですが、常に、またはすべての更新プログラムに対して保証することはできません。 
   
 ## <a name="how-it-works---release-validation"></a>しくみ - リリースの検証
 
-新しいリリースはすべて、最初に機能チームによってテストおよび検証され、次に Office 365 機能チーム全体によって、その後にすべての Microsoft が評価されます。 内部テストと検証が終わったら、次の手順は参加しているお客様に向けた **対象指定リリース** (以前は先行リリースと呼ばれていました) です。 各リリース リングで、Microsoft はフィードバックを収集し、主要な利用状況メトリックを監視することでさらに品質を検証します。 この革新的な一連の検証は、全世界のリリースの信頼性を最大限に高めるためにあります。 各リリースを、次の図で示します。 
+新しいリリースはすべて、最初に機能チームによってテストおよび検証され、次に Microsoft 365 機能チーム全体によって、その後にすべての Microsoft が評価されます。 内部テストと検証が終わったら、次の手順は参加しているお客様に向けた **対象指定リリース** (以前は先行リリースと呼ばれていました) です。 各リリース リングで、Microsoft はフィードバックを収集し、主要な利用状況メトリックを監視することでさらに品質を検証します。 この革新的な一連の検証は、全世界のリリースの信頼性を最大限に高めるためにあります。 各リリースを、次の図で示します。 
   
-![Office 365 のリリース検証リング](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Microsoft 365 のリリース検証リング](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-重要な更新プログラムについては、Office のお客様には、 [Microsoft 365 ロードマップ](https://products.office.com/business/office-365-roadmap)による通知が最初に行われます。 更新プログラムのロールアウトが近づくにつれて、 [Office 365 メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)を経由して通知されます。
+重要な更新プログラムについては、Office のお客様には、 [Microsoft 365 ロードマップ](https://products.office.com/business/office-365-roadmap)による通知が最初に行われます。 更新プログラムのロールアウトが近づくにつれて、 [Microsoft 365 メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)を経由して通知されます。
 
 > [!NOTE]
-> [管理センター](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)を使用してメッセージセンターにアクセスするには、Office 365 または Azure AD アカウントが必要です。 Office 365 ホームプランユーザーには管理センターがありません。
+> [管理センター](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)を使用してメッセージセンターにアクセスするには、Microsoft 365 または Azure AD アカウントが必要です。 Microsoft 365 home プランユーザーには管理センターがありません。
 
 
 ## <a name="standard-release"></a>標準リリース
@@ -73,7 +73,7 @@ Office 365 では、新しい製品の更新プログラムと機能をリリー
   
 ## <a name="benefits-of-targeted-release"></a>対象指定リリースの利点
 
-対象指定リリースでは、管理者、変更マネージャー、Office 365 更新プログラムを担当するその他のユーザーが次のことをできるようになるため、新しい変更プログラムを準備できます。
+対象指定リリースでは、管理者、変更マネージャー、または Microsoft 365 更新プログラムを担当するその他のユーザーに、次のことを許可することにより、今後の変更を準備することができます。
   
 - 組織内のすべてのユーザーにリリースされる前に、新しい更新プログラムをテストおよび検証する。
     
@@ -87,10 +87,10 @@ Office 365 では、新しい製品の更新プログラムと機能をリリー
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>管理センターでリリースオプションを設定する
 
-組織で Office 365 更新プログラムを受信する方法は、次の手順で変更できます。参加するには Office 365 のグローバル管理者でなければなりません。
+次の手順に従って、組織が Microsoft 365 の更新プログラムを受信する方法を変更できます。 オプトインするには、Microsoft 365 のグローバル管理者である必要があります。
   
 > [!IMPORTANT]
-> Office 365 で次の変更が有効になるまで、最大で 24 時間かかる場合があります。対象指定リリースをいったん有効にした後に無効にすると、予定された標準リリースにまだ到達していない機能にアクセスできなくなる可能性があります。 
+> 以下の変更が Microsoft 365 で有効になるまで、最大24時間かかる場合があります。 対象指定リリースをいったん有効にした後に無効にすると、予定された標準リリースにまだ到達していない機能にアクセスできなくなる可能性があります。 
   
 1. 管理センターで、[**設定** > ]**設定**に移動し、[**組織プロファイル**] タブの [**リリース環境設定**] を選択します。
 
@@ -112,4 +112,4 @@ Office の対象指定リリース ビルドをインストールするには、
   
 ## <a name="learn-more"></a>詳細情報
 
-[Office 365 メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)の[メッセージを管理](https://docs.microsoft.com/office365/admin/manage/message-center)して、今後の office 365 の更新プログラムとリリースに関する通知を取得する方法について説明します。
+[Microsoft 365 メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)の[メッセージを管理](https://docs.microsoft.com/office365/admin/manage/message-center)して、今後の microsoft 365 の更新プログラムとリリースに関する通知を取得する方法について説明します。

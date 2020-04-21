@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: カスタムドメインの DNS レコードを管理するように Office 365 を設定している場合、Office 365 の外部でホストされている既存のパブリック web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: 3e71925f9b50e5520bd383aa5318db513202f6ec
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: カスタムドメインの DNS レコードを管理するように Microsoft を設定している場合は、Microsoft 外でホストされている既存のパブリック web サイトにトラフィックをルーティングする方法について説明します。
+ms.openlocfilehash: 08a4e505f4e2a50b3e92cae00b62415e6d02551f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142541"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629121"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
- **DNS ホスティング プロバイダーでドメインの Office 365 レコードを管理する場合は** 、このトピックの手順を考慮する必要はありません。Web サイトは現在の状態のままで、引き続きサイトにアクセスできます。 
+ **DNS ホスティングプロバイダーでドメインの Microsoft レコードを管理する場合**は、このトピックの手順について心配する必要はありません。 Web サイトは現在の状態のままで、引き続きサイトにアクセスできます。 
   
- **Office 365 が DNS レコードを管理する場合** 、Office 365 の外部でホストされている既存の一般向け Web サイトにトラフィックをルーティングするには、ドメインを Office 365 に追加した後で、次のように操作します。 
+ Microsoft が**DNS レコードを管理している場合**、microsoft の外部でホストされている既存のパブリック web サイトにトラフィックをルーティングするには、ドメインを microsoft に追加した後、次の手順を実行します。 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで DNS レコードを更新する
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 2. [ **ドメイン** ] ページで、ドメインの一覧から、Web サイトで使用しているドメインを選択し、管理ウィンドウで [ **DNS 設定** ] を選択します。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "43142541"
     
 最後に、次の操作を行います。
   
-[TE102827792 を指すようにドメインの NS レコードを更新します](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx)。 
+Microsoft を参照するように[、ドメインの NS レコードを更新](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx)します。 
   
-NS レコードが更新され、Office 365 を指すようになると、ドメインはすべてセットアップ済みです。メールは Office 365 にルーティングされ、Web サイト アドレスへのトラフィックは引き続き現在の Web サイト ホストに流れます。
+NS レコードが Microsoft を指すように更新されている場合、ドメインはすべて設定されています。 メールは Microsoft にルーティングされ、web サイトのアドレスへのトラフィックは引き続き現在の web サイトのホストに送られます。
  

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516867"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627754"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -64,7 +64,7 @@ Microsoft 365 は、組織がビジネス目標を達成できるようにする
 
 ## <a name="access-and-required-permissions"></a>アクセスおよび必要なアクセス許可 
 
-従業員の利便性のためには、Office 365 for business プランまたは複数のユーザーが存在する Microsoft 365 Business プランへのサブスクリプションが必要です。 
+従業員の利便性のためには、複数のユーザーが存在する Microsoft 365 for business プランへのサブスクリプションが必要です。 
 
 Microsoft の生産性スコアにアクセスするためのアクセス許可を付与するには、次の役割を持っている必要があります。 
 
@@ -136,7 +136,7 @@ Microsoft の生産性スコアにアクセスするためのアクセス許可�
 
 ![Anywhere ページで作業します。](../../media/psflexibility.png)
 
-[作業中の anywhere] ページには、デスクトップ、モバイル、web の2つ以上のプラットフォームで少なくとも1つの生産性向上アプリを使用したユーザー (パーセンテージおよび絶対値) が quantifies されます。 ユーザーは、より多くのアプリやプラットフォームを使用するために、高いスコアを獲得できます。 考慮されているアプリは、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、Skype です。 洞察の基準となるのは、Office 365 ProPlus、Exchange、Yammer、Skype、Teams などに対して有効になっているユーザーです。
+[作業中の anywhere] ページには、デスクトップ、モバイル、web の2つ以上のプラットフォームで少なくとも1つの生産性向上アプリを使用したユーザー (パーセンテージおよび絶対値) が quantifies されます。 ユーザーは、より多くのアプリやプラットフォームを使用するために、高いスコアを獲得できます。 考慮されているアプリは、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、Skype です。 企業、Exchange、Yammer、Skype、Teams 用の Microsoft 365 アプリが有効になっていることは、洞察の基礎となります。
 
 1. **It が重要**なのは、複数のプラットフォームの使用をリンクする研究から、より高い生産性を実現するための概要です。 **Forrester の研究を読むと、** 生産性の向上に対して、作業の進行状況に関するより多くのコンテキストを提供する調査記事が表示されます。
 1. Outlook でアクティブになっているユーザーのベース内で Outlook を使用して、組織内のユーザーの数を quantifies する組織内のユーザー**数をサポート**します。

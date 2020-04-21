@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '個人用メールボックスを、複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 481707b9d60d37b1d80d822467d17f66750f4f13
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255268"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628893"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -48,7 +48,7 @@ ms.locfileid: "42255268"
 
 3. ユーザー メールボックスを選択します。 **[共有メールボックスに変換]** で **[変換]** を選択します。
 
-4. メールボックスが 50 GB 未満の場合は、[ユーザーからライセンス](../manage/remove-licenses-from-users.md)を削除し、その支払いを停止できます。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「[Office 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
+4. メールボックスが 50 GB 未満の場合は、[ユーザーからライセンス](../manage/remove-licenses-from-users.md)を削除し、その支払いを停止できます。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「 [Microsoft 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
     
 5. 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 
@@ -90,7 +90,7 @@ ms.locfileid: "42255268"
 ::: moniker-end
 
 
-メールボックスが 50 GB 未満の場合は、[ユーザーからライセンスを削除](../manage/remove-licenses-from-users.md)して、その支払いを停止できます。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「[Office 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
+メールボックスが 50 GB 未満の場合は、[ユーザーからライセンスを削除](../manage/remove-licenses-from-users.md)して、その支払いを停止できます。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「 [Microsoft 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
     
 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 
@@ -101,7 +101,7 @@ ms.locfileid: "42255268"
 
 1. [ユーザーのアカウントを復元](../add-users/restore-user.md)します。
 
-2. Office 365 のライセンスが割り当てられていることを確認します。
+2. Microsoft 365 ライセンスが割り当てられていることを確認してください。
 
 3. ユーザーのパスワードをリセットします。
     

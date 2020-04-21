@@ -20,14 +20,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: FAQ でのご質問にお答えするかたちで Office 365 のドメインについてご説明します。
+description: ドメインの詳細については、よく寄せられる質問の回答を参照してください。
 ms.custom: okr_smb
-ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540869"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627596"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
@@ -51,7 +51,7 @@ ms.locfileid: "43540869"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>SPF レコードはどうやって検証できますか?
 
-**SPF の TXT レコードを 1 つだけ** 持っているか作成していることが重要です。既に SPF レコードがある場合は、新規に作成せずに、新しい Office 365 の値を追加します。Office 365 メール用の SPF レコードを更新または追加した後、これらのツールの 1 つを使用して構文が正しいことを確認してください。 
+**SPF の TXT レコードを1つだけ**持っているか作成しておくことが重要です。既に SPF レコードがある場合は、新しい Office 365 の値を新しく作成するのではなく、そのレコードに追加する必要があります。Microsoft メールの SPF レコードを追加または更新した後、次のいずれかのツールを使用して構文が正しいことを確認してください。 
   
 - [SPF レコード テスト ツール](http://www.kitterman.com/spf/validate.html)
     
@@ -63,7 +63,7 @@ ms.locfileid: "43540869"
 
 Office 365 での DNS 管理には 2 つのオプションがあります。
   
-1. ネーム サーバー (NS) レコードを変更すると、Office 365 によって、メールの MX レコードのセットアップのようなすべてのサービスに固有のレコードが処理されます。 **(推奨)**
+1. ネームサーバー (NS) レコードを変更すると、メール用の MX レコードを設定するのと同様に、Microsoft はすべてのサービス固有のレコードを処理できるようになります。**(推奨)**
     
 2. DNS ホストで、メールやその他の Office 365 サービスに DNS レコードを自分で追加します。** (上級ユーザーのみ)**
     
@@ -87,7 +87,7 @@ Office 365 での DNS 管理には 2 つのオプションがあります。
  
 #### <a name="disadvantages"></a>デメリット
 Office 365 の DNS レコードを自分で設定する必要があります (GoDaddy ドメインを所有している場合を除く)。 
--  現在の DNS ホストが Office 365 に必要なレコード タイプの一部しかサポートしていない場合は、一部の Office 365 機能が利用できなくなり、別の DNS ホストへの変更が必要になる可能性があります。 
+-  現在の DNS ホストが Microsoft 365 に必要なレコードの種類の一部をサポートしていない場合は、一部の機能を使用できないため、別の DNS ホストに切り替える必要がある場合があります。 
 - Office 365 で DNS レコードの要件が変更されたり新しいサービスが追加されたりした場合、DNS ホストでの更新を自分で行う必要があります。 
    
 ## <a name="what-is-a-domain-name"></a>ドメイン名とは何ですか?
@@ -333,9 +333,9 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>"onmicrosoft.com" ドメインがあるのはなぜですか?
 
-Office 365 は、 _contoso.onmicrosoft.com_のように、サービスを使用してサインアップするときに、ドメインを作成します。サインアップ時に作成するユーザー ID には、 _alan\@contoso.onmicrosoft.com_などのドメインが含まれています。 
+サービスにサインアップすると、Office 365 では、*contoso.onmicrosoft.com* のようなドメインが作成されます。サインアップ時に作成するユーザー ID には、*alan@contoso.onmicrosoft.com* のようなドメインが含まれています。 
   
- ___alan\@contoso.com_ のように表示されるメール アドレスを希望する場合は、__[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
+ ***alan\@contoso.com* のように表示されるメール アドレスを希望する場合は、**[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません** 。たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.com の場合、fabrikam.onmicrosoft.com に変更することはできません。別の onmicrosoft.com ドメインを使うには、Office 365 で新しいサブスクリプションを開始する必要があります。 
     
@@ -348,12 +348,11 @@ Office 365 は、 _contoso.onmicrosoft.com_のように、サービスを使用�
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>"onmicrosoft.de" ドメインがあるのはなぜですか?
 
-Office 365 は、 *contoso.onmicrosoft.de*のように、サービスを使用してサインアップするときに、ドメインを作成します。サインアップ時に作成するユーザー ID には、"alan@contoso.onmicrosoft.de" のようなドメインが含まれています。 
+サービスにサインアップすると、Office 365 では、*contoso.onmicrosoft.de* のようなドメインが作成されます。サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de* のようなドメインが含まれています。 
   
-自分のメールが "alan@contoso.de" のように表示されるようにする場合は、[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「 [Office 365 にユーザーとドメインを追加](add-domain.md)する」の手順に従ってください。 
+ ***alan@contoso.de* のように表示されるメール アドレスを希望する場合は、**[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません**。たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.de の場合、fabrikam.onmicrosoft.de に変更することはできません。別の onmicrosoft.de ドメインを使うには、Office 365 で新しいサブスクリプションを開始する必要があります。 
     
@@ -489,11 +488,11 @@ Office 365 は、 *contoso.onmicrosoft.de*のように、サービスを使用�
         
     2. 次のタスクを実行します。
         
-    3. Office 365 のローカル メールをテストします。たとえば、ユーザー B にメールを送信します。このメールは即座に送信されるはずです。このシナリオでは、メッセージは 元のサーバーにあるユーザー B のメールボックスにルーティングされません。Office 365 ではこのメールボックスはローカルと見なされるためです。
+    3. ローカル Microsoft メールをテストします。たとえば、ユーザー B に電子メールを送信します。この電子メールはすぐに配信されます。このシナリオでは、Office 365 はメールボックスをローカルとして認識するため、メッセージは元のサーバー上のユーザー B のメールボックスにルーティングされません。
         
     4. もう 1 つのメール システム上のユーザーへのメール送信をテストします。例えば、ユーザー C にメールを送信します。このメールは、元のサーバーにあるユーザー C のメールボックスに送信されるはずです。
         
-    5. 外部アカウントから、または他の電子メールシステムの従業員の電子メールアカウントから、他のメールシステムで転送が正しく設定されていることを確認します。たとえば、User C の元のサーバーアカウントまたは Hotmail アカウントから、ユーザー A に電子メールを送信して、そのメールがユーザー A の Office 365 メールボックスに届くことを確認します。
+    5. 外部のアカウントから、またはもう 1 つのメール システム上の従業員のメール アカウントからのメールについて、もう 1 つのメール システムで転送が正しく設定されていることを確認します。たとえば、ユーザー C の元のサーバーのアカウントまたは Hotmail アカウントからユーザー A にメールを送り、ユーザー A の Office 365 メールボックスに届くことを確認します。
         
 9. メールボックスのコンテンツの移動
     

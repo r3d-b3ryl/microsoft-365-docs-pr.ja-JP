@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 3a7c14cc4cd31961b0d4c1054f88b5ed276b3b1a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604756"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630739"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
-ドキュメント、データ、およびリスト間でゲストと共同作業を行う必要がある場合は、SharePoint サイトを使用できます。 モダン SharePoint サイトは Office 365 グループに接続されており、サイトメンバーシップを管理したり、共有メールボックスや予定表などのその他のコラボレーションツールを提供したりできます。
+ドキュメント、データ、およびリスト間でゲストと共同作業を行う必要がある場合は、SharePoint サイトを使用できます。 モダン SharePoint サイトは、Microsoft 365 グループに接続されており、サイトメンバーシップを管理したり、共有されたメールボックスや予定表などのその他のコラボレーションツールを提供したりすることができます。
 
 この記事では、ゲストとのグループ作業のために SharePoint サイトをセットアップするために必要な Microsoft 365 の構成手順について説明します。
 
@@ -48,17 +48,17 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 [**共同作業の制限**] セクションの設定に注意してください。 共同作業を行うゲストのドメインがブロックされていないことを確認します。
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 グループのゲスト設定
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 グループのゲスト設定
 
-モダン SharePoint サイトは、Office 365 グループを使用してサイトアクセスを制御します。 SharePoint サイトでゲストアクセスを機能させるには、Office 365 グループのゲスト設定をオンにする必要があります。
+モダン SharePoint サイトでは、Microsoft 365 グループを使用してサイトアクセスを制御します。 SharePoint サイトでゲストアクセスを機能させるには、Microsoft 365 グループのゲスト設定をオンにする必要があります。
 
-![Microsoft 365 管理センターにおける Office 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 グループのゲスト設定 Microsoft 365 管理センターのスクリーンショット](../media/office-365-groups-guest-settings.png)
 
-Office 365 グループのゲスト設定を設定するには
+Microsoft 365 グループのゲスト設定を設定するには
 
 1. Microsoft 365 管理センターの左側のナビゲーションで、[**設定**] を展開します。
 2. [**サービス] [& アドイン**] をクリックします。
-3. リストで、[ **Office 365 グループ**] をクリックします。
+3. 一覧で、[ **Microsoft 365 Groups**] をクリックします。
 4. [組織外のユーザーにグループの**コンテンツへのアクセス**を許可する] および [**グループの所有者に組織外のユーザーをグループに追加する**] チェックボックスの両方がオンになっていることを確認します。
 5. 変更を加えた場合は、[**変更の保存**] をクリックします。
 
@@ -113,7 +113,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 ## <a name="invite-users"></a>ユーザーを招待する
 
-ゲスト共有の設定が構成されるようになったため、内部ユーザーとゲストのサイトへの追加を開始できます。 サイトアクセスは、関連付けられた Office 365 グループを通じて制御されるため、ユーザーを追加します。
+ゲスト共有の設定が構成されるようになったため、内部ユーザーとゲストのサイトへの追加を開始できます。 サイトアクセスは、関連付けられた Microsoft 365 グループによって制御されるため、ユーザーを追加します。
 
 内部ユーザーをグループに招待するには
 1. ユーザーを追加するサイトに移動します。
@@ -135,7 +135,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)
 

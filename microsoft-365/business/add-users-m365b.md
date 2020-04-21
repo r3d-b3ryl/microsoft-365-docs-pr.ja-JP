@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business にさらにユーザーを追加する
+title: ユーザーを追加する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,15 +25,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: Microsoft 365 Business で新しいユーザーを簡単に追加し、デバイスをセキュリティで保護し、役割を割り当てる手順について説明します。
-ms.openlocfilehash: 8181254aa56345e99e648c59474f4d7f8fa94990
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 Business Premium で、新しいユーザーの追加、デバイスのセキュリティ保護、および役割の割り当てを簡単に行う手順について説明します。
+ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561562"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627476"
 ---
-# <a name="add-more-users-to-microsoft-365-business"></a>Microsoft 365 Business にさらにユーザーを追加する
+# <a name="add-more-users"></a>ユーザーを追加する
 
 ## <a name="add-new-users"></a>新しいユーザーを追加する
 
@@ -45,7 +45,7 @@ ms.locfileid: "42561562"
 
 ユーザーを追加するには、次のようにします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 
 2. 左側のナビゲーションウィンドウで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。
 3. [**アクティブなユーザー** ] ページで、[**ユーザーの追加**] を選択します。
 4. [**新しいユーザー** ] パネルで、必要な情報を入力します。 
@@ -54,7 +54,7 @@ ms.locfileid: "42561562"
       
     ![Enter user information in the New user card](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    [製品ライセンス] セクションで、[ **Microsoft 365 Business** Product license] 設定を **[オン**] に設定します。
+    [製品ライセンス] セクションで、[ **Microsoft 365 Business Premium** Product license] 設定を **[オン**] に設定します。
       
     ![Set the license setting to On position](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   

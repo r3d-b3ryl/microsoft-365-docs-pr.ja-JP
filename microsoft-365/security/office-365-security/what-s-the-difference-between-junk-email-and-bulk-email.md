@@ -16,16 +16,16 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、迷惑メールとバルクメールの違い、および Office 365 の関連するコントロールについて説明します。
-ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230958"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630835"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>迷惑メールとバルク メールの違い
 
-Office 365 の、Exchange Online にメールボックスを持つお客様や、Exchange Online のメールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) のお客様から、「迷惑メールとバルクメールの違いについて」問い合わせをいただくことがあります。 このトピックでは、その違いと、EOP で使用できるコントロールについて説明します。
+メールボックスが Exchange Online またはスタンドアロン Exchange online Protection (EOP) のお客様に Exchange Online メールボックスを使用していない場合は、「迷惑メールとバルクメールの違い」を確認してください。365 このトピックでは、その違いと、EOP で使用できるコントロールについて説明します。
 
 - **迷惑メール** はスパムです。これは、迷惑なメッセージで、普遍的に必要とされないメッセージ (正常に識別される) です。 既定では、EOP は、ソースメールサーバーの評価に基づいてスパムを拒否します。 メッセージが送信元 IP の検査を通過した場合は、スパムフィルタリングに送信されます。 迷惑メールフィルターによってメッセージがスパムとして分類された場合、メッセージは (既定では) 対象の受信者に配信されて、[迷惑メール] フォルダーに移動します。
 
@@ -41,7 +41,7 @@ Office 365 の、Exchange Online にメールボックスを持つお客様や�
 
 バルクメールへの反応が多様であるため、すべての組織に適用される汎用的なガイダンスはありません。
 
-スパム対策ポリシーには、バルクメールをスパムとして識別するために使用される既定の BCL のしきい値があります。 管理者はしきい値を増減できます。 詳細については、次のトピックをご覧ください。
+スパム対策ポリシーには、バルクメールを迷惑メールとして識別するために使用される既定の BCL しきい値があります。 管理者はしきい値を増減できます。 詳細については、次のトピックをご覧ください。
 
 - 「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」。
 

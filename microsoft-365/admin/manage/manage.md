@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
-description: Office 365 で最も一般的な管理タスクのクイック リンクです。
-ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Microsoft 365 の最も一般的な管理タスクに関するクイックリンク。
+ms.openlocfilehash: 876652b932579718cb1d1313bca6b98bad2b92c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126001"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628138"
 ---
 # <a name="manage"></a>管理
 
-Office 365 で最も一般的な管理タスクのクイック リンクです。
+Microsoft 365 の最も一般的な管理タスクに関するクイックリンク。
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -38,7 +38,7 @@ Office 365 で最も一般的な管理タスクのクイック リンクです�
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>ユーザーを追加する</h3>
+                        <h3>ユーザーの追加</h3>
                     </div>
                 </div>
             </div>
@@ -149,10 +149,10 @@ Office 365 で最も一般的な管理タスクのクイック リンクです�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>メール</h3>
+                        <h3>電子メール</h3>
                             <p><a href="../add-users/add-users.md">新しい従業員を追加する</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">メール メッセージが送信されないときの修正</a></p>
-                            <p><b>その他のタスク:</b> <a href="../email/email.md">Office 365 for business の電子メール</a></p>
+                            <p><b>その他のタスク:</b> <a href="../email/email.md">Microsoft 365 for business の電子メール</a></p>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ Office 365 で最も一般的な管理タスクのクイック リンクです�
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">OneDrive と SharePoint の共有を管理する</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">OneDrive ユーザー向けに既定の記憶領域を設定する</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">OneDrive の同期に関する問題を解決する</a></p>
-                            <p><b>その他のタスク:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">Office の OneDrive 365</a></p>
+                            <p><b>その他のタスク:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">Microsoft 365 の OneDrive</a></p>
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@ Office 365 で最も一般的な管理タスクのクイック リンクです�
                 <div class="card">
                     <div class="cardText">
                         <h3>Yammer</h3>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Yammer の Office 365 へのサインイン</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Office 365 から Yammer ユーザーを管理する</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Yammer ユーザーに Office 365 ID を適用する</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Yammer の Microsoft 365 サインイン</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Microsoft 365 から Yammer ユーザーを管理する</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Yammer ユーザーに Microsoft 365 id を適用する</a></p>
                             <p><a href="https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site">SharePoint サイトに Yammer フィードを埋め込む</a></p>
                             <p><b>その他のタスク:</b> <a href="https://docs.microsoft.com/yammer/yammer-landing-page">YAMMER 管理者ヘルプ</a></p>
                     </div>

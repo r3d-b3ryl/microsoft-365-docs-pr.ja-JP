@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理者は、組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みのアイテムを復元します。 '
-ms.openlocfilehash: ac11a05dd9ea7a0c569e131e7939a0e4e9293dea
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151366"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618910"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
-Office 365 を管理しやすくするために、組織のメールとメールボックスの管理を [Exchange 管理センター](assign-admin-roles.md)から行うためのアクセス許可をユーザーに[割り当てる](https://go.microsoft.com/fwlink/p/?LinkID=271807)ことができます。それには、対象のユーザーを Exchange 管理者の役割に割り当てます。 
+Microsoft 365 を管理するために、 [Exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkID=271807)から組織の電子メールとメールボックスを管理するためのアクセス許可をユーザーに[割り当てる](assign-admin-roles.md)ことができます。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。 
   
  **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、Exchange Online サービスの正常性、変更通知、リリース通知など、Microsoft 365 管理センターでの重要な情報を確認できます。 
   
@@ -37,17 +37,17 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
   
 - [ユーザーのメールボックスで削除されたアイテムを復元する](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [削除済みのメールを完全に削除せずに保持する期間を決定します。](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes)
+- [組織内のメールボックスのアーカイブと削除のポリシーを設定](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes)します。
     
 - メールボックスの機能をセットアップします。たとえば、メールボックス共有ポリシーを設定すると、ユーザーが予定表や連絡先の情報を組織外の人とどのように共有できるかを指定できます。 
     
-- ユーザーのメールボックスで、"[メールボックス所有者として送信する](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" 権限および "[代理人として送信する](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" 権限を代理人に付与します。たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。 
+- 他のユーザーのメールボックスの [[送信者](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)] および [[送信 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)] の代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。 
     
 - ユーザーのグループが共通の電子メールアドレスからメールを監視して送信できるように、[共有メールボックスを作成](../email/create-a-shared-mailbox.md)します。 
     
-- 組織に適した[Office 365 email anti-spam protection](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection)とマルウェア フィルターの設定を行います。 
+- 組織の[電子メールのスパム対策保護](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection)とマルウェアフィルター。 
     
-- Office 365 グループを管理する
+- Microsoft 365 グループを管理する
     
 ## <a name="exchange-online-role-groups"></a>Exchange Online の役割グループ
 

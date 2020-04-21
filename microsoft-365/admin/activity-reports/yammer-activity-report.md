@@ -1,5 +1,5 @@
 ---
-title: 管理センターでの Office 365 レポート-Yammer アクティビティレポート
+title: 管理センターでの Microsoft 365 レポート-Yammer アクティビティレポート
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Yammer アクティビティレポートを取得して、Yammer を使用してメッセージを投稿したり、メッセージを読んだりするユーザーの数について理解します。
-ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047025"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618958"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>管理センターでの Office 365 レポート-Yammer アクティビティレポート
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>管理センターでの Microsoft 365 レポート-Yammer アクティビティレポート
 
 Microsoft 365 admin として、**レポート**ダッシュボードには、組織内の製品の使用状況に関するデータが表示されます。 [管理センターのアクティビティレポートを](activity-reports.md)チェックアウトします。 **Yammer アクティビティ レポート** では、Yammer を使用してメッセージの投稿、「いいね!」の評価、または閲覧を行った一意のユーザー数や、組織全体で生成されたアクティビティの量を確認することで、Yammer に対する組織の関与レベルを把握することができます。 
   
@@ -82,7 +82,7 @@ Microsoft 365 admin として、**レポート**ダッシュボードには、�
     
   - [ **ユーザー名**] はユーザーのメール アドレスです。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。 
     
-    このグリッドには、Office 365 アカウントを使用して Yammer にログインしたユーザー、またはシングル サインオンを使用してネットワークにログインしたユーザーが表示されます。
+    このグリッドには、Microsoft 365 アカウントを使用して Yammer にログインしたユーザー、またはシングルサインオンを使用してネットワークにログインしたユーザーが表示されます。
     
   - [ **表示名**] はユーザーの氏名です。実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。 
     
@@ -112,6 +112,6 @@ Microsoft 365 admin として、**レポート**ダッシュボードには、�
     
 - **外部ネットワークのデータを含まない** 外部ネットワークのデータは、このレポートには含まれません。 
     
-- **アクティブなネットワーク** これらのレポートは、Office 365 サブスクリプションの一部である Yammer ネットワークのデータを表示します。このグラフは、ログインに Office 365 を使用したか Yammer を使用したかに関係なく、Yammer ネットワークにログインしているすべてのユーザーの使用状況を集計します。 
+- **アクティブ化**されたネットワークこれらのレポートには、Microsoft 365 サブスクリプションの一部である Yammer ネットワークのデータが表示されます。 グラフは、Microsoft 365 または Yammer を使用してログインしたかどうかに関係なく、Yammer ネットワークにログインしたすべてのユーザーの使用状況を集約します。 
     
 

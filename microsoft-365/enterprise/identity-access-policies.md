@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8b5cb7d8d8b16fea1c1bef44e477dfd43a79a3d8
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081326"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625268"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -67,9 +67,9 @@ ms.locfileid: "43081326"
 
 図では、"Top secret プロジェクト X teams *" には、MFA を*必要とする条件付きアクセスポリシーが割り当てられています。 ユーザーにより高度な保護を適用する場合は、慎重に行います。 このプロジェクトチームのメンバーは、厳しく規制されたコンテンツを表示していない場合でも、ログオンするたびに2つの形式の認証を提供する必要があります。  
 
-これらの推奨事項の一部として作成されたすべての Azure AD グループは、Office 365 グループとして作成する必要があります。 これは、SharePoint Online のドキュメントをセキュリティで保護する場合の Azure Information Protection (AIP) の展開で特に重要です。
+これらの推奨事項の一部として作成されたすべての Azure AD グループは、Microsoft 365 グループとして作成する必要があります。 これは、SharePoint Online のドキュメントをセキュリティで保護する場合の Azure Information Protection (AIP) の展開で特に重要です。
 
-![Office 365 グループを作成するための画面キャプチャ](../media/identity-device-AAD-groups.png)
+![Microsoft 365 グループを作成するための画面キャプチャ](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>サインインリスクに基づいて MFA を必須にする
@@ -95,7 +95,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 |:---|:---------|:-----|:----|
 |ユーザーとグループ|含める|ユーザーとグループの選択 – 対象ユーザーを含む特定のセキュリティ グループを選択します|パイロット ユーザーを含むセキュリティ グループから開始します|
 ||除外|例外セキュリティ グループ、サービス アカウント (アプリ ID)|必要に応じて変更されたメンバーシップの一時的根拠|
-|クラウド アプリ|含める|このルールを適用するアプリを選択します。 たとえば、[Office 365 Exchange Online] を選択します。||
+|クラウド アプリ|含める|このルールを適用するアプリを選択します。 たとえば、[Exchange Online] を選択します。||
 |条件|構成済み|はい|使用環境およびニーズに合わせて構成します|
 |サインイン リスク|リスク レベル||次の表のガイダンスを参照してください。|
 
@@ -113,10 +113,10 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|許可|アクセスの許可|はい|選択|
+|許可|アクセスの許可|正しい|選択|
 ||MFA を要求|True|Check|
-||デバイスを準拠としてマークする必要がある|False||
-||ハイブリッドの Azure AD に参加しているデバイスが必要|False||
+||デバイスを準拠としてマークする必要がある|誤り||
+||ハイブリッドの Azure AD に参加しているデバイスが必要|誤り||
 ||承認済みクライアントアプリを必要とする|False||
 ||選択したコントロールすべてが必要|True|選択|
 
@@ -142,7 +142,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 |:---|:---------|:-----|:----|
 |ユーザーとグループ|含める|ユーザーとグループの選択 – 対象ユーザーを含む特定のセキュリティ グループを選択します|パイロット ユーザーを含むセキュリティ グループから開始します|
 ||除外|例外セキュリティ グループ、サービス アカウント (アプリ ID)|必要に応じて一時的にメンバーシップを変更します|
-|クラウド アプリ|含める|このルールを適用するアプリを選択します。 たとえば、[Office 365 Exchange Online] を選択します。||
+|クラウド アプリ|含める|このルールを適用するアプリを選択します。 たとえば、[Exchange Online] を選択します。||
 |条件|構成済み|はい|クライアントアプリを構成する|
 |クライアント アプリ|構成済み|はい|モバイルアプリとデスクトップクライアント、その他のクライアント (両方を選択する)|
 
@@ -150,10 +150,10 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|許可|アクセスをブロックする|はい|選択|
-||MFA を要求|False||
-||デバイスを準拠としてマークする必要がある|False||
-||ハイブリッドの Azure AD に参加しているデバイスが必要|False||
+|許可|アクセスをブロックする|正しい|選択|
+||MFA を要求|誤り||
+||デバイスを準拠としてマークする必要がある|誤り||
+||ハイブリッドの Azure AD に参加しているデバイスが必要|誤り||
 ||承認済みクライアントアプリを必要とする|False||
 ||選択したコントロールすべてが必要|True|選択|
 
@@ -179,7 +179,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 | 型 | [プロパティ] | 値                  | 注 |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | SSL 経由でのみ            | はい  |
+|      | Access     | SSL 経由でのみ            | 正しい  |
 |      | アクセス     | パスワードの変更を必須とする | True  |
 
 **レビュー:** 該当なし
@@ -215,7 +215,7 @@ Intune で適用したアプリ保護ポリシーを適用するには、承認�
 
 アプリ保護ポリシーを適用するには、「[条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」で説明されている一連のポリシーが必要です。 これらのポリシーは、この推奨される id とアクセス構成ポリシーのセットに含まれています。
 
-承認済みアプリとアプリ保護を必要とする条件付きアクセスルールを作成するには、365「[シナリオ 1: office 365 アプリには、アプリ保護ポリシーを使用して承認済みアプリが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)です。これにより、IOS および Android 用の Outlook が許可されますが、OAuth 対応 exchange ActiveSync クライアントは exchange Online に接続できなくなります。
+承認済みアプリとアプリの保護を必要とする条件付きアクセスルールを作成するには、「[シナリオ 1: microsoft 365 アプリ](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)には、microsoft 365 の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これは、IOS および Android 用の Outlook を許可し、OAuth 対応 exchange ActiveSync クライアントによる exchange Online への接続をブロックします
 
    > [!NOTE]
    > このポリシーにより、モバイルユーザーは適用可能なアプリを使用してすべての Office エンドポイントにアクセスできます。
@@ -229,7 +229,7 @@ Exchange Online へのモバイルアクセスを有効にしている場合は�
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
@@ -322,7 +322,7 @@ Windows 10 では、次の設定をお勧めします。
 
 6. **[クラウド アプリ]** を選びます。
 
-7. **[アプリの選択**] を選択し、[**クラウドアプリ**] リストから目的のアプリを選択します。 たとえば、[Office 365 Exchange Online] を選択します。 **[選択**して**完了**] を選択します。
+7. **[アプリの選択**] を選択し、[**クラウドアプリ**] リストから目的のアプリを選択します。 たとえば、[Exchange Online] を選択します。 **[選択**して**完了**] を選択します。
 
 8. 準拠している Pc を必要とするが、準拠している電話やタブレットではないものを要求するには、**条件**と**デバイスプラットフォーム**を選択します **[Select device プラットフォーム]** を選択して、[ **Windows**と**macOS**] を選択します。
 
@@ -350,7 +350,7 @@ Windows 10 では、次の設定をお勧めします。
 
 6. **[クラウド アプリ]** を選びます。
 
-7. **[アプリの選択**] を選択し、[**クラウドアプリ**] リストから目的のアプリを選択します。 たとえば、[Office 365 Exchange Online] を選択します。 **[選択**して**完了**] を選択します。
+7. **[アプリの選択**] を選択し、[**クラウドアプリ**] リストから目的のアプリを選択します。 たとえば、[Exchange Online] を選択します。 **[選択**して**完了**] を選択します。
 
 8. **[アクセス制御]** セクションから **[許可]** を選びます。
 

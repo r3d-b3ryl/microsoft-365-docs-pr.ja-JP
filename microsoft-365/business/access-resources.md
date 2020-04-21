@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 Business で Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: c1e04e5ca0d36c32a55a9819140356db5093e3a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967165"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627456"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Microsoft 365 Business で Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
 
-Azure Active Directory に参加している Windows 10 デバイスはすべて、Office 365 アプリなどのクラウドベースのすべてのリソースにアクセスでき、Microsoft 365 Business で保護することができます。 基幹業務 (LOB) アプリ、ファイル共有、プリンターなどの社内リソースへのアクセスを許可することもできます。 アクセスを許可するには、 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)を使用してオンプレミスの active Directory を Azure active directory と同期します。 
+Azure Active Directory に参加している Windows 10 デバイスはすべて、Microsoft 365 アプリなどのクラウドベースのすべてのリソースにアクセスでき、Microsoft 365 Business Premium で保護することができます。 基幹業務 (LOB) アプリ、ファイル共有、プリンターなどの社内リソースへのアクセスを許可することもできます。 アクセスを許可するには、 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)を使用してオンプレミスの active Directory を Azure active directory と同期します。 
 
 詳細については、「 [Azure Active Directory でのデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」を参照してください。
 手順の概要についても、以下のセクションで説明します。
@@ -41,9 +43,9 @@ Azure Active Directory に参加している Windows 10 デバイスはすべて
   
 1. ユーザー、グループ、および連絡先をローカルの Active Directory から Azure Active Directory に同期するには、「 [Set up Directory synchronization For Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の説明に従って、ディレクトリ同期ウィザードと Azure AD Connect を実行します。
     
-2. ディレクトリ同期が完了したら、組織の Windows 10 デバイスが Azure AD に参加していることを確認します。 この手順は、各 Windows 10 デバイスで個別に実行します。 詳細については、「 [Microsoft 365 Business ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。 
+2. ディレクトリ同期が完了したら、組織の Windows 10 デバイスが Azure AD に参加していることを確認します。 この手順は、各 Windows 10 デバイスで個別に実行します。 詳細については、「 [Microsoft 365 Business Premium ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。 
     
-3. Windows 10 デバイスが Azure AD に参加している場合、各ユーザーはデバイスを再起動し、Microsoft 365 Business 資格情報を使用してサインインする必要があります。 これで、すべてのデバイスがオンプレミスのリソースにもアクセスできるようになりました。
+3. Windows 10 デバイスが Azure AD に参加している場合、各ユーザーはデバイスを再起動して、Microsoft 365 Business Premium の資格情報でサインインする必要があります。 これで、すべてのデバイスがオンプレミスのリソースにもアクセスできるようになりました。
     
 Azure AD に参加しているデバイスのオンプレミスのリソースにアクセスするために、追加の手順は必要ありません。 この機能は、Windows 10 に組み込まれています。 
 

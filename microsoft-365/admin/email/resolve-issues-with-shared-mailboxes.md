@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスに問題が発生した場合は、これらのソリューションを試してみてください。
-ms.openlocfilehash: 138bcee155652e84ab6ee16cf6a9acab310edde9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210518"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628749"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>共有メールボックスの問題を解決する
 
@@ -36,7 +36,7 @@ ms.locfileid: "43210518"
 
 エラーメッセージが表示された場合は、**プロキシアドレス "smtp: <共有\>メールボックス名" が、プロキシアドレスまたは "\<名前>" の LegacyExchangeDN によって既に使用されています。別のプロキシアドレスを選択してください**。これは、共有メールボックスに既に使用されている名前を付けようとしていることを意味します。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 これを行うには 2 つの方法があります。
 
-  - Windows PowerShell を使用します。 手順については、次のブログの投稿を参照してください。[Create Shared Mailboxes with Same Alias at Different Domains in Office 365](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365) (Office 365 の別のドメインで同じエイリアスを使って共有メールボックスを作成する)
+  - Windows PowerShell を使用します。 手順:[異なるドメインで同じエイリアスを使用して共有メールボックスを作成する](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)方法については、次のブログ投稿を参照してください。
     
   - エラーを回避するために、2番目の共有メールボックスの名前を開始日とは別のものにします。 次に、管理センターで、共有メールボックスの名前を目的の名前に変更します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "43210518"
 
 **このメッセージを送信できませんでした。指定したユーザーの代わりにメッセージを送信するためのアクセス許可がありません。**
 
-このメッセージは、Office 365 でレプリケーションの遅延の問題が発生した場合に表示されます。 新しい共有メールボックス (または追加されたユーザー) に関する情報がすべてのデータセンターでレプリケートされるときには、1時間以内に移行する必要があります。 1時間待機してから、もう一度メッセージを送信してください。
+このメッセージは、Microsoft 365 でレプリケーションの遅延の問題が発生した場合に表示されます。 新しい共有メールボックス (または追加されたユーザー) に関する情報がすべてのデータセンターでレプリケートされるときには、1時間以内に移行する必要があります。 1時間待機してから、もう一度メッセージを送信してください。
 
 ## <a name="related-articles"></a>関連記事
 

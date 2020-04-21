@@ -25,19 +25,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: ユーザーが Windows 10 デバイスに Office アプリをインストールして、Microsoft 365 Business 管理センターから Windows 10 Pc に Office を簡単にインストールできるようにします。
-ms.openlocfilehash: a33121f5c5b3532ea376a2bf7a6d7f51d4291a47
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: ユーザーが Windows 10 デバイスに Office アプリをインストールして、Microsoft 365 管理センターから Windows 10 Pc に Office を簡単にインストールできるようにします。
+ms.openlocfilehash: a7078ad6d7423900aefba47605cb2b2852856108
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561627"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627200"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
 
 [![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Microsoft 365 Business 管理センターから、Windows 10 Pc に Office をすばやく簡単にインストールすることができます。
+Microsoft 365 管理センターから Windows 10 Pc に Office をすばやく簡単にインストールすることができます。
   
 以前にインストールした Office アプリでこれがどのように機能するかを理解するには、開始する前に、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」をお読みください。
 
@@ -62,6 +62,6 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="[Office ダウンロードを使用して電子メールを送信するユーザー] リンクを選択します。":::
 
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Microsoft 365 Business のセットアップと使用方法の詳細
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の設定と使用の詳細については、「」を参照してください。
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

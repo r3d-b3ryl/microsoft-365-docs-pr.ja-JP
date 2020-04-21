@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: '[Google Domains] ページを使用して、eNom にアクセスし、DNS を作成する方法について説明します。'
-ms.openlocfilehash: 8fc13ea2ccc7dfee510ef7abb72f88030d048943
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210660"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629133"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Google がドメインを管理している場合に DNS レコードを作成する (eNom)
 
- **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-メール アカウントを Office 365 に移行するには、ドメイン レジストラーに DNS レコードを作成する必要があります。
+メールアカウントを Microsoft に移行するには、ドメインレジストラーで DNS レコードを作成する必要があります。
   
 **Google Apps for Work** アカウントへのサインアップ時に Google 経由でドメインを購入した場合、DNS レコードは Google が管理し、eNom が登録します。 
   
@@ -89,11 +89,11 @@ ms.locfileid: "43210660"
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 
+    > This is an example. この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。 
   
     [確認する方法](../get-help-with-domains/information-for-dns-records.md)
   
-12. [**保存**] を選択します。
+12. **[保存]** を選択します。
     
     ![Google-アプリ-eNom-Configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   

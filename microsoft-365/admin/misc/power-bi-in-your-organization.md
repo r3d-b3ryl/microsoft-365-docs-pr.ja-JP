@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Power BI と、組織内のユーザーがこのビジネス分析サービスをどのように使用できるかについて説明します。
-ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3cf0c96534b6d8d02ef89f430ae246c6f32ac356
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361338"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627814"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -47,30 +47,30 @@ Power BI コンプライアンスの詳細については、「 [Microsoft Trust
 
 組織のユーザーには、以下のように 3 種類のシナリオが考えられます。
   
-### <a name="scenario-1-your-organization-already-has-an-existing-office-365-environment-and-the-user-signing-up-for-power-bi-already-has-an-office-365-account"></a>シナリオ 1: 組織には既に Office 365 環境があり、Power BI にサインアップしたユーザーには既に Office 365 アカウントがあります。
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-an-microsoft-365-account"></a>シナリオ 1: 組織に既存の Microsoft 365 環境が既に存在し、Power BI にサインアップするユーザーには既に Microsoft 365 アカウントがあります。
 
 このシナリオでは、テナント (たとえば、contoso.com) 内で、ユーザーには職場や学校のアカウントが既にあり、まだ Power BI を使っていない場合、マイクロソフトが単にそのアカウントのプランをライセンス認証することになります。ユーザーには、Power BI サービスの使い方が自動的に通知されます。
   
-### <a name="scenario-2-your-organization-has-an-existing-office-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-office-365-account"></a>シナリオ 2: 組織に既存の Office 365 環境がある一方で、Power BI にサインアップしたユーザーには Office 365 アカウントがありません。
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-microsoft-365-account"></a>シナリオ 2: 組織に既存の Microsoft 365 環境があり、Power BI にサインアップするユーザーに Microsoft 365 アカウントがない。
 
-このシナリオでは、ユーザーには、組織のドメイン (たとえば、contoso.com) のメール アドレスはあっても、まだ Office 365 アカウントがありません。 この場合、ユーザーは Power BI にサインアップすることができ、自動的にアカウントが割り当てられます。 この手順で、ユーザーは Power BI サービスにアクセスできるようになります。 たとえば、明日華という名前の従業員が職場のメール アドレス (たとえば、Asuka@contoso.com) を使ってサインアップした場合、マイクロソフトは Contoso の Office 365 環境のユーザーとして自動的に明日華を追加して、このアカウントに対して Power BI のライセンス認証を行います。
+このシナリオでは、ユーザーは組織のドメイン (たとえば、contoso.com) に電子メールアドレスを持っていますが、まだ Microsoft 365 アカウントを持っていません。 この場合、ユーザーは Power BI にサインアップすることができ、自動的にアカウントが割り当てられます。 この手順で、ユーザーは Power BI サービスにアクセスできるようになります。 たとえば、ナンシーという名前の従業員が勤務先の電子メールアドレス (Nancy@contoso.com など) を使用してサインアップする場合、Microsoft は自動的にナンシーを Contoso Microsoft 365 環境のユーザーとして追加し、そのアカウントに対して Power BI をアクティブ化します。
   
-### <a name="scenario-3-your-organization-does-not-have-an-office-365-environment-connected-to-your-email-domain"></a>シナリオ 3: 組織には、使っているメール ドメインに接続された Office 365 環境がありません。
+### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>シナリオ 3: お客様の組織では、Microsoft 365 環境が電子メールドメインに接続されていません。
 
 Power BI を使うために組織が行うべき管理作業は何もありません。
   
 > [!IMPORTANT]
-> 組織にメール ドメインが複数あり、すべてのメール アドレスの拡張子を同じテナントに含める場合は、ユーザーがプライマリ テナントを作成する前に、そのテナントにすべてのメール アドレス ドメインを追加します。 テナントが作成された後で、ユーザーをテナント間で自動的に移動する方法は、サポートされていません。 このプロセスの詳細については、「[複数のドメインが存在する場合、ユーザーが追加される office 365 テナントを制御](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)する方法」を参照してください。この記事の後半で、「 [office 365 online にドメインを追加](../setup/add-domain.md)する」を参照してください。 
+> 組織にメール ドメインが複数あり、すべてのメール アドレスの拡張子を同じテナントに含める場合は、ユーザーがプライマリ テナントを作成する前に、そのテナントにすべてのメール アドレス ドメインを追加します。 テナントが作成された後で、ユーザーをテナント間で自動的に移動する方法は、サポートされていません。 このプロセスの詳細については、「[複数のドメインが存在する場合、ユーザーが追加されるテナントを制御](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to)する方法」を参照してください。この記事の後半で、「 [Office 365 online にドメインを追加](../setup/add-domain.md)する」を参照してください。 
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>組織側での現在のユーザー ID の管理方法は、どのように変わりますか?
 
-組織に既に Office 365 環境があり、組織のすべてのユーザーに Office 365 アカウントがある場合は、ID 管理に変更はありません。
+組織に既存の Microsoft 365 環境が既に存在し、組織内のすべてのユーザーに Microsoft 365 アカウントがある場合、id 管理は変更されません。
   
-組織に Office 365 環境が既にあっても、組織内の一部のユーザーに Office 365 アカウントがない場合、マイクロソフトがテナント内にユーザーを作成して、ユーザーが使っている職場や学校のメール アドレスに基づいてライセンスを割り当てることになります。これは、特定の時間に管理するユーザー数は、組織内のユーザーが当該サービスにサインアップするに従って増えていくことを表しています。
+組織に既存の Microsoft 365 環境が既に存在し、組織内のすべてのユーザーが Microsoft 365 アカウントを持っていない場合は、テナントでユーザーを作成し、ユーザーの職場または学校の電子メールアドレスに基づいてライセンスを割り当てます。 これは、特定の時間に管理するユーザー数は、組織内のユーザーが当該サービスにサインアップするに従って増えていくことを表しています。
   
 ディレクトリをオンプレミスで管理しており、Active Directory フェデレーション サービス (AD FS) を使っている場合、マイクロソフトはテナントにユーザーを追加しません。テナントに参加しようとするユーザーは、組織の管理者に連絡するように求めるメッセージを受信します。
   
-メール ドメインに接続された Office 365 環境がない組織の場合、ID の管理方法は変わりません。ユーザーは、クラウドのみを使用する新しいユーザー ディレクトリに追加され、組織の管理者はテナントの管理者としての役割を引き継いで、ユーザーを管理できるようになります。
+お客様の組織で Microsoft 365 環境が電子メールドメインに接続されていない場合、id の管理方法に変更はありません。 ユーザーは、クラウドのみを使用する新しいユーザー ディレクトリに追加され、組織の管理者はテナントの管理者としての役割を引き継いで、ユーザーを管理できるようになります。
   
 ## <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>ユーザー用にマイクロソフトによって作成されたテナントを管理するためのプロセス
 
@@ -102,14 +102,14 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
     
 4. 左上にあるアプリ起動ツールのアイコンを選択して、**[管理]** をクリックします。
     
-    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![管理者アプリが強調表示されたアプリ起動ツール](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. [**管理者になる**] ページの手順を読んで、[**はい、管理者にする]** を選択します。
     
     > [!NOTE]
     >  このオプションが表示されない場合は、管理者が既に存在します。 
   
-## <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>複数のドメインがある場合にユーザーが追加される Office 365 テナントを管理できますか?
+## <a name="if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to"></a>複数のドメインがある場合、ユーザーが追加するテナントを制御できますか。
 
 何の操作も行わない場合、テナントはユーザーのメール ドメインとサブドメインごとに作成されます。
   
@@ -118,18 +118,18 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 - 目的のテナントをあらかじめ作成しておくか、または既存のテナントを使って、1 つにまとめたい既存のドメインとサブドメインを目的のテナントに追加します。この操作で、それらのドメインおよびサブドメインで終わるメール アドレスを持つすべてのユーザーは、サインアップ時に目的のテナントに自動的に参加するようになります。
     
 > [!IMPORTANT]
-> テナントが作成された後にユーザーをテナント間で自動的に移動する仕組みは、サポートされていません。 単一の Office 365 テナントへのドメインの追加については、「 [office 365 にドメインを追加](../setup/add-domain.md)する」を参照してください。 
+> テナントが作成された後にユーザーをテナント間で自動的に移動する仕組みは、サポートされていません。 単一の Microsoft 365 テナントへのドメインの追加については、「 [Office 365 にドメインを追加](../setup/add-domain.md)する」を参照してください。 
   
 > [!IMPORTANT]
 > テナントの管理に関する追加情報とガイダンスについては、「 [POWER BI 管理](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)について」を参照してください。 
   
-## <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>ユーザーが既存の Office 365 テナントに参加できないようにする方法
+## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>ユーザーが既存のテナントに参加できないようにするにはどうすればよいですか?
 
-ユーザーが既存の Office 365 テナントに参加できないようにするには、管理者としての手順を実行します。 この設定をブロックすると、ユーザーのサインイン試行が失敗し、組織の管理者に連絡するように指示されます。以前に自動ライセンス配布を無効にしている場合 (たとえば、学生、教職員、職員の Office 365 の教育など)、このプロセスを繰り返す必要はありません。
+ユーザーが既存のテナントに参加できないようにするには、管理者としての手順を実行します。 この設定をブロックすると、ユーザーのサインイン試行が失敗し、組織の管理者に連絡するように指示されます。以前に自動ライセンス配布を無効にしている場合 (たとえば、学生、教職員、職員の Office 365 の教育など)、このプロセスを繰り返す必要はありません。
   
 これらの手順では、Windows PowerShell を使う必要があります。 Windows PowerShell を使い始める場合は、「[PowerShell ファースト ステップ ガイド](https://go.microsoft.com/fwlink/p/?LinkID=286814)」を参照してください。
   
-この手順を実行するには、最新の 64 ビット バージョンの [Azure Active Directory Module for Windows PowerShell](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5) をインストールする必要があります。
+次の手順を実行するには、最新の64ビットバージョンの[Azure Active Directory V2 PowerShell モジュール](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)をインストールする必要があります。
   
 リンクを選択した後、[**実行**] を選択してインストーラーパッケージを実行します。 
   
@@ -142,7 +142,7 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 > [!NOTE]
 > このブロックの設定で、組織の新しいユーザーは Power BI にサインアップできなくなります。 組織内の新しいサインアップを無効にする前に Power BI にサインアップしていたユーザーは、それ以降もライセンスを与えられたままになります。 以前にサインアップしたことがあるユーザーの power bi へのアクセスを削除する方法については、「サインアップし[たユーザーの POWER bi を削除する方法](#how-do-i-remove-power-bi-for-users-that-already-signed-up)」を参照してください。 
   
-## <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>ユーザーを既存の Office 365 テナントに参加できるようにする方法
+## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>ユーザーが既存のテナントに参加できるようにするにはどうすればよいですか?
 
 To allow users to join your tenant, run the opposite command as described in the question above:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
@@ -174,7 +174,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
   
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
     
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
     
@@ -209,7 +209,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
     
 4. [ **Microsoft POWER BI** ] オプションをオフにします。
     
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end 
 
@@ -226,7 +226,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 管理センターの標準プロセスを使用して、テナントからユーザーを削除することができます。 ただし、ユーザーが組織のアクティブなメール アドレスをまだ持っている場合、すべてのユーザーの参加がブロックされていない限り、そのユーザーは再び参加することができます。
   
-## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-office-365-tenant"></a>Office 365 のテナントで Microsoft Power BI のライセンスが 100 万と表示された理由
+## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>Microsoft Power BI の100万ライセンスが自分のテナントに表示されたのはなぜですか?
 
 組織内のユーザーは、正規の組織として、Microsoft Power BI サービスを使用する資格があり、これらのライセンスはテナント内の新しい Power BI ユーザーの空き容量を表します。 これらのライセンスには料金はありません。 ユーザーが Power BI にサインアップできるようにすることを選択した場合、サインアッププロセスが完了すると、これらの利用可能なライセンスのいずれかが割り当てられます。 管理センターを使用して自分でユーザーにライセンスを割り当てることもできます。
   

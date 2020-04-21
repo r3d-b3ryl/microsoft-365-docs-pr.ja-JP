@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Microsoft 365 Admin アプリを入手して、携帯電話またはタブレットからオンライン組織を管理する方法について説明します。
-ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aead9f30f2d75e3eab5099596ff80a575e571306
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353038"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623990"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 admin モバイルアプリについて
 
@@ -42,7 +42,7 @@ ms.locfileid: "42353038"
 - ユーザーのパスワードを再設定する
 - ライセンスを割り当てる
 - グループメンバーシップを追加または削除する
-- ユーザーを追加する 
+- ユーザーの追加 
 
 また、複数のオンライン組織の責任者である場合は、複数の組織にサインインして、それらをすばやく切り替えることができます。 
   
@@ -57,7 +57,7 @@ ms.locfileid: "42353038"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
  
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -66,11 +66,11 @@ ms.locfileid: "42353038"
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>アプリを使うには、何を行う必要がありますか?
 
-アプリをサインインして使用するには、管理者権限を持つ有効な Office 365 for business または Microsoft 365 Business サブスクリプションが必要です。 管理モバイルアプリは、電子メールクライアントではありません。 これは、外出中に組織をサポートするのに役立つ、80を超える機能を備えたリッチな管理アプリです。
+サインインしてアプリを使用するには、管理者権限を持つ有効な Microsoft 365 アプリまたは Microsoft 365 Business Premium サブスクリプションを所有している必要があります。 管理モバイルアプリは、電子メールクライアントではありません。 これは、外出中に組織をサポートするのに役立つ、80を超える機能を備えたリッチな管理アプリです。
   
-### <a name="can-i-use-the-app-with-my-office-365-for-home-subscription"></a>Office 365 Solo サブスクリプションでアプリを使用できますか?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Microsoft 365 ファミリサブスクリプションでアプリを使用できますか?
 
-いいえ。アプリは Office 365 for business および Microsoft 365 Business サブスクリプションでのみ動作します。 
+いいえ。アプリは、Microsoft 365 Apps for business および Microsoft 365 Business Premium サブスクリプションでのみ動作します。 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>組織でディレクトリ同期が有効になっている場合、アプリは機能しますか?
 
@@ -104,4 +104,4 @@ ms.locfileid: "42353038"
   
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -1,5 +1,5 @@
 ---
-title: スプーフィングインテリジェンスを構成する
+title: スプーフィング インテリジェンスを設定する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online および Exchange Online Protection (EOP) で、スプーフィングされた送信者を許可または禁止し、その他のスプーフィングインテリジェンス設定を構成する方法について説明します。
-ms.openlocfilehash: 96a1442c893444108aaf6814484bc4e4d55aa731
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 958f27d190748ee12976a6b47794a23e025172cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528739"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630493"
 ---
-# <a name="configure-spoof-intelligence-in-office-365"></a>Office 365 でスプーフィングインテリジェンスを構成する
+# <a name="configure-spoof-intelligence-in-microsoft-365"></a>Microsoft 365 でスプーフィングインテリジェンスを構成する
 
-Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 顧客の場合、受信メールメッセージは2018年10月時点で EOP のスプーフィングに対して自動的に保護されます。 EOP は、組織のフィッシングに対する全体的な防衛の一環としてスプーフィングインテリジェンスを使用します。 詳細については、「 [Office 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
+Exchange Online または exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) のお客様のために、メールボックスが含まれる Microsoft 365 顧客は、受信電子メールメッセージが EOP 年 10 2018 月現在のスプーフィングから自動的に保護されます。 EOP は、組織のフィッシングに対する全体的な防衛の一環としてスプーフィングインテリジェンスを使用します。 詳細については、「 [Microsoft 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
 
 送信者が電子メールアドレスをスプーフすると、組織のドメインのいずれかのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見えます。 スパムやフィッシング詐欺メールを送信するための送信者スプーフィングを行う攻撃者は、ブロックする必要があります。 しかし、正当な送信者がスプーフィングになっているシナリオもあります。 以下に例を示します。
 
@@ -46,9 +46,9 @@ Exchange Online または exchange online メールボックスを持たない�
 
   - 外部企業は、別の会社に代わって電子メールを送信します (たとえば、自動化されたレポートや、サービスとしてのソフトウェア会社など)。
 
-スプーフィングインテリジェンス (特に唯一の) スプーフィングインテリジェンスポリシーでは、正当な送信者から送信された偽造メールが、Office 365 または外部の電子メールシステムのスパムフィルターでキャッチされないようにしながら、スパムまたはフィッシング攻撃からユーザーを保護することができます。
+スプーフィングインテリジェンス、特に既定の (および唯一の) スプーフィングインテリジェンスポリシーにより、正当な送信者が送信した偽造メールは、Microsoft 365 または外部の電子メールシステムのスパムフィルターでキャッチされることはなく、スパムまたはフィッシング攻撃からユーザーを保護することができます。
 
-セキュリティで保護された Office 365 セキュリティ & コンプライアンスセンターまたは PowerShell (Office 365 お客様向けの Exchange Online PowerShell) で、スプーフィングインテリジェンスを管理することができます。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
+スプーフィングインテリジェンスは、Microsoft 365 Security & コンプライアンスセンターまたは PowerShell (Microsoft 365 お客様向けの Exchange Online PowerShell) で管理できます。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -170,9 +170,9 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 - Exchange Online メールボックスを使用しないスタンドアロン EOP 組織では、スプーフィングインテリジェンス設定を構成することはできません。
 
-- Office 365 Exchange Online メールボックスを使用する組織では、既定の (のみの) フィッシング対策ポリシーでスプーフィングインテリジェンス設定を構成できます。 手順については、 [EOP の「既定のフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
+- Microsoft 365 組織の Exchange Online メールボックスでは、既定の (のみの) フィッシング対策ポリシーでスプーフィングインテリジェンス設定を構成できます。 手順については、 [EOP の「既定のフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
 
-- ATP を使用している Office 365 組織は、既定の ATP のフィッシング対策ポリシーで、およびカスタムの ATP のフィッシング対策ポリシーでも、スプーフィングインテリジェンスの設定を構成できます。 手順については、「 [Office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
+- ATP を使用している Microsoft 365 組織は、既定の ATP のフィッシング対策ポリシーで、およびカスタムの ATP のフィッシング対策ポリシーでも、スプーフィングインテリジェンスの設定を構成できます。 手順については、「 [Microsoft 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
@@ -195,7 +195,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Exchange Online メールボックスを使用している Office 365 組織で、次のいずれかの手順を実行します。
+- Exchange Online メールボックスを使用する Microsoft 365 の組織では、次の手順のいずれかを実行します。
 
   - [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング** \>対策] に移動し、[**既定のポリシー** ] をクリックして、フライアウトの詳細を表示します。
 
@@ -205,7 +205,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
     Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
     ```
 
-- Office 365 ATP 組織で、次のいずれかの手順を実行します。
+- Microsoft 365 ATP 組織で、次のいずれかの手順を実行します。
 
   - セキュリティ & コンプライアンスセンターで、[**脅威管理** \> **ポリシー** \> **ATP のフィッシング対策**] に移動し、次のいずれかの手順を実行します。
 
@@ -224,7 +224,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 - **スプーフィングメールレポート**を確認します。 このレポートは多くの場合、スプーフィングされた送信者を表示して管理するために使用できます。 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
 
-- Sender Policy Framework (SPF) 構成を確認します。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
+- Sender Policy Framework (SPF) 構成を確認します。 SPF の簡単な説明と、すぐに構成を構成する方法については、「 [Microsoft 365 で spf を設定する」を](set-up-spf-in-office-365-to-help-prevent-spoofing.md)参照して、スプーフィングを防止してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
 
 - DomainKeys が識別されたメール (DKIM) 構成を確認します。 SPF および DMARC に加えて DKIM を使用して、攻撃者がドメインから受信したように見えるメッセージを送信できないようにする必要があります。 DKIM では、電子メール メッセージのメッセージ ヘッダー内にデジタル署名を追加できます。 詳細については、「 [DKIM を使用して、Office 365 でカスタムドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)」を参照してください。
 

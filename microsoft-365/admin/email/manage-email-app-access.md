@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: 電子メール、予定表、連絡先にアクセスするためにユーザーが使用できるモバイルアプリを選択する方法について説明します。
-ms.openlocfilehash: dcfd356ecdbc7448036507abe8d8f09546b05255
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8627a31f7ec5e3c14b853618bb0383ecc58597cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255213"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628809"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで電子メールアプリのアクセスを管理する
 
@@ -43,7 +43,7 @@ ms.locfileid: "42255213"
 
 2. [**モバイル電子メールアクセスのオプション**] ページで、チェックボックスをオンにして、組織内のユーザーが自分のデバイスで電子メールアプリを使用する方法を選択します。
   
-組織内のユーザーが自分のモバイルデバイスから自分の Office 365 職場または学校のアカウントにアクセスする方法を設定するオプションを選択します。
+組織内のユーザーが自分のモバイルデバイスから職場または学校のアカウントにアクセスする方法を設定するオプションを選択します。
   
 - **Outlook のみ**-モバイルデバイスで Outlook for Android または Outlook for iOS アプリを使用するには、組織内のユーザーが必要です。 
     

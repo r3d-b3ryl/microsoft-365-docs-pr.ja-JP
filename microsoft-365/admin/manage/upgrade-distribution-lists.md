@@ -1,5 +1,5 @@
 ---
-title: Outlook で配布リストを Office 365 グループにアップグレードする
+title: Outlook で配布リストを Microsoft 365 グループにアップグレードする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,31 +18,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: Outlook で1つまたは複数の配布リストを Office 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: c3acf1d47a37d79d666b1b951bea704c273ccf09
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Outlook で1つまたは複数の配布リストを Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
+ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212283"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627994"
 ---
-# <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>Outlook で配布リストを Office 365 グループにアップグレードする
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
-Outlook を使用して配布リストを Office 365 グループにアップグレードできます。 これは、組織の配布リストに Office 365 グループのすべての機能を提供するのに便利な方法です。 [Outlook で配布リストをグループにアップグレードする理由](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+Outlook を使用して、配布リストを Microsoft 365 グループにアップグレードできます。 これは、組織の配布リストに Microsoft 365 グループのすべての機能を提供するのに便利な方法です。 [Outlook で配布リストをグループにアップグレードする理由](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
 配布リストは 1 つずつ、または複数を同時にアップグレードできます。
 
-## <a name="upgrade-one-or-many-distribution-lists-to-office-365-groups-in-outlook"></a>Outlook で 1 つまたは複数の配布リストを Office 365 グループにアップグレードする
+## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で1つまたは複数の配布リストを Microsoft 365 グループにアップグレードする
 
-配布リストをアップグレードするには、Office 365 全体管理者または Exchange 管理者である必要があります。 Office 365 グループにアップグレードするには、配布グループがメールボックスの所有者である必要があります。 
+配布リストをアップグレードするには、グローバル管理者または Exchange 管理者である必要があります。 Microsoft 365 グループにアップグレードするには、配布グループがメールボックスの所有者である必要があります。 
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
 
-2. Exchange 管理センターで、[**受信者** \> **グループ**] に移動します。<br/>Office 365 グループにアップグレードする対象である配布リスト ( **配布グループ** とも呼ばれる) があることを示す通知が表示されます。<br/> ![[開始] ボタンを選択する](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Exchange 管理センターで、[**受信者** \> **グループ**] に移動します。<br/>Microsoft 365 グループにアップグレードできる配布リスト (**配布グループ**とも呼ばれる) があることを示す通知が表示されます。<br/> ![[開始] ボタンを選択する](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. **グループ** ページから 1 つ以上の配布リスト ( **配布グループ** とも呼ばれる) を選びます。<br/>![配布グループを選択する](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. [アップグレード] アイコンを選択します。<br/>![Office 365 グループへのアップグレードアイコン](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. [アップグレード] アイコンを選択します。<br/>![Microsoft 365 グループへのアップグレードアイコン](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. [情報] ダイアログで、[**はい**] を選択してアップグレードを確認します。 プロセスがすぐに開始されます。 アップグレードする配布リストのサイズや数に応じて、処理には数分または数時間かかることがあります。<br/>配布リストをアップグレードできない場合は、それを示すダイアログが表示されます。 [アップグレードできない配布リストがあるかどうかを](#which-distribution-lists-cannot-be-upgraded)確認します。
 
@@ -77,7 +77,7 @@ PowerShell の使用経験がある場合は、UI ではなく、この手順を
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 
 > [!NOTE]
-> [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell コマンドレットを使用して、1 つの配布リストを Office 365 グループにアップグレードすることもできます。
+> [Set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell コマンドレットを使用して、1つの配布リストを Microsoft 365 グループにアップグレードすることもできます。
 
 ### <a name="upgrade-multiple-dls-in-a-batch"></a>複数の DL を一括してアップグレードする
 
@@ -116,7 +116,7 @@ Get-DistributionGroup| Foreach-Object{
 }
 ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-office-365-groups-in-outlook"></a>Outlook での配布リストの Office 365 グループへのアップグレードに関する FAQ
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする場合の FAQ
 
 ### <a name="which-distribution-lists-cannot-be-upgraded"></a>アップグレードできない配布リスト
 
@@ -149,11 +149,11 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="who-can-run-the-upgrade-scripts"></a>どのユーザーがアップグレード スクリプトを実行できますか?
 
-Office 365 全体管理者または Exchange 管理者の権限を持つユーザーです。
+グローバル管理者または Exchange 管理者の権限を持つユーザー。
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>連絡先カードに依然として配布リストが表示されるのはなぜでしょうか。 アップグレードした配布リストが自動提案リストに表示されないようにするにはどうすればよいでしょうか。
 
-- Outlook の場合: 移行後に Office 365 グループ名を入力して Outlook でメールを送信しようとすると、受信者はグループではなく配布リストとして解決されます。 受信者の連絡先カードは配布リストの連絡先カードとなります。 これは Outlook の受信者キャッシュまたはニックネーム キャッシュに起因します。 電子メールはグループに正常に送信されますが、送信者に混乱を招く可能性があります。<br/>「[Outlook のオートコンプリートの一覧についての情報](https://go.microsoft.com/fwlink/?LinkID=798736)」というトピックにある手順を実行してキャッシュをリセットすると、この問題は解消されます。
+- Outlook の場合: 移行後に Microsoft 365 グループ名を入力して Outlook でメールを送信しようとすると、受信者がグループではなく配布リストとして解決されます。 受信者の連絡先カードは配布リストの連絡先カードとなります。 これは Outlook の受信者キャッシュまたはニックネーム キャッシュに起因します。 電子メールはグループに正常に送信されますが、送信者に混乱を招く可能性があります。<br/>「[Outlook のオートコンプリートの一覧についての情報](https://go.microsoft.com/fwlink/?LinkID=798736)」というトピックにある手順を実行してキャッシュをリセットすると、この問題は解消されます。
 
 - Web 上の Outlook の場合: web 上の Outlook の場合、配布リストの受信者はキャッシュに残ります。 [オートコンプリートリストから [候補の名前または電子メールアドレスを削除](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx)する] の手順に従って、キャッシュを更新し、グループの連絡先カードを表示することができます。
 

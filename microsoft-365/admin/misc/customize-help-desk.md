@@ -1,5 +1,5 @@
 ---
-title: カスタマイズされたヘルプ デスク情報を Office 365 ヘルプ ウィンドウに追加する
+title: カスタマイズしたヘルプデスク情報を [ヘルプ] ウィンドウに追加する
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -20,21 +20,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: 管理センターでカスタムのヘルプデスクカードを作成し、カスタマイズされたサポート連絡先情報を [ヘルプ] ウィンドウに追加します。
-ms.openlocfilehash: af1000be1f8b26e79097f8b686aafc37da6e9366
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248083"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627898"
 ---
-# <a name="add-customized-help-desk-info-to-the-office-365-help-pane"></a>カスタマイズされたヘルプ デスク情報を Office 365 ヘルプ ウィンドウに追加する
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a>カスタマイズしたヘルプデスク情報を [ヘルプ] ウィンドウに追加する
 
 管理者は、カスタマイズした連絡先情報をヘルプウィンドウに追加することによって、ユーザーサポートを合理化できます。 ヘルプが必要なユーザーは、ヘルプアイコンを使用して、組織のカスタムサポート連絡先情報にアクセスできるようになります。
   
-カスタムヘルプデスクカードを作成するには、Office 365 用のグローバル管理者であり、Exchange Online のライセンスを持っている必要があります。 一般[法人向け Office 365 にライセンスを割り当てる](../manage/assign-licenses-to-users.md)方法について説明します。
+カスタムヘルプデスクカードを作成するには、Microsoft 365 のグローバル管理者であり、Exchange Online のライセンスを持っている必要があります。 [Microsoft 365 for business のライセンスを割り当てる](../manage/assign-licenses-to-users.md)方法について説明します。
 
 > [!NOTE]
-> Microsoft からの技術的または課金に関するサポートを求めている管理者の場合は、「 [Office 365 for business サポートにお問い合わせ](../contact-support-for-business-products.md)ください。 
+> Microsoft からの技術的または課金に関するサポートを求めている管理者の場合は、「 [microsoft 365 for business サポートにお問い合わせ](../contact-support-for-business-products.md)ください」を参照してください。 
 
   
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>管理センターでカスタムのヘルプデスクカードを作成する

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを作成したら、電子メールの転送や自動応答など、ユーザーの設定を構成することができます。 後で、メールボックス名やメンバーなどのその他の設定を変更する必要がある場合があります。
-ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212023"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629049"
 ---
 # <a name="configure-a-shared-mailbox"></a>共有メールボックスを構成する
 
@@ -55,7 +55,7 @@ ms.locfileid: "43212023"
 
 3. 新しい名前を入力するか、別のエイリアスを追加します。 プライマリ電子メールアドレスを変更する場合は、メールボックスに複数の電子メールエイリアスを設定する必要があります。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>共有メールボックスに送信されたメールを転送する
 
@@ -83,7 +83,7 @@ ms.locfileid: "43212023"
     
 3. **[オン**] に切り替え、メッセージを転送するメールアドレスを1つ入力します。 任意の有効な電子メールアドレスを指定できます。 複数のアドレスに転送するには、アドレスの[配布グループを作成](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide)し、このボックスにグループの名前を入力する必要があります。
     
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>共有メールボックスから自動応答を送信する
 
@@ -113,7 +113,7 @@ ms.locfileid: "43212023"
 
 5. 組織外のユーザーに*も*返信を送信する場合は、チェックボックスをオンにして返信を取得し、テキストを入力します。 組織内のユーザーには送信せず、組織外のユーザーにのみ送信する方法はありません。
 
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>送信済みメール (返信) の表示を全員に許可する
 
@@ -122,7 +122,7 @@ ms.locfileid: "43212023"
 すべてのユーザーに送信済みメールの表示を許可する場合は、管理センターで、共有メールボックスの設定を編集して、[**送信済みアイテム** \>の**編集**] を選択します。
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-office-365-email"></a>共有メールボックスが Office 365 電子メールへのアクセスに使用できるアプリを選択する
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>共有メールボックスが Microsoft メールへのアクセスに使用できるアプリを選択する
 
 ::: moniker range="o365-worldwide"
 
@@ -146,7 +146,7 @@ ms.locfileid: "43212023"
 
 3. メンバーが共有メールボックスへのアクセスに使用できるようにするすべてのアプリのトグルを **[オン**にする。 使用しないアプリについては、[**オフ**にする (非表示) に設定します。 
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>訴訟ホールドに共有メールボックスを配置する
@@ -177,7 +177,7 @@ ms.locfileid: "43212023"
 
 4. 必要に応じて、期間、s に関するメモ、および詳細情報を含む URL を入力します。  
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 
 ## <a name="add-or-remove-members"></a>メンバーを追加または削除する
@@ -264,7 +264,7 @@ ms.locfileid: "43212023"
 
 3. トグルを**オン**または**オフ**にします。 
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 > [!NOTE]
 > 共有メールボックスをアドレス一覧に表示しないようにすると、共有メールボックスがアドレス一覧に再び表示されるまで、新しい共有メールボックスのメンバーが非表示のメールボックスを Outlook プロファイルに追加できなくなります。 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 グループのメンバーを追加または削除する
+title: Microsoft 365 グループのメンバーを追加または削除する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,16 +20,16 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Microsoft 365 管理センターで、グループにメンバーを追加したり、グループからメンバーを削除したり、グループ所有者の状態を管理したりする方法について説明します。
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894713"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631315"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>管理センターを使用して Office 365 グループのメンバーを追加および削除する
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する
 
-Office 365 では、グループメンバーは、通常、グループを作成し、参加するグループに自らを追加するか、グループ所有者に招待します。 グループの所有権が変更された場合、またはメンバーを追加または削除することを決定した場合は、管理者としてその変更を行うこともできます。 これらの変更を行うことができるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Office 365 グループとは](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+Microsoft 365 では、グループメンバーは通常、自分のグループを作成し、参加するグループに自らを追加するか、グループ所有者に招待します。 グループの所有権が変更された場合、またはメンバーを追加または削除することを決定した場合は、管理者としてその変更を行うこともできます。 これらの変更を行うことができるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Microsoft 365 グループとは](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > 管理者でない場合は、 [Outlook を使用してメンバーを追加または削除](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)できます。 
@@ -46,7 +46,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
       
 4. 追加するメンバーの名前を検索するか選択します。
     
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
     
 ::: moniker-end
 
@@ -60,7 +60,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
       
 4. 追加するメンバーの名前を検索するか選択します。
     
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
       
 4. 追加するメンバーの名前を検索するか選択します。
     
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
       
 4. 追加するグループの名前を検索または選択します。
     
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -237,7 +237,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
     
 5. 所有者の名前の横にある [X] を選択します。 
     
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
 ::: moniker-end
 
@@ -251,7 +251,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
     
 5. 所有者の名前の横にある [X] を選択します。 
     
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -265,7 +265,7 @@ Office 365 では、グループメンバーは、通常、グループを作成
     
 5. 所有者の名前の横にある [X] を選択します。 
     
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -280,12 +280,12 @@ Office 365 では、グループメンバーは、通常、グループを作成
     
 ## <a name="articles-about-managing-groups"></a>グループの管理に関する記事
     
-- [配布リストを Office 365 グループに移行する - 管理ヘルプ](../manage/upgrade-distribution-lists.md)
+- [Outlook で配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
     
 - [Outlook で配布リストをグループにアップグレードする理由](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[Office 365 グループでゲスト アクセスを管理する](manage-guest-access-in-groups.md)    
+- [Microsoft 365 グループでゲストアクセスを管理する](manage-guest-access-in-groups.md)    
     
-- [PowerShell で Office 365 グループを管理する](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540) : この記事では、キー コマンドレットを紹介し、その例を示します
+- [PowerShell を使用して Microsoft 365 グループを管理](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)する: この記事では、主要なコマンドレットについて説明し、例を示します。
     
-- [Office 365 グループの名前付けポリシー](groups-naming-policy.md)
+- [Microsoft 365 グループの名前付けポリシー](groups-naming-policy.md)

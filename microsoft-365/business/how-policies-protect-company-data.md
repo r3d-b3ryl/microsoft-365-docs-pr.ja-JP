@@ -1,5 +1,7 @@
 ---
-title: Microsoft 365 Business のポリシーで会社のデータを保護する方法
+title: Microsoft 365 for business のポリシーが会社のデータを保護する方法
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -24,14 +26,14 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: ユーザーの個人用デバイスで会社のデータを保護するには、特定のデバイスおよびセキュリティグループを対象としたポリシーを使用します。
-ms.openlocfilehash: 225dbadf599d5287a706ce50ec2b3cc9dd27c996
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: aa7447ae4547ba3180d5d5ebbe18e2840947a1d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320130"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627148"
 ---
-# <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Microsoft 365 Business のポリシーで会社のデータを保護する方法
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business のポリシーが会社のデータを保護する方法
 
 作成するポリシーはデバイスの種類に固有のものであり、特定のユーザーのグループに適用できます。つまり、エグゼクティブに適用されるポリシーと、他の全員に適用される別のポリシーを作成できるということです。
   

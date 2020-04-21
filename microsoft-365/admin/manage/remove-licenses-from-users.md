@@ -1,5 +1,5 @@
 ---
-title: ユーザーからのライセンスの割り当てを解除する
+title: ユーザーからライセンスの割り当てを解除する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: ユーザーアカウントからライセンスを削除する方法について説明します。
-ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400934"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628102"
 ---
-# <a name="unassign-licenses-from-users"></a>ユーザーからのライセンスの割り当てを解除する
+# <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 
 ::: moniker range="o365-worldwide"
 [**アクティブなユーザー** ] ページまたは [**ライセンス**] ページで、ユーザーからライセンスを削除したり、割り当てを解除したりすることができます。 どちらの方法を使用するかは、製品ライセンスを特定のユーザーから割り当てを解除するか、または特定の製品からユーザーライセンスの割り当てを解除するかによって決まります。
@@ -55,7 +55,7 @@ ms.locfileid: "42400934"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
   
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [**アクティブなユーザー** ] ページで、ライセンスの割り当てを解除するユーザーの行を選択します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "42400934"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ライセンスの割り当てを解除するユーザーを選択します。
 
@@ -100,7 +100,7 @@ ms.locfileid: "42400934"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ライセンスの割り当てを解除するユーザーの名前の横にある円を選択します。
 
@@ -114,7 +114,7 @@ ms.locfileid: "42400934"
 
 ::: moniker range="o365-germany"
   
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. すべてのライセンスの割り当てを解除するユーザーの名前の横にあるチェックボックスをオンにします。
 
@@ -128,7 +128,7 @@ ms.locfileid: "42400934"
 
 ::: moniker range="o365-21vianet"
   
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. すべてのライセンスの割り当てを解除するユーザーの名前の横にあるチェックボックスをオンにします。
 
@@ -142,7 +142,7 @@ ms.locfileid: "42400934"
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>ユーザーのライセンスの割り当てを解除するために知っておくべきこと
 
-- グローバル管理者、課金管理者、ライセンス管理者、またはユーザー管理の管理者のいずれかである必要があります。詳細については、「[Office 365 の管理者ロールについて](../add-users/about-admin-roles.md)」を参照してください。
+- グローバル管理者、課金管理者、ライセンス管理者、またはユーザー管理の管理者である必要があります。詳細については、「 [Microsoft 365 管理者ロールについ](../add-users/about-admin-roles.md)て」を参照してください。
 
 - [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](https://go.microsoft.com/fwlink/p/?linkid=848428)ことができます。
 
@@ -152,17 +152,17 @@ ms.locfileid: "42400934"
 
 - OneDrive for Business に保存されたファイルは、ユーザーが Microsoft 365 管理センターから削除されているか、Active Directory 同期によって削除されていない限り、削除されないことに注意してください。 詳細については、「 [OneDrive の保持と削除](https://docs.microsoft.com/onedrive/retention-and-deletion)」を参照してください。
 
-- また、ユーザーのメールボックスは、コンテンツ検索や、ライセンスの削除時に電子情報開示ツールを使用して検索できなくなりました。 詳細については、「 [Office 365 のコンテンツ検索](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)」の「切断されたメールボックスまたはライセンスの解除済みメールボックスの検索」を参照してください。
+- また、ユーザーのメールボックスは、コンテンツ検索や、ライセンスの削除時に電子情報開示ツールを使用して検索できなくなりました。 詳細については、「 [Microsoft 365 のコンテンツ検索](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)」の「切断されたメールボックスまたはライセンスの解除済みメールボックスの検索」を参照してください。
 
 - Office 365 Enterprise E3 などのエンタープライズサブスクリプションを使用している場合、Exchange Online では、[非アクティブなメールボックス](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)を使用して、削除されたユーザーアカウントのメールボックスデータを保持することができます。 詳細については、「 [Exchange Online の非アクティブなメールボックスの作成と管理](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes)」を参照してください。
 
-- ライセンスが削除された後で、ユーザーの Office 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「元[の従業員を削除](../add-users/remove-former-employee.md)する」を参照してください。
+- ライセンスが削除された後で、ユーザーの Microsoft 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「元[の従業員を削除](../add-users/remove-former-employee.md)する」を参照してください。
 
 - ユーザーのライセンスを削除しても、まだ Office がインストールされている場合は、Office の使用時にライセンスのない[製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
 
 ## <a name="related-articles"></a>関連記事
 
-[一般法人向け Office 365 のサブスクリプションとライセンスを理解する](../../commerce/licenses/subscriptions-and-licenses.md)
+[Microsoft 365 for business のサブスクリプションとライセンスについて](../../commerce/licenses/subscriptions-and-licenses.md)
 
 [サブスクリプションからライセンスを削除する](../../commerce/licenses/remove-licenses-from-subscription.md)
 

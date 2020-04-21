@@ -1,5 +1,5 @@
 ---
-title: Windows ベースの DNS を使用して Office 365 用の DNS レコードを作成する
+title: Windows ベースの DNS を使用して Microsoft の DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Office 365 用の Windows ベースの DNS で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Windows ベースの DNS で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
+ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210566"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631371"
 ---
-# <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>Windows ベースの DNS を使用して Office 365 用の DNS レコードを作成する
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Windows ベースの DNS を使用して Microsoft の DNS レコードを作成する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
    
 Windows ベースの DNS を使用して独自の DNS レコードをホストする場合は、この記事の手順に従って、電子メール、Skype for Business Online などのレコードを設定します。
   
-まず、 [dns レコードを Windows ベースの dns で検索して](#find-your-dns-records-in-windows-based-dns)更新できるようにする必要があります。 また、オンプレミスの Active Directory を Office 365 と同期することを計画している場合は、オンプレミスの[Active directory で UPN として使用されるルーティング可能でない電子メールアドレス](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)を参照してください。
+まず、 [dns レコードを Windows ベースの dns で検索して](#find-your-dns-records-in-windows-based-dns)更新できるようにする必要があります。 また、オンプレミスの Active Directory を Microsoft と同期することを計画している場合は、オンプレミスの[Active directory で UPN として使用される、ルーティング可能でない電子メールアドレス](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)を参照してください。
   
 DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメイン名または dns レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
@@ -43,13 +43,13 @@ DNS レコードの追加後にメールフローなどに問題が発生した�
 ## <a name="add-mx-record"></a>MX レコードの追加
 <a name="BKMK_add_MX"> </a>
 
-MX レコードを追加して、自分のドメインのメールを Office 365 で使えるようにします。
+MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにします。
 - 追加する MX レコードには、 **ポイント先のアドレス**を示す値が含まれており、\<MX token\>.mail.protection.outlook.com (\<MX token\> の値は MSxxxxxxx など) のような内容です。   
-- Office 365 の [DNS レコードの追加] ページの [Exchange Online] セクションの [MX] 行で、[point to アドレス] の下に表示されている値をコピーします。 この値は、このタスクで作成しているレコードで使用します。 
+- Microsoft の [DNS レコードの追加] ページの [Exchange Online] セクションの [MX] 行で、[point to アドレス] の下に表示されている値をコピーします。 この値は、このタスクで作成しているレコードで使用します。 
 - ドメインの [DNS マネージャー] ページで、[**アクション** > **メールエクスチェンジャー (MX)**] に移動します。 ドメインのこのページを見つけるには、「 [Windows ベースの dns で dns レコードを検索](#find-your-dns-records-in-windows-based-dns)する」を参照してください。  
 - [**新しいリソースレコード**] ダイアログボックスで、フィールドに次の値が正確に設定されていることを確認します。 
     - Host Name:  
-    - @Address: Office 365 からコピーしたばかりのアドレス値をここに貼り付けます。  
+    - @Address: Microsoft からコピーしたのと同じ値にポイントを貼り付けます。  
     - Pref: 
 - [ **Save Changes**] を選びます。
 - 古い MX レコードをすべて削除します。 他の場所に電子メールをルーティングする、このドメインの古い MX レコードがある場合は、古いレコードの横にあるチェックボックスをオンにして、[**削除** > **OK]** を選択します。 
@@ -57,10 +57,10 @@ MX レコードを追加して、自分のドメインのメールを Office 365
 ## <a name="add-cname-records"></a>CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
-Office 365 に必要な CNAME レコードを追加します。 Office 365 にさらに CNAME レコードが一覧に含まれている場合は、これと同じ全般的な手順に従って追加します。
+Microsoft に必要な CNAME レコードを追加します。 追加の CNAME レコードが Microsoft に表示されている場合は、次に示す同じ一般的な手順を追加します。
   
 > [!IMPORTANT]
-> Office 365 用のモバイルデバイス管理 (MDM) を使用している場合は、2つの CNAME レコードを追加作成する必要があります。 Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (MDM を持っていない場合は、この手順を省略できます)。 
+> Microsoft 用のモバイルデバイス管理 (MDM) を使用している場合は、2つの CNAME レコードを追加作成する必要があります。 Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (MDM を持っていない場合は、この手順を省略できます)。 
 
 - ドメインの [DNS マネージャー] ページで、[ **Action** > **CNAME (cname)**] に移動します。
 - [**新しいリソースレコード**] ダイアログボックスで、フィールドに次の値が正確に設定されていることを確認します。  
@@ -84,10 +84,10 @@ Skype for Business Online の自動検出の CNAME レコードを追加しま�
     - アドレス: webdir.online.lync.com
 - **[OK]** を選択します。
    
-### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Office 365 のモバイル デバイス管理 (MDM) 用として 2 つの CNAME レコードを追加する
+### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Microsoft のモバイルデバイス管理 (MDM) に対して2つの CNAME レコードを追加する
 
 > [!IMPORTANT]
-> Office 365 用のモバイルデバイス管理 (MDM) を使用している場合は、2つの CNAME レコードを追加作成する必要があります。 Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > (MDM を使用していない場合は、この手順を省略できます)。 
+> Microsoft 用のモバイルデバイス管理 (MDM) を使用している場合は、2つの CNAME レコードを追加作成する必要があります。 Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > (MDM を使用していない場合は、この手順を省略できます)。 
   
 
 MDM Enterpriseregistration CNAME レコードを追加します。  
@@ -110,7 +110,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 If you already have an SPF record for your domain, don't create a new one for Office 365. 代わりに、現在のレコードに Office 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが  *1 つの*  SPF レコードになるようにします。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインに対して既に SPF レコードがある場合は、Microsoft 用に新しいを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
 自分のドメインの SPF TXT レコードを追加して、電子メールのスパム防止に役立てます。
   
@@ -129,7 +129,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
 ## <a name="add-srv-records"></a>SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
-Office 365 に必要な2つの SRV レコードを追加します。
+Microsoft に必要な2つの SRV レコードを追加します。
 
 Skype for Business Online web 会議の SIP SRV レコードを追加します。  <br/> 
 -  ドメインの [DNS マネージャー] ページで、[**アクション** \> **その他の新しいレコード**] に移動します。 
@@ -159,16 +159,16 @@ Skype for Business Online フェデレーションの SIP SRV レコードを追
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>ドメインを所有していることを確認するためにレコードを追加します (まだ登録していない場合)。
 <a name="BKMK_verify"> </a>
 
-Office 365 サービスをセットアップするために DNS レコードを追加する前に、Office 365 は、追加しているドメインを所有していることを確認する必要があります。 これを行うには、以下の手順に従ってレコードを追加します。
+Microsoft サービスをセットアップするために DNS レコードを追加する前に、Microsoft は、追加しているドメインを所有していることを確認する必要があります。 これを行うには、以下の手順に従ってレコードを追加します。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認する場合にのみ使用します。その他には影響しません。 
   
 
-1. Office 365 から情報を収集します。  <br/> 
+1. Microsoft から情報を収集します。  <br/> 
 2. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。 
 3. [**ドメイン**] ページで、確認するドメインの [**操作**] 列で、[**セットアップの開始**] を選択します。 
-4. [ **Office へのドメインの追加 365** ] ページで、[**ステップ1を開始**する] を選択します。 
+4. [ **Microsoft へのドメインの追加**] ページで、[**ステップ1の開始**] を選択します。 
 5. [**自分のドメインを所有**していることを確認します] ページで、[**この手順を実行するための**手順を参照してください] ドロップダウンリストで、[**一般的な手順**] を選択します。 
 6. テーブルから、移動先またはポイントを [Address value] にコピーします。 次の手順で必要になります。 この値をコピーして貼り付けることをお勧めします。これにより、すべてのスペースが正しく保たれるようになります。
 
@@ -182,14 +182,14 @@ TXT レコードを追加します。
 
 - ホスト名:@
 - 型: TXT
-- 住所: Office 365 からコピーしたばかりのアドレス値をコピー先またはポイントに貼り付けます。  
+- [住所]: コピー先またはポイントを、Microsoft からコピーしたばかりのアドレス値に貼り付けます。  
 - [ **OK** > **完了**] を選択します。
 
-Office 365 でドメインを確認します。  
+Microsoft のドメインを確認します。  
 > [!IMPORTANT]
 > この操作を行う前に15分ほど待ってから、作成したレコードがインターネットを介して更新できるようにします。       
 
-- Office 365 に戻り、次の手順に従って確認を要求します。 このチェックボックスでは、前の手順で追加した TXT レコードを探します。 正しい TXT レコードが見つかった場合、ドメインは確認されます。  
+- Microsoft に戻って、次の手順に従って確認を要求します。 このチェックボックスでは、前の手順で追加した TXT レコードを探します。 正しい TXT レコードが見つかった場合、ドメインは確認されます。  
 1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
 2. [**ドメイン**] ページで、確認するドメインの [**処理**] 列で、[**セットアップの開始**] を選択します。 
 3. [**自分のドメインを所有**していることを確認してください] ページで、[**完了]、[今すぐ確認**] の順に選択し、確認のダイアログボックスで [**完了**] を選択します。 
@@ -200,7 +200,7 @@ Office 365 でドメインを確認します。
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>オンプレミスの Active Directory で UPN として使用される、ルーティング不可能な電子メールアドレス
 <a name="BKMK_ADNote"> </a>
 
-オンプレミスの Active Directory を Office 365 と同期することを計画している場合は、Active Directory ユーザープリンシパル名 (UPN) サフィックスが有効なドメインサフィックスであることを確認し、@contoso など、サポートされていないドメインサフィックスではないことを確認する必要があります。 UPN サフィックスを変更する必要がある場合は、「[ディレクトリ同期のためにルーティング不能なドメインを準備する方法](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7)」を参照してください。
+オンプレミスの Active Directory を Microsoft と同期することを計画している場合は、Active Directory のユーザープリンシパル名 (UPN) サフィックスが有効なドメインサフィックスであることを確認します。これは、@contoso など、サポートされていないドメインサフィックスではありません。 UPN サフィックスを変更する必要がある場合は、「[ディレクトリ同期のためにルーティング不能なドメインを準備する方法](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7)」を参照してください。
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 

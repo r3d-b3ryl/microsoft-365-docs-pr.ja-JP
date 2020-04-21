@@ -19,20 +19,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: 独自の DNS レコードを管理する方法、または Office 365 で DNS レコードを管理できるようにする方法について説明します。
+description: 独自の DNS レコードを管理する方法や、Microsoft が DNS レコードを管理できるようにする方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: ea3a62c048706f36cd7b1590851d8b372e0a1677
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210358"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628424"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>ドメインを設定する (ホストに固有の手順)
 
 Office 365 でカスタムドメイン (contoso.com) の使用を開始するには、ドメインを確認して、ドメインの DNS レコードを構成する必要があります。 
   
-ドメインホストの管理ツールを使用して DNS レコードを追加および管理するか、Office 365 にドメインレコードの管理を許可することができます。設定することができます。
+ドメインホストの管理ツールを使用して DNS レコードを追加および管理するか、またはドメインレコードの Microsoft コントロールを付与することができます。
   
 正確な手順については、以下のドメインホストを選択してください。 ホストの場所がわからない場合は、「[ドメインレジストラーを検索](find-your-domain-registrar.md)する」を参照してください。
   

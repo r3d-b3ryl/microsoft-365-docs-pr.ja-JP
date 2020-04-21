@@ -1,5 +1,5 @@
 ---
-title: Office 365 Business のパスワードをリセットする
+title: パスワードをリセットする
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,15 +25,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 'Office 365 Business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
-ms.openlocfilehash: a19999ceffa140343c079c6758cc831175c09ab1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
+ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241577"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626948"
 ---
-# <a name="reset-office-365-business-passwords"></a>Office 365 Business のパスワードをリセットする
+# <a name="reset-passwords"></a>パスワードをリセットする
 
 ユーザーのパスワードをリセットする方法に関する短いビデオをご覧ください。<br><br>
 
@@ -45,9 +45,9 @@ ms.locfileid: "42241577"
 
 セルフサービスによるパスワードのリセットを設定することを強くお勧めします。この方法では、ユーザーのパスワードを手動でリセットする必要はありません。詳細については、「[Office 365 でユーザーが自分のパスワードを再設定する](let-users-reset-passwords.md)」を参照してください。
   
-## <a name="reset-an-office-365-business-password-for-someone-else"></a>他のユーザーの Office 365 Business パスワードをリセットする
+## <a name="reset-a-business-password-for-someone-else"></a>他のユーザーの勤務先パスワードをリセットする
 
-次の手順は、Office 365 Business プランを使用しているユーザーのみを対象にしています。  実行するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)
+これらの手順は、Microsoft 365 for business プランを使用しているユーザーのみを対象としています。 実行するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)
 
  
 ::: moniker range="o365-worldwide"
@@ -75,11 +75,11 @@ ms.locfileid: "42241577"
 4. ユーザーが受信可能なメール アドレスを入力して、ユーザーが新しいパスワードを受信できるようにします。ユーザーに連絡を取り、ユーザーがパスワードを受け取ったことを確認します。
  
   
-## <a name="reset-my-office-365-tenant-admin-password"></a>組織の Office 365 のテナント管理者パスワードをリセットする
+## <a name="reset-my-admin-password"></a>自分の管理者パスワードのリセット
 
-パスワードを忘れたものの、パスワードがブラウザーに保存されているなどの理由から、Office 365 にサインインできる場合は、次の手順を使用します。 
+パスワードを忘れた場合に、次の手順を使用します。たとえば、パスワードがブラウザーに保存されているために、Microsoft 365 にサインインできます。 
     
-1. Office 365 で、[**設定**] \> [**Office 365**] \> [**個人情報**] の順に選択します。 
+1. Microsoft 365 で、[**設定** \> ] **Office 365** \> [**個人情報**] を選択します。 
           
 2. [**連絡先の詳細**] と [**連絡用電子メール アドレス**] が正しいことを再確認します。  正しくない場合は、この場で変更します。 
         
@@ -95,7 +95,7 @@ ms.locfileid: "42241577"
     
 - または、[Microsoft サポートにお電話ください](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_)。 
     
-## <a name="reset-all-office-365-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべての Office 365 Business パスワードを同時にリセットする
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべてのユーザーのビジネスパスワードを同時にリセットする
 <a name="bkmk_forgot"> </a>
 
 次の手順は、数十のユーザーを抱える会社を対象にしています。数百～数千のユーザーを抱えている場合は、一括でパスワードをリセットする方法について説明する次のセクションを参照してください。
@@ -112,14 +112,14 @@ ms.locfileid: "42241577"
     
 
   
-## <a name="reset-office-365-business-passwords-in-bulk"></a>Office 365 Business のパスワードを一括でリセットする
+## <a name="reset-business-passwords-in-bulk"></a>ビジネスパスワードを一括でリセットする
 <a name="bkmk_forgot"> </a>
 
 PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)
   
 関連記事: [複数のユーザー アカウントのパスワードを設定する](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password)
   
-概要については、「[PowerShell for Office 365 管理者](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx)」を参照してください。
+概要については、「 [Microsoft 365 管理者向けの PowerShell](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx)」を参照してください。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>社内のすべてのユーザーに対してパスワードの変更を強制する
 <a name="bkmk_forgot"> </a>
@@ -134,14 +134,14 @@ Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してくだ
 ## <a name="related-articles"></a>関連記事
 <a name="bkmk_forgot"> </a>
   
-[Office 365 でユーザーが自分のパスワードをリセットできるようにする](let-users-reset-passwords.md)
+[ユーザーが自分でパスワードをリセットできるようにする](let-users-reset-passwords.md)
 
 [個別のユーザーのパスワードを無期限に設定する](set-password-to-never-expire.md)
 
 [組織のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md)
 
-[Office 365 でユーザーを復元する](restore-user.md)
+[ユーザーを復元する](restore-user.md)
 
-[Office 365 から元従業員を削除する](remove-former-employee.md)
+[元従業員を削除する](remove-former-employee.md)
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

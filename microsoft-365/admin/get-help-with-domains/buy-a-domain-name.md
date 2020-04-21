@@ -1,5 +1,5 @@
 ---
-title: Office 365 でドメイン名を購入する
+title: ドメイン名を購入する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Office 365 でドメイン名を購入する方法について説明します。
+description: Microsoft 365 でドメイン名を購入する方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 89bc24683cd98d2c9f420d1470a864eef857c9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3df4ec9014e2e65288cb30fd9203db4a11708369
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211148"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628592"
 ---
-# <a name="buy-a-domain-name-in-office-365"></a>Office 365 でドメイン名を購入する
+# <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
  *追加、変更またはドメインを削除するには、[ビジネスまたはエンタープライズ プラン](https://products.office.com/business/office)の**グローバル管理者**である**必要**があります。これらの変更は、テナント全体、*カスタマイズ管理者*または*正規ユーザー*に影響を与え、変更を加えることはできません。*  
 
@@ -93,17 +93,17 @@ ms.locfileid: "43211148"
 
 専用ドメインをまだ持っていない場合は、ドメイン名レジストラー、ドメイン リセラー、現在のインターネット プロバイダーなどからオンラインで簡単に購入できます。21Vianet が運営する Office 365 にサインアップすると、たとえば、contoso.partner.onmschina.cn のようなドメイン名を与えられますが、fourthcoffee.com のようなカスタム ドメイン名を使うこともできます。
   
-Office 365 でドメインをセットアップするには、ドメインを所有していること、ドメインの DNS レコードの一部を変更することが必要です。
+Microsoft 365 でドメインをセットアップするには、ドメインを所有しており、ドメインの DNS レコードの一部を変更する必要があります。
   
 > [!CAUTION]
-> ドメイン レジストラーや DNS ホスティング プロバイダーによっては、Office 365 で必要なすべての DNS レコードを作成できないことがあります。必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
+> 一部のドメインレジストラーまたは DNS ホスティングプロバイダーでは、Microsoft 365 に必要なすべての DNS レコードの作成が許可されていません。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
   
-ドメイン レジストラーでドメインを登録した後は、Office 365 に管理者としてサインインし、ドメインをセットアップして、メール アドレスまたは他のサービスで使うことができます。
+ドメイン (ドメインレジストラー) を登録した後、Microsoft 365 を管理者としてサインインし、ドメインをセットアップして、メールアドレスやその他のサービスで使用できるようにします。.
   
 > [!NOTE]
-> The SharePoint Online Public Website information in this article only applies if your organization purchased Office 365 prior to March 9, 2015. 
+> この記事に記載されている SharePoint Online のパブリック Web サイトの情報は、組織が2015年3月9日より前に Microsoft 365 を購入した場合にのみ適用されます。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-office-365"></a>Office 365 に必要な DNS レコードをすべてサポートしているドメイン レジストラー
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365 に必要なすべての DNS レコードをサポートするドメインレジストラー
 
 - [Oray](https://oray.com/)
     
@@ -117,10 +117,10 @@ Office 365 でドメインをセットアップするには、ドメインを所
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 にドメインを追加する](../setup/add-domain.md)
+[Microsoft 365 にドメインを追加する](../setup/add-domain.md)
 
 [ドメイン FAQ](../setup/domains-faq.md)
 
-[Office 365 のドメインに関するヘルプ](get-help-with-domains.md)
+[ドメインに関するヘルプを取得する](get-help-with-domains.md)
 
-[DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 
+[DNS レコードを更新して、web サイトを現在のホスティングプロバイダーに保持](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)します。

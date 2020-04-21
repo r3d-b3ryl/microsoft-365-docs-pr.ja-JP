@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 管理センター-今月追加された機能について説明します。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 06cc7519cae2b71581f0f50e9e8eec15fe77e568
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43171014"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627524"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -36,59 +36,10 @@ ms.locfileid: "43171014"
 > **3月以降の "クラシック" 管理センターの退職**<br><br>
 Admin.microsoft.com にサインインしたら、毎回新しい管理センターに移動します。 そして3月には、従来の管理センターに切り替える機能の無効化を開始します。 現時点では、引き続き切り替えることはできますが、新しい管理センターにはパリティが設定され、それを超えると、すべての組織のスイッチがオフになります。 <br><br> *最終更新日: 2020 年3月2日*
 
-他の Microsoft クラウドサービスの新機能に興味がある場合は、次のことをご検討ください。
+他の管理センターの新機能をご希望の場合は、次のようにしてください。
 
-- [Exchange Online の新機能](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Microsoft Intune の新機能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Microsoft 365 コンプライアンスセンターの新機能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office 更新プログラム](https://docs.microsoft.com/OfficeUpdates/)
-
-## <a name="march-2020"></a>2020 年 3 月
-
-### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>特集フィードバックの修正: ライセンスの "ユーザーの追加" の信頼性を向上させる
-
-ユーザーを追加する際にライセンスを割り当てることがどれほど難しいかについて、管理者から多くのフィードバックを受け取りました。 この修正プログラムに対する最初の更新プログラムを作成し、これらの要求を処理するために、より信頼性の高いバックグラウンドサービスに移行しました。 問題が発生した場合は、エラーメッセージが表示され、もう一度試してみることができます。
-
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="エラーを含むユーザー確認ページを追加します。":::
-
-### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams ホームページカード
-
-Teams の使用状況において uptick を使用すると、一部の組織は、teams をより見つけやすくするための固定されたダッシュボードカードを取得します。 また、このカードには、組織のリモート作業への移行を支援するためのトレーニングとドキュメントへのリンクもあります。 **ホーム**ページに移動するだけで新しいカードが表示されます。
-
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams ホームページカード":::
-
-### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>組織の SharePoint モバイルアプリのテーマをカスタマイズする
-
-Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モバイルアプリと Android 用の SharePoint モバイルアプリで組織のテーマをカスタマイズできるようになりました。 この機能により、SharePoint Online と一致するモバイルイントラネットアプリの環境を、外出先で利用することができます。 テーマのカスタマイズには、ロゴの画像、ナビゲーションバーの色、テキストとアイコンの色、およびアクセントの色が含まれており、認識が容易になります。
-
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="管理センターの設定をモバイルアプリにマッピングする図。":::
-
-:::image-end:::
-
-### <a name="improvements-to-the-add-a-group-wizard"></a>グループの追加ウィザードの機能強化
-
-管理者が新しいグループを作成し、それを同時にチームにした場合、Teams を含むライセンスを持たない所有者を割り当てることができます。 そして、いくつかの頭痛がありました。 所有者が Teams のライセンスを持っていることを確認するためにウィザードフローを更新しましたが、グループをチームに切り替えられないようにするオプションが無効になっている場合。
-
-### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>小規模および中規模企業向けの Microsoft 365 オファーリング
-
-これは来月のお知らせであることがわかっていますが、準備が整っていることを確認してください。
-
-4月21日から、中小企業向けの Office 365 サブスクリプションと Office 365 ProPlus に関連する変更を行っています。 これらの製品は、Microsoft 365 ブランドを使用するようになります。
-
-新しい製品名は2020年4月21日に有効になります。 これは製品名のみに変更され、現時点では価格または機能が変更されません。
-
-|現在の名前 |新しい名前  |
-|---------|---------|
-|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
-|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       | 
-|Office 365 ProPlus    |   エンタープライズ向け Microsoft 365 アプリ      |
-
-### <a name="videos-training-and-docs"></a>ビデオ、トレーニング、ドキュメント
-
-[Microsoft 365 web シリーズの新](https://go.microsoft.com/fwlink/p/?linkid=2118096)機能: 今月のエピソードでは、microsoft Teams の3年の記念日を強調しています。また、オンライン会議での音声品質の向上、交代アプリを使用した最初の回線管理者のための通信の対象化、Teams および Skype コンシューマーとの相互運用性などの新機能についても説明します。
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -111,7 +62,7 @@ Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モ�
 今月のグループ領域には、次の2つの変更が加えられています。
 
 - **グループ名で並べ替え**: [**グループ名**] 列を選択することにより、グループの一覧をアルファベット順に並べ替えることができます。
-- **削除された office 365 グループを復元**する: 削除された office 365 グループを復元するために、Exchange 管理センターに移動する必要はありません。 **Microsoft 365 管理センター** \> **グループ** \> **の削除された** \>グループに移動します (リスト\>からグループを選択)**復元グループ**。 グループを [**グループ**] ボックスの一覧に戻し、グループのメール、会話、ノートブック、ファイル、予定表を復元します。
+- **削除された microsoft 365 グループを復元**する: 削除された microsoft 365 グループを復元するために、Exchange 管理センターに移動する必要はありません。 **Microsoft 365 管理センター** \> **グループ** \> **の削除された** \>グループに移動します (リスト\>からグループを選択)**復元グループ**。 グループを [**グループ**] ボックスの一覧に戻し、グループのメール、会話、ノートブック、ファイル、予定表を復元します。
 
 ### <a name="videos-training-and-docs"></a>ビデオ、トレーニング、ドキュメント
 
@@ -160,7 +111,7 @@ Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モ�
 - [ヘルプまたはサポートを取得する](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [ユーザーを削除する](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Microsoft サブスクリプションを選択する](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Microsoft 365 Business security の概要](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Microsoft 365 for business のセキュリティの概要](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>2019年11月と12月
 
@@ -199,7 +150,7 @@ Ignite 後に提供するお知らせが非常に少ないため、11月と12月
 
 - [Microsoft 365 の基本事項](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Office の基本事項を拡張する](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 - Windows 10 および Office 365 ProPlus でエンタープライズ展開をモダン化します。](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365-エンタープライズ展開を Windows 10 および Microsoft 365 アプリでエンタープライズ向けに改革する](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Microsoft 365 でエンタープライズ展開を管理する](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [大規模な IT 向け Microsoft Office のアップグレード](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Windows 仮想デスクトップを使用して Azure からリモートデスクトップとアプリを配信する](https://docs.microsoft.com/learn/paths/m365-wvd/)
@@ -277,7 +228,7 @@ Ignite 2019 では、いくつかのエキサイティングな機能リリー�
 
 ## <a name="august-2019"></a>2019 年 8 月
 
-### <a name="billing"></a>支払い
+### <a name="billing"></a>請求
 
 今月の請求書とサブスクリプションの更新プログラムが提供されています。
 
@@ -320,7 +271,7 @@ Ignite 2019 では、いくつかのエキサイティングな機能リリー�
 
 お客様の組織をセットアップするのに役立ついくつかの変更が加えられました。 最初に、**セットアップ**と**セットアップページ**の違いについて説明します。 **セットアップ**は、Microsoft のオンラインサービスへのオンボードに使用した初期セットアップウィザードを参照します。 これには、通常、**ドメインの接続**、**ユーザーの追加**、および**Office アプリのダウンロードの**3 つの手順が含まれています。 [**セットアップ] ページ**は、ライセンスを購入した機能をオンにするなど、サブスクリプションを最大限に活用できるようにするために推奨されるタスクを設定した管理センターのページです。
 
-- **セットアップ**- **Office 365 for Business**サブスクリプションの初期セットアップウィザードが更新されました。 この新しい設計により、新しい組織はウィザードを迅速に、さらに成功することができます。
+- **セットアップ**- **Microsoft 365 for business**サブスクリプションの初期セットアップウィザードが更新されました。 この新しい設計により、新しい組織はウィザードを迅速に、さらに成功することができます。
 - [**セットアップ] ページ**-[**セットアップ**] ページでは、サブスクリプションに付属するサービスのセットアップとセキュリティの設定を完了するのに役立つ情報が表示されます。 [**セットアップ**] ページで、非表示の推奨事項を確認することもできます。 サブスクリプションで利用できるかどうかを確認するには、 **Microsoft 365 管理センター** > の**セットアップ**に移動します。
 
 ### <a name="billing--subscriptions"></a>請求 & のサブスクリプション
@@ -414,7 +365,7 @@ Ignite 2019 では、いくつかのエキサイティングな機能リリー�
 
 - **ホーム**ページには、ドメインの追加、ユーザーの追加、Office アプリのダウンロードなどのセットアップの手順をまだ完了していない場合に表示される新しいセットアップバナーが用意されています。
 - **グループ**の一覧と詳細ウィンドウが新しいスタイルに更新されました。 [**グループ** > **グループ**] に移動して変更を表示します。
-  - グループについては、「 **Microsoft Teams** 」タブをグループの詳細ウィンドウに追加し、Office 365 グループをチームに切り替えることができます。 グループを "teamify" にするには、一覧から任意の Office 365 グループを選択し、[ **Microsoft Teams** ] タブを選択して、[**チームの作成**] をクリックします。 グループが既にチームの場合は、 **Teams 管理センター**から管理するためのリンクが表示されます。
+  - グループについては、「 **Microsoft Teams** 」タブを [グループの詳細] ウィンドウに追加しました。これにより、microsoft 365 グループをチームに切り替えることができます。 グループを "teamify" にするには、一覧から Microsoft 365 グループを選択し、[ **Microsoft Teams** ] タブを選択して、[**チームの作成**] を選択します。 グループが既にチームの場合は、 **Teams 管理センター**から管理するためのリンクが表示されます。
   - 最後に、 **Teams の状態**を**グループ**リストに追加することができます。 列見出しで、[**列** > の**チームの状態** > の**保存**] を選択します。
 - **新しい制限付き管理者の役割**-ユーザーに必要なアクセスのみをユーザーに提供できるように、いくつかの新しい管理者の役割を解放しました。
   - **Kaizala admin**: この役割のユーザーには、Microsoft Kaizala 内のすべての管理タスクを実行するアクセス許可があります。これには、Kaizala ディレクトリでのユーザーの作成と管理、Kaizala グループの管理、アクションカードおよびコネクタの管理、およびサービス要求の作成が含まれます。

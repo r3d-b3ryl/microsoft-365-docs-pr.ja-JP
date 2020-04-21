@@ -1,5 +1,5 @@
 ---
-title: Office 365 管理者の概要
+title: 管理センターの概要
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ search.appverid:
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: Microsoft 365 管理センターについて説明します。サインインする方法、管理者、およびビデオの紹介をご覧ください。
-ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633465"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623966"
 ---
-# <a name="office-365-admin-overview"></a>Office 365 管理者の概要 
+# <a name="admin-center-overview"></a>管理センターの概要 
 
   
-[Office 365 のビジネスプラン](https://go.microsoft.com/fwlink/?linkid=856886)または[Microsoft 365 for business プラン](https://www.microsoft.com/microsoft-365/business)を購入すると、管理者権限を持つ特別なアカウントが提供されます。 このアカウントは、管理者アカウントと呼ばれます。
+[Microsoft 365 app for business プラン](https://go.microsoft.com/fwlink/?linkid=856886)または[microsoft 365 for business プラン](https://www.microsoft.com/microsoft-365/business)を購入すると、管理者権限を持つ特別なアカウントが提供されます。 このアカウントは、管理者アカウントと呼ばれます。
   
 このアカウントを使用すると、Microsoft 365 管理センターにアクセスして、ユーザーの追加、サブスクリプションの管理、パスワードのリセットなど、ビジネスの管理を行うことができます。 演習
   
@@ -66,6 +66,6 @@ ms.locfileid: "42633465"
     
 - **中小企業**:事業主または共同所有者に問い合わせます。多くの場合、業務に関するすべてのコンピューターの保守を担当している IT コンサルタントに管理者アクセス許可を付与しています。 
     
-既定では、一般法人向け Office 365 のサブスクリプションを購入してサインアップしたユーザーに管理者アクセス許可が与えられます。このユーザーは、組織の Office 365 の管理を支援する管理者アクセス許可を他のユーザーに割り当てることができます。
+既定では、Microsoft 365 for business サブスクリプションにサインアップして購入するユーザーは、管理者アクセス許可を取得します。 そのユーザーは、組織のために Microsoft 365 を管理するために、他のユーザーに管理者アクセス許可を割り当てることができます。
   
 お客様の職場または学校で支援を得るためのアイデアがない場合は、ユーザーアカウントとパスワードの入力を行ったユーザーに質問してください。

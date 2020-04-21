@@ -17,18 +17,18 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection でのスプーフィングインテリジェンスの理解のしくみを参照してください。
-ms.openlocfilehash: 92e922bf3045e98de16b07a47113effd9dc6ccdd
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537487"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630931"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-office-365"></a>チュートリアル-Office 365 での ATP のスプーフに関する知識の理解
+# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>チュートリアル-Microsoft 365 での ATP のスプーフに関する知識の理解
 
-Advanced Threat Protection (ATP) を使用した Office 365 の組織では、スプーフィングインテリジェンスの洞察を使用して、認証されていない電子メールを正当に送信している送信者をすばやく判断できます。 スプーフィングされたメッセージの送信を許可することにより、ユーザーが誤検知を行うリスクを軽減することができます。 また、スプーフィングインテリジェンスの洞察を使用して、許可されたドメインペアを監視および管理して、セキュリティの追加の層を提供したり、安全でないメッセージが組織に到着しないようにしたりすることもできます。
+Advanced Threat Protection (ATP) を使用した Microsoft 365 の組織では、スプーフィングインテリジェンスの洞察を使用して、認証されていない電子メールを正当に送信している送信者をすばやく判断できます。 スプーフィングされたメッセージの送信を許可することにより、ユーザーが誤検知を行うリスクを軽減することができます。 また、スプーフィングインテリジェンスの洞察を使用して、許可されたドメインペアを監視および管理して、セキュリティの追加の層を提供したり、安全でないメッセージが組織に到着しないようにしたりすることもできます。
 
-[Office 365 セキュリティ & コンプライアンスセンターのレポートと洞察](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、ダッシュボードから洞察や推奨されるアクションに簡単に移動する方法を確認するのに役立ちます。
+[セキュリティ & コンプライアンスセンターのレポートと分析](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、ダッシュボードから洞察や推奨されるアクションに簡単に移動する方法を確認するのに役立ちます。
 
 このチュートリアルは、セキュリティ & コンプライアンスセンターに対していくつかの方法があります。 レポートと分析情報の移動については、「関連項目」セクションのチュートリアルを参照してください。
 
@@ -38,11 +38,11 @@ Advanced Threat Protection (ATP) を使用した Office 365 の組織では、�
 
   セキュリティ & コンプライアンスセンターでは、複数のダッシュボードからスプーフィングインテリジェンスの洞察を確認できます。 どのダッシュボードを使用しているかに関係なく、洞察は同じ情報を提供し、同じタスクをすばやく実行することができます。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スプーフィングインテリジェンスの洞察を使用するには、**組織の管理**、**セキュリティ管理者**、または**セキュリティリーダー**の役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スプーフィングインテリジェンスの洞察を使用するには、**組織の管理**、**セキュリティ管理者**、または**セキュリティリーダー**の役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-- ATP のフィッシング対策ポリシーのスプーフィングインテリジェンスを有効または無効にします。 詳細については、「 [Office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
+- ATP のフィッシング対策ポリシーのスプーフィングインテリジェンスを有効または無効にします。 詳細については、「 [Microsoft 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
 
-- Exchange Online メールボックスを使用する Office 365 組織と、exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) では、スプーフィングインテリジェンスを使用して、認証されていないメッセージを送信している送信者を監視および管理できます。 詳細については、「 [Configure スプーフ知能 In Office 365](learn-about-spoof-intelligence.md)」を参照してください。
+- Exchange Online メールボックスを使用する Microsoft 365 組織と、Exchange Online メールボックスを含まないスタンドアロンの Exchange Online Protection (EOP) では、スプーフィングインテリジェンスを使用して、認証されていないメッセージを送信している送信者を監視および管理できます。 詳細については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでのスプーフィングインテリジェンスに関する洞察を開く
 
@@ -74,11 +74,11 @@ Advanced Threat Protection (ATP) を使用した Office 365 の組織では、�
 
    **疑わしいドメインペア**は次のとおりです。
 
-   - **信頼度の高いスプーフィング**: Office 365 では、これらのドメインが疑わしいという既知の信号を受信しました。これは、履歴の送信パターンおよびドメインの評価スコアに基づいています。 Office 365 は、ドメインがスプーフィングされており、これらのドメインから送信されたメッセージが正当ではない可能性が高いことを確信しています。
+   - **信頼度の高いスプーフィング**: Microsoft 365 では、これらのドメインが疑わしいという強力な信号を受信しました。これは、履歴の送信パターンおよびドメインの評価スコアに基づいています。 Microsoft 365 では、ドメインがスプーフィングされており、これらのドメインから送信されたメッセージが正当である可能性が低いと確信しています。
 
-   - **やや信頼度**の高いスプーフィング: Office 365 受信した中で、これらのドメインが疑わしいものとして、過去の送信パターンおよびドメインの評価スコアに基づいています。 Office 365 は、ドメインがスプーフィングされており、これらのドメインから送信されたメッセージが正当であることを適度に確信しています。 このバケットは、信頼度の高いスプーフィングバケットよりも誤検知 (FPs) を含む可能性が高くなります。
+   - **やや信頼度**の高いスプーフィング: Microsoft 365 受信した中で、これらのドメインが疑わしいものとなっています。これは、過去の送信パターンとドメインの評価スコアに基づいています。 Office 365 は、ドメインがスプーフィングされており、これらのドメインから送信されたメッセージが正当であることを適度に確信しています。 このバケットは、信頼度の高いスプーフィングバケットよりも誤検知 (FPs) を含む可能性が高くなります。
 
-   - **非疑わしいドメインペア**( **rescued スプーフィング**[を含む](use-dkim-to-validate-outbound-email.md)): rescued スプーフィングは、明示的な認証チェックの失敗した[ドメインである](use-dmarc-to-validate-email.md)ことを示しています[が、暗黙的](how-office-365-uses-spf-to-prevent-spoofing.md)な電子メール認証チェック ([複合認証](email-validation-and-authentication.md#composite-authentication)) に合格しています。 その結果、Office 365 は、自分の代わりにメールを rescued し、メッセージに対するスプーフィング対策アクションが実行されませんでした。
+   - **非疑わしいドメインペア**( **rescued スプーフィング**[を含む](use-dkim-to-validate-outbound-email.md)): rescued スプーフィングは、明示的な認証チェックの失敗した[ドメインである](use-dmarc-to-validate-email.md)ことを示しています[が、暗黙的](how-office-365-uses-spf-to-prevent-spoofing.md)な電子メール認証チェック ([複合認証](email-validation-and-authentication.md#composite-authentication)) に合格しています。 その結果、Microsoft 365 では、ユーザーの代わりにメールが rescued され、メッセージに対するスプーフィング対策アクションは行われませんでした。
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>スプーフィングインテリジェンスの洞察から、疑わしいドメインペアに関する詳細情報を表示する
 
@@ -100,7 +100,7 @@ Advanced Threat Protection (ATP) を使用した Office 365 の組織では、�
 
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 でのスプーフィング対策保護](anti-spoofing-protection.md)
+[Microsoft 365 でのスプーフィング対策保護](anti-spoofing-protection.md)
 
 [チュートリアル - ダッシュボードからインサイトへの移動](from-a-dashboard-to-an-insight.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 にユーザーを個別にまたは一括して追加する
+title: ユーザーを個別にまたは一括して追加する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
-description: Office 365 にユーザーを 1 人ずつまたは同時に複数のユーザーを CSV ファイルから追加する方法について説明します。
-ms.openlocfilehash: 708bce2cb5a2c1b6a621bffc3ce56a2744bb518d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: ユーザーを Microsoft 365 に一度に1つずつ、または複数のユーザーを CSV ファイルから同時に追加する方法について説明します。
+ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241686"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618862"
 ---
-# <a name="add-users-individually-or-in-bulk-to-office-365"></a>Office 365 にユーザーを個別にまたは一括して追加する
+# <a name="add-users-individually-or-in-bulk"></a>ユーザーを個別にまたは一括して追加する
 
-[一般法人向け Office 365](https://go.microsoft.com/fwlink/?LinkID=519395) にサインインしてアクセスする前に、チームの各ユーザーにはユーザー アカウントが必要です。 ユーザー アカウントを追加する最も簡単な方法は、Microsoft 365 管理センターで 1 人ずつ追加する方法です。 この手順を実行すると、Office 365 ライセンス、サインイン用の資格情報、および Office 365 メールボックスがユーザーに付与されます。
+チームのメンバーは、サインインして[Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395)にアクセスする前に、ユーザーアカウントが必要です。 ユーザー アカウントを追加する最も簡単な方法は、Microsoft 365 管理センターで 1 人ずつ追加する方法です。 この手順を実行すると、ユーザーは Microsoft 365 ライセンス、サインイン資格情報、および Microsoft 365 メールボックスを使用できるようになります。
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ ms.locfileid: "42241686"
   
 - [**名前**] 姓、名、表示名、ユーザー名を入力します。 
     
-- [ **ドメイン**] たとえば、ユーザー名が Jakob、そのドメインが contoso.com の場合、Office 365 にサインインするには、「jakob@contoso.com」と入力します。 
+- **ドメイン**たとえば、ユーザーの username が Jakob で、自分のドメインが contoso.com の場合は、「jakob@contoso.com」と入力してにサインインします。 
     
 - [**パスワードの設定**] ユーザー用のパスワードとして、自動生成されたパスワードを使用するのか独自の強力なパスワードを作成するのかを選択します。 
     
@@ -76,7 +76,7 @@ ms.locfileid: "42241686"
   
 - [**名前**] 名、姓、表示名、ユーザー名を入力します。 
     
-- [ **ドメイン**] たとえば、ユーザー名が Jakob、そのドメインが contoso.com の場合、Office 365 にサインインするには、「jakob@contoso.com」と入力します。 
+- **ドメイン**たとえば、ユーザーの username が Jakob で、自分のドメインが contoso.com の場合は、「jakob@contoso.com」と入力してにサインインします。 
     
 - [**連絡先情報**] 展開して、携帯電話番号、住所などを入力します。 
     
@@ -101,7 +101,7 @@ ms.locfileid: "42241686"
   
 - [**名前**] 名、姓、表示名、ユーザー名を入力します。 
     
-- [ **ドメイン**] たとえば、ユーザー名が Jakob、そのドメインが contoso.com の場合、Office 365 にサインインするには、「jakob@contoso.com」と入力します。 
+- **ドメイン**たとえば、ユーザーの username が Jakob で、自分のドメインが contoso.com の場合は、「jakob@contoso.com」と入力してにサインインします。 
     
 - [**連絡先情報**] 展開して、携帯電話番号、住所などを入力します。 
     
@@ -115,10 +115,10 @@ ms.locfileid: "42241686"
 
 ::: moniker-end 
   
-ユーザーの追加後に、ユーザーが Microsoft Online Services チームからのメール通知を受信します。 メールには、ユーザーが Office 365 にサインインするための、Office 365 のユーザー ID とパスワードが含まれています。 新しいユーザーに Office 365 のサインイン情報を知らせる必要があります。 新しいパスワードは、通常のプロセスを使用して通知してください。
+ユーザーの追加後に、ユーザーが Microsoft Online Services チームからのメール通知を受信します。 電子メールには、ユーザーのユーザー ID とパスワードが含まれているため、Microsoft 365 にサインインできます。 新しいユーザーにマイクロソフトの365サインイン情報について通知する必要があります。 新しいパスワードは、通常のプロセスを使用して通知してください。
 
 > [!NOTE]
->メールボックスを移行してユーザーを作成する場合、ユーザーにライセンスを割り当てることによって Office 365 のユーザー アカウントのライセンス認証を行う必要があります。 ユーザーにライセンスを割り当てない場合、30 日間の猶予期間が過ぎるとユーザーのメールボックスが無効になります。 Microsoft 365 管理センターを使用して[ライセンスをユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)方法をご覧ください。
+>メールボックスを移行してユーザーを作成する場合は、ライセンスを割り当てることによってユーザーアカウントをアクティブにする必要があります。 ユーザーにライセンスを割り当てない場合、30 日間の猶予期間が過ぎるとユーザーのメールボックスが無効になります。 Microsoft 365 管理センターを使用して[ライセンスをユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)方法をご覧ください。
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>ビデオ: 管理センターでユーザーを追加して管理する
 
@@ -131,7 +131,7 @@ ms.locfileid: "42241686"
   
 ## <a name="need-help"></a>ヘルプが必要な場合
 
-[一般法人向け Office 365 のサポートにお問い合わせください](../contact-support-for-business-products.md)。  
+[ビジネスサポートについては、Microsoft 365 にお問い合わせ](../contact-support-for-business-products.md)ください。  
 
 ## <a name="have-hundreds-or-thousands-of-users-to-add"></a>多数のユーザーを追加する場合
 
@@ -144,16 +144,15 @@ ms.locfileid: "42241686"
     
 - **ActiveDirectory を使用する場合** [Office 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)します。 Azure AD Connect ツールを使用し、Office 365 で Active Directory ユーザー アカウント (およびその他の Active Directory オブジェクト) を複製します。 同期では、ユーザー アカウントのみが追加されます。 同期されているユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
     
-- **Exchange Server から移行する場合** [複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。 カットオーバー、段階的方法、またはハイブリッド Exchange による方法のいずれかを使って、複数のメールボックスを Office 365 に移行するときは、移行の一部としてユーザーが自動的に追加されます。 移行では、ユーザー アカウントのみが追加されます。 ユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
+- **Exchange Server から移行する場合** [複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。 カットオーバー、ステージング、またはハイブリッド Exchange のいずれかの方法を使用して、複数のメールボックスを Microsoft 365 に移行する場合は、移行の一部としてユーザーを自動的に追加します。 移行では、ユーザー アカウントのみが追加されます。 ユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 に新しい従業員を追加する](add-new-employee.md)
+[Microsoft 365 に新しい従業員を追加する](add-new-employee.md)
 
 [組織からユーザーを削除する](delete-a-user.md)
 
-[Office 365 でユーザーを復元する](restore-user.md)
+[Microsoft 365 でユーザーを復元する](restore-user.md)
 
-[同時に複数のユーザーを Office 365 に追加する](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
-
+[一度に複数のユーザーを Microsoft 365 に追加する](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
 

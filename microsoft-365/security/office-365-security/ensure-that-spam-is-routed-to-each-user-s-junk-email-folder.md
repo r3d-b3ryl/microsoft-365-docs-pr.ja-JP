@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: 管理者は、ハイブリッド環境でスタンドアロンの Exchange Online Protection (EOP) を使用している場合に、オンプレミスのユーザーの迷惑メールフォルダーにスパムをルーティングするようにオンプレミスの Exchange 環境を構成する方法について説明します。
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893720"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621284"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>ハイブリッド環境で迷惑メールフォルダーにスパムを配信するようにスタンドアロン EOP を構成する
 
 > [!IMPORTANT]
-> このトピックは、ハイブリッド環境のスタンドアロン EOP のお客様のみを対象としています。 このトピックは、Exchange Online メールボックスを使用している Office 365 のお客様には適用されません。
+> このトピックは、ハイブリッド環境のスタンドアロン EOP のお客様のみを対象としています。 このトピックは、Exchange Online メールボックスを使用している Microsoft 365 のお客様には適用されません。
 
-ハイブリッド環境でのスタンドアロンの Exchange Online Protection (EOP) のお客様は、社内メールボックスの迷惑メールルールを使用して、EOP のスパムフィルタリング verdicts を認識して変換するようにオンプレミスの Exchange 組織を構成する必要があります。[迷惑メール] フォルダーにメッセージを移動することができます。
+ハイブリッド環境でのスタンドアロンの Exchange Online Protection (EOP) のお客様の場合は、オンプレミスの Exchange 組織を構成して、EOP のスパムフィルタリング verdicts を認識して変換する必要があります。このため、社内メールボックスの迷惑メールルールは、メッセージを [迷惑メール] フォルダーに移動することができます。
 
-具体的には、オンプレミスの Exchange 組織でメールフロールール (トランスポートルールとも呼ばれます) を作成し、次の EOP スパム対策のヘッダーと値のいずれかのメッセージを検索する条件と、スパムの信頼度を設定するアクションを指定する必要があります (SCL) を6にします。
+具体的には、オンプレミスの Exchange 組織内のメールフロールール (トランスポートルールとも呼ばれます) を、次の EOP スパム対策のヘッダーおよび値のいずれかで検索する条件と、それらのメッセージのスパム信頼レベル (SCL) を6に設定するアクションを使用して作成する必要があります。
 
 - `X-Forefront-Antispam-Report: SFV:SPM`(スパムフィルターでスパムとしてマークされたメッセージ)
 
@@ -43,9 +43,9 @@ ms.locfileid: "42893720"
 このトピックでは、Exchange 管理センター (EAC) および社内 Exchange 組織の Exchange 管理シェル (Exchange PowerShell) で、これらのメールフロールールを作成する方法について説明します。
 
 > [!TIP]
-> オンプレミスのユーザーの迷惑メールフォルダーにメッセージを配信する代わりに、EOP でスパム対策ポリシーを構成して、EOP でスパムメッセージを検疫することができます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+> オンプレミスのユーザーの迷惑メールフォルダーにメッセージを配信する代わりに、EOP でスパム対策ポリシーを構成して、EOP でスパムメッセージを検疫することができます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - これらの手順を実行する前に、オンプレミスの Exchange 環境でアクセス許可を割り当てる必要があります。 具体的には、既定では、**組織の管理**、**コンプライアンス管理**、および**レコード管理**の役割に割り当てられている**トランスポートルール**の役割が割り当てられている必要があります。 詳細については、「[役割グループにメンバーを追加する](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group)」を参照してください。
 
@@ -77,7 +77,7 @@ ms.locfileid: "42893720"
 
 3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
-   - [**名前**]: わかりやすい一意のルールの名前を入力します。 例:
+   - [**名前**]: わかりやすい一意のルールの名前を入力します。 以下に例を示します。
 
      - EOP SFV: SPM から SCL 6
 
@@ -111,7 +111,7 @@ ms.locfileid: "42893720"
 New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
 ```
 
-例:
+以下に例を示します。
 
 ```Powershell
 New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
@@ -139,7 +139,7 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- **スパムの送信メッセージをスキャンしない**外部電子メールシステムでは、要求されていないバルクメール (gtube) メッセージの汎用テストを、影響を受ける受信者に送信し、迷惑メールフォルダーに配信されることを確認します。 GTUBE メッセージは、マルウェア設定をテストするための欧州協会 for Computer Antivirus Research (EICAR) テキストファイルに似ています。
+- **スパムの送信メッセージをスキャンしない**外部電子メールシステムでは、要求されていないバルクメール (gtube) メッセージの汎用テストを、影響を受ける受信者に送信し、迷惑メールフォルダーに配信されることを確認します。 GTUBE メッセージは、マルウェア設定をテストするための European Institute for Computer Antivirus Research (EICAR) テキスト ファイルと似ています。
 
   GTUBE メッセージを送信するには、電子メールメッセージの本文に、スペースや改行を含めずに、次のテキストを1行で入力します。
 

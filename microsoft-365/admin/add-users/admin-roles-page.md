@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 85952f1f64db0e1ae94d9c5f69e5c95f7f9c2dab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353268"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618874"
 ---
 # <a name="get-started-with-the-roles-page"></a>[ロール] ページで作業を開始する
 
@@ -55,7 +55,7 @@ ms.locfileid: "42353268"
 
 ### <a name="exchange-admin"></a>Exchange 管理者
 
-ユーザーの電子メールメールボックス、Office 365 グループ、Exchange Online を表示および管理する必要があるユーザーに、Exchange 管理者の役割を割り当てます。 また、Microsoft サポートへのサービス要求を開いて管理することもできます。 [詳細情報](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+ユーザーの電子メールメールボックス、Microsoft 365 グループ、Exchange Online を表示および管理する必要があるユーザーに、Exchange 管理者の役割を割り当てます。 また、Microsoft サポートへのサービス要求を開いて管理することもできます。 [詳細情報](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>グローバル管理者
 
@@ -75,15 +75,15 @@ Azure、Microsoft 365、および Office 365 サービスのサービス要求�
 
 ### <a name="sharepoint-admin"></a>SharePoint 管理者
 
-Microsoft 365 または Office 365 のサブスクリプションを購入すると、チームサイトが自動的に作成され、グローバル管理者がサイトコレクションの管理者として設定されます。 Sharepoint 管理センターにアクセスするユーザーに SharePoint 管理者の役割を割り当てます。 SharePoint 管理者の役割を持つユーザーは、サイトコレクションを作成および管理したり、サイトコレクション管理者を指定したり、ユーザープロファイルを管理したりできます。 SharePoint 管理者の役割を持つユーザーは、Office 365 グループを管理し、Microsoft サポートを通じてサービス要求を開くこともできます。 [詳細情報](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+Microsoft 365 サブスクリプションを購入すると、チームサイトが自動的に作成され、グローバル管理者がサイトコレクションの管理者として設定されます。 Sharepoint 管理センターにアクセスするユーザーに SharePoint 管理者の役割を割り当てます。 SharePoint 管理者の役割を持つユーザーは、サイトコレクションを作成および管理したり、サイトコレクション管理者を指定したり、ユーザープロファイルを管理したりできます。 SharePoint 管理者の役割を持つユーザーは、microsoft 365 グループを管理し、Microsoft サポートを通じてサービス要求を開くこともできます。 [詳細情報](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
-### <a name="teams-service-admin"></a>Teams サービス管理者
+### <a name="teams-service-admin"></a>Teams のサービス管理者
 
-Teams & Skype admin center にアクセスして管理するユーザーに Teams の管理者の役割を割り当てます。 Teams 管理者の役割を持つユーザーは、Office 365 グループを管理し、Microsoft サポートを通じてサービス要求を開くこともできます。 [詳細情報](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+Teams & Skype admin center にアクセスして管理するユーザーに Teams の管理者の役割を割り当てます。 Teams 管理者の役割を持つユーザーは、microsoft 365 グループを管理し、Microsoft サポートを通じてサービス要求を開くこともできます。 [詳細情報](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>ユーザー管理者
 
-ユーザーのパスワードのリセットを管理し、Office 365 ユーザーとグループを管理するユーザーに、ユーザー管理者の役割を割り当てます。 また、Microsoft サポートへのサービス要求を開いて管理することもできます。 [詳細情報](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+ユーザーのパスワードのリセットを管理し、ユーザーとグループを管理するユーザーに、ユーザー管理者の役割を割り当てます。 また、Microsoft サポートへのサービス要求を開いて管理することもできます。 [詳細情報](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 

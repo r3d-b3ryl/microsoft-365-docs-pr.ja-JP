@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: このトピックの目的は、社内の電子メール検疫アプライアンスまたはクラウドベースの保護サービスから Exchange Online Protection (EOP) に切り替えるプロセスを理解していただくことと、着手に役立つリソースを提供することにあります。
-ms.openlocfilehash: e3877f8093f56a0f978ad915769334678afe26e3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e6a25d6477741f5796dd08b5811d97e2d0c76b51
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598214"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631195"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Google Postini、Barracuda Spam、 Virus Firewall、または Cisco IronPort から EOP に切り替える
 
@@ -39,9 +39,9 @@ EOP に切り替える前に、Exchange Online、社内、またはハイブリ�
 
 ## <a name="switch-to-exchange-online"></a>Exchange Online に切り替える
 
-社内のメールボックスがオンプレミスのアプライアンスによって保護されていて、Exchange Online クラウドホスト型メールボックスと EOP 保護にジャンプして、Office 365 cloud messaging and protection 機能を活用したいと考えています。 開始するには、Office 365 にサインアップして、ドメインを追加します。 このシナリオでは、オンプレミスのメールボックスに対するルーティングがないので、コネクタを設定する必要はありません。 最初に[、Office 365 で最新の高度な機能を取得](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)してサインアップし、その機能について理解を深めることができます。
+社内のメールボックスがオンプレミスのアプライアンスによって保護されていて、Exchange Online のクラウドホスト型メールボックスと EOP 保護にジャンプして、Microsoft 365 cloud messaging and protection 機能を活用したいと考えています。 開始するには、Microsoft 365 にサインアップして、ドメインを追加します。 このシナリオでは、オンプレミスのメールボックスに対するルーティングがないので、コネクタを設定する必要はありません。 最初に[、Microsoft 365 で最新の高度な機能を取得](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)してサインアップし、その機能について理解を深める。
 
-Office 365 の設定プロセスでは、クラウド ベースのメールボックス ユーザーを作成できます。
+Microsoft 365 セットアッププロセスでは、クラウドベースのメールボックスユーザーを作成します。
 
 ## <a name="switch-to-a-hybrid-solution"></a>ハイブリッド ソリューションに切り替える
 

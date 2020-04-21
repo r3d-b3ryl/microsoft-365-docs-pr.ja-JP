@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 管理センターで連絡先を作成し、グローバルアドレス一覧を管理する方法について説明します。
-ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: fe402fd5d90147caa7c6ee2f3632749255c672b3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857393"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627922"
 ---
 # <a name="quick-help-contacts"></a>クイック ヘルプ:連絡先
 
@@ -45,7 +45,7 @@ ms.locfileid: "42857393"
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>管理センターで自分が作成した連絡先に他のユーザーがアクセスするにはどうすればよいですか?
 
- Office 365 の**ユーザー**に移動できます。**ディレクトリ**を展開し、[**すべての連絡先**] を選択します。 他のユーザーはそこから各連絡先とその情報を表示することができます。
+ Microsoft 365 の**ユーザー**には、**ディレクトリ**を展開し、[**すべての連絡先**] を選択することができます。 他のユーザーはそこから各連絡先とその情報を表示することができます。
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>組織の連絡先は誰でも作成したり編集したりできますか?
 
@@ -53,7 +53,7 @@ ms.locfileid: "42857393"
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>この連絡先で自分のビジネス クライアントを管理できますか?
 
-Office 365 の連絡先をご利用になることはできますが、制限事項があります。 その他の方法については、「[連絡先を管理する他の方法](ways-to-manage-contacts.md)」を参照してください。
+Microsoft 365 の連絡先はご利用になることができますが、制限事項があります。 その他の方法については、「[連絡先を管理する他の方法](ways-to-manage-contacts.md)」を参照してください。
   
 ## <a name="how-do-i-bulk-import-organizational-contacts"></a>組織の連絡先を一括インポートする方法はありますか。
 
@@ -61,4 +61,4 @@ Windows PowerShell と CSV (コンマ区切り値) ファイルを使用して�
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>疑問が解決しない場合はどうすればよいですか?
 
-[管理ヘルプ](../admin-home.yml) に回答がないかを確認するか、以下でフィードバックをお送りください。
+[管理ヘルプ](../admin-home.md) に回答がないかを確認するか、以下でフィードバックをお送りください。

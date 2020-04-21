@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 を使い始める
+title: Microsoft 365 for business の使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -21,17 +21,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: コンピューター、電話、タブレットで Office 365 をセットアップして使用する方法について説明します。
-ms.openlocfilehash: 695bf6ef3acd6d9f9c4b1a5252172258b0af5a2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: コンピューター、電話、タブレットで Microsoft 365 をセットアップして使用する方法について説明します。
+ms.openlocfilehash: fd52b12ab008e2c8d7b7a4476ae2212e01e1bb10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241530"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623920"
 ---
-# <a name="get-started"></a>概要
+# <a name="get-started"></a>使用を開始する
 
-最近、組織は Office 365 を入手しました。これを使用して、メールの閲覧を開始したり、ドキュメントを共有したりすることができます。 コンピューター、電話、タブレットで Office 365 をセットアップして使用する方法について説明します。
+最近、組織は Microsoft 365 を入手しました。これを使用して、メールの閲覧を開始したり、ドキュメントを共有したりすることができます。 コンピューター、電話、タブレットで Microsoft 365 をセットアップして使用する方法について説明します。
   
 ::: moniker range="o365-worldwide"
 
@@ -66,5 +66,5 @@ ms.locfileid: "42241530"
     
 ## <a name="related-articles"></a>関連記事
 
-[一般法人向け Office 365 のセットアップ - 管理者向けヘルプ](../setup/setup.md)
+[一般法人向け Microsoft 365 のセットアップ-管理者向けヘルプ](../setup/setup.md)
 

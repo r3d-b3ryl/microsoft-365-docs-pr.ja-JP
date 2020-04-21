@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Microsoft パワーアプリ、Microsoft Flow、および財務の Dynamics 365 など、Office 365 セルフサービスサインアップおよび使用可能なセルフサービスプログラムについて説明します。
+description: Microsoft 365 セルフサービスのサインアップと、Microsoft パワーアプリ、Microsoft Flow、および財務の Dynamics 365 などの利用可能なセルフサービスプログラムについて説明します。
 ms.custom: okr_SMB
-ms.openlocfilehash: fa7e6dcb4c40a7a41599b7c1a81fa596868d8e2d
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106114"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627802"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
@@ -38,9 +38,9 @@ ms.locfileid: "43106114"
   
 1. 学生と教職員は、自らが学校に関連付けられていることを示す、学校のメール アドレスを持ちます。たとえば、メール アドレス jakob@uw.edu はワシントン大学の学生であることを示します。
 
-2. 学生と教職員は、自分の[web サイト](https://go.microsoft.com/fwlink/p/?LinkId=536628)に移動し、自分のメールアドレスを使用して、Office 365 ProPlus など、組織が提供するサービスにサインアップします。 学生と教職員は、Microsoft が提供する他の無料サービスにサインアップすることもできます。
+2. 学生と教職員は、[当社の web サイト](https://go.microsoft.com/fwlink/p/?LinkId=536628)に移動し、自分のメールアドレスを使用して、組織が提供する、企業向けの Microsoft 365 アプリなどのサービスにサインアップします。 学生と教職員は、Microsoft が提供する他の無料サービスにサインアップすることもできます。
 
-3. 電子メールアドレスを検証すると、Office 365、Power BI、またはその他のサービスの使用をすぐに開始できます。
+3. 電子メールアドレスを検証し、Microsoft 365、Power BI、またはその他のサービスをすぐに使用できるようにします。
 
 4. ビジネス管理者は、管理センターの [**製品 & サービス**] ページを表示して、サブスクリプションにサインアップしたユーザーを確認できます。 このようにすると、テナント内のサービスのライセンスが新規にあるか、認識されないかを確認できます。 ユーザーがセルフサービスサブスクリプションにサインアップできるかどうかを制御するには、 [Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell コマンドレットを**AllowAdHocSubscriptions**パラメーターと共に使用します。 詳細については、「[セルフサービス設定を制御する方法](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)」を参照してください。
 
@@ -52,8 +52,8 @@ ms.locfileid: "43106114"
 |:-----|:-----|:-----|:-----|
 |**プログラム** <br/> |**説明** <br/> |**追加情報** <br/> |****セルフサービス サインアップ用の Web サイト**** <br/> |
 |Office 365 A1 * * * * <br/> |任意の学生または教師は、学校の電子メールアドレスを使用して無料の Office 365 にサインアップし、web 用に Office アプリを入手できます。また、1 TB の OneDrive クラウドストレージと SharePoint Online を、クラス、チーム、およびプロジェクトサイトで利用できます。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Office 365 A1 Plus** <br/> |資格のある学生および教師は Office 365 A1 Plus にサインアップできます。これには上記のすべてに加え、Office 365 ProPlus が含まれています。Office 365 ProPlus は生産性ソフトウェアです。これには Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access、および Skype for Business が含まれており、デスクトップまたはノート PC にインストールされます。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Power BI** <br/> |Power BI を使用すると、ユーザーはデータを表示したり、探索を共有したり、直観的な新しい方法で共同作業したりできます。 <br/> 組織が既に Office 365 に加入している場合は、さらに「Power BI Pro ユーザーの試用版」のライセンスが表示されることがあります。これは、ユーザーに限定され、高度な機能へのアクセスを無料で提供します。  <br/> |[組織内の Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
+|**Office 365 A1 Plus** <br/> |対象とする学生と教師は、Office 365 A1 Plus にサインアップできます。これには、上記のすべての機能と Microsoft 365 Apps for enterprise が含まれます。 Microsoft 365 enterprise 用アプリは、デスクトップまたはラップトップコンピューターにインストールされている Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access、Skype for Business などの生産性向上ソフトウェアです。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|**Power BI** <br/> |Power BI を使用すると、ユーザーはデータを表示したり、探索を共有したり、直観的な新しい方法で共同作業したりできます。 <br/> 組織が既に加入している場合は、「Power BI Pro ユーザーの試用版」のライセンスが追加されている可能性があります。これは、ユーザーが限定的で、高度な機能へのアクセスを無料で提供しています。  <br/> |[組織内の Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**RMS (Rights Management Services)** <br/> |個人用の RMS は、Azure Rights Management (Azure RMS) で保護された機密性の高いファイルが送信されているが、IT 部門が Azure Rights Management (Azure RMS)、Active Directory Rights Management Services (AD RMS) のいずれも実装していない組織に所属するユーザーのための無料のセルフサービス サブスクリプションです。  <br/> |[個人用の RMS と Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management ポータル](https://portal.azure.com/) したがって、お客様は、特定の権利保護されたドキュメントを開くことができるかどうかをチェックできます。  <br/> |
 |**Microsoft Power Apps** <br/> |PowerApps では、管理者が作成したアプリ、または他のユーザーが作成して共有したアプリを実行することで組織データを管理することができます。アプリはスマートフォンなどのモバイル デバイスで動作します。または Dynamics 365 を開くことによって、ブラウザで実行することもできます。無限の多様性を備えるアプリを作成することができます。すべて、C# などのプログラミング言語は必要ありません。  <br/> |[PowerApps のセルフサービス サインアップ](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |中小企業向けの完全なビジネス ソリューションおよび財務管理ソリューションを提供します。Dynamics 365 for Financials を使用することで、使用開始の 1 日目から注文、販売、請求書やレポートの作成が容易になります。  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Office 365 配布グループにユーザーまたは連絡先を追加する
+title: ユーザーまたは連絡先を配布グループに追加する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: Office 365 ユーザーまたは連絡先を配布グループに追加する方法について説明します。 たとえば、従業員、パートナー、またはベンダーを電子メール配布グループに追加することができます。
-ms.openlocfilehash: 2a6ee1336f738b57740469d6d74b461a69d7fc8c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Microsoft 365 ユーザーまたは連絡先を配布グループに追加する方法について説明します。 たとえば、従業員、パートナー、またはベンダーを電子メール配布グループに追加することができます。
+ms.openlocfilehash: 0b1feacbd3e35adcdf96ae8c42aa330921a4b390
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362372"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629073"
 ---
-# <a name="add-a-user-or-contact-to-an-office-365-distribution-group"></a>Office 365 配布グループにユーザーまたは連絡先を追加する
+# <a name="add-a-user-or-contact-to-a-distribution-group"></a>ユーザーまたは連絡先を配布グループに追加する
 
-Office 365 組織の管理者は、ユーザーまたは連絡先の1つを配布グループに追加することが必要な場合があります (「 [office 365 で配布グループを作成](../setup/create-distribution-lists.md)する」を参照してください)。たとえば、電子メール配布グループに従業員または外部パートナーやベンダーを追加することができます。
+組織の管理者は、ユーザーまたは連絡先の1つを配布グループに追加する必要がある場合があります (「 [Microsoft 365 で配布グループを作成](../setup/create-distribution-lists.md)する」を参照してください)。たとえば、電子メール配布グループに従業員または外部パートナーやベンダーを追加することができます。
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>ユーザーまたは連絡先を配布グループに追加する
 
@@ -92,6 +92,6 @@ Office 365 組織の管理者は、ユーザーまたは連絡先の1つを配�
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-[Office 365 で配布グループとしてメールを送信](../manage/send-email-as-distribution-list.md)する方法について説明します。
+[Microsoft 365 で配布グループとしてメールを送信](../manage/send-email-as-distribution-list.md)する方法について説明します。
   
 

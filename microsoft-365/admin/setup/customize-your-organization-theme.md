@@ -1,5 +1,5 @@
 ---
-title: 組織で使用する Office 365 のテーマをカスタマイズする
+title: 組織のテーマをカスタマイズする
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Office 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
-ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: 'Microsoft 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
+ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826329"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627608"
 ---
-# <a name="customize-the-office-365-theme-for-your-organization"></a>組織で使用する Office 365 のテーマをカスタマイズする
+# <a name="customize-the-theme-for-your-organization"></a>組織のテーマをカスタマイズする
 
-Microsoft 365 管理センターでテーマをカスタマイズする方法について説明します。 一般法人向け Office 365 サブスクリプションの管理者は、組織内のすべてのユーザーに対して上部のナビゲーション バーに表示される既定のテーマを変更することができます。 会社のロゴを追加して、ブランドの他の部分と一致するように色を変更することができます。 ユーザーがロゴを選択したときに移動するための宛先リンクを追加することもできます。 Office 365 の [既定のテーマとカスタムテーマ] の結果が表示されます。
+Microsoft 365 管理センターでテーマをカスタマイズする方法について説明します。 Microsoft 365 for business サブスクリプションの管理者は、組織内のすべてのユーザーについて、トップナビゲーションバーに表示される既定のテーマを変更することができます。 会社のロゴを追加して、ブランドの他の部分と一致するように色を変更することができます。 ユーザーがロゴを選択したときに移動するための宛先リンクを追加することもできます。 Microsoft 365 では、既定のテーマとカスタムテーマの結果が表示されます。
   
-![既定の Office 365 テーマとカスタム Office 365 テーマ](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Microsoft 365 の既定のテーマとカスタムの Microsoft 365 テーマ](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>管理センターでテーマをカスタマイズする
 
@@ -64,7 +64,7 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
     
 4. [**変更の保存**] を選択します。
     
-管理センターに新しいテーマがすぐに表示されます。しばらくすると、Outlook、SharePoint、 [iOS 用の sharepoint モバイルアプリ](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)、および[sharepoint Mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)のページを含む、Office 365 全体に表示されます。 カスタマイズされたテーマが管理センターから変更された例については、次の図を参照してください。
+管理センターに新しいテーマがすぐに表示されます。しばらくすると、Outlook、SharePoint、 [iOS 用の sharepoint モバイルアプリ](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)、および[sharepoint Mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)のページを含む、Microsoft 365 全体に表示されます。 カスタマイズされたテーマが管理センターから変更された例については、次の図を参照してください。
 
 ![m365-テーマ-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -80,7 +80,7 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
   
 テキスト、アイコン、またはボタンの色と背景色の間で推奨されるコントラスト比率は、4.5: 1 です。
 
-以下は、組織にとって魅力的なカスタム Office 365 テーマを使用して簡単にセットアップできるようにするための簡単なフローチャートです。
+以下は、お客様の組織で視覚に訴えるカスタム Microsoft 365 テーマを使用して簡単にセットアップするのに役立つ簡単なフローチャートです。
   - カラフルなバージョンのロゴを使用したいと考えています。
     - 次の設定をお勧めします。
       - **ロゴ画像**: 組織のカラフルなロゴ。

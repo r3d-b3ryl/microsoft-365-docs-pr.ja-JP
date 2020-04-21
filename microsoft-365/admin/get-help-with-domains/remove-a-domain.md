@@ -1,5 +1,5 @@
 ---
-title: Office 365 からドメインを削除する
+title: ドメインを削除する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Office 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210370"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628436"
 ---
-# <a name="remove-a-domain-from-office-365"></a>Office 365 からドメインを削除する
+# <a name="remove-a-domain"></a>ドメインを削除する
 
 作成協力者: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
   
-ドメインを削除しているのは、別の Office 365 サブスクリプション プランにドメインを追加するためですか? それとも、サブスクリプションをキャンセルするためですか? [プランやサブスクリプションを変更する](../../commerce/subscriptions/switch-to-a-different-plan.md)ことも、[サブスクリプションをキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)することもできます。
+別の Microsoft 365 サブスクリプションプランに追加する必要があるため、ドメインを削除していますか? それとも、サブスクリプションをキャンセルするためですか? [プランやサブスクリプションを変更する](../../commerce/subscriptions/switch-to-a-different-plan.md)ことも、[サブスクリプションをキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)することもできます。
   
 ### <a name="step-1-move-users-to-another-domain"></a>手順 1: ユーザーを別のドメインに移動する
 
@@ -210,7 +210,7 @@ ms.locfileid: "43210370"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>ドメインが削除されるまで、どれくらいかかりますか?
 
-Office 365 では、セキュリティグループ、配布リスト、ユーザー、Office 365 グループなどの多くの場所で参照されていない場合、ドメインを削除するのには5分ほどかかる場合があります。 ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。
+Microsoft 365 では、セキュリティグループ、配布リスト、ユーザー、Microsoft 365 グループなどの多くの場所で参照されていない場合、ドメインを削除するのには5分ほどかかる場合があります。 ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。
   
 数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
   
@@ -231,6 +231,6 @@ Office 365 では、セキュリティグループ、配布リスト、ユーザ
 
 [Office 365 のドメインに関するヘルプ](get-help-with-domains.md)
 
-[別の一般法人向け Office 365 プランに切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[別の Microsoft 365 for business プランに切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md)

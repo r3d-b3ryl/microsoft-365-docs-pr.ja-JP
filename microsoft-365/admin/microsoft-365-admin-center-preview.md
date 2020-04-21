@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 新しい Microsoft 365 管理センターについて説明します。
-ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361602"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627982"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>新しい Microsoft 365 管理センターについて
 
-新しい Microsoft 365 管理センターは、Microsoft 365 および Office 365 サービスを簡単に管理する方法を IT チームに提供できるように作られています。 管理センターは、役割や組織の固有のニーズに合わせてカスタマイズされた機能を備えています。日常業務における効率が向上し、ユーザーにとってよりよい操作性を実現するためにデータに基づく判断を行えるよう、実践につなげられる分析情報が提供されます。
+新しい Microsoft 365 管理センターは、IT チームが Microsoft 365 サービスを管理するための簡単な方法として構築されています。 管理センターは、役割や組織の固有のニーズに合わせてカスタマイズされた機能を備えています。日常業務における効率が向上し、ユーザーにとってよりよい操作性を実現するためにデータに基づく判断を行えるよう、実践につなげられる分析情報が提供されます。
   
 Microsoft 365 管理センターは、すべての Microsoft 365 管理者にお使いいただける共通の入り口で、[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) からアクセスできます。 セキュリティやデバイス管理などの専門的なワークスペースを使用すると、きめ細かな制御を行えます。 異なる管理センターがどのように連携しているかについては、この記事で後述する「[特定の種類の IT 担当者役割とセキュリティ、デバイス管理、Exchange などの他のワークスペースについて説明してください](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange)」を参照してください。 
   
@@ -75,7 +75,7 @@ Microsoft 365 管理センターに新機能が追加された際は、管理者
 
 Microsoft 365 は、Office 365、Windows 10、Enterprise Mobility + Security が含まれ、すべてのユーザーがクリエイティブかつ安全に共同作業を行えるようにする完全なインテリジェント ソリューションです。 管理センターでは、次の Microsoft 365 サブスクリプションを試用または購入できます。
   
-- Microsoft 365 Business
+- Microsoft 365 for business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

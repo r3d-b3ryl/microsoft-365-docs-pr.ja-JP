@@ -2,8 +2,8 @@
 title: 元ユーザーのデータにアクセスしてバックアップを作成する
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 従業員が辞職したときに、そのファイルやメールを保存する方法について説明します。
-ms.openlocfilehash: 11c946e5c242b05fea3a15b9427f36029c61082f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 9f665b68f50fd9b7f41ac0a6ef4b9e29ef289d7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142565"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617226"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>元ユーザーのデータにアクセスしてバックアップを作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "43142565"
     
 ## <a name="access-a-former-users-onedrive-documents"></a>元のユーザーの OneDrive ドキュメントにアクセスする
 
-ユーザーのライセンスを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツへのアクセス権を自分に与えることができます。 ユーザーのアカウントを削除した場合、元のユーザーの OneDrive データにアクセスするための既定の期間は 30 日です。 [削除されたユーザーに OneDrive の保持を設定する方法を学習します](/onedrive/set-retention)。 この時間内に[ユーザー アカウントを復元](/office365/admin/add-users/restore-user)しない場合、OneDrive コンテンツは削除されます。 
+ユーザーのライセンスを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツへのアクセス権を自分に与えることができます。 ユーザーのアカウントを削除した場合、既定では30日間で、以前のユーザーの OneDrive データにアクセスできます。 [削除されたユーザーに OneDrive の保持を設定する方法を学習します](/onedrive/set-retention)。 この時間内に[ユーザー アカウントを復元](/office365/admin/add-users/restore-user)しない場合、OneDrive コンテンツは削除されます。 
 
 元のユーザーの OneDrive ファイルを保存するには、まず自分の OneDrive にアクセスしてから、保持するファイルを移動します。 
 
@@ -96,7 +96,7 @@ ms.locfileid: "43142565"
 
 ## <a name="revoke-admin-access-to-a-users-onedrive"></a>ユーザーの OneDrive への管理者アクセスを無効にする
 
-全体管理者は、ユーザーの OneDrive コンテンツへのアクセス権を自分に与えることができますが、必要がなくなったらアクセス権を削除することもできます。 
+グローバル管理者は、ユーザーの OneDrive のコンテンツにアクセスできるようにすることができますが、不要になった場合はアクセスを削除することをお勧めします。 
 
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ ms.locfileid: "43142565"
   
     ![一番上のフォルダーが選択され、[サブフォルダーを含む] がオンになっている [Outlook データ ファイルのエクスポート] ダイアログ ボックス](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. **[次へ]** を選択します。
+7. [**次へ**] を選択します。
     
 8. [**参照**] を選択して、Outlook データ ファイル (.pst) の保存場所を選択します。 *ファイル名*を入力して [**OK**] を選択し、続行します。 
     

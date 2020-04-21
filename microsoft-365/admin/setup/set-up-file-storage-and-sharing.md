@@ -1,5 +1,5 @@
 ---
-title: Office 365 ファイル ストレージと共有をセットアップする
+title: ファイル ストレージと共有をセットアップする
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,24 +27,24 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: OneDrive とチームサイトを使用してファイルの保存と共有を行う方法について説明します。
-ms.openlocfilehash: 6494207518f919a3d984be7e7932740d82e9ea11
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209738"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627560"
 ---
-# <a name="set-up-office-365-file-storage-and-sharing"></a>Office 365 ファイル ストレージと共有をセットアップする
+# <a name="set-up-file-storage-and-sharing"></a>ファイル ストレージと共有をセットアップする
 
 ビジネスでファイルストレージと共有をセットアップするための最適な方法の1つは、OneDrive とチームサイトを一緒に使用することです。 これは、従業員数の少ない中小企業に最適です。
 
-Office 365 でのファイルの保存場所に関する短いビデオをご覧ください。<br><br>
+Microsoft 365 でのファイルの保存場所に関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
-## <a name="where-you-can-store-documents-in-office-365"></a>Office 365 でドキュメントを保存する場所
+## <a name="where-you-can-store-documents-in-microsoft-365"></a>Microsoft 365 でドキュメントを保存できる場所
 
 - OneDrive は、ファイルを共有することにより、個別に使用できるように設計されています。 
 
@@ -52,7 +52,7 @@ Office 365 でのファイルの保存場所に関する短いビデオをご覧
 
 OneDrive およびチームサイトの両方が、自分と従業員に対する anywhere access を提供します。
   
-![Office 365 製品が OneDrive またはチームサイトをどのように使用できるかを示す図](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Microsoft 365 製品が OneDrive またはチームサイトをどのように使用できるかを示す図](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 OneDrive とチームサイトを一緒に使用するときに、各場所に保存する内容に関する推奨事項を次に示します。
   
@@ -60,7 +60,7 @@ OneDrive とチームサイトを一緒に使用するときに、各場所に�
 |:-----|:-----|:-----|
 |**保存する場所** <br/> |**目的** <br/> |**保存するファイル** <br/> |
 |**OneDrive** <br/> |OneDrive にコンテンツを格納することは、コンピューターにファイルを保存するのと似ています。他のユーザーが簡単にアクセスすることはできません。  <br/> 詳細については、「 [OneDrive for](https://support.office.com/article/187f90af-056f-47c0-9656-cc0ddca7fdc2.aspx) business とは」を参照してください。 <br/> |他のチーム メンバーが定期的に共同作業を行ったり、アクセスしたりする必要がないビジネス ファイル。  <br/> |
-|**SharePoint チーム サイト** <br/> |一歩. Office 365 グループを作成すると (たとえば、Microsoft 365 管理センター、Outlook、または Microsoft Teams でチームを作成することによって)、そのグループに対して SharePoint チームサイトが作成されます。 同様に、SharePoint ホームページまたは新しい SharePoint 管理センターから新しい SharePoint チームサイトを作成すると、Office 365 グループも作成されます。 詳細については、「 [sharepoint チームサイト](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)について」および「 [sharepoint Online でチームサイトを作成](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)する」を参照してください。  <br/> |共有の所有権を持つファイル。 組織内の作業単位ごとに個別のチームサイトを作成することをお勧めします。 たとえば、個人や財務文書を小規模なチームに対してプライベートに保つには、別のチームサイトを作成します。  <br/> |
+|**SharePoint チーム サイト** <br/> |一歩. Microsoft 365 グループを作成すると (たとえば、Microsoft 365 管理センター、Outlook、または Microsoft Teams でチームを作成することによって)、そのグループに対して SharePoint チームサイトが作成されます。 同様に、SharePoint ホームページまたは新しい SharePoint 管理センターから新しい SharePoint チームサイトを作成すると、Microsoft 365 グループも作成されます。 詳細については、「 [sharepoint チームサイト](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)について」および「 [sharepoint Online でチームサイトを作成](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)する」を参照してください。  <br/> |共有の所有権を持つファイル。 組織内の作業単位ごとに個別のチームサイトを作成することをお勧めします。 たとえば、個人や財務文書を小規模なチームに対してプライベートに保つには、別のチームサイトを作成します。  <br/> |
 
 > [!NOTE]
 > SharePoint には、ビジネスで使用できるその他の種類のサイトもあります。 イントラネットで[通信サイト](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx)を使用して、幅広い対象ユーザーに関する情報を公開することができます。 また、[ハブサイト](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx)を使用してイントラネット内のサイトを接続することもできます。
@@ -69,13 +69,13 @@ OneDrive とチームサイトを一緒に使用するときに、各場所に�
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>チームメンバーは、自分のファイルを OneDrive に保存できます。
 
-Office 365 ライセンスが割り当てられている (および SharePoint Online が選択された) business の各ユーザーは、OneDrive クラウドストレージを取得します。 これらのユーザーは、任意のデバイスからアクセスできるようにビジネス関連ファイルを保存することができ、そのユーザーのみが使用できます。 たとえば、提案書の下書き、会議のメモ、配布予定のデモ用スクリプトなどを保存することができます。
+Microsoft 365 ライセンスが割り当てられている (および SharePoint Online が選択された) 社内の各ユーザーが OneDrive クラウドストレージを取得します。 これらのユーザーは、任意のデバイスからアクセスできるようにビジネス関連ファイルを保存することができ、そのユーザーのみが使用できます。 たとえば、提案書の下書き、会議のメモ、配布予定のデモ用スクリプトなどを保存することができます。
   
 従業員は、OneDrive のファイルとフォルダーを共有することもできます。 従業員が退職した、または退社した場合は、他のユーザーが OneDrive に保存されている共有ファイルにアクセスできます。
   
 ここでは、チームの各ユーザーが OneDrive をセットアップしてファイルを共有する方法について説明します。
 
-1. <a href="https://portal.office.com/ " target="_blank">Office 365 ポータル</a>に移動し、ユーザー名とパスワードを使用してサインインします。
+1. <a href="https://portal.office.com/ " target="_blank">Microsoft 365 ポータル</a>に移動し、ユーザー名とパスワードを使用してサインインします。
 
 2. アプリ起動ツールで、[ **OneDrive**] を選択します。
 
@@ -107,7 +107,7 @@ Office 365 ライセンスが割り当てられている (および SharePoint O
   
 1. チームサイトのホームページで、左側のナビゲーションメニューから [**ドキュメント**] を選択します。 これで、[ **ドキュメント ライブラリ**] が表示されます。
   
-2. 引き続き Office 365 にサインインしている間は、タスクバーまたは他の場所から Windows**ファイルエクスプローラー**を開きます。 チーム サイトにアップロードするファイルを表示します。
+2. 引き続き Microsoft 365 にサインインしている間は、タスクバーまたは他の場所から Windows**ファイルエクスプローラー**を開きます。 チーム サイトにアップロードするファイルを表示します。
 
 3. チームサイトにアップロードするファイルを選択し、それらを**ドキュメントライブラリ**にドラッグします。
   
@@ -166,7 +166,7 @@ Office 365 ライセンスが割り当てられている (および SharePoint O
 
 OneDrive にファイルを保存すると、他のユーザーと共有しない限り、自分だけがアクセスできるようになります。 ファイルを共有する場合は、転送可能なリンクを作成するか、特定のユーザーのみと共有するかを選択できます。 また、公開用、個人用、個別のプロジェクト用など、さまざまな目的に合わせて OneDrive 内で各フォルダーを作成できます。 各フォルダーは、異なるユーザーやグループと共有したり、あるいは、誰とも共有しないように設定することもできます。
   
-共有の詳細については、「 [Office 365 でファイルとフォルダーを共有](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx)する」も参照してください。
+共有の詳細については、「 [Microsoft 365 でファイルとフォルダーを共有](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx)する」も参照してください。
   
 ### <a name="track-how-much-space-you-have-left"></a>残っている容量を追跡する
 
@@ -178,7 +178,7 @@ OneDrive に残っている記憶域の容量を確認するには、「 [onedri
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>サードパーティ製のストレージサービスを有効または無効にする
 
-Office 365 でユーザーのサードパーティ製ストレージを有効にして、OneDrive およびチームサイトに加えて、Dropbox などのサービスを使用してドキュメントを保存したり共有したりすることができます。 これは、ユーザーが既に使用している、またはビジネスプロジェクトに使用することを望むサービスを提供するための最適な方法です。 組織内のユーザーがサードパーティのサービスでファイルを開いて Office を使用しないようにするには、次の手順に従って無効にします。
+Microsoft 365 では、ユーザーがサードパーティ製のストレージを有効にして、OneDrive およびチームサイトに加えて、Dropbox などのサービスを使用してドキュメントを保存したり共有したりすることができます。 これは、ユーザーが既に使用している、またはビジネスプロジェクトに使用することを望むサービスを提供するための最適な方法です。 組織内のユーザーがサードパーティのサービスでファイルを開いて Office を使用しないようにするには、次の手順に従って無効にします。
   
 > [!IMPORTANT]
 > サードパーティ製の記憶域は既定で有効になっているため、ユーザーが使用できないようにするには、これらの手順をすぐに実行する必要があります。
@@ -197,8 +197,8 @@ Office 365 でユーザーのサードパーティ製ストレージを有効に
 
 - **タブレットとスマートフォンで Office アプリをセットアップします。** この操作を行う必要があります。これにより、OneDrive とチームサイトに保存されているファイルをタブレットまたは電話から**編集**できるようになります。 タブレットまたは電話用の Office アプリをインストールしない場合、ファイルを表示することはできますが、編集することはできません。
 
-  - [Office 365 で Android 上に Office をインストールしてセットアップする](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Microsoft 365 を使用して Android に Office をインストールしてセットアップする](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
 
-  - [Office 365 で iPhone または iPad 上に Office をインストールしてセットアップする](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Microsoft 365 を使用して Office を iPhone または iPad にインストールしてセットアップする](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Windows Phone の Office をセットアップして Office 365 と連携させる](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Microsoft 365 を使用して Windows Phone で Office をセットアップする](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)

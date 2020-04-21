@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106186"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630823"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -44,9 +44,9 @@ ms.locfileid: "43106186"
     - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
     - 詳細な時間フィルター (日、時間、半時間) 
 
-- **インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。 (セキュリティウィジェットを表示するには、Office 365 セキュリティ & コンプライアンスセンターで、[**脅威管理** > の**レビュー**] に移動します。)
+- **インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威管理** > の**レビュー**] に移動します。)
 
-- [Office 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(プレビュー)**
+- [Microsoft 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(プレビュー)**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -60,7 +60,7 @@ ms.locfileid: "43106186"
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [Office 365 で自動調査および応答機能](automated-investigation-response-office.md)を使用する (OFFICE 365 ATP Plan 2)
+- 自動化された[調査および応答機能を](automated-investigation-response-office.md)使用する (OFFICE 365 ATP Plan 2)
 
 - Office [365 との統合 office 365 Management ACTIVITY API を使用した office atp 自動調査と応答イベント](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(OFFICE 365 ATP Plan 2)
 

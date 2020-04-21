@@ -17,16 +17,16 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
-ms.openlocfilehash: d99186e4f3a2831eb794d31a33fa4d56af2cc7a4
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529075"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631087"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
-[セキュリティ & コンプライアンスセンター](https://protection.office.com)では、Office 365 のスパム対策、マルウェア対策、暗号化機能などの電子メールセキュリティ機能が組織を保護していることを確認するのに役立つさまざまなレポートが用意されています。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、**レポート** \> **ダッシュボード**にアクセスすることによって、セキュリティ & コンプライアンスセンターでこれらのレポートを表示できます。
+[セキュリティ & コンプライアンスセンター](https://protection.office.com)では、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メールセキュリティ機能が組織を保護していることを確認するのに役立つさまざまなレポートが提供されています。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、**レポート** \> **ダッシュボード**にアクセスすることによって、セキュリティ & コンプライアンスセンターでこれらのレポートを表示できます。
 
 ![セキュリティ & コンプライアンスセンターのレポートダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -69,7 +69,7 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 このレポートは、Exchange Online Protection を使用しているすべてのユーザーが、疑わしいユーザーまたは制限されたユーザーとしてマークされたユーザーアカウント数を示しています。データは、ユーザーアカウントが問題を示しているか、侵害されている可能性がある状態のいずれかを入力します。 侵害されたユーザーレポートによって、不審または制限付きの状態でマークされたアカウントでスパイクや傾向を特定でき、セキュリティとテナントの wellness に関する問題が発生する可能性があります。
 
-![危険にさらされているユーザーは、Office 365 に表示されたとおりに報告されます。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![侵害されたユーザーのレポートは、Microsoft 365 に表示されます。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="encryption-report"></a>暗号化レポート
 
@@ -91,9 +91,9 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 ![暗号化レポートのデータをメニュー別に表示する](../../media/encryptionreport-viewdataby.png)
 
-新しい暗号化レポートを柔軟に使用することで、傾向を表示し、適切な操作を実行できます。 たとえば、ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。 (詳細については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)」を参照してください)。もう1つの例として、使用可能な暗号化テンプレートが多数あり、それを使用しているユーザーがいない場合は、その機能についてユーザーにトレーニングが必要かどうかを調べることができます。
+新しい暗号化レポートを柔軟に使用することで、傾向を表示し、適切な操作を実行できます。 たとえば、ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。 (詳細については、「 [Microsoft 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)」を参照してください)。もう1つの例として、使用可能な暗号化テンプレートが多数あり、それを使用しているユーザーがいない場合は、その機能についてユーザーにトレーニングが必要かどうかを調べることができます。
 
-このレポートを使用すると、組織のセキュリティとコンプライアンスチームは、メッセージの暗号化の使用方法と、さらにアクションが必要かどうかを監視できます。 暗号化の詳細については、「 [Office の電子メールの暗号化 365](../../compliance/email-encryption.md)」を参照してください。
+このレポートを使用すると、組織のセキュリティとコンプライアンスチームは、メッセージの暗号化の使用方法と、さらにアクションが必要かどうかを監視できます。 暗号化の詳細については、「 [Microsoft 365 の電子メールの暗号化](../../compliance/email-encryption.md)」を参照してください。
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
@@ -170,7 +170,7 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 グラフの1日をポイントすると、受信したスプーフィングメールメッセージの数を確認できます。
 
-レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。 スプーフィング対策保護の詳細については、「 [Office 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
+レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。 スプーフィング対策保護の詳細については、「 [Microsoft 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
 
 ## <a name="spam-detections-report"></a>スパム検出レポート
 
@@ -208,7 +208,7 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 ![このレポートは、マルウェア対策、スパム対策、およびその他のメッセージの検出に関する情報を示します。](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-電子メールインテリジェンスの詳細については、「 [Office 365 のメールフローインテリジェンス](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)」を参照してください。
+電子メールインテリジェンスの詳細については、「 [Microsoft 365 のメールフローインテリジェンス](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)」を参照してください。
 
 ## <a name="user-reported-messages-report"></a>ユーザーによって報告されたメッセージレポート
 
@@ -227,7 +227,7 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 ![セキュリティ & コンプライアンスセンターで、[脅威管理\> ] [ \>ユーザーが報告するメッセージを確認する] を選択します。](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> ユーザーによって報告されたメッセージレポートが正常に機能するためには、Office 365 環境の**監査ログを有効にする必要があり**ます。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「[Office 365 の監査ログの検索を有効または無効にする](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)」をご覧ください。
+> ユーザーによって報告されたメッセージレポートが正常に機能するためには、Office 365 環境の**監査ログを有効にする必要があり**ます。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「 [Microsoft 365 監査ログ検索を有効または無効にする](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)」を参照してください。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するには、どのようなアクセス許可が必要ですか。
 
@@ -243,19 +243,19 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 詳細については、次のリソースを参照してください。
 
-- [Office 365 セキュリティ/コンプライアンス センターのアクセス許可](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-
+- [セキュリティ/コンプライアンス センターのアクセス許可](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+ 
 - [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートでデータが表示されない場合はどうなりますか。
 
-レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「 [Office 365 の脅威から保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)する」を参照してください。
+レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「 [Microsoft 365 の脅威から保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)する」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 の電子メールのスパム対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
+[Microsoft 365 メールのスパム対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
-[Office 365 セキュリティ & コンプライアンスセンターのレポートと分析情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[セキュリティ & コンプライアンスセンターのレポートと分析情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
 
 [セキュリティ & コンプライアンスセンターでレポートのスケジュールを作成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
 

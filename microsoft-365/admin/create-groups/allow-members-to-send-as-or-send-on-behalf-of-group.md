@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: メンバーが Office 365 グループとしてメールを送信できるようにする方法、または Office 365 グループの代理としてメールを送信できるようにする方法について説明します。
-ms.openlocfilehash: b85b0318587058f1c3eb4d681086ccfcad7f1d8d
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: メンバーが Microsoft 365 グループとしてメールを送信できるようにする方法、または Microsoft 365 グループの代理としてメールを送信できるようにする方法について説明します。
+ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212107"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630671"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループに代わって送信または送信できるようにする
 
-送信者または**代理人****と**して送信するアクセス許可が付与されている Office 365 グループのメンバーは、グループとして、またはグループの代わりにメールを送信できます。 このトピックでは、管理者がこれらのアクセス許可を設定する方法について説明します。
+送信者または**代理人****と**して送信するアクセス許可が付与されている Microsoft 365 グループのメンバーは、グループとして、またはグループの代わりにメールを送信できます。 このトピックでは、管理者がこれらのアクセス許可を設定する方法について説明します。
   
-たとえば、Megan Bowen が**トレーニング**Office 365 グループの一部であり、グループに対して**送信**者アクセス許可を持っている場合、グループとしてメールを送信すると、その電子メールを送信した**トレーニング**グループのように表示されます。 
+たとえば、Megan Bowen が**トレーニング**の Microsoft 365 グループに含まれていて、グループに対して**送信**者アクセス許可を持っている場合、グループとして電子メールを送信すると、その電子メールを送信した**トレーニング**グループのように表示されます。 
   
-**[代理送信**] アクセス許可を使用すると、ユーザーは Office 365 グループに代わって電子メールを送信できます。 たとえば、Alex が**マーケティング**Office 365 グループに含まれていて、**代理人**として送信するアクセス許可を持ち、グループとして電子メールを送信する場合、電子メールは、**マーケティングの代理**として Alex によって送信されたように見えます。
+**[代理人として送信**する] アクセス許可を使用すると、ユーザーは Microsoft 365 グループに代わって電子メールを送信できます。 たとえば、Alex が**marketing** Microsoft 365 グループの一部であり、**代理送信**アクセス許可を持ち、グループとして電子メールを送信する場合、電子メールは**Alex がマーケティングの代理**として送信されたように見えます。
 
 > [!IMPORTANT]
 > 特定のユーザーに対し**て [送信**] または **[代理送信**] を構成できますが、両方を構成することはできません。 両方を構成した場合、既定では**として送信**されます。
 
 > [!TIP]
-> Outlook および Outlook on the Web を使用してグループからメールを送信する方法について[は、「Office 365 グループの代理でメールを送信](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)する」を参照してください。
+> Outlook および Outlook on the Web を使用してグループから電子メールを送信する方法について[は、「Microsoft 365 グループの代理](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)としてメールを送信する」を参照してください。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとしてメールを送信できるようにする
 
@@ -52,7 +52,7 @@ ms.locfileid: "43212107"
     
 4. [**送信**] セクションで、グループと**+** して送信するユーザーを追加するための署名を選択します。 
     
-    ![プラス記号を選択して、Office 365 グループとして送信するユーザーを追加します。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![プラス記号を選択して、Microsoft 365 グループとして送信するユーザーを追加します。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 [ **OK]** を選択して、**保存**します。
     
@@ -70,7 +70,7 @@ ms.locfileid: "43212107"
     
 4. [代理人として送信する] **+** セクションで、グループとして送信するユーザーを追加するための署名を選択します。 
     
-    ![プラス記号を選択して、Office 365 グループとして送信するユーザーを追加します。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![プラス記号を選択して、Microsoft 365 グループとして送信するユーザーを追加します。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 [ **OK]** を選択して、**保存**します。
     
@@ -78,7 +78,7 @@ ms.locfileid: "43212107"
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 グループの詳細について](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[Microsoft 365 グループの詳細情報](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
 [[受信者の追加] アクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

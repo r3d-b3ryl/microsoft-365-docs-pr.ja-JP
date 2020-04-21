@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: モバイルデバイスから電子メールにアクセスする方法について説明します。
-ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362392"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629097"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイルデバイスから電子メールにアクセスするためのオプション
 
@@ -41,6 +41,6 @@ Outlook for Android および iOS 用の Outlook モバイルアプリは、職�
   
  **任意の電子メールアプリ**
   
-組織では、Outlook for Android または iOS モバイルアプリを使用して、メール、予定表、連絡先の Office 365 職場または学校のアカウントにアクセスすることをお勧めします。 今後数時間以内に処理を行わないと、電子メールの同期が自動的に開始されます。 Outlook for Android または iOS モバイルアプリを使用することを選択した場合、データは Outlook for Android または Outlook for iOS モバイルアプリとのみ同期されます。 サードパーティ製アプリの使用を継続することを選択すると、データの同期がすぐに開始されます。
+電子メール、予定表、連絡先の職場または学校のアカウントにアクセスするには、Outlook for Android または iOS モバイルアプリを使用することをお勧めします。 今後数時間以内に処理を行わないと、電子メールの同期が自動的に開始されます。 Outlook for Android または iOS モバイルアプリを使用することを選択した場合、データは Outlook for Android または Outlook for iOS モバイルアプリとのみ同期されます。 サードパーティ製アプリの使用を継続することを選択すると、データの同期がすぐに開始されます。
   
 

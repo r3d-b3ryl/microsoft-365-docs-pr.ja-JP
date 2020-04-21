@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 複数のユーザーを追加するときに、テンプレートを作成して使用し、時間を節約し、設定を標準化することができます。
-ms.openlocfilehash: 340d0ae3329b441c2b9773ba06e4f9e69be88526
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353248"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617274"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>テンプレートを作成して使用し、ユーザーを追加する
 
@@ -48,7 +48,7 @@ ms.locfileid: "42353248"
 次の情報はユーザー固有であり、テンプレートには保存されません。
 
 - 名、姓
-- 識別名 (DN)
+- 表示名
 - ユーザー名
 - パスワードを電子メールで送信し、パスワードを送信するユーザーを選択する
 - 携帯電話番号
@@ -88,7 +88,7 @@ ms.locfileid: "42353248"
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 にユーザーを個別に、またはまとめて追加する](add-users.md)
+[Microsoft 365 にユーザーを個別にまたは一括して追加する](add-users.md)
 
-[Office 365 から元従業員を削除する](remove-former-employee.md)
+[以前の従業員を Microsoft 365 から削除する](remove-former-employee.md)
   
