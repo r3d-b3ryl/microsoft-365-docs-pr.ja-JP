@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 セキュリティに関するドキュメント
-summary: セキュリティで保護された Microsoft 365 のセキュリティソリューションおよびサービスについて説明します。これにより、攻撃の対象となる範囲を越えて企業を保護することができます。
+title: Microsoft 365 のセキュリティに関するドキュメント
+summary: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、あらゆる攻撃から企業をより適切に保護できるようにします。
 metadata:
-  title: Microsoft 365 セキュリティに関するドキュメント
-  description: セキュリティで保護された Microsoft 365 のセキュリティソリューションおよびサービスについて説明します。これにより、企業は攻撃の範囲を超えて保護することができます。
+  title: Microsoft 365 のセキュリティに関するドキュメント
+  description: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、あらゆる攻撃から企業をより適切に保護できるようにします
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: de1824abe2b35cb80552c6c261f1389db9b48ca0
   ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 04/09/2020
   ms.locfileid: "43198351"
@@ -42,7 +42,7 @@ landingContent:
     links:
     - text: Office 365 ATP とは
       url: office-365-security/office-365-atp.md
-    - text: Office 365 ATP サービスの説明
+    - text: Office 365 ATP の説明
       url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Azure ATP
   linkLists:
@@ -56,7 +56,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Azure セキュリティセンターとは
+    - text: Azure Security Center とは
       url: https://docs.microsoft.com/azure/security-center/security-center-intro
     - text: サポートされている機能
       url: https://docs.microsoft.com/azure/security-center/security-center-services
@@ -66,7 +66,7 @@ landingContent:
     links:
     - text: Microsoft Cloud App Security とは
       url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
-    - text: Microsoft Cloud App Security を使い始める
+    - text: Microsoft Cloud App Security の使用を開始する
       url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
 - title: Azure Sentinel
   linkLists:
@@ -74,9 +74,9 @@ landingContent:
     links:
     - text: Azure Sentinel とは
       url: https://docs.microsoft.com/azure/sentinel/overview
-- title: セキュリティ管理
+- title: セキュリティの管理
   linkLists:
   - linkListType: overview
     links:
-    - text: セキュリティで保護されたスコア
+    - text: セキュア スコア
       url: mtp/microsoft-secure-score.md

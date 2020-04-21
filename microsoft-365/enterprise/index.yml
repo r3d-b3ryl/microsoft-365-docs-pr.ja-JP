@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: エンタープライズドキュメントとリソースの Microsoft 365
-summary: 高度な機能を備えたインテリジェントクラウドサービスによる、クラス内の生産性向上アプリ。
+title: Microsoft 365 for enterprise のドキュメントとリソース
+summary: インテリジェントなクラウドサービスとクラス最高の生産性向上アプリを組み合わせ、仕事のスタイルを変革します。
 brand: m365
 metadata:
-  title: エンタープライズドキュメントとリソースの Microsoft 365
-  description: IT 担当者、インフォメーションワーカー、パートナー用の Microsoft 365 for enterprise で利用できる製品のドキュメントとリソースについて説明します。
+  title: Microsoft 365 for enterprise のドキュメントとリソース
+  description: IT プロフェッショナル、インフォメーション ワーカー、パートナー向けのMicrosoft 365 Enterprise で利用できる製品のドキュメントとリソースについて説明します。
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -15,44 +15,44 @@ metadata:
   ms.date: 11/29/2019
   ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
   ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 12/19/2019
   ms.locfileid: "40801672"
 highlightedContent:
   items:
-  - title: エンタープライズ向け Microsoft 365 について
+  - title: Microsoft 365 for enterprise の詳細
     itemType: get-started
     url: microsoft-365-overview.md
-  - title: FastTrack を使用して展開を促進する
+  - title: FastTrack を使用して、展開を加速します
     itemType: quickstart
     url: https://www.microsoft.com/fasttrack/microsoft-365
-  - title: IT プロフェッショナルと管理者をトレーニングする
+  - title: IT プロフェッショナルと管理者をトレーニングします
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: エンタープライズおよびその他のリソースに関する Microsoft 365 のヘルプを取得する
-  summary: エンタープライズ展開のガイダンス、機能、およびサービスについては、Microsoft 365 を参照してください。
+  title: Microsoft 365 for enterprise と、その他のリソースに関するヘルプを参照する
+  summary: Microsoft 365 for enterprise の展開ガイダンス、機能、サービスを探索する。
   items:
-  - title: 展開のロードマップに従います。
+  - title: 展開のロードマップをフォローする
     links:
     - url: deploy-microsoft-365-enterprise.md
       itemType: deploy
       text: 展開の概要
     - url: deploy-foundation-infrastructure.md
       itemType: how-to-guide
-      text: Foundation インフラストラクチャ
+      text: 基盤インフラストラクチャ
     - url: deploy-workloads.md
       itemType: how-to-guide
       text: ワークロードとシナリオ
     - url: desktop-deployment-center-home.md
       itemType: get-started
-      text: 最新デスクトップ展開センターをご覧いただき
-  - title: キー要素を展開する
+      text: 最新デスクトップ展開センター
+  - title: 主要な要素を展開
     links:
     - url: identity-infrastructure.md
       itemType: how-to-guide
-      text: Id インフラストラクチャ
+      text: ID インフラストラクチャ
     - url: https://docs.microsoft.com/windows/deployment/
       itemType: get-started
       text: Windows 10 Enterprise
@@ -62,7 +62,7 @@ conceptualContent:
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: 展開の主要なシナリオ
+  - title: 主要なシナリオを展開
     links:
     - url: secure-teams-highly-regulated-data-scenario.md
       itemType: how-to-guide
@@ -72,11 +72,11 @@ conceptualContent:
       text: 厳しく規制されたデータ用の SharePoint サイト
     - url: empower-people-to-work-remotely.md
       itemType: how-to-guide
-      text: リモートワーカー
+      text: リモート ワーカー
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
-      text: Office クライアントとサーバーおよび Windows の移行
-  - title: エンタープライズ向け Microsoft 365 を管理する
+      text: Office クライアントとサーバー、および Windows の移行
+  - title: Microsoft 365 for enterprise を管理する
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide
@@ -86,21 +86,21 @@ conceptualContent:
       text: Office 365 ProPlus
     - url: https://docs.microsoft.com/intune/apps/app-management
       itemType: get-started
-      text: Intune を使用するアプリ
+      text: Intune を使用したアプリ
     - url: https://docs.microsoft.com/office365/
       itemType: get-started
       text: Office 365 サービス
 additionalContent:
   sections:
   - title: その他のリソース
-    summary: その他の Microsoft 365 の機能とリソースについては、こちらを参照してください。
+    summary: その他の Microsoft 365 の機能とリソースの詳細を説明します。
     items:
     - title: Microsoft 365 コンプライアンス
-      summary: 組織が情報を管理し、リスクから保護し、法的または規制基準に準拠できるようにします。
+      summary: 組織が情報を管理し、リスクから保護し、法律または規制の標準への準拠を支援します。
       url: https://docs.microsoft.com/microsoft-365/compliance/index
     - title: Microsoft 365 セキュリティ
-      summary: 堅牢なセキュリティサービスおよびソリューションを使用して、攻撃の面で組織を保護します。
+      summary: 強力なセキュリティサービスとソリューションにより、あらゆる攻撃から組織を保護します。
       url: https://docs.microsoft.com/microsoft-365/security/index
-    - title: Microsoft 365 technical community
-      summary: Microsoft Tech Community の同僚や専門家との接続と共同作業を行い、Microsoft 365 のベストプラクティスを共有します。
+    - title: Microsoft 365 のテクニカル コミュニティ
+      summary: Microsoft 技術コミュニティの仲間や専門家とつながって共同作業を行い、Microsoft 365 のベストプラクティスを共有します。
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
