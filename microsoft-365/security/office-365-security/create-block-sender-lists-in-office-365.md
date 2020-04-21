@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 管理者は、Office 365 および EOP で使用可能なオプションについて学び、受信メッセージをブロックすることができます。
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033424"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608121"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Office 365 でブロックされる送信者のリストを作成する
 
@@ -52,7 +52,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
 複数のユーザーが影響を受ける場合、範囲は広くなるため、次の最適なオプションは、[迷惑メール対策] ポリシーの [送信者リストまたはブロックされたドメインリスト] に制限されます。 リストの送信者からのメッセージが**スパム**としてマークされ、**スパム**フィルター verdict に対して構成したアクションがメッセージに対して実行されます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
-これらのリストの最大数は、約1000エントリです。ただし、ポータルには30個のエントリしか入力できません。 30個を超えるエントリを追加するには、PowerShell を使用する必要があります。
+これらのリストの最大数は、約1000エントリです。
 
 ## <a name="use-mail-flow-rules"></a>メールフロールールを使用する
 

@@ -16,12 +16,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
-ms.openlocfilehash: 3ac85776db5d990d46b858294acf8ef66c7f26bc
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 699de94a300ac8625e92d2c467edd461d72c7d2f
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231006"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608176"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>Office 365 で送信スパムフィルターを構成する
 
@@ -141,6 +141,10 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
      この設定を無効にするには、このチェックボックスをオフにします。
 
 5. オプション[**受信者の制限**] セクションを展開して、疑わしい送信電子メールメッセージの制限およびアクションを構成します。
+
+   > [!NOTE]
+   > これらの設定は、クラウドベースのメールボックスにのみ適用されます。
+     
    - **ユーザーあたりの最大受信者数**
 
      有効な値は、0 ~ 1万です。 既定値は0です。これは、サービスの既定値が使用されることを意味します。 詳細については、「 [Office での制限を送信365のオプション](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。

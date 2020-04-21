@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法を説明します。 ユーザーのメールと OneDrive のコンテンツの処置方法に関する決定や、製品ライセンスを保持するのか支払いを停止するのかに関する決定を行います。
-ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353138"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608128"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -99,11 +99,12 @@ ms.locfileid: "42353138"
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>ユーザー管理の管理者: Office 365 から 1 人または複数のユーザーを削除する
 
 
- **重要:**[アカウントを共有メールボックスに変換した場合や](../email/convert-user-mailbox-to-shared-mailbox.md) 、アカウントでメールの転送を設定した場合、ユーザーのアカウントを削除しないでください。これらの機能を有効にするには、アカウントを残す必要があります。共有メールボックスに変換した場合は、 [ライセンスの支払いを停止する](#stop-paying-for-the-license)できるため、支払を行うことはありません。メールの転送をセットアップしている場合は、ライセンスを削除することはできません。削除すると、メールの転送が停止され、メールボックスは無効にされます。 
+> [!IMPORTANT]
+> ユーザーのアカウントを[共有メールボックスに変換](../email/convert-user-mailbox-to-shared-mailbox.md)した場合、またはアカウントに電子メール転送を設定した場合は、ユーザーのアカウントを削除しないでください。これらの関数は引き続きアカウントを必要とします。共有メールボックスにライセンスは必要ありません。アカウントを共有メールボックスに変換した場合は[、ライセンスの支払いを停止](#stop-paying-for-the-license)することができます。アカウントで電子メール転送を設定した場合、ライセンスを削除することはできません。これにより、メールの転送が停止され、メールボックスが非アクティブになります。
   
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。  
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
 
 2. 削除するユーザーの名前を選択し、[**その他のオプション**] (**...**) を選択し、[**ユーザー の削除**] を選択します。
 

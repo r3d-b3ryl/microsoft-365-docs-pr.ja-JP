@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 コンプライアンスに関するドキュメント
-summary: 組織が法律または規制標準に準拠する必要がある場合は、Microsoft 365 のコンプライアンスについて確認するために、ここから開始してください。
+title: Microsoft 365 コンプライアンスのドキュメント
+summary: お客様の組織で、法律や規制の基準に準拠する必要がある場合は、こちらから Microsoft 365 のコンプライアンスについてご確認ください。
 metadata:
-  title: Microsoft 365 コンプライアンスに関するドキュメント
-  description: Microsoft 365 コンプライアンス機能に関するドキュメント
+  title: Microsoft 365 コンプライアンスのドキュメント
+  description: Microsoft 365 コンプライアンス機能のドキュメント
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
   ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 02/27/2020
   ms.locfileid: "42322533"
@@ -24,7 +24,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 機密ラベル
+    - text: 秘密度ラベル
       url: sensitivity-labels.md
     - text: データ損失防止 (DLP)
       url: data-loss-prevention-policies.md
@@ -32,7 +32,7 @@ landingContent:
       url: custom-sensitive-info-types.md
     - text: メールの暗号化
       url: email-encryption.md
-    - text: カスタマー キー
+    - text: 顧客キー
       url: customer-key-overview.md
 - title: 情報ガバナンスの管理
   linkLists:
@@ -40,7 +40,7 @@ landingContent:
     links:
     - text: 保持ラベル
       url: labels.md
-    - text: 保持ポリシー
+    - text: アイテム保持ポリシー
       url: retention-policies.md
     - text: レコード管理
       url: records-management.md
@@ -50,29 +50,29 @@ landingContent:
       url: event-driven-retention.md
     - text: PST インポート
       url: importing-pst-files-to-office-365.md
-    - text: サードパーティのデータコネクタ
+    - text: サードパーティのデータ コネクタ
       url: archiving-third-party-data.md
-    - text: データガバナンスレポート
+    - text: データ ガバナンスのレポート
       url: view-the-data-governance-reports.md
-- title: Insider のリスクを管理する
+- title: インサイダー リスクを管理する
   linkLists:
   - linkListType: overview
     links:
-    - text: Insider リスク管理
+    - text: インサイダー リスクの管理
       url: insider-risk-management.md
     - text: 通信コンプライアンス
       url: communication-compliance.md
-    - text: 情報障壁
+    - text: 情報バリア
       url: information-barriers.md
     - text: 特権アクセス管理
       url: privileged-access-management-overview.md
     - text: 顧客ロックボックス
       url: customer-lockbox-requests.md
-- title: 検出して応答する
+- title: 検出と対応
   linkLists:
   - linkListType: overview
     links:
-    - text: Advanced eDiscovery
+    - text: 高度な電子情報開示
       url: overview-ediscovery-20.md
     - text: コア電子情報開示
       url: ediscovery-cases.md
@@ -82,17 +82,17 @@ landingContent:
       url: overview-data-investigations.md
     - text: 監査
       url: search-the-audit-log-in-security-and-compliance.md
-- title: 法令遵守の概要
+- title: 規制コンプライアンスの概要
   linkLists:
   - linkListType: get-started
     links:
     - text: コンプライアンス スコア
       url: compliance-score.md
-    - text: GDPR コンプライアンスアクションプラン
+    - text: GDPR コンプライアンス アクション プラン
       url: gdpr-action-plan.md
-    - text: GDPR の情報保護
+    - text: GDPR のための情報保護
       url: office-365-info-protection-for-gdpr-overview.md
-    - text: ISO コンプライアンスアクションプラン
+    - text: ISO コンプライアンス アクション プラン
       url: iso-action-plan.md
-    - text: NIST コンプライアンスのアクションプラン
+    - text: NIST コンプライアンス アクション プラン
       url: nist-action-plan.md
