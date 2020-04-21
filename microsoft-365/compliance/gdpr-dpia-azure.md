@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4f5f688a80d45ccb7e6b399d6fea7a6b2119b6de
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: b7736a3890f293ca6bcfa05fd2f1630748009d9f
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558047"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547557"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>データ保護影響評価: Microsoft Azure を利用するデータ管理者向けガイダンス
 
@@ -56,7 +56,7 @@ GDPR の第 35 条では、「特に新たな技術を用いるなどのある�
 ||||
 |:---|:---|:--|
 |**DPIA の要素**|**Microsoft Azure 関連情報**| |
-| 処理の目的 | Microsoft Azure を使用したデータ処理の目的は、Microsoft Azure を導入、構成、使用する管理者が決定します。 <br><br> [オンライン サービスの使用条件 (OST)](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) に定められているように、Microsoft はデータ処理者として、お客様の文書化された指示に従って顧客データを処理し、お客様にオンライン サービスを提供します。 <br><br> また、Microsoft では、以下により構成される限定的で正当な業務をサポートするために個人データを使用します。 (1) 課金およびアカウント管理。 (2) 報酬 (従業員の歩合の算出、パートナー インセンティブの算出など)。 (3) 内部レポートおよびモデリング (たとえば、予測、収益、キャパシティ プランニング、製品戦略)。 (4) 詐欺、サイバー犯罪、または Microsoft または Microsoft 製品に影響を与える可能性があるサイバー攻撃に対する対処。 (5) アクセシビリティ、プライバシー、エネルギー効率のためのコア機能の強化。 (6) 財務報告および （オンライン サービス使用条件に記載されている顧客データの開示に関する制限の対象となる） 法的義務の遵守。 <br><br> Microsoft は、特定の正当な業務をサポートするために個人データを処理する管理者です。 通常、Microsoft では、正当な業務のために個人データを使用する前に個人データを集計し、Microsoft が特定の個人を特定できないようにして、正当な業務の処理の実施に必要とされる最小限の識別可能な形式で個人データを使用します。 <br><br> 顧客データまたは顧客データから得られた情報を、Microsoft が広告およびその他の類似する商用目的で使用することはありません。 |   |
+| 処理の目的 | Microsoft Azure を使用したデータ処理の目的は、Microsoft Azure を導入、構成、使用する管理者が決定します。 <br><br> [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)および[データ保護補遺](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)に定められているように、Microsoft はデータ処理者として、お客様の文書化された指示に従って顧客データを処理し、お客様にオンライン サービスを提供します。 <br><br> 標準の[オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)および[データ保護補遺](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)に記載されているとおり、Microsoft では、以下により構成される限定的で正当な業務をサポートするために個人データを使用します。 (1) 課金およびアカウント管理。 (2) 報酬 (従業員の歩合の算出、パートナー インセンティブの算出など)。 (3) 内部レポートおよびモデリング (たとえば、予測、収益、キャパシティ プランニング、製品戦略)。 (4) 詐欺、サイバー犯罪、または Microsoft または Microsoft 製品に影響を与える可能性があるサイバー攻撃に対する対処。 (5) アクセシビリティ、プライバシー、エネルギー効率のためのコア機能の強化。 (6) 財務報告および （オンライン サービス使用条件に記載されている顧客データの開示に関する制限の対象となる） 法的義務の遵守。 <br><br> Microsoft は、特定の正当な業務をサポートするために個人データを処理する管理者です。 通常、Microsoft では、正当な業務のために個人データを使用する前に個人データを集計し、Microsoft が特定の個人を特定できないようにして、正当な業務の処理の実施に必要とされる最小限の識別可能な形式で個人データを使用します。 <br><br> 顧客データまたは顧客データから得られた情報を、Microsoft がプロファイリング、広告およびその他の類似する商用目的で使用することはありません。 |   |
 | 処理される個人データのカテゴリ  | *顧客データ* — これは、顧客または顧客の代理が エンタープライズ サービスの使用を通じて Microsoft に提供する、テキスト、音声、ビデオ、画像ファイル、およびソフトウェアを含むすべてのデータのことです。  顧客データには次の両方が含まれます: (1) 特定を可能にするエンド ユーザーの情報 (例: Azure Active Directory でのユーザー名と連絡先情報)、および (2) 特定のサービスでお客様がアップロードまたは作成する顧客コンテンツ (例: Azure Storage アカウント内の顧客コンテンツ、Azure SQL データベースの顧客コンテンツ、Azure Virtual Machines でのお客様の仮想マシン イメージ)。<br><br> *サービス生成データ:* Microsoft がエンタープライズ サービスをユーザーに提供するうえで役立つ、Microsoft により生成されるログおよび関連データ。 サービス生成データには主に固有 ID に関連する仮名化データが含まれています。固有 ID とは、それ自体は特定の個人を識別しないものの、エンタープライズ サービスをユーザーに提供するために使われるシステム生成番号です。 また、ユーザー名などの、特定を可能にするエンド ユーザーの情報がサービス生成ログに含まれることもあります。 <br><br> *サポート データ:* — これは、顧客または顧客の代理によって、オンライン サービスに関するテクニカル サポートを受ける際の Microsoft とのエンゲージメントを通して Microsoft に提供されるデータ (または Microsoft がオンライン サービスから取得することを顧客が承認するデータ) です。 <br><br> Azure で処理されるデータの詳細については、データ処理契約に含まれる[オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)および [Microsoft Trust Center](https://www.microsoft.com/trustcenter) を参照してください。</p> |   |
 | データ保持 | Microsoft は、お客様がオンライン サービスを利用する権限を有している期間中、または OST の条件に基づきすべての顧客データが削除またはお客様により取得されるまで、顧客データを保存および処理します。  お客様のサブスクリプション期間中は常に、お客様は各オンライン サービスに保存されている顧客データにアクセスし、データを抽出できます。 Microsoft は、お客様がデータを取り出せるように、お客様のサブスクリプションの有効期限または終了後 90 日間は、無料試用版と LinkedIn サービスを除くオンライン サービスに保管されている顧客データを機能制限付きアカウントにて保持します。 90 日間の保持期間が終了すると、Microsoft はお客様のアカウントを無効にして顧客データを削除します。 お客様は、[Azure Data Subject Request GDPR Documentation](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) で説明されている機能を使用して、データ主体要求に従い個人データを削除できます。 |   |
 | 個人データの保存場所と移転 | お客様は、OST で定められた特定の例外を条件として、特定の[地理的地域](https://azuredatacentermap.azurewebsites.net/)内で保管中の顧客データをプロビジョニングすることができます。 サービスの展開とデータの保存場所に関する詳細は、オンライン サービスの使用条件 (OST) の別紙 1 および [Azure グローバル インフラストラクチャ](https://azure.microsoft.com/global-infrastructure/) Web ページに記載されています。<br><br>欧州経済地域およびスイスからの個人データについては、Microsoft は、GDPR の第 46 条に記載されているように、第三国または国際組織への個人データの転送が適切な保護措置の対象であることを保証します。 処理者および他のモデル契約に関する標準契約条項に基づく Microsoft のコミットメントに加えて、Microsoft は、EU - 米国間プライバシー シールド フレームワークおよびスイス - 米国間プライバシー シールド フレームワークの認定を受けており、プライバシー シールド フレームワークを遵守します。 |   |
