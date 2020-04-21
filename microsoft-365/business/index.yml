@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Microsoft 365 Business のリソース
-summary: Microsoft 365 Business は、Office 365 生産性ツールや高度な機能を含むサブスクリプションサービスです。 さらに、サイバー脅威からビジネス、データを保護し、デバイスを管理するのに役立ちます。
+title: Microsoft 365 Business Premium のリソース
+summary: Microsoft 365 Business Premium は、Office 365 の生産性向上ツールに加えて、ビジネスを脅威から保護し、データを保護し、デバイスを管理するための高度な機能を備えたサブスクリプションサービスです。
 brand: m365
 metadata:
-  title: Microsoft 365 Business のリソース
+  title: Microsoft 365 Business Premium のリソース
   description: 説明
   ms.service: o365-administration
   ms.topic: hub-page
@@ -11,18 +11,18 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: bf50c985029587ec063e2933d137d6a9b115fa6c
-  ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
-  ms.translationtype: HT
+  ms.openlocfilehash: 29504ca22db443c504a5f3265ca2e8fcba0f737e
+  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+  ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/15/2020
-  ms.locfileid: "43516843"
+  ms.lasthandoff: 04/21/2020
+  ms.locfileid: "43627112"
 productDirectory:
-  title: Microsoft 365 Business でリモートワークのセキュリティ保護をする
+  title: Microsoft 365 Business Premium を使用したリモート作業のセキュリティ保護
   items:
   - title: 新機能
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 が、Microsoft 365 Business でもうすぐ使用可能になります。
+    summary: Azure AD Premium P1 は Microsoft 365 Business Premium に送られます。
     url: https://aka.ms/aadp1smbblog
   - title: パートナーウェビナーを見る
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -30,18 +30,18 @@ productDirectory:
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: 読み取り
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Microsoft 365 Business でリモートワークのセキュリティ保護をする最良な方法。
+    summary: Microsoft 365 for business で安全なリモート作業を可能にするための最適な方法。
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
-  - title: Microsoft 365 Business とは
+  - title: Microsoft 365 Business Premium とは
     links:
     - url: microsoft-365-business-overview.md
       itemType: overview
       text: 概要
     - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 Business のトレーニング
+      text: Microsoft 365 Business Premium トレーニング
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
       text: プランを比較
@@ -51,7 +51,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: FAQ
-  - title: Microsoft 365 Business のセットアップ
+  - title: Microsoft 365 Business Premium のセットアップ
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -97,7 +97,7 @@ conceptualContent:
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
       itemType: overview
-      text: Office 365 Advanced Threat Protection
+      text: Advanced Threat Protection
     - url: set-up-mfa.md
       itemType: how-to-guide
       text: MFA をセットアップする
@@ -185,10 +185,10 @@ conceptualContent:
     links:
     - url: sign-up.md
       itemType: get-started
-      text: Microsoft 365 Business にサインアップする
+      text: Microsoft 365 Business Premium へのサインアップ
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
-      text: Office 365 Business Premium から移行する
+      text: Microsoft 365 Business Standard からの移行
     - url: migrate-from-e3.md
       itemType: how-to-guide
       text: Office 365 E3 から移行する
