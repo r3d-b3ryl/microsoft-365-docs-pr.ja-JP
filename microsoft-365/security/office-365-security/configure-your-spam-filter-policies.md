@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理者が、Exchange Online および Exchange online Protection (EOP) で迷惑メール対策ポリシーを作成、変更、削除する方法を説明します。
-ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: e3d49fecf456fe7f615cc2877c7522632b8db7d7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231018"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608188"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Office 365 でのスパム対策ポリシーの構成
 
@@ -341,6 +341,11 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
    - **エンドユーザーのスパム通知を有効にする**: 通知を有効にするには、このチェックボックスをオンにします。 通知を無効にするには、チェックボックスをオフにします。
 
    - **エンドユーザーの迷惑メール通知の送信間隔 (日)**: 通知が送信される頻度を選択します。 既定値は 3 日です。 1 日から 15 日まで入力できます。
+   
+     エンドユーザーのスパム通知は、24時間以内に 3 サイクルあります。これは、次の時間に始まります: 01:00 UTC、08:00 UTC、および 16:00 UTC。 
+    
+     > [!NOTE]
+     > 前回のサイクルで通知を受信できなかった場合は、後続のサイクルが通知をプッシュします。 これにより、同じ日に複数の通知が表示される場合があります。
 
    - **通知言語**: ドロップダウンをクリックして、リストから使用可能な言語を選びます。 既定値は **Default** で、エンドユーザーへの検疫通知では EOP 組織の既定の言語が使用されます。
 
