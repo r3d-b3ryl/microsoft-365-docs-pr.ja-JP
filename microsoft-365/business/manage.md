@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business の管理
+title: Microsoft 365 for business の管理
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,82 +20,82 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Microsoft 365 Business 関連の管理タスク、モバイルデバイス、Windows 10 Pc、その他の多くのタスクを管理する方法について説明します。
-ms.openlocfilehash: 41b627b0bb7cbb009832d3e7c45e44ceb8a8fdcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Microsoft 365 for business 関連の管理タスク、モバイルデバイス、Windows 10 Pc、その他の多くのタスクを管理する方法について説明します。
+ms.openlocfilehash: 5e6d4633410d4aa38ad1eebcab3405f57f5b2446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593783"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633265"
 ---
-# <a name="manage-microsoft-365-business"></a><span data-ttu-id="afa64-103">Microsoft 365 Business の管理</span><span class="sxs-lookup"><span data-stu-id="afa64-103">Manage Microsoft 365 Business</span></span>
+# <a name="manage-microsoft-365-for-business"></a><span data-ttu-id="c183f-103">Microsoft 365 for business の管理</span><span class="sxs-lookup"><span data-stu-id="c183f-103">Manage Microsoft 365 for business</span></span>
 
-## <a name="general-microsoft-365-business-admin-tasks"></a><span data-ttu-id="afa64-104">Microsoft 365 Business の一般的な管理タスク</span><span class="sxs-lookup"><span data-stu-id="afa64-104">General Microsoft 365 Business admin tasks</span></span>
+## <a name="general-microsoft-365-for-business-admin-tasks"></a><span data-ttu-id="c183f-104">一般法人向け Microsoft 365 の管理タスク</span><span class="sxs-lookup"><span data-stu-id="c183f-104">General Microsoft 365 for business admin tasks</span></span>
 
-<span data-ttu-id="afa64-105">一般法人向け Office 365 の[管理者向けコンテンツ](https://docs.microsoft.com/office365/admin/admin-home)のほとんどは、Microsoft 365 business にも適用されます。</span><span class="sxs-lookup"><span data-stu-id="afa64-105">Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 for business also applies to Microsoft 365 Business.</span></span>
+<span data-ttu-id="c183f-105">Office 365 の[管理者向けコンテンツ](https://docs.microsoft.com/office365/admin/admin-home)のほとんどは、Microsoft 365 for business にも適用されます。</span><span class="sxs-lookup"><span data-stu-id="c183f-105">Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 also applies to Microsoft 365 for business.</span></span>
 
-- [<span data-ttu-id="afa64-106">Microsoft 365 Business にさらにユーザーを追加する</span><span class="sxs-lookup"><span data-stu-id="afa64-106">Add more users to Microsoft 365 Business</span></span>](add-users-m365b.md)
+- [<span data-ttu-id="c183f-106">一般法人向け Microsoft 365 にユーザーを追加する</span><span class="sxs-lookup"><span data-stu-id="c183f-106">Add more users to Microsoft 365 for business</span></span>](add-users-m365b.md)
     
-- [<span data-ttu-id="afa64-107">ポリシーとデバイスの表示</span><span class="sxs-lookup"><span data-stu-id="afa64-107">View policies and devices</span></span>](view-policies-and-devices.md)
+- [<span data-ttu-id="c183f-107">ポリシーとデバイスの表示</span><span class="sxs-lookup"><span data-stu-id="c183f-107">View policies and devices</span></span>](view-policies-and-devices.md)
     
-- [<span data-ttu-id="afa64-108">Microsoft 365 Business セキュリティ機能</span><span class="sxs-lookup"><span data-stu-id="afa64-108">Microsoft 365 Business security features</span></span>](security-features.md)
+- [<span data-ttu-id="c183f-108">Microsoft 365 for business のセキュリティ機能</span><span class="sxs-lookup"><span data-stu-id="c183f-108">Microsoft 365 for business security features</span></span>](security-features.md)
     
-- [<span data-ttu-id="afa64-109">Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法</span><span class="sxs-lookup"><span data-stu-id="afa64-109">How do protection features in Microsoft 365 Business map to Intune settings</span></span>](map-protection-features-to-intune-settings.md)
+- [<span data-ttu-id="c183f-109">Microsoft 365 の保護機能を使用して Intune 設定にマップする方法</span><span class="sxs-lookup"><span data-stu-id="c183f-109">How do protection features in Microsoft 365 for business map to Intune settings</span></span>](map-protection-features-to-intune-settings.md)
     
-<span data-ttu-id="afa64-110">Microsoft 365 Business を使用して、組織のデータを Pc やモバイルデバイスで保護する方法については、以下のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="afa64-110">See the following sections on how to use Microsoft 365 Business to protect your organization's data on PCs and mobile devices.</span></span>
+<span data-ttu-id="c183f-110">Microsoft 365 for business を使用して、組織のデータを Pc やモバイルデバイスで保護する方法については、以下のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c183f-110">See the following sections on how to use Microsoft 365 for business to protect your organization's data on PCs and mobile devices.</span></span>
   
-## <a name="manage-mobile-devices"></a><span data-ttu-id="afa64-111">モバイル デバイスの管理</span><span class="sxs-lookup"><span data-stu-id="afa64-111">Manage mobile devices</span></span>
+## <a name="manage-mobile-devices"></a><span data-ttu-id="c183f-111">モバイル デバイスの管理</span><span class="sxs-lookup"><span data-stu-id="c183f-111">Manage mobile devices</span></span>
 
-- [<span data-ttu-id="afa64-112">Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="afa64-112">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
+- [<span data-ttu-id="c183f-112">ビジネスユーザー向けの Microsoft 365 用のモバイルデバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="c183f-112">Set up mobile devices for Microsoft 365 for business users</span></span>](set-up-mobile-devices.md)
     
-- [<span data-ttu-id="afa64-113">Android または iOS デバイスのアプリ保護設定を設定する</span><span class="sxs-lookup"><span data-stu-id="afa64-113">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
+- [<span data-ttu-id="c183f-113">Android または iOS デバイスのアプリ保護設定を設定する</span><span class="sxs-lookup"><span data-stu-id="c183f-113">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
     
-    <span data-ttu-id="afa64-114">この動作を確認するには、「 [Android または iOS デバイスのアプリ保護設定を検証](validate-settings-on-android-or-ios.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="afa64-114">To make sure this worked, see [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md).</span></span> 
+    <span data-ttu-id="c183f-114">この動作を確認するには、「 [Android または iOS デバイスのアプリ保護設定を検証](validate-settings-on-android-or-ios.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c183f-114">To make sure this worked, see [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md).</span></span> 
     
-- [<span data-ttu-id="afa64-115">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="afa64-115">Remove company data from devices</span></span>](remove-company-data.md)
+- [<span data-ttu-id="c183f-115">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="c183f-115">Remove company data from devices</span></span>](remove-company-data.md)
     
-## <a name="manage-windows-10-pcs"></a><span data-ttu-id="afa64-116">Windows 10 PC の管理</span><span class="sxs-lookup"><span data-stu-id="afa64-116">Manage Windows 10 PCs</span></span>
+## <a name="manage-windows-10-pcs"></a><span data-ttu-id="c183f-116">Windows 10 PC の管理</span><span class="sxs-lookup"><span data-stu-id="c183f-116">Manage Windows 10 PCs</span></span>
 
-- [<span data-ttu-id="afa64-117">Microsoft 365 Business ユーザーの Windows デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="afa64-117">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
+- [<span data-ttu-id="c183f-117">ビジネスユーザー用に Microsoft 365 用の Windows デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="c183f-117">Set up Windows devices for Microsoft 365 for business users</span></span>](set-up-windows-devices.md)
 
-    <span data-ttu-id="afa64-118">Office を自動的にインストールする前に、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="afa64-118">Read [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) before you auto-install Office.</span></span> 
+    <span data-ttu-id="c183f-118">Office を自動的にインストールする前に、「 [Microsoft 365 for business による office クライアントの展開の準備](prepare-for-office-client-deployment.md)」をお読みください。</span><span class="sxs-lookup"><span data-stu-id="c183f-118">Read [Prepare for Office client deployment by Microsoft 365 for business](prepare-for-office-client-deployment.md) before you auto-install Office.</span></span> 
     
-- [<span data-ttu-id="afa64-119">Windows 10 デバイスのデバイス保護設定を設定する</span><span class="sxs-lookup"><span data-stu-id="afa64-119">Set device protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-pcs.md)
+- [<span data-ttu-id="c183f-119">Windows 10 デバイスのデバイス保護設定を設定する</span><span class="sxs-lookup"><span data-stu-id="c183f-119">Set device protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-pcs.md)
     
-    <span data-ttu-id="afa64-120">この動作を確認するには、「 [Windows 10 デバイスでデバイス保護設定を検証](validate-settings-on-windows-10-pcs.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="afa64-120">To make sure this worked, see [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md).</span></span> 
+    <span data-ttu-id="c183f-120">この動作を確認するには、「 [Windows 10 デバイスでデバイス保護設定を検証](validate-settings-on-windows-10-pcs.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c183f-120">To make sure this worked, see [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md).</span></span> 
     
-- [<span data-ttu-id="afa64-121">Windows 10 デバイスのアプリケーション保護設定を設定する</span><span class="sxs-lookup"><span data-stu-id="afa64-121">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
+- [<span data-ttu-id="c183f-121">Windows 10 デバイスのアプリケーション保護設定を設定する</span><span class="sxs-lookup"><span data-stu-id="c183f-121">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
     
-    <span data-ttu-id="afa64-122">この動作を確認するには、「 [Windows 10 pc でアプリ保護設定を検証](validate-protection-settings-on-windows-10-pcs.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="afa64-122">To make sure this worked, see [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md).</span></span> 
+    <span data-ttu-id="c183f-122">この動作を確認するには、「 [Windows 10 pc でアプリ保護設定を検証](validate-protection-settings-on-windows-10-pcs.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c183f-122">To make sure this worked, see [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md).</span></span> 
     
-- [<span data-ttu-id="afa64-123">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="afa64-123">Remove company data from devices</span></span>](remove-company-data.md)
+- [<span data-ttu-id="c183f-123">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="c183f-123">Remove company data from devices</span></span>](remove-company-data.md)
     
-- [<span data-ttu-id="afa64-124">Windows 10 デバイスを出荷時の設定にリセットする</span><span class="sxs-lookup"><span data-stu-id="afa64-124">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
+- [<span data-ttu-id="c183f-124">Windows 10 デバイスを出荷時の設定にリセットする</span><span class="sxs-lookup"><span data-stu-id="c183f-124">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
     
-### <a name="use-autopilot-to-deploy-windows-10-devices"></a><span data-ttu-id="afa64-125">AutoPilot を使用し、Windows 10 デバイスを展開する</span><span class="sxs-lookup"><span data-stu-id="afa64-125">Use AutoPilot to deploy Windows 10 devices</span></span>
+### <a name="use-autopilot-to-deploy-windows-10-devices"></a><span data-ttu-id="c183f-125">AutoPilot を使用し、Windows 10 デバイスを展開する</span><span class="sxs-lookup"><span data-stu-id="c183f-125">Use AutoPilot to deploy Windows 10 devices</span></span>
 
-<span data-ttu-id="afa64-126">次のトピックでは、Microsoft 365 Business の Windows AutoPilot を使用して Windows 10 デバイスを事前に構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="afa64-126">The following topics describe how you can use Windows AutoPilot in Microsoft 365 Business to pre-configure Windows 10 devices.</span></span>
+<span data-ttu-id="c183f-126">次のトピックでは、Microsoft 365 for business で Windows 自動操縦を使用して Windows 10 デバイスを事前に構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="c183f-126">The following topics describe how you can use Windows AutoPilot in Microsoft 365 for business to pre-configure Windows 10 devices.</span></span>
   
-- [<span data-ttu-id="afa64-127">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="afa64-127">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+- [<span data-ttu-id="c183f-127">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="c183f-127">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
     
-- [<span data-ttu-id="afa64-128">AutoPilot プロファイルの作成と編集</span><span class="sxs-lookup"><span data-stu-id="afa64-128">Create and edit AutoPilot profiles</span></span>](create-and-edit-autopilot-profiles.md)
+- [<span data-ttu-id="c183f-128">AutoPilot プロファイルの作成と編集</span><span class="sxs-lookup"><span data-stu-id="c183f-128">Create and edit AutoPilot profiles</span></span>](create-and-edit-autopilot-profiles.md)
     
-- [<span data-ttu-id="afa64-129">AutoPilot デバイスの作成と編集</span><span class="sxs-lookup"><span data-stu-id="afa64-129">Create and edit AutoPilot devices</span></span>](create-and-edit-autopilot-devices.md)
+- [<span data-ttu-id="c183f-129">AutoPilot デバイスの作成と編集</span><span class="sxs-lookup"><span data-stu-id="c183f-129">Create and edit AutoPilot devices</span></span>](create-and-edit-autopilot-devices.md)
     
-- [<span data-ttu-id="afa64-130">AutoPilot デバイス エラーのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="afa64-130">Troubleshoot AutoPilot device errors</span></span>](troubleshoot-autopilot-errors.md)
+- [<span data-ttu-id="c183f-130">AutoPilot デバイス エラーのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="c183f-130">Troubleshoot AutoPilot device errors</span></span>](troubleshoot-autopilot-errors.md)
     
-- [<span data-ttu-id="afa64-131">デバイス状態</span><span class="sxs-lookup"><span data-stu-id="afa64-131">Device states</span></span>](device-states.md)
+- [<span data-ttu-id="c183f-131">デバイス状態</span><span class="sxs-lookup"><span data-stu-id="c183f-131">Device states</span></span>](device-states.md)
     
-- [<span data-ttu-id="afa64-132">AutoPilot プロファイルの設定について</span><span class="sxs-lookup"><span data-stu-id="afa64-132">About AutoPilot Profile settings</span></span>](autopilot-profile-settings.md)
+- [<span data-ttu-id="c183f-132">AutoPilot プロファイルの設定について</span><span class="sxs-lookup"><span data-stu-id="c183f-132">About AutoPilot Profile settings</span></span>](autopilot-profile-settings.md)
     
-## <a name="set-up-and-prerequisite-information"></a><span data-ttu-id="afa64-133">セットアップと前提条件に関する情報</span><span class="sxs-lookup"><span data-stu-id="afa64-133">Set up and prerequisite information</span></span>
+## <a name="set-up-and-prerequisite-information"></a><span data-ttu-id="c183f-133">セットアップと前提条件に関する情報</span><span class="sxs-lookup"><span data-stu-id="c183f-133">Set up and prerequisite information</span></span>
 
-- [<span data-ttu-id="afa64-134">Microsoft 365 Business を使用してデバイス上のデータを保護するための前提条件</span><span class="sxs-lookup"><span data-stu-id="afa64-134">Prerequisites for protecting data on devices with Microsoft 365 Business</span></span>](pre-requisites-for-data-protection.md)
+- [<span data-ttu-id="c183f-134">Microsoft 365 for business を使用してデバイス上のデータを保護するための前提条件</span><span class="sxs-lookup"><span data-stu-id="c183f-134">Prerequisites for protecting data on devices with Microsoft 365 for business</span></span>](pre-requisites-for-data-protection.md)
     
-- [<span data-ttu-id="afa64-135">セットアップ ウィザードを使用して Microsoft 365 Business をセットアップする</span><span class="sxs-lookup"><span data-stu-id="afa64-135">Set up Microsoft 365 Business by using the setup wizard</span></span>](set-up.md)
+- [<span data-ttu-id="c183f-135">セットアップウィザードを使用して、Microsoft 365 for business をセットアップする</span><span class="sxs-lookup"><span data-stu-id="c183f-135">Set up Microsoft 365 for business by using the setup wizard</span></span>](set-up.md)
     
-- [<span data-ttu-id="afa64-136">Microsoft 365 Business への移行</span><span class="sxs-lookup"><span data-stu-id="afa64-136">Migrate to Microsoft 365 Business</span></span>](migrate-to-microsoft-365-business.md)
+- [<span data-ttu-id="c183f-136">Microsoft 365 for business への移行</span><span class="sxs-lookup"><span data-stu-id="c183f-136">Migrate to Microsoft 365 for business</span></span>](migrate-to-microsoft-365-business.md)
     
-- [<span data-ttu-id="afa64-137">Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする</span><span class="sxs-lookup"><span data-stu-id="afa64-137">Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business</span></span>](manage-windows-devices.md)
+- [<span data-ttu-id="c183f-137">Microsoft 365 for business で管理されるドメインに参加している Windows 10 デバイスを有効にする</span><span class="sxs-lookup"><span data-stu-id="c183f-137">Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business</span></span>](manage-windows-devices.md)
     
-- [<span data-ttu-id="afa64-138">その他のセキュリティ機能</span><span class="sxs-lookup"><span data-stu-id="afa64-138">Additional security features</span></span>](security-features.md#additional-security-features)
+- [<span data-ttu-id="c183f-138">その他のセキュリティ機能</span><span class="sxs-lookup"><span data-stu-id="c183f-138">Additional security features</span></span>](security-features.md#additional-security-features)
