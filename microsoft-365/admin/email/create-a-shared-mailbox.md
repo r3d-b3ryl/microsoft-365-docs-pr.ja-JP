@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212307"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628905"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
 > [!NOTE]
 > 組織でハイブリッド Exchange 環境を使用する場合は、オンプレミスの Exchange 管理センター (EAC) を使用して、共有メールボックスを作成および管理する必要があります。 「[Exchange 管理センターで共有メールボックスを作成する](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)」を参照してください。<br><br>
-> 共有メールボックスと Outlook 用 Office 365 グループのどちらを作成すればよいかわからない場合は、「[グループを比較する](../create-groups/compare-groups.md)」のガイダンスを参照してください。 現在、共有メールボックスを Office 365 グループに移行することはできません。 この機能をご希望の場合は、[こちらから投票](https://go.microsoft.com/fwlink/?linkid=871518)してお知らせください。
+> 共有メールボックスと Outlook 用 Microsoft 365 グループのどちらを作成すればよいかわからない場合は、「[グループを比較する](../create-groups/compare-groups.md)」のガイダンスを参照してください。 現在、共有メールボックスを Microsoft 365 グループに移行することはできません。 この機能をご希望の場合は、[こちらから投票](https://go.microsoft.com/fwlink/?linkid=871518)してお知らせください。
 
 共有メールボックスの作成は簡単なので、ユーザーのグループが共通のメール アドレス (info@contoso.com など) を監視して、そこからメールを送信することができます。共有メールボックスに送信されたメッセージにグループのユーザーが返信すると、そのメールは、個別のユーザーからではなく共有メールボックスから送信されたように表示されます。
 
@@ -42,7 +42,7 @@ ms.locfileid: "43212307"
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>共有メールボックスを作成し、メンバーを追加する
   
-1. Office 365 のグローバル管理者アカウント、または Exchange の管理者アカウントでサインインします。 "**このページへのアクセス許可がないため、この操作を実行できません**" というメッセージが表示される場合、そのユーザーは管理者ではありません。 
+1. グローバル管理者アカウント、または Exchange の管理者アカウントでサインインします。 "**このページへのアクセス許可がないため、この操作を実行できません**" というメッセージが表示される場合、そのユーザーは管理者ではありません。 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ Outlook の共有メールボックスの詳細については、次を参照し
     
     手順については、「<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Outlook Mobile に共有メールボックスを追加する</a>」を参照してください。
 
-- ブラウザーを開いて Office 365 にサインインし、Outlook on the web に移動する。 Outlook on the web から、共有メールボックスにアクセスできます。
+- ブラウザーを開き、サインインして、Outlook on the web に移動します。 Outlook on the web から、共有メールボックスにアクセスできます。
 
     手順については、「<a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">共有メールボックスを Outlook on the web に追加する</a>」を参照してください。
 

@@ -3,7 +3,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必須: 全体管理者アカウントが保護されている 
 
-[Office 365 全体管理者アカウントが保護される](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)ことで、Microsoft 365 サブスクリプションの侵害につながる可能性がある攻撃者による資格情報の侵害を阻止します。
+[グローバル管理者アカウントが保護される](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)ことで、Microsoft 365 サブスクリプションの侵害につながる可能性がある攻撃者による資格情報の侵害を阻止します。
 
 この必須条件を省略した場合、全体管理者アカウントが攻撃および侵害を受けやすくなり、攻撃者は獲得攻撃、破壊、または身代金要求の目的で、システム全体でデータにアクセスできるようになります。
 
@@ -17,7 +17,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. 手順 1 の各アカウントを使用して、Office 365 にサインインします。 それぞれのサインインでは、Azure 多要素認証および組織で使用できる最も強力な2 次認証が必要です。
+2. 手順 1 から各アカウントを使用してサインインします。 それぞれのサインインでは、Azure 多要素認証および組織で使用できる最も強力な2 次認証が必要です。
 
 > [!Note]
 > Azure Active Directory PowerShell for Graph モジュールのインストールと Office 365 へのサインインの手順については、「[Office 365 PowerShell への接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)」を参照してください。
@@ -66,11 +66,11 @@ ID インフラストラクチャに関する追加の推奨事項について�
 必要に応じて、[手順 2](../identity-secure-your-passwords.md#identity-sso) がこのオプション条件を満たす上で役立ちます。
 
 <a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>オプション: Office 365 のサインイン画面を組織に合わせてカスタマイズしている
+### <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>オプション: サインイン画面は、組織に合わせてカスタマイズされています
 
-「[クイック スタート: Azure AD のサインイン ページに会社のブランドを追加する](https://aka.ms/aadpaddbranding)」に従って組織のブランドを Office 365 サインイン ページに追加しています。
+「[会社のブランドをサインイン ページとアクセス パネル ページに追加する](https://aka.ms/aadpaddbranding)」を使用して、組織のブランドをサインイン ページに追加しています。
 
-このオプション条件を省略した場合、ユーザーに対して汎用 Office 365 サインイン画面が表示され、ユーザーが当該組織のサイトにサインインすることを確信できない可能性があります。
+このオプションを省略した場合は、ユーザーに対して汎用サインイン画面が表示されるため、ユーザーが当該組織のサイトにサインインしていることを確信できない可能性があります。
 
 必要に応じて、[手順 2](../identity-secure-your-passwords.md#identity-custom-sign-in) がこのオプション条件を満たす上で役立ちます。
 
@@ -183,7 +183,7 @@ Azure AD Connect Health ポータルには、オンプレミス ドメイン コ
 
 
 <a name="crit-identity-self-service-groups"></a>
-### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>オプション: 特定の Azure AD セキュリティと Office 365 グループでセルフサービスによるグループの管理が有効になっている
+### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>オプション: 特定の Azure AD セキュリティと Microsoft 365 グループでは、セルフサービスによるグループの管理が有効です
 
 セルフサービスによる管理に適しているグループを判別し、各グループの所有者に対してグループ管理のワークフローと責任を説明し、これらのグループに対して[Azure AD でのセルフサービスによる管理をセットアップ](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)しています。
 

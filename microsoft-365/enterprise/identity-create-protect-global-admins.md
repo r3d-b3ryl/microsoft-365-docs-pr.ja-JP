@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: グローバル管理者アカウントには、資格情報の侵害から保護できるように特別な対処が必要です。
-ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c23a5730bc4c6af1f7fd829a40b63cc7ccc89184
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633575"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621308"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>手順 1: グローバル管理者アカウントを作成して保護する
 
@@ -41,7 +41,7 @@ ms.locfileid: "42633575"
 1. テスト ユーザー アカウントを使用して、ユーザー アカウント別または条件付きアクセスに基づく Azure 多要素認証 (MFA) 設定をテストし、MFA が予期されているとおりに正しく機能することを確認します。 MFA には、スマートフォンに送信される確認コードなど、セカンダリ認証方式が必要です。
 2. MFA を必要とするグローバル管理者アカウントに対して条件付きアクセスポリシーを作成して有効にし、組織で利用可能な最も強力なセカンダリ認証方法を使用します。 詳細については、「[Azure 多要素認証](identity-access-prerequisites.md#protecting-administrator-accounts)」を参照してください。
 
-追加の保護機能については、「[Office 365 グローバル管理者アカウントを保護する](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations)」を参照してください。
+追加の保護機能については、「[グローバル管理者アカウントを保護する](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations)」を参照してください。
 
 > [!Note]
 > サイバー攻撃のような緊急時の非常事態に対する緊急アカウントは、クラウド専用アカウントになります。 また、クラウド専用ではない (対象または永続的な) グローバル管理者アカウントを所有している場合もあります。 詳細については、「[Azure AD で緊急アクセス用管理者アカウントを管理する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)」を参照してください。
@@ -86,9 +86,9 @@ Azure AD テナントと管理者アカウントに対して Azure PIM を有効
 <a name="identity-pam"></a>
 ## <a name="privileged-access-management"></a>特権アクセス管理
 
-特権アクセス管理は、Office 365 テナントでのタスクベースのアクティビティに対して Just-In-Time アクセスを指定するポリシーを構成することで有効になります。これは、機密性の高いデータへの継続的なアクセスや重要な構成設定へのアクセスに、既存の特権管理者アカウントが使用される可能性のある侵害から組織を保護するために役立ちます。たとえば、Office 365 テナント内の組織のメールボックス設定にアクセスして変更する際には、明示的な承認が必要になる特権アクセス管理ポリシーを構成できます。
+特権アクセス管理は、テナントでのタスクベースのアクティビティに対して Just-In-Time アクセスを指定するポリシーを構成することで有効になります。これは、機密性の高いデータへの継続的なアクセスや重要な構成設定へのアクセスに、既存の特権管理者アカウントが使用される可能性のある侵害から組織を保護するために役立ちます。たとえば、テナント内の組織のメールボックス設定にアクセスして変更する際には、明示的な承認が必要になる特権アクセス管理ポリシーを構成できます。
 
-この手順では、Office 365 テナントの特権アクセス管理を有効にして、組織の Office 365 データおよび構成設定へのタスクベースのアクセスに対するセキュリティを強化する特権アクセスポリシーを構成します。Office 365 組織の特権アクセスは、次の 3 つの基本的な手順で開始します。
+この手順では、テナントの特権アクセス管理を有効にして、組織のデータおよび構成設定へのタスクベースのアクセスに対するセキュリティを強化する特権アクセスポリシーを構成します。組織の特権アクセスは、次の 3 つの基本的な手順で開始します。
 
 - 承認者のグループを作成する
 - 特権アクセスを有効にする
@@ -96,9 +96,9 @@ Azure AD テナントと管理者アカウントに対して Azure PIM を有効
 
 構成が完了すると、特権アクセス管理によって、継続的な特権なしで運用できるようになり、継続的な管理アクセスが原因で発生する脆弱性に対抗する防御層が得られます。定義済みの承認ポリシーが関連付けられているタスクを特権アクセスで実行するには、承認が必要になります。承認ポリシーに含まれているタスクの実行を必要とするユーザーは、そのポリシーで定義されているタスクの実行に必要なアクセス許可を得るために、アクセス承認を要求して承認される必要があります。
 
-Office 365 の特権アクセス管理を有効にするには、「[Office 365 の特権アクセス管理を構成する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)」のトピックを参照してください。
+特権アクセス管理を有効にするには、「[特権アクセス管理を構成する](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)」のトピックを参照してください。
 
-詳細については、「[Office 365 の特権アクセス管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)」のトピックを参照してください。
+詳細については、「[特権アクセス管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)」のトピックを参照してください。
 
 
 |||
