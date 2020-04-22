@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 7cb09d0cadcc70b96c5f1404defa5d0387947ca8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0cd96cb73ad3d0b38ab1e5ff31c913d97528c2d4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594798"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632793"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>管理されていない Windows 10 Pc および Mac を保護する
 
@@ -38,16 +38,16 @@ Windows 10 Pc および Mac を Microsoft Intune に登録することによっ�
 
 1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
 
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 Business username and password to sign in.
+2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
 3. --> 
 
 ## <a name="protect-a-computer-running-windows-10-or-a-mac"></a>Windows 10 または Mac を実行しているコンピューターを保護する
 
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365 Business, or a Mac, the Microsoft 365 Business protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
+<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
 -->
 Windows 10 PC または Mac が組織で管理されていない場合は、必ずこれらのセキュリティ機能を構成してください。
 
-## <a name="windows-10tabwindows10"></a>[Windows 10](#tab/Windows10)
+## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 **デバイスの暗号化を有効にする**<p>
 
 デバイスの暗号化は、さまざまな Windows デバイスで使用でき、暗号化によってデータを保護します。 デバイスの暗号化を有効にすると、承認されたユーザーのみがデバイスとデータにアクセスできるようになります。 手順については、「 [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 」を参照してください。
@@ -65,7 +65,7 @@ Windows Update は、PC の安全性を確保して脅威から保護するた�
 **Windows ファイアウォールを有効にする**<p>
 別のファイアウォールが有効になっている場合でも、Windows ファイアウォールを常に実行する必要があります。 Windows ファイアウォールを無効にすると、デバイス (とネットワークがある場合は、そのデバイスが許可されていないアクセスに対して脆弱になることがあります。 手順について[は、「Windows ファイアウォールの有効化または無効化](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)」を参照してください。
 
-## <a name="mactabmac"></a>[Mac](#tab/Mac)
+## <a name="mac"></a>[Mac](#tab/Mac)
 **FileVault を使用して Mac ディスクを暗号化する**<p>
 ディスクの暗号化は、デバイスの紛失や盗難時にデータを保護します。 FileVault の完全な暗号化によって、スタートアップディスクの情報に対する権限のないアクセスを防ぐことができます。 手順については[、「Use FileVault to encrypt the startup disk In Mac](https://support.apple.com/HT204837) 」を参照してください。
 

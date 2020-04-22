@@ -1,5 +1,5 @@
 ---
-title: 既存の Office 365 テナントにロールアウトされる Azure Information Protection の保護機能
+title: 既存のテナントにロールアウトする Azure Information Protection の保護機能
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,24 +16,24 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: 情報を保護するための最初の手順を説明するために、2018年7月に、Azure Information Protection の対象となるすべてのテナントに、Azure Information protection の保護機能が既定で有効になります。 以前は Office 365 では、Azure Information Protection の保護機能が Rights Management または Azure RMS と呼ばれていました。 組織に Office E3 service プランまたはより高いサービスプランがある場合は、これらの機能をロールアウトする際に、Azure Information Protection を使用して情報の保護を開始することになります。
-ms.openlocfilehash: de3b233d4baac380608d3a209c2ffea274c20d5b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3efdeefd2008a5ff9f730b879190d1edc015803a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083579"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638274"
 ---
-# <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>既存の Office 365 テナントにロールアウトされる Azure Information Protection の保護機能
+# <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>既存のテナントにロールアウトする Azure Information Protection の保護機能
 
 情報を保護するための最初の手順を説明するために、2018年7月に、Azure Information Protection の対象となるすべてのテナントに、Azure Information protection の保護機能が既定で有効になります。 以前は Office 365 では、Azure Information Protection の保護機能が Rights Management または Azure RMS と呼ばれていました。 組織に Office E3 service プランまたはより高いサービスプランがある場合は、これらの機能をロールアウトする際に、Azure Information Protection を使用して情報の保護を開始することになります。
 
 ## <a name="changes-beginning-july-1-2018"></a>2018年7月1日以降の変更
 
-2018年7月1日以降、次のいずれかのサブスクリプションプランを所有しているすべての Office 365 テナントに対して、Azure Information Protection の保護機能が有効になります。
+2018年7月1日以降、Microsoft は次のいずれかのサブスクリプションプランを使用して、すべての組織の Azure Information Protection の保護機能を有効にします。
 
 - Office 365 メッセージの暗号化は、Office 365 E3 および E5 の一部として提供されます。 Microsoft E3 and E5、Office 365 A1、A3、A5、および Office 365 G3 および G5。 Azure Information Protection によって提供される新しい保護機能を利用するには、追加のライセンスは必要ありません。
 
-- また、次のプランに Azure Information Protection Plan 1 を追加して、新しい Office 365 メッセージの暗号化機能を受け取ることができます。 Exchange Online プラン1、Exchange Online プラン2、Office 365 F1、Office 365 Business Essentials、Office 365 Business Premium、またはOffice 365 Enterprise E1
+- また、次の計画に Azure Information Protection Plan 1 を追加して、新しい Office 365 メッセージ暗号化機能を受信することもできます。 Exchange Online プラン1、Exchange Online プラン2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、または Office 365 Enterprise E1。
 
 - Office 365 の各ユーザー利点を活用するには、この機能の対象となるライセンスが必要です。
 
@@ -45,11 +45,11 @@ ms.locfileid: "42083579"
 
 ## <a name="why-are-we-making-this-change"></a>この変更を行う理由
 
-Office 365 Message Encryption では、Azure Information Protection の保護機能を活用しています。 最近の Office 365 メッセージ暗号化の機能強化と、Microsoft 365 における情報保護への幅広い投資に加えて、組織では、以前のように保護機能を有効にして使用することが容易になりました。暗号化テクノロジはセットアップが困難です。 Azure Information Protection の保護機能を既定で有効にすることにより、機密データの保護をすばやく始めることができます。
+Office 365 Message Encryption では、Azure Information Protection の保護機能を活用しています。 最近の Office 365 メッセージ暗号化の機能強化と、Microsoft 365 における情報保護への広範な投資の中核として、組織が保護機能を有効にして使用することが容易になりました。これまでに、暗号化テクノロジを設定するのは困難でした。 Azure Information Protection の保護機能を既定で有効にすることにより、機密データの保護をすばやく始めることができます。
 
 ## <a name="does-this-impact-me"></a>影響はありますか?
 
-Office 365 組織が適格な Office 365 ライセンスを購入している場合、テナントはこの変更によって影響を受けます。
+組織で資格のある Office 365 ライセンスを購入した場合、テナントはこの変更によって影響を受けます。
 
  **大事な！** オンプレミス環境で Active Directory Rights Management サービス (AD RMS) を使用している場合は、この変更をすぐにオプトアウトするか、または Azure Information Protection に移行してから、今後30日間以内にこの変更を展開する必要があります。 オプトアウトの詳細については、「AD RMS を使用して、どのようにオプトアウトしますか?」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行を希望する場合は、「 [AD RMS から Azure Information Protection への移行](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
 
@@ -65,7 +65,7 @@ Office 365 組織が適格な Office 365 ライセンスを購入している場
 
 ADSI Edit を使用して、Active Directory で発行された SCP があるかどうかを確認します。 CN = Configuration [サーバー名], CN = Services, CN = RightsManagementServices, CN = SCP
 
-2. SCP を使用していない場合は、AD RMS クラスターに接続する Windows コンピューターを、Windows レジストリを使用してクライアント側のサービスの検出またはライセンスのリダイレクトを行うように構成する必要があります。 HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\MSIPC\ServiceLocation または HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
+2. SCP を使用していない場合は、AD RMS クラスターに接続する Windows コンピューターを、Windows レジストリを使用してクライアント側のサービス検出またはライセンスリダイレクトを行うように構成する必要があり HKEY_LOCAL_MACHINE ます。 \SOFTWARE\Microsoft\MSIPC\ServiceLocation または HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
 
 これらのレジストリ構成の詳細については、「 [Windows レジストリを使用して](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry)[ライセンスサーバーのトラフィックをリダイレクト](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)する」を参照してください。
 
@@ -73,7 +73,7 @@ ADSI Edit を使用して、Active Directory で発行された SCP があるか
 
 今後の変更を中止するには、次の手順を実行します。
 
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
 2. 次の構文を使用して、Set-IRMConfiguration コマンドレットを実行します。
 

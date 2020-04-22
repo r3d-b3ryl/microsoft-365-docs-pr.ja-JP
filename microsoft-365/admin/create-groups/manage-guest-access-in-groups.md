@@ -1,5 +1,5 @@
 ---
-title: Office 365 グループでゲスト アクセスを管理する
+title: Microsoft 365 グループでゲストアクセスを管理する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: Office 365 グループへのゲストの追加、ゲスト ユーザーの表示、PowerShell を使用したゲスト アクセスの制御を行う方法について説明します。
-ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: ゲストアクセスを制御するために、Microsoft 365 グループにゲストを追加し、ゲストユーザーを表示し、PowerShell を使用する方法について説明します。
+ms.openlocfilehash: cca1d3dff4d95f5b15b9f18d5eeebcf054e52fe3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894505"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630069"
 ---
-# <a name="manage-guest-access-in-office-365-groups"></a>Office 365 グループでゲスト アクセスを管理する
+# <a name="manage-guest-access-in-microsoft-365-groups"></a>Microsoft 365 グループでゲストアクセスを管理する
 
-既定では、組織で Office 365 グループのゲスト アクセスが有効になっています。 管理者は、グループへのゲスト アクセスを、組織全体または個々のグループに対して許可するかを制御できます。
+既定では、Microsoft 365 グループのゲストアクセスは組織に対して有効になっています。 管理者は、グループへのゲスト アクセスを、組織全体または個々のグループに対して許可するかを制御できます。
 
-有効になっている場合、グループ メンバーは Outlook on the Web を使用して、ゲスト ユーザーを Office 365 グループに招待できます。 招待状が承認のためにグループの所有者に送信されます。
+グループメンバーは、オンにすると、Outlook on Web を介して Microsoft 365 グループにゲストユーザーを招待できます。 招待状が承認のためにグループの所有者に送信されます。
 
 > [!Note]
 > ネイティブ モードまたは [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) にある Yammer Enterprise ネットワークは、ネットワークのゲストをサポートしていません。
-> Office 365 Connected Yammer グループは現在ゲストアクセスをサポートしていませんが、Yammer ネットワークに接続されていない外部グループを作成することができます。 手順については。「[Yammer の外部グループを作成して管理する](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)」を参照してください。
+> Microsoft 365 Connected Yammer グループは現在、ゲストアクセスをサポートしていませんが、Yammer ネットワークに接続されていない外部グループを作成することができます。 手順については。「[Yammer の外部グループを作成して管理する](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)」を参照してください。
 
 ### <a name="edit-guest-information"></a>ゲスト情報を編集する
 
@@ -48,11 +48,11 @@ ms.locfileid: "42894505"
 
 グループのゲスト アクセスを有効または無効にするには、Microsoft 365 管理センターで行うことができます。
 
-1. 管理センターで、[**設定** \> ]**設定**に移動して、[ **Office 365 グループ**] を選択します。
+1. 管理センターで、[**設定** \> ]**設定**に移動し、[ **Microsoft 365 グループ**] を選択します。
   
-2. [**Office 365 グループ**] ページで、組織外のユーザーにグループ リソースへのアクセスを許可するか、またはグループ所有者が組織外のユーザーをグループに追加できるようにするかを選択します。
+2. [ **Microsoft 365 Groups** ] ページで、組織外のユーザーにグループリソースへのアクセスを許可するか、グループ所有者に組織外のユーザーをグループに追加させるかを選択します。
 
-## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>管理センターから Office 365 グループにゲストを追加する
+## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>管理センターからの Microsoft 365 グループへのゲストの追加
 
 ゲストが既に自分のディレクトリ内にある場合、Microsoft 365 管理センターで、それらのゲストをグループに追加できます。
   
@@ -131,7 +131,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## <a name="related-articles"></a>関連記事
 
-[グループ メンバーシップを Microsoft 365 管理センターから管理する](add-or-remove-members-from-groups.md)
+[Microsoft 365 管理センターでグループメンバーシップを管理する](add-or-remove-members-from-groups.md)
   
 [Azure Active Directory アクセス レビュー](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

@@ -16,24 +16,24 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: SharePoint、OneDrive、Teams で検出された悪意のあるファイルに関する情報を表示する方法と、それらのファイルに対してアクションを実行する方法について説明します。
-ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 95f497c5be16d1ba1d4fa9fc57f0dd9650450414
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955557"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635402"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する
 
 [Office 365 ATP For SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md)では、組織がドキュメントライブラリおよびチームサイト内の悪意のあるファイルから保護されます。 悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。 この記事では、検出されたファイルと実行するアクションに関する情報を表示する方法について説明します。 
 
-この記事で説明されているタスクを実行するには、 [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っている必要があります。 
+この記事で説明されているタスクを実行するには、[セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っている必要があります。 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>検出されたファイルに関する情報をレポートを表示する
 
 Office 365 ATP によって検出されたファイルの状態と詳細情報を表示するには、脅威保護の状態レポートを使用できます。
   
-1. [Office 365 セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**ダッシュボード** \>の**脅威保護の状態**を**報告** \>する] を選択します。
+1. [[セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)] で、[**レポート** \> **ダッシュボード** \>の**脅威保護の状態**] を選択します。
     
 2. レポートの右上隅で、[**詳細テーブルの表示**] を選択します。
     
@@ -45,7 +45,7 @@ Office 365 ATP によって検出されたファイルの状態と詳細情報�
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>検疫内のファイルを表示し、処理を実行する
 
-1. &amp; Office 365 セキュリティコンプライアンスセンターで、[**脅威管理** \> **レビュー** \>の**検疫**] を選択します。 (に[https://protection.office.com/quarantine](https://protection.office.com/quarantine)直接移動することもできます。)
+1. セキュリティ&amp; /コンプライアンスセンターで、[**脅威管理** \> **レビュー** \>の**検疫**] を選択します。 (に[https://protection.office.com/quarantine](https://protection.office.com/quarantine)直接移動することもできます。)
     
 2. 左上隅で、ドロップダウンメニューの [**電子メール**] を [**ファイル**] に変更します。 結果のリストに含まれるアイテムが多すぎる場合は、**フィルター**機能を使用して選択範囲を絞り込みます。
     

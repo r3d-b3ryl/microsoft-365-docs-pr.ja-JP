@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織に対して送受信されるすべての電子メールメッセージに電子メール署名、法的免責事項、または開示ステートメントを追加する方法について説明します。
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360668"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631979"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "42360668"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>すべてのメッセージに適用される署名を作成する
 
@@ -46,7 +46,7 @@ ms.locfileid: "42360668"
     
 ::: moniker range="o365-worldwide"
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
 
 ::: moniker-end
 
@@ -62,9 +62,9 @@ ms.locfileid: "42360668"
 
 ::: moniker-end
 
-1. Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)でアプリ![起動ツールのアプリ起動ツールのアイコンを選択し、[**管理者**] を選択します。
+1. アプリ起動![ツールのアプリ起動ツールの](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)アイコンを選択し、[**管理者**] を選択します。
    
-    アプリが見つからない場合は、アプリ起動ツールから、[**すべてのアプリ**] を選択して、利用できる Office 365 アプリのアルファベット順の一覧を表示します。そこから、特定のアプリを検索できます。 
+    探しているアプリが見つかりませんか? アプリ起動ツールで [**すべてのアプリ**] を選択すると、利用可能なアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
     
 2. [**管理センター**] を選択し、[ **Exchange**] を選択します。
     
@@ -77,14 +77,14 @@ ms.locfileid: "42360668"
 6. [**このルールを適用**] で、 **[すべてのメッセージに適用]** を選択します。
     
     > [!TIP]
-    > [こちら](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)を参照してください。 (このスコープの記事は Exchange Server 用ですが、Office 365 にも適用されます)。 
+    > [こちら](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)を参照してください。 (このスコープの記事は Exchange Server 用ですが、Microsoft 365 にも適用されます)。 
   
 7. [実行する処理] の [ **免責事項を追加する**] はオンのままにします。 
     
 8.  [**テキストの入力**] を選択して、免責事項を入力します。 
     
     > [!TIP]
-    > [免責事項の書式設定の詳細](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)をご確認ください。 (この書式設定記事は Exchange Server 用ですが、Office 365 にも適用されます)。 
+    > [免責事項の書式設定の詳細](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)をご確認ください。 (この書式設定記事は Exchange Server 用ですが、Microsoft 365 にも適用されます)。 
 
 9. [ **1 つを選択**] を選択し、フォールバックオプションとして [**折り返し**] を選択します。 [ **OK**] を選択します。 これは、暗号化や別のメール設定のために免責事項を追加できない場合に、メッセージ エンベロープで免責事項がラップされることを意味します。
     
@@ -96,9 +96,9 @@ ms.locfileid: "42360668"
     
 13. 完了したら、[ **保存**] を選択します。 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Office 365 組織全体の署名の制限事項
+## <a name="limitations-of-organization-wide-signatures"></a>組織全体の署名の制限事項
 
-Office 365 署名では、次の操作を行うことはできません。
+Microsoft 365 署名では、次の操作を行うことはできません。
   
 - 最新の電子メールの返信または転送に直接署名を挿入する
     
@@ -112,6 +112,6 @@ Office 365 署名では、次の操作を行うことはできません。
   
 ## <a name="more-resources"></a>その他のリソース
 
-- PowerShell の使用方法については、「 [Office 365 の組織全体のメッセージの免責事項、署名、フッター、またはヘッダー](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 」を参照してください。 
+- PowerShell の使用方法については、「 [Microsoft 365 の組織全体のメッセージの免責事項、署名、フッター、またはヘッダー](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 」を参照してください。 
     
 

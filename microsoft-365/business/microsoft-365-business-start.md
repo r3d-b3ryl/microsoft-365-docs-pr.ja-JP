@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business を使い始める
+title: Microsoft 365 for business の使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -26,76 +26,76 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Microsoft 365 Business、セットアップ方法、およびユーザーのデバイスと Pc を準備して Microsoft 365 Business で保護されるようにする方法について説明します。
-ms.openlocfilehash: 220fb747e2bc501f3f6d46d967b30d2e5fd79a4a
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 for business、セットアップ方法、およびユーザーのデバイスと Pc を準備して Microsoft 365 for business で保護されていることを確認する方法について説明します。
+ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561442"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633205"
 ---
-# <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business を使い始める
+# <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 for business の使用を開始する
 
-## <a name="what-is-microsoft-365-business"></a>Microsoft 365 Business とは
+## <a name="what-is-microsoft-365-for-business"></a>Microsoft 365 for business とは
 
-Microsoft 365 Business は、Outlook、Word、Excel、その他の Office 製品など、常に最新の状態になっているビジネス生産性とコラボレーションツールの包括的なセットです。 管理が簡単なエンタープライズレベルのセキュリティを使用して、すべての iOS、Android、Windows 10 デバイス上の作業ファイルを保護することができます。
+Microsoft 365 for business は、Outlook、Word、Excel、およびその他の Office 製品で常に最新の状態になる、ビジネスの生産性とコラボレーションツールの包括的なセットです。 管理が簡単なエンタープライズレベルのセキュリティを使用して、すべての iOS、Android、Windows 10 デバイス上の作業ファイルを保護することができます。
 
-Microsoft 365 Business の簡単な概要については、このビデオをご覧ください。<br><br>
+Microsoft 365 for business の簡単な概要については、このビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 Business は、最大300のライセンスを想定しています。 その他のライセンスが必要な場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。 
+Microsoft 365 for business は、最大300のライセンスを想定しています。 その他のライセンスが必要な場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。 
   
-## <a name="get-microsoft-365-business"></a>Microsoft 365 Business を入手する
+## <a name="get-microsoft-365-for-business"></a>Microsoft 365 for business の入手
 
-- パートナーがいる場合は、microsoft 365 Business: microsoft[パートナーセンターから microsoft 365 business を取得](get-microsoft-365-business.md)することになります。
+- パートナーがいる場合は、microsoft 365 for business を利用できます。 microsoft[パートナーセンターから microsoft 365 for business を入手](get-microsoft-365-business.md)してください。
     
-- パートナーを持っておらず、Microsoft 365 Business を入手したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)できます。
+- パートナーを持っておらず、Microsoft 365 for business を入手する場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)できます。
     
-## <a name="set-up-microsoft-365-business"></a>Microsoft 365 Business のセットアップ
+## <a name="set-up-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップ
 
- **Microsoft 365 Business Suite のセットアップの概要**
+ **Microsoft 365 for business スイートの概要セットアップ**
   
-次の図では、管理者が Microsoft 365 Business をセットアップする方法について説明します。 また、Microsoft 365 Business 用に Windows Pc を準備する手順についても説明します。 [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、Microsoft 365 Business 管理センターで新しいデバイスを追加することもできます。 自動操縦を使用して、ユーザーが Microsoft 365 のビジネス資格情報を使用してサインインできるようになるとすぐに、新しいデバイスをセットアップして事前構成することができます。
+次の図では、管理者が Microsoft 365 for business をセットアップする方法について説明します。 また、Microsoft 365 for business 用に Windows Pc を準備する手順についても説明します。 [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、Microsoft 365 管理センターで新しいデバイスを追加することもできます。 自動操縦を使用して、ユーザーが Microsoft 365 for business の資格情報でサインインするとすぐに、生産性を高めるために新しいデバイスをセットアップして事前構成することができます。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-Microsoft 365 Business のセットアップの概要については、このビデオをご覧ください。<br><br>
+このビデオでは、Microsoft 365 for business のセットアップの概要をご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
 このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
   
-### <a name="1-set-up-microsoft-365-business-admin"></a>1: Microsoft 365 Business をセットアップする (管理者)
+### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Microsoft 365 for business のセットアップ (管理者向け)
 
-グローバル管理者の資格情報を使用して[microsoft 365 business 管理センター](https://portal.office.com/adminportal/home)にサインインし、次の手順を実行して Microsoft 365 Business をセットアップします。 
+グローバル管理者の資格情報を使用して[microsoft 365 管理センター](https://portal.office.com/adminportal/home)にサインインし、次の手順を実行して microsoft 365 for business を設定します。 
   
-1. [Microsoft 365 Business を使用してデバイス上のデータを保護するための前提条件](pre-requisites-for-data-protection.md)
+1. [Microsoft 365 for business を使用してデバイス上のデータを保護するための前提条件](pre-requisites-for-data-protection.md)
     
-    最初に前提条件を読んで、デバイスの Microsoft 365 Business の準備が整っていることを確認してください。
+    最初に前提条件を読んで、デバイスの Microsoft 365 for business の準備が整っていることを確認してください。
     
-2. [セットアップウィザードを使用して Microsoft 365 Business をセットアップする](set-up.md)
+2. [セットアップウィザードを使用して、Microsoft 365 for business をセットアップする](set-up.md)
     
-    **ローカルの Active Directory からクラウドに完全に移動**する場合は、Microsoft 365 Business 管理センターに移動し、セットアップウィザードを使用してユーザーを手動で追加するか、または Azure AD Connect を使用して1回限りの同期を行うことができます。 これを行うには 2 つの方法があります。 
+    **ローカルの Active Directory からクラウドに完全に移動**する場合は、Microsoft 365 管理センターに移動し、セットアップウィザードを使用してユーザーを手動で追加するか、または Azure AD Connect を使用して1回限りの同期を行うことができます。 これを行うには 2 つの方法があります。 
     
     - Exchange 2010、Exchange 2013、または Exchange 2016 サーバーもある場合は、最小限の[ハイブリッドを使用して、exchange メールボックスを Office 365 にすばやく移行](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)できます。 最低限のハイブリッド手順には、Azure AD へのユーザーの1回限りの同期と、オンプレミスからクラウドへの電子メールの移行が含まれます。 メールの移行が完了した後、この方法を使用すると、ディレクトリ同期は自動的に無効になります。
     
-    - Office 365 ディレクトリ同期ウィザードを使用して、ユーザーをクラウドに同期させます。 「[Office 365 のディレクトリ同期をセットアップする](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の手順に従って、このプロセスを完了します。 ユーザーをクラウドに同期させた後、 [Office 365 のディレクトリ同期を無効](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)にする必要があります。
+    - ディレクトリ同期ウィザードを使用して、ユーザーをクラウドに同期させます。 このプロセスを完了するには、「 [Microsoft 365 のディレクトリ同期のセットアップ](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の手順を実行します。 ユーザーをクラウドに同期させた後、 [Office 365 のディレクトリ同期を無効](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)にする必要があります。
     
-    また、このように追加された各ユーザーに、Microsoft 365 Business のライセンスを付与する必要があります。 この操作は、[セットアップウィザード](set-up.md)で行うことができます。または、 [Office 365 for business のユーザーにライセンスを割り当てる](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)ことができます。
+    また、このように追加された各ユーザーに、Microsoft 365 for business のライセンスを付与する必要があります。 この操作は、[セットアップウィザード](set-up.md)で行うことができます。または、 [Microsoft 365 for business のユーザーにライセンスを割り当てる](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)ことができます。
     
 ### <a name="2-prepare-mobile-devices"></a>2: モバイルデバイスの準備
 
-「 [Microsoft 365 business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」の手順に従って、Office アプリをデバイスにインストールし、Microsoft 365 business で保護されていることを確認します。 
+「Office アプリをデバイスにインストールする」および「Microsoft 365 for business で保護されていることを確認する」の「 [microsoft 365 用のモバイルデバイスのセットアップ](set-up-mobile-devices.md)」の手順に従います。 
   
 ### <a name="3-prepare-pcs"></a>3: Pc の準備
 
-管理者は、 [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、新しい Windows 10 pc の設定を事前に選択できます。 ユーザーは、このトピックの手順に従って、既存または新しい Windows 10 デバイスをセットアップできます。 [Microsoft 365 Business ユーザーの Windows pc をセットアップ](set-up-windows-devices.md)します。 既存のデバイスの場合、ユーザーは**オプション**で[ファイルを OneDrive for business に移動](move-files-to-onedrive.md)することができます。 サードパーティ製のツールを使用して、Windows プロファイルに関連付けられているファイルを OneDrive に移動することもできます。
+管理者は、 [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、新しい Windows 10 pc の設定を事前に選択できます。 ユーザーは、このトピックの手順に従って、既存または新しい Windows 10 デバイスをセットアップできます。「 [Microsoft 365 for business ユーザーの Windows pc をセットアップ](set-up-windows-devices.md)する」。 既存のデバイスの場合、ユーザーは**オプション**で[ファイルを OneDrive for business に移動](move-files-to-onedrive.md)することができます。 サードパーティ製のツールを使用して、Windows プロファイルに関連付けられているファイルを OneDrive に移動することもできます。
   
-組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法を使用することをお勧めします。この状態のデバイスは、**ハイブリッド AZURE AD に参加**しているデバイスと呼ばれます。 
+組織がオンプレミスの Windows Server Active Directory を使用している場合は、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持しながら、Microsoft 365 for business をセットアップして、Windows 10 デバイスを保護することができます。 「ドメインに参加している Windows 10 デバイスを有効にする」の手順に従っ[て、Microsoft 365 for business で管理される](manage-windows-devices.md)ように設定します。 この方法を使用することをお勧めします。この状態のデバイスは、**ハイブリッド AZURE AD に参加**しているデバイスと呼ばれます。 
   
-オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルの Active Directory を保持する場合は、「 [Microsoft 365 Business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、 **azure ad に参加**しているデバイスにこれらのリソースへのアクセス権を与えることができます。
+オンプレミスのリソース (ファイル共有やプリンターなど) が含まれているローカルの Active Directory を保持する場合は、「 [Microsoft 365 for business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、 **azure ad に参加**しているデバイスにこれらのリソースへのアクセスを許可できます。
   
   
 ## <a name="contact-support"></a>サポートに連絡する
@@ -104,12 +104,12 @@ Microsoft 365 Business のセットアップの概要については、このビ
   
 - パートナーにお問い合わせください。
     
-- Microsoft 365 Business 管理者は、カスタマーサポートチームにアクセスできます。 **[ビジネス製品のサポートに問い合わせる-管理者向けヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- Microsoft 365 for business 管理者は、カスタマーサポートチームにアクセスできます。一般**[法人向け製品サポートへのお問い合わせ-管理者向けヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-Microsoft [365 business](manage.md)[移行を microsoft 365 business に管理する](migrate-to-microsoft-365-business.md)
+Microsoft [365 for](manage.md)Business[から microsoft 365 への移行](migrate-to-microsoft-365-business.md)を管理する
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

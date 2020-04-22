@@ -13,19 +13,19 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントに対して Office 365 保持ラベルを作成して使用します。
-ms.openlocfilehash: 6534eff67e9c91423eb6f81415cb3ef2e965dcc1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントの保持ラベルを作成して使用します。
+ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067994"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636094"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデータ分類
 
 *このテストラボ ガイドは、Microsoft 365 Enterprise および Office 365 Enterprise テスト環境に使用できます。*
 
-この記事の手順を使用して、Microsoft 365 エンタープライズテスト環境で Office 365 の保持ラベルを使用してデータ分類を構成します。
+この記事の手順に従って、Microsoft 365 Enterprise テスト環境の保持ラベルを使用してデータ分類を構成します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -34,14 +34,14 @@ ms.locfileid: "42067994"
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
-最小要件での軽量な方法で Office 365 の保持ラベルを構成する場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
+最小要件での軽量な方法で保持ラベルを構成する場合は、「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
-シミュレートされたエンタープライズで Office 365 の保持ラベルを構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
+シミュレートされたエンタープライズで保持ラベルを構成する場合は、[パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
 > [!NOTE]
-> Office 365 の保持ラベルのテストでは、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
+> 保持ラベルのテストでは、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと、Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
 
-## <a name="phase-2-create-office-365-retention-labels"></a>フェーズ 2: Office 365 の保持ラベルを作成する
+## <a name="phase-2-create-retention-labels"></a>フェーズ 2: 保持ラベルを作成する
 
 このフェーズでは、SharePoint Online ドキュメントフォルダーのさまざまな保持レベルの保持ラベルを作成します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "42067994"
  
 保持ラベルが公開されるまでに数分かかる場合があることに注意してください。
 
-## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>フェーズ 3: ドキュメントに Office 365 の保持ラベルを適用する
+## <a name="phase-3-apply-retention-labels-to-documents"></a>フェーズ 3: ドキュメントに保持ラベルを適用する
 
 このフェーズでは、SharePoint Online サイトの Documents フォルダー内のファイルの既定の保持ラベルの動作を検出し、ドキュメントの保持ラベルを手動で変更します。
 
@@ -133,7 +133,7 @@ ms.locfileid: "42067994"
     
 7. 文書の **.docx**ウィンドウで、[**保持ラベルの適用**] の下の [**高機密**] ラベルを選択し、[**保存**] をクリックします。
 
-Office 365 保持ラベルを運用環境に展開する方法の詳細とリンクについては、**情報保護**フェーズの「[環境の分類を構成](infoprotect-configure-classification.md)する」の手順を参照してください。
+保持ラベルを運用環境に展開する方法の詳細とリンクについては、「**情報保護**フェーズ」の「[環境の分類を構成](infoprotect-configure-classification.md)する」の手順を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

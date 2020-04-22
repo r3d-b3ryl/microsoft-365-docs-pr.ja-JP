@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 の請求書について
+title: Microsoft 365 for business の請求書について
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: 一般法人向け Office 365 の請求書、請求書、支払い情報を解釈する方法、および発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Microsoft 365 for business 請求書の料金、請求、および支払いに関する情報を解釈する方法と、発注書番号を変更する方法について説明します。
+ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142301"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634970"
 ---
-# <a name="understand-your-invoice-for-office-365-for-business"></a>一般法人向け Office 365 の請求書について
+# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for business の請求書について
 
 毎月、新しい請求明細書が管理センターで利用可能であることを知らせる電子メールを受け取ります。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
   
@@ -138,6 +138,6 @@ ms.locfileid: "43142301"
 
 ## <a name="related-articles"></a>関連記事
 
-[一般法人向け Office 365 サブスクリプションの支払い方法](pay-for-your-subscription.md)
+[Microsoft 365 for business サブスクリプションの支払い](pay-for-your-subscription.md)
 
 [Minecraft: Education Edition の支払いオプション](https://go.microsoft.com/fwlink/p/?linkid=838761)

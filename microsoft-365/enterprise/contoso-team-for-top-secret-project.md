@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社がトップ機密プロジェクトの高度な規制データに対してチームを使用して、新しいスイートの製品とサービスを開発する方法について説明します。'
-ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 310ef33d4add7d71616aee8808515ca90536d8c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068030"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636500"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso 社の極秘プロジェクトのチーム
 
@@ -50,21 +50,21 @@ Contoso IT スタッフは、Project 2X の[高度な規制データにチーム
 
 ## <a name="step-2-configured-a-dlp-policy-and-the-underlying-site-for-a-retention-label"></a>手順 2: DLP ポリシーと、保持ラベルの基礎となるサイトを構成します。 
 
-最初に、Contoso 管理者は、Project 2X team の基礎となる SharePoint サイトの**ドキュメント**セクションに、既存の**非常に機密性の高い**Office 365 保持ラベルを適用しました。
+最初に、Contoso 管理者は、Project 2X team の基礎となる SharePoint サイトの**ドキュメント**セクションに、既存の**高機密**保持ラベルを適用しました。
 
-次に、 **Project 2x**という新しい OFFICE 365 DLP ポリシーを作成しました。次のようになります。
+次に、 **Project 2x**という名前の新しい DLP ポリシーを作成しました。
 
-- 非常に機密性の高い Office 365 保持ラベルを使用します。
+- 高機密保持ラベルを使用します。
 - ユーザーが Contoso の外部のプロジェクト2X チーム内のファイルを共有しようとすると、ユーザーをブロックします。
 
 構成の詳細については、「[保持ラベルおよび DLP を使用した teams でファイルを保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp)する」を参照してください。
 
-## <a name="step-3-created-an-office-365-sensitivity-label-for-the-project-2x-team"></a>手順 3: Project 2X チームの Office 365 機密ラベルを作成する
+## <a name="step-3-created-a-sensitivity-label-for-the-project-2x-team"></a>手順 3: Project 2X チームの機密ラベルを作成する
 
-Contoso 管理者は、 **Project 2x**という名前の新しい Office 365 機密ラベルを作成しました。
+Contoso admins は、 **Project 2x**という名前の新しい機密ラベルを作成しました。次のようになります。
 
 - 暗号化が必要です。
-- Project 2X Office 365 グループに対して共同編集権限を許可します。
+- Project 2 の Microsoft 365 グループに対して共同編集権限を許可します。
 
 プロジェクト2チームの最終的な構成を次に示します。
 
@@ -72,7 +72,7 @@ Contoso 管理者は、 **Project 2x**という名前の新しい Office 365 機
  
 基になる Project 2X SharePoint サイトの [ドキュメント] セクションにあるファイルは、次の方法で保護されています。
 
-- サイトのアクセス許可。これは、Project 2X Office 365 グループのメンバーにのみアクセスを許可します。
+- サイトのアクセス許可。これは、Project 2X Microsoft 365 グループのメンバーにのみアクセスを許可します。
 - 新しいファイルに自動的に割り当てられる、高機密保持ラベル。
 - 高機密保持ラベルと、そのファイルを外部ユーザーと共有することをブロックする設定を使用する DLP ポリシー。
 - プロジェクトがサイトから移動またはコピーされた場合に、ファイルと共に送信される、暗号化とアクセス許可を持つ2つのプロジェクトの機密ラベル。

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: '概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。'
-ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: e35e380b61a94e08ff25e2e4c4bdfa28a635449e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612617"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637630"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -38,19 +38,19 @@ ms.locfileid: "42612617"
 
 分離したチーム サイトの SharePoint Online 管理者に対応するユーザー アカウントのセットを決定します。
   
-Office 365 を使用してユーザー アカウントとグループを管理していて、Windows PowerShell を使用する場合は、そのユーザー プリンシパル名 (UPN) のリストを作成します (UPN の例: belindan@contoso.com)。
+Microsoft 365 を介してユーザーアカウントとグループを管理していて、Windows PowerShell を使用する場合は、ユーザープリンシパル名 (upn) の一覧を作成します (例: belindan@contoso.com)。
   
 ### <a name="step-2-list-the-members-for-the-site"></a>手順 2: サイトのメンバーを一覧表示する
 
 分離したチーム サイトのメンバーに対応するユーザー アカウントのセットを決定します。メンバーはサイト内に格納されているリソースで共同作業を行います。
   
-Office 365 を使用してユーザー アカウントとグループを管理していて、PowerShell を使用する場合は、その UPN の一覧を作成します。サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
+Microsoft 365 を通じてユーザーアカウントとグループを管理していて、PowerShell を使用する場合は、Upn の一覧を作成します。 サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
   
 ### <a name="step-3-list-the-viewers-for-the-site"></a>手順 3:サイトのビューアーを一覧表示する
 
 分離したチーム サイトのビューアーに対応するユーザー アカウントのセットを決定します。ビューアーは、サイトに格納されているリソースを表示できますが、リソースを変更したり、そのコンテンツで直接共同作業を行ったりすることはできません。
   
-Office 365 を使用してユーザー アカウントとグループを管理していて、PowerShell を使用する場合は、その UPN の一覧を作成します。サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
+Microsoft 365 を通じてユーザーアカウントとグループを管理していて、PowerShell を使用する場合は、Upn の一覧を作成します。 サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
   
 サイトのビューアーには、経営幹部、弁護士、または部門間の利害関係者などが含まれます。
   
@@ -101,7 +101,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
 3. 手順 3 のユーザーの一覧をサイト ビューアーのアクセス グループに追加する
     
-Active Directory ドメインサービス (AD DS) を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用してユーザーを適切なアクセスグループに追加し、Office 365 サブスクリプションとの同期を待機します。
+Active Directory ドメインサービス (AD DS) を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用してユーザーを適切なアクセスグループに追加し、Microsoft 365 サブスクリプションとの同期を待機します。
   
 Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。 いずれかのアクセスグループに重複したグループ名がある場合は、Microsoft 365 管理センターを使用する必要があります。
   
@@ -155,7 +155,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>フェーズ 2:分離したチーム サイトを作成し構成する
 
-このフェーズでは、分離した SharePoint Online サイトを作成し、新しい Azure AD ベースのアクセス グループを使用するために既定の SharePoint Online アクセス許可レベルのアクセス許可を構成します。 既定では、新しいチームサイトには Office 365 グループとその他の関連リソースが含まれていますが、この場合は、Office 365 グループを使用せずにチームサイトを作成します。 これにより、SharePoint を介してアクセス許可を完全に管理できます。
+このフェーズでは、分離した SharePoint Online サイトを作成し、新しい Azure AD ベースのアクセス グループを使用するために既定の SharePoint Online アクセス許可レベルのアクセス許可を構成します。 既定では、新しいチームサイトには Microsoft 365 グループとその他の関連リソースが含まれていますが、この場合は、Microsoft 365 グループを使用せずにチームサイトを作成します。 これにより、SharePoint を介してアクセス許可を完全に管理できます。
   
 最初に、次の手順で SharePoint Online チーム サイトを作成します。
   
@@ -185,7 +185,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 4. **アクセス許可の要求**を**オフ**に設定します。
 
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
     
 6. [**権限**] ウィンドウで、[**高度な権限の設定**] をクリックします。
     

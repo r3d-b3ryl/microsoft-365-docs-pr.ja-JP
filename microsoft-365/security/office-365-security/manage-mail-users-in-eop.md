@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633795"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635582"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
@@ -32,7 +32,7 @@ ms.locfileid: "42633795"
 > [!NOTE]
 > Microsoft 365 管理センターでユーザーを追加することはできますが、これらのユーザーをメール受信者として使用することはできません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - Exchange 管理センターを開くには、「exchange [Online Protection の exchange 管理センター](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
@@ -63,7 +63,7 @@ ms.locfileid: "42633795"
 
   - **ディレクトリベースのエッジブロック (dbeb)**: DBEB の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。
 
-  - **エンドユーザーのスパム検疫**: エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。 社内のメールボックスを保護している EOP のお客様は、有効な電子メール ユーザーである必要があります。
+  - **エンドユーザーのスパム検疫**: エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効なユーザー ID とパスワードを持っている必要があります。 社内のメールボックスを保護している EOP のお客様は、有効な電子メール ユーザーである必要があります。
 
   - **メールフロールール**: ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループが自動的にクラウドにアップロードされ、EAC または Exchange Online Protection の PowerShell を使用して手動で追加することなく、特定のユーザーやグループを対象とするメールフロールール (トランスポートルールとも呼ばれる) を作成できます。 [動的配布グループ](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)はディレクトリ同期を使用して同期できないことに注意してください。
 
@@ -126,7 +126,7 @@ Azure Active Directory (AAD) に対してユーザーを同期するには、ま
 
 - 外部の電子メール アドレスは jzeng@tailspintoys.com です。
 
-- Office 365 のサインイン名は jeffreyz@contoso.onmicrosoft.com です。
+- Microsoft 365 サインイン名は jeffreyz@contoso.onmicrosoft.com です。
 
 - パスワードは Pa$$word1 です。
 

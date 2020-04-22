@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントをセットアップして保護する方法について説明します。
-ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633755"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633655"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
@@ -35,12 +35,12 @@ ms.locfileid: "42633755"
 - 緊急対応のための追加の管理者アカウントをセットアップする方法について説明します。
 - これらのアカウントを保護する方法。
  
-Microsoft 365 Business にサインアップして、情報を入力すると、自動的にグローバル管理者になります。グローバル管理者は、Microsoft 管理センターのユーザーアカウントとその他のすべての設定を最終的に制御しますが、さまざまなレベルのアクセス権を持つ管理者アカウントの種類が多数あります。 それぞれの種類の管理者の役割の異なるアクセスレベルについては、「[管理者ロールについ](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
+Microsoft 365 にサインアップして、情報を入力すると、自動的にグローバル管理者になります。グローバル管理者は、Microsoft 管理センターのユーザーアカウントとその他のすべての設定を最終的に制御しますが、さまざまなレベルのアクセス権を持つ管理者アカウントの種類が多数あります。 それぞれの種類の管理者の役割の異なるアクセスレベルについては、「[管理者ロールについ](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
 
 
 ## <a name="create-additional-admin-accounts"></a>追加の管理者アカウントを作成する
 
-管理用にのみ管理者アカウントを使用します。 管理者は、Office アプリを定期的に使用するための個別のユーザーアカウントを持ち、他の管理者機能の管理に必要な場合にのみ管理アカウントを使用する必要があります。 また、管理者アカウントから Microsoft 365 Business license を削除して、料金を支払う必要がないようにすることをお勧めします。
+管理用にのみ管理者アカウントを使用します。 管理者は、Office アプリを定期的に使用するための個別のユーザーアカウントを持ち、他の管理者機能の管理に必要な場合にのみ管理アカウントを使用する必要があります。 また、管理者アカウントから Microsoft 365 ライセンスを削除して、料金を支払う必要がないようにすることをお勧めします。
 
 他の信頼された従業員に対する管理者アクセス権を与えるには、少なくとも1つのグローバル管理者アカウントを設定する必要があります。 また、ユーザー管理用に別の管理者アカウントを作成することもできます (この役割は、**ユーザー管理の管理者**と呼ばれます)。 詳細については、「[管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
 

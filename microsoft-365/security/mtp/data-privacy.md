@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 27f27a16de9d4aa2a2f163a18c1b837d6c575eb0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894266"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633485"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft Threat Protection データのセキュリティとプライバシー
 
@@ -40,4 +40,4 @@ Microsoft の脅威保護 (MTP) を有効にすると、次の条件に同意し
 特定の製品のデータ ストレージとプライバシーの詳細については、以下を参照してください。
 - [Microsoft Defender ATP のデーター ストレージとプライバシー](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Cloud App Security のデータ セキュリティとプライバシー](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [Office 365 のプライバシー、セキュリティ、および透明性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Microsoft 365 のプライバシー、セキュリティ、および透過性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

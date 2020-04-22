@@ -1,5 +1,5 @@
 ---
-title: Office 365 グループを作成できるユーザーを管理する
+title: グループを作成できるユーザーを管理する
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: Office 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
+ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547588"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630407"
 ---
-# <a name="manage-who-can-create-office-365-groups"></a>Office 365 グループを作成できるユーザーを管理する
+# <a name="manage-who-can-create-groups"></a>グループを作成できるユーザーを管理する
 
   
-Office 365 グループは簡単に作成できるため、ユーザーが他のユーザーの代理でグループの作成を依頼されることはあまりありません。 ただし、業務によっては、グループを作成できるユーザーを制御したい場合があります。
+ユーザーは、Microsoft 365 グループを作成するのが簡単なので、他のユーザーに代わってそれらを作成するための要求は殺到しません。 ただし、業務によっては、グループを作成できるユーザーを制御したい場合があります。
   
-この記事では、次のようなグループを使用するすべての Office 365 サービスでグループを作成する機能を無効にする方法について説明します。
+この記事では、次のようなグループを使用するすべての Microsoft 365 サービスでグループを作成する機能を無効にする方法について説明します。
   
 - Outlook
     
@@ -53,9 +53,9 @@ Office 365 グループは簡単に作成できるため、ユーザーが他の
 
 - ロードマップ
     
-Office 365 グループの作成を特定のセキュリティグループのメンバーに制限することができます。 制限するには、Windows PowerShell を使用します。 この記事では、必要な手順について説明します。
+Microsoft 365 グループの作成を特定のセキュリティグループのメンバーに制限できます。 制限するには、Windows PowerShell を使用します。 この記事では、必要な手順について説明します。
   
-この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365 のグローバル管理者は、Microsoft 365 管理センター、Planner、Teams、Exchange、SharePoint Online などの方法でグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
+この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 グローバル管理者は、Microsoft 365 管理センター、Planner、Teams、Exchange、SharePoint Online などの任意の方法でグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
         
   - Exchange 管理者: Exchange 管理センター、Azure AD
     
@@ -71,7 +71,7 @@ Office 365 グループの作成を特定のセキュリティグループのメ
   
   - ユーザー管理の管理者: Microsoft 365 管理センター、Yammer、Azure AD
      
-これらの役割のいずれかのメンバーである場合は、制限付きユーザーに対して Office 365 グループを作成し、ユーザーをグループの所有者として割り当てることができます。 この役割を持つユーザーは、作成を妨げる可能性のある PowerShell 設定に関係なく、Yammer で接続済みグループを作成できます。
+これらの役割のいずれかのメンバーである場合は、制限されたユーザーに対して Microsoft 365 グループを作成し、そのユーザーをグループの所有者として割り当てることができます。 この役割を持つユーザーは、作成を妨げる可能性のある PowerShell 設定に関係なく、Yammer で接続済みグループを作成できます。
 
 ## <a name="licensing-requirements"></a>ライセンス要件
 
@@ -85,16 +85,16 @@ Office 365 グループの作成を特定のセキュリティグループのメ
 
 以下のユーザーは Azure AD Premium ライセンスまたは Azure AD Basic EDU のライセンスが割り当てられている必要はありません。
 
-- Office 365 グループのメンバーであり、他のグループを作成できないユーザー。
+- Microsoft 365 グループのメンバーであり、他のグループを作成する機能を持たないユーザー。
 
-## <a name="step-1-create-a-security-group-for-users-who-need-to-create-office-365-groups"></a>手順 1: Office 365 グループを作成する必要があるユーザーのセキュリティ グループを作成する
+## <a name="step-1-create-a-security-group-for-users-who-need-to-create-microsoft-365-groups"></a>手順 1: Microsoft 365 グループを作成する必要があるユーザーのセキュリティグループを作成する
 
 グループを作成できるユーザーを制御するために使用できる組織内のセキュリティ グループは 1 つです。 ただし、このグループのメンバーとして、他のセキュリティ グループをネストすることができます。 たとえば、Allow Group Creation という名前のグループが指定されたセキュリティ グループで、Microsoft Planner Users and Exchange Online Users という名前のグループがそのグループのメンバーであるとします。
 
 上記の役割の管理者は、このグループのメンバーである必要はなく、グループを作成することができます。
 
 > [!IMPORTANT]
-> グループを作成できるユーザーを制限するには、必ず **セキュリティー グループ** を使用してください。 Office 365 グループを使用しようとしても、メンバーはセキュリティグループをチェックするため、SharePoint からグループを作成することはできません。 
+> グループを作成できるユーザーを制限するには、必ず **セキュリティー グループ** を使用してください。 Microsoft 365 グループを使用しようとしても、メンバーはセキュリティグループをチェックするため、SharePoint からグループを作成することはできません。 
     
 1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
 
@@ -174,7 +174,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
     
 ## <a name="step-4-verify-that-it-works"></a>手順 4: 動作することを確認する
 
-1. グループを作成できないユーザーのアカウントで Office 365 にサインインします。 作成したセキュリティ グループのメンバーまたは管理者ではないユーザーのアカウントを使用します。
+1. グループを作成する権限を持たないユーザーのユーザーアカウントでサインインします。 作成したセキュリティ グループのメンバーまたは管理者ではないユーザーのアカウントを使用します。
     
 2. [**Planner**] タイルを選択します。 
     

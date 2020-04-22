@@ -1,5 +1,5 @@
 ---
-title: 分離した SharePoint Online チーム サイト開発/テスト環境
+title: Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
-ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: '概要: Microsoft 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チームサイトを構成します。'
+ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083008"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634124"
 ---
-# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
+# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>分離した SharePoint Online チーム サイト開発/テスト環境
 
- **概要:** Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。
+ **概要:** Microsoft 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チームサイトを構成します。
 
-Office 365 の SharePoint Online チーム サイトは、共通のドキュメント ライブラリや OneNote ノートブックなどのサービスを使用してコラボレーションを行うための場所です。多くの場合、部門または組織全体での幅広いアクセスやコラボレーションが望まれます。しかし、小さなユーザー グループでコラボレーションを行うためにアクセスとアクセス許可を厳しく制御したい場合もあります。
+Microsoft 365 の SharePoint Online チームサイトは、一般的なドキュメントライブラリ、OneNote ノートブック、その他のサービスを使用したコラボレーションの場所です。 多くの場合、部門または組織全体での幅広いアクセスやコラボレーションが望まれます。 しかし、小さなユーザー グループでコラボレーションを行うためにアクセスとアクセス許可を厳しく制御したい場合もあります。
 
 SharePoint Online チーム サイトへのアクセスとユーザーが実行できる操作は、SharePoint グループとアクセス許可レベルによって制御されます。既定では、SharePoint Online サイトには、3 つのアクセス レベルがあります。
 
@@ -43,33 +43,34 @@ SharePoint Online チーム サイトへのアクセスとユーザーが実行�
 
 - サイトの管理 (サイト レベルの権限の変更を含む) を実行できるのは、サイトの作成者とサイトの管理者グループのメンバーだけです。
 
-Office 365 開発/テスト環境での分離した SharePoint Online チーム サイトのセットアップには、3 つのフェーズがあります。
+Microsoft 365 開発/テスト環境で分離した SharePoint Online チームサイトを設定するには、3つのフェーズがあります。
 
-1. Office 365 開発/テスト環境を作成します。
+1. Microsoft 365 開発/テスト環境を作成します。
 
 2. ProjectX のユーザーとグループを作成する。
 
 3. 新しい ProjectX SharePoint Online チーム サイトを作成して分離させる。
 
 > [!TIP]
-> [ここ](https://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ](https://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
 
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>フェーズ 1: 軽量またはシミュレートされたエンタープライズ Microsoft 365 開発/テスト環境を構築する
 
-最小要件でのライトウェイトの方法で分離した SharePoint Online チーム サイトを作成する場合は、[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) のフェーズ 2 とフェーズ 3 の手順に従ってください。
+最小要件での軽量な方法で分離した SharePoint Online チームサイトを作成する場合は、 [Microsoft 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)のフェーズ2とフェーズ3の手順に従ってください。
 
-シミュレーションのエンタープライズ構成で分離した SharePoint Online チーム サイトを作成する場合は、[Office 365 開発/テスト環境の DirSync](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment) の手順に従ってください。
+シミュレートされたエンタープライズ構成で分離した SharePoint Online チームサイトを作成する場合は、「 [Microsoft 365 開発/テスト環境の DirSync の](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment)手順」に従ってください。
 
 > [!NOTE]
 > 分離した SharePoint Online サイトを作成する場合は、シミュレートされたエンタープライズ開発/テスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、分離した SharePoint Online サイトをテストして、一般的な組織を表す環境で試してみることができるオプションとして提供されています。
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>フェーズ 2: ユーザー アカウントとアクセス グループを作成する
 
-「[Office 365 PowerShell への接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)」の手順を使用して、全体管理者アカウントで以下から Office 365 の監査サブスクリプション フォームに接続します。
+「 [Office 365 PowerShell に接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)する」の手順を使用して、全体管理者アカウントを使用して試用版サブスクリプションに接続します。
 
-- 自分のコンピューター (軽量の Office 365 開発/テスト環境の場合)。
+- お使いのコンピューター (ライトウェイトの Microsoft 365 開発/テスト環境)。
 
-- CLIENT1 仮想マシン (シミュレーションのエンタープライズ Office 365 開発/テスト環境の場合)。
+- CLIENT1 仮想マシン (シミュレートされたエンタープライズ Microsoft 365 開発/テスト環境の場合)。
 
 ProjectX の SharePoint Online チーム サイト用に新しいアクセス グループを作成するには、Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから次のコマンドを実行します。
 
@@ -142,13 +143,13 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 **図 1**
 
-![分離 SharePoint Online グループ サイトの Office 365 グループおよびそのメンバーシップ](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![分離した SharePoint Online グループサイトの Microsoft 365 グループとそのメンバーシップ](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>フェーズ 3: 新しい ProjectX SharePoint Online チーム サイトを作成して分離させる
 
 ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。
 
-1. ローカル コンピューター (ライトウェイト構成) または CLIENT1 (シミュレーションのエンタープライズ構成) のいずれかのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
+1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、全体管理者[https://admin.microsoft.com](https://admin.microsoft.com)アカウントを使用して Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、**[SharePoint]** をクリックします。
 
@@ -216,7 +217,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 2. 全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。
 
-3. デザイナーのリーダーのアカウント名とパスワードを使用して、Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
+3. デザイナーのリーダーのアカウント名とパスワードを[https://admin.microsoft.com](https://admin.microsoft.com)使用して、Microsoft 365 管理センター () にサインインします。
 
 4. タイルのリストで、**[SharePoint]** をクリックします。
 
@@ -246,7 +247,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。
 
-1. 開発 VP のアカウント名とパスワードを使用して、Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
+1. 開発 VP のアカウント名とパスワードを使用[https://admin.microsoft.com](https://admin.microsoft.com)して、Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、**[SharePoint]** をクリックします。
 
@@ -262,7 +263,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。
 
-1. User 3 のアカウント名とパスワードを使用して、Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
+1. User 3 のアカウント名とパスワードを使用[https://admin.microsoft.com](https://admin.microsoft.com)して、Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、 **[SharePoint]** をクリックします。
 
@@ -290,7 +291,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 [基本構成開発/テスト環境](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
 
-[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Microsoft 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
 
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

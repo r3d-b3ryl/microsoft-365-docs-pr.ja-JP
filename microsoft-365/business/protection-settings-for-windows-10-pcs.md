@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Windows 10 デバイスをセキュリティで保護するために Microsoft 365 Business で利用可能な既定の設定とその他の設定について説明します。
-ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Windows 10 デバイスをセキュリティで保護するために Microsoft 365 for business で利用可能な既定の設定とその他の設定について説明します。
+ms.openlocfilehash: a3b7f0a8572a215491b32101a30c306b54571b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064968"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633019"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Windows 10 の PC のデバイス保護設定を設定する
 
 ## <a name="secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する
 
-Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護する方法のビデオを表示します。
+Microsoft 365 for business を使用して Windows 10 デバイスをセキュリティで保護する方法に関するビデオを参照してください。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -59,7 +59,7 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
 
 既定では、すべての設定が **オン**になっています。 次の設定を使用できます。
   
-詳細については、「[Microsoft 365 Business の保護機能を Intune の設定に対応付ける方法](map-protection-features-to-intune-settings.md)」をご覧ください。 
+詳細については、「 [Microsoft 365 Premium の保護機能を Intune 設定にマップする方法](map-protection-features-to-intune-settings.md)」を参照してください。 
   
 |||
 |:-----|:-----|

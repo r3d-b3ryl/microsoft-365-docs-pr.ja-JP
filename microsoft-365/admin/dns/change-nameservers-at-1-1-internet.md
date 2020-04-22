@@ -1,5 +1,5 @@
 ---
-title: Office 365 をセットアップするためにネームサーバーを変更する&1 IONOS
+title: 1&1 の IONOS を設定するためにネームサーバーを変更する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Dns レコードを管理するために21Vianet が運用している Office 365 をセットアップする方法について説明します。 1&1 インターネットが DNS ホスティングプロバイダーである場合です。
-ms.openlocfilehash: bda6a19ba7bfca20bc1764187f429e13900d8460
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212367"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630009"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Office 365 をセットアップするためにネームサーバーを変更する&1 IONOS
+# <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>IONOS 1 を&使用するように Microsoft 365 をセットアップするためにネームサーバーを変更
 
- **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-Office 365 で Office 365 DNS レコードを管理する場合は、以下の手順に従います。 (必要に応じ[て、1&1 の IONOS で Office 365 のすべての DNS レコードを管理](create-dns-records-at-1-1-internet.md)することができます。) 
+Microsoft 365 で Microsoft 365 の DNS レコードを管理するには、次の手順に従います。 (必要に応じ[て、すべての Microsoft 365 DNS レコードを 1&1 IONOS に管理](create-dns-records-at-1-1-internet.md)することができます。) 
   
 
     
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 
 
-Office 365 でドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Office 365 に対してドメインを所有していることを確認することができます。
+Microsoft 365 でドメインを使用する前に、そのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft 365 に証明されます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -62,7 +62,7 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注**: これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注**: これは例です。 Microsoft 365 の表に記載されている、特定の**宛先またはポイントを**使用して、ここでのアドレスを指定します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. [**保存**] を選択し、もう一度**保存**します。 
@@ -71,9 +71,9 @@ Office 365 でドメインを使うには、ドメインを所有しているこ
     
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメイン レジストラーのサイトでレコードが追加されました。Office 365 に戻り、Office 365 にレコードの検索をリクエストします。
+これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft 365 に戻り、Microsoft 365 にレコードを検索するよう要求します。
   
-Office 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
+Microsoft 365 が正しい TXT レコードを見つけると、ドメインが確認されます。
   
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -81,19 +81,19 @@ Office 365 で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
     
-4. [**ドメインの確認**] ページで、[**確認**] を選択します。
+4. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
-> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「 [Microsoft 365 でドメインまたは DNS レコードを追加した後に問題を見つけて修正](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
 
-Office 365 でドメインをセットアップするには、Office 365 のプライマリ ネーム サーバーとセカンダリ ネーム サーバーを参照するように、ドメインの NS レコードをドメイン レジストラーで変更します。これで、ドメインの DNS レコードを更新するように Office 365 で設定されます。メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
+Microsoft 365 でのドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft 365 プライマリおよびセカンダリネームサーバーをポイントするようにします。 これにより、Microsoft 365 がドメインの DNS レコードを更新するように設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを Office 365 のネーム サーバーをポイントするように変更すると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。たとえば、この変更後、ドメイン (rob@ *your_domain*  .com など) に送信されるすべてのメールは、Office 365 に送信されるようになります。 
+> ドメインの NS レコードを変更して、Microsoft 365 のネームサーバーを参照すると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、この変更を行った後、ドメインに送信されるすべての電子メール (rob@ *your_domain*など) は、Microsoft 365 に送られ始めます。 
   
-Office 365 でドメインをセットアップできるように、NS レコードを変更する準備ができましたか? 次の手順を実行するか、[ビデオ (2 分 47 秒から開始) をご覧ください](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US)。
+Microsoft 365 がドメインをセットアップできるように、NS レコードを変更する準備ができましたか? 次の手順を実行するか、[ビデオ (2 分 47 秒から開始) をご覧ください](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US)。
   
 > [!IMPORTANT]
 >  次の手順では、リストからその他の不要なネームサーバーを削除する方法と、正しいネームサーバーが表示されていない場合には追加する方法について説明します。 > このセクションの手順を完了すると、次の4つのネームサーバーのみが表示されます。 > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
@@ -140,7 +140,7 @@ Office 365 でドメインをセットアップできるように、NS レコー
    
     ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     ![[名前サーバーの設定] ページの [保存] を選択する](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -149,7 +149,7 @@ Office 365 でドメインをセットアップできるように、NS レコー
     ![[DNS 設定の編集] ダイアログボックスの [保存] を選択する](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>既に一覧表示されているネームサーバーがある場合
 
@@ -171,7 +171,7 @@ Office 365 でドメインをセットアップできるように、NS レコー
    
    ![名前サーバーの値を入力する](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
     
     ![[名前サーバーの設定] ページの [保存] を選択する](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
@@ -180,7 +180,7 @@ Office 365 でドメインをセットアップできるように、NS レコー
     ![[DNS 設定の編集] ダイアログボックスの [保存] を選択する](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。Office 365 のメールと他のサービスの準備が完了し、ドメインで利用できるようになります。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
   
 
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 セキュリティ インシデント対応
+title: セキュリティインシデントへの対応
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: このソリューションでは、最も一般的な cybersecurity 攻撃が Office 365 でどのように表示されるか、またそれらに応答する方法を示します。
-ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: このソリューションは、Microsoft 365 で最も一般的な cybersecurity 攻撃の内容と、それらに対する応答方法を示します。
+ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598724"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634510"
 ---
-# <a name="office-365-security-incident-response"></a>Office 365 セキュリティ インシデント対応
+# <a name="security-incident-response"></a>セキュリティインシデントへの対応
 
  **概要:** このソリューションは、Office 365 の最も一般的な cybersecurity 攻撃に対するインジケーター、特定の攻撃を確実に確認する方法、およびそれに対応する方法を示します。
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598724"
 
 すべての cyberattacks を thwarted にすることはできません。 攻撃者は、絶えず防御戦略の新しい弱点を模索しているか、古い弱点を悪用しています。 攻撃を認識する方法を理解することで、迅速に応答することができます。これにより、セキュリティインシデントの期間が短縮されます。
 
-この記事の一連の記事では、Office 365 で発生する可能性のある特定の種類の攻撃を理解し、対処するための手順を示します。 次のことを理解するための簡単なエントリポイントです。
+この記事の一連の記事では、Microsoft 365 における特定の種類の攻撃の内容を理解するのに役立つだけでなく、対処するための手順が示されています。 次のことを理解するための簡単なエントリポイントです。
 
 - 攻撃とは何か、どのように動作するか。
 
@@ -55,9 +55,9 @@ ms.locfileid: "41598724"
 
 - [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>セキュリティで保護された Microsoft 365 (cybersecurity pro など)
 
-Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能セットが用意されています。  [Office 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Office 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。  Microsoft 365 のセキュリティロードマップを使用して、[最初の30日間、90日間、](security-roadmap.md) Microsoft の microsoft 365 組織をセキュリティで保護するためのベストプラクティスを実装することをお勧めします。
 
 - 最初の30日間に実行するタスク。  これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

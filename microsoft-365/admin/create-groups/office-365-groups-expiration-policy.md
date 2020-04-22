@@ -1,5 +1,5 @@
 ---
-title: Office 365 グループの有効期限ポリシー
+title: グループの有効期限ポリシー
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Office 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Microsoft 365 グループの有効期限ポリシーについて説明します。
+ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225921"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630057"
 ---
-# <a name="office-365-group-expiration-policy"></a>Office 365 グループの有効期限ポリシー
+# <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
-Office 365 グループの使用率が向上したことで、管理者とユーザーは、未使用のグループをクリーンアップする方法が必要になります。 有効期限ポリシーは、非アクティブなグループをシステムから削除して、クリーナーを作成するのに役立ちます。
+Microsoft 365 グループの使用が増加したことで、管理者とユーザーは、使用されていないグループをクリーンアップする方法が必要になります。 有効期限ポリシーは、非アクティブなグループをシステムから削除して、クリーナーを作成するのに役立ちます。
 
 グループの有効期限が切れると、関連付けられているすべてのサービス (メールボックス、プランナー、SharePoint サイト、チームなど) も削除されます。
 
@@ -46,14 +46,14 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 既定では、有効期限はオフになっていることに注意してください。 管理者は、組織で使用する必要がある場合に、そのユーザーを有効にする必要があります。
 
 > [!NOTE]
-> Office 365 グループの有効期限ポリシーを構成して使用するには、その有効期限ポリシーが適用されているすべてのグループのメンバーに対して、必ずしも Azure AD Premium ライセンスを割り当てる必要はありません。 詳細については、「 [Azure Active Directory Premium の](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)概要」を参照してください。
+> Microsoft 365 グループの有効期限ポリシーを構成して使用するには、その有効期限ポリシーが適用されているすべてのグループのメンバーに対して、必ずしも Azure AD Premium ライセンスを割り当てる必要はありません。 詳細については、「 [Azure Active Directory Premium の](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)概要」を参照してください。
 
-## <a name="who-can-configure-and-use-the-office-365-groups-expiration-policy"></a>Office 365 グループの有効期限ポリシーを構成して使用できるユーザー
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシーを構成および使用できるユーザー
 
-|ロール|できること|
+|Role|できること|
 |---------|---------|
-|Office 365 のグローバル管理者 (Azure、会社の管理者の場合)、ユーザー管理者|Office 365 グループの有効期限ポリシー設定を作成、読み取り、更新、または削除します。|
-|ユーザー|自分が所有する Office 365 グループを更新または[復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
+|グローバル管理者 (Azure、会社の管理者)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシーの設定を作成、読み取り、更新、または削除します。|
+|User|自分が所有する Microsoft 365 グループを更新または[復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
@@ -77,7 +77,7 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 
 グループの有効期限が切れるまで30日間、グループの所有者 (または所有者がいないグループに対して指定したメールアドレス) は、グループを簡単に更新できる電子メールを受信します。 更新されていない場合は、有効期限が切れるまで15日後にもう一度更新メールを受信します。 まだ更新していない場合は、有効期限が切れる前に1日に1回のメール通知を受信します。
 
-何らかの理由で、所有者または管理者が期限切れになる前にグループを更新しない場合でも、管理者は有効期限が切れてから30日以内にグループを復元することができます。 詳細については[、「削除された Office 365 グループを復元する](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)」を参照してください。
+何らかの理由で、所有者または管理者が期限切れになる前にグループを更新しない場合でも、管理者は有効期限が切れてから30日以内にグループを復元することができます。 詳細については[、「削除された Microsoft 365 グループを復元する](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 
@@ -85,4 +85,4 @@ Office 365 グループの使用率が向上したことで、管理者とユー
 
 [孤立グループに新しい所有者を割り当てる](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Office 365 グループの有効期限を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'
+[Microsoft 365 グループの有効期限を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

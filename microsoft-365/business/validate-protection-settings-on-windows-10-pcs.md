@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Microsoft 365 Business app protection の設定を Windows 10 デバイスで検証し、ユーザーが会社のデータを個人ファイルや非管理アプリにコピーできないことを確認します。
-ms.openlocfilehash: 5b798e0335188543fc308553f71085bcde8b7752
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 Business Premium app protection 設定を Windows 10 デバイスで検証し、ユーザーが会社のデータを個人ファイルや非管理アプリにコピーできないことを確認します。
+ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560842"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635746"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でアプリの保護設定を検証する
 
@@ -37,7 +37,7 @@ ms.locfileid: "42560842"
   
  **接続の設定を確認する**
   
-1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
+1. Microsoft 365 business premium の資格情報を使用してサインインし、「 [microsoft 365 Business premium ユーザーの windows デバイス](set-up-windows-devices.md)をセットアップする」の説明に従って Azure AD に接続した後、[ **windows の設定** \> ] の [**アカウント** \> **アクセスの職場または学校**] に移動します。 Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -47,7 +47,7 @@ ms.locfileid: "42560842"
   
  **非管理対象アプリに会社のデータを貼り付けることができないことを確認する**
   
-1. Microsoft 365 Business によってインストールされた Outlook 2016 を開きます。
+1. Microsoft 365 Business Premium によってインストールされた Outlook 2016 を開きます。
     
 2. メールを開き、そこから一部のコンテンツをコピーします。
     
@@ -67,7 +67,7 @@ ms.locfileid: "42560842"
     
 2. [ **職場または学校にアクセスする**] の下で [ **接続**] を選びます。
     
-3. Enter your Microsoft 365 Business credential into the **Set up a work or school account dialog** \> **Sign in**.
+3. Microsoft 365 Business Premium 資格情報を [**職場または学校のアカウントの設定] ダイアログボックス** \>に**入力します。**
     
 4. [ **職場または学校にアクセスする**] ページで、[ **職場または学校アカウント**] を選んで、[ **情報**] を選びます。
     
@@ -79,7 +79,7 @@ ms.locfileid: "42560842"
   
  **非管理対象アプリに会社のデータを貼り付けることができないことを確認する**
   
-1. Outlook 2016 を開いて、必要に応じて Microsoft 365 Business アカウントを追加し、Microsoft 365 Business の資格情報でサインインします。
+1. Outlook 2016 を開き、必要に応じて Microsoft 365 Business Premium アカウントを追加して、Microsoft 365 Business Premium の資格情報でサインインします。
     
 2. メールを開き、そこから一部のコンテンツをコピーします。
     

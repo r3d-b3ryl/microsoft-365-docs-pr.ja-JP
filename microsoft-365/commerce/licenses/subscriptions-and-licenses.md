@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 のサブスクリプションとライセンスを理解する
+title: Microsoft 365 for business のサブスクリプションとライセンスについて
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,24 +20,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
-description: '一般法人向け Office 365 のサブスクリプションとライセンスについて学習し、ライセンスを割り当てることができるユーザー、およびライセンスを割り当てたときに発生することを把握します。 '
+description: 'Microsoft 365 for business のサブスクリプションとライセンスについて説明し、ライセンスを割り当てることができるユーザーと、ユーザーにライセンスを割り当てるときの動作を確認します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a90e4b80322ad075f2149801aebd02ac07a2aef
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-ms.translationtype: HT
+ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242321"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635438"
 ---
-# <a name="understand-subscriptions-and-licenses-in-office-365-for-business"></a>一般法人向け Office 365 のサブスクリプションとライセンスを理解する
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Microsoft 365 for business のサブスクリプションとライセンスについて
 
 この記事では、サブスクリプションとライセンスの間の関係を説明し、[ライセンスを割り当てることができるユーザー](#find-out-who-can-assign-licenses)、[ライセンスを割り当てたときに発生すること](#understand-what-happens-when-you-assign-a-license-to-someone)、および[ユーザーが Office をインストールできるデバイスの数](#how-many-devices-can-people-install-office-on)についての追加情報を提供します。 また、[ユーザー以外のメールボックスのライセンスについて](#understand-licenses-for-non-user-mailboxes)へのリンクや、[ライセンス管理に関する記事](#articles-about-managing-licenses)へのリンクも含まれます。
   
-一般法人向け Office 365 のサブスクリプションを購入すると、月間または年間単位で支払うアプリケーションおよびサービスにサインアップします。 サブスクリプションの一部として受け取るアプリケーションおよびサービスは、Office 365 Business や Office 365 Business Premium など、購入した製品によって異なります。 [Office 365 の購入ページ](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)で、各製品に付属しているものを確認できます。 
+Microsoft 365 for business のサブスクリプションを購入する際には、月単位または年単位で支払いを行う一連のアプリケーションとサービスにサインアップします。 サブスクリプションの一部として受信するアプリケーションとサービスは、Microsoft 365 for business または Microsoft 365 Business Standard など、購入した製品によって異なります。 各製品の内容を確認するには、「 [Microsoft 365 を購入](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)する」ページを参照してください。 
 
 サブスクリプションを購入する場合、組織の人数に基づいて、必要なライセンス数を指定します。 購入の完了後、ユーザーのアカウントを作成し、各ユーザーにライセンスを割り当てます。 組織のニーズの変化に応じて、新しいユーザーに対応するためにライセンスを追加購入したり、組織を離れるユーザーのライセンスを他のユーザーに再割り当てしたりできます。 
 
-複数のサブスクリプションがある場合、各サブスクリプションを使って異なるユーザーにライセンスを割り当てることができます。 たとえば、すべてのユーザーを Office 365 Business Premium サブスクリプションの一部としてすべての Office 365 アプリケーションとサービスに割り当てることができますが、ユーザーのサブセットを別の Visio サブスクリプションを通じて Visio Online に割り当てることもできます。 
+複数のサブスクリプションがある場合、各サブスクリプションを使って異なるユーザーにライセンスを割り当てることができます。 たとえば、すべてのユーザーを microsoft 365 Business Standard サブスクリプションの一部としてすべての Microsoft 365 アプリケーションおよびサービスに割り当てることができますが、ユーザーのサブセットは、個別の Visio サブスクリプションを使用して Visio Online に割り当てることもできます。 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>ライセンスを割り当てることができるユーザーを見つける
@@ -61,17 +61,17 @@ ms.locfileid: "42242321"
 |Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。  <br/> |
 |SharePoint Online  <br/> |既定の SharePoint Online チーム サイトの編集権限がそのユーザーに割り当てられます。  <br/> |
 |Skype for Business Online  <br/> |ライセンスに関連付けられた機能へのアクセス権がユーザーに割り当てられます。  <br/> |
-|Office 365 ProPlus  <br/> |ユーザーは、最大 5 台の Mac または PC、5 台のタブレット、および 5 台のスマートフォンに Microsoft Office をダウンロードできます。  <br/> |
+|エンタープライズ向け Microsoft 365 アプリ  <br/> |ユーザーは、最大 5 台の Mac または PC、5 台のタブレット、および 5 台のスマートフォンに Microsoft Office をダウンロードできます。  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>ユーザーが Office をインストールできるデバイスは何台ですか?
 
 サブスクリプションに以下の製品のいずれかが含まれている場合、各ユーザーは、最大 5 台の PC または Mac、5 台のタブレット、および 5 台のスマートフォンに Office をインストールできます。
   
-- Office 365 Business
+- Microsoft 365 Apps for business
     
-- Office 365 Business Premium
+- Microsoft 365 Business Standard
     
-- Office 365 ProPlus
+- エンタープライズ向け Microsoft 365 アプリ
     
 - Office 365 Enterprise E3
     
@@ -83,7 +83,7 @@ ms.locfileid: "42242321"
   
 - [共有メールボックスを作成する](../../admin/email/create-a-shared-mailbox.md)
     
-- [Exchange Online の共有メールボックス](https://go.microsoft.com/fwlink/p/?linkid=847433) (他のすべての Office 365 プランの場合)。 
+- 他のすべての Microsoft 365 プランの[Exchange Online の共有メールボックス](https://go.microsoft.com/fwlink/p/?linkid=847433)。 
     
 - [会議室メールボックスの作成と管理](https://go.microsoft.com/fwlink/p/?linkid=847434)
     

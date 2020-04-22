@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: Office 365 for business サブスクリプションのライセンスを追加および削除する方法について説明します。
-ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: Microsoft 365 for business サブスクリプションのライセンスを追加および削除する方法について説明します。
+ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240289"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632531"
 ---
 # <a name="manage-subscription-licenses"></a>サブスクリプション ライセンスを管理する
 
@@ -84,7 +84,7 @@ ms.locfileid: "43240289"
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>[ライセンスの追加/削除] のリンクが表示されない場合
 
-次の表に、[**ライセンスの追加/削除**] リンクが使用できない可能性がある理由と、その方法について説明します。
+次の表に、[**ライセンスの追加/削除**] リンクが使用できない可能性がある理由と、その方法について説明します。 
 
 |理由  |説明  |解決方法  |
 |---------|---------|---------|
@@ -92,14 +92,14 @@ ms.locfileid: "43240289"
 |プロダクトキーを使用してサブスクリプションをアクティブ化しました。| サブスクリプションを購入し、25 桁のプロダクト キーでライセンス認証を行っていると、"プリペイド" と表示されます。  |[プロダクトキーを使用して有料のサブスクリプションにライセンスを追加する](add-licenses-using-product-key.md)を参照してください。 |
 |パートナーを通じてサブスクリプションを購入した場合。 | サブスクリプションがパートナー経由で購入されている場合、ボリューム ライセンス サービス センター (VLSC) のリンクが表示されます。 | [ボリュームライセンスサービスセンター経由で購入したサブスクリプションにライセンスを追加するを](add-licenses-bought-through-vlsc.md)参照してください。 |
 |販売店からサブスクリプションを購入した場合。|| クラウド ソリューション プロバイダー (CSP) パートナーを介してサブスクリプションを購入した場合、ライセンスを追加購入するには、その CSP パートナーに連絡する必要があります。        |
-|試用版サブスクリプションがあります。 |Office 365 の試用版では、"試用版" というテキストが表示されます。 | 最初に試用版サブスクリプションを購入する必要があります。その後、ライセンスを追加することができます。 [無料の試用版から、「Office 365 for business のサブスクリプションを購入する](../buy-a-subscription-from-your-free-trial.md)」を参照してください。|
+|試用版サブスクリプションがあります。 |Microsoft 365 の試用版では、"試用版" というテキストが表示されます。 | 最初に試用版サブスクリプションを購入する必要があります。その後、ライセンスを追加することができます。 [無料の試用版から、「Microsoft 365 for business のサブスクリプションを購入する](../buy-a-subscription-from-your-free-trial.md)」を参照してください。|
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>お客様のビジネス向けサブスクリプションのためのライセンス購入について知っておくべきこと
 
 ### <a name="buying-licenses"></a>ライセンスを購入する
 
 - ライセンスを購入するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割につい](../../admin/add-users/about-admin-roles.md)て」を参照してください。
-- ライセンスを購入し、同時にサブスクリプションに新しいユーザーを追加するには、「[Office 365 にユーザーを個別に、またはまとめて追加する - 管理者向けヘルプ](../../admin/add-users/add-users.md)」を参照してください。
+- ライセンスを購入して、新しいユーザーをサブスクリプションに同時に追加するには、「ユーザーを個別に追加する」[または「Microsoft 365 を一括](../../admin/add-users/add-users.md)して追加する-管理者向けヘルプ」を参照してください。
 
 ### <a name="license-availability"></a>ライセンスの可用性
 

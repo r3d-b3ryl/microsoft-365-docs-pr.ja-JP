@@ -1,5 +1,5 @@
 ---
-title: Alerts in the Office 365 Security &amp; Compliance Center
+title: セキュリティ&amp; /コンプライアンスセンターのアラート
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,32 +17,32 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Office 365 のセキュリティに役立つように設定できるアラートについて説明します。
-ms.openlocfilehash: 57bb6659b374c1ac029b690e738620c2f2857eb9
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: b8fe746ef18ade5f8e35d5a51ab132377e813915
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030129"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634618"
 ---
-# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
+# <a name="alerts-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターのアラート
 
-Office 365 セキュリティ&amp;コンプライアンスセンターの通知機能を使用して、office 365 組織の通知を表示および管理します。これには、 [Microsoft Cloud App security の概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)の一部としての高度な通知の管理が含まれます。
+セキュリティ&amp; /コンプライアンスセンターのアラート機能を使用して、組織の通知を表示および管理します。これには、 [Microsoft Cloud App Security の概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)の一部としての高度な通知の管理が含まれます。
   
-## <a name="how-to-get-to-the-office-365-alerts-features"></a>Office 365 alerts の機能にアクセスする方法
+## <a name="how-to-get-to-the-alerts-features"></a>通知機能にアクセスする方法
 
-Office 365 の通知は、セキュリティ&amp;コンプライアンスセンターにあります。 ページにアクセスする方法は次のとおりです。
+アラートは、セキュリティ&amp;コンプライアンスセンターにあります。 ページにアクセスする方法は次のとおりです。
   
  **セキュリティ&amp; /コンプライアンスセンターに直接移動するには、次のようにします。**
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場または学校のアカウントを使用して、Office 365 にサインインします。 
+2. 職場または学校のアカウントを使用してサインインします。 
     
 3. 左側のウィンドウで、[**警告**] をクリックして通知機能を表示します。 
     
- **Office 365 アプリ起動ツール&amp;を使用してセキュリティコンプライアンスセンターに移動するには、次のようにします。**
+ **アプリ起動ツールを使用&amp;してセキュリティコンプライアンスセンターに移動するには、次のようにします。**
   
-1. 職場または学校のアカウントを使用して、Office 365 にサインインします。 
+1. 職場または学校のアカウントを使用してサインインします。 
     
 2. 左上隅にあるアプリ起動ツールをクリックし、[**セキュリティ&amp;コンプライアンス**] をクリックします。
     
@@ -56,7 +56,7 @@ Office 365 の通知は、セキュリティ&amp;コンプライアンスセン�
   
 |**ツール**|**説明**|
 |:-----|:-----|
-|[通知の管理](../../compliance/create-activity-alerts.md) <br/> |アクティビティ通知を使用して、ユーザーが Office 365 で特定のアクティビティを実行するときに、自分自身または他の管理者に電子メール通知を送信します。 アクティビティアラートは、イベントに対して Office 365 監査ログを検索するのと似ていますが、通知が作成されたイベントが発生したときに電子メールメッセージが送信されるという点が異なります。  <br/> |
+|[通知の管理](../../compliance/create-activity-alerts.md) <br/> |アクティビティ通知を使用して、ユーザーが Office 365 で特定のアクティビティを実行するときに、自分自身または他の管理者に電子メール通知を送信します。 アクティビティアラートは、イベントの監査ログの検索に似ていますが、警告を作成したイベントが発生したときに電子メールメッセージが送信されるという点が異なります。  <br/> |
 |[高度な通知を管理する](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |Office 365 Cloud App Security の**高度な通知の管理**機能を使用して、office 365 で不審で異常なアクティビティについて警告できるポリシーを設定します。 警告が表示された後、問題が発生する可能性がある状況を調査し、必要に応じて、セキュリティ上の問題に対処するためのアクションを実行することができます。  <br/> |
    
 

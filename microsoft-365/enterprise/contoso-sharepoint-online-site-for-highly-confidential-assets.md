@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: 研究チーム間の共同作業を容易にするために、Contoso 社が非常に規制されたデータに対して SharePoint サイトを実装した方法を示します。'
-ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0a4bc2f685cf015611da62ebbed000218f37f31e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068277"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634254"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation の非常に機密性の高いデジタル資産向けの SharePoint サイト
 
@@ -48,22 +48,22 @@ SharePoint サイトへのアクセスを保護するために、Contoso 社は�
 
 ## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a>手順 2: 制限付き DLP ポリシー用にサイトを構成する
 
-最初に、Contoso 管理者は、**リサーチ**サイトの Documents フォルダーに既存の**高機密**Office 365 保持ラベルを適用しました。
+最初に、Contoso 管理者は、既存の**高機密**保持ラベルを**Research**サイトのドキュメントフォルダーに適用しました。
 
-次に、 **Research**という名前の新しい OFFICE 365 DLP ポリシーを作成しました。
+次に、 **Research**という名前の新しい DLP ポリシーを作成しました。
 
-- 非常に**機密性の高い**Office 365 保持ラベルを使用します。 
+- **高機密**保持ラベルを使用します。 
 - ユーザーが Contoso 外の**Research**サイトでデジタルアセットを共有しようとすると、ユーザーをブロックします。
 
 構成の詳細については、「 [SharePoint ファイルを保持ラベルおよび DLP で保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)する」を参照してください。
 
-## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>手順 3: サイト用の Office 365 機密 sublabel を作成する
+## <a name="step-3-created-a-sensitivity-sublabel-for-the-site"></a>手順 3: サイトの機密 sublabel を作成する
 
-Contoso 管理者は、次のような**高機密**ラベルの**研究チーム**という名前の新しい Office 365 機密 sublabel を作成しました。
+Contoso 管理者は、次のような**高機密**ラベルの**研究チーム**という名前の新しい機密 sublabel を作成しました。
 
 - 暗号化が必要です。
-- **リサーチ**Office 365 グループに対して共同編集者の権限を許可する
-- **Research** Office 365 グループに適用されます。
+- **リサーチ**Microsoft 365 グループに対して共同編集者の権限を許可する
+- **Research** Microsoft 365 グループに適用されます。
 
 以下は、非常に機密性の高い資産を対象とした**研究**チームサイトの構成結果です。
 
@@ -71,7 +71,7 @@ Contoso 管理者は、次のような**高機密**ラベルの**研究チーム
 
 **リサーチ**サイトのフォルダー内のファイルは、次の方法で保護されます。
 
-- サイトのアクセス許可。 **Research** Office 365 グループのメンバーにのみアクセスを許可します。
+- サイト権限。 **Research** Microsoft 365 グループのメンバーにのみアクセスを許可します。
 - **リサーチ**DLP ポリシー。**高機密**保持ラベルと、ファイルを外部ユーザーと共有できないようにする設定を使用します。
 - **研究サイトから**移動またはコピーされた場合に、ファイルと共に移動する暗号化とアクセス許可を持つ、**調査チーム**の感度 sublabel。
 
@@ -86,7 +86,7 @@ Contoso admins は、オンプレミスの SharePoint Server 2016 サイト内�
 
 ## <a name="step-5-trained-their-researchers"></a>手順 5: 自分の研究者をトレーニングする
 
-Contoso のセキュリティスタッフは、 **Research** Office 365 グループのメンバーに、次の手順に従ってステップインした必須コースをトレーニングしています。
+Contoso のセキュリティスタッフは、次に示す必須のコースで、 **Research** Microsoft 365 グループのメンバーをトレーニングしています。
 
 - 新しい**リサーチ**サイトとその既存のファイルにアクセスする方法について説明します。
 - サイトに新しいファイルを作成し、ローカルに保存された新しいファイルをアップロードする方法。
@@ -96,7 +96,7 @@ Contoso のセキュリティスタッフは、 **Research** Office 365 グル�
 
 最終的には、研究情報が含まれるファイルのセキュリティで保護された環境で、研究者が Contoso を越えて共同作業を行うことのできる安全な環境が得られます。 
 
-Research **Teams**を使用した research ドキュメントが**research**サイトを離れた場合、sublabel は暗号化され、有効なユーザーアカウントの資格情報を持つ**research** Office 365 グループのメンバーのみがアクセスできます。
+Research **Teams**を使用した research ドキュメントが**research**サイトを離れた場合、sublabel は暗号化され、有効なユーザーアカウントの資格情報を持つ**research** Microsoft 365 グループのメンバーのみがアクセスできます。
 
 ## <a name="next-step"></a>次の手順
 

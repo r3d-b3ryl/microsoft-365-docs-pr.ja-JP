@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business へのサインアップ
+title: Microsoft 365 Business Premium へのサインアップ
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,27 +24,27 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 Business に含まれるものについて説明し、「Microsoft 365 Business にサインアップする」のステップバイステップのガイダンスをご確認ください。
-ms.openlocfilehash: 85e9ff3585e1e4bbadc6c34699f75d77486f58ea
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 Business Premium に含まれる内容について説明し、「Microsoft 365 Business Premium にサインアップする」のステップバイステップのガイダンスを取得します。
+ms.openlocfilehash: 443363fa673a112ae13eb5b63308115724d9bd00
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560770"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635106"
 ---
-# <a name="sign-up-for-microsoft-365-business"></a>Microsoft 365 Business へのサインアップ
+# <a name="sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium へのサインアップ
 
-Microsoft 365 Business に含まれているものについては、[短いビデオ](https://go.microsoft.com/fwlink/?linkid=2109651)をご覧ください。[概要](microsoft-365-business-overview.md)を参照してください。
+Microsoft 365 Business Premium に含まれるものについては、[短いビデオ](https://go.microsoft.com/fwlink/?linkid=2109651)をご覧ください。[概要](microsoft-365-business-overview.md)を参照してください。
 
-Microsoft 365 Business を利用するには、次の3つの方法があります。
-- **Microsoft 365 business を購入し、独自のセットアップを完了**する: Microsoft 365 business online を購入するには、[次の手順を実行](#sign-up-steps)します。
-- **Microsoft パートナーの**場合: パートナーである場合は、「Microsoft[パートナーセンターから microsoft 365 Business を取得](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)する」を参照してください。
+Microsoft 365 Business Premium を入手するには、次の3つの方法があります。
+- **Microsoft 365 Business premium を購入し、独自の設定を完了**する: Microsoft 365 Business premium online を購入するには、[次の手順を実行](#sign-up-steps)します。
+- **Microsoft パートナーの**場合: パートナーにお客様がいる場合は、「Microsoft[パートナーセンターから Microsoft 365 Business Premium を取得](get-microsoft-365-business.md)する」を参照してください。
 - **Microsoft ストアのヘルプを参照**してください。 [Microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)にアクセスします。 Microsoft ストアは、プランに関する質問を支援したり、ビジネスニーズに合ったプランを購入したり、設定を完了したりするのに役立ちます。
 
 **別のものが必要ですか。** 以下のことを実行できます。
-- [Office 365 プランを Microsoft 365 Business にアップグレード](migrate-to-microsoft-365-business.md)します。
-- 1か月間、Microsoft 365 Business の[無料試用版を取得](https://go.microsoft.com/fwlink/p/?linkid=2102309)します。
-- 機能が少ないプランを必要とする場合は、 [Office 365 Business Premium にサインアップして](https://go.microsoft.com/fwlink/p/?LinkID=510935)ください。 各ビジネスプランに含まれる[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)について説明します。
+- [Office 365 プランを Microsoft 365 Business Premium にアップグレード](migrate-to-microsoft-365-business.md)します。
+- 1か月間、Microsoft 365 Business Premium の[無料試用版を取得](https://go.microsoft.com/fwlink/p/?linkid=2102309)します。
+- 機能が少ないプランを必要とする場合は、 [Microsoft 365 Business Standard にサインアップして](https://go.microsoft.com/fwlink/p/?LinkID=510935)ください。 各ビジネスプランに含まれる[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)について説明します。
 - 業務を購入していない場合は[、ホームまたはファミリープランにサインアップ](https://go.microsoft.com/fwlink/?linkid=2109398)してください。 
 
 ## <a name="sign-up-steps"></a>サインアップ手順
@@ -58,8 +58,8 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 お客様のビジネス向けに Microsoft 365 にサインアップして購入するには、次の手順を実行します。
 
 1. [ [Microsoft 365 for business] ページ](https://go.microsoft.com/fwlink/?linkid=2109654)で、[**プラン & の価格を表示**する] を選択します。 
-2. 次のページで、月間費用を調べ、ページを下にスクロールして、Microsoft 365 Business に含まれているものに関する情報を確認します。 [Microsoft 365 Business] で、[**今すぐ購入**] を選択します。
-3. [ **Microsoft 365 Business をお選びいただきありがとうござい**ます] ページで、開始するための情報を入力します。
+2. 次のページで、月間費用を調べ、ページを下にスクロールして、Microsoft 365 に含まれているものに関する情報を確認します。 [Microsoft 365 Business Premium] の下で、[**今すぐ購入**] を選択します。
+3. [ **Microsoft 365 Business Premium をご利用いただきありがとうござい**ます] ページで、開始するための情報を入力します。
 4. **手順 1**で、既に使用している電子メールアドレスを入力します。 これは、現在の勤務先の電子メールアドレス、またはセットアップ中に Microsoft が通信するために使用するすべてのアドレスになることができます。 また、請求書と更新に関する情報を送信する住所でもあります。 次に、[**アカウントの設定**] を選択します。
 5. **手順 2**で、名前、勤務先電話番号、会社名、場所を入力します。 お客様の国または地域では、Microsoft から受け取るサービスを正確に決定しており、この手順を完了した後に変更することはできません。 [**次へ**] を選択します。
     > [!NOTE]
@@ -96,4 +96,4 @@ Microsoft 365 Business を利用するには、次の3つの方法がありま�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

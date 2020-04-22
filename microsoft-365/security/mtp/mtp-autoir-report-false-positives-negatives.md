@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955663"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637082"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査と応答機能で誤検知/否定を処理する
 
@@ -45,7 +45,7 @@ Microsoft の脅威保護ミスの自動化された[調査と応答機能](mtp-
 
 |不在時または誤って検出されたアイテム |サービス  |行うこと  |
 |---------|---------|---------|
-|-電子メールメッセージ <br/>-電子メールの添付ファイル <br/>-電子メールメッセージ内の URL<br/>-Office ファイル内の URL      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[迷惑メールの疑いのあるスパム、フィッシング、Url、およびファイルを Office 365 スキャン用に Microsoft に送信する](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|-電子メールメッセージ <br/>-電子メールの添付ファイル <br/>-電子メールメッセージ内の URL<br/>-Office ファイル内の URL      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[迷惑メールの疑い、フィッシング、Url、およびファイルをスキャン用に Microsoft に送信する](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |デバイス上のファイルまたはアプリ    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[マルウェア分析のために Microsoft にファイルを提出する](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>警告を調整して誤検知が繰り返されないようにする

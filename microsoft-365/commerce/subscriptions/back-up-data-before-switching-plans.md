@@ -1,5 +1,5 @@
 ---
-title: ビジネスプラン用に Office 365 を切り替える前にデータをバックアップする
+title: Microsoft 365 for business プランを切り替える前にデータをバックアップする
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Office 365 のサブスクリプションを切り替える前、またはユーザーが組織を離れた場合は、Outlook、OneDrive、Yammer、および SharePoint コンテンツをバックアップします。
-ms.openlocfilehash: 3d8196bcbd0296e1b6e681b1077d165e168d2f2f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: Microsoft 365 サブスクリプションを切り替える前、またはユーザーが組織を離れた場合は、Outlook、OneDrive、Yammer、および SharePoint コンテンツをバックアップします。
+ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105749"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636082"
 ---
-# <a name="back-up-data-before-switching-office-365-for-business-plans"></a>ビジネスプラン用に Office 365 を切り替える前にデータをバックアップする
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランを切り替える前にデータをバックアップする
 
-データ関連のサービスの数が少ない別のサブスクリプションにユーザーを切り替える場合や、ユーザーが組織を離れる場合、新しいサブスクリプションに切り替える前に、Office 365 に保存してあるデータのコピーをダウンロードできます。
+ユーザーが、データ関連サービスの数が少なくなる別のサブスクリプションに切り替わった場合、またはユーザーが組織を離れた場合は、Microsoft 365 に保存されているデータのコピーをダウンロードしてから、新しいサブスクリプションに切り替えることができます。
   
 ## <a name="save-a-copy-of-outlook-information"></a>Outlook 情報のコピーを保存する
 
@@ -48,7 +48,7 @@ ms.locfileid: "43105749"
   
 ## <a name="how-to-save-sharepoint-information"></a>SharePoint 情報を保存する方法
 
-ユーザーが SharePoint Online を持つサブスクリプションから、それを持たないサブスクリプションに切り替えられた場合、 **sharepoint**タイルは Office 365 メニューに表示されなくなります。
+ユーザーが SharePoint Online を持つサブスクリプションから、それを持たないサブスクリプションに切り替えられた場合、 **sharepoint**タイルは Microsoft 365 メニューに表示されなくなります。
   
 ただし、切り替える前と同じ組織で新しいサブスクリプションを使う場合、ユーザーは SharePoint チーム サイトに引き続きアクセスできます。チーム サイトへの直接 URL を使って、ノートブック、ドキュメント、タスク、予定表の表示や更新ができます。
   

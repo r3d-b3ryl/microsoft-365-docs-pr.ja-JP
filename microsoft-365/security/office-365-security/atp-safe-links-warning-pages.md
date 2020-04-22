@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP の安全なリンクの警告ページ
+title: ATP の安全なリンク機能の警告ページ
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection が機能している場合に表示される可能性がある警告ページの概要を取得します。
-ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528859"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635988"
 ---
-# <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP の安全なリンクの警告ページ
+# <a name="atp-safe-links-warning-pages"></a>ATP の安全なリンク機能の警告ページ
 
 > [!IMPORTANT]
-> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook の安全なリンクに関する情報を探している場合は、「[Outlook.com の高度なセキュリティ](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook.com、Microsoft 365 ファミリ、または Microsoft 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (atp) は、 [atp の安全なリンク](atp-safe-links.md)、Atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を使用して、組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (Url) はチェックされます。 URL が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても URL を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。
 
@@ -60,7 +60,7 @@ URL は、悪意があると識別されたサイトを指しています。  <b
 
 ### <a name="a-site-is-blocked"></a>サイトがブロックされている
 
-組織の URL がブロックされています。 URL がブロックされる理由はいくつかあります。 組織の Office 365 管理者に連絡することをお勧めします。
+組織の URL がブロックされています。 URL がブロックされる理由はいくつかあります。 組織の Microsoft 365 for business 管理者に連絡することをお勧めします。
 
 ![このサイトはブロックされています](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 

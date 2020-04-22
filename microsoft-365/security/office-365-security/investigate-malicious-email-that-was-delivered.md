@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955617"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634136"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査および修復する
 
@@ -34,24 +34,24 @@ ms.locfileid: "42955617"
   
 - 組織では、 [Office 365 Advanced Threat Protection](office-365-atp.md)と[ライセンスがユーザーに割り当てら](../../admin/manage/assign-licenses-to-users.md)れています。
     
-- [Office 365 監査ログ](../../compliance/turn-audit-log-search-on-or-off.md)は、組織に対して有効になっています。 
+- 組織の[監査ログ](../../compliance/turn-audit-log-search-on-or-off.md)が有効になっている。 
     
 - 組織には、スパム対策、マルウェア対策、フィッシング対策などに対して定義されたポリシーがあります。 「 [Office 365 の脅威から保護](protect-against-threats.md)する」を参照してください。
     
-- Office 365 の全体管理者であるか、セキュリティ管理者、またはセキュリティ&amp;コンプライアンスセンターで割り当てられている検索および削除の役割を持っているかどうか。 「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。 操作によっては、新しいプレビューの役割が割り当てられている必要もあります。 
+- グローバル管理者であるか、セキュリティ管理者、またはセキュリティ&amp; /コンプライアンスセンターで割り当てられている検索および削除の役割を持っているかどうか。 [ &amp;セキュリティ/コンプライアンスセンターの「アクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。 操作によっては、新しいプレビューの役割が割り当てられている必要もあります。 
 
 #### <a name="preview-role-permissions"></a>ロールの権限のプレビュー
 
-メッセージヘッダーを表示したり、メールメッセージの内容をダウンロードしたりするなど、特定の操作を実行するには、別の適切な Office 365 役割グループに*プレビュー*が追加された新しい役割を持っている必要があります。 次の表で、必要な役割とアクセス許可を明確にします。
+メッセージヘッダーの表示や電子メールメッセージのコンテンツのダウンロードなどの特定のアクションを実行するには、別の適切な役割グループに*プレビュー*が追加された新しい役割を持っている必要があります。 次の表で、必要な役割とアクセス許可を明確にします。
 
 |アクティビティ  |役割グループ |必要なプレビューの役割  |
 |---------|---------|---------|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |Office 365 グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | いいえ   |
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |Office 365 グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       いいえ  |
-|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |Office 365 グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> プレビュー   |   はい      |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | いいえ   |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       いいえ  |
+|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview   |   必要      |
 
 > [!NOTE]
-> *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 Office 365 のグローバル管理者の役割には、Microsoft 365 管理[https://admin.microsoft.com](https://admin.microsoft.com)センター () が割り当てられており、セキュリティ管理者およびセキュリティリーダーの役割が Office 365[https://protection.office.com](https://protection.office.com)Security & コンプライアンスセンター () に割り当てられます。 役割とアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+> *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 グローバル管理者の役割には、Microsoft 365 管理センター[https://admin.microsoft.com](https://admin.microsoft.com)() が割り当てられており、セキュリティ管理者およびセキュリティリーダーの役割はセキュリティ[https://protection.office.com](https://protection.office.com)& コンプライアンスセンター () で割り当てられます。 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>配信された疑わしいメールを見つけて削除する
 

@@ -11,22 +11,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップレポートの詳細を確認できます。
-ms.openlocfilehash: 11d605047b66751636ffce69ffff5c198f039fc7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088531"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635294"
 ---
 # <a name="mail-flow-map-report"></a>メール フローのマップ レポート
 
-このレポートでは、Office 365 組織を通過するメールの流れについての説明が提供されます。 この情報を使用して、パターンを学習し、異常を特定し、発生した問題を解決することができます。
+このレポートでは、組織を通過するメールの流れについての情報が提供されます。 この情報を使用して、パターンを学習し、異常を特定し、発生した問題を解決することができます。
 
 ![セキュリティ & コンプライアンスセンターのメールフローダッシュボードのメールフローマップレポート](../../media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>メールフローマップウィジェット
 
-既定では、メールフローマップは、前日からの高レベルのメールフローパターンを示しています。 さまざまな日の左矢印と右矢印を使用できます。 レポートの各領域の上にマウスカーソルを移動すると、次の図に示すように、Office 365 組織との間のメールの量が表示されます。
+既定では、メールフローマップは、前日からの高レベルのメールフローパターンを示しています。 さまざまな日の左矢印と右矢印を使用できます。 レポートの各領域の上にマウスカーソルを移動すると、次の図に示すように、組織との間のメールの量が表示されます。
 
 ![メールフローマップウィジェットの左および右の矢印](../../media/mail-flow-map-widget.png)
 

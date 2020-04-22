@@ -1,5 +1,5 @@
 ---
-title: 無料試用版から一般法人向け Office 365 のサブスクリプションを購入する
+title: 無料試用版から Microsoft 365 for business のサブスクリプションを購入する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: 一般法人向け Office 365 のサブスクリプションを購入しましょう。 試用版と同じ種類のサブスクリプションを購入することも、別のプランを購入することもできます。
-ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Microsoft 365 for business のサブスクリプションを購入します。 試用版と同じ種類のサブスクリプションを購入することも、別のプランを購入することもできます。
+ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142289"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634946"
 ---
-# <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>無料試用版から一般法人向け Office 365 のサブスクリプションを購入する
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>無料試用版から Microsoft 365 for business のサブスクリプションを購入する
 
-Office 365 を試したら、次に必要なのは購入手続きです。試用版から Office 365 を購入する方法は 2 つあります。
+Microsoft 365 を試用したので、購入する準備ができました。試用版から Microsoft 365 を購入する際には、次の2つのオプションがあります。
   
 - [試用版と同じプランを購入する](#buy-the-same-plan-as-your-trial)
 - [試用版と異なるプランを購入する方法](#buy-a-different-plan-than-your-trial)
@@ -98,6 +98,7 @@ Office 365 を試したら、次に必要なのは購入手続きです。試用
 
 ::: moniker range="o365-worldwide"
 
+
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
 
 2. [**サービスを購入する**] ページで、購入するサブスクリプションを選んで、[**購入**] を選びます。
@@ -136,6 +137,7 @@ Office 365 を試したら、次に必要なのは購入手続きです。試用
 
 ::: moniker range="o365-21vianet"
 
+
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. [**サブスクリプション**] ページで、[**サブスクリプションの追加**] を選択します。
@@ -156,10 +158,11 @@ Office 365 を試したら、次に必要なのは購入手続きです。試用
 
 ::: moniker-end
 
+
 ## <a name="related-articles"></a>関連記事
 
 [試用期間を延長する](extend-your-trial.md)
   
-[Office 365 にサインアップする](../admin/admin-overview/sign-up-for-office-365.md)
+[Microsoft 365 にサインアップする](../admin/admin-overview/sign-up-for-office-365.md)
   
-[別の Office 365 プランまたはサブスクリプションに切り替える](subscriptions/switch-to-a-different-plan.md)
+[別の Microsoft 365 プランまたはサブスクリプションに切り替える](subscriptions/switch-to-a-different-plan.md)

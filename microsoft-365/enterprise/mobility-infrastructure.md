@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153894"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631527"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>フェーズ 5: Microsoft 365 Enterprise のモバイルデバイス管理
 
@@ -34,7 +34,7 @@ Microsoft 365 Enterprise では、組織内のデバイスとアプリを管理�
 
 ## <a name="step-1-plan-for-your-scenario"></a>手順 1: シナリオを計画する
 
-モバイルデバイスを管理する主な理由の1つとして、組織のリソースを保護して保護することが挙げられます。 [Microsoft Intune の一般的な使用方法](https://docs.microsoft.com/intune/common-scenarios)Office 365 の電子メールとデータをセキュリティで保護するなど、いくつかの現実の例を示します。
+モバイルデバイスを管理する主な理由の1つとして、組織のリソースを保護して保護することが挙げられます。 [Microsoft Intune の一般的な使用方法](https://docs.microsoft.com/intune/common-scenarios)microsoft 電子メールとデータのセキュリティ保護を含む、いくつかの現実の例を示します。
 
 Intune は、モバイルデバイス管理 (MDM) またはモバイルアプリケーション管理 (MAM) を使用して、組織へのアクセスを管理するためのオプションを提供します。 MDM は、ユーザーが Intune にデバイスを登録するときに行います。 登録されると、管理対象デバイスであり、組織で使用されているすべてのポリシー、ルール、および設定を受け取ることができます。 たとえば、具体的なアプリをインストールしたり、パスワードポリシーを作成したり、VPN 接続をインストールしたりできます。
 
@@ -47,7 +47,7 @@ Intune は、モバイルデバイス管理 (MDM) またはモバイルアプリ
 次に、要件と前の手順で作成したシナリオに基づいて、前提条件を取得します。 [計画を実装](https://docs.microsoft.com/intune/planning-guide-onboarding)するすべての要件を一覧表示します。 以下は、Microsoft 365 を使用した Intune に必要な重要なアイテムです。
 
 - **Intune サブスクリプション**: microsoft 365 に同梱されており、 [Azure Portal](https://portal.azure.com)で microsoft Intune にアクセスすることができます。
-- **Office 365 サブスクリプション**: Microsoft 365 に含まれており、電子メールを含む office アプリに使用されます。
+- **Microsoft 365 サブスクリプション**: microsoft 365 に同梱されており、電子メールを含む Office アプリに使用されます。
 - **Azure Active Directory (AZURE AD) premium**: Microsoft 365 に含まれており、ユーザーまたはセキュリティグループを作成するために使用されます。 これらのグループは、ユーザーが作成した Intune ポリシーを受信します。たとえば、デバイスのロックを解除するためのパスワードの長さを強制します。 [フェーズ 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)で作成したグループを使用できます。
 
 組織のニーズによっては、追加の要件がある場合があります。 たとえば、iOS デバイスを管理する場合は、Apple MDM プッシュ証明書が必要になります。 オンプレミスの Exchange を使用している場合は、オンプレミスの Exchange コネクタが必要になります。 これらの追加要件については、これらの手順を実行するときに説明されています。

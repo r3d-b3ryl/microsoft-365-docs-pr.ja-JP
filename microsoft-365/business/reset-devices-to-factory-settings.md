@@ -22,21 +22,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Microsoft 365 Business を使用して、管理している Windows 10 デバイスを出荷時にリセットする方法について説明します。これを購入時に元の設定に戻すことができます。
-ms.openlocfilehash: 3705448602cdc22e9fb5843c46d5bdc1c4dbdb2e
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 for business を使用して、管理している Windows 10 デバイスを出荷時にリセットする方法について説明します。これを購入時に元の設定に戻します。
+ms.openlocfilehash: 7cf5619cb1b6f5f847690d723381614d4b7afc3c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561302"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634794"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 
 [![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-出荷時の設定にリセットは、デバイスを購入したときの元の設定にデバイスを戻します。購入後にインストールしたデバイス上のすべてのアプリとデータが削除されます。Microsoft 365 Business を使って、管理する Windows 10 デバイスを出荷時の設定にリセットできます。
+出荷時の設定にリセットは、デバイスを購入したときの元の設定にデバイスを戻します。 購入後にインストールしたデバイス上のすべてのアプリとデータが削除されます。 Microsoft 365 for business を使用して、管理している Windows 10 デバイスを出荷時にリセットすることができます。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
     
 2. 左側のナビゲーションで、[**デバイス** \>の**管理**] を選択します。
 

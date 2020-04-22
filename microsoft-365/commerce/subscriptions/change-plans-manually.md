@@ -1,5 +1,5 @@
 ---
-title: Office 365 for business プランを手動で変更する
+title: Microsoft 365 for business プランを手動で変更する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、サブスクリプションとアクティブの両方が表示されていることを確認して、手動でサブスクリプションを変更します。
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142153"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636585"
 ---
 # <a name="change-plans-manually"></a>プランを手動で変更する
 
@@ -51,9 +51,9 @@ ms.locfileid: "43142153"
 
 OR
 
-**新しいサブスクリプションとライセンスを購入する:** 「 [別の一般法人向け Office 365 を購入する](../buy-another-subscription.md)」の手順に従って新しいサブスクリプションを購入します。
+**新しいサブスクリプションとライセンスを購入します。**「[別の Microsoft 365 for business サブスクリプションを購入](../buy-another-subscription.md)する」の手順に従って、新しいサブスクリプションを購入します。
 
-必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動する Office 365 ユーザーのメール アドレスを確認します。 メールアドレスに contoso.com が\@含まれている場合は、contoso.com の新しいサブスクリプションを購入する必要があります。
+必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動するユーザーの電子メールアドレスを確認します。 メールアドレスに contoso.com が\@含まれている場合は、contoso.com の新しいサブスクリプションを購入する必要があります。
 移動する各ユーザーのライセンスを含めます。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
@@ -114,5 +114,4 @@ OR
 一部のユーザーのみを別のサブスクリプションに移動した場合は、不要になった[ライセンスを削除](../licenses/remove-licenses-from-subscription.md)します。
 
 ## <a name="call-support-to-help-you-change-plans"></a>プランを変更するためのサポートへのお問い合わせ
-
 [Microsoft サポートに連絡する](../../admin/contact-support-for-business-products.md)

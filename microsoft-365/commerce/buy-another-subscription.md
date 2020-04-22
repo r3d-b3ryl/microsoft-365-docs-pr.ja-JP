@@ -1,5 +1,5 @@
 ---
-title: 別の一般法人向け Office 365 サブスクリプションを購入する
+title: 別の Microsoft 365 for business サブスクリプションを購入する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: '既にサブスクリプションを所有している場合に、組織のために別の Office 365 for business サブスクリプションを購入する方法について説明します。 '
+description: '既にサブスクリプションを所有している場合に、別の Microsoft 365 for business サブスクリプションをお客様の組織に購入する方法について説明します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142265"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634934"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>別の一般法人向け Office 365 サブスクリプションを購入する
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>別の Microsoft 365 for business サブスクリプションを購入する
 
-既に Office 365 for business サブスクリプションを所有しており、組織のために別のサブスクリプションを購入する場合は、管理センターを使用することをお勧めします。 お客様の組織に最初の Office 365 for business サブスクリプションをまだ購入していない場合は、[ここ](https://products.office.com/business/compare-office-365-for-business-plans)に移動してプランを選択してください。
+既に Microsoft 365 for business のサブスクリプションをお持ちの場合、組織のために別のサブスクリプションを購入したい場合は、管理センターを使用することをお勧めします。 お客様の組織に最初の Microsoft 365 for business サブスクリプションをまだ購入していない場合は、[ここ](https://products.office.com/business/compare-office-365-for-business-plans)に移動してプランを選択してください。
   
 管理センターを使用して別のサブスクリプションを購入すると、新しいサブスクリプションが既存のサブスクリプションと同じ組織 (ドメインネームスペース) に関連付けられることが保証されます。 これにより、サブスクリプション間で組織内のユーザーを簡単に移動したり、必要な追加のサブスクリプションのユーザーライセンスを割り当てたりすることが容易になります。
   
-新しいサブスクリプションを購入した後、そのサブスクリプションを使用するユーザーに、ユーザーライセンスを割り当てる必要があります。 その方法については、「一般[法人向け Office 365 のユーザーにライセンスを割り当てる](../admin/manage/assign-licenses-to-users.md)」を参照してください。
+新しいサブスクリプションを購入した後、そのサブスクリプションを使用するユーザーに、ユーザーライセンスを割り当てる必要があります。 その方法については、「 [Microsoft 365 for business でユーザーにライセンスを割り当てる](../admin/manage/assign-licenses-to-users.md)」を参照してください。
   
 ## <a name="buy-another-subscription"></a>別のサブスクリプションを購入する
 
 ::: moniker range="o365-worldwide"
+
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
 

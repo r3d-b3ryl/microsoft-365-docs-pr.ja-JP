@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business の脅威保護を強化する
+title: Microsoft 365 Business Premium の脅威保護を強化する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データの損失を防ぎ、顧客の機密情報を安全に保つことができます。
-ms.openlocfilehash: 6f4520b052c2e7acb8748d3c9d6e26777cb56d4b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561242"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635126"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 
-Microsoft 365 Business には、データとデバイスを保護するための機能が用意されており、お客様の機密情報を安全に保つために役立ちます。
+Microsoft 365 Business Premium には、データとデバイスを保護するための機能が付属しており、お客様の機密情報を安全に保つために役立ちます。
 
 ## <a name="set-up-dlp-features"></a>DLP 機能を設定する
 

@@ -1,19 +1,19 @@
 ---
-title: サービスプランの例外
+title: サービス プランの例外
 description: ''
 keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302904"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636186"
 ---
-# <a name="exceptions-to-the-service-plan"></a>サービスプランの例外
+# <a name="exceptions-to-the-service-plan"></a>サービス プランの例外
 
 Microsoft マネージドデスクトップは、合わせデバイスリスト、[標準デバイス設定](device-policies.md)、アプリケーション要件、および特定の[構成可能な設定](../working-with-managed-desktop/config-setting-overview.md)を提供します。これらの設定は、エンドユーザーにとって安全で生産的で快適な操作性を提供するために設計されています。 提供されたとおりにサービスを常に使用することをお勧めします。 ただし、一部のサービスの詳細が組織のニーズに完全に適合しない場合があることを認識しています。 何らかの方法でサービスを変更する必要があると思われる場合は、次のプロセスに従って変更を依頼することが重要です。
  
@@ -27,7 +27,7 @@ Microsoft マネージドデスクトップは、合わせデバイスリスト�
 |Vpn & のセキュリティエージェント     |  デバイスまたはネットワークの動作をセキュリティで保護、監視、または変更するために使用されるソフトウェア       |
 |デジタル環境の監視     |  ユーザーのデバイス上のデータを追跡してレポートを作成するために使用されるソフトウェア       |
 |ハードウェアまたはソフトウェアのドライバー     |   デバイスドライバー。[アプリケーション要件](mmd-app-requirements.md)による制限      |
-|ポリシー     | 管理対象デバイスでの Windows 10 または Office 365 ProPlus の設定        |
+|ポリシー     | 管理対象デバイスのエンタープライズ設定用の Windows 10 または Microsoft 365 アプリ        |
 |デバイス     | Microsoft マネージドデスクトップ[デバイスリスト](device-list.md)にないデバイス        |
 |Other     |  他の領域でカバーされていないもの       |
  

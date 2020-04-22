@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Microsoft 迷惑メール報告アドインをインストールおよび使用して、スパム、非スパム、フィッシングメッセージを Microsoft に報告する方法について説明します。
-ms.openlocfilehash: e39fb2f4ecba806c2d26d989fbbe6ddec137adc1
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033910"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638502"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Office 365 で Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する
 
@@ -30,14 +30,14 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユ�
 
 このトピックでは、迷惑メール報告アドインをインストールして使用する方法について説明します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - 迷惑メール報告アドインをインストールするには、このトピックで後述する「[迷惑メール報告アドインをインストール](#install-the-junk-email-reporting-add-in)する」セクションを参照してください。
 
 - 迷惑メール報告アドインは、次のバージョンの Outlook で動作します。
 
   - Outlook 2013 以降
-  - Office 365 ProPlus に含まれている Outlook
+  - Outlook は、Microsoft 365 Apps for enterprise に含まれています。
 
 - Microsoft へのメッセージの報告の詳細については、「 [Office 365 でメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 

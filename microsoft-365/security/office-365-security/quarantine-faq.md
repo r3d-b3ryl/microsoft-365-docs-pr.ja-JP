@@ -16,24 +16,24 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Office 365 の検疫に関してよく寄せられる質問への回答。
-ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856907"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634426"
 ---
-# <a name="quarantine-faq-in-office-365"></a>Office 365 の検疫に関する FAQ
+# <a name="quarantine-faq"></a>検疫に関する FAQ
 
-このトピックでは、exchange online またはスタンドアロンの exchange online Protection (EOP) のお客様が Exchange online メールボックスを使用していない場合に、メールボックスを持つ Office 365 ユーザーの検疫に関してよく寄せられる質問と回答を示します。
+このトピックでは、exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) のお客様のメールボックスを使用する Microsoft 365 ユーザーの検疫についてよく寄せられる質問と回答を示します。
 
 ## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Q: マルウェア用に検疫されたメッセージを管理するにはどうすればよいですか?
 
-管理者のみが、マルウェア用に検疫されたメッセージを管理できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理](manage-quarantined-messages-and-files.md)」を参照してください。
+管理者のみが、マルウェア用に検疫されたメッセージを管理できます。 詳細については、「[Office 365 の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 
 ## <a name="q-how-do-i-quarantine-spam"></a>Q: スパムの検疫方法を教えてください。
 
-A. 既定では、スパムフィルターによってスパムまたはバルクメールとして分類されるメッセージは、ユーザーのメールボックスに配信され、[迷惑メール] フォルダーに移動されます。 ただし、スパムまたはバルクメールメッセージを検疫するスパム対策ポリシーを作成して構成することができます。 詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+A. 既定では、スパムフィルターによってスパムまたはバルクメールとして分類されるメッセージは、ユーザーのメールボックスに配信され、[迷惑メール] フォルダーに移動されます。 ただし、スパムまたはバルクメールメッセージを検疫するスパム対策ポリシーを作成して構成することができます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>Q: ユーザーに検疫へのアクセスを許可する方法を教えてください。
 
@@ -70,7 +70,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 その後、次のコマンドを実行して、これらのメッセージを元の受信者すべてに解放します。
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 メッセージを解放した後で、再度解放することはできません。

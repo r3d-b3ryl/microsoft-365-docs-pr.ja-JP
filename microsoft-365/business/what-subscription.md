@@ -1,5 +1,7 @@
 ---
 title: お客様のビジネスに適したサブスクリプションは何ですか。
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -15,14 +17,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: お客様のビジネスに適した Office 365 E3、Office 365 Business Premium、または Microsoft 365 Business があるかどうかを判断します。
-ms.openlocfilehash: f3adf67cf164b14596bc0cedf1cacd7dec41955e
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+description: お客様のビジネスに適した Office 365 E3、Microsoft 365 Business Standard、または Microsoft 365 Business Premium があるかどうかを判断します。
+ms.openlocfilehash: 480129ad8251770a4153b7ecc0777bdf03759012
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748323"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635666"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>小規模ビジネスに適したサブスクリプションは何ですか。
 
-Microsoft は、中小企業向けのプランをいくつか提供しています。 推奨されるサブスクリプションは、Office 365 Business Premium または Microsoft 365 Business のいずれかで、最大300ユーザーです。 Microsoft 365 Business は、追加コストのために Office 365 Business Premium よりも多くのセキュリティ機能を提供しています。
+Microsoft は、中小企業向けのプランをいくつか提供しています。 推奨されるサブスクリプションは、Microsoft 365 Business Standard または Microsoft 365 Business Premium (最大300ユーザー) のいずれかです。 Microsoft 365 Business Premium は、追加費用に対して Microsoft 365 Business Standard よりも多くのセキュリティ機能を提供しています。

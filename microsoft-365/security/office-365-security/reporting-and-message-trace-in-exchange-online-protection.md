@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートが用意されています。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。 次の表には、EOP 管理者が利用できるレポートおよびトラブルシューティングのツールを示します。
-ms.openlocfilehash: 282fd032e73ccb8217801a575f6029dbd9fadc9c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e961c76daaad72fbd1ddede5651cb49fd66d48be
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598554"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634354"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection でのレポート作成とメッセージ追跡
 
@@ -25,7 +25,7 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 
 ## <a name="usage-reports"></a>利用状況レポート
 
-**Office 365 groups アクティビティ**: 作成されて使用されている office 365 グループの数に関する情報を表示します。
+**Microsoft 365 groups activity**: 作成および使用されている microsoft 365 グループの数に関する情報を表示します。
 
 **電子メールアクティビティ**: 組織全体で送受信されたメッセージの数と、特定のユーザーに関する情報を表示します。
 
@@ -35,13 +35,13 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 
 詳細については、以下のリソースを参照してください。
 
-- [管理センターでの Office 365 レポート - Office 365 グループ](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [管理センターの microsoft 365 レポート-Microsoft 365 グループ](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [管理センターの Office 365 レポート-電子メールアクティビティ](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [管理センターの Microsoft 365 レポート-電子メールアクティビティ](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [管理センターの Office 365 レポート-電子メールアプリの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [管理センターの Microsoft 365 レポート-電子メールアプリの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [管理センターでの Office 365 レポート-メールボックスの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [管理センターでの Microsoft 365 レポート-メールボックスの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのセキュリティ & コンプライアンスレポート
 

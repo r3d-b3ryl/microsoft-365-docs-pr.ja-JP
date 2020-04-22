@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Microsoft 365 usage analytics、アクティビティレポート、導入指標のアクティブなユーザーについて説明します。
-ms.openlocfilehash: 0e2f5f5112593c142b4a7829977221c5542adf49
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2117bae32913ad713318c1df25be66d6ef6859e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247282"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631793"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Microsoft 365 の利用状況レポートのアクティブユーザー
 
-## <a name="active-user-in-usage-reports"></a>利用状況レポートのアクティブなユーザー
+## <a name="active-user-in-usage-reports"></a>利用状況レポートのアクティブ ユーザー
 
 Microsoft 365 products for [microsoft 365 usage analytics](usage-analytics.md)と[管理センターのアクティビティレポート](../activity-reports/activity-reports.md)のアクティブユーザーは、次のように定義されています。 
   

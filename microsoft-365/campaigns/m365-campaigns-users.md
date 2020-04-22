@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for キャンペーンがユーザーに与える影響について説明します。
-ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080510"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632769"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 for キャンペーンがユーザーに与える影響
 
@@ -70,7 +70,7 @@ Microsoft 365 for キャンペーンでは、ハッカーが自分の環境に�
 
 これらの推奨事項の詳細については、「[ハッカーやマルウェアからのアカウントとデバイスの保護](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)」を参照してください。
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Microsoft Teams、OneDrive、SharePoint Online、その他の Office 365 ツールを使用して共同作業を行う
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Microsoft Teams、OneDrive、SharePoint Online、その他のツールを使用して共同作業を行う
 ユーザーは、Microsoft 365 以外の場所に組織のファイルを共有し、保存しようとする場合があります。 Microsoft 365 を使用すると、簡単に共同作業し、安全に共有できます。 ファイル[とビデオ](share-files-and-videos.md)は、Microsoft Teams、OneDrive、Stream、またはファイル内からも直接共有できます。 これらのツール内から共有することで、データがリークしないようにすることができます。 機密データに保護を追加して、組織外での共有を防ぐことができます。 
 
 

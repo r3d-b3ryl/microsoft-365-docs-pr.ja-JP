@@ -16,16 +16,16 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: 管理者は、スパム信頼レベル (SCL) によって、メッセージがスパムであるかどうか、また、スパムフィルターが SCL に基づいてメッセージに対して実行する既定のアクションを決定する方法について理解できます。
-ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893696"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638286"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Office 365 でのスパム信頼度 (SCL)
 
-Office 365 (exchange online メールボックスがない exchange online またはスタンドアロンの Exchange Online Protection (EOP)) が受信電子メールメッセージを受信すると、メッセージはスパムフィルタリングを通過し、スパムスコアが割り当てられます。 このスコアは、X ヘッダー内のメッセージに追加される個々のスパム信頼レベル (SCL) にマップされます。 SCL が高いほど、メッセージがスパムである可能性が高いことを示します。 サービスは、SCL に基づいてメッセージに対してアクションを実行します。
+Microsoft 365 (exchange online またはスタンドアロンの exchange Online Protection (EOP) が Exchange Online メールボックスを使用しない) が受信メールメッセージを受信すると、メッセージはスパムフィルタリングを通過し、スパムスコアが割り当てられます。 このスコアは、X ヘッダー内のメッセージに追加される個々のスパム信頼レベル (SCL) にマップされます。 SCL が高いほど、メッセージがスパムである可能性が高いことを示します。 サービスは、SCL に基づいてメッセージに対してアクションを実行します。
 
 SCL の意味と、メッセージに対して実行される既定のアクションについて、次の表で説明します。 スパムフィルター verdict に基づいてメッセージに対して実行できるアクションの詳細については、「 [Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
@@ -46,4 +46,4 @@ SCL と同じように、バルク苦情レベル (BCL) は、不適切なバル
 
 ||
 |:-----|
-|![LinkedIn Learning の小さいアイコン](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する **Office 365 admins and IT pros** のための無料のビデオ コースをご覧ください。|
+|![LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png)の短いアイコン**を Office 365 に追加しますか?**         LinkedIn ラーニングによって提供される**Microsoft 365 管理者および IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。|

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
-ms.openlocfilehash: 3aef0cfa6209809f7a65e4179809d58d6f55aeb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599244"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638048"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -25,13 +25,13 @@ ms.locfileid: "41599244"
 
 ## <a name="self-support-options"></a>サポート サービス オプション
 
-ログインすると、組織のサービスの状態に関する情報が Office 365 ポータルに表示されます。 また、Office 365 のサービス正常性セクションにサービスの現在の状態、サービスの中断と停止の詳細、メンテナンスの計画時間のリストが表示されます。 Office 365 ポータルには、既知の問題や想定される解決策に関する情報もあります。 サービス全体のイベントによる影響を受けている場合は、通信アラートが (通常はベルのアイコンと共に) 表示されます。 その項目を参照して、適切に対応することをお勧めします。 Office 365 のサービス正常性領域の詳細については、「[サービスの正常性と継続性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」を参照してください。 ここに記載されているツール、フォーラム、およびコミュニティ サイトを使用すれば、さらに役立つ情報が見つかる場合があります。
+ログイン時に、Microsoft 365 管理センターは、組織のサービスの状態に関する情報を提供します。 また、サービスの正常性セクションには、サービスの現在の状態、サービスの中断と停止の詳細、保守の計画時間の一覧が表示されます。 また、Microsoft 365 管理センターは、既知の問題と予想される解決策に関する情報も提供します。 サービス全体のイベントによる影響を受けている場合は、通信アラートが (通常はベルのアイコンと共に) 表示されます。 その項目を参照して、適切に対応することをお勧めします。 [サービス正常性] 領域の詳細については、「[サービスの正常性と継続性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」を参照してください。 ここに記載されているツール、フォーラム、およびコミュニティ サイトを使用すれば、さらに役立つ情報が見つかる場合があります。
 
 [Exchange Online Protection の製品概要](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Office 365 コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
 [Microsoft サポート/回復アシスタント (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
@@ -63,11 +63,11 @@ EOP のユーザーで、Microsoft プレミア サポート契約もしてい�
 
    EOP を購入する前の質問、または請求およびやサブスクリプションに関する質問の場合は、 **[サポート]** \> **[カスタマー サポートを要求する]** \> **[請求およびサブスクリプション サポートに電話する]** の順に移動します。
 
-3. Microsoft Office 365 の仮想エージェントを使用して、最新の適切な電話番号を検索します。
+3. 仮想エージェントを使用して、最新の適切な電話番号を検索します。
 
 ## <a name="support-telephone-numbers"></a>サポートの電話番号
 
-Microsoft は、世界中で製品サポート用にローカルまたはフリー ダイヤルの電話番号を提供しています。これらのサポート センターの多くは、営業時間内に現地の言語で、または毎日 24 時間英語でヘルプを提供しています。所在地が以下に記載されていない場合は、上記のように Microsoft Office 365 の仮想エージェントを使用して、現地のサポート センターの電話番号を検索します。
+Microsoft は、世界中で製品サポート用にローカルまたはフリー ダイヤルの電話番号を提供しています。 これらのサポート センターの多くは、営業時間内に現地の言語で、または毎日 24 時間英語でヘルプを提供しています。 下にリストされている場所が表示されない場合は、上記の手順に従って仮想エージェントを使用して、ローカルサポートの電話番号を検索します。
 
 |**国または地域**|**購入前および請求に関する質問**|**技術サポートに関する質問**|
 |:-----|:-----|:-----|

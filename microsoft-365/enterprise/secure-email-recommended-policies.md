@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: d04070bfcec0649c5c4a1a79c082f5c5b43ad5eb
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081294"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631407"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -57,9 +57,9 @@ ms.locfileid: "43081294"
 
 1. 「[シナリオ 1: Office 365 アプリは、アプリ保護ポリシーを使用して承認済みアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)とする」の「手順 2: exchange Online の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
 
-## <a name="setup-office-365-message-encryption"></a>Office 365 メッセージの暗号化のセットアップ
+## <a name="set-up-message-encryption"></a>メッセージの暗号化をセットアップする
 
-新しい Office 365 Message Encryption (OME) 機能を使用すると、Azure Information Protection の保護機能を活用できるため、組織は、保護された電子メールを任意のデバイス上のすべてのユーザーと簡単に共有できます。 ユーザーは、Outlook.com、Gmail、その他の電子メールサービスを使用して、他の Office 365 組織および非 Office 365 ユーザーとの保護されたメッセージを送受信できます。
+新しい Office 365 Message Encryption (OME) 機能を使用すると、Azure Information Protection の保護機能を活用できるため、組織は、保護された電子メールを任意のデバイス上のすべてのユーザーと簡単に共有できます。 ユーザーは、保護されたメッセージを他の Microsoft 365 組織や、Outlook.com、Gmail、その他の電子メールサービスを使用しないお客様との間で送受信することができます。
 
 詳細については、「 [Office の新しい365メッセージ暗号化機能をセットアップ](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e)する」を参照してください。
 

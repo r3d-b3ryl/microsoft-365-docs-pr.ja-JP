@@ -5,23 +5,23 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "35830495"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637866"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft マネージド デスクトップ サービスの説明
 
-Microsoft マネージドデスクトップは、セキュリティで保護された最新の機能をユーザーに提供するサービスで、次のように、常に最新バージョンの Windows 10 Enterprise edition、Office 365 ProPlus、および Microsoft セキュリティサービスを使用してデバイスを常に最新の状態に保ちます。
+Microsoft マネージドデスクトップは、セキュリティで保護された最新の機能をユーザーに提供するサービスで、次のように、常に最新バージョンの Windows 10 Enterprise edition、Microsoft 365 Apps for enterprise、および Microsoft セキュリティサービスを使用してデバイスを常に最新の状態に保ちます。
 
 - 新しいデバイスの簡単な登録
 - デバイスの構成
 - Microsoft のベストプラクティスに従って、Windows Hello、BitLocker、セキュア、および仮想化ベースのセキュリティを含む、ユーザーとデバイスのセキュリティを確保する機能
 - デバイスセキュリティの監視および修復サービス
 - アプリの互換性 ([デスクトップアプリ](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)を使用することで保証)
-- Windows 10 および Office 365 ProPlus アプリの更新プログラムの管理
+- エンタープライズアプリ用の Windows 10 および Microsoft 365 アプリ用の更新プログラムの管理
 - デバイスとアプリの使用状況に関する分析データ
 - エンドユーザー向けの IT サポート
 - IT 担当者向けの運用サポート

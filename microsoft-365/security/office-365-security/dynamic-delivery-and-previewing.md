@@ -1,5 +1,5 @@
 ---
-title: Office 365 での動的配信とプレビュー、ATP の安全な添付ファイル
+title: ATP の安全な添付ファイルを使用した動的配信とプレビュー
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: ATP の安全な添付ファイルのポリシーを設定する場合は、[動的配信] を選択してメッセージの遅延を回避し、スキャンされた添付ファイルをプレビューできるようにします。
-ms.openlocfilehash: 755a5a317710946a3a03004482a6b48c8947c1a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c8e0a60912244a636fbbe6ca62f7c1b9c260e0f6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599424"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637570"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Office 365 での動的配信とプレビュー、ATP の安全な添付ファイル
+# <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>ATP の安全な添付ファイルを使用した動的配信とプレビュー
 
 ## <a name="overview"></a>概要
 
@@ -38,16 +38,16 @@ ms.locfileid: "41599424"
 
 - 各添付ファイルが削除されると、その添付ファイルを開いたりダウンロードしたりできます。
 
-- 添付ファイルが悪意のあるものと判断された場合は、検疫に送信されます。これにより、組織のセキュリティチーム (Office 365 のグローバル管理者やセキュリティ管理者など) が[office 365 の検疫済みメッセージを管理](manage-quarantined-messages-and-files.md)できるようになります。
+- 添付ファイルが悪意のあるものと判断された場合は、検疫に送信されます。これにより、組織のセキュリティチーム (グローバル管理者やセキュリティ管理者など) が[Office 365 で検疫済みメッセージを管理](manage-quarantined-messages-and-files.md)できるようになります。
 
 ほとんどの Pdf および Office ドキュメントは、ATP のスキャンが進行している間、セーフモードでプレビューできます。 添付ファイルが動的配信プレビューアーに対応していない場合、電子メールの受信者には、ATP の安全な添付ファイルのスキャンが完了するまで、添付ファイルプレースホルダーが表示されます。
 
 > [!TIP]
-> モバイルデバイスを使用していて、初めて動的配信プレビューで Pdf が表示されない場合は、モバイルブラウザーを使用して Office 365 にサインインしてください。
+> モバイルデバイスを使用していて、初めて動的配信プレビューで Pdf が表示されない場合は、モバイルブラウザーを使用してサインインしてみてください。
 
 動的配信を使用すると、ユーザーはすぐに電子メールメッセージの読み取りと応答を行うことができますが、添付ファイルは分析されます。
 
-ATP の安全な添付ファイルのスキャンは、Office 365 データが存在する地域と同じ地域で行われます。 データセンター地理の詳細については、「[データの保存場所](https://products.office.com/where-is-your-data-located?geo=All)」を参照してください。
+ATP の安全な添付ファイルのスキャンは、Microsoft 365 データが存在する地域と同じ地域で行われます。 データセンター地理の詳細については、「[データの保存場所](https://products.office.com/where-is-your-data-located?geo=All)」を参照してください。
 
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>添付ファイルを含む電子メールを他のユーザーが転送した場合はどうなりますか。
 

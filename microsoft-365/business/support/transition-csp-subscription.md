@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, CSP サブスクリプションの移行
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504109"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635066"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Microsoft 365 Business CSP サブスクリプションの移行
 
@@ -91,7 +91,7 @@ Microsoft 365 Business Preview CSP サブスクリプションを利用してい
 | **ログインに失敗したときに PIN をリセットする** | アプリへのアクセスが制限されます。 | アプリ レベルのアクセス制限はありません。 |
 | **Office アプリがアイドル状態後、ユーザーに再びサインインを要求する** | サインインが必要です。 | サインインは必要ありません |
 | **脱獄またはルート化されたデバイス上の仕事用ファイルへのアクセスを拒否する** | 脱獄/ルート化されたデバイスで作業ファイルにアクセスすることはできません | 脱獄またはルート化されたデバイス上の仕事用ファイルにアクセスできます。 |
-| **ユーザーが Office アプリから個人用アプリにコンテンツをコピーすることを許可する** | コピー/貼り付けは、Microsoft 365 Business サブスクリプションの一部として利用可能なアプリに制限されます。 | コピー/貼り付けはすべてのアプリで実行できます。 |
+| **ユーザーが Office アプリから個人用アプリにコンテンツをコピーすることを許可する** | コピー/貼り付けは、Microsoft 365 サブスクリプションの一部として利用可能なアプリに制限されています | コピー/貼り付けはすべてのアプリで実行できます。 |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>サブスクリプションの有効期限が切れた場合の Windows 10 PC に対する影響
 

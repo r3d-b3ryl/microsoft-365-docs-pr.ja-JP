@@ -14,18 +14,18 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Intune デバイスコンプライアンスポリシーを Microsoft 365 Enterprise テスト環境に追加します。
-ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631587"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデバイスコンプライアンスポリシー
 
 *このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
 
-この記事の手順に従って、Windows 10 デバイスおよび Office 365 ProPlus の Intune デバイスコンプライアンスポリシーを Microsoft 365 エンタープライズテスト環境に追加します。
+この記事の手順を使用して、Windows 10 365 デバイスの Intune デバイスコンプライアンスポリシーを Microsoft 365 エンタープライズテスト環境に追加します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "42066914"
 
 17. [**アプリの追加**] ウィンドウで、[**アプリスイートの情報**] を選択します。
  
-18. **アプリスイートの情報**ウィンドウで、「 **Office 365 ProPlus** In **suite Name** and **suite Description**」と入力します。
+18. [**アプリスイートの情報**] ウィンドウで、 **Suite 名**と**スイートの説明**の両方に「 **Microsoft 365 Apps for enterprise** 」と入力します。
 [OK] をクリックします。
 
 19. [**アプリの追加**] ウィンドウで、[**アプリスイートの構成**] を選択し、[ **OK**] をクリックします。

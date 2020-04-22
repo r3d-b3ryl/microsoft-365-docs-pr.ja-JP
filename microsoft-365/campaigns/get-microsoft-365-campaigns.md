@@ -23,25 +23,25 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンを cybersecurity の脅威から電子メール、データ、コミュニケーションに保護できるように、Microsoft 365 をキャンペーンに対して取得します。
-ms.openlocfilehash: 2576bc3e62fd9c51dfec16f977e8339fc09e29f6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633765"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635626"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>キャンペーンに Microsoft 365 を入手する
 
-Microsoft 365 Business を使用している人は誰でもこのガイダンスを使用して、電子メールとコラボレーションのためのセキュリティを強化することができます。 ただし、米国のキャンペーンおよび行政機関は、Microsoft 365 の特別価格の対象となります。 現時点では、次のような特別価格をご利用いただけます。
+Microsoft 365 Business Premium を使用しているすべての人がこのガイダンスを使用して、電子メールと共同作業のためのセキュリティを強化することができます。 ただし、米国のキャンペーンおよび行政機関は、Microsoft 365 の特別価格の対象となります。 現時点では、次のような特別価格をご利用いただけます。
 - 米国連邦政府キャンペーン (たとえば、米国の住宅、米国議事堂、または社長で office を検索するキャンペーン)
 - 米国の国家レベルの政治当事者。
 
 キャンペーンまたは政治的当事者が認定している場合、Microsoft 365 for キャンペーンは、Microsoft によって提供される最も安価なプランです。  
 
-特別な価格設定ができない場合でも、Microsoft 365 Business は、グループ作業環境の包括的なセキュリティを得るための最も費用効果の高い方法です。 キャンペーンについては、「 [Microsoft 365 のサインアップ](m365-campaigns-sign-up.md)」を参照してください。 その後、このライブラリを使用して、セキュリティの強化を行い、チームが安全に共同作業できるようにします。 
+特別な価格設定ができない場合でも、Microsoft 365 Business Premium は、グループ作業環境の包括的なセキュリティを得るための最も費用効果の高い方法です。 キャンペーンについては、「 [Microsoft 365 のサインアップ](m365-campaigns-sign-up.md)」を参照してください。 その後、このライブラリを使用して、セキュリティの強化を行い、チームが安全に共同作業できるようにします。 
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Microsoft 365 のキャンペーンには、どのようなものがありますか?
-この Microsoft 365 Business の構成には、お客様とスタッフが安全に共同作業するのに役立つ簡単なコントロールが含まれています。 
+Microsoft 365 Business Premium のこの構成には、スタッフが安全に共同作業するために役立つ簡単なコントロールが含まれています。 
 - **ユーザー id を保護**する: 電子メールの送信またはファイルへのアクセス (多元的な認証) を行うときに、ユーザーがサインインした本人であることを確認します。
 - **機密情報を保護**する: 機密情報を保護して、組織外で共有される情報 (データ損失防止) を監視します。
 - **モバイルデバイスを保護**する: モバイルデバイス上のデータを保護します (モバイルアプリ保護ポリシー)。

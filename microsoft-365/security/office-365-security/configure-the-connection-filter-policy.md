@@ -16,16 +16,16 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 信頼できるユーザーからの電子メールがブロックされないようにするには、接続フィルターポリシーを使用して、信頼する IP アドレスの許可一覧を作成します。 禁止された送信者の IP 禁止一覧を作成することもできます。
-ms.openlocfilehash: bc0f99102daa422cefe5a7c9cb3e0e5476237f63
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894000"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637748"
 ---
-# <a name="configure-connection-filtering-in-office-365"></a>Office 365 で接続フィルターを構成する
+# <a name="configure-connection-filtering"></a>接続フィルターの構成
 
-Exchange Online または exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) のお客様の場合、Office 365 をご利用のお客様は、EOP (特に既定の接続フィルターポリシー) で接続フィルターを使用して、適切または不良なソース電子メールサーバーの IP アドレス。 既定の接続フィルターポリシーの主要なコンポーネントは次のとおりです。
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 顧客の場合は、EOP (特に既定の接続フィルターポリシー) で接続フィルターを使用して、適切なまたは不良なソース電子メールサーバーを IP アドレスで識別します。 既定の接続フィルターポリシーの主要なコンポーネントは次のとおりです。
 
 - **Ip 許可一覧**: ip アドレスまたは ip アドレス範囲で指定した送信元電子メールサーバーからのすべての受信メッセージに対して、スパムフィルター処理をスキップします。 このようなソースからのメッセージにスパムフィルター処理が依然として発生する可能性があるシナリオについては、このトピックで後述する「 [IP 許可一覧のソースからのメッセージのフィルター処理](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered)」セクションを参照してください。 IP 許可一覧が安全な送信者戦略全体にどのように適合するかの詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
@@ -33,18 +33,18 @@ Exchange Online または exchange online メールボックスを使用しな�
 
 - **セーフリスト**:*セーフリスト*は、お客様の構成を必要としない、Microsoft データセンターの動的な許可一覧です。 Microsoft では、これらの信頼できる電子メールソースを、さまざまなサードパーティリストに対するサブスクリプションから識別しています。 セーフリストの使用を有効または無効にします。送信元の電子メールサーバーをセーフリストで構成することはできません。 セーフリスト上の電子メールサーバーからの受信メッセージに対して、スパムフィルター処理がスキップされます。
 
-このトピックでは、Office 365 セキュリティ & コンプライアンスセンターまたは PowerShell (Office 365 お客様の場合は Exchange Online PowerShell) で既定の接続フィルターポリシーを構成する方法について説明します。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。 EOP での接続フィルターの使用方法の詳細については、「 [365 Office](anti-spam-protection.md)のスパム対策保護」を参照してください。
+このトピックでは、セキュリティ & コンプライアンスセンターまたは PowerShell (Microsoft 365 お客様の場合は Exchange Online PowerShell) で既定の接続フィルターポリシーを構成する方法について説明します。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。 EOP での接続フィルターの使用方法については、「スパム対策[保護](anti-spam-protection.md)を参照する」を参照してください。
 
 > [!NOTE]
-> IP 許可一覧、セーフリスト、および IP 禁止一覧は、組織内の電子メールを許可またはブロックするための全体的な戦略の一部です。 詳細については、「office [365 で安全な送信者リストを作成する](create-safe-sender-lists-in-office-365.md)」および「 [office 365 でブロックされる送信者リストを作成](create-block-sender-lists-in-office-365.md)する」を参照してください。
+> IP 許可一覧、セーフリスト、および IP 禁止一覧は、組織内の電子メールを許可またはブロックするための全体的な戦略の一部です。 詳細については、「[差出人セーフリストを作成する](create-safe-sender-lists-in-office-365.md)」および「[ブロックする送信者リストを作成する](create-block-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- セキュリティ & コンプライアンスセンターに<https://protection.office.com/>表示されます。 [**スパム対策設定**] ページに直接移動するには<https://protection.office.com/antispam>、を使用します。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection の PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- これらの手順を実行する前に、アクセス許可を割り当てる必要があります。 既定の接続フィルターポリシーを変更するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 既定の接続フィルターポリシーに対する読み取り専用アクセスの場合は、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 既定の接続フィルターポリシーを変更するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 既定の接続フィルターポリシーに対する読み取り専用アクセスの場合は、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - 許可またはブロックする電子メールサーバー (送信者) の送信元 IP アドレスを確認するには、メッセージヘッダーの [接続 IP (**CIP**)] ヘッダーフィールドを確認します。 さまざまな電子メールクライアントのメッセージヘッダーを表示するには、「 [Outlook でインターネットメッセージヘッダーを表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)する」を参照してください。
 
@@ -176,9 +176,9 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 IP 許可一覧内の電子メールサーバーからのメッセージは、次のシナリオでは依然としてスパムフィルター処理の対象となります。
 
-- IP 許可一覧の ip アドレスは、Office 365 の*任意*のテナントのオンプレミスの ip ベースの受信コネクタにも構成されています (このテナントを呼び出すことができます) **。また、テナント a**および EOP 365 サーバーは、どちらも Microsoft データセンター内の*同じ*Active Directory フォレストに存在することになります。 このシナリオでは、 **Ipv: CAL** *が*メッセージの[スパム対策メッセージヘッダー](anti-spam-message-headers.md)に追加されます (メッセージがスパムフィルタリングをバイパスしていることを示します)。ただし、メッセージはスパムフィルター処理の対象となります。
+- IP 許可一覧の ip アドレスは、Microsoft 365 の*任意*のテナントのオンプレミスの ip ベースの受信コネクタにも構成されています (このテナントを呼び出すことができます) **。また、** 最初にメッセージが検出された EOP サーバーが、microsoft データセンター内の*同じ*Active Directory フォレストに存在することになります。 このシナリオでは、 **Ipv: CAL** *が*メッセージの[スパム対策メッセージヘッダー](anti-spam-message-headers.md)に追加されます (メッセージがスパムフィルタリングをバイパスしていることを示します)。ただし、メッセージはスパムフィルター処理の対象となります。
 
-- Office 365 で最初にメッセージを検出した IP 許可一覧と EOP サーバーを含むテナントは、どちらも Microsoft データセンター内の*異なる*Active Directory フォレストに存在することになります。 このシナリオでは、 **Ipv: CAL** *は*メッセージヘッダーに追加されないため、メッセージはスパムフィルター処理の対象となります。
+- IP 許可一覧を含むテナントと、最初にメッセージを検出した EOP サーバーの両方が、Microsoft データセンター内の*異なる*Active Directory フォレストに存在する。 このシナリオでは、 **Ipv: CAL** *は*メッセージヘッダーに追加されないため、メッセージはスパムフィルター処理の対象となります。
 
 これらのシナリオのいずれかが発生した場合は、次の設定を使用してメールフロールールを作成することができます (最低限)。これにより、問題のある IP アドレスからのメッセージがスパムフィルター処理をスキップすることを確認できます。
 
@@ -190,4 +190,4 @@ IP 許可一覧内の電子メールサーバーからのメッセージは、�
 
 ||
 |:-----|
-|![LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png)の短いアイコン**を Office 365 に追加しますか?** LinkedIn Learning が提供する **Office 365 管理者および IT プロフェッショナル**向けの無料のビデオ コースをご覧ください。|
+|![LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png)の短いアイコンは、 **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される**管理者と IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。|

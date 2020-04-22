@@ -1,5 +1,5 @@
 ---
-title: 管理センターで Office 365 グループを管理する
+title: 管理センターでグループを管理する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: グループメンバーの追加、電子メールアドレス、グループ名、説明の編集、グループの動作のカスタマイズなど、Office 365 グループを管理する方法について説明します。
-ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: グループメンバーの追加、電子メールアドレス、グループ名、説明の編集、グループの動作のカスタマイズなど、Microsoft 365 グループを管理する方法について説明します。
+ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212071"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630395"
 ---
-# <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで Office 365 グループを管理する
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを管理する
 
-[Office 365 グループを作成](create-groups.md)し、グループメンバーを追加したら、グループを構成できます。 グループ名または説明を編集したり、所有者またはメンバーを管理したり、外部の送信者がグループに電子メールを送信できるかどうか、およびグループスレッドのコピーをメンバーに送信するかどうかを指定したりできます。 
+[Microsoft 365 グループを作成](create-groups.md)し、グループメンバーを追加したら、グループを構成できます。 グループ名または説明を編集したり、所有者またはメンバーを管理したり、外部の送信者がグループに電子メールを送信できるかどうか、およびグループスレッドのコピーをメンバーに送信するかどうかを指定したりできます。 
 
 ## <a name="edit-the-group-name-or-description"></a>グループ名または説明を編集する
 
@@ -122,7 +122,7 @@ ms.locfileid: "43212071"
 
 3. [**設定**] タブで、メンバーがグループメッセージおよび予定表アイテムのコピーを自分の受信トレイに受信するようにする場合は、[グループ**の会話とイベントのコピーをグループのメンバーに送信**する] を選択します。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ ms.locfileid: "43212071"
 
 3. メンバーが自分の受信トレイにグループメッセージと予定表アイテムのコピーを受信するようにする**には、** グループ**の会話とイベントのコピーをグループメンバーの受信トレイに送信**します。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ ms.locfileid: "43212071"
 
 3. メンバーが自分の受信トレイにグループメッセージと予定表アイテムのコピーを受信するようにする**には、** グループ**の会話とイベントのコピーをグループメンバーの受信トレイに送信**します。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ ms.locfileid: "43212071"
 
 3. [管理センターグループ] リストで、変更するグループの名前を選択し、[**設定**] タブで [**外部の送信者にメールを送信することを許可する**] を選択します。
     
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ ms.locfileid: "43212071"
     
 3. [ **組織外のユーザーにグループへのメールを許可します**] トグルを **オン**にします。
     
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -186,20 +186,20 @@ ms.locfileid: "43212071"
     
 3. [ **組織外のユーザーにグループへのメールを許可します**] トグルを **オン**にします。
     
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ::: moniker-end
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 グループを作成する](create-groups.md)
+[Microsoft 365 グループを作成する](create-groups.md)
 
-[Office 365 グループへのゲストアクセスを管理する](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Microsoft 365 グループへのゲストアクセスを管理する](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[Office 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
+[Microsoft 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
 
-[Office 365 グループの代理人として送信または送信することをメンバーに許可する](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[メンバーが Microsoft 365 グループの代理として送信または送信できるようにする](allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[配布リストを Office 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
+[配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-[PowerShell で Office 365 グループを管理する](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)

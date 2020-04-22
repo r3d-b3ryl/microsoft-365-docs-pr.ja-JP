@@ -1,5 +1,5 @@
 ---
-title: Office 365 での送信スパム対策
+title: 送信スパム保護
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,31 +16,31 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Office 365 と Exchange Online Protection (EOP) が送信スパムからお客様を保護する方法と、大量のメールを送信する必要がある場合の対処方法について説明します。
-ms.openlocfilehash: 99e764944335be923ee1918851d4072ea98d3a32
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 管理者は、Microsoft 365 と Exchange Online Protection (EOP) が送信スパムからお客様を保護する方法と、大量のメールを送信する必要がある場合の対処方法について説明します。
+ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895325"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634498"
 ---
-# <a name="outbound-spam-protection-in-office-365"></a>Office 365 での送信スパム対策
+# <a name="outbound-spam-protection"></a>送信スパム保護
 
-Office 365 (exchange online またはスタンドアロンの exchange online Protection (EOP) が Exchange Online メールボックスを使用しない場合) は、多くのお客様がリソースの共有プールを使用しているオンラインサービスであるため、送信スパムを真剣に管理しています。 ユーザーが故意または誤って組織からスパムを送信した場合、サービス全体の評価が低下し、他のお客様の電子メール配信に影響を与える可能性があります。365
+Microsoft 365 (exchange online またはスタンドアロンの exchange online Protection (EOP) が Exchange Online メールボックスを使用しない場合) は、多くのお客様がリソースの共有プールを使用しているオンラインサービスであるため、送信スパムを真剣に管理することになります。 ユーザーが故意または誤って組織からスパムを送信することによって、サービス全体の評判が低下し、他のお客様の電子メール配信に影響を与える可能性があります。365
 
 このトピックでは、送信スパムを防止するために設計されたコントロールと通知、および大量のメールを送信する必要がある場合の対処方法について説明します。
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>管理者が送信スパムを制御する方法
 
-- **組み込み通知の使用**: ユーザーが[サービス](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)または[送信スパムポリシー](configure-the-outbound-spam-policy.md)の制限を超え、電子メールの送信が制限されている場合、ユーザーが電子メールを**送信**できないようにする既定の警告ポリシーは、電子メール通知を " **tenantadmins** (**グローバル管理者**)" グループのメンバーに送信します。 これらの通知を受信するユーザーを構成するには、「制限され[たユーザーの通知設定を確認](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)する」を参照してください。 また、電子メールの送信の**制限**を指定した既定の警告ポリシーと、電子メールの送信**パターンが検出さ**れた場合は、 **tenantadmins** (**Global admins**) グループのメンバーに電子メール通知が送信されます。 アラートポリシーの詳細については、「[セキュリティ/コンプライアンスセンターのアラートポリシー](../../compliance/alert-policies.md)」を参照してください。
+- **組み込み通知の使用**: ユーザーが[サービス](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)または[送信スパムポリシー](configure-the-outbound-spam-policy.md)の制限を超え、電子メールの送信が制限されている場合、ユーザーが電子メールを**送信**できないようにする既定の警告ポリシーは、電子メール通知を " **tenantadmins** (**グローバル管理者**)" グループのメンバーに送信します。 これらの通知を受信するユーザーを構成するには、「制限され[たユーザーの通知設定を確認](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)する」を参照してください。 また、電子メールの送信の**制限**を指定した既定の警告ポリシーと、電子メールの送信**パターンが検出さ**れた場合は、 **tenantadmins** (**Global admins**) グループのメンバーに電子メール通知が送信されます。 アラート ポリシーの詳細については、「[セキュリティ/コンプライアンス センターでのアラート ポリシー](../../compliance/alert-policies.md)」を参照してください。
 
-- **サードパーティの電子メールプロバイダーからのスパムの苦情を確認**します。 Outlook.com、YAHOO、AOL などの多くの電子メールサービスは、サービスのユーザーが Office 365 の電子メールをスパムとしてマークした場合にメッセージをパッケージ化して、レビューのためにマイクロソフトに送り返すようにするフィードバックループを提供します。 Outlook.com の送信者のサポートの詳細について<https://sendersupport.olc.protection.outlook.com/pm/services.aspx>は、「」を参照してください。
+- **サードパーティの電子メールプロバイダーからスパムの苦情を確認**する: Outlook.com、YAHOO、AOL などの多くの電子メールサービスは、フィードバックループを提供します。このような場合、サービスのユーザーが Microsoft 365 からスパムとして電子メールをマークすると、メッセージがパッケージ化され、レビューのために弊社に送り戻されます。 Outlook.com の送信者のサポートの詳細について<https://sendersupport.olc.protection.outlook.com/pm/services.aspx>は、「」を参照してください。
 
 ## <a name="how-eop-controls-outbound-spam"></a>EOP が送信スパムを制御する方法
 
 - **送信メールトラフィックの分離**: サービスを通じて送信されたすべての送信メッセージがスパムでスキャンされます。 メッセージがスパムであると判断された場合、そのメッセージは_高リスク配信プール_という、信頼度の低いセカンダリ IP アドレスプールから配信されます。 詳細については、「 [Office 365 での送信メッセージの高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。
 
-- **送信元 ip アドレスの評価**: Office 365 は、さまざまなサードパーティの ip 禁止一覧を照会します。 送信電子メールに使用する IP アドレスのいずれかがこれらのリストに表示される場合は、アラートが生成されます。 これにより、スパムによる評価が低下した場合に迅速に対応することができます。 通知が生成されると、ブロックリストから IP アドレスの削除 (delisted) を取得する方法の概要を示す内部ドキュメントがあります。
+- **送信元 ip アドレスの評価**: Microsoft 365 では、さまざまなサードパーティの ip 禁止一覧を照会します。 送信電子メールに使用する IP アドレスのいずれかがこれらのリストに表示される場合は、アラートが生成されます。 これにより、スパムによる評価が低下した場合に迅速に対応することができます。 通知が生成されると、ブロックリストから IP アドレスの削除 (delisted) を取得する方法の概要を示す内部ドキュメントがあります。
 
 - **[次の回数を超えて送信するアカウントを無効に**<sup>\*</sup>する]: 送信スパムが危険度の高い配信プールに分離されている場合でも、スパムを無期限に送信することを許可することはできません。 スパムを送信しているアカウントを監視していて、undisclosed いうの制限を超えている場合、アカウントはメールの送信をブロックされます。 個々のユーザーとテナント全体に異なるしきい値があります。
 
@@ -50,7 +50,7 @@ Office 365 (exchange online またはスタンドアロンの exchange online Pr
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>EOP を介して大量のメールを送信することを希望するお客様向けの推奨事項
 
-大量の電子メールを送信しようとしているお客様と、侵害されたアカウントからのサービスの保護と、受信者の取得方法に不備がある大量の電子メール送信者の間で、バランスを取ることは困難です。 サードパーティの IP 禁止一覧における Office 365 メールソースのランディングのコストは、送信する電子メールの数が多すぎるユーザーをブロックすることよりも大きくなります。
+大量の電子メールを送信しようとしているお客様と、侵害されたアカウントからのサービスの保護と、受信者の取得方法に不備がある大量の電子メール送信者の間で、バランスを取ることは困難です。 サードパーティの IP 禁止一覧における Microsoft 365 メールソースのランディングのコストは、送信する電子メールの数が多すぎるユーザーをブロックすることよりも大きくなります。
 
 「 [Exchange Online サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)」に記載されているように、EOP を使用してバルクメールを送信することは、サービスの使用をサポートしておらず、"ベストエフォート" ベースでのみ許可されています。 バルクメールを送信する場合は、次のソリューションをお勧めします。
 

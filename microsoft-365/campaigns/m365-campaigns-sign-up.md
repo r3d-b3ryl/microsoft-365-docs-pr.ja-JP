@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのための Microsoft 365 のステップバイステップのサインアップ。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
-ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633735"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632781"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンのための Microsoft 365 へのサインアップ 
 
@@ -46,7 +46,7 @@ ms.locfileid: "42633735"
 
 1. Microsoft 365 へのキャンペーン電子メールへの招待で、[**組織 >を登録**する] を選択します。 これにより、Microsoft 365 サインアップが実行されます。
     > [!NOTE]
-    > 既存の Office 365 for business サブスクリプションを既に所有しており、Microsoft 365 for キャンペーンのサービスを追加する場合は、「 [microsoft 365 for The キャンペーンを既存のサブスクリプションに追加](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)する」に進んでください。
+    > 既存の Microsoft 365 for business サブスクリプションを既に所有しており、Microsoft 365 for キャンペーンのサービスを追加する場合は、「 [microsoft 365 for The キャンペーンを既存のサブスクリプションに追加](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)する」に進んでください。
 1. **[Microsoft 365 business] ページ**で、ビジネスの詳細を入力します。 **ビジネスメールアドレス**の場合は、現在の電子メールアドレスを使用します。 このアドレスは、セットアップ処理中にお客様に連絡するためにのみ必要です。 [**次へ**] を選択します。
 1. **[ユーザー ID の作成] ページで、** 次のようにします。
     1. [**ユーザー名**] に、電子メールアドレスに使用する名前またはエイリアスを入力します。 たとえば、Alice だけと呼ばれることもあれば、渡のような場合もあります。 大規模なキャンペーンでは、AliceC または AliceChavez の方がより有意義な場合があります。
@@ -72,9 +72,9 @@ ms.locfileid: "42633735"
 
 ## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>既存のサブスクリプションにキャンペーンのための Microsoft 365 を追加する手順
 
-Office 365 for business (Office 365 Business Premium など) への既存のサブスクリプションを既に保有している場合は、Microsoft 365 for キャンペーンを使用してライセンスを追加できます。
+Microsoft 365 for business (Microsoft 365 Business Standard など) の既存のサブスクリプションを既に保有している場合は、microsoft 365 for the を使用してライセンスを追加することができます。
 > [!IMPORTANT]
-> 既存の Microsoft 365 Business テナントには、Microsoft 365 for the キャンペーンオファーを追加することはできません。
+> Microsoft 365 for the キャンペーンオファーを既存の Microsoft 365 アカウントに追加することはできません。
 
 1. Microsoft 365 へのキャンペーン電子メールへの招待で、[**組織 >を登録**する] を選択します。 これにより、Microsoft 365 サインアップが実行されます。
 2. [**ようこそ、ご意見**をお持ちですか?] ページで、クリックまたはタップして**既存のサブスクリプションに追加しますか?サインイン**します。

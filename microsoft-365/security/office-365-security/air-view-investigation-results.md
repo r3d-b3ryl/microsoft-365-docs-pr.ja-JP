@@ -1,5 +1,5 @@
 ---
-title: Office 365 の自動調査の結果を表示する
+title: Microsoft 365 の自動調査の結果を表示する
 keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Office 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Microsoft 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225977"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634630"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の詳細と結果
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)で自動化された[調査](office-365-air.md)が行われると、その調査の詳細が自動調査プロセスの間に利用可能になります。 必要なアクセス許可を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 調査の詳細ビューでは最新の状態が表示され、保留中のアクションを承認する機能が提供されます。 
 
@@ -40,13 +40,13 @@ ms.locfileid: "43225977"
 |保留中のアクション | 調査で、悪意のある電子メール、悪意のある URL、危険なメールボックスの設定などの脅威、および脅威が[承認](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)待ちであることを修復するアクションを検出しました。<br/><br/>保留中のアクションの状態は、対応するアクションを含む脅威が見つかった場合にトリガーされます。 ただし、保留中のアクションのリストは、調査を実行すると増加する可能性があります。 [調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)を調べて、他の項目がまだ完了待ち状態かどうかを確認します。 |
 |修復済み | 調査が終了し、すべてのアクションが承認されました (完全に修復済み)。<br/><br/>**注**: 承認された修復アクションには、アクションを実行できないエラーが発生することがあります。 修復アクションが正常に完了したかどうかに関係なく、調査状況は変わりません。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
 |一部修復済み | 調査で修復が行われ、一部が承認され、完了しています。 その他のアクションはまだ[保留中](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)です。 |
-|失敗 | 少なくとも1つの調査アナライザーで、正常に完了できなかった問題が発生しました。 <br/><br/>**注**: 修復処置が承認された後に調査が失敗した場合でも、修復アクションが正常に完了している可能性があります。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
+|Failed | 少なくとも1つの調査アナライザーで、正常に完了できなかった問題が発生しました。 <br/><br/>**注**: 修復処置が承認された後に調査が失敗した場合でも、修復アクションが正常に完了している可能性があります。 詳細な結果については、[調査ログ](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)を確認してください。 |
 |調整によってキューに入れられる | 調査はキューに保持されています。 他の調査が完了すると、キュー調査が開始されます。 調整によって、サービスのパフォーマンスが低下しないようにします。 <br/><br/>**ヒント**: 保留中のアクションは、実行できる新しい調査の数を制限できます。 [保留中のアクションを承認 (または拒否)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)していることを確認します。 |
 |調整による終了 | 調査が長時間に保持されている場合は停止します。 <br/><br/>**ヒント**:[脅威エクスプローラーから調査を開始](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)できます。 |
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
-1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. 次のいずれかの操作を行います。
 
@@ -66,9 +66,9 @@ ms.locfileid: "43225977"
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>調査に関連する通知の詳細を表示する
 
-特定の種類の通知では、Office 365 で自動調査がトリガーされます。 詳細については、「 [Alerts](automated-investigation-response-office.md#alerts)」を参照してください。 次の手順を使用して、自動調査に関連付けられている通知の詳細を表示します。
+特定の種類の通知では、Microsoft 365 で自動調査がトリガーされます。 詳細については、「 [Alerts](automated-investigation-response-office.md#alerts)」を参照してください。 次の手順を使用して、自動調査に関連付けられている通知の詳細を表示します。
 
-1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。 
+1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。 
 
 2. [**脅威管理** > の**調査**] に移動します。
 
@@ -215,7 +215,7 @@ ms.locfileid: "43225977"
 
 |はまる | 説明 |
 |-----|-----|
-|DLP 違反の調査 |[Office 365 データ損失防止](../../compliance/data-loss-prevention-policies.md)(DLP) によって検出された違反を調査する |
+|DLP 違反の調査 |[データ損失防止](../../compliance/data-loss-prevention-policies.md)(DLP) によって検出された違反を調査する |
 |電子メールインジケーターの抽出 |調査のために電子メールメッセージのヘッダー、本文、およびコンテンツから指標を抽出する |
 |ファイルハッシュの評価 |組織内のユーザーとコンピューターのファイルハッシュに基づいて異常を検出する |
 |メールクラスターの識別 |ヘッダー、本文、コンテンツ、および Url に基づく電子メールクラスターの分析 |
@@ -248,7 +248,7 @@ ms.locfileid: "43225977"
 - 結果の CSV ファイルへのエクスポート。
 - ビューのフィルタリング。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [保留中のアクションを確認して承認する](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
 

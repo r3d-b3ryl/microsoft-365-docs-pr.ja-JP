@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office 365 での不正な同意付与の検出と修復
+title: 不法な同意の付与を検出して修復する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710526"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637606"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
+# <a name="detect-and-remediate-illicit-consent-grants"></a>不法な同意の付与を検出して修復する
 
 **概要** Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
 
@@ -38,11 +38,11 @@ ms.locfileid: "42710526"
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 のように、不法な同意を与える攻撃はどのようになりますか?
 
-この攻撃の兆候 (IOC) を検出するには、Office 365**監査ログ**を検索する必要があります。 Azure に登録されているアプリケーションの数が多く、ユーザーが大規模な組織では、組織の同意の付与を週単位で確認することをお勧めします。
+**監査ログ**を検索して、この攻撃の兆候の兆候 (IOC) と呼ばれることもあります。 Azure に登録されているアプリケーションの数が多く、ユーザーが大規模な組織では、組織の同意の付与を週単位で確認することをお勧めします。
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を見つけるための手順
 
-1. Office 365 テナントの [**セキュリティとコンプライアンスセンター** ] を開きます。
+1. テナント内の [**セキュリティ & コンプライアンスセンター** ] を開きます。
 
 2. [**検索**] に移動して、[**監査ログの検索**] を選択します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "42710526"
 5. 結果をクリックして、アクティビティの詳細を表示します。 [**詳細情報**] をクリックして、アクティビティの詳細を取得します。 IsAdminContent が True に設定されているかどうかを確認します。
 
 > [!NOTE]
-> * イベントが発生した後に、対応する監査ログエントリが検索結果に表示されるようにするには、30分から最大24時間かかることがあります。 <br/><br/> 監査レコードが保持され、監査ログで検索可能になる時間の長さは、Office 365 サブスクリプションによって異なり、特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+> * イベントが発生した後に、対応する監査ログエントリが検索結果に表示されるようにするには、30分から最大24時間かかることがあります。 <br/><br/> 監査レコードが保持され、監査ログで検索可能な期間は、Microsoft 365 サブスクリプションによって異なり、具体的には特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 この値が true の場合は、グローバル管理者のアクセス権を持つユーザーがデータへの広範なアクセス権を持っている可能性があることを示します。 これが予期しない場合は、[攻撃を確認](#how-to-confirm-an-attack)するための手順を実行します。
 
 ## <a name="how-to-confirm-an-attack"></a>攻撃を確認する方法
@@ -121,7 +121,7 @@ ms.locfileid: "42710526"
 
 スクリプトによって、Permissions という名前のファイルが1つ作成されます。 次の手順に従って、不法なアプリケーションアクセス許可の付与を検索します。
 
-1. [Conな種類] 列 (列 G) で、値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可によって、クライアントアプリケーションは、テナント内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブの Office 365 アプリケーションは、正しく動作するためにこのアクセス許可を必要とします。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重にレビューする必要があります。
+1. [Conな種類] 列 (列 G) で、値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可によって、クライアントアプリケーションは、テナント内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブの Microsoft 365 アプリケーションは、このアクセス許可を正しく動作させるために必要です。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重にレビューする必要があります。
 
 2. [アクセス許可] 列 (列 F) に、各委任されたアプリケーションがコンテンツに対して持っているアクセス許可を確認します。 "読み取り" と "書き込み" アクセス許可または "* を探します。All "アクセス許可を使用して、適切ではない可能性があるため慎重に確認してください。
 
@@ -131,7 +131,7 @@ ms.locfileid: "42710526"
 
 ## <a name="determine-the-scope-of-the-attack"></a>攻撃の範囲を決定する
 
-アプリケーションアクセスのインベントリ処理が終了したら、Office 365**監査ログ**を確認して、違反の完全なスコープを特定します。 影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)で検索できます。
+アプリケーションアクセスのインベントリ処理が終了したら、**監査ログ**を確認して、違反の完全な範囲を特定します。 影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)で検索できます。
 
 > [!IMPORTANT]
 > この情報を取得するには、攻撃の前に、[管理者とユーザーの](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)[メールボックスの監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)とアクティビティの監査を有効にする必要があります。
@@ -158,9 +158,9 @@ ms.locfileid: "42710526"
 
 - テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。 これを行うには、[統合アプリをオンまたはオフ](https://docs.microsoft.com/office365/admin/misc/integrated-apps)にする手順に従ってください。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>セキュリティで保護された Microsoft 365 (cybersecurity pro など)
 
-Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能セットが用意されています。 [Office 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Office 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。 Microsoft 365 セキュリティロードマップを使用して、[最初の30日間、90日間、](security-roadmap.md) microsoft の推奨ベストプラクティスを実装し、microsoft の365テナントをセキュリティで保護することをお勧めします。
 
 - 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

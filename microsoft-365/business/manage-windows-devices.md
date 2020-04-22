@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする
+title: Microsoft 365 for business で管理されるドメインに参加している Windows 10 デバイスを有効にする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: いくつかの手順で、Microsoft 365 を有効にして、ローカルの Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: 625eb7ac344b060409101d650ff30044d073f5bf
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 431c1be74723e156befb13ffe1ed98b48b9a23cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561462"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633285"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Microsoft 365 Business で管理されるドメインに参加している Windows 10 デバイスを有効にする
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>Microsoft 365 for business で管理されるドメインに参加している Windows 10 デバイスを有効にする
 
-組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。
+組織がオンプレミスの Windows Server Active Directory を使用している場合は、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持しながら、Microsoft 365 for business をセットアップして、Windows 10 デバイスを保護することができます。
 この保護をセットアップするには、**ハイブリッド AZURE AD に参加**しているデバイスを実装します。 これらのデバイスは、オンプレミスの Active Directory と Azure Active Directory の両方に参加します。
 
 このビデオでは、最も一般的なシナリオに対してこれを設定する手順について説明します。これについては、以下の手順でも詳細に説明します。
@@ -47,7 +47,7 @@ ms.locfileid: "42561462"
 
    - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail**、 **ProxyAddresses**、および**userPrincipalName**。 これらの値は一意である必要があり、重複して削除する必要があります。
    
-   - 各ローカルユーザーアカウントの**userPrincipalName** (UPN) 属性を、ライセンスされた Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 例: mary.shelley@contoso.com ではなく*mary@contoso* 、 **
+   - 各ローカルユーザーアカウントの**userPrincipalName** (UPN) 属性を、ライセンスされた Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 例: mary.shelley@contoso.com ではなく*mary@contoso* 、 *mary.shelley@contoso.com*
    
    - Active Directory ドメインが、 *.com*または *.org*などのインターネットでルーティング可能なサフィックスの代わりに、*ローカル*ユーザーアカウントの UPN サフィックスではなく、ルーティング可能*ではない*サフィックスで終わっている場合は、「[ディレクトリ同期のために非ルーティングドメインを準備する](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)」で説明されているように、まずローカルユーザーアカウントの UPN サフィックスを調整します。 
 
@@ -56,9 +56,9 @@ ms.locfileid: "42561462"
 ユーザー、グループ、および連絡先をローカルの Active directory から Azure Active Directory に同期するには、Azure Active Directory Connect をインストールし、ディレクトリ同期をセットアップします。 詳細については、「 [Office 365 のディレクトリ同期をセットアップ](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)する」を参照してください。
 
 > [!NOTE]
-> この手順は、Microsoft 365 Business の場合とまったく同じです。 
+> この手順は、Microsoft 365 for business の場合とまったく同じです。 
 
-Azure AD Connect のオプションを構成する際には、**パスワード同期**、**シームレスシングルサインオン**、**パスワード書き戻し**機能を有効にすることをお勧めします。これは、Microsoft 365 Business でもサポートされています。
+Azure AD Connect のオプションを構成する際には、**パスワード同期**、**シームレスなシングルサインオン**、**パスワード書き戻し**機能を有効にすることをお勧めします。これは、Microsoft 365 for business でもサポートされています。
 
 > [!NOTE]
 > Azure AD Connect のチェックボックスを超えてパスワードを書き戻しするには、いくつかの追加の手順があります。 詳細については、「[方法: パスワードの書き戻しを構成](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)する」を参照してください。 

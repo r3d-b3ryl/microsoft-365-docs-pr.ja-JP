@@ -1,5 +1,5 @@
 ---
-title: Office 365 のアタックシミュレータ
+title: ATP のアタックシミュレータ
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: アタックシミュレータを使用して、Office 365 E5 または ATP Plan 2 組織でシミュレートされたフィッシングおよびパスワード攻撃を実行します。これは、実際の攻撃に遭遇する前に、脆弱性のあるユーザーを特定するのに役立ちます。
-ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+description: グローバル管理者は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃によってビジネスに遭遇する前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。
+ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637340"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638574"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Office 365 のアタックシミュレータ
+# <a name="attack-simulator-in-atp"></a>ATP のアタックシミュレータ
 
-アタックシミュレータ in Office 365 Advanced Threat Protection プラン 2 (ATP Plan 2) を使用すると、組織内で現実的にシミュレートされたフィッシングおよびパスワード攻撃のキャンペーンを実行できます。 キャンペーンの結果を使用して、脆弱性のあるユーザーを特定し、教育することができます。
+**概要**グローバル管理者またはセキュリティ管理者で、組織に Office 365 Advanced Threat Protection プラン2があり、脅威の[調査および応答機能](office-365-ti.md)が含まれている場合は、攻撃シミュレータを使用して、組織で現実的な攻撃シナリオを実行できます。 これにより、実際の攻撃が収益に影響を与える前に、脆弱なユーザーを特定して検出することができます。 詳細については、この記事をお読みください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Office 365 セキュリティ & コンプライアンスセンターを開くには、に<https://protection.office.com/>移動します。 アタックシミュレータは、**脅威管理** \>の**アタックシミュレータ**で利用できます。
+- セキュリティ & コンプライアンスセンターを開くには、に<https://protection.office.com/>移動します。 アタックシミュレータは、**脅威管理** \>の**アタックシミュレータ**で利用できます。
 
   ![脅威管理-アタックシミュレータ](../../media/ThreatMgmt-AttackSimulator.png)
 
-- 異なる Office 365 サブスクリプション間でのアタックシミュレータの可用性の詳細については、「 [office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+- 異なる Microsoft 365 サブスクリプション間でのアタックシミュレータの可用性の詳細については、「 [Office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
 
-- **組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- **組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - アタックシミュレータでキャンペーンを作成および管理するには、アカウントが多要素認証 (MFA) 用に構成されている必要があります。 手順については、「[多要素認証をセットアップ](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)する」を参照してください。
 
-- Exchange Online のメールボックスを使用しているユーザーに対しては、フィッシングまたはパスワード攻撃のキャンペーンのみを実行できます。
+攻撃が正常に開始されるようにするには、シミュレートされた攻撃の実行に使用しているアカウントが多要素認証を使用していることを確認してください。 さらに、全体管理者またはセキュリティ管理者である必要があります。 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - フィッシングキャンペーンは、30日間、イベントを収集して処理します。 キャンペーンを開始した後、過去90日間は過去のキャンペーンデータを利用できるようになります。
 
@@ -49,11 +49,11 @@ ms.locfileid: "42637340"
 
 *フィッシング*とは、正規または信頼された送信者からのメッセージで機密情報を盗もうとする電子メール攻撃の一般的な用語です。 *スピアーフィッシング*は、対象となる受信者に特化した、非常に集中的でカスタマイズされたコンテンツ (通常は、攻撃者による受信者の偵察後) を使用する、対象となるフィッシング攻撃です。
 
-フィッシングとスピアーフィッシングの詳細については、「[フィッシング](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing)」を参照してください。
+- グローバル管理者またはセキュリティ管理者
 
 アタックシミュレータでは、2つの異なる種類のスピアーフィッシングキャンペーンを利用できます。
 
-- **スピアーフィッシング (資格情報のハーベスト)**: 攻撃により、受信者がメッセージ内の URL をクリックするように誘導しようとします。 ユーザーがリンクをクリックすると、資格情報を入力するように求められます。 その場合は、次のいずれかの場所に移動します。
+- 少なくとも、グローバル管理者アカウントと、アタックシミュレータを使用するセキュリティ管理者に対して、[多要素認証/条件付きアクセス](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)が有効になっています。 (理想的には、組織内のすべてのユーザーに対して多要素認証/条件付きアクセスが有効になっています)。
 
   - これについて説明する既定のページはテストのみで、フィッシングメッセージを認識するためのヒントを示します。
 

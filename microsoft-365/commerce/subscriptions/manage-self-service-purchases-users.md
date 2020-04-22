@@ -14,16 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636641"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
 ユーザーとして、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てることができます。 自分が行ったセルフサービス購入については、支払いを担当します。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin.microsoft.com</a>では、Microsoft 365 管理センターでサブスクリプションを管理できます。
+
 
 管理者は、購入したサブスクリプションに対して読み取り専用のビューを持っています。 購入したサブスクリプションごとに、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを表示することができます。
 
@@ -118,7 +119,7 @@ ms.locfileid: "43142141"
 
 2. [**請求書**] で、表示する請求書を選択します。
 
-## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
+## <a name="need-help-contact-us"></a>ヘルプが必要な場合 ご連絡ください。
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 

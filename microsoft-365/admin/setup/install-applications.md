@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 description: 'Mac、PC、またはモバイルデバイスで Office アプリケーションをセットアップする方法について説明します。 '
-ms.openlocfilehash: a1c6daf31e86fe345ba896362fe2703c2ca51509
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 73da808b7704f526d07f265ecfe99016e138ea52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209654"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632105"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションのインストール
 
-Office 365 のセットアップが完了したので、Office アプリケーションを Mac、PC、またはモバイルデバイスにセットアップすることができます。
+Microsoft 365 のセットアップが完了したので、Mac、PC、またはモバイルデバイスで Office アプリケーションをセットアップすることができます。
   
 次の手順については、以下のリンクを参照してください。
   
 - Office アプリケーションのインストール: [PC または Mac に office をインストールする](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)
 
-- モバイルデバイスのセットアップ: [Office 365 mobile セットアップ-ヘルプ](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
+- モバイルデバイスのセットアップ: [Microsoft 365 mobile セットアップ-ヘルプ](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
 
 - Outlook で電子メールをセットアップする: [Windows](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)または[Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)
 
@@ -43,6 +43,6 @@ Azure Active Directory Premium (AADP) プラン1またはプラン2を購入し�
 
 ::: moniker-end
 
-問題が起こる場合次のトラブルシューティングのリソースが役立ちます。
+問題が発生した場合 次のトラブルシューティングリソースが役立ちます。
   
-- [Office と Office 365 を両方インストールする場合のトラブルシューティング](https://support.office.com/article/35ff2def-e0b2-4dac-9784-4cf212c1f6c2.aspx)
+- [Office および Microsoft 365 のインストールのトラブルシューティング](https://support.office.com/article/35ff2def-e0b2-4dac-9784-4cf212c1f6c2.aspx)

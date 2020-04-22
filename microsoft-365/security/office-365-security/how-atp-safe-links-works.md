@@ -1,5 +1,5 @@
 ---
-title: Office 365 の ATP の安全なリンクのしくみ
+title: ATP の安全なリンク機能のしくみ
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 ATP の安全なリンクのしくみについては、この記事をお読みください。'
-ms.openlocfilehash: c87eef2afbb3a694d9906de0c6c43bfeb576782b
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b77ab718afdc4f68d8120e11fa5d1a321b66f32e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633975"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638012"
 ---
-# <a name="how-office-365-atp-safe-links-works"></a>Office 365 の ATP の安全なリンクのしくみ
+# <a name="how-atp-safe-links-works"></a>ATP の安全なリンク機能のしくみ
 > [!IMPORTANT] 
-> Office 365 の ATP の安全なリンクが正しく動作するには、すべての Office 365 サービスが同じバージョンになっている必要があります。
+> Office 365 の ATP の安全なリンクが正しく動作するためには、すべてのサービスが同じバージョンになっている必要があります。
          
 ## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP の安全なリンクが電子メール内の Url と連携する方法
 
@@ -51,9 +51,9 @@ ms.locfileid: "42633975"
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Office ドキュメントの Url で ATP の安全なリンクが機能するしくみ 
 
-大まかに説明すると、Office 365 ProPlus または Business Premium アプリケーション (Windows、Mac、またはブラウザーでの Office アプリ、iOS または Android デバイス上の Office アプリ、ブラウザーでの OneNote) の Url に対して、 [ATP の安全なリンク](atp-safe-links.md)保護がどのように機能するかについて説明します。
+高レベルでは、エンタープライズまたはビジネスプレミアムアプリケーション用の Microsoft 365 アプリ (Windows、Mac、またはブラウザー、iOS または Android デバイス上の Office アプリ、ブラウザーでの OneNote) の Url に対して、 [ATP の安全なリンク](atp-safe-links.md)保護がどのように機能するかについて説明します。
   
-1. ユーザーは、コンピューター、スマートフォン、またはタブレットに Office 365 ProPlus または Business Premium をインストールしています。 (または、ユーザーがブラウザーで Office を使用している場合)。
+1. ユーザーは、お客様のコンピューター、スマートフォン、またはタブレットに Microsoft 365 Apps for enterprise または Business Premium をインストールしています。 (または、ユーザーがブラウザーで Office を使用している場合)。
     
 2. ユーザーが Word、Excel、PowerPoint、OneNote (ブラウザー)、または Visio (デスクトップ) を開き、職場または学校のアカウントを使用して Office 365 Enterprise にサインインします。 ドキュメントに Url が含まれている。
     

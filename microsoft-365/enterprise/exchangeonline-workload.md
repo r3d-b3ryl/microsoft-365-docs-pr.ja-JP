@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 組織全体で Microsoft 365 Enterprise の Exchange Online の価値を計画、ロールアウト、および促進するプロセスについて順を追って説明します。
-ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9214796c37e9cb5ca9fcb07ced5db7efd8e0f7d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453863"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634148"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Exchange Online の展開
 
@@ -28,7 +28,7 @@ Exchange Online は、ユーザーがリアルタイムのチャットや一元�
 
 Exchange online を初めて使用する場合は、「[Microsoft Exchange Online](https://products.office.com/exchange/exchange-online)」を参照してください。
 
-次のフェーズと手順に従って、組織内の Exchange Online の役割を構想し、組織を一連の段階的な展開によって Exchange Online にオンボードし、Exchange Online およびそのエンドユーザーへの値。
+次のフェーズと手順は、組織内の Exchange Online の役割を構想するプロセス、一連のプログレッシブ展開によって exchange Online をオンボードにして、Exchange Online とその価値をエンドユーザーに使用するプロセスを中心に説明します。
 
 >[!Note]
 >これらの展開手順は[、Microsoft 365 Enterprise foundation インフラストラクチャのフェーズ2の id](identity-infrastructure.md)を完了した後にのみ実行する必要があります。
@@ -75,7 +75,7 @@ Exchange Online メールボックスへのアクセスを保護するには、 
 
 - [複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Exchange Server のパブリックフォルダーを Exchange Online に移行する](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
-- [Exchange Server のパブリックフォルダーを Office 365 グループに移行する](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
+- [Exchange Server のパブリックフォルダーを Microsoft 365 グループに移行する](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Exchange Online でのコラボレーション](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Exchange Online の受信者](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 - [iOS 版および Android 版 Outlook](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
@@ -90,7 +90,7 @@ Exchange Online のセキュリティをより深く理解するには、次の�
 
 - [Exchange Online でユーザーメールボックスを作成する](https://docs.microsoft.com/exchange/recipients-in-exchange-online/create-user-mailboxes)
 - [ユーザー メールボックスの管理](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) 
-- [配布グループを作成および管理する](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [配布グループを作成して管理する](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 
 #### <a name="result"></a>結果
 
@@ -155,8 +155,8 @@ Exchange Online を組織全体にロールアウトした後、次のことを�
 
 推奨されるアクティビティの一部をいくつか紹介します。
 
-- 「[Office 365 の成功要因](https://aka.ms/successfactors)」を参照して、クラウド サービス導入の一般的なベスト プラクティスを理解します。 
-- 「[Office 365 アクティビティ レポート](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)」を参照して、組織全体での Office 365 サービスの使用について理解します。組織の Office 365 全体管理者ではない場合は、ユーザー アカウントに Reports Reader 権限を付与できるグローバル管理者に権限の付与を依頼し、アクティビティ レポートにアクセスできるようにしてください。
+- クラウドサービスの導入に関する一般的なベストプラクティスについては、「 [Microsoft 365 の成功要因](https://aka.ms/successfactors)」を参照してください。 
+- 組織全体でのサービスの利用状況を理解するに[は、管理センターの Microsoft 365 レポート](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)を参照してください。 組織のグローバル管理者ではない場合は、アクティビティレポートにアクセスできるように、グローバル管理者がユーザーアカウントに対してレポートリーダーアクセス許可を付与するように依頼してください。
 - Exchange Online でのエクスペリエンスに関する問題とフィードバックについて、フィードバック会場 (中央チームのチームまたは Yammer のパブリックチャネル) を監視します。 ユーザーの不満を防ぎ、展開のサポートを実施できるように、質問と問題にすばやく対処します。
 - 各ビジネスグループのエキスパートを特定して育成、Outlook を使用してベストプラクティスを強調表示します。 組織に彼らの成果を反映させて、プロジェクトの成功と導入を示します。 ビジネスグループ内の技術リーダーによる裏書は、リーダーとピアに大きな影響を与える可能性があります。
 
@@ -178,4 +178,4 @@ Exchange Online の継続的なメンテナンスについては、次のリソ�
 
 - [Exchange Online の Exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center) 
 - [Exchange Online での監視、レポート、メッセージ追跡](https://docs.microsoft.com/exchange/monitoring/monitoring)
-- [Exchange Online の電子メールのバックアップ](https://docs.microsoft.com/exchange/back-up-email) 
+- [Exchange Online での電子メールのバックアップ](https://docs.microsoft.com/exchange/back-up-email) 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする
+title: ビジネスユーザー向けの Microsoft 365 用のモバイルデバイスをセットアップする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,25 +23,25 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: IPhone または Android 電話機に Office をインストールすると、Office アプリの仕事ファイルは Microsoft 365 Business によって保護されます。
-ms.openlocfilehash: 36cc3cb9b35cb5746a4147509f17e4f4d7909617
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: IPhone または Android 電話機に Office をインストールすると、Office アプリの仕事ファイルは Microsoft 365 for business で保護されます。
+ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42089385"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632569"
 ---
-# <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Microsoft 365 Business ユーザーのモバイル デバイスをセットアップする
+# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>ビジネスユーザー向けの Microsoft 365 用のモバイルデバイスをセットアップする
 
-タブの指示に従って、Office を iPhone または Android スマートフォンにインストールします。これらの手順を実行すると、Office アプリで作成した作業ファイルは、Microsoft 365 Business で保護されるようになります。
+タブの指示に従って、Office を iPhone または Android スマートフォンにインストールします。 これらの手順を実行すると、Office アプリで作成された作業ファイルは、Microsoft 365 for business で保護されます。
 
 この例は Outlook 用ですが、インストールするその他の Office アプリにも適用されます。
   
-## <a name="set-up-mobile-devices"></a>モバイル デバイスのセットアップ
+## <a name="set-up-mobile-devices"></a>モバイル デバイスをセットアップする
 
-## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
+## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
-Microsoft 365 Business を使用して iOS デバイスで Office アプリをセットアップする方法について、簡単なビデオを見ることができます。<br><br>
+Microsoft 365 for business を使用して iOS デバイスで Office アプリをセットアップする方法について、簡単なビデオを見ることができます。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -59,7 +59,7 @@ Microsoft 365 Business を使用して iOS デバイスで Office アプリを�
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 Business credentials \> **Sign in**.
+[**電子メールアカウントの追加**] 画面に仕事用\>のメールアドレスを入力し、[**アカウント**の追加] \>をクリックして、Microsoft 365 for business の資格情報**サインインに**入力します。
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -71,7 +71,7 @@ iPhone で Outlook を見つけて、再起動します。 プロンプトが表
   
 ![Set a PIN to access your organization's data](../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
-## <a name="androidtabandroid"></a>[Android](#tab/Android)
+## <a name="android"></a>[Android](#tab/Android)
   
 Android デバイスへの Outlook と Office のインストールに関するビデオをご覧ください。<br><br>
 
@@ -87,7 +87,7 @@ Android phone でのセットアップを開始するには、再生ストアに
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Outlook アプリで、[**開始**] をタップし、Microsoft 365 Business \> **メールアカウントを**追加して、組織の資格情報でサインインします。
+Outlook アプリで、[**スタート**] をタップしてから、Microsoft 365 for business の\>電子**メールアカウントを追加し、組織**の資格情報でサインインします。
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -105,6 +105,6 @@ Outlook をもう一度開き、PIN を入力して確認します。これで O
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

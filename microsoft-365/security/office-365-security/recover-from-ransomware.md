@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Office 365 管理者は、ランサムウェア攻撃から回復する方法について説明します。
-ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Microsoft 365 管理者は、ランサムウェア攻撃から回復する方法について学ぶことができます。
+ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032878"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634402"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Office 365 でランサムウェア攻撃から回復する
 
-Office 365 組織を保護するためにすべての予防措置を講じたとしても、[ランサムウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻撃に被害を与えることができます。 ランサムウェアは大規模なものであり、攻撃は高度なものとなっています。
+組織を保護するためにすべての予防措置を講じたとしても、[ランサムウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻撃に被害を与えることができます。 ランサムウェアは大規模なものであり、攻撃は高度なものとなっています。
 
-このトピックの手順に従って、ランサムウェアによって暗号化されたデータを復元する機会が最善になり、Office 365 組織における感染の拡大を止めることができます。 開始する前に、次の項目を考慮する必要があります。
+このトピックの手順に従って、ランサムウェアによって暗号化されたデータを復元する機会が最善になり、組織内での感染拡大を止めることができます。 開始する前に、次の項目を考慮する必要があります。
 
 - Ransom からファイルへのアクセスが返される保証はありません。 実際には、ransom を支払うことで、ランサムウェアをさらに確保することができます。 既に有料になっていても、攻撃者の解決策を使用せずにファイルを正常に復元できた場合は、銀行に電話して、トランザクションをブロックできるかどうかを確認する必要があります。 また、このトピックの後半で説明するように、ランサムウェア攻撃を司法機関、詐欺報告用 web サイト、および Microsoft に報告することをお勧めします。
 
@@ -122,7 +122,7 @@ OneDrive for business のファイルの復元を使用すると、OneDrive 全�
 
 ### <a name="submit-email-messages-to-microsoft"></a>Microsoft に電子メールメッセージを送信する
 
-複数の方法のいずれかを使用して、ランサムウェアを含むフィッシングメッセージを報告できます。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+複数の方法のいずれかを使用して、ランサムウェアを含むフィッシングメッセージを報告できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

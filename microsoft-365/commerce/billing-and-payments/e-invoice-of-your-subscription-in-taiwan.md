@@ -1,5 +1,5 @@
 ---
-title: Office 365 for business の電子請求書について理解する (台湾)
+title: Microsoft 365 for business の電子請求書について理解する (台湾)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
-description: 台湾の Office 365 for business e 請求書について説明します。
-ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 台湾の Microsoft 365 for business e 請求書について説明します。
+ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354668"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632709"
 ---
-# <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>Office 365 for business の電子請求書について理解する (台湾)
+# <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Microsoft 365 for business の電子請求書について理解する (台湾)
 
 電子請求書は、台湾税務当局の電子請求書の要件に従って購入後に販売者が発行した電子請求書です。 情報は、レコード保持のために、台湾税務当局の電子請求書クラウドに送信されます。 台湾の e-請求書関連情報については、ここを参照してください:<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
@@ -39,7 +39,7 @@ ms.locfileid: "42354668"
 
 商用購入の場合は、台湾税務当局が規定する料金で、サブスクリプションの見積価格に加えて、税金を適用します。 税金に関連する質問や計画については、納税アドバイザーにご協力ください。
   
-## <a name="when-will-e-invoice-start-for-my-office-365-services"></a>Office 365 サービスの電子請求書がいつ開始されるようになりますか?
+## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>Microsoft 365 サービスで電子請求書が開始されるのはいつですか?
 
 Microsoft は、現在の最新の請求書を電子請求書で、 **9 月 15**日に交換します。 9月15日より前の請求書では、紙コピー税請求書は顧客に直接郵送されます。 15月15日後に、電子請求書が Microsoft 365 管理センターで表示、ダウンロード、および印刷のために提供され、お客様は直接メールを送信できなくなります。 
   
@@ -55,7 +55,7 @@ Microsoft は、現在の最新の請求書を電子請求書で、 **9 月 15**
   
 アカウントを作成したら、次の手順に従って、管理センターを使用して VAT ID を更新することができます。
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
     
 2. サブスクリプションを選択して、[**その他のアクション**] を選択します。
     

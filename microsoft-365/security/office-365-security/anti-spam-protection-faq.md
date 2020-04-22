@@ -15,16 +15,16 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Exchange Online およびスタンドアロン Exchange Online Protection (EOP) でのスパム対策保護についてよく寄せられる質問と回答を管理者に説明します。
-ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528315"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636060"
 ---
-# <a name="anti-spam-protection-faq-in-office-365"></a>Office 365 のスパム対策保護に関する FAQ
+# <a name="anti-spam-protection-faq"></a>スパム対策保護に関するよく寄せられる質問
 
-このトピックでは、exchange online またはスタンドアロンの exchange online Protection (EOP) のお客様が Exchange online メールボックスを使用していない場合に、メールボックスを持つ Office 365 ユーザーのスパム対策保護に関するよく寄せられる質問と回答について説明します。
+このトピックでは、exchange online またはスタンドアロンの exchange online Protection (EOP) のお客様が Exchange online メールボックスを使用していない場合に、メールボックスを持つ Microsoft 365 ユーザーのスパム対策保護に関してよく寄せられる質問と回答を提供します。
 
 検疫に関する質問と回答については、「[検疫に関する FAQ](quarantine-faq.md)」を参照してください。
 
@@ -34,12 +34,12 @@ ms.locfileid: "43528315"
 
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>Q. 既定では、スパム検出メッセージはどのように処理されますか?
 
-A. **受信メッセージの場合**: スパムの大部分は、送信元の電子メールサーバーの IP アドレスに基づいて、接続フィルターによって削除されます。 スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) は、メッセージを検査し、スパム、一括、またはフィッシングとして分類します。 既定では、スパムまたは一括として分類されるメッセージは、受信者の迷惑メールフォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されます) を変更することも、特定のユーザーグループに対して厳密な設定を使用してカスタムのスパム対策ポリシーを作成することもできます (たとえば、エグゼクティブに送信されるスパムを検疫できます)。 詳細については、「 [Office 365 のスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」および「[推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
+A. **受信メッセージの場合:** スパムの大部分は、送信元の電子メールサーバーの IP アドレスに基づいて、接続フィルターによって削除されます。 スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) は、メッセージを検査し、スパム、一括、またはフィッシングとして分類します。 既定では、スパムまたは一括として分類されるメッセージは、受信者の迷惑メールフォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されます) を変更することも、特定のユーザーグループに対して厳密な設定を使用してカスタムのスパム対策ポリシーを作成することもできます (たとえば、エグゼクティブに送信されるスパムを検疫できます)。 詳細については、「[スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」および「[推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
 
 > [!IMPORTANT]
 > EOP が社内メールボックスを保護するハイブリッド展開では、オンプレミスの Exchange 組織内の2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成して、メッセージに追加される EOP スパムフィルタリングヘッダーを検出する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
 
- **送信メッセージの場合**: メッセージは、[危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してルーティングされるか、配信不能レポート (NDR またはバウンスメッセージとも呼ばれる) で送信者に返されます。 送信スパム保護の詳細については、「 [Office 365 の送信スパム制御](outbound-spam-controls.md)」を参照してください。
+ **送信メッセージの場合:** メッセージは、[危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してルーティングされるか、配信不能レポート (NDR またはバウンスメッセージとも呼ばれる) で送信者に返されます。 送信スパム保護の詳細については、「[送信スパム制御](outbound-spam-controls.md)」を参照してください。
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Q. ゼロ日のスパムバリアントとは何ですか。サービスによってどのように処理されますか。
 
@@ -75,7 +75,7 @@ A. はい。このサービスには、メッセージ内の Url を確認する
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>Q. サービス使用中の顧客が Microsoft へ偽陰性 (スパム) メッセージおよび偽陽性 (スパムでない) メッセージを送信するにはどうしますか。
 
-A. スパムとスパムではないメッセージを分析のために Microsoft に送信するには、いくつかの方法があります。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+A. スパムとスパムではないメッセージを分析のために Microsoft に送信するには、いくつかの方法があります。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="q-can-i-get-spam-reports"></a>Q. スパム報告を取得できますか?
 
@@ -97,11 +97,11 @@ A.特定の時間枠 (たとえば、1 時間ごと) 内でサービスを使用
 
 ## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>Q. サードパーティのスパム対策およびマルウェア対策プロバイダーを Exchange Online と併用できますか。
 
-A. はい。 Office 365 に MX レコードを指定することをお勧めしますが、Office 365 以外の場所に電子メールをルーティングする正当な業務上の理由があることを認識しています。
+A. はい。 MX レコードを Microsoft に指定することをお勧めしますが、Microsoft 以外の場所に電子メールをルーティングする正当な業務上の理由があることを認識しています。
 
 - **Inbound**: サードパーティプロバイダーをポイントするように MX レコードを変更し、追加の処理のためにメッセージを EOP にリダイレクトします。 詳細については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
-- **送信**: Office 365 から送信先のサードパーティプロバイダーにスマートホストルーティングを構成します。
+- **送信**: Microsoft 365 から送信先のサードパーティプロバイダーにスマートホストルーティングを構成します。
 
 ## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Q. マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。
 
@@ -133,7 +133,7 @@ A. 以下に示すガイドラインは、送信メール メッセージを送�
 
   SPF レコードとは、ドメインから送信されたメールがそのドメインから実際に送信されていること、なりすましではないことを確認するためのメカニズムです。 SPF レコードの詳細については、以下のリンクを参照してください:
 
-  [スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [スプーフィングを防止するために SPF をセットアップする](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [ドメイン FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

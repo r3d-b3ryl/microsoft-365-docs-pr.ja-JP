@@ -1,5 +1,5 @@
 ---
-title: Office 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
+title: Microsoft 365 が Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,34 +15,34 @@ search.appverid:
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: '概要: この記事では、Office 365 において、Sender Policy Framework (SPF) TXT レコードを DNS で使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。 これは、Office 365 から送信された送信メールに適用されます。 Office 365 から Office 365 内の受信者に送信されたメッセージは、常に SPF チェックに合格します。'
-ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: '概要: この記事では、Microsoft 365 が DNS で Sender Policy Framework (SPF) TXT レコードを使用して、カスタムドメインから送信されたメッセージを宛先の電子メールシステムが信頼するようにする方法について説明します。 これは、Microsoft 365 から送信される送信メールに適用されます。 Microsoft 365 から Microsoft 365 内部の受信者に送信されるメッセージは、常に SPF に合格します。'
+ms.openlocfilehash: d73fb881b8395c6c1383cca70e506694795f1364
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634015"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633992"
 ---
-# <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
+# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 が Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法
 
- **概要:** この記事では、Office 365 において、Sender Policy Framework (SPF) TXT レコードを DNS で使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。これは、Office 365 から送信された送信メールに適用されます。Office 365 から Office 365 内の受信者に送信されたメッセージは、常に SPF チェックに合格します。
+ **概要:** この記事では、Microsoft 365 が DNS で Sender Policy Framework (SPF) TXT レコードを使用して、カスタムドメインから送信されたメッセージを宛先の電子メールシステムが信頼するようにする方法について説明します。 これは、Microsoft 365 から送信される送信メールに適用されます。 Microsoft 365 から Microsoft 365 内部の受信者に送信されるメッセージは、常に SPF に合格します。
 
 SPF TXT レコードは、DNS 形式のレコードです。SPF TXT レコードで、メール メッセージの送信元のドメイン名を確認すると、スプーフィングやフィッシングの防止に役立ちます。SPF は、送信者の IP アドレスを、送信側ドメインの所有者とされる名前と照合して、メール メッセージの発信元を確認します。
 
 > [!NOTE]
 > SPF レコードの種類は、2014 年にインターネット技術標準化委員会 (IETF) によって廃止されました。代わりに、SPF 情報を公開するには、DNS で TXT レコードを必ず使用してください。この記事の以降の部分では、わかりやすいように SPF TXT レコードという用語を使用します。
 
-ドメイン管理者は DNS の TXT レコードで SPF 情報を公開します。 この SPF 情報は、承認された送信メール サーバーを識別します。 送信先メール システムにより、承認された送信メール サーバーからメッセージが発信されたことが確認されます。 SPF について既に理解している、または単純な展開を使っていて、Office 365 用に DNS で SPF TXT レコードに含めるものを知りたいだけの場合は、[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) に進んでください。 Office 365 で完全にホストされた展開を使っていない場合、または SPF のしくみや Office 365 の SPF についてトラブルシューティングを行う方法について詳しい情報が必要な場合は、このまま読み進めてください。
+ドメイン管理者は DNS の TXT レコードで SPF 情報を公開します。 この SPF 情報は、承認された送信メール サーバーを識別します。 送信先メール システムにより、承認された送信メール サーバーからメッセージが発信されたことが確認されます。 既に SPF に精通している場合、または簡単に展開でき、Microsoft 365 の DNS で SPF TXT レコードに含める内容を知る必要がある場合は、「 [microsoft 365 で spf を設定](set-up-spf-in-office-365-to-help-prevent-spoofing.md)する」を参照して、スプーフィングを防止できます。 Microsoft 365 で完全にホストされている展開がない場合、または SPF の動作方法や、Microsoft 365 の SPF のトラブルシューティング方法の詳細については、「」を参照してください。
 
 > [!NOTE]
-> 以前は、SharePoint Online も使用している場合、カスタム ドメインに別の SPF TXT レコードを追加する必要がありました。 この作業を行う必要はなくなりました。 この変更により、SharePoint Online の通知メッセージが [迷惑メール] フォルダーに振り分けられるリスクが軽減されます。 直ちに変更を行う必要はありませんが、"参照が多すぎます" というエラーが発生する場合は、[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) に記載されているように SPF TXT レコードを変更します。
+> 以前は、SharePoint Online も使用している場合、カスタム ドメインに別の SPF TXT レコードを追加する必要がありました。 この作業を行う必要はなくなりました。 この変更により、SharePoint Online の通知メッセージが [迷惑メール] フォルダーに振り分けられるリスクが軽減されます。 すぐに変更する必要はありませんが、"参照が多すぎます" エラーが表示された場合は、「 [Microsoft 365 での spf の設定](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」の説明に従って spf TXT レコードを変更して、スプーフィングを防止します。
 
-## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-office-365"></a>Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ
+## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365"></a>Microsoft 365 でのスプーフィングとフィッシングを防ぐための SPF のしくみ
 <a name="HowSPFWorks"> </a>
 
 SPF は、送信者がドメインの代理として送信することを許可されているかどうかを判断します。送信者がこの操作を許可されていない場合、つまり、受信側のサーバーで電子メールの SPF チェックが失敗した場合は、そのサーバー上で構成されたスパム ポリシーが、メッセージについて行う処理を決定します。
 
-各 SPF TXT レコードには次の 3 つの部分があります。SPF TXT レコードである宣言、自分のドメインおよび自分のドメインの代理として送信できる外部ドメインからのメール送信を許可されている IP アドレス、強制ルールです。有効な SPF TXT レコードには 3 つすべてが必要です。この記事では、SPF TXT レコードを形成する方法について説明し、Office 365 のサービスを操作するためのベスト プラクティスを提供します。ドメイン レジストラーを操作してレコードを DNS に発行するための手順へのリンクも用意されています。
+各 SPF TXT レコードには、SPF TXT レコードであるという宣言、ドメインからのメールの送信を許可されている IP アドレス、ドメインの代わりに送信できる外部ドメイン、および適用ルールの3つの部分が含まれています。 3つすべての有効な SPF TXT レコードを指定する必要があります。 この記事では、SPF TXT レコードを作成する方法と、Microsoft 365 のサービスを操作するためのベストプラクティスについて説明します。 ドメインレジストラーを使用してレコードを DNS に公開する手順へのリンクも提供されています。
 
 ### <a name="spf-basics-ip-addresses-allowed-to-send-from-your-custom-domain"></a>SPF の基本: カスタム ドメインからの送信が許可された IP アドレス
 <a name="SPFBasicsIPaddresses"> </a>
@@ -109,32 +109,32 @@ IP アドレスに加えて、送信者としてドメインを含めるよう�
 v=spf1 include:contoso.net include:contoso.org -all
 ```
 
-受信側のサーバーは、このレコードを DNS に表示するときに、contoso.net の SPF TXT レコードに対する DNS 参照も行い、contoso.org に対しても実行します。Contoso.net または contoso.org のレコード内に追加の include ステートメントが見つかった場合は、それに従っていることになります。 サービス拒否攻撃を防止するための、1 つの電子メール メッセージに対する DNS 参照の最大数は 10 です。 各 include ステートメントは追加の DNS 参照を表します。 メッセージが上限 10 を超えると、メッセージは SPF チェックに失敗します。 メッセージがこの制限に達すると、受信側サーバーの構成方法によっては、メッセージが "参照が多すぎます" または "メッセージの最大ホップ数を超えています" というメッセージが表示されることがあります (照合は、DNS のタイムアウトをループします。 この問題を回避する方法のヒントについては、「[トラブルシューティング:Office 365 における SPF のベスト プラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」を参照してください。
+受信側のサーバーは、このレコードを DNS に表示するときに、contoso.net の SPF TXT レコードに対する DNS 参照も行い、contoso.org に対しても実行します。Contoso.net または contoso.org のレコード内に追加の include ステートメントが見つかった場合は、それに従っていることになります。 サービス拒否攻撃を防止するための、1 つの電子メール メッセージに対する DNS 参照の最大数は 10 です。 各 include ステートメントは追加の DNS 参照を表します。 メッセージが上限 10 を超えると、メッセージは SPF チェックに失敗します。 メッセージがこの制限に達すると、受信側サーバーの構成方法によっては、"参照が多すぎます" または "メッセージの最大ホップ数を超えています" というメッセージが表示されることがあります (参照がループし、DNS のタイムアウトを超えた場合に発生する可能性があります)。 この問題を回避する方法に関するヒントについては、「 [Microsoft 365 の SPF のベストプラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」を参照してください。
 
-## <a name="requirements-for-your-spf-txt-record-and-office-365"></a>SPF TXT レコードと Office 365 の要件
+## <a name="requirements-for-your-spf-txt-record-and-microsoft-365"></a>SPF TXT レコードと Microsoft 365 の要件
 <a name="SPFReqsinO365"> </a>
 
-Office 365 をセットアップする際にメールをセットアップすると、既に SPF TXT レコードを作成したことになります。この SPF TXT レコードが、Microsoft メッセージング サーバーを自分のドメインの正当なメールの送信元として識別します。このレコードはおそらく次のようになります。
+Microsoft 365 をセットアップするときにメールを設定すると、ドメインの正当なメールソースとして Microsoft メッセージングサーバーを識別する SPF TXT レコードが既に作成されています。 このレコードは、おそらく次のようになります。
 
 ```text
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-完全にホストされている Office 365 を使用している場合、つまり、送信メールを送信するオンプレミスのメールサーバーが存在しない場合、これは Office 365 に対して発行する必要がある SPF TXT レコードのみです。
+完全にホストされている顧客、つまり、送信メールを送信するオンプレミスのメールサーバーが存在しない場合、これは Office 365 に対して発行する必要がある SPF TXT レコードのみです。
 
-ハイブリッド展開を使用している場合 (つまり、オンプレミスのメールボックスと Office 365 でホストされているメールボックスがある場合)、または Exchange Online Protection (EOP) スタンドアロンのお客様 (つまり組織が EOP を使用してオンプレミスのメールボックスを保護している場合) は、各社内エッジメールサーバーの送信 IP アドレスを、DNS の SPF TXT レコードに追加します。
+ハイブリッド展開がある場合 (つまり、社内のメールボックスと Microsoft 365 でホストされているメールボックスがあります。または、Exchange Online Protection (EOP) スタンドアロンのお客様 (つまり組織が EOP を使用してオンプレミスのメールボックスを保護している場合) は、各社内エッジメールサーバーの送信 IP アドレスを DNS の SPF TXT レコードに追加します。
 
-## <a name="form-your-spf-txt-record-for-office-365"></a>Office 365 のための SPF TXT レコードの形成
+## <a name="form-your-spf-txt-record-for-microsoft-365"></a>Microsoft 365 用の SPF TXT レコードの形成
 <a name="FormYourSPF"> </a>
 
 この記事に記載されている構文の情報を使って、カスタム ドメイン用の SPF TXT レコードを形成します。ここに記載されていない他の構文オプションもありますが、これらが最もよく使うオプションです。レコードを形成した後は、ドメイン レジストラーでレコードを更新する必要があります。
 
-Office 365 に含める必要のあるドメインの詳細については、「 [SPF に必要な外部 DNS レコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)」を参照してください。 ドメインレジストラーの SPF (TXT) レコードを更新するための手順を順[を追って説明](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)します。
+Microsoft 365 に含める必要のあるドメインの詳細については、「 [SPF に必要な外部 DNS レコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)」を参照してください。 ドメインレジストラーの SPF (TXT) レコードを更新するための手順を順[を追って説明](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)します。
 
-### <a name="spf-txt-record-syntax-for-office-365"></a>Office 365 用の SPF TXT レコードの構文
+### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Microsoft 365 の SPF TXT レコードの構文
 <a name="SPFSyntaxO365"> </a>
 
-Office 365 用の標準的な SPF TXT レコードには次の構文があります。
+Microsoft 365 の通常の SPF TXT レコードの構文は次のとおりです。
 
 ```text
 v=spf1 [<ip4>|<ip6>:<IP address>] [include:<domain name>] <enforcement rule>
@@ -152,9 +152,9 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
 
 - **ip4** は、IP バージョン 4 のアドレスを使用していることを示します。**ip6** は、IP バージョン 6 のアドレスを使用していることを示します。IPv6 の IP アドレスを使用している場合は、この記事の例の **ip4** を **ip6** に置き換えます。CIDR 表記を使用して IP アドレス範囲を指定することもできます (たとえば、**ip4:192.168.0.1/26**)。
 
-- _IP address_ は、SPF TXT レコードに追加する IP アドレスです。 通常、これは組織の送信メール サーバーの IP アドレスです。 複数の送信メール サーバーを一覧表示できます。 詳細については、「[例: 複数のオンプレミスの送信メール サーバーと Office 365 のための SPF TXT レコード](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)」をご覧ください。
+- _IP address_ は、SPF TXT レコードに追加する IP アドレスです。 通常、これは組織の送信メール サーバーの IP アドレスです。 複数の送信メール サーバーを一覧表示できます。 詳細については、「[例: 複数のオンプレミスメールサーバーと Microsoft 365 のための SPF TXT レコード](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)」を参照してください。
 
-- _domain name_ は、正当な送信者として追加するドメインです。 Office 365 に含める必要のあるドメイン名の一覧については、「 [SPF に必要な外部 DNS レコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)」を参照してください。
+- _domain name_ は、正当な送信者として追加するドメインです。 Microsoft 365 に含める必要のあるドメイン名の一覧については、「 [SPF に必要な外部 DNS レコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)」を参照してください。
 
 - 通常、強制ルールは次のいずれかです。
 
@@ -170,16 +170,16 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
 
     neutral を示します。SPF のテスト時に使用されます。実際の展開でこの修飾子を使用することはお勧めしません。
 
-### <a name="example-spf-txt-record-to-use-when-all-of-your-mail-is-sent-by-office-365"></a>例: すべてのメールを Office 365 で送信する場合に使用する SPF TXT レコード
+### <a name="example-spf-txt-record-to-use-when-all-of-your-mail-is-sent-by-microsoft-365"></a>例: Microsoft 365 によってすべてのメールが送信されるときに使用する SPF TXT レコード
 <a name="ExampleSPFNoSP"> </a>
 
-すべてのメールを Office 365 で送信する場合は、これを SPF TXT レコードで使用します。
+すべてのメールが Microsoft 365 によって送信される場合は、SPF TXT レコードで次のように使用します。
 
 ```text
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-office-365"></a>例: 1 つのオンプレミスの Exchange Server と Office 365 を使用したハイブリッド シナリオの SPF TXT レコード
+### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-microsoft-365"></a>例: 1 つの社内 Exchange サーバーと Microsoft 365 を使用したハイブリッドシナリオの SPF TXT レコード
 <a name="ExampleSPFHybridOneExchangeServer"> </a>
 
 ハイブリッド環境で、オンプレミスの Exchange Server の IP アドレスが 192.168.0.1 である場合、SPF の強制ルールを hard fail に設定するために、SPF TXT レコードを次のように形成します。
@@ -188,23 +188,23 @@ v=spf1 include:spf.protection.outlook.com -all
 v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ```
 
-### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-office-365"></a>例: 複数のオンプレミスの送信メール サーバーと Office 365 のための SPF TXT レコード
+### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365"></a>例: 複数のオンプレミスメールサーバーと Microsoft 365 のための SPF TXT レコード
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
-送信メールサーバーが複数ある場合は、SPF TXT レコードに各メールサーバーの IP アドレスを含め、各 IP アドレスをスペースで区切った後に "ip4:" ステートメントを続けます。 たとえば、次のようにします。
+送信メールサーバーが複数ある場合は、SPF TXT レコードに各メールサーバーの IP アドレスを含め、各 IP アドレスをスペースで区切った後に "ip4:" ステートメントを続けます。 以下に例を示します。
 
 ```text
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all
 ```
 
-## <a name="next-steps-set-up-spf-for-office-365"></a>次の手順: Office 365 に SPF をセットアップする
+## <a name="next-steps-set-up-spf-for-microsoft-365"></a>次の手順: Microsoft 365 用の SPF のセットアップ
 <a name="SPFNextSteps"> </a>
 
-SPF TXT レコードを形成した後は、「[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」にある手順に従って SPF TXT レコードをドメインに追加します。
+SPF TXT レコードを作成したら、「 [Microsoft 365 での spf のセットアップ](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」の手順に従って、スプーフィングがドメインに追加されるのを防ぐことができます。
 
-SPF は、スプーフィングを防止するために設計されていますが、SPF で防御できないスプーフィングの手法があります。 これらから保護するために、SPF をセットアップすると、Office 365 用に DKIM と DMARC も構成する必要があります。 始めるには「[DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)」をご覧ください。 次は、「[DMARC を使用して Office 365 でメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。
+SPF は、スプーフィングを防止するために設計されていますが、SPF で防御できないスプーフィングの手法があります。 これらを保護するために、SPF をセットアップした後は、Microsoft 365 の DKIM と DMARC も構成する必要があります。 開始するには、「 [DKIM を使用して、Microsoft 365 でカスタムドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)」を参照してください。 次に、「 [USE DMARC to validate email In Microsoft 365」](use-dmarc-to-validate-email.md)を参照してください。
 
-## <a name="troubleshooting-best-practices-for-spf-in-office-365"></a>トラブルシューティング:Office 365 における SPF のベスト プラクティス
+## <a name="troubleshooting-best-practices-for-spf-in-microsoft-365"></a>トラブルシューティング: Microsoft 365 での SPF のベストプラクティス
 <a name="SPFTroubleshoot"> </a>
 
 カスタム ドメインに作成できる SPF TXT レコードは 1 つのみです。複数のレコードを作成すると、ラウンド ロビン状況の原因となり、SPF が失敗します。これを避けるために、各サブドメインに対して個別にレコードを作成できます。たとえば、contoso.com に 1 つのレコードを作成し、bulkmail.contoso.com に別のレコードを作成します。
@@ -215,7 +215,7 @@ SPF は、スプーフィングを防止するために設計されています�
 
 - メッセージに必要な参照数が多すぎます。
 
-## <a name="avoiding-the-too-many-lookups-error-when-you-use-third-party-domains-with-office-365"></a>Office 365 でサードパーティのドメインを使用する場合の "参照が多すぎます" エラーを回避する
+## <a name="avoiding-the-too-many-lookups-error-when-you-use-third-party-domains-with-microsoft-365"></a>Microsoft 365 でサードパーティのドメインを使用する場合の "参照が多すぎます" エラーを回避する
 <a name="SPFTroubleshoot"> </a>
 
 サード パーティのドメインの SPF TXT レコードには、受信側のサーバーに多数の DNS 参照を実行するよう指示するものがあります。たとえば、この記事の執筆時には、Salesforce.com のレコードに 5 つの include ステートメントが含まれています。
@@ -246,6 +246,6 @@ nslookup を使用して、SPF TXT レコードなどの DNS レコードを表�
 ## <a name="for-more-information"></a>関連情報
 <a name="SPFTroubleshoot"> </a>
 
-SPF TXT レコードを追加するにはヘルプが必要ですか? Office 365 でのカスタムドメインでの Sender Policy Framework の使用法の詳細については、「[任意の dns ホスティング365プロバイダーで dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)する」を参照してください。 [スパム対策メッセージヘッダー](anti-spam-message-headers.md)には、Office 365 が SPF チェックに使用する構文とヘッダーフィールドが含まれています。
+SPF TXT レコードを追加するにはヘルプが必要ですか? 「Microsoft [365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)する」に記載されている、「microsoft 365 でのカスタムドメインを使用した Sender Policy Framework の使用に関する詳細情報」を参照してください。 [スパム対策メッセージヘッダー](anti-spam-message-headers.md)には、Microsoft 365 が SPF チェックに使用する構文とヘッダーフィールドが含まれています。
 
 

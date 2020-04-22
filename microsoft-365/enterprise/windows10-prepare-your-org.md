@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 9b83082a4dc859c10db03608de2edebdbb633cbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085526"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636665"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>手順 1: Windows 10 Enterprise を組織で展開するための準備
 
@@ -30,7 +30,8 @@ ms.locfileid: "42085526"
 - **ドメインの追加と確認が必要** <br>Microsoft 365 のサブスクリプションでは、末尾が onmicrosoft.com の既定のドメイン名が発行されます (例: contoso.onmicrosoft.com)。多くの組織は、所有するドメインを 1 つまたは複数使用して、メール アドレスの末尾に独自のドメイン名を使うことを希望します (username@contoso.com など)。独自のドメインを使うには Microsoft 365 へのドメインの追加と、所有確認が必要です。メールや Skype for Business などの Microsoft 365 サービスの設定を行うときに独自ドメインが利用できる状態にしておくために、すぐにドメインを追加して確認することをお勧めします。
 - **この時点でユーザーを追加する必要はありません** <br>Microsoft 365 サービスの使用または Microsoft 365 製品をインストールするには、ユーザーが Microsoft 365 のアカウントと製品ライセンスを持っている必要があります。Microsoft 365 にユーザーを追加する方法は、ユーザーの数とオンプレミスの Active Directory を現在所有しているかどうかにより異なります。Active Directory を持っていない (または Active Directory を持っているが Microsoft 365 と同期させたくない) 場合は、ユーザーを Microsoft 365 に直接追加し、個別または一括でライセンスの割り当てを行うことができます。<br>オンプレミスの Active Directory を持っている場合は、それを [Microsoft 365 と同期](identity-add-user-accounts.md#identity-sync)して、Microsoft 365 が利用するクラウド ディレクトリの Azure AD にユーザー アカウントを作成できます。この方法を使い、(SharePoint Online サイト コ レクションやドキュメントなどの) リソースへのアクセス許可の管理に使用するユーザーのアカウントとセキュリティ グループを作成できます。Active Directory を Microsoft 365 と同期してもユーザーにライセンスは割り当てられません。
 - **この時点でユーザーにライセンスを割り当てる必要はありません** <br>Microsoft 365 サービスの使用または Microsoft 365 ポータルからソフトウェアをインストールするには、ユーザーは製品のライセンスを持っている必要があります。グローバル管理またはユーザー管理の管理者は、Microsoft 365 の製品ライセンスを個別または一括で直接割り当てることができます。また、[グループベースのライセンス割り当て](identity-use-group-management.md#identity-group-license)を使い、ユーザーが特定のグループに追加されたときにライセンスが自動的に割り当てられるように設定できます。 
-- **Office 365 ProPlus は別にインストール** <br>Microsoft 365 のライセンスを入手しても、Office 365 ProPlus はクライアント コンピューターに自動的にインストールされません。詳細は「[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)」参照してください。 
+- **Microsoft 365 Apps for enterprise を別途インストールする** <br>
+  Microsoft 365 ライセンスを取得すると、Microsoft 365 Apps for enterprise がクライアントコンピューターに自動的にインストールされることはありません。 詳細については、「[フェーズ 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md) 」を参照してください。 
 
 ## <a name="set-windows-diagnostics-data-level"></a>Windows 診断データレベルを設定する
 
@@ -42,7 +43,7 @@ Microsoft では、診断データを使用して、マルウェアの傾向や�
 
 管理ポリシーを構成するときは、次の表に示す適切な値を使用します。
 
-| レベル | 収集されたデータ | 値 |
+| Level | 収集されたデータ | Value |
 |:--- |:--- |:--- |
 | セキュリティ | セキュリティデータのみ。 | .0 |
 | 基本 | セキュリティデータ、および基本的なシステムと品質のデータ。 | 1-d |

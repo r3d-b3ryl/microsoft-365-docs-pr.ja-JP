@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516811"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636222"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -28,7 +28,7 @@ Microsoft マネージドデスクトップは、今日の企業およびその�
 - 最新の IT 管理およびセキュリティプロセスの多くは、古く、時間がかかる、費用がかかります。
 - 企業は、デジタルインフラストラクチャを維持するのではなく、それぞれを一意に成功させることに重点を置いています。
 
-エンドユーザーは、Windows 10 および Office 365 ProPlus アプリの最新バージョン (以降) を利用して、合わせのデバイスとソフトウェアを使用し、最適なパフォーマンスと信頼性を得るために厳密にテストしています。 また、このソフトウェアを常に最新の状態に維持する必要はありません。これは、すべての手順で監視される慎重なロールアウトシーケンスに従って行われます。 また、登録済みデバイスは、技術およびセキュリティ上の問題について24時間365日に監視されるので、問題が発生した場合にヘルプが表示されます。
+エンドユーザーには、最新バージョンの Windows 10 アプリおよび Microsoft 365 Apps for enterprise apps (およびその他) があります。これには、合わせのデバイスとソフトウェアを使用し、最適なパフォーマンスと信頼性を得るために厳格にテストされています。 また、このソフトウェアを常に最新の状態に維持する必要はありません。これは、すべての手順で監視される慎重なロールアウトシーケンスに従って行われます。 また、登録済みデバイスは、技術およびセキュリティ上の問題について24時間365日に監視されるので、問題が発生した場合にヘルプが表示されます。
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに固有
@@ -111,4 +111,3 @@ Microsoft の管理されたデスクトップが組織に適している場合�
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

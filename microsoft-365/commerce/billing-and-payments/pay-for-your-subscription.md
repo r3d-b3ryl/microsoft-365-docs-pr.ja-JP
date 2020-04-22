@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 サブスクリプションを支払う
+title: サブスクリプションを支払う
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: 一般法人向け Office 365 サブスクリプションの支払いオプションについて説明します。
+description: Microsoft 365 for business サブスクリプションの支払いに使用できる支払いオプションについて説明します。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540905"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635018"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>一般法人向け Office 365 サブスクリプションを支払う
+# <a name="pay-for-your-subscription"></a>サブスクリプションを支払う
 
 サブスクリプションを設定するときに、クレジット カード支払い、銀行口座支払い、小切手または電子決済 (EFT) での請求書支払いを選ぶことができます。 ここで選択した支払い方法は、[支払い方法を変更](change-payment-method.md)しない限り、以降の請求期間に対して支払い方法として使用されます。
 
@@ -94,7 +94,7 @@ ms.locfileid: "43540905"
 サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったことを通知する電子メールが届きます。このメールには、請求明細書のコピーは含まれません。しかし、[請求明細書のコピーをメールで受け取る](#receive-a-copy-of-your-billing-statement-in-email)ことを選択することもできます。請求明細書には、支払いに関するオプションの詳細が記載されています。サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。請求明細書にアクセスする詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 > [!NOTE]
-> 既定により、組織の請求書は、組織のすべての全体管理者および課金管理者の Office 365 メール アドレスおよび連絡用電子メール アドレスに送信されます。 連絡用メール アドレスを変更する方法については、「[請求先住所を変更する](change-your-billing-addresses.md)」を参照してください。
+> 既定では、組織の請求通知は、組織内のすべてのグローバルおよび課金管理者の Microsoft 電子メールアドレスおよび連絡用電子メールアドレスに送信されます。 連絡用メール アドレスを変更する方法については、「[請求先住所を変更する](change-your-billing-addresses.md)」を参照してください。
 
 ### <a name="can-i-pay-my-bill-online"></a>オンラインで課金内容を支払うことができますか?
 

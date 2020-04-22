@@ -1,5 +1,5 @@
 ---
-title: Office 365 での自動調査および対応 (AIR)
+title: 自動化された調査と応答 (AIR)
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,28 +15,28 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air
-ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170954"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638550"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 での自動調査および対応 (AIR)
+# <a name="automated-investigation-and-response-air"></a>自動化された調査と応答 (AIR)
 
-セキュリティの警告がトリガーされたときに、そのような警告を確認し、組織を保護するための手順を実行することは、セキュリティ運用チームにかかっています。 場合によっては、セキュリティ運用チームが、トリガーされた通知の量に圧倒されることがあります。 Office 365 の自動化された調査と応答 (AIR) 機能を利用できます。 AIR により、セキュリティ運用チームがより効率的かつ効果的に運用できるようになります。 空気機能には、今日の既知の脅威への対応として、自動化された調査プロセスが含まれます。 適切な修復処置で承認を受けることができ、セキュリティ運用チームが検出された脅威に対応できるようになります。 
+セキュリティの警告がトリガーされたときに、そのような警告を確認し、組織を保護するための手順を実行することは、セキュリティ運用チームにかかっています。 場合によっては、セキュリティ運用チームが、トリガーされた通知の量に圧倒されることがあります。 自動化された調査と応答 (AIR) 機能が役立ちます。 AIR により、セキュリティ運用チームがより効率的かつ効果的に運用できるようになります。 空気機能には、今日の既知の脅威への対応として、自動化された調査プロセスが含まれます。 適切な修復処置で承認を受けることができ、セキュリティ運用チームが検出された脅威に対応できるようになります。 
 
-この記事では、エアの概要について説明します。 航空を使い始める準備ができたら、「 [Office 365 で脅威に自動的に調査して対応](office-365-air.md)する」を参照してください。
+この記事では、エアの概要について説明します。 AIR の使用を開始する準備ができたら、「[脅威に自動的に調査して応答する](office-365-air.md)」を参照してください。
 
 ## <a name="at-a-high-level"></a>高レベル
 
-アラートがトリガーされると、セキュリティのプレイブックが有効になります。 状況に応じて、自動化された[調査プロセス](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)を開始できます。 自動化された調査の最中および実行後に、[修復アクション](air-remediation-actions.md)をお勧めします。 Office 365 Advanced Threat Protection では、アクションは自動的には行われません。 セキュリティ運用チームは、各修復アクションをレビューし、[承認または拒否](air-review-approve-pending-completed-actions.md)します。この操作が完了すると、各調査が完了します。 これらのすべてのアクティビティは、Office 365 セキュリティ & コンプライアンスセンターで追跡および表示できます (「[調査の詳細を表示する](air-view-investigation-results.md#view-details-of-an-investigation)」を参照してください)。
+アラートがトリガーされると、セキュリティのプレイブックが有効になります。 状況に応じて、自動化された[調査プロセス](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)を開始できます。 自動化された調査の最中および実行後に、[修復アクション](air-remediation-actions.md)をお勧めします。 Office 365 Advanced Threat Protection では、アクションは自動的には行われません。 セキュリティ運用チームは、各修復アクションをレビューし、[承認または拒否](air-review-approve-pending-completed-actions.md)します。この操作が完了すると、各調査が完了します。 これらのすべてのアクティビティは、セキュリティ & コンプライアンスセンターで追跡および表示できます (「[調査の詳細を表示する](air-view-investigation-results.md#view-details-of-an-investigation)」を参照してください)。
 
 次のセクションでは、警告、セキュリティプレイブック、および動作の例の詳細について説明します。
 
 ## <a name="alerts"></a>アラート
 
-[アラート](../../compliance/alert-policies.md#viewing-alerts)は、セキュリティ運用チームのインシデント対応ワークフローに対するトリガーを表します。 すべての脅威に対処しつつ、優先的に調査するアラートのセットを適切に特定することは簡単ではありません。 アラートへの調査を手動で実行する場合、セキュリティ運用チームは脅威からのリスクでエンティティ (コンテンツ、デバイス、ユーザーなど) をハントして関連付けなければなりません。 このようなタスクやワークフローは、非常に時間がかかる場合があり、複数のツールやシステムが関係しています。 AIR、Microsoft Office 365 のセキュリティイベントに関する調査と応答は、重要なセキュリティおよび脅威管理の警告を使用して自動的にトリガーされるので、自動化されています。 
+[アラート](../../compliance/alert-policies.md#viewing-alerts)は、セキュリティ運用チームのインシデント対応ワークフローに対するトリガーを表します。 すべての脅威に対処しつつ、優先的に調査するアラートのセットを適切に特定することは簡単ではありません。 アラートへの調査を手動で実行する場合、セキュリティ運用チームは脅威からのリスクでエンティティ (コンテンツ、デバイス、ユーザーなど) をハントして関連付けなければなりません。 このようなタスクやワークフローは、非常に時間がかかる場合があり、複数のツールやシステムが関係しています。 AIR では、セキュリティイベントの調査と応答が自動化されています。キーセキュリティと脅威管理の警告を使用すると、セキュリティ応答プレイブックが自動的にトリガーされます。 
 
 現時点では、次の種類のアラートポリシーから生成されたアラートは、エアに対して自動的に調査されます。  
 
@@ -55,7 +55,7 @@ ms.locfileid: "43170954"
 > [!NOTE]
 > 情報通知は、既定では通知ビューに表示されません。 それらを表示するには、通知フィルターを変更して情報通知を含めます。
 
-アラート管理システム、サービス管理システム、またはセキュリティ情報およびイベント管理 (SIEM) システムを使用してセキュリティの警告を管理する組織では、電子メール通知または[office 365 Management ACTIVITY API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用して、そのシステムに office 365 の通知を送信できます。 メールまたは API 経由の調査アラート通知には、セキュリティ/コンプライアンス センターでアラートにアクセスするためのリンクが含まれているので、割り当てられているセキュリティ管理者は簡単に調査に移動できます。
+アラート管理システム、サービス管理システム、またはセキュリティ情報およびイベント管理 (SIEM) システムを使用してセキュリティ警告を管理する組織では、電子メール通知または[Office 365 Management ACTIVITY API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用して、そのシステムに通知を送信できます。 メールまたは API 経由の調査アラート通知には、セキュリティ/コンプライアンス センターでアラートにアクセスするためのリンクが含まれているので、割り当てられているセキュリティ管理者は簡単に調査に移動できます。
 
 ![調査にリンクされるアラート](../../media/air-alerts-page-details.png) 
 
@@ -75,7 +75,7 @@ ms.locfileid: "43170954"
 
 フェーズ1には、管理者によってトリガーされた電子メール調査のサポート ([脅威エクスプローラー](threat-explorer.md)を使用) も含まれています。
 
-フェーズ2が現在進行中で、次のプレイブックが**公開プレビュー**に含まれており、アクションに関する推奨事項と、問題を調査するセキュリティ管理者を支援します。
+現在進行中のフェーズ 2 では、次のプレイブックが **パブリック プレビュー**中です。処理に関する推奨事項が提供され、セキュリティ管理者が問題を調査するのに役立っています。　
 - ユーザーから報告された侵害の発生 (パブリック プレビュー)
 
 追加のプレイブックは、出来上がり次第公開されます。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap) にアクセスすると、準備中および近日公開予定のプレイブックを確認できます。
@@ -110,7 +110,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 - 同様の電子メールメッセージは、電子メールクラスター検索によって識別されます。
 - シグナルが [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) などの他のプラットフォームと共有されます。
 - 不審なメール メッセージ内の悪意のあるリンクをユーザーがクリックしたかどうかが判断されます。
-- ユーザーから報告されている類似したメッセージが他にもあるかどうかが、Microsoft Office 365 Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) および Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) 全体がチェックされます。
+- チェックは、Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) および Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) に対して実行され、ユーザーによって報告された他の類似メッセージがあるかどうかを確認します。
 - ユーザーに対する侵害があったかどうかがチェックされます。 このチェックは、Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)、および[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)の間の信号を活用して、関連するすべてのユーザーアクティビティの異常を関連付けます。 
 
 捜索フェーズでは、リスクと脅威がさまざまな捜索手順に割り当てられます。 
@@ -133,7 +133,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ## <a name="next-steps"></a>次の手順
 
-- [Office 365 で AIR の使用を開始する](office-365-air.md)
+- [空気の使用を開始する](office-365-air.md)
 
 - [Microsoft 365 ロードマップにアクセスして、近日公開予定の機能を確認する](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

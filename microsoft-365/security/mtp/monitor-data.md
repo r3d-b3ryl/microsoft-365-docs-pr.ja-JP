@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 271cd4d3379239073a6f16c5253fc26da87d8605
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084782"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637094"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのデータの監視とレポート
 
-**データ** カテゴリは、無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するために役立ちます。 これらは、既存の Office 365 DLP ポリシーレポートに加えて、サードパーティの DLP ポリシー一致レポートを作成したものです。
+**データ** カテゴリは、無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するために役立ちます。 既存の DLP ポリシーレポートの再作成と、サードパーティの DLP ポリシー一致レポートの再作成があります。
 
 次のことがわかります。
 

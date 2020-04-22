@@ -1,5 +1,5 @@
 ---
-title: Office 365 での電子メール保護の順序と優先順位
+title: 電子メール保護の順序と優先順位
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 の保護の適用順序、および保護ポリシーの優先度の値によって、どのポリシーが適用されるかを決定する方法について説明します。
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537415"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633968"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Office 365 での電子メール保護の順序と優先順位
+# <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
-Office 365 では、受信メールはによって評価されるため、複数の形式の保護 (マルウェア、スパム、フィッシングなど) を使用してフラグが付けられる場合があります。 このアクティビティがすべて与えられた場合、どのポリシーが適用されたかを判断するのが困難になることがあります。
+Microsoft 365 ユーザーとして、受信メールに複数の形式の保護によるフラグが設定されている場合があります。 たとえば、Microsoft 365 のすべてのお客様が利用できる組み込みの EOP フィッシング対策ポリシー、および Office 365 Advanced Threat Protection のお客様が利用できる、より堅牢な ATP のフィッシング対策ポリシーがあります。 メッセージも、マルウェア、スパム、フィッシングなどの複数の検出スキャンを通過します。このアクティビティがすべて与えられた場合、どのポリシーが適用されるかについて混乱が生じることがあります。
 
 一般に、メッセージに適用されるポリシーは、 **CAT (Category)** プロパティの**スパム対策**ヘッダー内で識別されます。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
@@ -35,7 +35,7 @@ Office 365 では、受信メールはによって評価されるため、複数
   |---|---|---|---|
   |**Priority**|**電子メール保護**|**カテゴリ**|**管理対象**|
   |1-d|マルウェア|CAT: 男性 W|[Office 365 でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
-  |2|フィッシング|CAT: PHSH|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |pbm-2|フィッシング|CAT: PHSH|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |1/3|高確度スパム|CAT: HSPM|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |4 |スプーフィング|CAT: スプーフィング|[Office 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)|
   |5 |スパム|CAT: SPM|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
@@ -56,7 +56,7 @@ Office 365 では、受信メールはによって評価されるため、複数
   |---|---|---|---|
   |**ATP のフィッシング対策ポリシー**|**Priority**|**ユーザー偽装**|**スプーフィング対策**|
   |ポリシー A|1-d|オン|オフ|
-  |ポリシー B|2|オフ|オン|
+  |ポリシー B|pbm-2|オフ|オン|
   |
 
 1. スプーフィングは、ユーザー偽装 (8) よりも優先度が高いため、メッセージはスプーフィングとしてマークされ、スプーフィングとして扱われます。

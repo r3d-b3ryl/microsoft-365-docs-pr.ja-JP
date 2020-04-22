@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: Office 365 での検疫は、潜在的に危険または不要なメッセージを保持します。 管理者とエンドユーザーは検疫にアクセスできます。
-ms.openlocfilehash: d3db036210886f7a4607f477bba2cf9f450ed90c
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+description: Microsoft 365 での検疫は、潜在的に危険または不要なメッセージを保持します。 管理者とエンドユーザーは検疫にアクセスできます。
+ms.openlocfilehash: 2e2a83bc2ff2d57cf3310e2cb17a656683dbed47
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230941"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634438"
 ---
-# <a name="quarantine-in-office-365"></a>Office 365 の検疫
+# <a name="quarantine-email-messages"></a>電子メールメッセージの検疫
 
-Exchange Online または exchange online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) のお客様の場合、Office 365 をご利用のお客様は、潜在的な危険または不要なメッセージを保持するために検疫を利用できます。
+Exchange Online または exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) のお客様のために、メールボックスが含まれる Microsoft 365 お客様は、潜在的な危険または望ましくないメッセージを保持するために検疫を利用できます。
 
 マルウェア対策ポリシーは、マルウェアが含まれて*いる添付ファイル*が見つかった場合に、自動的にメッセージを検疫します。 詳細については、「 [Office 365 でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」を参照してください。
 

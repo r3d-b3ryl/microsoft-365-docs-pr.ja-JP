@@ -1,5 +1,5 @@
 ---
-title: Office 365 に送信されるメールのトラブルシューティング
+title: Microsoft 365 に送信されるメールのトラブルシューティング
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: この資料では、Office 365 の受信トレイに電子メールを送信するときに生じる問題に関して送信者が参照できるトラブルシューティング情報と、Office 365 顧客に対するバルク メールのベスト プラクティスについて取り上げます。
-ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: この記事では、Microsoft 365 の受信トレイに電子メールを送信しようとしたときに問題が発生している送信者のトラブルシューティングに関する情報を提供し、顧客への一括メール送信のベストプラクティスを提供します。
+ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211909"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631147"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Office 365 に送信されるメールのトラブルシューティング
 
-この資料では、Office 365 の受信トレイに電子メールを送信するときに生じる問題に関して送信者が参照できるトラブルシューティング情報と、Office 365 顧客に対するバルク メールのベスト プラクティスについて取り上げます。
+この記事では、Microsoft 365 の受信トレイに電子メールを送信しようとしたときに問題が発生している送信者のトラブルシューティングに関する情報を提供し、顧客への一括メール送信のベストプラクティスを提供します。
 
 ## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Office 365 へのメール配信に関する一般的な問題のトラブルシューティング
 
@@ -47,7 +47,7 @@ ms.locfileid: "43211909"
 
 ### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>IP およびドメインの評価の管理者ですか
 
-EOP のフィルタリング テクノロジは、Microsoft Office 365 において、また Exchange Server、Microsoft Office Outlook、Windows Live メールなどの他の Microsoft 製品においてスパム対策保護機能を提供するように設計されています。Microsoft では SPF、DKIM、DMARC といった電子メール認証テクノロジも活用します。このことにより、電子メールを送信しているドメインにその操作を行う権限があるかどうかを検証することで、なりすましやフィッシング詐欺の問題に対応できるようになります。EOP フィルタリングは、送信元の IP、ドメイン、認証、配布リストの正確さ、苦情の割合、内容などに関連した多数の要因の影響を受けます。これらの中で、送信者の評価および電子メールの配信機能を低下させる主な要因の 1 つは、迷惑メールの苦情の割合です。
+EOP filtering technologies は、Microsoft 365 に加えて、Exchange Server、Microsoft Office Outlook、および Windows Live メールなどのその他の Microsoft 製品にスパム対策の保護を提供するように設計されています。 また、SPF、DKIM、DMARC も利用しています。電子メールを送信しているドメインが許可されていることを確認することによって、スプーフィングやフィッシングの問題に対処するための電子メール認証テクノロジ。 EOP のフィルター処理は、送信 IP、ドメイン、認証、リストの正確さ、苦情率、コンテンツなどに関連するいくつかの要因によって影響を受けます。 これらのうちの1つとして、送信者の評判と電子メールを配信する機能についての重要な要因の1つとして、迷惑メールの苦情率があります。
 
 ### <a name="are-you-sending-email-from-new-ip-addresses"></a>新しい IP アドレスから電子メールを送信していますか
 
@@ -79,7 +79,7 @@ DNS 逆引き参照を行えない送信者からの電子メールは受け付�
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-この一覧から削除を要求するには、[リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)という操作を実行できます。
+この一覧から削除を要求するには、[リストから除外ポータルを使用して、受信拒否リストから自分自身を削除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)します。
 
 ### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>送信した電子メールが、受信側の EOP の迷惑メール フォルダーに分類される
 
@@ -112,9 +112,9 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 
  Microsoft ユーザーからのメッセージを受信するには、ご使用のネットワークが Microsoft データセンター内で EOP が使用している IP アドレスからの接続を許可していることを確認してください。 詳細については、「 [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
 
-## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Office 365 ユーザーへのバルク メールのベスト プラクティス
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Microsoft 365 ユーザーに一括メール送信するためのベストプラクティス
 
-Office 365 ユーザーにバルク メール キャンペーンを頻繁に行い、電子メールが正常かつタイムリーに到着するようにしたい場合、このセクションのヒントに従ってください。
+多くの場合、電子メールキャンペーンを Microsoft 365 ユーザーに対して実行し、電子メールが安全かつタイムリーに到着するようにするには、このセクションのヒントに従います。
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>メッセージを送信している [送信元] の名前が反映されていることを確認する
 

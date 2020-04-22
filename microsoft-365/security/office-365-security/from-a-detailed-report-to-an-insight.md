@@ -17,16 +17,16 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、詳細レポートから洞察に移動する方法について説明します。
-ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8d56886a39e14eddd5ad6505a4fe68e20fc6a543
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086214"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638084"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>ウォークスルー - 詳細レポートからインサイトへの移動
 
-[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと洞察](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、詳細レポートから洞察や推奨される操作まで、どのように簡単に移動できるかを確認するのに役立つ場合があります。 
+[セキュリティ&amp; /コンプライアンスセンターのレポートと洞察](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、詳細レポートから洞察や推奨されるアクションまで、詳細レポートから簡単に移動する方法を確認するのに役立つ場合があります。 
   
 これは、セキュリティ&amp;コンプライアンスセンターのいくつかのチュートリアルの1つです。 その他のチュートリアルについては、「[関連項目](#related-topics)」セクションを参照してください。 
   

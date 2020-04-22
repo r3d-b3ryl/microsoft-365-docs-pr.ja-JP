@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928986"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633509"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>デバイスとメール全体で脅威を捜索する
 
@@ -31,7 +31,7 @@ ms.locfileid: "42928986"
 
 
 
-[Microsoft Threat Protection](advanced-hunting-overview.md) の高度な捜索を使用すると、Windows デバイスおよび Office 365 メール全体で積極的に脅威を捜索できます。 デバイスとメールの両方を対象としたクエリの作成方法を検討する上で役立つ捜索シナリオとサンプル クエリをいくつか紹介します。
+Microsoft の脅威保護で[高度な](advanced-hunting-overview.md)検索を使用すると、Windows デバイスと Microsoft 電子メールを介して脅威を事前に確認できます。 デバイスとメールの両方を対象としたクエリの作成方法を検討する上で役立つ捜索シナリオとサンプル クエリをいくつか紹介します。
 
 ## <a name="obtain-user-accounts-from-email-addresses"></a>メール アドレスからユーザー アカウントを取得する
 [デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。 これを行うには、メール アドレスからの *local-host* を使用します。

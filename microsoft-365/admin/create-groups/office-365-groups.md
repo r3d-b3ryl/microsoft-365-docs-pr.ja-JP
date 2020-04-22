@@ -1,5 +1,5 @@
 ---
-title: 管理者向け Office 365 グループの概要
+title: 管理者向け Microsoft 365 グループの概要
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Office 365 グループについて説明します。
-ms.openlocfilehash: c45c78a26d421c5c16e6ca0769e8adc7ba6e79a8
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: Microsoft 365 グループについて説明します。
+ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547546"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630045"
 ---
-# <a name="overview-of-office-365-groups-for-administrators"></a>管理者向け Office 365 グループの概要
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
-Office 365 グループは、Microsoft 365 全体のすべてのチームワークを駆動する基本メンバーシップサービスです。 Office 365 グループを使用すると、ユーザーのグループに、それらのユーザーが共有するコラボレーションリソースのコレクションへのアクセス権を与えることができます。 これらのリソースは次のとおりです。
+Microsoft 365 グループは、Microsoft 365 全体のすべてのチームワークを駆動する基本メンバーシップサービスです。 Microsoft 365 グループを使用すると、ユーザーのグループに、それらのユーザーが共有するコラボレーションリソースのコレクションへのアクセス権を与えることができます。 これらのリソースは次のとおりです。
 
 - 共有の Outlook 受信トレイ
 - 共有の予定表
@@ -39,9 +39,9 @@ Office 365 グループは、Microsoft 365 全体のすべてのチームワー�
 - チーム (グループが Teams から作成された場合)
 - ロードマップ (web のプロジェクトがある場合)
 
-Office 365 グループでは、これらのリソースに対するアクセス許可を手動で割り当てる必要はありません。グループにユーザーを追加すると、グループが提供するツールに必要なアクセス許可が自動的に割り当てられるためです。
+Microsoft 365 グループでは、これらのリソースに対するアクセス許可を手動で割り当てる必要はありません。グループにユーザーを追加すると、そのグループが提供するツールに必要なアクセス許可が自動的に与えられるためです。
 
-[グループの作成を特定のユーザーに制限しない](manage-creation-of-groups.md)限り、Office 365 ユーザーはグループを作成できます。 グループの作成を制限すると、グループを作成できないユーザーは、SharePoint サイト、Planners、またはチームを作成できなくなります。 これらのサービスでは、グループを作成できるようにするためにユーザーを作成する必要があります。 ユーザーがグループのメンバーである場合は、Planner でタスクを作成したり、Teams チャットを使用したりするなど、グループのアクティビティに参加できます。
+グループの作成を[特定のユーザーのセットに制限](manage-creation-of-groups.md)しない限り、任意のユーザーがグループを作成できます。 グループの作成を制限すると、グループを作成できないユーザーは、SharePoint サイト、Planners、またはチームを作成できなくなります。 これらのサービスでは、グループを作成できるようにするためにユーザーを作成する必要があります。 ユーザーがグループのメンバーである場合は、Planner でタスクを作成したり、Teams チャットを使用したりするなど、グループのアクティビティに参加できます。
 
 グループの役割は次のとおりです。
 
@@ -59,15 +59,15 @@ Office 365 グループでは、これらのリソースに対するアクセス
 - [グループへのゲスト アクセスの管理](manage-guest-access-in-groups.md)
 - [削除したグループの復元](restore-deleted-group.md) (削除から 30 日以内)
 
-Office 365 グループのライフサイクルの管理方法をさらに自動化する場合は、有効期限ポリシーを使用して、特定の時間間隔でグループを期限切れにすることができます。 グループの所有者は、グループが期限切れになる 30、15、1 日前に電子メールを受け取ります。これにより、グループがまだ必要な場合は、所有者は簡単に更新することができます。 「[Office 365 グループの有効期限ポリシー](office-365-groups-expiration-policy.md)」を参照してください。
+Microsoft 365 グループのライフサイクルの管理方法をさらに自動化する場合は、有効期限ポリシーを使用して、特定の時間間隔でグループを期限切れにすることができます。 グループの所有者は、グループが期限切れになる 30、15、1 日前に電子メールを受け取ります。これにより、グループがまだ必要な場合は、所有者は簡単に更新することができます。 「 [Microsoft 365 グループ有効期限ポリシー](office-365-groups-expiration-policy.md)」を参照してください。
 
 グループは、Microsoft 365 管理センターから、または [PowerShell を使用](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)して管理できます。
 
-大規模企業など、多数のユーザーがいる場合は、さまざまな目的でグループを作成するユーザーが多数存在する可能性があります。 ベストプラクティスについては、「[Office 365 グループでのガバナンスを計画する](plan-for-groups-governance.md)」を参照することを強くお勧めします。
+大規模企業など、多数のユーザーがいる場合は、さまざまな目的でグループを作成するユーザーが多数存在する可能性があります。 ベストプラクティスについては、「 [Microsoft 365 グループのガバナンスの計画」](plan-for-groups-governance.md)を参照することを強くお勧めします。
 
 ## <a name="group-limits"></a>グループの制限
 
-Office 365 グループには、次の制限が適用されます。
+Microsoft 365 グループには、次の制限が適用されます。
 
 |最大...|値|
 |:---------|:----|
@@ -79,20 +79,20 @@ Office 365 グループには、次の制限が適用されます。
 |ファイルの記憶域|各サブスクライブ ユーザーに 1 TB + 10 GB と、購入した追加記憶域。 追加の記憶域は無制限で購入できます。|
 |グループ メールボックスのサイズ|50 GB|
 
-Office 365 組織が持つことができる Office 365 グループの既定の最大数は50万ですが、要求によって増やすことができます。 Office 365 グループの制限の詳細については、「 [office 365 groups-管理者向けヘルプ](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)」を参照してください。
+組織に割り当てることができる Microsoft 365 グループの既定の最大数は50万ですが、要求によって増やすことができます。 Microsoft 365 Groups の制限の詳細については、「 [microsoft 365 のグループ-管理者向けヘルプ](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)」を参照してください。
 
-グループの使用に関する操作可能な情報を持っている場合は、Office 365 グループの管理がより効果的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については、「[管理センターの Office 365 レポート](../activity-reports/office-365-groups.md)」を参照してください。
+グループの使用に関する操作可能な情報を持っている場合は、Microsoft 365 グループを管理する方が効率的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については[、「管理センターの Microsoft 365 レポート](../activity-reports/office-365-groups.md)」を参照してください。
 
-## <a name="which-office-365-plans-include-groups"></a>どの Office 365 プランにグループが含まれていますか?
+## <a name="which-microsoft-365-plans-include-groups"></a>どの Microsoft 365 プランにグループが含まれていますか?
 
-Exchange Online と SharePoint Online を備えた Office 365 サブスクリプションでは、グループをサポートします。 このサブスクリプションには、Business Essentials プランと Business Premium プラン、Enterprise E1、E3、E5 プランが含まれます。 グループは、グループ (グループの "開催者" とも呼ばれます) を作成したユーザーのライセンスを受け取ります。 グループに含める任意の機能について、開催者が適切なライセンスを持っている限り、そのライセンスはグループに伝達されます。
+Exchange Online および SharePoint Online を備えた Microsoft 365 サブスクリプションは、グループをサポートします。 このサブスクリプションには、Business Essentials プランと Business Premium プラン、Enterprise E1、E3、E5 プランが含まれます。 グループは、グループ (グループの "開催者" とも呼ばれます) を作成したユーザーのライセンスを受け取ります。 グループに含める任意の機能について、開催者が適切なライセンスを持っている限り、そのライセンスはグループに伝達されます。
 
 > [!NOTE]
-> Office 365 サービスファミリおよびプランの詳細については、「 [office 365 プランオプション](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)」を参照してください。
+> Microsoft 365 サービスファミリおよびプランの詳細については、「 [microsoft 365 プランオプション](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)」を参照してください。
 
 Exchange のみのプランを使用している場合でも、Outlook で共有の受信トレイと共有の予定表機能を取得することはできますが、ドキュメントライブラリ、Planner、その他の機能は取得できません。
 
-Office 365 グループは、Azure Active Directory (AAD) で動作します。 取得するグループ機能は、使用している Azure Active Directory サブスクリプション、およびグループの開催者に割り当てられているライセンスによって異なります。
+Microsoft 365 グループは、Azure Active Directory (AAD) で動作します。 取得するグループ機能は、使用している Azure Active Directory サブスクリプション、およびグループの開催者に割り当てられているライセンスによって異なります。
 
 > [!IMPORTANT]
 > すべてのグループ機能について、Azure AD Premium サブスクリプションを所有している場合、ユーザーは AAD P1 ライセンスが割り当てられているかどうかにかかわらず、グループに参加できます。 ライセンスは適用されません。
@@ -100,10 +100,10 @@ Office 365 グループは、Azure Active Directory (AAD) で動作します。 
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 グループの詳細](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Microsoft 365 グループについて](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[配布リストを Office 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
+[配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-[PowerShell で Office 365 グループを管理する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [SharePoint Online の制限](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

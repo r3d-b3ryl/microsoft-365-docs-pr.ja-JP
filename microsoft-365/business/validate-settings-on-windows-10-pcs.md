@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Microsoft 365 Business app protection の設定がユーザーの Windows 10 デバイスで有効にされたことを確認する方法について説明します。
-ms.openlocfilehash: 47977f8d79eb6dbb2f4d087af8f8ad7da4313c61
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 for business アプリの保護設定がユーザーの Windows 10 デバイスで有効になっていることを確認する方法について説明します。
+ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560682"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635706"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でデバイス保護設定を検証する
 
@@ -38,7 +38,7 @@ ms.locfileid: "42560682"
 
 [デバイス ポリシーを設定](protection-settings-for-windows-10-pcs.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは Windows 10 デバイスで windows Update および Windows Defender ウイルス対策の設定を変更できないため、多くのオプションが灰色表示されます。
   
-1. [**設定**\>**更新&amp;セキュリティ** **** \> **** Windows update の再起動オプション] に移動し、すべての設定が淡色表示になっていることを確認します。 \> 
+1. [**設定**\>**更新&amp;セキュリティ** **Windows Update** \> **Restart options** Windows update の再起動オプション] に移動し、すべての設定が淡色表示になっていることを確認します。 \> 
     
     ![すべての再起動オプションが淡色表示されます。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
@@ -60,11 +60,11 @@ ms.locfileid: "42560682"
   
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 Business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Microsoft 365 Business を使い始める](microsoft-365-business-overview.md)
+[Microsoft 365 for business の使用を開始する](microsoft-365-business-overview.md)
   
-[Microsoft 365 Business の管理](manage.md)
+[Microsoft 365 for business の管理](manage.md)
   
 [Windows 10 の PC のデバイス構成を設定する](protection-settings-for-windows-10-pcs.md)
   

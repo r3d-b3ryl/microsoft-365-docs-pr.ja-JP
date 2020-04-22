@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: '概要: 以下の手順を使用して、分離した SharePoint Online チーム サイトを管理します。'
-ms.openlocfilehash: 59c86c869ed38c3e64ff19974660cf96ec4c715e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5fe92f2653774b40eb227c9f8cbb57443fd51e2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599004"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635390"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの管理
 
@@ -37,9 +37,9 @@ ms.locfileid: "41599004"
     
 - 表示:サイト ビューアーのアクセス グループにユーザー アカウントを追加する
     
-Active Directory ドメインサービス (AD DS) を使用してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なアクセスグループに適切なユーザーを追加し、Office 365 との同期を待機します。認証.
+Active Directory ドメインサービス (AD DS) を使用してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なアクセスグループに適切なユーザーを追加し、サブスクリプションとの同期を待機します。
   
-Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは Microsoft PowerShell を使用できます。
+Microsoft 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは Microsoft PowerShell を使用できます。
   
 - Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なアクセスグループに適切なユーザーを追加します。
     
@@ -69,7 +69,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 - 表示:サイト ビューアーのアクセス グループにグループを追加する
     
-AD DS を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なグループに適切なグループを追加し、Office 365 サブスクリプションとの同期を待機します。
+AD DS を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なグループに適切なグループを追加し、サブスクリプションとの同期を待機します。
   
 Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
   
@@ -94,7 +94,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
     
 - 表示:サイト ビューアーのアクセス グループからユーザー アカウントを削除する
     
-AD DS を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なアクセスグループから適切なユーザーを削除し、Office 365 サブスクリプションとの同期を待機します。
+AD DS を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なアクセスグループから適切なユーザーを削除し、サブスクリプションとの同期を待機します。
   
 Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
   
@@ -127,7 +127,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
     
 - 表示:サイト ビューアーのアクセス グループからグループを削除する
     
-Windows Server Active Directory を使用してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なアクセスグループから適切なグループを削除し、Office 365 との同期を待機します。認証.
+Windows Server Active Directory を使用してユーザーアカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なアクセスグループから適切なグループを削除し、サブスクリプションとの同期を待機します。
   
 Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
   
@@ -148,7 +148,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 カスタムのアクセス許可を持つドキュメントのサブフォルダーを作成するには、以下のことを行います。
   
-1. サイト管理者のアクセス グループのメンバーであるアカウントを使用して Office 365 にサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. サイトの管理者アクセスグループのメンバーであるアカウントにサインインします。 ヘルプについては、「 [Microsoft 365 へのサインインの場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. 分離したチーム サイトに移動し、 **[ドキュメント]** をクリックします。
     

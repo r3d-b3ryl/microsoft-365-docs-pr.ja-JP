@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business で保護されたデバイスを管理する
+title: Microsoft 365 for business で保護されたデバイスを管理する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,14 +27,14 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 保護ポリシーを介して管理されるデバイスから会社のデータを削除する方法と、Windows 10 デバイスを出荷時の設定にリセットする方法について説明します。
-ms.openlocfilehash: 97c9751d020d7f2aecb1e64718721c1ca25189e1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 180887dca3226512ab558e98d2b5a78da3521e53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561522"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634290"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business"></a>Microsoft 365 Business で保護されたデバイスを管理する
+# <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Microsoft 365 for business で保護されたデバイスを管理する
 
 ユーザーが自分のデバイスを組織に接続した後、デバイス上のデバイスまたは Office アプリにサインインすることによって、設定したポリシーでデバイスを保護することができます。 [**デバイス**] ページに、接続されているデバイスが一覧表示されます。 デバイスが紛失または盗難にあった場合、このページから管理して、会社のデータを削除することができます。 また、Windows 10 デバイスを出荷時の設定にリセットして、カスタム設定を消去することもできます。 
 

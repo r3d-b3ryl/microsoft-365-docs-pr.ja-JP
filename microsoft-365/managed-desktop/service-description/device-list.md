@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 354845e3bfebee5e6c67b53ba5ef6f55a9c419f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198363"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637878"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -75,7 +75,6 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 - 詳細については、Dell devices contact <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>を参照してください。
 
 - HP デバイスとデバイスの注文手順に関する詳細については、「南北アメリカ (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>)」を参照してください。ヨーロッパ/中東/アフリカ (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>);アジア太平洋地域/日本 (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>);グローバル (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
-
 
 
 

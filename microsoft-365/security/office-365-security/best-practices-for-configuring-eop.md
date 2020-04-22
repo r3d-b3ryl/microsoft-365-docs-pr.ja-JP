@@ -1,5 +1,5 @@
 ---
-title: EOP および Office 365 ATP を構成するためのベストプラクティス
+title: EOP および ATP を構成するためのベストプラクティス
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベスト プラクティス推奨に従って正しく設定し、一般的な構成エラーを防止してください。
-ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 69d069377a061c440c22b7a00dd43795597c50e9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528619"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638538"
 ---
-# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>EOP および Office 365 ATP を構成するためのベストプラクティス
+# <a name="best-practices-for-configuring-eop-and-atp"></a>EOP および ATP を構成するためのベストプラクティス
 
 Exchange Online Protection (EOP) のベスト プラクティス推奨に従って正しく設定し、一般的な構成エラーを防止してください。 このトピックでは、セットアップ プロセスが既に完了したことを前提としています。 まだ EOP の設定が完了していない場合は、「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照してください。
 
@@ -41,7 +41,7 @@ Exchange Online Protection (EOP) のベスト プラクティス推奨に従っ�
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|
-|[スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|はい|はい||
+|[スプーフィングを防止するために SPF をセットアップする](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|はい|はい||
 |[DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)|はい|はい||
 |[DMARC を使用して Office 365 で電子メールを検証する](use-dmarc-to-validate-email.md)|はい|はい|Action = [標準] の場合は [検疫] を、厳密には action = reject を使用します。|
 |レポートメッセージのアドオンを展開して、疑わしいメールのエンドユーザーのレポートを向上させる|はい|はい||
@@ -63,7 +63,7 @@ Exchange Online Protection (EOP) のベスト プラクティス推奨に従っ�
 
 ## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>誤検知と誤否定を Microsoft に報告する
 
-すべてのユーザーのサービスでスパムフィルター処理を改善するために、誤検知 (不良としてマークされている良好な電子メール) と誤検知 (無効な電子メールが許可されている) を分析のために Microsoft に報告する必要があります。 詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+すべてのユーザーのサービスでスパムフィルター処理を改善するために、誤検知 (不良としてマークされている良好な電子メール) と誤検知 (無効な電子メールが許可されている) を分析のために Microsoft に報告する必要があります。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="create-mail-flow-rules"></a>メール フロー ルールを作成する
 

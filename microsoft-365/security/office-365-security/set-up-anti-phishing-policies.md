@@ -1,5 +1,5 @@
 ---
-title: フィッシング対策ポリシー
+title: フィッシング詐欺対策ポリシー
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の「Exchange Online Protection (EOP)」および「advanced ATP フィッシング対策ポリシー」の基本的なフィッシング対策ポリシーについて説明します。
-ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537475"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638358"
 ---
-# <a name="anti-phishing-policies-in-office-365"></a>Office 365 のフィッシング対策ポリシー
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
 フィッシング対策保護設定を構成するポリシーは、exchange Online メールボックスを使用しない Office 365 組織、および exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (ATP) 組織で利用できます。
 
@@ -34,13 +34,13 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
 
 ATP のフィッシング対策ポリシーには、組み込みの既定のフィッシング対策ポリシーが組み込まれており、追加のカスタム ATP フィッシング対策ポリシーを作成できます。
 
-Exchange online メールボックスを使用しない Exchange online メールボックスまたはスタンドアロンの Exchange Online Protection (EOP) 組織を使用している他の Office 365 組織には、既定のフィッシング対策ポリシーが組み込まれていますが、追加のポリシーを作成することはできません。 Exchange Online メールボックスを使用している組織のみが、既定のフィッシング対策ポリシーを変更できます。
+Exchange online メールボックスを使用しない exchange online メールボックスまたはスタンドアロンの Exchange Online Protection (EOP) 組織を使用している他の Microsoft 365 組織には、既定のフィッシング対策ポリシーが組み込まれていますが、追加のポリシーを作成することはできません。 Exchange Online メールボックスを使用している組織のみが、既定のフィッシング対策ポリシーを変更できます。
 
 次の表では、フィッシング対策ポリシーと ATP のフィッシング対策ポリシーの大まかな違いについて説明します。
 
 ||||
 |---|:---:|:---:|
-|**機能**|**フィッシング対策ポリシー**|**ATP のフィッシング対策ポリシー**|
+|**機能**|**フィッシング詐欺対策ポリシー**|**ATP のフィッシング対策ポリシー**|
 |自動的に作成される既定のポリシー|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |カスタムポリシーを作成する||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |ポリシー設定<sup>\*</sup>||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -55,30 +55,30 @@ Exchange online メールボックスを使用しない Exchange online メー�
 
 - [EOP でフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)
 
-- [Office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)
+- [Microsoft 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)
 
 このトピックの残りの部分では、EOP および ATP のフィッシング対策ポリシーで使用可能な設定について説明します。
 
 ## <a name="spoof-settings"></a>スプーフィング設定
 
-スプーフィングとは、電子メールメッセージの差出人アドレス (電子メールクライアントに表示される送信者アドレス) が電子メールソースのドメインと一致しない場合です。 スプーフィングの詳細については、「 [Office 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
+スプーフィングとは、電子メールメッセージの差出人アドレス (電子メールクライアントに表示される送信者アドレス) が電子メールソースのドメインと一致しない場合です。 スプーフィングの詳細については、「 [Microsoft 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
 
 フィッシング対策ポリシーおよび ATP のフィッシング対策ポリシーでは、次のスプーフィング設定を使用できます。
 
-- **スプーフィング防止保護**: スプーフィング対策保護を有効または無効にします。 有効にしておくことをお勧めします。 **スプーフィングインテリジェンスポリシー**を使用して、特定のスプーフィングされた内部および外部の送信者を許可またはブロックします。 詳細については、「 [Configure スプーフ知能 In Office 365](learn-about-spoof-intelligence.md)」を参照してください。
+- **スプーフィング防止保護**: スプーフィング対策保護を有効または無効にします。 有効にしておくことをお勧めします。 **スプーフィングインテリジェンスポリシー**を使用して、特定のスプーフィングされた内部および外部の送信者を許可またはブロックします。 詳細については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
 
   > [!NOTE]
-  > スプーフィングの設定は、既定では EOP の既定のフィッシング対策ポリシー、既定の ATP のフィッシング対策ポリシー、および作成した新しいカスタムの ATP のフィッシング対策ポリシーで有効になっています。 <br/><br/> MX レコードが Office 365 を指していない場合は、スプーフィング対策保護を無効にする必要はありません。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
+  > スプーフィングの設定は、既定では EOP の既定のフィッシング対策ポリシー、既定の ATP のフィッシング対策ポリシー、および作成した新しいカスタムの ATP のフィッシング対策ポリシーで有効になっています。 <br/><br/> MX レコードが Microsoft 365 をポイントしていない場合は、スプーフィング防止保護を無効にする必要はありません。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
   スプーフィングされた送信者からのメッセージでは、メッセージに対して実行するアクションを指定することもできます。
 
-  - **[迷惑メールフォルダーにメッセージを移動する**]: これが既定値です。 メッセージがメールボックスに配信され、迷惑メールフォルダーに移動されます。 Exchange Online では、メールボックスで迷惑メールルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定で有効になっています)。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+  - **[迷惑メールフォルダーにメッセージを移動する**]: これが既定値です。 メッセージがメールボックスに配信され、迷惑メールフォルダーに移動されます。 Exchange Online では、メールボックスで迷惑メールルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定で有効になっています)。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
   - **メッセージを検疫**する: 目的の受信者ではなく、検疫にメッセージを送信します。 検疫の詳細については、以下のトピックを参照してください。
 
-    - [Office 365 の検疫](quarantine-email-messages.md)
-    - [Office 365 の管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md)
-    - [Office 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 での検疫](quarantine-email-messages.md)
+    - [Microsoft 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
+    - [Microsoft 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
 - **認証**されていない送信者: Outlook での未識別の送信者識別を有効または無効にします。 具体的には次のとおりです。
 
@@ -88,7 +88,7 @@ Exchange online メールボックスを使用しない Exchange online メー�
 
   特定の送信者からのメッセージにこれらの識別子が追加されないようにするには、次のオプションを使用できます。
 
-  - スプーフィングインテリジェンスポリシーで、送信者にスプーフィングすることを許可します。 手順については、「 [Configure スプーフ知能 In Office 365](learn-about-spoof-intelligence.md)」を参照してください。
+  - スプーフィングインテリジェンスポリシーで、送信者にスプーフィングすることを許可します。 手順については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
 
   - 送信者ドメインの[電子メール認証を構成](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)します。
   
@@ -118,7 +118,7 @@ Exchange online メールボックスを使用しない Exchange online メー�
 
   - **受信者は**、組織内の1つ以上のメールボックス、メールユーザー、またはメール連絡先です。
   - **受信者が**組織内の1つまたは複数のグループのメンバーである。
-  - **受信者のドメインは、** Office 365 に構成された1つ以上の承認済みドメインです。
+  - **受信者のドメインは、** Microsoft 365 で構成された1つ以上の承認済みドメインです。
 
   - 例外を**除く**: ルールの例外。 設定と動作は、次の条件とまったく同じです。
 
@@ -152,13 +152,13 @@ Exchange online メールボックスを使用しない Exchange online メー�
 
   - **他の電子メールアドレスへのメッセージのリダイレクト**: 目的の受信者の代わりに、指定された受信者にメッセージを送信します。
 
-  - **[迷惑メールフォルダーにメッセージを移動する**]: メッセージはメールボックスに配信され、迷惑メールフォルダーに移動されます。 Exchange Online では、メールボックスで迷惑メールルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定で有効になっています)。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+  - **[迷惑メールフォルダーにメッセージを移動する**]: メッセージはメールボックスに配信され、迷惑メールフォルダーに移動されます。 Exchange Online では、メールボックスで迷惑メールルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定で有効になっています)。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
     - **メッセージを検疫**する: 目的の受信者ではなく、検疫にメッセージを送信します。 検疫の詳細については、以下のトピックを参照してください。
 
-    - [Office 365 の検疫](quarantine-email-messages.md)
-    - [Office 365 の管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md)
-    - [Office 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 での検疫](quarantine-email-messages.md)
+    - [Microsoft 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
+    - [Microsoft 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
   - **メッセージを配信し、その他のアドレスを Bcc 行に追加**します。メッセージを目的の受信者に配信し、メッセージを指定された受信者に通知せずに配信します。
 
@@ -172,7 +172,7 @@ Exchange online メールボックスを使用しない Exchange online メー�
 
 - **メールボックスインテリジェンス**: 頻繁に使用する連絡先とユーザーの電子メールのパターンを決定する人工知能 (AI) を有効または無効にします。 この設定により、AI は、これらの連絡先からの正当な電子メールとスプーフィングされたメールを区別します。 メールボックスインテリジェンスは、Exchange Online メールボックスに対してのみ使用できます。
 
-- **メールボックスインテリジェンスベースの偽装保護**: 各ユーザーの個々の送信者マップに基づいて、強化された偽装結果を有効または無効にします。 このインテリジェンスにより、Office 365 は、ユーザー偽装検出をカスタマイズし、誤検知を適切に処理することができます。 ユーザー偽装が検出された場合、メッセージに対して実行する特定のアクションを定義できます。
+- **メールボックスインテリジェンスベースの偽装保護**: 各ユーザーの個々の送信者マップに基づいて、強化された偽装結果を有効または無効にします。 このインテリジェンスにより、Microsoft 365 はユーザー偽装検出をカスタマイズし、誤検知を適切に処理することができます。 ユーザー偽装が検出された場合、メッセージに対して実行する特定のアクションを定義できます。
 
   - **どの操作も適用しない**
   - **他の電子メールアドレスへのメッセージのリダイレクト**

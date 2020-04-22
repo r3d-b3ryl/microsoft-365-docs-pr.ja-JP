@@ -25,17 +25,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Microsoft 365 Business のセットアップ手順、サブスクライブ、ドメインとユーザーの追加、セキュリティポリシーの設定などについて説明します。
-ms.openlocfilehash: 9bb536b52981966f6c4c487f8400577b896261e0
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 Business Premium のセットアップ手順、サブスクライブ、ドメインおよびユーザーの追加、セキュリティポリシーの設定などについて説明します。
+ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561210"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633357"
 ---
 # <a name="overview-of-setup"></a>セットアップの概要
 
-Microsoft 365 Business のセットアップに関する短いビデオをご覧ください。<br><br>
+Microsoft 365 Business Premium セットアップに関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
@@ -66,18 +66,18 @@ Microsoft 365 Business のセットアップに関する短いビデオをご覧
 
 開始するには、「[脅威保護を強化](increase-threat-protection.md)する」と「[コンプライアンス機能をセットアップ](set-up-compliance.md)する」を参照してください。
 
-セキュリティに関するベストプラクティスのロードマップについては[、Microsoft 365 Business をセキュリティで保護するための10のトップの方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)も参照してください。
+セキュリティに関するベストプラクティスのロードマップについては[、Microsoft 365 Business Premium をセキュリティで保護する](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)ための10のトップの方法も参照してください。
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>手順 3: Windows 10 デバイスをセットアップおよび管理する
 
 セットアップウィザードを実行した後は、組織内のすべての Windwos 10 コンピューターを使用する必要があります。
   
-- Windows 10 Pro は Microsoft 365 Business の[前提条件](pre-requisites-for-data-protection.md)ですが、Windows 7 Pro、Windows 8 pro、または Windows 8.1 Pro をご利用の場合は、サブスクリプションで[windows 10 pro へのアップグレード](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)をお勧めします。
+- Windows 10 Pro は Microsoft 365 Business Premium の[前提条件](pre-requisites-for-data-protection.md)ですが、Windows 7 Pro、Windows 8 pro、または Windows 8.1 Pro を使用している場合は、サブスクリプションによって[windows 10 pro へのアップグレード](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)ができます。
 - 「 [Windows 10 pc をセキュリティ保護](secure-win-10-pcs.md)する」の手順に従って、windows 10 デバイスのポリシーを設定します。
 
-Windows 10 デバイスを Azure AD に参加させると、Windows 10 コンピューターに設定したポリシーが適用されます。 詳細については、「 [Microsoft 365 Business ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。
+Windows 10 デバイスを Azure AD に参加させると、Windows 10 コンピューターに設定したポリシーが適用されます。 詳細については、「 [Microsoft 365 ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。
 
-## <a name="step-4-install-office-365-business"></a>手順 4: Office 365 Business をインストールする
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>手順 4: Microsoft 365 Apps for business をインストールする
 - [セットアップウィザード](set-up.md#deploy-office-365-client-apps)を使用して、Windows デバイスに Office を自動的にインストールすることができます。
 - ユーザーが Windows およびデバイス用の[Office アプリをインストール](https://docs.microsoft.com/office365/admin/setup/install-applications)できるようにします。
      
@@ -88,10 +88,10 @@ Windows 10 デバイスを Azure AD に参加させると、Windows 10 コンピ
 
 - **オンプレミス リソースへのアクセス**
 
-     - 組織がオンプレミスの Windows Server Active Directory を使用している場合は、Windows 10 のデバイスを保護するように Microsoft 365 Business をセットアップし、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持することができます。 「[ドメインに参加している Windows 10 デバイスが Microsoft 365 Business で管理される](manage-windows-devices.md)ようにする」の手順に従って、これを設定します。 この方法をお勧めします。この状態のデバイスは、ハイブリッド Azure AD 参加デバイスと呼ばれます。
+     - 組織でオンプレミスの Windows Server Active Directory を使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護することができます。ただし、ローカル認証を必要とするオンプレミスのリソースへのアクセスは維持されます。 「[ドメインに参加している Windows 10 デバイスを Microsoft 365 Business Premium で管理](manage-windows-devices.md)する」の手順に従って、これを設定します。 この方法をお勧めします。この状態のデバイスは、ハイブリッド Azure AD 参加デバイスと呼ばれます。
 
-    - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、「 [Microsoft 365 business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、azure ad に参加しているデバイスにこれらのリソースへのアクセス権を付与できます。
+    - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、「 [Microsoft 365 Business Premium の AZURE ad 参加デバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、azure ad に参加しているデバイスにこれらのリソースへのアクセス権を付与できます。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

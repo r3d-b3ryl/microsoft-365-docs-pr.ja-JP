@@ -1,5 +1,5 @@
 ---
-title: Office 365 グループの名前付けポリシー
+title: グループの名前付けポリシー
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Office 365 グループの名前付けポリシーを作成する方法について説明します。
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Microsoft 365 グループの名前付けポリシーを作成する方法について説明します。
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894625"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630445"
 ---
-# <a name="office-365-groups-naming-policy"></a>Office 365 グループの名前付けポリシー
+# <a name="groups-naming-policy"></a>グループの名前付けポリシー
 
 グループの名前付けポリシーを使用して、組織内のユーザーによって作成されたグループに一貫した名前付け戦略を適用します。 名前付けポリシーにより、お客様とユーザーがグループの機能、メンバーシップ、地域、グループの作成者を特定できるようになります。 名前付けポリシーは、アドレス帳のグループの分類にも役立ちます。 ポリシーを使用して、特定の単語をグループの名前やエイリアスで使われないようにブロックすることができます。
 
 名前付けポリシーは、すべてのグループのワークロードに対して作成されたグループ (Outlook、Microsoft Teams、SharePoint、Planner、Yammer など) に適用されます。 グループ名とグループのエイリアスの両方に適用されます。 名前付けポリシーは、ユーザーによるグループの作成時、または既存のグループのグループ名やエイリアスの編集時に適用されます。
 
 > [!TIP]
-> Office 365 グループの名前付けポリシーは Office 365 グループにのみ適用されます。 Exchange Online で作成された配布グループには適用されません。 配布グループの名前付けポリシーを作成するには、「[配布グループ名前付けポリシーを作成](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)する」を参照してください。
+> Microsoft 365 グループの名前付けポリシーは、Microsoft 365 グループにのみ適用されます。 Exchange Online で作成された配布グループには適用されません。 配布グループの名前付けポリシーを作成するには、「[配布グループ名前付けポリシーを作成](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)する」を参照してください。
 
 グループの名前付けポリシーは、次の機能で構成されています。
 
@@ -44,7 +44,7 @@ ms.locfileid: "42894625"
 
 ## <a name="licensing-requirements"></a>ライセンス要件
 
-Office 365 グループに Azure AD の名前付けポリシーを使用するには、1つ以上の Office 365 グループのメンバーである一意のユーザー (ゲストを含む) ごとに、Azure Active Directory Premium P1 ライセンスまたは Azure AD Basic EDU ライセンスが割り当てられている必要はありません。
+Microsoft 365 グループの Azure AD 名前付けポリシーを使用するには、1つ以上の Microsoft 365 グループのメンバーである一意のユーザー (ゲストを含む) ごとに、Azure Active Directory Premium P1 ライセンスまたは Azure AD Basic EDU ライセンスを所有している必要がありますが、必ずしも割り当てることはできません。
 
 これは、グループの名前付けポリシーを作成する管理者にも必要になります。
 
@@ -80,7 +80,7 @@ Office 365 グループに Azure AD の名前付けポリシーを使用する�
 
 - プレフィックスとサフィックスには、グループ名とグループのエイリアスでサポートされている特殊文字を含めることができます。 プレフィックスとサフィックスに、グループエイリアスで許可されていない特殊文字が含まれている場合、それらはグループ名にのみ適用されます。 そのため、この場合は、グループ名に適用されているプレフィックスとサフィックスは、グループのエイリアスに適用されているものとは異なります。
 
-- Yammer Office 365 に接続されたグループを使用している場合は、名前付けポリシーで、 \#@ \[、 \]、 \<、、 \>、およびの文字を使用しないでください。 これらの文字が名前付けポリシーに含まれている場合、正規の Yammer ユーザーはグループを作成できません。
+- Yammer の Microsoft 365 に接続されているグループを使用している場合は、名前付けポリシー \#に\[次\]の\<文字を\>使用しないでください。 @、、、、、、。 これらの文字が名前付けポリシーに含まれている場合、正規の Yammer ユーザーはグループを作成できません。
 
 ## <a name="custom-blocked-words"></a>ユーザー設定のブロックされた単語
 
@@ -126,10 +126,10 @@ Office 365 グループに Azure AD の名前付けポリシーを使用する�
 ![Azure Active Directory のグループの名前付けポリシーの設定のスクリーンショット](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> StaffHub teams は、名前付けポリシーに従いませんが、基礎となる Office 365 グループになります。 StaffHub チーム名は、プレフィックスとサフィックスを適用せず、カスタムのブロックされた単語をチェックしません。 ただし、StaffHub はプレフィックスとサフィックスを適用し、基になる Office 365 グループからブロックされた単語を削除します。
+> StaffHub teams は、名前付けポリシーに従いませんが、基礎となる Microsoft 365 グループは同じことになります。 StaffHub チーム名は、プレフィックスとサフィックスを適用せず、カスタムのブロックされた単語をチェックしません。 ただし、StaffHub はプレフィックスとサフィックスを適用し、基になる Microsoft 365 グループからブロックされた単語を削除します。
 
 ## <a name="more-articles-on-naming-policy"></a>名前付けポリシーに関するその他の記事
 
-[Azure Active Directory での Office 365 グループの名前付けポリシーの強制](https://go.microsoft.com/fwlink/?linkid=868340)
+[Microsoft 365 グループの名前付けポリシーを Azure Active Directory に適用する](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [グループ設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?linkid=868341)

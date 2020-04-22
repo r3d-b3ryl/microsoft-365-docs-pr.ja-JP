@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537511"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631171"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -39,7 +39,7 @@ ms.locfileid: "43537511"
 
 このレポートでは、次のことができます。
 
-- [Office 365 のセキュリティ機能によって検出されたマルウェアを参照](#see-malware-detected-in-email-by-technology)
+- [Microsoft 365 セキュリティ機能によって検出されたマルウェアを参照](#see-malware-detected-in-email-by-technology)
 - [フィッシング Url に関するデータを表示し、[verdict] をクリックします。](#view-data-about-phishing-urls-and-click-verdict)
 - [エクスプローラーのビューから自動化された調査と応答プロセスを開始](#start-automated-investigation-and-response)する (ATP プラン2のみ)
 - ...[悪意のある電子メールの調査など](#more-ways-to-use-explorer-or-real-time-detections)
@@ -56,7 +56,7 @@ ms.locfileid: "43537511"
 
 ### <a name="preview-email-header-and-download-email-body"></a>メールヘッダーのプレビューとメール本文のダウンロード
 
-電子メールヘッダーをプレビューして電子メール本文をダウンロードする機能は、脅威エクスプローラーで利用できる新機能です。 管理者は、ダウンロードしたヘッダーや電子メールメッセージを分析して脅威を調べることができます。 電子メールメッセージをダウンロードすると情報の公開が危険になる可能性があるため、このプロセスは、役割ベースのアクセス制御 (RBAC) によって制御されます。 他の Office 365 役割グループ (セキュリティ操作やセキュリティ管理者など) に新しい*役割を追加して、すべて*の電子メールメッセージビューでメールをダウンロードしてヘッダーをプレビューする機能を付与する必要があります。
+電子メールヘッダーをプレビューして電子メール本文をダウンロードする機能は、脅威エクスプローラーで利用できる新機能です。 管理者は、ダウンロードしたヘッダーや電子メールメッセージを分析して脅威を調べることができます。 電子メールメッセージをダウンロードすると情報の公開が危険になる可能性があるため、このプロセスは、役割ベースのアクセス制御 (RBAC) によって制御されます。 新しい役割である [*プレビュー*] を別の役割グループ (セキュリティ操作やセキュリティ管理者など) に追加して、すべての電子メールメッセージビューでメールのダウンロードとヘッダーのプレビューを許可する必要があります。
 
 しかし、エクスプローラー (およびリアルタイム検出) によって新しい新しいフィールドも追加され、電子メールメッセージがどこにいるかをより完全に把握することができます。 この変更の目的の一環として、セキュリティを確保したユーザーを探しやすくしていますが、最終的に問題の電子メールメッセージの場所がひとめでわかることになります。
 
@@ -117,7 +117,7 @@ ms.locfileid: "43537511"
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
 
-Office 365 テクノロジを使用して、電子メールで検出されたマルウェアを確認する必要があるとします。 これを行うには、エクスプローラーの [[電子メール > マルウェア](threat-explorer-views.md#email--malware)] ビュー (またはリアルタイムの検出) を使用します。
+Microsoft 365 テクノロジを使用して、電子メールで検出されたマルウェアを確認するとします。 これを行うには、エクスプローラーの [[電子メール > マルウェア](threat-explorer-views.md#email--malware)] ビュー (またはリアルタイムの検出) を使用します。
 
 1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
@@ -176,7 +176,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。 (旧称これは **、ユーザーによって報告**されたものです。)
+2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。
 
    ![エクスプローラーの [表示] メニュー](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -230,7 +230,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 役割とアクセス許可の詳細については、以下のリソースを参照してください。
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [セキュリティ&amp; /コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の相違点

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583383"
+ms.locfileid: "43637106"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -52,7 +52,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ### <a name="products-included-in-secure-score"></a>セキュア スコアに含まれる製品
 
-現在、Office 365 (SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品 (Azure ATP、Microsoft Defender ATP など) に関する推奨事項は、近日中に公開されます。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅するわけではありませんが、適切な基準になります。 また、改善のための処置をサードパーティによるカバー対象としてマークすることもできます。
+現時点では、SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、Cloud App Security を含めるための推奨事項があります。 その他のセキュリティ製品 (Azure ATP、Microsoft Defender ATP など) に関する推奨事項は、近日中に公開されます。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅するわけではありませんが、適切な基準になります。 また、改善のための処置をサードパーティによるカバー対象としてマークすることもできます。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
@@ -66,7 +66,6 @@ Microsoft セキュア スコアにアクセスするためのアクセス許可
 * セキュリティ管理者
 * Exchange 管理者
 * SharePoint 管理者
-* アカウント管理者
 
 ### <a name="read-only-roles"></a>読み取り専用の役割
 

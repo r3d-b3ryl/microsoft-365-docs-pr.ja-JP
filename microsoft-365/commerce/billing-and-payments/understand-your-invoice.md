@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Microsoft business 製品の請求書を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409712"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634982"
 ---
 # <a name="understand-your-invoice"></a>請求書の内容を理解する
 
 請求書には、お客様の請求書の概要と支払い方法が記載されています。 [オンライン請求書](#view-your-online-invoice)は、Microsoft 365 管理センターで確認できます。 また、電子メールで送信するために、ポータブルドキュメント形式 (.pdf) でダウンロードすることもできます。
 
-Office 365 サブスクリプションのみを使用している場合は、「 [View your invoice For office 365 for business](view-your-bill-or-invoice.md)」を参照してください。
+Microsoft 365 サブスクリプションのみを使用している場合は、「 [microsoft の請求書を microsoft 365 for business に表示](view-your-bill-or-invoice.md)する」を参照してください。
 
 ## <a name="understand-the-invoice-header"></a>請求書ヘッダーについて
 

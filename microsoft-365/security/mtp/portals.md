@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 98bfa8da792bfc5b75d1a2532492c2de6071f1b1
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: fe98df2c64bca36bc44c30bddb8b5e53d25aa6a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558238"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634558"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティポータルと管理センター
 [Microsoft 365 セキュリティセンター](overview-security-center.md)は、id、データ、デバイス、およびアプリのセキュリティを監視および管理するための新しいホームですが、特定の特別なタスクについてはさまざまなポータルにアクセスする必要があります。
@@ -36,7 +36,7 @@ ms.locfileid: "42558238"
 |---|---|---| 
 | Microsoft 365 セキュリティ センター | [Microsoft の脅威保護](microsoft-threat-protection.md)を使用して、id、電子メール、データ、エンドポイント、およびアプリ全体の脅威のアクティビティを監視および対応し、セキュリティを強化する | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender セキュリティセンター | [Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)で提供される機能を使用して、エンドポイントの脅威アクティビティを監視して応答する | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
-| Office 365 セキュリティ/コンプライアンス センター | [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide)と[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)を管理して、電子メールとコラボレーションサービスを保護し、さまざまなデータ処理規制に準拠するようにします。 | [protection.office.com](https://protection.office.com) |
+| セキュリティ/コンプライアンス センター | [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide)と[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)を管理して、電子メールとコラボレーションサービスを保護し、さまざまなデータ処理規制に準拠するようにします。 | [protection.office.com](https://protection.office.com) |
 | Azure セキュリティセンターポータル | [Azure セキュリティセンター](https://docs.microsoft.com/azure/security-center/security-center-intro)を使用して、クラウド内のデータセンターとハイブリッドワークロードのセキュリティに関する姿勢を強化する | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Azure ATP ポータル | [AZURE ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)で Active Directory のシグナルを使用して、高度な脅威、侵害された id、および悪意のある insider 操作を識別、検出、および調査する | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security ポータル | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)を使用して、高度な可視性、データ移動の制御、および高度な分析を行うことにより、クラウドサービスの脅威を特定して対処します。 | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |

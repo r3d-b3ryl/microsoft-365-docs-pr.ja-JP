@@ -1,5 +1,5 @@
 ---
-title: リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
+title: リストから除外ポータルを使用して、受信拒否リストから自分自身を削除する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
-ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Microsoft 365 に電子メールアドレスがある受信者に電子メールを送信しようとすると、エラーメッセージが表示されますか。 エラーメッセージを受信しないようにする必要がある場合は、リストから除外ポータルを使用して、受信拒否リストから自分自身を削除することができます。
+ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895085"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636406"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>リストから除外ポータルを使用して、受信拒否リストから自分自身を削除する
 
-Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
+Microsoft 365 に電子メールアドレスがある受信者に電子メールを送信しようとすると、エラーメッセージが表示されますか。 エラーメッセージを受信しないようにする必要がある場合は、リストから除外ポータルを使用して、受信拒否リストから自分自身を削除することができます。
 
-## <a name="what-is-the-office-365-blocked-senders-list"></a>Office 365 の 受信拒否リストとは何か
+## <a name="what-is-the-blocked-senders-list"></a>受信拒否リストとは何ですか。
 
-Microsoft は、受信拒否リストを使って、スパム、スプーフィング、フィッシング攻撃からお客様を保護しています。お客様のメール サーバーの IP アドレス、つまりお客様のメール サーバーがインターネット上でそれ自身を識別するために使うアドレスが、さまざまな理由によって Office 365 への潜在的な脅威としてタグ付けされる場合があります。Office 365 がその IP アドレスを受信拒否リストに追加すると、それ以降、データセンターを介してその IP アドレスと他のユーザーはまったく通信できなくなります。
+Microsoft は、受信拒否リストを使って、スパム、スプーフィング、フィッシング攻撃からお客様を保護しています。 メールサーバーの IP アドレス (メールサーバーがインターネット上で自分自身を識別するために使用するアドレス) は、さまざまな理由の1つとして、Microsoft 365 に対する潜在的な脅威としてタグ付けされました。 Microsoft 365 によって IP アドレスが一覧に追加されると、その ip アドレスとお客様との間のすべての通信がデータセンターによって妨げられます。
 
 メール メッセージに対して、次のようなエラーが含まれた応答を受信する場合、お客様は受信拒否リストに追加されています。
 
@@ -37,7 +37,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 ここで、 _IP address_ は、メール サーバーを稼働しているコンピューターの IP アドレスです。
 
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Office 365 のリストから除外のポータルを使って、受信拒否リストから自分自身を除外するには
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>リストから除外ポータルを使用して、受信拒否リストから自分自身を削除するには
 
 1. Web ブラウザーで、[https://sender.office.com](https://sender.office.com) に移動します。
 
@@ -53,7 +53,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 5. リストから除外のポータルで **[IP をリストから除外]** をクリックします。
 
-    IP アドレスが受信拒否リストから削除されると、その IP アドレスからのメール メッセージが、Office 365 を使用する受信者に配信されるようになります。その IP アドレスから送信されるメールに不正や悪意のある内容が含まれていないことを確認してください。そのような内容が含まれていると、IP アドレスが再びブロックされる可能性があります。
+    受信拒否リストから IP アドレスが削除されると、その IP アドレスからの電子メールメッセージは、Microsoft 365 を使用している受信者に配信されます。 そのため、その IP アドレスから送信された電子メールが不適切または悪意のあるものにならないようにしてください。それ以外の場合は、IP アドレスが再度ブロックされることがあります。
 
     > [!NOTE]
     > 最大24時間かかる場合があります。制限が削除されるまでに、結果が大幅に異なる場合があります。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business security and コンプライアンス機能
+title: Microsoft 365 Business Premium のセキュリティとコンプライアンスの機能
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,23 +22,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: Pc、電話、タブレットでデータを保護するために Microsoft 365 Business に付属するセキュリティ機能について説明します。
-ms.openlocfilehash: 3f638a3287c06ded7bf4c29c647e62cbf3fca969
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: Pc、電話、タブレットでデータを保護するために Microsoft 365 Business Premium に付属するセキュリティ機能について説明します。
+ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153800"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635146"
 ---
-# <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business security and コンプライアンス機能
+# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium のセキュリティとコンプライアンスの機能
 
-Microsoft 365 Business では、Pc、携帯電話、タブレットでデータを保護するための簡単なセキュリティ機能が提供されています。
+Microsoft 365 Business Premium は、Pc、電話、タブレットでデータを保護するための簡略化されたセキュリティ機能を提供します。
     
-## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business 管理センターのセキュリティ機能
+## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365 管理センターのセキュリティ機能
 
 [![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-管理センターでは、Microsoft 365 Business セキュリティ機能の多くを管理することができます。これにより、これらの機能を簡単にオンまたはオフにすることができます。 管理センターでは、次の操作を実行できます。
+管理センターでは、Microsoft 365 Business Premium のセキュリティ機能の多くを管理することができます。これにより、これらの機能を簡単にオンまたはオフにすることができます。 管理センターでは、次の操作を実行できます。
   
 - [Android または iOS デバイスのアプリケーション管理設定を設定](app-protection-settings-for-android-and-ios.md)します。 
     
@@ -62,7 +62,7 @@ Microsoft 365 Business では、Pc、携帯電話、タブレットでデータ�
     
 ## <a name="additional-security-features"></a>その他のセキュリティ機能 
 
-Microsoft 365 Business の高度な機能を使用すると、サイバー脅威からビジネスを保護し、機密情報を保護することができます。
+Microsoft 365 Business Premium の高度な機能を使用すると、組織のビジネスをサイバー脅威から保護し、機密情報を保護するのに役立ちます。
   
 - **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
@@ -74,7 +74,7 @@ Microsoft 365 Business の高度な機能を使用すると、サイバー脅威
 
 - **[Azure portal の Intune のすべての機能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    Azure portal で Intune 管理センターにアクセスすると、Microsoft 365 Business 管理センターでは利用できない、Windows のアドバンストデバイス管理とともに、MacOS デバイス、iPhone、Android デバイスの管理など、追加のセキュリティ機能を設定できます。
+    Azure portal で Intune 管理センターにアクセスすると、Microsoft 365 管理センターでは利用できない、Windows のアドバンストデバイス管理とともに、MacOS デバイス、iPhone、Android デバイスの管理など、追加のセキュリティ機能を設定できます。
 - **Azure AD Premium P1 プランと同じ[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
 
@@ -95,7 +95,7 @@ Microsoft 365 Business の高度な機能を使用すると、サイバー脅威
     
 ## <a name="compliance-features"></a>コンプライアンス機能
 
-Microsoft 365 Business サブスクリプションには、コンプライアンスおよび規制基準を維持するのに役立つ機能が含まれています。
+Microsoft 365 Business Premium サブスクリプションには、コンプライアンスおよび規制基準を維持するのに役立つ機能が含まれています。
 
 - **[データ損失防止ポリシーの概要](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**(DLP)。 
     
@@ -105,22 +105,22 @@ Microsoft 365 Business サブスクリプションには、コンプライアン
     
     Exchange Online のアーカイブライセンスでは、継続的なデータバックアップを使用してメッセージを簡単にアーカイブできます。 削除済みアイテムを含むすべてのユーザーのメールを、後で探索または復元する際に必要になる場合に備えて保存します。 また、さまざまなアイテム保持ポリシーを使用して、訴訟ホールド、電子情報開示、またはコンプライアンス要件を満たすために電子メールデータを保持することができます。
     
-- **[機密ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[秘密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 このプランを使用すると、"転送不可" や "コピーしない" などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御できるようにする機密**ラベル**を作成できます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 機密ラベルについては、 **AzInfoProtection_UL**をインストールします。
+   Microsoft 365 Business Premium には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 このプランを使用すると、"転送不可" や "コピーしない" などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御できるようにする機密**ラベル**を作成できます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 機密ラベルについては、 **AzInfoProtection_UL**をインストールします。
 
-これらの機能は、セキュリティ&amp;コンプライアンスセンターおよび Intune 管理センターで管理できます。 時間の経過とともに、簡略化された統制は Microsoft 365 Business 管理センターに追加されます。
+これらの機能は、セキュリティ&amp;コンプライアンスセンターおよび Intune 管理センターで管理できます。 時間の経過とともに、簡略化された統制は Microsoft 365 管理センターに追加されます。
   
     
 ## <a name="faq"></a>FAQ
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>これらのセキュリティ機能はすべての市場で利用できますか?
   
-はい。これらの機能は、Microsoft 365 Business が販売されているすべての市場で利用できます。
+はい。これらの機能は、Microsoft 365 Business Premium が販売されているすべての市場で利用できます。
   
 ### <a name="how-do-i-find-the-security-amp-compliance-center"></a>セキュリティ&amp;コンプライアンスセンターを見つけるには、どうすればよいですか。
   
-1. 管理者の資格情報を使用して、 [Microsoft 365 Business にサインイン](https://portal.microsoft.com/)します。 
+1. 管理者の資格情報を使用して、 [Microsoft 365 Business Premium にサインイン](https://portal.microsoft.com/)します。 
     
 2. 左側のナビゲーションで、[**管理センター** ] を見つけて展開します。 
     

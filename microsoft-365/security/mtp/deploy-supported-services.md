@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633473"
 ---
 # <a name="deploy-supported-services"></a>サポートされるサービスを展開する
 
@@ -62,7 +62,7 @@ Microsoft の脅威保護の完全なメリットを得るために、サポー�
 | サービス | データ (& 関連付けられる情報) | 修復 & 応答の範囲 |
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | -エンドポイントの状態と生のイベント<br />-ウイルス対策、EDR、攻撃対象領域の削減を含むエンドポイントの検出と通知<br />-エンドポイントで監視されたファイルやその他のエンティティに関する情報 | エンドポイント |
-| Office 365 ATP | -メールとメールボックスの状態および生のイベント<br />-電子メール、添付ファイル、およびリンクの検出 | -メールボックス<br />-Office 365 アカウント |
+| Office 365 ATP | -メールとメールボックスの状態および生のイベント<br />-電子メール、添付ファイル、およびリンクの検出 | -メールボックス<br />-Microsoft 365 アカウント |
 | Azure ATP | -Active Directory シグナル (認証イベントを含む)<br />-Id 関連の動作の検出 | ID |
 | Microsoft Cloud App Security | -承認されていないクラウドアプリおよびサービスの検出 (シャドウ IT)<br />-クラウドアプリへのデータの公開<br />-クラウドアプリに関連付けられている脅威アクティビティ | クラウド アプリ |
 

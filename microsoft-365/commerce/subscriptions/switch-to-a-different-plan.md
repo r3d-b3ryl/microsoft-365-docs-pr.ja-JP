@@ -1,5 +1,5 @@
 ---
-title: 別の一般法人向け Office 365 プランに切り替える
+title: 別の Microsoft 365 for business プランに切り替える
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,42 +23,47 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: 新しい Office 365 for business サブスクリプションに切り替える方法について説明します。
-ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 新しい Microsoft 365 for business サブスクリプションに切り替える方法について説明します。
+ms.openlocfilehash: a101ac47aede1413528fd2cb6be1d1df6ab4d961
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142093"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636524"
 ---
-# <a name="switch-to-a-different-office-365-for-business-plan"></a>別の一般法人向け Office 365 プランに切り替える
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>別の Microsoft 365 for business プランに切り替える
 
 ビジネスが変更された場合や、より多くの機能が必要な場合は、プランを切り替えることができます。  
 
 最も簡単なプランの切り替え方法は、管理センターの [**プランの切り替え**] ボタンを使用することです。 ただし、[ **プランの切り替え**] ボタンの使用はあらゆる状況でサポートされているわけではありません。 一部の状況では、手動でプランを切り替えることができる場合があります。
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> この記事は、古い管理センターに適用されます。 新しい管理センターに関する記事を表示するには、「[別のプランへのアップグレード](upgrade-to-different-plan.md)」を参照してください。 すべての Microsoft 365 管理者が新しい管理センターを利用できます。 詳細については、「[新しい Microsoft 365 管理センターについ](../../admin/microsoft-365-admin-center-preview.md)て」を参照してください。
-
-::: moniker-end
 
 **他に何か必要ですか?**
-
 - [サブスクリプションをキャンセルする](cancel-your-subscription.md)
-- [家庭向けから一般法人向けに Office 365 サブスクリプションをアップグレードする](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Microsoft 365 ファミリをビジネス向けサブスクリプションにアップグレードする](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Microsoft サポートに連絡する](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>[プランの切り替え] ボタンを使用する
 
 [ **プランの切り替え**] ボタンを使用すると、現在のプランから切り替え可能な新しいプランを購入するプロセスが開始され、自動的にすべてのユーザーに新しいプランのライセンスが割り当てられ、元のプランがキャンセルされます。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
 
-    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+::: moniker-end
 
-    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+::: moniker range="o365-germany"
+
+1. 管理センターの **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターの **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+::: moniker-end
 
 2. 使用可能な新しいプランの一覧を表示するには、[**プランの切り替え**] を選択します。
 
@@ -70,7 +75,7 @@ ms.locfileid: "43142093"
 
 4. サポートが必要な場合は、[ **チェックアウト**] ページの [ **チャットを開始**] を選択します。
 
-    購入手続きが完了すると、Office 365 の切り替えの最終処理に数分かかります。すぐに新しいサブスクリプションの使用を開始することができます。
+    チェックアウトを終了すると、Microsoft 365 はスイッチの最終処理に数分かかります。 すぐに新しいサブスクリプションの使用を開始することができます。
 
 ## <a name="the-switch-plans-button-isnt-there"></a>[プランの切り替え] ボタンがない
 
@@ -78,7 +83,7 @@ ms.locfileid: "43142093"
   
 これが発生する理由は次のとおりです。
   
-- 複数の Office 365 プランを使用しています。すべてのユーザーが同じプランを購読している場合のみ、[ **プランの切り替え**] ボタンを使用できます。
+- 複数の Microsoft 365 プランを使用しています。 すべてのユーザーが同じプランを購読している場合のみ、[ **プランの切り替え**] ボタンを使用できます。
 
 - 既に Office 365 Enterprise E5 を使用しているため、Office 365 で利用可能なすべての機能が既に有効になっています。
 
@@ -86,7 +91,7 @@ ms.locfileid: "43142093"
 
 [ **プランの切り替え**] ボタンを使用するときは、現在のプランのサービスに基づいて、切り替えが可能なプランが表示されます。同じデータ関連サービスが含まれるプランまたはそれらの上位バージョンに切り替える場合のみ、[ **プランの切り替え**] ボタンを使用できます。これで、ユーザーが切り替え中にそれらのサービスに関連するデータを失う心配がなくなります。
   
-切り替え前にプランを比較する方法については、「[Office 365 のすべての一般法人向けプランを比較する](https://go.microsoft.com/fwlink/p/?linkid=842056)」ページを参照してください。技術仕様については、「[Office 365 サービスの説明](https://go.microsoft.com/fwlink/p/?linkid=842275)」を参照してください。
+切り替え前にプランを比較するには、 [Microsoft 365 for business 製品比較](https://go.microsoft.com/fwlink/p/?linkid=842056)ページを参照してください。 技術仕様については、「 [Microsoft 365 サービスの説明](https://go.microsoft.com/fwlink/p/?linkid=842275)」を参照してください。
   
 サービス数の少ないプランに切り替える場合は、プランを手動で[切り替える](switch-plans-manually.md)か、 [Microsoft サポート](../../admin/contact-support-for-business-products.md)にお問い合わせください。
   
@@ -98,4 +103,4 @@ ms.locfileid: "43142093"
   
 ## <a name="call-support-to-help-you-switch-plans"></a>プランの切り替えを支援するサポートに連絡する
 
-[電話でのお問い合わせ](../../admin/contact-support-for-business-products.md)
+![電話](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png)に[よる通話のサポート](../../admin/contact-support-for-business-products.md)

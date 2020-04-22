@@ -1,5 +1,5 @@
 ---
-title: Office 365 でブロックされる送信者のリストを作成する
+title: ブロックする差出人リストを作成する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: 管理者は、Office 365 および EOP で使用可能なオプションについて学び、受信メッセージをブロックすることができます。
-ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+description: 管理者は、Microsoft 365 と EOP で使用可能なオプションについて説明し、受信メッセージをブロックすることができます。
+ms.openlocfilehash: 626eff3a1ea28cc16b12acaaa2ba52f7d094a347
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608121"
+ms.locfileid: "43637690"
 ---
-# <a name="create-blocked-sender-lists-in-office-365"></a>Office 365 でブロックされる送信者のリストを作成する
+# <a name="create-blocked-sender-lists"></a>ブロックする差出人リストを作成する
 
-Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 お客様の場合、EOP は、不要な送信者からの電子メールをブロックする複数の方法を提供します。 これらのオプションには、Outlook のブロックされた送信者、ブロックされる送信者リストまたは禁止されたドメインリスト、スパム対策ポリシー、Exchange メールフロールール (トランスポートルールとも呼ばれる)、IP 禁止一覧 (接続フィルター) などがあります。 これらのオプションは、ブロックされる_送信者リスト_と考えることができます。
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 お客様の場合、EOP は、不要な送信者からの電子メールをブロックする複数の方法を提供します。 これらのオプションには、Outlook のブロックされた送信者、ブロックされる送信者リストまたは禁止されたドメインリスト、スパム対策ポリシー、Exchange メールフロールール (トランスポートルールとも呼ばれる)、IP 禁止一覧 (接続フィルター) などがあります。 これらのオプションは、ブロックされる_送信者リスト_と考えることができます。
 
 送信者をブロックする最善の方法は、影響の範囲によって異なります。 1人のユーザーの場合、適切なソリューションは、Outlook のブロックされた送信者になることがあります。 多くのユーザーにとって、他のオプションのいずれかが適しています。 次のオプションは、影響範囲と幅広さの両方によってランク付けされます。 リストは狭い範囲から広くなりますが、詳細については、 *「詳細*」を参照してください。
 
@@ -37,11 +37,11 @@ Exchange Online または exchange online メールボックスを持たない�
 > [!NOTE]
 > 誤検知を解決するために、組織全体のブロック設定を使用することはできますが (迷惑メールは失われます)、それらのメッセージを分析のために Microsoft に送信する必要があります。 ブロックリストを使用して誤検知を管理すると、管理オーバーヘッドが大幅に向上します。 ブロックリストを使用して、不在時のスパムを切り替えるする場合は、準備完了時に、トピック[レポートのメッセージとファイルを Microsoft に](report-junk-email-messages-to-microsoft.md)保持する必要があります。
 
-一方、[_差出人セーフリスト_] を使用して特定の送信元からの電子メールを常に許可するには、いくつかのオプションもあります。 詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
+一方、[_差出人セーフリスト_] を使用して特定の送信元からの電子メールを常に許可するには、いくつかのオプションもあります。 詳細については、「[差出人セーフリストを作成する](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="use-outlook-blocked-senders"></a>Outlook の受信拒否リストを使用する
 
-少数のユーザーのみが不要なメールを受信した場合、ユーザーまたは管理者はメールボックスの受信拒否リストに送信者の電子メールアドレスを追加することができます。 手順については、「 [Office 365 の Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+少数のユーザーのみが不要なメールを受信した場合、ユーザーまたは管理者はメールボックスの受信拒否リストに送信者の電子メールアドレスを追加することができます。 手順については、「 [Exchange Online メールボックスで迷惑メールの設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
 ユーザーの受信拒否リストによってメッセージが正常にブロックされると、**スパム対策**ヘッダーフィールドに値`SFV:BLK`が含まれます。
 
@@ -50,7 +50,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>ブロックする送信者リストまたは禁止ドメインリストを使用する
 
-複数のユーザーが影響を受ける場合、範囲は広くなるため、次の最適なオプションは、[迷惑メール対策] ポリシーの [送信者リストまたはブロックされたドメインリスト] に制限されます。 リストの送信者からのメッセージが**スパム**としてマークされ、**スパム**フィルター verdict に対して構成したアクションがメッセージに対して実行されます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+複数のユーザーが影響を受ける場合、範囲は広くなるため、次の最適なオプションは、[迷惑メール対策] ポリシーの [送信者リストまたはブロックされたドメインリスト] に制限されます。 リストの送信者からのメッセージが**スパム**としてマークされ、**スパム**フィルター verdict に対して構成したアクションがメッセージに対して実行されます。 詳細については、「[スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
 これらのリストの最大数は、約1000エントリです。
 

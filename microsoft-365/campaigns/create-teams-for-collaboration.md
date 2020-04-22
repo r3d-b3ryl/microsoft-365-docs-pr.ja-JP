@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams を使用してチームのコラボレーションスペースを作成します。
-ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056354"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635650"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Microsoft Teams での共同作業のためのチームの作成
 
@@ -48,7 +48,7 @@ Microsoft Teams は、任意のデバイスから、スタッフが開催し、�
 
 チームを作成する場合は、次のように作成します。
 
-- 新しい[Office 365 グループ](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- 新しい[Microsoft 365 グループ](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - チームファイルを保存するための[SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)サイトとドキュメントライブラリ
 - [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)の共有メールボックスと予定表
 - OneNote ノートブック

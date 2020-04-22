@@ -1,5 +1,5 @@
 ---
-title: Office 365 セットアップウィザードとセットアップページの違い
+title: セットアップウィザードとセットアップページの違い
 f1.keywords:
 - NOCSH
 ms.author: v-sharos
@@ -18,46 +18,46 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Office 365 セットアップウィザードとセットアップページの違いについて説明します。
-ms.openlocfilehash: fb4cf29b2cab493e0240cf9cfef4cbabeb45087c
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: セットアップウィザードとセットアップページの違いについて説明します。
+ms.openlocfilehash: 41a87690282cdf2ff3d1514f9303776c0d2d33bf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209702"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631805"
 ---
-# <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Office 365 セットアップウィザードとセットアップページの違い
+# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>セットアップウィザードとセットアップページの違い
 
-Office 365 には、2つのセットアップエクスペリエンスがあります。 
+Microsoft 365 には、2つのセットアップエクスペリエンスがあります。 
 
 - セットアップウィザードを使用した最初のセットアップ
 - **セットアップ**ページを使用した進行中および詳細なセットアップ
 
-セットアップウィザードには、基本的な Office 365 構成を設定するためのガイド付きのチュートリアルが用意されています。 最初のセットアップの完了後、[**セットアップ**] ページに移動して、サブスクリプションに付属するサービスのセットアップと構成を完了できます。
+セットアップウィザードには、基本的な Microsoft 365 構成を設定するためのガイド付きのチュートリアルが用意されています。 最初のセットアップの完了後、[**セットアップ**] ページに移動して、サブスクリプションに付属するサービスのセットアップと構成を完了できます。
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>セットアップウィザードを使用して最初のセットアップタスクを完了する
 
 アカウントをセットアップするには、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に移動し、左側のナビゲーションウィンドウで [**設定**] を選択して、[**セットアップ**] ページの [**ガイド付きセットアップ**] を選択します。
 
-![Office 365 Business セットアップウィザードを開始する](../../media/o365b-guided-setup.png)
+![Microsoft 365 Apps for business セットアップウィザードを開始する](../../media/o365b-guided-setup.png)
 
 セットアップウィザードの指示に従って、次の手順を実行します。
 
-1. コンピューターに Office 365 アプリをインストールします。
+1. Microsoft 365 アプリをコンピューターにインストールします。
 
 2. Contoso.com などのドメインを選択して確認します。
 
-3. 新しいユーザーを追加してライセンスを割り当て、Office 365 アプリをダウンロードしてインストールできるようにします。
+3. 新しいユーザーを追加してライセンスを割り当て、Microsoft 365 アプリをダウンロードしてインストールできるようにします。
 
-4. Connect' 自分のドメイン。
+4. ドメインを接続します。
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>[セットアップ] ページを使用して構成を完了し管理する
 
-[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)の [**セットアップ**] ページにアクセスするには、ナビゲーションウィンドウで [**設定**] を選択します。 購入した製品、設定した機能、および Office 365 全体での管理者の役割、タスク、関連情報は、ここに記載されています。
+[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)の [**セットアップ**] ページにアクセスするには、ナビゲーションウィンドウで [**設定**] を選択します。 購入した製品、セットアップされた機能、および Microsoft 365 全体での管理者の役割、タスク、関連情報は、ここに記載されています。
 
 セットアップタスクの完全な一覧が、セットアップウィザードで完了したものを含め、論理的なカテゴリに分類されて表示されます。
 
-![Office 365 for Business のセットアップページ](../../media/o365b-setup-page.png)
+![Microsoft 365 for business のセットアップページ](../../media/o365b-setup-page.png)
 
 タスクの説明、ユーザーへの影響、前提条件、実装作業、セキュリティ、導入の統計などの情報をひとめで把握できるようにするには、「 **View** 」を選択します。
 

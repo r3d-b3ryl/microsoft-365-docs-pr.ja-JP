@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 サブスクリプションの更新またはライセンスの再認証をする
+title: Microsoft 365 for business の更新
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,19 +23,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'プロダクトキーを使用して Office 365 for business サブスクリプションを更新し、定期的な請求をオンまたはオフにする方法について説明します。 '
-ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: 'プロダクトキーを使用して Microsoft 365 for business サブスクリプションを更新し、定期的な請求をオンまたはオフにする方法について説明します。 '
+ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175204"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636561"
 ---
-# <a name="renew-office-365-for-business"></a>一般法人向け Office 365 サブスクリプションの更新またはライセンスの再認証をする
+# <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
-この記事の情報は、支払い済みのほとんどの 一般法人向け Office 365 サブスクリプションに適用されます。
+この記事は、ほとんどの有料 Microsoft 365 for business サブスクリプションに適用されます。
   
-小売り店または Office 365 パートナーから購入したプロダクトキーを使用して更新するには、「[プロダクトキーを検索して入力](../enter-your-product-key.md)する」を参照してください。
+小売店または Microsoft パートナーから購入したプロダクトキーを使用して更新するには、「[プロダクトキーを検索して入力](../enter-your-product-key.md)する」を参照してください。
 
 > [!NOTE]
 > 銀行口座による支払いは、一部の国や地域では使用できません。
@@ -47,6 +47,7 @@ ms.locfileid: "43175204"
 プロダクト キーを使用してサブスクリプションを前払いした場合、サブスクリプション期間の最後にサブスクリプションの有効期限が切れます。 **定期的な課金**を有効にして、クレジットカードまたは銀行口座の情報を提供することにより、サブスクリプションが毎年、サブスクライブした日に請求されるようになります。 また、月ごとに支払うか、または1年全体の支払いを行うかを選択することもできます。 最初のサブスクリプション期間が終了するまで、クレジット カードや銀行口座への請求は行われません。
 
 ::: moniker range="o365-worldwide"
+
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
 
@@ -67,7 +68,11 @@ ms.locfileid: "43175204"
 
 ::: moniker range="o365-germany"
   
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. 継続請求を管理するサブスクリプションを選択します。
  
@@ -86,7 +91,11 @@ ms.locfileid: "43175204"
 
 ::: moniker range="o365-21vianet"
   
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+
+    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. 継続請求を管理するサブスクリプションを選択します。
  
@@ -106,7 +115,7 @@ ms.locfileid: "43175204"
 ## <a name="related-articles"></a>関連記事
 
 [サブスクリプションを再度有効にする](reactivate-your-subscription.md)
-
+  
 [サブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)
 
 [お支払い方法を追加、更新、削除する](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
@@ -115,4 +124,4 @@ ms.locfileid: "43175204"
   
 [プロダクトキーを入力する](../enter-your-product-key.md)
   
-[一般法人向け Office 365 の試用版を購入する](../buy-a-subscription-from-your-free-trial.md)
+[Microsoft 365 for business の試用版を購入する](../buy-a-subscription-from-your-free-trial.md)

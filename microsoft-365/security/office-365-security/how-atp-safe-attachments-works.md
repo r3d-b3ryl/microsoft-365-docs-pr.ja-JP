@@ -1,5 +1,5 @@
 ---
-title: Office 365 の ATP の安全な添付ファイルの動作
+title: ATP の安全な添付ファイル機能のしくみ
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,16 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: 951f9f0e50da6ef83135f1ca8f1ad109a8e66988
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e53d95a52c6990b5e0b4ff81f42414a34b1e606e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599224"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638024"
 ---
-# <a name="how-office-365-atp-safe-attachments-works"></a>Office 365 の ATP の安全な添付ファイルの動作
+# <a name="how-atp-safe-attachments-works"></a>ATP の安全な添付ファイル機能のしくみ
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>動作のしくみ
 
 ATP の安全な添付ファイル機能は、組織内のユーザーの電子メールの添付ファイルを確認します。 ATP の安全な添付ファイルポリシーが設定されている場合に、そのポリシーの対象となるユーザーが Office 365 で電子メールを表示すると、そのメール添付ファイルがチェックされ、ATP の安全な添付ファイルのポリシーに基づいて適切な操作が実行されます。 ポリシーの定義によっては、悪意のあるファイルが送信されたことを知らなくても、ユーザーは作業を続けることができます。
   
@@ -35,5 +35,5 @@ ATP の安全な添付ファイル機能は、組織内のユーザーの電子�
 ATP の安全な添付ファイルポリシーは、組織内の特定のユーザーやグループ、またはドメイン全体に適用できます。 また、ATP の安全な添付ファイルのポリシーでは、実際の添付ファイルがスキャンされている間は、プレースホルダーの添付ファイルを使用するように構成できます。 詳細については、「 **[Office 365 で ATP の安全な添付ファイルのポリシーを設定](set-up-atp-safe-attachments-policies.md)** する」を参照してください。
 
 > [!NOTE]
-> ATP の安全な添付ファイルのスキャンは、Office 365 データが存在する地域と同じ地域で行われます。 データセンター地理の詳細については、「[データの保存場所](https://products.office.com/where-is-your-data-located?geo=All)」を参照してください。 
+> ATP の安全な添付ファイルのスキャンは、データが存在する地域と同じ地域で行われます。 データセンター地理の詳細については、「[データの保存場所](https://products.office.com/where-is-your-data-located?geo=All)」を参照してください。 
 

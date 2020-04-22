@@ -1,5 +1,5 @@
 ---
-title: Office 365 で Outlook のルールとユーザー設定フォームの挿入攻撃を検出して修復する
+title: Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
-ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599444"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637594"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
 **概要**Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 
@@ -140,7 +140,7 @@ ms.locfileid: "41599444"
 
 #### <a name="interpreting-the-output"></a>出力の解釈
 
-- **MailboxRulesExport:****(行ごとに1つずつ) アプリケーションまたは実行可能ファイルが含まれるアクション条件を調べます。
+- **MailboxRulesExport:*yyyy-mm-dd***(行ごとに1つずつ) アプリケーションまたは実行可能ファイルが含まれるアクション条件を調べます。
 
   - **ActionType (列 A)**: 値 "ID_ACTION_CUSTOM" が表示される場合、そのルールは悪意のある可能性があります。
 
@@ -164,7 +164,7 @@ ms.locfileid: "41599444"
 
 4. 最新バージョンの Outlook をインストールします。 Outlook の現在のバージョンでは、この両方の種類の攻撃が既定でブロックされることに注意してください。
 
-5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) し、MFA がまだ有効になっていない場合は、 [Office 365 ユーザーのセットアップ多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
+5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) して、MFA がまだ有効になっていない場合[のユーザーのセットアップ多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
 
 ### <a name="using-powershell"></a>PowerShell の使用
 
@@ -192,7 +192,7 @@ ms.locfileid: "41599444"
 
 ルールとフォームのエクスプロイトは、攻撃者がユーザーのアカウントのいずれかを盗んだ後、または侵害した後にのみ使用されます。 そのため、これらの悪用を組織に対して使用できないようにするための最初の手順として、ユーザーアカウントを積極的に保護することが挙げられます。 アカウントが侵害される最も一般的な方法には、フィッシングまたは[パスワード spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻撃があります。
 
-ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、 [Office 365 ユーザーに多要素認証を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)することです。 次のことも実行する必要があります。
+ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、[ユーザーに多要素認証を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)することです。 次のことも実行する必要があります。
 
 - ユーザーアカウントがどのようにアクセスされ、[使用されるかを](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)監視します。 最初の違反を防ぐことはできませんが、期間を短縮して、違反が早く検出された場合の影響を短縮することができます。 これらの[Office 365 Cloud App Security ポリシー](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)を使用して、アカウントを監視し、異常なアクティビティに関する警告を表示することができます。
 
@@ -234,9 +234,9 @@ Outlook 2013 および2016クライアントのパッチバージョンは次の
 
 オンプレミスの Exchange インストールを使用しているお客様は、利用可能なパッチを持たない古いバージョンの Outlook をブロックすることを検討する必要があります。 このプロセスの詳細については、記事「 [Outlook クライアントのブロックを構成](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)する」を参照してください。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>セキュリティで保護された Microsoft 365 (cybersecurity pro など)
 
-Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能セットが用意されています。 [Office 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Office 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。 Microsoft 365 セキュリティロードマップを使用して、[最初の30日間、90日間、](security-roadmap.md) microsoft の推奨ベストプラクティスを実装し、microsoft の365テナントをセキュリティで保護することをお勧めします。
 
 - 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

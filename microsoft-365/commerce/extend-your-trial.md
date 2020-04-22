@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 の試用期間を延長する
+title: 試用期間を延長する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,19 +20,20 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
-description: 試用版サブスクリプションの期間を延長する方法について説明します。
-ms.openlocfilehash: f3e4241156d312d5dc236689344ad29ce1e8ee4d
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 別の30日間の試用版サブスクリプションを拡張する方法について説明します。
+ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142611"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634898"
 ---
-# <a name="extend-your-trial-for-office-365-for-business"></a>一般法人向け Office 365 の試用期間を延長する
+# <a name="extend-your-trial"></a>試用期間を延長する
 
-一般法人向け Office 365 の購入の前にさらに時間が必要ですか? 試用版サブスクリプションの期限切れまでの期間が 15 日以内になり、その前に試用版を延長していない場合、試用版をさらに 30 日間延長できます。延長できるのは 1 回のみです。
+購入する前に Microsoft 365 for business の機能を試すには、さらに時間がかかるでしょうか。 試用版サブスクリプションの期限切れまでの期間が 15 日以内になり、その前に試用版を延長していない場合、試用版をさらに 30 日間延長できます。 延長できるのは 1 回のみです。
 
 ::: moniker range="o365-worldwide"
+
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
@@ -44,7 +45,9 @@ ms.locfileid: "43142611"
 
 ::: moniker range="o365-germany"
 
+
 1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+
 
 2. [**サブスクリプション**] ページで、拡張する試用版サブスクリプションを選択し、[有効期限] で [**試用版の拡張**] を選択します。
 
@@ -62,4 +65,4 @@ ms.locfileid: "43142611"
 
 ::: moniker-end
 
-購入の準備ができたら、「一般[法人向け Office 365 の試用](buy-a-subscription-from-your-free-trial.md)版を購入する」を参照してください。
+購入の準備ができたら、「[試用版を購入](buy-a-subscription-from-your-free-trial.md)する」を参照してください。

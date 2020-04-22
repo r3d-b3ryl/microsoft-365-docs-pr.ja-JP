@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Microsoft 365 管理センターで Office 365 にドメインを追加するには、 DNS ホストで DNS レコードを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631817"
 ---
 # <a name="add-a-domain-to-office-365"></a>Office 365 にドメインを追加する
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209642"
     
 5. ドメインの所有を確認する方法を選択します。
     
-    1. ドメインが GoDaddy または 1&amp;1 に登録されている場合、**[サインイン]** > **[次へ]** を選択します。Office 365 が[レコードを自動的に設定](../get-help-with-domains/domain-connect.md)します。
+    1. ドメインが GoDaddy または 1&amp;1 で登録されている場合は、[**次へ**] を選択**Sign in** > すると、Microsoft に[よってレコードが自動的に設定され](../get-help-with-domains/domain-connect.md)ます。
     
     2. ドメインに登録している連絡先に、検証コードを含むメールを送信できます。 レコードのメールに見覚えがない、またはメールにアクセスできない場合、3 番目のオプションを利用できます。
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209642"
 
 [ドメインを設定する (ホスト固有の手順)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Office 365 のドメインに関するヘルプ](../get-help-with-domains/get-help-with-domains.md)
+[ドメインに関するヘルプを取得する](../get-help-with-domains/get-help-with-domains.md)

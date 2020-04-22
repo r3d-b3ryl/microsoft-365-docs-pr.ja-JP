@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757664"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632003"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのサポート
 
@@ -33,7 +33,7 @@ Microsoft マネージドデスクトップのサポートは次のとおりで�
 サポートされる製品:
 
 - Microsoft Defender Advanced Threat Protection を使用した Windows 10 
-- これらの Office 365 ProPlus アプリ: Outlook、Word、PowerPoint、Excel、Skype for Business クライアント、Microsoft Teams 
+- エンタープライズアプリ用の Microsoft 365 アプリ: Outlook、Word、PowerPoint、Excel、Skype for Business クライアント、Microsoft Teams 
 - ビジネス向け Microsoft Store 
 - OneDrive for Business クライアント 
 

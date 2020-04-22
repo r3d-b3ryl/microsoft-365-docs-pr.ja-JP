@@ -11,18 +11,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの承認されていないドメインレポートについて学習できます。
-ms.openlocfilehash: 4b4573d6a43c811e919f3f5c6f281c8f31e61d6a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088477"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635282"
 ---
 # <a name="non-accepted-domain-report"></a>承認されていないドメインのレポート
 
-**送信者のドメイン**の洞察と同様に、承認されてい**ないドメイン**の洞察は社内の電子メール組織からのメッセージを識別しますが、送信者のドメインは Office 365 組織の承認済みドメインとして構成されていません。
+**送信者のドメイン**の洞察と同様に、承認されてい**ないドメイン**の洞察は社内の電子メール組織からのメッセージを識別しますが、送信者のドメインが組織内の承認済みドメインとして構成されているわけではありません。
 
-これらのメッセージが悪意のあるものであることを証明するためのデータがある場合、Office 365 はこれらのメッセージを調整する可能性があります。 そのため、何が起こっているのかを理解し、問題を修正することが重要です。
+これらのメッセージが悪意のあるものであることを証明するためのデータがある場合、Microsoft 365 はこれらのメッセージを調整する可能性があります。 そのため、何が起こっているのかを理解し、問題を修正することが重要です。
 
 ![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの承認されていないドメインレポート](../../media/non-accepted-domain-report-selected.png)
 

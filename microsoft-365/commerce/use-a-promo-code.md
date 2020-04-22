@@ -1,5 +1,5 @@
 ---
-title: プロモーション コードを使用する
+title: プロモーションコードを使用して価格を下げる
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: プロモーションコードを Office 365 サブスクリプションに適用して価格を下げる方法、およびエラーが発生した場合にプロモーションコードのトラブルシューティングを行う方法について説明します。
+description: プロモーションコードを Microsoft 365 サブスクリプションに適用して価格を下げる方法、およびエラーが発生した場合にプロモーションコードのトラブルシューティングを行う方法について説明します。
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243090"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631859"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>プロモーション コードを使用する
+# <a name="use-your-promo-code-to-reduce-price"></a>プロモーションコードを使用して価格を下げる
 
 サブスクリプションを購入した場合は、プロモーションコードを使用して価格を減らすことができます。 この記事では、プロモーションコードをサブスクリプションに適用し、[プロモーションコードの用語](#promo-code-terms)について理解し、プロモーションコードの[トラブルシューティング](#troubleshooting-promo-codes)を行う方法について説明します。
   
@@ -47,7 +47,7 @@ ms.locfileid: "42243090"
   
 ## <a name="promo-code-terms"></a>プロモーション コードの用語
 
-次のガイドラインが、一般法人向け Office 365 サブスクリプションのプロモーション コードに適用されます。
+次のガイドラインは、Microsoft 365 for business サブスクリプションのプロモーションコードに適用されます。
   
 - **各サブスクリプションのプロモーション コードの数**同じ注文の複数のサブスクリプションに 1 つのプロモーション コードを使用できますが、同じサブスクリプションに複数のプロモーション コードを使用することはできません。 
     

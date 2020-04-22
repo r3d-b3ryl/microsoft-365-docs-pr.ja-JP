@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035101"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636725"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Teams のチャット、グループ、およびファイルを保護するためのポリシーの推奨事項
 
@@ -33,9 +33,9 @@ ms.locfileid: "43035101"
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>他の依存サービスの前に Teams を使い始める
 
-Microsoft Teams の使用を開始するために、依存サービスを有効にする必要はありません。 これらはすべて「機能するだけです。」 ただし、次のものを管理するための準備が必要です。
+Microsoft Teams の使用を開始するために、依存サービスを有効にする必要はありません。 これらはすべて "機能します" ということになります。 ただし、次のものを管理するための準備が必要です。
 
-- Office 365 グループ
+- Microsoft 365 グループ
 - SharePoint チーム サイト
 - OneDrive for Business
 - メールボックス
@@ -50,7 +50,7 @@ Microsoft Teams の使用を開始するために、依存サービスを有効�
 Teams のクラウドアプリの割り当てに含める依存サービスは次のとおりです。
 
 - Microsoft Teams
-- SharePoint Online と OneDrive for Business
+- Sharepoint Online と OneDrive for Business
 - Exchange Online
 - Skype for Business Online
 - Microsoft Stream (会議のレコーディング)
@@ -84,7 +84,7 @@ Azure AD では、ゲストユーザーと外部ユーザーは同じです。 �
 
 ### <a name="guest-access-in-teams"></a>Teams でのゲストアクセス
 
-企業または組織の内部にあるユーザーのポリシーに加えて、管理者は、ゲストアクセスを有効にして、ユーザー単位で、ビジネスまたは組織の外部にいるユーザーが Teams リソースにアクセスして操作できるようにすることができます。グループ会話、チャット、会議などの内部ユーザー。 ゲストアクセスの詳細については、次のリンクを参照してください。 [Teams ゲストアクセス](https://docs.microsoft.com/microsoftteams/guest-access)
+企業または組織の内部にあるユーザーのポリシーに加えて、管理者はゲストアクセスを有効にして、ユーザーごとに、組織外のユーザーが Teams のリソースにアクセスしたり、グループの会話、チャット、会議などの内部ユーザーと対話したりすることができます。 ゲストアクセスの詳細については、次のリンクを参照してください。 [Teams ゲストアクセス](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Teams での外部アクセス
 

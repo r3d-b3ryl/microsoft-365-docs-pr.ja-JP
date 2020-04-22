@@ -1,5 +1,5 @@
 ---
-title: Office 365 で脅威から保護する
+title: 脅威から保護する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,16 +17,16 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: この記事をガイドとして使用して、今すぐ脅威保護機能を構成します。
-ms.openlocfilehash: 34a89f9db0ca7424d90909f09f7a2bfb4fcf3b6a
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0adf7bbb2637cc8a8d2918d951c1ccef51060b31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528559"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634462"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
+# <a name="protect-against-threats"></a>脅威から保護する
 
-Office 365 には、さまざまな脅威保護機能が含まれています。 ここでは、組織に対して脅威保護機能がセットアップされていることを確認するためのチェックリストとして使用できる、クイックスタートガイドを紹介します。 Office 365 の脅威保護機能を初めて使用する場合や、どこから始めるべきかがわからない場合は、次のガイドを出発点としてご利用ください。
+Microsoft 365 には、さまざまな脅威保護機能が含まれています。 ここでは、組織に対して脅威保護機能がセットアップされていることを確認するためのチェックリストとして使用できる、クイックスタートガイドを紹介します。 Office 365 の脅威保護機能を初めて使用する場合や、どこから始めるべきかがわからない場合は、次のガイドを出発点としてご利用ください。
 
 > [!IMPORTANT]
 > **ポリシーの種類ごとに最初に推奨される設定が含まれています。ただし、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもでき**ます。 使用しているポリシーまたは変更がデータセンターによって処理されるまで約30分間待機します。
@@ -35,7 +35,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 ### <a name="subscriptions"></a>サブスクリプション
 
-脅威保護機能は、すべての Office 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには、より高度な機能が含まれています。 次の表に、この記事に含まれる保護機能を最小限のサブスクリプション要件と共に示します。
+脅威保護機能は、すべての Microsoft 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには、より高度な機能が含まれています。 次の表に、この記事に含まれる保護機能を最小限のサブスクリプション要件と共に示します。<br/>
 
 |||
 |---|---|
@@ -53,15 +53,14 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 [セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)でポリシーを構成するには、適切な役割が割り当てられている必要があります。 次の表にいくつかの例があります:
 
-|||
-|---|---|
-|**役割または役割グループ**|**詳細情報**|
-|Office 365 グローバル管理者|[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|役割または役割グループ|詳細情報|
+|---------|---------|
+|グローバル管理者|[Microsoft 365 管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |セキュリティ管理者|[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
 
-詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「 [Security &amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="part-1---anti-malware-protection"></a>パート 1-マルウェア対策保護
 
@@ -107,7 +106,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 5. [**保存**] をクリックします。
 
-6. (**推奨の追加手順**)グローバル管理者または SharePoint Online 管理者は、 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行して、Office 365 環境の**DisallowInfectedFileDownload**パラメーターを*true*に設定します。 (これにより、ユーザーが悪意を持って検出されたファイルを開く、移動、コピー、または共有できなくなります)。
+6. (**推奨の追加手順**)グローバル管理者または SharePoint Online 管理者は、 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行して、Microsoft 365 環境の**DisallowInfectedFileDownload**パラメーターを*true*に設定します。 (これにより、ユーザーが悪意を持って検出されたファイルを開く、移動、コピー、または共有できなくなります)。
 
 詳細については、「 [office 365 の atp の安全な添付ファイルのポリシーをセットアップ](set-up-atp-safe-attachments-policies.md)する」および「 [SharePoint、OneDrive、Microsoft Teams 用の office 365 ATP を有効](turn-on-atp-for-spo-odb-and-teams.md)にする」を参照してください。
 
@@ -119,7 +118,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 2. [**既定**のポリシー] をダブルクリックします。
 
-3. [**安全なリンクの使用**] セクションで、[ **office 365 ProPlus、office for IOS**、および Android] オプションをオンにして、[**保存**] をクリックします。
+3. [**安全なリンクの使用**] セクションで、[ **Microsoft 365 Apps for enterprise]、[Office for IOS**、および Android] のオプションを選択し、[**保存**] をクリックします。
 
 4. [**特定の受信者に適用されるポリシー** ] セクションで、プラス**+** 記号 () をクリックします。
 
@@ -215,7 +214,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>レポートおよび調査の監査ログ
 
-監査ログは、 [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)を含むサブスクリプションで利用できます。 [セキュリティダッシュボード](security-dashboard.md)、[電子メールセキュリティレポート](view-email-security-reports.md)、[エクスプローラー](threat-explorer.md)などの脅威保護レポートのデータを表示するには、組織に対して監査ログを有効にする必要があります。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフに](../../compliance/turn-audit-log-search-on-or-off.md)する」を参照してください。
+監査ログは、 [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)を含むサブスクリプションで利用できます。 [セキュリティダッシュボード](security-dashboard.md)、[電子メールセキュリティレポート](view-email-security-reports.md)、[エクスプローラー](threat-explorer.md)などの脅威保護レポートのデータを表示するには、組織に対して監査ログを有効にする必要があります。 詳細については、「[監査ログの検索を有効または無効](../../compliance/turn-audit-log-search-on-or-off.md)にする」を参照してください。
 
 ## <a name="post-setup-tasks"></a>セットアップ後のタスク
 
@@ -225,6 +224,6 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 |---|---|
 |**操作**|**追加情報**|
 |レポートを表示して、組織の脅威保護機能がどのように機能するかを確認する|[セキュリティダッシュボード](security-dashboard.md)<br/>[電子メールセキュリティレポート](view-email-security-reports.md)<br/>[Office 365 ATP のレポート](view-reports-for-atp.md)<br/>[脅威エクスプローラー](threat-explorer.md)|
-|必要に応じて脅威保護ポリシーを定期的にレビューし、改訂する|[セキュリティ スコア](../mtp/microsoft-secure-score.md)<br/>[スマートレポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Office 365 の脅威の調査と応答の機能](keep-users-safe-with-office-365-ti.md)|
+|必要に応じて脅威保護ポリシーを定期的にレビューし、改訂する|[セキュリティ スコア](../mtp/microsoft-secure-score.md)<br/>[スマートレポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 脅威の調査と応答機能](keep-users-safe-with-office-365-ti.md)|
 |新機能とサービス更新を見る|[標準および対象のリリースオプション](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 for キャンペーン
-ms.openlocfilehash: 32437ccc0c110c0539cb3d24f036438d6a313921
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42056494"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632037"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns
 ===========================
@@ -40,24 +40,24 @@ ms.locfileid: "42056494"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**Microsoft 365 for キャンペーンについて** 次のことを可能にするために、Microsoft 365 Business を含む、推奨されるセキュリティで保護された構成です。
+**Microsoft 365 for キャンペーンについて** 次のことを可能にするために、Microsoft 365 Business Premium を含む、推奨されるセキュリティで保護された構成です。
 - 信頼できるビジネス生産性とコラボレーションツール (Outlook、Word、Excel、その他の Office 製品など) に依存します。 
 - 管理が容易なエンタープライズレベルのセキュリティを使用して、iOS、Android、Windows 10 デバイスすべての作業ファイルを保護する 
 - ユーザーアカウントと id に対して特別な保護を適用する 
 
-![Microsoft 365 Business は、生産性ツール、コラボレーションツール、ファイルストレージ、電子メール、デバイス、および id を保護します。](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium は、生産性ツール、コラボレーションツール、ファイルストレージ、電子メール、デバイス、および id を保護します。](../media/M365-WhatIsIt-SecurityFocus.png)
 
-米国の連邦選択キャンペーンでは、Microsoft 365 Business の特別な価格設定が適用されていますが、この計画を使用する組織では、強化されたセキュリティを構成し、安全に共同作業を行う方法について説明します。
+米国の連邦選択キャンペーンは、Microsoft 365 Business Premium の特別な価格に限定されていますが、この計画を使用する組織では、強化されたセキュリティを構成し、安全に共同作業を行う方法について説明します。
 
 このライブラリには、次のものが含まれます。
 - セキュリティを強化するための規範的なセットアップガイダンス。
 - ユーザーが安全にアクセスできるようにデバイスをセットアップするためのヘルプ。
 - 共同作業および安全な共有を行う方法に関するガイダンス。
 
-含まれるものの詳細については、「 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)」を参照してください。 
+含まれるものの詳細については、「 [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business)」を参照してください。 
 
 
-<a name="get-started"></a>作業の開始
+<a name="get-started"></a>概要
 --------------------------
 
 <ul class="panelContent cardsJ">

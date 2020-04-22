@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: このテストラボガイドを使用して、Microsoft 365 Enterprise テスト環境で特権アクセス管理を有効にします。
-ms.openlocfilehash: ce637b94333f088d25e479e61ad2a98176a2f7c6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085376"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632865"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の特権アクセスの管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "42085376"
 
 このフェーズでは、承認者グループを構成し、Microsoft 365 Enterprise テスト環境の特権アクセス管理を有効にします。 権限のあるアクセス管理の詳細と概要については、「 [365 Office 2010 での特権アクセス管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)」を参照してください。
 
-Office 365 組織で特権アクセスをセットアップして使用するには、次の手順を実行します。
+次の手順に従って、組織内で特権アクセスを設定して使用します。
 
 - [手順 1: 承認者のグループを作成する](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
@@ -54,7 +54,7 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 
 - [手順 2: 特権アクセスを有効にする](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
-    既定の承認者グループを使用して Office 365 で特権アクセスを明示的に有効にする必要があります。また、特権アクセス管理アクセス制御から除外する必要があるシステムアカウントのセットを含める必要があります。 このガイドのフェーズ3を開始する前に、必ず Office 365 組織で特権アクセスを有効にしてください。
+    既定の承認者グループを使用して Office 365 で特権アクセスを明示的に有効にする必要があります。また、特権アクセス管理アクセス制御から除外する必要があるシステムアカウントのセットを含める必要があります。 このガイドのフェーズ3を開始する前に、必ず組織で特権アクセスを有効にしてください。
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>フェーズ 3: 昇格された権限のあるタスクに承認が必要であることを確認する
 

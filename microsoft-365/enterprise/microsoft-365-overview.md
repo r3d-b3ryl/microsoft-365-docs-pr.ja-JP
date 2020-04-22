@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/07/2020
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
-ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504093"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631563"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -32,7 +32,7 @@ Microsoft 365 for enterprise は、すべてのユーザーがクリエイティ
 
 |||
 |:-------|:-----|
-| ローカルおよびクラウドベースのアプリと生産性サービス | Office 365 ProPlus、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。 |
+| ローカルおよびクラウドベースのアプリと生産性サービス | エンタープライズ向けの Microsoft 365 アプリ、PC と Mac 用の最新の Office アプリ (Word、Excel、PowerPoint、Outlook、その他)、電子メール用の最新のオンラインサービス、ファイルストレージとコラボレーション、会議などが含まれています。 |
 | Windows 10 Enterprise | 大規模および中規模の組織のニーズに対応しており、包括的な展開、デバイス、およびアプリの管理を使用して、最も生産性の高い、セキュリティで保護されたバージョンの Windows および IT プロフェッショナルをユーザーに提供します。 |
 | デバイス管理と高度なセキュリティサービス | Microsoft Intune が含まれています。これは、クラウドベースの enterprise mobility management (EMM) サービスであり、企業データを保護したまま、従業員の生産性を向上させるのに役立てることができます。 |
 |||
@@ -45,7 +45,7 @@ Microsoft 365 for enterprise は、3つのプランで利用できます。
 |:-------|:-----|
 | E3 | Microsoft 365 内のコア製品と機能にアクセスして、職場の生産性を向上させ、技術革新を促進します。 |
 | E5 | 高度な脅威保護、セキュリティ、コラボレーションツールなど、Microsoft 365 内の最新の製品と機能にアクセスします。 E3's のすべての機能に加え、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。 |
-| F3 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
+| F1 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
 |||
 
 Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。
@@ -55,7 +55,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 これらのオファーリングには、Microsoft 365 E5 に含まれている追加機能が含まれています。
 
-各プランに含まれているものの詳細については、「 [Microsoft Office outlook を使用して企業を変換する 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)」を参照してください。
+詳細については、「[各プランの特徴と機能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
 
 ## <a name="get-the-big-picture"></a>大きな画像を取得する
 
@@ -125,7 +125,7 @@ Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.
 
 ## <a name="additional-microsoft-365-solutions"></a>その他の Microsoft 365 ソリューション
 
-- [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
   小規模および中規模の企業 (SMB) 向けに、Office 365 の優れた生産性やコラボレーション機能と、ビジネス データを保護するためのデバイス管理およびセキュリティ ソリューションを統合します。
 

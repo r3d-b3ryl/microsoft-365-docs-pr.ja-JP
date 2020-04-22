@@ -1,5 +1,5 @@
 ---
-title: Office 365 Advanced Threat Protection で自動調査と応答を使用して侵害されたユーザーアカウントに対処する
+title: 自動調査と応答によって侵害されたユーザーアカウントに対処する
 keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護、侵害
 ms.author: deniseb
 author: denisebmsft
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能を使用して、侵害されたユーザーアカウントを検出して対処するプロセスを高速化する方法について説明します。
-ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280215"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635774"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>自動調査と応答によって侵害されたユーザーアカウントに対処する
 
@@ -60,7 +60,7 @@ ms.locfileid: "42280215"
 
 ### <a name="view-and-investigate-restricted-users"></a>制限されたユーザーの表示と調査
 
-制限されたユーザーのリストに移動するためのいくつかのオプションがあります。 たとえば、Office 365 セキュリティ & コンプライアンスセンターでは、[**脅威の管理** > ] [**制限付きユーザー**の**レビュー** > ] に移動できます。 次の手順では、**通知**ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性のあるさまざまな種類の通知を確認するための適切な方法です。
+制限されたユーザーのリストに移動するためのいくつかのオプションがあります。 たとえば、セキュリティ & コンプライアンスセンターでは、[**脅威の管理** > ] [**制限付きユーザー**の**レビュー** > ] に移動できます。 次の手順では、**通知**ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性のあるさまざまな種類の通知を確認するための適切な方法です。
 
 1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。
 
@@ -74,7 +74,7 @@ ms.locfileid: "42280215"
 
 ### <a name="view-details-about-automated-investigations"></a>自動調査に関する詳細を表示する
 
-自動化された調査が開始されると、その詳細と結果が Office 365 セキュリティ & コンプライアンスセンターに表示されるようになります。 [**脅威管理** > の**調査**] に移動し、詳細を表示する調査を選択します。
+自動調査が開始されたら、セキュリティ & コンプライアンスセンターでその詳細と結果を確認できます。 [**脅威管理** > の**調査**] に移動し、詳細を表示する調査を選択します。
 
 詳細については、「[調査の詳細を表示](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)する」を参照してください。
 
@@ -86,7 +86,7 @@ ms.locfileid: "42280215"
 
 - **疑わしいログインの警告は、唯一の指標としては利用しないで**ください。 ユーザーアカウントが侵害された場合、疑わしいログイン警告が発生するか、またはトリガーされない可能性があります。 場合によっては、警告をトリガーするアカウントが侵害された後に発生する一連のアクティビティになることがあります。 アラートの詳細を知りたいですか。 「 [Alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [空気機能を使用するために必要なアクセス許可を確認する](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)
 

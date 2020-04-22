@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、Outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
-ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
+ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061735"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633301"
 ---
-# <a name="enable-the-report-message-add-in-in-office-365"></a>Office 365 でレポートメッセージアドインを有効にする
+# <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
 > [!NOTE]
-> Office 365 組織の管理者が Exchange Online メールボックスを使用している場合は、Office 365 セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「[管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
+> Exchange Online メールボックスを使用している組織内の管理者である場合は、セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「[管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
 
 Outlook 用のレポートメッセージアドインと web 上の Outlook (旧称 Outlook Web App) を使用すると、ユーザーは、誤検知 (不良としてマークされた良好な電子メール) や誤検知 (無効な電子メールが許可されている) を Microsoft および分析のための関連会社に簡単に報告できます。 Microsoft では、これらの送信を使用して、電子メール保護テクノロジの有効性を向上させています。
 
@@ -38,16 +38,16 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
 個人ユーザーの場合は、[レポートメッセージアドインを自分自身に対して有効に](#get-the-report-message-add-in-for-yourself)することができます。
 
-Office 365 の全体管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。 これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。
+グローバル管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。 これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- レポートメッセージアドインは、ほとんどの Office 365 サブスクリプションと、次の製品で機能します。
+- レポートメッセージアドインは、ほとんどの Microsoft 365 サブスクリプションと、次の製品で機能します。
 
   - Outlook on the web
   - Outlook 2013 SP1 以降
   - Outlook 2016 for Mac
-  - Office 365 ProPlus に含まれている Outlook
+  - Outlook は、Microsoft 365 apps for Enterprise に含まれています。
 
 - レポートメッセージアドインは現在、次の場合には使用できません。
 
@@ -58,7 +58,7 @@ Office 365 の全体管理者または Exchange Online 管理者であり、Exch
 
 - 組織をインストールするには、OAuth 認証を使用するように組織を構成する必要があります。 詳細については、「[組織でアドインの一元展開が機能するかどうかを判断](../../admin/manage/centralized-deployment-of-add-ins.md)する」を参照してください。
 
-- 管理者は、グローバル管理者役割グループのメンバーである必要があります。 詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- 管理者は、グローバル管理者役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>自分用のレポートメッセージアドインを取得する
 
@@ -70,7 +70,7 @@ Office 365 の全体管理者または Exchange Online 管理者であり、Exch
 
 3. 表示されるダイアログで、使用条件とプライバシーポリシーを確認し、[**続行**] をクリックします。
 
-4. 職場または学校アカウントを使用して Office 365 にサインインします (一般法人向け)。または Microsoft アカウント (個人使用)。
+4. 職場または学校アカウントを使用してサインインします (一般法人向け)。または Microsoft アカウント (個人使用)。
 
 アドインがインストールされて有効になると、次のアイコンが表示されます。
 

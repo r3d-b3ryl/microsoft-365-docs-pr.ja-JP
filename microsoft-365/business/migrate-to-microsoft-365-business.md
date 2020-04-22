@@ -1,5 +1,5 @@
 ---
-title: Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
+title: Microsoft 365 Business Standard からの Microsoft 365 Business Premium へのアップグレード
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,35 +22,35 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Office 365 Business Premium と Microsoft 365 Business の相違点と、Microsoft 365 Business にアップグレードする方法について説明します。
-ms.openlocfilehash: 2ec77d96bef288bd33e4f67b74f91550f388a2c1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Microsoft 365 Business Standard と Microsoft 365 Business Premium の違いと、Microsoft 365 Business Premium にアップグレードする方法について説明します。
+ms.openlocfilehash: 83bdf3a770acae222dd80c5798228e67cce56e57
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561422"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633161"
 ---
-# <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Office 365 Business Premium からの Microsoft 365 Business へのアップグレード
+# <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Microsoft 365 Business Standard からの Microsoft 365 Business Premium へのアップグレード
 
-Office [365 for business のサブスクリプション](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)(たとえば、Office 365 business Premium) をご利用の場合は、Microsoft 365 business へのアップグレードが容易にできます。 次のものを追加する場合は、Microsoft 365 Business にアップグレードします。 
+Microsoft [365 for business のサブスクリプション](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)(たとえば、Microsoft 365 business Standard) をお持ちの場合は、Microsoft 365 business Premium へのアップグレードが容易にできます。 次のものを追加する場合は、Microsoft 365 Business Premium にアップグレードします。 
 - Windows 10 Pro (Windows 8 以降を実行している Pc に対して)
 - デバイス上のビジネスデータを管理する単純なコントロール
 - 高度なセキュリティ機能。
-Microsoft 365 Business の詳細については、「 [Microsoft.com](https://www.microsoft.com/microsoft-365/business) 」を参照してください。
+Microsoft 365 Business Premium の詳細については、 [Microsoft.com](https://www.microsoft.com/microsoft-365/business)を参照してください。
 
-## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 Business Premium と Microsoft 365 Business の違いは何ですか。
-これらの2つのプランを[Microsoft 365 Business Service の説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)に並べて比較しました。 
+## <a name="whats-the-difference-between-microsoft-365-business-standard-and-microsoft-365-business-premium"></a>Microsoft 365 Business Standard と Microsoft 365 Business Premium の違いは何ですか。
+Microsoft では、これら2つのプランを[Microsoft 365 Business Premium サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)に並べた比較を追加しました。 
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
-- **いつアップグレードを選択する必要がありますか。** アップグレードは、1つのプランに割り当てられた**すべてのユーザー**をアップグレードする場合に最適です。 [アップグレード] を選択すると、すべてのプランユーザーが同時に別のプランに切り替えられます。 1つのプランに割り当てられたすべてのユーザーをアップグレードしない場合は、新しいプラン (この場合は Microsoft 365 Business) のライセンスを購入し、アップグレードするユーザーごとに[これらのライセンスを個別に割り当て](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)ます。 
+- **いつアップグレードを選択する必要がありますか。** アップグレードは、1つのプランに割り当てられた**すべてのユーザー**をアップグレードする場合に最適です。 [アップグレード] を選択すると、すべてのプランユーザーが同時に別のプランに切り替えられます。 1つのプランに割り当てられたすべてのユーザーをアップグレードしない場合は、新しいプランのライセンスを購入し (この場合は Microsoft 365 Business Premium)、アップグレードする各ユーザーに[個別にこれらのライセンスを割り当て](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)ます。 
 - **一部のアドオンでアップグレードができない場合がある**アップグレードを開始しようとしていて、続行できないアドオンがある場合は、最初にアドオンを削除してから、後で必要になったときに追加することができます。 
 - **プランを前払いした場合**プリペイドプランには、簡単なアップグレードパスはありません。 お客様は、ストアで購入したプロダクト ID を使用してプランを設定することにより、プリペイドプランを所有しているかどうかを確認できます。 パートナーに連絡するか、Microsoft ストアに移動するか、プリペイドプランの期限が切れて新しいプランに切り替えるまで待機します。
 
-## <a name="upgrade-to-microsoft-365-business"></a>Microsoft 365 Business へのアップグレード
+## <a name="upgrade-to-microsoft-365-business-premium"></a>Microsoft 365 Business Premium へのアップグレード
 [新しい管理センター](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)で、次の手順を実行してライセンスを購入します。
 1. で<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>管理センターにサインインします。
-2. ナビゲーションウィンドウに移動して、[ **Billing** \> **Products & Services**] を選択します。 Office 365 サブスクリプションを検索し、それを選択して詳細を表示します。 
+2. ナビゲーションウィンドウに移動して、[ **Billing** \> **Products & Services**] を選択します。 サブスクリプションを検索し、それを選択して詳細を表示します。 
 
     ![スクリーンショットは、管理センターでサブスクリプションを検索して選択する方法を示しています。](../media/FindYourSubscription.png)
 
@@ -61,7 +61,7 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
   > [!NOTE]
   > **Azure Active Directory でのグループベースのライセンスでサブスクリプションのアップグレードがサポート**されていないというメッセージが表示された場合は、非常に大規模な組織でない限り、これは無視しても問題ありません。 このオプションを選択した組織では、グループベースのライセンスを使用していることに注意してください。
 
-4. 次に、アップグレード可能な Office プランの一覧を表示できます。 この場合は、Microsoft 365 のビジネスプランを検索してください。 このプランに含まれているすべての Office アプリとサービスを表示するには、下にスクロールします。 [ **Microsoft 365 business**] で、[**アップグレード**] を選択して、カートに microsoft 365 Business を追加します。
+4. 次に、アップグレード可能な Office プランの一覧を表示できます。 この場合は、Microsoft 365 Business Premium プランを検索してください。 このプランに含まれているすべての Office アプリとサービスを表示するには、下にスクロールします。 [ **Microsoft 365 Business premium**] で、[**アップグレード**] を選択して、カートに microsoft 365 Business premium を追加します。
 5. カート内:
     1. すべての現在のユーザーのライセンスが自動的に追加されます。 ライセンスの数が増える場合は、[それらのライセンスを個別に購入して割り当てる](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)必要があります。  
     2. 支払い方法は、月単位または年単位で調整できます。 ドロップダウンメニューから選択します。
@@ -71,11 +71,11 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
 1. プランの準備が整ったら、管理センターで追加のセットアップ手順を完了する必要がある場合があります。 ナビゲーションウィンドウで、[**ホーム**] を選択して、追加のセットアップ手順を完了します。
 
 > [!NOTE]
-> 不要になった Office 365 ライセンスに対して、日割り計算が行われます。 銀行口座またはクレジットカードは、新しいプランを設定してから2日後に課金されます。
+> 不要になった Microsoft 365 ライセンスに対して、日割り計算が行われます。 銀行口座またはクレジットカードは、新しいプランを設定してから2日後に課金されます。
   
 ## <a name="protect-user-devices-and-files"></a>ユーザーのデバイスとファイルを保護する
 
-これで、Microsoft 365 Business のライセンスが割り当てられました。次に、デバイスとファイルの保護を開始するための手順を完了します。 管理センターのナビゲーションウィンドウには、いくつかの新しいオプションを追加します。
+Microsoft 365 Business Premium ライセンスが割り当てられたので、デバイスとファイルの保護を開始するための手順をすべて完了しました。 管理センターのナビゲーションウィンドウには、いくつかの新しいオプションを追加します。
   
 1. 管理センターのナビゲーションウィンドウで、[**デバイス** \> **ポリシー**] に移動します。
     
@@ -96,6 +96,6 @@ Microsoft 365 Business の詳細については、「 [Microsoft.com](https://ww
     
   - Windows デバイスが Windows Pro Creator の更新プログラムを使用していない場合は、[それらを Windows Pro Creator update にアップグレード](upgrade-to-windows-pro-creators-update.md)する必要があります。
     
-  - Windows デバイスの手順については、「 [Microsoft 365 Business ユーザーの windows デバイスをセットアップ](set-up-windows-devices.md)する」を参照してください。 
+  - Windows デバイスの手順については、「 [Microsoft 365 Business Premium ユーザー向けに windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。 
     
-  - Android フォンおよび iPhones の手順については、「 [Microsoft 365 Business ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
+  - Android フォンおよび iPhones の手順については、「 [Microsoft 365 Business Premium ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 

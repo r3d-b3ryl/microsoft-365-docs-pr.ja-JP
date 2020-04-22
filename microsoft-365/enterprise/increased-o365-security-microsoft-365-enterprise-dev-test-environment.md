@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、microsoft 365 エンタープライズテスト環境で追加の Microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: 53205f0626ce55c5a9627339f3631964e3374a19
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058883"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631671"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 エンタープライズテスト環境の Microsoft 365 セキュリティの強化
 
@@ -43,7 +43,7 @@ ms.locfileid: "43058883"
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>フェーズ 2: Microsoft 365 のセキュリティ強化を構成する
 
-このフェーズでは、Microsoft 365 エンタープライズテスト環境に対して、強化された Microsoft 365 セキュリティを有効にします。 その他の詳細と設定については、「 [Configure Your Office 365 tenant for security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)」を参照してください。
+このフェーズでは、Microsoft 365 エンタープライズテスト環境に対して、強化された Microsoft 365 セキュリティを有効にします。 その他の詳細と設定については、「 [Configure your tenant for security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)」を参照してください。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>先進認証をサポートしていないアプリをブロックするように SharePoint Online を構成する
 
@@ -64,13 +64,13 @@ ms.locfileid: "43058883"
 
 Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsoft Teams は、悪意のあるファイルを誤って共有することから組織を保護します。
 
-1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
+1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
 
 2. 左側のナビゲーションウィンドウで、[**脅威の管理**] の下の [**ポリシー**] をクリックし、[ATP の**安全な添付ファイル**] をクリックします。 
 
 3. [ **SharePoint、OneDrive、Microsoft Teams のファイルを保護**する] で。 [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 
 ### <a name="enable-anti-malware"></a>マルウェア対策を有効にする
@@ -94,7 +94,7 @@ Office 365 の脅威管理は、組織のデータへのモバイルデバイス
 
 セキュリティダッシュボードを表示するには、次のようにします。
 
-1. 必要に応じて、 [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
+1. 必要に応じて、[セキュリティ & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
 
 2. 左側のナビゲーションウィンドウで、[**脅威の管理**] の下の [**ダッシュボード**] をクリックします。
 

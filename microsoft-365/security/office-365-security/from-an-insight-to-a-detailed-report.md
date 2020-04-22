@@ -17,16 +17,16 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: データ損失防止の例を使用して、セキュリティ&amp; /コンプライアンスセンターの詳細なレポートに移動する方法を参照してください。
-ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52c0f944e5319325f2ae478bd7fda34fa08319b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083061"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638072"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>ウォークスルー - インサイトから詳細レポートへの移動
 
-[Office 365 セキュリティ&amp;コンプライアンスセンターのレポートと洞察](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、洞察から詳細なレポートに簡単に移動する方法を確認することができます。 
+[セキュリティ&amp; /コンプライアンスセンターのレポートと洞察](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、洞察から詳細なレポートに簡単に移動する方法を確認することができます。 
   
 これは、 [ &amp;セキュリティコンプライアンスセンター](https://protection.office.com)のいくつかのチュートリアルの1つです。 その他のチュートリアルについては、「[関連項目](#related-topics)」セクションを参照してください。 
   

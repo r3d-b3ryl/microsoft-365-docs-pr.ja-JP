@@ -16,26 +16,26 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
-ms.openlocfilehash: 699de94a300ac8625e92d2c467edd461d72c7d2f
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 27f79252d2d08c374784064ac6a12bc4cc7725ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608176"
+ms.locfileid: "43637726"
 ---
-# <a name="configure-outbound-spam-filtering-in-office-365"></a>Office 365 で送信スパムフィルターを構成する
+# <a name="configure-outbound-spam-filtering"></a>送信スパム フィルターの構成
 
-Exchange Online または exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) のお客様の場合、Office 365 をご利用のお客様は、EOP を経由して送信される送信電子メールメッセージがスパムと通常の送信アクティビティに対して自動的にチェックされます。
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 顧客の場合、EOP を介して送信される送信電子メールメッセージは、スパムや通常の送信アクティビティに対して自動的にチェックされます。
 
-組織内のユーザーからの送信スパムは、通常、侵害されたアカウントを示しています。 疑わしい送信メッセージは、スパムの信頼レベルまたは SCL に関係なく、スパムとしてマークされ、[高リスクの配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してサービスの評価を保護します (つまり、Office 365 ソースの電子メールサーバーが IP 禁止一覧に保持されたままになります)。 管理者は、疑わしい送信電子メールアクティビティとブロックされたユーザーに対して通知[ポリシー](../../compliance/alert-policies.md)を使用して自動的に通知を受け取ります。
+組織内のユーザーからの送信スパムは、通常、侵害されたアカウントを示しています。 疑わしい送信メッセージは、スパムの信頼レベルまたは SCL に関係なく、スパムとしてマークされ、[高リスクの配信プール](high-risk-delivery-pool-for-outbound-messages.md)を介してルーティングされます。これは、サービスの評価を保護するため (つまり、Microsoft 365 ソースの電子メールサーバーを IP 禁止一覧に保持する) します。 管理者は、疑わしい送信電子メールアクティビティとブロックされたユーザーに対して通知[ポリシー](../../compliance/alert-policies.md)を使用して自動的に通知を受け取ります。
 
-EOP では、スパムに対する組織の全体的な防衛の一環として、送信スパムポリシーを使用しています。 詳細については、「[Office 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。
+EOP では、スパムに対する組織の全体的な防衛の一環として、送信スパムポリシーを使用しています。 詳細については、「[スパム対策保護](anti-spam-protection.md)」を参照してください。
 
 管理者は、既定の送信スパムポリシーを表示、編集、および構成することはできますが、削除することはできません。 よりきめ細かく制御する場合は、組織内の特定のユーザー、グループ、またはドメインに適用するカスタムの送信スパムポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-送信スパムポリシーを構成するには、Office 365 Security & コンプライアンスセンターまたは PowerShell (Office 365 お客様の場合は Exchange Online PowerShell) を使用します。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
+送信スパムポリシーは、セキュリティ & コンプライアンスセンターまたは PowerShell (Microsoft 365 お客様の場合は Exchange Online PowerShell) で構成できます。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
 
-## <a name="outbound-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Office 365 セキュリティ & コンプライアンスセンター vs Exchange online PowerShell または Exchange Online Protection PowerShell の送信スパムポリシー
+## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>セキュリティ & コンプライアンスセンター vs Exchange online PowerShell または Exchange Online Protection PowerShell の送信スパムポリシー
 
 EOP の送信スパムポリシーの基本的な要素は次のとおりです。
 
@@ -77,7 +77,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 送信スパムポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 送信スパムポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 送信スパムポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 送信スパムポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - 送信スパムポリシーの推奨設定については、「 [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)」を参照してください。
 
@@ -147,7 +147,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
      
    - **ユーザーあたりの最大受信者数**
 
-     有効な値は、0 ~ 1万です。 既定値は0です。これは、サービスの既定値が使用されることを意味します。 詳細については、「 [Office での制限を送信365のオプション](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。
+     有効な値は、0 ~ 1万です。 既定値は0です。これは、サービスの既定値が使用されることを意味します。 詳細については、「 [Microsoft 365 のオプション全体での送信制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。
 
      - **外部の時間**単位の制限: 1 時間あたりの外部受信者の最大数。
 
@@ -293,7 +293,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 この例では、次の設定を使用して Contoso 重役という新しい送信スパムフィルターポリシーを作成します。
 
-- 受信者数の制限は、既定値より小さい値に制限されます。 詳細については、「 [Office での制限を送信365のオプション](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。
+- 受信者数の制限は、既定値より小さい値に制限されます。 詳細については、「 [Microsoft 365 のオプション全体での送信制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。
 
 - いずれかの制限に達すると、ユーザーはメッセージを送信できなくなります。
 
@@ -495,7 +495,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 ## <a name="for-more-information"></a>関連情報
 
-[Office 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
+[制限されたユーザー ポータルからブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 

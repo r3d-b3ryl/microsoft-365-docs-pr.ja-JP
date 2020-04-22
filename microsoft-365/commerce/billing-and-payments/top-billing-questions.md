@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 の請求書についてよく寄せられる質問
+title: Microsoft 365 for business の請求に関する主な質問
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,15 +24,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: お客様のビジネス向けサブスクリプションの請求に関する質問に対する回答を確認できます。
-ms.openlocfilehash: 661339518f43531f656ee9960d7f005fd1398023
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: 'Microsoft 365 for business のサブスクリプションについて、請求に関する主な質問に対する回答を確認できます。 '
+ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826303"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634994"
 ---
-# <a name="top-billing-questions-for-business-subscriptions"></a>ビジネスサブスクリプションのための請求に関する主な質問
+# <a name="top-billing-questions-for-microsoft-365-for-business"></a>Microsoft 365 for business の請求に関する主な質問
 
 請求明細書についてご質問がありますか? ここでは、請求に関する上位の質問に対する回答を示します。
   
@@ -90,7 +90,7 @@ ms.locfileid: "42826303"
 「[支払い方法の管理](manage-payment-methods.md)」を参照してください。
   
 > [!NOTE]
-> 銀行口座による支払いは、一部の国や地域では使用できません。
+> 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
   
 ::: moniker-end
 
@@ -100,7 +100,7 @@ ms.locfileid: "42826303"
 「[支払い方法の管理](manage-payment-methods.md)」を参照してください。
   
 > [!NOTE]
-> 銀行口座による支払いは、一部の国や地域では使用できません。
+> 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
   
 ::: moniker-end
 
@@ -122,9 +122,9 @@ ms.locfileid: "42826303"
   
 1. Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">課金通知</a>] ページに移動するか、 **[課金** \>の請求書の**通知**] を選択します。
 
-2. [**請求明細書を電子メールの添付ファイルとして受け取る]** で、[**オン**] に切り替えます。
+2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 
-    これを [**オフ**] に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。
+    これを **[オフ]** に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。
 
 ::: moniker-end
 
@@ -135,9 +135,9 @@ ms.locfileid: "42826303"
   
 1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
 
-2. [**請求明細書を電子メールの添付ファイルとして受け取る]** で、[**オン**] に切り替えます。
+2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 
-    これを [**オフ**] に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。
+    これを **[オフ]** に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。
 
 ::: moniker-end
 

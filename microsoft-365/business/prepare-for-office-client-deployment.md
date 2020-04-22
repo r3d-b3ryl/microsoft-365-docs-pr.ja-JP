@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business による Office クライアントの展開を準備する
+title: Microsoft 365 for business による Office クライアントの展開を準備する
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 32ビット版の Office アプリを Windows 10 コンピューターに自動的にインストールして、更新したままにする方法について説明します。
-ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065110"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633101"
 ---
-# <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Microsoft 365 Business による Office クライアントの展開を準備する
+# <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Microsoft 365 for business による Office クライアントの展開を準備する
 
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Office アプリをクライアント コンピューターに自動的にインストールするための準備
 
-Microsoft 365 Business を使用して、Windows 10 コンピューターに32ビットの Office アプリを自動的にインストールし、更新プログラムを最新の状態に保つことができます。
+Microsoft 365 for business を使用して、Windows 10 コンピューターに32ビットの Office アプリを自動的にインストールし、更新プログラムを最新の状態に保つことができます。
   
 自動インストールは、エンドユーザーのコンピューターが Windows 10 Business 上にあり、次の場合に最適に機能します。
   
@@ -50,15 +50,15 @@ To determine if you have the Click-to-Run version of Office, in any Office app g
   
 次の PC を持つエンドユーザー:
   
-- Windows 10 Business ユーザー ライセンス、アクティブな Microsoft 365 Business ライセンス、および Windows 10 Creators Update が **あり** 、Azure Active Directory に参加している。 
+- には、Windows 10 Business ユーザーライセンス**があり**、アクティブな Microsoft 365 for business License、Windows 10 クリエーター更新プログラム、および Azure active Directory に参加しています。 
     
-- 64ビットの Office アプリ (例: Word、Excel、PowerPoint)**はありません**。 64ビットの Office アプリが必要な場合、この機能は、Microsoft の 365 Business 管理コンソールからの、64 2016 ビットのクイック実行バージョンの Office の起動をサポートしていないため、この機能は適していません。 
+- 64ビットの Office アプリ (例: Word、Excel、PowerPoint)**はありません**。 64ビット版の Office アプリが必要な場合は、Microsoft 365 for business 管理コンソールからの Office の 64 2016 ビット版クイック実行バージョンのトリガーはサポートされていないため、この機能は最適ではありません。 
     
-- 任意の 2016 Windows インストーラー (MSI) 単体アプリ (Visio や Project など) が **ない** 。 Microsoft 365 Business は office をクイック実行バージョンの Office 2016 にアップグレードします。これは Office 2016 MSI スタンドアロンアプリでは動作しません。 
+- 任意の 2016 Windows インストーラー (MSI) 単体アプリ (Visio や Project など) が **ない** 。 Microsoft 365 for business では、office をクイック実行バージョンの Office 2016 にアップグレードします。これは Office 2016 MSI スタンドアロンアプリでは動作しません。 
     
-次の表に、エンドユーザーまたは管理者が、その開始状態に応じて、Microsoft 365 Business 管理コンソールから Office 展開の32ビットクイック実行バージョンを正常にインストールするために必要となる可能性のあるアクションを示します。
+次の表に、エンドユーザーまたは管理者が、開始状態に応じて、Microsoft 365 for business 管理コンソールから Office のクイック実行バージョンを32正常にインストールできるようにするために必要なアクションを示します。
   
-|**Office インストールの開始状態**|**Microsoft 365 Business Office のインストール前に行うアクション**|**終了状態**|
+|**Office インストールの開始状態**|**Microsoft 365 for business Office のインストール前に実行するアクション**|**終了状態**|
 |:-----|:-----|:-----|
 |Office スイート製品がインストールされない  <br/> |なし  <br/> |クイック実行を使用して Office 2016 32 ビットがインストールされている  <br/> |
 |Office (2016 以前) の 32 ビット版クイック実行バージョンはあるが、単体アプリはない  <br/> |なし  <br/> |必要に応じて、最新の Office 2016 の 32 ビット版クイック実行バージョンにアップグレードする **\*** <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Office 365 で差出人セーフリストを作成する
+title: 信頼できる差出人リストの作成
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: 管理者は、受信メッセージでスパムフィルターをスキップできるようにする Office 365 と EOP で使用できるオプションについて説明しています。
-ms.openlocfilehash: 4b50a4b63377c0f3e7b12592c512449f1a3adc12
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: 管理者は、Microsoft 365 と EOP で使用可能なオプションについて説明します。これにより、受信メッセージでスパムフィルターをスキップすることができます。
+ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528631"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637678"
 ---
-# <a name="create-safe-sender-lists-in-office-365"></a>Office 365 で差出人セーフリストを作成する
+# <a name="create-safe-sender-lists"></a>信頼できる差出人リストの作成
 
-Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Office 365 お客様の場合、EOP では、ユーザーが信頼できる差出人からの電子メールを受信するための複数の方法が提供されます。 これらのオプションには、Exchange メールフロールール (トランスポートルールとも呼ばれます)、Outlook の信頼できる差出人、IP 許可一覧 (接続フィルター)、許可された送信者の一覧、またはスパム対策ポリシーの許可されたドメインの一覧があります。 これらのオプションは、[_差出人セーフリスト_] と考えることができます。
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 customer の場合、EOP では、ユーザーが信頼できる差出人からの電子メールを受信することを保証する複数の方法が提供されます。 これらのオプションには、Exchange メールフロールール (トランスポートルールとも呼ばれます)、Outlook の信頼できる差出人、IP 許可一覧 (接続フィルター)、許可された送信者の一覧、またはスパム対策ポリシーの許可されたドメインの一覧があります。 これらのオプションは、[_差出人セーフリスト_] と考えることができます。
 
 利用可能な差出人セーフリストは、次の一覧に記載されています。
 

@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターでカスタムの日付範囲とフィルターを使用してレポートを設定およびダウンロードする方法について説明します。
-ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8807928141704339913e3a30c7804aad5e018d4a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088000"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638370"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでカスタムレポートを設定およびダウンロードする
 
@@ -30,7 +30,7 @@ ms.locfileid: "42088000"
 ## <a name="download-a-custom-report"></a>カスタムレポートをダウンロードする
 
 > [!IMPORTANT]
-> [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っていることを確認してください。 一般に、Office 365 の全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、 &amp;セキュリティ/コンプライアンスセンターのレポートにアクセスできます。 
+> [セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っていることを確認してください。 一般に、全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、セキュリティ&amp;コンプライアンスセンターでレポートにアクセスできます。 
   
 1. [セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード**] に移動します。
     
@@ -46,7 +46,7 @@ ms.locfileid: "42088000"
     
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+[セキュリティ&amp; /コンプライアンスセンターのレポートと分析](reports-and-insights-in-security-and-compliance.md)
   
 [セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する](create-a-schedule-for-a-report.md)
   

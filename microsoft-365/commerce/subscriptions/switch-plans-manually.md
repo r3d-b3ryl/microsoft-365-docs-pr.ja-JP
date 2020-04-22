@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 プランを手動で切り替える
+title: Microsoft 365 for business プランを手動で切り替える
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: 新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認して、Office 365 for business サブスクリプションを手動で切り替えます。
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: 新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認して、Microsoft 365 for business サブスクリプションを手動で切り替えます。
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540845"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636536"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>一般法人向け Office 365 プランを手動で切り替える
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>Microsoft 365 for business プランを手動で切り替える
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> この記事は、古い管理センターに適用されます。 新しい管理センターに関する記事を表示するには、「[プランを手動で変更](change-plans-manually.md)する」を参照してください。 すべての Microsoft 365 管理者が新しい管理センターを利用できます。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
-
+> この記事は、古い管理センターに適用されます。 新しい管理センターに関する記事を表示するには、「[プランを手動で変更](change-plans-manually.md)する」を参照してください。 新しい管理センターは、Microsoft 365 のすべての管理者が利用でき、ホームページの上部にある [**新しい管理センター**の切り替え] を選択して選択することができます。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>手順 1: プランを切り替える方法を決定する
@@ -56,11 +54,11 @@ ms.locfileid: "43540845"
   
 - または
   
- **新しいサブスクリプションとライセンスを購入する:** 「 [別の一般法人向け Office 365 を購入する](../buy-another-subscription.md)」の手順に従って新しいサブスクリプションを購入します。
+ **新しいサブスクリプションとライセンスを購入します。**「[別の Microsoft 365 for business サブスクリプションを購入](../buy-another-subscription.md)する」の手順に従って、新しいサブスクリプションを購入します。
   
 必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動するユーザーの電子メールアドレスを確認します。 そのメール アドレスに @contoso.com が含まれている場合、contoso.com の新しいサブスクリプションを購入する必要があります。 移動する各ユーザーのライセンスを含めます。
   
- **プランの選択についてサポートが必要な場合**は、「 [Office 365 for business 製品の比較](https://go.microsoft.com/fwlink/p/?linkid=842056)ページ」または「サポートへのお[問い合わせ](../../admin/contact-support-for-business-products.md)」を参照してください。
+ **プランの選択についてサポートが必要な場合**は、 [Microsoft 365 for business 製品の比較](https://go.microsoft.com/fwlink/p/?linkid=842056)ページ、またはサポートへのお[問い合わせ](../../admin/contact-support-for-business-products.md)を参照してください。
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
 
@@ -86,7 +84,7 @@ ms.locfileid: "43540845"
 
     ユーザーの移動元のサブスクリプションと移動先のサブスクリプションが共に一覧表示されている必要があります。最初に確認したときに新しいサブスクリプションが表示されない場合は、後でもう一度確認してみてください。両方のサブスクリプションが [ **アクティブ**] に一覧表示されていることを確認します。新しいサブスクリプションが一覧に表示されない、またはアクティブではない場合は[新しいサブスクリプションが一覧に表示されない、またはアクティブではない](#the-new-subscription-isnt-listed-or-isnt-active)を参照してください。
 
-   **新しい一般法人向け Office 365 サブスクリプションと使用可能なライセンス数**
+   **利用可能なライセンスを使用した新しい Microsoft 365 for business サブスクリプション**
 
     ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ ms.locfileid: "43540845"
 
     各ユーザーには、サブスクリプションと一致するライセンスが必要です。このため、10 ユーザーを Office 365 Enterprise E5 に移動する場合は、10 個のライセンスが使用可能であることを確認する必要があります。この画像では、Office 365 Enterprise E5 用の 10 個のライセンスが購入されており、その 10 個すべてのライセンスが割り当て可能です。
 
-4. **新しいサブスクリプションのライセンスがさらに必要ですか?** [**サブスクリプション**] ページに移動し、 [Office 365 for business サブスクリプションのライセンスを購入](../licenses/buy-licenses.md)します。
+4. **新しいサブスクリプションのライセンスがさらに必要ですか?** [**サブスクリプション**] ページに移動し、 [Microsoft 365 for business サブスクリプションのライセンスを購入](../licenses/buy-licenses.md)します。
   
     [古いライセンスの処理](#what-about-the-old-licenses)」を参照してください。
 

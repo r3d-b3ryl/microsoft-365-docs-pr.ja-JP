@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: '各地域において一般法人向け Office 365 サブスクリプションに課せられる税額について説明します。 '
+description: 'さまざまな地域の Microsoft 365 for business サブスクリプションに対して請求される税の量を確認します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826315"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635006"
 ---
 # <a name="tax-information"></a>税金情報
 
-マイクロソフトによる microsoft 365 管理センターの購入に関する税金は、お客様の会社の住所、または配送先住所によって異なります。 米国の場合は、連邦雇用機関の識別番号 (FEIN) を指定する必要があります。
+Microsoft を介してなされた Microsoft 365 管理センターの購入に関する納税額は、お客様の勤務先住所 (配送先の住所が異なる場合は配送先の住所) によって決まります。 米国の場合は、連邦雇用機関の識別番号 (FEIN) を指定する必要があります。
 
 これらの国の企業は、次のような VAT 番号を提供できます。
 
@@ -114,7 +114,7 @@ ms.locfileid: "42826315"
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>VAT ID を追加する (EU 加盟国のみ)
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. 更新するサブスクリプションのサブスクリプション カードを検索します。
 
@@ -160,7 +160,7 @@ ms.locfileid: "42826315"
 
 売上税は、単価に対して計算されてから集計されます。
 
-例:
+以下に例を示します。
 
 >*(単価 X 税率)X 数量 = 総売上税*
 

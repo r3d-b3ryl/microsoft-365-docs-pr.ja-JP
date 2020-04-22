@@ -12,25 +12,25 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
-ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: f69b1772a6eddb6cb85441e52c470cf0bb506a3a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081450"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638430"
 ---
 # <a name="eop-features"></a>EOP の機能
 
 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
 
 > [!TIP]
-> 「[ビジネス向けの Office 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)」は新機能を調べるためのお勧めの情報源です。異なる EOP サブスクリプション プランで使用可能な機能のより広範な説明については、「[Exchange Online Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)」を参照してください。
+> [Microsoft 365 for business のロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)は、今後の新機能に関する情報を検索するのに適したリソースです。 異なる EOP サブスクリプション プランで使用可能な機能のより広範な説明については、「[Exchange Online Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)」を参照してください。
 
 |||
 |---|---|
 |**機能**|**説明**|
 |**スパム対策保護**||
-|受信スパム検出|受信スパム対策保護機能は常に有効であり、無効にすることはできません。接続フィルターやコンテンツ フィルター ポリシーを使用して、カスタムの設定を構成できます。  <br/><br/> EOP スタンドアロンのお客様の場合、既定では、EOP コンテンツフィルターはスパム検出メッセージを各受信者の迷惑メールフォルダーに送信します。 ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするために、EOP によって追加されたスパムヘッダーを検出するために、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「 [Configure STANDALONE EOP to the Spam Email folder to the hybrid 環境」](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)を参照してください。|
+|受信スパム検出|受信スパム対策保護機能は常に有効であり、無効にすることはできません。接続フィルターやコンテンツ フィルター ポリシーを使用して、カスタムの設定を構成できます。  <br/><br/> EOP スタンドアロンのお客様の場合、既定では、EOP コンテンツフィルターはスパム検出メッセージを各受信者の迷惑メールフォルダーに送信します。 ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするために、EOP によって追加されたスパムヘッダーを検出するために、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。|
 |送信スパム検出|送信電子メールを送信するサービスを使用している場合は送信スパム対策保護機能が常時有効になっているため、このサービスを利用している組織と対象受信者は保護されます。 送信スパム フィルターは、受信フィルターと同様、接続フィルターとコンテンツ フィルターで構成されています。 送信スパム フィルターの設定は構成できませんが、疑わしい送信メッセージとブロックされた送信メッセージを管理者に通知するよう構成するために使用する送信スパム ポリシーの設定が存在します。 詳細については、「 [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)」を参照してください。|
 |NDR バックスキャター保護|Ndr バック散布の詳細については、「 [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md) 」および「[バックスキャター messages and EOP](backscatter-messages-and-eop.md)」の「ndr バックスキャター」設定を参照してください。|
 |バルク メール フィルタリング|EOP にはバルク メール メッセージを識別するための強力な検出方法があります。 ユーザー インターフェイス経由でバルク メール メッセージをマークするようにサービスを構成できます。 メールフロールールを作成して、バルクメールメッセージヘッダースタンプを検索することによって、より積極的にバルクメールをフィルター処理することもできます。 バルクメールの詳細については、「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」および関連するサブトピックを参照してください。|
@@ -43,7 +43,7 @@ ms.locfileid: "43081450"
 |スパム メールを積極的にフィルター処理する拡張オプションの構成機能|詳細については、「 [office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する (構成場所)」および「 [Office 365 の高度なスパムフィルター (ASF) 設定](advanced-spam-filtering-asf-options.md)(各オプションの機能に関する具体的な詳細情報を提供します)」を参照してください。|
 |国際スパム フィルタリング|EOP を構成して、特定の言語で書かれたメッセージまたは特定の国や地域から送信されたメッセージをフィルターできます。 最大 86 言語、250 地域を構成できます。 サービスが信頼度の高いスパムに対して構成されたアクションを適用します。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |Outlook または web 上の Outlook (旧称 Outlook Web App) を使用してスパムを管理する|管理者およびエンド ユーザーは、安全な送信者の一覧および受信拒否送信者の一覧を作成できます。 詳細情報: <br/>* **Web 上の Outlook**:[ブロックまたは許可 (迷惑メール設定)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)を参照してください。  <br/>* **Outlook**: 「[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。 <br/><br/> EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。|
-|誤検知 (正常なメールが不良としてマークされている) と、Microsoft への誤検知 (無効な電子メールを許可) を報告します。|詳細については、「 [Microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。|
+|誤検知 (正常なメールが不良としてマークされている) と、Microsoft への誤検知 (無効な電子メールを許可) を報告します。|詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。|
 |エンドユーザー スパム検疫通知|詳細については、「 [Office 365 でのエンドユーザースパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」および「[エンドユーザーのスパム通知を構成する](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)」を参照してください。|
 |Web ページを使用して検疫内のメッセージを表示、検索、管理する|これは、エンドユーザーおよび管理者が使用できます。 詳細については、「 [Office 365 での管理者としての検疫済みメッセージとファイルの管理」](manage-quarantined-messages-and-files.md)または「[ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
 |スパム検疫済みメッセージのヘッダーを表示する|検疫でメッセージヘッダーを表示した後で、ヘッダーテキストを[メッセージヘッダーアナライザー](https://mha.azurewebsites.net/)にコピーして、メッセージに何が起こったかについての情報を確認することもできます。|
@@ -59,7 +59,7 @@ ms.locfileid: "43081450"
 |条件付きメール ルーティング|詳細については、「 [Scenario: Exchange Online での条件付きメールルーティング](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。|
 |便宜的な TLS または強制 TLS|便宜的または強制 TLS をコネクタで使用できます。 Oplock tls は tls 接続を試行しますが、TLS 接続が失敗した場合は SMTP 接続を使用します。 強制 tls は tls 接続を強制します。つまり、TLS 接続が失敗した場合、メッセージは拒否されます。 TLS、セキュリティ、およびコネクタの詳細については、「[Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)」をご覧ください。|
 |地域ルーティング (特定の地域へのメール フローの制限)|詳細については、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」の「EOP データセンター」セクションを参照してください。|
-|SMTP 接続チェック ツール|このツールを使用してメールフローをテストする方法の詳細については、「 [Office 365 コネクタを検証することによるメールフローのテスト](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)」を参照してください。|
+|SMTP 接続チェック ツール|このツールを使用してメールフローをテストする方法の詳細については、「 [Microsoft 365 コネクタを検証することによるメールフローのテスト](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)」を参照してください。|
 |一致サブドメイン|承認済みドメインのサブドメインとの間でメールフローを有効にする方法の詳細については、「 [EOP」の「メールフロー](mail-flow-in-eop.md)」を参照してください。|
 |**メール フロー ルール**||
 |ポリシー ベースのフィルタリングとアクション|カスタムポリシーは、Exchange メールフロールールに基づいています。 ドメイン、キーワード、ファイル名、ファイル タイプ、件名行、メッセージ本文、送信者、受信者、ヘッダー、IP アドレスによるフィルターが可能です。 詳細については、「 [Mail flow rules (transport rules) In Exchange Online Protection](mail-flow-rules-transport-rules-0.md)」を参照してください。|
@@ -76,11 +76,11 @@ ms.locfileid: "43081450"
 |**管理**||
 |Web ベースの管理|EOP 管理者は、60言語でサポートされている Exchange 管理センター (EAC) インターフェイスを介してサービスを管理できます。 詳細については、「exchange [Online Protection の exchange 管理センター](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。|
 |ディレクトリ同期|ディレクトリ同期は、Azure Active Directory 同期ツール から利用できます。詳細については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」セクションを参照してください。  |
-|ディレクトリ ベースのエッジ ブロック (DBEB)|DBEB 機能では、サービス ネットワーク境界で無効な受信者宛てのメッセージを拒否することができます。 管理者は DBEB を使用することにより、メールが有効な受信者を Office 365 に追加したり、Office 365 内に存在しない電子メール アドレスに送信されたすべてのメッセージをブロックしたりすることができます。 DBEB の構成の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。|
+|ディレクトリ ベースのエッジ ブロック (DBEB)|DBEB 機能では、サービス ネットワーク境界で無効な受信者宛てのメッセージを拒否することができます。 DBEB を使用すると、管理者はメールが有効な受信者を Microsoft 365 に追加し、Microsoft 365 に存在しない電子メールアドレスに送信されたすべてのメッセージをブロックすることができます。 DBEB の構成の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。|
 |リモート Windows PowerShell へのアクセス|すべての EOP 機能はリモート Windows PowerShell で利用できます。 詳細については、「 [Exchange Online Protection の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)」を参照してください。|
 |**レポート作成とログ記録**||
 |メッセージ追跡|メッセージ追跡機能を使用すると、管理者はサービスを経由する電子メール メッセージを追跡できます。 これは、対象の電子メール メッセージがサービスによって受信、拒否、延期、または配信されたかどうかを判断する上で役立ちます。 したがって、効率良くユーザーの質問に回答したり、メール フローの問題をトラブルシューティングしたり、ポリシーの変更を検証したり、テクニカル サポートに支援を求める必要性を減らしたりできます。 詳細については、「 [Trace an email message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)」を参照してください。|
-|Web ベースのレポート|Microsoft 365 管理センターのメール保護レポートは、メッセージングデータを提供します。 たとえば、検出されたスパムとマルウェアの量や、メールフロールールが一致した頻度を監視できます。 これらの対話式レポートを使用すると、概要データに関する視覚的なレポートを素早く取得し、過去 90 日間の各メッセージの詳細を確認できます。 詳細については、「[Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)」を参照してください。|
+|Web ベースのレポート|Microsoft 365 管理センターのメール保護レポートは、メッセージングデータを提供します。 たとえば、検出されたスパムとマルウェアの量や、メールフロールールが一致した頻度を監視できます。 これらの対話式レポートを使用すると、概要データに関する視覚的なレポートを素早く取得し、過去 90 日間の各メッセージの詳細を確認できます。 詳細については、「[メール保護レポートを使用してマルウェア、スパム、ルールの検出に関するデータを表示する](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)」を参照してください。|
 |監査ログ|管理者の役割グループ レポートおよび管理者監査ログは、EOP 管理者が利用できます。詳細については、「[EOP の監査レポート](auditing-reports-in-eop.md)」を参照してください。  |
 |**サービス レベル アグリーメント (SLA) とサポート**||
 |スパム有効性 SLA|\>99%|

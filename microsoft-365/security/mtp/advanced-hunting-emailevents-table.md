@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの EmailEvents テーブル
-description: 高度な検索スキーマの EmailEvents テーブル内の　Office 365 メールに関連付けられているイベントについて説明します
-keywords: 高度な検索、脅威の検索、サイバー脅威の検出、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、EmailEvents、network message id、sender、recipient、添付ファイル id、添付ファイル名、マルウェア verdict、フィッシング verdict、添付ファイル数、リンク数、url 数
+description: 高度な検索スキーマの EmailEvents テーブルで Microsoft メールに関連付けられているイベントについて説明します。
+keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、EmailEvents、network message id、sender、recipient、attachment id、attachment name、マルウェア verdict、フィッシング verdict、attachment count、link count、url 数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234786"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633533"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "42234786"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | イベントが記録された日付と時刻 |
 | `EmailId` | string | 一意のメールと受信者の識別子 |
-| `NetworkMessageId` | string | Office 365 により生成されたメールの一意の識別子 |
+| `NetworkMessageId` | string | Microsoft 365 によって生成される電子メールの一意識別子。 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `SenderMailFromAddress` | string | MAIL FROM ヘッダーの送信者メール アドレス (エンベロープ送信者またはリターン パス アドレスとも呼ばれる) |
 | `SenderFromAddress` | string | 受信者のメール クライアントで受信者に表示される、MAIL FROM ヘッダーの送信者メール アドレス |

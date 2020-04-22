@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: 新しい追加機能について説明します。
-ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1f926165678b57ec46195d525f2fcdaa6976501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594688"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632415"
 ---
 # <a name="allotment-basics"></a>サービス単位の基本
 
@@ -33,7 +33,7 @@ ms.locfileid: "41594688"
 
 [グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)のライセンス要件を満たす必要があります。
 
-ユーザーが利用できる Office 365 製品と共に、次のものを使用できます。
+ユーザーが利用できる製品であれば、次のいずれかを使用できます。
 
 - Office スイートとスタンドアロン製品
 - エンタープライズおよび Mobility 製品

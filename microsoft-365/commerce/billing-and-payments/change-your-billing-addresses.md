@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 の請求先住所を変更する
+title: 請求先住所を変更する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: 一般法人向け Office 365 の請求先住所を更新する方法について説明します。課金通知を受け取るために使用するメール アドレスを更新することもできます。
+description: Microsoft 365 for business の請求先住所を更新する方法について説明します。請求通知の受信に使用される電子メールアドレスを更新することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142313"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632721"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>一般法人向け Office 365 の請求先住所を変更する
+# <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
 課金内容や請求書には次の 3 つの住所が含まれています。
   
@@ -60,9 +60,6 @@ ms.locfileid: "43142313"
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>販売先住所を変更する
 
@@ -158,9 +155,9 @@ ms.locfileid: "43142313"
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>請求通知の送り先である連絡用電子メール アドレスを変更する
 
-既定では、組織の請求通知は、組織のすべてのグローバル管理者および課金管理者の Office 365 メール アドレスおよび連絡用電子メール アドレスに送信されます。各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
+既定では、組織の請求通知は、組織内のすべてのグローバルおよび課金管理者の Microsoft 電子メールアドレスおよび連絡用電子メールアドレスに送信されます。 各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
   
-1. 職場や学校のアカウントを使って、グローバル管理者として Office 365 にサインインします。サインインの方法は[こちら](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)を参照してください。
+1. グローバル管理者として、職場または学校のアカウントを使用して Microsoft 365 にサインインします。[サインインする方法について説明](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)します。
 
 2. [**ユーザー アイコン**] を選択し、[**マイ アカウント**] を選択します。
   
@@ -173,9 +170,7 @@ ms.locfileid: "43142313"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>別の管理者の連絡用メール アドレスを変更する
 
 組織内の他のグローバル カタログや課金管理者の連絡用メール アドレスを変更することもできます。
-
-::: moniker range="o365-worldwide"
-
+  
 1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
 
 ::: moniker-end
@@ -203,3 +198,5 @@ ms.locfileid: "43142313"
 [請求書を把握する](understand-your-invoice2.md)
 
 [サブスクリプションの代金を支払う](pay-for-your-subscription.md)
+
+[サブスクリプションと課金 - 管理者向けヘルプ](../index.yml)
