@@ -188,7 +188,9 @@
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
     - name: Microsoft 365 Enterprise 展開コンテンツの変更
       href: microsoft-365-deploment-guide-changes.md
-- name: デスクトップ展開センター
+    - name: Microsoft 365 サービス正常性の状態
+      href: microsoft-365-service-health.md
+- name: 最新デスクトップ展開センター
   href: desktop-deployment-center-home.md
   items:
     - name: はじめに - ユーザー、プロセス、およびテクノロジのガイダンス

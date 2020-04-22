@@ -231,7 +231,7 @@
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: スパム対策ポリシーの構成
                       href: ./office-365-security/configure-your-spam-filter-policies.md
-                    - name: 接続フィルター ポリシーを構成する
+                    - name: 接続フィルターの構成
                       href: ./office-365-security/configure-the-connection-filter-policy.md
                     - name: 受信拒否リストの作成
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
