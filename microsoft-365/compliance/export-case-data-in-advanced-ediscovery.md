@@ -1,5 +1,5 @@
 ---
-title: Office 365 でのケースデータのエクスポート Advanced eDiscovery
+title: 高度な電子情報開示でケースデータをエクスポートする
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,36 +14,36 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 'Office 365 の高度な電子情報開示のエクスポートプロセスを使用して、電子情報開示ケースのデータおよびレビューの結果をエクスポートするためのガイドラインについて説明します。  '
-ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '高度な電子情報開示のエクスポートプロセスを使用して、電子情報開示ケースのデータおよびレビューの結果をエクスポートするためのガイドラインについて説明します。  '
+ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558218"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615941"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-classic"></a><span data-ttu-id="27724-103">高度な電子情報開示でケースデータをエクスポートする (クラシック)</span><span class="sxs-lookup"><span data-stu-id="27724-103">Export case data in Advanced eDiscovery (classic)</span></span>
+# <a name="export-case-data-in-advanced-ediscovery-classic"></a><span data-ttu-id="c438b-103">高度な電子情報開示でケースデータをエクスポートする (クラシック)</span><span class="sxs-lookup"><span data-stu-id="c438b-103">Export case data in Advanced eDiscovery (classic)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="27724-p101">Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。</span><span class="sxs-lookup"><span data-stu-id="27724-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="c438b-p101">Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。</span><span class="sxs-lookup"><span data-stu-id="c438b-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-<span data-ttu-id="27724-106">上級電子情報開示のエクスポートプロセスでは、高度な電子情報開示のコンテンツと外部レビューの結果をエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="27724-106">The Export process in Advanced eDiscovery enables the exporting of Advanced eDiscovery content and results for external review.</span></span> 
+<span data-ttu-id="c438b-106">上級電子情報開示のエクスポートプロセスでは、高度な電子情報開示のコンテンツと外部レビューの結果をエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="c438b-106">The Export process in Advanced eDiscovery enables the exporting of Advanced eDiscovery content and results for external review.</span></span> 
   
-## <a name="guidelines-for-exporting-data"></a><span data-ttu-id="27724-107">データをエクスポートするためのガイドライン</span><span class="sxs-lookup"><span data-stu-id="27724-107">Guidelines for exporting data</span></span>
+## <a name="guidelines-for-exporting-data"></a><span data-ttu-id="c438b-107">データをエクスポートするためのガイドライン</span><span class="sxs-lookup"><span data-stu-id="c438b-107">Guidelines for exporting data</span></span>
 
-- <span data-ttu-id="27724-108">高度な電子情報開示から生成されたエクスポートデータを確認できます。たとえば、関連する要素をドキュメントレビューチームに配布したり、外部ドキュメントレビューツールにエクスポートしたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="27724-108">You can review the export data generated from Advanced eDiscovery, for example, to distribute pertinent elements to the document review team or export to an external document review tool.</span></span>
+- <span data-ttu-id="c438b-108">高度な電子情報開示から生成されたエクスポートデータを確認できます。たとえば、関連する要素をドキュメントレビューチームに配布したり、外部ドキュメントレビューツールにエクスポートしたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="c438b-108">You can review the export data generated from Advanced eDiscovery, for example, to distribute pertinent elements to the document review team or export to an external document review tool.</span></span>
     
-- <span data-ttu-id="27724-109">高度な電子情報開示処理中およびその後に、いつでもエクスポート出力を生成して操作できます。</span><span class="sxs-lookup"><span data-stu-id="27724-109">You can generate and manipulate the export output at any time during and after Advanced eDiscovery processing.</span></span> <span data-ttu-id="27724-110">標準のシナリオでは、関連性トレーニングとバッチ計算が正常に完了した後で、重要な結果が得られます。</span><span class="sxs-lookup"><span data-stu-id="27724-110">In a standard scenario, significant results are achieved after Relevance training and Batch calculation are successfully completed.</span></span> <span data-ttu-id="27724-111">たとえば、最も関連のあるファイル1000のサンプルを生成し、高度な電子情報開示のパフォーマンスを評価してから進めることができます。</span><span class="sxs-lookup"><span data-stu-id="27724-111">For example, you can generate a sample of the 1,000 most relevant files and evaluate Advanced eDiscovery performance before you proceed.</span></span>
+- <span data-ttu-id="c438b-109">高度な電子情報開示処理中およびその後に、いつでもエクスポート出力を生成して操作できます。</span><span class="sxs-lookup"><span data-stu-id="c438b-109">You can generate and manipulate the export output at any time during and after Advanced eDiscovery processing.</span></span> <span data-ttu-id="c438b-110">標準のシナリオでは、関連性トレーニングとバッチ計算が正常に完了した後で、重要な結果が得られます。</span><span class="sxs-lookup"><span data-stu-id="c438b-110">In a standard scenario, significant results are achieved after Relevance training and Batch calculation are successfully completed.</span></span> <span data-ttu-id="c438b-111">たとえば、最も関連のあるファイル1000のサンプルを生成し、高度な電子情報開示のパフォーマンスを評価してから進めることができます。</span><span class="sxs-lookup"><span data-stu-id="c438b-111">For example, you can generate a sample of the 1,000 most relevant files and evaluate Advanced eDiscovery performance before you proceed.</span></span>
     
-- <span data-ttu-id="27724-112">データベースに大量のデータをエクスポートすると、必要なデータベースのサイズや、高度な電子情報開示データベースの必要な構成に大きな影響を与える可能性があります。</span><span class="sxs-lookup"><span data-stu-id="27724-112">Exporting a large amount of data to a database may have a significant impact on the required database size and the required configuration of the Advanced eDiscovery database.</span></span>
+- <span data-ttu-id="c438b-112">データベースに大量のデータをエクスポートすると、必要なデータベースのサイズや、高度な電子情報開示データベースの必要な構成に大きな影響を与える可能性があります。</span><span class="sxs-lookup"><span data-stu-id="c438b-112">Exporting a large amount of data to a database may have a significant impact on the required database size and the required configuration of the Advanced eDiscovery database.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="27724-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="27724-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c438b-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="c438b-113">See also</span></span>
 
-[<span data-ttu-id="27724-114">高度な電子情報開示 (クラシック)</span><span class="sxs-lookup"><span data-stu-id="27724-114">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="c438b-114">Advanced eDiscovery (クラシック)</span><span class="sxs-lookup"><span data-stu-id="c438b-114">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="27724-115">結果のエクスポート</span><span class="sxs-lookup"><span data-stu-id="27724-115">Exporting results </span></span>](export-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="c438b-115">結果のエクスポート</span><span class="sxs-lookup"><span data-stu-id="c438b-115">Exporting results </span></span>](export-results-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="27724-116">バッチ履歴の表示と結果のエクスポート</span><span class="sxs-lookup"><span data-stu-id="27724-116">Viewing Batch history and Export results</span></span>](view-batch-history-and-export-past-results.md)
+[<span data-ttu-id="c438b-116">バッチ履歴の表示と結果のエクスポート</span><span class="sxs-lookup"><span data-stu-id="c438b-116">Viewing Batch history and Export results</span></span>](view-batch-history-and-export-past-results.md)
 
-[<span data-ttu-id="27724-117">レポート フィールドのエクスポート</span><span class="sxs-lookup"><span data-stu-id="27724-117">Export report fields</span></span>](export-report-fields-in-advanced-ediscovery.md)
+[<span data-ttu-id="c438b-117">レポート フィールドのエクスポート</span><span class="sxs-lookup"><span data-stu-id="c438b-117">Export report fields</span></span>](export-report-fields-in-advanced-ediscovery.md)
 

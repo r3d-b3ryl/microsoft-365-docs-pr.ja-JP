@@ -1,5 +1,5 @@
 ---
-title: Office 365 の詳細な電子情報開示のドキュメントの類似性を理解する
+title: 高度な電子情報開示でのドキュメントの類似性を理解する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,55 +15,55 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'ドキュメントの類似性の値を確認します。2つのファイルの resemblance の最小レベルは、重複していると見なされ、Office 365 の高度な電子情報開示で機能します。 '
-ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '「ドキュメントの類似性」の値を確認します。2つのファイルの resemblance の最小レベルは、詳細な電子情報開示で機能します。 '
+ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557667"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633412"
 ---
-# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a><span data-ttu-id="91c5d-103">Advanced eDiscovery でのドキュメントの類似性 (クラシック) について</span><span class="sxs-lookup"><span data-stu-id="91c5d-103">Understand document similarity in Advanced eDiscovery (classic)</span></span>
+# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a><span data-ttu-id="fb359-103">Advanced eDiscovery でのドキュメントの類似性 (クラシック) について</span><span class="sxs-lookup"><span data-stu-id="fb359-103">Understand document similarity in Advanced eDiscovery (classic)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="91c5d-p101">Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。</span><span class="sxs-lookup"><span data-stu-id="91c5d-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="fb359-p101">Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。</span><span class="sxs-lookup"><span data-stu-id="fb359-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-<span data-ttu-id="91c5d-106">詳細な電子情報開示では、ドキュメントの類似性は、2つのドキュメントがほぼ重複していると見なされるために必要な resemblance の最小レベルです。</span><span class="sxs-lookup"><span data-stu-id="91c5d-106">In Advanced eDiscovery, Document Similarity is the minimal level of resemblance required for two documents to be considered as near-duplicates.</span></span>
+<span data-ttu-id="fb359-106">詳細な電子情報開示では、ドキュメントの類似性は、2つのドキュメントがほぼ重複していると見なされるために必要な resemblance の最小レベルです。</span><span class="sxs-lookup"><span data-stu-id="fb359-106">In Advanced eDiscovery, Document Similarity is the minimal level of resemblance required for two documents to be considered as near-duplicates.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="91c5d-107">ほとんどのビジネスアプリケーションでは、類似性値 60%-75% を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="91c5d-107">For most business applications, it is recommended to use a Similarity value of 60%-75%.</span></span> <span data-ttu-id="91c5d-108">非常に低品質な光学式文字認識 (OCR) 資料の場合は、類似性の値を低くして適用できます。</span><span class="sxs-lookup"><span data-stu-id="91c5d-108">For very poor quality optical character recognition (OCR) material, lower Similarity values can be applied.</span></span> 
+> <span data-ttu-id="fb359-107">ほとんどのビジネスアプリケーションでは、類似性値 60%-75% を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="fb359-107">For most business applications, it is recommended to use a Similarity value of 60%-75%.</span></span> <span data-ttu-id="fb359-108">非常に低品質な光学式文字認識 (OCR) 資料の場合は、類似性の値を低くして適用できます。</span><span class="sxs-lookup"><span data-stu-id="fb359-108">For very poor quality optical character recognition (OCR) material, lower Similarity values can be applied.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="91c5d-109">特定のケースに対して設定して実行した後、類似性の値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="91c5d-109">After it's set and run for a given case, the Similarity value cannot be changed.</span></span> 
+> <span data-ttu-id="fb359-109">特定のケースに対して設定して実行した後、類似性の値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="fb359-109">After it's set and run for a given case, the Similarity value cannot be changed.</span></span> 
   
-<span data-ttu-id="91c5d-110">同一の複製 (ND) セット内では、類似性のしきい値の下に resemblance レベルのドキュメントが存在することがあります。</span><span class="sxs-lookup"><span data-stu-id="91c5d-110">Within a Near-duplicate (ND) set, there may be documents with a level of resemblance below the Similarity threshold.</span></span> <span data-ttu-id="91c5d-111">文書を ND セットに参加させるには、その類似性を超えるレベルの resemblance で、ND セットに少なくとも1つのドキュメントが存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="91c5d-111">For a document to join an ND set, there must be at least one document in the ND set with a level of resemblance exceeding the Similarity.</span></span> 
+<span data-ttu-id="fb359-110">同一の複製 (ND) セット内では、類似性のしきい値の下に resemblance レベルのドキュメントが存在することがあります。</span><span class="sxs-lookup"><span data-stu-id="fb359-110">Within a Near-duplicate (ND) set, there may be documents with a level of resemblance below the Similarity threshold.</span></span> <span data-ttu-id="fb359-111">文書を ND セットに参加させるには、その類似性を超えるレベルの resemblance で、ND セットに少なくとも1つのドキュメントが存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fb359-111">For a document to join an ND set, there must be at least one document in the ND set with a level of resemblance exceeding the Similarity.</span></span> 
   
-<span data-ttu-id="91c5d-112">たとえば、類似性が80% に設定されている場合、document F1 はレベル85% のドキュメント F2 に似ていますが、ドキュメント F2 はドキュメント F3 のレベルが90% であると仮定します。</span><span class="sxs-lookup"><span data-stu-id="91c5d-112">For example, assume the Similarity is set to 80%, document F1 resembles document F2 at a level of 85%, and document F2 resembles document F3 at a level of 90%.</span></span> 
+<span data-ttu-id="fb359-112">たとえば、類似性が80% に設定されている場合、document F1 はレベル85% のドキュメント F2 に似ていますが、ドキュメント F2 はドキュメント F3 のレベルが90% であると仮定します。</span><span class="sxs-lookup"><span data-stu-id="fb359-112">For example, assume the Similarity is set to 80%, document F1 resembles document F2 at a level of 85%, and document F2 resembles document F3 at a level of 90%.</span></span> 
   
-<span data-ttu-id="91c5d-113">ただし、document F1 は、しきい値を下回る70% のレベルで、document F3 のようになります。</span><span class="sxs-lookup"><span data-stu-id="91c5d-113">However, document F1 may resemble document F3 at a level of only 70%, which is below the threshold.</span></span> <span data-ttu-id="91c5d-114">しかし、この例では、ドキュメント F1、F2、および F3 はすべて、一方の ND セットに表示されます。</span><span class="sxs-lookup"><span data-stu-id="91c5d-114">Nonetheless, in this example, documents F1, F2, and F3 all appear in the one ND set.</span></span> <span data-ttu-id="91c5d-115">同様に、類似性値80% を使用すると、2つのセットが作成されている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="91c5d-115">Similarly, using a Similarity value of 80%, we may have created two sets, EquiSet-1 and EquiSet-2.</span></span> <span data-ttu-id="91c5d-116">設定-1 には、E1 および E2 というドキュメントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="91c5d-116">EquiSet-1 contains documents E1 and E2.</span></span> <span data-ttu-id="91c5d-117">[設定] は、ドキュメント F1、F2、および F3 を含みます。</span><span class="sxs-lookup"><span data-stu-id="91c5d-117">Equiset-2 contains documents F1, F2, and F3.</span></span> 
+<span data-ttu-id="fb359-113">ただし、document F1 は、しきい値を下回る70% のレベルで、document F3 のようになります。</span><span class="sxs-lookup"><span data-stu-id="fb359-113">However, document F1 may resemble document F3 at a level of only 70%, which is below the threshold.</span></span> <span data-ttu-id="fb359-114">しかし、この例では、ドキュメント F1、F2、および F3 はすべて、一方の ND セットに表示されます。</span><span class="sxs-lookup"><span data-stu-id="fb359-114">Nonetheless, in this example, documents F1, F2, and F3 all appear in the one ND set.</span></span> <span data-ttu-id="fb359-115">同様に、類似性値80% を使用すると、2つのセットが作成されている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="fb359-115">Similarly, using a Similarity value of 80%, we may have created two sets, EquiSet-1 and EquiSet-2.</span></span> <span data-ttu-id="fb359-116">設定-1 には、E1 および E2 というドキュメントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fb359-116">EquiSet-1 contains documents E1 and E2.</span></span> <span data-ttu-id="fb359-117">[設定] は、ドキュメント F1、F2、および F3 を含みます。</span><span class="sxs-lookup"><span data-stu-id="fb359-117">Equiset-2 contains documents F1, F2, and F3.</span></span> 
   
-<span data-ttu-id="91c5d-118">Resemblance のレベルは次のように示されています。</span><span class="sxs-lookup"><span data-stu-id="91c5d-118">The levels of resemblance are illustrated as follows:</span></span>
+<span data-ttu-id="fb359-118">Resemblance のレベルは次のように示されています。</span><span class="sxs-lookup"><span data-stu-id="fb359-118">The levels of resemblance are illustrated as follows:</span></span>
   
 ![ドキュメントの類似性](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
-<span data-ttu-id="91c5d-120">別のドキュメント X1 が挿入されたと仮定します。</span><span class="sxs-lookup"><span data-stu-id="91c5d-120">Assume that another document, X1, is now inserted.</span></span> <span data-ttu-id="91c5d-121">X1 と E3 の間の resemblance は87% です。</span><span class="sxs-lookup"><span data-stu-id="91c5d-121">The resemblance between X1 and E3 is 87%.</span></span> <span data-ttu-id="91c5d-122">同様に、X1 と F1 の間の resemblance は92% です。</span><span class="sxs-lookup"><span data-stu-id="91c5d-122">Similarly, the resemblance between X1 and F1 is 92%.</span></span> <span data-ttu-id="91c5d-123">その結果として、すべての設定が1つの ND セットに結合されるようにします。</span><span class="sxs-lookup"><span data-stu-id="91c5d-123">As a result, EquiSet -1, EquiSet -2, and X1 are now combined into one ND set.</span></span>
+<span data-ttu-id="fb359-120">別のドキュメント X1 が挿入されたと仮定します。</span><span class="sxs-lookup"><span data-stu-id="fb359-120">Assume that another document, X1, is now inserted.</span></span> <span data-ttu-id="fb359-121">X1 と E3 の間の resemblance は87% です。</span><span class="sxs-lookup"><span data-stu-id="fb359-121">The resemblance between X1 and E3 is 87%.</span></span> <span data-ttu-id="fb359-122">同様に、X1 と F1 の間の resemblance は92% です。</span><span class="sxs-lookup"><span data-stu-id="fb359-122">Similarly, the resemblance between X1 and F1 is 92%.</span></span> <span data-ttu-id="fb359-123">その結果として、すべての設定が1つの ND セットに結合されるようにします。</span><span class="sxs-lookup"><span data-stu-id="fb359-123">As a result, EquiSet -1, EquiSet -2, and X1 are now combined into one ND set.</span></span>
   
 ![ドキュメントの類似性](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
-> <span data-ttu-id="91c5d-125">1つの ND セットに2つのドキュメントが割り当てられている場合は、そのセットに追加のドキュメントが追加された場合でも、セットが結合された場合でも、同じ ND セットに残ります。</span><span class="sxs-lookup"><span data-stu-id="91c5d-125">If any two documents are assigned to one ND set, they will remain together in the same ND set, even if additional documents are added to the set or if the sets are merged.</span></span> 
+> <span data-ttu-id="fb359-125">1つの ND セットに2つのドキュメントが割り当てられている場合は、そのセットに追加のドキュメントが追加された場合でも、セットが結合された場合でも、同じ ND セットに残ります。</span><span class="sxs-lookup"><span data-stu-id="fb359-125">If any two documents are assigned to one ND set, they will remain together in the same ND set, even if additional documents are added to the set or if the sets are merged.</span></span> 
   
-<span data-ttu-id="91c5d-126">設定が結合されると、新しい文書がセットに追加されたときにピボットドキュメントが変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="91c5d-126">After sets are merged, the Pivot document can change when new documents are added to a set.</span></span> 
+<span data-ttu-id="fb359-126">設定が結合されると、新しい文書がセットに追加されたときにピボットドキュメントが変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="fb359-126">After sets are merged, the Pivot document can change when new documents are added to a set.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="91c5d-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="91c5d-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fb359-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="fb359-127">See also</span></span>
 
-[<span data-ttu-id="91c5d-128">高度な電子情報開示 (クラシック)</span><span class="sxs-lookup"><span data-stu-id="91c5d-128">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="fb359-128">Advanced eDiscovery (クラシック)</span><span class="sxs-lookup"><span data-stu-id="fb359-128">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="91c5d-129">分析オプションの設定</span><span class="sxs-lookup"><span data-stu-id="91c5d-129">Setting Analyze options</span></span>](set-analyze-options-in-advanced-ediscovery.md)
+[<span data-ttu-id="fb359-129">分析オプションの設定</span><span class="sxs-lookup"><span data-stu-id="fb359-129">Setting Analyze options</span></span>](set-analyze-options-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="91c5d-130">無視するテキストの設定</span><span class="sxs-lookup"><span data-stu-id="91c5d-130">Setting ignore text</span></span>](set-ignore-text-in-advanced-ediscovery.md)
+[<span data-ttu-id="fb359-130">無視するテキストの設定</span><span class="sxs-lookup"><span data-stu-id="fb359-130">Setting ignore text</span></span>](set-ignore-text-in-advanced-ediscovery.md)
   
-<span data-ttu-id="91c5d-131">[[詳細設定の分析] の設定](set-analyze-advanced-settings-in-advanced-ediscovery.md)</span><span class="sxs-lookup"><span data-stu-id="91c5d-131">[Setting Analyze advanced settings](set-analyze-advanced-settings-in-advanced-ediscovery.md)</span></span>
+<span data-ttu-id="fb359-131">[[詳細設定の分析] の設定](set-analyze-advanced-settings-in-advanced-ediscovery.md)</span><span class="sxs-lookup"><span data-stu-id="fb359-131">[Setting Analyze advanced settings](set-analyze-advanced-settings-in-advanced-ediscovery.md)</span></span>
   
-[<span data-ttu-id="91c5d-132">分析結果の表示</span><span class="sxs-lookup"><span data-stu-id="91c5d-132">Viewing Analyze results</span></span>](view-analyze-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="fb359-132">分析結果の表示</span><span class="sxs-lookup"><span data-stu-id="fb359-132">Viewing Analyze results</span></span>](view-analyze-results-in-advanced-ediscovery.md)
 
