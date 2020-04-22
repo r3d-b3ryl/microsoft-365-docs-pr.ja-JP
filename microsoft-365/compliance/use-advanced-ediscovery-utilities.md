@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示ユーティリティを使用する
+title: Advanced eDiscovery ユーティリティを使用する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'Office 365 の高度な電子情報開示のユーティリティ (ケースログ、クリアデータ、プロセスエラー、関連性の変更、透過性の分析など) について説明します。  '
-ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '高度な電子情報開示のユーティリティ (ケースログ、クリアデータ、プロセスエラー、関連性の変更、透過性の分析など) について説明します。  '
+ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633392"
 ---
-# <a name="use-advanced-ediscovery-classic-utilities"></a>高度な電子情報開示 (クラシック) ユーティリティを使用する
+# <a name="use-advanced-ediscovery-classic-utilities"></a>Advanced eDiscovery (クラシック) ユーティリティを使用する
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -109,7 +109,7 @@ ms.locfileid: "42557657"
     
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [ケースとテナントの設定の定義](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

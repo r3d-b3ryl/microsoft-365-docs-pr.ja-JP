@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170557"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633056"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -67,7 +67,7 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. [**データ損失防止** > **ポリシー**] を選択します。
 
@@ -87,7 +87,7 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. [**データ損失防止** > **ポリシー**] を選択します。
 
@@ -97,7 +97,7 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 5. すべてのアカウントの既定の設定をそのまま使用するか、または含めるアカウントまたは除外するアカウントを指定します。
 
-6. **[保存]** をクリックします。
+6. [**保存**] をクリックします。
 
 変更がデータセンターを経由して、ユーザーアカウントに同期されるまで約1時間の時間を確保します。
 <!-- again, why user accounts? -->
@@ -105,7 +105,7 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. [**データ損失防止** > **ポリシー** > ] を選択して **、ポリシーを作成**します。
 

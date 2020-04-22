@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Office 365 監査ログ検索の結果をエクスポートして CSV ファイルにダウンロードした後、Excel の Power Query エディターの JSON 変換機能を使用して、AuditData 列の JSON オブジェクトの各プロパティをそれぞれの列に分割できます。 これは、探している特定の監査データをすばやく見つけるのに役立ちます。
-ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 監査ログの検索結果をエクスポートして CSV ファイルにダウンロードした後、Excel の Power Query エディターの JSON 変換機能を使用して、AuditData 列の JSON オブジェクトの各プロパティをそれぞれの列に分割できます。 これは、探している特定の監査データをすばやく見つけるのに役立ちます。
+ms.openlocfilehash: 64a16ad3e2584f61e6c30da26d6867614c9a9119
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634925"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615961"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
-Office 365 監査ログを検索し、検索結果を CSV ファイルにダウンロードした後、ファイルには、各イベントに関する追加情報を含む**Auditdata**という名前の列が含まれます。 この列のデータは、JSON オブジェクトとして書式設定されています。これには、*プロパティと値*のペアとして構成され、コンマで区切られた複数のプロパティが含まれています。 Excel の Power Query エディターで JSON 変換機能を使用して、 **Auditdata**列の json オブジェクトの各プロパティを複数の列に分割し、各プロパティがそれぞれの列を持つようにすることができます。 これにより、これらのプロパティの1つ以上に対して並べ替えとフィルター処理を行うことができます。これにより、探している特定の監査データをすばやく見つけることができます。
+監査ログを検索し、検索結果を CSV ファイルにダウンロードすると、ファイルには、各イベントに関する追加情報を含む**Auditdata**という名前の列が含まれます。 この列のデータは、JSON オブジェクトとして書式設定されています。これには、*プロパティと値*のペアとして構成され、コンマで区切られた複数のプロパティが含まれています。 Excel の Power Query エディターで JSON 変換機能を使用して、 **Auditdata**列の json オブジェクトの各プロパティを複数の列に分割し、各プロパティがそれぞれの列を持つようにすることができます。 これにより、これらのプロパティの1つ以上に対して並べ替えとフィルター処理を行うことができます。これにより、探している特定の監査データをすばやく見つけることができます。
 
 ## <a name="step-1-export-audit-log-search-results"></a>手順 1: 監査ログの検索結果をエクスポートする
 
@@ -92,7 +92,7 @@ CSV ファイルが**クエリエディター**で開かれます。 **CreationD
     
    - [**元の列名をプレフィックスとして使用**する] チェックボックスをオンのままにして、auditdata プレフィックスを列名に追加します。たとえば、 **Auditdata**または**auditdata ファイル名**です。
 
-9. **[OK]** をクリックします。
+9. [**OK**] をクリックします。
     
     **Auditdata**列は複数の列に分割されます。 新しい列はそれぞれ、AuditData JSON オブジェクトのプロパティに対応しています。 列の各行には、プロパティの値が含まれています。 プロパティに値が含まれていない場合は、 *null*値が表示されます。 Excel では、null 値を持つセルは空になります。
   
@@ -102,11 +102,11 @@ CSV ファイルが**クエリエディター**で開かれます。 **CreationD
 
 ここでは、JSON 変換機能を使用して、 **Auditdata**列を複数の列に分割する前と後の監査ログをエクスポートおよび表示する際のヒントと例をいくつか示します。
 
-- **RecordType**列をフィルター処理して、特定の Office 365 サービスまたは機能領域のレコードのみを表示します。 たとえば、SharePoint 共有に関連するイベントを表示するには、[ **14** ] (sharepoint 共有アクティビティによってトリガーされたレコードの列挙値) を選択します。 **RecordType**列に表示される列挙値に対応する office 365 サービスの一覧については、「 [office 365 監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)」を参照してください。
+- **RecordType**列をフィルター処理して、特定のサービスまたは機能領域のレコードのみを表示します。 たとえば、SharePoint 共有に関連するイベントを表示するには、[ **14** ] (sharepoint 共有アクティビティによってトリガーされたレコードの列挙値) を選択します。 **RecordType**列に表示される列挙値に対応するサービスの一覧については、「[監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)」を参照してください。
 
 - [**操作**] 列をフィルター処理して、特定のアクティビティのレコードを表示します。 セキュリティ & コンプライアンスセンターの監査ログ検索ツールで検索可能なアクティビティに対応するほとんどの操作の一覧については、「 [security & コンプライアンスセンターで監査ログを検索](search-the-audit-log-in-security-and-compliance.md#audited-activities)する」の「監査アクティビティ」セクションを参照してください。
 
-- セキュリティ & コンプライアンスセンターで監査ログ検索ツールを使用する代わりに、Exchange Online Powershell で[search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog)コマンドレットを使用して、Office 365 監査ログの検索結果を CSV ファイルにエクスポートすることができます。 その後、手順2で説明されているのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する場合の利点の1つは、 *RecordType*パラメーターを使用して特定の Office 365 サービスからのイベントを検索できることです。 ここでは、PowerShell を使用して監査レコードを CSV ファイルにエクスポートする例をいくつか示します。このため、Power Query editor を使用して、「 **Auditdata** 」列の JSON オブジェクトを変換することができます (手順2を参照)。
+- セキュリティ & コンプライアンスセンターで監査ログ検索ツールを使用する代わりに、Exchange Online Powershell で[search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog)コマンドレットを使用して、監査ログの検索結果を CSV ファイルにエクスポートすることができます。 その後、手順2で説明されているのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する場合の利点の1つは、 *RecordType*パラメーターを使用して特定のサービスからイベントを検索できることです。 ここでは、PowerShell を使用して監査レコードを CSV ファイルにエクスポートする例をいくつか示します。このため、Power Query editor を使用して、「 **Auditdata** 」列の JSON オブジェクトを変換することができます (手順2を参照)。
 
    この例では、次のコマンドを実行して、SharePoint 共有操作に関連するすべてのレコードを返します。 
    

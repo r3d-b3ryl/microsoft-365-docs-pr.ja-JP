@@ -17,17 +17,17 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Office 365 のグローバル管理者は、組織の暗号化された電子メールメッセージと暗号化ポータルの内容に組織のブランド化を適用することができます。
-ms.openlocfilehash: 5a3f5426fecd6ce5df6ace5b0080de33fb50e21f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 全体管理者は、組織の暗号化された電子メールメッセージおよび暗号化ポータルの内容に組織のブランド化を適用することができます。
+ms.openlocfilehash: 231d0bd1e49d0529b4dc15ec758ba63fe5f60092
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106019"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632292"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>暗号化されたメッセージに組織のブランドを追加する
 
-Exchange Online または Exchange Online Protection 管理者は、企業ブランドを適用して、組織の Office 365 メッセージ暗号化の電子メールメッセージと暗号化ポータルの内容の外観をカスタマイズできます。 取得した、暗号化された電子メールメッセージの受信者については、次のように、Windows PowerShell コマンドレットを使用して、以下の点をカスタマイズできます。
+Exchange Online または Exchange Online Protection 管理者として、会社のブランドを適用して、ビジネスメッセージの暗号化の電子メールメッセージおよび暗号化ポータルの内容を組織の Microsoft 365 用にカスタマイズすることができます。 取得した、暗号化された電子メールメッセージの受信者については、次のように、Windows PowerShell コマンドレットを使用して、以下の点をカスタマイズできます。
   
 - 暗号化メッセージを含む電子メールの導入部のテキスト
 
@@ -59,7 +59,7 @@ Exchange Online または Exchange Online Protection 管理者は、企業ブラ
 
 ## <a name="work-with-ome-branding-templates"></a>OME ブランド化テンプレートを操作する
 
-ブランド設定テンプレート内のいくつかの機能を変更することができます。 既定のテンプレートを変更することはできますが、削除することはできません。 高度なメッセージ暗号化を使用している場合は、カスタムテンプレートを作成、変更、および削除することもできます。 Windows PowerShell を使用して、一度に1つのブランド化テンプレートを操作します。 これらのコマンドレットを使用するには、Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントが必要です。
+ブランド設定テンプレート内のいくつかの機能を変更することができます。 既定のテンプレートを変更することはできますが、削除することはできません。 高度なメッセージ暗号化を使用している場合は、カスタムテンプレートを作成、変更、および削除することもできます。 Windows PowerShell を使用して、一度に1つのブランド化テンプレートを操作します。 これらのコマンドレットを使用するには、組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントが必要です。
 
 - [ [-Omeconfiguration 設定](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration)-既定のブランド化テンプレートまたは作成したカスタムブランド設定テンプレートを変更する。
 - [新機能-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) /新しいブランド化テンプレートを作成し、高度なメッセージ暗号化のみを行います。
@@ -69,7 +69,7 @@ Exchange Online または Exchange Online Protection 管理者は、企業ブラ
 
 Windows PowerShell を使用して、一度に1つのブランド化テンプレートを変更します。 高度なメッセージ暗号化を使用している場合は、カスタムテンプレートを作成、変更、および削除することもできます。
 
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
 
 2. テンプレートを変更するには、次の図と表を参考にして、set [-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)コマンドレットを使用します。
 
@@ -94,7 +94,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 
 新しいカスタムブランド化テンプレートを作成するには、次のようにします。
 
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
 
 2. 新しいテンプレートを作成するには、[新しい-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration)コマンドレットを使用します。
 
@@ -112,7 +112,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 
 ブランド化のカスタマイズなど、すべての変更を既定のテンプレートから削除するには、次の手順を実行します。
   
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
 
 2. **Set-omeconfiguration コマンドレット**を使用します[。](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) 組織のブランド化されたカスタマイズを DisclaimerText、EmailText、および PortalText の値から削除するには、値を`""`空の文字列に設定します。 ロゴなどのすべてのイメージ値について、値を`"$null"`に設定します。
 
@@ -133,7 +133,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 
 カスタムブランド化テンプレートを削除するには、次のようにします。
   
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
 
 2. 次のように、**削除**コマンドレットを使用します。
 
@@ -155,7 +155,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 
 - Outlook または web 上の outlook (旧称 Outlook Web App) クライアントからエンドユーザーによって電子メールが手動で暗号化されている場合
 
-- 電子メールが Exchange メールフロールールまたは Office 365 データ損失防止ポリシーによって自動的に暗号化された場合
+- 電子メールが Exchange メールフロールールまたはデータ損失防止ポリシーによって自動的に暗号化された場合
 
 暗号化を適用する Exchange メールフロールールを作成する方法については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールの定義](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 

@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: O365 データおよびサービスへのアクセスを保護するためのランディングページ
-ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Microsoft 365 のデータおよびサービスへのアクセスを保護するためのランディングページ
+ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601704"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632212"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 
-Office 365 データおよびサービスへのアクセスを保護することは、cyberattacks を防御し、データ損失を防ぐために不可欠です。 同じ保護を、環境内の他の SaaS アプリケーション、および Azure Active Directory アプリケーションプロキシで公開されているオンプレミスアプリケーションにも適用できます。
+Microsoft 365 データおよびサービスへのアクセスを保護することは、cyberattacks を防御し、データ損失を防ぐために不可欠です。 同じ保護を、環境内の他の SaaS アプリケーション、および Azure Active Directory アプリケーションプロキシで公開されているオンプレミスアプリケーションにも適用できます。
   
 ## <a name="step-1-review-recommendations"></a>手順 1: 推奨事項を確認する
 
@@ -33,7 +33,7 @@ Office 365、他の SaaS サービス、および Azure AD アプリケーショ
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>手順 2: 管理者アカウントとアクセスを保護する
-Office 365 環境を管理するために使用する管理アカウントには、昇格された特権が含まれています。 これらはハッカーおよび cyberattackers の重要な目標です。 
+Microsoft 365 環境を管理するために使用する管理アカウントには、昇格された特権があります。 これらはハッカーおよび cyberattackers の重要な目標です。 
 
 管理者アカウントのみを使用して開始します。 管理者は、管理者ではない通常の使用に対して個別のユーザーアカウントを持っている必要があります。ジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ、管理アカウントを使用してください。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 387709ebdd84968d2b93992f6b92ef1548117569
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 75e376288a85ca6def5cf3c3037f2faee57de63b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528360"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632272"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>高度な電子情報開示レポート (プレビュー)
 
@@ -35,7 +35,7 @@ ms.locfileid: "43528360"
 
 - 組織内にアクティブなケースとクローズしたケースはいくつありますか?
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 高度な電子情報開示レポートにアクセスするには、電子情報開示管理役割グループのメンバーである必要があります。 この役割グループのメンバーである場合は、レポート内のデータを表示、フィルター処理、およびエクスポートするために必要なアクセス許可が付与されます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
 
@@ -45,7 +45,7 @@ Advanced eDiscovery レポートにアクセスするには、次のようにし
 
 1. https://protection.office.com に移動します。
   
-2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
+2. 職場または学校のアカウントを使用してサインインします。
   
 3. [セキュリティ & コンプライアンスセンター] で、[**電子情報開示 > Advanced ediscovery**] をクリックします。
   
@@ -97,7 +97,7 @@ Advanced eDiscovery レポートにアクセスするには、次のようにし
 |列        |説明|
 | -------------|-------------|
 |ケース ID |各ケースの一意の識別子。 |
-|ワークロード |保持するコンテンツの場所の種類 (Exchange、SharePoint など) を示します。
+|Workload |保持するコンテンツの場所の種類 (Exchange、SharePoint など) を示します。
 |場所の名前 |コンテンツの場所の SMTP アドレス (Exchange メールボックスの場合) または URL (SharePoint サイトの場合) を示します。 | 
 |保管担当者 ID |データソースが保管担当者に属している場合、この列には、特定のケースにおける保管担当者の一意の識別子が表示されます。 この列は、非 wi-fi ダイヤルの場所の場合は null になります。|
 |保管担当者名 |Active Directory 内の保管担当者の名前。| 

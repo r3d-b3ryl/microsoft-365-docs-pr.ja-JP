@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
-ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 8559c5abc2faf032b1e197cd337779b3171d0c7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105664"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633066"
 ---
 # <a name="overview-of-disposition-reviews"></a>廃棄レビューの概要
 
->*[セキュリティ & コンプライアンスのための Microsoft 365 ライセンスガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 コンテンツが保存期間の最後に達すると、いくつかの理由から、そのコンテンツを確認して、安全に削除できるかどうかを判断する必要があります (「廃棄済み」)。 たとえば、次のことを行う必要があります。
   
@@ -37,7 +37,7 @@ ms.locfileid: "43105664"
     
 - クライアントにコンテンツを返すか、または別の組織に転送します。
     
-Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリティセンター、または Office 365 セキュリティ & コンプライアンスセンターで保持ラベルを作成する場合、保持期間の終了時に廃棄レビューを開始することを選択できます。 廃棄レビューの場合:
+Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリティセンター、またはセキュリティ & コンプライアンスセンターで保持ラベルを作成する場合、保持期間の終了時に廃棄レビューを開始することを選択できます。 廃棄レビューの場合:
   
 - 選択したユーザーには、閲覧するコンテンツがあることを示す電子メール通知が送信されます。 通知は週単位で送信されることに注意してください。
     
@@ -53,7 +53,7 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
     
 - レビュー担当者は、保留中または完了した処理のいずれかを表示し、その一覧を .csv ファイルとしてエクスポートできます。
 
-廃棄レビューには、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、および Office 365 グループのコンテンツを含めることができます。 これらの場所の廃棄レビューを待機しているコンテンツは、レビュー担当者がコンテンツを完全に削除することを選択した場合にのみ削除されます。
+廃棄レビューには、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft 365 グループのコンテンツを含めることができます。 これらの場所の廃棄レビューを待機しているコンテンツは、レビュー担当者がコンテンツを完全に削除することを選択した場合にのみ削除されます。
   
 ![セキュリティ/コンプライアンスセンターの [配置] ページ](../media/Retention-Dispositions-v2-page.png)
 
@@ -71,7 +71,7 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
 ![ラベルの保持設定](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> [レビューの準備が**できたアイテムがあるときに、これらのユーザーに通知**する] オプションを指定する場合は、ユーザーを指定します。 このオプションでは、Office 365 グループはサポートされていません。
+> [レビューの準備が**できたアイテムがあるときに、これらのユーザーに通知**する] オプションを指定する場合は、ユーザーを指定します。 このオプションでは、Microsoft 365 グループはサポートされていません。
 
 ## <a name="disposing-content"></a>コンテンツを破棄する
 
@@ -95,7 +95,7 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
   
 電子メール通知は、1週間ごとにレビュー担当者に自動的に送信されることに注意してください。 そのため、コンテンツが保持期間の最後に達すると、コンテンツが廃棄を待機しているというメール通知をレビューアーが受け取るまでに最大7日かかる可能性があります。
   
-また、すべての廃棄アクションが監査されることにも注意してください。 このことを確認するには、最初の廃棄アクションの前に少なくとも1日前に監査を有効にする必要があります。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。 
+また、すべての廃棄アクションが監査されることにも注意してください。 このことを確認するには、最初の廃棄アクションの前に少なくとも1日前に監査を有効にする必要があります。詳細については、「 [Security &amp;コンプライアンスセンターで監査ログを検索](search-the-audit-log-in-security-and-compliance.md)する」を参照してください。 
   
 ## <a name="permissions-for-disposition"></a>廃棄のアクセス許可
 
@@ -105,7 +105,7 @@ Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリ�
 
 - 監査ログの検索に使用される基礎となるコマンドレットは Exchange Online コマンドレットなので、セキュリティ & コンプライアンスセンターの [**アクセス許可**] ページではなく、exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center)を使用してユーザーを割り当てる必要があります。 手順については、「 [Manage role groups In Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
 
-- Office 365 グループはこの役割ではサポートされていません。 代わりに、ユーザーメールボックスまたはメールユーザーを割り当てます。
+- Microsoft 365 グループはこの役割ではサポートされていません。 代わりに、ユーザーメールボックスまたはメールユーザーを割り当てます。
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>破棄されたコンテンツが完全に削除されるまでの時間
 

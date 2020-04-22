@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: de69d4c7e5938d8bfd3fed74b9ae44288e48019c
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 3e710f83bebd94719ef66cde7844f1301611adf4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141542"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637537"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Microsoft コンプライアンスマネージャー (プレビュー) リリースノート
 
@@ -77,7 +77,7 @@ ms.locfileid: "43141542"
 - 新しい評価が作成されると、スコアは自動的に Microsoft 管理の制御スコアとセキュリティで保護されたスコアの統合を含みます。
 - セキュリティで保護されたスコア統合でサポートされていないアクションは、手動で実装できます。 手動による実装では、そのアクションのグループのスコアが考慮されます。
 
-### <a name="export"></a>エクスポート
+### <a name="export"></a>Export
 
 - テンプレートの状態が [**インポート**済みまたは**保留中の承認**] に設定されている場合、JSON へのテンプレートのエクスポートは失敗します。
 

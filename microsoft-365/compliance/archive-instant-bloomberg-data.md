@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、インスタント Bloomberg チャットツールから Microsoft 365 にデータをインポートするためのネイティブコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 6d267959f9086830282e9d1f018e4e58f90bc830
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: a6b748cdb33b34c7fc48b0167728f78cf7ae1099
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941259"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637117"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
@@ -39,11 +39,11 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
     
 4. コネクタは、特定のユーザーのメールボックスにチャットメッセージアイテムをインポートします。 InstantBloomberg という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress*プロパティの値を使用してこれを実行します。 すべてのチャットメッセージには、このプロパティが含まれており、チャットメッセージのすべての参加者の電子メールアドレスが設定されます。 *CorporateEmailAddress*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 このマッピングファイルには、各ユーザーの Bloomberg UUID および対応する Microsoft 365 メールボックスアドレスが含まれている必要があります。 自動ユーザーマッピングを有効にし、カスタムマッピングを指定すると、コネクタはまずカスタムマッピングファイルを参照します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャットアイテムの*CorporateEmailAddress*プロパティを使用します。 コネクタがカスタムマッピングファイルまたはチャットアイテムの*CorporateEmailAddress*プロパティに有効な Microsoft 365 ユーザーを見つけられない場合、そのアイテムはインポートされません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 インスタント Bloomberg データをアーカイブするために必要な実装手順の多くは、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に、完了する必要があります。
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3でインスタント Bloomberg コネクタを正常に作成するには、この手順を完了する必要があります。
+- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3でインスタント Bloomberg コネクタを正常に作成するには、この手順を完了する必要があります。
 
 - [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA)にサブスクライブします。 これは、Bloomberg Anywhere にログインして、設定および構成する必要がある Bloomberg SFTP サイトにアクセスできるようにするために必要です。
 

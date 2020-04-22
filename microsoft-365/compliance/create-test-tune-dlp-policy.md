@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604184"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635967"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーを作成、テスト、調整する
 
-データ損失防止は Office 365 のコンプライアンス機能であり、組織による不要な関係者への機密情報の意図的または偶発的な漏洩の防止に役立つよう設計されています。 DLP のルーツは Exchange Server および Exchange Online にあり、SharePoint Online および OneDrive for Business にも適用できます。
+データ損失防止 (DLP) は、組織が不必要な機密情報を意図的または偶発的に危険にさらすことを防止するために設計されたコンプライアンス機能です。 DLP のルーツは Exchange Server および Exchange Online にあり、SharePoint Online および OneDrive for Business にも適用できます。
 
 DLP は、コンテンツ分析エンジンを使用してメール メッセージおよびファイルのコンテンツを調べ、クレジット カード番号や個人を特定できる情報 (PII) などの機密情報を探します。 通常、機密情報はメール メッセージやファイルの暗号化などの追加の手順を実行せずにメールで送信したり、ドキュメントに含めたりするべきではありません。 DLP を使用することで機密情報を検出し、次のようなアクションを実行できます。
 
@@ -57,7 +57,7 @@ DLP は、コンテンツ分析エンジンを使用してメール メッセー
 
 Exchange Online の DLP ポリシーは、Exchange 管理センターを介して管理できます。 ただし、セキュリティ/コンプライアンス センターを介してすべてのワークロードの DLP ポリシーを構成できるため、この記事のデモではこれを使用します。 セキュリティ/コンプライアンス センターでは、[**データ損失防止**] >  [**ポリシー**] の下に DLP ポリシーがあります。 [**ポリシーの作成**] をクリックして開始します。
 
-Office 365 は、DLP ポリシーの作成に使用できるさまざまな [DLP ポリシー テンプレート](what-the-dlp-policy-templates-include.md)を提供しています。 例えば、ここがオーストラリアの企業だとしましょう。 ポリシー テンプレートをフィルター処理し、オーストラリアに関連するもののみを表示できます。これらは金融、医療、健康、プライバシーの一般カテゴリに分類されます。
+Microsoft 365 には、DLP ポリシーの作成に使用できる一連の[dlp ポリシーテンプレート](what-the-dlp-policy-templates-include.md)が用意されています。 例えば、ここがオーストラリアの企業だとしましょう。 ポリシー テンプレートをフィルター処理し、オーストラリアに関連するもののみを表示できます。これらは金融、医療、健康、プライバシーの一般カテゴリに分類されます。
 
 ![国または地域を選択するオプション](../media/DLP-create-test-tune-choose-country.png)
 

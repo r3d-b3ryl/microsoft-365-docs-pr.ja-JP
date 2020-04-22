@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバルアドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4d0b1a826583a032fd27c216367e99a6b7f8b371
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078954"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636345"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を Exchange Online に一括インポートする
 
@@ -71,7 +71,7 @@ ms.locfileid: "42078954"
 
 次の手順では、手順1および PowerShell で作成した CSV ファイルを使用して、CSV ファイルに記載されている外部連絡先を Exchange Online に一括インポートします。 
   
-1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。 Exchange Online の PowerShell に接続するときは、必ず Office 365 のグローバル管理者アカウントのユーザー名とパスワードを使用してください。 
+1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。 Exchange Online の PowerShell に接続するときは、全体管理者アカウントのユーザー名とパスワードを必ず使用してください。 
     
 2. PowerShell を Exchange Online に接続したら、手順1で CSV ファイルを保存したデスクトップフォルダーに移動します。例`C:\Users\Administrator\desktop`を示します。
     

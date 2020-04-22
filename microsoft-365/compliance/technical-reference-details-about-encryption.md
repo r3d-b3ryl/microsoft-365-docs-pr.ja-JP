@@ -1,5 +1,5 @@
 ---
-title: Office 365 の暗号化についてのテクニカル リファレンスの詳細
+title: 暗号化に関するテクニカルリファレンスの詳細
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 で暗号化に関する技術的な詳細を確認します。
-ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: cdfd3765fb7bf15835d200a539241d928225d22e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610584"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637211"
 ---
-# <a name="technical-reference-details-about-encryption-in-office-365"></a>Office 365 の暗号化についてのテクニカル リファレンスの詳細
+# <a name="technical-reference-details-about-encryption"></a>暗号化に関するテクニカルリファレンスの詳細
 
 この記事では、 [Office 365 の暗号化](encryption.md)に使用される証明書、テクノロジ、および TLS 暗号スイートについて説明します。 この記事では、計画した deprecations の詳細についても説明します。
   
@@ -92,12 +92,12 @@ Cipher suite は、セキュリティで保護された接続を確立するた�
   
 |**プロトコル**|**暗号スイート名**|**キー交換アルゴリズム/強度**|**完全なフォワード機密サポート**|**認証アルゴリズム/強度**|**暗号/強度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |必要  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |必要  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |必要  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |必要  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |必要  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |必要  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |

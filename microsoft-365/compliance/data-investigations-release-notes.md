@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
-ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595414"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637737"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査用リリースノート (プレビュー)
 
@@ -31,7 +31,7 @@ Microsoft 365 の新しいデータ調査 (プレビュー) ツールを使用�
 
 - **調査-調査**を作成することで、検索とインシデントをグループ化できます。 メンバーを追加または削除することで、調査にアクセスできるユーザーを管理します。  お気に入りの調査を選択してマークすることもできます。 新しいダッシュボードを使用して、調査内および調査間でのアクティビティを追跡および監視します。 調査を完了したら、それをクローズまたは削除することができます。
 
-- **関心のある**ユーザー–調査に関心のあるユーザーを追加すると、そのユーザーのメールボックス、OneDrive for business アカウント、および Microsoft Teams サイトが表示されます。 それらを使用して、調査対象のコンテンツ検索の範囲を作成できます。 関心のある人物をさらに調査するには、Office 365 およびその他の Microsoft サービスでのアクティビティに関連する監査レコードを表示することもできます。
+- **関心のある**ユーザー–調査に関心のあるユーザーを追加すると、そのユーザーのメールボックス、OneDrive for business アカウント、および Microsoft Teams サイトが表示されます。 それらを使用して、調査対象のコンテンツ検索の範囲を作成できます。 関心のある人物をさらに調査するには、Microsoft 365 およびその他の Microsoft サービスの活動に関連する監査レコードを表示することもできます。
 
 - **検索**–さまざまな検索条件を使用して組織全体の検索を作成します。 検索するユーザーまたはサイトがわかっている場合は、それらのユーザーを関心のあるユーザーとして追加したり、検索作成ウィザードでサイトの場所を指定したりできます。 
 

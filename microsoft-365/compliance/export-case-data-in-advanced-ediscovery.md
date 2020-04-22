@@ -1,5 +1,5 @@
 ---
-title: Office 365 でのケースデータのエクスポート Advanced eDiscovery
+title: 高度な電子情報開示でケースデータをエクスポートする
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 'Office 365 の高度な電子情報開示のエクスポートプロセスを使用して、電子情報開示ケースのデータおよびレビューの結果をエクスポートするためのガイドラインについて説明します。  '
-ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '高度な電子情報開示のエクスポートプロセスを使用して、電子情報開示ケースのデータおよびレビューの結果をエクスポートするためのガイドラインについて説明します。  '
+ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558218"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615941"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>高度な電子情報開示でケースデータをエクスポートする (クラシック)
 
@@ -39,7 +39,7 @@ ms.locfileid: "42558218"
     
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [結果のエクスポート](export-results-in-advanced-ediscovery.md)
   

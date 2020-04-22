@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: dc7eb61a006b41e519c76e70c768b551ff5126b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097210"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631848"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -45,7 +45,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 > [!NOTE]
 > Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office 365 E5 または Microsoft E5 ライセンスが割り当てられている必要があります。または、E1 または E3 ライセンスを持つユーザーには、E5 アドオンライセンスを割り当てることができます。メンバーとしてケースに割り当てられている管理者、コンプライアンス責任者、または法的責任者が、データの収集、表示、および分析に上級電子情報開示を使用する場合は、E5 ライセンスは必要ありません。ライセンスの詳細については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://aka.ms/complianceSD)」を参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てるには、組織の管理役割グループのメンバーであるか、または役割管理役割が割り当てられている必要があります。
     
@@ -55,7 +55,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
+2. 職場または学校のアカウントを使用してサインインします。
     
 3. セキュリティ/コンプライアンスセンターの左側のウィンドウで、[**アクセス許可**] を選択し、[**電子情報開示マネージャー**] の横にあるチェックボックスをオンにします。
     
@@ -94,7 +94,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 
 ### <a name="compliance-search"></a>コンプライアンス検索
 
-この役割により、ユーザーは、セキュリティ & コンプライアンスセンターでコンテンツ検索ツールを実行して、メールボックスとパブリックフォルダー、SharePoint Online サイト、OneDrive for Business サイト、Skype for Business 会話、Office 365 グループ、Microsoft Teams、および Yammer グループを検索できます。 この役割では、検索結果の見積もりとエクスポート レポートの作成ができますが、検索結果のプレビュー、エクスポート、削除などのコンテンツ検索操作を開始するには、追加の役割が必要です。
+この役割により、ユーザーは、セキュリティ & コンプライアンスセンターでコンテンツ検索ツールを実行して、メールボックスとパブリックフォルダー、SharePoint Online サイト、OneDrive for Business サイト、Skype for Business 会話、Microsoft 365 グループ、Microsoft Teams、および Yammer グループを検索できます。 この役割では、検索結果の見積もりとエクスポート レポートの作成ができますが、検索結果のプレビュー、エクスポート、削除などのコンテンツ検索操作を開始するには、追加の役割が必要です。
 
 コンプライアンス検索の役割が割り当てられているが、プレビューの役割を持っていないユーザーは、プレビューの役割を割り当てられたユーザーが開始した検索の結果をプレビューできます。 プレビューの役割を持たないユーザーは、最初のプレビュー操作が作成されてから最大2週間後に結果をプレビューできます。
 
@@ -110,7 +110,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 
 ### <a name="hold"></a>保留
 
-この役割により、ユーザーはメールボックス、パブリックフォルダー、サイト、Skype for Business の会話、Office 365 グループにコンテンツを保持できます。 コンテンツが保持されている場合でも、コンテンツ所有者は元のコンテンツを変更または削除できますが、保持が削除されるか保持期間が切れるまで、コンテンツは保持されます。 
+この役割により、ユーザーはメールボックス、パブリックフォルダー、サイト、Skype for Business の会話、Microsoft 365 グループにコンテンツを保持することができます。 コンテンツが保持されている場合でも、コンテンツ所有者は元のコンテンツを変更または削除できますが、保持が削除されるか保持期間が切れるまで、コンテンツは保持されます。 
 
 保留の詳細については、以下を参照してください。
 
@@ -135,7 +135,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 
 ### <a name="search-and-purge"></a>検索と消去
 
-この役割では、コンテンツ検索の条件に一致するデータの一括削除を行うことができます。 詳細については、「[Office 365 組織でメール メッセージの検索と削除を行う](search-for-and-delete-messages-in-your-organization.md)」を参照してください。 
+この役割では、コンテンツ検索の条件に一致するデータの一括削除を行うことができます。 詳細については、「[組織内での電子メールメッセージの検索と削除](search-for-and-delete-messages-in-your-organization.md)」を参照してください。 
 
 ## <a name="more-information"></a>詳細情報
 
@@ -151,7 +151,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange 配布グループと Office 365 グループはサポートされていません。 `New-DistributionGroup -Type Security` コマンドを使用して、Exchange Online の PowerShell で作成できるメールが有効なセキュリティ グループを使用する必要があります。 また、Exchange 管理センターまたは Microsoft 365 管理センターで、メールが有効なセキュリティ グループを作成 (およびメンバーを追加) することもできます。 新しいメールが有効なセキュリティが電子情報開示マネージャーの役割グループに追加されるようになるには、作成後に最大60分かかる場合があります。 
+    Exchange 配布グループと Microsoft 365 グループはサポートされていません。 `New-DistributionGroup -Type Security` コマンドを使用して、Exchange Online の PowerShell で作成できるメールが有効なセキュリティ グループを使用する必要があります。 また、Exchange 管理センターまたは Microsoft 365 管理センターで、メールが有効なセキュリティ グループを作成 (およびメンバーを追加) することもできます。 新しいメールが有効なセキュリティが電子情報開示マネージャーの役割グループに追加されるようになるには、作成後に最大60分かかる場合があります。 
     
     また、前述のとおり、セキュリティ/コンプライアンス センターの PowerShell で **Add-eDiscoveryCaseAdmin** コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者にすることはできません。 個別のユーザーは、電子情報開示管理者としてのみ追加できます。 
     

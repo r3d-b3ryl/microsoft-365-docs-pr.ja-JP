@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示の分析オプションを設定する
+title: 高度な電子情報開示での分析オプションの設定
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
-description: 'Office 365 の Advanced eDiscovery で分析プロセスのオプションを設定する手順を確認します。これには、ほぼ重複、電子メールのスレッド、テーマなどが含まれます。  '
-ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '詳細な電子情報開示の分析プロセスのオプションを設定する手順を確認します。これには、ほぼ重複、電子メールのスレッド、およびテーマを含めることができます。  '
+ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557787"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631264"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Advanced eDiscovery で分析オプションを設定する (クラシック)
 
@@ -78,7 +78,7 @@ Advanced eDiscovery で、analyze を実行する前に Analyze オプション�
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   

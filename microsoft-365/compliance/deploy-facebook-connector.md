@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook のビジネスページをインポートおよびアーカイブするためのネイティブコネクタを Microsoft 365 にセットアップできます。 このデータを Microsoft 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: 48747dade98701303c4ca6a8c00192ec7faff34a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 10444d8a2c83fd89eaba927b422c8c89466d05cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635025"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636145"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタを展開して Facebook ビジネスページデータをアーカイブする
 
-この記事では、Microsoft 365 インポートサービスを使用して、Facebook のビジネスページから Microsoft 365 にデータをインポートするコネクタを展開するための段階的なプロセスについて説明します。 このプロセスの概要と、Facebook コネクタを展開するために必要な前提条件の一覧については、「 [facebook データをアーカイブするためのコネクタの設定](archive-facebook-data-with-sample-connector.md)」を参照してください。 
+この記事では、Office 365 インポートサービスを使用して、Facebook のビジネスページから Microsoft 365 にデータをインポートするコネクタを展開するための段階的なプロセスについて説明します。 このプロセスの概要と、Facebook コネクタを展開するために必要な前提条件の一覧については、「 [facebook データをアーカイブするためのコネクタの設定](archive-facebook-data-with-sample-connector.md)」を参照してください。 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directory でアプリを作成する
 
-1. に<https://portal.azure.com>移動し、Office 365 グローバル管理者アカウントの資格情報を使用してサインインします。
+1. に<https://portal.azure.com>移動し、グローバル管理者アカウントの資格情報を使用してサインインします。
 
     ![AAD でアプリを作成する](../media/FBCimage1.png)
 

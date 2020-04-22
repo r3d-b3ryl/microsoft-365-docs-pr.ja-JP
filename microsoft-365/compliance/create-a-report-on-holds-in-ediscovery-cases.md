@@ -1,5 +1,5 @@
 ---
-title: Office 365 で電子情報開示ケースの保留リストのレポートを作成する
+title: 電子情報開示ケースの保留リストのレポートを作成する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,20 +16,20 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: この記事のスクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
-ms.openlocfilehash: 8c426ff06bb0b2bafdfa91b9098b321994d558d7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 263ac052f320a989b8843f2954a5df0933cdb2f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077711"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632252"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Office 365 で電子情報開示ケースの保留リストのレポートを作成する
+# <a name="create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースの保留リストのレポートを作成する
   
 この記事に記載されているスクリプトを使用すると、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを、電子情報開示管理者と電子情報開示マネージャーが生成できます。 このレポートには、保留リストが関連付けられているケースの名前、保留になっているコンテンツの場所、保留がクエリベースかどうかなどの情報が含まれています。 保持されていないケースがある場合、スクリプトは、保留を行わないケースの一覧を含む追加のレポートを作成します。
 
 レポートに含まれる情報の詳細については、「 [More information](#more-information) 」セクションを参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織の電子情報開示管理者である必要があります。 電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。 EDiscovery アクセス許可の詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     

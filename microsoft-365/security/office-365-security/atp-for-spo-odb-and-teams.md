@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Office 365 Advanced Threat Protection を SharePoint Online、OneDrive for Business、Microsoft Teams のファイルに拡張して、組織にとってより安全なコラボレーションを可能にします。
-ms.openlocfilehash: 4c64a4934a472fa5c6ac0f1f718d63300560f6c8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71e404a402db8c0c0ad01bf1daa415788dfa717b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636024"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708385"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP
 
@@ -63,7 +63,7 @@ Microsoft 365 の構成方法によっては、ユーザーはブロックされ
 
  2018年5月の初期[quarantine](quarantine-email-messages.md)段階では、セキュリティ&amp; /コンプライアンスセンターの検疫機能が、SharePoint Online、OneDrive For business、MICROSOFT Teams 用の ATP に拡張されています。
 
-SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルは、検疫されたアイテムの一覧に含まれています。 &amp; (セキュリティコンプライアンスセンターで、[**脅威管理** \> **レビュー** \> ] [**コンテンツ**の**検疫**とフィルター] に移動します。)
+SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルは、検疫されたアイテムの一覧に含まれています。 ( &amp;セキュリティコンプライアンスセンターで、[脅威の**管理** \> ] [**検疫**の**レビュー** \>と**ファイル**のフィルター] に移動します。)
 
 組織の Microsoft 365 for business security team の一部であり、[セキュリティ&amp; /コンプライアンスセンターで必要なアクセス許可が割り当てら](permissions-in-the-security-and-compliance-center.md)れている場合は、検疫からの ATP によって悪意があると検出されたファイルをダウンロード、リリース、レポート、および削除できます。
 
@@ -75,7 +75,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 ## <a name="next-steps"></a>次の手順
 
-1. [SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)
+ - [SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)
 
-2. [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
+ - [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
 

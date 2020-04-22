@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 情報バリアを使用して、組織内の Microsoft Teams を使用して通信のコンプライアンスを確保します。
-ms.openlocfilehash: f063a18dcadf5de74b43b2efeba3910f65e40102
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 344c2b6999a8fd890358a25b39ef3a37abc9ef58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153499"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636105"
 ---
-# <a name="information-barriers"></a>情報障壁
+# <a name="information-barriers"></a>情報バリア
 
 ## <a name="overview"></a>概要
 
@@ -106,7 +106,7 @@ Microsoft クラウドサービスには、強力なコミュニケーション�
 
 情報バリアポリシーを定義、検証、または編集するには、PowerShell コマンドレットを熟知している必要があります。 [「How to](information-barriers-policies.md)」の記事では PowerShell コマンドレットの例をいくつか示していますが、パラメーターなどの追加の詳細については、組織のために知っておく必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Microsoft Teams の情報障壁の詳細を知る](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 

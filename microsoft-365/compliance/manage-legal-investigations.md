@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Microsoft 365 コンプライアンスセンターの電子情報開示ケースを使用して、組織の法的調査を管理します。 E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
-ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097200"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635907"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 
 組織には、組織内の特定の役員または他の従業員に関連する訴訟に対応する理由が多数あります。 これにより、電子メール、ドキュメント、インスタントメッセージの会話、ユーザーが毎日の作業タスクで使用したその他のコンテンツの場所について、調査に関する詳細情報をすばやく見つけて保持することができます。 セキュリティ/コンプライアンスセンターの電子情報開示ケースツールを使用すると、このような他の多くの操作を実行できます。
   
-**Microsoft が電子情報開示の調査を管理する方法を知りたいですか。** 同じ Office 365 検索ツールと調査ツールを使用して内部電子情報開示ワークフローを管理する方法について説明する[テクニカルホワイトペーパー](https://go.microsoft.com/fwlink/?linkid=852161)をダウンロードすることができます。
+**Microsoft が電子情報開示の調査を管理する方法を知りたいですか。** 同じ検索および調査ツールを使用して内部電子情報開示ワークフローを管理する方法について説明する[テクニカルホワイトペーパー](https://go.microsoft.com/fwlink/?linkid=852161)をダウンロードすることができます。
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>電子情報開示ケースを使用して法的調査を管理する
 

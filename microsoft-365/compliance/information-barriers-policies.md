@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029883"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621373"
 ---
 # <a name="define-information-barrier-policies"></a>情報障壁ポリシーの定義
 
@@ -37,7 +37,7 @@ ms.locfileid: "43029883"
 
 - ユーザーアカウントの属性は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、その他のジョブプロファイルの詳細を含めることができます。 
 
-- セグメントとは、Office 365 セキュリティ & コンプライアンスセンターで、選択した**ユーザーアカウント属性**を使用して定義された一連のユーザーのことです。 ([サポートされている属性の一覧](information-barriers-attributes.md)を参照してください)。 
+- セグメントとは、セキュリティ & コンプライアンスセンターで、選択した**ユーザーアカウント属性**を使用して定義された一連のユーザーのことです。 ([サポートされている属性の一覧](information-barriers-attributes.md)を参照してください)。 
 
 - 情報バリアポリシーでは、通信制限または制限を決定します。 情報バリアポリシーを定義するときは、次の2種類のポリシーから選択します。
     - "Block" ポリシーは、あるセグメントが別のセグメントと通信できないようにします。
@@ -67,12 +67,12 @@ ms.locfileid: "43029883"
 
 - スコープ付きディレクトリ検索-組織の最初の情報バリアポリシーを定義する前に、 [Microsoft Teams でスコープ付きディレクトリ検索を有効](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)にする必要があります。 情報バリアポリシーを設定または定義する前に、スコープ付きディレクトリ検索を有効にした後、少なくとも24時間待機します。
 
-- 監査ログ-ポリシーアプリケーションの状態を参照するには、監査ログを有効にする必要があります。 セグメントまたはポリシーの定義を開始する前に、この手順を実行することをお勧めします。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。
+- 監査ログ-ポリシーアプリケーションの状態を参照するには、監査ログを有効にする必要があります。 セグメントまたはポリシーの定義を開始する前に、この手順を実行することをお勧めします。 詳細については、「[監査ログの検索を有効または無効](turn-audit-log-search-on-or-off.md)にする」を参照してください。
 
 - アドレス帳ポリシーなし-情報バリアポリシーを定義して適用する前に、Exchange アドレス帳ポリシーが設定されていないことを確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2種類のポリシーは互換性がありません。 このようなポリシーがある場合は、最初に[アドレス帳ポリシーを削除](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)するようにしてください。 情報バリアポリシーが有効になっていて、階層型アドレス帳が有効になっている場合、情報バリアセグメントに含まれて***いない***すべてのユーザーに、Exchange online の[階層型アドレス帳](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)が表示されます。
 
 - PowerShell-現在、情報バリアポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ & コンプライアンスセンターで定義および管理されます。 この記事ではいくつかの例が示されていますが、PowerShell のコマンドレットとパラメーターについて理解しておく必要があります。 また、AzureRM モジュールも必要になります。
-    - [Office 365 セキュリティ/コンプライアンス センター PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Azure PowerShell モジュールをインストールする](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Microsoft Teams の情報障壁に対する管理者の同意-ポリシーが設定されている場合、情報バリアは、ユーザーが意図したものではないチャットセッションからユーザーを削除することができます。 これにより、組織はポリシーと規制に準拠したままになります。 次の手順を使用して、Microsoft Teams で情報バリアポリシーが期待どおりに動作するようにします。 
@@ -243,7 +243,7 @@ ms.locfileid: "43029883"
 
     各ポリシーに該当する場合は、この手順を繰り返します。
 
-3. 情報バリアポリシーのアクティブ状態の設定が終了したら、Office 365 セキュリティ & コンプライアンスセンターで**InformationBarrierPoliciesApplication**コマンドレットを使用します。
+3. 情報バリアポリシーのアクティブ状態の設定が終了したら、セキュリティ & コンプライアンスセンターで**InformationBarrierPoliciesApplication**コマンドレットを使用します。
 
     文`Start-InformationBarrierPoliciesApplication`
 

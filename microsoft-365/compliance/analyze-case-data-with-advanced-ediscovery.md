@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示を使用してケースデータを分析する
+title: 高度な電子情報開示を使用してケースデータを分析する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: '分析プロセスの概要を説明します。これにより、Office 365 の Advanced eDiscovery でパラメーター、実行オプション、および結果の表示を設定できます。 '
-ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: '分析プロセスの概要を説明します。これにより、高度な電子情報開示でパラメーター、実行オプション、および結果の表示を設定できます。 '
+ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556805"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637061"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>上級電子情報開示を使用してケースデータを分析する (クラシック)
 

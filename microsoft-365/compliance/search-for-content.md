@@ -1,5 +1,5 @@
 ---
-title: Office 365 のコンテンツを検索する
+title: コンテンツを検索する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,16 +13,16 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: セキュリティ & コンプライアンスセンターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for Business でのインスタントメッセージングの会話をすばやく見つけることができます。
-ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601544"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632922"
 ---
-# <a name="search-for-content-in-office-365"></a>Office 365 のコンテンツを検索する
+# <a name="search-for-content"></a>コンテンツを検索する
 
-セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Office 365 グループなどの Office 365 コラボレーション ツール内の電子メール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
+セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールを使用して、Microsoft Teams や Microsoft 365 グループなどのコラボレーションツールで、電子メール、ドキュメント、インスタントメッセージの会話を検索することができます。
   
 ## <a name="search-for-content"></a>コンテンツを検索する
 
@@ -36,11 +36,11 @@ ms.locfileid: "41601544"
     
 - [ID リスト検索を実行](csv-file-for-an-id-list-content-search.md)して特定の電子メールメッセージを検索する 
     
-- Office 365 でオンプレミスのユーザーの[クラウドベースのメールボックスを検索](search-cloud-based-mailboxes-for-on-premises-users.md)する
+- Microsoft 365 でオンプレミスのユーザーの[クラウドベースのメールボックスを検索](search-cloud-based-mailboxes-for-on-premises-users.md)する
 
 - 検索結果の[キーワード統計を表示](view-keyword-statistics-for-content-search.md)し、必要に応じてクエリを修正します。 
     
-- 組織が Office 365 にインポートした[サードパーティのデータを検索](use-content-search-to-search-third-party-data-that-was-imported.md)する 
+- 組織が Microsoft 365 にインポートした[サードパーティのデータを検索](use-content-search-to-search-third-party-data-that-was-imported.md)する 
     
 - 複数の検索のためにクエリとコンテンツの場所を[一括編集](bulk-edit-content-searches.md)する 
     

@@ -1,5 +1,5 @@
 ---
-title: Office 365 のコンテンツ検索を使用した対象コレクション
+title: コンテンツ検索を使用して対象コレクションを検索する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,21 +16,21 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e6de817e7ec324e6aa80ef596340906c2f86d126
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080813"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633382"
 ---
-# <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 のコンテンツ検索を使用した対象コレクション
+# <a name="use-content-search-for-targeted-collections"></a>コンテンツ検索を使用して対象コレクションを検索する
 
-Office 365 セキュリティ&amp;コンプライアンスセンターのコンテンツ検索機能では、Exchange メールボックスまたは SharePoint および OneDrive for business サイトの特定のフォルダーを検索するための直接 UI を使用することはできません。 ただし、実際の検索クエリ構文で、サイトの email または path (DocumentLink) プロパティを指定して、特定のフォルダー (*対象のコレクション*と呼ばれる) を検索することができます。 コンテンツ検索を使用して対象のコレクションを実行することは、特定のメールボックスまたはサイトフォルダーに、訴訟や権限のあるアイテムに応答するアイテムがあることを確信する場合に役立ちます。 この記事に記載されているスクリプトを使用して、SharePoint および OneDrive for business サイト上のフォルダーのメールボックスフォルダーのフォルダー ID またはパス (DocumentLink) を取得することができます。 その後、検索クエリでフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返すことができます。
+セキュリティ&amp; /コンプライアンスセンターのコンテンツ検索機能は、Exchange メールボックスまたは SharePoint および OneDrive for business サイトの特定のフォルダーを検索するための直接の方法を UI に提供しません。 ただし、実際の検索クエリ構文で、サイトの email または path (DocumentLink) プロパティを指定して、特定のフォルダー (*対象のコレクション*と呼ばれる) を検索することができます。 コンテンツ検索を使用して対象のコレクションを実行することは、特定のメールボックスまたはサイトフォルダーに、訴訟や権限のあるアイテムに応答するアイテムがあることを確信する場合に役立ちます。 この記事に記載されているスクリプトを使用して、SharePoint および OneDrive for business サイト上のフォルダーのメールボックスフォルダーのフォルダー ID またはパス (DocumentLink) を取得することができます。 その後、検索クエリでフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返すことができます。
 
 > [!NOTE]
 > SharePoint または OneDrive for Business サイト内のフォルダーにあるコンテンツを返すには、このトピックのスクリプトで Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティは、フォルダー内のすべてのコンテンツを返すので、Path プロパティよりも堅牢ですが、Path プロパティはいくつかのメディアファイルを返すわけではありません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 手順1でスクリプトを実行するには、セキュリティ&amp;コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
@@ -68,22 +68,22 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
     
   ```powershell
   #########################################################################################################
-  # This PowerShell script will prompt you for:                             #
+  # This PowerShell script will prompt you for:                                #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.           #
-  # The script will then:                                           #
-  #    * If an email address is supplied: list the folders for the target mailbox.          #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+  # The script will then:                                            #
+  #    * If an email address is supplied: list the folders for the target mailbox.            #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
-  #    * for the site.                                                                                  #
-  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
-  #      appended to the folder ID or documentlink to use in a Content Search.              #
-  # Notes:                                              #
-  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
-  #      the current folder and all sub-folders are searched.                       #
-  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder #
+  #    * for the site.                                                                                    #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
+  #      appended to the folder ID or documentlink to use in a Content Search.                #
+  # Notes:                                                #
+  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
+  #      the current folder and all sub-folders are searched.                        #
+  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
   #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
-  #      each sub-folder that you want to search.                               #
-  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.       #
+  #      each sub-folder that you want to search.                                #
+  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
@@ -219,7 +219,7 @@ SharePoint または OneDrive for Business サイトから**documentlink**プロ
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 手順1でスクリプトの実行に使用したアカウントと資格情報を使用して、Office 365 にサインインします。
+2. 手順1でスクリプトの実行に使用したアカウントと資格情報を使用してサインインします。
     
 3. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**検索** \> **コンテンツの検索**] をクリックし、[**新規作成** ![] [追加] アイコン](../media/O365-MDM-CreatePolicy-AddIcon.gif)をクリックします。
     
@@ -233,7 +233,7 @@ SharePoint または OneDrive for Business サイトから**documentlink**プロ
     
     - [検索する**特定のサイトを選択する**] をクリックし、手順1でスクリプトを実行したときに指定したものと同じサイト URL を追加します。 
     
-6. **[次へ]** をクリックします。
+6. [**次へ**] をクリックします。
     
 7. [**検索する内容を選択**してください] ページの [キーワード] ボックスに、 `folderid:<folderid>`手順`documentlink:<path>` 1 でスクリプトによって返された値を貼り付けます。 
     

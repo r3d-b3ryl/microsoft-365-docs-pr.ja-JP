@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Twitter データをインポートおよびアーカイブするためのネイティブコネクタを Microsoft 365 にセットアップできます。 このデータを Microsoft 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: 80c3ca71204b6050a1944250c20df4ff13bbd71e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 1143239635aed64847c12a3d8c61c430a677e037
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635015"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636125"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>コネクタをアーカイブ Twitter データに展開する
 
@@ -26,7 +26,7 @@ ms.locfileid: "42635015"
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directory でアプリを作成する
 
-1. に<https://portal.azure.com>移動し、Office 365 グローバル管理者アカウントの資格情報を使用してサインインします。
+1. に<https://portal.azure.com>移動し、グローバル管理者アカウントの資格情報を使用してサインインします。
 
    ![Azure にサインインする](../media/TCimage01.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 の Office 365 暗号化
+title: Microsoft Dynamics 365 での暗号化
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Microsoft Dynamics 365 での暗号化について説明します。'
-ms.openlocfilehash: 288f739182f8419cf7fbbfb6dfd7ad0a2c7838a5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597854"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637241"
 ---
-# <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 の Office 365 暗号化
+# <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 での暗号化
 
 Microsoft では、暗号化テクノロジを使用して、Microsoft データベースの保存期間中に、また、ユーザーのデバイスとデータセンター間で転送中の Dynamics 365 で顧客データを保護しています。 お客様と Microsoft データセンターの間で確立された接続は暗号化され、業界標準の TLS を使用してすべてのパブリックエンドポイントがセキュリティ保護されます。 TLS は、デスクトップとデータセンター間のデータの機密性と整合性を確保するために、セキュリティが強化されたブラウザーからサーバーへの接続を効果的に確立します。 データ暗号化がアクティブ化された後は、無効にすることはできません。 詳細については、「[フィールドレベルのデータ暗号化](https://msdn.microsoft.com/library/dn481562.aspx)」を参照してください。
 

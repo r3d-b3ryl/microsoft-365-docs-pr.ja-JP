@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示でユーザーとケースをセットアップする
+title: 高度な電子情報開示でユーザーとケースをセットアップする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: 'Office 365 Advanced eDiscovery でユーザーの役割を構成し、ケースを作成して、ケースにユーザーを割り当てる方法について説明します。  '
-ms.openlocfilehash: 76d5e6ab503cc053e31811cc06ac12545a9eeb7e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '高度な電子情報開示でユーザーの役割を構成し、ケースを作成し、ユーザーをケースに割り当てる方法について説明します。  '
+ms.openlocfilehash: 5c82ad8b630974d3afeb1928f8dd229ffb0dc36a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557751"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636071"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>上級電子情報開示でユーザーおよびケースをセットアップする (クラシック)
 
 このトピックでは、上級電子情報開示 (クラシック) のユーザーとケースをセットアップする方法について説明します。
   
 > [!IMPORTANT]
-> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は Office 365 Advanced ediscovery *(アドバンスト ediscovery (クラシック)* または*advanced ediscovery v 1.0*とも呼ばれる) の廃止を発表しています。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
+> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は advanced ediscovery *(classic)* または*advanced ediscovery v 1.0*とも呼ばれる、高度な電子情報開示の廃止をアナウンスしています。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
   
 ## <a name="prerequisites"></a>前提条件
 
@@ -35,7 +35,7 @@ Advanced eDiscovery でケースとユーザーを設定する前に、次のも
   
 - Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office365 E5 ライセンスが割り当てられている必要があります。または、Office365 E1 または E3 ライセンスを持つユーザーに Advanced eDiscovery 単体のライセンスを割り当てることもできます。ケースに割り当てられ、Advanced eDiscovery を使用してデータを分析する管理者および法令遵守責任者には E5 ライセンスは不要です。 
     
-- 電子情報開示ケースを作成してメンバーを追加するには、Office 365 &amp;セキュリティコンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 セキュリティ&amp; /コンプライアンスセンターの電子情報開示マネージャーの役割グループに自分を追加するには、Office 365 組織の全体管理者である必要があります。 全体管理者ではない場合は、電子情報開示マネージャーの役割グループに追加するように全体管理者に依頼する必要があります。 詳細については、以下を参照してください。
+- 電子情報開示ケースを作成してメンバーを追加するには、 &amp;セキュリティコンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 セキュリティ&amp; /コンプライアンスセンターの電子情報開示マネージャーの役割グループに自分を追加するには、組織の全体管理者である必要があります。 全体管理者ではない場合は、電子情報開示マネージャーの役割グループに追加するように全体管理者に依頼する必要があります。 詳細については、以下を参照してください。
     
   - [Microsoft 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](~/security/office-365-security/protect-against-threats.md)
     
@@ -61,7 +61,7 @@ Advanced eDiscovery でケースとユーザーを設定する前に、次のも
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [データの準備](prepare-data-for-advanced-ediscovery.md)
  

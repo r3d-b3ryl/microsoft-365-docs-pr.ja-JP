@@ -1,5 +1,5 @@
 ---
-title: Azure での Office 365 暗号化
+title: Azure での暗号化
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: '概要: Azure の暗号化について説明します。'
-ms.openlocfilehash: 9828da8b2d39a3b80784d57ed71a335857cfaea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602114"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637435"
 ---
-# <a name="office-365-encryption-in-azure"></a>Azure での Office 365 暗号化
+# <a name="encryption-in-azure"></a>Azure での暗号化
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 
 暗号化された通信や運用プロセスなど、Azure の技術的な防護策は、データのセキュリティを維持するのに役立ちます。 また、追加の暗号化機能を実装し、独自の暗号化キーを管理する柔軟性もあります。 お客様の構成に関係なく、Microsoft は暗号化を適用して Azure の顧客データを保護します。 Microsoft では、さまざまな高度なテクノロジを使用して Azure でホストされているデータを制御し、暗号化キーの暗号化、制御、および管理、およびデータへのアクセスの制御や監査を行うこともできます。 さらに、Azure ストレージには、セキュリティ機能の包括的なセットが用意されているため、開発者はセキュリティで保護されたアプリケーションを構築できます。
 
@@ -47,7 +47,7 @@ Azure Disk Encryption を使用すると、Windows および Linux インフラ�
 
 [Azure ストレージサービスの暗号化](https://docs.microsoft.com/azure/storage/storage-service-encryption)では、データを保存する前に、azure ストレージが自動的にデータを暗号化し、データの暗号化を解除してからデータを解読します。 暗号化、復号化、およびキー管理のプロセスは、ユーザーに対して完全に透過的です。 Azure ストレージサービスの暗号化は、azure [Blob ストレージ](https://azure.microsoft.com/services/storage/blobs/)と[azure ファイル](https://azure.microsoft.com/services/storage/files/)に使用できます。 また、Microsoft によって管理されている暗号化キーを Azure Storage Service 暗号化と共に使用することも、独自の暗号化キーを使用することもできます。 (独自のキーを使用する方法については、「 [Azure Key Vault での customer managed keys を使用したストレージサービスの暗号化](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys)」を参照してください。 Microsoft 管理キーの使用の詳細については、「 [Rest でのデータのストレージサービス暗号化](https://docs.microsoft.com/azure/storage/storage-service-encryption)」を参照してください。さらに、暗号化の使用を自動化することができます。 たとえば、 [Azure Storage Resource プロバイダ REST API](https://msdn.microsoft.com/library/azure/mt163683.aspx)、 [.Net 用ストレージリソースプロバイダークライアントライブラリ](https://msdn.microsoft.com/library/azure/mt131037.aspx)、 [Azure POWERSHELL](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)、または[azure CLI](https://docs.microsoft.com/azure/storage/storage-azure-cli)を使用して、ストレージアカウントのストレージサービス暗号化をプログラムで有効または無効にすることができます。
 
-一部の Office 365 サービスでは、データの格納に Azure を使用します。 たとえば、SharePoint Online と OneDrive for business のデータは Azure Blob ストレージに格納され、Microsoft Teams はそのチャットサービスのデータをテーブル、blob、およびキューに格納します。 また、Microsoft 365 コンプライアンスセンターのコンプライアンススコア機能は、顧客が入力したデータを、 [Azure COSMOS DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)で暗号化された形式で格納されて格納します。これは、サービス (PaaS)、グローバルに分散されたマルチモデルデータベースのプラットフォームです。 Azure Storage Service 暗号化は、Azure Blob ストレージとテーブルに格納されているデータを暗号化します。また、Azure ディスク暗号化は、キュー内のデータを暗号化し、Windows および IaaS 仮想マシンのディスクを使用して、オペレーティングシステムとデータディスクのボリューム暗号化を提供します。 このソリューションによって、仮想マシンのディスク上のすべてのデータが Azure ストレージ内の残りの部分で暗号化されるようになります。 [Azure COSMOS DB での rest の暗号化](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)は、セキュリティで保護されたキーストレージシステム、暗号化されたネットワーク、暗号化 api など、いくつかのセキュリティテクノロジを使用して実装されます。
+一部の Microsoft 365 サービスでは、データの格納に Azure を使用します。 たとえば、SharePoint Online と OneDrive for business のデータは Azure Blob ストレージに格納され、Microsoft Teams はそのチャットサービスのデータをテーブル、blob、およびキューに格納します。 また、Microsoft 365 コンプライアンスセンターのコンプライアンススコア機能は、顧客が入力したデータを、 [Azure COSMOS DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)で暗号化された形式で格納されて格納します。これは、サービス (PaaS)、グローバルに分散されたマルチモデルデータベースのプラットフォームです。 Azure Storage Service 暗号化は、Azure Blob ストレージとテーブルに格納されているデータを暗号化します。また、Azure ディスク暗号化は、キュー内のデータを暗号化し、Windows および IaaS 仮想マシンのディスクを使用して、オペレーティングシステムとデータディスクのボリューム暗号化を提供します。 このソリューションによって、仮想マシンのディスク上のすべてのデータが Azure ストレージ内の残りの部分で暗号化されるようになります。 [Azure COSMOS DB での rest の暗号化](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)は、セキュリティで保護されたキーストレージシステム、暗号化されたネットワーク、暗号化 api など、いくつかのセキュリティテクノロジを使用して実装されます。
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 

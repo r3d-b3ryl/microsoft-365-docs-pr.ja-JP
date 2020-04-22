@@ -1,5 +1,5 @@
 ---
-title: Set Office 365 の詳細な電子情報開示の設定を分析する
+title: 高度な電子情報開示の高度な設定を分析する設定を行う
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: 'Office 365 Advanced eDiscovery の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマなどの高度な設定を構成する方法について説明します。 '
-ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '詳細な電子情報開示の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマを含む高度な設定を構成する方法について説明します。 '
+ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557797"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631274"
 ---
-# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Set Office 365 の詳細な電子情報開示の設定を分析する
+# <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>高度な電子情報開示の高度な設定を分析する設定を行う
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -48,7 +48,7 @@ Advanced eDiscovery は、モジュール設定を分析するための既定の
     
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   

@@ -1,5 +1,5 @@
 ---
-title: Office 365 の詳細な電子情報開示でのテスト関連の分析
+title: 高度な電子情報開示での関連性分析のテスト
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: 'Office 365 Advanced eDiscovery でバッチ計算の後に [テスト] タブを使用して、全体的な処理の品質をテスト、比較、検証する方法について説明します。  '
-ms.openlocfilehash: c65c10878bdc057a1c53c4370f6a6750e1fe8e9d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '高度な電子情報開示のバッチ計算の後に [テスト] タブを使用して、全体的な処理の品質をテスト、比較、検証する方法について説明します。  '
+ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557687"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637201"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>高度な電子情報開示での関連性分析のテスト (クラシック)
 
@@ -112,7 +112,7 @@ ms.locfileid: "42557687"
     
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [関連性の評価について](assessment-in-relevance-in-advanced-ediscovery.md)
   

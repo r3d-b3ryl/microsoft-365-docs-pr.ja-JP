@@ -13,16 +13,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 検索を実行する前に、サポートされていない文字や小文字のブール演算子などのエラーと入力ミスについては、キーワードクエリのコンテンツ検索を確認してください。 エラーが見つかった場合は、変更されたクエリを提案します。
-ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17d9c7a2480b80fa45fd4bb296308a4d4be79377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078917"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636315"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>コンテンツ検索クエリでエラーを確認する
 
-コンテンツ検索を作成または編集する場合、Office 365 で、サポートされていない文字と小文字のブール演算子を使用してクエリを確認できます。 どう。 コンテンツ検索の [クエリ] ページで、[**クエリのスペルチェック] を**クリックします。 
+コンテンツ検索を作成または編集する場合は、Microsoft 365 で、サポートされていない文字と小文字のブール演算子についてのクエリを確認できます。 どう。 コンテンツ検索の [クエリ] ページで、[**クエリのスペルチェック] を**クリックします。 
   
 ![[クエリのスペルチェックを行う] をクリックして、サポートされていない文字の検索クエリを確認します。](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   

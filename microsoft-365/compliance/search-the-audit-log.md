@@ -1,5 +1,5 @@
 ---
-title: Office 365 のユーザーおよび管理者のアクティビティについて監査ログを検索する
+title: ユーザーおよび管理者のアクティビティの監査ログを検索する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,17 +13,17 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: Office 365 監査ログは、統合監査ログです。 なぜ統合監査ログが必要なのでしょうか。 組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。 つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。
-ms.openlocfilehash: 82ed3c1afd4f59136b04120982ddb1433f4dd0eb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 監査ログは、統合監査ログです。 なぜ統合監査ログが必要なのでしょうか。 組織がサブスクライブしているほとんどのサービスからのイベントは、検索可能な単一の監査ログに記録されるためです。 つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。
+ms.openlocfilehash: 95f5025e4831223c93251c7c22d1f43d44086d48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597534"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625097"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Office 365 のユーザーおよび管理者のアクティビティについて監査ログを検索する
+# <a name="search-the-audit-log-for-user-and-admin-activity"></a>ユーザーおよび管理者のアクティビティの監査ログを検索する
 
-Office 365 監査ログは、統合監査ログです。 なぜ統合監査ログが必要なのでしょうか。 組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。 つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。 
+監査ログは、統合監査ログです。 なぜ統合監査ログが必要なのでしょうか。 組織が加入しているほとんどのサービスからのイベントは、検索可能な単一の監査ログに記録されるためです。 つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。 
   
 - SharePoint
 - OneDrive
@@ -38,7 +38,7 @@ Office 365 監査ログは、統合監査ログです。 なぜ統合監査ロ�
    
  ## <a name="set-up-auditing"></a>監査の設定
   
-Office 365 監査ログを検索するには、いくつかの作業を行う必要があります。
+監査ログを検索するには、いくつかの作業を行う必要があります。
   
 - [監査ログの検索を有効](turn-audit-log-search-on-or-off.md)にして、検索可能なイベントの記録を開始する 
     
@@ -46,7 +46,7 @@ Office 365 監査ログを検索するには、いくつかの作業を行う必
     
  ## <a name="search-the-audit-log"></a>監査ログの検索
   
-監査を有効にした後は、複数の Office 365 サービスから、何百もの種類のイベントを検索します。
+監査を有効にした後は、複数の Microsoft 365 サービスから、何百もの種類のイベントを検索します。
   
 - ユーザーおよび管理者のアクティビティの[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md) 
     

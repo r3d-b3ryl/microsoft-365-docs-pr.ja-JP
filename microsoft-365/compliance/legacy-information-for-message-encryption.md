@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
-description: Office 365 組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「Office 365 Message Encryption」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
-ms.openlocfilehash: 29bebb89bf8fcfed25e5348789d80d244a044b6f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: まだ組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「Office 365 Message Encryption」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
+ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072238"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632686"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
-Office 365 組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「 [Office 365 Message Encryption](ome.md)」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
+まだ組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「 [Office 365 Message Encryption](ome.md)」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
   
 Office 365 Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。 Office 365 メッセージの暗号化は、Outlook.com、Yahoo、Gmail、その他の電子メールサービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
   
@@ -131,7 +131,7 @@ Exchange Online および Exchange Online Protection 管理者は、暗号化さ
 |サポートされているメッセージの種類  <br/> |Office 365 Message Encryption は、**IPM.Note** のメッセージ クラス ID があるアイテムでのみサポートされます。 詳細については、「 [Item types and message classes](https://msdn.microsoft.com/library/office/ff861573.aspx)」を参照してください。  <br/> |
 |メッセージ サイズの制限  <br/> |Office 365 Message Encryption は、25 メガバイトまでのメッセージを暗号化できます。 メッセージサイズの制限の詳細については、「 [Exchange Online の制限](https://technet.microsoft.com/library/exchange-online-limits.aspx)」を参照してください。  <br/> |
 |Exchange Online の電子メールアイテム保持ポリシー  <br/> |Exchange Online は、暗号化されたメッセージを保存しません。  <br/> |
-|Office 365 Message Encryption の言語サポート  <br/> | Office 365 Message Encryption は、以下のように Office 365 の言語をサポートします。  <br/>  受信メールメッセージと添付 HTML ファイルは、送信者の言語設定に基づいてローカライズされます。  <br/>  表示するためのポータルは、受信者のブラウザーの設定に基づいてローカライズされます。  <br/>  暗号化されたメッセージの本文 (コンテンツ) は、ローカライズされません。  <br/> |
+|Office 365 Message Encryption の言語サポート  <br/> | Office 365 Message encryption では、次のように Microsoft 365 言語がサポートされています。  <br/>  受信メールメッセージと添付 HTML ファイルは、送信者の言語設定に基づいてローカライズされます。  <br/>  表示するためのポータルは、受信者のブラウザーの設定に基づいてローカライズされます。  <br/>  暗号化されたメッセージの本文 (コンテンツ) は、ローカライズされません。  <br/> |
 |OME ポータルと OME Viewer アプリの個人情報  <br/> |[Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) には、お客様の個人情報を使用して Microsoft が行うことと行わないことについて詳しく記されています。  <br/> |
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>従来の OME についてよく寄せられる質問
@@ -141,15 +141,15 @@ Office 365 メッセージの暗号化についての質問 いくつかの答�
   
  **Q: ユーザーが暗号化された電子メールメッセージを組織外の受信者に送信します。Office 365 メッセージの暗号化で暗号化された電子メールメッセージの読み取りと返信を行うために、外部の受信者が行う必要があることはありますか。**
   
-Office 365 で暗号化されたメッセージを受信する組織外部の受信者は、以下の 2 つの方法のいずれかでそのメッセージを表示できます。
+Microsoft 365 の暗号化されたメッセージを受信する組織外の受信者は、次の2つの方法のいずれかで表示できます。
   
 - Office 365 に関連付けられた Microsoft アカウントまたは職場または学校のアカウントを使用してサインインします。
 
 - ワンタイムパスコードを使用します。
 
- **Q. Office 365 の暗号化されたメッセージはクラウドまたは Microsoft サーバーに保存されますか。**
+ **Q: Microsoft 365 では、クラウドまたは Microsoft サーバーに保存されている暗号化メッセージはありますか?**
   
-いいえ、暗号化されたメッセージは受信者の電子メールシステムに保持され、受信者がメッセージを開いたときに、Office 365 サーバーに表示するために一時的に投稿されます。 メッセージはそこに格納されません。
+いいえ、暗号化されたメッセージは受信者の電子メールシステムに保持され、受信者がメッセージを開いたときに、Microsoft サーバーに表示するために一時的に投稿されます。 メッセージはそこに格納されません。
   
  **Q. 暗号化された電子メール メッセージを独自のブランドでカスタマイズすることはできますか。**
   
@@ -203,9 +203,9 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q: Office 365 メッセージの暗号化をサポートするために、組織のファイアウォール内の Url、IP アドレス、またはポートを開く必要がありますか。**
   
-はい。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Office 365 の url と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
+はい。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Microsoft 365 の url と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
   
- **Q. Office 365 の暗号化されたメッセージは、何人まで送信できますか。**
+ **Q: Microsoft 365 の暗号化メッセージを送信できる受信者の数はいくつですか。**
   
 受信者の制限は、メッセージあたりの受信者数が500の場合、または配布リストの展開後に、11980文字がメッセージ**の "宛先**" フィールドに設定されている場合は、最初の方になります。
   
@@ -215,7 +215,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
   
-暗号化されたメッセージが表示されているかどうかを示すレポートはありませんが、特定のメールフロールール (トランスポートルールとも呼ばれます) に一致したメッセージの数を特定するために利用できる Office 365 レポートがあります。
+暗号化されたメッセージが表示されているかどうかを示すレポートはありませんが、特定のメールフロールール (トランスポートルールとも呼ばれます) に一致したメッセージの数を特定するために利用できる Microsoft 365 レポートがあります。
   
  **Q. OME ポータルと OME Viewer アプリで提供した情報を Microsoft はどのように使用しますか。**
   

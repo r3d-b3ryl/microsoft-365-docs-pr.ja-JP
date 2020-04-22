@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165936"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637179"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>ケーススタディ-Contoso 社が Microsoft Teams および Exchange の通信に対して不快な言語ポリシーを迅速に構成する
 
@@ -81,7 +81,7 @@ Contoso 社の IT 管理者は、次の手順を実行して Contoso のライ�
 
 既定では、全体管理者は通信コンプライアンス機能にアクセスできません。 Contoso IT 管理者とコンプライアンス担当者がコミュニケーションコンプライアンスにアクセスできるように、[アクセス許可を構成する必要があり](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance)ます。
 
-1. Contoso IT 管理者は、 **office 365 の [セキュリティとコンプライアンスセンター**のアクセス許可] ページにサインインします[(https://protection.office.com/permissions) ](https://protection.office.com/permissions)グローバル管理者アカウントの資格情報を使用して、office 365 で役割を表示および管理するためのリンクを選択します)。
+1. Contoso IT 管理者は、 **Office 365 セキュリティとコンプライアンスセンター**のアクセス許可ページにサインインします[(https://protection.office.com/permissions) ](https://protection.office.com/permissions)グローバル管理者アカウントの資格情報を使用して、Microsoft 365 の役割を表示および管理するためのリンクを選択します)。
 2. [**作成**] を選択すると、新しい役割グループに [*通信コンプライアンス*] のフレンドリ名が与えられ、[**次へ**] を選択します。
 3. [**役割の選択**] を選択し、[**追加**] を選択します。 必要な役割を追加するには、*監督レビュー管理者*、*ケース管理*、*コンプライアンス管理者*、*およびレビュー*のチェックボックスをオンにし、[**追加**]、[**完了]、** [**次へ**] の順に選択します。
 
@@ -141,7 +141,7 @@ Microsoft 365 管理センターから開始して通信コンプライアンス
 
 通信コンプライアンスポリシーの使用を開始するには、攻撃的な言葉を監視するように新しいポリシーを設定する前に Contoso IT 管理者が構成する必要があるいくつかの前提条件があります。 これらの前提条件が満たされたら、Contoso IT 管理者とコンプライアンス担当者が新しいポリシーを構成し、コンプライアンススペシャリストが調査を開始し、生成されたすべての警告を修復することができます。
 
-### <a name="enabling-auditing-in-office-365"></a>Office 365 で監査を有効にする
+### <a name="enabling-auditing-in-microsoft-365"></a>Microsoft 365 で監査を有効にする
 
 通信のコンプライアンスでは、監査ログを使用して通知を表示し、レビュー担当者が行った修復アクションを追跡する必要があります。 監査ログは、定義された組織のポリシーに関連付けられているすべてのアクティビティの要約です。または、通信コンプライアンスポリシーに変更がある場合はいつでも、その概要です。
 
@@ -154,7 +154,7 @@ Contoso 社のコンプライアンス担当者が、不快な言葉を監視す
 Contoso 社の従業員全員を含む新しいグループを作成する必要があるので、次の手順を実行します。
 
 1. Contoso it 管理者は、 **microsoft 365 管理センター** [https://admin.microsoft.com)にサインインして](https://admin.microsoft.com)、 **microsoft 365 管理センター** > **グループ** > **グループ**に移動します。
-2. [**グループの追加**] を選択し、ウィザードを完了して、新しい*Office 365 グループ*または*配布グループ*を作成します。
+2. [**グループの追加**] を選択し、ウィザードを完了して、新しい*Microsoft 365 グループ*または*配布グループ*を作成します。
 
 ![グループ](../media/communication-compliance-case-all-employees.png)
 

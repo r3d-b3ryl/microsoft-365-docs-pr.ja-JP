@@ -1,5 +1,5 @@
 ---
-title: 廃止 Office 365 Message Encryption Viewer アプリ
+title: 廃止メッセージ暗号化ビューアアプリ
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: 2018年8月15日には、Office 365 Message Encryption (OME) Viewer モバイルアプリを Android および Apple ストアから削除します。 以前のバージョンの OME で Apple と Android の電話機で暗号化された電子メールメッセージと添付ファイルを読み取るには、Office 365 Message Encryption Viewer モバイルアプリが必要でした。 OME Viewer アプリの削除とは別に、以前のバージョンの OME には他の変更は加えていません。
-ms.openlocfilehash: 791a882650cfa3ffd5caaafbb835c8f272f8665e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37a10942e49ca0e6249b2b6a0737411a0d6de1c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595272"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636115"
 ---
-# <a name="deprecating-office-365-message-encryption-viewer-app"></a>廃止 Office 365 Message Encryption Viewer アプリ
+# <a name="deprecating-message-encryption-viewer-app"></a>廃止メッセージ暗号化ビューアアプリ
 
 2018年8月15日に、Office 365 Message Encryption (OME) Viewer モバイルアプリが Android および Apple ストアから削除されました。 以前のバージョンの OME で Apple と Android の電話機で暗号化された電子メールメッセージと添付ファイルを読み取るには、Office 365 Message Encryption Viewer モバイルアプリが必要でした。 OME Viewer アプリの削除とは別に、以前のバージョンの OME には他の変更は加えていません。
   
@@ -39,13 +39,13 @@ ms.locfileid: "41595272"
   
 ## <a name="why-this-change-was-made"></a>この変更が行われた理由
 
-新しいバージョンの OME では、モバイルアプリで保護された電子メールメッセージと添付ファイルを読み取る必要がなくなりました。 Office 365 新しい OME 機能を使用しているお客様は、保護されたメッセージを Outlook mobile および非 Office 365 で表示できます。ユーザーは、保護されたメッセージをブラウザーで表示できます。
+新しいバージョンの OME では、モバイルアプリで保護された電子メールメッセージと添付ファイルを読み取る必要がなくなりました。 新しい OME 機能を使用しているお客様は、保護されたメッセージを Outlook mobile で表示することができ、ユーザー以外はブラウザーで保護されたメッセージを表示することができます。
   
 ユーザーが保護されたメッセージを表示できるようにするために、ユーザーにモバイルアプリのダウンロードを要求する hurdle があります。 新しい Office 365 メッセージの暗号化機能は、より優れたモバイル環境を提供します。
   
 ## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>以前のバージョンの Office 365 メッセージの暗号化を引き続き使用することができます。
 
-以前のバージョンの Office 365 メッセージの暗号化は、現時点では推奨されていません。ただし、新しいバージョンの Office 365 Message Encryption には大幅な機能強化が加えられているため、機密データを暗号化して他のユーザーに保護することが容易になります。および任意のデバイス (Office 365 ユーザーが保護されたメッセージを Outlook (デスクトップ、モバイル、および web) で直接読み取る機能を含む)。 
+以前のバージョンの Office 365 メッセージの暗号化は、現時点では使用されなくなりましたが、新しいバージョンの Office 365 Message Encryption には大幅な機能強化が加えられています。これにより、ユーザーが保護されたメッセージを Outlook (デスクトップ、モバイル) で直接読み取ることができるようになります。、web)。 
   
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更を準備するために必要な作業
 

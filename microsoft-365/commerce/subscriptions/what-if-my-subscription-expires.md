@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Microsoft 365 for business サブスクリプションの有効期限が切れたとき、または無効にされたとき、またはキャンセルしたときに、データがどうなるかについて説明します。
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634876"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707609"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business サブスクリプションが終了したときに、データとアクセスはどうなりますか?
 
@@ -220,7 +220,7 @@ ms.locfileid: "43634876"
 キャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
   
 > [!IMPORTANT]
-> 一般的な無効期間が終了する前にサブスクリプション データを削除する場合は、プロビジョニングの優先解除を依頼できます。 プロビジョニングの優先解除をリクエストすると、キャンセルから 3 日以内にサブスクリプション データが削除されます。 プロビジョニングの優先解除を利用する場合は、[サポートに連絡してください](../../admin/contact-support-for-business-products.md)。
+> 一般的な無効期間が終了する前にサブスクリプションデータを削除する場合は、アカウントを[閉じる](../close-your-account.md)ことができます。
 
 > [!NOTE]
 > このページに記載された情報には、「[Microsoft ポリシーの免責事項および変更に関する通知 (英語)](https://go.microsoft.com/fwlink/p/?LinkId=613651)」が適用されます。 このサイトに定期的にアクセスして、変更がないか確認してください。

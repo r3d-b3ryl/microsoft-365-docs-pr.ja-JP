@@ -1,5 +1,5 @@
 ---
-title: 通信のコンプライアンスを構成する
+title: 通信コンプライアンスを使用して開始する
 description: コミュニケーションコンプライアンスポリシーを設定して、レビューのために従業員の通信を構成します。
 f1.keywords:
 - NOCSH
@@ -18,21 +18,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193515"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708396"
 ---
-# <a name="configure-communication-compliance-in-microsoft-365"></a>Microsoft 365 で通信のコンプライアンスを構成する
+# <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
 >[!IMPORTANT]
->このトピックは、Microsoft 365 サブスクリプションで通信のコンプライアンスを構成する場合に適用されます。 Office 365 サブスクリプションの監督ポリシーを構成する場合は、「 [configure 監督 For office 365](supervision-policies.md)」を参照してください。
+>このトピックは、Microsoft 365 サブスクリプションで通信のコンプライアンスを構成する場合に適用されます。 Microsoft 365 サブスクリプションの監督ポリシーを構成する場合は、「 [microsoft 365 の監督の構成](supervision-policies.md)」を参照してください。
 
 コミュニケーションコンプライアンスポリシーを使用して、内部または外部のレビューアーによる調査のために従業員の通信をキャプチャします。 通信コンプライアンスポリシーが組織内の通信の監視にどのように役立つかについては、「 [Microsoft 365 の通信コンプライアンスポリシー](communication-compliance.md)」を参照してください。 Contoso 社が Microsoft Teams および Exchange Online の通信で不快な言葉を監視するために、どのように通信コンプライアンスポリシーを構成したかを確認したい場合は、この[ケーススタディ](communication-compliance-case-study.md)をご確認ください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 コミュニケーションの法令遵守を開始する前に、 [Microsoft 365 のサブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 通信コンプライアンスにアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 
@@ -48,12 +48,12 @@ ms.locfileid: "43193515"
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced コンプライアンスアドオン (新しいサブスクリプションでは使用できなくなりました)。メモを参照してください。
 
-通信コンプライアンスポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
+通信コンプライアンスポリシーに含まれているユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
 
 >[!IMPORTANT]
 >Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。
 
-既存の Microsoft 365 Enterprise E5 プランを保有せずに insider リスク管理を試みる場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の Office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
+既存の Office 365 Enterprise E5 プランを所有しておらず、insider リスク管理を試みる場合は、既存のサブスクリプションに[Microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)するか、Office 365 Enterprise e5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>手順 1 (必須): 通信のコンプライアンスのためのアクセス許可を有効にする
 
@@ -66,27 +66,27 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 1. Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions)組織の管理者アカウントの資格情報を使用してサインインします。
 
-2. Microsoft Office 365 セキュリティ/コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
+2. セキュリティ&amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
 
 3. **[作成]** を選択します。
 
-4. [**名前**] フィールドに、新しい役割グループにフレンドリ名を付けます。 **[次へ]** を選択します。
+4. [**名前**] フィールドに、新しい役割グループにフレンドリ名を付けます。 [**次へ**] を選択します。
 
-5. [**役割の選択**] を選択し、[**追加**] を選択します。 **監督レビュー管理者**、**ケース管理**、**コンプライアンス管理者**、および**レビュー**のチェックボックスをオンにし、[**追加**] を選択して、[**完了**] を選択します。 **[次へ]** を選択します。
+5. [**役割の選択**] を選択し、[**追加**] を選択します。 **監督レビュー管理者**、**ケース管理**、**コンプライアンス管理者**、および**レビュー**のチェックボックスをオンにし、[**追加**] を選択して、[**完了**] を選択します。 [**次へ**] を選択します。
 
     ![通信コンプライアンスに必要な役割グループ](../media/communication-compliance-role-groups-1.png)
 
-6. [**メンバーの選択**] を選択し、[**追加**] を選択します。 [ポリシーの作成] と [ポリシーの一致でメッセージを管理する] を使用するすべてのユーザーおよびグループのチェックボックスをオンにし、[**追加** **] を選択します。** **[次へ]** を選択します。
+6. [**メンバーの選択**] を選択し、[**追加**] を選択します。 [ポリシーの作成] と [ポリシーの一致でメッセージを管理する] を使用するすべてのユーザーおよびグループのチェックボックスをオンにし、[**追加** **] を選択します。** [**次へ**] を選択します。
 
 7. [**役割グループの作成**] を選択します。
 
 役割グループとアクセス許可の詳細については、「[Permissions in the Compliance Center (コンプライアンス センターのアクセス許可)](../security/office-365-security/protect-against-threats.md)」を参照してください。 
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>手順 2 (必須): Office 365 監査ログを有効にする
+## <a name="step-2-required-enable-the-audit-log"></a>手順 2 (必須): 監査ログを有効にする
 
 通信のコンプライアンスでは、監査ログを使用して通知を表示し、レビュー担当者が行った修復アクションを追跡する必要があります。 監査ログは、定義済みの組織ポリシーに関連付けられているすべてのアクティビティ、または通信コンプライアンスポリシーが変更されるたびに、その概要を示します。
 
-監査を有効にするための詳細な手順については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+監査を有効にするための詳細な手順について[は、「監査ログの検索を有効または無効](turn-audit-log-search-on-or-off.md)にする」を参照してください。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>手順 3 (省略可能): 通信コンプライアンス用にグループをセットアップする
 
@@ -96,15 +96,15 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 | **ポリシー メンバー** | **サポートされているグループ** | **サポートされていないグループ** |
 |:-----|:-----|:-----|
-|監督対象ユーザー <br> 非監督対象ユーザー | 配布グループ <br> Office 365 グループ | 動的配布グループ |
+|監督対象ユーザー <br> 非監督対象ユーザー | 配布グループ <br> Microsoft 365 グループ | 動的配布グループ |
 | レビュー担当者 | なし | 配布グループ <br> 動的配布グループ <br> メールが有効なセキュリティ グループ |
   
-監督対象ユーザーの Office 365 グループを選択すると、ポリシーは共有 Office 365 メールボックスのコンテンツおよびグループに関連付けられた Microsoft Teams チャネルを監視します。 配布リストを選択すると、ポリシーは個々のユーザー メールボックスを監視します。
+監視対象ユーザーに対して Microsoft 365 グループを選択すると、そのグループに関連付けられている共有メールボックスおよび Microsoft Teams チャネルのコンテンツが監視されます。 配布リストを選択すると、ポリシーは個々のユーザー メールボックスを監視します。
 
 グループの設定の詳細については、次の記事を参照してください。
 
 - [配布グループを作成して管理する](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Overview of Office 365 Groups (Office 365 グループの概要)](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Microsoft 365 グループの概要](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>手順 4 (必須): 通信コンプライアンスポリシーを作成する
   
@@ -119,7 +119,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 4. [**ポリシーの作成**] を選択して、テンプレートから新しいポリシーを作成して構成するか、カスタムポリシーを作成して構成します。
 
-    ポリシーを作成するために組み込みポリシーテンプレートを選択する場合は、次の操作を行います。
+    ポリシーを作成するポリシーテンプレートを選択する場合は、次の操作を行います。
 
     - ポリシー名を確認または更新します。 ポリシー名は、ポリシーの作成後に変更することはできません。
     - 除外するユーザーやグループの選択などを含めて、監督するユーザーまたはグループを選択します。
@@ -139,7 +139,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
     >[!CAUTION]
     >誤検知が大量に発生しているため、**不快感**を持つ言語の組み込みの分類子を廃止しています。 使用しないでください。現在使用している場合は、ビジネスプロセスを移行する必要があります。 代わりに、**脅威**、**プロファニティ**、および**嫌がらせ**の組み込みの分類子を使用することをお勧めします。
-
+    
     - レビューする通信の割合を定義します。
     - 選択したポリシーを確認し、ポリシーを作成します。
 

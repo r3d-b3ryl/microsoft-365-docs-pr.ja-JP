@@ -1,5 +1,5 @@
 ---
-title: 顧客キーまたは可用性キーをロールまたは回転する
+title: 顧客キーまたは可用性キーをローリングまたはローテーションする
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Office 365 の顧客キーで使用される Azure Key Vault に格納されている顧客のルートキーをロールする方法について説明します。 サービスには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Teams の各ファイルが含まれます。
-ms.openlocfilehash: 9699960666eaa9aa62bb027d3a4549cb50cd52e3
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+description: 顧客キーと共に使用される Azure Key Vault に格納されている顧客のルートキーをロールする方法について説明します。 サービスには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Teams の各ファイルが含まれます。
+ms.openlocfilehash: 29a36636253f5f01181f231941d0c3a9e26abacc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804826"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633644"
 ---
-# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>顧客キーまたは可用性キーをロールまたは回転する
+# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>顧客キーまたは可用性キーをローリングまたはローテーションする
 
 > [!CAUTION]
 > セキュリティまたはコンプライアンスの要件によってキーをロールする必要がある場合は、顧客キーと共に使用する暗号化キーのみをロールアウトしてください。 また、ポリシーに関連付けられている、またはポリシーに関連付けられていたキーは削除しないでください。 キーをロールすると、以前のキーを使用してコンテンツが暗号化されます。 たとえば、アクティブなメールボックスは頻繁に再暗号化されますが、非アクティブ、切断済み、および無効になったメールボックスは、以前のキーで暗号化されたままになります。 SharePoint Online は復元と回復のためにコンテンツのバックアップを実行するので、古いキーを使用してアーカイブされたコンテンツが残っている場合があります。
 
 ## <a name="about-rolling-the-availability-key"></a>可用性キーのローリングについて
 
-Microsoft は、お客様に可用性キーの直接制御を公開しません。 たとえば、Azure Key Vault で所有するキーのみをロール (回転) することができます。 Office 365 は、内部で定義されたスケジュールで可用性キーをロールします。 これらの主要なロールには、顧客向けのサービスレベル契約 (SLA) はありません。 Office 365 は、手動ではない自動化されたプロセスで Office 365 サービスコードを使用して、可用性キーを回転させます。 Microsoft 管理者がロールプロセスを開始する場合があります。 キーは、キーストアに直接アクセスせずに自動機構を使用してロールされます。 可用性キーシークレットストアへのアクセスは、Microsoft 管理者にはプロビジョニングされません。 可用性キーのローリングは、最初にキーを生成するのと同じメカニズムを利用します。 可用性キーの詳細については、「[可用性キーに](customer-key-availability-key-understand.md)ついて」を参照してください。
+Microsoft は、お客様に可用性キーの直接制御を公開しません。 たとえば、Azure Key Vault で所有するキーのみをロール (回転) することができます。 Microsoft 365 は、内部で定義されたスケジュールで可用性キーをロールします。 これらの主要なロールには、顧客向けのサービスレベル契約 (SLA) はありません。 Microsoft 365 は、自動化された手動ではないプロセスで、Microsoft 365 のサービスコードを使用して可用性キーを回転させます。 Microsoft 管理者がロールプロセスを開始する場合があります。 キーは、キーストアに直接アクセスせずに自動機構を使用してロールされます。 可用性キーシークレットストアへのアクセスは、Microsoft 管理者にはプロビジョニングされません。 可用性キーのローリングは、最初にキーを生成するのと同じメカニズムを利用します。 可用性キーの詳細については、「[可用性キーに](customer-key-availability-key-understand.md)ついて」を参照してください。
 
 > [!IMPORTANT]
 > Exchange Online と Skype for Business の可用性キーは、作成する DEP ごとに一意の可用性キーが生成されるため、ユーザーが新しい DEP を作成することによって効果的にロールバックできます。 SharePoint Online、OneDrive for Business、Teams の各ファイルの可用性キーは、フォレストレベルに存在し、DEPs と顧客間で共有されています。これは、Microsoft 社内で定義されたスケジュールでのみ発生します。 新しい DEP が作成されるたびに可用性キーがロールされないリスクを軽減するために、SharePoint、OneDrive、および Teams は、新しい DEP が作成されるたびに、顧客のルートキーと可用性キーによってラップされるキーであるテナントの中間キー (TIK) をロールします。
@@ -36,7 +36,7 @@ Microsoft は、お客様に可用性キーの直接制御を公開しません�
 
 キーをロールする場合は、新しいバージョンの既存のキーを要求します。 既存のキーの新しいバージョンを要求するには、最初にキーを作成したときと同じ構文を使用して、同じコマンドレット[AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey)を使用します。 データ暗号化ポリシー (DEP) に関連付けられているキーのローリングを完了した後、別のコマンドレットを実行して、顧客キーが新しいキーの使用を開始するようにします。 各 Azure Key Vault (AKV) でこの手順を実行します。
 
-例:
+以下に例を示します。
 
 1. Azure PowerShell を使用して Azure サブスクリプションにサインインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps)してサインインする」を参照してください。
 
@@ -52,7 +52,7 @@ Microsoft は、お客様に可用性キーの直接制御を公開しません�
 
 Exchange Online と Skype for Business で使用されている DEP に関連付けられている Azure キーヴォールトキーのいずれかをロールバックする場合は、新しいキーをポイントするように DEP を更新する必要があります。 これは、可用性キーを回転させません。
 
-Office 365 でメールボックスを暗号化するために新しいキーを使用するよう顧客キーに指示するには、次のように、Set-DataEncryptionPolicy コマンドレットを実行します。
+新しいキーを使用してメールボックスを暗号化するようにカスタマーキーに指示するには、次のように、Set-DataEncryptionPolicy コマンドレットを実行します。
 
 1. Azure PowerShell で Set-DataEncryptionPolicy コマンドレットを実行します。
   
@@ -86,8 +86,8 @@ SharePoint Online では、一度に1つのキーのみをロールすること�
 
 - [Office 365 の顧客キーによるサービスの暗号化](customer-key-overview.md)
 
-- [Office 365 の顧客キーを設定する](customer-key-set-up.md)
+- [Office 365 の顧客キーの設定](customer-key-set-up.md)
 
-- [Office 用の顧客キーの管理365](customer-key-manage.md)
+- [Office 365 の顧客キーの管理](customer-key-manage.md)
 
 - [可用性キーについて](customer-key-availability-key-understand.md)

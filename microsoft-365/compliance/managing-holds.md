@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c36a9865757a76708ac9e7385a2a9ef3e977050e
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521470"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632962"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
-高度な電子情報開示ケースを使用して、ケースに関連する可能性があるコンテンツを保持するためのホールドを作成できます。 高度な電子情報開示の保持機能を使用すると、保管担当者とそのデータソースに保持を配置できます。 さらに、メールボックスおよび OneDrive for Business サイトに、非 wi-fi ダイヤルを保持することができます。 また、Office 365 グループのグループメールボックス、SharePoint サイト、OneDrive for Business サイトにホールドを配置することもできます。 同様に、Microsoft Teams に関連付けられているメールボックスおよびサイトにホールドを配置することができます。 コンテンツの場所を保持する場合、コンテンツは保管担当者を解放するか、特定のデータの場所を削除するか、保留ポリシー全体を削除するまで保持されます。
+高度な電子情報開示ケースを使用して、ケースに関連する可能性があるコンテンツを保持するためのホールドを作成できます。 高度な電子情報開示の保持機能を使用すると、保管担当者とそのデータソースに保持を配置できます。 さらに、メールボックスおよび OneDrive for Business サイトに、非 wi-fi ダイヤルを保持することができます。 また、Microsoft 365 グループのグループメールボックス、SharePoint サイト、OneDrive for Business サイトにホールドを配置することもできます。 同様に、Microsoft Teams に関連付けられているメールボックスおよびサイトにホールドを配置することができます。 コンテンツの場所を保持する場合、コンテンツは保管担当者を解放するか、特定のデータの場所を削除するか、保留ポリシー全体を削除するまで保持されます。
 
 ## <a name="manage-custodian-based-holds"></a>保管担当者ベースの保持を管理する
 
@@ -69,17 +69,17 @@ ms.locfileid: "43521470"
   
 8. 保留にするコンテンツの場所を選択します。メールボックス、サイト、パブリック フォルダーを保留にできます。
 
-   a. **Exchange 電子メール**-[**ユーザー、グループ、またはチームの選択**] をクリックし、[**ユーザー、グループ、または teams**を再度選択する] をもう一度クリックして、保持するメールボックスを指定します。 検索ボックスを使用して、ユーザーのメールボックスと配布グループを検索します (グループメンバーのメールボックスを保留にする場合)。 また、Office 365 グループまたは Microsoft チームに対して、関連付けられたメールボックスにホールドを配置することもできます。 [ユーザー、グループ、チーム] チェックボックスをオンにし、[**選択**] をクリックし、[**完了**] をクリックします。
+   a. **Exchange 電子メール**-[**ユーザー、グループ、またはチームの選択**] をクリックし、[**ユーザー、グループ、または teams**を再度選択する] をもう一度クリックして、保持するメールボックスを指定します。 検索ボックスを使用して、ユーザーのメールボックスと配布グループを検索します (グループメンバーのメールボックスを保留にする場合)。 また、Microsoft 365 グループまたは Microsoft チームに対して、関連付けられたメールボックスにホールドを配置することもできます。 [ユーザー、グループ、チーム] チェックボックスをオンにし、[**選択**] をクリックし、[**完了**] をクリックします。
  
     > [!NOTE]
     > [**ユーザー、グループ、またはチームの選択**] をクリックして保留にするメールボックスを指定するときに、表示されるメールボックス ピッカーは空の状態です。これは、パフォーマンスを向上させるための仕様です。このリストにユーザーを追加するには、検索ボックスに名前 (3 文字以上) を入力します。
 
-    b. **Sharepoint サイト**-[**サイトの選択**] をクリックし、[**サイトの選択**] をもう一度クリックして、保持する SharePoint および OneDrive for business サイトを指定します。 保持する各サイトの URL を入力します。 また、Microsoft Team または Office 365 グループの SharePoint サイトの URL を追加することもできます。 [**選択**] をクリックし、[**完了**] をクリックします。
+    b. **Sharepoint サイト**-[**サイトの選択**] をクリックし、[**サイトの選択**] をもう一度クリックして、保持する SharePoint および OneDrive for business サイトを指定します。 保持する各サイトの URL を入力します。 また、Microsoft 365 グループまたは Microsoft チームの SharePoint サイトの URL を追加することもできます。 [**選択**] をクリックし、[**完了**] をクリックします。
     
-     Microsoft Teams と Office 365 グループおよびホールドの配置に関するヒントについては、「 [Microsoft teams および office 365 グループ](#place-a-hold-on-microsoft-teams-and-office-365-groups)を開催する」セクションを参照してください。
+     Microsoft 365 グループと Microsoft Teams を保持する方法に関するヒントについては、 **FAQ**のセクションを参照してください。
 
     > [!NOTE]
-    > ユーザーの OneDrive アカウントの URL には、ユーザープリンシパル名 (UPN) が含まれてい`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`ます (例:)。 まれに、ユーザーの UPN が変更された場合、その OneDrive の URL も新しい UPN を組み込むように変更されます。 ユーザーの OneDrive アカウントが非 wi-fi ダイヤルホールドの一部であり、その UPN が変更されている場合は、保留リストを更新して新しい OneDrive URL を指定する必要があります。 詳細については、「 [UPN の変更が ONEDRIVE URL に与える影響](https://docs.microsoft.com/onedrive/upn-changes)」を参照してください。
+    > ユーザーの OneDrive アカウントの URL には、ユーザープリンシパル名 (UPN) が含まれてい`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`ます (例:)。 まれに、ユーザーの UPN が変更された場合、その OneDrive の URL も新しい UPN を組み込むように変更されます。 ユーザーの OneDrive アカウントが非 wi-fi ダイヤルホールドの一部であり、その UPN が変更されている場合は、保留リストを更新して新しい OneDrive URL を指定する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](https://docs.microsoft.com/onedrive/upn-changes)」をご覧ください。
 
      c. **Exchange パブリックフォルダー** -切り替えスイッチをすべての位置に移動して、Exchange Online 組織内のすべてのパブリックフォルダーを保持します。 特定のパブリックフォルダーを保持の対象にすることはできないことに注意してください。 パブリックフォルダーを保持しない場合は、トグルスイッチを **[なし**] のままにします。
 
@@ -119,11 +119,10 @@ ms.locfileid: "43521470"
 
 Microsoft Teams は、Office 365 グループ上に構築されています。 そのため、高度な電子情報開示でそれらを保持することは非常によく似ています。 
 
-Office 365 グループと Microsoft Teams を保持する場合は、次の点に注意してください。
-
-- Office 365 グループと Microsoft Teams にあるコンテンツを保留にするには、グループまたはチームに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
+- **追加の Microsoft 365 グループまたは Microsoft Teams サイトを保管担当者にマップするにはどうすればよいですか?また、Microsoft 365 グループと Microsoft Teams には、非 wi-fi ダイヤルを含めることができます。** Microsoft Teams は、Microsoft 365 グループに基づいて構築されています。 そのため、電子情報開示ケースでそれらを保持することは非常によく似ています。 Microsoft 365 グループと Microsoft Teams を保留にする場合は、次の点に注意してください。
+  - Microsoft 365 グループおよび Microsoft Teams にあるコンテンツを配置するには、グループまたはチームに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
   
-- Exchange Online で **Get-UnifiedGroup** コマンドレットを実行し、Office 365 グループまたは Microsoft チームのプロパティを表示します。これは、Office 365 グループまたは Microsoft チームに関連付けられているサイトの URL を取得するのに適した方法です。たとえば、次のコマンドを実行すると、Senior Leadership Team という Office 365 グループの選択したプロパティが表示されます。
+  - Microsoft 365 グループまたは Microsoft teams のプロパティを表示するには、Exchange Online で**set-unifiedgroup**コマンドレットを実行します。 これは、Microsoft 365 グループまたは Microsoft チームに関連付けられているサイトの URL を取得するための適切な方法です。 たとえば、次のコマンドを実行すると、シニアリーダーシップチームという名前の Microsoft 365 グループの選択したプロパティが表示されます。
 
 
     ```text
@@ -137,9 +136,9 @@ Office 365 グループと Microsoft Teams を保持する場合は、次の点�
     > [!NOTE]
     > Get-UnifiedGroup コマンドレットを実行するには、Exchange Online で View-Only Recipients という役割が割り当てられているか、View-Only Recipients という役割が割り当てられている役割グループに属している必要があります。
 
-- ユーザーのメールボックスを検索すると、そのユーザーがメンバーになっているすべての Office 365 グループまたは Microsoft チームは検索されません。 同様に、Office 365 グループまたは Microsoft teams ホールドを配置すると、グループメールボックスとグループサイトのみが保持されます。グループメンバーのメールボックスと OneDrive for Business サイトは、保管担当者として明示的に追加したり、データソースを保持したりしない限り、保留リストには置かれません。 そのため、特定の保管担当者に対して Office 365 グループまたは Microsoft teams を保持する必要がある場合は、グループメールボックスとグループメールボックスを保管担当者にマッピングすることを検討してください (「Advanced eDiscovery での保管担当者の管理」を参照してください)。 Office 365 グループまたは Microsoft teams が1つの保管担当者に属さない場合は、そのソースを非 custodial ホールドに追加することを検討してください。 
-
-- Office 365 グループまたは Microsoft teams のメンバーの一覧を取得するには、Microsoft 365 管理センターの [**ホーム > グループ**] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行できます。
+ - ユーザーのメールボックスを検索すると、そのユーザーがメンバーになっている Microsoft 365 グループまたは Microsoft チームは検索されません。 同様に、Microsoft 365 グループまたは Microsoft teams ホールドを配置すると、グループメールボックスとグループサイトのみが保持されます。グループメンバーのメールボックスと OneDrive for Business サイトは、保管担当者として明示的に追加したり、データソースを保持したりしない限り、保留リストには置かれません。 そのため、特定の保管担当者に対して Microsoft 365 グループまたは Microsoft teams を保持する必要がある場合は、グループメールボックスとグループメールボックスを保管担当者にマッピングすることを検討してください (「Advanced eDiscovery での保管担当者の管理」を参照してください)。 Microsoft 365 グループまたは Microsoft チームが1つの保管担当者に属さない場合は、そのソースを非 custodial ホールドに追加することを検討してください。 
+ 
+ - Microsoft 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、Microsoft 365 管理センターの [ホーム > グループ] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行できます。
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

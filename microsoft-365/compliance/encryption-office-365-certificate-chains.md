@@ -1,5 +1,5 @@
 ---
-title: Office 365 の暗号化チェーン
+title: 暗号化チェーン
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 のルート証明書と証明機関 (CAs) の完全な一覧を表示します。
-ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 4fa98f417968229a0ba5382b7b1e8b4067db2e36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131510"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631702"
 ---
-# <a name="office-365-encryption-chains"></a>Office 365 の暗号化チェーン
+# <a name="encryption-chains"></a>暗号化チェーン
 
 Office 365 は、いくつかの異なる証明書プロバイダーを活用しています。 以下は、お客様が Office 365 へのアクセス時に遭遇する既知の Office 365 ルート証明書の完全なリストを示しています。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については、「 [Plan for サードパーティ SSL certificates For Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates)」を参照してください。 次の証明書情報は、Office 365 の全世界および国内のクラウドインスタンスに適用されます。
 

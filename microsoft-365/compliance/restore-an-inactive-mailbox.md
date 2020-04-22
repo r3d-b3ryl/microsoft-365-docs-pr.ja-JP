@@ -1,5 +1,5 @@
 ---
-title: Office 365 の非アクティブなメールボックスを復元する
+title: 非アクティブなメールボックスを復元する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 新しい従業員または別のユーザーが Office 365 の非アクティブなメールボックスのコンテンツにアクセスする必要がある場合は、非アクティブなメールボックスのコンテンツを既存のメールボックスに復元 (またはマージ) することができます。
-ms.openlocfilehash: 1fdf86c17d557ef27373001cb63f710168269a19
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3352dfa582fb09a5f0a6c7ecbd807ed80593351f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081607"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621319"
 ---
-# <a name="restore-an-inactive-mailbox-in-office-365"></a>Office 365 の非アクティブなメールボックスを復元する
+# <a name="restore-an-inactive-mailbox"></a>非アクティブなメールボックスを復元する
 
 非アクティブなメールボックス (回復可能な削除によって削除されたメールボックスの一種) は、元従業員が組織を離れた後に、その電子メールを保持するために使用されます。別の従業員が退職した従業員の職責を引き継ぐ場合、またはその従業員が組織に復帰する場合には、非アクティブなメールボックスのコンテンツをユーザーが使用できるようにする 2 つの方法があります。
   
@@ -33,7 +33,7 @@ ms.locfileid: "42081607"
 
 非アクティブなメールボックスの復元と回復の違いの詳細については、この記事の「**詳細情報**」セクションを参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 非アクティブなメールボックスを復元するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)」を参照してください。
 
@@ -103,7 +103,7 @@ ms.locfileid: "42081607"
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **訴訟ホールドまたは Office 365 アイテム保持ポリシーを使用して非アクティブなメールボックスのコンテンツを保持する。** 非アクティブなメールボックスを復元した後にその状態を保持する場合は、非アクティブなメールボックスを復元する前に、ターゲット メールボックスを [Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286) に設定するか、または [Office 365 アイテム保持ポリシー](retention-policies.md)を適用することができます。これにより、非アクティブなメールボックスのアイテムがターゲット メールボックスに復元された後に、完全に削除されることがなくなります。
+- **訴訟ホールドまたは Microsoft 365 のアイテム保持ポリシーを使用して、非アクティブなメールボックスのコンテンツを保持します。** 復元後に非アクティブなメールボックスの状態を保持する場合は、非アクティブなメールボックスを復元する前に、対象のメールボックスを[訴訟ホールド](https://go.microsoft.com/fwlink/?linkid=856286)の対象にするか、 [Microsoft 365 アイテム保持ポリシー](retention-policies.md)を適用することができます。 これにより、非アクティブなメールボックスのアイテムがターゲット メールボックスに復元された後に、完全に削除されることがなくなります。
 
 - **非アクティブなメールボックスを復元する前に、ターゲット メールボックスでの保存機能を有効にする。** 非アクティブなメールボックスのメールボックス アイテムは古くなっている可能性があるため、非アクティブなメールボックスを復元する前に、ターゲット メールボックスでの保存機能を有効にすることを検討できます。 メールボックスでの保存機能を有効にすると、保存機能が削除されるかまたは保存期間が期限切れになるまで、それに割り当てられた保持ポリシーは処理されなくなります。 これにより、ターゲット メールボックスの所有者が非アクティブなメールボックスからの古いメッセージを処理するための時間ができます。 そうしないと、ターゲット メールボックスに構成された保存期間の設定に基づいて、期限切れになっている古いアイテムが保持ポリシーによって削除される (またはアーカイブ メールボックスが使用可能な場合にはアイテムがそこに移動される) 可能性があります。 詳細については、「 [Exchange Online でメールボックスを保持ホールドの状態にする](https://go.microsoft.com/fwlink/?linkid=856300)」を参照してください。
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: セキュリティ&amp; /コンプライアンスセンターで、既存のレポートをダウンロードする方法について説明します。
-ms.openlocfilehash: d5f381a5e59f7cb6348bdc96572dfa37c4919500
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 33ea3b52a99f1ec2f5f3717c51754d82204e22a3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595172"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631782"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで既存のレポートをダウンロードする
 
@@ -29,7 +29,7 @@ ms.locfileid: "41595172"
 ## <a name="download-existing-reports"></a>既存のレポートをダウンロードする
 
 > [!IMPORTANT]
-> [Office 365 セキュリティ&amp;コンプライアンスセンターで、必要なアクセス許可が割り当てら](../security/office-365-security/protect-against-threats.md)れていることを確認してください。 一般に、Office 365 の全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、 &amp;セキュリティ/コンプライアンスセンターのレポートにアクセスできます。 
+> [セキュリティ&amp; /コンプライアンスセンターで、必要なアクセス許可が割り当てら](../security/office-365-security/protect-against-threats.md)れていることを確認してください。 一般に、全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、セキュリティ&amp;コンプライアンスセンターでレポートにアクセスできます。 
   
 1. [ &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[**レポート** \>レポート] に移動し**てダウンロード**します。
     
@@ -39,7 +39,7 @@ ms.locfileid: "41595172"
     
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[セキュリティ&amp; /コンプライアンスセンターのレポートと分析](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
 [セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する](../security/office-365-security/create-a-schedule-for-a-report.md)
   

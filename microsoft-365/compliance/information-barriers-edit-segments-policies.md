@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 情報バリアのポリシーを編集または削除する方法について説明します。
-ms.openlocfilehash: ef534f49c92abf1500b72b0d490ab9f22a48a680
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5690a1d7a131c006bbff3b087b1ee2983198c068
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634845"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637889"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>情報バリアポリシーの編集 (または削除)
 
@@ -38,7 +38,7 @@ ms.locfileid: "42634845"
 |[情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)     |情報バリアを使用して予期しない問題が発生した場合は、この記事を参照してください。         |
 
 > [!IMPORTANT]
-> この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-Office 365 グローバル管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「[必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)するようにしてください。
+> この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-全体管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「[必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)していることを確認してください。
 
 ## <a name="edit-user-account-attributes"></a>ユーザーアカウントの属性を編集する
 

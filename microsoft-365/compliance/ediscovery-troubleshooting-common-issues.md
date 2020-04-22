@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Office 365 電子情報開示の一般的な問題を調査、トラブルシューティング、解決します。
+description: 電子情報開示の一般的な問題を調査、トラブルシューティング、解決します。
 siblings_only: true
-ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5bcbe498cb650268dc8ff6f2b41a6201e75a8192
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074817"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631772"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、および解決する
 
@@ -37,7 +37,7 @@ ms.locfileid: "42074817"
 
 同じユーザー ID を持つ重複したユーザーまたは配布リストをチェックします。
 
-1. [Office 365 セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続します。
+1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続します。
 
 2. ユーザー名のすべてのインスタンスを取得するには、次のコマンドを実行します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "42074817"
    > |名前  |RecipientType  |
    > |---------|---------|
    > |Alias、User     |Enable-mailuser         |
-   > |Alias、User     |ユーザー         |
+   > |Alias、User     |User         |
 
 3. 複数のユーザーが返された場合は、競合しているオブジェクトを見つけて修正します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "42074817"
 
 このエラーが表示された場合は、検索で失敗した場所を確認し、失敗した場所でのみ検索を実行することをお勧めします。
 
-1. [Office 365 セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
+1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -112,9 +112,9 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 ### <a name="resolution"></a>解像度
 
-1.  この記事に記載されている手順を使用して、[ダウンロード速度を上げ](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)ます。
+1.    この記事に記載されている手順を使用して、[ダウンロード速度を上げ](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)ます。
 
-2.  それでも問題が解決しない場合は、 [Office 365 Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続して、次のコマンドを実行します。
+2.    それでも問題が解決しない場合は、[セキュリティに & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 1. 検索を小さな検索に分割して、検索を再度実行します。  短い日付範囲を使用するか、検索する場所の数を制限してください。
 
-2. [Office 365 セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
+2. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
 
     ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 ### <a name="resolution"></a>解像度
 
-1.  [Office 365 セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、電子情報開示ケースホールドに対して次のコマンドを実行します。
+1.    [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、電子情報開示ケースホールドに対して次のコマンドを実行します。
 
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

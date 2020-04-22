@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 無料試用版を入手する方法、または Microsoft 365 のサブスクリプションを購入する方法について説明します。
-ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631907"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707537"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用または購入する
 
@@ -32,9 +32,9 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
   
 - Microsoft 365 Business Premium
 
-- Microsoft 365 Enterprise E3
+- Office 365 Enterprise E3
 
-- Microsoft 365 Enterprise E5
+- Office 365 Enterprise E5
 
 管理センターでサブスクリプションを追加すると、新しいサブスクリプションは既存のサブスクリプションと同じ組織 (ドメイン名前空間) に関連付けられます。 これにより、サブスクリプション間で組織内のユーザーを簡単に移動したり、必要な追加のサブスクリプションのライセンスを割り当てたりすることが容易になります。
   

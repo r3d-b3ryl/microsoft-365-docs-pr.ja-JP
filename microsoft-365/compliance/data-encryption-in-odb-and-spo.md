@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: OneDrive for Business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
-ms.openlocfilehash: c21ec4ef6b81bcf89565fd005b9a1d2068244b20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076354"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633342"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 
@@ -31,9 +31,9 @@ OneDrive for Business および SharePoint Online におけるデータセキュ
   
 ## <a name="overview"></a>概要
 
-Office 365 は、高度なセキュリティで保護された環境で、物理データセンターのセキュリティ、ネットワークセキュリティ、アクセスセキュリティ、アプリケーションセキュリティ、およびデータセキュリティがあります。 この記事では特に、OneDrive for Business および SharePoint Online のデータセキュリティの、送信中およびインプレース暗号化側に焦点を当てます。
+Microsoft 365 は、高度なセキュリティで保護された環境で、物理データセンターのセキュリティ、ネットワークセキュリティ、アクセスセキュリティ、アプリケーションセキュリティ、およびデータセキュリティがあります。 この記事では特に、OneDrive for Business および SharePoint Online のデータセキュリティの、送信中およびインプレース暗号化側に焦点を当てます。
   
-Office 365 のセキュリティの詳細については、「 [security In office 365 ホワイトペーパー](https://go.microsoft.com/fwlink/p/?LinkId=270895)」を参照してください。
+Microsoft 365 セキュリティの詳細については、「[セキュリティホワイトペーパー](https://go.microsoft.com/fwlink/p/?LinkId=270895)」を参照してください。
   
 データの暗号化の仕組みについて、次のビデオをご覧ください。
   
@@ -51,7 +51,7 @@ OneDrive for Business と SharePoint Online では、データを入力してデ
 
 保管中の暗号化には、ユーザー コンテンツの BitLocker ディスク レベル暗号化と、ファイル単位暗号化が関係しています。
   
-BitLocker は、OneDrive for business と SharePoint Online のサービス全体に展開されます。 ファイル単位の暗号化は、OneDrive for Business と SharePoint Online の Office 365 マルチテナントと、マルチテナントテクノロジに基づいて構築された新しい専用環境にも含まれています。
+BitLocker は、OneDrive for business と SharePoint Online のサービス全体に展開されます。 また、ファイルごとの暗号化は、Microsoft 365 マルチテナントと、マルチテナントテクノロジに基づいて構築された新しい専用環境の OneDrive for Business および SharePoint Online にも含まれています。
   
 BitLocker 暗号化はディスク上のすべてのデータを暗号化し、ファイル単位暗号化の場合にはファイルごとに固有の暗号化キーを含めてさらに細かく暗号化を行えます。 つまり、各ファイルを更新するたびに独自の暗号化キーを使用して暗号化されます。 保存される前に、暗号化されたコンテンツに対するキーがコンテンツとは物理的に離れた場所に保存されます。 この暗号化の各ステップでは、256 ビット キーによる高度暗号化標準 (Advanced Encryption Standard: AES) が使用され、Federal Information Processing Standard (FIPS) 140-2 に準拠しています。 暗号化されたコンテンツは、データセンターにある多数のコンテナーに配布され、各コンテナーでは固有の資格情報が使用されます。 これらの資格情報はコンテンツまたはコンテンツ キーとは物理的に別の場所に格納されます。
   

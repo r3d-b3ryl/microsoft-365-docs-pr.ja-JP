@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Exchange Online のメールボックスおよび SharePoint サイトや OneDrive for Business サイトで、セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使って検索できるメールやファイルのプロパティについて説明します。  '
-ms.openlocfilehash: 83cd28ba45de027cb899fa6d84369dae9dfc50fc
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
-ms.translationtype: HT
+ms.openlocfilehash: e995f92ad762d06ab69084af3e1ea983b4d3e538
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105999"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636175"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -56,13 +56,13 @@ ms.locfileid: "43105999"
 |Bcc|メール メッセージの Bcc フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。|
 |カテゴリ| 検索するカテゴリ。 カテゴリは、ユーザーが Outlook または Outlook on the web (旧称: Outlook Web App) を使用して定義できます。 値は次のいずれかです。  <br/><br/>  青  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
 |Cc|メール メッセージの Cc フィールド。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|どちらの例も、Cc フィールドに "Pilar Pinilla" が指定されたメッセージ。|
-|Folderid|特定のメールボックス フォルダーのフォルダー ID (GUID)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するメールボックスを検索するようにします。 指定したフォルダーのみが検索されます。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使う必要があります。  <br/> Folderid プロパティを検索し、スクリプトを使って特定のメールボックスのフォルダー ID を取得する方法の詳細については、「[Office 365 で対象のコレクションにコンテンツ検索を使用する](use-content-search-for-targeted-collections.md)」をご覧ください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定したメールボックス フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したメールボックス フォルダー内で garthf@contoso.com によって送信または受信されたすべてのアイテムが返されます。|
+|Folderid|特定のメールボックス フォルダーのフォルダー ID (GUID)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するメールボックスを検索するようにします。 指定したフォルダーのみが検索されます。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使う必要があります。  <br/> Folderid プロパティを検索する方法と、スクリプトを使用して特定のメールボックスのフォルダー Id を取得する方法の詳細については、「[対象コレクションのコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定したメールボックス フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したメールボックス フォルダー内で garthf@contoso.com によって送信または受信されたすべてのアイテムが返されます。|
 |送信元|メール メッセージの送信者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定されたユーザーによって送信された、または指定されたドメインから送信されたメッセージ。|
 |HasAttachment|メッセージに添付ファイルがあるかどうかを示します。 値 **true** または **false** を使用します。|`from:pilar@contoso.com AND hasattachment:true`|指定したユーザーによって送信された添付ファイルを含むメッセージ。|
 |Importance|送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。既定では、送信者が重要度を **high** または **low** に設定していない限り、メッセージは普通の重要度で送信されます。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|高重要度、中重要度、または低重要度とマークされているメッセージ。|
 |IsRead|メッセージが既読か未読かを示します。 値 **true** または **false** を使用します。|`isread:true`  <br/> `isread:false`|最初の例では、IsRead プロパティを **True** に設定されているメッセージが返されます。 2 番目の例では、IsRead プロパティが **False** に設定されているメッセージが返されます。|
 |ItemClass|このプロパティは、組織が Office 365 にインポートした特定のサード パーティのデータ型を検索するときに使います。 このプロパティでは、次の構文を使います:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook アイテムが返されます。 2 番目の例では、Ann Beebe によって投稿された、"Northwind Traders" というキーワード語句を含む Twitter アイテムが返されます。  <br/> ItemClass プロパティのサード パーティのデータの種類に使う値の完全な一覧については、「[コンテンツ検索を使用して Office 365 にインポートされたサード パーティのデータを検索する](use-content-search-to-search-third-party-data-that-was-imported.md)」をご覧ください。|
-|Kind| 検索するメール メッセージの種類。 可能な値:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (Microsoft Teams のチャット、会議、通話のアイテムが返されます)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|最初の例では、検索条件に一致するメール メッセージが返されます。 2 番目の例では、検索条件に一致するメール メッセージ、インスタント メッセージ、会話 (Skype for Business の会話と Microsoft Teams のチャットを含みます) ボイス メッセージが返されます。 3 番目の例では、サード パーティのデータ ソース (Twitter、Facebook、Cisco Jabber など) から Office 365 のメールボックスにインポートされたアイテムのうち、検索条件に一致するものが返されます。 詳細については、「[Office 365 でサードパーティのデータをアーカイブする](https://go.microsoft.com/fwlink/p/?linkid=716918)」を参照してください。|
+|Kind| 検索するメール メッセージの種類。 可能な値:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (Microsoft Teams のチャット、会議、通話のアイテムが返されます)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|最初の例では、検索条件に一致するメール メッセージが返されます。 2 番目の例では、検索条件に一致するメール メッセージ、インスタント メッセージ、会話 (Skype for Business の会話と Microsoft Teams のチャットを含みます) ボイス メッセージが返されます。 3番目の例では、検索条件を満たす Twitter、Facebook、Cisco Jabber などのサードパーティのデータソースから、Microsoft 365 のメールボックスにインポートされたアイテムを返します。 詳細については、「[Office 365 でサードパーティのデータをアーカイブする](https://go.microsoft.com/fwlink/p/?linkid=716918)」を参照してください。|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。|
 |Received|電子メール メッセージが受信者によって受信された日付。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016 年 4 月 15 日に受信したメッセージ。 2 番目の例は、2016 年 1 月 1 日から 2016 年 3 月 31 日までの間に受信したすべてのメッセージを返します。|
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
@@ -73,7 +73,7 @@ ms.locfileid: "43105999"
 |||||
    
 > [!NOTE]
-> <sup>1</sup> recipient プロパティの値には、メール アドレス (*ユーザー プリンシパル名*または UPN とも呼ばれます)、表示名、またはエイリアスを使用してユーザーを指定できます。 たとえば、ユーザー Ann Beebe を指定するために、annb@contoso.com、annb、または "Ann Beebe" を使用できます。<br/><br/>受信者のいずれかのプロパティ (From、To、Cc、Bcc、Participants、Recipients) を検索すると、Office 365 では、Azure Active Directory でユーザーを検索して、各ユーザーの ID の拡張を試みます。  ユーザーが Azure Active Directory で見つかった場合はクエリが拡張され、そのユーザーのメール アドレス (または UPN)、エイリアス、表示名、LegacyExchangeDN が含まれるようになります。<br/><br/>たとえば、`participants:ronnie@contoso.com` などのクエリは、`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` に拡張されます。<br/><br/>受信者の拡張を防ぐには、検索クエリでメール アドレスの末尾にワイルドカード文字 (アスタリスク) を追加することができます。例: `participants:ronnie@contoso.com*`
+> <sup>1</sup> recipient プロパティの値には、メール アドレス (*ユーザー プリンシパル名*または UPN とも呼ばれます)、表示名、またはエイリアスを使用してユーザーを指定できます。 たとえば、ユーザー Ann Beebe を指定するために、annb@contoso.com、annb、または "Ann Beebe" を使用できます。<br/><br/>受信者のプロパティ (From、To、Cc、Bcc、参加者、および受信者) を検索すると、Microsoft 365 は Azure Active Directory でそのユーザーを検索して、各ユーザーの id を拡張しようとします。  ユーザーが Azure Active Directory で見つかった場合はクエリが拡張され、そのユーザーのメール アドレス (または UPN)、エイリアス、表示名、LegacyExchangeDN が含まれるようになります。<br/><br/>たとえば、`participants:ronnie@contoso.com` などのクエリは、`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` に拡張されます。<br/><br/>受信者の拡張を防ぐには、検索クエリでメール アドレスの末尾にワイルドカード文字 (アスタリスク) を追加することができます。例: `participants:ronnie@contoso.com*`
 
 ## <a name="searchable-site-properties"></a>検索可能なサイト プロパティ
 
@@ -88,7 +88,7 @@ ms.locfileid: "43105999"
 |Created|アイテムが作成された日付。|`created\>=06/01/2016`|2016 年 6 月 1 日以降に作成されたすべてのアイテム。|
 |CreatedBy|アイテムを作成またはアップロードした人。 このプロパティには、必ずユーザーの表示名を使用してください。|`createdby:"Garth Fort"`|Garth Fort によって作成またはアップロードされたすべてのアイテム。|
 |DetectedLanguage|アイテムの言語。|`detectedlanguage:english`|すべての英語のアイテム。|
-|DocumentLink|SharePoint または OneDrive for Business サイトの特定のフォルダーのパス (URL)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するサイトを検索するようにします。  <br/> DocumentLink プロパティに対して指定したフォルダーのサブフォルダーに存在するアイテムを取得するには、指定するフォルダーの URL に /\* を追加する必要があります。例: `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>DocumentLink プロパティの検索、およびスクリプトを使って特定のサイトのフォルダーのDocumentLink URL を取得する方法の詳細については、「[Office 365 で対象のコレクションにコンテンツ検索を使用する](use-content-search-for-targeted-collections.md)」をご覧ください。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したサイト フォルダー (およびすべてのサブフォルダー) に存在するドキュメントで、ファイル名に "confidential" という単語が含まれるものが返されます。|
+|DocumentLink|SharePoint または OneDrive for Business サイトの特定のフォルダーのパス (URL)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するサイトを検索するようにします。  <br/> DocumentLink プロパティに対して指定したフォルダーのサブフォルダーに存在するアイテムを取得するには、指定するフォルダーの URL に /\* を追加する必要があります。例: `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Documentlink プロパティを検索し、スクリプトを使用して特定のサイト上のフォルダーの documentlink Url を取得する方法の詳細については、「[対象コレクションのコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したサイト フォルダー (およびすべてのサブフォルダー) に存在するドキュメントで、ファイル名に "confidential" という単語が含まれるものが返されます。|
 |FileExtension|ファイルの拡張子。例: docx、one、pptx、xlsx など。|`fileextension:xlsx`|すべての Excel ファイル (Excel 2007 以降)|
 |FileName|ファイルの名前。|`filename:"marketing plan"`  <br/> `filename:estimate`|最初の例では、タイトルに "marketing plan" と完全一致する語句が含まれるファイルが返されます。2 番目の例では、ファイル名に "estimate" という単語を含むファイルが返されます。|
 |LastModifiedTime|アイテムが最後に変更された日付。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|最初の例では、2016 年 5 月 1 日以降に変更されたアイテムが返されます。 2 番目の例では、2016 年 5 月 1 日～ 2016 年 6 月 1 日に変更されたアイテムが返されます。|
@@ -378,7 +378,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
   
 - サイトまたは組織の外部共有をオフにするなど、共有ポリシーにおける変更。 外部アクセスが取り消されている可能性があるにもかかわらず、プロパティでは、以前に共有されたドキュメントが外部アクセス可能と示されます。
     
-- Office 365 グループまたは Office 365 セキュリティ グループへの外部ユーザーの追加や削除など、グループ メンバーシップの変更。 グループがアクセスできるアイテムのプロパティは自動的に更新されません。
+- 外部ユーザーを Microsoft 365 グループまたは Microsoft 365 セキュリティグループに追加したり、削除したりするなど、グループメンバーシップに対する変更。 グループがアクセスできるアイテムのプロパティは自動的に更新されません。
     
 - 外部ユーザーに共有招待状を送信した場合に、受信者が招待状をまだ承諾しておらず、そのためコンテンツにまだアクセスできない場合。
     

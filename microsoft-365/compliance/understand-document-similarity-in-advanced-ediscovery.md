@@ -1,5 +1,5 @@
 ---
-title: Office 365 の詳細な電子情報開示のドキュメントの類似性を理解する
+title: 高度な電子情報開示でのドキュメントの類似性を理解する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'ドキュメントの類似性の値を確認します。2つのファイルの resemblance の最小レベルは、重複していると見なされ、Office 365 の高度な電子情報開示で機能します。 '
-ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '「ドキュメントの類似性」の値を確認します。2つのファイルの resemblance の最小レベルは、詳細な電子情報開示で機能します。 '
+ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557667"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633412"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Advanced eDiscovery でのドキュメントの類似性 (クラシック) について
 
@@ -57,7 +57,7 @@ Resemblance のレベルは次のように示されています。
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [分析オプションの設定](set-analyze-options-in-advanced-ediscovery.md)
   

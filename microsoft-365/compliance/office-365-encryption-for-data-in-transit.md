@@ -1,5 +1,5 @@
 ---
-title: 転送中のデータの Office 365 暗号化
+title: 転送中データの暗号化
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,24 +16,24 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: '概要: 転送中に Microsoft がデータを暗号化する方法を簡単に説明します。'
-ms.openlocfilehash: cd261621320d4543a99836e8699c537ed10a8dcf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0775d28a96f271a24406fd68c2ccb9fe4954e66d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597874"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637333"
 ---
-# <a name="office-365-encryption-for-data-in-transit"></a>転送中のデータの Office 365 暗号化
+# <a name="encryption-for-data-in-transit"></a>転送中のデータの暗号化
 
-お客様のデータを保存して保護することに加えて、Microsoft は暗号化テクノロジを使用して、転送中の Office 365 顧客データを保護します。 
+お客様のデータを保存して保護することに加えて、Microsoft は暗号化テクノロジを使用して、転送中の顧客データを保護します。 
 
 データの送信中:
 
-- クライアントコンピューターが Office 365 サーバーと通信する場合
-- Office 365 サーバーが別の Office 365 サーバーと通信する場合。そして
-- Office 365 サーバーが Office 以外の365サーバーと通信する場合 (Exchange Online が電子メールを外部電子メールサーバーに配信する場合など)。
+- クライアントコンピューターが Microsoft サーバーと通信するとき。
+- Microsoft サーバーが他の Microsoft サーバーと通信する場合そして
+- Microsoft サーバーが Microsoft 以外のサーバーと通信する場合 (Exchange Online が電子メールを外部電子メールサーバーに配信する場合など)。
 
-Office 365 サーバー間のデータセンター間通信は TLS または IPsec 経由で行われ、すべてのお客様向けのサーバーは、クライアントマシンとの TLS を使用してセキュリティで保護されたセッションをネゴシエートします (例: Exchange Online では、256ビットの暗号強度で TLS 1.2 が使用されます) (FIPS140-2 レベル 2-検証)。 (Office 365 でサポートされている TLS 暗号スイートの一覧については、「 [office 365 の暗号化に関する技術リファレンスの詳細](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221)」を参照してください)。これは、Outlook、Skype for Business、web 上の Outlook などのクライアントによって使用されるプロトコル (例: HTTP、POP3 など) に適用されます。
+Microsoft サーバー間のデータセンター間の通信は TLS または IPsec 経由で行われ、お客様向けのすべてのサーバーは tls を使用してクライアントマシンとのセキュリティで保護されたセッションをネゴシエートします (たとえば、Exchange Online は TLS 1.2 を256ビットの暗号強度で使用します (FIPS 140-2 レベル 2-検証)。 (Office 365 でサポートされている TLS 暗号スイートの一覧については、「 [office 365 の暗号化に関する技術リファレンスの詳細](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221)」を参照してください)。これは、Outlook、Skype for Business、web 上の Outlook などのクライアントによって使用されるプロトコル (例: HTTP、POP3 など) に適用されます。
 
 公開証明書は、microsoft IT SSL によって発行された microsoft IT SSL で、送信された情報の機密性を保護するための内部 Microsoft ツールです。 Microsoft によって発行されるすべての証明書の長さは2048ビットです。また、Webtrust コンプライアンスでは、証明書が Microsoft によって所有されるパブリック IP アドレスにのみ発行されるようにするために、SSLAdmin が必要になります。 この条件を満たすことができない IP アドレスは、例外プロセスを経由してルーティングされます。
 
@@ -47,4 +47,4 @@ Office 365 サーバー間のデータセンター間通信は TLS または IPs
 - [Exchange Online Protection](https://ssl-tools.net/mailservers/microsoft-com.mail.protection.outlook.com)
 - [Microsoft Teams](https://www.ssllabs.com/ssltest/analyze.html?d=teams.microsoft.com&latest)
 
-Exchange Online Protection の場合、Url はテナント名によって異なります。ただし、すべてのお客様は、 **microsoft-com.mail.protection.outlook.com**を使用して Office 365 をテストできます。
+Exchange Online Protection の場合、Url はテナント名によって異なります。ただし、すべてのお客様は**microsoft-com.mail.protection.outlook.com**を使用して Microsoft 365 をテストできます。

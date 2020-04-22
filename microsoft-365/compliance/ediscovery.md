@@ -1,5 +1,5 @@
 ---
-title: Office 365 の電子情報開示
+title: 電子情報開示
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Microsoft 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Office 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
-ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+description: Microsoft 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Microsoft 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
+ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551218"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631762"
 ---
-# <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 の電子情報開示
+# <a name="ediscovery-in-microsoft-365"></a>Microsoft 365のeDiscovery in
 
-電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 Microsoft 365 の電子情報開示ツールを使用して、Exchange Online メールボックス、Office 365 グループ、Microsoft Teams、SharePoint Online と OneDrive for business のサイト、Skype for Business の会話、および Yammer Teams のコンテンツを検索できます。 コンテンツ検索ツールを使用して、同じ電子情報開示検索のメールボックスとサイトを検索できます。 また、コア電子情報開示ケースを使用して、メールボックスやサイト内のコンテンツを特定、保持、およびエクスポートすることができます。 組織が Office 365 E5 または Microsoft 365 E5 サブスクリプション (または関連する E5 アドオンサブスクリプション) を持っている場合は、Microsoft 365 の Advanced eDiscovery ソリューションを使用して、保管担当者をさらに管理し、コンテンツを分析することができます。
+電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 Microsoft 365 の電子情報開示ツールを使用して、Exchange Online メールボックス、Microsoft 365 グループ、Microsoft Teams、SharePoint Online と OneDrive for business のサイト、Skype for Business の会話、および Yammer Teams のコンテンツを検索できます。 コンテンツ検索ツールを使用して、同じ電子情報開示検索のメールボックスとサイトを検索できます。 また、コア電子情報開示ケースを使用して、メールボックスやサイト内のコンテンツを特定、保持、およびエクスポートすることができます。 組織が Office 365 E5 または Microsoft 365 E5 サブスクリプション (または関連する E5 アドオンサブスクリプション) を持っている場合は、Microsoft 365 の Advanced eDiscovery ソリューションを使用して、保管担当者をさらに管理し、コンテンツを分析することができます。
   
 Microsoft 365 には、次の電子情報開示ツールが用意されています。
   
@@ -43,8 +43,8 @@ Microsoft 365 には、次の電子情報開示ツールが用意されていま
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[コンテンツ検索を実行する](content-search.md) <br/> |コンテンツ検索ツールを使用して、1回の検索で、メールボックス、パブリックフォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、ビジネスの場所に1台のドライブ、および Office 365 組織の Skype for Business の会話を検索する方法について説明します。  <br/> |
-|[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md) <br/> |Office 365 組織のメールボックスとサイトのコンテンツを検索するために使用できる電子メールおよびファイルのプロパティと検索条件について説明します。  <br/> |
+|[コンテンツ検索を実行する](content-search.md) <br/> |コンテンツ検索ツールを使用して、1回の検索でメールボックス、パブリックフォルダー、Microsoft 365 グループ、Microsoft Teams、SharePoint Online サイト、ビジネスの場所用の1台のドライブ、および組織内の Skype for Business の会話を検索する方法について説明します。  <br/> |
+|[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md) <br/> |組織内のメールボックスとサイトのコンテンツを検索するために使用できる電子メールおよびファイルのプロパティと検索条件について説明します。  <br/> |
 |[コンテンツ検索の結果のキーワード統計を表示する](view-keyword-statistics-for-content-search.md) <br/> |検索統計を使用して、1つまたは複数のコンテンツ検索の統計を表示および比較し、検索クエリ内の各キーワードの統計情報を返す新規および既存の検索を構成する方法について説明します。  <br/> |
 |[検索結果をエクスポートする](export-search-results.md) <br/> |コンテンツ検索の結果をエクスポートする方法について説明します。  <br/> |
 |[コンテンツ検索用にアクセス許可フィルターを構成する](permissions-filtering-for-content-search.md) <br/> |アクセス許可フィルターを使用して、電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索できるようにする方法について説明します。  <br/> |
@@ -62,7 +62,7 @@ Microsoft 365 には、次の電子情報開示ツールが用意されていま
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[コア電子情報開示の概要](get-started-core-ediscovery.md) |電子情報開示のアクセス許可を割り当て、コア電子情報開示ケースを作成する方法について説明します。 このトピックでは、コア電子情報開示ワークフローの概要についても説明します。<br/> |
+|[コア電子情報開示を開始する](get-started-core-ediscovery.md) |電子情報開示のアクセス許可を割り当て、コア電子情報開示ケースを作成する方法について説明します。 このトピックでは、コア電子情報開示ワークフローの概要についても説明します。<br/> |
 |[電子情報開示保持を作成する](create-ediscovery-holds.md)|コア電子情報開示ケースに関連付けられた電子情報開示保持を作成して、調査しているケースに関連するコンテンツを保持する方法について説明します。|
 |[コア電子情報開示ケースのコンテンツを検索する](search-for-content-in-core-ediscovery.md)|ケースに関連するコンテンツを検索する方法について説明します。 保持中のコンテンツの場所を検索する検索をすばやく作成することができます。|
 |[コア電子情報開示ケースからコンテンツをエクスポートする](export-content-in-core-ediscovery.md)|コア電子情報開示ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。|
@@ -71,14 +71,14 @@ Microsoft 365 には、次の電子情報開示ツールが用意されていま
 |[コア電子情報開示のコンプライアンス境界を設定する](set-up-compliance-boundaries.md)|コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるコンテンツの場所を制御する、組織内で論理的な境界を作成する方法について説明します。|
 |||
   
-## <a name="advanced-ediscovery"></a>Advanced eDiscovery
+## <a name="advanced-ediscovery"></a>高度な電子情報開示
 
 Microsoft 365 の高度な電子情報開示ソリューション (*上級電子情報開示*v2.0 とも呼ばれます) は、Office 365 の既存の電子情報開示および分析機能に基づいて構築されています。 この電子情報開示ソリューションは、組織の内部および外部の調査に応答するコンテンツを保持、収集、確認、分析、およびエクスポートするためのエンドツーエンドのワークフローを提供します。 また、法的チームが保管担当者および法的情報保持通知ワークフロー全体を管理して、ケースに関与する保管担当者と通信することもできます。
 
 |**トピック**|**説明**|
 |:-----|:-----|
-|[高度な電子情報開示の概要](overview-ediscovery-20.md)|この記事では、Advanced eDiscovery v2.0 v2.0 を紹介し、高度な電子情報開示の組み込みワークフローの概要と、電子情報開示参照モデルによって規定された電子情報開示プロセスにどのように連携するかを説明します。|.
-|[高度な電子情報開示の概要](get-started-with-advanced-ediscovery.md)|必要なライセンスおよび必要な電子情報開示のアクセス許可を含む、アドバンスト電子情報開示の使用を開始する方法について説明します。 この記事では、高度な電子情報開示のケースを作成し、高度な電子情報開示ワークフローのウォークスルーを提供する方法について説明します。|
+|[Advanced eDiscoveryの概要](overview-ediscovery-20.md)|この記事では、Advanced eDiscovery v2.0 v2.0 を紹介し、高度な電子情報開示の組み込みワークフローの概要と、電子情報開示参照モデルによって規定された電子情報開示プロセスにどのように連携するかを説明します。|.
+|[Advanced eDiscoveryを開始する](get-started-with-advanced-ediscovery.md)|必要なライセンスおよび必要な電子情報開示のアクセス許可を含む、アドバンスト電子情報開示の使用を開始する方法について説明します。 この記事では、高度な電子情報開示のケースを作成し、高度な電子情報開示ワークフローのウォークスルーを提供する方法について説明します。|
 |[カストディアンと共同作業](managing-custodians.md)|高度な電子情報開示での保管担当者の使用について説明します。 このトピックでは、監査ログを検索することによって、保管担当者をケースに追加し、ケースで保管担当者を管理し、Microsoft 365 で保管担当者アクティビティを表示するための詳細な手順について説明します。|
 |[通信の操作](managing-custodian-communications.md)|Advanced eDiscovery での法的情報保留通知プロセスの管理について説明します。 これには、通知ワークフローの作成と自動化、およびユーザーが保留通知を受信確認した方法が含まれます。
 |[処理中のエラーの操作](processing-data-for-case.md)|詳細なインデックス作成について説明し、Exchange メールボックス、SharePoint サイト、OneDrive アカウントなど、custodial および非 custodial のコンテンツの場所からコンテンツのインデックスエラーを修復する方法について説明します。 エラーを一括修復してから、修復されたファイルをレビューセットにアップロードするか、またはレビューセット内の個々の処理エラーを修復することができます。|

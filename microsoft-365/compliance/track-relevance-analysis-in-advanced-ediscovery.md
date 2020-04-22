@@ -1,5 +1,5 @@
 ---
-title: Office 365 の詳細な電子情報開示で関連性分析を追跡する
+title: 高度な電子情報開示での関連性分析の追跡
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Office 365 Advanced eDiscovery で関連性トレーニングの状態とケース問題の結果を表示して解釈する方法について説明します。  '
-ms.openlocfilehash: 9c15bd285848d1906243137bfba451b19900b28e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '詳細な電子情報開示でのケース問題について、関連性のトレーニングの状態と結果を表示して解釈する方法について説明します。  '
+ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557677"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636620"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>詳細な電子情報開示での関連性分析の追跡 (クラシック)
 
@@ -172,7 +172,7 @@ ms.locfileid: "42557677"
     
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [関連性の評価について](assessment-in-relevance-in-advanced-ediscovery.md)
   

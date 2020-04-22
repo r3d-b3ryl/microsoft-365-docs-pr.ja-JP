@@ -1,5 +1,5 @@
 ---
-title: Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する
+title: 電子メールメッセージを暗号化するためのメールフロールールを定義する
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 メッセージ暗号化を使用してメッセージを暗号化および復号化するメールフロールール (トランスポートルール) を作成する方法を学習できます。
-ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075874"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632982"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する
+# <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>電子メールメッセージを暗号化するためのメールフロールールを定義する
 
-Office 365 全体管理者は、メールフロールール (トランスポートルールとも呼ばれます) を作成して、送受信する電子メールメッセージを保護することができます。 送信電子メールメッセージを暗号化したり、組織内から送信される暗号化されたメッセージから暗号化を削除したり、組織から送信された暗号化メッセージへの返信を削除したりするためのルールを設定できます。 これらのルールを作成するには、Exchange 管理センター (EAC) または Exchange Online PowerShell を使用できます。 全体的な暗号化ルールに加えて、エンド ユーザー用に個別のメッセージの暗号化オプションの有効化/無効化を選択することもできます。
+全体管理者は、送受信する電子メールメッセージを保護するためのメールフロールール (トランスポートルールとも呼ばれます) を作成できます。 送信電子メールメッセージを暗号化したり、組織内から送信される暗号化されたメッセージから暗号化を削除したり、組織から送信された暗号化メッセージへの返信を削除したりするためのルールを設定できます。 これらのルールを作成するには、Exchange 管理センター (EAC) または Exchange Online PowerShell を使用できます。 全体的な暗号化ルールに加えて、エンド ユーザー用に個別のメッセージの暗号化オプションの有効化/無効化を選択することもできます。
 
 組織外の送信者からの受信メールを暗号化することはできません。
 
@@ -96,7 +96,7 @@ EAC を使用して、新しい OME 機能でメッセージの暗号化をト�
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>新しい機能を使用せずに Office 365 メッセージ暗号化のメールフロールールを作成する
 
-Office 365 組織を新しい OME 機能にまだ移行していない場合は、これらのタスクを使用して、組織のメッセージを暗号化するためのメールフロールールを定義します。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。
+組織を新しい OME 機能に移行していない場合は、次のタスクを使用して、組織のメッセージを暗号化するためのメールフロールールを定義します。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。
 
 ### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>EAC を使用して、新しい OME 機能を使用せずに電子メールメッセージを暗号化するためのメールフロールールを作成する
 
@@ -148,9 +148,9 @@ Office 365 組織を新しい OME 機能にまだ移行していない場合は�
 
    - パラメーター_に_は、メッセージの受信者を指定します (名前、電子メールアドレス、識別名などで識別されます)。 この例では、受信者は電子メールアドレス "DrToniRamos@hotmail.com" によって識別されます。
 
-   - /は、メッセージの受信者の場所を_指定します_。 この例では、受信者のメールボックスは hotmail にあり、Office 365 組織の一部ではないため`NotInOrganization` 、値が使用されます。
+   - /は、メッセージの受信者の場所を_指定します_。 この例では、受信者のメールボックスは hotmail にあり、組織の一部ではないため`NotInOrganization` 、値が使用されます。
 
-   構文およびパラメーターの詳細については、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
+   詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>新しい OME 機能を使用せずに暗号化された電子メールの返信から暗号化を削除する
 
@@ -172,7 +172,7 @@ Office 365 組織を新しい OME 機能にまだ移行していない場合は�
 
 7. [**実行する処理**] で、[**メッセージのセキュリティ** \>を変更する] を選択します。**以前のバージョンの OME を削除**します。
 
-8. [**保存**] を選択します。
+8. **[保存]** を選択します。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Exchange Online PowerShell を使用して、新しい OME 機能なしで暗号化された電子メールの返信から暗号化を削除するルールを作成する
 
@@ -180,7 +180,7 @@ Office 365 組織を新しい OME 機能にまだ移行していない場合は�
 
 2. **New-transportrule**コマンドレットを使用してルールを作成し、 _RemoveOME_パラメーターをに`$true`設定します。
 
-   この例では、Office 365 組織内の受信者に送信されるすべてのメールから暗号化を削除します。
+   この例では、組織内の受信者に送信されるすべてのメールから暗号化を削除します。
 
    ```powershell
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
@@ -198,7 +198,7 @@ Office 365 組織を新しい OME 機能にまだ移行していない場合は�
 
      - 受信者の電子メールアドレスが、組織内の権限のあるドメインまたは内部の中継ドメインとして構成さ_れている_承認済みドメイン内にあり、認証された接続を介してメッセージが送信または受信された。
 
-構文およびパラメーターの詳細については、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
+詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

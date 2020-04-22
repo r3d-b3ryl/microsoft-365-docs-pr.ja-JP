@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Microsoft 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Microsoft 365 でスパムを過剰に取得していますか? スパムフィルターとスパム対策の設定はカスタマイズできます。
-ms.openlocfilehash: d7c7a0166fbcbf3334325aeef153f2d82f27aac3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636048"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708573"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Microsoft 365 でのスパム対策保護
 
@@ -83,7 +83,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 - **組織の設定を確認**します。メッセージがスパムフィルターをスキップできるようにする設定 (たとえば、スパム対策ポリシーの [許可されたドメイン] の一覧に独自のドメインを追加する場合など) に注目してください。 推奨される設定については、「 [EOP And Microsoft 365 ATP security](recommended-settings-for-eop-and-office365-atp.md) 」および「 [safe Sender リストを作成](create-safe-sender-lists-in-office-365.md)する」の推奨設定を参照してください。
 
-- **ユーザーのメールボックスで迷惑メールルールが有効になっていることを確認し**ます。既定では有効になっていますが、迷惑メールとしてマークされているメッセージが [迷惑メール] フォルダーに移動できない場合。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+- **ユーザーのメールボックスで迷惑メールルールが有効になっていることを確認**します。既定で有効になっていますが、無効にすると、迷惑メールとしてマークされたメッセージを [迷惑メール] フォルダーに移動することはできません。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
 - **利用可能な受信拒否リストを使用する**: 詳細については、「[ブロックする送信者リストを作成](create-block-sender-lists-in-office-365.md)する」を参照してください。
 

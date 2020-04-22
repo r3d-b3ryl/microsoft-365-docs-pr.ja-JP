@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示の評価について理解する
+title: 高度な電子情報開示の関連性の評価を理解する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: Office 365 Advanced eDiscovery で関連性のトレーニングを実施して、さまざまな問題があるかどうかを判断するための評価ステージとその役割の概要を説明します。
-ms.openlocfilehash: 46aef7300a6021e603edb8708ae01d8147b02722
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 詳細な電子情報開示で関連性のトレーニングを実施して、さまざまな問題があるかどうかを判断するための評価段階の概要とその役割について説明します。
+ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556795"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636155"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>高度な電子情報開示で関連性のある評価を理解する (クラシック)
 
@@ -55,7 +55,7 @@ ms.locfileid: "42556795"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [タグ付けと評価](tagging-and-assessment-in-advanced-ediscovery.md)
   

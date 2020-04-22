@@ -1,5 +1,5 @@
 ---
-title: Office 365 監査ログを検索して一般的なシナリオのトラブルシューティングを行う
+title: 監査ログを検索して一般的なシナリオのトラブルシューティングを行う
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Office 365 監査ログ検索ツールを使用すると、危険にさらされているアカウントの調査、メールボックスのメール転送を設定したユーザーの検出、外部ユーザーが組織に正常にログインした理由の特定などの一般的な問題のトラブルシューティングに役立ちます。
-ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 監査ログ検索ツールを使用すると、侵害されたアカウントの調査、メールボックスのメール転送を設定したユーザーの検出、外部ユーザーが組織に正常にログインした理由の特定などの一般的な問題のトラブルシューティングに役立ちます。
+ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634485"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636385"
 ---
-# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Office 365 監査ログを検索して一般的なサポートの問題を調査する
+# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して一般的なサポートの問題を調査する
 
-この記事では、Office 365 監査ログ検索ツールを使用して一般的なサポートの問題を調査する方法について説明します。 監査ログを使用すると、次のことができます。
+この記事では、監査ログ検索ツールを使用して一般的なサポートの問題を調査する方法について説明します。 監査ログを使用すると、次のことができます。
 
 - 侵害されたアカウントにアクセスするために使用されたコンピューターの IP アドレスを見つける
 - 誰がメールボックスの電子メール転送を設定したかを判別する
@@ -33,13 +33,13 @@ ms.locfileid: "42634485"
 - ユーザーが受信トレイ ルールを作成したかどうかを判別する
 - 組織外のユーザーによるログインが成功した理由を調べる
 
-## <a name="using-the-office-365-audit-log-search-tool"></a>Office 365 監査ログ検索ツールを使用する
+## <a name="using-the-audit-log-search-tool"></a>監査ログ検索ツールを使用する
 
-この記事で説明されている各トラブルシューティングのシナリオは、Office 365 セキュリティ/コンプライアンスセンターでの監査ログ検索ツールの使用に基づいています。 このセクションでは、監査ログの検索に必要なアクセス許可の一覧を示します。また、監査ログの検索にアクセスして実行する手順について説明します。 各シナリオセクションでは、監査ログ検索クエリを構成する方法と、検索条件に一致する監査レコードの詳細情報について調べる方法について説明します。
+この記事で説明する各トラブルシューティングのシナリオは、セキュリティ & コンプライアンスセンターでの監査ログ検索ツールの使用に基づいています。 このセクションでは、監査ログの検索に必要なアクセス許可の一覧を示します。また、監査ログの検索にアクセスして実行する手順について説明します。 各シナリオセクションでは、監査ログ検索クエリを構成する方法と、検索条件に一致する監査レコードの詳細情報について調べる方法について説明します。
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>監査ログ検索ツールを使用するために必要なアクセス許可
 
-Office 365 監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 の全体管理者は、Exchange Online で組織の管理役割グループのメンバーとして自動的に追加されます。 詳細については、「[Exchange Online で役割グループを管理する](https://go.microsoft.com/fwlink/p/?LinkID=730688)」を参照してください。
+監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 の全体管理者は、Exchange Online で組織の管理役割グループのメンバーとして自動的に追加されます。 詳細については、「[Exchange Online で役割グループを管理する](https://go.microsoft.com/fwlink/p/?LinkID=730688)」を参照してください。
 
 ### <a name="running-audit-log-searches"></a>監査ログ検索の実行
 
@@ -80,7 +80,7 @@ Office 365 監査ログを検索するには、Exchange Online で [表示のみ
 **アクティビティ:** ケースに関連する場合は、検索する特定のアクティビティを選択します。 侵害されたアカウントのトラブルシューティングについては、「 **Exchange メールボックスアクティビティ**」の「**メールボックスアクティビティにサインイン**しているユーザーの選択を検討してください。 これにより、メールボックスへのサインイン時に使用された IP アドレスを示す監査レコードが返されます。 それ以外の場合は、このフィールドを空白のままにして、すべてのアクティビティの監査レコードを返します。 
 
 > [!TIP]
-> このフィールドを空白のままにしたときに返される **UserLoggedIn** アクティビティは、誰かが Office 365 ユーザー アカウントにサインインしたことを示す Azure Active Directory アクティビティです。検索結果でフィルターを使用すると、**UserLoggedIn** 監査レコードを表示できます。
+> このフィールドを空白のままにすると、ユーザーアカウントにサインインしているユーザーを示す Azure Active Directory アクティビティである**UserLoggedIn** activity が返されます。 **UserLoggedIn**監査レコードを表示するには、検索結果でフィルターを使用します。
 
 [**開始日**] と [**終了日]:** 調査に適用される日付の範囲を選択します。
 
@@ -198,9 +198,9 @@ d. [ **UserId** ] フィールドには、 **ObjectId**フィールドに指定�
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>組織外のユーザーによるログインが成功した理由を調べる
 
-Office 365 監査ログで監査レコードを確認するときに、外部ユーザーが Azure Active Directory によって認証され、組織に正常にログインしたことを示すレコードが表示されることがあります。 たとえば、contoso.onmicrosoft.com の管理者は、別の Office 365 組織 (たとえば、fabrikam.onmicrosoft.com) のユーザーが contoso.onmicrosoft.com に正常にログインしたことを示す監査レコードを表示することがあります。 同様に、Microsoft アカウント (MSA) (Outlook.com や Live.com など) を使用しているユーザーが組織に正常にログインしていることを示す監査レコードが表示されることがあります。 このような状況では、監査されたアクティビティは**ユーザーがログイン**しています。 
+監査ログで監査レコードを確認するときに、外部ユーザーが Azure Active Directory によって認証され、組織に正常にログインしたことを示すレコードが表示されることがあります。 たとえば、contoso.onmicrosoft.com の管理者は、別の組織 (たとえば、fabrikam.onmicrosoft.com) のユーザーが contoso.onmicrosoft.com に正常にログインしたことを示す監査レコードを表示することがあります。 同様に、Microsoft アカウント (MSA) (Outlook.com や Live.com など) を使用しているユーザーが組織に正常にログインしていることを示す監査レコードが表示されることがあります。 このような状況では、監査されたアクティビティは**ユーザーがログイン**しています。 
 
-この動作は仕様です。 Office 365 のディレクトリサービスである azure Active Directory (Azure AD) は、外部ユーザーが組織内の SharePoint サイトまたは OneDrive の場所にアクセスしようとすると、*パススルー認証*と呼ばれるものを許可します。 外部ユーザーがこれを試みると、Office 365 資格情報を入力するように求められます。 Azure AD は資格情報を使用してユーザーを認証します。つまり、Azure AD のみがユーザーの身元を確認することになります。 監査レコードに成功したことを示すのは、Azure AD がユーザーを認証した結果です。 ログインに成功した場合は、ユーザーが組織内のすべてのリソースにアクセスしたり、その他のアクションを実行したりすることはできません。 これは、ユーザーが Azure AD によって認証されたことを示します。 パススルーユーザーが SharePoint または OneDrive リソースにアクセスするためには、組織内のユーザーは、共有への招待または匿名の共有リンクを送信して、リソースを外部ユーザーと明示的に共有する必要があります。 
+この動作は仕様です。 ディレクトリサービスである azure Active Directory (Azure AD) は、外部ユーザーが SharePoint サイトまたは組織内の OneDrive の場所にアクセスしようとしたときに、*パススルー認証*と呼ばれるものを許可します。 外部ユーザーがこの操作を試みると、資格情報の入力を求めるメッセージが表示されます。 Azure AD は資格情報を使用してユーザーを認証します。つまり、Azure AD のみがユーザーの身元を確認することになります。 監査レコードに成功したことを示すのは、Azure AD がユーザーを認証した結果です。 ログインに成功した場合は、ユーザーが組織内のすべてのリソースにアクセスしたり、その他のアクションを実行したりすることはできません。 これは、ユーザーが Azure AD によって認証されたことを示します。 パススルーユーザーが SharePoint または OneDrive リソースにアクセスするためには、組織内のユーザーは、共有への招待または匿名の共有リンクを送信して、リソースを外部ユーザーと明示的に共有する必要があります。 
 
 > [!NOTE]
 > Azure AD は、SharePoint Online と OneDrive for business などの*ファーストパーティアプリケーション*に対してのみパススルー認証を許可します。 他のサードパーティ製アプリケーションでは使用できません。
@@ -225,7 +225,7 @@ UserLoggedIn 監査レコードに表示されるその他のプロパティの�
 
   - Microsoft アカウント (SaraD@outlook.com など) を使用しているユーザーが fourthcoffee.onmicrosoft.com の OneDrive for Business アカウントのドキュメントにアクセスしようとしましたが、fourthcoffee.onmicrosoft.com の SaraD@outlook.com に対応するゲストユーザーアカウントがありません。
 
-  - Office 365 組織の職場または学校のアカウントを持つユーザー (pilarp@fabrikam.onmicrosoft.com など) が contoso.onmicrosoft.com の SharePoint サイトにアクセスしようとしましたが、contoso.onmicrosoft.com の pilarp@fabrikam.com に対応するゲストユーザーアカウントがありません。
+  - 組織内の職場または学校のアカウント (pilarp@fabrikam.onmicrosoft.com など) を持つユーザーが contoso.onmicrosoft.com の SharePoint サイトにアクセスしようとしましたが、contoso.onmicrosoft.com の pilarp@fabrikam.com に対応するゲストユーザーアカウントがありません。
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>パススルー認証の結果として成功したログインを調査するためのヒント
@@ -236,6 +236,6 @@ UserLoggedIn 監査レコードに表示されるその他のプロパティの�
 
     **ユーザーがログイン**しているユーザーとは別の監査レコードが返されることがあります。これには、組織内のユーザーに外部ユーザーとの共有リソースがあるかどうか、外部ユーザーがアクセスした、変更された、またはダウンロードしたドキュメントが外部ユーザーによって共有されているかどうかが示されます。
 
-- 監査レコード**にログイン**したユーザーによって識別された外部ユーザーとファイルを共有していることを示す SharePoint 共有アクティビティを検索します。 詳細については、「 [Office 365 監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。
+- 監査レコード**にログイン**したユーザーによって識別された外部ユーザーとファイルを共有していることを示す SharePoint 共有アクティビティを検索します。 詳細については、「[監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。
 
 - 調査に関連するレコードが含まれている監査ログの検索結果をエクスポートして、Excel を使用して外部ユーザーに関連する他のアクティビティを検索できるようにします。 詳細については、「 [Export, configure, and view audit log records](export-view-audit-log-records.md)」を参照してください。

@@ -16,20 +16,20 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Microsoft クラウドでの暗号化の概要について説明します。
-ms.openlocfilehash: dcf40f7fa2a1d08e190dc809c591b684cc13ad53
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 34ec910e60ceb718daa42dc31aa8a5a3440dbdd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071194"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626925"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud における暗号化
 
-Microsoft のエンタープライズクラウドサービス内の顧客データは、さまざまな形式の暗号化などのさまざまなテクノロジとプロセスによって保護されています。 (このドキュメントに含まれる Office 365 の顧客データには、Exchange Online メールボックスのコンテンツ (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容、適用可能な場合は Skype for Business コンテンツ)、SharePoint Online サイトのコンテンツ、および内部に格納されているファイルが含まれます。サイト、OneDrive for business または Skype for business にアップロードされたファイル)Microsoft では、顧客データがクラウドサービスを通過するためのセキュリティで保護されたパスを提供し、内部に格納されている顧客データの機密性を保護するために、製品とサービス全体で複数の暗号化の方法、プロトコル、および暗号を使用しています。クラウドサービス。 Microsoft では、お客様のデータへの不正なアクセスからの障壁を得るために使用できる最強の安全な暗号化プロトコルの一部を使用しています。 適切なキー管理は、暗号化のベストプラクティスの重要な要素でもあり、microsoft は、すべての Microsoft 管理暗号化キーが適切にセキュリティ保護されていることを確認するために機能します。
+Microsoft のエンタープライズクラウドサービス内の顧客データは、さまざまな形式の暗号化などのさまざまなテクノロジとプロセスによって保護されています。 (この文書に含まれるお客様のデータには、Exchange Online メールボックスのコンテンツ、電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容、適用可能な場合、Skype for Business コンテンツ、サイト内に格納されているファイル、および OneDrive for business または Skype for business にアップロードされたファイルが含まれます。Microsoft では、製品とサービスに対して複数の暗号化方式、プロトコル、および暗号を使用して、顧客データがクラウドサービスを通過するための安全なパスを提供し、クラウドサービス内に格納されている顧客データの機密性を保護するのに役立つようにしています。 Microsoft では、お客様のデータへの不正なアクセスからの障壁を得るために使用できる最強の安全な暗号化プロトコルの一部を使用しています。 適切なキー管理は、暗号化のベストプラクティスの重要な要素でもあり、microsoft は、すべての Microsoft 管理暗号化キーが適切にセキュリティ保護されていることを確認するために機能します。
 
 お客様の構成に関係なく、Microsoft のエンタープライズクラウドサービス内に格納されているお客様のデータは、1つ以上の形式の暗号化を使用して保護されます。 (暗号化ポリシーとその強制の検証は、複数のサードパーティの監査者によって個別に確認され、それらの監査のレポートは[サービス信頼ポータル](https://aka.ms/stp)で利用できます)。
 
-Microsoft は、お客様のデータを保存中および転送中に暗号化するサービス側テクノロジを提供しています。 たとえば、お客様のデータが保存されている場合、Microsoft Azure は[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)と[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)を使用し、Microsoft Office 365 は Bitlocker、 [Azure Storage Service 暗号化](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、 [Distributed Key Manager](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376) (DKM)、および Office 365 Service 暗号化を使用します。 転送中の顧客データ、Azure、Office 365、Microsoft コマーシャルサポート、Microsoft Dynamics 365、Microsoft Power BI、Visual Studio Team Services は、業界標準のセキュリティで保護されたトランスポートプロトコル (インターネットプロトコルセキュリティ (IPsec) など) を使用します。Microsoft データセンター間、ユーザーデバイスと Microsoft データセンター間のトランスポート層セキュリティ (TLS)。
+Microsoft は、お客様のデータを保存中および転送中に暗号化するサービス側テクノロジを提供しています。 たとえば、お客様のデータが保存されている場合、Microsoft Azure は[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)と[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)を使用し、microsoft 365 は Bitlocker、 [Azure Storage Service 暗号化](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、 [Distributed Key Manager](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376) (DKM)、および microsoft 365 Service 暗号化を使用します。 転送中の顧客データの場合、Azure、Office 365、Microsoft コマーシャルサポート、Microsoft Dynamics 365、Microsoft Power BI、Visual Studio Team Services は、Microsoft データセンター間、およびユーザーデバイスと Microsoft データセンター間で、業界標準のセキュリティで保護されたトランスポートプロトコル (インターネットプロトコルセキュリティ (IPsec)、トランスポート層セキュリティ (TLS) など) を使用します。
 
 Microsoft によって提供される暗号化セキュリティのベースラインレベルに加えて、クラウドサービスには、管理可能な追加の暗号化オプションも含まれています。 たとえば、Azure 仮想マシン (Vm) とユーザーの間のトラフィックに対して暗号化を有効にすることができます。 [Azure 仮想ネットワーク](https://azure.microsoft.com/services/virtual-network/)では、業界標準の IPsec プロトコルを使用して、企業の VPN ゲートウェイと Azure の間、および仮想ネットワーク上に配置された vm 間のトラフィックを暗号化することができます。 さらに、[新しい Office 365 メッセージの暗号化機能](set-up-new-message-encryption-capabilities.md)を使用すると、暗号化されたメールをだれにでも送信できます。
 
@@ -45,7 +45,7 @@ Microsoft は、Windows オペレーティングシステムの新しいリリ�
 - Dynamics 365、Dynamics 365 米国政府
 - Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense
 
-Office 365 の顧客保存データの暗号化は、Exchange Online、Skype for Business、OneDrive for Business、SharePoint Online での複数のサービス側テクノロジ (BitLocker、DKM、Azure Storage Service Encryption、およびサービス暗号化を含む) によって提供されます。 Office 365 service encryption には、Azure Key Vault に格納されている、顧客が管理する暗号化キーを使用するオプションが含まれています。 この顧客管理キーオプション ( [Office 365 顧客キー](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)) は、Exchange Online、SharePoint Online、Skype for business、および OneDrive for business で使用できます。
+保存されている顧客データの暗号化は、BitLocker、DKM、Azure Storage Service の暗号化、Exchange Online、Skype for business、OneDrive for Business、および SharePoint Online のサービス暗号化など、複数のサービス側テクノロジによって提供されます。 Office 365 service encryption には、Azure Key Vault に格納されている、顧客が管理する暗号化キーを使用するオプションが含まれています。 Customer[キー](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)と呼ばれるこの顧客管理キーオプションは、Exchange Online、SharePoint Online、Skype for business、および OneDrive for business で使用できます。
 
 送信中の顧客データの場合、すべての Office 365 サーバーは、既定で TLS を使用してセキュリティで保護されたセッションを、顧客データをセキュリティで保護するクライアントコンピューターを使用してネゴシエートします  これは、Skype for Business、Outlook、web 上の Outlook、モバイルクライアント、web ブラウザーなど、クライアントによって使用されるすべてのデバイスのプロトコルに適用されます。
 

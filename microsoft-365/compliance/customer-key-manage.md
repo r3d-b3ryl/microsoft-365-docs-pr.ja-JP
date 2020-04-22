@@ -1,5 +1,5 @@
 ---
-title: Office 用の顧客キーの管理365
+title: 顧客キーを管理する
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可とデータ暗号化ポリシーを管理することによって、キーを管理する方法について説明します。
-ms.openlocfilehash: 112bdee7658334c251418903761866841625ff17
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804828"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635603"
 ---
-# <a name="manage-customer-key-for-office-365"></a>Office 用の顧客キーの管理365
+# <a name="manage-customer-key"></a>顧客キーを管理する
 
 Office 365 の顧客キーを設定した後、この記事で説明されているようにキーを管理することができます。 関連するトピックの「顧客キー」を参照してください。
 
@@ -32,7 +32,7 @@ Office 365 の顧客キーを設定した後、この記事で説明されてい
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
-例:
+以下に例を示します。
   
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -50,7 +50,7 @@ Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O3
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-例:
+以下に例を示します。
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -62,7 +62,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-例:
+以下に例を示します。
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
@@ -70,7 +70,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ## <a name="manage-data-encryption-policies-deps-with-customer-key"></a>顧客キーを使用してデータ暗号化ポリシー (DEPs) を管理する
 
-顧客キーの処理は、異なる Office 365 サービス間で異なる場合があります。 たとえば、異なるサービスに対して異なる数の DEPs を作成することができます。
+顧客キーは、異なるサービス間で異なる方法で Ps を処理します。 たとえば、異なるサービスに対して異なる数の DEPs を作成することができます。
 
 **Exchange Online と Skype For business:** 最大 50 DEPs を作成できます。 手順については、「 [Exchange Online および Skype For business で使用するデータ暗号化ポリシー (DEP) を作成する](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)」を参照してください。
 
@@ -80,7 +80,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 Exchange Online と Skype for Business 用に作成したすべての DEPs の一覧を表示するには、次の手順を実行します。
 
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
 
 2. 組織内のすべての DEPs を戻すには、パラメーターを指定せずに、コマンドレットを実行します。
 
@@ -92,11 +92,11 @@ Exchange Online と Skype for Business 用に作成したすべての DEPs の�
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>メールボックスをクラウドに移行する前に DEP を割り当てる
 
-DEP を割り当てると、Office 365 は、移行中に割り当てられた DEP を使用して、メールボックスのコンテンツを暗号化します。 このプロセスは、メールボックスを移行して DEP を割り当ててから、暗号化の実行を待機するよりも効率的です。これには、数時間または数日かかる場合があります。
+DEP 365 を割り当てると、移行時に、割り当てられた DEP を使用してメールボックスのコンテンツが暗号化されます。 このプロセスは、メールボックスを移行して DEP を割り当ててから、暗号化の実行を待機するよりも効率的です。これには、数時間または数日かかる場合があります。
 
 Office 365 に移行する前に、メールボックスに DEP を割り当てるには、Exchange Online PowerShell で Set-MailUser コマンドレットを実行します。
 
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
 
 2. Set-MailUser コマンドレットを実行します。
 
@@ -110,7 +110,7 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
 
 メールボックスに割り当てられている DEP を特定するには、Get-mailboxstatistics コマンドレットを使用します。 コマンドレットは、一意の識別子 (GUID) を返します。
   
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
@@ -142,7 +142,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 IsEncrypted プロパティは、メールボックスが暗号化されている場合は**true**の値を返し、メールボックスが暗号化されていない場合は**false**の値を返します。
 
-メールボックスの移動が完了するまでの時間は、メールボックスのサイズによって異なります。 新しい DEP を割り当てた時点から72時間後にメールボックスが完全に暗号化されていない場合は、メールボックスの移動を開始します。 これを行うには、New-moverequest コマンドレットを使用して、メールボックスのエイリアスを指定します。 例:
+メールボックスの移動が完了するまでの時間は、メールボックスのサイズによって異なります。 新しい DEP を割り当てた時点から72時間後にメールボックスが完全に暗号化されていない場合は、メールボックスの移動を開始します。 これを行うには、New-moverequest コマンドレットを使用して、メールボックスのエイリアスを指定します。 以下に例を示します。
   
 ```powershell
 New-MoveRequest <alias>
@@ -178,13 +178,13 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 可用性キーを含むすべてのルートキーの取り消しを制御します。 顧客キーは、規制要件の終了計画についての制御を提供します。 データを削除してサービスを終了するためのキーを失効させる場合、データの削除プロセスが完了すると、サービスによって可用性キーが削除されます。
 
-Office 365 は、データの削除パスを監査し、検証します。 詳細については、 [Service Trust Portal](https://servicetrust.microsoft.com/)で利用できる SSAE 18 SOC 2 レポートを参照してください。 さらに、Microsoft は次のドキュメントをお勧めします。
+Microsoft 365 は、データ削除パスを監査して検証します。 詳細については、 [Service Trust Portal](https://servicetrust.microsoft.com/)で利用できる SSAE 18 SOC 2 レポートを参照してください。 さらに、Microsoft は次のドキュメントをお勧めします。
 
 - [Microsoft クラウドでの金融機関のリスク評価およびコンプライアンスガイド](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [O365 終了計画に関する考慮事項](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-データ削除パスは、異なる Office 365 サービス間で少し異なります。
+データ削除パスは、さまざまなサービス間で少し異なります。
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Exchange Online と Skype for Business の顧客キーと可用性キーを無効にする
 
@@ -199,7 +199,7 @@ Exchange Online と Skype for Business のデータ削除パスを開始する�
 
 1. Azure Key コンテナーから、"O365 Exchange Online" のラップとラップ解除のアクセス許可を削除します。
 
-2. Office 365 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+2. 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
 
 3. 削除するメールボックスを含む DEP ごとに、次のように[Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy)コマンドレットを実行します。
 
@@ -235,14 +235,14 @@ SharePoint Online、OneDrive for Business、および Teams ファイルのデ�
 
 ## <a name="related-articles"></a>関連記事
 
-- [Office 365 の顧客キーによるサービスの暗号化](customer-key-overview.md)
+- [顧客キーによるサービスの暗号化](customer-key-overview.md)
 
 - [可用性キーについて](customer-key-availability-key-understand.md)
 
-- [Office 365 の顧客キーを設定する](customer-key-set-up.md)
+- [顧客キーを設定する](customer-key-set-up.md)
 
-- [顧客キーまたは可用性キーをロールまたは回転する](customer-key-availability-key-roll.md)
+- [顧客キーまたは可用性キーをローリングまたはローテーションする](customer-key-availability-key-roll.md)
 
-- [Office 365 のカスタマーロックボックス](customer-lockbox-requests.md)
+- [カスタマー ロックボックス](customer-lockbox-requests.md)
 
-- [Office 365 でのサービスの暗号化](office-365-service-encryption.md)
+- [サービス暗号化](office-365-service-encryption.md)

@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: 最初のデータ損失防止 (DLP) ポリシーを作成する前に、DLP は既定のポリシーを使用して機密情報を保護するのに役立ちます。 この既定のポリシーとその推奨事項 (以下を参照) は、クレジットカード番号を含む電子メールやドキュメントが組織外のユーザーと共有されたことを通知することにより、機密コンテンツの安全性を確保するのに役立ちます。
-ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073124"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637831"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>既定の DLP ポリシーの使用を開始する
 
@@ -62,15 +62,15 @@ ms.locfileid: "42073124"
   
 ## <a name="edit-the-default-dlp-policy"></a>既定の DLP ポリシーを編集する
 
-このポリシーは、 **Default Office 365 DLP ポリシー**という名前で、セキュリティ&amp;コンプライアンスセンターの [**ポリシー** ] ページの [**データ損失防止**] の下に表示されます。 
+このポリシーの名前は**DEFAULT DLP policy**で、セキュリティ&amp;コンプライアンスセンターの [**ポリシー** ] ページの [**データ損失防止**] の下に表示されます。 
   
 このポリシーは完全にカスタマイズ可能ですが、最初から自分で作成した DLP ポリシーと同じです。 また、ポリシーを無効にするか削除して、ユーザーがポリシーヒントや電子メール通知を受信しなくなるようにすることもできます。
   
-![既定の Office 365 DLP ポリシーという名前の DLP ポリシー](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![既定の DLP ポリシーという名前の DLP ポリシー](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>ウィジェットが表示されない場合
 
-その他の保護された**共有コンテンツ**という名前のウィジェットは**** 、セキュリティ&amp; /コンプライアンスセンターのホームページにある [**推奨事項**] セクションに表示されます。 
+その他の保護された**共有コンテンツ**という名前のウィジェットは**Home** 、セキュリティ&amp; /コンプライアンスセンターのホームページにある [**推奨事項**] セクションに表示されます。 
   
 このウィジェットは、次の場合にのみ表示されます。
   

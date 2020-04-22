@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報の障壁をトラブルシューティングするためのガイドとして使用してください。
-ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: c57f9a14e3089f52ad0eab0a0634d7d58f74e6cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692664"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621351"
 ---
 # <a name="troubleshooting-information-barriers"></a>情報障壁のトラブルシューティング
 
@@ -27,7 +27,7 @@ ms.locfileid: "42692664"
 情報の障壁が設定された後に予期しない問題が発生した場合は、それらの問題を解決するために実行できるいくつかの手順があります。 この記事をガイドとして使用します。
 
 > [!IMPORTANT]
-> この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-Office 365 グローバル管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「[必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)するようにしてください。
+> この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-全体管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「[必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)していることを確認してください。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題: ユーザーが予期せず Microsoft Teams の他のユーザーとの通信をブロックされている 
 
@@ -65,7 +65,7 @@ ms.locfileid: "42692664"
     ```
     この場合、情報バリアポリシーが [営業] および [リサーチ] セグメントにあるユーザーに影響を与えることがわかります。 この場合、営業担当者は研究中の人々とコミュニケーションすることができません。 
     
-    これが正しいように思われる場合は、情報バリアが期待どおりに機能しています。 それ以外の場合は、次の手順に進みます。
+    これが正しいように思われる場合は、情報バリアが期待どおりに機能しています。 そうでない場合は、次の手順に進みます。
 
 4. セグメントが正しく定義されていることを確認してください。 これを行うには、 `Get-OrganizationSegment`コマンドレットを使用して、結果の一覧を確認します。 
 
@@ -146,7 +146,7 @@ Policy application コマンドレットを実行すると、組織内のすべ�
 
 2. 前の手順の結果に応じて、次のいずれかの手順を実行します。
   
-    |ステータス  |次の手順  |
+    |状態  |次の手順  |
     |---------|---------|
     |**未開始**     |**InformationBarrierPoliciesApplication**コマンドレットが実行されてから45分以上経過している場合は、監査ログを調べて、ポリシー定義にエラーがないかどうか、またはアプリケーションが開始されていない理由を確認してください。 |
     |**失敗**     |アプリケーションに障害が発生した場合は、監査ログを確認します。 また、セグメントとポリシーも確認してください。 複数のセグメントに割り当てられているユーザーはいますか? セグメントに複数の poliicy が割り当てられているかどうか。 必要に応じて、[セグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment)するか、または[ポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication**コマンドレットを再度実行します。  |
@@ -199,7 +199,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 ```powershell
    $DetailedLogs[1] |fl
 ```
- 次に例を示します。
+ 以下に例を示します。
 
 > "UserId": User1
 > 

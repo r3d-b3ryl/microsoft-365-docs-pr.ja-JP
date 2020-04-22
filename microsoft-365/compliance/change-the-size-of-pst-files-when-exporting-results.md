@@ -13,25 +13,25 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 電子情報開示検索結果をエクスポートするときに、コンピューターにダウンロードされる PST ファイルの既定のサイズを変更できます。
-ms.openlocfilehash: 9deb90e688617981499bee286b95a0442fa1a1b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5fde9bbb37f6e22c49049c892a1b69b07d15bef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595934"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636325"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更する
 
-Office 365 eDiscovery エクスポートツールを使用して、さまざまな Microsoft eDiscovery ツールから電子情報開示検索の結果をエクスポートする場合、エクスポート可能な PST ファイルの既定のサイズは 10 GB です。 この既定のサイズを変更する場合は、検索結果のエクスポートに使用するコンピューターで Windows レジストリを編集できます。 これを行う理由の1つは、PST ファイルが DVD、コンパクトディスク、または USB ドライブなどのリムーバブルメディアに格納できるようにするためです。 
+電子情報開示のエクスポートツールを使用して、さまざまな Microsoft 電子情報開示ツールからの電子情報開示検索の結果をエクスポートする場合、エクスポート可能な PST ファイルの既定のサイズは 10 GB です。 この既定のサイズを変更する場合は、検索結果のエクスポートに使用するコンピューターで Windows レジストリを編集できます。 これを行う理由の1つは、PST ファイルが DVD、コンパクトディスク、または USB ドライブなどのリムーバブルメディアに格納できるようにするためです。 
   
 > [!NOTE]
-> Office 365 eDiscovery エクスポートツールは、セキュリティ/コンプライアンスセンター、Exchange Online のインプレース電子情報開示、および SharePoint Online の電子情報開示センターでコンテンツ検索ツールを使用して検索結果をエクスポートするために使用されます。
+> 電子情報開示エクスポートツールは、セキュリティ & コンプライアンスセンター、Exchange Online のインプレース電子情報開示、および SharePoint Online の電子情報開示センターでコンテンツ検索ツールを使用して検索結果をエクスポートするために使用されます。
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更するためのレジストリ設定を作成する
 
 電子情報開示検索の結果をエクスポートするために使用するコンピューターで、次の手順を実行します。
   
-1. Office 365 eDiscovery エクスポートツールが開いている場合は、これを閉じます。 
+1. 電子情報開示エクスポートツールが開いている場合は、それを閉じます。 
     
 2. ファイル名サフィックス .reg を使用して、次のテキストをウィンドウのレジストリファイルに保存します。たとえば、PstExportSize のようにします。 
     
@@ -74,11 +74,11 @@ Office 365 eDiscovery エクスポートツールを使用して、さまざま�
   
  **この操作を実行する必要があるコンピューター**
   
-Office 365 eDiscovery エクスポートツールを実行するローカルコンピューターのレジストリ設定を変更する必要があります。
+電子情報開示エクスポートツールを実行しているローカルコンピューターのレジストリ設定を変更する必要があります。
   
  **この設定を変更した後、コンピューターを再起動する必要がありますか。**
   
-いいえ、コンピューターを再起動する必要はありません。 ただし、Office 365 eDiscovery エクスポートツールを実行している場合は、この設定を変更した後に、このツールを閉じて再起動する必要があります。
+いいえ、コンピューターを再起動する必要はありません。 しかし、電子情報開示のエクスポートツールが実行されている場合は、この設定を変更した後に、それを閉じて再起動する必要があります。
   
  **既存のレジストリキーを編集するか、新しいキーを作成しますか?**
   
