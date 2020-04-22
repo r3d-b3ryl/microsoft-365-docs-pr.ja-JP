@@ -1,5 +1,5 @@
 ---
-title: 'ステップ 5: Office 365 データ損失防止を構成する'
+title: '手順 5: データ損失防止 (DLP) を構成する'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Microsoft 365 の Office 365 データ損失防止を理解して展開する。
-ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 のデータ損失防止を理解して展開する。
+ms.openlocfilehash: e3d18bf54ecdfe11f8233163e7f200a70606d81d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067224"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636978"
 ---
-# <a name="step-5-configure-office-365-data-loss-prevention"></a>ステップ 5: Office 365 データ損失防止を構成する
+# <a name="step-5-configure-data-loss-prevention"></a>手順 5: データ損失防止 (DLP) を構成する
 
 *この手順は省略可能で、Microsoft 365 Enterprise のバージョン E3 および E5 の両方に適用されます*
 
 ![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Office 365 セキュリティ/コンプライアンス センターのデータ損失防止 (DLP) ポリシーを使用することにより、Microsoft 365 全体で機密情報の識別、監視、自動保護を行えます。 DLP ポリシーを使用すると、以下を行えます:
+セキュリティ/コンプライアンス センターのデータ損失防止 (DLP) ポリシーを使用することにより、Microsoft 365 全体で機密情報の識別、監視、自動保護を行えます。 DLP ポリシーを使用すると、以下を行えます:
 
 - Exchange Online、SharePoint Online、OneDrive for Business、Microsoft Teams などの複数の保管場所での機密情報の識別。 
 - ドキュメントへのアクセスのブロックや機密情報を含むメールのブロックによる、意図しない機密情報の共有の防止。

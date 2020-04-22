@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の基盤インフラストラクチャの各フェーズを展開するいくつかの方法について説明します。
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067814"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638154"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 Enterprise の基盤インフラストラクチャ展開戦略
 
@@ -90,7 +90,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 - 12 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 3 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
-- 6 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
+- 6月に、Office 2013 の代わりに、 Microsoft 365 Apps for enterprise がインストールされます。 (Microsoft 365 Apps for enterprise)
 - 9 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 12 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
@@ -100,7 +100,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 - 1 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 4 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
-- 7 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
+- 7月に、Office 2013 の代わりに、 Microsoft 365 Apps for enterpris がインストールされます。 (Microsoft 365 Apps for enterprise)
 - 10 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 翌年の 1 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
@@ -120,7 +120,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 - 12 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 2 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
-- 4 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
+- 4 月に、Office 2013 の代わりに、 Microsoft 365 Apps for enterpris がインストールされます。 (Microsoft 365 Apps for enterprise)
 - 6 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 8 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
@@ -130,7 +130,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 - 1 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 3 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
-- 5 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
+- 5 月に、Office 2013 の代わりに Microsoft 365 Apps for enterprise がインストールされます。 (Microsoft 365 Apps for enterprise)
 - 7 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 9 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
@@ -158,7 +158,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 - 12 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 1 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
-- 2 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
+- 2 月に、Office 2013 の代わりに、 Microsoft 365 Apps for enterpris がインストールされます。 (Microsoft 365 Apps for enterprise)
 - 3 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 4 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
@@ -168,7 +168,7 @@ IT インフラストラクチャには、バックエンド サービスと、�
 
 - 1 月に、MFA 用にスマート フォンを使用する必要があります。(ユーザー情報)
 - 2 月に、Windows 8.1 デスクトップに Windows 10 Enterprise がインストールされます。(Windows 10 Enterprise)
-- 3 月に、Office 2013 に代わって Office 365 ProPlus がインストールされます。(Office 365 ProPlus)
+- 3 月に、Office 2013 の代わりに、 Microsoft 365 Apps for enterpris がインストールされます。 (Microsoft 365 Apps for enterprise)
 - 4 月に、デバイス登録を受け、アプリ ポリシーとデバイス ポリシーが適用されます。 (モバイル デバイス管理)
 - 5 月には Azure Information Protection クライアントがインストールされて、ドキュメントにラベルを適用する方法のトレーニングを受けます。(情報の保護)
 
@@ -186,7 +186,7 @@ IT 部門はフェーズ 2 から 6 のインフラストラクチャを構成�
 
 - MFA とその他の ID 機能 (ユーザー情報)
 - Windows デバイス上の Windows 10 Enterprise (Windows 10 Enterprise)
-- Office スイート用の Office 365 ProPlus (Office 365 ProPlus)
+- Office スイート向けのMicrosoft 365 Apps for enterprise (Microsoft 365 Apps for enterprise)
 - アプリ ポリシーとデバイス ポリシー (モバイル デバイス管理)
 - Azure Information Protection クライアントのインストールと、ドキュメントにラベルを適用する方法のトレーニング (情報の保護)
 

@@ -1,5 +1,5 @@
 ---
-title: '手順 8: ユーザーのコミュニケーションとトレーニング'
+title: 手順 8 - ユーザーのコミュニケーションとトレーニング
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Windows 10 および Office 365 ProPlus について、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
-ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Windows 10 および Microsoft 365 Apps for enterprise について、エンド ユーザーにコミュニケーションとトレーニングを提供する方法を説明します。
+ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085130"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636749"
 ---
 # <a name="step-8-user-communications-and-training"></a>手順 8: ユーザーのコミュニケーションとトレーニング
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085130"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>手順 8: ユーザーのコミュニケーションとトレーニング</strong></p>
-<p>PC を Windows 10 や Office 365 ProPlus に移行するにあたり、新しい作業環境と作業方法について、ユーザーに通知してください。Microsoft FastTrack によるユーザー採用支援、トレーニング資料とコミュニケーション テンプレートの利用方法、ならびに、ユーザー受け入れや使用状況を監視する新しい方法について説明します。</p></td>
+<p>PC を Windows 10 や Microsoft 365 Apps for enterprise に移行するにあたり、新しい作業環境と作業方法について、ユーザーに通知してください。Microsoft FastTrack の採用のユーザーへの支援方法、トレーニング資料やコミュニケーション テンプレートの利用方法、ユーザー受け入れや利用を監視する新しい方法について説明します。</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +45,7 @@ Office 365、Windows 10、Azure Active Directory での新しいセキュリテ�
 
 ## <a name="getting-ready-for-new-experiences"></a>新しい操作環境の準備を整える
 
-まず Office についてですが、初めて Office 365 ProPlus を展開する場合、Office アプリにサインインし、ファイルを OneDrive または SharePoint に保存すると、共有が簡単にでき、ファイルの分岐を抑え、リアルタイムの共同編集を実現できるという利点について説明できます。
+まず Office についてですが、初めて Microsoft 365 Apps for enterprise を展開する場合、Office アプリにサインインし、ファイルを OneDrive または SharePoint に保存すると、共有が簡単にでき、ファイルの分岐を抑え、リアルタイムの共同編集を実現できるという利点について説明できます。
 
 これらおよびその他のロカール アプリ、Teams や Planner などのブラウザー ベースのアプリについては、詳細なコミュニケーションとトレーニングのテンプレートが利用可能です。
 
@@ -61,7 +61,7 @@ Windows 10 の場合、生体認証を使用して安全にログインするた
 
 たとえば多要素認証を有効にした場合などに、これは Azure AD を使用し、携帯電話アプリや PIN などを利用してユーザーのリソースへのサインインを保護し、サービスに安全にアクセスできるようにします。また、Azure Information Protection により、ユーザーはドキュメントを簡単に分類し、ラベル付けすることができます。
 
-[Office 365 の多要素認証を設定する](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[ユーザーの多要素認証を設定する](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 ユーザーにとっては新しい機能がいくつかありますが、その中には、肯定的にしろ、そうでないにしろ、意外なものと捉えられるものがあります。こういった意外性によって、特に通常の業務フローを変更しなければならない場合には、開発者やヘルプデスクへの電話やチケットが増加することがあります。
 
@@ -129,8 +129,8 @@ IT 部門、ヘルプデスク、ユーザー、およびネットワークの�
 
 分析ツールを使用して監視する診断データに加えて、管理センターのワークロードや Power BI 経由の管理ダッシュボードによる詳しい使用状況レポートを使用して、Office 365 と Microsoft 365 サービスの使用状況を詳細に監視することもできます。 これらは、Microsoft Teams などの共同作業の新しいツールや、OneDrive などのファイル共有の新しい方法をロールアウトする場合に、目標の設定と追跡を支援する優れたツールです。
 
-新しいテクノロジの受け入れと採用は、組織内のすべての PC に Windows 10 と Office 365 ProPlus がインストールされた後も続きます。また、ユーザーは、業務遂行の方法を必ずしも変更する必要はなく、新しい機能の周知とトレーニングに時間をかける必要もありません。つまり、Windows で半期、Office で 1 か月 (オプション) を予定する、新機能を提供するための新しいサービス提供モデルによって、継続的にコミュニケーションがとられます。
+新しいテクノロジの受け入れと採用は、組織内のすべての PC に Windows 10 と Microsoft 365 Apps for enterprise がインストールされた後も続きます。また、ユーザーは、業務遂行の方法を必ずしも変更する必要はなく、新しい機能の周知とトレーニングに時間をかける必要もありません。つまり、Windows で半期、Office で 1 か月 (オプション) を予定する、新機能を提供するための新しいサービス提供モデルによって、継続的にコミュニケーションがとられます。
 
 ## <a name="previous-step"></a>前の手順 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[手順 7: Windows と Office サービス](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[手順 7: Windows と Office サービス](https://aka.ms/mdd7)

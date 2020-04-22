@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 非エンタープライズ組織向けの、エンタープライズ向け Microsoft 365 基礎インフラストラクチャの簡略化されたフェーズを説明します。
-ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612647"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638262"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ組織のためのエンタープライズ向け Microsoft 365 の基礎インフラストラクチャ
 
@@ -29,16 +29,16 @@ ms.locfileid: "42612647"
 - メール サーバー、ファイル サーバー、Active Directory Domain Services (AD DS) ドメインなど、小規模のオンプレミスの IT インフラストラクチャを装備している。または IT インフラストラクチャがまったく装備されていない。
 - IT スタッフは少人数であり、そのほとんどが IT ゼネラリストであって、ネットワークや電子メールなどの特定のテクノロジやワークロードのスペシャリストではない。
 
-小規模な非エンタープライズ組織向けに、Microsoft は [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) を提供しています。 しかし、次のような理由で エンタープライズ向け Microsoft 365 が必要になる場合があります。
+小規模な非エンタープライズ組織向けに、Microsoft は [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) を提供しています。 しかし、次のような理由で エンタープライズ向け Microsoft 365 が必要になる場合があります。
 
-- 組織が現時点で、または将来的に、Microsoft 365 Business ライセンスの最大数である 300 を超える Microsoft 365 ライセンスを必要としている。
-- 組織が、Microsoft 365 Business では利用できない高度な生産性、音声、セキュリティ、分析機能を必要としている。
+- 組織が現時点で、または将来的に、 Microsoft 365 for business の最大数である、300 を超えるMicrosoft 365 のライセンスを必要としている。
+- 組織が、Microsoft 365 for business では利用できない高度な生産性、音声、セキュリティ、分析機能を必要としている。
 
 この記事では、非エンタープライズ組織に適した、エンタープライズ向け Microsoft 365 の基礎インフラストラクチャの簡略化された展開手順について説明します。
 
 ## <a name="first-set-up-your-subscription"></a>最初の手順: サブスクリプションのセットアップ
 
-サブスクリプションのドメイン ネーム システム (DNS) ドメインをセットアップする必要があります。 Office 365 サブスクリプションが既にある場合、この手順は完了しています。 ない場合は、「[Office 365 にドメインを追加する](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide)」の手順に従ってください。
+サブスクリプションのドメイン ネーム システム (DNS) ドメインをセットアップする必要があります。 Microsoft 365 サブスクリプションが既にある場合、この手順は完了しています。 ない場合は、「[Office 365 にドメインを追加する](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide)」の手順に従ってください。
 
 次に、Microsoft 365 に対して追加のセキュリティを構成する必要があります。 「[セキュリティ強化を構成する](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)」の手順に従ってください。
 
@@ -213,28 +213,28 @@ Microsoft 365 E5 を利用している場合は、Azure AD Identity Protection �
 | ![ボリューム ライセンス サービス センター](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Windows 10 Enterprise の新規インストール用のイメージが用意されているボリューム ライセンス サービス センター、および最新の更新プログラムを提供する Windows Update for Business サービス。 |
 |||
 
-## <a name="phase-4-office-365-proplus"></a>フェーズ 4: Office 365 ProPlus
+## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>フェーズ 4: Microsoft 365 Apps for enterprise
 
-エンタープライズ向け Microsoft 365 には、Microsoft Office のサブスクリプション版である Office 365 ProPlus が含まれています。 Office 2016 または Office 2019 と同様に、Office 365 ProPlus はクライアント デバイスに直接インストールされます。 ただし、Office 365 ProPlus には、新機能を含む更新プログラムが定期的に提供されます。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
+エンタープライズ向け Microsoft 365 には、Microsoft Office のサブスクリプション版である Microsoft 365 Apps for enterprise が含まれています。 Office 2016 または Office 2019 と同様に、Microsoft 365 Apps for enterprise はクライアント デバイスに直接インストールされます。 ただし、Microsoft 365 Apps for enterprise には、新機能を含む更新プログラムが定期的に提供されます。 詳細については、[企業向けのMicrosoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)を参照してください。
 
-エンタープライズ以外の組織の場合は、Office 365 ProPlus を Windows、iOS、Android デバイスを含むデバイスに手動でインストールします。 これは、新しいデバイスを使用する準備の一環として実行することも、ユーザーがオンボード プロセスの一環として実行することもできます。
+エンタープライズ以外の組織の場合は、 Microsoft 365 Apps for enterprise を Windows、iOS、Android デバイスを含むデバイスに手動でインストールします。 これは、新しいデバイスを使用する準備の一環として実行することも、ユーザーがオンボード プロセスの一環として実行することもできます。
 
 いずれの場合でも、管理者またはユーザーは https://portal.office.com で Office 365 ポータルにサインインします。 **[Microsoft Office Home]** タブで、**[Office のインストール]** をクリックして、インストール プロセスを進めます。
 
-Office 365 ProPlus に対する機能更新プログラムは、インストールされているコンピューターごとに毎月ダウンロードされます。 通常、エンタープライズ以外の組織では、Office 365 ProPlus 更新プログラムの配布用にインフラストラクチャをセットアップする必要はありません。 
+Microsoft 365 Apps for enterprise に対する機能更新プログラムは、インストールされているコンピューターごとに毎月ダウンロードされます。 通常、エンタープライズ以外の組織では、Microsoft 365 Apps for enterprise 更新プログラムの配布用にインフラストラクチャをセットアップする必要はありません。 
 
 ### <a name="your-configuration-so-far"></a>これまでの構成
 
-以下は、新しい要素に注目して、Office 365 ProPlus フェーズの概要を視覚的に示したものです。
+以下は、新しい要素に注目して、Microsoft 365 Apps for enterprise フェーズの概要を視覚的に示したものです。
 
-![Office 365 ProPlus フェーズ後の組織](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Microsoft 365 Apps for enterprise フェーズ以降の組織](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-新しく取り上げた Office 365 ProPlus の要素には次のものがあります。
+新しく取り上げた Microsoft 365 Apps for enterprise の要素には次のものがあります。
  
 |||
 |:------:|:-----|
-| ![デバイスにインストールされている Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | デバイスにインストールされている Office 365 ProPlus (例として、オンプレミスのノート PC を表示)。 |
-| ![Office 365 ProPlus 用の Office コンテンツ配信ネットワーク (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 ProPlus の更新プログラムのためにデバイスがアクセスする、Office 365 ProPlus 用の Office コンテンツ配信ネットワーク (CDN)。 |
+| ![デバイスにインストールされている Microsoft 365 Apps for enterprise ](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | デバイスにインストールされているMicrosoft 365 Apps for enterprise (例として、オンプレミスのノート PC を表示)。 |
+| ![Microsoft 365 Apps for enterprise 用の Office コンテンツ配信ネットワーク (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Microsoft 365 Apps for enterprise 用の Office コンテンツ配信ネットワーク (CDN)。デバイスはMicrosoft 365 Apps for enterprise 更新プログラムにアクセスします。 |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>フェーズ 5: モバイル デバイス管理
@@ -312,14 +312,14 @@ Intune ポリシーでは、デバイス コンプライアンスとアプリ保
 
 詳細については、「[Microsoft 365 の分類の種類](infoprotect-configure-classification.md#microsoft-365-classification-types)」を参照してください。
 
-アクセス許可の機密度ラベルを使用する場合は、追加の Office 365 セキュリティ グループを作成して、機密度ラベルが適用されている電子メールとドキュメントに対してどのような操作を誰に許可するのかを定義する必要があります。 
+アクセス許可の機密度ラベルを使用する場合は、追加のセキュリティ グループを作成して、機密度ラベルが適用された電子メールとドキュメントに対してどのような操作を誰に許可するのかを定義する必要があります。 
 
 たとえば、リサーチ チームの電子メールとドキュメントを保護するには、「リサーチ」という機密度ラベルを作成する必要があります。 以下を決定する必要があります。
 
 - リサーチを行う従業員は、機密度ラベル "リサーチ" が付けられたドキュメントを変更できなければならない。
 - リサーチを行わない従業員に必要なのは、機密度ラベル "リサーチ" が付けられたドキュメントを表示する機能のみ。 
 
-つまり、次の 2 つの Office 365 グループを追加で作成して管理する必要があります。
+つまり、次の 2 つの Microsoft 365 グループを追加で作成して管理する必要があります。
 
 - リサーチ-すべて
 - リサーチ-表示
@@ -388,7 +388,7 @@ Powershell を使用する場合は、この[ダウンロード可能な Excel �
 
 1. ユーザー アカウントの資格情報を使用して、デバイスにサインインする。
 2. ブラウザーを使用して、https://portal.office.com で Office 365 ポータルにサインインする。
-3. **[Office 365 Home]** タブから、**[Office のインストール]** をクリックして、デバイスに Office 365 ProPlus をインストールします。
+3. **[Office 365 Home]** タブから、**[Office のインストール]** をクリックして、デバイスにMicrosoft 365 Apps for enterprise をインストールします。
 
 ## <a name="end-results"></a>最終的な結果
 
@@ -405,7 +405,7 @@ Powershell を使用する場合は、この[ダウンロード可能な Excel �
   - 条件付きアクセスの除外
   - ベースライン、機密、厳しく規制の各 Azure AD グループのメンバーでもある、適切な AD DS または Azure AD セキュリティ グループ 
   - ワークグループ、部署、地域の各グループ
-  - 機密度ラベル Office 365 グループ (必要な場合)
+  - 機密度ラベル Microsoft 365 グループ (必要な場合)
 - ベースライン、機密、厳しく規制、条件付きアクセスの除外の各 Azure AD グループを使用する Azure AD サインイン条件付きアクセス ポリシー。
 - Intune アプリケーションとデバイスのコンプライアンス ポリシー。
 - カスタムの機密情報の種類 (必要な場合)。
@@ -429,11 +429,11 @@ Powershell を使用する場合は、この[ダウンロード可能な Excel �
    - ライセンス付与済み
    - 条件付きアクセス ポリシー用のベースライン、機密、厳しく規制の各 Azure AD グループのメンバーでもある、適切な AD DS または Azure AD セキュリティ グループ 
    - 適切なワークグループ、部署、地域の各グループ
-   - 機密度ラベル Office 365 グループ (必要な場合)
+   - 機密度ラベル Microsoft 365 グループ (必要な場合)
 - Windows 10 Enterprise デバイスは、以下のようになります。
    - Azure AD テナント (クラウド専用) に参加している、または Azure AD テナントと AD DS ドメイン (ハイブリッド) の両方に参加している。
    - Windows 10 Enterprise の最新の製品の品質向上とセキュリティ強化と共に自動的に更新される。
-   - Office 365 ProPlus がインストールされ、これにより、最新の Office 製品の品質向上とセキュリティ強化と共に自動的に更新される。
+   - Microsoft 365 Apps for enterprise がインストールされ、これにより、最新の Office 製品の品質向上とセキュリティ強化と共に自動的に更新される。
    - Intune に登録され、Intune デバイス コンプライアンス ポリシーおよびアプリ保護ポリシーの対象となる。
 
 ## <a name="next-step"></a>次の手順

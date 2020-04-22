@@ -1,5 +1,5 @@
 ---
-title: Windows 10 と Office 365 ProPlus の展開に関するヘルプを検索する
+title: エンタープライズ展開用の Windows 10 アプリと Microsoft 365 Apps for enterprise のヘルプを見つける
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,19 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Windows 10 と Office 365 ProPlus の展開に関するヘルプとサポートを検索する場所。
-ms.openlocfilehash: c581cbfc7fdb537fddf10b20d697a42a8e564bcf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Windows 10 と Microsoft 365 Apps for enterprise の展開に関するヘルプとサポートを検索する場所。
+ms.openlocfilehash: 7c5376228c3c0b7506fd9b9fe7fb565c0bb76446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067580"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634088"
 ---
-# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Windows 10 と Office 365 ProPlus の展開に関するヘルプを検索する 
+# <a name="find-help-for-your-windows-10-and-microsoft-365-apps-for-enterprise-deployment"></a>エンタープライズ展開用の Windows 10 アプリと Microsoft 365 Apps for enterprise のヘルプを見つける 
 
-Office 365 ProPlus を使用して Windows 10 の展開を計画している場合は、いくつかのオプションを利用して、認定された Microsoft パートナーおよび [Microsoft FastTrack](https://www.microsoft.com/fasttrack) からさらなるサポートを得ることができます。
+Microsoft 365 Apps for enterprise を使用して Windows 10 の展開を計画している場合は、いくつかのオプションを利用して、認定された Microsoft パートナーおよび [Microsoft FastTrack](https://www.microsoft.com/fasttrack) からさらなるサポートを得ることができます。
 
-以下は、既存のパートナーと FastTrack によって提供される、Windows 10、Office 365 ProPlus、および Enterprise Mobility + Security 用の[デスクトップ展開](https://www.aka.ms/howtoshift)のプロセスに対応した、利用可能なサービスのマップです。 多くの場合、これらのサービスは、Microsoft 365、Office 365、または Windows 10 Enterprise のそれぞれの条件を満たすサブスクリプションに付属しています。 Windows 10 や Office 365 ProPlus デスクトップ評価のようなパートナー主導サービスについては、Microsoft は認定を与える組織として、パートナーが実施するサービスへの証書を提供します。 各提供物の詳細は以下のリンクで確認することができます。
+以下は、既存のパートナーと FastTrack によって提供される、Windows 10、Microsoft 365 Apps for enterprise、および Enterprise Mobility + Security 用の[デスクトップ展開](https://www.aka.ms/howtoshift)のプロセスに対応した、利用可能なサービスのマップです。 多くの場合、これらのサービスは、Microsoft 365、Office 365、または Windows 10 Enterprise のそれぞれの条件を満たすサブスクリプションに付属しています。 Windows 10 や Microsoft 365 Apps for enterprise デスクトップ評価のようなパートナー主導サービスについては、Microsoft は認定を与える組織として、パートナーが実施するサービスへの証書を提供します。 各提供物の詳細は以下のリンクで確認することができます。
 
 <br>
 
@@ -36,7 +36,7 @@ Office 365 ProPlus を使用して Windows 10 の展開を計画している場�
 <td><p><strong>デバイスとアプリの準備</strong></p>
 <ul>
 <li><p><a href="https://aka.ms/MDAcustomerform">モダン デスクトップ評価</a>: 地域の認定パートナーが、最新の Microsoft のツールを使用して手順に従い、組織のアプリケーションとデバイスの互換性、およびアップグレードの準備状況を詳細に評価します。</p>
-<li><p><a href="https://www.aka.ms/desktopappassure">Desktop App Assure</a>: Microsoft の FastTrack のエンジニアが、Windows 10 および Office 365 ProPlus のデプロイや更新時にアプリケーションの互換性の問題が発生した場合に、アドバイスと修復のガイダンスを提供します。</p>
+<li><p><a href="https://www.aka.ms/desktopappassure">Desktop App Assure</a>: Microsoft の FastTrack のエンジニアが、Windows 10 および Microsoft 365 Apps for enterprise のデプロイや更新時にアプリケーションの互換性の問題が発生した場合に、アドバイスと修復のガイダンスを提供します。</p>
 </ul></td>
 </tr>
 <tbody>
@@ -44,14 +44,14 @@ Office 365 ProPlus を使用して Windows 10 の展開を計画している場�
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
 <td><p><strong>ディレクトリとネットワークの準備</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">コア オンボード</a>: Microsoft の FastTrack のスペシャリストが、現在のディレクトリ サービスと Azure Active Directory との間の ID の統合を行います。これはデスクトップ展開の一環として、Office 365 ProPlus、Microsoft Intune、OneDrive、他の Office 365 および EMS クラウド サービスに必要となります。</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">コア オンボード</a>: Microsoft の FastTrack のスペシャリストが、現在のディレクトリ サービスと Azure Active Directory との間の ID の統合を行います。これはデスクトップ展開の一環として、Microsoft 365 Apps for enterprise、Microsoft Intune、OneDrive、他の Office 365 および EMS クラウド サービスに必要となります。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Office と LOB アプリの配信</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> の構成と展開: Microsoft の FastTrack のスペシャリストが、ユーザー ライセンスのプロビジョニング、クイック実行のためのインストール構成と更新設定、組織が Microsoft Endpoint Configuration Manager を使用している場合のパッケージ作成のサポートを行います。</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 Apps for enterprise</a> の構成と展開: Microsoft の FastTrack のスペシャリストが、ユーザー ライセンスのプロビジョニング、クイック実行のためのインストール構成と更新設定、組織が Microsoft Endpoint Configuration Manager を使用している場合のパッケージ作成のサポートを行います。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ Office 365 ProPlus を使用して Windows 10 の展開を計画している場�
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="step 7" height="144" width="144" /></td>
 <td><p><strong>サービスとしての Office と Windows</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: Microsoft の FastTrack のスペシャリストが、Windows 10 および Office 365 ProPlus の更新ポリシーの構成のサポートを行います。<a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> についても、展開リングを設定して最新の状態を保てるように、Microsoft FastTrack のガイダンスを活用することができます。</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: Microsoft の FastTrack のスペシャリストが、Windows 10 および Microsoft 365 Apps for enterprise の更新ポリシーの構成のサポートを行います。<a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 Apps for enterprise</a> についても、展開リングを設定して最新の状態を保てるように、Microsoft FastTrack のガイダンスを活用することができます。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -87,7 +87,7 @@ Office 365 ProPlus を使用して Windows 10 の展開を計画している場�
 <td><p><strong>ユーザーのコミュニケーションとトレーニング</strong></p>
 <ul>
 <li><p><a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/quickly-and-easily-transform-new-devices?rtc=2">生産性向上ライブラリ</a>: エンド ユーザーのコミュニケーションと Microsoft 365 のトレーニングに関する、Microsoft からのオンライン リソースのセットです。</p></li>
-<li><p><a href="https://www.office.com/training">Office トレーニング</a>: Office 365 および Office 365 ProPlus に関する、Microsoft エンド ユーザー トレーニング用のオンライン リソースのセットです。</p></li>
+<li><p><a href="https://www.office.com/training">Office トレーニング</a>: Office 365 および Microsoft 365 Apps for enterprise に関する、Microsoft エンド ユーザー トレーニング用のオンライン リソースのセットです。</p></li>
 <li><p><a href="https://info.microsoft.com/Windows10AdoptionPlanningKit.html">Windows 10 の導入計画キット</a>: ユーザーの準備資産を含む Microsoft からのオンライン リソースのセットです。</p></li>
 </ul></td>
 </tr>

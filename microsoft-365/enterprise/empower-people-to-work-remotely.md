@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするインフラストラクチャとセキュリティを構成します。
-ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 3c4d34e21993f3b0c9327b27dd0a5a14f430b1b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504125"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637506"
 ---
 # <a name="empower-remote-workers"></a>リモート ワーカーを支援する
 
@@ -58,14 +58,14 @@ ms.locfileid: "43504125"
 - リソースへのアクセスを保護する
   - Teams、SharePoint サイト、および OneDrive のグループとアクセス許可により、認証および許可されたユーザーのみがアクセス可能
 - 漏洩ファイルの保護
-  - Office 365 DLP ポリシー
+  - DLP ポリシー
   - 暗号化のための機密ラベルとファイルとともに移動するアクセス許可
 - Microsoft Intune によるデバイス管理とセキュリティ
   - 管理対象デバイスの登録
   - 個人用デバイスのアプリ設定
   - デバイスとアプリのポリシー
 - デバイス用の生産性アプリ
-  - Teams、SharePoint、および OneDrive とのコラボレーション エクスペリエンスのための Office 365 ProPlus アプリ 
+  - Teams、SharePoint、および OneDrive とのコラボレーション エクスペリエンスのための Microsoft 365 Apps for enterprise アプリ 
 - Windows 10 Enterprise
   - サイバー攻撃から保護し、データ漏洩を防止する包括的なセキュリティ機能
 - オンプレミス アプリへのアクセス
@@ -108,11 +108,11 @@ ms.locfileid: "43504125"
 
 ![リモート ワーカー向けの Windows 10 Enterprise の要素](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
-[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md) の場合、インフラストラクチャを展開して Office 365 ProPlus をインストールするか、Office 2010 や Office 2013 などの現在インストールされている Office スイートを組織のデバイス上の Office 365 ProPlus にアップグレードします。 これにより、ユーザーがセキュリティと共同作業エクスペリエンスを最大限活用できるようになります。
+[フェーズ 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md):インフラストラクチャを展開してMicrosoft 365 Apps for enterprise をインストールするか、 Office 2010、Office 2013 など、現在インストールされている Office スイートを組織のデバイスのMicrosoft 365 Apps for enterprise にアップグレードします。 これにより、ユーザーがセキュリティと共同作業エクスペリエンスを最大限活用できるようになります。
 
-次に、Office 365 ProPlus がデバイスにインストールされた場合の構成を示します。
+次に、Microsoft 365 Apps for enterprise がデバイスにインストールされた場合の構成を示します。
 
-![リモート ワーカー向けの Office 365 ProPlus 要素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![リモート ワーカー向けの Microsoft 365 Apps for enterprise の要素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 [フェーズ 5: モバイル デバイス管理](mobility-infrastructure.md)の場合、次の目的で Intune デバイスとアプリの管理を展開します。
 
@@ -126,8 +126,8 @@ ms.locfileid: "43504125"
  
 [フェーズ 6: 情報保護](infoprotect-infrastructure.md)の場合、デジタル資産の保護を次の機能により設計および構成します。
 
-- Office 365 DLP ポリシー。
-- ファイルと共に移動する暗号化およびアクセス許可のための Office 365 の機密度ラベル。
+- DLP ポリシー。
+- 暗号化のためのMicrosoft 365 機密ラベルとファイルとともに移動するアクセス許可。
 
 次に、DLP ポリシーと機密度ラベルを強調表示した構成を示します。
 
@@ -153,7 +153,7 @@ ms.locfileid: "43504125"
  
 ### <a name="deployment-results"></a>展開結果
 
-基盤インフラストラクチャとワークロードを展開し、Windows 10 Enterprise および Office 365 ProPlus を展開した後、リモート ワーカーは次のようになります。
+基盤インフラストラクチャとワークロードを展開し、Windows 10 Enterprise および Microsoft 365 Apps for enterprise を展開した後、リモート ワーカーは次の操作を行います。
 
 - 強力な認証および ID 保護の対象になります。
 - Windows デバイスで最新かつ最も安全なバージョンの Windows を使用するようになります。
@@ -205,7 +205,7 @@ ms.locfileid: "43504125"
 
 ### <a name="user-adoption-results"></a>ユーザーによる採用の結果
 
-リモート ワーカーは、Windows 10 Enterprise または他のデバイスと Office 365 ProPlus を使用して、安全な環境で共有 Microsoft 365 Enterprise クラウド サービスとリソースにアクセスして作業し、リアルタイムで会議、作成、コラボレーションを行うことができます。
+リモート ワーカーは、Windows 10 Enterprise または他のデバイスと Microsoft 365 Apps for enterprise を使用して、安全な環境で共有 Microsoft 365 Enterprise クラウド サービスとリソースにアクセスして作業し、リアルタイムで会議、作成、コラボレーションを行うことができます。
 
 ## <a name="additional-microsoft-features-to-support-remote-workers"></a>リモート ワーカーをサポートするために Microsoft が提供しているその他の機能
 

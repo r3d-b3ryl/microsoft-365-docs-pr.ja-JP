@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップの展開プロセスの概要です。
-ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067498"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634220"
 ---
 # <a name="getting-started---desktop-deployment"></a>概要 - デスクトップの展開
 
@@ -30,7 +30,7 @@ ms.locfileid: "42067498"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>はじめに: ユーザー、プロセス、およびテクノロジのガイダンス</strong></p>
-<p>Windows 10 および Office 365 ProPlus の利点、大きな変更点、考慮事項を以前の展開と比べたうえで明確にし、Windows 10 および Office 365 ProPlus への移行をスムーズにできるようなベスト プラクティスを確立します。</p></td>
+<p>Windows 10 および Microsoft 365 Apps for enterprise の利点、大きな変更点、考慮事項を以前の展開と比べたうえで明確にし、Windows 10 および Microsoft 365 Apps for enterprise への移行をスムーズにできるようなベスト プラクティスを確立します。</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,27 +39,27 @@ ms.locfileid: "42067498"
 >このシリーズでは、既存のツールを使用する最適な方法について説明し、クラウドによって実現される新しいテクノロジ、サービス、メソッドを紹介します。  デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
-デスクトップ展開センターへようこそ。ここでは Windows 10 と Office 365 ProPlus への移行を計画および実現する際に役立つ情報をまとめて説明します。 最新の作業効率化、チームワーク、および共同作業のエクスペリエンスの機能を備えた、セキュリティで保護されたワークスペースを利用できます。
+デスクトップ展開センターへようこそ。ここでは Windows 10 と Microsoft 365 Apps for enterprise への移行を計画および実現する際に役立つ情報をまとめて説明します。 最新の作業効率化、チームワーク、および共同作業のエクスペリエンスの機能を備えた、セキュリティで保護されたワークスペースを利用できます。
 
 しばらく新しいデスクトップ環境を展開していなかった場合、幸いにも展開プロセスの多くが強化されています。 アプリケーションの互換性など過去の課題は現在ではそれほど問題になりません。 新しいツールに加えクラウドから提供される洞察を活用することで、これまでになく迅速かつ効率的に確実な移行を実現できます。
 
-この序論では、変更点の概要と、デスクトップの展開プロセス全体のツアーを案内します。Windows 10 および Office 365 ProPlus への移行の推奨手順を示し、最新の管理テクノロジとアプローチを取り入れながら既存のツールとプロセスを活用する方法が詳述されています。
+この序論では、変更点の概要と、デスクトップの展開プロセス全体のツアーを案内します。Windows 10 および Microsoft 365 Apps for enterprise への移行の推奨手順を示し、最新の管理テクノロジとアプローチを取り入れながら既存のツールとプロセスを活用する方法が詳述されています。
 
 ## <a name="why-upgrade"></a>アップグレードが必要な理由
 
 Windows 10 と Microsoft のインテリジェンス クラウドを組み合わせることで、最も強力で安全なユーザー用のワークスペースを提供しやすくなると同時に、サポートのためのインフラストラクチャを簡素化することができます。
 
-最新の管理方法における重要なテナントの 1 つとして、常に最新の状態にあるデバイスが挙げられます。 このシリーズでは、Windows 10 および Office 365 ProPlus への移行を支援するために用意されている新しい機能と、Windows 10 と Office 365 ProPlus 両方の半期のリリースを利用して、最新の状態を保つ方法について説明します。
+最新の管理方法における重要なテナントの 1 つとして、常に最新の状態にあるデバイスが挙げられます。 このシリーズでは、Windows 10 および Microsoft 365 Apps for enterprise への移行を支援するために用意されている新しい機能と、Windows 10 と Microsoft 365 Apps for enterprise 両方の半期のリリースを利用して、最新の状態を保つ方法について説明します。
 
 [IT 担当者向けの Windows 10](https://www.microsoft.com/itpro/windows-10)
 
-[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[企業向けのMicrosoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
 
 ## <a name="what-has-changed"></a>変更点
 
 まずは、前回のデスクトップの展開以降の変更点と改善点を見てみましょう。デスクトップ環境をしばらく変更していない場合は、Windows 7、Office 2010、または Office 2013 を使用している可能性があります。その場合、前回のメジャー アップグレード後に施されたいくつかの変更点に気付くはずです。以下が重要な変更点になります。
 
-**ID とアクセス**: Windows 10 と Office 365 ProPlus は、クラウドの生産性、セキュリティ、および管理サービスへの接続性を備え、ID とアクセスの新しい管理サービスである Azure Active Directory (Azure AD) を基盤としています。 これにより、シングル サインオンが可能になり、クラウド サービス間の接続がセキュリティで保護されます。つまり、Azure AD は必須であり、これを活用することにより、Office 365、Intune、Windows Autopilot などの Microsoft 365 サービスの利点を生かすことができます。
+**ID とアクセス**: Windows 10 と Microsoft 365 Apps for enterprise は、クラウドの生産性、セキュリティ、および管理サービスへの接続性を備え、ID とアクセスの新しい管理サービスである Azure Active Directory (Azure AD) を基盤としています。 これにより、シングル サインオンが可能になり、クラウド サービス間の接続がセキュリティで保護されます。つまり、Azure AD は必須であり、これを活用することにより、Office 365、Intune、Windows Autopilot などの Microsoft 365 サービスの利点を生かすことができます。
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
@@ -73,13 +73,13 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 [Windows Autopilot](https://www.microsoft.com/windowsforbusiness/windows-autopilot)
 
-**クイック実行の展開**: Office デスクトップ アプリケーションをプロビジョニングする場合の推奨オプションは Office 365 ProPlus になります。 Office 365 ProPlus を利用すれば、開発中の Office の最新の技術革新の実践が可能となり、新しい機能を取得するまで何年も待つ必要はなくなります。 クイック実行と呼ばれるという新しいインストールも使用できます。
+**クイック実行の展開**: Office デスクトップ アプリケーションをプロビジョニングする場合の推奨オプションは Microsoft 365 Apps for enterprise になります。 Office 365 ProPlus を利用すれば、開発中の Office の最新の技術革新の実践が可能となり、新しい機能を取得するまで何年も待つ必要はなくなります。 クイック実行と呼ばれるという新しいインストールも使用できます。
 
 クイック実行は、過去の MSI ベースのパッケージとはまったく異なります。 クイック実行は今まで以上に速く軽く、バックグラウンドでの更新をサポートするため、ユーザーの起動および実行が維持されます。 それは引き続き Office のローカル コピーであり、Microsoft Endpoint Configuration Manager などの既存の展開ツールを使用した、アプリのプロビジョニングと構成も継続して行うことができます。
 
-[Office 365 ProPlus の展開ガイド](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 Apps for enterprise の展開ガイド](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
-**半期の更新プログラム**: Windows 10 および Office 365 ProPlus に移行すると、新機能を備えた更新プログラムが半年ごとに配信されます。 Microsoft がクラウドから提供する洞察を活用すれば、これらの新機能の更新プログラムを数百または数千のデバイスにすばやく安心して展開することができます。 一括アップグレードと同様、機能更新プログラムは、以前のリリースからのアプリ、データ、設定を保持します。
+**半期の更新プログラム**: Windows 10 および Microsoft 365 Apps for enterprise に移行すると、新機能を備えた更新プログラムが半年ごとに配信されます。 Microsoft がクラウドから提供する洞察を活用すれば、これらの新機能の更新プログラムを数百または数千のデバイスにすばやく安心して展開することができます。 一括アップグレードと同様、機能更新プログラムは、以前のリリースからのアプリ、データ、設定を保持します。
 
 ## <a name="the-deployment-process-wheel"></a>展開プロセス全体
 
@@ -93,7 +93,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 [BranchCache 対ピア キャッシュ](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**[手順 3: Office と基幹業務アプリの配信](https://aka.ms/mdd3)** Windows は MSI ベースのインストールを引き続きサポートしていますが、自動インストールと継続的な更新プログラム用に最適化された新しいインストール方式もサポートしています。 Office 365 ProPlus および Office 2019 クライアントはクイック実行インストール テクノロジを使用します。 さまざまな UWP アプリケーションを利用可能になり、新しい MSIX ベースのパッケージ化されたアプリを基に、数多くのサード パーティのアプリや社内開発の基幹業務アプリを展開できるようになります。 ここでの手順を実行すると、アプリの自動展開の準備が整います。クイック実行、MSIX、従来の MSI ベースによるアプリの展開や、ビジネス向けの Microsoft Store で配布している UWP アプリの展開もできるようになります。
+**[手順 3: Office と基幹業務アプリの配信](https://aka.ms/mdd3)** Windows は MSI ベースのインストールを引き続きサポートしていますが、自動インストールと継続的な更新プログラム用に最適化された新しいインストール方式もサポートしています。 はい。Microsoft 365 Apps for enterprise および Office 2019 クライアントはクイック実行インストール テクノロジを使用します。 さまざまな UWP アプリケーションを利用可能になり、新しい MSIX ベースのパッケージ化されたアプリを基に、数多くのサード パーティのアプリや社内開発の基幹業務アプリを展開できるようになります。 ここでの手順を実行すると、アプリの自動展開の準備が整います。クイック実行、MSIX、従来の MSI ベースによるアプリの展開や、ビジネス向けの Microsoft Store で配布している UWP アプリの展開もできるようになります。
 
 [MSIX とは](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/)
 
@@ -103,7 +103,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 [Windows の既知のフォルダーを OneDrive にリダイレクトして移動する](https://docs.microsoft.com/onedrive/redirect-known-folders)
 
-**[手順 5: セキュリティとコンプライアンス](https://aka.ms/mdd5)**: セキュリティとコンプライアンスは、Windows 10 および Office 365 ProPlus に移行する際の非常に重要な分野です。新しく組み込まれた機能に精通し、既存の機能との相違点を把握しておくことが大切です。たとえば、仮想化ベースのセキュリティによる Windows 10 の新機能を利用すると、コア プロセスと機密事項がオペレーティング システムから独立するため、資格情報の盗難、ブラウザベースの悪用、悪質なコードの実行を防止することができます。さらに、Advanced Threat Protection のようなクラウド サービスには、セキュリティ強化、感染後の検出、調査、復旧対応を行う、統一されたプラットフォームが用意されています。また、Advanced Threat Protection は、悪意のある電子メールの添付ファイル、危険なハイパーリンクなどの脅威からもユーザーを守ります。
+**[手順 5: セキュリティとコンプライアンス](https://aka.ms/mdd5)**: セキュリティとコンプライアンスは、Windows 10 および Microsoft 365 Apps for enterprise に移行する際の非常に重要な分野です。新しく組み込まれた機能に精通し、既存の機能との相違点を把握しておくことが大切です。たとえば、仮想化ベースのセキュリティによる Windows 10 の新機能を利用すると、コア プロセスと機密事項がオペレーティング システムから独立するため、資格情報の盗難、ブラウザベースの悪用、悪質なコードの実行を防止することができます。さらに、Advanced Threat Protection のようなクラウド サービスには、セキュリティ強化、感染後の検出、調査、復旧対応を行う、統一されたプラットフォームが用意されています。また、Advanced Threat Protection は、悪意のある電子メールの添付ファイル、危険なハイパーリンクなどの脅威からもユーザーを守ります。
 
 [Microsoft セキュリティ](https://www.microsoft.com/security/default.aspx)
 
@@ -111,18 +111,18 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 [Configuration Manager のオペレーティング システムの展開の概要](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-**[手順 7: サービスとしての Windows および Office](https://aka.ms/mdd7)** これは、ユーザーのデスクトップ資産の維持方法に関する大きな変更を表しています。 Windows 10 および Office 365 ProPlus に移行すると、サービスとしての Windows および Office を管理することができます。 数年に一度の大規模なテクノロジの更新ではなく、新しい機能、エクスペリエンス、保護機能を継続してユーザーに提供します。 半期の機能更新プログラムは毎年秋と春に新しい機能を提供し、毎月の累積的な品質更新プログラムには、セキュリティ、信頼性、バグ修正プログラムが含まれます。 Office 2019 クライアントを展開することもできますが、Office 365 ProPlus に移行することを強くお勧めします。 これには Windows と同様のサービス プランが用意されており、ユーザーが Office アプリの更新プログラムを定期的に入手することもできます。
+**[手順 7: サービスとしての Windows および Office](https://aka.ms/mdd7)** これは、ユーザーのデスクトップ資産の維持方法に関する大きな変更を表しています。 Windows 10 および Microsoft 365 Apps for enterprise に移行すると、サービスとしての Windows および Office を管理することができます。 数年に一度の大規模なテクノロジの更新ではなく、新しい機能、エクスペリエンス、保護機能を継続してユーザーに提供します。 半期の機能更新プログラムは毎年秋と春に新しい機能を提供し、毎月の累積的な品質更新プログラムには、セキュリティ、信頼性、バグ修正プログラムが含まれます。 Office 2019 クライアントを展開することもできますが、Microsoft 365 Apps for enterprise に移行することを強くお勧めします。 これには Windows と同様のサービス プランが用意されており、ユーザーが Office アプリの更新プログラムを定期的に入手することもできます。
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [サービスとしての Windows の概要](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [サービスとしての Office の概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
-**[手順 8: ユーザーのコミュニケーションとトレーニング](https://aka.ms/mdd8)** この最後の手順は、チームワーク、コミュニケーション、セキュリティなどを強化するための新しい機能を使用するうえで非常に重要です。 早期に採用している組織に属さないユーザーを対象とした広範囲の展開を行う場合は、展開前にユーザーのコミュニケーションとトレーニングを実施することをお勧めします。 これを実施すれば、Office、Windows、他の基幹業務アプリやサービスの新機能に関して、ユーザーは自分に適した活用方法を見つけることができます。 また、Microsoft FastTrack のオンライン トレーニングによる支援も行っています。 さらに、コミュニケーション プランとタイムラインの無料サンプルを、電子メール、ソーシャルおよびイントラネットのテンプレートとともに公開しています。これらは Windows 10 の展開に役立ちます。 Microsoft 365 または Office 365 組織の場合は、直接サポートを受けることもできます。
+**[手順 8: ユーザーのコミュニケーションとトレーニング](https://aka.ms/mdd8)** この最後の手順は、チームワーク、コミュニケーション、セキュリティなどを強化するための新しい機能を使用するうえで非常に重要です。 早期に採用している組織に属さないユーザーを対象とした広範囲の展開を行う場合は、展開前にユーザーのコミュニケーションとトレーニングを実施することをお勧めします。 これを実施すれば、Office、Windows、他の基幹業務アプリやサービスの新機能に関して、ユーザーは自分に適した活用方法を見つけることができます。 また、Microsoft FastTrack のオンライン トレーニングによる支援も行っています。 さらに、コミュニケーション プランとタイムラインの無料サンプルを、電子メール、ソーシャルおよびイントラネットのテンプレートとともに公開しています。これらは Windows 10 の展開に役立ちます。 Microsoft 365 または組織の場合は、直接サポートを受けることもできます。
 
 ## <a name="next-step"></a>次の手順
 
-ここまで、Windows 10 と Office 365 ProPlus の新しい機能とこれまでとの相違点を確認し、推奨される展開プロセスの全体像を見てきました。 エンド ツー エンドのこのガイダンスを活用し、用意されているツールを駆使して、Windows 10 および Office 365 ProPlus への移行を始めましょう。
+ここまで、Windows 10 と Microsoft 365 Apps for enterprise の新しい機能とこれまでとの相違点を確認し、推奨される展開プロセスの全体像を見てきました。 エンド ツー エンドのこのガイダンスを活用し、用意されているツールを駆使して、Windows 10 および Microsoft 365 Apps for enterprise への移行を始めましょう。
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)
+## <a name="step-1-device-and-app-readiness"></a>[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)
 

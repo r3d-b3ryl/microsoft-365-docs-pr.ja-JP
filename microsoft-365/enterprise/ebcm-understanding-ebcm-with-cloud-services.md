@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: クラウドサービスが IT サービスに含まれている場合の、ビジネスの継続性の計画と実装の違いを説明します。
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030108"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633035"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM) について
 
@@ -40,7 +40,7 @@ ms.locfileid: "43030108"
 - [Microsoft 365 サービスの回復性](ebcm-m365-service-resiliency.md)
 - [連続性の計画を立てる](ebcm-developing-your-ebcm-plan.md)
 - [Microsoft 365 のサービス インシデント対策のシナリオ](ebcm-microsoft-365-mitigations.md)
-- [Microsoft 365 ビジネス連続性計画のトレーニングとリハーサル](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Microsoft 365 for business の継続性計画のトレーニングとリハーサル](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のデバイスとアプリの準備を評価する方法について説明します。
-ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085492"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636858"
 ---
 # <a name="step-1-device-and-app-readiness"></a>手順 1: デバイスとアプリの準備
 
@@ -39,7 +39,7 @@ ms.locfileid: "42085492"
 >デバイスとアプリの準備は、推奨されている展開プロセスの輪における最初の手順であり、アプリケーションとハードウェアの互換性に関する包括的な側面をカバーします。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
-これまで、ユーザーのデスクトップをアップグレードする際には、アプリケーションとハードウェアの互換性が大きなハードルになっていました。Windows 10 および Office 365 ProPlus への移行を計画しているときには、好都合なことに、過去 10 年間に作成されたアプリケーションのほとんどが Windows 10 で稼働するものであり、組織が Office 2010 以降の各バージョンで使用している COM アドインと VBA マクロは最新バージョンの Office でも変更なしで動作します。
+これまで、ユーザーのデスクトップをアップグレードする際には、アプリケーションとハードウェアの互換性が大きなハードルになっていました。Windows 10 および Microsoft 365 Apps for enterprise への移行を計画しているときには、好都合なことに、過去 10 年間に作成されたアプリケーションのほとんどが Windows 10 で稼働するものであり、組織が Office 2010 以降の各バージョンで使用している COM アドインと VBA マクロは最新バージョンの Office でも変更なしで動作します。
 
 そのため、組織の規模と歴史によっては、アプリケーションとハードウェアの互換性を検証することが、推奨される 8 フェーズの展開プロセスにおける重要な最初の手順になることがあります。
 
@@ -89,7 +89,7 @@ Desktop Analytics は、エージェントレス型のプロセスを使用し�
 
 Desktop Analytics を使用して、ブラウザーベースの互換性の問題を評価することもできます。ユーザーがアクセスする Web サイトおよび Web アプリのうち、Active X コントロール、Browser Helper Objects、VBScript、または Microsoft Edge ブラウザーでサポートされていないその他の従来のテクノロジを依然として使用しているものを特定します。 ユーザーは、そのようなサイトに対しては引き続き Internet Explorer 11 を使用する必要があります。また、Enterprise Mode Site List Manager を使用し、[エンタープライズ モード サイト リスト](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)にサイトを追加することができます。
 
-さらに、Office 365 ProPlus への移行を円滑に進めるために、[Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) を利用して、アドインと Microsoft Visual Basic for Applications (VBA) マクロの互換性をテストすることもできます。
+さらに、Microsoft 365 Apps for enterprise への移行を円滑に進めるために、[Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) を利用して、アドインと Microsoft Visual Basic for Applications (VBA) マクロの互換性をテストすることもできます。
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -110,12 +110,12 @@ Configuration Manager ソフトウェア インベントリは、クラウドベ
 
 ## <a name="app-assure"></a>App Assure
 
-Windows 10 と Office 365 ProPlus アプリの互換性を支援する別のツールは、FastTrack Center から入手できる、[App Assure](https://aka.ms/appassure) プログラムです。 有効なアプリケーションの問題が発生した場合でも、Microsoft のエンジニアと協力して、App Assure を通して追加料金なしでアプリケーションの非互換性を修復できます。
+Windows 10 と Microsoft 365 Apps for enterprise アプリの互換性を支援する別のツールは、FastTrack Center から入手できる、[App Assure](https://aka.ms/appassure) プログラムです。 有効なアプリケーションの問題が発生した場合でも、Microsoft のエンジニアと協力して、App Assure を通して追加料金なしでアプリケーションの非互換性を修復できます。
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>診断データ ツールの継続的な使用
 
-Desktop Analytics は、Windows 10 および Office 365 ProPlus への移行に役立つだけのツールではありません。 デスクトップで Windows 10 と Office 365 を実行するようになれば、Desktop Analytics を用いて、半期ごとの機能更新プログラムの展開と管理を行って最新の状態を保つことができます。
+Desktop Analytics は、Windows 10 および Microsoft 365 Apps for enterprise への移行に役立つだけのツールではありません。 デスクトップで Windows 10 と Office 365 を実行するようになれば、Desktop Analytics を用いて、半期ごとの機能更新プログラムの展開と管理を行って最新の状態を保つことができます。
 
 ## <a name="next-step"></a>次の手順 
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[手順 2: ディレクトリとネットワークの準備](https://aka.ms/mdd2)
+## <a name="step-2-directory-and-network-readiness"></a>[手順 2: ディレクトリとネットワークの準備](https://aka.ms/mdd2)
