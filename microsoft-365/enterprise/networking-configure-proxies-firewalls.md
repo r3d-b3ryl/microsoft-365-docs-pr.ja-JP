@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Office 365 が稼働している信頼できる場所にトラフィックをバイパスするのに必要となる Web ブラウザーとエッジ デバイスについて理解し、構成します。
-ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504081"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583395"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>手順 4: トラフィック バイパスを構成する
 
@@ -61,6 +61,8 @@ Microsoft では、次の方法を推奨しています。
 スプリット トンネリングは、VPN 接続でトラフィックをイントラネットに送信するのではなく、指定したトラフィックをインターネット経由でルーティングする VPN 接続の機能です。 リモート ワーカーが Teams、SharePoint Online、Exchange Online などの極めて重要な Microsoft 365 サービスに最適なパフォーマンスでアクセスできるようにするには、トラフィックを最適化カテゴリの Office 365 エンドポイントにインターネット経由で直接送信するように、スプリット トンネリング VPN 接続を構成します。 
 
 詳細については、[VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)をご覧ください。
+
+Microsoft のグローバルネットワークのエントリポイントまでの距離と、組織のネットワークが ISP に接続するポイントまでの距離をテストするには、[Office 365 ネットワーク オンボードツール](https://connectivity.office.com/)を使用します。
 
 中間チェックポイントとして、この手順の[終了条件](networking-exit-criteria.md#crit-networking-step4)を確認できます。
 

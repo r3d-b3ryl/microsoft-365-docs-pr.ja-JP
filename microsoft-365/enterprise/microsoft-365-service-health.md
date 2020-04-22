@@ -3,7 +3,7 @@ title: Microsoft 365 サービス正常性の状態
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 サービス正常性の状態
-ms.openlocfilehash: c1b938a91b4f0e43e51595ec877e57e7654c5232
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 26a9983528072054606cc399ad871d0f99fd22fb
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540811"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583359"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 ネットワーク正常性の状態
 
@@ -37,7 +37,7 @@ Microsoft のグローバル ネットワーク内、またはお客様と Micro
 
 | 場所 | 問題の種類 | 詳細 |
 | --- | --- | --- |
-| メキシコ | ISP インフラストラクチャ(外部) | メキシコのインターネット サービス プロバイダー インフラストラクチャで可用性の問題が検出されると、Microsoft 365 のユーザーエクスペリエンスが低下する可能性があります。 詳細については、サービス正常性ダッシュボードを確認してください。 |
+| 現在、問題はありません | | |
 
 ## <a name="recommendations-to-improve-network-experience"></a>ネットワーク エクスペリエンスを向上させるための推奨事項
 
