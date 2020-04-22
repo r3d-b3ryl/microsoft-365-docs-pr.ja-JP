@@ -1,5 +1,5 @@
 ---
-title: Office 365 のプロセスモジュールの結果の表示の詳細電子情報開示
+title: アドバンスド電子情報開示でのプロセスモジュールの結果の表示
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'タスクの状態とプロセスの概要を含む、Office 365 のアドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。  '
-ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'タスクの状態とプロセスの概要を含む、アドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。  '
+ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557605"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626313"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>アドバンスド電子情報開示でのプロセスモジュールの結果の表示 (クラシック)
 
@@ -32,7 +32,7 @@ ms.locfileid: "42557605"
   
 ## <a name="process-task-status"></a>タスクの進捗状況を処理する
 
-[ **** \> **** 処理\>の準備] で、次の例に示すよう**に、ページ**に現在の状態 (プロセスが実行中の場合) または最後のプロセスの状態タスクの状態が表示されます。
+[ **Prepare** \> **Process**処理\>の準備] で、次の例に示すよう**に、ページ**に現在の状態 (プロセスが実行中の場合) または最後のプロセスの状態タスクの状態が表示されます。
   
 ![プロセス モジュールのタスクの進捗状況](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -110,7 +110,7 @@ ms.locfileid: "42557605"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [プロセスモジュールの実行とデータの読み込み](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

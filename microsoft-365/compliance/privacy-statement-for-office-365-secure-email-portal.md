@@ -1,5 +1,5 @@
 ---
-title: Office 365 セキュリティで保護された電子メールポータルのプライバシーに関する声明
+title: セキュリティで保護された電子メールポータルのプライバシーに関する声明
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: '最終更新日: 2017 年5月'
-ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597723"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626631"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Office 365 セキュリティで保護された電子メールポータルのプライバシーに関する声明
+# <a name="privacy-statement-for-secure-email-portal"></a>セキュリティで保護された電子メールポータルのプライバシーに関する声明
 
 最終更新日: 2017 年5月
   
@@ -37,7 +37,7 @@ Microsoft アカウント、職場または学校のアカウント、または 
   
 復号化プロセスでは、受信した暗号化されたメールは、新しい OME capabilities ポータルによって保存されません。常に新しい OME 機能ポータルの外部に送信されることはありません。
   
-場合によっては、新しい OME 機能ポータルで、新しい OME 機能の使用とパフォーマンスに関するデータポイントを収集することがあります (たとえば、暗号化されたメッセージを表示する頻度、使用されているブラウザーまたはアプリ、および検出されたエラー)。この他の Microsoft アプリ、製品、またはサービスの品質、セキュリティ、および整合性を向上させるために集計します。 この情報は、広告の特定、連絡先、または送信先には使用されません。
+場合によっては、新しい OME 機能ポータルで、新しい OME 機能の使用とパフォーマンスに関するデータポイントを収集することがあります (たとえば、暗号化されたメッセージを表示する頻度、使用されているブラウザーまたはアプリ、発生したエラーなど)、この他の Microsoft アプリ、製品の品質、セキュリティ、および整合性を向上させるために、またはサービス。 この情報は、広告の特定、連絡先、または送信先には使用されません。
   
 ## <a name="for-more-information"></a>詳細情報
 

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'さまざまな地域の Microsoft 365 for business サブスクリプションに対して請求される税の量を確認します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635006"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708133"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -94,7 +94,7 @@ Microsoft を介してなされた Microsoft 365 管理センターの購入に�
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
 
-欧州連合 (EU) 域内で Office 365 のサービスを購入すると、その購入は付加価値税 (VAT) の対象となります。
+欧州連合で Microsoft 365 サービスを購入すると、この購入は付加価値税 (VAT) の対象となります。
   
 - 購入者が EU 加盟国に所在しているが、その国での有効な VAT ID を提示しなかった場合は、Microsoft Ireland Operations Ltd. によって、アカウントが設定されている請求先の国に基づいて、その時点の地域の VAT 税率が適用されます。
 
@@ -154,7 +154,7 @@ Microsoft を介してなされた Microsoft 365 管理センターの購入に�
 
 アメリカ合衆国とカナダでは、所在場所に応じて、さまざまな税率が適用されます。プエルトリコでは、ローカルな付加価値税 (VAT) 額が適用されます。
   
-請求元が Microsoft Corporation で ([請求書に記載されています](view-your-bill-or-invoice.md))、購入者が Office 365 へのサインアップをアメリカ合衆国、カナダ、プエルトリコ以外の国で行った場合は、基本的に課税対象外となります。
+Microsoft Corporation ([請求書を参照](view-your-bill-or-invoice.md)) に請求が行われており、米国、カナダ、およびプエルトリコの外部で microsoft 365 にサインアップした場合は、通常、税は請求されません。
 
 ## <a name="how-taxes-are-calculated"></a>税の計算方法
 

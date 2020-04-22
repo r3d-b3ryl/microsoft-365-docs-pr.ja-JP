@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示の結果に基づく決定
+title: 高度な電子情報開示の結果に基づく決定
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Office 365 の Advanced eDiscovery の [判断] タブで、ケースファイルのレビューセットの適切なサイズを決定するのに役立つデータを提供する方法について説明します。 '
-ms.openlocfilehash: 6d515305b01b0273bb2acffaad19c497fc5c82d2
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '上級電子情報開示の [決定] タブで、ケースファイルのレビューセットの適切なサイズを決定するのに役立つデータを提供する方法について説明します。 '
+ms.openlocfilehash: 279b689e830089c683b8cd575a231635ca32de76
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557545"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630574"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>高度な電子情報開示の結果に基づく決定 (クラシック)
 
@@ -55,7 +55,7 @@ ms.locfileid: "42557545"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [関連性の評価について](assessment-in-relevance-in-advanced-ediscovery.md)
   

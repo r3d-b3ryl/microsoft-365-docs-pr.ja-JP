@@ -15,12 +15,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: この記事に記載されている Windows PowerShell スクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで既存のコンテンツ検索をすばやく複製します。 検索を複製すると、元の検索と同じプロパティを含む新しい検索 (新しい名前) が作成されます。 その後、キーワードクエリまたは日付範囲を変更して新しい検索を編集し、それを実行します。
-ms.openlocfilehash: 59fdaab7cf12bc0f5c4b08cbac1834803e5a8d98
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13a459cabd7febe3daf5c907e89025185821e835
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595884"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637495"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 
@@ -50,7 +50,7 @@ Office 365 または Microsoft 365 のコンプライアンスセンターで、
 
 この手順のスクリプトでは、既存のコンテンツ検索を複製して新しいコンテンツ検索を作成します。 このスクリプトを実行すると、次の情報を求めるメッセージが表示されます。
   
-- **ユーザーの資格情報**-スクリプトは、資格情報を使用して、Windows PowerShell を使用して Office 365 組織のセキュリティ & コンプライアンスセンターに接続します。 前述したように、スクリプトを実行するには、セキュリティ & compCompliance センターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
+- **ユーザーの資格情報**-スクリプトは、資格情報を使用して、組織のセキュリティ & コンプライアンスセンターに Windows PowerShell に接続します。 前述したように、スクリプトを実行するには、セキュリティ & compCompliance センターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
     
 - **既存の検索の名前**。これは、複製するコンテンツ検索です。 
     
@@ -61,7 +61,7 @@ Office 365 または Microsoft 365 のコンプライアンスセンターで、
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `CloneSearch.ps1`のようになります。
     
   ```powershell
-  # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
+  # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.
   # Get login credentials from the user
   if(!$UserCredential)
   {

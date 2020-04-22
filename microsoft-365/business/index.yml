@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium のリソース
-summary: Microsoft 365 Business Premium は、Office 365 の生産性向上ツールに加えて、ビジネスを脅威から保護し、データを保護し、デバイスを管理するための高度な機能を備えたサブスクリプションサービスです。
+summary: Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員の数が300人未満の企業向けの包括的なサブスクリプションサービスです。 高度なセキュリティとデバイスの管理機能を備えた Microsoft Teams のような、お気に入りの Office 生産性向上アプリとサービスおよびコラボレーションツールが統合されています。
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium のリソース
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 29504ca22db443c504a5f3265ca2e8fcba0f737e
-  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+  ms.openlocfilehash: 59478fceee0017321c59607f589fe464ac95077d
+  ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2020
-  ms.locfileid: "43627112"
+  ms.lasthandoff: 04/22/2020
+  ms.locfileid: "43665622"
 productDirectory:
   title: Microsoft 365 Business Premium を使用したリモート作業のセキュリティ保護
   items:

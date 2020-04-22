@@ -1,5 +1,5 @@
 ---
-title: Office 365 の非アクティブなメールボックスを削除する
+title: 非アクティブなメールボックスを削除する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
-description: Office 365 の非アクティブなメールボックスの内容を保持する必要がなくなった場合は、保留リストを削除することによって、非アクティブなメールボックスを完全に削除することができます。 ホールドを削除すると、非アクティブなメールボックスは削除するようにマークされ、処理された後は完全に削除されます。
-ms.openlocfilehash: 69628a0e3c39a0a842b2efa58c34b75c7663c728
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+description: Microsoft 365 の非アクティブなメールボックスの内容を保持する必要がなくなった場合は、保留リストを削除することによって、非アクティブなメールボックスを完全に削除することができます。 ホールドを削除すると、非アクティブなメールボックスは削除するようにマークされ、処理された後は完全に削除されます。
+ms.openlocfilehash: fafedd1ccf78c3e763c9e02dc37c594d8f2c9785
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978257"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630534"
 ---
-# <a name="delete-an-inactive-mailbox-in-office-365"></a>Office 365 の非アクティブなメールボックスを削除する
+# <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
-An inactive mailbox is used to preserve a former employee's email after he or she leaves your organization. When you no longer need to preserve the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. Also, it's possible that multiple holds might be placed on an inactive mailbox. For example, an inactive mailbox might be placed on Litigation Hold and on one or more In-Place Holds. さらに、Office 365 アイテム保持ポリシー (Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで作成されたもの) は、非アクティブなメールボックスに適用されることがあります。 You have to remove all holds and Office 365 retention policies from an inactive mailbox to delete it. After you remove the holds and retention policies, the inactive mailbox is marked for deletion and is permanently deleted after it's processed.
+An inactive mailbox is used to preserve a former employee's email after he or she leaves your organization. When you no longer need to preserve the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. Also, it's possible that multiple holds might be placed on an inactive mailbox. For example, an inactive mailbox might be placed on Litigation Hold and on one or more In-Place Holds. さらに、(Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで作成された) アイテム保持ポリシーは、非アクティブなメールボックスに適用されることがあります。 非アクティブなメールボックスを削除するには、保留リストとアイテム保持ポリシーをすべて削除する必要があります。 After you remove the holds and retention policies, the inactive mailbox is marked for deletion and is permanently deleted after it's processed.
   
 > [!IMPORTANT]
-> メールボックスのコンテンツを保持するためのさまざまな方法に投資し続けるので、Exchange 管理センターでのインプレースホールドの廃止を発表しています。 つまり、訴訟ホールドと Office 365 アイテム保持ポリシーを使用して、非アクティブなメールボックスを作成する必要があります。 2020年7月1日以降、Exchange Online に新しいインプレースホールドを作成することはできません。 ただし、非アクティブなメールボックスに設定されたインプレースホールドの保持期間を変更することはできます。 ただし、2020年10月1日以降、保持期間を変更することはできません。 インプレースホールドを削除しても、非アクティブなメールボックスを削除することはできません。 インプレース保持されている既存の非アクティブなメールボックスは、保留が解除されるまで保持されます。 インプレースホールドが廃止された場合の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
+> メールボックスのコンテンツを保持するためのさまざまな方法に投資し続けるので、Exchange 管理センターでのインプレースホールドの廃止を発表しています。 つまり、非アクティブなメールボックスを作成するには、訴訟ホールドとアイテム保持ポリシーを使用する必要があります。 2020年7月1日以降、Exchange Online に新しいインプレースホールドを作成することはできません。 ただし、非アクティブなメールボックスに設定されたインプレースホールドの保持期間を変更することはできます。 ただし、2020年10月1日以降、保持期間を変更することはできません。 インプレースホールドを削除しても、非アクティブなメールボックスを削除することはできません。 インプレース保持されている既存の非アクティブなメールボックスは、保留が解除されるまで保持されます。 インプレースホールドが廃止された場合の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
   
 保留リストが非アクティブなメールボックスから削除された結果の詳細については、「[More information](#more-information)」セクションを参照してください。
   
@@ -38,13 +38,13 @@ An inactive mailbox is used to preserve a former employee's email after he or sh
     
 - 非アクティブなメールボックスの内容は、ホールドを解除して、非アクティブなメールボックスを削除する前に別のメールボックスにコピーできます。 詳細については、「 [Office の非アクティブなメールボックスを復元する 365](restore-an-inactive-mailbox.md)」を参照してください。
     
-- 非アクティブなメールボックスからホールドまたは Office 365 アイテム保持ポリシーを解除すると、メールボックスの回復可能な削除によって削除されたメールボックスの保持期間の有効期限が切れていれば、メールボックスは完全に削除されます。 削除後に回復することはできません。 ホールドを解除する前に、メールボックスの中身が不要かどうかを確認してください。 非アクティブなメールボックスを再アクティブ化することが必要な場合、メールボックスを回復することは可能です。 詳細については、「 [Office 365 の非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)」を参照してください。
+- 非アクティブなメールボックスからホールドまたはアイテム保持ポリシーを削除すると、そのメールボックスの回復可能な削除によって削除されたメールボックスの保存期間が切れた場合、そのメールボックスは完全に削除されます。 削除後に回復することはできません。 ホールドを解除する前に、メールボックスの中身が不要かどうかを確認してください。 非アクティブなメールボックスを再アクティブ化することが必要な場合、メールボックスを回復することは可能です。 詳細については、「 [Office 365 の非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)」を参照してください。
     
 - 非アクティブなメールボックスの詳細については、「 [Office 365 の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
     
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>手順 1: 非アクティブなメールボックスに設定されているホールドを特定する
 
-前述のように、訴訟ホールド、インプレース ホールド、または Office 365 アイテム保持ポリシーが非アクティブなメールボックスに設定されていることがあります。最初の手順として、非アクティブなメールボックスのホールドを識別します。
+前述したように、非アクティブなメールボックスに訴訟ホールド、インプレースホールド、またはアイテム保持ポリシーを設定することができます。 最初の手順として、非アクティブなメールボックスのホールドを識別します。
   
 組織内のすべての非アクティブなメールボックスの保留リストの情報を表示するために、次のコマンドを実行します。
   
@@ -207,7 +207,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 - **非アクティブなメールボックスは、回復可能な削除によって削除されたメールボックスの一種です。** Exchange Onlineで、回復可能な削除によって削除されたメールボックスは、メールボックスが削除されてはいるものの、特定の保持期間内であれば回復することができます。Exchange Online で回復可能な削除によって削除されたメールボックスの保存期間は 30 日です。つまり、回復可能な削除によって削除されてから 30 日以内なら、メールボックスを復元できます。30 日が経過すると、回復可能な削除によって削除されたメールボックスは完全削除のマークが付けられ、回復できなくなります。 
     
-- **非アクティブなメールボックスに対する保留リストを削除した後はどうなりますか。** 非アクティブなメールボックスは、他の回復可能な削除によって削除されたメールボックスと同様に扱われ、回復可能な削除によって削除されたメールボックスの保持期間である 30 日が経過した後に完全削除のマークが付けられます。この保存期間は、メールボックスが最初に非アクティブになった日から始まります。この日付は、回復可能な削除によって削除された日付と呼ばれ、対応する Office 365 ユーザー アカウントが削除された日、またはExchange Online メールボックスが **Remove-Mailbox** コマンドレットを使用して削除された日になります。回復可能な削除によって削除された日は、保留リストを削除した日ではありません。 
+- **非アクティブなメールボックスに対する保留リストを削除した後はどうなりますか。** 非アクティブなメールボックスは、他の回復可能な削除によって削除されたメールボックスと同様に扱われ、回復可能な削除によって削除されたメールボックスの保持期間である 30 日が経過した後に完全削除のマークが付けられます。 この保存期間は、メールボックスが最初に非アクティブになった日から始まります。 この日付は、対応するユーザーアカウントが削除された日付、または**メールボックスの削除**コマンドレットを使用して Exchange Online メールボックスが削除された日付である、回復可能な削除日と呼ばれます。 回復可能な削除によって削除された日は、保留リストを削除した日ではありません。 
     
 - **ホールドを解除した直後に、非アクティブなメールボックスは完全に削除されますか。** 非アクティブなメールボックスが回復可能な削除によって削除された日付が 30 日より前であっても、ホールドを解除するとすぐにメールボックスが完全に削除されるということはありません。メールボックスに完全に削除するようマークが付けられ、次に処理されるときに削除されます。 
     

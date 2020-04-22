@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: セキュリティの既定値を使用してユーザーに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 4a829aa597596564b9c2f468e72f3a766b198372
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
+ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627682"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43665634"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
 > [!IMPORTANT]
-> 2019年10月21日以降にサブスクリプションまたは試用版を購入した場合に、MFA を予期せずに要求されると、サブスクリプションに対して[セキュリティの既定値](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)が自動的に有効になります。
+> 2019年10月21日以降にサブスクリプションまたは試用版を購入した場合に、多要素認証 (MFA) を予期せずに要求されると、サブスクリプションに対して[セキュリティの既定値](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)が自動的に有効になります。
 
-すべての新しい Microsoft 365 サブスクリプションのセキュリティの既定値が自動的に有効になります。 つまり、すべてのユーザーが多要素認証 (MFA) を設定し、モバイル デバイスに Authenticator アプリをインストールする必要があります。 詳細については、「 [Microsoft 365 の2段階認証をセットアップする](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)」を参照してください。  
+すべての新しい Microsoft 365 サブスクリプションの[セキュリティの既定値](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)が自動的に有効になります。 これは、すべてのユーザーが多要素認証 (MFA) を設定し、モバイルデバイスに Microsoft Authenticator アプリをインストールする必要があることを意味します。 詳細については、「 [Microsoft 365 アカウントの MFA を設定する](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)」を参照してください。
 
 サインインするたびに追加の認証を実行するには、次にあげる 9 個の管理者ロールが必要になります。
 
@@ -48,35 +48,30 @@ ms.locfileid: "43627682"
 - ユーザー管理者
 - 認証管理者
 
-他のすべてのユーザーは、必要に応じて追加認証を求められます。 詳細については、「[セキュリティの既定値とは](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
+他のすべてのユーザーは、必要に応じて追加認証を求められます。
 
 > [!NOTE]
-> 多要素認証を設定または変更するには、グローバル管理者である必要があります。 <br><br>
+> MFA を設定または変更するには、グローバル管理者である必要があります。 <br><br>
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-以前にベースライン ポリシーを使用して MFA をセットアップしている場合は、[それらをオフにして、セキュリティの既定値をオンにする必要があります](#move-from-baseline-policies-to-security-defaults)。 ただし、Microsoft 365 Business を所有している場合、またはサブスクリプションに [Azure Active Directory Premium 1、または Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/) が含まれている場合は、[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) ポリシーを設定することもできます。 条件付きアクセスポリシーを使用するには、[先進認証](#enable-modern-authentication-for-your-organization)が有効になっていることを確認する必要があります。
+以前にベースラインポリシーを使用して MFA をセットアップしている場合は、[セキュリティの既定値を有効にするために、これらの機能をオフにする必要があり](#move-from-baseline-policies-to-security-defaults)ます。 ただし、Microsoft 365 Business またはサブスクリプションに[Azure Active Directory Premium P1 または Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/)が搭載されている場合は、[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)ポリシーを設定することもできます。 条件付きアクセスポリシーを使用するには、セキュリティの既定値を無効にし、[先進認証](#enable-modern-authentication-for-your-organization)が有効になっていることを確認する必要があります。
 
 > [!TIP]
-> ユーザーに Authenticator アプリをセットアップする方法を説明するには、「[Office 365 で Microsoft Authenticator を使用する](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1)」をご覧ください。
+> Microsoft Authenticator アプリをセットアップする方法をユーザーに説明するには、「 [office 365 で Microsoft authenticator を使用](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411)する」を参照してください。
 
 ## <a name="manage-security-defaults"></a>セキュリティの既定値の管理
 
 1. グローバル管理者の資格情報を使用して、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)にサインインします。
-2. [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) にアクセスします。
+2. [ [Azure Active Directory-プロパティ] ページ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)に移動します。
 3. ページの下部で、[**セキュリティの既定値の管理**] を選択します。
-4. セキュリティの規定値を有効にするには [**はい**] を選択し、セキュリティの規定値を無効にするには [**いいえ**] を選択します。
+4. [**はい]** を選択して**セキュリティの既定**値を有効にし、セキュリティの既定値を無効にして [**保存**] を選択します。
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>ベースライン ポリシーからセキュリティの既定値に移行する
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=834822)で、[**設定**] を選択します。
-
-2. [**サインインとセキュリティ**] の横の [**サインインのセキュリティを強化する**] で [**表示**] を選択します。
-
-3. [**サインインのセキュリティを強化する**] で、[**管理**] を選択します。 
-
-4. [**条件付きアクセスポリシー** ] ページで、にある各基準ポリシーを選択し、 **[****オフ**] に設定します。
-5. [[Azure Active Directory のプロパティ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)] ページにアクセスします。
-6. ページの下部にある [セキュリティの**既定の管理**] をクリックし、[**セキュリティ**の既定値を有効にする] ウィンドウで、[**セキュリティの既定値を有効**にする] を [**はい**] に設定して、[**保存**] を選択します。 
+1. [[条件付きアクセスポリシー] ページ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)に移動します。
+2. 有効になっているそれぞれ**の**ベースラインポリシーを選択し、[**ポリシーの有効化**] を [**オフ**] に設定します。
+3. [ [Azure Active Directory-プロパティ] ページ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)に移動します。
+4. ページの下部にある [セキュリティの**既定の管理**] をクリックし、[**セキュリティ**の既定値を有効にする] ウィンドウで、[**セキュリティの既定値を有効**にする] を [**はい**] に設定して、[**保存**] を選択します。 
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>組織の先進認証を有効にする
 

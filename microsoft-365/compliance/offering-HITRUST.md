@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628103"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637991"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 
@@ -45,18 +45,18 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - Intune
 - [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
+## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
 
 Azure と Office 365 の HITRUST CSF 証明書は、2年間有効です。
 
-- [Azure HITRUST レターの証明書](https://aka.ms/AzureHiTrustLetterofCertification)
+- [Azure HITRUST レターの証明書](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 - [Office 365 HITRUST レターの証明書](https://aka.ms/O365HITRUSTcertification)
 
-## <a name="accelerate-your-deployment-of-hipaahitrust-solutions-on-azure"></a>Azure での HIPAA/HITRUST ソリューションの展開を促進する
+## <a name="accelerate-your-deployment-of-hipaahitrust-solutions-on-azure"></a>Azure での HIPAA/HITRUST ソリューションの展開を加速する
 
-Azure のセキュリティとコンプライアンスに関するブループリント (HIPAA/HITRUST Health データと AI) を使用した正常性データソリューションのクラウドのメリットの活用について、すぐに開始できます。 この青写真は、今日の HIPAA/HITRUST ソリューションの構築を開始するのに役立つツールとガイダンスを提供します。
+Azure のセキュリティとコンプライアンスのブループリント (HIPAA/HITRUST 健康データおよび AI) を使用して、健康データ ソリューション向けのクラウドの利点を活用する上での有利なスタートを切りましょう。 このブループリントは、HIPAA/HITRUST ソリューションの構築を今日から始めるためのツールとガイダンスを提供します。
 
-[Azure HIPAA/HITRUST ブループリントの使用を開始する](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
+「[Start using the Azure HIPAA/HITRUST Blueprint (Azure HIPAA/HITRUST ブループリントの使用を開始する)](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)」
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Office 365 を使用する際に HIPAA/HITRUST 準拠を促進する
 
@@ -66,7 +66,7 @@ Office 365 を使用して、コンプライアンススコアを使用してセ
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>HITRUST 共有責任プログラムで Microsoft と共同作業する
 
-HITRUST MyCSF ツールで Azure の完全に継承または共有の責任の制御を使用して評価を事前に設定することにより、Microsoft Azure でホストされているソリューションの HITRUST 準拠の実現を促進し、Microsoft との共同作業を評価.
+HITRUST MyCSF ツールで、Azure の完全に継承または共有の責任の制御を使用して評価を事前に設定することにより、Microsoft Azure でホストされているソリューションの HITRUST 準拠の実現を促進します。また、評価に関して Microsoft と共同作業を行います。
 
 [詳細情報](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 
@@ -78,14 +78,14 @@ HITRUST MyCSF ツールで Azure の完全に継承または共有の責任の�
 
 **HITRUST 証明書のコピーを取得するにはどうすればよいですか?**
 
-[Azure](https://aka.ms/AzureHiTrustLetterofCertification)および[Office 365](https://aka.ms/O365HITRUSTcertification)用の証明書レターのコピーをダウンロードできます。
+[Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)および[Office 365](https://aka.ms/O365HITRUSTcertification)用の証明書レターのコピーをダウンロードできます。
 
 **Office 365 の範囲内のサービスとは何ですか。**
 
-HITRUST CSF 認定のスコープ内サービスには、Exchange Online アーカイブ、Exchange Online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、MicrosoftTeams、office ProPlus in Office 365 マルチテナントクラウドおよび Office 365 GCC。
+HITRUST CSF 認定のスコープ内サービスには、Exchange Online のアーカイブ、Exchange Online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft Teams、office ProPlus in Office 365 マルチテナントクラウドおよび Office 365 GCC があります。
 
 > [!NOTE]
-> Office 365 ProPlus を使用すると、ローミング設定、ライセンス、OneDrive コンシューマークラウドストレージなどのさまざまなクラウドサービスへのアクセスが可能になり、将来的に追加のクラウドサービスにアクセスできるようになります。 ローミングの設定とライセンスは、HITRUST の標準をサポートします。 OneDrive コンシューマークラウドストレージではサポートされておらず、Office 365 ProPlus を介してアクセスできるその他のクラウドサービスも今後提供される可能性があるため、Microsoft はこれらの標準をサポートしていない場合もあります。 *
+> Microsoft 365 enterprise 用アプリは、ローミング設定、ライセンス、OneDrive コンシューマークラウドストレージなどのさまざまなクラウドサービスへのアクセスを可能にし、将来、追加のクラウドサービスへのアクセスを可能にする場合があります。 ローミングの設定とライセンスは、HITRUST の標準をサポートします。 OneDrive コンシューマークラウドストレージではサポートされていません。また、microsoft が将来的に提供する可能性があるその他のクラウドサービスで365は、これらの標準をサポートしていない場合もあります。 *
 
 **一部の Office 365 サービスがこの証明書の範囲に含まれていないのはなぜですか?**
 
@@ -106,10 +106,10 @@ HITRUST MyCSF®ツールにログインして、Microsoft Azure でホストさ�
 ## <a name="resources"></a>リソース
 
 - [HITRUST アライアンス](https://hitrustalliance.net/)
-- [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)
+- [HITRUST CSF 9.3](https://hitrustalliance.net/csf-license-agreement/)
 - [CSF の理解と活用](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [HITRUST 共有責任プログラムの詳細については、「」を参照してください。](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 

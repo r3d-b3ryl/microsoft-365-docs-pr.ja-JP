@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 一般法人向けサブスクリプションの支払い方法を更新する方法について説明します。
-ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632733"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708157"
 ---
 # <a name="change-your-payment-method"></a>支払方法を変更する
 
@@ -80,13 +80,13 @@ ms.locfileid: "43632733"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>請求書からクレジット カードまたは銀行口座に変更する
 
 > [!TIP]
 > 次の手順は個別のサブスクリプションにのみ適用されます。組織にサブスクリプションが複数存在する場合、変更するサブスクリプションごとに手順を実行します。
   
 請求書払いからクレジット カードまたは銀行口座払いに変更すると、自動的に新しいサブスクリプションが作成され、ユーザーが新しいサブスクリプションに移動します。その後、古いサブスクリプションが無効になります。 ユーザーはサービスの中断に気付かないので、心配は無用です。すべての情報は新しいサブスクリプションで利用できます。
-
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
 
@@ -102,10 +102,10 @@ ms.locfileid: "43632733"
   
 7. 選択した支払い方法が正しいことを確認し、[**保存**] を選択します。
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>請求書からクレジット カードに変更する
 
 > [!TIP]
@@ -136,21 +136,21 @@ ms.locfileid: "43632733"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>クレジット カードまたは銀行口座から請求書に変更する
 
 注文が特定の数量以上であれば、請求書による支払いに変更できます。 要件を満たしていない場合は、「お客様の注文数量が、小切手送金の請求書に必要な大きさではありません」というメッセージが表示されます。
 
 注文数量が多すぎる場合は、与信審査が必要になることがあります。 その場合は、"請求書に変更する資格がありません" というメッセージが表示されます。 ご注文はクレジットの確認が必要です。 この場合、請求書の手動での支払いに変更します。 次の手順を使用して、手動の変更を完成させます。
 
-
 1. <a href="https://Office365.com" target="_blank">Office365.com</a> に移動して、現在お持ちのものと同じサブスクリプションを購入します。 チェックアウト時に、請求書による支払いオプションを選択します。
 
-> [!IMPORTANT]
-> 管理センターの [**製品 & サービス**] ページを使用してサブスクリプションを購入することはできません。 <a href="https://Office365.com" target="_blank">Office365.com</a> を使用する必要があります。
+    > [!IMPORTANT]
+    > 管理センターの [**製品 & サービス**] ページを使用してサブスクリプションを購入することはできません。 <a href="https://Office365.com" target="_blank">Office365.com</a> を使用する必要があります。
 
 2. 購入が完了したら、元のサブスクリプションをキャンセルします。 ユーザーが自動的に新しいサブスクリプションに移動します。
 
-貸方の確認が必要ない場合は、次の手順を使用して、請求書による支払いに変更します。 
+貸方の確認が必要ない場合は、次の手順を使用して、請求書による支払いに変更します。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
 
@@ -168,14 +168,14 @@ ms.locfileid: "43632733"
 
 8. 選択した支払い方法が正しいことを確認し、[**保存**] を選択します。
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>クレジット カードまたは銀行口座から請求書に変更する
 
 > [!NOTE]
-> 請求書で支払うオプションは、サブスクリプションの料金が一定の金額を超えた場合に限られます (サービスの提供場所によって異なります)。 請求書支払の金額が大きい場合、与信確認が必要になることがあります。 詳細については、「[一般法人向け Office 365 の請求書またはクレジット カードによる支払い方法](pay-for-your-subscription.md)」を参照してください。
+> 請求書で支払うオプションは、サブスクリプションの料金が一定の金額を超えた場合に限られます (サービスの提供場所によって異なります)。 請求書支払の金額が大きい場合、与信確認が必要になることがあります。 詳細については、「[サブスクリプションの支払い](pay-for-your-subscription.md)」を参照してください。
 
 1. 管理センターの [**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
@@ -193,10 +193,10 @@ ms.locfileid: "43632733"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="verify-which-payment-method-is-configured"></a>構成されている支払い方法を確認する
 
 サブスクリプションに構成されている支払い方法を次の手順でいつでも確認できます。
-
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
 
@@ -211,6 +211,7 @@ ms.locfileid: "43632733"
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="verify-which-payment-method-is-configured"></a>構成されている支払い方法を確認する
 
 サブスクリプションに構成されている支払い方法を次の手順でいつでも確認できます。

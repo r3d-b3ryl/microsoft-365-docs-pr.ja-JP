@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb667cdf13ed8ed6777f454b8fa3e21342f90272
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: d5a6ee0b5ca5c9ba1fbf83f1076940a10134a9f6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222089"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583594"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Federal Risk and Authorization Management Program (FedRAMP)
 
 ## <a name="fedramp-overview"></a>FedRAMP の概要
 
-米国連邦リスクおよび承認管理プログラム (FedRAMP) は、連邦情報セキュリティ管理法 () でのクラウドコンピューティング製品およびサービスの評価、監視、承認のための標準化されたアプローチを提供するために確立されました (FISMA) と、連邦機関による安全なクラウドソリューションの導入を促進します。
+米国連邦リスクおよび承認管理プログラム (FedRAMP) は、連邦情報セキュリティ管理法 (FISMA) でのクラウドコンピューティング製品とサービスの評価、監視、承認のための標準化されたアプローチを提供し、連邦機関による安全なクラウドソリューションの導入を促進するために確立されました。
 
 管理および予算の事務所では、すべてのエグゼクティブ連邦機関が FedRAMP を使用して、クラウドサービスのセキュリティを検証する必要があります。 (他の機関もその機能を採用しているため、公共の部門の他の分野でも役立ちます)。米国標準技術局 (NIST) 800-53 は標準を設定し、FedRAMP は、クラウドサービスプロバイダー (CSP) がその標準に適合していることを認定するプログラムです。
 
@@ -35,9 +35,9 @@ FedRAMP 承認は、NIST ガイドライン (低、中、高) に基づく3つ�
 
 ## <a name="microsoft-and-fedramp"></a>Microsoft と FedRAMP
 
-Microsoft の官公庁クラウドサービス (Azure Government、Office 365 米国政府、および Dynamics 365 Government を含む) は米国連邦リスクおよび承認管理プログラム (FedRAMP) の要求要件を満たしており、米国連邦政府機関を有効にします。Microsoft クラウドのコスト削減と厳密なセキュリティによる恩恵を受けることができます。
+Microsoft の官公庁クラウドサービス (Azure Government、Office 365 米国政府、および Dynamics 365 Government を含む) は米国連邦リスクおよび承認管理プログラム (FedRAMP) の要求要件を満たしており、米国連邦政府機関は、Microsoft クラウドのコスト削減と厳密なセキュリティによる恩恵を受けることができます。
 
-Microsoft government cloud service では、公的機関のお客様に、FedRAMP に準拠した豊富なサービスを提供しています。これにより、展開を自動化するための Azure セキュリティとコンプライアンスの青写真を含む、強力なガイダンスおよび実装ツールが提供されます。および FedRAMP 環境での Azure リソースの構成。
+Microsoft government cloud service は、公的機関のお客様に、fedramp に準拠した豊富なサービスを提供しており、fedramp 環境での Azure リソースの展開と構成を自動化するのに役立つ、強力なガイダンスと実装ツールです。
 
 Microsoft クラウドでの FEDRAMP の利点について説明します。 [fedramp コンプライアンス backgrounder をダウンロードし](https://aka.ms/fedramp-backgrounder)てください。
 
@@ -78,7 +78,7 @@ ATO が付与されている場合でも、CSP には、使用しているすべ
 > [!NOTE]
 > Azure Government で Azure Active Directory を使用するには、azure パブリッククラウドに Azure Government の外部に展開されているコンポーネントを使用する必要があります。
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
+## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
 
 Microsoft は、ATO と ATOs を維持するために、各年にクラウドサービスを recertify する必要があります。 そのためには、Microsoft はセキュリティ制御を継続的に監視して評価する必要があり、サービスのセキュリティが準拠していることを示します。
 
@@ -120,7 +120,3 @@ FISMA は、FISMA 要件に準拠している組織からのみ情報システ�
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [FedRAMP セキュリティ評価フレームワーク](https://go.microsoft.com/fwlink/p/?linkid=2099507)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf) ファイルをダウンロードできます。

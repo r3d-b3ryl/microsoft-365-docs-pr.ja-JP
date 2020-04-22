@@ -1,5 +1,5 @@
 ---
-title: 共有を監査して外部ユーザーと共有されているリソースを見つける
+title: 監査ログで共有監査を使用する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、Office 365 監査ログで共有監査を使用して、組織外のユーザーと共有しているリソースを識別できるようになりました。 '
-ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、監査ログで共有監査を使用して、組織外のユーザーと共有しているリソースを識別できるようになりました。 '
+ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069241"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626383"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>共有を監査して外部ユーザーと共有されているリソースを見つける
+# <a name="use-sharing-auditing-in-the-audit-log"></a>監査ログで共有監査を使用する
 
-共有は、SharePoint Online と OneDrive for business の主要なアクティビティであり、Office 365 組織で広く使用されています。 管理者は、Office 365 監査ログで共有監査を使用して、組織での共有の使用方法を決定できます。 
+共有は、SharePoint Online と OneDrive for business の主要なアクティビティであり、組織で広く使用されています。 管理者は監査ログで共有監査を使用して、組織での共有の使用方法を決定できます。 
   
 ## <a name="the-sharepoint-sharing-schema"></a>SharePoint 共有スキーマ
 
@@ -41,13 +41,13 @@ ms.locfileid: "42069241"
 
 - **Targetuserorgroupname:** リソースが共有されていたターゲットユーザーまたはグループの UPN または名前を格納します (前の例では User B)。 
 
-これら2つのフィールドは、ユーザー、操作、日付などの Office 365 監査ログスキーマの他のプロパティに加えて、*どの*ユーザーがどのリソースを*どのよう*な*とき*に*共有した*かについての完全なストーリーを伝えることができます。 
+ユーザー、操作、日付などの監査ログスキーマの他のプロパティに加えて、これらの2つのフィールドには、*どの*ユーザーがどのリソースを*どのよう*な*とき*に*共有し*たかについての完全なストーリーを伝えることができます。 
   
 共有ストーリーにとって重要なスキーマプロパティは他にもあります。 監査ログの検索結果をエクスポートすると、エクスポートされた CSV ファイルの**Auditdata**列に、共有イベントに関する情報が保存されます。 たとえば、ユーザーが別のユーザーとサイトを共有する場合は、ターゲットユーザーを SharePoint グループに追加することによって実現します。 **Auditdata**列は、管理者向けにコンテキストを提供するために、この情報を取り込みます。 **Auditdata**列の情報を解析する手順については、[手順 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log)を参照してください。
 
 ## <a name="sharepoint-sharing-events"></a>SharePoint 共有イベント
 
-共有は、ユーザー (*動作*しているユーザー) が別のユーザー (*ターゲット*ユーザー) とリソースを共有しようとしたときに定義されます。 外部ユーザーとのリソースの共有に関連する監査レコード (組織外のユーザーが組織の Azure Active Directory にゲストアカウントを持っていない場合) は、Office 365 に記録されている次のイベントによって識別されます。監査ログ:
+共有は、ユーザー (*動作*しているユーザー) が別のユーザー (*ターゲット*ユーザー) とリソースを共有しようとしたときに定義されます。 外部ユーザーとのリソースの共有に関連する監査レコード (組織外のユーザーが組織の Azure Active Directory にゲストアカウントを持っていない場合) は、監査ログに記録されている次のイベントによって識別されます。
 
 - **SharingInvitationCreated:** 組織内のユーザーが外部ユーザーとリソース (通常はサイト) を共有しようとしました。 この結果、外部共有への招待がターゲットユーザーに送信されます。 この時点では、リソースへのアクセスは許可されません。
 
@@ -93,11 +93,11 @@ ms.locfileid: "42069241"
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>手順 1: 共有イベントを検索し、結果を CSV ファイルにエクスポートする
 
-最初の手順として、Office 365 監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「[セキュリティ & のコンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+最初の手順として、監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「[セキュリティ & のコンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
+2. 職場または学校のアカウントを使用してサインインします。
     
 3. セキュリティ/コンプライアンス センターの左側のウィンドウで、[**検索**]   >  [**監査ログの検索**] の順にクリックします。
     
@@ -115,7 +115,7 @@ ms.locfileid: "42069241"
     
     [エクスポート] オプションを選択すると、ウィンドウの下部にメッセージが表示され、CSV ファイルを開いたり保存したりするように求められます。
     
-8. [名前を付け**て**保存] をクリックし、CSV ファイルをローカルコンピューター上のフォルダーに保存します。 **** \> 
+8. [名前を付け**て**保存] をクリックし、CSV ファイルをローカルコンピューター上のフォルダーに保存します。 **Save** \> 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>手順 2: PowerQuery Editor を使用して、エクスポートされた監査ログを書式設定する
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 のタグ付けと評価の高度な電子情報開示
+title: 高度な電子情報開示でのタグ付けと評価
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: '評価トレーニングを実行する手順を確認します。これには、ファイルのタグ付け、Office 365 Advanced eDiscovery の評価結果の確認が含まれます。 '
-ms.openlocfilehash: 04f88a5efbd48c222c8c7033d94ae41634a06d99
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '評価トレーニングを実行する手順を確認します。これには、ファイルのタグ付け、上級電子情報開示での評価結果の確認などがあります。 '
+ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557727"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630694"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>高度な電子情報開示でのタグ付けと評価 (クラシック)
 
@@ -125,7 +125,7 @@ ms.locfileid: "42557727"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [関連性の評価について](assessment-in-relevance-in-advanced-ediscovery.md)
   

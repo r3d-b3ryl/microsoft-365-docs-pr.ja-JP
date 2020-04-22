@@ -20,35 +20,34 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Microsoft 365 for business または Microsoft 365 試用版または有償版サブスクリプションを取り消す方法について説明します。
-ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft 365 for business 試用版または有料版サブスクリプションを解約する方法について説明します。
+ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636597"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708085"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
-*資格:* ユーザーに割り当てられているライセンス数が25未満の場合は、いつでも管理センターで Microsoft 365 for business 試用版または有料版サブスクリプションを解約できます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、[サポートを呼び出してサブスクリプションをキャンセルします](../../admin/contact-support-for-business-products.md)。
+*資格:* ユーザーに割り当てられているライセンス数が25未満の場合は、microsoft 365 for business 試用版または有償版サブスクリプションを Microsoft 365 管理センターでいつでもキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、[サポートを呼び出してサブスクリプションをキャンセルします](../../admin/contact-support-for-business-products.md)。
 
 *返金*: 日割り計算された残高は、次の請求サイクルの間に返金されます。
 
 > [!NOTE]
-> Office 365 Enterprise E3 など、同じ製品に対して複数のサブスクリプションがある場合、いずれかのサブスクリプションをキャンセルしても、購入したライセンスまたは他のサブスクリプションのサービスには影響しません。
+> Microsoft 365 Business Premium などの同じ製品に対して複数のサブスクリプションを持っている場合は、そのうち1つを取り消すことが、購入したライセンスまたは他のサブスクリプション内のサービスに影響を与えることはありません。
 
 ## <a name="steps-to-cancel-your-subscription"></a>サブスクリプションをキャンセルする手順
 
-サブスクリプションで使用する独自のドメイン名を追加した場合、サブスクリプションをキャンセルする前に、ドメインを削除する必要があります。詳細については、「[Office 365 からドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
+サブスクリプションで使用するために独自のドメイン名を追加した場合は、サブスクリプションをキャンセルする前にドメインを削除する必要があります。詳細については、「[ドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
 
 ::: moniker range="o365-worldwide"
-
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
 
 2. キャンセルするサブスクリプションを探し、**[設定とアクション]** で **[サブスクリプションのキャンセル]** を選択します。
 
-3. 重要な日付を確認し、キャンセル理由に関するフィードバックを入力して、**[サブスクリプションのキャンセル]** を選択します。
+3. 重要な日付を確認し、キャンセルする理由についてのフィードバックを提供してから、[**サブスクリプションのキャンセル**] を選択します。
 
     これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されいます。 有料の Microsoft 365 for business サブスクリプションがキャンセルされたときに期待できることの詳細については、「 [microsoft 365 for business サブスクリプションの終了時にデータとアクセスを確認する方法](what-if-my-subscription-expires.md)」を参照してください。
 
@@ -64,7 +63,7 @@ ms.locfileid: "43636597"
 
     ![[その他の操作] メニューのクローズアップ。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. 重要な日付を確認し、キャンセル理由に関するフィードバックを入力して、**[サブスクリプションのキャンセル]** を選択します。
+4. 重要な日付を確認し、キャンセルする理由についてのフィードバックを提供してから、[**サブスクリプションのキャンセル**] を選択します。
 
     これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されいます。 有料の Microsoft 365 for business サブスクリプションがキャンセルされたときに期待できることの詳細については、「 [microsoft 365 for business サブスクリプションの終了時にデータとアクセスを確認する方法](what-if-my-subscription-expires.md)」を参照してください。
 
@@ -80,7 +79,7 @@ ms.locfileid: "43636597"
 
     ![[その他の操作] メニューのクローズアップ。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. 重要な日付を確認し、キャンセル理由に関するフィードバックを入力して、**[サブスクリプションのキャンセル]** を選択します。
+4. 重要な日付を確認し、キャンセルする理由についてのフィードバックを提供してから、[**サブスクリプションのキャンセル**] を選択します。
 
     これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されいます。 有料の Microsoft 365 for business サブスクリプションがキャンセルされたときに期待できることの詳細については、「 [microsoft 365 for business サブスクリプションの終了時にデータとアクセスを確認する方法](what-if-my-subscription-expires.md)」を参照してください。
 
@@ -109,11 +108,11 @@ ms.locfileid: "43636597"
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>ドメインのネームサーバー レコードを変更する (必要な場合)
 
-カスタム ドメインをセットアップすると、ドメインが Office 365 サービスで機能するように、DNS レコードが追加されます。 ドメインを削除する前に、DNS ホストでドメイン MX レコードなどの DNS レコードを更新してください。
+カスタムドメインをセットアップする場合は、ドメインが Microsoft 365 サービスで機能するように DNS レコードを追加しました。 ドメインを削除する前に、DNS ホストでドメイン MX レコードなどの DNS レコードを更新してください。
 
 たとえば、DNS ホストで MX レコードを変更します。 ドメインに送信された電子メールは、Microsoft アドレスから停止し、代わりに新しいメールプロバイダーに送られます。 (MX レコードは、ドメインの電子メールの送信先を決定します)。
 
-- ネームサーバー (NS) レコードが [Office 365 ネームサーバーをポイントしている](../../admin/setup/add-domain.md)場合、新しい DNS ホストをポイントするように NS レコードを変更するまでは、MX レコードの変更は有効になりません (手順 2 を参照)。
+- ネームサーバー (NS) レコード[が Microsoft 365 ネームサーバーを指し](../../admin/setup/add-domain.md)ている場合、MX レコードへの変更は、新しい DNS ホストをポイントするように NS レコードを変更するまで有効になりません (手順2を参照してください)。
 
 - MX レコードを更新する前に、電子メールを切り替える日付、使う予定の新しいメール プロバイダーをユーザーに通知します。 また、ユーザーが既存の Microsoft メールを新しいプロバイダーに移行する場合は、追加の手順を実行する必要があります。
 
@@ -121,11 +120,11 @@ ms.locfileid: "43636597"
 
 #### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>(カスタム ドメインを使用している場合) ドメイン MX レコードとその他の DNS レコードを更新する
 
-ドメインをセットアップするときに、ネームサーバー (NS) レコードを Office 365 に切り替えた場合は、MX レコード、および使用する予定の DNS ホストの他の DNS レコードを設定または更新してから、NS レコードをその DNS ホストに変更する必要があります。
+ドメインのセットアップ時に nameserver (NS) レコードを Microsoft 365 に切り替えた場合は、使用する予定の DNS ホストで MX レコードとその他の DNS レコードを設定または更新し、NS レコードをその DNS ホストに変更する必要があります。
 
 ドメインをセットアップするときに NS レコードを切り替えなかった場合は、MX レコードを変更すると、電子メールがすぐに新しいアドレスに送信されます。
 
-詳細については、「[Office 365 での DNS レコードの管理方法](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)」を参照してください。NS レコードを変更するには、「[Office 365 からドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
+詳細については、「 [Microsoft 365 で DNS レコードを管理する方法](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)」を参照してください。 NS レコードを変更するには、「[ドメインを削除](../../admin/get-help-with-domains/remove-a-domain.md)する」を参照してください。
 
 ### <a name="save-your-data"></a>データを保存する
 
@@ -137,7 +136,7 @@ ms.locfileid: "43636597"
 
 ### <a name="uninstall-office-optional"></a>Office をアンインストールする (省略可能)
 
-サブスクリプションをキャンセルし、Office を含む別のサブスクリプションにユーザーを移動しなかった場合、Office 365 は機能制限モードで実行されます。 このような場合、ユーザーはドキュメントの読み取りおよび印刷だけを実行でき、Office 365 アプリケーションで[ライセンスのない製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。 混乱を避けるために、ユーザーのコンピューターから [Office をアンインストール](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)させます。
+サブスクリプションをキャンセルし、Microsoft 365 を含む別のサブスクリプションにユーザーを移動しなかった場合、Microsoft 365 は機能制限モードで実行されます。 このような場合、ユーザーはドキュメントの読み取りおよび印刷のみを行うことができ、Microsoft 365 アプリケーションではライセンスのない[製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。 混乱を避けるために、ユーザーのコンピューターから [Office をアンインストール](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)させます。
 
 ## <a name="related-articles"></a>関連記事
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 で分析の [テキストを無視] オプションを設定する Advanced eDiscovery
+title: 詳細な電子情報開示で分析の [テキストを無視] オプションを設定する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Office 365 の Advanced eDiscovery で Analyze および Process モジュールを使用するときに、特定のテキストを無視するルールを定義する方法について説明します。  '
-ms.openlocfilehash: 0253ce619901e5fec34da234e005f2c3b6ece090
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Advanced eDiscovery で分析および処理モジュールを使用するときに特定のテキストを無視するルールを定義する方法について説明します。  '
+ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557777"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631254"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Advanced eDiscovery で分析するための [テキストを無視] オプションを設定する (クラシック)
 
@@ -126,7 +126,7 @@ ms.locfileid: "42557777"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   

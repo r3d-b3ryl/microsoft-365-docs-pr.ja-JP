@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge で Office 365 eDiscovery エクスポートツールを使用する
+title: Microsoft Edge で電子情報開示エクスポートツールを使用する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Edge の最新バージョンを使用して、セキュリティ/コンプライアンスセンターでコンテンツ検索と電子情報開示から検索結果をダウンロードするには、ClickOnce サポートを有効にする必要があります。
-ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710346"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632382"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Microsoft Edge で Office 365 eDiscovery エクスポートツールを使用する
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Microsoft Edge で電子情報開示エクスポートツールを使用する
 
-最新バージョンの Microsoft Edge に対する最近の変更の結果として、ClickOnce サポートは既定で有効になりません。 Microsoft Office 365 eDiscovery エクスポートツールを引き続き使用して、コンテンツ検索や電子情報開示の検索結果をダウンロードするには、microsoft [Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)を使用するか、microsoft Edge の最新バージョンで ClickOnce サポートを有効にする必要があります。
+最新バージョンの Microsoft Edge に対する最近の変更の結果として、ClickOnce サポートは既定で有効になりません。 コンテンツ検索や電子情報開示の検索結果をダウンロードするために電子情報開示のエクスポートツールを引き続き使用するには、microsoft [Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)を使用するか、microsoft Edge の最新バージョンで ClickOnce サポートを有効にする必要があります。
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>Microsoft Edge で ClickOnce サポートを有効にする
 
@@ -49,7 +49,7 @@ ms.locfileid: "42710346"
 
    ![[開く] をクリックして電子情報開示エクスポートツールを起動します。](../media/ClickOnceimage4.png)
 
-   Microsoft Office 365 eDiscovery エクスポートツールがインストールされていない場合は、セキュリティの警告が表示されます。 
+   電子情報開示エクスポートツールがインストールされていない場合は、セキュリティの警告が表示されます。 
 
    ![[インストール] をクリックして電子情報開示エクスポートツールをインストールします。](../media/ClickOnceimage5.png)
 

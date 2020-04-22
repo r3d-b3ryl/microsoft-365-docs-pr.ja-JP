@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示でのエクスプレス分析の使用
+title: 高度な電子情報開示でのエクスプレス分析の使用
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: Office 365 Advanced eDiscovery の簡易分析モードを実行する方法について説明します。
-ms.openlocfilehash: d4b8e1fa5e8251f5ede2d9a3003c756decac3b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 高度な電子情報開示の簡易分析モードを実行する方法について説明します。
+ms.openlocfilehash: 32e1087d33b9e9a6c0e4935bd3488a6b464d06a2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557645"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626413"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>高度な電子情報開示でのエクスプレス分析の使用 (クラシック) 
 
@@ -104,7 +104,7 @@ ms.locfileid: "42557645"
     
   - 既存のケースに追加した新しいファイルの結果をエクスポートするには、現在のバッチを続行します。 バッチにセッションを作成するには、同じバッチ番号を選択し、[**エクスポートセッションの作成**] をクリックします。このオプションを使用すると、前のバッチと同じパラメーターを増分方式でエクスポートできます。 
     
-  - 新しいバッチにエクスポートするには、 **** ![[追加]](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)アイコンをクリックし、**バッチ名**に新しい名前を入力します (または既定値をそのまま使用します)。または、バッチの**説明**に説明を追加します。 [**OK**] をクリックします。
+  - 新しいバッチにエクスポートするには、 **Add** ![[追加]](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)アイコンをクリックし、**バッチ名**に新しい名前を入力します (または既定値をそのまま使用します)。または、バッチの**説明**に説明を追加します。 [**OK**] をクリックします。
     
   - バッチ名または説明を編集するには、[**バッチのエクスポート**] で名前を](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)選択し、[編集] ![編集アイコン**をクリックし**てから、フィールドを変更します。
     
@@ -132,5 +132,5 @@ ms.locfileid: "42557645"
 ## <a name="see-also"></a>関連項目
 <a name="BK_AdvancedSettings"> </a>
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 でプロセスモジュールを実行する Advanced eDiscovery
+title: Advanced eDiscovery で Process モジュールを実行する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: 'Office 365 Advanced eDiscovery で分析するために Office 365 データのケースファイルを準備するためのガイドラインについて説明します。  '
-ms.openlocfilehash: eb608eeac33e0d5d06dce9d0c35cd86f4e0bc280
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '高度な電子情報開示を使用して、分析用のデータのケースファイルを準備するためのガイドラインについて説明します。  '
+ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557817"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626463"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Advanced eDiscovery でプロセスモジュールを実行する (クラシック)
 
@@ -74,7 +74,7 @@ ms.locfileid: "42557817"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [プロセスモジュールの実行とデータの読み込み](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

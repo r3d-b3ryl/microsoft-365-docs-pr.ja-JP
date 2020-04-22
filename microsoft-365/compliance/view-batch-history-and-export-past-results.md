@@ -1,5 +1,5 @@
 ---
-title: Office 365 のバッチ履歴を表示して過去の結果をエクスポートする高度な電子情報開示
+title: 詳細な電子情報開示でバッチ履歴を表示し過去の結果をエクスポートする
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: '選択したエクスポートバッチセッションの詳細情報を表示する方法と、Office 365 Advanced eDiscovery で最終エクスポートセッションを取り消す方法について説明します。  '
-ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '選択したエクスポートバッチセッションの詳細情報を表示する方法と、Advanced 電子情報開示の最後のエクスポートセッションを取り消す方法について説明します。  '
+ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557615"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626353"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>詳細な電子情報開示でのバッチ履歴の表示と過去の結果のエクスポート (クラシック)
 
@@ -48,7 +48,7 @@ ms.locfileid: "42557615"
     
 4. 以前に実行したエクスポートバッチセッションからいつでもデータをダウンロードする場合は、エクスポートする![必要のあるエクスポートバッチ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif)の横にある [**ダウンロード**] アイコンエクスポートバッチ履歴のダウンロードアイコンをクリックします。 
     
-5. [**共有アクセス署名**] ダイアログボックスが表示されたら、[**クリップボードにコピー** ] をクリックして、エクスポートセッションデータをローカルコンピューターにコピーし、[**閉じる**] をクリックします。 Office 365 セキュリティ&amp;コンプライアンスセンターの**電子情報開示エクスポートツール**のダイアログボックスが表示されます。 
+5. [**共有アクセス署名**] ダイアログボックスが表示されたら、[**クリップボードにコピー** ] をクリックして、エクスポートセッションデータをローカルコンピューターにコピーし、[**閉じる**] をクリックします。 [セキュリティ&amp;コンプライアンスセンターの**電子情報開示エクスポートツール**] ダイアログが表示されます。 
     
     ![[電子情報開示のエクスポート] ダイアログボックス](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -62,7 +62,7 @@ ms.locfileid: "42557615"
     
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [結果のエクスポート](export-results-in-advanced-ediscovery.md)
 

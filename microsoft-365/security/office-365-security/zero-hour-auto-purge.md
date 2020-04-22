@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、Microsoft 365 の電子メール保護機能であり、Exchange Online に既に配信されているスパム、マルウェア、またはフィッシングメッセージを検出します。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: a819269d8596f12e76cbd17b5d1302cd56837f14
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1b36f1152882f446c8f611ceafb44a085cc0a5d
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630811"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708453"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>ゼロ時間自動削除 (ZAP)-Microsoft 365 でのスパムおよびマルウェアからの保護
 
@@ -36,7 +36,7 @@ ZAP は、Exchange Online メールボックスを含む Microsoft 365 サブス
 
 ## <a name="how-zap-works"></a>ZAP のしくみ
 
-Microsoft 365 は、毎日リアルタイムでスパムおよびマルウェアの署名を更新します。 ただし、ユーザーが配信された後にコンテンツが weaponized されているかどうかなど、さまざまな理由で、ユーザーが悪意のあるメッセージを引き続き受信できます。 ZAP は、Microsfot 365 スパムおよびマルウェア署名の更新を継続的に監視することによって、この問題に対処します。 ZAP は、ユーザーのメールボックスに既に存在するメッセージを見つけて削除することができます。
+Microsoft 365 は、毎日リアルタイムでスパムおよびマルウェアの署名を更新します。 ただし、ユーザーが配信された後にコンテンツが weaponized されているかどうかなど、さまざまな理由で、ユーザーが悪意のあるメッセージを引き続き受信できます。 ZAP は、Microsoft 365 スパムおよびマルウェア署名の更新を継続的に監視することによって、この問題に対処します。 ZAP は、ユーザーのメールボックスに既に存在するメッセージを見つけて削除することができます。
 
 ZAP アクションはユーザーにとってシームレスです。メッセージが検出され、移動された場合は通知されません。
 

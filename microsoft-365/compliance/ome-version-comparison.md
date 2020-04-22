@@ -1,5 +1,5 @@
 ---
-title: Office 365 Message Encryption (OME) バージョンの比較
+title: メッセージ暗号化 (OME) バージョンの比較
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Office 365 メッセージの暗号化の各バージョンの違いについて説明します。
-ms.openlocfilehash: 0f9db94763fa6434c354cacac2e0edd05596cafc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: メッセージ暗号化の各バージョンの違いについて説明します。
+ms.openlocfilehash: 89d145f19591ba59df6983bb8863a8e0cc28fcf3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597804"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626793"
 ---
 # <a name="compare-versions-of-ome"></a>OME のバージョンを比較する
 
-この記事では、従来の Office 365 Message Encryption (OME) を、新しい OME 機能と Office 365 Advanced Message Encryption と比較します。 新機能は、OME と Information Rights Management (IRM) の両方の合併およびより新しいバージョンです。 GCC High への展開に関する固有の特性についても概説します。 2つのを Office 365 組織に共存させることができます。 新機能のしくみについては、「 [Office 365 Message Encryption (OME)](ome.md)」を参照してください。
+この記事では、従来の Office 365 Message Encryption (OME) を、新しい OME 機能と Office 365 Advanced Message Encryption と比較します。 新機能は、OME と Information Rights Management (IRM) の両方の合併およびより新しいバージョンです。 GCC High への展開に関する固有の特性についても概説します。 2つのを組織内で共存させることができます。 新機能のしくみについては、「 [Office 365 Message Encryption (OME)](ome.md)」を参照してください。
 
 ||
 |:-----|
@@ -37,11 +37,11 @@ ms.locfileid: "41597804"
 |                                   |以前の機能       |                   |新機能              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**機能**                     | **レガシー OME**    | **IRM**           | **OME の新機能** |
-|*暗号化されたメールを送信する*        |Exchange メールフロールールを使用する|エンドユーザーが Outlook デスクトップまたは Outlook on the Web から開始しました。または Exchange メールフロールールを介して|エンドユーザーが Outlook デスクトップ、Outlook for Mac、または Outlook on the Web から開始しました。Exchange メールフロールール (トランスポートルールとも呼ばれます) および Office 365 データ損失防止 (DLP) を使用します。|
+|*暗号化されたメールを送信する*        |Exchange メールフロールールを使用する|エンドユーザーが Outlook デスクトップまたは Outlook on the Web から開始しました。または Exchange メールフロールールを介して|エンドユーザーが Outlook デスクトップ、Outlook for Mac、または Outlook on the Web から開始しました。Exchange メールフロールール (トランスポートルールとも呼ばれます) とデータ損失防止 (DLP) を使用します。|
 |*Rights management テンプレート*       |   該当なし      |オプションとカスタムテンプレートを転送しない|転送不可オプション、暗号化のみオプション、およびカスタムテンプレート|
 |*受信者の種類*                   |内部および外部の受信者|内部受信者のみ         |内部および外部の受信者|
 |*内部の受信者のための環境*|受信者が HTML メッセージを受信し、web ブラウザーまたはモバイルアプリでそれをダウンロードして開く|Outlook クライアントでのネイティブインライン環境|Outlook クライアントを使用した同じ組織内の受信者に対するネイティブなインライン作業。  受信者は、Outlook 以外のクライアントを使用して OME ポータルからメッセージを読み取ることができます (ダウンロードまたはアプリは必要ありません)。|
-|*外部の受信者のための環境*|受信者が HTML メッセージを受信し、web ブラウザーまたはモバイルアプリでそれをダウンロードして開く|該当なし|Office 365 受信者のネイティブインライン環境。 他のすべての受信者は OME ポータルからメッセージを読み取ることができます (ダウンロードまたはアプリは必要ありません)。|
+|*外部の受信者のための環境*|受信者が HTML メッセージを受信し、web ブラウザーまたはモバイルアプリでそれをダウンロードして開く|該当なし|Microsoft 365 受信者のネイティブインライン環境。 他のすべての受信者は OME ポータルからメッセージを読み取ることができます (ダウンロードまたはアプリは必要ありません)。|
 |*添付ファイルのアクセス許可*           |添付ファイルに制限はありません。|添付ファイルが保護されている|添付ファイルは、[転送不可] オプションおよびカスタムテンプレートに対して保護されています。 管理者は、[暗号化のみ] オプションの添付ファイルを保護するかどうかを選択できます。|
 |*独自のキー (BYOK) のサポートを利用する*|なし                |なし               |BYOK サポート          |
 ||
@@ -52,8 +52,8 @@ ms.locfileid: "41597804"
 
 - 暗号化のみを使用する機能 (セキュリティで保護されたコラボレーションを有効にする)、転送不可、およびカスタム制限。
 - 送信者は、新しい機能で暗号化されたメールを Outlook デスクトップ、Outlook for Mac、web クライアントの Outlook から手動で送信できます。
-- Office 365 の受信者は、サポートされている Outlook クライアントでインライン表示を使用することができます。 または、管理者が Office 365 の受信者をブランド化された環境で表示するように選択することもできます。
-- Gmail、Yahoo、Microsoft accounts などの Office 365 の外部のアカウントは、OME ポータルと連携しています。これにより、これらの受信者にとってより良いユーザー環境が提供されます。 その他のすべての id は、1回限りのパスコードを使用して暗号化されたメッセージにアクセスします。
+- Microsoft 365 の受信者は、サポートされている Outlook クライアントでインライン表示を使用することができます。 または、管理者が Microsoft 365 の受信者をブランド化された環境で表示することを選択できます。
+- Gmail、Yahoo、Microsoft accounts などの Microsoft 365 の外側にあるアカウントは、OME ポータルと連携しています。これにより、これらの受信者にとってより良いユーザー環境が提供されます。 その他のすべての id は、1回限りのパスコードを使用して暗号化されたメッセージにアクセスします。
 - 管理者はブランド化をカスタマイズし、複数のブランド設定テンプレートを作成できます。
 - 管理者は、新しい機能で暗号化されたメールを取り消すことができます。
 - 新しい機能は、セキュリティ&amp;コンプライアンスセンターを通じて詳細な利用状況レポートを提供します。
@@ -82,13 +82,13 @@ Office 365 の高度なメッセージの暗号化は、GCC の高環境では�
 
 送信者は、Outlook for PC および Mac および web 上の Outlook でメールを手動で暗号化できます。また、Exchange メールフロールールを使用して電子メールを暗号化するポリシーを設定することもできます。
 
-GCC の内部にいる受信者は、PC と Mac 用の Outlook と、その他すべての Office 365 ユーザーと同様に web 上の Outlook で、同じインライン読み取り操作を受け取ります。
+GCC の内部にいる受信者は、PC と Mac 用の Outlook と、その他すべてのユーザーとしての web 上の Outlook で、同じインライン読み取り操作を受け取ります。
 
 ### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>Gcc High から非 GCC の高受信者への暗号化された電子メール
 
 GCC の内部にある送信者は、暗号化された電子メールを GCC の境界外に送信できます。
 
-市販の Office 365 ユーザー、Outlook.com ユーザー、その他の電子メールプロバイダー (Gmail、Yahoo など) を含む、GCC 以外のすべての受信者には、ラッパーメールが送信されます。 このラッパーメールは、受信者がメッセージに対して読み取りおよび返信できる OME ポータルにリダイレクトします。
+市販の Microsoft 365 ユーザー、Outlook.com ユーザー、その他の電子メールプロバイダー (Gmail、Yahoo など) を含む、GCC 以外のすべての受信者には、ラッパーメールが送信されます。 このラッパーメールは、受信者がメッセージに対して読み取りおよび返信できる OME ポータルにリダイレクトします。
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>従来の OME と、同じテナント内の新機能の共存
 
@@ -106,8 +106,8 @@ GCC の内部にある送信者は、暗号化された電子メールを GCC �
 
 ## <a name="get-started-with-ome"></a>OME の使用を開始する
 
-通常、新しい OME 機能は Office 365 組織に対して自動的に有効になります。 組織内の新しい OME 機能の詳細については、「 [Office の新しい365メッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」を参照してください。
+通常、新しい OME 機能は組織に対して自動的に有効になります。 組織内の新しい OME 機能の詳細については、「 [Office の新しい365メッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」を参照してください。
 
-Azure Information Protection を有効にしている場合、OME のレガシバージョンは Office 365 組織に対して自動的に有効になります。 以前は、Azure Information Protection が有効になっていない場合でも、従来の OME は動作していました。 このような場合は、これで終了です。
+Azure Information Protection を有効にしている場合、OME のレガシバージョンが自動的に有効になります。 以前は、Azure Information Protection が有効になっていない場合でも、従来の OME は動作していました。 このような場合は、これで終了です。
 
-従来の OME の使用を開始するには、Azure Information Protection を有効にしている場合は、ルールの動作を使用するメールフロールールを構成します。**以前のバージョンの OME を適用**します。 手順については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールの定義](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
+従来の OME の使用を開始するには、Azure Information Protection を有効にしている場合は、ルールの動作を使用するメールフロールールを構成します。**以前のバージョンの OME を適用**します。 手順については、「メール[フロールールを定義して電子メールメッセージを暗号化する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。

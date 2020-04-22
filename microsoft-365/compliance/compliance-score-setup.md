@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコアを設定および開始する方法について説明します。これにより、リスク評価が簡素化および自動化されます。
-ms.openlocfilehash: 334eb47ebf5057bfa1c426715e8f404979ceaf5b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141522"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632392"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft コンプライアンススコア (プレビュー) の設定
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 通常、コンプライアンススコアにアクセスする最初のユーザーは、組織の Microsoft 365 グローバル管理者になります。 初めてコンプライアンススコアを参照する場合は、グローバル管理者サインインをお勧めし、以下の説明に従ってユーザー権限を設定することをお勧めします。
 

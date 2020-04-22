@@ -1,5 +1,5 @@
 ---
-title: 従来の電子情報開示検索と保持を Microsoft 365 コンプライアンスセンターに移行する
+title: 従来の電子情報開示検索と保持を Microsoft 365 コンプライアンス センターに移行する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,31 +12,31 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: f53d9cbf719b0e16749c9ea1dcae2533f8c48e50
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: bb2bccc6689a3739bcb1f3736771cf81b7c467bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091387"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637939"
 ---
-# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>従来の電子情報開示検索と保持を Microsoft 365 コンプライアンスセンターに移行する
+# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>従来の電子情報開示検索と保持を Microsoft 365 コンプライアンス センターに移行する
 
-Microsoft 365 コンプライアンスセンターでは、次のような電子情報開示の使用に関するエクスペリエンスが向上しています。これには、状況に応じてコンテンツを整理するケースを含む、電子情報開示ワークフローに特化された高度な機能、コンテンツと分析をレビューして、重複のグループ化、電子メールスレッド処理、テーマの分析、予測コーディングなどのレビューのためのデータのカリングに役立てます。
+Microsoft 365 コンプライアンスセンターでは、次のような電子情報開示の使用に関して向上した方法が提供されています。これには、コンテンツを整理するケースなど、電子情報開示ワークフローに特化された、コンテンツと分析をレビューするためのデータを確認するための設定を確認することができます。
 
 お客様が新機能と強化された機能を活用できるように、この記事では、インプレース電子情報開示の検索と保持を Exchange 管理センターから Microsoft 365 コンプライアンスセンターに移行する方法についての基本的なガイダンスを提供します。
 
 > [!NOTE]
 > さまざまなシナリオがあるため、この記事では、Microsoft 365 コンプライアンスセンターのコア電子情報開示ケースに移行するための一般的なガイダンスについて説明します。 電子情報開示ケースの使用は常に必須ではありませんが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当てることによって、セキュリティの追加の層が追加されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-- この記事で説明されている PowerShell コマンドを実行するには、Office 365 セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 また、Exchange 管理センターの "Discovery Management/検出の管理" 役割グループのメンバーである必要もあります。
+- この記事で説明されている PowerShell コマンドを実行するには、セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 また、Exchange 管理センターの "Discovery Management/検出の管理" 役割グループのメンバーである必要もあります。
 
 - この記事では、電子情報開示の保持を作成する方法についてのガイダンスを提供します。 保留ポリシーは、非同期プロセスによってメールボックスに適用されます。 電子情報開示の保持を作成する場合は、CaseHoldPolicy と New-caseholdrule の両方を作成する必要があります。そうしないと、ホールドは作成されず、コンテンツの場所は保持されません。
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-office-365-security--compliance-center-powershell"></a>手順 1: Exchange Online PowerShell および Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続する
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>手順 1: Exchange Online PowerShell および Security & コンプライアンスセンター PowerShell に接続する
 
-最初の手順として、Exchange Online PowerShell および Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続します。 次のスクリプトをコピーして、PowerShell ウィンドウに貼り付け、それを実行できます。 接続する組織の資格情報の入力を求められます。 
+最初の手順は、Exchange Online PowerShell およびセキュリティ & コンプライアンスセンター PowerShell に接続することです。 次のスクリプトをコピーして、PowerShell ウィンドウに貼り付け、それを実行できます。 接続する組織の資格情報の入力を求められます。 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -77,7 +77,7 @@ $search | FL
 ![個別の検索に Get-mailboxsearch を使用した場合の PowerShell 出力の例](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> この例では、インプレース保持の期間は不定 (*ItemHoldPeriod: 無制限*) です。 これは一般的に、電子情報開示と法的調査のシナリオで使用されます。 保持期間が不定の値と異なる場合は、保持のシナリオでコンテンツを保持するために保持が使用されているため、理由が考えられます。 保持シナリオのために Office 365 Security & コンプライアンスセンターの PowerShell で電子情報開示のコマンドレットを使用する代わりに、 [new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)および[get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)を使用してコンテンツを保持することをお勧めします。 これらのコマンドレットを使用した結果は、 **CaseHoldPolicy**および**new-caseholdrule**の使用に似ていますが、保持期間と保持の操作 (保持期間が経過した後にコンテンツを削除するなど) を指定することができます。 また、保持コマンドレットを使用しても、保存機能を電子情報開示ケースに関連付けする必要はありません。
+> この例では、インプレース保持の期間は不定 (*ItemHoldPeriod: 無制限*) です。 これは一般的に、電子情報開示と法的調査のシナリオで使用されます。 保持期間が不定の値と異なる場合は、保持のシナリオでコンテンツを保持するために保持が使用されているため、理由が考えられます。 [New-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)および[get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)を使用して、コンテンツを保持するために、セキュリティ & コンプライアンスセンターの PowerShell で電子情報開示のコマンドレットを使用するのではなく、コンテンツを保持することをお勧めします。 これらのコマンドレットを使用した結果は、 **CaseHoldPolicy**および**new-caseholdrule**の使用に似ていますが、保持期間と保持の操作 (保持期間が経過した後にコンテンツを削除するなど) を指定することができます。 また、保持コマンドレットを使用しても、保存機能を電子情報開示ケースに関連付けする必要はありません。
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>手順 4: Microsoft 365 コンプライアンスセンターでケースを作成する
 

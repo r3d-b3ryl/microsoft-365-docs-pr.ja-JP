@@ -1,5 +1,5 @@
 ---
-title: Office 365 の高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
+title: 高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: 'ユーザー定義のキーワードを関連性に追加して、Office 365 の高度な電子情報開示でのタグ付けとコストパラメータを指定する際に関連ファイルを特定する方法について説明します。  '
-ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: 'ユーザー定義のキーワードを関連性に追加して、上級電子情報開示でのタグ付けの際に関連ファイルを特定し、コストパラメータを指定する方法について説明します。  '
+ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556765"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630554"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する (クラシック)
 
@@ -70,7 +70,7 @@ ms.locfileid: "42556765"
     
     ![関連性の設定のコストのパラメーター](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. **[保存]** をクリックします。 選択した設定が保存されます。
+3. [**保存**] をクリックします。 選択した設定が保存されます。
     
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ソリューションカタログ
+title: Microsoft 365 ソリューション カタログ
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,14 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179148"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637949"
 ---
-# <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューションカタログ
+# <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
 Microsoft 365 でコンプライアンスタスクをすばやく始める方法を探していますか。 [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog)を参照して、コンプライアンスおよびリスク管理ソリューションを見つけて、理解し、すぐに開始してください。
 
@@ -89,7 +89,7 @@ Microsoft 365 ソリューションカタログにアクセスするには、 [h
 
 マイクロソフトは常に、Microsoft 365 コンプライアンスセンターおよびソリューションカタログに新しい機能を追加することに取り組んでいます。 ナビゲーション領域に特定のソリューションが見つからない場合は、ソリューションがサブスクリプションで利用可能になったときにアクセスできます。
 
-既存のコンプライアンスソリューションを探しており、Microsoft 365 コンプライアンスセンターでまだ利用できない場合は、「」に[https://protection.office.com](https://protection.office.com)アクセスして、既存の Office 365 セキュリティ/コンプライアンスセンターのソリューションにいつでもアクセスできます。 または、Microsoft 365 コンプライアンスセンターの左側のナビゲーションにある [**その他のリソース**] タブをクリックして、Office 365 セキュリティ/コンプライアンスセンターカードを選択することもできます。  
+既存のコンプライアンスソリューションを探しており、Microsoft 365 コンプライアンスセンターでは利用できない場合は、に&amp; [https://protection.office.com](https://protection.office.com)アクセスすることで、既存のセキュリティコンプライアンスセンターのソリューションにいつでもアクセスできます。 または、Microsoft 365 コンプライアンスセンターの左側のナビゲーションにある [**その他のリソース**] タブをクリックして、Office 365 セキュリティ/コンプライアンスセンターカードを選択することもできます。  
 
 ## <a name="next-steps"></a>次の手順
 

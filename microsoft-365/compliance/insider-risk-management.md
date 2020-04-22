@@ -1,5 +1,5 @@
 ---
-title: Insider リスク管理
+title: インサイダー リスクの管理
 description: Microsoft 365 で Insider リスク管理を使用して組織のリスクを最小限にする方法について説明します。
 keywords: Microsoft 365、insider のリスク、リスク管理、コンプライアンス
 localization_priority: Normal
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179188"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637475"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 での Insider リスク管理
 
@@ -41,7 +41,7 @@ Insider リスク管理は、組織内のリスクのあるアクティビティ
 
 モダンワークプレースの従業員は、さまざまなプラットフォームとサービス間でデータを作成、管理、共有することができます。 ほとんどの場合、組織には、従業員のプライバシー基準を満たすと共に、組織全体のリスクを特定して軽減するためのリソースとツールが限られています。
 
-Microsoft 365 の Insider リスク管理では、完全なサービスとサードパーティの指標を使用して、リスクアクティビティを迅速に特定し、トリアージし、アクションを実行できるようにします。 Office 365 および Microsoft Graph のログを使用することで、insider リスク管理では、リスク指標を識別する特定のポリシーを定義できます。 これらのポリシーを使用すると、危険なアクティビティを特定し、リスクを軽減するアクションを実行できます。
+Microsoft 365 の Insider リスク管理では、完全なサービスとサードパーティの指標を使用して、リスクアクティビティを迅速に特定し、トリアージし、アクションを実行できるようにします。 Microsoft 365 および Microsoft Graph のログを使用することで、insider リスク管理では、リスク指標を識別する特定のポリシーを定義できます。 これらのポリシーを使用すると、危険なアクティビティを特定し、リスクを軽減するアクションを実行できます。
 
 Insider リスク管理は、次の原則を中心にしています。
 

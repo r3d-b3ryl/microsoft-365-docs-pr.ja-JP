@@ -1,5 +1,5 @@
 ---
-title: プロセスモジュールを実行し、Office 365 でデータを読み込む高度な電子情報開示
+title: Advanced eDiscovery で Process モジュールを実行し、データを読み込む
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Office 365 セキュリティ&amp;コンプライアンスセンターを使用して Office 365 Advanced eDiscovery にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
-ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'セキュリティ&amp;コンプライアンスセンターを使用して高度な電子情報開示にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
+ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557827"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626473"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Process モジュールを実行し、Advanced eDiscovery でデータを読み込む (クラシック)
 
@@ -41,13 +41,13 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
   
 プロセスを実行するには、次の手順を実行します。
   
-1. [Office 365 セキュリティ&amp;コンプライアンスセンターを開き](go-to-the-securitycompliance-center.md)ます。 
+1. [セキュリティ&amp; /コンプライアンスセンターを開き](go-to-the-securitycompliance-center.md)ます。 
     
 2. [**検索&amp;調査** \> ]**電子情報開示**に移動し、[ **Advanced ediscovery に移動**] をクリックします。
     
 3. [高度な電子情報開示] で、[表示される**ケース**] ページで適切なケースを選択し、[**ケースに移動] を**クリックします。
     
-4. [ **** \> **** プロセス\> **セットアップ**の準備] で、使用可能なコンテナーの一覧からコンテナーを選択します。
+4. [ **Prepare** \> **Process**プロセス\> **セットアップ**の準備] で、使用可能なコンテナーの一覧からコンテナーを選択します。
     
     ![検索結果をケースに追加するには、[処理] をクリックします。](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -83,7 +83,7 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [プロセスモジュールの結果を表示する](view-process-module-results-in-advanced-ediscovery.md)
 

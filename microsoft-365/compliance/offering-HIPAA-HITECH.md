@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
-ms.translationtype: HT
+ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638001"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>医療保険の携行性と責任に関する法律と HITECH 法 (Health Insurance Portability and Accountability (HIPAA) & HITECH Acts)
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>HIPAA と HITECH 法の概要
 
-健康保険の携行性と責任に関する法律 (HIPAA) は、個人を特定できる健康情報の使用、開示、および保護に関する要件を定めた米国の医療法です。 患者の保護された健康情報 (PHI) にアクセスできる対象事業体 (医師のオフィス、病院、健康保険会社、およびその他のヘルスケア企業) および代理で PHI を処理するクラウド サービスや IT プロバイダーなどのビジネス関係者に適用されます。 (ほとんどの対象事業体は、クレームやデータ処理などの機能を単独では実行しません。それらの機能の実行については、ビジネス関係者に依存しています。)
+健康保険の携行性と責任に関する法律 (HIPAA) は、個人を特定できる健康情報の使用、開示、および保護に関する要件を定めた米国の医療法です。 これは、医師の事務所、病院、健康 insurers、その他の医療会社 (患者の保護された健康情報 (PHI) にアクセスできること、および、クラウドサービスや IT プロバイダーなどのビジネス関連者に対して、PHI を代行して処理する) に適用されます。 (ほとんどの対象事業体は、クレームやデータ処理などの機能を単独では実行しません。それらの機能の実行については、ビジネス関係者に依存しています。)
 
 法律は、4 つの一般的な分野での PHI の使用および普及を規制しています。
 
@@ -43,7 +43,7 @@ HITECH 違反の通知に関する最終ルール。セキュリティ保護さ�
 
 ## <a name="microsoft-and-hipaa-and-the-hitech-act"></a>Microsoft と HIPAA および HITECH 法
 
-HIPAA 規制では、対象事業体およびそのビジネス関係者 (この場合、対象事業体にクラウド サービスなどを含むサービスを提供する Microsoft) が、これらのビジネス関係者による PHI の適切な保護を保証する契約を締結する必要があります。 これらの契約、または BAA は、ビジネス関係者が PHI を処理する方法を明確化および制限し、HIPAA および HITECH 法に定められたセキュリティおよびプライバシーの規定を各当事者が遵守することを定めます。BAA が導入されると、Microsoft のお客様 (対象事業体) は、そのサービスを使用して PHI を処理および保存することができます。
+HIPAA 規制では、対象事業体およびそのビジネス関係者 (この場合、対象事業体にクラウド サービスなどを含むサービスを提供する Microsoft) が、これらのビジネス関係者による PHI の適切な保護を保証する契約を締結する必要があります。 これらのコントラクトまたは BAAs では、ビジネス関連が PHI を処理する方法を明確にし、各当事者が HIPAA およびお客様に対して設定されたセキュリティとプライバシーに関する規定に準拠するように設定します。BAA が配置されると、Microsoft のお客様 (対象となるエンティティ) は、そのサービスを使用して PHI を処理および保存できるようになります。
 
 現在、HIPAA または HITECH 法のコンプライアンスに関する公式の認定資格はありません。 ただし、BAA の対象となるこれらの Microsoft サービスは、Microsoft ISO/IEC 27001 認定の独立監査人によって実施された監査を受けています。
 
@@ -57,7 +57,7 @@ Microsoft クラウドがお客様の HIPAA および HITECH 要件への準拠�
 - Cloud App Security
 - Microsoft Health Bot サービス
 - Microsoft Stream
-- Microsoft プロフェッショナル サービス: Azure、Dynamics 365、Intune と、Office 365 の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
+- Microsoft プロフェッショナルサービス: Azure、Dynamics 365、Intune、および中規模の企業およびエンタープライズのお客様のためのプレミアおよびオンプレミスのお客様のための microsoft プロフェッショナルサービス: Microsoft 365 for business
 - [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
 - Intune
@@ -82,15 +82,15 @@ Microsoft クラウド サービスの場合: [HIPAA ビジネス アソシエ�
 
 Microsoft Professional Services サービスの場合: HIPAA ビジネス アソシエイト の修正は、Microsoft サービス担当者への要求に応じて、範囲内のMicrosoft Professional Services で利用できます。
 
-**Microsoft との BAA を締結することで、組織が HIPAA および HITECH 法に準拠していることを保証できますか ?**
+**Microsoft で BAA があることによって、組織が HIPAA に準拠していることと、エコーが発生することが保証されますか。**
 
 いいえ。 BAA を提供することにより、Microsoft は HIPAA コンプライアンスへの準拠の支援をしますが、Microsoft のサービスを使用するだけでは達成できません。 組織は、適切なコンプライアンス プログラムと内部プロセスを整備し、Microsoft サービスの特定の使用が HIPAA および HITECH 法と整合するように調整する責任があります。
 
-**Microsoft は組織の BAA を変更できますか ?**
+**Microsoft は組織の BAA を変更できますか?**
 
-Microsoft のサービスはすべての顧客に対して一貫しているため、HIPAA BAA を変更することはできません。したがって、すべてのお客様が同じ手順に従っていただく必要があります。 ただし、Microsoft の HIPAA 規制対象の顧客およびそのサービスを対象とする BAA を作成するために、Microsoft はいくつかの主要な米国の医学部とその HIPAA プライバシー弁護士、およびその他の公的および民間セクターの HIPAA 対象事業体と協力しました。
+Microsoft のサービスはすべての顧客に対して一貫しているため、HIPAA BAA を変更することはできません。したがって、すべてのお客様が同じ手順に従っていただく必要があります。 しかし、Microsoft の HIPAA 規制を利用しているお客様とそのサービスのための BAA を作成するために、Microsoft は、お客様のお客様および HIPAA の主要な診療学校の一部と、その他の公的および民間部門の HIPAA をカバーするエンティティについても共同で作業しています。
 
-**監査人の報告書のコピーはどのようにして入手できますか ?**
+**監査者のレポートのコピーを取得するには、どうすればよいですか。**
 
 [Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.aspx) では、中立的な監査によるコンプライアンス レポートを提供しています。 貴社の監査人が Microsoft のクラウド サービスの監査結果と貴社の法的および規制要件を比較できるようにするために、ポータルで監査レポートをリクエストすることができます。
 
@@ -100,11 +100,11 @@ Microsoft のサービスはすべての顧客に対して一貫しているた�
 
 - [Azure](https://aka.ms/azurehipaaguidance) 向けおよび [Dynamics 365 および Office 365](https://go.microsoft.com/fwlink/?LinkID=257510) 向けの *HIPAA/HITECH 法実装ガイダンス*。 プライバシー、セキュリティ、コンプライアンス責任者、および HIPAA および HITECH 法の実装を担当するその他の担当者向けに作成され、コンプライアンスを維持するために組織が実行できる具体的な手順について説明しています。
 - 「[Practical guide to designing secure health solutions using Microsoft Azure (Microsoft Azure を使用して安全な健康ソリューションを設計するための実践ガイド)](https://aka.ms/azureindustrysecurity)」は、クラウド サービスを安全な方法で適切に導入するために必要なことをよりよく理解するために役立ちます。
-- 「[Microsoft クラウドでの HIPAA セキュリティおよびプライバシー要件への対応](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)」では、規制要件の概要を説明しています。 また、Microsoft のクラウド サービスがそれらの要件に対応する手法を用いてどのように構築されているかについての詳細な分析、およびコンプライアンス対応ソリューションの構築方法に関するガイダンスも提供しています。
+- 「[Microsoft クラウドでの HIPAA セキュリティおよびプライバシー要件への対応](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)」では、規制要件の概要を説明しています。 また、これらの要件に対応する方法論を使用して Microsoft のクラウドサービスがどのように構築されたかについての詳細な分析と、コンプライアンス対応のソリューションを構築する方法のガイダンスを提供します。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコアの設定](compliance-score-setup.md)後、[**テンプレート**] ドロップダウン メニューから事前に構成された [HIPAA Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2118005)と [HIPAA Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118006)を選択してこの規制の要件を満たすようにします。
+[Microsoft コンプライアンス スコア](compliance-score.md)は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコアの設定](compliance-score-setup.md)後、[**テンプレート**] ドロップダウン メニューから事前に構成された [HIPAA Office 365 テンプレート](https://go.microsoft.com/fwlink/?linkid=2118005)と [HIPAA Intune テンプレート](https://go.microsoft.com/fwlink/?linkid=2118006)を選択してこの規制の要件を満たすようにします。
 
 ## <a name="resources"></a>リソース
 

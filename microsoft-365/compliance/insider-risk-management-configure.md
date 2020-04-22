@@ -1,5 +1,5 @@
 ---
-title: Insider リスク管理の概要
+title: インサイダー リスクの管理の概要
 description: 組織で insider リスク管理を構成します。
 keywords: Microsoft 365、insider リスク管理、リスク管理、コンプライアンス
 localization_priority: Normal
@@ -12,23 +12,23 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 86aa29d0c271869eb1939b8a6a8dfb004e35d2cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097196"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637485"
 ---
-# <a name="get-started-with-insider-risk-management"></a>Insider リスク管理の概要
+# <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
-Insider リスク管理ポリシーを使用して、組織内のリスクの通知に対してアクションを実行する危険性のあるアクティビティおよび管理ツールを特定します。 前提条件を設定して内部のリスク管理ポリシーを構成するには、次の手順を実行します。
+インサイダー リスク管理ポリシーを使用して、リスクの高いアクティビティや管理ツールを特定し、組織のリスク アラートに対処します。 前提条件を設定して内部のリスク管理ポリシーを構成するには、次の手順を実行します。
 
 >[!IMPORTANT]
 >Microsoft 365 insider リスク管理ソリューションは、お客様がユーザーレベルで内部ガバナンスを促進できるようにするためのテナントレベルのオプションを提供します。 テナントレベルの管理者は、組織のメンバーに対してこのソリューションへのアクセスを提供するためのアクセス許可を設定し、Microsoft 365 コンプライアンスセンターでデータコネクタをセットアップして、関連データをインポートし、潜在的なリスクのあるアクティビティのユーザーレベル id をサポートすることができます。 お客様は、個人ユーザーに関連する洞察を認識します。雇用に関連する大きなの動作、文字、またはパフォーマンスは、管理者が計算し、組織内の他のユーザーが利用できるようにすることができます。
 
 組織内でのリスク管理に関して insider リスクポリシーがどのように役立つかの詳細については、「 [Microsoft 365 の「insider リスク管理](insider-risk-management.md)」を参照してください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 Insider リスク管理を開始する前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 Insider リスク管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 
@@ -39,7 +39,7 @@ Insider リスク管理を開始する前に、 [Microsoft 365 サブスクリ�
 
 Insider リスク管理ポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
 
-既存の Microsoft 365 Enterprise E5 プランを保有せずに insider リスク管理を試みる場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の Office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
+既存の Microsoft 365 Enterprise E5 プランを持っておらず、insider リスク管理を試みる場合は、既存のサブスクリプションに[microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)してください。
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>手順 1 (必須): insider リスク管理のためのアクセス許可を有効にする
 
@@ -49,7 +49,7 @@ Insider リスク管理ポリシーに含まれるユーザーには、上記の
 
 | **役割グループ** | **ロール権限** |
 | :---- | :---------------- |
-| **Insider リスク管理** | この役割グループを使用して、組織の内部リスク管理を1つのグループに管理します。 指定した管理者、アナリスト、および調査担当者のすべてのユーザーアカウントを追加することで、1つのグループで insider リスク管理のアクセス許可を構成できます。 この役割グループには、すべての insider リスク管理の役割が含まれています。 これは、insider リスク管理をすばやく開始する最も簡単な方法であり、個別のユーザーグループに対して定義された個別のアクセス許可を必要としない組織に適しています。|
+| **インサイダー リスクの管理** | この役割グループを使用して、組織の内部リスク管理を1つのグループに管理します。 指定した管理者、アナリスト、および調査担当者のすべてのユーザーアカウントを追加することで、1つのグループで insider リスク管理のアクセス許可を構成できます。 この役割グループには、すべての insider リスク管理の役割が含まれています。 これは、insider リスク管理をすばやく開始する最も簡単な方法であり、個別のユーザーグループに対して定義された個別のアクセス許可を必要としない組織に適しています。|
 | **Insider リスク管理管理者** | この役割グループは、最初に insider リスク管理を構成し、後で insider リスク管理者を定義済みグループに分離するために使用します。  この役割グループのユーザーは、内部者のリスク管理ポリシー、グローバル設定、および役割グループの割り当てを作成、読み取り、更新、および削除できます。 |
 | **Insider リスク管理アナリスト** | このグループを使用して、insider のリスクケースアナリストとして機能するユーザーにアクセス許可を割り当てます。 この役割グループのユーザーは、すべての内部者リスク管理の通知、ケース、および通知テンプレートにアクセスできます。 Insider リスクコンテンツエクスプローラーにアクセスすることはできません。 |
 | **Insider リスク管理の調査官** | このグループを使用して、insider リスクデータ調査担当者として機能するユーザーにアクセス許可を割り当てます。 この役割グループのユーザーは、すべてのケースについて、すべての insider リスク管理通知、ケース、通知テンプレート、およびコンテンツエクスプローラーにアクセスできます。 |
@@ -60,7 +60,7 @@ Insider リスク管理ポリシーに含まれるユーザーには、上記の
 
 1. Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions)組織の管理者アカウントの資格情報を使用してサインインします。 "" "" "" "
 
-2. Microsoft Office 365 セキュリティ/コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
+2. セキュリティ&amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
 
 3. ユーザーを追加する insider リスク管理役割グループを選択して、[**役割グループの編集**] を選択します。
 
@@ -72,11 +72,11 @@ Insider リスク管理ポリシーに含まれるユーザーには、上記の
 
 7. [**保存**] を選択して、ユーザーを役割グループに追加します。 [**閉じる**] を選択して、手順を完了します。
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>手順 2 (必須): Office 365 監査ログを有効にする
+## <a name="step-2-required-enable-the-audit-log"></a>手順 2 (必須): 監査ログを有効にする
 
 Insider リスク管理は、ポリシーに構成されたユーザー洞察およびアクティビティの監査ログを使用します。 監査ログは、内部者のリスク管理ポリシーに関連付けられているすべてのアクティビティ、またはポリシーが変更されるたびに要約されます。
 
-監査を有効にするための詳細な手順については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+監査を有効にするための詳細な手順について[は、「監査ログの検索を有効または無効](turn-audit-log-search-on-or-off.md)にする」を参照してください。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 
 ## <a name="step-3-optional-configure-prerequisites-for-templates"></a>手順 3 (省略可能): テンプレートの前提条件を構成する
 

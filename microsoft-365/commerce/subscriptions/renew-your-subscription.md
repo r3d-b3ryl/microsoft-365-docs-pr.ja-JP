@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'プロダクトキーを使用して Microsoft 365 for business サブスクリプションを更新し、定期的な請求をオンまたはオフにする方法について説明します。 '
-ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636561"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707657"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
@@ -48,11 +48,10 @@ ms.locfileid: "43636561"
 
 ::: moniker range="o365-worldwide"
 
-
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
 
 2. 継続請求を管理するサブスクリプションを選択します。
- 
+
 3. [**課金**] の [**更新予定日**] または [**有効期限**] の横にある [**編集**] を選択します。
 
 4. [**継続請求の設定**] ウィンドウで、[**無効にする**] を選択して無効にします。 継続請求が既にオフになっている場合は、[**毎月**] または [**1 回**] を選択してオンにします。
@@ -68,11 +67,7 @@ ms.locfileid: "43636561"
 
 ::: moniker range="o365-germany"
   
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 継続請求を管理するサブスクリプションを選択します。
  
@@ -91,14 +86,10 @@ ms.locfileid: "43636561"
 
 ::: moniker range="o365-21vianet"
   
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-    Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-    21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 継続請求を管理するサブスクリプションを選択します。
- 
+
 3. **定期的な課金**を有効にするには、トグルを **[オン**] に切り替えます。
 
     ![定期的な請求書が有効になっているサブスクリプションカードのクローズアップ。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

@@ -1,5 +1,5 @@
 ---
-title: Office 365 の&amp;セキュリティコンプライアンスを計画する
+title: セキュリティ&amp;コンプライアンスを計画する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: セキュリティとコンプライアンスを計画するためのランディングページ
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 784cf4a2fec64a8156d8761942091fec066e5ae7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 93c342a6b94dfb2333963c682f01e6a37aa7fb72
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597754"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626651"
 ---
-# <a name="plan-for-security-amp-compliance-in-office-365"></a>Office 365 の&amp;セキュリティコンプライアンスを計画する
+# <a name="plan-for-security-amp-compliance"></a>セキュリティ&amp;コンプライアンスを計画する
 
-セキュリティとコンプライアンスの管理は、パートナーシップです。 Microsoft 強力は Office 365 サービスを保護していますが、データ、id、デバイスを保護する責任があります。 Office 365 と Enterprise Mobility + Security (EMS) を一緒に使用して、組織に適したレベルの保護を実現することができます。
+セキュリティとコンプライアンスの管理は、パートナーシップです。 Microsoft 強力は Microsoft 365 services を保護していますが、お客様はデータ、id、デバイスを保護する責任があります。 Microsoft 365 と Enterprise Mobility + Security (EMS) を一緒に使用して、組織に適したレベルの保護を実現できます。
   
 ## <a name="step-1-review-capabilities"></a>手順 1: 機能を確認する
 
@@ -35,13 +35,13 @@ Office 365 の情報保護のポスターの情報保護機能に自分を向け
   
 ## <a name="step-2-check-your-secure-score"></a>手順 2: セキュリティで保護されたスコアを確認する
 
-Office 365 のサブスクリプションを設定した後、開始スコアをメモします。 「Secure Score」では、スコアを増やすために使用できる Office 365 の構成の提案を示します。 目標は、ユーザーの生産性に悪影響を及ぼすことがない環境を保護するために取ることができるチャンスを認識することです。
+Microsoft 365 サブスクリプションを設定した後、開始スコアをメモします。 セキュリティで保護されたスコアスコアを増やすために実行できる構成の提案を示します。 目標は、ユーザーの生産性に悪影響を及ぼすことがない環境を保護するために取ることができるチャンスを認識することです。
   
 - [Office 365 のセキュリティスコアの導入](../security/mtp/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>手順 3: id とデバイスのアクセス保護を計画する
 
-Office 365 データおよびサービスへのアクセスを保護することは、cyberattacks を防御し、データ損失を防ぐために不可欠です。
+Microsoft 365 データおよびサービスへのアクセスを保護することは、cyberattacks を防御し、データ損失を防ぐために不可欠です。
   
 - [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
     
@@ -57,13 +57,13 @@ Office 365 データおよびサービスへのアクセスを保護すること
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: Microsoft 365 セキュリティ&amp;コンプライアンスセンターを活用する
 
-セキュリティ&amp;コンプライアンスセンターでは、脅威管理、データガバナンス、検索と調査など、Office 365 のさまざまなセキュリティを管理するために使用するコントロールを1つのビューで確認できます。 
+セキュリティ&amp;コンプライアンスセンターでは、脅威管理、データガバナンス、検索と調査など、Microsoft 365 セキュリティのさまざまな分野を管理するために使用するコントロールを1つのビューで確認できます。 
   
-- [Office 365 セキュリティ&amp;コンプライアンスセンターに移動する](go-to-the-securitycompliance-center.md)
+- [セキュリティ&amp; /コンプライアンスセンターに移動する](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
+- [セキュリティ&amp; /コンプライアンスセンターのアクセス許可](~/security/office-365-security/protect-against-threats.md)
     
-- [Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [ユーザーにセキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>手順 6: エンドツーエンドのセキュリティシナリオを出発点として使用する
 
@@ -75,10 +75,10 @@ Office 365 データおよびサービスへのアクセスを保護すること
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理センターとダッシュボード
 
-Office 365 環境を保護するために、これらの管理センターおよびダッシュボードでセキュリティとコンプライアンスの設定を構成します。
+これらの管理センターおよびダッシュボードでのセキュリティとコンプライアンスの設定を構成して、Microsoft 365 環境を保護します。
   
 |**Subscription**|**管理 URL**|**ダッシュボードと管理センター**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターと OneDrive for Business 管理センター  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターと OneDrive for Business 管理センター  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft モバイルアプリケーション管理  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |

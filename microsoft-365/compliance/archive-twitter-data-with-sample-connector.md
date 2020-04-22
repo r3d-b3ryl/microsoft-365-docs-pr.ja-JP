@@ -1,5 +1,5 @@
 ---
-title: Twitter データをアーカイブするためのコネクタの設定
+title: コネクタセットアップしてTwitter のデータをアーカイブする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Twitter データを Microsoft 365 にインポートするためのネイティブコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理することができます。
-ms.openlocfilehash: 91cf62bd7ab9de2b368689e7d44f88d1868f42ae
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 866bd61c40aa998bcb612ee1d82f8275f075bb8e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596014"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630614"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data"></a>Twitter データをアーカイブするためのコネクタの設定
+# <a name="set-up-a-connector-to-archive-twitter-data"></a>コネクタセットアップしてTwitter のデータをアーカイブする
 
 Microsoft 365 コンプライアンスセンターのコネクタを使用して、Twitter から Microsoft 365 にデータをインポートおよびアーカイブします。 コネクタをセットアップして構成すると、組織の Twitter アカウントに (スケジュールに従って) 接続され、アイテムのコンテンツが電子メールメッセージの形式に変換されてから、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
 Twitter データがインポートされたら、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能を Twitter データに適用することができます。 たとえば、メールボックスが訴訟ホールドの対象となっている場合、またはアイテム保持ポリシーに割り当てられている場合、Twitter データは保持されます。 高度な電子情報開示ケースでは、コンテンツ検索を使用してサードパーティのデータを検索したり、Twitter データが格納されているメールボックスを保管担当者に関連付けることができます。 コネクタを使用して、Microsoft 365 で Twitter データをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
-Twitter データをインポートすると、メールボックスに格納されているデータに、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、通信コンプライアンス、Office 365 アイテム保持ポリシーなどの Office 365 コンプライアンス機能を適用できます。 たとえば、コンテンツ検索を使用して Twitter データを検索したり、保管担当者でデータが格納されているメールボックスを、高度な電子情報開示ケースに関連付けたりすることができます。 コネクタを使用して Office 365 で Twitter データをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
+Twitter データがインポートされたら、メールボックスに格納されているデータに、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、通信コンプライアンス、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能を適用できます。 たとえば、コンテンツ検索を使用して Twitter データを検索したり、保管担当者でデータが格納されているメールボックスを、高度な電子情報開示ケースに関連付けたりすることができます。 コネクタを使用して、Microsoft 365 で Twitter データをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Twitter 用のコネクタを設定するための前提条件
 
@@ -40,9 +40,9 @@ Microsoft 365 コンプライアンスセンターでコネクタを設定およ
     - [Azure へのご購入のサブスクリプションへのサインアップ](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 サブスクリプションに含まれている[無料の Azure Active Directory サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)は、セキュリティ & コンプライアンスセンターのコネクタをサポートしていません。
+    > Microsoft 365 サブスクリプションに含まれている[無料の Azure Active Directory サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)は、セキュリティ & コンプライアンスセンターのコネクタをサポートしていません。
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。
+- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、グローバル管理者の資格情報でサインインし、要求を承諾します。
 
 - Microsoft 365 コンプライアンスセンター (手順 5) で Twitter connector をセットアップするユーザーは、Exchange Online でメールボックスのインポートのエクスポート役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「[役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)」または「[役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)」のセクションを参照してください。
 

@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用します。
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631063"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708501"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -60,9 +60,11 @@ ATP レポートの概要とその使用方法については、この記事を�
 
 ![脅威保護の状態レポートのドロップダウンが表示されています。](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-これらのビューは、ボタンクリック (電子メール > フィッシング、電子メール > マルウェア、およびコンテンツ > マルウェアビュー) を使用して、エクスポートするオプションを提供します。 コンピューターにエクスポートされた集計データを Excel で開くことができます。
+これらのビューでは、ボタンのクリック (**電子メール** \> **フィッシング**、**電子メール**\>**マルウェア**、および**コンテンツ** \> **マルウェア**の表示) を使用して、エクスポートするオプションが提供されます。 コンピューターにエクスポートされた集計データを Excel で開くことができます。
 
 ![この図は、マルウェアビューのメニュー、[スケジュールの作成]、および [要求レポート] のオプションとしてのエクスポートを示しています。](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**注**:**フィッシング**および**マルウェア**に対してエクスポートできるエントリの最大数は、1万の下のみです。 ビューをエクスポートする場合は、最新の1万エントリのみがエクスポートされます。
 
 概要とメールのビューでは、24時間ではなく、処理時間内に情報が表示されます (demand re)。 ここでは、この速度が向上しています)。
 

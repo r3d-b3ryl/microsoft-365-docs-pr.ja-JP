@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の DLP レポートを使用すると、DLP ポリシーの一致、オーバーライド、誤検知の数をすばやく表示できます。時間の経過と共に、傾向の上下が変化するかどうかを確認します。レポートをさまざまな方法でフィルター処理します。そして、グラフ上の線上の点を選択して詳細を表示します。
-ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068763"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626293"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
-データ損失防止 (DLP) ポリシーを作成したら、意図したとおりに動作していることを確認し、準拠を維持するための支援を求めることができます。 Office 365 セキュリティ&amp;コンプライアンスセンターの DLP レポートを使用すると、次のものをすばやく表示できます。
+データ損失防止 (DLP) ポリシーを作成したら、意図したとおりに動作していることを確認し、準拠を維持するための支援を求めることができます。 セキュリティ&amp; /コンプライアンスセンターの DLP レポートを使用すると、次のものをすばやく表示できます。
   
 - **DLP ポリシーの一致**このレポートには、長期間の DLP ポリシーの一致数が表示されます。 レポートは、日付、場所、ポリシー、またはアクションによってフィルター処理できます。 このレポートを使用して、次のことができます。 
     
@@ -87,9 +87,9 @@ DLP ポリシーでユーザーによる上書きを許可する場合は、誤�
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用&amp;してセキュリティコンプライアンスセンターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 次のいずれかの[Office 365 &amp;セキュリティコンプライアンスセンターコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)を使用する
+2. これらの[セキュリティ&amp;コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)のいずれかを使用する
     
 ただし、DLP レポートは、Exchange Online を含む Office 365 全体からデータを取り込む必要があります。 このため、DLP レポートのコマンドレットは、セキュリティ&amp;コンプライアンスセンターの powershell ではなく、Exchange Online の powershell で利用できます。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
   

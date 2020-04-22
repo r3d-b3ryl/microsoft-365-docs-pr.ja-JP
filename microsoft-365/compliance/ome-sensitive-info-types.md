@@ -1,5 +1,5 @@
 ---
-title: Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
+title: メッセージの暗号化を使用して組織の機密情報の種類のポリシーを作成する
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: '概要: 機密情報の種類に関する Office 365 メッセージの暗号化ポリシー。'
-ms.openlocfilehash: a3767fb0f9fe5e565c49db4f9da94d75a3cee8a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a36ab68eb649c84a46fa96de8ee400632c5c1d26
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601794"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626875"
 ---
-# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージの暗号化を使用して組織の機密情報の種類のポリシーを作成する
 
-Exchange メールフロールールまたは Office 365 データ損失防止 (DLP) のいずれかを使用して、Office 365 メッセージの暗号化を使用して機密情報の種類ポリシーを作成できます。 Exchange メールフロールールを作成するには、Exchange 管理センター (EAC) または PowerShell のどちらかを使用できます。
+Exchange メールフロールールまたはデータ損失防止 (DLP) のいずれかを使用して、Office 365 メッセージの暗号化を使用して機密情報の種類のポリシーを作成できます。 Exchange メールフロールールを作成するには、Exchange 管理センター (EAC) または PowerShell のどちらかを使用できます。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>EAC でメールフロールールを使用してポリシーを作成するには
 
@@ -34,7 +34,7 @@ Exchange 管理センター (EAC) にサインインし、[**メールフロー*
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>PowerShell でメールフロールールを使用してポリシーを作成するには
 
-Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始して Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。 New-transportrule コマンドレットと新しいコマンドレットを使用して、ポリシーを作成します。
+組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。 New-transportrule コマンドレットと新しいコマンドレットを使用して、ポリシーを作成します。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>PowerShell を使用して作成されたメールフロールールの例
 
@@ -57,21 +57,21 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 ## <a name="how-recipients-access-attachments"></a>受信者が添付ファイルにアクセスする方法
 
-Office 365 がメッセージを暗号化した後は、受信者が暗号化された電子メールにアクセスして開くときに、添付ファイルへのアクセス権を無制限にすることができます。
+Microsoft がメッセージを暗号化すると、受信者は暗号化された電子メールにアクセスして開くときに、添付ファイルに無制限でアクセスできるようになります。
 
 ## <a name="to-prepare-for-this-change"></a>この変更を準備するには
 
 この変更に関して組織内のユーザーを準備するために、適用可能なエンドユーザードキュメントおよびトレーニング資料を更新することが必要な場合があります。 必要に応じて、これらの Office 365 メッセージ暗号化リソースをユーザーと共有します。
 
 - [Outlook for PC で暗号化されたメッセージを送信、表示、および返信する](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Office 365 Essentials ビデオ: Office メッセージの暗号化](https://youtu.be/CQR0cG_iEUc)
+- [Microsoft 365 Essentials Video: Office メッセージの暗号化](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>監査ログでのこれらの変更の表示
 
-Office 365 は、このアクティビティを監査して、Office 365 管理者が使用できるようにします。 この操作は ' New-transportrule ' であり、セキュリティ & コンプライアンスセンターでの監査ログの検索からのサンプルの監査エントリのスニペットは以下のとおりです。
+Microsoft 365 は、このアクティビティを監査して、管理者が使用できるようにします。 この操作は ' New-transportrule ' であり、セキュリティ & コンプライアンスセンターでの監査ログの検索からのサンプルの監査エントリのスニペットは以下のとおりです。
 
 ```text
-*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*
 ```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>機密情報の種類のポリシーを無効にする、またはカスタマイズするには

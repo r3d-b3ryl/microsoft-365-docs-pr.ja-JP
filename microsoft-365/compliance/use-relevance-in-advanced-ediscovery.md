@@ -1,5 +1,5 @@
 ---
-title: Office 365 の詳細な電子情報開示の関連モジュールを使用する
+title: 詳細な電子情報開示で関連性モジュールを使用する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'Office 365 Advanced eDiscovery の関連性モジュールについて説明します。これには、ワークフロー、ガイドライン、トレーニングとファイルレビューの手順が含まれます。  '
-ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '詳細な電子情報開示の関連性モジュールについて説明します。これには、ワークフロー、ガイドライン、トレーニングとファイルレビューの手順が含まれます。  '
+ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557635"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626393"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>詳細な電子情報開示で関連性モジュールを使用する (クラシック)
 
@@ -124,7 +124,7 @@ ms.locfileid: "42557635"
     
   - 意味: この時点では、関連性トレーニングは必要ありません。
     
-詳細な電子情報開示では、さまざまな段階で推奨される次の手順を使用してプロセスを進めることができますが、タブとページ間を移動したり、個別のケース、問題、またはの状況に関係する状況に対処するための選択を行ったりすることもできます。ドキュメントレビュープロセス。 
+詳細な電子情報開示では、さまざまな段階での推奨される次の手順に従ってプロセスを進めることができますが、タブとページ間を移動したり、個別のケース、問題、またはドキュメントのレビュープロセスに関係する状況に対処するための選択肢を作成したりすることもできます。 
   
 高度な電子情報開示の次のステップ処理の選択を承諾または無効にすることができます。 次の推奨手順以外の手順を実行する場合は、ダイアログボックスの展開された問題の表示で**次の手順**をクリックし、次の手順の横にある [**変更**] ボタンをクリックして、別の [次の手順] オプションを選択します。 
   
@@ -133,7 +133,7 @@ ms.locfileid: "42557635"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [関連性の評価について](assessment-in-relevance-in-advanced-ediscovery.md)
   

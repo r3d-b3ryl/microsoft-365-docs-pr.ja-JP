@@ -1,5 +1,5 @@
 ---
-title: Office 365 で問題を定義してユーザーを割り当てる高度な電子情報開示
+title: 高度な電子情報開示で問題を定義してユーザーを割り当てる
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
-description: Office 365 Advanced eDiscovery でユーザーを割り当てたり、電子情報開示ケースの問題を削除したりするなど、案件を追加または編集する方法について説明します。
-ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 詳細な電子情報開示で電子情報開示ケースのユーザーの割り当てを含む、問題を追加または編集する方法について説明します。
+ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556975"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630660"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Advanced eDiscovery での問題の定義とユーザーの割り当て (クラシック)
 
@@ -76,7 +76,7 @@ ms.locfileid: "42556975"
     
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [インポートしたファイルを追加するためのロードの設定](set-up-loads-to-add-imported-files.md)
   

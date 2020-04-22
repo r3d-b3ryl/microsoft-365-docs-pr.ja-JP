@@ -1,5 +1,5 @@
 ---
-title: 特権アクセス管理の概要
+title: 特権アクセス管理の使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -17,18 +17,18 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 196685eda6818b399c778363ee458f6f2792a33a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115993"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626513"
 ---
-# <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の概要
+# <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の使用を開始する
 
-このトピックでは、Office 365 組織で特権アクセス管理を有効にして構成する手順を説明します。 Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。
+このトピックでは、組織で特権アクセス管理を有効にして構成する手順を説明します。 Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 特権アクセス管理を使い始める前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 特権アクセス管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 
@@ -46,11 +46,11 @@ ms.locfileid: "43115993"
 >[!IMPORTANT]
 >Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。
 
-既存の Microsoft 365 Enterprise E5 プランを持っておらず、特権アクセス管理を実行する場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の Office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
+既存の Office 365 Enterprise E5 プランを持っておらず、特権アクセス管理を実行する場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
 
 ## <a name="enable-and-configure-privileged-access-management"></a>特権アクセス管理を有効にして構成する
 
-Office 365 組織で特権アクセスをセットアップして使用するには、次の手順を実行します。
+次の手順に従って、組織内で特権アクセスを設定して使用します。
 
 - [手順 1: 承認者のグループを作成する](privileged-access-management-configuration.md#step1)
 
@@ -71,7 +71,7 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 承認が付与されると、要求元のユーザーは目的のタスクを実行できるようになり、特権アクセスにより、ユーザーに代わってタスクが承認および実行されます。 承認は、要求された期間 (既定の期間は4時間) に対して有効なままとなり、要求者は目的のタスクを複数回実行できます。 このような実行はすべてログに記録され、セキュリティとコンプライアンスの監査に使用できるようになります。 
 
 >[!NOTE]
->Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。 Office 365 組織に対して多要素認証を有効にして、Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用する必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
+>Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。 Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用して、組織で多要素認証を有効にする必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
 
 <a name="step1"> </a>
 
@@ -126,7 +126,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3-create-an-access-policy"></a>手順 3: アクセスポリシーを作成する
 
-Office 365 組織に対して最大30の特権アクセスポリシーを作成し、構成することができます。
+組織に対して最大30の特権アクセスポリシーを作成し、構成することができます。
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 

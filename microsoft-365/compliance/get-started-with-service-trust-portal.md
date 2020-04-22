@@ -13,13 +13,13 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Office 365、Azure、および Dynamics 365 Online の法令遵守レポートでは、サードパーティの監査を表示するために、Microsoft が顧客データを安全に保持する方法と、これらのオンラインサービスを使用する場合に ISO、HIPAA、NIST、FINRA、GDPR、および FedRAMP に準拠する方法について説明します。
-ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365、Azure、および Dynamics 365 Online の法令遵守レポートでは、サードパーティの監査を確認するために、Microsoft が顧客データを安全に保持する方法と、これらのオンラインサービスを使用する場合に ISO、HIPAA、NIST、FINRA、GDPR、および FedRAMP に準拠する方法について説明します。
+ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073158"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632448"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal を使い始める
 
@@ -27,11 +27,11 @@ Microsoft Service Trust Portal は、Microsoft のセキュリティ、プライ
   
 ## <a name="accessing-the-service-trust-portal"></a>サービス信頼ポータルへのアクセス
 
-Service Trust Portal には、クラウドサービスおよびお客様のデータを保護する Microsoft の制御とプロセスの実装に関する詳細が含まれています。 サービス信頼ポータルの一部のリソースにアクセスするには、Microsoft クラウドサービスアカウント (Azure Active Directory 組織アカウントまたは Microsoft アカウント) を使用して認証済みユーザーとしてログインし、Microsoft を確認して同意する必要があります。コンプライアンス資料の機密保持契約。
+Service Trust Portal には、クラウドサービスおよびお客様のデータを保護する Microsoft の制御とプロセスの実装に関する詳細が含まれています。 サービス信頼ポータルの一部のリソースにアクセスするには、Microsoft クラウドサービスアカウント (Azure Active Directory 組織アカウントまたは Microsoft アカウント) を使用して認証済みユーザーとしてログインし、法令遵守のための Microsoft の機密保持契約書を確認して同意する必要があります。
   
 **既存のお客様**は、次の[https://aka.ms/STP](https://aka.ms/STP)オンラインサブスクリプション (試用版または有料版) のいずれかでサービス信頼ポータルにアクセスできます。 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
@@ -44,7 +44,7 @@ Service Trust Portal には、クラウドサービスおよびお客様のデ�
   
 新しいアカウントを作成するか、試用版アカウントを作成するには、次のサインアップフォームのいずれかを使用します (試用版アカウントにも使用されます)。
   
-- 新しい[office 365 Business 試用版アカウント](https://go.microsoft.com/fwlink/p/?LinkID=507653)または新しい[office 365 Enterprise 試用版アカウント](https://go.microsoft.com/fwlink/p/?LinkID=698279)にサインアップする
+- 新しい[Microsoft 365 Apps for business 試用版アカウント](https://go.microsoft.com/fwlink/p/?LinkID=507653)または新しい[Office 365 Enterprise 試用版アカウント](https://go.microsoft.com/fwlink/p/?LinkID=698279)にサインアップする
 
 - 新しい[Dynamics 365 試用版アカウント](https://go.microsoft.com/fwlink/?LinkId=252780)にサインアップする
 
@@ -66,7 +66,7 @@ Service Trust Portal には、クラウドサービスおよびお客様のデ�
 
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
-コンプライアンスマネージャーは、Office 365、Dynamics 365、Azure などの Microsoft クラウドサービスに関連する組織のコンプライアンスアクティビティを追跡、割り当て、検証するために役立つ、ワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用して、クラウドの共有責任モデルで法令遵守を管理します。 使用するコンプライアンスマネージャーのバージョンに応じて、詳細については次の記事を参照してください。
+コンプライアンスマネージャーは、microsoft 365、Dynamics 365、Azure などの Microsoft クラウドサービスに関連する組織のコンプライアンスアクティビティを追跡、割り当て、検証するために役立つ、ワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用して、クラウドの共有責任モデルで法令遵守を管理します。 使用するコンプライアンスマネージャーのバージョンに応じて、詳細については次の記事を参照してください。
 
 - [Microsoft コンプライアンス マネージャー (クラシック)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
@@ -102,7 +102,7 @@ Microsoft クラウドサービスに関する業界固有または地域固有�
   
 ### <a name="trust-center"></a>セキュリティ センター
 
-Microsoft セキュリティ[センター](https://www.microsoft.com/trust-center)へのリンク。これにより、microsoft クラウドでのセキュリティ、コンプライアンス、およびプライバシーに関する詳細情報が提供されます。 これには、Microsoft クラウドサービスの機能に関する情報が含まれています。この情報には、GDPR の特定の要件に対応するために役立つドキュメント、GDPR のアカウンタビリティに役立つドキュメント、および技術および組織の測定基準についての理解を深めることができます。Microsoft は、GDPR をサポートするために実行しました。
+Microsoft セキュリティ[センター](https://www.microsoft.com/trust-center)へのリンク。これにより、microsoft クラウドでのセキュリティ、コンプライアンス、およびプライバシーに関する詳細情報が提供されます。 これには、Microsoft クラウドサービスの機能に関する情報が含まれており、GDPR の特定の要件に対応するために使用できます。また、GDPR のアカウンタビリティに役立つドキュメント、および GDPR をサポートするために Microsoft が実施した技術および組織の方策について理解しています。
   
 ### <a name="my-library"></a>マイ ライブラリ
 

@@ -1,5 +1,5 @@
 ---
-title: Office の分析結果を表示する 365 Advanced eDiscovery
+title: 高度な電子情報開示での分析結果の表示
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: '表示されているタスクオプションの定義を含む、Office 365 Advanced eDiscovery の分析プロセスの結果を表示する場所について説明します。  '
-ms.openlocfilehash: adee00d2b7826827cc14f4ca945952f4892511a1
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '表示されるタスクオプションの定義を含む、高度な電子情報開示での分析プロセスの結果を表示する場所について説明します。  '
+ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557625"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626363"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>高度な電子情報開示での分析結果の表示 (クラシック)
 
@@ -77,7 +77,7 @@ ms.locfileid: "42557625"
   
 ## <a name="see-also"></a>関連項目
 
-[高度な電子情報開示 (クラシック)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
 [ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   

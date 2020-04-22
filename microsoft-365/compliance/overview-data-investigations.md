@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
-ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328079"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626773"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査 (プレビュー) の概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "42328079"
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>機密、悪意、または間違ったデータを検索する
 
-[**検索**] タブを使用して、Office 365 で修復するデータを検索するための検索を作成します。 クエリベースの検索を作成して実行して、設定された電子メールメッセージと、そのデータを含む可能性があるドキュメントを特定し、それらをレビューと分析の証拠として収集することができます。 また、検索ツールを使用して、サンプルドキュメントをプレビューしたり、検索結果の絞り込みおよび改善に役立つ検索統計を表示したりすることもできます。 検索結果に調査に関連するすべてのデータが含まれていることを確認したら、検索結果を証拠セットに追加して、より詳細なレビュー、影響評価、是正措置を必要に応じて行います。 詳細については、「[調査時にデータを検索する](search-for-data.md)」を参照してください。
+[**検索**] タブを使用して、修復するデータについて Microsoft 365 を検索する検索を作成します。 クエリベースの検索を作成して実行して、設定された電子メールメッセージと、そのデータを含む可能性があるドキュメントを特定し、それらをレビューと分析の証拠として収集することができます。 また、検索ツールを使用して、サンプルドキュメントをプレビューしたり、検索結果の絞り込みおよび改善に役立つ検索統計を表示したりすることもできます。 検索結果に調査に関連するすべてのデータが含まれていることを確認したら、検索結果を証拠セットに追加して、より詳細なレビュー、影響評価、是正措置を必要に応じて行います。 詳細については、「[調査時にデータを検索する](search-for-data.md)」を参照してください。
 
 ## <a name="review-and-investigate-evidence"></a>証拠の確認と調査
 

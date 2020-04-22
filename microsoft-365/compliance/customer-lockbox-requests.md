@@ -1,5 +1,5 @@
 ---
-title: Office 365 カスタマー ロックボックス要求
+title: 顧客のロックボックス要求
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: f909d67383c248ab42c469f850de0e42cc41eede
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3ae04648cc89bf9871bb48e5669c620ffd7564ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211954"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637789"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
-この記事では、お客様のロックボックスの展開と構成に関するガイダンスを示します。 Customer ロックボックスは、Exchange Online、SharePoint Online、OneDrive for business のデータにアクセスするための要求をサポートしています。 他の Office 365 サービスのサポートを推奨するには、 [office 365 UserVoice](https://office365.uservoice.com/)で要求を送信してください。
+この記事では、お客様のロックボックスの展開と構成に関するガイダンスを示します。 Customer ロックボックスは、Exchange Online、SharePoint Online、OneDrive for business のデータにアクセスするための要求をサポートしています。 他のサービスのサポートを推奨するには、 [Office 365 UserVoice](https://office365.uservoice.com/)で要求を送信してください。
 
 Microsoft 365 のコンプライアンスの提供 (2020 年4月1日現在) を利用してユーザーにライセンスを付与するためのオプションを確認するには、「 [microsoft 365 ライセンスガイダンス (セキュリティ & 法令遵守](https://aka.ms/ComplianceSD)」を参照してください。
 
@@ -42,7 +42,7 @@ Microsoft のエンジニアは、サポートプロセスでお客様から報�
 
 次の手順では、Microsoft のエンジニアがカスタマーロックボックス要求を開始するときの一般的なワークフローの概要を示します。
 
-1. 組織内の誰かが Office 365 メールボックスで問題を経験している。
+1. 組織内の誰かが Microsoft 365 メールボックスで問題を経験している。
 
 2. ユーザーが問題のトラブルシューティングを行った後、問題を修正できない場合は、Microsoft サポートにサポートリクエストを開きます。
 
@@ -56,7 +56,7 @@ Microsoft のエンジニアは、サポートプロセスでお客様から報�
 
    Microsoft 365 管理センターで[カスタマーロックボックスアクセス承認](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)者の役割を割り当てられたすべてのユーザーは、顧客ロックボックス要求を承認できます。
 
-6. 承認者は、Microsoft 365 管理センターにサインインし、要求を承認します。 この手順では、Office 365 監査ログの検索によって使用可能な監査レコードの作成が開始されます。 詳細については、「[顧客ロックボックス要求の監査](#auditing-customer-lockbox-requests)」を参照してください。
+6. 承認者は、Microsoft 365 管理センターにサインインし、要求を承認します。 この手順では、監査ログの検索によって使用可能な監査レコードの作成が開始されます。 詳細については、「[顧客ロックボックス要求の監査](#auditing-customer-lockbox-requests)」を参照してください。
 
    顧客が要求を拒否した場合、または要求を12時間以内に承認しなかった場合、要求は有効期限が切れ、Microsoft のエンジニアにはアクセス権が付与されません。
 
@@ -66,7 +66,7 @@ Microsoft のエンジニアは、サポートプロセスでお客様から報�
 7. 組織からの承認者が要求を承認した後、Microsoft エンジニアは承認メッセージを受信し、Exchange Online のテナントにログインして、お客様の問題を修正します。 Microsoft のエンジニアは、要求された期間に、アクセスが自動的に取り消される前に問題を修正します。
 
 > [!NOTE]
-> Microsoft のエンジニアによって実行されるすべての操作は、Office 365 監査ログに記録されます。 これらの監査レコードを検索して確認することができます。
+> Microsoft のエンジニアによって実行されるすべての操作は、監査ログに記録されます。 これらの監査レコードを検索して確認することができます。
 
 ## <a name="turn-customer-lockbox-requests-on-or-off"></a>カスタマーロックボックス要求を有効または無効にする
 
@@ -104,15 +104,15 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 
 ## <a name="auditing-customer-lockbox-requests"></a>顧客ロックボックス要求の監査
 
-カスタマーロックボックス要求に対応する監査レコードは、Office 365 監査ログに記録されます。 これらのログには、Office 365 セキュリティ & コンプライアンスセンターの[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)を使用してアクセスできます。 カスタマーロックボックス要求の承諾または拒否に関連する操作 (アクセス要求が承認された場合) は、Office 365 監査ログにも記録されます。 これらの監査レコードを検索して確認することができます。
+顧客のロックボックス要求に対応する監査レコードは、監査ログに記録されます。 これらのログには、セキュリティ & コンプライアンスセンターの[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)を使用してアクセスできます。 カスタマーロックボックス要求の承諾または拒否に関連する操作 (アクセス要求が承認された場合) は、監査ログにも記録されます。 これらの監査レコードを検索して確認することができます。
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>カスタマーロックボックス要求に関連するアクティビティの監査ログを検索する
 
-監査ログを使用して顧客ロックボックスの要求を追跡できるようにするには、監査ログを設定するためにいくつかの手順が必要になります。 詳細については、「[Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)」を参照してください。 セットアップが完了したら、次の手順を使用して監査ログ検索クエリを作成し、顧客ロックボックスに関連する監査レコードを返します。
+監査ログを使用して顧客ロックボックスの要求を追跡できるようにするには、監査ログを設定するためにいくつかの手順が必要になります。 詳細については、「[セキュリティ & のコンプライアンスセンターでの監査ログの検索](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)」を参照してください。 セットアップが完了したら、次の手順を使用して監査ログ検索クエリを作成し、顧客ロックボックスに関連する監査レコードを返します。
 
 1. [https://protection.office.com](https://protection.office.com) に移動します。
   
-2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
+2. 職場または学校のアカウントを使用してサインインします。
 
 3. [セキュリティ & コンプライアンスセンター] の左側のウィンドウで、[**検索 & 調査** > **監査ログの検索**] を選択します。
 
@@ -146,13 +146,13 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 
 ### <a name="audit-record-for-a-customer-lockbox-access-request"></a>カスタマーロックボックスのアクセス要求の監査レコード
 
-組織内のユーザーがカスタマーロックボックス要求を承認または拒否すると、監査レコードが Office 365 監査ログに記録されます。 このレコードには、次の情報が含まれています。
+組織内のユーザーがカスタマーロックボックス要求を承認または拒否すると、監査ログが監査ログに記録されます。 このレコードには、次の情報が含まれています。
 
 | Audit record プロパティ| 説明|
 |:---------- |:----------|
 | 日付       | 顧客のロックボックス要求が承認または拒否された日時。
 | IP アドレス | 承認者が要求を承認または拒否するために使用したコンピューターの IP アドレス。 |
-| ユーザー       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
+| User       | Prod.outlook.com のサービスアカウント\[BOXServiceAccount@\]。            |
 | アクティビティ   | AccessToCustomerDataRequest;これは、顧客のロックボックス要求を承認または拒否するときに記録される監査アクティビティです。                                |
 | アイテム       | 顧客のロックボックス要求の Guid                             |
 
@@ -171,23 +171,23 @@ Microsoft 365 管理センターでカスタマーロックボックスコント
 |:---------- |:----------|
 | 日付       | アクションが実行された日時。 この操作が実行された時間は、顧客のロックボックス要求が承認された4時間以内になることに注意してください。              |
 | IP アドレス | Microsoft エンジニアが使用したコンピューターの IP アドレス。 |
-| ユーザー       | Microsoft Operator;この値は、このレコードが顧客のロックボックス要求に関連付けられていることを示します。                                  |
+| User       | Microsoft Operator;この値は、このレコードが顧客のロックボックス要求に関連付けられていることを示します。                                  |
 | アクティビティ   | Microsoft エンジニアによって実行されたアクティビティの名前。|
 | アイテム       | \<必須\>                                             |
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-#### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>どの Office 365 サービスが顧客ロックボックスに適用されますか。
+#### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>どの Microsoft 365 サービスが顧客ロックボックスに適用されますか。
 
 お客様のロックボックスは現在、Exchange Online、SharePoint Online、OneDrive for business でサポートされています。
 
-#### <a name="is-customer-lockbox-available-to-all-office-365-customers"></a>お客様のロックボックスは、すべての Office 365 のお客様が利用できますか?
+#### <a name="is-customer-lockbox-available-to-all-customers"></a>お客様のロックボックスはすべてのお客様が利用できますか?
 
 カスタマーロックボックスは、Microsoft 365 または Office 365 E5 サブスクリプションに含まれており、情報の保護とコンプライアンス、または高度なコンプライアンスアドオンサブスクリプションを使用して他のプランに追加できます。 詳細については [、「プランと価格](https://products.office.com/business/office-365-enterprise-e5-business-software) 」を参照してください。
 
 #### <a name="what-is-customer-content"></a>顧客コンテンツとは
 
-顧客コンテンツは、Office 365 サービスおよびアプリケーションのユーザーによって作成されたデータです。 顧客コンテンツの例は次のとおりです。
+顧客コンテンツは、Microsoft 365 のサービスとアプリケーションのユーザーによって作成されたデータです。 顧客コンテンツの例は次のとおりです。
 
 - 電子メール本文またはメールの添付ファイル
 
@@ -221,7 +221,7 @@ Office 365 の顧客コンテンツの詳細については、「 [office 365 �
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>カスタマーロックボックス要求を承認した場合、エンジニアは何をすることができますか。また、Microsoft のエンジニアが何をしたかを知る方法を教えてください。
 
-カスタマーロックボックス要求を承認した後、Microsoft のエンジニアは、事前承認済みコマンドレットを使用して、お客様のコンテンツにアクセスするためにこれらの必要な権限を付与しました。 カスタマーロックボックスの要求に対応して Microsoft のエンジニアが実行するアクションは、Office 365 セキュリティ & コンプライアンスセンターの監査ログに記録され、アクセスできます。
+カスタマーロックボックス要求を承認した後、Microsoft のエンジニアは、事前承認済みコマンドレットを使用して、お客様のコンテンツにアクセスするためにこれらの必要な権限を付与しました。 カスタマーロックボックス要求に対応して Microsoft のエンジニアが実行するアクションは、セキュリティ & コンプライアンスセンターの監査ログでログに記録され、アクセスできます。
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Microsoft が承認プロセスに従うことをどのように確認できますか?
 
@@ -235,7 +235,7 @@ Office 365 の顧客コンテンツの詳細については、「 [office 365 �
 
 #### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>承認のためにコンテンツアクセス要求に関する詳細情報が必要な場合は、どうすればよいですか?
 
-各顧客のロックボックス要求には、Office 365 サービスの要求番号が含まれています。 要求に関する詳細情報を取得するには、Microsoft サポートに連絡して、このサービス番号を参照してください。
+各顧客のロックボックス要求には、Microsoft 365 サービス要求番号が含まれています。 要求に関する詳細情報を取得するには、Microsoft サポートに連絡して、このサービス番号を参照してください。
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>顧客のロックボックス要求が承認されると、アクセス許可はどのくらいの期間有効になりますか。
 
@@ -265,15 +265,15 @@ Office 365 の顧客コンテンツの詳細については、「 [office 365 �
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Microsoft では、Office 365 アプリケーションの顧客コンテンツへの継続的なアクセス権を、スタッフのメンバーが持っているかどうかを確認する方法を教えてください。
 
-Microsoft は、アクセス制御システムを使用して広範な予防措置を実装しており、これらのアクセス制御システムを回避する試みを識別して対処するための検出対策を行います。 Office 365 は、最小限の特権とジャストインタイムアクセスの原則を使用して操作します。 そのため、Microsoft の担当者は、継続的にお客様のコンテンツにアクセスするためのアクセス許可を持っていません。 アクセス許可が付与されている場合は、期間に制限があります。 
+Microsoft は、アクセス制御システムを使用して広範な予防措置を実装しており、これらのアクセス制御システムを回避する試みを識別して対処するための検出対策を行います。 Microsoft 365 は、最小限の特権とジャストインタイムアクセスの原則を使用して操作します。 そのため、Microsoft の担当者は、継続的にお客様のコンテンツにアクセスするためのアクセス許可を持っていません。 アクセス許可が付与されている場合は、期間に制限があります。 
 
-Office 365 は、*ロックボックス*と呼ばれるアクセス制御システムを使用して、サービス内で運用および管理機能を実行する機能を付与するアクセス許可に対する要求を処理します。 オペレーターは、ロックボックスを使用してユーザーのコンテンツへのアクセスを要求する必要があります。その後、アクセス許可が付与される前に、要求に対してアクションを実行する (たとえば、承認する) 必要があります。 この2番目のユーザーはリクエスターになることができず、顧客コンテンツへのアクセスを承認するように指定する必要があります。 要求が承認された場合にのみ、オペレーターは顧客コンテンツへの一時的なアクセス権を取得します。 昇格期間が過ぎると、ロックボックスはアクセスを取り消します。
+Microsoft 365 は、*ロックボックス*と呼ばれるアクセス制御システムを使用して、サービス内で運用および管理機能を実行する機能を付与するアクセス許可に対する要求を処理します。 オペレーターは、ロックボックスを使用してユーザーのコンテンツへのアクセスを要求する必要があります。その後、アクセス許可が付与される前に、要求に対してアクションを実行する (たとえば、承認する) 必要があります。 この2番目のユーザーはリクエスターになることができず、顧客コンテンツへのアクセスを承認するように指定する必要があります。 要求が承認された場合にのみ、オペレーターは顧客コンテンツへの一時的なアクセス権を取得します。 昇格期間が過ぎると、ロックボックスはアクセスを取り消します。
 
 Microsoft の一般的なセキュリティ対策の詳細については、[オンラインサービス](https://www.microsoft.com/licensing/product-licensing/products)の使用条件を参照してください。
 
 #### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>Microsoft のエンジニアがコンテンツにアクセスする必要があるのはどのような状況ですか。
 
-Microsoft のエンジニアがお客様のコンテンツへのアクセスを必要とする最も一般的なシナリオは、お客様がトラブルシューティングのためのアクセス権を必要とするサポート要求を行った場合です。 Office 365 の基本原則は、お客様のコンテンツに Microsoft がアクセスせずにサービスを運用することです。 Microsoft によって実行されるほとんどすべてのサービス操作は完全に自動化されており、人的関与はユーザーのコンテンツによって高度に制御および抽象化されています。 Office 365 の目標は、お客様が Microsoft access の特定の要求を承認するまで、サービスをサポートするためにお客様のコンテンツにアクセスすることです。
+Microsoft のエンジニアがお客様のコンテンツへのアクセスを必要とする最も一般的なシナリオは、お客様がトラブルシューティングのためのアクセス権を必要とするサポート要求を行った場合です。 Microsoft 365 の基本原則は、Microsoft がお客様のコンテンツにアクセスしなくてもサービスを運用できることです。 Microsoft によって実行されるほとんどすべてのサービス操作は完全に自動化されており、人的関与はユーザーのコンテンツによって高度に制御および抽象化されています。 Microsoft 365 の目標は、お客様が Microsoft access の特定の要求を承認するまで、サービスをサポートするためにお客様のコンテンツにアクセスすることです。
 
 #### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>Microsoft クラウドでデータをセキュリティで保護したことが既に考えられていますが、なぜお客様のロックボックスが必要ですか?
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認して、Microsoft 365 for business サブスクリプションを手動で切り替えます。
-ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636536"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707513"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Microsoft 365 for business プランを手動で切り替える
 
@@ -84,13 +84,9 @@ ms.locfileid: "43636536"
 
     ユーザーの移動元のサブスクリプションと移動先のサブスクリプションが共に一覧表示されている必要があります。最初に確認したときに新しいサブスクリプションが表示されない場合は、後でもう一度確認してみてください。両方のサブスクリプションが [ **アクティブ**] に一覧表示されていることを確認します。新しいサブスクリプションが一覧に表示されない、またはアクティブではない場合は[新しいサブスクリプションが一覧に表示されない、またはアクティブではない](#the-new-subscription-isnt-listed-or-isnt-active)を参照してください。
 
-   **利用可能なライセンスを使用した新しい Microsoft 365 for business サブスクリプション**
-
-    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **各ユーザーに割り当てる十分な数のライセンスがあることを確認する**
 
-    各ユーザーには、サブスクリプションと一致するライセンスが必要です。このため、10 ユーザーを Office 365 Enterprise E5 に移動する場合は、10 個のライセンスが使用可能であることを確認する必要があります。この画像では、Office 365 Enterprise E5 用の 10 個のライセンスが購入されており、その 10 個すべてのライセンスが割り当て可能です。
+    各ユーザーには、サブスクリプションと一致するライセンスが必要です。 そのため、10人のユーザーを Microsoft 365 Business Premium に移行する場合は、10個のライセンスが利用可能であることを確認する必要があります。 
 
 4. **新しいサブスクリプションのライセンスがさらに必要ですか?** [**サブスクリプション**] ページに移動し、 [Microsoft 365 for business サブスクリプションのライセンスを購入](../licenses/buy-licenses.md)します。
   
@@ -139,8 +135,6 @@ ms.locfileid: "43636536"
     > [!TIP]
     > ユーザーが使用できるサービスを制限するには、そのユーザーで削除するサービスを [ **オフ**] の位置に切り替えます。たとえば、Skype for Business Online 以外のすべてのサービスにユーザーがアクセスできるようにするには、Skype for Business Online サービスを [ **オフ**] の位置に切り替えます。
   
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. このユーザーが不要になったライセンスを**オフ**の位置に切り替えます。
 
 6. [**製品ライセンス**] ウィンドウの下部で、 **[クローズクローズ** \>を**割り当てる** \> ] を選択**します。**
@@ -149,19 +143,19 @@ ms.locfileid: "43636536"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a> ] ページに移動するか、[ \> **アクティブな**ユーザー]**を選択し**ます。
+1. 管理センターで、[**ユーザー** \>の<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a> ] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー** >の<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a> ] ページに移動します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -177,9 +171,7 @@ ms.locfileid: "43636536"
     > - ユーザーが使用できるサービスを制限するには、そのユーザーで削除するサービスを [ **オフ**] の位置に切り替えます。 たとえば、Skype for Business Online 以外のすべてのサービスにユーザーがアクセスできるようにするには、Skype for Business Online サービスを [ **オフ**] の位置に切り替えます。
     > - 選択したユーザーで以前に割り当てられたライセンスは削除されます。
   
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
-6. [ **既存の製品を置き換える** ] ウィンドウの下部で、[ **置換**] \> [ **閉じる**] の順に選択します。
+6. [**既存の製品を置き換える**] ウィンドウの下部で、[**置換**] \> [**閉じる**] の順に選択します。
 
 ## <a name="step-5-cancel-subscriptions-or-remove-licenses-that-you-no-longer-need-optional"></a>手順 5: サブスクリプションをキャンセルするか、不要になったライセンスを削除する (オプション)
 
