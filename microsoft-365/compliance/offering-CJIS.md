@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ef19b106d5b00bb8b436b56b6da8bb653873f3a
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
+ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583324"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772518"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事司法 Information Services (CJIS) セキュリティポリシー
 
@@ -82,7 +82,6 @@ Microsoft は、状態 CJIS Systems Agency (CSA) を使用して、情報契約�
 
 - [犯罪司法情報サービス](https://aka.ms/cjis)
 - [CJIS セキュリティポリシー](https://aka.ms/cjis-security-policy)
-- [CJIS セキュリティポリシーバージョン 5.3 backgrounder](https://aka.ms/cjis-backgrounder)
 - [Azure Government の CJIS 実装ガイドライン](https://aka.ms/cjisimplementationguidelines)
 - [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/?linkid=2087246)

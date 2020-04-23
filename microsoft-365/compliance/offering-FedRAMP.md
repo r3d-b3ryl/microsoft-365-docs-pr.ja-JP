@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d5a6ee0b5ca5c9ba1fbf83f1076940a10134a9f6
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 0ddb997246f2b7a23b25e1b611170c6163e1d670
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583594"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781484"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Federal Risk and Authorization Management Program (FedRAMP)
 
@@ -27,50 +27,48 @@ ms.locfileid: "43583594"
 
 米国連邦リスクおよび承認管理プログラム (FedRAMP) は、連邦情報セキュリティ管理法 (FISMA) でのクラウドコンピューティング製品とサービスの評価、監視、承認のための標準化されたアプローチを提供し、連邦機関による安全なクラウドソリューションの導入を促進するために確立されました。
 
-管理および予算の事務所では、すべてのエグゼクティブ連邦機関が FedRAMP を使用して、クラウドサービスのセキュリティを検証する必要があります。 (他の機関もその機能を採用しているため、公共の部門の他の分野でも役立ちます)。米国標準技術局 (NIST) 800-53 は標準を設定し、FedRAMP は、クラウドサービスプロバイダー (CSP) がその標準に適合していることを認定するプログラムです。
+管理および予算の事務所では、すべてのエグゼクティブ連邦機関が FedRAMP を使用して、クラウドサービスのセキュリティを検証する必要があります。 (他の機関もその機能を採用しているため、公共の部門の他の分野でも役立ちます)。米国標準技術局 (NIST) SP 800-53 は、必須の標準を設定し、情報システムのセキュリティカテゴリ (機密、整合性、可用性) を確立して、情報システムと情報システムが侵害されている必要がある組織への潜在的な影響を評価します。 FedRAMP は、クラウドサービスプロバイダー (CSP) がこれらの基準を満たしていることを認定するプログラムです。
 
-連邦機関にサービスを販売するための Csp desiring は、次の3つのパスを使用して、FedRAMP のコンプライアンスを示します。 (ATO) を共同認証ボード (JAB) から取得します。連邦機関から運用 (ATO) する権限を受け取ります。または、プログラムの要件を満たす CSP 提供のパッケージを開発するために独立して動作します。 これらのパスには、FedRAMP プログラムマネジメントオフィス (PMO) による厳格な技術レビューと、プログラムによって認可された独立した第三者の組織による評価が必要です。
+連邦機関にサービスを販売するための Csp desiring は、次の3つのパスを使用して、FedRAMP コンプライアンスを示します。
 
-FedRAMP 承認は、NIST ガイドライン (低、中、高) に基づく3つの影響レベルで付与されます。 これらのランクは、機密、完全性、または可用性の損失が組織に及ぼす影響 (低 (制限)、中程度 (重大な悪影響)、高 (重大または致命的) によって変化します。
+- 共同認証ボード (JAB) から運用するための (ATO) 仮の機関を獲得します。 JAB は、FedRAMP の主要なガバナンスおよび意思決定の本文です。 国防総省の代表者、国土安全保障の部署、および一般的なサービス管理は、取締役会で提供されます。 ボードは、FedRAMP コンプライアンスを実証した ATO を Csp に付与します。
+- 連邦機関から操作する権限 (ATO) を受け取ります。
+- または、プログラムの要件を満たす CSP 提供のパッケージを開発するために、単独で作業します。
+
+これらのパスには、FedRAMP プログラムマネジメントオフィス (PMO) による厳格な技術レビューと、プログラムによって認可された独立した第三者の組織による評価が必要です。
+
+FedRAMP 承認は、NIST ガイドライン (低、中、高) に基づく3つの影響レベルで付与されます。 これらのレベルは、機密、整合性、または可用性が組織に与える可能性のある影響 (低 (影響)、中程度 (重大な悪影響)、高 (重大または致命的な影響) をランク付けします。
 
 ## <a name="microsoft-and-fedramp"></a>Microsoft と FedRAMP
 
-Microsoft の官公庁クラウドサービス (Azure Government、Office 365 米国政府、および Dynamics 365 Government を含む) は米国連邦リスクおよび承認管理プログラム (FedRAMP) の要求要件を満たしており、米国連邦政府機関は、Microsoft クラウドのコスト削減と厳密なセキュリティによる恩恵を受けることができます。
+Microsoft の官公庁クラウドサービス (Azure Government、Dynamics 365 Government、Office 365 など) は米国連邦リスクおよび承認管理プログラム (FedRAMP) の要件を満たしており、米国連邦政府機関は、Microsoft クラウドのコスト削減と厳密なセキュリティによる恩恵を受けることができます。
 
-Microsoft government cloud service は、公的機関のお客様に、fedramp に準拠した豊富なサービスを提供しており、fedramp 環境での Azure リソースの展開と構成を自動化するのに役立つ、強力なガイダンスと実装ツールです。
-
-Microsoft クラウドでの FEDRAMP の利点について説明します。 [fedramp コンプライアンス backgrounder をダウンロードし](https://aka.ms/fedramp-backgrounder)てください。
-
-Azure セキュリティおよびコンプライアンスブループリントを使用して、FEDRAMP の展開を促進する方法について説明します。「 [azure をダウンロードする-青写真 FedRAMP (高) SSP」](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=64de30d4-42c6-47e7-bd52-0be935710df9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_FedRAMP%20Blueprint)
+Microsoft government cloud service では、公的機関のお客様に、fedramp に準拠した豊富なサービスを提供しています。これにより、お客様は fedramp の高レベルの[設計](https://aka.ms/fedrampblueprint)を実装する必要がある、あらゆる Azure で展開されたアーキテクチャに対して一連のポリシーを展開することができます。
 
 ## <a name="microsoft-azure-p-atos"></a>Microsoft Azure P-ATOs
 
-Azure および Azure Government は、共同認証ボードから ATO を獲得しています。
+Azure および Azure Government は、ATO を共同認証ボード (FedRAMP 認定の最高レベルのバー) から取得しています。これは、非常に機密性の高いデータを処理するために Azure および Azure Government の使用を承認します。
 
-JAB は、FedRAMP の主要なガバナンスおよび意思決定の本文です。 国防総省の代表者、国土安全保障の部署、および一般的なサービス管理は、取締役会で提供されます。 ボードは、FedRAMP コンプライアンスを実証した ATO を Csp に付与します。
+Azure および Azure Government の FedRAMP 監査には、スコープ内サービスのインフラストラクチャ、開発、運用、管理、サポートを含む情報セキュリティ管理システムが含まれていました。 ATO が付与されている場合でも、CSP は、動作するすべての政府機関からの承認 (ATO) を必要とします。 Azure では、政府機関は、独自のセキュリティ承認プロセスで Azure ATO を使用して、FedRAMP 要件にも合致するエージェンシー ATO を発行するための基礎として利用できます。
 
-Azure では、ATO は中程度の影響レベルで維持されます。 (Azure was は、ATO を受信するためのインフラストラクチャとプラットフォームサービスを備えた最初のパブリッククラウドです。)JAB には、高影響レベル (FedRAMP 認定の最高の棒) で、Azure Government が ATO に付与されています。これは、非常に機密性の高いデータを処理するために Azure Government を使用することを認証します。 必須の NIST 800-53 標準は、情報システムのセキュリティカテゴリ (機密性、整合性、可用性) を確立して、組織への潜在的な影響を評価します。情報システムと情報システムが侵害されている必要があります。 Azure および Azure Government の FedRAMP 監査には、スコープ内サービスのインフラストラクチャ、開発、運用、管理、サポートを含む情報セキュリティ管理システムが含まれていました。
+Azure は、他のクラウドプロバイダーよりも多くのサービスを FedRAMP の高影響レベルでサポートし続けます。 また、Azure パブリッククラウドの FedRAMP は、多くの政府機関のお客様のニーズに対応していますが、より厳しい要件を持つ機関は Azure Government を引き続き利用します。これにより、スタッフの高度な審査などの追加の手段が提供されます。 Microsoft は、現在の年に対して計画されているサービスに加えて、現在 Azure Government で[利用可能なすべての azure パブリックサービス](https://docs.microsoft.com/azure/azure-government/compliance/azure-services-in-fedramp-auditscope#azure-public-services-by-audit-scope)をリストしています。
 
-ATO が付与されている場合でも、CSP には、使用しているすべての政府機関からの承認 (ATO) が必要です。 Azure の場合、行政機関は、独自のセキュリティ承認プロセスで Azure ATO を使用し、ATO を発行することによって、FedRAMP の要件を満たす機関を利用することができます。
+## <a name="microsoft-dynamics-365-us-government-ato"></a>Microsoft Dynamics 365 米国政府機関 ATO
 
-## <a name="dynamics-365-us-government-ato"></a>Dynamics 365 米国政府 ATO
+Dynamics 365 米国政府機関は、米国の米国国防省、都市開発 (HUD) によって、ATO の高い影響レベルで、FedRAMP エージェンシーを付与されました。 認定の範囲は政府機関のコミュニティクラウドに限定されていますが、Dynamics 365 米国政府のビジネスプランとエンタープライズプランは、同じ一連の厳しい FedRAMP コントロールに従って動作します。
 
-- Dynamics 365 米国政府が HUD から ATO を受信しました
-- Dynamics 365 米国政府機関は、ATO と都市開発 (HUD) によって、高い影響レベルで、FedRAMP エージェンシーを付与されました。 (認定の範囲は政府機関のコミュニティクラウドに限定されていますが、Dynamics 365 米国政府のビジネスプランとエンタープライズプランは、同じ一連の厳しい FedRAMP コントロールに従って動作します)。
+## <a name="microsoft-office-365-and-office-365-us-government-atos"></a>Microsoft Office 365 および Office 365 米国政府 ATOs
 
-## <a name="office-365-atos"></a>Office 365 ATOs
-
-- Office 365、Office 365 米国政府機関は、ATO という DHHS を所有しています。
-- Office 365 米国政府機関による ATO は、防衛情報システムエージェンシー (DISA) に準拠しています。
-- Office 365 (エンタープライズおよびビジネスプラン) および Office 365 の米国政府機関は、Inspector of Health and ヒューマンサービス (DHHS) Office (the Inspector General of ATO) の中から中程度の影響レベルで、FedRAMP エージェンシーを所有しています。 Office 365 米国政府機関は、この承認を得るための最初のクラウドベースの電子メールおよびコラボレーションサービスです。
-- O365 米国政府機関の防御を使用するお客様は、ATO を使用して、O365 の受け入れを文書化するエージェンシー ATO を生成することができます。
+- Office 365 および Office 365 の米国政府機関は、米国の医療機関および人事サービス (DHHS) の ATO を所有しています。
+- Office 365 米国政府機関による ATO は、米国国防総省の情報システムエージェンシー (DISA) からの P-を備えています。 Office 365 を展開するお客様は、米国政府による防御を使用して、ATO を使用してエージェンシー ATO を生成し、その承認を文書化することができます。
+- Office 365 (エンタープライズおよびビジネスプラン) および Office 365 の米国政府機関は、Inspector ATO の DHHS オフィスの中程度の影響レベルで、FedRAMP エージェンシーを所有しています。 Office 365 米国政府機関は、この承認を得るための最初のクラウドベースの電子メールおよびコラボレーションサービスです。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 米国政府](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365 および Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
+- [Office 365 および Office 365 U.S. Governmen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 米国防総省
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Microsoft Defender ATP
@@ -78,18 +76,20 @@ ATO が付与されている場合でも、CSP には、使用しているすべ
 > [!NOTE]
 > Azure Government で Azure Active Directory を使用するには、azure パブリッククラウドに Azure Government の外部に展開されているコンポーネントを使用する必要があります。
 
-## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-Microsoft は、ATO と ATOs を維持するために、各年にクラウドサービスを recertify する必要があります。 そのためには、Microsoft はセキュリティ制御を継続的に監視して評価する必要があり、サービスのセキュリティが準拠していることを示します。
+Microsoft は、P-ATO および ATO を維持するために、Microsoft のクラウド サービスを再認定する必要があります。 そのためには、Microsoft はセキュリティ制御を継続的に監視して評価する必要があり、サービスのセキュリティが準拠していることを示します。
 
-- [Microsoft クラウド サービス承認](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
-- [Microsoft FedRAMP 監査レポート](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
+- [Microsoft cloud services FedRAMP 承認</span>](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
+- [Microsoft FedRAMP 監査レポート</span>](https://aka.ms/MicrosoftFedRAMPAuditDocuments)  
 
-## <a name="ramp-up-your-fedramp-solutions-on-azure-government"></a>Azure Government での FedRAMP ソリューションの傾斜アップ
+他の FedRAMP レポートを受信するには、 [Azure 連邦ドキュメント](mailto:AzFedDoc@microsoft.com)に電子メールを送信します。
 
-Microsoft が ATO プロセスについて説明し、Azure セキュリティとコンプライアンス FedRAMP 青写真を使用して、FedRAMP ソリューションをすばやく展開します。 この青写真は、リファレンスアーキテクチャ、展開ガイダンス、制御実装マッピング、ATO Factory サポートなどを使用して開始します。
+## <a name="quickly-deploy-your-fedramp-solutions-on-azure-government"></a>Azure Government に FedRAMP ソリューションを迅速に展開する
 
-[Azure FedRAMP ブループリントの使用を開始する](https://aka.ms/fedrampblueprint)
+Microsoft が ATO プロセスについて説明し、fedramp の大規模な青写真を使用して FedRAMP ソリューションをすばやく展開することができます。これにより、FedRAMP High controls を実装する必要がある Azure で展開されたアーキテクチャに対して、一連のポリシーを実装することができます。
+
+[Azure FedRAMP の概要 (青写真) の使用を開始する](https://aka.ms/fedrampblueprint)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -103,7 +103,7 @@ FISMA は、FISMA 要件に準拠している組織からのみ情報システ�
 
 **エージェンシーが独自のコンプライアンス作業を開始する場所**
 
-連邦機関が、FedRAMP を正常に移動し、要件を満たすために必要な手順の概要については、 [www.fedramp.gov/participate/agencies](https://www.fedramp.gov/agency-authorization/)にアクセスしてください。
+連邦機関が、FedRAMP を正常に移動し、その要件を満たすために必要な手順の概要については、「[承認済み: 代理を取得](https://www.fedramp.gov/agency-authorization/)する」に移動してください。
 
 **代理店の承認プロセスで Microsoft のコンプライアンスを使用できますか?**
 
@@ -116,7 +116,7 @@ FISMA は、FISMA 要件に準拠している組織からのみ情報システ�
 ## <a name="resources"></a>リソース
 
 - [連邦リスクおよび承認管理プログラム](https://www.fedramp.gov/)
-- [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [FedRAMP セキュリティ評価フレームワーク](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Security_Assessment_Framework.pdf)
+- [マイクロソフトのクラウドでコンプライアンスを管理する](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [FedRAMP セキュリティ評価フレームワーク](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Azure コンプライアンスの提供](https://aka.ms/azurecompliance)

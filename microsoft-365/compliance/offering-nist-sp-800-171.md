@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42221999"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781452"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -40,7 +40,7 @@ Kratos Secureinfo および Coalfire を認定したサードパーティの評�
 
 NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が使用する標準です。 付録 D: NIST SP 800 –171は、自分の CUI セキュリティ要件を、NIST SP 800-53 の関連するセキュリティコントロールに直接マッピングします。これは、スコープ内のクラウドサービスが既に評価され、FedRAMP プログラムで承認されています。
 
-米国政府機関を処理または保存するエンティティ (研究機関、コンサルティング会社、製造請負業者) は、NIST SP 800 –171の厳格な要件に準拠している必要があります。 この構成証明とは、microsoft が完全に準拠していることを保証するために CUI ワークロードの展開を検討しているお客様に対して、Microsoft のスコープを持つクラウドサービスが可能になります。 たとえば、情報システムの Microsoft クラウドサービスをスコープ内で使用することによって、「対象となる防衛情報」を処理、保存、または転送するすべての DoD 請負業者は、セキュリティに準拠する必要がある米国国防総省の各主要な条件を満たしています。NIST SP 800 –171の要件。
+米国政府機関を処理または保存するエンティティ (研究機関、コンサルティング会社、製造請負業者) は、NIST SP 800 –171の厳格な要件に準拠している必要があります。 この構成証明とは、microsoft が完全に準拠していることを保証するために CUI ワークロードの展開を検討しているお客様に対して、Microsoft のスコープを持つクラウドサービスが可能になります。 たとえば、情報システムの Microsoft cloud services をスコープ内で使用することによって、「対象となる防衛情報」を処理、保存、または送信するすべての DoD 請負業者は、NIST SP 800 –171のセキュリティ要件に準拠する必要がある米国国防総省のお客様を対象としています。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -55,7 +55,7 @@ NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が
 
 ## <a name="how-to-implement"></a>実装方法
 
-- [NIST sp 800 –171ブループリント](https://aka.ms/NIST-800-171-Blueprint): nist sp 800 –171に準拠する、Azure でのワークロードの実装のサポートを受けます。
+- [Azure 青写真サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/): NIST ベースのコントロールに準拠したワークロードの実装のサポートを受けることができます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

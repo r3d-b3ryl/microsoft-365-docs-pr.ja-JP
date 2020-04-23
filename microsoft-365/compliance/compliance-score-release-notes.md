@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコア (プレビュー) のリリースノートと既知の問題。 M365 コンプライアンスセンターの機能で、リスク評価を簡素化および自動化します。
-ms.openlocfilehash: dd7c99d2f0a86826be7803dc36e390250a4fc37b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141552"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790592"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft コンプライアンススコア (プレビュー) リリースノート
 
@@ -62,7 +62,7 @@ Microsoft コンプライアンススコアの公開プレビューでは、今�
    - ユーザーが新しいテンプレートを作成したり、既存の[テンプレート](working-with-compliance-manager.md#templates)を変更したりするには、コンプライアンスマネージャーに移動する必要があります。 
    - テンプレートを作成する場合は、[コンプライアンススコア] にテンプレートが表示されるように、**製品**と**証明書**の両方のディメンションを含める必要があります。
  - **アクセス許可の設定**: コンプライアンスマネージャーのアクセス許可をまだ持っていないユーザーには、Microsoft 365 コンプライアンスセンターでアクセス許可が設定されている必要があります ([詳細につい](compliance-score-setup.md#set-user-permissions-and-assign-roles)ては、「」を参照してください)。
-- **データの転送**: コンプライアンスマネージャーのデータを使用する組織では、コンプライアンススコアのデータが表示され、同じことが他の方法にも当てはまります。
+- **データの転送**: コンプライアンスマネージャーにデータを持つ組織は、コンプライアンススコアでそのデータを表示するので、同じことが他の方法でも同様です。
 - コンプライアンス**スコアからコンプライアンスマネージャーへのサインイン**: ユーザーがコンプライアンススコアにサインインしており、コンプライアンスマネージャーにアクセスするためのリンクを選択した場合、ユーザーはもう一度サインインする必要はありません。 リンクをクリックすると、ブラウザーで新しいタブが開き、ダイアログボックスが表示されます。 上部のセクションに、「既に Microsoft cloud services のお客様である」というヘッダーがあります。 アカウントにサインインし、[**サインイン**] ボタンを選択して、コンプライアンスマネージャーに自動的にサインインします。
 
 ## <a name="known-issues-in-compliance-score-preview"></a>コンプライアンススコアの既知の問題 (プレビュー)

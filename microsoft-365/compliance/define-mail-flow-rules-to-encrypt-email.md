@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 メッセージ暗号化を使用してメッセージを暗号化および復号化するメールフロールール (トランスポートルール) を作成する方法を学習できます。
-ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632982"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790706"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>電子メールメッセージを暗号化するためのメールフロールールを定義する
 
@@ -93,6 +93,28 @@ EAC を使用して、新しい OME 機能でメッセージの暗号化をト�
 7. [**実行**する処理] で、**メッセージセキュリティ** \>を変更するために割り当てられているアクションを削除します。**以前のバージョンの OME を適用**します。
 
 8. **[保存]** を選択します。
+
+## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>新しい OME 機能を使用して送信電子メールメッセージの暗号化を削除するメールフロールールを作成する
+
+EAC を使用して、新しい OME 機能を使用したメッセージ暗号化の削除をトリガーするためのメールフロールールを定義できます。
+
+### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>EAC を使用して、新しい OME 機能で電子メールメッセージから暗号化を削除するルールを作成する
+
+1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
+
+2. [**管理**] タイルを選択します。
+
+3. Microsoft 365 管理センターで、[**管理センター** \> ] [ **Exchange**] を選択します。
+
+4. EAC で、[**メールフロー** \> ] [**ルール**] に移動し **、[新しい** ![新規作成] アイコン](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>を選択して**新しいルールを作成**します。 EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
+
+5. [**名前**] に、[送信メールからの暗号化を削除する] など、ルールの名前を入力します。
+
+6. [**次の場合、このルールを適用**する] メッセージから暗号化を削除する条件を選択する場合は、[送信者を追加する] を**組織内**に**配置** \>します。 ここで、**受信者が** \> **組織の外部**にあるなど、特定の受信者に対して追加条件を追加します。
+
+7. [**実行する処理**] で、[**メッセージのセキュリティ** \>を変更する] [ **Office 365 のメッセージの暗号化と権限の保護を削除**する] を選択します。
+
+8. [**保存**] を選択します。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>新しい機能を使用せずに Office 365 メッセージ暗号化のメールフロールールを作成する
 
@@ -172,7 +194,7 @@ EAC を使用して、新しい OME 機能でメッセージの暗号化をト�
 
 7. [**実行する処理**] で、[**メッセージのセキュリティ** \>を変更する] を選択します。**以前のバージョンの OME を削除**します。
 
-8. **[保存]** を選択します。
+8. [**保存**] を選択します。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Exchange Online PowerShell を使用して、新しい OME 機能なしで暗号化された電子メールの返信から暗号化を削除するルールを作成する
 
