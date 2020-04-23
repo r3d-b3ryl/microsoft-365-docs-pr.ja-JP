@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Microsoft 365 管理者が利用できるリソースについて説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: b087007d99c16f06cfdacaf8021e32a9566da5d5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 02d1afa763eda2edd7a0fba5624ab5a168b80a14
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105695"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624002"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 Admin ヘルプ センター
 
@@ -182,7 +182,7 @@ ms.locfileid: "43105695"
                     </div>
                     <div class="cardText">
                         <h3>小規模企業向け</h3>
-                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Office 365 を使用して小規模企業を構築します。</a></p>
+                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Microsoft 365 を使用して小規模企業を構築します。</a></p>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@ ms.locfileid: "43105695"
                     </div>
                     <div class="cardText">
                         <h3>エンタープライズ向け</h3>
-                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">エンタープライズ組織で Office 365 を展開、構成、および管理する IT プロフェッショナル向けのガイドです。</a></p>
+                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">エンタープライズ組織で Microsoft 365 を展開、構成、および管理する IT プロフェッショナル向けのガイドです。</a></p>
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@ ms.locfileid: "43105695"
                     <div class="cardText">
                         <h3>トラブルシューティング</h3>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=522692">Office のインストールの問題を解決する</a></p>
-                        <p><a href="https://diagnostics.outlook.com/">Microsoft サポート/回復アシスタントで Outlook と Office 365 の問題を解決する</a></p>
+                        <p><a href="https://diagnostics.outlook.com/">Microsoft サポート/回復アシスタントで Outlook と Microsoft 365 の問題を解決する</a></p>
                         <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">メールの問題を解決する</a></p>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=866431">OneDrive for Business の同期の問題を解決する</a></p>
                     </div>

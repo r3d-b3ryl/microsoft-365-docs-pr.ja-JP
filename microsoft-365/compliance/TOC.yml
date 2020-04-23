@@ -52,16 +52,16 @@
           href: supervision-policies.md
         - name: Office 365 の監視ポリシーを構成する
           href: configure-supervision-policies.md
-    - name: 情報障壁
+    - name: 情報バリア
       href: information-barriers.md
       items:
-        - name: 情報障壁ポリシーの定義
+        - name: 情報バリア ポリシーの定義
           href: information-barriers-policies.md
-        - name: 情報障壁ポリシーの属性
+        - name: 情報バリア ポリシーの属性
           href: information-barriers-attributes.md
-        - name: 情報障壁のトラブルシューティング
+        - name: 情報バリアのトラブルシューティング
           href: information-barriers-troubleshooting.md
-        - name: 情報障壁ポリシーの編集
+        - name: 情報バリア ポリシーの編集
           href: information-barriers-edit-segments-policies.md
     - name: 特権アクセス管理
       items:
@@ -76,11 +76,11 @@
 - name: 情報保護の管理
   href: protect-information.md
   items:
-    - name: 機密ラベル
+    - name: 秘密度ラベル
       items:
-        - name: 機密度ラベルの詳細
+        - name: 秘密度ラベルの詳細
           href: sensitivity-labels.md
-        - name: 秘密度ラベルを使用して開始する
+        - name: 秘密度ラベルの概要
           href: get-started-with-sensitivity-labels.md
         - name: 秘密度ラベルを作成して発行する
           href: create-sensitivity-labels.md
@@ -90,9 +90,9 @@
           href: apply-sensitivity-label-automatically.md
         - name: ラベル分析によるラベル使用状況の表示
           href: label-analytics.md
-        - name: チーム、グループ、およびサイトで機密度ラベルを使用する
+        - name: チーム、グループ、およびサイトで秘密度ラベルを使用する
           href: sensitivity-labels-teams-groups-sites.md
-        - name: SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする
+        - name: SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Office アプリで秘密度ラベルを使用する
           href: sensitivity-labels-office-apps.md
@@ -147,23 +147,19 @@
           href: create-a-keyword-dictionary.md
         - name: ドキュメント フィンガープリンティング
           href: document-fingerprinting.md
-        - name: 機密情報のDLP 関数
+        - name: 機密情報の DLP 関数
           href: what-the-dlp-functions-look-for.md
-    - name: M365 での暗号化
-      href: encryption.md
-    - name: Office 365 でのサービスの暗号化
-      href: office-365-service-encryption.md
-    - name: カスタマー キー
+    - name: 顧客キー
       items:
-        - name: Office 365 の顧客キーによるサービスの暗号化
+        - name: Office 365 のカスタマー キーによるサービスの暗号化
           href: customer-key-overview.md
-        - name: Office 365 の顧客キーの設定
+        - name: Office 365 のカスタマー キーを設定する
           href: customer-key-set-up.md
-        - name: Office 365 の顧客キーの管理
+        - name: Office 365 のカスタマー キーを管理する
           href: customer-key-manage.md
-        - name: 顧客キーまたは可用性キーをローリングまたはローテーションする
+        - name: カスタマー キーまたは可用性キーをローリングまたはローテーションする
           href: customer-key-availability-key-roll.md
-        - name: Office 365 の顧客キーの可用性キーの詳細
+        - name: カスタマー キーの可用性キーの詳細
           href: customer-key-availability-key-understand.md
     - name: メールの暗号化
       href: email-encryption.md
@@ -190,13 +186,13 @@
           href: ome-version-comparison.md
         - name: Office 365 Message Encryption に関する FAQ
           href: ome-faq.md
-        - name: Exchange Online が電子メールの機密情報をセキュリティで保護する方法
+        - name: Exchange Online がメールの機密情報をセキュリティで保護する方法
           href: exchange-online-secures-email-secrets.md
-        - name: Office 365 で電子メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
+        - name: Office 365 でメール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
           href: exchange-online-uses-tls-to-secure-email-connections.md
         - name: Office 365 の暗号化についてのテクニカル リファレンスの詳細
           href: technical-reference-details-about-encryption.md
-        - name: BitLocker とDistributed Key Manager (DKM) による暗号化
+        - name: BitLocker と Distributed Key Manager (DKM) による暗号化
           href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
         - name: レガシー OME
           items:
@@ -204,8 +200,6 @@
               href: legacy-information-for-message-encryption.md
             - name: Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する
               href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: SharePoint 管理センターで IRM 設定する
-      href: set-up-irm-in-sp-admin-center.md
     - name: データの分類を理解する (プレビュー)
       href: data-classification-overview.md
       items:
@@ -239,9 +233,9 @@
           href: filter-data-when-importing-pst-files.md
         - name: PST ファイルのインポートに関する FAQ
           href: faqimporting-pst-files-to-office-365.md
-    - name: サードパーティのデータをアーカイブする
+    - name: サード パーティのデータをアーカイブする
       items:
-        - name: サードパーティのデータのアーカイブの概要
+        - name: サード パーティのデータのアーカイブの概要
           href: archiving-third-party-data.md
         - name: コネクタをセットアップしてFacebook のデータをアーカイブする
           href: archive-facebook-data-with-sample-connector.md
@@ -253,7 +247,7 @@
           href: archive-instant-bloomberg-data.md
         - name: コネクタをセットアップして人事データをインポートする
           href: import-hr-data.md
-        - name: パートナーと共同作業でサードパーティーのデータをアーカイブする
+        - name: パートナーと共同作業でサード パーティのデータをアーカイブする
           href: work-with-partner-to-archive-third-party-data.md
     - name: データを格納する
       items:
@@ -370,9 +364,9 @@
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: 複数のコンテンツ検索を一括編集する
               href: bulk-edit-content-searches.md
-            - name: ID リスト検索用の CSV ファイルを準備する
+            - name: ID リストの検索用の CSV ファイルを準備する
               href: csv-file-for-an-id-list-content-search.md
-            - name: サードパーティのデータを検索する
+            - name: サード パーティのデータを検索する
               href: use-content-search-to-search-third-party-data-that-was-imported.md
             - name: 検索クエリでエラーを確認する
               href: check-your-content-search-query-for-errors.md
@@ -404,7 +398,7 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: 検索の推定結果と実際の結果の違い
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: コンテンツ検索 で PowerShell スクリプトを実行する
+        - name: コンテンツ検索で PowerShell スクリプトを実行する
           items:
             - name: 対象コレクションのコンテンツ検索を使用する
               href: use-content-search-for-targeted-collections.md
@@ -436,7 +430,7 @@
               href: permissions-filtering-for-content-search.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
-            - name: スクリプトを使用して電子情報開示ケースの保留リストにユーザーを追加する
+            - name: スクリプトを使用して電子情報開示の保留リストにユーザーを追加する
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: 電子情報開示ケースの保留リストのレポートを作成する
               href: create-a-report-on-holds-in-ediscovery-cases.md
@@ -795,12 +789,12 @@
           href: compliance-score-methodology.md
         - name: コンプライアンス スコアのリリース ノート (プレビュー)
           href: compliance-score-release-notes.md
-        - name: コンプライアンス スコア FAQ (プレビュー)
+        - name: コンプライアンス スコアに関する FAQ (プレビュー)
           href: compliance-score-faq.md
         - name: コンプライアンス マネージャー (プレビュー)
           href: compliance-manager-overview.md
           items:
-            - name: コンプライアンス マネージャー (プレビュー) のリリース ノート
+            - name: コンプライアンス マネージャー (プレビュー) の新機能
               href: compliance-manager-release-notes.md
             - name: コンプライアンス マネージャー (プレビュー) と共同作業する
               href: working-with-compliance-manager.md
@@ -1152,7 +1146,7 @@
       items:
         - name: アジア
           items:
-            - name: CS マーク (日本)
+            - name: CS マーク (ゴールド) (日本)
               href: offering-cs-mark-gold-japan.md
             - name: DJCP (中国)
               href: 'https://www.trustcenter.cn/compliance/default.html#DJCP'
@@ -1164,7 +1158,7 @@
               href: offering-meity-india.md
             - name: MTCS (シンガポール)
               href: offering-mtcs-singapore.md
-            - name: マイナンバー (日本)
+            - name: マイ ナンバー (日本)
               href: offering-my-number-act-japan.md
             - name: TRUCS (中国)
               href: 'https://aka.ms/TRUCS-Compliance'
@@ -1218,7 +1212,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 Business
+- name: Microsoft 365 Apps for business
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Microsoft 365 セキュリティ
   href: 'https://docs.microsoft.com/microsoft-365/security/'
