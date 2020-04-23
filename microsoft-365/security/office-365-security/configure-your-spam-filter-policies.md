@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: 管理者が、Exchange Online および Exchange online Protection (EOP) で迷惑メール対策ポリシーを作成、変更、削除する方法を説明します。
-ms.openlocfilehash: e3d49fecf456fe7f615cc2877c7522632b8db7d7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+description: 基本のスパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。
+ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608188"
+ms.locfileid: "43637714"
 ---
-# <a name="configure-anti-spam-policies-in-office-365"></a>Office 365 でのスパム対策ポリシーの構成
+# <a name="configure-anti-spam-policies"></a>スパム対策ポリシーの構成
 
-Exchange Online のメールボックスを使用している Office 365 のお客様、または Exchange Online のメールボックスを使用していないもののスタンドアロンの Exchange Online Protection (EOP) をお使いのお客様の場合、受信メール メッセージは EOP によってスパムから自動的に保護されます。 EOP では、スパムに対する組織の全体的防御の一環として、スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれます) を使用します。 詳細については、「[Office 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。
+Exchange Online のメールボックスを使用している Micrsoft 365 のお客様、または Exchange Online のメールボックスを使用していないもののスタンドアロンの Exchange Online Protection (EOP) をお使いのお客様の場合、受信メール メッセージは EOP によってスパムから自動的に保護されます。 EOP では、スパムに対する組織の全体的防御の一環として、スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれます) を使用します。 詳細については、「[スパム対策保護](anti-spam-protection.md)」を参照してください。
 
 管理者は、既定のスパム対策ポリシーの表示、編集、構成を行うことができます (削除はできません)。 より細かく設定できるように、カスタムのスパム対策保護ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-スパム対策ポリシーの構成は、Office 365 セキュリティ/コンプライアンス センターで、または PowerShell (Office 365 のお客様の場合は Exchange Online PowerShell、スタンドアロンの EOP お客様の場合は Exchange Online Protection PowerShell) で行います。
+スパム対策ポリシーの構成は、セキュリティ/コンプライアンス センターで、または PowerShell (Microsoft 365 のお客様の場合は Exchange Online PowerShell、スタンドアロンの EOP お客様の場合は Exchange Online Protection PowerShell) で行います。
 
-## <a name="anti-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Office 365 セキュリティ/コンプライアンス センターと Exchange Online PowerShell または Exchange Online Protection PowerShell のスパム対策ポリシーの比較
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>セキュリティ/コンプライアンス センターと Exchange Online PowerShell または Exchange Online Protection PowerShell のスパム対策ポリシーの比較
 
 EOP のスパム対策ポリシーの基本的な要素は次のとおりです。
 
@@ -39,7 +39,7 @@ EOP のスパム対策ポリシーの基本的な要素は次のとおりです�
 
 - **スパム フィルター ルール**: スパム フィルター ポリシーの優先順位と受信者フィルター (ポリシーが適用される対象者) を指定します。
 
-これら 2 つの要素の違いは、セキュリティ/コンプライアンス センターでスパム対策を管理する際には明白ではありません。
+これら 2 つの要素の違いは、セキュリティ/コンプライアンス センターでスパム対策を管理する際には明白ではありませんが、以下の違いがあります。
 
 - セキュリティ/コンプライアンス センターでスパム対策ポリシーを作成する場合、実際にはスパム フィルター ルール、および関連付けられているスパム フィルター ポリシーの両方に同じ名前を使用して同時に作成しています。
 
@@ -73,9 +73,9 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スパム対策ポリシーを追加、変更、削除するには、「**組織の管理**」または「**セキュリティ管理者**」役割グループのメンバーである必要があります。 スパム対策ポリシーに読み取り専用でアクセスするには、「**セキュリティ閲覧者**」役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スパム対策ポリシーを追加、変更、削除するには、「**組織の管理**」または「**セキュリティ管理者**」役割グループのメンバーである必要があります。 スパム対策ポリシーに読み取り専用でアクセスするには、「**セキュリティ閲覧者**」役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
-- スパム対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
+- マルウェア対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>セキュリティ/コンプライアンス センターを使用してスパム対策ポリシーを作成する
 
@@ -280,7 +280,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 3. **[ポリシーの編集]** をクリックします。
 
-表示されるフライアウトの設定は、「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」セクションで説明した設定と同じです。
+カスタム迷惑メール対策ポリシーの場合、表示されるポップアップで使用できる設定は、「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」セクションで説明した設定と同じです。
 
 「**既定の迷惑メール対策ポリシー**」という名前の付いた既定の迷惑メール対策ポリシーの場合、**[適用先]** セクションは選択できず (ポリシーは全員に適用される)、ポリシーの名前を変更することもできません。
 
@@ -302,7 +302,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>カスタム迷惑メール対策ポリシーの優先度を設定する
 
-既定では、迷惑メール対策ポリシーには、ポリシーの作成順序に基づいた優先度が設定されます (新しいポリシーは古いポリシーよりも優先度が低くなります)。 優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。 2 つのポリシーが同じ優先度を持つことはできません。
+既定では、迷惑メール対策ポリシーには、ポリシーの作成順序に基づいた優先度が設定されます (新しいポリシーの優先度が古いポリシーよりも低くなります)。 優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。 2 つのポリシーが同じ優先度を持つことはできません。
 
 カスタム迷惑メール対策ポリシーは、処理される順に表示されます (最初のポリシーの値は **優先度** が 0)。 「**既定のスパム フィルター ポリシー**」という名前の付いた既定の迷惑メール対策ポリシーには値 **[Lowest]** が付いており、変更することはできません。
 
@@ -465,7 +465,7 @@ Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 既存のスパム フィルター ルールを表示するには、次の構文を使用します。
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
 ```
 
 すべてのスパム フィルター ルールの要約リストを返すには、次のコマンドを実行します。
@@ -500,7 +500,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを変更する
 
-以下の項目以外には、、PowerShell を使ってスパム フィルター ポリシーを変更する場合も、このトピックで前述の「[手順 1: PowerShell を使用してスパム フィルター ポリシーを作成する](#step-1-use-powershell-to-create-a-spam-filter-policy)」で説明したポリシーを作成する場合と同じ設定を使用できます。
+以下の項目以外には、このトピックで前述の「[手順 1: PowerShell を使用してスパム フィルター ポリシーを作成する](#step-1-use-powershell-to-create-a-spam-filter-policy)」で説明されたようにポリシーを作成したときと同じ設定を、PowerShell を使ってスパム フィルター ポリシーを変更するときに使用できます。
 
 - 特定のポリシーを既定のポリシー (全員に適用され、常に **Lowest** 優先度を持ち、削除することはできない) に切り替える _MakeDefault_ スイッチは、PowerShell でスパム フィルター ポリシーを変更するときにのみ使用できます。
 

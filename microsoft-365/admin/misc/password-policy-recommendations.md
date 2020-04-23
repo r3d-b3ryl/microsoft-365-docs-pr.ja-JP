@@ -1,5 +1,5 @@
 ---
-title: Office 365 のパスワード ポリシーに関する推奨事項
+title: パスワード ポリシーの推奨事項
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化する方法と、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にする理由について説明します。
-ms.openlocfilehash: 74f78b6abcc3e3aa7eb3c18c858afcd8e916d432
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516925"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627826"
 ---
-# <a name="password-policy-recommendations-for-office-365"></a>Office 365 のパスワード ポリシーに関する推奨事項
+# <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
  
-Office 365 組織の管理者は、組織内のユーザー向けのパスワード ポリシーを設定する必要があります。パスワード ポリシーの設定は複雑でわかりにくい場合があります。この記事では、パスワード攻撃からの組織の保護を強化するための推奨事項を示します。
+組織の管理者は、組織内のユーザー向けのパスワード ポリシーを設定する必要があります。パスワード ポリシーの設定は複雑でわかりにくい場合があります。この記事では、パスワード攻撃からの組織の保護を強化するための推奨事項を示します。
   
-組織で Office 365 パスワードが期限切れとなる頻度を決める場合は、「[Office 365 のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md)」を参照してください。
+組織で Microsoft 365 パスワードが期限切れとなる頻度を決める場合は、「[Microsoft 365 のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md)」を参照してください。
   
 ## <a name="understanding-password-recommendations"></a>パスワードの推奨事項について
 

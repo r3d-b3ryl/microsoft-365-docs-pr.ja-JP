@@ -14,7 +14,7 @@
 <a name="crit-infoprotect-step3"></a>
 ### <a name="required-increased-security-for-microsoft-365-is-configured"></a>必須: Microsoft 365 のセキュリティ強化が構成済み
 
-次の [Office 365 セキュリティの強化](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)の設定が構成されています:
+次の [Microsoft 365 セキュリティの強化](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)の設定が構成されています:
 
 - Microsoft 365 セキュリティセンターの脅威管理ポリシー
 - その他の Exchange Online テナント レベルの設定
@@ -28,7 +28,7 @@
 <a name="crit-infoprotect-step2"></a>
 ### <a name="optional-classification-is-configured-across-your-environment"></a>省略可能: 環境全体で分類方法が構成されている
 
-法務/コンプライアンス チームと協力して、組織のデータのガバナンスとセキュリティ ポリシーの適切な分類方法とラベリング方法を策定しています。 
+法務/コンプライアンス チームと協力して、組織のデータのガバナンスとセキュリティ ポリシーの適切な分類方法とラベリング方法を開発しています。 
 
 これらのポリシーは、次の構成および展開に対応しています: 
 
@@ -52,11 +52,11 @@
 必要に応じて、[手順 4](../infoprotect-deploy-windows-information-protection.md) がこの必須条件を満たす上で役立ちます。 
 
 <a name="crit-infoprotect-step5"></a>
-### <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>オプション: Office 365 データ損失防止 (DLP) が展開されている
+### <a name="optional-data-loss-prevention-dlp-is-deployed"></a>オプション: データ損失防止 (DLP) が展開されている
 
 顧客やその他の種類の非公開データを保護し、業界や地域の規制や要件を順守するために組織が必要とする一連の DLP ポリシー (場所や規則、条件やアクションを含む) を分析し、テストしてから展開しました。
 
-データ コンプライアンスとセキュリティ スタッフは、Office 365 のセキュリティとコンプライアンスのダッシュボードを使用して DLP インシデントを監視しています。
+データ コンプライアンスとセキュリティ スタッフは、セキュリティとコンプライアンスのダッシュボードを使用して DLP インシデントを監視しています。
 
 必要に応じて、[手順 5](../infoprotect-data-loss-prevention.md) がこの必須条件を満たす上で役立ちます。 
 

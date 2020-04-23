@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: OS の展開と機能更新プログラムのオプションについて説明します。
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085230"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636761"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>手順 6: OS の展開と機能更新プログラム
 
@@ -41,7 +41,7 @@ ms.locfileid: "42085230"
 
 ここまでの展開プロセスの輪に従っていれば、デバイスとアプリの準備、インフラストラクチャの準備、アプリ パッケージの構成と収集が少なくとも部分的には完了していて、ユーザー ファイルの移行と既定の設定の構成のため実施計画があり、既存のセキュリティ制御の保持と新しいセキュリティ制御の展開 (必要な場合) の計画もあるはずです。
 
-これらすべての断片を 1 つにまとめて、Windows 10 と Office 365 ProPlus、およびドライバーやアプリなどの必要なもののインストールを可能な限り自動化するという段階に達しました。
+これらすべての断片を 1 つにまとめて、Windows 10 と Microsoft 365 Apps for enterprise、およびドライバーやアプリなどの必要なもののインストールを可能な限り自動化するという段階に達しました。
 
 結局のところ、OS 展開の成功についての最適な評価基準は、ユーザーの期待を満たしていることと、ユーザーの作業を中断しないことです。この手順では、段階的な展開の一部として、パイロット ユーザーを対象としたテストと展開を開始します。ここでのヒントは、展開の範囲を広げる前に、展開プロセスの輪の手順 8「[ユーザーのコミュニケーションとトレーニング](https://aka.ms/mdd8)」までスキップして、ユーザーが通知を受けていること、変更に対するユーザー自身の準備が整っていること、および「段階的な展開」を使用した継続的な検証によってロールアウトのペースを測定できることを確認します。
 
@@ -131,8 +131,8 @@ Windows Update for Businessの詳細については、以下の資料を参照�
 
 ## <a name="next-step"></a>次の手順 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[ステップ7：WindowsとOfficeのサービス](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[ステップ7：WindowsとOfficeのサービス](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>前の手順
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[手順 5: セキュリティとコンプライアンスに関する考慮事項](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[手順 5: セキュリティとコンプライアンスに関する考慮事項](https://aka.ms/mdd5)

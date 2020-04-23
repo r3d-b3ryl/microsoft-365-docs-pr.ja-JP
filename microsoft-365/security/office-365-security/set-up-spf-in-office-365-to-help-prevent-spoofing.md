@@ -1,5 +1,5 @@
 ---
-title: Office 365 で SPF を設定して、スプーフィングを防止する
+title: SPF を設定して、スプーフィングを防止する
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。'
-ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598334"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638322"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Office 365 で SPF を設定して、スプーフィングを防止する
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
  **概要:** この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。
 
@@ -59,7 +59,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
 1. 以下の表の SFP 構文について、十分に理解しておいてください。
 
-   ||**使用対象**|**Office 365 ユーザーとの共通性**|**追加対象**|
+   ||**使用対象**|**共通事項**|**追加対象**|
    |:-----|:-----|:-----|:-----|
    |1|いずれかの電子メール システム (必須)|共通。この値で始まるすべての SPF レコード|v=spf1|
    |2|Exchange Online|共通|include:spf.protection.outlook.com|
@@ -75,7 +75,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   これは、最も一般的な Office 365 SPF TXT レコードです。 このレコードは、Office 365 データセンターが米国、ヨーロッパ (ドイツを含む)、または他の場所にあっても、ほぼすべてのユーザーに対して機能します。
+   これは、最も一般的な SPF TXT レコードです。 このレコードは、Microsoft データセンターが米国、ヨーロッパ (ドイツを含む)、または他の場所にあっても、ほぼすべてのユーザーに対して機能します。
 
    ただし、Microsoft Cloud Germany の一部である Office 365 Germany を購入している場合は、2 行目ではなく 4 行目から include ステートメントを使用してください。たとえば、Office 365 Germany で完全にホストされている場合、つまり、オンプレミスのメール サーバーを使っていない場合は、SPF TXT レコードには、次のように 1 行目、4 行目、7 行目が含まれます。
 

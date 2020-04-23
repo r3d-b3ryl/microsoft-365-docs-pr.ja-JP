@@ -1,5 +1,5 @@
 ---
-title: Office 365 の別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
+title: 別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'ユーザーに別のユーザーのメールボックスにアクセスする権利を与える方法について説明します。 これにより、ユーザーは他のユーザーのメールボックスからメールを読み取り、メールを送信する権利を与えられます。 '
-ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151349"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617172"
 ---
-# <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>Office 365 の別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 
 ::: moniker range="o365-worldwide"
 
@@ -49,11 +49,11 @@ ms.locfileid: "43151349"
   
 アクセス許可を設定する最初のステップは、他のユーザーが特定のメールボックスで実行できるアクションを決定することです。ユーザーはそのメールボックスからメールを読み取ること、他のユーザーの代理としてメールを送信すること、そのメールボックスが送信元のように偽装してメールを送信することができます。それぞれのアクセス許可を設定する方法については、以下の記事を参照してください。
   
-- [別のユーザーのメールボックスからメールを読み取る](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [別のユーザーのメールボックスからメールを読み取る](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [別のユーザーのメールボックスからメールを送信する](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
-    
-- [ユーザーの代理でメールを送信する](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
+- [別のユーザーのメールボックスからメールを送信する](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [別のユーザーの代理でメールを送信する](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **変更の伝達:**
   

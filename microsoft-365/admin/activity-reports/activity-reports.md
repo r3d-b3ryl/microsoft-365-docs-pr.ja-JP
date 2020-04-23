@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: 組織内のユーザーがどのように Office 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
+ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204058"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621272"
 ---
-# <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのアクティビティ レポート
+# <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
-ユーザーが仕事でどのように Office 365 サービスを使用しているかを簡単に確認できます。たとえば、サービスをかなり使用しているためにクォータに近づいているユーザーや、Office 365 ライセンスまったく必要としない可能性があるユーザーを、特定することができます。
+ユーザーが仕事でどのように Microsoft 365 サービスを使用しているかを簡単に確認できます。たとえば、サービスをかなり使用しているためにクォータに近づいているユーザーや、Microsoft 365 ライセンスをまったく必要としない可能性があるユーザーを、特定することができます。
   
 過去 7 日、30 日、90 日、180 日間のレポートを利用できます。すべてのレポート期間のデータが最初から存在するわけではありません。レポートは、48 時間以内に使用できるようになります。
   
@@ -58,7 +58,7 @@ ms.locfileid: "43204058"
 ::: moniker-end
 
    
-2. ダッシュボード上部の [ **レポートの選択**] を選び、利用可能なすべてのレポートの一覧から選択します。 または、詳細を参照するには、サービス (メール、OneDrive など) のアクティビティ一覧ウィジェットを選択します。 <br/>![Office 365 の使用状況のダッシュボード](../../media/usage-report-dashboard.png)
+2. ダッシュボード上部の [ **レポートの選択**] を選び、利用可能なすべてのレポートの一覧から選択します。 または、詳細を参照するには、サービス (メール、OneDrive など) のアクティビティ一覧ウィジェットを選択します。 <br/>![利用状況ダッシュボード](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>レポートを閲覧できるユーザー
 
@@ -87,7 +87,6 @@ ms.locfileid: "43204058"
 サブスクリプションに応じて、以下のレポートを利用できます。
   
 - [メール アクティビティ](email-activity.md)
-- [フォームのアクティビティ](forms-activity.md)
     
 - [メールボックス使用状況](mailbox-usage.md)
     
@@ -96,12 +95,15 @@ ms.locfileid: "43204058"
 - [アクティブなユーザー](active-users.md)
   
 - [メール アプリの利用状況](email-apps-usage.md)
+
+- [フォームのアクティビティ](forms-activity.md)
   
-- [Office 365 グループ](office-365-groups.md)
+- [Microsoft 365 グループ](office-365-groups.md)
   
 - [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity.md)
   
 - [OneDrive for Business の利用状況](onedrive-for-business-usage.md)
+
 - [ProPlus の利用状況](microsoft365-apps-usage.md)
   
 - [SharePoint サイトの利用状況](sharepoint-site-usage.md)
@@ -170,7 +172,7 @@ ms.locfileid: "43204058"
   
 ユーザー リストは次のように表示されます。
   
-![Office 365 のレポート - 匿名ユーザー リスト](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![レポート - 匿名ユーザー リスト](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。この設定は、レポートの API にも適用されます。
   
@@ -184,4 +186,3 @@ ms.locfileid: "43204058"
 
 [セキュリティ センター&amp;コンプライアンス センターのレポート](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
-

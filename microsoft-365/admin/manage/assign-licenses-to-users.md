@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: ライセンスをユーザーに割り当てる方法、または新しいサブスクリプションにユーザーを移動する方法について説明します。
-ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362062"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628246"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -49,7 +49,7 @@ ms.locfileid: "42362062"
 3. [**ライセンスを割り当てる**] を選択します。
 4. [**ユーザーにライセンスを割り当てる**] ウィンドウで、名前の入力を開始し、結果から名前を選択して一覧に追加します。 最大 20 人のユーザーを同時に追加することができます。
 5. 特定のアイテムへのアクセス権を割り当てまたは削除するには、[**アプリとサービスをオンまたはオフにする**] を選択します。
-6. 完了したら、[**割り当て**] を選択し、[**閉じる**] を選択します。
+6. 完了したら、**[割り当て]** を選択し、**[閉じる]** を選択します。
 
 競合がある場合、メッセージが表示され、問題の内容と修正方法が示されます。 たとえば、競合するサービスを含むライセンスを選択した場合、各ライセンスに含まれるサービスを確認して再試行するように伝えるエラー メッセージが表示されます。
 
@@ -224,7 +224,7 @@ ms.locfileid: "42362062"
 
 ## <a name="what-you-need-to-know-about-assigning-licenses-to-users"></a>ユーザーへのライセンスの割り当てについて知っておくべきこと
 
-- グローバル管理者、課金管理者、ライセンス管理者、またはユーザー管理の管理者のいずれかである必要があります。詳細については、「[Office 365 の管理者ロールについて](../add-users/about-admin-roles.md)」を参照してください。
+- グローバル管理者、課金管理者、ライセンス管理者、またはユーザー管理の管理者のいずれかである必要があります。詳細については、「[Microsoft 365 の管理者ロールについて](../add-users/about-admin-roles.md)」を参照してください。
 
 - 
             [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](https://go.microsoft.com/fwlink/p/?linkid=850410)ことができます。
@@ -237,7 +237,7 @@ ms.locfileid: "42362062"
 
 [サブスクリプションとライセンスを理解する](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[Office 365 for Business のライセンスの競合を解決する](resolve-license-conflicts.md)
+[Microsoft 365 for business のライセンスの競合を解決する](resolve-license-conflicts.md)
 
 [ユーザーからライセンスを削除する](remove-licenses-from-users.md)
 

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 地域/ロケール別にリストされている電話番号、サービス リクエストのオンライン送信、または Microsoft Store にアクセスして、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
-ms.openlocfilehash: 8f108f4348a7cecd62eba869962d9ee5b179b5b0
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212119"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627080"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ
 
@@ -62,7 +62,7 @@ ms.locfileid: "43212119"
 
 - **英国にお住まいの方は、0800 032 6417 にお問い合わせください。**
 
-Office 365 または Microsoft 365 Business サポートの電話番号が上記にリストされていない場合は、以下のドロップダウン メニューを使用して国または地域を選択してください。
+Microsoft 365 for business サポートの電話番号が上記にリストされていない場合は、以下のドロップダウン メニューを使用して国または地域を選択してください。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -70,13 +70,15 @@ Office 365 または Microsoft 365 Business サポートの電話番号が上記
 
 ## <a name="in-store-support"></a>[ストアでのサポート](#tab/instore)
 
-該当の地域の Microsoft Store に問い合わせると、Answer Desk のエキスパートが Office 365 または Microsoft 365 の問題解決の手助けをいたします。
+該当の地域の Microsoft Store に問い合わせると、Answer Desk のエキスパートが Microsoft 365 の問題解決の手助けをいたします。
 
 1. [[Microsoft Store のスケジュール](https://go.microsoft.com/fwlink/?LinkID=2041482)] ページに移動し、[**Schedule an appointment (予約をする)**] を選択します。
 
 2. 地域を入力して検索を行い、お近くの Microsoft Store を見つけます。
 
 3. Microsoft Store を選択し、[**Schedule service appointment now**] (今すぐサービスの予約をする) を選択します。
+
+---
 
 ::: moniker-end
 
@@ -86,7 +88,7 @@ Office 365 または Microsoft 365 Business サポートの電話番号が上記
 
 承認された管理者は、21Vianet が運用している Office 365 ポータルを使用して、サービス リクエストをオンラインで送信し、サポートの電話番号にアクセスできます。この手順については、「[電話でのお問い合わせ](#contact-support)」を参照してください。
 
-21Vianet Office 365 テクニカル サポート チームは、21Vianet が運用している Office 365 に関連する問題のみについてトラブルシューティングを行います。お客様のネットワークが Office 365 サポートの範囲外であることに起因する問題、およびこのような場合は、お客様は社内のネットワーク チームにお問い合わせください。
+21Vianet テクニカル サポート チームが運用する Office 365 は、21Vianet が運用している Office 365 に関連する問題のみについてトラブルシューティングを行います。お客様のネットワークが Office 365 サポートの範囲外であることに起因する問題、およびこのような場合は、お客様は社内のネットワーク チームにお問い合わせください。
 
 ### <a name="community-and-self-service-support-options"></a>コミュニティおよびセルフサービス サポート
 
@@ -120,7 +122,7 @@ Office 365 または Microsoft 365 Business サポートの電話番号が上記
 
 | サポート カテゴリ | 例 |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| インストールとセットアップ | Exchange Online  <ul><li>Office 365 のメールボックスの移行</li><li>受信者の構成 (メールボックスのアクセス許可、メール転送の構成、共有メールボックスの構成)</li><li>自動検出の構成</li></ul> SharePoint Online <ul><li>アクセス許可およびユーザー グループ</li><li>外部ユーザーの構成</li></ul> Skype for Business Online  <ul><li>インストールおよび連絡先の作成</li></ul> Office 365 ProPlus  <ul><li>インストールとセットアップ</li></ul> |
+| インストールとセットアップ | Exchange Online  <ul><li>Office 365 のメールボックスの移行</li><li>受信者の構成 (メールボックスのアクセス許可、メール転送の構成、共有メールボックスの構成)</li><li>自動検出の構成</li></ul> SharePoint Online <ul><li>アクセス許可およびユーザー グループ</li><li>外部ユーザーの構成</li></ul> Skype for Business Online  <ul><li>インストールおよび連絡先の作成</li></ul> Microsoft 365 Apps for enterprise  <ul><li>インストールとセットアップ</li></ul> |
 | 構成 | サービス構成の問題  <ul><li>シングル サインオン (SSO)</li><li>Active Directory の同期</li></ul> |
 
 > [!NOTE]
@@ -177,7 +179,7 @@ Office 365 または Microsoft 365 Business サポートの電話番号が上記
 
 組織内では、管理者の役割を持つユーザーだけが 21Vianet が運営する Office 365 ポータルの [管理] セクションにアクセスし、Office 365 のサービス リクエストについて 21Vianet と直接やりとりすることを許可されています。
 
-Office 365 では、異なる複数の役割を持つ複数のタイプの管理者を指定できます。このサービスの説明では、管理者という一般的な肩書きで、すべてのカテゴリの管理者を表しています。管理者の役割の詳細については、「[Office 365 for business で管理者ロールを割り当てる](add-users/assign-admin-roles.md)」を参照してください。
+Office 365 では、異なる複数の役割を持つ複数のタイプの管理者を指定できます。このサービスの説明では、管理者という一般的な肩書きで、すべてのカテゴリの管理者を表しています。管理者の役割の詳細については、「[Microsoft 365 for business で管理者ロールを割り当てる](add-users/assign-admin-roles.md)」を参照してください。
 
 管理者とは:
 
@@ -236,7 +238,7 @@ Office 365 では、異なる複数の役割を持つ複数のタイプの管理
 Office 365 Germany の管理者は、知識の豊富なサポート担当者に無料で問い合わせて、技術的な問題解決の他、購入前のお問い合わせ、アカウント、課金に関するサポートを受けることができます。また、組織内の Office 365 Germany ユーザーに代わってサポートに問い合わせることもできます。
 
 > [!NOTE]
-> 以下のサポート オプションはすべて Microsoft Cloud Germany に関するものです。ユーザーが Microsoft Office 365 のサポートに問い合わせたときに提供したデータをマイクロソフトがどのように使用するかについては、「[プライバシーに関する声明](https://go.microsoft.com/fwlink/p/?LinkId=512132)」をご覧ください。
+> 以下のサポート オプションはすべて Microsoft Cloud Germany に関するものです。ユーザーが Microsoft サポートに問い合わせたときに提供したデータを Microsoft がどのように使用するかについては、「[プライバシーに関する声明](https://go.microsoft.com/fwlink/p/?LinkId=512132)」をご覧ください。
 
 ### <a name="get-assisted-support"></a>支援付きサポートを受ける
 
@@ -253,6 +255,6 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 
 ### <a name="let-our-community-help"></a>コミュニティの活用
 
-[Office 365 for business コミュニティ フォーラム](https://go.microsoft.com/fwlink/p/?LinkId=518605)を検索して、既知の問題や最近の傾向に関する話題を検索したり、新しい質問を投稿したりすることもできます。コミュニティ フォーラムはユーザーの問題を解決できるよう訓練を受けた Microsoft サポート エージェントが監視しています。
+[Microsoft 365 for business コミュニティ フォーラム](https://go.microsoft.com/fwlink/p/?LinkId=518605)を検索して、既知の問題や最近の傾向に関する話題を検索したり、新しい質問を投稿したりすることもできます。コミュニティ フォーラムはユーザーの問題を解決できるよう訓練を受けた Microsoft サポート エージェントが監視しています。
 
 ::: moniker-end

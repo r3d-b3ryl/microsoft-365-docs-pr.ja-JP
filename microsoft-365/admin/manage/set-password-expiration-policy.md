@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。 '
-ms.openlocfilehash: 88953317bea2b96c04c291dd028a4e9131b9a83e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bcea72dadb6f10ac4ef80677f3def57eca2724cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361662"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628054"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -40,12 +40,12 @@ ms.locfileid: "42361662"
 
 特定の時間が経過するとユーザーのパスワードが期限切れになるように設定する場合は、以下の手順に従います。
 > [!IMPORTANT]
-> [Office 365 のグローバル管理者](../add-users/about-admin-roles.md)のみ次の手順を実行できます。
+> [グローバル管理者](../add-users/about-admin-roles.md)のみ次の手順を実行できます。
   
 1. 管理センターで、[**設定**] \> [**設定**] の順に移動します。
 
 2. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページに移動します。
- Office 365 のグローバル管理者でない場合は、[セキュリティとプライバシー] オプションは表示されません。
+ グローバル管理者でない場合は、[セキュリティとプライバシー] オプションは表示されません。
   
 3. [**パスワードの有効期限ポリシー**] を選択します。
   
@@ -61,7 +61,7 @@ ms.locfileid: "42361662"
 
 2018 年 1 月現在、この機能については以下の点にご留意ください。
   
-- Outlook アプリのみを使用するユーザーには、キャッシュで有効期限が切れるまで Office 365 パスワードのリセットは強制されません。これは、実際に期限が切れた日から数日経過することがあります。管理者レベルでは、これに対する回避策はありません。
+- Outlook アプリのみを使用するユーザーには、キャッシュで有効期限が切れるまで Microsoft 365 パスワードのリセットは強制されません。これは、実際に期限が切れた日から数日経過することがあります。管理者レベルでは、これに対する回避策はありません。
     
 - ユーザーには、X 日後にパスワードの有効期限が切れる旨のメール通知が送られません。この機能は必要ですか? **[ここで投票してください。](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
     
@@ -69,10 +69,10 @@ ms.locfileid: "42361662"
 
 ユーザーが古いパスワードを再使用することを禁止する場合、Azure AD でこの操作を行うことができます。 「[組織のパスワード有効期限ポリシーを設定する](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide)」を参照してください。
 
-また、従業員がモバイル デバイスを使用して Office 365 にアクセスしている場合、それをワイプしてパスワードが保存されていないことを確認してください。 詳細については、「[元従業員のモバイル デバイスをワイプし、ブロックする](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device)」を参照してください。
+また、従業員がモバイル デバイスを使用して Microsoft 365 にアクセスしている場合、それをワイプしてパスワードが保存されていないことを確認してください。 詳細については、「[元従業員のモバイル デバイスをワイプし、ブロックする](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device)」を参照してください。
 
 
-## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-office-365"></a>オンプレミスの Active Directory から Azure AD (Office 365) へユーザー パスワード ハッシュを同期する
+## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>オンプレミスの Active Directory から Azure AD (Microsoft 365) へユーザー パスワード ハッシュを同期する
 
 この記事は、クラウド専用ユーザー (Azure AD) の有効期限ポリシーを設定するユーザーを対象にしています。 パスワード ハッシュ同期、パススルー認証、または ADFS などのオンプレミスのフェデレーションを使用するハイブリッド ID ユーザーには適用されません。
   

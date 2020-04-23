@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のディレクトリとネットワークの準備状況を評価する方法について説明します。
-ms.openlocfilehash: 985212cc240d91ac04f9def1b7a53c42889d826f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085424"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636810"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>手順 2: ディレクトリとネットワークの準備
 
-ディレクトリとネットワークが構成され、Windows 10 と Office 365 ProPlus への移行をサポートする準備ができていることを確認します。そのためには、ユーザーが Azure Active Directory サービスを利用できるようにする必要があります。また、ネットワークには通常のトラフィックに加え、PC のアップグレード時やユーザーのファイル、設定、アプリケーションの復元時に発生する可能性のある大量のデータ移動を処理できる容量が必要です。
+ディレクトリとネットワークが構成され、Windows 10 と Microsoft 365 Apps for enterprise への移行をサポートする準備ができていることを確認します。そのためには、ユーザーが Azure Active Directory サービスを利用できるようにする必要があります。また、ネットワークには通常のトラフィックに加え、PC のアップグレード時やユーザーのファイル、設定、アプリケーションの復元時に発生する可能性のある大量のデータ移動を処理できる容量が必要です。
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "42085424"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>手順 2: ディレクトリとネットワークの準備</strong></p>
-<p>Office 365 ProPlus のクラウド接続サービスと Windows Autopilot などの新しい展開オプションには、Azure Active Directory が必要です。ネットワークと接続性も、Windows の画像、アプリ、ドライバー、関連ファイルを PC に移動する場合に、計画すべき重要な分野です。新しいツールと展開オプションによって、ネットワーク トラフィックを削減および合理化する方法について説明します。</p></td>
+<p>Microsoft 365 Apps for enterprise のクラウド接続サービスと Windows Autopilot などの新しい展開オプションには、Azure Active Directory が必要です。ネットワークと接続性も、Windows の画像、アプリ、ドライバー、関連ファイルを PC に移動する場合に、計画すべき重要な分野です。新しいツールと展開オプションによって、ネットワーク トラフィックを削減および合理化する方法について説明します。</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -43,17 +43,17 @@ ms.locfileid: "42085424"
 
 ディレクトリとネットワークの準備は、スムーズな OS とデスクトップの展開を実現するために不可欠です。自動化された展開と同様、ファイル共有にアクセスできるようにする必要があります。また、お使いのネットワークで非常に大きなファイルの転送を (おそらく一度に数百または数千台の PC に対して) サポートできるようにする必要があります。
 
-Windows 10 および Office 365 ProPlus への移行に伴い、クラウドベースの ID が Azure Active Directory で設定されていることを確認する必要も生じます。これにより、Office 365 ProPlus のライセンス認証を行うだけでなく、Windows Autopilot のような最新のプロビジョニング ソリューションも利用できるようになります。
+Windows 10 および Microsoft 365 Apps for enterprise への移行に伴い、クラウドベースの ID が Azure Active Directory で設定されていることを確認する必要も生じます。これにより、Microsoft 365 Apps for enterprise のライセンス認証を行うだけでなく、Windows Autopilot のような最新のプロビジョニング ソリューションも利用できるようになります。
 
-この記事では、Windows 10 および Office 365 ProPlus への展開に向けて、ディレクトリ サービスや、ユーザーとデバイスのアクセス許可を準備するためのツールとオプションについて説明します。
+この記事では、Windows 10 および Microsoft 365 Apps for enterprise への展開に向けて、ディレクトリ サービスや、ユーザーとデバイスのアクセス許可を準備するためのツールとオプションについて説明します。
 
 ## <a name="adding-azure-active-directory"></a>Azure Active Directory の追加
 
 組織が既に Office 365、Exchange Online、Microsoft Intune、またはその他の Microsoft オンライン サービスを使用している場合は、既に Azure Active Directory を使用しています。 その場合に必要なことは、デスクトップ展開の対象としているユーザーが Azure Active Directory に存在していて、ライセンスが割り当てられていることを確認することだけです。
 
-現在 Azure Active Directory を使用していない場合、セットアップに役立つ[多数のリソース](https://docs.microsoft.com/azure/active-directory/)を利用できます。 Office 365 ライセンスの一部として、Microsoft FastTrack 経由で個人向けのサポートも利用できる場合があります。 Microsoft Fastrack の詳細は[こちら](https://fasttrack.microsoft.com)で確認できます。
+現在 Azure Active Directory を使用していない場合、セットアップに役立つ[多数のリソース](https://docs.microsoft.com/azure/active-directory/)を利用できます。 ライセンスの一部として、Microsoft FastTrack 経由で個人向けのサポートも利用できる場合があります。 Microsoft Fastrack の詳細は[こちら](https://fasttrack.microsoft.com)で確認できます。
 
-Azure Active Directory を配置したら、対象ユーザーは Office 365 ProPlus アプリにサインインしてライセンス認証を行うことができます。また、Microsoft Intune や Windows AutoPilot Deployment を使用して、アプリとポリシーを自動展開できます。
+Azure Active Directory を配置したら、対象ユーザーは Microsoft 365 Apps for enterprise アプリにサインインしてライセンス認証を行うことができます。また、Microsoft Intune や Windows AutoPilot Deployment を使用して、アプリとポリシーを自動展開できます。
 
 ## <a name="network-readiness"></a>ネットワークの準備
 
@@ -67,7 +67,7 @@ Azure Active Directory を配置したら、対象ユーザーは Office 365 Pro
 
 ### <a name="software-updates"></a>ソフトウェアの更新
 
-ソフトウェアの更新のためのネットワーク帯域幅を計画する必要があります。 Windows 10 と Office 365 ProPlus では、毎月、および半年ごとに更新プログラムを提供する新しいサービス モデルを採用しています。 このモデルを初めて利用する場合は、この機能の詳細を[こちら](https://docs.microsoft.com/windows/deployment/update/waas-overview)でご覧ください。
+ソフトウェアの更新のためのネットワーク帯域幅を計画する必要があります。 Windows 10 と Microsoft 365 Apps for enterprise では、毎月および半年ごとに更新プログラムを提供する新しいサービス モデルを使用しています。 このモデルを初めて利用する場合は、この機能の詳細を[こちら](https://docs.microsoft.com/windows/deployment/update/waas-overview)でご覧ください。
 
 新しいサービス モデルには、年 2 回の Windows 機能更新プログラム、Office の半期ごとのチャネル更新プログラム、毎月の品質更新プログラムが含まれています。機能更新プログラムのサイズは通常 2 - 4 GB で、Office の半期ごとのチャネル更新プログラムは更新ごとに 300 - 400 MB です。さらに、毎月の品質更新プログラムがあります。これらは数百 MB から 1 GB 以上になることがあります。毎月の更新は累積的で、Windows 10 の各バージョンのサービス有効期間にわたってサイズが増えていくためです。そうは言っても、更新を実装するためにネットワークを通過するデータ量を減らすのに役立つツールがあります。これについては、以下で詳しく説明します。
 
@@ -111,19 +111,19 @@ Configuration Manager でサポートされている**ピア キャッシュ**�
 
 [BranchCache 対ピア キャッシュ](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**配信の最適化** 配信の最適化は、もう 1 つのピア ツー ピア キャッシング テクノロジであり、展開用のネットワークベースのコントロールを提供します。 Windows 10 の配信の最適化は組み込み UWP アプリの更新、Microsoft Store からのアプリケーションのインストール、および高速インストール ファイルを使用したソフトウェア更新にも使用されます。 これは初期のバージョンの Windows 10 から使用できましたが、Microsoft Endpoint Configuration Manager (Current Branch) と統合されたのは最近のことです。 Windows 10 バージョン 1803 以降の新しい構成オプションでは、バックグラウンド更新やフォアグラウンド ジョブ (Microsoft Store からのアプリのインストールなど) の帯域幅制限を個別に設定できるようになりました。 Windows の配信の最適化はクライアント更新時の Office 365 ProPlus もサポートするようになりました。サポートされているすべての Office 365 クライアント更新チャネルで利用可能です。 Office 365 クライアント初期インストール時に対する Windows の配信の最適化のサポートは近日対応予定です。  
+**配信の最適化** 配信の最適化は、もう 1 つのピア ツー ピア キャッシング テクノロジであり、展開用のネットワークベースのコントロールを提供します。 Windows 10 の配信の最適化は組み込み UWP アプリの更新、Microsoft Store からのアプリケーションのインストール、および高速インストール ファイルを使用したソフトウェア更新にも使用されます。 これは初期のバージョンの Windows 10 から使用できましたが、Microsoft Endpoint Configuration Manager (Current Branch) と統合されたのは最近のことです。 Windows 10 バージョン 1803 以降の新しい構成オプションでは、バックグラウンド更新やフォアグラウンド ジョブ (Microsoft Store からのアプリのインストールなど) の帯域幅制限を個別に設定できるようになりました。 Windows の配信の最適化はクライアント更新時の Microsoft 365 Apps for enterprise もサポートするようになりました。サポートされているすべてのクライアント更新チャネルで利用可能です。 クライアント初期インストール時に対する Windows の配信の最適化のサポートは近日対応予定です。  
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
-**Office 365 ProPlus のその他の考慮事項**
+**Microsoft 365 Apps for enterprise のその他の考慮事項**
 
-配信の最適化の活用に加え、Office 365 ProPlus の展開によるネットワーク負荷を軽減する 3 つの項目を紹介します。
+配信の最適化の活用に加え、Microsoft 365 Apps for enterprises の展開によるネットワーク負荷を軽減する 3 つの項目を紹介します。
 
-**バイナリ デルタ圧縮**: Office 365 ProPlus では、バイナリ デルタ圧縮を使用して、Office 365 ProPlus の最新リリースから次のリリースに更新するときにソフトウェアの更新によって消費される帯域幅を削減します。前のリリースからのバイナリ レベルの変更のみを引き出すことで、累積的な更新プログラムによる毎月のサイズ膨張の影響を最小限に抑えることができます。これにより、PC ごとに、毎月数百 MB のデータを節減できる可能性があります。ただし、この機能を使用する場合、リリースをスキップすることはできません。スキップしたい場合は、完全な累積的更新プログラムをダウンロードする必要があります。
+**バイナリ デルタ圧縮**: Office 365 ProPlus では、バイナリ デルタ圧縮を使用して、Microsoft 365 Apps for enterprise の最新リリースから次のリリースに更新するときにソフトウェアの更新によって消費される帯域幅を削減します。前のリリースからのバイナリ レベルの変更のみを引き出すことで、累積的な更新プログラムによる毎月のサイズ膨張の影響を最小限に抑えることができます。これにより、PC ごとに、毎月数百 MB のデータを節減できる可能性があります。ただし、この機能を使用する場合、リリースをスキップすることはできません。スキップしたい場合は、完全な累積的更新プログラムをダウンロードする必要があります。
 
 [Office 365 ProPlus の更新プログラムをダウンロードする](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
-**Outlook データ ファイル** 多くの場合、Outlook はユーザーのメール ボックス全体をローカルにキャッシュし、オフラインで使用するように構成されています。 インプレース アップグレード以外の Windows の展開では、アップグレード後にユーザーの Outlook データ ファイルを再構築する必要があります。 これは自動化されたプロセスですが、Outlook メールボックスの制限値を通常どおり最大 100 GB に設定した場合、すべてのユーザーのローカルのメールボックス全体を再キャッシュすると大量のデータ転送が発生します。 ネットワーク負荷を軽減するには、グループ ポリシーを使用して [オフラインにしておくメール] の設定値を小さくすることを検討してください。 Office 365 ProPlus または Outlook 2016 の Outlook では、既定値は 12 か月に設定されています。 オフライン キャッシュを直近 1 ～ 6 か月の間に設定することを検討してください。 この設定を変更してもオンライン メールボックスのサイズには影響しませんし、オンラインの時に Outlook 経由でメールボックス全体を検索することもできます。
+**Outlook データ ファイル** 多くの場合、Outlook はユーザーのメール ボックス全体をローカルにキャッシュし、オフラインで使用するように構成されています。 インプレース アップグレード以外の Windows の展開では、アップグレード後にユーザーの Outlook データ ファイルを再構築する必要があります。 これは自動化されたプロセスですが、Outlook メールボックスの制限値を通常どおり最大 100 GB に設定した場合、すべてのユーザーのローカルのメールボックス全体を再キャッシュすると大量のデータ転送が発生します。 ネットワーク負荷を軽減するには、グループ ポリシーを使用して [オフラインにしておくメール] の設定値を小さくすることを検討してください。 Microsoft 365 Apps for enterprises または Outlook 2016 の Outlook では、既定値は 12 か月に設定されています。 オフライン キャッシュを直近 1 ～ 6 か月の間に設定することを検討してください。 この設定を変更してもオンライン メールボックスのサイズには影響しませんし、オンラインの時に Outlook 経由でメールボックス全体を検索することもできます。
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
@@ -135,15 +135,15 @@ Configuration Manager でサポートされている**ピア キャッシュ**�
 
 [OneDrive ファイル オンデマンド](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
-OneDrive をまだロールアウトしていない場合は、Windows 7 から Windows 10 への移行時が OneDrive を有効にする絶好の機会であり、そうすることにより Office 365 ProPlus をシームレスに統合できます。 アプリとデバイスの準備作業中に、このロールアウトを開始することを検討してください。 これにより、Windows イメージを移動し、ネットワーク経由でアプリを展開する前に、ファイルの同期が開始されます。
+OneDrive をまだロールアウトしていない場合は、Windows 7 から Windows 10 への移行時が OneDrive を有効にする絶好の機会であり、そうすることにより Microsoft 365 Apps for enterprise をシームレスに統合できます。 アプリとデバイスの準備作業中に、このロールアウトを開始することを検討してください。 これにより、Windows イメージを移動し、ネットワーク経由でアプリを展開する前に、ファイルの同期が開始されます。
 
 ## <a name="next-step"></a>次の手順 
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[手順 3: Office と LOB アプリの配信](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[手順 3: Office と LOB アプリの配信](https://aka.ms/mdd3)
 
 ## <a name="previous-step"></a>前の手順
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)
+## <a name="step-1-device-and-app-readiness"></a>[手順 1: デバイスとアプリの準備](https://aka.ms/mdd1)
 
 ## <a name="feedback"></a>フィードバック
 
