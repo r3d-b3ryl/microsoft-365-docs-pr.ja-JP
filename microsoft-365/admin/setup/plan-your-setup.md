@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Microsoft 365 for business をセットアップするために必要な作業について説明します。
-ms.openlocfilehash: 97463e624968c5b3edf563e916cbf4929ac581b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627572"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794041"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画する
 
@@ -93,7 +93,7 @@ ms.locfileid: "43627572"
   
 メールに Microsoft 365 を使用する場合は、次のようにします。
   
-- 会社の電子メールアドレス ( *rob@contoso.com*など) を別の電子メールサービスから microsoft 365 に移行するには、メールを新しい Microsoft 365 メールボックスに配信するように指示する必要があります。 これを行うには、**セットアップ**ページで [**ユーザーのデータを移行**する] を選択します。ここでは、ドメインホストで行う必要のある更新プログラムについて手順を追って説明します。
+- 会社の電子メールアドレス (*渡\@contoso.com*など) を別の電子メールサービスから microsoft 365 に移行するには、メールを新しい microsoft 365 メールボックスに配信するように指示する必要があります。 これを行うには、**セットアップ**ページで [**ユーザーのデータを移行**する] を選択します。ここでは、ドメインホストで行う必要のある更新プログラムについて手順を追って説明します。
 
 - ドメイン ホストの更新後、変更は通常 1、2 時間で有効になります。 ただし、インターネット経由で変更が更新されるまでに最大72時間かかる場合があることに注意してください。
 
