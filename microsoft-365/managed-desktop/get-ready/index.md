@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "37595593"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790613"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップへの登録準備
 
@@ -21,5 +21,6 @@ ms.locfileid: "37595593"
 - [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](network.md)
 - [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
 - [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
+- [Microsoft マネージドデスクトップの印刷リソースの準備](printing.md)
 - [Microsoft マネージドデスクトップのアプリ](apps.md)
 
