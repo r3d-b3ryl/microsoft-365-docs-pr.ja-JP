@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Microsoft 365 管理者が利用できるリソースについて説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 02d1afa763eda2edd7a0fba5624ab5a168b80a14
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 631c6640efeb6bebd8e091712b030ed61047042e
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624002"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781495"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 Admin ヘルプ センター
 
@@ -38,8 +38,8 @@ ms.locfileid: "43624002"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 から Microsoft 365 へ</h3>
-                        <p>Microsoft では、Office 365 と Microsoft 365 のサブスクリプション名の一部を変更することになりました。 お客様に操作していただくことは何もありません。 サービス、アプリ、機能、そしてサブスクリプションの料金も、今までと変わりません。 サブスクリプション名は、Microsoft 365 管理センターで自動的に更新され、請求明細書は 2020 年 4 月 21 日以降に更新されます。</p>
+                        <h3>Office 365 は Microsoft 365 になりました</h3>
+                        <p>Microsoft では、Office 365 と Microsoft 365 のサブスクリプション名の一部を変更しました。 お客様に操作していただくことは何もありません。 サービス、アプリ、機能、そしてサブスクリプションの料金も、今までと変わりません。 サブスクリプション名は、Microsoft 365 管理センターで自動的に更新され、請求明細書は 2020 年 4 月 21 日以降に更新されます。</p>
                         <ul>
                             <li><p><b>Office 365 Business Essentials</b> から <b>Microsoft 365 Business Basic</b> になりました。</p></li>
                             <li><p><b>Office 365 Business Premium</b> から <b>Microsoft 365 Business Standard</b> になりました。</p></li>
