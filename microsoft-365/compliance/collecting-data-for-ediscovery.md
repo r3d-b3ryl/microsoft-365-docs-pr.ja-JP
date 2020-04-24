@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6b86d9f86edc427e10c02a99e3cda3e5e79db66
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595854"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799940"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>高度な電子情報開示でケースのデータを収集する
 
-ケースに関係のある保管担当者およびデータソースを特定したら、詳細についてのドキュメントを特定します。 上級電子情報開示の検索ツールを使用して、Office 365 の custodial および非 wi-fi ダイヤルの場所からこれらを識別することができます。
+ケースに関係のある保管担当者およびデータソースを特定したら、詳細についてのドキュメントを特定します。 上級電子情報開示の検索ツールを使用して、Microsoft 365 の custodial および非 wi-fi ダイヤルの場所から関連するドキュメントを識別できます。
 
 検索を実行すると、検索クエリに一致したアイテムが最も多い場所など、取得したアイテムの統計情報を表示できます。 結果のサブセットをプレビューすることもできます。 さらに調査するドキュメントのセットを特定したら、検索結果をレビューセットに追加して、収集して処理することができます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "41595854"
 
 検索の推定が完了したら、検索を選択すると、検索結果に関する大まかな統計情報が表示される、フライアウトページが表示されます。 この時点で、[**統計**] ボタンがアクティブになります。 このチェックボックスをオンにすると、次のような検索統計情報を表示できます。
 
-- 概要
+- 要約
 - トップの場所
 - クエリ
 
@@ -49,6 +49,10 @@ ms.locfileid: "41595854"
 
 プレビューが完了すると、[**プレビュー** ] ボタンがアクティブになります。 このチェックボックスをオンにして、抽出された結果のサブセットをプレビューします。
 
-## <a name="adding-search-results-to-a-review-set"></a>検索結果をレビューセットに追加する
+## <a name="add-search-results-to-a-review-set"></a>検索結果をレビュー セットに追加する
 
 検索結果全体を収集して処理する準備ができたら、それをレビューセットに追加することで、それを行うことができます。 詳細については、「[レビューセットにデータを追加する](add-data-to-review-set.md)」を参照してください。
+
+## <a name="add-non-microsoft-365-data-to-a-review-set"></a>Microsoft 以外の365データをレビューセットに追加する
+
+ケースのコレクションプロセスの一部として、Office 以外の365データをレビューセットに追加し、検索ツールを使用して収集した Office 365 データと一緒に確認して分析することもできます。 Office 以外の365を追加する場合は、そのようなを特定の保管担当者に関連付ける必要があります。 詳細については、「 [Microsoft 以外の365データをレビューセットに読み込む](load-non-Office-365-data-into-a-review-set.md)」を参照してください。

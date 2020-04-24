@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Microsoft 365 管理センターで Office 365 にドメインを追加するには、 DNS ホストで DNS レコードを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631817"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800025"
 ---
 # <a name="add-a-domain-to-office-365"></a>Office 365 にドメインを追加する
 
@@ -101,6 +101,49 @@ ms.locfileid: "43631817"
     後で行う場合、下にスクロールして **[この手順をスキップ]** を選択します。
     
 8. **[完了]** を選択します。これで完了です! 
+
+## <a name="add-or-edit-custom-dns-records"></a>カスタムの DNS レコードを追加または編集する
+
+Web サイトまたはサードパーティサービスのカスタムレコードを追加するには、以下の手順を実行します。
+
+1. Microsoft 管理センターにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>します。
+
+2. [**設定**]   >  [**ドメイン**] ページの順に移動します。
+
+3. [ **ドメイン**] ページで、ドメインを選びます。 
+    
+4. [ **DNS 設定**] で、[**カスタムレコード**] を選択します。次に、[**新しいカスタムレコード**] を選択します。
+
+5. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
+    
+6. [**保存**] を選択します。
+
+## <a name="registrars-with-domain-connect"></a>レジストラーとドメイン接続
+
+[ドメイン接続](https://www.domainconnect.org/)が有効な登録機関は、数分かかる3つのステップのプロセスで、ドメインを Microsoft 365 に追加することができます。 
+  
+このウィザードでは、ドメインを所有していることを確認し、ドメインのレコードを自動的に設定することを確認します。そのため、Microsoft 365 およびその他の Microsoft 365 サービス (Teams など) が自分のドメインで作業します。
+  
+> [!NOTE]
+> セットアップ ウィザードを開始する前に、ブラウザーのポップアップ ブロック機能が無効になっていることを確認してください。
+  
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Microsoft 365 と統合するドメイン接続レジストラー
+
+- [1&amp;IONOS](https://www.1and1.com/)
+- [123Reg](https://www.123-reg.co.uk/)
+- [GoDaddy](https://www.godaddy.com/)
+- [WordPress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy 販売店)
+    - [MadDog ドメイン](https://www.maddogdomains.com/)
+    - [不正名](https://www.cheapnames.com)
+
+### <a name="what-happens-to-my-email-and-website"></a>電子メールと web サイトはどうなりますか?
+
+セットアップが完了すると、ドメインの MX レコードが更新され、Microsoft 365 をポイントするようになり、ドメインのすべての電子メールが Microsoft 365 に送られ始めます。 ユーザーのドメインにメールを持つすべてのユーザーが Office 365 に追加され、メールボックスが設定されていることを確認してください。
+  
+ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続のセットアップ手順は、web サイトには影響しません。
 
 ## <a name="related-articles"></a>関連記事
 

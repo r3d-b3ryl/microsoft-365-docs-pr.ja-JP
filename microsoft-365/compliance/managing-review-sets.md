@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 56ed13ad02c176465f983ffc99af93330f19d00c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 806e27f85df0c51ffe019f5fd3c702c165afdd89
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632942"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800058"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>高度な電子情報開示でのレビューセットの管理
 
@@ -53,6 +53,6 @@ Review sets は、データの分析、クエリ、表示、タグ付け、お�
 
 1. [検索結果をレビュー セットに追加する](add-data-to-review-set.md)
 
-2. [Microsoft 以外の365データをレビューセットに読み込む](load-non-office365-data.md)
+2. [Microsoft 以外の365データをレビューセットに読み込む](load-non-Office-365-data-into-a-review-set.md)
 
 3. [別のレビューセットからのレビューセットへのデータの追加](add-data-to-review-set-from-another-review-set.md)

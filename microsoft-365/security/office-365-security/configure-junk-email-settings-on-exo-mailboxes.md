@@ -1,5 +1,5 @@
 ---
-title: Office 365 の Exchange Online メールボックスで迷惑メールの設定を構成する
+title: Exchange Online のメールボックスで迷惑メール設定を構成する
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online メールボックスの迷惑メール設定を構成する方法について説明します。 これらの設定の多くは、Outlook または web 上の Outlook でユーザーが使用できます。
-ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638442"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800069"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Office 365 の Exchange Online メールボックスで迷惑メールの設定を構成する
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online のメールボックスで迷惑メール設定を構成する
 
 Exchange Online の組織のスパム対策設定は、Exchange Online Protection (EOP) によって制御されます。 詳細については、「[Office 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。
 
@@ -41,13 +41,15 @@ Exchange Online の組織のスパム対策設定は、Exchange Online Protectio
 
 管理者は、Exchange Online PowerShell を使用して、メールボックスの迷惑メールルールの状態を無効、有効にし、表示することができます。 管理者は、Exchange Online PowerShell を使用して、メールボックス (差出人セーフリスト、宛先セーフリスト、および受信拒否リスト) のセーフリストコレクションのエントリを構成することもできます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - これらの手順を実行するには、Exchange Online PowerShell のみを使用できます。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
 - これらの手順を実行する前に、アクセス許可を割り当てる必要があります。 具体的には、**メール受信者**の役割 (既定では、**組織の管理**、**受信者の管理**、およびカスタムの**メール受信者**の役割グループに割り当てられます) または**ユーザーオプション**の役割 (既定では、**組織の管理**と**ヘルプデスク**の役割グループに割り当てられます) が必要です。 Exchange Online の役割グループにユーザーを追加するには、「 [Exchange online で役割グループを変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)する」を参照してください。 既定のアクセス許可を持つユーザーは、 [Exchange Online PowerShell へのアクセス](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)権を持っている限り、自分のメールボックスでこれらの手順を実行できることに注意してください。
 
 - EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+
+- 共有メールボックスの信頼できる差出人は、Azure AD に同期されず、設計に EOP れます。
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Exchange Online の PowerShell を使用してメールボックス内の迷惑メールルールを有効または無効にする
 
@@ -181,3 +183,38 @@ Outlook の迷惑メール フィルターが **[低]** または **[高]** に�
 そのため、Outlook の迷惑メールフィルターは、メールボックスで迷惑メールルールが無効になっている場合でも、メールボックスのセーフリストコレクションと独自のスパム分類を使用して、メッセージを迷惑メールフォルダーに移動することができます。
 
 Outlook と Web 上の Outlook の両方で、セーフリスト コレクションがサポートされます。 セーフリストコレクションは Exchange Online メールボックスに保存されるので、Outlook のセーフリストコレクションに対する変更は web 上の Outlook に表示され、その逆も同様です。
+
+## <a name="limits-for-junk-email-settings"></a>迷惑メールの設定の制限
+
+ユーザーのメールボックスに格納されているセーフリストコレクション (差出人セーフリスト、宛先セーフリスト、および受信拒否リスト) は、EOP にも同期されます。 ディレクトリ同期の場合、セーフリストコレクションは Azure AD に同期されます。
+
+- ユーザーのメールボックスのセーフリストコレクションには、すべてのリストと、追加の迷惑メールフィルター設定を含む 510 KB の制限があります。 ユーザーがこの制限を超えると、次のような Outlook エラーが表示されます。
+
+  > サーバーの迷惑メールリストに追加できません。 サーバーで許可されているサイズを超えています。 迷惑メールの一覧がサーバーで許可されているサイズまで縮小されるまで、サーバー上の迷惑メールフィルターは無効になります。
+
+  この制限の詳細と変更方法については、「 [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit)」を参照してください。
+
+- EOP の同期されたセーフリストコレクションの同期の制限は次のとおりです。
+
+  - [差出人セーフリスト]、[宛先セーフリスト]、および [外部連絡先からの**電子メールが信頼**されている場合、連絡先からのすべてのエントリが有効になります。1024
+  - 受信拒否リストと禁止ドメインリストに含まれるエントリの合計は500です。
+
+  1024エントリの制限に達すると、次の処理が行われます。
+  
+  - このリストは、PowerShell および Outlook on the web のエントリを受け付けなくなりますが、エラーは表示されません。
+
+    Outlook ユーザーは、1024個を超えるエントリを引き続き追加することができます。これは、Outlook の制限の 510 KB に達するまでです。 EOP フィルターがメールボックスに配信される前にメッセージをブロックしない限り (メールフロールール、スプーフィング防止など)、Outlook はこれらの追加エントリを使用できます。
+
+- ディレクトリ同期を使用すると、エントリは次の順序で Azure AD に同期されます。
+
+  1. 連絡先**からの信頼電子メール**が有効になっている場合のメール連絡先。
+  2. 差出人セーフリストと宛先セーフリストは、最初の1024エントリに対して変更が行われるたびに、組み合わせ、重複除外、およびアルファベット順に並べ替えられます。
+
+  最初の1024エントリが使用され、関連情報がメッセージヘッダーにスタンプされます。
+  
+  Azure AD に同期されていない1024のエントリは、Outlook (web 上の Outlook ではない) によって処理され、メッセージヘッダーに情報はスタンプされません。
+
+ご覧のとおり、 **[連絡先からの電子メールを信頼**する] 設定を有効にすると、同期可能な差出人と安全な受信者の数が少なくなります。 このことが問題になる場合は、グループポリシーを使用してこの機能をオフにすることをお勧めします。
+
+- ファイル名: outlk16 ax
+- ポリシー設定:**連絡先からの電子メールを信頼**する

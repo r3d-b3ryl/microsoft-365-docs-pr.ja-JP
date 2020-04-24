@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Microsoft 365 コンプライアンスセンターの電子情報開示ケースを使用して、組織の法的調査を管理します。 E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
-ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635907"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799908"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 
@@ -64,7 +64,7 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 
 - [保管担当者データをインデックス](processing-data-for-case.md)化し、インデックス作成エラーを修正して、調査のためにデータを効果的に収集できるようにする
 
-- ケースの[データを収集](collecting-data-for-ediscovery.md)して、さらに調査するために[レビューセットに追加する](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set)
+- ケースの[データを収集](collecting-data-for-ediscovery.md)して、さらに調査するために[レビューセットに追加する](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set)
 
 - 校閲セット内のドキュメント、[クエリ](review-set-search.md)データ、および[タグ](tagging-documents.md)アイテムを[表示](view-documents-in-review-set.md)する
 
