@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 新しいサブスクリプションにアップグレードする方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707525"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796514"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする 
 
@@ -63,7 +63,7 @@ ms.locfileid: "43707525"
 
 ## <a name="the-upgrade-tab-is-empty"></a>[アップグレード] タブが空である
 
-[**アップグレード**] タブが空の場合は、現時点でアップグレードできない理由が表示されます。 [プランを手動で変更](change-plans-manually.md)したり、[サポートを呼び出し](../../admin/contact-support-for-business-products.md)たりすることができます。 詳細については、「[プランをアップグレードできない理由](#why-cant-i-upgrade-plans)」を参照してください。
+[**アップグレード**] タブが空の場合は、現時点でアップグレードできない理由が表示されます。 [手動でプランを変更](change-plans-manually.md)してみることができます。 詳細については、「[プランをアップグレードできない理由](#why-cant-i-upgrade-plans)」を参照してください。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>目的のプランが表示されない
 
