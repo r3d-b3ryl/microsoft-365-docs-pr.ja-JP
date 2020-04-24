@@ -1,5 +1,5 @@
 ---
-title: Office 365 のユーザーとして検疫済みメッセージを検索して解放する
+title: ユーザーとして検疫済みメッセージを検索して解放する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,23 +16,23 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: Office 365 のユーザーは、検疫されたメッセージ (本人が受信者で、スパム フィルターによりスパムまたはバルク メールとして検疫されたメッセージ) を表示、解放、削除することができます。 検疫されたメッセージの表示と管理は、セキュリティ/コンプライアンス センターで行います。
-ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: Microsoft 365 のユーザーは、検疫されたメッセージ (本人が受信者で、スパム フィルターによりスパムまたはバルク メールとして検疫されたメッセージ) を表示、解放、削除することができます。 検疫されたメッセージの表示と管理は、セキュリティ/コンプライアンス センターで行います。
+ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216906"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638108"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Office 365 のユーザーとして検疫済みメッセージを検索して解放する
+# <a name="find-and-release-quarantined-messages-as-a-user"></a>ユーザーとして検疫済みメッセージを検索して解放する
 
-検疫を実行すると、Exchange Online メールボックスを使用している Office 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織の危険性の高いメッセージや不要なメッセージが保留にされます。 詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。
+検疫を実行すると、Exchange Online メールボックスを使用している Microsoft 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織の危険性の高いメッセージや不要なメッセージが保留にされます。 詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。
 
 ユーザーは、本人が受信者で、スパム、バルク メール、または (2020 年 4 月以降) フィッシングとして検疫された検疫済みメッセージを表示、解放、削除することができます。 検疫されたメッセージをセキュリティ/コンプライアンス センターで表示および管理するか、(管理者がこの設定を構成している場合) [エンド ユーザーのスパム通知を](use-spam-notifications-to-release-and-report-quarantined-messages.md)します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Office 365 セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com> にアクセスします。 検疫ページを直接開くには、<https://protection.office.com/quarantine> にアクセスします。
+- セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com> へ移動します。 検疫ページを直接開くには、<https://protection.office.com/quarantine> にアクセスします。
 
 - 管理者は、どれ程の期間メッセージを保持してから完全に削除するかを設定できます (スパム対策ポリシー)。 検疫期間が切れたメッセージは回復できません。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
@@ -66,7 +66,7 @@ ms.locfileid: "43216906"
 
    - **[メッセージ ID]**
 
-   - **[ポリシー名]**: このプロパティは、メッセージの検疫を発生させたポリシーを示します。 この情報を管理者に渡すことができます。
+   - **[ポリシー名]**
 
    - **[サイズ]**
 
@@ -108,7 +108,7 @@ ms.locfileid: "43216906"
 
    - **[件名]**: メッセージの件名全体を使用します。 この検索では大文字と小文字は区別されません。
 
-   検索条件を入力したら、![[更新] ボタン](../media/scc-quarantine-refresh.png) **[更新]** をクリックすると、結果がフィルター処理されます。
+   検索条件を入力したら、![[更新] ボタン](../../media/scc-quarantine-refresh.png) **[更新]** をクリックすると、結果がフィルター処理されます。
 
 特定の検疫済みメッセージを見つけたら、そのメッセージを選択して詳細を表示し、処理を実行します (メッセージの表示、解放、ダウンロード、または削除など)。
 
@@ -150,7 +150,7 @@ ms.locfileid: "43216906"
 
   完了したら、**[メッセージの解放]** をクリックします。
 
-- **[メッセージ ヘッダーを表示]**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 ヘッダー フィールドと値を詳しく分析するには、メッセージ ヘッダー テキストをクリップボードにコピーし、**[Microsoft メッセージ ヘッダー アナライザー]** を選択して、リモート接続アナライザーに移動します (このタスクを実行するために Office 365 を閉じたくない場合は、右クリックして **[新しいタブで開く]** を選択します)。 メッセージ ヘッダーを [Microsoft メッセージ ヘッダー アナライザー] セクションのページに貼り付け、**[ヘッダーを分析]** を選択します。
+- **[メッセージ ヘッダーを表示]**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 ヘッダー フィールドと値を詳しく分析するには、メッセージ ヘッダー テキストをクリップボードにコピーし、**[Microsoft メッセージ ヘッダー アナライザー]** を選択して、リモート接続アナライザーに移動します (このタスクを実行するために Microsoft 365 を閉じたくない場合は、右クリックして **[新しいタブで開く]** を選択します)。 メッセージ ヘッダーを [Microsoft メッセージ ヘッダー アナライザー] セクションのページに貼り付け、**[ヘッダーを分析]** を選択します。
 
 - **[メッセージのプレビュー]**: 表示されるポップアップ ウィンドウで、次のいずれかのオプションを選択します。
 

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: Microsoft Teams 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e177f290dff22943e282080652326dfb65cd07cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088132"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638478"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Microsoft Teams のファイルを保護する
 
@@ -61,7 +61,7 @@ ms.locfileid: "42088132"
 
 - [データ損失防止](../../compliance/data-loss-prevention-policies.md) (DLP) ポリシーは、機密および高機密の保持ラベル向けに構成されており、これらのタイプのファイルをユーザーが組織外に送信しようとすると警告を表示したり、その処理を防止したりします。
 
-- シナリオの必要に応じて、[機密ラベル](../../compliance/sensitivity-labels.md)を使用して、暗号化やアクセス許可によって機密性の高いファイルを保護することができます。 Azure Information Protection のお客様は、Microsoft 365 コンプライアンス センターで、Azure Information Protection ラベルを使用することができ、追加の構成や高度な構成を行うように選択すると、ラベルは Azure portal と同期されます。 Azure Information Protection ラベルと Office 365 機密ラベルは、互いに完全な互換性があります。 そのため、たとえば、Azure Information Protection でラベル付けされたコンテンツがある場合、そのコンテンツの分類やラベル付けをやり直す必要はありません。 このレベルの保護がすべてのお客様に求められているわけではありません。
+- シナリオの必要に応じて、[機密ラベル](../../compliance/sensitivity-labels.md)を使用して、暗号化やアクセス許可によって機密性の高いファイルを保護することができます。 Azure Information Protection のお客様は、Microsoft 365 コンプライアンス センターで、Azure Information Protection ラベルを使用することができ、追加の構成や高度な構成を行うように選択すると、ラベルは Azure portal と同期されます。 Azure Information Protection ラベルと秘密度ラベルは、互いに完全な互換性があります。 そのため、たとえば、Azure Information Protection でラベル付けされたコンテンツがある場合、そのコンテンツの分類やラベル付けをやり直す必要はありません。 このレベルの保護がすべてのお客様に求められているわけではありません。
 
 ## <a name="organization-wide-settings-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の組織全体の設定
 
@@ -125,7 +125,7 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
 
 このソリューションの 4 種類のチームを展開する手順については、「[ファイルの 3 層の保護用にチームを展開する](deploy-teams-three-tiers.md)」を参照してください。
 
-## <a name="office-365-retention-labels"></a>Office 365 保持ラベル
+## <a name="retention-labels"></a>保持ラベル
 
 機密データが存在する環境には、保持ラベルの使用が推奨されます。 保持ラベルの構成と発行が完了した後、次のことを行えるようになります。
 
@@ -135,7 +135,7 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
 
 - 保持ラベルに基づいた DLP ポリシーを適用できます。
 
-- 組織のユーザーが Outlook on the web、Outlook​​ 2010 以降、OneDrive、SharePoint​​、Office 365 グループ内のコンテンツにラベルを手動で適用できます。 多くの場合、ユーザーは自分が操作するコンテンツの種類を最もよく知っているので、コンテンツを分類して適切な DLP ポリシーを適用できます。
+- 組織のユーザーが Outlook on the web、Outlook​​ 2010 以降、OneDrive、SharePoint​​、Microsoft 365 グループ内のコンテンツにラベルを手動で適用できます。 多くの場合、ユーザーは自分が操作するコンテンツの種類を最もよく知っているので、コンテンツを分類して適切な DLP ポリシーを適用できます。
 
 図に示されているように、このソリューションでは次の保持ラベルを作成します。
 

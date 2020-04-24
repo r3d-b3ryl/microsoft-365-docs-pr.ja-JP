@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: 機密ラベルを適用して、機密性の高いチーム内のファイルを保護します。'
-ms.openlocfilehash: b263aeae335b83cadb45b16d70a2a45d56f1cbd3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c36daef7f28ad8bd3306fd7f3f7f1558a3594e68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083372"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637618"
 ---
 # <a name="protect-files-in-teams-with-sensitivity-labels"></a>機密ラベルを使用してチーム内のファイルを保護する
 
@@ -44,7 +44,7 @@ ms.locfileid: "42083372"
 
 - ラベルまたはサブラベルの名前に、チームの名前が含まれている
 - 暗号化が有効になっている
-- チームの Office 365 グループに、共同作成者のアクセス許可が与えられている
+- チームの Microsoft 365 グループに、共同作成者のアクセス許可が与えられている
 
 作成した後、ユーザーのために新しいラベルまたはサブラベルを発行します。ユーザーは、それらをローカルでチームにアップロードする前、またはチームに保存された後にファイルに適用できます。
 

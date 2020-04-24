@@ -1,5 +1,5 @@
 ---
-title: Office 365 のメール認証
+title: Microsoft 365 のメール認証
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Office 365 の Exchange Online および Exchange Online Protection (EOP) が、どのようにメール認証 (SPF、DKIM、DMARC) を使用して、スプーフィング、フィッシング、スパムを防止するかについて説明します。
-ms.openlocfilehash: 609f1a9bf80acc266bdfc5b0089eb6006be4bd7c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Microsoft 365 の Exchange Online および Exchange Online Protection (EOP) が、どのようにメール認証 (SPF、DKIM、DMARC) を使用して、スプーフィング、フィッシング、スパムを防止するかについて説明します。
+ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529862"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637558"
 ---
-# <a name="email-authentication-in-office-365"></a>Office 365 のメール認証
+# <a name="email-authentication-in-microsoft-365"></a>Microsoft 365 のメール認証
 
-メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 Exchange Online メールボックスを使用している Office 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織では、EOP は標準を使用して受信メールを検証します。
+メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 Exchange Online メールボックスを使用している Microsoft 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織では、EOP は標準を使用して受信メールを検証します。
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -55,7 +55,7 @@ Fortune 500 に含まれない中小規模の企業で強力なメール認証�
 
 暗示的なメール認証は、通常のメール認証ポリシーに対する多くの拡張機能に基づいて構築されています。 これらの拡張機能には、送信者評価、送信者の履歴、受信者の履歴、行動分析、他の高度な手法が含まれます。 メール認証ポリシーを使用しないドメインから送信されたメッセージは、そのメッセージが正当であることを示す別のシグナルが含まれていないときには、スプーフィングのマークが付けられます。
 
-Microsoft の一般発表については、「[大量のフィッシング詐欺: 第 2 部 - 強化された Office 365 のスプーフィング対策](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)」を参照してください。
+Microsoft の一般発表については、「[大量のフィッシング詐欺: 第 2 部 - 強化された Microsoft 365 のスプーフィング対策](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)」を参照してください。
 
 ## <a name="composite-authentication"></a>複合認証
 
@@ -63,9 +63,9 @@ SPF、DKIM、および DMARC は、いずれも単独で役立つものですが
 
 > Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-これらの値については、「[Office 365 のメールの認証で使用される Authentication-results メッセージ ヘッダー フィールド](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication)」で説明しています。
+これらの値については、「[Authentication-results メッセージ ヘッダー](anti-spam-message-headers.md#authentication-results-message-header)」で説明しています。
 
-メッセージ ヘッダーを調べることによって、管理者またはエンド ユーザーは、Office 365 が送信者がなりすましであること判断する方法を確認できます。
+メッセージ ヘッダーを調べることによって、管理者またはエンド ユーザーは、Microsoft 365 が送信者がなりすましであることを判断する方法を確認できます。
 
 ## <a name="why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>メール認証がスプーフィングの阻止には不十分なことがある理由
 
@@ -128,11 +128,11 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>認証されていないメールを送信している正当な送信者のためのソリューション
 
-Office 365 は、認証されていないメールを組織に送信している送信者を追跡しています。 その送信者がサービスによって正当ではないと判断されると、複合認証失敗のマークが付けられます。 この問題を回避するには、このセクションの推奨事項を使用できます。
+Microsoft 365 は、認証されていないメールを組織に送信している送信者を追跡しています。 その送信者がサービスによって正当ではないと判断されると、複合認証失敗のマークが付けられます。 この問題を回避するには、このセクションの推奨事項を使用できます。
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>所有しているドメインのメール認証を構成する
 
-この方法は、組織内スプーフィングの解決に使用できます。また、複数のテナントを所有している場合や複数のテナントとやり取りする場合のクロスドメイン スプーフィングの解決にも使用できます。 さらに、Office 365 内の別のユーザー、または別のプロバイダーによりホストされているサード パーティに送信する場合のクロスドメイン スプーフィングを解決する際にも役立ちます。
+この方法は、組織内スプーフィングの解決に使用できます。また、複数のテナントを所有している場合や複数のテナントとやり取りする場合のクロスドメイン スプーフィングの解決にも使用できます。 さらに、Microsoft 365 内の別のユーザー、または別のプロバイダーによりホストされているサード パーティに送信する場合のクロスドメイン スプーフィングを解決する際にも役立ちます。
 
 - ドメインの [SPF レコードを構成します](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
 
@@ -152,7 +152,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 この例では、会社のインフラストラクチャからのメールはメール認証にパスしますが、不明な送信元からのメールはニュートラルに戻ります。
 
-Office 365 は、会社のインフラストラクチャからの受信メールを認証済みとして扱いますが、識別されていない送信元からのメールは、(Office 365 が暗黙的に認証できるかどうかによって) スプーフィングとしてマークされる可能性があります。 ただし、これは Office 365 によってすべてのメールにスプーフィングのマークが付けられることからの改善に過ぎません。
+Microsoft 365 は、会社のインフラストラクチャからの受信メールを認証済みとして扱いますが、識別されていない送信元からのメールは、(Microsoft 365 が暗黙的に認証できるかどうかによって) スプーフィングとしてマークされる可能性があります。 ただし、これは Microsoft 365 によってすべてのメールにスプーフィングのマークが付けられることからの改善に過ぎません。
 
 `?all` の SPF フォールバック ポリシーの使用を開始したら、メッセージのメール送信元を徐々に見つけて含めることができ、より厳しいポリシーを使用して SPF レコードを更新できます。
 
@@ -170,7 +170,7 @@ Office 365 は、会社のインフラストラクチャからの受信メール
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>送信者/受信者ペアの許可エントリを作成する
 
-スパム フィルタリングをバイパスし、フィッシング フィルタリングの一部をバイパスし、特定の送信者のマルウェア フィルタリングをバイパスしない場合は、「[Office 365 で安全な送信者の一覧を作成する](create-safe-sender-lists-in-office-365.md)」をご覧ください。
+スパム フィルタリングをバイパスし、フィッシング フィルタリングの一部をバイパスし、特定の送信者のマルウェア フィルタリングをバイパスしない場合は、「[Microsoft 365 で安全な送信者の一覧を作成する](create-safe-sender-lists-in-office-365.md)」をご覧ください。
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>所有していないドメインのメール認証を構成するように送信者に依頼する
 

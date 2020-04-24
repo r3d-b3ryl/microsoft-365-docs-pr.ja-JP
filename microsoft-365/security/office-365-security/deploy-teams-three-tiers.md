@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Microsoft Teams でチームを作成し、さまざまなレベルのファイルの情報保護用に構成します。
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083344"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637642"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>ファイルの 3 層の保護用にチームを展開する
 
@@ -32,7 +32,7 @@ ms.locfileid: "42083344"
 
 ## <a name="baseline-teams"></a>ベースライン チーム
 
-ベースライン保護には、パブリックとプライベートの両方のチームが含まれます。 パブリック チームは、組織内のだれでも検出およびアクセスできます。 プライベート サイトは、チームと関連付けられた Office 365 グループのメンバーのみが検出とアクセスを行うことができます。 これらのどちらの種類のチームでも、メンバーは他のユーザーとサイトを共有できます。
+ベースライン保護には、パブリックとプライベートの両方のチームが含まれます。 パブリック チームは、組織内のだれでも検出およびアクセスできます。 プライベート サイトは、チームと関連付けられた Microsoft 365 グループのメンバーのみが検出とアクセスを行うことができます。 これらのどちらの種類のチームでも、メンバーは他のユーザーとサイトを共有できます。
 
 ### <a name="public"></a>パブリック
 
