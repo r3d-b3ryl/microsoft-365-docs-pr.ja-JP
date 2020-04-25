@@ -16,12 +16,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。'
-ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d84fb60886dd1518beb8a94438d5168c869a8c8
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638322"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808982"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -49,7 +49,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
 - カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records)」をご覧ください。
 
-- すべてのオンプレミス メッセージ サーバーの IP アドレス。たとえば、**192.168.0.1** などです。
+- すべてのオンプレミス メッセージ サーバーの外部 IP アドレス。たとえば、**131.107.2.200** などです。
 
 - SPF TXT レコードに含める必要があるサードパーティ製のすべてのドメインに使用するドメイン名。一部のバルク メール プロバイダーは、顧客用のサブドメインを設定しています。たとえば、会社 MailChimp に **servers.mcsv.net** を設定するなどです。
 
