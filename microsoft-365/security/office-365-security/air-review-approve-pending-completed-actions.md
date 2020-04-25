@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の修復アクションについて説明します。
-ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634642"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804829"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の後に、保留中または完了した修復アクションを表示する
 
-## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) します。
 
 ![AIR の調査処理 ページ](../../media/air-investigationactionspage.png)
+
+## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) します。
 
 [調査の詳細](air-view-investigation-results.md)を表示している間に、保留中の修復処理を承認または拒否することができます。 自動化された調査が完了するように、この手順をできるだけ早く実行することをお勧めします。
 
@@ -44,8 +45,8 @@ ms.locfileid: "43634642"
 5. リストからアイテムを選択します。 (これにより、[承認] ボタンと [拒否] ボタンが有効になります)。
 
 6. 選択したアイテムの利用可能な情報を確認し、その操作を承認または拒否します。 
- - **承認**は修復を開始することを許可します。
- - **却下**にはその他のアクションはありません
+   - **承認**は修復を開始することを許可します。
+   - **却下**にはその他のアクションはありません
 
 ## <a name="next-steps"></a>次の手順
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online メールボックスの迷惑メール設定を構成する方法について説明します。 これらの設定の多くは、Outlook または web 上の Outlook でユーザーが使用できます。
-ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 55597c45f093a5b9a0b860c6987454f926025e28
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800069"
+ms.locfileid: "43804791"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online のメールボックスで迷惑メール設定を構成する
 
@@ -41,7 +41,7 @@ Exchange Online の組織のスパム対策設定は、Exchange Online Protectio
 
 管理者は、Exchange Online PowerShell を使用して、メールボックスの迷惑メールルールの状態を無効、有効にし、表示することができます。 管理者は、Exchange Online PowerShell を使用して、メールボックス (差出人セーフリスト、宛先セーフリスト、および受信拒否リスト) のセーフリストコレクションのエントリを構成することもできます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - これらの手順を実行するには、Exchange Online PowerShell のみを使用できます。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -76,11 +76,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 構文およびパラメーターの詳細については、「 [set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)」を参照してください。
 
- **注**:
-
-- ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するに`-ErrorAction SlientlyContinue`は、 **set-mailboxjunkemailconfiguration**コマンドにを追加します。
-
-- 迷惑メールルールを無効にしても、Outlook の迷惑メールフィルター (構成方法によって異なります) では、メッセージがスパムであるかどうかを判断し、メッセージを自分のスパム verdict およびメールボックスのセーフリストコレクションに基づいて受信トレイまたは迷惑メールフォルダーに移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
+> [!NOTE]
+> 
+> - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するに`-ErrorAction SlientlyContinue`は、 **set-mailboxjunkemailconfiguration**コマンドにを追加します。
+> 
+> - 迷惑メールルールを無効にしても、Outlook の迷惑メールフィルター (構成方法によって異なります) では、メッセージがスパムであるかどうかを判断し、メッセージを自分のスパム verdict およびメールボックスのセーフリストコレクションに基づいて受信トレイまたは迷惑メールフォルダーに移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
@@ -145,13 +145,13 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 構文およびパラメーターの詳細については、「 [set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)」を参照してください。
 
- **注**:
-
-- ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するに`-ErrorAction SlientlyContinue`は、 **set-mailboxjunkemailconfiguration**コマンドにを追加します。
-
-- 迷惑メールルールがメールボックスで無効になっている場合でも、セーフリストコレクションを構成することができます。また、Outlook の迷惑メールフィルターは、受信トレイまたは迷惑メールフォルダーにメッセージを移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
-
-- Outlook の迷惑メールフィルターには、追加のセーフリストのコレクション設定があります (たとえば、**電子メールが [差出人セーフリスト] に自動的に追加**されます)。 詳細については、「[迷惑メールフィルターを使用して表示するメッセージを制御する](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077)」を参照してください。
+> [!NOTE]
+> 
+> - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するに`-ErrorAction SlientlyContinue`は、 **set-mailboxjunkemailconfiguration**コマンドにを追加します。
+> 
+> - 迷惑メールルールがメールボックスで無効になっている場合でも、セーフリストコレクションを構成することができます。また、Outlook の迷惑メールフィルターは、受信トレイまたは迷惑メールフォルダーにメッセージを移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
+> 
+> - Outlook の迷惑メールフィルターには、追加のセーフリストのコレクション設定があります (たとえば、**電子メールが [差出人セーフリスト] に自動的に追加**されます)。 詳細については、「[迷惑メールフィルターを使用して表示するメッセージを制御する](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077)」を参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

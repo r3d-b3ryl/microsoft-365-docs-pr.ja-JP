@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Microsoft 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
-ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b109c3e8a8dc92f2aaf91e40e620da8f1574af6f
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634630"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804871"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 
@@ -250,6 +250,6 @@ ms.locfileid: "43634630"
 
 ## <a name="next-steps"></a>次の手順
 
-- [保留中のアクションを確認して承認する](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
+- [保留中のアクションを確認して承認する](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
 
 - [Microsoft の脅威保護の自動化された調査と対応について説明します。](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

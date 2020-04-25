@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 管理センター-今月追加された機能について説明します。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627524"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805178"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -36,10 +36,59 @@ ms.locfileid: "43627524"
 > **3月以降の "クラシック" 管理センターの退職**<br><br>
 Admin.microsoft.com にサインインしたら、毎回新しい管理センターに移動します。 そして3月には、従来の管理センターに切り替える機能の無効化を開始します。 現時点では、引き続き切り替えることはできますが、新しい管理センターにはパリティが設定され、それを超えると、すべての組織のスイッチがオフになります。 <br><br> *最終更新日: 2020 年3月2日*
 
-他の管理センターの新機能をご希望の場合は、次のようにしてください。
+他の Microsoft クラウドサービスの新機能に興味がある場合は、次のことをご検討ください。
 
+- [Exchange Online の新機能](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Microsoft Intune の新機能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Microsoft 365 コンプライアンスセンターの新機能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Office 更新プログラム](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>2020 年 3 月
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>特集フィードバックの修正: ライセンスの "ユーザーの追加" の信頼性を向上させる
+
+ユーザーを追加する際にライセンスを割り当てることがどれほど難しいかについて、管理者から多くのフィードバックを受け取りました。 この修正プログラムに対する最初の更新プログラムを作成し、これらの要求を処理するために、より信頼性の高いバックグラウンドサービスに移行しました。 問題が発生した場合は、エラーメッセージが表示され、もう一度試してみることができます。
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="エラーを含むユーザー確認ページを追加します。":::
+
+### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams ホームページカード
+
+Teams の使用状況において uptick を使用すると、一部の組織は、teams をより見つけやすくするための固定されたダッシュボードカードを取得します。 また、このカードには、組織のリモート作業への移行を支援するためのトレーニングとドキュメントへのリンクもあります。 **ホーム**ページに移動するだけで新しいカードが表示されます。
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams ホームページカード":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>組織の SharePoint モバイルアプリのテーマをカスタマイズする
+
+Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モバイルアプリと Android 用の SharePoint モバイルアプリで組織のテーマをカスタマイズできるようになりました。 この機能により、SharePoint Online と一致するモバイルイントラネットアプリの環境を、外出先で利用することができます。 テーマのカスタマイズには、ロゴの画像、ナビゲーションバーの色、テキストとアイコンの色、およびアクセントの色が含まれており、認識が容易になります。
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="管理センターの設定をモバイルアプリにマッピングする図。":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>グループの追加ウィザードの機能強化
+
+管理者が新しいグループを作成し、それを同時にチームにした場合、Teams を含むライセンスを持たない所有者を割り当てることができます。 そして、いくつかの頭痛がありました。 所有者が Teams のライセンスを持っていることを確認するためにウィザードフローを更新しましたが、グループをチームに切り替えられないようにするオプションが無効になっている場合。
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>小規模および中規模企業向けの Microsoft 365 オファーリング
+
+これは来月のお知らせであることがわかっていますが、準備が整っていることを確認してください。
+
+4月21日から、中小企業向けの Office 365 サブスクリプションと Office 365 ProPlus に関連する変更を行っています。 これらの製品は、Microsoft 365 ブランドを使用するようになります。
+
+新しい製品名は2020年4月21日に有効になります。 これは製品名のみに変更され、現時点では価格または機能が変更されません。
+
+|現在の名前 |新しい名前  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
+|Office 365 Business     |    Microsoft 365 Apps for business       | 
+|Office 365 ProPlus    |   エンタープライズ向け Microsoft 365 アプリ      |
+
+### <a name="videos-training-and-docs"></a>ビデオ、トレーニング、ドキュメント
+
+[Microsoft 365 web シリーズの新](https://go.microsoft.com/fwlink/p/?linkid=2118096)機能: 今月のエピソードでは、microsoft Teams の3年の記念日を強調しています。また、オンライン会議での音声品質の向上、交代アプリを使用した最初の回線管理者のための通信の対象化、Teams および Skype コンシューマーとの相互運用性などの新機能についても説明します。
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -337,7 +386,7 @@ Ignite 2019 では、いくつかのエキサイティングな機能リリー�
 - **Intune デバイス保護**-ライセンスに intune が含まれていて、intune の設定が完了していないか、デバイスを登録していないことが検出された場合は、ユーザーがモバイルデバイスからアクセスしたときに組織のファイルを保護するための intune ポリシーを作成することをお勧めします。
 - **Office の月単位の機能の更新プログラムを入手**してください。 office の月単位の更新プログラムを取得すると、ユーザーの満足度が高くなるというご意見をお待ちしています。 そのため、非常に小規模な企業で、6か月ごとに Office 機能の更新プログラムを入手している場合は、この推奨事項が表示されます。
 
-**Settings** <br>
+**設定** <br>
 設定については、大幅に変更が加えられています。 ほとんどの場合、既存の設定を新しい管理センターのスタイルに更新するだけです。 前に見たことがない新しい設定を追加して、その設定を追加していくと、ここで紹介します。 また、「**先進認証**」という1つの設定をアナウンスしました。 はい、**モダン認証**を有効にするための新しい設定があります。 これを確認するには、[ **Settings** > **Services & アドイン** > の**モダン認証**] に移動します。
 
 ## <a name="april-2019"></a>2019 年 4 月

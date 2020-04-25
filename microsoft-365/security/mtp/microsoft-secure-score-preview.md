@@ -17,19 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615920"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804764"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft セキュリティスコア (プレビュー)
 
 >[!IMPORTANT]
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 Microsoft 365 セキュリティ センターの集中管理されたダッシュボードから、組織の Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視し、操作することができます。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点https://security.microsoft.com/securescoreについては、「Microsoft 365 セキュリティセンター」を参照してください。
+
+セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 Microsoft 365 セキュリティ センターの集中管理されたダッシュボードから、組織の Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視し、操作することができます。
 
 セキュア スコアは、次のような方法で組織の役に立ちます。  
 
@@ -154,9 +156,34 @@ Microsoft Secure Score は、システム構成、ユーザーの行動、およ
 
 ## <a name="whats-new"></a>新機能 
 
-Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
+Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-### <a name="updated-interface-and-functionality"></a>更新されたインターフェイスと機能
+### <a name="april-21st-2020"></a>2020年4月21日
+
+#### <a name="added-azure-active-directory-improvement-action"></a>Azure Active Directory の改善アクションを追加しました
+
+- ユーザーが管理されていないアプリケーションに同意を付与できないようにする (現時点でリリースされているバージョンで利用可能)
+
+#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Azure Advanced Threat Protection の向上アクションを追加しました
+
+- ドメインコントローラーで印刷スプーラーサービスを無効にする
+- セキュリティで保護されていない Kerberos 委任を変更して偽装を防止する
+- Microsoft LAPS を使用してローカル管理者パスワードを保護および管理する
+- 機密性の高いエンティティに対して、重要な移動パスリスクを軽減する
+- 機密グループからの休止アカウントの削除
+- セキュリティ保護のない SID 履歴属性をエンティティから削除する
+- 安全でないアカウントの属性を解決する
+- クリアテキストの資格情報の公開を停止する
+- 従来のプロトコル通信を停止する
+- 暗号使用率の低い停止
+
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Microsoft Defender ATP & 脆弱性管理 (TVM) のセキュリティに関する推奨事項のサポート
+
+リリースされた TVM で提供されるすべてのセキュリティの推奨事項を使用できるようになりました。
+
+### <a name="january---march-2020"></a>2020年1月
+
+#### <a name="updated-interface-and-functionality"></a>更新されたインターフェイスと機能
 
 * CISO およびリード レベルのディスカッションのすべての新しい指標と傾向の表示
 * スコアを追跡して評価するための新しい方法
@@ -165,13 +192,13 @@ Microsoft のセキュリティの評価をより良いものにするには、�
 * スコア予測と計画されているアクションを使用して、将来の目標に向けて管理する
 * その他多数。
 
-### <a name="removed-not-scored-and-review-improvement-actions"></a>[スコアを表示しない] および [レビュー] の強化アクションを削除しました
+#### <a name="removed-not-scored-and-review-improvement-actions"></a>[スコアを表示しない] および [レビュー] の強化アクションを削除しました
 
 セキュア スコアの原則の 1 つは、スコアが標準化され、関連付けが容易でなければならないということです。 測定できない、または実用的ではない改善のための処置は、混乱を引き起こしてきました。 1 つの Microsoft セキュア スコアが意味を成すのは、すべての推奨事項が明確にスコア化できる場合のみです。 スコアの改善アクションは測定できません。また、改善アクションのレビューは、他の改善アクションと同じ基準ではありません。
 
 このような理由により、スコアリングされていない、またはレビューのリズムを必要としたすべての改善アクションが一時的に削除されています。 お客様は、何もする必要はありません。
 
-### <a name="simplification-of-the-point-system"></a>ポイントシステムの簡略化
+#### <a name="simplification-of-the-point-system"></a>ポイントシステムの簡略化
 
 複数のエクスペリエンスにわたるポイントを標準化するために、各セキュリティで保護されたスコア向上のアクションポイント合計が10ポイント以下に更新されました。 現在、または将来的に追加する予定のセキュリティ制御の幅広い breather で、より一貫したものにする必要があります。 これは非常に大きな変更になっていますが、総ポイント合計が表示されますが、セキュリティに関する姿勢に変化はありません。
 

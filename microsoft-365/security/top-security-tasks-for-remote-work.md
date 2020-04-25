@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - remotework
-description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。
+ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630799"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808848"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -33,7 +33,7 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 - Microsoft 365 E3 には Enterprise Mobility + Security (EMS) E3 および Azure AD P1 が含まれています。
 - Microsoft 365 E5 に EMS E5 と Azure AD P2 が含まれる
   
-||**タスク**| すべての Office 365 Enterprise プラン|**Microsoft 365 E3** |**Microsoft 365 E5**|
+||**Task**| すべての Office 365 Enterprise プラン|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1-d      |[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |pbm-2     | [脅威からの保護](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
@@ -191,7 +191,7 @@ VPN コンセントレーター、中央ネットワーク出口装置 (プロ�
 
 ## <a name="10-train-users"></a>10: ユーザーをトレーニングする
 
-ユーザーが組織内での脅威保護機能について理解していない場合、ユーザーは保護機能によって気が付けられない可能性があります。 また、疑わしい電子メールメッセージや Url に関して、注目すべきことが事前にわかっている場合は、疑わしい成果物を開く可能性がはるかに低くなります。 トレーニングユーザーは、ユーザーやセキュリティ運用チームにとって多くの時間とイライラを節約できます。
+トレーニングユーザーは、ユーザーやセキュリティ運用チームにとって多くの時間とイライラを節約できます。 経験豊富なユーザーは、添付ファイルを開いたり、疑わしい電子メールメッセージ内のリンクをクリックしたりする可能性が低くなり、疑わしい web サイトを避けられる可能性が高くなります。 
 
 Harvard ケネディ School [Cybersecurity キャンペーンハンドブック](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)は、フィッシング攻撃を識別するユーザーのトレーニングを含む、組織内でのセキュリティの認知度の強力な文化を確立するための優れたガイダンスを提供します。 
 

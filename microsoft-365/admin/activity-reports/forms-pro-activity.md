@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 管理センターの Microsoft 365 レポートダッシュボードを使用して Microsoft Forms Pro アクティビティレポートを取得する方法について説明します。
-ms.openlocfilehash: 69938124b1aeb996afd52c119ac61e2e607f871e
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781620"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804811"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>管理センターフォームアクティビティの Microsoft 365 レポート
+# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>管理センターフォーム Pro アクティビティの Microsoft 365 レポート
 
 Microsoft 365 **Reports** dashboard には、組織内の製品全体にわたるアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
   

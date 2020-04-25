@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637106"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804760"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -120,9 +120,7 @@ Microsoft セキュア スコアでは、[スコアなし] と表示されたア
 
 3. リスクを許容し、改善アクションを実行しないことに決めた場合は、**[無視]** を選択します。 改善アクションを無視すると、達成できるセキュア スコアのポイント合計が減ります。 このアクションは履歴で表示したり、いつでも元に戻したりできます。
 
-4. 改善アクションを選択すると、ポイントを取得して保持するために環境の一部を定期的に確認する必要がある場合は、**[レビュー]** を選択します。 たとえば、メールボックス転送ルールでは、データがネットワークから流出していないことを毎週確認する必要があります。 何も変更する必要はありませんが、アクションを実行する必要があります。 定期的にルールを確認すると、ポイントが与えられます。 そうしない場合、スコアは減点されます。
-
-![セキュア スコア改善アクションの例](../../media/secure-score/secure-score1x450.png) ![セキュア スコア改善アクションのレビューの例](../../media/secure-score/secure-score2x450.png)
+![セキュア スコア改善アクションの例](../../media/secure-score/secure-score1x450.png)
 
 *図 2 & 3: 改善アクションのポップアップ*
 
@@ -137,6 +135,15 @@ Microsoft セキュア スコアは、システム構成、ユーザーの行動
 ## <a name="whats-new"></a>新機能
 
 Microsoft セキュア スコアがお客様のセキュリティ体制をよりよく反映するように、いくつかの変更を加えました。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
+
+### <a name="april-21st-2020"></a>2020年4月21日
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>改善アクションのうち、信頼できる測定としての条件を満たさないもの、またはセキュリティ体制の形として有用でないものは、削除しています。
+
+Microsoft セキュリティ スコアが有意義であり、すべての改善アクションが測定可能かつ信頼性の高いものになるよう、次の改善アクションについては削除します。
+
+- ドキュメントへの IRM による保護の適用
+- データ損失防止ポリシーの適用
 
 ### <a name="january---march-2020"></a>2020年1月
 
