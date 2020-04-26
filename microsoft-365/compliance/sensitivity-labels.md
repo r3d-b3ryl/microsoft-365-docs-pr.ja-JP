@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 情報保護フレームワークの秘密度ラベルを使用して、組織のデータを分類して保護し、ユーザーの生産性とコラボレーション機能を損なわないようにします。 これらのラベルは、フッターや透かしなどの暗号化の視覚的マーキングを含む保護設定を適用できます。
-ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: c7a803180cfa839029ce86e19e0ede75c39d6476
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240312"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631294"
 ---
 # <a name="learn-about-sensitivity-labels"></a>機密度ラベルの詳細
 
@@ -80,7 +80,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 > Office アプリのメールやドキュメントにラベルを適用できるだけでなく、以下のパブリック プレビュー リリースでも秘密度ラベルを使用できます。
 > 
 > - [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)](sensitivity-labels-teams-groups-sites.md)
+> - [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する (パブリック プレビュー)](sensitivity-labels-teams-groups-sites.md)
 
 メールやドキュメントに秘密度ラベルが適用されると、そのラベルで構成済みの保護設定がコンテンツに適用されます。秘密度ラベルを使用すると、次のことができます。
 
@@ -92,14 +92,14 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
     
     ![ドキュメントに適用されたヘッダーと透かし](../media/Sensitivity-label-watermark-header.png)
     
-    コンテンツ マーキングがいつ適用されるかを確認する必要がありますか？ 「[Office 365 がコンテンツにコンテンツ マーキングと暗号化を適用した場合](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)」を参照してください。
+    コンテンツ マーキングがいつ適用されるかを確認する必要がありますか？ 「[Microsoft 365 がコンテンツ マーキングと暗号化を適用した場合](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)」を参照してください。
     
     文字数の長さ: 透かしで使用できる文字数は、255 文字に制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。
 
 
-- [Microsoft Teams、Office 365 グループ、SharePoint サイト (パブリック プレビュー) で秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)プレビューを選択したときに、**サイトやグループなどのコンテナ内のコンテンツを保護します**。
+- [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する (パブリック プレビュー)](sensitivity-labels-teams-groups-sites.md) のプレビューを選択したときに、**サイトやグループなどのコンテナ内のコンテンツを保護します**。
     
-    [**サイトとグループの設定**] の構成オプションは、プレビューを選択するまで表示されません。 このラベル構成によってドキュメントは自動的にラベルが付けされるのではなく、ラベル設定はドキュメントが格納されているコンテナへのアクセスを制御することによってコンテンツを保護します。 これらの設定には、プライバシー レベル、Office 365 グループ所有者がゲストをグループに追加できるかどうか、および管理されていないデバイスに付与されるアクセス レベルが含まれます。
+    [**サイトとグループの設定**] の構成オプションは、プレビューを選択するまで表示されません。 このラベル構成によってドキュメントは自動的にラベルが付けされるのではなく、ラベル設定はドキュメントが格納されているコンテナへのアクセスを制御することによってコンテンツを保護します。 これらの設定には、プライバシー レベル、Microsoft 365 グループ所有者がゲストをグループに追加できるかどうか、および管理されていないデバイスに付与されるアクセス レベルが含まれます。
 
 - **Office アプリでラベルを自動的に適用するか、ラベルを推奨します。** ラベルを付ける機密情報のタイプを選択できます。ラベルは自動的に適用されることも、推奨するラベルを適用するようにユーザーに求めることもできます。 ラベルを推奨すると、選択したテキストがプロンプトに表示されます。 次に例を示します。
     
@@ -141,9 +141,9 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 ラベル ポリシーを使用すると、次のことができます。
 
-- **ラベルを表示させるユーザーとグループを選択する。** ラベルは、メールが有効になっているセキュリティ グループ、Office 365 グループ、または動的配布グループのいずれにも発行できます。
+- **ラベルを表示させるユーザーとグループを選択する。** ラベルは、メールが有効になっているセキュリティ グループ、Microsoft 365 グループ、または動的配布グループのいずれにも発行できます。
 
-- ラベル ポリシーに含まれているユーザーとグループが作成したすべての新しいドキュメントと電子メールに**既定のラベルを適用する**。 このオプションは、[Microsoft Teams、Office 365 グループ、および SharePoint サイトの機密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md)、コンテナにも適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。 既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 
+- ラベル ポリシーに含まれているユーザーとグループが作成したすべての新しいドキュメントと電子メールに**既定のラベルを適用する**。 このオプションは、[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md)、コンテナにも適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。 既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 
 
 - **ラベル変更の正当な理由を要求する。** ユーザーがラベルを削除しようとした場合、またはラベルを低い順序番号のラベルに置き換えた場合は、ユーザーにこの操作を実行する正当な理由を要求できます。 たとえば、ユーザーは「社外秘」というラベルの付いたドキュメント (順序番号 3) を開き、そのラベルを「公開」というラベル (順序番号 1) に置き換えます。 現在、正当な理由は、管理者がレビューするための[ラベル分析](label-analytics.md)に送信されません。 ただし、[Azure Information Protection の統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)は、この情報を [Azure Information Protection の分析](https://docs.microsoft.com/azure/information-protection/reports-aip)に送信します。
 
@@ -197,7 +197,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 ### <a name="azure-information-protection-clients"></a>Azure Information Protection クライアント
 
-秘密度ラベルを Windows コンピューター上の Office 365 ProPlus アプリで使用する場合は、Azure Information Protection クライアントを使用するか、Office に組み込まれているラベル付け機能を使用するかを選ぶことができます。
+秘密度ラベルを Windows コンピューター上の Microsoft 365 Apps for enterprise アプリで使用する場合は、Azure Information Protection クライアントを使用するか、Office に組み込まれているラベル付け機能を使用するかを選ぶことができます。
 
 既定では、Azure Information Protection クライアントがインストールされている場合、組み込みのラベル付け機能はこれらのアプリでオフになっています。 この既定の動作の変更方法などの詳細については、「[Office built-in labeling client and the Azure Information Protection client (Office 組み込みラベル付けクライアントおよび Azure Information Protection クライアント)](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)」を参照してください。
 

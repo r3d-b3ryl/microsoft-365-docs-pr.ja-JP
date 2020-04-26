@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: GDPR のための Office 365 の機密情報の種類を変更または新規作成する方法について説明します。
-ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: GDPR のための機密情報の種類を変更または新規作成する方法について説明します。
+ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595484"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637779"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>機密情報の種類をカスタマイズまたは新規作成する
 
-この記事では、GDPR のための Office 365 の機密情報の種類を変更または新規作成する方法を説明する 3 つの例を示します。
+この記事では、GDPR のための機密情報の種類を変更または新規作成する方法を説明する 3 つの例を示します。
 
 - 既存の機密情報の種類を変更する — EU のデビット カード番号
 
@@ -77,9 +77,9 @@ ms.locfileid: "41595484"
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>例: "EU のデビット カード番号" の機密情報の種類の変更
 
-任意のシステムにおける DLP ルールの精度を向上するには、サンプル データ セットに対するテストが必要です。また、変更とテストを繰り返して微調整する必要があるかもしれません。この例では、"EU のデビット カード番号" の機密情報の種類を変更して、精度を向上する方法を示します。
+任意のシステムにおける DLP ルールの精度を向上するには、サンプル データ セットに対するテストが必要です。また、変更とテストを繰り返して微調整する必要があるかもしれません。この例では、"EU のデビット カード番号" の機密情報の種類を変更して、精度を向上する方法についてデモンストレーションを行います。
 
-例の中で EU のデビット カード番号を検索するときの番号の定義は、複雑なパターンを使っており、チェックサムの検証の対象に指定されている 16 桁の数字として厳密に定義されます。この機密情報の種類の文字列の定義により、このパターンを変更することはできません。ただし、以下の調整を行うことで、Office 365 DLP が Office 365 でこの機密情報の種類を見つける精度を向上させることができます。
+例の中で EU のデビット カード番号を検索するときの番号の定義は、複雑なパターンを使っており、チェックサムの検証の対象に指定されている 16 桁の数字として厳密に定義されます。この機密情報の種類の文字列の定義により、このパターンを変更することはできません。ただし、以下の調整を行うことで、DLP が Office 365 でこの機密情報の種類を見つける精度を向上させることができます。
 
 ### <a name="proximity-modification"></a>近接度の変更
 
@@ -197,7 +197,7 @@ KQL クエリとキーワードを使って機密情報を識別したら、こ�
 
 ### <a name="example--create-a-new-sensitive-information-for-email-addresses"></a>例 — 電子メール アドレスの新しい機密情報の種類を作成する 
 
-電子メール アドレスがシンプルなので、引き続きこれを例として使います。以下の表は、新しい電子メールの機密情報の種類に対して推奨される変更の詳細を示しています。
+メール アドレスがシンプルなので、引き続きこれを例として使います。以下の表は、新しいメールの機密情報の種類に対して推奨される変更の詳細を示しています。
 
 <table>
 <thead>
@@ -294,7 +294,7 @@ CCN の例:
 >
 > 17040O1118
 
-Contoso は、内部対応、外部対応、ドキュメントなどで、常に CCN を使って顧客を参照しています。カスタムの機密情報の種類を作成して、Office 365 での CCN の使用を検出します。これにより、この形式の個人データの使用に対して、保護を適用することができます。
+Contoso は、内部対応、外部対応、ドキュメントなどで、常に CCN を使って顧客を参照しています。カスタムの機密情報の種類を作成して、CCN の使用を検出します。これにより、この形式の個人データの使用に対して、保護を適用することができます。
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>Contoso 顧客番号に対して新しい機密情報の種類を作成する
 
@@ -312,7 +312,7 @@ Contoso は、内部対応、外部対応、ドキュメントなどで、常に
 <td align="left">Contoso は PowerShell とコンテンツ検索を使用して、CCN の一連の例に一致するドキュメントを検索します。</td>
 <td align="left">
 
-<p>#Office 365 セキュリティ/コンプライアンス センターに接続する</p>
+<p>#セキュリティ &amp; コンプライアンス センターに接続する</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#サンプル データの検索を作成して開始する</p>
@@ -363,7 +363,7 @@ Contoso は、内部対応、外部対応、ドキュメントなどで、常に
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso は、次の PowerShell でカスタムの機密情報の種類を作成します。</td>
-<td align="left"><p>#Office 365 セキュリティ/コンプライアンス センターに接続する</p>
+<td align="left"><p>#セキュリティ &amp; コンプライアンス センターに接続する</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#新しい機密情報の種類を作成する</p>

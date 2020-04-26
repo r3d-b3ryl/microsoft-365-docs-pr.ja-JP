@@ -1,5 +1,5 @@
 ---
-title: 新しい Office 365 Message Encryption 機能を設定する
+title: 新しい Message Encryption 機能を設定する
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,25 +16,25 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Azure Information Protection をベースに構築された、Office 365 Message Encryption (OME) の新機能を使用すると、自分の組織で組織内および組織外のユーザーと保護されたメール通信を使用することができます。 OME の新機能は、他の Office 365 組織、Outlook.com、Gmail、およびその他のメール サービスと連携します。
-ms.openlocfilehash: 766e1d2ae054a5a5e91786a360177492ee9ba1b7
-ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
+description: Azure Information Protection をベースに構築された、Office 365 Message Encryption (OME) の新機能を使用すると、自分の組織で組織内および組織外のユーザーと保護されたメール通信を使用することができます。 新しい OME 機能は、他の組織、Outlook.com、Gmail、その他のメール サービスなどと連携します。
+ms.openlocfilehash: 95ac1528c59dc3f59e0d0e923d78ffb7138456d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680086"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635469"
 ---
-# <a name="set-up-new-office-365-message-encryption-capabilities"></a>新しい Office 365 Message Encryption 機能を設定する
+# <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
-新しい Office 365 Message Encryption (OME) 機能では、保護されたメールを任意のデバイス上の誰とでも共有できます。 ユーザーは、Outlook.com、Gmail、およびその他のメール サービスを使用して、他の Office 365 組織や Office 365 以外のユーザーと保護されたメッセージを交換できます。
+新しい Office 365 Message Encryption (OME) 機能では、保護されたメールを任意のデバイス上の誰とでも共有できます。 ユーザーは、Outlook.com、Gmail、およびその他のメール サービスを使用して、他の Microsoft 365 組織やサービスを使用していないユーザーと保護されたメッセージを交換できます。
 
-Office 365 組織で新しい OME 機能が使用できるようにするには、次の手順に従います。
+組織で新しい OME 機能が使用できるようにするには、次の手順に従います。
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Azure Rights Management が有効であることを確認する
 
 新しい OME 機能は、[Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) の保護機能を活用します。Azure RMS は、[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) が暗号化とアクセス制御を介して電子メールとドキュメントを保護するために使用するテクノロジーです。
 
-新しい OME 機能を使用するための唯一の前提条件は、組織のテナントで [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) を有効化する必要があることです。 その場合、Office 365 は新しい OME 機能を自動的に有効化するため、何もする必要はありません。
+新しい OME 機能を使用するための唯一の前提条件は、組織のテナントで [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) を有効化する必要があることです。 その場合、Microsoft 365 は新しい OME 機能を自動的に有効化するため、何もする必要はありません。
 
 また、Azure RMS はほとんどの対象となるプランで自動的に有効化されるため、おそらく何もする必要はありません。 詳細については、「[Azure Rights Management を有効化する](https://docs.microsoft.com/azure/information-protection/activate-service)」を参照してください。
 
@@ -55,15 +55,15 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Azure Information Protection テナント キーの管理を構成する
 
-この手順は省略可能です。 Microsoft が Azure Information Protection のルート キーを管理できるようにすることが既定であり、ほとんどの Office 365 テナントに推奨されるベスト プラクティスです。 このような場合は、何もする必要はありません。
+この手順は省略可能です。 Microsoft が Azure Information Protection のルート キーを管理できるようにすることが既定であり、ほとんどの組織に推奨されるベスト プラクティスです。 このような場合は、何もする必要はありません。
 
 コンプライアンス要件など、多くの理由により、独自のルート キー (Bring Your Own Key (BYOK) とも呼ばれる)の生成と管理が必要になる場合があります。 この場合、新しい OME 機能をセットアップする前に、必要な手順を完了することをお勧めします。 詳細については、「[Azure Information Protection テナント キーを計画して実装する](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Exchange Online PowerShell で新しい OME 構成を確認する
 
-[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) の新しい OME 機能を使用するように Office 365 テナントが適切に構成されていることを確認できます。
+[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) の新しい OME 機能を使用するように Microsoft 365 テナントが適切に構成されていることを確認できます。
   
-1. Office 365 テナントのグローバル管理者権限を持つアカウントを使用して、[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)します。
+1. Microsoft 365 テナントのグローバル管理者権限を持つアカウントを使用して、[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)します。
 
 2. Get-IRMConfiguration コマンドレットを実行します。
 
@@ -81,7 +81,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
 
-     - 送信者の電子メールの提供はオプションですが、システムに追加のチェックを強制的に実行させます。 Office 365 テナントの任意のユーザーのメール アドレスを使用します。
+     - 送信者の電子メールの提供はオプションですが、システムに追加のチェックを強制的に実行させます。 Microsoft 365 テナントの任意のユーザーのメール アドレスを使用します。
 
      結果は次のようになります:
 
@@ -99,7 +99,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
             OVERALL RESULT: PASS
      ```
 
-   - *Contoso* は Office 365 の組織名に置き換えられます。
+   - *Contoso* は組織名に置き換えられます。
 
    - 既定のテンプレート名は、上に表示されているものとは異なる場合があります。 詳細については、「[Azure Information Protection のテンプレートを構成して管理する](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)」を参照してください。
 
@@ -111,7 +111,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>次の手順: 新しい OME 機能を使用するためのメール フロー ルールを定義する
 
-Office 365 組織のメールを暗号化するために以前に構成されたメール フロー ルールがある場合は、新しい OME 機能を使用するために既存のルールを更新する必要があります。 新しい展開の場合、新しいメール フロー ルールを作成する必要があります。
+組織のメールを暗号化するために以前に構成されたメール フロー ルールがある場合は、新しい OME 機能を使用するために既存のルールを更新する必要があります。 新しい展開の場合、新しいメール フロー ルールを作成する必要があります。
 
 >[!IMPORTANT]
 >既存のメール フロー ルールを更新しない場合、ユーザーは新しい、シームレスな OME の操作環境ではなく、以前の HTML 添付ファイルの形式を使用する暗号化されたメールを引き続き受信します。

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7b8e7e7f15ac4a0f257e9c4c86bd14659cc609b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602134"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632932"
 ---
 # <a name="my-number-act-japan"></a>マイ ナンバー法 (日本)
 
@@ -33,11 +33,11 @@ ms.locfileid: "41602134"
 
 日本の顧客が個人データのプライバシーを保護できるように、Microsoft は、[Microsoft オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を通じて、当社の範囲内のビジネス クラウド サービスが、顧客がマイ ナンバー法を順守するのに役立つ技術的および組織的なセキュリティ セーフガードを実装していることを契約で確約します。これは、日本のお客様が日本のビジネス要件を満たせるという自信を持って Microsoft のビジネス クラウド サービスを展開できることを意味します。
 
-個人情報保護委員会 (PPC) が発行する [Q\&A](https://www.ppc.go.jp/legal/policy/faq/) (日本語) は、個人情報の適切な取り扱いと保護に関するガイドラインを定めています。 第三者が (a) 同意しないこと、および (b) 適切なアクセス制御システムを確立することを契約で規定している場合、個人データを取り扱うと解釈されないことを規定しています。 マイ ナンバー法は、データが第三者に転送される場合の義務を規定していますが、PPC Q[A のセクション ](https://www.ppc.go.jp/legal/policy/faq/)Q3-12\& (日本語) は、これらは第三者が個人データを「処理」しない場合 (永続的にアクセスしない場合) は適用されません。
+個人情報保護委員会 (PPC) が発行する [Q\&A](https://www.ppc.go.jp/legal/policy/faq/) (日本語) は、個人情報の適切な取り扱いと保護に関するガイドラインを定めています。 第三者が (a) 同意しないこと、および (b) 適切なアクセス制御システムを確立することを契約で規定している場合、個人データを取り扱うと解釈されないことを規定しています。 マイ ナンバー法は、データが第三者に転送される場合の義務を規定していますが、PPC Q\&A のセクション [Q3-12](https://www.ppc.go.jp/legal/policy/faq/) (日本語) は、これらは第三者が個人データを「処理」しない場合 (永続的にアクセスしない場合) は適用されません。
 
 Microsoft ビジネス クラウド サービスは、[Microsoft オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)でこれらの要件に対処します。これは、マイ ナンバー データを含む顧客データの所有権と責任は、Microsoft ではなく顧客にあることを規定しています。 したがって、顧客は、顧客データに含まれるマイ ナンバー データを保護するために適切な管理を行う必要があります。
 
-Microsoft はクラウド サービスに保存されているマイ ナンバー データに永続的にアクセスできないため、マイ ナンバー データを処理するための「アウトソーシング」契約は必要ありません。 顧客が Microsoft にマイ ナンバー データを含む顧客データへのアクセスを希望する場合、そのような要求を行う前に、顧客はすべてのケースについて Microsoft と追加のアウトソーシング契約を作成する必要があります。
+Microsoft はクラウド サービスに保存されているマイ ナンバー データに永続的にアクセスできないため、マイ ナンバー データを処理するための "アウトソーシング" 契約は必要ありません。 顧客が Microsoft にマイ ナンバー データを含む顧客データへのアクセスを希望する場合、そのような要求を行う前に、顧客はすべてのケースについて Microsoft と追加のアウトソーシング契約を作成する必要があります。
 
 また、Microsoft は、顧客データを使用して、広告や同様の商業目的ではなく、顧客にサービスを提供することのみを約束し、堅牢なアクセス制御システムを導入していることも明記しています。
 
@@ -58,7 +58,7 @@ Microsoft はクラウド サービスに保存されているマイ ナンバ�
 
 - [Office 365 のプライバシー](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=a1b48a5b-bcb1-4c19-9277-952c0df87113&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Microsoft が Office 365 に強力なプライバシー保護を構築する方法。
 
-- [Office 365 の管理者アクセス](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview): Microsoft が Office 365 の顧客データへの管理アクセスを管理する方法。
+- [Office 365 の管理者アクセス](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview): Microsoft が顧客データへの管理アクセスを管理する方法。
 
 - [Office 365 の監査とレポート](https://docs.microsoft.com/office365/SecurityCompliance/office-365-auditing-and-reporting-overview): テナント内のユーザーおよび管理アクティビティを追跡するために顧客が使用できる機能の探索。
 
