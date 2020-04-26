@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams、Office 365 グループ、SharePoint サイトで機密ラベルを使用する (パブリック プレビュー)
+title: Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する (パブリック プレビュー)
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,21 +16,21 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Office 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 69ab8dcecf95f02965254928110802bfd0308b8b
-ms.sourcegitcommit: b8aa905b7c9c59def56490670b928b0b7daa7d0c
+description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
+ms.openlocfilehash: ac4e95c8356149ce9e5c719837820f84332d2a80
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2020
-ms.locfileid: "43558766"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804849"
 ---
-# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>秘密度ラベルを使用して、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する (パブリック プレビュー)
+# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する (パブリック プレビュー)
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-[Microsoft 365 コンプライアンス センター](https://protection.office.com/)で秘密度ラベルを作成する場合、次のコンテナーへと適用できるようになりました: Microsoft Teams サイト、Office 365 グループ、SharePoint サイト。 これらのコンテナーのコンテンツを保護するには、次のラベル設定を使用します。
+[Microsoft 365 コンプライアンス センター](https://protection.office.com/)で秘密度ラベルを作成する場合、次のコンテナーへと適用できるようになりました: Microsoft Teams サイト、Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))、SharePoint サイト。 これらのコンテナーのコンテンツを保護するには、次のラベル設定を使用します。
 
-- Office 365 グループに接続されているチーム サイトのプライバシー(パブリックまたはプライベート)
+- Microsoft 365 グループに接続されているチーム サイトのプライバシー (パブリックまたはプライベート)
 - 外部ユーザーのアクセス
 - 非管理対象デバイスからのアクセス 
 
@@ -38,21 +38,21 @@ ms.locfileid: "43558766"
 
 ただし、これらのコンテナーのコンテンツは、ラベル名、視覚的なマーキング、暗号化などの設定のラベルを継承しません。 ユーザーが SharePoint サイトまたはチーム サイトでドキュメントにラベルを付けられるようにするには、[SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にします](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>Microsoft Teams、Office 365 グループ、および SharePoint サイトのパブリック プレビューについて
+## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトのパブリック プレビューについて
 
-Microsoft Teams、Office 365 グループ、SharePoint サイト向けの秘密度ラベルは段階的にテナントへとロールアウトされ、最終リリース前に変更される可能性があります。 このパブリック プレビューは、Office 365 コンテンツ配信ネットワーク (CDN) では機能しません。
+Microsoft Teams、Microsoft 365 グループ、SharePoint サイト向けの秘密度ラベルは段階的にテナントへとロールアウトされ、最終リリース前に変更される可能性があります。 このパブリック プレビューは、Office 365 コンテンツ配信ネットワーク (CDN) では機能しません。
 
 このプレビューを有効にして新しい設定の機密ラベルを構成する前に、ユーザーはアプリで機密ラベルを表示および適用できます。 たとえば、Word から: 
 
 ![Word デスクトップ アプリに表示される機密ラベル](../media/sensitivity-label-word.png)
 
-このプレビューを有効にして構成すると、ユーザーは追加で機密ラベルを表示し、Microsoft Teams、Office 365 グループ、および SharePoint サイトに適用することができます。 たとえば、SharePoint から新しいチーム サイトを作成する場合:
+このプレビューを有効にして構成すると、ユーザーは追加で秘密度ラベルを表示し、Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトに適用することができます。 たとえば、SharePoint から新しいチーム サイトを作成する場合:
 
 ![SharePoint でチーム サイトを作成するときの機密ラベル](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="enable-this-preview-and-synchronize-labels"></a>このプレビューを有効にしてラベルを同期する
 
-1. この機能は Azure AD 機能を使用するため、Azure AD のドキュメントの指示に従ってプレビューを有効にします: [Assign sensitivity labels to Office 365 groups in Azure Active Directory (preview) (Azure Active Directory の Office 365 グループに機密ラベルを割り当てる (プレビュー))](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
+1. この機能は Azure AD 機能を使用するため、Azure AD のドキュメントの指示に従ってプレビューを有効にします: [Azure Active Directory で Microsoft 365 グループに秘密度ラベルを割り当てる (プレビュー)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
 2. では、[Office 365 セキュリティ/コンプライアンス センター PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) に接続します。 
     
@@ -65,7 +65,7 @@ Microsoft Teams、Office 365 グループ、SharePoint サイト向けの秘密�
     Import-PSSession $Session -DisableNameChecking
     ```
 
-3. 秘密度ラベルを Office 365 グループで使用できるように、次のコマンドを実行して秘密度ラベルを Azure AD に同期させます。
+3. 秘密度ラベルを Microsoft 365 グループで使用できるように、次のコマンドを実行して秘密度ラベルを Azure AD に同期させます。
     
     ```powershell
     Execute-AzureAdLabelSync
@@ -103,7 +103,7 @@ Microsoft Teams、Office 365 グループ、SharePoint サイト向けの秘密�
 ## <a name="sensitivity-label-management"></a>機密ラベルの管理
 
 > [!WARNING]
-> Microsoft Teams、Office 365 グループ、および SharePoint サイトに使用する機密ラベルを作成、変更、および削除するには、ラベル ポリシーをユーザーに発行する際に慎重な調整が必要です。 
+> Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトに使用する秘密度ラベルを作成、変更、および削除するには、ラベル ポリシーをユーザーに発行する際に慎重な調整が必要です。 
 
 以下のガイダンスを使用して、すべてのユーザーに影響を与える可能性のあるサイトおよびグループの作成エラーを回避します。
 
@@ -115,7 +115,7 @@ Microsoft Teams、Office 365 グループ、SharePoint サイト向けの秘密�
 
 2. 24 時間待ちます。
 
-3. この 24 時間の待ち時間の後、手順 1 で指定したユーザー アカウントのいずれかを使用して、手順 1 で作成したラベルを持つチーム、Office 365 グループ、または SharePoint サイトを作成します。
+3. この 24 時間の待ち時間の後、手順 1 で指定したユーザー アカウントのいずれかを使用して、手順 1 で作成したラベルを持つチーム、Microsoft 365 グループ、または SharePoint サイトを作成します。
 
 4. 手順 3 の作成操作中にエラーが発生しなかった場合、テナント内のすべてのユーザーにラベルを発行します。 エラーがある場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)へお問い合わせください。
 
@@ -131,9 +131,9 @@ Microsoft Teams、Office 365 グループ、SharePoint サイト向けの秘密�
 
 4. 機密ラベルが表示されていない場合は、ラベルを安全に変更または削除できます。 ラベルがまだ表示されている場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)にお問い合わせください。
 
-## <a name="assign-sensitivity-labels-to-office-365-groups"></a>Office 365 グループに機密ラベルを割り当てる
+## <a name="assign-sensitivity-labels-to-microsoft-365-groups"></a>Microsoft 365 グループに秘密度ラベルを割り当てる
 
-これで、1 つまたは複数の機密ラベルを Office 365 グループに適用する準備ができました。 手順については、Azure AD のドキュメントに戻ります。
+これで、1 つまたは複数の秘密度ラベルを Microsoft 365 グループに適用する準備ができました。 手順については、Azure AD のドキュメントに戻ります。
 
 - 「[Assign a label to a new group in Azure portal (Azure ポータルの新しいグループにラベルを割り当てる)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)」
 
@@ -153,7 +153,7 @@ Microsoft Teams、Office 365 グループ、SharePoint サイト向けの秘密�
 
 ![チームに表示される機密ラベル](../media/privacy-setting-teams.png)
 
-このサービスは、Office 365 グループおよび接続された SharePoint チーム サイトに対して同じ機密ラベルを自動的に適用します。
+このサービスは、Microsoft 365 グループおよび接続された SharePoint チーム サイトに対して同じ秘密度ラベルを自動的に適用します。
 
 ## <a name="apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web"></a>Outlook on the web の新しいグループに機密ラベルを適用する
 
@@ -206,7 +206,7 @@ Outlook on the web では、新しいグループを作成するときに、公�
 
 4. 次に、[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
     
-    以下に例を示します。
+    次に例を示します。
     
     ```powershell
     $UserCredential = Get-Credential
@@ -256,7 +256,7 @@ Outlook on the web では、新しいグループを作成するときに、公�
 
 ## <a name="classic-azure-ad-group-classification"></a>従来の Azure AD グループの分類
 
-このプレビューを有効にすると、Office 365 は新しい Office 365 のグループおよび SharePoint サイト向けに古い分類をサポートしなくなります。 ただし、既存のグループおよびサイトには、機密ラベルを使用するように変換しない限り、古い分類値が引き続き表示されます。
+このプレビューを有効にすると、Microsoft 365 は新しい Microsoft 365 のグループおよび SharePoint サイト向けに古い分類をサポートしなくなります。 ただし、既存のグループおよびサイトには、機密ラベルを使用するように変換しない限り、古い分類値が引き続き表示されます。
 
 SharePoint の古いグループ分類を使用した場合の例として、「[SharePoint の "モダン" サイトの分類」](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)を参照してください。
 
@@ -274,13 +274,13 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 その後で以下の手順に従います。 
 
-1. PowerShell を使用して、既存の Office 365 グループおよび SharePoint サイトに名前のマッピングを使用して機密ラベルを適用します。 手順については、次のセクションを参照してください。
+1. PowerShell を使用して、既存の Microsoft 365 グループおよび SharePoint サイトに名前のマッピングを使用して秘密度ラベルを適用します。 手順については、次のセクションを参照してください。
 
 2. 既存のグループおよびサイトから古い分類を削除します。
 
 機密ラベルをまだサポートしていないアプリやサービスでユーザーが新しいグループを作成できないようにすることはできませんが、定期的な PowerShell スクリプトを実行して、ユーザーが古い分類で作成した新しいグループを探し、機密ラベルを使用するようにそれらを変換することができます。 
 
-#### <a name="use-powershell-to-convert-classifications-for-office-365-groups-to-sensitivity-labels"></a>PowerShell を使用して、Office 365 グループの分類を機密ラベルに変換する
+#### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>PowerShell を使用して Microsoft 365 グループの分類を秘密度ラベルに変換する
 
 1. まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
     
@@ -299,11 +299,11 @@ SharePoint の古いグループ分類を使用した場合の例として、「
     Get-Label |ft Name, Guid
     ```
 
-3. Office 365 グループに適用する機密ラベルの GUID をメモします。
+3. Microsoft 365 グループに適用する秘密度ラベルの GUID をメモします。
 
 4. 次に、[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
     
-    以下に例を示します。
+    例:
     
     ```powershell
     $UserCredential = Get-Credential
@@ -311,13 +311,11 @@ SharePoint の古いグループ分類を使用した場合の例として、「
     Import-PSSession $Session
     ```
 
-5. [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) コマンドレットを実行して、指定した分類のいずれかを持つ Office 365 グループの一覧を取得します。
-    
-    たとえば、"全般" の分類を持つ Office 365 グループの一覧を取得するには、次のようにします。 
-    
-    ```powershell
-    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
-    ```
+5. 次のコマンドを例として使用して、現在 "一般" の分類を持つグループのリストを取得します。
+
+   ```PowerShell
+   $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
+   ```
 
 6. グループごとに、新しい機密ラベル GUID を追加します。 以下に例を示します。
 
@@ -344,15 +342,15 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>機密ラベルの展開のトラブルシューティング
 
-Microsoft Teams、Office 365 グループ、および SharePoint サイトの機密ラベルに問題がありますか ? 以下を確認してください。
+Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトの秘密度ラベルに問題がありますか ? 以下を確認してください。
 
 ### <a name="labels-not-visible-after-publishing"></a>発行後にラベルが表示されない
-これらの設定を有効にした後、あるいは秘密度ラベルの名前やヒントを変更した後に、サイトまたは Office 365 グループを作成する際に問題が発生した場合には、ラベルの変更を保存してから数時間待ち、その後チームまたはグループの作成を再試行してみてください。 詳細については、「[秘密度ラベルを作成または変更した後にロールアウトをスケジュールする](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)」を参照してください。
+これらの設定を有効にした後、あるいは秘密度ラベルの名前やヒントを変更した後に、サイトまたは Microsoft 365 グループを作成する際に問題が発生した場合には、ラベルの変更を保存してから数時間待ち、その後チームまたはグループの作成を再試行してみてください。 詳細については、「[秘密度ラベルを作成または変更した後にロールアウトをスケジュールする](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)」を参照してください。
 
 それでも SharePoint Online から新しい秘密度ラベルを表示できない場合には、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)へお問い合わせください。
 
 ### <a name="team-group-or-sharepoint-site-creation-errors"></a>チーム、グループ、または SharePoint サイトの作成エラー
-パブリック プレビューで作成エラーが発生した場合、「[PowerShell で秘密度ラベルのサポートを有効にする](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)」と同じ手順を実行すれば、Microsoft Teams、Office 365 グループ、SharePoint サイトの秘密度ラベルをオフにすることができます。 ただし、プレビューを無効にするには、手順 5 で `$setting["EnableMIPLabels"] = "False"` を使用して機能を無効にします。
+パブリック プレビューで作成エラーが発生した場合、「[PowerShell で秘密度ラベルのサポートを有効にする](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)」と同じ手順を実行すれば、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルをオフにすることができます。 ただし、プレビューを無効にするには、手順 5 で `$setting["EnableMIPLabels"] = "False"` を使用して機能を無効にします。
 
 ## <a name="additional-resources"></a>その他のリソース
 
