@@ -1,5 +1,5 @@
 ---
-title: メール
+title: 電子メール
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
-description: Office 365 メールボックスのメールを管理する方法について説明します。
-ms.openlocfilehash: ca1fba8c89f7c647a0bb6d4f846ebb12f82a7abd
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Microsoft 365 メールボックスのメールを管理する方法について説明します。
+ms.openlocfilehash: 25d34ed4f86a918daea5e04c89b9b79c91bebc08
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126013"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628857"
 ---
-# <a name="email"></a>メール
+# <a name="email"></a>電子メール
 
-Office 365 メールボックスのメールを管理する方法について説明します。
+Microsoft 365 メールボックスのメールを管理する方法について説明します。
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -146,7 +146,7 @@ Office 365 メールボックスのメールを管理する方法について説
                 <div class="card">
                     <div class="cardText">
                         <h3>メールの接続と配信の問題の解決</a></h3>
-                        <p><a href="https://diagnostics.outlook.com/#/">Office 365 および Exchange Online における Outlook の接続の問題を修正する</a></p>
+                        <p><a href="https://diagnostics.outlook.com/#/">Microsoft 365 および Exchange Online における Outlook の接続の問題を修正する</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">ユーザーのメールボックスで削除されたアイテムを復元する</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">メール配信に関する問題を見つけて修正する</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">ドメインまたは DNS レコードの追加後に (メールの問題を含む) 問題を特定して解決する</a></p>
@@ -162,8 +162,8 @@ Office 365 メールボックスのメールを管理する方法について説
             <div class="card">
                 <div class="cardText">
                         <h3>エンタープライズ向けのリソース</h3>
-                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Exchange Online と Office 365 のメール フローのベスト プラクティス</a></p>
-                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">複数のメール アカウントを Office 365 に移行する方法</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Exchange Online と Microsoft 365 のメール フローのベスト プラクティス</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">複数のメール アカウントを Microsoft 365 に移行する方法</a>。</p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Exchange ハイブリッド展開コンテンツ</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>

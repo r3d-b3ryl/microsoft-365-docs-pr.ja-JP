@@ -4,7 +4,7 @@
   href: ../admin/admin-home.md
 - name: 試用する/購入する
   items:
-    - name: Office 365 試用版にサインアップする
+    - name: Microsoft 365 試用版にサインアップする
       href: sign-up-for-office-365-trial.md
     - name: Microsoft 365 の試用または購入
       href: try-or-buy-microsoft-365.md
@@ -64,8 +64,6 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 支払サービス ディレクティブ 2 および強力な顧客認証
       href: billing-and-payments/psd2.md
-    - name: 税金情報
-      href: billing-and-payments/tax-information.md
 - name: 請求アカウント
   items:
     - name: 請求アカウントを管理する

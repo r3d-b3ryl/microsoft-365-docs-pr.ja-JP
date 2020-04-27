@@ -19,7 +19,7 @@
               href: networking-avoid-network-hairpins.md
             - name: 手順 4 - トラフィック バイパスを構成する
               href: networking-configure-proxies-firewalls.md
-            - name: 手順 5 - クライアントと Office 365 サービスのパフォーマンスを最適化する
+            - name: 手順 5 - クライアントとサービスのパフォーマンスを最適化する
               href: networking-optimize-tcp-performance.md
             - name: ネットワークの終了条件
               href: networking-exit-criteria.md
@@ -55,10 +55,10 @@
               href: windows10-enable-security-features.md
             - name: Windows 10 Enterprise の終了条件
               href: windows10-exit-criteria.md
-        - name: フェーズ 4 - Office 365 ProPlus
+        - name: 'フェーズ 4: Microsoft 365 Apps for enterprise'
           href: office365proplus-infrastructure.md
           items:
-            - name: Office 365 ProPlus の終了条件
+            - name: Microsoft 365 Apps for enterprise の終了条件
               href: office365proplus-exit-criteria.md
         - name: フェーズ 5 - モバイル デバイス管理
           href: mobility-infrastructure.md
@@ -76,7 +76,7 @@
               href: infoprotect-configure-increased-security-office-365.md
             - name: 手順 4 - Windows 情報保護を構成する
               href: infoprotect-deploy-windows-information-protection.md
-            - name: 手順 5 - Office 365 データ損失防止を構成する
+            - name: 手順 5 - データ損失防止 (DLP) を構成する
               href: infoprotect-data-loss-prevention.md
             - name: 手順 6 - 電子メールの暗号化を構成する
               href: infoprotect-email-encryption.md
@@ -174,7 +174,7 @@
           href: contoso-identity.md
         - name: Windows 10 Enterprise
           href: contoso-win10.md
-        - name: Office 365 ProPlus
+        - name: Microsoft 365 Apps for enterprise
           href: contoso-o365pp.md
         - name: モバイル デバイス管理
           href: contoso-mdm.md

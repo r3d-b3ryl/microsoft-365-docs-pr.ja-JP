@@ -1,10 +1,10 @@
-- name: Microsoft 365 Business
+- name: Microsoft 365 Business Premium
   items:
     - name: Microsoft 365
       href: index.yml
-    - name: Microsoft 365 Business とは何ですか。
+    - name: Microsoft 365 Business Premium とは
       href: microsoft-365-business-overview.md
-    - name: Microsoft 365 Business を入手する
+    - name: Microsoft 365 Business Premium を取得する
       href: sign-up.md
     - name: データ保護のための前提条件
       href: pre-requisites-for-data-protection.md
@@ -12,7 +12,7 @@
       items:
         - name: セットアップの概要
           href: set-up-overview.md
-        - name: Microsoft 365 Business のセットアップ
+        - name: Microsoft 365 Business Premium のセットアップ
           href: set-up.md
         - name: Windows 10 コンピューターをセキュリティで保護する
           href: secure-win-10-pcs.md
@@ -71,9 +71,9 @@
               href: validate-settings-on-windows-10-pcs.md
         - name: Windows 10 PC のアプリの保護設定
           href: protection-settings-for-windows-10-devices.md
-    - name: Microsoft 365 Business へ移行する
+    - name: Microsoft 365 Business Premium へ移行する
       items:
-        - name: Office 365 Business Premium から移行する
+        - name: Microsoft 365 Business Standard からの移行
           href: migrate-to-microsoft-365-business.md
         - name: Office 365 E3 から移行する
           href: migrate-from-e3.md
@@ -99,7 +99,7 @@
           href: autopilot-profile-settings.md
         - name: デバイス状態
           href: device-states.md
-    - name: Microsoft 365 Business についてよく寄せられる質問
+    - name: Microsoft 365 Business Premium に関するよく寄せられる質問
       href: support/microsoft-365-business-faqs.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/office365/enterprise'
