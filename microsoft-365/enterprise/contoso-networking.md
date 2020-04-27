@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のネットワーク インフラストラクチャと、Microsoft 365 Enterprise のクラウド サービスに対する最高のネットワーク性能を得るために SD-WAN テクノロジをどのように使用しているかについて説明します。
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068346"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625280"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 
@@ -50,14 +50,14 @@ ms.locfileid: "42068346"
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Microsoft への最適なネットワーク接続のための SD-WAN の使用
 
-Contoso 社は次の [Office 365 ネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)に従いました。
+Contoso 社は次の [Microsoft 365 ネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)に従いました。
 
-1. Office 365 ネットワーク トラフィックを識別して区別する
+1. Microsoft 365 ネットワーク トラフィックを識別して区別する
 2. ネットワーク接続のローカルの出口を提供する
 3. ネットワーク ヘアピンを回避する
 4. 重複するネットワーク セキュリティ デバイスをバイパスする
 
-Office 365 のネットワーク トラフィックには、最適化、許可、既定の 3 つのカテゴリがあります。 トラフィックの最適化と許可は、エンドポイントで暗号化およびセキュリティ保護された信頼できるネットワーク トラフィックであり、Microsoft 365 ネットワーク宛てです。
+Microsoft 365 のネットワーク トラフィックには、最適化、許可、既定の 3 つのカテゴリがあります。 トラフィックの最適化と許可は、エンドポイントで暗号化およびセキュリティ保護された信頼できるネットワーク トラフィックであり、Microsoft 365 ネットワーク宛てです。
 
 Contoso は次のように決定しました。
 
@@ -93,7 +93,7 @@ Contoso 社のユーザーによる Microsoft 365 Enterprise サービスの導�
 
 2. Microsoft 365 Enterprise のネットワーク接続の計画を作成
 
-   Contoso 社は、[Office 365 のネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)を使用し、参照ネットワーク アーキテクチャを提供して、Office 365 接続の優先トポロジを SD-WAN にすることに決定しました。
+   Contoso 社は、[Microsoft 365 のネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)を使用し、参照ネットワーク アーキテクチャを提供して、Microsoft 365 接続の優先トポロジを SD-WAN にすることに決定しました。
 
 3. 各オフィスのインターネット接続利用率と MPLS WAN 帯域幅を分析し、必要に応じて帯域幅を拡大
 
@@ -105,7 +105,7 @@ Contoso 社のユーザーによる Microsoft 365 Enterprise サービスの導�
 
 5. 内部 DNS の構成
 
-   DNS が機能し、Office 365 トラフィックのためにローカルで検索対象になる必要があります。
+   DNS が機能し、Microsoft 365 トラフィックのためにローカルで検索対象になる必要があります。
 
 6. ネットワーク エンドポイントとポートの接続を検証
 

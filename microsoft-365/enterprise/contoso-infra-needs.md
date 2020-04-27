@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
-ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068390"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625292"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
 
@@ -126,7 +126,7 @@ Contoso 社の IT 部門は展開に先立ち、Microsoft 365 E5 の機能への
 | セキュリティ |  |  |
 |  | ID およびアクセス管理 | Azure 多要素認証 (MFA) および Azure AD Privileged Identity Management (PIM) 付きの専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Office 365 脅威の調査および対応 <BR> |
-|  | 情報保護 | Azure Information Protection <BR> Office 365 データ損失防止 (DLP) <BR> Windows 情報保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | 情報保護 | Azure Information Protection <BR> データ損失防止 (DLP) <BR> Windows 情報保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | セキュリティ管理 | Azure Security Center  <BR> Windows Defender セキュリティ センター |
 | リモート/モバイル アクセスおよびビジネス パートナー |  |  |
 |  | リモート ワーカーとモバイル ワーカーのセキュリティを強化する | Microsoft Intune |
@@ -135,7 +135,7 @@ Contoso 社の IT 部門は展開に先立ち、Microsoft 365 E5 の機能への
 | コンプライアンス |  |  |
 |  | 地域の規制要件に準拠する | Office 365 の GDPR 機能 |
 | 管理 |  |  |
-|  | クライアントの更新プログラムをインストールするため、IT オーバーヘッドを削減する | 展開リング <BR> Windows 10 Enterprise の更新プログラム <BR> Office 365 ProPlus の更新プログラム |
+|  | クライアントの更新プログラムをインストールするため、IT オーバーヘッドを削減する | 展開リング <BR> Windows 10 Enterprise の更新プログラム <BR> Microsoft 365 Apps for enterprise の更新プログラム |
 ||||
 
 ## <a name="next-step"></a>次の手順

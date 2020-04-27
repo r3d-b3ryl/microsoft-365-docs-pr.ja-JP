@@ -1,5 +1,5 @@
 ---
-title: 一般法人向け Office 365 のセットアップ
+title: 一般法人向け Microsoft 365 をセットアップする
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,25 +24,25 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
-description: Office 365 Business Premium、Office 365 Business Essentials、Office 365 Business、または Office 365 Education サブスクリプションをセットアップする方法について説明します。
-ms.openlocfilehash: f862eb2042da329e70c7cc1658a5c1a037b56faa
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Microsoft 365 Business Standard、Microsoft 365 Business Basic、Microsoft 365 Apps for business、または Office 365 Education サブスクリプションをセットアップする方法について説明します。
+ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212175"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627548"
 ---
-# <a name="set-up-office-365-for-business"></a>一般法人向け Office 365 のセットアップ
+# <a name="set-up-microsoft-365-for-business"></a>一般法人向け Microsoft 365 をセットアップする
 
-[Office 365 Business Premium](https://go.microsoft.com/fwlink/p/?LinkId=627220)、Office 365 Business Essentials、Office 365 Business、または Office 365 Education を使用して、企業または[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を立ち上げ運営するには、次の手順を実行します。
+[Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220)、Microsoft 365 Business Basic、Microsoft 365 Apps for business、または Office 365 Education を使用して、企業または[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を立ち上げ運営するには、次の手順を実行します。
   
-企業でない場合 「[Office 365 Home または Office 365 Personal のセットアップ](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx)」を参照してください。
+企業でない場合 「[Microsoft 365 Family とは](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx)」を参照してください。
   
 ## <a name="business-premium"></a>Business Premium
   
- *次の手順は、**[Office 365 Business Premium プラン](https://go.microsoft.com/fwlink/p/?LinkId=627220)** を所有する企業および[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を対象としています。*
+ *次の手順は、**[Microsoft 365 Business Standard プラン](https://go.microsoft.com/fwlink/p/?LinkId=627220)** を所有する企業および[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を対象としています。*
 
-Office 365 Business Premium のセットアップに関する短いビデオをご覧ください。<br><br>
+Microsoft 365 Business Standard のセットアップに関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
 
@@ -50,15 +50,15 @@ Office 365 Business Premium のセットアップに関する短いビデオを�
 
 ### <a name="1-sign-up-and-set-up"></a>1. サインアップしてセットアップする
 
-1. Office 365 Business プランにサインアップするには、[Office 製品のサイト](https://www.aka.ms/office365signup)にアクセスし、[**今すぐ購入**] を選択します。
+1. 一般法人向け Microsoft 365 プランにサインアップするには、[Office 製品のサイト](https://www.aka.ms/office365signup)にアクセスし、[**今すぐ購入**] を選択します。
 
-2. **Office 365 Business Premium** など、サインアップするプランを選択します。
+2. **Microsoft 365 Business Standard** など、サインアップするプランを選択します。
 
-3. 手順に従って、Office 365 Business プランにサインアップします。
+3. 手順に従って、一般法人向け Microsoft 365 プランにサインアップします。
 
     サインアップ プロセスが完了すると、管理センターに移動します。ここでは、ウィザードを使用して Office アプリのインストール、ドメインの追加、ユーザーの追加、ライセンスの割り当てを行うことができます。 初期セットアップが完了したら、管理センターの [**セットアップ**] ページを使用して、サブスクリプションに付属するサービスの設定と構成を継続できます。
 
-    Office 365 セットアップ ウィザードおよび管理センターの [**セットアップ**] ページの詳細については、「[Office 365 セットアップ ウィザードと [セットアップ] ページの違い](o365-setup-wizard-and-setup-page.md)」を参照してください。
+    セットアップ ウィザードおよび管理センターの **[セットアップ]** ページの詳細については、「[セットアップ ウィザードと [セットアップ] ページの違い](o365-setup-wizard-and-setup-page.md)」を参照してください。
 
 ### <a name="2-set-up-outlook-for-email"></a>2. メール用に Outlook をセットアップする
 
@@ -70,7 +70,7 @@ Office 365 Business Premium のセットアップに関する短いビデオを�
 
 2. [**ファイル**] \> [**情報**] \> [**アカウントの追加**] の順に選択します。
 
-3. Office 365 のメール アドレスを入力し、[**接続**] を選択します。
+3. Microsoft のメール アドレスを入力して、**[接続]** を選択します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
@@ -78,7 +78,7 @@ Office 365 Business Premium のセットアップに関する短いビデオを�
   
 ### <a name="3-import-email"></a>3. メールをインポートする
 
-別のメール アカウントで Outlook を使用していた場合は、以前のメール、予定表、連絡先を新しい Office 365 アカウントにインポートできます。
+別のメール アカウントで Outlook を使用していた場合は、以前のメール、予定表、連絡先を新しい Microsoft アカウントにインポートできます。
   
 1. **古いメールをエクスポートする**
 
@@ -98,7 +98,7 @@ Office 365 Business Premium のセットアップに関する短いビデオを�
   
 ### <a name="4-use-a-public-website"></a>4. 一般向け Web サイトを使用する
 
-Office 365 には、ビジネスに使用するための一般向け Web サイトは含まれていません。 Web サイトをセットアップする場合は、GoDaddy や WIX などの Microsoft パートナーの使用を検討してください。
+Microsoft 365 には、ビジネスに使用するための一般向け Web サイトは含まれていません。 Web サイトをセットアップする場合は、GoDaddy や WIX などの Microsoft パートナーの使用を検討してください。
   
 1. 管理センターから、[**リソース**] に移動し、[**一般向け Web サイト**] を選択します。
 
@@ -110,11 +110,11 @@ Office 365 には、ビジネスに使用するための一般向け Web サイ�
   
 ## <a name="business-essentials"></a>Business Essentials
   
-***[Office 365 Business Essentials](https://go.microsoft.com/fwlink/p/?LinkId=627218)** サブスクリプションをセットアップするには、次の手順を実行します。このプランでは、オンラインで Office 365 に接続します。Office アプリをインストールしないでください。*
+***[Microsoft 365 Business Basic](https://go.microsoft.com/fwlink/p/?LinkId=627218)** サブスクリプションをセットアップするには、次の手順を実行します。このプランでは、オンラインで Office 365 に接続します。Office アプリをインストールしないでください。*
 
-### <a name="1-create-office-365-accounts-and-add-your-domain"></a>1. Office 365 アカウントを作成し、ドメインを追加する
+### <a name="1-create-microsoft-365-accounts-and-add-your-domain"></a>1. Microsoft 365 アカウントを作成し、ドメインを追加する
 
-この手順では、セットアップ ウィザードを使用して組織のユーザーの Office 365 アカウントを作成し、組織の独自のドメインを追加します。このウィザードでは、すべてのユーザーのユーザー ID とメール アドレスを、rob@contoso.com のようにカスタマイズできます。
+この手順では、セットアップ ウィザードを使用して組織のユーザーの Microsoft 365 アカウントを作成し、組織の独自のドメインを追加します。このウィザードでは、すべてのユーザーのユーザー ID とメール アドレスを、rob@contoso.com のようにカスタマイズできます。
   
 ::: moniker range="o365-worldwide"
 
@@ -140,17 +140,17 @@ Office 365 Germany を使用している場合は、[この管理センター](h
   
 ### <a name="2-import-email"></a>2. メールをインポートする
 
-別のメール システムから既存のメールと連絡先を Office 365 メールボックスに移行すると、すべてのアイテムを 1 か所に表示することができます。
+別のメール システムから既存のメールと連絡先を Microsoft メールボックスに移行すると、すべてのアイテムを 1 か所に表示することができます。
   
 移行オプションについては、「[メールと連絡先を移行する](migrate-email-and-contacts-admin.md)」を参照してください。
   
 ### <a name="3-connect-email-accounts"></a>3. メール アカウントを関連付ける
 
-Office 365 のメールを Outlook で管理するほか、Gmail や Yahoo など、他のメール アカウントを Outlook に関連付けることができます。この方法ですべてのメールを 1 か所にまとめて管理でき、最大で 5 つのメール アカウントを Outlook に関連付けることができます。
+Microsoft のメールを Outlook で管理するほか、Gmail や Yahoo など、他のメール アカウントを Outlook に関連付けることができます。この方法ですべてのメールを 1 か所にまとめて管理でき、最大で 5 つのメール アカウントを Outlook に関連付けることができます。
   
 ::: moniker range="o365-worldwide"
 
-職場または学校のアカウントを使用して、[https://www.office.com/signin](https://www.office.com/signin) で Office 365 にサインインします。
+[https://www.office.com/signin](https://www.office.com/signin) で、職場または学校アカウントを使用して、Microsoft 365 にサインインします。
 
 ::: moniker-end
 
@@ -211,11 +211,11 @@ Office 365 Germany を使用している場合は、[https://portal.office.de/OL
 
 ### <a name="5-store-files-online"></a>5. ファイルをオンラインで保存する
 
-Office 365 では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でドキュメントを保存する場所](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)」を参照してください。
+Microsoft では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[ファイルを保存する場所](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)」を参照してください。
   
-管理者がユーザーの Office 365 アカウントを作成すると、ユーザーには自動的に **OneDrive** クラウド ストレージの場所が付与されます。OneDrive を使用すると、コンピューター、スマートフォン、タブレットのどのデバイスでもファイルにアクセスすることができます。
+管理者がユーザーの Microsoft アカウントを作成すると、ユーザーには自動的に **OneDrive** クラウド ストレージの場所が付与されます。OneDrive を使用すると、コンピューター、スマートフォン、タブレットのどのデバイスでもファイルにアクセスすることができます。
   
-1. コンピューター上で、エクスプローラーを使用して OneDrive を開きます。 または、[Office 365](https://www.office.com) からアプリ起動ツールで [**OneDrive**] を開きます。
+1. コンピューター上で、エクスプローラーを使用して OneDrive を開きます。 または、[Microsoft 365](https://www.office.com) からアプリ起動ツールで **OneDrive** を開きます。
 
 2. 個人用ファイルを表示およびアップロードしたり、[**共有**] を選択して、ドキュメントを表示する他のユーザーを招待するか、リンクを送信することで、ドキュメントやフォルダーを共有したりします。 詳細については、「[OneDrive のファイルとフォルダーの共有](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07.aspx#OS_Type=OneDrive_-_Business)」を参照してください。
 
@@ -223,11 +223,11 @@ Office 365 では、ファイルを簡単にオンラインで保存できます
   
 ### <a name="get-started-using-office"></a>Office の使用を開始する
 
-Office 365 のツアーを見たり、すべての Office モバイル アプリの使用方法を確認したりするには、「[はじめに](../admin-overview/get-started-with-office-365.md)」を参照してください。
+Microsoft 365 のツアーを見たり、すべての Office モバイル アプリの使用方法を確認したりするには、「[はじめに](../admin-overview/get-started-with-office-365.md)」を参照してください。
   
 ## <a name="business"></a>Business
   
-***[Office 365 Business プラン](https://go.microsoft.com/fwlink/p/?LinkId=627219)** には、Office 365 のメールおよび Skype for Business は含まれていません。次のセットアップ手順では、既存のメール アカウント (Gmail など) を Outlook に追加する方法を示します。*
+***[Microsoft 365 Apps for business プラン](https://go.microsoft.com/fwlink/p/?LinkId=627219)** には、Microsoft のメールおよび Skype for Business は含まれていません。次のセットアップ手順では、既存のメール アカウント (Gmail など) を Outlook に追加する方法を示します。*
 
 ### <a name="1-add-users"></a>1. ユーザーを追加する
 
@@ -283,15 +283,15 @@ Office 365 Germany を使用している場合は、[https://portal.office.de/OL
   
 ### <a name="3-set-up-mobile"></a>3. モバイルをセットアップする
 
-モバイル デバイスに Office をインストールし、新しい Office 365 メールボックスを使用するための Outlook のセットアップを行います。 チーム全員がそれぞれ次の手順を実行する必要があります。 各ユーザーは、最大 5 台のスマートフォンと 5 台のタブレットに、Office モバイル アプリをインストールできます。
+モバイル デバイスに Office をインストールし、新しい Microsoft メールボックスを使用するための Outlook のセットアップを行います。 チーム全員がそれぞれ次の手順を実行する必要があります。 各ユーザーは、最大 5 台のスマートフォンと 5 台のタブレットに、Office モバイル アプリをインストールできます。
   
 お使いのデバイスの手順が表示されます。[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
   
 ### <a name="4-store-files-online"></a>4. ファイルをオンラインで保存する
 
-Office 365 では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でドキュメントを保存する場所](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)」を参照してください。
+Microsoft では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でファイルを保存する場所](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)」を参照してください。
   
-管理者がユーザーの Office 365 アカウントを作成すると、ユーザーには自動的に **OneDrive** クラウド ストレージの場所が付与されます。OneDrive を使用すると、コンピューター、スマートフォン、タブレットのどのデバイスでもファイルにアクセスすることができます。
+管理者がユーザーの Microsoft アカウントを作成すると、ユーザーには自動的に **OneDrive** クラウド ストレージの場所が付与されます。OneDrive を使用すると、コンピューター、スマートフォン、タブレットのどのデバイスでもファイルにアクセスすることができます。
   
 1. コンピューター上で、エクスプローラーを使用して OneDrive を開きます。 または、[Office 365](https://www.office.com) からアプリ起動ツールで [**OneDrive**] を開きます。
 
@@ -301,15 +301,15 @@ Office 365 では、ファイルを簡単にオンラインで保存できます
   
 ### <a name="get-started-using-office"></a>Office の使用を開始する
 
-Office 365 のツアーを見たり、すべての Office モバイル アプリの使用方法を確認したりするには、「[はじめに](../admin-overview/get-started-with-office-365.md)」を参照してください。
+Microsoft 365 のツアーを見たり、すべての Office モバイル アプリの使用方法を確認したりするには、「[はじめに](../admin-overview/get-started-with-office-365.md)」を参照してください。
   
-## <a name="education"></a>Education
+## <a name="education"></a>教育
   
 *次の手順は、既定の機能を設定した **[Office 365 Education プラン](https://go.microsoft.com/fwlink/p/?LinkId=717778)** の使用を開始する学校を対象としています。*
 
 ### <a name="get-ready-for-office-365"></a>Office 365 を準備する
 
-- **最初に、教育機関向けサブスクリプションの条件を満たしていることを確認します。** 手順に従って[Verify your Office 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)、Office 365 の教育機関向けプランを使用できるようにします。その後、この記事の説明に従って Office 365 を学校用にセットアップすることができます。
+- **最初に、教育機関向けサブスクリプションの条件を満たしていることを確認します。** 手順に従って[ドメインを確認して、所有権、非営利団体または教育機関のステータスを証明するか、Yammer をライセンス認証し](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)、Microsoft から教育機関向けプランを使用できるようにします。その後、この記事の説明に従って Office 365 を学校用にセットアップすることができます。
 
 - **ヘルプが必要な場合** さらに高度な展開についてヘルプが必要な場合は、まず **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** にアクセスしてください。展開を支援する [パートナーを見つける](https://go.microsoft.com/fwlink/p/?linkid=391089)こともできます。
 
@@ -317,7 +317,7 @@ Office 365 のツアーを見たり、すべての Office モバイル アプリ
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. 学校のドメインを追加、またはディレクトリを接続する
 
-この手順では、Office 365 ポータルにサインインし、学校のドメインをサブスクリプションに追加します。 ユーザーが教育機関向けサブスクリプションの条件を満たしていることが、Microsoft で確認されます。
+この手順では、Microsoft 365 管理センターにサインインし、学校のドメインをサブスクリプションに追加します。 ユーザーが教育機関向けサブスクリプションの条件を満たしていることが、Microsoft で確認されます。
   
 ::: moniker range="o365-worldwide"
 
@@ -339,7 +339,7 @@ Office 365 Germany を使用している場合は、[この管理センター](h
 
 ウィザードを開始するには、[**セットアップに移動**] を選択します。
 
-ウィザードで実行される手順については、「[Office 365 のセットアップ ウィザードを使う](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx)」を参照してください。
+ウィザードを実行するときのチュートリアルについては、「[一般法人向け Microsoft 365 のセットアップを計画する](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx)」を参照してください。
   
 オンプレミス ディレクトリからユーザーを同期する必要があるか、シングル サインオンを利用する必要がある場合は、 **セットアップ ウィザードを使用してユーザーを追加しないでください** 。代わりに、このガイドを読んでオプションを理解してください。 [ディレクトリを Office 365 に接続します](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9)。いずれかをセットアップします。
   
@@ -381,4 +381,4 @@ Office 365 Germany を使用している場合は、[この管理センター](h
   
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

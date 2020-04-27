@@ -20,13 +20,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: Office 365 ドメイン管理に役立つドメインとそれに関連する DNS レコードについて説明します。
-ms.openlocfilehash: 4fd41102193a9e630ed04a9d1fb2e196dc94486b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: ドメイン管理に役立つドメインとそれに関連する DNS レコードについて説明します。
+ms.openlocfilehash: 0b1e969dbb8b172c799e98d5470860fec3625fc2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210470"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628484"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -34,7 +34,7 @@ ms.locfileid: "43210470"
   
 ::: moniker range="o365-worldwide"
 
-contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。DNS とドメイン レジストラーの基礎を理解することは、管理者が Office 365 でドメインを管理するうえで役立ちます。
+contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。DNS とドメイン レジストラーの基礎を理解することは、管理者がドメインを管理するうえで役立ちます。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -144,7 +144,7 @@ contoso.com の NS レコードに「hichina.com」と記載するとします�
 ::: moniker-end
 
 > [!NOTE]
-> Office 365 でドメインをセットアップし、[Office 365 が DNS レコードをセットアップして管理する](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)ようにして、セットアップの一環として、 [DNS 管理を Office 365 に変更](../setup/domains-faq.md#change-dns-management-to-office-365)します。 
+> Office 365 でドメインをセットアップし、[Microsoft が DNS レコードをセットアップして管理する](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)ようにして、セットアップの一環として、[DNS 管理を Office 365 に変更](../setup/domains-faq.md#change-dns-management-to-office-365)します。 
  
 
 ::: moniker range="o365-worldwide"
@@ -154,13 +154,13 @@ contoso.com の NS レコードに「hichina.com」と記載するとします�
 Office 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Office 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Office 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
   
 > [!NOTE]
-> Outlook や Word などの Office 365 アプリをダウンロードして使うだけであれば、ドメインを追加する必要はありません。その場合は、[PC または Mac に Office をインストールしてください](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
+> Outlook や Word などの Microsoft アプリをダウンロードして使うだけであれば、ドメインを追加する必要はありません。その場合は、[PC または Mac に Office をインストールしてください](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
   
 Office 365 では、ドメイン名をメール、一般向け Web サイト、インスタント メッセージング アドレスに使うことができます。
   
 - **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Office 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
     
-- **Web サイト:** Office 365 サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
+- **Web サイト:** Microsoft 365 サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
     
 - **インスタント メッセージング**: Skype for Business Online アドレスもドメイン名を使うようにカスタマイズできるため、組織内のユーザーは、短くて覚えやすいアドレス (joe@contoso.com など) を使って Skype for Business Online で相互接続できるようになります。 
     
@@ -179,7 +179,7 @@ Office 365 では、ドメイン名をメール、一般向け Web サイト、�
   
 - **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Office 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
     
-- **Web サイト:** Office 365 サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
+- **Web サイト:** サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
     
 - **インスタント メッセージング**: Skype for Business Online アドレスもドメイン名を使うようにカスタマイズできるため、組織内のユーザーは、短くて覚えやすいアドレス (joe@contoso.com など) を使って Skype for Business Online で相互接続できるようになります。 
     
@@ -189,7 +189,7 @@ Office 365 では、ドメイン名をメール、一般向け Web サイト、�
 
 ドメインで Office 365 を使用するには、いくつかの DNS レコードが必要です。メールを Office 365 に送信するためのドメインの MX レコードのセットアップのほか、Outlook と正しい Exchange サーバーとの自動接続の確認、インスタント メッセージングのセットアップ、迷惑メールからの保護などの作業に役立つレコードもあります。
   
-ドメインをセットアップするには、Office 365 ポータルの[値の一覧を参照](information-for-dns-records.md)してください。 
+ドメインをセットアップするには、Microsoft 365 管理センターの[値の一覧を参照](information-for-dns-records.md)してください。 
   
 また、展開を予定している場合は、Office 365 に必要なすべての DNS レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Office 365 の外部ドメイン ネーム システムのレコード](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)」を確認してください。
   

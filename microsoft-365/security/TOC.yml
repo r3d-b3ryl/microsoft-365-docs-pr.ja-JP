@@ -191,20 +191,18 @@
               href: mtp/feedback.md
             - name: ServiceNow を介してチケットを管理する
               href: ./mtp/tickets.md
-    - name: Office 365 セキュリティ
+    - name: Microsoft 365 セキュリティ
       items:
-        - name: 概要
+        - name: 作業の開始
           items:
-            - name: Office 365 のセキュリティ ロードマップ
+            - name: セキュリティのロードマップ
               href: ./office-365-security/security-roadmap.md
-            - name: セキュリティ強化のために、Office 365 テナントを設定する
+            - name: セキュリティ強化のためにテナントを設定する
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新しい Microsoft 365 セキュリティ センター
               href: ./mtp/overview-security-center.md
-            - name: Office 365 セキュリティ/コンプライアンス センターのアクセス許可
+            - name: セキュリティ/コンプライアンス センターのアクセス許可
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
-              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: ユーザーにセキュリティ センターへのアクセス権を付与する
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: 脅威から保護する
@@ -281,7 +279,7 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: メール メッセージの安全性に関するヒント
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: 無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
+                - name: 無効化ポータルを使って、受信拒否リストから自分自身を削除する
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
             - name: フィッシング対策保護
               href: ./office-365-security/anti-phishing-protection.md
@@ -320,9 +318,9 @@
             - name: メール認証
               href: ./office-365-security/email-validation-and-authentication.md
               items:
-                - name: Office 365 で SPF を使用して、スプーフィングを防止する方法
+                - name: Microsoft 365 で SPF を使用して、スプーフィングを防止する方法
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
-                - name: Office 365 で SPF を設定して、スプーフィングを防止する
+                - name: SPF を設定して、スプーフィングを防止する
                   href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
                 - name: DKIM を使用して、送信電子メールを検証する
                   href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -600,7 +598,7 @@
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 Enterprise
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
-        - name: Office 365 for Business
+        - name: 一般法人向け Microsoft 365
           href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
     - name: Microsoft 365 コンプライアンス
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'

@@ -87,7 +87,7 @@
       items:
         - name: Office 365 のメール
           href: email/email.md
-        - name: Office 365 ユーザーのメール設定
+        - name: ユーザーのメール設定
           href: email/office-365-user-email-settings.md
         - name: ユーザーに別のメール エイリアスを追加する
           href: email/add-another-email-alias-for-a-user.md
@@ -189,6 +189,8 @@
           href: manage/remove-licenses-from-users.md
         - name: ライセンスの競合を解決する
           href: manage/resolve-license-conflicts.md
+        - name: メッセージ センターでメッセージを管理する
+          href: manage/manage-messages.md
         - name: 新機能管理を使用して新機能を表示または非表示にする
           href: manage/show-hide-new-features.md
     - name: サブスクリプションと課金
@@ -235,11 +237,11 @@
           href: create-groups/office-365-groups.md
         - name: グループを比較する
           href: create-groups/compare-groups.md
-        - name: Office 365 グループを作成する
+        - name: Microsoft 365 グループを作成する
           href: create-groups/create-groups.md
-        - name: Office 365 グループを管理する
+        - name: Microsoft 365 グループを管理する
           href: create-groups/manage-groups.md
-        - name: Office 365 グループでのガバナンスを計画する
+        - name: Microsoft 365 グループでのガバナンスを計画する
           href: create-groups/plan-for-groups-governance.md
         - name: グループの作成を管理する
           href: create-groups/manage-creation-of-groups.md
@@ -251,7 +253,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: グループでメンバーを追加または削除する
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Office 365 グループの有効期限ポリシー
+        - name: Microsoft 365 グループの有効期限ポリシー
           href: create-groups/office-365-groups-expiration-policy.md
         - name: 削除されたグループを復元する
           href: create-groups/restore-deleted-group.md

@@ -18,20 +18,20 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 迷惑メールの検出漏れを防ぐための EOP スタンドアロンの管理者向けドキュメント
-ms.openlocfilehash: b3b4005016d8a4192241299cac50eddf59f332d5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 326c51f7f6730d510f411b5318b29e97b128c078
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895419"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630649"
 ---
-# <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>以下の設定により Office 365 のスパム対策フィルターをカスタマイズする
+# <a name="customize-the-anti-spam-filter-with-these-settings"></a>以下の設定によりスパム対策フィルターをカスタマイズする
 
-管理者は、いくつかの Office 365 スパム フィルターの設定を利用して、迷惑メールがユーザーの受信トレイに送信されないようにすることができます。この一覧のオプションを使用すると、Office 365 のスパム フィルターは、より適切に迷惑メールをブロックし、検出漏れのメッセージを防ぐことができるようになります。このコンテキストでは、検出漏れとは、ユーザーの受信トレイに送信されてしまうスパム メールや迷惑メッセージのことです。
+管理者は、いくつかのスパム フィルターの設定を利用して、迷惑メールがユーザーの受信トレイに送信されないようにすることができます。この一覧のオプションを使用すると、スパム フィルターは、より適切に迷惑メールをブロックし、検出漏れのメッセージを防ぐことができるようになります。このコンテキストでは、検出漏れとは、ユーザーの受信トレイに送信されてしまうスパム メールや迷惑メッセージのことです。
 
 ## <a name="block-ip-addresses-with-a-connection-filter"></a>接続フィルターで IP アドレスをブロックする
 
-接続フィルター IP 禁止一覧に送信者の IP アドレスを追加して、Office 365 のスパム フィルターをカスタマイズします。
+接続フィルター IP 禁止一覧に送信者の IP アドレスを追加して、スパム フィルターをカスタマイズします。
 
 1. 「[Outlook のインターネット メッセージ ヘッダーの表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)」で説明されているように、Outlook や Outlook on the web (以前の Outlook Web App) などのメール クライアントでブロックするメッセージのヘッダーを取得します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "42895419"
 
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>メール フロー ルール (トランスポート ルール) またはスパム フィルターでバルク メールをブロックする
 
-スパムが主にニュースレターやプロモーションなどのバルク メールの場合、[メール フロー ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)か、スパム フィルターの [Office 365 の高度なスパム フィルター (ASF) の設定](advanced-spam-filtering-asf-options.md)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズすることができます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。下記に示すとおり、**[Spam and bulk mail actions]** (スパムおよびバルク メール操作) をクリックして設定を調整します。
+スパムが主にニュースレターやプロモーションなどのバルク メールの場合、[メール フロー ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)か、スパム フィルターの[高度なスパム フィルター (ASF) の設定](advanced-spam-filtering-asf-options.md)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズすることができます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。下記に示すとおり、**[スパムおよびバルク メール操作]** をクリックして設定を調整します。
 
 ![Exchange Online でバルク メール フィルターを設定する](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
@@ -49,9 +49,9 @@ ms.locfileid: "42895419"
 
 [Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)して、スパム フィルターの送信者禁止一覧に送信者アドレスを追加するか、ドメイン禁止一覧にドメインを追加します。スパム フィルター禁止一覧にある送信者やドメインからのメールはスパムとしてマークされます。
 
-## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>メール ユーザーは、Office 365 のスパム フィルターを使用して、確実に検出漏れや迷惑メールをブロックすることもできます。
+## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-spam-filter"></a>メール ユーザーは、スパム フィルターを使用して、確実に検出漏れや迷惑メールをブロックすることもできます。
 
-Office 365 のスパム対策を活用すれば、[Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) または [Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) のスパム送信者一覧にスパム送信者アドレスを追加するようユーザーに指示した場合に、検出漏れや迷惑メールを防止することができます。Outlook on the web では、ここで示すとおり、**[設定]** \> **[オプション]** \> **[ブロックまたは許可]** をクリックし、**[ブロックする差出人]** 一覧にアドレスを追加します。
+これは、スパム対策で、[Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) または [Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) のスパム送信者一覧にスパム送信者アドレスを追加するようユーザーに指示した場合に、検出漏れや迷惑メールを防止するのに役立ちます。Outlook on the web では、ここで示すとおり、**[設定]** \> **[オプション]** \> **[ブロックまたは許可]** をクリックし、**[ブロックする差出人]** 一覧にアドレスを追加します。
 
 ![Outlook on the web で送信者をブロックする](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
@@ -87,4 +87,6 @@ EOP サービスは、情報がサービスと共有されている場合、ユ�
 
 ## <a name="see-also"></a>関連項目
 
-[Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
+[Microsoft 365 でのスパム対策保護](anti-spam-protection.md)
+
+[セーフリストまたはその他の手法で誤検知の電子メールがスパムとしてマークされないようにする](prevent-email-from-being-marked-as-spam.md)
