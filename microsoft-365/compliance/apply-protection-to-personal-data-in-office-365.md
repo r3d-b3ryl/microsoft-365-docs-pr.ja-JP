@@ -1,5 +1,5 @@
 ---
-title: Office 365 の個人データに保護を適用する
+title: 個人データに保護を適用する
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,21 +18,21 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: データ損失防止 (DLP) ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: データ損失防止 (DLP) ポリシーを使用して、Microsoft 365 の個人データを保護する方法について説明します。
+ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079761"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634275"
 ---
-# <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
+# <a name="apply-protection-to-personal-data"></a>個人データに保護を適用する
 
-Office 365 の個人情報の保護には、データ損失防止機能の使用が含まれます。 コンプライアンス センターのデータ損失防止 (DLP) ポリシーを使用すると、Office 365 全体の機密情報を識別および監視して、自動的に保護できます。
+Microsoft 365 の個人情報の保護には、データ損失防止機能の使用が含まれます。 コンプライアンス センターのデータ損失防止 (DLP) ポリシーを使用すると、Microsoft 365 全体の機密情報を識別および監視して、自動的に保護できます。
 
 このトピックでは、DLP を使用して、個人データを保護する方法について説明します。さらに、SharePoint ライブラリでのアクセス許可の設定やデバイス アクセス ポリシーの使用など、GDPR 準拠を実現するために使用できその他の保護機能もリストします。
 
-## <a name="apply-protection-using-data-loss-prevention-in-office-365"></a>Office 365 のデータ損失防止を使用して保護を適用する
+## <a name="apply-protection-using-data-loss-prevention-in-microsoft-365"></a>Microsoft 365 のデータ損失防止を使用して保護を適用する
 
 DLP では、次のことができます。
 
@@ -62,9 +62,9 @@ DLP では、次のことができます。
 
 ### <a name="using-dlp-for-gdpr-compliance"></a>GDPR 準拠のための DLP の使用
 
-Office 365 DLP の主な用途の 1 つは、Office 365 環境内の EU データ サブジェクトに関連する個人データを特定することです。Office 365 DLP は、SharePoint Online と OneDrive for Business で個人情報が保存されている場所や、ユーザーが個人情報を含むメールを送信した旨をコンプライアンス チームに通知することができます。さらに、EU 居住者に関連する個人情報を処理する場合、従業員にポリシー ヒントを提供します。
+Microsoft 365 DLP の主な用途の 1 つは、Microsoft 365 環境内の EU データ サブジェクトに関連する個人データを特定することです。Microsoft 365 DLP は、SharePoint Online と OneDrive for Business で個人情報が保存されている場所や、ユーザーが個人情報を含むメールを送信した旨をコンプライアンス チームに通知することができます。さらに、EU 居住者に関連する個人情報を処理する場合、従業員にポリシー ヒントを提供します。
 
-Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内の EU 居住者のデータの保存場所や、従業員にその処理を許可する方法について教育し、意識を高めることです。多くの場合、この種類の情報へのアクセスを持つ従業員は日常の作業を実行するためにこのアクセスを必要としています。GDPR に準拠する DLP ポリシーの適用では、アクセスを制限する必要はありません。
+Microsoft 365 DLP を使用した情報の保護レベルの 1 つは、環境内の EU 居住者のデータの保存場所や、従業員にその処理を許可する方法について教育し、意識を高めることです。多くの場合、この種類の情報へのアクセスを持つ従業員は日常の作業を実行するためにこのアクセスを必要としています。GDPR に準拠する DLP ポリシーの適用では、アクセスを制限する必要はありません。
 
 ただし、GDPR の準拠には通常、法的事項と情報セキュリティの両方の観点から見た、組織に関するリスク ベースの評価、個人情報の種類と保存場所の識別、その情報を保存および処理する法的な理由があるかどうかの判断が含まれます。この評価に基づいて、組織を保護し、GDPR に準拠するためのポリシーを実装する場合、EU のデータ サブジェクトの個人情報が含まれているドキュメントへの従業員のアクセスを削除しなければならない場合があります。さらに保護が必要な場合には、追加の DLP 保護を構成できます。
 
@@ -132,7 +132,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 </tr>
 <tr class="even">
 <td align="left">場所</td>
-<td align="left">Office 365 のすべての場所</td>
+<td align="left">Microsoft 365 のすべての場所</td>
 </tr>
 <tr class="odd">
 <td align="left">含まれているコンテンツを検索する</td>
@@ -164,9 +164,9 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 
 - Exchange メールボックス
 
-コンテンツ検索では、電子メールで機密情報の種類をテストできないため、各ポリシーの機密情報タイプのサブセットと Exchange の個別ポリシーを作成し、これらのポリシーのロールアウトを監視することを検討してください。
+コンテンツ検索では、電子メールで機密情報の種類をテストできないため、各ポリシーの機密情報タイプのサブセットと Exchange の個別ポリシーを作成し、これらのポリシーのロールアウトを監視することをご検討ください。
 
-## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-office-365"></a>Office 365 の個人データの保護に適用できる追加の保護
+## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-microsoft-365"></a>Microsoft 365 の個人データの保護に適用できる追加の保護
 
 機密情報の種類、ラベル、およびデータ損失保護ポリシーでは、特定のデータを含むドキュメントを特定し、保護を適用できます。ただし、これらの保護は、データへのアクセス用に設定されている適切なアクセス許可、侵害されていないアカウントを持つユーザー、および正常なデバイスに依存します。
 
@@ -189,7 +189,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 <td align="left"><p>機密情報の種類</p>
 <p>Office のラベル</p>
 <p>データ損失防止ポリシー</p>
-<p>電子メール用の Office 365 Message Encryption</p></td>
+<p>メール用の Microsoft 365 Message Encryption</p></td>
 </tr>
 <tr class="even">
 <td align="left">サイトとライブラリ レベルの保護 (SharePoint Online と OneDrive for Business サイトを含む)</td>
@@ -198,7 +198,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 <p>サイトレベルのデバイス アクセス ポリシー</p></td>
 </tr>
 <tr class="odd">
-<td align="left">サービスのアクセス保護 (Office 365 のすべてのサービスへのアクセスを含む)</td>
+<td align="left">サービスのアクセス保護 (Microsoft 365 のすべてのサービスへのアクセスを含む)</td>
 <td align="left"><p>Enterprise Mobility + Security (EMS) スイートの ID およびデバイスのアクセス保護</p>
 <p>特権アクセスの管理</p>
 <p>Windows 10 のセキュリティ機能</p></td>
@@ -212,7 +212,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 
 GDPR 準拠用に構成された環境では、次の機能を使用できます。これらの機能には、GDPR 準拠に必ずしも必要ではありませんが、GDPR 準拠に関連するデータの検出、保護、監視、レポートの機能に悪影響を及ぼすことなく使用できます。
 
-顧客キー - Office 365 内に保存されているデータを暗号化するために使用される暗号化キーを顧客に提供し、制御できるようにします。独自の暗号化キーを管理する規制上の必要がある顧客にのみ推奨されます。
+顧客キー - Microsoft 365 内に保存されているデータを暗号化するために使用される暗号化キーを顧客に提供し、制御できるようにします。独自の暗号化キーを管理する規制上の必要がある顧客にのみ推奨されます。
 
 カスタマー ロックボックス - カスタマー ロックボックスを使用すると、必要に応じて、Microsoft のサポート エンジニアが自分のデータにアクセスして、ケースごとに技術的な問題を解決する方法を制御できます。サポート エンジニアにデータへのアクセス権を付与するかどうかを制御できます。要求ごとに有効期限が指定されます。
 
@@ -259,7 +259,7 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 多くの組織では、コラボレーションをサポートする外部共有が許可されています。テナント全体の設定を構成する方法について説明します。さらに、個人データが含まれているサイトの外部共有設定を確認します。
 
-外部ユーザーとは、SharePoint Online または Microsoft Office 365 サブスクリプションのライセンスはありませんが、SharePoint Online サイトやドキュメントにアクセスするように招待された組織外のユーザーです。
+外部ユーザーとは、SharePoint Online または Microsoft 365 サブスクリプションのライセンスはありませんが、SharePoint Online サイトやドキュメントにアクセスするように招待された組織外のユーザーです。
 
 外部共有ポリシーは、SharePoint Online と OneDrive for Business の両方に適用されます。
 
@@ -358,7 +358,7 @@ SharePoint と OneDrive for Business のデバイス アクセス ポリシー�
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>ID とデバイスのサービス アクセスの保護
 
-サービスにアクセスする ID とデバイスの保護を構成することをお勧めします。Office 365 サービスへのアクセスを保護する作業は、他の SaaS サービス、PaaS サービス、さらには他のクラウド プロバイダーのアプリへのアクセスを保護するためにも使用できます。
+サービスにアクセスする ID とデバイスの保護を構成することをお勧めします。Microsoft 365 サービスへのアクセスを保護する作業は、他の SaaS サービス、PaaS サービス、さらには他のクラウド プロバイダーのアプリへのアクセスを保護するためにも使用できます。
 
 ID とデバイスのアクセス保護は、ID が侵害されず、デバイスが安全で、デバイス上でアクセスされる組織データが分離され保護されるようにする保護のベースラインを提供します。
 
@@ -374,11 +374,11 @@ AD FS を使用するハイブリッド ID 環境については、「[推奨さ
 
 ### <a name="cloud-services"></a>クラウド サービス
 
-Azure Active Directory は、Amazon Web サービスなどの Microsoft 以外のプロバイダーを含む、任意のクラウド サービスへの ID アクセスを提供します。この図は、Office 365、「その他の SaaS アプリ」、および「PaaS アプリ」を示しています。Azure Active Directory からこれらの各サービスを指す矢印は、Azure Active Directory がこれらすべてのアプリの種類への認証に使用できることを示します。
+Azure Active Directory は、Amazon Web サービスなどの Microsoft 以外のプロバイダーを含む、任意のクラウド サービスへの ID アクセスを提供します。この図は、Microsoft 365、"その他の SaaS アプリ"、および "PaaS アプリ" を示しています。Azure Active Directory からこれらの各サービスを指す矢印は、Azure Active Directory がこれらすべてのアプリの種類への認証に使用できることを示します。
 
 ### <a name="types-of-accounts"></a>アカウントの種類
 
-テナント ドメイン アカウントは、テナントに追加して、直接管理するためのアカウントです。B2B アカウントは、共同作業に招待する組織外のユーザーのアカウントです。これには、他の Office 365 のアカウント、他の組織のアカウント、またはコンシューマー アカウント (Gmail など) があります。この図は、Azure Active Directory 内での両方のアカウントの種類を示します。
+テナント ドメイン アカウントは、テナントに追加して、直接管理するためのアカウントです。B2B アカウントは、共同作業に招待する組織外のユーザーのアカウントです。これには、他の Microsoft 365 のアカウント、他の組織のアカウント、またはコンシューマー アカウント (Gmail など) があります。この図は、Azure Active Directory 内での両方のアカウントの種類を示します。
 
 ### <a name="capabilities"></a>機能
 
