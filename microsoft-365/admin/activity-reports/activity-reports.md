@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621272"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794019"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -58,7 +58,7 @@ ms.locfileid: "43621272"
 ::: moniker-end
 
    
-2. ダッシュボード上部の [ **レポートの選択**] を選び、利用可能なすべてのレポートの一覧から選択します。 または、詳細を参照するには、サービス (メール、OneDrive など) のアクティビティ一覧ウィジェットを選択します。 <br/>![利用状況ダッシュボード](../../media/usage-report-dashboard.png)
+2. ダッシュボード上部の [ **レポートの選択**] を選び、利用可能なすべてのレポートの一覧から選択します。 または、詳細を参照するには、サービス (メール、OneDrive など) のアクティビティ ウィジェット一覧を選択します。 <br/>![利用状況ダッシュボード](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>レポートを閲覧できるユーザー
 
@@ -104,7 +104,7 @@ ms.locfileid: "43621272"
   
 - [OneDrive for Business の利用状況](onedrive-for-business-usage.md)
 
-- [ProPlus の利用状況](microsoft365-apps-usage.md)
+- [Microsoft 365 Apps の使用法](microsoft365-apps-usage.md)
   
 - [SharePoint サイトの利用状況](sharepoint-site-usage.md)
   

@@ -149,6 +149,10 @@
           href: document-fingerprinting.md
         - name: 機密情報の DLP 関数
           href: what-the-dlp-functions-look-for.md
+    - name: Microsoft 365 での暗号化
+      href: encryption.md
+    - name: Office 365 サービスの暗号化
+      href: office-365-service-encryption.md
     - name: 顧客キー
       items:
         - name: Office 365 のカスタマー キーによるサービスの暗号化
@@ -200,6 +204,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: SharePoint 管理センターで IRM を設定する
+      href: set-up-irm-in-sp-admin-center.md
     - name: データの分類を理解する (プレビュー)
       href: data-classification-overview.md
       items:

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189062"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637445"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -38,11 +38,11 @@ ms.locfileid: "43189062"
     
 - 編集も削除もできないように、**レコードとしてマーク**する必要のある就労ビザ。 
     
-これらのすべてのケースにおいて、Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。
+これらのすべてのケースにおいて、保持ラベルは適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。
   
 保持ラベルを使用すると、次のことができます。
   
-- Outlook on the web、Outlook 2010 以降、OneDrive、SharePoint、Office 365 グループのコンテンツに、**組織内のユーザーが保持ラベルを手動で適用**できるようにします。多くの場合、コンテンツの種類を最も良く理解しているのはそれを扱っているユーザーです。そこでユーザーにコンテンツを分類し、適切なポリシーを適用してもらいます。 
+- Outlook on the web、Outlook 2010 以降、OneDrive、SharePoint、Microsoft 365 グループのコンテンツに、**組織内のユーザーが保持ラベルを手動で適用**できるようにします。多くの場合、コンテンツの種類を最も良く理解しているのはそれを扱っているユーザーです。そこでユーザーにコンテンツを分類し、適切なポリシーを適用してもらいます。 
     
 - コンテンツに次のものが含まれている場合など、特定の条件に一致するときには、**保持ラベルをコンテンツに自動的に適用**できます。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "43189062"
 
 - SharePoint の **ドキュメント ライブラリ、フォルダー、またはドキュメント セットに既定の保持ラベルを適用**することにより、この場所に到着するすべてのドキュメントに既定の保持ラベルが継承されるようになります。  
     
-Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターで保持ラベルを作成します。
+Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、またはセキュリティ/コンプライアンス センターで保持ラベルを作成します。
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>保持ラベル ポリシーでの保持ラベルのしくみ
 
@@ -151,9 +151,9 @@ Outlook on the web にラベルが表示されると思われるにもかかわ�
   
 |**保持ラベルの種類**|**ラベル ポリシーの適用先**|
 |:-----|:-----|
-|エンド ユーザーに発行されたラベル  <br/> |Exchange、SharePoint、OneDrive、Office 365 グループ  <br/> |
+|エンド ユーザーに発行されたラベル  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 グループ  <br/> |
 |機密情報の種類に基づいて自動適用されたラベル  <br/> |Exchange (すべてのメールボックスのみ)、SharePoint、OneDrive  <br/> |
-|クエリに基づいて自動適用されたラベル  <br/> |Exchange、SharePoint、OneDrive、Office 365 グループ  <br/> |
+|クエリに基づいて自動適用されたラベル  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 グループ  <br/> |
    
 Exchange の自動適用保持ラベル (クエリと機密情報の両方の種類) は、新しく送信されたメッセージ (送信中のデータ) のみに適用され、現在メールボックスにあるすべてのアイテム (保存中のデータ) には適用されません。 また、機密情報の種類の自動適用保持ラベルはすべてのメールボックスのみに適用でき、特定のメールボックスを選択することはできません。
   
@@ -183,7 +183,7 @@ Exchange パブリック フォルダーと Skype ではラベルはサポート
     
 - SharePoint
     
-- Office 365 グループ (Outlook on the web のグループ サイトとグループ メールボックスの両方)
+- Microsoft 365 グループ (Outlook on the web のグループ サイトとグループ メールボックスの両方)
     
 次のセクションでは、さまざまなアプリで組織内のユーザーに対してラベルがどのように表示されるかを説明します。
   
@@ -235,17 +235,17 @@ OneDrive または SharePoint でドキュメント (OneNote ファイルを含�
   
 ![カスタム ビューで表示されるラベルのライブラリの列](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### <a name="office-365-groups"></a>Office 365 グループ
+### <a name="microsoft-365-groups"></a>Microsoft 365 グループ
 
-Office 365 グループに保持ラベルを発行すると、保持ラベルは Outlook on the web のグループ サイトとグループ メールボックスの両方に表示されます。コンテンツに保持ラベルを適用する場合のエクスペリエンスは、上記のメールとドキュメントの場合と同じです。
+Microsoft 365 グループに保持ラベルを発行すると、保持ラベルは Outlook on the web のグループ サイトとグループ メールボックスの両方に表示されます。コンテンツに保持ラベルを適用する場合のエクスペリエンスは、上記のメールとドキュメントの場合と同じです。
 
-Office 365 グループのコンテンツを保持するには、Office 365 グループの場所を使用する必要があります。Office 365 グループには Exchange メールボックスがありますが、Exchange の場所全体が含まれるアイテム保持ポリシーには、Office 365 グループのメールボックスのコンテンツは含まれません。
+Microsoft 365 グループのコンテンツを保持するには、Microsoft 365 グループの場所を使用する必要があります。Microsoft 365 グループには Exchange メールボックスがありますが、Exchange の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。
 
-また、Exchange の場所を使用して、特定のグループ メールボックスを含めたり、除外したりすることはできません。 最初は Exchange の場所でグループ メールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、Exchange の場所では "RemoteGroupMailbox" を選択できないことを示すエラーを受け取ります。
+また、Exchange の場所を使用して特定のグループ メールボックスを含めたり除外したりすることはできません。 最初は Exchange の場所でグループ メールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、Exchange の場所では "RemoteGroupMailbox" を選択できないことを示すエラーを受け取ります。
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>条件に基づいた保持ラベルの自動適用
 
-保持ラベルの最も強力な機能の 1 つは、特定の条件に一致したコンテンツに自動的にラベルを適用することです。 この場合、組織内のユーザーが保持ラベルを適用する必要はありません。 Office 365 が行います。
+保持ラベルの最も強力な機能の 1 つは、特定の条件に一致したコンテンツに自動的にラベルを適用することです。 この場合、組織内のユーザーが保持ラベルを適用する必要はありません。 Microsoft 365 が行います。
   
 ![自動適用ラベルの役割とタスクの図](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -373,7 +373,7 @@ Outlook 2010 以降では、保持ラベルまたはアイテム保持ポリシ�
 
 保持ラベルはコンテンツに対して保持アクションを強制できます。また、保持ラベルをデータ損失防止 (DLP) ポリシーで条件として使用できます。DLP ポリシーは特定のラベルを含むコンテンツに対して、アクセスを制限するなどの他のアクションを強制できます。 
   
-詳細については、「[DLP ポリシーにおける条件としてのラベルの使用](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)」を参照してください。
+詳細については、「[DLP ポリシーにおける条件としての保持ラベルの使用](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)」を参照してください。
   
 ## <a name="monitor-retention-labels"></a>保持ラベルの監視
 
@@ -433,7 +433,7 @@ Outlook 2010 以降では、保持ラベルまたはアイテム保持ポリシ�
 
 ## <a name="use-retention-labels-instead-of-these-features"></a>次の機能の代わりとしての保持ラベルの使用
 
-保持ラベルは、組織全体および Exchange、SharePoint、OneDrive、Office 365 グループなど Office 365 全体にわたる組織のコンテンツで簡単に使用できます。Office 365 の任意の場所でコンテンツを分類したり、レコードを管理したり必要がある場合は、保持ラベルを使用することをお勧めします。
+保持ラベルは、組織全体および Exchange、SharePoint、OneDrive、Microsoft 365 グループなど Office 365 全体にわたる組織のコンテンツで簡単に使用できます。Microsoft 365 の任意の場所でコンテンツを分類したり、レコードを管理したり必要がある場合は、保持ラベルを使用することをお勧めします。
   
 Office 365 でコンテンツの分類またはレコード管理を行うのに以前使用されていた他の機能がいくつかあります。 以下にその一覧を示します。 これらの機能は引き続き保持ラベルと並行して機能します。 保持ラベルの実装が以前の機能とは異なるインスタンスがありますが、保持ラベルが進化したことで、Office 365 全体でのレコード管理が今後、改善される予定です。 そのため、データ ガバナンスの場合、今後はこれらの機能ではなく、保持ラベルの使用をお勧めします。
   
@@ -453,16 +453,16 @@ Office 365 でコンテンツの分類またはレコード管理を行うのに
 
 保持ラベルを作成するコンプライアンス チームのメンバーには、セキュリティ &amp; コンプライアンス センターにアクセスする許可が必要です。 テナント管理者は、規定でこの場所にアクセスできるため、法令遵守責任者や他のユーザーにセキュリティ &amp; コンプライアンス センターへのアクセス権を付与できます。テナント管理者が持つすべてのアクセス許可を付与する必要はありません。これを行うには、セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページに移動して、[**コンプライアンス管理者**] 役割グループを編集し、その役割グループにメンバーを追加することをお勧めします。 
   
-詳細については、「[ユーザーに Office 365 セキュリティ センター/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「[ユーザーにセキュリティ &amp; コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
 これらのアクセス許可は、保持ラベルとラベル ポリシーを作成して適用するときにのみ必要になります。ポリシーを適用する場合に、コンテンツへのアクセスは必要ありません。  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>ラベルの PowerShell コマンドレットの検索
 
 ラベル コマンドレットを使用するには、次を実行する必要があります。
   
-1. [Office 365 セキュリティ センターとコンプライアンス センターの PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. 以下の Office 365 セキュリティ センターとコンプライアンス センターのコマンドレットの使用
+2. これらのセキュリティ/コンプライアンス センターのコマンドレットを使用する:
 
   - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
 
