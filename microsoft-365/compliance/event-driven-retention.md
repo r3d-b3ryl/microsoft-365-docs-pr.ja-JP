@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、特定の種類のイベントが発生したときの保持期間を設定できます。イベントによって保持期間の開始がトリガーされ、その種類のイベントに保持ラベルが適用されているすべてのコンテンツに、ラベルの保持アクションが適用されます。イベント ベースの保持は、通常、記録管理プロセスの一部として使用されます。
-ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105624"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43616021"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -84,7 +84,7 @@ ms.locfileid: "43105624"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保持期間がイベント ベースのラベルを作成する
 
-Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ&amp;コンプライアンス センターの左側のナビゲーションで、**[分類]**  >  **[保持ラベル]**  >  **[ラベル]** タブ > **[ラベルの作成]** を選択します。
+Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、またはセキュリティ/コンプライアンス センターの左側のナビゲーションで、**[分類]**  >  **[保持ラベル]**  >  **[ラベル]** タブ > **[ラベルの作成]** を選択します。
   
 ラベルを作成するときは、保持をオンにしてから、その下に表示されているオプションを選択して、イベント ベースのコンテンツの保持または削除を行います。保持の設定は、**[イベント]** ページでイベントを作成する手順 5 までは、有効になりません。 
   
@@ -168,7 +168,7 @@ Exchange アイテムの場合は、キーワードを使用できます。AND�
 
 **[イベント]** ページにアクセスするには、レビュー担当者は、**廃棄管理**の役割と**監査ログの閲覧限定**の役割を持つ、役割グループのメンバーである必要があります。Disposition Reviewers という新しい役割グループを作成し、これら 2 つの役割をその役割グループに追加して、それからメンバーをその役割グループに追加することをお勧めします。 
   
-詳細については、「[ユーザーに Office 365 セキュリティ&amp;コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
 ## <a name="automate-events-by-using-powershell"></a>PowerShell を使用してイベントを自動化する
 

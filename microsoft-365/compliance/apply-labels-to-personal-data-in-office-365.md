@@ -1,5 +1,5 @@
 ---
-title: Office 365 の個人データにラベルを適用する
+title: 個人データにラベルを適用する
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,37 +17,37 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079805"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636285"
 ---
-# <a name="apply-labels-to-personal-data-in-office-365"></a>Office 365 の個人データにラベルを適用する
+# <a name="apply-labels-to-personal-data"></a>個人データにラベルを適用する
 
  GDPR 保護計画の一環として、分類ラベルを使用している場合は、このトピックを使用します。 
 
-Office 365 で個人用データを保護するためにラベルを使用している場合は、[保持ラベル](labels.md)を使用することをお勧めします。 保持ラベルを使用すると、次のことができます。
+Microsoft 365 で個人データを保護するためにラベルを使用している場合は、[保持ラベル](labels.md)を使用することをお勧めします。 保持ラベルを使用すると、次のことができます。
 - アドバンスト データ ガバナンスを使用して、機密情報の種類やその他の基準に基づいてラベルを自動的に適用できます。
 - データ損失防止機能を備えた保持ラベルを使用して、保護を適用できます。 
 - 電子情報開示とコンテンツの検索でラベルを使用できます。 
 
-現在、Cloud App Security は保持ラベルをサポートしていません。ただし、Office 365 の機密情報を Cloud App Security と併用して、別の SaaS アプリにある個人データを監視することはできます。
+現在、Cloud App Security は保持ラベルをサポートしていません。ただし、Microsoft 365 の機密情報を Cloud App Security と併用して、別の SaaS アプリにある個人データを監視することはできます。
 
-[機密ラベル](sensitivity-labels.md)は現在、オンプレミスのファイル、その他のクラウド サービスのファイル、プロバイダーにラベルを適用する場合に推奨されています。 また、営業秘密ファイルなどのデータ保護用の Azure Information Protection 暗号化を必要とする Office 365 のファイルにも推奨されます。
+[機密ラベル](sensitivity-labels.md)は現在、オンプレミスのファイル、その他のクラウド サービスのファイル、プロバイダーにラベルを適用する場合に推奨されています。 また、営業秘密ファイルなどのデータ保護用の Azure Information Protection 暗号化を必要とする Microsoft 365 のファイルにも推奨されます。
 
-現時点では、GDPR の対象となるデータを含む Office 365 のファイルに対して Azure Information Protection を使用して暗号化を適用することは、推奨されていません。 現在、Office 365 サービスでは AIP で暗号化されたファイルへの読み取りはできません。 そのため、サービスでこれらのファイル内の機密データを検索することはできません。
+現時点では、GDPR の対象となるデータを含む Microsoft 365 のファイルに対して Azure Information Protection を使用して暗号化を適用することは、推奨されていません。 現在、Microsoft 365 サービスでは AIP で暗号化されたファイルへの読み取りはできません。 そのため、サービスでこれらのファイル内の機密データを検索することはできません。
 
-保持ラベルは Exchange Online のメールに適用できます。これらのラベルは Office 365 のデータ損失防止と連動することができます。 
+保持ラベルは Exchange Online のメールに適用できます。これらのラベルは Microsoft 365 のデータ損失防止と連動することができます。 
 
-![Office 365 のラベルと Azure Information Protection のラベル](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Microsoft 365 のラベルと Azure Information Protection のラベル](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 この図について:
 
 -   SharePoint Online および OneDrive for Business では、個人データや厳しく規制された営業秘密ファイルに保持ラベルを使用します。
--   Office 365 の機密情報の種類を Office 365 内と Cloud App Security で使用して、別の SaaS アプリにある個人データを監視できます。
+-   Microsoft 365 の機密情報の種類を Microsoft 365 内と Cloud App Security で使用して、別の SaaS アプリにある個人データを監視できます。
 -   厳しく規制された営業秘密ファイル、Exchange Online 電子メール、他の SaaS サービスのファイル、オンプレミスのデータセンターのファイル、他のクラウド プロバイダーのファイルには、機密ラベルを使用します。
 
 
@@ -80,7 +80,7 @@ Office 365 で個人用データを保護するためにラベルを使用して
 <p>. . . このラベルを持つドキュメントに適用します . . .</p>
 <p>顧客データ</p></td>
 <td align="left"><p>承認された SaaS アプリのこれらの属性を持つファイルが . . .</p>
-<p>1 つまたは複数の属性を選択します: 定義済みの PII 属性、Office 365 の機密情報の種類、機密ラベル (AIP)、カスタム式</p>
+<p>1 つまたは複数の属性を選択します: 定義済みの PII 属性、Microsoft 365 の機密情報の種類、秘密度ラベル (AIP)、カスタム式</p>
 <p>。 。 。 組織外で共有された際に警告します</p><p>注: 現在、保持ラベルは Cloud App Security ではサポートされていません。</td>
 </tr>
 <tr class="even">
@@ -200,8 +200,8 @@ GDPR の対象となる個人データについては、環境に合わせて設
 
 この図について:
 
-- “顧客データ” ラベルが作成されます。
+- "顧客データ" ラベルが作成されます。
 
 - GDPR の必要な機密情報の種類 (ベルギーの国民番号、クレジット カード番号、クロアチアの身分証明書番号、フィンランドの国民 ID) が記載されています。
 
-- 自動適用ポリシーを作成すると、ポリシーに追加する機密情報の種類のいずれかを含むファイルに、“顧客データ” ラベルが割り当てられます。
+- 自動適用ポリシーを作成すると、ポリシーに追加する機密情報の種類のいずれかを含むファイルに、"顧客データ" ラベルが割り当てられます。

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 では、保持ラベルを使って組織の保持スケジュールを実装できます。 ここに示すスクリプトと .csv ファイルを使用することで、PowerShell を使用して保持ラベルと保持ラベル ポリシーを一括作成して発行することができます。
-ms.openlocfilehash: e7b992b8464e5c505d048b5b945d154a770fd59c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 055bc785c492e2fa37bc60ce4e383f79111c551a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105979"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636355"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを一括で作成および発行する
 
@@ -716,7 +716,7 @@ if ($ResultCSV)
 
 以下の手順に従います。
   
-- [Office 365 セキュリティ&amp;コンプライアンス センター PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=799771)
+- [セキュリティ/コンプライアンス センター PowerShell に接続する](https://go.microsoft.com/fwlink/?linkid=799771)
     
 ## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>手順 5: PowerShell スクリプトを実行して保持ラベルを作成および発行する
 

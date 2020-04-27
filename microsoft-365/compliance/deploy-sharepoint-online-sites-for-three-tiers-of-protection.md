@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '概要: SharePoint Online チーム サイトを作成し、さまざまなレベルの情報保護用に構成します。'
-ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 44aa7c126e3ac4b077868c055f35c0b99d678b58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075531"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636135"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3 層の保護用に SharePoint Online サイトを展開する
 
@@ -33,7 +33,7 @@ ms.locfileid: "42075531"
   
 ## <a name="baseline-sharepoint-online-team-sites"></a>ベースラインの SharePoint Online チーム サイト
 
-ベースラインの保護には、パブリックおよびプライベートのチーム サイトが含まれます。 パブリック チーム サイトは、組織内の全ユーザーが検出し、アクセスすることができます。 プライベート サイトは、チーム サイトに関連付けられている Office 365 グループのメンバーのみが検出し、アクセスすることができます。 いずれの種類のチーム サイトも、メンバーがサイトを他のユーザーと共有することを許可しています。
+ベースラインの保護には、パブリックおよびプライベートのチーム サイトが含まれます。パブリック チーム サイトは、組織内の全ユーザーが検出し、アクセスすることができます。プライベート サイトは、チーム サイトに関連付けられている Microsoft 365 グループのメンバーのみが検出し、アクセスすることができます。いずれの種類のチーム サイトも、メンバーがサイトを他のユーザーと共有することを許可しています。
   
 ### <a name="public"></a>パブリック
 
@@ -100,7 +100,7 @@ ms.locfileid: "42075531"
   
 ## <a name="next-step"></a>次の手順
 
-[Office 365 ラベルと DLP による SharePoint ファイルの保護](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[ラベルと DLP による SharePoint ファイルの保護](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 組織が GDPR 計画の一環としてラベルを実装するかどうかを決定します。
-ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596044"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637137"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>個人データの分類スキーマを設計する
 
@@ -32,11 +32,11 @@ ms.locfileid: "41596044"
 
 ## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>機密データの種類に加えてラベルを使用するかどうかを決定する
 
-Office 365 では、2 つある方法のいずれかを使用して個人情報を分類できます。いずれの方法も GDPR 保護に使用できます。機密情報の種類だけを使用して分類することを決定した場合、このトピックの残りの部分はスキップできます。
+Microsoft 365 では、2 つある方法のいずれかを使用して個人情報を分類できます。いずれの方法も GDPR 保護に使用できます。機密情報の種類だけを使用して分類することを決定した場合、このトピックの残りの部分はスキップできます。
 
 次のいずれかのオプションを選んでください
 
-### <a name="option-1-use-only-office-365-sensitive-information-types"></a>オプション 1: Office 365 の機密情報の種類だけを使用する
+### <a name="option-1-use-only-microsoft-365-sensitive-information-types"></a>オプション 1: Microsoft 365 の機密情報の種類だけを使用する
 
 - 機密情報の種類は GDPR やその他の規制の対象となる個人データの識別と保護に適しています。
 

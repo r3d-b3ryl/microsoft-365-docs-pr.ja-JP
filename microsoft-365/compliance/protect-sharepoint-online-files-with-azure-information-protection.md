@@ -20,17 +20,17 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
-ms.openlocfilehash: a0a2a1e790711bf15db82068c00da5d614b498c4
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1c704689518da14bcabb56e81830b8456ebd2951
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855452"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632192"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure Information Protection を使用して SharePoint Online ファイルを保護する
 
 >[!Note]
->非常に機密性の高い社外秘 SharePoint Online チーム サイトの現在のファイル ソリューションでは、Office 365 の機密度ラベルが使用されています。 詳細については、[この記事](protect-sharepoint-online-files-with-sensitivity-label.md)をご覧ください。
+>非常に機密性の高い社外秘 SharePoint Online チーム サイトの現在のファイル ソリューションでは、Microsoft 365 の秘密度ラベルが使用されています。 詳細については、[この記事](protect-sharepoint-online-files-with-sensitivity-label.md)をご覧ください。
 >
 
 この記事の手順を使用して、Azure Information Protection を構成し、ファイルの暗号化やアクセス許可を実施します。これらのファイルは、高度な機密保護のために構成された SharePoint ライブラリに追加することができます。あるいは、サイトからファイルを直接開き、Azure Information Protection クライアントを使用して暗号化を追加することもできます。暗号化およびアクセス許可の保護は、ファイルをサイトからダウンロードした場合にも適用されます。 
@@ -40,12 +40,12 @@ ms.locfileid: "41855452"
 SharePoint Online 内のファイルに Azure Information Protection を使用することは、すべてのお客様に推奨されるものではなく、ファイルの一部に対してこの保護レベルを必要としているお客様向けのオプションです。
 
 このソリューションに関する重要な注意点がいくつかあります:
-- Azure Information Protection 暗号化が Office 365 に格納されているファイルに適用される場合、このサービスはこれらのファイルのコンテンツを処理することはできません。共同編集、電子情報開示、検索、Delve、他の共同作業機能は動作しません。データ損失防止 (DLP) ポリシーが操作できるのはメタデータ (Office 365 ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。
+- Azure Information Protection 暗号化が Office 365 に格納されているファイルに適用される場合、このサービスはこれらのファイルのコンテンツを処理することはできません。共同編集、電子情報開示、検索、Delve、他の共同作業機能は動作しません。データ損失防止 (DLP) ポリシーが操作できるのはメタデータ (Microsoft 365 ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。
 
 - このソリューションでは、Azure Information Protection からの保護が適用されるラベルを、ユーザーが選択する必要があります。自動的な暗号化と、インデックスを作成してファイルを検査するための SharePoint の機能を必要とする場合は、SharePoint Online で Information Rights Management (IRM) を使用することを検討してください。IRM 用に SharePoint ライブラリを構成する場合、ファイルが編集用にダウンロードされるときに、ファイルは自動的に暗号化されます。SharePoint IRM には、意思決定に影響を与える可能性のある制限があります。詳細については、「[SharePoint 管理センターで Information Rights Management (IRM) を設定する](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)」を参照してください。
 
 ## <a name="admin-setup"></a>管理者セットアップ
-まず、「[Microsoft 365 管理センターから Azure RMS をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある Office 365 サブスクリプションに関する指示を使用します。
+まず、「[Microsoft 365 管理センターから Azure RMS をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある Microsoft 365 サブスクリプションに関する指示を使用します。
   
 次に、機密性の高い SharePoint Online チーム サイトの保護とアクセス許可用に、新たなスコープ付きポリシーとサブラベルを使用して Azure Information Protection を構成します。
   
@@ -100,7 +100,7 @@ SharePoint Online 内のファイルに Azure Information Protection を使用�
     
 - [手動インストールのためのダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=53018)
     
-インストールすると、ユーザーは Office アプリケーション (Microsoft Word など) を実行してからサインインするときに、Office 365 アカウントを使用します。ユーザーは新しい **[Information Protection]** バーを使用して、新しいラベルを選択できます。ユーザーが機密性の高いファイルを保護するための SharePoint Online チーム サイトと使用するラベルを知っていることを確認します。
+インストールすると、ユーザーは Office アプリケーション (Microsoft Word など) を実行してからサインインするときに、Microsoft 365 アカウントを使用します。ユーザーは新しい **[Information Protection]** バーを使用して、新しいラベルを選択できます。ユーザーが機密性の高いファイルを保護するための SharePoint Online チーム サイトと使用するラベルを知っていることを確認します。
   
 > [!NOTE]
 > 機密性の高い複数の SharePoint Online チーム サイトが存在する場合、上記の設定を使用して複数の Azure Information Protection スコープ付きポリシーとサブラベルを作成し、特定の SharePoint Online チーム サイトのサイト メンバー アクセス グループに設定されたサブラベルごとにアクセス許可を指定する必要があります。 

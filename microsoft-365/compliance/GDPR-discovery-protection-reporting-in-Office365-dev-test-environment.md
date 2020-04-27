@@ -1,6 +1,6 @@
 ---
-title: Office 365 開発/テスト環境における GDPR の検出、保護、および報告
-description: Office 365 の GDPR 機能をデモします。
+title: 開発/テスト環境における GDPR の検出、保護、および報告
+description: Microsoft 365 の GDPR 機能をデモします。
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632342"
 ---
-# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境における GDPR の検出、保護、および報告
+# <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>開発/テスト環境における GDPR の検出、保護、および報告
 
- **概要:** Office 365 の GDPR 機能をデモします。 
+ **概要:** Microsoft 365 の GDPR 機能をデモします。 
   
-この記事では、Office 365 開発/テスト環境で一般データ保護規則 (GDPR) 用に個人を特定できる情報 (PII) の検出、保護、および報告を構成してデモする方法について説明します。
+この記事では、Microsoft 365 開発/テスト環境で一般データ保護規則 (GDPR) 用に個人を特定できる情報 (PII) の検出、保護、および報告を構成してデモする方法について説明します。
   
-## <a name="phase-1-create-and-configure-your-trial-office-365-subscription"></a>フェーズ 1: 試用版の Office 365 サブスクリプションを作成して構成する
+## <a name="phase-1-create-and-configure-your-trial-microsoft-365-subscription"></a>フェーズ 1: 試用版の Microsoft 365 サブスクリプションを作成して構成する
 
-まず、「[Office 365 開発/テスト環境のフェーズ 2](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription)」の記事内の手順を実行します。
+まず、「[Microsoft 365 開発/テスト環境のフェーズ 2](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription)」の記事内の手順を実行します。
 
 次に、以下の手順を使用して、電子情報開示マネージャーを構成します。
 
-1. 全体管理者アカウントを使用して、Office 365 試用版テナントにサインインします。
-2. Office 365 のホーム ページで、**[セキュリティとコンプライアンス]** をクリックします。
+1. 全体管理者アカウントを使用して、Microsoft 365 試用版テナントにサインインします。
+2. Microsoft 365 のホーム ページで、**[セキュリティとコンプライアンス]** をクリックします。
 3. 新しい [セキュリティとコンプライアンス] タブで、**[アクセス許可]** > **[電子情報開示マネージャー]** をクリックします。
 4. 電子情報開示マネージャーの **[編集]** をクリックしてから、**[電子情報開示マネージャーの選択]** をクリックします。
 5. **[+ 追加]** をクリックして、自分の全体管理者アカウント名を探し、そのアカウントを電子情報開示マネージャーとして追加します。
@@ -46,12 +46,12 @@ ms.locfileid: "41594091"
   
 ## <a name="phase-2-add-personally-identifiable-information-to-your-tenant"></a>フェーズ 2: 個人を特定できる情報をテナントに追加する
 
-このフェーズでは、国際銀行口座番号 (IBAN) の事例用として PII を含むドキュメントを作成し、Office 365 開発/テスト環境内の SharePoint Online サイトに保存します。
+このフェーズでは、国際銀行口座番号 (IBAN) の事例用として PII を含むドキュメントを作成し、Microsoft 365 開発/テスト環境内の SharePoint Online サイトに保存します。
 
 1. ローカル コンピューターで、Microsoft Word を開きます。
 2. Word ファイルに次の表を貼り付け、そのファイルを 'IBANs.docx' としてローカル コンピューターに保存します。
     
-    番号  |国  |コード |IBAN  |
+    数値  |国  |コード |IBAN  |
     |---------|---------|---------|---------|
     |1     |  オーストリア SEPA      | AT            |AT611904300234573201       |
     |2     |  ブルガリア SEPA       |BG    |BG80BNBG96611020345678      |
@@ -99,7 +99,7 @@ ms.locfileid: "41594091"
 - 4 桁のシリアル番号。 
     - 使用可能なシリアル番号の値の範囲は、0000 ～ 9999 です。   
 
-Contoso では、必ず、内部対応、外部対応、ドキュメント、およびその他の形式で CCN を使用して顧客を参照しています。また、この形式の個人を識別できる情報の使用に対して保護が適用されるように、Office 365 コンテンツ内の CCN の使用を検出するためのカスタムの機密項目の種類が必要です。
+Contoso では、必ず、内部対応、外部対応、ドキュメント、およびその他の形式で CCN を使用して顧客を参照しています。また、この形式の個人を識別できる情報の使用に対して保護が適用されるように、Microsoft 365 コンテンツ内の CCN の使用を検出するためのカスタムの機密項目の種類が必要です。
 
 1. 「[多要素認証を使用してセキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)」の手順を使用して、全体管理者アカウントの UPN でセキュリティ/コンプライアンス センターに接続します。
 2. 次の PowerShell コマンドを実行します。
@@ -178,7 +178,7 @@ Contoso では、必ず、内部対応、外部対応、ドキュメント、お
 
 ## <a name="phase-5-demonstrate-data-protection"></a>フェーズ 5: データ保護をデモする
 
-Office 365 の個人情報の保護には、データ損失防止 (DLP) 機能の使用が含まれます。  DLP ポリシーにより、Office 365 全体で自動的に機密情報を保護できます。
+Microsoft 365 の個人情報の保護には、データ損失防止 (DLP) 機能の使用が含まれます。  DLP ポリシーにより、Microsoft 365 全体で自動的に機密情報を保護できます。
 
 保護を適用するための複数の方法があります。環境内の EU 居住者データの保存場所と従業員によるその処理方法の教育と認識の向上は、Office 365 DLP を使用した情報保護の 1 つのレベルを表しています。
 
@@ -189,7 +189,7 @@ Office 365 の個人情報の保護には、データ損失防止 (DLP) 機能�
 3. **[+ ポリシーの作成]** をクリックします。
 4. **[テンプレートで開始またはカスタム ポリシーの作成]** で、**[カスタム]** > **[カスタム ポリシー]** > **[次へ]** をクリックします。
 5. **[ポリシーに名前を付ける]** で、次の詳細を入力してから、**[次へ]** をクリックします。a. 名前: **EU 市民 PII ポリシー** b. 説明: **欧州市民の個人を特定できる情報を保護する**
-6. **[場所の選択]** で、**[Office 365 のすべての場所]** を選択します。これに、Exchange 電子メール、OneDrive ドキュメント、および SharePoint ドキュメントの内容が追加されます。その後で、**[次へ]** をクリックします。
+6. **[場所の選択]** で、**[Microsoft 365 のすべての場所]** を選択します。これに、Exchange メール、OneDrive ドキュメント、および SharePoint ドキュメントの内容が追加されます。その後で、**[次へ]** をクリックします。
 7. **[保護するコンテンツの種類のカスタマイズ]** で、**[含まれているコンテンツを検索する:]** をクリックしてから、**[編集]** をクリックします。
 8. **[保護するコンテンツの種類の選択]** で、**[追加]** > **[機密情報の種類]** をクリックします。
 9. **[機密情報の種類]** で、**[+ 追加]** をクリックします。
@@ -233,7 +233,7 @@ Office 365 の個人情報の保護には、データ損失防止 (DLP) 機能�
 
 ## <a name="phase-6-demonstrate-reporting"></a>フェーズ 6: レポート機能をデモする
  
-このフェーズでは、フェーズ 5 で構成した DLP ポリシーに基づいて Office 365 のレポート機能をデモします。
+このフェーズでは、フェーズ 5 で構成した DLP ポリシーに基づいて Microsoft 365 のレポート機能をデモします。
 
    1. ブラウザーの [セキュリティとコンプライアンス] タブで、**[ホーム]** をクリックします。
    2. **[レポート]** > **[ダッシュボード]** > **[DLP ポリシー一致]** をクリックします。

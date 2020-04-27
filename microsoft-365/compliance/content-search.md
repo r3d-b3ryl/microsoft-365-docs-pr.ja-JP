@@ -1,5 +1,5 @@
 ---
-title: Office 365 のコンテンツ検索
+title: コンテンツ検索
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Yammer グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Microsoft 365 グループ、Yammer グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
+ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521503"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632362"
 ---
-# <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
+# <a name="content-search"></a>コンテンツ検索
 
-Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索電子情報開示ツールを使用して、Office 365 組織の電子メール、文書、インスタント メッセージングの会話などのインプレース アイテムを検索できます。このツールを使用すると、以下の Office 365 サービス内のアイテムを検索できます。
+Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索電子情報開示ツールを使用して、組織のメール、文書、インスタント メッセージングの会話などのインプレース アイテムを検索できます。このツールを使用すると、以下のサービス内のアイテムを検索できます。
   
 - Exchange Online メールボックスとパブリック フォルダー
     
@@ -38,7 +38,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
 - Microsoft Teams 
 
-- Office 365 グループ
+- Microsoft 365 グループ
 
 - Yammer グループ 
     
@@ -48,7 +48,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
 
 検索を実行して検索結果をプレビューおよびエクスポートするために [**コンテンツ検索**] ページにアクセスするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、セキュリティ/コンプライアンス センターの電子情報開示マネージャーの役割グループのメンバーである必要があります。詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
   
-1. [https://protection.office.com](https://protection.office.com) にアクセスし、Office 365 の電子メール アドレスとパスワードを使用してサインインします。
+1. [https://protection.office.com](https://protection.office.com) にアクセスし、Microsoft のメール アドレスとパスワードを使用してサインインします。
     
 2. [**検索**] \> [**コンテンツ検索**] をクリックします。
     
@@ -85,7 +85,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
        - **場所**: 検索するコンテンツの場所を選択します。
     
-      - [**すべての場所**]: 組織内のすべてのコンテンツの場所を検索するには、このオプションを選択します。 これには、すべての Exchange メールボックス (非アクティブなすべてのメールボックス、およびすべての Microsoft Teams、Yammer グループ、Office 365 グループのメールボックスを含む) 内の電子メール、すべての Skype for Business の会話、すべての SharePoint および OneDrive for Business サイト (すべての Microsoft Teams、Yammer グループ、および Office 365 グループのサイトを含む)、およびすべての Exchange パブリック フォルダー内のアイテムが含まれます。
+      - [**すべての場所**]: 組織内のすべてのコンテンツの場所を検索するには、このオプションを選択します。 これには、すべての Exchange メールボックス (非アクティブなすべてのメールボックス、およびすべての Microsoft Teams、Yammer グループ、Microsoft 365 グループのメールボックスを含む) 内のメール、すべての Skype for Business の会話、すべての SharePoint および OneDrive for Business サイト (すべての Microsoft Teams、Yammer グループ、および Microsoft 365 グループのサイトを含む)、およびすべての Exchange パブリック フォルダー内のアイテムが含まれます。
     
       - [**特定の場所**]: 特定のコンテンツの場所を検索するには、このオプションを使用します。 特定の Office 365 サービスのすべてのコンテンツの場所を検索できます (すべての Exchange メールボックスを検索したり、すべての SharePoint サイトを検索したりするなど)。または、表示されている Office 365 サービスの特定の場所にあるコンテンツを検索することができます。 
     
@@ -178,7 +178,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
   
 [OneDrive アカウントの検索](#searching-onedrive-accounts)
   
-[Microsoft Teams と Office 365 グループの検索](#searching-microsoft-teams-and-office-365-groups)
+[Microsoft Teams と Microsoft 365 グループの検索](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [Yammer グループの検索](#searching-yammer-groups)
   
@@ -196,7 +196,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
 
 - コンテンツ検索機能に適用される制限については、「[コンテンツ検索の制限](limits-for-content-search.md)」を参照してください。
     
-- すべての Office 365 組織が実行するコンテンツ検索について、Microsoft はパフォーマンス情報を収集しています。検索クエリが複雑になると、検索時間が長くなる可能性がありますが、検索時間が長くなる最も大きな要因は、検索するメールボックス数です。Microsoft は検索時間についてサービス レベル アグリーメントを提供していませんが、検索に含まれるメールボックス数に基づくコンテンツ検索の平均検索時間を次の表に示します。
+- すべての組織が実行するコンテンツ検索について、Microsoft はパフォーマンス情報を収集しています。検索クエリが複雑になると、検索時間が長くなる可能性がありますが、検索時間が長くなる最も大きな要因は、検索するメールボックス数です。Microsoft は検索時間についてサービス レベル アグリーメントを提供していませんが、検索に含まれるメールボックス数に基づくコンテンツ検索の平均検索時間を次の表に示します。
     
 |**メールボックスの数**|**検索平均時間**|
 |:-----|:-----|
@@ -229,7 +229,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
     ![キーワード リストと条件を使用して作成するクエリの例](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- コンテンツ検索を実行すると、Office 365 はサポートされていない文字と、大文字にできないブール演算子を検索クエリで自動的にチェックします。 サポートされていない文字は非表示になっていることがよくあり、通常、検索エラーを発生させたり、意図しない結果を返したりする原因になります。 確認されているサポートされていない文字の詳細については、「[[コンテンツ検索] クエリでエラーを確認する](check-your-content-search-query-for-errors.md)」を参照してください。
+- コンテンツ検索を実行すると、Microsoft 365 はサポートされていない文字と、大文字にできないブール演算子を検索クエリで自動的にチェックします。 サポートされていない文字は非表示になっていることがよくあり、通常、検索エラーを発生させたり、意図しない結果を返したりする原因になります。 確認されているサポートされていない文字の詳細については、「[[コンテンツ検索] クエリでエラーを確認する](check-your-content-search-query-for-errors.md)」を参照してください。
     
 - 英語以外の文字 (中国語の文字など) のキーワードを含む検索クエリがある場合は、[**クエリ言語-国/地域**] ![コンテンツ検索のクエリ言語-国/地域アイコン](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)をクリックし、言語-国の文化コード値を選択して検索できます。 デフォルトの言語/地域はニュートラルです。 コンテンツ検索の言語設定を変更する必要があるかどうかをどのように確認できますか。 特定のコンテンツの場所に検索対象の英語以外の文字が含まれているにも関わらず検索で結果が返されない場合は、言語設定が原因である可能性があります。 
   
@@ -239,15 +239,15 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
     
     ユーザーのプリンシパル名 (UPN) が変更される稀なケースにおいては、OneDrive の場所のURLが変更され、新しい UPN が組み込まれます。 このような場合は、ユーザーの新しい OneDrive の URL を追加し古い OneDrive の URL を削除して、コンテンツ検索を変更する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](https://docs.microsoft.com/onedrive/upn-changes)」をご覧ください。
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>Microsoft Teams と Office 365 グループの検索
+### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Microsoft Teams と Microsoft 365 グループの検索
 
-Office 365 グループまたは Microsoft Teams に関連付けられているメールボックスを検索することもできます。 Microsoft Teams は Office 365 グループ上に構築されているため、それらの検索も同様です。 いずれの場合も、グループまたはチーム メールボックスのみが検索されます。 グループまたはチーム メンバーのメールボックスは検索されません。 検索するには、検索に明示的に追加する必要があります。
+Microsoft 365 グループまたは Microsoft Teams に関連付けられているメールボックスを検索することもできます。 Microsoft Teams は Microsoft 365 グループ上に構築されているため、それらの検索も同様です。 いずれの場合も、グループまたはチーム メールボックスのみが検索されます。 グループまたはチーム メンバーのメールボックスは検索されません。 検索するには、検索に明示的に追加する必要があります。
   
-Microsoft Teams と Office 365 グループのコンテンツを検索する場合は、次の点に注意してください。
+Microsoft Teams と Microsoft 365 グループのコンテンツを検索する場合は、次の点に注意してください。
   
-- Teams と Office 365 グループにあるコンテンツを検索するには、チームまたはグループに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
+- Teams と Microsoft 365 グループにあるコンテンツを検索するには、チームまたはグループに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
     
-- チームまたは Office 365 グループのプロパティを表示するには、Exchange Online で **set-unifiedgroup** コマンドレットを実行します。 これは、チームまたはグループに関連付けられているサイトの URL を取得するのに適した方法です。 たとえば、次のコマンドは、上級管理職チームという名前の Office 365 グループの選択されたプロパティを表示します。 
+- チームまたは Microsoft 365 グループのプロパティを表示するには、Exchange Online で **Get-UnifiedGroup** コマンドレットを実行します。 これは、チームまたはグループに関連付けられているサイトの URL を取得するのに適した方法です。 たとえば、次のコマンドは、上級管理職チームという名前の Microsoft 365 グループの選択されたプロパティを表示します。 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -260,9 +260,9 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
     > [!NOTE]
     > **Get-UnifiedGroup** コマンドレットを実行するには、Exchange Online で View-Only Recipients という役割が割り当てられているか、View-Only Recipients という役割が割り当てられている役割グループに属している必要があります。 
   
-- ユーザーのメールボックスを検索すると、ユーザーがメンバーとなっているチームまたは Office 365 グループは検索されません。 同様に、チームまたは Office 365 グループを検索するときは、指定したグループ メールボックスとグループ サイトのみが検索されます。 グループ メンバーのメールボックスと OneDrive for Business アカウントは、検索に明示的に追加しない限り検索されません。
+- ユーザーのメールボックスを検索すると、ユーザーがメンバーとなっているチームまたは Microsoft 365 グループは検索されません。 同様に、チームまたは Microsoft 365 グループを検索するときは、指定したグループ メールボックスとグループ サイトのみが検索されます。 グループ メンバーのメールボックスと OneDrive for Business アカウントは、検索に明示的に追加しない限り検索されません。
     
-- チームまたは Office 365 グループのメンバーの一覧を取得するには、Microsoft 365 管理センターの **[ホーム] \> [グループ]** ページでプロパティを表示できます。 または、Exchange Online PowerShell で次のコマンドを実行できます。 
+- チームまたは Microsoft 365 グループのメンバーの一覧を取得するには、Microsoft 365 管理センターの **[ホーム] \> [グループ]** ページでプロパティを表示できます。 または、Exchange Online PowerShell で次のコマンドを実行できます。 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +358,7 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>切断された、またはライセンスを解除されたメールボックスを検索する
 
-Exchange Online ライセンス (または Office 365 ライセンス全体) が Office 365 または Azure Active Directory のユーザー アカウントから削除されると、ユーザーのメールボックスは*切断されたメールボックス*になります。 これは、このメールボックスがユーザー アカウントに関連付けられていないことを意味します。 切断されたメールボックスを検索すると、次のようになります。
+Exchange Online ライセンス (または Microsoft 365 ライセンス全体) がユーザー アカウントまたは Azure Active Directory から削除されると、ユーザーのメールボックスは*切断された*メールボックスになります。 これは、このメールボックスがユーザー アカウントに関連付けられていないことを意味します。 切断されたメールボックスを検索すると、次のようになります。
 
 - ライセンスがメールボックスから削除されている場合は、メールボックスを検索できなくなります。 
 

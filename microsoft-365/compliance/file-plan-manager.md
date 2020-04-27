@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151462"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708442"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
@@ -37,9 +37,9 @@ ms.locfileid: "43151462"
 
 ファイル計画マネージャーにアクセスするには、次のいずれかの管理者役割が必要です。
     
-- 保持マネージャー
-
-- 閲覧限定保持マネージャー
+    - 保持マネージャー
+    
+    - 閲覧限定保持マネージャー
 
 ## <a name="default-retention-labels-and-label-policy"></a>デフォルトの保持ラベルとラベルポリシー
 
@@ -131,7 +131,7 @@ ms.locfileid: "43151462"
 
    ![Excel で開かれた空白のファイル計画テンプレート](../media/file-plan-blank-template.png)
 
-3. テンプレートに入力します。 次に、ファイル計画テンプレートのプロパティと各プロパティの有効な値について説明します。<br/>
+3. テンプレートに入力します。 次に、ファイル計画テンプレートのプロパティと各プロパティの有効な値について説明します。 インポートの場合、各値の最大長は 64 文字です。 <br/>
 
    |**Property**|**種類**|**有効な値**|
    |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ ms.locfileid: "43151462"
    |CitationUrl|文字列|このプロパティは、**規定/引用** ファイル計画記述子に表示される URL を指定します。|
    |CitationJurisdiction|文字列|このプロパティは、**規定/引用**ファイル計画記述子に表示される管理規則または機関を指定します。(例: 「米国証券取引委員会 (SEC)」)|
    |Regulatory|文字列|空白のままにします。 現時点では、このプロパティは使用されていません。|
-   |EventType|文字列|このプロパティは、ラベルに関連付けられている保持規則を指定します。 ルールを一意に識別する任意の値を使用できます。 次に例を示します。</br>**名前**</br>**識別名 (DN)**</br>**GUID** </br>使用可能な保持規則を確認するには、[Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) コマンドレットを使用します。 1 つの Office 365 組織からラベルをエクスポートする場合、別の Office 365 組織にラベルをインポートするときに、その組織の EventType プロパティの値を使用できないことに注意してください。 これは、EventType 値が組織に固有であるためです。 |
+   |EventType|文字列|このプロパティは、ラベルに関連付けられている保持規則を指定します。 ルールを一意に識別する任意の値を使用できます。 次に例を示します。</br>**名前**</br>**識別名 (DN)**</br>**GUID** </br>使用可能な保持規則を確認するには、[Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) コマンドレットを使用します。 1 つの組織からラベルをエクスポートする場合、別の組織にラベルをインポートするときに、その組織の EventType プロパティの値を使用できないことに注意してください。 これは、EventType 値が組織に固有であるためです。 |
    |||
 
    保持ラベルに関する情報を含むテンプレートの例を次に示します。

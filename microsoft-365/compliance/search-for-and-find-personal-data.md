@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office 365 の個人データを検索する方法について説明します。
-ms.openlocfilehash: 31ff182c673b9a8d8f468b81c6cf5d30cf00733a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597564"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638131"
 ---
 # <a name="search-for-and-find-personal-data"></a>個人データの検索
 
@@ -31,9 +31,9 @@ ms.locfileid: "41597564"
 
 記事 4: 定義
 
-> ‘個人データ’ とは特定される個人、または特定可能な個人 (‘データ主体’) に関連するあらゆる情報であり、特定可能な個人とは、その個人の名前、ID 番号、位置データ、オンライン ID、または物理的、生理学的、遺伝子上、心理的、経済的、文化的、社会的な識別情報に固有の 1 つ以上の因子を参照することによって直接または間接的に特定される人物です。
+> '個人データ' とは特定される個人、または特定可能な個人 ('データ主体') に関連するあらゆる情報であり、特定可能な個人とは、その個人の名前、ID 番号、位置データ、オンライン ID、または物理的、生理学的、遺伝子上、心理的、経済的、文化的、社会的な識別情報に固有の 1 つ以上の因子を参照することによって直接または間接的に特定される人物です。
 
-この記事では、SharePoint Online および OneDrive for Business (すべての Office 365 グループおよび Microsoft Teams のサイトを含む) に保管されている個人データを検索する方法について説明します。
+この記事では、SharePoint Online および OneDrive for Business (すべての Microsoft 365 グループおよび Microsoft Teams のサイトを含む) に保管されている個人データを検索する方法について説明します。
 
 GDPR の対象となる個人データを見つけることは、Office 365 の機密情報の種類の使用に依存します。 これらは、自動プロセスが正常性サービス番号やクレジット カード番号などの特定の情報の種類を認識する方法を定義します。 データ損失防止ポリシーを使用して、送信中のメールで個人データを見つけることができます。 GDPR 用に作成した機密情報の種類を使用して、メールで送信される個人情報の検索と保護を行うことができます。 また、「[セキュリティ/コンプライアンス センターで DSR ケース ツールを使用して GDPR データ主体要求を管理する](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)」を参照してください。
 
@@ -97,15 +97,15 @@ Office 365 に含まれている機密情報の種類を使用して個人デー
 <tbody>
 <tr class="odd"><td align="left"><p>セキュリティ/コンプライアンス センターでコンテンツ検索に進む</p></td>
 <td align="left"><p>セキュリティ/コンプライアンス センターの左側のウィンドウで、**[検索と調査]** &gt; **[コンテンツ検索]** の順にクリックします。</p>
-<p>「<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Office 365 のセキュリティ/コンプライアンス センターでコンテンツ検索を実行する</a>」を参照してください。</p></td>
+<p><a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">セキュリティ/コンプライアンス センターでコンテンツ検索を実行する方法</a>に関する記事をご覧ください。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>それぞれの機密情報の種類に新しい検索項目を作成する</p></td>
 <td align="left"><p>次の構文を使用してください。</p>
 <blockquote>
-<p>SensitiveType:”&lt;type&gt;”</p>
+<p>SensitiveType:"&lt;種類&gt;"</p>
 </blockquote>
-<p>次に例を示します。</p>
+<p>以下に例を示します。</p>
 <blockquote>
 <p>SensitiveType:&quot;France Passport Number&quot;</p>
 </blockquote>
@@ -117,8 +117,8 @@ Office 365 に含まれている機密情報の種類を使用して個人デー
 <td align="left"><p>次のような種類の問題を確認して、クエリの精度が正確かどうかを判断します。</p>
 <p><li>誤検知が多い</li></p>
 <p><li>データの既知のインスタンスがない</li></p>
-<p>「<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Office 365 セキュリティ/コンプライアンス センターの検索結果をエクスポートする</a>」を参照してください。</p>
-<p>注: Mozilla Firefox または Chrome を使用している場合、最初に Internet Explorer または Edge を使用してレポートをダウンロードし、必要なアドオンをインストールする必要があります。</p></td>
+<p>詳細については、<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">セキュリティ/コンプライアンス センターからコンテンツ検索の結果をエクスポートする方法</a>に関する記事をご覧ください。</p>
+<p>注: Mozilla Firefox または Chrome を使用している場合、最初に Internet Explorer または Microsoft Edge を使用してレポートをダウンロードし、必要なアドオンをインストールする必要があります。</p></td>
 </tr>
 </tbody>
 </table>
@@ -207,13 +207,13 @@ Office 365 に含まれている機密情報の種類を使用して個人デー
 
 構文:
 
--   SensitiveType:”\<種類\>|\<カウント範囲\>|\<信頼範囲\>”
+-   SensitiveType:"\<種類\>|\<カウント範囲\>|\<信頼範囲\>"
 
 例:
 
--   SensitiveType:“Credit Card Number|5” (5 つのクレジット カード番号を持つドキュメントのみを返します)
+-   SensitiveType:"Credit Card Number|5" (5 つのクレジット カード番号を持つドキュメントのみを返します)
 
--   SensitiveType:“Credit Card Number|\*|85..” (信頼範囲が 85% 以上)
+-   SensitiveType:"Credit Card Number|\*|85.." (信頼範囲が 85% 以上)
 
 注: "SensitiveType" は大文字と小文字を区別しますが、クエリの残りの部分では区別しません。
 
