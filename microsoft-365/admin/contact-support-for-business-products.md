@@ -22,19 +22,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: 地域/ロケール別にリストされている電話番号、サービス リクエストのオンライン送信、または Microsoft Store にアクセスして、テクニカル サポートおよび課金サポートに問い合わせます。
+description: 国/地域別にリストされている電話番号、サービス リクエストのオンライン送信、または Microsoft Store にアクセスして、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
-ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627080"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707549"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[オンライン サポート](#tab/online)
 
@@ -52,7 +51,9 @@ ms.locfileid: "43627080"
 
 ## <a name="phone-support"></a>[電話サポート](#tab/phone)
 
-課金サポートは、月曜日から金曜日の午前 9 時から午後 5 時 (オーストラリアでは午前 9 時から午後 6 時) に英語で提供されます。  <br/>テクニカル サポートは 24 時間年中無休で英語で提供されます。 <br/> 管理者からサポートに電話する際は、アカウントの詳細情報をご用意ください。<br/>
+課金サポートは、月曜日から金曜日の午前 9 時から午後 5 時 (オーストラリアでは午前 9 時から午後 6 時) に英語で提供されます。
+テクニカル サポートは 24 時間年中無休で英語で提供されます。
+管理者からサポートに電話する際は、アカウントの詳細情報をご用意ください。
 
 - **米国にお住まいの方は、1 800 865 9408 にお問い合わせください。**
 
@@ -88,7 +89,7 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 
 承認された管理者は、21Vianet が運用している Office 365 ポータルを使用して、サービス リクエストをオンラインで送信し、サポートの電話番号にアクセスできます。この手順については、「[電話でのお問い合わせ](#contact-support)」を参照してください。
 
-21Vianet テクニカル サポート チームが運用する Office 365 は、21Vianet が運用している Office 365 に関連する問題のみについてトラブルシューティングを行います。お客様のネットワークが Office 365 サポートの範囲外であることに起因する問題、およびこのような場合は、お客様は社内のネットワーク チームにお問い合わせください。
+21Vianet テクニカル サポート チームが運用する Office 365 は、21Vianet が運用している Office 365 に関連する問題のみについてトラブルシューティングを行います。お客様のネットワークで発生した問題が Office 365 サポートの範囲外である場合は、社内のネットワーク チームに支援を求めてください。
 
 ### <a name="community-and-self-service-support-options"></a>コミュニティおよびセルフサービス サポート
 
@@ -179,7 +180,7 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 
 組織内では、管理者の役割を持つユーザーだけが 21Vianet が運営する Office 365 ポータルの [管理] セクションにアクセスし、Office 365 のサービス リクエストについて 21Vianet と直接やりとりすることを許可されています。
 
-Office 365 では、異なる複数の役割を持つ複数のタイプの管理者を指定できます。このサービスの説明では、管理者という一般的な肩書きで、すべてのカテゴリの管理者を表しています。管理者の役割の詳細については、「[Microsoft 365 for business で管理者ロールを割り当てる](add-users/assign-admin-roles.md)」を参照してください。
+Office 365 では、複数の異なる役割を持つ複数のタイプの管理者を指定できます。このサービスの説明では、管理者という一般的な肩書きで、すべてのカテゴリの管理者を表しています。管理者の役割の詳細については、「[Microsoft 365 for business で管理者ロールを割り当てる](add-users/assign-admin-roles.md)」を参照してください。
 
 管理者とは:
 

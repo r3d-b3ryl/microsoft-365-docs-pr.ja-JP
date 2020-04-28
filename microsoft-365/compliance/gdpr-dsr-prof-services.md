@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073330"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632498"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のための Microsoft サポート/プロフェッショナル サービス データ サブジェクト要求
 
@@ -228,7 +228,7 @@ FastTrack 移行サービスに関して、Microsoft はデータ プロセッ�
   
 ユーザーのデータが FastTrack の移行システムを通じて処理されている間にアクセスの処理、修正、DSR 要求のエクスポートを行う必要がある場合、ユーザー データが保存されている既存のソース システムを通じてそれらの DSR を履行するのはお客様の責任です。 ユーザーの移行が完了し、データが移行先の Microsoft クラウド サービスに移行されると、お客様がデータ主体要求に対応するために Microsoft 製品、サービス、および管理ツールを使って個人データの検索と操作を行う方法についてのガイダンス (Microsoft 提供) が適用されます。 このガイダンスを確認するには、「[GDPR におけるデータ主体による要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)」参照してください。 
 
-DSR の削除要求への対応として、継続中の FastTrack 移行プロジェクトに組織が参加している間に Office 365 ユーザー アカウントを削除する必要がある場合、ユーザーの移行完了後しばらくの間、ユーザー移行データのコピーが移行システムによって保持され、Office 365 ユーザー アカウントを削除しても、FastTrack 移行システムに保管されているそれらのユーザー移行データは自動的に削除されないことに注意してください。Microsoft FastTrack チームにユーザー移行データの削除を依頼する場合は、[要求を提出する](https://go.microsoft.com/fwlink/?linkid=874544)ことができます。通常の業務では、組織の移行が完了すると Microsoft FastTrack によってすべてのデータのコピーが削除されます。
+DSR の削除要求への対応として、継続中の FastTrack 移行プロジェクトに組織が参加している間にユーザー アカウントを削除する必要がある場合、ユーザーの移行完了後しばらくの間、ユーザー移行データのコピーが移行システムによって保持され、ユーザー アカウントを削除しても、FastTrack 移行システムに保管されているそれらのユーザー移行データは自動的に削除されないことに注意してください。Microsoft FastTrack チームにユーザー移行データの削除を依頼する場合は、[リクエストを提出する](https://go.microsoft.com/fwlink/?linkid=874544)ことができます。通常の業務では、組織の移行が完了すると Microsoft FastTrack によってすべてのデータのコピーが削除されます。
 
 ## <a name="other-consulting-services"></a>その他のコンサルティング サービス
 

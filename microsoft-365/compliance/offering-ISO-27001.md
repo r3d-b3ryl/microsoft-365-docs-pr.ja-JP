@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5bb3820222258a5b0b4b28c7476541b5d338f4b6
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 19f9e5dc72231093b279d39b8bf38f5cea0a9c18
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583544"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 情報セキュリティ管理基準
 
@@ -56,9 +56,9 @@ Microsoft Cloud における ISO-Iec-27001 のメリットを確認してくだ�
 - [Microsoft Professional Services](https://go.microsoft.com/fwlink/p/?linkid=2100022)
 - Stream
 - Azure DevOps Services
-- Windows Defender ATP - エンドポイントでの検出と対応、自動の調査と修復、セキュリティ スコア
+- Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア
 
-## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
+## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
 
 監査サイクル: Microsoft のクラウド サービスでは、少なくとも年に 1 回、ISO 27001:2013 標準に照らした監査が実施されます。
 
@@ -84,9 +84,9 @@ Microsoft Cloud における ISO-Iec-27001 のメリットを確認してくだ�
 
 - [Microsoft Professional Services](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
-### <a name="windows-defender-atp"></a>Windows Defender ATP
+### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
 
-- [Windows Defender ATP - エンドポイントでの検出と対応、自動の調査と修復、セキュリティ スコア - ISO 27001 証明書](https://aka.ms/windowsdefenderatpiso27001certificate)
+- [Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア - ISO 27001 証明書](https://aka.ms/windowsdefenderatpiso27001certificate)
 
 ## <a name="assessments-and-reports"></a>評価とレポート
 
@@ -110,10 +110,10 @@ Microsoft Cloud における ISO-Iec-27001 のメリットを確認してくだ�
 
 - [Azure DevOps Services ISO 27001 証明書 IS 619017](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dVisual%2bStudio%2bTeam%2bServices&licencenumber=IS%20619017)
 
-### <a name="windows-defender-atp"></a>Windows Defender ATP
+### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
 
-- [Windows Defender ATP - エンドポイントでの検出と対応、自動の調査と修復、セキュリティ スコア - ISO 27001 監査評価レポート](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [Windows Defender ATP - エンドポイントでの検出と対応、自動の調査と修復、セキュリティ スコア - ISO 27001 および 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
+- [Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア - ISO 27001 監査評価レポート](https://aka.ms/windowsdefenderatpiso27001auditreport)
+- [Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア - ISO 27001 および 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 [その他の監査レポートを見る](https://aka.ms/auditreports)
 

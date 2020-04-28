@@ -16,18 +16,18 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e1d5afa4e6b6ea92af39b46214397868e518e323
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557967"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632488"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>削除要求を送信するための FastTrack 移行ツールセット
 
 ## <a name="toolset-purpose"></a>ツールセットの目的
 
-FastTrack 移行に関与しているお客様の場合は、Office 365 ユーザー アカウントを削除しても、Microsoft FastTrack チームが保持しているデータ コピーは削除されません。このデータ コピーは移行を完了する目的でのみ保持されるものです。移行時に Microsoft FastTrack チームにデータ コピーの削除も依頼する場合は、このツールセットを介して要求を送信してください。通常の業務において、移行が完了した時点で、Microsoft FastTrack がすべてのデータ コピーを削除します。
+FastTrack 移行に関与しているお客様の場合は、ユーザー アカウントを削除しても、Microsoft FastTrack チームが保持しているデータ コピーは削除されません。このデータ コピーは移行を完了する目的でのみ保持されています。移行時に Microsoft FastTrack チームにデータ コピーの削除も依頼する場合は、このツールセットを介してリクエストを送信してください。通常の業務において、移行が完了した時点で、Microsoft FastTrack がすべてのデータ コピーを削除します。
 
 ### <a name="supported-platforms"></a>サポートされるプラットフォーム
 Microsoft は、Windows プラットフォームと PowerShell コンソールでこのツールセットの初期リリースをサポートしています。以下の既知のプラットフォームがこのツールセットでサポートされています。

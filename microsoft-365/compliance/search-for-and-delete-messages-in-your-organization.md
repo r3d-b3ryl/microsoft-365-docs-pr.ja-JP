@@ -1,5 +1,5 @@
 ---
-title: Office 365 組織でのメール メッセージの検索と削除
+title: 組織内の電子メールメッセージの検索と削除
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Office 365 セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
+ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626443"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
 **この記事は管理者向けです。メールボックスで削除するアイテムを探している場合は、「[クイック検索を使ってメッセージまたはアイテムを検索する](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**」を参照してください。
    
-Office 365 のコンテンツ検索機能を使って、組織のすべてのメールボックスにあるメール メッセージを検索し削除できます。 この機能を使用して、次のように有害な、またはリスクが高い可能性があるメールを検索し、削除することができます。
+コンテンツ検索機能を使用すると、組織のすべてのメールボックスからメール メッセージを検索し、削除することができます。 この機能を使用して、次のように有害な、またはリスクが高い可能性があるメールを検索し、削除することができます。
   
 - 危険性のある添付ファイルやウイルスを含むメッセージ
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 次に、組織のセキュリティ/コンプライアンス センターの PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
   
-Office 365 アカウントで多要素認証 (MFA) やフェデレーション認証を使用する場合、次のトピックの手順ではセキュリティ/コンプライアンス センターの PowerShell に接続できません。 代わりに、「[多要素認証を使用してセキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)」の手順を参照してください。
+Microsoft 365 アカウントで多要素認証 (MFA) やフェデレーション認証を使用する場合、次のトピックの手順ではセキュリティ/コンプライアンス センターの PowerShell に接続できません。 代わりに、「[多要素認証を使用してセキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)」の手順を参照してください。
 
 セキュリティ/コンプライアンス センターの PowerShell に接続したら、前の手順で準備した **New-ComplianceSearch** コマンドレットおよび **Start-ComplianceSearch** コマンドレットを実行します。
   
@@ -137,9 +137,9 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **メッセージを削除するとどうなりますか?**
 
-   `New-ComplianceSearchAction -Purge -PurgeType HardDelete` コマンドを使用して削除されたメッセージは、Purges フォルダーに移動され、ユーザーはアクセスできなくなります。 Purges フォルダーに移動されたメッセージは、そのメールボックスで単一アイテムの回復が有効になっている場合、削除済みアイテムの保持期間が切れるまで保持されます。 (Office 365 では、新しいメールボックスを作成すると、既定で単一アイテムの回復が有効になります)。削除済みアイテムの保持期間を過ぎると、そのメッセージは完全に削除するようにマークされ、管理フォルダー用アシスタントによって次回そのメールボックスが処理される際に Office 365 から消去されます。 
+   `New-ComplianceSearchAction -Purge -PurgeType HardDelete` コマンドを使用して削除されたメッセージは、Purges フォルダーに移動され、ユーザーはアクセスできなくなります。 Purges フォルダーに移動されたメッセージは、そのメールボックスで単一アイテムの回復が有効になっている場合、削除済みアイテムの保持期間が切れるまで保持されます。 (Microsoft 365 では、新しいメールボックスを作成すると、既定で単一アイテムの回復が有効になります)。削除済みアイテムの保持期間を過ぎると、そのメッセージは完全に削除するようにマークされ、管理フォルダー用アシスタントによって次回そのメールボックスが処理される際に Microsoft 365 から消去されます。 
 
-   `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` コマンドを使用すると、メッセージは、ユーザーの回復可能なアイテム フォルダーの Deletions フォルダーに移動されます。 Office 365 から直ちに削除されることはありません。 ユーザーは、メールボックスに構成されている削除したアイテムの保持期間に基づき、その期間は削除済みアイテム フォルダーのメッセージを復元できます。 この保持期間を過ぎるか、過ぎる前にユーザーがメッセージを消去すると、メッセージは Purges フォルダーに移動され、ユーザーはアクセスできなくなります。 Purges フォルダーに移動されたメッセージは、そのメールボックスで単一アイテムの回復が有効になっている場合、メールボックスに構成されている削除済みアイテムの保持期間が切れるまで保持されます。 (Office 365 では、新しいメールボックスを作成すると、既定で単一アイテムの回復が有効になります)。削除済みアイテムの保持期間を過ぎると、そのメッセージは完全に削除するようにマークされ、管理フォルダー用アシスタントによって次回そのメールボックスが処理される際に Office 365 から消去されます。 
+   `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` コマンドを使用すると、メッセージは、ユーザーの回復可能なアイテム フォルダーの Deletions フォルダーに移動されます。 Microsoft 365 から直ちに削除されることはありません。 ユーザーは、メールボックスに構成されている削除したアイテムの保持期間に基づき、その期間は削除済みアイテム フォルダーのメッセージを復元できます。 この保持期間を過ぎるか、過ぎる前にユーザーがメッセージを消去すると、メッセージは Purges フォルダーに移動され、ユーザーはアクセスできなくなります。 Purges フォルダーに移動されたメッセージは、そのメールボックスで単一アイテムの回復が有効になっている場合、メールボックスに構成されている削除済みアイテムの保持期間が切れるまで保持されます。 (Microsoft 365 では、新しいメールボックスを作成すると、既定で単一アイテムの回復が有効になります)。削除済みアイテムの保持期間を過ぎると、そのメッセージは完全に削除するようにマークされ、管理フォルダー用アシスタントによって次回そのメールボックスが処理される際に Microsoft 365 から消去されます。 
     
 - **50,000 を超えるメールボックスからメッセージを削除するにはどうすればよいですか?**
 
@@ -149,7 +149,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
     いいえ。`New-ComplianceSearchAction -Purge コマンドでは、インデックスのないアイテムは削除されません。 
     
-- **メッセージが、インプレース ホールドまたは訴訟ホールドが設定されたメールボックスから削除されたり、Office 365 の保持ポリシーに割り当てられたりするとどうなりますか?**
+- **メッセージが、インプレース ホールドまたは訴訟ホールドが設定されたメールボックスから削除されたり、Microsoft 365 の保持ポリシーに割り当てられたりするとどうなりますか?**
 
     消去されて Purges フォルダーに移動されたメッセージは、保持期間が切れるまで保持されます。 保持期間が無期限である場合は、ホールドが解除されるか、または保持期間が変更されるまで、アイテムは保持されます。
     

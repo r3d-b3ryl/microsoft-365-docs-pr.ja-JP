@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d35c6ee17c326f98179e882bb8752cd38f14ec6a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602484"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637981"
 ---
 # <a name="european-union-model-clauses"></a>欧州連合モデル条項
 
@@ -47,7 +47,7 @@ Microsoft クラウドにおける欧州連合モデル条項のメリットを�
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Microsoft プロフェッショナル サービス: Azure、Dynamics 365、Intune と、Office 365 の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
+- Microsoft Professional Services: Azure、Dynamics 365、Intune と、Microsoft 365 for business の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune: Intune アドオン製品のクラウド サービス、Mobile Device Management for Office 365
 - Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
@@ -79,7 +79,7 @@ Microsoft は EU 規格を継続的に調べ、必要に応じてサービスを
 
 「二次処理者」とは、データ管理者の指導や EU Model Clauses およびその下請契約上の条件に従い、個人のデータを処理する当事者のことです。 Microsoft のお客様 (特に独立系ソフトウェア ベンダー (ISV)) 自身がデータ処理者であることがあります。 これらのインスタンスでは、Microsoft が二次処理者です。
 
-**私の組織のコンプライアンス順守は何から始めればいいですか?**
+**自分の組織でのコンプライアンス順守の取り組みは、何から始めればいいですか?**
 
 [オンライン サービス条件](https://aka.ms/Online-Services-Terms)などの契約を結ぶか、または既存の契約を改定して標準契約条項を組み込みます。
 

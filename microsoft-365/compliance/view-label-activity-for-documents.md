@@ -16,17 +16,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 セキュリティ&amp;コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナントで生じている事柄を明確に把握できます。
-ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: セキュリティ &amp; コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナント内での状況を明確に把握できます。
+ms.openlocfilehash: b0a799e192f6b6c3cb8087b38322094ca7423fea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068892"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626333"
 ---
 # <a name="view-label-activity-for-documents"></a>ドキュメントのラベル アクティビティを表示する
 
-ラベルを作成した後、意図したとおりにラベルがコンテンツに適用されているかどうかを確認することをお勧めします。Office 365 セキュリティ&amp;コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナントで生じている事柄を明確に把握できます。
+ラベルを作成した後、意図したとおりにラベルがコンテンツに適用されているかどうかを確認することをお勧めします。セキュリティ &amp; コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナント内での状況を明確に把握できます。
   
 たとえば、ラベル アクティビティ エクスプローラーで以下のことができます:
   
