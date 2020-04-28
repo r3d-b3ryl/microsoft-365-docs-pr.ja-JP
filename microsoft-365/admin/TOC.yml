@@ -219,8 +219,6 @@
           href: get-help-with-domains/information-for-dns-records.md
         - name: 問題の検索と修正
           href: get-help-with-domains/find-and-fix-issues.md
-        - name: ドメイン接続
-          href: get-help-with-domains/domain-connect.md
         - name: ドメインを設定する (ホストに固有の手順)
           href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
         - name: 任意のドメイン レジストラーでネーム サーバーを変更する

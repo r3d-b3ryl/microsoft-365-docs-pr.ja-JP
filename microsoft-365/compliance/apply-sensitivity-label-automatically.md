@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 50933032e47ebb6165e1e9354c1c1fc885915852
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6cf223eb9a7a806691a282944e77040de3f586
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637147"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790634"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -192,7 +192,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自動ラベル付けポリシーの前提条件
 
-- シミュレーション モードでは、Microsoft 365 の監査を有効にする必要があります。 監査を有効にする必要がある場合、または監査が既に有効になっているかどうかが不明の場合は、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」を参照してください。
+- シミュレーション モードでは、Microsoft 365 の監査を有効にする必要があります。 監査を有効にする必要がある場合、または監査が既に有効になっているかどうかが不明の場合は、「[監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」を参照してください。
 
 - SharePoint と OneDrive でファイルに自動でラベルを付けるには:
     - [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md) を有効にしています。
@@ -202,9 +202,10 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     - カスタムの機密情報の種類は、カスタムの機密情報の種類が保存された後に作成されたコンテンツに対して評価されます。 
     - 新しいカスタムの機密情報の種類をテストするには、自動ラベル付けポリシーを作成する前に作成してから、テスト用のサンプル データを使用して新しいドキュメントを作成します。
 
-- 自動ラベル付けポリシー用に選択できる (少なくとも 1 人のユーザー対して) [作成および公開された](create-sensitivity-labels.md) 1 つ以上の機密ラベル。 これらのラベルの場合:
+- 自動ラベル付けポリシー用に選択できる、[作成および公開された](create-sensitivity-labels.md) (少なくとも 1 人のユーザーに対して) 1 つ以上の秘密度ラベル。 これらのラベルの場合:
     - 概要で説明したように、ラベル設定は自動ラベル付けポリシーを補完するため、Office アプリのラベル設定の自動ラベル付けがオンかオフかは関係ありません。 
     - 自動ラベル付けに使用するラベルが視覚的なマーキング (ヘッダー、フッター、透かし) を使用するように構成されている場合、これらはドキュメントに適用されないことに注意してください。
+    - ラベルに暗号化を適用する場合は、**[今すぐアクセス許可を適用する]** の設定を構成する必要があります。
 
 ### <a name="learn-about-simulation-mode"></a>シミュレーション モードの詳細
 
@@ -239,6 +240,8 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 2. [**自動ラベル付 (プレビュー)**] タブを選択します。
     
     ![自動ラベル付け (プレビュー) タブ](../media/auto-labeling-tab.png)
+    
+    この新しいタブは現在、テナントにロールアウト中です。 表示されない場合は、数日後にもう一度お試しください。
 
 3. [**+ ポリシーの作成**] を選択します。
 

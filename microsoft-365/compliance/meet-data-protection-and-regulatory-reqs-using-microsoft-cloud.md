@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft Service Trust Portal のコンプライアンス マネージャーでは、コントロールの追跡、実装、管理を行えるツールが用意されています。それらのツールは、Office 365 や Microsoft Azure などの Microsoft クラウド サービスを扱う際に、組織がセキュリティおよびデータ保護に関する業界標準 (GDPR、ISO 27001 および 27018、HIPAA など) に準拠するのに役立ちます。コンプライアンス マネージャーは、組織のデータ保護とプライバシー対策を講じる担当者が、コンプライアンスとリスク評価のプロセスを管理するのに役立ちます。
-ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3019378c82e263ce438b385a998dcf2475f3b62d
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071869"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790624"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft コンプライアンス マネージャー (クラシック)
 
 > [!NOTE]
-> このドキュメントでは、旧製品について説明しています。 ユーザーはこのバージョンのコンプライアンス マネージャーを使用しないことを強くお勧めします。代わりに、新しい [Microsoft コンプライアンス スコア](compliance-score.md)の使用をお勧めします。
+> このドキュメントでは、この製品の以前のバージョンついて説明します。 このバージョンのコンプライアンス マネージャーは使用しないことを強くお勧めします。代わりに、新しい [Microsoft コンプライアンス スコア](compliance-score.md)の使用をお勧めします。
 
- *コンプライアンス マネージャーは、21Vianet が運用している Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High)、Office 365 Department of Defense では使用できません。* 
+ *コンプライアンス マネージャーは、21Vianet が運用している Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High)、Office 365 Department of Defense では使用できません。*
   
 コンプライアンス マネージャーは、当社の [Microsoft Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662) に記載されているワークフローベースのリスク評価ツールです。コンプライアンス マネージャーを使用すると、Microsoft Office 365、Microsoft Dynamics 365、Microsoft Azure などの Microsoft プロフェッショナル サービスや Microsoft クラウド サービスに関連する組織の規制遵守活動の追跡、割り当て、検証を行うことができます。 
 
@@ -700,7 +700,7 @@ Service Trust Portal では、ページ コンテンツをさまざまな言語�
     
 - **マイナー**変更は、顧客アクションへの小規模な変更を指します。入力ミスの修正や書式設定の問題、ハイパーリンクの更新や修正などが該当します。マイナー変更では通常、コントロールの再評価は必要ありませんが、更新された顧客アクションを確認することをお勧めします。
   
-### <a name="office-365-customer-managed-controls---change-log-for-july-2018"></a>Office 365 顧客管理のコントロール - 2018 年 7 月の変更ログ
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>顧客管理のコントロール - 2018 年 7 月の変更ログ
 
 |**コントロール ID**|**Assessment**|**変更の種類**|**変更の説明**|**お客様への推奨アクション**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -710,7 +710,7 @@ Service Trust Portal では、ページ コンテンツをさまざまな言語�
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365: HIPAA|メジャー|Office 365 の HIPAA Assessment に HITECH コントロールが追加されました。|追加されたコントロールと推奨される顧客アクションを確認してください<br/>|
 |
 
-### <a name="office-365-customer-managed-controls---change-log-for-april-2018"></a>Office 365 顧客管理のコントロール - 2018 年 4 月の変更ログ
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>顧客管理のコントロール - 2018 年 4 月の変更ログ
 
 |**GDPR**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**変更の種類**|**変更の説明**|**お客様への推奨アクション**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
