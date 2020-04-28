@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。 '
-ms.openlocfilehash: bcea72dadb6f10ac4ef80677f3def57eca2724cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dd925ee3a5d2aadb07dceed5a0e896e77921e2a1
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628054"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901012"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "43628054"
     
 ## <a name="prevent-last-password-from-being-used-again"></a>最後に使用したパスワードの再使用を禁止する
 
-ユーザーが古いパスワードを再使用することを禁止する場合、Azure AD でこの操作を行うことができます。 「[組織のパスワード有効期限ポリシーを設定する](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide)」を参照してください。
+ユーザーが古いパスワードを再使用することを禁止する場合、Azure AD でこの操作を行うことができます。 「[パスワードの履歴を記録する](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history)」を参照します。
 
 また、従業員がモバイル デバイスを使用して Microsoft 365 にアクセスしている場合、それをワイプしてパスワードが保存されていないことを確認してください。 詳細については、「[元従業員のモバイル デバイスをワイプし、ブロックする](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device)」を参照してください。
 

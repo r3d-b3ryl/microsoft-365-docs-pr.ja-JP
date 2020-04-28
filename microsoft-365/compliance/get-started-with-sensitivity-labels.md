@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 1ab56f6d4fadf87de49069e93de429b7eecba577
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8889d2706b4467be33eef473845c79a0caac606f
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707478"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907204"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -40,7 +40,7 @@ ms.locfileid: "43707478"
     
     分類法を定義するためのより広範なガイダンスについては、[Service Trust Portal](https://aka.ms/DataClassificationWhitepaper) のホワイト ペーパー「データ分類と秘密度ラベルの分類」をダウンロードしてください。
 
-2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、秘密度の低いコンテンツ (「一般」ラベルなど) には単にヘッダーやフッターを適用し、秘密度のより高いコンテンツ (「社外秘」ラベルなど) には透かし、暗号化、および Endpoint Protection を適用する、といったことができます。
+2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、「一般」ラベルなどの秘密度の低いコンテンツには単にヘッダーやフッターを適用し、「社外秘」ラベルなど秘密度のより高いコンテンツには透かし、暗号化、およびエンドポイント保護を適用する、といったことができます。
 
 3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用できます。一度定義したラベルは、異なるユーザーに割り当てる複数のラベル ポリシーに含めることができます。 たとえば、ラベル ポリシーをごく少数のユーザーに対して適用して、秘密度ラベルを試験運用することができます。 組織全体に対してラベルを展開する準備ができたら、ラベルの新しいラベル ポリシーを作成し、今回はすべてのユーザーを指定することができます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "43707478"
 
 秘密度ラベルはさまざまな異なるサブスクリプションに対応しており、ユーザーのライセンス要件は使用する機能によって異なります。
 
-2020 年 4 月 1 日時点の Microsoft 365 コンプライアンス機能の利点を得られるようにユーザーにライセンス付与するオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)」を参照してください。 秘密度ラベルの詳細については「[Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)」セクションを参照し、関連する PDF または Excel をダウンロードしてください。
+2020 年 4 月 1 日時点の Microsoft 365 コンプライアンス機能の利点を得られるようにユーザーにライセンス付与するオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)」を参照してください。 秘密度ラベルの詳細については「[情報保護](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)」セクションを参照し、関連する PDF または Excel をダウンロードしてください。
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>機密ラベルの作成と管理に必要なアクセス許可
 
@@ -60,12 +60,12 @@ ms.locfileid: "43707478"
 
 既定では、テナントのグローバル管理者はこれらの管理センターへのアクセス権を所有し、コンプライアンス責任者や他のユーザーにアクセス権を付与できます (テナント管理者が持つすべての権限を付与する必要はありません)。この委任された制限付き管理者アクセス許可については、これらのいずれかの管理センターの [**アクセス許可**] ページに移動して、[**コンプライアンス データ管理者**] 役割グループ、[**コンプライアンス管理者**] 役割グループ、または [**セキュリティ管理者**] 役割グループにユーザーを追加します。
 
-役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者**の役割または**組織の構成**の役割をこのグループに追加できます。 手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。
+役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者**の役割または**組織の構成**の役割をこのグループに追加できます。 読み取り専用の役割の場合は、**秘密度ラベルリーダー**を使用します。 手順については、「[ユーザーに Office 365 セキュリティ/センター コンプライアンス センターへのアクセスを許可する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。
 
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。
 
 > [!NOTE]
-> [**秘密度ラベル リーダー**] は、現在テナントに展開されている新しい役割で、PowerShell のラベル付けコマンドレットで最初にサポートされ、後に管理者のラベル付けセンターでサポートされます。
+> **秘密度ラベルリーダー** は、最初はPowerShell のラベルが付いたコマンドレットのみをサポートしていた新しい役割です。 現在は、管理者ラベルセンターのサポートがテナントに展開されるようになりました。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>秘密度ラベルの一般的なシナリオ
 
