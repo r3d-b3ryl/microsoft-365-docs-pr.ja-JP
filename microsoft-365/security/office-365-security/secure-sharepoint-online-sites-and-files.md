@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: aa6739caa3d3bce97750f0af1faa7e040f84ab7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082300"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637842"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -63,9 +63,9 @@ SharePoint Online チーム サイトの推奨事項は、Microsoft 365 のさ�
 
 - [データ損失防止](../../compliance/data-loss-prevention-policies.md) (DLP) ポリシーは、機密および高機密の保持ラベル向けに構成されており、これらのタイプのファイルをユーザーが組織外に送信しようとすると警告を表示したり、その処理を防止したりします。
 
-- シナリオの必要に応じて、[機密ラベル](../../compliance/sensitivity-labels.md)を使用して、暗号化やアクセス許可によって機密性の高いファイルを保護することができます。 Azure Information Protection のお客様は、Microsoft 365 コンプライアンス センターで、Azure Information Protection ラベルを使用することができ、追加の構成や高度な構成を行うように選択すると、ラベルは Azure portal と同期されます。 Azure Information Protection ラベルと Office 365 機密ラベルは、互いに完全な互換性があります。 そのため、たとえば、Azure Information Protection でラベル付けされたコンテンツがある場合、そのコンテンツの分類やラベル付けをやり直す必要はありません。 このレベルの保護がすべてのお客様に求められているわけではありません。
+- シナリオの必要に応じて、[機密ラベル](../../compliance/sensitivity-labels.md)を使用して、暗号化やアクセス許可によって機密性の高いファイルを保護することができます。 Azure Information Protection のお客様は、Microsoft 365 コンプライアンス センターで、Azure Information Protection ラベルを使用することができ、追加の構成や高度な構成を行うように選択すると、ラベルは Azure portal と同期されます。 Azure Information Protection ラベルと秘密度ラベルは、互いに完全な互換性があります。 そのため、たとえば、Azure Information Protection でラベル付けされたコンテンツがある場合、そのコンテンツの分類やラベル付けをやり直す必要はありません。 このレベルの保護がすべてのお客様に求められているわけではありません。
 
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online と OneDrive for Business に関するテナント全体の設定
+## <a name="organization-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online と OneDrive for Business に関する組織全体の設定
 
 SharePoint Online と OneDrive for Business には、すべてのサイトとユーザーに影響を及ぼすテナント全体の設定が含まれています。これらの設定の中には、サイト レベルにおいてより制限の強いもの (ただし、既定以下にはできません) に調整できるものもあります。このセクションでは、セキュリティとコラボレーションに影響を与えるテナント全体の設定について取り上げます。
 
@@ -125,11 +125,11 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
 |サイトレベルのデバイス アクセス制御|付加的な制御はありません。|付加的な制御はありません。|ユーザーは、非準拠デバイスまたはドメインに参加していないデバイスにファイルをダウンロードできません。他のすべてのデバイスからは参照専用のアクセスが許可されます。|非準拠デバイスまたはドメインに参加していないデバイスへのファイルのダウンロードをブロックします。|
 |保持ラベル|内部パブリック|プライベート|機密|非常に機密性の高い社外秘|
 |DLP ポリシー|||機密ラベルが付けられたファイルを組織の外に送信しようとするとユーザーに警告が表示されます。 <br/> クレジット カード番号や他の個人データなど、機密データの種類の外部共有をブロックするには、これらのデータの種類 (自分で構成したカスタム データの種類を含む) に追加の DLP ポリシーを構成できます。|ユーザーが高機密のラベルが付けられているファイルを組織の外部に送信できないようにします。ファイルの共有相手など、理由を提供することよって、ユーザーはこの設定を上書きできます。|
-|機密ラベル||||機密ラベルを使用して、ファイルの暗号化とファイルへのアクセス許可の付与を自動化します。 ファイルが流出した場合も、暗号化やアクセス許可はファイルで維持されます。 <br/> Office 365 は、機密ラベルを使用して暗号化されたファイルを読み取ることができません。 さらに、DLP ポリシーが機能するのはメタデータ (ラベルを含む) に対してのみで、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) に対しては機能しません。|
+|機密ラベル||||機密ラベルを使用して、ファイルの暗号化とファイルへのアクセス許可の付与を自動化します。 ファイルが流出した場合も、暗号化やアクセス許可はファイルで維持されます。 <br/> Microsoft 365 は、機密ラベルを使用して暗号化されたファイルを読み取ることができません。 さらに、DLP ポリシーが機能するのはメタデータ (ラベルを含む) に対してのみで、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) に対しては機能しません。|
 
 このソリューションで異なる 4 種類の SharePoint Online チーム サイトを展開する手順については、「[3 つの層による保護用のサイトを展開する](../../compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)」を参照してください。
 
-## <a name="office-365-retention-labels"></a>Office 365 保持ラベル
+##  <a name="retention-labels"></a>保持ラベル
 
 機密データと高機密データがある環境では、保持ラベルを使用することを推奨します。 保持ラベルの構成と発行が完了した後、次のことを行えるようになります。
 
@@ -139,7 +139,7 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
 
 - 保持ラベルに基づいた DLP ポリシーを適用できます。
 
-- 組織内のユーザーは、Outlook on the web、Outlook 2010 以降、OneDrive for Business、SharePoint Online、Office 365 グループのコンテンツに手動でラベルを適用できます。ユーザーは自分が操作するコンテンツの種類を最もよく知っているので、コンテンツを分類して適切な DLP ポリシーを適用できます。
+- 組織内のユーザーは、Outlook on the web、Outlook 2010 以降、OneDrive for Business、SharePoint Online、Microsoft 365 グループのコンテンツに手動でラベルを適用できます。ユーザーは自分が操作するコンテンツの種類を最もよく知っているので、コンテンツを分類して適切な DLP ポリシーを適用できます。
 
 ![SharePoint サイトの推奨構成](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 

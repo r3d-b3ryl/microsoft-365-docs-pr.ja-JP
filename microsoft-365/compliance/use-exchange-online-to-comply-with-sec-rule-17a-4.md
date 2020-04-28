@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange Online および セキュリティ/コンプライアンス センターは、推奨通りに構成した場合、米国商品先物取引委員会規則 1.31(c)-(d) (CFTC Rule 1.31(c)-(d) )、米国金融取引業規制機構規則 4511 (FINRA Rule 4511)、および米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) における記憶域に関する該当要件に準拠することが、Cohasset Associates により検証されました。
-ms.openlocfilehash: bf54bf5798d4bbb5b655cc367330bbb50de7f7b2
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106125"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626423"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Exchange Online および セキュリティ/コンプライアンス センターを使用して米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に準拠する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-データ保持に関する規制基準への準拠が組織で必要な場合に、Office 365 セキュリティ/コンプライアンス センターは Exchange Online 上のデータのライフサイクル管理機能を提供します。これには、データを保持、監査、検索、およびエクスポートする機能が含まれます。これらの機能は、ほとんどの組織でのニーズを満たすために十分な機能です。
+データ保持に関する規制基準への準拠が組織で必要な場合に、セキュリティ/コンプライアンス センターは Exchange Online 上のデータのライフサイクル管理機能を提供します。これには、データを保持、監査、検索、およびエクスポートする機能が含まれます。これらの機能は、ほとんどの組織でのニーズを満たすために十分な機能です。
 
 ただし、規制が厳しい業界の一部の組織は、より厳格な規制要件を遵守する必要があります。たとえば、銀行や株式仲介業者などの金融機関は、証券取引委員会 (SEC) が発行する規則 17a-4 を遵守する必要があります。規則 17a-4 には、記録保持の期間、形式、品質、可用性、および責任などの記録の管理に関する多くの側面を含む、電子データの記憶域に関する特定の要件が含まれます。
 
@@ -42,7 +42,7 @@ Exchange Online および セキュリティ/コンプライアンス センタ�
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>この評価は、Exchange Online に固有のものです
 
-この評価は Exchange Online にのみ関するものであることにご留意ください。将来的には SharePoint Online や OneDrive for Business などの他の Office 365 サービスでも米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に関するサポートを予定していますが、これらのサービスは本評価には含まれません。
+この評価は Exchange Online に固有のものであることにご留意ください。将来的には SharePoint Online や OneDrive for Business などの他の Microsoft 365 サービスでも米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に関するサポートを予定していますが、これらのサービスは本評価には含まれません。
 
 Skype for Business および Teams も Exchange Online にデータを保存します。そのため、Skype for Business メッセージおよび Teams からのチャンネル メッセージおよびチャット メッセージも評価対象に含まれます。
 
@@ -75,4 +75,4 @@ PowerShell を使用してアイテム保持ポリシーをロックすること
 - Teams チャットおよびチャンネル メッセージでの "いいね" は保持されません。
 
 > [!NOTE]
-> アイテム レベルの監査は Office 365 グループのメールボックスで利用できるようになりました。 詳細については、「[メールボックスの監査を管理する](enable-mailbox-auditing.md)」を参照してください。
+> アイテム レベルの監査は Microsoft 365 グループのメールボックスで利用できるようになりました。 詳細については、「[メールボックスの監査を管理する](enable-mailbox-auditing.md)」を参照してください。

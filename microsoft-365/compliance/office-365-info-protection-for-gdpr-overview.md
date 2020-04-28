@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: GDPR のための Office 365 の情報保護の概要を確認します。個人データを検出、分類、保護、監視する方法について説明します。
-ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071174"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637221"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護の概要
 
@@ -103,4 +103,4 @@ Office 365 およびその他のクラウド サービスへのアクセス保�
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>手順 5: 個人情報の漏えいを監視する
 
-Office 365 データ損失防止レポートでは、機密データ監視について最高レベルの詳細を提供します。自動アラートを設定し、Office 365 監査ログを使用して侵害を調査することができます。Cloud App Security は機密データの検索と監視の機能を他の SaaS プロバイダーまで拡張します。これらのツールの詳細は、「[個人データ侵害を監視する](/security/office-365-security/monitor-for-leaks-of-personal-data.md)」を参照してください。
+Office 365 データ損失防止レポートでは、機密データ監視について最高レベルの詳細を提供します。自動アラートを設定し、監査ログを使用して侵害を調査することができます。Cloud App Security は機密データの検索と監視の機能を他の SaaS プロバイダーまで拡張します。これらのツールの詳細は、「[個人データ侵害を監視する](/security/office-365-security/monitor-for-leaks-of-personal-data.md)」を参照してください。

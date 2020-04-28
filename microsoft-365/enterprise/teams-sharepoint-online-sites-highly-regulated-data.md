@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: セキュリティで保護された SharePoint チーム サイトを作成して、最も重要な機密ファイルを保存します。
-ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 97a01275d1d45cb02e66e88f82c95311bcb6fe70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951984"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636713"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>厳しく規制されたデータ用の SharePoint サイト
 
@@ -40,10 +40,10 @@ Microsoft 365 Enterprise には、一連のクラウドベースのサービス�
 
 - SharePoint チーム サイトにファイル (ドキュメント、スライド セット、スプレッドシートなど) を保存します。
 - サイトをロックダウンし、以下を防止します。
-  - サイトの Office 365 グループのメンバーではないユーザーへのアクセス。
+  - サイトの Microsoft 365 グループのメンバーではないユーザーへのアクセス。
   - サイトのメンバーから他のユーザーへのアクセス許可の付与。
   - サイトのメンバーでないユーザーからサイトへのアクセス要求。
-- ユーザーが組織外のファイルを送信するのをブロックする既定の方法として、SharePoint サイトの Office 365 保持ラベルを構成します。
+- ユーザーが組織外のファイルを送信するのをブロックする既定の方法として、SharePoint サイトの保持ラベルを構成します。
 - ファイルと共に移動する暗号化を使用して、サイトの最高機密ファイルを暗号化します。
 - 最高機密ファイルがサイト外で共有された場合でも、そのファイルを開くのにアクセス許可のあるユーザー アカウントの有効な資格情報が必要となるように、最高機密ファイルにアクセス許可を追加します。
 
@@ -53,11 +53,11 @@ Microsoft 365 Enterprise には、一連のクラウドベースのサービス�
 |:-------|:-----|
 | **要件** | **Microsoft 365 Enterprise の機能** |
 | ファイルを保存します | SharePoint チーム サイト |
-| サイトのロックダウン | Office 365 グループおよび SharePoint チーム サイトのアクセス許可 |
-| サイトのファイルにラベルを付ける | Office 365 保持ラベル |
-| ユーザーがファイルを組織外に送信できないようにする | Office 365 のデータ損失防止 (DLP) ポリシー |
-| サイトのすべてのファイルを暗号化する | Office 365 の機密度ラベルまたはサブラベル |
-| サイトのファイルへのアクセス許可の追加 | Office 365 の機密度ラベルまたはサブラベル |
+| サイトのロックダウン | Microsoft 365 グループおよび SharePoint チーム サイトのアクセス許可 |
+| サイトのファイルにラベルを付ける | Microsoft 365 保持ラベル |
+| ユーザーがファイルを組織外に送信できないようにする | データ損失防止 (DLP) ポリシー |
+| サイトのすべてのファイルを暗号化する | Microsoft 365 の機密度ラベルまたはサブラベル |
+| サイトのファイルへのアクセス許可の追加 | Microsoft 365 の機密度ラベルまたはサブラベル |
 |||
 
 次に、セキュリティで保護された SharePoint サイトの構成例を示します。
@@ -88,26 +88,26 @@ SharePoint サイトへのアクセスを保護するには、[ID とデバイ�
 
 目的に基づいて、以下のような必須の構成項目を決定します。
 
-- サイトのドキュメント部分に割り当てる Office 365 保持ラベルと、そのラベル用の一連の DLP ポリシー
-- サイトに保存されている高機密ファイルに、ユーザーが適用する Office 365 秘密度サブラベルの設定
+- サイトのドキュメント部分に割り当てる保持ラベルと、そのラベル用の一連の DLP ポリシー
+- サイトに保存されている高機密ファイルに、ユーザーが適用する秘密度サブラベルの設定
 
 上記の項目を決定したら、それらの設定に基づき、フェーズ 2 でサイトを構成します。 
 
-### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>手順 1: Office 365 保持ラベルと DLP ポリシー
+### <a name="step-1-microsoft-365-retention-labels-and-dlp-policies"></a>手順 1: Microsoft 365 保持ラベルと DLP ポリシー
 
-SharePoint チーム サイトのドキュメント部分に適用されると、Office 365 保持ラベルは、サイトに保存されているすべてのファイルを分類する既定のメソッドを提供します。
+SharePoint チーム サイトのドキュメント部分に適用されると、保持ラベルは、サイトに保存されているすべてのファイルを分類する既定のメソッドを提供します。
  
-SharePoint サイトで厳しく規制されたデータを扱う場合は、どの Office 365 保持ラベルを使用するかを決定する必要があります。
+SharePoint サイトで厳しく規制されたデータを扱う場合は、どの保持ラベルを使用するかを決定する必要があります。
 
-Office 365 ラベルの設計の考慮事項については、「[Office 365 の分類とラベル](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)」を参照してください。
+ラベルの設計の考慮事項については、「[Microsoft 365 の分類とラベル](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)」を参照してください。
 
 機密性の高い情報を保護し、偶発的または意図的な開示を防止するためには、DLP ポリシーを使用します。詳細については、DLP ポリシーの[概要](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)を参照してください。
 
-SharePoint サイトで高度な規制データを扱うには、ファイルを外部のユーザーと共有しようとするユーザーをブロックするために、サイトに割り当てられた Office 365 保持ラベルの DLP ポリシーを構成する必要があります。 
+SharePoint サイトで高度な規制データを扱うには、ファイルを外部のユーザーと共有しようとするユーザーをブロックするために、サイトに割り当てられた保持ラベルの DLP ポリシーを構成する必要があります。 
 
-### <a name="step-2-your-office-365-sensitivity-sublabel"></a>手順 2: Office 365 秘密度サブラベル
+### <a name="step-2-your-microsoft-365-sensitivity-sublabel"></a>手順 2: Microsoft 365 秘密度サブラベル
 
-暗号化と最高機密ファイルへの一連のアクセス許可を提供するには、ユーザーが Office 365 秘密度ラベルまたはサブラベルを適用する必要があります。 既存のラベルの下にサブラベルが存在します。 
+暗号化と最高機密ファイルへの一連のアクセス許可を提供するには、ユーザーが秘密度ラベルまたはサブラベルを適用する必要があります。 既存のラベルの下にサブラベルが存在します。 
 
 全体での使用と個別のプライベート チームのいずれにおいても必要なラベルの数が少ない場合は、秘密度ラベルを使用します。 ラベルを多数使用している場合、または安全なサイト用のラベルを厳しく規制されたラベルの下でまとめる場合は、秘密度サブラベルを使用します。 
 
@@ -117,14 +117,14 @@ SharePoint サイトで高度な規制データを扱うには、ファイルを
 
 以下を決定しました。
 
-- 適切な Office 365 保持ラベルと、そのラベルに関連付けられている DLP ポリシー
-- 暗号化とアクセス許可を含む Office 365 秘密度サブラベルの設定
+- 適切な保持ラベルと、そのラベルに関連付けられている DLP ポリシー
+- 暗号化とアクセス許可を含む秘密度サブラベルの設定
 
 ## <a name="phase-2-configure"></a>フェーズ 2: 構成
 
 このフェーズでは、フェーズ 1 で決定した設定を実装し、厳しく規制されたデータを扱う SharePoint サイトを作成します。
 
-### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>手順 1: 対応する Office 365 グループの所有者およびメンバーと、SharePoint チーム サイトを作成
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-microsoft-365-group"></a>手順 1: 対応する Microsoft 365 グループの所有者およびメンバーと、SharePoint チーム サイトを作成
 
 [以下の手順]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8) に従って、プライベート SharePoint チーム サイトを作成します。
 
@@ -139,15 +139,15 @@ SharePoint サイトから、これらのアクセス許可の設定を構成し
 
 これらの設定を使用すると、サイト グループのメンバーがサイトを他のメンバーと共有したり、メンバー以外がサイトへのアクセスを要求したりすることができなくなります。
 
-### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>手順 3: Office 365 保持ラベル向けにサイトを構成
+### <a name="step-3-configure-the-site-for-a-retention-label"></a>手順 3: 保持ラベル向けにサイトを構成
 
-「[Office 365 ラベルと DLP による SharePoint ファイルの保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)」の手順を参照しながら、以下を実行します。
+「[ラベルと DLP による SharePoint ファイルの保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)」の手順を参照しながら、以下を実行します。
 
 1. 必要な場合には、厳しく規制されたデータの保持ラベルを作成して公開します。
 2. 手順 1 で作成した保持ラベルのサイトを構成します。
 3. 手順 2 で作成した保持ラベルを使用する厳しく規制されたデータの DLP ポリシーを作成し、ユーザーが組織外にファイルを送信するのをブロックします。
 
-#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>手順 4: サイトの Office 365 秘密度サブラベルを作成
+#### <a name="step-4-create-a-sensitivity-sublabel-for-the-site"></a>手順 4: サイトの秘密度サブラベルを作成
 
 すべてのユーザーが任意のファイルに適用できる、厳しく規制されたデータの秘密度ラベルとは異なり、セキュリティで保護されたサイトは独自のサブラベルが必要となります。サブラベルが割り当てられたファイルは、
 
@@ -167,9 +167,9 @@ SharePoint サイトから、これらのアクセス許可の設定を構成し
 以下を構成しました。
 
 - SharePoint サイトのアクセス許可の設定の制限
-- SharePoint サイトのドキュメント部分に割り当てられている Office 365 保持ラベル
-- Office 365 保持ラベルの DLP ポリシー
-- ユーザーは、Office 365 秘密度ラベルまたはサブラベルをファイルを暗号化しているサイトに保存された最高機密ファイルに適用できます。共同編集のアクセスが許可されるのは、サイト グループのメンバーのみです。 
+- SharePoint サイトのドキュメント部分に割り当てられている保持ラベル
+- 保持ラベルの DLP ポリシー
+- ユーザーは、秘密度ラベルまたはサブラベルをファイルを暗号化しているサイトに保存された最高機密ファイルに適用できます。共同編集のアクセスが許可されるのは、サイト グループのメンバーのみです。 
 
 これは、厳しく規制されたラベルのサブラベルを使用した結果の構成です。
 

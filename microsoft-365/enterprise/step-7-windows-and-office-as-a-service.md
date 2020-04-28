@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ご自身の環境でWindowsおよびOfficeのサービスを準備する方法を学びます。
-ms.openlocfilehash: d47abca74f7fea4c49f9aa28a93cd4afe40a0981
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085180"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636737"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>ステップ7： WindowsとOfficeのサービス
 
@@ -30,18 +30,18 @@ ms.locfileid: "42085180"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>ステップ7：WindowsとOfficeのサービス</strong></p>
-<p>Windows 10 と Office 365 ProPlus には、最新の技術革新によりユーザー エクスペリエンスとセキュリティを継続的に維持するための新しい機能が継続的に追加されます。更新プログラムを半期ごと、および毎月適用して最新の状態を維持する方法について説明します。また、新しいサービス モデルがどのように機能し、どういったツールやオプションを利用できるのかについても紹介します。</p></td>
+<p>Windows 10 と Microsoft 365 Apps for enterprise には、最新の技術革新によりユーザー エクスペリエンスとセキュリティを継続的に維持するための新しい機能が継続的に追加されます。更新プログラムを半期ごと、および毎月適用して最新の状態を維持する方法について説明します。また、新しいサービス モデルがどのように機能し、どういったツールやオプションを利用できるのかについても紹介します。</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->WindowsおよびOfficeサービスは、半年ごとの機能更新に備えるための計画サイクルを統括する、推奨展開プロセスの第7段階です。 完全なデスクトップ展開プロセスを確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)にアクセスしてください。
+>WindowsおよびOfficeサービスは、半年ごとの機能更新に備えるための計画サイクルを統括する、推奨展開プロセスの第7段階です。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
-Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプション、サポートモデル、および更新スケジュールが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 Microsoft Endpoint Configuration Manager (Current Branch) の新機能を活用しながら、Windows 10 および Office 365 ProPlus の新機能を提供する半期チャンネルの更新を準備する方法について説明します。
+Windows 10 と Microsoft 365 Apps for enterprise の両方で、新しいサービス オプション、サポート モデル、および更新プログラムのタイムラインが導入されました。 これらの変更により、常に最新機能を導入しておくプロセスを単純化することができます。 これらの更新に加えて、ご自身に合ったサービスプランを有効にするための新しい設定オプションがあります。 Microsoft Endpoint Configuration Manager (Current Branch) の新機能を活用しながら、Windows 10 および Microsoft 365 Apps for enterprise の新機能を提供する半期チャンネルの更新を準備する方法について説明します。
 
-[Windows 10およびOffice 365 ProPlusへの移行を支援します](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Windows 10 および Microsoft 365 Apps for enterprise へ移行するには](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>更新プログラムの種類
 
@@ -75,7 +75,7 @@ Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプショ�
 
 もう1つの利点は、広範環境への更新を展開する前に、まず[Office](https://products.office.com/office-insider?tab=Windows-Desktop)および[Windows ](https://insider.windows.com/)用のInsiderプログラムを介してビルドを配信します。これにより、広くアップデートを配信する前に、私達が統計データやフィードバックを集計することが可能になります。 Insiderプログラムはどなたにも開かれており、アップデートを先立って確認することができます。 アップデートを配信するときには、何百万もの設定から統計データを受け取ることになるので、実際のアップデートを展開時には、より本質的に品質が予測しやすくなります。
 
-もう 1 つの点として、Office 365 ProPlus の Insider ビルドに月次チャネルの更新が反映されるため、Windows に準じて、Office に半期チャネルを適用して機能の更新プログラムを年に 2 回配信する場合は、半期チャネル対象のリリースによる半期ごとの検証を早期に行うことができます。
+もう 1 つの点として、Microsoft 365 Apps for enterprise の Insider ビルドに月次チャネルの更新が反映されるため、Windows に準じて、Office に半期チャネルを適用して機能の更新プログラムを年に 2 回配信する場合は、半期チャネル対象のリリースによる半期ごとの検証を早期に行うことができます。
 
 ### <a name="supporting-management-tools"></a>管理ツールをサポート
 
@@ -83,7 +83,7 @@ Windows 10とOffice 365 ProPlusの両方で、新しいサービスオプショ�
 
 [Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Configuration Manager を使用して Microsoft 365 Apps for enterprise を管理する](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>WindowsとOfficeチャンネルの概要
 
@@ -93,7 +93,7 @@ Windows 10は3つのサービスチャンネルを提供します。
 - **Semi-Annualチャンネル**、Feature Updateの配信で年2回、新機能を提供
 - **長期保守チャネル**、長期保守オプションを必要とする専用機に特化して設計
 
-Office 365は3つのサービスチャンネルを提供します。
+Microsoft 365 は 4 つのサービスチャンネルを提供します。
 
 - [**Office Insiderプログラム**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)、開発中の最新のOffice性能および機能についてテストし、フィードバックを行えるようにする
 - **マンスリーチャンネル**、利用可能になり次第、ユーザーに最新のOffice機能を提供する
@@ -103,11 +103,11 @@ Office 365は3つのサービスチャンネルを提供します。
 WindowsとOfficeのサービスチャネルの詳細については、以下のドキュメントを参照してください。
 
 - [サービスとしてのWindowsの概要](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [ Office 365 ProPlusの更新チャンネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Microsoft 365 Apps for enterprise 用更新プログラム チャネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>更新プログラムの段階的な展開
 
-ここで、これらの更新プログラムの公開の方法について説明します。いずれのリリースについても、IT の少なくとも 3 つの導入フェーズ (検証、パイロット、幅広い製品展開) を取り入れることを推奨します。Windows 10 および Office 365 ProPlus を起動し実行してからは、毎月のサービスを使用し、セキュリティと品質に関する重要な更新プログラムを適用して最新の状態に保ちます。その後、新しい機能向けに半期のサービスに移行します。
+ここで、これらの更新プログラムの公開の方法について説明します。いずれのリリースについても、IT の少なくとも 3 つの導入フェーズ (検証、パイロット、幅広い製品展開) を取り入れることを推奨します。Windows 10 および Microsoft 365 Apps for enterprise を起動し実行してからは、毎月のサービスを使用し、セキュリティと品質に関する重要な更新プログラムを適用して最新の状態に保ちます。その後、新しい機能向けに半期のサービスに移行します。
 
 ### <a name="monthly-updating"></a>毎月の更新
 
@@ -125,7 +125,7 @@ Windows Update for Business および Windows Server Update Services では簡�
 
 #### <a name="binary-delta-compression"></a>バイナリ差分圧縮は
 
-Office のバイナリ差分圧縮は、Office 365 ProPlus の最新バージョンから更新する場合にのみ使用します。このアプローチを使用するには、以前のビルドから更新する必要があり、更新のスキップはできません。
+Office のバイナリ差分圧縮は、Microsoft 365 Apps for enterprise の最新バージョンから更新する場合にのみ使用します。このアプローチを使用するには、以前のビルドから更新する必要があり、更新のスキップはできません。
 
 Windows および Office の更新プログラム チャネルは、標準レベルの承認およびターゲット プロセスを使用して Configuration Manager で管理できます。さらに、Office および Windows のポリシー設定で、使用中の更新プログラム チャネルと関連する設定を適用することができます。
 
@@ -141,7 +141,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 [Windows の半期チャネル](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Office 365 ProPlus の半期チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Microsoft 365 Apps for enterprise 半期チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>タスク シーケンスのアップグレード
 
@@ -165,7 +165,7 @@ Windows 7 のコンピューターを Windows 10 に移行するために既に�
 
   - 更新を 3 月に予定している機能更新プログラムで、1903 以降のものは、引き続きリリース日から 18 か月間サポート。
 
-  - Office 365 ProPlus の半期の更新プログラムは、引き続き 18 か月間サポート
+  - Microsoft 365 Apps for enterprise 半期チャネル の半期の更新プログラムは、引き続き 18 か月間サポート
 
 #### <a name="additional-setup-automation-options-outside-of-task-sequences"></a>他のセットアップの自動オプション (タスク シーケンス以外)
 
@@ -175,8 +175,8 @@ Windows 7 のコンピューターを Windows 10 に移行するために既に�
 
 ## <a name="next-step"></a>次の手順 
 
-## <a name="step-8-user-communications-and-traininghttpsakamsmdd8"></a>[手順 8: ユーザーのコミュニケーションとトレーニング](https://aka.ms/mdd8)
+## <a name="step-8-user-communications-and-training"></a>[手順 8: ユーザーのコミュニケーションとトレーニング](https://aka.ms/mdd8)
 
 ## <a name="previous-step"></a>前の手順 
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[手順 6: OS の展開と機能の更新](https://aka.ms/mdd6)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[手順 6: OS の展開と機能の更新](https://aka.ms/mdd6)

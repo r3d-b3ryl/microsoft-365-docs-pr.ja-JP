@@ -14,17 +14,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
-ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
+ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068798"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626303"
 ---
 # <a name="view-the-data-governance-reports"></a>データ ガバナンスのレポートを表示する
 
-ラベルを作成したら、意図したとおりにコンテンツに適用されていることを確認する必要があります。Office 365 セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、以下の項目を簡単に表示できます。
+ラベルを作成したら、意図したとおりにコンテンツに適用されていることを確認する必要があります。セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、以下の項目を簡単に表示できます。
   
 - **上位 5 つのラベル**: このレポートには、コンテンツに適用された上位 5 つのラベルの数が表示されます。このレポートをクリックして、最近コンテンツに適用されたすべてのラベルのリストを表示します。各ラベルの数、位置、適用方法、保存アクション、レコードであるかどうか、処分タイプを確認できます。 
     

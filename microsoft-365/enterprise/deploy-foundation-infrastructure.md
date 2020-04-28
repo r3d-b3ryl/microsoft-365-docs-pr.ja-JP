@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise 基盤インフラストラクチャを組織に展開するための主要なフェーズ (コア展開とも呼ばれます) について理解します。
-ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 287afd5e5f75bb6547e1898877f3d1c65ebfb9a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153846"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638250"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise 基盤インフラストラクチャ
 
@@ -33,9 +33,9 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 |![フェーズ 1: ネットワーク](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[フェーズ 1: ネットワーク](networking-infrastructure.md)| ネットワークは、Microsoft 365 のクラウドベースのサービスへのアクセスに最適化されます。 |
 |![フェーズ 2: ID](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[フェーズ 2: ID](identity-infrastructure.md)| 管理者アカウントの保護と、ユーザーおよびグループの同期が行われ、強固なセキュリティによるユーザー認証が実現します。 |
 |![フェーズ 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[フェーズ 3: Windows 10 Enterprise](windows10-infrastructure.md)| 既存の Windows ベースのコンピューターは Windows 10 Enterprise にアップグレードすることができ、新しいデバイスは Windows 10 Enterprise と共にインストールされます。 |
-|![フェーズ 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Microsoft Office の既存のユーザーは Office 365 ProPlus にアップグレードすることができます。 |
+|![フェーズ 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[フェーズ 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)| Microsoft Office を使用している既存のユーザーは、Microsoft 365 Apps for enterprise にアップグレードできます。 |
 |![フェーズ 5: モバイル デバイス管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[フェーズ 5: モバイル デバイス管理](mobility-infrastructure.md)| デバイスを登録し、管理することができます。 |
-|![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[フェーズ 6: 情報保護](infoprotect-infrastructure.md)| Office 365 のセキュリティ機能が有効になると、ラベルとポリシーを使用して、ドキュメントとメールを保護する準備が整います。 |
+|![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[フェーズ 6: 情報保護](infoprotect-infrastructure.md)| Microsoft 365 のセキュリティ機能が有効になると、ラベルとポリシーを使用して、ドキュメントとメールを保護する準備が整います。 |
 
 フェーズは最も基本的なもの (ネットワークと ID) から始めます。その後に、インフラストラクチャの設定とグループのレイヤーを作成し以下を実施します。
 
@@ -88,23 +88,23 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 | フェーズ | 結果 |
 |:-------|:-----|
-| Identity | アカウント同期と ID ベースの条件付きアクセス ポリシーのグループ。 |
+| ID | アカウント同期と ID ベースの条件付きアクセス ポリシーのグループ。 |
 | Windows 10 Enterprise | Windows 7 または Windows 8.1 を実行しているコンピューターを Windows 10 Enterprise に自動的にアップグレードするためのグループ。 |
-| Office 365 ProPlus | Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Office 365 ProPlus を自動的に展開するためのグループ。 |
+| Microsoft 365 Apps for enterprise | Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Microsoft 365 Apps for enterprise を自動的に展開するためのグループ。 |
 | モバイル デバイス管理 | デバイス登録とデバイス ベースの条件付きアクセス ポリシーのグループ。 |
-| 情報保護 | Office 365 の機密ラベルのグループ。 |
+| 情報保護 | 機密度ラベルのグループ。 |
 
 基礎インフラストラクチャの要素をユーザーにロールアウトする準備ができたら、以下を実施します。
 
 | フェーズ | ロールアウト アクション |
 |:-------|:-----|
-| Identity | ID ベースの条件付きアクセス ポリシーのグループにユーザー アカウントを追加します。 |
+| ID | ID ベースの条件付きアクセス ポリシーのグループにユーザー アカウントを追加します。 |
 | Windows 10 Enterprise | グループにアカウントを追加して、Windows 7 または Windows 8.1 を使用しているユーザーに Windows 10 Enterprise を自動的に展開します。 |
-| Office 365 ProPlus | ユーザー アカウントをグループに追加して、Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Office 365 ProPlus を自動的に展開します。 |
+| Microsoft 365 Apps for enterprise | ユーザー アカウントをグループに追加すると、Office 2010、Office 2013、または Office 2016 を使用しているユーザーに Microsoft 365 Apps for enterprise が自動的に展開されます。 |
 | モバイル デバイス管理 | デバイス登録とデバイス ベースの条件付きアクセス ポリシーのグループにアカウントを追加します。 |
 | 情報保護 | 機密ラベルのグループにユーザー アカウントを追加します。 |
 
-基礎インフラストラクチャのフェーズと要素が完成し、テストおよび試験運用が行われると、ユーザーのビジネス目標と IT リソースに最も適した方法で、Windows 10 Enterprise および Office 365 ProPlus などのインストール済みソフトウェアと、デバイス登録および条件付きアクセス ポリシーなどのクラウドベースのサービスと保護をロールアウトすることができます。
+基礎インフラストラクチャのフェーズと要素が完成し、テストおよび試験運用が行われると、ユーザーのビジネス目標と IT リソースに最も適した方法で、Windows 10 Enterprise および Microsoft 365 Apps for enterprise などのインストール済みソフトウェアと、デバイス登録および条件付きアクセス ポリシーなどのクラウドベースのサービスと保護をロールアウトすることができます。
 
 ## <a name="deployment-and-project-management-strategies"></a>展開およびプロジェクト管理の戦略
 
@@ -112,7 +112,7 @@ Microsoft 365 Enterprise のエンド ツー エンドの展開を自分で行�
 
 ## <a name="deployment-for-non-enterprises"></a>非エンタープライズの展開
 
-組織の規模が小さく、Microsoft 365 Business が適していない場合は、「[非エンタープライズの展開](deploy-foundation-infrastructure-non-enterprises.md)」に記載されている簡略化された展開方法を参照してください。
+組織の規模が小さく、Microsoft 365 for business が適していない場合は、「[非エンタープライズの展開](deploy-foundation-infrastructure-non-enterprises.md)」に記載されている簡略化された展開方法を参照してください。
 
 
 ## <a name="next-step"></a>次の手順

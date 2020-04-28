@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225910"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633432"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
 ## <a name="soc-1-2-and-3-reports-overview"></a>SOC 1、2、3 報告書の概要
 
-データ ストレージ、アプリケーションへのアクセスなど、基本的な機能をクラウド サービス プロバイダー (CSP) やその他のサービス組織にアウトソースするビジネスが増えています。 これを受けて、米国公認会計士協会 (American Institute of Certified Public Accountants: AICPA) は、クラウドで保存および処理される情報の機密性とプライバシーを保護する制御基準である Service Organization Controls (SOC) フレームワークを策定しました。 このフレームワークは、国際サービス組織の報告書作成基準である国際保証業務基準 (International Standard on Assurance Engagements: ISAE) に合致するものです。
+データ ストレージ、アプリケーションへのアクセスなど、基本的な機能をクラウド サービス プロバイダー (CSP) やその他のサービス組織にアウトソースするビジネスが増えています。 これを受けて、米国公認会計士協会 (American Institute of Certified Public Accountants: AICPA) は、クラウドで保存および処理される情報の機密性とプライバシーを保護する制御基準である Service Organization Controls (SOC) フレームワークを策定しました。 これは、国際サービス組織の報告書作成基準である 国際保証業務基準 (International Standard on Assurance Engagements: ISAE) に合致するものです。
 
-SOC フレームワークに基づくサービス監査は、SOC 1 と SOC 2 のいずれかのカテゴリに分類され、対象となる Microsoft クラウド サービスに適用されます。
+SOC フレームワークに基づくサービス監査は、SOC 1 と SOC 2 の 2 つに分類され、対象となる Microsoft クラウド サービスに適用されます。
 
 SOC 1 監査は、財務諸表を監査する公認会計士事務所を対象としており、プロバイダーのクラウド サービスを使用している顧客の財務報告に影響する、CSP の内部コントロールの有効性を評価します。 監査は保証業務基準書 (SSAE 18) および国際保証業務基準書第  3402 号 (ISAE 3402) を基準として実施され、これを基に SOC 1 報告書が作成されます。
 
@@ -99,7 +99,7 @@ Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 
 - [Office 365 Core - SSAE 18 SOC 2 報告書](https://aka.ms/o365SOC-2)
 - [Office 365 Core - SSAE 18 SOC 3 報告書](https://aka.ms/o365SOC-3)
 - [Office 365 Microservices T1 – SSAE 18 SOC2 Type I 報告書](https://aka.ms/o365-MS-SOC-2-type1)
-- [Office 365 Customer Lockbox SOC 1 SSAE 16 監査報告書](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [顧客ロックボックス SOC 1 SSAE 16 監査報告書](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Yammer SOC 2 AT 101 Type I 監査報告書](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Yammer SOC 2 Type II 報告書](https://aka.ms/yammerSOC-2)
 - [ブリッジ レターおよびその他の監査報告書を参照する](https://aka.ms/auditreports)
@@ -115,7 +115,7 @@ Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 
 
 **Azure SOC 報告書が発行される頻度はどれくらいですか?**
 
-Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、半年ごとに新たな報告書が発行されます (期間は 3 月 31 日と 9 月 30 日に終了)。 ブリッジ レターは四半期ごとに発行され、通常は四半期末の翌月第 1 週に発行されます。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
+Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、半年ごとに新たな報告書が発行されます (期間は 3 月 31 日と 9 月 30 日に終了)。 ブリッジ レターは、1 月に発行されて 10/1- 12/31 の期間をカバーし、7 月に発行されて 4/1 - 6/30の期間をカバーします。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
 
 **Microsoft データセンターの監査は、自分自身で実施する必要がありますか?**
 

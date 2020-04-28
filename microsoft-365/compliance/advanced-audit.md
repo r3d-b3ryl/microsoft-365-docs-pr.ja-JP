@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634545"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632282"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -65,7 +65,7 @@ MailItemsAccessed アクティビティの監査レコードの詳細につい�
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>MailItemsAccessed 監査レコードを検索する
 
-MailItemsAccessed 監査レコードを検索するには、Office 365 セキュリティ/コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md) の **Exchange メールボックス アクティビティ** ドロップダウン リストで **メールボックス アイテムへのアクセス** アクティビティを検索できます。
+MailItemsAccessed 監査レコードを検索するには、Microsoft 365 セキュリティ/コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md) の **Exchange メールボックス アクティビティ** ドロップダウン リストで **メールボックス アイテムへのアクセス** アクティビティを検索できます。
 
 ![監査ログ検索ツールで MailItemsAccessed アクションを検索する](../media/MailItemsAccessedSCC1.png)
 
@@ -85,7 +85,7 @@ Office 365 管理アクティビティ API を使用して監査ログにアク�
 
 **高度な監査にはどこからアクセスできますか ?**
 
-高度な監査が組織に展開された後、監査ログ保持ポリシーを作成し、[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com) の監査ログ検索ツールを使用して MailItemsAccessed 監査レコードを検索できます。 今後数週間以内に、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) に高度な監査を展開するよう取り組んでいます。
+高度な監査が組織に展開された後、監査ログ保持ポリシーを作成し、[セキュリティ/コンプライアンス センター](https://protection.office.com)の監査ログ検索ツールを使用して MailItemsAccessed 監査レコードを検索できます。 今後数週間以内に、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) に高度な監査を展開するよう取り組んでいます。
 
 **高度な監査を利用するには、すべてのユーザーに E5 ライセンスが必要ですか ?**
 
