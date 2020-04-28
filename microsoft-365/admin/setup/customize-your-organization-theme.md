@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Microsoft 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
-ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 06b247da1a8ac1f330f2ad36c8b29897963819f3
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627608"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900776"
 ---
-# <a name="customize-the-theme-for-your-organization"></a>組織のテーマをカスタマイズする
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織の Microsoft 365 テーマをカスタマイズする
 
 Microsoft 365 管理センターでテーマをカスタマイズする方法について説明します。 Microsoft 365 for business サブスクリプションの管理者は、組織内のすべてのユーザーについて、トップナビゲーションバーに表示される既定のテーマを変更することができます。 会社のロゴを追加して、ブランドの他の部分と一致するように色を変更することができます。 ユーザーがロゴを選択したときに移動するための宛先リンクを追加することもできます。 Microsoft 365 では、既定のテーマとカスタムテーマの結果が表示されます。
   
@@ -64,7 +64,7 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
     
 4. [**変更の保存**] を選択します。
     
-管理センターに新しいテーマがすぐに表示されます。しばらくすると、Outlook、SharePoint、 [iOS 用の sharepoint モバイルアプリ](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)、および[sharepoint Mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)のページを含む、Microsoft 365 全体に表示されます。 カスタマイズされたテーマが管理センターから変更された例については、次の図を参照してください。
+管理センターに新しいテーマがすぐに表示されます。しばらくすると、Outlook、SharePoint、 [iOS 用の sharepoint モバイルアプリ](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)、および[sharepoint Mobile app for Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)のページを含む、Microsoft 365 全体に表示されます。 管理センターからテーマの変更をカスタマイズできる例については、次の画像を参照してください。
 
 ![m365-テーマ-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -72,7 +72,7 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
   
 ## <a name="best-practices"></a>ベスト プラクティス
 
-**ロゴ画像**を選択する場合は、可能な限り SVG ファイルの種類を使用することをお勧めします。これにより、すべての画面とすべてのズームレベルでロゴの高解像度が表示されます。
+**ロゴ画像**を選択する場合は、SVG ファイルの種類を使用することをお勧めします。これにより、ロゴはすべての画面とすべてのズームレベルで高解像度に表示されます。
 
 [ユーザー設定の色] を選択するときは、選択した**ロゴの画像**と比較してハイコントラスト比率の**ナビゲーションバーの背景色**を選択します。 また、**ナビゲーションバーの背景色**にハイコントラスト比率が設定された**テキストとアイコン**の色を選択し、すべてのテキストとアイコンが簡単に表示されるようにします。
 
@@ -99,4 +99,3 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
 [カスタム タイルをアプリ起動ツールに追加する](../manage/customize-the-app-launcher.md)
   
   
-

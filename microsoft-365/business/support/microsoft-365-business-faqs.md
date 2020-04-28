@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: e456719d393dc911a6f28455e530c90e8ab9ff5a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 2ace43e0a3bab466d102740434b2a126fb8e099d
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635086"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900692"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 Business Premium に関するよく寄せられる質問
 
@@ -48,7 +48,7 @@ Microsoft 365 は、小規模から中規模企業向けの、クラス最高の
 * Windows AutoPilot による PC のスムーズな展開。
 
 **その他の資格** 
-- Microsoft 365 Business Premium のお客様は、Windows Virtual Desktop およびOffice 共有コンピューターのライセンス認証機能にもアクセスできます。 詳細については、[「Microsoft 365 Business Premium のブログ」](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) を参照してください。 また、こちら [「Microsoft 365 for busines のサービスの説明」](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)もご覧下さい。
+- Microsoft 365 Business Premium のお客様は、Windows Virtual Desktop およびOffice 共有コンピューターのライセンス認証機能にもアクセスできます。 詳細については、[「Microsoft 365 Business Premium のブログ」](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) を参照してください。 [Microsoft 365 for business サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)も参照してください。
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の採用を検討する必要がある対象ユーザーはだれですか。 
 Microsoft 365 Business Premium は、次のような機能を備えた包括的なクラウドベースのセキュリティ ソリューションです。  
@@ -85,7 +85,7 @@ Windows 10 でも、既存のデスクトップ (Win32) アプリケーション
 ### <a name="what-is-windows-10-business"></a>Windows 10 Business とは何ですか。 
 Windows 10 Business は、Windows 10 Pro を補完するクラウド サービスとデバイス管理機能のセットであり、Microsoft 365 Business Premium の集中管理とセキュリティ制御を有効にします。
 
-Windows 10 Business には、制御されたフォルダーアクセスや Web ベースのスレッドのネットワーク保護など、特定のプレミアム Microsoft Defender 機能も付属しています。 また、新しい Windows 10 PC の展開を効率化するサービスのWindows AutoPilot も付属しています。
+Windows 10 Business には、管理されたフォルダーアクセスや、web ベースの脅威に対するネットワーク保護など、特定のプレミアム Microsoft Defender 機能も付属しています。 また、新しい Windows 10 PC の展開を効率化するサービスのWindows AutoPilot も付属しています。
 
 Windows 7、8、8.1 Professional のライセンスがあるデバイスを使用している場合、Microsoft 365 Business Premium は、Windows 10 Business を展開するための前提条件である Windows 10 Pro へのアップグレードを提供します。
 > [!IMPORTANT]
