@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の情報保護インフラストラクチャの展開手順。
-ms.openlocfilehash: 418506927885948cd917061d99bb69163b1e44a5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067145"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631623"
 ---
 # <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
 
@@ -44,7 +44,7 @@ ms.locfileid: "42067145"
 |![手順 2](../media/stepnumbers/Step2.png)|[環境のデータ分類を構成する](infoprotect-configure-classification.md)|
 |![手順 3](../media/stepnumbers/Step3.png)|[Microsoft 365 のセキュリティ強化を構成する](infoprotect-configure-increased-security-office-365.md)|
 |![手順 4](../media/stepnumbers/Step4.png)|[Windows 情報保護を構成する](infoprotect-deploy-windows-information-protection.md)|
-|![手順 5](../media/stepnumbers/Step5.png)|[Office 365 データ損失防止を構成する](infoprotect-data-loss-prevention.md)|
+|![手順 5](../media/stepnumbers/Step5.png)|[データ損失防止 (DLP) を構成する](infoprotect-data-loss-prevention.md)|
 |![手順 6](../media/stepnumbers/Step6.png)|[電子メールの暗号化を構成する](infoprotect-email-encryption.md)|
 |![手順 7](../media/stepnumbers/Step7.png)|[Office 365 の特権アクセス管理を構成する](infoprotect-configure-privileged-access-management.md)|
 |||

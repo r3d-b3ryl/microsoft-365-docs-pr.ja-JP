@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Office および LOB アプリの配信方法について説明します。
-ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085340"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636798"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>手順 3: Office および LOB アプリの配信
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085340"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>手順 3: Office および LOB アプリの配信</strong></p>
-<p>目的のアプリがパッケージ化されていて、自動インストールの準備が整っていることを確認してください。Office 365 ProPlus のクイック実行パッケージが、Office アプリケーションの構成、配信および最新状態の維持のための新しいオプションをどのように提供するかについて説明します。</p></td>
+<p>目的のアプリがパッケージ化されていて、自動インストールの準備が整っていることを確認してください。Microsoft 365 Apps for enterprise のクイック実行パッケージが、Office アプリケーションの構成、配信および最新状態の維持のための新しいオプションをどのように提供するかについて説明します。</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,7 +39,7 @@ ms.locfileid: "42085340"
 >Office および LOB アプリの配信は、推奨される展開プロセスの輪における 3 番目の手順であり、Office と LOB をインストールおよび管理するためのオプションもこの手順に含まれます。 展開を正常に行うために、最初の 2 つの手順は必ず実施する必要があります。  デスクトップ展開プロセス全体を確認するには、「[デスクトップ展開センター](https://aka.ms/HowToShift)」を参照してください。
 >
 
-この時点で、Office および基幹業務アプリを配信する準備は整っています。そのための方法はいくつかありますが、その中には優れた新しいオプションが含まれています。 一部のアプリケーションは 32 ビットまたは 64 ビットのどちらかでコンパイルされたバージョンとしてのみの使用となりますが、それ以外の Office 365 ProPlus などのアプリケーションは 32 ビットおよび 64 ビットでネイティブにコンパイル済みのコードとして使用できるため、展開するバージョンを決めることがとても重要になります。 新しいデバイスで追加の計算能力と RAM を活用するには、32 ビットの依存関係がない場合は 64 ビット バージョンを使用することをお勧めします。 アドインやファイルに関連する互換性の問題を特定するには、先に進む前に「手順 1: デバイスとアプリの準備」を再度確認するようにしてください。
+この時点で、Office および基幹業務アプリを配信する準備は整っています。そのための方法はいくつかありますが、その中には優れた新しいオプションが含まれています。 一部のアプリケーションは 32 ビットまたは 64 ビットのどちらかでコンパイルされたバージョンのみを使用できますが、それ以外の Microsoft 365 Apps for enterprise などのアプリケーションでは 32 ビットおよび 64 ビット ネイティブの両方のコンパイル済みコードが使用できるため、展開するバージョンを決めることがとても重要になります。 新しいデバイスで追加の計算能力と RAM を活用するには、32 ビットの依存関係がない場合は 64 ビット バージョンを使用することをお勧めします。 アドインやファイルに関連する互換性の問題を特定するには、先に進む前に「手順 1: デバイスとアプリの準備」を再度確認するようにしてください。
 
 障害になるものがない場合は、Microsoft Office を含めてすべてのアプリの 64 ビット バージョンを展開することをお勧めします。64 ビット ネイティブでコンパイルされたアプリは、最高のパフォーマンスを発揮する、最も将来性のある選択になります。
 
@@ -57,19 +57,19 @@ Microsoft Endpoint Configuration Manager や Microsoft Intune などのソフト
 
 ## <a name="pc-imaging"></a>PC のイメージング
 
-もう 1 つの一般的なアプリの配信方法は、PC のイメージングです。 この場合、タスク シーケンスまたは手動のどちらかでサンプル PC にアプリケーションをインストールし、必要なアプリケーションがプレインストールされた状態のシステム イメージをキャプチャします。 ビルドとキャプチャのためのイメージングは、新しい PC のプロビジョニング時に時間を節約することができますが、そのイメージ内のオペレーティング システムとアプリはすぐに古いものになってしまいます。 Windows 10 および Office 365 ProPlus の累積的な更新プログラム モデルでこの問題に対処することはできますが、完全に解決することはできません。 そのため、展開時にアプリケーションをイメージの外側からインストールする thin イメージのアプローチをお勧めします。
+もう 1 つの一般的なアプリの配信方法は、PC のイメージングです。 この場合、タスク シーケンスまたは手動のどちらかでサンプル PC にアプリケーションをインストールし、必要なアプリケーションがプレインストールされた状態のシステム イメージをキャプチャします。 ビルドとキャプチャのためのイメージングは、新しい PC のプロビジョニング時に時間を節約することができますが、そのイメージ内のオペレーティング システムとアプリはすぐに古いものになってしまいます。 Windows 10 および Microsoft 365 Apps for enterprise の累積的な更新プログラム モデルでこの問題に対処することはできますが、完全に解決することはできません。 そのため、展開時にアプリケーションをイメージの外側からインストールする thin イメージのアプローチをお勧めします。
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
-イメージに Office 365 ProPlus を含める必要がある場合は、ユーザー ベースのライセンス認証を使用することになります。システム管理者が事前にライセンス認証することはできません。Office 展開ツールを使用して、イメージングするデバイスに Office をプレインストールして、ユーザー サインインをスキップします。 イメージが展開されれば、エンドユーザーは自分の Office 365 の資格情報でサインインし、Office 365 ProPlus をアクティブ化することができます。
+イメージに Microsoft 365 Apps for enterprise を含める必要がある場合は、ユーザー ベースのライセンス認証を使用することになります。システム管理者が事前にライセンス認証することはできません。Office 展開ツールを使用して、イメージングするデバイスに Office をプレインストールして、ユーザー サインインをスキップします。 イメージが展開されたら、エンド ユーザーは自分の資格情報を使用してサインインし、Microsoft 365 Apps for enterprise をアクティブ化することができます。
 
 [オペレーティング システムをインストールするタスク シーケンスの作成](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[オペレーティング システム イメージの一部としての Office 365 ProPlus の展開](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[オペレーティング システム イメージの一部としての Microsoft 365 Apps for enterprise の展開](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office クイック実行 
 
-Office 365 ProPlus はクイック実行を使用してインストールします。今後リリースされる Windows の Office 2019 リリースのすべてのバージョンでは、MSI ベースのパッケージではなくクイック実行になります。 クイック実行には、より速いインストール、より速くて効率的な更新、アンインストールの円滑な実行などの多くの利点があります。 
+Microsoft 365 Apps for enterprise はクイック実行を使用してインストールします。今後リリースされる Windows の Office 2019 リリースのすべてのバージョンでは、MSI ベースのパッケージではなくクイック実行になります。 クイック実行には、より速いインストール、より速くて効率的な更新、アンインストールの円滑な実行などの多くの利点があります。 
 
 クイック実行によって配信されたプログラムは、コンピューター上の仮想アプリケーション環境で実行されるため、競合することなく他のアプリケーションと共存することができます。使用するディスク領域は、MSI ベースのパッケージの約半分のみとなります。 Office アプリケーションの配信および管理は、Office アプリのダウンロード、構成、カスタマイズに必要な Office セットアップ エンジンである[Office 展開ツール](https://www.microsoft.com/download/details.aspx?id=49117)で行います。 Office 展開ツールは、Office インストールの構成およびカスタマイズの方法に関するメタデータの処理手順を提供する構成 XML ファイルを読み取ります。
 
@@ -77,15 +77,15 @@ Microsoft では、展開の設定をカスタマイズして構成 XML ファ�
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Configuration Manager は、引き続き Office 365 ProPlus の広範囲の展開に使用できます。Configuration Manager (Current Branch) には、最新版 Office カスタマイズ ツールのネイティブ サポート、インストール時のクイック実行に対応するパッケージのカスタマイズ、およびインストール後のソフトウェア更新管理のネイティブ サポートがあります。
+Configuration Manager は、引き続き Microsoft 365 Apps for enterprise の広範囲の展開に使用できます。Configuration Manager (Current Branch) には、最新版 Office カスタマイズ ツールのネイティブ サポート、インストール時のクイック実行に対応するパッケージのカスタマイズ、およびインストール後のソフトウェア更新管理のネイティブ サポートがあります。
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Office 365 ProPlus の展開ガイド](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 Apps for enterprise の展開ガイド](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Office 365 ProPlus にアップグレードする際に Office の既存の MSI バージョンを削除する](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Microsoft 365 Apps for enterprise にアップグレードする際に Office の既存の MSI バージョンを削除する](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Configuration Manager を使用して Microsoft 365 Apps for enterprise を管理する](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -115,8 +115,8 @@ MSIX の詳細については、「[MSIX 技術コミュニティ サイト](htt
 
 ## <a name="next-step"></a>次の手順
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[手順 4: ユーザーのファイルと設定](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[手順 4: ユーザーのファイルと設定](https://aka.ms/mdd4)
 
 ## <a name="previous-step"></a>前の手順
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[手順 2: ディレクトリとネットワークの準備](https://aka.ms/mdd2) 
+## <a name="step-2-directory-and-network-readiness"></a>[手順 2: ディレクトリとネットワークの準備](https://aka.ms/mdd2) 

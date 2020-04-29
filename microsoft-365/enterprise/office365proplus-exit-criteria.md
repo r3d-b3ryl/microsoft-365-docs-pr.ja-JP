@@ -1,5 +1,5 @@
 ---
-title: Office 365 ProPlus の展開の終了条件
+title: Microsoft 365 Apps for enterprise の展開の終了条件
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,51 +14,51 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 構成が、Office 365 ProPlus インフラストラクチャの Microsoft 365 Enterprise の終了条件を満たしていることを確認します。
-ms.openlocfilehash: 2f19de8c40c95f27e3b7578d384db39d5feb57e0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 構成が、Microsoft 365 Apps for enterprise インフラストラクチャの Microsoft 365 Enterprise 条件を満たしていることを確認します。
+ms.openlocfilehash: 4616c86f516dc5fb17fe43e98ca9b60028299e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066490"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631443"
 ---
-# <a name="office-365-proplus-deployment-exit-criteria"></a>Office 365 ProPlus の展開の終了条件
+# <a name="microsoft-365-apps-for-enterprise-deployment-exit-criteria"></a>Microsoft 365 Apps for enterprise の展開の終了条件
 
-![フェーズ 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![フェーズ 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *これは Microsoft 365 Enterprise および Microsoft 365 Education のバージョン E3 および E5 に適用されます。*
 
-構成が、Office 365 ProPlus インフラストラクチャの次の必要条件を満たしていることを確認します。
+構成が、Microsoft 365 Apps for enterprise インフラストラクチャの次の必要条件を満たしていることを確認します。
 
 - インフラストラクチャと環境の評価が完了している。これには次のものが含まれる。
 
     - クライアント デバイスの詳細
     - 展開ツール
-    - Office 365 のライセンスとアカウント
+    - Microsoft 365 のライセンスとアカウント
     - ネットワーク容量
     - アプリケーションの互換性
 
 - 展開計画が完了している。これには次のものが含まれる。
 
-    - Office 365 ProPlus の展開方法
-    - Office 365 ProPlus の更新の管理方法
+    - Microsoft 365 Apps for enterprise を展開する方法
+    - Microsoft 365 Apps for enterprise の更新プログラムを管理する方法
     - ネットワーク上のローカル ソースとクラウドのいずれから展開およびインストールを実行するか
     - どのクライアント デバイスにどの更新チャネルを割り当てるか
     - インストール パッケージが定義されている
     - 展開グループにすべてのクライアント デバイスが割り当てられている
     - どの Office アプリケーション、アーキテクチャ、言語がどのクライアント デバイスにインストールされるか
 
-- Office 365 ProPlus の展開が完了している。これには次のものが含まれる。
+- Microsoft 365 Apps for enterprise の展開が完了している。これには次のものが含まれる。
 
-    - すべてのクライアント デバイスに Office 365 ProPlus がインストールされている
+    - すべてのクライアント デバイスに、Microsoft 365 Apps for enterprise がインストールされている
     - すべてのクライアント デバイスが適切な更新チャネルにあり、更新プログラムを受信している
     - すべてのクライアント デバイスに適切な言語がインストールされているか、適切な言語が使用可能である
 
 
 
-## <a name="results-and-next-steps"></a>結果と次のステップ
+## <a name="results-and-next-steps"></a>結果と次の手順
 
-クライアント デバイスに最新バージョンの Office 365 ProPlus がインストールされ、継続的な更新プログラムを受け取るようになりました。
+クライアント デバイスに最新バージョンの Microsoft 365 Apps for enterprise がインストールされ、継続的な更新プログラムを受け取るようになりました。
 
 |||
 |:-------|:-----|

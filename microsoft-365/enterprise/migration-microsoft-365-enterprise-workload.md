@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 9fd35e4595b19d5ddd3db0f64ea7dedf303d6818
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504055"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631539"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -25,7 +25,7 @@ ms.locfileid: "43504055"
 
 製品の Microsoft 365 Enterprise の統合スイートのビジネス価値を最大化するには、次のソフトウェアのリリースを移行するための戦略を計画および導入してください。
 
-- コンピューターにインストールされている Office クライアントから Office 365 ProPlus
+- お使いのコンピューターにインストールされている Office クライアントから、Microsoft 365 Apps for enterprise
 - サーバーにインストールされている Office サーバーから Office 365 の同等のサービス
 - デバイス上の Windows 7 および Windows 8.1 から Windows 10 Enterprise
 
@@ -49,7 +49,7 @@ ms.locfileid: "43504055"
 - Microsoft クラウド テクノロジを活用しビジネスをデジタルに変換するうえで、最適ではありません。
 - 新機能は含まれません。
  
-Microsoft 365 Enterprise には、Microsoft 365 Enterprise ライセンスで利用でき、Microsoft クラウドからインストールおよび更新される Office クライアント製品のバージョンである Office 365 ProPlus が含まれています。 Office 365 ProPlus には、セキュリティ更新プログラムと最新機能が含まれています。 詳細については、「[エンタープライズでの Office 365 ProPlus について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)」を参照してください。
+Microsoft 365 Enterprise には、Microsoft 365 Enterprise ライセンスで利用でき、Microsoft クラウドからインストールおよび更新される Office クライアント製品のバージョンである Microsoft 365 Apps for enterprise が含まれています。 Microsoft 365 Apps for enterprise には、セキュリティ更新プログラムおよび最新機能が含まれます。 詳細については、[企業向けの Microsoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)を参照してください。
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -59,9 +59,9 @@ Office 2007 を実行しているコンピューターを Office 2010、Office 2
 
 1. ユーザー用に Microsoft 365 ライセンスを取得して割り当てる。
 2. ユーザーのコンピューターから Office 2007 をアンインストールする。
-3. Office 365 ProPlus を個別にまたは IT ロールアウトと合わせてインストールする。詳細については、「[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)」を参照してください。
+3. Microsoft 365 Apps for enterprise を個別に、または IT ロールアウトと一緒にインストールする。 詳細については、「[フェーズ 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)」を参照してください。
 
-Office 365 ProPlus は更新プログラムを自動的にインストールし、Office 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
+Microsoft 365 Apps for enterprise は更新プログラムを自動的にインストールし、クラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
 
 ### <a name="office-2010"></a>Office 2010
 
@@ -71,9 +71,9 @@ Office 2010 を実行しているコンピューターを Office 2013 または 
 
 1. ユーザー用に Microsoft 365 ライセンスを取得して割り当てる。
 2. ユーザーのコンピューターから Office 2010 をアンインストールする。
-3. Office 365 ProPlus を個別にまたは IT ロールアウトと合わせてインストールする。詳細については、「[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)」を参照してください。
+3. Microsoft 365 Apps for enterprise を個別に、または IT ロールアウトと一緒にインストールする。 詳細については、「[フェーズ 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)」を参照してください。
 
-Office 365 ProPlus はセキュリティと新機能の両方の更新プログラムを自動的にインストールし、Microsoft 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
+Microsoft 365 Apps for enterprise はセキュリティと新機能の両方の更新プログラムを自動的にインストールし、Microsoft 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 および Office 2016
 
@@ -83,9 +83,9 @@ Office 2013 または Office 2016 の最新のセキュリティ更新プログ�
 
 1. ユーザー用に Microsoft 365 ライセンスを取得して割り当てる。
 2. ユーザーのコンピューターから Office 2013 または Office 2016 をアンインストールする。
-3. Office 365 ProPlus を個別にまたは IT ロールアウトと合わせてインストールする。詳細については、「[フェーズ 4: Office 365 ProPlus](office365proplus-infrastructure.md)」を参照してください。
+3. Microsoft 365 Apps for enterprise を個別に、または IT ロールアウトと一緒にインストールする。 詳細については、「[フェーズ 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)」を参照してください。
 
-Office 365 ProPlus はセキュリティと新機能の両方の更新プログラムを自動的にインストールし、Microsoft 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
+Microsoft 365 Apps for enterprise はセキュリティと新機能の両方の更新プログラムを自動的にインストールし、Microsoft 365 のクラウドベースのサービスを活用して強化されたセキュリティと生産性を実現できます。
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Microsoft Office サーバー製品の移行
 
@@ -162,7 +162,7 @@ Windows 7 は、**2020 年 1 月 14 日**にサポート終了になりました
 
 Microsoft の IT 担当者がどのように会社のデータを Microsoft 365 Enterprise に移行しているかについては、以下のリソースで確認することができます。 
 
-- [Microsoft Office 365 ProPlus の展開と更新](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Microsoft Microsoft 365 Apps for enterprise の展開と更新](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft では 150,000 のメールボックスを Exchange Online に移行](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint からクラウドへ: Microsoft が実施した移行方法](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Microsoft における、Windows 10 のインプレース アップグレードとしての展開方法](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)

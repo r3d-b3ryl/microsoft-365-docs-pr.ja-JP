@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 組織全体で SharePoint を計画、ロールアウトするプロセス、および SharePoint Online の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "39886324"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636918"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>SharePoint と OneDrive を Microsoft 365 Enterprise 向けに展開する
 
@@ -93,8 +93,8 @@ SharePoint サイトへのアクセスを保護するには、[ID とデバイ�
 
 SharePoint でのセキュリティの詳細については、次のリソースを参照してください。
 
--   [SharePoint と OneDrive がクラウド内のデータを保護する方法](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [OneDrive および SharePoint におけるデータ暗号化](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [SharePoint と OneDrive がクラウド内のデータを保護する方法](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [OneDrive および SharePoint におけるデータ暗号化](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>結果
 
@@ -155,8 +155,8 @@ IT パイロットの完了後に、SharePoint を組織内のビジネス グ�
 
 推奨されるアクティビティの一部をいくつか紹介します。
 
-- 「[Office 365 の成功要因](https://aka.ms/successfactors)」を参照して、クラウド サービス導入の一般的なベスト プラクティスを理解します。 
-- 「[Office 365 アクティビティ レポート](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)」を参照して、組織全体での Office 365 サービスの使用について理解します。組織の Office 365 全体管理者ではない場合は、ユーザー アカウントに Reports Reader 権限を付与できるグローバル管理者に権限の付与を依頼し、アクティビティ レポートにアクセスできるようにしてください。
+- 「[Microsoft 365 の成功要因](https://aka.ms/successfactors)」を参照して、クラウド サービス導入の一般的なベスト プラクティスを理解します。 
+- 「[管理センターの Microsoft 365 レポート](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)」を参照して、組織全体でのサービスの使用について理解します。組織のグローバル管理者ではない場合は、ユーザー アカウントに Reports Reader 権限を付与できるグローバル管理者に権限の付与を依頼し、アクティビティ レポートにアクセスできるようにしてください。
 - フィードバック会場 (セントラル Teams チームまたは Yammer のパブリック チャネル) に SharePoint での体験について、ユーザーからの問題とフィードバックがないことを確認します。 ユーザーの不満を防ぎ、展開のサポートを実施できるように、質問と問題にすばやく対処します。
 - SharePoint を使用している場合は、各ビジネス グループの優秀者を特定、育成し、その業績やベスト プラクティスを強く示します。 組織に彼らの成果を反映させて、プロジェクトの成功と導入を示します。 ビジネス グループの技術リーダーによる推奨は、リーダーと仲間に大きく影響します。
 

@@ -1,5 +1,5 @@
 ---
-title: 侵害された Office 365 電子メール アカウントへの対応
+title: 侵害された電子メール アカウントへの対応
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,25 +15,25 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 侵害された Office 365 電子メール アカウントを認識して対処する方法について説明します
-ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: 侵害された Microsoft 365 電子メール アカウントを認識して対処する方法について説明します
+ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372485"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634342"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントへの対応
+# <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
-**概要** 侵害された Office 365 電子メール アカウントを認識して対処する方法について説明します。
+**概要** 侵害された Microsoft 365 電子メール アカウントを認識して対処する方法について説明します。
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントとは何か?
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>侵害された Microsoft 365 電子メール アカウントとは何か?
 
-Office 365 のメールボックス、データ、およびその他のサービスへのアクセスは、ユーザー名とパスワードや暗証番号 (PIN) などの資格情報を使用して制御されます。意図したユーザー以外の何者かがこれらの資格情報を盗んだ場合、盗まれた資格情報は侵害されたと見なされます。攻撃者は盗んだ資格情報を使用して、正規のユーザーとしてサインインし、不正な操作を行うことができます。また、攻撃者は盗んだ資格情報を使用して、ユーザーの Office 365 メールボックス、SharePoint フォルダー、または OneDrive 内のファイルにアクセスできます。よく見られるのは、組織の内外の受信者に正規のユーザーとして電子メールを送り付ける攻撃者です。データが攻撃者によって外部の受信者に電子メールで送信される事象をデータ流出と言います。
+Microsoft 365 のメールボックス、データ、およびその他のサービスへのアクセスは、ユーザー名とパスワードや暗証番号 (PIN) などの資格情報を使用して制御されます。意図したユーザー以外の何者かがこれらの資格情報を盗んだ場合、盗まれた資格情報は侵害されたと見なされます。攻撃者は盗んだ資格情報を使用して、正規のユーザーとしてサインインし、不正な操作を行うことができます。また、攻撃者は盗んだ資格情報を使用して、ユーザーの Microsoft 365 メールボックス、SharePoint フォルダー、または OneDrive 内のファイルにアクセスできます。よく見られるのは、組織の内外の受信者に正規のユーザーとして電子メールを送り付ける攻撃者です。データが攻撃者によって外部の受信者に電子メールで送信される事象をデータ流出と言います。
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>侵害された Office 365 電子メール アカウントの兆候
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>侵害された Microsoft メール アカウントの兆候
 
-ユーザーが自分の Office 365 メールボックスでの異常な活動に気付いて報告してくる場合があります。よく見られる兆候を以下に示します。
+ユーザーが自分の Microsoft 365 メールボックスでの異常な活動に気付いて報告してくる場合があります。よく見られる兆候を以下に示します。
 
 - 電子メールの消失や削除などの不審な活動。
 
@@ -57,9 +57,9 @@ Office 365 のメールボックス、データ、およびその他のサービ
 
 ユーザーが上記の兆候のいずれかを報告してきた場合は、詳しい調査を実施する必要があります。 Microsoft 365 セキュリティ/コンプライアンス センターと Azure ポータルには、侵害が疑われるユーザー アカウントの活動を調査するためのツールが用意されています。
 
-- **セキュリティ/コンプライアンス センターの Office 365 統合監査ログ**: 不審な活動が発生する直前から現在の日付までの範囲で結果をフィルター処理すると、疑わしいアカウントのすべての活動を確認します。 検索中に活動をフィルタリングしないでください。
+- **セキュリティ/コンプライアンス センターの統合監査ログ**: 不審な活動が発生する直前から現在の日付までの範囲で結果をフィルター処理することにより、疑わしいアカウントのすべての活動を確認します。 検索中に活動をフィルタリングしないでください。
 
-- **EAC の Office 365 管理監査ログ**: Exchange Online では、Exchange 管理センター (EAC) を使用して管理者監査ログ内のエントリを検索および表示できます。 管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。 管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
+- **EAC の管理監査ログ**: Exchange Online では、Exchange 管理センター (EAC) を使用して管理者監査ログ内のエントリを検索および表示できます。 管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。 管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
 
 - **Azure AD ポータルの Azure AD サインイン ログおよびその他のリスク レポート**: 次の列の値を調査します。
 
@@ -71,7 +71,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 
   - サインインの成功/失敗
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>電子メール機能をセキュリティで保護し、侵害が疑われる Office 365 アカウントとメールボックスを復元する方法
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>電子メール機能をセキュリティで保護し、侵害が疑われる Microsoft 365 アカウントとメールボックスを復元する方法
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -84,7 +84,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 > [!WARNING]
 > この時点ではまだ攻撃者がメールボックスへのアクセス権を握っている可能性があるため、意図したユーザーに新しいパスワードを電子メールで送信しないでください。
 
-1. 「[Office 365 Business のパスワードをリセットする](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)」の手順に従って、他のユーザーの Office 365 Business パスワードをリセットします。
+1. 「[Microsoft 365 Apps for business のパスワードをリセットする](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)」にある、他のユーザーの Microsoft 365 Apps for business パスワードをリセットする手順に従います。
 
 **注**:
 
@@ -92,7 +92,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 
 - 直近の 5 つのパスワードのいずれかを再利用しないでください。パスワードの履歴要件によって最近のパスワードを再利用できる場合でも、攻撃者が推測できないパスワードを選択する必要があります。
 
-- オンプレミス ID が Office 365 とフェデレーションされている場合は、パスワードをオンプレミスで変更してから、侵害を管理者に報告する必要があります。
+- オンプレミス ID が Microsoft 365 とフェデレーションされている場合は、パスワードをオンプレミスで変更してから、侵害を管理者に報告する必要があります。
 
 > [!TIP]
 > 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。  MFA の詳細については、[こちら](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)で確認できます。
@@ -177,13 +177,13 @@ Office 365 のメールボックス、データ、およびその他のサービ
 
 1. 送信済みアイテムを確認します。連絡先リストに掲載されている人にアカウントが侵害されたことを通知する必要があります。攻撃者は、彼らにお金を要求したり、あなたが外国で足留めされ、お金が必要だなどと偽ったり、彼らにウイルスを送り付けて彼らのコンピューターも乗っ取ろうとしたりする可能性があります。
 
-2. この Exchange アカウントを代替電子メール アカウントとして使用していた他のサービスが侵害されている場合があります。まず、Office 365 サブスクリプションに関する手順を実行してから、その他のアカウントに関する手順を実行します。
+2. この Exchange アカウントを代替電子メール アカウントとして使用していた他のサービスが侵害されている場合があります。まず、Microsoft 365 サブスクリプションに対してこれらの手順を実行してから、その他のアカウントに対してこれらの手順を実行します。
 
 3. 電話番号や住所などの連絡先情報が正しいことを確認します。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
 
-Office 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能セットが用意されています。  [Office 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Office 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。  [Microsoft 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Microsoft 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
 
 - 最初の 30 日間で完了すべき作業。すぐにユーザーに影響しますが、それほど大きな影響ではありません。
 
@@ -193,7 +193,7 @@ Office 365 サブスクリプションには、データとユーザーを保護
 
 ## <a name="see-also"></a>関連項目
 
-- [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Microsoft 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [米国インターネット犯罪苦情センター](https://www.ic3.gov/preventiontips.aspx)
 

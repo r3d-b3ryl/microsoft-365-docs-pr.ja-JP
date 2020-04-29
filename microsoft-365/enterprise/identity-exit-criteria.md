@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 構成が Microsoft 365 Enterprise の ID ベースのサービスとインフラストラクチャの条件を満たしていることを確認します。
-ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 3706cd84a722e68a8b75274544630719e510345a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637290"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632543"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>フェーズ 2: ID インフラストラクチャの終了条件
 
@@ -33,7 +33,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>必須: 全体管理者アカウントが保護されている 
 
-[Office 365 全体管理者アカウントが保護される](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)ことで、Microsoft 365 サブスクリプションの侵害につながる可能性がある攻撃者による資格情報の侵害を阻止します。
+[グローバル管理者アカウントが保護される](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)ことで、Microsoft 365 サブスクリプションの侵害につながる可能性がある攻撃者による資格情報の侵害を阻止します。
 
 この必須条件を省略した場合、全体管理者アカウントが攻撃および侵害を受けやすくなり、攻撃者は獲得攻撃、破壊、または身代金要求の目的で、システム全体でデータにアクセスできるようになります。
 
@@ -47,7 +47,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. 手順 1 の各アカウントを使用して、Office 365 にサインインします。 それぞれのサインインでは、Azure 多要素認証および組織で使用できる最も強力な2 次認証が必要です。
+2. 手順 1 からの各アカウントを使用してサインインします。 それぞれのサインインでは、Azure 多要素認証および組織で使用できる最も強力な2 次認証が必要です。
 
 > [!Note]
 > Azure Active Directory PowerShell for Graph モジュールのインストールと Office 365 へのサインインの手順については、「[Office 365 PowerShell への接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)」を参照してください。
@@ -96,11 +96,11 @@ ID インフラストラクチャに関する追加の推奨事項について�
 必要に応じて、[手順 2](identity-secure-your-passwords.md#identity-sso) がこのオプション条件を満たす上で役立ちます。
 
 <a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>オプション: Office 365 のサインイン画面を組織に合わせてカスタマイズしている
+## <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>オプション: サインイン画面は、組織に合わせてカスタマイズされている
 
-「[クイック スタート: Azure AD のサインイン ページに会社のブランドを追加する](https://aka.ms/aadpaddbranding)」に従って組織のブランドを Office 365 サインイン ページに追加しています。
+「[会社のブランドをサインイン ページとアクセス パネル ページに追加する](https://aka.ms/aadpaddbranding)」を使用して、組織のブランドをサインイン ページに追加しています。
 
-このオプション条件を省略した場合、ユーザーに対して汎用 Office 365 サインイン画面が表示され、ユーザーが当該組織のサイトにサインインすることを確信できない可能性があります。
+このオプションを省略した場合は、ユーザーに対して汎用サインイン画面が表示されるため、ユーザーが当該組織のサイトにサインインしていることを確信できない可能性があります。
 
 必要に応じて、[手順 2](identity-secure-your-passwords.md#identity-custom-sign-in) がこのオプション条件を満たす上で役立ちます。
 
@@ -116,11 +116,11 @@ ID インフラストラクチャに関する追加の推奨事項について�
 
 ### <a name="how-to-test"></a>テスト方法
 
-1.  テスト ユーザー アカウントを作成して、それらにライセンスを割り当てます。 
-2.  実際のユーザー アカウントに使用している (電話へのテキスト メッセージの送信など) 追加の検証方式を使用して、テスト ユーザー アカウントの Azure 多要素認証を構成します。 
-3.  テスト ユーザー アカウントを使用して Office 365 ポータルにサインインします。
-4.  MFA により、追加の確認情報を入力するように求められ、その結果認証が正常に完了することを確認します。 
-5.  テスト ユーザー アカウントを削除します。
+1.    テスト ユーザー アカウントを作成して、それらにライセンスを割り当てます。 
+2.    実際のユーザー アカウントに使用している (電話へのテキスト メッセージの送信など) 追加の検証方式を使用して、テスト ユーザー アカウントの Azure 多要素認証を構成します。 
+3.    テスト ユーザー アカウントを使用して Office 365 ポータルにサインインします。
+4.    MFA により、追加の確認情報を入力するように求められ、その結果認証が正常に完了することを確認します。 
+5.    テスト ユーザー アカウントを削除します。
 
 <a name="crit-identity-ident-prot"></a>
 ## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>省略可能: 資格情報が侵害されないよう保護するための Azure AD Identity Protection の有効化 (Microsoft 365 E5 のみ)
@@ -148,7 +148,7 @@ ID インフラストラクチャに関する追加の推奨事項について�
 
 既存のオンプレミス Active Directory Domain Services (AD DS) がある場合は、Azure AD Connect を使用して、オンプレミス AD DS から Azure AD テナントへユーザー アカウントとグループを同期しています。
 
-ディレクトリ同期により、ユーザーは各自のコンピューターやオンプレミス リソースにサインインするときに使用する資格情報で、Office 365 やその他の Microsoft クラウド サービスにもサインインできます。
+ディレクトリ同期を行うことで、ユーザーは各自のコンピューターやオンプレミス リソースにサインインするときに使用する資格情報で、Microsoft 365 やその他の Microsoft クラウド サービスにもサインインできます。
 
 必要に応じて、[手順 4](identity-add-user-accounts.md#identity-sync) がこの必須条件を満たす上で役立ちます。
 
@@ -164,9 +164,9 @@ ID インフラストラクチャに関する追加の推奨事項について�
 
 ディレクトリ同期が正しく動作していることを確認するには、次の手順に従います。
 
-1.  AD DS で新しいテスト グループを作成します。
-2.  同期時刻まで待ちます。
-3.  Azure AD テナントを調べ、新しいテスト グループ名があることを確認します。
+1.    AD DS で新しいテスト グループを作成します。
+2.    同期時刻まで待ちます。
+3.    Azure AD テナントを調べ、新しいテスト グループ名があることを確認します。
 
 <a name="crit-identity-sync-health"></a>
 ## <a name="optional-directory-synchronization-is-monitored"></a>オプション: ディレクトリ同期を監視している
@@ -209,11 +209,11 @@ Azure AD Connect Health ポータルには、オンプレミス ドメイン コ
 
 ### <a name="how-to-test"></a>テスト方法
 
-ユーザーのアカウント名と Azure 多要素認証を使用して、Office 365 ポータルにサインインします。 サインイン ページにカスタムのブランド化要素が表示されます。
+ユーザー アカウント名と Azure 多要素認証を使用して、ポータルにサインインします。 サインイン ページにカスタムのブランド化要素が表示されます。
 
 
 <a name="crit-identity-self-service-groups"></a>
-## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>オプション: 特定の Azure AD セキュリティと Office 365 グループでセルフサービスによるグループの管理が有効になっている
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>オプション: 特定の Azure AD セキュリティと Microsoft 365 グループでは、セルフサービスによるグループの管理が有効になっている
 
 セルフサービスによる管理に適しているグループを判別し、各グループの所有者に対してグループ管理のワークフローと責任を説明し、これらのグループに対して[Azure AD でのセルフサービスによる管理をセットアップ](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)しています。
 
@@ -222,13 +222,13 @@ Azure AD Connect Health ポータルには、オンプレミス ドメイン コ
 必要に応じて、[手順 5](identity-use-group-management.md#identity-self-service-groups) がこのオプション条件を満たすのに役立ちます。
 
 ### <a name="how-to-test"></a>テスト方法
-1.  Azure Portal で Azure AD にテスト ユーザー アカウントを作成します。
-2.  テスト ユーザー アカウントとしてサインインし、テスト Azure AD セキュリティ グループを作成します。
-3.  サインアウトして、IT 管理者アカウントでサインインします。
-4.  テスト セキュリティ グループで、テスト ユーザー アカウントをセルフサービスにより管理するように構成します。
-5.  サインアウトし、テスト ユーザー アカウントでサインインします。
-6.  Azure Portal を使用して、テスト セキュリティ グループにメンバーを追加します。
-7.  テスト セキュリティ グループとテスト ユーザー アカウントを削除します。
+1.    Azure Portal で Azure AD にテスト ユーザー アカウントを作成します。
+2.    テスト ユーザー アカウントとしてサインインし、テスト Azure AD セキュリティ グループを作成します。
+3.    サインアウトして、IT 管理者アカウントでサインインします。
+4.    テスト セキュリティ グループで、テスト ユーザー アカウントをセルフサービスにより管理するように構成します。
+5.    サインアウトし、テスト ユーザー アカウントでサインインします。
+6.    Azure Portal を使用して、テスト セキュリティ グループにメンバーを追加します。
+7.    テスト セキュリティ グループとテスト ユーザー アカウントを削除します。
 
 <a name="crit-identity-dyn-groups"></a>
 ## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a>オプション: 動的グループ メンバーシップの設定により、ユーザー アカウントの属性に基づいてユーザー アカウントがグループに自動的に追加される
@@ -247,7 +247,7 @@ Sales グループと Accounting グループが動的グループである場�
 
 ### <a name="how-to-test"></a>テスト方法
 
-1. Azure Portal で Azure AD にテスト用の動的グループを作成し、Department が「test 1」であるというルールを構成します。
+1. Azure portal で Azure AD にテスト用の動的グループを作成し、Department が「test1」であるというルールを構成します。
 2. Azure AD でテスト ユーザー アカウントを作成し、Department プロパティに「test1」を設定します。
 3. テスト ユーザー アカウントのプロパティを調べ、このアカウントがテスト用の動的グループのメンバーになっていることを確認します。
 4. テスト ユーザー アカウントの Department プロパティの値を「test2」に変更します。

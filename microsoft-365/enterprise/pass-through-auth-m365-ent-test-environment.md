@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '要約: Microsoft 365 テスト環境でパススルー認証を構成します。'
-ms.openlocfilehash: 4f9941b017f00b40a6ae7e893211131cae51c611
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8a9a8847d79e1d114f0ddfb4843cbb7b9f9f0d4c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066426"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631419"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境でのパススルー認証
 
@@ -35,8 +35,8 @@ Microsoft のクラウド ベースのサービスとアプリケーションへ
   
 このテスト環境は、次に示す 2 つのフェーズで設定します。
 
-1.  パスワード ハッシュ同期を実装するシミュレーションのエンタープライズ Microsoft 365 テスト環境を作成する。
-2.  APP1 で、パススルー認証用の Azure AD Connect を構成する。
+1.    パスワード ハッシュ同期を実装するシミュレーションのエンタープライズ Microsoft 365 テスト環境を作成する。
+2.    APP1 で、パススルー認証用の Azure AD Connect を構成する。
     
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ Microsoft のクラウド ベースのサービスとアプリケーションへ
 この構成は、次の内容で成立します。 
   
 - Microsoft 365 E5 または Office 365 E5 の試用版または有料サブスクリプション。
-- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 Azure AD Connect が APP1 上で実行され、TESTLAB AD DS ドメインが、Microsoft 365 または Office 365 サブスクリプションの Azure AD テナントに定期的に同期されます。
+- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 Azure AD Connect が APP1 上で実行され、TESTLAB AD DS ドメインが、Microsoft 365 サブスクリプションの Azure AD テナントに定期的に同期されます。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>フェーズ 2: APP1 で、パススルー認証用の Azure AD Connect を構成します。
 
@@ -60,25 +60,25 @@ Microsoft のクラウド ベースのサービスとアプリケーションへ
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>APP1 上で Azure AD Connect を構成する
 
-1.  [Azure ポータル](https://portal.azure.com)で、全体管理者アカウントでサインインします。その後、TESTLAB\User1 アカウントで APP1 に接続します。
+1.    [Azure ポータル](https://portal.azure.com)で、全体管理者アカウントでサインインします。その後、TESTLAB\User1 アカウントで APP1 に接続します。
 
-2.  APP1 のデスクトップで、Azure AD Connect を実行します。
+2.    APP1 のデスクトップで、Azure AD Connect を実行します。
 
-3.  **[ようこそ]** ページで、**[構成]** をクリックします。
+3.    **[ようこそ]** ページで、**[構成]** をクリックします。
 
-4.  [追加のタスク] ページで、[**ユーザー サインインの変更**]、[**次へ**] の順にクリックします。
+4.    [追加のタスク] ページで、[**ユーザー サインインの変更**]、[**次へ**] の順にクリックします。
 
-5.  **[Azure AD に接続]** ページで、全体管理者の資格情報を入力して、**[次へ]** をクリックします。
+5.    **[Azure AD に接続]** ページで、全体管理者の資格情報を入力して、**[次へ]** をクリックします。
 
-6.  **[ユーザー サインイン**] ページで、[**パススルー認証**] をクリックした後に [**次へ**] をクリックします。
+6.    **[ユーザー サインイン**] ページで、[**パススルー認証**] をクリックした後に [**次へ**] をクリックします。
 
-7.  **[構成の準備完了]** ページで、**[構成]** をクリックします。
+7.    **[構成の準備完了]** ページで、**[構成]** をクリックします。
 
-8.  **[構成が完了しました]** ページで、**[終了]** をクリックします。
+8.    **[構成が完了しました]** ページで、**[終了]** をクリックします。
 
-9.  Azure ポータルの左側のウィンドウで、**[Azure Active Directory]、[Azure AD Connect]** の順でクリックします。**パススルー認証**機能が**有効**と表示されていることを確認します。
+9.    Azure ポータルの左側のウィンドウで、**[Azure Active Directory]、[Azure AD Connect]** の順でクリックします。**パススルー認証**機能が**有効**と表示されていることを確認します。
 
-10. [**パススルー認証**] をクリックします。[**パススルー認証**] ウィンドウには、認証エージェントがインストールされているサーバーの一覧が表示されます。一覧の中に APP1 が表示されているはずです。[**パススルー認証**] ウィンドウを閉じます。
+10.    [**パススルー認証**] をクリックします。[**パススルー認証**] ウィンドウには、認証エージェントがインストールされているサーバーの一覧が表示されます。一覧の中に APP1 が表示されているはずです。[**パススルー認証**] ウィンドウを閉じます。
 
 次に、User1 アカウントの <strong>user1@testlab.</strong>\< 自分のパブリック ドメイン > ユーザー名を使用して、サブスクリプションにサインインする機能をテストします。
 
@@ -95,7 +95,7 @@ User1 は、TESTLAB AD DS ドメインのドメイン管理者のアクセス許
 この構成は、次の内容で成立します。
 
 - DNS ドメイン TESTLAB.\<ドメイン名> が登録されている Microsoft 365 E5 または Office 365 E5 の試用版サブスクリプションまたは有料サブスクリプション。
-- インターネットに接続している組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。Azure AD Connect は APP1 上で実行され、Microsoft 365 または Office 365 サブスクリプションの Azure AD テナントからのパススルー認証要求を処理します。
+- インターネットに接続している組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。Azure AD Connect は APP1 上で実行され、Microsoft 365 サブスクリプションの Azure AD テナントからのパススルー認証要求を処理します。
 
 ## <a name="next-step"></a>次の手順
 

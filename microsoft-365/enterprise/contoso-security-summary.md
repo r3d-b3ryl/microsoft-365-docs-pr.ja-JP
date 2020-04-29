@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597094"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636488"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
 
@@ -62,7 +62,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
   Contoso 社のセキュリティ管理者は、IT 担当者の職務と責任に従って、各アカウントに一部の管理者ロールを割り当てました。
 
-  詳細については、「[Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。
+  詳細については、「[Microsoft 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。
 
 - すべてのユーザー アカウントの MFA
 
@@ -97,7 +97,7 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Office 365 脅威の調査および対応を使用した攻撃の監視と防止
 
-  Contoso 社では、[Office 365 脅威の調査および対応](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)を使用して攻撃の特定と対処を容易にし、将来の攻撃を防ぐことで、Office 365 ユーザーを保護します。
+  Contoso 社では、[Office 365 脅威の調査および対応](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)を使用して攻撃の特定と対処を容易にし、将来の攻撃を防ぐことで、ユーザーを保護します。
 
 - Advanced Threat Analytics を使用した高度な攻撃からの保護
 
@@ -107,9 +107,9 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 - Azure Information Protection ラベルを使用した機密性の高い厳しく規制されたデジタル資産の保護
 
-  Contoso 社では 3 レベルのデータ保護を決定し、ユーザーがデジタル資産に適用する [Office 365 機密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)を展開しました。企業秘密やその他の知的財産について、Contoso 社では、コンテンツを暗号化し特定のユーザー アカウントとグループへのアクセスを制限する厳しく規制されたデータに対して、機密度サブラベルを使用します。
+  Contoso 社では 3 レベルのデータ保護を決定し、ユーザーがデジタル資産に適用する [Microsoft 365 機密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)を展開しました。企業秘密やその他の知的財産について、Contoso 社では、コンテンツを暗号化し特定のユーザー アカウントとグループへのアクセスを制限する厳しく規制されたデータに対して、機密度サブラベルを使用します。
 
-- Office 365 データ損失防止機能を使用したイントラネット データの漏洩防止
+- データ損失防止機能を使用したイントラネット データの漏洩防止
 
   Contoso 社では、Exchange Online、SharePoint、および OneDrive for Business 用に[データ損失防止](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)ポリシーを構成し、故意か偶然かを問わずユーザーが機密データを共有することがないようにしています。
 

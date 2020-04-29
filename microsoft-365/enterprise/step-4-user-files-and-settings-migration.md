@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザーのファイルと設定を移行する方法について説明します。
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113543"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636786"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>手順 4: ユーザーのファイルと設定の移行
 
@@ -38,7 +38,7 @@ ms.locfileid: "43113543"
 </table>
 
 >[!NOTE]
->これまでに使用していた移行プロセスは引き続き使用できますが、Office 365 ProPlus への移行には OneDrive の「Known Folder Move」(下記参照) の使用をお勧めします。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
+>これまでに使用していた移行プロセスは引き続き使用できますが、Microsoft 365 Apps for enterprise への移行には OneDrive の「Known Folder Move」(下記参照) の使用をお勧めします。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
 大規模な展開で、最も扱いにくい、ほとんどが手動によることが多いタスクの 1 は、ユーザーのファイルと設定の転送です。この記事では、新しい PC、更新した PC および再イメージ化した PC にユーザーを移行する際に選択可能なオプションについて説明します。

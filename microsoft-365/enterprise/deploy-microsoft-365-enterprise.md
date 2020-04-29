@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951936"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638238"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Microsoft 365 Enterprise の展開
 
@@ -124,7 +124,7 @@ TLGs を使用すると、複雑な構成、ワークロード、またはエン
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Contoso Corporation の Microsoft 365 Enterprise 展開方法
 
-架空の企業、Contoso Corporation は、フランスのパリに本社を置く、代表的な世界規模の製造業の複合企業です。 どのように [Contoso 社が Microsoft 365 Enterprise を展開](contoso-case-study.md)し、ネットワーク、ID、Windows 10 Enterprise、Office 365 ProPlus、モバイル デバイス管理、情報保護およびセキュリティに関する主な設計上の決定および実装の詳細に対処したかをご覧ください。 
+架空の企業、Contoso Corporation は、フランスのパリに本社を置く、代表的な世界規模の製造業の複合企業です。 どのように [Contoso 社が Microsoft 365 Enterprise を展開](contoso-case-study.md)し、ネットワーク、ID、Windows 10 Enterprise、Microsoft 365 Apps for enterprise、モバイル デバイス管理、情報保護およびセキュリティに関する主な設計上の決定および実装の詳細に対処したかをご覧ください。 
 
 ## <a name="stay-current-with-deployment-content"></a>展開コンテンツについての最新情報を得る
 

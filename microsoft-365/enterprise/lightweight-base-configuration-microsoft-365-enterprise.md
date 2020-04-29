@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise をテストするための軽量なテスト環境を作成します。
-ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 04e63b1c3d9d35bd636041f8be7655ab17b1d165
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633345"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631611"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 
@@ -63,7 +63,7 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
 5. 手順 4 では、ここにサインイン ページを記録します (選択してコピー): ![線](../media/Common-Images/TableLine.png) 
 6. ここにユーザー ID を記録します: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
    入力したパスワードを安全な場所に記録してください。
-   この値を**Office 365 全体管理者名**と呼ぶことにします。
+   この値を**全体管理者名**と呼ぶことにします。
 8. [**セットアップに移動**] をクリックします。
 9. Office 365 E5 のセットアップで、**メールとサインイン用に組織の .onmicrosoft.com* を [* 引き続き続行する**] をクリックして、[**終了して後で続行する**] をクリックします。
 
@@ -73,11 +73,11 @@ Microsoft 365 管理センターが表示されます。
     
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>フェーズ 2: Office 365 試用版サブスクリプションを構成する
 
-このフェーズでは、追加のユーザーで Office 365 のサブスクリプションを構成し、Office 365 E5 ライセンスを割り当てます。
+このフェーズでは、サブスクリプションを構成してユーザーを追加し、Office 365 E5 ライセンスを割り当てます。
   
-「[Office 365 PowerShell への接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)」の手順を使用して、コンピューターから Azure Active Directory PowerShell for Graph モジュールで Office 365 のサブスクリプションに接続します。
+「[Office 365 PowerShell への接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)」の手順を使用して、コンピューターから Azure Active Directory PowerShell for Graph モジュールでサブスクリプションに接続します。
     
-**[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365 全体管理者名 (例: jdoe@contosotoycompany.onmicrosoft.com) およびパスワードを入力します。
+**[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、全体管理者名 (例: jdoe@contosotoycompany.onmicrosoft.com) およびパスワードを入力します。
   
 組織名 (例: contosotoycompany)、所属地域に該当する 2 文字の国別コード、共通のアカウント パスワードを入力して、PowerShellのプロンプトから次のコマンドを実行します。
 
@@ -121,7 +121,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 これらの値を記録する:
   
-- Office 365 グローバル管理者名: ![線](../media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 1 のステップ 6 から)
+- 全体管理者名: ![線](../media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 1 のステップ 6 から)
     
     このアカウントのパスワードも安全な場所に記録してください。
     
@@ -291,7 +291,7 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
     
 6. [設定] ウィンドウを閉じます。
     
-次に、WIN10 コンピューターに Office 365 ProPlus をインストールします。
+次に、Microsoft 365 Apps for enterprise を WIN10 コンピューターにインストールします。
   
 1. Microsoft Edge ブラウザーを開いて、グローバル管理者アカウントの認証資格情報を使用して、Office ポータルにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
@@ -309,7 +309,7 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
 
 - Microsoft 365 E5 サブスクリプションの Azure AD テナントに参加している。
 - Microsoft Intune (EMS) で Azure AD デバイスとして登録されている。
-- Office 365 ProPlus がインストールされている。
+- Microsoft 365 Apps for enterprise がインストールされている。
   
 これで、[Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) の追加機能を試せるようになりました。
   

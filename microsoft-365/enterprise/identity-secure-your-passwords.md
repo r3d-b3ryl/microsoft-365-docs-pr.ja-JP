@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体でパスワードを強力かつ管理しやすいものにする必要があります。
-ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633095"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637050"
 ---
 # <a name="step-2-secure-your-passwords"></a>手順 2: パスワードをセキュリティで保護する
 
@@ -82,7 +82,7 @@ Azure AD Connect ツールを使用して Azure AD シームレス SSO を構成
 
 
 <a name="identity-custom-sign-in"></a>
-## <a name="customize-the-office-365-sign-in-page"></a>Office 365 サインイン ページをカスタマイズする
+## <a name="customize-the-sign-in-page"></a>サインイン ページをカスタマイズする
 
 *この手順はオプションであり、Microsoft 365 Enterprise のバージョン E3 および E5 に適用されます。*
 
@@ -90,7 +90,7 @@ Azure AD Connect ツールを使用して Azure AD シームレス SSO を構成
 
 Microsoft 365 Enterprise では、サイン ページと [アクセス パネル] ページの外観をカスタマイズして、企業ロゴ、配色、カスタム ユーザー情報を組み込むことができます。 
 
-詳細については、「[会社のブランドを Office 365 サインイン ページに追加する](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)」を参照してください。
+詳細については、「[会社のブランドを Microsoft 365 サインイン ページに追加する](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)」を参照してください。
 
 構成手順については、「[サインイン ページと [アクセス パネル ページ] に会社のブランドを追加する](https://aka.ms/aadpaddbranding)」を参照してください。
 

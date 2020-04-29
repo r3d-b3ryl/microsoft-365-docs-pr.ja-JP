@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225933"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631515"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
-これらのラボは、Windows 10 Enterprise および Office 365 ProPlus を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
+これらのラボは、Windows 10 Enterprise および Microsoft 365 Apps for enterprise を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
 
-このトレーニングは、Windows 7 のサポート中止に備える組織に特に推奨されます。また、現在 Windows 10 と、Office 365 Plus または Office 2019 を使用されているお客様も対象となります。 また、ラボ環境は独立しているため、展開ツールの更新プログラムを調べたり、展開関連の自動化をテストしたりするのに最適です。
+このトレーニングは、Windows 7 のサポート終了に備える組織に特に推奨されます。また、現在 Windows 10 と、Office 365 Plus または Office 2019 を使用されているお客様も対象となります。 また、ラボ環境は独立しているため、展開ツールの更新プログラムを調べたり、展開関連の自動化をテストしたりするのに最適です。
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "43225933"
 
 ### <a name="office-and-lob-app-delivery"></a>Office と LOB アプリの配信
 
-  - Office 365 ProPlus の展開 
+  - Microsoft 365 Apps for enterprise
   - Configuration Manager と Microsoft Intune を使用したエンタープライズ管理の展開
   - Microsoft Intune を使用したアプリケーションの展開と管理
   - ビジネス向け Microsoft Store を使用したアプリの展開とセルフ サービス インストール
@@ -113,7 +113,7 @@ ms.locfileid: "43225933"
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 7 月 5 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
+*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 4 月 18 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
@@ -125,7 +125,7 @@ ms.locfileid: "43225933"
 
   - [<span class="underline">Windows 10 の展開計画</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Office 365 ProPlus の展開ガイド</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Microsoft 365 Apps for enterprise の展開ガイド</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Intune が会社のためにできることとは。</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

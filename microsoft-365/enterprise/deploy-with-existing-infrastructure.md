@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 既存のインフラストラクチャがある場合の Microsoft 365 Enterprise の展開の終了条件について、順を追って説明します。
-ms.openlocfilehash: ce9c9343ff6983968f3ed96b1e1558788d04ffc1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ace84e53da9b62b39a557b670c54c1be31d0b61a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597064"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638206"
 ---
 # <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>既存のインフラストラクチャを使用した Microsoft 365 Enterprise の展開
 
@@ -49,11 +49,11 @@ Windows 10 Enterprise インフラストラクチャの次の必須条件とオ�
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Office 365 ProPlus の終了条件 (フェーズ 4)
+## <a name="exit-criteria-for-microsoft-365-apps-for-enterprise-phase-4"></a>Microsoft 365 Apps for enterprise の終了条件 (フェーズ 4)
 
-Office 365 ProPlus インフラストラクチャの評価、展開計画、および展開の要件を満たします。
+Microsoft 365 Apps for enterprise インフラストラクチャの評価、展開計画、および展開の要件を満たします。
 
-[!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+[!INCLUDE [Deployment exit criteria for Microsoft 365 Apps for enterprise](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## <a name="exit-criteria-for-mobile-device-management-phase-5"></a>モバイル デバイス管理の終了条件 (フェーズ 5)
 

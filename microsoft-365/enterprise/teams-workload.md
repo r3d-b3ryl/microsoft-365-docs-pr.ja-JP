@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Teams について学習し、展開していきます。
-ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d34673a412539dfc73296f0139fa2eb555c17099
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801242"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636701"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の Microsoft Teams を展開する
 
@@ -34,7 +34,7 @@ Teams を初めて利用する場合は、「[Microsoft Teams へようこそ](h
 
 - チームに必要なユーザー アカウントとセキュリティ機能が備わるように、適切な[基礎インフラストラクチャチャ](deploy-foundation-infrastructure.md)のフェーズが設定されていることを確認します。 ID および情報保護のフェーズは、保持および機密ラベルが付いた安全な電子メールおよびファイルにサイン オンして使用するのに最も重要です。
 - [この記事](https://docs.microsoft.com/microsoftteams/security-compliance-overview)では、Teams のセキュリティとコンプライアンスについて説明します。
-- [この記事](https://docs.microsoft.com/microsoftteams/office-365-licensing)では、Teams 向け Office 365 のライセンスについて説明します。
+- [この記事](https://docs.microsoft.com/microsoftteams/office-365-licensing)では、Teams 向けのライセンスについて説明します。
 
 組織で Teams を展開するには、「[Teams のロールアウト方法](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams)」をご覧ください。
 

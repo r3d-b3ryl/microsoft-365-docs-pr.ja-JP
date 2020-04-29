@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 向けのデモ、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 582068e84d82bfa681d1e1e64234698544ce3b9d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153918"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631599"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -116,16 +116,16 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 情報保護に関連する機能や能力のデモンストレーションは、以下を参照してください。
 
-- [Office 365 のセキュリティ強化](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [強化された Microsoft 365 のセキュリティ](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   強化された Office 365 セキュリティの設定を構成し、組み込みのセキュリティ ツールを調査します。
+   強化された Microsoft 365 セキュリティの設定を構成し、組み込みのセキュリティ ツールを調査します。
   
 - [データ分類](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   Office 365 ラベルを構成し、SharePoint Online チーム サイトのドキュメントに適用します。
+   ラベルを構成し、SharePoint Online チーム サイトのドキュメントに適用します。
     
 - [特権アクセスの管理](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Office 365 組織の昇格されたタスクと特権タスクへの Just-In-Time アクセスを可能にするため、特権アクセス管理を構成します。
+   組織の昇格されたタスクと特権タスクへの Just-In-Time アクセスを可能にするため、特権アクセス管理を構成します。
 
 
