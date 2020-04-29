@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 任意の DNS ホスティング プロバイダーで Microsoft 365 用のドメインを確認し、DNS レコードを作成する方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 85392bfbd19072d582e7c2db7ce3a8c7bf466176
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628496"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919507"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>任意の DNS ホスティング プロバイダーで DNS レコードを作成する
 
@@ -69,19 +69,19 @@ Microsoft 365 のドメインを使うには、ドメインを所有している
   
 1. TXT レコードと MX レコードのどちらを作成しているかに応じて、次のいずれかを実行します。
     
-  - **TXT レコードを作成する場合は、以下の値を使います。**
+   - **TXT レコードを作成する場合は、以下の値を使います。**
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** または **Host Name**|**Value**|**TTL**|
-|TXT|次のいずれかを実行します。「 **@** 」と入力するか、フィールドを空白のままにするか、ドメイン名を入力します。    <br/> **注:** このフィールドの要件は、DNS ホストによって異なります。 |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。  <br/>        [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>     |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。  |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Record Type**|**Alias** または **Host Name**|**Value**|**TTL**|
+      |TXT|次のいずれかを実行します。「 **@** 」と入力するか、フィールドを空白のままにするか、ドメイン名を入力します。    <br/> **注:** このフィールドの要件は、DNS ホストによって異なります。 |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。  <br/>        [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>     |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。  |
    
-  - **MX レコードを作成する場合は、以下の値を使います。**
+   - **MX レコードを作成する場合は、以下の値を使います。**
     
-||||||
-|:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** または **Host Name**|**Value**|**Priority**|**TTL**|
-|MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。    <br/>       [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>     |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
+      ||||||
+      |:-----|:-----|:-----|:-----|:-----|
+      |**Record Type**|**Alias** または **Host Name**|**Value**|**Priority**|**TTL**|
+      |MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。    <br/>       [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>     |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
    
 2. レコードを保存します。
     
@@ -103,9 +103,8 @@ Microsoft 365 で正しい TXT レコードが見つかった場合、ドメイ�
 ## <a name="add-mx-record-to-route-email"></a>MX レコードを追加してメールをルーティングする
 <a name="BKMK_add_MX"> </a>
 
-MX レコードを追加して、自分のドメインのメールが Microsoft 365 に届くようにします。  "*ドメインの MX レコードを更新すると、お客様のドメインを使用するユーザーのすべての新しいメールが、Microsoft 365 に届くようになります*"。 [メールと連絡先を Microsoft 365 に移行する](../setup/migrate-email-and-contacts-admin.md)ことを決定しない限り、既に所有しているメールは現在のメール ホストに保持されます。 
-  
-  
+MX レコードを追加して、自分のドメインのメールが Microsoft 365 に届くようにします。  "*ドメインの MX レコードを更新すると、お客様のドメインを使用するユーザーのすべての新しいメールが、Microsoft 365 に届くようになります*"。 [メールと連絡先を Microsoft 365 に移行すること](../setup/migrate-email-and-contacts-admin.md)を決定しない限り、既に所有しているメールは現在のメール ホストに保持されます。
+
  **タスク**
   
 ドメインのレコードを作成できるページを見つけます。
@@ -118,39 +117,39 @@ MX レコードを追加して、自分のドメインのメールが Microsoft 
     
 ::: moniker range="o365-worldwide"
 
-追加する MX レコードには、 **ポイント先のアドレス**を示す値が含まれており、\<MX token\>.mail.protection.outlook.com (\<MX token\> の値は MSxxxxxxx など) のような内容です。   
+  追加する MX レコードには、 **ポイント先のアドレス**を示す値が含まれており、\<MX token\>.mail.protection.outlook.com (\<MX token\> の値は MSxxxxxxx など) のような内容です。   
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-追加する MX レコードには、 **ポイント先のアドレス**を示す値が含まれており、\<MX token\>.mail.protection.outlook.de (\<MX token\> の値は MSxxxxxxx など) のような内容です。   
+  追加する MX レコードには、 **ポイント先のアドレス**を示す値が含まれており、\<MX token\>.mail.protection.outlook.de (\<MX token\> の値は MSxxxxxxx など) のような内容です。   
 
 ::: moniker-end
 
-1. DNS ホストの Web サイトで、新しい MX レコードを追加します。
+4. DNS ホストの Web サイトで、新しい MX レコードを追加します。
     
     ここで、Microsoft 365 から [MX レコードの情報を取得](../get-help-with-domains/information-for-dns-records.md)します。 
     
-2. 上の手順の MX レコードから **[ポイント先のアドレス]** の値をコピーします。 
+5. 上の手順の MX レコードから **[ポイント先のアドレス]** の値をコピーします。 
     
     この値は、次の手順で説明するように、DNS ホストのサイトでレコードを作成するときに使います。
     
-3. DNS ホストのサイトで、新しい MX レコードのフィールドに以下の値が正確に設定されていることを確認します。
+6. DNS ホストのサイトで、新しい MX レコードのフィールドに以下の値が正確に設定されていることを確認します。
     
-  - [**Record Type**]: **MX**
+   - [**Record Type**]: **MX**
     
-  - **Priority**: MX レコードの優先度には、最高を表す値 (通常は **0**) を設定します。
+   - **Priority**: MX レコードの優先度には、最高を表す値 (通常は **0**) を設定します。
     
-    優先度の詳細については、「[MX 優先度とは何ですか?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。
+      優先度の詳細については、「[MX 優先度とは何ですか?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。
     
-  - **Host Name**: **@**
+   - **Host Name**: **@**
     
-  - **Points to address**: Microsoft 365 からコピーした **[ポイント先のアドレス]** の値をここに貼り付けます。 
+   - **Points to address**: Microsoft 365 からコピーした **[ポイント先のアドレス]** の値をここに貼り付けます。 
     
-  - **TTL**: この値は、**1 時間** または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
+   - **TTL**: この値は、**1 時間** または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
     
-4. レコードを保存します。
+7. レコードを保存します。
     
 その他の MX レコードを削除します。
   
@@ -167,12 +166,12 @@ DNS ホストの Web サイトで、3 つの新しい CNAME レコードを、�
   
 1. 新規レコードごとのボックスに次の値を入力するか、コピーして貼り付けます。 最初の 3 つの新しいレコードをそれぞれ追加したら、別の CNAME レコードを作成します。
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 時間  <br/> |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+      |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hour  <br/> |
+      |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 hour  <br/> |
+      |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 時間  <br/> |
    
    > [!NOTE]
    > **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 > これらのレコードは、Exchange、Lync、Skype for Business のハイブリッド展開には適用されません。 
@@ -188,15 +187,15 @@ DNS ホストの Web サイトで、3 つの新しい CNAME レコードを、�
   
 1. 新規レコードごとのボックスに次の値を入力するか、コピーして貼り付けます。 最初の 3 つの新しいレコードをそれぞれ追加したら、別の CNAME レコードを作成します。
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 時間  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 hour  <br/> |
+    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 hour  <br/> |
+    |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 時間  <br/> |
    
-   > [!NOTE]
-   > **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 > これらのレコードは、Exchange、Lync、Skype for Business のハイブリッド展開には適用されません。 
+     > [!NOTE]
+     > **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 > これらのレコードは、Exchange、Lync、Skype for Business のハイブリッド展開には適用されません。 
   
 2. 終了したら、レコードを保存します。
     
@@ -210,15 +209,15 @@ DNS ホストの Web サイトで、3 つの新しい CNAME レコードを、�
   
 1. 新規レコードごとのボックスに次の値を入力するか、コピーして貼り付けます。 最初の 3 つの新しいレコードをそれぞれ追加したら、別の CNAME レコードを作成します。
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.partner.outlook.cn  <br/> |1 時間  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 時間  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 時間  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.partner.outlook.cn  <br/> |1 時間  <br/> |
+    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 時間  <br/> |
+    |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 時間  <br/> |
    
-   > [!NOTE]
-   > **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 > これらのレコードは、Exchange、Lync、Skype for Business のハイブリッド展開には適用されません。 
+     > [!NOTE]
+     > **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 > これらのレコードは、Exchange、Lync、Skype for Business のハイブリッド展開には適用されません。 
   
 2. 終了したら、レコードを保存します。
     
@@ -232,11 +231,11 @@ DNS ホストの Web サイトで、3 つの新しい CNAME レコードを、�
 > [!IMPORTANT]
 > Mobile Device Management (MDM) for Microsoft 365 を使用している場合は、追加の CNAME レコードを 2 つ作成する必要があります。手順は、他の 4 つの CNAME レコードと同じですが、次の表の値を入力します。 > (MDM がない場合は、この手順を省略できます。) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |EnterpriseRegistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 hour  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |EnterpriseRegistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 hour  <br/> |
    
 ::: moniker-end
 
@@ -245,11 +244,11 @@ DNS ホストの Web サイトで、3 つの新しい CNAME レコードを、�
 > [!IMPORTANT]
 > Mobile Device Management (MDM) for Microsoft 365 を使用している場合は、追加の CNAME レコードを 2 つ作成する必要があります。手順は、他の 4 つの CNAME レコードと同じですが、次の表の値を入力します。 > (MDM がない場合は、この手順を省略できます。) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 時間  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hour  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 時間  <br/> |
    
 ::: moniker-end
 
@@ -268,12 +267,12 @@ DNS ホストの Web サイトで、既存の SPF レコードを編集するか
   
 1. 新規レコードのボックスに、下記から状況に合った値のセットを入力するか、コピーして貼り付けます。
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**TXT Value** <br/> |**TTL** <br/> |
-|TXT (テキスト)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |1 時間  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Host** <br/> |**TXT Value** <br/> |**TTL** <br/> |
+    |TXT (テキスト)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |1 時間  <br/> |
    
-   **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
+    **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
     
 2. 終了したら、レコードを保存します。
     
@@ -293,12 +292,12 @@ DNS ホストの Web サイトで、既存の SPF レコードを編集するか
   
 1. 新規レコードのボックスに、下記から状況に合った値のセットを入力するか、コピーして貼り付けます。
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type**|**Host**|**TXT Value**|**TTL**|
-|TXT (テキスト)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |1 時間|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type**|**Host**|**TXT Value**|**TTL**|
+    |TXT (テキスト)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |1 時間|
    
-   **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
+    **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
     
 2. 終了したら、レコードを保存します。
     
@@ -318,12 +317,12 @@ DNS ホストの Web サイトで、既存の SPF レコードを編集するか
   
 1. 新規レコードのボックスに、下記から状況に合った値のセットを入力するか、コピーして貼り付けます。
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type**|**Host**|**TXT Value**|**TTL**|
-|TXT (テキスト)|@|v=spf1 include:spf.protection.partner.outlook.cn -all> [!NOTE]> スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |1 時間|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type**|**Host**|**TXT Value**|**TTL**|
+    |TXT (テキスト)|@|v=spf1 include:spf.protection.partner.outlook.cn -all> [!NOTE]> スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |1 時間|
    
-   **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
+    **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
     
 2. 終了したら、レコードを保存します。
     
@@ -340,27 +339,27 @@ DNS ホストの Web サイトで、2 つの新しい SRV レコードを、一�
   
 1. 新規レコードごとのボックスに次の値を入力するか、コピーして貼り付けます。 **(DNS ホストでこれらの値が個別のフィールドとして用意されていない場合の SRV の作成については、下の注を参照してください。)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
-|SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 時間  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 時間  <br/> |
    
-  > [!NOTE]
-  >  **Name** の場合: これを **@** に設定することが DNS ホストで許可されていない場合、空白のままにします。 この方法は、Service 値のフィールドと Protocol 値のフィールドが DNS ホストに個別に用意されている場合に *のみ* 使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。 
-
->  **Service** と **Protocol** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、**Service** 値と **Protocol** 値をレコードの **Name** 値として指定する必要があります。 (注: DNS ホストによっては、**Name** フィールドが **Host**、**Hostname**、**Subdomain** など、他の名称になっている場合があります)。結合された値を設定するには、値をドットで区切って単一の文字列を作成します。  例: **Name**: _sip._tls 
-
->  **Priority**、**Weight**、**Port** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、これらをレコードの **Target** 値として指定する必要があります。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切り、末尾にドットを付けて単一の文字列を作成します。 値は、Priority、Weight、Port、Target の順で含める必要があります。 例: **Target**: 100 1 443 sipdir.online.lync.com. 
-
->  **Priority**、**Weight**、**Port** のバリエーション: 一部の DNS ホストでは、これらの必須フィールドすべてではないものの、その一部が個別に提供されています。 このような DNS ホスト サイトでは、個別に表示されない値を、レコードの **Target** 値の結合文字列として正しい順序で指定します。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切って、個別に表示されないフィールド用の単一の文字列を作成します。 値は、Priority、Weight、Port、Target の *順序通りに* 含める必要があります。ただし、個別のフィールドが用意されている値は除外します。 たとえば、Priority のフィールドが個別に用意されている場合は、Weight、Port、Target の値のみを次のように連結します。**Target**: 1 443 sipdir.online.lync.com 
-
-> **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
+    > [!NOTE]
+    >  **Name** の場合: これを **@** に設定することが DNS ホストで許可されていない場合、空白のままにします。 この方法は、Service 値のフィールドと Protocol 値のフィールドが DNS ホストに個別に用意されている場合に *のみ* 使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。 
+    > 
+    >  **Service** と **Protocol** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、**Service** 値と **Protocol** 値をレコードの **Name** 値として指定する必要があります。 (注: DNS ホストによっては、**Name** フィールドが **Host**、**Hostname**、**Subdomain** など、他の名称になっている場合があります)。結合された値を設定するには、値をドットで区切って単一の文字列を作成します。  例: **Name**: _sip._tls 
+    > 
+    >  **Priority**、**Weight**、**Port** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、これらをレコードの **Target** 値として指定する必要があります。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切り、末尾にドットを付けて単一の文字列を作成します。 値は、Priority、Weight、Port、Target の順で含める必要があります。 例: **Target**: 100 1 443 sipdir.online.lync.com. 
+    > 
+    >  **Priority**、**Weight**、**Port** のバリエーション: 一部の DNS ホストでは、これらの必須フィールドすべてではないものの、その一部が個別に提供されています。 このような DNS ホスト サイトでは、個別に表示されない値を、レコードの **Target** 値の結合文字列として正しい順序で指定します。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切って、個別に表示されないフィールド用の単一の文字列を作成します。 値は、Priority、Weight、Port、Target の *順序通りに* 含める必要があります。ただし、個別のフィールドが用意されている値は除外します。 たとえば、Priority のフィールドが個別に用意されている場合は、Weight、Port、Target の値のみを次のように連結します。**Target**: 1 443 sipdir.online.lync.com 
+    > 
+    > **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
   
 2. 終了したら、レコードを保存します。
     
-> [!NOTE]
->  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+    > [!NOTE]
+    >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ::: moniker-end
 
@@ -371,27 +370,27 @@ DNS ホストの Web サイトで、2 つの新しい SRV レコードを、一�
   
 1. 新規レコードごとのボックスに次の値を入力するか、コピーして貼り付けます。 **(DNS ホストでこれらの値が個別のフィールドとして用意されていない場合の SRV の作成については、下の注を参照してください。)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
-|SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 時間  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 時間  <br/> |
    
- > [!NOTE]
- >  **Name** の場合: これを **@** に設定することが DNS ホストで許可されていない場合、空白のままにします。 この方法は、Service 値のフィールドと Protocol 値のフィールドが DNS ホストに個別に用意されている場合に *のみ* 使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。 
-
->  **Service** と **Protocol** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、**Service** 値と **Protocol** 値をレコードの **Name** 値として指定する必要があります。 (注: DNS ホストによっては、**Name** フィールドが **Host**、**Hostname**、**Subdomain** など、他の名称になっている場合があります)。結合された値を設定するには、値をドットで区切って単一の文字列を作成します。 >  例: **Name**: _sip._tls 
-
->  **Priority**、**Weight**、**Port** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、これらをレコードの **Target** 値として指定する必要があります。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切り、末尾にドットを付けて単一の文字列を作成します。 値は、Priority、Weight、Port、Target の順で含める必要があります。 >  例: **Target**: 100 1 443 sipdir.online.lync.de. 
-
->  **Priority**、**Weight**、**Port** のバリエーション: 一部の DNS ホストでは、これらの必須フィールドすべてではないものの、その一部が個別に提供されています。 このような DNS ホスト サイトでは、個別に表示されない値を、レコードの **Target** 値の結合文字列として正しい順序で指定します。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切って、個別に表示されないフィールド用の単一の文字列を作成します。 値は、Priority、Weight、Port、Target の *順序通りに* 含める必要があります。ただし、個別のフィールドが用意されている値は除外します。 >  たとえば、Priority のフィールドが個別に用意されている場合は、Weight、Port、Target の値のみを次のように連結します。**Target**: 1 443 sipdir.online.lync.de 
-
->  **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
+    > [!NOTE]
+    >  **Name** の場合: これを **@** に設定することが DNS ホストで許可されていない場合、空白のままにします。 この方法は、Service 値のフィールドと Protocol 値のフィールドが DNS ホストに個別に用意されている場合に *のみ* 使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。 
+    > 
+    >  **Service** と **Protocol** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、**Service** 値と **Protocol** 値をレコードの **Name** 値として指定する必要があります。 (注: DNS ホストによっては、**Name** フィールドが **Host**、**Hostname**、**Subdomain** など、他の名称になっている場合があります)。結合された値を設定するには、値をドットで区切って単一の文字列を作成します。 >  例: **Name**: _sip._tls 
+    > 
+    >  **Priority**、**Weight**、**Port** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、これらをレコードの **Target** 値として指定する必要があります。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切り、末尾にドットを付けて単一の文字列を作成します。 値は、Priority、Weight、Port、Target の順で含める必要があります。 >  例: **Target**: 100 1 443 sipdir.online.lync.de. 
+    > 
+    >  **Priority**、**Weight**、**Port** のバリエーション: 一部の DNS ホストでは、これらの必須フィールドすべてではないものの、その一部が個別に提供されています。 このような DNS ホスト サイトでは、個別に表示されない値を、レコードの **Target** 値の結合文字列として正しい順序で指定します。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切って、個別に表示されないフィールド用の単一の文字列を作成します。 値は、Priority、Weight、Port、Target の *順序通りに* 含める必要があります。ただし、個別のフィールドが用意されている値は除外します。 >  たとえば、Priority のフィールドが個別に用意されている場合は、Weight、Port、Target の値のみを次のように連結します。**Target**: 1 443 sipdir.online.lync.de 
+    > 
+    >  **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
   
 2. 終了したら、レコードを保存します。
     
-> [!NOTE]
->  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+    > [!NOTE]
+    >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ::: moniker-end
 
@@ -402,27 +401,27 @@ DNS ホストの Web サイトで、2 つの新しい SRV レコードを、一�
   
 1. 新規レコードごとのボックスに次の値を入力するか、コピーして貼り付けます。 **(DNS ホストでこれらの値が個別のフィールドとして用意されていない場合の SRV の作成については、下の注を参照してください。)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
-|SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 時間  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Service)  <br/> |@  <br/> (@ が許可されていない場合は、空白のままにします)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 時間  <br/> |
    
- > [!NOTE]
- >  **Name** の場合: これを **@** に設定することが DNS ホストで許可されていない場合、空白のままにします。 この方法は、Service 値のフィールドと Protocol 値のフィールドが DNS ホストに個別に用意されている場合に *のみ* 使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。 
-
->  **Service** と **Protocol** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、**Service** 値と **Protocol** 値をレコードの **Name** 値として指定する必要があります。 (注: DNS ホストによっては、**Name** フィールドが **Host**、**Hostname**、**Subdomain** など、他の名称になっている場合があります)。結合された値を設定するには、値をドットで区切って単一の文字列を作成します。 >  例: **Name**: _sip._tls 
-
->  **Priority**、**Weight**、**Port** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、これらをレコードの **Target** 値として指定する必要があります。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切り、末尾にドットを付けて単一の文字列を作成します。 値は、Priority、Weight、Port、Target の順で含める必要があります。 >  例: **Target**: 100 1 443 sipdir.online.partner.lync.cn. 
-
->  **Priority**、**Weight**、**Port** のバリエーション: 一部の DNS ホストでは、これらの必須フィールドすべてではないものの、その一部が個別に提供されています。 このような DNS ホスト サイトでは、個別に表示されない値を、レコードの **Target** 値の結合文字列として正しい順序で指定します。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切って、個別に表示されないフィールド用の単一の文字列を作成します。 値は、Priority、Weight、Port、Target の *順序通りに* 含める必要があります。ただし、個別のフィールドが用意されている値は除外します。 >  たとえば、Priority のフィールドが個別に用意されている場合は、Weight、Port、Target の値のみを次のように連結します。**Target**: 1 443 sipdir.online.partner.lync.cn 
-
->  **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
+    > [!NOTE]
+    >  **Name** の場合: これを **@** に設定することが DNS ホストで許可されていない場合、空白のままにします。 この方法は、Service 値のフィールドと Protocol 値のフィールドが DNS ホストに個別に用意されている場合に *のみ* 使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。 
+    > 
+    >  **Service** と **Protocol** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、**Service** 値と **Protocol** 値をレコードの **Name** 値として指定する必要があります。 (注: DNS ホストによっては、**Name** フィールドが **Host**、**Hostname**、**Subdomain** など、他の名称になっている場合があります)。結合された値を設定するには、値をドットで区切って単一の文字列を作成します。 >  例: **Name**: _sip._tls 
+    > 
+    >  **Priority**、**Weight**、**Port** の場合: DNS ホストの SRV レコードにこれらのフィールドが提供されていない場合は、これらをレコードの **Target** 値として指定する必要があります。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切り、末尾にドットを付けて単一の文字列を作成します。 値は、Priority、Weight、Port、Target の順で含める必要があります。 >  例: **Target**: 100 1 443 sipdir.online.partner.lync.cn. 
+    > 
+    >  **Priority**、**Weight**、**Port** のバリエーション: 一部の DNS ホストでは、これらの必須フィールドすべてではないものの、その一部が個別に提供されています。 このような DNS ホスト サイトでは、個別に表示されない値を、レコードの **Target** 値の結合文字列として正しい順序で指定します。 (注: DNS ホストによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。結合された値を設定するには、値をスペースで区切って、個別に表示されないフィールド用の単一の文字列を作成します。 値は、Priority、Weight、Port、Target の *順序通りに* 含める必要があります。ただし、個別のフィールドが用意されている値は除外します。 >  たとえば、Priority のフィールドが個別に用意されている場合は、Weight、Port、Target の値のみを次のように連結します。**Target**: 1 443 sipdir.online.partner.lync.cn 
+    > 
+    >  **TTL** の場合: この値は、**1 時間**または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 
   
 2. 終了したら、レコードを保存します。
     
-> [!NOTE]
->  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
+    > [!NOTE]
+    >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ::: moniker-end
 
