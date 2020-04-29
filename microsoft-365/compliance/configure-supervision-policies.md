@@ -19,17 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632372"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921459"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Office 365 で監督ポリシーを構成する
 
 >[!IMPORTANT]
->このトピックは、Microsoft 365 サブスクリプションの監督ポリシーを構成する場合に適用されます。 Microsoft 365 サブスクリプションの通信コンプライアンスを構成する場合は、「 [microsoft 365 で通信コンプライアンスを構成](communication-compliance-configure.md)する」を参照してください。
+>365 2020 年2月に、Microsoft コンプライアンスのリリースの後、Office 365 の監督は廃止されています。 読み取り専用アクセスの延長期間が過ぎると、監督ポリシーは作成できなくなり、ポリシーは最終的に削除されます。
+>
+>監督を使用する場合は、次の点に注意してください。
+>
+>- 2020年6月15日から、テナントは新しい監督ポリシーを作成することができません。
+>- 2020年8月31日から、既存のポリシーは新しいメッセージのキャプチャを停止します。
+>- 2020年10月の26th を開始すると、既存のポリシーが削除されます。
+>
+>新しい[コミュニケーションコンプライアンス](communication-compliance.md)ソリューションを使用して、より豊富なインテリジェント機能を備えた通信の監視または規制要件に対処するには、現在、Office 365 の監視を使用している、または監督を使用しているお客様に対して、積極的にお勧めします。
 
 監督ポリシーを使って、内部レビューまたは外部レビューによる調査のために従業員の通信をキャプチャします。 監督ポリシーが組織内の通信を監視する方法の詳細については、「[Office 365 の監督ポリシー](supervision-policies.md)」を参照してください。
 

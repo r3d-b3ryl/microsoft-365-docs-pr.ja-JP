@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービスのパスワードリセットツールを使用してパスワードをリセットする方法について説明します。
-ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617148"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919437"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
@@ -65,12 +65,12 @@ ms.locfileid: "43617148"
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**設定** \> **セキュリティ&amp;プライバシー** ] ページに移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**設定** \>の**設定** \> ] [**セキュリティ&amp;プライバシー** ] ページに移動します。
 
 ::: moniker-end
 
    
-2. [**ユーザーが自分のパスワードを再設定できる**ようにする] で、 **Azure AD 管理センター**のリンクを選択します。 無料で Azure を取得できます。
+2. [**セルフサービスのパスワードのリセット**] を選択し、[ **Azure portal に移動**] のリンクを選択して、セルフサービスのパスワードのリセットを有効にします。 無料で Azure を取得できます。
   
 3. 左側のナビゲーションで [**ユーザー** ] を選択し、[**パスワードのリセット**] を選択します。
   

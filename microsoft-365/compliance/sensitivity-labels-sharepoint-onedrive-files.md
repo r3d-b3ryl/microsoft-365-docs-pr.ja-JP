@@ -1,5 +1,5 @@
 ---
-title: SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする
+title: SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635785"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930147"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)
 
@@ -58,7 +58,7 @@ ms.locfileid: "43635785"
 
 いつでもこのプレビューの選択を解除することができます。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 これらの機能は、[機密ラベル](sensitivity-labels.md)に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -104,7 +104,7 @@ ms.locfileid: "43635785"
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>プレビュー用の SharePoint Online 管理シェルの準備
 
-プレビューを有効にする前に、SharePoint Online Management Shell バージョン16.0.19418.12000 以降を実行していることを確認してください。 最新バージョンが既にある場合は、プレビューを有効にすることができます。
+PowerShell を使用してプレビューを有効にするには、SharePoint Online Management Shell バージョン16.0.19418.12000 以降を実行していることを確認してください。 最新バージョンが既にある場合は、プレビューを有効にすることができます。
 
 1. PowerShell ギャラリーから以前のバージョンの SharePoint Online 管理シェルをインストールした場合、次のコマンドレットを実行してモジュールを更新できます。
 
@@ -119,7 +119,6 @@ ms.locfileid: "43635785"
 4. 言語を選択し、[**ダウンロード**] をクリックします。
 
 5. x64 および x86 の .msi ファイルのいずれかを選択します。 64ビット版の Windows または x86 ファイル (32 ビット版を実行している場合) を実行する場合は、x64 ファイルをダウンロードしてください。 不明な場合は、[どのバージョンの Windows オペレーティングシステムを実行](https://support.microsoft.com/help/13443/windows-which-operating-system)しているかを確認します。
-
 
 6. ファイルをダウンロードした後、ファイルを実行し、セットアップウィザードの手順に従います。
 
@@ -137,6 +136,25 @@ ms.locfileid: "43635785"
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. Office 365 の複数地域: 残りの各地域の場所について、手順1と2を繰り返します。
+
+## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>コンプライアンスセンターを使用して機密ラベルのサポートを有効にする
+
+このオプションは、現在、プレビューを有効にする代替方法としてテナントにロールアウトされています。
+
+組織のグローバル管理者には、秘密度ラベルのすべての側面を作成および管理するための完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[機密ラベルの作成と管理に必要なアクセス許可](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)」を参照してください。
+
+1. [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com/)にサインインし、[**ソリューション** > **情報保護**] に移動します。
+    
+    このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。 
+
+2. [**ラベル**] タブで、Office online ファイルのコンテンツを処理する機能を有効にするメッセージが表示された場合は、[**今すぐ有効**にする] を選択します。
+    
+    ![[今すぐ開始] ボタンをオンにして、Office Online の機密ラベルを有効にする](../media/sensitivity-labels-turn-on-banner.png)
+    
+    コマンドはすぐに実行され、ページが次に更新されるときに、メッセージまたはボタンが表示されなくなります。 
+
+> [!NOTE]
+> 複数地域の Office 365 を使用している場合は、PowerShell を使用して、すべての地域の場所に対してこれらの機能を有効にする必要があります。 手順については、前のセクションを参照してください。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>機密ラベルを作成または変更した後のロールアウトをスケジュールする
 
@@ -164,6 +182,6 @@ Microsoft 365 コンプライアンスセンターで機密ラベルを作成ま
     Set-SPOTenant -EnableAIPIntegration $false
     ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 SharePoint と OneDrive で Office ファイルの機密ラベルを有効にしたので、自動ラベル付けポリシーを使用してこれらのファイルに自動的にラベル付けすることを検討してください。 詳細については、「[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」を参照してください。

@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 990e39484b7f3f5b26b39e52f9344da0a3ffa290
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708396"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919684"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
 >[!IMPORTANT]
 >このトピックは、Microsoft 365 サブスクリプションで通信のコンプライアンスを構成する場合に適用されます。 Microsoft 365 サブスクリプションの監督ポリシーを構成する場合は、「 [microsoft 365 の監督の構成](supervision-policies.md)」を参照してください。
 
-コミュニケーションコンプライアンスポリシーを使用して、内部または外部のレビューアーによる調査のために従業員の通信をキャプチャします。 通信コンプライアンスポリシーが組織内の通信の監視にどのように役立つかについては、「 [Microsoft 365 の通信コンプライアンスポリシー](communication-compliance.md)」を参照してください。 Contoso 社が Microsoft Teams および Exchange Online の通信で不快な言葉を監視するために、どのように通信コンプライアンスポリシーを構成したかを確認したい場合は、この[ケーススタディ](communication-compliance-case-study.md)をご確認ください。
+コミュニケーションコンプライアンスポリシーを使用して、内部または外部のレビューアーによる調査のために従業員の通信をキャプチャします。 通信コンプライアンスポリシーが組織内の通信の監視にどのように役立つかについては、「 [Microsoft 365 の通信コンプライアンスポリシー](communication-compliance.md)」を参照してください。 Microsoft Teams、Exchange Online、Yammer の通信で不快な言葉を監視するために、Contoso 社がどのようにコミュニケーションコンプライアンスポリシーを構成したかを確認したい場合は、この[ケーススタディー](communication-compliance-case-study.md)をご覧ください。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -106,7 +106,16 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 - [配布グループを作成して管理する](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Microsoft 365 グループの概要](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-4-required-create-a-communication-compliance-policy"></a>手順 4 (必須): 通信コンプライアンスポリシーを作成する
+## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>手順 4 (省略可能): Yammer テナントがネイティブモードになっていることを確認する
+
+ネイティブモードでは、すべての Yammer ユーザーが Azure Active Directory (AAD)、すべてのグループが Office 365 グループ、すべてのファイルが SharePoint Online に保存されます。 Yammer テナントは、コミュニケーションコンプライアンスポリシーのネイティブモードになっている必要があります。これをスキャンして、Yammer のプライベートメッセージとコミュニティの会話で、危険な会話をスキャンして識別します。
+
+ネイティブモードでの Yammer の構成の詳細については、以下を参照してください。
+
+- [Microsoft 365 の Yammer ネイティブモードの概要](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
+- [Microsoft 365 のネイティブ モードで Yammer ネットワークを構成する](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+
+## <a name="step-5-required-create-a-communication-compliance-policy"></a>手順 5 (必須): 通信コンプライアンスポリシーを作成する
   
 >[!Important]
 >PowerShell を使用して通信コンプライアンスポリシーを作成および管理することはサポートされていません。 これらのポリシーを作成および管理するには、 [Microsoft 365 コミュニケーションコンプライアンスソリューション](https://compliance.microsoft.com/supervisoryreview)のポリシー管理コントロールを使用する必要があります。
@@ -131,7 +140,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
     - ポリシーに名前と説明を付けます。 ポリシー名は、ポリシーの作成後に変更することはできません。
     - 組織内のすべてのユーザー、特定のユーザーとグループ、または除外する他のユーザーとグループを含む、監督するユーザーまたはグループを選択します。
     - ポリシーのレビュー担当者を選択します。 レビュー担当者は個々のユーザーで、すべての校閲者が Exchange Online でホストされたメールボックスを持っている必要があります。
-    - Exchange、Microsoft Teams、Skype for Business など、スキャンする通信チャネルを選択します。 また、Microsoft 365 でコネクタを構成した場合は、サードパーティのソースをスキャンすることもできます。
+    - Exchange、Microsoft Teams、Yammer、または Skype for Business など、スキャンする通信チャネルを選択します。 また、Microsoft 365 でコネクタを構成した場合は、サードパーティのソースをスキャンすることもできます。
     - 受信、送信、内部通信など、監視する通信方向を選択します。
     - 通信コンプライアンスポリシーの[条件](communication-compliance-feature-reference.md#ConditionalSettings)を定義します。 [メッセージ アドレス]、[キーワード]、[ファイルの種類]、および [サイズの一致条件] の中から選ぶことができます。
     - 機密情報の種類を含めるかどうかを選択します。 この手順では、既定およびカスタムの機密情報の種類を選択できます。 コミュニケーションコンプライアンスポリシーウィザードで、既存のカスタムの機密情報の種類またはカスタムキーワードディクショナリから選択します。 これらの項目は、必要に応じてウィザードを実行する前に作成できます。 コミュニケーションコンプライアンスポリシーウィザードから、新しい機密情報の種類を作成することもできます。
@@ -147,7 +156,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 6. [**ポリシーが作成**されました] ページが表示され、ポリシーがアクティブ化され、どの通信が取得されるかについてのガイドラインが表示されます。
 
-## <a name="step-5-optional-create-employee-notice-templates"></a>手順 5 (省略可能): 従業員の通知テンプレートを作成する
+## <a name="step-6-optional-create-employee-notice-templates"></a>手順 6 (オプション): 従業員の通知テンプレートを作成する
 
 関連付けられた従業員にアラーム通知を送信してポリシーの警告に応答するオプションを使用する場合は、組織内に少なくとも1つの通知テンプレートを作成する必要があります。 通知テンプレートフィールドは、通知修復プロセスの一環として送信される前に編集でき、コミュニケーションコンプライアンスポリシーごとにカスタマイズされた通知テンプレートを作成することをお勧めします。
 
@@ -167,14 +176,14 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 5. [**保存**] を選択して、通知テンプレートを作成して保存します。
 
-## <a name="step-6-optional-test-your-communication-compliance-policy"></a>手順 6 (オプション): 通信コンプライアンスポリシーをテストする
+## <a name="step-7-optional-test-your-communication-compliance-policy"></a>手順 7 (オプション): 通信コンプライアンスポリシーをテストする
 
 通信コンプライアンスポリシーを作成した後、それをテストして、定義した条件がポリシーによって適切に適用されていることを確認することをお勧めします。 また、通信コンプライアンスポリシーに機密情報の種類が含まれている場合は、[データ損失防止 (DLP) ポリシーをテスト](create-test-tune-dlp-policy.md)することもできます。 テストする通信が取得されるように、ポリシーの時間をアクティブにする必要があることを確認してください。
 
 コミュニケーションコンプライアンスポリシーをテストするには、次の手順を実行します。
 
-1. テストするポリシーで定義された、監視対象のユーザーとしてサインインした状態で、電子メールクライアントまたは Microsoft Teams を開きます。
-2. コミュニケーションコンプライアンスポリシーで定義した条件を満たすメールまたは Microsoft Teams のチャットを送信します。 このテストには、キーワード、添付ファイルのサイズ、ドメインなどを指定できます。ポリシーに構成された条件設定が制限を超えているか、厳しすぎるかを確認してください。
+1. テストするポリシーで定義された、監視対象のユーザーとしてサインインしているときに、電子メールクライアント、Microsoft Teams、または Yammer を開きます。
+2. 通信コンプライアンスポリシーで定義した条件を満たすメール、Microsoft Teams チャット、または Yammer のメッセージを送信します。 このテストには、キーワード、添付ファイルのサイズ、ドメインなどを指定できます。ポリシーに構成された条件設定が制限を超えているか、厳しすぎるかを確認してください。
 
     > [!NOTE]
     > すべてのソースチャネルでの通信は、ポリシー内で完全に処理されるまでに最大24時間かかる場合があります。

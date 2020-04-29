@@ -1,6 +1,6 @@
 ---
-title: ケーススタディ-Contoso 社が Microsoft Teams および Exchange の通信に対して不快な言語ポリシーを迅速に構成する
-description: Contoso 社のケーススタディと、Microsoft Teams および Exchange Online コミュニケーションで不快な言葉を監視するための通信コンプライアンスポリシーを迅速に構成する方法
+title: ケーススタディ-Contoso 社は、Microsoft Teams、Exchange、Yammer の通信に対して、不快な言語ポリシーを迅速に構成します。
+description: Contoso 社のケーススタディと、Microsoft Teams、Exchange Online、Yammer の通信で不快な言葉を監視するために、コミュニケーションコンプライアンスポリシーを迅速に構成する方法について説明します。
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637179"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919714"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>ケーススタディ-Contoso 社が Microsoft Teams および Exchange の通信に対して不快な言語ポリシーを迅速に構成する
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケーススタディ-Contoso 社は、Microsoft Teams、Exchange、Yammer の通信に対して、不快な言語ポリシーを迅速に構成します。
 
-Microsoft 365 の通信コンプライアンスは、組織内の不適切なメッセージに対する修復措置を検出、取得、および解決するのに役立つため、コミュニケーションリスクを最小限に抑えることができます。 定義済みおよびカスタムのポリシーを使用すると、ポリシーの一致に関する内部通信と外部通信をスキャンして、指定したレビュー担当者がそれらを調査できるようにすることができます。 レビューアーは、組織内のスキャンされた電子メール、Microsoft Teams、またはサードパーティのコミュニケーションを調査し、適切な修復処置を行って、組織のメッセージ標準に準拠していることを確認できます。
+Microsoft 365 の通信コンプライアンスは、組織内の不適切なメッセージに対する修復措置を検出、取得、および解決するのに役立つため、コミュニケーションリスクを最小限に抑えることができます。 定義済みおよびカスタムのポリシーを使用すると、ポリシーの一致に関する内部通信と外部通信をスキャンして、指定したレビュー担当者がそれらを調査できるようにすることができます。 レビューアーは、スキャンされた電子メール、Microsoft Teams、Yammer、または組織内のサードパーティの通信を調査し、適切な修復処置を行って、組織のメッセージ標準に準拠していることを確認できます。
 
-Contoso Corporation は、不快感を与える言葉を監視するポリシーをすばやく構成する必要がある架空の組織です。 従業員に対しては主に Microsoft 365 を使用していますが、従業員には会社のポリシーを適用するための新しい要件があります。 Contoso 社の IT 管理者およびコンプライアンスの専門家は、Microsoft 365 の使用に関する基本事項について基本的な理解を深めており、コミュニケーションのコンプライアンスをすばやく始める方法についてのエンドツーエンドのガイダンスを求めています。
+Contoso Corporation は、不快感を与える言葉を監視するポリシーをすばやく構成する必要がある架空の組織です。 従業員は主に、メール、Microsoft Teams、Yammer のサポートに Microsoft 365 を使用していましたが、workplace 嫌がらせに関して会社のポリシーを適用するための新しい要件があります。 Contoso 社の IT 管理者およびコンプライアンスの専門家は、Microsoft 365 の使用に関する基本事項について基本的な理解を深めており、コミュニケーションのコンプライアンスをすばやく始める方法についてのエンドツーエンドのガイダンスを求めています。
 
 このケーススタディでは、有害な言語の通信を監視するための通信コンプライアンスポリシーをすばやく構成するための基本事項について説明します。 このガイダンスには次のものが含まれます。
 
@@ -41,7 +41,7 @@ Contoso Corporation は、不快感を与える言葉を監視するポリシー
 
 ## <a name="step-1---planning-for-communication-compliance"></a>手順 1-通信のコンプライアンスを計画する
 
-Contoso 社の IT 管理者およびコンプライアンスの専門家は、Microsoft 365 のコンプライアンスソリューションに関するオンラインウェビナーに参加しており、コミュニケーションコンプライアンスポリシーが、workplace 嫌がらせを削減するために更新された企業ポリシー要件を満たすのを支援することを決定しました。 共同作業では、Exchange Online で送信された電子メールメッセージ内の Microsoft Teams で送信されるチャットに対して、不快な言葉を監視する通信コンプライアンスポリシーを作成して有効にする計画が策定されました。 プランには、次の内容が含まれます。
+Contoso 社の IT 管理者およびコンプライアンスの専門家は、Microsoft 365 のコンプライアンスソリューションに関するオンラインウェビナーに参加しており、コミュニケーションコンプライアンスポリシーが、workplace 嫌がらせを削減するために更新された企業ポリシー要件を満たすのを支援することを決定しました。 共同作業では、Microsoft Teams で送信されるチャット、Yammer のプライベートメッセージ、コミュニティの会話、Exchange Online で送信された電子メールメッセージなどを監視するための、通信コンプライアンスポリシーを作成し、有効にするための計画が策定されました。 プランには、次の内容が含まれます。
 
 - 通信コンプライアンス機能にアクセスする必要がある IT 管理者。
 - コミュニケーションポリシーを作成および管理する必要があるコンプライアンススペシャリスト。
@@ -146,6 +146,12 @@ Microsoft 365 管理センターから開始して通信コンプライアンス
 通信のコンプライアンスでは、監査ログを使用して通知を表示し、レビュー担当者が行った修復アクションを追跡する必要があります。 監査ログは、定義された組織のポリシーに関連付けられているすべてのアクティビティの要約です。または、通信コンプライアンスポリシーに変更がある場合はいつでも、その概要です。
 
 Contoso 社の IT 管理者は、監査を有効[にするため](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)の手順を確認して完了します。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できることを示すメッセージが表示されます。 Contoso 社の IT 管理者は、このアクションを1回だけ実行する必要があります。
+
+### <a name="configuring-yammer-tenant-for-native-mode"></a>ネイティブモードで Yammer テナントを構成する
+
+通信のコンプライアンスを行うには、組織の Yammer テナントがネイティブモードになっていることが必要です。これは、プライベートメッセージやパブリックコミュニティの会話で不快な言葉を監視するためです。
+
+Contoso 社の IT 管理者は、 [microsoft 365 トピックの Yammer ネイティブモードの概要](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)にある情報を確認し、「 [Microsoft 365 のネイティブモードの Yammer ネットワークを構成](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)する」の手順に従って移行ツールを実行することを確認してください。
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>スコープ内ユーザーのグループの設定
 

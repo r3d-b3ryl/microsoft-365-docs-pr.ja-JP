@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634189"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919674"
 ---
 # <a name="communication-compliance-feature-reference"></a>コミュニケーションコンプライアンス機能のリファレンス
 
@@ -43,13 +43,13 @@ Microsoft 365 組織の通信コンプライアンスポリシーは、Microsoft
 
 |**領域**|**ポリシーテンプレート**|**詳細**|
 |:-----|:-----|:-----|
-| **不快な言葉と嫌がらせ対策** | 不快な言葉の通信を監視する | -場所: Exchange、Teams、Skype for Business <br> -Direction: Inbound、Outbound、Internal <br> -レビューのパーセンテージ: 100% <br> -条件: 不快感を持つ言語の分類子 |
-| **機密情報** | 機密情報の通信を監視する | -場所: Exchange、Teams、Skype for Business <br> -Direction: Inbound、Outbound、Internal <br> -レビューのパーセンテージ: 10% <br> -条件: 機密情報、すぐに使えるコンテンツパターンと種類、ユーザー辞書オプション、1 MB を超える添付ファイル |
-| **コンプライアンス** | 財務規制へのコンプライアンスに関連する情報の通信を監視する | -場所: Exchange、Teams、Skype for Business <br> -方向: 受信、送信 <br> -レビューのパーセンテージ: 10% <br> -条件: ユーザー辞書オプション、1 MB より大きい添付ファイル |
+| **不快な言葉と嫌がらせ対策** | 不快な言葉の通信を監視する | -場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> -Direction: Inbound、Outbound、Internal <br> -レビューのパーセンテージ: 100% <br> -条件: 不快感を持つ言語の分類子 |
+| **機密情報** | 機密情報の通信を監視する | -場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> -Direction: Inbound、Outbound、Internal <br> -レビューのパーセンテージ: 10% <br> -条件: 機密情報、すぐに使えるコンテンツパターンと種類、ユーザー辞書オプション、1 MB を超える添付ファイル |
+| **コンプライアンス** | 財務規制へのコンプライアンスに関連する情報の通信を監視する | -場所: Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> -方向: 受信、送信 <br> -レビューのパーセンテージ: 10% <br> -条件: ユーザー辞書オプション、1 MB より大きい添付ファイル |
 
 ## <a name="supervised-users"></a>監督対象ユーザー
 
-通信コンプライアンスの使用を開始する前に、コミュニケーションをレビューする必要があるユーザーを決定する必要があります。 ポリシーで、ユーザーの電子メールアドレスは、監督するユーザーまたはグループを識別します。 これらのグループの例としては、Microsoft 365 グループ、Exchange ベースの配布リスト、Microsoft Teams チャネルなどがあります。 特定の除外グループまたはグループの一覧を使用して、特定のユーザーまたはグループをスキャン対象から除外することもできます。
+通信コンプライアンスの使用を開始する前に、コミュニケーションをレビューする必要があるユーザーを決定する必要があります。 ポリシーで、ユーザーの電子メールアドレスは、監督するユーザーまたはグループを識別します。 これらのグループの例としては、Microsoft 365 グループ、Exchange ベースの配布リスト、Yammer コミュニティ、Microsoft Teams チャネルなどがあります。 特定の除外グループまたはグループの一覧を使用して、特定のユーザーまたはグループをスキャン対象から除外することもできます。
 
 >[!IMPORTANT]
 >通信コンプライアンスポリシーでカバーされるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。既存の Enterprise E5 プランを所有しておらず、通信のコンプライアンスを試行したい場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
@@ -75,6 +75,8 @@ Microsoft 365 組織の通信コンプライアンスポリシーは、Microsoft
 
 - **Exchange 電子メール**: Microsoft 365 または Office 365 サブスクリプションの一部として exchange Online でホストされているメールボックスは、すべてメッセージスキャンの対象になります。 通信コンプライアンスポリシーの条件に一致する Exchange 電子メールメッセージと添付ファイルは、処理に最大24時間かかる場合があります。 通信コンプライアンスに対してサポートされている添付ファイルの種類は、 [Exchange メールフロールールの内容の検査でサポートさ](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)れているファイルの種類と同じです。
 
+- **Yammer**: yammer コミュニティのプライベートメッセージや公開会話、関連付けられた添付ファイルをスキャンできます。 Yammer を定義済みチャネルとして含む通信コンプライアンスポリシーにユーザーが追加されると、そのユーザーがメンバーになっているすべての Yammer コミュニティ間の通信がスキャンプロセスに含まれます。 通信コンプライアンスポリシーの条件に一致する Yammer チャットおよび添付ファイルは、処理に最大24時間かかる場合があります。 Yammer の通信と添付ファイルを監視するには、yammer が[ネイティブモード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。 ネイティブモードでは、すべての Yammer ユーザーが Azure Active Directory (AAD)、すべてのグループが Office 365 グループ、すべてのファイルが SharePoint Online に保存されます。
+
 - **Skype For Business online**: Skype For business online のチャット通信と関連付けられた添付ファイルは、監視できます。 Skype for Business Online チャットの通信コンプライアンスポリシー条件は、処理に最大24時間かかる場合があります。 コールバック会話は、 [Skype For Business Online に保存された以前の会話](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)からソースされています。  次のグループ管理構成を使用して、Skype for Business Online でのユーザーチャット通信を監督します。
 
     - **Skype For Business Online チャット通信の場合**: 個々のユーザーを割り当てるか、または[配布グループ](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)を通信コンプライアンスポリシーに割り当てます。 この設定は、一対一または一対多のユーザー/チャットの関係で使用します。
@@ -84,7 +86,6 @@ Microsoft 365 組織の通信コンプライアンスポリシーは、Microsoft
     - [インスタント Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [LinkedIn](archive-linkedin-data.md)
-    - SAP SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [カスタムデータコネクタ](archiving-third-party-data.md)
 
@@ -169,7 +170,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 入力してコンマで区切る各単語は個別に適用されます (電子メールまたは添付ファイルに適用するポリシー条件には、1つの単語のみを適用する必要があります)。 たとえば、条件を使用して、**メッセージにこれらの単語のいずれかが含まれている**場合は、「銀行型」、「confidential」、「insider 取り引き」をコンマ (銀行、社外秘、「insider 取り引き」) で区切ったものを使用します。 このポリシーは、"銀行"、"confidential"、または "insider トレーディング" という単語を含むメッセージに適用されます。 このポリシー条件を適用するには、これらの単語または語句のいずれか1つのみが必要です。 メッセージまたは添付ファイル内の単語は、入力した内容と正確に一致する必要があります。
 
 >[!IMPORTANT]
->ユーザー辞書ファイルをインポートする場合は、それぞれの単語または語句を復帰と改行で区切る必要があります。 <br> 以下に例を示します。 <br><br>
+>ユーザー辞書ファイルをインポートする場合は、それぞれの単語または語句を復帰と改行で区切る必要があります。 <br> 例: <br><br>
 >*銀行* <br>
 >*機密* <br>
 >*insider トレーディング*
@@ -196,11 +197,11 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 
 |**Field**|**Required**| **詳細** |
 |:-----|:-----|:-----|
-|**テンプレート名** | 必要 | 修復時に通知ワークフローで選択する通知テンプレートのフレンドリ名。テキスト文字がサポートされています。 |
-| **[送信者のアドレス]** | 必要 | サブスクリプションの Active Directory から選択された、ポリシーが一致する従業員にメッセージを送信する1人以上のユーザーまたはグループのアドレス。 |
+|**テンプレート名** | はい | 修復時に通知ワークフローで選択する通知テンプレートのフレンドリ名。テキスト文字がサポートされています。 |
+| **[送信者のアドレス]** | はい | サブスクリプションの Active Directory から選択された、ポリシーが一致する従業員にメッセージを送信する1人以上のユーザーまたはグループのアドレス。 |
 | **CC および BCC アドレス** | いいえ | サブスクリプションの Active Directory から選択されたポリシーの一致を通知するオプションのユーザーまたはグループ。 |
 | **Subject** | はい | メッセージの件名行に表示される情報は、テキスト文字をサポートしています。 |
-| **メッセージ本文** | 必要 | メッセージ本文に表示される情報は、テキストまたは HTML 値をサポートしています。 |
+| **メッセージ本文** | はい | メッセージ本文に表示される情報は、テキストまたは HTML 値をサポートしています。 |
 
 ### <a name="html-for-notices"></a>通知用の HTML
 
@@ -233,10 +234,10 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 | **添付ファイルあり** | メッセージ内の添付ファイルの存在。 |
 | **アイテム クラス** | メッセージの種類、電子メール、Microsoft teams chat、Bloonmberg などに基づいたメッセージの送信元。 |
 | **受信者のドメイン** | メッセージが送信されたドメイン。 通常、このドメインは Microsoft 365 サブスクリプションドメインとして既定で使用されます。 |
-| **Recipient** | メッセージが送信されたユーザー。 |
+| **[受信者]** | メッセージが送信されたユーザー。 |
 | **Sender** | メッセージを送信したユーザー。 |
 | **送信者ドメイン** | メッセージを送信したドメイン。 |
-| **サイズ** | メッセージのサイズ (KB 単位)。 |
+| **[サイズ]** | メッセージのサイズ (KB 単位)。 |
 | **件名/タイトル** | メッセージの件名またはチャットのタイトル。 |
 | **Tags** | メッセージに割り当てられているタグ (*疑わしい*、*準拠*、または*非準拠*)。 |
 | **エスカレート先** | メッセージエスカレーションアクションの一部として含まれるユーザー名。 |

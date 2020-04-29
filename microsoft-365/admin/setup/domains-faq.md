@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: ドメインの詳細については、よく寄せられる質問の回答を参照してください。
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627596"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919483"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
@@ -492,7 +492,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
         
     4. もう 1 つのメール システム上のユーザーへのメール送信をテストします。例えば、ユーザー C にメールを送信します。このメールは、元のサーバーにあるユーザー C のメールボックスに送信されるはずです。
         
-    5. 外部のアカウントから、またはもう 1 つのメール システム上の従業員のメール アカウントからのメールについて、もう 1 つのメール システムで転送が正しく設定されていることを確認します。たとえば、ユーザー C の元のサーバーのアカウントまたは Hotmail アカウントからユーザー A にメールを送り、ユーザー A の Office 365 メールボックスに届くことを確認します。
+    5. 外部アカウントから、または他の電子メールシステムの従業員の電子メールアカウントから、他のメールシステムで転送が正しく設定されていることを確認します。たとえば、User C の元のサーバーアカウントまたは Hotmail アカウントから、ユーザー A に電子メールを送信して、そのメールがユーザー A の Office 365 メールボックスに届くことを確認します。
         
 9. メールボックスのコンテンツの移動
     

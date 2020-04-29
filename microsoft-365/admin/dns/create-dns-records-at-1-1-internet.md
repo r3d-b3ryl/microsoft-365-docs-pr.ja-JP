@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを IONOS 用に 1&1 に設定する方法について説明します。
-ms.openlocfilehash: 9e6994b1906293cb249bf64101deaeb94a033c81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a80f06287b7e4efe03804248d52b4ef43fc67b26
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629769"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919651"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>IONOS の 1&1 で DNS レコードを作成する
 
@@ -36,14 +36,14 @@ ms.locfileid: "43629769"
   
 これらのレコードを 1&1 IONOS に追加すると、使用しているドメインが、Microsoft サービスで機能するように設定されます。
   
-Microsoft を使用した web サイトのホストと DNS の詳細については、「 [microsoft とのパブリック web サイトの使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)」を参照してください。
+Microsoft での Web サイト向け Web ホスティングと DNS の詳細については、「[Microsoft での一般向け Web サイトの使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)」を参照してください。
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
+> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 
-ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
+Microsoft のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -67,9 +67,9 @@ Microsoft を使用した web サイトのホストと DNS の詳細について
     ||||
     |:-----|:-----|:-----|
     |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-    |TXT  <br/> |(このフィールドは空白のままにしておきます)  <br/> |MS=ms *XXXXXXXX*  <br/> 注: これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(このフィールドは空白のままにしておきます)  <br/> |MS=ms *XXXXXXXX*  <br/> 注: これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. **[保存]** を選択します。
+7. [**保存**] を選択します。
     
 8. [**保存**] をもう一度選択します。 
     
@@ -77,11 +77,11 @@ Microsoft を使用した web サイトのホストと DNS の詳細について
     
 10. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft 365 に戻り、Microsoft 365 にレコードを検索するよう要求します。
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft 365 に戻り、Microsoft 365 にレコードの検索をリクエストします。
   
-Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. Microsoft 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**設定** \> ] ページに移動します。
+1. Microsoft 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
 2. **[ドメイン]** ページで、確認するドメインを選択します。 
@@ -91,7 +91,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
 4. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
+> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにする
 <a name="BKMK_add_MX"> </a>
@@ -109,7 +109,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
 4. [**ドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
     
-5. In the **MX Records** section, in the ** Mail Exchanger (MX Record) ** area, select **Other mail server**.<br/>(下へスクロールしなければならないことがあります。)<br/>![1&amp;1-BP-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. [ **Mx Records** ] セクションの [ **MAIL エクスチェンジャー (MX Record)** ] 領域で、[**その他のメールサーバー**] を選択します。<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
 6. 既に他の MX レコードがある場合は、それぞれのレコードを選び、キーボードの **Delete** キーを押して、レコードを削除します<br/>(登録されている MX レコードがない場合は、次の手順に進みます)。<br/>![1&amp;1-BP-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
@@ -117,11 +117,11 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
     |**MX 1**|**Priority**|
     |:-----|:-----|
-    | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/>  注: Microsoft アカウント\<からドメインキー\>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | 
+    | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/>  注: Microsoft アカウント\<からドメインキー\>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | 
     
     ![1および 1-構成2および3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. **[保存]** を選択します。<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. [**保存**] を選択します。<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。<br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -176,7 +176,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
   
 11. 免責事項の [ **I am aware**] チェック ボックスをオンにします。<br/>![1&amp;1-BP-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. **[保存]** を選択します。<br/>![1&amp;1-BP-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. [**保存**] を選択します。<br/>![1&amp;1-BP-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>追加の CNAME レコード
@@ -197,7 +197,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
 5. [**サブドメインの概要**] セクションで、作成したばかりの**lyncdiscover**サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>[**サブドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
     
-6. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
+6. [ **A/AAAA レコード (Ip アドレス)** ] セクションの [ **Ip アドレス (A レコード)** ] 領域で、[ **CNAME**] を選択します。
     
 7. [ **Alias**] ボックスに、次の表の **Alias** 値のみを入力するか、コピーして貼り付けます。 <br/>
     
@@ -223,7 +223,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
 14. [**サブドメインの概要**] セクションで、作成したばかりの**sip**サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>[**サブドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
     
-15. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
+15. [ **A/AAAA レコード (Ip アドレス)** ] セクションの [ **Ip アドレス (A レコード)** ] 領域で、[ **CNAME**] を選択します。
     
 16. [ **Alias**] ボックスに、次の表の **Alias** 値のみを入力するか、コピーして貼り付けます。 
     
@@ -248,7 +248,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインに対して既に SPF レコードがある場合は、Microsoft 用に新しいを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 これらの[外部ドメインネームシステムレコードを Microsoft に対して](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)確認します。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
   
 次の手順を実行するか、[ビデオ (5 分 9 秒から開始) を参照](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US)してください。
   
@@ -273,13 +273,13 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
     ![TXT レコード](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. **[保存]** を選択します。<br/>![レコードを追加する](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. [**保存**] を選択します。<br/>![レコードを追加する](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. **[保存]** を選択します。<br/>![レコードを保存する](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. [**保存**] を選択します。<br/>![レコードを保存する](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
 9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。<br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft に必要な2つの SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 
 次の手順を実行するか、[ビデオ (5 分 51 秒から開始) を参照](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US)してください。
   
@@ -305,14 +305,14 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
     ![1&amp;1-BP-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. **[保存]** を選択します。 <br/>![1&amp;1-BP-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. [**保存**] を選択します。 <br/>![1&amp;1-BP-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. **[保存]** を選択します。 <br/>![1&amp;1-BP-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. [**保存**] を選択します。 <br/>![1&amp;1-BP-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
 9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。 <br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 10. 残りの SRV レコードを追加します。 <br/>[ **TXT および SRV Records** ] セクションで、[ **Add Record**] を選択します。 <br/>[ **Add Record** ] 領域で、表の他の行の値を使用してレコードを作成し、[**追加**]、[**保存**]、および **[はい]** を再度選択してレコードを完成させます。 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
+> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   

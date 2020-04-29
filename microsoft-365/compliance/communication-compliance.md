@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634179"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919694"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 
-コミュニケーションへのコンプライアンスは、Microsoft 365 で設定されている新しい insider リスクソリューションの一部であり、組織内の不適切なメッセージに対する修復アクションを検出、取得、および取得するのに役立ちます。 定義済みおよびカスタムのポリシーを使用すると、ポリシーの一致に関する内部通信と外部通信をスキャンして、指定したレビュー担当者がそれらを調査できるようにすることができます。 レビューアーは、組織内のスキャンされた電子メール、Microsoft Teams、またはサードパーティのコミュニケーションを調査し、適切な修復処置を行って、組織のメッセージ標準に準拠していることを確認できます。
+コミュニケーションへのコンプライアンスは、Microsoft 365 で設定されている新しい insider リスクソリューションの一部であり、組織内の不適切なメッセージに対する修復アクションを検出、取得、および取得するのに役立ちます。 定義済みおよびカスタムのポリシーを使用すると、ポリシーの一致に関する内部通信と外部通信をスキャンして、指定したレビュー担当者がそれらを調査できるようにすることができます。 レビューアーは、スキャンされた電子メール、Microsoft Teams、Yammer、または組織内のサードパーティの通信を調査し、適切な修復処置を行って、組織のメッセージ標準に準拠していることを確認できます。
 
 Microsoft 365 のコミュニケーションコンプライアンスポリシーは、コンプライアンスと、次のような内部通信および外部通信に関連する最新の課題に対処するのに役立ちます。
 
@@ -99,6 +99,7 @@ Microsoft 365 の通信コンプライアンスは、いくつかの新しい機
 
 - **Microsoft teams**: パブリックおよびプライベートの[microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)チャネルおよび個人チャットのチャット通信は、スタンドアロンチャネルソースとして、または他の microsoft 365 サービスとの通信コンプライアンスでサポートされています。 ポリシーで定義された特定のユーザーについてすべての Microsoft Teams チャネルと teams が自動的にスキャンされるようになったため、Microsoft Teams 割り当てに対して個別のマッピングリストを保持する必要がなくなりました。
 - **Exchange online**: Microsoft 365 組織の[exchange online](https://docs.microsoft.com/Exchange/exchange-online)でホストされているすべてのメールボックスは、スキャン対象となります。 通信コンプライアンスポリシーの条件に一致する電子メールと添付ファイルは、監視と監督レポートですぐに利用できます。 Exchange Online はオプションのソースチャネルとなり、通信コンプライアンスポリシーでは不要になりました。
+- **Yammer**: [yammer](https://docs.microsoft.com/yammer/yammer-landing-page)でのプライベートメッセージとパブリックコミュニティの会話は、通信コンプライアンスポリシーでサポートされています。 Yammer はオプションのチャネルで、メッセージと添付ファイルのスキャンをサポートする[ネイティブモード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)である必要があります。
 - **Skype For Business online**: 通信コンプライアンスポリシーでは、 [Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)でのチャット通信と関連付けられた添付ファイルのスキャンをサポートしています。
 - **サードパーティのソース**: Microsoft 365 組織のメールボックスにインポートされたデータについて、[サードパーティ](archiving-third-party-data.md)製のソースからのメッセージをスキャンできます。 通信コンプライアンスは、インスタント Bloomberg、Facebook、Twitter など、いくつかの一般的なプラットフォームへの接続をサポートします。
 
@@ -155,4 +156,4 @@ Microsoft 365 コンプライアンスセンターでは、次のポリシーテ
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-Microsoft 365 組織の通信コンプライアンスを構成する方法については、「 [microsoft 365 の通信コンプライアンスを構成](communication-compliance-configure.md)する」または「 [Contoso のケーススタディ](communication-compliance-case-study.md)」を参照してください。また、Microsoft Teams および Exchange Online の通信で不快な言語を監視するための通信コンプライアンスポリシーを迅速に構成した方法を確認してください。
+Microsoft 365 組織の通信コンプライアンスを構成する方法については、「 [configure communications コンプライアンス For microsoft 365](communication-compliance-configure.md) 」または「 [Contoso 社向けのケーススタディ](communication-compliance-case-study.md)」を参照してください。また、Microsoft Teams、Exchange Online、Yammer の通信で不快な言葉を監視するための通信コンプライアンスポリシーをどのように構成したかを確認してください。

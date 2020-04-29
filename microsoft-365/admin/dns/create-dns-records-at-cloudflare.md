@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: ドメインを確認し、電子メール、Skype for Business Online、および Cloudflare for Microsoft の他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: f04e4b4a29085a3ddd9b388c7178c1cd638445ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ccd629dfdec24e509144c205b748a883cb65d554
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629709"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919629"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Cloudflare で Microsoft 用の DNS レコードを作成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "43629709"
   
 Cloudflare でこれらのレコードを追加すると、使用しているドメインが、Microsoft 365 サービスで機能するように設定されます。
   
-Microsoft を使用した web サイトのホストと DNS の詳細については、「 [microsoft とのパブリック web サイトの使用](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)」を参照してください。
+Microsoft での Web サイト向け Web ホスティングと DNS の詳細については、「[Microsoft での一般向け Web サイトの使用](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)」を参照してください。
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
@@ -48,7 +48,7 @@ Microsoft を使用した web サイトのホストと DNS の詳細について
   
 Cloudflare にサインアップしたときに、Cloudflare の [ **Setup**] プロセスを使用してドメインを追加しました。 
   
-追加したドメインは、別のドメインレジストラーから購入されました。Cloudflare では、ドメイン登録サービスは提供されていません。 Microsoft 365 でドメインの DNS レコードを確認および作成するには、まず、Cloudflare のネームサーバーを使用するようにドメインレジストラーでネームサーバーを変更する必要があります。
+追加したドメインは、Cloudflare または別のドメインレジストラーから購入されました。 Microsoft 365 でドメインの DNS レコードを確認および作成するには、まず、Cloudflare のネームサーバーを使用するようにドメインレジストラーでネームサーバーを変更する必要があります。
   
 ドメイン レジストラーの Web サイトで、自分でドメインのネーム サーバーを変更するには、次の手順に従います。
   
@@ -72,7 +72,7 @@ Cloudflare にサインアップしたときに、Cloudflare の [ **Setup**] �
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 <a name="BKMK_verify"> </a>
 
-ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
+Microsoft のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -86,21 +86,21 @@ Cloudflare にサインアップしたときに、Cloudflare の [ **Setup**] �
   
 4. [ **DNS の管理**] ページで、[**レコードの追加**] をクリックし、次の表の値を選択します。 
     
-    |**Type**|**Name**|**Automatic TTL**|**Content**|
+    |**型**|**Name**|**Automatic TTL**|**Content**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 分  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 分  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
   
   
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
 これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft に戻ってレコードを検索します。
   
-Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. Microsoft 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**設定** \> ] ページに移動します。
+1. Microsoft 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
 2. **[ドメイン]** ページで、確認するドメインを選択します。 
@@ -130,13 +130,13 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
   
 4. [ **DNS の管理**] ページで、[**レコードの追加**] をクリックし、次の表の値を選択します。 
     
-    |**Type**|**名前**|**メール サーバー**|**Priority**|**TTL**|
+    |**型**|**名前**|**メール サーバー**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft 365 アカウントから* \<ドメイン\>キー*を取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/>|30 分  <br/> |
    
 
   
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
   
 9. [ **MX Records**] セクションに他の MX レコードが一覧表示されている場合は、[ **Delete (X)**] アイコンを選択してそれらを削除します。 
   
@@ -159,7 +159,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     [ **DNS の管理**] ページで、[**レコードの追加**] をクリックし、次の表の値を選択します。
     
     
-    |**Type**|**Name**|**Target**|**TTL**|
+    |**型**|**Name**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutes  <br/> |
@@ -171,7 +171,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
   
 5. [ **DNS トラフィック**] アイコン (オレンジのクラウド) を選択して、cloudflare サーバーをバイパスします。
   
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
   
 7. 他の 5 つの CNAME レコードをそれぞれ追加します。
 
@@ -180,7 +180,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインに対して既に SPF レコードがある場合は、Microsoft 365 用に新しいを作成しないでください。 代わりに、必要な Microsoft 365 値を現在のレコードに追加して、両方の値が含まれる*1 つ*の SPF レコードを作成できるようにします。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 365 用に新しいレコードを作成しないでください。 代わりに、現在のレコードに Microsoft 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが "*1 つ*" の SPF レコードに含まれるようにします。 
   
 1. まず、[このリンク](https://www.cloudflare.com/a/login)を使って Cloudflare でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -192,16 +192,16 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
   
 4. [ **DNS の管理**] ページで、[**レコードの追加**] をクリックし、次の表の値を選択します。  
     
-    |**Type**|**名前**|**TTL**|**Content**|
+    |**型**|**名前**|**TTL**|**Content**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 分  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。   |
 
  
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
     
 
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft に必要な2つの SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -223,7 +223,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     |SRV|_sipfederationtls | TCP|*Domain_name*を使用します。たとえば、contoso.com   |30 分 |100 |1-d |5061 | sipfed.online.lync.com |
 
   
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
   
 6. 表の2行目の値を選択して、他の SRV レコードを追加します。 
