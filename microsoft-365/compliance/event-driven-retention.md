@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、特定の種類のイベントが発生したときの保持期間を設定できます。イベントによって保持期間の開始がトリガーされ、その種類のイベントに保持ラベルが適用されているすべてのコンテンツに、ラベルの保持アクションが適用されます。イベント ベースの保持は、通常、記録管理プロセスの一部として使用されます。
-ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ad6d734da77b6e0a706c4ff0d71b82caf0166c8
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43616021"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949304"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -43,7 +43,7 @@ ms.locfileid: "43616021"
     
 - レコードとして宣言されているもののイベント トリガーがまだ発生していない文書は、イベントがそのドキュメントの保存期間をトリガーするまで無期限に保持されます (レコードを完全に削除することはできません)。
     
-- イベント ベースのラベルは通常、保存期間の終了時に廃棄レビューをトリガーするので、レコード管理者は手動でコンテンツを確認して廃棄できます。詳細については、「[廃棄レビューの概要](disposition-reviews.md)」を参照してください。
+- イベント ベースの保持ラベルは通常、保存期間の終了時に廃棄レビューを トリガーするので、レコード管理者は手動で コンテンツを確認して廃棄できます。詳細については、「[コンテンツの廃棄](disposition.md)」を参照してください。
     
 イベント ベースのラベルには、Office 365 のラベルと同じ機能があります。詳細については、「[ラベルの概要](labels.md)」を参照してください。
 
