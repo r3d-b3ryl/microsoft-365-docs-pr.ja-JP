@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の eNomCentral のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 2a1d32f0152b0c8a38b1a9e1c3fc46237708480d
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919495"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939273"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Microsoft の eNomCentral で DNS レコードを作成する
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919495"
 使用している DNS ホスティング プロバイダーが eNomCentral の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
   
 これらのレコードを eNomCentral で追加すると、使用しているドメインが Microsoft サービスで機能するように設定されます。
-  
-Microsoft での Web サイト向け Web ホスティングと DNS の詳細については、「[Microsoft での一般向け Web サイトの使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)」を参照してください。
+
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
@@ -64,7 +63,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    \(ドロップダウンリストから [ **Record Type** ] の値を選択します。\) 
+    ドロップダウンリストから [ **Record Type** ] の値を選択します。
     
     ||||
     |:-----|:-----|:-----|
@@ -165,7 +164,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 5. 6 つの新規レコードのボックスに次の値を入力するか、コピーして貼り付けます。
     
-        (Choose the **Record Type** value from the drop-down list.) 
+ドロップダウンリストから [ **Record Type** ] の値を選択します。
         
     |**Host Name**|**Record Type**|**アドレス**|
     |:-----|:-----|:-----|
@@ -175,7 +174,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |enterpriseregistration  <br/> |CNAME (Alias)  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
     |enterpriseenrollment  <br/> |CNAME (Alias)  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
    
-    ![eNom-BP-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. [**保存**] を選択します。
     
@@ -203,7 +202,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    (Choose the **Record Type** value from the drop-down list.) 
+ドロップダウンリストから [ **Record Type** ] の値を選択します。
     
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|

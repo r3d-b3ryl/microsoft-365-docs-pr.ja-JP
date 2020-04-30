@@ -2,22 +2,22 @@
 title: EU 税務識別番号
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f779974266045d7099b599700c7168162d9d81e
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41591018"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938673"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税務識別番号
 
@@ -2029,5 +2029,5 @@ taxid#
   
 ## <a name="see-also"></a>関連項目
 
-[機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
+[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
 

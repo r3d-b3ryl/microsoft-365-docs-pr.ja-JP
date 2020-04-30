@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Dns レコードを管理するために21Vianet が運用している Office 365 をセットアップする方法について説明します。 1&1 インターネットが DNS ホスティングプロバイダーである場合です。
-ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630009"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939420"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>IONOS 1 を&使用するように Microsoft 365 をセットアップするためにネームサーバーを変更
 
@@ -38,7 +38,7 @@ Microsoft 365 で Microsoft 365 の DNS レコードを管理するには、次�
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 
 
-Microsoft 365 でドメインを使用する前に、そのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft 365 に証明されます。
+Microsoft 365 のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft 365 に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -62,7 +62,7 @@ Microsoft 365 でドメインを使用する前に、そのドメインを所有
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注**: これは例です。 Microsoft 365 の表に記載されている、特定の**宛先またはポイントを**使用して、ここでのアドレスを指定します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注**: これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. [**保存**] を選択し、もう一度**保存**します。 
@@ -71,9 +71,9 @@ Microsoft 365 でドメインを使用する前に、そのドメインを所有
     
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft 365 に戻り、Microsoft 365 にレコードを検索するよう要求します。
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft 365 に戻り、Microsoft 365 にレコードの検索をリクエストします。
   
-Microsoft 365 が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -138,9 +138,9 @@ Microsoft 365 がドメインをセットアップできるように、NS レコ
 |**ネーム サーバー 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**ネーム サーバー 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+![名前サーバーの値を入力する](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
     
     ![[名前サーバーの設定] ページの [保存] を選択する](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -171,7 +171,7 @@ Microsoft 365 がドメインをセットアップできるように、NS レコ
    
    ![名前サーバーの値を入力する](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. **[保存]** を選択します。
+3. [**保存**] を選択します。
     
     ![[名前サーバーの設定] ページの [保存] を選択する](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

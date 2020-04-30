@@ -2,8 +2,8 @@
 title: EU 国家識別番号
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: f001d23ec3d6d8a2b3aa9575d4a9d602c4315e13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4dac77f129b45f457a82e709cb5a3b846a95cdf4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592238"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938763"
 ---
 # <a name="eu-national-identification-number"></a>EU 国家識別番号
 
@@ -1184,5 +1184,5 @@ identidadúnico#
   
 ## <a name="see-also"></a>関連項目
 
-[機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
+[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
 

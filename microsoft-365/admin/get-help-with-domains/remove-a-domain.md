@@ -21,18 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
-ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b072a8f30d6b6a655441dec49ff9af9b4d0fdbe4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628436"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938638"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
-
-作成協力者: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
- **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
 別の Microsoft 365 サブスクリプションプランに追加する必要があるため、ドメインを削除していますか? それとも、サブスクリプションをキャンセルするためですか? [プランやサブスクリプションを変更する](../../commerce/subscriptions/switch-to-a-different-plan.md)ことも、[サブスクリプションをキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)することもできます。
   
@@ -231,6 +229,6 @@ Microsoft 365 では、セキュリティグループ、配布リスト、ユー
 
 [Office 365 のドメインに関するヘルプ](get-help-with-domains.md)
 
-[別の Microsoft 365 for business プランに切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[別の一般法人向け Microsoft 365 プランに切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md)

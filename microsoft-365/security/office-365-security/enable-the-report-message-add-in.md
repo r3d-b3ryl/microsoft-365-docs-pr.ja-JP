@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、Outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921578"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939477"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -133,7 +133,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
    ![アドインページをアナウンスする](../../media/announce-add-in-page.png)
 
-### <a name="learn-how-to-use-the-report-message-add-in"></a>レポートメッセージアドインの使用方法について説明します。
+## <a name="learn-how-to-use-the-report-message-add-in"></a>レポートメッセージアドインの使用方法について説明します。
 
 アドインに割り当てられているユーザーには、次のアイコンが表示されます。
 
@@ -147,7 +147,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
 レポートメッセージアドインについてユーザーに通知する場合は、[レポートメッセージアドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)するためのリンクを含めます。
 
-### <a name="review-or-edit-settings-for-the-report-message-add-in"></a>レポートメッセージアドインの設定を確認または編集する
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>レポートメッセージアドインの設定を確認または編集する
 
 1. Microsoft 365 管理センターで、[ **Services & アドイン**] ページに移動<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>します。
 
@@ -158,3 +158,11 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 3. 表示される [**レポートメッセージの編集**] ポップアップで、組織に合わせて設定を確認して編集します。 完了したら、**[保存]** をクリックします。
 
    ![レポートメッセージアドインの設定](../../media/EditReportMessageAddIn.png)
+
+## <a name="view-and-review-reported-messages"></a>レポートされたメッセージの表示と確認
+
+ユーザーが Microsoft に報告するメッセージを確認するには、次のオプションがあります。
+
+- 管理者提出ポータルを使用します。 詳細については、「 [Microsoft へのユーザー送信の表示](admin-submission.md#view-user-submissions-to-microsoft)」を参照してください。
+
+- メールフロールール (トランスポートルールとも呼ばれる) を作成して、報告されたメッセージのコピーを送信します。 手順については、「[メールフロールールを使用して、ユーザーが Microsoft に報告する内容を確認する」を](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)参照してください。

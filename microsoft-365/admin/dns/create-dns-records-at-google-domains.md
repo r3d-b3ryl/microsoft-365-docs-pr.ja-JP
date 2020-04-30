@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: ドメインを確認して、Microsoft の Google ドメインで電子メール、Lync、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 399482374f87d864edbc01feb4896b168d157f7f
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: baa406f61346dc052ab90a1b1c1271ab585d92c7
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919750"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939205"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Microsoft の Google ドメインで DNS レコードを作成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "43919750"
   
 これらのレコードを Google ドメインで追加すると、使用しているドメインが Microsoft サービスで機能するように設定されます。
   
-Microsoft での Web サイト向け Web ホスティングと DNS の詳細については、「[Microsoft での一般向け Web サイトの使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)」を参照してください。
+
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「 [Microsoft でドメインまたは DNS レコードを追加した後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
