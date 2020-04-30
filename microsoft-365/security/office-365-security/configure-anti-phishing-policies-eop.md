@@ -1,5 +1,5 @@
 ---
-title: EOP で既定のフィッシング対策ポリシーを構成する
+title: EOP でフィッシング対策ポリシーを構成する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,116 +13,506 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online メールボックスを使用して、Office 365 組織の既定のフィッシング対策ポリシーで利用可能なスプーフィング対策設定を変更する方法を学習できます。
-ms.openlocfilehash: 1a8527a55796910e79fbf70b824de828ca48591b
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+description: 管理者は、exchange online Protection (EOP) 組織で使用可能なフィッシング対策ポリシーを作成、変更、および削除する方法について説明します。 Exchange Online のメールボックスは使用できません。
+ms.openlocfilehash: 770990cdd7927ebb8afa088f2d5be09c75824d59
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537535"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949273"
 ---
-# <a name="configure-the-default-anti-phishing-policy-in-eop"></a><span data-ttu-id="02f84-103">EOP で既定のフィッシング対策ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="02f84-103">Configure the default anti-phishing policy in EOP</span></span>
+# <a name="configure-anti-phishing-policies-in-eop"></a><span data-ttu-id="c6643-103">EOP でフィッシング対策ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="c6643-103">Configure anti-phishing policies in EOP</span></span>
 
-<span data-ttu-id="02f84-104">Exchange online メールボックスを使用しない exchange online メールボックスおよびスタンドアロンの Exchange Online Protection (EOP) 組織を使用している Office 365 組織には、既定のフィッシング対策ポリシーがあります。</span><span class="sxs-lookup"><span data-stu-id="02f84-104">Office 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have a default anti-phishing policy.</span></span> <span data-ttu-id="02f84-105">このポリシーには、既定で有効になっている、限られた数のスプーフィング対策機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="02f84-105">This policy contains a limited number of anti-spoofing features that are enabled by default.</span></span> <span data-ttu-id="02f84-106">詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-106">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
+<span data-ttu-id="c6643-104">Exchange online メールボックスを使用しない exchange online メールボックスおよびスタンドアロンの Exchange Online Protection (EOP) 組織を使用している Office 365 組織には、既定のフィッシング対策ポリシーがあります。</span><span class="sxs-lookup"><span data-stu-id="c6643-104">Office 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have a default anti-phishing policy.</span></span> <span data-ttu-id="c6643-105">このポリシーには、既定で有効になっている、限られた数のスプーフィング対策機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c6643-105">This policy contains a limited number of anti-spoofing features that are enabled by default.</span></span> <span data-ttu-id="c6643-106">詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-106">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
 
-<span data-ttu-id="02f84-107">Office 365 Exchange Online メールボックスを使用する組織では、Office 365 セキュリティ & コンプライアンスセンターまたは Exchange Online PowerShell で既定のフィッシング対策ポリシーを変更できます。</span><span class="sxs-lookup"><span data-stu-id="02f84-107">Office 365 organizations with Exchange Online mailboxes can modify the default anti-phishing policy in the Office 365 Security & Compliance Center or in Exchange Online PowerShell.</span></span> <span data-ttu-id="02f84-108">Exchange Online メールボックスを使用しないスタンドアロン EOP 組織では、既定のフィッシング対策ポリシーを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="02f84-108">Standalone EOP organizations without Exchange Online mailboxes can't modify their default anti-phishing policy.</span></span>
+<span data-ttu-id="c6643-107">管理者は、既定のフィッシング対策ポリシーを表示、編集、および構成できます (削除することはできません)。</span><span class="sxs-lookup"><span data-stu-id="c6643-107">Admins can view, edit, and configure (but not delete) the default anti-phishing policy.</span></span> <span data-ttu-id="c6643-108">よりきめ細かく制御する場合は、組織内の特定のユーザー、グループ、またはドメインに適用するカスタムのフィッシング対策ポリシーを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="c6643-108">For greater granularity, you can also create custom anti-phishing policies that apply to specific users, groups, or domains in your organization.</span></span> <span data-ttu-id="c6643-109">カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-109">Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.</span></span>
 
-<span data-ttu-id="02f84-109">Office 365 Advanced Threat Protection で使用可能な、より高度な ATP のフィッシング対策ポリシーの作成と変更の詳細については、「 [office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-109">For information about creating and modifying the more advanced ATP anti-phishing policies that are available in Office 365 Advanced Threat Protection, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).</span></span>
+<span data-ttu-id="c6643-110">Exchange Online メールボックスを使用する組織は、セキュリティ & コンプライアンスセンターまたは Exchange Online PowerShell でフィッシング対策ポリシーを構成できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-110">Organizations with Exchange Online mailboxes can configure anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.</span></span> <span data-ttu-id="c6643-111">スタンドアロン EOP 組織は、セキュリティ & コンプライアンスセンターのみを使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-111">Standalone EOP organizations can only use the Security & Compliance Center.</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="02f84-110">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="02f84-110">What do you need to know before you begin?</span></span>
+<span data-ttu-id="c6643-112">Office 365 Advanced Threat Protection で使用可能な、より高度な ATP のフィッシング対策ポリシーの作成と変更の詳細については、「 [office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-112">For information about creating and modifying the more advanced ATP anti-phishing policies that are available in Office 365 Advanced Threat Protection, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).</span></span>
 
-- <span data-ttu-id="02f84-111"><https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。</span><span class="sxs-lookup"><span data-stu-id="02f84-111">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="02f84-112">**フィッシング対策**ページに直接移動するには、を<https://protection.office.com/antiphishing>使用します。</span><span class="sxs-lookup"><span data-stu-id="02f84-112">To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.</span></span>
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a><span data-ttu-id="c6643-113">セキュリティ & コンプライアンスセンター vs Exchange Online PowerShell のフィッシング対策ポリシー</span><span class="sxs-lookup"><span data-stu-id="c6643-113">Anti-phishing policies in the Security & Compliance Center vs Exchange Online PowerShell</span></span>
 
-- <span data-ttu-id="02f84-113">Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-113">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+<span data-ttu-id="c6643-114">フィッシング対策ポリシーの基本的な要素は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c6643-114">The basic elements of an anti-phishing policy are:</span></span>
 
-- <span data-ttu-id="02f84-114">これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="02f84-114">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="02f84-115">フィッシング対策ポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="02f84-115">To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.</span></span> <span data-ttu-id="02f84-116">フィッシング対策ポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="02f84-116">For read-only access to anti-phishing policies, you need to be a member of the **Security Reader** role group.</span></span> <span data-ttu-id="02f84-117">セキュリティ/コンプライアンス センターの役割グループの詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="02f84-117">For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="c6643-115">**フィッシングポリシー**: 有効または無効にするフィッシング対策、およびオプションを適用するアクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="c6643-115">**The anti-phish policy**: Specifies the phishing protections to enable or disable, and the actions to apply options.</span></span>
 
-- <span data-ttu-id="02f84-118">既定のフィッシング対策ポリシーの推奨設定については、「 [EOP default フィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-118">For our recommended settings for the default anti-phishing policy, see [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).</span></span>
+- <span data-ttu-id="c6643-116">**フィッシングルールで**は、フィッシングポリシーの優先順位と受信者フィルター (ポリシーが適用されるユーザー) を指定します。</span><span class="sxs-lookup"><span data-stu-id="c6643-116">**The anti-phish rule**: Specifies the priority and recipient filters (who the policy applies to) for an anti-phish policy.</span></span>
 
-- <span data-ttu-id="02f84-119">更新されたポリシーが適用されるまで最大30分かかります。</span><span class="sxs-lookup"><span data-stu-id="02f84-119">Allow up to 30 minutes for the updated policy to be applied.</span></span>
+<span data-ttu-id="c6643-117">セキュリティ & コンプライアンスセンターでフィッシング対策ポリシーを管理する場合、この2つの要素の違いは明白ではありません。</span><span class="sxs-lookup"><span data-stu-id="c6643-117">The difference between these two elements isn't obvious when you manage anti-phishing policies in the Security & Compliance Center:</span></span>
 
-- <span data-ttu-id="02f84-120">フィルタリングパイプラインにフィッシング対策ポリシーを適用する方法については、「 [Office 365 での電子メール保護の順序と優先順位](how-policies-and-protections-are-combined.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-120">For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection in Office 365](how-policies-and-protections-are-combined.md).</span></span>
+- <span data-ttu-id="c6643-118">セキュリティ & コンプライアンスセンターでフィッシング対策ポリシーを作成する場合、実際には、フィッシングルールと関連付けられたフィッシングポリシーを両方に同じ名前を使用して同時に作成しています。</span><span class="sxs-lookup"><span data-stu-id="c6643-118">When you create an anti-phishing policy in the Security & Compliance Center, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a><span data-ttu-id="02f84-121">セキュリティ & コンプライアンスセンターを使用して既定のフィッシング対策ポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="02f84-121">Use the Security & Compliance Center to modify the default anti-phishing policy</span></span>
+- <span data-ttu-id="c6643-119">セキュリティ & コンプライアンスセンターでフィッシング対策ポリシーを変更する場合、名前、優先度、有効または無効、および受信者フィルターに関連する設定によってフィッシングルールが変更されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-119">When you modify an anti-phishing policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule.</span></span> <span data-ttu-id="c6643-120">他のすべての設定は、関連付けられたフィッシングポリシーを変更します。</span><span class="sxs-lookup"><span data-stu-id="c6643-120">All other settings modify the associated anti-phish policy.</span></span>
 
-<span data-ttu-id="02f84-122">既定のフィッシング対策ポリシーの名前は、Office365 フィッシング対策 Default で、ポリシーの一覧には表示されません。</span><span class="sxs-lookup"><span data-stu-id="02f84-122">The default anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies.</span></span> <span data-ttu-id="02f84-123">既定のフィッシング対策ポリシーを変更するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="02f84-123">To modify the default anti-phishing policy, do the following steps:</span></span>
+- <span data-ttu-id="c6643-121">セキュリティ & コンプライアンスセンターからフィッシング対策ポリシーを削除すると、フィッシングルールとそれに関連付けられているフィッシングポリシーが削除されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-121">When you remove an anti-phishing policy from the Security & Compliance Center, the anti-phish rule and the associated anti-phish policy are removed.</span></span>
 
-1. <span data-ttu-id="02f84-124">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="02f84-124">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+<span data-ttu-id="c6643-122">Exchange Online PowerShell では、フィッシングポリシーとフィッシングルールの違いが明らかです。</span><span class="sxs-lookup"><span data-stu-id="c6643-122">In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent.</span></span> <span data-ttu-id="c6643-123">フィッシングポリシーを管理するには、 \*\* \*-get-antiphishpolicy**コマンドレットを使用して、 \*\* \*-new-antiphishrule**コマンドレットを使用してフィッシングルールを管理します。</span><span class="sxs-lookup"><span data-stu-id="c6643-123">You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.</span></span>
 
-2. <span data-ttu-id="02f84-125">[**フィッシング対策**] ページで、[**既定のポリシー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02f84-125">On the **Anti-phishing** page, click **Default policy**.</span></span>
+- <span data-ttu-id="c6643-124">PowerShell では、フィッシングポリシーを最初に作成してから、ルールが適用されるポリシーを識別するフィッシングルールを作成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-124">In PowerShell, you create the anti-phish policy first, then you create the anti-phish rule that identifies the policy that the rule applies to.</span></span>
 
-3. <span data-ttu-id="02f84-126">[**ポリシーの Office 365 フィッシング対策の既定の編集**] ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="02f84-126">The **Edit your policy Office365 AntiPhish Default** page appears.</span></span> <span data-ttu-id="02f84-127">[**スプーフィング**] セクションで、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02f84-127">In the **Spoof** section, click **Edit**.</span></span>
+- <span data-ttu-id="c6643-125">PowerShell では、フィッシングポリシーおよびフィッシングルールの設定を個別に変更します。</span><span class="sxs-lookup"><span data-stu-id="c6643-125">In PowerShell, you modify the settings in the anti-phish policy and the anti-phish rule separately.</span></span>
 
-   <span data-ttu-id="02f84-128">これらの設定は、ATP のフィッシング対策ポリシーで使用可能なスプーフィング設定と同じであることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-128">Note that these settings are identical to the spoof settings that are available in ATP anti-phishing policies.</span></span>
+### <a name="default-atp-anti-phishing-policy"></a><span data-ttu-id="c6643-126">既定の ATP のフィッシング対策ポリシー</span><span class="sxs-lookup"><span data-stu-id="c6643-126">Default ATP anti-phishing policy</span></span>
 
-   - <span data-ttu-id="02f84-129">**フィルター設定のスプーフィング**: 既定値は**on**で、そのままにすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="02f84-129">**Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on.</span></span> <span data-ttu-id="02f84-130">この機能をオフにするには、トグルを [**オフ**] にします。</span><span class="sxs-lookup"><span data-stu-id="02f84-130">To turn it off, slide the toggle to **Off**.</span></span> <span data-ttu-id="02f84-131">詳細については、「 [Configure スプーフ知能 In Office 365](learn-about-spoof-intelligence.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-131">For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).</span></span>
+<span data-ttu-id="c6643-127">すべての組織には、Office365 フィッシング対策 Default という名前の組み込みのフィッシング対策ポリシーがあります。これらのプロパティは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c6643-127">Every organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:</span></span>
+
+- <span data-ttu-id="c6643-128">Office365 フィッシング対策 Default という名前のポリシーは、組織内のすべての受信者に適用されます (ただし、ポリシーに関連付けられているフィッシングルール (受信者フィルター) はありません。</span><span class="sxs-lookup"><span data-stu-id="c6643-128">The policy named Office365 AntiPhish Default is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.</span></span>
+
+- <span data-ttu-id="c6643-129">Office365 フィッシング対策 Default という名前のポリシーには、変更できないカスタムの優先度の値が**最低**でもあります (ポリシーは常に最後に適用されます)。</span><span class="sxs-lookup"><span data-stu-id="c6643-129">The policy named Office365 AntiPhish Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last).</span></span> <span data-ttu-id="c6643-130">作成するカスタムポリシーは、常に Office365 フィッシング対策 Default という名前のポリシーよりも高い優先順位を持ちます。</span><span class="sxs-lookup"><span data-stu-id="c6643-130">Any custom policies that you create always have a higher priority than the policy named Office365 AntiPhish Default.</span></span>
+
+- <span data-ttu-id="c6643-131">Office365 フィッシング対策 Default という名前のポリシーは既定のポリシーです ( **IsDefault**プロパティに`True`は値があります)。既定のポリシーを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-131">The policy named Office365 AntiPhish Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.</span></span>
+
+<span data-ttu-id="c6643-132">フィッシング対策保護の有効性を高めるために、特定のユーザーまたはユーザーグループに適用される厳密な設定を使用して、カスタムのフィッシング対策ポリシーを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-132">To increase the effectiveness of anti-phishing protection, you can create custom anti-phishing policies with stricter settings that are applied to specific users or groups of users.</span></span>
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="c6643-133">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="c6643-133">What do you need to know before you begin?</span></span>
+
+- <span data-ttu-id="c6643-134"><https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。</span><span class="sxs-lookup"><span data-stu-id="c6643-134">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="c6643-135">**フィッシング対策**ページに直接移動するには、を<https://protection.office.com/antiphishing>使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-135">To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.</span></span>
+
+- <span data-ttu-id="c6643-136">Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-136">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+
+  <span data-ttu-id="c6643-137">スタンドアロン EOP PowerShell では、フィッシング対策ポリシーを管理することはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-137">You can't manage anti-phishing policies in standalone EOP PowerShell.</span></span>
+
+- <span data-ttu-id="c6643-138">これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="c6643-138">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="c6643-139">フィッシング対策ポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="c6643-139">To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.</span></span> <span data-ttu-id="c6643-140">フィッシング対策ポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="c6643-140">For read-only access to anti-phishing policies, you need to be a member of the **Security Reader** role group.</span></span> <span data-ttu-id="c6643-141">セキュリティ/コンプライアンス センターの役割グループの詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="c6643-141">For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+
+- <span data-ttu-id="c6643-142">スタンドアロン EOP でスパム対策ポリシーを作成および変更できるようにするには、テナントに対して_ハイドロ_を必要とするものを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c6643-142">To be able to create and modify anti-spam policies in standalone EOP, you need to do something that requires _hydration_ for your tenant.</span></span> <span data-ttu-id="c6643-143">たとえば、EAC では、[**アクセス許可**] タブに移動し、既存の役割グループを選択し、 **[編集]** ![編集アイコン](../../media/ITPro-EAC-EditIcon.png)をクリックして、役割を削除します (最終的に追加します)。</span><span class="sxs-lookup"><span data-stu-id="c6643-143">For example, in the EAC, you can go to the **Permissions** tab, select an existing role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and remove a role (which you'll ultimately add back).</span></span> <span data-ttu-id="c6643-144">テナントが hydrated されていない場合は、「**組織の設定を更新**する」という名前のダイアログが表示され、進行状況バーが正常に完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c6643-144">If your tenant has never been hydrated, you get a dialog named **Update Organization Settings** with a progress bar that should complete successfully.</span></span> <span data-ttu-id="c6643-145">ハイドロの詳細については、「[組織をカスタマイズ](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization)する」を参照してください。このコマンドレットは、スタンドアロンの EOP PowerShell またはセキュリティ & コンプライアンスセンターでは使用できません)。</span><span class="sxs-lookup"><span data-stu-id="c6643-145">For more information about hydration, see the [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization) cmdlet (which isn't available in standalone EOP PowerShell or in the Security & Compliance Center).</span></span>
+
+- <span data-ttu-id="c6643-146">フィッシング対策ポリシーの推奨設定については、「 [EOP default フィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-146">For our recommended settings for anti-phishing policies, see [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).</span></span>
+
+- <span data-ttu-id="c6643-147">更新されたポリシーが適用されるまで最大30分かかります。</span><span class="sxs-lookup"><span data-stu-id="c6643-147">Allow up to 30 minutes for the updated policy to be applied.</span></span>
+
+- <span data-ttu-id="c6643-148">フィルタリングパイプラインにフィッシング対策ポリシーを適用する方法については、「 [Office 365 での電子メール保護の順序と優先順位](how-policies-and-protections-are-combined.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-148">For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection in Office 365](how-policies-and-protections-are-combined.md).</span></span>
+
+## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a><span data-ttu-id="c6643-149">セキュリティ & コンプライアンスセンターを使用してフィッシング対策ポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="c6643-149">Use the Security & Compliance Center to create anti-phishing policies</span></span>
+
+<span data-ttu-id="c6643-150">セキュリティ & コンプライアンスセンターでカスタムのフィッシング対策ポリシーを作成すると、両方に同じ名前を使用して、フィッシングルールと関連付けられているフィッシングポリシーを同時に作成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-150">Creating a custom anti-phishing policy in the Security & Compliance Center creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
+
+<span data-ttu-id="c6643-151">フィッシング対策ポリシーを作成する場合、ポリシー名、説明、およびポリシーの適用先を識別する受信者フィルターのみを指定できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-151">When you create an anti-phishing policy, you can only specify the policy name, description, and the recipient filter that identifies who the policy applies to.</span></span> <span data-ttu-id="c6643-152">ポリシーを作成したら、ポリシーを変更して既定のフィッシング対策設定を変更または確認することができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-152">After you create the policy, you can modify the policy to change or review the default anti-phishing settings.</span></span>
+
+1. <span data-ttu-id="c6643-153">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-153">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+
+2. <span data-ttu-id="c6643-154">[**フィッシング対策**] ページで、[**作成**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-154">On the **Anti-phishing** page, click **Create**.</span></span>
+
+3. <span data-ttu-id="c6643-155">[**新しいフィッシング対策ポリシーの作成**] ウィザードが開きます。</span><span class="sxs-lookup"><span data-stu-id="c6643-155">The **Create a new anti-phishing policy** wizard opens.</span></span> <span data-ttu-id="c6643-156">[**ポリシーに名前**をつける] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-156">On the **Name your policy** page, configure the following settings:</span></span>
+
+   - <span data-ttu-id="c6643-157">**[名前]**: わかりやすい一意のポリシー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="c6643-157">**Name**: Enter a unique, descriptive name for the policy.</span></span>
+
+   - <span data-ttu-id="c6643-158">**[説明]**: ポリシーについての説明を入力します (オプション)。</span><span class="sxs-lookup"><span data-stu-id="c6643-158">**Description**: Enter an optional description for the policy.</span></span>
+
+   <span data-ttu-id="c6643-159">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-159">When you're finished, click **Next**.</span></span>
+
+4. <span data-ttu-id="c6643-160">表示される [**適用先**] ページで、ポリシーが適用される内部の受信者を特定します。</span><span class="sxs-lookup"><span data-stu-id="c6643-160">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
+
+   <span data-ttu-id="c6643-161">各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-161">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="c6643-162">同じ条件や例外に複数の値がある場合は、OR ロジック (たとえば、_\<recipient1\>_ or _\<recipient2\>_) を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-162">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="c6643-163">別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ and _\<member of group 1\>_) を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-163">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
+
+   <span data-ttu-id="c6643-164">[**条件の追加] を**クリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-164">Click **Add a condition**.</span></span> <span data-ttu-id="c6643-165">表示されるドロップダウンで、[適用済みの**場合**] の条件を選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-165">In the dropdown that appears, select a condition under **Applied if**:</span></span>
+
+   - <span data-ttu-id="c6643-166">**受信者は**次のとおりです。組織内で1つ以上のメールボックス、メールユーザー、またはメール連絡先を指定します。</span><span class="sxs-lookup"><span data-stu-id="c6643-166">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
+   - <span data-ttu-id="c6643-167">**受信者が次のメンバーの**場合: 組織内の1つまたは複数のグループを指定します。</span><span class="sxs-lookup"><span data-stu-id="c6643-167">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
+   - <span data-ttu-id="c6643-168">**受信者のドメインが次の場合**: Office 365 で構成済みの 1 つ以上の承認済みドメイン内の受信者を指定します。</span><span class="sxs-lookup"><span data-stu-id="c6643-168">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in Office 365.</span></span>
+
+   <span data-ttu-id="c6643-169">条件を選択すると、対応するドロップ**ダウンボックスが**表示されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-169">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
+
+   - <span data-ttu-id="c6643-170">ボックス内をクリックし、値の一覧をスクロールして選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-170">Click in the box and scroll through the list of values to select.</span></span>
+   - <span data-ttu-id="c6643-171">ボックス内をクリックして入力を開始し、リストにフィルターを適用して値を選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-171">Click in the box and start typing to filter the list and select a value.</span></span>
+   - <span data-ttu-id="c6643-172">その他の値を追加するには、ボックスの空の領域をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-172">To add additional values, click in an empty area in the box.</span></span>
+   - <span data-ttu-id="c6643-173">個々のエントリを削除するには、](../../media/scc-remove-icon.png)その値の [削除] アイコン**をクリックし** ![ます。</span><span class="sxs-lookup"><span data-stu-id="c6643-173">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
+   - <span data-ttu-id="c6643-174">条件全体を削除するには、条件\*\*の [\*\* ![削除] アイコン](../../media/scc-remove-icon.png)をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-174">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
+
+   <span data-ttu-id="c6643-175">別の条件を追加するには、[**条件の追加**] をクリックし、[**適用**時] で残りの値を選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-175">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
+
+   <span data-ttu-id="c6643-176">例外を追加するには、[**条件の追加**] をクリックし、 **Except if**で例外を選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-176">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="c6643-177">設定と動作は、条件とまったく同じです。</span><span class="sxs-lookup"><span data-stu-id="c6643-177">The settings and behavior are exactly like the conditions.</span></span>
+
+   <span data-ttu-id="c6643-178">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-178">When you're finished, click **Next**.</span></span>
+
+5. <span data-ttu-id="c6643-179">表示される [**設定の確認**] ページで、設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="c6643-179">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="c6643-180">各設定で [**編集**] をクリックして、変更を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-180">You can click **Edit** on each setting to modify it.</span></span>
+
+   <span data-ttu-id="c6643-181">完了したら、[**このポリシーの作成**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-181">When you're finished, click **Create this policy**.</span></span>
+
+6. <span data-ttu-id="c6643-182">表示される確認ダイアログで [ **OK** ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-182">Click **OK** in the confirmation dialog that appears.</span></span>
+
+<span data-ttu-id="c6643-183">これらの一般的なポリシー設定を使用してフィッシング対策ポリシーを作成した後、次のセクションの手順を使用して、ポリシーの保護設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-183">After you create the anti-phishing policy with these general policy settings, use the instructions in the next section to configure the protection settings in the policy.</span></span>
+
+## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies"></a><span data-ttu-id="c6643-184">セキュリティ & コンプライアンスセンターを使用してフィッシング対策ポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="c6643-184">Use the Security & Compliance Center to modify anti-phishing policies</span></span>
+
+<span data-ttu-id="c6643-185">次の手順を使用して、作成した新しいポリシー、または既にカスタマイズした既存のポリシーを変更して、フィッシング対策ポリシーを変更します。</span><span class="sxs-lookup"><span data-stu-id="c6643-185">Use the following procedures to modify anti-phishing policies: a new policy that you created, or existing policies that you've already customized.</span></span>
+
+1. <span data-ttu-id="c6643-186">まだ準備できていない場合は、セキュリティ & コンプライアンスセンターを開き、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-186">If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+
+2. <span data-ttu-id="c6643-187">変更するカスタムのフィッシング対策ポリシーを選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-187">Select the custom anti-phishing policy that you want to modify.</span></span> <span data-ttu-id="c6643-188">既に選択されている場合は、選択を解除してもう一度選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-188">If it's already selected, deselect it and select it again.</span></span>
+
+3. <span data-ttu-id="c6643-189">[**ポリシー \<名\>の編集**フライアウトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-189">The **Edit your policy \<name\>** flyout appears.</span></span> <span data-ttu-id="c6643-190">いずれかのセクションで [**編集**] をクリックすると、そのセクションの設定にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="c6643-190">Clicking **Edit** in any section gives you access to the settings in that section.</span></span>
+
+   - <span data-ttu-id="c6643-191">次の手順は、セクションが表示される順序で示されていますが、連続していません (任意の順序でセクションを選択して変更することができます)。</span><span class="sxs-lookup"><span data-stu-id="c6643-191">The following steps are presented in the order that the sections appear, but they aren't sequential (you can select and modify the sections in any order).</span></span>
+
+   - <span data-ttu-id="c6643-192">セクションで [**編集**] をクリックすると、使用可能な設定がウィザード形式で表示されますが、ページ内を任意の順序で移動できます **。または** **Close** ![](../../media/scc-remove-icon.png) 、[任意のページに**保存**] をクリックして、[ \*\* \<ポリシー\>名の編集\*\*] ページに戻ることができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-192">After you click **Edit** in a section, the available settings are presented in a wizard format, but you can jump within the pages in any order, and you can click **Save** on any page (or **Cancel** or **Close** ![Close icon](../../media/scc-remove-icon.png) to return to the **Edit your policy \<name\>** page (you aren't required to visit the last page of the wizard to save or leave).</span></span>
+
+4. <span data-ttu-id="c6643-193">**ポリシー設定**: [**編集**] をクリックして、前のセクションで[ポリシーを作成](#use-the-security--compliance-center-to-create-anti-phishing-policies)したときに使用したものと同じ設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="c6643-193">**Policy setting**: Click **Edit** to modify the same settings that were available when you [created the policy](#use-the-security--compliance-center-to-create-anti-phishing-policies) in the previous section:</span></span>
+
+   - <span data-ttu-id="c6643-194">**名前**</span><span class="sxs-lookup"><span data-stu-id="c6643-194">**Name**</span></span>
+   - <span data-ttu-id="c6643-195">**説明**</span><span class="sxs-lookup"><span data-stu-id="c6643-195">**Description**</span></span>
+   - <span data-ttu-id="c6643-196">**適用先**</span><span class="sxs-lookup"><span data-stu-id="c6643-196">**Applied to**</span></span>
+   - <span data-ttu-id="c6643-197">**設定を確認する**</span><span class="sxs-lookup"><span data-stu-id="c6643-197">**Review your settings**</span></span>
+
+   <span data-ttu-id="c6643-198">完了したら、[任意のページに**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-198">When you're finished, click **Save** on any page.</span></span>
+
+5. <span data-ttu-id="c6643-199">**スプーフィング**: [**編集**] をクリックして、スプーフィングインテリジェンスを有効または無効にしたり、Outlook で認証されていない送信者の識別をオンまたはオフにしたり、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-199">**Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders.</span></span> <span data-ttu-id="c6643-200">詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-200">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
+
+   <span data-ttu-id="c6643-201">なお、これらの設定は、ATP のフィッシング対策ポリシーでも使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-201">Note that these same settings are also available in ATP anti-phishing policies.</span></span>
+
+   - <span data-ttu-id="c6643-202">**フィルター設定のスプーフィング**: 既定値は**on**で、そのままにすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c6643-202">**Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on.</span></span> <span data-ttu-id="c6643-203">この機能をオフにするには、トグルを [**オフ**] にします。</span><span class="sxs-lookup"><span data-stu-id="c6643-203">To turn it off, slide the toggle to **Off**.</span></span> <span data-ttu-id="c6643-204">詳細については、「[Office 365 でのスプーフィング インテリジェンスの構成](learn-about-spoof-intelligence.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-204">For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).</span></span>
 
      > [!NOTE]
-     > <span data-ttu-id="02f84-132">MX レコードが Office 365 を指していない場合は、スプーフィング対策保護を無効にする必要はありません。代わりに、コネクタの拡張フィルターを有効にします。</span><span class="sxs-lookup"><span data-stu-id="02f84-132">You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead.</span></span> <span data-ttu-id="02f84-133">手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-133">For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).</span></span>
+     > <span data-ttu-id="c6643-205">MX レコードが Office 365 を指していない場合は、スプーフィング対策保護を無効にする必要はありません。代わりに、コネクタの拡張フィルターを有効にします。</span><span class="sxs-lookup"><span data-stu-id="c6643-205">You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead.</span></span> <span data-ttu-id="c6643-206">手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-206">For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).</span></span>
 
-   - <span data-ttu-id="02f84-134">[認証されていない**送信者機能を有効にする**]: メッセージが電子メール認証チェックに失敗した場合に、送信者の写真に疑問符を追加します。</span><span class="sxs-lookup"><span data-stu-id="02f84-134">**Enable Unauthenticated Sender feature**: Adds a question mark to the sender's photo if the message fails email authentication checks.</span></span> <span data-ttu-id="02f84-135">詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-135">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span> <span data-ttu-id="02f84-136">既定値は [**オン**] です。</span><span class="sxs-lookup"><span data-stu-id="02f84-136">The default value is **On**.</span></span> <span data-ttu-id="02f84-137">この機能をオフにするには、トグルを [**オフ**] にします。</span><span class="sxs-lookup"><span data-stu-id="02f84-137">To turn it off, slide the toggle to **Off**.</span></span>
+   - <span data-ttu-id="c6643-207">[認証されていない**送信者の機能を有効にする**]: 既定値は **[オン**] です。</span><span class="sxs-lookup"><span data-stu-id="c6643-207">**Enable Unauthenticated Sender feature**: The default value is **On**.</span></span> <span data-ttu-id="c6643-208">この機能をオフにするには、トグルを [**オフ**] にします。</span><span class="sxs-lookup"><span data-stu-id="c6643-208">To turn it off, slide the toggle to **Off**.</span></span>
 
-   - <span data-ttu-id="02f84-138">**アクション**: スプーフィングインテリジェンスに失敗したメッセージに対して実行するアクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="02f84-138">**Actions**: Specify the action to take on messages that fail spoof intelligence:</span></span>
+   - <span data-ttu-id="c6643-209">**アクション**: スプーフィングインテリジェンスに失敗したメッセージに対して実行するアクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="c6643-209">**Actions**: Specify the action to take on messages that fail spoof intelligence:</span></span>
 
-     <span data-ttu-id="02f84-139">**ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信**される場合:</span><span class="sxs-lookup"><span data-stu-id="02f84-139">**If email is sent by someone who's not allowed to spoof your domain**:</span></span>
+     <span data-ttu-id="c6643-210">**ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信**される場合:</span><span class="sxs-lookup"><span data-stu-id="c6643-210">**If email is sent by someone who's not allowed to spoof your domain**:</span></span>
 
-     - <span data-ttu-id="02f84-140">**受信者の迷惑メールフォルダーにメッセージを移動**します (これは既定値です)。</span><span class="sxs-lookup"><span data-stu-id="02f84-140">**Move message to the recipients' Junk Email folders** (This is the default value.)</span></span>
-     - <span data-ttu-id="02f84-141">**メッセージを検疫する**</span><span class="sxs-lookup"><span data-stu-id="02f84-141">**Quarantine the message**</span></span>
+     - <span data-ttu-id="c6643-211">**受信者の迷惑メールフォルダーにメッセージを移動する**</span><span class="sxs-lookup"><span data-stu-id="c6643-211">**Move message to the recipients' Junk Email folders**</span></span>
+     - <span data-ttu-id="c6643-212">**メッセージを検疫する**</span><span class="sxs-lookup"><span data-stu-id="c6643-212">**Quarantine the message**</span></span>
 
-   - <span data-ttu-id="02f84-142">**設定を確認**します。個々の手順をクリックする代わりに、設定が概要で表示されます。</span><span class="sxs-lookup"><span data-stu-id="02f84-142">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
+   - <span data-ttu-id="c6643-213">**設定を確認**します。個々の手順をクリックする代わりに、設定が概要で表示されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-213">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
 
-     - <span data-ttu-id="02f84-143">各セクションで [**編集**] をクリックすると、関連するページに戻ることができます。</span><span class="sxs-lookup"><span data-stu-id="02f84-143">You can click **Edit** in each section to jump back to the relevant page.</span></span>
-     - <span data-ttu-id="02f84-144">このページでは、次の設定の**オン**と**オフ**を直接切り替えることができます。</span><span class="sxs-lookup"><span data-stu-id="02f84-144">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
+     - <span data-ttu-id="c6643-214">各セクションで [**編集**] をクリックすると、関連するページに戻ることができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-214">You can click **Edit** in each section to jump back to the relevant page.</span></span>
+     - <span data-ttu-id="c6643-215">このページでは、次の設定の**オン**と**オフ**を直接切り替えることができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-215">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
 
-       - <span data-ttu-id="02f84-145">**スプーフィング対策保護を有効にする**</span><span class="sxs-lookup"><span data-stu-id="02f84-145">**Enable antispoofing protection**</span></span>
-       - <span data-ttu-id="02f84-146">**認証されていない送信者機能を有効にする**</span><span class="sxs-lookup"><span data-stu-id="02f84-146">**Enable Unauthenticated Sender feature**</span></span>
+       - <span data-ttu-id="c6643-216">**スプーフィング対策保護を有効にする**</span><span class="sxs-lookup"><span data-stu-id="c6643-216">**Enable antispoofing protection**</span></span>
+       - <span data-ttu-id="c6643-217">**認証されていない送信者機能を有効にする**</span><span class="sxs-lookup"><span data-stu-id="c6643-217">**Enable Unauthenticated Sender feature**</span></span>
 
-   <span data-ttu-id="02f84-147">完了したら、[任意のページに**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02f84-147">When you're finished, click **Save** on any page.</span></span>
+   <span data-ttu-id="c6643-218">完了したら、[任意のページに**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-218">When you're finished, click **Save** on any page.</span></span>
 
-4. <span data-ttu-id="02f84-148">[Policy を**編集する Office365 フィッシング対策 Default** ] ページに戻り、設定を確認してから [**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02f84-148">Back on the **Edit your policy Office365 AntiPhish Default** page, review your settings and then click **Close**.</span></span>
+6. <span data-ttu-id="c6643-219">[**ポリシー \<名\>の編集**] ページに戻り、設定を確認してから、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-219">Back on the **Edit your policy \<Name\>** page, review your settings and then click **Close**.</span></span>
 
-## <a name="use-the-security--compliance-center-to-view-the-default-anti-phishing-policy"></a><span data-ttu-id="02f84-149">セキュリティ & コンプライアンスセンターを使用して既定のフィッシング対策ポリシーを表示する</span><span class="sxs-lookup"><span data-stu-id="02f84-149">Use the Security & Compliance Center to view the default anti-phishing policy</span></span>
+### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a><span data-ttu-id="c6643-220">セキュリティ & コンプライアンスセンターを使用して既定のフィッシング対策ポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="c6643-220">Use the Security & Compliance Center to modify the default anti-phishing policy</span></span>
 
-1. <span data-ttu-id="02f84-150">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \> **ATP のフィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="02f84-150">In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+<span data-ttu-id="c6643-221">既定のフィッシング対策ポリシーの名前は、Office365 フィッシング対策 Default で、ポリシーの一覧には表示されません。</span><span class="sxs-lookup"><span data-stu-id="c6643-221">The default anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies.</span></span> <span data-ttu-id="c6643-222">既定のフィッシング対策ポリシーを変更するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="c6643-222">To modify the default anti-phishing policy, do the following steps:</span></span>
 
-2. <span data-ttu-id="02f84-151">[**既定のポリシー** ] をクリックして、既定のフィッシング対策ポリシーを表示します。</span><span class="sxs-lookup"><span data-stu-id="02f84-151">Click **Default policy** to view the default anti-phishing policy.</span></span>
+1. <span data-ttu-id="c6643-223">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-223">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
 
-## <a name="use-exchange-online-powershell-to-configure-the-default-anti-phishing-policy"></a><span data-ttu-id="02f84-152">Exchange Online の PowerShell を使用して既定のフィッシング対策ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="02f84-152">Use Exchange Online PowerShell to configure the default anti-phishing policy</span></span>
+2. <span data-ttu-id="c6643-224">[**フィッシング対策**] ページで、[**既定のポリシー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-224">On the **Anti-phishing** page, click **Default policy**.</span></span>
 
-### <a name="use-powershell-to-view-the-default-anti-phish-policy"></a><span data-ttu-id="02f84-153">PowerShell を使用して既定のフィッシングポリシーを表示する</span><span class="sxs-lookup"><span data-stu-id="02f84-153">Use PowerShell to view the default anti-phish policy</span></span>
+3. <span data-ttu-id="c6643-225">[**ポリシーの Office 365 フィッシング対策の既定の編集**] ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-225">The **Edit your policy Office365 AntiPhish Default** page appears.</span></span> <span data-ttu-id="c6643-226">次のセクションを使用できます。これには、[カスタムポリシーを変更](#use-the-security--compliance-center-to-modify-anti-phishing-policies)するときに、同一の設定が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c6643-226">The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security--compliance-center-to-modify-anti-phishing-policies).</span></span>
 
-<span data-ttu-id="02f84-154">既定のフィッシングポリシーを表示するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="02f84-154">To view the default anti-phish policy, run the following command:</span></span>
+   - <span data-ttu-id="c6643-227">**偽装**</span><span class="sxs-lookup"><span data-stu-id="c6643-227">**Impersonation**</span></span>
+   - <span data-ttu-id="c6643-228">**なりすます**</span><span class="sxs-lookup"><span data-stu-id="c6643-228">**Spoof**</span></span>
+   - <span data-ttu-id="c6643-229">**詳細設定**</span><span class="sxs-lookup"><span data-stu-id="c6643-229">**Advanced settings**</span></span>
+
+   <span data-ttu-id="c6643-230">次の設定は、既定のポリシーを変更するときには使用できません。</span><span class="sxs-lookup"><span data-stu-id="c6643-230">The following settings aren't available when you modify the default policy:</span></span>
+
+   - <span data-ttu-id="c6643-231">**ポリシー設定**のセクションと値は表示できますが、**編集**リンクはありません。そのため、設定 (ポリシー名、説明、ポリシーの適用先 (すべての受信者に適用)) を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-231">You can see the **Policy setting** section and values, but there's no **Edit** link, so you can't modify the settings (policy name, description, and who the policy applies to (it applies to all recipients)).</span></span>
+   - <span data-ttu-id="c6643-232">既定のポリシーを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-232">You can't delete the default policy.</span></span>
+   - <span data-ttu-id="c6643-233">既定のポリシーの優先度を変更することはできません (常に最後に適用されます)。</span><span class="sxs-lookup"><span data-stu-id="c6643-233">You can't change the priority of the default policy (it's always applied last).</span></span>
+
+4. <span data-ttu-id="c6643-234">[ **Policy The Office365 フィッシング対策 Default** ] ページで、設定を確認し、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-234">On the **Edit your policy Office365 AntiPhish Default** page, review your settings and then click **Close**.</span></span>
+
+### <a name="enable-or-disable-custom-anti-phishing-policies"></a><span data-ttu-id="c6643-235">カスタムのフィッシング対策ポリシーを有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="c6643-235">Enable or disable custom anti-phishing policies</span></span>
+
+1. <span data-ttu-id="c6643-236">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-236">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+
+2. <span data-ttu-id="c6643-237">[**状態**] 列の値に注目してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-237">Notice the value in the **Status** column:</span></span>
+
+   - <span data-ttu-id="c6643-238">トグルを [**オフ**] にして、ポリシーを無効にします。</span><span class="sxs-lookup"><span data-stu-id="c6643-238">Slide the toggle to **Off** to disable the policy.</span></span>
+
+   - <span data-ttu-id="c6643-239">トグルに切り替えて、**ポリシーを有効**にします。</span><span class="sxs-lookup"><span data-stu-id="c6643-239">Slide the toggle to **On** to enable the policy.</span></span>
+
+<span data-ttu-id="c6643-240">既定のフィッシング対策ポリシーを無効にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-240">You can't disable the default anti-phishing policy.</span></span>
+
+### <a name="set-the-priority-of-custom-anti-phishing-policies"></a><span data-ttu-id="c6643-241">カスタムフィッシング対策ポリシーの優先度を設定する</span><span class="sxs-lookup"><span data-stu-id="c6643-241">Set the priority of custom anti-phishing policies</span></span>
+
+<span data-ttu-id="c6643-242">既定では、フィッシング対策ポリシーには、作成された順序に基づく優先度が与えられます (新しいポリシーは、以前のポリシーよりも優先度が低いです)。</span><span class="sxs-lookup"><span data-stu-id="c6643-242">By default, anti-phishing policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies).</span></span> <span data-ttu-id="c6643-243">優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。</span><span class="sxs-lookup"><span data-stu-id="c6643-243">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="c6643-244">2 つのポリシーが同じ優先度を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-244">No two policies can have the same priority.</span></span>
+
+<span data-ttu-id="c6643-245">カスタムのフィッシング対策ポリシーは、処理順に表示されます (最初のポリシーの**優先度**値は0です)。</span><span class="sxs-lookup"><span data-stu-id="c6643-245">Custom anti-phishing policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span> <span data-ttu-id="c6643-246">Office365 フィッシング対策 Default という既定のフィッシング対策ポリシーは、カスタムの優先度の値を**最小**にし、それを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-246">The default anti-phishing policy named Office365 AntiPhish Default has the custom priority value **Lowest**, and you can't change it.</span></span>
+
+ <span data-ttu-id="c6643-247">**注**: セキュリティ & コンプライアンスセンターでは、作成後に、フィッシング対策ポリシーの優先度のみを変更できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-247">**Note**: In the Security & Compliance Center, you can only change the priority of the anti-phishing policy after you create it.</span></span> <span data-ttu-id="c6643-248">PowerShell では、フィッシングルールを作成するときに既定の優先順位を上書きできます (既存のルールの優先度に影響する場合があります)。</span><span class="sxs-lookup"><span data-stu-id="c6643-248">In PowerShell, you can override the default priority when you create the anti-phish rule (which can affect the priority of existing rules).</span></span>
+
+<span data-ttu-id="c6643-249">ポリシーの優先度を変更するには、ポリシーのプロパティで [**優先度を上げる**] または [**優先度を下げる**] をクリックします (セキュリティ & コンプライアンスセンターで**優先度**を直接変更することはできません)。</span><span class="sxs-lookup"><span data-stu-id="c6643-249">To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span> <span data-ttu-id="c6643-250">ポリシーの優先度を変更することは、複数のポリシーがある場合にのみ有効になります。</span><span class="sxs-lookup"><span data-stu-id="c6643-250">Changing the priority of a policy only makes sense if you have multiple policies.</span></span>
+
+1. <span data-ttu-id="c6643-251">セキュリティ & コンプライアンスセンターで、[**脅威管理** \> **ポリシー** \> **ATP のフィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-251">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+
+2. <span data-ttu-id="c6643-252">変更するポリシーを選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-252">Select the policy that you want to modify.</span></span> <span data-ttu-id="c6643-253">既に選択されている場合は、選択を解除してもう一度選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-253">If it's already selected, deselect it and select it again.</span></span>
+
+3. <span data-ttu-id="c6643-254">[**ポリシー \<名\>の編集**フライアウトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-254">The **Edit your policy \<name\>** flyout appears.</span></span>
+
+   - <span data-ttu-id="c6643-255">**優先度**の値が**0**のカスタムのフィッシング対策ポリシーでは、[**優先度を下げる**] ボタンのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-255">The custom anti-phishing policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
+
+   - <span data-ttu-id="c6643-256">最も低い**優先度**の値 (たとえば**3**) を持つカスタムのフィッシング対策ポリシーでは、[**優先度を上げる**] ボタンのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-256">The custom anti-phishing policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
+
+   - <span data-ttu-id="c6643-257">3つ以上のカスタムのマルウェア対策ポリシーを所有している場合、最高の優先度と最も低い優先度の値の間のポリシーでは、[優先度を**上げる**] ボタンと [**優先度を下げる**] ボタンの両方を使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-257">If you have three or more custom anti-phishing policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
+
+4. <span data-ttu-id="c6643-258">[優先**度を上げる**] または [**優先度を下げる**] をクリックし、**優先度**の値を変更します。</span><span class="sxs-lookup"><span data-stu-id="c6643-258">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
+
+5. <span data-ttu-id="c6643-259">完了したら、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-259">When you're finished, click **Close**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies"></a><span data-ttu-id="c6643-260">セキュリティ & コンプライアンスセンターを使用してフィッシング対策ポリシーを表示する</span><span class="sxs-lookup"><span data-stu-id="c6643-260">Use the Security & Compliance Center to view anti-phishing policies</span></span>
+
+1. <span data-ttu-id="c6643-261">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-261">In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+
+2. <span data-ttu-id="c6643-262">次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="c6643-262">Do one of the following steps:</span></span>
+
+   - <span data-ttu-id="c6643-263">表示するカスタムのフィッシング対策ポリシーを選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-263">Select a custom anti-phishing policy that you want to view.</span></span> <span data-ttu-id="c6643-264">既に選択されている場合は、選択を解除してもう一度選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-264">If it's already selected, deselect it and select it again.</span></span>
+
+   - <span data-ttu-id="c6643-265">[**既定のポリシー** ] をクリックして、既定のフィッシング対策ポリシーを表示します。</span><span class="sxs-lookup"><span data-stu-id="c6643-265">Click **Default policy** to view the default anti-phishing policy.</span></span>
+
+3. <span data-ttu-id="c6643-266">[ \*\* \<ポリシー名\>の編集\*\*] ポップアップが表示され、設定と値を確認できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-266">The **Edit your policy \<name\>** flyout appears, where you can view the settings and values.</span></span>
+
+## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a><span data-ttu-id="c6643-267">セキュリティ & コンプライアンスセンターを使用して、フィッシング対策ポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="c6643-267">Use the Security & Compliance Center to remove anti-phishing policies</span></span>
+
+1. <span data-ttu-id="c6643-268">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-268">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+
+2. <span data-ttu-id="c6643-269">削除するポリシーを選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-269">Select the policy that you want to remove.</span></span> <span data-ttu-id="c6643-270">既に選択されている場合は、選択を解除してもう一度選択します。</span><span class="sxs-lookup"><span data-stu-id="c6643-270">If it's already selected, deselect it and select it again.</span></span>
+
+3. <span data-ttu-id="c6643-271">表示される [**ポリシー \<名\>の編集**] ポップアップで、[**ポリシーの削除**] をクリックし、表示される警告ダイアログボックスで [**はい**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c6643-271">In the **Edit your policy \<name\>** flyout that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
+
+<span data-ttu-id="c6643-272">既定のポリシーは削除できません。</span><span class="sxs-lookup"><span data-stu-id="c6643-272">You can't remove the default policy.</span></span>
+
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a><span data-ttu-id="c6643-273">Exchange Online PowerShell を使用してフィッシング対策ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="c6643-273">Use Exchange Online PowerShell to configure anti-phishing policies</span></span>
+
+<span data-ttu-id="c6643-274">次の手順は、スタンドアロン EOP 組織では使用できません。</span><span class="sxs-lookup"><span data-stu-id="c6643-274">The following procedures aren't available in standalone EOP organizations.</span></span>
+
+### <a name="use-powershell-to-create-anti-phishing-policies"></a><span data-ttu-id="c6643-275">PowerShell を使用してフィッシング対策ポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="c6643-275">Use PowerShell to create anti-phishing policies</span></span>
+
+<span data-ttu-id="c6643-276">PowerShell でのフィッシング対策ポリシーの作成は、次の2つの手順からなるプロセスです。</span><span class="sxs-lookup"><span data-stu-id="c6643-276">Creating an anti-phishing policy in PowerShell is a two-step process:</span></span>
+
+1. <span data-ttu-id="c6643-277">フィッシングポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-277">Create the anti-phish policy.</span></span>
+
+2. <span data-ttu-id="c6643-278">ルールが適用されるフィッシングポリシーを指定するフィッシングルールを作成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-278">Create the anti-phish rule that specifies the anti-phish policy that the rule applies to.</span></span>
+
+ <span data-ttu-id="c6643-279">**注**:</span><span class="sxs-lookup"><span data-stu-id="c6643-279">**Notes**:</span></span>
+
+- <span data-ttu-id="c6643-280">新しいフィッシングルールを作成し、関連付けられていない既存のアンチフィッシングポリシーをそのルールに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="c6643-280">You can create a new anti-phish rule and assign an existing, unassociated anti-phish policy to it.</span></span> <span data-ttu-id="c6643-281">フィッシングルールは、複数のフィッシングポリシーに関連付けることはできません。</span><span class="sxs-lookup"><span data-stu-id="c6643-281">An anti-phish rule can't be associated with more than one anti-phish policy.</span></span>
+
+- <span data-ttu-id="c6643-282">次の設定は、ポリシーを作成するまではセキュリティ & コンプライアンスセンターでは使用できない PowerShell の新しいフィッシングポリシーで構成できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-282">You can configure the following settings on new anti-phish policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
+
+  - <span data-ttu-id="c6643-283">新しいポリシーを無効として作成します ( **new-antiphishrule**コマンドレットでは_有効_ `$false` )。</span><span class="sxs-lookup"><span data-stu-id="c6643-283">Create the new policy as disabled (_Enabled_ `$false` on the **New-AntiPhishRule** cmdlet).</span></span>
+
+  - <span data-ttu-id="c6643-284">**New-antiphishrule**コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _ \<番号\>_)。</span><span class="sxs-lookup"><span data-stu-id="c6643-284">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-AntiPhishRule** cmdlet).</span></span>
+
+- <span data-ttu-id="c6643-285">PowerShell で作成した新しいフィッシングポリシーは、ポリシーをフィッシングルールに割り当てるまで、セキュリティ & コンプライアンスセンターに表示されません。</span><span class="sxs-lookup"><span data-stu-id="c6643-285">A new anti-phish policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to an anti-phish rule.</span></span>
+
+#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a><span data-ttu-id="c6643-286">手順 1: PowerShell を使用してフィッシングポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="c6643-286">Step 1: Use PowerShell to create an anti-phish policy</span></span>
+
+<span data-ttu-id="c6643-287">フィッシングポリシーを作成するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-287">To create an anti-phish policy, use this syntax:</span></span>
 
 ```PowerShell
-Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
-<span data-ttu-id="02f84-155">構文およびパラメーターの詳細については、「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-155">For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy).</span></span>
+<span data-ttu-id="c6643-288">この例では、次の設定を使用して Research Quarantine という名前のフィッシングポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-288">This example creates anti-phish policy named Research Quarantine with the following settings:</span></span>
 
-### <a name="use-powershell-to-modify-the-default-anti-phish-policy"></a><span data-ttu-id="02f84-156">PowerShell を使用して既定のフィッシングポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="02f84-156">Use PowerShell to modify the default anti-phish policy</span></span>
-
-<span data-ttu-id="02f84-157">既定のフィッシングポリシーを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="02f84-157">To modify the default anti-phish policy, use the following syntax:</span></span>
+- <span data-ttu-id="c6643-289">このポリシーは有効になっています ( _enabled_パラメーターは使用してい`$true`ません。既定値はです)。</span><span class="sxs-lookup"><span data-stu-id="c6643-289">The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
+- <span data-ttu-id="c6643-290">説明は、「研究部門のポリシー」です。</span><span class="sxs-lookup"><span data-stu-id="c6643-290">The description is: Research department policy.</span></span>
+- <span data-ttu-id="c6643-291">スプーフィングに対する既定のアクションを変更します。</span><span class="sxs-lookup"><span data-stu-id="c6643-291">Changes the default action for spoofing to Quarantine.</span></span>
 
 ```powershell
-Set-AntiPhishPolicy -Identity "Office365 AntiPhish Default" [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableAntispoofEnforcement <$true | $false>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
 ```
 
-<span data-ttu-id="02f84-158">この例では、認証チェックに失敗したスプーフィングされたメッセージに対するアクションを、検疫に変更します。</span><span class="sxs-lookup"><span data-stu-id="02f84-158">This example changes the action for spoofed messages that fail authentication checks to quarantine.</span></span>
+<span data-ttu-id="c6643-292">構文およびパラメーターの詳細については、「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-292">For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy).</span></span>
+
+#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a><span data-ttu-id="c6643-293">手順 2: PowerShell を使用してフィッシングルールを作成する</span><span class="sxs-lookup"><span data-stu-id="c6643-293">Step 2: Use PowerShell to create an anti-phish rule</span></span>
+
+<span data-ttu-id="c6643-294">フィッシングルールを作成するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-294">To create an anti-phish rule, use this syntax:</span></span>
+
+```PowerShell
+New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
+```
+
+<span data-ttu-id="c6643-295">この例では、次の条件を使用して Research Department という名前のフィッシングルールを作成します。</span><span class="sxs-lookup"><span data-stu-id="c6643-295">This example creates an anti-phish rule named Research Department with the following conditions:</span></span>
+
+- <span data-ttu-id="c6643-296">ルールは、Research Quarantine という名前のフィッシングポリシーに関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="c6643-296">The rule is associated with the anti-phish policy named Research Quarantine.</span></span>
+- <span data-ttu-id="c6643-297">ルールは Research Department という名前のグループのメンバーに適用されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-297">The rule applies to members of the group named Research Department.</span></span>
+- <span data-ttu-id="c6643-298">_Priority_パラメーターを使用していないので、既定の優先度が使用されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-298">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
 
 ```powershell
-Set-AntiPhishPolicy -Identity "Office365 AntiPhish Default" -AuthenticationFailAction Quarantine
+New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-<span data-ttu-id="02f84-159">構文およびパラメーターの詳細については、「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02f84-159">For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy).</span></span>
+<span data-ttu-id="c6643-299">構文およびパラメーターの詳細については、「 [new-antiphishrule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-299">For detailed syntax and parameter information, see [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule).</span></span>
 
-## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="02f84-160">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="02f84-160">How do you know these procedures worked?</span></span>
+### <a name="use-powershell-to-view-anti-phish-policies"></a><span data-ttu-id="c6643-300">PowerShell を使用してフィッシングのポリシーを表示する</span><span class="sxs-lookup"><span data-stu-id="c6643-300">Use PowerShell to view anti-phish policies</span></span>
 
-<span data-ttu-id="02f84-161">既定のフィッシング対策ポリシーが正常に構成されたことを確認するには、次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="02f84-161">To verify that you've successfully configured the default anti-phishing policy, do any of the following steps:</span></span>
+<span data-ttu-id="c6643-301">既存のフィッシングポリシーを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-301">To view existing anti-phish policies, use the following syntax:</span></span>
 
-- <span data-ttu-id="02f84-162">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング** \>対策] に移動し、[**既定のポリシー** ] をクリックして、フライアウトの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="02f84-162">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing** \> click **Default policy** and view the details in the flyout.</span></span>
+```PowerShell
+Get-AntiPhishPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
 
-- <span data-ttu-id="02f84-163">Exchange Online PowerShell で次のコマンドを実行し、設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="02f84-163">In Exchange Online PowerShell, run the following command and verify the settings:</span></span>
+<span data-ttu-id="c6643-302">この例では、指定されたプロパティと共にすべてのフィッシングポリシーの要約リストを返します。</span><span class="sxs-lookup"><span data-stu-id="c6643-302">This example returns a summary list of all anti-phish policies along with the specified properties.</span></span>
+
+```PowerShell
+Get-AntiPhishPolicy | Format-Table Name,IsDefault
+```
+
+<span data-ttu-id="c6643-303">この例では、"重役" という名前のフィッシングポリシーのすべてのプロパティ値を返します。</span><span class="sxs-lookup"><span data-stu-id="c6643-303">This example returns all the property values for the anti-phish policy named Executives.</span></span>
+
+```PowerShell
+Get-AntiPhishPolicy -Identity "Executives"
+```
+
+<span data-ttu-id="c6643-304">構文およびパラメーターの詳細については、「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-304">For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy).</span></span>
+
+### <a name="use-powershell-to-view-anti-phish-rules"></a><span data-ttu-id="c6643-305">PowerShell を使用してフィッシングのルールを表示する</span><span class="sxs-lookup"><span data-stu-id="c6643-305">Use PowerShell to view anti-phish rules</span></span>
+
+<span data-ttu-id="c6643-306">既存のフィッシングルールを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-306">To view existing anti-phish rules, use the following syntax:</span></span>
+
+```PowerShell
+Get-AntiPhishRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+<span data-ttu-id="c6643-307">この例では、指定したプロパティと共に、フィッシングのすべてのルールの要約リストを返します。</span><span class="sxs-lookup"><span data-stu-id="c6643-307">This example returns a summary list of all anti-phish rules along with the specified properties.</span></span>
+
+```PowerShell
+Get-AntiPhishRule | Format-Table Name,Priority,State
+```
+
+<span data-ttu-id="c6643-308">ルールを有効または無効にしてリストをフィルター処理するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="c6643-308">To filter the list by enabled or disabled rules, run the following commands:</span></span>
+
+```PowerShell
+Get-AntiPhishRule -State Disabled | Format-Table Name,Priority
+```
+
+```PowerShell
+Get-AntiPhishRule -State Enabled | Format-Table Name,Priority
+```
+
+<span data-ttu-id="c6643-309">この例では、Contoso 重役という名前のフィッシングルールのすべてのプロパティ値を返します。</span><span class="sxs-lookup"><span data-stu-id="c6643-309">This example returns all the property values for the anti-phish rule named Contoso Executives.</span></span>
+
+```PowerShell
+Get-AntiPhishRule -Identity "Contoso Executives"
+```
+
+<span data-ttu-id="c6643-310">構文およびパラメーターの詳細については、「 [new-antiphishrule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-310">For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule).</span></span>
+
+### <a name="use-powershell-to-modify-anti-phish-policies"></a><span data-ttu-id="c6643-311">PowerShell を使用してフィッシングポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="c6643-311">Use PowerShell to modify anti-phish policies</span></span>
+
+<span data-ttu-id="c6643-312">このトピックで前述したように、「[手順 1: powershell を使用してフィッシングポリシーを作成する](#step-1-use-powershell-to-create-an-anti-phish-policy)」で説明されているように、ポリシーの作成時に powershell のフィッシングポリシーを変更する場合は、次の項目以外にも同じ設定を使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-312">Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this topic.</span></span>
+
+- <span data-ttu-id="c6643-313">指定されたポリシーを既定のポリシー (すべてのユーザーに適用して、常に**最下位**の優先度を適用し、削除することはできません) に変更する_makedefault_スイッチは、PowerShell のフィッシングポリシーを変更する場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-313">The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.</span></span>
+
+- <span data-ttu-id="c6643-314">フィッシングポリシーの名前を変更することはできません ( **get-antiphishpolicy**コマンドレットには_Name_パラメーターがありません)。</span><span class="sxs-lookup"><span data-stu-id="c6643-314">You can't rename an anti-phish policy (the **Set-AntiPhishPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="c6643-315">セキュリティ & コンプライアンスセンターでフィッシング対策ポリシーの名前を変更する場合、フィッシング_ルール_の名前のみを変更しています。</span><span class="sxs-lookup"><span data-stu-id="c6643-315">When you rename an anti-phishing policy in the Security & Compliance Center, you're only renaming the anti-phish _rule_.</span></span>
+
+<span data-ttu-id="c6643-316">フィッシングポリシーを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-316">To modify an anti-phish policy, use this syntax:</span></span>
+
+```PowerShell
+Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
+```
+
+<span data-ttu-id="c6643-317">構文およびパラメーターの詳細については、「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-317">For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy).</span></span>
+
+### <a name="use-powershell-to-modify-anti-phish-rules"></a><span data-ttu-id="c6643-318">PowerShell を使用してフィッシングルールを変更する</span><span class="sxs-lookup"><span data-stu-id="c6643-318">Use PowerShell to modify anti-phish rules</span></span>
+
+<span data-ttu-id="c6643-319">PowerShell でフィッシングルールを変更するときには使用できない唯一の設定は、無効にされたルールを作成できる_有効_なパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="c6643-319">The only setting that isn't available when you modify an anti-phish rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="c6643-320">既存のフィッシングルールを有効または無効にするには、次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-320">To enable or disable existing anti-phish rules, see the next section.</span></span>
+
+<span data-ttu-id="c6643-321">それ以外の場合は、PowerShell でフィッシングルールを変更しても、追加の設定は使用できません。</span><span class="sxs-lookup"><span data-stu-id="c6643-321">Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell.</span></span> <span data-ttu-id="c6643-322">このトピックで前述した「[手順 2: PowerShell を使用してフィッシングルールを作成する](#step-2-use-powershell-to-create-an-anti-phish-rule)」で説明されているように、ルールを作成する場合にも同じ設定を使用できます。</span><span class="sxs-lookup"><span data-stu-id="c6643-322">The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this topic.</span></span>
+
+<span data-ttu-id="c6643-323">フィッシングルールを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-323">To modify an anti-phish rule, use this syntax:</span></span>
+
+```PowerShell
+Set-AntiPhishRule -Identity "<RuleName>" <Settings>
+```
+
+<span data-ttu-id="c6643-324">構文およびパラメーターの詳細については、「 [new-antiphishrule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-324">For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule).</span></span>
+
+### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a><span data-ttu-id="c6643-325">PowerShell を使用してフィッシングルールを有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="c6643-325">Use PowerShell to enable or disable anti-phish rules</span></span>
+
+<span data-ttu-id="c6643-326">PowerShell でフィッシングルールを有効または無効にすると、フィッシング対策ポリシー全体 (フィッシングルールおよび割り当てられたフィッシングポリシー) が有効または無効になります。</span><span class="sxs-lookup"><span data-stu-id="c6643-326">Enabling or disabling an anti-phish rule in PowerShell enables or disables the whole anti-phishing policy (the anti-phish rule and the assigned anti-phish policy).</span></span> <span data-ttu-id="c6643-327">既定のフィッシング対策ポリシーを有効または無効にすることはできません (常にすべての受信者に適用されます)。</span><span class="sxs-lookup"><span data-stu-id="c6643-327">You can't enable or disable the default anti-phishing policy (it's always applied to all recipients).</span></span>
+
+<span data-ttu-id="c6643-328">PowerShell でフィッシングルールを有効または無効にするには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-328">To enable or disable an anti-phish rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+<Enable-AntiPhishRule | Disable-AntiPhishRule> -Identity "<RuleName>"
+```
+
+<span data-ttu-id="c6643-329">この例では、Marketing Department という名前のフィッシングルールを無効にします。</span><span class="sxs-lookup"><span data-stu-id="c6643-329">This example disables the anti-phish rule named Marketing Department.</span></span>
+
+```PowerShell
+Disable-AntiPhishRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="c6643-330">この例では、同じルールを有効化します。</span><span class="sxs-lookup"><span data-stu-id="c6643-330">This example enables same rule.</span></span>
+
+```PowerShell
+Enable-AntiPhishRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="c6643-331">構文およびパラメーターの詳細については、「 [new-antiphishrule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule) 」および「 [Disable-new-antiphishrule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-331">For detailed syntax and parameter information, see [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule) and [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule).</span></span>
+
+### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a><span data-ttu-id="c6643-332">PowerShell を使用してフィッシングルールの優先度を設定する</span><span class="sxs-lookup"><span data-stu-id="c6643-332">Use PowerShell to set the priority of anti-phish rules</span></span>
+
+<span data-ttu-id="c6643-333">ルールに設定できる優先度の最高値値は 0 です。</span><span class="sxs-lookup"><span data-stu-id="c6643-333">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="c6643-334">設定できる最低値はルールの数に依存します。</span><span class="sxs-lookup"><span data-stu-id="c6643-334">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="c6643-335">たとえば、ルールが五つある場合、使用できる優先度の値は 0 から 4 です。</span><span class="sxs-lookup"><span data-stu-id="c6643-335">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="c6643-336">既存の一つのルールの優先度を変更すると、他のルールにも連鎖的な影響が起こりえます。</span><span class="sxs-lookup"><span data-stu-id="c6643-336">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="c6643-337">たとえば、カスタム ルールが 5 つあって (優先度 0 から 4)、1 つのルールの優先度を 2 に変更した場合には、既存の優先度 2 のルールは優先度 3 に変更され、優先度 3 は優先度 4 に変更されます。</span><span class="sxs-lookup"><span data-stu-id="c6643-337">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
+
+<span data-ttu-id="c6643-338">PowerShell でフィッシングルールの優先度を設定するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-338">To set the priority of an anti-phish rule in PowerShell, use the following syntax:</span></span>
+
+```PowerShell
+Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
+```
+
+<span data-ttu-id="c6643-p137">この例では、Marketing Department というルールの優先度を 2 に設定しています。優先度が 2 以下のすべての既存のルールは、優先度が 1 ずつ下がります (優先度番号が 1 ずつ増加します)。</span><span class="sxs-lookup"><span data-stu-id="c6643-p137">This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
+
+```PowerShell
+Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
+```
+
+<span data-ttu-id="c6643-341">**注**:</span><span class="sxs-lookup"><span data-stu-id="c6643-341">**Notes**:</span></span>
+
+- <span data-ttu-id="c6643-342">新しいルールの作成時に優先度を設定するには、代わりに**new-antiphishrule**コマンドレットで_priority_パラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-342">To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-AntiPhishRule** cmdlet instead.</span></span>
+
+- <span data-ttu-id="c6643-343">既定のフィッシングポリシーには、対応するフィッシングルールが設定されておらず、常に未設定の優先度の値が**最低**になっています。</span><span class="sxs-lookup"><span data-stu-id="c6643-343">The default anti-phish policy doesn't have a corresponding anti-phish rule, and it always has the unmodifiable priority value **Lowest**.</span></span>
+
+### <a name="use-powershell-to-remove-anti-phish-policies"></a><span data-ttu-id="c6643-344">PowerShell を使用してフィッシングポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="c6643-344">Use PowerShell to remove anti-phish policies</span></span>
+
+<span data-ttu-id="c6643-345">PowerShell を使用してフィッシングポリシーを削除しても、対応するフィッシングルールは削除されません。</span><span class="sxs-lookup"><span data-stu-id="c6643-345">When you use PowerShell to remove an anti-phish policy, the corresponding anti-phish rule isn't removed.</span></span>
+
+<span data-ttu-id="c6643-346">PowerShell でフィッシングポリシーを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-346">To remove an anti-phish policy in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-AntiPhishPolicy -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="c6643-347">この例では、Marketing Department という名前のフィッシングポリシーを削除します。</span><span class="sxs-lookup"><span data-stu-id="c6643-347">This example removes the anti-phish policy named Marketing Department.</span></span>
+
+```PowerShell
+Remove-AntiPhishPolicy -Identity "Marketing Department"
+```
+
+<span data-ttu-id="c6643-348">構文およびパラメーターの詳細については、「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-348">For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy).</span></span>
+
+### <a name="use-powershell-to-remove-anti-phish-rules"></a><span data-ttu-id="c6643-349">PowerShell を使用してフィッシングルールを削除する</span><span class="sxs-lookup"><span data-stu-id="c6643-349">Use PowerShell to remove anti-phish rules</span></span>
+
+<span data-ttu-id="c6643-350">PowerShell を使用してフィッシングルールを削除しても、対応するフィッシングポリシーは削除されません。</span><span class="sxs-lookup"><span data-stu-id="c6643-350">When you use PowerShell to remove an anti-phish rule, the corresponding anti-phish policy isn't removed.</span></span>
+
+<span data-ttu-id="c6643-351">PowerShell でフィッシングルールを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c6643-351">To remove an anti-phish rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-AntiPhishRule -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="c6643-352">この例では、Marketing Department という名前のフィッシングルールを削除します。</span><span class="sxs-lookup"><span data-stu-id="c6643-352">This example removes the anti-phish rule named Marketing Department.</span></span>
+
+```PowerShell
+Remove-AntiPhishRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="c6643-353">構文およびパラメーターの詳細については、「 [new-antiphishrule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6643-353">For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule).</span></span>
+
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="c6643-354">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="c6643-354">How do you know these procedures worked?</span></span>
+
+<span data-ttu-id="c6643-355">ATP のフィッシング対策ポリシーが正常に構成されたことを確認するには、次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="c6643-355">To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:</span></span>
+
+- <span data-ttu-id="c6643-356">[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \>の**フィッシング対策**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c6643-356">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span> <span data-ttu-id="c6643-357">ポリシーの一覧、その**状態**の値、およびその**優先度**の値を確認します。</span><span class="sxs-lookup"><span data-stu-id="c6643-357">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="c6643-358">詳細を表示するには、次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="c6643-358">To view more details do either of the following steps:</span></span>
+
+  - <span data-ttu-id="c6643-359">リストからポリシーを選択し、フライアウトの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="c6643-359">Select the policy from the list, and view the details in the flyout.</span></span>
+  - <span data-ttu-id="c6643-360">[**既定のポリシー** ] をクリックして、フライアウトの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="c6643-360">Click **Default policy** and view the details in the flyout.</span></span>
+
+- <span data-ttu-id="c6643-361">Exchange Online PowerShell で、name \<\>をポリシーまたはルールの名前に置き換えて、次のコマンドを実行し、設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="c6643-361">In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, and run the following command and verify the settings:</span></span>
 
   ```PowerShell
-  Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
+  Get-AntiPhishPolicy -Identity "<Name>"
+  ```
+
+  ```PowerShell
+  Get-AntiPhishRule -Identity "<Name>"
   ```
