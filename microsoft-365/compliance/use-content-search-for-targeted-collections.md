@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: e6de817e7ec324e6aa80ef596340906c2f86d126
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4808dad8faed99ac15c4f9828ad1759e2f1179fc
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633382"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942980"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>コンテンツ検索を使用して対象コレクションを検索する
 
@@ -233,7 +235,7 @@ SharePoint または OneDrive for Business サイトから**documentlink**プロ
     
     - [検索する**特定のサイトを選択する**] をクリックし、手順1でスクリプトを実行したときに指定したものと同じサイト URL を追加します。 
     
-6. [**次へ**] をクリックします。
+6. [ **次へ**] をクリックします。
     
 7. [**検索する内容を選択**してください] ページの [キーワード] ボックスに、 `folderid:<folderid>`手順`documentlink:<path>` 1 でスクリプトによって返された値を貼り付けます。 
     

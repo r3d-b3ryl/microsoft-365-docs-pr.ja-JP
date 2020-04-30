@@ -12,13 +12,15 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
+search.appverid:
+- MET150
 description: この洞察を重視する推奨事項によって、組織は、DLP ポリシーの範囲に格差がある場合に通知することによって、Microsoft 365 で機密コンテンツを保存および共有する際に、機密コンテンツを安全に保持することができます。 ドキュメントに上位5つの最も一般的な種類の機密&amp;情報が含まれていても、DLP ポリシーによって保護されていない場合は、セキュリティコンプライアンスセンターのホームページにこの推奨事項が表示されます。
-ms.openlocfilehash: 73c45c477942533d5668c225144950a0fde4279b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632468"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943376"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>DLP のポリシー勧告を見る
 

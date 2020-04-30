@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 メッセージ暗号化を使用してメッセージを暗号化および復号化するメールフロールール (トランスポートルール) を作成する方法を学習できます。
-ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790706"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943124"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>電子メールメッセージを暗号化するためのメールフロールールを定義する
 
-全体管理者は、送受信する電子メールメッセージを保護するためのメールフロールール (トランスポートルールとも呼ばれます) を作成できます。 送信電子メールメッセージを暗号化したり、組織内から送信される暗号化されたメッセージから暗号化を削除したり、組織から送信された暗号化メッセージへの返信を削除したりするためのルールを設定できます。 これらのルールを作成するには、Exchange 管理センター (EAC) または Exchange Online PowerShell を使用できます。 全体的な暗号化ルールに加えて、エンド ユーザー用に個別のメッセージの暗号化オプションの有効化/無効化を選択することもできます。
+全体管理者は、送受信する電子メールメッセージを保護するためのメールフロールール (トランスポートルールとも呼ばれます) を作成できます。 送信電子メールメッセージを暗号化したり、組織内から送信される暗号化されたメッセージから暗号化を削除したり、組織から送信された暗号化メッセージへの返信を削除したりするためのルールを設定できます。 これらのルールを作成するには、Exchange 管理センター (EAC) または Exchange Online PowerShell を使用できます。 全体的な暗号化ルールのほかに、エンド ユーザー向けの個別メッセージ暗号化のオプションの有効/無効を選択できます。
 
 組織外の送信者からの受信メールを暗号化することはできません。
 
@@ -34,7 +34,7 @@ AD RMS から Azure Information Protection に最近移行した場合は、既�
 メールフロールールを構成するコンポーネントと、メールフロールールのしくみについては、「 [Exchange Online のメールフロールール (トランスポートルール)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。 メールフロールールが Azure Information Protection でどのように機能するかの詳細については、「 [Azure Information protection のラベルの Exchange Online メールフロールールの構成](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)」を参照してください。
 
 > [!IMPORTANT]
-> ハイブリッド Exchange 環境では、オンプレミスのユーザーは、電子メールが Exchange Online を経由してルーティングされる場合にのみ、OME を使用して暗号化されたメールを送信できます。 ハイブリッド Exchange 環境で OME を構成するには、まず[ハイブリッド構成ウィザードを使用してハイブリッドを構成](https://docs.microsoft.com/Exchange/exchange-hybrid)し、次に、[電子メールサーバーから Office 365 にメールが流れるように構成](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)する必要があります。 Office 365 を通過するようにメールを構成したら、このガイダンスを使用して OME のメールフロールールを構成できます。
+> ハイブリッド Exchange 環境では、オンプレミスのユーザーは、電子メールが Exchange Online を経由してルーティングされている場合にのみ、OME を使用して暗号化されたメールを送受信できます。 ハイブリッド Exchange 環境で OME を構成するには、まずハイブリッド[構成ウィザードを使用してハイブリッドを構成](https://docs.microsoft.com/Exchange/exchange-hybrid)し、次に、 [office 365 から電子メールサーバーにメールが流れる](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server)ように構成し、[電子メールサーバーから office 365 にメールが流れるよう](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)に構成する必要があります。 Office 365 を通過するようにメールを構成したら、このガイダンスを使用して OME のメールフロールールを構成できます。
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>メールフロールールを作成して、新しい OME 機能で電子メールメッセージを暗号化する
 
@@ -52,7 +52,7 @@ EAC を使用して、新しい OME 機能でメッセージの暗号化をト�
 
 5. [**名前**] にルールの名前 (DrToniRamos@hotmail.com のメールの暗号化など) を入力します。
 
-6. **[次の場合、このルールを適用する]** で条件を選択し、必要に応じて値を入力します。たとえば、DrToniRamos@hotmail.com 宛のメッセージを暗号化するには、以下のようにします。
+6. [**次の場合、このルールを適用**する] で条件を選択し、必要に応じて値を入力します。 たとえば、DrToniRamos@hotmail.com 宛のメッセージを暗号化するには、以下のようにします。
 
    1. **[次の場合、このルールを適用する]** で、**[受信者]** を選択します。
 
@@ -110,7 +110,7 @@ EAC を使用して、新しい OME 機能を使用したメッセージ暗号�
 
 5. [**名前**] に、[送信メールからの暗号化を削除する] など、ルールの名前を入力します。
 
-6. [**次の場合、このルールを適用**する] メッセージから暗号化を削除する条件を選択する場合は、[送信者を追加する] を**組織内**に**配置** \>します。 ここで、**受信者が** \> **組織の外部**にあるなど、特定の受信者に対して追加条件を追加します。
+6. [**このルールを適用**する条件] で、メッセージから暗号化を削除する条件を選択します。 **[送信者** \>を追加する] は、**組織内**に配置します。 ここで、**受信者が** \> **組織の外部**にあるなど、特定の受信者に対して追加条件を追加します。
 
 7. [**実行する処理**] で、[**メッセージのセキュリティ** \>を変更する] [ **Office 365 のメッセージの暗号化と権限の保護を削除**する] を選択します。
 
@@ -164,14 +164,14 @@ EAC を使用して、新しい OME 機能を使用したメッセージ暗号�
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **注**:
-
-   - 新しいルールの一意の名前は、"Dr Toni Ramos の暗号化ルール" です。
-
-   - パラメーター_に_は、メッセージの受信者を指定します (名前、電子メールアドレス、識別名などで識別されます)。 この例では、受信者は電子メールアドレス "DrToniRamos@hotmail.com" によって識別されます。
-
-   - /は、メッセージの受信者の場所を_指定します_。 この例では、受信者のメールボックスは hotmail にあり、組織の一部ではないため`NotInOrganization` 、値が使用されます。
-
+   > [!NOTE]
+   > 
+   > - 新しいルールの一意の名前は、"Dr Toni Ramos の暗号化ルール" です。
+   > 
+   > - パラメーター_に_は、メッセージの受信者を指定します (名前、電子メールアドレス、識別名などで識別されます)。 この例では、受信者は電子メールアドレス "DrToniRamos@hotmail.com" によって識別されます。
+   > 
+   > - /は、メッセージの受信者の場所を_指定します_。 この例では、受信者のメールボックスは hotmail にあり、組織の一部ではないため`NotInOrganization` 、値が使用されます。
+   
    詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>新しい OME 機能を使用せずに暗号化された電子メールの返信から暗号化を削除する
@@ -208,17 +208,17 @@ EAC を使用して、新しい OME 機能を使用したメッセージ暗号�
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **注**:
-
-   - 新しいルールの一意の名前は、"受信メールから暗号化を削除する" です。
-
-   - /は、メッセージの受信者の場所を_指定します_。 この例では、値`InOrganization`の値を使用して、次のことを示します。
-
-     - 受信者が組織内のメールボックス、メールユーザー、グループ、またはメールが有効なパブリックフォルダーである。
-
-       または
-
-     - 受信者の電子メールアドレスが、組織内の権限のあるドメインまたは内部の中継ドメインとして構成さ_れている_承認済みドメイン内にあり、認証された接続を介してメッセージが送信または受信された。
+   > [!NOTE]
+   > 
+   > - 新しいルールの一意の名前は、"受信メールから暗号化を削除する" です。
+   > 
+   > - /は、メッセージの受信者の場所を_指定します_。 この例では、値`InOrganization`の値を使用して、次のことを示します。
+   > 
+   >   - 受信者が組織内のメールボックス、メールユーザー、グループ、またはメールが有効なパブリックフォルダーである。
+   > 
+   >     または
+   > 
+   >   - 受信者の電子メールアドレスが、組織内の権限のあるドメインまたは内部の中継ドメインとして構成さ_れている_承認済みドメイン内にあり、認証された接続を介してメッセージが送信または受信された。
 
 詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
 

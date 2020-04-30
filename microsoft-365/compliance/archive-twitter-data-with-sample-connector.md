@@ -10,14 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: 管理者は、Twitter データを Microsoft 365 にインポートするためのネイティブコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理することができます。
-ms.openlocfilehash: 866bd61c40aa998bcb612ee1d82f8275f075bb8e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d4c1817fe9b3c47dc3cbabd0147f23057c7bc65
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630614"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943196"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data"></a>コネクタセットアップしてTwitter のデータをアーカイブする
 

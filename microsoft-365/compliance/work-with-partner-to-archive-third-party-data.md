@@ -1,5 +1,5 @@
 ---
-title: パートナーと共同作業でサードパーティーのデータをアーカイブする
+title: パートナーと共同作業でサード パーティのデータをアーカイブする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,16 +10,18 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: 組織は Microsoft パートナーと協力して、Salesforce チャター、Yahoo Messenger、Yammer などのデータソースからサードパーティのデータをインポートするカスタムコネクタを設定できます。 これにより、サードパーティのデータソースからデータをアーカイブできるため、Microsoft 365 のコンプライアンス機能 (法的情報保持、コンテンツ検索、アイテム保持ポリシーなど) を使用して、組織のサードパーティデータのガバナンスを管理できます。
-ms.openlocfilehash: ee321f14f0fc4ac61781892d8fc3b56265b0d223
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0892e0c02e72516b6abc4502eb9777bd824f9073
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626243"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943156"
 ---
-# <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業でサードパーティーのデータをアーカイブする
+# <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業でサード パーティのデータをアーカイブする
 
 Microsoft パートナーと協力して、サードパーティのデータソースから Microsoft 365 にデータをインポートしてアーカイブすることができます。 パートナーは、サードパーティのデータソースからアイテムを抽出するように構成されたカスタムコネクタ (定期的に) を提供して、それらのアイテムをインポートすることができます。 パートナーコネクタは、アイテムのコンテンツをデータソースから電子メールメッセージ形式に変換し、そのアイテムをメールボックスに格納します。 サードパーティのデータがインポートされた後、このデータには、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を適用できます。
   
@@ -558,13 +560,13 @@ Office 365 にデータをインポートするためにサードパーティ製
     
     |**メッセージのプロパティ**|**必須かどうか?**|**説明**|**値の例**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |必要  <br/> |最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。 パートナーコネクタは、ユーザー ID をソースアイテム (Twitter ハンドルなど) から、すべての参加者 ([差出人] および [宛先] フィールド内のユーザー) のユーザーアカウントにマップしようとします。 メッセージのコピーが、すべての参加者のメールボックスにインポートされます。 アイテムの参加者が1人のユーザーアカウントにマップできない場合、そのアイテムは Office 365 のサードパーティ製のアーカイブメールボックスにインポートされます。  <br/> <br/> アイテムの送信者として識別される参加者は、アイテムのインポート先の組織内にアクティブなメールボックスを持っている必要があります。 送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |**TO** <br/> |必要  <br/> |アイテムを受信したユーザー (データ ソース内のアイテムに該当する場合)。  <br/> | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |はい  <br/> |最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。 パートナーコネクタは、ユーザー ID をソースアイテム (Twitter ハンドルなど) から、すべての参加者 ([差出人] および [宛先] フィールド内のユーザー) のユーザーアカウントにマップしようとします。 メッセージのコピーが、すべての参加者のメールボックスにインポートされます。 アイテムの参加者が1人のユーザーアカウントにマップできない場合、そのアイテムは Office 365 のサードパーティ製のアーカイブメールボックスにインポートされます。  <br/> <br/> アイテムの送信者として識別される参加者は、アイテムのインポート先の組織内にアクティブなメールボックスを持っている必要があります。 送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**TO** <br/> |はい  <br/> |アイテムを受信したユーザー (データ ソース内のアイテムに該当する場合)。  <br/> | `bob@contoso.com` <br/> |
     |**件名** <br/> |いいえ  <br/> |ソース アイテムの件名。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**DATE** <br/> |必要  <br/> |アイテムが最初に作成または顧客データソースに投稿された日付。 たとえば、Twitter メッセージがツイートされた日時です。  <br/> | `01 NOV 2015` <br/> |
+    |**DATE** <br/> |はい  <br/> |アイテムが最初に作成または顧客データソースに投稿された日付。 たとえば、Twitter メッセージがツイートされた日時です。  <br/> | `01 NOV 2015` <br/> |
     |**物体** <br/> |いいえ  <br/> |メッセージまたは投稿のコンテンツ。 一部のデータ ソースでは、このプロパティのコンテンツは **SUBJECT** プロパティのコンテンツと同じになります。 インポート処理中に、パートナーコネクタは、可能な限りコンテンツソースの完全な忠実性を維持しようとします。 可能な場合には、ソース アイテムの本文からのファイル、グラフィック、またはその他のコンテンツが、このプロパティに含まれます。 それ以外の場合、ソース アイテムからのコンテンツは **ATTACHMENT** プロパティに含まれます。 このプロパティの内容は、パートナーコネクタとソースプラットフォームの機能によって異なります。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**資料** <br/> |いいえ  <br/> |データソース内のアイテム (Twitter のツイート、インスタントメッセージングの会話など) に添付ファイルがあり、画像が含まれている場合、パートナー接続は最初に**BODY**プロパティに添付ファイルを含めようとします。 これができない場合は、* * ATTACHMENT * * プロパティに追加されます。 添付ファイルの例として、他にも Facebook の「いいね」、コンテンツ ソースからのメタデータ、およびメッセージまたは投稿への返信などがあります。  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |必要  <br/> | これは、パートナーコネクタによって作成および設定される複数値プロパティです。 このプロパティの形式は`IPM.NOTE.Source.Event`です。 (このプロパティはで`IPM.NOTE`始まる必要があります。 この形式は、 `IPM.NOTE.X`メッセージクラスの形式と似ています)。このプロパティには、次の情報が含まれます。  <br/><br/>`Source`: サードパーティのデータソースを示します。たとえば、Twitter、Facebook、BlackBerry などです。  <br/> <br/>  `Event`: アイテムを生成したサードパーティのデータソースで実行されたアクティビティの種類を示します。たとえば、Twitter のツイート、または Facebook の投稿。 イベントは、データソースに固有のものです。  <br/> <br/>  このプロパティの目的の1つは、アイテムが発生元であるデータソースに基づいて、またはイベントの種類に基づいて、特定のアイテムをフィルター処理することです。 たとえば、電子情報開示検索では、検索クエリを作成して、特定のユーザーによって投稿されたすべてのツイートなど) を検索できます。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |はい  <br/> | これは、パートナーコネクタによって作成および設定される複数値プロパティです。 このプロパティの形式は`IPM.NOTE.Source.Event`です。 (このプロパティはで`IPM.NOTE`始まる必要があります。 この形式は、 `IPM.NOTE.X`メッセージクラスの形式と似ています)。このプロパティには、次の情報が含まれます。  <br/><br/>`Source`: サードパーティのデータソースを示します。たとえば、Twitter、Facebook、BlackBerry などです。  <br/> <br/>  `Event`: アイテムを生成したサードパーティのデータソースで実行されたアクティビティの種類を示します。たとえば、Twitter のツイート、または Facebook の投稿。 イベントは、データソースに固有のものです。  <br/> <br/>  このプロパティの目的の1つは、アイテムが発生元であるデータソースに基づいて、またはイベントの種類に基づいて、特定のアイテムをフィルター処理することです。 たとえば、電子情報開示検索では、検索クエリを作成して、特定のユーザーによって投稿されたすべてのツイートなど) を検索できます。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - アイテムが Office 365 のメールボックスに正常にインポートされると、一意識別子が HTTP 応答の一部として発信者に戻されます。 と呼ば`x-IngestionCorrelationID`れるこの識別子は、アイテムのエンドツーエンドの追跡のためにパートナーによって、以降のトラブルシューティングのために使用できます。 パートナーがこの情報をキャプチャし、パートナーの側で記録することをお勧めします。 この識別子を示す HTTP 応答の例を以下に示します。
 

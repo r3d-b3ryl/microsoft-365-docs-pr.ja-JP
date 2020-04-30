@@ -12,14 +12,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
+- MET150
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 組織では、コンプライアンス、法律、またはその他のビジネス要件のために長期間ドキュメントを保持する必要がある場合があります。 ただし、組織でドキュメントを必要以上に長期に保持している場合は、不要な法的リスクを作成します。 ドキュメント削除ポリシーを使用すると、特定の期間が経過した後にサイト内のドキュメントを削除することによって、積極的にリスクを軽減できます。たとえば、ドキュメントが作成された後に、ユーザーの OneDrive for Business サイトのドキュメントを5年後に削除することができます。
-ms.openlocfilehash: 55d4616b4185ebdbbf0f132803d1b7414eaabac8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fba7af2c58b373e51aed93ce9a353a45528bb9f9
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633046"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943000"
 ---
 # <a name="overview-of-document-deletion-policies"></a>ドキュメント削除ポリシーの概要
 
@@ -126,7 +127,7 @@ Microsoft では、ドキュメント削除ポリシーに加えて、サイト�
   
 サイトコレクションにポリシーが割り当てられていない場合、[**ドキュメント削除ポリシー**のリンクは表示されません。 また、リンクは、ポリシーがサイトに割り当てられた直後には表示されず、[**ドキュメント削除ポリシー** ] リンクが表示されるときにポリシーが割り当てられると、最大24時間かかることがあります。 
   
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 ドキュメント削除ポリシーセンターを使用するコンプライアンスチームのメンバーは、ポリシーセンターとポリシーを適用するサイトコレクションの両方に対するアクセス許可を必要とします。 以下のことをお勧めします。
   

@@ -1,5 +1,5 @@
 ---
-title: 組織内のメールボックスのアーカイブおよび削除ポリシーを設定する
+title: 組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,16 +17,17 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+- MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: ユーザーのアーカイブメールボックスにアイテムを自動的に移動するアーカイブと削除のポリシーを作成します。
-ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635561"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943580"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織内のメールボックスのアーカイブおよび削除ポリシーを設定する
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
  Microsoft 365 では、管理者は、ユーザーのアーカイブメールボックスにアイテムを自動的に移動し、メールボックスからアイテムを自動的に削除するアーカイブおよび削除ポリシーを作成できます。 管理者は、メールボックスに割り当てられたアイテム保持ポリシーを作成し、一定の期間後にユーザーのアーカイブメールボックスにアイテムを移動します。また、特定の保存期間に達した後もメールボックスからアイテムを削除します。 移動または削除されたアイテム、およびその発生時に保持タグと呼ばれるアイテムを決定する実際のルール。 保持タグは、ユーザーのメールボックスに割り当てられるアイテム保持ポリシーにリンクされます。 保持タグは、ユーザーのメールボックス内の個々のメッセージおよびフォルダーに保持設定を適用します。 メッセージがメールボックス内に残っている期間と、指定された保持期限に達したときに実行される処理を定義します。 メッセージが保存期限に達すると、メッセージはユーザーのアーカイブメールボックスに移動されるか、削除されます。 
   

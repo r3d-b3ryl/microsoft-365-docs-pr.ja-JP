@@ -15,19 +15,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: '概要: Azure の暗号化について説明します。'
-ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Azure での暗号化の説明。
+ms.openlocfilehash: cac3a27a209b4c2da66dbf583d2be88cf06aca34
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637435"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943316"
 ---
 # <a name="encryption-in-azure"></a>Azure での暗号化
 
-## <a name="introduction"></a>はじめに
+暗号化された通信や運用プロセスなど、Azure の技術的な防護策は、データのセキュリティを維持するのに役立ちます。 また、追加の暗号化機能を実装し、独自の暗号化キーを管理する柔軟性もあります。 お客様の構成に関係なく、Microsoft は暗号化を適用して Azure の顧客データを保護します。 Microsoft では、さまざまな高度なテクノロジを使用して Azure でホストされているデータを制御し、暗号化キーを暗号化、制御、および管理したり、データへのアクセスを制御および監査したりすることもできます。 さらに、Azure ストレージには、セキュリティ機能の包括的なセットが用意されているため、開発者はセキュリティで保護されたアプリケーションを構築できます。
 
-暗号化された通信や運用プロセスなど、Azure の技術的な防護策は、データのセキュリティを維持するのに役立ちます。 また、追加の暗号化機能を実装し、独自の暗号化キーを管理する柔軟性もあります。 お客様の構成に関係なく、Microsoft は暗号化を適用して Azure の顧客データを保護します。 Microsoft では、さまざまな高度なテクノロジを使用して Azure でホストされているデータを制御し、暗号化キーの暗号化、制御、および管理、およびデータへのアクセスの制御や監査を行うこともできます。 さらに、Azure ストレージには、セキュリティ機能の包括的なセットが用意されているため、開発者はセキュリティで保護されたアプリケーションを構築できます。
+## <a name="introduction"></a>概要
 
 Azure には、ある場所から別の場所に移動する際にデータを保護するためのさまざまなメカニズムが用意されています。 Microsoft では、クラウドサービスと顧客の間を移動するときに、TLS を使用してデータを保護しています。 Microsoft のデータセンターは、Azure サービスに接続するクライアントシステムとの TLS 接続をネゴシエートします。 完全転送機密性 (PFS) は、顧客のクライアントシステムと Microsoft のクラウドサービスとの間の接続を一意のキーで保護します。 また、接続は RSA ベースの2048ビット暗号化キーの長さも使用します。 この組み合わせにより、送信中のデータを他のユーザーが傍受したり、アクセスしたりすることが困難になります。
 
@@ -41,7 +41,7 @@ Azure での暗号化の詳細については、「 [azure 暗号化の概要](h
 
 Azure Disk Encryption を使用すると、Windows および Linux インフラストラクチャをサービス (IaaS) VM ディスクとして暗号化できます。 Azure ディスク暗号化では、Windows の BitLocker 機能と Linux の DM/Crypt 機能を活用して、オペレーティングシステムとデータディスクのボリュームレベルの暗号化を行います。 また、VM ディスク上のすべてのデータは、Azure storage の rest で暗号化されるようになります。 Azure ディスク暗号化は、Azure Key Vault と統合されており、暗号化キーとシークレットの使用を制御、管理、および監査するのに役立ちます。
 
-詳細については、「 [Azure の Windows 仮想マシンのセキュリティに関する推奨事項](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)」を参照してください。
+詳細については、「 [Azure の Windows 仮想マシンのセキュリティに関する推奨事項](https://docs.microsoft.com/azure/virtual-machines/windows/security-recommendations)」を参照してください。
 
 ## <a name="azure-storage-service-encryption"></a>Azure Storage Service の暗号化
 

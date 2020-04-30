@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
-search.appverid: ''
+search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリポータルから、組織内のユーザーおよびグループに対して Microsoft および Microsoft パートナーアプリを検索、テスト、および展開します。
-ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: bc9ad91a664072f4291f0c95c029fb2ca06530f5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212271"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942158"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Microsoft 365 アプリを Microsoft 365 管理センターでテストおよび展開する
 

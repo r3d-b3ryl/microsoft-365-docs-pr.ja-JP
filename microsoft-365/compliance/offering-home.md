@@ -1,5 +1,5 @@
 ---
-title: Microsoft  コンプライアンスのサービス
+title: Microsoft コンプライアンスのサービス
 layout: LandingPage
 description: マイクロソフトの製品とサービスが、組織が規制準拠の基準を満たすためにどのように役立つかについて説明します。
 author: robmazz
@@ -13,14 +13,14 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59e2c36e87232efcda29f9d5abe41b4c37a17a62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 57faa73d6c3cb5bbe92c1cea4fab7dd810abbeec
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071262"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943326"
 ---
-# <a name="microsoft-compliance-offerings"></a>Microsoft  コンプライアンスのサービス
+# <a name="microsoft-compliance-offerings"></a>Microsoft コンプライアンスのサービス
 
 Microsoft は、お客様の組織がデータの収集と使用を管理する国内、地域、および業界固有の要件に準拠するための包括的なコンプライアンス製品を提供しています。
 
@@ -182,6 +182,7 @@ Microsoft は、お客様の組織がデータの収集と使用を管理する�
                         <p><a href="offering-nz-cc-framework-nz.md">NZ CC Framework (ニュージーランド)</a></p>
                         <p><a href="offering-pasf-uk.md">PASF (英国)</a></p>
                         <p><a href="offering-pdpa-argentina.md">PDPA (アルゼンチン)</a></p>
+                        <p><a href="offering-russia-data-localization.md">個人データのローカライズ (ロシア)</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (中国)</a></p>
                     </div>
                 </div>

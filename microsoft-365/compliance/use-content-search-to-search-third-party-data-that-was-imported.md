@@ -11,15 +11,17 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: コンテンツ検索電子情報開示ツールを使用して、Microsoft 365 でサードパーティのデータソースからメールボックスにインポートされたアイテムを検索します。 クエリを作成して、インポートされたすべてのアイテムを検索したり、特定のサードパーティのデータ型を検索するクエリを作成したりすることができます。 この記事では、Microsoft 365 にインポートできるサードパーティのデータ型を検索するために、キーワードクエリで使用できる値の一覧を示します。
-ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633372"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942970"
 ---
 # <a name="use-content-search-to-search-third-party-imported-data"></a>コンテンツ検索を使用してサードパーティのインポートされたデータを検索する
 

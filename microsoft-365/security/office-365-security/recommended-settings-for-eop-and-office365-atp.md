@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 9755fccb482dc294da7a0747310776314c739139
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a88d58db68816cd6aeb9173c36b964f3f97653db
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634414"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949227"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -45,7 +45,7 @@ ms.locfileid: "43634414"
 
 スパム対策ポリシーを作成して構成するには、「 [Office 365 でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
-| セキュリティ機能の名前 | 標準 | Strict | コメント |
+|セキュリティ機能の名前|標準|Strict|コメント|
 |---|---|---|---|
 |**スパム**検出アクション <br/><br/> _SpamAction_|**迷惑メールフォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**検疫メッセージ** <br/><br/> `Quarantine`||
 |**信頼度の高いスパム**検出アクション <br/><br/> _HighConfidenceSpamAction_|**検疫メッセージ** <br/><br/> `Quarantine`|**検疫メッセージ** <br/><br/> `Quarantine`||
@@ -69,7 +69,7 @@ ms.locfileid: "43634414"
 
 **標準**レベルと**厳密**なレベルの両方で、これらの ASF 設定を**オフ**にすることをお勧めします。 ASF 設定の詳細については、「 [Office 365 の高度なスパムフィルター (ASF) 設定](advanced-spam-filtering-asf-options.md)」を参照してください。
 
-| セキュリティ機能の名前 | Comments |
+|セキュリティ機能の名前|コメント|
 |----|---|
 |**リモートサイトへの画像リンク**(_IncreaseScoreWithImageLinks_)||
 |**URL の数値の IP アドレス**(_IncreaseScoreWithNumericIps_)||
@@ -91,7 +91,7 @@ ms.locfileid: "43634414"
 
 送信スパムポリシーを作成して構成するには、「 [Office 365 で送信スパムフィルターを構成](configure-the-outbound-spam-policy.md)する」を参照してください。
 
-| セキュリティ機能の名前 | 標準 | Strict | コメント |
+|セキュリティ機能の名前|標準|Strict|コメント|
 |---|---|---|---|
 |**ユーザーあたりの最大受信者数: 外部時間の制限** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**ユーザーあたりの最大受信者数: 内部時間の制限** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
@@ -102,7 +102,7 @@ ms.locfileid: "43634414"
 
 マルウェア対策ポリシーを作成して構成するには、「 [configure マルウェア対策ポリシーを Office 365 で構成](configure-anti-malware-policies.md)する」を参照してください。
 
-| セキュリティ機能の名前 | 標準 | Strict | コメント |
+|セキュリティ機能の名前|標準|Strict|コメント|
 |---|---|---|---|
 |**受信者にメッセージが検疫されたことを通知するかどうか。** <br/><br/> _操作_|いいえ <br/><br/> _DeleteMessage_|いいえ <br/><br/> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |**一般的な添付ファイルの種類のフィルター** <br/><br/> _EnableFileFilter_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|この設定では、添付ファイルの内容に関係なく、実行可能な添付ファイルが含まれているファイルの種類に基づいてメッセージを検疫します。|
@@ -112,9 +112,9 @@ ms.locfileid: "43634414"
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP の既定のフィッシング対策ポリシー設定
 
-これらの設定は、Exchange Online メールボックスを使用した Office 365 組織でのみ構成できます。 これらの設定を構成するには、 [EOP の「既定のフィッシング対策ポリシーを構成](configure-anti-phishing-policies-eop.md)する」を参照してください。
+これらの設定を構成するには、「 [CONFIGURE EOP」の「フィッシング対策ポリシーを構成](configure-anti-phishing-policies-eop.md)する」を参照してください。
 
-| セキュリティ機能の名前 | 標準 | Strict | コメント |
+|セキュリティ機能の名前|標準|Strict|コメント|
 |---|---|---|---|
 |**スプーフィング対策保護を有効にする** <br/><br/> _EnableAntispoofEnforcement_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |**認証されていない送信者を有効にする** <br/><br/> _Enable/認証 Atedsender_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Outlook の送信者の写真に、未識別のスプーフィングされた送信者を示す疑問符 (?) を追加します。 詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md)」を参照してください。|
@@ -158,7 +158,7 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 
 #### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの偽装設定
 
-| セキュリティ機能の名前 | 標準 | Strict | コメント |
+|セキュリティ機能の名前|標準|Strict|コメント|
 |---|---|---|---|
 |保護されたユーザー:**保護するユーザーを追加する** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|オン <br/><br/> `$true` <br/><br/> \<ユーザーのリスト\>|オン <br/><br/> `$true` <br/><br/> \<ユーザーのリスト\>|組織によって異なりますが、主要な役割でユーザーを追加することをお勧めします。 内部的には、CEO、CFO、その他のシニアリーダーである可能性があります。 外部には、協議会のメンバーまたは取締役会を含めることができます。|
 |保護されたドメイン:**自分が所有しているドメインを自動的に追加する** <br/><br/> _Enable組織 Domainsprotection_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
@@ -178,7 +178,7 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 
 これらは、 [EOP のスパム対策ポリシー設定](#eop-anti-spam-policy-settings)で使用可能な設定と同じであることに注意してください。
 
-| セキュリティ機能の名前 | 標準 | Strict | コメント |
+|セキュリティ機能の名前|標準|Strict|コメント|
 |---|---|---|---|
 |**スプーフィング対策保護を有効にする** <br/><br/> _EnableAntispoofEnforcement_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |**認証されていない送信者を有効にする** <br/><br/> _Enable/認証 Atedsender_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Outlook の送信者の写真に、未識別のスプーフィングされた送信者を示す疑問符 (?) を追加します。 詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md)」を参照してください。|
@@ -186,7 +186,7 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの詳細設定
 
-| セキュリティ機能の名前 | 標準 | Strict | コメント |
+|セキュリティ機能の名前|標準|Strict|コメント|
 |---|---|---|---|
 |**高度なフィッシングしきい値** <br/><br/> _PhishThresholdLevel_|**2-アグレッシブ** <br/><br/> `2`|**3つ以上のアグレッシブ** <br/><br/> `3`||
 
@@ -202,7 +202,7 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |メッセージを配信する前に URL スキャンが完了するまで待機する|有効|有効||
 |組織内で送信される電子メールメッセージに安全なリンクを適用する|有効|有効||
 
-### <a name="safe-attachments"></a>添付ファイル保護
+### <a name="safe-attachments"></a>安全な添付ファイル
 
 |セキュリティ機能の名前|標準|Strict|コメント|
 |---------|---------|---------|---------|

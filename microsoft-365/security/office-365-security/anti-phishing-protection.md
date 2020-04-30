@@ -17,16 +17,16 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 では、既定では、フィッシング攻撃に対するさまざまな保護を提供しており、Office 365 Advanced Threat Protection (ATP) のその他の機能も利用できます。 このトピックでは、Microsoft 365 でのフィッシング対策のオプションと戦略について学習し、実装するために使用できるオンラインリソースについて説明します。
-ms.openlocfilehash: fd1aaee221254c3899c15d22850e95378436a392
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bdab6c05fb9be85c2ffb4914390ecc893fdd162b
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634582"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949371"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 でのフィッシング対策保護
 
-*フィッシング*正規または信頼された送信者からのメッセージの機密情報を盗もうとする電子メール攻撃。 フィッシングには特定のカテゴリがあります。 以下に例を示します。
+*フィッシング*正規または信頼された送信者からのメッセージの機密情報を盗もうとする電子メール攻撃。 フィッシングには特定のカテゴリがあります。 次に例を示します。
 
 - **スピアーフィッシング**は、目的の受信者に特化した、非常に集中的でカスタマイズされたコンテンツを使用します (通常は、攻撃者による受信者の偵察後)。
 
@@ -42,11 +42,11 @@ ms.locfileid: "43634582"
 
 EOP (つまり、ATP を使用しない Microsoft 365 組織) には、組織をフィッシング脅威から保護するのに役立つ機能が含まれています。
 
-- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
+- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「[Microsoft 365 でのスプーフィング インテリジェンスを設定する](learn-about-spoof-intelligence.md)」を参照してください。
 
-- **既定のフィッシング対策ポリシー**: スプーフィングインテリジェンスを有効または無効にしたり、Outlook で認証されていない送信者の識別を有効または無効にしたり、禁止されたスプーフィング送信者のアクションを指定したり ([迷惑メール] フォルダーまたは検疫に移動) したりします。 詳細については、「 [CONFIGURE EOP」の「フィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
+- **EOP のフィッシング対策ポリシー**: スプーフィングインテリジェンスを有効または無効にしたり、Outlook で認証されていない送信者の識別を有効または無効にしたり、ブロックされた送信者に対するアクションを指定したりします ([迷惑メール] フォルダーまたは検疫に移動)。 詳細については、「 [CONFIGURE EOP」の「フィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
 
-- **暗黙的な電子メール認証**: EOP では、受信電子メールの標準の電子メール認証チェック ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [dkim](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)) を使用して、送信者評価、送信者履歴、受信者履歴、動作分析、その他の高度な手法を使用して偽造された送信者を特定できます。 詳細については、「 [Microsoft 365 の電子メール認証](email-validation-and-authentication.md)」を参照してください。
+- **暗黙的な電子メール認証**: EOP では、受信電子メールの標準の電子メール認証チェック ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [dkim](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)) を使用して、送信者評価、送信者履歴、受信者履歴、動作分析、その他の高度な手法を使用して偽造された送信者を特定できます。 詳細については、「[Microsoft 365 のメール認証](email-validation-and-authentication.md)」をご覧ください。
 
 ## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Office 365 ATP の追加のフィッシング対策保護
 

@@ -1,5 +1,5 @@
 ---
-title: 転送中データの暗号化
+title: 転送中のデータの暗号化
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,13 +15,13 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: '概要: 転送中に Microsoft がデータを暗号化する方法を簡単に説明します。'
-ms.openlocfilehash: 0775d28a96f271a24406fd68c2ccb9fe4954e66d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft がデータセンターで転送中のデータを暗号化する方法を簡単に説明します。
+ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637333"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943306"
 ---
 # <a name="encryption-for-data-in-transit"></a>転送中のデータの暗号化
 
@@ -31,9 +31,9 @@ ms.locfileid: "43637333"
 
 - クライアントコンピューターが Microsoft サーバーと通信するとき。
 - Microsoft サーバーが他の Microsoft サーバーと通信する場合そして
-- Microsoft サーバーが Microsoft 以外のサーバーと通信する場合 (Exchange Online が電子メールを外部電子メールサーバーに配信する場合など)。
+- Microsoft サーバーが Microsoft 以外のサーバーと通信する場合 (Exchange Online が電子メールをサードパーティの電子メールサーバーに配信する場合など)。
 
-Microsoft サーバー間のデータセンター間の通信は TLS または IPsec 経由で行われ、お客様向けのすべてのサーバーは tls を使用してクライアントマシンとのセキュリティで保護されたセッションをネゴシエートします (たとえば、Exchange Online は TLS 1.2 を256ビットの暗号強度で使用します (FIPS 140-2 レベル 2-検証)。 (Office 365 でサポートされている TLS 暗号スイートの一覧については、「 [office 365 の暗号化に関する技術リファレンスの詳細](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221)」を参照してください)。これは、Outlook、Skype for Business、web 上の Outlook などのクライアントによって使用されるプロトコル (例: HTTP、POP3 など) に適用されます。
+Microsoft サーバー間のデータセンター間の通信は TLS または IPsec 経由で行われ、お客様向けのすべてのサーバーは tls を使用してクライアントマシンとのセキュリティで保護されたセッションをネゴシエートします (例: Exchange Online は、256ビットの暗号強度で TLS 1.2 を使用しています (FIPS 140-2 レベル 2-検証)。 (Office 365 でサポートされている TLS 暗号スイートの一覧については、[暗号化に関する技術リファレンスの詳細](technical-reference-details-about-encryption.md)を参照してください)。これは、Outlook、Skype for Business、Microsoft Teams、web 上の Outlook などのクライアントによって使用されるプロトコル (たとえば、HTTP、POP3 など) に適用されます。
 
 公開証明書は、microsoft IT SSL によって発行された microsoft IT SSL で、送信された情報の機密性を保護するための内部 Microsoft ツールです。 Microsoft によって発行されるすべての証明書の長さは2048ビットです。また、Webtrust コンプライアンスでは、証明書が Microsoft によって所有されるパブリック IP アドレスにのみ発行されるようにするために、SSLAdmin が必要になります。 この条件を満たすことができない IP アドレスは、例外プロセスを経由してルーティングされます。
 

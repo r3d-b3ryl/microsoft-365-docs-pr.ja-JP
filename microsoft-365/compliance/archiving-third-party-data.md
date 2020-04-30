@@ -1,5 +1,5 @@
 ---
-title: サードパーティのデータをアーカイブする
+title: サード パーティのデータをアーカイブする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,17 +13,19 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理者は、ソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 組織のメールボックスにサードパーティのデータをインポートできます。 これにより、Microsoft 365 の Facebook、Twitter、およびその他のサードパーティのデータソースからデータをアーカイブすることができます。 その後、Microsoft 365 コンプライアンス機能 (法的情報保留、電子情報開示、インプレースアーカイブ、アイテム保持ポリシーなど) を使用して、サードパーティのデータを適用することができます。
-ms.openlocfilehash: 72afb48f74a30bac2904e857a33487a83eba48cd
-ms.sourcegitcommit: f9b5eca20e025acc36635cbd1786ff3407295857
+ms.openlocfilehash: e9276a845a29f5c047e303e9e04051ec9f77da1e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43027657"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943186"
 ---
-# <a name="archive-third-party-data"></a>サードパーティのデータをアーカイブする
+# <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
 Microsoft 365 では、管理者がソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 組織のメールボックスにサードパーティのデータをインポートしてアーカイブすることができます。 Microsoft 365 にインポートできるサードパーティのデータソースの例には、次のサービスが含まれています。 
   

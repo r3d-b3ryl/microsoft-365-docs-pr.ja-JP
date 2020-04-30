@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632438"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949406"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -58,7 +58,7 @@ ms.locfileid: "43632438"
 
 あるいは、**[ソリューション]** > **[情報ガバナンス]** > **[保持]** タブを使用して、Microsoft 365 コンプライアンス センターの同じ場所に移動することもできます。 
 
-**コンテンツを完全に削除する前に確認できるようにする場合は、** アイテム保持ポリシーではなく[保持ラベル](labels.md)の使用を検討してください。 保持ラベルを作成するときに、保持期間の終了時にコンテンツを確認するための[廃棄確認](disposition-reviews.md)を設定できます。
+**コンテンツを完全に削除する前に確認できるようにする場合は、** アイテム保持ポリシーではなく[保持ラベル](labels.md)の使用を検討してください。 保持ラベルを作成するときに、保持期間の終了時にコンテンツを確認するための[廃棄確認](disposition.md#disposition-reviews)を設定できます。
 
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>アイテム保持ポリシーは所定の場所にあるコンテンツに対してどのように作用するか
 

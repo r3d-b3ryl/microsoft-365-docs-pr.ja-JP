@@ -9,16 +9,18 @@ audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - M365-security-compliance
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。
-ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808848"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943545"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -33,7 +35,7 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 - Microsoft 365 E3 には Enterprise Mobility + Security (EMS) E3 および Azure AD P1 が含まれています。
 - Microsoft 365 E5 に EMS E5 と Azure AD P2 が含まれる
   
-||**Task**| すべての Office 365 Enterprise プラン|**Microsoft 365 E3** |**Microsoft 365 E5**|
+||**タスク**| すべての Office 365 Enterprise プラン|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1-d      |[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |pbm-2     | [脅威からの保護](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
@@ -44,8 +46,8 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 |7      | [Intune アプリ保護を含むゲストの MFA および条件付きアクセスを構成する](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8       |  [Pc をデバイス管理に登録し、準拠している Pc を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [クラウド接続のためにネットワークを最適化する](#9-optimize-your-network-for-cloud-connectivity)  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
-|10    | [ユーザーをトレーニングする](#10-train-users) |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|# |[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|10     | [ユーザーをトレーニングする](#10-train-users) |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|11  |[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security) |  |  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[脅威を監視し、処理を実行する](#12-monitor-for-threats-and-take-action) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 

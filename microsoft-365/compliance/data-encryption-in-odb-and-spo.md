@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: OneDrive for Business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
-ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e1cd8a8bad74a02e22357aa2da3c8c3de036b6d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633342"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943488"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 
@@ -32,8 +32,6 @@ OneDrive for Business および SharePoint Online におけるデータセキュ
 ## <a name="overview"></a>概要
 
 Microsoft 365 は、高度なセキュリティで保護された環境で、物理データセンターのセキュリティ、ネットワークセキュリティ、アクセスセキュリティ、アプリケーションセキュリティ、およびデータセキュリティがあります。 この記事では特に、OneDrive for Business および SharePoint Online のデータセキュリティの、送信中およびインプレース暗号化側に焦点を当てます。
-  
-Microsoft 365 セキュリティの詳細については、「[セキュリティホワイトペーパー](https://go.microsoft.com/fwlink/p/?LinkId=270895)」を参照してください。
   
 データの暗号化の仕組みについて、次のビデオをご覧ください。
   

@@ -1,5 +1,5 @@
 ---
-title: アカウントの削除
+title: アカウントの使用を停止する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,16 +15,16 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Microsoft を使用してアカウントを終了する方法について説明します。
-ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080384"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942855"
 ---
-# <a name="close-your-account"></a>アカウントの削除
+# <a name="close-your-account"></a>アカウントの使用を停止する
 
-Microsoft を使用してアカウントを閉じると、アカウントに関連するすべての情報が削除されます。 この情報には、サブスクリプション、ライセンス、支払い方法、ユーザー、ユーザーデータが含まれます。 このプロセスを開始する前に、保持する必要のあるデータを必ずバックアップしてください。
+Microsoft でのアカウントの使用を停止すると、アカウントに関連するすべての情報が削除されます。 この情報には、サブスクリプション、ライセンス、支払方法、ユーザー、ユーザー データが含まれます。 このプロセスを開始する前に、保持する必要のあるデータを必ずバックアップしてください。
 
 ## <a name="step-1-delete-users"></a>手順 1: ユーザーを削除する
 
@@ -72,7 +72,7 @@ Microsoft を使用してアカウントを閉じると、アカウントに関�
 
 3. [多要素認証] ページで、現在使用中のグローバル管理者アカウント以外のすべてのアカウントを無効にします。
 
-<a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">PowerShell を使用して、複数のユーザーに対して多要素認証を無効に</a>することもできます。
+<a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">PowerShell を使用して、複数のユーザーに対して多要素認証を無効に</a>することもできます。
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>手順 5: Azure Active Directory のディレクトリを削除する
 

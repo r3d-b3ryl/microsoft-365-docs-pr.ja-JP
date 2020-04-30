@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、Microsoft 365 でコア電子情報開示の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示の保留リストを作成して、調査に関連するデータを検索してエクスポートできます。
-ms.openlocfilehash: 838870f60c55c82225c3809aa8f281beadd0dba1
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551429"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943386"
 ---
-# <a name="get-started-with-core-ediscovery"></a>コア電子情報開示の概要
+# <a name="get-started-with-core-ediscovery"></a>コア電子情報開示を開始する
 
 Microsoft 365 のコア電子情報開示ツールには、組織が Microsoft 365 および Office 365 でコンテンツを検索およびエクスポートするために使用できる基本的な電子情報開示ツールが用意されています。 また、コア電子情報開示を使用して、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft Teams などのコンテンツの場所に電子情報開示の保持を設定することもできます。 コア電子情報開示の展開には何も必要ありませんが、IT 管理者と電子情報開示マネージャーがコンテンツを検索、エクスポート、および保持するためにコア電子情報開示を使用して開始する前に、いくつかの前提条件のタスクを完了させる必要があります。
 
@@ -36,15 +36,25 @@ Microsoft 365 のコア電子情報開示ツールには、組織が Microsoft 3
 
 - **組織のサブスクリプション:** Microsoft 365 コンプライアンスセンターまたは Office 365 セキュリティ & コンプライアンスセンターでコア電子情報開示にアクセスして、ホールド機能とエクスポート機能を使用するには、組織に Microsoft 365 E3 または Office 365 E3 サブスクリプションがインストールされている必要があります。
 
-- **ユーザーごとのライセンス:** ユーザーのメールボックスに電子情報開示を保持するには、組織のサブスクリプションに応じて、次のいずれかのライセンスをユーザーに割り当てる必要があります。
+- **ユーザーごとのライセンス:** メールボックスおよびサイトに電子情報開示を保持するには、組織のサブスクリプションに応じて、次のいずれかのライセンスをユーザーに割り当てる必要があります。
 
   - Microsoft 365 E3 または Office 365 E3 ライセンス以降
 
+   OR
+
   - Exchange Online プラン2または Exchange Online アーカイブアドオンライセンスを使用した Microsoft 365 E1 または Office 365 E1 ライセンス
 
+  AND
+
+  - SharePoint Online プラン2または OneDrive for Business プラン2アドオンライセンスを使用した Microsoft 365 E1 または Office 365 E1 ライセンス
+  
   ライセンスを割り当てる方法については、「[ユーザーへのライセンスの割り当て](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)」を参照してください。
 
-Microsoft 365 および Office 365 ライセンスの詳細については、「 [microsoft 365 コンプライアンスライセンスの比較](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf)」の「検出 & 応答」ソリューションを参照してください。
+ライセンスの詳細については、以下を参照してください。
+
+- 「 [Microsoft 365 コンプライアンスライセンスの比較](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)」に記載されている「Discover & 応答」ソリューションをダウンロードして参照してください。
+
+- 「 [Security & コンプライアンスセンターサービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)」を参照してください。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>手順 2: 電子情報開示のアクセス許可を割り当てる
 

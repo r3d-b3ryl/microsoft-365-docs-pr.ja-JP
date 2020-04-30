@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Office 365 インポートサービスの新しいインテリジェントインポート機能を使用して、実際にターゲットメールボックスにインポートされるアイテムをフィルター処理します。 インテリジェントインポートを使用すると、どのデータをインポートするか、またどのデータを残しておくかを事前に決定できます。 インテリジェントインポートでは、Office 365 にインポートしているデータについての洞察も提供されます。 '
-ms.openlocfilehash: cc34163c46639765331772aaa1f4a0ae956294e3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ab276af0ee0859657074657f7b21d202947b98a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636233"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942210"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
 
@@ -61,7 +63,7 @@ Office 365 インポートサービスの新しいインテリジェントイン
 
 PST インポートジョブを作成したら、次の手順に従って、Office 365 にインポートする前にデータをフィルター処理します。
   
-1. に[https://protection.office.com/](https://protection.office.com/)移動し、組織内の管理者アカウントの資格情報を使用してサインインします。 
+1. [https://protection.office.com/](https://protection.office.com/) に移動し、組織の管理者アカウントの資格情報を使用してサインインします。 
     
 2. [**情報ガバナンス** \> **Import** \> ] [インポート**PST ファイル**] をクリックします。
     
@@ -110,7 +112,7 @@ PST インポートジョブを作成したら、次の手順に従って、Offi
     
     ![データ分析情報は、フィルター設定に基づいて更新されます。](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. [**次へ**] をクリックします。
+    d. [ **次へ**] をクリックします。
     
     フィルター設定を示す状態ページが表示されます。 この場合も、任意のフィルター設定を編集できます。
     

@@ -14,27 +14,25 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の「Exchange Online Protection (EOP)」および「advanced ATP フィッシング対策ポリシー」の基本的なフィッシング対策ポリシーについて説明します。
-ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638358"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949383"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
-フィッシング対策保護設定を構成するポリシーは、exchange Online メールボックスを使用しない Office 365 組織、および exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (ATP) 組織で利用できます。
+フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (ATP) 組織で使用できます。
 
-ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 以下に例を示します。
+ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 次に例を示します。
 
-- Office 365 Enterprise E5、Office 365 エデュケーション A5 など。
+- Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Office 365 の ATP をアドオンとして作成する](https://products.office.com/exchange/advance-threat-protection)
 
-ATP のフィッシング対策ポリシーには、組み込みの既定のフィッシング対策ポリシーが組み込まれており、追加のカスタム ATP フィッシング対策ポリシーを作成できます。
-
-Exchange online メールボックスを使用しない exchange online メールボックスまたはスタンドアロンの Exchange Online Protection (EOP) 組織を使用している他の Microsoft 365 組織には、既定のフィッシング対策ポリシーが組み込まれていますが、追加のポリシーを作成することはできません。 Exchange Online メールボックスを使用している組織のみが、既定のフィッシング対策ポリシーを変更できます。
+他のすべての組織には、フィッシング対策ポリシーがあります。
 
 次の表では、フィッシング対策ポリシーと ATP のフィッシング対策ポリシーの大まかな違いについて説明します。
 
@@ -42,8 +40,8 @@ Exchange online メールボックスを使用しない exchange online メー�
 |---|:---:|:---:|
 |**機能**|**フィッシング詐欺対策ポリシー**|**ATP のフィッシング対策ポリシー**|
 |自動的に作成される既定のポリシー|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|カスタムポリシーを作成する||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|ポリシー設定<sup>\*</sup>||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|カスタムポリシーを作成する|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|ポリシー設定<sup>\*</sup>|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |偽装設定||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |スプーフィング設定|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |高度なフィッシングしきい値||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -57,7 +55,7 @@ Exchange online メールボックスを使用しない exchange online メー�
 
 - [Microsoft 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)
 
-このトピックの残りの部分では、EOP および ATP のフィッシング対策ポリシーで使用可能な設定について説明します。
+このトピックの残りの部分では、フィッシング対策ポリシーと ATP のフィッシング対策ポリシーで使用可能な設定について説明します。
 
 ## <a name="spoof-settings"></a>スプーフィング設定
 
@@ -65,10 +63,10 @@ Exchange online メールボックスを使用しない exchange online メー�
 
 フィッシング対策ポリシーおよび ATP のフィッシング対策ポリシーでは、次のスプーフィング設定を使用できます。
 
-- **スプーフィング防止保護**: スプーフィング対策保護を有効または無効にします。 有効にしておくことをお勧めします。 **スプーフィングインテリジェンスポリシー**を使用して、特定のスプーフィングされた内部および外部の送信者を許可またはブロックします。 詳細については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
+- **スプーフィング防止保護**: スプーフィング対策保護を有効または無効にします。 有効にしておくことをお勧めします。 **スプーフィングインテリジェンスポリシー**を使用して、特定のスプーフィングされた内部および外部の送信者を許可またはブロックします。 詳細については、「[Microsoft 365 でのスプーフィング インテリジェンスを設定する](learn-about-spoof-intelligence.md)」を参照してください。
 
   > [!NOTE]
-  > スプーフィングの設定は、既定では EOP の既定のフィッシング対策ポリシー、既定の ATP のフィッシング対策ポリシー、および作成した新しいカスタムの ATP のフィッシング対策ポリシーで有効になっています。 <br/><br/> MX レコードが Microsoft 365 をポイントしていない場合は、スプーフィング防止保護を無効にする必要はありません。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
+  > スプーフィングの設定は、既定では、EOP の既定のフィッシング対策ポリシー、既定の ATP のフィッシング対策ポリシー、および作成した新しいカスタムのフィッシング対策ポリシーまたは ATP のフィッシング対策ポリシーで有効になっています。 <br/><br/> MX レコードが Microsoft 365 をポイントしていない場合は、スプーフィング防止保護を無効にする必要はありません。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
   スプーフィングされた送信者からのメッセージでは、メッセージに対して実行するアクションを指定することもできます。
 

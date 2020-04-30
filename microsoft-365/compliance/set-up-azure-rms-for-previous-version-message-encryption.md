@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 以前のバージョンの Office 365 メッセージの暗号化は、Microsoft Azure Rights Management (旧称 Windows Azure Active Directory Rights Management) に依存します。
-ms.openlocfilehash: 3d98fff1987548292699972cedb4e3aa34d20b13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635479"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943266"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>以前のバージョンのメッセージ暗号化用に Azure Rights Management をセットアップする
 
 このトピックでは、以前のバージョンの Office 365 Message Encryption (OME) を使用するために、azure Information Protection の一部である azure Rights Management (RMS) をアクティブ化してからセットアップするために従う必要のある手順について説明します。
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>この記事は、以前のバージョンの OME にのみ適用されます。
+
 まだ組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「 [Office の新しい365メッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「 [Office 365 Message Encryption](ome.md)」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
 
 ## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>以前のバージョンの Office 365 メッセージ暗号化を使用するための前提条件
@@ -35,10 +36,6 @@ ms.locfileid: "43635479"
 Office 365 Message Encryption (OME) は、IRM を含め、Azure Rights Management (Azure RMS) に依存しています。 Azure RMS は、Azure Information Protection で使用される保護テクノロジです。 OME を使用するには、組織に Exchange Online または Exchange Online Protection のサブスクリプションを含める必要があります。これには、Azure Rights Management サブスクリプションが含まれています。
   
 - サブスクリプションに含まれる内容がわからない場合は、「Exchange Online サービスの[メッセージポリシー、回復、および準拠](https://technet.microsoft.com/library/exchange-online-message-policy-recovery-and-compliance.aspx)」の説明を参照してください。
-
-- Azure RMS サブスクリプションが Exchange Online または Exchange Online Protection にない場合は、最初にサブスクリプションを購入してライセンス認証を行う必要があります。
-
-    Azure Rights Management へのサブスクリプションの購入については、「 [Azure Rights management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT)」を参照してください。 次のセクションでは、Azure Rights Management のアクティブ化に関する情報を提供します。
 
 - Azure rights Management を使用していても、Exchange Online または Exchange Online Protection 用にセットアップされていない場合は、この記事で azure rights management をアクティブ化する方法について説明します。次に、Azure Rights Management と連携するように OME をセットアップするための最適な方法について説明します。
 
@@ -68,46 +65,46 @@ TPD は、組織の権限管理設定に関する情報を含む XML ファイ�
 |アジア  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |南アメリカ  <br/> |https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |行政機関向け Office 365 (行政機関のコミュニティ クラウド)  <br/> この RMS キー共有場所は、Office 365 を Government Sku 用に購入したお客様向けに予約されています。  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-   
+  
 3. 次のように、 [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx)コマンドレットを実行して、キー共有の場所を構成します。 
-    
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
-  ```
 
-    たとえば、組織が北米に配置されている場合に、主な共有場所を構成するには、次のように入力します。
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
+   ```
+  
+   たとえば、組織が北米に配置されている場合に、主な共有場所を構成するには、次のように入力します。
 
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
-  ```
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
+   ```
 
 4. -RMSOnline スイッチを使用して[import-rmstrustedpublishingdomain](https://technet.microsoft.com/library/jj200724%28v=exchg.150%29.aspx)コマンドレットを実行し、Azure Rights MANAGEMENT から TPD をインポートします。 
 
-  ```powershell
-  Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
-  ```
+   ```powershell
+   Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
+   ```
 
-    ここで、 *Tpdname*は、TPD に対して使用する名前です。 たとえば、「Contoso 社の北米 TPD」とします。 
+   ここで、 *Tpdname*は、TPD に対して使用する名前です。 たとえば、「Contoso 社の北米 TPD」とします。 
 
-5. Azure Rights Management サービスを使用するように組織が正常に構成されたことを確認するには、次のように、-RMSOnline スイッチを使用して[Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx)コマンドレットを実行します。 
+5. Azure Rights Management サービスを使用するように組織が正常に構成されたことを確認するには、次のように、-RMSOnline スイッチを使用して[Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx)コマンドレットを実行します。
 
-  ```powershell
-  Test-IRMConfiguration -RMSOnline
-  ```
+   ```powershell
+   Test-IRMConfiguration -RMSOnline
+   ```
 
-    特に、このコマンドレットでは、Azure Rights Management サービスとの接続を確認し、TPD をダウンロードして、有効性をチェックします。
+   特に、このコマンドレットでは、Azure Rights Management サービスとの接続を確認し、TPD をダウンロードして、有効性をチェックします。
 
 6. 次のように、 [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx)コマンドレットを実行して、outlook on the Web および Outlook で Azure Rights Management テンプレートを使用できないようにします。 
 
-  ```powershell
-  Set-IRMConfiguration -ClientAccessServerEnabled $false
-  ```
+   ```powershell
+   Set-IRMConfiguration -ClientAccessServerEnabled $false
+   ```
 
-7. 次のように、 [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx)コマンドレットを実行して、クラウドベースの電子メール組織の Azure rights management を有効にし、Office 365 メッセージの暗号化に Azure rights management を使用するように構成します。 
+7. 次のように、 [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx)コマンドレットを実行して、クラウドベースの電子メール組織の Azure rights management を有効にし、Office 365 メッセージの暗号化に Azure rights management を使用するように構成します。
 
-  ```powershell
-  Set-IRMConfiguration -InternalLicensingEnabled $true
-  ```
+   ```powershell
+   Set-IRMConfiguration -InternalLicensingEnabled $true
+   ```
 
 8. TPD および有効にされた Azure Rights Management が正常にインポートされたことを確認するには、Test-IRMConfiguration コマンドレットを使用して Azure Rights Management 機能をテストします。 詳細については、「 [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx)」の「例1」を参照してください。
 

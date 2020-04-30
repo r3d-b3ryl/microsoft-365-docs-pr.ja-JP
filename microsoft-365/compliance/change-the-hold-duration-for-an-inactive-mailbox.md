@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Microsoft 365 メールボックスが非アクティブになった後は、非アクティブなメールボックスに割り当てられている保留または Microsoft 365 アイテム保持ポリシーの期間を変更できます。 保持期間は、[回復可能なアイテム] フォルダー内のアイテムを保持する期間を定義します。
-ms.openlocfilehash: 3d1368bedcbeda467cbc77a356635440066c11c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636335"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942930"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
 
@@ -151,7 +153,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
     ![インプレース ホールド期間の変更に関するスクリーン ショット](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Exchange Online PowerShell を使用して保持期間を変更する
 

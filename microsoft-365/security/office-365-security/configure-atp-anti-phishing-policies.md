@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 Advanced Threat Protection (ATP) を使用して組織で使用できる高度なフィッシング対策ポリシーを作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 358abc2835e8d1fba39d72021f03b75775528bcf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1a7d3b9d401d8bb5bec08d7b5d58546bbd382aa
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638465"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949261"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>ATP フィッシング詐欺対策ポリシーを設定する
 
@@ -29,9 +29,9 @@ ATP のフィッシング対策ポリシーは、 [Office 365 Advanced Threat Pr
 
 セキュリティ & コンプライアンスセンターまたは Exchange Online PowerShell で、ATP のフィッシング対策ポリシーを構成できます。
 
-Exchange Online Protection 組織 (ATP を使用しない Office 365 組織) で使用できる、制限のある組み込みのフィッシング対策ポリシーの構成の詳細については、「 [Configure the default フィッシング対策 policy IN EOP](configure-anti-phishing-policies-eop.md)」を参照してください。
+Exchange Online Protection 組織 (ATP を使用しない Office 365 組織) で使用可能なフィッシング対策ポリシーの構成の詳細については、「 [EOP でフィッシング対策ポリシーを構成](configure-anti-phishing-policies-eop.md)する」を参照してください。
 
-## <a name="atp-anti-phishing-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell"></a>Office 365 セキュリティ & コンプライアンスセンター vs Exchange Online PowerShell での ATP のフィッシング対策ポリシー
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>セキュリティ & コンプライアンスセンター vs Exchange Online PowerShell での ATP のフィッシング対策ポリシー
 
 ATP のフィッシング対策ポリシーの基本的な要素は次のとおりです。
 
@@ -73,7 +73,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 フィッシング対策ポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 フィッシング対策ポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 フィッシング対策ポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 フィッシング対策ポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
 - ATP のフィッシング対策ポリシーの推奨設定については、「 [OFFICE ATP のフィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)」を参照してください。
 
@@ -244,7 +244,7 @@ ATP のフィッシング対策ポリシーを変更するには、次の手順�
 
 6. **スプーフィング**: [**編集**] をクリックして、スプーフィングインテリジェンスを有効または無効にしたり、Outlook で認証されていない送信者の識別をオンまたはオフにしたり、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。 詳細については、「[フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
 
-   これらの設定は、EOP の既定のフィッシング対策ポリシーで使用可能な設定と同一であることに注意してください。
+   なお、これらの設定は EOP のフィッシング対策ポリシーでも使用できます。
 
    - **フィルター設定のスプーフィング**: 既定値は**on**で、そのままにすることをお勧めします。 この機能をオフにするには、トグルを [**オフ**] にします。 詳細については、「[Office 365 でのスプーフィング インテリジェンスの構成](learn-about-spoof-intelligence.md)」を参照してください。
 
@@ -408,7 +408,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 - 安全のヒントを有効にします。
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Default monitoring policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 構文およびパラメーターの詳細については、「 [get-antiphishpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy)」を参照してください。

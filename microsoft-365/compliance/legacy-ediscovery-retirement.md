@@ -9,14 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Exchange Online のインプレース電子情報開示とインプレース保持 (および対応する PowerShell コマンドレット) は、2020の前半で廃止されます。 検索メールボックスコマンドレットと Advanced eDiscovery v 1.0 も、同じ期間内に廃止されます。
-ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635571"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943346"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -92,7 +94,7 @@ ms.locfileid: "43635571"
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>コメント</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -195,7 +197,7 @@ Exchange 管理センターで2017年7月1日に発表された元の通知に�
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>コメント</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -274,7 +276,7 @@ Exchange Online PowerShell の**Search メールボックス**コマンドレッ
 <tr class="header">
 <th><strong>機能</strong></th>
 <th><strong>代替ツール</strong></th>
-<th><strong>コメント</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -327,7 +329,7 @@ Exchange Web サービス API のこれらの操作は、exchange 管理セン�
 
 - 2020年7月1日: GetSearchableMailboxes ボックス、Searchemail メールボックス、SetHoldOnMailboxes、および GetHoldOnMailboxes 操作を使用できなくなり、Microsoft サポートからサポートが提供されなくなります。
 
-## <a name="advanced-ediscovery-v10"></a>高度な電子情報開示 v2.0 v 1.0
+## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v1.0
 
 Advanced eDiscovery v2.0 は、[ **Advanced ediscovery に切り替え**] をクリックすることで、コア電子情報開示のケースで利用可能なアドバンスト ediscovery のバージョンで、廃止される予定です。 この機能は、Microsoft 365 コンプライアンスセンターの新しい[高度な電子情報開示ソリューション](https://aka.ms/edisco)に置き換えられました。
 

@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: スイッチプランを手動で実行するか、サポートに連絡することになる理由について理解します。
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631931"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943145"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランを切り替えることができないのはなぜですか?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> この記事は、古い管理センターに適用されます。 管理センター (プレビュー) に関する記事を表示するには、「[プランをアップグレードできない理由](why-cant-i-change-plans.md)」を参照してください。 プレビューは、Microsoft 365 のすべての管理者が利用できます。そのためには、ホームページの上部にある [**プレビューを試す**] を選択して選択します。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
+> この記事は、古い管理センターに適用されます。 管理センター (プレビュー) に関する記事を表示するには、「[プランをアップグレードできない理由](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)」を参照してください。 プレビューは、Microsoft 365 のすべての管理者が利用できます。そのためには、ホームページの上部にある [**プレビューを試す**] を選択して選択します。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
 ::: moniker-end
 
 [**プランの切り替え**] ボタンが表示されていない場合は、プランを自動的に切り替えることはできません。 場合によっては、[ **プランの切り替え**] ボタンが使用できるように問題を解決したり、[プランを手動で切り替え](switch-plans-manually.md)たりすることができます。 情報アイコンの上にカーソルを置き、[ **プランの切り替え**] ボタンが使用できない理由を示すメッセージを表示します。 問題を解決するには、この記事の情報を使用します。

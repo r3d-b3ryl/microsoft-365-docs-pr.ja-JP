@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 特定の電子メールメッセージを返す ID リスト検索を作成するには、既存のコンテンツ検索から .csv ファイルまたはインデックスを作成しない .csv ファイルを使用します。 通常、ID リスト検索は、部分的にインデックスが作成されたメールボックスアイテムを返すために使用されます。
-ms.openlocfilehash: f37715858e6785e75343f5b11f73332de08b5d3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f3b815f2268121e9adc47de2c24a4e23b44adce5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630704"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942890"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>ID リスト コンテンツ検索用の CSV ファイルを準備する
 
@@ -29,7 +31,7 @@ ID リスト検索を作成するプロセスの簡単な概要を次に示し�
 
 1. セキュリティ & コンプライアンスセンターで、新規またはガイド付きコンテンツ検索を作成して実行します。
 
-2. コンテンツ検索の結果をエクスポートするか、コンテンツ検索レポートをエクスポートします。 詳細については、以下を参照してください。
+2. コンテンツ検索の結果をエクスポートするか、コンテンツ検索レポートをエクスポートします。 詳細については、次の記事を参照してください。
 
     - [コンテンツ検索の結果をエクスポートする](export-search-results.md)
 

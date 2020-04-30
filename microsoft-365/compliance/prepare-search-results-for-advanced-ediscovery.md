@@ -14,20 +14,22 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 上級電子情報開示ツールを使用して詳細な分析を行うために、セキュリティ & コンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: e4cf580a045f9911e6c92fb2031a5d7bed79754e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626641"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943296"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Advanced eDiscovery(クラシック) 用に検索結果を準備する
 
 > [!IMPORTANT]
-> 高度な電子情報開示の新バージョンへの投資を継続するうちに、microsoft は advanced ediscovery *(classic)* または*advanced ediscovery v 1.0*とも呼ばれる、高度な電子情報開示の廃止をアナウンスしています。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
+> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Advanced eDiscovery (*Advanced eDiscovery (クラッシック)* または *Advanced eDiscovery v1.0* とも呼ばれる) のサポート終了を発表しました。 まだ Advanced eDiscovery v1.0 を使用している場合は、できるだけ早く [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (*Microsoft 365 では Advanced eDiscovery ソリューション*とも呼ばれる) に移行してください。 Advanced eDiscovery 2.0 には Advanced eDiscovery v1.0 の同様の機能が搭載されていますが、保管担当者管理、通信管理、レビュー セットなど、多くの新機能も搭載されています。 Advanced eDiscovery v1.0 のサポート終了の詳細については、「[従来版の電子情報開示ツールのサポート終了](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。 
 
 セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている検索が正常に実行されると、高度な電子情報開示を使用してさらに分析するための検索結果を準備することができます。これにより、大規模な非構造化データセットを分析し、法的訴訟に関連するデータ量を減らすことができます。 高度な電子情報開示機能は次のとおりです。
   

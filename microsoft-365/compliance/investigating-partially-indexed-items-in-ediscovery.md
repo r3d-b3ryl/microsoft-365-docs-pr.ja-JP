@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムも呼び出します) は、何らかの理由でコンテンツ検索のインデックスが完全に作成されなかった SharePoint および OneDrive サイト上の Exchange メールボックスアイテムとドキュメントです。 この記事では、検索用にインデックスを作成できず、部分的にインデックスが作成されたアイテムの検索エラーを特定し、PowerShell スクリプトを使用して、部分的にインデックスが作成された電子メールアイテムに対する組織の公開を判断する方法について説明します。
-ms.openlocfilehash: 64b052e5c04019d5937c3763094529ae5c4c9e42
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0053ec5b03f5d32af1a39be94474c05f74ec3234
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637465"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942130"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示での部分的にインデックスが作成されたアイテムの調査
 

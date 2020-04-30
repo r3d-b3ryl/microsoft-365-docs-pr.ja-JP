@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Microsoft 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
-ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631762"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943432"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>Microsoft 365のeDiscovery in
 
@@ -71,7 +72,7 @@ Microsoft 365 には、次の電子情報開示ツールが用意されていま
 |[コア電子情報開示のコンプライアンス境界を設定する](set-up-compliance-boundaries.md)|コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるコンテンツの場所を制御する、組織内で論理的な境界を作成する方法について説明します。|
 |||
   
-## <a name="advanced-ediscovery"></a>高度な電子情報開示
+## <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 Microsoft 365 の高度な電子情報開示ソリューション (*上級電子情報開示*v2.0 とも呼ばれます) は、Office 365 の既存の電子情報開示および分析機能に基づいて構築されています。 この電子情報開示ソリューションは、組織の内部および外部の調査に応答するコンテンツを保持、収集、確認、分析、およびエクスポートするためのエンドツーエンドのワークフローを提供します。 また、法的チームが保管担当者および法的情報保持通知ワークフロー全体を管理して、ケースに関与する保管担当者と通信することもできます。
 
