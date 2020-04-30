@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: GDPR のための Office 365 の情報保護の概要を確認します。個人データを検出、分類、保護、監視する方法について説明します。
-ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637221"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919606"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護の概要
 
@@ -99,7 +99,7 @@ Office 365 およびその他のクラウド サービスへのアクセス保�
 
 - Windows 10 のセキュリティ機能
 
-保護を適用する方法の詳細については、「[Office 365 の個人データに保護を適用する](apply-protection-to-personal-data-in-office-365.md)」を参照してください。
+保護を適用する方法の詳細については、「[個人データに保護を適用する](apply-protection-to-personal-data-in-office-365.md)」を参照してください。
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>手順 5: 個人情報の漏えいを監視する
 

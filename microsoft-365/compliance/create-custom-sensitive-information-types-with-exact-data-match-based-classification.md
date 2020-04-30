@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exact Data Match に基づく分類を使って、カスタムの機密情報の種類を作成します。
-ms.openlocfilehash: 63db4da59a04f13d79da61932f74f49d87fa3ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94adbd4382c6e0a5a736feeb7de4bc32e213d25c
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631326"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919704"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -50,8 +50,8 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 - Office 365 E5
 - Microsoft 365 E5
-- Microsoft 365 Information Protection and Compliance
-- Office 365 Advanced Compliance
+- Microsoft 365 E5 コンプライアンス
+- Microsoft E5/A5 Information Protection and Governance
 
 ## <a name="the-work-flow-at-a-glance"></a>ワークフローの概要
 

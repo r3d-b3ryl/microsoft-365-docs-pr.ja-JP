@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 8889d2706b4467be33eef473845c79a0caac606f
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: f03207910ae1f86434679067eecbe721ebb5591a
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907204"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930164"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -65,7 +65,7 @@ ms.locfileid: "43907204"
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。
 
 > [!NOTE]
-> **秘密度ラベルリーダー** は、最初はPowerShell のラベルが付いたコマンドレットのみをサポートしていた新しい役割です。 現在は、管理者ラベルセンターのサポートがテナントに展開されるようになりました。
+> **秘密度ラベルリーダー** は、最初はPowerShell のラベルが付いたコマンドレットのみをサポートしていた新しい役割です。 現在は、管理者ラベル センターのサポートがテナントに展開されるようになりました。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>秘密度ラベルの一般的なシナリオ
 
