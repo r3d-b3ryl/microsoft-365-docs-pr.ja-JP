@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 または Microsoft 組織でレコード管理戦略を実装するには、コンテンツをレコードとして宣言する保持ラベルを使用します。 次に、保持レコードラベルを公開または自動適用します。
-ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632116"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949284"
 ---
 # <a name="overview-of-records"></a>レコードの概要
 
@@ -38,7 +38,7 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
 - レコードは、指定された保存期間が過ぎた後に廃棄されます
 
-[保持ラベル](labels.md)を使用して、コンテンツをレコードとして分類できます。 レコードを宣言する保持ラベルを作成した後、それらのラベルを[公開](labels.md#how-retention-labels-work-with-retention-label-policies) (それによりユーザーがそれらを使用してコンテンツをレコードとして分類できるようになる)、またはレコードとして分類するコンテンツに[それらのラベルを自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)できます。 保持ラベルを使用してレコードを宣言することにより、Office 365 全体で単一の一貫したレコード管理戦略を実装できますが、レコード センターなどの他のレコード管理機能は SharePoint Online のコンテンツにのみ適用されます。
+コンテンツをレコードとして分類するには [保持ラベル](labels.md) を使用します。 レコードを宣言する保持ラベルを作成した後、それらのラベルを[公開](labels.md#how-retention-labels-work-with-retention-label-policies) (それによりユーザーがそれらを使用してコンテンツをレコードとして分類できるようになる)、またはレコードとして分類するコンテンツに[それらのラベルを自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)できます。 保持ラベルを使用してレコードを宣言することにより、Office 365 全体で単一の一貫したレコード管理戦略を実装できますが、レコード センターなどの他のレコード管理機能は SharePoint Online のコンテンツにのみ適用されます。
 
 レコードについては、以下の点に注意してください。
 
@@ -74,10 +74,10 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
 保持ラベルを作成する際に、保持ラベルを使用してコンテンツをレコードとして分類するオプションがあります。 コンテンツをレコードとして宣言するには、次の手順を実行します。
 
-1. 保持ラベルを作成します。 Microsoft 365 コンプライアンス センターで、[**レコードの管理**] [\>ファイル プラン**] に移動します。 [**ファイル プラン**] ページで、[**ラベルの作成**] をクリックします。
+1. 保持ラベルを作成します。 Microsoft 365 コンプライアンス センターで、[**レコードの管理**] [\>ファイル プラン**] に移動します。 [**ファイルプラン**] ページで、[**ラベルの作成**] を選びます。
 
-2. ウィザードの [**ラベルの設定**] ページで、保持ラベルを設定してコンテンツをレコードとして宣言するオプションを選択します。<br/>
-
+2. ウィザードの [**ラベルの設定**] ページで、保持ラベルを設定してコンテンツをレコードとして宣言するオプションを選択します。
+    
    ![[このラベルを使用して、コンテンツをレコードに分類する] チェックボックスをクリックします](../media/recordversioning6.png)
 
 3. 保持ラベルを SharePoint サイトおよび/または OneDrive アカウントに[公開](labels.md#how-retention-labels-work-with-retention-label-policies)または[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
