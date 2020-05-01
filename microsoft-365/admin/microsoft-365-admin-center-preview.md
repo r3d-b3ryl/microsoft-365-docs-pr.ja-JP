@@ -16,14 +16,13 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 新しい Microsoft 365 管理センターについて説明します。
-ms.openlocfilehash: c4e6df3824e3f4ca33e947c438bb0be2f841e416
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907227"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952641"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>新しい Microsoft 365 管理センターについて
 
@@ -105,7 +104,7 @@ Microsoft 365 管理センターに新機能が追加された際は、管理者
 
 Microsoft 365 は、Office 365、Windows 10、Enterprise Mobility + Security が含まれ、すべてのユーザーがクリエイティブかつ安全に共同作業を行えるようにする完全なインテリジェント ソリューションです。 管理センターでは、次の Microsoft 365 サブスクリプションを試用または購入できます。
   
-- 一般法人向け Microsoft 365
+- Microsoft 365 for business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

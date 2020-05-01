@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: 電子メールと予定表を管理する
+summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
+metadata:
+  title: 電子メールと予定表を管理する
+  description: メール設定、配布グループ、セキュリティ設定、および共有メールボックスの設定を管理する
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952766"
+landingContent:
+- title: メールの管理
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ユーザーのメール設定を管理する
+      url: office-365-user-email-settings.md
+    - text: 電子メールのグループ作業について
+      url: email-collaboration.md
+  - linkListType: how-to-guide
+    links:
+    - text: 別のメール エイリアスを追加する
+      url: add-another-email-alias-for-a-user.md
+    - text: カスタムドメインを使用する
+      url: change-email-address.md
+    - text: メールの転送をセットアップする
+      url: configure-email-forwarding.md
+    - text: セキュリティグループを操作する
+      url: create-edit-or-delete-a-security-group.md
+- title: 予定表を管理する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Outlook で予定表と連絡先を管理する
+      url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
+  - linkListType: video
+    links:
+    - text: 共有の予定表を作成する
+      url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
+- title: 共有メールボックスの管理
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 共有メールボックスを設定する
+      url: configure-a-shared-mailbox.md
+    - text: ユーザー メールボックスを共有メールボックスに変換する
+      url: convert-user-mailbox-to-shared-mailbox.md
+    - text: 共有メールボックスからライセンスを削除する
+      url: remove-license-from-shared-mailbox.md
+    - text: 共有メールボックスの問題を解決する
+      url: resolve-issues-with-shared-mailboxes.md
+- title: メールの接続と配信の問題の解決
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: メール配信に関する問題を見つけて修正する
+      url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
+    - text: ドメインまたは DNS レコードを追加した後で問題を修正して検索する
+      url: ../get-help-with-domains/find-and-fix-issues.md
+    - text: ユーザーメールボックス内の削除済みメールを復元する
+      url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
+    - text: Microsoft 365 および Exchange Online における Outlook の接続の問題を修正する
+      url: https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f

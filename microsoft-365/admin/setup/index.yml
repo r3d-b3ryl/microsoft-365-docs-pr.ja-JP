@@ -1,0 +1,63 @@
+### YamlMime:Landing
+title: はじめに
+summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
+metadata:
+  title: はじめに
+  description: サブスクリプションとメールを設定します。 ユーザーを追加し、アプリをインストールする
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 0396ea8146e3e0d0419f6f1d9caeee9df7b86d59
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952739"
+landingContent:
+- title: サインアップ
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: プランを選択して Microsoft 365 にサインアップする
+      url: ../admin-overview/sign-up-for-office-365.md
+  - linkListType: video
+    links:
+    - text: サインアップして Microsoft Business Basic をセットアップする
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+    - text: Microsoft Business Standard へのサインアップ
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+    - text: Microsoft Business Premium にサインアップする
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+- title: ガイド付きセットアップ
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: セットアップを計画する
+      url: plan-your-setup.md
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft Business Standard をセットアップする
+      url: setup.md
+    - text: Microsoft Business Premium のセットアップ
+      url: ../../business/set-up.md
+- title: セットアップの完了
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: データの移行
+      url: migrate-email-and-contacts-admin.md
+    - text: アプリをインストールする
+      url: install-applications.md
+    - text: Teams をロールアウトする
+      url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
+  - linkListType: video
+    links:
+    - text: Android にアプリをインストールする
+      url: https://support.office.com/article/647909af-560f-4977-ae45-3b45ad9e8236
+    - text: IOS にアプリをインストールする
+      url: https://support.office.com/article/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
+    - text: ユーザーをトレーニングする
+      url: https://support.office.com/office-training-center

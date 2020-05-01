@@ -17,16 +17,15 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 管理センター-今月追加された機能について説明します。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 03fae5d2a9b8adc9859eb16bfd9d98740e7d8bf2
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: bd701f8ea2a6187f73fff91ea1ca2ccf2641f6e3
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939453"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952653"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -395,7 +394,7 @@ Ignite 2019 では、いくつかのエキサイティングな機能リリー�
 - **Intune デバイス保護**-ライセンスに intune が含まれていて、intune の設定が完了していないか、デバイスを登録していないことが検出された場合は、ユーザーがモバイルデバイスからアクセスしたときに組織のファイルを保護するための intune ポリシーを作成することをお勧めします。
 - **Office の月単位の機能の更新プログラムを入手**してください。 office の月単位の更新プログラムを取得すると、ユーザーの満足度が高くなるというご意見をお待ちしています。 そのため、非常に小規模な企業で、6か月ごとに Office 機能の更新プログラムを入手している場合は、この推奨事項が表示されます。
 
-**設定** <br>
+**Settings** <br>
 設定については、大幅に変更が加えられています。 ほとんどの場合、既存の設定を新しい管理センターのスタイルに更新するだけです。 前に見たことがない新しい設定を追加して、その設定を追加していくと、ここで紹介します。 また、「**先進認証**」という1つの設定をアナウンスしました。 はい、**モダン認証**を有効にするための新しい設定があります。 これを確認するには、[ **Settings** > **Services & アドイン** > の**モダン認証**] に移動します。
 
 ## <a name="april-2019"></a>2019 年 4 月
