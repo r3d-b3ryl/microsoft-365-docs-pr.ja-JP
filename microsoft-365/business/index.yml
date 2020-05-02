@@ -1,22 +1,22 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium のリソース
-summary: Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員の数が300人未満の企業向けの包括的なサブスクリプションサービスです。 高度なセキュリティとデバイスの管理機能を備えた Microsoft Teams のような、お気に入りの Office 生産性向上アプリとサービスおよびコラボレーションツールが統合されています。
+summary: Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員が300人未満の企業向けの包括的なサブスクリプションサービスです。 高度なセキュリティとデバイスの管理機能を備えた Microsoft Teams のような、お気に入りの Office 生産性向上アプリとサービスおよびコラボレーションツールが統合されています。
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium のリソース
-  description: 説明
+  description: description
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 59478fceee0017321c59607f589fe464ac95077d
-  ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
+  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/22/2020
-  ms.locfileid: "43665622"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "44002182"
 productDirectory:
   title: Microsoft 365 Business Premium を使用したリモート作業のセキュリティ保護
   items:
@@ -30,7 +30,7 @@ productDirectory:
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: 読み取り
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Microsoft 365 for business で安全なリモート作業を可能にするための最適な方法。
+    summary: Microsoft 365 Business Premium を使用して安全なリモート作業を可能にするための最適な方法。
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
@@ -79,6 +79,9 @@ conceptualContent:
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
       itemType: download
       text: 技術の基礎
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
+      itemType: download
+      text: リモート作業をセキュリティで保護するためのチェックリスト
   - title: ユーザーを管理します
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
