@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Teams でゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630751"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002194"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
@@ -72,7 +76,7 @@ Teams ゲストアクセス設定を設定するには
 
 Teams では、チームメンバーシップに Microsoft 365 グループを使用します。 Teams でゲストアクセスを機能させるには、Microsoft 365 Groups のゲスト設定をオンにする必要があります。
 
-![Microsoft 365 グループのゲスト設定 Microsoft 365 管理センターのスクリーンショット](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
 
 Microsoft 365 グループのゲスト設定を設定するには
 
@@ -173,6 +177,6 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)

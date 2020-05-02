@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 組織外のユーザーとのグループ作業用に Microsoft 365 を構成する方法について説明します。
-ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630727"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002254"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -42,7 +46,7 @@ Microsoft 365 で使用可能なゲスト共有設定の包括的な説明につ
 
 - 認証されていない[ユーザーとファイルやフォルダーを共有するためのベストプラクティス](best-practices-anonymous-sharing.md)-認証されていないユーザーとの共有のベストプラクティスについて説明します。
 - [偶発的な公開を制限](share-limit-accidental-exposure.md)する: 機密コンテンツを誤って組織外のユーザーと共有する危険性を軽減する方法について説明します。
-- [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md))-組織外のユーザーとの共有が安全かつ安全な方法で行われ、ガバナンスの要件を満たしていることを確認するために、Microsoft 365 で提供されるツールについて説明します。
+- [セキュリティで保護されたゲスト共有環境を作成](create-secure-guest-sharing-environment.md)する-組織外のユーザーとの共有が安全かつ安全な方法で行われ、ガバナンス要件を満たしていることを確認するために、Microsoft 365 で提供されるツールについて説明します。
 
 ## <a name="collaborate-with-partner-companies"></a>パートナー企業との共同作業
 

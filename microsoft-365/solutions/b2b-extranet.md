@@ -5,23 +5,27 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: パートナー組織から管理されたゲストユーザーを使用して、B2B エクストラネットのサイトまたはチームを作成する方法について説明します。
-ms.openlocfilehash: 24a2652d4d025f194d0754b90b6a21a054f4159a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604772"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44001705"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 
 Azure active [Directory 受給管理](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)を使用して、Azure active directory を使用するパートナー組織と共同作業する B2B エクストラネットを作成できます。 これにより、ユーザーは、エクストラネットサイトまたはチームで自分を登録し、承認ワークフローを使用してアクセスを受信することができます。
 
-グループ作業のためにリソースを共有するためのこの方法を使用すると、パートナー組織は、エンドユーザーに対するゲストユーザーの管理と承認を支援し、IT 部門の負担を軽減して、ユーザーを管理するためのコラボレーション契約に精通しているユーザーを許可することができます。接続.
+グループ作業のためにリソースを共有するためのこの方法を使用すると、パートナー組織は、エンドユーザーによるゲストユーザーの管理と承認を支援し、IT 部門の負担を軽減し、ユーザーアクセスを管理するためのコラボレーション契約について最もよく使用されるものを許可することができます。
 
 この記事では、セルフサービスアクセス登録モデルを使用してパートナー組織と共有できるリソース (この場合は、サイトまたはチーム) のパッケージを作成するための手順を順を追って説明します。 
 

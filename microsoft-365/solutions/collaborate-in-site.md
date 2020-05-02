@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b5a50b4d0f7486b3c86546a672b01db3a5b000
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630739"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002279"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -52,7 +56,7 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 モダン SharePoint サイトでは、Microsoft 365 グループを使用してサイトアクセスを制御します。 SharePoint サイトでゲストアクセスを機能させるには、Microsoft 365 グループのゲスト設定をオンにする必要があります。
 
-![Microsoft 365 グループのゲスト設定 Microsoft 365 管理センターのスクリーンショット](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
 
 Microsoft 365 グループのゲスト設定を設定するには
 
@@ -135,7 +139,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)
 

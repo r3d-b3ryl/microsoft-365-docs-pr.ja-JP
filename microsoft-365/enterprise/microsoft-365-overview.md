@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for enterprise のコンポーネント、計画、展開パスの概要について説明します。
-ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631563"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002293"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for enterprise の概要
 
@@ -45,7 +45,7 @@ Microsoft 365 for enterprise は、3つのプランで利用できます。
 |:-------|:-----|
 | E3 | Microsoft 365 内のコア製品と機能にアクセスして、職場の生産性を向上させ、技術革新を促進します。 |
 | E5 | 高度な脅威保護、セキュリティ、コラボレーションツールなど、Microsoft 365 内の最新の製品と機能にアクセスします。 E3's のすべての機能に加え、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。 |
-| F1 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
+| F3 | 自分が作成したツールやリソースを使用して、最高の仕事をすることができます。 |
 |||
 
 Microsoft 365 E3 がある場合は、次の[オファーリング](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)を取得することもできます。

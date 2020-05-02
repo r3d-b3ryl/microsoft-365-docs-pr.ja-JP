@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636665"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002345"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>手順 1: Windows 10 Enterprise を組織で展開するための準備
 
@@ -43,7 +43,7 @@ Microsoft では、診断データを使用して、マルウェアの傾向や�
 
 管理ポリシーを構成するときは、次の表に示す適切な値を使用します。
 
-| Level | 収集されたデータ | Value |
+| Level | 収集されたデータ | 値 |
 |:--- |:--- |:--- |
 | セキュリティ | セキュリティデータのみ。 | .0 |
 | 基本 | セキュリティデータ、および基本的なシステムと品質のデータ。 | 1-d |
@@ -52,7 +52,7 @@ Microsoft では、診断データを使用して、マルウェアの傾向や�
 
 診断データを有効にするには、次のいずれかの方法を使用します。
 
-* **Microsoft Intune** : Intune を使用してデバイスを管理する予定の場合は、 <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">systemallowtelemetry</a>システムポリシーを構成して診断データを有効にする構成ポリシーを作成できます。 構成ポリシーの設定の詳細については、「 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理](https://aka.ms/intuneconfigpolicies)する」を参照してください。
+* **Microsoft Intune** : Intune を使用してデバイスを管理する予定の場合は、 <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">systemallowtelemetry</a>システムポリシーを構成して診断データを有効にする構成ポリシーを作成できます。
 * **レジストリエディター** -レジストリエディターを使用して、組織内の各デバイスで診断データを手動で有効にすることができます。 または、レジストリを編集するスクリプトを記述することもできます。 グループポリシーまたは MDM などの管理ポリシーが既に存在する場合は、このレジストリ設定が上書きされます。
 * **グループポリシー** -Intune にデバイスを登録する予定がない場合は、グループポリシーオブジェクトを使用して、組織の診断データレベルを設定できます。
 * **コマンドプロンプト**-Windows 10 診断データおよびサービスを、コマンドプロンプトで自動的に開始するように設定できます。 この方法は、サービスを少数のデバイスでのみテストする場合に最適です。 このコマンドを使用してサービスを自動的に開始できるようにする場合は、診断データレベルを構成しません。 管理ツールを使用して診断データレベルを構成していない場合、サービスは既定の拡張レベルで動作します。
