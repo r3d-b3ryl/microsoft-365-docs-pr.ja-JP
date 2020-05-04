@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のレコード管理を使用すると、組織の特定の保持スケジュールをファイル計画に適用し、コンテンツの完全なライフサイクルをサポートするために、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: e74c7d9e5f01b49805fccdfac2c719835354b97a
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106083"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949250"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 のレコードの管理
 
@@ -30,18 +30,18 @@ ms.locfileid: "43106083"
 
 レコード管理ソリューションは、次の要素をサポートします。
 
-- **コンテンツをレコードとして分類する**。 エンド ユーザーによって適用される[レコード ラベル](records.md)を発行するか、特定の機密情報、キーワード、コンテンツ種類を含むアイテムに[レコード ラベルを自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
+- **コンテンツをレコードとして分類する**。 コンテンツを[レコード](records.md)として宣言する保持ラベルを作成および発行します。エンドユーザーが適用したり、機密情報、キーワード、またはコンテンツ タイプを識別して[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)したりすることができます。
 
 - **ファイル計画を使用して保持計画を移行および管理**し、[ファイル計画マネージャー](file-plan-manager.md)を使用して既存の保持計画を取り込むか、ファイル記述子と階層を展開して新しい計画を構築します。
 
-- **レコード ラベル内で保持と削除のポリシーを規定します**。 データの最終更新日または作成日を含むさまざまな要因に基づき、[保持](retention-policies.md#retaining-content-for-a-specific-period-of-time) および [廃棄](retention-policies.md#deleting-content-thats-older-than-a-specific-age) の期間を定義します。
+- **保持と削除のポリシーを規定します**。 最終更新日や作成日などのさまざまな要因に基づき、[保持](retention-policies.md#retaining-content-for-a-specific-period-of-time)および[廃棄](retention-policies.md#deleting-content-thats-older-than-a-specific-age)の期間を定義します。
 
 - [イベント ベースの保持](event-driven-retention.md)を使用して**イベント ベースの保持をトリガーします**。
 
-- [廃棄確認](disposition-reviews.md)を使用して**廃棄を確認および検証します**。
+- [処理確認](disposition.md#disposition-reviews)、[レコードの削除](disposition.md#disposition-of-records)の証明を使用して**廃棄を確認および検証します**。
 
-- **廃棄されたアイテムを廃棄確認で確認**し、 [廃棄レポートをエクスポート](disposition-reviews.md#export-the-disposition-items)し、さらに詳しく検証および報告します。
+- [[エクスポート] オプション](disposition.md#filter-and-export-the-views)を使用して、**廃棄されたすべてのアイテムに関する情報をエクスポートします**。
 
 - [適切なアクセス権を取得する](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)ために、組織内のレコード管理機能に**特定のアクセス許可**を設定します。
 
-Microsoft 365 のレコード管理ソリューションを使用すると、組織の保持スケジュールをファイル計画に反映し、コンテンツの完全なライフサイクルをサポートするために、保持、レコード宣言、廃棄を管理することができます。
+Microsoft 365 のレコード管理ソリューションを使用すると、組織の保持スケジュールをファイル計画に反映させ、保持、レコード宣言、廃棄を管理して、コンテンツのライフサイクル全体をサポートすることができます。

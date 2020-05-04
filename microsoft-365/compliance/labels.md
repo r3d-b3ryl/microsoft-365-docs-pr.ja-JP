@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6496c5f82ee21e2085568f5e623fc6ee75145b8a
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637445"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949314"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -38,8 +38,9 @@ ms.locfileid: "43637445"
     
 - 編集も削除もできないように、**レコードとしてマーク**する必要のある就労ビザ。 
     
-これらのすべてのケースにおいて、保持ラベルは適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。
-  
+
+これらのすべてのケースにおいて、Microsoft 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するのに役立ちます。保持ラベルを使用して、ガバナンスのために組織全体のデータを分類し、その分類に基づいて保持ルールを適用できます。
+
 保持ラベルを使用すると、次のことができます。
   
 - Outlook on the web、Outlook 2010 以降、OneDrive、SharePoint、Microsoft 365 グループのコンテンツに、**組織内のユーザーが保持ラベルを手動で適用**できるようにします。多くの場合、コンテンツの種類を最も良く理解しているのはそれを扱っているユーザーです。そこでユーザーにコンテンツを分類し、適切なポリシーを適用してもらいます。 
@@ -165,7 +166,7 @@ Exchange パブリック フォルダーと Skype ではラベルはサポート
   
 さらに、保持ラベルには 2 つの保持オプションがあります。これらのオプションは保持ラベルでのみ使用でき、アイテム保持ポリシーでは使用できません。保持ラベルを使用すると、次のことができます。
   
-- 保持期間の終了時に廃棄レビューをトリガーし、SharePoint と OneDrive のドキュメントを確認してから削除するようにできます。詳細については、「[廃棄レビューの概要](disposition-reviews.md)」をご参照ください。
+- 保持期間の終了時に処理確認をトリガーし、SharePoint と OneDrive のドキュメントを確認してから削除することができます。詳細については、「[コンテンツの廃棄](disposition.md)」を参照してください。
     
 - コンテンツの作成日または最終変更日時ではなく、コンテンツがラベル付けされた時点から保持期間を開始できます。 このオプションは、SharePoint サイトおよび OneDrive アカウントのコンテンツにのみ適用されます。 Exchange メールの場合、オプションのどれを選んだかを問わず、保持期間は常にメッセージが送受信された日付に基づきます。
     
@@ -263,7 +264,7 @@ Microsoft 365 グループのコンテンツを保持するには、Microsoft 36
     
 - [作成したクエリに一致する特定のキーワード](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [トレーニング可能な分類子の一致](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [トレーニング可能な分類子の一致](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![自動適用ラベルの [条件選択] ページ](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
@@ -313,7 +314,7 @@ Microsoft 365 グループのコンテンツを保持するには、Microsoft 36
 ![クエリ エディター](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
 
 トレーニング可能な分類子のオプションを選択すると、組み込み分類子またはカスタム分類子のいずれかを選択できます。 組み込み分類子には、**攻撃的言語**、**履歴書**、**ソース コード**、**個人を標的にしたハラスメント**、**冒とく**、および**脅威**が含まれます。
 
@@ -324,6 +325,7 @@ Microsoft 365 グループのコンテンツを保持するには、Microsoft 36
 トレーニング可能な分類子の詳細については、「[トレーニング可能な分類子 (プレビュー) の概要](classifier-getting-started-with.md)」を参照してください。
 
 構成の例については、「[組み込みの分類子を準備して使用する方法](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier)」を参照してください。
+
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定の保持ラベルの適用
 

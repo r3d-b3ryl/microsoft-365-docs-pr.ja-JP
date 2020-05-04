@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799980"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943246"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -35,7 +35,7 @@ ms.locfileid: "43799980"
 
 - ユーザーへの依存は、一部のコンテンツを正しく分類するためにのみ必要。
 
-- ユーザーはポリシーについて把握する必要がなくなり、自分たちの仕事に集中できます。
+- ユーザーはポリシーについて把握する必要がなくなり、自分たちの仕事に集中できる。
 
 機密ラベルを自動的に適用するには、次の 2 つの方法があります。
 
@@ -113,7 +113,7 @@ Office アプリの自動ラベル付け設定は、[機密ラベルを作成ま
 ![Office アプリの自動ラベル付けのラベル条件](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> 現在、**分類子** のオプションは制限付きプレビュー中であり、テナントでこの機能を有効にするには Microsoft にフォームを送信する必要があります。 詳細については、「[Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview (組み込みの分類子を使用した Office アプリの自動ラベル付けの発表 - 制限付きプレビュー)](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)」のブログ投稿を参照してください。
+> 現在、**分類子**のオプションは制限付きプレビュー中であり、テナントでこの機能を有効にするには Microsoft にフォームを送信する必要があります。 詳細については、「[Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview (組み込みの分類子を使用した Office アプリの自動ラベル付けの発表 - 制限付きプレビュー)](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)」のブログ投稿を参照してください。
 
 この機密ラベルが自動的に適用されると、ユーザーの Office アプリに通知が表示されます。 例:
 
@@ -131,15 +131,15 @@ Office アプリの自動ラベル付け設定は、[機密ラベルを作成ま
 
 ![インスタンス数と一致精度のオプション](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifers-for-a-label"></a>ラベルの分類子の構成
+### <a name="configuring-classifiers-for-a-label"></a>ラベルの分類子の構成
 
-**分類子** オプションを選択する場合、1 つ以上の組み込み分類子を選択します。
+**分類子**のオプションを選択する場合、1 つ以上の組み込み分類子を選択します。
 
-![分類子と機密ラベルのオプション](../media/sensitivity-labels-classifers.png)
+![分類子と秘密度ラベルのオプション](../media/sensitivity-labels-classifers.png)
 
-それらの分類子の詳細については、「[トレーニング可能な分類子 (プレビュー) の概要](classifier-getting-started-with.md)」を参照してください。
+これらの分類子の詳細については、「[トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)」を参照してください。
 
-プレビュー期間中は、次のアプリが機密ラベルの分類子をサポートします。
+プレビュー期間中は、次のアプリが秘密度ラベルの分類子をサポートします。
 
 - [Office Insider](https://office.com/insider) の Windows 用 Microsoft 365 Apps for enterprise デスクトップ アプリ:
     - Word
@@ -278,7 +278,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 12. **[ポリシー シミュレーションを今すぐ実行するか、後で実行するかを決定する]** ページの場合: シミュレーション モードで、今すぐ自動ラベル付けポリシーを実行する準備が整っている場合は、**[シミュレーション モードでポリシーを実行する]** を選択します。 それ以外の場合は、**[ポリシーをオフのままにする]** を選択します。 [**次へ**] を選択します。 
 
-13. [**概要**] ページの場合: 自動ラベル付けポリシーの構成を確認し、必要な変更を行い、ウィザードを完了します。
+13. **[概要]** ページの場合: 自動ラベル付けポリシーの構成を確認し、必要な変更を行い、ウィザードを完了します。
     
     Office アプリの自動ラベル付けとは異なり、個別の公開オプションはありません。 ただし、ラベルの公開と同様に、自動ラベル付けポリシーが組織全体に複製されるまでに最大 24 時間かかります。
 

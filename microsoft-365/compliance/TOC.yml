@@ -165,6 +165,8 @@
           href: customer-key-availability-key-roll.md
         - name: カスタマー キーの可用性キーの詳細
           href: customer-key-availability-key-understand.md
+    - name: 転送中データの暗号化
+      href: office-365-encryption-for-data-in-transit.md
     - name: メールの暗号化
       href: email-encryption.md
       items:
@@ -283,8 +285,8 @@
           href: automate-event-driven-retention.md
         - name: SharePoint ドキュメントのライフサイクルを管理する
           href: auto-apply-retention-labels-scenario.md
-    - name: データを破棄する
-      href: disposition-reviews.md
+    - name: データの破棄
+      href: disposition.md
     - name: 非アクティブなメールボックスを管理する
       items:
         - name: 非アクティブなメールボックスの概要
@@ -338,7 +340,7 @@
             - name: イベント ベースの保持を自動化する
               href: automate-event-driven-retention.md
         - name: 廃棄
-          href: disposition-reviews.md
+          href: disposition.md
         - name: レコード管理の詳細情報
           items:
             - name: レコード管理のビデオを見る
@@ -1204,6 +1206,8 @@
               href: offering-lopd-spain.md
             - name: PASF (英国)
               href: offering-pasf-uk.md
+            - name: 個人データのローカリゼーション (ロシア)
+              href: offering-russia-data-localization.md
         - name: 北アメリカ
           items:
             - name: カリフォルニア州消費者プライバシー法 (CCPA)
