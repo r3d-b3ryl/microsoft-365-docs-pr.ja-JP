@@ -19,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: ユーザーを最新の Office クライアントにアップグレードする方法について説明します。
-ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627536"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011276"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Microsoft 365 for business ユーザーを最新の Office クライアントにアップグレードする
 
@@ -124,4 +124,4 @@ Office の最新バージョンをインストールする前に、以前のバ�
 アップグレードするユーザーにライセンスがあることを確認したら、最後に Office をインストールするには、「 [PC または Mac に office をダウンロードしてインストールまたは再](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)インストールする」を参照してください。
   
 > [!TIP]
-> ユーザーに Office をインストールさせたくない場合は、「 [Manage software download settings In office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)」を参照してください。 Office[展開ツール](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)を使用して office ソフトウェアをローカルネットワークにダウンロードし、通常使用するソフトウェア展開方法を使用して office を展開することができます。
+> ユーザーに Office をインストールさせたくない場合は、「 [Manage software download settings In office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)」を参照してください。 Office[展開ツール](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool)を使用して office ソフトウェアをローカルネットワークにダウンロードし、通常使用するソフトウェア展開方法を使用して office を展開することができます。

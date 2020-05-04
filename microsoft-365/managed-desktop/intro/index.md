@@ -5,12 +5,12 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636222"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011913"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -53,7 +53,7 @@ IT 管理者は、次の機能を利用できます。
 Microsoft マネージドデスクトップでは、登録されたデバイスとそれらが使用する Microsoft ソフトウェアを管理する負荷がかかります。
 
 - **ハードウェア:** IT 部門がデバイス (およびそのドライバー) を調査してテストするのではなく、特定のデバイスが Microsoft マネージドデスクトップによって慎重にテストされるので、エンタープライズレベルのパフォーマンス要件を満たす[デバイスの合わせリスト](../service-description/device-list.md)が作成され、サービスで動作することが保証されます。 承認済みリストに含まれている場合は、デバイスを自分で取得する (またはパートナーと連携する) か、または既存のデバイスを再利用することができます。 デバイスの登録は簡単でわかりやすく、展開する前に、エンドユーザーにとってのデバイスの使用状況の一部を[カスタマイズ](../working-with-managed-desktop/config-setting-overview.md)することもできます。
-- **更新プログラム:** Microsoft マネージドデスクトップは、Windows 10 品質と機能の更新プログラム、ドライバー、ファームウェア、ウイルス対策の定義、および Office ProPlus の更新プログラムについて、[展開グループ](../service-description/updates.md)のすべての側面を設定して管理します。 これには、すべての更新プログラムのテストと検証が含まれており、登録されたデバイスが常に最新の状態になっていることを保証し、中断を最小限に抑え、継続的なタスクから IT 部門を解放することができます。
+- **更新プログラム:** Microsoft マネージドデスクトップは、Windows 10 の品質と機能の更新プログラム、ドライバー、ファームウェア、ウイルス対策の定義、および Microsoft 365 アプリ for enterprise の更新プログラムについて、[展開グループ](../service-description/updates.md)のすべての側面を設定して管理します。 これには、すべての更新プログラムのテストと検証が含まれており、登録されたデバイスが常に最新の状態になっていることを保証し、中断を最小限に抑え、継続的なタスクから IT 部門を解放することができます。
 - **アプリ:** Microsoft 365 Enterprise の一部として、microsoft はいくつかの主要な Microsoft アプリを提供 (および管理) します。 しかし、お客様のビジネスに必要なその他のアプリがあるかもしれません。 これらのアプリケーションをテスト、パッケージ化、および展開する必要がある IT 部門ではなく、これらのアプリを展開して、必要に応じて[デスクトップアプリ](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)をサポートするための支援を受けることができます。 詳細について[は、「Microsoft マネージドデスクトップのアプリ」を](../get-ready/apps.md)参照してください。
 
 

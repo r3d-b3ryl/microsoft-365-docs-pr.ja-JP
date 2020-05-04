@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b380604e908d91feacefe6b54ed3d3f08dcea0fa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49eb9ae31ab913be30b2b96735f15ae57e85a10f
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637799"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011234"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -88,7 +88,7 @@ FedRAMP 認定のためにサードパーティによって作成された正式
 
 **Office 365 の範囲内のサービスとは何ですか。**
 
-NIST CSF 認定のスコープ内サービスには、Exchange Online のアーカイブ、Exchange Online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft Teams、office ProPlus in Office 365 マルチテナントクラウドおよび Office 365 GCC があります。
+NIST CSF 認定のスコープ内サービスには、Exchange Online のアーカイブ、Exchange online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft Teams、Office 365 マルチテナントクラウドおよび Office 365 GCC のエンタープライズ向け Microsoft 365 アプリがあります。
 
 > [!NOTE]
 > Microsoft 365 enterprise 用アプリは、ローミング設定、ライセンス、OneDrive コンシューマークラウドストレージなどのさまざまなクラウドサービスへのアクセスを可能にし、将来、追加のクラウドサービスへのアクセスを可能にする場合があります。 ローミングの設定とライセンスは、HITRUST の標準をサポートします。 OneDrive コンシューマークラウドストレージではサポートされていません。また、microsoft が将来的に提供する可能性があるその他のクラウドサービスで365は、これらの標準をサポートしていない場合もあります。 *
@@ -101,7 +101,7 @@ Microsoft は、その他のクラウドサービスプロバイダーと比較�
 
 [Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[NIST CSF テンプレート](https://go.microsoft.com/fwlink/?linkid=2117917)を選択して、組織がこの規制の要件を満たすことができるようにします。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [Microsoft クラウドサービスの承認](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Microsoft サイバーオファーリングのマッピング先: NIST Cybersecurity Framework (CSF)、CIS Controls、ISO27001: 2013、HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
@@ -109,7 +109,7 @@ Microsoft は、その他のクラウドサービスプロバイダーと比較�
 - [連邦ネットワークおよび重要なインフラストラクチャの Cybersecurity を強化する Presidential Executive の注文](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 

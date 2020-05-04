@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '利用状況分析が API に接続する方法について説明し、さまざまな Microsoft 365 サービスの利用状況の月単位の傾向を示します。  '
-ms.openlocfilehash: 56ef0ffcedee71a4529ff31aecefed0d2645b89a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634242"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011773"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -50,7 +50,7 @@ Microsoft 365 usage analytics は、多次元データモデルを公開する A
 |Tenant SharePoint Online Usage (テナント SharePoint オンラインの利用状況)  <br/> |SharePoint サイト、サイトの合計数などの含まれるチームまたはグループ、サイトのドキュメントの数、アクティビティ タイプ別のファイル数、使用しているストレージに関するデータが含まれています。  <br/> |12 か月連続の期間 (現在のところ、まだ終わっていない月を含む) のデータの月末の状態が含まれています。  <br/> |
 |Tenant OneDrive for Business Usage (テナントの OneDrive for Business の利用状況)  <br/> |アカウントの数、OneDrive 全体のドキュメントの数、使用されているストレージ、アクティビティの種類別のファイル数などの OneDrive アカウントに関するデータが含まれています。  <br/> |12 か月連続の期間 (現在のところ、まだ終わっていない月を含む) のデータの月末の状態が含まれています。  <br/> |
 |テナントの Microsoft 365 グループの使用  <br/> |メールボックス、SharePoint、Yammer など、Microsoft 365 グループの使用法に関するデータが保存されています。  <br/> |12 か月連続の期間 (現在のところ、まだ終わっていない月を含む) のデータの月末の状態が含まれています。  <br/> |
-|Tenant Office Activation (テナントの Office ライセンス認証)  <br/> |Office サブスクリプションのライセンス認証の数、デバイス別 (Android/iOS/Mac/PC) のライセンス認証の数、サービス プラン別 (Office Proplus、Visio、Project など) のライセンス認証に関するデータが含まれています。  <br/> |12 か月連続の期間 (現在のところ、まだ終わっていない月を含む) のデータの月末の状態が含まれています。  <br/> |
+|Tenant Office Activation (テナントの Office ライセンス認証)  <br/> |Office サブスクリプションのライセンス認証数、デバイスごとのライセンス認証数 (Android/iOS/Mac/PC)、サービスプランによるライセンス認証の数に関するデータが含まれます。たとえば、Microsoft 365 Apps for enterprise、Visio、Project などです。  <br/> |12 か月連続の期間 (現在のところ、まだ終わっていない月を含む) のデータの月末の状態が含まれています。  <br/> |
 |User State (ユーザーの状態)  <br/> |ユーザーの表示名、割り当てられた製品、場所、部署、役職、会社など、ユーザーに関するメタデータが含まれます。このデータは、最後に完了した月の間にライセンスを割り当てられたユーザーに関するものです。すべてのユーザーはユーザー ID で一意に表されます。  <br/> |このデータは、完了した最後の月にライセンスを割り当てられたユーザーに関するものです。  <br/> |
 |User Activity (ユーザー アクティビティ)  <br/> |ライセンスを取得したユーザーが実行したアクティビティに関するユーザーごとの情報が含まれています。  <br/> このデータ表で返される、ある製品内のアクティビティに関する情報については、[アクティブ ユーザーの定義](active-user-in-usage-reports.md)に関するページを参照してください。  <br/> |このデータは、完了した最後の月の間、何らかのサービスでアクティビティを実行したユーザーに関するものです。  <br/> |
    
@@ -152,7 +152,7 @@ Microsoft 365 usage analytics は、多次元データモデルを公開する A
 |ActiveUsers  <br/> |Timeframe 値において製品で意図的なアクティビティを実行したユーザーの数です。  <br/> ユーザーは、製品で主要なアクティビティのいずれかを実行した場合、特定の月にその製品に対してアクティブとしてカウントされます。主要なアクティビティの一覧は、 **Tenant Product Activity** テーブルに示されています。  <br/> |
 |CumulativeActiveUsers  <br/> |製品の使用が許可され、新しい利用状況システムでデータ回収が開始してから少なくとも 1 回は製品を使用したユーザーの数を時間枠の最大値まで累積したものです。  <br/> |
 |MoMReturningUsers  <br/> |Timeframe の月でアクティブになっており、前月もアクティブであったユーザーの数です。  <br/> |
-|FirstTimeUsers  <br/> |新しい利用状況システムのデータ回収以後、Timeframe で初めてアクティブになったユーザーの数です。  <br/> ユーザーは、この新しいレポート システムでのデータ収集開始以降初めてアクティビティが検出された場合に、特定の月の初めてのユーザーとしてカウントされます。初めてのユーザーとしてカウントされた場合、このユーザーは、ユーザーのアクティビティに大きなギャップを持っている場合でも、初めてのユーザーとしてもう一度カウントされることはありません。  <br/> |
+|FirstTimeUsers  <br/> |新しい利用状況システムのデータ回収以後、Timeframe で初めてアクティブになったユーザーの数です。  <br/> ユーザーは、この新しいレポート システムでのデータ収集開始以降初めてアクティビティが検出された場合に、特定の月の初めてのユーザーとしてカウントされます。 初めてのユーザーとして数えられた場合、このユーザーはアクティビティに大きな隙間がある場合でも、初めてのユーザーとしてカウントされることはありません。  <br/> |
 |Content Date  <br/> |Timeframe が現在の月を示している場合、この値はデータが利用できる現在の月の最後の日付を表します。  <br/> Timeframe が前月を示している場合、この値は Timeframe の月の最後の日付を表します。  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>データ テーブル - Tenant Product Activity (テナント製品のアクティビティ)
@@ -277,7 +277,7 @@ Microsoft 365 usage analytics は、多次元データモデルを公開する A
    
 ### <a name="data-table---tenant-office-activation"></a>データ テーブル - Tenant Office Activation(テナントの Office ライセンス認証)
 
-このテーブルは、Office Proplus、Visio、Project など、各種サービス プラン全体の Office サブスクリプション ライセンス認証数に関するデータを提供します。デバイス (Android/iOS/Mac/PC) 別のライセンス認証数に関するデータも提供します。
+この表は、サービスプラン全体にわたる Office サブスクリプションのライセンス認証数に関するデータを提供します。たとえば、企業用の Microsoft 365 アプリ、Visio、Project などです。 デバイス (Android/iOS/Mac/PC) 別のライセンス認証数に関するデータも提供します。
   
 |**列名**|**列の説明**|
 |:-----|:-----|

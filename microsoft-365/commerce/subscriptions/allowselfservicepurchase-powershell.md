@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスの購入をオンまたはオフにする方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e9f9e3ee87f62b903e4bf7069f31319253de62d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6c0bcec70eab4266674ca2a22f1b2054807a26e8
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080344"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011677"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールで AllowSelfServicePurchase を使用する
 
@@ -33,7 +33,7 @@ ms.locfileid: "42080344"
 - 適用可能な製品の一覧、およびセルフサービス購入が有効か無効かを表示する
 - 特定の製品の現在の設定を表示または変更して、有効にするか無効にするかを指定します。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 **MSCommerce** PowerShell モジュールを使用するには、次のものが必要です。
 
@@ -135,11 +135,11 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
     HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
     connection was closed: An unexpected error occurred on a send.
 
-これは、以前のバージョンのトランスポート層セキュリティ (TLS) が原因である可能性があります。 このサービスを接続するには、TLS 1.2 以上を使用する必要があります。
+これは、トランスポート層セキュリティ (TLS) の古いバージョンが原因である可能性があります。 このサービスを接続するには、TLS 1.2 以上を使用する必要があります。
 
 **解決方法**
 
-TLS 1.2 にアップグレードします。[https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
+TLS 1.2 にアップグレードします。[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

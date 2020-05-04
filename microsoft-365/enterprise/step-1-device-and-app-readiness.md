@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のデバイスとアプリの準備を評価する方法について説明します。
-ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636858"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011665"
 ---
 # <a name="step-1-device-and-app-readiness"></a>手順 1: デバイスとアプリの準備
 
@@ -89,7 +89,7 @@ Desktop Analytics は、エージェントレス型のプロセスを使用し�
 
 Desktop Analytics を使用して、ブラウザーベースの互換性の問題を評価することもできます。ユーザーがアクセスする Web サイトおよび Web アプリのうち、Active X コントロール、Browser Helper Objects、VBScript、または Microsoft Edge ブラウザーでサポートされていないその他の従来のテクノロジを依然として使用しているものを特定します。 ユーザーは、そのようなサイトに対しては引き続き Internet Explorer 11 を使用する必要があります。また、Enterprise Mode Site List Manager を使用し、[エンタープライズ モード サイト リスト](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)にサイトを追加することができます。
 
-さらに、Microsoft 365 Apps for enterprise への移行を円滑に進めるために、[Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) を利用して、アドインと Microsoft Visual Basic for Applications (VBA) マクロの互換性をテストすることもできます。
+さらに、Microsoft 365 Apps for enterprise への移行を円滑に進めるために、[Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps) を利用して、アドインと Microsoft Visual Basic for Applications (VBA) マクロの互換性をテストすることもできます。
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -105,7 +105,7 @@ Desktop Analytics を使用して、ブラウザーベースの互換性の問�
 
 Configuration Manager ソフトウェア インベントリは、クラウドベースの分析ソリューションを使ってデバイスとアプリの準備を整える方法に代わる手段です。 インストール数を使用したり、特定のコンピューターを詳細に調査したりして、互換性のテストと検証の優先順位を定め、パッケージ設定を使用してアプリケーション パッケージを Windows 10 互換として設定できます。 このオプションでは既知の互換性情報と Microsoft の分析サービスとを比較することはできませんが、優先度の高いアプリのより小さなセットを対象に手動テストを行うための効果的なソリューションになり得ます。 
 
-詳細については、「[Configuration Manager のソフトウェア インベントリの概要](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)」を参照してください。アプリケーション パッケージのプラットフォーム設定の要件については、「[Configuration Manager のパッケージとプログラム](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。
+詳細については、「[Configuration Manager のソフトウェア インベントリの概要](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)」を参照してください。アプリケーション パッケージのプラットフォーム設定の要件については、「[Configuration Manager のパッケージとプログラム](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。
 
 
 ## <a name="app-assure"></a>App Assure

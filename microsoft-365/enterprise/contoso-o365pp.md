@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Microsoft 365 Apps for enterprise を展開する方法について説明します。
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625256"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011889"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 社の Microsoft 365 Apps for enterprise の展開
 
@@ -40,7 +40,7 @@ Contoso 社では自社の要件に基づいて、Configuration Manager (Current
 - 高度な言語パックの展開。オペレーティング システムと同じ言語の自動展開を含みます
 - 展開時にクライアントから既存のバージョンの Office を削除する方法を完全にサポートし、簡単に使用できるようにします
 
-Configuration Manager のほかに、Contoso 社では[準備ツールキット](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)も使用しました。これは、Office マクロとアドインとの互換性の問題を評価する Microsoft の無料ツールです。
+Configuration Manager のほかに、Contoso 社では[準備ツールキット](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)も使用しました。これは、Office マクロとアドインとの互換性の問題を評価する Microsoft の無料ツールです。
 
 ## <a name="managing-the-deployment-and-updates"></a>展開および更新プログラムの管理
 
@@ -51,7 +51,7 @@ Microsoft 365 Apps for enterprise には、サービスとしての Office と�
 
 Configuration Manager を使用して Office の更新を管理する代わりに、Contoso 社ではクラウドからの自動更新を有効にしました。クラウドベースの更新は、デバイスを最新の状態に保ちながら、管理上のオーバーヘッドを削減しました。 
 
-Contoso 社では Office の展開に使用した 2 段階アプローチ、つまりパイロット グループ内のデバイスが組織の残り (広範グループ) のデバイスよりも 4 か月早く機能の更新を受け取る方法と同じアプローチを機能の更新にも使用しました。これを Office で可能にするために、Contoso 社では 2 つの推奨される[更新チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)を使用しました。 
+Contoso 社では Office の展開に使用した 2 段階アプローチ、つまりパイロット グループ内のデバイスが組織の残り (広範グループ) のデバイスよりも 4 か月早く機能の更新を受け取る方法と同じアプローチを機能の更新にも使用しました。これを Office で可能にするために、Contoso 社では 2 つの推奨される[更新チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels)を使用しました。 
 
 - パイロット グループ用の半期チャネル (対象指定) 
 - 広範グループ用の半期チャネル。 

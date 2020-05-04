@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: fe98df2c64bca36bc44c30bddb8b5e53d25aa6a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ac1491a9257ff7169c0e2a10b014897d47a5d14b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634558"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011841"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティポータルと管理センター
 [Microsoft 365 セキュリティセンター](overview-security-center.md)は、id、データ、デバイス、およびアプリのセキュリティを監視および管理するための新しいホームですが、特定の特別なタスクについてはさまざまなポータルにアクセスする必要があります。
@@ -52,5 +52,5 @@ ms.locfileid: "43634558"
 | Azure portal | [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)と azure のすべての[リソース](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)を表示および管理する  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 コンプライアンス センター | データ処理ポリシーを管理し、[規制に準拠](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide)していることを確認する | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 管理センター | Microsoft 365 サービスを構成します。Microsoft 365 サービスの役割、ライセンス、および更新プログラムを管理する | [admin.microsoft.com](https://admin.microsoft.com/) |
-| Microsoft エンドポイントマネージャー管理センター | [Microsoft エンドポイントマネージャー](https://docs.microsoft.com/configmgr/)を使用して、統合された Intune および構成マネージャーの機能を使用してデバイスを管理およびセキュリティ保護する | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
+| Microsoft エンドポイント マネージャー管理センター | [Microsoft エンドポイントマネージャー](https://docs.microsoft.com/mem/configmgr/)を使用して、統合された Intune および構成マネージャーの機能を使用してデバイスを管理およびセキュリティ保護する | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune ポータル | [Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune)を使用してデバイスポリシーを展開し、デバイスのコンプライアンスを監視する | [portal.azure.com/#blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)

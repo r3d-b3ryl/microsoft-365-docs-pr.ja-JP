@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織が Microsoft 365 サービスを採用して通信および共同作業を行う方法の概要について説明します。
-ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626936"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011761"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 ---
@@ -71,7 +71,7 @@ Microsoft 365 の概要レポートには、次のレポートが含まれてい
 
 [アクティブ化とライセンス] ページでは、Microsoft 365 ライセンス認証に関するレポートが提供されます。つまり、Office アプリをダウンロードしてアクティブ化したユーザーの数と、組織によって割り当てられたライセンスの数を示します。 上方向の月の値は現在の月を参照し、指標には月の最初から現在の日付まで集計された値が反映されます。
 
-- **ライセンス認証** &ndash;トラックサービスプラン (たとえば、Microsoft 365 ProPlus、Project、Visio) が組織内でアクティブ化されています。 Office のライセンスを持つ各ユーザーは、最大 5 つのデバイスに製品をインストールできます。 このセクションのレポートを使用して、ユーザーが Office アプリをインストールしたデバイスを確認することもできます。 プランをアクティブにするには、ユーザーがアプリをインストールし、アカウントを使用してサインインする必要があることに注意してください。
+- **ライセンス認証** &ndash;トラックサービスプラン (たとえば、Microsoft 365 Apps for enterprise、Project、および Visio) は、組織内でライセンス認証を行います。 Office のライセンスを持つ各ユーザーは、最大 5 つのデバイスに製品をインストールできます。 このセクションのレポートを使用して、ユーザーが Office アプリをインストールしたデバイスを確認することもできます。 プランをアクティブにするには、ユーザーがアプリをインストールし、アカウントを使用してサインインする必要があることに注意してください。
 
 - **Licensing** &ndash;このレポートには、ライセンスの種類の概要、各ライセンスの種類が割り当てられているユーザーの数、各月のライセンス割り当ての配分が含まれています。 上方向の月の値は現在の月を参照し、指標には月の最初から現在の日付まで集計された値が反映されます。
 

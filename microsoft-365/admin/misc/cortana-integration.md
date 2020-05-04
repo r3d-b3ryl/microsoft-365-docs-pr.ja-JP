@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'Cortana を使用する方法については、「Office 365 と統合されている場合」を参照してください。 管理センターで Cortana をオフにして、組織のデータへのアクセスを制限することができます。 '
-ms.openlocfilehash: 768abeed4bf40255e9dd7c6e09e20122523a943d
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 5f1d225e8cf7378bf4548fbbc705cf4ca6c2c63b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907215"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011689"
 ---
 # <a name="cortana-in-office-365"></a>Office 365 の Cortana
 
@@ -106,7 +106,7 @@ Cortana は、作成したタスクやコミットメントを使用して個人
 
 3. 例として、電子メールを再生することは、ユーザーが Outlook を使用して iOS 用の Outlook 経由で接続し、Office 365 で Cortana を利用できる Cortana サービスです。
 
-4. 管理者は、Office ProPlus アプリケーションを使用しているときにオプションの接続エクスペリエンスと同様に、Cortana のオプションの接続エクスペリエンスに関するコントロールを常に備えています。
+4. 管理者は、Microsoft 365 Apps for enterprise アプリケーションを使用している場合と同様に、Cortana のオプション接続エクスペリエンスの制御を常に備えています。
 
 **コンシューマー向けの既存のサービス**: Cortana オプション接続サービスは、主にコンシューマーエクスペリエンスを目的として設計されており、Windows 10 (バージョン1909以前) および IOS および Android 上の Cortana アプリで現在提供されています。
 

@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636476"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011937"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでの更新プログラムの処理方法
 
@@ -61,10 +61,10 @@ Microsoft マネージドデスクトップでは、次の4つの Azure AD グ�
 <tr><td>オペレーティングシステムの機能更新プログラム</td><td>0日</td><td>30 日間</td><td>60 日</td><td>90 日間</td></tr>
 <tr><td>ドライバー/ファームウェア</td><td colspan="4">品質更新プログラムのスケジュールに従います。</td></tr>
 <tr><td>ウイルス対策の定義</td><td colspan="4">各スキャンで更新</td></tr>
-<tr><td>エンタープライズ向け Microsoft 365 アプリ</td><td colspan="4">Office の月次チャネルに従う
+<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Office の月次チャネルに従う
 </table>
 
-毎月の Microsoft 365 アプリ for enterprise の月次チャネルの詳細については、「 [microsoft 365 apps for enterprise の更新プログラムチャネルの概要](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus)」を参照してください。
+毎月の Microsoft 365 アプリ for enterprise の月次チャネルの詳細については、「 [microsoft 365 アプリの更新プログラムチャネルの概要](https://docs.microsoft.com/deployoffice/overview-update-channels)」を参照してください。
 
 >[!NOTE]
 >この遅延期間は、すべてのユーザーに対して高セキュリティとパフォーマンス標準を確実にするために意図的に設計されています。 さらに、Microsoft マネージドデスクトップのすべてのデバイスで収集されたデータと、更新プログラムのさまざまな範囲と影響に基づいて、Microsoft マネージドデスクトップは、ad hoc ですべての展開グループに対して上記の遅延期間の長さを変更するための柔軟性を確保しています。

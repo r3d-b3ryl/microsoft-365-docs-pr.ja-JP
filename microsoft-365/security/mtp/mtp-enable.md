@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
-ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997516"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011865"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -36,7 +36,7 @@ Microsoft Threat Protection は、Microsoft Defender Advanced Threat Protection 
 最適な保護を実現し、Microsoft の脅威保護を最適化するには、ネットワークにすべての該当するサポートされているサービスを展開することをお勧めします。 詳細については、「[サポートされるサービスの展開について](deploy-supported-services.md)」を参照してください。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>ライセンスの利用資格と必要なアクセス許可を確認する
-Microsoft 365 E5、E5 セキュリティ、A5、または A5 セキュリティライセンス、あるいはライセンスの有効な組み合わせは、サポートされるサービスへのアクセスを提供し、Microsoft 365 セキュリティセンターで Microsoft の脅威保護を使用することができます。
+Microsoft 365 E5、E5 セキュリティ、A5、または A5 セキュリティライセンス、あるいはライセンスの有効な組み合わせによって、サポートされているサービスへのアクセスが可能になり、ライセンス料を追加することなく microsoft 365 セキュリティセンターで Microsoft の脅威保護を使用できるようになります。
 
 ライセンスの詳細については、[ライセンス要件を参照して](prerequisites.md#licensing-requirements)ください。
 
@@ -44,22 +44,28 @@ Microsoft 365 E5、E5 セキュリティ、A5、または A5 セキュリティ�
 Microsoft の脅威保護を有効にするには、Azure Active Directory の**グローバル管理者**または**セキュリティ管理者**である必要があります。 [Azure AD でのロールの表示](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>サービスの使用を開始する
-Microsoft の脅威保護は、さまざまな統合サービスからのデータを集約します。 データを一元的に処理および保存して、新しい洞察を識別し、集中管理された応答ワークフローを実現できるようにします。
+
+>[!IMPORTANT]
+>2020年5月3日、マイクロソフトは、[ライセンス要件](prerequisites.md#licensing-requirements)に関して最適化された新しいエクスペリエンスを徐々にロールアウトし、Microsoft の脅威保護を有効にします。 この期間中、一部のお客様は、ポータルエクスペリエンスへの変更を確認し始めます。 この記事では、新しいエクスペリエンスに関する情報を**新しいエクスペリエンス**としてマークしています。
+
+Microsoft の脅威保護は、さまざまな統合サービスからのデータを集約します。 データを一元的に処理および保存して、新しい洞察を識別し、集中管理された応答ワークフローを実現できるようにします。 これは、統合サービスに関連付けられている既存の展開、設定、またはデータに影響を与えることなく実行されます。
 
 サービスを有効にする前に、「Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com))」では、[**インシデント**]、[**アクションセンター**]、または**Hunting** [ナビゲーション] ウィンドウから選択したときに microsoft Threat Protection のウェルカムページが表示されます。 これらのナビゲーションオプションは、Microsoft の脅威保護を使用する資格がない場合は表示されません。
 
 ![Microsoft](../../media/mtp-welcome.png)
 *365 セキュリティセンター*の microsoft threat protection のウェルカムページに microsoft threat protection が有効になっていない場合に表示される、microsoft threat protection のウェルカムページの画像
 
-Microsoft の脅威保護を有効にするには、単にウェルカムページからプロセスを完了します。 ナビゲーションウィンドウで [**設定**] ([security.microsoft.com/settings](https://security.microsoft.com/settings)) にアクセスし、[ **microsoft threat protection**] を選択することによって、microsoft の脅威保護を有効にすることもできます。 **[保存]** をクリックします。
+Microsoft の脅威保護を有効にするには、単にウェルカムページからプロセスを完了します。 ナビゲーションウィンドウで [**設定**] ([security.microsoft.com/settings](https://security.microsoft.com/settings)) にアクセスし、[ **microsoft threat protection**] を選択することによって、microsoft の脅威保護を有効にすることもできます。
 
 >[!NOTE]
->ナビゲーションウィンドウに**設定**が表示されない場合や、ページにアクセスできなかった場合は、アクセス許可とライセンスを確認してください。
+>ナビゲーションウィンドウに**設定**が表示されない場合や、ページにアクセスできなかった場合は、アクセス許可とライセンスを確認してください。       
 
 ### <a name="select-data-center-location"></a>データセンターの場所を選択する
 Microsoft Defender ATP が組織にプロビジョニングされている場合、データは、[Microsoft Defender ATP データ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)用に選択した同じデータ センターの場所に保存および処理されます。 Microsoft Defender ATP がない場合は、Microsoft Threat Protection 専用の新しいデータ センターの場所を選択するよう求められます。 
-
+ 
 サービス間でデータを共有し、集約する前に、同意を得る必要があります。
+
+**新しい作業:** 2020年5月3日から、ユーザーはこの操作に対する変更を段階的に受け取ります。 新しい環境では、このサービスによって、既存の Microsoft 365 セキュリティサービスに基づいて、集計データに最適なデータセンターの場所が自動的に選択されます。 選択したデータセンターの場所が画面に表示されます。
 
 ### <a name="confirm-that-the-service-is-on"></a>サービスが有効になっていることを確認する
 サービスがプロビジョニングされると、次の機能が追加されます。

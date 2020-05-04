@@ -1,5 +1,5 @@
 ---
-title: 新機能を使用して新しい機能を表示または非表示にする
+title: 新機能管理を使用して新機能を表示または非表示にする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Office デスクトップアプリの新機能である office デスクトップアプリのエンドユーザーに対して、どの機能とその新しいコンテンツを表示するか、または非表示にするかを決定します。
-ms.openlocfilehash: de4191529c58dd471c6f24e86bdff2177a38b51d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131978"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011701"
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>新機能を使用して新しい機能を表示または非表示にする
+# <a name="show-or-hide-new-features-using-whats-new-management"></a>新機能管理を使用して新機能を表示または非表示にする
 
 Office の新機能 Win 32 では、組織は Office デスクトップアプリのエンドユーザーに対して表示する機能を決定することができます。 Office の各リリースには新機能と強化された機能が含まれており、コンテンツプレビューを使用すると、各リリースバージョンおよびチャネルの新しいコンテンツを表示したり、各機能に関する新しいコンテンツをエンドユーザーに対して表示するかどうかを選択したりできます。 
 
@@ -62,7 +62,7 @@ Office には、このスケジュールに基づいて新しい機能が追加�
 |**半期 (対象指定)** <br/> |9月1日と3月1日 <br/> | 新機能をもたらすメジャーリリースの2週間前
 |**半期** <br/> |1月1日と7月1日 <br/> | 新機能をもたらすメジャーリリースの2週間前<br/> |
 
-チャネル更新スケジュールの詳細については、「 [Office 365 ProPlus の更新履歴 (日付別の一覧)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)」を参照してください。
+チャネル更新スケジュールの詳細については、「 [Microsoft 365 アプリの更新履歴 (日付別の一覧)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637991"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011830"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 
@@ -45,7 +45,7 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - Intune
 - [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Azure と Office 365 の HITRUST CSF 証明書は、2年間有効です。
 
@@ -82,7 +82,7 @@ HITRUST MyCSF ツールで、Azure の完全に継承または共有の責任の
 
 **Office 365 の範囲内のサービスとは何ですか。**
 
-HITRUST CSF 認定のスコープ内サービスには、Exchange Online のアーカイブ、Exchange Online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft Teams、office ProPlus in Office 365 マルチテナントクラウドおよび Office 365 GCC があります。
+HITRUST CSF 認定のスコープ内サービスには、Exchange Online のアーカイブ、Exchange online Protection、Exchange Online、Skype for Business、管理センター、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft Teams、Office 365 マルチテナントクラウドおよび Office 365 GCC のエンタープライズ向け Microsoft 365 アプリがあります。
 
 > [!NOTE]
 > Microsoft 365 enterprise 用アプリは、ローミング設定、ライセンス、OneDrive コンシューマークラウドストレージなどのさまざまなクラウドサービスへのアクセスを可能にし、将来、追加のクラウドサービスへのアクセスを可能にする場合があります。 ローミングの設定とライセンスは、HITRUST の標準をサポートします。 OneDrive コンシューマークラウドストレージではサポートされていません。また、microsoft が将来的に提供する可能性があるその他のクラウドサービスで365は、これらの標準をサポートしていない場合もあります。 *
@@ -103,13 +103,13 @@ Office 365 のような SaaS にデータを格納すると、Microsoft と組�
 
 HITRUST MyCSF®ツールにログインして、Microsoft Azure でホストされているソリューションの評価を事前に設定します。これには、完全に継承された Azure または共有責任のコントロールがあります。 Microsoft HITRUST 管理者は、MyCSF®ツールで自分のアカウントを使用して、評価の各部分を完了します。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [HITRUST アライアンス](https://hitrustalliance.net/)
 - [HITRUST CSF 9.3](https://hitrustalliance.net/csf-license-agreement/)
 - [CSF の理解と活用](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [HITRUST 共有責任プログラムの詳細については、「」を参照してください。](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
 

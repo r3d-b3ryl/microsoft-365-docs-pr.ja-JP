@@ -1,5 +1,5 @@
 ---
-title: 一元展開の FAQ
+title: 一元展開に関する FAQ
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターからの一元展開についてよく寄せられる質問に対する回答を確認してください。
-ms.openlocfilehash: 39df2ec5a1671f800572bc845581bdbe2716d209
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209666"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011737"
 ---
-# <a name="centralized-deployment-faq"></a>一元展開の FAQ
+# <a name="centralized-deployment-faq"></a>一元展開に関する FAQ
 
 一元展開は、Office 365 管理者が Office アドイン (Word、Excel、PowerPoint、および Outlook) を組織内のユーザーとグループに展開する場合に推奨される方法です。これは、この記事で説明されているように、一元展開を使用するためのすべての要件を組織が満たしている場合です。   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>組織で一元展開が設定されているかどうかを確認する方法  
 
-アドインを一元展開するには、ユーザーが Office 365 ProPlus (組織のログイン資格情報を使用して Office にサインインしており、Exchange Online メールボックスを持っている必要があります) を使用する必要があります。 サブスクリプションディレクトリは、Azure Active Directory に存在するか、フェデレーションされている必要があります。  
+アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise (組織のログイン資格情報を使用して Office にサインインしている) を使用しており、Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、Azure Active Directory に存在するか、フェデレーションされている必要があります。  
  
 一元展開は、オンラインメールボックスでのみサポートされます。 オンプレミスの Exchange メールボックスへの展開はサポートされていません。
  

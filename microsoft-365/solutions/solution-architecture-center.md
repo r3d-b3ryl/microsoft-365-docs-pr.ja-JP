@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 ソリューションおよびアーキテクチャセンター
-description: 説明
+description: セキュリティで保護された最新のコラボレーションを実現するために、統合された Microsoft 365 ソリューションを理解、計画、および実装するために必要な技術ガイダンスを入手できます。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 3442e51a3487be859ba546f5be2cab6e8e574de4
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: d621586e5ff50bce7be68117a940fc54607362c2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002942"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011749"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャセンター
 
@@ -34,7 +34,7 @@ ms.locfileid: "44002942"
 
 ![クラウドおよびルーラーの](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png)シンボル**[ソリューションとアーキテクチャの図](productivity-illustrations.md)** では、microsoft 365 の機能および microsoft 365 のクラウドサービスのアーキテクチャを理解するためにこれらの図を表示またはダウンロードできます。
 
-![ベストプラクティスリボン](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[業界固有のガイダンス](industry-specific-guidance-overview.md)** では、業界-金融、医療、教育機関向けのベストプラクティスについて説明します。
+![ベストプラクティスリボン](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[業界固有のガイダンス](industry-specific-guidance-overview.md)** では、業界のベストプラクティス (金融、医療、教育) を確認できます。
 
 ![レイアウト/ナビゲーションシンボル](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **[設計原則](design-principles.md)** は、ネットワーク、id、セキュリティ、および多国籍アーキテクチャについて理解するために必要な主な原則について理解します。
 
