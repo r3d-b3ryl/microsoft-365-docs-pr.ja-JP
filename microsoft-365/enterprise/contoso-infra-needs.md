@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
-ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625292"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011199"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
 
@@ -110,7 +110,7 @@ Contoso 社のビジネス ニーズは、5 つの主なカテゴリに分類さ
 
 - クライアント PC とデバイスで実行されているソフトウェアを管理するために、IT オーバーヘッドを削減します。
 
-  組織全体で Windows オペレーティング システムと Microsoft Office ProPlus への更新プログラムのインストールを自動化します。
+  組織全体で Windows オペレーティング システムと Microsoft 365 Apps for enterprise の更新プログラムのインストールを自動化します。
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Contoso 社のビジネス ニーズを Microsoft 365 Enterprise にマッピングする
 

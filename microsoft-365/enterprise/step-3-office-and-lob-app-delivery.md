@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Office および LOB アプリの配信方法について説明します。
-ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab40e59face9e8c4b37db15a9c815ea5579b4a2c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636798"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011641"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>手順 3: Office および LOB アプリの配信
 
@@ -63,9 +63,9 @@ Microsoft Endpoint Configuration Manager や Microsoft Intune などのソフト
 
 イメージに Microsoft 365 Apps for enterprise を含める必要がある場合は、ユーザー ベースのライセンス認証を使用することになります。システム管理者が事前にライセンス認証することはできません。Office 展開ツールを使用して、イメージングするデバイスに Office をプレインストールして、ユーザー サインインをスキップします。 イメージが展開されたら、エンド ユーザーは自分の資格情報を使用してサインインし、Microsoft 365 Apps for enterprise をアクティブ化することができます。
 
-[オペレーティング システムをインストールするタスク シーケンスの作成](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[オペレーティング システムをインストールするタスク シーケンスの作成](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[オペレーティング システム イメージの一部としての Microsoft 365 Apps for enterprise の展開](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[オペレーティング システム イメージの一部としての Microsoft 365 アプリの展開](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office クイック実行 
 
@@ -81,11 +81,11 @@ Configuration Manager は、引き続き Microsoft 365 Apps for enterprise の�
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Microsoft 365 Apps for enterprise の展開ガイド](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 Apps の展開ガイド](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Microsoft 365 Apps for enterprise にアップグレードする際に Office の既存の MSI バージョンを削除する](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Microsoft 365 Apps にアップグレードする際に既存の MSI バージョンの Office を削除する](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Configuration Manager を使用して Microsoft 365 Apps for enterprise を管理する](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Configuration Manager を使用して Microsoft 365 Apps for enterprise を管理する](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる](https://docs.microsoft.com/intune/apps-add-office365)
 

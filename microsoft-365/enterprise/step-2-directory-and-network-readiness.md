@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のディレクトリとネットワークの準備状況を評価する方法について説明します。
-ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636810"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011653"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>手順 2: ディレクトリとネットワークの準備
 
@@ -51,7 +51,7 @@ Windows 10 および Microsoft 365 Apps for enterprise への移行に伴い、�
 
 組織が既に Office 365、Exchange Online、Microsoft Intune、またはその他の Microsoft オンライン サービスを使用している場合は、既に Azure Active Directory を使用しています。 その場合に必要なことは、デスクトップ展開の対象としているユーザーが Azure Active Directory に存在していて、ライセンスが割り当てられていることを確認することだけです。
 
-現在 Azure Active Directory を使用していない場合、セットアップに役立つ[多数のリソース](https://docs.microsoft.com/azure/active-directory/)を利用できます。 ライセンスの一部として、Microsoft FastTrack 経由で個人向けのサポートも利用できる場合があります。 Microsoft Fastrack の詳細は[こちら](https://fasttrack.microsoft.com)で確認できます。
+現在 Azure Active Directory を使用していない場合、セットアップに役立つ[多数のリソース](https://docs.microsoft.com/azure/active-directory/)を利用できます。 ライセンスの一部として、Microsoft FastTrack 経由で個人向けのサポートも利用できる場合があります。 Microsoft FastTrack の詳細は[こちら](https://fasttrack.microsoft.com)で確認できます。
 
 Azure Active Directory を配置したら、対象ユーザーは Microsoft 365 Apps for enterprise アプリにサインインしてライセンス認証を行うことができます。また、Microsoft Intune や Windows AutoPilot Deployment を使用して、アプリとポリシーを自動展開できます。
 
@@ -121,7 +121,7 @@ Configuration Manager でサポートされている**ピア キャッシュ**�
 
 **バイナリ デルタ圧縮**: Office 365 ProPlus では、バイナリ デルタ圧縮を使用して、Microsoft 365 Apps for enterprise の最新リリースから次のリリースに更新するときにソフトウェアの更新によって消費される帯域幅を削減します。前のリリースからのバイナリ レベルの変更のみを引き出すことで、累積的な更新プログラムによる毎月のサイズ膨張の影響を最小限に抑えることができます。これにより、PC ごとに、毎月数百 MB のデータを節減できる可能性があります。ただし、この機能を使用する場合、リリースをスキップすることはできません。スキップしたい場合は、完全な累積的更新プログラムをダウンロードする必要があります。
 
-[Office 365 ProPlus の更新プログラムをダウンロードする](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Microsoft 365 アプリの更新プログラムのダウンロード](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
 **Outlook データ ファイル** 多くの場合、Outlook はユーザーのメール ボックス全体をローカルにキャッシュし、オフラインで使用するように構成されています。 インプレース アップグレード以外の Windows の展開では、アップグレード後にユーザーの Outlook データ ファイルを再構築する必要があります。 これは自動化されたプロセスですが、Outlook メールボックスの制限値を通常どおり最大 100 GB に設定した場合、すべてのユーザーのローカルのメールボックス全体を再キャッシュすると大量のデータ転送が発生します。 ネットワーク負荷を軽減するには、グループ ポリシーを使用して [オフラインにしておくメール] の設定値を小さくすることを検討してください。 Microsoft 365 Apps for enterprises または Outlook 2016 の Outlook では、既定値は 12 か月に設定されています。 オフライン キャッシュを直近 1 ～ 6 か月の間に設定することを検討してください。 この設定を変更してもオンライン メールボックスのサイズには影響しませんし、オンラインの時に Outlook 経由でメールボックス全体を検索することもできます。
 

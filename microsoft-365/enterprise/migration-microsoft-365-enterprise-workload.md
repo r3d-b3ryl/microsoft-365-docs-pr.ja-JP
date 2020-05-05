@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631539"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011797"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
 
@@ -49,7 +49,7 @@ ms.locfileid: "43631539"
 - Microsoft クラウド テクノロジを活用しビジネスをデジタルに変換するうえで、最適ではありません。
 - 新機能は含まれません。
  
-Microsoft 365 Enterprise には、Microsoft 365 Enterprise ライセンスで利用でき、Microsoft クラウドからインストールおよび更新される Office クライアント製品のバージョンである Microsoft 365 Apps for enterprise が含まれています。 Microsoft 365 Apps for enterprise には、セキュリティ更新プログラムおよび最新機能が含まれます。 詳細については、[企業向けの Microsoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)を参照してください。
+Microsoft 365 Enterprise には、Microsoft 365 Enterprise ライセンスで利用でき、Microsoft クラウドからインストールおよび更新される Office クライアント製品のバージョンである Microsoft 365 Apps for enterprise が含まれています。 Microsoft 365 Apps for enterprise には、セキュリティ更新プログラムおよび最新機能が含まれます。 詳細については、「[Microsoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)」を参照してください。
 
 ### <a name="office-2007"></a>Office 2007
 

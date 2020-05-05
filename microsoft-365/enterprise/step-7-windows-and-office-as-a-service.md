@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ご自身の環境でWindowsおよびOfficeのサービスを準備する方法を学びます。
-ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636737"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011617"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>ステップ7： WindowsとOfficeのサービス
 
@@ -83,7 +83,7 @@ Windows 10 と Microsoft 365 Apps for enterprise の両方で、新しいサー�
 
 [Configuration Manager を使用した Windows 10 更新プログラムの展開](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Configuration Manager を使用して Microsoft 365 Apps for enterprise を管理する](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Configuration Manager を使用して Microsoft 365 Apps for enterprise を管理する](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>WindowsとOfficeチャンネルの概要
 
@@ -103,7 +103,7 @@ Microsoft 365 は 4 つのサービスチャンネルを提供します。
 WindowsとOfficeのサービスチャネルの詳細については、以下のドキュメントを参照してください。
 
 - [サービスとしてのWindowsの概要](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Microsoft 365 Apps for enterprise 用更新プログラム チャネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Microsoft 365 Apps 用更新プログラム チャネルの概要](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>更新プログラムの段階的な展開
 
@@ -141,7 +141,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 [Windows の半期チャネル](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Microsoft 365 Apps for enterprise 半期チャネル](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Microsoft 365 Apps 半期チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>タスク シーケンスのアップグレード
 
@@ -153,7 +153,7 @@ Windows および Office の更新プログラム チャネルは、標準レベ
 
 Windows 7 のコンピューターを Windows 10 に移行するために既にタスク シーケンスを使用していて、それらのツールに精通している場合は、移行を開始することをお勧めします。移行後は操作性も格段に向上します。アップグレード全体で 1 つのみのタスク シーケンスを使用することはできますが、組織では 2 つのタスク シーケンスを使用するのが一般的です。1 つのタスク シーケンスは、コンピューターがアップグレードの準備ができていることを確認し、対象のコンピューター上に必要なセットアップ ファイルすべてを、ダイアログを表示せずに事前にステージングします。もう 1 つのタスク シーケンスは実際のアップグレードを行います。このアプローチにより、ユーザーの生産性の低下を防ぐことができます。
 
-[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Configuration Manager で OS をアップグレードするタスク シーケンスを作成する](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>機能の更新プログラム向けの半期チャネルのサポート
 

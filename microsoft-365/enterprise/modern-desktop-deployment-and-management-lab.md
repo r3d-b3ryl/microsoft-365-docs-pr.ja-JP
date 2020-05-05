@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631515"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011961"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -104,9 +104,9 @@ ms.locfileid: "43631515"
 ### <a name="windows-and-office-as-a-service"></a>サービスとしての Windows および Office
   - グループ ポリシーを使用した Windows Update の管理
   - Configuration Manager と Intune を使用した Windows 10 のサービス
-  - Configuration Manager を使用した Office 365 ProPlus のサービス
+  - Configuration Manager を使用した Microsoft 365 Apps for enterprise のサービス
 
-### <a name="new-windows-virtual-desktop"></a>新機能 Windows Virtual Desktop
+### <a name="new-windows-virtual-desktop"></a>新機能 ! Windows Virtual Desktop
   - Windows Virtual Desktop: 準備、展開、最適化 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード
@@ -121,11 +121,11 @@ ms.locfileid: "43631515"
 
   - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 
-  - [Microsoft Endpoint Configuration Manager OS の展開](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager OS の展開](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 の展開計画</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Microsoft 365 Apps for enterprise の展開ガイド</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Microsoft 365 アプリの展開ガイド</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Intune が会社のためにできることとは。</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

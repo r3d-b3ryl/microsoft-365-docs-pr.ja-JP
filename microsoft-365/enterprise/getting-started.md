@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップの展開プロセスの概要です。
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634220"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011877"
 ---
 # <a name="getting-started---desktop-deployment"></a>概要 - デスクトップの展開
 
@@ -53,7 +53,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 [IT 担当者向けの Windows 10](https://www.microsoft.com/itpro/windows-10)
 
-[企業向けのMicrosoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[Microsoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>変更点
 
@@ -67,7 +67,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 **クラウドベースのデバイス管理**: Microsoft Intune などのサービスは、他のモバイル デバイスと同様、Windows 10 デバイスを 1 か所から管理するのに役立ちます。 しかし、Microsoft Intune には、Microsoft Endpoint Configuration Manager で Windows 10 デバイスを共同管理するという独自の機能があります。 Configuration Manager を使用して Windows 10 に移行し、それから Microsoft Intune を追加することができます。 この連携を通じて、Microsoft Endpoint Configuration Manager は、Microsoft のインテリジェント クラウドに接続され、組織内のインテリジェント エッジになります。 管理者は、ユーザーのデバイスがどこにあっても安全に管理することができます。ユーザーが組織のインフラストラクチャに接続されているか、パブリック クラウドに接続されているかを問いません。
 
-[Windows 10 デバイスの共同管理](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Windows 10 デバイスの共同管理](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **クラウドベースの展開サービス**: 新しい PC を取得した際に、Microsoft 365 デバイスの導入に役立つ新しいクラウド サービスが導入されました。これは、Windows Autopilot 展開サービスと呼ばれます。 Autopilot はハードウェア プロバイダーと統合し、新しい PC は Autopilot に自動的に登録されます。このため、新しい PC をエンドユーザーに直接出荷することができます。 最初に PC の電源を入れると、組織の希望する設定にすばやく構成され、ユーザーの特定のニーズに合わせてカスタマイズされます。
 
@@ -77,7 +77,7 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 クイック実行は、過去の MSI ベースのパッケージとはまったく異なります。 クイック実行は今まで以上に速く軽く、バックグラウンドでの更新をサポートするため、ユーザーの起動および実行が維持されます。 それは引き続き Office のローカル コピーであり、Microsoft Endpoint Configuration Manager などの既存の展開ツールを使用した、アプリのプロビジョニングと構成も継続して行うことができます。
 
-[Microsoft 365 Apps for enterprise の展開ガイド](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 Apps の展開ガイド](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **半期の更新プログラム**: Windows 10 および Microsoft 365 Apps for enterprise に移行すると、新機能を備えた更新プログラムが半年ごとに配信されます。 Microsoft がクラウドから提供する洞察を活用すれば、これらの新機能の更新プログラムを数百または数千のデバイスにすばやく安心して展開することができます。 一括アップグレードと同様、機能更新プログラムは、以前のリリースからのアプリ、データ、設定を保持します。
 
@@ -109,14 +109,14 @@ Windows 10 と Microsoft のインテリジェンス クラウドを組み合わ
 
 **[Step 6: OS の展開と機能の更新プログラム](https://aka.ms/mdd6)**: 準備がすべて整ったら、次の手順は OS イメージを展開することです。複雑な作業の多くを、System Center Configuration Manager のタスク シーケンスとインフラストラクチャを使用して実行できます。推奨されるアプローチは、フェーズごとの展開です。代表的な一連のハードウェアとアプリケーションを使用して、最初に「早期採用グループ」を対象に設定し、展開を行います。その後、これらのデバイスやユーザーのデータを基に、展開の対象となる PC をさらに増やしていくことができます。
 
-[Configuration Manager のオペレーティング システムの展開の概要](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Configuration Manager のオペレーティング システムの展開の概要](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[手順 7: サービスとしての Windows および Office](https://aka.ms/mdd7)** これは、ユーザーのデスクトップ資産の維持方法に関する大きな変更を表しています。 Windows 10 および Microsoft 365 Apps for enterprise に移行すると、サービスとしての Windows および Office を管理することができます。 数年に一度の大規模なテクノロジの更新ではなく、新しい機能、エクスペリエンス、保護機能を継続してユーザーに提供します。 半期の機能更新プログラムは毎年秋と春に新しい機能を提供し、毎月の累積的な品質更新プログラムには、セキュリティ、信頼性、バグ修正プログラムが含まれます。 Office 2019 クライアントを展開することもできますが、Microsoft 365 Apps for enterprise に移行することを強くお勧めします。 これには Windows と同様のサービス プランが用意されており、ユーザーが Office アプリの更新プログラムを定期的に入手することもできます。
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [サービスとしての Windows の概要](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[サービスとしての Office の概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[サービスとしての Office の概要](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[手順 8: ユーザーのコミュニケーションとトレーニング](https://aka.ms/mdd8)** この最後の手順は、チームワーク、コミュニケーション、セキュリティなどを強化するための新しい機能を使用するうえで非常に重要です。 早期に採用している組織に属さないユーザーを対象とした広範囲の展開を行う場合は、展開前にユーザーのコミュニケーションとトレーニングを実施することをお勧めします。 これを実施すれば、Office、Windows、他の基幹業務アプリやサービスの新機能に関して、ユーザーは自分に適した活用方法を見つけることができます。 また、Microsoft FastTrack のオンライン トレーニングによる支援も行っています。 さらに、コミュニケーション プランとタイムラインの無料サンプルを、電子メール、ソーシャルおよびイントラネットのテンプレートとともに公開しています。これらは Windows 10 の展開に役立ちます。 Microsoft 365 または組織の場合は、直接サポートを受けることもできます。
 

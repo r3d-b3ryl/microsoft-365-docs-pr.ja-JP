@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 非エンタープライズ組織向けの、エンタープライズ向け Microsoft 365 基礎インフラストラクチャの簡略化されたフェーズを説明します。
-ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638262"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011901"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>非エンタープライズ組織のためのエンタープライズ向け Microsoft 365 の基礎インフラストラクチャ
 
@@ -215,7 +215,7 @@ Microsoft 365 E5 を利用している場合は、Azure AD Identity Protection �
 
 ## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>フェーズ 4: Microsoft 365 Apps for enterprise
 
-エンタープライズ向け Microsoft 365 には、Microsoft Office のサブスクリプション版である Microsoft 365 Apps for enterprise が含まれています。 Office 2016 または Office 2019 と同様に、Microsoft 365 Apps for enterprise はクライアント デバイスに直接インストールされます。 ただし、Microsoft 365 Apps for enterprise には、新機能を含む更新プログラムが定期的に提供されます。 詳細については、[企業向けのMicrosoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)を参照してください。
+エンタープライズ向け Microsoft 365 には、Microsoft Office のサブスクリプション版である Microsoft 365 Apps for enterprise が含まれています。 Office 2016 または Office 2019 と同様に、Microsoft 365 Apps for enterprise はクライアント デバイスに直接インストールされます。 ただし、Microsoft 365 Apps for enterprise には、新機能を含む更新プログラムが定期的に提供されます。 詳細については、「[Microsoft 365 Apps for enterprise について](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)」を参照してください。
 
 エンタープライズ以外の組織の場合は、 Microsoft 365 Apps for enterprise を Windows、iOS、Android デバイスを含むデバイスに手動でインストールします。 これは、新しいデバイスを使用する準備の一環として実行することも、ユーザーがオンボード プロセスの一環として実行することもできます。
 
