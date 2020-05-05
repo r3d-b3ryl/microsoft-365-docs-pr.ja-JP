@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 30374e603350ecf9d5e5542263f004a22ccb0a67
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 450dbcb08cd0636dae575ecd2d5e9abadc5ceb25
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981708"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022098"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Microsoft Project または microsoft Visio を Microsoft マネージドデスクトップデバイスにインストールする
 
@@ -39,9 +39,8 @@ Microsoft Project および Microsoft Visio では、Microsoft マネージド�
 
 Azure AD グループ名 | 割り当てるユーザー   
  --- | ---
-モダンワークプレース-Office-Project_Install | プロジェクトのみを必要とするユーザー
-モダンワークプレース-Office-Visio_Install | Visio のみを必要とするユーザー
-モダンワークプレース-Office-Visio_Project_Install | Project と Visio の両方を必要とするユーザー
+モダンワークプレース-Office-Project_Install | プロジェクトを必要とするユーザー
+モダンワークプレース-Office-Visio_Install | Visio を必要とするユーザー
 
 これらのグループに割り当てられると、アプリケーションは会社のポータルで利用できるようになります。 同期には数分かかる場合がありますが、ユーザーは会社のポータルからアプリをインストールできます。 
 

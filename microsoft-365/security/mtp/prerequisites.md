@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dfc2136f04ed128fc655386c6eef7b91c5e5ef3a
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 12e68cd8fcd7c784b1d0b4c70c5c25370cbbb409
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011277"
+ms.locfileid: "44016004"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -34,9 +34,6 @@ ms.locfileid: "44011277"
 Microsoft の脅威保護をプロビジョニングおよび使用するためのライセンス、ハードウェア要件、ソフトウェア要件、およびその他の構成設定について説明します。
 
 ## <a name="licensing-requirements"></a>ライセンス要件
-
->[!IMPORTANT]
->2020年5月3日、マイクロソフトは、ライセンス要件に関して最適化された新しいエクスペリエンスを徐々にロールアウトし、 [microsoft の脅威保護を有効に](mtp-enable.md)します。 この期間中、一部のお客様は、ポータルエクスペリエンスへの変更を確認し始めます。 この記事では、新しいエクスペリエンスに関する情報を**新しいエクスペリエンス**としてマークしています。
 
 Microsoft の脅威保護を使用するには、1つのライセンスまたはライセンスの組み合わせが必要です。 これらのライセンスまたはライセンスの組み合わせによって、追加のコストを必要とせずに Microsoft の脅威保護機能にアクセスできるようになります。
 
@@ -56,19 +53,6 @@ Microsoft の脅威保護を使用するには、1つのライセンスまたは
 詳細については、 [Microsoft 365 Enterprise service プランを参照して](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)ください。
 
 > まだライセンスを持っていませんか? [Microsoft 365 サブスクリプションを試用または購入する](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
-
-
-**新しい作業:** 2020年5月3日から、ユーザーはこの操作に対する変更を段階的に受け取ります。 新機能を使用する場合は、次のいずれかのライセンスを持つ*すべて*のお客様が Microsoft の脅威保護を有効にするオプションを利用できます。
-
-- Microsoft 365 E5 または A5
-- Microsoft 365 E5 セキュリティまたは A5 セキュリティ
-- Windows 10 Enterprise E5 または A5
-- Enterprise Mobility + Security (EMS) E5 または A5 
-- Office 365 E5 または A5
-- Microsoft Defender Advanced Threat Protection 
-- Azure Advanced Threat Protection 
-- Microsoft Cloud App Security 
-- Office 365 Advanced Threat Protection (プラン 2) 
 
 ### <a name="check-your-existing--licenses"></a>既存のライセンスを確認する
 Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com/)) に移動して、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。

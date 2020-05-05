@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011853"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022134"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性に関する図
 
@@ -121,16 +121,7 @@ Microsoft では、Microsoft クラウド内の Teams の使用を開始する�
 
 詳細については、このポスターの記事を参照してください: [Microsoft テレフォニー ソリューション](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)。
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Microsoft の最新のセキュリティで保護されたデスクトップの展開
-
-Windows 10 でエンタープライズ向け Microsoft 365 アプリ (旧称 Office 365 ProPlus) の更新プログラムの展開と管理について IT アーキテクトが知っておく必要のあるもの。
   
-
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Microsoft の最新のセキュリティで保護されたデスクトップの展開に関するモデルのサムネイル](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf) \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>2017年9月更新 | このモデルには次のものが含まれています。 <ul><li>  Microsoft cloud から Windows 10 および Microsoft 365 のエンタープライズ版アプリを展開する </li><li>  Microsoft エンドポイント構成マネージャーを使用して、Windows 10 および Microsoft 365 アプリをエンタープライズ向けに展開する </li><li>  Microsoft cloud から Windows 10 および Microsoft 365 のエンタープライズ用アプリの更新プログラムを管理する </li><li>  Microsoft エンドポイント構成マネージャーを使用して、Windows 10 および Microsoft 365 のエンタープライズ向けアプリの更新プログラムを管理する </li><li>  Windows 10 のすぐに使用可能な追加保護機能 </li></ul><br/> |
-   
 ## <a name="see-also"></a>関連項目
 
 [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)

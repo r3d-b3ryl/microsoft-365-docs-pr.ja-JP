@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Microsoft 365 グループ、Yammer グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900741"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943176"
 ---
 # <a name="content-search"></a>コンテンツ検索
 
@@ -302,6 +302,8 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
   検索結果では、会議の概要は "**種類**" フィールドで [**会議**] として識別されます。通話の概要は [**通話**] として識別されます。 また、Teams チャネルと 1xN チャットに含まれる会話は、"**種類**" フィールドで [**IM**] として識別されます。
   
   ![Teams の会議、通話および 1xN チャットは "種類" フィールドで識別されます。](../media/O365-ContentSearch-Teams-MessageKind.png)
+
+   詳細については、[Microsoft Teams が開始した通話と会議の電子情報開示](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947)を参照してください。
 
 - "**Kind**" 電子メール プロパティまたは "**メッセージの種類**" 検索条件を使用すると、Teams のコンテンツのみを検索できます。 
   

@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: "管理者向け: でアイテムを削除する \n\nExchange Online メールボックスの er の回復可能なアイテムフォルダー (そのメールボックスが法的情報保持に配置されている場合でも)。 これは、Microsoft 365 に誤ってこぼれたデータを削除する効果的な方法です。"
-ms.openlocfilehash: 0e6782c96efa997773b06535d5a0364100bd5433
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '管理者の場合: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除します (法的情報保留に設定されている場合も含む)。 これは、Microsoft 365 に誤ってこぼれたデータを削除する効果的な方法です。'
+ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630514"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022087"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
@@ -48,24 +48,24 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
 ## <a name="before-you-begin"></a>はじめに
 
 - コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[セキュリティ/コンプライアンス センターの電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」をご覧ください。
-    
+
 - この記事で説明する手順は、非アクティブなメールボックスではサポートされていません。 これは、削除した後、非アクティブなメールボックスに保持 (またはアイテム保持ポリシー) を再適用できないためです。 非アクティブなメールボックスからホールドを削除すると、その保留中のメールボックスは通常の回復可能な削除によって削除され、管理フォルダーアシスタントによる処理後は組織から完全に削除されます。
-    
+
 - 保持ロックでロックされているアイテム保持ポリシーに割り当てられているメールボックスに対してこの手順を実行することはできません。 これは、保持ロックによって、アイテム保持ポリシーからメールボックスを削除または除外したり、メールボックス上の管理フォルダーアシスタントを無効にしたりできないためです。 保持ポリシーのロックの詳細については、「[アイテム保持ポリシーのロック](retention-policies.md#locking-a-retention-policy)」を参照してください。
-    
+
 - メールボックスが保留になっていない (または単一アイテムの回復が有効になっていない) 場合は、回復可能なアイテムフォルダーからアイテムを削除することができます。 これを行う方法の詳細については、「[組織内での電子メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」を参照してください。
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>手順 1: メールボックスに関する情報を収集する
 
 最初の手順では、この手順に影響する、ターゲットメールボックスから選択したプロパティを収集します。 これらのプロパティの一部を変更し、[回復可能なアイテム] フォルダーからアイテムを削除した後に、手順6で元の値に戻すことができるように、これらの設定を書き留めておくか、テキストファイルに保存してください。 収集する必要があるメールボックスのプロパティの一覧を次に示します。
   
--  *Singleitemrecoveryenabled*および*RetainDeletedItemsFor* ;必要に応じて、1回の回復を無効にして、手順3で削除済みアイテムの保存期間を延長します。 
-    
--  *LitigationHoldEnabled*および*InPlaceHolds* ;手順3で一時的に削除できるように、メールボックスに配置されているすべての保留リストを識別する必要があります。 メールボックスに配置される可能性のある型保持を特定する方法については、「[詳細情報](#more-information)」セクションを参照してください。 
-    
+- *Singleitemrecoveryenabled*および*RetainDeletedItemsFor*。 必要に応じて、1回の回復を無効にして、手順3で削除済みアイテムの保存期間を延長します。 
+
+- *LitigationHoldEnabled*および*InPlaceHolds*。 手順3で一時的に削除できるように、メールボックスに配置されているすべての保留リストを識別する必要があります。 メールボックスに配置される可能性のある型保持を特定する方法については、「[詳細情報](#more-information)」セクションを参照してください。 
+
 また、この手順の実行中に所有者 (または他のユーザー) がメールボックスにアクセスできないように、メールボックスクライアントアクセスの設定を取得する必要があります。 最後に、[回復可能なアイテム] フォルダー内のアイテムの現在のサイズと数を取得することができます。 手順5で [回復可能なアイテム] フォルダーのアイテムを削除した後、この情報を使用してアイテムが削除されたことを確認します。
   
-1. [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)。 Exchange Online で適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用してください。 
+1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=396554)。 Exchange Online で適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用してください。 
     
 2. 単一アイテムの回復と削除済みアイテムの保存期間に関する情報を取得するには、次のコマンドを実行します。
 
@@ -225,9 +225,9 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ラベルの詳細については、「[ラベルの概要](labels.md)」を参照してください。
 
- ### <a name="ediscovery-case-holds"></a>電子情報開示ケースの保持
+ ### <a name="ediscovery-holds"></a>電子情報開示の保留
   
-[セキュリティ & コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、メールボックスに適用される電子情報開示ケースに関連付けられている保留リストを識別します。 手順1で特定した電子`UniH`情報開示ホールドの GUID (プレフィックスを含まない) を使用します。 2番目のコマンドは、保留が関連付けられている電子情報開示ケースの名前を表示します。3番目のコマンドは、保留の名前を表示します。 
+[セキュリティ & コンプライアンスセンターの PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)で次のコマンドを実行して、メールボックスに適用される電子情報開示ケース (*電子情報*開示の保留と呼ばれます) に関連付けられている保留リストを識別します。 手順1で特定した電子`UniH`情報開示ホールドの GUID (プレフィックスを含まない) を使用します。 2番目のコマンドは、保留が関連付けられている電子情報開示ケースの名前を表示します。3番目のコマンドは、保留の名前を表示します。 
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -241,7 +241,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-電子情報開示のケースとホールドの名前を特定したら、コンプライアンスセンターの [**電子情報** \> **開示電子情報開示**] ページに移動し、ケースを開き、保留リストからメールボックスを削除します。 詳細については、「[電子情報開示ケース](ediscovery-cases.md)」を参照してください。
+電子情報開示のケースとホールドの名前を特定したら、コンプライアンスセンターの [**電子情報** \> **開示電子情報開示**] ページに移動し、ケースを開き、保留リストからメールボックスを削除します。 電子情報開示の保持の識別の詳細については、「How to the Exchange Online mailbox」に記載されている[保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)」の「電子情報開示の保持」セクションを参照してください。
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>手順 4: メールボックスから遅延保持を削除する
 
@@ -293,7 +293,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>手順 6: メールボックスを以前の状態に戻す
 
-最後の手順では、メールボックスを以前の構成に戻します。 これは、手順2で変更したプロパティをリセットし、手順3で削除した保留リストを再適用することを意味します。 これには、次の内容が含まれます。
+最後の手順では、メールボックスを以前の構成に戻します。 これは、手順2で変更したプロパティをリセットし、手順3で削除した保留リストを再適用することを意味します。 これには以下が含まれます。
   
 - 削除済みアイテムの保存期間を以前の値に戻します。 または、Exchange Online の最大値の30日間に設定しておくこともできます。
     

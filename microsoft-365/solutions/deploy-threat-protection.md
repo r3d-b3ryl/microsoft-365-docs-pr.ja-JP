@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 で脅威保護機能を展開する
 description: Microsoft 365 E5 で脅威保護機能を展開する方法について説明します。
-ms.author: samanro
-author: samanro
-manager: bcarter
+ms.author: bcarter
+author: brendacarter
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: b04e34c946e2e73c2d9c34f5de881618444e3892
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003692"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44016098"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を展開する
 
@@ -224,7 +224,7 @@ Harvard ケネディ School [Cybersecurity キャンペーンハンドブック]
 
 Microsoft 365 には、組織内のユーザーに通知するための以下のリソースが用意されています。
 
-|概念  |リソース  |
+|概念  |関連情報  |
 |---------|---------|
 |Microsoft 365     |[カスタマイズ可能な学習経路](https://docs.microsoft.com/office365/customlearning/) <p>これらのリソースは、組織内のエンドユーザーのトレーニングをまとめる際に役立ちます。        |
 |Microsoft 365 セキュリティ |[学習モジュール: Microsoft 365 からの組み込みのインテリジェントセキュリティを使用して組織を保護します。](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>このモジュールでは、Microsoft 365 のセキュリティ機能がどのように連携するかを説明し、これらのセキュリティ機能の利点を明確に示すことができます。 |

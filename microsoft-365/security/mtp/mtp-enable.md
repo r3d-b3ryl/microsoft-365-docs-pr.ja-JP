@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 394fceffb96350b7702c5eef4a8138b3eb53f714
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011865"
+ms.locfileid: "44016076"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -45,9 +45,6 @@ Microsoft の脅威保護を有効にするには、Azure Active Directory の**
 
 ## <a name="start-using-the-service"></a>サービスの使用を開始する
 
->[!IMPORTANT]
->2020年5月3日、マイクロソフトは、[ライセンス要件](prerequisites.md#licensing-requirements)に関して最適化された新しいエクスペリエンスを徐々にロールアウトし、Microsoft の脅威保護を有効にします。 この期間中、一部のお客様は、ポータルエクスペリエンスへの変更を確認し始めます。 この記事では、新しいエクスペリエンスに関する情報を**新しいエクスペリエンス**としてマークしています。
-
 Microsoft の脅威保護は、さまざまな統合サービスからのデータを集約します。 データを一元的に処理および保存して、新しい洞察を識別し、集中管理された応答ワークフローを実現できるようにします。 これは、統合サービスに関連付けられている既存の展開、設定、またはデータに影響を与えることなく実行されます。
 
 サービスを有効にする前に、「Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com))」では、[**インシデント**]、[**アクションセンター**]、または**Hunting** [ナビゲーション] ウィンドウから選択したときに microsoft Threat Protection のウェルカムページが表示されます。 これらのナビゲーションオプションは、Microsoft の脅威保護を使用する資格がない場合は表示されません。
@@ -64,8 +61,6 @@ Microsoft の脅威保護を有効にするには、単にウェルカムペー�
 Microsoft Defender ATP が組織にプロビジョニングされている場合、データは、[Microsoft Defender ATP データ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)用に選択した同じデータ センターの場所に保存および処理されます。 Microsoft Defender ATP がない場合は、Microsoft Threat Protection 専用の新しいデータ センターの場所を選択するよう求められます。 
  
 サービス間でデータを共有し、集約する前に、同意を得る必要があります。
-
-**新しい作業:** 2020年5月3日から、ユーザーはこの操作に対する変更を段階的に受け取ります。 新しい環境では、このサービスによって、既存の Microsoft 365 セキュリティサービスに基づいて、集計データに最適なデータセンターの場所が自動的に選択されます。 選択したデータセンターの場所が画面に表示されます。
 
 ### <a name="confirm-that-the-service-is-on"></a>サービスが有効になっていることを確認する
 サービスがプロビジョニングされると、次の機能が追加されます。
