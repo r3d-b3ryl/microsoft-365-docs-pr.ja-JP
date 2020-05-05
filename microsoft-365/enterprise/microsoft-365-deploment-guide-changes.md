@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の展開ガイドの新しいコンテンツおよびコンテンツの変更を参照してください。
-ms.openlocfilehash: fb9768be38ef215b22c81bcf10b19b58e37fb124
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3374ee742982b1c7f451448674feed5f7d803031
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951812"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631575"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 Enterprise 展開コンテンツの変更
 
@@ -38,7 +38,7 @@ ms.locfileid: "42951812"
 
 ### <a name="new-content"></a>新しいコンテンツ 
 
-- [Microsoft 365 Business から Microsoft 365 E3 への移行](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Microsoft 365 Business Premium から Microsoft 365 E3 への移行](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Contoso 社の極秘プロジェクトのチーム](contoso-team-for-top-secret-project.md)
 
@@ -86,7 +86,7 @@ ms.locfileid: "42951812"
 
 ### <a name="updates-and-enhancements"></a>更新プログラムおよび拡張機能
 
-- [フェーズ 4 の更新: Office 365 ProPlus](office365proplus-infrastructure.md)
+- [フェーズ 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)の更新
 - [Contoso 社の導入実例](contoso-case-study.md) の更新
 - [Microsoft Teams](teams-workload.md)、[Exchange Online](exchangeonline-workload.md)、および [SharePoint Online](sharepoint-online-onedrive-workload.md) ワークロードの更新
 - [厳しく規制されたデータに適した SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md) のシナリオの更新
@@ -170,7 +170,7 @@ ms.locfileid: "42951812"
 ### <a name="new-content"></a>新しいコンテンツ 
 
 - [ID およびデバイス アクセス](identity-device-access-m365-test-environment.md) の前提条件となるテスト ラボ ガイド
-- [フェーズ 6: 情報保護](infoprotect-infrastructure.md)に適した [Windows 情報保護](infoprotect-deploy-windows-information-protection.md) および [Office 365 データ損失防止](infoprotect-data-loss-prevention.md) 
+- [フェーズ 6: 情報保護](infoprotect-infrastructure.md)の[Windows 情報保護](infoprotect-deploy-windows-information-protection.md) および [データ損失防止](infoprotect-data-loss-prevention.md)の手順
 
 
 ## <a name="see-also"></a>関連項目
