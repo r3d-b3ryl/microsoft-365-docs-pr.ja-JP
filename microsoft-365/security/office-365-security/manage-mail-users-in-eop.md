@@ -11,13 +11,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
-description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: ディレクトリ同期、EAC、PowerShell を使用してユーザーを管理するなど、Exchange Online Protection (EOP) でメールユーザーを管理する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 9a4555bf4b6a716839c327c692f0e44b590f8175
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635582"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035558"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
@@ -32,7 +33,7 @@ ms.locfileid: "43635582"
 > [!NOTE]
 > Microsoft 365 管理センターでユーザーを追加することはできますが、これらのユーザーをメール受信者として使用することはできません。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Exchange 管理センターを開くには、「exchange [Online Protection の exchange 管理センター](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 

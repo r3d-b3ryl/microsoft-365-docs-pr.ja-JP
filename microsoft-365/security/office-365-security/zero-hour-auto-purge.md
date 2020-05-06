@@ -1,5 +1,5 @@
 ---
-title: ゼロ時間自動削除 (ZAP)-スパム、マルウェア、フィッシングからの retroactive 保護。
+title: ゼロ時間自動削除 (ZAP)-電子メール保護機能
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,15 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: ゼロ時間自動削除 (ZAP) は、Microsoft 365 の電子メール保護機能であり、Exchange Online に既に配信されているスパム、マルウェア、またはフィッシングメッセージを検出します。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: f1b36f1152882f446c8f611ceafb44a085cc0a5d
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: Exchange Online に既に配信されているスパム、マルウェア、またはフィッシングメッセージを検出する、Microsoft 365 の電子メール保護機能であるゼロ時間の自動削除 (ZAP) について説明します。
+ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708453"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034928"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>ゼロ時間自動削除 (ZAP)-Microsoft 365 でのスパムおよびマルウェアからの保護
 

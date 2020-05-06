@@ -17,12 +17,13 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: 組織の SIEM サーバーと Office 365 Advanced Threat Protection および関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
-ms.openlocfilehash: 770e2348c4e5729531118fb4a014a72c352a0dd1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0527a998e7049960df840c7756ef5deaafaf5ade
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638298"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035274"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>高度な脅威保護との SIEM の統合
 

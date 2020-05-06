@@ -13,15 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: 概要:分離した SharePoint Online チーム サイトの設計プロセスをステップごとに示します。
-ms.openlocfilehash: 5efd5fb0501d88fda37f1530ef62e4c5110e4da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: アクセス許可レベルの決定、アクセスグループを持つユーザーへのアクセス許可の割り当て、およびネストされた Azure AD グループを含む、分離した SharePoint Online チームサイトを設計します。
+ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638514"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034842"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの設計
 
@@ -46,7 +48,7 @@ SharePoint グループのメンバーがサイトで実行できる内容を決
 |**SharePoint グループ**|**アクセス許可レベル**|
 |:-----|:-----|
 |\<サイト名> メンバー  <br/> |Edit  <br/> |
-|\<サイト名> 閲覧者  <br/> |読み取り  <br/> |
+|\<サイト名> 閲覧者  <br/> |Read  <br/> |
 |\<サイト名> の所有者  <br/> |フル コントロール  <br/> |
    
  **ベスト プラクティス:** 追加の SharePoint グループおよびアクセス許可レベルを作成できます。ただし、分離した SharePoint Online サイトには、既定の SharePoint グループおよびアクセス許可レベルを使用することをお勧めします。
@@ -86,7 +88,7 @@ Microsoft 365 の Azure AD グループは、Microsoft 365 グループとは異
 |**SharePoint グループ**|**Azure AD ベースのアクセス グループ**|**アクセス許可レベル**|
 |:-----|:-----|:-----|
 |\<サイト名> メンバー  <br/> |\<サイト名> メンバー  <br/> |Edit  <br/> |
-|\<サイト名> 閲覧者  <br/> |\<サイト名> 閲覧者  <br/> |読み取り  <br/> |
+|\<サイト名> 閲覧者  <br/> |\<サイト名> 閲覧者  <br/> |Read  <br/> |
 |\<サイト名> の所有者  <br/> |\<サイト名> 管理者  <br/> |フル コントロール  <br/> |
    
  **ベストプラクティス:** Microsoft 365 または Azure AD グループは SharePoint グループのメンバーとして使用できますが、Azure AD グループを使用することをお勧めします。 AD DS または Microsoft 365 によって管理される Azure AD グループでは、ネストされたグループを使用してアクセス許可を割り当てる方が柔軟性があります。

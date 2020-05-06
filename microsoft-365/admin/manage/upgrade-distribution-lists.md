@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Outlook で1つまたは複数の配布リストを Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627994"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048175"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
-Outlook を使用して、配布リストを Microsoft 365 グループにアップグレードできます。 これは、組織の配布リストに Microsoft 365 グループのすべての機能を提供するのに便利な方法です。 [Outlook で配布リストをグループにアップグレードする理由](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+Outlook を使用して、配布リストを Microsoft 365 グループにアップグレードできます。 これは、組織の配布リストに Microsoft 365 グループのすべての機能を提供するのに便利な方法です。 [Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 配布リストは 1 つずつ、または複数を同時にアップグレードできます。
 

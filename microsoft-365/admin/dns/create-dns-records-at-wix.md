@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Wix でその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 2cbc4887f276e63f09b433225e09315c227c961c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f88cc65ae19f747a9fc3740ea1578f30d18b5e2
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629241"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048857"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Microsoft の Wix で DNS レコードを作成する
 
@@ -53,7 +53,7 @@ ms.locfileid: "43629241"
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 <a name="BKMK_txt"> </a>
 
-ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
+Microsoft のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -69,15 +69,15 @@ ms.locfileid: "43629241"
 ||||
 |:-----|:-----|:-----|
 |**Host Name** <br/> |**TXT Value** <br/> |**TTL** <br/> |
-|自動入力  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
+|自動入力  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
    
 5. DNS エディターの上部にある [ **dns の保存**] ボタンをクリックします。 
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft に戻ってレコードを要求します。
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft に戻り、レコードをリクエストします。
   
-Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -109,7 +109,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
 |**Host Name**|**ポイント先**|**Priority**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|自動入力 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/What-is-MX-priority-2784cc4d-95be-443d-b5f7-bb5dd867ba83)」を参照してください。 | 1 Hour|
+|自動入力 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 | 1 Hour|
    
 6. その他の MX レコードが一覧表示されている場合は、それぞれのレコードを削除します。 
     
@@ -144,7 +144,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインに対して既に SPF レコードがある場合は、Microsoft 用に新しいを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。  
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。  
   
 1. まず、[このリンク](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)を使って Wix でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -162,7 +162,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft に必要な2つの SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_srv"> </a>
 
 1. まず、[このリンク](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)を使って Wix でドメイン ページにアクセスします。 最初にログインするように求められます。

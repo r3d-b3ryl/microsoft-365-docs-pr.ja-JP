@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Microsoft 365 for business サブスクリプションのライセンスを追加および削除する方法について説明します。
-ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632531"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045226"
 ---
 # <a name="manage-subscription-licenses"></a>サブスクリプション ライセンスを管理する
 
@@ -42,9 +42,9 @@ ms.locfileid: "43632531"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
-2. [ **Products & services** ] ページで、ライセンスを追加または削除するサブスクリプションを検索し、[ライセンスの**追加/削除**] を選択します。
+2. [**お客様の製品**] ページで、ライセンスを追加または削除するサブスクリプションを検索し、[**ライセンスの追加/削除**] を選択します。
 
     [[ライセンスの追加/削除] のリンクが表示されない場合](#what-if-i-dont-see-the-addremove-licenses-link)
 
@@ -56,7 +56,7 @@ ms.locfileid: "43632531"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. [**サブスクリプション**] ページで、ライセンスを追加または削除するサブスクリプションを選択し、[ライセンスの**追加/削除**] を選択します。
 
@@ -70,7 +70,7 @@ ms.locfileid: "43632531"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. [**サブスクリプション**] ページで、ライセンスを追加または削除するサブスクリプションを選択し、[ライセンスの**追加/削除**] を選択します。
 

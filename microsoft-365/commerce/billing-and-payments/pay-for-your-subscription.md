@@ -24,12 +24,12 @@ description: Microsoft 365 for business サブスクリプションの支払い�
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635018"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045838"
 ---
 # <a name="pay-for-your-subscription"></a>サブスクリプションを支払う
 
@@ -51,7 +51,7 @@ ms.locfileid: "43635018"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
 2. 未払い残高のあるサブスクリプションを見つけます。 **[課金]** セクションで、**[サブスクリプションの支払期限が過ぎています]** の横にある **[残高の決済]** をクリックします。
 
@@ -284,13 +284,13 @@ ms.locfileid: "43635018"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。
 
 ::: moniker-end
 

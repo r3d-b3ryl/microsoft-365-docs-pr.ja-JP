@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: この記事をガイドとして使用して、今すぐ脅威保護機能を構成します。
-ms.openlocfilehash: 0adf7bbb2637cc8a8d2918d951c1ccef51060b31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Office 365 の脅威保護と、組織での使用方法を構成する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7bdc7d619f3c48318572116fbc52647a0858ec5e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634462"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033892"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -31,7 +32,7 @@ Microsoft 365 には、さまざまな脅威保護機能が含まれています
 > [!IMPORTANT]
 > **ポリシーの種類ごとに最初に推奨される設定が含まれています。ただし、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもでき**ます。 使用しているポリシーまたは変更がデータセンターによって処理されるまで約30分間待機します。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -55,7 +56,7 @@ Microsoft 365 には、さまざまな脅威保護機能が含まれています
 
 |役割または役割グループ|詳細情報|
 |---------|---------|
-|グローバル管理者|[Microsoft 365 管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|グローバル管理者|[Microsoft 365 管理者ロールについて](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |セキュリティ管理者|[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |

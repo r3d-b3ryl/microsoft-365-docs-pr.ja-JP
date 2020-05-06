@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 099b19df89026562201131d1e7c099785b1cb03e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 高度な電子情報開示ケースでプレゼンテーションや外部レビューのためにレビューセットからコンテンツをエクスポートまたはダウンロードする方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 2aeb8b2cdfa850c3878b23205ce965794ea3be15
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558188"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035955"
 ---
 # <a name="export-case-data-in-advanced-ediscovery"></a>高度な電子情報開示でケースデータをエクスポートする
 

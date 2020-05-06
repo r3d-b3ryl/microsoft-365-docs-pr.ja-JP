@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 セキュリティセンターでのアプリの監視とレポート
-description: 組織でクラウドアプリを使用する方法について詳しく説明します。
+title: アプリケーション監視 & レポート作成-セキュリティセンター
+description: 組織でクラウドアプリを使用する方法について説明します。これには、アプリの種類、リスクのレベル、アラートなどが含まれます。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、アプリ
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f7b3f2fcaac71eefa2579a0c3fd66666fe00f605
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cd7a86751ac58f60051891544c9fd68c51b439e1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087688"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034024"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのアプリの監視とレポート
 

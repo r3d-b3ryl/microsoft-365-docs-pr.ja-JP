@@ -1,6 +1,6 @@
 ---
 title: Office 365 Advanced Threat Protection の新機能
-description: Office 365 ATP の新機能の一覧を示します。
+description: Microsoft Office 365 ATP の最新リリースで利用可能な新機能について説明します。
 keywords: Office 365 の新機能 atp、ga、一般提供、機能、利用可能、新規
 search.appverid: met150
 ms.service: O365-seccomp
@@ -15,12 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.date: 02/21/2020
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630823"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036586"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 

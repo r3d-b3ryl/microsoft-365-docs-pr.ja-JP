@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 管理センターで支払い方法を管理する方法について説明します。
-ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894843"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045870"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
 
@@ -73,7 +73,7 @@ Microsoft からビジネス製品またはサービスを購入する場合は�
 
 1つのサブスクリプションの支払いに使用する支払い方法を変更できます。
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
 2. [**サブスクリプション**] タブで、別の支払い方法で支払う対象のサブスクリプションを選択します。 
 3. [**請求**] の下で支払い方法の横にある [**編集**] を選択します。
 4. 既存の支払い方法の横にある [**変更**] を選択します。
@@ -106,7 +106,7 @@ Microsoft からビジネス製品またはサービスを購入する場合は�
 5. 新しい支払い方法を追加するには、[**支払い方法の追加**] を選択します。
 6. 追加する支払い方法の種類を選択し、アカウント情報を入力してから [**保存**] を選択します。
 7. 新しい支払い方法は、ドロップダウンリストで既に選択されています。 [**次へ**] を選択します。
-8. [**削除**] を選択します。
+8. **[削除]** を選択します。
 
 ## <a name="troubleshoot-payment-methods"></a>支払い方法のトラブルシューティング
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Microsoft 365 for business アカウントに関連付けられている電子メールエイリアスと呼ばれる複数の電子メールアドレスを設定する方法について説明します。 '
-ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: efd0dbf5ae072c803b52d94dd41f16db9bb0413a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629085"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048809"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>ユーザーに別のメール エイリアスを追加する
   
@@ -54,7 +54,7 @@ Microsoft 365 のプライマリ電子メールアドレスは、通常、アカ
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [**アクティブなユーザー** ] ページで、[ユーザー >**メールエイリアスの管理**] を選択します。 ユーザーにライセンスが割り当てられていない場合、このオプションは表示されません。 
     
@@ -68,7 +68,7 @@ Microsoft 365 のプライマリ電子メールアドレスは、通常、アカ
     > GoDaddy または別のパートナーからサブスクリプションを購入した場合、新しいエイリアスをプライマリとして設定するには、GoDaddy またはパートナーの管理コンソールに移動する必要があります。 
   
     > [!TIP]
-    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 一覧に別のドメイン名を追加するには、「 [Office 365 にドメインを追加](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)する」を参照してください。 
+    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 一覧に別のドメイン名を追加するには、「 [Office 365 にドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)する」を参照してください。 
   
      
 5. 完了したら、[**変更の保存**] を選択します。
@@ -84,7 +84,7 @@ Microsoft 365 のプライマリ電子メールアドレスは、通常、アカ
 
 ::: moniker range="o365-germany"
     
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。 
     
     
 2. [ **アクティブなユーザー**] ページで、編集するユーザー名を選びます。
@@ -100,7 +100,7 @@ Microsoft 365 のプライマリ電子メールアドレスは、通常、アカ
     > GoDaddy または別のパートナーからサブスクリプションを購入した場合、新しいエイリアスをプライマリとして設定するには、GoDaddy またはパートナーの管理コンソールに移動する必要があります。 
   
     > [!TIP]
-    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 一覧に別のドメイン名を追加するには、「 [Office 365 にドメインを追加](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)する」を参照してください。 
+    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 一覧に別のドメイン名を追加するには、「 [Office 365 にドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)する」を参照してください。 
 
 5. 完了したら、[**保存**] を選択します。
 
@@ -115,7 +115,7 @@ Microsoft 365 のプライマリ電子メールアドレスは、通常、アカ
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
 
     
 2. [ **アクティブなユーザー**] ページで、編集するユーザー名を選びます。
@@ -131,7 +131,7 @@ Microsoft 365 のプライマリ電子メールアドレスは、通常、アカ
     > GoDaddy または別のパートナーからサブスクリプションを購入した場合、新しいエイリアスをプライマリとして設定するには、GoDaddy またはパートナーの管理コンソールに移動する必要があります。 
   
     > [!TIP]
-    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 一覧に別のドメイン名を追加するには、「 [Office 365 にドメインを追加](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)する」を参照してください。 
+    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 一覧に別のドメイン名を追加するには、「 [Office 365 にドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)する」を参照してください。 
 
 5. 完了したら、[**保存**] を選択します。
 

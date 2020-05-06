@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943246"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952630"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -113,7 +113,7 @@ Office アプリの自動ラベル付け設定は、[機密ラベルを作成ま
 ![Office アプリの自動ラベル付けのラベル条件](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> 現在、**分類子**のオプションは制限付きプレビュー中であり、テナントでこの機能を有効にするには Microsoft にフォームを送信する必要があります。 詳細については、「[Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview (組み込みの分類子を使用した Office アプリの自動ラベル付けの発表 - 制限付きプレビュー)](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)」のブログ投稿を参照してください。
+> 現在、**分類子** のオプションは制限付きプレビュー中であり、テナントでこの機能を有効にするには Microsoft にフォームを送信する必要があります。 詳細については、「[Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview (組み込みの分類子を使用した Office アプリの自動ラベル付けの発表 - 制限付きプレビュー)](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)」のブログ投稿を参照してください。
 
 この機密ラベルが自動的に適用されると、ユーザーの Office アプリに通知が表示されます。 例:
 
@@ -188,7 +188,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>SharePoint、OneDrive、Exchange の自動ラベル付けポリシーを構成する方法
 > [!NOTE]
-> 自動ラベル付けポリシーは、パブリック プレビューでテナントに段階的に展開されており、変更される可能性があります。
+> 自動ラベル付けポリシーはパブリック プレビュー中であり、変更される可能性があります。
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自動ラベル付けポリシーの前提条件
 
@@ -241,7 +241,6 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     
     ![自動ラベル付け (プレビュー) タブ](../media/auto-labeling-tab.png)
     
-    この新しいタブは現在、テナントにロールアウト中です。 表示されない場合は、数日後にもう一度お試しください。
 
 3. [**+ ポリシーの作成**] を選択します。
 

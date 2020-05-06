@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、サブスクリプションとアクティブの両方が表示されていることを確認して、手動でサブスクリプションを変更します。
-ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707633"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046194"
 ---
 # <a name="change-plans-manually"></a>プランを手動で変更する
 
@@ -49,7 +49,7 @@ ms.locfileid: "43707633"
 
 **購入済みですか?** ユーザーを移動するサブスクリプションが既にある場合は、この手順を省略して、このトピックの「[新しいサブスクリプションとライセンスを確認](#step-3-check-your-new-subscription-and-licenses)する」に進みます。
 
-OR
+または
 
 **新しいサブスクリプションとライセンスを購入します。**「[別の Microsoft 365 for business サブスクリプションを購入](../buy-another-subscription.md)する」の手順に従って、新しいサブスクリプションを購入します。
 
@@ -58,14 +58,14 @@ OR
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
 2. **両方のサブスクリプションが一覧表示され、アクティブであることを確認する**ユーザーを移行するサブスクリプションと、ユーザーを移動するサブスクリプションが一緒に表示されている必要があります。 最初に確認したときに新しいサブスクリプションが表示されない場合は、後でもう一度確認してみてください。 両方のサブスクリプションがアクティブであることを確認してください。 新しいサブスクリプションが一覧に表示されない、またはアクティブではない場合は[新しいサブスクリプションが一覧に表示されない、またはアクティブではない](#the-new-subscription-isnt-listed-or-isnt-active)を参照してください。
 
 3. **ユーザーごとに十分な数のライセンスがあることを確認する**各ユーザーには、サブスクリプションに一致するライセンスが必要です。 そのため、10人のユーザーを Microsoft 365 Business Premium に移行する場合は、10個のライセンスが利用可能であることを確認する必要があります。
 
 4. **新しいサブスクリプションのライセンスがさらに必要ですか?**
-   [ **Products & services** ] ページに移動し、[ライセンスを購入](../licenses/buy-licenses.md)します。
+   [**製品**] ページに移動し、[ライセンスを購入](../licenses/buy-licenses.md)します。
 
 > [古いライセンスの処理](#what-about-the-old-licenses)」を参照してください。
 
@@ -83,7 +83,7 @@ OR
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [**アクティブなユーザー** ] ページで、ライセンスを割り当てるユーザーを選択します。
 
@@ -91,7 +91,7 @@ OR
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. 既存のライセンスを置換するユーザーの名前の横にある円を選択します。
 

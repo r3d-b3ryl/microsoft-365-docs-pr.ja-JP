@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Microsoft 365 for business の請求先住所を更新する方法について説明します。請求通知の受信に使用される電子メールアドレスを更新することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632721"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048027"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -121,7 +121,7 @@ ms.locfileid: "43632721"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
 2. 変更するサブスクリプションを検索します。 [**設定とアクション**] セクションで、[**サービスの利用先住所の編集**] を選択します。
 
@@ -170,8 +170,10 @@ ms.locfileid: "43632721"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>別の管理者の連絡用メール アドレスを変更する
 
 組織内の他のグローバル カタログや課金管理者の連絡用メール アドレスを変更することもできます。
+
+::: moniker range="o365-worldwide"
   
-1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
 
 ::: moniker-end
 

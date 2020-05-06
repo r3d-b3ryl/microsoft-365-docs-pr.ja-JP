@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: SharePoint Online のウイルス対策保護について説明します。
-ms.openlocfilehash: f04cd18bb4880ab631816c90b4976beada436225
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: ユーザーがアップロードするファイルで、SharePoint Online がウイルスを検出し、ユーザーがファイルをダウンロードまたは同期できないようにする方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6a47f52a30f90d7a19cc01dc9e14eb9b534ec244
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630943"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034952"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online のウイルス検出
 

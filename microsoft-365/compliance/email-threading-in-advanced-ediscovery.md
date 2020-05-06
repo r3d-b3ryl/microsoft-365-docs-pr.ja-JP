@@ -1,5 +1,5 @@
 ---
-title: 電子メールスレッド
+title: 電子メールスレッド処理-電子情報開示
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: ea40acc3c83d5083a68473223f849a9bebbe98ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 高度な電子情報開示分析を実行するとき、電子メールスレッドは電子メール会話を解析し、各メッセージを異なるカテゴリに分割します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: d3c014973996b312e0b51c1d5fae9da808000cf1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074744"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035881"
 ---
 # <a name="email-threading"></a>電子メールスレッド
 

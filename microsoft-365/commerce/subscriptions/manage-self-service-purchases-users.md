@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636641"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046170"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -30,11 +30,11 @@ ms.locfileid: "43636641"
 
 ## <a name="view-your-subscriptions"></a>サブスクリプションを表示する
 
-購入したすべてのセルフサービス購入されたサブスクリプションの一覧を表示できます。 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
+購入したすべてのセルフサービス購入されたサブスクリプションの一覧を表示できます。 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>ライセンスをさらに購入または減らす方法
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
 
 2. 購入するサブスクリプションを検索するか、ライセンスを減らす必要があります。
 
@@ -74,7 +74,7 @@ ms.locfileid: "43636641"
 
 ## <a name="cancel-a-subscription"></a>サブスクリプションをキャンセルする
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページの順に移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
 
 2. キャンセルするサブスクリプションを検索します。
 
@@ -119,7 +119,7 @@ ms.locfileid: "43636641"
 
 2. [**請求書**] で、表示する請求書を選択します。
 
-## <a name="need-help-contact-us"></a>ヘルプが必要な場合 ご連絡ください。
+## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 

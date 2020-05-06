@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
-description: ここでは、Microsoft Exchange Online Protection (EOP) のフィルター処理中にキューイング、保留、または返送されるメッセージに関してよく寄せられる質問の回答を提供します。
-ms.openlocfilehash: 05993e8d0e9af69dd1ac35b588c4e8ec731642f7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: Microsoft Exchange Online Protection (EOP) のフィルター処理中にキュー、延期、または返送されたメッセージに関する Faq への回答を検索します。
+ms.openlocfilehash: f7a7c8b5466e02353ca114d6c7ed44f37bed5592
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599354"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036550"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP のキューイング、保留、返送されるメッセージに関する FAQ
 

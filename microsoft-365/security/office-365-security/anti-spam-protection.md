@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Exchange Online および Microsoft 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Microsoft 365 でスパムを過剰に取得していますか? スパムフィルターとスパム対策の設定はカスタマイズできます。
-ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: Exchange Online および Microsoft 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。
+ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708573"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034060"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Microsoft 365 でのスパム対策保護
 
@@ -71,7 +73,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 - **電子メール認証の使用**: 電子メールドメインを所有している場合は、そのドメイン内の送信者からのメッセージが正当であることを確認するために DNS を使用できます。 EOP でスパムや不要なスプーフィングを防止するために、次のすべての電子メール認証方法を使用します。
 
-  - **SPF**: Sender Policy Framework は、送信側ドメインの所有者に対してメッセージの送信元 IP アドレスを確認します。 SPF の簡単な説明と、すぐに構成する方法については、「[スプーフィングを防止するために spf をセットアップする](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Microsoft 365 が SPF をどのように使用しているか、またはハイブリッド展開のようなトラブルシューティングや標準的でない展開についての詳細については、 [microsoft 365 が送信者ポリシーフレームワーク (SPF) を使用してスプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)から始めます。
+  - **SPF**: Sender Policy Framework は、送信側ドメインの所有者に対してメッセージの送信元 IP アドレスを確認します。 SPF の簡単な説明と、すぐに構成する方法については、「[スプーフィングを防止するために spf をセットアップする](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
 
   - **Dkim**: domainkeys が識別されたメールは、自分のドメインから送信されたメッセージのメッセージヘッダーにデジタル署名を追加します。 詳細については、「 [Microsoft 365 でカスタムドメインから送信される送信電子メールを検証するために DKIM を使用する](use-dkim-to-validate-outbound-email.md)」を参照してください。
 

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 別の30日間の試用版サブスクリプションを拡張する方法について説明します。
-ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634898"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045766"
 ---
 # <a name="extend-your-trial"></a>試用期間を延長する
 
@@ -34,10 +34,9 @@ ms.locfileid: "43634898"
 
 ::: moniker range="o365-worldwide"
 
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
-
-2. [ **Products & services** ] ページで、拡張する試用版サブスクリプションを検索します。 [**設定 &** の [アクション] セクションで、[**試用版の拡張**] を選択します。
+2. [**製品**] ページで、拡張する試用版サブスクリプションを見つけます。 [**設定 &** の [アクション] セクションで、[**試用版の拡張**] を選択します。
 
 3. 拡張情報を確認し、必要に応じて支払い方法を変更します。 完了したら、[**試用版の拡張**] を選択します。
 
@@ -45,9 +44,7 @@ ms.locfileid: "43634898"
 
 ::: moniker range="o365-germany"
 
-
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
-
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. [**サブスクリプション**] ページで、拡張する試用版サブスクリプションを選択し、[有効期限] で [**試用版の拡張**] を選択します。
 
@@ -57,7 +54,7 @@ ms.locfileid: "43634898"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. [**サブスクリプション**] ページで、拡張する試用版サブスクリプションを選択し、[有効期限] で [**試用版の拡張**] を選択します。
 

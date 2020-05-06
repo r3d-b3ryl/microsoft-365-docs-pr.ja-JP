@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Microsoft 365 セルフサービスのサインアップと、Microsoft パワーアプリ、Microsoft Flow、および財務の Dynamics 365 などの利用可能なセルフサービスプログラムについて説明します。
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627802"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045275"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
@@ -42,7 +42,7 @@ ms.locfileid: "43627802"
 
 3. 電子メールアドレスを検証し、Microsoft 365、Power BI、またはその他のサービスをすぐに使用できるようにします。
 
-4. ビジネス管理者は、管理センターの [**製品 & サービス**] ページを表示して、サブスクリプションにサインアップしたユーザーを確認できます。 このようにすると、テナント内のサービスのライセンスが新規にあるか、認識されないかを確認できます。 ユーザーがセルフサービスサブスクリプションにサインアップできるかどうかを制御するには、 [Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell コマンドレットを**AllowAdHocSubscriptions**パラメーターと共に使用します。 詳細については、「[セルフサービス設定を制御する方法](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)」を参照してください。
+4. ビジネス管理者は、管理センターで [**製品**] ページを表示することによって、サブスクリプションにサインアップしたユーザーを確認できます。 このようにすると、テナント内のサービスのライセンスが新規にあるか、認識されないかを確認できます。 ユーザーがセルフサービスサブスクリプションにサインアップできるかどうかを制御するには、 [Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell コマンドレットを**AllowAdHocSubscriptions**パラメーターと共に使用します。 詳細については、「[セルフサービス設定を制御する方法](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)」を参照してください。
 
 ## <a name="available-self-service-programs"></a>利用可能なセルフサービス プログラム
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 で提供された悪意のある電子メールの検索と調査、修復、修復、修復、脅威の保護、脅威エクスプローラー、保護
+title: 悪意のある電子メールの検索と調査
 keywords: TIMailData-インライン、セキュリティインシデント、インシデント、ATP PowerShell、電子メールマルウェア、侵害されたユーザー、電子メールフィッシング、電子メールマルウェア、電子メールヘッダーの読み取り、ヘッダーの読み取り、電子メールのヘッダーを開く
 f1.keywords:
 - NOCSH
@@ -17,12 +17,13 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634136"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034258"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査および修復する
 
@@ -48,7 +49,7 @@ ms.locfileid: "43634136"
 |---------|---------|---------|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | いいえ   |
 |脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       いいえ  |
-|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview   |   必要      |
+|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview   |   はい      |
 
 > [!NOTE]
 > *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 グローバル管理者の役割には、Microsoft 365 管理センター[https://admin.microsoft.com](https://admin.microsoft.com)() が割り当てられており、セキュリティ管理者およびセキュリティリーダーの役割はセキュリティ[https://protection.office.com](https://protection.office.com)& コンプライアンスセンター () で割り当てられます。 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。

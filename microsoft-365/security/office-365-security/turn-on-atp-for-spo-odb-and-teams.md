@@ -1,5 +1,5 @@
 ---
-title: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
+title: Office 365 の ATP-SharePoint、OneDrive、& Teams をオンにする
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,12 +18,13 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
-ms.openlocfilehash: 95886cb6a7f081e4565a6455951aedf68a3e741e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f7708697f191107176173f2bfaced576c024954c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631123"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036730"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -86,7 +87,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 5. [**この通知を送信するタイミング**] セクションで、次の操作を行います。
 
-   a. [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
+   a.  [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
 
    b. [**ユーザー** ] フィールドは空のままにします。
 

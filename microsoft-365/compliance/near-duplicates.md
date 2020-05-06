@@ -1,5 +1,5 @@
 ---
-title: 準重複の検出
+title: ほぼ重複した検出-データの調査
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: e1a9ffe264925911f475732ffd98a43fa533e458
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: データ調査を管理するときは、大文字と小文字を区別したドキュメントをグループ化するために近い重複検出を使用します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: aa451051c008f7a1614661d3bd66129cac6bb4ad
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071304"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036432"
 ---
 # <a name="near-duplicate-detection"></a>準重複の検出
 

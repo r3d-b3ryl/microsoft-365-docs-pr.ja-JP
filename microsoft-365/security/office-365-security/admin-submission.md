@@ -1,5 +1,5 @@
 ---
-title: 管理者による提出、提出、スパムの問題、誤検出、フィッシング、スキャン用電子メールの送信、Office 365 での疑わしい電子メールの送信、メールをスキャンする、フィッシングの Microsoft スキャンを実行する、電子メールを送信する、電子メールを送信する、電子メールを送信する、電子メールを送信する、電子メールを送信する、電子メールを送信する、microsoft に悪意のある、メール内のマルウェアを Microsoft に報告する、受信トレイにスパム電子メールを送信する、電子メールをウイルスに報告する
+title: Office 365 での管理者による送信
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 疑わしいメール、疑わしいフィッシングメール、スパム、およびその他の潜在的に有害なメッセージ、Url、およびその他の潜在的な問題がある電子メールをスキャンのために社内から Microsoft に送信する方法について説明します。
-ms.openlocfilehash: 73c33ba1218a710c33f8b2675bc65c0a7486efda
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921530"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034202"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -128,7 +130,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織の管理�
 
 ページの下部にある [**列のオプション**] ボタンをクリックすると、ビューの列を追加または削除できます。
 
-- **Date**
+- **日付**
 - **送信 ID**
 - **提出者**<sup>\*</sup>
 - **[件名]**<sup>\*</sup>
@@ -148,7 +150,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織の管理�
 
 ページの下部にある [**列のオプション**] ボタンをクリックすると、ビューの列を追加または削除できます。
 
-- **Date**
+- **日付**
 - **送信 ID**
 - **提出者**<sup>\*</sup>
 - [**URL**<sup>\*</sup>]
@@ -163,7 +165,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織の管理�
 
 ページの下部にある [**列のオプション**] ボタンをクリックすると、ビューの列を追加または削除できます。
 
-- **Date**
+- **日付**
 - **送信 ID**
 - **提出者**<sup>\*</sup>
 - **ファイル名**<sup>\*</sup>

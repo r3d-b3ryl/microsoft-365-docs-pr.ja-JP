@@ -1,5 +1,5 @@
 ---
-title: 削除されたグループを復元する
+title: 削除したグループを復元する
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除された Microsoft 365 グループを復元する方法について説明します。
-ms.openlocfilehash: a0e7aef090528b3fa183fe08f9c4d06c86f94a10
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 870db3c92cd1f28f91540633a1dce9d0353c2b87
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630033"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049157"
 ---
 # <a name="restore-a-deleted-group"></a>削除されたグループを復元する
 
@@ -93,7 +93,7 @@ Microsoft[技術コミュニティ](https://techcommunity.microsoft.com/t5/Offic
   
 ## <a name="related-articles"></a>関連記事
 
-[PowerShell を使用して Microsoft 365 グループを管理する](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
   
 [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
