@@ -13,20 +13,22 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 では、既定では、フィッシング攻撃に対するさまざまな保護を提供しており、Office 365 Advanced Threat Protection (ATP) のその他の機能も利用できます。 このトピックでは、Microsoft 365 でのフィッシング対策のオプションと戦略について学習し、実装するために使用できるオンラインリソースについて説明します。
-ms.openlocfilehash: bdab6c05fb9be85c2ffb4914390ecc893fdd162b
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- TopSMBIssues
+- seo-marvel-apr2020
+description: この記事では、Microsoft 365 でのフィッシング対策のオプションと戦略について学習し、実装するために利用できるオンラインリソースについて説明します。
+ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949371"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033764"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 でのフィッシング対策保護
 
-*フィッシング*正規または信頼された送信者からのメッセージの機密情報を盗もうとする電子メール攻撃。 フィッシングには特定のカテゴリがあります。 次に例を示します。
+*フィッシング*正規または信頼された送信者からのメッセージの機密情報を盗もうとする電子メール攻撃。 フィッシングには特定のカテゴリがあります。 例:
 
 - **スピアーフィッシング**は、目的の受信者に特化した、非常に集中的でカスタマイズされたコンテンツを使用します (通常は、攻撃者による受信者の偵察後)。
 

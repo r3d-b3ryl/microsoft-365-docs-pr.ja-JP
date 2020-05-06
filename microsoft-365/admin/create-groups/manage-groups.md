@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループメンバーの追加、電子メールアドレス、グループ名、説明の編集、グループの動作のカスタマイズなど、Microsoft 365 グループを管理する方法について説明します。
-ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630395"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049205"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを管理する
 
@@ -194,7 +194,7 @@ ms.locfileid: "43630395"
 
 [Microsoft 365 グループを作成する](create-groups.md)
 
-[Microsoft 365 グループへのゲストアクセスを管理する](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Microsoft 365 グループへのゲストアクセスを管理する](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Microsoft 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
 
@@ -202,4 +202,4 @@ ms.locfileid: "43630395"
 
 [配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-[PowerShell を使用して Microsoft 365 グループを管理する](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)

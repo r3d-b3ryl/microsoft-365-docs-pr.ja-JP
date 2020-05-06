@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 278985aa93f8802f78bd632a5fc90dd6be846b21
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 高度なインデックスを使用して、調査する必要があるすべてのデータが検索によって取得されるようにする方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dc7d73c233aa48b88e9dce32fad613ccc5e19333
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637909"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035063"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>調査のためのデータの高度なインデックス作成
 

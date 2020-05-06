@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Microsoft を使用してアカウントを終了する方法について説明します。
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942855"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045778"
 ---
 # <a name="close-your-account"></a>アカウントの使用を停止する
 
@@ -40,7 +40,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>手順 2: すべてのアクティブなサブスクリプションをキャンセルする
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] のページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
 
 2. 購読リストが**表**形式の場合は、右側の [**カード**] を選択します。
 
@@ -52,7 +52,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>手順 3: 無効になっているすべてのサブスクリプションを削除する
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] のページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
 
 2. 購読リストが**表**形式の場合は、右側の [**カード**] を選択します。
 

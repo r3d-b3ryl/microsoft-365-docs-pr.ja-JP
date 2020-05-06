@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: 詳細な電子情報開示の検索ツールを使用して、調査のためにドキュメントセットを特定する方法について説明します。
+ms.custom: seo-marvel-2020
+ms.openlocfilehash: 9d8a88ddfc6bcb30f8678f39ad2bc4fbaf717ecc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799940"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034351"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>高度な電子情報開示でケースのデータを収集する
 
@@ -41,7 +42,7 @@ ms.locfileid: "43799940"
 
 検索の推定が完了したら、検索を選択すると、検索結果に関する大まかな統計情報が表示される、フライアウトページが表示されます。 この時点で、[**統計**] ボタンがアクティブになります。 このチェックボックスをオンにすると、次のような検索統計情報を表示できます。
 
-- 要約
+- Summary
 - トップの場所
 - クエリ
 

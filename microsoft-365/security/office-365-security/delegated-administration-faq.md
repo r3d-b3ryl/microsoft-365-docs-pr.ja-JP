@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: このトピックでは、他のテナント (企業) の Exchange Online Protection (EOP) を管理する機能など、委任された管理タスクを実行することを望む Microsoft パートナーとリセラーによく寄せられる質問とその回答を示します。
-ms.openlocfilehash: b79c0aba026a8d59aac338ceac0f1c4a60d71c4d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: このトピックでは、委任された Microsoft 365 の管理タスクを実行する Microsoft パートナーとリセラーに関する Faq と回答を示します。
+ms.openlocfilehash: d2411734e583cce2be817793e2b39abba2b186a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637654"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036465"
 ---
 # <a name="delegated-administration-faq"></a>代理管理の FAQ
 

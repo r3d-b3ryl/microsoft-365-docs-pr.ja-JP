@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781462"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049522"
 ---
 # <a name="message-encryption-faq"></a>メッセージ暗号化に関する FAQ
 
@@ -109,11 +109,11 @@ Microsoft 365 のユーザーは、Outlook for Windows および Mac (2013 お�
   
 ## <a name="are-pdf-file-attachments-supported"></a>PDF ファイル添付はサポートされていますか?
 
-短い答えははい。 PDF 暗号化を使用すると、セキュリティで保護された通信やセキュリティで保護されたコラボレーションを通じて、機密の PDF ドキュメントを保護でき メールを送信すると、Office 365 サービスは Outlook クライアントではなく PDF ファイル添付ファイルを暗号化します。 
+短い答えははい。 PDF 暗号化を使用すると、セキュリティで保護された通信やセキュリティで保護されたコラボレーションを通じて、機密の PDF ドキュメントを保護でき メールを送信すると、Office 365 サービスは Outlook クライアントではなく PDF ファイル添付ファイルを暗号化します。
 
-PDF ファイル添付ファイルの暗号化を有効にすると、Outlook on the web、outlook for iOS、outlook for Android などの追加の手順を行わずに、送信する Pdf を暗号化することができます。
+Outlook on the web、outlook for iOS、outlook for Android では、追加の手順を行わずに、送信する Pdf を暗号化することができます。 これらのクライアントは、PDF 暗号化をネイティブにサポートしています。
 
-Outlook デスクトップは、PDF 添付ファイルの暗号化をネイティブにサポートしていません。 この問題を回避するには、組織内で PDF ファイル添付ファイルの暗号化を有効にすることもできます。 PDF 形式の添付ファイルを使用して Outlook デスクトップからメールを送信する場合、クライアントは、まず添付ファイル付きのメッセージをサービスに送信します。 サービスは、ファイルを受信すると、Exchange Online のデータ損失防止 (DLP) ポリシーまたはメールフロールールの OME 保護を適用します。 次に、Exchange Online は、保護された PDF ファイル添付ファイルを含むメッセージを送信します。
+Outlook デスクトップは、PDF 添付ファイルの暗号化をネイティブにサポートしていません。 代わりに、Exchange メールフロールールまたは DLP を設定して、最初に PDF 添付ファイルに暗号化を適用する必要があります。 PDF 形式の添付ファイルを使用して Outlook デスクトップからメールを送信する場合、クライアントは、まず添付ファイル付きのメッセージをサービスに送信します。 サービスは、ファイルを受信すると、Exchange Online のデータ損失防止 (DLP) ポリシーまたはメールフロールールの OME 保護を適用します。 次に、Exchange Online は、保護された PDF ファイル添付ファイルを含むメッセージを送信します。
 
 PDF 添付ファイルの暗号化を有効にするには、 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)で次のコマンドを実行します。
 
