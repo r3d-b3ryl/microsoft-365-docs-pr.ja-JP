@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: 管理者は、ハイブリッド環境でスタンドアロンの Exchange Online Protection (EOP) を使用している場合に、オンプレミスのユーザーの迷惑メールフォルダーにスパムをルーティングするようにオンプレミスの Exchange 環境を構成する方法について説明します。
-ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理者は、Exchange Online Protection ハイブリッド環境でスパムをユーザーの迷惑メールフォルダーにルーティングする方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621284"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036574"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>ハイブリッド環境で迷惑メールフォルダーにスパムを配信するようにスタンドアロン EOP を構成する
 
@@ -77,7 +78,7 @@ ms.locfileid: "43621284"
 
 3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
-   - [**名前**]: わかりやすい一意のルールの名前を入力します。 以下に例を示します。
+   - [**名前**]: わかりやすい一意のルールの名前を入力します。 例:
 
      - EOP SFV: SPM から SCL 6
 
@@ -111,7 +112,7 @@ ms.locfileid: "43621284"
 New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
 ```
 
-以下に例を示します。
+例:
 
 ```Powershell
 New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6

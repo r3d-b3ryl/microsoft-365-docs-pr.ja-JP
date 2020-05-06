@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
-description: 管理者は、ソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 組織のメールボックスにサードパーティのデータをインポートできます。 これにより、Microsoft 365 の Facebook、Twitter、およびその他のサードパーティのデータソースからデータをアーカイブすることができます。 その後、Microsoft 365 コンプライアンス機能 (法的情報保留、電子情報開示、インプレースアーカイブ、アイテム保持ポリシーなど) を使用して、サードパーティのデータを適用することができます。
-ms.openlocfilehash: e9276a845a29f5c047e303e9e04051ec9f77da1e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: ソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 メールボックスにサードパーティのデータをインポートする方法について説明します。
+ms.openlocfilehash: 0db7019b607388b7c62fe19210b85b8410083f32
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943186"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035485"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 

@@ -1,5 +1,5 @@
 ---
-title: セキュリティロードマップ-最初の30日間、90日以降の優先度
+title: Microsoft 365 セキュリティロードマップ-最優先事項
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft の cybersecurity チームからの、Microsoft 365 環境を保護するためのセキュリティ機能の実装に関する主な推奨事項。 '
-ms.openlocfilehash: f00cf7c63e84f19ac2cae080adb87209b32d3012
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 762f0772002917d11459b97f76b7bfbddceb2016
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633727"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035410"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ-最初の30日間、90日以降の優先度
 

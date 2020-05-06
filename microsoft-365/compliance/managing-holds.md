@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 保管担当者およびそのデータソースに保持を配置して、高度な電子情報開示ケースに関連するコンテンツを保持する方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632962"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034126"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
@@ -69,7 +70,7 @@ ms.locfileid: "43632962"
   
 8. 保留にするコンテンツの場所を選択します。メールボックス、サイト、パブリック フォルダーを保留にできます。
 
-   a. **Exchange 電子メール**-[**ユーザー、グループ、またはチームの選択**] をクリックし、[**ユーザー、グループ、または teams**を再度選択する] をもう一度クリックして、保持するメールボックスを指定します。 検索ボックスを使用して、ユーザーのメールボックスと配布グループを検索します (グループメンバーのメールボックスを保留にする場合)。 また、Microsoft 365 グループまたは Microsoft チームに対して、関連付けられたメールボックスにホールドを配置することもできます。 [ユーザー、グループ、チーム] チェックボックスをオンにし、[**選択**] をクリックし、[**完了**] をクリックします。
+   a.  **Exchange 電子メール**-[**ユーザー、グループ、またはチームの選択**] をクリックし、[**ユーザー、グループ、または teams**を再度選択する] をもう一度クリックして、保持するメールボックスを指定します。 検索ボックスを使用して、ユーザーのメールボックスと配布グループを検索します (グループメンバーのメールボックスを保留にする場合)。 また、Microsoft 365 グループまたは Microsoft チームに対して、関連付けられたメールボックスにホールドを配置することもできます。 [ユーザー、グループ、チーム] チェックボックスをオンにし、[**選択**] をクリックし、[**完了**] をクリックします。
  
     > [!NOTE]
     > [**ユーザー、グループ、またはチームの選択**] をクリックして保留にするメールボックスを指定するときに、表示されるメールボックス ピッカーは空の状態です。これは、パフォーマンスを向上させるための仕様です。このリストにユーザーを追加するには、検索ボックスに名前 (3 文字以上) を入力します。
@@ -122,7 +123,7 @@ Microsoft Teams は、Office 365 グループ上に構築されています。 �
 - **追加の Microsoft 365 グループまたは Microsoft Teams サイトを保管担当者にマップするにはどうすればよいですか?また、Microsoft 365 グループと Microsoft Teams には、非 wi-fi ダイヤルを含めることができます。** Microsoft Teams は、Microsoft 365 グループに基づいて構築されています。 そのため、電子情報開示ケースでそれらを保持することは非常によく似ています。 Microsoft 365 グループと Microsoft Teams を保留にする場合は、次の点に注意してください。
   - Microsoft 365 グループおよび Microsoft Teams にあるコンテンツを配置するには、グループまたはチームに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
   
-  - Microsoft 365 グループまたは Microsoft teams のプロパティを表示するには、Exchange Online で**set-unifiedgroup**コマンドレットを実行します。 これは、Microsoft 365 グループまたは Microsoft チームに関連付けられているサイトの URL を取得するための適切な方法です。 たとえば、次のコマンドを実行すると、シニアリーダーシップチームという名前の Microsoft 365 グループの選択したプロパティが表示されます。
+  - Microsoft 365 グループまたは Microsoft teams のプロパティを表示するには、Exchange Online で**set-unifiedgroup**コマンドレットを実行します。 これは、Microsoft 365 グループまたは Microsoft チームに関連付けられているサイトの URL を取得するための適切な方法です。 たとえば、次のコマンドは、上級管理職チームという名前の Microsoft 365 グループの選択されたプロパティを表示します。
 
 
     ```text

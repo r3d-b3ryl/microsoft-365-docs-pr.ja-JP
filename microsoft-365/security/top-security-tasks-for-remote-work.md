@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943545"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046354"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -100,7 +100,7 @@ Office 365 ATP:
 - [ATP の安全なリンクの設定](office-365-security/set-up-atp-safe-links-policies.md)
 - [ATP の安全な添付ファイル機能のポリシーを設定する](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [「書き換えない」URL のカスタム リストを設定する](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [ブロックする URL のカスタム リストを設定する](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [ブロックする URL のカスタム リストを設定する](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 これらのワークロードに対して ATP を構成するには、Exchange Online 管理者および SharePoint Online 管理者と協力する必要があります。
 - [SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -131,7 +131,7 @@ Office 365 ATP と Azure ATP が構成されたので、これらの機能の組
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: 電話とタブレットの Intune モバイルアプリ保護を構成する
 
 Microsoft Intune モバイルアプリケーション管理 (MAM) を使用すると、これらのデバイスを管理することなく、電話やタブレットで組織のデータを管理および保護することができます。 次に、動作のしくみを示します。
-- デバイス上のどのアプリを管理するか、どのような動作を許可するかを決定する App Protection Policy (APP) を作成します (たとえば、マネージアプリからのデータが管理対象アプリにコピーされるのを防ぐなど)。 Platorm (iOS、Android) ごとに1つのポリシーを作成します。
+- デバイス上のどのアプリを管理するか、どのような動作を許可するかを決定する App Protection Policy (APP) を作成します (たとえば、マネージアプリからのデータが管理対象アプリにコピーされるのを防ぐなど)。 各プラットフォーム (iOS、Android) に対して1つのポリシーを作成します。
 - アプリ保護ポリシーを作成したら、承認済みアプリとアプリデータ保護を必要とするように、Azure AD で条件付きアクセスルールを作成して、これらのポリシーを適用します。
 
 アプリ保護ポリシーには多くの設定が含まれています。 幸いなことに、各設定について学習し、オプションを比較する必要はありません。 Microsoft では、開始点を推奨することで、設定の構成を簡単に適用できます。 [アプリ保護ポリシーを使用するデータ保護フレームワーク](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)には、選択可能な3つのレベルが含まれています。 
@@ -154,7 +154,8 @@ Microsoft 365 E5 プランを使用していて、リスクベースの MFA に�
 
 作成した Intune モバイルアプリ保護ポリシーと、承認済みアプリおよびアプリ保護を要求するための条件付きアクセスルールを使用すると、ゲストアカウントに適用され、組織データを保護することができます。 
 
-**注**: 準拠している pc を必要とするように pc をデバイス管理に既に登録している場合は、デバイスのコンプライアンスを強制する条件付きアクセスルールからゲストアカウントを除外する必要もあります。 
+> [!NOTE]
+> 準拠している Pc を必要とするように Pc をデバイス管理に既に登録している場合は、デバイスのコンプライアンスを強制する条件付きアクセスルールからゲストアカウントを除外する必要もあります。 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: デバイスの管理に Pc を登録し、準拠している Pc を必要とする
@@ -179,7 +180,7 @@ Microsoft 365 E5 プランを使用していて、リスクベースの MFA に�
 
 VPN コンセントレーター、中央ネットワーク出口装置 (プロキシ、データ損失防止デバイスなど)、中央のインターネット帯域幅、バックサーキット MPLS 回線、NAT 機能などのネットワーク要素は、それらを使用したビジネス全体の負荷に起因して、非常に高い負荷をかけた場所に突然配置されます。 最終的には、自宅からの作業に適応しているユーザーにとって、パフォーマンスと生産性が低下し、ユーザーの利便性が低くなります。
 
-従来、企業ネットワークを介したトラフィックのルーティングによって提供された保護の一部は、ユーザーがアクセスしているクラウドアプリによって提供されます。 この記事のこの手順に達した場合は、Microsoft 365 サービスとデータ用の高度なクラウドセキュリティコントロールのセットを実装しています。 これらのコントロールが配置されているため、リモートユーザーのトラフィックを Office 365 に直接ルーティングする準備ができている場合があります。 引き続き他のアプリケーションへのアクセスに VPN リンクが必要な場合は、分割トンネリングを実装することで、パフォーマンスとユーザーの利便性を大幅に向上させることができます。 Oガントの設定に同意したら、適切に調整されたネットワークチームで、1日以内にこれを実現できます。
+従来、企業ネットワークを介したトラフィックのルーティングによって提供された保護の一部は、ユーザーがアクセスしているクラウドアプリによって提供されます。 この記事のこの手順に達した場合は、Microsoft 365 サービスとデータ用の高度なクラウドセキュリティコントロールのセットを実装しています。 これらのコントロールが配置されているため、リモートユーザーのトラフィックを Office 365 に直接ルーティングする準備ができている場合があります。 引き続き他のアプリケーションへのアクセスに VPN リンクが必要な場合は、分割トンネリングを実装することで、パフォーマンスとユーザーの利便性を大幅に向上させることができます。 組織で契約を取得すると、適切に調整されたネットワークチームが1日以内にこれを達成できるようになります。
 
 
 詳細については、ドキュメントの次のリソースを参照してください。

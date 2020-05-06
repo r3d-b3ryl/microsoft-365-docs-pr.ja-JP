@@ -1,5 +1,5 @@
 ---
-title: テーマ
+title: テーマ-データ調査
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 4460faebf5bc138eb72e583c154ee6ee9d70c294
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: データの調査時に、テーマを使用して、一般的なアイデアや概念を検索してドキュメントを整理します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e05210036ce2db0a06b6450a611908cf2de24f19
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080914"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034511"
 ---
 # <a name="themes"></a>テーマ
 

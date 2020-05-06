@@ -9,15 +9,17 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom:
+- seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「Configure mail flow using connectors in Office 365」をご覧ください。
-ms.openlocfilehash: 9a2c876ac7696adfcabf87d4ad13e29374509f1b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: この記事では、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。
+ms.openlocfilehash: c00d39cae440bc95e26c853e107d8d7a8f4c50d8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638310"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035286"
 ---
 # <a name="set-up-your-eop-service"></a>EOP サービスを設定する
 

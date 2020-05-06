@@ -1,7 +1,7 @@
 ---
 title: Microsoft の脅威保護でカスタムの検出ルールを作成および管理する
 description: 高度な検索クエリに基づいてカスタムの検出ルールを作成および管理する方法について説明します。
-keywords: 高度な検索、脅威の検索、サイバー脅威の検出、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、ユーザー設定の検出、ルール、スキーマ、kusto、microsoft 365、Microsoft Threat Protection、RBAC、アクセス許可、MicrosoftDefender ATP
+keywords: 高度な検索、脅威の検索、サイバー脅威の検出、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、ユーザー設定の検出、ルール、スキーマ、kusto、microsoft 365、Microsoft Threat Protection、RBAC、アクセス許可、Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931759"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034866"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタムの検出ルールを作成および管理する
 
@@ -114,7 +114,7 @@ DeviceEvents
 
 エンティティの種類 (メールボックス、ユーザー、またはデバイス) ごとに1つの列のみを選択できます。 クエリで返されない列は選択できません。
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. ファイルまたはコンピューターに対するアクションを指定します。
+### <a name="4-specify-actions-on-files-or-machines"></a>4. ファイルまたはコンピューターに対するアクションを指定します。
 カスタム検出ルールは、クエリによって返されるファイルまたはコンピューターに対して、自動的にアクションを実行できます。
 
 #### <a name="actions-on-machines"></a>コンピューター上のアクション
@@ -130,7 +130,7 @@ DeviceEvents
 > [!NOTE]
 > カスタム検出ルールのアクションの許可またはブロックは、現在、Microsoft の脅威保護ではサポートされていません。
 
-### <a name="4-set-the-rule-scope"></a>4. ルールの範囲を設定します。
+### <a name="5-set-the-rule-scope"></a>5. ルールの範囲を設定します。
 ルールに含まれるデバイスを指定するようにスコープを設定します。 この範囲は、デバイスをチェックするルールに影響し、メールボックスとユーザーアカウントまたは id のみをチェックするルールには影響しません。
 
 スコープを設定するときは、次のオプションを選択できます。
@@ -140,7 +140,7 @@ DeviceEvents
 
 範囲内のデバイスからのデータのみが照会されます。 また、アクションはこれらのデバイスでのみ実行されます。
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. ルールを確認し、オンにします。
+### <a name="6-review-and-turn-on-the-rule"></a>6. ルールを確認し、オンにします。
 ルールを確認した後、[**作成**] をクリックして保存します。 カスタム検出ルールが直ちに実行されます。 この動作は、構成された頻度に基づいて、一致をチェックし、通知を生成し、応答アクションを実行することによって再度実行します。
 
 ## <a name="manage-existing-custom-detection-rules"></a>既存のカスタム検出ルールを管理する
@@ -185,6 +185,6 @@ DeviceEvents
 >テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある選択列 [&#10003;] を使用します。
 
 ## <a name="related-topic"></a>関連トピック
-- [ユーザー設定の検出の概要](custom-detections-overview.md)
+- [カスタム検出の概要](custom-detections-overview.md)
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [高度な捜索のクエリ言語について学習する](advanced-hunting-query-language.md)

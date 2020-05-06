@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 検索統計は、検索結果を検証する効果的な方法で、[検索の詳細] ポップアップページの [状態] の下に表示されます。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dc6aea96e86388ae7ecfa0fa545bc5571eeff0cd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081377"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035839"
 ---
 # <a name="search-statistics"></a>検索の統計
 
@@ -39,7 +40,7 @@ ms.locfileid: "42081377"
 
 ![検索の統計ドロップダウンリスト](../media/SearchStatisticsDropDownList.png)
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>Summary
 
 **概要**ビューでは、検索結果が場所の種類別に分類されて表示されます (たとえば、場所には Exchange メールボックスと SharePoint サイトが含まれています)。 場所の種類ごとに、次の情報が表示されます。
 

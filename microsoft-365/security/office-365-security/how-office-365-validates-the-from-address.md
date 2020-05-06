@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 での受信メッセージの電子メールアドレスの要件に関する Lear。 2017年11月現在、このサービスでは、スプーフィングを防止するために RFC 準拠のアドレスが必要になりました。
-ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'フィッシングを防止するために、Microsoft 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633980"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034084"
 ---
 # <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Microsoft 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 
@@ -109,7 +110,7 @@ From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクショ
 
 - このドメインの null MX レコードは、1つのピリオドで構成されます。
 
-以下に例を示します。
+例:
 
 ```text
 noreply.contoso.com IN MX .

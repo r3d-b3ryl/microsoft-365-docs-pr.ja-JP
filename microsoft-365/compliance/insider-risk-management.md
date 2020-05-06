@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637475"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043308"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 での Insider リスク管理
 
@@ -79,7 +79,7 @@ Microsoft 365 での内部リスクアクティビティおよび insider リス
 - 状態
 - 重要度
 - 検出された時間
-- ケース
+- Case
 - ケースの状態
 
 詳細については、「 [Insider リスク管理の警告](insider-risk-management-alerts.md)」を参照してください。
@@ -132,4 +132,5 @@ Insider リスク管理は、次の一般的なシナリオにおいて、組織
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-組織の内部リスク管理を構成する準備はできましたか? 前提条件を構成し、ポリシーを作成し、通知の受信を開始するには、「 [insider リスク管理の概要](insider-risk-management-configure.md)」を参照してください。
+- 組織で insider リスク管理ポリシーを有効にするための準備方法については、「 [Plan for insider リスク管理](insider-risk-management-plan.md)」を参照してください。
+- 前提条件を構成し、ポリシーを作成し、通知の受信を開始するには、「 [insider リスク管理の概要](insider-risk-management-configure.md)」を参照してください。

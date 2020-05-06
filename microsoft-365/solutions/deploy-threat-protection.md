@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 で脅威保護機能を展開する
-description: Microsoft 365 E5 で脅威保護機能を展開する方法について説明します。
+description: Microsoft 365 E5 に脅威保護のサービスと機能を展開する方法について説明します。
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 81b069bb5c316bea211bee98c293f2d1fcdd2422
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016098"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046264"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を展開する
 
@@ -48,7 +48,16 @@ Microsoft 365 E5 では、脅威保護機能は既定で統合されています
 
 ![M365 脅威保護信号](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-複数のセキュリティチームを持つ組織は、これらの機能を並行して実装することができます。
+|ソリューション/機能  |説明  |
+|---------|---------|
+|多要素認証および条件付きアクセス     |侵害された id とデバイスから保護します。 基礎となるため、この保護を使用して開始します。 このガイダンスで推奨される構成には、前提条件としての Azure AD Identity Protection が含まれています。     |
+|Azure Advanced Threat Protection     |  オンプレミスの Active Directory シグナルを活用して、組織に向けた高度な脅威、侵害された id、悪意のある insider 操作を特定、検出、調査する、クラウドベースのセキュリティソリューション。 オンプレミスとクラウドインフラストラクチャを保護し、依存関係または前提条件を持たず、すぐにメリットを得ることができるため、このことに注目してください。       | 
+|Office 365 Advanced Threat Protection     | 電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 マルウェア、フィッシング、スプーフィング、その他の攻撃の種類に対する保護。 これは、変更制御、変更されたシステムから設定を移行すること、およびその他の考慮事項によって、展開に時間がかかる場合があるため、お勧めします。 <br><br>注: すべての Office 365 サブスクリプション (Exchange Online Protection) に含まれている脅威保護機能も構成してください。       |
+|Microsoft Defender Advanced Threat Protection    | 高度な脅威の防止、検出、調査、および応答に役立つエンドポイント保護プラットフォーム。 これは展開に時間がかかりますが、他の管理者が責任を負う場合は、他の機能と並行して実行できます。   |
+|Microsoft Cloud App Security     |   検出、調査、ガバナンスのためのクラウドアクセスセキュリティブローカー。 これを早期に有効にして、データの収集と分析を開始することができます。 SaaS アプリ間での情報およびその他の対象保護を実装するには、計画を行い、多くの時間を要することがあります。       | 
+
+> [!TIP]
+> 複数のセキュリティチームを持つ組織は、これらの機能を並行して実装することができます。
 
 ## <a name="deploy-your-threat-protection-solution"></a>脅威保護ソリューションを展開する
 
@@ -224,7 +233,7 @@ Harvard ケネディ School [Cybersecurity キャンペーンハンドブック]
 
 Microsoft 365 には、組織内のユーザーに通知するための以下のリソースが用意されています。
 
-|概念  |関連情報  |
+|概念  |リソース  |
 |---------|---------|
 |Microsoft 365     |[カスタマイズ可能な学習経路](https://docs.microsoft.com/office365/customlearning/) <p>これらのリソースは、組織内のエンドユーザーのトレーニングをまとめる際に役立ちます。        |
 |Microsoft 365 セキュリティ |[学習モジュール: Microsoft 365 からの組み込みのインテリジェントセキュリティを使用して組織を保護します。](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>このモジュールでは、Microsoft 365 のセキュリティ機能がどのように連携するかを説明し、これらのセキュリティ機能の利点を明確に示すことができます。 |
