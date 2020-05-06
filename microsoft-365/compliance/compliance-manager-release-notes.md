@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 73fa3ac2ca15d922a74e1d3ceef6cc74a3bdedca
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-mar2020
+description: Microsoft コンプライアンスマネージャーで、新機能および既知の問題に関する情報を含むリリースノートを表示します (今後のリリースで解決されます)。
+ms.openlocfilehash: fb462939ef1b1bf0c6f7f4552359d50645b528f3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790570"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033707"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Microsoft コンプライアンスマネージャー (プレビュー) リリースノート
 
@@ -71,7 +73,7 @@ ms.locfileid: "43790570"
 
 - **スコープ内にない**とマークされたアクションアイテムの場合、アクションアイテムに割り当てられているスコアは、コンプライアンススコアの計算から除外されません。 **スコープにない**アクションアイテムは、コンプライアンススコアを増加しません。
 
-### <a name="secure-score"></a>セキュリティ スコア
+### <a name="secure-score"></a>セキュア スコア
 
 - セキュリティで保護されたスコアの結果は、一部の Microsoft 365 および Office 365 サブスクリプションの一部のアクションアイテムでは利用できません。 このような場合は、セキュリティで保護されたスコアの結果を検出できません**でした**。
 - セキュリティで保護されたスコアの結果が、対応するポリシーおよび完了していないアクションアイテムに対して返されることがあります。

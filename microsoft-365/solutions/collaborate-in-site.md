@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: b9b5a50b4d0f7486b3c86546a672b01db3a5b000
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: ゲストを使用したグループ作業のために SharePoint サイトをセットアップするために必要な Microsoft 365 構成手順について説明します。
+ms.openlocfilehash: f79846de5d4fd8661205e549db3457a7696e9770
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002279"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035997"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 

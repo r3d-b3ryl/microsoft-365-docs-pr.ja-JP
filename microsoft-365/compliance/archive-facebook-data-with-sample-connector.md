@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理者は、Facebook のビジネスページ、Twitter、LinkedIn 会社のページ、インスタント Bloomberg などのデータソースからサードパーティのデータをインポートするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理することができます。
-ms.openlocfilehash: 21023e380e4065f40edd4c3dea3f4c461d743f04
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Facebook データを Microsoft 365 にインポートするためのコネクタを設定し、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できるようにします。
+ms.openlocfilehash: a1a45b3558e8c5fb77fb1d04a1a38402000bbd1b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943236"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035159"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data"></a>コネクタをセットアップしてFacebook のデータをアーカイブする
 

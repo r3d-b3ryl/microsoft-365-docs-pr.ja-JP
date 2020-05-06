@@ -1,5 +1,5 @@
 ---
-title: " セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 のサービスおよびアプリケーションとの統合"
+title: SIEM server と Microsoft 365 のサービスおよびアプリケーションの統合
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - SIEM
+- seo-marvel-apr2020
 description: Microsoft 365 クラウドサービスおよびアプリケーションとのセキュリティ情報およびイベント管理 (SIEM) サーバーの統合の概要を理解する
-ms.openlocfilehash: a4ef144d02ebf0481481861c3dfa60a43b4f3ace
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081222"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035262"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 のサービスおよびアプリケーションとの統合
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>Summary
 
 組織は、セキュリティ情報およびイベント管理 (SIEM) サーバーの取得を使用または計画していますか。 Microsoft 365 または Office 365 との統合について疑問があるかもしれません。 この記事では、SIEM サーバーと Microsoft 365 のサービスおよびアプリケーションを統合するために使用できるリソースの一覧を示します。
 

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302914"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046330"
 ---
 # <a name="deploy-apps-to-devices"></a>アプリをデバイスに展開する
 Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft マネージドデスクトップポータルを使用している場合は、アプリを追加して展開することができます。 
@@ -38,10 +38,10 @@ Microsoft マネージドデスクトップには、 [Win32、WINDOWS MSI ベー
 
 Microsoft マネージドデスクトップポータルにサインインするか、Intune にサインインして、Microsoft Managed Desktop を検索することができます。 Microsoft マネージドデスクトップポータルへのサインインを表示します。 
 
-1.  [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mmdportal)にサインインします。 
-2.  [**インベントリ**] で、[**アプリ**] を選択します。
-3.  [アプリのワークロード] で、[**追加**] を選択します。
-4.  [**アプリの追加**] で、[**基幹業務アプリ**] または [ **Windows アプリ (Win32)**] を選択します。
+1.    [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mmdportal)にサインインします。 
+2.    [**インベントリ**] で、[**アプリ**] を選択します。
+3.    [アプリのワークロード] で、[**追加**] を選択します。
+4.    [**アプリの追加**] で、[**基幹業務アプリ**] または [ **Windows アプリ (Win32)**] を選択します。
     - 基幹**業務アプリ**を選択した場合は、基幹業務アプリを追加して構成する手順については、「 [Windows の基幹業務アプリを Microsoft Intune に追加](https://docs.microsoft.com/intune/lob-apps-windows)する」を参照してください。
     - **Windows アプリ (win32)** を選択した場合は、「 [win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) 」を参照してください。 windows アプリの追加および構成に関する指示については、を参照してください。
 
@@ -55,7 +55,7 @@ Microsoft Store for Business にサインアップしていない場合は、ア
 1. Business 管理者アカウントの Microsoft Store を使用して、 [Microsoft store For business](https://businessstore.microsoft.com)にサインインします。
 2. [**自分のグループのショッピング**] を選択します。
 3. 検索を使用して目的のアプリを見つけ、アプリを選択します。
-4. [製品の詳細] で、[**アプリの取得**] を選択します。 Microsoft Store では、組織の**製品 & サービス**にアプリが追加されます。
+4. [製品の詳細] で、[**アプリの取得**] を選択します。 Microsoft Store では、組織の**製品**にアプリが追加されます。
 
 **ビジネス向けに Intune と Microsoft Store 間の同期を強制するには**
 1. テナントのために Intune 管理者またはグローバル管理者として[Azure Portal](https://portal.azure.com/)にサインインします。
@@ -79,7 +79,7 @@ Microsoft Store for Business にサインアップしていない場合は、ア
 
 アプリごとに3つの Azure AD グループを作成します。 次の表に、必要なグループ (利用可能、必要、およびアンインストール) の概要を示します。 
 
-アプリの割り当ての種類 |   グループの使用   | Azure AD 名の例
+アプリの割り当ての種類 |    グループの使用    | Azure AD 名の例
 --- | --- | ---
 Available |  アプリは、会社のポータルアプリまたは web サイトから入手できます。 | MMD –*アプリ名*–利用可能
 必須 |  アプリは、選択したグループのデバイスにインストールされます。 | MMD –*アプリ名*–必須

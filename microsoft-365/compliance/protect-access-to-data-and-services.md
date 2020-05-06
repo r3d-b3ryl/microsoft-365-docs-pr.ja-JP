@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Microsoft 365 のデータおよびサービスへのアクセスを保護するためのランディングページ
-ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft 365 データおよびサービスへのユーザーおよびデバイスのアクセスを保護し、データ損失を防ぐ方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 90fd902f0ccd8589fa413a2b06b9d5ccf74ab1fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632212"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036030"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 

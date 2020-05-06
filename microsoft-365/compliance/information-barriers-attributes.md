@@ -1,5 +1,5 @@
 ---
-title: 情報障壁ポリシーの属性
+title: 情報バリア ポリシーの属性
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -12,15 +12,16 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: この記事は、情報バリアポリシーで使用できるさまざまな属性の参照として使用します。
-ms.openlocfilehash: ff7b6e22370c086f6b685fce4de8b61396017bf9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: これは、情報バリアセグメントを定義するために使用する Azure Active Directory ユーザーアカウント属性に関するリファレンス記事です。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600624"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035053"
 ---
-# <a name="attributes-for-information-barrier-policies"></a>情報障壁ポリシーの属性
+# <a name="attributes-for-information-barrier-policies"></a>情報バリア ポリシーの属性
 
 Azure Active Directory の特定の属性を使用して、ユーザーをセグメントにすることができます。 セグメントが定義されると、それらのセグメントは情報バリアポリシーのフィルターとして使用できます。 たとえば **、部署を使用し**て、組織内の部署別のユーザーのセグメントを定義することができます (2 つの部署に対して1人の従業員が同時に働くことは想定されていません)。 
 
@@ -88,10 +89,10 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName  |UserPrincipalName  |
-|メール   |WindowsEmailAddress    |
+|UserPrincipalName    |UserPrincipalName    |
+|メール    |WindowsEmailAddress    |
 |説明    |説明    |
-|所属   |MemberOfGroup  |
+|所属    |MemberOfGroup    |
 
 ## <a name="related-topics"></a>関連項目
 

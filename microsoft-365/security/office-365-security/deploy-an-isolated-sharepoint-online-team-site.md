@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: '概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。'
-ms.openlocfilehash: e35e380b61a94e08ff25e2e4c4bdfa28a635449e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: このステップごとの展開ガイドを使用して、Microsoft Office 365 で分離した SharePoint Online チームサイトを作成して構成します。
+ms.openlocfilehash: 772a9e5ea08871857a70cc840e377046d459a314
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637630"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036453"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 

@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について説明します。 セキュリティのニーズによっては、より多くのセキュリティを必要とする場合があります。 これらの推奨事項を出発点として使用します。
-ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: このトピックでは、Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について手順を追って説明します。
+ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949395"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043359"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために Microsoft 365 テナントを構成する
 
@@ -109,7 +111,7 @@ SharePoint 管理センターと OneDrive for Business 管理センターには�
 
 その間、次のいずれかの方法を使用して、SharePoint Online と OneDrive for Business でこれを実行します。
 
-- PowerShell を使用する場合は、「[モダン認証を使用していないアプリをブロックする](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)」を参照してください。
+- PowerShell を使用するには、「[モダン認証 (ADAL) を使用していないアプリをブロックする](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block)」を参照してください。
 
 - これを SharePoint 管理センターの [デバイスアクセス] ページ ("モダン認証を使用していないアプリからアクセスを制御する") で構成します。 [ブロック] を選択します。
 

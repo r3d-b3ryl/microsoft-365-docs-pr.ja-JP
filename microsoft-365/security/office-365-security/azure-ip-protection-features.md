@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
-description: 情報を保護するための最初の手順を説明するために、2018年7月に、Azure Information Protection の対象となるすべてのテナントに、Azure Information protection の保護機能が既定で有効になります。 以前は Office 365 では、Azure Information Protection の保護機能が Rights Management または Azure RMS と呼ばれていました。 組織に Office E3 service プランまたはより高いサービスプランがある場合は、これらの機能をロールアウトする際に、Azure Information Protection を使用して情報の保護を開始することになります。
-ms.openlocfilehash: 3efdeefd2008a5ff9f730b879190d1edc015803a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、Azure Information Protection の保護機能に展開される変更点について説明します。
+ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638274"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035606"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>既存のテナントにロールアウトする Azure Information Protection の保護機能
 

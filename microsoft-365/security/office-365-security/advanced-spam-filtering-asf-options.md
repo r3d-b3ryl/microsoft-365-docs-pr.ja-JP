@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: スパム対策ポリシーの高度なスパムフィルター (ASF) 設定 (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれる) を使用すると、管理者はスパムでよく使用される特定のメッセージプロパティを含むメッセージを識別できます。 プロパティによっては、ASF 検出によってメッセージがスパムまたは信頼度の高いスパムとしてマークされます。
-ms.openlocfilehash: 58114fa97d46a5a6f6f49c24826ace9edd811e1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: スパム対策ポリシーの高度なスパムフィルター (ASF) 設定について説明します。これにより、管理者はスパムで一般的に使用されている特定のメッセージプロパティを含むメッセージを特定することができます。
+ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634732"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034136"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Office 365 の高度なスパムフィルター (ASF) 設定
 

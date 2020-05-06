@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 コンプライアンスセンターの新機能
+title: コンプライアンスセンターでの最新の更新プログラム
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,12 +17,13 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
-ms.openlocfilehash: 4a07327f9ea830483aa3abbaa1b6bd52ca825230
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: b7edcf8c4c530c926d323fddbf795cd930efd649
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632162"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036020"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -51,7 +52,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 
 [オーストラリアの Prudential 規制機関 (APRA)](offering-APRA-Australia.md) (更新)<br>新しい規制基準に合わせてコンテンツを調整します。
 
-### <a name="customer-key"></a>カスタマー キー
+### <a name="customer-key"></a>顧客キー
 
 [顧客キーを使用したサービス暗号化](customer-key-overview.md)(新)<br>お客様キーについての新しい記事、BitLocker とサービスの暗号化などの関連概念、およびそれらの連携方法について説明します。
 
@@ -95,7 +96,7 @@ Insider リスク管理の公式リリースをサポートするために、以
 
 [保持ラベルの概要](labels.md)(更新)<br>条件に基づいて保持ラベルを適用するためのセクションには、trainable 分類子を使用するためのオプションが含まれるようになりました。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 [機密ラベルを使用して作業を開始](get-started-with-sensitivity-labels.md)する (新)<br>Azure Information Protection のお客様向けのガイダンス、プロセスの概要概要、ラベルを作成および管理するためのアクセス許可、ラベルをサポートする一般的なシナリオの一覧、および使用可能なエンドユーザードキュメントの一覧が含まれています。
 

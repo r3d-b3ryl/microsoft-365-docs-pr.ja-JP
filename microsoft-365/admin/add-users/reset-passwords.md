@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
-ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626948"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049449"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -93,7 +93,7 @@ ms.locfileid: "43626948"
     
 - 社内の別のグローバル管理者にパスワードのリセットを依頼します。
     
-- または、[Microsoft サポートにお電話ください](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_)。 
+- または、[Microsoft サポートにお電話ください](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products)。 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべてのユーザーのビジネスパスワードを同時にリセットする
 <a name="bkmk_forgot"> </a>
@@ -117,9 +117,9 @@ ms.locfileid: "43626948"
 
 PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)
   
-関連記事: [複数のユーザー アカウントのパスワードを設定する](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password)
+関連記事: [複数のユーザー アカウントのパスワードを設定する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
   
-概要については、「 [Microsoft 365 管理者向けの PowerShell](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx)」を参照してください。
+概要については、「 [Microsoft 365 管理者向けの PowerShell](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1)」を参照してください。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>社内のすべてのユーザーに対してパスワードの変更を強制する
 <a name="bkmk_forgot"> </a>
@@ -144,4 +144,4 @@ Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してくだ
 
 [元従業員を削除する](remove-former-employee.md)
 
-[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -1,5 +1,5 @@
 ---
-title: Outlook on the web を使用して、Exchange Online の S/MIME 設定を構成する
+title: S/MIME 設定の構成-web 上の Outlook の Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,12 +15,13 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Exchange online の Outlook on the web で S/MIME 設定を表示および構成するために必要な Exchange Online 管理者の簡単な説明。
-ms.openlocfilehash: 354b247c2b0e0e610e6cb0626f4a404b582db717
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2ed3f3c6289c4663c6bebecdf9ab03eacd94e373
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960323"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035096"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Outlook on the web を使用して、Exchange Online の S/MIME 設定を構成する
 

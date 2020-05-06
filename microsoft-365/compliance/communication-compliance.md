@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919694"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046295"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 
@@ -156,4 +156,6 @@ Microsoft 365 コンプライアンスセンターでは、次のポリシーテ
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-Microsoft 365 組織の通信コンプライアンスを構成する方法については、「 [configure communications コンプライアンス For microsoft 365](communication-compliance-configure.md) 」または「 [Contoso 社向けのケーススタディ](communication-compliance-case-study.md)」を参照してください。また、Microsoft Teams、Exchange Online、Yammer の通信で不快な言葉を監視するための通信コンプライアンスポリシーをどのように構成したかを確認してください。
+- 計画の情報については、「 [Plan for communication コンプライアンス](communication-compliance-plan.md)」を参照してください。
+- [Contoso 社のケーススタディ](communication-compliance-case-study.md)を参照して、Microsoft Teams、Exchange Online、Yammer の通信で不快な言葉を監視するための通信コンプライアンスポリシーをすばやく構成した方法を確認します。
+- Microsoft 365 組織の通信コンプライアンスを構成するには、「 [microsoft 365 の通信コンプライアンスを構成](communication-compliance-configure.md)する」を参照してください。

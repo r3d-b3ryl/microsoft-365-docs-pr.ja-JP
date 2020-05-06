@@ -1,5 +1,5 @@
 ---
-title: ユーザースパム通知を使用して、検疫済みメッセージを解放して報告する
+title: Microsoft 365 でのエンドユーザースパム通知
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,19 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: 管理者がスパム対策ポリシーでエンドユーザーのスパム通知を有効にすると、メッセージの受信者は検疫済みメッセージに関する定期的な通知を受信します。
-ms.openlocfilehash: 641efc024a2842f30f7754c52f624a9f668851de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、検疫済みメッセージのエンドユーザースパム通知について説明します。
+ms.openlocfilehash: 2a865130bf1fa0c09b5b68254fb604795b204c22
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636418"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035000"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>ユーザースパム通知を使用して、検疫済みメッセージを解放して報告する
 
-検疫は、exchange online またはスタンドアロンの exchange online Protection (EOP) 組織内のメールボックスを使用して、Microsoft 365 組織で潜在的に危険または不要なメッセージを保持します。 exchange online のメールボックスはありません。 詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。
+検疫を実行すると、Exchange Online メールボックスを使用している Microsoft 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織の危険性の高いメッセージや不要なメッセージが保留にされます。 詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。
 
 既定では、エンドユーザーのスパム通知はスパム対策ポリシーで無効になっています。 管理者が[エンドユーザーのスパム通知を有効](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)にすると、受信者はスパム、バルクメール、または (4 月 2020) フィッシングとして検疫されたメッセージに関する定期的な通知を受信します。
 

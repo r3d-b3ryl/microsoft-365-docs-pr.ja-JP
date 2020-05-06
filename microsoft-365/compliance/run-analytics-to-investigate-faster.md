@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: c71f3a31c49c92a24d449fae151b858645ad2df6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: ほぼ重複検出、電子メールスレッド、テーマなどの分析ツールを使用して、調査を高速化する方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e7c5103adabadf88028351f0314bcdfaa2cd4d0f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081544"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035849"
 ---
 # <a name="run-analytics-to-investigate-faster"></a>アナリティクスを使用して、より速い調査を実行する
 

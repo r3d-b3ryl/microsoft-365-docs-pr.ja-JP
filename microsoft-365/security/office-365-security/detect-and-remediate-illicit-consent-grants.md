@@ -15,13 +15,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+description: Microsoft Office 365 で不法な同意を与える攻撃を認識して修復する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808969"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034830"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不法な同意の付与を検出して修復する
 
@@ -159,9 +160,9 @@ ms.locfileid: "43808969"
 
 - テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。 これを行うには、[統合アプリをオンまたはオフ](https://docs.microsoft.com/office365/admin/misc/integrated-apps)にする手順に従ってください。
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>セキュリティで保護された Microsoft 365 (cybersecurity pro など)
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
 
-Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。 Microsoft 365 セキュリティロードマップを使用して、[最初の30日間、90日間、](security-roadmap.md) microsoft の推奨ベストプラクティスを実装し、microsoft の365テナントをセキュリティで保護することをお勧めします。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。 [Microsoft 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Microsoft 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
 
 - 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

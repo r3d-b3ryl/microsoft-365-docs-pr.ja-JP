@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: 台湾の Microsoft 365 for business e 請求書について説明します。
-ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632709"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045882"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Microsoft 365 for business の電子請求書について理解する (台湾)
 
@@ -55,7 +55,7 @@ Microsoft は、現在の最新の請求書を電子請求書で、 **9 月 15**
   
 アカウントを作成したら、次の手順に従って、管理センターを使用して VAT ID を更新することができます。
   
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
     
 2. サブスクリプションを選択して、[**その他のアクション**] を選択します。
     

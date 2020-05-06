@@ -1,5 +1,5 @@
 ---
-title: 検索クエリのビルド
+title: 検索クエリを作成する-データ調査
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: Microsoft 365 でデータ調査を使用してデータを検索するときに検索範囲を絞り込むには、キーワードと条件を使用します。
-ms.openlocfilehash: b6769d662f843622a537a5ce93c1c5331b00fc3f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 95466d0e7c7109001fef001cc0d5bca5b6d658ed
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079028"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034115"
 ---
 # <a name="build-search-queries"></a>検索クエリのビルド
 

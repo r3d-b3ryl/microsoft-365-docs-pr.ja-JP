@@ -15,13 +15,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: この記事に記載されている Windows PowerShell スクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで既存のコンテンツ検索をすばやく複製します。 検索を複製すると、元の検索と同じプロパティを含む新しい検索 (新しい名前) が作成されます。 その後、キーワードクエリまたは日付範囲を変更して新しい検索を編集し、それを実行します。
-ms.openlocfilehash: bba683e7ffbad6177a6214ebb36e3aaece7aada7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: この記事に記載されている Windows PowerShell スクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで既存のコンテンツ検索をすばやく複製します。
+ms.openlocfilehash: 013a3cd04b665e1da800638a2335adb034878a4a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942940"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035649"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 
@@ -35,7 +37,7 @@ Office 365 または Microsoft 365 のコンプライアンスセンターで、
     
 - 検索結果のサイズを小さくします。 たとえば、エクスポートする結果が多すぎる場合は、検索結果の複製を作成し、日付範囲に基づく検索条件を追加して、検索結果の数を減らすことができます。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - このトピックで説明するスクリプトを実行するには、セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。
     

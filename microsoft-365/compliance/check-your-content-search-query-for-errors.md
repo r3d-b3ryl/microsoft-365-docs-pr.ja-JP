@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-description: 検索を実行する前に、サポートされていない文字や小文字のブール演算子などのエラーと入力ミスについては、キーワードクエリのコンテンツ検索を確認してください。 エラーが見つかった場合は、変更されたクエリを提案します。
-ms.openlocfilehash: bd87faa774f8449833287ff0c583f9e15a4298ff
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: サポートされていない文字や小文字のブール演算子などのエラーや入力ミスについて、コンテンツ検索のキーワードクエリをチェックする方法について説明します。
+ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942910"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035629"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>コンテンツ検索クエリでエラーを確認する
 

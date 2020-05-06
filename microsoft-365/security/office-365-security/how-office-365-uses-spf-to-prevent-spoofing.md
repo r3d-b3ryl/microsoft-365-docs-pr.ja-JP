@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 が Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法
+title: Sender Policy Framework (SPF) によるスプーフィング防止
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: '概要: この記事では、Microsoft 365 が DNS で Sender Policy Framework (SPF) TXT レコードを使用して、カスタムドメインから送信されたメッセージを宛先の電子メールシステムが信頼するようにする方法について説明します。 これは、Microsoft 365 から送信される送信メールに適用されます。 Microsoft 365 から Microsoft 365 内部の受信者に送信されるメッセージは、常に SPF に合格します。'
-ms.openlocfilehash: d73fb881b8395c6c1383cca70e506694795f1364
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Microsoft 365 が DNS で Sender Policy Framework (SPF) TXT レコードを使用して、宛先の電子メールシステムがカスタムドメインから送信されたメッセージを信頼していることを確認する方法について説明します。
+ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633992"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036391"
 ---
-# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 が Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法
+# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
 
  **概要:** この記事では、Microsoft 365 が DNS で Sender Policy Framework (SPF) TXT レコードを使用して、カスタムドメインから送信されたメッセージを宛先の電子メールシステムが信頼するようにする方法について説明します。 これは、Microsoft 365 から送信される送信メールに適用されます。 Microsoft 365 から Microsoft 365 内部の受信者に送信されるメッセージは、常に SPF に合格します。
 
@@ -191,7 +193,7 @@ v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365"></a>例: 複数のオンプレミスメールサーバーと Microsoft 365 のための SPF TXT レコード
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
-送信メールサーバーが複数ある場合は、SPF TXT レコードに各メールサーバーの IP アドレスを含め、各 IP アドレスをスペースで区切った後に "ip4:" ステートメントを続けます。 以下に例を示します。
+送信メールサーバーが複数ある場合は、SPF TXT レコードに各メールサーバーの IP アドレスを含め、各 IP アドレスをスペースで区切った後に "ip4:" ステートメントを続けます。 例:
 
 ```text
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all

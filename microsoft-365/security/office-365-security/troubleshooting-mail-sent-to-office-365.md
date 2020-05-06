@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: この記事では、Microsoft 365 の受信トレイに電子メールを送信しようとしたときに問題が発生している送信者のトラブルシューティングに関する情報を提供し、顧客への一括メール送信のベストプラクティスを提供します。
-ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、microsoft 365 お客様に一括メールを送信するためのベストプラクティス &、Microsoft 365 の受信トレイへの電子メールの送信に関するトラブルシューティング情報を提供します。
+ms.openlocfilehash: 849707ee8b703f13ac12ecb414a8ed9ea6421704
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631147"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036742"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Office 365 に送信されるメールのトラブルシューティング
 

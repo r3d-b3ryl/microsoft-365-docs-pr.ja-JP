@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
-description: 管理者は、すべてのユーザーのすべての種類の検疫済みメッセージを表示、リリース、および削除できます。 管理者のみが、マルウェア、信頼度の高いフィッシング、またはメールフロールール (トランスポートルール) の結果として検疫されたメッセージを管理できます。
-ms.openlocfilehash: 1ae64b71d29f9e2d973f5a73cc19790fe0736913
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、管理者が Office 365 でユーザーの検疫済みメッセージやファイルを管理する方法について説明します。
+ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635356"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036175"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>管理者として検疫済みメッセージとファイルを管理する
 
-検疫は、exchange online またはスタンドアロンの exchange online Protection (EOP) 組織内のメールボックスを使用して、Microsoft 365 組織で潜在的に危険または不要なメッセージを保持します。 exchange online のメールボックスはありません。 詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。
+検疫を実行すると、Exchange Online メールボックスを使用している Microsoft 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織の危険性の高いメッセージや不要なメッセージが保留にされます。 詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。
 
 管理者は、すべてのユーザーのすべての種類の検疫済みメッセージを表示、リリース、および削除できます。 マルウェア、精度の高いフィッシング、またはメールフロールール (トランスポートルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは、管理者だけです。 管理者は、誤検知を Microsoft に報告することもできます。
 
@@ -35,7 +37,7 @@ Office 365 の管理者は、事前脅威保護 (ATP) を使用して、SharePoi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- セキュリティ & コンプライアンスセンターを開くには、に<https://protection.office.com>移動します。 検疫ページを直接開くには、<https://protection.office.com/quarantine> にアクセスします。
+- セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com> へ移動します。 検疫ページを直接開くには、<https://protection.office.com/quarantine> にアクセスします。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 Exchange Online Protection PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -105,13 +107,13 @@ Office 365 の管理者は、事前脅威保護 (ATP) を使用して、SharePoi
 
      - **ポリシー**: メッセージは、メールフロールール (トランスポートルールとも呼ばれます) の条件に一致しました。
 
-     - **[バルク]**
+     - **バルク**
 
      - **フィッシング**
 
      - **マルウェア**
 
-     - **[スパム]**
+     - **スパム**
 
      - **精度の高いフィッシング**
 
@@ -189,7 +191,7 @@ Office 365 の管理者は、事前脅威保護 (ATP) を使用して、SharePoi
 
   - メッセージを受信していない受信者のみが、潜在的な受信者の一覧に表示されます。
 
-- **[メッセージ ヘッダーを表示]**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 ヘッダーフィールドと値を詳細に分析するには、メッセージヘッダーテキストをクリップボードにコピーし、[ **Microsoft メッセージヘッダーアナライザー** ] を選択してリモート接続アナライザーに移動します (このタスクを完了し365ない場合は、右クリックして [**新しいタブで開く]** を選択します)。 メッセージ ヘッダーを [Microsoft メッセージ ヘッダー アナライザー] セクションのページに貼り付け、**[ヘッダーを分析]** を選択します。
+- **[メッセージ ヘッダーを表示]**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 ヘッダー フィールドと値を詳しく分析するには、メッセージ ヘッダー テキストをクリップボードにコピーし、**[Microsoft メッセージ ヘッダー アナライザー]** を選択して、リモート接続アナライザーに移動します (このタスクを実行するために Microsoft 365 を閉じたくない場合は、右クリックして **[新しいタブで開く]** を選択します)。 メッセージ ヘッダーを [Microsoft メッセージ ヘッダー アナライザー] セクションのページに貼り付け、**[ヘッダーを分析]** を選択します。
 
 - **[メッセージのプレビュー]**: 表示されるポップアップ ウィンドウで、次のいずれかのオプションを選択します。
 

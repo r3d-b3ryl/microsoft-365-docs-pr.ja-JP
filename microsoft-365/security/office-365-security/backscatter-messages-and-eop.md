@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: Backscatter は、偽造された電子メールアドレスに送信される自動バウンスメッセージです。 バックスキャター DNSBL は、バックスキャッターメッセージを送信するサーバーを識別します (多くの正当な電子メールソースが含まれている場合があります)。 スパム対策リストではないため、バックスキャター DNSBL から自分自身を削除しようとすることはありません。
-ms.openlocfilehash: 22eeec29722cf1742e096234aad95b9f6ee407e2
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、バック散布と Microsoft Exchange Online Protection (EOP) について説明します。
+ms.openlocfilehash: 14460b75920b053461722b5a129d785fb6952a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895407"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035594"
 ---
 # <a name="backscatter-and-eop"></a>Backscatter and EOP
 

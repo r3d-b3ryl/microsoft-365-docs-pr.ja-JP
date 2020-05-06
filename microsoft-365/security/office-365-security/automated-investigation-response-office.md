@@ -1,5 +1,5 @@
 ---
-title: 自動化された調査と応答 (AIR)
+title: 自動化された調査と応答 (AIR) の概要
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
-ms.custom: air
-ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638550"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035618"
 ---
-# <a name="automated-investigation-and-response-air"></a>自動化された調査と応答 (AIR)
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Microsoft 365 の自動調査と応答 (AIR) の概要
 
 セキュリティの警告がトリガーされたときに、そのような警告を確認し、組織を保護するための手順を実行することは、セキュリティ運用チームにかかっています。 場合によっては、セキュリティ運用チームが、トリガーされた通知の量に圧倒されることがあります。 自動化された調査と応答 (AIR) 機能が役立ちます。 AIR により、セキュリティ運用チームがより効率的かつ効果的に運用できるようになります。 空気機能には、今日の既知の脅威への対応として、自動化された調査プロセスが含まれます。 適切な修復処置で承認を受けることができ、セキュリティ運用チームが検出された脅威に対応できるようになります。 
 

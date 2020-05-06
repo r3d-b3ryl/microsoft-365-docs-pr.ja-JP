@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 情報保護フレームワークの秘密度ラベルを使用して、組織のデータを分類して保護し、ユーザーの生産性とコラボレーション機能を損なわないようにします。 これらのラベルは、フッターや透かしなどの暗号化の視覚的マーキングを含む保護設定を適用できます。
-ms.openlocfilehash: d31faa5dde212060f5e7b3c075cf4bc6fb3bef5f
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957307"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022155"
 ---
 # <a name="learn-about-sensitivity-labels"></a>機密度ラベルの詳細
 
@@ -138,20 +138,24 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 
 ラベル ポリシーを使用すると、次のことができます。
 
-- **ラベルを表示させるユーザーとグループを選択する。** Azure AD の[動的メンバーシップ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループにラベルを発行することができます。
+- **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([動的メンバーシップ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
 
-- ラベル ポリシーに含まれているユーザーとグループが作成したすべての新しいドキュメントと電子メールに**既定のラベルを適用する**。 このオプションは、[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md)、コンテナーにも適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。 既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 
+- ラベル ポリシーに含まれているユーザーとグループが作成したすべての新しいドキュメントと電子メールに**既定のラベルを適用する**。 このオプションは、[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md)、コンテナーにも適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。 
+    
+    既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 通常、ドキュメントの既定のラベルとして暗号化を適用するラベルを選択することはお勧めできません。 たとえば、多くの組織は、[暗号化をサポートするアプリ](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)を所有していないか、[認証可能なアカウント](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#supported-scenarios-for-opening-protected-documents)を使用していない可能性がある外部ユーザーとドキュメントを送信して共有する必要があります。
 
 - **ラベル変更の正当な理由を要求する。** ユーザーがラベルを削除しようとした場合、またはラベルを低い順序番号のラベルに置き換えた場合は、ユーザーにこの操作を実行する正当な理由を要求できます。 たとえば、ユーザーは「社外秘」というラベルの付いたドキュメント (順序番号 3) を開き、そのラベルを「公開」というラベル (順序番号 1) に置き換えます。 現在、正当な理由は、管理者がレビューするための[ラベル分析](label-analytics.md)に送信されません。 ただし、[Azure Information Protection の統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)は、この情報を [Azure Information Protection の分析](https://docs.microsoft.com/azure/information-protection/reports-aip)に送信します。
 
     ![ユーザーに正当性を入力するように求めるダイアログ](../media/Sensitivity-label-justification-required.png)
 
-- **メールとドキュメントにラベルを適用することをユーザーに義務付ける。** これは必須ラベルとも呼ばれ、ユーザーがドキュメントを保存したりメールを送信したりできるようになる前に、ラベルを適用することを要求できます。 これは、ラベル付けの適用範囲を広げる場合に使用できるオプションです。 ラベルはユーザーが手動で割り当てることも、構成した条件に従って自動的に適用することも、既定 (上記の既定のラベルのオプション) で適用することもできます。 これは、ラベル付けがユーザーに要求されている場合に Outlook に表示されるダイアログです。
+- **メールとドキュメントにラベルを適用することをユーザーに義務付ける。** これは必須ラベルとも呼ばれ、ユーザーがドキュメントを保存したりメールを送信したりできるようになる前に、ラベルを適用することを要求できます。 ラベルはユーザーが手動で割り当てることも、構成した条件に従って自動的に適用することも、既定 (上記の既定のラベルのオプション) で適用することもできます。 ラベル付けがユーザーに要求されている場合に Outlook に表示されるダイアログの例:
 
     ![要求されるラベルを適用することをユーザーに求める Outlook のダイアログ](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > 必須ラベルを付けるには、Azure Information Protection のサブスクリプションが必要です。 この機能を使用するには、[Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)をインストールする必要があります。 このクライアントは Windows 上でのみ実行できるため、この機能は Mac、iOS、および Android ではまだサポートされていません。
+    > 現在、必須のラベル付けには [Azure Information Protection の統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)が必要です。 このクライアントは Windows 上でのみ実行できるため、この機能は Mac、iOS、および Android ではまだサポートされていません。
+    
+    このオプションを使用して、ラベル付けの適用範囲を広げることを検討してください。 ただし、ユーザーのトレーニングを実施しない場合、この設定は不正確なラベル付けにつながる可能性があります。 さらに、既定のラベルも設定しない限り、必須のラベル付けにより頻繁にダイアログが表示され、ユーザーを苛立たせる可能性があります。 
 
 - **カスタム ヘルプ ページへのリンクを提供する。** 秘密度ラベルや使用方法についてユーザーが十分に理解していない場合は、Office アプリの **[秘密度ラベル]** メニューの一番下に表示される、[詳細情報] の URL を提供できます。
 

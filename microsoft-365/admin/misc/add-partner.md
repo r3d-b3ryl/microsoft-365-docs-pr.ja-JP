@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: サブスクリプションアドバイザーパートナーを Microsoft 365 の購入時にレコードのパートナーとして追加する方法、パートナーを変更する方法、またはサブスクリプションからパートナーを削除する方法について説明します。
-ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627970"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045286"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>サブスクリプション アドバイザー パートナーを追加、変更、または削除する
 
@@ -114,19 +114,19 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
     
 2. 複数のサブスクリプションを持っている場合は、編集するサブスクリプションを選択します。
   
 3. [サブスクリプション] ページで、[**パートナー** ] タブを選択し、追加するパートナーのパートナーネットワーク id を入力します。パートナーのパートナーの id を取得するには、パートナーに依頼します。
     
-4. [**追加**] を選択します。
+4. **[追加]** を選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
     
 2. 複数のサブスクリプションを持っている場合は、編集するサブスクリプションを選択します。
   
@@ -161,7 +161,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
     
 2. サブスクリプションが複数ある場合は、編集するサブスクリプションの名前を選びます。
     
@@ -173,7 +173,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
   
 2. サブスクリプションが複数ある場合は、編集するサブスクリプションの名前を選びます。
     
@@ -185,7 +185,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
   
 2. サブスクリプションが複数ある場合は、編集するサブスクリプションの名前を選びます。
     
@@ -209,7 +209,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1.  管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1.  管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
     
 2. サブスクリプションが複数ある場合は、編集するサブスクリプションの名前を選びます。
     
@@ -221,7 +221,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. サブスクリプションが複数ある場合は、編集するサブスクリプションの名前を選びます。
     
@@ -233,7 +233,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. サブスクリプションが複数ある場合は、編集するサブスクリプションの名前を選びます。
     

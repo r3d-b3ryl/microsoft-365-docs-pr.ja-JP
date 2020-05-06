@@ -1,5 +1,5 @@
 ---
-title: セキュリティ/コンプライアンス センターのスマート レポートとインサイト
+title: Smart reports, insights-Microsoft 365 Security & コンプライアンスセンター
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
-description: セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報の概要について説明します。
-ms.openlocfilehash: 0ce3a0208344e328f4b494ab4d04c517fc2a21a6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: セキュリティ/コンプライアンスセンターで利用できるスマートレポートと洞察、およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2825aeac685ba4742165ed5e01829e24c9287c44
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637168"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035546"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターのスマートレポートと洞察
 
