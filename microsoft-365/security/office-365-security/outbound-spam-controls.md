@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft 365 と Exchange Online Protection (EOP) が送信スパムからお客様を保護する方法と、大量のメールを送信する必要がある場合の対処方法について説明します。
-ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 と Exchange Online Protection (EOP) が送信スパムからお客様を保護する方法、および大量のメールを送信する必要がある場合の対処方法について説明します。
+ms.openlocfilehash: ffedcf68489914865c00eb68aecfa6c74e519ee2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634498"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033928"
 ---
 # <a name="outbound-spam-protection"></a>送信スパム保護
 

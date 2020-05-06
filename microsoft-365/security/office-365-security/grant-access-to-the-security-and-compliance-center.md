@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
-ms.openlocfilehash: 5110bcecb6731cbf51023c6df19bed30bcba72c1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Microsoft 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638060"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036670"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
@@ -67,7 +68,7 @@ ms.locfileid: "43638060"
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>PowerShell を使用して、別のユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する
 
-1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。
 

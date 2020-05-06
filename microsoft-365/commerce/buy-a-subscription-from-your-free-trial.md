@@ -1,5 +1,5 @@
 ---
-title: 無料試用版から Microsoft 365 for business のサブスクリプションを購入する
+title: 無料試用版から一般法人向け Microsoft 365 のサブスクリプションを購入する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,14 +27,14 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Microsoft 365 for business のサブスクリプションを購入します。 試用版と同じ種類のサブスクリプションを購入することも、別のプランを購入することもできます。
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634946"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045802"
 ---
-# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>無料試用版から Microsoft 365 for business のサブスクリプションを購入する
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>無料試用版から一般法人向け Microsoft 365 のサブスクリプションを購入する
 
 Microsoft 365 を試用したので、購入する準備ができました。試用版から Microsoft 365 を購入する際には、次の2つのオプションがあります。
   
@@ -50,9 +50,9 @@ Microsoft 365 を試用したので、購入する準備ができました。試
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
-2. [**製品とサービス**] ページで、購入するサブスクリプションを探します。 [**ライセンス**] セクションで、[**サブスクリプションの購入**] を選択します。
+2. [**製品**] ページで、購入するサブスクリプションを検索します。 [**ライセンス**] セクションで、[**サブスクリプションの購入**] を選択します。
 
 3. サブスクリプションを月単位にするか年間契約にするかを選択し、[**チェックアウト**] を選択します。
 

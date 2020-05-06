@@ -16,14 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 電子情報開示の一般的な問題を調査、トラブルシューティング、解決します。
+description: Office 365 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順について説明します。
 siblings_only: true
-ms.openlocfilehash: 5bcbe498cb650268dc8ff6f2b41a6201e75a8192
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f8b73e886e9aa639ff5575f10822417411a0784e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631772"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035669"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、および解決する
 

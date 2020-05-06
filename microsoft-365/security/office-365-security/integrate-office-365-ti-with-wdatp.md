@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する
+title: Office 365 の ATP と Microsoft Defender ATP を統合する
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,12 +17,13 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合し、より詳細な脅威管理情報を表示します。
-ms.openlocfilehash: e416d70baf7498b0163d5bd8aa8e923585a5e5a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1574def6959bf63f061ff35bae71aed9657de436
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633811"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036367"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する
 
@@ -34,7 +35,7 @@ ms.locfileid: "43633811"
   
 この例では、電子メールメッセージの受信者に4つのデバイスがあり、1つに通知があることがわかります。 デバイスのリンクをクリックすると、Microsoft Defender セキュリティセンターにそのページが表示されます。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 - 組織では、Office 365 ATP Plan 2 (または Office 365 E5) と Microsoft Defender ATP を所有している必要があります。
     

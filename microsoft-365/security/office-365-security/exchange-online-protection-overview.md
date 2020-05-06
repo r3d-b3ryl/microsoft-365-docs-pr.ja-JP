@@ -11,13 +11,15 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
-description: マイクロソフト Exchange Online Protection (EOP) は、クラウドベースの電子メール フィルタリング サービスであり、スパムやマルウェアから組織を保護するのに役立ち、メッセージング ポリシー違反から組織を保護する機能が含まれています。
-ms.openlocfilehash: a87b9b40d1a95f7c4da194ffd2138aa9d1726032
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Microsoft Exchange Online Protection (EOP) と、スパムやマルウェアから組織を保護する方法について説明します。
+ms.openlocfilehash: 4630c58bef49f13a1ae1536336afbac170418dcc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083122"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036526"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -74,7 +76,7 @@ EOP のセットアップは、特にコンプライアンス ルールが少な
 
 すでに EOP を購入している場合は、「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照して、メッセージング環境を保護するように EOP を構成するために必要なすべての手順が完了していることを確認してください。
 
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [EOP の機能](eop-features.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 検索と分析の設定を構成する
+title: 検索と分析の設定を構成する-電子情報開示
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: ケースのすべてのレビューセットに適用される高度な電子情報開示設定を構成します。 これには、分析と OCR の設定が含まれます。
-ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588810"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033677"
 ---
 # <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
 

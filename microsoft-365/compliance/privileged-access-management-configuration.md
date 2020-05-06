@@ -14,21 +14,23 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 196685eda6818b399c778363ee458f6f2792a33a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Office 365 での特権アクセス管理の有効化と構成の詳細については、この記事を使用してください。
+ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626513"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036422"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の使用を開始する
 
 このトピックでは、組織で特権アクセス管理を有効にして構成する手順を説明します。 Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 特権アクセス管理を使い始める前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 特権アクセス管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 

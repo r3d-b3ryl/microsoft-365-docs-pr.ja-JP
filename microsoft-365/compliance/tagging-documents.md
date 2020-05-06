@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1c0eaed5d5971a55e4e9851bac3133bcd961eb36
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: レビューセット内のドキュメントにタグ付けを行うと、不要なコンテンツを削除し、高度な電子情報開示ケースに関連するコンテンツを特定することができます。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 445bf9a0ee5959c4972920a74e7bd1596d9edca1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557697"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034551"
 ---
 # <a name="tag-documents-in-a-review-set"></a>レビュー セット内のドキュメントをタグ付けする
 
-レビューセットのコンテンツを整理することは、電子情報開示プロセスでさまざまなワークフローを完了するために重要です。 これには、次の内容が含まれます。
+レビューセットのコンテンツを整理することは、電子情報開示プロセスでさまざまなワークフローを完了するために重要です。 これには以下が含まれます。
 
 - 不要なコンテンツのカリング
 

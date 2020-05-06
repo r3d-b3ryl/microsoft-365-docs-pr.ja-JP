@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection の高度な捜索の概要
+title: 概要-高度な検索
 description: Microsoft 365 の高度な捜索クエリと、それらを使用してネットワーク内の脅威と弱点を積極的に発見する方法について学習する
 keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、カスタム検出、スキーマ、kusto、microsoft 365、Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: dc91b97f48d6a5ca76c405e4c1006dceb9dc0b34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929030"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033976"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -35,7 +36,7 @@ ms.locfileid: "42929030"
 
 同じ脅威を探しているクエリを使用して、カスタムの検出ルールを構築できます。 これらのルールは自動的に実行され、さまざまなイベントやシステムの状態を確認して応答します。これには、違反の疑いがあるアクティビティや不適切なコンピューターが含まれます。
 
-Microsoft 365 セキュリティセンターでは、高度な検索では、さまざまなワークスペースからデータを参照するクエリをサポートしています。これには、Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure からのデバイス、メール、アプリ、id に関するデータが含まれます。ツール. 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
+Microsoft 365 セキュリティセンターでは、高度な検索はさまざまなワークスペースからのデータになるクエリをサポートしています。これには、Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からのデバイス、メール、アプリ、id に関するデータが含まれます。 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 
@@ -50,12 +51,6 @@ Microsoft 365 セキュリティセンターでは、高度な検索では、さ
 | **クエリを最適化する** | 効率的なクエリおよびメールとデバイスからのデータを結合するクエリを作成する方法を理解します。 | - [クエリのベストプラクティス](advanced-hunting-shared-queries.md) <br>- [複数のデバイスとメールを探します。](advanced-hunting-best-practices.md) |
 | **カスタム検出ルールを作成する** | 高度な検索クエリを使用して、通知をトリガーし、応答アクションを自動的に適用する方法について説明します。 | - [ユーザー設定の検出の概要](custom-detections-overview.md)<br>- [カスタム検出ルール](custom-detection-rules.md) |
 
-## <a name="get-help-as-you-write-queries"></a>クエリを記述するときにヘルプを参照する
-次の機能を利用して、クエリをより速く記述します。
-- **Autosuggest** : クエリを作成すると、高度な検索によって IntelliSense から候補が表示されます。 
-- **スキーマ リファレンス** — テーブルとその列のリストを含むスキーマ リファレンスが作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
-
-
 ## <a name="related-topics"></a>関連項目
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
@@ -63,4 +58,4 @@ Microsoft 365 セキュリティセンターでは、高度な検索では、さ
 - [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
-- [ユーザー設定の検出の概要](custom-detections-overview.md)
+- [カスタム検出の概要](custom-detections-overview.md)

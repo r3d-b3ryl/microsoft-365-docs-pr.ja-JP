@@ -13,13 +13,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Office 365 の保護の適用順序、および保護ポリシーの優先度の値によって、どのポリシーが適用されるかを決定する方法について説明します。
-ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 の保護の適用順序、および保護ポリシーの優先度の値によってどのポリシーが適用されるかを決定する方法について説明します。
+ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633968"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036718"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
@@ -33,7 +35,7 @@ Microsoft 365 ユーザーとして、受信メールに複数の形式の保護
 
   |||||
   |---|---|---|---|
-  |**Priority**|**電子メール保護**|**カテゴリ**|**管理対象**|
+  |**[優先度]**|**電子メール保護**|**カテゴリ**|**管理対象**|
   |1-d|マルウェア|CAT: 男性 W|[Office 365 でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
   |pbm-2|フィッシング|CAT: PHSH|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |1/3|高確度スパム|CAT: HSPM|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
@@ -54,7 +56,7 @@ Microsoft 365 ユーザーとして、受信メールに複数の形式の保護
 
   |||||
   |---|---|---|---|
-  |**ATP のフィッシング対策ポリシー**|**Priority**|**ユーザー偽装**|**スプーフィング対策**|
+  |**ATP のフィッシング対策ポリシー**|**[優先度]**|**ユーザー偽装**|**スプーフィング対策**|
   |ポリシー A|1-d|オン|オフ|
   |ポリシー B|pbm-2|オフ|オン|
   |

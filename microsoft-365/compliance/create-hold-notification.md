@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 高度な電子情報開示ケースの [通信] タブを使用して、保管担当者通知ワークフローを管理します。
-ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+description: 高度な電子情報開示ケースの通信ツールを使用して、法的情報保留通知の送信、収集、追跡を行います。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280235"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035789"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的情報保留通知を作成する
 
@@ -86,7 +87,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 4. 保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。 手順2で定義したポータルコンテンツが、発行通知の最後に追加されます。 
 
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 
 ### <a name="re-issuance-notification"></a>再発行の通知
 
@@ -102,7 +103,7 @@ Advanced eDiscovery 保管担当者 communications を使用すると、組織�
 
 4. 保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。 手順2で定義したポータルコンテンツが再発行通知の最後に追加されます。
 
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 
 > [!NOTE]
 > ポータルコンテンツが変更された場合 (**通信の編集**ウィザードの [**ポータルコンテンツの定義**] ページで)、再発行の通知は、通知に割り当てられたすべての保管担当者に自動的に送信されます。 通知が送信されると、保管担当者は保留通知を再認識するように求められます。 通知またはエスカレーションワークフローを設定している場合は、それらも再起動されます。 その他のケース管理イベントが通信を開始する場合の詳細については、「[通知を](#events-that-trigger-notifications)発生させるイベント」を参照してください。

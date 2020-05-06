@@ -16,19 +16,21 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online および Exchange Online Protection (EOP) で、スプーフィングされた送信者を許可または禁止し、その他のスプーフィングインテリジェンス設定を構成する方法について説明します。
-ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、電子メールのスプーフィングから保護するためにスプーフィングインテリジェンスを使用および管理する方法について説明します。
+ms.openlocfilehash: 32a7668edced5c9dbca2f7b16ff00253b56a5988
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949239"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034246"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>Microsoft 365 でスプーフィングインテリジェンスを構成する
 
 Exchange Online または exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) のお客様のために、メールボックスが含まれる Microsoft 365 顧客は、受信電子メールメッセージが EOP 年 10 2018 月現在のスプーフィングから自動的に保護されます。 EOP は、組織のフィッシングに対する全体的な防衛の一環としてスプーフィングインテリジェンスを使用します。 詳細については、「 [Microsoft 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
 
-送信者が電子メールアドレスをスプーフすると、組織のドメインのいずれかのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見えます。 スパムやフィッシング詐欺メールを送信するための送信者スプーフィングを行う攻撃者は、ブロックする必要があります。 しかし、正当な送信者がスプーフィングになっているシナリオもあります。 次に例を示します。
+送信者が電子メールアドレスをスプーフすると、組織のドメインのいずれかのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見えます。 スパムやフィッシング詐欺メールを送信するための送信者スプーフィングを行う攻撃者は、ブロックする必要があります。 しかし、正当な送信者がスプーフィングになっているシナリオもあります。 例:
 
 - 内部ドメインのスプーフィングの正当なシナリオ:
 

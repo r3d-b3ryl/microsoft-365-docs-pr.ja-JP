@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 高度な電子情報開示ケースに関連付けられた検索結果を追加します。 アイテムは元の場所からコピーされ、Microsoft によって提供される Azure ストレージの場所にコピーされます。 また、アイテムもインデックスが再作成され、高度な電子情報開示によって画像ファイルの OCR が実行され、レビューと分析のための画像テキストがアップロードされます。
-ms.openlocfilehash: b3710a91585d801f55b36622d6048a2c4bc58a7d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 高度な電子情報開示ケースのレビューセットに検索結果またはこれらの検索結果のサンプルを追加する方法について説明します。
+ms.openlocfilehash: 5e0cdb12a34b3b69c41546e6fcb356ed905189dd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632302"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034671"
 ---
 # <a name="add-search-results-to-a-review-set"></a>検索結果をレビュー セットに追加する
 

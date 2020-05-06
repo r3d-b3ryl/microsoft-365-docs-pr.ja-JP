@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 9eef3b38ceef7efc42e1f66c45069f51a0a95d45
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Office 365 以外のコンテンツのインポート機能を使用して、Office 以外の365ドキュメントをデータ調査の証拠にアップロードする方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632632"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034415"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Microsoft 以外の365データを証拠に読み込む
 
 データ調査で分析する必要があるすべてのドキュメントが Microsoft 365 にあるわけではありません。 Microsoft 以外の365コンテンツインポート機能を使用すると、Microsoft 365 に存在しないドキュメントをデータ調査で分析できるように、証拠としてアップロードすることができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 この手順の説明に従って Microsoft 以外の365機能をアップロードするには、次の条件を持っている必要があります。
 

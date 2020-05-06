@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
-description: Office 365 Advanced Threat Protection を使用して、組織のブロック URL リストを設定する方法について説明します。ブロックされた URL は、ATP の安全なリンクに関するポリシーに従って、メール メッセージと Office ドキュメントに適用されます。
-ms.openlocfilehash: ff8709a8bf0f8afc27ace2b3977be975f42c33a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 Advanced Threat Protection を使用して、組織でブロックされている Url の一覧を設定する方法について説明します。
+ms.openlocfilehash: 9e0c6e75358c97a21ab0765edf5a15bafe53d75e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638406"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035374"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、ブロックされたカスタムの Url リストを設定する
 

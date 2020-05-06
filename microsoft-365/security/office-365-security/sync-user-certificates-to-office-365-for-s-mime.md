@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
-description: S/MIME 保護されたメッセージを送信するには、適切な証明書をセットアップする必要があります。Exchange Online 経由で暗号化メッセージを送信するために、送信者の電子メール プログラムでは受信者の公開証明書を使用してメッセージを暗号化します。この公開 X.509 証明書を Office 365 に公開する必要があります。
-ms.openlocfilehash: a62af3b176f29ec2bd8c97ae02178c87b7a63544
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、S/MIME で保護されたメッセージを Exchange Online で送信する前に、Office 365 に適切な証明書を発行する方法について説明します。
+ms.openlocfilehash: f9e0bef2f7d2125e2daeb86b3cf44ae433aae117
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598194"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035214"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>S/MIME 用にユーザー証明書を Office 365 に同期する
 

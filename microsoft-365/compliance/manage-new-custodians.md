@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 高度な電子情報開示ケースで保管担当者を管理します。
-ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 高度な電子情報開示ケースで、保管担当者の一覧の詳細、編集、および一括編集を表示する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635897"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034179"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースで保管担当者を管理する
 
@@ -126,9 +127,9 @@ Advanced eDiscovery の [保管担当者] タブには、ケースに追加さ�
 
 1. **電子情報開示 > Advanced ediscovery**に移動し、ケースを開きます。
 
-2.  [**保管担当者**] タブに移動します。
+2.    [**保管担当者**] タブに移動します。
 
-3.  [**保管担当者] タブ**をクリックし、ケースからリリースされる保管担当者を選択します。
+3.    [**保管担当者] タブ**をクリックし、ケースからリリースされる保管担当者を選択します。
 
 4. [フライアウト] ページで、[ **Release 保管担当者**] をクリックします。
 

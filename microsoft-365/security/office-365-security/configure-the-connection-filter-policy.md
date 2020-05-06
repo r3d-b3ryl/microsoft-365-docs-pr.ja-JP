@@ -1,5 +1,5 @@
 ---
-title: 既定の接続フィルターポリシー、IP 許可一覧、IP 禁止一覧、有効または無効になっているセーフリストを構成する
+title: 既定の接続フィルターポリシーを構成する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: 信頼できるユーザーからの電子メールがブロックされないようにするには、接続フィルターポリシーを使用して、信頼する IP アドレスの許可一覧を作成します。 禁止された送信者の IP 禁止一覧を作成することもできます。
-ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: メールサーバーからのメールを許可またはブロックするように、Office 365 で接続フィルターを構成する方法について説明します。
+ms.openlocfilehash: 0848e9a59df8c312891add29d14eec2dfed420df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637748"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035084"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターの構成
 
@@ -44,7 +46,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 既定の接続フィルターポリシーを変更するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 既定の接続フィルターポリシーに対する読み取り専用アクセスの場合は、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 既定の接続フィルターポリシーを変更するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 既定の接続フィルターポリシーに対する読み取り専用アクセスの場合は、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
 - 許可またはブロックする電子メールサーバー (送信者) の送信元 IP アドレスを確認するには、メッセージヘッダーの [接続 IP (**CIP**)] ヘッダーフィールドを確認します。 さまざまな電子メールクライアントのメッセージヘッダーを表示するには、「 [Outlook でインターネットメッセージヘッダーを表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)する」を参照してください。
 

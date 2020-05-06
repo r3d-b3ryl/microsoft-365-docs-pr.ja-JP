@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection でメッセージの SCL を設定する方法について説明します。
-ms.openlocfilehash: cc75130d1e30b4cd64c32b1729c8145ad3088742
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: メールフロールール (トランスポートルール) を作成してメッセージを識別し、Exchange Online Protection でメッセージのスパム信頼レベル (SCL) を設定する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 444a7f2a8342102c2222cc734b2592f46632f8d3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636430"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035012"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
@@ -56,7 +57,7 @@ Exchange Online または exchange online メールボックスのないスタ�
    - **スパムフィルターをバイパス**する: SCL を-1 に設定します。これは、メッセージがスパムフィルター処理をスキップすることを意味します。
 
      > [!CAUTION]
-     > メッセージでスパムフィルターをスキップすることについて慎重に検討してください。 攻撃者はこの脆弱性を利用して、フィッシングやその他の悪意のあるメッセージを組織に送信することができます。 メールフロールールには、送信者の電子メールアドレスまたはドメインだけではなく、より多くの情報が必要です。 詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
+     > メッセージでスパムフィルターをスキップすることについて慎重に検討してください。 攻撃者はこの脆弱性を利用して、フィッシングやその他の悪意のあるメッセージを組織に送信することができます。 メールフロールールには、送信者の電子メールアドレスまたはドメインだけではなく、より多くの情報が必要です。 詳細については、「[Office 365 での信頼できる差出人リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
    - **0 ~ 4**: メッセージは、スパムフィルタリングを介して送信され、追加の処理が行われます。
 

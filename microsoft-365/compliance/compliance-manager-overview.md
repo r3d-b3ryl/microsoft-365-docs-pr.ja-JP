@@ -10,16 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft コンプライアンスマネージャーについて説明します。これには、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールがあります。
+ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632992"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046285"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
@@ -42,17 +45,15 @@ Microsoft[コンプライアンスマネージャー (プレビュー)](https://
 - セキュリティで保護されたリポジトリを提供して、コンプライアンスアクティビティに関連する証拠およびその他の成果物をアップロードして管理します。
 - 監査、監督、およびその他のコンプライアンスレビュー担当者に対して、Microsoft と組織で実施されたコンプライアンスアクティビティを文書化する詳細な Microsoft Excel レポートを作成します。
 
-> [!NOTE]
-> コンプライアンスマネージャーで提供されるお客様のアクションは推奨事項です。実装の前に、それぞれの規制環境でこれらの推奨事項の有効性を評価することは、組織によって行われます。 コンプライアンス マネージャーで見つかった推奨事項は、コンプライアンスの保証として解釈してはいけません。
+  
+> [!IMPORTANT]
+> コンプライアンス スコアおよびコンプライアンス マネージャーからの推奨事項は、コンプライアンスの保証として解釈してはいけません。 お客様は、お客様の規制環境に応じて、カスタマーコントロールの有効性を評価および検証することができます。 これらのサービスは現在プレビュー段階であり、[オンラインサービス](https://go.microsoft.com/fwlink/?linkid=2108910)の使用条件に従っています。 [セキュリティとコンプライアンスのための Microsoft 365 ライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)も参照してください。
 
 ## <a name="relationship-to-compliance-score"></a>コンプライアンススコアとの関係
 
 [Microsoft コンプライアンススコア (プレビュー)](compliance-score.md)は、microsoft 365 コンプライアンスセンターの機能の1つで、組織の法令遵守状況についての最上位レベルのビューを提供します。 データ保護および規制標準に関するリスクを軽減するために、進行状況を測定するリスクベースのスコアを計算します。 総合的なコンプライアンススコアを把握することで、組織はコンプライアンスを理解し管理することができます。 [コンプライアンススコアの計算方法](compliance-score-methodology.md)について理解します。
 
 コンプライアンスマネージャーは、コンプライアンススコアと同じバックエンドを共有します。 両方のツールのパブリックプレビューフェーズで、コンプライアンスマネージャーは、評価とカスタムコントロールの実装を管理します。 [コンプライアンススコアとコンプライアンスマネージャーの関係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)の詳細については、「」を参照してください。
-  
-> [!IMPORTANT]
-> コンプライアンス スコアでは、特定の標準や規制を使用して組織のコンプライアンスに関する絶対尺度を表すことはありません。 これは、個人データおよび個人のプライバシーに対してリスクを削減できるコントロールを採用する範囲を表します。 標準または規制に準拠しているサービスはありません。また、コンプライアンススコアは何らかの保証として解釈されないようにする必要があります。
 
 ## <a name="compliance-manager-components"></a>コンプライアンスマネージャーのコンポーネント
 

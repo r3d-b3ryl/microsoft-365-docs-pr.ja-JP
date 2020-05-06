@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: '[サブスクリプション] ページにアクセスして、組織のサブスクリプションを確認する方法について説明します。'
 ms.custom: okr_SMB
-ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621432"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045214"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
@@ -40,9 +40,9 @@ ms.locfileid: "43621432"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
-2. サブスクリプションは、サブスクリプション名、サブスクリプションに関する情報、およびその状態と共に、[ **Products & services** ] ページに表示されます。 縮小表示を表示するには、[**テーブルビュー**] を選択します。
+2. サブスクリプションは、[**製品**] ページに、サブスクリプション名、サブスクリプションに関する情報、およびその状態を表示します。 縮小表示を表示するには、[**テーブルビュー**] を選択します。
 
 ::: moniker-end
   

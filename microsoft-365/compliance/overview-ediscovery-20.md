@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: この記事では、Microsoft 365 の高度な電子情報開示の新バージョンについて説明します。
-ms.openlocfilehash: 3296fbbd04f2baa635fdf0330fc65b927a21448a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: この記事では、Microsoft 365 の高度な電子情報開示の概要について説明します。これは、内部および外部の調査のためのツールです。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626763"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034907"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションの概要
 

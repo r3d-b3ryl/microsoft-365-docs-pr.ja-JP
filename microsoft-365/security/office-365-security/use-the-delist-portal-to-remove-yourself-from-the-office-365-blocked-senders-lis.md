@@ -1,5 +1,5 @@
 ---
-title: リストから除外ポータルを使用して、受信拒否リストから自分自身を削除する
+title: 受信拒否リストから自分自身を削除する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 に電子メールアドレスがある受信者に電子メールを送信しようとすると、エラーメッセージが表示されますか。 エラーメッセージを受信しないようにする必要がある場合は、リストから除外ポータルを使用して、受信拒否リストから自分自身を削除することができます。
-ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、リストから除外ポータルを使用して、Microsoft 365 の受信拒否リストから自分自身を削除する方法について説明します。
+ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636406"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034988"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>リストから除外ポータルを使用して、受信拒否リストから自分自身を削除する
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>無効化ポータルを使って、受信拒否リストから自分自身を削除する
 
 Microsoft 365 に電子メールアドレスがある受信者に電子メールを送信しようとすると、エラーメッセージが表示されますか。 エラーメッセージを受信しないようにする必要がある場合は、リストから除外ポータルを使用して、受信拒否リストから自分自身を削除することができます。
 

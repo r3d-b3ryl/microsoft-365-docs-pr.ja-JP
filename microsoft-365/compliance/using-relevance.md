@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 2ddc9a6ae868682a3a241e9896d3aa63ac46f985
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 関連性ワークフローの説明と、Advanced 電子情報開示のトレーニング手順について、関連性モジュールが証拠のデータを分析する方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4babb0aa7693bc1107cc7594da967bca2d307228
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069161"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034469"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>詳細な電子情報開示でのデータの分析に関連モジュールを使用する
 
@@ -127,7 +128,7 @@ ms.locfileid: "42069161"
     
   - 意味: この時点では、関連性トレーニングは必要ありません。
     
-詳細な電子情報開示では、さまざまな段階で推奨される次の手順を使用してプロセスを進めることができますが、タブとページ間を移動したり、個別のケース、問題、またはの状況に関係する状況に対処するための選択を行ったりすることもできます。ドキュメントレビュープロセス。 
+詳細な電子情報開示では、さまざまな段階での推奨される次の手順に従ってプロセスを進めることができますが、タブとページ間を移動したり、個別のケース、問題、またはドキュメントのレビュープロセスに関係する状況に対処するための選択肢を作成したりすることもできます。 
   
 高度な電子情報開示の次のステップ処理の選択を承諾または無効にすることができます。 次の推奨手順以外の手順を実行する場合は、ダイアログボックスの展開された問題の表示で**次の手順**をクリックし、次の手順の横にある [**変更**] ボタンをクリックして、別の [次の手順] オプションを選択します。 
   

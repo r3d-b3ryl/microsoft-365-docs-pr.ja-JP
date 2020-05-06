@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: ドメインを確認し、電子メール、Skype for Business Online、および name.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 8518ca2570b3be1cb3abcd5c57b8309e989481cb
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: e9133b3701c2b454cad11b9579dc7463f1a74460
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938662"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048965"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Microsoft の name.com で DNS レコードを作成する
 
@@ -118,7 +118,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**型**|**Host**|**応答**|**TTL**|**優先度**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |
+    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   

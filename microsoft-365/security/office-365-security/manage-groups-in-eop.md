@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Exchange Online Protection (EOP) を使用すれば、Exchange 組織のメールが有効なグループを作成できます。 また、EOP を使用してメンバーシップ、電子メール アドレス、グループのその他の側面を指定するグループのプロパティを定義または更新することもできます。
-ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、exchange Online Protection (EOP) で Exchange 組織のメールが有効なグループを作成および管理する方法について説明します。
+ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082898"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034404"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
@@ -55,7 +57,7 @@ Exchange 組織では、2 種類のグループを作成できます。
 
 1. EAC で、 **[受信者]** \> **[グループ]** に移動します。
 
-2. 必要**** ![に応じて](../../media/ITPro-EAC-AddIcon.gif)、[新規追加] アイコンをクリックし、[**配布グループ**] または [**セキュリティグループ**] をクリックします。
+2. 必要**New** ![に応じて](../../media/ITPro-EAC-AddIcon.gif)、[新規追加] アイコンをクリックし、[**配布グループ**] または [**セキュリティグループ**] をクリックします。
 
 3. [**新しい配布グループ**] ページまたは [**新しいセキュリティグループ**] ページで、次の設定を構成します。
 
@@ -82,7 +84,7 @@ Exchange 組織では、2 種類のグループを作成できます。
 
 2. 次のいずれかの手順を実行します。
 
-   - グループを編集するには、グループの一覧で、表示または変更するグループをクリックし、[編集アイコン**** ![](../../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。 全般設定の更新、グループの所有者の追加または削除、および必要に応じてグループメンバーの追加または削除を行うことができます。
+   - グループを編集するには、グループの一覧で、表示または変更するグループをクリックし、[編集アイコン**Edit** ![](../../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。 全般設定の更新、グループの所有者の追加または削除、および必要に応じてグループメンバーの追加または削除を行うことができます。
 
    - グループを削除するには、グループを選択し、[](../../media/ITPro-EAC-RemoveIcon.gif)削除 **] [** ![削除] アイコンをクリックします。
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 Advanced Threat Protection、マルウェアレポート、フィッシングレポート、侵害されたアカウント、URL 保護状態、脅威レポート、レポートの脅威のレポートを表示する
+title: 高度な脅威保護のレポートを表示する
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用します。
-ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708501"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034964"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 

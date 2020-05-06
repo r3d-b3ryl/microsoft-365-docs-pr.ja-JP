@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 詳細な電子情報開示の会話の再構築機能を使用して、スレッド化された会話の再構築、レビュー、およびエクスポートを行う方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 45cf4bdbf0956ee28e75878b7db5ec84b81c7230
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556775"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035495"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>高度な電子情報開示で会話を確認する 
 
@@ -39,7 +40,7 @@ ms.locfileid: "42556775"
 
 - 個々のメッセージまたはスレッド化会話をエクスポートする
 
-## <a name="terminology"></a>用語
+## <a name="terminology"></a>用語集
 
 ここでは、会話の再構築の使用を開始する際に役立つ定義について説明します。
 
@@ -131,9 +132,9 @@ ms.locfileid: "42556775"
 
 会話のレビューセットでは、次のオプションを設定して会話をエクスポートできます。
 
-![エクスポート](../media/export.png)
+![Export](../media/export.png)
 
-a. メタデータオプション
+a.  メタデータオプション
 
    - **ファイルの読み込み:** 各メッセージ、電子メール、およびドキュメントのメタデータが含まれています。 会話内のメッセージごとに1つの行があります。 
 

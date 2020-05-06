@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 セキュリティセンターでのデバイスの監視とレポート
+title: デバイス監視 & レポート作成-セキュリティセンター
 description: 組織において、デバイスのセキュリティを確保し、最新の状態を維持し、潜在的な脅威を特定する方法について説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、デバイス
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f8adb04e968f19c6b0577127e4f9c0ceb7d9e315
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 870d2ce1f70028c917cc8b165e8a1c55b746100a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804885"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034000"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのデバイスの監視とレポート
 

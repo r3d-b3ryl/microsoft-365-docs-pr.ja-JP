@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 for business、セットアップ方法、およびユーザーのデバイスと Pc を準備して Microsoft 365 for business で保護されていることを確認する方法について説明します。
-ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633205"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048087"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 for business の使用を開始する
 
@@ -44,7 +44,7 @@ Microsoft 365 for business の簡単な概要については、このビデオ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 for business は、最大300のライセンスを想定しています。 その他のライセンスが必要な場合は、「 [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)ドキュメント」を参照してください。 
+Microsoft 365 for business は、最大300のライセンスを想定しています。 ライセンスの追加が必要な場合は、[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) のドキュメントで詳細を参照してください。 
   
 ## <a name="get-microsoft-365-for-business"></a>Microsoft 365 for business の入手
 
@@ -52,7 +52,7 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
     
 - パートナーを持っておらず、Microsoft 365 for business を入手する場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)できます。
     
-## <a name="set-up-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップ
+## <a name="set-up-microsoft-365-for-business"></a>一般法人向け Microsoft 365 をセットアップする
 
  **Microsoft 365 for business スイートの概要セットアップ**
   
@@ -83,7 +83,7 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
     
     - ディレクトリ同期ウィザードを使用して、ユーザーをクラウドに同期させます。 このプロセスを完了するには、「 [Microsoft 365 のディレクトリ同期のセットアップ](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の手順を実行します。 ユーザーをクラウドに同期させた後、 [Office 365 のディレクトリ同期を無効](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)にする必要があります。
     
-    また、このように追加された各ユーザーに、Microsoft 365 for business のライセンスを付与する必要があります。 この操作は、[セットアップウィザード](set-up.md)で行うことができます。または、 [Microsoft 365 for business のユーザーにライセンスを割り当てる](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)ことができます。
+    また、このように追加された各ユーザーに、Microsoft 365 for business のライセンスを付与する必要があります。 この操作は、[セットアップウィザード](set-up.md)で行うことができます。または、 [Microsoft 365 for business のユーザーにライセンスを割り当てる](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)ことができます。
     
 ### <a name="2-prepare-mobile-devices"></a>2: モバイルデバイスの準備
 
@@ -98,7 +98,7 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
 オンプレミスのリソース (ファイル共有やプリンターなど) が含まれているローカルの Active Directory を保持する場合は、「 [Microsoft 365 for business の AZURE ad に参加しているデバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、 **azure ad に参加**しているデバイスにこれらのリソースへのアクセスを許可できます。
   
   
-## <a name="contact-support"></a>サポートに連絡する
+## <a name="contact-support"></a>サポートに連絡
 
  **サポートに連絡する場合:**
   
@@ -112,4 +112,4 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
   
 Microsoft [365 for](manage.md)Business[から microsoft 365 への移行](migrate-to-microsoft-365-business.md)を管理する
 
-[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
