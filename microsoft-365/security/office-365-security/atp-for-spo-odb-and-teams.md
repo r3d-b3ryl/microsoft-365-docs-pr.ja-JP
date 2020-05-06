@@ -17,13 +17,15 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Office 365 Advanced Threat Protection を SharePoint Online、OneDrive for Business、Microsoft Teams のファイルに拡張して、組織にとってより安全なコラボレーションを可能にします。
-ms.openlocfilehash: 71e404a402db8c0c0ad01bf1daa415788dfa717b
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: SharePoint Online、OneDrive for Business、Microsoft Teams のファイルの Office 365 Advanced Threat Protection について説明します。
+ms.openlocfilehash: 90e84f0a4393e5097fb59b93693862a21d6d9f2f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708385"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031450"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP
 
@@ -31,7 +33,7 @@ ms.locfileid: "43708385"
 
 ユーザーは、SharePoint、OneDrive、Microsoft Teams を使用して、ファイルを定期的に共有し、共同作業を行うことができます。 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用すると、組織は安全な方法で共同作業を行うことができます。 ATP は、チームサイトおよびドキュメントライブラリで悪意のあるものとして識別されたファイルを検出およびブロックするのに便利です。
 
-## <a name="how-it-works"></a>動作のしくみ
+## <a name="how-it-works"></a>しくみ
 
 SharePoint Online、OneDrive for Business、および Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルをロックするために、ATP はファイルストアと直接統合されます。 次の図は、ライブラリ内で検出された悪意のあるファイルの例を示しています。
 

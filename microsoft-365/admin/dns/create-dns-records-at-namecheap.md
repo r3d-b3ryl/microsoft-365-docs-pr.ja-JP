@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Namecheap の他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 2b55e529ab4a66dbada95914f213807884b4b6c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57ba92f3ad31a54abae6a6a212a84d3b7a665da1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629337"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048953"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Microsoft の Namecheap で DNS レコードを作成する
 
@@ -41,7 +41,7 @@ ms.locfileid: "43629337"
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 <a name="BKMK_verify"> </a>
 
-ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
+Microsoft のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -81,7 +81,7 @@ ms.locfileid: "43629337"
     
     |**Type**|**Host**|**値**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |30 分  <br/> |
+    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |30 分  <br/> |
        
     ![Namecheap-BP-検証-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -91,9 +91,9 @@ ms.locfileid: "43629337"
   
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft に戻ってレコードを要求します。
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft に戻り、レコードをリクエストします。
   
-Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -150,7 +150,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
     |**Type**|**Host**|**Value**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX レコード  <br/> |@  <br/> |\<*ドメインキー*\>mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |30 分  <br/> |
+    |MX レコード  <br/> |@  <br/> |\<*ドメインキー*\>mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |30 分  <br/> |
        
     ![Namecheap-BP-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
@@ -205,12 +205,12 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
   
 7. 新しいレコードの空のボックスで、[ **Record Type**] に [ **CNAME**] を選び、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
     
-    |**種類**|**Host**|**Value**|**TTL**|
+    |**種類**|**Host**|**値**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
        
     ![Namecheap-BP-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
@@ -226,7 +226,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインに対して既に SPF レコードがある場合は、Microsoft 用に新しいを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
 
 以下の手順に従います。
   
@@ -269,7 +269,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
     
     ![Namecheap-BP-Configure-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft に必要な2つの SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
 1. まず、[このリンク](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)を使って Namecheap でドメイン ページにアクセスします。サインインするように求められます。

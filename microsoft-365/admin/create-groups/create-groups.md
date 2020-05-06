@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Microsoft 365 グループを作成および削除する方法、グループメンバーを追加および削除する方法、およびグループの動作をカスタマイズする方法について説明します。
-ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a691f2363547c5bffb4c674d61cddde0cdb0266a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630457"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049217"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを作成する
   
 ユーザーは、Outlook またはその他のアプリから、管理者として Microsoft 365 グループを作成できますが、グループの作成または削除、メンバーの追加または削除、および動作方法のカスタマイズが必要になる場合があります。 これを行うには、「Microsoft 365 管理センター」をご記入ください。 
 
 > [!TIP]
-> Microsoft 365 connected Yammer グループは Yammer で作成する必要がありますが、他の Microsoft の365グループと同様に、Microsoft 365 管理センターで管理することができます。 詳細については、「 [Yammer And Microsoft 365 groups](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)」を参照してください。 
+> Microsoft 365 connected Yammer グループは Yammer で作成する必要がありますが、他の Microsoft の365グループと同様に、Microsoft 365 管理センターで管理することができます。 詳細については、「 [Yammer And Microsoft 365 groups](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)」を参照してください。 
 
 ## <a name="create-a-microsoft-365-group"></a>Microsoft 365 グループを作成する
 
@@ -57,7 +57,7 @@ ms.locfileid: "43630457"
 
 ::: moniker range="o365-worldwide"
 
-ユーザーは[自分で自分を追加](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
+ユーザーは[自分で自分を追加](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
 
 1. 管理センターで、新しいグループが表示されるようにページを更新し、メンバーを追加するグループの名前を選択します。
     
@@ -67,7 +67,7 @@ ms.locfileid: "43630457"
     
 4. 追加するユーザーを選択し、[**保存**] を選択します。
     
-5. [3 回**閉じる**] を選択します。 
+5. **[閉じる]** を 3 回選択します。 
     
 グループが、割り当てられたメンバーと共に Outlook に表示されます。
 
@@ -75,15 +75,15 @@ ms.locfileid: "43630457"
 
 ::: moniker range="o365-germany"
 
-ユーザーは[自分で自分を追加](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
+ユーザーは[自分で自分を追加](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
 1. 管理センターで、新しいグループが表示されるようにページを更新し、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] を選択して、メンバーを追加するグループを選択します。
     
 2. [**メンバー**] の横にある [**編集**] を選択します。
-3. [**メンバーの追加**] を選択します。
+3. [**メンバーを追加する**] を選択します。
     
 4. 追加するユーザーを選択し、[**保存**] を選択します。
     
-5. [3 回**閉じる**] を選択します。 
+5. **[閉じる]** を 3 回選択します。 
     
 グループが、割り当てられたメンバーと共に Outlook に表示されます。
   
@@ -91,15 +91,15 @@ ms.locfileid: "43630457"
 
 ::: moniker range="o365-21vianet"
 
-ユーザーは[自分で自分を追加](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
+ユーザーは[自分で自分を追加](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
 1. 管理センターで、新しいグループが表示されるようにページを更新し、[**グループ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] を選択して、メンバーを追加するグループを選択します。
     
 2. [**メンバー**] の横にある [**編集**] を選択します。
-3. [**メンバーの追加**] を選択します。
+3. [**メンバーを追加する**] を選択します。
     
 4. 追加するユーザーを選択し、[**保存**] を選択します。
     
-5. [3 回**閉じる**] を選択します。 
+5. **[閉じる]** を 3 回選択します。 
     
 グループが、割り当てられたメンバーと共に Outlook に表示されます。
   
@@ -119,7 +119,7 @@ ms.locfileid: "43630457"
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 グループへのゲストアクセスを管理する](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Microsoft 365 グループへのゲストアクセスを管理する](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Microsoft 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
 

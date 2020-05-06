@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: ドメインを確認し、電子メール、Skype for Business Online、および Names.co.uk のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 91c328877d583f415ffd2b8312ff1dc899a05bcc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939169"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048941"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Microsoft の Names.co.uk で DNS レコードを作成する
 
@@ -72,7 +72,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
        
     ![NamesUK-BP-検証-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -120,11 +120,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**ホスト名**|**Priority**|**結果**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>、Microsoft アカウントから* \<ドメイン\>キー*を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>、Microsoft アカウントから* \<ドメイン\>キー*を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -134,7 +134,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![NamesUK-BP-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -171,7 +171,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![NamesUK-BP-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     ![NamesUK-BP-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
@@ -209,7 +209,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![NamesUK-BP-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -239,7 +239,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![NamesUK-BP-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     (下へスクロールしなければならないことがあります。)
     

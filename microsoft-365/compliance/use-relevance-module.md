@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 関連性ワークフローについての説明と、データ調査 (プレビュー) でのトレーニング手順について、関連性のモジュールが証拠のデータを分析する方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080614"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034489"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>適合性モジュールを使用して証拠でデータを分析する
 
@@ -121,7 +122,7 @@ ms.locfileid: "42080614"
     
   - 意味: この時点では、関連性トレーニングは必要ありません。
     
-データ調査では、プロセスについて説明していますが、さまざまな段階での次の推奨手順を使用すると、タブとページ間を移動したり、個別のケース、問題、またはの状況に関係する可能性がある状況に対処することができます。ドキュメントレビュープロセス。 
+データ調査では、プロセスについて説明していますが、さまざまな段階での次の推奨手順を使用すると、タブとページ間を移動したり、個別のケース、問題、またはドキュメントのレビュープロセスに関係する状況に対処するための選択を行ったりすることができます。 
   
 データ調査の次のステップ処理の選択を承諾または上書きすることができます。 次の推奨手順以外の手順を実行する場合は、ダイアログボックスの展開された問題の表示で**次の手順**をクリックし、次の手順の横にある [**変更**] ボタンをクリックして、別の [次の手順] オプションを選択します。 
   

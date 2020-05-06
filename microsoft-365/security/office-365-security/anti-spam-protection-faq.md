@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: Exchange Online およびスタンドアロン Exchange Online Protection (EOP) でのスパム対策保護についてよく寄せられる質問と回答を管理者に説明します。
-ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: このトピックでは、スパム対策保護に関する Faq & 回答を示します。 回答は Microsoft Exchange Online & Exchange Online Protection (EOP) のお客様に適用されます。
+ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636060"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033740"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護に関するよく寄せられる質問
 
@@ -133,7 +135,7 @@ A. 以下に示すガイドラインは、送信メール メッセージを送�
 
   SPF レコードとは、ドメインから送信されたメールがそのドメインから実際に送信されていること、なりすましではないことを確認するためのメカニズムです。 SPF レコードの詳細については、以下のリンクを参照してください:
 
-  [スプーフィングを防止するために SPF をセットアップする](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [SPF を設定して、スプーフィングを防止する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [ドメイン FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

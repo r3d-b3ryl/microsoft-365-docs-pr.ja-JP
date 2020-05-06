@@ -1,5 +1,5 @@
 ---
-title: セキュリティ/コンプライアンス センターのアクセス許可
+title: アクセス許可-Microsoft 365 セキュリティ & コンプライアンスセンター
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,13 +16,14 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
-description: 管理者は、セキュリティ & コンプライアンスセンターで使用可能なアクセス許可について理解できます。
-ms.openlocfilehash: 8fd288aa9a0a409a005c43a1ff685bf29bfef6b3
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+description: 管理者は、Microsoft 365 セキュリティ & コンプライアンスセンターで使用可能なアクセス許可について学習できます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dda0fe4263c6c62e9ac7829c87caf6332e56f809
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930185"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033916"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのアクセス許可
 

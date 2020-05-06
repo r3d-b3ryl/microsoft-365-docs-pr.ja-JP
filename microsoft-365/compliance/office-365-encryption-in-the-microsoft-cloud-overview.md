@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Microsoft クラウドでの暗号化の概要について説明します。
-ms.openlocfilehash: 34ec910e60ceb718daa42dc31aa8a5a3440dbdd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: この記事では、Microsoft cloud で顧客データを安全に保つために使用されるさまざまな形式の暗号化の概要について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626925"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031387"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud における暗号化
 

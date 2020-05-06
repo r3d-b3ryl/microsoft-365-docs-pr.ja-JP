@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
-description: 多くの場合、組織は一定期間、ドキュメントの保持が要求されるコンプライアンス、法的要件、その他の規制を受けます。しかし、必要以上にドキュメントを長く保持すると、組織が法的なリスクにさらされる場合があります。このため、組織は、例えば一般的なビジネス文書は作成の 5 年後に削除する必要があるといった、ドキュメント削除ポリシーをサイトに作成する場合があります。
-ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 サイトコレクションでドキュメント削除ポリシーを作成、削除、および管理する方法について説明します。
+ms.openlocfilehash: 7a9cbec25349de02da35f0aaf0cc206774a9b59a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079854"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034341"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>サイトのドキュメント削除ポリシーを適用または削除する
 
@@ -77,7 +79,7 @@ ms.locfileid: "42079854"
     > [!NOTE]
     > サイトコレクションにポリシーが割り当てられていない場合、[**ドキュメント削除ポリシー**のリンクは表示されません。 また、リンクは、ポリシーがサイトに割り当てられた直後には表示されず、[**ドキュメント削除ポリシー** ] リンクが表示されるときにポリシーが割り当てられると、最大24時間かかることがあります。 
   
-3. 次のいずれかの操作を行います。
+3. 次のいずれかを実行します。
     
   - **ポリシーを適用するには**ポリシー \>の選択そのポリシー \>の [**保存**] でルールを選択します。
     

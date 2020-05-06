@@ -1,5 +1,5 @@
 ---
-title: 自動化された調査と応答 (AIR)
+title: 自動化された調査と応答 (AIR)-はじめに
 keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.custom: air
-ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634546"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033952"
 ---
-# <a name="automated-investigation-and-response-air"></a>自動化された調査と応答 (AIR)
+# <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Office 365 で自動調査と応答 (AIR) の使用を開始する
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) Plan 2 には、強力な自動化された調査と応答 (航空) 機能が含まれており、セキュリティ運用チームの時間と労力を節約できます。 アラートがトリガーされると、その通知をレビュー、優先度設定、応答するためのセキュリティ運用チームが必要になります。 受信通知の音量を維持することは非常に困難です。 これを自動化することによって役立つことがあります。 AIR を使用すると、セキュリティ運用チームは、トリガーされた通知を失うことなく、優先度の高いタスクに集中できます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "43634546"
     保留中の修復操作が承認 (却下) されると、自動調査が完了します。
 
 > [!NOTE]
-> Office 365 ATP では、修復アクションは自動的には実行されません。 修復処理は、組織のセキュリティチームによる承認時にのみ行われます。 
+> Office 365 ATP では、修復アクションは自動的には実行されません。 修復処理は、組織のセキュリティ チームが承認した場合にのみ実行されます。 
 
 自動化された調査プロセスにおいて、セキュリティチームは次のことを行うことができます。
 

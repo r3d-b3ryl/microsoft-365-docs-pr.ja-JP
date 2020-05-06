@@ -12,13 +12,14 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: '概要: Microsoft Dynamics 365 での暗号化について説明します。'
-ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft が暗号化テクノロジを使用して、microsoft データベース内および送信中の microsoft Dynamics 365 の顧客データを保護する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: bd349890fc7fc1ae7f1f7eaf07f90c22423637cf
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637241"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031414"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 での暗号化
 

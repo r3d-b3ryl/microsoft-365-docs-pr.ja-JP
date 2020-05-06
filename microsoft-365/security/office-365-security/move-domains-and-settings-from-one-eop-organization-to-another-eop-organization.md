@@ -1,5 +1,5 @@
 ---
-title: ドメインと設定を 1 つの EOP 組織から別の EOP 組織に移動する
+title: ドメイン & 設定をある EOP 組織から別の組織に移動する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
-description: ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。
-ms.openlocfilehash: c7d5c7ddc8391c70a555279c530cc2bf19e66ca2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、ドメインと設定を1つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) から別の組織に移動する方法について説明します。
+ms.openlocfilehash: 86f268e6bfb5ed7229137df8b6bf017f15ab1f9c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088332"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033964"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>ドメインと設定を 1 つの EOP 組織から別の EOP 組織に移動する
 

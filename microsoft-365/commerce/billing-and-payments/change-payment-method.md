@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 一般法人向けサブスクリプションの支払い方法を更新する方法について説明します。
-ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708157"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045906"
 ---
 # <a name="change-your-payment-method"></a>支払方法を変更する
 
@@ -53,7 +53,7 @@ ms.locfileid: "43708157"
 クレジット カードまたは銀行口座から請求書に変更したとき、未払額は次の請求書に送信されます。
   
 > [!NOTE]
-> クレジット カードによる支払いを選択したときに、クレジット カードが拒否された場合、支払いプロセスが完了できなかったことを通知するメールが送信されます。 [**製品とサービス**] ページの [**残高の決済**] リンクを使用し、クレジット カード情報を更新して、すぐに支払いを申し込むことができます。 詳細については、「[クレジット カードが拒否され、支払い期日を過ぎてしまった場合はどうなりますか?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due)」を参照してください。 
+> クレジット カードによる支払いを選択したときに、クレジット カードが拒否された場合、支払いプロセスが完了できなかったことを通知するメールが送信されます。 クレジットカード情報を更新して、[**製品**] ページの [**決済バランス**] リンクを使用して、すぐに支払いを送信することができます。 詳細については、「[クレジット カードが拒否され、支払い期日を過ぎてしまった場合はどうなりますか?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due)」を参照してください。 
   
 ::: moniker-end
 
@@ -66,7 +66,7 @@ ms.locfileid: "43708157"
   
  **支払い頻度を変更する** サブスクリプションの支払い頻度を変更する場合は、年次から月次、または月次から年次に変更する必要があります。そのためには、 [Microsoft サポートに連絡](../../admin/contact-support-for-business-products.md)する必要があります。
   
- **クレジットカードの情報を変更するだけですか。**「[クレジットカードを追加、更新、または削除する](add-update-or-remove-credit-card-or-bank-account.md)」を参照してください。
+ **クレジット カードまたは銀行口座の情報だけを変更する場合** 「[クレジット カードを追加、更新、または削除する](add-update-or-remove-credit-card-or-bank-account.md)」を参照してください。
   
  **未払額がある場合、どうなりますか。**
   
@@ -88,7 +88,7 @@ ms.locfileid: "43708157"
   
 請求書払いからクレジット カードまたは銀行口座払いに変更すると、自動的に新しいサブスクリプションが作成され、ユーザーが新しいサブスクリプションに移動します。その後、古いサブスクリプションが無効になります。 ユーザーはサービスの中断に気付かないので、心配は無用です。すべての情報は新しいサブスクリプションで利用できます。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求**\> ] ページに移動します。
 
 2. [**表**] ビューの場合、[**カード**] を選択します。
 
@@ -143,16 +143,16 @@ ms.locfileid: "43708157"
 
 注文数量が多すぎる場合は、与信審査が必要になることがあります。 その場合は、"請求書に変更する資格がありません" というメッセージが表示されます。 ご注文はクレジットの確認が必要です。 この場合、請求書の手動での支払いに変更します。 次の手順を使用して、手動の変更を完成させます。
 
-1. <a href="https://Office365.com" target="_blank">Office365.com</a> に移動して、現在お持ちのものと同じサブスクリプションを購入します。 チェックアウト時に、請求書による支払いオプションを選択します。
+1. <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>に移動し、現在のサブスクリプションと同じサブスクリプションを購入します。 チェックアウト時に、請求書による支払いオプションを選択します。
 
     > [!IMPORTANT]
-    > 管理センターの [**製品 & サービス**] ページを使用してサブスクリプションを購入することはできません。 <a href="https://Office365.com" target="_blank">Office365.com</a> を使用する必要があります。
+    > 管理センターの [**製品**] ページを使用してサブスクリプションを購入することはできません。 <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>を使用する必要があります。
 
 2. 購入が完了したら、元のサブスクリプションをキャンセルします。 ユーザーが自動的に新しいサブスクリプションに移動します。
 
 貸方の確認が必要ない場合は、次の手順を使用して、請求書による支払いに変更します。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求**\> ] ページに移動します。
 
 2. [**表**] ビューの場合、[**カード**] を選択します。
 
@@ -175,7 +175,7 @@ ms.locfileid: "43708157"
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>クレジット カードまたは銀行口座から請求書に変更する
 
 > [!NOTE]
-> 請求書で支払うオプションは、サブスクリプションの料金が一定の金額を超えた場合に限られます (サービスの提供場所によって異なります)。 請求書支払の金額が大きい場合、与信確認が必要になることがあります。 詳細については、「[サブスクリプションの支払い](pay-for-your-subscription.md)」を参照してください。
+> 請求書で支払うオプションは、サブスクリプションの料金が一定の金額を超えた場合に限られます (サービスの提供場所によって異なります)。請求書支払いの金額が大きい場合、与信審査が必要になることがあります。詳細については、「[サブスクリプションを支払う方法](pay-for-your-subscription.md)」を参照してください。
 
 1. 管理センターの [**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
@@ -198,13 +198,13 @@ ms.locfileid: "43708157"
 
 サブスクリプションに構成されている支払い方法を次の手順でいつでも確認できます。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品とサービス</a>] ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求**\> ] ページに移動します。
 
 2. 確認するサブスクリプションを探します。 サブスクリプションに設定されている支払い方法が、**[課金]** セクションに表示されます。
 
 ### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>従来の管理センターを使用して、構成されている支払い方法を確認する
 
-1. 管理センターの [**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 確認するサブスクリプションを探します。 サブスクリプションに設定されている支払い方法が、**[支払い方法]** セクションに表示されます。
 
