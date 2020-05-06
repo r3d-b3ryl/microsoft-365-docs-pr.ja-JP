@@ -1,6 +1,6 @@
 ---
 title: ServiceNow を使用してチケットを作成および追跡する
-description: Microsoft 365 セキュリティセンターは、ServiceNow でチケットをネイティブに作成および追跡する機能によって強化されています。 セキュリティ管理者は、セキュリティで保護されたスコアの推奨事項を ServiceNow に直接送信し、チケットを作成できます。
+description: Microsoft 365 セキュリティセンターから ServiceNow のチケットを作成および追跡する方法について説明します。
 keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, チケット, tasks
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,12 +17,14 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: 6070878d6cf0efd8a85d05ff6ef89ee49baf4144
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901024"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034190"
 ---
 # <a name="manage-tickets-through-servicenow"></a>ServiceNow を介してチケットを管理する
 

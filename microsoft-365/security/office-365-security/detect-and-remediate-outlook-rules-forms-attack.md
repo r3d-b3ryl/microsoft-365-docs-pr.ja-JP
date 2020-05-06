@@ -1,5 +1,5 @@
 ---
-title: Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
+title: Outlook のルールおよびユーザー設定フォームのインジェクション攻撃を検出して修復します。
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,12 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
-ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637594"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034818"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
@@ -234,9 +235,9 @@ Outlook 2013 および2016クライアントのパッチバージョンは次の
 
 オンプレミスの Exchange インストールを使用しているお客様は、利用可能なパッチを持たない古いバージョンの Outlook をブロックすることを検討する必要があります。 このプロセスの詳細については、記事「 [Outlook クライアントのブロックを構成](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)する」を参照してください。
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>セキュリティで保護された Microsoft 365 (cybersecurity pro など)
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
 
-Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力な一連のセキュリティ機能が付属しています。 Microsoft 365 セキュリティロードマップを使用して、[最初の30日間、90日間、](security-roadmap.md) microsoft の推奨ベストプラクティスを実装し、microsoft の365テナントをセキュリティで保護することをお勧めします。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。 [Microsoft 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Microsoft 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
 
 - 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

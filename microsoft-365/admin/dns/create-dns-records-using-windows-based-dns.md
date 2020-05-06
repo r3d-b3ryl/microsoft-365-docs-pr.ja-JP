@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Windows ベースの DNS で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631371"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048845"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Windows ベースの DNS を使用して Microsoft の DNS レコードを作成する
 
@@ -48,7 +48,7 @@ MX レコードを追加して、自分のドメインのメールが Microsoft 
 - Microsoft の [DNS レコードの追加] ページの [Exchange Online] セクションの [MX] 行で、[point to アドレス] の下に表示されている値をコピーします。 この値は、このタスクで作成しているレコードで使用します。 
 - ドメインの [DNS マネージャー] ページで、[**アクション** > **メールエクスチェンジャー (MX)**] に移動します。 ドメインのこのページを見つけるには、「 [Windows ベースの dns で dns レコードを検索](#find-your-dns-records-in-windows-based-dns)する」を参照してください。  
 - [**新しいリソースレコード**] ダイアログボックスで、フィールドに次の値が正確に設定されていることを確認します。 
-    - Host Name:  
+    - ホスト名: 
     - @Address: Microsoft からコピーしたのと同じ値にポイントを貼り付けます。  
     - Pref: 
 - [ **Save Changes**] を選びます。
@@ -110,7 +110,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインに対して既に SPF レコードがある場合は、Microsoft 用に新しいを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
 自分のドメインの SPF TXT レコードを追加して、電子メールのスパム防止に役立てます。
   
@@ -200,7 +200,7 @@ Microsoft のドメインを確認します。
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>オンプレミスの Active Directory で UPN として使用される、ルーティング不可能な電子メールアドレス
 <a name="BKMK_ADNote"> </a>
 
-オンプレミスの Active Directory を Microsoft と同期することを計画している場合は、Active Directory のユーザープリンシパル名 (UPN) サフィックスが有効なドメインサフィックスであることを確認します。これは、@contoso など、サポートされていないドメインサフィックスではありません。 UPN サフィックスを変更する必要がある場合は、「[ディレクトリ同期のためにルーティング不能なドメインを準備する方法](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7)」を参照してください。
+オンプレミスの Active Directory を Microsoft と同期することを計画している場合は、Active Directory のユーザープリンシパル名 (UPN) サフィックスが有効なドメインサフィックスであることを確認します。これは、@contoso など、サポートされていないドメインサフィックスではありません。 UPN サフィックスを変更する必要がある場合は、「[ディレクトリ同期のためにルーティング不能なドメインを準備する方法](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)」を参照してください。
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 

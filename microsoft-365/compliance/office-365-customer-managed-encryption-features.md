@@ -12,13 +12,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: '概要: Microsoft 365 のデータ復元性について説明します。'
-ms.openlocfilehash: 365cde7137247e20bb4fd2b57039057398deafd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: この記事では、Microsoft 365 で管理および構成できる暗号化テクノロジについて説明します。
+ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637343"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033615"
 ---
 # <a name="customer-managed-encryption-features"></a>お客様が管理する暗号化機能
 
@@ -64,8 +66,8 @@ Secure/多目的インターネットメール内線 (S/MIME) は、公開キー
 
 Exchange Online Protection (EOP) および Exchange Online では、ドメインキー識別メール (DKIM) メッセージの受信検証をサポートしています。 DKIM は、メッセージがドメインから送信されたことを検証する方法です。これは、そのメッセージが送信者からのものであり、他のユーザーによってスプーフィングされていないことを示します。 電子メールメッセージを送信しようとしている組織に関連付け、電子メールの暗号化に関して大きなパラダイムの一部となります。 このパラダイムの3つの部分の詳細については、以下を参照してください。
 
-- [スプーフィングを防止するために SPF をセットアップする](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
+- [SPF を設定して、スプーフィングを防止する](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
 
-- [DKIM を使用して、カスタムドメインから送信される送信電子メールを検証する](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
+- [DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
 
 - [DMARC を使用してメールを検証する](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)

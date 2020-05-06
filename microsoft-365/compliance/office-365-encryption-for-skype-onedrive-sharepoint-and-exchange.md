@@ -16,13 +16,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: '概要: Skype、OneDrive、SharePoint、および Exchange Online の暗号化について説明します。'
-ms.openlocfilehash: 13c46df74861120b6f5c2fbe7132f912ef29dde3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: この記事では、Skype、OneDrive、SharePoint、および Exchange Online の Office 365 暗号化について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637287"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031397"
 ---
 # <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for Business、OneDrive for Business、SharePoint Online、Exchange Online の暗号化
 
@@ -32,7 +33,7 @@ Microsoft 365 は、高度なセキュリティで保護された環境で、物
 
 Skype for Business の顧客データは、会議の参加者によってアップロードされたファイルやプレゼンテーションの形式で保存されている場合があります。 Web 会議サーバーは、256ビットキーを使用して AES を使用して顧客データを暗号化します。 暗号化された顧客データは、ファイル共有に保存されます。 顧客データの各要素は、ランダムに生成された異なる256ビットキーを使用して暗号化されます。 会議で顧客データの一部が共有されている場合、Web 会議サーバーは、HTTPS を介して暗号化された顧客データをダウンロードするよう、会議クライアントに指示します。 対応するキーをクライアントに送信して、顧客データを復号化できるようにします。 Web 会議サーバーは、クライアントが会議の顧客データにアクセスできるようにするために、会議クライアントも認証します。 Web 会議に参加する場合、各会議クライアントは、最初に TLS を介してフロントエンドサーバーの内部で実行されている会議フォーカスコンポーネントを使用して SIP ダイアログを確立します。 会議フォーカスは、Web 会議サーバーによって生成された認証 cookie を会議クライアントに渡します。 その後、会議クライアントは Web 会議サーバーに接続して、サーバーによって認証される認証 cookie を提示します。
 
-## <a name="sharepoint-online-and-onedrive-for-business"></a>Sharepoint Online と OneDrive for Business
+## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online と OneDrive for Business
 
 SharePoint Online のすべての顧客ファイルは、1つのテナントに対して常に排他的な一意のファイルごとのキーによって保護されています。 これらのキーは、SharePoint Online サービスによって作成され、管理されるか、顧客キーが使用されるときに、顧客によって作成および管理されます。 ファイルをアップロードすると、アップロード要求のコンテキスト内で SharePoint Online によって暗号化が実行されてから、Azure ストレージに送信されます。 ファイルがダウンロードされると、SharePoint Online は一意のドキュメント識別子に基づいて Azure ストレージから暗号化された顧客データを取得し、顧客データを復号化してからユーザーに送信します。 Azure ストレージには、お客様のデータを復号化したり、識別したり、理解したりする機能はありません。 すべての暗号化と復号化は、テナントの分離を強制するのと同じシステムで行われます。これは、Azure Active Directory と SharePoint Online です。
 

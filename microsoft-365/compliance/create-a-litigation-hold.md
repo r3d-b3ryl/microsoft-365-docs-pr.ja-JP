@@ -12,12 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 調査中にメールボックスのすべてのコンテンツを保持しながら、メールボックスを訴訟ホールドの対象にする方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077731"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035819"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 

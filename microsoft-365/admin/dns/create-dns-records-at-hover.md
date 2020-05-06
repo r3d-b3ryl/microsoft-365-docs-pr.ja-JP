@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: ドメインを確認し、メール、Skype for Business Online、および Microsoft のホバー時に他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 7d5222ba68858f9ad50c95a0123c2cd2943ea2c0
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 4779b8f6fadcd4b134d3954d2c6c133da40c19e6
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939441"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048989"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>Microsoft のホバー時に DNS レコードを作成する
 
@@ -75,7 +75,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
    
     ![DNS の値を入力するか、コピーして貼り付けます。](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
     ![[保存] を選択します。](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
@@ -127,11 +127,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Hostname**|**レコードの種類**|**優先度**|**ホスト名**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![DNS の値を入力するか、コピーして貼り付けます。](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
     ![[保存] を選択します。](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
@@ -182,7 +182,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![DNS の値を入力するか、コピーして貼り付けます。](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
     ![[保存] を選択します。](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
@@ -220,7 +220,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![DNS の値を入力するか、コピーして貼り付けます。](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
     ![[保存] を選択します。](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
@@ -256,7 +256,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![DNS の値を入力するか、コピーして貼り付けます。](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
     ![[保存] を選択します。](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   

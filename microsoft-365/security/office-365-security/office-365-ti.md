@@ -1,5 +1,5 @@
 ---
-title: Office 365 の脅威の調査と応答機能 Advanced Threat Protection プラン2
+title: 脅威の調査 & 応答機能-Office 365 ATP Plan 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が組織との脅威を調査し、マルウェア、フィッシング、および Microsoft 365 によって検出されたその他の攻撃に対応し、脅威指標を検索する方法について説明します。
-ms.openlocfilehash: 9d89e84cc50b82b8cc5f2fe4e0e5ad6f4f85b091
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 Advanced Threat Protection プランの脅威の調査および応答機能について説明します。
+ms.openlocfilehash: 61b08dc2b77c874e255547b2bcaef596ee017bf4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634522"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033940"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: カスタムドメインの DNS レコードを管理するように Microsoft を設定している場合は、Microsoft 外でホストされている既存のパブリック web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: 08a4e505f4e2a50b3e92cae00b62415e6d02551f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 58b58479a2c880cc0193058abc328cc5feea4af1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629121"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048833"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
@@ -64,7 +64,7 @@ ms.locfileid: "43629121"
     
 最後に、次の操作を行います。
   
-Microsoft を参照するように[、ドメインの NS レコードを更新](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx)します。 
+Microsoft を参照するように[、ドメインの NS レコードを更新](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)します。 
   
 NS レコードが Microsoft を指すように更新されている場合、ドメインはすべて設定されています。 メールは Microsoft にルーティングされ、web サイトのアドレスへのトラフィックは引き続き現在の web サイトのホストに送られます。
  

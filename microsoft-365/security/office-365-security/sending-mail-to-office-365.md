@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: これらの記事は、外部の送信者が自身の評価や Office 365 のユーザーにメールを送信する能力を高めるために役立ちます。 また、Microsoft 365 ユーザーではない場合でも、迷惑メールとフィッシングの試行を報告する方法についての情報も提供します。
-ms.openlocfilehash: c5c84d154b25f29b94635e6506ed54158efc672f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 外部の送信者として、Microsoft 365 でユーザーに電子メールを配信する機能を向上させる方法を説明します。 また、外部ユーザーとして迷惑メール & フィッシングの試行を報告する方法についても説明します。
+ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638418"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035386"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Microsoft 365 へのメールの送信
 

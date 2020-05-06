@@ -15,15 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: '概要: クラウドでの暗号化の BitLocker に関する情報。'
-ms.openlocfilehash: 5596848e392736e20e8c796e6fd409b9c43235d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Office 365 で BitLocker 暗号化を使用する方法について説明し、コンピューターやディスクの紛失や盗難によるデータの盗難の可能性を低減します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637353"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033625"
 ---
-# <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker とDistributed Key Manager (DKM) による暗号化
+# <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker と Distributed Key Manager (DKM) による暗号化
 
 Microsoft サーバーは、BitLocker を使用して、お客様のデータが保存されているディスクドライブをボリュームレベルで暗号化します。 BitLocker 暗号化は、Windows に組み込まれているデータ保護機能です。 BitLocker は、顧客データが含まれるディスクに何者かが物理的にアクセスできるようになりかねない過失がプロセスや制御 (アクセス制御またはハードウェアのリサイクルなど) で生じた場合に、脅威から安全に保護するために使用されるテクノロジの 1 つです。 その場合、BitLocker は、コンピューターやディスクの紛失、盗難、または不適切な廃棄によるデータの盗難や漏洩などの脅威の可能性を低減します。
 

@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Microsoft 365 for business 請求書の料金、請求、および支払いに関する情報を解釈する方法と、発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634970"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045814"
 ---
 # <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for business の請求書について
 
@@ -104,7 +104,7 @@ ms.locfileid: "43634970"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品とサービス]</a> ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
 2. **表**形式のビューの場合は、[**カード**] を選択してビューを切り替えます。
 
@@ -118,7 +118,7 @@ ms.locfileid: "43634970"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 
@@ -128,7 +128,7 @@ ms.locfileid: "43634970"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 

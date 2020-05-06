@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: ユーザーを Microsoft 365 に一度に1つずつ、または複数のユーザーを CSV ファイルから同時に追加する方法について説明します。
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618862"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049473"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>ユーザーを個別にまたは一括して追加する
 
@@ -118,7 +118,7 @@ ms.locfileid: "43618862"
 ユーザーの追加後に、ユーザーが Microsoft Online Services チームからのメール通知を受信します。 電子メールには、ユーザーのユーザー ID とパスワードが含まれているため、Microsoft 365 にサインインできます。 新しいユーザーにマイクロソフトの365サインイン情報について通知する必要があります。 新しいパスワードは、通常のプロセスを使用して通知してください。
 
 > [!NOTE]
->メールボックスを移行してユーザーを作成する場合は、ライセンスを割り当てることによってユーザーアカウントをアクティブにする必要があります。 ユーザーにライセンスを割り当てない場合、30 日間の猶予期間が過ぎるとユーザーのメールボックスが無効になります。 Microsoft 365 管理センターを使用して[ライセンスをユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)方法をご覧ください。
+>メールボックスを移行してユーザーを作成する場合は、ライセンスを割り当てることによってユーザーアカウントをアクティブにする必要があります。 ユーザーにライセンスを割り当てない場合、30 日間の猶予期間が過ぎるとユーザーのメールボックスが無効になります。 Microsoft 365 管理センターを使用して[ライセンスをユーザーに割り当てる](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)方法をご覧ください。
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>ビデオ: 管理センターでユーザーを追加して管理する
 
