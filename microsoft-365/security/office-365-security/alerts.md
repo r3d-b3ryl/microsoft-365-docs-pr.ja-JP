@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-description: Office 365 のセキュリティに役立つように設定できるアラートについて説明します。
-ms.openlocfilehash: 24e36b6867600985a9ca0f9cb3cbafc5a8c6029e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: Office 365 セキュリティ & コンプライアンスセンターの通知機能を使用して、アラートの表示と管理を行う方法について説明します。詳細な通知の管理を含みます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8b0c2d89f7f91e1dfcae644663c43bc6e8640f37
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943557"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033776"
 ---
 # <a name="alerts-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターのアラート
 

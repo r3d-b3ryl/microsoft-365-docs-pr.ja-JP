@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 情報保護フレームワークの秘密度ラベルを使用して、組織のデータを分類して保護し、ユーザーの生産性とコラボレーション機能を損なわないようにします。 これらのラベルは、フッターや透かしなどの暗号化の視覚的マーキングを含む保護設定を適用できます。
-ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: d31faa5dde212060f5e7b3c075cf4bc6fb3bef5f
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790654"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957307"
 ---
 # <a name="learn-about-sensitivity-labels"></a>機密度ラベルの詳細
 
@@ -77,10 +77,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
 ## <a name="what-sensitivity-labels-can-do"></a>機密ラベルでできること
 
 > [!NOTE]
-> Office アプリのメールやドキュメントにラベルを適用できるだけでなく、以下のパブリック プレビュー リリースでも秘密度ラベルを使用できます。
-> 
-> - [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する (パブリック プレビュー)](sensitivity-labels-teams-groups-sites.md)
+> メールとドキュメントには感度ラベルを適用するだけでなく、現在のプレビューでは、[Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトで、秘密度のラベルを使用する](sensitivity-labels-teams-groups-sites.md)こともできます。
 
 メールやドキュメントに秘密度ラベルが適用されると、そのラベルで構成済みの保護設定がコンテンツに適用されます。秘密度ラベルを使用すると、次のことができます。
 

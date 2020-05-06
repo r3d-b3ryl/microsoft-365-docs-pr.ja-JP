@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: Office 365 の検疫に関してよく寄せられる質問への回答。
-ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Exchange Online またはスタンドアロン EOP の Office 365 メールボックスの検疫に関してよく寄せられる質問と、Exchange Online のメールボックスがない場合の回答。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5c5d7f426701ebc9a546a86a4fccbd7015fc0e49
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634426"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033856"
 ---
 # <a name="quarantine-faq"></a>検疫に関する FAQ
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 91246a701e1c5a030f4c9c53e25e56c137e7569b
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3d1c938d3a9d7ff25bb66a5b344cfbb29eace84c
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929409"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957267"
 ---
 # <a name="get-started-with-content-explorer-preview"></a>コンテンツ エクスプローラーの使用を開始する (プレビュー)
 
@@ -48,7 +48,7 @@ ms.locfileid: "42929409"
 
 [機密ラベル](sensitivity-labels.md)は、組織に対するアイテムの価値を示すタグです。 手動で、または自動的に適用することができます。 適用すると、ドキュメントに埋め込まれ、ドキュメントがどこへ移動されても機密ラベルは保持されます。 機密ラベルによって、必須のウォーターマークや暗号化など、さまざまな保護機能が有効化されます。 エンド ポイントの保護を有効にすると、アイテムを組織の制御から離れさせないようにもできます。
 
-SharePoint および OneDrive にあるファイルに対応するデータがデータ分類ページに表示されるようにするには、機密度ラベルを有効にする必要があります。 詳細については、「[SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md)」を参照してください。
+SharePoint および OneDrive にあるファイルに対応するデータがデータ分類ページに表示されるようにするには、機密度ラベルを有効にする必要があります。 詳細については、「[SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)」を参照してください。
 
 ### <a name="retention-labels"></a>保持ラベル
 

@@ -1,5 +1,5 @@
 ---
-title: 転送中のデータの暗号化
+title: 転送中データの暗号化
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,15 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Microsoft がデータセンターで転送中のデータを暗号化する方法を簡単に説明します。
-ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: この記事では、microsoft 365 のお客様データを送信中にどのように暗号化するかについて、簡単な説明を記載しています。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7ee869308549398a9df00ed42975b4aeedb666a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943306"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033605"
 ---
-# <a name="encryption-for-data-in-transit"></a>転送中のデータの暗号化
+# <a name="encryption-for-data-in-transit"></a>転送中データの暗号化
 
 お客様のデータを保存して保護することに加えて、Microsoft は暗号化テクノロジを使用して、転送中の顧客データを保護します。 
 
