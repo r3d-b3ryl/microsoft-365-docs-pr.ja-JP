@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 17bfa8ee50fbdb7dce988324f478d88d00600121
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: a7e13ae8a3ccffa644a123f57b05c4364d4333d2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804749"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141349"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft セキュア スコアの新機能
 
@@ -32,6 +32,6 @@ Microsoft のセキュリティ[スコア](microsoft-secure-score.md)をより�
 
 ## <a name="may-2020"></a>2020年5月
 
-### <a name="adding-azure-advanced-threat-protection-improvement-actions-to-preview"></a>Azure Advanced Threat Protection の向上アクションをプレビューに追加する
+### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-preview"></a>追加の Azure Advanced Threat Protection 向上アクションをプレビューに追加する
 
 - Active Directory 信頼でセキュリティ機能を有効にする

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '最初の電子メールアドレスを、tom@fourthcoffee.com のようなわかりやすい電子メールアドレスに変更します。 これを行うには、ドメイン名を購入して、Microsoft 365 に追加する必要があります。 '
-ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: baa2e49d98ed1d7b3de9af78b84403d028b4c91d
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629061"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053826"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
@@ -53,7 +53,7 @@ Office 365 ドイツの最初の電子メールアドレスには、tom@fourthco
 
 ::: moniker-end
 
-セットアップ時にドメインの MX レコードを更新することによって、ドメインの電子メールを Microsoft 365 にするように変更すると、そのドメインに送信されるすべての電子メールが Microsoft 365 に送られ始めます。 MX レコードを変更する前に、自分のドメインに電子メールを持っているすべてのユーザーに対して、Microsoft 365 でユーザーを追加し、メールボックスを作成していることを確認してください。 ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくありませんか。 [代わりに、少数のメールアドレスを使用して Microsoft 365 をパイロット](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)処理する手順を実行することができます。
+セットアップ時にドメインの MX レコードを更新することによって、ドメインの電子メールを Microsoft 365 にするように変更すると、そのドメインに送信されるすべての電子メールが Microsoft 365 に送られ始めます。 MX レコードを変更する前に、自分のドメインに電子メールを持っているすべてのユーザーに対して、Microsoft 365 でユーザーを追加し、メールボックスを作成していることを確認してください。 ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくありませんか。 [代わりに、少数のメールアドレスを使用して Microsoft 365 をパイロット](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)処理する手順を実行することができます。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してカスタムドメインを使用するように電子メールアドレスを変更する
 

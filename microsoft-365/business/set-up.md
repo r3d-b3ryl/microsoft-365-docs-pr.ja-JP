@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加、セキュリティポリシーの設定など、Microsoft 365 Business Premium のセットアップ手順について説明します。
-ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635762"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048039"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップウィザードで Microsoft 365 Business Premium をセットアップする
 
@@ -124,7 +124,7 @@ Microsoft 365 Business Premium を購入する場合は、所有しているド�
 
 ## <a name="secure-windows-10-pcs"></a>Windows 10 Pc をセキュリティで保護する
 
-左側のナビゲーションで、[**設定**] を選択し、[**サインインとセキュリティ**] で [ **Windows 10 のコンピューターをセキュリティで保護する**] を選択します。 [**表示**] を選んで開始します。 詳細な手順については[、「Windows 10 コンピューターのセキュリティ保護](secure-win-10-pcs.md)」を参照してください。
+左側のナビゲーションで、[**セットアップ**] を選択し、[**サインインとセキュリティ**] で [ **Windows 10 コンピューターのセキュリティ保護**] を選択します。 [**表示**] を選んで開始します。 詳細な手順については[、「Windows 10 コンピューターのセキュリティ保護](secure-win-10-pcs.md)」を参照してください。
 
 ## <a name="deploy-office-365-client-apps"></a>Office 365 クライアントアプリを展開する
 
@@ -136,4 +136,4 @@ Office を個別にインストールすることもできます。 手順につ
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

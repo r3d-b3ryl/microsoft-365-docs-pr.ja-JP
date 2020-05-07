@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb7a805fa927756753e3ba09c3dd5eb2998467e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b64b69d52028a09ddd54863d4e2cbf5f0642bd67
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602294"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066330"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>米内部収益サービス発行1075
 
@@ -33,7 +33,7 @@ FTI を保護するために、IRS 1075 は、アプリケーション、プラ�
 
 Microsoft Azure Government および[Microsoft Office 365 米国政府](https://products.office.com/government/office-365-web-services-for-government)機関向けのクラウドサービスには、適切な統制があり、microsoft agency のお客様が IRS 1075 の特性要件を満たすために必要なセキュリティ機能があるという契約上のコミットメントが提供されます。  
   
-これらの Microsoft cloud services for government は、お客様がソリューションを構築し運用できるプラットフォームを提供しますが、お客様は、特定のソリューションが IRS 1075 に準拠して運用されているかどうかを判断する必要があります。IRS 監査に従います。  
+これらの Microsoft cloud services for government は、お客様がソリューションを構築して運用できるプラットフォームを提供します。ただし、お客様は、特定のソリューションが IRS 1075 に準拠しているかどうかを判断する必要があります。したがって、IRS 監査の対象となります。  
   
 コンプライアンスへの取り組みで政府機関を支援するために、Microsoft:
 
@@ -43,8 +43,6 @@ Microsoft Azure Government および[Microsoft Office 365 米国政府](https://
 - IRS Azure 自治体のコンプライアンスに関する考慮事項と Office 365 米国政府のコンプライアンスに関する考慮事項について説明します。これは、省庁が IRS 1075 に準拠した方法で米国政府機関のサービスに Microsoft Cloud を使用する方法について概説しています。 NDA の下の政府機関のお客様は、これらのドキュメントを要求できます。
 - は、必要に応じて、お客様に Microsoft の特定分野の専門家または外部監査者とのコミュニケーションを行う機会 (お客様の経費) を提供します。
 
-Microsoft クラウドでの IRS 1075 の利点について説明します。 [irs 1075 backgrounder をダウンロードする](https://aka.ms/irs1075-backgrounder)
-
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 FedRAMP 承認は、NIST ガイドライン (低、中、高) に基づく3つの影響レベルで付与されます。 これらのランクは、機密、完全性、または可用性の損失が組織に及ぼす影響 (低 (制限)、中程度 (重大な悪影響)、高 (重大または致命的) によって変化します。
@@ -53,7 +51,7 @@ FedRAMP 承認は、NIST ガイドライン (低、中、高) に基づく3つ�
 - Dynamics 365 米国政府
 - [Office 365 および Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Office 365 米国防総省
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -85,7 +83,3 @@ Microsoft は、セキュリティ、プライバシー、運用の各コント�
 - [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

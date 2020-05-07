@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 法的調査の一環として、電子的に保存された情報を保持する義務を保管担当者に通知する必要があります。 上級電子情報開示を使用すると、保留通知プロセスを簡単に管理できます。
-ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: 上級電子情報開示を使用して、電子メール経由で法的情報開示通知を送信およびフォローアップしたり、責務の状態を監視したりする方法について説明します。
+ms.openlocfilehash: 393d8884a4d4d39056267666fdce6a2754cb582b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080280"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034887"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する
 

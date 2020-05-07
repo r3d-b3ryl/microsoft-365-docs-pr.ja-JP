@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 電子メール、Skype、Office アプリ用の Microsoft 365 for business に新しい従業員を追加します。
-ms.openlocfilehash: 43685a786da7ec43c982f91b4fca554424cad624
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618898"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049499"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Microsoft 365 に新しい従業員を追加する
 
@@ -82,7 +82,7 @@ Facebook、Amazon、Gmail と同様に、従業員は Microsoft 365 を使用す
 |Skype for Business をセットアップして、会社や世界中の同僚やビジネスパートナーと接続できるようにします。 IM、音声、またはビデオ通話で会話を開始できます。  <br/> |[コンピューターに Skype For business をインストール](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx)します。  <br/> <br/>Skype for Business の使用方法について[は、ビデオをご覧ください。](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Skype for business をセットアップして、従業員が無料の Skype アプリを使用している会社の外部のユーザーに連絡できるようにしますか。 そうでない場合は、Skype for Business を使用するときに予想されることがわかるように、新しい従業員に通知します。  <br/> |
 |電話で電子メールを受信するか、Skype for Business を使用する場合は、モバイルデバイスにアプリをインストールします。  <br/> |Outlook mobile アプリを設定して、電話で電子メールを取得できるようにする場合。 手順については、「 [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx)、 [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx)、 [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) 」を参照してください。 <br/> <br/>モバイルデバイスで Skype for Business を使用する場合は、モバイルアプリをダウンロードしてインストールします。 手順については、「 [iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS)、 [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android)、 [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) 」を参照してください。 <br/> |
 |OneDrive for Business のトレーニングを完了すると、ドキュメント、プレゼンテーション、およびスプレッドシートをクラウドに保存して整理する方法を理解するのに役立ちます。  <br/> |OneDrive for Business を使用して、クラウド内のビジネス関連ドキュメントを保持します。 別のコンピューターで Microsoft 365 にサインインしている場合でも、常にコンテンツにアクセスすることができます。 [OneDrive for business の使用方法についてのビデオを見る](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **トレーニング:** [onedrive for business のトレーニング](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx)(onedrive for business の選択)。  <br/> |
-|SharePoint Online トレーニングを完了して、同僚との共同作業やコンテンツの共有に役立てることができます。  <br/> |同僚がアクセスするドキュメントを SharePoint Online に保持するための最善の場所です。  <br/> <br/>**トレーニング:** [ビデオ: SharePoint Online を使用してチームコンテンツを共同作業する](https://support.office.com/article/2dd9aeff-7749-4b78-9696-eb0f6267f1f5.aspx) <br/><br/> **以下を参照してください。** 組織は SharePoint Online をどのように使用していますか。どのような種類のドキュメントがそこに保存されますか。 また、OneDrive for Business に保存されているドキュメントもあります。  <br/> |
+|SharePoint Online トレーニングを完了して、同僚との共同作業やコンテンツの共有に役立てることができます。  <br/> |同僚がアクセスするドキュメントを SharePoint Online に保持するための最善の場所です。  <br/> <br/>**トレーニング:** [ビデオ: SharePoint Online を使用してチームコンテンツを共同作業する](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **以下を参照してください。** 組織は SharePoint Online をどのように使用していますか。どのような種類のドキュメントがそこに保存されますか。 また、OneDrive for Business に保存されているドキュメントもあります。  <br/> |
 
    
 ## <a name="related-articles"></a>関連記事

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071224"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065712"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>証券および Exchange のコミッション: 規制システムのコンプライアンスと整合性 (SCI)
 
@@ -62,7 +62,7 @@ SCI ルールは、そのような自己規制組織 (SROs) をストックお�
 
 **どの金融機関が Azure を利用して、規制の SCI 要件を満たすことができるか。**
 
-この規制の対象となる金融機関または SCI エンティティは、Azure を展開することができます。 SEC は、株式とオプションの交換、登録されたクリアエージェンシー、FINRA、MSRB、代替取引システム (ATSs)、および指定されていない取り引きと非 NMS 株の指定を含む、「自己規制組織 (SROs)」に規制を適用することを主張しています。ボリュームのしきい値、統合された市場データの disseminators (プランプロセッサ)、および特定の免税クリアエージェンシー。
+この規制の対象となる金融機関または SCI エンティティは、Azure を展開することができます。 SEC は、株式およびオプションの交換、登録されているクリアエージェンシー、FINRA、MSRB、代替取引システム (ATSs)、および特定のボリュームのしきい値を超える、disseminators の統合市場データ (プランプロセッサ)、および特定の免税クリアエージェンシーを含む「自己規制組織 (SROs)」に規制を適用します。
 
 ## <a name="resources"></a>リソース
 
@@ -74,7 +74,3 @@ SCI ルールは、そのような自己規制組織 (SROs) をストックお�
 - [Microsoft 金融サービス](https://aka.ms/FinServ-Compliance)
 - [Microsoft および SEC Rule 17a-4](offering-SEC-17a-4.md)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) ファイルをダウンロードできます。

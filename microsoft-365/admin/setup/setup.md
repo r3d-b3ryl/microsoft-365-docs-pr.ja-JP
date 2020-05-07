@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Microsoft 365 Business Standard、Microsoft 365 Business Basic、Microsoft 365 Apps for business、または Office 365 Education サブスクリプションをセットアップする方法について説明します。
-ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627548"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053862"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>一般法人向け Microsoft 365 をセットアップする
 
@@ -309,9 +309,9 @@ Microsoft 365 のツアーを見たり、すべての Office モバイル アプ
 
 ### <a name="get-ready-for-office-365"></a>Office 365 を準備する
 
-- **最初に、教育機関向けサブスクリプションの条件を満たしていることを確認します。** 手順に従って[ドメインを確認して、所有権、非営利団体または教育機関のステータスを証明するか、Yammer をライセンス認証し](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)、Microsoft から教育機関向けプランを使用できるようにします。その後、この記事の説明に従って Office 365 を学校用にセットアップすることができます。
+- **最初に、教育機関向けサブスクリプションの条件を満たしていることを確認します。** 手順に従って[ドメインを確認して、所有権、非営利団体または教育機関のステータスを証明するか、Yammer をライセンス認証し](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)、Microsoft から教育機関向けプランを使用できるようにします。その後、この記事の説明に従って Office 365 を学校用にセットアップすることができます。
 
-- **ヘルプが必要な場合** さらに高度な展開についてヘルプが必要な場合は、まず **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** にアクセスしてください。展開を支援する [パートナーを見つける](https://go.microsoft.com/fwlink/p/?linkid=391089)こともできます。
+- **ヘルプが必要な場合** さらに高度な展開についてヘルプが必要な場合は、まず **[FastTrack](https://www.microsoft.com/ja-JP/fasttrack/microsoft-365/office-365)** にアクセスしてください。展開を支援する [パートナーを見つける](https://go.microsoft.com/fwlink/p/?linkid=391089)こともできます。
 
 - **計画** 次のツールおよびリソースを使用すると、Office 365 を使用するためのネットワーク、ディレクトリ、エンド ユーザーの準備を行うことができます。[組織で Office 365 Enterprise を使用するための準備を行います](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc)。
 

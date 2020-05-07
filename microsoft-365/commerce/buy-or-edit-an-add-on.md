@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: アドオンを購入して、Microsoft 365 for business サブスクリプションに追加機能を追加する方法について説明します。 アドオンを更新および削除することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: 801da522c9fea9efcc4d3d4a0285a6ffcb5adc0b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045790"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141292"
 ---
 # <a name="buy-or-edit-an-add-on"></a>アドオンを購入または編集する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 一部の Microsoft 365 for business プランには、サブスクリプションのために購入できるアドオンが用意されています。 アドオンを利用することで、サブスクリプションに機能を追加することができます。
 

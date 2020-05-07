@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 59bb5fd9e692cc5c69a4baf1cdc14cc200dba7a6
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602594"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066270"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>米国のセキュリティシステムの委員会に関する指示はありません。 1253 (CNSSI 1253)
 
@@ -35,9 +35,9 @@ CNSSI 1253 は、NIST SP 800-53 上に構築されます。これにより、Fed
 
 FedRAMP で承認されたサードパーティの評価組織 (3PAO)、Kratos SecureInfo では、Microsoft Azure Government system の高高高度ベースライン1253とのコンプライアンスを個別に検証しました。 Kratos SecureInfo attests では、Azure Government の CNSSI 1253 Security アセスメントレポート (SAR) によって、セキュリティアセスメントプラン (SAP) に明記されている適用可能なセキュリティ制御の完全な評価が提供されます。 テストの対象となった SAR ドキュメントでは、高機密性、高整合性、高可用性を必要とするシステムのために、選択されている CNSSI 1253 セキュリティコントロールに対して Azure Government を検証します。  
   
-現時点では、Azure Government は、共同認証ボード (JAB) によって発行される (ATO)、またはクラウドコンピューティングセキュリティの影響レベル5にある国防総省の暫定認証 (PA) を所有しています。要件ガイド (SRG)。 これらの承認を使用して、Kratos SecureInfo は、以前の評価でテストされたセキュリティ制御を分析し、CNSSI 1253 の高高度なベースラインへの準拠を保証するために、どの追加 CNSSI 1253 セキュリティ制御をテストするかを決定します。 Kratos SecureInfo では、43の適用可能なセキュリティコントロールの実装が成功したことを検証し、CNSSI 1253 SAR での完全なテストの結果を公開しています。  
+現時点では、Azure Government は、共同認証ボード (JAB) によって発行される (ATO)、または、クラウドコンピューティングのセキュリティ要件ガイド (SRG) の影響レベル5における国防総省の暫定認証 (PA) で行われる、FedRAMP の強い暫定認証を所有しています。 これらの承認を使用して、Kratos SecureInfo は、以前の評価でテストされたセキュリティ制御を分析し、CNSSI 1253 の高高度なベースラインへの準拠を保証するために、どの追加 CNSSI 1253 セキュリティ制御をテストするかを決定します。 Kratos SecureInfo では、43の適用可能なセキュリティコントロールの実装が成功したことを検証し、CNSSI 1253 SAR での完全なテストの結果を公開しています。  
   
-要求の厳しい CNSSI 1253 要件を持つ Azure Government のコンプライアンスにより、Azure は米国内の公的機関のお客様に対して、CNSSI 1253 に準拠した豊富なサービスを提供できるようになります。Microsoft クラウドのセキュリティ。
+要求の厳しい CNSSI 1253 要件を持つ Azure Government のコンプライアンスにより、Azure は米国内の公共の部門のお客様に対して、CNSSI 1253 に準拠した豊富なサービスを提供できるようになります。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -69,7 +69,3 @@ Azure Government (FedRAMP パッケージ ID F1603087869) は、これらのコ�
 - [マイクロソフトおよび DoD 暫定認証](offering-DoD-DISA-L2-L4-L5.md)
 - [Microsoft Government クラウド](https://www.microsoft.com/enterprise/government)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf) ファイルをダウンロードできます。

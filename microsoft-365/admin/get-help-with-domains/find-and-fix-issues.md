@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタムドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: 13d867559684d80ee5c0e1f7005d1dcaf3b4d611
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628472"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053725"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
@@ -65,21 +65,21 @@ Microsoft 365 と連携するようにドメインを設定することは、困
 ## <a name="outlook-isnt-working"></a>Outlook が機能していませんか?
 <a name="BKMK_OutlookBroken"> </a>
 
-ドメインに MX レコードとその他の DNS レコードを正しく設定しているが、メールが機能しない場合、弊社が [Outlook 問題の解消](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx)を支援します。
+ドメインに MX レコードとその他の DNS レコードを正しく設定しているが、メールが機能しない場合、弊社が [Outlook 問題の解消](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)を支援します。
   
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>すべてのユーザーのメールが Microsoft 365 に切り替えられ、電子メールの切り替えのみが必要になりましたか?
 <a name="BKMK_EmailSwitched"> </a>
 
 Microsoft 365 にドメインを追加すると、通常、Microsoft 365 をポイントするようにドメインの MX レコードが365更新され、そのドメインに送信されたすべての電子メールが Microsoft の365に送られ始めます。 MX レコードを変更する前に、自分のドメインに電子メールを持っているすべてのユーザーに対して、Microsoft 365 でメールボックスを作成していることを確認してください。
   
-ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくない場合は、どうすればよいですか。 [代わりに、少数のメールアドレスを使用して Microsoft 365 をパイロット](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)処理する手順を実行することができます。
+ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくない場合は、どうすればよいですか。 [代わりに、少数のメールアドレスを使用して Microsoft 365 をパイロット](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)処理する手順を実行することができます。
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>非営利団体または学校のアカウントの状態を確認できませんか?
 <a name="BKMK_validateAcct"> </a>
 
 組織のドメインを検証するだけで、サービスをセットアップしない場合は、いくつかのシナリオがあります。 たとえば、組織が学校のサブスクリプションに限定されていることを Microsoft 365 に証明するため。
   
-[Microsoft 365 ドメインを検証して、所有権、非営利団体または教育機関の状態を証明する、または Yammer をアクティブに](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)して、必要なすべての手順が完了していることを確認するためのガイダンスを確認してください。 状況によって、これは少し異なります。 
+[Microsoft 365 ドメインを検証して、所有権、非営利団体または教育機関の状態を証明する、または Yammer をアクティブに](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)して、必要なすべての手順が完了していることを確認するためのガイダンスを確認してください。 状況によって、これは少し異なります。 
   
 ## <a name="services-not-working-with-your-domain"></a>自分のドメインでサービスが機能しませんか?
 <a name="BKMK_Test"> </a>
@@ -87,14 +87,14 @@ Microsoft 365 にドメインを追加すると、通常、Microsoft 365 をポ�
 Microsoft では、ドメインの DNS セットアップに関わる問題を解消するためのサポートを用意しています。 Microsoft 365 のドメインのトラブルシューティングツールを使用すると、修正が必要なレコードと、レコードを正確に設定する必要があることがわかります。 
 
 > [!TIP]
-> DNS は適切にセットアップされましたが、デスクトップ上の Outlook ではメールが機能しません。 [Microsoft 365 と共に使用できるさまざまなメールフローのシナリオ](https://go.microsoft.com/fwlink/?LinkId=787530)を確認して、ビジネスで適切に設定されていることを確認してください。 詳細については、「Outlook の[問題を修正](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx)する」を参照してください。 
+> DNS は適切にセットアップされましたが、デスクトップ上の Outlook ではメールが機能しません。 [Microsoft 365 と共に使用できるさまざまなメールフローのシナリオ](https://www.microsoft.com/?ref=go)を確認して、ビジネスで適切に設定されていることを確認してください。 詳細については、「Outlook の[問題を修正](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)する」を参照してください。 
   
 ## <a name="accessing-your-website-isnt-working"></a>自分の Web サイトにアクセスできませんか?
 <a name="BKMK_Website"> </a>
 
 DNS の問題を解決しても、引き続き問題が発生する場合は、次のいずれかを試してください。
   
-- 他のユーザーが Web サイト (www.mydomain.com) にアクセスできない場合: [Web サイトの問題を特定する](https://support.office.com/article/61f34ca1-ca7f-4a65-9348-def20db09ddf.aspx)
+- 他のユーザーが Web サイト (www.mydomain.com) にアクセスできない場合: [Web サイトの問題を特定する](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
 - A レコードまたは CNAME レコードを更新して web サイトを参照することはできません。 [Microsoft 365 でのカスタム DNS レコードの更新](../dns/add-or-edit-custom-dns-records.md)
     

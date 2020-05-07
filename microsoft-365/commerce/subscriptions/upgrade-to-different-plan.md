@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 新しいサブスクリプションにアップグレードする方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796514"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046218"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする 
 
@@ -42,7 +42,7 @@ ms.locfileid: "43796514"
 
 [**アップグレード**] タブを使用すると、新しいプランを購入するプロセスが実行されます。 すべてのユーザーに新しいプランのライセンスが自動的に割り当てられ、古いプランがキャンセルされます。
 
-1. 管理センターで、[ **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> ] ページに移動します。
+1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
 
 2. アップグレードするサブスクリプションを選択します。
 
@@ -59,11 +59,11 @@ ms.locfileid: "43796514"
 
 7. 完了したら、[**注文**] を選択します。
 
-チェックアウトを終了すると、アップグレードが完了するまでに数分かかる場合があります。 すぐに新しいサブスクリプションの使用を開始することができます。 [**アップグレード状態の確認**] を選択して、アップグレードの進行状況を確認します。 アップグレードが完了すると、通知が表示されます。 通知は、新しいサブスクリプションの横にある [ **Products & services** ] ページに表示されます。
+チェックアウトを終了すると、アップグレードが完了するまでに数分かかる場合があります。 すぐに新しいサブスクリプションの使用を開始することができます。 [**アップグレード状態の確認**] を選択して、アップグレードの進行状況を確認します。 アップグレードが完了すると、通知が表示されます。 通知は、新しいサブスクリプションの横にある [**製品**] ページに表示されます。
 
 ## <a name="the-upgrade-tab-is-empty"></a>[アップグレード] タブが空である
 
-[**アップグレード**] タブが空の場合は、現時点でアップグレードできない理由が表示されます。 [手動でプランを変更](change-plans-manually.md)してみることができます。 詳細については、「[プランをアップグレードできない理由](#why-cant-i-upgrade-plans)」を参照してください。
+[**アップグレード**] タブが空になっている場合は、現時点ではアップグレードできない理由が表示されます。 [手動でプランを変更](change-plans-manually.md)してみることができます。 詳細については、「[プランをアップグレードできない理由](#why-cant-i-upgrade-plans)」を参照してください。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>目的のプランが表示されない
 
@@ -137,7 +137,7 @@ ms.locfileid: "43796514"
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>サブスクリプションに未払い残高があります
 
-これを解決するには、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> ] ページでサブスクリプションを検索し、[**課金**] セクションの [**今すぐ購入**] リンクを選択します。 支払いを行った後で、[**アップグレード**] タブをもう一度確認してください。
+これを解決するには、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>] ページでサブスクリプションを検索し、[**課金**] セクションの [**今すぐ支払う**] リンクを選択します。 支払いを行った後で、[**アップグレード**] タブをもう一度確認してください。
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>プランのアップグレードは、サービスと課金にどのようなものですか?
 

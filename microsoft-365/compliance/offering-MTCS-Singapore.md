@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a0dfc1b03099d52255f2e474ba8d99c2ea3a2cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a305c66aaa3359417bd72b8525ed63787d655f8f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602154"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065682"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>シンガポールの多階層クラウド セキュリティ (MTCS) 標準
 
@@ -41,8 +41,6 @@ MTCS は、さまざまなセキュリティ レベルを備えた最初のク�
 Microsoft クラウド サービスは、MTCS 認定機関による厳格な評価を受けた後、サービスとしてのインフラストラクチャ (IaaS)、サービスとしてのプラットフォーム (PaaS)、サービスとしてのソフトウェア (SaaS) の 3 つのサービス分類のすべてについて MTCS 584:2013 認定を取得しました。 Microsoft は、3 つのサービス分類すべてでこの認定を取得した最初の国際 CSP となりました。
 
 Microsoft Azure サービス (IaaS および PaaS)、Microsoft Dynamics 365 サービス (SaaS)、Microsoft Office 365 サービス (SaaS) が、レベル 3 で認定されました。 レベル 3 認定は、対象となる Microsoft クラウド サービスが、最も厳密なセキュリティ要件を持つ規制組織の影響力の大きいデータをホストできることを意味します。 このレベルは、シンガポール政府のクラウド ソリューション実装に必要です。
-
-Microsoft Cloud での MTCS の利点の詳細情報: [シンガポール バックグラウンド向け MTCS 標準をダウンロードする](https://aka.ms/mtcs-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -105,7 +103,3 @@ MTCS には合計で 535 個の制御があり、3 つのセキュリティ レ�
 - [シンガポールのセキュリティおよびプライバシー要件に照らした Azure コンプライアンス](https://aka.ms/azurecompliancesingapore)
 - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

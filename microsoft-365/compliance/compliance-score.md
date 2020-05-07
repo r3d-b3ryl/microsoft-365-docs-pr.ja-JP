@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコアを使用すると、組織はリスク評価を簡略化および自動化し、リスクに対処するための推奨される処置を提案します。
-ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141572"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046275"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft コンプライアンススコア (プレビュー)
 
@@ -49,8 +49,8 @@ Microsoft コンプライアンススコアは、Microsoft 365 コンプライ�
 - **推奨されるアクション**: コントロールを実装してスコアを最大化する方法について、推奨事項と詳しいガイダンスを示します。
 -  **組み込みのコントロールマッピング**: 組み込みのコモンコントロールフレームワークを提供することにより、進化し続けるコンプライアンスの状況を最新の状態に保つことができます。
 
-> [!IMPORTANT] 
-> コンプライアンススコアは、特定の標準または規制に対する組織のコンプライアンスの絶対的な測定基準を表しているわけではありません。 このことは、個人データや個人のプライバシーに対するリスクを軽減するために、制御を採用した範囲を表しています。 コンプライアンススコアとコンプライアンスマネージャーからの推奨事項は、コンプライアンスの保証として解釈されないようにする必要があります。 このサービスは現在プレビュー段階であり、[オンラインサービス](https://go.microsoft.com/fwlink/?linkid=2108910)の使用条件の条件に従います。
+> [!IMPORTANT]
+> コンプライアンス スコアおよびコンプライアンス マネージャーからの推奨事項は、コンプライアンスの保証として解釈してはいけません。 お客様は、お客様の規制環境に応じて、カスタマーコントロールの有効性を評価および検証することができます。 これらのサービスは現在プレビュー段階であり、[オンラインサービス](https://go.microsoft.com/fwlink/?linkid=2108910)の使用条件に従っています。 [セキュリティとコンプライアンスのための Microsoft 365 ライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)も参照してください。
 
 ## <a name="relationship-to-compliance-manager"></a>コンプライアンスマネージャーとの関係
 
@@ -64,7 +64,7 @@ Microsoft コンプライアンススコアは、Microsoft 365 コンプライ�
 
 ## <a name="understanding-your-score"></a>スコアを理解する
 
-コンプライアンススコアには、Microsoft 365 データ保護基準に基づく初期スコアが与えられます。 このベースラインは、一般的な業界の規制と標準を含む一連のコントロールです。 このスコアは、コンプライアンスの状況を評価するための開始点として最適ですが、組織にとってより関連性の高い評価を追加すると、コンプライアンススコアがより強力になります。
+コンプライアンススコアには、Microsoft 365 データ保護基準に基づく初期スコアが与えられます。 このベースラインは、一般的な業界の規制と基準を含む一連のコントロールです。 このスコアは、コンプライアンスの状況を評価するための開始点として最適ですが、組織にとってより関連性の高い評価を追加すると、コンプライアンススコアがより強力になります。
 
 たとえば、組織が金融サービス業界に属している場合は、FFIEC 評価を追加することができます。 組織が医療機関に属している場合は、HIPAA/ヒット査定を追加することができます。 [コンプライアンスマネージャーで評価を追加](working-with-compliance-manager.md#assessments)する方法について説明します。
 
@@ -128,7 +128,7 @@ Microsoft コンプライアンススコアは、Microsoft 365 コンプライ�
 
 コンプライアンスマネージャーで実行される[テンプレートを作成するための詳細な手順](working-with-compliance-manager.md#templates)が表示されます。
 
-### <a name="groups"></a>Groups
+### <a name="groups"></a>グループ
 
 グループを使用すると、評価を論理的な方法で整理できます。 たとえば、年、コンプライアンス標準、サービス、組織内のチーム、またはその他の方法で評価をグループ化することを選択できます。
 

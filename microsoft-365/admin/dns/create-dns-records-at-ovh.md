@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: ドメインを確認し、電子メール、Skype for Business Online、およびその他の Microsoft 用のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: a1f29b6f6464e781768997be0969914771ec5703
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939133"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048917"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Microsoft 用の「Excel で DNS レコードを作成する」
 
@@ -142,7 +142,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
     |**Record type**|**サブドメイン**|**TTL**|**優先度**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(空白のまま)  <br/> |3600 (秒)  <br/> |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(空白のまま)  <br/> |3600 (秒)  <br/> |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![メールの "差し込み" MX レコード](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   

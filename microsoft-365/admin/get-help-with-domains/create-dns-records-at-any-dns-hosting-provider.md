@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 任意の DNS ホスティング プロバイダーで Microsoft 365 用のドメインを確認し、DNS レコードを作成する方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919507"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048785"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>任意の DNS ホスティング プロバイダーで DNS レコードを作成する
 
@@ -41,7 +41,7 @@ ms.locfileid: "43919507"
 レコードを各自でセットアップする場合は、以下のレコードを追加します。検証レコードと MX レコードはドメインに固有です。それらをセットアップするには、ドメインに固有な "トークン" 値を取得して使用する必要があります。この手順については以下で説明します。
   
 > [!IMPORTANT]
-> 各 DNS レコード タイプを作るための情報を入力したり貼り付けたりするボックスまたは "*フィールド*" の正確な名前は、DNS ホストによって異なります。ここに記載されている手順が実際の Web サイトのどのフィールドに該当するのかについては、DNS ホストの Web サイトのヘルプを参照してください。使用している DNS ホストの手順が「[Microsoft 365 の DNS レコードを作成する](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)」に記載されているかどうかをご確認ください。 > DNS ホストによっては、必要なレコード タイプの一部を作成できないため、Microsoft 365 の[サービスが制限される](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx)場合があります。ドメインのホストが SRV、TXT、CNAME などのレコードをサポートしていない場合は、必要なすべてのレコードをサポートする DNS ホストに[ドメインを移行する](../get-help-with-domains/buy-a-domain-name.md)ことをお勧めします。高速の自動プロセスで Microsoft 365 をセットアップする場合は、ドメインを GoDaddy に移行することをお勧めします。 
+> 各 DNS レコード タイプを作るための情報を入力したり貼り付けたりするボックスまたは "*フィールド*" の正確な名前は、DNS ホストによって異なります。ここに記載されている手順が実際の Web サイトのどのフィールドに該当するのかについては、DNS ホストの Web サイトのヘルプを参照してください。使用している DNS ホストの手順が「[Microsoft 365 の DNS レコードを作成する](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)」に記載されているかどうかをご確認ください。 > DNS ホストによっては、必要なレコード タイプの一部を作成できないため、Microsoft 365 の[サービスが制限される](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)場合があります。ドメインのホストが SRV、TXT、CNAME などのレコードをサポートしていない場合は、必要なすべてのレコードをサポートする DNS ホストに[ドメインを移行する](../get-help-with-domains/buy-a-domain-name.md)ことをお勧めします。高速の自動プロセスで Microsoft 365 をセットアップする場合は、ドメインを GoDaddy に移行することをお勧めします。 
   
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間はわずか数分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
@@ -81,7 +81,7 @@ Microsoft 365 のドメインを使うには、ドメインを所有している
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Record Type**|**Alias** または **Host Name**|**Value**|**Priority**|**TTL**|
-      |MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。    <br/>       [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>     |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
+      |MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 Office 365 の表から [**宛先またはポイント先のアドレス**] の値を指定してください。    <br/>       [確認する方法](../get-help-with-domains/information-for-dns-records.md)     <br/>     |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
    
 2. レコードを保存します。
     
@@ -141,7 +141,7 @@ MX レコードを追加して、自分のドメインのメールが Microsoft 
     
    - **Priority**: MX レコードの優先度には、最高を表す値 (通常は **0**) を設定します。
     
-      優先度の詳細については、「[MX 優先度とは何ですか?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。
+      優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。
     
    - **Host Name**: **@**
     

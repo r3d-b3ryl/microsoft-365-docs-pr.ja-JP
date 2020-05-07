@@ -16,18 +16,18 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: モバイルデバイスから電子メールにアクセスする方法について説明します。
-ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784d652d26222fc53b3e11f3427cf286cb32dd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629097"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048821"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイルデバイスから電子メールにアクセスするためのオプション
 
 組織では、電子メール、予定表、連絡先の職場アカウントにアクセスするために使用できるモバイルアプリを制御する設定が構成されています。
   
-Outlook for Android および iOS 用の Outlook モバイルアプリは、職場または学校の電子メール用に設計されて[おり、重要](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)な電子メールや[スケジュールアシスタント](https://go.microsoft.com/fwlink/?linkid=873406)などの機能を提供する唯一のアプリであり、仕事仲間と連携する会議時間を検索し、利用可能な会議室を検索するだけです。
+Outlook for Android および iOS 用の Outlook モバイルアプリは、職場または学校の電子メール用に設計されて[おり、重要](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)な電子メールや[スケジュールアシスタント](https://www.microsoft.com/?ref=go)などの機能を提供する唯一のアプリであり、仕事仲間と連携する会議時間を検索し、利用可能な会議室を検索するだけです。
   
 ## <a name="end-user-experience"></a>エンドユーザーの環境
 

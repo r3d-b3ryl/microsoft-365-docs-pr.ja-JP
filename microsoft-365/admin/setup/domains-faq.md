@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: ドメインの詳細については、よく寄せられる質問の回答を参照してください。
 ms.custom: okr_smb
-ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048163"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140751"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 この記事では、Office 365 のドメインに関してよく寄せられる質問にお答えします。
 
@@ -51,7 +58,7 @@ ms.locfileid: "44048163"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>SPF レコードはどうやって検証できますか?
 
-**SPF の TXT レコードを1つだけ**持っているか作成しておくことが重要です。既に SPF レコードがある場合は、新しい Office 365 の値を新しく作成するのではなく、そのレコードに追加する必要があります。Microsoft メールの SPF レコードを追加または更新した後、次のいずれかのツールを使用して構文が正しいことを確認してください。 
+**SPF の TXT レコードを 1 つだけ** 持っているか作成していることが重要です。 既に SPF レコードがある場合は、新規に作成せずに、新しい Office 365 の値を追加します。 Microsoft メールの SPF レコードを追加または更新した後、次のいずれかのツールを使用して構文が正しいことを確認してください。 
   
 - [SPF レコード テスト ツール](http://www.kitterman.com/spf/validate.html)
     
@@ -63,7 +70,7 @@ ms.locfileid: "44048163"
 
 Office 365 での DNS 管理には 2 つのオプションがあります。
   
-1. ネームサーバー (NS) レコードを変更すると、メール用の MX レコードを設定するのと同様に、Microsoft はすべてのサービス固有のレコードを処理できるようになります。**(推奨)**
+1. ネームサーバー (NS) レコードを変更すると、メール用の MX レコードを設定するのと同様に、Microsoft はすべてのサービス固有のレコードを処理できるようになります。 **(推奨)**
     
 2. DNS ホストで、メールやその他の Office 365 サービスに DNS レコードを自分で追加します。** (上級ユーザーのみ)**
     
@@ -109,7 +116,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -151,7 +158,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 ::: moniker range="o365-worldwide"
 
-4. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>] ページの順に移動します。
+4. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -488,11 +495,11 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
         
     2. 次のタスクを実行します。
         
-    3. ローカル Microsoft メールをテストします。たとえば、ユーザー B に電子メールを送信します。この電子メールはすぐに配信されます。このシナリオでは、Office 365 はメールボックスをローカルとして認識するため、メッセージは元のサーバー上のユーザー B のメールボックスにルーティングされません。
+    3. ローカル Microsoft メールをテストします。 たとえば、ユーザー B に電子メールを送信します。この電子メールはすぐに配信されます。 このシナリオでは、Office 365 はメールボックスをローカルとして認識するため、メッセージは元のサーバー上のユーザー B のメールボックスにルーティングされません。
         
     4. もう 1 つのメール システム上のユーザーへのメール送信をテストします。例えば、ユーザー C にメールを送信します。このメールは、元のサーバーにあるユーザー C のメールボックスに送信されるはずです。
         
-    5. 外部アカウントから、または他の電子メールシステムの従業員の電子メールアカウントから、他のメールシステムで転送が正しく設定されていることを確認します。たとえば、User C の元のサーバーアカウントまたは Hotmail アカウントから、ユーザー A に電子メールを送信して、そのメールがユーザー A の Office 365 メールボックスに届くことを確認します。
+    5. 外部アカウントから、または他の電子メールシステムの従業員の電子メールアカウントから、他のメールシステムで転送が正しく設定されていることを確認します。 たとえば、User C の元のサーバーアカウントまたは Hotmail アカウントから、ユーザー A に電子メールを送信して、そのメールがユーザー A の Office 365 メールボックスに届くことを確認します。
         
 9. メールボックスのコンテンツの移動
     

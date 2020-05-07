@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
-ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049449"
+ms.locfileid: "44064811"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -93,7 +93,7 @@ ms.locfileid: "44049449"
     
 - 社内の別のグローバル管理者にパスワードのリセットを依頼します。
     
-- または、[Microsoft サポートにお電話ください](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products)。 
+- または、[Microsoft サポートにお電話ください](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべてのユーザーのビジネスパスワードを同時にリセットする
 <a name="bkmk_forgot"> </a>

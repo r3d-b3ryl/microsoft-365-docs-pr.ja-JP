@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: サブスクリプションの有効期限が切れたとき、または Microsoft が無効にされた場合、または途中でキャンセルした場合に、サブスクリプションを再アクティブ化する方法について説明します。
-ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046242"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141100"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 サブスクリプションの有効期限が切れた場合、または Microsoft によって無効にされた場合、またはサブスクリプション期間の途中で解約した場合は、管理センターでサブスクリプションを再アクティブ化できます。
   

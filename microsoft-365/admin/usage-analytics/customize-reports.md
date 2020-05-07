@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: ブラウザーと Power BI デスクトップでレポートをカスタマイズする方法について説明します。
-ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355158"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140711"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 usage analytics でレポートをカスタマイズする
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用して使用する方法についての洞察を提供する Power BI のダッシュボードを提供します。 このダッシュボードは、利用状況データを利用するための開始点に過ぎません。 レポートをカスタマイズし、洞察機能を個人に合わせて調整できます。
   
@@ -88,7 +95,7 @@ Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用し�
 
     ![Yammer チェックボックスの選択](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 視覚エフェクトの一覧のすぐ下にある**** 、Power ![BI visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)の [書式] アイコンの形式アイコンをクリックします。
+12. 視覚エフェクトの一覧のすぐ下にある**Format** 、Power ![BI visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)の [書式] アイコンの形式アイコンをクリックします。
 
 13. [タイトル] を展開し、[ **タイトル テキスト**] 値を [ **月別の新規 Yammer ユーザー**] に変更します。
     

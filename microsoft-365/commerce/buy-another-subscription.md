@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: '既にサブスクリプションを所有している場合に、別の Microsoft 365 for business サブスクリプションをお客様の組織に購入する方法について説明します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634934"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141304"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>別の Microsoft 365 for business サブスクリプションを購入する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 既に Microsoft 365 for business のサブスクリプションをお持ちの場合、組織のために別のサブスクリプションを購入したい場合は、管理センターを使用することをお勧めします。 お客様の組織に最初の Microsoft 365 for business サブスクリプションをまだ購入していない場合は、[ここ](https://products.office.com/business/compare-office-365-for-business-plans)に移動してプランを選択してください。
   

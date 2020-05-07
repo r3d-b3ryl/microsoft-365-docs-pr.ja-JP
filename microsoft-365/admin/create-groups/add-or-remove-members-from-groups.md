@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Microsoft 365 管理センターで、グループにメンバーを追加したり、グループからメンバーを削除したり、グループ所有者の状態を管理したりする方法について説明します。
-ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631315"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049401"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する
 
@@ -276,16 +276,16 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
     
 - 数百から数千のユーザーをグループに追加するには、 [UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191)を使用します。
     
-- [孤立グループに新しい所有者を割り当てる](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [孤立グループに新しい所有者を割り当てる](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
     
 ## <a name="articles-about-managing-groups"></a>グループの管理に関する記事
     
 - [Outlook で配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
     
-- [Outlook で配布リストをグループにアップグレードする理由](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Microsoft 365 グループでゲストアクセスを管理する](manage-guest-access-in-groups.md)    
     
-- [PowerShell を使用して Microsoft 365 グループを管理](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)する: この記事では、主要なコマンドレットについて説明し、例を示します。
+- [PowerShell を使用して Microsoft 365 グループを管理](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)する: この記事では、主要なコマンドレットについて説明し、例を示します。
     
 - [Microsoft 365 グループの名前付けポリシー](groups-naming-policy.md)

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601974"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066440"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR Part 810
 
@@ -45,7 +45,7 @@ FedRAMP は適切な基準を提供しており、Azure 自治体がコアイン
 
 ## <a name="about-doe-10-cfr-part-810"></a>DoE 10 CFR Part 810 について
 
-米国防省エネルギー (DoE) 輸出規制[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)は、未分類の核技術およびアシスタントのエクスポートを管理します。 米国からエクスポートされた核テクノロジが peaceful の目的にのみ使用されることを保証するのに役立つ情報を記載しています。 改訂されたパーツ 810 (最終規則) は、2015年3月に有効になり、[国内の核セキュリティ管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)によって管理されます。 セクション810.6 は、「一般的に承認されている」と、特定の認証を必要とするもの (アシスタントなど) の両方に対して、特別な DoE 承認が必要であることを示しています。エンリッチメントやヘビー水の生産などの機密性の高い核テクノロジを含む)。
+米国防省エネルギー (DoE) 輸出規制[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)は、未分類の核技術およびアシスタントのエクスポートを管理します。 米国からエクスポートされた核テクノロジが peaceful の目的にのみ使用されることを保証するのに役立つ情報を記載しています。 改訂されたパーツ 810 (最終規則) は、2015年3月に有効になり、[国内の核セキュリティ管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)によって管理されます。 セクション810.6 は、「一般に承認された」と、特定の認証を必要とするもの (たとえば、エンリッチメントやヘビー水の生産などの機密性の高い核テクノロジを必要とする技術) の両方について、特別な DoE 承認が必要であることを示しています。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -68,7 +68,3 @@ Azure Government にデータを展開するお客様は、独自のセキュリ
 - [Microsoft および DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft Government クラウド](https://www.microsoft.com/enterprise/government)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf) ファイルをダウンロードできます。
