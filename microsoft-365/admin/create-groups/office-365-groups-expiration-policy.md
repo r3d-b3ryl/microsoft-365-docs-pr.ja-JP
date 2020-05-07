@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049181"
+ms.locfileid: "44064823"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -77,7 +77,7 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 
 グループの有効期限が切れるまで30日間、グループの所有者 (または所有者がいないグループに対して指定したメールアドレス) は、グループを簡単に更新できる電子メールを受信します。 更新されていない場合は、有効期限が切れるまで15日後にもう一度更新メールを受信します。 まだ更新していない場合は、有効期限が切れる前に1日に1回のメール通知を受信します。
 
-何らかの理由で、所有者または管理者が期限切れになる前にグループを更新しない場合でも、管理者は有効期限が切れてから30日以内にグループを復元することができます。 詳細については[、「削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group)」を参照してください。
+何らかの理由で、所有者または管理者が期限切れになる前にグループを更新しない場合でも、管理者は有効期限が切れてから30日以内にグループを復元することができます。 詳細については[、「削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group)」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 

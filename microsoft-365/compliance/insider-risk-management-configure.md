@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043318"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065822"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -34,8 +34,10 @@ Insider リスク管理を開始する前に、 [Microsoft 365 サブスクリ�
 
 - Microsoft 365 E5 サブスクリプション (有料または試用版)
 - Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンスアドオン
+- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider リスク管理アドオン
 - Microsoft 365 A5 サブスクリプション (有料または試用版)
 - Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンスアドオン
+- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Insider リスク管理アドオン
 
 Insider リスク管理ポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
 

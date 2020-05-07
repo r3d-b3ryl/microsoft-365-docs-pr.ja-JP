@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品および機能の更新プログラムのリリースオプションをセットアップする方法について説明します。
-ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628114"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139651"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準または対象指定リリースオプションを設定する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 Microsoft 365 では、数年ごとに費用のかかる更新プログラムを実行する代わりに、新しい製品の更新プログラムと機能が提供されます。 組織がこれらの更新を受信する方法を管理できます。 たとえば、初期リリースにサインアップして、組織が最初に更新を受け取るようにすることができます。 特定の個人のみが更新を受信するように指定できます。 または、[既定のリリーススケジュール] をそのまま使用し、更新プログラムを後で受け取ることができます。 この記事では、さまざまなリリースオプションと、それらを組織で使用する方法について説明します。
   

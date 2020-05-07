@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f817ed755237a49d792ca66f78977729c5d13f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 47aabfdff1973b3edff21c858d25c158ce39c6a7
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602164"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065638"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>MPAA
 
@@ -35,9 +35,7 @@ MPAA 評価の対象は、一般的なガイドラインの 48 個のセキュ�
 
 Azure の準拠が正式に評価されたことは、主要スタジオと取引する企業は、Azure を使って、MPAA 要件に準拠しながら、コンテンツを安全に作成、管理、保存、配布するために通常必要な IT コストを削減できることを意味します。 Azure Media Services、Storage、Virtual Networks のほか、30 を超えるサービスが、従来のオンプレミス本番プロセスよりも安全で拡張性が高く、メディア資産のダウンストリームの保護でより高い効果を発揮するコンテンツ ワークフロー エンジンをクラウドで提供します。
 
-Microsoft Cloud における MPAA のメリットを確認してください: [MPAA 背景解説をダウンロードする](https://aka.ms/mpaa-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>対象となるマイクロソフトのクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [MPAA ベスト プラクティス ガイドラインに準拠する Azure](https://aka.ms/AzureCompliance)
 
@@ -69,8 +67,4 @@ MPAA ガイドラインは、デジタル資産の作成、処理、保存、配
 - [MPAA のアプリケーションとクラウドのガイドライン](https://www.mpaa.org/wp-content/uploads/2015/12/MPAA-Best-Practices-App-and-Cloud_V1-0-20150507-RELEASE-CANDIDATE-6.docx)
 - [CSA STAR Azure の自己診断](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [CSA CAIQ v3.0.1 への Azure の対応](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19f9e5dc72231093b279d39b8bf38f5cea0a9c18
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 3cc92be00eca4f1e90917cadea26df8f10adf267
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583544"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066614"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 情報セキュリティ管理基準
 
@@ -161,7 +161,3 @@ ISO/IEC 27001 を適用することは戦略的なコミットです。 まず�
 
 - [Azure DevOps Services によるデータ保護の概要](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 - [ISO 27001 のコンプライアンスを実現するための 13 の効率的な Azure セキュリティ コントロール](https://aka.ms/13securitycontrolsforiso27001compliance)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

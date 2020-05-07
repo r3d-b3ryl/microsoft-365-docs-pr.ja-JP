@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046170"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141126"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 ユーザーとして、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てることができます。 自分が行ったセルフサービス購入については、支払いを担当します。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin.microsoft.com</a>では、Microsoft 365 管理センターでサブスクリプションを管理できます。
 

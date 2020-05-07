@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 11fa59476737fd3326fb49427945f183f8b990bc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602434"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066370"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家族教育機関/プライバシーに関する法律 (お客様)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602434"
 
 家族の教育機関の権利とプライバシーに関する法律 (お客様は、個人を特定できる情報やディレクトリ情報を含む、学生の教育記録のプライバシーを保護する米国連邦法です。 親と学生の年齢が18歳以上であることを確認し、それらのレコードに対する変更を要求して、情報の開示を制御することを可能にするために、お客様に対しては、お客様が同意せずに機密情報の開示を許可されているという制限があります。
 
-この法律は、教育機関 (IT 部門) からの資金を提供する教育機関、学校地域、およびその他のすべての機関 (一般法人のすべての一般法人、および一般法人向けのほとんどすべての第2機関) に適用されます。.
+この法律は、学校、学校の地域、および米国防省になる教育機関 (実質的にすべての一般法人、学校および学校地域) からの資金を提供するその他のあらゆる機関に適用されます。また、パブリックとプライベートの両方に適用されます。
 
 セキュリティは、「許可されていない開示からの学生情報の保護を必要とする」という、場所へのコンプライアンスの中心となります。 クラウドコンピューティングを使用する教育機関は、技術ベンダーが機密性の高い生徒データを適切に管理するという、契約の再保証を必要とします。
 
@@ -39,13 +39,11 @@ ms.locfileid: "41602434"
 - さらに、Microsoft は、お客様のデータのみを使用して、クラウドサービスと互換性のある目的 (マルウェアの検出など) を組織に提供し、広告にお客様のデータを提供しません。
 - Microsoft では、契約に記載されているように、または法律によって必要に応じて、教育機関が指示する場合を除いて、顧客データを開示しないことを契約がコミットしています。 Microsoft クラウドサービスを使用してマイクロソフトに教育記録を提供する教育機関は、これらの記録が、その使用と公開に関する厳しい契約上の制限の対象となることを保証できます。
 
-これらの契約の取り組みの結果として、お客様は、教育機関と、機密性の高い生徒データへのアクセスを提供するサードパーティの両方において、厳しい PA を受けることができます。を行い、そのデータを送信します。
-
-Microsoft Cloud での優れた機能の利点について説明します。次に、優れた[pa backgrounder をダウンロードし](https://aka.ms/ferpa-compliance)ます。
+これらの契約の取り組みの結果として、お客様は、教育機関と、機密性の高い生徒データへのアクセスを提供するサードパーティの両方において、そのデータを処理、保存、送信するために、対象となる Microsoft business cloud services を使用することができます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
-Microsoft がお客様のデータに「合法的な趣味」を持つ「学校のオフィシャル」として指定することを同意するサービスは次のとおりです。
+Microsoft がお客様のデータに「合法的な趣味」を持つ ' school オフィシャル ' として指定することを合意しているサービスは次のとおりです。
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -77,9 +75,5 @@ Microsoft がお客様のデータに「合法的な趣味」を持つ「学校�
 - [連邦レジスタ: お金の最終ルール](https://aka.ms/ferpa-reg)
 - [Microsoft Azure 用の、お持ちの Microsoft Azure 向けの実装ガイド](https://aka.ms/azureferpa)
 - [Azure の PA コンプライアンスフレームワークマッピング](https://aka.ms/AzureFERPAMapping)
-- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft  オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

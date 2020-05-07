@@ -21,14 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Office365 を使用して、1つまたは複数の電子メールアカウントへのメール転送を設定します。
-ms.openlocfilehash: 5807649fa43d094fd8f05cf63e2905d7cdb6dd7d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8cd86bcab4d73719e527f9942cd41a3174966c2d
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628917"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140455"
 ---
 # <a name="configure-email-forwarding"></a>メール転送を構成する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
   
 組織の管理者として、ユーザーのメールボックスの電子メール転送を設定するには、会社の要件がある場合があります。 メール転送を利用すれば、あるユーザーのメールボックスに送信されたメール メッセージを組織内外の別のユーザーのメールボックスに転送できます。
 
@@ -48,7 +55,7 @@ ms.locfileid: "43628917"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
     
 2. 転送する電子メールがあるユーザーの名前を選択して、[プロパティ] ページを開きます。 
  
@@ -66,7 +73,7 @@ ms.locfileid: "43628917"
 
 ::: moniker range="o365-germany"
     
- 1.   管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
+ 1.   管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。 
     
 2. 転送する電子メールがあるユーザーの名前を選択して、[プロパティ] ページを開きます。 
 
@@ -84,7 +91,7 @@ ms.locfileid: "43628917"
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
     
 2. 転送する電子メールがあるユーザーの名前を選択して、[プロパティ] ページを開きます。 
 

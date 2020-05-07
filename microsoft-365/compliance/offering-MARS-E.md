@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b62e40ce317bc5a6bc817e5eade5b476542c5f04
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac5a027225ce0f7c4c719ba3a897f5bc6f5629d5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602174"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065648"
 ---
 # <a name="minimum-acceptable-risk-standards-for-exchanges-mars-e-20-framework"></a>Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 フレームワーク
 
@@ -34,8 +34,6 @@ MARS-E のリリースに続き、NIST は新しいパブリケーションの S
 ## <a name="microsoft-and-mars-e-20-framework"></a>Microsoft と MARS-E 2.0 フレームワーク
 
 現時点では、MARS-E には正式な承認や認定のプロセスはありません。 ただし、Microsoft Azure Platform サービスは独立機関による FedRAMP 監査を Moderate Impact Level で、Azure Government は High Impact Level で受けており、FedRAMP 規格に準拠していることが認定されています。 これらは MARS-E のための規格ではありませんが、MARS-E の統制要件と目標は似通っていて、Azure でのデータの機密性、整合性、可用性の確保に利用できます。
-
-Microsoft Cloud における MARS-E 2.0 フレームワークのメリットを確認してください: [MARS-E の背景情報をダウンロードする](https://aka.ms/mars-e-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -72,7 +70,3 @@ Microsoft は Azure Platform が[オンライン サービス条件](https://www
 - [オンライン サービス用の Microsoft コンプライアンス フレームワーク ホワイト ペーパー](https://aka.ms/compliance-framework)
 - [Microsoft オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf) ファイルをダウンロードできます。

@@ -20,14 +20,21 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: 2f70bf8d7b3a98416eca288aaa68f12fde1ba211
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627694"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140827"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランをセキュリティで保護するための10位の方法
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 マイクロソフトのビジネスプランのいずれかを使用している小規模または中規模の組織で、組織の種類がサイバー犯罪者とハッカーの対象となっている場合は、この記事のガイダンスを使用して組織のセキュリティを強化してください。 このガイダンスは、組織が Harvard ケネディ School [Cybersecurity キャンペーンハンドブック](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)に記載されている目標を達成するのに役立つ情報です。
   
@@ -44,7 +51,7 @@ Microsoft では、サービスプランに適用される次の表のタスク�
 |7   <br/> |[Office メッセージの暗号化を使用する](secure-your-business-data.md#encryption) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |8   <br/> |[フィッシング攻撃からメールを保護する](secure-your-business-data.md#phishing) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |9   <br/> |[ATP の安全な添付ファイルを使用して悪意のある添付ファイルやファイルを保護する](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10   <br/> |[ATP の安全なリンクによるフィッシング攻撃から保護する](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10    <br/> |[ATP の安全なリンクによるフィッシング攻撃から保護する](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 開始する前に、Microsoft 365 セキュリティセンターの[microsoft 365 のセキュリティスコア](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)を確認してください。 一元管理されたダッシュボードから、Microsoft 365 の id、データ、アプリ、デバイス、およびインフラストラクチャのセキュリティを監視し、強化することができます。 推奨されるセキュリティ機能を構成し、セキュリティ関連のタスク (レポートの表示など) を実行する、またはサードパーティのアプリケーションまたはソフトウェアで推奨事項に対処するためのポイントが用意されています。 より広範な一連の Microsoft 製品とサービスを使用することで、さらに洞察を得て、組織のセキュリティの状態についてのレポートを得ることができます。
   

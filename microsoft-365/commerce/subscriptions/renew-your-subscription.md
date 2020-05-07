@@ -24,14 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'プロダクトキーを使用して Microsoft 365 for business サブスクリプションを更新し、定期的な請求をオフまたはオンにする方法について説明します。 '
-ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046230"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141080"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 この記事は、ほとんどの有料 Microsoft 365 for business サブスクリプションに適用されます。
   

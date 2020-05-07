@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 576404aadb2328682f10f69f30e58df2cafebe54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601994"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066450"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Cloud Security Alliance (CSA) STAR Self-Assessment
 
@@ -41,8 +41,6 @@ STAR は 3 つのレベルの保証を提供します。CSA STAR Self-Assessment
 ## <a name="microsoft-and-csa-star-self-assessment"></a>Microsoft および CSA STAR Self-Assessment
 
 STAR Self-Assessment の一環として、CSP は、CSA ベスト プラクティスへの準拠を示す 2 種類の異なるドキュメントを提出できます。1 つは回答を記入した CAIQ で、もう 1 つは CCM への準拠状態を記録したレポートです。 CSA STAR Self-Assessment の場合、Microsoft では Microsoft Azure 用に CAIQ と CCM ベースのレポートの両方を、Microsoft Dynamics 365 と Microsoft Office 365 用には CCM ベースのレポートを公開しています。  
-  
-Microsoft Cloud における CSA STAR Self-Assessment の利点について確認してください: [CSA STAR Self-Assessment 背景解説をダウンロードする](https://aka.ms/csastar-selfassessment-backgrounder)
 
 「Azure のセキュリティとコンプライアンスのブループリント」で CSA STAR Self-Assessment のデプロイメントを加速する方法についてご確認ください: [CSA STAR コンセンサス評価に対する Azure の対応をダウンロードする](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
@@ -85,8 +83,3 @@ CSP は CSA STAR Self-Assessment を使用すると、透明性の高い方法�
 
 - [Azure](https://aka.ms/Azure_STAR)
 - [Dynamics 365](https://aka.ms/DynamicsCRM_Online_STAR)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf) ファイルをダウンロードできます。
-

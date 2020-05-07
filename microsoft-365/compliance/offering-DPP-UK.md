@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d621017a125a43fc0fc9523e6ce8700b66077f2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602534"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066634"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>デジタル生産パートナーシップ (DPP) 英国
 
@@ -55,8 +55,4 @@ Azure ブロードキャストマークは1年間有効であり、毎年更新�
 
 - [DPP がセキュリティプログラムによってコミットされたブロードキャストチェックリストのユーザーガイド](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [サプライヤーのサイバーセキュリティ要件を促進するための NABA と DPP の共に使用する統合](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
