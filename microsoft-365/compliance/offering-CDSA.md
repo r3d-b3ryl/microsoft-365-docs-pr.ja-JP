@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34e0b0197754a85576c86fc4d447af7a25c0dc62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b349c41f2f423f7c0fca1b66c20c571a3512fa54
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602654"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065862"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Content Delivery &amp; Security Association (CDSA) の Content Protection &amp; Security (CPS) 標準
 
@@ -77,7 +77,3 @@ Microsoft は CDSA CPS 認定の 6 か月間の更新を無事に終え、Azure 
 - [How Azure Media Services Earned CDSA Security Certification](https://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - CDSA と Azure のコンプライアンスについて
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

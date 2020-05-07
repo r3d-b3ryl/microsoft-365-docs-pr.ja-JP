@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データの損失を防ぎ、顧客の機密情報を安全に保つことができます。
-ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635126"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048067"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 
@@ -54,7 +54,7 @@ DLP には、さまざまなロケールに対して、多くの使用可能な�
     
 4. [**訴訟**ホールド] ダイアログボックスで、[**訴訟ホールド期間**] フィールドに訴訟ホールド期間を指定できます。 無限の保持を配置する場合は、フィールドを空のままにします。 また、メモを追加してメールボックスの所有者を web サイトに誘導することもできます。これにより、訴訟ホールドの詳細を説明する必要があります。 \>**保存**します。
     
-**保持:** 保持期間の終了時に、特定の時間だけ保持したり、コンテンツを完全に削除したりするために、カスタマイズされた保持ポリシーを有効にすることができます。 詳細については、「[アイテム保持ポリシーの概要](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)」を参照してください。
+**保持:** 保持期間の終了時に、特定の時間だけ保持したり、コンテンツを完全に削除したりするために、カスタマイズされた保持ポリシーを有効にすることができます。 詳細については、「[アイテム保持ポリシーの概要](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)」を参照してください。
 
 ## <a name="set-up-sensitivity-labels"></a>機密ラベルを設定する
 

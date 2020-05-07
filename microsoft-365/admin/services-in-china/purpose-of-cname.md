@@ -19,12 +19,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Office 365 の ' MSOID ' CNAME レコードの詳細については、「認証プロセスのための最適なサーバー」を参照してください。このため、応答が高速になります。
 monikerRange: o365-21vianet
-ms.openlocfilehash: f5369b8a723c60691da0e73f2bd8cc32233abbcd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: a7c59829419ac8e7db400b079681ccf5bff199d6
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212223"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053850"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID の Office 365 CNAME レコードの目的
 
@@ -40,7 +40,7 @@ Office 365 で "MSOID" という CNAME レコードを追加する必要があ�
   
  **Office 365 がドメインの DNS レコードを管理している場合は、** Office 365 は、この CNAME レコードを設定します。 
   
- Dns**ホストでドメインの dns レコードを管理している場合**は、 [dns ホストの指示に従っ](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)て自分でこのレコードを作成します。
+ Dns**ホストでドメインの dns レコードを管理している場合**は、 [dns ホストの指示に従っ](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)て自分でこのレコードを作成します。
   
 Office 365 の展開を計画していて、追加または更新する必要があるすべての DNS レコードの詳細については、「 [office 365 用の外部ドメインネームシステムレコード](https://go.microsoft.com/fwlink/?LinkId=579013)」を参照してください。
   

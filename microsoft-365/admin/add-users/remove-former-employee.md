@@ -24,14 +24,21 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'このチェックリストに従って、Microsoft 365 およびセキュリティで保護されたデータから従業員を削除します。 '
-ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045298"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140595"
 ---
 # <a name="remove-a-former-employee"></a>元従業員を削除する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
   
 ## <a name="sign-out-now"></a>今すぐサインアウトする
 

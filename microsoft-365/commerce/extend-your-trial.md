@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 別の30日間の試用版サブスクリプションを拡張する方法について説明します。
-ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e634c43c1d6399abc3a88438fe410f5a1a19361e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045766"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141254"
 ---
 # <a name="extend-your-trial"></a>試用期間を延長する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 購入する前に Microsoft 365 for business の機能を試すには、さらに時間がかかるでしょうか。 試用版サブスクリプションの期限切れまでの期間が 15 日以内になり、その前に試用版を延長していない場合、試用版をさらに 30 日間延長できます。 延長できるのは 1 回のみです。
 

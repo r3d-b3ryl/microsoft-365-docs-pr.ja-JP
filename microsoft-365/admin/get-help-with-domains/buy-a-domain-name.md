@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365 でドメイン名を購入する方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: 3df4ec9014e2e65288cb30fd9203db4a11708369
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e60947b2f0f2591d09add00bd5aeb2ad3a5aa161
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628592"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140419"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
  *追加、変更またはドメインを削除するには、[ビジネスまたはエンタープライズ プラン](https://products.office.com/business/office)の**グローバル管理者**である**必要**があります。これらの変更は、テナント全体、*カスタマイズ管理者*または*正規ユーザー*に影響を与え、変更を加えることはできません。*  
 

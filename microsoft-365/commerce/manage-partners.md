@@ -16,14 +16,21 @@ search.appverid:
 - MET150
 description: Microsoft 認定ソリューションプロバイダ (パートナー) と協力して、組織または学校の製品とサービスを購入して管理する方法について説明します。
 keywords: パートナー、ソリューションプロバイダ
-ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080364"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141209"
 ---
 # <a name="manage-partner-relationships"></a>パートナー関係を管理する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 Microsoft 認定ソリューションプロバイダー (パートナー) と協力して、組織または学校の製品とサービスを購入して管理することができます。 設定を行うには、いくつかの手順が必要になります。
 
@@ -72,7 +79,7 @@ Microsoft 認定ソリューションプロバイダー (パートナー) と協
 1. パートナーから電子メールを受信した場合は、リンクを選択して Microsoft 365 管理センターに移動するか、[<a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">同意</a>する] ページに移動します。
 2. **Microsoft カスタマーアグリーメント**のリンクを選択し、ドキュメントを参照します。
 3. このチェックボックスをオンにして、契約を読んだことを確認します。
-4. [**同意**する] を選択します。
+4. **[同意する]** を選択します。
 5. 作業しているパートナーの一覧が表示されます。 詳細を表示するには、任意のパートナーを選択します。
 
 ## <a name="remove-partner-admin-privileges"></a>パートナー管理者権限を削除する

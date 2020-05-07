@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft のネットワークソリューションでその他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: f990e4311ef88022d7fec2e1b7c90b3d8d035448
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: fb5fd2d2bcb263a62306617d728f08b07bb6da34
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939145"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048929"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Microsoft のネットワークソリューションで DNS レコードを作成する
 
@@ -158,9 +158,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    |**Priority**|**TTL**|**Mail Server**|
+    |**[優先度]**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> |3600  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![新しいレコードのボックスに値を入力するか貼り付けます。](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
