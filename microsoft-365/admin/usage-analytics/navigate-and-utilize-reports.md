@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: ナビゲーションタブとフィルターを使用してレポートを表示する方法について説明します。
-ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: dedcaf52a2b5e69d53f8c41494b5fd68ac1f248b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355108"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140673"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析でレポート間を移動して活用する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 このダッシュボードでは、利用状況と導入状況の主なメトリックを簡単に確認できます。 最上位の測定基準を選択することにより、詳細と洞察を提供するレポートにアクセスできます。 各 [レポート] タブには、組織での使用状況と導入の側面に固有のデータビジュアライゼーションが含まれています。 収集されたデータについては各レポートのタイトルで説明されており、表示している [レポート] タブの視覚エフェクトに関する詳細を含むタイルが表示されます。
 

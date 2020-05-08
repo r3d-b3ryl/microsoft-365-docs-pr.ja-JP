@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: 自動操縦プロファイルは、ユーザーデバイスへの Windows のインストール方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなどの、既定の設定とオプションの設定が含まれています。
-ms.openlocfilehash: 5c2ec3f4c3e0ebc4ea545d11f819c897f414ad52
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627416"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165843"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 
@@ -47,7 +47,7 @@ ms.locfileid: "43627416"
 |**設定**|**説明**|
 |:-----|:-----|
 |Cortana、OneDrive、OEM 登録をスキップする  <br/> |Cortana や個人用 OneDrive のようなコンシューマーアプリのインストールをスキップします。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、これらを後でインストールすることができます。 デバイスは Microsoft 365 Business Premium で管理されるため、元の製造元の登録はスキップされます。  <br/> |
-|会社のブランドが表示されたサインイン画面  <br/> |会社で[Microsoft 365 サインインページに会社のブランドを追加](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)すると、デバイスのユーザーはサインインしたときにそのような操作を受けることができます。  <br/> |
+|会社のブランドが表示されたサインイン画面  <br/> |会社で[Microsoft 365 サインインページに会社のブランドを追加](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page)すると、デバイスのユーザーはサインインしたときにそのような操作を受けることができます。  <br/> |
 |構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー id は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business Premium 資格情報を使用して Windows と Microsoft 365 にサインインします。  <br/> |
    
  **オプションの設定:**

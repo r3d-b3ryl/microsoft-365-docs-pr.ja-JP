@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 88f84cc73bfea5bbc072a46e894a140e227844b2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 46118f9fe48e6fe794cdb256384bb88e9a1e0cfa
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602324"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066470"
 ---
 # <a name="health-data-hosting-hds-france"></a>健康データ ホスティング (HDS) フランス
 
@@ -73,8 +73,4 @@ HDS 認証は 3 年間有効です。
 - [Azure フランス](https://azure.microsoft.com/global-infrastructure/france/)
 - [保険向け Azure](https://azure.microsoft.com/industries/healthcare/)
 - [Microsoft のセキュリティ](https://www.microsoft.com/security)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/E/7/B/E7BC3E72-A6E5-4A10-96C9-3B210C4DBE35/HDS-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

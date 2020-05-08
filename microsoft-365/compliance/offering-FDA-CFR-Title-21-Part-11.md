@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071284"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066380"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食品および医薬品管理の CFR Title 21 パート11
 
@@ -39,9 +39,9 @@ CFR Title 21 Part 11 は、電子記録と署名が、紙のレコードおよ�
 
 Microsoft enterprise cloud services では、通常独立したサードパーティの SOC 1 タイプ2と SOC 2 タイプ2の監査が行われ、ISO/IEC 27001 および ISO/IEC 27018 標準に準拠して認定されています。
 
-これらの一般的な監査と証明書は特に、FDA の規制へのコンプライアンスに重点を置いていませんが、目的と目的は、CFR Title 21 Part 11 の場合と本質的に似ています。また、機密性、整合性、可用性を確保するために役立ちます。Microsoft クラウドサービスに格納されているデータの。 認定方法は、製薬工学 (ISPE) GAMP シリーズのベストプラクティスガイドの国際社会、および規制された Gamp 環境のコンピューター上のシステムに適した製薬調査協力スキーム (PIC/S) のベストプラクティスを含む、業界のベストプラクティスに基づいています。
+これらの通常の監査と証明書は、特に FDA の規制へのコンプライアンスを重視していませんが、目的と目的は、CFR Title 21 Part 11 の場合と本質的に似ています。また、Microsoft cloud services に保存されているデータの機密性、整合性、および可用性を確保するためにも役立ちます。 認定方法は、製薬工学 (ISPE) GAMP シリーズのベストプラクティスガイドの国際社会、および規制された Gamp 環境のコンピューター上のシステムに適した製薬調査協力スキーム (PIC/S) のベストプラクティスを含む、業界のベストプラクティスに基づいています。
 
-お客様は、コンプライアンスレポートへのアクセスを要求することができます。また、Microsoft アカウント担当者または[サービス信頼ポータル](https://aka.ms/stphelp)を通じて、プライバシーに関する同意を受けることができます。 さらに、Microsoft Azure および Microsoft Office 365 の認定ガイドラインに従って、Microsoft 監査コントロールが CFR Title 21 Part 11 の要件をどのように対応し、FDA 資格戦略を実装するためのガイダンスであるかについての詳細な説明を提供します。共有責任の領域の説明。
+お客様は、コンプライアンスレポートへのアクセスを要求することができます。また、Microsoft アカウント担当者または[サービス信頼ポータル](https://aka.ms/stphelp)を通じて、プライバシーに関する同意を受けることができます。 さらに、Microsoft Azure および Microsoft Office 365 の認定ガイドラインには、Microsoft 監査コントロールが CFR Title 21 Part 11 の要件に対応する方法、および FDA の資格戦略を実装するためのガイダンス、および共有責任の領域の説明が記載されています。
 
 FDA CFR Title 21 の展開を促進する方法について説明します。 [AZURE fda 21 認定ガイドをダウンロード](https://go.microsoft.com/fwlink/p/?linkid=2086604)する
 
@@ -71,7 +71,7 @@ FDA CFR Title 21 パート11は、研究、臨床研究、メンテナンス、�
 
 Microsoft によって実装される監査対象のコントロールは、データの機密性、整合性、および可用性を確保し、Microsoft の責任として識別された、Title 21 Part 11 で定義されている該当する規制要件に対応します。 Azure および Office 365 の資格ガイドラインは、Microsoft 監査コントロールがこれらの要件に対応する方法を詳しく説明しています。
 
-**監査者のレポートのコピーを取得するには、どうすればよいですか。**
+**監査人の報告書のコピーはどのようにして入手できますか ?**
 
 [Service Trust Portal](https://aka.ms/stphelp) では、中立的な監査によるコンプライアンス レポートを提供しています。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft のクラウドサービスの結果を、自分の法律および規制要件と比較できるようにすることができます。
 
@@ -94,7 +94,3 @@ Microsoft は、そのエンタープライズクラウドサービスが、管�
 - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](https://aka.ms/govt-cloud)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

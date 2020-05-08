@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 無料試用版を入手する方法、または Microsoft 365 のサブスクリプションを購入する方法について説明します。
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707537"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141056"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用または購入する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティおよびデバイス管理と組み合わせた完全なソリューションです。 既にサブスクリプションを所有していて、Microsoft 365 サブスクリプションを試用または購入する場合は、管理センターを使用することをお勧めします。 管理センターでは、次の Microsoft 365 サブスクリプションを試用または購入できます。
   
@@ -128,7 +135,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 ::: moniker-end
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 新しいサブスクリプションを取得したら、そのサブスクリプションを使用するユーザーにライセンスを割り当てる必要があります。 その方法については、「[ユーザーへのライセンスの割り当て](../admin/manage/assign-licenses-to-users.md)」を参照してください。
 

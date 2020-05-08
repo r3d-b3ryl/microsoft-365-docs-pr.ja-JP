@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 for business、セットアップ方法、およびユーザーのデバイスと Pc を準備して Microsoft 365 for business で保護されていることを確認する方法について説明します。
-ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048087"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165791"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 for business の使用を開始する
 
@@ -79,9 +79,9 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
     
     **ローカルの Active Directory からクラウドに完全に移動**する場合は、Microsoft 365 管理センターに移動し、セットアップウィザードを使用してユーザーを手動で追加するか、または Azure AD Connect を使用して1回限りの同期を行うことができます。 これを行うには 2 つの方法があります。 
     
-    - Exchange 2010、Exchange 2013、または Exchange 2016 サーバーもある場合は、最小限の[ハイブリッドを使用して、exchange メールボックスを Office 365 にすばやく移行](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)できます。 最低限のハイブリッド手順には、Azure AD へのユーザーの1回限りの同期と、オンプレミスからクラウドへの電子メールの移行が含まれます。 メールの移行が完了した後、この方法を使用すると、ディレクトリ同期は自動的に無効になります。
+    - Exchange 2010、Exchange 2013、または Exchange 2016 サーバーもある場合は、最小限の[ハイブリッドを使用して、exchange メールボックスを Office 365 にすばやく移行](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)できます。 最低限のハイブリッド手順には、Azure AD へのユーザーの1回限りの同期と、オンプレミスからクラウドへの電子メールの移行が含まれます。 メールの移行が完了した後、この方法を使用すると、ディレクトリ同期は自動的に無効になります。
     
-    - ディレクトリ同期ウィザードを使用して、ユーザーをクラウドに同期させます。 このプロセスを完了するには、「 [Microsoft 365 のディレクトリ同期のセットアップ](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の手順を実行します。 ユーザーをクラウドに同期させた後、 [Office 365 のディレクトリ同期を無効](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)にする必要があります。
+    - ディレクトリ同期ウィザードを使用して、ユーザーをクラウドに同期させます。 このプロセスを完了するには、「 [Microsoft 365 のディレクトリ同期のセットアップ](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)」の手順を実行します。 ユーザーをクラウドに同期させた後、 [Office 365 のディレクトリ同期を無効](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)にする必要があります。
     
     また、このように追加された各ユーザーに、Microsoft 365 for business のライセンスを付与する必要があります。 この操作は、[セットアップウィザード](set-up.md)で行うことができます。または、 [Microsoft 365 for business のユーザーにライセンスを割り当てる](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)ことができます。
     
@@ -104,7 +104,7 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
   
 - パートナーにお問い合わせください。
     
-- Microsoft 365 for business 管理者は、カスタマーサポートチームにアクセスできます。一般**[法人向け製品サポートへのお問い合わせ-管理者向けヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- Microsoft 365 for business 管理者は、カスタマーサポートチームにアクセスできます。一般**[法人向け製品サポートへのお問い合わせ-管理者向けヘルプ](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 ## <a name="see-also"></a>関連項目
 

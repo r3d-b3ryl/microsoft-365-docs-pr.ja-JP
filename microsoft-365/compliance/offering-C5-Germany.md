@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 837dda3a506a2ba2a743b1aed89a5c004a4fb163
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 48b9e0135198f687430bf195c7dff8a405d15f7e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228553"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065872"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>クラウド コンピューティング コンプライアンス コントロール カタログ (C5)
 
@@ -66,8 +66,4 @@ Microsoft Cloud Germany は、ドイツに物理的拠点を置き、ドイツ�
 - クラウド コンピューティング プロバイダーのセキュリティに関する推奨事項 (([英語](https://www.bsi.bund.de/EN/Topics/CloudComputing/Secure_use_of_cloud_services/Secure_use_cloud_services_node.html)) ([ドイツ語](https://www.bsi.bund.de/DE/Themen/DigitaleGesellschaft/CloudComputing/Sichere_Nutzung_Cloud/Sichere_Nutzung_Cloud_node.html))
 - [コンプライアンス レポート: C5- und SOC-Testate Azure Deutschland](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=df100ae1-baf9-4785-8a6d-864c0bc5c308&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)
 - Microsoft Azure Germany の [IT-Grundschutz コンプライアンス ワークブック](https://gallery.technet.microsoft.com/Azure-Germany-IT-fca4afd7)
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/E/F/6/EF619A4D-C17C-4279-8DC4-79C0620676AB/C5Germany-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1a1e8b19ff214d29dc8a309cce4f79de92cf8155
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071294"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066582"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>連邦情報処理規格 (FIPS) 文書140-2
 
 ## <a name="fips-140-2-standard-overview"></a>FIPS 140-2 標準の概要
 
-連邦情報処理規格 (FIPS) 文書140-2 は米国政府機関向けの標準規格で、情報の「5131」で定義されているように、情報技術製品の暗号化モジュールの最小セキュリティ要件を定義しています。1996のテクノロジ管理の改革法。
+連邦情報処理規格 (FIPS) 文書140-2 は米国政府機関向けの標準規格で、情報技術製品の暗号化モジュールの最小セキュリティ要件を定義しています。これは、「Information テクノロジ管理の改革法1996」のセクション5131で定義されています。
 
 [暗号化モジュール検証プログラム](https://csrc.nist.gov/Projects/cryptographic-module-validation-program)(cmvp) は米国国立標準技術局 (NIST) とサイバー・センター (サイバーセキュリティ) の共同作業 (cccs) で、暗号化モジュール規格 (つまり fips 140-2) および関連する fips 暗号化規格の*セキュリティ要件*に対する暗号化モジュールを検証します。 FIPS 140-2 のセキュリティ要件は、暗号化モジュールの設計と実装に関連する11つの分野について説明しています。 NIST Information テクノロジ研究所は、モジュール内の FIPS 承認済み暗号化アルゴリズムを検証する関連プログラムを運用します。
 
@@ -61,7 +61,7 @@ Microsoft は、Windows 10 および Windows Server を実行しているハー�
 
 FIPS 140-2 で検証された暗号化モジュールを使用する必要がある場合は、使用するバージョンが検証リストに表示されることを確認する必要があります。 CMVP と Microsoft は、製品リリースごとに編成された検証済みの暗号化モジュールのリストを、Windows システムにインストールされているモジュールを識別するための指示とともに保持しています。 準拠するようにシステムを構成する方法の詳細については、「 [windows および Windows SERVER FIPS 140-2 のコンテンツ](https://aka.ms/AA6ehud)」を参照してください。
 
-**証明書の "FIPS モードで操作されている場合" とは何を意味しますか?**
+**証明書での "FIPS モードでの操作" の意味**
 
 この注意事項は、必要な構成およびセキュリティルールが、FIPS 140-2 セキュリティポリシーと一貫性のある方法で暗号化モジュールを使用するために従う必要があることを読者に通知します。 各モジュールには独自のセキュリティポリシーがあります。これにより、それが動作するセキュリティルールが正確に規定され、承認済みの暗号化アルゴリズム、暗号化キーの管理、および認証方法が採用されます。 セキュリティルールは、各モジュールのセキュリティポリシーで定義されています。 CMVP によって検証された各モジュールのセキュリティポリシーへのリンクを含む詳細については、「 [windows および Windows SERVER FIPS 140-2 のコンテンツ](https://aka.ms/AA6ehud)」を参照してください。
 
@@ -87,7 +87,3 @@ FIPS 140-2 に準拠するには、fips 承認モードで実行するように�
 - [NIST 暗号化モジュール検証プログラム](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows、Windows Server、および FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

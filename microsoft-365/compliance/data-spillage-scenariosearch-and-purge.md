@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示および検索ツールを使用して、組織内のデータ流出インシデントを管理および応答します。
-ms.openlocfilehash: fd230d3e54ca61046a28f60d81d497a413bfa4f7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630594"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166058"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューションシリーズ: Data 流出 scenario-検索と削除
 
@@ -120,7 +120,7 @@ Afer 検索結果を確認した後、他のユーザーと検索結果を共有
   
 セキュリティ/コンプライアンスセンターでメッセージ追跡を使用するか、Exchange Online PowerShell で対応するコマンドレットを使用することができます。 メッセージ追跡では、返されるデータの完全性について完全な保証が提供されない点に注意してください。 メッセージ追跡の使用の詳細については、以下を参照してください。 
   
-- [セキュリティとコンプライアンス センターのメッセージ追跡](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [セキュリティとコンプライアンス センターのメッセージ追跡](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
     
 - [セキュリティ & コンプライアンスセンターでの新しいメッセージの追跡](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     

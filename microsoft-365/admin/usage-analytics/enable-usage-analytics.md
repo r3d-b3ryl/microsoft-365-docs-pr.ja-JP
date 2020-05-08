@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Power BI の Microsoft 365 Usage Analytics テンプレートアプリを使用して、テナントのデータの収集を開始する方法について説明します。
-ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355008"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140685"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 Microsoft 365 usage analytics は、Microsoft 365 US Government Community でも利用できます。
   
